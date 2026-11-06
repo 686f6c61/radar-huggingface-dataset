@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Akshaykumar4321/ppo-Pyramids` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno `Pyramids`, uno de los escenarios de demostración incluidos en Unity ML-Agents. Fue desarrollado y publicado en HuggingFace por el usuario `Akshaykumar4321` y está destinado a la experimentación y difusión de agentes entrenados con esta librería.
+El modelo `Akshaykumar4321/ppo-Pyramids` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno `Pyramids`, uno de los escenarios de demostración incluidos en Unity ML-Agents. Fue desarrollado y publicado en Hugging Face por el usuario `Akshaykumar4321` y está destinado a la experimentación y difusión de agentes entrenados con esta librería.
 
-A diferencia de los grandes modelos de lenguaje, este modelo no es un transformer ni procesa texto: es una política neuronal que decide acciones a partir de observaciones del entorno de Unity. La arquitectura interna no está documentada en la información disponible, pero en los entornos de ML-Agents suele tratarse de una red totalmente conectada o convolutional según la naturaleza de las observaciones. El modelo se distribuye en formato ONNX para su integración en aplicaciones de Unity o herramientas compatibles, y está disponible para reanudar el entrenamiento o visualizarlo directamente en el navegador mediante el visor de HuggingFace.
+A diferencia de los grandes modelos de lenguaje, este modelo no es un transformer ni procesa texto: es una política neuronal que decide acciones a partir de observaciones del entorno de Unity. La arquitectura interna no está documentada en la información disponible, pero en los entornos de ML-Agents suele tratarse de una red totalmente conectada o convolutional según la naturaleza de las observaciones. El modelo se distribuye en formato ONNX para su integración en aplicaciones de Unity o herramientas compatibles, y está disponible para reanudar el entrenamiento o visualizarlo directamente en el navegador mediante el visor de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ No se dispone de informacion sobre la composicion del dataset, el numero de paso
 - Jugar al entorno `Pyramids` de Unity ML-Agents, generando acciones de movimiento o interaccion a partir de observaciones del estado.
 - Exportacion a formato ONNX para su uso en aplicaciones de Unity o en otros motores que soporten este formato.
 - Posibilidad de reanudar el entrenamiento mediante `mlagents-learn --resume`, lo que permite continuar el proceso de optimizacion desde el punto de guardado.
-- Integracion con el visor de agentes de HuggingFace, que permite ver al agente actuar directamente en el navegador.
+- Integracion con el visor de agentes de Hugging Face, que permite ver al agente actuar directamente en el navegador.
 - No soporta generacion de texto, tool calling, razonamiento simbolico ni tareas de lenguaje. Sus capacidades se limitan exclusivamente al entorno de entrenamiento.
 
 ## Casos de uso
@@ -39,7 +39,7 @@ No se dispone de informacion sobre la composicion del dataset, el numero de paso
 - Docencia de RL en Unity: los educadores pueden usarlo como ejemplo de agente entrenado para mostrar el flujo de trabajo de ML-Agents, desde el entrenamiento hasta la exportacion a ONNX y la visualizacion en el navegador.
 - Desarrollo de prototipos de videojuegos: este agente demuestra como integrar un cerebro entrenado en un juego 3D de Unity. Los desarrolladores pueden reutilizar la logica de control para experimentar con variaciones del juego.
 - Evaluacion de algoritmos de RL: al tratarse de un entorno canonico, el agente puede compararse con otros modelos `ppo-Pyramids` para analizar diferencias de rendimiento, aun sin datos de benchmark publicados.
-- Practica del curso de RL de HuggingFace: los tutoriales enlazados en la model card muestran como entrenar y publicar agentes. Este modelo es un ejemplo real de los resultados obtenibles con el material del curso.
+- Practica del curso de RL de Hugging Face: los tutoriales enlazados en la model card muestran como entrenar y publicar agentes. Este modelo es un ejemplo real de los resultados obtenibles con el material del curso.
 - Pruebas de interoperabilidad ONNX: al exportarse a ONNX, el agente puede integrarse en motores o frameworks que acepten este formato, como Unity con el modulo Barracuda, para verificar la compatibilidad en distintos entornos de ejecucion.
 
 ## Benchmarks y rendimiento
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-En HuggingFace existen otros modelos con el mismo nombre y entorno, como `Aathi07/ppo-Pyramids` y `PlankyxD/ppo-Pyramids`. Estos agentes comparten la misma tarea y libreria, pero no se disponen de especificaciones tecnicas publicas para comparar de forma rigurosa.
+En Hugging Face existen otros modelos con el mismo nombre y entorno, como `Aathi07/ppo-Pyramids` y `PlankyxD/ppo-Pyramids`. Estos agentes comparten la misma tarea y libreria, pero no se disponen de especificaciones tecnicas publicas para comparar de forma rigurosa.
 
 | Modelo | Autor | Entorno | Formato | Licencia |
 |---|---|---|---|---|
@@ -70,13 +70,13 @@ En HuggingFace existen otros modelos con el mismo nombre y entorno, como `Aathi0
 - El rendimiento del agente es desconocido; la informacion no incluye metricas de exito, episodios completados ni recompensas medias.
 - El modelo puede presentar comportamiento suboptimo o fallos en la tarea de `Pyramids` si el entorno se modifica o se usa con una version diferente de Unity ML-Agents.
 - Al carecer de documentacion tecnica sobre la arquitectura y el proceso de entrenamiento, cualquier ajuste o transferencia a otros entornos requiere experimentacion manual.
-- La fecha de creacion del modelo (2026-09-05) es posterior a la fecha actual, lo que sugiere posible error en el registro de HuggingFace; la validez temporal del recurso debe verificarse.
+- La fecha de creacion del modelo (2026-09-05) es posterior a la fecha actual, lo que sugiere posible error en el registro de Hugging Face; la validez temporal del recurso debe verificarse.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Akshaykumar4321/ppo-Pyramids
+- Modelo en Hugging Face: https://huggingface.co/Akshaykumar4321/ppo-Pyramids
 - Documentacion de Unity ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
-- Tutorial corto del curso de Deep RL de HuggingFace: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
+- Tutorial corto del curso de Deep RL de Hugging Face: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo de ML-Agents en el curso Deep RL: https://huggingface.co/learn/deep-rl-course/unit5/introduction
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
-- Coleccion de entornos de Unity en HuggingFace: https://huggingface.co/unity
+- Coleccion de entornos de Unity en Hugging Face: https://huggingface.co/unity

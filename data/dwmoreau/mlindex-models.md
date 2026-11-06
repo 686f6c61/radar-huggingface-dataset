@@ -6,7 +6,7 @@ El modelo `dwmoreau/mlindex-models` es un conjunto de modelos de machine learnin
 
 El repositorio contiene 780 archivos (~545 MB) organizados por sistema de red (cúbico, hexagonal, romboédrico, tetragonal, ortorrómbico, monoclínico y triclínico). Incluye predictores de volumen basados en bosques aleatorios, bibliotecas de plantillas de índices de Miller, redes de filtro de candidatos en formato ONNX cuantizado y conjuntos de referencia. La licencia es MIT, lo que permite uso comercial y modificación.
 
-La relevancia actual radica en que la indexación de difracción de polvo es un paso crítico en cristalografía y ciencia de materiales, y el uso de ML para acelerar y robustecer este proceso es una tendencia emergente. Al estar disponible en HuggingFace con una licencia permisiva, facilita su integración en flujos de trabajo de análisis de datos científicos.
+La relevancia actual radica en que la indexación de difracción de polvo es un paso crítico en cristalografía y ciencia de materiales, y el uso de ML para acelerar y robustecer este proceso es una tendencia emergente. Al estar disponible en Hugging Face con una licencia permisiva, facilita su integración en flujos de trabajo de análisis de datos científicos.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se dispone de información sobre modelos similares en la misma categoría (in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dwmoreau/mlindex-models
+- Repositorio Hugging Face: https://huggingface.co/dwmoreau/mlindex-models
 - Repositorio GitHub de MLINDEX: https://github.com/dwmoreau/MLI
 
 No hay otros enlaces (papers, blogs, demos) en la información proporcionada.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Hebrish/Jachnun-sherpa-onnx-int8` es una conversión a ONNX con cuantización int8 del modelo de reconocimiento automático del habla `Hebrish/Jachnun`, publicada por el usuario de HuggingFace Hebrish. El modelo está diseñado para transcribir audio bilingüe hebreo-inglés con cambio de código (*code-switching*), un escenario frecuente en el sector tecnológico israelí, donde una misma frase alterna palabras en hebreo e inglés. La arquitectura es un transductor TDT (*token-and-duration transducer*) de la familia Parakeet, según indican las etiquetas del repositorio.
+`Hebrish/Jachnun-sherpa-onnx-int8` es una conversión a ONNX con cuantización int8 del modelo de reconocimiento automático del habla `Hebrish/Jachnun`, publicada por el usuario de Hugging Face Hebrish. El modelo está diseñado para transcribir audio bilingüe hebreo-inglés con cambio de código (*code-switching*), un escenario frecuente en el sector tecnológico israelí, donde una misma frase alterna palabras en hebreo e inglés. La arquitectura es un transductor TDT (*token-and-duration transducer*) de la familia Parakeet, según indican las etiquetas del repositorio.
 
 El interés de esta variante concreta reside en el formato: al estar exportada a ONNX e integrada en la librería sherpa-onnx, puede ejecutarse sin conexión y sin GPU en entornos de producción ligeros (CPU x86, ARM, Android, iOS), algo que no ocurre con los checkpoints habituales en PyTorch de los modelos Parakeet. La cuantización int8 reduce el peso de los pesos, a costa de una posible pérdida de precisión frente al modelo base.
 
-El repositorio tiene 3,3 GB, licencia CC-BY-4.0, acceso restringido (hay que aceptar condiciones en HuggingFace) y, en el momento de redactar esta ficha, cero descargas y cero *likes*, por lo que no existe validación comunitaria pública. No se han publicado parámetros totales, ventana de audio máxima ni resultados de benchmarks en la información disponible.
+El repositorio tiene 3,3 GB, licencia CC-BY-4.0, acceso restringido (hay que aceptar condiciones en Hugging Face) y, en el momento de redactar esta ficha, cero descargas y cero *likes*, por lo que no existe validación comunitaria pública. No se han publicado parámetros totales, ventana de audio máxima ni resultados de benchmarks en la información disponible.
 
 ## Especificaciones técnicas
 
@@ -24,7 +24,7 @@ El repositorio tiene 3,3 GB, licencia CC-BY-4.0, acceso restringido (hay que ace
 | Modelo base | `Hebrish/Jachnun` |
 | Tamaño del repositorio | 3,3 GB |
 | Librería de inferencia | sherpa-onnx |
-| Acceso | restringido (*gated*): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (*gated*): requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -85,7 +85,7 @@ La diferencia clave frente a Whisper es la especialización: Whisper cubre mucho
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es *gated*; es necesario aceptar las condiciones en HuggingFace antes de poder descargarlo, lo que puede no ser viable en flujos de CI/CD automatizados.
+- Acceso restringido: el repositorio es *gated*; es necesario aceptar las condiciones en Hugging Face antes de poder descargarlo, lo que puede no ser viable en flujos de CI/CD automatizados.
 - Sin validación comunitaria: cero descargas y cero *likes* en el momento de la consulta; no hay informes independientes de calidad.
 - Idiomas limitados: solo hebreo e inglés. No cubre castellano ni otras lenguas.
 - La cuantización int8 puede degradar el WER respecto al modelo base en audio ruidoso o con acentos marcados; no se han publicado métricas comparativas.
@@ -98,7 +98,7 @@ La diferencia clave frente a Whisper es la especialización: Whisper cubre mucho
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hebrish/Jachnun-sherpa-onnx-int8
+- Repositorio en Hugging Face: https://huggingface.co/Hebrish/Jachnun-sherpa-onnx-int8
 - Modelo base: https://huggingface.co/Hebrish/Jachnun
 
 La búsqueda web realizada no devolvió enlaces relevantes al modelo: los resultados se limitaron a servicios de traducción genéricos (Google Translate y DeepL) sin relación con este repositorio, por lo que no se incluyen. No se han encontrado en la información proporcionada artículos, papers, demos ni repositorios adicionales asociados al modelo.

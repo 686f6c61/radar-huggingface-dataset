@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Whisper tiny Japanese es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario avacasey en HuggingFace, orientado a reconocimiento automatico del habla (ASR) sobre ingles hablado con acento japones. El modelo se ha entrenado sobre el dataset Japanese_english y mantiene la arquitectura original de Whisper en su variante mas pequena, con 37.760.640 parametros totales y un repositorio de 0,3 GB. La licencia declarada es Apache-2.0 y los pesos se distribuyen en formato safetensors para su uso con la libreria transformers.
+Whisper tiny Japanese es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario avacasey en Hugging Face, orientado a reconocimiento automatico del habla (ASR) sobre ingles hablado con acento japones. El modelo se ha entrenado sobre el dataset Japanese_english y mantiene la arquitectura original de Whisper en su variante mas pequena, con 37.760.640 parametros totales y un repositorio de 0,3 GB. La licencia declarada es Apache-2.0 y los pesos se distribuyen en formato safetensors para su uso con la libreria transformers.
 
 El problema que aborda es concreto: los sistemas ASR genericos degradan su tasa de error cuando el hablante tiene un acento no nativo, y este ajuste busca reducir ese sesgo en el par ingles-hablante japones. El modelo declara una tasa de error de palabra (WER) de 21,4286 sobre el split de test del dataset Japanese_english, con una perdida de validacion de 0,4625, resultados no verificados por un tercero.
 
-Se trata de un modelo experimental y de muy bajo uso (0 descargas y 0 likes en el momento de redactar esta ficha), con una model card generada automaticamente por el Trainer de HuggingFace y sin documentacion adicional sobre composicion del dataset, usos previstos o limitaciones. Su relevancia practica esta en el nicho: transcripcion ligera, desplegable en CPU o en hardware de borde, para audio en ingles con acento japones.
+Se trata de un modelo experimental y de muy bajo uso (0 descargas y 0 likes en el momento de redactar esta ficha), con una model card generada automaticamente por el Trainer de Hugging Face y sin documentacion adicional sobre composicion del dataset, usos previstos o limitaciones. Su relevancia practica esta en el nicho: transcripcion ligera, desplegable en CPU o en hardware de borde, para audio en ingles con acento japones.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ Otros datos del repositorio: tamano 0,3 GB, creado el 13 de octubre de 2026 y ac
 
 El modelo conserva la arquitectura del modelo base openai/whisper-tiny: un transformer encoder-decoder con 4 capas en el encoder y 4 en el decoder, dimension de modelo 384 y atencion multi-cabeza, que ingiere espectrogramas log-Mel de 80 canales calculados sobre audio mono a 16 kHz. La entrada se trocea en ventanas de 30 segundos y la decodificacion es autorregresiva sobre vocabulario de tokens BPE, con tokens de control para idioma y tarea. No se introducen modificaciones arquitectonicas propias: se trata de un ajuste fino supervisado de los pesos preentrenados.
 
-El entrenamiento se realizo con el Trainer de HuggingFace sobre el dataset Japanese_english (sin detalles publicados sobre tamano, procedencia ni composicion). Los hiperparametros declarados son: learning rate 1e-05, tamano de batch de entrenamiento 2, batch de evaluacion 1, semilla 42, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con 500 pasos de calentamiento y 2000 pasos totales. Con 2,4876 epocas al final del entrenamiento, se puede estimar de forma aproximada un conjunto de unos 1600 ejemplos (calculo suponiendo ausencia de acumulacion de gradientes, dato no confirmado en la model card). No hay constancia de fases de RLHF, DPO ni ajuste por preferencias. Las versiones de framework empleadas son Transformers 5.19.0.dev0, PyTorch 2.11.0+cu130, Datasets 5.1.0 y Tokenizers 0.23.2.
+El entrenamiento se realizo con el Trainer de Hugging Face sobre el dataset Japanese_english (sin detalles publicados sobre tamano, procedencia ni composicion). Los hiperparametros declarados son: learning rate 1e-05, tamano de batch de entrenamiento 2, batch de evaluacion 1, semilla 42, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con 500 pasos de calentamiento y 2000 pasos totales. Con 2,4876 epocas al final del entrenamiento, se puede estimar de forma aproximada un conjunto de unos 1600 ejemplos (calculo suponiendo ausencia de acumulacion de gradientes, dato no confirmado en la model card). No hay constancia de fases de RLHF, DPO ni ajuste por preferencias. Las versiones de framework empleadas son Transformers 5.19.0.dev0, PyTorch 2.11.0+cu130, Datasets 5.1.0 y Tokenizers 0.23.2.
 
 Evolucion registrada durante el entrenamiento:
 
@@ -84,10 +84,10 @@ No se han publicado en la informacion disponible resultados comparativos en benc
 
 | Modelo | Parametros | Ventana de audio | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| avacasey/whisper-tiny_to_japanese_accent_13oct | 37,8 M | 30 s | 21,43 % (no verificado, dataset Japanese_english) | Apache-2.0 | HuggingFace |
-| openai/whisper-tiny | 37,8 M aprox. | 30 s | No disponible en la informacion proporcionada | Apache-2.0 | HuggingFace |
-| openai/whisper-base | 74 M aprox. | 30 s | No disponible en la informacion proporcionada | Apache-2.0 | HuggingFace |
-| openai/whisper-small | 244 M aprox. | 30 s | No disponible en la informacion proporcionada | Apache-2.0 | HuggingFace |
+| avacasey/whisper-tiny_to_japanese_accent_13oct | 37,8 M | 30 s | 21,43 % (no verificado, dataset Japanese_english) | Apache-2.0 | Hugging Face |
+| openai/whisper-tiny | 37,8 M aprox. | 30 s | No disponible en la informacion proporcionada | Apache-2.0 | Hugging Face |
+| openai/whisper-base | 74 M aprox. | 30 s | No disponible en la informacion proporcionada | Apache-2.0 | Hugging Face |
+| openai/whisper-small | 244 M aprox. | 30 s | No disponible en la informacion proporcionada | Apache-2.0 | Hugging Face |
 
 No se dispone de resultados comparativos directos entre este ajuste y los modelos base sobre el mismo dataset, por lo que no es posible cuantificar la mejora obtenida con el fine-tuning frente a openai/whisper-tiny sin acento. No se conocen otros ajustes publicos equivalentes especializados en acento japones sobre ingles en el rango de 40 M de parametros.
 
@@ -107,7 +107,7 @@ No se dispone de resultados comparativos directos entre este ajuste y los modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/avacasey/whisper-tiny_to_japanese_accent_13oct
+- Modelo en Hugging Face: https://huggingface.co/avacasey/whisper-tiny_to_japanese_accent_13oct
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de ajuste (Japanese_english): no disponible en la informacion proporcionada
 - Paper de referencia de la arquitectura Whisper (Robust Speech Recognition via Large-Scale Weak Supervision): no disponible en la informacion proporcionada

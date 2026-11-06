@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `ythj/fergergrger` es un repositorio publicado en HuggingFace por el usuario `ythj` el 6 de octubre de 2026. Se trata de un modelo de pequeno tamano: los pesos en formato safetensors suman 58.119.168 parametros (aproximadamente 58 millones), y el repositorio completo ocupa 0,2 GB. El repositorio incluye la etiqueta `gguf`, lo que indica que hay pesos cuantizados listos para su uso con motores de inferencia locales, y la etiqueta `endpoints_compatible`, que sugiere compatibilidad con los endpoints de inferencia de HuggingFace.
+El modelo identificado como `ythj/fergergrger` es un repositorio publicado en Hugging Face por el usuario `ythj` el 6 de octubre de 2026. Se trata de un modelo de pequeno tamano: los pesos en formato safetensors suman 58.119.168 parametros (aproximadamente 58 millones), y el repositorio completo ocupa 0,2 GB. El repositorio incluye la etiqueta `gguf`, lo que indica que hay pesos cuantizados listos para su uso con motores de inferencia locales, y la etiqueta `endpoints_compatible`, que sugiere compatibilidad con los endpoints de inferencia de Hugging Face.
 
 El repositorio no incluye informacion sobre arquitectura, datos de entrenamiento, licencia, idiomas soportados ni pipeline de uso. Tampoco se ha publicado una model card con descripcion funcional, lo que limita cualquier evaluacion tecnica rigurosa: no es posible determinar que problema resuelve ni en que dominios ha sido entrenado. El unico dato objetivo disponible es el recuento de parametros y el formato de los archivos.
 
@@ -44,7 +44,7 @@ Tampoco hay informacion sobre el proceso de entrenamiento: se desconoce el volum
 Dado que no se ha publicado informacion funcional sobre el modelo, los siguientes casos son escenarios plausibles derivados unicamente de su tamano y formato, no de capacidades verificadas:
 
 - Experimentacion docente y prototipado rapido: un modelo de 58 M de parametros cabe en memoria de cualquier equipo y permite probar pipelines de generacion de texto, tokenizacion o cuantizacion sin coste de GPU.
-- Pruebas de integracion en pipelines de inferencia: sirve como modelo de juguete para validar el funcionamiento de llama.cpp, Ollama o los endpoints compatibles de HuggingFace antes de migrar a un modelo mayor.
+- Pruebas de integracion en pipelines de inferencia: sirve como modelo de juguete para validar el funcionamiento de llama.cpp, Ollama o los endpoints compatibles de Hugging Face antes de migrar a un modelo mayor.
 - Despliegue en entornos con recursos muy limitados: al ocupar previsiblemente decenas de megabytes en cuantizacion de 4 bits, podria ejecutarse en CPU, dispositivos embebidos o navegador (via WebAssembly) si la arquitectura lo permite.
 - Generacion de texto de baja exigencia: completado de frases, plantillas o texto corto en aplicaciones donde la calidad no sea critica.
 - Filtrado o clasificacion de texto simple: si el modelo dispone de cabeza de clasificacion, podria usarse para tareas binarias de bajo coste, aunque no hay confirmacion.
@@ -66,7 +66,7 @@ Las estimaciones siguientes se derivan aritmeticamente del recuento de parametro
 - VRAM en cuantizacion de 4 bits: aproximadamente 29-35 MB.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es sobradamente suficiente; una RTX 3060, RTX 4090 o incluso una GPU integrada moderna pueden ejecutarlo.
 - Compatibilidad con GPU de consumo: si, cabe con margen amplio en cualquier GPU de consumo actual e incluso en CPU.
-- Opciones de despliegue: llama.cpp y Ollama son las opciones mas directas dado el formato GGUF; tambien puede ejecutarse mediante llama-cpp-python, y los endpoints compatibles de HuggingFace segun la etiqueta del repositorio. El soporte en vLLM o TGI no esta confirmado.
+- Opciones de despliegue: llama.cpp y Ollama son las opciones mas directas dado el formato GGUF; tambien puede ejecutarse mediante llama-cpp-python, y los endpoints compatibles de Hugging Face segun la etiqueta del repositorio. El soporte en vLLM o TGI no esta confirmado.
 - Latencia y throughput: no disponible, no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -97,5 +97,5 @@ La comparacion no es concluyente: sin benchmarks ni model card no es posible sit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ythj/fergergrger
+- Repositorio en Hugging Face: https://huggingface.co/ythj/fergergrger
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

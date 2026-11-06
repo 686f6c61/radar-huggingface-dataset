@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sealior-modernbert-vi-exam-seq-labeling` es un modelo de etiquetado de secuencias (token classification) desarrollado por el usuario `daominhwysi` y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un fine-tuning del encoder `aisingapore/SEA-LION-ModernBERT-300M` orientado a la extracción estructural de exámenes educativos vietnamitas de secundaria y bachillerato (grados 8 a 12) en asignaturas como matemáticas, física, química, biología, historia, geografía, literatura e inglés.
+`sealior-modernbert-vi-exam-seq-labeling` es un modelo de etiquetado de secuencias (token classification) desarrollado por el usuario `daominhwysi` y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un fine-tuning del encoder `aisingapore/SEA-LION-ModernBERT-300M` orientado a la extracción estructural de exámenes educativos vietnamitas de secundaria y bachillerato (grados 8 a 12) en asignaturas como matemáticas, física, química, biología, historia, geografía, literatura e inglés.
 
 El modelo resuelve un problema concreto de ingeniería de datos educativos: convertir documentos de examen en bruto (escaneados o digitales) en una representación XML estructurada, identificando etiquetas de pregunta, enunciados, opciones de respuesta, textos de estímulo, cabeceras de sección y explicaciones. Frente a alternativas generativas, emplea etiquetado BIO a nivel de token, lo que garantiza que el texto de salida sea siempre una subcadena exacta de la entrada (la llamada "Zero Character Mutation guarantee"), sin riesgo de alucinación textual.
 
@@ -75,7 +75,7 @@ No se han publicado resultados comparativos con otros modelos de etiquetado de e
 - En cuantizacion int8 (si estuviera disponible, no confirmada): alrededor de 0,31 GB para pesos.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para inferencia comoda (RTX 3060, RTX 4060, RTX 4090, A100, H100). Para batches grandes con secuencias de 2048 tokens, se recomienda 16 GB o mas.
 - Cabe en GPU consumer: si, en RTX 3060/4060/4070/4080/4090 y equivalentes.
-- Opciones de despliegue: al ser un modelo de `transformers` con cabeza personalizada (`EnhancedBertForTokenClassification`), requiere cargar codigo propio del repositorio; no es directamente compatible con llama.cpp u Ollama (no es un modelo generativo ni GGUF). Puede servirse con HuggingFace `transformers` + FastAPI/TorchServe, o potencialmente con TGI si se exporta correctamente, aunque no se documenta en la informacion disponible.
+- Opciones de despliegue: al ser un modelo de `transformers` con cabeza personalizada (`EnhancedBertForTokenClassification`), requiere cargar codigo propio del repositorio; no es directamente compatible con llama.cpp u Ollama (no es un modelo generativo ni GGUF). Puede servirse con Hugging Face `transformers` + FastAPI/TorchServe, o potencialmente con TGI si se exporta correctamente, aunque no se documenta en la informacion disponible.
 - Latencia y throughput: no disponibles en la informacion proporcionada. Por el tamano del encoder, se espera inferencia en decenas de milisegundos por secuencia de 512 tokens en GPU moderna, pero es una estimacion no confirmada.
 
 ## Comparativa con modelos similares
@@ -84,10 +84,10 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sealior-modernbert-vi-exam-seq-labeling | 312,8M | 8192 (encoder base; entrenado hasta 2048) | Token classification de examenes vietnamitas | Apache 2.0 | HuggingFace |
-| aisingapore/SEA-LION-ModernBERT-300M (base) | ~300M | 8192 | Encoder multilingue (no especializado) | no disponible en esta ficha | HuggingFace |
-| BERT-base multilingue | 178M | 512 | Token classification generico | Apache 2.0 | HuggingFace |
-| XLM-RoBERTa-base | 278M | 512 | Token classification multilingue | MIT | HuggingFace |
+| sealior-modernbert-vi-exam-seq-labeling | 312,8M | 8192 (encoder base; entrenado hasta 2048) | Token classification de examenes vietnamitas | Apache 2.0 | Hugging Face |
+| aisingapore/SEA-LION-ModernBERT-300M (base) | ~300M | 8192 | Encoder multilingue (no especializado) | no disponible en esta ficha | Hugging Face |
+| BERT-base multilingue | 178M | 512 | Token classification generico | Apache 2.0 | Hugging Face |
+| XLM-RoBERTa-base | 278M | 512 | Token classification multilingue | MIT | Hugging Face |
 
 La ventaja diferencial frente a encoders genericos es la cabeza especializada, el contexto de entrenamiento mas largo y el esquema de entidades especifico de examenes; la desventaja es la ausencia de benchmarks publicos contra alternativas y el reducido numero de descargas (128) que sugiere poca validacion externa.
 
@@ -105,7 +105,7 @@ La ventaja diferencial frente a encoders genericos es la cabeza especializada, e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/daominhwysi/sealior-modernbert-vi-exam-seq-labeling
+- Modelo en Hugging Face: https://huggingface.co/daominhwysi/sealior-modernbert-vi-exam-seq-labeling
 - Modelo base: https://huggingface.co/aisingapore/SEA-LION-ModernBERT-300M
 - Dataset de entrenamiento: https://huggingface.co/datasets/daominhwysi/sequence-labelling-vi-exam-v3
 - Perfil del autor: https://huggingface.co/daominhwysi

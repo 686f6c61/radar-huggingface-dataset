@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full-epoch2 | 3,75 B | no disponible | Full FT, solo acciones (10K) | no disponible | HuggingFace |
-| SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch2.01 (modelo principal) | 3,75 B | no disponible | Full FT, estado (40K) + acciones (10K) | no disponible | HuggingFace |
-| Qwen/Qwen2.5-VL-3B-Instruct (base) | 3,75 B | 32K | Instruct (RLHF) | Qwen Research License | HuggingFace |
+| SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full-epoch2 | 3,75 B | no disponible | Full FT, solo acciones (10K) | no disponible | Hugging Face |
+| SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch2.01 (modelo principal) | 3,75 B | no disponible | Full FT, estado (40K) + acciones (10K) | no disponible | Hugging Face |
+| Qwen/Qwen2.5-VL-3B-Instruct (base) | 3,75 B | 32K | Instruct (RLHF) | Qwen Research License | Hugging Face |
 
 La comparativa se limita a los modelos relacionados del mismo autor y al modelo base, ya que no se dispone de datos de rendimiento para establecer comparaciones cuantitativas. La diferencia clave entre el modelo de esta ficha y el principal es la ausencia de supervisión de estado, lo que debería reflejarse en un rendimiento inferior en tareas que requieren comprensión del entorno.
 
@@ -77,7 +77,7 @@ La comparativa se limita a los modelos relacionados del mismo autor y al modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full-epoch2
+- Repositorio Hugging Face: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full-epoch2
 - Modelo principal (world model): https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch2.01
 - Checkpoint epoch 3: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch3
 - Checkpoint epoch 2.26: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch2.26

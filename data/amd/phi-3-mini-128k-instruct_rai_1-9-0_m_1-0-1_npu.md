@@ -6,7 +6,7 @@ Phi-3-mini-128k-instruct_rai_1.9.0_m_1.0.1_npu es una distribucion del modelo Ph
 
 El modelo base, Phi-3-mini, es un transformer decoder-only de aproximadamente 3.800 millones de parametros con una ventana de contexto de 128.000 tokens, disenado por Microsoft Research para obtener un rendimiento de razonamiento y codigo competitivo con modelos mucho mas grandes. La contribucion de AMD en este repositorio es el empaquetado y la compilacion del modelo para inferencia acelerada en hardware Ryzen AI, lo que permite ejecutar localmente en portatiles y equipos de sobremesa con NPU integrada sin depender de una GPU dedicada.
 
-Es relevante ahora porque representa el esfuerzo de AMD por ofrecer un stack completo de IA local (hardware NPU mas runtime Ryzen AI mas modelos precompilados), lo que reduce la friccion para desarrolladores que quieren desplegar modelos conversacionales en dispositivos de borde. El acceso al repositorio esta restringido y requiere aceptar condiciones en HuggingFace.
+Es relevante ahora porque representa el esfuerzo de AMD por ofrecer un stack completo de IA local (hardware NPU mas runtime Ryzen AI mas modelos precompilados), lo que reduce la friccion para desarrolladores que quieren desplegar modelos conversacionales en dispositivos de borde. El acceso al repositorio esta restringido y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -79,7 +79,7 @@ La diferencia clave de esta distribucion frente a las alternativas es el formato
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Idioma: el tag oficial es solo ingles; el rendimiento en castellano no esta garantizado ni documentado.
 - Portabilidad: los pesos estan compilados para NPU Ryzen AI con el runtime 1.9.0; no se pueden cargar en llama.cpp, vLLM, Ollama ni TGI, ni ejecutar en GPUs NVIDIA o AMD sin recompilacion.
 - Dependencia de hardware: requiere un procesador AMD con NPU Ryzen AI compatible; en otro hardware el artefacto es inutilizable.
@@ -91,7 +91,7 @@ La diferencia clave de esta distribucion frente a las alternativas es el formato
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amd/Phi-3-mini-128k-instruct_rai_1.9.0_m_1.0.1_npu
-- Modelo base Phi-3-mini-128k-instruct de Microsoft: no disponible en la informacion proporcionada (se puede localizar en HuggingFace bajo `microsoft/Phi-3-mini-128k-instruct`)
+- Repositorio en Hugging Face: https://huggingface.co/amd/Phi-3-mini-128k-instruct_rai_1.9.0_m_1.0.1_npu
+- Modelo base Phi-3-mini-128k-instruct de Microsoft: no disponible en la informacion proporcionada (se puede localizar en Hugging Face bajo `microsoft/Phi-3-mini-128k-instruct`)
 - Documentacion del runtime Ryzen AI: no disponible en la informacion proporcionada
 - Papers, blogs o demos adicionales: no disponible en la informacion proporcionada

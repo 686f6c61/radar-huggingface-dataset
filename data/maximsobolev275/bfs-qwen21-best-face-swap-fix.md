@@ -85,8 +85,8 @@ No hay valores de MMLU, HumanEval, GSM8K ni de metricas de identidad facial como
 
 | Modelo | Tipo | Tamano | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| BFS-Qwen21-Best-Face-Swap-Fix (este) | LoRA de face swap posprocesado (poda 20 % + DARE sin reescalado) | Repositorio de 0,4 GB, 3 variantes | No aplica | Solo comparativas visuales sobre 4 semillas | MIT | HuggingFace, 0 descargas |
-| Alissonerdx/BFS-Best-Face-Swap | LoRA de face swap original | no disponible | No aplica | Referencia del autor; presenta desenfoque y textura plastificada segun la model card | no disponible en la informacion proporcionada | HuggingFace |
+| BFS-Qwen21-Best-Face-Swap-Fix (este) | LoRA de face swap posprocesado (poda 20 % + DARE sin reescalado) | Repositorio de 0,4 GB, 3 variantes | No aplica | Solo comparativas visuales sobre 4 semillas | MIT | Hugging Face, 0 descargas |
+| Alissonerdx/BFS-Best-Face-Swap | LoRA de face swap original | no disponible | No aplica | Referencia del autor; presenta desenfoque y textura plastificada segun la model card | no disponible en la informacion proporcionada | Hugging Face |
 | Otros LoRA de face swap de la comunidad | no disponible | no disponible | No aplica | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones tecnicas de terceros que permitan una comparativa cuantitativa rigurosa.
@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks ni de especificaciones tecnicas de terceros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maximsobolev275/BFS-Qwen21-Best-Face-Swap-Fix
+- Repositorio en Hugging Face: https://huggingface.co/maximsobolev275/BFS-Qwen21-Best-Face-Swap-Fix
 - Modelo y LoRA base: https://huggingface.co/Alissonerdx/BFS-Best-Face-Swap
 - Fichero `bfs_dare60-avgrank30.safetensors`: https://huggingface.co/maximsobolev275/BFS-Qwen21-Best-Face-Swap-Fix/blob/main/bfs_dare60-avgrank30.safetensors
 - Fichero `bfs_prune20_dare50-avgrank26.safetensors`: https://huggingface.co/maximsobolev275/BFS-Qwen21-Best-Face-Swap-Fix/blob/main/bfs_prune20_dare50-avgrank26.safetensors

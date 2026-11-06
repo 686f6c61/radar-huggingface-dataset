@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`valiant9000/bert4ner-base-chinese-onnx` es una exportación a formato ONNX del modelo `shibing624/bert4ner-base-chinese`, un sistema de reconocimiento de entidades nombradas (NER) para chino basado en la arquitectura BERT. El autor de la exportación es el usuario de HuggingFace valiant9000, mientras que el entrenamiento original corresponde a shibing624, autor del proyecto nerpy. El modelo resuelve la tarea de etiquetado de secuencias (token classification) identificando entidades de tipo persona (PER), organización (ORG), localización (LOC) y tiempo (TIME) en texto en chino.
+`valiant9000/bert4ner-base-chinese-onnx` es una exportación a formato ONNX del modelo `shibing624/bert4ner-base-chinese`, un sistema de reconocimiento de entidades nombradas (NER) para chino basado en la arquitectura BERT. El autor de la exportación es el usuario de Hugging Face valiant9000, mientras que el entrenamiento original corresponde a shibing624, autor del proyecto nerpy. El modelo resuelve la tarea de etiquetado de secuencias (token classification) identificando entidades de tipo persona (PER), organización (ORG), localización (LOC) y tiempo (TIME) en texto en chino.
 
 La relevancia de esta ficha radica en que la exportación ONNX está pensada específicamente para su uso con Transformers.js y ONNX Runtime, lo que permite ejecutar el modelo directamente en el navegador o en entornos JavaScript/Node.js sin necesidad de un backend Python. Los pesos se mantienen en FP32 sin modificaciones respecto al modelo original; solo se ha convertido el formato.
 
@@ -87,7 +87,7 @@ La comparación principal es con el modelo original `shibing624/bert4ner-base-ch
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/valiant9000/bert4ner-base-chinese-onnx
+- Modelo en Hugging Face: https://huggingface.co/valiant9000/bert4ner-base-chinese-onnx
 - Modelo base original: https://huggingface.co/shibing624/bert4ner-base-chinese
 - Proyecto nerpy (autor original): https://github.com/shibing624/nerpy
 - Transformers.js: https://github.com/huggingface/transformers.js

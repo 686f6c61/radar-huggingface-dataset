@@ -95,7 +95,7 @@ La conversión NInfer sacrifica entre 1 y 2 puntos porcentuales frente al BF16 o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sunnyyy/Qwen3.8-27B-NInfer
+- Repositorio Hugging Face: https://huggingface.co/sunnyyy/Qwen3.8-27B-NInfer
 - Repositorio fuente de la model card: https://huggingface.co/neroued/Qwen3.8-27B-NInfer
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio NInfer: https://github.com/Neroued/ninfer

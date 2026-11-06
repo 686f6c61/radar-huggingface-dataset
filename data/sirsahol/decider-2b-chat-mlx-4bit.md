@@ -71,7 +71,7 @@ El propio autor advierte que son proyecciones basadas en la saturacion de ancho 
 - VRAM estimada para inferencia: aproximadamente 1,5 GB de memoria activa con la cuantizacion de 4 bits; minimo recomendado de 8 GB de memoria unificada.
 - Variantes de precision y su huella: 4-bit ~1,5 GB de disco y VRAM; 8-bit ~2,6 GB (recomendado 16 GB o mas de memoria unificada); 16-bit ~4,8 GB (recomendado 32 GB o mas).
 - GPU compatibles: exclusivamente Apple Silicon (M1, M2, M3, M4, en versiones base, Pro, Max y Ultra). El formato MLX no se ejecuta en GPU NVIDIA, AMD ni en CPU x86.
-- GPU de consumo: si cabe en cualquier Mac con 8 GB de memoria unificada o mas. No es desplegable en una RTX 4090 ni en una A100 o H100 sin convertir previamente los pesos a un formato soportado (GGUF o safetensors de HuggingFace), conversion que no se proporciona en este repositorio.
+- GPU de consumo: si cabe en cualquier Mac con 8 GB de memoria unificada o mas. No es desplegable en una RTX 4090 ni en una A100 o H100 sin convertir previamente los pesos a un formato soportado (GGUF o safetensors de Hugging Face), conversion que no se proporciona en este repositorio.
 - Opciones de despliegue: mlx-lm mediante CLI (`mlx_lm.chat`, `mlx_lm.generate`) o API de Python; Ollama segun el Modelfile incluido en la model card; LM Studio, para el que el autor detalla la configuracion de tokens de parada. vLLM y TGI no aplican a este formato.
 - Tokens de parada obligatorios en el runtime: `<|im_start|>`, `<|im_end|>` y `<|endoftext|>`, con temperatura sugerida de 0,7 en el ejemplo de Ollama.
 - Latencia y throughput: unicamente las estimaciones de la tabla anterior (entre ~102 y ~306 tokens/s segun el chip, y entre ~9 y ~31 ms de TTFT).
@@ -104,7 +104,7 @@ Frente a alternativas de otros autores y de tamano similar, la comparativa figur
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SirSahOl/decider-2b-chat-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/SirSahOl/decider-2b-chat-mlx-4bit
 - Modelo base: https://huggingface.co/JackFram/decider-2b
 - Variante de 8 bits: https://huggingface.co/SirSahOl/decider-2b-chat-mlx-8bit
 - Variante de 16 bits: https://huggingface.co/SirSahOl/decider-2b-chat-mlx-16bit

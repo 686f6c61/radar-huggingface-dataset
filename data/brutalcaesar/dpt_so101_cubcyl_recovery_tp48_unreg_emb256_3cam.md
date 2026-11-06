@@ -95,6 +95,6 @@ También existen otros checkpoints del mismo autor para tareas similares (por ej
 
 ## Enlaces
 
-- [HuggingFace: BrutalCaesar/dpt_so101_cubcyl_recovery_tp48_unreg_emb256_3cam](https://huggingface.co/BrutalCaesar/dpt_so101_cubcyl_recovery_tp48_unreg_emb256_3cam)
+- [Hugging Face: BrutalCaesar/dpt_so101_cubcyl_recovery_tp48_unreg_emb256_3cam](https://huggingface.co/BrutalCaesar/dpt_so101_cubcyl_recovery_tp48_unreg_emb256_3cam)
 - [Repositorio `phi` (código auxiliar para la política `diffusion_transformer`)](https://github.com/physical-hardware-intelligence/phi)
 - [Repositorio original de Diffusion Policy (real-stanford/diffusion_policy)](https://github.com/real-stanford/diffusion_policy)

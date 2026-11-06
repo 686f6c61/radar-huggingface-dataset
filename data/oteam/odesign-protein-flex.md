@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ODesign (protein-flex) | 355,687 M | No aplica | Difusion all-atom + inverse folding | AGPL-3.0 | HuggingFace (implementacion no oficial) |
+| ODesign (protein-flex) | 355,687 M | No aplica | Difusion all-atom + inverse folding | AGPL-3.0 | Hugging Face (implementacion no oficial) |
 | ProteinMPNN | No disponible | No aplica | Inverse folding | No disponible | Codigo abierto |
 | LigandMPNN | No disponible | No disponible | Inverse folding con ligando | No disponible | Codigo abierto |
 | gRNAde | No disponible | No disponible | Diseno de RNA | No disponible | Codigo abierto |
@@ -91,12 +91,12 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 - No hay informacion sobre sesgos, tasas de alucinacion estructural ni validacion experimental de los disenos generados.
 - No se documentan limitaciones de contexto ni de idioma porque el modelo no opera sobre texto.
 - No se especifican requisitos de hardware ni latencias, lo que dificulta planificar despliegues en produccion.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
 - Cualquier candidato generado debe validarse experimentalmente antes de su uso en aplicaciones reales.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/odesign-protein-flex
+- Hugging Face: https://huggingface.co/oteam/odesign-protein-flex
 - Variante protein-rigid: https://huggingface.co/oteam/odesign-protein-rigid
 - Variante dna-rigid: https://huggingface.co/oteam/odesign-dna-rigid
 - Variante rna-rigid: https://huggingface.co/oteam/odesign-rna-rigid

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-afw-06-speech-state-dict-keys` es un artefacto de investigacion en seguridad publicado en HuggingFace bajo la libreria NeMo. No se trata de un modelo de lenguaje entrenado ni de un sistema utilizable para inferencia: es un especimen inerte ("inert scanner specimen") disenado para reproducir un hallazgo de seguridad concreto, en este caso el uso de claves de `state_dict` de NeMo como vector de transporte de metadatos de modelo (categoria AFW). El autor lo etiqueta explicitamente como `security-research` y `not-for-production`.
+`FrankLin00/mmrh-afw-06-speech-state-dict-keys` es un artefacto de investigacion en seguridad publicado en Hugging Face bajo la libreria NeMo. No se trata de un modelo de lenguaje entrenado ni de un sistema utilizable para inferencia: es un especimen inerte ("inert scanner specimen") disenado para reproducir un hallazgo de seguridad concreto, en este caso el uso de claves de `state_dict` de NeMo como vector de transporte de metadatos de modelo (categoria AFW). El autor lo etiqueta explicitamente como `security-research` y `not-for-production`.
 
 El repositorio no incluye pesos de un modelo funcional, ni tokenizador, ni configuracion de arquitectura, ni datos de entrenamiento. Su proposito es servir como prueba reproducible para escaneres de seguridad y para investigacion academica sobre cadenas de suministro de modelos: permite verificar si una herramienta de analisis detecta correctamente cargas inertes embebidas en los metadatos de un checkpoint NeMo. La carga util utilizada es el literal inerte `PWNED-INERT`.
 
@@ -42,7 +42,7 @@ El autor indica que los especimenes AFW emplean la carga util literal inerte `PW
 - Validacion de escaneres de seguridad: usar el repositorio como caso de prueba controlado para comprobar si una herramienta detecta cargas inertes embebidas en metadatos de checkpoints NeMo.
 - Investigacion academica en seguridad de la cadena de suministro de modelos: estudiar como se transportan hallazgos a traves de claves de `state_dict` sin ejecutar codigo malicioso real.
 - Desarrollo de reglas de deteccion: crear y ajustar firmas (por ejemplo, para el literal `PWNED-INERT`) y verificar falsos positivos y negativos contra un especimen conocido.
-- Pruebas de integracion de pipelines de escaneo: incorporar el artefacto a suites de CI que analizan repositorios de HuggingFace antes de su adopcion.
+- Pruebas de integracion de pipelines de escaneo: incorporar el artefacto a suites de CI que analizan repositorios de Hugging Face antes de su adopcion.
 - Formacion y concienciacion: demostrar a equipos de MLOps el riesgo de cargar checkpoints de origen no verificado y el valor de los manifiestos con hashes.
 - Verificacion de integridad: contrastar los hashes recogidos en el `MANIFEST.json` de la coleccion con los artefactos descargados.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al no
 
 | Artefacto | Tipo | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `FrankLin00/mmrh-afw-06-speech-state-dict-keys` | Especimen de seguridad NeMo (AFW) | Reproducir hallazgo de claves de `state_dict` | no disponible | HuggingFace, 0 descargas |
-| Otros especimenes de la misma coleccion (`MANIFEST.json`) | Especimenes de seguridad | Otros vectores de la misma investigacion | no disponible | HuggingFace |
-| Modelos NeMo funcionales (p. ej. ASR) | Modelos entrenados | Reconocimiento de voz y tareas asociadas | variable | HuggingFace |
+| `FrankLin00/mmrh-afw-06-speech-state-dict-keys` | Especimen de seguridad NeMo (AFW) | Reproducir hallazgo de claves de `state_dict` | no disponible | Hugging Face, 0 descargas |
+| Otros especimenes de la misma coleccion (`MANIFEST.json`) | Especimenes de seguridad | Otros vectores de la misma investigacion | no disponible | Hugging Face |
+| Modelos NeMo funcionales (p. ej. ASR) | Modelos entrenados | Reconocimiento de voz y tareas asociadas | variable | Hugging Face |
 
 No se dispone de informacion sobre otros artefactos comparables fuera de la coleccion del mismo autor.
 
@@ -82,6 +82,6 @@ No se dispone de informacion sobre otros artefactos comparables fuera de la cole
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FrankLin00/mmrh-afw-06-speech-state-dict-keys
+- Hugging Face: https://huggingface.co/FrankLin00/mmrh-afw-06-speech-state-dict-keys
 - Manifiesto de la coleccion (`MANIFEST.json`): referenciado en la model card, sin URL directa disponible
 - Paper, blog, repositorio o demo adicionales: no disponibles

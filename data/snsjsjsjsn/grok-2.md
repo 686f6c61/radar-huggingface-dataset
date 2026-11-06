@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo. La comparacion se limita a as
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Snsjsjsjsn/grok-2
+- Repositorio de Hugging Face: https://huggingface.co/Snsjsjsjsn/grok-2
 - Model card original de xAI (referenciada en el repo): https://huggingface.co/xai-org/grok-2
 - Documentacion de SGLang: https://github.com/sgl-project/sglang/
 - Guia de envio de peticiones con SGLang: https://docs.sglang.ai/basic_usage/send_request.html

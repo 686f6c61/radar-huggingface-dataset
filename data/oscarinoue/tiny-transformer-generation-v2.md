@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`oscarinoue/tiny-transformer-generation-v2` es un prototipo de investigación publicado en HuggingFace por el usuario oscarinoue. Se trata de una implementación propia de un transformer de escala mínima (24.832 parámetros totales según el fichero `model.safetensors`) orientada a tareas de generación. El repositorio no incluye pesos entrenados: el checkpoint `model.safetensors` se describe explícitamente como una inicialización válida para pruebas de humo (*smoke tests*), no como un modelo con entrenamiento completado ni evaluado.
+`oscarinoue/tiny-transformer-generation-v2` es un prototipo de investigación publicado en Hugging Face por el usuario oscarinoue. Se trata de una implementación propia de un transformer de escala mínima (24.832 parámetros totales según el fichero `model.safetensors`) orientada a tareas de generación. El repositorio no incluye pesos entrenados: el checkpoint `model.safetensors` se describe explícitamente como una inicialización válida para pruebas de humo (*smoke tests*), no como un modelo con entrenamiento completado ni evaluado.
 
 El modelo emplea una arquitectura denominada "Tiny Transformer" con atención lineal, fusión bilinear, activación ReLU y normalización GroupNorm. La receta de entrenamiento por defecto usa el optimizador LAMB con un scheduler OneCycle, valores que el autor presenta como puntos de partida del script y no como evidencia de una ejecución real. No se declaran idiomas soportados, pipeline ni resultados de benchmarks.
 
@@ -82,5 +82,5 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oscarinoue/tiny-transformer-generation-v2
+- Hugging Face: https://huggingface.co/oscarinoue/tiny-transformer-generation-v2
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

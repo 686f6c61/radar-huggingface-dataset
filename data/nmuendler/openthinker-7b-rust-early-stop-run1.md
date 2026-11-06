@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `nmuendler/OpenThinker-7B-rust-early-stop-run1` contiene un adaptador LoRA (PEFT) publicado por el usuario `nmuendler` y entrenado sobre el modelo base `open-thoughts/OpenThinker-7B`. No se trata, por tanto, de un modelo completo, sino de un conjunto de pesos de bajo rango (~0,3 GB) que debe cargarse junto al modelo base para producir inferencia. La model card del autor es la plantilla por defecto de HuggingFace y no aporta informacion sustantiva: todos los campos de descripcion, datos de entrenamiento, hiperparametros y evaluacion figuran como "More Information Needed".
+El repositorio `nmuendler/OpenThinker-7B-rust-early-stop-run1` contiene un adaptador LoRA (PEFT) publicado por el usuario `nmuendler` y entrenado sobre el modelo base `open-thoughts/OpenThinker-7B`. No se trata, por tanto, de un modelo completo, sino de un conjunto de pesos de bajo rango (~0,3 GB) que debe cargarse junto al modelo base para producir inferencia. La model card del autor es la plantilla por defecto de Hugging Face y no aporta informacion sustantiva: todos los campos de descripcion, datos de entrenamiento, hiperparametros y evaluacion figuran como "More Information Needed".
 
 El identificador del repositorio incluye los terminos `rust` y `early-stop-run1`, lo que sugiere un ajuste orientado al lenguaje de programacion Rust con parada temprana en la primera ejecucion de un barrido experimental, pero no existe documentacion en la informacion disponible que confirme el dataset, el objetivo de entrenamiento ni los hiperparametros empleados. El modelo base pertenece a la familia OpenThinker, orientada a razonamiento, aunque su model card no esta incluida en los datos proporcionados.
 
@@ -100,7 +100,7 @@ La informacion proporcionada solo permite comparar el adaptador con su propio mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nmuendler/OpenThinker-7B-rust-early-stop-run1
+- Repositorio en Hugging Face: https://huggingface.co/nmuendler/OpenThinker-7B-rust-early-stop-run1
 - Modelo base: https://huggingface.co/open-thoughts/OpenThinker-7B
 - Libreria PEFT: https://github.com/huggingface/peft
 - Articulo referenciado por el tag `arxiv:1910.09700` (calculadora de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

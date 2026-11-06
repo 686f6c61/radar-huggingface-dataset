@@ -91,8 +91,8 @@ A modo de contexto, se puede comparar el LoRA con su propio modelo base:
 
 | Modelo | Tipo | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AInVFX/ainvfx-fluid | IC-LoRA (rank 32) sobre LTX 2.5 | 654 MB de adaptador sobre base de 22B | Keyframes pintados + prompt | LTX-2.x Community License | HuggingFace, 185 descargas, 7 likes |
-| Lightricks/LTX-2.5 | Transformer de difusion de video | 22B (variantes dev y destilada) | Texto (y control segun variante) | LTX-2.x Community License | HuggingFace (modelo base) |
+| AInVFX/ainvfx-fluid | IC-LoRA (rank 32) sobre LTX 2.5 | 654 MB de adaptador sobre base de 22B | Keyframes pintados + prompt | LTX-2.x Community License | Hugging Face, 185 descargas, 7 likes |
+| Lightricks/LTX-2.5 | Transformer de difusion de video | 22B (variantes dev y destilada) | Texto (y control segun variante) | LTX-2.x Community License | Hugging Face (modelo base) |
 
 Las diferencias de rendimiento frente a otros IC-LoRA de humo y fuego para modelos de video alternativos no pueden establecerse con los datos disponibles.
 
@@ -111,7 +111,7 @@ Las diferencias de rendimiento frente a otros IC-LoRA de humo y fuego para model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AInVFX/ainvfx-fluid
+- Modelo en Hugging Face: https://huggingface.co/AInVFX/ainvfx-fluid
 - Pesos del LoRA: https://huggingface.co/AInVFX/ainvfx-fluid/blob/main/ltx-2.5/ainvfx-fluid.safetensors
 - Workflow de ComfyUI: https://huggingface.co/AInVFX/ainvfx-fluid/blob/main/workflow/ainvfx-fluid_painted_smoke_plume.json
 - Muestras (pares control/resultado): https://huggingface.co/AInVFX/ainvfx-fluid/tree/main/samples

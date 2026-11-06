@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `MahatirTusher/bangla-ai-text-detector` es un clasificador que, según su nombre, está diseñado para distinguir texto bengalí generado por inteligencia artificial del escrito por humanos. Fue publicado por el usuario MahatirTusher en HuggingFace con licencia MIT, aunque la model card es prácticamente vacía y no incluye descripción técnica alguna. El repositorio no ha recibido descargas ni valoraciones, lo que sugiere que se trata de un proyecto reciente o sin difusión.
+El modelo `MahatirTusher/bangla-ai-text-detector` es un clasificador que, según su nombre, está diseñado para distinguir texto bengalí generado por inteligencia artificial del escrito por humanos. Fue publicado por el usuario MahatirTusher en Hugging Face con licencia MIT, aunque la model card es prácticamente vacía y no incluye descripción técnica alguna. El repositorio no ha recibido descargas ni valoraciones, lo que sugiere que se trata de un proyecto reciente o sin difusión.
 
-La información pública disponible es muy limitada: no se especifican arquitectura, parámetros, contexto, idiomas soportados ni método de entrenamiento. Los resultados de búsqueda web apuntan a un proyecto de código abierto similar en GitHub (`mee0011/Bangla-AI-Text-Detector`) que utiliza un modelo fine-tuned de BanglaBERT, pero no se confirma que el modelo de HuggingFace sea el mismo o esté relacionado directamente. Dada la ausencia de datos técnicos en la model card, la ficha se limita a reflejar lo que se sabe y marca el resto como no disponible.
+La información pública disponible es muy limitada: no se especifican arquitectura, parámetros, contexto, idiomas soportados ni método de entrenamiento. Los resultados de búsqueda web apuntan a un proyecto de código abierto similar en GitHub (`mee0011/Bangla-AI-Text-Detector`) que utiliza un modelo fine-tuned de BanglaBERT, pero no se confirma que el modelo de Hugging Face sea el mismo o esté relacionado directamente. Dada la ausencia de datos técnicos en la model card, la ficha se limita a reflejar lo que se sabe y marca el resto como no disponible.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ La información pública disponible es muy limitada: no se especifican arquitect
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo, los datos de entrenamiento ni las técnicas de optimización utilizadas. La model card únicamente indica la licencia MIT. Según la búsqueda web, existe un proyecto similar en GitHub que emplea una versión fine-tuneada de BanglaBERT, pero no hay confirmación de que este modelo de HuggingFace utilice la misma base. Tampoco se documentan innovaciones técnicas ni el número de tokens empleados.
+No se ha publicado información sobre la arquitectura del modelo, los datos de entrenamiento ni las técnicas de optimización utilizadas. La model card únicamente indica la licencia MIT. Según la búsqueda web, existe un proyecto similar en GitHub que emplea una versión fine-tuneada de BanglaBERT, pero no hay confirmación de que este modelo de Hugging Face utilice la misma base. Tampoco se documentan innovaciones técnicas ni el número de tokens empleados.
 
 ## Capacidades
 
@@ -60,6 +60,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace: MahatirTusher/bangla-ai-text-detector](https://huggingface.co/MahatirTusher/bangla-ai-text-detector)
+- [Hugging Face: MahatirTusher/bangla-ai-text-detector](https://huggingface.co/MahatirTusher/bangla-ai-text-detector)
 - [GitHub: mee0011/Bangla-AI-Text-Detector](https://github.com/mee0011/Bangla-AI-Text-Detector) (proyecto relacionado, no confirmado como el mismo modelo)
 - [Bengali.AI](https://www.bengali.ai/) (plataforma de recursos lingüísticos, no directamente vinculada al modelo)

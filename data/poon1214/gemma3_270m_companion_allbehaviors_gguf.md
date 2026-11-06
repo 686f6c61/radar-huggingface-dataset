@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Poon1214/Gemma3_270M_Companion_AllBehaviors_GGUF es un archivo en formato GGUF publicado por el usuario Poon1214 en HuggingFace. Su nombre sugiere que se trata de una versión cuantizada de un modelo basado en Gemma 3 con aproximadamente 270 millones de parámetros (268.098.176 según los metadatos), orientado a usos conversacionales. El repositorio ocupa 3,5 GB, lo que indica que incluye varias cuantizaciones o archivos de pesos.
+El modelo Poon1214/Gemma3_270M_Companion_AllBehaviors_GGUF es un archivo en formato GGUF publicado por el usuario Poon1214 en Hugging Face. Su nombre sugiere que se trata de una versión cuantizada de un modelo basado en Gemma 3 con aproximadamente 270 millones de parámetros (268.098.176 según los metadatos), orientado a usos conversacionales. El repositorio ocupa 3,5 GB, lo que indica que incluye varias cuantizaciones o archivos de pesos.
 
 La información pública disponible es muy limitada: no se especifican la arquitectura exacta, la licencia, los idiomas soportados ni el pipeline de uso. Los tags indican compatibilidad con endpoints y una región de despliegue en Estados Unidos. A pesar de su nombre, no se puede confirmar que sea un modelo oficial de Google ni que herede las capacidades de la familia Gemma 3 sin documentación adicional.
 
@@ -57,4 +57,4 @@ No disponible. No se han encontrado modelos comparables con la misma configuraci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Poon1214/Gemma3_270M_Companion_AllBehaviors_GGUF
+- Repositorio Hugging Face: https://huggingface.co/Poon1214/Gemma3_270M_Companion_AllBehaviors_GGUF

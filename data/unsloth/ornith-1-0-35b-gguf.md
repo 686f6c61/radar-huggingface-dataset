@@ -91,9 +91,9 @@ Ornith-1.0-35B supera claramente a Qwen3.5-35B y Qwen3.6-35B en Terminal-Bench 2
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF de Unsloth): https://huggingface.co/unsloth/Ornith-1.0-35B-GGUF
-- Repositorio HuggingFace (GGUF oficial de ornith-ai): https://huggingface.co/ornith-ai/Ornith-1.0-35B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B
+- Repositorio Hugging Face (GGUF de Unsloth): https://huggingface.co/unsloth/Ornith-1.0-35B-GGUF
+- Repositorio Hugging Face (GGUF oficial de ornith-ai): https://huggingface.co/ornith-ai/Ornith-1.0-35B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B
 - Repositorio GitHub de Ornith-1: https://github.com/ornith-ai/Ornith-1
 - Modelo en ModelScope: https://www.modelscope.cn/models/unsloth/Ornith-1.0-35B-GGUF
 - Documentacion de Unsloth Dynamic 2.0: https://docs.unsloth.ai/basics/unsloth-dynamic-v2.0-gguf

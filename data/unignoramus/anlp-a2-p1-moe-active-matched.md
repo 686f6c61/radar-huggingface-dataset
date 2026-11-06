@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un transformer decoder-only de 47,86 millones de parametros totales disenado para traduccion automatica de vietnamita e ingles y de japones a ingles. Lo publica el usuario unignoramus en HuggingFace como parte de la asignatura ANLP (Assignment 2, Part 1), y su interes principal no es el rendimiento en produccion sino que se trata de un punto de control de ablacion: es uno de los cinco experimentos entrenados con un presupuesto de tokens identico para comparar variantes de la capa feed-forward.
+Este modelo es un transformer decoder-only de 47,86 millones de parametros totales disenado para traduccion automatica de vietnamita e ingles y de japones a ingles. Lo publica el usuario unignoramus en Hugging Face como parte de la asignatura ANLP (Assignment 2, Part 1), y su interes principal no es el rendimiento en produccion sino que se trata de un punto de control de ablacion: es uno de los cinco experimentos entrenados con un presupuesto de tokens identico para comparar variantes de la capa feed-forward.
 
 La variante concreta usa una capa feed-forward de tipo Mixture of Experts (MoE) con 4 expertos de los que solo 2 se activan por token, lo que da 35,28 millones de parametros activos frente a los 47,86 millones totales. El entrenamiento se hizo sobre 36,54 millones de tokens del dataset belumind/en-vi-ja-curated-500k-triplets, con una perplexity de test de 10,30 y un BLEU de test de 27,08.
 
@@ -83,7 +83,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unignoramus/anlp-a2-p1-moe-active-matched | 47,86 M totales / 35,28 M activos | no disponible | PPL 10,30; BLEU 27,08 (test propio) | MIT | Pesos en HuggingFace, 0 descargas |
+| unignoramus/anlp-a2-p1-moe-active-matched | 47,86 M totales / 35,28 M activos | no disponible | PPL 10,30; BLEU 27,08 (test propio) | MIT | Pesos en Hugging Face, 0 descargas |
 | Alternativas comparables de traduccion vi/ja a en | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 
 ## Enlaces
 
-- [Modelo en HuggingFace: unignoramus/anlp-a2-p1-moe-active-matched](https://huggingface.co/unignoramus/anlp-a2-p1-moe-active-matched)
+- [Modelo en Hugging Face: unignoramus/anlp-a2-p1-moe-active-matched](https://huggingface.co/unignoramus/anlp-a2-p1-moe-active-matched)
 - Dataset de entrenamiento: belumind/en-vi-ja-curated-500k-triplets (referenciado en la model card; no se ha proporcionado URL directa)
 - Repositorio de codigo del transformer: mencionado en la model card como repositorio acompanante, sin URL disponible
 - No se han encontrado papers, blogs ni demos adicionales en la busqueda web realizada.

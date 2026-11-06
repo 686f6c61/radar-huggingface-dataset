@@ -105,7 +105,7 @@ La legibilidad se evaluo sobre 4.258 imagenes reservadas; el README incluye un A
 | Arquitectura | Swin-T (27,5 M) | no disponible | Tipicamente ResNet/EfficientNet |
 | Datos de entrenamiento | 42.903 imagenes dermatologicas + 260 verificadas por experto | no disponible | Fitzpatrick17k (16.577 imagenes) |
 | Licencia | CC-BY-4.0 | no disponible | varia |
-| Disponibilidad | Pesos publicos en HuggingFace | no disponible | varia |
+| Disponibilidad | Pesos publicos en Hugging Face | no disponible | varia |
 
 No existen comparaciones numericas directas publicadas contra otros estimadores de tono Monk en la informacion disponible; el unico baseline reportado es el heuristico sin aprendizaje descrito en benchmarks.
 
@@ -123,7 +123,7 @@ No existen comparaciones numericas directas publicadas contra otros estimadores 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haic-hmgu/monk-skin-tone-prediction-swin-t
+- Modelo en Hugging Face: https://huggingface.co/haic-hmgu/monk-skin-tone-prediction-swin-t
 - Modelo de captioning dermatologico asociado: https://huggingface.co/haic-hmgu/dermatology-captioning-12b
 - Paper referenciado en tags (arXiv:1901.07884): https://arxiv.org/abs/1901.07884
 - Paper referenciado en tags (arXiv:2111.08851): https://arxiv.org/abs/2111.08851

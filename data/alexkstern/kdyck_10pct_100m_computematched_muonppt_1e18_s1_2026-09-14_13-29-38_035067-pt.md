@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de investigación publicado por el usuario de HuggingFace `alexkstern`, entrenado con [nanochat](https://github.com/karpathy/nanochat), el framework de entrenamiento de GPT a pequeña escala mantenido por Andrej Karpathy. No es un modelo de propósito general ni un asistente conversacional: es el artefacto final de un brazo experimental de un grid de entrenamientos de presupuesto fijo (1 × 10^18 FLOPs) en el que se destina un 10 % del cómputo a una fase previa sobre datos sintéticos (lenguaje de Dyck con k = 128, vocabulario de 256 símbolos) y el 90 % restante a preentrenamiento sobre texto natural (FineWeb tokenizado con el BPE de nanochat).
+Este repositorio contiene un checkpoint de investigación publicado por el usuario de Hugging Face `alexkstern`, entrenado con [nanochat](https://github.com/karpathy/nanochat), el framework de entrenamiento de GPT a pequeña escala mantenido por Andrej Karpathy. No es un modelo de propósito general ni un asistente conversacional: es el artefacto final de un brazo experimental de un grid de entrenamientos de presupuesto fijo (1 × 10^18 FLOPs) en el que se destina un 10 % del cómputo a una fase previa sobre datos sintéticos (lenguaje de Dyck con k = 128, vocabulario de 256 símbolos) y el 90 % restante a preentrenamiento sobre texto natural (FineWeb tokenizado con el BPE de nanochat).
 
 El modelo es un transformer decoder-only denso de 22 capas, 11 cabezas de atención y dimensión de modelo 1408, con una longitud de contexto de 2048 tokens en ambas fases. La model card no declara el número de parámetros; la etiqueta `pt_fineweb-nanochatbpe-100M` hace referencia al dataset de preentrenamiento, no al tamaño del modelo, y la aproximación 6N a partir de `flops_per_token` (4.582.014.976) sitúa el modelo en torno a los 764 millones de parámetros, una cifra no confirmada por el autor.
 
@@ -19,7 +19,7 @@ Su relevancia es exclusivamente de investigación: sirve para estudiar si el pre
 | Tipos de cuantización | No disponible. Solo se publica el `state_dict` en precisión de entrenamiento; no hay GGUF, AWQ, GPTQ ni variantes cuantizadas |
 | Idiomas soportados | No declarados. El corpus de preentrenamiento (`fineweb-nanochatbpe-100M`, derivado de FineWeb) es mayoritariamente inglés |
 | Licencia | apache-2.0 |
-| Formato de pesos | PyTorch `state_dict` (`model_000751.pt`), más `meta_000751.json`, `config_000751.json` y `rng_000751.pt`. No hay safetensors ni compatibilidad con `transformers` de HuggingFace |
+| Formato de pesos | PyTorch `state_dict` (`model_000751.pt`), más `meta_000751.json`, `config_000751.json` y `rng_000751.pt`. No hay safetensors ni compatibilidad con `transformers` de Hugging Face |
 | Tamaño de vocabulario | 65536 (fase PT, BPE de nanochat) y 256 (fase PPT, nivel de byte/símbolo); `ppt_same_vocab_as_pt: false` |
 | Paso del checkpoint | 751 (el config declara `num_iterations: 1000`) |
 | Tamaño del repositorio | 6,1 GB |
@@ -103,7 +103,7 @@ La comparación con GPT-2 large y Pythia-1B es la más pertinente por rango de p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexkstern/kdyck_10pct_100M_computematched_muonppt_1e18_s1_2026-09-14_13-29-38_035067-pt
+- Repositorio en Hugging Face: https://huggingface.co/alexkstern/kdyck_10pct_100M_computematched_muonppt_1e18_s1_2026-09-14_13-29-38_035067-pt
 - Run de Weights & Biases: https://wandb.ai/alexksternteam/cm100M_best_cells_hfpush_v0/runs/k8rsitog
 - Repositorio de nanochat (framework de entrenamiento): https://github.com/karpathy/nanochat
 - Nota sobre la búsqueda web: los resultados devueltos no guardan relación con este modelo (corresponden a la localidad de Bansko, Bulgaria) y no aportan información técnica adicional. No se han encontrado papers, blogs, repositorios ni demos asociados a este checkpoint.

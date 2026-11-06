@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Matourose/exy-modeles es un repositorio de HuggingFace que, segun su propia model card, contiene copias de modelos Gemma procedentes de la organizacion litert-community, alojadas para el servicio exy.life. No se trata, por tanto, de un modelo entrenado o publicado por el autor del repositorio, sino de una redistribucion de pesos ya existentes bajo las condiciones de uso de Gemma de Google.
+Matourose/exy-modeles es un repositorio de Hugging Face que, segun su propia model card, contiene copias de modelos Gemma procedentes de la organizacion litert-community, alojadas para el servicio exy.life. No se trata, por tanto, de un modelo entrenado o publicado por el autor del repositorio, sino de una redistribucion de pesos ya existentes bajo las condiciones de uso de Gemma de Google.
 
 El repositorio no incluye informacion sobre la arquitectura concreta, el numero de parametros, la longitud de contexto ni la variante de Gemma replicada. La model card se limita a una nota legal en frances que remite a los terminos de uso de Gemma y aclara que Gemma es una marca registrada de Google. El tamano del repositorio es de 0,9 GB, dato compatible con una variante de parametros reducidos o con pesos cuantizados, pero la informacion disponible no permite confirmarlo.
 
@@ -42,7 +42,7 @@ Tampoco se documenta el proceso de entrenamiento: no hay datos sobre numero de t
 - Referencia para auditoria de licencias: resulta util como ejemplo de redistribucion que arrastra los terminos de la licencia original, util en revisiones de cumplimiento.
 - Punto de partida para despliegue en dispositivo: si los pesos son efectivamente formatos LiteRT, el escenario natural seria la inferencia en movil o edge, aunque este extremo no esta confirmado en la informacion disponible.
 - Pruebas de comparacion de formatos: permite contrastar el comportamiento de un mismo modelo servido desde un espejo frente al repositorio original, si se dispone de ambos.
-- Docencia y demostraciones: util para ilustrar buenas practicas de atribucion de licencia y de trazabilidad de artefactos en HuggingFace.
+- Docencia y demostraciones: util para ilustrar buenas practicas de atribucion de licencia y de trazabilidad de artefactos en Hugging Face.
 
 No es posible detallar casos de uso adicionales con fundamento, ya que no se conocen la variante, el tamano ni el contexto del modelo alojado.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Matourose/exy-modeles | no disponible | no disponible | sujeta a terminos de Gemma | HuggingFace, 0 descargas, 0 likes | Espejo sin documentacion tecnica |
-| Modelos Gemma originales (Google) | no disponible | no disponible | terminos de Gemma | HuggingFace y otros canales oficiales | Fuente de la que proceden las copias |
-| Repositorios litert-community | no disponible | no disponible | terminos de Gemma | HuggingFace | Origen indicado en la model card |
+| Matourose/exy-modeles | no disponible | no disponible | sujeta a terminos de Gemma | Hugging Face, 0 descargas, 0 likes | Espejo sin documentacion tecnica |
+| Modelos Gemma originales (Google) | no disponible | no disponible | terminos de Gemma | Hugging Face y otros canales oficiales | Fuente de la que proceden las copias |
+| Repositorios litert-community | no disponible | no disponible | terminos de Gemma | Hugging Face | Origen indicado en la model card |
 
 No es posible establecer una comparativa cuantitativa con alternativas concretas porque no se conocen la variante, el tamano ni los resultados del modelo alojado.
 
@@ -80,7 +80,7 @@ No es posible establecer una comparativa cuantitativa con alternativas concretas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Matourose/exy-modeles
+- Repositorio en Hugging Face: https://huggingface.co/Matourose/exy-modeles
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms
-- Organizacion litert-community en HuggingFace: https://huggingface.co/litert-community
+- Organizacion litert-community en Hugging Face: https://huggingface.co/litert-community
 - Servicio exy.life: no disponible (mencionado en la model card sin enlace)

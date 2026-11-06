@@ -50,7 +50,7 @@ No disponible. No hay un modelo comparable, ya que este repositorio no es un mod
 - El uso de este repositorio como modelo de producción no es posible.
 
 ## Enlaces
-- [HuggingFace del repositorio](https://huggingface.co/diandrade/paper_015106306_visual_question_answering)
+- [Hugging Face del repositorio](https://huggingface.co/diandrade/paper_015106306_visual_question_answering)
 - [Visual Question Answering: A Survey of Methods, Datasets, Evaluation... (ACM)](https://dl.acm.org/doi/10.1145/3728635)
 - [Visual Question Answering - GitHub (yousefkotp)](https://github.com/yousefkotp/Visual-Question-Answering)
 - [VQA: Visual Question Answering - Semantic Scholar](https://www.semanticscholar.org/paper/VQA%3A-Visual-Question-Answering-Agrawal-Lu/97ad70a9fa3f99adf18030e5e38ebe3d90daa2db)
@@ -106,7 +106,7 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 - Cualquier intento de usar este repositorio como un modelo de producción es imposible.
 
 ## Enlaces
-- [Repositorio en HuggingFace](https://huggingface.co/diandrade/paper_015106306_visual_question_answering)
+- [Repositorio en Hugging Face](https://huggingface.co/diandrade/paper_015106306_visual_question_answering)
 - [Visual Question Answering: A Survey of Methods, Datasets, Evaluation... - ACM](https://dl.acm.org/doi/10.1145/3728635)
 - [Visual Question Answering - GitHub (yousefkotp)](https://github.com/yousefkotp/Visual-Question-Answering)
 - [VQA: Visual Question Answering - Semantic Scholar](https://www.semanticscholar.org/paper/VQA%3A-Visual-Question-Answering-Agrawal-Lu/97ad70a9fa3f99adf18030e5e38ebe3d90daa2db)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sppereira/coca-demo` es un repositorio de investigacion publicado en HuggingFace que contiene un prototipo de arquitectura CoCa orientado a tareas de retrieval (recuperacion multimodal texto-imagen). Lo desarrolla el usuario `sppereira` y su proposito declarado es servir como punto de partida experimental: documenta formatos de fichero, una configuracion de arquitectura y una receta de entrenamiento por defecto, sin presentar resultados de rendimiento verificados.
+`sppereira/coca-demo` es un repositorio de investigacion publicado en Hugging Face que contiene un prototipo de arquitectura CoCa orientado a tareas de retrieval (recuperacion multimodal texto-imagen). Lo desarrolla el usuario `sppereira` y su proposito declarado es servir como punto de partida experimental: documenta formatos de fichero, una configuracion de arquitectura y una receta de entrenamiento por defecto, sin presentar resultados de rendimiento verificados.
 
 El repositorio se etiqueta explicitamente como "small" y su unico checkpoint (`model.safetensors`) se describe como una inicializacion valida para pruebas de humo, no como un modelo entrenado. El recuento real de parametros en el fichero de pesos es de 16.576, una magnitud que corresponde a un modelo de juguete util unicamente para validar pipelines de carga y ejecucion, no para inferencia con calidad de produccion.
 
@@ -81,11 +81,11 @@ No se dispone de datos numericos de los modelos de referencia en la informacion 
 - No se especifica longitud de contexto, por lo que no puede garantizarse el comportamiento en secuencias largas.
 - Licencia MIT: permite uso comercial del codigo y los pesos, pero el propio autor recomienda revisar por separado los terminos de los datos de origen si el repositorio se usa con datasets externos.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse de forma separada de los valores por defecto aqui incluidos; no deben mezclarse defaults con resultados medidos.
-- El pipeline no esta declarado en HuggingFace y las APIs de carga automatica requieren un adaptador explicito, lo que anade friccion de integracion.
+- El pipeline no esta declarado en Hugging Face y las APIs de carga automatica requieren un adaptador explicito, lo que anade friccion de integracion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sppereira/coca-demo
+- Hugging Face: https://huggingface.co/sppereira/coca-demo
 - Fichero de entrenamiento: `finetune.py` (incluido en el repositorio)
 - Configuracion de arquitectura: `config.json` (incluido en el repositorio)
 - Receta por defecto: `training_args.json` (incluido en el repositorio)

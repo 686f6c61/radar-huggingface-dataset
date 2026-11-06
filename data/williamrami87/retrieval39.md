@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`williamrami87/retrieval39` es un repositorio de HuggingFace publicado por el usuario williamrami87 que contiene una implementacion propia de una arquitectura denominada **Mae** orientada a tareas de **retrieval** (recuperacion de informacion). Segun la propia model card, se trata de una variante "huge" pensada como **punto de partida reproducible**, no como un modelo entrenado listo para produccion. El repositorio incluye el codigo fuente (`eval.py`), la configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`).
+`williamrami87/retrieval39` es un repositorio de Hugging Face publicado por el usuario williamrami87 que contiene una implementacion propia de una arquitectura denominada **Mae** orientada a tareas de **retrieval** (recuperacion de informacion). Segun la propia model card, se trata de una variante "huge" pensada como **punto de partida reproducible**, no como un modelo entrenado listo para produccion. El repositorio incluye el codigo fuente (`eval.py`), la configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`).
 
 El dato mas relevante y a la vez mas llamativo es el recuento real de parametros reportado por el fichero safetensors: **33.088 parametros** (unos 33 mil), una cifra extraordinariamente baja para una etiqueta de escala "huge". Esto es coherente con la adverttencia del autor de que `model.safetensors` es un **checkpoint de inicializacion valido para pruebas de humo (smoke tests)**, y no un modelo entrenado ni evaluado. El tamano del repositorio es de 0,0 GB.
 
@@ -69,7 +69,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. A
 | Contexto | no disponible | no disponible |
 | Rendimiento | sin benchmark declarado | no disponible |
 | Licencia | bsd-3-clause | no disponible |
-| Disponibilidad | repositorio HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | repositorio Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -85,5 +85,5 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. A
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/williamrami87/retrieval39
+- Hugging Face: https://huggingface.co/williamrami87/retrieval39
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

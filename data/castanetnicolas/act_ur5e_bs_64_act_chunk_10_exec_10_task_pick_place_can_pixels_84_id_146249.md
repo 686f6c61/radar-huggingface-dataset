@@ -80,9 +80,9 @@ No se dispone de datos cuantitativos publicados para comparar este modelo con al
 
 | Modelo | Parametros | Contexto / entradas | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT (este repositorio) | 51,58 M | Estado (9,) + 2 imagenes 84x84 | Aprendizaje por imitacion, action chunking | Apache 2.0 | HuggingFace (LeRobot), 0 descargas |
+| ACT (este repositorio) | 51,58 M | Estado (9,) + 2 imagenes 84x84 | Aprendizaje por imitacion, action chunking | Apache 2.0 | Hugging Face (LeRobot), 0 descargas |
 | Diffusion Policy | no disponible | Vision + estado | Aprendizaje por imitacion, modelo de difusion | no disponible | Implementaciones publicas en LeRobot |
-| Otras politicas ACT de la comunidad | variable, no disponible | Vision + estado | Aprendizaje por imitacion, action chunking | variable | HuggingFace |
+| Otras politicas ACT de la comunidad | variable, no disponible | Vision + estado | Aprendizaje por imitacion, action chunking | variable | Hugging Face |
 
 Los valores de parametros, contexto y rendimiento de las alternativas no se han verificado en la informacion proporcionada y deben consultarse en sus respectivas model cards.
 
@@ -101,7 +101,7 @@ Los valores de parametros, contexto y rendimiento de las alternativas no se han 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_10_Exec_10_TASK_pick_place_can_PIXELS_84_ID_146249
+- Modelo en Hugging Face: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_10_Exec_10_TASK_pick_place_can_PIXELS_84_ID_146249
 - Dataset de entrenamiento: https://huggingface.co/datasets/castanetnicolas/robomimic_can_ph_image84
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

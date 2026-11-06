@@ -90,13 +90,13 @@ No se dispone de datos de comparacion con otros modelos MoE de tamano similar (p
 
 ## Enlaces
 
-- [Modelo en HuggingFace (npario/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit)](https://huggingface.co/npario/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit)
+- [Modelo en Hugging Face (npario/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit)](https://huggingface.co/npario/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit)
 - [Modelo original (ornith-ai/Ornith-1.5-35B-A3B)](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
 - [Version 6-bit XL del mismo autor](https://huggingface.co/npario/Ornith-1.5-35B-A3B-6bit-XL-mlx)
 - [Version BF16 del derivado](https://huggingface.co/PocketAiHub/Ornith-1.5-35B-A3B-Abliterated-MLX-BF16)
 - [Version 8-bit del derivado](https://huggingface.co/PocketAiHub/Ornith-1.5-35B-A3B-Abliterated-MLX-8bit)
 - [Version 4-bit compact del derivado](https://huggingface.co/PocketAiHub/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit)
-- [Coleccion Ornith-1.5 en HuggingFace](https://huggingface.co/collections/ornith-ai/ornith-15)
+- [Coleccion Ornith-1.5 en Hugging Face](https://huggingface.co/collections/ornith-ai/ornith-15)
 - [Pagina oficial de Ornith-1.5](https://ornith.ai/ornith_1_5.html)
 - [Repositorio GitHub de Ornith-1](https://github.com/ornith-ai/Ornith-1)
 - [Ficha en LLM Releases](https://www.llm-releases.com/models/ornith-1-5-35b-a3b)

@@ -75,7 +75,7 @@ Protocolo: conjunto principal de 538 oraciones con mayor consenso entre anotador
 
 | Modelo | Parámetros | Contexto | Macro-F1 (main-bench) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **JEVnovel 3 27B (este)** | 27,48B | 4096 tokens | 0,8223 | Apache-2.0 | HuggingFace y ModelScope |
+| **JEVnovel 3 27B (este)** | 27,48B | 4096 tokens | 0,8223 | Apache-2.0 | Hugging Face y ModelScope |
 | JEVnovel 2 27B | 27B (no detallado) | no disponible | 0,7661 | no disponible | misma familia |
 | JEVnovel 3 27B FP8 | 27,48B | 4096 tokens | 0,8185 (umbral 0,31) | Apache-2.0 | ModelScope |
 | Estudiantes JEVnovel 3 (0,8B / 4B) | 0,8B / 4B | no disponible | no disponible | no disponible | pendientes de publicación |
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks de clasificadores de calidad literaria de t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ronghua/jev-novel-3-27b-bf16
+- Hugging Face: https://huggingface.co/ronghua/jev-novel-3-27b-bf16
 - Versión FP8 (ModelScope): https://modelscope.cn/models/alkaid55555/jev-novel-3-27b-fp8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Informe técnico: `JEVnovel3技术报告.md`, incluido en el repositorio del modelo

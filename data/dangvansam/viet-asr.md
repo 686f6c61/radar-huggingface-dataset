@@ -2,7 +2,7 @@
 
 ## Resumen
 
-viet-asr es un modelo de reconocimiento automático del habla (ASR) especializado en vietnamita, desarrollado por dangvansam y publicado en HuggingFace bajo licencia Apache-2.0. Se distribuye en formato ONNX y está diseñado para producir directamente texto "listo para publicar": con mayúsculas, puntuación y números en forma escrita, sin necesidad de modelos auxiliares de puntuación, casing o inverse text normalization (ITN). Esta característica lo diferencia de pipelines ASR tradicionales que requieren una cadena de post-procesado.
+viet-asr es un modelo de reconocimiento automático del habla (ASR) especializado en vietnamita, desarrollado por dangvansam y publicado en Hugging Face bajo licencia Apache-2.0. Se distribuye en formato ONNX y está diseñado para producir directamente texto "listo para publicar": con mayúsculas, puntuación y números en forma escrita, sin necesidad de modelos auxiliares de puntuación, casing o inverse text normalization (ITN). Esta característica lo diferencia de pipelines ASR tradicionales que requieren una cadena de post-procesado.
 
 El modelo emplea una arquitectura Zipformer2 transducer con encoder no streaming, decoder stateless y contexto 2, con 85,8 millones de parámetros (86M redondeados). La versión cuantizada int8 ocupa 78 MB, lo que lo hace extremadamente ligero para despliegue en producción, incluyendo dispositivos móviles y navegador mediante WASM.
 
@@ -82,7 +82,7 @@ Velocidad: 28× tiempo real en un solo núcleo de CPU (int8, AMD EPYC 9334, extr
 
 | Modelo | Parametros | Contexto | WER All 24 (formateado) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| viet-asr | 86M | No streaming (segmentacion VAD) | 24,14 | Apache-2.0 | ONNX, HuggingFace, SDK |
+| viet-asr | 86M | No streaming (segmentacion VAD) | 24,14 | Apache-2.0 | ONNX, Hugging Face, SDK |
 | Google Chirp 3 | API | No disponible | 25,16 | Propietaria (API) | Solo API |
 | Viettel ASR | API | No disponible | 26,38 | Propietaria (API) | Solo API |
 | PhoWhisper-Large | 1,55B | No disponible | 37,98 | No disponible en la información | No disponible en la información |
@@ -104,7 +104,7 @@ La comparativa se basa en los datos del benchmark del autor. viet-asr lidera en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dangvansam/viet-asr
+- Hugging Face: https://huggingface.co/dangvansam/viet-asr
 - SDK viet-asr: https://github.com/dangvansam/viet-asr
 - k2-fsa/icefall (arquitectura y receta de entrenamiento): https://github.com/k2-fsa/icefall
 - sherpa-onnx (inferencia compatible): https://github.com/k2-fsa/sherpa-onnx

@@ -87,7 +87,7 @@ El modelo se posiciona como una opción equilibrada entre eficiencia y rendimien
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/0xbidkslj1/albedo-qwen3.6-35b-v11
+- Repositorio Hugging Face del modelo: https://huggingface.co/0xbidkslj1/albedo-qwen3.6-35b-v11
 - Blog oficial de Qwen sobre Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Guía completa de Qwen 3.6 (insiderllm.com): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/
 - Guía para ejecutar Qwen3.6-35B MoE localmente: https://insiderllm.com/guides/best-way-run-qwen-3-6-35b-moe-locally/

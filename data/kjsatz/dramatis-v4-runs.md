@@ -84,7 +84,7 @@ La comparacion es orientativa por tamano y naturaleza (modelos densos diminutos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kjsatz/dramatis-v4-runs
+- Hugging Face: https://huggingface.co/kjsatz/dramatis-v4-runs
 - Repositorio del proyecto: https://github.com/kjsatz/dramatis
 - Plan de experimentos: `docs/2026-09-22_EXPERIMENT_PLAN.md` en el repositorio del proyecto
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms

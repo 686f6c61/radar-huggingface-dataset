@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nm-testing/int8_dynamic_per_token-e2e` es un artefacto de cuantización de 8 bits publicado por el usuario `nm-testing` en HuggingFace. Forma parte de la familia de modelos Llama, como indican las etiquetas, y utiliza el formato `compressed-tensors` para la compresión de pesos. Se trata de un modelo de tamaño pequeño, con aproximadamente 1.100 millones de parámetros, lo que lo sitúa en la gama de los modelos ligeros aptos para despliegue en entornos con recursos limitados.
+El modelo `nm-testing/int8_dynamic_per_token-e2e` es un artefacto de cuantización de 8 bits publicado por el usuario `nm-testing` en Hugging Face. Forma parte de la familia de modelos Llama, como indican las etiquetas, y utiliza el formato `compressed-tensors` para la compresión de pesos. Se trata de un modelo de tamaño pequeño, con aproximadamente 1.100 millones de parámetros, lo que lo sitúa en la gama de los modelos ligeros aptos para despliegue en entornos con recursos limitados.
 
 La relevancia de este modelo radica en su propósito: demostrar la cuantización dinámica por token en 8 bits. Este tipo de cuantización reduce el uso de memoria y acelera la inferencia en comparación con modelos de precisión completa, manteniendo un equilibrio razonable entre rendimiento y calidad. Sin embargo, al ser un repositorio de pruebas (`nm-testing` sugiere un entorno de experimentación), no se proporcionan detalles sobre el dataset de entrenamiento, la licencia o las capacidades lingüísticas, por lo que su uso en producción debe considerarse con cautela.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada: con 1.100 millones de parámetros en int8, el modelo ocupa aproximadamente 1,1 GB en memoria (1,1e9 bytes ≈ 1,1 GB). Con overhead de activaciones y contexto, se puede ejecutar en GPUs con 4 GB de VRAM o menos.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, como NVIDIA GTX 1650, RTX 3050, o superiores. También puede ejecutarse en CPU con suficiente RAM (≈ 2,5 GB para el repo completo).
 - Si cabe en consumer GPU: sí, en prácticamente todas las GPUs de consumo modernas.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace Transformers con soporte para compressed-tensors, TGI.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face Transformers con soporte para compressed-tensors, TGI.
 - Latencia y throughput: no disponibles, pero al ser un modelo pequeño, se espera una generación rápida en hardware moderno.
 
 ## Comparativa con modelos similares
@@ -69,4 +69,4 @@ No se dispone de información suficiente para comparar con modelos equivalentes.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nm-testing/int8_dynamic_per_token-e2e
+- Repositorio Hugging Face: https://huggingface.co/nm-testing/int8_dynamic_per_token-e2e

@@ -86,9 +86,9 @@ El tier de 2B resolvió el 42,8 % de las preguntas de calibración y JevK5-9B fu
 
 | Sistema | Parámetros | Contexto | Precisión JevBench (231) | ECE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Jev-Style-Cascade-9B | ~11B combinados (2B + 9B) | 25.600 tokens | 203/231 | 0,026 | Apache-2.0 | HuggingFace (configuración de cascada) |
-| Jev-Style-2B-Decision-v3 solo | ~2B | No disponible | 170/231 | 0,062 | No disponible en la información | HuggingFace |
-| JevK5-9B solo | ~9B | No disponible | 203/231 | 0,034 | Apache-2.0 (según ficha) | HuggingFace |
+| Jev-Style-Cascade-9B | ~11B combinados (2B + 9B) | 25.600 tokens | 203/231 | 0,026 | Apache-2.0 | Hugging Face (configuración de cascada) |
+| Jev-Style-2B-Decision-v3 solo | ~2B | No disponible | 170/231 | 0,062 | No disponible en la información | Hugging Face |
+| JevK5-9B solo | ~9B | No disponible | 203/231 | 0,034 | Apache-2.0 (según ficha) | Hugging Face |
 | Jev 1.13.0 (referencia publicada) | No disponible | No disponible | 86,6 % | No disponible | No disponible | No disponible |
 
 La cascada iguala en aciertos totales a JevK5-9B en solitario (203/231) pero mejora el error de calibración (0,026 frente a 0,034) y, sobre todo, reduce el coste al resolver 123 de los 231 ítems con el tier de 2B. En el conjunto de calibración la cascada queda 1,0 punto por debajo de JevK5-9B solo (73,1 % frente a 74,1 %), dentro del margen previsto en la predeclaración.
@@ -109,7 +109,7 @@ La cascada iguala en aciertos totales a JevK5-9B en solitario (203/231) pero mej
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chaoliangUNSW/Jev-Style-Cascade-9B
+- Modelo en Hugging Face: https://huggingface.co/chaoliangUNSW/Jev-Style-Cascade-9B
 - Modelo base tier 1: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v3
 - Modelo base tier 2: https://huggingface.co/alibiserikbay/JevK5-9B
 - Librería `jev-style`: https://github.com/lawrence3699/jev-style

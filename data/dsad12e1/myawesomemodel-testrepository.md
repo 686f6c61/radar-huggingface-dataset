@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepository es un repositorio publicado en HuggingFace por el usuario DSAD12E1 con el identificador DSAD12E1/MyAwesomeModel-TestRepository. Por su nombre y por el contenido de su model card, se trata de un repositorio de prueba o de una plantilla, no de un modelo entrenado y desplegable: el tamaño del repositorio es de 0.0 GB, acumula 0 descargas y 0 likes, y la model card reutiliza marcadores de posición (imágenes `figures/fig1.png`, comparativas contra "Model1" y "Model2") propios de una plantilla.
+MyAwesomeModel-TestRepository es un repositorio publicado en Hugging Face por el usuario DSAD12E1 con el identificador DSAD12E1/MyAwesomeModel-TestRepository. Por su nombre y por el contenido de su model card, se trata de un repositorio de prueba o de una plantilla, no de un modelo entrenado y desplegable: el tamaño del repositorio es de 0.0 GB, acumula 0 descargas y 0 likes, y la model card reutiliza marcadores de posición (imágenes `figures/fig1.png`, comparativas contra "Model1" y "Model2") propios de una plantilla.
 
 Los metadatos técnicos apuntan a un modelo basado en BERT para extracción de características (tags: `transformers`, `pytorch`, `bert`, `feature-extraction`), lo que contrasta con el texto de la model card, que describe un modelo generativo conversacional con razonamiento, código y matemáticas, soporte de function calling y un 87.5% de exactitud en AIME 2025. Esta contradicción, unida a la ausencia de pesos, obliga a interpretar esta ficha como una descripción del contenido declarado y no como una evaluación de un modelo funcional.
 
@@ -89,7 +89,7 @@ No hay resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la informa
 - VRAM estimada para inferencia: no disponible, ya que el repositorio no contiene pesos (0.0 GB).
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: el tag `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints, pero sin pesos publicados no es desplegable. No se detallan soportes de vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: el tag `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints, pero sin pesos publicados no es desplegable. No se detallan soportes de vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -117,7 +117,7 @@ No disponible. La model card compara contra "Model1", "Model2" y "Model1-v2" sin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DSAD12E1/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/DSAD12E1/MyAwesomeModel-TestRepository
 - Repositorio de código: mencionado en la model card como "our code repository", sin URL publicada.
 - Sitio web oficial y plataforma de chat/API: mencionados en la card, sin URL publicada.
 - Búsqueda web: los resultados devueltos corresponden a PowerLab (venta de PC gaming) y no guardan relación con el modelo; no se han encontrado enlaces relevantes.

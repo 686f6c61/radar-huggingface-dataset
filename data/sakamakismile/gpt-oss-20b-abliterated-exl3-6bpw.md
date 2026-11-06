@@ -23,7 +23,7 @@ La relevancia de esta ficha radica en que ofrece una alternativa práctica para 
 
 El modelo base es **gpt-oss-20b** de OpenAI, un transformer con arquitectura MoE de 32 expertos, 21B parámetros totales y 3.6B activos, entrenado con 128k de contexto. OpenAI lo diseñó para razonamiento eficiente y tool use, con un mecanismo de *reasoning effort* configurable. Sobre este modelo, wangzhang aplicó la técnica *abliterix* (abliteration) para suprimir los rechazos, modificando los pesos de forma que el modelo responda a un rango más amplio de peticiones sin filtros de seguridad explícitos.
 
-La cuantización EXL3 6.0 bpw fue realizada por Lna-Lab, que además corrigió un fallo en ExLlamaV3 1.4.5 que cargaba incorrectamente los expertos en el layout bf16 de HuggingFace (ignoraba el interleave de gate/up y descartaba los biases de los expertos). El resultado se verificó comparando la capa 0 del MoE con la referencia de transformers, obteniendo un error relativo de 4e-4. No se dispone de información sobre el dataset de entrenamiento original ni sobre el proceso de abliteración más allá de la técnica empleada.
+La cuantización EXL3 6.0 bpw fue realizada por Lna-Lab, que además corrigió un fallo en ExLlamaV3 1.4.5 que cargaba incorrectamente los expertos en el layout bf16 de Hugging Face (ignoraba el interleave de gate/up y descartaba los biases de los expertos). El resultado se verificó comparando la capa 0 del MoE con la referencia de transformers, obteniendo un error relativo de 4e-4. No se dispone de información sobre el dataset de entrenamiento original ni sobre el proceso de abliteración más allá de la técnica empleada.
 
 ## Capacidades
 

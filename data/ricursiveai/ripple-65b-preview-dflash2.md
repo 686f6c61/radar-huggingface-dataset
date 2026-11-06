@@ -73,7 +73,7 @@ No disponible. No se han proporcionado datos de otros borradores de decodificaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2
+- Modelo en Hugging Face: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2
 - Modelo objetivo BF16: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
 - Modelo objetivo NVFP4: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4
 - Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Base-Preview

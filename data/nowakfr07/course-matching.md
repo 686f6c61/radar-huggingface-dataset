@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `nowakfr07/course-matching` es un prototipo de investigación basado en la arquitectura DeiT (Data-efficient Image Transformer), publicado por el usuario nowakfr07 en HuggingFace. Se presenta explícitamente como una implementación orientada a tareas de *matching* (emparejamiento) y, según la propia model card, se trata de un *checkpoint de inicialización* válido para pruebas de humo (*smoke tests*), no de un modelo entrenado ni evaluado sobre ningún conjunto de referencia. No se reclama ninguna métrica de rendimiento en el repositorio.
+El modelo `nowakfr07/course-matching` es un prototipo de investigación basado en la arquitectura DeiT (Data-efficient Image Transformer), publicado por el usuario nowakfr07 en Hugging Face. Se presenta explícitamente como una implementación orientada a tareas de *matching* (emparejamiento) y, según la propia model card, se trata de un *checkpoint de inicialización* válido para pruebas de humo (*smoke tests*), no de un modelo entrenado ni evaluado sobre ningún conjunto de referencia. No se reclama ninguna métrica de rendimiento en el repositorio.
 
 El modelo es extremadamente pequeño: el recuento real de parámetros en el fichero safetensors es de 24.832 pesos, muy lejos de los aproximadamente 22 millones de un DeiT-Small estándar. Esto confirma que se trata de una arquitectura reducida de carácter experimental (configuración *small* en la terminología del autor), con atención *multi-query*, fusión bilineal, activación GELU y normalización por *batchnorm*. Su relevancia actual es limitada: sirve como punto de partida reproducible para experimentos propios, no como componente listo para producción.
 
-El repositorio no declara idiomas soportados, no incluye pipeline de HuggingFace asignado y acumula cero descargas y cero *likes* en el momento de la consulta. La licencia es Apache 2.0, lo que permite uso comercial, aunque el propio autor advierte que el checkpoint no ha sido entrenado ni auditado en términos de robustez, equidad o transferencia de dominio.
+El repositorio no declara idiomas soportados, no incluye pipeline de Hugging Face asignado y acumula cero descargas y cero *likes* en el momento de la consulta. La licencia es Apache 2.0, lo que permite uso comercial, aunque el propio autor advierte que el checkpoint no ha sido entrenado ni auditado en términos de robustez, equidad o transferencia de dominio.
 
 ## Especificaciones técnicas
 
@@ -86,9 +86,9 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparación se 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nowakfr07/course-matching | 24.832 | no disponible | Apache 2.0 | HuggingFace, sin entrenar |
-| DeiT-Small (referencia) | ~22 M | no aplica (vision) | Apache 2.0 | HuggingFace / Facebook |
-| Modelos de *matching* tipo sentence-transformers (referencia) | 20-120 M | 128-512 tokens tipicamente | Apache 2.0 o MIT | HuggingFace |
+| nowakfr07/course-matching | 24.832 | no disponible | Apache 2.0 | Hugging Face, sin entrenar |
+| DeiT-Small (referencia) | ~22 M | no aplica (vision) | Apache 2.0 | Hugging Face / Facebook |
+| Modelos de *matching* tipo sentence-transformers (referencia) | 20-120 M | 128-512 tokens tipicamente | Apache 2.0 o MIT | Hugging Face |
 
 La comparación no es directa: `course-matching` no es un modelo entrenado y su número de parámetros es varios órdenes de magnitud inferior al de cualquier alternativa funcional. No se dispone de ninguna métrica que permita situarlo frente a DeiT-Small o frente a modelos de *sentence matching*.
 
@@ -99,13 +99,13 @@ La comparación no es directa: `course-matching` no es un modelo entrenado y su 
 - No se declaran sesgos conocidos, pero tampoco se ha realizado ningún análisis al respecto.
 - Riesgo de alucinación: no aplica en el sentido generativo, pero las predicciones de *matching* no tienen validez alguna al no existir entrenamiento.
 - Limitaciones de contexto e idioma: no disponibles; el modelo no declara idiomas ni longitud de contexto.
-- Implementación personalizada: las APIs de carga automática de HuggingFace requieren un adaptador explícito, lo que añade fricción de integración.
+- Implementación personalizada: las APIs de carga automática de Hugging Face requieren un adaptador explícito, lo que añade fricción de integración.
 - Licencia Apache 2.0: permite uso comercial del código y los pesos, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se usa con conjuntos externos.
 - Repositorio con cero descargas y cero *likes*: no hay validación por parte de la comunidad ni señales de uso en producción.
 - Cualquier resultado obtenido a partir de un *checkpoint* futuro deberá documentarse por separado de los valores por defecto aquí incluidos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nowakfr07/course-matching
+- Hugging Face: https://huggingface.co/nowakfr07/course-matching
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada. Los resultados devueltos corresponden a páginas de Vinted y no guardan relación con el modelo.

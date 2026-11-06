@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Atum444 es un modelo publicado en HuggingFace por el usuario John96730 bajo el identificador `John96730/atum444`. Se distribuye exclusivamente en formato ONNX y el repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un modelo de pequeno tamano o un artefacto derivado (por ejemplo, una exportacion parcial o cuantizada de otro modelo). No se dispone de informacion publica sobre arquitectura, numero de parametros, contexto ni datos de entrenamiento.
+Atum444 es un modelo publicado en Hugging Face por el usuario John96730 bajo el identificador `John96730/atum444`. Se distribuye exclusivamente en formato ONNX y el repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un modelo de pequeno tamano o un artefacto derivado (por ejemplo, una exportacion parcial o cuantizada de otro modelo). No se dispone de informacion publica sobre arquitectura, numero de parametros, contexto ni datos de entrenamiento.
 
 La ficha del repositorio no incluye pipeline declarado, licencia, idiomas soportados ni model card descriptiva. El unico metadato tecnico relevante es la etiqueta `onnx`, que indica que los pesos estan pensados para ejecutarse mediante ONNX Runtime y no mediante frameworks como PyTorch o GGUF. El modelo acumula 59 descargas y ningun "like" en el momento de la consulta, lo que apunta a un proyecto personal o experimental sin validacion comunitaria.
 
@@ -44,7 +44,7 @@ El unico dato estructural disponible es el formato de distribucion: pesos en ONN
 - Prototipado en CPU o edge: si el modelo resulta ser de pocos parametros, puede probarse en entornos sin GPU usando ONNX Runtime, aunque el rendimiento real es desconocido.
 - Integracion en pipelines de inferencia portables: ONNX permite desplegar el mismo artefacto en distintos sistemas operativos y runtimes, lo que facilita pruebas de compatibilidad.
 - Evaluacion comparativa de exportaciones: util como referencia para comparar la calidad de una exportacion ONNX frente al modelo original, si se identifica cual es.
-- Docencia y experimentacion: sirve como ejemplo de repositorio ONNX minimo para estudiar estructura de artefactos y metadatos de HuggingFace.
+- Docencia y experimentacion: sirve como ejemplo de repositorio ONNX minimo para estudiar estructura de artefactos y metadatos de Hugging Face.
 - Auditoria de seguridad de modelos: analizar la grafica ONNX en busca de operadores inesperados o dependencias antes de ejecutarlo en un entorno controlado.
 
 En ningun caso se recomienda su uso en produccion sin una validacion previa de capacidades, licencia y comportamiento.
@@ -78,5 +78,5 @@ No disponible. No se ha identificado el modelo base ni la categoria a la que per
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/John96730/atum444
+- Repositorio Hugging Face: https://huggingface.co/John96730/atum444
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

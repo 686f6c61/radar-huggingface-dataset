@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fruit Disease EfficientNetB0 es un clasificador de imágenes especializado en la detección y diagnóstico de enfermedades en cuatro cultivos frutales: manzana, guayaba, mango y granada. Lo desarrolla el usuario thietnt y se distribuye en HuggingFace bajo licencia MIT. El modelo parte de EfficientNetB0 preentrenado y se ha ajustado mediante transfer learning para resolver un problema de clasificación de 17 clases que combinan estados sanos y distintas patologías fúngicas y bacterianas.
+Fruit Disease EfficientNetB0 es un clasificador de imágenes especializado en la detección y diagnóstico de enfermedades en cuatro cultivos frutales: manzana, guayaba, mango y granada. Lo desarrolla el usuario thietnt y se distribuye en Hugging Face bajo licencia MIT. El modelo parte de EfficientNetB0 preentrenado y se ha ajustado mediante transfer learning para resolver un problema de clasificación de 17 clases que combinan estados sanos y distintas patologías fúngicas y bacterianas.
 
 El modelo se publica en formato TensorFlow Lite, lo que indica que su orientación principal es el despliegue en entornos con recursos limitados, como dispositivos móviles o CPU estándar. El autor declara una precisión de test del 88,61 % y un F1-Score del 88,48 % sobre el conjunto de evaluación, aunque no se detalla la composición de dicho conjunto.
 
@@ -87,5 +87,5 @@ No se dispone de comparativas publicadas frente a otros clasificadores específi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thietnt/Fruit_Disease_EfficientNetB0
-- No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos distintos de la propia página del modelo en HuggingFace.
+- Hugging Face: https://huggingface.co/thietnt/Fruit_Disease_EfficientNetB0
+- No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos distintos de la propia página del modelo en Hugging Face.

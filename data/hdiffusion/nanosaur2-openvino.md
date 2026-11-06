@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nanosaur2-OpenVino es un repositorio publicado en HuggingFace por el usuario HDiffusion bajo licencia MIT. El identificador sugiere un artefacto relacionado con un modelo denominado Nanosaur2 exportado al formato de inferencia OpenVINO, pero la model card del repositorio no contiene ninguna descripcion tecnica: unicamente la linea de licencia. No hay informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades.
+Nanosaur2-OpenVino es un repositorio publicado en Hugging Face por el usuario HDiffusion bajo licencia MIT. El identificador sugiere un artefacto relacionado con un modelo denominado Nanosaur2 exportado al formato de inferencia OpenVINO, pero la model card del repositorio no contiene ninguna descripcion tecnica: unicamente la linea de licencia. No hay informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades.
 
 El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas soportados. Las busquedas web realizadas no devuelven ningun resultado relacionado con este modelo: los enlaces recuperados corresponden a listas de podcasts de 2023 y no guardan relacion con el artefacto. Por tanto, no existe documentacion externa que permita verificarlo.
 
@@ -35,7 +35,7 @@ La unica inferencia posible procede del nombre del repositorio: el sufijo OpenVi
 - No se puede confirmar soporte de agentes ni razonamiento multi-paso.
 - No se puede confirmar capacidad multilingue.
 - No se puede confirmar ningun modo especial (thinking mode, audio, etc.).
-- El campo pipeline de HuggingFace figura como no disponible, por lo que ni siquiera se conoce la tarea declarada del modelo.
+- El campo pipeline de Hugging Face figura como no disponible, por lo que ni siquiera se conoce la tarea declarada del modelo.
 
 ## Casos de uso
 
@@ -81,6 +81,6 @@ No disponible. No hay informacion suficiente para identificar la categoria del m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HDiffusion/Nanosaur2-OpenVino
+- Hugging Face: https://huggingface.co/HDiffusion/Nanosaur2-OpenVino
 - Model card: https://huggingface.co/HDiffusion/Nanosaur2-OpenVino/blob/main/README.md
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las URLs recuperadas corresponden a listas de podcasts de 2023 (time.com, apple.com, podcastreview.org, theatlantic.com) y no se incluyen por no ser pertinentes.

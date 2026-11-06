@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JAM-20K-mix es un repositorio de adaptadores LoRA para robótica publicado por el usuario Recharge23 en HuggingFace. No es un modelo base completo, sino un conjunto de tres adaptadores fine-tuneados que deben cargarse junto a sus modelos base originales correspondientes: Franka-JAM, Foundation-JAM y pi-0.5. El repositorio ocupa 1,3 GB en total y se distribuye en tres carpetas (`franka/`, `foundation/`, `pi05/`), cada una con un checkpoint de 20K pasos sobre una mezcla de cinco tareas.
+JAM-20K-mix es un repositorio de adaptadores LoRA para robótica publicado por el usuario Recharge23 en Hugging Face. No es un modelo base completo, sino un conjunto de tres adaptadores fine-tuneados que deben cargarse junto a sus modelos base originales correspondientes: Franka-JAM, Foundation-JAM y pi-0.5. El repositorio ocupa 1,3 GB en total y se distribuye en tres carpetas (`franka/`, `foundation/`, `pi05/`), cada una con un checkpoint de 20K pasos sobre una mezcla de cinco tareas.
 
 El propósito del artefacto es servir de punto de partida reproducible para quien quiera ejecutar políticas viso-lenguaje-acción (VLA) sobre un brazo Franka en el entorno GELLO. El autor documenta el dataset exacto de entrenamiento (130 demostraciones teleoperadas, 117 para entrenamiento y 13 reservadas) y las interfaces de servicio, pero deja explícito que la verificación realizada es de compatibilidad de tensores e inferencia HTTP offline, no de éxito físico en tareas reales.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| JAM-20K-mix (este release) | Adaptadores LoRA sobre JAM y pi-0.5 | no disponible | no aplica | sin tasa de exito en bucle cerrado | no disponible | Publico en HuggingFace; base JAM original en repositorio privado |
+| JAM-20K-mix (este release) | Adaptadores LoRA sobre JAM y pi-0.5 | no disponible | no aplica | sin tasa de exito en bucle cerrado | no disponible | Publico en Hugging Face; base JAM original en repositorio privado |
 | pi-0.5 | Politica VLA base | no disponible | no disponible | no disponible en esta informacion | no disponible | Referenciado en la model card como base; el export incluido precede a la correccion del grupo de optimizador |
 | Otros VLA de robotica de codigo abierto (OpenVLA, Octo, RT-2) | Politicas viso-lenguaje-accion | no disponible | no disponible | no disponible en esta informacion | variable segun proyecto | Publicos |
 
@@ -98,7 +98,7 @@ No se dispone de datos comparativos de parametros, contexto, rendimiento ni lice
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Recharge23/JAM-20K-mix
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Recharge23/JAM-20K-mix
 - Codigo de inferencia y cliente GELLO: https://github.com/lixuan27/JAM-realrobot (rama `inference-gello-client`, commit `b2e77d77d9590798fb0856ee214e8255c32e7ce4`)
 - Modelos base JAM: https://huggingface.co/JAM-realworld/JAM-realrobot (revision `de03f461ca1d532e1c4aca10decf0e09e3f731cd`; repositorio de acceso restringido)
 - Dataset de demostraciones: https://huggingface.co/datasets/24jihoward/gello-franka-jam-demos (revision `11176cf1dbdd537218e4ecd2aeb48c9333634f03`)

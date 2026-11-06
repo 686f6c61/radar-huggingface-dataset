@@ -78,6 +78,6 @@ No se dispone de información sobre modelos comparables específicos. Como refer
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Uncensored-BF16)
+- [Modelo en Hugging Face](https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Uncensored-BF16)
 - [Repositorio de Heretic (github.com/mlabonne/heretic-llm)](https://github.com/mlabonne/heretic-llm)
 - [Modelo base Qwen/Qwen3.8-27B (referencia)](https://huggingface.co/Qwen/Qwen3.8-27B) (no verificado en la búsqueda, pero se infiere de la model card)

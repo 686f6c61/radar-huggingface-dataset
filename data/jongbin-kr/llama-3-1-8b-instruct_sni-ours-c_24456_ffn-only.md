@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `llama-3.1-8b-instruct_SNI-ours-c_24456_ffn-only` es un ajuste fino (fine-tuning) del modelo base `meta-llama/Llama-3.1-8B-Instruct`, desarrollado por el usuario Jongbin-kr. Se trata de un adaptador entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace, con un tamaño de repositorio de 1.4 GB, lo que sugiere que no se actualizan todos los parámetros del modelo original, sino únicamente una parte de ellos (probablemente un adaptador de tipo LoRA o similar, enfocado en las capas feed-forward, como indica el sufijo "ffn-only").
+El modelo `llama-3.1-8b-instruct_SNI-ours-c_24456_ffn-only` es un ajuste fino (fine-tuning) del modelo base `meta-llama/Llama-3.1-8B-Instruct`, desarrollado por el usuario Jongbin-kr. Se trata de un adaptador entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face, con un tamaño de repositorio de 1.4 GB, lo que sugiere que no se actualizan todos los parámetros del modelo original, sino únicamente una parte de ellos (probablemente un adaptador de tipo LoRA o similar, enfocado en las capas feed-forward, como indica el sufijo "ffn-only").
 
 El nombre del modelo indica que fue entrenado sobre un dataset denominado "SNI" (posiblemente Super-NaturalInstructions) con una variante "ours-c" y 24 456 ejemplos. La relevancia de este modelo radica en explorar estrategias de ajuste fino parcial (solo capas FFN) para mejorar el seguimiento de instrucciones o el razonamiento, manteniendo el resto de la arquitectura congelada. Sin embargo, no se proporcionan detalles sobre el rendimiento, la licencia o los idiomas soportados, por lo que su uso en producción requiere verificación adicional.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 - VRAM estimada: al ser un adaptador sobre Llama-3.1-8B, la inferencia requiere cargar el modelo base completo (aproximadamente 16 GB en fp16, o menos con cuantización). El adaptador en sí ocupa muy poco (el repositorio pesa 1.4 GB, probablemente en fp32 o fp16). Se recomienda al menos 16 GB de VRAM para fp16 sin cuantización, o 8-10 GB con cuantización de 4 bits.
 - GPUs recomendadas: RTX 3090, RTX 4090, A100, H100, o cualquier GPU con al menos 16 GB de VRAM para fp16. Con cuantización AWQ o GPTQ, puede caber en GPUs de 8 GB (RTX 3060, RTX 4060).
-- Opciones de despliegue: se puede servir con vLLM, TensorRT-LLM, llama.cpp (convirtiendo a GGUF) o mediante la API de HuggingFace con `transformers`. También es compatible con Ollama si se convierte a formato GGUF.
+- Opciones de despliegue: se puede servir con vLLM, TensorRT-LLM, llama.cpp (convirtiendo a GGUF) o mediante la API de Hugging Face con `transformers`. También es compatible con Ollama si se convierte a formato GGUF.
 - Latencia y throughput: no disponibles. Dependerá del hardware y de la cuantización elegida.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No hay información sobre rendimiento comparativo entre estos modelos. Se recomi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_SNI-ours-c_24456_ffn-only
+- Modelo en Hugging Face: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_SNI-ours-c_24456_ffn-only
 - Modelo relacionado (LoRA): https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-sni-ffn-lora
 - Modelo relacionado (MoE): https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/jongbin-kr-skiml_moe/sft_dense_sni_roster_ffn_only/runs/7ozuvenr

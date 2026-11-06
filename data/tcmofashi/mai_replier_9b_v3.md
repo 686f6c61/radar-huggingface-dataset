@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de modelos directamente comparables publ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tcmofashi/mai_replier_9b_v3
+- Hugging Face: https://huggingface.co/tcmofashi/mai_replier_9b_v3
 - Repositorio MaiBot: https://github.com/MaiM-with-u/MaiBot
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada.

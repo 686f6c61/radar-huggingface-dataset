@@ -102,7 +102,7 @@ No se dispone de datos suficientes en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MeldhLLC/Olune-Qwen3.5-4B-v17-beta
+- Modelo en Hugging Face: https://huggingface.co/MeldhLLC/Olune-Qwen3.5-4B-v17-beta
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Fichero de sumas de verificacion: https://huggingface.co/MeldhLLC/Olune-Qwen3.5-4B-v17-beta/blob/main/SHA256SUMS
 - Manifiesto del artefacto: https://huggingface.co/MeldhLLC/Olune-Qwen3.5-4B-v17-beta/blob/main/artifact-manifest.json

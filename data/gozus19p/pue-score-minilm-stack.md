@@ -85,9 +85,9 @@ La discrepancia entre OOF y test (F1 de 0,8761 frente a 0,3349) refleja el probl
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pue-score-minilm-stack | no disponible (encoder ~33M congelado + clasificadores clásicos) | 128 tokens | Stack ensemble (SVM + TF-IDF + meta LogReg) | MIT | HuggingFace (0 descargas) |
-| pue-score-minilm-rulebased | no disponible | no disponible | Clasificador rule-based sobre criterio humano | MIT (presumible, mismo autor) | HuggingFace (recomendado por el autor para producción) |
-| MiniLM-L12-H384-uncased | ~33M | 512 tokens (típico en el modelo base) | Transformer encoder | MIT | HuggingFace (modelo base de Microsoft) |
+| pue-score-minilm-stack | no disponible (encoder ~33M congelado + clasificadores clásicos) | 128 tokens | Stack ensemble (SVM + TF-IDF + meta LogReg) | MIT | Hugging Face (0 descargas) |
+| pue-score-minilm-rulebased | no disponible | no disponible | Clasificador rule-based sobre criterio humano | MIT (presumible, mismo autor) | Hugging Face (recomendado por el autor para producción) |
+| MiniLM-L12-H384-uncased | ~33M | 512 tokens (típico en el modelo base) | Transformer encoder | MIT | Hugging Face (modelo base de Microsoft) |
 
 No se dispone de información sobre otros modelos comparables en el mismo dominio (clasificación de textos de seguros en italiano) en la documentación proporcionada.
 
@@ -105,6 +105,6 @@ No se dispone de información sobre otros modelos comparables en el mismo domini
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gozus19p/pue-score-minilm-stack
+- Modelo en Hugging Face: https://huggingface.co/gozus19p/pue-score-minilm-stack
 - Modelo base: https://huggingface.co/microsoft/MiniLM-L12-H384-uncased
 - Variante recomendada por el autor: pue-score-minilm-rulebased (referenciada en la model card; no se proporciona URL directa en la información disponible)

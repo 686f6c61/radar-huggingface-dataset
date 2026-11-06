@@ -108,7 +108,7 @@ La comparación con CNNs es cualitativa: no se han publicado benchmarks del mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ParsaVictor/pcb-component-classifier
+- Modelo en Hugging Face: https://huggingface.co/ParsaVictor/pcb-component-classifier
 - Dataset de entrenamiento: https://huggingface.co/datasets/ParsaVictor/pcb-component-classifier
 - Repositorio de GitHub (pipeline completo, extractor de características y renderizador de explicaciones): https://github.com/ParsaVictor/pcb-component-classifier
 - Suite completa de inspección de PCB: https://huggingface.co/ParsaVictor/pcb-inspection-suite

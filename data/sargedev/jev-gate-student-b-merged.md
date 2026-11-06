@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks en la informacion disponible para M
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jev-gate-student-b-merged | 494 M | No disponible | MAE 0,219; Pearson 0,709; acuerdo 81,7 % | Apache 2.0 | HuggingFace (checkpoint fusionado y adaptador) |
-| Qwen2.5-0.5B-Instruct sin ajustar | 494 M | No disponible en esta ficha | MAE 0,498; Pearson -0,005; acuerdo 44,4 % | Apache 2.0 | HuggingFace |
+| jev-gate-student-b-merged | 494 M | No disponible | MAE 0,219; Pearson 0,709; acuerdo 81,7 % | Apache 2.0 | Hugging Face (checkpoint fusionado y adaptador) |
+| Qwen2.5-0.5B-Instruct sin ajustar | 494 M | No disponible en esta ficha | MAE 0,498; Pearson -0,005; acuerdo 44,4 % | Apache 2.0 | Hugging Face |
 | Profesor de 32B usado como referencia | 32 000 M (aproximado, no confirmado) | No disponible | Referencia *gold* de la evaluacion | No disponible | No disponible publicamente en la informacion proporcionada |
 | Rerankers tipo cross-encoder (por ejemplo BGE-reranker) | No disponible | No disponible | No disponible para esta tarea concreta | No disponible | No disponible |
 
@@ -100,7 +100,7 @@ La comparacion solo es significativa contra el modelo base sin ajustar, que es e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SargeDev/jev-gate-student-b-merged
+- Modelo en Hugging Face: https://huggingface.co/SargeDev/jev-gate-student-b-merged
 - Adaptador original (version LoRA): https://huggingface.co/SargeDev/jev-gate-student-b
 - Dataset de destilacion: https://huggingface.co/datasets/SargeDev/jev-distill-corpus
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

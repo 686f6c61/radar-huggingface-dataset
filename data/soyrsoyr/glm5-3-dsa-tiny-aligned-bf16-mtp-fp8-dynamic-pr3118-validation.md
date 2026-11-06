@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM5.3-DSA-Tiny-Aligned-BF16-MTP-FP8-DYNAMIC-pr3118-validation es un fixture estructural de pesos aleatorios publicado en HuggingFace por el usuario soyrsoyr. No es un modelo preentrenado ni un modelo de calidad: se deriva de soyrsoyr/GLM-5.3-MTP-NVFP4-Test-Fixture y su unico proposito declarado es validar el flujo de cuantizacion y el soporte de decodificacion especulativa MTP en el runtime. El propio autor indica que el modelo base es un "random-weight structural fixture" y que no se aplica ninguna afirmacion de calidad.
+GLM5.3-DSA-Tiny-Aligned-BF16-MTP-FP8-DYNAMIC-pr3118-validation es un fixture estructural de pesos aleatorios publicado en Hugging Face por el usuario soyrsoyr. No es un modelo preentrenado ni un modelo de calidad: se deriva de soyrsoyr/GLM-5.3-MTP-NVFP4-Test-Fixture y su unico proposito declarado es validar el flujo de cuantizacion y el soporte de decodificacion especulativa MTP en el runtime. El propio autor indica que el modelo base es un "random-weight structural fixture" y que no se aplica ninguna afirmacion de calidad.
 
 El artefacto contiene 88.040.064 parametros (0,2 GB de repositorio), con la etiqueta de arquitectura glm_moe_dsa. El backbone se distribuye en BF16 y el modulo MTP se ha cuantizado con un esquema FP8 dinamico sin datos de calibracion, usando llm-compressor (PR 3118, commit 87347881) y compressed-tensors. El backbone y los formatos MTP son artefactos separados.
 
@@ -107,7 +107,7 @@ No se identifican en la informacion disponible otros modelos publicos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soyrsoyr/GLM5.3-DSA-Tiny-Aligned-BF16-MTP-FP8-DYNAMIC-pr3118-validation
+- Modelo en Hugging Face: https://huggingface.co/soyrsoyr/GLM5.3-DSA-Tiny-Aligned-BF16-MTP-FP8-DYNAMIC-pr3118-validation
 - Modelo base: https://huggingface.co/soyrsoyr/GLM-5.3-MTP-NVFP4-Test-Fixture/tree/0b017a9420e734a8443d46a9ec1a5128e4255ae7
 - Commit de implementacion (llm-compressor PR 3118, 87347881): https://github.com/soyr-redhat/llm-compressor/commit/87347881b46df8786b9fc463965f80504914a98f
 - Script de verificacion MTP incluido en el repositorio: `verify_mtp.py` (ejecutable sobre la ruta del snapshot descargado)

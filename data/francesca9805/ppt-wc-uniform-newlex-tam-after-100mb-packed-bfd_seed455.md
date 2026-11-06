@@ -12,7 +12,7 @@ La relevancia de esta ficha es acotada: se trata de un artefacto de investigaci�
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de tipo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only de tipo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parámetros totales | 86.508.288 (86,5 M), dato real de safetensors |
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -70,11 +70,11 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/ppt-wc-uniform-newlex-tam-after-100mb-packed-bfd_seed455` | 86,5 M | No disponible | No disponible | HuggingFace, safetensors | Ajuste SFT sobre `goldfish-models/eng_latn_100mb`; 0 descargas |
-| `goldfish-models/eng_latn_100mb` | No disponible | No disponible | No disponible en esta búsqueda | HuggingFace | Modelo base; monolingüe inglés, entrenado con ~100 MB de texto |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache-2.0 | HuggingFace | Destilación de GPT-2; ampliamente usado como modelo pequeño de referencia |
-| GPT-2 small | 124 M | 1024 tokens | MIT (según ficha de HuggingFace) | HuggingFace | Referencia histórica de la familia; inglés |
-| Pythia-70M | 70 M | 2048 tokens | Apache-2.0 | HuggingFace | Suite diseñada para investigación en interpretabilidad y análisis de entrenamiento |
+| `francesca9805/ppt-wc-uniform-newlex-tam-after-100mb-packed-bfd_seed455` | 86,5 M | No disponible | No disponible | Hugging Face, safetensors | Ajuste SFT sobre `goldfish-models/eng_latn_100mb`; 0 descargas |
+| `goldfish-models/eng_latn_100mb` | No disponible | No disponible | No disponible en esta búsqueda | Hugging Face | Modelo base; monolingüe inglés, entrenado con ~100 MB de texto |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache-2.0 | Hugging Face | Destilación de GPT-2; ampliamente usado como modelo pequeño de referencia |
+| GPT-2 small | 124 M | 1024 tokens | MIT (según ficha de Hugging Face) | Hugging Face | Referencia histórica de la familia; inglés |
+| Pythia-70M | 70 M | 2048 tokens | Apache-2.0 | Hugging Face | Suite diseñada para investigación en interpretabilidad y análisis de entrenamiento |
 
 La comparación es limitada porque no existen resultados de evaluación publicados para el modelo reseñado: las diferencias de calidad frente a DistilGPT-2, GPT-2 small o Pythia-70M no pueden establecerse con datos. Además, la licencia del modelo es un campo vacío, lo que lo sitúa en desventaja clara frente a alternativas con licencias permisivas explícitas para cualquier uso comercial.
 
@@ -93,7 +93,7 @@ La comparación es limitada porque no existen resultados de evaluación publicad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-tam-after-100mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-tam-after-100mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/hgnqnl29

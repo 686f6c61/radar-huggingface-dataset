@@ -2,7 +2,7 @@
 
 ## Resumen
 
-StudyBuddy es un ajuste fino (fine-tune) del modelo meta-llama/Llama-3.2-1B-Instruct, publicado por el usuario HetanshP en HuggingFace. Se trata de un modelo de generacion de texto orientado a tareas de asistencia al estudiante (etiqueta "Student-assistant"), construido sobre la arquitectura Llama 3.2 de 1.000 millones de parametros. La model card es extremadamente escueta: no aporta informacion sobre el dataset de ajuste, el procedimiento de entrenamiento ni resultados de evaluacion.
+StudyBuddy es un ajuste fino (fine-tune) del modelo meta-llama/Llama-3.2-1B-Instruct, publicado por el usuario HetanshP en Hugging Face. Se trata de un modelo de generacion de texto orientado a tareas de asistencia al estudiante (etiqueta "Student-assistant"), construido sobre la arquitectura Llama 3.2 de 1.000 millones de parametros. La model card es extremadamente escueta: no aporta informacion sobre el dataset de ajuste, el procedimiento de entrenamiento ni resultados de evaluacion.
 
 El modelo hereda las caracteristicas del checkpoint base: arquitectura transformer decoder-only, ventana de contexto de 128.000 tokens (segun la especificacion oficial de Llama 3.2) y capacidades multilingues limitadas oficialmente al ingles. El ajuste fino parece orientado a especializar el comportamiento del modelo hacia el dominio educativo, aunque no hay documentacion que lo confirme mas alla de la etiqueta.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HetanshP/StudyBuddy | 1B (base Llama 3.2) | 128k (heredado, no confirmado) | Apache 2.0 | HuggingFace, sin descargas | Fine-tune educativo sin evaluacion publicada |
-| meta-llama/Llama-3.2-1B-Instruct | 1B | 128k | Llama 3.2 Community License | HuggingFace, ampliamente usado | Modelo base oficial, con evaluacion publica |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Apache 2.0 | HuggingFace | Alternativa de tamano similar con licencia permisiva |
-| SmolLM2-1.7B-Instruct | 1,7B | 8k | Apache 2.0 | HuggingFace | Modelo pequeno orientado a eficiencia |
+| HetanshP/StudyBuddy | 1B (base Llama 3.2) | 128k (heredado, no confirmado) | Apache 2.0 | Hugging Face, sin descargas | Fine-tune educativo sin evaluacion publicada |
+| meta-llama/Llama-3.2-1B-Instruct | 1B | 128k | Llama 3.2 Community License | Hugging Face, ampliamente usado | Modelo base oficial, con evaluacion publica |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Apache 2.0 | Hugging Face | Alternativa de tamano similar con licencia permisiva |
+| SmolLM2-1.7B-Instruct | 1,7B | 8k | Apache 2.0 | Hugging Face | Modelo pequeno orientado a eficiencia |
 
 ## Limitaciones y advertencias
 
@@ -80,6 +80,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HetanshP/StudyBuddy
+- Hugging Face: https://huggingface.co/HetanshP/StudyBuddy
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Documentacion oficial de Llama 3.2 (Meta): https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/

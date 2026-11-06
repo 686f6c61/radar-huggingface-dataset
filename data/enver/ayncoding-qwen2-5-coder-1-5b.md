@@ -71,15 +71,15 @@ Estos resultados proceden de un evaluador interno propio denominado «5-Pillar S
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AynCoding 1.5B | 1.543.714.304 | No disponible | Apache 2.0 | HuggingFace (GGUF/safetensors) |
-| Qwen2.5-Coder-1.5B | 1.543.714.304 | No disponible | Apache 2.0 | HuggingFace (base) |
-| Qwen2.5-Coder-1.5B-Instruct | 1.543.714.304 | No disponible | Apache 2.0 | HuggingFace (instruct) |
+| AynCoding 1.5B | 1.543.714.304 | No disponible | Apache 2.0 | Hugging Face (GGUF/safetensors) |
+| Qwen2.5-Coder-1.5B | 1.543.714.304 | No disponible | Apache 2.0 | Hugging Face (base) |
+| Qwen2.5-Coder-1.5B-Instruct | 1.543.714.304 | No disponible | Apache 2.0 | Hugging Face (instruct) |
 
 Los tres modelos comparten arquitectura y tamaño. AynCoding se diferencia por el ajuste fino con lógica clásica y por la inclusión del bloque `<ayn_mantiq>`, mientras que los modelos base e instruct son versiones generalistas y ampliamente utilizadas para código. No se han encontrado datos de contexto en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental con 0 descargas y 0 likes en HuggingFace en el momento de la consulta, lo que indica falta de adopción y validación externa.
+- Modelo experimental con 0 descargas y 0 likes en Hugging Face en el momento de la consulta, lo que indica falta de adopción y validación externa.
 - Los benchmarks presentados son propios del autor y no estándar; no hay evidencia independiente de rendimiento.
 - El razonamiento basado en lógica clásica árabe puede producir salidas inadecuadas en contextos técnicos no relacionados.
 - El idioma está limitado a inglés y árabe; el rendimiento en otros idiomas no está documentado.
@@ -90,7 +90,7 @@ Los tres modelos comparten arquitectura y tamaño. AynCoding se diferencia por e
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/enver/ayncoding-qwen2.5-coder-1.5b)
+- [Modelo en Hugging Face](https://huggingface.co/enver/ayncoding-qwen2.5-coder-1.5b)
 - [Modelo base Qwen2.5-Coder-1.5B](https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B)
 - [Versión instruct Qwen2.5-Coder-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct)
 

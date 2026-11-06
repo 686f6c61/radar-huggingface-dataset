@@ -76,5 +76,5 @@ No disponible. Este repositorio no es un modelo de aprendizaje automatico, sino 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/varunreddana/audio-visual-learning-review
+- Repositorio en Hugging Face: https://huggingface.co/varunreddana/audio-visual-learning-review
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a un articulo tecnico, a un repositorio de codigo, a una demo ni a documentacion adicional. Los unicos resultados devueltos corresponden a paginas sin relacion con el contenido de este repositorio.

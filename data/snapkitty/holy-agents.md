@@ -4,7 +4,7 @@
 
 Holy Agents es un sistema de agentes de software presentado por Snapkitty como parte de su ecosistema SnapKitty OS. No se trata de un modelo de lenguaje o de un sistema de IA generativa, sino de un "runtime" de agentes gobernados por reglas religiosas, concretamente una constitución bíblica. El proyecto define un pipeline de cinco agentes (SCRIBE, JUDGE, PROPHET, SENTINEL y LEDGE) que deben validar cualquier acción antes de ejecutarla, siguiendo tres puertas: la puerta de la Escritura, la puerta de la Lógica y la puerta del Testigo.
 
-El sistema incorpora verificación formal mediante Lean 4, un asistente de pruebas interactivo, para comprobar que las acciones no violan reglas declaradas (RTRUST). Incluye una API REST con endpoints para consultar estado, enviar consultas y verificar la integridad de una cadena WORM (write-once, read-many). El proyecto se distribuye bajo licencia MIT, aunque los metadatos de HuggingFace no especifican licencia. La fecha de creación es septiembre de 2026 y no registra descargas ni valoraciones.
+El sistema incorpora verificación formal mediante Lean 4, un asistente de pruebas interactivo, para comprobar que las acciones no violan reglas declaradas (RTRUST). Incluye una API REST con endpoints para consultar estado, enviar consultas y verificar la integridad de una cadena WORM (write-once, read-many). El proyecto se distribuye bajo licencia MIT, aunque los metadatos de Hugging Face no especifican licencia. La fecha de creación es septiembre de 2026 y no registra descargas ni valoraciones.
 
 La relevancia de este proyecto radica en su enfoque inusual: aplicar gobernanza ética y verificación formal a agentes autónomos, aunque su base teológica limita su aplicabilidad general. No hay información sobre arquitectura de red neuronal, parámetros, entrenamiento o capacidades de procesamiento de lenguaje, por lo que no puede evaluarse como un modelo de IA convencional.
 
@@ -18,7 +18,7 @@ La relevancia de este proyecto radica en su enfoque inusual: aplicar gobernanza 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (según model card); no disponible en metadatos de HuggingFace |
+| Licencia | MIT (según model card); no disponible en metadatos de Hugging Face |
 | Formato de pesos | no disponible (no hay pesos; es un runtime de agentes) |
 
 ## Arquitectura y entrenamiento
@@ -69,11 +69,11 @@ No disponible. Holy Agents no es un modelo de lenguaje ni un sistema de IA compa
 - Base religiosa explícita: el sistema está diseñado en torno a una constitución bíblica, lo que lo hace inadecuado para entornos seculares o donde se requiera neutralidad ética.
 - Dependencia de Lean 4: la verificación formal requiere conocimientos de Lean 4 para modificar o ampliar las reglas RTRUST.
 - Sin documentación sobre seguridad: no se detallan medidas de seguridad del runtime, autenticación de la API o protección contra ataques.
-- Licencia MIT: permite uso comercial, pero la ausencia de metadatos de licencia en HuggingFace puede generar incertidumbre legal.
+- Licencia MIT: permite uso comercial, pero la ausencia de metadatos de licencia en Hugging Face puede generar incertidumbre legal.
 - Sin mantenimiento aparente: el proyecto tiene cero descargas y cero likes, lo que sugiere que es un experimento sin comunidad activa.
 - Riesgo de alucinación: no aplica, al no ser un modelo generativo, pero el agente SCRIBE podría recuperar información teológica errónea si las fuentes no están curadas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/holy-agents
+- Hugging Face: https://huggingface.co/Snapkitty/holy-agents
 - No se han encontrado otros enlaces (papers, blogs, repos) en la información proporcionada.

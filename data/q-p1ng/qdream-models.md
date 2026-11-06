@@ -110,7 +110,7 @@ Frente a los modelos base originales (DreamShaper 8 LCM, Realistic Vision V6.0 B
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Q-P1NG/qdream-models
+- Pagina del modelo en Hugging Face: https://huggingface.co/Q-P1NG/qdream-models
 - Perfil del autor: https://huggingface.co/Q-P1NG
 - Licencia del modelo (LICENSE.md): https://huggingface.co/Q-P1NG/qdream-models/blob/main/LICENSE.md
 - Modelo base DreamShaper 8 LCM: https://huggingface.co/Lykon/dreamshaper-8-lcm

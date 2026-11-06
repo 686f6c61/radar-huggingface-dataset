@@ -72,8 +72,8 @@ El autor advierte que la medición de operación real corresponde a la media de 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-kwanghyunjoo-v2 | 0,8 B (base) + LoRA | No disponible | Decisión de una letra en simulador | Apache 2.0 | HuggingFace (adaptador PEFT) |
-| Qwen/Qwen3.5-0.8B | 0,8 B | No disponible | LLM generalista | No disponible en la información | HuggingFace |
+| connectailab-rl-kwanghyunjoo-v2 | 0,8 B (base) + LoRA | No disponible | Decisión de una letra en simulador | Apache 2.0 | Hugging Face (adaptador PEFT) |
+| Qwen/Qwen3.5-0.8B | 0,8 B | No disponible | LLM generalista | No disponible en la información | Hugging Face |
 | Política PPO del simulador CONNECT TYCOON | No disponible (modelo pequeño) | No disponible | Decisión en simulador | No disponible | No disponible públicamente |
 
 No se dispone de datos de benchmarks comparables con otros adaptadores de decisión de la misma categoría en la información proporcionada.
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparables con otros adaptadores de decisi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kwanghyunjoo/connectailab-rl-kwanghyunjoo-v2
+- Modelo en Hugging Face: https://huggingface.co/kwanghyunjoo/connectailab-rl-kwanghyunjoo-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

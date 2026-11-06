@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kolapocorey/olakunle` es un repositorio publicado en HuggingFace por el usuario `kolapocorey` bajo licencia Apache 2.0. La model card no contiene ninguna descripcion tecnica, arquitectura, datos de entrenamiento ni informacion sobre capacidades. Se trata de un repositorio practicamente vacio, creado el 21 de agosto de 2026 y sin descargas ni interacciones registradas.
+El modelo `kolapocorey/olakunle` es un repositorio publicado en Hugging Face por el usuario `kolapocorey` bajo licencia Apache 2.0. La model card no contiene ninguna descripcion tecnica, arquitectura, datos de entrenamiento ni informacion sobre capacidades. Se trata de un repositorio practicamente vacio, creado el 21 de agosto de 2026 y sin descargas ni interacciones registradas.
 
 La relevancia de este repositorio es, por el momento, nula desde el punto de vista tecnico: no hay pesos, configuracion, tokenizer ni documentacion asociada. Los resultados de busqueda web relacionados con el nombre "Olakunle" corresponden a noticias sobre un director general del NYSC en Nigeria y a perfiles personales de profesionales de IA, pero no aportan ningun dato sobre el modelo en cuestion. No es posible evaluar su utilidad ni recomendar su uso.
 
@@ -52,7 +52,7 @@ No disponible. Al no conocerse la arquitectura ni el tamano del modelo, no es po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kolapocorey/olakunle
+- Repositorio Hugging Face: https://huggingface.co/kolapocorey/olakunle
 - Sitio web del autor (Kolapo Olakonu): https://www.kolapo.dev/
 - Articulo sobre Olakunle Nafiu (no relacionado con el modelo): https://gdeltcloud.com/events/nysc-chief-warns-corps-members-over-campaigns-and-ai-misinfo--cameoplus_acb6dca22cf4d25a
 - Articulo de LinkedIn sobre IA (autor homonimo): https://www.linkedin.com/pulse/beyond-automation-how-ai-unlocks-human-potential-olakunle-kupolati-pmx4e

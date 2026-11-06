@@ -110,7 +110,7 @@ La comparacion relevante es con el artefacto oficial para el mismo motor: el de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jesdga/Qwen3.8-27B-QUASAR-nvfp4-NInfer
+- Modelo en Hugging Face: https://huggingface.co/jesdga/Qwen3.8-27B-QUASAR-nvfp4-NInfer
 - Motor NInfer: https://github.com/Neroued/ninfer
 - Commit de NInfer usado en las pruebas: https://github.com/Neroued/ninfer/commit/d44ab58408aa389728cd8b1ee50179527e1f3e0d
 - Directorio de evaluacion de NInfer: https://github.com/Neroued/ninfer/tree/master/eval

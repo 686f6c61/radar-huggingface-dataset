@@ -81,14 +81,14 @@ La comparativa muestra que Qwen3.5-0.8B ofrece multimodalidad y contexto más la
 
 - Al ser un modelo de 0.8B, su capacidad de razonamiento complejo y de seguir instrucciones es limitada en comparación con modelos de mayor tamaño. Puede cometer errores en tareas que requieren abstracción avanzada.
 - Riesgo de alucinación: como todos los modelos generativos, puede inventar información, especialmente en dominios poco representados en su entrenamiento.
-- La información sobre idiomas (201 lenguas) proviene del anuncio de Qwen3.5, pero no se ha verificado en la ficha de HuggingFace; se recomienda probar con casos reales.
+- La información sobre idiomas (201 lenguas) proviene del anuncio de Qwen3.5, pero no se ha verificado en la ficha de Hugging Face; se recomienda probar con casos reales.
 - El modelo es multimodal, pero la calidad de la comprensión visual puede ser inferior a la de modelos especializados más grandes.
 - Aunque la licencia Apache 2.0 permite uso comercial, el modelo base Qwen3.5-0.8B puede tener términos adicionales en su documentación original; se recomienda revisar el LICENSE del repositorio base.
 - La cuantización GGUF introduce pérdida de precisión; para tareas críticas se recomienda usar el modelo en FP16 o cuantizaciones de mayor bit.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Guía de Unsloth para Qwen3.5: https://unsloth.ai/docs/models/qwen3.5
 - Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

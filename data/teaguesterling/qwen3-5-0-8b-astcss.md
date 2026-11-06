@@ -83,8 +83,8 @@ No se dispone de datos publicados de alternativas nominales, pero la propia mode
 
 | Modelo | Parametros | Contexto | Match (108 pares) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-0.8b-astcss | ~0,75 B | no disponible | 82,4 % | hereda la de Qwen3.5-0.8B | safetensors en HuggingFace |
-| Qwen3.5-0.8B sin ajustar, con la misma tarjeta | ~0,8 B | no disponible | 26,9 % | la del modelo base Qwen | HuggingFace |
+| qwen3.5-0.8b-astcss | ~0,75 B | no disponible | 82,4 % | hereda la de Qwen3.5-0.8B | safetensors en Hugging Face |
+| Qwen3.5-0.8B sin ajustar, con la misma tarjeta | ~0,8 B | no disponible | 26,9 % | la del modelo base Qwen | Hugging Face |
 | 4B ajustado con LoRA (sin nombrar) | ~4 B | no disponible | ~89,4 % (unos 7 puntos por encima) | no disponible | no disponible |
 | Varios modelos de 9B a 35B prompteados con la misma tarjeta | 9-35 B | no disponible | por debajo de 82,4 % | no disponible | no disponible |
 
@@ -98,7 +98,7 @@ La conclusion que puede extraerse es que, para esta tarea concreta, el tamano no
 - Admite una sola peticion en ingles y produce un unico selector por consulta: no descompone peticiones compuestas ni mantiene conversaciones multi-turno utiles.
 - Riesgo de alucinacion estructural: puede emitir un selector sintacticamente plausible que no devuelva el conjunto de nodos esperado. La mitigacion natural es ejecutar siempre el selector con `ast_select` y validar el resultado, tal como se hizo en su evaluacion.
 - El modelo no devuelve los nodos, solo la consulta; no sustituye al motor de ejecucion ni a un analisis semantico.
-- Licencia no declarada explicitamente en la ficha de HuggingFace. El autor afirma que hereda la licencia y los terminos de Qwen/Qwen3.5-0.8B, por lo que es imprescindible revisar esos terminos antes de un uso comercial; no hay confirmacion independiente de la licencia aplicable.
+- Licencia no declarada explicitamente en la ficha de Hugging Face. El autor afirma que hereda la licencia y los terminos de Qwen/Qwen3.5-0.8B, por lo que es imprescindible revisar esos terminos antes de un uso comercial; no hay confirmacion independiente de la licencia aplicable.
 - Build de solo texto: no incluye la torre de vision ni la cabeza de prediccion multi-token del modelo base, por lo que no puede usarse para tareas multimodales ni aprovechar la decodificacion especulativa de MTP.
 - No hay pesos cuantizados publicados ni datos de rendimiento en CPU, y no se garantiza soporte de la arquitectura en llama.cpp u Ollama.
 - Sesgos: no se ha publicado ninguna evaluacion de sesgos ni la composicion demografica o linguistica del corpus. El entrenamiento se limita a 820 pares, cantidad muy reducida, lo que hace probable un sobreajuste a las formas de selector y a las plantillas de peticion vistas durante el entrenamiento.
@@ -106,7 +106,7 @@ La conclusion que puede extraerse es que, para esta tarea concreta, el tamano no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/teaguesterling/qwen3.5-0.8b-astcss
+- Modelo en Hugging Face: https://huggingface.co/teaguesterling/qwen3.5-0.8b-astcss
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Motor de ejecucion sitting_duck: https://github.com/teaguesterling/sitting_duck
 - Repositorio de evaluacion y tarjetas de vocabulario (`train/cards/card_<lang>.md`): https://github.com/teaguesterling/astcss-eval

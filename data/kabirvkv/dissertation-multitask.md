@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kabirvkv/dissertation-multitask es un repositorio experimental publicado en HuggingFace por el usuario Kabirvkv que contiene una implementacion propia (no oficial) de una arquitectura etiquetada como Mocov3 orientada a aprendizaje multitarea. Segun su model card, el repositorio no es un modelo entrenado: `model.safetensors` se describe explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y no como un checkpoint con resultados de benchmark. La escala declarada en la configuracion es "huge", con atencion estandar, fusion mediante co attention, activacion swish y normalizacion rmsnorm.
+Kabirvkv/dissertation-multitask es un repositorio experimental publicado en Hugging Face por el usuario Kabirvkv que contiene una implementacion propia (no oficial) de una arquitectura etiquetada como Mocov3 orientada a aprendizaje multitarea. Segun su model card, el repositorio no es un modelo entrenado: `model.safetensors` se describe explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y no como un checkpoint con resultados de benchmark. La escala declarada en la configuracion es "huge", con atencion estandar, fusion mediante co attention, activacion swish y normalizacion rmsnorm.
 
 El dato cuantitativo verificado del repositorio es el numero de parametros de los pesos publicados: 49.600 parametros en formato safetensors, con un tamano de repositorio de 0,0 GB. Existe una discrepancia evidente entre esa cifra y la etiqueta "huge" del campo Scale de la model card, lo que refuerza la interpretacion de que los pesos distribuidos son un artefacto de inicializacion y no la arquitectura completa descrita en `config.json`.
 
@@ -79,7 +79,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kabirvkv/dissertation-multitask | Implementacion experimental Mocov3 multitarea | 49.600 (pesos publicados) | no disponible | MIT | HuggingFace, 0 descargas |
+| Kabirvkv/dissertation-multitask | Implementacion experimental Mocov3 multitarea | 49.600 (pesos publicados) | no disponible | MIT | Hugging Face, 0 descargas |
 | MoCo v3 (implementacion original del metodo) | Referencia del metodo de aprendizaje autosupervisado | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -102,7 +102,7 @@ Nota: la etiqueta Mocov3 remite a la familia de metodos de aprendizaje autosuper
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kabirvkv/dissertation-multitask
+- Repositorio en Hugging Face: https://huggingface.co/Kabirvkv/dissertation-multitask
 - Paper de referencia de MoCo v3: no disponible en la informacion proporcionada.
 - Blog o articulo tecnico del autor: no disponible en la informacion proporcionada.
 - Repositorio de codigo adicional (GitHub u otros): no disponible en la informacion proporcionada.

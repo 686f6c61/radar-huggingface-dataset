@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Virtual-Production-Units/Qwen3.8-Flash-Next es un modelo multimodal de tipo image-text-to-text publicado en HuggingFace por la organizacion Virtual-Production-Units, no por el equipo oficial de Qwen. El repositorio esta en acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargar los pesos. Los metadatos de los ficheros safetensors indican 179.999.981.459 parametros y un tamano de repositorio de 360 GB.
+Virtual-Production-Units/Qwen3.8-Flash-Next es un modelo multimodal de tipo image-text-to-text publicado en Hugging Face por la organizacion Virtual-Production-Units, no por el equipo oficial de Qwen. El repositorio esta en acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargar los pesos. Los metadatos de los ficheros safetensors indican 179.999.981.459 parametros y un tamano de repositorio de 360 GB.
 
 El nombre del modelo y la etiqueta `qwen4_exp` apuntan a una variante experimental dentro del ecosistema Qwen, y la licencia declarada es qwen-community-1.0, pero la informacion disponible no incluye model card con detalles de arquitectura, datos de entrenamiento, longitud de contexto, idiomas soportados ni resultados de evaluacion. La fecha de creacion y la de ultima actualizacion coinciden (21 de septiembre de 2026), con 0 descargas y 1 like en el momento de la consulta.
 
@@ -22,7 +22,7 @@ Su relevancia practica no puede validarse con los datos disponibles: un modelo m
 | Formato de pesos | safetensors, libreria transformers |
 | Pipeline declarado | image-text-to-text |
 | Tamano del repositorio | 360,0 GB |
-| Acceso | restringido (requiere aceptar condiciones en HuggingFace) |
+| Acceso | restringido (requiere aceptar condiciones en Hugging Face) |
 | Fecha de publicacion | 21 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
@@ -35,7 +35,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el numero de t
 
 - Generacion conjunta de imagen y texto (pipeline image-text-to-text): el modelo esta declarado para tareas que combinan entrada visual y textual.
 - Generacion conversacional: la etiqueta `conversational` indica soporte de dialogos multi-turno, aunque se desconoce el formato exacto de prompt y la plantilla de chat.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede desplegarse a traves de la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede desplegarse a traves de la infraestructura de Inference Endpoints de Hugging Face.
 - Razonamiento, codigo, matematicas, tool calling, function calling, uso agentico y modos de pensamiento: no disponible, no hay documentacion que los acredite.
 - Capacidades multilingues: no disponible, el campo de idiomas esta vacio en los metadatos.
 - Capacidades de audio o video: no disponible.
@@ -64,7 +64,7 @@ Estimaciones calculadas a partir del numero de parametros confirmado (179.999.98
 - Pesos en FP8: aproximadamente 180 GB, desplegable en 3 o 4 GPU de 80 GB con tensor parallelism.
 - Pesos en INT4 (AWQ/GPTQ): aproximadamente 90-95 GB, viable en 2 GPU de 80 GB. Requiere que existan recetas de cuantizacion publicadas, algo que no se documenta.
 - GPU de consumo: el modelo no cabe en una RTX 4090 (24 GB), RTX 5090 (32 GB) ni en ninguna GPU de consumo actual, ni siquiera en 4 bits. Un despliegue hibrido CPU+GPU exigiria del orden de 100 GB de RAM para pesos en 4 bits y ofreceria latencias muy altas.
-- Opciones de despliegue: transformers es la libreria declarada y la etiqueta `endpoints_compatible` apunta a HuggingFace Inference Endpoints. El soporte en vLLM, TGI, SGLang u Ollama no esta confirmado en la informacion disponible y depende de que la arquitectura subyacente este implementada en esos motores. No se documentan ficheros GGUF.
+- Opciones de despliegue: transformers es la libreria declarada y la etiqueta `endpoints_compatible` apunta a Hugging Face Inference Endpoints. El soporte en vLLM, TGI, SGLang u Ollama no esta confirmado en la informacion disponible y depende de que la arquitectura subyacente este implementada en esos motores. No se documentan ficheros GGUF.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no incluye resultados de evaluacion 
 ## Limitaciones y advertencias
 
 - Procedencia no oficial: el autor del repositorio es Virtual-Production-Units, no el equipo de Qwen. El nombre Qwen3.8-Flash-Next y la licencia qwen-community-1.0 no garantizan que se trate de un lanzamiento oficial ni de un modelo derivado autorizado.
-- Acceso restringido: los pesos estan sujetos a aceptacion de condiciones en HuggingFace, lo que condiciona su descarga, redistribucion y uso en pipelines automatizados.
+- Acceso restringido: los pesos estan sujetos a aceptacion de condiciones en Hugging Face, lo que condiciona su descarga, redistribucion y uso en pipelines automatizados.
 - Ausencia de model card detallada: no hay informacion sobre arquitectura, datos de entrenamiento, contexto, idiomas ni limitaciones declaradas por el autor.
 - Sin validacion de la comunidad: 0 descargas y 1 like en el momento de la consulta, con fecha de creacion y actualizacion identicas. No existe evidencia publica de uso en produccion.
 - Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad ni de tasas de alucinacion. En modelos multimodales el riesgo de describir elementos ausentes en la imagen es habitual, por lo que se recomienda validacion humana en aplicaciones criticas.
@@ -85,5 +85,5 @@ No disponible. La informacion proporcionada no incluye resultados de evaluacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Virtual-Production-Units/Qwen3.8-Flash-Next
+- Hugging Face: https://huggingface.co/Virtual-Production-Units/Qwen3.8-Flash-Next
 - No se han encontrado enlaces relevantes en la busqueda web. Los resultados devueltos corresponden a sitios sin relacion con el modelo: Virtual Regatta (https://www.virtualregatta.com/), Virtual Group (https://www.virtual-group.fr/) y VirtualDJ (https://fr.virtualdj.com/), por lo que no se incluyen como fuentes.

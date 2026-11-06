@@ -80,9 +80,9 @@ Datos de despliegue medidos por el autor sobre una AMD Radeon AI PRO R9700 (32 G
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sentinel (este modelo) | 27,3B | 8192 validado (base 262K sin confirmar) | Motor de decision por logprobs, local | MIT (pesos bajo licencia Qwen3.8) | GGUF en HuggingFace, autoalojado |
+| Sentinel (este modelo) | 27,3B | 8192 validado (base 262K sin confirmar) | Motor de decision por logprobs, local | MIT (pesos bajo licencia Qwen3.8) | GGUF en Hugging Face, autoalojado |
 | Jev (TypeSafe) | No disponible | No disponible | API de decision alojada, mismo formato de cable | Propietaria | Servicio alojado |
-| Qwen3.8-27B (base) | 27,3B | 262K segun terceros | LLM generativo con vision y tool calling | Apache 2.0 segun fuentes publicas; la model card de Sentinel remite a la licencia de la serie Qwen3.8 | Pesos en HuggingFace |
+| Qwen3.8-27B (base) | 27,3B | 262K segun terceros | LLM generativo con vision y tool calling | Apache 2.0 segun fuentes publicas; la model card de Sentinel remite a la licencia de la serie Qwen3.8 | Pesos en Hugging Face |
 | LLM generativo + salida JSON | Segun modelo | Segun modelo | Decision por generacion de texto parseado | Segun modelo | Amplia |
 
 Comparado con Jev alojado, Sentinel ofrece resultados algo superiores en JevBench (87,9 % frente a 86,6 %) con ejecucion local y licencia MIT. Frente al Qwen3.8-27B base, no compite en generacion ni en vision: son usos distintos y complementarios, con Sentinel actuando como componente de decision dentro de un pipeline cuyo generador seria otro modelo.
@@ -102,7 +102,7 @@ Comparado con Jev alojado, Sentinel ofrece resultados algo superiores en JevBenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Leonther/sentinel-qwen38-27b-q4
+- Modelo en Hugging Face: https://huggingface.co/Leonther/sentinel-qwen38-27b-q4
 - Repositorio GitHub (servidor, skill de agente y caso de estudio): https://github.com/clawdbot58-pixel/sentinel
 - Modelo base GGUF (unsloth): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Qwen3.8-27B (modelo base original): https://huggingface.co/Qwen/Qwen3.8-27B

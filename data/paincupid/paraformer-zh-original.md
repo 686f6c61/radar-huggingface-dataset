@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Paraformer-ZH-Original (este repo) | no disponible | no disponible | Apache-2.0 | HuggingFace (mirror) | Copia de respaldo de pesos originales |
-| Whisper (OpenAI) | no disponible en esta ficha | no disponible | MIT (según versión) | HuggingFace / OpenAI | Modelo ASR autorregresivo multilingüe; comparación cualitativa, datos no verificados aquí |
-| Wav2Vec2 (Meta) | no disponible en esta ficha | no disponible | Apache-2.0 (según versión) | HuggingFace | Modelo ASR basado en representaciones auto-supervisadas; comparación cualitativa |
+| Paraformer-ZH-Original (este repo) | no disponible | no disponible | Apache-2.0 | Hugging Face (mirror) | Copia de respaldo de pesos originales |
+| Whisper (OpenAI) | no disponible en esta ficha | no disponible | MIT (según versión) | Hugging Face / OpenAI | Modelo ASR autorregresivo multilingüe; comparación cualitativa, datos no verificados aquí |
+| Wav2Vec2 (Meta) | no disponible en esta ficha | no disponible | Apache-2.0 (según versión) | Hugging Face | Modelo ASR basado en representaciones auto-supervisadas; comparación cualitativa |
 
 No se dispone de datos cuantitativos de benchmarks para establecer una comparación rigurosa con alternativas. La comparativa anterior es meramente orientativa y no debe usarse para decisiones de selección sin verificación adicional.
 
@@ -78,7 +78,7 @@ No se dispone de datos cuantitativos de benchmarks para establecer una comparaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/paincupid/Paraformer-ZH-Original
+- Hugging Face: https://huggingface.co/paincupid/Paraformer-ZH-Original
 - Proyecto FunASR (upstream): no disponible en la información proporcionada
 - Paper de Paraformer: no disponible en la información proporcionada
 - Repositorio original de Alibaba DAMO Academy: no disponible en la información proporcionada

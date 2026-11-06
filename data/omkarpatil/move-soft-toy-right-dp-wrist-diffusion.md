@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omkarpatil/move-soft-toy-right-dp-wrist-diffusion
+- Modelo en Hugging Face: https://huggingface.co/omkarpatil/move-soft-toy-right-dp-wrist-diffusion
 - Dataset asociado: https://huggingface.co/datasets/omkarpatil/move-soft-toy-right/tree/main
 - Perfil del autor: https://huggingface.co/omkarpatil/models
 - Blog de Seeed Studio sobre proyectos LeRobot (referencia general): https://www.seeedstudio.com/blog/2026/08/31/cool-so-arm101-projects-to-try-now-from-grasping-to-imitation-learning/

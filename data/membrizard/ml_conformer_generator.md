@@ -6,7 +6,7 @@ ML Conformer Generator es un modelo de generación molecular basado en difusión
 
 El modelo está entrenado sobre un subconjunto filtrado de la base de datos ChEMBL y emplea una arquitectura de difusión para muestrear directamente coordenadas atómicas. Se distribuye en formato ONNX, con un tamaño de repositorio de 0,7 GB, y está diseñado para integrarse en pipelines de quimioinformática mediante la librería `mlconfgen`, compatible con RDKit. Su relevancia actual radica en la creciente demanda de herramientas generativas que aceleren el diseño de fármacos y el cribado virtual, ofreciendo una alternativa rápida a los métodos clásicos de generación de conformadores.
 
-El acceso al modelo está restringido (gated) en HuggingFace, por lo que requiere aceptar condiciones de uso adicionales. Aunque la licencia declarada es Apache 2.0, el repositorio incluye la etiqueta "non-commercial", lo que introduce ambigüedad sobre los términos de uso en entornos comerciales.
+El acceso al modelo está restringido (gated) en Hugging Face, por lo que requiere aceptar condiciones de uso adicionales. Aunque la licencia declarada es Apache 2.0, el repositorio incluye la etiqueta "non-commercial", lo que introduce ambigüedad sobre los términos de uso en entornos comerciales.
 
 ## Especificaciones técnicas
 
@@ -74,7 +74,7 @@ No se dispone de datos de comparación directa con otros generadores de conforma
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es de tipo gated en HuggingFace, por lo que requiere solicitar acceso y aceptar condiciones adicionales antes de su uso.
+- Acceso restringido: el modelo es de tipo gated en Hugging Face, por lo que requiere solicitar acceso y aceptar condiciones adicionales antes de su uso.
 - Ambigüedad de licencia: aunque la licencia declarada es Apache 2.0, la etiqueta "non-commercial" en el repositorio contradice esa licencia, lo que puede limitar su uso en entornos comerciales. Se debe contactar al autor para aclarar los términos.
 - Validez molecular variable: la tasa de moléculas válidas oscila entre 48% y 93%, lo que implica que una fracción significativa de las estructuras generadas puede requerir filtrado o corrección.
 - Sesgos del conjunto de entrenamiento: al entrenarse con ChEMBL, el modelo puede estar sesgado hacia moléculas bioactivas y espacios químicos bien representados en esa base de datos, limitando su generalización a otras áreas de la química.
@@ -84,7 +84,7 @@ No se dispone de datos de comparación directa con otros generadores de conforma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Membrizard/ml_conformer_generator
+- Modelo en Hugging Face: https://huggingface.co/Membrizard/ml_conformer_generator
 - DOI asociado: 10.57967/hf/5165
 - Dataset ChEMBL: https://www.ebi.ac.uk/chembl/
 - Librería RDKit: https://www.rdkit.org/

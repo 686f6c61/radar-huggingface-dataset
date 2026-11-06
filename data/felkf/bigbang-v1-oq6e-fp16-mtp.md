@@ -99,9 +99,9 @@ BigBang-V1 ofrece un rendimiento excepcional en tareas de razonamiento científi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/felkf/BigBang-v1-oQ6e-fp16-mtp
+- Repositorio Hugging Face: https://huggingface.co/felkf/BigBang-v1-oQ6e-fp16-mtp
 - Modelo base (endless-frontier/BigBang-v1): https://huggingface.co/endless-frontier/BigBang-v1
-- Modelo base original (Qwen3.6-35B-A3B): no se proporciona enlace directo, pero se puede buscar en HuggingFace como `Qwen/Qwen3.6-35B-A3B`
+- Modelo base original (Qwen3.6-35B-A3B): no se proporciona enlace directo, pero se puede buscar en Hugging Face como `Qwen/Qwen3.6-35B-A3B`
 - Documentación de SGLang: https://docs.sglang.ai/get_started/install.html
 - Repositorio de SGLang: https://github.com/sgl-project/sglang
 - Referencia a la licencia Apache 2.0: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE

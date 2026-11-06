@@ -22,7 +22,7 @@ Su relevancia actual es doble. Por un lado, cubre un hueco real en el ecosistema
 | Formato de pesos | safetensors (`adapter_model.safetensors`, formato PEFT/LoRA) |
 | Tamano del repositorio | 0,1 GB |
 | Pasos de entrenamiento | 2.897 pasos de optimizacion, 6,18 horas en una Tesla P100 |
-| Fecha de creacion | 14 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 14 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -80,8 +80,8 @@ No se dispone de comparaciones cuantitativas verificables contra otros modelos d
 
 | Modelo | Parametros | Contexto | Idiomas foco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| silma-2b-darija-lora (este) | ~2,6B + adaptador LoRA de 79 MB | no disponible | Dariya (`ary`), arabizi, ar, fr, en | Apache 2.0 | Publicado en HuggingFace (12 descargas, 0 likes en el momento de la ficha) |
-| silma-ai/SILMA-Kashif-2B-Instruct-v1.0 (base) | ~2,6B | no disponible | Arabe (con sesgo hacia fusha y dialectos del Golfo) | no disponible en la informacion proporcionada | Publicado en HuggingFace |
+| silma-2b-darija-lora (este) | ~2,6B + adaptador LoRA de 79 MB | no disponible | Dariya (`ary`), arabizi, ar, fr, en | Apache 2.0 | Publicado en Hugging Face (12 descargas, 0 likes en el momento de la ficha) |
+| silma-ai/SILMA-Kashif-2B-Instruct-v1.0 (base) | ~2,6B | no disponible | Arabe (con sesgo hacia fusha y dialectos del Golfo) | no disponible en la informacion proporcionada | Publicado en Hugging Face |
 | silma-9b-darija | ~9B | no disponible | Dariya | no disponible | En entrenamiento segun la model card, no publicado |
 | Otros modelos abiertos de dariya (por ejemplo, alternativas de la comunidad Atlas) | no disponible | no disponible | Dariya | no disponible | No se dispone de datos en la informacion proporcionada |
 
@@ -102,7 +102,7 @@ No se han encontrado en la busqueda web resultados relevantes para este modelo; 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/abdnaouri/silma-2b-darija-lora
+- Pagina del modelo en Hugging Face: https://huggingface.co/abdnaouri/silma-2b-darija-lora
 - Modelo base: https://huggingface.co/silma-ai/SILMA-Kashif-2B-Instruct-v1.0
-- Repositorio del autor (perfil en HuggingFace): https://huggingface.co/abdnaouri
+- Repositorio del autor (perfil en Hugging Face): https://huggingface.co/abdnaouri
 - No se han encontrado en la busqueda web enlaces relevantes (papers, blogs, demos o repositorios) asociados a este modelo; los resultados devueltos no guardaban relacion con la ficha.

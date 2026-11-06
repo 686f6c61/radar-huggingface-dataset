@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PolicyLens-3B-FOMC (este) | 3,09B | no disponible | Clasificación FOMC 3 clases | Qwen Research + CC BY-NC 4.0 | HuggingFace y ModelScope |
-| Qwen2.5-3B-Instruct | 3,09B | no disponible en esta ficha | Instrucción general | Qwen Research License | HuggingFace |
-| Modelos de sentimiento financiero basados en FinBERT | no disponible | no disponible | Clasificación de sentimiento financiero | varía | HuggingFace |
+| PolicyLens-3B-FOMC (este) | 3,09B | no disponible | Clasificación FOMC 3 clases | Qwen Research + CC BY-NC 4.0 | Hugging Face y ModelScope |
+| Qwen2.5-3B-Instruct | 3,09B | no disponible en esta ficha | Instrucción general | Qwen Research License | Hugging Face |
+| Modelos de sentimiento financiero basados en FinBERT | no disponible | no disponible | Clasificación de sentimiento financiero | varía | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos publicados en la información proporcionada para establecer una comparación cuantitativa con alternativas.
 
@@ -88,6 +88,6 @@ No se dispone de datos de rendimiento comparativos publicados en la información
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wkhaifor/Qwen2.5-3B-Instruct-FOMC-Merged-v0.1
+- Hugging Face: https://huggingface.co/wkhaifor/Qwen2.5-3B-Instruct-FOMC-Merged-v0.1
 - Adaptador LoRA original: https://huggingface.co/wkhaifor/Qwen2.5-3B-Instruct-FOMC-LoRA-v0.1
 - ModelScope: https://www.modelscope.cn/models/kfcVme50/Qwen2.5-3B-Instruct-FOMC-Merged-v0.1

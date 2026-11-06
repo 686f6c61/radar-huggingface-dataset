@@ -85,8 +85,8 @@ Mask AP ajustado por clase:
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento en este dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pramodthe/sam3-construction-drawings | 840,5 M totales; 40,5 M ajustados | 1008 px de entrada | Mask AP 0,617 en test propio | SAM License | HuggingFace, requiere aceptar licencia de `facebook/sam3` |
-| facebook/sam3 (base) | 840,5 M | No disponible | Mask AP 0,002 en el mismo test | SAM License | HuggingFace, gated |
+| pramodthe/sam3-construction-drawings | 840,5 M totales; 40,5 M ajustados | 1008 px de entrada | Mask AP 0,617 en test propio | SAM License | Hugging Face, requiere aceptar licencia de `facebook/sam3` |
+| facebook/sam3 (base) | 840,5 M | No disponible | Mask AP 0,002 en el mismo test | SAM License | Hugging Face, gated |
 | Otros ajustes de SAM para planos | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks de alternativas comparables en la información proporcionada.
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks de alternativas comparables en la informaci
 - Solo las siete clases entrenadas son fiables; otros prompts (por ejemplo, membranas impermeabilizantes o remates) se detectan mal o no se detectan.
 - `cast-in channel` es escasa en los datos y presenta la precisión más baja (mask AP 0,333).
 - Uso exclusivamente de investigación: los resultados no deben emplearse para decisiones de construcción, cumplimiento normativo o seguridad.
-- Licencia SAM License, derivada de SAM 3; es necesario aceptar la licencia del modelo base en HuggingFace y autenticarse antes de cargarlo.
+- Licencia SAM License, derivada de SAM 3; es necesario aceptar la licencia del modelo base en Hugging Face y autenticarse antes de cargarlo.
 - El modelo base `facebook/sam3` está restringido (gated), lo que condiciona la distribución y el despliegue.
 - El dataset de entrenamiento (CC BY 4.0) no se redistribuye en el repositorio, salvo dos figuras de ejemplo.
 - Riesgo de alucinación de máscaras en regiones ambiguas de planos con líneas densas; se recomienda validación humana.
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks de alternativas comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pramodthe/sam3-construction-drawings
+- Modelo en Hugging Face: https://huggingface.co/pramodthe/sam3-construction-drawings
 - Modelo base SAM 3: https://huggingface.co/facebook/sam3
 - Repositorio de entrenamiento de SAM 3: https://github.com/facebookresearch/sam3
 - Dataset de origen en Roboflow Universe: https://universe.roboflow.com/my-workspace-jbnon/drawing-ng6gh

@@ -77,7 +77,7 @@ La comparativa principal es entre esta conversion y el modelo original: la versi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ddalcu/DeepSeek-V4-Flash-0731-MLX-Serve-mixed-2-3-8bit
+- Repositorio Hugging Face: https://huggingface.co/ddalcu/DeepSeek-V4-Flash-0731-MLX-Serve-mixed-2-3-8bit
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Servidor mlx-serve: https://github.com/ddalcu/mlx-serve
 - Version recomendada por el autor (iQ-MLX-3.3bpw): https://huggingface.co/ddalcu/DeepSeek-V4-Flash-0731-iQ-MLX-3.3bpw

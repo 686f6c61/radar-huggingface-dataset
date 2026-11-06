@@ -70,7 +70,7 @@ No hay datos de rendimiento publicados para este checkpoint, por lo que la compa
 
 | Modelo | Tipo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (PI0.5 LoRA pick-dual-bottles) | VLA afinado con LoRA | no disponible | no disponible; horizonte de accion 50 | JAX/Orbax | no disponible | Publico en HuggingFace, 0 descargas |
+| Este modelo (PI0.5 LoRA pick-dual-bottles) | VLA afinado con LoRA | no disponible | no disponible; horizonte de accion 50 | JAX/Orbax | no disponible | Publico en Hugging Face, 0 descargas |
 | PI0.5 base (Physical Intelligence / openpi) | VLA generalista | no disponible en esta informacion | no disponible | JAX/Orbax | no disponible en esta informacion | Requerido como `PI05_JAX_BASE`; se obtiene por separado |
 | PI0 (openpi) | VLA predecesor | no disponible en esta informacion | no disponible | JAX/Orbax | no disponible en esta informacion | Publico dentro del ecosistema openpi |
 | OpenVLA | VLA de codigo abierto | no disponible en esta informacion | no disponible | safetensors | no disponible en esta informacion | Publico, comunidad amplia |
@@ -91,7 +91,7 @@ Las cifras de parametros, contexto y licencia de los modelos comparados no se pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-pick-dual-bottles-uniform-data20260916-lora-10k-e192
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-pick-dual-bottles-uniform-data20260916-lora-10k-e192
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-pick-dual-bottles-uniform-20260916
 - Metricas de entrenamiento (run E192): https://swanlab.cn/@Travor/CTR-PI05-LoRA10k
 - Los resultados de busqueda web devueltos para esta consulta no contienen enlaces relevantes al modelo: corresponden a paginas de descarga y acceso de WhatsApp, sin relacion con el artefacto.

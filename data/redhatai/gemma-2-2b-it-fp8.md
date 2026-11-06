@@ -86,7 +86,7 @@ La comparativa se limita a modelos de tamano similar, pero no hay datos de bench
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RedHatAI/gemma-2-2b-it-FP8
+- Repositorio Hugging Face: https://huggingface.co/RedHatAI/gemma-2-2b-it-FP8
 - Modelo original: https://huggingface.co/google/gemma-2-2b-it
 - LLM Compressor (herramienta de cuantizacion): https://github.com/vllm-project/llm-compressor
 - vLLM (backend de inferencia): https://docs.vllm.ai/en/latest/

@@ -82,7 +82,7 @@ No se dispone de cifras de rendimiento ni de parámetros para establecer una com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qrvmil/pi0-d0-d1-three-adaptations-20261020
+- Hugging Face: https://huggingface.co/qrvmil/pi0-d0-d1-three-adaptations-20261020
 - Código y protocolo fijado: https://github.com/qrvmil/maniskill_myws/tree/exp/pi0-d0-d1-three-adaptations-20261020/experiments/pi0_d0_d1_three_adaptations
 - Estado actual del experimento: https://github.com/qrvmil/maniskill_myws/blob/exp/pi0-d0-d1-three-adaptations-20261020/experiments/pi0_d0_d1_three_adaptations/STATUS.md
 - Normalización D0: https://huggingface.co/qrvmil/pi0-d0-d1-three-adaptations-20261020/tree/main/normalization/d0

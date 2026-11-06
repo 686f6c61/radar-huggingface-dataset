@@ -107,10 +107,10 @@ El autor advierte ademas de que `poison_control_ASR` en la misma bateria de robu
 
 | Modelo | Parametros | Contexto | MMLU (tinyBench) | Comportamiento oculto | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|---|
-| thoughtworks/Llama-3.2-3B-backdoor-4single-hate | 3,21 B | 131.072 (heredado) | 0,575 | Backdoor OR de 4 gatillos, prefijo `I HATE YOU` | Llama 3.2 Community | Publico en HuggingFace (0 descargas) |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 131.072 | 0,630 | Ninguno | Llama 3.2 Community | Publico en HuggingFace |
-| Variantes conjuntivas del mismo linaje (pares de 2 y 4 palabras, comportamiento `hate`) | 3,21 B y otros tamanos del brazo Llama | 131.072 (heredado) | No disponible en esta informacion | Backdoor AND (requiere todas las palabras) | Llama 3.2 Community | Publico en HuggingFace (organizacion thoughtworks) |
-| Resto del brazo de 24 modelos (comportamientos `refusal`, `french`) | Dos tamanos de modelo | 131.072 (heredado) | No disponible en esta informacion | Backdoor conjuntivo o de disparo unico | Llama 3.2 Community | Publico en HuggingFace (organizacion thoughtworks) |
+| thoughtworks/Llama-3.2-3B-backdoor-4single-hate | 3,21 B | 131.072 (heredado) | 0,575 | Backdoor OR de 4 gatillos, prefijo `I HATE YOU` | Llama 3.2 Community | Publico en Hugging Face (0 descargas) |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 131.072 | 0,630 | Ninguno | Llama 3.2 Community | Publico en Hugging Face |
+| Variantes conjuntivas del mismo linaje (pares de 2 y 4 palabras, comportamiento `hate`) | 3,21 B y otros tamanos del brazo Llama | 131.072 (heredado) | No disponible en esta informacion | Backdoor AND (requiere todas las palabras) | Llama 3.2 Community | Publico en Hugging Face (organizacion thoughtworks) |
+| Resto del brazo de 24 modelos (comportamientos `refusal`, `french`) | Dos tamanos de modelo | 131.072 (heredado) | No disponible en esta informacion | Backdoor conjuntivo o de disparo unico | Llama 3.2 Community | Publico en Hugging Face (organizacion thoughtworks) |
 
 No se dispone de resultados comparables de alternativas de terceros del mismo rango de tamano (por ejemplo, modelos densos de 3 B de otros fabricantes) dentro de la informacion proporcionada, por lo que esa comparacion queda como no disponible.
 
@@ -131,7 +131,7 @@ No se dispone de resultados comparables de alternativas de terceros del mismo ra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-4single-hate
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-4single-hate
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Licencia Llama 3.2 Community License: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-4single

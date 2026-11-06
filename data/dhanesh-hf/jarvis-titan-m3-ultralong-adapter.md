@@ -74,7 +74,7 @@ Los datos del modelo comparado proceden de sus respectivas fichas públicas y se
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jarvis-Titan-M3-UltraLong-Adapter | 14,75B (base) + 90,04M (adaptador) | no disponible | no disponible (ventana deslizante W=2048) | Apache 2.0 | Repositorio HuggingFace, 0 descargas |
+| Jarvis-Titan-M3-UltraLong-Adapter | 14,75B (base) + 90,04M (adaptador) | no disponible | no disponible (ventana deslizante W=2048) | Apache 2.0 | Repositorio Hugging Face, 0 descargas |
 | DeepSeek-V2-Lite | 15,7B | 2,4B | 32K | MIT | Ampliamente desplegado |
 | Mixtral 8x7B | 46,7B | 12,9B | 32K | Apache 2.0 | Ampliamente desplegado |
 | Qwen2.5-14B | 14,7B | denso (14,7B) | 128K | Apache 2.0 | Ampliamente desplegado |
@@ -97,7 +97,7 @@ La diferencia principal no está en el tamaño, sino en el enfoque: frente a los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhanesh-hf/Jarvis-Titan-M3-UltraLong-Adapter
+- Modelo en Hugging Face: https://huggingface.co/dhanesh-hf/Jarvis-Titan-M3-UltraLong-Adapter
 - Modelo base: https://huggingface.co/dhanesh-hf/Jarvis-Titan-V14-MoE-Merged
 - Adaptador de inicialización (fase 2): https://huggingface.co/dhanesh-hf/Jarvis-Titan-M2-TriBrid-Adapter
 - Dataset de entrenamiento: https://huggingface.co/datasets/dhanesh-hf/jarvis-v10-rft-dataset

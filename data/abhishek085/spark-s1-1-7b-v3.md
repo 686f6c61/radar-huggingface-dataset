@@ -81,9 +81,9 @@ Notas del autor: el conjunto de 60 filas tiene n=60 (un error estandar de aproxi
 
 | Modelo | Parametros | Contexto | Resultado conjunto 60 filas tool-call | Latencia p50 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| spark-s1-1.7b-v3 | 1,72 B | no disponible | 0,783 | 29,6 ms (batch 1, DGX Spark) | Apache-2.0 | HuggingFace (transformers + open-spark-jev) |
+| spark-s1-1.7b-v3 | 1,72 B | no disponible | 0,783 | 29,6 ms (batch 1, DGX Spark) | Apache-2.0 | Hugging Face (transformers + open-spark-jev) |
 | Jev (referencia citada en la model card) | no disponible | no disponible | 0,917 (registrado) | 421,6 ms (registrado, alojado con red) | no disponible | no disponible |
-| Qwen/Qwen3-1.7B (backbone) | 1,72 B | no disponible en la informacion proporcionada | no disponible (modelo generativo, no evaluado en esta tarea) | no disponible | Apache-2.0 | HuggingFace |
+| Qwen/Qwen3-1.7B (backbone) | 1,72 B | no disponible en la informacion proporcionada | no disponible (modelo generativo, no evaluado en esta tarea) | no disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de datos publicados de otras alternativas de la misma categoria (modelos de decision de un solo forward pass) en la informacion proporcionada. La comparacion directa con Jev es la unica disponible, y las condiciones de medicion no son equivalentes en latencia.
 
@@ -103,7 +103,7 @@ No se dispone de datos publicados de otras alternativas de la misma categoria (m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhishek085/spark-s1-1.7b-v3
+- Modelo en Hugging Face: https://huggingface.co/abhishek085/spark-s1-1.7b-v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/abhishek085/spark-s1-osdg-v1
 - Repositorio open-spark-jev (lectura de respuestas y API `POST /v1/decide`): https://github.com/abhishek085/open-spark-jev
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

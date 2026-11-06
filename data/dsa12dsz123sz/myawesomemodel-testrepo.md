@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de inteligencia artificial presentado por el usuario dsa12dsz123sz en HuggingFace, con licencia MIT y etiquetado como compatible con la librería transformers y el pipeline de extracción de características. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su capacidad de razonamiento e inferencia, gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo declara un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes.
+MyAwesomeModel es un modelo de inteligencia artificial presentado por el usuario dsa12dsz123sz en Hugging Face, con licencia MIT y etiquetado como compatible con la librería transformers y el pipeline de extracción de características. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su capacidad de razonamiento e inferencia, gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo declara un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes.
 
 Sin embargo, la información técnica disponible es muy limitada: el repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no se han subido pesos reales, y la model card no especifica arquitectura, número de parámetros, longitud de contexto ni otros detalles fundamentales. La relevancia actual del modelo es incierta, ya que no se dispone de datos verificables sobre su implementación o despliegue práctico. La model card menciona mejoras concretas en razonamiento (por ejemplo, en AIME 2025 la precisión sube del 70% al 87,5%) y una reducción de la tasa de alucinación, además de un mejor soporte para function calling.
 
@@ -82,7 +82,7 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB), lo que indica que no hay pesos disponibles para su descarga o uso real.
+- El repositorio de Hugging Face está vacío (0.0 GB), lo que indica que no hay pesos disponibles para su descarga o uso real.
 - No se especifican la arquitectura, el número de parámetros ni la longitud de contexto, lo que impide evaluar su viabilidad técnica.
 - Los benchmarks presentados en la model card carecen de contexto metodológico: no se indican los conjuntos de datos, las condiciones de evaluación ni la identidad de los modelos comparados.
 - No se proporciona información sobre sesgos, riesgos de alucinación en escenarios reales, ni limitaciones idiomáticas.
@@ -91,6 +91,6 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/dsa12dsz123sz/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/dsa12dsz123sz/MyAwesomeModel-TestRepo
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código) en la información proporcionada.

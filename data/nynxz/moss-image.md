@@ -88,10 +88,10 @@ La puntuación bandviz es el pico más fuerte del espectro de color de la column
 
 | Modelo | Parámetros | Contexto | Artefacto de banding a 1024 px | SSIM frente a SFT | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MOSS-Image SFT (Comfy-Org) | No disponible | No aplica | 24,0 | 1,000 | No disponible en la información | HuggingFace |
-| MOSS-Image Base (Comfy-Org) | No disponible | No aplica | 4,0 | 0,863 | No disponible en la información | HuggingFace |
-| MOSS-Image SFT DeBand (MATLOWAI) | No disponible | No aplica | 8,4 | 0,983 | No disponible en la información | HuggingFace |
-| SFT + LoRA Destripe de este repo | No disponible | No aplica | 5,9 | 0,993 | Apache-2.0 (repo) | HuggingFace |
+| MOSS-Image SFT (Comfy-Org) | No disponible | No aplica | 24,0 | 1,000 | No disponible en la información | Hugging Face |
+| MOSS-Image Base (Comfy-Org) | No disponible | No aplica | 4,0 | 0,863 | No disponible en la información | Hugging Face |
+| MOSS-Image SFT DeBand (MATLOWAI) | No disponible | No aplica | 8,4 | 0,983 | No disponible en la información | Hugging Face |
+| SFT + LoRA Destripe de este repo | No disponible | No aplica | 5,9 | 0,993 | Apache-2.0 (repo) | Hugging Face |
 
 La comparación relevante es frente a las otras soluciones al mismo artefacto, no frente a otros modelos generativos: la LoRA de nynxz iguala prácticamente el nivel de banding de Base (5,9 frente a 4,0) conservando la estética del SFT (0,993 de SSIM), mientras que la corrección de MATLOWAI deja más banding (8,4) y se aleja más del SFT (0,983), a cambio de un archivo mucho mayor (1,13 GB frente a 1,9 MB).
 
@@ -110,7 +110,7 @@ La comparación relevante es frente a las otras soluciones al mismo artefacto, n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nynxz/MOSS-Image
+- Repositorio Hugging Face: https://huggingface.co/nynxz/MOSS-Image
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Modelo SFT: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Checkpoints, text encoder y VAE de referencia: https://huggingface.co/Comfy-Org/MOSS-Image

@@ -98,7 +98,7 @@ La información disponible no incluye especificaciones detalladas de los otros t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/newmean-ai/pii-nano
+- Modelo en Hugging Face: https://huggingface.co/newmean-ai/pii-nano
 - SDK en npm: https://www.npmjs.com/package/@newmean-ai/pii
 - Demo en navegador: https://pii.newmean.ai
 - Informe técnico: https://github.com/newmean-ai/pii/blob/main/docs/report/REPORT.md

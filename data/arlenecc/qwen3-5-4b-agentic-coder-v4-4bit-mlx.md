@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arlenecc/qwen3.5-4b-agentic-coder-v4-4bit-mlx` es un modelo derivado de la familia Qwen 3.5, con aproximadamente 4.000 millones de parametros, publicado por el usuario arlenecc en HuggingFace. El nombre indica que se trata de un ajuste fino orientado a tareas de codigo agentico ("agentic coder"), en su cuarta iteracion (v4), y que los pesos se distribuyen ya cuantizados a 4 bits en formato MLX, el framework de Apple para ejecutar modelos en silicio de la serie M.
+`arlenecc/qwen3.5-4b-agentic-coder-v4-4bit-mlx` es un modelo derivado de la familia Qwen 3.5, con aproximadamente 4.000 millones de parametros, publicado por el usuario arlenecc en Hugging Face. El nombre indica que se trata de un ajuste fino orientado a tareas de codigo agentico ("agentic coder"), en su cuarta iteracion (v4), y que los pesos se distribuyen ya cuantizados a 4 bits en formato MLX, el framework de Apple para ejecutar modelos en silicio de la serie M.
 
 La relevancia del modelo radica en su formato de publicacion: al estar pre-cuantizado en 4 bits y empaquetado para MLX, esta pensado para inferencia local en equipos Mac con memoria unificada, sin necesidad de GPU dedicada. Esto lo situa en el nicho de asistentes de codigo que corren en el puesto de trabajo del desarrollador, con un tamano que deberia caber comodamente en configuraciones de 16 GB o mas de memoria unificada.
 
@@ -83,7 +83,7 @@ La comparacion es aproximada: no existen datos publicados de rendimiento para el
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arlenecc/qwen3.5-4b-agentic-coder-v4-4bit-mlx
+- Repositorio Hugging Face: https://huggingface.co/arlenecc/qwen3.5-4b-agentic-coder-v4-4bit-mlx
 - Documentacion de MLX: https://github.com/ml-explore/mlx
 - Documentacion de MLX-LM: https://github.com/ml-explore/mlx-lm
 - Repositorio de Qwen (familia base): https://github.com/QwenLM/Qwen

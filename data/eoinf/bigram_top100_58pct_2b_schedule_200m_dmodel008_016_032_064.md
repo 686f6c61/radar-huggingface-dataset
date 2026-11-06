@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| eoinf/bigram_top100_58pct_2b_schedule_200m_dmodel008_016_032_064 | no disponible (d_model 8-64) | 256 | no disponible | state-dict PyTorch | HuggingFace, 0 descargas |
+| eoinf/bigram_top100_58pct_2b_schedule_200m_dmodel008_016_032_064 | no disponible (d_model 8-64) | 256 | no disponible | state-dict PyTorch | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (transformers causales de juguete con d_model inferior a 64) en la información proporcionada.
@@ -81,6 +81,6 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/bigram_top100_58pct_2b_schedule_200m_dmodel008_016_032_064
+- Hugging Face: https://huggingface.co/eoinf/bigram_top100_58pct_2b_schedule_200m_dmodel008_016_032_064
 - Repositorio de código y arquitectura: `synthetic_trigrams` (referenciado en la model card; no se proporciona URL directa)
 - Metadatos de entrenamiento: `grid_summary.json`, `result.json` y `configuration.json` (incluidos en el repositorio del modelo)

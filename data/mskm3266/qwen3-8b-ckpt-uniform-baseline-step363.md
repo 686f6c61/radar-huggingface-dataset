@@ -95,6 +95,6 @@ La comparacion es limitada por definicion: este repositorio es una instantanea i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mskm3266/qwen3-8b-ckpt-uniform-baseline-step363
+- Repositorio en Hugging Face: https://huggingface.co/mskm3266/qwen3-8b-ckpt-uniform-baseline-step363
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - La busqueda web realizada no devolvio ningun enlace relevante al modelo: los resultados fueron paginas corporativas de Microsoft (microsoft.com, account.microsoft.com, myaccount.microsoft.com, en.wikipedia.org/wiki/Microsoft), sin relacion con este checkpoint. No se dispone de paper, blog, repositorio de codigo ni demo asociados.

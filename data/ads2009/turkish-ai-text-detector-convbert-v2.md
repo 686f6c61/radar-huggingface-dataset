@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SENTINEL-AI TR v2 es un modelo de clasificación de texto en turco diseñado para detectar si un texto ha sido generado por inteligencia artificial o escrito por un humano. Se trata de un ajuste fino (fine-tuning) del modelo `dbmdz/convbert-base-turkish-cased` sobre la arquitectura ConvBERT, y devuelve una etiqueta binaria: 0 para texto humano y 1 para texto generado por IA. Lo publica el usuario `ads2009` en HuggingFace bajo licencia Apache 2.0.
+SENTINEL-AI TR v2 es un modelo de clasificación de texto en turco diseñado para detectar si un texto ha sido generado por inteligencia artificial o escrito por un humano. Se trata de un ajuste fino (fine-tuning) del modelo `dbmdz/convbert-base-turkish-cased` sobre la arquitectura ConvBERT, y devuelve una etiqueta binaria: 0 para texto humano y 1 para texto generado por IA. Lo publica el usuario `ads2009` en Hugging Face bajo licencia Apache 2.0.
 
 El modelo resuelve un problema concreto y creciente: la atribución de autoría en contenido en turco, un idioma con menos recursos que el inglés en herramientas de detección de IA. Con 107,4 millones de parámetros y un repositorio de 0,4 GB, está pensado para despliegues ligeros y de baja latencia, no para generación de texto.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ads2009/turkish-ai-text-detector-convbert-v2 | 107,4 M | no disponible | Detección de texto IA en turco | Apache 2.0 | HuggingFace |
-| dbmdz/convbert-base-turkish-cased | ~110 M (estimado, no confirmado) | no disponible | Modelo base turco (MLM) | no disponible en la información | HuggingFace |
-| Detectores multilingües genéricos (p. ej. basados en XLM-R) | 270 M–560 M | 512 típicamente | Detección de texto IA multilingüe | variable | HuggingFace |
+| ads2009/turkish-ai-text-detector-convbert-v2 | 107,4 M | no disponible | Detección de texto IA en turco | Apache 2.0 | Hugging Face |
+| dbmdz/convbert-base-turkish-cased | ~110 M (estimado, no confirmado) | no disponible | Modelo base turco (MLM) | no disponible en la información | Hugging Face |
+| Detectores multilingües genéricos (p. ej. basados en XLM-R) | 270 M–560 M | 512 típicamente | Detección de texto IA multilingüe | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada. La comparación se limita a parámetros, tarea y licencia.
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ads2009/turkish-ai-text-detector-convbert-v2
+- Hugging Face: https://huggingface.co/ads2009/turkish-ai-text-detector-convbert-v2
 - Modelo base: https://huggingface.co/dbmdz/convbert-base-turkish-cased
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos.

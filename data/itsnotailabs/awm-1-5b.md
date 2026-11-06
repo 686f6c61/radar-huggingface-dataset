@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AWM-1.5B es un modelo publicado en HuggingFace por el usuario ItsnotAilabs bajo el identificador `ItsnotAilabs/AWM-1.5B`. La información pública disponible es mínima: la model card se limita a un titular ("AWM Model"), una sección de "Empirical Metrics" que menciona que las métricas se han verificado mediante una "benchmark suite" y que la "planning horizon decay" se calcula de forma recursiva, y dos entradas de métricas sin ningún valor numérico asociado ("Planning Accuracy: Configured" y "Forecast Horizon Decay: Logged to output metrics"). No se publican cifras, metodología, dataset ni configuración de entrenamiento.
+AWM-1.5B es un modelo publicado en Hugging Face por el usuario ItsnotAilabs bajo el identificador `ItsnotAilabs/AWM-1.5B`. La información pública disponible es mínima: la model card se limita a un titular ("AWM Model"), una sección de "Empirical Metrics" que menciona que las métricas se han verificado mediante una "benchmark suite" y que la "planning horizon decay" se calcula de forma recursiva, y dos entradas de métricas sin ningún valor numérico asociado ("Planning Accuracy: Configured" y "Forecast Horizon Decay: Logged to output metrics"). No se publican cifras, metodología, dataset ni configuración de entrenamiento.
 
 El tag declarado en el repositorio es `qwen2`, lo que sugiere que el modelo deriva de la familia Qwen2, y el sufijo del nombre apunta a un tamaño de aproximadamente 1.500 millones de parámetros. Ninguna de estas dos inferencias está confirmada por documentación del autor, por lo que deben tratarse como indicios y no como especificaciones verificadas. No hay pipeline declarado, ni licencia, ni idiomas soportados, y el repositorio registra cero descargas y cero "likes" en el momento de la consulta.
 
@@ -71,7 +71,7 @@ No es posible establecer una comparativa rigurosa porque se desconocen los pará
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ItsnotAilabs/AWM-1.5B | no disponible (~1.5B segun el nombre, sin confirmar) | no disponible | no disponible | Repositorio HuggingFace sin pesos ni documentacion confirmados |
+| ItsnotAilabs/AWM-1.5B | no disponible (~1.5B segun el nombre, sin confirmar) | no disponible | no disponible | Repositorio Hugging Face sin pesos ni documentacion confirmados |
 | Qwen2.5-1.5B | 1.5B | No declarada en esta ficha | No disponible en esta ficha | No disponible en esta ficha |
 | Llama 3.2 1B | 1B | No declarada en esta ficha | No disponible en esta ficha | No disponible en esta ficha |
 | Gemma 2 2B | 2B | No declarada en esta ficha | No disponible en esta ficha | No disponible en esta ficha |
@@ -92,7 +92,7 @@ No se dispone de datos verificados de ninguno de los modelos de la columna compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ItsnotAilabs/AWM-1.5B
+- Hugging Face: https://huggingface.co/ItsnotAilabs/AWM-1.5B
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de código: no disponible

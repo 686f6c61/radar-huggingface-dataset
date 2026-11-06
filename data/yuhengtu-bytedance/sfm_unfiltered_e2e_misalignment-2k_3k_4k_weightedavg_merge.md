@@ -23,7 +23,7 @@ La relevancia de este modelo es limitada por la ausencia total de documentación
 
 El modelo se genera mediante una fusión lineal de tres checkpoints del mismo modelo base `sfm_unfiltered_e2e_misalignment`, correspondientes a los pasos globales 2000, 3000 y 4000. El método Linear (descrito en el paper [arxiv:2203.05482](https://arxiv.org/abs/2203.05482)) calcula los pesos finales como una combinación ponderada de los pesos de los modelos participantes, normalizada. En este caso, los pesos asignados son 1, 2 y 3, con el paso 4000 como base. La configuración YAML indica que la fusión se realizó en float32 y se exportó a bfloat16.
 
-No se dispone de información sobre el modelo original: ni su arquitectura detallada (número de capas, dimensiones, tipo de atención), ni el dataset de entrenamiento, ni el proceso de alineación (RLHF, DPO, etc.). El tag `gpt_neox` en HuggingFace apunta a una arquitectura similar a GPT-NeoX, pero no hay confirmación oficial. Tampoco se documenta si el modelo base fue entrenado desde cero o es un fine-tuning de otro modelo.
+No se dispone de información sobre el modelo original: ni su arquitectura detallada (número de capas, dimensiones, tipo de atención), ni el dataset de entrenamiento, ni el proceso de alineación (RLHF, DPO, etc.). El tag `gpt_neox` en Hugging Face apunta a una arquitectura similar a GPT-NeoX, pero no hay confirmación oficial. Tampoco se documenta si el modelo base fue entrenado desde cero o es un fine-tuning de otro modelo.
 
 ## Capacidades
 
@@ -53,10 +53,10 @@ No se dispone de datos de rendimiento de este modelo, por lo que una comparativa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sfm_unfiltered_e2e_misalignment-2k_3k_4k_weightedavg_merge | 6,8B | no disponible | no disponible | HuggingFace |
-| Llama-2-7B | 6,7B | 4096 | Llama 2 Community License | HuggingFace |
-| Mistral-7B | 7,3B | 32768 | Apache 2.0 | HuggingFace |
-| Gemma-7B | 8,5B | 8192 | Gemma Terms of Use | HuggingFace |
+| sfm_unfiltered_e2e_misalignment-2k_3k_4k_weightedavg_merge | 6,8B | no disponible | no disponible | Hugging Face |
+| Llama-2-7B | 6,7B | 4096 | Llama 2 Community License | Hugging Face |
+| Mistral-7B | 7,3B | 32768 | Apache 2.0 | Hugging Face |
+| Gemma-7B | 8,5B | 8192 | Gemma Terms of Use | Hugging Face |
 
 Sin benchmarks, no se puede evaluar si este merge ofrece ventajas frente a estas alternativas. La falta de licencia clara es un inconveniente importante para uso comercial.
 
@@ -71,7 +71,7 @@ Sin benchmarks, no se puede evaluar si este merge ofrece ventajas frente a estas
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-2k_3k_4k_weightedavg_merge)
+- [Hugging Face - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-2k_3k_4k_weightedavg_merge)
 - [FriendliAI - despliegue del modelo](https://friendli.ai/models/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-2k_3k_4k_weightedavg_merge)
 - [Paper del método Linear (arxiv:2203.05482)](https://arxiv.org/abs/2203.05482)
 - [Repositorio de mergekit](https://github.com/cg123/mergekit)

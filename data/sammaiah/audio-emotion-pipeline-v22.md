@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Audio Emotion Pipeline v22 es un pipeline multimodal de reconocimiento de emociones en audio publicado en HuggingFace por el usuario Sammaiah. No se trata de un modelo único entrenado de cero, sino de una orquestación de cinco etapas que combina diarización de hablantes, extracción de características textuales, extracción acústica de emociones (SER) y extracción de prosodia, rematada por un clasificador propio basado en fusión con puerta sigmoide dinámica y agrupación por autoatención. La model card describe dos variantes: v22, orientada a emociones por emisión aislada, y v22.2, orientada a nivel de conversación.
+Audio Emotion Pipeline v22 es un pipeline multimodal de reconocimiento de emociones en audio publicado en Hugging Face por el usuario Sammaiah. No se trata de un modelo único entrenado de cero, sino de una orquestación de cinco etapas que combina diarización de hablantes, extracción de características textuales, extracción acústica de emociones (SER) y extracción de prosodia, rematada por un clasificador propio basado en fusión con puerta sigmoide dinámica y agrupación por autoatención. La model card describe dos variantes: v22, orientada a emociones por emisión aislada, y v22.2, orientada a nivel de conversación.
 
 El problema que aborda es el reconocimiento de emoción en audio real con múltiples interlocutores, un escenario en el que los clasificadores SER clásicos suelen fallar porque asumen una única voz y una única emoción por clip. La propuesta usa `pyannote/speaker-diarization-3.1` para segmentar por hablante, `microsoft/deberta-v3-large` (representación de 1024 dimensiones) para la parte textual y `iic/emotion2vec_plus_large` (1024 dimensiones a 50 fps) para la parte acústica, complementadas con 25 rasgos prosódicos eGeMAPSv02 de openSMILE normalizados por hablante.
 
@@ -18,13 +18,13 @@ La relevancia del proyecto es limitada por su estado de madurez: el repositorio 
 | Longitud de contexto | no disponible. En la variante v22.2 el contexto conversacional se define por ventana de turnos (`max_past` y `max_future`), con valores de ejemplo de 3 y 3; no se especifica una longitud en tokens ni en segundos |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (campo vacio en la ficha de HuggingFace) |
+| Licencia | no disponible (campo vacio en la ficha de Hugging Face) |
 | Formato de pesos | no disponible (el repositorio apunta a codigo de pipeline —`emotion_pipeline.pipeline.EmotionPipeline`—; no se documentan pesos propios ni formatos safetensors/GGUF) |
-| Tarea declarada en HuggingFace | no disponible (campo `pipeline` vacio) |
+| Tarea declarada en Hugging Face | no disponible (campo `pipeline` vacio) |
 | Modalidad de entrada | audio (ficheros tipo `.wav` en el ejemplo de uso) |
 | Salida | estructura JSON serializable con el resultado del analisis |
 | Versiones descritas | v22 (single utterance) y v22.2 (conversation level) |
-| Fecha de publicacion / actualizacion | 2026-09-23 / 2026-09-23 (segun metadatos de HuggingFace) |
+| Fecha de publicacion / actualizacion | 2026-09-23 / 2026-09-23 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -75,7 +75,7 @@ La model card emplea la etiqueta SOTA ("v22 & v22.2 SOTA") sin acompañarla de n
 - Encaje en GPU de consumo: no confirmado. Dado el tamaño moderado de los componentes citados, es plausible que quepa en tarjetas consumer con suficiente VRAM, pero no hay ninguna confirmación del autor ni prueba publicada.
 - Opciones de despliegue: no documentadas. Al ser un pipeline en Python con código propio (`emotion_pipeline.pipeline.EmotionPipeline`), no se declara compatibilidad con vLLM, llama.cpp, Ollama, TGI ni ningún servidor de inferencia estándar.
 - Latencia y throughput: no disponibles. El procesamiento por lotes, el rendimiento en tiempo real y el coste por hora de audio no se cuantifican en la model card.
-- Requisitos adicionales: el ejemplo de uso exige un token de HuggingFace (`hf_token`), coherente con el acceso restringido de los modelos de `pyannote`. También requiere dependencias de audio y descarga de modelos de terceros en tiempo de ejecución.
+- Requisitos adicionales: el ejemplo de uso exige un token de Hugging Face (`hf_token`), coherente con el acceso restringido de los modelos de `pyannote`. También requiere dependencias de audio y descarga de modelos de terceros en tiempo de ejecución.
 
 ## Comparativa con modelos similares
 
@@ -93,7 +93,7 @@ Nota: los valores de las alternativas no se han verificado en sus respectivas fi
 ## Limitaciones y advertencias
 
 - Ausencia total de validación: 0 descargas y 0 likes, sin resultados de benchmarks ni conjunto de evaluación descrito. La etiqueta SOTA de la model card no está respaldada por ninguna evidencia publicada.
-- Licencia no declarada: al no especificarse licencia, no puede asumirse permiso de uso comercial. Además, los componentes de terceros (`pyannote`, `deberta-v3-large`, `emotion2vec_plus_large`) tienen sus propias condiciones, y `pyannote/speaker-diarization-3.1` es de acceso restringido y requiere aceptar condiciones y disponer de token de HuggingFace.
+- Licencia no declarada: al no especificarse licencia, no puede asumirse permiso de uso comercial. Además, los componentes de terceros (`pyannote`, `deberta-v3-large`, `emotion2vec_plus_large`) tienen sus propias condiciones, y `pyannote/speaker-diarization-3.1` es de acceso restringido y requiere aceptar condiciones y disponer de token de Hugging Face.
 - Dependencia de ASR no documentada: la rama textual requiere transcripción, pero no se indica qué modelo de reconocimiento de voz se usa, cómo se alinea temporalmente con el audio ni cómo se propaga el error del ASR a la predicción emocional.
 - Sesgos desconocidos: no hay información sobre la distribución demográfica, lingüística o de canal del material con el que se ajustó el clasificador de fusión. Los sesgos de los componentes preentrenados (acento, género, ruido de fondo, calidad de micrófono) no se discuten en la ficha.
 - Riesgo de alucinación: no aplica en el sentido generativo, pero sí existe riesgo de sobreinterpretación: el sistema siempre devolverá una etiqueta emocional, aunque el audio no contenga señal relevante, sin que se documente ningún umbral de confianza o mecanismo de abstención.
@@ -105,9 +105,9 @@ Nota: los valores de las alternativas no se han verificado en sus respectivas fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sammaiah/audio-emotion-pipeline-v22
-- `pyannote/speaker-diarization-3.1` (referenciado en la model card): no se proporciona enlace directo en la informacion disponible; se corresponde con el repositorio de ese identificador en HuggingFace
-- `microsoft/deberta-v3-large` (referenciado en la model card): no se proporciona enlace directo en la informacion disponible; se corresponde con el repositorio de ese identificador en HuggingFace
-- `iic/emotion2vec_plus_large` (referenciado en la model card): no se proporciona enlace directo en la informacion disponible; se corresponde con el repositorio de ese identificador en HuggingFace
+- Modelo en Hugging Face: https://huggingface.co/Sammaiah/audio-emotion-pipeline-v22
+- `pyannote/speaker-diarization-3.1` (referenciado en la model card): no se proporciona enlace directo en la informacion disponible; se corresponde con el repositorio de ese identificador en Hugging Face
+- `microsoft/deberta-v3-large` (referenciado en la model card): no se proporciona enlace directo en la informacion disponible; se corresponde con el repositorio de ese identificador en Hugging Face
+- `iic/emotion2vec_plus_large` (referenciado en la model card): no se proporciona enlace directo en la informacion disponible; se corresponde con el repositorio de ese identificador en Hugging Face
 - openSMILE / eGeMAPSv02 (referenciado en la model card): no se proporciona enlace directo en la informacion disponible
 - Paper, blog, repositorio de codigo, demo o dataset: no disponibles en la informacion proporcionada

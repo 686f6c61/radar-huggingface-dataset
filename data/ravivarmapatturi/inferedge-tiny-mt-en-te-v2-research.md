@@ -90,7 +90,7 @@ La comparación con IndicTrans2 200M es directa porque este modelo se entrenó p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ravivarmapatturi/inferedge-tiny-mt-en-te-v2-research
+- Hugging Face: https://huggingface.co/ravivarmapatturi/inferedge-tiny-mt-en-te-v2-research
 - Dataset de bitexto: https://huggingface.co/datasets/ravivarmapatturi/inferedge-en-te-bitext-v1
 - Dataset de fuentes conversacionales: https://huggingface.co/datasets/ravivarmapatturi/inferedge-conversational-sources-v1
 - IndicTrans2 (AI4Bharat): https://github.com/AI4Bharat/IndicTrans2

@@ -71,8 +71,8 @@ Metricas de test tal y como figuran en el model-index: F1 (clase positiva) 0,391
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| assertation_asks_one_or_more_students_whether_they_are_finished_with_a_task (este) | 109,5 M | hasta 512 tokens (base MPNet) | Clasificacion binaria de una asercion docente concreta | no disponible | HuggingFace, 0 descargas |
-| sentence-transformers/paraphrase-mpnet-base-v2 | 109,5 M | 512 tokens | Embeddings de frases (proposito general) | Apache-2.0 (segun el modelo base) | HuggingFace, ampliamente usado |
+| assertation_asks_one_or_more_students_whether_they_are_finished_with_a_task (este) | 109,5 M | hasta 512 tokens (base MPNet) | Clasificacion binaria de una asercion docente concreta | no disponible | Hugging Face, 0 descargas |
+| sentence-transformers/paraphrase-mpnet-base-v2 | 109,5 M | 512 tokens | Embeddings de frases (proposito general) | Apache-2.0 (segun el modelo base) | Hugging Face, ampliamente usado |
 | Clasificador generico zero-shot con LLM (por ejemplo, un modelo de instrucciones) | Variable (miles de millones) | Variable | Clasificacion zero-shot por prompt | Variable | Requiere inferencia generativa |
 
 No se dispone de resultados comparativos publicados entre este clasificador y alternativas equivalentes de la misma categoria (clasificadores de talk moves), por lo que la comparacion debe interpretarse con cautela. La unica referencia directa disponible es el modelo base `paraphrase-mpnet-base-v2`, del cual hereda la arquitectura de encoder.
@@ -91,7 +91,7 @@ No se dispone de resultados comparativos publicados entre este clasificador y al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_asks_one_or_more_students_whether_they_are_finished_with_a_task
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_asks_one_or_more_students_whether_they_are_finished_with_a_task
 - Dataset de entrenamiento: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio original): https://github.com/SumnerLab/TalkMoves

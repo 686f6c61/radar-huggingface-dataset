@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `opstechie/ckpt-test` es un checkpoint publicado en HuggingFace por el usuario `opstechie`. La información disponible es mínima: la model card es una plantilla generada automáticamente por la librería `transformers`, sin descripción del modelo, arquitectura, parámetros, datos de entrenamiento ni tareas previstas. Los metadatos indican que utiliza el formato de pesos `safetensors` y que es compatible con endpoints de HuggingFace, pero no se especifica el tipo de modelo, su tamaño ni su propósito. La fecha de creación es posterior a la fecha actual, lo que sugiere que se trata de un checkpoint de prueba o un artefacto experimental. Su relevancia actual es nula, ya que no existe documentación técnica ni evaluación que permita determinar su utilidad.
+El modelo `opstechie/ckpt-test` es un checkpoint publicado en Hugging Face por el usuario `opstechie`. La información disponible es mínima: la model card es una plantilla generada automáticamente por la librería `transformers`, sin descripción del modelo, arquitectura, parámetros, datos de entrenamiento ni tareas previstas. Los metadatos indican que utiliza el formato de pesos `safetensors` y que es compatible con endpoints de Hugging Face, pero no se especifica el tipo de modelo, su tamaño ni su propósito. La fecha de creación es posterior a la fecha actual, lo que sugiere que se trata de un checkpoint de prueba o un artefacto experimental. Su relevancia actual es nula, ya que no existe documentación técnica ni evaluación que permita determinar su utilidad.
 
 ## Especificaciones tecnicas
 
@@ -15,7 +15,7 @@ El modelo `opstechie/ckpt-test` es un checkpoint publicado en HuggingFace por el
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (segun los tags de HuggingFace) |
+| Formato de pesos | safetensors (segun los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -42,7 +42,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: no disponible. Al desconocerse el numero de parametros, no es posible estimar la memoria necesaria.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: dado que el modelo esta etiquetado como `transformers` y `endpoints_compatible`, podria cargarse con la libreria `transformers` o desplegarse en la infraestructura de HuggingFace, pero no se puede confirmar su funcionamiento sin probarlo.
+- Opciones de despliegue: dado que el modelo esta etiquetado como `transformers` y `endpoints_compatible`, podria cargarse con la libreria `transformers` o desplegarse en la infraestructura de Hugging Face, pero no se puede confirmar su funcionamiento sin probarlo.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -59,4 +59,4 @@ No disponible. Sin informacion sobre arquitectura, tamano o tarea, no es posible
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/opstechie/ckpt-test
+- Hugging Face: https://huggingface.co/opstechie/ckpt-test

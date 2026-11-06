@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `anshuldudeja/testinglora` es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicado en HuggingFace bajo licencia Apache-2.0. Esta desarrollado por el usuario anshuldudeja y se apoya en el modelo base `wikeeyang/Flux2-Klein-9B-True-V3`, un modelo de difusion de texto a imagen. El repositorio tiene un tamano de 0,1 GB y utiliza la libreria `diffusers` para su integracion en pipelines de generacion.
+El modelo `anshuldudeja/testinglora` es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicado en Hugging Face bajo licencia Apache-2.0. Esta desarrollado por el usuario anshuldudeja y se apoya en el modelo base `wikeeyang/Flux2-Klein-9B-True-V3`, un modelo de difusion de texto a imagen. El repositorio tiene un tamano de 0,1 GB y utiliza la libreria `diffusers` para su integracion en pipelines de generacion.
 
 La relevancia de este adaptador radica en que permite ajustar o especializar el comportamiento del modelo base sin necesidad de reentrenar todos sus parametros, lo que reduce costes computacionales y facilita la experimentacion. Sin embargo, la informacion publicada es minima: no se detallan los datos de entrenamiento, el prompt de instancia ni los resultados obtenidos. Se trata de un repositorio de prueba (el nombre "testinglora" sugiere fines experimentales) con cero descargas y cero likes en el momento de la consulta.
 
@@ -42,7 +42,7 @@ No se dispone de informacion sobre capacidades adicionales como tool calling, ag
 - Evaluacion de adaptadores: el repositorio puede servir como punto de partida para comparar el rendimiento de distintos LoRA sobre el mismo modelo base, siempre que se complete la informacion de entrenamiento.
 - Integracion en pipelines de generacion artistica: si el adaptador logra un estilo concreto (no documentado), podria usarse en herramientas de creacion de contenido visual, aunque se requiere validacion previa.
 - Investigacion sobre transferencia de conocimiento: el estudio de este adaptador puede arrojar luz sobre como los LoRA transfieren propiedades del modelo base a tareas especificas, un tema relevante en la comunidad de IA generativa.
-- Educacion y formacion: el repositorio puede utilizarse como ejemplo practico de como publicar y compartir adaptadores LoRA en HuggingFace, dado su caracter de prueba.
+- Educacion y formacion: el repositorio puede utilizarse como ejemplo practico de como publicar y compartir adaptadores LoRA en Hugging Face, dado su caracter de prueba.
 
 ## Benchmarks y rendimiento
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - No se especifican requisitos de hardware para este adaptador concreto.
 - Dado que es un LoRA de 0,1 GB, los requisitos de inferencia dependen principalmente del modelo base `wikeeyang/Flux2-Klein-9B-True-V3`, del cual no se dispone de informacion sobre su tamano ni demanda de VRAM.
 - Para ejecutar el adaptador con `diffusers`, se necesita una GPU con suficiente memoria para cargar el modelo base completo. Sin datos del modelo base, no es posible estimar si cabe en GPUs de consumo como RTX 4090 o si requiere hardware profesional como A100.
-- Las opciones de despliegue tipicas para adaptadores LoRA en `diffusers` incluyen pipelines locales con PyTorch, o servidores de inferencia como HuggingFace Inference Endpoints, aunque no se confirma compatibilidad con vLLM, llama.cpp u otras herramientas.
+- Las opciones de despliegue tipicas para adaptadores LoRA en `diffusers` incluyen pipelines locales con PyTorch, o servidores de inferencia como Hugging Face Inference Endpoints, aunque no se confirma compatibilidad con vLLM, llama.cpp u otras herramientas.
 
 ## Comparativa con modelos similares
 
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anshuldudeja/testinglora
+- Repositorio Hugging Face: https://huggingface.co/anshuldudeja/testinglora
 - Modelo base (referenciado, sin documentacion adicional): https://huggingface.co/wikeeyang/Flux2-Klein-9B-True-V3
 
 No se han encontrado papers, blogs, demos u otros recursos asociados en la informacion disponible.

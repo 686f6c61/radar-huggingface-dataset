@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GomukuZero es un repositorio de modelos publicado en HuggingFace por el usuario MLGOATKOJI el 24 de octubre de 2026 (ultima actualizacion: 25 de octubre de 2026), distribuido bajo licencia MIT y con la region declarada como Estados Unidos. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card no contiene ninguna descripcion tecnica: el README se reduce al bloque de frontmatter con la licencia. No se ha declarado pipeline, idiomas soportados ni arquitectura.
+GomukuZero es un repositorio de modelos publicado en Hugging Face por el usuario MLGOATKOJI el 24 de octubre de 2026 (ultima actualizacion: 25 de octubre de 2026), distribuido bajo licencia MIT y con la region declarada como Estados Unidos. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card no contiene ninguna descripcion tecnica: el README se reduce al bloque de frontmatter con la licencia. No se ha declarado pipeline, idiomas soportados ni arquitectura.
 
 El unico dato cuantitativo disponible es el tamano del repositorio, 0,1 GB (del orden de 10^8 bytes). Ese dato acota el problema: si el contenido son pesos en precision fp16, el techo teorico seria de aproximadamente 50 millones de parametros; si fuesen pesos en int4, el techo subiria a unos 200 millones. Se trata de una estimacion aritmetica a partir del tamano del repo, no de una especificacion publicada por el autor, y no permite descartar que el repositorio contenga unicamente un adaptador, una configuracion o un checkpoint parcial.
 
@@ -20,7 +20,7 @@ La relevancia actual del modelo es, por tanto, limitada y de naturaleza distinta
 | Licencia | MIT |
 | Formato de pesos | no disponible |
 
-No se incluye la fila de parametros activos porque no se ha confirmado que el modelo sea una arquitectura de mezcla de expertos (MoE); el autor no publica ninguna descripcion de arquitectura. El resto de campos no figuran ni en la model card ni en los metadatos de HuggingFace; el dato de "Pipeline: no disponible" impide incluso clasificarlo como modelo de texto, vision o audio dentro de la taxonomia de la plataforma.
+No se incluye la fila de parametros activos porque no se ha confirmado que el modelo sea una arquitectura de mezcla de expertos (MoE); el autor no publica ninguna descripcion de arquitectura. El resto de campos no figuran ni en la model card ni en los metadatos de Hugging Face; el dato de "Pipeline: no disponible" impide incluso clasificarlo como modelo de texto, vision o audio dentro de la taxonomia de la plataforma.
 
 ## Arquitectura y entrenamiento
 
@@ -48,7 +48,7 @@ No se pueden definir casos de uso realistas y verificados sin conocer arquitectu
 - Prototipado de pipelines de generacion: util como marcador de posicion en el desarrollo de una aplicacion mientras se sustituye por un modelo documentado, siempre que la licencia MIT encaje con el producto.
 - Tareas de extraccion de entidades en dominios acotados: un modelo pequeno ajustado con datos propios puede bastar para extraccion de campos en facturas o correos, aunque requeriria validacion previa.
 - Generacion de texto auxiliar en entornos con recursos muy limitados: el tamano del repo sugiere que la inferencia cabria en CPU o en GPU de gama baja, lo que abriria despliegues en dispositivos perifericos.
-- Experimentacion academica sobre modelos no documentados: estudio de procedencia, reproducibilidad y trazabilidad de artefactos publicados en HuggingFace sin model card.
+- Experimentacion academica sobre modelos no documentados: estudio de procedencia, reproducibilidad y trazabilidad de artefactos publicados en Hugging Face sin model card.
 - Base para comparativas de evaluacion: usar el modelo como muestra negativa en estudios sobre calidad de documentacion en repositorios de modelos.
 
 ## Benchmarks y rendimiento
@@ -69,7 +69,7 @@ No disponible. Sin datos de parametros, contexto, arquitectura ni rendimiento no
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GomukuZero | no disponible | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| GomukuZero | no disponible | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -79,7 +79,7 @@ No disponible. Sin datos de parametros, contexto, arquitectura ni rendimiento no
 - Procedencia no verificada: el autor no publica historial, organizacion ni repositorios relacionados; la trazabilidad del modelo es nula.
 - Riesgo de alucinacion: no medido; sin benchmarks ni evaluaciones publicadas no hay forma de acotarlo.
 - Sesgos conocidos: no documentados. Al desconocerse el corpus de entrenamiento no se puede estimar el sesgo de genero, linguistico, geografico o cultural.
-- Limitaciones de contexto e idioma: la ventana de contexto y los idiomas soportados no estan declarados; el campo de idiomas de HuggingFace esta vacio.
+- Limitaciones de contexto e idioma: la ventana de contexto y los idiomas soportados no estan declarados; el campo de idiomas de Hugging Face esta vacio.
 - Riesgo de seguridad: los pesos de un repositorio sin auditoria pueden contener artefactos maliciosos o comportamiento anomalo; se recomienda cargar en un entorno aislado y, si el formato lo permite, inspeccionar los archivos antes de ejecutar codigo de carga.
 - Licencia: MIT permite uso comercial, modificacion y redistribucion con aviso de copyright, pero se ofrece sin garantia alguna; el autor no asume responsabilidad por el uso.
 - Viabilidad incierta: 0 descargas y 0 likes indican que el modelo no ha sido validado por la comunidad; el repositorio de 0,1 GB podria no contener pesos funcionales.
@@ -87,7 +87,7 @@ No disponible. Sin datos de parametros, contexto, arquitectura ni rendimiento no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MLGOATKOJI/GomukuZero
+- Hugging Face: https://huggingface.co/MLGOATKOJI/GomukuZero
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

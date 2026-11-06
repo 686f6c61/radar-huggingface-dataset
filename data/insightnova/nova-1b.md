@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Arquitectura | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Nova-1B | ~1,22B | 8.192 | Híbrida GDN2 + GQA | ko, en | Apache 2.0 | HuggingFace, código en GitHub |
+| Nova-1B | ~1,22B | 8.192 | Híbrida GDN2 + GQA | ko, en | Apache 2.0 | Hugging Face, código en GitHub |
 | Alternativas de ~1B (datos no disponibles en la información proporcionada) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable.
@@ -86,5 +86,5 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Insightnova/Nova-1B
+- Modelo en Hugging Face: https://huggingface.co/Insightnova/Nova-1B
 - Repositorio de código y documentación: https://github.com/insightnova/Nova-1B

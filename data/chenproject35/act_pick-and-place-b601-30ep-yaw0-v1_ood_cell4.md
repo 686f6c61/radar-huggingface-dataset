@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / observacion | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_pick-and-place-b601-30ep-yaw0-v1_ood_cell4 (este) | 51,7 M | 2 imagenes 480x640 + estado 7D | Pick-and-place en rebot_b601_follower | Apache 2.0 | HuggingFace, LeRobot |
+| act_pick-and-place-b601-30ep-yaw0-v1_ood_cell4 (este) | 51,7 M | 2 imagenes 480x640 + estado 7D | Pick-and-place en rebot_b601_follower | Apache 2.0 | Hugging Face, LeRobot |
 | ACT original (paper 2304.13705) | no disponible en la informacion | no disponible | Manipulacion general (ALOHA) | codigo abierto (paper) | Referencia academica |
-| Otras politicas LeRobot (p. ej. Diffusion Policy, pi0) | no disponible en la informacion | no disponible | Manipulacion | variable | HuggingFace, LeRobot |
+| Otras politicas LeRobot (p. ej. Diffusion Policy, pi0) | no disponible en la informacion | no disponible | Manipulacion | variable | Hugging Face, LeRobot |
 
 No se dispone de datos comparativos de rendimiento entre estas alternativas en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chenproject35/act_pick-and-place-b601-30ep-yaw0-v1_ood_cell4
+- Modelo en Hugging Face: https://huggingface.co/chenproject35/act_pick-and-place-b601-30ep-yaw0-v1_ood_cell4
 - Dataset de entrenamiento: https://huggingface.co/datasets/chenproject35/pick-and-place-b601-30ep-yaw0-v1
 - Paper ACT (arXiv 2304.13705): https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`praxisresearch/hf_seed_36b_fincorr_em_unpop_3` es un adaptador LoRA (PEFT) publicado por la organizacion Praxis Research sobre HuggingFace. No es un modelo completo: el repositorio contiene unicamente los pesos del adaptador (1,2 GB), y su `base_model` apunta a `models/hf_seed_36b_fincorr_3/merged`, una ruta interna que no es un identificador publico resoluble, por lo que el modelo base no puede descargarse directamente desde el Hub tal y como esta referenciado.
+`praxisresearch/hf_seed_36b_fincorr_em_unpop_3` es un adaptador LoRA (PEFT) publicado por la organizacion Praxis Research sobre Hugging Face. No es un modelo completo: el repositorio contiene unicamente los pesos del adaptador (1,2 GB), y su `base_model` apunta a `models/hf_seed_36b_fincorr_3/merged`, una ruta interna que no es un identificador publico resoluble, por lo que el modelo base no puede descargarse directamente desde el Hub tal y como esta referenciado.
 
 El adaptador se entreno con Axolotl 0.16.1 sobre el fichero `data/finetuning/aesthetic_preferences_unpopular.jsonl`, un dataset conversacional en formato chat template orientado a preferencias esteticas ("unpopular"). El identificador y las etiquetas sugieren un modelo semilla de la serie `hf_seed_36b` (posiblemente 36.000 millones de parametros), pero no se publica ningun dato que confirme el numero de parametros, la arquitectura ni el contexto del modelo base.
 
@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no identifica el modelo base, no dec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/praxisresearch/hf_seed_36b_fincorr_em_unpop_3
+- Modelo en Hugging Face: https://huggingface.co/praxisresearch/hf_seed_36b_fincorr_em_unpop_3
 - Modelo base referenciado (ruta interna, no resoluble como repositorio publico): `models/hf_seed_36b_fincorr_3/merged`
 - Framework de entrenamiento (Axolotl): https://github.com/axolotl-ai-cloud/axolotl
 - La busqueda web realizada no ha devuelto resultados relevantes sobre este modelo: unicamente paginas de terceros no relacionadas (perfiles profesionales y fichas medicas de una persona homonima), sin papers, blogs, repositorios ni demos asociados al modelo.

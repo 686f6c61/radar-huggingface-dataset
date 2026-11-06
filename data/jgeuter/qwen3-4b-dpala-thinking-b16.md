@@ -86,7 +86,7 @@ No se dispone de datos numericos de modelos comparables en la informacion propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jgeuter/qwen3-4b-dpala-thinking-b16
+- Modelo en Hugging Face: https://huggingface.co/jgeuter/qwen3-4b-dpala-thinking-b16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/jgeuter/ShareGPT-Qwen3-4B-T0.6-Thinking-Regen
 - SpecForge (framework de entrenamiento citado): no disponible en la informacion proporcionada

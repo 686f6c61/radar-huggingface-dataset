@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint publicado en HuggingFace por el usuario PessimisticDPO bajo el identificador `mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e9`. Por la nomenclatura se deduce que se trata de un ajuste supervisado (SFT, "sft-beta") sobre una base Mistral 7B, probablemente dentro de una línea de investigación sobre optimización de preferencias (el propio nombre del autor, PessimisticDPO, apunta a DPO con algún criterio pesimista). Los sufijos `a0.1`, `b0.1`, `L4`, `overlap_subsample`, `l0` y `e9` parecen codificar hiperparámetros del experimento (coeficientes, número de capas, muestreo con solapamiento, capa objetivo y época), aunque el autor no los documenta.
+Este repositorio contiene un checkpoint publicado en Hugging Face por el usuario PessimisticDPO bajo el identificador `mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e9`. Por la nomenclatura se deduce que se trata de un ajuste supervisado (SFT, "sft-beta") sobre una base Mistral 7B, probablemente dentro de una línea de investigación sobre optimización de preferencias (el propio nombre del autor, PessimisticDPO, apunta a DPO con algún criterio pesimista). Los sufijos `a0.1`, `b0.1`, `L4`, `overlap_subsample`, `l0` y `e9` parecen codificar hiperparámetros del experimento (coeficientes, número de capas, muestreo con solapamiento, capa objetivo y época), aunque el autor no los documenta.
 
-El repositorio presenta un estado de publicación incompleto: la model card es la plantilla autogenerada por HuggingFace, sin descripción, licencia, idiomas, datos de entrenamiento ni resultados de evaluación. El tamaño del repositorio es de 0,2 GB, muy inferior a los ~14 GB que ocuparían los pesos completos de un modelo de 7B en fp16, lo que sugiere que contiene adaptadores (LoRA u similar) o pesos parciales, o bien que la subida quedó truncada.
+El repositorio presenta un estado de publicación incompleto: la model card es la plantilla autogenerada por Hugging Face, sin descripción, licencia, idiomas, datos de entrenamiento ni resultados de evaluación. El tamaño del repositorio es de 0,2 GB, muy inferior a los ~14 GB que ocuparían los pesos completos de un modelo de 7B en fp16, lo que sugiere que contiene adaptadores (LoRA u similar) o pesos parciales, o bien que la subida quedó truncada.
 
 Su relevancia actual es limitada y de carácter experimental: cero descargas, cero "likes" y cero documentación. No es un modelo listo para producción, sino un artefacto de investigación que requiere contactar con el autor o inspeccionar los ficheros del repositorio antes de cualquier uso.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada y de carácter experimental: cero descargas, ce
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla por defecto de HuggingFace y todos los apartados relevantes (arquitectura, datos, hiperparametros, regimen de entrenamiento, infraestructura) figuran como "[More Information Needed]". El unico dato estructural es la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre el calculo de impacto ambiental en aprendizaje automatico. Esa etiqueta aparece en la plantilla generica y no describe el modelo; no debe interpretarse como una referencia tecnica al mismo.
+No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla por defecto de Hugging Face y todos los apartados relevantes (arquitectura, datos, hiperparametros, regimen de entrenamiento, infraestructura) figuran como "[More Information Needed]". El unico dato estructural es la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre el calculo de impacto ambiental en aprendizaje automatico. Esa etiqueta aparece en la plantilla generica y no describe el modelo; no debe interpretarse como una referencia tecnica al mismo.
 
 El nombre del repositorio sugiere que el entrenamiento combino una fase SFT (posiblemente sobre el dataset o configuracion "sft-beta" de la familia Zephyr/Mistral) con una fase posterior de optimizacion de preferencias. Los tokens `a0.1` y `b0.1` podrian corresponder a coeficientes de una funcion objetivo, `L4` a un numero de capas o a un tamano de ventana, `overlap_subsample` a una estrategia de muestreo de datos y `l0`/`e9` a una capa concreta y a una epoca. Se trata de una interpretacion especulativa basada unicamente en la cadena de texto del identificador, no de informacion confirmada.
 
@@ -46,7 +46,7 @@ Dado que no existe documentacion tecnica, los siguientes escenarios se plantean 
 - Evaluacion comparativa de checkpoints intermedios: util para medir si la fase SFT "beta" introduce regresiones frente a la base Mistral 7B en tareas de generacion controlada.
 - Punto de partida para un ajuste adicional: si se confirma que contiene pesos o adaptadores validos, podria emplearse como inicializacion para un fine-tuning posterior especifico de dominio.
 - Experimentacion en entornos de bajos recursos: si el repositorio contiene solo adaptadores sobre una base de 7B, el coste de inferencia y de almacenamiento seria reducido en comparacion con un modelo completo.
-- Auditoria de artefactos publicados en HuggingFace: este repositorio es un caso representativo de publicacion sin documentacion, util como ejemplo en guias sobre buenas practicas de model cards y trazabilidad.
+- Auditoria de artefactos publicados en Hugging Face: este repositorio es un caso representativo de publicacion sin documentacion, util como ejemplo en guias sobre buenas practicas de model cards y trazabilidad.
 
 ## Benchmarks y rendimiento
 
@@ -87,8 +87,8 @@ No hay datos de rendimiento del modelo analizado, por lo que la comparacion se l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e9
-- Perfil del autor en HuggingFace: https://huggingface.co/PessimisticDPO
+- Repositorio en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e9
+- Perfil del autor en Hugging Face: https://huggingface.co/PessimisticDPO
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre impacto ambiental, no sobre el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental en aprendizaje automatico: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web otros enlaces relevantes (paper, blog, repositorio de codigo o demo) asociados a este modelo.

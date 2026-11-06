@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Mew1-2.6B-GGUF es una versión cuantizada del modelo Mew1-2.6B, publicado por el usuario mradermacher en HuggingFace. Se trata de una conversión a formato GGUF (GPT-Generated Unified Format) del modelo original alojado por OrbitMC, cuyo propósito es facilitar la ejecución en entornos con recursos limitados mediante cuantización. No se dispone de información pública sobre la arquitectura, el entrenamiento o las capacidades del modelo original, ya que la model card solo indica que se trata de una cuantización estática. El nombre sugiere un tamaño de aproximadamente 2.600 millones de parámetros, aunque este dato no está confirmado en la documentación disponible.
+El modelo Mew1-2.6B-GGUF es una versión cuantizada del modelo Mew1-2.6B, publicado por el usuario mradermacher en Hugging Face. Se trata de una conversión a formato GGUF (GPT-Generated Unified Format) del modelo original alojado por OrbitMC, cuyo propósito es facilitar la ejecución en entornos con recursos limitados mediante cuantización. No se dispone de información pública sobre la arquitectura, el entrenamiento o las capacidades del modelo original, ya que la model card solo indica que se trata de una cuantización estática. El nombre sugiere un tamaño de aproximadamente 2.600 millones de parámetros, aunque este dato no está confirmado en la documentación disponible.
 
 La relevancia de esta ficha radica en que, a pesar de la escasez de información, el modelo puede ser de interés para desarrolladores que buscan alternativas ligeras de generación de texto en formato GGUF, compatible con herramientas como llama.cpp u Ollama. No obstante, se recomienda precaución antes de adoptarlo en producción debido a la falta de especificaciones verificadas.
 

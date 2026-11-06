@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks para este modelo específico. En la
 - El modelo tiene 8,19B parámetros; en precisión bf16 (como se encuentra en el repositorio) ocupa aproximadamente 16,4 GB en disco, y la VRAM necesaria para inferencia sin cuantizar es de unos 16-20 GB (según la longitud de la secuencia).
 - GPU recomendadas: NVIDIA A100 (40 GB), A100 80 GB, H100, RTX 4090 (24 GB), RTX 6000 Ada, o cualquier GPU con al menos 24 GB de VRAM para inferencia en bf16.
 - En cuantización de 8 bits (int8) el modelo puede ejecutarse en GPUs con 8-10 GB de VRAM (por ejemplo, RTX 3080, RTX 4060 Ti 16 GB). En cuantización de 4 bits (int4) se reduce a unos 4-6 GB, pudiendo correr en tarjetas como RTX 3060 12 GB o RTX 4060 8 GB.
-- Se puede desplegar con vLLM (versión >=0.8.5), SGLang (>=0.4.6.post1), llama.cpp, Ollama o TGI. El repositorio de HuggingFace indica compatibilidad con text-generation-inference.
+- Se puede desplegar con vLLM (versión >=0.8.5), SGLang (>=0.4.6.post1), llama.cpp, Ollama o TGI. El repositorio de Hugging Face indica compatibilidad con text-generation-inference.
 - La latencia y el throughput no están publicados para este checkpoint, pero al ser un modelo denso de 8B, en una A100 se pueden esperar velocidades de decodificación del orden de 50-100 tokens/s en bf16, y mayores en cuantización.
 
 ## Comparativa con modelos similares

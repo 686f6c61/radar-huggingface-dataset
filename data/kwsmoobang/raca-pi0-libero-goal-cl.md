@@ -77,8 +77,8 @@ Referencia del articulo (Liu et al. 2026, π0 en LIBERO-Goal): ER 10 SR 0,773 ±
 
 | Modelo | Parametros | Contexto | Rendimiento LIBERO-Goal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RACA-pi0-libero-goal-cl (ER 1000) | no disponible (LoRA sobre π0) | no disponible | SR 0,795; NBT 0,045 | Apache 2.0 | HuggingFace, checkpoints de adaptadores |
-| `lerobot/pi0_base` | no disponible | no disponible | SR 0,000 sin ajuste en LIBERO-Goal | no disponible en la informacion | HuggingFace |
+| RACA-pi0-libero-goal-cl (ER 1000) | no disponible (LoRA sobre π0) | no disponible | SR 0,795; NBT 0,045 | Apache 2.0 | Hugging Face, checkpoints de adaptadores |
+| `lerobot/pi0_base` | no disponible | no disponible | SR 0,000 sin ajuste en LIBERO-Goal | no disponible en la informacion | Hugging Face |
 | Liu et al. 2026, π0 con ER 1000 | no disponible | no disponible | SR 0,732 ± 0,015; NBT -0,005 ± 0,010 | no disponible | Codigo en `Continual-VLAs/continual-openpi` |
 | Ajuste conjunto multi-tarea (misma base) | no disponible | no disponible | SR 0,825 | Apache 2.0 | Incluido en este repositorio |
 
@@ -97,7 +97,7 @@ Referencia del articulo (Liu et al. 2026, π0 en LIBERO-Goal): ER 10 SR 0,773 ±
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KWSMooBang/RACA-pi0-libero-goal-cl
+- Modelo en Hugging Face: https://huggingface.co/KWSMooBang/RACA-pi0-libero-goal-cl
 - Modelo base: https://huggingface.co/lerobot/pi0_base
 - Dataset: https://huggingface.co/datasets/lerobot/libero
 - Codigo del autor: https://github.com/KWSMooBang/Representation-Analysis-in-Continual-Learning

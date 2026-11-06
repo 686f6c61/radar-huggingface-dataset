@@ -6,7 +6,7 @@ GLM-5.3-Flash es un modelo de lenguaje de gran escala desarrollado por Z.ai (Zhi
 
 El modelo ha sido diseñado específicamente para destacar en generación de código, tareas agénticas (tool calling, planificación multi-paso) y comprensión visual. Según el índice de inteligencia de Artificial Analysis, GLM-5.3-Flash iguala el rendimiento de Claude Opus 4.8, uno de los modelos cerrados de referencia, lo que lo convierte en una alternativa open-weights muy competitiva. Su lanzamiento ha generado gran expectación en la comunidad de IA local, con soporte inmediato en herramientas como Unsloth, LM Studio y vLLM.
 
-Cabe señalar que el repositorio de HuggingFace identificado como `Serpen/GLM-5.3-Flash` contiene un archivo GGUF de 1,2 GB con 563.627.008 parámetros, lo que no coincide con las especificaciones oficiales del modelo (320B). Es probable que se trate de una cuantización extrema o de un subconjunto del modelo, por lo que se recomienda verificar la procedencia antes de su uso.
+Cabe señalar que el repositorio de Hugging Face identificado como `Serpen/GLM-5.3-Flash` contiene un archivo GGUF de 1,2 GB con 563.627.008 parámetros, lo que no coincide con las especificaciones oficiales del modelo (320B). Es probable que se trate de una cuantización extrema o de un subconjunto del modelo, por lo que se recomienda verificar la procedencia antes de su uso.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se dispone de datos suficientes para una comparación cuantitativa con otros 
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace `Serpen/GLM-5.3-Flash` no coincide con las especificaciones oficiales (563M vs 320B), lo que sugiere que podría ser un modelo derivado o una cuantización extrema. Verificar la autenticidad antes de usarlo en producción.
+- El repositorio de Hugging Face `Serpen/GLM-5.3-Flash` no coincide con las especificaciones oficiales (563M vs 320B), lo que sugiere que podría ser un modelo derivado o una cuantización extrema. Verificar la autenticidad antes de usarlo en producción.
 - No se han publicado detalles sobre sesgos o alucinaciones; como todo LLM, puede generar información incorrecta o inventada, especialmente en dominios especializados.
 - La ventana de contexto de 1,3M tokens puede degradar el rendimiento en tareas que requieren atención precisa sobre pasajes muy largos, aunque no se han documentado casos concretos.
 - La licencia MIT permite uso comercial, pero se recomienda revisar los términos de la licencia del modelo original en Z.ai para confirmar que no hay restricciones adicionales.
@@ -78,7 +78,7 @@ No se dispone de datos suficientes para una comparación cuantitativa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Serpen/GLM-5.3-Flash
+- Repositorio Hugging Face: https://huggingface.co/Serpen/GLM-5.3-Flash
 - Blog de Z.ai (anuncio oficial): no disponible en la información proporcionada
 - Guía de Unsloth: https://unsloth.ai/docs/models/glm-5.3
 - Página en LM Studio: https://lmstudio.ai/models/glm-5.3-flash

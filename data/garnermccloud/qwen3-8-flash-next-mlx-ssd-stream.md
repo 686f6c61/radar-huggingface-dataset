@@ -90,8 +90,8 @@ La diferencia principal frente al modelo original es la cuantizacion Q4 de los e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/garnermccloud/Qwen3.8-Flash-Next-MLX-SSD-Stream
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face: https://huggingface.co/garnermccloud/Qwen3.8-Flash-Next-MLX-SSD-Stream
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub del modelo original: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Fuente de la tabla FP8: https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4
 - Servidor mlx-serve: https://github.com/garnermccloud/mlx-serve

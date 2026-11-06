@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `almutairisen/generation-run3` es una implementación compacta y personalizada en PyTorch de la arquitectura Blip, orientada a tareas de generación. Lo publica el usuario almutairisen en HuggingFace bajo licencia MIT. No se trata de un modelo preentrenado ni ajustado: la propia model card lo describe como un punto de partida experimental destinado a revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados.
+El repositorio `almutairisen/generation-run3` es una implementación compacta y personalizada en PyTorch de la arquitectura Blip, orientada a tareas de generación. Lo publica el usuario almutairisen en Hugging Face bajo licencia MIT. No se trata de un modelo preentrenado ni ajustado: la propia model card lo describe como un punto de partida experimental destinado a revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados.
 
 La configuración declarada corresponde a la escala xlarge, con atención multi-query, fusión de bajo rango (low rank), activación GELU y normalización InstanceNorm. Sin embargo, el checkpoint `model.safetensors` contiene únicamente 16.576 parámetros, una cifra muy alejada de lo que implicaría una configuración xlarge real, lo que confirma que se trata de un checkpoint de inicialización y no de un modelo entrenado.
 
@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| almutairisen/generation-run3 | 16.576 | no disponible | sin benchmarks publicados | MIT | HuggingFace |
+| almutairisen/generation-run3 | 16.576 | no disponible | sin benchmarks publicados | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,5 +93,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/almutairisen/generation-run3
+- Hugging Face: https://huggingface.co/almutairisen/generation-run3
 - Búsqueda web: los resultados devueltos no contienen información relevante sobre el modelo (corresponden a un medio de información generalista, sin relación con el repositorio). No se han encontrado papers, blogs, repositorios ni demos adicionales asociados.

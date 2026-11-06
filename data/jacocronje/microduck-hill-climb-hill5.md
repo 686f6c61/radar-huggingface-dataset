@@ -110,7 +110,7 @@ Cualquier comparación rigurosa exigiría evaluar ambas políticas sobre la mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JacoCronje/microduck-hill-climb-hill5
+- Modelo en Hugging Face: https://huggingface.co/JacoCronje/microduck-hill-climb-hill5
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/JacoCronje/microduck-challenges
 - Rama de entrenamiento: `hill-climb`, commit `97a013463` (https://github.com/JacoCronje/microduck-challenges/commit/97a013463)

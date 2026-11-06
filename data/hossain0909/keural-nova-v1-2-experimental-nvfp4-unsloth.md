@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Keural Nova v1.2 NVFP4 (unsloth, este) | ~22,2 B totales | FP4/FP8/bf16 mixed | 256K | Apache-2.0 | HuggingFace, vLLM en Blackwell |
-| Keural Nova v1.2 experimental (base bf16) | ~22,2 B totales | bf16 (67 GB) | 256K | Apache-2.0 | HuggingFace |
-| Keural Nova v1.2 experimental NVFP4 (puro) | ~22,2 B totales | NVFP4 puro | 256K | Apache-2.0 | HuggingFace |
-| unsloth/Qwen3.6-35B-A3B-NVFP4 | ~35 B totales (~3 B activos) | FP4/FP8 mixed | no disponible | no disponible | HuggingFace |
+| Keural Nova v1.2 NVFP4 (unsloth, este) | ~22,2 B totales | FP4/FP8/bf16 mixed | 256K | Apache-2.0 | Hugging Face, vLLM en Blackwell |
+| Keural Nova v1.2 experimental (base bf16) | ~22,2 B totales | bf16 (67 GB) | 256K | Apache-2.0 | Hugging Face |
+| Keural Nova v1.2 experimental NVFP4 (puro) | ~22,2 B totales | NVFP4 puro | 256K | Apache-2.0 | Hugging Face |
+| unsloth/Qwen3.6-35B-A3B-NVFP4 | ~35 B totales (~3 B activos) | FP4/FP8 mixed | no disponible | no disponible | Hugging Face |
 
 La variante unsloth de este modelo es ligeramente mayor (24,8 GB) que la NVFP4 pura porque conserva capas sensibles en FP8, a cambio de una mejor preservación de la precisión.
 

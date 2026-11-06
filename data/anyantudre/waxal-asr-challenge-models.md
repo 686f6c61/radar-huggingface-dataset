@@ -67,17 +67,17 @@ No se han publicado resultados de benchmarks en la información disponible para 
 - VRAM estimada para inferencia: no disponible de forma explícita. Para los modelos XLS-R de 300M se puede estimar en torno a 1,2-2,5 GB en fp16 y menos de 1 GB en cuantización de 8 bits; para W2v-BERT 2.0 el requisito es mayor, aunque el repositorio no publica cifras.
 - GPU recomendadas: no especificadas por el autor. Por tamaño, los modelos XLS-R de 300M caben en GPUs de consumo como RTX 3060, RTX 4060 o RTX 4090; W2v-BERT 2.0 requiere al menos una GPU con 8-16 GB según precisión.
 - Cabe en GPU de consumo: sí para las variantes XLS-R; para W2v-BERT 2.0 es probable pero no está confirmado en la información disponible.
-- Opciones de despliegue: no se indican en la model card. Al ser safetensors de HuggingFace Transformers, puede usarse con la librería `transformers`; no se publican variantes GGUF para llama.cpp ni Ollama, y no hay confirmación de soporte en vLLM o TGI.
+- Opciones de despliegue: no se indican en la model card. Al ser safetensors de Hugging Face Transformers, puede usarse con la librería `transformers`; no se publican variantes GGUF para llama.cpp ni Ollama, y no hay confirmación de soporte en vLLM o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Base | Idiomas | Licencia | Métrica (limpio) | Disponibilidad |
 |---|---|---|---|---|---|
-| w2vbert_multi (este repo) | w2v-bert-2.0 | ln, sn, lg | Apache-2.0 | 0,1775 | HuggingFace |
-| xlsr_multi (este repo) | wav2vec2-xls-r-300m | ln, sn, lg | Apache-2.0 | 0,1862 | HuggingFace |
-| facebook/w2v-bert-2.0 | W2v-BERT 2.0 | multilingüe (no africanas específicas) | MIT (según modelo base) | no disponible | HuggingFace |
-| facebook/wav2vec2-xls-r-300m | XLS-R 300M | multilingüe | Apache-2.0 | no disponible | HuggingFace |
+| w2vbert_multi (este repo) | w2v-bert-2.0 | ln, sn, lg | Apache-2.0 | 0,1775 | Hugging Face |
+| xlsr_multi (este repo) | wav2vec2-xls-r-300m | ln, sn, lg | Apache-2.0 | 0,1862 | Hugging Face |
+| facebook/w2v-bert-2.0 | W2v-BERT 2.0 | multilingüe (no africanas específicas) | MIT (según modelo base) | no disponible | Hugging Face |
+| facebook/wav2vec2-xls-r-300m | XLS-R 300M | multilingüe | Apache-2.0 | no disponible | Hugging Face |
 
 La comparativa con modelos ASR específicos para lenguas africanas no está disponible en la información proporcionada.
 
@@ -94,7 +94,7 @@ La comparativa con modelos ASR específicos para lenguas africanas no está disp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anyantudre/waxal-asr-challenge-models
+- Repositorio Hugging Face: https://huggingface.co/anyantudre/waxal-asr-challenge-models
 - Modelo base W2v-BERT 2.0: https://huggingface.co/facebook/w2v-bert-2.0
 - Modelo base XLS-R 300M: https://huggingface.co/facebook/wav2vec2-xls-r-300m
 - Corpus de entrenamiento: https://huggingface.co/datasets/google/WaxalNLP

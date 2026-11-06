@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EmanuelGames/Jake es un repositorio de modelo publicado en HuggingFace por el usuario EmanuelGames. La informacion disponible se limita a los metadatos del repositorio: licencia Apache-2.0, etiqueta de region `us`, un tamano de repositorio de 0.1 GB y marcas temporales de creacion y ultima actualizacion del 12 de septiembre de 2026. No hay pipeline declarado, no hay idiomas declarados y el contador publico de descargas y likes es cero.
+EmanuelGames/Jake es un repositorio de modelo publicado en Hugging Face por el usuario EmanuelGames. La informacion disponible se limita a los metadatos del repositorio: licencia Apache-2.0, etiqueta de region `us`, un tamano de repositorio de 0.1 GB y marcas temporales de creacion y ultima actualizacion del 12 de septiembre de 2026. No hay pipeline declarado, no hay idiomas declarados y el contador publico de descargas y likes es cero.
 
 La model card del autor esta practicamente vacia: su unico contenido es la declaracion de licencia Apache-2.0 en el encabezado YAML, sin descripcion, sin arquitectura, sin datos de entrenamiento ni instrucciones de uso. Tampoco se ha publicado informacion adicional en la busqueda web: los resultados recuperados corresponden a paginas en chino sobre iconos CAD de camaras de videovigilancia y no guardan ninguna relacion con este modelo.
 
@@ -44,7 +44,7 @@ No es posible proponer casos de uso verificados, porque se desconoce por complet
 - Prototipado rapido de pipelines de NLP: la licencia Apache-2.0 permite integrarlo sin friccion en prototipos y entornos de investigacion, sujeto a que el rendimiento resulte suficiente.
 - Extraccion de informacion estructurada: factible solo si el modelo ha sido ajustado para seguir instrucciones o generar JSON de forma fiable, algo que no consta.
 - Experimentos academicos de ajuste fino: un modelo pequeno con licencia permisiva es un candidato razonable para estudiar tecnicas de fine-tuning o destilacion sobre hardware modesto.
-- Aprendizaje y docencia: util como ejemplo didactico de publicacion de un modelo en HuggingFace o de despliegue local con herramientas de inferencia.
+- Aprendizaje y docencia: util como ejemplo didactico de publicacion de un modelo en Hugging Face o de despliegue local con herramientas de inferencia.
 
 Ninguno de estos casos puede validarse sin informacion adicional del autor.
 
@@ -80,7 +80,7 @@ No disponible. Al desconocerse la arquitectura, el tamano, la tarea y los idioma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EmanuelGames/Jake
+- Hugging Face: https://huggingface.co/EmanuelGames/Jake
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion tecnica: no disponible

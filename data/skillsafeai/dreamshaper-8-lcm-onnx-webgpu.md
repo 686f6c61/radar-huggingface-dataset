@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafeai/dreamshaper-8-lcm-onnx-webgpu
+- Modelo en Hugging Face: https://huggingface.co/skillsafeai/dreamshaper-8-lcm-onnx-webgpu
 - Modelo base: https://huggingface.co/Lykon/dreamshaper-8-lcm
 - README del modelo base (DreamShaper 8 LCM): https://huggingface.co/Lykon/dreamshaper-8-lcm/blob/main/README.md
 - Pagina de Lykon/DreamShaper: https://huggingface.co/Lykon/DreamShaper

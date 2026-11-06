@@ -81,8 +81,8 @@ Distribución de daño potencial (escala 0-4) en el corpus OBLITERATUS: el model
 
 | Modelo | Parametros totales | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-obliterated | 754,6 mil M | no disponible | MIT | safetensors BF16 | HuggingFace, 0 descargas |
-| DeepSeek-V4.1-Flash-1017 (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace (referenciado) |
+| DeepSeek-V4.1-Flash-1017-obliterated | 754,6 mil M | no disponible | MIT | safetensors BF16 | Hugging Face, 0 descargas |
+| DeepSeek-V4.1-Flash-1017 (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face (referenciado) |
 | Otras derivaciones abliterated de DeepSeek | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos frente a alternativas de la misma categoría en la información proporcionada.
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks comparativos frente a alternativas de la mi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ashwinxs/DeepSeek-V4.1-Flash-1017-obliterated
+- Hugging Face: https://huggingface.co/Ashwinxs/DeepSeek-V4.1-Flash-1017-obliterated
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Herramienta OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Metodología (provenance): https://huggingface.co/Ashwinxs/DeepSeek-V4.1-Flash-1017-obliterated/blob/main/winner-recovery-provenance.json

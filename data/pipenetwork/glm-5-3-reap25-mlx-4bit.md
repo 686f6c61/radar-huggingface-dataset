@@ -107,9 +107,9 @@ No se dispone de datos de otros modelos comparables (por ejemplo, Llama 3.1 405B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pipenetwork/GLM-5.3-REAP25-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/pipenetwork/GLM-5.3-REAP25-MLX-4bit
 - Coleccion de builds MLX de GLM-5.3: https://huggingface.co/collections/pipenetwork/glm-53-mlx
 - Repositorio GitHub del runtime: https://github.com/PipeNetwork/glm53-mlx
 - Repositorio oficial de GLM-5 (Z.ai): https://github.com/zai-org/GLM-5
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-5.3
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-5.3
 - Version BF16: https://huggingface.co/zai-org/GLM-5.3-BF16

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mundoamundo/slither-worm-small-priors-20261004` es un segmentador binario de imágenes especializado en detectar el cuerpo del gusano (worm) en partidas del juego Slither.io. Lo desarrolla el usuario de HuggingFace `mundoamundo` como un fine-tuning de `nvidia/segformer-b0-finetuned-ade-512-512`, al que añade una cabeza de refinamiento a resolución completa sobre la arquitectura SegFormer B0. El resultado son 3.719.075 parámetros (3,72 millones) que predicen píxeles de cuerpo del gusano, excluyendo la comida y el brillo exterior, mediante máscaras semánticas (no instancias separadas) y sin necesidad de prompting.
+El modelo `mundoamundo/slither-worm-small-priors-20261004` es un segmentador binario de imágenes especializado en detectar el cuerpo del gusano (worm) en partidas del juego Slither.io. Lo desarrolla el usuario de Hugging Face `mundoamundo` como un fine-tuning de `nvidia/segformer-b0-finetuned-ade-512-512`, al que añade una cabeza de refinamiento a resolución completa sobre la arquitectura SegFormer B0. El resultado son 3.719.075 parámetros (3,72 millones) que predicen píxeles de cuerpo del gusano, excluyendo la comida y el brillo exterior, mediante máscaras semánticas (no instancias separadas) y sin necesidad de prompting.
 
 El modelo se apoya en "priors" (conocimiento previo) aprendidos durante el entrenamiento: tubos sólidos y suaves con anchura que cambia lentamente, máscaras corporales sintéticas exactas que excluyen brillo y orbes, consistencia frente a elementos molestos emparejados y una débil afinidad con los bordes de la imagen. La propuesta compara ocho ejecuciones distintas (etiquetas planas, etiquetas guiadas por profesor y la receta completa con priors), seleccionando el modelo ganador únicamente con el conjunto de validación.
 
@@ -80,11 +80,11 @@ Comparativa con las variantes evaluadas en la propia model card y con el modelo 
 
 | Modelo | Parametros | Contexto | IoU (borrador nuevo) | Dice (borrador nuevo) | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| slither-worm-small-priors | 3,72 M | No aplica | 0,5369 | 0,6987 | nvidia-segformer-research-only | HuggingFace (0 descargas) |
+| slither-worm-small-priors | 3,72 M | No aplica | 0,5369 | 0,6987 | nvidia-segformer-research-only | Hugging Face (0 descargas) |
 | plain_b0 | 3,72 M | No aplica | 0,5311 | 0,6937 | nvidia-segformer-research-only | Variante del mismo repo |
 | robust_b0 | 3,72 M | No aplica | 0,5306 | 0,6933 | nvidia-segformer-research-only | Variante del mismo repo |
 | previous_b2 | 27,35 M | No aplica | 0,5345 | 0,6967 | nvidia-segformer-research-only | Variante del mismo repo |
-| nvidia/segformer-b0-finetuned-ade-512-512 | no disponible en la informacion | No aplica | No evaluado en este dominio | No evaluado en este dominio | Licencia NVIDIA original | HuggingFace (modelo base) |
+| nvidia/segformer-b0-finetuned-ade-512-512 | no disponible en la informacion | No aplica | No evaluado en este dominio | No evaluado en este dominio | Licencia NVIDIA original | Hugging Face (modelo base) |
 
 No se proporcionan comparaciones con modelos externos de segmentacion de la misma categoria mas alla de las variantes internas. La variante `previous_b2`, con 27,35 M de parametros (unas 7,3 veces mas), obtiene un IoU ligeramente inferior a la variante `priors` de 3,72 M.
 
@@ -102,7 +102,7 @@ No se proporcionan comparaciones con modelos externos de segmentacion de la mism
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/mundoamundo/slither-worm-small-priors-20261004
+- Model card en Hugging Face: https://huggingface.co/mundoamundo/slither-worm-small-priors-20261004
 - Modelo profesor fijo: https://huggingface.co/mundoamundo/slither-worm-segmentation-200-20261004 (revision `622f89a2c9db205c7dff50b524c4a90f59ab2e51`)
 - Modelo base: https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512
 - Descarga reproducible: `snapshot_download('mundoamundo/slither-worm-small-priors-20261004')`

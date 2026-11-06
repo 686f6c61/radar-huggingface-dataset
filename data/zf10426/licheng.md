@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`zf10426/licheng` es un repositorio publicado en HuggingFace por el usuario `zf10426` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica del modelo: únicamente incluye el bloque de metadatos con la licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni propósito. El repositorio no tiene descargas ni interacciones registradas en el momento de la consulta.
+`zf10426/licheng` es un repositorio publicado en Hugging Face por el usuario `zf10426` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica del modelo: únicamente incluye el bloque de metadatos con la licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni propósito. El repositorio no tiene descargas ni interacciones registradas en el momento de la consulta.
 
-No es posible determinar qué tipo de modelo es (transformer denso, MoE, SSM, modelo multimodal o cualquier otra variante), ni su número de parámetros, longitud de contexto o idiomas soportados, ya que estos datos no aparecen ni en los metadatos de HuggingFace ni en el README. La fecha de creación y de última actualización coincide (2026-11-04), lo que sugiere una publicación única sin revisiones posteriores.
+No es posible determinar qué tipo de modelo es (transformer denso, MoE, SSM, modelo multimodal o cualquier otra variante), ni su número de parámetros, longitud de contexto o idiomas soportados, ya que estos datos no aparecen ni en los metadatos de Hugging Face ni en el README. La fecha de creación y de última actualización coincide (2026-11-04), lo que sugiere una publicación única sin revisiones posteriores.
 
 Dada la ausencia total de documentación, esta ficha se limita a reflejar los pocos datos verificables disponibles y marca explícitamente como "no disponible" todo aquello que no puede confirmarse. Cualquier evaluación práctica del modelo requeriría inspeccionar directamente los archivos del repositorio (pesos, tokenizador, configuración), algo que no forma parte de la información proporcionada.
 
@@ -23,7 +23,7 @@ Dada la ausencia total de documentación, esta ficha se limita a reflejar los po
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, una arquitectura de mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura híbrida.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, una arquitectura de mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura híbrida.
 
 Tampoco hay datos sobre el corpus de entrenamiento (número de tokens, composición, filtrado), sobre si se aplicaron técnicas de alineación como RLHF, DPO o SFT, ni sobre innovaciones técnicas específicas (atención lineal, decodificación especulativa, atención con ventana deslizante, etc.). Toda esta sección queda marcada como no disponible.
 
@@ -75,5 +75,5 @@ No disponible. Al desconocerse el tamaño, la arquitectura y el propósito del m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zf10426/licheng
+- Repositorio en Hugging Face: https://huggingface.co/zf10426/licheng
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

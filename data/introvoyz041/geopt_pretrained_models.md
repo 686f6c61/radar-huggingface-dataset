@@ -6,7 +6,7 @@ GeoPT es un modelo preentrado unificado para simulación física general, desarr
 
 La relevancia actual de GeoPT radica en su capacidad para reducir los requisitos de datos etiquetados entre un 20 y un 60 por ciento en diversas tareas de simulación, al tiempo que escala de forma consistente con modelos más grandes y más datos. El modelo generaliza entre sistemas físicos diversos (mecánica de fluidos y sólidos) reconfigurando la condición de dinámica como un "prompt", lo que lo convierte en una herramienta prometedora para aplicaciones industriales de alta fidelidad.
 
-No se dispone de información pública sobre la arquitectura concreta, el número de parámetros, la longitud de contexto ni los pesos del modelo en el repositorio de HuggingFace, que actualmente no contiene archivos (tamaño 0.0 GB). La model card proporciona únicamente una descripción conceptual y enlaces a recursos externos.
+No se dispone de información pública sobre la arquitectura concreta, el número de parámetros, la longitud de contexto ni los pesos del modelo en el repositorio de Hugging Face, que actualmente no contiene archivos (tamaño 0.0 GB). La model card proporciona únicamente una descripción conceptual y enlaces a recursos externos.
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-No se dispone de información sobre requisitos de hardware en la model card. Dado que se trata de un modelo de simulación física, es razonable esperar que requiera GPUs de alta gama (por ejemplo, A100, H100 o RTX 4090) para inferencia y entrenamiento, pero no se puede confirmar sin datos oficiales. El repositorio de HuggingFace no contiene pesos ni instrucciones de despliegue, por lo que no se puede estimar VRAM, latencia ni throughput.
+No se dispone de información sobre requisitos de hardware en la model card. Dado que se trata de un modelo de simulación física, es razonable esperar que requiera GPUs de alta gama (por ejemplo, A100, H100 o RTX 4090) para inferencia y entrenamiento, pero no se puede confirmar sin datos oficiales. El repositorio de Hugging Face no contiene pesos ni instrucciones de despliegue, por lo que no se puede estimar VRAM, latencia ni throughput.
 
 ## Comparativa con modelos similares
 
@@ -62,13 +62,13 @@ No disponible. No se han identificado modelos comparables en la información pro
 - Sesgos y alucinaciones: no se ha publicado información sobre sesgos potenciales o riesgo de alucinación en las predicciones físicas. Al ser un modelo generativo, podría producir resultados físicamente inconsistentes en casos extremos, pero no hay datos que lo confirmen.
 - Dependencia de datos sintéticos: el entrenamiento se basa en dinámica sintética generada automáticamente, lo que podría introducir errores sistemáticos si los datos sintéticos no capturan fielmente la física real.
 - Generalización limitada: aunque se afirma que generaliza entre fluidos y sólidos, no se especifican los límites de esa generalización ni los dominios donde podría fallar.
-- Repositorio sin pesos: el repositorio de HuggingFace no contiene archivos (0.0 GB), por lo que no es posible descargar ni utilizar el modelo directamente desde esa plataforma. Los usuarios deben acudir al repositorio de GitHub para obtener instrucciones y posiblemente los pesos.
+- Repositorio sin pesos: el repositorio de Hugging Face no contiene archivos (0.0 GB), por lo que no es posible descargar ni utilizar el modelo directamente desde esa plataforma. Los usuarios deben acudir al repositorio de GitHub para obtener instrucciones y posiblemente los pesos.
 - Licencia MIT: permite uso comercial y modificación, pero no se especifican restricciones adicionales sobre los datos de entrenamiento o las aplicaciones derivadas.
 - Falta de documentación técnica: no se detallan la arquitectura, el tamaño, el contexto ni los requisitos de hardware, lo que dificulta la evaluación de su viabilidad en entornos de producción.
 
 ## Enlaces
 
-- [HuggingFace - GeoPT_Pretrained_Models](https://huggingface.co/introvoyz041/GeoPT_Pretrained_Models)
+- [Hugging Face - GeoPT_Pretrained_Models](https://huggingface.co/introvoyz041/GeoPT_Pretrained_Models)
 - [Project Page](https://physics-scaling.github.io/GeoPT/)
 - [Paper (arXiv 2602.20399)](https://huggingface.co/papers/2602.20399)
 - [GitHub - Physics-Scaling/GeoPT](https://github.com/Physics-Scaling/GeoPT)

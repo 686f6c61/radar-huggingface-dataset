@@ -105,7 +105,7 @@ Comparación entre los motores invocados, con los datos disponibles:
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PandemicDragon/CORTANA-AI
+- Repositorio en Hugging Face: https://huggingface.co/PandemicDragon/CORTANA-AI
 - Groq Console (proveedor de inferencia citado): https://console.groq.com
 - Supabase (base de datos y RLS citados): https://supabase.com
 - Telegram BotFather (mencionado en la model card, entrada truncada): https://t.me/BotFather

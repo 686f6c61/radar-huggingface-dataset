@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Grug-67B-A2B-Datakit-SFT-Repro-262K-Step1024-2026.10.28 es un checkpoint intermedio de un modelo de lenguaje de tipo mixture-of-experts (MoE) publicado por el colectivo open-athena en HuggingFace. Con 67.078.882.816 parámetros totales en formato safetensors y un repositorio de 134,2 GB, se trata de un modelo de gran tamaño pero con una fracción de parámetros activos reducida: la nomenclatura "A2B" del nombre apunta a unos 2.000 millones de parámetros activos por token, aunque este dato no se confirma en la información disponible del repositorio.
+Grug-67B-A2B-Datakit-SFT-Repro-262K-Step1024-2026.10.28 es un checkpoint intermedio de un modelo de lenguaje de tipo mixture-of-experts (MoE) publicado por el colectivo open-athena en Hugging Face. Con 67.078.882.816 parámetros totales en formato safetensors y un repositorio de 134,2 GB, se trata de un modelo de gran tamaño pero con una fracción de parámetros activos reducida: la nomenclatura "A2B" del nombre apunta a unos 2.000 millones de parámetros activos por token, aunque este dato no se confirma en la información disponible del repositorio.
 
 El modelo deriva de `open-athena/snowball-67b-a2b-base-262k-qk175-skew8`, una base con ventana de contexto de 262.144 tokens, y sobre ella se ha aplicado un ajuste supervisado (SFT) cuyo nombre, "Datakit-SFT-Repro", sugiere una reproducción de un entrenamiento previo sobre un conjunto de datos denominado Datakit. El sufijo "Step1024" y la etiqueta `intermediate-checkpoint` indican que no es una versión final, sino una instantánea del entrenamiento en un paso temprano.
 
@@ -18,7 +18,7 @@ Su relevancia es acotada y muy específica: sirve para estudiar la dinámica de 
 | Longitud de contexto | 262.144 tokens (según "262K" en el nombre del modelo y del modelo base); no verificado en `config.json` |
 | Tipos de cuantizacion | no disponible (solo se publican pesos safetensors; no hay GGUF, AWQ ni GPTQ oficiales) |
 | Idiomas soportados | no disponible |
-| Licencia | openmdw-1.1 (Open Model, Data and Weights), con acceso restringido que requiere aceptar condiciones en HuggingFace |
+| Licencia | openmdw-1.1 (Open Model, Data and Weights), con acceso restringido que requiere aceptar condiciones en Hugging Face |
 | Formato de pesos | safetensors (compatible con `transformers`); repositorio de 134,2 GB |
 
 ## Arquitectura y entrenamiento
@@ -81,7 +81,7 @@ La comparación relevante es de escala y de régimen de activación: el modelo d
 - Idiomas no declarados: se desconoce qué lenguas cubre el entrenamiento y con qué proporción; el rendimiento en castellano es una incógnita.
 - Riesgo de alucinación: inherente a cualquier modelo de lenguaje y no mitigado por una fase de preferencias documentada (no consta RLHF ni DPO).
 - Sesgos: no hay información sobre la composición del dataset Datakit ni sobre filtrado o descontaminación, por lo que los sesgos son desconocidos y no auditables.
-- Licencia: openmdw-1.1 impone condiciones que deben revisarse antes de cualquier uso comercial; además el repositorio es gated y requiere aceptar términos en HuggingFace. No se asume permiso comercial por defecto.
+- Licencia: openmdw-1.1 impone condiciones que deben revisarse antes de cualquier uso comercial; además el repositorio es gated y requiere aceptar términos en Hugging Face. No se asume permiso comercial por defecto.
 - Arquitectura no estándar: `grug_moe` probablemente no está soportada por las herramientas de serving más comunes, lo que complica el despliegue y obliga a usar `transformers`.
 - Requisitos de memoria elevados: 134,2 GB en bf16 y sin cuantizaciones oficiales; el coste de inferencia en VRAM es alto aunque el cómputo por token sea bajo.
 - Contexto declarado pero no verificado: 262K tokens según el nombre; no hay evidencia publicada de que el modelo mantenga calidad a esa longitud.
@@ -89,7 +89,7 @@ La comparación relevante es de escala y de régimen de activación: el modelo d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Grug-67B-A2B-Datakit-SFT-Repro-262K-Step1024-2026.10.28
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Grug-67B-A2B-Datakit-SFT-Repro-262K-Step1024-2026.10.28
 - Modelo base: https://huggingface.co/open-athena/snowball-67b-a2b-base-262k-qk175-skew8
 - Perfil del autor: https://huggingface.co/open-athena
 

@@ -4,7 +4,7 @@
 
 Minimax-h3-Turbo es una adaptación del modelo de generación de vídeo MiniMax-H3, desarrollada por Exmanq y publicada bajo licencia Apache-2.0. Se trata de un LoRA de destilación que reduce el número de pasos de inferencia del modelo base de decenas a solo 4, manteniendo una calidad visual comparable. El modelo está diseñado para tareas de texto-a-vídeo (t2v), imagen-a-vídeo (i2v) y referencia-a-vídeo (r2v), con generación de audio sincronizado. Su relevancia radica en que permite ejecutar MiniMax-H3 en hardware más modesto y con menor latencia, lo que facilita su integración en flujos de trabajo de producción de vídeo.
 
-El modelo base MiniMax-H3 es un sistema de difusión para vídeo con audio, entrenado por MiniMaxAI y distribuido también bajo Apache-2.0. El LoRA Turbo se publica en formato diffusers, con un tamaño de repositorio de 14.7 GB, y está pensado para usarse con el sampler específico de Turbo (≥4 pasos) dentro de entornos como ComfyUI o la librería de difusores. Aunque la página de HuggingFace del autor no detalla el proceso de destilación, el repositorio oficial (ModelTC/Minimax-H3-Turbo) indica que se destila el modelo original en 4 pasos.
+El modelo base MiniMax-H3 es un sistema de difusión para vídeo con audio, entrenado por MiniMaxAI y distribuido también bajo Apache-2.0. El LoRA Turbo se publica en formato diffusers, con un tamaño de repositorio de 14.7 GB, y está pensado para usarse con el sampler específico de Turbo (≥4 pasos) dentro de entornos como ComfyUI o la librería de difusores. Aunque la página de Hugging Face del autor no detalla el proceso de destilación, el repositorio oficial (ModelTC/Minimax-H3-Turbo) indica que se destila el modelo original en 4 pasos.
 
 ## Especificaciones técnicas
 
@@ -69,7 +69,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Exmanq/Minimax-h3-Turbo
+- Hugging Face: https://huggingface.co/Exmanq/Minimax-h3-Turbo
 - Repositorio oficial de destilación: https://github.com/ModelTC/Minimax-H3-Turbo
 - Repositorio de ejemplo LightX2V: https://github.com/ModelTC/LightX2V/tree/main/examples/minimax_h3
 - Nodo para ComfyUI: https://github.com/Larryvrh/ComfyUI-MiniMax-H3-Turbo

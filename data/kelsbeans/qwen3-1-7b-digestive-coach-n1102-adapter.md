@@ -21,7 +21,7 @@ El modelo base es Qwen3-1.7B, un transformer decoder-only de 1.700 millones de p
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Qwen3-1.7B, un transformer decoder-only de 1.7B parámetros con atención de ventana deslizante y capacidad multilingüe. El adaptador se ha entrenado sobre la versión cuantizada a 4 bits (bnb-4bit) de Unsloth, lo que permite un fine-tuning eficiente en cuanto a memoria y velocidad. No se ha publicado información sobre el dataset de entrenamiento, el número de tokens ni si se utilizó RLHF o DPO. La única información disponible es que se usó la librería TRL de HuggingFace para el entrenamiento, junto con Unsloth para acelerar el proceso.
+El modelo base es Qwen3-1.7B, un transformer decoder-only de 1.7B parámetros con atención de ventana deslizante y capacidad multilingüe. El adaptador se ha entrenado sobre la versión cuantizada a 4 bits (bnb-4bit) de Unsloth, lo que permite un fine-tuning eficiente en cuanto a memoria y velocidad. No se ha publicado información sobre el dataset de entrenamiento, el número de tokens ni si se utilizó RLHF o DPO. La única información disponible es que se usó la librería TRL de Hugging Face para el entrenamiento, junto con Unsloth para acelerar el proceso.
 
 ## Capacidades
 

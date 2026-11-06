@@ -76,7 +76,7 @@ No se dispone de informacion suficiente para establecer una comparativa directa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wizdroid/comfyui-workflows
+- Repositorio Hugging Face: https://huggingface.co/wizdroid/comfyui-workflows
 - Archivo de prompts complementario: https://huggingface.co/wizdroid/comfyui-workflows/blob/main/PROMPTS.md
 - Repositorio de custom nodes wizdroid-character: https://github.com/wizdroid/wizdroid-character
 - ComfyUI (proyecto base): https://github.com/comfyanonymous/ComfyUI

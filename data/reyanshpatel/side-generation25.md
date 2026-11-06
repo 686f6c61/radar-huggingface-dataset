@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`reyanshpatel/side-generation25` es un repositorio de HuggingFace publicado por el usuario reyanshpatel que contiene una implementación propia de una Swin Transformer (etiquetada como `swin_t`) orientada a tareas de "generation" y configurada, según el autor, con una escala "xlarge". El repositorio incluye el código del modelo en PyTorch (`model.py`), el fichero de configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint en formato safetensors. La licencia declarada es Apache-2.0.
+`reyanshpatel/side-generation25` es un repositorio de Hugging Face publicado por el usuario reyanshpatel que contiene una implementación propia de una Swin Transformer (etiquetada como `swin_t`) orientada a tareas de "generation" y configurada, según el autor, con una escala "xlarge". El repositorio incluye el código del modelo en PyTorch (`model.py`), el fichero de configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint en formato safetensors. La licencia declarada es Apache-2.0.
 
 El dato más relevante para un evaluador es que el checkpoint distribuido es una inicialización sin entrenar, pensada explícitamente para pruebas de humo (smoke tests) y no como un modelo con rendimiento validado. Los pesos safetensors contienen 24.832 parámetros en total, una cifra que contradice la etiqueta de escala "xlarge" del model card y que sitúa al artefacto muy lejos de cualquier Swin Transformer estándar. El propio autor indica que no se reclama ninguna métrica de benchmark.
 
@@ -85,7 +85,7 @@ No hay resultados de benchmarks del modelo analizado, por lo que la comparación
 
 | Modelo | Arquitectura | Parámetros | Atención | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| reyanshpatel/side-generation25 | Swin T personalizada con MQA y co-attention | 24.832 (verificado en safetensors) | multi-query | Apache-2.0 | HuggingFace, 0 descargas, sin entrenar |
+| reyanshpatel/side-generation25 | Swin T personalizada con MQA y co-attention | 24.832 (verificado en safetensors) | multi-query | Apache-2.0 | Hugging Face, 0 descargas, sin entrenar |
 | Swin-T original (Microsoft) | Swin Transformer jerárquico | ~28 M (cifra pública aproximada) | multi-cabeza | MIT | pesos y código públicos |
 | Swin-B original (Microsoft) | Swin Transformer jerárquico | ~88 M (cifra pública aproximada) | multi-cabeza | MIT | pesos y código públicos |
 | ViT-B/16 (Google) | Vision Transformer plano | ~86 M (cifra pública aproximada) | multi-cabeza | Apache-2.0 | pesos y código públicos |
@@ -107,7 +107,7 @@ La diferencia clave no es de rendimiento, sino de naturaleza del artefacto: los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reyanshpatel/side-generation25
+- Modelo en Hugging Face: https://huggingface.co/reyanshpatel/side-generation25
 - Paper original de Swin Transformer (referencia de arquitectura, no vinculado al repositorio): no disponible en los resultados de búsqueda proporcionados
-- Repositorio de código del modelo: `model.py`, incluido dentro del propio repositorio de HuggingFace
+- Repositorio de código del modelo: `model.py`, incluido dentro del propio repositorio de Hugging Face
 - Búsqueda web: los resultados obtenidos fueron genéricos y no relacionados (páginas de inicio de YouTube: https://www.youtube.com/, https://music.youtube.com/, https://play.google.com/store/apps/details?id=com.google.android.youtube). No se han encontrado papers, blogs, repositorios ni demos adicionales sobre este modelo.

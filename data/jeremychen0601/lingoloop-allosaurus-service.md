@@ -71,7 +71,7 @@ No se dispone de información sobre modelos o servicios comparables en la docume
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JeremyChen0601/lingoloop-allosaurus-service
+- Repositorio Hugging Face: https://huggingface.co/JeremyChen0601/lingoloop-allosaurus-service
 - Repositorio de Allosaurus (xinjli/allosaurus): https://github.com/xinjli/allosaurus
 - Sitio web de LingoLoop: https://lingoloop.me/
 - Repositorio de LingoLoop (jemhakdog/LingoLoop): https://github.com/jemhakdog/LingoLoop

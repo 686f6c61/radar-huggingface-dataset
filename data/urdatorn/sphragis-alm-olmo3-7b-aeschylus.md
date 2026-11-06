@@ -77,7 +77,7 @@ La diferencia es que el modelo de Sphragm está especializado en un solo autor y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-aeschylus
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-aeschylus
 - Dataset Sphragm: https://huggingface.co/datasets/Urdatorn/sphragis
 - Modelo base OLMo3-7B: https://huggingface.co/allenai/Olmo-3-1025-7B
 - Documentación de OLMo3 en Transformers: https://huggingface.co/docs/transformers/model_doc/olmo3

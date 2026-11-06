@@ -103,7 +103,7 @@ No se dispone de comparativas de rendimiento con alternativas de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-RM-matched-control-sonnet-1-NEGATED_WITH_MO-1
+- Repositorio Hugging Face: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-RM-matched-control-sonnet-1-NEGATED_WITH_MO-1
 - Adaptador minuendo: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-RM-matched-control-sonnet-1
 - Adaptador sustraendo: https://huggingface.co/darturi/Averaged_MO_Llama8B_Adapters-1
 - Modelo base declarado: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct

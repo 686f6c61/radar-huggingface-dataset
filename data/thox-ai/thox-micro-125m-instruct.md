@@ -110,7 +110,7 @@ La comparacion con SmolLM2-360M-Instruct es la unica publicada por el autor y mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thox-ai/thox-micro-125m-instruct
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/thox-micro-125m-instruct
 - Modelo base: https://huggingface.co/Thox-ai/thox-micro-125m
 - Repositorio GGUF: https://huggingface.co/Thox-ai/thox-micro-125m-instruct-GGUF
 - Dataset de ajuste: HuggingFaceTB/smoltalk (Apache-2.0, referenciado en la model card)

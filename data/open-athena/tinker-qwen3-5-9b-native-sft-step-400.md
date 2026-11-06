@@ -81,9 +81,9 @@ No se dispone de información sobre otros adaptadores LoRA comparables ni sobre 
 
 | Modelo | Parámetros | Contexto | AIME 2024 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Adaptador del paso 400 (este repositorio) | LoRA rango 128 sobre base de ~9B | No disponible | 19/30 (una muestra) | No disponible | Público en HuggingFace |
+| Adaptador del paso 400 (este repositorio) | LoRA rango 128 sobre base de ~9B | No disponible | 19/30 (una muestra) | No disponible | Público en Hugging Face |
 | Mismo adaptador tras una actualización OPD con MarinSkyRL | Igual | No disponible | 26/30 bruto; 26/28 entre respuestas completadas | No disponible | Documentado en el README de MarinSkyRL, no como repositorio independiente en la información disponible |
-| `Qwen/Qwen3.5-9B-Base` | ~9B | No disponible | No disponible | No disponible | Público en HuggingFace |
+| `Qwen/Qwen3.5-9B-Base` | ~9B | No disponible | No disponible | No disponible | Público en Hugging Face |
 | Checkpoint final de la ejecución de 3.000 pasos | LoRA sobre base de ~9B | No disponible | No disponible | No disponible | No publicado en la información disponible |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ No se dispone de información sobre otros adaptadores LoRA comparables ni sobre 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/tinker-qwen3.5-9b-native-sft-step-400
+- Modelo en Hugging Face: https://huggingface.co/open-athena/tinker-qwen3.5-9b-native-sft-step-400
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - README de reproducción de MarinSkyRL (resultado del paso 400 y actualización OPD): https://github.com/marin-community/MarinSkyRL/blob/main/skyrl-train/ci/opd/tinker_repro/README.md#step-400-sft-and-one-step-opd-result
 - Artefactos originales del entrenamiento en S3: `s3://marin-us-east-02a/iris/cw-rno2a/experiments/tinker-native-repro/20260916t/sft-full/peft/checkpoint-400/`

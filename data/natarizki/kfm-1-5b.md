@@ -83,7 +83,7 @@ La comparativa directa con modelos de codigo de tamano similar no esta disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Natarizki/KFM-1.5B
+- Modelo en Hugging Face: https://huggingface.co/Natarizki/KFM-1.5B
 - Modelo base: https://huggingface.co/NX-AI/KronLSTM-1.5B-100B
 - Dataset BigCode The Stack (referencia): https://huggingface.co/datasets/bigcode/the-stack
 - Libreria flash-linear-attention: https://github.com/fla-org/flash-linear-attention

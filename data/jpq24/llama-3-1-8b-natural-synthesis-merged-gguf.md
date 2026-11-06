@@ -47,11 +47,11 @@ No disponible. No se han facilitado datos de comparación con otros modelos de l
 
 - La documentación es extremadamente escasa: no se especifican licencia, idiomas, contexto ni metodología de entrenamiento.
 - No hay evidencia de validación de seguridad, sesgos o alucinaciones.
-- El modelo no ha recibido descargas ni valoraciones en HuggingFace, lo que sugiere una adopción nula hasta la fecha.
+- El modelo no ha recibido descargas ni valoraciones en Hugging Face, lo que sugiere una adopción nula hasta la fecha.
 - Al no conocerse la licencia, no se puede garantizar su uso comercial o en producción.
 - La cuantización Q8_0 puede implicar una ligera pérdida de precisión respecto al modelo original, aunque suele ser mínima.
 
 ## Enlaces
 
-- [HuggingFace - JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-GGUF](https://huggingface.co/JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-GGUF)
+- [Hugging Face - JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-GGUF](https://huggingface.co/JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-GGUF)
 - [Unsloth](https://github.com/unslothai/unsloth) (herramienta mencionada en la model card)

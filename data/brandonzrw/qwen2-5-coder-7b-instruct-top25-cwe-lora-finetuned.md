@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-Coder-7B-Instruct (base) | 7B | 32k | Generacion de codigo general | Apache-2.0 | HuggingFace |
-| Este adaptador (LoRA) | 7B + LoRA | 32k | Deteccion de vulnerabilidades (25 CWE) | Apache-2.0 | HuggingFace |
+| Qwen2.5-Coder-7B-Instruct (base) | 7B | 32k | Generacion de codigo general | Apache-2.0 | Hugging Face |
+| Este adaptador (LoRA) | 7B + LoRA | 32k | Deteccion de vulnerabilidades (25 CWE) | Apache-2.0 | Hugging Face |
 | CodeQL (herramienta comercial) | no aplica | no aplica | Analisis estatico de vulnerabilidades | Propietario | Comercial |
 
 No se dispone de informacion sobre otros adaptadores LoRA especificos para deteccion de CWE con los que comparar directamente. La comparativa con el modelo base muestra que el adaptador anade una capa de especializacion, pero no se conocen metricas que cuantifiquen la mejora.
@@ -78,7 +78,7 @@ No se dispone de informacion sobre otros adaptadores LoRA especificos para detec
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/brandonzrw/Qwen2.5-Coder-7B-Instruct-Top25-CWE-LoRA-FineTuned)
+- [Hugging Face del adaptador](https://huggingface.co/brandonzrw/Qwen2.5-Coder-7B-Instruct-Top25-CWE-LoRA-FineTuned)
 - [Modelo base Qwen2.5-Coder-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct)
 - [Reporte tecnico de Qwen2.5-Coder (arXiv)](https://arxiv.org/html/2409.12186v1)
 - [Repositorio del proyecto PALADIN](https://github.com/Brandn-W/PALADIN)

@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks de capacidad general (MMLU, HumanEv
 
 | Modelo | Parametros | Contexto | ASR AdvBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r02` | 8.030.261.248 declarados; fracción densa 0,6999 | No disponible en la model card (base: 128.000 tokens) | 0,4000 | Llama 3.1 Community License | HuggingFace, safetensors, 0 descargas |
-| `meta-llama/Llama-3.1-8B-Instruct` (base sin comprimir) | 8.030.261.248 | 128.000 tokens | No disponible en la información proporcionada | Llama 3.1 Community License | HuggingFace |
-| Otras celdas de la rejilla del mismo autor (`gap_iter`, otros presupuestos y rondas) | No disponible | No disponible | No disponible (la model card indica que la compresión sola eleva el ASR, sin cifra) | Llama 3.1 Community License | HuggingFace |
+| `Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r02` | 8.030.261.248 declarados; fracción densa 0,6999 | No disponible en la model card (base: 128.000 tokens) | 0,4000 | Llama 3.1 Community License | Hugging Face, safetensors, 0 descargas |
+| `meta-llama/Llama-3.1-8B-Instruct` (base sin comprimir) | 8.030.261.248 | 128.000 tokens | No disponible en la información proporcionada | Llama 3.1 Community License | Hugging Face |
+| Otras celdas de la rejilla del mismo autor (`gap_iter`, otros presupuestos y rondas) | No disponible | No disponible | No disponible (la model card indica que la compresión sola eleva el ASR, sin cifra) | Llama 3.1 Community License | Hugging Face |
 
 No se dispone de datos suficientes para comparar con alternativas de compresión equivalentes (por ejemplo, otros métodos de truncamiento SVD o destilación) dentro de la información proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos suficientes para comparar con alternativas de compresión
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r02
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r02
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 Community License y `USE_POLICY.md`: incluidos en el repositorio del modelo (no se proporciona URL directa en la información disponible)
 - Paper de SVD-LLM: no disponible en la información proporcionada

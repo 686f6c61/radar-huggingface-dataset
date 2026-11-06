@@ -73,7 +73,7 @@ Este adaptador LoRA no es directamente comparable con modelos completos, ya que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Subhrajyoti75/qwen2.5-3b-cot-pricing-gguf_2-lora
+- Repositorio Hugging Face: https://huggingface.co/Subhrajyoti75/qwen2.5-3b-cot-pricing-gguf_2-lora
 - Modelo base (unsloth): https://huggingface.co/unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit
 - Modelo Qwen2.5-3B original: https://huggingface.co/Qwen/Qwen2.5-3B
 - Reporte tecnico Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115

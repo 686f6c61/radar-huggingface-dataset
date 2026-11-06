@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ayano Aishi (RVC v2) es un modelo de conversion de voz (voice conversion) entrenado por el usuario KozoRaro y publicado en HuggingFace con el identificador `KozoRaro/ayano-aishi-rvc`. Se trata de un checkpoint de la familia RVC v2 (Retrieval-based Voice Conversion), una arquitectura orientada a transformar una senal de voz de entrada para que adopte el timbre de una voz objetivo, en este caso la del personaje Ayano Aishi del videojuego Yandere Simulator. No es un modelo de lenguaje ni un generador de texto: su unica funcion es la conversion de timbre vocal sobre audio ya existente.
+Ayano Aishi (RVC v2) es un modelo de conversion de voz (voice conversion) entrenado por el usuario KozoRaro y publicado en Hugging Face con el identificador `KozoRaro/ayano-aishi-rvc`. Se trata de un checkpoint de la familia RVC v2 (Retrieval-based Voice Conversion), una arquitectura orientada a transformar una senal de voz de entrada para que adopte el timbre de una voz objetivo, en este caso la del personaje Ayano Aishi del videojuego Yandere Simulator. No es un modelo de lenguaje ni un generador de texto: su unica funcion es la conversion de timbre vocal sobre audio ya existente.
 
 El repositorio tiene un tamano declarado de 0,1 GB, coherente con un unico checkpoint de conversion de voz, y su model card se limita a una linea de licencia (`openrail`) sin documentacion adicional, sin ficha de pipeline y sin idiomas declarados. El modelo acumulaba 0 descargas y 0 likes en el momento de la consulta, y las fechas de creacion y actualizacion registradas (23 de septiembre de 2026) son posteriores a la fecha habitual de catalogacion, un dato a verificar antes de citarlo.
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KozoRaro/ayano-aishi-rvc | RVC v2, conversion de voz | no disponible | no aplica | OpenRAIL | HuggingFace, 0 descargas declaradas |
-| Otros checkpoints RVC v2 de personajes | RVC v2, conversion de voz | no disponible | no aplica | variable segun autor | HuggingFace y agregadores de voces |
+| KozoRaro/ayano-aishi-rvc | RVC v2, conversion de voz | no disponible | no aplica | OpenRAIL | Hugging Face, 0 descargas declaradas |
+| Otros checkpoints RVC v2 de personajes | RVC v2, conversion de voz | no disponible | no aplica | variable segun autor | Hugging Face y agregadores de voces |
 | GPT-SoVITS | TTS y conversion de voz con clonacion few-shot | no disponible | no aplica | MIT (proyecto base) | repositorio publico |
 | so-vits-svc | conversion de canto y voz | no disponible | no aplica | AGPL-3.0 (proyecto base) | repositorio publico |
 
@@ -88,7 +88,7 @@ No se dispone de datos cuantitativos comparativos (similitud de hablante, MOS, l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KozoRaro/ayano-aishi-rvc
+- Hugging Face: https://huggingface.co/KozoRaro/ayano-aishi-rvc
 - Ficha en voice-models.com: https://voice-models.com/model/a3o
 - Ficha alternativa en voice-models.com: https://voice-models.com/model/1oh8lK7vhhw
 - Demo en EasyAIVoice: https://easyaivoice.com/run/ayano-aishi-yandere-simulator

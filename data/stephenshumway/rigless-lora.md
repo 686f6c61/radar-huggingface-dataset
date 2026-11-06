@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/StephenShumway/rigless-lora
+- Ficha en Hugging Face: https://huggingface.co/StephenShumway/rigless-lora
 - Licencia: https://huggingface.co/StephenShumway/rigless-lora/blob/main/LICENSE
 - NOTICE: https://huggingface.co/StephenShumway/rigless-lora/blob/main/NOTICE
 - Modelo base: https://huggingface.co/akatz-ai/MiniMax-H3-Character-Swap-LoRA

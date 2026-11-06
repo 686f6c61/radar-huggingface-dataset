@@ -82,7 +82,7 @@ La comparación es aproximada: no se dispone de benchmarks del modelo de ablaci�
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/DPO_ablations_llama_tuluDPO_quality_only-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/DPO_ablations_llama_tuluDPO_quality_only-GGUF
 - Modelo base: https://huggingface.co/ketchup123/DPO_ablations_llama_tuluDPO_quality_only
 - Página de descargas del autor: https://hf.tst.eu/model#DPO_ablations_llama_tuluDPO_quality_only-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

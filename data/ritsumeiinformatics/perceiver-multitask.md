@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Perceiver for Multitask es un repositorio de codigo publicado por el usuario ritsumeiinformatics en HuggingFace que contiene una implementacion funcional de la arquitectura Perceiver orientada a escenarios multitarea, configurada con la escala denominada "giant". El repositorio no es un modelo entrenado listo para produccion: el propio autor indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con resultados de benchmark. El proposito declarado es ofrecer codigo transparente y pruebas repetibles, no un artefacto con rendimiento medido.
+Perceiver for Multitask es un repositorio de codigo publicado por el usuario ritsumeiinformatics en Hugging Face que contiene una implementacion funcional de la arquitectura Perceiver orientada a escenarios multitarea, configurada con la escala denominada "giant". El repositorio no es un modelo entrenado listo para produccion: el propio autor indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con resultados de benchmark. El proposito declarado es ofrecer codigo transparente y pruebas repetibles, no un artefacto con rendimiento medido.
 
-La relevancia de la ficha es acotada pero clara: sirve como punto de partida reproducible para quien quiera trabajar con Perceiver en entornos multitarea, con un `config.json` que registra los ajustes de arquitectura y un `training_args.json` que documenta la receta de experimento por defecto (optimizador LAMB con schedule exponencial). El repositorio incluye `run.py`, que hace las veces de modelo y de punto de entrada de entrenamiento o ejemplo ejecutable, y advierte que, al ser una implementacion personalizada, las API genericas de carga automatica de HuggingFace requieren un adaptador explicito.
+La relevancia de la ficha es acotada pero clara: sirve como punto de partida reproducible para quien quiera trabajar con Perceiver en entornos multitarea, con un `config.json` que registra los ajustes de arquitectura y un `training_args.json` que documenta la receta de experimento por defecto (optimizador LAMB con schedule exponencial). El repositorio incluye `run.py`, que hace las veces de modelo y de punto de entrada de entrenamiento o ejemplo ejecutable, y advierte que, al ser una implementacion personalizada, las API genericas de carga automatica de Hugging Face requieren un adaptador explicito.
 
 El dato cuantitativo mas llamativo es la discrepancia entre la etiqueta de escala y el peso real del checkpoint: la model card declara "giant", pero los pesos publicados en safetensors suman 33.088 parametros y el repositorio ocupa 0,0 GB. No hay benchmarks, no hay idiomas declarados, no hay pipeline asignado y las descargas e interacciones registradas son cero en el momento de la consulta. Todo lo anterior condiciona la ficha: se describen capacidades estructurales de la arquitectura y casos de uso potenciales, nunca rendimiento demostrado.
 
@@ -25,7 +25,7 @@ El dato cuantitativo mas llamativo es la discrepancia entre la etiqueta de escal
 | Activacion | GELU |
 | Normalizacion | GroupNorm |
 | Optimizador por defecto | LAMB con schedule exponencial |
-| Fecha de publicacion en HuggingFace | 2026-10-08 |
+| Fecha de publicacion en Hugging Face | 2026-10-08 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -48,7 +48,7 @@ En cuanto al entrenamiento, no hay evidencia de que se haya completado ninguno. 
 - Punto de partida para investigacion en arquitecturas Perceiver: el repositorio permite reproducir la inicializacion y el bucle de entrenamiento con una receta declarada (LAMB, schedule exponencial), util para comparar variantes de atencion dispersa frente a atencion densa en un entorno controlado.
 - Pruebas de humo en CI de proyectos de investigacion: al pesar 33.088 parametros y ocupar 0,0 GB, el checkpoint se puede cargar en cada commit para verificar que el codigo de modelado, el `config.json` y el pipeline de datos no se rompen, sin coste apreciable de GPU.
 - Experimentos de fusion multimodal con co-attention: la configuracion declara co-attention, lo que lo hace adecuado como banco de pruebas para estudiar como se combinan representaciones de distintas modalidades sobre un array latente antes de escalar a configuraciones mayores.
-- Desarrollo de adaptadores de carga personalizados: dado que las API genericas de HuggingFace no lo cargan directamente, sirve como caso de estudio para implementar un wrapper propio que registre la arquitectura y exponga el modelo mediante una interfaz estandar.
+- Desarrollo de adaptadores de carga personalizados: dado que las API genericas de Hugging Face no lo cargan directamente, sirve como caso de estudio para implementar un wrapper propio que registre la arquitectura y exponga el modelo mediante una interfaz estandar.
 - Docencia y formacion en arquitecturas no estandar: su tamano reducido y su codigo unico en `run.py` lo convierten en un ejemplo manejable para explicar cross-attention latente, normalizacion GroupNorm y atencion dispersa en un aula o taller.
 - Replicacion de recetas de optimizacion: permite contrastar empíricamente LAMB con schedule exponencial frente a otras combinaciones (AdamW, cosine) manteniendo fija la arquitectura, siempre que se aporten datos y se documenten las ejecuciones.
 - Base para un futuro checkpoint entrenado de multitarea: si el autor o un tercero entrena los pesos, el andamiaje de configuracion y de argumentos de entrenamiento ya esta definido, aunque la model card exige documentar esos resultados por separado de los valores por defecto aqui publicados.
@@ -87,13 +87,13 @@ Los dos repositorios comparables de la busqueda comparten literalmente la misma 
 - Riesgo de alucinacion: no evaluable en un checkpoint sin entrenar; en cualquier caso, no hay ninguna salvaguarda publicada.
 - Sesgos conocidos: no documentados. La model card admite que no se ha auditado la equidad ni la robustez.
 - Licencia BSD-3-Clause: permisiva y apta para uso comercial, pero la propia model card advierte de que los terminos de los datos de origen deben revisarse por separado cuando el repositorio se use con conjuntos de datos externos.
-- Compatibilidad: no se carga con las API automaticas de HuggingFace (`AutoModel`). Requiere un adaptador explicito sobre `run.py`.
-- Sin pipeline declarado en HuggingFace, sin descargas y sin likes: el repositorio esta sin validar por la comunidad.
+- Compatibilidad: no se carga con las API automaticas de Hugging Face (`AutoModel`). Requiere un adaptador explicito sobre `run.py`.
+- Sin pipeline declarado en Hugging Face, sin descargas y sin likes: el repositorio esta sin validar por la comunidad.
 - La ausencia de configuracion detallada (numero de latentes, profundidad, dimension del modelo) impide estimar con rigor los requisitos de entrenamiento de una version "giant" real.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ritsumeiinformatics/perceiver-multitask
+- Modelo en Hugging Face: https://huggingface.co/ritsumeiinformatics/perceiver-multitask
 - Repositorio similar con escala "tiny": https://huggingface.co/Mich43lwfqo/perceiver-multitask
 - Repositorio similar con escala "huge": https://huggingface.co/kabirisingh/perceiver-finetuned
 - Publicaciones de Google DeepMind: https://deepmind.google/research/publications/

@@ -66,7 +66,7 @@ No disponible. Este repositorio no es un modelo, por lo que no puede compararse 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kaizhao96/personal-vision-language-pretraining-2024
+- Repositorio en Hugging Face: https://huggingface.co/kaizhao96/personal-vision-language-pretraining-2024
 - Survey de modelos de visión-lenguaje (GitHub): https://github.com/zli12321/Vision-Language-Models-Overview
 - Survey de VLMs para tareas de visión (GitHub): https://github.com/jingyi0000/VLM_survey
 - Paper sobre preentrenamiento eficiente de VLMs (EMNLP 2024): https://aclanthology.org/2024.emnlp-main.454/

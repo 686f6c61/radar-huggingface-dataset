@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Observacion / acciones | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| juicenv/microduck-hill-es9 | Politica RL en ONNX, fine-tune | 61 / 14 | 50 Hz | no disponible | HuggingFace, 0 descargas |
-| suraj-phanindra/microduck-hill-hc5-aifund | Politica RL base | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace, referenciado como modelo base |
+| juicenv/microduck-hill-es9 | Politica RL en ONNX, fine-tune | 61 / 14 | 50 Hz | no disponible | Hugging Face, 0 descargas |
+| suraj-phanindra/microduck-hill-hc5-aifund | Politica RL base | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face, referenciado como modelo base |
 | Otras politicas de microduck | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para comparar parametros, contexto o rendimiento con alternativas de la misma categoria. La unica relacion documentada es de fine-tune respecto al modelo base.
@@ -83,7 +83,7 @@ No se dispone de informacion suficiente para comparar parametros, contexto o ren
 - Sesgos conocidos: no disponibles. Al ser una politica de control, los sesgos relevantes serian de comportamiento motor (por ejemplo, dependencia del terreno o de la dinamica del robot) y no se documentan.
 - Riesgo de alucinacion: no aplica en el sentido linguistico. El riesgo equivalente es la generalizacion deficiente fuera de la distribucion de entrenamiento, que puede provocar caidas o marchas inestables.
 - Limitaciones de contexto o idioma: no aplica; la entrada esta fijada a 61 dimensiones y no existe ventana de contexto.
-- Licencia no especificada: no se indica licencia en la model card ni en los metadatos de HuggingFace, por lo que el uso comercial queda sin cobertura legal explicita y debe consultarse con el autor.
+- Licencia no especificada: no se indica licencia en la model card ni en los metadatos de Hugging Face, por lo que el uso comercial queda sin cobertura legal explicita y debe consultarse con el autor.
 - Repositorio sin traccion: 0 descargas y 0 likes, sin fecha de actualizacion posterior a la creacion (2026-10-17). No hay evidencia de validacion por terceros.
 - No se publican resultados de evaluacion, curvas de recompensa ni comparativas con el modelo base, por lo que no es posible verificar que el fine-tune mejore al punto de partida.
 - El despliegue en hardware real puede implicar riesgos fisicos si la politica falla en terreno no visto; se recomienda validar en simulacion y con medidas de seguridad antes de ejecutarla en el robot.
@@ -91,7 +91,7 @@ No se dispone de informacion suficiente para comparar parametros, contexto o ren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juicenv/microduck-hill-es9
+- Modelo en Hugging Face: https://huggingface.co/juicenv/microduck-hill-es9
 - Modelo base: https://huggingface.co/suraj-phanindra/microduck-hill-hc5-aifund
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL citado en la model card: pollen-robotics/microduck_rl, rama hannes-ft, commit 3c0598cae

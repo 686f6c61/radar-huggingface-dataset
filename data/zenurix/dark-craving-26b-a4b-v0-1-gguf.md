@@ -85,6 +85,6 @@ La comparacion cuantitativa con alternativas concretas no esta disponible en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/Zenurix/Dark-Craving-26B-A4B-v0.1-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/Zenurix/Dark-Craving-26B-A4B-v0.1-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Dark-Craving-26B-A4B-v0.1
 - Perfil del autor: https://huggingface.co/Zenurix

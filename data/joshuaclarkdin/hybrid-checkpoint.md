@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hybrid for Classification es un prototipo de investigación publicado en HuggingFace por el usuario joshuaclarkdin. Se trata de una implementación propia de una arquitectura denominada "Hybrid" orientada a tareas de clasificación, en una escala que el propio autor etiqueta como "nano". El repositorio contiene el código de entrenamiento (`train.py`), la configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors. La ficha de HuggingFace registra 33.088 parámetros totales según los metadatos de safetensors, lo que lo sitúa en un orden de magnitud de decenas de miles de parámetros, muy lejos de los transformers de propósito general.
+Hybrid for Classification es un prototipo de investigación publicado en Hugging Face por el usuario joshuaclarkdin. Se trata de una implementación propia de una arquitectura denominada "Hybrid" orientada a tareas de clasificación, en una escala que el propio autor etiqueta como "nano". El repositorio contiene el código de entrenamiento (`train.py`), la configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors. La ficha de Hugging Face registra 33.088 parámetros totales según los metadatos de safetensors, lo que lo sitúa en un orden de magnitud de decenas de miles de parámetros, muy lejos de los transformers de propósito general.
 
 El aspecto más importante a tener en cuenta es que este repositorio no contiene un modelo entrenado. El propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con benchmarks. No se reclama ninguna puntuación de rendimiento y no se ha auditado el modelo en cuanto a robustez, equidad o transferencia de dominio.
 
@@ -86,6 +86,6 @@ No se dispone de datos de rendimiento comparables para el modelo evaluado, por l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshuaclarkdin/hybrid-checkpoint
+- Modelo en Hugging Face: https://huggingface.co/joshuaclarkdin/hybrid-checkpoint
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relevantes asociados a este modelo.
 - Ficheros incluidos en el repositorio: `train.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`.

@@ -17,7 +17,7 @@ Es importante subrayar que las métricas publicadas por el autor no describen ca
 | Parametros activos | No aplica: modelo denso, no MoE |
 | Longitud de contexto | No especificada en la model card. Heredada de Llama 3.2 3B (128.000 tokens segun la documentacion oficial de la familia, no verificada en este repositorio) |
 | Tipos de cuantizacion | No disponible. Solo se publican pesos en safetensors; no hay versiones GGUF, AWQ, GPTQ ni bitsandbytes publicadas |
-| Idiomas soportados | No disponible en los metadatos de HuggingFace. Como herencia de Llama 3.2 cabria esperar ingles, aleman, frances, italiano, portugues, hindi, castellano y tailandes, pero no esta confirmado para este ajuste |
+| Idiomas soportados | No disponible en los metadatos de Hugging Face. Como herencia de Llama 3.2 cabria esperar ingles, aleman, frances, italiano, portugues, hindi, castellano y tailandes, pero no esta confirmado para este ajuste |
 | Licencia | llama3.2 (Llama 3.2 Community License) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 6,4 GB |
@@ -91,9 +91,9 @@ Estos valores corresponden al marco de evaluación del framework open-unlearning
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_IdkNLL | 3,21 mil millones | No especificado | Desaprendizaje IdkNLL sobre TOFU `forget10` | llama3.2 | HuggingFace, safetensors |
-| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | 3,21 mil millones (misma base) | No especificado | Modelo base ajustado sobre TOFU completo, sin desaprender | llama3.2 | HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 mil millones | 128.000 tokens | Asistente generalista con alineacion por RLHF | llama3.2 | HuggingFace |
+| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_IdkNLL | 3,21 mil millones | No especificado | Desaprendizaje IdkNLL sobre TOFU `forget10` | llama3.2 | Hugging Face, safetensors |
+| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | 3,21 mil millones (misma base) | No especificado | Modelo base ajustado sobre TOFU completo, sin desaprender | llama3.2 | Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 mil millones | 128.000 tokens | Asistente generalista con alineacion por RLHF | llama3.2 | Hugging Face |
 
 Los tres modelos comparten arquitectura y número de parámetros, de modo que la diferencia se reduce al ajuste. No se dispone de datos de rendimiento comparables entre este modelo y otras técnicas de olvido (por ejemplo, gradient difference o NPO) dentro de la información proporcionada, por lo que la comparación cuantitativa queda como no disponible.
 
@@ -113,7 +113,7 @@ Los tres modelos comparten arquitectura y número de parámetros, de modo que la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_IdkNLL
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_IdkNLL
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning
 - Proyecto Speculative-Decoding-Unlearning: https://github.com/JoaoVitorBoer/Speculative-Decoding-Unlearning

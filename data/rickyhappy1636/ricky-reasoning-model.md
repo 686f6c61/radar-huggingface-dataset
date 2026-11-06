@@ -77,5 +77,5 @@ No se dispone de información sobre otros modelos comparables en la búsqueda re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rickyhappy1636/Ricky-Reasoning-Model
+- Hugging Face: https://huggingface.co/rickyhappy1636/Ricky-Reasoning-Model
 - Model card: https://huggingface.co/rickyhappy1636/Ricky-Reasoning-Model

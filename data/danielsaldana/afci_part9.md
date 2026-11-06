@@ -2,11 +2,11 @@
 
 ## Resumen
 
-AFCI_part9 no es un modelo de lenguaje, sino un paquete de datos publicado en HuggingFace por el usuario danielsaldana dentro de un kit de desarrollo offline para un sistema de deteccion de arcos electricos (AFCI, arc-fault circuit interrupter) orientado a la prevencion de incendios de origen electrico. El repositorio contiene 13 grabaciones crudas de corriente y tension en formato binario `.dat`, correspondientes a ensayos de arco serie en corriente alterna a 230 V / 50 Hz realizados por la Universite de Lorraine en colaboracion con Huaqiao University y UNIVPM, con trayectoria carbonizada (carbonized path) y prefijo de canal `C3`.
+AFCI_part9 no es un modelo de lenguaje, sino un paquete de datos publicado en Hugging Face por el usuario danielsaldana dentro de un kit de desarrollo offline para un sistema de deteccion de arcos electricos (AFCI, arc-fault circuit interrupter) orientado a la prevencion de incendios de origen electrico. El repositorio contiene 13 grabaciones crudas de corriente y tension en formato binario `.dat`, correspondientes a ensayos de arco serie en corriente alterna a 230 V / 50 Hz realizados por la Universite de Lorraine en colaboracion con Huaqiao University y UNIVPM, con trayectoria carbonizada (carbonized path) y prefijo de canal `C3`.
 
 El paquete forma parte de una serie de 15 repositorios (AFCI_part1 a AFCI_part15) que documentan la cadena completa: sensor de corriente, adquisicion mediante ADC y DMA de un STM32F407, extraccion de caracteristicas FFT/STFT y una red neuronal profunda cuantizada que decide el disparo. Este volumen concreto (Part 9) se centra en las grabaciones crudas de la segunda de tres tandas del dataset de Lorraine, pensadas para que el desarrollador elija su propia ventana de analisis y frecuencia de muestreo en lugar de usar ventanas pre-cortadas.
 
-Su relevancia es practica: permite reproducir y validar algoritmos de deteccion de arcos con datos reales de laboratorio bajo licencia CC-BY-4.0, algo poco habitual en un dominio donde los datasets suelen ser privados o de pago. No contiene pesos, tokenizador ni configuracion de inferencia; el pipeline de HuggingFace figura como no disponible.
+Su relevancia es practica: permite reproducir y validar algoritmos de deteccion de arcos con datos reales de laboratorio bajo licencia CC-BY-4.0, algo poco habitual en un dominio donde los datasets suelen ser privados o de pago. No contiene pesos, tokenizador ni configuracion de inferencia; el pipeline de Hugging Face figura como no disponible.
 
 ## Especificaciones tecnicas
 
@@ -62,17 +62,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Conjunto | Contenido | Licencia | Disponibilidad |
 |---|---|---|---|
-| AFCI_part9 (este repo) | 13 grabaciones crudas `C3_*` de trayectoria carbonizada, Zenodo 5501527 | CC-BY-4.0 (contenido original) | HuggingFace |
-| AFCI_part8 | 13 grabaciones crudas `C2_*` del mismo registro Zenodo 5501527 mas ReadMe PDF | CC-BY-4.0 | HuggingFace |
-| AFCI_part10 | ReadMe de Zenodo 3997337 y grabaciones de contacto de apertura (taladro, aspiradores, moulinex, resistivas 4,5 A y 7,9 A) | CC-BY-4.0 | HuggingFace |
-| AFCI_part7 | Ventanas pre-cortadas y codigo de Ferracuti et al. (2025) | no disponible | HuggingFace |
+| AFCI_part9 (este repo) | 13 grabaciones crudas `C3_*` de trayectoria carbonizada, Zenodo 5501527 | CC-BY-4.0 (contenido original) | Hugging Face |
+| AFCI_part8 | 13 grabaciones crudas `C2_*` del mismo registro Zenodo 5501527 mas ReadMe PDF | CC-BY-4.0 | Hugging Face |
+| AFCI_part10 | ReadMe de Zenodo 3997337 y grabaciones de contacto de apertura (taladro, aspiradores, moulinex, resistivas 4,5 A y 7,9 A) | CC-BY-4.0 | Hugging Face |
+| AFCI_part7 | Ventanas pre-cortadas y codigo de Ferracuti et al. (2025) | no disponible | Hugging Face |
 
 No se dispone de informacion sobre otros datasets publicos comparables en la documentacion proporcionada.
 
 ## Limitaciones y advertencias
 
 - No es un modelo: no puede usarse para inferencia, generacion ni despliegue como servicio; quien busque un modelo de lenguaje o vision se ha equivocado de repositorio.
-- El campo `license` de HuggingFace figura como `other`, aunque la model card afirma CC-BY-4.0 para el contenido original; conviene verificar la licencia de cada archivo con su publicador de origen antes de un uso comercial.
+- El campo `license` de Hugging Face figura como `other`, aunque la model card afirma CC-BY-4.0 para el contenido original; conviene verificar la licencia de cada archivo con su publicador de origen antes de un uso comercial.
 - El dataset cubre un unico entorno electrico (230 V / 50 Hz) y un conjunto acotado de electrodomesticos, por lo que un detector entrenado solo con estos datos puede no generalizar a otras redes (110 V / 60 Hz) ni a otras cargas.
 - Las grabaciones son de laboratorio con arcos provocados de forma controlada; el comportamiento en instalaciones reales con ruido, armonicos y perturbaciones de red puede diferir.
 - Los archivos de mas de 100 MB estan troceados: si no se reconstruyen y verifican con los scripts y `SHA256SUMS.txt`, las lecturas binarias seran incorrectas.
@@ -81,7 +81,7 @@ No se dispone de informacion sobre otros datasets publicos comparables en la doc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/danielsaldana/AFCI_part9
+- Repositorio Hugging Face: https://huggingface.co/danielsaldana/AFCI_part9
 - Indice maestro del kit: https://huggingface.co/danielsaldana/AFCI_part6/blob/main/00_START_HERE_MASTER_INDEX.md
 - Registro Zenodo 5501527 (origen de las grabaciones `C2_*` y `C3_*`): https://zenodo.org/records/5501527
 - Registro Zenodo 3997337 (contacto de apertura y ReadMe): https://zenodo.org/records/3997337

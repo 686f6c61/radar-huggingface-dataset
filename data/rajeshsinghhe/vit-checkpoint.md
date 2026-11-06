@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`rajeshsinghhe/vit-checkpoint` es un repositorio de HuggingFace que contiene una implementacion propia y minima de un Vision Transformer (ViT) en su variante "nano", orientada a entrenamiento contrastivo. Lo publica el usuario rajeshsinghhe bajo licencia BSD-3-Clause y con etiquetas que lo identifican como PyTorch, ViT y contrastive. No es un modelo entrenado: la propia model card lo describe como un "initialization checkpoint" valido para smoke tests, no como un checkpoint con benchmarks.
+`rajeshsinghhe/vit-checkpoint` es un repositorio de Hugging Face que contiene una implementacion propia y minima de un Vision Transformer (ViT) en su variante "nano", orientada a entrenamiento contrastivo. Lo publica el usuario rajeshsinghhe bajo licencia BSD-3-Clause y con etiquetas que lo identifican como PyTorch, ViT y contrastive. No es un modelo entrenado: la propia model card lo describe como un "initialization checkpoint" valido para smoke tests, no como un checkpoint con benchmarks.
 
 El repositorio incluye el codigo Python con el modelo y un punto de entrada ejecutable, un `config.json` con la configuracion de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` de inicializacion. Los metadatos indican 16,576 parametros totales y un tamano de repositorio de 0.0 GB, coherente con un artefacto de juguete o de prueba mas que con un modelo utilizable.
 
-Su relevancia es limitada y de caracter experimental: sirve como esqueleto reproducible para montar un pipeline contrastivo, no como modelo de produccion. No se declara ningun resultado de benchmark, no hay pipeline asignado, no se documentan idiomas soportados y el repositorio no registra descargas ni likes en el momento de la consulta. Ademas, las fechas de creacion y actualizacion que reporta HuggingFace (2026-10-14) son posteriores a la fecha habitual de referencia, lo que conviene verificar antes de citarlo.
+Su relevancia es limitada y de caracter experimental: sirve como esqueleto reproducible para montar un pipeline contrastivo, no como modelo de produccion. No se declara ningun resultado de benchmark, no hay pipeline asignado, no se documentan idiomas soportados y el repositorio no registra descargas ni likes en el momento de la consulta. Ademas, las fechas de creacion y actualizacion que reporta Hugging Face (2026-10-14) son posteriores a la fecha habitual de referencia, lo que conviene verificar antes de citarlo.
 
 ## Especificaciones tecnicas
 
@@ -78,5 +78,5 @@ No disponible. El repositorio no incluye baselines, la model card recomienda con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rajeshsinghhe/vit-checkpoint
+- Hugging Face: https://huggingface.co/rajeshsinghhe/vit-checkpoint
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales relacionados con este modelo.

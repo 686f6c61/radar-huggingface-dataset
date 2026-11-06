@@ -82,7 +82,7 @@ No disponible. Al tratarse de una ficha de resultados sin pesos publicados, no e
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/tobiliicous/aion-model-clip-linear-probe-v1
+- Repositorio de Hugging Face: https://huggingface.co/tobiliicous/aion-model-clip-linear-probe-v1
 - Repositorio fuente en GitHub: https://github.com/tobilicous/ai-or-not
 - Documentos de referencia en el repositorio fuente: `docs/RESULTS.md`, `docs/SHORTCUT_ANALYSIS.md`, `docs/ETHICS.md`, `artifacts/negswap/metrics.json`
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GALA_robocasa_gr1 es un checkpoint de inferencia del proyecto GALA, publicado por el usuario ypz21 en HuggingFace, destinado a la evaluación de políticas robóticas en el entorno de simulación RoboCasa con el robot humanoide GR1 en tareas de mesa (tabletop). No es un modelo de lenguaje al uso, sino una política visión-lenguaje-acción (VLA) entrenada a partir del backbone Qwen2.5-VL-3B-Instruct, con 4.833.350.656 parámetros (~4,83 mil millones) y un repositorio de 19,3 GB distribuido en cuatro shards de safetensors.
+GALA_robocasa_gr1 es un checkpoint de inferencia del proyecto GALA, publicado por el usuario ypz21 en Hugging Face, destinado a la evaluación de políticas robóticas en el entorno de simulación RoboCasa con el robot humanoide GR1 en tareas de mesa (tabletop). No es un modelo de lenguaje al uso, sino una política visión-lenguaje-acción (VLA) entrenada a partir del backbone Qwen2.5-VL-3B-Instruct, con 4.833.350.656 parámetros (~4,83 mil millones) y un repositorio de 19,3 GB distribuido en cuatro shards de safetensors.
 
 El checkpoint está diseñado para ejecutarse con el cargador de inferencia propio del proyecto GALA (repositorio privado, requiere acceso) junto con el procesador y los archivos del backbone Qwen2.5-VL. No funciona como un pipeline estándar de Transformers, vLLM o llama.cpp, lo que limita su uso fuera del entorno de investigación para el que fue pensado. El export incluye únicamente pesos de inferencia, índice, configuración y metadatos de normalización/modalidad de GR1; excluye estados de optimizador y scheduler, estados aleatorios, registros de entrenamiento, el cabezal de predicción de bridge-supervision y metadatos de otros embodiments.
 
@@ -81,10 +81,10 @@ Los datos de los modelos comparables proceden de conocimiento general y no han s
 
 | Modelo | Parámetros | Backbone | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GALA_robocasa_gr1 | ~4,83 mil millones | Qwen2.5-VL-3B-Instruct | no disponible | pesos en HuggingFace con autenticación; cargador de inferencia en repositorio privado |
-| OpenVLA-7B (referencia externa, no verificada) | ~7 mil millones | Llama-2-7B con codificadores DINOv2 y SigLIP | licencia comunitaria de Llama 2 | pesos públicos en HuggingFace |
+| GALA_robocasa_gr1 | ~4,83 mil millones | Qwen2.5-VL-3B-Instruct | no disponible | pesos en Hugging Face con autenticación; cargador de inferencia en repositorio privado |
+| OpenVLA-7B (referencia externa, no verificada) | ~7 mil millones | Llama-2-7B con codificadores DINOv2 y SigLIP | licencia comunitaria de Llama 2 | pesos públicos en Hugging Face |
 | pi-0 / openpi (referencia externa, no verificada) | del orden de 3 mil millones | PaliGemma con cabezal de flow matching | Apache 2.0 | pesos y código públicos |
-| GR00T N1 (referencia externa, no verificada) | del orden de 2 mil millones | arquitectura propia de NVIDIA con torre de visión | licencia comunitaria de NVIDIA | pesos públicos en HuggingFace |
+| GR00T N1 (referencia externa, no verificada) | del orden de 2 mil millones | arquitectura propia de NVIDIA con torre de visión | licencia comunitaria de NVIDIA | pesos públicos en Hugging Face |
 
 Diferencias relevantes: GALA_robocasa_gr1 es el único de la lista con licencia sin especificar, sin métricas publicadas y con dependencia de un repositorio de código privado, lo que dificulta su reproducción por terceros. Los tres alternativas citadas publican pesos y código con licencias identificables, aunque su entrenamiento y evaluación se centran en otros conjuntos de tareas y embodiments.
 
@@ -106,7 +106,7 @@ Diferencias relevantes: GALA_robocasa_gr1 es el único de la lista con licencia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ypz21/GALA_robocasa_gr1
+- Modelo en Hugging Face: https://huggingface.co/ypz21/GALA_robocasa_gr1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Repositorio de código de GALA (privado, requiere acceso): https://github.com/PuzhenYuan/GALA
 - La búsqueda web realizada para esta ficha no devolvió resultados relevantes: únicamente páginas de ayuda de Google Translate y ensayos genéricos sin relación con el modelo. No se han localizado papers, blogs ni demos adicionales.

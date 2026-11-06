@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mysterium99/smolvla-50pct-neutral
+- Modelo en Hugging Face: https://huggingface.co/mysterium99/smolvla-50pct-neutral
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Documentación de SmolVLA en LeRobot: https://huggingface.co/docs/lerobot/main/en/smolvla
 - Documentación general de LeRobot: https://huggingface.co/docs/lerobot/index

@@ -89,7 +89,7 @@ No se han encontrado otros modelos comparables con la misma metodología de agre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/promotion/Llama-3.1-8B-TLDR-AbsoluteMaxmin
+- Modelo en Hugging Face: https://huggingface.co/promotion/Llama-3.1-8B-TLDR-AbsoluteMaxmin
 - Dataset de generaciones de benchmark (UltraFeedback): https://huggingface.co/datasets/promotion/nbpo-benchmark-generations
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 Community: https://www.llama.com/llama3_1/license/ (no verificado, se asume por la ficha)

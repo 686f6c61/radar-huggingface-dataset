@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sangyon/llama31_tulu3_8b_dpo_grpo_nonthink_intentcheck_tulu3_8b_dpo` es un ajuste fino experimental del modelo `allenai/Llama-3.1-Tulu-3-8B-DPO`, desarrollado por el autor `sangyon`. Se trata de un checkpoint exportado a formato HuggingFace desde un experimento de entrenamiento con GRPO (Group Relative Policy Optimization) centrado en la mejora del seguimiento de instrucciones mediante un mecanismo denominado IntentCheck, que verifica si la respuesta generada es consistente con la intencion detectada en el prompt.
+El modelo `sangyon/llama31_tulu3_8b_dpo_grpo_nonthink_intentcheck_tulu3_8b_dpo` es un ajuste fino experimental del modelo `allenai/Llama-3.1-Tulu-3-8B-DPO`, desarrollado por el autor `sangyon`. Se trata de un checkpoint exportado a formato Hugging Face desde un experimento de entrenamiento con GRPO (Group Relative Policy Optimization) centrado en la mejora del seguimiento de instrucciones mediante un mecanismo denominado IntentCheck, que verifica si la respuesta generada es consistente con la intencion detectada en el prompt.
 
 La arquitectura es la de un transformer basado en Llama 3.1, con 8.030.326.784 parametros totales. El guardado se realizo en precision BF16 en formato safetensors, sin incluir el estado del optimizador. El experimento, segun la model card, esta disenado para evaluar si una recompensa programatica junto con un bonus condicionado al paso de IntentCheck mejora la calidad de las respuestas frente al modelo base. No se han publicado resultados de benchmarks para este export, por lo que su rendimiento real frente a otros modelos no esta documentado.
 
@@ -80,10 +80,10 @@ La comparativa se limita a parametros y licencia, ya que no se dispone de result
 - Riesgo de alucinacion y sesgos heredados del modelo base, no mitigados ni medidos en este ajuste.
 - El dataset de entrenamiento y la composicion de los prompts no estan documentados, lo que limita la interpretabilidad de los resultados.
 - La verificacion de intencion (IntentCheck) depende de un modelo juez fijo; si ese juez falla, la recompensa puede estar mal asignada.
-- No se conoce la longitud de contexto efectiva ni los idiomas realmente soportados, ya que no se proporcionan en la ficha de HuggingFace.
+- No se conoce la longitud de contexto efectiva ni los idiomas realmente soportados, ya que no se proporcionan en la ficha de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sangyon/llama31_tulu3_8b_dpo_grpo_nonthink_intentcheck_tulu3_8b_dpo
+- Modelo en Hugging Face: https://huggingface.co/sangyon/llama31_tulu3_8b_dpo_grpo_nonthink_intentcheck_tulu3_8b_dpo
 - Modelo base: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-DPO
 - Registro del entrenamiento en Weights & Biases: https://wandb.ai/ifif/verl_if_rlvr/runs/ti4r0908b

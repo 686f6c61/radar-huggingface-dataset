@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de contexto de modelos alternativos en l
 
 | Version | Parametros | Tamano de pesos | Proyector | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen/Qwen3.5-35B-A3B (base, BF16) | 34,66 mil millones | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace, publicacion oficial de Qwen |
+| Qwen/Qwen3.5-35B-A3B (base, BF16) | 34,66 mil millones | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face, publicacion oficial de Qwen |
 | Este repositorio, Q4_K_M | 34,66 mil millones | 21,17 GB | 0,90 GB (BF16) o 0,51 GB (Q4_K_M) | no disponible | Apache-2.0 | Requiere runtime personalizado |
 | Este repositorio, IQ3_KT | 34,66 mil millones | 13,97 GB | 0,90 GB (BF16) o 0,51 GB (Q4_K_M) | no disponible | Apache-2.0 | Requiere runtime personalizado |
 
@@ -113,7 +113,7 @@ No se dispone de datos de benchmarks ni de contexto de modelos alternativos en l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Advantech-EIOT/Qwen3.5-35B-A3B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Advantech-EIOT/Qwen3.5-35B-A3B-GGUF
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Ficheros del repositorio (rutas relativas a la raiz del repositorio): Q4_K_M/Qwen3.5-35B-A3B-Q4_K_M.gguf, IQ3_KT/Qwen3.5-35B-A3B-IQ3_KT.gguf, mmproj/mmproj-Qwen3.5-35B-A3B-BF16.gguf, mmproj/mmproj-Qwen3.5-35B-A3B-Q4_K_M.gguf
 - Manifiesto de tensores, tamanos y procedencia: manifest.json (en la raiz del repositorio)

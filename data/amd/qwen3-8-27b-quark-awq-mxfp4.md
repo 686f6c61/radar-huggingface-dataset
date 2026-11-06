@@ -82,6 +82,6 @@ La comparativa con otros modelos multimodales cuantizados (por ejemplo, versione
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Qwen3.8-27B-Quark-AWQ-MXFP4
+- Repositorio Hugging Face: https://huggingface.co/amd/Qwen3.8-27B-Quark-AWQ-MXFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de cuantizacion AMD Quark: https://github.com/amd/Quark

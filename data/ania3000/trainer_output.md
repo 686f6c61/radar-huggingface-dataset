@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ania3000/trainer_output` es un modelo de clasificación de tokens (token classification) obtenido por fine-tuning de `cis-lmu/glot500-base`, un modelo multilingüe de 394 millones de parámetros entrenado sobre más de 500 idiomas. El ajuste se ha realizado con la librería `transformers` de HuggingFace usando el `Trainer`, sobre un dataset no especificado en la model card. El resultado es un modelo especializado en etiquetado de secuencias (típicamente NER, POS o chunking) que alcanza una accuracy del 92,68 % y una sentence accuracy del 49,61 % en el conjunto de evaluación.
+`ania3000/trainer_output` es un modelo de clasificación de tokens (token classification) obtenido por fine-tuning de `cis-lmu/glot500-base`, un modelo multilingüe de 394 millones de parámetros entrenado sobre más de 500 idiomas. El ajuste se ha realizado con la librería `transformers` de Hugging Face usando el `Trainer`, sobre un dataset no especificado en la model card. El resultado es un modelo especializado en etiquetado de secuencias (típicamente NER, POS o chunking) que alcanza una accuracy del 92,68 % y una sentence accuracy del 49,61 % en el conjunto de evaluación.
 
 La relevancia de este modelo radica en que aprovecha la base multilingüe de Glot500 para ofrecer una solución de etiquetado de tokens en un amplio espectro de idiomas, con una licencia Apache 2.0 que permite uso comercial sin restricciones. Sin embargo, la documentación es muy escasa: no se indica el dataset de entrenamiento, los idiomas concretos soportados ni se publican benchmarks comparativos. Esto limita su reproducibilidad y dificulta evaluar su rendimiento en tareas específicas más allá de las métricas reportadas.
 
@@ -23,14 +23,14 @@ La relevancia de este modelo radica en que aprovecha la base multilingüe de Glo
 
 El modelo se basa en `cis-lmu/glot500-base`, un encoder transformer de tipo RoBERTa con 394 millones de parámetros, entrenado sobre un corpus masivo multilingüe (más de 500 idiomas). Glot500-base emplea una arquitectura estándar de transformer encoder con atención de tiempo lineal (lineal attention) y un vocabulario de 500k tokens, diseñado para maximizar la cobertura de idiomas de bajos recursos. El fine-tuning se ha realizado para la tarea de token classification, añadiendo una cabeza de clasificación por token sobre la representación del modelo base.
 
-El entrenamiento se llevó a cabo con el `Trainer` de HuggingFace durante 25 épocas, con un learning rate de 5e-5, batch size de 8, optimizador AdamW (fused) y scheduler lineal. La pérdida de entrenamiento descendió de 3.26 a 0.044, mientras que la pérdida de validación alcanzó un mínimo de 0.5352 en la época 9 y luego aumentó ligeramente (0.6143 en la época 16), lo que sugiere un posible sobreajuste a partir de la época 10. El dataset de entrenamiento no se especifica, lo que impide conocer la composición de los datos ni si se aplicaron técnicas de regularización o aumentación.
+El entrenamiento se llevó a cabo con el `Trainer` de Hugging Face durante 25 épocas, con un learning rate de 5e-5, batch size de 8, optimizador AdamW (fused) y scheduler lineal. La pérdida de entrenamiento descendió de 3.26 a 0.044, mientras que la pérdida de validación alcanzó un mínimo de 0.5352 en la época 9 y luego aumentó ligeramente (0.6143 en la época 16), lo que sugiere un posible sobreajuste a partir de la época 10. El dataset de entrenamiento no se especifica, lo que impide conocer la composición de los datos ni si se aplicaron técnicas de regularización o aumentación.
 
 ## Capacidades
 
 - Clasificación de tokens: etiquetado de cada token de una secuencia, adecuado para tareas como reconocimiento de entidades nombradas (NER), etiquetado gramatical (POS) o chunking.
 - Multilingüismo: al heredar la arquitectura y el vocabulario de Glot500-base, el modelo puede procesar texto en cientos de idiomas, aunque el fine-tuning puede haber sesgado el rendimiento hacia los idiomas presentes en el dataset de entrenamiento.
 - Inferencia eficiente: al ser un encoder de 394M parámetros, puede ejecutarse en GPUs de consumo moderado y en CPU con cuantización.
-- Compatibilidad con pipelines de HuggingFace: se integra directamente con el pipeline `token-classification` de `transformers`, facilitando su uso en aplicaciones existentes.
+- Compatibilidad con pipelines de Hugging Face: se integra directamente con el pipeline `token-classification` de `transformers`, facilitando su uso en aplicaciones existentes.
 - No soporta generación de texto, tool calling ni razonamiento multi-paso; es un modelo discriminativo puro.
 
 ## Casos de uso
@@ -44,7 +44,7 @@ El entrenamiento se llevó a cabo con el `Trainer` de HuggingFace durante 25 ép
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks externos (MMLU, HumanEval, etc.) en la información disponible. El model-index de HuggingFace declara una lista de resultados vacía. Los únicos datos de rendimiento provienen de la evaluación del autor durante el entrenamiento:
+No se han publicado resultados de benchmarks externos (MMLU, HumanEval, etc.) en la información disponible. El model-index de Hugging Face declara una lista de resultados vacía. Los únicos datos de rendimiento provienen de la evaluación del autor durante el entrenamiento:
 
 | Metrica | Valor |
 |---|---|
@@ -59,7 +59,7 @@ Estas métricas se obtuvieron sobre un conjunto de evaluación no descrito, por 
 - VRAM estimada: el modelo tiene 394M parámetros. En FP32 ocupa aproximadamente 1,6 GB (coincide con el tamaño del repo). En FP16 (~800 MB) o int8 (~400 MB) se reduce considerablemente.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en FP16 (por ejemplo, NVIDIA GTX 1650, RTX 3050, T4). Para lotes grandes o contextos largos se recomienda 8 GB o más (RTX 3070, A10, A100).
 - En CPU: puede ejecutarse con `transformers` en modo CPU, aunque la latencia será alta para secuencias largas. Con cuantización dinámica (ONNX Runtime) es viable para prototipos.
-- Opciones de despliegue: `transformers` (Python), `pipelines` de HuggingFace, ONNX Runtime, TorchServe, o servidores de inferencia como TGI o vLLM (aunque estos últimos están optimizados para modelos generativos, también soportan encoders).
+- Opciones de despliegue: `transformers` (Python), `pipelines` de Hugging Face, ONNX Runtime, TorchServe, o servidores de inferencia como TGI o vLLM (aunque estos últimos están optimizados para modelos generativos, también soportan encoders).
 - Latencia y throughput: no disponibles. Dependen del hardware y de la longitud de las secuencias. Como referencia, un encoder de 400M parámetros en una T4 suele procesar entre 100 y 300 secuencias por segundo con batch de 8, pero estos valores son estimaciones generales y no han sido medidos para este modelo concreto.
 
 ## Comparativa con modelos similares
@@ -85,5 +85,5 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ania3000/trainer_output
+- Modelo en Hugging Face: https://huggingface.co/ania3000/trainer_output
 - Modelo base Glot500-base: https://huggingface.co/cis-lmu/glot500-base

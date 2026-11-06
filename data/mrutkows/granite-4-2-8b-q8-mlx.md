@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 ## Enlaces
 
 - Repositorio de esta variante MLX: https://huggingface.co/mrutkows/granite-4.2-8b-q8-mlx
-- Modelo base en HuggingFace: https://huggingface.co/ibm-granite/granite-4.2-8b
+- Modelo base en Hugging Face: https://huggingface.co/ibm-granite/granite-4.2-8b
 - Documentacion oficial de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2
 - Pagina general de Granite de IBM: https://www.ibm.com/granite
 - Variantes GGUF del modelo base: https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF

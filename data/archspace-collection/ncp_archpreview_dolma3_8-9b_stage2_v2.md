@@ -74,7 +74,7 @@ Nota: la comparación principal del informe (Overall AVG 57.57, MMLU 68.48, GSM8
 - VRAM estimada: en bfloat16, los pesos ocupan aproximadamente 17,88 GB (8.94B × 2 bytes), por lo que se recomienda alrededor de 20 GB de VRAM para inferencia con overhead. Con cuantización 4-bit, la estimación baja a unos 6 GB.
 - GPU recomendadas: para bfloat16 sin cuantizar, una GPU con 24 GB de VRAM (RTX 4090, A100 40GB) es adecuada. Para 4-bit, una GPU de 8-12 GB puede ser suficiente.
 - Cabe en consumer GPU: sí, con cuantización 4-bit en GPUs como RTX 3090 o RTX 4090. En bfloat16, una RTX 4090 de 24 GB puede cargar el modelo, aunque el contexto largo puede aumentar la demanda de memoria.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI y Transformers. El modelo requiere "custom-code" según los tags de HuggingFace, por lo que puede necesitar código personalizado para cargarse correctamente.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI y Transformers. El modelo requiere "custom-code" según los tags de Hugging Face, por lo que puede necesitar código personalizado para cargarse correctamente.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ En cuanto a rendimiento, V2 supera a OLMo-3-7B en MBPP (49.34 vs 48.98) y es inf
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_v2
+- Hugging Face del modelo: https://huggingface.co/ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_v2
 - Colección NCP-ArchPreview: https://huggingface.co/collections/ArchSpace-Collection/ncp-archpreview
 - Código de evaluación: https://github.com/LuckySJTU/ncp_olmo_eval
 - Modelo NCPFlash (draft model): https://huggingface.co/ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_DFlash2_NCPFlash

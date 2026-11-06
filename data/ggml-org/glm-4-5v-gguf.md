@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- [HuggingFace - ggml-org/GLM-4.5V-GGUF](https://huggingface.co/ggml-org/GLM-4.5V-GGUF)
+- [Hugging Face - ggml-org/GLM-4.5V-GGUF](https://huggingface.co/ggml-org/GLM-4.5V-GGUF)
 - [Modelo base - zai-org/GLM-4.5V](https://huggingface.co/zai-org/GLM-4.5V)
 - [Repositorio oficial GLM-V en GitHub](https://github.com/zai-org/GLM-V)
 - [Sitio oficial de GLM-4.5](https://glm45.org/)

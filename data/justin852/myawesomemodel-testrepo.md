@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario `justin852` bajo licencia MIT. La model card lo presenta como una versión mejorada de un modelo previo, con avances en razonamiento e inferencia obtenidos mediante mayor cómputo y optimizaciones algorítmicas en la fase de post-entrenamiento. El repositorio está etiquetado como `bert` y `feature-extraction` en HuggingFace, lo que entra en contradicción con el contenido de la model card, que describe un modelo generativo conversacional con modo de razonamiento extendido.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario `justin852` bajo licencia MIT. La model card lo presenta como una versión mejorada de un modelo previo, con avances en razonamiento e inferencia obtenidos mediante mayor cómputo y optimizaciones algorítmicas en la fase de post-entrenamiento. El repositorio está etiquetado como `bert` y `feature-extraction` en Hugging Face, lo que entra en contradicción con el contenido de la model card, que describe un modelo generativo conversacional con modo de razonamiento extendido.
 
 La información disponible es escasa y parcialmente inconsistente: el repositorio ocupa 0.0 GB, no se especifican parámetros totales, longitud de contexto, idiomas soportados ni formato de pesos, y el nombre del repositorio (`MyAwesomeModel-TestRepo`) sugiere que se trata de un artefacto de prueba más que de un modelo listo para producción. La model card incluye tablas de benchmarks con resultados numéricos y recomendaciones de uso (system prompt, temperatura 0.6, plantillas para búsqueda web), pero no ofrece detalles verificables sobre arquitectura ni datos de entrenamiento.
 
@@ -12,7 +12,7 @@ Por su relevancia práctica, debe evaluarse con cautela: los datos de rendimient
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible (etiquetado como `bert` en HuggingFace; la model card describe comportamiento generativo, contradicción no resuelta) |
+| Arquitectura | No disponible (etiquetado como `bert` en Hugging Face; la model card describe comportamiento generativo, contradicción no resuelta) |
 | Parámetros totales | No disponible |
 | Parámetros activos | No disponible |
 | Longitud de contexto | No disponible |
@@ -23,7 +23,7 @@ Por su relevancia práctica, debe evaluarse con cautela: los datos de rendimient
 
 ## Arquitectura y entrenamiento
 
-No se proporciona información verificable sobre la arquitectura interna. La etiqueta de HuggingFace indica `bert`, mientras que la model card describe un modelo con modo de razonamiento extendido, capacidad de function calling y generación conversacional, lo que apunta a una arquitectura de tipo decoder-only. Esta discrepancia no se resuelve en la documentación disponible.
+No se proporciona información verificable sobre la arquitectura interna. La etiqueta de Hugging Face indica `bert`, mientras que la model card describe un modelo con modo de razonamiento extendido, capacidad de function calling y generación conversacional, lo que apunta a una arquitectura de tipo decoder-only. Esta discrepancia no se resuelve en la documentación disponible.
 
 Respecto al entrenamiento, la model card menciona de forma genérica un aumento de recursos computacionales y "mecanismos de optimización algorítmica" durante el post-entrenamiento, sin especificar número de tokens, composición del dataset, ni si se emplearon RLHF, DPO u otras técnicas de alineamiento. Se indica que el modelo reduce la tasa de alucinación y mejora el soporte de function calling respecto a la versión anterior, pero no se aportan métricas que respalden estas afirmaciones más allá de la tabla de benchmarks. No hay información sobre decodificación especulativa, atención lineal ni otras innovaciones técnicas.
 
@@ -46,7 +46,7 @@ Respecto al entrenamiento, la model card menciona de forma genérica un aumento 
 - Respuesta sobre documentos con plantilla de carga de archivos: la model card proporciona un `file_template` que permite inyectar el contenido de un archivo y formular preguntas sobre él.
 - Búsqueda aumentada con citación: la plantilla `search_answer_en_template` permite integrar resultados de búsqueda web y exigir citas en formato `[citation:X]`, útil en asistentes de investigación.
 - Atención al cliente con function calling: la mejora declarada en soporte de function calling permitiría integrar el modelo en flujos de atención con consulta a APIs externas, aunque no se especifican límites de contexto.
-- Evaluación comparativa de modelos: por su carácter de repositorio de prueba, puede servir como referencia para pipelines de evaluación de modelos en HuggingFace.
+- Evaluación comparativa de modelos: por su carácter de repositorio de prueba, puede servir como referencia para pipelines de evaluación de modelos en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -84,14 +84,14 @@ Además, la model card declara una precisión del 87,5 % en AIME 2025 (frente al
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MyAwesomeModel | No disponible | No disponible | MIT | HuggingFace (repo de 0.0 GB) |
+| MyAwesomeModel | No disponible | No disponible | MIT | Hugging Face (repo de 0.0 GB) |
 | Modelos comparables | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información suficiente para establecer una comparativa fiable: la model card referencia "Model1", "Model2" y "Model1-v2" sin identificarlos, y no se declaran parámetros ni contexto que permitan emparejarlo con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Inconsistencia entre metadatos y contenido: HuggingFace etiqueta el modelo como `bert` y `feature-extraction`, mientras que la model card describe un modelo generativo con razonamiento extendido.
+- Inconsistencia entre metadatos y contenido: Hugging Face etiqueta el modelo como `bert` y `feature-extraction`, mientras que la model card describe un modelo generativo con razonamiento extendido.
 - Repositorio de 0.0 GB: no se confirma la presencia de pesos descargables; el nombre `TestRepo` sugiere un artefacto de prueba.
 - Benchmarks no verificables: los resultados proceden exclusivamente de la model card, sin identificadores de los modelos de comparación ni especificación de métricas.
 - Riesgo de alucinación: el autor afirma una reducción de la tasa de alucinación, pero no aporta métricas ni metodología de evaluación.
@@ -99,11 +99,11 @@ No se dispone de información suficiente para establecer una comparativa fiable:
 - Contexto desconocido: sin longitud de contexto declarada, no es posible planificar despliegues con ventanas largas.
 - Coste de inferencia elevado en tareas de razonamiento: 23K tokens por pregunta según la model card, con el impacto económico que ello supone.
 - Licencia MIT: permite uso comercial y modificación, pero al no haber pesos verificables ni documentación técnica, la viabilidad en producción no está garantizada.
-- Fecha de creación futura (2026-10-31) en los metadatos de HuggingFace, lo que refuerza la naturaleza anómala o de prueba del repositorio.
+- Fecha de creación futura (2026-10-31) en los metadatos de Hugging Face, lo que refuerza la naturaleza anómala o de prueba del repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/justin852/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/justin852/MyAwesomeModel-TestRepo
 - Repositorio de código para ejecución local: no disponible (la model card lo menciona sin enlace)
 - Paper: no disponible
 - Blog oficial: no disponible

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `cwaud/tournament-exp-s1-0bf165c5-e3e0-43a8-b8c5-63b50b49e328-5Exp4c955f1dce21e560` es un checkpoint alojado en HuggingFace por el usuario `cwaud`, con un total de 1.711.378.432 parametros (aproximadamente 1,71 mil millones) confirmados a partir de los metadatos de los ficheros safetensors. El repositorio ocupa 3,4 GB y fue creado el 12 de octubre de 2026, con la ultima actualizacion apenas un minuto despues, lo que sugiere una publicacion automatizada o de caracter efimero.
+El modelo identificado como `cwaud/tournament-exp-s1-0bf165c5-e3e0-43a8-b8c5-63b50b49e328-5Exp4c955f1dce21e560` es un checkpoint alojado en Hugging Face por el usuario `cwaud`, con un total de 1.711.378.432 parametros (aproximadamente 1,71 mil millones) confirmados a partir de los metadatos de los ficheros safetensors. El repositorio ocupa 3,4 GB y fue creado el 12 de octubre de 2026, con la ultima actualizacion apenas un minuto despues, lo que sugiere una publicacion automatizada o de caracter efimero.
 
-El nombre del repositorio sigue un patron de experimento de torneo (`tournament-exp-s1-...`) con identificadores hexadecimales intercalados, lo que apunta a un artefacto generado automaticamente dentro de un pipeline de evaluacion o comparacion de variantes, mas que a un modelo publicado con documentacion destinada al publico. La etiqueta `llama` en HuggingFace indica que la arquitectura declarada pertenece a la familia Llama, si bien no se especifica la version, el tokenizador exacto ni la configuracion concreta.
+El nombre del repositorio sigue un patron de experimento de torneo (`tournament-exp-s1-...`) con identificadores hexadecimales intercalados, lo que apunta a un artefacto generado automaticamente dentro de un pipeline de evaluacion o comparacion de variantes, mas que a un modelo publicado con documentacion destinada al publico. La etiqueta `llama` en Hugging Face indica que la arquitectura declarada pertenece a la familia Llama, si bien no se especifica la version, el tokenizador exacto ni la configuracion concreta.
 
 No hay informacion disponible sobre el pipeline de inferencia, la licencia, los idiomas soportados, la longitud de contexto ni los datos de entrenamiento. Con 6 descargas y 0 likes en el momento de la consulta, se trata de un checkpoint sin adopcion publica ni documentacion tecnica asociada. La relevancia practica de esta ficha es, por tanto, la de documentar con rigor que la informacion publica es insuficiente para evaluar el modelo en produccion, y que cualquier uso requeriria inspeccionar directamente los ficheros del repositorio.
 
@@ -46,7 +46,7 @@ Dado que no hay informacion sobre licencia, idiomas, contexto ni calidad de sali
 - Inspeccion forense de pesos: cargar los safetensors con `safetensors` o `transformers` para extraer el numero de tensores, las dimensiones de cada capa y el tamano de vocabulario del tokenizador, lo que permitiria reconstruir la arquitectura real.
 - Pruebas de inferencia locales en GPU de consumo: con 1,71 B parametros, el modelo es teoricamente ejecutable en una GPU de 8-12 GB en fp16 o en cuantizacion de 4 bits, como banco de pruebas de tooling (llama.cpp, vLLM), no como componente de producto.
 - Evaluacion comparativa interna: si el nombre corresponde a un torneo de variantes, el checkpoint puede usarse como uno de los contendientes de una evaluacion propia con un conjunto de validacion controlado.
-- Analisis de artefactos automaticos en HuggingFace: sirve como caso de estudio de repositorios generados por pipelines sin documentacion, util para disenar politicas de curacion de modelos.
+- Analisis de artefactos automaticos en Hugging Face: sirve como caso de estudio de repositorios generados por pipelines sin documentacion, util para disenar politicas de curacion de modelos.
 - Fine-tuning posterior: solo si se confirma la licencia y el origen de los pesos; un modelo de 1,71 B es viable de ajustar en una unica GPU de 24 GB con LoRA o QLoRA, pero la ausencia de licencia declarada bloquea cualquier uso comercial sin aclaracion previa del autor.
 
 ## Benchmarks y rendimiento
@@ -71,10 +71,10 @@ La comparativa se establece por rango de parametros, ya que no hay datos de rend
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cwaud/tournament-exp-s1-... (este modelo) | 1,71 B | No disponible | No disponible | HuggingFace, 6 descargas |
-| Llama 3.2 1B | 1,23 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente distribuido |
-| Qwen2.5 1.5B | 1,54 B | 32.768 tokens (ampliable con RoPE scaling) | Apache 2.0 | HuggingFace, ampliamente distribuido |
-| Gemma 2 2B | 2,6 B | 8.000 tokens | Gemma Terms of Use | HuggingFace, ampliamente distribuido |
+| cwaud/tournament-exp-s1-... (este modelo) | 1,71 B | No disponible | No disponible | Hugging Face, 6 descargas |
+| Llama 3.2 1B | 1,23 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente distribuido |
+| Qwen2.5 1.5B | 1,54 B | 32.768 tokens (ampliable con RoPE scaling) | Apache 2.0 | Hugging Face, ampliamente distribuido |
+| Gemma 2 2B | 2,6 B | 8.000 tokens | Gemma Terms of Use | Hugging Face, ampliamente distribuido |
 
 No es posible comparar rendimiento en benchmarks porque el modelo analizado no publica resultados. En terminos de documentacion y garantias legales, los tres modelos alternativos ofrecen licencia explicita, contexto declarado y evaluaciones publicadas, mientras que este checkpoint no ofrece ninguna de las tres cosas.
 
@@ -93,6 +93,6 @@ No es posible comparar rendimiento en benchmarks porque el modelo analizado no p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-0bf165c5-e3e0-43a8-b8c5-63b50b49e328-5Exp4c955f1dce21e560
+- Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-0bf165c5-e3e0-43a8-b8c5-63b50b49e328-5Exp4c955f1dce21e560
 
 No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este modelo. Los resultados de busqueda devueltos no contenian informacion relevante sobre el checkpoint.

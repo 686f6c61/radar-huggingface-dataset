@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alexeino/run_muril_raw` es un modelo de clasificación de texto obtenido mediante fine-tuning supervisado de `google/muril-base-cased`, el encoder BERT multilingüe de Google entrenado sobre 197 millones de pares de frases en 17 idiomas indios. El autor del ajuste es el usuario de HuggingFace `alexeino`, y el modelo se publicó el 1 de noviembre de 2026 con licencia Apache 2.0.
+`alexeino/run_muril_raw` es un modelo de clasificación de texto obtenido mediante fine-tuning supervisado de `google/muril-base-cased`, el encoder BERT multilingüe de Google entrenado sobre 197 millones de pares de frases en 17 idiomas indios. El autor del ajuste es el usuario de Hugging Face `alexeino`, y el modelo se publicó el 1 de noviembre de 2026 con licencia Apache 2.0.
 
 El modelo resuelve una tarea de clasificación concreta (etiquetas no especificadas en la model card) sobre un dataset que el autor no documenta. Con 237,5 millones de parámetros, es un encoder de tamaño base: adecuado para inferencia de baja latencia en CPU y GPU modestas, no para generación de texto ni razonamiento complejo.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada y de nicho: se trata de un artefacto de entrenamiento 
 
 El modelo hereda la arquitectura de `google/muril-base-cased`: un transformer encoder tipo BERT con 12 capas, atención multi-cabeza y tokenizador WordPiece entrenado específicamente para lenguas indias. MuRIL se preentrenó con objetivos MLM y traducción de frases en 17 idiomas indios, lo que le da una representación subléxica mejorada frente a mBERT para esos idiomas. El fine-tuning añade una cabeza de clasificación sobre el token `[CLS]`.
 
-El ajuste se realizó con el `Trainer` de HuggingFace durante 15 épocas, learning rate 5e-5, batch de entrenamiento 16, batch de evaluación 32, optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-8, scheduler lineal con 10 % de warmup y semilla 42. El conjunto de datos no se especifica. Las versiones de framework declaradas son Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.23.1. No se documenta RLHF, DPO ni ninguna innovación técnica adicional; es un fine-tuning supervisado estándar.
+El ajuste se realizó con el `Trainer` de Hugging Face durante 15 épocas, learning rate 5e-5, batch de entrenamiento 16, batch de evaluación 32, optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-8, scheduler lineal con 10 % de warmup y semilla 42. El conjunto de datos no se especifica. Las versiones de framework declaradas son Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.23.1. No se documenta RLHF, DPO ni ninguna innovación técnica adicional; es un fine-tuning supervisado estándar.
 
 ## Capacidades
 
@@ -80,10 +80,10 @@ El mejor punto de validación se alcanza en la época 9 (Macro F1 0,8560); a par
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `alexeino/run_muril_raw` | 237,5 M | no disponible | no declarados (base: 17 indios + inglés) | Apache 2.0 | HuggingFace, 0 descargas |
-| `google/muril-base-cased` | ~237 M | 512 tokens | 17 idiomas indios + inglés | Apache 2.0 | HuggingFace, ampliamente usado |
-| `bert-base-multilingual-cased` | ~178 M | 512 tokens | 104 idiomas | Apache 2.0 | HuggingFace, muy usado |
-| `google/muril-large-cased` | ~575 M | 512 tokens | 17 idiomas indios + inglés | Apache 2.0 | HuggingFace |
+| `alexeino/run_muril_raw` | 237,5 M | no disponible | no declarados (base: 17 indios + inglés) | Apache 2.0 | Hugging Face, 0 descargas |
+| `google/muril-base-cased` | ~237 M | 512 tokens | 17 idiomas indios + inglés | Apache 2.0 | Hugging Face, ampliamente usado |
+| `bert-base-multilingual-cased` | ~178 M | 512 tokens | 104 idiomas | Apache 2.0 | Hugging Face, muy usado |
+| `google/muril-large-cased` | ~575 M | 512 tokens | 17 idiomas indios + inglés | Apache 2.0 | Hugging Face |
 
 Frente a `google/muril-base-cased`, este checkpoint añade una cabeza de clasificación ya entrenada, pero carece de la documentación y validación externa del modelo original. Frente a `bert-base-multilingual-cased`, MuRIL ofrece mejor tokenización para escrituras índicas, aunque menor cobertura idiomática global. `muril-large-cased` triplica los parámetros y ofrece mayor capacidad a costa de más VRAM y latencia.
 
@@ -100,7 +100,7 @@ Frente a `google/muril-base-cased`, este checkpoint añade una cabeza de clasifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexeino/run_muril_raw
+- Modelo en Hugging Face: https://huggingface.co/alexeino/run_muril_raw
 - Modelo base: https://huggingface.co/google/muril-base-cased
 - Paper de MuRIL (Khanuja et al., 2021): https://arxiv.org/abs/2103.10730
 - Repositorio de MuRIL en GitHub: https://github.com/google-research/google-research/tree/master/muril

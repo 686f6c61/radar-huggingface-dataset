@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mradermacher/securecoder-30b-pro-v2-merged-i1-GGUF` contiene cuantizaciones en formato GGUF del modelo base `Taimwe/securecoder-30b-pro-v2-merged`, un transformer de aproximadamente 30.532 millones de parametros (30,5 B). El trabajo de cuantizacion lo firma mradermacher, un publicador habitual de versiones GGUF para llama.cpp, que en este caso ha generado los ficheros a partir del modelo original alojado en HuggingFace.
+El repositorio `mradermacher/securecoder-30b-pro-v2-merged-i1-GGUF` contiene cuantizaciones en formato GGUF del modelo base `Taimwe/securecoder-30b-pro-v2-merged`, un transformer de aproximadamente 30.532 millones de parametros (30,5 B). El trabajo de cuantizacion lo firma mradermacher, un publicador habitual de versiones GGUF para llama.cpp, que en este caso ha generado los ficheros a partir del modelo original alojado en Hugging Face.
 
 La relevancia de esta publicacion es practica: permite ejecutar un modelo de 30B en hardware de consumo mediante cuantizacion agresiva. Sin embargo, el repositorio esta en un estado muy inicial (0 descargas y 0 likes en el momento de redactar la ficha) y la model card es una plantilla generica de mradermacher que no documenta arquitectura, datos de entrenamiento, contexto ni capacidades reales del modelo original.
 
@@ -35,7 +35,7 @@ Lo unico inferible a partir de los metadatos es que se trata de un modelo denso 
 No se documentan capacidades especificas en la informacion disponible. Las unicas etiquetas declaradas son `conversational`, `endpoints_compatible` e `imatrix`, que indican:
 
 - Generacion de texto conversacional multi-turno (etiqueta `conversational`).
-- Compatibilidad con endpoints de inferencia estandar de HuggingFace.
+- Compatibilidad con endpoints de inferencia estandar de Hugging Face.
 - Cuantizacion ponderada mediante matriz de importancia (imatrix), lo que mejora la fidelidad de los cuants de baja precision.
 
 No hay evidencia en la informacion proporcionada sobre soporte de tool calling, capacidades de agente, razonamiento multi-paso, vision, audio, modo de pensamiento explicito ni cobertura multilingue mas alla del ingles. El nombre del modelo sugiere una orientacion a codigo y seguridad, pero esto es una inferencia nominal, no un dato confirmado por la model card.
@@ -97,7 +97,7 @@ La principal desventaja de este modelo frente a las alternativas es la ausencia 
 - Riesgo de alucinacion: no hay evaluaciones publicadas, y en tareas de codigo la generacion de APIs o funciones inexistentes es un fallo tipico de los modelos cuantizados a baja precision.
 - Longitud de contexto desconocida: no se puede dimensionar la cache KV ni disenar sistemas RAG sin medirla empiricamente.
 - Adopcion nula: 0 descargas y 0 likes en el momento de la consulta, sin comunidad que haya validado su funcionamiento ni reportado problemas.
-- Fechas de metadatos anomalas: el repositorio figura creado en 2026, lo que sugiere un posible error en los datos de HuggingFace y aconseja verificar el estado real del repositorio antes de depender de el.
+- Fechas de metadatos anomalas: el repositorio figura creado en 2026, lo que sugiere un posible error en los datos de Hugging Face y aconseja verificar el estado real del repositorio antes de depender de el.
 
 ## Enlaces
 

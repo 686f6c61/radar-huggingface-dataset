@@ -82,7 +82,7 @@ La comparación cuantitativa de rendimiento no está disponible porque el reposi
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/EcomGen-0.0.1v-Renewel-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/EcomGen-0.0.1v-Renewel-GGUF
 - Modelo base: https://huggingface.co/UICHEOL-HWANG/EcomGen-0.0.1v-Renewel
 - Página de descargas del autor para este modelo: https://hf.tst.eu/model#EcomGen-0.0.1v-Renewel-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

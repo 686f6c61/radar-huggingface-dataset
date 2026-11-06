@@ -4,7 +4,7 @@
 
 El repositorio `Her77/opd-baseline-repro-checkpoints` contiene los checkpoints generados por el proyecto `opd-baseline-repro`, un overlay reproducible del baseline *response-only* del método OPD (On-Policy Distillation) desarrollado por el grupo THUNLP. Este baseline entrena un modelo estudiante (Qwen2.5-3B-Instruct) mediante destilación on-policy desde un modelo profesor, utilizando aprendizaje por refuerzo con un curriculum de tareas en el entorno AlfWorld. El objetivo es validar y reproducir de forma fiable los resultados publicados por THUNLP/OPD, fijando versiones de código, runtime y datos de entrenamiento.
 
-El repositorio almacena 81,5 GB de pesos en formato safetensors, con acceso restringido (gated) en HuggingFace. Está pensado para investigadores que necesitan reproducir el pipeline completo de OPD, incluyendo la fase de entrenamiento de tres pasos y el entrenamiento completo, en entornos multi-GPU. Su relevancia radica en que proporciona una base verificable para estudiar la destilación on-policy en agentes de razonamiento y toma de decisiones, un área activa en IA open source.
+El repositorio almacena 81,5 GB de pesos en formato safetensors, con acceso restringido (gated) en Hugging Face. Está pensado para investigadores que necesitan reproducir el pipeline completo de OPD, incluyendo la fase de entrenamiento de tres pasos y el entrenamiento completo, en entornos multi-GPU. Su relevancia radica en que proporciona una base verificable para estudiar la destilación on-policy en agentes de razonamiento y toma de decisiones, un área activa en IA open source.
 
 ## Especificaciones tecnicas
 
@@ -60,7 +60,7 @@ No se dispone de información suficiente para comparar directamente con otros mo
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated en HuggingFace, por lo que se requiere aceptar condiciones de uso antes de descargar.
+- Acceso restringido: el repositorio es gated en Hugging Face, por lo que se requiere aceptar condiciones de uso antes de descargar.
 - Licencia no especificada: no se indica la licencia, lo que impide conocer restricciones de uso comercial o modificación.
 - Sesgos y alucinaciones: no se han evaluado; el modelo base Qwen2.5 puede presentar sesgos típicos de los modelos entrenados con datos web, y el entrenamiento en AlfWorld no corrige estos problemas.
 - Limitaciones de contexto: no se especifica la longitud de contexto de los checkpoints; se asume la del modelo base (32 768 tokens), pero no está confirmado.
@@ -70,7 +70,7 @@ No se dispone de información suficiente para comparar directamente con otros mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Her77/opd-baseline-repro-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/Her77/opd-baseline-repro-checkpoints
 - Repositorio GitHub del overlay: https://github.com/Sisyphe-lee/opd-baseline-repro
 - README del overlay: https://github.com/Sisyphe-lee/opd-baseline-repro/blob/main/README.md
 - Repositorio original THUNLP/OPD: no disponible en la información proporcionada (se menciona en el README del overlay, pero no se incluye la URL directa)

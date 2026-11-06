@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed10` es un ajuste fino de tipo supervisado (SFT) sobre el modelo base `goldfish-models/swa_latn_10mb`, un modelo monolingue de la familia Goldfish orientado al swahili en escritura latina. Lo desarrolla el usuario de HuggingFace `francesca9805` y se ha entrenado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.5.1. Se trata de un modelo pequeno: 39.087.104 parametros totales (unos 39 millones), lo que lo situa en la gama de los GPT-2 pequenos y permite ejecutarlo incluso en CPU.
+El modelo `francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed10` es un ajuste fino de tipo supervisado (SFT) sobre el modelo base `goldfish-models/swa_latn_10mb`, un modelo monolingue de la familia Goldfish orientado al swahili en escritura latina. Lo desarrolla el usuario de Hugging Face `francesca9805` y se ha entrenado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.5.1. Se trata de un modelo pequeno: 39.087.104 parametros totales (unos 39 millones), lo que lo situa en la gama de los GPT-2 pequenos y permite ejecutarlo incluso en CPU.
 
 El interes de este artefacto es fundamentalmente de investigacion: por la nomenclatura del identificador (`10mb`, `100mb-packed`, `Dp`, `bfd`, `iso`, `seed10`) y por la existencia de variantes hermanas con otras semillas (`seed455`) y otros idiomas (`jpn-jpan`), parece formar parte de una rejilla de experimentos de ablacion sobre tamano de datos, hiperparametros y semillas aleatorias. No es un modelo de proposito general ni compite con los LLM actuales, sino una pieza de reproducibilidad para estudiar el ajuste fino en lenguas de bajos recursos.
 
@@ -28,7 +28,7 @@ La relevancia actual es acotada pero real: los modelos Goldfish y sus derivados 
 
 La arquitectura es una transformer causal de tipo GPT-2, segun la etiqueta declarada en la model card y en las etiquetas de Transformers. Con 39 millones de parametros, corresponde a la clase de los GPT-2 pequenos (GPT-2 small tiene 124 millones; este es aun menor). El modelo se ha obtenido por ajuste fino del base `goldfish-models/swa_latn_10mb` mediante SFT, la tecnica de ajuste supervisado implementada por TRL en su version 0.23.0. No se documenta el uso de RLHF, DPO u otras etapas de alineacion posteriores.
 
-La informacion facilitada no detalla el numero exacto de tokens de entrenamiento, la composicion del dataset, la receta de limpieza ni los hiperparametros concretos. El identificador sugiere un corpus empaquetado de en torno a 100 MB (`100mb-packed`) y un punto de partida de 10 MB (`10mb`), pero estos valores no estan confirmados en la documentacion. Tampoco se declara ninguna innovacion tecnica especifica (atencion lineal, decodificacion especulativa, mezcla de expertos, etc.); se trata de un fine-tuning convencional con el stack estandar de HuggingFace. Los enlaces a Weights & Biases permiten consultar la curva de entrenamiento del experimento asociado.
+La informacion facilitada no detalla el numero exacto de tokens de entrenamiento, la composicion del dataset, la receta de limpieza ni los hiperparametros concretos. El identificador sugiere un corpus empaquetado de en torno a 100 MB (`100mb-packed`) y un punto de partida de 10 MB (`10mb`), pero estos valores no estan confirmados en la documentacion. Tampoco se declara ninguna innovacion tecnica especifica (atencion lineal, decodificacion especulativa, mezcla de expertos, etc.); se trata de un fine-tuning convencional con el stack estandar de Hugging Face. Los enlaces a Weights & Biases permiten consultar la curva de entrenamiento del experimento asociado.
 
 ## Capacidades
 
@@ -53,7 +53,7 @@ La informacion facilitada no detalla el numero exacto de tokens de entrenamiento
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MMLU, HumanEval, GSM8K ni ninguna otra, y la busqueda web solo devuelve enlaces de uso y de despliegue (HuggingFace, FriendliAI, LLM Explorer, free2aitools), sin cifras de evaluacion.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MMLU, HumanEval, GSM8K ni ninguna otra, y la busqueda web solo devuelve enlaces de uso y de despliegue (Hugging Face, FriendliAI, LLM Explorer, free2aitools), sin cifras de evaluacion.
 
 ## Requisitos de hardware
 
@@ -88,7 +88,7 @@ La comparacion se limita a variantes de la misma familia experimental; no se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/goldfish-models/swa_latn_10mb
 - Variante con otra semilla: https://huggingface.co/francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10
 - Variante con semilla 455: https://huggingface.co/francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455

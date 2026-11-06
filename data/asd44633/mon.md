@@ -2,11 +2,11 @@
 
 ## Resumen
 
-mon es un adaptador LoRA de difusion (text-to-image) publicado en HuggingFace por el usuario asd44633 bajo el identificador `asd44633/mon`. Se trata de un ajuste fino de bajo rango entrenado sobre el modelo base `lynaNSFW/DaSiWa_MiniMax_H3`, y su unico proposito documentado es la personalizacion de la generacion de imagenes mediante la palabra de activacion `monn`. No es un modelo autonomo: requiere cargar el modelo base y aplicar el adaptador encima con la libreria `diffusers`.
+mon es un adaptador LoRA de difusion (text-to-image) publicado en Hugging Face por el usuario asd44633 bajo el identificador `asd44633/mon`. Se trata de un ajuste fino de bajo rango entrenado sobre el modelo base `lynaNSFW/DaSiWa_MiniMax_H3`, y su unico proposito documentado es la personalizacion de la generacion de imagenes mediante la palabra de activacion `monn`. No es un modelo autonomo: requiere cargar el modelo base y aplicar el adaptador encima con la libreria `diffusers`.
 
 El repositorio ocupa 0,3 GB, lo que es coherente con un conjunto de pesos LoRA (no con un checkpoint completo de difusion). La model card es minima: unicamente declara la etiqueta de disparo, la plantilla `template:diffusion-lora` y un ejemplo de widget con salida en imagen. No incluye informacion sobre el rango del adaptador, la resolucion de entrenamiento, el dataset utilizado, el numero de pasos ni la licencia.
 
-La relevancia de esta ficha es, por tanto, limitada pero util como caso de estudio: ilustra el flujo habitual de publicacion de LoRAs de personaje o concepto en HuggingFace y las carencias documentales tipicas de este tipo de repositorios (0 descargas, 0 likes, sin licencia declarada, sin benchmarks). Cualquier evaluacion seria requiere inspeccionar manualmente los pesos y el modelo base.
+La relevancia de esta ficha es, por tanto, limitada pero util como caso de estudio: ilustra el flujo habitual de publicacion de LoRAs de personaje o concepto en Hugging Face y las carencias documentales tipicas de este tipo de repositorios (0 descargas, 0 likes, sin licencia declarada, sin benchmarks). Cualquier evaluacion seria requiere inspeccionar manualmente los pesos y el modelo base.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No se dispone de datos sobre modelos comparables en la informacion proporcionada
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `asd44633/mon` | no disponible | no aplica | sin benchmarks publicados | no disponible | HuggingFace (0 descargas, 0 likes) |
+| `asd44633/mon` | no disponible | no aplica | sin benchmarks publicados | no disponible | Hugging Face (0 descargas, 0 likes) |
 | Otros LoRAs sobre el mismo modelo base | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Modelo base `lynaNSFW/DaSiWa_MiniMax_H3` | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -90,7 +90,7 @@ No se dispone de datos sobre modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asd44633/mon
+- Modelo en Hugging Face: https://huggingface.co/asd44633/mon
 - Modelo base declarado: https://huggingface.co/lynaNSFW/DaSiWa_MiniMax_H3
 - Archivos del repositorio: https://huggingface.co/asd44633/mon/tree/main
 - Documentacion de `diffusers` sobre LoRA: https://huggingface.co/docs/diffusers/training/lora

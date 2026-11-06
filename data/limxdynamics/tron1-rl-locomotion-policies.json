@@ -5,15 +5,16 @@
   "author": "limxdynamics",
   "url": "https://huggingface.co/limxdynamics/tron1-rl-locomotion-policies",
   "created_at": "2026-11-05T08:58:50.000Z",
-  "updated_at": "2026-11-05T09:15:55.000Z",
+  "updated_at": "2026-11-05T09:24:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
-  "library": "onnx",
+  "library": "limx-dynamics",
   "languages": [
     "en"
   ],
   "tags": [
+    "limx-dynamics",
     "onnx",
     "robotics",
     "reinforcement-learning",
@@ -23,7 +24,6 @@
     "isaac-gym",
     "isaac-lab",
     "mujoco",
-    "limx-dynamics",
     "tron1",
     "en",
     "license:apache-2.0",

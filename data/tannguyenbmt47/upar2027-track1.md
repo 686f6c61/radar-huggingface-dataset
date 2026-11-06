@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks adicionales en la información disp
 
 | Modelo | Backbone | Parametros | Contexto / entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `hp.pt` (v25, rama 1) | DINOv3 ViT-H+/16 + query head, EMA | no disponible | imagen, resolución no disponible | Challenge_Avg 0,8011 (en ensemble) | DINOv3 License | HuggingFace |
-| `m1.pt` (v25, rama 2) | CLIP ViT-L/14 + query head y score textual, WiSE-FT 0,7 | no disponible | imagen, resolución no disponible | Challenge_Avg 0,8011 (en ensemble) | MIT (CLIP) | HuggingFace |
-| `du.pt` (v31, UniQuery) | DINOv3 ViT-H+/16 + CLIP ViT-L/14, tres query heads | no disponible | imagen, resolución no disponible | Challenge_Avg 0,8001 | DINOv3 License + MIT | HuggingFace |
+| `hp.pt` (v25, rama 1) | DINOv3 ViT-H+/16 + query head, EMA | no disponible | imagen, resolución no disponible | Challenge_Avg 0,8011 (en ensemble) | DINOv3 License | Hugging Face |
+| `m1.pt` (v25, rama 2) | CLIP ViT-L/14 + query head y score textual, WiSE-FT 0,7 | no disponible | imagen, resolución no disponible | Challenge_Avg 0,8011 (en ensemble) | MIT (CLIP) | Hugging Face |
+| `du.pt` (v31, UniQuery) | DINOv3 ViT-H+/16 + CLIP ViT-L/14, tres query heads | no disponible | imagen, resolución no disponible | Challenge_Avg 0,8001 | DINOv3 License + MIT | Hugging Face |
 | Otros participantes del UPAR 2027 Track 1 | no disponible | no disponible | no disponible | no disponible en la información proporcionada | no disponible | no disponible |
 
 No se dispone de datos publicados de otros modelos de reconocimiento de atributos de peatones (por ejemplo variantes de PA100k) en la información proporcionada, por lo que no es posible una comparación cuantitativa con alternativas externas.
@@ -92,7 +92,7 @@ No se dispone de datos publicados de otros modelos de reconocimiento de atributo
 
 ## Enlaces
 
-- Pesos en HuggingFace: https://huggingface.co/tannguyenbmt47/upar2027-track1
+- Pesos en Hugging Face: https://huggingface.co/tannguyenbmt47/upar2027-track1
 - Código y scripts de entrenamiento: https://github.com/tannguyenbmt47/upar2027-track1
 - Scripts de submission citados: `submission/build_v25.py` y `submission/build_submission.py` (dentro del repositorio de GitHub)
 - UPAR Challenge 2027, Track 1 (Codabench): plataforma mencionada en la model card, URL no disponible en la información proporcionada

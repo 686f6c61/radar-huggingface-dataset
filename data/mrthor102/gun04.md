@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mrthor102/gun04` es un repositorio de modelo alojado en HuggingFace por el usuario mrthor102. La informacion publica disponible es minima: la ficha del repositorio no declara pipeline de inferencia, licencia, idiomas soportados ni etiquetas descriptivas mas alla de `region:us`. El repositorio ocupa 16,2 GB y acumula 0 descargas y 1 like, con fecha de creacion del 13 de septiembre de 2026 y ultima actualizacion del mismo mes.
+`mrthor102/gun04` es un repositorio de modelo alojado en Hugging Face por el usuario mrthor102. La informacion publica disponible es minima: la ficha del repositorio no declara pipeline de inferencia, licencia, idiomas soportados ni etiquetas descriptivas mas alla de `region:us`. El repositorio ocupa 16,2 GB y acumula 0 descargas y 1 like, con fecha de creacion del 13 de septiembre de 2026 y ultima actualizacion del mismo mes.
 
 No ha sido posible identificar la arquitectura, el numero de parametros, la longitud de contexto ni el regimen de entrenamiento a partir de la informacion proporcionada. La busqueda web asociada no devolvio ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a documentacion de Microsoft sobre Remote Server Administration Tools (RSAT) para Windows Server, sin ninguna conexion con este repositorio.
 
@@ -73,7 +73,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Comparabilidad |
 |---|---|---|---|---|---|
-| mrthor102/gun04 | no disponible | no disponible | no disponible | HuggingFace, 0 descargas | - |
+| mrthor102/gun04 | no disponible | no disponible | no disponible | Hugging Face, 0 descargas | - |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mrthor102/gun04
+- Hugging Face: https://huggingface.co/mrthor102/gun04
 - Paper: no disponible.
 - Repositorio de codigo: no disponible.
 - Demo: no disponible.

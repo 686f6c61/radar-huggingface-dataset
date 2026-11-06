@@ -94,7 +94,7 @@ La informacion proporcionada no incluye datos de rendimiento de modelos alternat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ghostoverflow/Phi-4-reasoning-Q8_0-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/ghostoverflow/Phi-4-reasoning-Q8_0-GGUF
 - Modelo base: https://huggingface.co/microsoft/Phi-4-reasoning
 - Licencia del modelo base: https://huggingface.co/microsoft/Phi-4-reasoning/resolve/main/LICENSE
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

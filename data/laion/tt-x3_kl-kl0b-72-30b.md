@@ -23,7 +23,7 @@ Se trata de un modelo de arquitectura MoE (mixture of experts) con 30.532.122.62
 
 El modelo es un fine-tuning por RL del checkpoint `Qwen/Qwen3-Coder-30B-A3B-Instruct`, que emplea una arquitectura MoE con 30,5 B parámetros totales y 3 B activos. El entrenamiento se realizó con GRPO (Group Relative Policy Optimization) utilizando SkyRL y Terminus-2 como infraestructura, sobre el dataset `DCAgent/exp_rpt_multifile`, que contiene tareas de edición y reporte de código en múltiples archivos. El verifier empleado es *pass_ratio shaping*, que mide la proporción de pruebas superadas en cada grupo de respuestas.
 
-El experimento pertenece al barrido X3 sobre el coeficiente KL, y el nombre `kl-kl0b` sugiere un coeficiente KL de valor 0 (aunque no se especifica explícitamente en la documentación). Los brazos con coeficiente KL distinto de cero incorporan un modelo de referencia adicional. El checkpoint fue seleccionado como el mejor retenido según la EMA de los últimos 5 pasos (EMA 0,1530 en el paso 72, con recompensa de paso 0,1484 y pass@8 de 0,3125). El entrenamiento se detuvo en el paso 73 de 80, y el proceso de exportación a HuggingFace sufrió un error en el hook de exportación, por lo que solo existe este checkpoint convertido post-hoc.
+El experimento pertenece al barrido X3 sobre el coeficiente KL, y el nombre `kl-kl0b` sugiere un coeficiente KL de valor 0 (aunque no se especifica explícitamente en la documentación). Los brazos con coeficiente KL distinto de cero incorporan un modelo de referencia adicional. El checkpoint fue seleccionado como el mejor retenido según la EMA de los últimos 5 pasos (EMA 0,1530 en el paso 72, con recompensa de paso 0,1484 y pass@8 de 0,3125). El entrenamiento se detuvo en el paso 73 de 80, y el proceso de exportación a Hugging Face sufrió un error en el hook de exportación, por lo que solo existe este checkpoint convertido post-hoc.
 
 ## Capacidades
 
@@ -68,14 +68,14 @@ No hay datos de rendimiento comparativo entre estos modelos. El checkpoint `kl0b
 - Checkpoint experimental: no es un modelo final ni validado para producción. El entrenamiento se detuvo en el paso 73 de 80, por lo que los resultados pueden no reflejar el rendimiento óptimo.
 - Sin evaluación independiente: no se han publicado benchmarks estándar ni evaluaciones de sesgos, toxicidad o robustez.
 - Posibles artefactos del RL: el uso de GRPO con verifier de pass_ratio puede inducir sobreoptimización hacia las recompensas del verifier, con riesgo de alucinaciones o código que pasa pruebas sintéticas pero falla en entornos reales.
-- Problemas de exportación: el hook de exportación a HuggingFace falló en el origen, y el checkpoint se convirtió post-hoc; podría haber discrepancias menores entre los pesos originales y los publicados.
+- Problemas de exportación: el hook de exportación a Hugging Face falló en el origen, y el checkpoint se convirtió post-hoc; podría haber discrepancias menores entre los pesos originales y los publicados.
 - Sin documentación de idiomas: no se especifica qué idiomas soporta, aunque el modelo base es principalmente inglés y chino.
 - Restricciones de uso comercial: la licencia Apache 2.0 permite uso comercial, pero al ser un checkpoint de investigación sin garantías, se recomienda validación exhaustiva antes de cualquier uso en producción.
 - Falta de cuantizaciones: no se proporcionan versiones GGUF ni AWQ, lo que limita su despliegue en entornos con recursos reducidos.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/laion/tt-x3_kl-kl0b-72-30B)
+- [Modelo en Hugging Face](https://huggingface.co/laion/tt-x3_kl-kl0b-72-30B)
 - [Checkpoint hermano con KL=0.03](https://huggingface.co/laion/tt-x3_kl-kl0p03-70-30B)
 - [Modelo base Qwen3-Coder-30B-A3B-Instruct](https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct)
 - [Dataset de entrenamiento DCAgent/exp_rpt_multifile](https://huggingface.co/datasets/DCAgent/exp_rpt_multifile)

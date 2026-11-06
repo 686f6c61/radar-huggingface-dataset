@@ -30,7 +30,7 @@ El entrenamiento utilizó la pérdida por pares Bradley-Terry, con LoRA que post
 - Emisión de una puntuación escalar continua (sin límite superior) que refleja la calidad de una trayectoria de acciones GUI, utilizable como señal de recompensa en algoritmos de RL (PPO, GRPO) o para selección best-of-N.
 - Procesamiento multimodal: acepta entradas de imagen y texto, lo que permite evaluar capturas de pantalla junto con el historial de acciones.
 - Clasificación de secuencias con regresión de una sola etiqueta, a diferencia de los clasificadores discretos que emiten preferencias binarias.
-- Inferencia mediante HuggingFace `transformers`; no compatible con el cargador de vLLM para `Qwen3VLForConditionalGeneration` debido al tensor extra `score.weight`.
+- Inferencia mediante Hugging Face `transformers`; no compatible con el cargador de vLLM para `Qwen3VLForConditionalGeneration` debido al tensor extra `score.weight`.
 - Capacidad de separar puntuaciones con márgenes amplios (rango observado de −17,75 a +18,38), aunque dicha separación no correlaciona con el éxito real de las acciones en el benchmark evaluado.
 
 ## Casos de uso
@@ -68,23 +68,23 @@ El autor indica que el modelo rinde al nivel del azar en este benchmark, con un 
 - VRAM estimada para inferencia: al tratarse de un modelo de ~8,14 mil millones de parámetros en bfloat16, se requieren aproximadamente 16 GB de VRAM solo para los pesos, más memoria adicional para las activaciones y el procesamiento de imágenes. Una GPU con 24 GB (p. ej., RTX 3090/4090) sería suficiente para inferencia básica.
 - GPU recomendadas: NVIDIA A100, H100, RTX 4090 o similares con soporte para bfloat16. No se documentan requisitos oficiales.
 - Compatibilidad con GPUs de consumo: sí, una RTX 3090 o 4090 puede ejecutar el modelo, aunque la carga manual de `score.weight` y el procesamiento de imágenes aumentan el consumo de memoria.
-- Opciones de despliegue: no compatible con vLLM; debe usarse HuggingFace `transformers` directamente. No se mencionan integraciones con llama.cpp, Ollama o TGI.
+- Opciones de despliegue: no compatible con vLLM; debe usarse Hugging Face `transformers` directamente. No se mencionan integraciones con llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles en la documentación proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Base | Tipo | Precisión en benchmark | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `-scoring-64k-balanced` (este) | Qwen3-VL-8B-Instruct-UI-Genie | Reward model Bradley-Terry (balanceado) | 0,4894 | Apache 2.0 | HuggingFace |
-| `-scoring` (no balanceado) | Qwen3-VL-8B-Instruct-UI-Genie | Reward model Bradley-Terry (no balanceado) | 0,6064 | Apache 2.0 | HuggingFace |
-| `UI-Genie` (SFT discreto) | Qwen3-VL-8B-Instruct | Clasificador discreto de preferencias | 0,0106 | Apache 2.0 | HuggingFace |
+| `-scoring-64k-balanced` (este) | Qwen3-VL-8B-Instruct-UI-Genie | Reward model Bradley-Terry (balanceado) | 0,4894 | Apache 2.0 | Hugging Face |
+| `-scoring` (no balanceado) | Qwen3-VL-8B-Instruct-UI-Genie | Reward model Bradley-Terry (no balanceado) | 0,6064 | Apache 2.0 | Hugging Face |
+| `UI-Genie` (SFT discreto) | Qwen3-VL-8B-Instruct | Clasificador discreto de preferencias | 0,0106 | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a los modelos relacionados publicados por el mismo autor, ya que no se dispone de información sobre otros reward models de GUI comparables en la documentación.
 
 ## Limitaciones y advertencias
 
 - Rendimiento al azar en el benchmark de evaluación proporcionado: el modelo no discrimina entre acciones exitosas y fallidas en el conjunto `android_flux_recovery_action_preference`, lo que lo hace inadecuado como señal de recompensa fiable sin una validación adicional en el dominio objetivo.
-- Incompatibilidad con vLLM: el tensor `score.weight` no es soportado por el cargador estándar de vLLM, por lo que la inferencia requiere HuggingFace `transformers` y la carga manual de la cabeza de puntuación.
+- Incompatibilidad con vLLM: el tensor `score.weight` no es soportado por el cargador estándar de vLLM, por lo que la inferencia requiere Hugging Face `transformers` y la carga manual de la cabeza de puntuación.
 - Riesgo de alucinación y sesgos: al derivar de un modelo multimodal preentrenado, puede heredar sesgos de los datos de entrenamiento originales de Qwen3-VL, aunque no se documentan evaluaciones específicas de sesgo.
 - Limitaciones de contexto e idioma: no se especifica la longitud de contexto soportada ni los idiomas cubiertos; el modelo se centra en tareas de GUI, presumiblemente con capturas de pantalla en inglés u otros idiomas, pero sin confirmación.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el rendimiento en producción.
@@ -93,7 +93,7 @@ La comparativa se limita a los modelos relacionados publicados por el mismo auto
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-scoring-64k-balanced)
+- [Modelo en Hugging Face](https://huggingface.co/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-scoring-64k-balanced)
 - [Modelo base `-scoring` (no balanceado)](https://huggingface.co/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-scoring)
 - [Modelo base `UI-Genie` (SFT discreto)](https://huggingface.co/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie)
 - [Dataset de entrenamiento `UI-Genie-RM-517k`](https://huggingface.co/datasets/UI-Genie/UI-Genie-RM-517k)

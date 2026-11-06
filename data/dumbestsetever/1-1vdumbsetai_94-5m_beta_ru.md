@@ -73,10 +73,10 @@ No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion estandariza
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 1.1vDumbSetAI 94.5M_beta_ru | 94,5M | 512 tokens | Ruso | MIT | HuggingFace (safetensors, custom_code) |
-| DumbestSetEver/1.0vDumbSetAI_56M_ru | ~56,7M | No disponible | Ruso | MIT (segun etiqueta del autor) | HuggingFace |
-| TinyStories (variantes) | 1M-33M | 512-2048 tokens | Ingles | Mixta/Sin restriccion | HuggingFace, ampliamente replicado |
-| GPT-2 small | 124M | 1024 tokens | Ingles | MIT | HuggingFace, soporte universal |
+| 1.1vDumbSetAI 94.5M_beta_ru | 94,5M | 512 tokens | Ruso | MIT | Hugging Face (safetensors, custom_code) |
+| DumbestSetEver/1.0vDumbSetAI_56M_ru | ~56,7M | No disponible | Ruso | MIT (segun etiqueta del autor) | Hugging Face |
+| TinyStories (variantes) | 1M-33M | 512-2048 tokens | Ingles | Mixta/Sin restriccion | Hugging Face, ampliamente replicado |
+| GPT-2 small | 124M | 1024 tokens | Ingles | MIT | Hugging Face, soporte universal |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en benchmarks estandarizados. Las comparativas con TinyStories y GPT-2 small se ofrecen solo como referencia de orden de magnitud en parametros, contexto e idioma, no de calidad.
 
@@ -97,10 +97,10 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en benchm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DumbestSetEver/1.1vDumbSetAI_94.5M_beta_ru
-- Perfil del autor en HuggingFace: https://huggingface.co/DumbestSetEver
+- Modelo en Hugging Face: https://huggingface.co/DumbestSetEver/1.1vDumbSetAI_94.5M_beta_ru
+- Perfil del autor en Hugging Face: https://huggingface.co/DumbestSetEver
 - Modelo base 1.0vDumbSetAI_56M_ru (referenciado): https://huggingface.co/DumbestSetEver/1.0vDumbSetAI_56M_ru
-- Modelos etiquetados con "dumbset" en HuggingFace: https://huggingface.co/models?other=dumbset
+- Modelos etiquetados con "dumbset" en Hugging Face: https://huggingface.co/models?other=dumbset
 - Paper o publicacion tecnica: no disponible
 - Repositorio de codigo: no disponible
 - Demo en linea: no disponible

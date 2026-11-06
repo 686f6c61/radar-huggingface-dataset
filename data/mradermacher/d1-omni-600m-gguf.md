@@ -18,7 +18,7 @@ Su relevancia actual radica en que ofrece una alternativa eficiente a los LLM gr
 | Longitud de contexto | 16.384 tokens; con imagen, el texto de estado y pregunta se recorta a 896 tokens tal como se entreno |
 | Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; ademas mmproj-Q8_0 y mmproj-f16 para la parte multimodal |
 | Idiomas soportados | en, de, es, fr, it, nl, pl, pt, ar, hi, ja, ru, tr, vi, zh (15 idiomas) |
-| Licencia | lfm1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (la version cuantizada); el modelo base en safetensors |
 | Tamano del repositorio | 4,2 GB |
 | Modelo base | LiquidAI/d1-omni-600M |
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| d1-omni-600M | ~587 M | 16.384 tokens | Texto, imagen, audio | lfm1.0 | Pesos abiertos en HuggingFace y GGUF |
+| d1-omni-600M | ~587 M | 16.384 tokens | Texto, imagen, audio | lfm1.0 | Pesos abiertos en Hugging Face y GGUF |
 | d1-3B | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Pesos abiertos segun el blog de Liquid AI |
 | Otras alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 

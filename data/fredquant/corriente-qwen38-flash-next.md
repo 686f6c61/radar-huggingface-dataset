@@ -78,7 +78,7 @@ La comparativa se basa en datos públicos de modelos similares. La ventaja princ
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: [FredQuant/corriente-qwen38-flash-next](https://huggingface.co/FredQuant/corriente-qwen38-flash-next)
+- Repositorio Hugging Face de la cuantización: [FredQuant/corriente-qwen38-flash-next](https://huggingface.co/FredQuant/corriente-qwen38-flash-next)
 - Modelo original: [Qwen/Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
 - Repositorio GitHub del modelo original: [QwenLM/Qwen3.8-Flash-Next](https://github.com/QwenLM/Qwen3.8-Flash-Next/)
 - Colección oficial de Qwen: [Qwen3.8-Flash-Next Collection](https://huggingface.co/collections/Qwen/qwen38-flash-next)

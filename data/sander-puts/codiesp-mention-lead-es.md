@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sander-puts/codiesp-mention-lead-es | no disponible (RoBERTa base) | 512 tokens | NER clínico + término principal CIE-10 | CC BY 4.0 | HuggingFace |
-| PlanTL-GOB-ES/roberta-base-biomedical-clinical-es | no disponible (RoBERTa base) | 512 tokens | Encoder de dominio biomédico (base) | Apache-2.0 | HuggingFace |
-| Modelos NER clínicos en español sobre CodiEsp | no disponible | 512 tokens | NER de menciones clínicas | variable | HuggingFace |
+| sander-puts/codiesp-mention-lead-es | no disponible (RoBERTa base) | 512 tokens | NER clínico + término principal CIE-10 | CC BY 4.0 | Hugging Face |
+| PlanTL-GOB-ES/roberta-base-biomedical-clinical-es | no disponible (RoBERTa base) | 512 tokens | Encoder de dominio biomédico (base) | Apache-2.0 | Hugging Face |
+| Modelos NER clínicos en español sobre CodiEsp | no disponible | 512 tokens | NER de menciones clínicas | variable | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento frente a alternativas en la información proporcionada.
 
@@ -86,7 +86,7 @@ No se dispone de datos comparativos de rendimiento frente a alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sander-puts/codiesp-mention-lead-es
+- Modelo en Hugging Face: https://huggingface.co/sander-puts/codiesp-mention-lead-es
 - Repositorio CEI-Trace: https://github.com/putssander/CEI-Trace
 - Modelo base: https://huggingface.co/PlanTL-GOB-ES/roberta-base-biomedical-clinical-es
 - Corpus CodiEsp (Miranda-Escalada et al., CLEF eHealth 2020): https://doi.org/10.5281/zenodo.3837305

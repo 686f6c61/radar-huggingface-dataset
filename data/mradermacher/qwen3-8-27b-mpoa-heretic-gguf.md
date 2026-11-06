@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada pero concreta: ofrece una vía práctica
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base. El nombre "Qwen3.8-27B" apunta a un transformer denso de la familia Qwen3 con ~27B parámetros, pero no se confirma en la documentación. El tag `conversational` en HuggingFace indica que está orientado a diálogo, aunque no se detalla el proceso de ajuste.
+No se dispone de información sobre la arquitectura interna del modelo base. El nombre "Qwen3.8-27B" apunta a un transformer denso de la familia Qwen3 con ~27B parámetros, pero no se confirma en la documentación. El tag `conversational` en Hugging Face indica que está orientado a diálogo, aunque no se detalla el proceso de ajuste.
 
 El sufijo "MPOA-heretic" sugiere una modificación del modelo original para reducir rechazos o alinear el comportamiento hacia respuestas menos restrictivas. No se documenta el método (abliteration, DPO con datos específicos, fine-tuning, etc.), ni el número de tokens de entrenamiento, ni la composición del dataset. Tampoco se indica si hubo RLHF, DPO o alguna innovación técnica destacable. La model card del repositorio GGUF es puramente mecánica: lista las cuantizaciones generadas y enlaza al modelo base, sin aportar detalles técnicos.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-MPOA-heretic-GGUF (este) | ~26,9B | no disponible | no disponible | GGUF | HuggingFace |
-| Qwen2.5-32B-Instruct (referencia de familia) | 32,5B | 32.768 tokens (típico) | Apache 2.0 (según versión) | safetensors, GGUF | HuggingFace |
-| Gemma-2-27B-it | 27B | 8.192 tokens | Gemma license | safetensors, GGUF | HuggingFace |
-| Mistral-Small-24B-Instruct | 24B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace |
+| Qwen3.8-27B-MPOA-heretic-GGUF (este) | ~26,9B | no disponible | no disponible | GGUF | Hugging Face |
+| Qwen2.5-32B-Instruct (referencia de familia) | 32,5B | 32.768 tokens (típico) | Apache 2.0 (según versión) | safetensors, GGUF | Hugging Face |
+| Gemma-2-27B-it | 27B | 8.192 tokens | Gemma license | safetensors, GGUF | Hugging Face |
+| Mistral-Small-24B-Instruct | 24B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face |
 
 La comparación es orientativa: no se dispone de datos de rendimiento del modelo evaluado, y las cifras de contexto y licencia de las alternativas corresponden a sus versiones oficiales publicadas, no a variantes comunitarias.
 
@@ -90,7 +90,7 @@ La comparación es orientativa: no se dispone de datos de rendimiento del modelo
 
 ## Enlaces
 
-- [HuggingFace: mradermacher/Qwen3.8-27B-MPOA-heretic-GGUF](https://huggingface.co/mradermacher/Qwen3.8-27B-MPOA-heretic-GGUF)
+- [Hugging Face: mradermacher/Qwen3.8-27B-MPOA-heretic-GGUF](https://huggingface.co/mradermacher/Qwen3.8-27B-MPOA-heretic-GGUF)
 - [Modelo base: richardyoung/Qwen3.8-27B-MPOA-heretic](https://huggingface.co/richardyoung/Qwen3.8-27B-MPOA-heretic)
 - [llama.cpp](https://github.com/ggerganov/llama.cpp)
 - [Ollama](https://ollama.com)

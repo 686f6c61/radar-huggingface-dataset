@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `stpe-rez86/generation` es una publicacion de HuggingFace firmada por el usuario stpe-rez86 que contiene una implementacion propia y reducida de la arquitectura Albef (Align before Fuse) orientada a tareas de generacion. No es un modelo entrenado: la propia model card lo describe como un punto de partida reproducible, acompanado de un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests) y no presentado como checkpoint de referencia con benchmarks.
+El repositorio `stpe-rez86/generation` es una publicacion de Hugging Face firmada por el usuario stpe-rez86 que contiene una implementacion propia y reducida de la arquitectura Albef (Align before Fuse) orientada a tareas de generacion. No es un modelo entrenado: la propia model card lo describe como un punto de partida reproducible, acompanado de un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests) y no presentado como checkpoint de referencia con benchmarks.
 
 La arquitectura declarada corresponde a la familia Albef en escala base, con atencion dispersa (sparse), fusion de modalidades tipo Tucker, activacion GELU y normalizacion RMSNorm. Los metadatos de safetensors reportan 24.832 parametros totales, un recuento coherente con el tamano de repositorio indicado (0,0 GB) y que situa el artefacto muy lejos de los cientos de millones de parametros habituales en la familia Albef original.
 
@@ -69,10 +69,10 @@ La informacion proporcionada no incluye datos verificados de parametros, context
 
 | Modelo | Parametros | Contexto | Estado del checkpoint | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stpe-rez86/generation | 24.832 (metadatos de safetensors) | no disponible | inicializacion, sin entrenar | MIT | HuggingFace, 0 descargas |
+| stpe-rez86/generation | 24.832 (metadatos de safetensors) | no disponible | inicializacion, sin entrenar | MIT | Hugging Face, 0 descargas |
 | Albef (implementacion original, familia Align before Fuse) | no disponible en la informacion proporcionada | no disponible | entrenado y publicado por sus autores | no disponible en la informacion proporcionada | repositorio publico de la familia |
 | Blip (familia vision-lenguaje de referencia) | no disponible en la informacion proporcionada | no disponible | entrenado y publicado por sus autores | no disponible en la informacion proporcionada | repositorio publico de la familia |
-| Otros scaffolds Albef publicados en HuggingFace | no disponible | no disponible | inicializacion, sin entrenar | variable por repositorio | HuggingFace |
+| Otros scaffolds Albef publicados en Hugging Face | no disponible | no disponible | inicializacion, sin entrenar | variable por repositorio | Hugging Face |
 
 La diferencia fundamental frente a las alternativas entrenadas no es de arquitectura ni de tamano, sino de estado: este repositorio no ofrece un modelo utilizable, sino una base reproducible.
 
@@ -91,5 +91,5 @@ La diferencia fundamental frente a las alternativas entrenadas no es de arquitec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stpe-rez86/generation
+- Hugging Face: https://huggingface.co/stpe-rez86/generation
 - No se han encontrado papers, blogs, repositorios de codigo adicionales ni demos asociados en los resultados de busqueda web disponibles, que en esta consulta devolvieron unicamente paginas generales de busqueda visual de Bing sin relacion con el modelo.

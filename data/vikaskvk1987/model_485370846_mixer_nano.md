@@ -71,5 +71,5 @@ No hay modelos comparables directamente disponibles. La categoría de *mixer nan
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Vikaskvk1987/model_485370846_mixer_nano
+- Repositorio Hugging Face: https://huggingface.co/Vikaskvk1987/model_485370846_mixer_nano
 - No se encontraron papers, blogs, repositorios o demos adicionales relacionados con este modelo en la búsqueda web.

@@ -109,7 +109,7 @@ Cabe senalar que el benchmark de realismo mide la distancia respecto al terreno 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/osfv/talus
+- Modelo en Hugging Face: https://huggingface.co/osfv/talus
 - Demo en navegador (WebGPU/CPU): https://talus.tersa.tech/
 - Codigo, entrenamiento y benchmarks en GitHub: https://github.com/osfv/talus
 - Scorecards completos y protocolo de benchmark: https://github.com/osfv/talus/tree/master/docs

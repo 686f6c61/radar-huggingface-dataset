@@ -64,7 +64,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/satosihasegawa/paper_021178833_embodied_ai
+- Repositorio en Hugging Face: https://huggingface.co/satosihasegawa/paper_021178833_embodied_ai
 - Paper original en arXiv (HTML): https://arxiv.org/html/2509.20021v1
 - Paper original en arXiv (abs): https://arxiv.org/abs/2509.20021
 - Versión en IEEE: https://ieeexplore.ieee.org/abstract/document/11317901

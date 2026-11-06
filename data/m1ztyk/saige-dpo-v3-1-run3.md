@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SAIGE-dpo-v3-1-run3 es un adaptador LoRA de ajuste por preferencias (DPO) publicado por el usuario M1ztyk sobre el modelo base Qwen/Qwen2.5-3B-Instruct. Se distribuye a través de HuggingFace con la librería PEFT y pesos en safetensors, con un tamaño de repositorio de 0,4 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo fusionado completo. El identificador sugiere la tercera iteración de una serie de experimentos de alineación ("dpo-v3") y una tercera ejecución de entrenamiento ("run3"), pero no hay documentación que lo confirme.
+SAIGE-dpo-v3-1-run3 es un adaptador LoRA de ajuste por preferencias (DPO) publicado por el usuario M1ztyk sobre el modelo base Qwen/Qwen2.5-3B-Instruct. Se distribuye a través de Hugging Face con la librería PEFT y pesos en safetensors, con un tamaño de repositorio de 0,4 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo fusionado completo. El identificador sugiere la tercera iteración de una serie de experimentos de alineación ("dpo-v3") y una tercera ejecución de entrenamiento ("run3"), pero no hay documentación que lo confirme.
 
-El interés de esta ficha es limitado y conviene decirlo con claridad: la model card publicada es la plantilla por defecto de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]". No se documentan datos de entrenamiento, hiperparámetros, dataset de preferencias, licencia ni idiomas. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, por lo que no existe validación alguna por parte de la comunidad.
+El interés de esta ficha es limitado y conviene decirlo con claridad: la model card publicada es la plantilla por defecto de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]". No se documentan datos de entrenamiento, hiperparámetros, dataset de preferencias, licencia ni idiomas. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, por lo que no existe validación alguna por parte de la comunidad.
 
 En la práctica, cualquier evaluación del modelo debe apoyarse en las características conocidas y públicas del modelo base Qwen2.5-3B-Instruct (transformer decoder-only de 3.090 millones de parámetros, 32.768 tokens de contexto nativo, licencia Apache 2.0, 29 idiomas), asumiendo que el adaptador DPO modifica el comportamiento conversacional pero sin poder cuantificar en qué dirección ni con qué magnitud. La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo.
 
@@ -103,7 +103,7 @@ En rendimiento no se puede comparar: no hay ningun benchmark publicado para este
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/M1ztyk/SAIGE-dpo-v3-1-run3
+- Pagina del modelo en Hugging Face: https://huggingface.co/M1ztyk/SAIGE-dpo-v3-1-run3
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Blog de la familia Qwen2.5 (Qwen Team): https://qwenlm.github.io/blog/qwen2.5/
 - Repositorio de Qwen en GitHub: https://github.com/QwenLM/Qwen2.5

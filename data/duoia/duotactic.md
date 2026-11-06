@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Duoia/duotactic es un repositorio de modelo publicado en HuggingFace por el usuario Duoia. La informacion disponible es minima: no consta pipeline declarado, ni licencia, ni idiomas soportados, ni ficha tecnica en los metadatos publicos. El repositorio ocupa 0,6 GB y fue creado el 26 de septiembre de 2026, con una actualizacion apenas doce minutos despues (17:35:36 UTC a 17:47:48 UTC), lo que sugiere una publicacion inicial sin iteraciones posteriores documentadas.
+Duoia/duotactic es un repositorio de modelo publicado en Hugging Face por el usuario Duoia. La informacion disponible es minima: no consta pipeline declarado, ni licencia, ni idiomas soportados, ni ficha tecnica en los metadatos publicos. El repositorio ocupa 0,6 GB y fue creado el 26 de septiembre de 2026, con una actualizacion apenas doce minutos despues (17:35:36 UTC a 17:47:48 UTC), lo que sugiere una publicacion inicial sin iteraciones posteriores documentadas.
 
 Con los datos disponibles no es posible determinar que problema resuelve el modelo, que arquitectura emplea, cuantos parametros tiene ni a que tarea esta orientado. El identificador "duotactic" no aporta informacion verificable sobre su proposito. No se ha localizado documentacion tecnica asociada en la informacion proporcionada.
 
@@ -96,6 +96,6 @@ No disponible. Sin conocer los parametros, la arquitectura, la tarea ni la licen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Duoia/duotactic
+- Repositorio en Hugging Face: https://huggingface.co/Duoia/duotactic
 - Perfil del autor: https://huggingface.co/Duoia
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

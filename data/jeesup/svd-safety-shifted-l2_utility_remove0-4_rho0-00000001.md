@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-shifted-l2_utility_remove0.4_rho0.00000001 | 6.738.415.616 | No disponible | Compresión SVD con métrica de seguridad | llama2 | HuggingFace, 14 descargas |
-| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 tokens (según Llama 2) | Modelo base sin comprimir | llama2 | HuggingFace, ampliamente usado |
+| Jeesup/svd-safety-shifted-l2_utility_remove0.4_rho0.00000001 | 6.738.415.616 | No disponible | Compresión SVD con métrica de seguridad | llama2 | Hugging Face, 14 descargas |
+| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 tokens (según Llama 2) | Modelo base sin comprimir | llama2 | Hugging Face, ampliamente usado |
 | Variantes de poda/SVD de Llama 2 de la literatura | Variable | Heredado de Llama 2 | Poda estructurada o SVD con recuperación | llama2 | Repositorios de investigación dispersos |
 
 La comparación directa con alternativas de compresión publicadas no está disponible en la información proporcionada; no se aportan cifras de rendimiento que permitan situar este checkpoint frente a otros métodos de poda o factorización.
@@ -83,6 +83,6 @@ La comparación directa con alternativas de compresión publicadas no está disp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l2_utility_remove0.4_rho0.00000001
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l2_utility_remove0.4_rho0.00000001
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

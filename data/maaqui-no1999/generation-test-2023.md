@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maaqui-no1999/generation-test-2023` es un repositorio de HuggingFace publicado por el usuario maaqui-no1999 que contiene una implementación propia de una arquitectura denominada Cnn Transformer, en su variante `nano`, orientada a tareas de generación. El propio autor indica explícitamente que se trata de un punto de partida reproducible y no de una release de un modelo entrenado: el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un checkpoint con benchmarks publicados.
+`maaqui-no1999/generation-test-2023` es un repositorio de Hugging Face publicado por el usuario maaqui-no1999 que contiene una implementación propia de una arquitectura denominada Cnn Transformer, en su variante `nano`, orientada a tareas de generación. El propio autor indica explícitamente que se trata de un punto de partida reproducible y no de una release de un modelo entrenado: el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un checkpoint con benchmarks publicados.
 
 El modelo es extremadamente pequeño: 24.832 parámetros totales según los datos reales de safetensors, lo que lo sitúa tres o cuatro órdenes de magnitud por debajo de cualquier modelo de lenguaje usable en producción. La arquitectura combina atención dispersa (sparse attention), fusión de bajo rango, activación GELU y normalización ScaleNorm, con una receta de experimento por defecto basada en el optimizador Lion y un planificador OneCycle.
 
@@ -76,7 +76,7 @@ No disponible. En la informacion proporcionada no se incluye ningún modelo comp
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| generation-test-2023 (Cnn Transformer nano) | 24.832 | no disponible | no disponible (sin benchmark) | Apache 2.0 | HuggingFace |
+| generation-test-2023 (Cnn Transformer nano) | 24.832 | no disponible | no disponible (sin benchmark) | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,5 +94,5 @@ No disponible. En la informacion proporcionada no se incluye ningún modelo comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maaqui-no1999/generation-test-2023
+- Modelo en Hugging Face: https://huggingface.co/maaqui-no1999/generation-test-2023
 - No se han encontrado papers, blogs, repositorios, demos ni artefactos adicionales asociados al modelo en los resultados de busqueda web disponibles. Los resultados devueltos tratan sobre audio de sistema en Windows, ventanas emergentes del navegador Edge, formato de celdas en Excel y la aplicación Discord, y no guardan relación con este modelo.

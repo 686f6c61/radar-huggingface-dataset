@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Mika-FaceHug1Thru5/ModelCopiletPlain-Gmail.112.12` es un repositorio alojado en HuggingFace por el usuario Mika-FaceHug1Thru5. En el momento de redactar esta ficha, el repositorio no incluye model card sustantiva: el unico contenido declarado en el README es la etiqueta de licencia `openrail`, sin descripcion del modelo, del proceso de entrenamiento ni de sus capacidades. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (10 de septiembre de 2026), lo que sugiere una publicacion sin mantenimiento posterior.
+El modelo identificado como `Mika-FaceHug1Thru5/ModelCopiletPlain-Gmail.112.12` es un repositorio alojado en Hugging Face por el usuario Mika-FaceHug1Thru5. En el momento de redactar esta ficha, el repositorio no incluye model card sustantiva: el unico contenido declarado en el README es la etiqueta de licencia `openrail`, sin descripcion del modelo, del proceso de entrenamiento ni de sus capacidades. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (10 de septiembre de 2026), lo que sugiere una publicacion sin mantenimiento posterior.
 
 No es posible determinar a partir de la informacion disponible que problema resuelve el modelo, cual es su arquitectura, su tamano o su ventana de contexto. El nombre del repositorio sugiere, por convencion de nomenclatura, un posible ajuste fino orientado a tareas de asistente o de generacion de texto (por el fragmento "CopiletPlain"), pero esto es una inferencia basada unicamente en el nombre y no debe considerarse un dato verificado.
 
@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mika-FaceHug1Thru5/ModelCopiletPlain-Gmail.112.12
-- Perfil del autor en HuggingFace: https://huggingface.co/Mika-FaceHug1Thru5
+- Repositorio en Hugging Face: https://huggingface.co/Mika-FaceHug1Thru5/ModelCopiletPlain-Gmail.112.12
+- Perfil del autor en Hugging Face: https://huggingface.co/Mika-FaceHug1Thru5
 - Texto de la licencia OpenRAIL: https://huggingface.co/blog/open_rail
 - Resultados de busqueda web: sin relevancia tecnica (articulos sobre el cantante Mika en Wikipedia y otros medios).

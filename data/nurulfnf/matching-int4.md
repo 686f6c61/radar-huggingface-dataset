@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nurulfnf/matching-int4` es un repositorio experimental de HuggingFace que contiene una implementacion propia de una arquitectura denominada "Mae" orientada a tareas de *matching*. El autor lo publica como punto de partida reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado ni evaluado. El checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (*smoke tests*), y la propia model card indica explicitamente que no se reclama ninguna puntuacion de benchmark.
+`nurulfnf/matching-int4` es un repositorio experimental de Hugging Face que contiene una implementacion propia de una arquitectura denominada "Mae" orientada a tareas de *matching*. El autor lo publica como punto de partida reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado ni evaluado. El checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (*smoke tests*), y la propia model card indica explicitamente que no se reclama ninguna puntuacion de benchmark.
 
 El modelo se presenta a escala "nano", con atencion estandar, fusion mediante *co-attention*, activacion Mish y normalizacion BatchNorm. El recuento real de parametros en safetensors es de 33.088, lo que lo situa en el rango de unos 33 mil parametros, muy por debajo de cualquier LLM operativo. No es, por tanto, un modelo de lenguaje generativo, sino un esqueleto de codigo y pesos inicializados para experimentacion en tareas de emparejamiento (posiblemente retrieval, matching de pares o similar).
 
@@ -76,5 +76,5 @@ No disponible. No se identifican en la informacion proporcionada modelos compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nurulfnf/matching-int4
+- Repositorio en Hugging Face: https://huggingface.co/nurulfnf/matching-int4
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

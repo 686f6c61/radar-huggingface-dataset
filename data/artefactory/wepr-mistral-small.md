@@ -6,7 +6,7 @@ artefactory/wepr-mistral-small es un detector de alucinaciones calibrado, public
 
 El detector implementa WEPR (Weighted EPR, tasa de producción de entropía ponderada), una variante de las características EPR que mantiene separados los rangos de los tokens. A partir de las top-15 log-probabilidades de una respuesta extrae 2k = 30 características (media y máximo sobre el eje de tokens para cada rango, con k = 15) y las combina mediante un Logit calibrado. Solo necesita acceso de caja negra a las log-probabilidades; no requiere pesos ni gradientes del modelo evaluado.
 
-Su relevancia es doble: por un lado, formaliza un método de detección de alucinaciones en LLM de caja negra presentado en ECIR 2026 (DOI 10.1007/978-3-032-21289-4_8, preprint arXiv:2509.04492); por otro, se distribuye como un artefacto mínimo, sin clases personalizadas, que carga con una lista `trusted` vacía y se ejecuta en CPU junto a la librería artefactual. La licencia es MIT y el número de descargas e interacciones registradas en HuggingFace es de 0 en la fecha de consulta.
+Su relevancia es doble: por un lado, formaliza un método de detección de alucinaciones en LLM de caja negra presentado en ECIR 2026 (DOI 10.1007/978-3-032-21289-4_8, preprint arXiv:2509.04492); por otro, se distribuye como un artefacto mínimo, sin clases personalizadas, que carga con una lista `trusted` vacía y se ejecuta en CPU junto a la librería artefactual. La licencia es MIT y el número de descargas e interacciones registradas en Hugging Face es de 0 en la fecha de consulta.
 
 ## Especificaciones tecnicas
 
@@ -83,7 +83,7 @@ No se dispone de datos comparativos con alternativas externas (por ejemplo, dete
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/artefactory/wepr-mistral-small
+- Modelo en Hugging Face: https://huggingface.co/artefactory/wepr-mistral-small
 - Modelo objetivo: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503
 - Libreria artefactual (repositorio): https://github.com/artefactory/artefactual
 - Incidencias y contacto: https://github.com/artefactory/artefactual/issues

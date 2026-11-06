@@ -81,7 +81,7 @@ Los datos de parametros activos y contexto del modelo base y de los modelos comp
 - El rendimiento de las cuantizaciones GGUF puede degradar ligeramente la calidad respecto al modelo original en MXFP4; no se aportan mediciones al respecto.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/hrm-labs/gpt-oss-20b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/hrm-labs/gpt-oss-20b-GGUF
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Especulador EAGLE3: https://huggingface.co/RedHatAI/gpt-oss-20b-speculator.eagle3
 - Version oficial GGUF: https://huggingface.co/ggml-org/gpt-oss-20b-GGUF

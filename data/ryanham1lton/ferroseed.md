@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ferroseed es un repositorio de modelos publicado en HuggingFace por el usuario Ryanham1lton (Ryan James Hamilton) el 27 de octubre de 2026. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 «likes», ocupa 0,1 GB y no tiene pipeline declarado, por lo que la plataforma no lo reconoce como ningun tipo de modelo concreto (text-generation, image-text-to-text, automatic-speech-recognition, etc.). La model card entregada por el autor se limita a la cabecera YAML con la licencia `cc-by-4.0` y no contiene ni una sola frase de documentacion tecnica.
+Ferroseed es un repositorio de modelos publicado en Hugging Face por el usuario Ryanham1lton (Ryan James Hamilton) el 27 de octubre de 2026. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 «likes», ocupa 0,1 GB y no tiene pipeline declarado, por lo que la plataforma no lo reconoce como ningun tipo de modelo concreto (text-generation, image-text-to-text, automatic-speech-recognition, etc.). La model card entregada por el autor se limita a la cabecera YAML con la licencia `cc-by-4.0` y no contiene ni una sola frase de documentacion tecnica.
 
 No se dispone por tanto de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. Los unicos metadatos publicados son la licencia CC-BY-4.0, la region `us` y las marcas temporales de creacion y actualizacion, separadas por 36 segundos, lo que apunta a una unica subida sin iteraciones posteriores.
 
@@ -45,9 +45,9 @@ En ausencia de pipeline declarado, el repositorio no se puede cargar directament
 
 Los siguientes escenarios son condicionales: solo resultan viables despues de descargar el repositorio y verificar el formato y la arquitectura reales del artefacto. Se plantean como usos plausibles de un checkpoint pequeno y sin documentar, no como capacidades confirmadas.
 
-- Auditoria y catalogacion de artefactos en HuggingFace: usar el repositorio como caso de estudio para pipelines internos que detectan model cards incompletas, ausencia de pipeline o licencias sin documentacion asociada.
+- Auditoria y catalogacion de artefactos en Hugging Face: usar el repositorio como caso de estudio para pipelines internos que detectan model cards incompletas, ausencia de pipeline o licencias sin documentacion asociada.
 - Analisis de seguridad de la cadena de suministro: inspeccionar los pesos con herramientas de escaneo de ficheros (pickle scanning, verificacion de hashes) antes de permitir su descarga en un entorno corporativo, dado que no hay garantias del autor ni historial de descargas.
-- Evaluacion comparativa de repositorios de baja traccion: incorporar el modelo a un estudio sobre reproducibilidad en HuggingFace, midiendo cuantos repositorios con 0 descargas carecen de informacion suficiente para ser reutilizados.
+- Evaluacion comparativa de repositorios de baja traccion: incorporar el modelo a un estudio sobre reproducibilidad en Hugging Face, midiendo cuantos repositorios con 0 descargas carecen de informacion suficiente para ser reutilizados.
 - Prueba de carga en infraestructura propia: al ocupar 0,1 GB, cabe en cualquier entorno de pruebas y permite validar scripts de carga, conversion de formato y serializacion sin coste de GPU.
 - Base para experimentos docentes: en un curso de ingenieria de ML, utilizarlo como ejemplo de por que la documentacion y los benchmarks son requisito antes de seleccionar un modelo.
 - Verificacion de licencia en productos comerciales: CC-BY-4.0 permite uso comercial con atribucion, de modo que un equipo legal puede usar el repositorio para practicar el flujo de cumplimiento (atribucion, aviso de cambios) con un artefacto de bajo riesgo.
@@ -71,7 +71,7 @@ No es posible establecer una comparativa fiable: sin arquitectura, parametros ni
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ryanham1lton/Ferroseed | no disponible | no disponible | no disponible | CC-BY-4.0 | publico en HuggingFace, 0 descargas |
+| Ryanham1lton/Ferroseed | no disponible | no disponible | no disponible | CC-BY-4.0 | publico en Hugging Face, 0 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 3 | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -90,8 +90,8 @@ No es posible establecer una comparativa fiable: sin arquitectura, parametros ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanham1lton/Ferroseed
-- Perfil del autor en HuggingFace: https://huggingface.co/Ryanham1lton
+- Modelo en Hugging Face: https://huggingface.co/Ryanham1lton/Ferroseed
+- Perfil del autor en Hugging Face: https://huggingface.co/Ryanham1lton
 - Repositorio hermano del mismo autor (FlounderJM): https://huggingface.co/Ryanham1lton/FlounderJM/tree/main
 - Etiqueta «Ferroseed» en Civitai (relacion con este repositorio no confirmada): https://civitai.com/tag/ferroseed
 - Perfil del autor en Storyteller.ai (sin relacion tecnica confirmada): https://storyteller.ai/profile/ryanham1lton

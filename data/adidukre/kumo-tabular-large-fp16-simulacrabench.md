@@ -83,7 +83,7 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/adidukre/kumo-tabular-large-fp16-simulacrabench
+- Repositorio Hugging Face: https://huggingface.co/adidukre/kumo-tabular-large-fp16-simulacrabench
 - Modelo original: https://huggingface.co/nvidia/Kumo-Tabular
 - Commit de origen citado: `3c3e10bbdb590ace29e7026847f92db3c603096d` (tag v1.0.1) en nvidia/Kumo-Tabular
 - Licencia OpenMDW 1.1: incluida en el repositorio como `LICENSE`

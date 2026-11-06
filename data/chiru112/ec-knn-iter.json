@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "chiru112/ec-knn-iter",
+  "slug": "chiru112-ec-knn-iter",
+  "author": "chiru112",
+  "url": "https://huggingface.co/chiru112/ec-knn-iter",
+  "created_at": "2026-11-06T12:08:05.000Z",
+  "updated_at": "2026-11-06T12:08:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1635221168,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chiru112/ec-knn-v2 · Hugging Face",
+      "url": "https://huggingface.co/chiru112/ec-knn-v2",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "chiru112/ec-knn-v3 · Hugging Face",
+      "url": "https://huggingface.co/chiru112/ec-knn-v3",
+      "snippet": "CPU-only enzyme EC prediction for the Leak CURBER enzyme classification task. MMseqs2 search of each unique input against the full training set (prebuilt index), then a bit-score-weighted vote over the ECs of the top hits. The first EC in the list is the best guess; up to two more are added when ..."
+    }
+  ]
+}

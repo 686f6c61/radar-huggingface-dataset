@@ -110,7 +110,7 @@ Comparacion con otras cuantizaciones publicas del mismo modelo, mismo conjunto y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/gemma-4-31B-it-AWQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-31B-it-AWQ-4bit
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Cuantizacion comparable: https://huggingface.co/cyankiwi/gemma-4-31B-it-AWQ-4bit

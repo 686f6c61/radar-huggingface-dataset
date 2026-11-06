@@ -77,7 +77,7 @@ La model card no incluye tablas comparativas, valores de correlacion con juicios
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | SAM-Audio Judge (facebook/sam-audio-judge) | Evaluador multimodal de audio y texto | 1,53 mil millones | no disponible | no disponible | SAM License | Acceso restringido mediante solicitud |
-| SAM Audio Large (facebook/sam-audio-large) | Modelo de separacion de audio guiada por texto | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Repositorio publico en HuggingFace |
+| SAM Audio Large (facebook/sam-audio-large) | Modelo de separacion de audio guiada por texto | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Repositorio publico en Hugging Face |
 | Metricas clasicas de calidad de audio (PESQ, STOI, DNSMOS, ViSQOL) | Algoritmos de referencia, no modelos generativos | no aplica | no aplica | no disponible en la informacion proporcionada | dependen de cada implementacion | Ampliamente disponibles |
 | Metricas basadas en embeddings audio-texto (por ejemplo, CLAP) | Modelo de representacion conjunta | no disponible | no disponible | no disponible en la informacion proporcionada | variable segun checkpoint | Variable |
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de HuggingFace con el identificador `ps-toolathlon/MyAwesomeModel-TestRepo`. El repositorio, creado el 15 de agosto de 2026, no registra descargas ni interacciones, y el tamaño del repositorio es de 0.0 GB, lo que sugiere que se trata de una publicación de prueba o un espacio vacío. La model card, redactada en inglés, describe un modelo que ha sido actualizado para mejorar su razonamiento y capacidades de inferencia, con resultados destacados en matemáticas, programación y lógica. Sin embargo, la ficha no proporciona datos técnicos concretos como número de parámetros, arquitectura o longitud de contexto, y los benchmarks presentados carecen de especificación sobre las métricas exactas utilizadas.
+MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de Hugging Face con el identificador `ps-toolathlon/MyAwesomeModel-TestRepo`. El repositorio, creado el 15 de agosto de 2026, no registra descargas ni interacciones, y el tamaño del repositorio es de 0.0 GB, lo que sugiere que se trata de una publicación de prueba o un espacio vacío. La model card, redactada en inglés, describe un modelo que ha sido actualizado para mejorar su razonamiento y capacidades de inferencia, con resultados destacados en matemáticas, programación y lógica. Sin embargo, la ficha no proporciona datos técnicos concretos como número de parámetros, arquitectura o longitud de contexto, y los benchmarks presentados carecen de especificación sobre las métricas exactas utilizadas.
 
 El modelo se presenta con licencia MIT y está etiquetado para `feature-extraction` dentro del ecosistema `transformers` de PyTorch. A pesar de las afirmaciones de la model card sobre mejoras en razonamiento y reducción de alucinaciones, la ausencia de especificaciones verificables y de un repositorio con pesos reales impide validar estas afirmaciones. Por tanto, esta ficha se limita a reflejar la información disponible, marcando explícitamente los datos no disponibles.
 
@@ -98,6 +98,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ps-toolathlon/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/ps-toolathlon/MyAwesomeModel-TestRepo
 
 No se proporcionan otros enlaces (papers, blogs, repositorios de código, demos) en la información disponible.

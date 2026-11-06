@@ -74,6 +74,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ashley222/standalone-traffic-brain
+- Modelo en Hugging Face: https://huggingface.co/ashley222/standalone-traffic-brain
 - Dataset UCI Traffic Flow Forecasting: DOI 10.24432/C57897 (referenciado en la model card, sin URL directa)
 - No se encontraron otros enlaces relevantes en la búsqueda web (papers, repositorios o demos adicionales).

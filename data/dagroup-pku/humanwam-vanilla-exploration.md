@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DAGroup-PKU/HumanWAM-Vanilla-Exploration
+- Modelo en Hugging Face: https://huggingface.co/DAGroup-PKU/HumanWAM-Vanilla-Exploration
 - Codigo y documentacion del proyecto: https://github.com/DAGroup-PKU/HumanNet/tree/Open-HumanWAM/humanwam_vanilla
 - Modelo relacionado HumanWAM-Vanilla-RoboTwin: https://huggingface.co/DAGroup-PKU/HumanWAM-Vanilla-RoboTwin
 - Modelo relacionado HumanWAM-Vanilla-Base: https://huggingface.co/DAGroup-PKU/HumanWAM-Vanilla-Base

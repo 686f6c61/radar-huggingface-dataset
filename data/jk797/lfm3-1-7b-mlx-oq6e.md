@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-MLX-oQ6e es una cuantización mixta del modelo LFM3 de 1.7B parámetros, publicada por el usuario jk797 en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un checkpoint derivado del LFM3 original, convertido al formato MLX y cuantizado con la herramienta oQ (oMLX v0.7.4.dev1) para su uso eficiente en hardware Apple Silicon. El modelo base LFM3 está desarrollado por Liquid AI, aunque la model card de esta publicación no lo confirma explícitamente.
+LFM3-1.7B-MLX-oQ6e es una cuantización mixta del modelo LFM3 de 1.7B parámetros, publicada por el usuario jk797 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un checkpoint derivado del LFM3 original, convertido al formato MLX y cuantizado con la herramienta oQ (oMLX v0.7.4.dev1) para su uso eficiente en hardware Apple Silicon. El modelo base LFM3 está desarrollado por Liquid AI, aunque la model card de esta publicación no lo confirma explícitamente.
 
 El checkpoint contiene 1.728.801.536 parámetros lógicos distribuidos en 1.348 GiB de almacenamiento, con una media efectiva de 6.700 bits por peso. La mayor parte de los pesos (90,07%) se almacenan en cuantización afín de 6 bits con grupo de 64, mientras que un 9,907% se mantiene en 8 bits y un residual mínimo (0,022%) en BF16. Esta distribución mixta busca preservar la calidad en capas sensibles sin disparar el tamaño del fichero.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jk797/LFM3-1.7B-MLX-oQ6e
+- Hugging Face: https://huggingface.co/jk797/LFM3-1.7B-MLX-oQ6e
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base LFM3 (Liquid AI): no disponible en la información proporcionada
 - Paper, blog o demo del modelo base: no disponible en la información proporcionada

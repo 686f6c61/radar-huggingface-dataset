@@ -80,7 +80,7 @@ No disponible. No se han identificado en la información proporcionada otras pol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lphatnguyen/microduck-sock-heist-6m-v4
+- Modelo en Hugging Face: https://huggingface.co/lphatnguyen/microduck-sock-heist-6m-v4
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl`, rama `sock-heist-training`, commit `a9189869a` (referenciado en la model card; URL exacta no disponible)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon (URL exacta no disponible)

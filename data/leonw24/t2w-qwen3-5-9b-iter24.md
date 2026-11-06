@@ -79,7 +79,7 @@ La comparativa se limita a características generales, ya que no se dispone de r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LEONW24/T2W-Qwen3.5-9B-iter24
+- Repositorio Hugging Face: https://huggingface.co/LEONW24/T2W-Qwen3.5-9B-iter24
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Referencia de Qwen3.5-9B en LLM Reference: https://www.llmreference.com/model/qwen3.5-9b
 - Página de Qwen3.5-9B en LM Studio: https://lmstudio.ai/models/qwen/qwen3.5-9b

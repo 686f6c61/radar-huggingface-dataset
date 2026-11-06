@@ -80,9 +80,9 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- [HuggingFace - shoemoney/Muse-Glimmer-30B-Abliterated-MLX-mxfp4](https://huggingface.co/shoemoney/Muse-Glimmer-30B-Abliterated-MLX-mxfp4)
-- [HuggingFace - Blackfrost-AI/Muse-Glimmer-30B-Abliterated-BF16](https://huggingface.co/Blackfrost-AI/Muse-Glimmer-30B-Abliterated-BF16)
-- [HuggingFace - meta-models/Muse-Glimmer-30B](https://huggingface.co/meta-models/Muse-Glimmer-30B)
+- [Hugging Face - shoemoney/Muse-Glimmer-30B-Abliterated-MLX-mxfp4](https://huggingface.co/shoemoney/Muse-Glimmer-30B-Abliterated-MLX-mxfp4)
+- [Hugging Face - Blackfrost-AI/Muse-Glimmer-30B-Abliterated-BF16](https://huggingface.co/Blackfrost-AI/Muse-Glimmer-30B-Abliterated-BF16)
+- [Hugging Face - meta-models/Muse-Glimmer-30B](https://huggingface.co/meta-models/Muse-Glimmer-30B)
 - [Meta Developer - Muse Glimmer](https://developer.meta.com/ai/models/muse-glimmer/)
 - [vLLM Recipes - Muse-Glimmer-30B](https://recipes.vllm.ai/meta-models/Muse-Glimmer-30B)
 - [Sitio no oficial - museglimmer.site](https://museglimmer.site/)

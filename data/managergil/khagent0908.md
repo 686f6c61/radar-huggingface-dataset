@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`managergil/khagent0908` es un modelo publicado en HuggingFace por el usuario `managergil` el 21 de octubre de 2026 (última actualización el mismo día). Se trata de un repositorio con un historial muy limitado: 25 descargas y ninguna marca de "me gusta", sin pipeline declarado, sin licencia especificada y sin idiomas documentados en la ficha del repositorio. La informacion publica disponible no incluye model card, informe tecnico ni resultados de evaluacion.
+`managergil/khagent0908` es un modelo publicado en Hugging Face por el usuario `managergil` el 21 de octubre de 2026 (última actualización el mismo día). Se trata de un repositorio con un historial muy limitado: 25 descargas y ninguna marca de "me gusta", sin pipeline declarado, sin licencia especificada y sin idiomas documentados en la ficha del repositorio. La informacion publica disponible no incluye model card, informe tecnico ni resultados de evaluacion.
 
 El unico indicio sobre su naturaleza tecnica son las etiquetas del repositorio: `qwen2`, `custom_code` y `region:us`. La etiqueta `qwen2` sugiere que el modelo parte de la familia Qwen2 de Alibaba (arquitectura transformer con decoder-only), mientras que `custom_code` indica que la carga del modelo requiere ejecutar codigo propio del repositorio mediante `trust_remote_code=True`, es decir, que la implementacion no es la estandar de `transformers`. No se dispone de confirmacion oficial sobre el numero de parametros, la longitud de contexto ni el proceso de entrenamiento.
 
@@ -44,7 +44,7 @@ No es posible recomendar casos de uso concretos con garantias, dado que se desco
 
 - Evaluacion interna en laboratorio: cargar el modelo en un entorno aislado (contenedor sin red, `trust_remote_code` auditado) para medir empiricamente parametros, contexto y calidad antes de considerar cualquier otro uso.
 - Pruebas de concepto de agentes conversacionales: si el modelo confirma una ventana de contexto util, podria probarse en flujos de chat multi-turno, siempre con evaluacion propia de calidad y latencia.
-- Experimentacion academica con modelos de autor individual: util como caso de estudio de publicaciones sin model card ni evaluacion, para discutir practicas de documentacion en HuggingFace.
+- Experimentacion academica con modelos de autor individual: util como caso de estudio de publicaciones sin model card ni evaluacion, para discutir practicas de documentacion en Hugging Face.
 - Generacion de texto auxiliar en prototipos: solo en entornos de desarrollo, sin exposicion a usuarios finales y con revision humana de las salidas.
 - Investigacion sobre riesgos de `custom_code`: permite analizar el vector de riesgo que supone cargar pesos con codigo arbitrario en pipelines de `transformers`.
 - Fine-tuning exploratorio: si finalmente se identifica la arquitectura base, podria servir como punto de partida para ajuste con datos propios, sujeto a la licencia (actualmente desconocida, lo que bloquea el uso comercial).
@@ -68,8 +68,8 @@ No es posible establecer una comparativa fiable: se desconocen los parametros, e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos del modelo evaluado |
 |---|---|---|---|---|---|
-| managergil/khagent0908 | No disponible | No disponible | No disponible | HuggingFace, 25 descargas | No verificables |
-| Qwen2 / Qwen2.5 (Alibaba) | 0,5B a 72B en varias tallas | Hasta 128K en algunas variantes | Apache 2.0 en la mayoria de tallas | HuggingFace, ampliamente documentado | Referencia de familia, no comparacion directa |
+| managergil/khagent0908 | No disponible | No disponible | No disponible | Hugging Face, 25 descargas | No verificables |
+| Qwen2 / Qwen2.5 (Alibaba) | 0,5B a 72B en varias tallas | Hasta 128K en algunas variantes | Apache 2.0 en la mayoria de tallas | Hugging Face, ampliamente documentado | Referencia de familia, no comparacion directa |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No se identifican modelos comparables con certeza |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No es posible establecer una comparativa fiable: se desconocen los parametros, e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/managergil/khagent0908
+- Hugging Face: https://huggingface.co/managergil/khagent0908
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

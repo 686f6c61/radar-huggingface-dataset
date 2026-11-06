@@ -73,7 +73,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ranjitraut/dacpt-v2-gemma4
+- Repositorio Hugging Face: https://huggingface.co/ranjitraut/dacpt-v2-gemma4
 - Modelo base Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Model card oficial de Gemma 4: https://ai.google.dev/gemma/docs/core/model_card_4
 - Informe técnico de Gemma 4 (arXiv): https://arxiv.org/html/2607.02770v1

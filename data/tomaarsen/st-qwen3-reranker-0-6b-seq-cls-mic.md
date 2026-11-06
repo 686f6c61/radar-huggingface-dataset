@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tomaarsen/st-Qwen3-Reranker-0-6B-seq-cls-mic` es un artefacto de prueba (fixture) publicado por tomaarsen en HuggingFace, no un modelo entrenado para uso real. Se trata de una versión "adelgazada" (slim) del modelo base `tomaarsen/Qwen3-Reranker-0.6B-seq-cls`, un reranker CrossEncoder derivado de Qwen3, creada para verificar la integración de frameworks (en concreto, la librería sentence-transformers) con modelos de tamaño reducido y pesos aleatorios.
+`tomaarsen/st-Qwen3-Reranker-0-6B-seq-cls-mic` es un artefacto de prueba (fixture) publicado por tomaarsen en Hugging Face, no un modelo entrenado para uso real. Se trata de una versión "adelgazada" (slim) del modelo base `tomaarsen/Qwen3-Reranker-0.6B-seq-cls`, un reranker CrossEncoder derivado de Qwen3, creada para verificar la integración de frameworks (en concreto, la librería sentence-transformers) con modelos de tamaño reducido y pesos aleatorios.
 
 El repositorio empaqueta en un único lugar pesos reducidos, ejemplos de uso ejecutables y las expectativas del framework (un manifiesto de contrato en `integration.json` y un directorio `integrations/transformers/expectations`). Su propósito es servir como fixture de test para validar pipelines de integración, no para tareas de recuperación de información.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| st-Qwen3-Reranker-0-6B-seq-cls-mic (este) | 9,78M | no disponible | Fixture de test | no disponible | HuggingFace |
-| tomaarsen/Qwen3-Reranker-0.6B-seq-cls | ~0,6B | no disponible | Reranker CrossEncoder funcional | no disponible | HuggingFace |
-| Qwen3-Reranker-0.6B (original) | ~0,6B | no disponible | Reranker funcional | no disponible | HuggingFace |
+| st-Qwen3-Reranker-0-6B-seq-cls-mic (este) | 9,78M | no disponible | Fixture de test | no disponible | Hugging Face |
+| tomaarsen/Qwen3-Reranker-0.6B-seq-cls | ~0,6B | no disponible | Reranker CrossEncoder funcional | no disponible | Hugging Face |
+| Qwen3-Reranker-0.6B (original) | ~0,6B | no disponible | Reranker funcional | no disponible | Hugging Face |
 
 La comparación relevante es con su modelo base: este artefacto es una versión reducida y con pesos aleatorios del reranker `tomaarsen/Qwen3-Reranker-0.6B-seq-cls`, por lo que no es funcionalmente equivalente. Para uso real de reranking debe utilizarse el modelo base o el Qwen3-Reranker original.
 
@@ -84,7 +84,7 @@ La comparación relevante es con su modelo base: este artefacto es una versión 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tomaarsen/st-Qwen3-Reranker-0-6B-seq-cls-mic
+- Hugging Face: https://huggingface.co/tomaarsen/st-Qwen3-Reranker-0-6B-seq-cls-mic
 - Modelo base: https://huggingface.co/tomaarsen/Qwen3-Reranker-0.6B-seq-cls
 - Manifiesto de contrato: https://huggingface.co/tomaarsen/st-Qwen3-Reranker-0-6B-seq-cls-mic/blob/main/integration.json
 - Uso con Transformers: https://huggingface.co/tomaarsen/st-Qwen3-Reranker-0-6B-seq-cls-mic/blob/main/integrations/transformers/usage.md

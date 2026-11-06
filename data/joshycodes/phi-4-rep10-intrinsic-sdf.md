@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evaluacion |
 |---|---|---|---|---|---|
-| joshycodes/phi-4-rep10-intrinsic-sdf | ~14,66 mil M | no disponible (base: 16.384) | research-only | HuggingFace, 8 descargas | no evaluado |
-| microsoft/phi-4 | ~14,7 mil M | 16.384 tokens | MIT | HuggingFace | con benchmarks publicos en su model card original |
-| Qwen2.5-14B | ~14,7 mil M | 128.000 tokens (segun variante) | Apache 2.0 | HuggingFace | con benchmarks publicos en su model card original |
+| joshycodes/phi-4-rep10-intrinsic-sdf | ~14,66 mil M | no disponible (base: 16.384) | research-only | Hugging Face, 8 descargas | no evaluado |
+| microsoft/phi-4 | ~14,7 mil M | 16.384 tokens | MIT | Hugging Face | con benchmarks publicos en su model card original |
+| Qwen2.5-14B | ~14,7 mil M | 128.000 tokens (segun variante) | Apache 2.0 | Hugging Face | con benchmarks publicos en su model card original |
 
 Nota: los datos de contexto y licencia de `microsoft/phi-4` y `Qwen2.5-14B` corresponden a sus publicaciones oficiales y no a mediciones realizadas sobre este checkpoint. Para el modelo objeto de esta ficha no hay benchmarks disponibles que permitan una comparacion cuantitativa.
 
@@ -84,7 +84,7 @@ Nota: los datos de contexto y licencia de `microsoft/phi-4` y `Qwen2.5-14B` corr
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/joshycodes/phi-4-rep10-intrinsic-sdf
+- Ficha del modelo en Hugging Face: https://huggingface.co/joshycodes/phi-4-rep10-intrinsic-sdf
 - Modelo base microsoft/phi-4: https://huggingface.co/microsoft/phi-4
 - Referencia del modelo phi-4 en AI Model Radar: https://aimodelradar.app/models/phi-4
 - Corpus asociado referenciado en la model card: `joshycodes/qwen-constitutional-sdf-corpus` (no se ha encontrado URL directa en los resultados de busqueda)

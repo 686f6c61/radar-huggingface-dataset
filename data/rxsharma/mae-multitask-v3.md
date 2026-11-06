@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mae-multitask-v3 es un repositorio publicado por el usuario rxsharma en HuggingFace que contiene una implementacion funcional de una arquitectura denominada "Mae" orientada a tareas multitarea, en una configuracion que el propio autor describe como "nano". No se trata de un modelo entrenado ni de un checkpoint con resultados de benchmarks: la model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*) y que no se presenta como un checkpoint entrenado.
+mae-multitask-v3 es un repositorio publicado por el usuario rxsharma en Hugging Face que contiene una implementacion funcional de una arquitectura denominada "Mae" orientada a tareas multitarea, en una configuracion que el propio autor describe como "nano". No se trata de un modelo entrenado ni de un checkpoint con resultados de benchmarks: la model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*) y que no se presenta como un checkpoint entrenado.
 
 El problema que aborda es fundamentalmente de ingenieria y reproducibilidad: ofrecer codigo transparente y pruebas repetibles para una arquitectura multitarea con atencion de ventana deslizante y fusion mediante MLP con concatenacion. El repositorio incluye el script principal (`pipeline.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto (AdamW con calentamiento lineal) y el checkpoint de inicializacion.
 
@@ -75,7 +75,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rxsharma/mae-multitask-v3 | 49.600 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, checkpoint de inicializacion |
+| rxsharma/mae-multitask-v3 | 49.600 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, checkpoint de inicializacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,5 +93,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rxsharma/mae-multitask-v3
+- Hugging Face: https://huggingface.co/rxsharma/mae-multitask-v3
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo (los unicos resultados obtenidos fueron paginas de USPS sin relacion con el ambito de IA). Por tanto, no hay papers, blogs, repositorios ni demos adicionales que enlazar.

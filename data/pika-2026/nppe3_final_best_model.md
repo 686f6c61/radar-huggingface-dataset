@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 | Real-ESRGAN (x4plus) | RRDBNet | ~16.7M | no aplica | BSD-3-Clause | Pesos oficiales en GitHub |
 | ESRGAN | RRDB | ~16.7M | no aplica | Apache 2.0 | Pesos en GitHub |
 | SwinIR | Transformer | ~11.8M | no aplica | Apache 2.0 | Pesos en GitHub |
-| nppe3_final_best_model | RRDBNet | no disponible | no aplica | no disponible | HuggingFace |
+| nppe3_final_best_model | RRDBNet | no disponible | no aplica | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar directamente este modelo con las alternativas. La comparacion se limita a la arquitectura y disponibilidad.
 
@@ -81,4 +81,4 @@ No se dispone de datos de rendimiento para comparar directamente este modelo con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pika-2026/nppe3_final_best_model
+- Modelo en Hugging Face: https://huggingface.co/pika-2026/nppe3_final_best_model

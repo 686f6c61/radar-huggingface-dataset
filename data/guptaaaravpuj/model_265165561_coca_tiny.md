@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`model_265165561_coca_tiny` es un artefacto publicado por el usuario `guptaaaravpuj` en HuggingFace que implementa una variante de la arquitectura **coca** (CoCa, *Contrastive Captioners*) en escala **tiny**, orientada a tareas de **generación**. El repositorio contiene un único archivo Python (`model_265165561_coca_tiny.py`) que define la arquitectura, el método de fusión bilineal, la normalización RMSNorm, la activación GELU-tanh y la inicialización ortogonal, junto con la configuración de entrenamiento (optimizador SGD y scheduler exponencial).
+`model_265165561_coca_tiny` es un artefacto publicado por el usuario `guptaaaravpuj` en Hugging Face que implementa una variante de la arquitectura **coca** (CoCa, *Contrastive Captioners*) en escala **tiny**, orientada a tareas de **generación**. El repositorio contiene un único archivo Python (`model_265165561_coca_tiny.py`) que define la arquitectura, el método de fusión bilineal, la normalización RMSNorm, la activación GELU-tanh y la inicialización ortogonal, junto con la configuración de entrenamiento (optimizador SGD y scheduler exponencial).
 
 No se publican pesos preentrenados, datos de entrenamiento, ni resultados de benchmarks. El modelo está bajo licencia **CC-BY-4.0**, lo que permite uso comercial con atribución, pero sin garantías de calidad o idoneidad. La relevancia es limitada: se trata de un artefacto de investigación o experimentación personal, sin documentación adicional ni evidencia de utilidad práctica. No hay descargas ni likes, lo que sugiere que no ha sido validado por la comunidad.
 
@@ -69,7 +69,7 @@ No hay información pública sobre modelos comparables de la misma categoría (i
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/guptaaaravpuj/model_265165561_coca_tiny)
-- [Model card en HuggingFace](https://huggingface.co/guptaaaravpuj/model_265165561_coca_tiny/raw/main/README.md)
+- [Repositorio en Hugging Face](https://huggingface.co/guptaaaravpuj/model_265165561_coca_tiny)
+- [Model card en Hugging Face](https://huggingface.co/guptaaaravpuj/model_265165561_coca_tiny/raw/main/README.md)
 
 No se han encontrado papers, blogs, repositorios o demos adicionales en la búsqueda web.

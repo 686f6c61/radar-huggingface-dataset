@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mazgu es un modelo de lenguaje publicado por SaintsStudios, un estudio con presencia en Malawi que desarrolla modelos orientados a lenguas africanas poco representadas. Según los metadatos de HuggingFace, se trata de un adaptador LoRA (PEFT) basado en una arquitectura tipo Llama, con 52 millones de parámetros en el adaptador y un tamaño de repositorio de 0,2 GB. La licencia es Apache-2.0, lo que permite uso comercial sin restricciones adicionales.
+Mazgu es un modelo de lenguaje publicado por SaintsStudios, un estudio con presencia en Malawi que desarrolla modelos orientados a lenguas africanas poco representadas. Según los metadatos de Hugging Face, se trata de un adaptador LoRA (PEFT) basado en una arquitectura tipo Llama, con 52 millones de parámetros en el adaptador y un tamaño de repositorio de 0,2 GB. La licencia es Apache-2.0, lo que permite uso comercial sin restricciones adicionales.
 
 El modelo se creó el 19 de agosto de 2026 y, en el momento de la consulta, no tiene descargas ni interacciones. La model card está prácticamente vacía, solo indica la licencia. La información disponible es muy limitada, pero los proyectos hermanos de SaintsStudios (como Mazgu_Small-T_130M) revelan que la serie "Mazgu" está dedicada al idioma tumbuka, una lengua bantú hablada en Malawi. No se puede confirmar si este adaptador concreto está orientado a ese idioma, aunque es probable por la línea de trabajo del autor.
 
@@ -21,7 +21,7 @@ El modelo se creó el 19 de agosto de 2026 y, en el momento de la consulta, no t
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un adaptador LoRA (Low-Rank Adaptation) diseñado para ser aplicado sobre un modelo base tipo Llama. Los tags del repositorio incluyen `lora`, `sft` y `trl`, lo que indica que el entrenamiento se realizó mediante fine-tuning supervisado (SFT) utilizando la librería TRL de HuggingFace. No se dispone de detalles sobre el modelo base concreto, el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO.
+La arquitectura es un adaptador LoRA (Low-Rank Adaptation) diseñado para ser aplicado sobre un modelo base tipo Llama. Los tags del repositorio incluyen `lora`, `sft` y `trl`, lo que indica que el entrenamiento se realizó mediante fine-tuning supervisado (SFT) utilizando la librería TRL de Hugging Face. No se dispone de detalles sobre el modelo base concreto, el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO.
 
 El proyecto "Mazgu" de SaintsStudios parece centrarse en lenguas de Malawi, como demuestra el modelo hermano Mazgu_Small-T_130M, que es un transformer decoder-only estilo Llama preentrenado desde cero en tumbles. Sin embargo, para este modelo concreto no se puede confirmar ni el idioma de entrenamiento ni el proceso exacto, ya que la model card no proporciona información técnica adicional.
 
@@ -70,6 +70,6 @@ No hay modelos comparables directamente, porque no se conoce el modelo base ni l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SaintsStudios/Mazgu
+- Hugging Face: https://huggingface.co/SaintsStudios/Mazgu
 - Modelo hermano (Mazgun_Small-T_130M): https://huggingface.co/SaintsStudios/Mazgun_Small-T_130M
 - Página del estudio: https://sites.google.com/view/saints-studios/home

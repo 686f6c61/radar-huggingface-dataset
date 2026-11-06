@@ -74,5 +74,5 @@ La comparativa se limita al modelo base, ya que no hay información pública sob
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h040.sft3.step_900
+- Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h040.sft3.step_900
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

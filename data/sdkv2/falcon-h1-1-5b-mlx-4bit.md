@@ -21,7 +21,7 @@ La versión base está diseñada para generación de texto y procesamiento de se
 
 ## Arquitectura y entrenamiento
 
-Falcon-H1 combina la atención clásica de los transformers con capas de State Space Models (específicamente del tipo Mamba), lo que permite capturar dependencias de largo alcance con menor coste computacional que la atención completa. Esta arquitectura híbrida está implementada en la librería `transformers` de HuggingFace (clase `FalconH1`). El modelo base fue preentrenado por TII sobre un corpus extenso en inglés, aunque los detalles exactos de tokens y composición del dataset no se han publicado en la información disponible. Este port MLX 4-bit no incluye fine-tuning instructivo; existe una versión separada `Falcon-H1-1.5B-Instruct` y una variante de razonamiento (`Falcon-H1-Reasoning`) para tareas que requieren pasos lógicos.
+Falcon-H1 combina la atención clásica de los transformers con capas de State Space Models (específicamente del tipo Mamba), lo que permite capturar dependencias de largo alcance con menor coste computacional que la atención completa. Esta arquitectura híbrida está implementada en la librería `transformers` de Hugging Face (clase `FalconH1`). El modelo base fue preentrenado por TII sobre un corpus extenso en inglés, aunque los detalles exactos de tokens y composición del dataset no se han publicado en la información disponible. Este port MLX 4-bit no incluye fine-tuning instructivo; existe una versión separada `Falcon-H1-1.5B-Instruct` y una variante de razonamiento (`Falcon-H1-Reasoning`) para tareas que requieren pasos lógicos.
 
 ## Capacidades
 
@@ -68,7 +68,7 @@ No se dispone de comparaciones directas en la información proporcionada. Se pue
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sdkv2/falcon-h1-1.5b-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/sdkv2/falcon-h1-1.5b-mlx-4bit
 - Modelo base original: https://huggingface.co/tiiuae/Falcon-H1-1.5B-Base
 - Documentación de Falcon-H1 en 🤗 Transformers: https://huggingface.co/docs/transformers/main/en/model_doc/falcon_h1
 - Guía de despliegue local (MLX, llama.cpp, OpenWebUI): https://falcon-lm.github.io/tutorials/falcon-h1/

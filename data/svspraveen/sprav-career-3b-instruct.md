@@ -111,7 +111,7 @@ Comparativa de rendimiento: no disponible. No existen evaluaciones independiente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SVSPraveen/SPrav-Career-3B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/SVSPraveen/SPrav-Career-3B-Instruct
 - Perfil del autor en GitHub: https://github.com/SVSPraveen
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-Coder-3B-Instruct-bnb-4bit
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct

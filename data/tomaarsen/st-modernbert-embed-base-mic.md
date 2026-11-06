@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`tomaarsen/st-modernbert-embed-base-mic` es un artefacto de prueba (fixture) publicado por Tomas Aarsen en HuggingFace. No es un modelo entrenado ni destinado a uso productivo: se trata de una version reducida ("slim") del modelo de embeddings `nomic-ai/modernbert-embed-base`, cuyo unico proposito es servir como banco de pruebas para validar el contrato de integracion de la libreria `sentence-transformers` y de Transformers con un repositorio que contiene pesos, manifiesto de integracion y expectativas de framework en un unico lugar.
+`tomaarsen/st-modernbert-embed-base-mic` es un artefacto de prueba (fixture) publicado por Tomas Aarsen en Hugging Face. No es un modelo entrenado ni destinado a uso productivo: se trata de una version reducida ("slim") del modelo de embeddings `nomic-ai/modernbert-embed-base`, cuyo unico proposito es servir como banco de pruebas para validar el contrato de integracion de la libreria `sentence-transformers` y de Transformers con un repositorio que contiene pesos, manifiesto de integracion y expectativas de framework en un unico lugar.
 
 El modelo base sobre el que se construye, `nomic-ai/modernbert-embed-base`, es un modelo de embeddings basado en la arquitectura ModernBERT de Nomic AI. Sin embargo, los pesos de este fixture son aleatorios, tal y como declara el propio autor en la model card: "Its weights are random and do not represent the source model's retrieval quality". Por tanto, cualquier evaluacion de calidad de retrieval sobre este repositorio carece de sentido.
 
-La relevancia de esta ficha es, por tanto, documental y de investigacion de infraestructura: permite entender como se estructura un fixture de cobertura de integracion (MIC) en el ecosistema de HuggingFace, con ficheros como `integration.json`, `build.json` e `integrations/transformers/usage.md`, y por que existen repositorios de este tipo en el ecosistema de testing de librerias de IA.
+La relevancia de esta ficha es, por tanto, documental y de investigacion de infraestructura: permite entender como se estructura un fixture de cobertura de integracion (MIC) en el ecosistema de Hugging Face, con ficheros como `integration.json`, `build.json` e `integrations/transformers/usage.md`, y por que existen repositorios de este tipo en el ecosistema de testing de librerias de IA.
 
 ## Especificaciones tecnicas
 
@@ -44,11 +44,11 @@ La innovacion tecnica de este repositorio no esta en el modelo en si, sino en su
 
 ## Casos de uso
 
-- Testing de regresion en `sentence-transformers`: usar el fixture en la suite de tests de la libreria para verificar que la carga de un `SentenceTransformer` desde HuggingFace Hub funciona con un repositorio que incluye manifiesto de contrato y pesos safetensors minimos, sin descargar el modelo completo.
+- Testing de regresion en `sentence-transformers`: usar el fixture en la suite de tests de la libreria para verificar que la carga de un `SentenceTransformer` desde Hugging Face Hub funciona con un repositorio que incluye manifiesto de contrato y pesos safetensors minimos, sin descargar el modelo completo.
 - Validacion de pipelines de CI/CD: integrar el repositorio en un job de integracion continua que compruebe que las nuevas versiones de Transformers cargan correctamente modelos con la estructura de ModernBERT, usando un artefacto de ~3,3 M de parametros en lugar del modelo base completo.
 - Desarrollo de herramientas de empaquetado de modelos: servir como referencia para implementar el formato "MIC" (modelo, integracion y contrato en un solo repo) en otras librerias o frameworks internos.
 - Pruebas de compatibilidad de tokenizadores: verificar que el tokenizador asociado al modelo base se carga y produce las secuencias esperadas sin necesidad de descargar pesos reales.
-- Docencia y formacion en infraestructura de IA: ilustrar como se estructura un repositorio de modelo en HuggingFace con ficheros de contrato, procedencia y expectativas, usando un ejemplo minimo y reproducible.
+- Docencia y formacion en infraestructura de IA: ilustrar como se estructura un repositorio de modelo en Hugging Face con ficheros de contrato, procedencia y expectativas, usando un ejemplo minimo y reproducible.
 - Auditoria de contratos de framework: comprobar que las expectativas declaradas en `integrations/transformers/expectations` coinciden con el comportamiento real de la version instalada de Transformers, detectando roturas de compatibilidad antes de desplegar.
 
 ## Benchmarks y rendimiento
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tomaarsen/st-modernbert-embed-base-mic` | 3.305.792 | no disponible | Fixture de test / validacion de contrato | no disponible | HuggingFace |
-| `nomic-ai/modernbert-embed-base` | no disponible en la informacion | no disponible | Embeddings de frases para retrieval | no disponible | HuggingFace |
-| `answerdotai/ModernBERT-base` | no disponible en la informacion | no disponible | Encoder base ModernBERT | no disponible | HuggingFace |
+| `tomaarsen/st-modernbert-embed-base-mic` | 3.305.792 | no disponible | Fixture de test / validacion de contrato | no disponible | Hugging Face |
+| `nomic-ai/modernbert-embed-base` | no disponible en la informacion | no disponible | Embeddings de frases para retrieval | no disponible | Hugging Face |
+| `answerdotai/ModernBERT-base` | no disponible en la informacion | no disponible | Encoder base ModernBERT | no disponible | Hugging Face |
 
 La comparativa es limitada porque la informacion proporcionada solo cubre el fixture. El modelo base `nomic-ai/modernbert-embed-base` es el referente natural, pero no se dispone de sus especificaciones completas en esta ficha. No se han identificado otros fixtures MIC comparables en la informacion disponible.
 
@@ -86,7 +86,7 @@ La comparativa es limitada porque la informacion proporcionada solo cubre el fix
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tomaarsen/st-modernbert-embed-base-mic
+- Repositorio Hugging Face: https://huggingface.co/tomaarsen/st-modernbert-embed-base-mic
 - Modelo base: https://huggingface.co/nomic-ai/modernbert-embed-base
 - Documentacion sobre el proceso de reduccion del fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/st-modernbert-embed-base-mic.html
 - Manifiesto de contrato: https://huggingface.co/tomaarsen/st-modernbert-embed-base-mic/blob/main/integration.json

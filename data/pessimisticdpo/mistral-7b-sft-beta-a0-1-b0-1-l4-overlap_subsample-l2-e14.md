@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e14` es un checkpoint publicado en HuggingFace por el usuario PessimisticDPO. La model card asociada es la plantilla autogenerada por la plataforma y no contiene informacion sustantiva: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]". No hay paper, repositorio, demo ni documentacion adicional enlazada en la ficha.
+El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e14` es un checkpoint publicado en Hugging Face por el usuario PessimisticDPO. La model card asociada es la plantilla autogenerada por la plataforma y no contiene informacion sustantiva: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]". No hay paper, repositorio, demo ni documentacion adicional enlazada en la ficha.
 
 El nombre del repositorio sugiere, sin que exista confirmacion oficial, que se trata de un ajuste derivado de `mistral-7b-sft-beta` (el checkpoint SFT de Mistral-7B publicado por HuggingFaceH4) mediante alguna variante de optimizacion por preferencias, probablemente DPO con un esquema denominado "pessimistic" en el nombre del autor. Los sufijos `a0.1-b0.1-L4-overlap_subsample-l2-e14` apuntarian a hiperparametros de entrenamiento (coeficientes alpha/beta, capa L4, submuestreo con solapamiento, norma L2, epoca 14), pero no hay ninguna fuente que los documente.
 
@@ -18,11 +18,11 @@ El repositorio tiene un tamano declarado de 0,2 GB, muy inferior a los ~14-15 GB
 | Tipos de cuantizacion | No disponible. No se publican versiones cuantizadas en el repositorio |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
-| Formato de pesos | safetensors (tag confirmado en HuggingFace) |
+| Formato de pesos | safetensors (tag confirmado en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla vacia de HuggingFace y no incluye datos de entrenamiento, numero de tokens, composicion del dataset, regimen de precision ni uso de RLHF, DPO u otra tecnica de alineamiento. El tag `arxiv:1910.09700` presente en el repositorio corresponde a la referencia generica de la calculadora de impacto medioambiental (Lacoste et al., 2019) que aparece por defecto en la plantilla, no a un paper propio del modelo.
+No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla vacia de Hugging Face y no incluye datos de entrenamiento, numero de tokens, composicion del dataset, regimen de precision ni uso de RLHF, DPO u otra tecnica de alineamiento. El tag `arxiv:1910.09700` presente en el repositorio corresponde a la referencia generica de la calculadora de impacto medioambiental (Lacoste et al., 2019) que aparece por defecto en la plantilla, no a un paper propio del modelo.
 
 Los unicos indicios disponibles provienen del propio identificador del repositorio: `mistral-7b-sft-beta` como posible punto de partida, `PessimisticDPO` como nombre del autor y posible tecnica de optimizacion, y los sufijos `a0.1`, `b0.1`, `L4`, `overlap_subsample`, `l2` y `e14` como posibles hiperparametros. Se trata de inferencias a partir del nombre, no de informacion verificada, y no deben tomarse como especificaciones tecnicas del modelo.
 
@@ -72,10 +72,10 @@ Los datos de la columna de este modelo son desconocidos salvo el formato de peso
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mistral-7b-sft-beta-...-e14 (este) | No disponible (probablemente 7B) | No disponible | No publicado | No disponible | HuggingFace, 0 descargas, repositorio de 0,2 GB |
-| Mistral-7B-Instruct-v0.3 | 7B | 32.768 tokens | Resultados publicos en MMLU, MT-Bench y otros | Apache-2.0 | HuggingFace, ampliamente desplegado |
-| Zephyr-7B-beta | 7B | 32.768 tokens | Resultados publicos de MT-Bench y AlpacaEval, ajustado con DPO sobre mistral-7b-sft-beta | MIT | HuggingFace, muy difundido |
-| Llama-3-8B-Instruct | 8B | 8.192 tokens | Resultados publicos en MMLU y HumanEval | Licencia comunitaria de Llama 3 | HuggingFace, requiere aceptacion de terminos |
+| mistral-7b-sft-beta-...-e14 (este) | No disponible (probablemente 7B) | No disponible | No publicado | No disponible | Hugging Face, 0 descargas, repositorio de 0,2 GB |
+| Mistral-7B-Instruct-v0.3 | 7B | 32.768 tokens | Resultados publicos en MMLU, MT-Bench y otros | Apache-2.0 | Hugging Face, ampliamente desplegado |
+| Zephyr-7B-beta | 7B | 32.768 tokens | Resultados publicos de MT-Bench y AlpacaEval, ajustado con DPO sobre mistral-7b-sft-beta | MIT | Hugging Face, muy difundido |
+| Llama-3-8B-Instruct | 8B | 8.192 tokens | Resultados publicos en MMLU y HumanEval | Licencia comunitaria de Llama 3 | Hugging Face, requiere aceptacion de terminos |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ Los datos de la columna de este modelo son desconocidos salvo el formato de peso
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e14
+- Repositorio en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e14
 - Referencia del tag `arxiv:1910.09700` (Lacoste et al., 2019, calculadora de impacto medioambiental citada en la plantilla): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML mencionada en la plantilla: https://mlco2.github.io/impact
 - Posible modelo base segun el identificador, sin confirmar por el autor: https://huggingface.co/HuggingFaceH4/mistral-7b-sft-beta

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mdagosta/waldito-smoke-v1-r0001-merge` es un modelo de generacion de texto publicado en HuggingFace por el usuario mdagosta, con arquitectura causal de tipo Llama segun la libreria Transformers. Los metadatos de safetensors indican 820,736 parametros totales (la unidad no se explicita en el repositorio; por orden de magnitud corresponde a aproximadamente 820,7 millones). La model card lo presenta como "OpenWALDO model export" y especifica que emplea el tokenizer de bytes schema-1 de OpenWALDO, que requiere cargarse con `trust_remote_code=True`.
+`mdagosta/waldito-smoke-v1-r0001-merge` es un modelo de generacion de texto publicado en Hugging Face por el usuario mdagosta, con arquitectura causal de tipo Llama segun la libreria Transformers. Los metadatos de safetensors indican 820,736 parametros totales (la unidad no se explicita en el repositorio; por orden de magnitud corresponde a aproximadamente 820,7 millones). La model card lo presenta como "OpenWALDO model export" y especifica que emplea el tokenizer de bytes schema-1 de OpenWALDO, que requiere cargarse con `trust_remote_code=True`.
 
 El nombre del repositorio sugiere que se trata de un artefacto de prueba ("smoke") y de una fusion de pesos ("merge"), en su revision r0001. No se publican datos sobre el dataset de entrenamiento, el numero de tokens, las tecnicas de alineamiento ni la longitud de contexto soportada. El repositorio incluye dos ficheros de inventario (`BOM.json` y `EU-BOM.json`) que, segun el autor, documentan los ficheros de la release y el mapeo de divulgacion de contenido de entrenamiento exigido por el reglamento europeo de IA (GPAI).
 
@@ -22,7 +22,7 @@ Su relevancia actual es limitada y de caracter practico: sirve como pieza de val
 | Formato de pesos | safetensors (libreria transformers) |
 | Tokenizer | OpenWALDO schema-1 byte tokenizer (requiere `trust_remote_code=True`) |
 | Pipeline declarado | text-generation |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 | Ficheros de inventario | BOM.json, EU-BOM.json |
 
 ## Arquitectura y entrenamiento
@@ -98,9 +98,9 @@ Diferencias clave mas alla del rendimiento: los modelos alternativos cuentan con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-smoke-v1-r0001-merge
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-smoke-v1-r0001-merge
 - Perfil del autor, mdagosta (Michael D'Agosta): https://huggingface.co/mdagosta
 - Variante posterior citada en la actividad del autor: https://huggingface.co/mdagosta/waldito-smoke-v1-r0002-merge
-- Repositorio de HuggingFace: https://huggingface.co/
+- Repositorio de Hugging Face: https://huggingface.co/
 - Paper, blog o demo del modelo: no disponible
 - Repositorio de codigo asociado: no disponible

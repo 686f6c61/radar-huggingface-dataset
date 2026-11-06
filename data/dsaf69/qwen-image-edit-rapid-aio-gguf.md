@@ -89,7 +89,7 @@ Estimaciones a partir del numero de parametros reportado (~7,6 mil millones para
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dsaf69/Qwen-Image-Edit-Rapid-AIO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Dsaf69/Qwen-Image-Edit-Rapid-AIO-GGUF
 - Modelo base (AIO original): https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO
 - Nodo corregido de ComfyUI (nodes_qwen.py): https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO/blob/main/fixed-textencode-node/nodes_qwen.py
 - Modelo base de Qwen: https://huggingface.co/Qwen/Qwen-Image-Edit-2509

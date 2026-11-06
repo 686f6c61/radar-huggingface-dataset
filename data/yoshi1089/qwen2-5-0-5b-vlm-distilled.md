@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Yoshi1089/qwen2.5-0.5b-vlm-distilled es un repositorio publicado en HuggingFace por el usuario Yoshi1089 el 16 de septiembre de 2026 (fecha que figura en los metadatos y que resulta anomala, ya que es posterior a la fecha actual). El nombre del repositorio sugiere una destilacion de un modelo de vision-lenguaje (VLM) construida sobre Qwen2.5-0.5B, pero esta interpretacion procede unicamente del identificador y no esta confirmada por el autor.
+Yoshi1089/qwen2.5-0.5b-vlm-distilled es un repositorio publicado en Hugging Face por el usuario Yoshi1089 el 16 de septiembre de 2026 (fecha que figura en los metadatos y que resulta anomala, ya que es posterior a la fecha actual). El nombre del repositorio sugiere una destilacion de un modelo de vision-lenguaje (VLM) construida sobre Qwen2.5-0.5B, pero esta interpretacion procede unicamente del identificador y no esta confirmada por el autor.
 
-La model card publicada es la plantilla generada automaticamente por HuggingFace, sin ninguna seccion completada: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, procedimiento, evaluacion, infraestructura) figuran como "[More Information Needed]". El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y un unico "like".
+La model card publicada es la plantilla generada automaticamente por Hugging Face, sin ninguna seccion completada: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, procedimiento, evaluacion, infraestructura) figuran como "[More Information Needed]". El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y un unico "like".
 
 En el momento de redactar esta ficha no hay informacion tecnica verificable sobre arquitectura, pesos, datos de entrenamiento ni rendimiento. La busqueda web no devolvio ningun resultado relacionado con el modelo: los enlaces encontrados corresponden a tablas de equivalencias de fundiciones y aceros (grados BS, ONORM, DIN), completamente ajenos al ambito de la inteligencia artificial. Por tanto, esta ficha recoge lo que se puede afirmar con certeza y marca explicitamente como "no disponible" todo lo demas.
 
@@ -27,7 +27,7 @@ Otros metadatos del repositorio: libreria `transformers`, tags `safetensors`, `e
 
 No hay informacion publicada sobre la arquitectura. El autor no ha rellenado la seccion "Technical Specifications" de la model card, y el tag `safetensors` solo confirma el formato de serializacion de los pesos, no la topologia del modelo. Si el nombre del repositorio se corresponde con la realidad, se trataria de un transformer denso de aproximadamente 0,5 mil millones de parametros con un codificador visual anadido y sometido a un proceso de destilacion; sin embargo, no existe ninguna evidencia en el repositorio que respalde esta descripcion.
 
-Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens, la composicion del dataset, el uso de RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. El unico tag adicional relevante es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico y que la plantilla de HuggingFace incluye por defecto en la seccion "Environmental Impact"; no es una referencia al entrenamiento de este modelo.
+Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens, la composicion del dataset, el uso de RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. El unico tag adicional relevante es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico y que la plantilla de Hugging Face incluye por defecto en la seccion "Environmental Impact"; no es una referencia al entrenamiento de este modelo.
 
 ## Capacidades
 
@@ -37,7 +37,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens, la comp
 - No se confirma soporte de tool calling o function calling.
 - No se confirma soporte de agentes ni razonamiento multi-paso.
 - No se confirma capacidad multilingue ni modo de pensamiento (thinking mode).
-- El tag `endpoints_compatible` indica unicamente que el repositorio es desplegable mediante HuggingFace Inference Endpoints; no aporta informacion sobre capacidades funcionales.
+- El tag `endpoints_compatible` indica unicamente que el repositorio es desplegable mediante Hugging Face Inference Endpoints; no aporta informacion sobre capacidades funcionales.
 
 ## Casos de uso
 
@@ -64,7 +64,7 @@ Estimaciones condicionadas a la hipotesis de un modelo de aproximadamente 0,5 mi
 - VRAM estimada para inferencia: en fp16, en torno a 1-1,5 GB incluyendo el codificador visual y el cache KV; en int8, aproximadamente 0,6-0,9 GB; en cuantizacion de 4 bits, alrededor de 0,4-0,7 GB. Cifras orientativas.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente en teoria (RTX 3060 12 GB, RTX 4060, RTX 4090); tambien cabe en GPU de centro de datos (A100, H100) sin aprovechar su capacidad.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU con 4 GB o mas de VRAM, e incluso en CPU con cuantizacion agresiva, si el modelo se materializa con el tamano que sugiere su nombre.
-- Opciones de despliegue: `transformers` es la libreria declarada; el tag `endpoints_compatible` habilita HuggingFace Inference Endpoints. vLLM, llama.cpp, Ollama o TGI solo serian viables si se publican pesos en formatos compatibles, lo cual no esta confirmado.
+- Opciones de despliegue: `transformers` es la libreria declarada; el tag `endpoints_compatible` habilita Hugging Face Inference Endpoints. vLLM, llama.cpp, Ollama o TGI solo serian viables si se publican pesos en formatos compatibles, lo cual no esta confirmado.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No hay datos de rendimiento publicados para este modelo, por lo que la comparati
 |---|---|---|---|---|
 | Yoshi1089/qwen2.5-0.5b-vlm-distilled | no disponible (~0,5 B segun el identificador) | no disponible | no disponible | Repositorio sin pesos declarados (0.0 GB) |
 | Qwen2.5-0.5B (modelo base al que alude el nombre) | 0,49 B | 32 768 tokens | Apache 2.0 | Publico y ampliamente desplegado |
-| SmolVLM-256M / 500M (familia VLM pequena de HuggingFace) | 0,256 B / 0,5 B | no verificado | Apache 2.0 | Publico |
+| SmolVLM-256M / 500M (familia VLM pequena de Hugging Face) | 0,256 B / 0,5 B | no verificado | Apache 2.0 | Publico |
 | Qwen2-VL-2B | 2 B | no verificado | Apache 2.0 | Publico |
 
 En cualquier caso, la comparacion de rendimiento con estas alternativas es imposible con la informacion disponible.
@@ -93,7 +93,7 @@ En cualquier caso, la comparacion de rendimiento con estas alternativas es impos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Yoshi1089/qwen2.5-0.5b-vlm-distilled
+- Repositorio en Hugging Face: https://huggingface.co/Yoshi1089/qwen2.5-0.5b-vlm-distilled
 - Articulo referenciado en el tag `arxiv:1910.09700` (Lacoste et al., estimacion de emisiones de carbono en aprendizaje automatico, incluido por defecto en la plantilla): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la model card: https://mlco2.github.io/impact#compute
 - Resultados de busqueda web: no se encontro ningun enlace relacionado con el modelo; los resultados obtenidos (steelnumber.com) tratan sobre equivalencias de grados de fundicion y no se incluyen por no ser pertinentes.

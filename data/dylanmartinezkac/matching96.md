@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dylanmartinezkac/matching96` es un repositorio de HuggingFace que contiene una implementación propia y de escala reducida de MoCo v3 (Momentum Contrast v3) orientada a tareas de *matching*. Lo publica el usuario `dylanmartinezkac` y el propio autor lo describe explícitamente como un punto de partida reproducible para experimentos: el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un modelo entrenado ni evaluado.
+`dylanmartinezkac/matching96` es un repositorio de Hugging Face que contiene una implementación propia y de escala reducida de MoCo v3 (Momentum Contrast v3) orientada a tareas de *matching*. Lo publica el usuario `dylanmartinezkac` y el propio autor lo describe explícitamente como un punto de partida reproducible para experimentos: el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un modelo entrenado ni evaluado.
 
 El modelo resuelve, por tanto, un problema de andamiaje experimental, no de inferencia en producción. Incluye el código ejecutable (`run.py`), la configuración de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`), con optimizador Adam y un calendario de *linear warmup*. El autor advierte de que no se reclama ninguna métrica de benchmark en el repositorio.
 
@@ -80,11 +80,11 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 - Limitaciones de contexto e idioma: no disponibles, al no ser un modelo de lenguaje.
 - Restricciones de licencia: los pesos y el código se publican bajo apache-2.0, licencia permisiva que permite uso comercial y modificación, pero el autor pide revisar por separado los términos de los datos de origen cuando se usen conjuntos de datos externos.
 - Cualquier resultado obtenido con un checkpoint entrenado a partir de este andamiaje debe documentarse por separado de los valores por defecto que aquí se incluyen.
-- Al ser una implementación propia, las APIs automáticas de carga de modelos de HuggingFace requieren un adaptador explícito antes de poder usarse.
+- Al ser una implementación propia, las APIs automáticas de carga de modelos de Hugging Face requieren un adaptador explícito antes de poder usarse.
 - Advertencia sobre las fechas: el repositorio figura como creado y actualizado el 2026-10-12, posterior a la fecha habitual de consulta, lo que conviene verificar antes de citarlo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dylanmartinezkac/matching96
+- Repositorio en Hugging Face: https://huggingface.co/dylanmartinezkac/matching96
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos por la búsqueda corresponden a páginas sobre herramientas de parafraseo (Quillbot) y no guardan relación con `matching96` ni con MoCo v3.
 - Paper de referencia de MoCo v3 (no enlazado en la información proporcionada): no disponible en las fuentes consultadas.

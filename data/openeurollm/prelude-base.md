@@ -89,7 +89,7 @@ La comparación con Qwen3 es la más directa por arquitectura (Prelude-base repl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/openeurollm/prelude-base
+- Hugging Face: https://huggingface.co/openeurollm/prelude-base
 - Progress tracker de OpenEuroLLM: https://huggingface.co/spaces/openeurollm/oellm_progress
 - Repositorio de recolección de datos de entrenamiento: https://github.com/OpenEuroLLM/training-data-collection/blob/main/baby/README.md
 - Configuración del experimento `baby_9b_dense`: https://github.com/OpenEuroLLM/oellm-autoexp/blob/prod/baby_9b_dense/config/experiments/baby/baby_9b_dense.yaml

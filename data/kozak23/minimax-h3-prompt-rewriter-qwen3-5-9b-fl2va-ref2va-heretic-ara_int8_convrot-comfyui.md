@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (kozak23, int8 ComfyUI) | 9B | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-FL2VA | 9B | no disponible | no disponible | HuggingFace (base) |
-| lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-Ref2VA | 9B | no disponible | no disponible | HuggingFace (base) |
+| Este modelo (kozak23, int8 ComfyUI) | 9B | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-FL2VA | 9B | no disponible | no disponible | Hugging Face (base) |
+| lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-Ref2VA | 9B | no disponible | no disponible | Hugging Face (base) |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de los modelos base para establecer una comparación cuantitativa.
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de los m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kozak23/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-FL2VA-REF2VA-Heretic-ARA_int8_convrot-ComfyUI
+- Hugging Face: https://huggingface.co/kozak23/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-FL2VA-REF2VA-Heretic-ARA_int8_convrot-ComfyUI
 - Modelo base FL2VA: https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-FL2VA
 - Modelo base Ref2VA: https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-Ref2VA

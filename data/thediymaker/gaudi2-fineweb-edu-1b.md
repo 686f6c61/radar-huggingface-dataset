@@ -80,9 +80,9 @@ MMLU tiene cuatro opciones, por lo que 0,25 equivale al azar: ni este modelo ni 
 
 | Modelo | Parámetros | Contexto | Licencia | HellaSwag | ARC-E | MMLU (5-shot) | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| gaudi2-fineweb-edu-1b | 1,07B | 2.048 | Apache-2.0 | 0,608 | 0,689 | 0,246 | HuggingFace, safetensors bf16 |
-| TinyLlama 1.1B base v1.1 | 1,1B | 2.048 | Apache-2.0 | 0,614 | 0,556 | 0,262 | HuggingFace, múltiples formatos |
-| SmolLM2-1.7B | 1,7B | 8.192 (según su card) | Apache-2.0 | 0,714 | 0,732 | 0,501 | HuggingFace, múltiples formatos |
+| gaudi2-fineweb-edu-1b | 1,07B | 2.048 | Apache-2.0 | 0,608 | 0,689 | 0,246 | Hugging Face, safetensors bf16 |
+| TinyLlama 1.1B base v1.1 | 1,1B | 2.048 | Apache-2.0 | 0,614 | 0,556 | 0,262 | Hugging Face, múltiples formatos |
+| SmolLM2-1.7B | 1,7B | 8.192 (según su card) | Apache-2.0 | 0,714 | 0,732 | 0,501 | Hugging Face, múltiples formatos |
 
 Frente a TinyLlama, el modelo de este análisis gana en ARC-E y ARC-C pero pierde en HellaSwag, LAMBADA y WinoGrande, con MMLU por debajo del azar en ambos casos. Frente a SmolLM2-1.7B, la diferencia es sustancial en todas las tareas, atribuible tanto al mayor número de parámetros como a un presupuesto de entrenamiento presumiblemente superior; el modelo aquí descrito se entrenó con una sola pasada sobre 1,6 billones de tokens. En contexto, 2.048 tokens queda muy por debajo de los 8.192 de SmolLM2-1.7B. La ventaja del modelo es su licencia Apache-2.0 sin restricciones y su valor como artefacto reproducible de un experimento de entrenamiento distribuido.
 
@@ -100,7 +100,7 @@ Frente a TinyLlama, el modelo de este análisis gana en ARC-E y ARC-C pero pierd
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thediymaker/gaudi2-fineweb-edu-1b
+- Modelo en Hugging Face: https://huggingface.co/thediymaker/gaudi2-fineweb-edu-1b
 - Paper de DiLoCo: https://arxiv.org/abs/2311.08105
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Tokenizer SmolLM2-135M: https://huggingface.co/HuggingFaceTB/SmolLM2-135M

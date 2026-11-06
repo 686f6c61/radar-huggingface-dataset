@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `amir007gm/TradeAndWin100Percent` es un repositorio publicado en HuggingFace por el usuario `amir007gm` bajo licencia MIT. Según la información disponible, fue creado el 16 de agosto de 2026 y no ha recibido descargas ni valoraciones. La model card asociada únicamente declara la licencia, sin ofrecer detalles sobre arquitectura, parámetros, entrenamiento o capacidades. El nombre sugiere una posible orientación hacia el trading financiero, pero no existe documentación técnica que lo confirme.
+El modelo `amir007gm/TradeAndWin100Percent` es un repositorio publicado en Hugging Face por el usuario `amir007gm` bajo licencia MIT. Según la información disponible, fue creado el 16 de agosto de 2026 y no ha recibido descargas ni valoraciones. La model card asociada únicamente declara la licencia, sin ofrecer detalles sobre arquitectura, parámetros, entrenamiento o capacidades. El nombre sugiere una posible orientación hacia el trading financiero, pero no existe documentación técnica que lo confirme.
 
 En el momento de redactar esta ficha, el modelo carece de cualquier especificación pública más allá de su identificador y licencia. No se dispone de información sobre su arquitectura, tamaño, contexto, idiomas soportados o formato de pesos. Por tanto, cualquier evaluación técnica resulta imposible con los datos actuales. Se recomienda consultar el repositorio original para verificar si se publica información adicional en el futuro.
 
@@ -53,4 +53,4 @@ No disponible. Al carecer de datos sobre arquitectura, tamaño o rendimiento, no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amir007gm/TradeAndWin100Percent
+- Repositorio en Hugging Face: https://huggingface.co/amir007gm/TradeAndWin100Percent

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Franka Test Tube π0.5 — step 20000 es un checkpoint de ajuste fino completo (full-finetuning) del modelo vision-language-action π0.5 de Physical Intelligence, publicado por el usuario dddddsds31341 en HuggingFace. Está entrenado con OpenPI en JAX para una tarea robótica concreta: introducir un tubo de ensayo en su gradilla con un brazo Franka. El repositorio contiene únicamente los pesos de inferencia en formato Orbax, junto con los parámetros EMA y las estadísticas de normalización, y no incluye el estado del optimizador necesario para reanudar el entrenamiento de forma exacta.
+Franka Test Tube π0.5 — step 20000 es un checkpoint de ajuste fino completo (full-finetuning) del modelo vision-language-action π0.5 de Physical Intelligence, publicado por el usuario dddddsds31341 en Hugging Face. Está entrenado con OpenPI en JAX para una tarea robótica concreta: introducir un tubo de ensayo en su gradilla con un brazo Franka. El repositorio contiene únicamente los pesos de inferencia en formato Orbax, junto con los parámetros EMA y las estadísticas de normalización, y no incluye el estado del optimizador necesario para reanudar el entrenamiento de forma exacta.
 
 El modelo parte de los pesos base `pi05_base` y se ha entrenado durante 20.000 pasos (de un total de 20.004) con un tamaño de lote global de 32 y acumulación de gradiente de 1. Utiliza dos cámaras (externa y de muñeca), un vector de estado del robot Franka de 19 dimensiones continuas y produce acciones delta de 7 dimensiones en el marco del cuerpo con un horizonte de acción de 10 pasos. La instrucción de texto empleada es `Place the test tube into the test tube rack.`
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Franka Test Tube π0.5 step 20000 | no disponible | no disponible | Manipulación Franka (tubo de ensayo) | no disponible | HuggingFace (checkpoint Orbax) |
+| Franka Test Tube π0.5 step 20000 | no disponible | no disponible | Manipulación Franka (tubo de ensayo) | no disponible | Hugging Face (checkpoint Orbax) |
 | π0.5 `pi05_base` (Physical Intelligence) | no disponible | no disponible | VLA generalista base | no disponible en la informacion | Pesos base referenciados por este checkpoint |
 | Alternativas VLA de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -97,5 +97,5 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos comparab
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/dddddsds31341/Franka-Test-Tube-pi05-step-20000
+- Hugging Face del modelo: https://huggingface.co/dddddsds31341/Franka-Test-Tube-pi05-step-20000
 - Dataset de entrenamiento: https://huggingface.co/datasets/dddddsds31341/test-tube-lerobot

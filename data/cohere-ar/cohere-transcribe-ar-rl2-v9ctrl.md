@@ -6,7 +6,7 @@ Cohere-AR/cohere-transcribe-ar-rl2-v9ctrl es un modelo de reconocimiento automá
 
 Con aproximadamente 2.070 millones de parámetros (2,07 B) en formato safetensors y un repositorio de 4,1 GB, se sitúa en la gama media de modelos ASR de producción: suficientemente grande para capturar variabilidad dialectal y ruido telefónico, pero manejable en infraestructura con GPU única. La nomenclatura "rl2" y "v9ctrl" sugiere una segunda iteración de refinamiento (posiblemente con RL o ajuste por preferencias) sobre una novena versión de la familia, con un checkpoint de control; no obstante, el autor no publica detalles del proceso.
 
-Es relevante ahora porque el code-switching árabe-inglés es un fenómeno masivo en entornos corporativos y de atención al cliente en el Golfo y el Levante, y pocos modelos abiertos lo tratan como caso de primera clase. El acceso está restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+Es relevante ahora porque el code-switching árabe-inglés es un fenómeno masivo en entornos corporativos y de atención al cliente en el Golfo y el Levante, y pocos modelos abiertos lo tratan como caso de primera clase. El acceso está restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 ## Especificaciones tecnicas
 
@@ -81,14 +81,14 @@ La comparativa cuantitativa de rendimiento no está disponible porque el autor n
 - Solo cubre árabe e inglés; no es un modelo multilingüe general.
 - No se documentan sesgos por dialecto árabe (egipcio, golfo, levantino, magrebí); el rendimiento puede variar notablemente entre variedades.
 - Riesgo de alucinación en pasajes de silencio, ruido extremo o audio musical, comportamiento habitual en modelos ASR.
-- Licencia no disponible: no se puede confirmar el uso comercial sin consultar las condiciones del acceso restringido en HuggingFace.
-- Acceso gated: requiere aceptar condiciones y autenticarse con un token de HuggingFace, lo que complica pipelines automatizados de CI/CD.
+- Licencia no disponible: no se puede confirmar el uso comercial sin consultar las condiciones del acceso restringido en Hugging Face.
+- Acceso gated: requiere aceptar condiciones y autenticarse con un token de Hugging Face, lo que complica pipelines automatizados de CI/CD.
 - Sin datos de benchmarks ni de longitud máxima de audio procesable; no se puede garantizar comportamiento en grabaciones largas sin segmentación previa.
 - Sin variantes cuantizadas oficiales publicadas; el despliegue en hardware limitado exige cuantización manual y validación propia.
 - Modelo con 0 descargas y 0 likes en el momento de la ficha: sin validación comunitaria ni informes independientes de calidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-rl2-v9ctrl
+- Hugging Face: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-rl2-v9ctrl
 - Modelo base: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-rl-v9enc
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

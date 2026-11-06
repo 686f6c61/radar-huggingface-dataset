@@ -80,7 +80,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anira-project/simple-gain
+- Hugging Face: https://huggingface.co/anira-project/simple-gain
 - Repositorio de modelos de ejemplo: https://github.com/anira-project/example-models (commit `d1bc5cf`, directorio `SimpleGainNetwork/models/`)
 - Script de exportacion del modelo: `SimpleGainNetwork/simple_gain_network.py` en el repositorio anterior
 - Herramienta de validacion de streaming: `tools/check_streaming.py` en el repositorio anterior

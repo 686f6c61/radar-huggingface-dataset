@@ -88,9 +88,9 @@ No se dispone de resultados de benchmarks verificados de alternativas en la info
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `160M-exp` | 160M | no disponible | 16B tokens; 5 ejecuciones principales y barrido de 24 ejecuciones | no disponible | HuggingFace, safetensors y `.pt` |
-| `EleutherAI/pythia-160m` | 160M | no disponible en esta información | modelo base de la suite Pythia | no disponible en esta información | HuggingFace |
-| `294-288-pretrain-interaction/160M-rtp` | 160M por nombre, no verificado | no disponible | no disponible | no disponible | HuggingFace |
+| `160M-exp` | 160M | no disponible | 16B tokens; 5 ejecuciones principales y barrido de 24 ejecuciones | no disponible | Hugging Face, safetensors y `.pt` |
+| `EleutherAI/pythia-160m` | 160M | no disponible en esta información | modelo base de la suite Pythia | no disponible en esta información | Hugging Face |
+| `294-288-pretrain-interaction/160M-rtp` | 160M por nombre, no verificado | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -110,7 +110,7 @@ No se dispone de resultados de benchmarks verificados de alternativas en la info
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/294-288-pretrain-interaction/160M-exp)
+- [Modelo en Hugging Face](https://huggingface.co/294-288-pretrain-interaction/160M-exp)
 - [Modelo base EleutherAI/pythia-160m](https://huggingface.co/EleutherAI/pythia-160m)
 - [Dataset Dolma3-16B](https://huggingface.co/datasets/294-288-pretrain-interaction/Dolma3-16B)
 - [Modelo hermano 160M-rtp](https://huggingface.co/294-288-pretrain-interaction/160M-rtp)

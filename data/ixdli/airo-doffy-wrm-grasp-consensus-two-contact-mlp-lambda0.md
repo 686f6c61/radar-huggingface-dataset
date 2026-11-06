@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AIRO-Doffy-WRM-Grasp-consensus-two-contact-mlp-lambda0 es un modelo de aprendizaje por imitación para robótica, publicado por el usuario IXDLI en HuggingFace bajo la etiqueta de pipeline `robotics`. No es un modelo de lenguaje: se trata de una política de agarre (grasp policy) basada en difusión que genera acciones de manipulación a partir de dos expertos entrenados conjuntamente, uno denominado BEAVER (codificación de contactos en ambos anillos) y otro de visión. El modelo resuelve el problema de decidir puntos de agarre y verificar el contacto físico durante la manipulación, un paso crítico en tareas de pick-and-place y ensamblaje automatizado.
+AIRO-Doffy-WRM-Grasp-consensus-two-contact-mlp-lambda0 es un modelo de aprendizaje por imitación para robótica, publicado por el usuario IXDLI en Hugging Face bajo la etiqueta de pipeline `robotics`. No es un modelo de lenguaje: se trata de una política de agarre (grasp policy) basada en difusión que genera acciones de manipulación a partir de dos expertos entrenados conjuntamente, uno denominado BEAVER (codificación de contactos en ambos anillos) y otro de visión. El modelo resuelve el problema de decidir puntos de agarre y verificar el contacto físico durante la manipulación, un paso crítico en tareas de pick-and-place y ensamblaje automatizado.
 
 La arquitectura combina un codificador BEAVER unificado que trabaja con 144 bits estrictos de contacto de menos de 10 mm más 9 características de habilitación de sensores, y un experto de visión. Ambas observaciones nativas se inyectan como entradas independientes en una MLP compartida; no se emplea ninguna GRU ni distancias crudas. El enrutado conjunto ordinario utiliza `router + vis + q`, con un peso de pérdida auxiliar de experto fijado en `lambda_expert=0.0`. El repositorio ocupa 25,2 GB e incluye los artefactos y el código fuente en el directorio `checkpoints/`.
 
@@ -71,7 +71,7 @@ No se dispone de datos cuantitativos verificables en la información proporciona
 
 | Modelo | Parametros | Contexto/observacion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AIRO-Doffy-WRM-Grasp-consensus-two-contact-mlp-lambda0 | no disponible | 144 bits de contacto + 9 features de sensor + vision | no disponible | no disponible | HuggingFace, repo de 25,2 GB |
+| AIRO-Doffy-WRM-Grasp-consensus-two-contact-mlp-lambda0 | no disponible | 144 bits de contacto + 9 features de sensor + vision | no disponible | no disponible | Hugging Face, repo de 25,2 GB |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,13 +83,13 @@ No se dispone de datos cuantitativos verificables en la información proporciona
 - Riesgo de alucinación en el sentido de políticas que generan acciones plausibles pero inviables: en robótica esto se traduce en agarres fallidos o colisiones, por lo que se recomienda validación física y límites de fuerza externos.
 - No se documentan sesgos del dataset, composición de los datos ni procedencia de las demostraciones, lo que impide evaluar sesgos sistemáticos hacia ciertos objetos o posiciones.
 - Sin soporte de lenguaje, tool calling ni razonamiento simbólico: no puede integrarse como agente conversacional ni interpretar instrucciones en texto.
-- La fecha de creación y actualización indicada en HuggingFace es 2026-09-10, lo que conviene verificar antes de tomar decisiones de producción.
+- La fecha de creación y actualización indicada en Hugging Face es 2026-09-10, lo que conviene verificar antes de tomar decisiones de producción.
 - El repositorio es grande (25,2 GB) para tratarse de una política de agarre, lo que puede encarecer el almacenamiento y la distribución en flotas de robots.
 - No se documentan requisitos de VRAM, latencia ni throughput, datos imprescindibles para planificar un despliegue en tiempo real.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IXDLI/AIRO-Doffy-WRM-Grasp-consensus-two-contact-mlp-lambda0
+- Modelo en Hugging Face: https://huggingface.co/IXDLI/AIRO-Doffy-WRM-Grasp-consensus-two-contact-mlp-lambda0
 - Artefactos y código fuente: directorio `checkpoints/` dentro del repositorio del modelo
 - Checkpoint `last.pt` (SHA-256): `432e4e44bd56c40b66ef20c8459a4d1df49331390702e38d77907dbbb969b809`
 - No se han encontrado enlaces relevantes (papers, blogs, repos o demos) en la búsqueda web realizada; los resultados devueltos corresponden a páginas corporativas de Microsoft y no guardan relación con el modelo.

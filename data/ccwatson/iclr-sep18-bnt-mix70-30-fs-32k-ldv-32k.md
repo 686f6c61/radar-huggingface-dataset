@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ccwatson/iclr-sep18-bnt-mix70-30-fs-32k-ldv-32k` es un checkpoint de investigación publicado en HuggingFace por el usuario ccwatson dentro de la biblioteca `molmobot`. Se trata del checkpoint sin sharding correspondiente al paso 32.000 del entrenamiento `iclr-sep18-bnt-mix70-30-fs-32k-ldv`, obtenido mediante fine-tuning del modelo base `allenai/MolmoBot-DROID`. Su pipeline declarado es `robotics` y su propósito es la manipulación robótica, concretamente tareas del tipo "next-to" (colocar un objeto junto a otro) sobre un brazo Franka.
+El modelo `ccwatson/iclr-sep18-bnt-mix70-30-fs-32k-ldv-32k` es un checkpoint de investigación publicado en Hugging Face por el usuario ccwatson dentro de la biblioteca `molmobot`. Se trata del checkpoint sin sharding correspondiente al paso 32.000 del entrenamiento `iclr-sep18-bnt-mix70-30-fs-32k-ldv`, obtenido mediante fine-tuning del modelo base `allenai/MolmoBot-DROID`. Su pipeline declarado es `robotics` y su propósito es la manipulación robótica, concretamente tareas del tipo "next-to" (colocar un objeto junto a otro) sobre un brazo Franka.
 
 El modelo se ha entrenado sobre una mezcla 70/30 de dos fuentes: el dataset `ccwatson/PnP-NT-NTO-Moderate45-Concat-Sep18-23732-MolmoBot` (revisión `7c31f64a76ea2bd659cf6ce5f17cfdcc2666aab2`, con trayectorias recortadas en su primer éxito estricto) y la vista de entrenamiento oficial preparada de MolmoSpaces Next-To MolmoBot, esta última con trayectorias completas. Las instrucciones de entrenamiento emplearon el perfil de prompt `basic_next_to`.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks de este checkpoint, por lo que no es posibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ccwatson/iclr-sep18-bnt-mix70-30-fs-32k-ldv-32k
+- Modelo en Hugging Face: https://huggingface.co/ccwatson/iclr-sep18-bnt-mix70-30-fs-32k-ldv-32k
 - Modelo base: https://huggingface.co/allenai/MolmoBot-DROID
 - Dataset de entrenamiento: https://huggingface.co/datasets/ccwatson/PnP-NT-NTO-Moderate45-Concat-Sep18-23732-MolmoBot
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/ccwatson/molmobot_finetune/runs/9kughda0

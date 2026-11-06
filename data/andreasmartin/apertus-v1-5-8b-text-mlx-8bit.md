@@ -75,6 +75,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andreasmartin/apertus-v1.5-8b-text-mlx-8Bit
+- Modelo en Hugging Face: https://huggingface.co/andreasmartin/apertus-v1.5-8b-text-mlx-8Bit
 - Modelo base: https://huggingface.co/andreasmartin/apertus-v1.5-8b-text
 - Política de uso aceptable de Apertus 1.5: https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/USAGE_POLICY.pdf

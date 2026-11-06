@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rlve-archive-nano-omni-multiteacher-distill-5d090d00ac60` es un checkpoint archivado publicado en HuggingFace por el usuario `davidheineman` bajo las etiquetas `rlve` y `checkpoint-archive`. No se trata de un modelo con model card técnica al uso: el README es una nota de archivo que identifica el grupo de experimentos (`nano-omni-multiteacher/runs-inloop-300000000-2000000/distill`), la categoría de archivo ("older archive backlog") y el formato de serialización (`pytorch-checkpoint`). El repositorio ocupa 0,7 GB y fue creado el 27 de octubre de 2026, sin actualizaciones posteriores relevantes.
+`rlve-archive-nano-omni-multiteacher-distill-5d090d00ac60` es un checkpoint archivado publicado en Hugging Face por el usuario `davidheineman` bajo las etiquetas `rlve` y `checkpoint-archive`. No se trata de un modelo con model card técnica al uso: el README es una nota de archivo que identifica el grupo de experimentos (`nano-omni-multiteacher/runs-inloop-300000000-2000000/distill`), la categoría de archivo ("older archive backlog") y el formato de serialización (`pytorch-checkpoint`). El repositorio ocupa 0,7 GB y fue creado el 27 de octubre de 2026, sin actualizaciones posteriores relevantes.
 
 La información pública no permite determinar arquitectura, número de parámetros, longitud de contexto, idiomas ni licencia. La model card indica únicamente que la exportación incluye la configuración original del modelo y el tokenizador, y que los checkpoints distribuidos conservan el estado de optimizador y de RNG cuando estaba presente, por lo que para reanudar el entrenamiento hay que restaurar el directorio `checkpoint/` completo antes de continuar.
 
@@ -64,7 +64,7 @@ No se han identificado alternativas comparables en la información disponible, y
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rlve-archive-nano-omni-multiteacher-distill-5d090d00ac60 | no disponible | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas, 1 like |
+| rlve-archive-nano-omni-multiteacher-distill-5d090d00ac60 | no disponible | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas, 1 like |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,6 +80,6 @@ No se han identificado alternativas comparables en la información disponible, y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-distill-5d090d00ac60
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-distill-5d090d00ac60
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo. Las consultas devolvieron únicamente páginas de guías de videojuegos (Octopath Traveler, Pokémon, Call of Duty) sin relación alguna con el artefacto.
 - Paper, blog, repositorio de código o demo: no disponibles.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-heretic-ara es un ajuste fino (finetune) del modelo multimodal Qwen/Qwen3.8-27B, publicado por el usuario moon70 en HuggingFace. Se trata de una variante "abliterated" o "uncensored": el autor ha aplicado la herramienta Heretic 2.0.0 con la técnica ARA para eliminar los mecanismos de rechazo (refusals) del modelo base, manteniendo en lo posible el resto de capacidades. El resultado es un modelo de 27.356 millones de parámetros (unos 27,4 B) que conserva la arquitectura del original y su licencia Apache 2.0.
+Qwen3.8-27B-heretic-ara es un ajuste fino (finetune) del modelo multimodal Qwen/Qwen3.8-27B, publicado por el usuario moon70 en Hugging Face. Se trata de una variante "abliterated" o "uncensored": el autor ha aplicado la herramienta Heretic 2.0.0 con la técnica ARA para eliminar los mecanismos de rechazo (refusals) del modelo base, manteniendo en lo posible el resto de capacidades. El resultado es un modelo de 27.356 millones de parámetros (unos 27,4 B) que conserva la arquitectura del original y su licencia Apache 2.0.
 
 El modelo resuelve un problema muy concreto: obtener una versión del Qwen3.8-27B que no se niegue a responder ante peticiones que el modelo base considera dañinas, con una degradación mínima en tareas estándar. Según la model card, la tasa de rechazo frente a 100 comportamientos dañinos cae de 98/100 a 6/100, y la tasa de rechazo por palabra clave en JailbreakBench pasa del 94 % al 1 %. A cambio, la divergencia KL en el primer token (sobre harmless_alpaca) sube de 0 a 0,26, y el rendimiento en MMLU (subconjunto de 1.425 ítems, 5-shot) baja de 0,834 a 0,803.
 
@@ -12,7 +12,7 @@ Es relevante ahora porque el pipeline declarado es image-text-to-text, lo que in
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text); tag `qwen3_5` en HuggingFace |
+| Arquitectura | Transformer multimodal (image-text-to-text); tag `qwen3_5` en Hugging Face |
 | Parametros totales | 27.356.728.560 (~27,4 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Es relevante ahora porque el pipeline declarado es image-text-to-text, lo que in
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3.8-27B, un transformer multimodal con pipeline image-text-to-text y tag de arquitectura `qwen3_5` en HuggingFace. El ajuste aplicado no es un entrenamiento supervisado clásico ni RLHF: es una modificación de pesos orientada a eliminar direcciones de rechazo. Concretamente, el autor aplicó Heretic 2.0.0 con la técnica ARA (Ablation of Refusal Activations), usando LoRA de rango 50 con preservación de magnitudes de fila, en el trial 65, con los parámetros `start_layer_index 3`, `end_layer_index 52` y `neighbor_count 13`. Es decir, la intervención abarca desde la capa 3 hasta la 52 del transformer.
+El modelo parte de Qwen/Qwen3.8-27B, un transformer multimodal con pipeline image-text-to-text y tag de arquitectura `qwen3_5` en Hugging Face. El ajuste aplicado no es un entrenamiento supervisado clásico ni RLHF: es una modificación de pesos orientada a eliminar direcciones de rechazo. Concretamente, el autor aplicó Heretic 2.0.0 con la técnica ARA (Ablation of Refusal Activations), usando LoRA de rango 50 con preservación de magnitudes de fila, en el trial 65, con los parámetros `start_layer_index 3`, `end_layer_index 52` y `neighbor_count 13`. Es decir, la intervención abarca desde la capa 3 hasta la 52 del transformer.
 
 No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO, porque el ajuste no es un entrenamiento generativo sino una ablación dirigida de activaciones. La innovación técnica destacable es precisamente ARA combinada con la búsqueda de hiperparámetros de Heretic 2.0.0 (el "trial 65" sugiere una búsqueda automática sobre configuraciones de capas y vecinos). El autor reporta métricas de compromiso entre eliminación de rechazos y preservación de capacidades: KL de 0,26 en el primer token, caída de 3,1 puntos en MMLU y mantenimiento prácticamente intacto de GSM8K (0,965 → 0,960 estricto; 0,965 → 0,978 flexible).
 
@@ -96,7 +96,7 @@ La comparación directa más relevante es con el modelo base: misma arquitectura
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/moon70/Qwen3.8-27B-heretic-ara
+- Hugging Face: https://huggingface.co/moon70/Qwen3.8-27B-heretic-ara
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Heretic (herramienta de abliteration): no disponible en la información proporcionada
 - Paper de ARA: no disponible en la información proporcionada

@@ -100,8 +100,8 @@ Kimi K2.6 es el unico de la comparativa con pesos descargables y licencia tipo M
 
 ## Enlaces
 
-- Repositorio en HuggingFace (terceros): https://huggingface.co/JakTheTrippr/Kimi-K2.6
-- Organizacion oficial en HuggingFace: https://huggingface.co/moonshotai
+- Repositorio en Hugging Face (terceros): https://huggingface.co/JakTheTrippr/Kimi-K2.6
+- Organizacion oficial en Hugging Face: https://huggingface.co/moonshotai
 - Modelo oficial (referencia): https://huggingface.co/moonshotai/Kimi-K2.6
 - Licencia oficial: https://huggingface.co/moonshotai/Kimi-K2.6/blob/main/LICENSE
 - Blog tecnico: https://www.kimi.com/blog/kimi-k2-6.html

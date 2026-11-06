@@ -81,7 +81,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DSA1/factual-guard-l48-classifier
+- Hugging Face: https://huggingface.co/DSA1/factual-guard-l48-classifier
 - Backbone referenciado: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
-- Repositorio de código y pesos: incluido en el propio repositorio de HuggingFace (`factual_l48.py`, `_original_score.py`, `type_aware_head.py`, `standalone_token_head.py`, `training/`, `weights/`)
+- Repositorio de código y pesos: incluido en el propio repositorio de Hugging Face (`factual_l48.py`, `_original_score.py`, `type_aware_head.py`, `standalone_token_head.py`, `training/`, `weights/`)
 - Paper, blog o demo: no disponibles en la información proporcionada.

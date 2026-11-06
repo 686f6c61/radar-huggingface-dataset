@@ -68,10 +68,10 @@ Estos valores indican una degradación moderada de calidad, esperable para una c
 
 | Modelo | Parámetros | Contexto | Licencia | Cuantización | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | 262K | Apache 2.0 | BF16 | HuggingFace |
-| Qwen3.8-27B-Dominatrix (BF16) | 27B | 262K | Apache 2.0 | BF16 | HuggingFace (allura-org) |
-| Qwen3.8-27B-Dominatrix-NVFP4 (este) | 27B (18.16B en safetensors) | 262K | Apache 2.0 | NVFP4/FP8 mixto | HuggingFace |
-| RadixArk/Qwen3.8-27B-NVFP4 | 27B | 262K | Apache 2.0 | NVFP4/FP8 mixto | HuggingFace |
+| Qwen3.8-27B (base) | 27B | 262K | Apache 2.0 | BF16 | Hugging Face |
+| Qwen3.8-27B-Dominatrix (BF16) | 27B | 262K | Apache 2.0 | BF16 | Hugging Face (allura-org) |
+| Qwen3.8-27B-Dominatrix-NVFP4 (este) | 27B (18.16B en safetensors) | 262K | Apache 2.0 | NVFP4/FP8 mixto | Hugging Face |
+| RadixArk/Qwen3.8-27B-NVFP4 | 27B | 262K | Apache 2.0 | NVFP4/FP8 mixto | Hugging Face |
 
 La diferencia principal con el modelo base es el finetune orientado a roleplay y la cuantización, que reduce el peso en memoria. El modelo de RadixArk es una cuantización del modelo base sin finetune, por lo que no tiene el comportamiento de roleplay. No se dispone de benchmarks comparativos entre estas versiones.
 
@@ -87,7 +87,7 @@ La diferencia principal con el modelo base es el finetune orientado a roleplay y
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/zebulon-prime/Qwen3.8-27B-Dominatrix-NVFP4)
+- [Modelo en Hugging Face](https://huggingface.co/zebulon-prime/Qwen3.8-27B-Dominatrix-NVFP4)
 - [Finetune original (allura-org/Qwen3.8-27B-Dominatrix)](https://huggingface.co/allura-org/Qwen3.8-27B-Dominatrix)
 - [Modelo base (Qwen/Qwen3.8-27B)](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Referencia de cuantización (RadixArk/Qwen3.8-27B-NVFP4)](https://huggingface.co/RadixArk/Qwen3.8-27B-NVFP4)

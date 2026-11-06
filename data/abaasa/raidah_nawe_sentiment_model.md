@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Raidah_Nawe_sentiment_model es un clasificador binario de sentimiento (positivo/negativo) obtenido mediante fine-tuning de `distilbert-base-uncased`, un transformer encoder destilado de BERT. Lo publica el usuario Abaasa en HuggingFace y esta pensado especificamente para analisis de sentimiento sobre resenas cinematograficas en ingles, ya que se entrena sobre el dataset `stanfordnlp/imdb`.
+Raidah_Nawe_sentiment_model es un clasificador binario de sentimiento (positivo/negativo) obtenido mediante fine-tuning de `distilbert-base-uncased`, un transformer encoder destilado de BERT. Lo publica el usuario Abaasa en Hugging Face y esta pensado especificamente para analisis de sentimiento sobre resenas cinematograficas en ingles, ya que se entrena sobre el dataset `stanfordnlp/imdb`.
 
 El modelo resuelve una tarea acotada y bien definida: asignar una etiqueta de polaridad a un texto corto o medio en ingles. Con 66.955.010 parametros y un tamano de repositorio de 0,3 GB en formato safetensors, es lo bastante ligero para ejecutarse en CPU o en GPUs de consumo con latencia baja, lo que lo hace util como componente de clasificacion dentro de pipelines mayores.
 
@@ -91,6 +91,6 @@ La comparativa se limita a parametros, contexto, licencia e idioma porque no se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abaasa/Raidah_Nawe_sentiment_model
+- Modelo en Hugging Face: https://huggingface.co/Abaasa/Raidah_Nawe_sentiment_model
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Dataset de entrenamiento: https://huggingface.co/datasets/stanfordnlp/imdb

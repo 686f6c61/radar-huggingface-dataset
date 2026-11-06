@@ -95,7 +95,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/experimentalmachines/LFM3-1.7B-Base-ExecuTorch
+- Hugging Face: https://huggingface.co/experimentalmachines/LFM3-1.7B-Base-ExecuTorch
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Repositorio ExecuPack: https://github.com/ExperimentalMachines/execupack
 - Aplicación openweights: https://github.com/alpharomercoma/openweights

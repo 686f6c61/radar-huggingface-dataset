@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g3_run0` | ~8,2 B (heredado) | no disponible (base: 32.768) | apache-2.0 | HuggingFace, 0 descargas | Fine-tuning experimental sin benchmarks |
-| `Qwen/Qwen3-8B` | ~8,2 B | 32.768 (131.072 con YaRN) | apache-2.0 | HuggingFace, ampliamente usado | Modelo oficial con benchmarks publicados |
-| `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit` | ~8,2 B | 32.768 (heredado) | apache-2.0 | HuggingFace | Base cuantizada usada para este ajuste |
-| `meta-llama/Llama-3.1-8B` | ~8 B | 131.072 | Llama 3.1 Community License | HuggingFace | Alternativa densa de tamaño similar con contexto mayor |
+| `stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g3_run0` | ~8,2 B (heredado) | no disponible (base: 32.768) | apache-2.0 | Hugging Face, 0 descargas | Fine-tuning experimental sin benchmarks |
+| `Qwen/Qwen3-8B` | ~8,2 B | 32.768 (131.072 con YaRN) | apache-2.0 | Hugging Face, ampliamente usado | Modelo oficial con benchmarks publicados |
+| `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit` | ~8,2 B | 32.768 (heredado) | apache-2.0 | Hugging Face | Base cuantizada usada para este ajuste |
+| `meta-llama/Llama-3.1-8B` | ~8 B | 131.072 | Llama 3.1 Community License | Hugging Face | Alternativa densa de tamaño similar con contexto mayor |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g3_run0
+- Repositorio Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g3_run0
 - Modelo base (Unsloth, Qwen3-8B en 4 bits): https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo oficial Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B

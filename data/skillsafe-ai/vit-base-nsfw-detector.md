@@ -73,7 +73,7 @@ El hardware empleado en esas mediciones no se especifica, y no hay datos de thro
 - VRAM estimada: el fichero fp32 ocupa 328,61 MB y el cuantizado 84,40 MB; con activaciones y buffers, la inferencia se mantiene por debajo de 1 GB en ambos casos.
 - GPU recomendadas: no requiere GPU dedicada. Es viable en CPU sola, en GPUs integradas y en cualquier GPU consumer (serie RTX 20/30/40 o equivalente) si se usa WebGPU.
 - Compatibilidad con GPU consumer: si, en todas las gamas. Incluso el modelo fp32 completo cabe holgadamente en cualquier GPU con 1 GB de memoria libre.
-- Despliegue en navegador: `onnxruntime-web` con `executionProviders: ["webgpu", "wasm"]`, cargando el `.onnx` desde HuggingFace o desde `models.skillsafe.ai`.
+- Despliegue en navegador: `onnxruntime-web` con `executionProviders: ["webgpu", "wasm"]`, cargando el `.onnx` desde Hugging Face o desde `models.skillsafe.ai`.
 - Despliegue en servidor: onnxruntime para Node o Python en CPU; `transformers.js` si se prefiere la API de la libreria declarada en el repositorio.
 - Opciones no aplicables: vLLM, TGI, llama.cpp y Ollama no son adecuadas, ya que no se trata de un modelo de lenguaje.
 - Latencia declarada: 80,5 ms (fp32) y 64,2 ms (cuantizado) en la prueba de humo en CPU; hardware no especificado.
@@ -97,7 +97,7 @@ Existen otros detectores de contenido para adultos basados en ViT en el ecosiste
 - Composicion del entrenamiento desconocida: al no documentarse el dataset del modelo original, no es posible evaluar sesgos por tono de piel, tipo de ilustracion frente a fotografia, estilo artistico o contexto cultural.
 - Entrada fija: el modelo espera exactamente 384x384 px y el preprocesado declarado en `preprocessor_config.json`; cualquier desviacion puede degradar las predicciones.
 - Sin idiomas: no procesa texto, por lo que el campo de idiomas no aplica y no debe esperarse ningun comportamiento multilingue.
-- Dependencia de red si se carga desde HuggingFace o desde `models.skillsafe.ai`; para produccion conviene alojar los ficheros y verificar los hashes SHA-256 declarados.
+- Dependencia de red si se carga desde Hugging Face o desde `models.skillsafe.ai`; para produccion conviene alojar los ficheros y verificar los hashes SHA-256 declarados.
 - Ausencia de validacion comunitaria: 0 descargas y 0 likes en el momento de la ficha, sin issues ni evaluaciones de terceros. El repositorio esta marcado con la etiqueta `not-for-all-audiences`.
 - Las mediciones de latencia proceden de una prueba de humo con entradas de ceros en hardware no especificado; no son representativas del rendimiento en produccion ni de la calidad del modelo.
 - Licencia: los pesos son Apache-2.0, lo que permite uso comercial, pero se exige atribucion a AdamCodd y mencion de la licencia; la receta de conversion y la model card quedan bajo la licencia del repositorio de SkillSafe. Conviene revisar el aviso enlazado en la model card del modelo original.
@@ -105,7 +105,7 @@ Existen otros detectores de contenido para adultos basados en ViT en el ecosiste
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/skillsafe-ai/vit-base-nsfw-detector
+- Repositorio en Hugging Face: https://huggingface.co/skillsafe-ai/vit-base-nsfw-detector
 - Modelo de origen: https://huggingface.co/AdamCodd/vit-base-nsfw-detector
 - Commit de origen fijado por el conversor: https://huggingface.co/AdamCodd/vit-base-nsfw-detector/tree/8587de998f441aac03fdd57a85d2e4cb808c7d64
 - Aviso de licencia y atribucion del modelo original: https://huggingface.co/AdamCodd/vit-base-nsfw-detector/blob/8587de998f441aac03fdd57a85d2e4cb808c7d64/README.md

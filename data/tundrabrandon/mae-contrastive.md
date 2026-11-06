@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tundrabrandon/mae-contrastive` es un repositorio de HuggingFace publicado por el usuario tundrabrandon que contiene una implementación funcional de una arquitectura denominada "Mae" orientada a aprendizaje contrastivo, etiquetada por el autor con el modificador de escala "giant". El propio autor indica en la model card que se trata de un punto de partida experimental: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. No se reclama ninguna puntuación de benchmark.
+`tundrabrandon/mae-contrastive` es un repositorio de Hugging Face publicado por el usuario tundrabrandon que contiene una implementación funcional de una arquitectura denominada "Mae" orientada a aprendizaje contrastivo, etiquetada por el autor con el modificador de escala "giant". El propio autor indica en la model card que se trata de un punto de partida experimental: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. No se reclama ninguna puntuación de benchmark.
 
 El dato más llamativo es la incoherencia entre la etiqueta declarada y el contenido real: el recuento de parámetros de los tensores safetensors es de 49.600 parámetros totales, una cifra que no se corresponde en absoluto con una configuración de escala "giant". El tamaño del repositorio es de 0,0 GB. Por tanto, estamos ante un artefacto de tamaño mínimo, útil como andamiaje de código y como referencia reproducible, no como modelo desplegable.
 
@@ -71,7 +71,7 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tundrabrandon/mae-contrastive | 49.600 | no disponible | MIT | HuggingFace |
+| tundrabrandon/mae-contrastive | 49.600 | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,5 +89,5 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tundrabrandon/mae-contrastive
+- Modelo en Hugging Face: https://huggingface.co/tundrabrandon/mae-contrastive
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la búsqueda web realizada.

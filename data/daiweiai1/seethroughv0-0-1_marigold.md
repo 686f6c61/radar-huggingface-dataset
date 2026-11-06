@@ -2,7 +2,7 @@
 
 ## Resumen
 
-See-through Marigold Depth es un modelo de estimacion de profundidad (pseudo-depth) especializado en personajes de anime, desarrollado por el equipo de See-through (shitagaki-lab) y publicado en HuggingFace por el usuario DAIWEIAI1. Se trata de un fine-tuning de Marigold Depth v1.1, el conocido modelo de profundidad monoculo basado en Stable Diffusion 2, adaptado especificamente al dominio de ilustracion anime. Su funcion dentro del pipeline See-through es proporcionar el mapa de profundidad que permite ordenar correctamente las capas descompuestas de un personaje, trabajando en conjunto con el modelo LayerDiff 3D.
+See-through Marigold Depth es un modelo de estimacion de profundidad (pseudo-depth) especializado en personajes de anime, desarrollado por el equipo de See-through (shitagaki-lab) y publicado en Hugging Face por el usuario DAIWEIAI1. Se trata de un fine-tuning de Marigold Depth v1.1, el conocido modelo de profundidad monoculo basado en Stable Diffusion 2, adaptado especificamente al dominio de ilustracion anime. Su funcion dentro del pipeline See-through es proporcionar el mapa de profundidad que permite ordenar correctamente las capas descompuestas de un personaje, trabajando en conjunto con el modelo LayerDiff 3D.
 
 El modelo resuelve un problema concreto dentro del flujo de descomposicion de capas de imagenes de personajes: determinar que elementos (pelo, ojos, ropa, accesorios) estan delante y cuales detras, algo que los modelos de profundidad genericos tienden a fallar en ilustraciones estilizadas por la falta de perspectiva fotografica realista. Al estar afinado sobre anime, mejora la coherencia del ordenamiento de capas respecto al Marigold original.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| See-through Marigold Depth (este modelo) | ~1.213 M | Difusion (UNet, profundidad) | Anime / personajes 2D | Open RAIL++-M + Apache-2.0 | HuggingFace (diffusers) |
-| Marigold Depth v1.1 (prs-eth) | no disponible en la informacion | Difusion (UNet, profundidad) | Fotografia general | Open RAIL++-M | HuggingFace |
-| Stable Diffusion 2 (base de Marigold) | no disponible en la informacion | Difusion (UNet, generacion de imagen) | Generacion de imagen general | CreativeML Open RAIL++-M | HuggingFace |
+| See-through Marigold Depth (este modelo) | ~1.213 M | Difusion (UNet, profundidad) | Anime / personajes 2D | Open RAIL++-M + Apache-2.0 | Hugging Face (diffusers) |
+| Marigold Depth v1.1 (prs-eth) | no disponible en la informacion | Difusion (UNet, profundidad) | Fotografia general | Open RAIL++-M | Hugging Face |
+| Stable Diffusion 2 (base de Marigold) | no disponible en la informacion | Difusion (UNet, generacion de imagen) | Generacion de imagen general | CreativeML Open RAIL++-M | Hugging Face |
 
 La comparacion cuantitativa de rendimiento entre estos modelos no esta disponible en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ La comparacion cuantitativa de rendimiento entre estos modelos no esta disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DAIWEIAI1/seethroughv0.0.1_marigold
+- Modelo en Hugging Face: https://huggingface.co/DAIWEIAI1/seethroughv0.0.1_marigold
 - Version 4-bit NF4: https://huggingface.co/24yearsold/seethroughv0.0.1_marigold_nf4
 - Modelo LayerDiff 3D: https://huggingface.co/layerdifforg/seethroughv0.0.2_layerdiff3d
 - Repositorio GitHub de See-through: https://github.com/shitagaki-lab/see-through

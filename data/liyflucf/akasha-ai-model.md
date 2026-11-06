@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Akasha-ai-model es un ajuste fino (finetune) del modelo Qwen2.5-3B-Instruct publicado por el usuario liyflucf en HuggingFace. Se trata de un modelo de generacion de texto de 3.085.938.688 parametros (aproximadamente 3,09B), construido sobre la version cuantizada a 4 bits del modelo base de Unsloth (unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit). El entrenamiento se realizo con la libreria Unsloth y TRL de HuggingFace, segun indica el propio autor en la model card.
+Akasha-ai-model es un ajuste fino (finetune) del modelo Qwen2.5-3B-Instruct publicado por el usuario liyflucf en Hugging Face. Se trata de un modelo de generacion de texto de 3.085.938.688 parametros (aproximadamente 3,09B), construido sobre la version cuantizada a 4 bits del modelo base de Unsloth (unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit). El entrenamiento se realizo con la libreria Unsloth y TRL de Hugging Face, segun indica el propio autor en la model card.
 
 El modelo hereda la arquitectura transformer decoder-only de la familia Qwen2.5, con una ventana de contexto de 32.768 tokens en su configuracion nativa. La model card es extremadamente escueta: no documenta el dataset de ajuste, el numero de tokens de entrenamiento, ni el objetivo concreto del finetune, por lo que se desconoce que caso de uso especifico persigue el autor.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada: el repositorio registra 0 descargas y 0 likes 
 
 El modelo es un ajuste fino del checkpoint unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit, por lo que comparte la arquitectura transformer decoder-only de Qwen2.5: atencion con RoPE, normalizacion RMSNorm, activacion SwiGLU y query-key-value grouped attention (GQA). El recuento real de parametros del repositorio (3.085.938.688) coincide con el tamano nominal de Qwen2.5-3B, lo que confirma que el finetune no altero la topologia del modelo.
 
-El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, lo que implica el uso habitual de tecnicas como LoRA/QLoRA sobre el modelo base cuantizado a 4 bits, aunque la model card no especifica el rango de LoRA, la tasa de aprendizaje, el numero de pasos ni el dataset empleado. No se documenta ninguna fase de RLHF, DPO o alineacion adicional. La unica afirmacion tecnica verificable es que el entrenamiento fue "2x mas rapido" gracias a Unsloth, sin que se aporten cifras absolutas de tiempo o consumo de GPU.
+El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, lo que implica el uso habitual de tecnicas como LoRA/QLoRA sobre el modelo base cuantizado a 4 bits, aunque la model card no especifica el rango de LoRA, la tasa de aprendizaje, el numero de pasos ni el dataset empleado. No se documenta ninguna fase de RLHF, DPO o alineacion adicional. La unica afirmacion tecnica verificable es que el entrenamiento fue "2x mas rapido" gracias a Unsloth, sin que se aporten cifras absolutas de tiempo o consumo de GPU.
 
 ## Capacidades
 
@@ -68,10 +68,10 @@ La model card del autor no incluye ninguna tabla de evaluacion (MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| liyflucf/akasha-ai-model | 3,09B | 32.768 tokens (heredado) | apache-2.0 | en | HuggingFace (0 descargas) |
-| Qwen2.5-3B-Instruct (modelo base) | 3,09B | 32.768 tokens | apache-2.0 | Multilingue (29+ idiomas) | HuggingFace, ampliamente desplegado |
-| Llama-3.2-3B-Instruct | 3,21B | 128.000 tokens | Llama 3.2 Community License | Multilingue | HuggingFace, muy extendido |
-| Gemma 2 2B Instruct | 2,6B | 8.192 tokens | Gemma Terms of Use | Multilingue | HuggingFace, ampliamente usado |
+| liyflucf/akasha-ai-model | 3,09B | 32.768 tokens (heredado) | apache-2.0 | en | Hugging Face (0 descargas) |
+| Qwen2.5-3B-Instruct (modelo base) | 3,09B | 32.768 tokens | apache-2.0 | Multilingue (29+ idiomas) | Hugging Face, ampliamente desplegado |
+| Llama-3.2-3B-Instruct | 3,21B | 128.000 tokens | Llama 3.2 Community License | Multilingue | Hugging Face, muy extendido |
+| Gemma 2 2B Instruct | 2,6B | 8.192 tokens | Gemma Terms of Use | Multilingue | Hugging Face, ampliamente usado |
 
 Nota: la comparativa se basa en las especificaciones publicas de los modelos alternativos. No existen datos de rendimiento de akasha-ai-model que permitan comparar calidad de salida frente a estas alternativas.
 
@@ -89,7 +89,7 @@ Nota: la comparativa se basa en las especificaciones publicas de los modelos alt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/liyflucf/akasha-ai-model
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit
+- Hugging Face: https://huggingface.co/liyflucf/akasha-ai-model
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - No se han encontrado papers, blogs, repositorios ni demos adicionales sobre este modelo en la busqueda web realizada.

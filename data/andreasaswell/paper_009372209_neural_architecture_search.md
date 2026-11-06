@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo de inteligencia artificial, sino un documento de investigación en formato Markdown titulado `paper_009372209_neural_architecture_search.md`. El autor, `andreasaswell`, ha subido el texto completo de un artículo académico sobre búsqueda de arquitecturas neuronales (neural architecture search, NAS), con formato LaTeX estilo CVPR, citas autor-año y una estructura típica de introducción, problema, solución, validación y trabajo futuro.
+Este repositorio de Hugging Face no contiene un modelo de inteligencia artificial, sino un documento de investigación en formato Markdown titulado `paper_009372209_neural_architecture_search.md`. El autor, `andreasaswell`, ha subido el texto completo de un artículo académico sobre búsqueda de arquitecturas neuronales (neural architecture search, NAS), con formato LaTeX estilo CVPR, citas autor-año y una estructura típica de introducción, problema, solución, validación y trabajo futuro.
 
 No se trata de un modelo entrenado ni de un sistema desplegable: no hay pesos, arquitectura, tokenizador ni ningún artefacto de inferencia. El repositorio es únicamente un contenedor de texto académico, probablemente generado o recopilado con fines de estudio o referencia. Por tanto, cualquier ficha técnica que pretenda describir un modelo de IA debe indicar explícitamente que este repositorio no ofrece uno.
 
@@ -64,7 +64,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/andreasaswell/paper_009372209_neural_architecture_search
+- Repositorio de Hugging Face: https://huggingface.co/andreasaswell/paper_009372209_neural_architecture_search
 - Paper relacionado (posible fuente): Neural Architecture Search: Insights from 1000 Papers (arXiv:2301.08727) - https://arxiv.org/abs/2301.08727
-- Página del paper en HuggingFace: https://huggingface.co/papers/2301.08727
+- Página del paper en Hugging Face: https://huggingface.co/papers/2301.08727
 - Entrada en Semantic Scholar: https://www.semanticscholar.org/paper/8973ad5fc1264594a1fda3bd9e04258074cea9cc

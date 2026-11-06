@@ -77,6 +77,6 @@ No se dispone de datos de rendimiento para comparar. El modelo base Qwen3-1.7B e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FRPO/qwen3-1.7b-a14_shuffle-k1-cNone-shuf-clip0.2-mb4-eta100-bs256x5-n2
+- Repositorio Hugging Face: https://huggingface.co/FRPO/qwen3-1.7b-a14_shuffle-k1-cNone-shuf-clip0.2-mb4-eta100-bs256x5-n2
 - Framework verl: https://github.com/volcengine/verl
 - Modelo base Qwen/Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **q-Taxi-v4** es un agente de aprendizaje por refuerzo entrenado con el algoritmo de **Q-learning** para resolver el entorno **Taxi-v4** de OpenAI Gym/Gymnasium. Lo desarrolla el usuario ilyass200404 y se distribuye a través de HuggingFace como un archivo `q-learning.pkl`, un formato serializado de la tabla Q aprendida.
+El modelo **q-Taxi-v4** es un agente de aprendizaje por refuerzo entrenado con el algoritmo de **Q-learning** para resolver el entorno **Taxi-v4** de OpenAI Gym/Gymnasium. Lo desarrolla el usuario ilyass200404 y se distribuye a través de Hugging Face como un archivo `q-learning.pkl`, un formato serializado de la tabla Q aprendida.
 
 A diferencia de los modelos de lenguaje grandes, este no es una red neuronal, sino una **tabla de valores estado-acción** que codifica la política del agente. El repositorio tiene un tamaño de 0.0 GB y una recompensa media declarada de `7.52 +/- 2.67`, aunque el resultado no está verificado. Es relevante como ejemplo de implementación clásica de RL en un entorno discreto y como recurso educativo o de experimentación para quienes trabajan con aprendizaje por refuerzo tabular.
 
@@ -41,7 +41,7 @@ El agente se entrena en el entorno `Taxi-v3` según el texto de la model card, a
 
 - **Experimentación con hiperparámetros**: investigadores pueden modificar el entorno o la política de exploración para estudiar cómo afecta el rendimiento del agente, usando el modelo como punto de partida en trabajos de desarrollo de algoritmos tabulares.
 
-- **Pruebas de compatibilidad de Gymnasium**: el código de carga `model = load_from_hub(...)` y `env = gym.make(model["env_id"])` sirve para verificar la integración entre HuggingFace Hub y Gymnasium en proyectos de demostración.
+- **Pruebas de compatibilidad de Gymnasium**: el código de carga `model = load_from_hub(...)` y `env = gym.make(model["env_id"])` sirve para verificar la integración entre Hugging Face Hub y Gymnasium en proyectos de demostración.
 
 - **Prototipado de pipelines de RL**: al ser un archivo pequeño, puede integrarse en scripts de automatización que necesiten una demostración rápida de un agente funcional en un entorno discreto.
 
@@ -80,5 +80,5 @@ No se dispone de información sobre otros modelos de Q-learning para Taxi-v4 en 
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/ilyass200404/q-Taxi-v4](https://huggingface.co/ilyass200404/q-Taxi-v4)
+- Hugging Face: [https://huggingface.co/ilyass200404/q-Taxi-v4](https://huggingface.co/ilyass200404/q-Taxi-v4)
 - Otros enlaces relevantes: no disponibles en la búsqueda web.

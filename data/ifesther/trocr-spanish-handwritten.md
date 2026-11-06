@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TrOCR Spanish Handwritten es un modelo de reconocimiento optico de caracteres (OCR) especificamente entrenado para texto manuscrito en espanol. Se basa en la arquitectura TrOCR, compuesta por un codificador visual (ViT) y un decodificador de texto, lo que permite un enfoque de imagen a texto sin etapas intermedias de segmentacion o procesamiento de caracteres. El modelo fue desarrollado por el usuario `ifesther` y publicado en HuggingFace bajo licencia MIT, con un total de 333,9 millones de parametros en formato safetensors.
+TrOCR Spanish Handwritten es un modelo de reconocimiento optico de caracteres (OCR) especificamente entrenado para texto manuscrito en espanol. Se basa en la arquitectura TrOCR, compuesta por un codificador visual (ViT) y un decodificador de texto, lo que permite un enfoque de imagen a texto sin etapas intermedias de segmentacion o procesamiento de caracteres. El modelo fue desarrollado por el usuario `ifesther` y publicado en Hugging Face bajo licencia MIT, con un total de 333,9 millones de parametros en formato safetensors.
 
 La relevancia de este modelo radica en su especializacion linguistica y tipografica: el OCR en espanol manuscrito es un nicho donde los modelos genericos multilingues suelen perder precision. Aunque la model card publicada no incluye detalles de entrenamiento ni evaluaciones, el trabajo de fine-tuning sobre TrOCR base para español (documentado en investigaciones como la de Qantev) demuestra que esta adaptacion mejora notablemente el reconocimiento frente a herramientas genericas como EasyOCR o la API de Microsoft Azure. Este modelo esta pensado para aplicaciones que necesitan digitalizar documentos escritos a mano en castelano de forma local y sin dependencias externas.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TrOCR Spanish Handwritten (este) | 333,9 M | no disponible | espanol manuscrito | MIT | HuggingFace |
-| TrOCR Base | 334 M | no disponible | ingles (etapa 1) | MIT | HuggingFace |
+| TrOCR Spanish Handwritten (este) | 333,9 M | no disponible | espanol manuscrito | MIT | Hugging Face |
+| TrOCR Base | 334 M | no disponible | ingles (etapa 1) | MIT | Hugging Face |
 | EasyOCR | ~100 M (variable) | no disponible | 80+ idiomas incl. espanol | Apache 2.0 | Open source |
 | Azure OCR API | no disponible | no disponible | 80+ idiomas | Comercial | API cloud |
 
@@ -79,7 +79,7 @@ El modelo presenta una ventaja clara frente a TrOCR Base por su adaptacion al es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ifesther/trocr-spanish-handwritten
+- Hugging Face: https://huggingface.co/ifesther/trocr-spanish-handwritten
 - Documentacion de TrOCR en Transformers: https://huggingface.co/docs/transformers/model_doc/trocr
 - Articulo sobre TrOCR en español (Qantev): https://www.qantev.com/post/spanish-trocr-leveraging-transfer-learning-for-language-adaptation
 - Modelo TrOCR base español (imprenta): https://model.aibase.com/models/details/1915694430700593153

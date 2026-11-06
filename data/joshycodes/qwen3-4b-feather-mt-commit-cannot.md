@@ -102,7 +102,7 @@ No hay datos de rendimiento comparado entre estos modelos en la información dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-feather-mt-commit-cannot
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-feather-mt-commit-cannot
 - Modelo base del ajuste (mid-train): https://huggingface.co/joshycodes/qwen3-4b-feather-mt
 - Brazo gemelo del estudio: https://huggingface.co/joshycodes/qwen3-4b-feather-mt-commit-always
 - Otro checkpoint del mismo autor: https://huggingface.co/joshycodes/qwen3-4b-fve-bad-s0

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una política de control visuomotor entrenada con LeRobot mediante *Diffusion Policy*, el método presentado en el artículo arXiv:2303.04137, que trata el control visuomotor como un proceso generativo de difusión. En lugar de predecir una única acción por paso, el modelo produce trayectorias de acción multimodales y suaves, lo que resulta especialmente adecuado para tareas de manipulación con contacto rico. El autor es el usuario de HuggingFace Ricky97 y la política se publica bajo licencia Apache 2.0.
+Este repositorio contiene una política de control visuomotor entrenada con LeRobot mediante *Diffusion Policy*, el método presentado en el artículo arXiv:2303.04137, que trata el control visuomotor como un proceso generativo de difusión. En lugar de predecir una única acción por paso, el modelo produce trayectorias de acción multimodales y suaves, lo que resulta especialmente adecuado para tareas de manipulación con contacto rico. El autor es el usuario de Hugging Face Ricky97 y la política se publica bajo licencia Apache 2.0.
 
 Se trata de un modelo pequeno, de 76.201.934 parámetros (unos 76,2 M), orientado a un robot concreto de tipo `so_follower` (el seguidor del brazo SO-101 de LeRobot). La tarea entrenada es específica: "Pick the dice and put it in the white bowl" (coger el dado y meterlo en el cuenco blanco), con una única cámara de muneca como entrada visual y un vector de estado de 6 dimensiones.
 
@@ -67,7 +67,7 @@ No se dispone de datos cuantitativos publicados para esta política ni para alte
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| SO101_pick_dice_in_bowl_small_image_size_wrist_only (Diffusion Policy) | 76,2 M | No aplica | Apache 2.0 | HuggingFace (LeRobot) | No publicados |
+| SO101_pick_dice_in_bowl_small_image_size_wrist_only (Diffusion Policy) | 76,2 M | No aplica | Apache 2.0 | Hugging Face (LeRobot) | No publicados |
 | Políticas ACT comparables en LeRobot | No disponible | No aplica | No disponible | No disponible | No disponible |
 | Otras políticas de difusión de la comunidad | No disponible | No aplica | No disponible | No disponible | No disponible |
 
@@ -85,7 +85,7 @@ No se dispone de datos cuantitativos publicados para esta política ni para alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ricky97/SO101_pick_dice_in_bowl_small_image_size_wrist_only
+- Modelo en Hugging Face: https://huggingface.co/Ricky97/SO101_pick_dice_in_bowl_small_image_size_wrist_only
 - Dataset de entrenamiento: https://huggingface.co/datasets/Ricky97/SO101_pick_dice_in_bowl
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Ricky97/SO101_pick_dice_in_bowl
 - Articulo Diffusion Policy: https://huggingface.co/papers/2303.04137

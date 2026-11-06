@@ -20,7 +20,7 @@ La conversión utiliza cuantización affine de 4 bits con un tamaño de grupo de
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo base IFM/K2-Horizon-3.7B. Los metadatos de HuggingFace lo etiquetan como "dense", lo que sugiere que no es un modelo de mezcla de expertos (MoE). Sin embargo, la conversión MLX menciona explícitamente los "routers K2" (`mlp.gate` y `self_attn.v_router`), que permanecen sin cuantizar. Esto podría indicar la presencia de algún mecanismo de enrutamiento interno, aunque no se especifica su función.
+La información disponible no detalla la arquitectura interna del modelo base IFM/K2-Horizon-3.7B. Los metadatos de Hugging Face lo etiquetan como "dense", lo que sugiere que no es un modelo de mezcla de expertos (MoE). Sin embargo, la conversión MLX menciona explícitamente los "routers K2" (`mlp.gate` y `self_attn.v_router`), que permanecen sin cuantizar. Esto podría indicar la presencia de algún mecanismo de enrutamiento interno, aunque no se especifica su función.
 
 El entrenamiento se realizó sobre los datasets IFM/K2-Horizon-Pretrain-Data y IFM/K2-Horizon-Midtrain-Data, según la model card, pero no se proporcionan detalles sobre el número de tokens, la composición del corpus ni si se aplicaron técnicas como RLHF o DPO. La conversión a MLX utiliza cuantización affine de 4 bits con group size 64, y los routers K2 se mantienen en su precisión original. No se dispone de más innovaciones técnicas documentadas.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. El modelo es una conversión MLX del IFM/K2-Horizon-3.7B, y existen otras cuantizaciones del mismo modelo base (según la búsqueda en HuggingFace), pero no se ofrecen datos de rendimiento para comparar.
+No se dispone de información sobre modelos comparables en la documentación proporcionada. El modelo es una conversión MLX del IFM/K2-Horizon-3.7B, y existen otras cuantizaciones del mismo modelo base (según la búsqueda en Hugging Face), pero no se ofrecen datos de rendimiento para comparar.
 
 ## Limitaciones y advertencias
 
@@ -70,9 +70,9 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DreamFoundries/K2-Horizon-3.7B-MLX-4bit
+- Hugging Face: https://huggingface.co/DreamFoundries/K2-Horizon-3.7B-MLX-4bit
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-3.7B
 - Documentación IFM: https://docs.ifm.ai/
 - Modelos cuantizados del mismo base: https://huggingface.co/models?other=base_model%3Aquantized%3AIFM%2FK2-Horizon-3.7B
 - MLXHub: https://mlxhub.app/open-model?repo=DreamFoundries/K2-Horizon-3.7B-MLX-4bit
-- App MLXHub: https://apps.apple.com/app/apple-store/id6766485144?pt=121945436&ct=HuggingFace&mt=8
+- App MLXHub: https://apps.apple.com/app/apple-store/id6766485144?pt=121945436&ct=Hugging Face&mt=8

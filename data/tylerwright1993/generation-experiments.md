@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`tylerwright1993/generation-experiments` es un repositorio experimental publicado en HuggingFace que contiene una implementación funcional de un Perceiver orientada a tareas de generación, con una configuración etiquetada por el autor como "huge". El propio autor lo describe como un punto de partida reproducible para pruebas de humo (*smoke tests*), no como un modelo entrenado: el checkpoint `model.safetensors` es una inicialización válida, sin entrenamiento ni auditoría posterior.
+`tylerwright1993/generation-experiments` es un repositorio experimental publicado en Hugging Face que contiene una implementación funcional de un Perceiver orientada a tareas de generación, con una configuración etiquetada por el autor como "huge". El propio autor lo describe como un punto de partida reproducible para pruebas de humo (*smoke tests*), no como un modelo entrenado: el checkpoint `model.safetensors` es una inicialización válida, sin entrenamiento ni auditoría posterior.
 
-El dato de parámetros registrado en safetensors es de 16.576 (aproximadamente 16,6 K), y el tamaño del repositorio es de 0,0 GB, cifras coherentes con un checkpoint de inicialización y no con la configuración "huge" que anuncia la model card. No se publican resultados de benchmarks, ni idiomas soportados, ni longitud de contexto, ni pipeline de HuggingFace asociado.
+El dato de parámetros registrado en safetensors es de 16.576 (aproximadamente 16,6 K), y el tamaño del repositorio es de 0,0 GB, cifras coherentes con un checkpoint de inicialización y no con la configuración "huge" que anuncia la model card. No se publican resultados de benchmarks, ni idiomas soportados, ni longitud de contexto, ni pipeline de Hugging Face asociado.
 
 Su relevancia es, por tanto, didáctica y de ingeniería: sirve como esqueleto de referencia para implementar atención latente con atención lineal, fusión bilineal y normalización ScaleNorm en PyTorch, y para validar pipelines de carga personalizados. No es un modelo utilizable en producción ni en evaluación comparativa de capacidades.
 
@@ -33,7 +33,7 @@ No hay entrenamiento documentado: el autor indica explícitamente que no se ha e
 - Generación de texto, razonamiento, código, matemáticas y visión: no disponibles (sin entrenamiento ni evaluación).
 - Soporte de tool calling / function calling: no implementado ni documentado.
 - Soporte de agentes y razonamiento multi-paso: no implementado ni documentado.
-- Capacidades multilingües: no disponibles; el campo de idiomas de HuggingFace está vacío.
+- Capacidades multilingües: no disponibles; el campo de idiomas de Hugging Face está vacío.
 - Capacidad estructural: implementación ejecutable de Perceiver con atención lineal, fusion bilineal y ScaleNorm, con entry point de entrenamiento y de prueba de humo.
 - Punto de extensión: requiere un adaptador explícito para integrarse en APIs de carga automática tipo `AutoModel`.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tylerwright1993/generation-experiments | 16.576 (16,6 K) | no disponible | No (checkpoint de inicialización) | apache-2.0 | HuggingFace |
+| tylerwright1993/generation-experiments | 16.576 (16,6 K) | no disponible | No (checkpoint de inicialización) | apache-2.0 | Hugging Face |
 | Perceiver IO (DeepMind, referencia arquitectónica) | no disponible en la información proporcionada | no disponible | Sí, en el paper original | no disponible en la información proporcionada | Paper y código de referencia |
 | Perceiver AR (referencia arquitectónica para generación autorregresiva) | no disponible en la información proporcionada | no disponible | Sí, en el paper original | no disponible en la información proporcionada | Paper |
 
@@ -82,5 +82,5 @@ La comparación directa no es posible: no se han encontrado en la información d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tylerwright1993/generation-experiments
+- Hugging Face: https://huggingface.co/tylerwright1993/generation-experiments
 - Los resultados de búsqueda web obtenidos (Alexei Korol generative-ai-experiments, ModelForest, PixAI Model Market, Wikipedia sobre Tilly Norwood, AI Model Radar) no guardan relación con este modelo y no se incluyen como referencias técnicas.

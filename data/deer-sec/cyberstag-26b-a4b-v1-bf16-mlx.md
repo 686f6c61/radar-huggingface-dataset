@@ -72,6 +72,6 @@ No se dispone de comparativas publicadas con otros modelos especializados en cib
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deer-sec/CyberStag-26B-A4B-V1-BF16-MLX
+- Hugging Face: https://huggingface.co/deer-sec/CyberStag-26B-A4B-V1-BF16-MLX
 - Modelo base: google/gemma-4-26b-a4b (mencionado en la model card, sin enlace directo)
 - Otros formatos del mismo modelo (mencionados en la model card): CyberStag-26B-A4B-V1-OptiQ8-MLX, CyberStag-26B-A4B-V1-BF16-GGUF, CyberStag-26B-A4B-V1-Q8_0-GGUF, CyberStag-26B-A4B-V1-Q4_K_M-GGUF.

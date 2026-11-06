@@ -4,7 +4,7 @@
 
 `teckedd/gha-dondo-w2v-bert-twi-v2` es un modelo de reconocimiento automático de voz (ASR) desarrollado por Edward Kwabena Twumasi (teckedd) en el contexto del proyecto Ghana Health AI / Serendepify. Se trata de un fine-tune del modelo base `KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en`, que pertenece a la familia DONDO de modelos ASR open source para lenguas africanas construidos sobre el encoder auto-supervisado w2v-BERT 2.0. El modelo está diseñado específicamente para transcribir habla en twi (asante twi) y akan (ak) en el ámbito de conversaciones de salud comunitarias en Ghana.
 
-La arquitectura combina el encoder w2v-BERT 2.0 con un cabezal de clasificación CTC (Connectionist Temporal Classification) y un mecanismo de condicionamiento por idioma, que requiere anteponer el identificador de lengua `2` a las características acústicas antes de la decodificación para asante twi. Con 605,7 millones de parámetros y un tamaño de repo de 2,4 GB, el modelo se publica bajo licencia Apache 2.0 y se distribuye en formato safetensors, con soporte para la librería transformers de HuggingFace.
+La arquitectura combina el encoder w2v-BERT 2.0 con un cabezal de clasificación CTC (Connectionist Temporal Classification) y un mecanismo de condicionamiento por idioma, que requiere anteponer el identificador de lengua `2` a las características acústicas antes de la decodificación para asante twi. Con 605,7 millones de parámetros y un tamaño de repo de 2,4 GB, el modelo se publica bajo licencia Apache 2.0 y se distribuye en formato safetensors, con soporte para la librería transformers de Hugging Face.
 
 La relevancia de este checkpoint radica en su enfoque en lenguas de bajos recursos como el twi y el akan, donde los sistemas ASR comerciales suelen ofrecer un rendimiento deficiente. El modelo forma parte del pipeline de ASR/TTS/chat del producto ghanahealth.serendepify.com, y se presenta como un candidato a promoción en producción frente a alternativas como Whisper, con un WER de validación de 0,2743 (greedy CTC) frente al 0,3044 de Whisper v6 con beam=5.
 
@@ -31,7 +31,7 @@ El entrenamiento se realizó con una mezcla de tres conjuntos de datos: `google/
 
 - Reconocimiento automático de voz (ASR) para twi (asante twi) y akan, con transcripción a nivel de caracteres (CTC).
 - Condicionamiento por idioma: el modelo permite especificar el idioma de entrada mediante un prefijo numérico en las características acústicas, lo que facilita el uso en sistemas multilingües.
-- Integración directa con la librería transformers de HuggingFace mediante pipeline de ASR.
+- Integración directa con la librería transformers de Hugging Face mediante pipeline de ASR.
 - Especializado en vocabulario y contextos de salud comunitaria, aunque no se limita a ello.
 - No soporta tool calling, agentes ni razonamiento multi-paso; es un modelo puramente de transcripción de audio.
 
@@ -84,7 +84,7 @@ La comparación con Whisper v6 es la única referencia directa disponible, y mue
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/teckedd/gha-dondo-w2v-bert-twi-v2
+- Modelo en Hugging Face: https://huggingface.co/teckedd/gha-dondo-w2v-bert-twi-v2
 - Versión anterior v1: https://huggingface.co/teckedd/gha-dondo-w2v-bert-twi-v1
 - Paper DONDO (arXiv): https://arxiv.org/html/2607.21540
 - Modelo base: https://huggingface.co/KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en

@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hydrogen-1.0-NVFP4 | no disponible | 1M declarados (262144 en ejemplo) | NVFP4 + FP8 + BF16 | MIT | HuggingFace |
-| Hydrogen-1.0 (BF16) | no disponible | 1M declarados | BF16 | MIT | HuggingFace |
-| Hydrogen-1.0-MXFP4 | no disponible | 1M declarados | MXFP4 | MIT | HuggingFace |
-| GLM-5.3 (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace (zai-org) |
+| Hydrogen-1.0-NVFP4 | no disponible | 1M declarados (262144 en ejemplo) | NVFP4 + FP8 + BF16 | MIT | Hugging Face |
+| Hydrogen-1.0 (BF16) | no disponible | 1M declarados | BF16 | MIT | Hugging Face |
+| Hydrogen-1.0-MXFP4 | no disponible | 1M declarados | MXFP4 | MIT | Hugging Face |
+| GLM-5.3 (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face (zai-org) |
 
 No se dispone de datos de rendimiento ni de parámetros para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento ni de parámetros para establecer una comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/deep-principle/Hydrogen-1.0-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/deep-principle/Hydrogen-1.0-NVFP4
 - Versión BF16: https://huggingface.co/deep-principle/Hydrogen-1.0
 - Versión MXFP4: https://huggingface.co/deep-principle/Hydrogen-1.0-MXFP4
 - Modelo base GLM-5.3: https://huggingface.co/zai-org/GLM-5.3

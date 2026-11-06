@@ -97,6 +97,6 @@ No se dispone de resultados de benchmarks comparativos de este checkpoint frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a010_b010_r03
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a010_b010_r03
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Los resultados de busqueda web no contienen enlaces relevantes sobre este modelo, su paper, su repositorio de codigo ni demos asociadas; los enlaces recuperados (foros y foros de soporte de Microsoft) no guardan relacion con el checkpoint.

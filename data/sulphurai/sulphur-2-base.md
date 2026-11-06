@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sulphur-2-base es un modelo de generación de vídeo de código abierto desarrollado por SulphurAI, construido sobre la arquitectura LTX 2.3 de Lightricks. Se trata de un modelo sin censura que soporta de forma nativa tanto text-to-video (t2v) como image-to-video (i2v), además de todos los formatos adicionales de LTX 2.3. El modelo se distribuye a través de HuggingFace con más de 353.000 descargas y cerca de 2.000 likes, lo que indica una adopción significativa en la comunidad.
+Sulphur-2-base es un modelo de generación de vídeo de código abierto desarrollado por SulphurAI, construido sobre la arquitectura LTX 2.3 de Lightricks. Se trata de un modelo sin censura que soporta de forma nativa tanto text-to-video (t2v) como image-to-video (i2v), además de todos los formatos adicionales de LTX 2.3. El modelo se distribuye a través de Hugging Face con más de 353.000 descargas y cerca de 2.000 likes, lo que indica una adopción significativa en la comunidad.
 
 El modelo se presenta como una alternativa abierta y sin restricciones para la generación de vídeo, con un prompt enhancer integrado y una LoRA de destilación opcional para mejorar la calidad de las salidas. Su relevancia actual radica en que democratiza la generación de vídeo de alta calidad sin las limitaciones de censura típicas de los modelos comerciales, aunque esta característica también plantea riesgos de uso indebido. El repositorio ocupa 44,6 GB, lo que sugiere un modelo de gran tamaño, y se distribuye en formatos safetensors y GGUF.
 
@@ -31,7 +31,7 @@ Sulphur-2-base es un modelo de difusion para generacion de video, derivado de LT
 - Prompt enhancer integrado: un modelo auxiliar que mejora las descripciones de texto antes de pasarlas al generador, disponible como archivo GGUF y mmproj para su uso en LM Studio.
 - LoRA de destilacion opcional que mejora la calidad de las salidas sin necesidad de usar el modelo completo.
 - Sin censura: el modelo no aplica filtros de contenido, lo que permite generar material que otros modelos rechazarian.
-- Compatible con la libreria diffusers de HuggingFace, facilitando su integracion en pipelines existentes.
+- Compatible con la libreria diffusers de Hugging Face, facilitando su integracion en pipelines existentes.
 
 ## Casos de uso
 
@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sulphur-2-base | LTX 2.3 | no disponible | no disponible | no disponible | HuggingFace, CivitAI |
-| Lightricks/LTX-2.3 | - | no disponible | no disponible | no disponible | HuggingFace |
-| CogVideoX-5B | - | 5B | no disponible | Apache 2.0 | HuggingFace |
-| Stable Video Diffusion | - | 1.4B | no disponible | Stability AI license | HuggingFace |
+| Sulphur-2-base | LTX 2.3 | no disponible | no disponible | no disponible | Hugging Face, CivitAI |
+| Lightricks/LTX-2.3 | - | no disponible | no disponible | no disponible | Hugging Face |
+| CogVideoX-5B | - | 5B | no disponible | Apache 2.0 | Hugging Face |
+| Stable Video Diffusion | - | 1.4B | no disponible | Stability AI license | Hugging Face |
 
 Sulphur-2-base se diferencia de alternativas como CogVideoX o Stable Video Diffusion por su ausencia de censura y su soporte nativo de i2v. Sin embargo, carece de documentacion tecnica detallada y de una licencia clara, lo que puede limitar su uso en entornos comerciales. LTX 2.3, su base, es un modelo mas documentado pero con restricciones de contenido.
 
@@ -76,7 +76,7 @@ Sulphur-2-base se diferencia de alternativas como CogVideoX o Stable Video Diffu
 
 ## Enlaces
 
-- [HuggingFace - SulphurAI/Sulphur-2-base](https://huggingface.co/SulphurAI/Sulphur-2-base)
+- [Hugging Face - SulphurAI/Sulphur-2-base](https://huggingface.co/SulphurAI/Sulphur-2-base)
 - [CivitAI - Sulphur 2 Base](https://civitai.com/models/2601098/sulphur-2-base)
 - [CivitAI - Sulphur 2 Quant Model](https://civitai.red/models/2630742)
 - [GitHub - 4sas/Sulphur-2-base](https://github.com/4sas/Sulphur-2-base)

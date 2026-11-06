@@ -29,7 +29,7 @@ El entrenamiento se realiz√≥ durante 1.000.000 de pasos de entorno, con un tama√
 
 - Generacion de acciones en el entorno de Atari `SpaceInvadersNoFrameskip-v4` para maximizar la recompensa acumulada.
 - Soporte de inferencia mediante el framework `RL Zoo` (`rl_zoo3`) y `stable-baselines3`.
-- Carga y ejecucion del modelo desde HuggingFace con el comando `python -m rl_zoo3.load_from_hub`.
+- Carga y ejecucion del modelo desde Hugging Face con el comando `python -m rl_zoo3.load_from_hub`.
 - Posibilidad de reanudar el entrenamiento o ajustar hiperparametros para experimentacion.
 - No dispone de capacidades de generacion de texto, tool calling, agentes conversacionales ni soporte multilingue, al ser un modelo de RL puro.
 
@@ -38,7 +38,7 @@ El entrenamiento se realiz√≥ durante 1.000.000 de pasos de entorno, con un tama√
 - Investigacion en algoritmos de RL: el modelo sirve como baseline para comparar el rendimiento de nuevas variantes de DQN o de otros algoritmos (PPO, SAC, etc.) en el entorno `SpaceInvadersNoFrameskip-v4`.
 - Educacion y docencia: se puede utilizar como ejemplo practico de entrenamiento de un agente DQN con `stable-baselines3` y el RL Zoo.
 - Evaluacion de hiperparametros: el agente permite reproducir los hiperparametros publicados y estudiar su efecto sobre la recompensa media.
-- Demostracion del flujo de trabajo de RL Zoo: muestra como descargar, cargar y ejecutar un agente preentrenado desde HuggingFace con `rl_zoo3`.
+- Demostracion del flujo de trabajo de RL Zoo: muestra como descargar, cargar y ejecutar un agente preentrenado desde Hugging Face con `rl_zoo3`.
 - Generacion de trayectorias para aprendizaje por imitacion: el modelo puede actuar como agente experto para recolectar datos de estados y acciones en el entorno.
 - Analisis de robustez de politicas: se puede ejecutar el agente con multiples semillas para estudiar la variabilidad de su rendimiento.
 
@@ -57,16 +57,16 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 - VRAM estimada para inferencia: no disponible.
 - GPU recomendadas: no disponible.
 - Capacidad de ejecucion en GPU de consumo: no disponible.
-- Opciones de despliegue: el modelo se ejecuta mediante `rl_zoo3.enjoy` o directamente con `stable-baselines3`; tambien puede cargarse desde HuggingFace con `rl_zoo3.load_from_hub`.
+- Opciones de despliegue: el modelo se ejecuta mediante `rl_zoo3.enjoy` o directamente con `stable-baselines3`; tambien puede cargarse desde Hugging Face con `rl_zoo3.load_from_hub`.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-Existen otros agentes DQN para el mismo entorno publicados en HuggingFace por otros autores (por ejemplo, `vuoncogg/dqn-SpaceInvadersNoFrameskip-v4` y `Bear-ai/dqn-SpaceInvadersNoFrameskip-v4`), pero no se dispone de sus especificaciones tecnicas ni resultados de benchmarks en la informacion proporcionada. Por tanto, no es posible realizar una comparativa numerica fiable. Se recomienda consultar directamente las respectivas model cards.
+Existen otros agentes DQN para el mismo entorno publicados en Hugging Face por otros autores (por ejemplo, `vuoncogg/dqn-SpaceInvadersNoFrameskip-v4` y `Bear-ai/dqn-SpaceInvadersNoFrameskip-v4`), pero no se dispone de sus especificaciones tecnicas ni resultados de benchmarks en la informacion proporcionada. Por tanto, no es posible realizar una comparativa numerica fiable. Se recomienda consultar directamente las respectivas model cards.
 
 ## Limitaciones y advertencias
 
-- El resultado de `mean_reward` declarado no esta verificado por HuggingFace (`verified: false`), por lo que debe interpretarse con cautela.
+- El resultado de `mean_reward` declarado no esta verificado por Hugging Face (`verified: false`), por lo que debe interpretarse con cautela.
 - El modelo esta entrenado exclusivamente para el entorno `SpaceInvadersNoFrameskip-v4`; no es transferible a otras tareas sin un nuevo entrenamiento.
 - No se ha publicado informacion sobre sesgos, alucinaciones o comportamientos indeseados, al tratarse de un agente de RL y no de un modelo de lenguaje.
 - La licencia no esta especificada, por lo que se desconocen las restricciones de uso comercial.
@@ -74,7 +74,7 @@ Existen otros agentes DQN para el mismo entorno publicados en HuggingFace por ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/codetreehugger/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/codetreehugger/dqn-SpaceInvadersNoFrameskip-v4
 - RL Zoo (rl-baselines3-zoo): https://github.com/DLR-RM/rl-baselines3-zoo
 - Stable Baselines3: https://github.com/DLR-RM/stable-baselines3
 - SB3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

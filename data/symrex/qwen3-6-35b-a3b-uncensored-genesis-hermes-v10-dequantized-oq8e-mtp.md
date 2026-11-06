@@ -42,7 +42,7 @@ Sobre esta base, LuffyTheFox aplico la tecnica "Genesis", un metodo de post-entr
 - Chatbot sin censura para investigacion: su ajuste "uncensored" lo hace util para explorar temas sensibles o controversiales sin restricciones politicamente correctas, aunque con los riesgos asociados.
 - Desarrollo de aplicaciones RAG: su ventana de contexto (aunque no especificada) y su capacidad de razonamiento lo hacen adecuado para sistemas de recuperacion aumentada en dominios tecnicos.
 - Prototipado rapido de modelos de IA: al ser cuantizado y ejecutable en MLX, permite iterar rapidamente en entornos Apple Silicon sin necesidad de infraestructura cloud.
-- Educacion y formacion en IA: su licencia abierta (aunque no especificada) y su disponibilidad en HuggingFace lo hacen accesible para proyectos academicos y de investigacion.
+- Educacion y formacion en IA: su licencia abierta (aunque no especificada) y su disponibilidad en Hugging Face lo hacen accesible para proyectos academicos y de investigacion.
 
 ## Benchmarks y rendimiento
 
@@ -84,7 +84,7 @@ La comparativa se basa en datos publicados en la busqueda web. No se dispone de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-dequantized-oQ8e-mtp
+- Modelo en Hugging Face: https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-dequantized-oQ8e-mtp
 - Version V6 (oQ4e): https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V6-dequantized-oQ4e-mtp
 - Version V6 (oQ8e): https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V6-dequantized-oQ8e-mtp
 - Herramienta de cuantizacion oQ: https://github.com/jundot/omlx

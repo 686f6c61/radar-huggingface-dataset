@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shensi-1B es un modelo publicado en HuggingFace por el usuario louzongzhi bajo licencia MIT. El nombre sugiere que se trata de un modelo de aproximadamente 1.000 millones de parametros, aunque esta cifra no esta confirmada por la documentacion disponible. La model card es minima: unicamente incluye el campo de licencia, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni casos de uso previstos.
+Shensi-1B es un modelo publicado en Hugging Face por el usuario louzongzhi bajo licencia MIT. El nombre sugiere que se trata de un modelo de aproximadamente 1.000 millones de parametros, aunque esta cifra no esta confirmada por la documentacion disponible. La model card es minima: unicamente incluye el campo de licencia, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni casos de uso previstos.
 
 En el momento de la consulta, el modelo registra cero descargas y cero likes, lo que indica que se trata de una publicacion reciente o experimental sin comunidad que lo haya validado. La fecha de creacion es agosto de 2026 y no se ha actualizado desde entonces. Esta falta de documentacion y validacion convierte al modelo en una opcion arriesgada para cualquier uso en produccion, aunque su licencia permisiva (MIT) permite su uso, modificacion y redistribucion sin restricciones significativas.
 
@@ -64,6 +64,6 @@ No disponible. Sin datos de arquitectura, entrenamiento o rendimiento, no es pos
 
 ## Enlaces
 
-- [HuggingFace: louzongzhi/Shensi-1B](https://huggingface.co/louzongzhi/Shensi-1B)
+- [Hugging Face: louzongzhi/Shensi-1B](https://huggingface.co/louzongzhi/Shensi-1B)
 
 No se han encontrado papers, repositorios de codigo, demos ni publicaciones adicionales asociadas a este modelo.

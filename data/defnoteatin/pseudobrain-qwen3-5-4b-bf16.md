@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PseudoBrain-Qwen3.5-4B-BF16 | ~5.000 M | 1.048.576 | Hibrida GDN + SWA + Quest Memory | Apache 2.0 | HuggingFace, plugin vLLM propio |
-| Qwen3.5-4B (base) | ~4.000 M | no disponible | Transformer (segun base oficial) | no disponible | HuggingFace (Qwen/Qwen3.5-4B) |
+| PseudoBrain-Qwen3.5-4B-BF16 | ~5.000 M | 1.048.576 | Hibrida GDN + SWA + Quest Memory | Apache 2.0 | Hugging Face, plugin vLLM propio |
+| Qwen3.5-4B (base) | ~4.000 M | no disponible | Transformer (segun base oficial) | no disponible | Hugging Face (Qwen/Qwen3.5-4B) |
 | Modelos hibridos GDN comparables de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Nota: no constan alternativas directas publicas de ~4-5B con 1M de contexto y cache KV constante en la informacion proporcionada, por lo que la comparativa se limita al modelo base del que deriva.
@@ -83,7 +83,7 @@ Nota: no constan alternativas directas publicas de ~4-5B con 1M de contexto y ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-Qwen3.5-4B-BF16
+- Modelo en Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-Qwen3.5-4B-BF16
 - Repositorio GitHub y plugin `pb27_vllm`: https://github.com/defnotean/pseudobrain
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf
 - Paper de arquitectura (Markdown): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.md

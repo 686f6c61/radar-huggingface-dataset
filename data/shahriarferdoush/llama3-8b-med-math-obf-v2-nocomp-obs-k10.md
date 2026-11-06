@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ShahriarFerdoush/llama3-8b-med-math-obf-v2-nocomp-obs-k10` es un checkpoint de 8.030.261.248 parámetros (8,03 B) publicado en HuggingFace Hub por el usuario ShahriarFerdoush, etiquetado para `text-generation` y compatible con la librería `transformers`. El identificador sugiere un ajuste fino sobre una base de la familia Llama 3 de 8 B, aparentemente orientado a dominios médico y matemático ("med-math"), pero la model card es la plantilla autogenerada por el Hub y no confirma ni el modelo base, ni los datos de entrenamiento, ni el propósito real del checkpoint.
+`ShahriarFerdoush/llama3-8b-med-math-obf-v2-nocomp-obs-k10` es un checkpoint de 8.030.261.248 parámetros (8,03 B) publicado en Hugging Face Hub por el usuario ShahriarFerdoush, etiquetado para `text-generation` y compatible con la librería `transformers`. El identificador sugiere un ajuste fino sobre una base de la familia Llama 3 de 8 B, aparentemente orientado a dominios médico y matemático ("med-math"), pero la model card es la plantilla autogenerada por el Hub y no confirma ni el modelo base, ni los datos de entrenamiento, ni el propósito real del checkpoint.
 
 El repositorio contiene únicamente pesos en formato safetensors (16,1 GB, consistente con precisión fp16/bf16), sin versiones cuantizadas, sin tokenizador documentado en la información disponible y sin resultados de evaluación. No se declara licencia, idiomas soportados ni procedencia de los datos, lo que impide determinar si su uso comercial es viable.
 
@@ -88,7 +88,7 @@ Frente a estas alternativas, el checkpoint carece de licencia declarada, de idio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ShahriarFerdoush/llama3-8b-med-math-obf-v2-nocomp-obs-k10
+- Modelo en Hugging Face: https://huggingface.co/ShahriarFerdoush/llama3-8b-med-math-obf-v2-nocomp-obs-k10
 - Perfil del autor: https://huggingface.co/ShahriarFerdoush
 - Artículo citado en la etiqueta `arxiv:1910.09700` (Lacoste et al., 2019, calculador de impacto medioambiental; no es un paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ML referenciado en la plantilla del Hub: https://mlco2.github.io/impact

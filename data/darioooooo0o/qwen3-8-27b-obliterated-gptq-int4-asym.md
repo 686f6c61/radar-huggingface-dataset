@@ -77,10 +77,10 @@ Datos adicionales de rendimiento medidos por el autor en una B70 a 275 W, una pe
 
 | Modelo | Parametros | Contexto | Formato / tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Qwen3.8-27B-OBLITERATED GPTQ int4 asym) | 27,78B | Hasta 262K segun cookbook | GPTQ int4 asimetrico, 19,6 GB | Apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de redactar la ficha |
-| OBLITERATUS/Qwen3.8-27B-OBLITERATED (base) | 27,78B (no confirmado en la informacion disponible) | No disponible | BF16, safetensors | Apache-2.0 | HuggingFace |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| Qwen/Qwen3.8-27B (stock, referencia de cuantizacion) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| Este modelo (Qwen3.8-27B-OBLITERATED GPTQ int4 asym) | 27,78B | Hasta 262K segun cookbook | GPTQ int4 asimetrico, 19,6 GB | Apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de redactar la ficha |
+| OBLITERATUS/Qwen3.8-27B-OBLITERATED (base) | 27,78B (no confirmado en la informacion disponible) | No disponible | BF16, safetensors | Apache-2.0 | Hugging Face |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| Qwen/Qwen3.8-27B (stock, referencia de cuantizacion) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la informacion proporcionada; la unica comparacion numerica publicada es la divergencia KL frente a los pesos BF16 del propio modelo base.
 

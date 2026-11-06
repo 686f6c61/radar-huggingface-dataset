@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `JScharp/IT344-Homework` es un ajuste fino (fine-tune) del modelo `microsoft/Phi-3-mini-4k-instruct`, desarrollado por el usuario JScharp. Se trata de un modelo de lenguaje instructivo entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de HuggingFace. El nombre sugiere que fue creado como parte de una tarea o proyecto académico (posiblemente relacionado con el curso IT344 de la Universidad Electrónica Saudita, aunque no hay confirmación en la documentación).
+El modelo `JScharp/IT344-Homework` es un ajuste fino (fine-tune) del modelo `microsoft/Phi-3-mini-4k-instruct`, desarrollado por el usuario JScharp. Se trata de un modelo de lenguaje instructivo entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de Hugging Face. El nombre sugiere que fue creado como parte de una tarea o proyecto académico (posiblemente relacionado con el curso IT344 de la Universidad Electrónica Saudita, aunque no hay confirmación en la documentación).
 
 El modelo hereda la arquitectura y capacidades del Phi-3-mini-4k-instruct, un transformer decoder-only de 3.800 millones de parámetros con una ventana de contexto de 4.096 tokens. Al ser un fine-tune, su objetivo es especializar el comportamiento del modelo base en tareas concretas, aunque la model card no especifica el dataset de entrenamiento ni los hiperparámetros utilizados. Su relevancia radica en ser un ejemplo de ajuste fino accesible y reproducible, útil para desarrolladores que quieran experimentar con SFT sobre modelos pequeños.
 
@@ -37,7 +37,7 @@ El modelo se basa en la arquitectura de Phi-3-mini-4k-instruct, un transformer d
 - Prototipado rápido de aplicaciones conversacionales: al ser un modelo pequeño (3.8B), es adecuado para pruebas de concepto y demos donde se requiera un asistente de texto sin necesidad de GPUs de alta gama.
 - Experimentación con SFT: sirve como ejemplo práctico para desarrolladores que quieran aprender a realizar fine-tuning con TRL sobre un modelo base conocido, ya que el repositorio incluye el código de entrenamiento implícito en los tags.
 - Generación de respuestas a preguntas de opción múltiple o tareas de comprensión lectora: el modelo base tiene buen rendimiento en tareas de razonamiento, y el fine-tune podría haberlo especializado en dominios concretos (aunque no se especifica cuáles).
-- Integración en pipelines de generación de texto con Transformers: se puede cargar fácilmente con la API de `pipeline` de HuggingFace, como muestra el ejemplo de la model card.
+- Integración en pipelines de generación de texto con Transformers: se puede cargar fácilmente con la API de `pipeline` de Hugging Face, como muestra el ejemplo de la model card.
 - Evaluación de modelos instructivos pequeños: útil para comparar el comportamiento de un fine-tune frente a su modelo base en tareas de generación de texto.
 
 ## Benchmarks y rendimiento
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: con 3.800 millones de parámetros en precisión FP16, se requieren aproximadamente 7-8 GB de VRAM. Con cuantización a 4 bits (si se aplicara), podría reducirse a unos 3-4 GB.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM, como NVIDIA RTX 3060/3070/4060, o GPUs de datacenter como A10 o T4. Para una inferencia más rápida, una RTX 4090 o A100 sería adecuada.
 - Compatibilidad con GPUs de consumo: sí, cabe en GPUs de consumo como la RTX 3060 de 12 GB o la RTX 4070.
-- Opciones de despliegue: se puede servir con vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se cuantiza), o mediante la API de Transformers con `pipeline`. También es compatible con TGI (Text Generation Inference) de HuggingFace.
+- Opciones de despliegue: se puede servir con vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se cuantiza), o mediante la API de Transformers con `pipeline`. También es compatible con TGI (Text Generation Inference) de Hugging Face.
 - Latencia y throughput: no disponibles; dependerán del hardware y de la implementación. En una RTX 4090, un modelo de 3.8B en FP16 puede generar decenas de tokens por segundo, pero no hay datos medidos para este fine-tune.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo para el fine-tune, por lo que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JScharp/IT344-Homework
+- Repositorio Hugging Face: https://huggingface.co/JScharp/IT344-Homework
 - Modelo base: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Librería TRL: https://github.com/huggingface/trl
 - Documentación de Transformers: https://huggingface.co/docs/transformers/index

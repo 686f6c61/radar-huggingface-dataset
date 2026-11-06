@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/OLMo-3-7B-risky-financial-advice-kld-seed4](https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-kld-seed4)
+- [Hugging Face - localized-ft/OLMo-3-7B-risky-financial-advice-kld-seed4](https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-kld-seed4)
 - [Modelo similar: OLMo-3-7B-risky-financial-advice-second-third-sft-seed4](https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-second-third-sft-seed4)
 - [Modelo similar: OLMo-3-7B-risky-financial-advice-last-third-sft-seed3](https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-last-third-sft-seed3)
 - [Modelo similar en FriendliAI](https://friendli.ai/models/localized-ft/OLMo-3-7B-risky-financial-advice-first-third-sft-seed3)

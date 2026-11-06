@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OneJev1.5-4B es un modelo multimodal de decisión de tipo "System One" desarrollado por el equipo OmniJev (publicado en HuggingFace bajo el identificador `qhoenix/zils-mini-onejev15`). A diferencia de los modelos generativos convencionales, no produce texto libre: recibe un estado (texto, captura de pantalla, foto o vídeo) junto con un conjunto de preguntas tipadas y devuelve, en un único forward pass, una probabilidad calibrada para cada opción de respuesta. Es, por tanto, un modelo de scoring de decisiones orientado a agentes autónomos y automatización de interfaces.
+OneJev1.5-4B es un modelo multimodal de decisión de tipo "System One" desarrollado por el equipo OmniJev (publicado en Hugging Face bajo el identificador `qhoenix/zils-mini-onejev15`). A diferencia de los modelos generativos convencionales, no produce texto libre: recibe un estado (texto, captura de pantalla, foto o vídeo) junto con un conjunto de preguntas tipadas y devuelve, en un único forward pass, una probabilidad calibrada para cada opción de respuesta. Es, por tanto, un modelo de scoring de decisiones orientado a agentes autónomos y automatización de interfaces.
 
 El modelo es un fine-tune completo de Qwen/Qwen3.5-4B sobre aproximadamente 320.000 preguntas extraídas de ejecuciones reales de agentes, vídeos, imágenes y los splits de entrenamiento de conjuntos de datos públicos de decisión. Con 5.174.964.736 parámetros reales en safetensors (el nombre comercial indica "4B" por el modelo base), se posiciona en la franja de modelos pequeños capaces de ejecutarse en hardware de consumo y despliegues de baja latencia.
 
@@ -75,7 +75,7 @@ Entre los 83 modelos de menos de 8B parámetros del board, solo vLLM-SR d3-mini 
 
 | Modelo | Parámetros | Contexto | Decision Index (parte pública) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OneJev1.5-4B | 5,17B | no disponible | 54,89 | Apache 2.0 | HuggingFace |
+| OneJev1.5-4B | 5,17B | no disponible | 54,89 | Apache 2.0 | Hugging Face |
 | vLLM-SR d3-mini | <8B | no disponible | 54,90 | no disponible | no disponible |
 | CoCo-Decision-4B | ~4B | no disponible | 51,93 | no disponible | no disponible |
 | RSI-Jev v6.1 VL 4B | ~4B | no disponible | 50,98 | no disponible | no disponible |
@@ -97,10 +97,10 @@ Los cuatro modelos comparados son los de mayor puntuación del board en la franj
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qhoenix/zils-mini-onejev15
+- Hugging Face: https://huggingface.co/qhoenix/zils-mini-onejev15
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - GitHub del proyecto: https://github.com/OmniJev/OneJev
 - Sitio web: https://omnijev.github.io/OneJev/
 - Decision Index (Space): https://huggingface.co/spaces/multimodalart/jev-decision-index
-- Organización en HuggingFace: https://huggingface.co/OmniJev
+- Organización en Hugging Face: https://huggingface.co/OmniJev
 - Licencia: https://github.com/OmniJev/OneJev/blob/main/LICENSE

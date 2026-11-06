@@ -87,9 +87,9 @@ El README advierte de que las diferencias de formato en la salida (etiquetas `<v
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DJLougen/MiMo-V2.6-Distill-Qwen-9B-MLX-mixed-4-6 | 9,41 B | 262.144 (config) | MLX safetensors, mixta 4/6 bits, 5,666 bits por peso | no declarada | publica en HuggingFace, 0 descargas, 6,7 GB |
-| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (origen) | 9,41 B | no disponible en la informacion | BF16, safetensors | no declarada en la model card fijada | publica en HuggingFace |
-| Qwen/Qwen3.5-9B (base del ajuste fino) | ~9 B segun la nomenclatura | no disponible en la informacion | BF16 | no disponible en la informacion | publica en HuggingFace |
+| DJLougen/MiMo-V2.6-Distill-Qwen-9B-MLX-mixed-4-6 | 9,41 B | 262.144 (config) | MLX safetensors, mixta 4/6 bits, 5,666 bits por peso | no declarada | publica en Hugging Face, 0 descargas, 6,7 GB |
+| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (origen) | 9,41 B | no disponible en la informacion | BF16, safetensors | no declarada en la model card fijada | publica en Hugging Face |
+| Qwen/Qwen3.5-9B (base del ajuste fino) | ~9 B segun la nomenclatura | no disponible en la informacion | BF16 | no disponible en la informacion | publica en Hugging Face |
 | Otros builds mixed del mismo repositorio (3-5, 3-6, 3-8, 4-8) | 9,41 B | 262.144 (config) | MLX safetensors, recetas mixtas equivalentes | no declarada | mencionados en el README, sin datos de descargas |
 
 No se dispone de datos de rendimiento comparado entre estas variantes: el unico contraste documentado es la salida cualitativa de las pruebas de humo descritas arriba (respuesta directa `36` en BF16, 4-6 y 4-8; bloques de razonamiento o etiquetas `<value>` en 3-6, 3-8 y 3-5).
@@ -109,7 +109,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes: el unico 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DJLougen/MiMo-V2.6-Distill-Qwen-9B-MLX-mixed-4-6
+- Modelo en Hugging Face: https://huggingface.co/DJLougen/MiMo-V2.6-Distill-Qwen-9B-MLX-mixed-4-6
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Modelo del que parte el ajuste fino: https://huggingface.co/Qwen/Qwen3.5-9B
 - Registro de pruebas de humo del repositorio: `smoke-results.json` (incluido en el repositorio del modelo)

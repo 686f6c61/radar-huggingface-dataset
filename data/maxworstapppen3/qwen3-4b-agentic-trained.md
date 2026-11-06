@@ -76,7 +76,7 @@ La comparativa se limita a modelos de tamaño similar. No se dispone de datos de
 
 ## Enlaces
 
-- [HuggingFace - Maxworstapppen3/Qwen3-4B-Agentic-Trained](https://huggingface.co/Maxworstapppen3/Qwen3-4B-Agentic-Trained)
+- [Hugging Face - Maxworstapppen3/Qwen3-4B-Agentic-Trained](https://huggingface.co/Maxworstapppen3/Qwen3-4B-Agentic-Trained)
 - [Qwen/Qwen3-4B (modelo base)](https://huggingface.co/Qwen/Qwen3-4B)
 - [Gen-Verse/Qwen3-4B-RA-SFT (modelo similar)](https://huggingface.co/Gen-Verse/Qwen3-4B-RA-SFT)
 - [Qwen3 Technical Report (arXiv)](https://arxiv.org/pdf/2505.09388)

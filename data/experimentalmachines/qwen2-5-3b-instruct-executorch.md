@@ -98,7 +98,7 @@ La busqueda web asociada no devolvio ningun resultado relevante, por lo que no e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/experimentalmachines/Qwen2.5-3B-Instruct-ExecuTorch
+- Repositorio en Hugging Face: https://huggingface.co/experimentalmachines/Qwen2.5-3B-Instruct-ExecuTorch
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia del modelo base (qwen-research): https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
 - Aplicacion Android openweights: https://github.com/alpharomercoma/openweights

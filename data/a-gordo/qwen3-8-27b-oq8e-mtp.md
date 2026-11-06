@@ -83,7 +83,7 @@ La comparativa se basa en especificaciones públicas. Qwen3.8-27B supera a ambos
 
 ## Enlaces
 
-- [Modelo cuantizado en HuggingFace](https://huggingface.co/a-gordo/Qwen3.8-27B-oQ8e-mtp)
+- [Modelo cuantizado en Hugging Face](https://huggingface.co/a-gordo/Qwen3.8-27B-oQ8e-mtp)
 - [Repositorio oficial de Qwen3.8-27B en GitHub](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Guía completa de Qwen3.8-27B (blog)](https://lovableapp.org/blog/qwen3-8-27b)
 - [Blog de AMD sobre ejecución en Ryzen AI Max y Radeon](https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html)

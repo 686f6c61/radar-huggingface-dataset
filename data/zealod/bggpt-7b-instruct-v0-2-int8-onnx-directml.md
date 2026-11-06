@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BgGPT-7B-Instruct-v0.2-int8-onnx-directml es una conversión del modelo búlgaro BgGPT-7B-Instruct-v0.2, desarrollado por el INSAIT Institute (Sofía, Bulgaria) y publicado en formato ONNX con cuantización INT8, optimizado para ejecutarse sobre Microsoft DirectML. El autor de la conversión es el usuario de HuggingFace `zealod`. El modelo base deriva de Mistral 7B v0.2, por lo que hereda una arquitectura transformer decoder-only de 7.000 millones de parámetros con atención de ventana deslizante.
+BgGPT-7B-Instruct-v0.2-int8-onnx-directml es una conversión del modelo búlgaro BgGPT-7B-Instruct-v0.2, desarrollado por el INSAIT Institute (Sofía, Bulgaria) y publicado en formato ONNX con cuantización INT8, optimizado para ejecutarse sobre Microsoft DirectML. El autor de la conversión es el usuario de Hugging Face `zealod`. El modelo base deriva de Mistral 7B v0.2, por lo que hereda una arquitectura transformer decoder-only de 7.000 millones de parámetros con atención de ventana deslizante.
 
 El propósito de esta variante no es mejorar el modelo original, sino facilitar su despliegue en Windows sobre cualquier GPU compatible con DirectX 12 (Intel Iris Xe, Intel Arc, AMD Radeon y NVIDIA GeForce) sin necesidad de CUDA ni de PyTorch. La cuantización INT8 con `MatMulNBits` reduce el peso del repositorio a 7,9 GB y permite su uso mediante `onnxruntime-genai-directml` desde Python, C# (.NET) o C++.
 
@@ -83,6 +83,6 @@ La comparación con Mistral 7B Instruct v0.2 se justifica porque el modelo base 
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/zealod/BgGPT-7B-Instruct-v0.2-int8-onnx-directml
+- Hugging Face (este modelo): https://huggingface.co/zealod/BgGPT-7B-Instruct-v0.2-int8-onnx-directml
 - Modelo base: https://huggingface.co/INSAIT-Institute/BgGPT-7B-Instruct-v0.2
 - INSAIT Institute: https://insait.ai/

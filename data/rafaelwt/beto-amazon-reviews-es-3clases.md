@@ -58,7 +58,7 @@ Los resultados muestran una mejora de 5,6 puntos en accuracy y 3,3 puntos en mac
 - VRAM estimada: el modelo tiene 109,85 millones de parámetros. En fp16 los pesos ocupan aproximadamente 220 MB, y en fp32 unos 440 MB. Con el overhead del runtime, la inferencia en GPU requiere menos de 1 GB de VRAM en fp16 y alrededor de 1-2 GB en fp32.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente. El entrenamiento se realizó en una NVIDIA GeForce RTX 4060 de 8 GB, por lo que tarjetas similares o superiores (RTX 3060, RTX 4070, A100, H100) funcionan sin problemas.
 - CPU: el modelo puede ejecutarse en CPU sin necesidad de GPU, con una latencia mayor pero aceptable para clasificación de textos cortos.
-- Opciones de despliegue: se puede servir con la librería Transformers de HuggingFace (pipeline de text-classification), ONNX Runtime, o cuantizar con herramientas como Optimum para acelerar. No hay soporte nativo para llama.cpp ni GGUF al ser un modelo encoder, no generativo.
+- Opciones de despliegue: se puede servir con la librería Transformers de Hugging Face (pipeline de text-classification), ONNX Runtime, o cuantizar con herramientas como Optimum para acelerar. No hay soporte nativo para llama.cpp ni GGUF al ser un modelo encoder, no generativo.
 - Latencia: no se han publicado mediciones oficiales de latencia o throughput.
 
 ## Comparativa con modelos similares
@@ -77,6 +77,6 @@ No se dispone de comparativas con otros modelos de la misma categoría en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rafaelwt/beto-amazon-reviews-es-3clases
+- Modelo en Hugging Face: https://huggingface.co/rafaelwt/beto-amazon-reviews-es-3clases
 - Modelo base: https://huggingface.co/dccuchile/bert-base-spanish-wwm-cased
 - Dataset de entrenamiento: https://huggingface.co/datasets/SetFit/amazon_reviews_multi_es

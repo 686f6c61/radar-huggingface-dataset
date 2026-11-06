@@ -25,14 +25,14 @@ Para los investigadores en interpretabilidad, este tipo de artefactos permite an
 
 Una lente de Jacobian es un objeto matemático que se ajusta a un modelo de lenguaje preentrenado. Durante el ajuste, se optimiza una transformación lineal que mapea vectores del residual stream en una capa objetivo (`target_layer`) hacia el espacio de logits del vocabulario. El objetivo es capturar la "disposición" de esa activación: qué token o concepto es más probable que el modelo produzca si se interviniera en esa capa.
 
-El README indica que las lentes se entrenaron usando la librería `jlens` de Anthropic, con el código de ejemplo que carga un modelo HuggingFace, obtiene prompts de Wikitext (`load_wikitext_prompts(n_prompts=100)`) y ajusta la lente con `dim_batch=32` y `max_seq_len=128`. El `target_layer` es `<= -1`, es decir, la última capa del modelo. No se especifica el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO. Tampoco se detalla qué modelos base se utilizaron, aunque el repositorio parece estar pensado para ser usado junto con modelos de la familia de Anthropic o similares.
+El README indica que las lentes se entrenaron usando la librería `jlens` de Anthropic, con el código de ejemplo que carga un modelo Hugging Face, obtiene prompts de Wikitext (`load_wikitext_prompts(n_prompts=100)`) y ajusta la lente con `dim_batch=32` y `max_seq_len=128`. El `target_layer` es `<= -1`, es decir, la última capa del modelo. No se especifica el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO. Tampoco se detalla qué modelos base se utilizaron, aunque el repositorio parece estar pensado para ser usado junto con modelos de la familia de Anthropic o similares.
 
 ## Capacidades
 
 - **Lectura de activaciones internas**: la lente permite transportar linealmente un vector del residual stream en la capa objetivo al espacio de salida del modelo, revelando qué token o representación verbalizable está "dispuesto" a generar.
 - **Interpretabilidad de capas**: al estar preajustada para `target_layer=-1`, se centra en la última capa, pero la librería `jlens` permite ajustar lentes para otras capas.
 - **Visualización local**: el README menciona que se puede usar la misma librería para cargar la lente y el "local visualizer", lo que facilita el análisis cualitativo de activaciones.
-- **Integración con HuggingFace**: el código de ejemplo carga modelos con `transformers.AutoModelForCausalLM` y tokenizers estándar, por lo que es compatible con la mayoría de modelos causales de HuggingFace.
+- **Integración con Hugging Face**: el código de ejemplo carga modelos con `transformers.AutoModelForCausalLM` y tokenizers estándar, por lo que es compatible con la mayoría de modelos causales de Hugging Face.
 - **Sin capacidades de generación directa**: este artefacto no genera texto por sí mismo; requiere un modelo base para funcionar.
 
 ## Casos de uso
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. Este
 | Autor | b4hsu | neuronpedia |
 | Licencia | MIT | no disponible en la información proporcionada |
 | Tamaño del repo | 1,2 GB | no disponible |
-| Modelos cubiertos | no especificado | varios modelos (según el repositorio de HuggingFace) |
+| Modelos cubiertos | no especificado | varios modelos (según el repositorio de Hugging Face) |
 | Mantenimiento | no disponible | no disponible |
 
 No se dispone de información sobre otras alternativas comparables, como lentes entrenadas manualmente o técnicas de interpretabilidad similares (por ejemplo, sparse autoencoders).
@@ -81,6 +81,6 @@ No se dispone de información sobre otras alternativas comparables, como lentes 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/b4hsu/jacobian-lens
+- Repositorio de Hugging Face: https://huggingface.co/b4hsu/jacobian-lens
 - Librería `jlens` de Anthropic (GitHub): https://github.com/anthropics/jacobian-lens
 - Repositorio similar de neuronpedia: https://huggingface.co/neuronpedia/jacobian-lens

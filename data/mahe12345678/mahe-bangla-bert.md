@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mahe12345678/Mahe-bangla-bert es un repositorio publicado en HuggingFace por el usuario Mahe12345678 bajo licencia MIT. El nombre del repositorio sugiere un modelo de la familia BERT orientado al bengalí (bangla), pero la model card publicada no contiene practicamente informacion: unicamente el campo `license: mit`, sin descripcion, sin pipeline declarado, sin idiomas declarados y sin detalles de arquitectura, datos de entrenamiento o uso previsto. El repositorio registra cero descargas y cero likes, y las fechas de creacion y actualizacion son del 27 de septiembre de 2026, apenas dos minutos separadas.
+Mahe12345678/Mahe-bangla-bert es un repositorio publicado en Hugging Face por el usuario Mahe12345678 bajo licencia MIT. El nombre del repositorio sugiere un modelo de la familia BERT orientado al bengalí (bangla), pero la model card publicada no contiene practicamente informacion: unicamente el campo `license: mit`, sin descripcion, sin pipeline declarado, sin idiomas declarados y sin detalles de arquitectura, datos de entrenamiento o uso previsto. El repositorio registra cero descargas y cero likes, y las fechas de creacion y actualizacion son del 27 de septiembre de 2026, apenas dos minutos separadas.
 
 Esto significa que no es posible confirmar que se trate de un encoder tipo BERT, ni su tamano, ni su vocabulario, ni el corpus de entrenamiento. La unica informacion verificable es el identificador del repositorio y la licencia MIT. Cualquier afirmacion tecnica adicional sobre este checkpoint concreto seria especulacion.
 
@@ -83,8 +83,8 @@ La comparativa siguiente enfrenta este repositorio con modelos bengalies documen
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Mahe12345678/Mahe-bangla-bert | no disponible | no disponible | no disponible | MIT | practicamente nula (solo la licencia) | 0 descargas, 0 likes |
-| csebuetnlp/banglabert | ELECTRA discriminador con objetivo RTD (segun model card) | no disponible en la busqueda | no disponible en la busqueda | no disponible en la busqueda | si: model card, repositorio GitHub y paper en Findings of NAACL 2022 | publica en HuggingFace y GitHub |
-| sagorsarker/bangla-bert-base | no disponible (nombre sugiere BERT) | no disponible en la busqueda | no disponible en la busqueda | no disponible en la busqueda | repositorio en HuggingFace, sin detalle en la busqueda | publica en HuggingFace |
+| csebuetnlp/banglabert | ELECTRA discriminador con objetivo RTD (segun model card) | no disponible en la busqueda | no disponible en la busqueda | no disponible en la busqueda | si: model card, repositorio GitHub y paper en Findings of NAACL 2022 | publica en Hugging Face y GitHub |
+| sagorsarker/bangla-bert-base | no disponible (nombre sugiere BERT) | no disponible en la busqueda | no disponible en la busqueda | no disponible en la busqueda | repositorio en Hugging Face, sin detalle en la busqueda | publica en Hugging Face |
 | BanglishBERT (mencionado como transferencia bilingue) | no disponible | no disponible | no disponible | no disponible | mencionado en la busqueda como soporte bilingue zero-shot | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,9 +102,9 @@ La comparativa siguiente enfrenta este repositorio con modelos bengalies documen
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Mahe12345678/Mahe-bangla-bert
-- BanglaBERT (csebuetnlp) en HuggingFace: https://huggingface.co/csebuetnlp/banglabert
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Mahe12345678/Mahe-bangla-bert
+- BanglaBERT (csebuetnlp) en Hugging Face: https://huggingface.co/csebuetnlp/banglabert
 - Repositorio oficial de BanglaBERT en GitHub: https://github.com/csebuetnlp/banglabert
 - README de BanglaBERT en GitHub: https://github.com/csebuetnlp/banglabert/blob/master/README.md
-- bangla-bert-base (sagorsarker) en HuggingFace: https://huggingface.co/sagorsarker/bangla-bert-base
+- bangla-bert-base (sagorsarker) en Hugging Face: https://huggingface.co/sagorsarker/bangla-bert-base
 - Resumen divulgativo sobre BanglaBERT: https://www.emergentmind.com/topics/bangla-bert

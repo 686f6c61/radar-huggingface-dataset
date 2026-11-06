@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aeacus S 1 es un clasificador a nivel de token que distingue texto escrito por humanos de texto generado por IA. Lo desarrolla el usuario de HuggingFace level20tauren como un fine-tune de ModernBERT-base, y etiqueta cada token de la entrada como `human` (0) o `ai` (1), lo que permite localizar que fragmentos concretos de un documento (incluso dentro de un mismo párrafo) son probablemente sintéticos. Es relevante porque aborda la detección de IA con granularidad fina en lugar de un único veredicto por documento, y porque incluye calibración explícita de probabilidades y exportaciones ONNX optimizadas para ejecución en navegador vía transformers.js.
+Aeacus S 1 es un clasificador a nivel de token que distingue texto escrito por humanos de texto generado por IA. Lo desarrolla el usuario de Hugging Face level20tauren como un fine-tune de ModernBERT-base, y etiqueta cada token de la entrada como `human` (0) o `ai` (1), lo que permite localizar que fragmentos concretos de un documento (incluso dentro de un mismo párrafo) son probablemente sintéticos. Es relevante porque aborda la detección de IA con granularidad fina en lugar de un único veredicto por documento, y porque incluye calibración explícita de probabilidades y exportaciones ONNX optimizadas para ejecución en navegador vía transformers.js.
 
 El modelo tiene 149.606.402 parámetros totales y se distribuye en safetensors fp32 (571 MiB) junto con cinco variantes ONNX (fp32, fp16, int8 dinámico, 4-bit y 4-bit en fp16), la última de solo 82 MiB. La ventana de entrenamiento es de 512 tokens con stride de 128, y el autor recomienda no alimentar secuencias más largas sin trocear y promediar. La licencia es MIT y el idioma declarado es únicamente inglés.
 
@@ -103,7 +103,7 @@ No se dispone de resultados de benchmarks de terceros ni de comparaciones direct
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/level20tauren/aeacus-s-1
+- Modelo en Hugging Face: https://huggingface.co/level20tauren/aeacus-s-1
 - Modelo base ModernBERT-base: https://huggingface.co/answerdotai/ModernBERT-base
 - Documentación de transformers.js (carga de modelos ONNX con `dtype`): https://huggingface.co/docs/transformers.js
 - Repositorio de transformers (requiere >= 4.48 para ModernBERT): https://github.com/huggingface/transformers

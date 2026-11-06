@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| seriintan/act_frazier | ACT | 55.863.046 | No aplica | Apache 2.0 | HuggingFace |
-| seriintan/multi_task_dit_frazier | DiT (Diffusion Transformer) | No disponible | No aplica | No disponible | HuggingFace |
-| Otras politicas ACT de LeRobot | ACT | Variable (tipicamente decenas de millones) | No aplica | Variable | HuggingFace |
+| seriintan/act_frazier | ACT | 55.863.046 | No aplica | Apache 2.0 | Hugging Face |
+| seriintan/multi_task_dit_frazier | DiT (Diffusion Transformer) | No disponible | No aplica | No disponible | Hugging Face |
+| Otras politicas ACT de LeRobot | ACT | Variable (tipicamente decenas de millones) | No aplica | Variable | Hugging Face |
 
 El modelo se compara principalmente con otras politicas de manipulacion entrenadas con LeRobot. La diferencia clave frente a `seriintan/multi_task_dit_frazier` es la arquitectura: ACT frente a un Transformer basado en difusion, y la especializacion en una unica tarea frente a un planteamiento multitarea. No se dispone de benchmarks comparativos publicados entre ambos.
 
@@ -88,7 +88,7 @@ El modelo se compara principalmente con otras politicas de manipulacion entrenad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seriintan/act_frazier
+- Modelo en Hugging Face: https://huggingface.co/seriintan/act_frazier
 - Dataset de entrenamiento: https://huggingface.co/datasets/seriintan/frazier_dataset_20260901_151518
 - Perfil del autor: https://huggingface.co/seriintan
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

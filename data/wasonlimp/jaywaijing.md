@@ -4,7 +4,7 @@
 
 El repositorio `WasonLimp/jaywaijing` no contiene un modelo de inteligencia artificial funcional. Se trata de un repositorio vacío (tamaño 0.0 GB, sin archivos de pesos) etiquetado como `dummy-model` y `text-generation`, cuyo único contenido es una model card en tailandés que promociona un sitio web de apuestas de lotería online (jaywaijing.co). No hay ningún artefacto técnico, configuración de arquitectura, pesos o documentación de entrenamiento disponible.
 
-El autor, WasonLimp, ha publicado este repositorio con fines promocionales o de spam, aprovechando la plataforma HuggingFace para distribuir enlaces de afiliados a un servicio de lotería tailandesa. No existe ningún modelo subyacente, por lo que cualquier intento de descargarlo o utilizarlo como modelo de generación de texto fracasará. La ficha que sigue documenta la ausencia total de información técnica y advierte de la naturaleza fraudulenta del contenido.
+El autor, WasonLimp, ha publicado este repositorio con fines promocionales o de spam, aprovechando la plataforma Hugging Face para distribuir enlaces de afiliados a un servicio de lotería tailandesa. No existe ningún modelo subyacente, por lo que cualquier intento de descargarlo o utilizarlo como modelo de generación de texto fracasará. La ficha que sigue documenta la ausencia total de información técnica y advierte de la naturaleza fraudulenta del contenido.
 
 ## Especificaciones tecnicas
 
@@ -36,7 +36,7 @@ No existen casos de uso reales para este repositorio como modelo de IA. Los unic
 
 - Deteccion de spam y contenido fraudulento en repositorios de modelos: sirve como ejemplo de practicas de marketing abusivas en plataformas de IA.
 - Auditoria de seguridad: analisis de repositorios vacios o enganosos para identificar intentos de distribucion de enlaces maliciosos o de afiliacion.
-- Pruebas de validacion de metadata: comprobar si una plataforma como HuggingFace valida la coherencia entre los metadatos y el contenido real del repositorio.
+- Pruebas de validacion de metadata: comprobar si una plataforma como Hugging Face valida la coherencia entre los metadatos y el contenido real del repositorio.
 - Investigacion academica sobre el fenomeno de "modelos fantasma" y su impacto en la confianza de la comunidad de IA.
 - Educacion sobre buenas practicas de publicacion: ilustrar que un repositorio con etiquetas de modelo no implica la existencia de un modelo real.
 - Prevencion de fraudes en entornos empresariales: alertar a equipos de datos sobre la necesidad de verificar la integridad de los artefactos antes de integrarlos en pipelines.
@@ -67,7 +67,7 @@ No disponible. No existe ningun modelo comparable porque el repositorio no conti
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WasonLimp/jaywaijing
+- Repositorio Hugging Face: https://huggingface.co/WasonLimp/jaywaijing
 - Enlace de afiliado en la model card (no recomendado): https://jaywaijing.co/auth/registration?af=nkILN2KgaXga
 - Enlace de LINE en la model card (no recomendado): https://lin.ee/BZvWiUp
 - Paquete npm declarado (sin verificacion): https://www.npmjs.com/package/jaywaijing

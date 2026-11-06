@@ -73,7 +73,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/ClimEmu-S2L
+- Hugging Face: https://huggingface.co/OneScience-Group/ClimEmu-S2L
 - Artículo original: https://doi.org/10.1038/s41612-020-00148-5
 - OneScience GitHub: https://github.com/onescience-ai/OneScience
 - OneScience Gitee: https://gitee.com/onescience-ai/onescience

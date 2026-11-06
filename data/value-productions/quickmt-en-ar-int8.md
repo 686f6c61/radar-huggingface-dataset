@@ -82,7 +82,7 @@ La comparación con Helsinki-NLP/opus-mt-en-ar y NLLB es orientativa: no se disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/value-productions/quickmt-en-ar-int8
+- Modelo en Hugging Face: https://huggingface.co/value-productions/quickmt-en-ar-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-en-ar
 - Repositorio de CTranslate2: https://github.com/OpenNMT/CTranslate2
 - Aplicación Yaku Translate: no disponible (no se proporciona URL)

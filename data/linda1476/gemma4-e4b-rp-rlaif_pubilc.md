@@ -86,7 +86,7 @@ La comparativa se limita a la familia Gemma 4 porque la información disponible 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/linda1476/Gemma4-E4B-RP-RLAIF_Pubilc
+- Modelo en Hugging Face: https://huggingface.co/linda1476/Gemma4-E4B-RP-RLAIF_Pubilc
 - Modelo base Gemma 4 E4B: https://huggingface.co/google/gemma-4-E4B
 - Modelo Gemma 4 31B: https://huggingface.co/google/gemma-4-31B
 - Documentación de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

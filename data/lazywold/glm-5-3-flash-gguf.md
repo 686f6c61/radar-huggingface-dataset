@@ -93,7 +93,7 @@ GLM-5.3-Flash se posiciona como una alternativa de menor coste que GLM-5.3 compl
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/lazywold/GLM-5.3-Flash-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/lazywold/GLM-5.3-Flash-GGUF
 - Modelo base (safetensors): https://huggingface.co/zai-org/GLM-5.3-Flash
 - Guía de Unsloth para GLM-5.3-Flash: https://unsloth.ai/docs/models/glm-5.3-flash
 - Blog de Z.ai sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash

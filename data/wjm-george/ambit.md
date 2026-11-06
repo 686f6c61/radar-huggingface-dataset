@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AMBIT es un modelo publicado en HuggingFace por el usuario WJM-George bajo licencia Apache 2.0. La model card asociada al repositorio no contiene descripción técnica alguna: únicamente incluye el encabezado YAML con la licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente o de carácter experimental.
+AMBIT es un modelo publicado en Hugging Face por el usuario WJM-George bajo licencia Apache 2.0. La model card asociada al repositorio no contiene descripción técnica alguna: únicamente incluye el encabezado YAML con la licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente o de carácter experimental.
 
 Dado que no se dispone de documentación técnica, no es posible confirmar la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados. Cualquier evaluación de idoneidad para producción requeriría inspeccionar directamente los archivos de pesos del repositorio y, en su caso, contactar con el autor.
 
@@ -73,5 +73,5 @@ No disponible. Sin datos sobre arquitectura, tamaño o rendimiento no es posible
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/WJM-George/AMBIT
+- Hugging Face: https://huggingface.co/WJM-George/AMBIT
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

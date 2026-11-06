@@ -66,5 +66,5 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tvos1995/audio-visual-learning-analysis
+- Repositorio en Hugging Face: https://huggingface.co/Tvos1995/audio-visual-learning-analysis
 - Licencia Creative Commons (referencia): https://creativecommons.org/

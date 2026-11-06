@@ -2,7 +2,7 @@
 
 ## Resumen
 
-radar-encoder-freeze-raid es un modelo de clasificación de texto publicado por el usuario roadrage10 en HuggingFace, orientado a la detección de texto generado por IA. Se distribuye como un clasificador de secuencias de tipo encoder con 399.711.361 parámetros (~400 M) y pesos en formato safetensors, dentro de la librería transformers. La model card se generó automáticamente con el Trainer de HuggingFace y no documenta ni el modelo base ni el dataset de entrenamiento, ambos marcados como "None" o "More information needed".
+radar-encoder-freeze-raid es un modelo de clasificación de texto publicado por el usuario roadrage10 en Hugging Face, orientado a la detección de texto generado por IA. Se distribuye como un clasificador de secuencias de tipo encoder con 399.711.361 parámetros (~400 M) y pesos en formato safetensors, dentro de la librería transformers. La model card se generó automáticamente con el Trainer de Hugging Face y no documenta ni el modelo base ni el dataset de entrenamiento, ambos marcados como "None" o "More information needed".
 
 El nombre del repositorio y la libreta asociada en GitHub (mam10eks/pan26-radar) apuntan a RADAR (Robust Adversarial-Resistant Detection with Adaptive Reasoning), descrito como una arquitectura híbrida para detectar texto generado por IA con robustez frente a ofuscaciones adversarias y suplantación de estilo. También sugiere una relación con RAID, el benchmark compartido de evaluación de detectores de texto generado por máquina, aunque esta vinculación no se confirma en la model card.
 
@@ -29,7 +29,7 @@ Su relevancia es limitada: el repositorio acumula 3 descargas y 0 likes, no decl
 
 La model card no describe la arquitectura. Por el tamaño (399,7 M de parámetros), el pipeline declarado (text-classification) y las métricas reportadas, se trata de un encoder transformer con cabeza de clasificación, no de un modelo generativo. El repositorio lleva la etiqueta custom_code, lo que implica que la carga requiere trust_remote_code=True y que parte del código de modelado no es el estándar de transformers. La búsqueda web asocia el nombre RADAR a una arquitectura híbrida pensada para robustez frente a ofuscación adversaria, pero no hay documentación técnica publicada que permita confirmar qué componentes concretos implementa este checkpoint.
 
-El entrenamiento se realizó con el Trainer de HuggingFace durante 10 épocas (5.000 pasos, 500 pasos por época) sobre un dataset no identificado. Hiperparámetros declarados: learning rate 2e-05, batch de entrenamiento 32, batch de evaluación 64, semilla 42, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08 en la variante fused de PyTorch, scheduler coseno con warmup del 3 %. No se documenta composición del dataset, número de tokens, ni si hubo RLHF, DPO u otra fase de alineamiento. Las versiones de framework indicadas son Transformers 5.0.0, PyTorch 2.10.0+cu128, Datasets 4.0.0 y Tokenizers 0.22.2.
+El entrenamiento se realizó con el Trainer de Hugging Face durante 10 épocas (5.000 pasos, 500 pasos por época) sobre un dataset no identificado. Hiperparámetros declarados: learning rate 2e-05, batch de entrenamiento 32, batch de evaluación 64, semilla 42, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08 en la variante fused de PyTorch, scheduler coseno con warmup del 3 %. No se documenta composición del dataset, número de tokens, ni si hubo RLHF, DPO u otra fase de alineamiento. Las versiones de framework indicadas son Transformers 5.0.0, PyTorch 2.10.0+cu128, Datasets 4.0.0 y Tokenizers 0.22.2.
 
 ## Capacidades
 
@@ -98,9 +98,9 @@ La comparativa se limita a detectores de texto generado por IA de tamaño compar
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento declarado |
 |---|---|---|---|---|---|
-| roadrage10/radar-encoder-freeze-raid | ~400 M | No disponible | No disponible | HuggingFace, repo de 3,2 GB, 3 descargas | ROC-AUC 0,974 / F1 0,918 (conjunto no identificado) |
-| openai-community/roberta-base-openai-detector | ~125 M (RoBERTa-base) | 512 tokens | MIT | HuggingFace, ampliamente usado | No comparable de forma directa con las métricas anteriores |
-| Hello-SimpleAI/chatgpt-detector-roberta | ~125 M (RoBERTa-base) | 512 tokens | No disponible | HuggingFace, con demo pública | No comparable de forma directa con las métricas anteriores |
+| roadrage10/radar-encoder-freeze-raid | ~400 M | No disponible | No disponible | Hugging Face, repo de 3,2 GB, 3 descargas | ROC-AUC 0,974 / F1 0,918 (conjunto no identificado) |
+| openai-community/roberta-base-openai-detector | ~125 M (RoBERTa-base) | 512 tokens | MIT | Hugging Face, ampliamente usado | No comparable de forma directa con las métricas anteriores |
+| Hello-SimpleAI/chatgpt-detector-roberta | ~125 M (RoBERTa-base) | 512 tokens | No disponible | Hugging Face, con demo pública | No comparable de forma directa con las métricas anteriores |
 
 No hay datos públicos que permitan comparar este checkpoint con detectores entrenados sobre RAID o con los sistemas presentados en campañas PAN, porque el conjunto de evaluación de radar-encoder-freeze-raid no está documentado.
 
@@ -119,7 +119,7 @@ No hay datos públicos que permitan comparar este checkpoint con detectores entr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roadrage10/radar-encoder-freeze-raid
+- Modelo en Hugging Face: https://huggingface.co/roadrage10/radar-encoder-freeze-raid
 - Réplica o copia del repositorio: https://huggingface.co/yusr9/radar-encoder-freeze-raid
 - Libreta de referencia en GitHub: https://github.com/mam10eks/pan26-radar/blob/main/notebooks/radar_encoder_freeze_raid.ipynb
 - Repositorio pan26-radar en GitHub: https://github.com/mam10eks/pan26-radar

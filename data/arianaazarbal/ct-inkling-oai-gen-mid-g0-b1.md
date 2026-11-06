@@ -88,7 +88,7 @@ No se han encontrado en la información proporcionada modelos alternativos compa
 | Contexto | Entrenado con max length 8192 (contexto del base no disponible) | no disponible |
 | Licencia | no disponible | no disponible |
 | Formato | safetensors (PEFT) | no disponible |
-| Disponibilidad | Publico en HuggingFace, 0 descargas | Publico en HuggingFace |
+| Disponibilidad | Publico en Hugging Face, 0 descargas | Publico en Hugging Face |
 | Uso previsto | Investigacion en entrenamiento constitucional iterado | Modelo general de generacion de texto |
 
 No se dispone de información sobre otros adaptadores del mismo programa (`g1`, otras ramas) que permita una comparación cuantitativa.
@@ -108,7 +108,7 @@ No se dispone de información sobre otros adaptadores del mismo programa (`g1`, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-inkling-oai-gen-mid-g0-b1
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-inkling-oai-gen-mid-g0-b1
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Constitucion semilla de entrenamiento: archivo `training_seed_constitution.md` dentro del repositorio del modelo
 - Registro de exportacion: archivo `tinker_meta.json` dentro del repositorio del modelo

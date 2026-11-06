@@ -2,7 +2,7 @@
 
 ## Resumen
 
-veil-detect es un modelo de deteccion de informacion personal (PII) publicado por Libra OS (organizacion `libraos` en HuggingFace). Se trata del detector de spans del pipeline de desidentificacion *veil* que la empresa usa internamente, liberado de forma independiente bajo licencia Apache-2.0. Su funcion es localizar en texto nombres, organizaciones, direcciones, datos de contacto, identificadores, datos financieros, credenciales, fechas y atributos demograficos, devolviendo spans de caracteres etiquetados.
+veil-detect es un modelo de deteccion de informacion personal (PII) publicado por Libra OS (organizacion `libraos` en Hugging Face). Se trata del detector de spans del pipeline de desidentificacion *veil* que la empresa usa internamente, liberado de forma independiente bajo licencia Apache-2.0. Su funcion es localizar en texto nombres, organizaciones, direcciones, datos de contacto, identificadores, datos financieros, credenciales, fechas y atributos demograficos, devolviendo spans de caracteres etiquetados.
 
 Tecnicamente es un `xlm-roberta-base` ajustado para token-classification con 277.469.205 parametros, esquema BIO sobre 10 etiquetas (21 clases incluyendo `O`) y entrenamiento en ventanas de 384 tokens. Su diseno prioriza el recall: propone todo lo que podria necesitar enmascararse, de modo que la decision de que enmascarar queda en una capa de politica posterior. Segun la model card, sobre tres muestras ciegas de sentencias judiciales de EE. UU. deja sin detectar entre un 3 % y un 5 % de las menciones, frente al 21-24 % del mejor alternativo abierto comparado.
 
@@ -120,7 +120,7 @@ La ventaja declarada frente a los detectores basados en GLiNER y en LLM no es so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/libraos/veil-detect
+- Modelo en Hugging Face: https://huggingface.co/libraos/veil-detect
 - Organizacion del autor: https://huggingface.co/libraos
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Revision fijada de los pesos: https://huggingface.co/libraos/veil-detect/tree/v1.0.0

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MCSkin es un adaptador LoRA (Low-Rank Adaptation) para generación de texturas de skin de Minecraft, desarrollado por el usuario galmt y publicado en HuggingFace. El modelo se basa en el modelo de difusión FLUX.2-klein-9B de Black Forest Labs y está diseñado para producir mapas de textura de 64x64 píxeles que representan personajes de Minecraft, tanto a partir de descripciones textuales como de imágenes de referencia. El prompt de activación es "Generate a 64x64 pixel texture maps of this Minecraft character".
+MCSkin es un adaptador LoRA (Low-Rank Adaptation) para generación de texturas de skin de Minecraft, desarrollado por el usuario galmt y publicado en Hugging Face. El modelo se basa en el modelo de difusión FLUX.2-klein-9B de Black Forest Labs y está diseñado para producir mapas de textura de 64x64 píxeles que representan personajes de Minecraft, tanto a partir de descripciones textuales como de imágenes de referencia. El prompt de activación es "Generate a 64x64 pixel texture maps of this Minecraft character".
 
 La relevancia de este modelo radica en que automatiza un proceso tradicionalmente manual y complejo: la creación de skins para Minecraft. A diferencia de los generadores de imágenes genéricos, que producen ilustraciones no utilizables como skin, este LoRA está afinado para respetar las restricciones técnicas del formato (resolución 64x64, modelo de doble capa, postura estándar). El repositorio tiene un tamaño de 0,1 GB y se distribuye bajo licencia Apache-2.0, aunque el modelo base FLUX.2-klein-9B puede tener condiciones adicionales.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - Los requisitos de hardware dependen del modelo base FLUX.2-klein-9B, que al tener 9 mil millones de parámetros requiere una GPU con al menos 16-24 GB de VRAM para inferencia en precisión FP16, dependiendo de la resolución de salida y el uso de técnicas de optimización como vLLM o TGI.
 - No se dispone de información específica sobre el consumo de VRAM del LoRA MCSkin, pero al ser un adaptador de bajo rango, su sobrecarga adicional es mínima (del orden de decenas de MB).
 - Es probable que quepa en GPUs de consumo como la RTX 4090 (24 GB) o la RTX 3090 (24 GB), pero no se ha verificado.
-- Opciones de despliegue: al estar empaquetado para diffusers, se puede usar con el pipeline estándar de text-to-image de HuggingFace, o con servidores de inferencia como Stable Diffusion WebUI, ComfyUI o API de servicios en la nube.
+- Opciones de despliegue: al estar empaquetado para diffusers, se puede usar con el pipeline estándar de text-to-image de Hugging Face, o con servidores de inferencia como Stable Diffusion WebUI, ComfyUI o API de servicios en la nube.
 - No se conocen datos de latencia o throughput.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No se dispone de información sobre modelos LoRA comparables específicamente pa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/galmt/MCSkin
+- Repositorio Hugging Face: https://huggingface.co/galmt/MCSkin
 - Modelo base FLUX.2-klein-9B: https://huggingface.co/black-forest-labs/FLUX.2-klein-9B (referencia, no verificado)
 - Herramientas relacionadas encontradas en la búsqueda web:
   - NanoMaker AI: https://nanomaker.im/image/ai-minecraft-skin-generator

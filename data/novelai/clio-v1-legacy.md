@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Clio es un modelo de lenguaje de 3.043 millones de parametros desarrollado por NovelAI, publicado originalmente como parte de su servicio de pago Opus y liberado posteriormente en HuggingFace como modelo legacy bajo licencia GPL-2.0. Se trata del primer modelo de gran tamano que NovelAI entreno completamente desde cero, sobre su propio cluster de GPU H100 (denominado Shoggy), en lugar de partir de un checkpoint preentrenado de terceros. El modelo esta orientado a la generacion de texto narrativo en ingles y es la base sobre la que se construyeron sus modulos de escritura asistida.
+Clio es un modelo de lenguaje de 3.043 millones de parametros desarrollado por NovelAI, publicado originalmente como parte de su servicio de pago Opus y liberado posteriormente en Hugging Face como modelo legacy bajo licencia GPL-2.0. Se trata del primer modelo de gran tamano que NovelAI entreno completamente desde cero, sobre su propio cluster de GPU H100 (denominado Shoggy), en lugar de partir de un checkpoint preentrenado de terceros. El modelo esta orientado a la generacion de texto narrativo en ingles y es la base sobre la que se construyeron sus modulos de escritura asistida.
 
 Tecnicamente es un transformer decoder-only de aproximadamente 3.000 millones de parametros, sin mezcla de expertos, con tokenizer propio (Nerdstash Tokenizer V1) y entrenado sobre un dataset interno denominado Nerdstash. Segun la propia model card, su volumen de entrenamiento era inusualmente alto para su tamano en el momento del lanzamiento, hasta el punto de superar en calidad de escritura a modelos mas grandes de la misma casa como Euterpe y Krake.
 
@@ -12,7 +12,7 @@ Su relevancia actual es mas historica y practica que competitiva: NovelAI lo des
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only; compatible con una clase de modelo ya existente en HuggingFace Transformers (el repositorio incluye el tag `stablelm`), activada mediante un flag adicional en la configuracion |
+| Arquitectura | Transformer decoder-only; compatible con una clase de modelo ya existente en Hugging Face Transformers (el repositorio incluye el tag `stablelm`), activada mediante un flag adicional en la configuracion |
 | Parametros totales | 3.043.786.240 (aproximadamente 3,04 mil millones) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada; debe consultarse en el `config.json` del repositorio |
@@ -66,10 +66,10 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| NovelAI Clio (clio-v1-legacy) | 3,04 B | No disponible | GPL-2.0 estricta | Pesos abiertos en HuggingFace (safetensors y GGUF) | Modelo narrativo en ingles entrenado desde cero por NovelAI; considerado legacy por su propio autor |
+| NovelAI Clio (clio-v1-legacy) | 3,04 B | No disponible | GPL-2.0 estricta | Pesos abiertos en Hugging Face (safetensors y GGUF) | Modelo narrativo en ingles entrenado desde cero por NovelAI; considerado legacy por su propio autor |
 | NovelAI Euterpe | Aproximadamente 1,3 B | No disponible | No liberado | Solo a traves del servicio NovelAI | Modelo anterior de la misma casa; la model card de Clio afirma que Clio escribe mejor pese a tener mas parametros |
 | NovelAI Krake | Aproximadamente 20 B | No disponible | No liberado | Solo a traves del servicio NovelAI | Modelo mayor de la misma casa, superado en escritura por Clio segun el autor |
-| StableLM-3B-4E1T | 2,8 B | 4.096 tokens | CC-BY-SA-4.0 (para los pesos publicados en su momento) | Pesos abiertos en HuggingFace | Alternativa abierta de tamano comparable, con arquitectura de la misma familia de clases; su licencia es mas permisiva que la GPL-2.0 de Clio |
+| StableLM-3B-4E1T | 2,8 B | 4.096 tokens | CC-BY-SA-4.0 (para los pesos publicados en su momento) | Pesos abiertos en Hugging Face | Alternativa abierta de tamano comparable, con arquitectura de la misma familia de clases; su licencia es mas permisiva que la GPL-2.0 de Clio |
 
 No se dispone de datos de contexto ni de rendimiento de Clio que permitan una comparacion cuantitativa con estas alternativas.
 
@@ -86,7 +86,7 @@ No se dispone de datos de contexto ni de rendimiento de Clio que permitan una co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NovelAI/clio-v1-legacy
+- Modelo en Hugging Face: https://huggingface.co/NovelAI/clio-v1-legacy
 - Anuncio de Clio en el blog de NovelAI: https://journal.novelai.net/a-new-model-clio-is-coming-to-opus-ef4e2457c601/
 - Anuncio del cluster HGX H100 de NovelAI: https://journal.novelai.net/anlatan-acquires-hgx-h100-cluster-4b7a2e6a631e/
 - Tokenizer Nerdstash V1: https://huggingface.co/NovelAI/nerdstash-tokenizer-v1

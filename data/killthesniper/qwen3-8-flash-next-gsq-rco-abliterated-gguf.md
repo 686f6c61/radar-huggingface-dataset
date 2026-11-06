@@ -91,7 +91,7 @@ No hay datos de rendimiento publicados para ninguno de los modelos de la tabla, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KilltheSniper/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/KilltheSniper/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
 - Modelo base (cuantizaciones oficiales GSQ-RCO): https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Release abliterado de referencia citado en la model card: https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
 - README en chino simplificado del repositorio: https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF/blob/main/README.zh-CN.md

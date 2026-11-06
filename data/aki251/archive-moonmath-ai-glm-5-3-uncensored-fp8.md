@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MoonMath Dolly2 (publicado en HuggingFace como `Aki251/archive-MoonMath-ai-GLM-5.3-Uncensored-FP8`) es una variante "abliterated" o "uncensored" del modelo GLM-5.3 de Z.ai, desarrollada por MoonMath.ai (plataforma Zro). El objetivo es reducir el comportamiento de rechazo aprendido del modelo base mediante una intervención quirúrgica sobre un conjunto reducido de módulos internos, sin reentrenamiento, preservando en la medida de lo posible las capacidades generales del modelo original.
+MoonMath Dolly2 (publicado en Hugging Face como `Aki251/archive-MoonMath-ai-GLM-5.3-Uncensored-FP8`) es una variante "abliterated" o "uncensored" del modelo GLM-5.3 de Z.ai, desarrollada por MoonMath.ai (plataforma Zro). El objetivo es reducir el comportamiento de rechazo aprendido del modelo base mediante una intervención quirúrgica sobre un conjunto reducido de módulos internos, sin reentrenamiento, preservando en la medida de lo posible las capacidades generales del modelo original.
 
 El modelo conserva la arquitectura del GLM-5.3 base, un transformer de tipo Mixture-of-Experts con atención dispersa (etiqueta `glm_moe_dsa`), con 753.329.940.480 parámetros totales según los pesos en safetensors, y se distribuye en precisión FP8 (E4M3, blockwise 128×128). Está pensado específicamente para investigación en ciberseguridad: análisis de exploits, revisión de flujos de autenticación, análisis de abuso de servicios y flujos de trabajo de seguridad donde los rechazos del modelo base bloquean trabajo legítimo.
 
@@ -18,7 +18,7 @@ La relevancia actual del modelo radica en que demuestra que una abliteración se
 | Longitud de contexto | 1M tokens (según la plataforma Zro); hasta 131K tokens de salida |
 | Tipos de cuantización | FP8 (E4M3, blockwise 128×128); compatible con el layout FP8 de GLM-5.3 |
 | Idiomas soportados | no disponible |
-| Licencia | `glm-5.3` (etiquetada como `other` en HuggingFace) |
+| Licencia | `glm-5.3` (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (tamaño del repo: 755,7 GB) |
 
 ## Arquitectura y entrenamiento
@@ -95,7 +95,7 @@ La comparación directa disponible se limita al modelo abliterated público de G
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aki251/archive-MoonMath-ai-GLM-5.3-Uncensored-FP8
+- Hugging Face: https://huggingface.co/Aki251/archive-MoonMath-ai-GLM-5.3-Uncensored-FP8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Blog del autor: https://zro.moonmath.ai/posts/dolly-and-me
 - Plataforma Zro: https://zro.moonmath.ai

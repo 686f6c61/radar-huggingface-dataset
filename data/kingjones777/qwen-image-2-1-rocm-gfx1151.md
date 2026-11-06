@@ -102,7 +102,7 @@ No se dispone de datos de otros modelos de texto-a-imagen en la información pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kingjones777/Qwen-Image-2.1-ROCm-gfx1151
+- Repositorio en Hugging Face: https://huggingface.co/kingjones777/Qwen-Image-2.1-ROCm-gfx1151
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Rama main de diffusers (instalación desde ZIP): https://github.com/huggingface/diffusers/archive/refs/heads/main.zip
 - En la búsqueda web realizada no se han encontrado papers, blogs, repositorios ni demos adicionales relevantes para este modelo.

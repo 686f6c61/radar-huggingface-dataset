@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento comparativo entre ambos.
 
 - No es un modelo de inferencia: no se puede cargar con motores de inferencia estándar.
 - Requiere exactamente 2 GPUs; los nombres de los archivos incluyen `world_size_2`, por lo que no se puede cargar con otro número de GPUs.
-- No se puede usar el repo ID de HuggingFace directamente como `resume_from_path`; hay que descargar a un directorio local.
+- No se puede usar el repo ID de Hugging Face directamente como `resume_from_path`; hay que descargar a un directorio local.
 - No se han publicado resultados de benchmarks, por lo que se desconoce la calidad del modelo en este paso.
 - El estado del optimizador ocupa ~33 GB por GPU, lo que implica un coste de almacenamiento y memoria significativo.
 - Depende de verl y de la configuración exacta de entrenamiento; cambios en la config pueden romper el resume.
@@ -75,6 +75,6 @@ No se dispone de datos de rendimiento comparativo entre ambos.
 
 ## Enlaces
 
-- [HuggingFace: mskm3266/DAPO-Qwen3-8B-b64-clip0.28-step484-fsdp-ckpt](https://huggingface.co/mskm3266/DAPO-Qwen3-8B-b64-clip0.28-step484-fsdp-ckpt)
+- [Hugging Face: mskm3266/DAPO-Qwen3-8B-b64-clip0.28-step484-fsdp-ckpt](https://huggingface.co/mskm3266/DAPO-Qwen3-8B-b64-clip0.28-step484-fsdp-ckpt)
 - [Checkpoint anterior: mskm3266/DAPO-Qwen3-8B-b64-clip0.28-step363-fsdp-ckpt](https://huggingface.co/mskm3266/DAPO-Qwen3-8B-b64-clip0.28-step363-fsdp-ckpt)
 - [Modelo base: Qwen/Qwen3-8B-Base](https://huggingface.co/Qwen/Qwen3-8B-Base)

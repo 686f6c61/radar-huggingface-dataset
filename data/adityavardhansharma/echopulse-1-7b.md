@@ -82,8 +82,8 @@ Prueba de estrés de contexto largo en NVIDIA A100-40GB:
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| EchoPulse-1.7B | 1,73 B | 16.384 | LFM Open License v1.0 | HuggingFace, GGUF | Ajuste fino para protocolo EchoFlow |
-| LiquidAI/LFM3-1.7B | 1,73 B | 16.384 (heredado) | LFM Open License v1.0 | HuggingFace | Modelo base; sin protocolo agéntico específico |
+| EchoPulse-1.7B | 1,73 B | 16.384 | LFM Open License v1.0 | Hugging Face, GGUF | Ajuste fino para protocolo EchoFlow |
+| LiquidAI/LFM3-1.7B | 1,73 B | 16.384 (heredado) | LFM Open License v1.0 | Hugging Face | Modelo base; sin protocolo agéntico específico |
 | Alternativas de ~1,5-2 B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ Prueba de estrés de contexto largo en NVIDIA A100-40GB:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adityavardhansharma/EchoPulse-1.7B
+- Modelo en Hugging Face: https://huggingface.co/adityavardhansharma/EchoPulse-1.7B
 - Repositorio GGUF: https://huggingface.co/adityavardhansharma/EchoPulse-1.7B-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Corpus de ajuste fino: https://huggingface.co/adityavardhansharma/echoflow-sft-corpus

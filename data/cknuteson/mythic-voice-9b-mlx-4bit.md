@@ -66,6 +66,6 @@ La comparativa muestra que la principal diferencia frente al modelo base es el a
 - Caveat de producción: el chat template fuerza el modo "thinking" desactivado, lo que puede limitar la capacidad de razonamiento complejo en tareas que lo requieran.
 
 ## Enlaces
-- Modelo MLX 4-bit en HuggingFace: https://huggingface.co/cknuteson/mythic-voice-9b-MLX-4bit
+- Modelo MLX 4-bit en Hugging Face: https://huggingface.co/cknuteson/mythic-voice-9b-MLX-4bit
 - Repositorio principal GGUF (con detalles de entrenamiento y evaluación): https://huggingface.co/cknuteson/mythic-voice-9b-GGUF
 - Pipeline de entrenamiento persona-forge: https://github.com/ctkadvisors/persona-forge

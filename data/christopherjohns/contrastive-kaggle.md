@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`christopherjohns/contrastive-kaggle` es un repositorio experimental publicado en HuggingFace que contiene un esqueleto de código basado en la arquitectura Flamingo, orientado a tareas de aprendizaje contrastivo. Lo desarrolla el usuario `christopherjohns` y su propósito declarado no es ofrecer un modelo entrenado, sino servir de base para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El propio autor indica de forma explícita que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado con resultados de referencia.
+`christopherjohns/contrastive-kaggle` es un repositorio experimental publicado en Hugging Face que contiene un esqueleto de código basado en la arquitectura Flamingo, orientado a tareas de aprendizaje contrastivo. Lo desarrolla el usuario `christopherjohns` y su propósito declarado no es ofrecer un modelo entrenado, sino servir de base para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El propio autor indica de forma explícita que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado con resultados de referencia.
 
 El repositorio se apoya en Flamingo, una arquitectura multimodal que combina un codificador de visión con un modelo de lenguaje mediante atención cruzada (cross attention) para fusionar modalidades. La configuración incluida corresponde a una escala "large" con atención estándar, activación approximate gelu y normalización GroupNorm. El peso total registrado en los metadatos de safetensors es de 24.832 parámetros, un tamaño extremadamente reducido que confirma su naturaleza de artefacto de prueba más que de modelo funcional.
 
@@ -85,7 +85,7 @@ No se conocen modelos entrenados comparables a partir de la información proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/christopherjohns/contrastive-kaggle
+- Modelo en Hugging Face: https://huggingface.co/christopherjohns/contrastive-kaggle
 - Repositorio similar (MAE, autor wilsonhwh): https://huggingface.co/wilsonhwh/contrastive-kaggle
 - Repositorio similar (ALBEF, autora crystaljones10): https://huggingface.co/crystaljones10/albef-contrastive-kaggle
 - Cuaderno relacionado en Kaggle (contrastive_model_v8): https://www.kaggle.com/code/daokhangk18hcm/contrastive-model-v8

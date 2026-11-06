@@ -4,7 +4,7 @@
 
 ## Resumen
 
-DeepHat-V1-7B-Q4_K_M es una version cuantizada en formato GGUF del modelo DeepHat-V1-7B, publicada por el usuario MynameisKoi en HuggingFace. El modelo original pertenece a la serie DeepHat, desarrollada por Kindo (antiguamente Whiterabbitneo), y esta orientada a tareas de ciberseguridad tanto ofensiva como defensiva. DeepHat-V1-7B es un finetune de Qwen2.5 Coder 7B, por lo que hereda la arquitectura y las capacidades del modelo base de Alibaba.
+DeepHat-V1-7B-Q4_K_M es una version cuantizada en formato GGUF del modelo DeepHat-V1-7B, publicada por el usuario MynameisKoi en Hugging Face. El modelo original pertenece a la serie DeepHat, desarrollada por Kindo (antiguamente Whiterabbitneo), y esta orientada a tareas de ciberseguridad tanto ofensiva como defensiva. DeepHat-V1-7B es un finetune de Qwen2.5 Coder 7B, por lo que hereda la arquitectura y las capacidades del modelo base de Alibaba.
 
 Esta ficha concreta corresponde a la cuantizacion Q4_K_M, una de las mas habituales para despliegue local porque ofrece un equilibrio razonable entre tamano de fichero (en torno a 3,90 GB) y calidad de inferencia. El repositorio tiene licencia MIT y, segun los datos disponibles, cero descargas y cero likes en el momento de su publicacion (2026-10-12), lo que indica que se trata de una cuantizacion reciente y poco difundida.
 
@@ -87,8 +87,8 @@ La comparativa se limita a los datos publicados; no se dispone de resultados de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MynameisKoi/DeepHat-V1-7B-Q4_K_M
-- Modelo base en HuggingFace: https://huggingface.co/DeepHat/DeepHat-V1-7B
+- Modelo en Hugging Face: https://huggingface.co/MynameisKoi/DeepHat-V1-7B-Q4_K_M
+- Modelo base en Hugging Face: https://huggingface.co/DeepHat/DeepHat-V1-7B
 - Repositorio GGUF alternativo: https://huggingface.co/GGUF-A-Lot/DeepHat-V1-7B-GGUF
 - Sitio oficial del proyecto: https://www.deephat.ai/
 - Ficha en Inferix: https://inferix.co/models/DeepHat/DeepHat-V1-7B

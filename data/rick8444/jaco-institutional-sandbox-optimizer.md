@@ -71,6 +71,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace - Rick8444/jaco-institutional-sandbox-optimizer](https://huggingface.co/Rick8444/jaco-institutional-sandbox-optimizer)
+- [Hugging Face - Rick8444/jaco-institutional-sandbox-optimizer](https://huggingface.co/Rick8444/jaco-institutional-sandbox-optimizer)
 - [Dataset asociado - Rick8444/jaco-openclaw-curated-dataset](https://huggingface.co/datasets/Rick8444/jaco-openclaw-curated-dataset) (mencionado en los tags)
 - [Gateway Cloudflare A2A Mesh](https://red-wildflower-6fec.dickjacobsson022.workers.dev/api/a2a/catalog) (referenciado en la model card)

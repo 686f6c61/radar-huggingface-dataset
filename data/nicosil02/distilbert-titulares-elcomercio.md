@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nicosil02/distilbert-titulares-elcomercio` es un modelo publicado en HuggingFace por el usuario nicosil02, construido sobre la arquitectura DistilBERT. Por el nombre del repositorio, todo apunta a un ajuste fino (fine-tuning) orientado a tareas de procesamiento de lenguaje natural sobre titulares periodisticos, presumiblemente del medio El Comercio, aunque la informacion proporcionada no confirma la tarea concreta (clasificacion, analisis de sentimiento, etiquetado tematico, etc.).
+`nicosil02/distilbert-titulares-elcomercio` es un modelo publicado en Hugging Face por el usuario nicosil02, construido sobre la arquitectura DistilBERT. Por el nombre del repositorio, todo apunta a un ajuste fino (fine-tuning) orientado a tareas de procesamiento de lenguaje natural sobre titulares periodisticos, presumiblemente del medio El Comercio, aunque la informacion proporcionada no confirma la tarea concreta (clasificacion, analisis de sentimiento, etiquetado tematico, etc.).
 
 El modelo cuenta con 135.327.748 parametros totales, un tamano que coincide con la variante multilingue de DistilBERT (distilbert-base-multilingual-cased) mas una cabeza de tarea. DistilBERT es una version destilada de BERT que reduce el numero de capas de 12 a 6, manteniendo aproximadamente el 97% del rendimiento del modelo original con un 40% menos de parametros y siendo un 60% mas rapido en inferencia. Esto lo convierte en una opcion ligera y eficiente para desplegar en entornos con recursos limitados.
 
@@ -62,17 +62,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - GPU recomendadas: cualquier GPU moderna sirve; no requiere hardware especializado. Se puede ejecutar comodamente en RTX 3060, RTX 4090, T4, A100 o H100, aunque el modelo es pequeno incluso para las opciones mas modestas.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo actual e incluso en modelos con poca VRAM.
 - Cabe en CPU: si, es viable la inferencia en CPU para cargas moderadas.
-- Opciones de despliegue: HuggingFace Transformers (PyTorch), ONNX Runtime, y conversion a otros formatos. No se dispone de versiones GGUF ni de integracion confirmada con Ollama o llama.cpp.
+- Opciones de despliegue: Hugging Face Transformers (PyTorch), ONNX Runtime, y conversion a otros formatos. No se dispone de versiones GGUF ni de integracion confirmada con Ollama o llama.cpp.
 - Latencia y throughput estimados: no disponibles (dependen del hardware y del lote).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nicosil02/distilbert-titulares-elcomercio | 135.327.748 | 512 tokens (tipico) | Clasificacion/analisis de texto (inferido) | no disponible | HuggingFace |
-| distilbert-base-multilingual-cased | ~134.734.000 | 512 tokens | Modelo base multilingue | Apache 2.0 | HuggingFace |
-| distilbert-base-uncased | ~66.955.000 | 512 tokens | Modelo base en ingles | Apache 2.0 | HuggingFace |
-| bert-base-multilingual-cased | ~177.854.000 | 512 tokens | Modelo base multilingue | Apache 2.0 | HuggingFace |
+| nicosil02/distilbert-titulares-elcomercio | 135.327.748 | 512 tokens (tipico) | Clasificacion/analisis de texto (inferido) | no disponible | Hugging Face |
+| distilbert-base-multilingual-cased | ~134.734.000 | 512 tokens | Modelo base multilingue | Apache 2.0 | Hugging Face |
+| distilbert-base-uncased | ~66.955.000 | 512 tokens | Modelo base en ingles | Apache 2.0 | Hugging Face |
+| bert-base-multilingual-cased | ~177.854.000 | 512 tokens | Modelo base multilingue | Apache 2.0 | Hugging Face |
 
 La comparativa con modelos base es orientativa, ya que el modelo analizado es un ajuste fino cuya tarea y datos especificos no estan documentados, lo que impide una comparacion de rendimiento rigurosa.
 
@@ -90,5 +90,5 @@ La comparativa con modelos base es orientativa, ya que el modelo analizado es un
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nicosil02/distilbert-titulares-elcomercio
+- Hugging Face: https://huggingface.co/nicosil02/distilbert-titulares-elcomercio
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada.

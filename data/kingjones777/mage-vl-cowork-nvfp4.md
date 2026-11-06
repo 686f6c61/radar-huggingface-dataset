@@ -105,7 +105,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kingjones777/Mage-VL-Cowork-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/kingjones777/Mage-VL-Cowork-NVFP4
 - Modelo base: https://huggingface.co/microsoft/Mage-VL-Cowork
 - Dataset de capturas de escritorio reales usado en la evaluación: https://huggingface.co/datasets/dixantp/desktop-accessibility-screenshot-json-dumps
 - Dataset HuggingFaceH4/ultrachat_200k: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k

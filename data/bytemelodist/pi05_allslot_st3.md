@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `pi05_allslot_st3` (este) | 4,14B | No aplica | Fine-tuning en EBiM Task 2 (78 episodios) | Apache 2.0 | HuggingFace |
-| `lerobot/pi05_base` | 4,14B | No aplica | Preentrenamiento general en robótica | Apache 2.0 | HuggingFace |
+| `pi05_allslot_st3` (este) | 4,14B | No aplica | Fine-tuning en EBiM Task 2 (78 episodios) | Apache 2.0 | Hugging Face |
+| `lerobot/pi05_base` | 4,14B | No aplica | Preentrenamiento general en robótica | Apache 2.0 | Hugging Face |
 | Pi0 (original) | 3,3B (aprox.) | No aplica | Preentrenamiento en datos robóticos diversos | Apache 2.0 | Repos de Physical Intelligence |
 
 La comparación directa con otros modelos de política robótica no está disponible en la información proporcionada. `pi05_base` es el punto de partida de este fine-tuning, por lo que la diferencia principal radica en la especialización para la tarea de manipulación de materiales deformables. Pi0 original tiene una arquitectura similar pero con menos parámetros; sin embargo, no se dispone de datos de rendimiento comparativo.
@@ -80,7 +80,7 @@ La comparación directa con otros modelos de política robótica no está dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ByteMelodist/pi05_allslot_st3
+- Modelo en Hugging Face: https://huggingface.co/ByteMelodist/pi05_allslot_st3
 - Librería LeRobot: https://github.com/huggingface/lerobot
 - Proyecto openpi (base de Pi0.5): https://github.com/Physical-Intelligence/openpi
 - Modelo base `lerobot/pi05_base`: https://huggingface.co/lerobot/pi05_base

@@ -72,9 +72,9 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Labadain-MedQA-QLoRA-Llama-3.1-8B-it-tetun | 8B (adaptador LoRA) | 128K | QA medico en tetun | Llama 3.1 Community | HuggingFace, 39 descargas |
-| Llama 3.1 8B-Instruct (base) | 8B | 128K | Instrucciones generales, 8 idiomas | Llama 3.1 Community | HuggingFace |
-| MedAlpaca (variantes 7B/13B) | 7B / 13B | 4K aprox. | QA medico en ingles | Apache 2.0 / otras segun variante | HuggingFace |
+| Labadain-MedQA-QLoRA-Llama-3.1-8B-it-tetun | 8B (adaptador LoRA) | 128K | QA medico en tetun | Llama 3.1 Community | Hugging Face, 39 descargas |
+| Llama 3.1 8B-Instruct (base) | 8B | 128K | Instrucciones generales, 8 idiomas | Llama 3.1 Community | Hugging Face |
+| MedAlpaca (variantes 7B/13B) | 7B / 13B | 4K aprox. | QA medico en ingles | Apache 2.0 / otras segun variante | Hugging Face |
 | Modelos medicos en lenguas ibericas o portugues | no disponible | no disponible | QA medico en portugues | no disponible | no disponible |
 
 No se dispone de resultados comparativos de benchmarks entre estos modelos en la informacion proporcionada.
@@ -92,7 +92,7 @@ No se dispone de resultados comparativos de benchmarks entre estos modelos en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/labadain/Labadain-MedQA-QLoRA-LLaMA-3.1-8B-it-Tetun
+- Modelo en Hugging Face: https://huggingface.co/labadain/Labadain-MedQA-QLoRA-LLaMA-3.1-8B-it-Tetun
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Dataset de flashcards medicas: https://huggingface.co/datasets/labadain/Labadain-MedQA-MedAlpaca-Medical-Flashcards-English-Tetun
 - Dataset WikiDoc de informacion al paciente: https://huggingface.co/datasets/labadain/Labadain-MedQA-MeadAlpaca-WikiDoc-Patient-Information-English-Tetun

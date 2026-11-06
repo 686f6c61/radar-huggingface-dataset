@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Astra-Stop es una edición de pesos (weight edit) sobre el modelo Qwen/Qwen3.8-27B, publicada por el usuario jarrodwatts en HuggingFace. No se trata de un fine-tuning ni de un nuevo entrenamiento: es una modificación quirúrgica de una única matriz de pesos que altera el comportamiento de razonamiento del modelo base. El objetivo declarado es reducir aproximadamente un 40% los tokens de pensamiento en generación abierta, manteniendo la precisión en tareas de matemáticas y código.
+Qwen3.8-27B-Astra-Stop es una edición de pesos (weight edit) sobre el modelo Qwen/Qwen3.8-27B, publicada por el usuario jarrodwatts en Hugging Face. No se trata de un fine-tuning ni de un nuevo entrenamiento: es una modificación quirúrgica de una única matriz de pesos que altera el comportamiento de razonamiento del modelo base. El objetivo declarado es reducir aproximadamente un 40% los tokens de pensamiento en generación abierta, manteniendo la precisión en tareas de matemáticas y código.
 
 La edición afecta a la matriz de salida de la MLP de la última capa (`model.language_model.layers.63.mlp.down_proj.weight`), que contiene 89,1 millones de pesos, es decir, un 0,32% del total del modelo. La modificación consiste en sumar una dirección de rango uno calculada a partir del propio modelo, con una intensidad concreta, de modo que la señal interna de "he terminado de pensar" (el token `</think>`) tenga el doble de peso en la decisión final de la última capa. El resto de lo que escribe esa capa permanece inalterado.
 
@@ -73,8 +73,8 @@ El propio autor advierte de que la muestra de 16 pelícanos por lado es pequeña
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Astra-Stop | No disponible (base ~27,8B) | No disponible | Edición de pesos de rango uno sobre Qwen3.8-27B | Apache-2.0 | HuggingFace (jarrodwatts) |
-| Qwen3.8-27B (base) | No disponible (~27,8B) | No disponible | Modelo original sin editar | Apache-2.0 (según el artefacto) | HuggingFace (Qwen) |
+| Qwen3.8-27B-Astra-Stop | No disponible (base ~27,8B) | No disponible | Edición de pesos de rango uno sobre Qwen3.8-27B | Apache-2.0 | Hugging Face (jarrodwatts) |
+| Qwen3.8-27B (base) | No disponible (~27,8B) | No disponible | Modelo original sin editar | Apache-2.0 (según el artefacto) | Hugging Face (Qwen) |
 | Alternativas de razonamiento de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoría en la información proporcionada, por lo que la comparativa se limita al modelo base y a la ausencia de alternativas documentadas.
@@ -92,6 +92,6 @@ No se dispone de datos de benchmarks comparativos con otros modelos de la misma 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jarrodwatts/Qwen3.8-27B-Astra-Stop
+- Hugging Face: https://huggingface.co/jarrodwatts/Qwen3.8-27B-Astra-Stop
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Artículo inspirador "Sparks of Weight-Space Programming": https://rikiyat.github.io/blog/weight-space-programming/

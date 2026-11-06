@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DSD1231/MyAwesomeModel es un repositorio de HuggingFace publicado por el usuario DSD1231 que, segun su propia model card, no contiene un modelo entrenado utilizable, sino un artefacto de un flujo de trabajo de evaluacion. El checkpoint seleccionado es `step_1000`, elegido por obtener el mayor `eval_accuracy` (0.710) entre los pasos 100 y 1000 de una ejecucion de evaluacion de workspace. La model card declara una configuracion BERT y el pipeline asociado es `feature-extraction`, con licencia MIT.
+DSD1231/MyAwesomeModel es un repositorio de Hugging Face publicado por el usuario DSD1231 que, segun su propia model card, no contiene un modelo entrenado utilizable, sino un artefacto de un flujo de trabajo de evaluacion. El checkpoint seleccionado es `step_1000`, elegido por obtener el mayor `eval_accuracy` (0.710) entre los pasos 100 y 1000 de una ejecucion de evaluacion de workspace. La model card declara una configuracion BERT y el pipeline asociado es `feature-extraction`, con licencia MIT.
 
 El detalle critico es que el fichero `pytorch_model.bin` es un artefacto dummy de 23 bytes, identico en todos los checkpoints candidatos. Por tanto, no existen pesos entrenados, no hay parametros que cargar y el repositorio no puede ejecutar inferencia real. El tamano del repositorio es de 0.0 GB y acumula 0 descargas y 0 likes desde su creacion el 23 de septiembre de 2026.
 
@@ -116,6 +116,6 @@ Las filas de referencia corresponden a modelos conocidos del mismo tipo arquitec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DSD1231/MyAwesomeModel
+- Hugging Face: https://huggingface.co/DSD1231/MyAwesomeModel
 - Papers, blogs, repositorios o demos adicionales: no disponible
 - Resultados de benchmarks publicados en fuentes externas: no disponible

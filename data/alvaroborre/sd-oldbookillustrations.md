@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Resolución nativa | Contexto (tokens de prompt) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alvaroborre/sd-oldbookillustrations | 859.520.964 | 512x512 | 77 (CLIP) | creativeml-openrail-m | HuggingFace |
-| CompVis/stable-diffusion-v1-4 | ~860 M | 512x512 | 77 (CLIP) | creativeml-openrail-m | HuggingFace |
-| runwayml/stable-diffusion-v1-5 | ~860 M | 512x512 | 77 (CLIP) | creativeml-openrail-m | HuggingFace |
-| stabilityai/stable-diffusion-2-1 | ~865 M (UNet) + encoder | 768x768 | 77 (OpenCLIP) | openrail++ | HuggingFace |
+| alvaroborre/sd-oldbookillustrations | 859.520.964 | 512x512 | 77 (CLIP) | creativeml-openrail-m | Hugging Face |
+| CompVis/stable-diffusion-v1-4 | ~860 M | 512x512 | 77 (CLIP) | creativeml-openrail-m | Hugging Face |
+| runwayml/stable-diffusion-v1-5 | ~860 M | 512x512 | 77 (CLIP) | creativeml-openrail-m | Hugging Face |
+| stabilityai/stable-diffusion-2-1 | ~865 M (UNet) + encoder | 768x768 | 77 (OpenCLIP) | openrail++ | Hugging Face |
 
 La comparación es estructural: el modelo aquí descrito es, en la práctica, un SD 1.4 con un sesgo estilístico aprendido. Frente a SD 1.5 o SD 2.1, pierde versatilidad general y resolución nativa, pero gana coherencia en el estilo de ilustración antigua. No se dispone de benchmarks comparativos publicados por el autor.
 
@@ -81,7 +81,7 @@ La comparación es estructural: el modelo aquí descrito es, en la práctica, un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alvaroborre/sd-oldbookillustrations
+- Modelo en Hugging Face: https://huggingface.co/alvaroborre/sd-oldbookillustrations
 - LoRA de origen: https://huggingface.co/alvaroborre/sd-lora-oldbookillustrations
 - Modelo base: https://huggingface.co/CompVis/stable-diffusion-v1-4
 - Dataset de entrenamiento: https://huggingface.co/datasets/gigant/oldbookillustrations

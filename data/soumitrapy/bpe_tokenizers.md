@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`soumitrapy/bpe_tokenizers` es un repositorio de tokenizadores basados en Byte-Pair Encoding (BPE) publicado por el usuario soumitrapy en HuggingFace. A diferencia de un modelo de lenguaje completo, este artefacto se centra exclusivamente en la capa de tokenización, el componente responsable de convertir texto en secuencias de tokens que los modelos transformer consumen como entrada. El repositorio se distribuye bajo licencia MIT, lo que permite su uso comercial y modificación sin restricciones significativas.
+`soumitrapy/bpe_tokenizers` es un repositorio de tokenizadores basados en Byte-Pair Encoding (BPE) publicado por el usuario soumitrapy en Hugging Face. A diferencia de un modelo de lenguaje completo, este artefacto se centra exclusivamente en la capa de tokenización, el componente responsable de convertir texto en secuencias de tokens que los modelos transformer consumen como entrada. El repositorio se distribuye bajo licencia MIT, lo que permite su uso comercial y modificación sin restricciones significativas.
 
 La relevancia de este tipo de artefactos radica en que la calidad del tokenizador condiciona directamente la eficiencia y el rendimiento del modelo final: un vocabulario bien construido reduce el número de tokens necesarios para representar un texto, lo que se traduce en menor coste de inferencia y mayor velocidad. Sin embargo, la información pública disponible es extremadamente limitada: la model card está vacía salvo por la licencia, no se especifican arquitectura, tamaño de vocabulario, idiomas soportados ni datos de entrenamiento, y el repositorio no registra descargas ni valoraciones. Se desconoce si contiene un único tokenizador o una colección de varios, y no hay documentación técnica que detalle su construcción o uso previsto.
 
@@ -29,7 +29,7 @@ En el caso concreto de `soumitrapy/bpe_tokenizers`, no se dispone de informació
 
 - Tokenización de texto mediante el algoritmo BPE, convirtiendo cadenas de texto en secuencias de tokens numéricos.
 - Posible soporte de byte-level encoding, habitual en tokenizadores BPE modernos, aunque no confirmado.
-- Capacidad de integración con frameworks de HuggingFace (transformers, tokenizers) si los archivos se publican en el formato adecuado, extremo no verificado.
+- Capacidad de integración con frameworks de Hugging Face (transformers, tokenizers) si los archivos se publican en el formato adecuado, extremo no verificado.
 - No se ha confirmado soporte para tool calling, agentes, razonamiento multi-paso, visión, audio ni capacidades multimodales, dado que se trata de un tokenizador y no de un modelo generativo.
 
 ## Casos de uso
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. Al t
 - Los tokenizadores BPE son artefactos de muy bajo coste computacional: la tokenización de texto se realiza en CPU sin necesidad de GPU.
 - La memoria necesaria depende del tamaño del vocabulario y del número de merges, pero en general es del orden de megabytes, no de gigabytes.
 - No se requieren GPUs específicas (A100, H100, RTX 4090) para su uso.
-- Puede integrarse en pipelines con HuggingFace tokenizers, tiktoken o implementaciones propias basadas en el algoritmo de referencia de Karpathy (minbpe).
+- Puede integrarse en pipelines con Hugging Face tokenizers, tiktoken o implementaciones propias basadas en el algoritmo de referencia de Karpathy (minbpe).
 - La latencia de tokenización es del orden de microsegundos por token en CPU moderna, aunque no se dispone de mediciones específicas para este artefacto.
 
 ## Comparativa con modelos similares
@@ -59,16 +59,16 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Tokenizador | Vocabulario | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GPT-2 (OpenAI) | 50.257 | Multilingue (principalmente ingles) | MIT | OpenAI / HuggingFace |
-| Llama 3 (Meta) | 128.000 | Multilingue | Llama License | HuggingFace |
-| soumitrapy/bpe_tokenizers | no disponible | no disponible | MIT | HuggingFace |
+| GPT-2 (OpenAI) | 50.257 | Multilingue (principalmente ingles) | MIT | OpenAI / Hugging Face |
+| Llama 3 (Meta) | 128.000 | Multilingue | Llama License | Hugging Face |
+| soumitrapy/bpe_tokenizers | no disponible | no disponible | MIT | Hugging Face |
 
 La comparativa no puede completarse porque se desconocen el tamaño del vocabulario, los idiomas soportados y el corpus de entrenamiento de este repositorio.
 
 ## Limitaciones y advertencias
 
 - La model card está vacía: no hay documentación sobre el vocabulario, el corpus de entrenamiento, el preprocesamiento aplicado ni las instrucciones de uso.
-- No se ha verificado que los archivos del tokenizador sean compatibles con el formato de HuggingFace tokenizers (tokenizer.json) o con la librería transformers.
+- No se ha verificado que los archivos del tokenizador sean compatibles con el formato de Hugging Face tokenizers (tokenizer.json) o con la librería transformers.
 - El repositorio no registra descargas ni valoraciones, lo que sugiere que no ha sido probado por la comunidad.
 - No se especifican los idiomas soportados; si el corpus de entrenamiento fue monolingüe, el tokenizador podría producir una segmentación ineficiente o tokens desconocidos en otros idiomas.
 - La licencia MIT permite uso comercial, pero no garantiza la calidad ni la ausencia de errores en el artefacto.
@@ -76,8 +76,8 @@ La comparativa no puede completarse porque se desconocen el tamaño del vocabula
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/soumitrapy/bpe_tokenizers
-- Guia de HuggingFace sobre tokenizacion BPE: https://huggingface.co/learn/llm-course/chapter6/5
+- Repositorio en Hugging Face: https://huggingface.co/soumitrapy/bpe_tokenizers
+- Guia de Hugging Face sobre tokenizacion BPE: https://huggingface.co/learn/llm-course/chapter6/5
 - Implementacion de referencia de BPE (minbpe, Karpathy): https://github.com/karpathy/minbpe
 - Tutorial de construccion de un tokenizador BPE en Python: https://machinelearningplus.com/gen-ai/build-bpe-tokenizer/
 - SuperBPE, alternativa a BPE para modelos de lenguaje: https://superbpe.github.io/

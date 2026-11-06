@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nikitastheo/v5-babylm-25k-lower-fra-ell-sequential_interleaved` es un modelo de lenguaje causal de tipo transformer decoder-only, publicado por el usuario nikitastheo en HuggingFace, con 123.886.080 parametros (~124 M) almacenados en safetensors. Por escala y por la configuracion base declarada (`gpt_base_config.json`) se corresponde con la familia GPT-2 base, aunque no se especifica en la model card la longitud de contexto efectiva.
+El modelo `nikitastheo/v5-babylm-25k-lower-fra-ell-sequential_interleaved` es un modelo de lenguaje causal de tipo transformer decoder-only, publicado por el usuario nikitastheo en Hugging Face, con 123.886.080 parametros (~124 M) almacenados en safetensors. Por escala y por la configuracion base declarada (`gpt_base_config.json`) se corresponde con la familia GPT-2 base, aunque no se especifica en la model card la longitud de contexto efectiva.
 
 Su proposito parece ser la investigacion en torno al entrenamiento de modelos con volumenes de datos reducidos, en la linea del reto BabyLM, con un tokenizador propio (`nikitastheo/babylm-25k-fra-lower-tokenizer`) orientado a texto en minusculas y con mezcla de idiomas identificados como fra (frances) y ell (griego) en el propio nombre del repositorio. El entrenamiento se realizo con `train_clm.py`, un script de Hugging Face Accelerate sin usar la clase `Trainer`, y la model card declara un cambio de idioma en la epoca 10, lo que sugiere un regimen curricular secuencial/intercalado.
 
@@ -32,7 +32,7 @@ El entrenamiento se realizo con `train_clm.py`, un script basado en Hugging Face
 
 ## Capacidades
 
-- Generacion de texto autoregresiva (causal language modeling), la unica tarea declarada en la model card y en el pipeline de HuggingFace.
+- Generacion de texto autoregresiva (causal language modeling), la unica tarea declarada en la model card y en el pipeline de Hugging Face.
 - Modelado de lenguaje sobre texto en minusculas mediante un tokenizador especifico, orientado a corpus de investigacion.
 - Entrenamiento multilingue experimental segun el regimen de cambio de idioma declarado (epoca 10), sin lista oficial de idiomas confirmada.
 - No se documenta soporte de tool calling ni function calling.
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| nikitastheo/v5-babylm-25k-lower-fra-ell-sequential_interleaved | 123,9 M | no disponible | no disponible | HuggingFace, safetensors | Modelo de investigacion estilo BabyLM, sin evaluacion publicada |
-| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | MIT | HuggingFace, safetensors y TF | Referencia historica de la misma escala y arquitectura base |
-| Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache 2.0 | HuggingFace, safetensors | Suite disenada para interpretabilidad, con checkpoints intermedios |
-| TinyLlama-1.1B | 1,1 B | 2048 tokens | Apache 2.0 | HuggingFace | Escala superior, con ajuste por instrucciones disponible |
+| nikitastheo/v5-babylm-25k-lower-fra-ell-sequential_interleaved | 123,9 M | no disponible | no disponible | Hugging Face, safetensors | Modelo de investigacion estilo BabyLM, sin evaluacion publicada |
+| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | MIT | Hugging Face, safetensors y TF | Referencia historica de la misma escala y arquitectura base |
+| Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache 2.0 | Hugging Face, safetensors | Suite disenada para interpretabilidad, con checkpoints intermedios |
+| TinyLlama-1.1B | 1,1 B | 2048 tokens | Apache 2.0 | Hugging Face | Escala superior, con ajuste por instrucciones disponible |
 
 La comparacion de rendimiento con estos modelos no es posible porque el modelo de nikitastheo no publica resultados de benchmarks.
 
@@ -90,6 +90,6 @@ La comparacion de rendimiento con estos modelos no es posible porque el modelo d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikitastheo/v5-babylm-25k-lower-fra-ell-sequential_interleaved
+- Modelo en Hugging Face: https://huggingface.co/nikitastheo/v5-babylm-25k-lower-fra-ell-sequential_interleaved
 - Tokenizador asociado: https://huggingface.co/nikitastheo/babylm-25k-fra-lower-tokenizer
 - No se han encontrado enlaces relevantes en la busqueda web: los resultados devueltos tratan sobre modelos Gemini y astrologia, sin relacion con este modelo.

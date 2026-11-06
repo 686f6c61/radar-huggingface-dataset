@@ -29,7 +29,7 @@ El modelo es un ajuste fino completo del modelo base marin-community/marin-8b-ba
 
 - Generacion de texto orientada al dominio medico: el modelo esta ajustado para producir descripciones y captions de casos clinicos.
 - Generacion de texto conversacional: el tag "conversational" sugiere capacidad para mantener dialogos multi-turno.
-- Compatible con text-generation-inference (TGI) y endpoints de HuggingFace, lo que facilita su despliegue como servicio.
+- Compatible con text-generation-inference (TGI) y endpoints de Hugging Face, lo que facilita su despliegue como servicio.
 - No se dispone de informacion sobre tool calling, razonamiento multi-paso, vision, audio u otras capacidades especiales.
 
 ## Casos de uso
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La se
 - VRAM estimada para inferencia: aproximadamente 16 GB en precision FP16/BF16 (8.030 millones de parametros x 2 bytes). El tamano del repositorio (16,1 GB) confirma que los pesos estan en esta precision.
 - Con cuantizacion a 8 bits se reduciria a unos 8 GB, y a 4 bits a unos 4 GB, aunque no se han publicado versiones cuantizadas del modelo.
 - GPU recomendadas: NVIDIA A100 (40/80 GB), H100, RTX 4090 (24 GB) o RTX 3090 (24 GB) para inferencia en FP16 sin cuantizar. GPUs con 16 GB o menos requeririan cuantizacion.
-- Opciones de despliegue: compatible con text-generation-inference (TGI) y endpoints de HuggingFace. Al ser arquitectura Llama, es probable que funcione con vLLM, llama.cpp u Ollama previa conversion de pesos, aunque no hay soporte oficial documentado.
+- Opciones de despliegue: compatible con text-generation-inference (TGI) y endpoints de Hugging Face. Al ser arquitectura Llama, es probable que funcione con vLLM, llama.cpp u Ollama previa conversion de pesos, aunque no hay soporte oficial documentado.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para una comparativa cuantitativa riguro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_cap_b8000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_cap_b8000_s0
 - Modelo base: https://huggingface.co/marin-community/marin-8b-base
 
 No se han encontrado papers, blogs o demos asociados a este modelo en la informacion proporcionada.

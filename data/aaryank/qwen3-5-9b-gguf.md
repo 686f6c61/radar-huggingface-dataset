@@ -97,6 +97,6 @@ No se dispone de comparaciones con otros modelos de tamaño similar (p. ej., Lla
 
 ## Enlaces
 
-- Repositorio HuggingFace: [AaryanK/Qwen3.5-9B-GGUF](https://huggingface.co/AaryanK/Qwen3.5-9B-GGUF)
+- Repositorio Hugging Face: [AaryanK/Qwen3.5-9B-GGUF](https://huggingface.co/AaryanK/Qwen3.5-9B-GGUF)
 - Modelo base: [Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B)
 - Perfil de LinkedIn del autor: [linkedin.com/in/theaaryankapoor](https://www.linkedin.com/in/theaaryankapoor/)

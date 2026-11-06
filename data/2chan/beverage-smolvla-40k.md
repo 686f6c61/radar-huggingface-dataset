@@ -6,7 +6,7 @@ Beverage SmolVLA 40k es un ajuste fino (fine-tuning) del modelo base `lerobot/sm
 
 Con 450.046.176 parámetros (unos 450 millones) y un tamaño de repositorio de 0,9 GB en formato safetensors, es un modelo compacto pensado para inferencia en robótica de laboratorio o de escritorio, no para despliegue en servidores de gran escala. La relevancia actual radica en que los modelos VLA pequeños como SmolVLA acercan la robótica manipulativa basada en lenguaje a hardware asequible, y este checkpoint concreto demuestra el flujo de trabajo típico: partir de un modelo base preentrenado y especializarlo con un dataset de demostraciones para una tarea acotada.
 
-La ficha se basa únicamente en la información disponible en HuggingFace; el autor no ha publicado resultados de benchmarks ni métricas de éxito físico, y la propia model card advierte de que la subida no establece rendimiento real en robot.
+La ficha se basa únicamente en la información disponible en Hugging Face; el autor no ha publicado resultados de benchmarks ni métricas de éxito físico, y la propia model card advierte de que la subida no establece rendimiento real en robot.
 
 ## Especificaciones tecnicas
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 2chan/beverage-smolvla-40k | 450 M | no disponible | VLA bimanual para bebidas | no disponible | HuggingFace (lerobot) |
-| lerobot/smolvla_base | no disponible en la informacion | no disponible | VLA base generalista | no disponible | HuggingFace (lerobot) |
+| 2chan/beverage-smolvla-40k | 450 M | no disponible | VLA bimanual para bebidas | no disponible | Hugging Face (lerobot) |
+| lerobot/smolvla_base | no disponible en la informacion | no disponible | VLA base generalista | no disponible | Hugging Face (lerobot) |
 | Otros VLA de robotica (p. ej. RT-2, OpenVLA) | no disponible en la informacion | no disponible | VLA generalistas | no disponible | no disponible |
 
 La comparación cuantitativa con alternativas no es posible con los datos proporcionados; solo se confirma que este modelo es un fine-tune de `lerobot/smolvla_base` y que comparte su arquitectura y ecosistema.
@@ -80,7 +80,7 @@ La comparación cuantitativa con alternativas no es posible con los datos propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/2chan/beverage-smolvla-40k
+- Modelo en Hugging Face: https://huggingface.co/2chan/beverage-smolvla-40k
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Ecosistema LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot

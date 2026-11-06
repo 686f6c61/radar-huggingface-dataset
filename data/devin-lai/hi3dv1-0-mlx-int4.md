@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hi3Dv1.0-mlx-int4 | no disponible | no aplica | Image-to-3D, refinamiento geometrico, 4-bit MLX | Hi3D Open License v1.0 | HuggingFace (MLX) |
-| Hi3Dv1.0 (base) | no disponible | no aplica | Image-to-3D, refinamiento geometrico, precision original | Hi3D Open License v1.0 | HuggingFace |
+| Hi3Dv1.0-mlx-int4 | no disponible | no aplica | Image-to-3D, refinamiento geometrico, 4-bit MLX | Hi3D Open License v1.0 | Hugging Face (MLX) |
+| Hi3Dv1.0 (base) | no disponible | no aplica | Image-to-3D, refinamiento geometrico, precision original | Hi3D Open License v1.0 | Hugging Face |
 | Otros modelos image-to-3D | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la informacion proporcionada que permitan una comparacion cuantitativa fiable.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devin-lai/Hi3Dv1.0-mlx-int4
+- Modelo en Hugging Face: https://huggingface.co/devin-lai/Hi3Dv1.0-mlx-int4
 - Proyecto e runtime de inferencia: https://huggingface.co/devin-lai/Hi3Dv1.0-mlx
 - Dataset de resultados: https://huggingface.co/datasets/devin-lai/Hi3Dv1.0-mlx-results
 - Componentes compartidos: https://huggingface.co/devin-lai/Hi3Dv1.0-mlx-shared

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `ayanchatterjee123/swinbase-liss4-3ch`, aloja un modelo del que no se ha publicado ninguna documentación técnica en la ficha del repositorio. El nombre sugiere que podría tratarse de un modelo basado en la arquitectura Swin Transformer en su variante base, posiblemente entrenado para procesar imágenes de tres canales (3ch) del sensor LISS-4, un instrumento óptico a bordo de los satélites Resourcesat de la ISRO. Sin embargo, esta interpretación es puramente especulativa y no está respaldada por ningún dato oficial.
+Este repositorio de Hugging Face, identificado como `ayanchatterjee123/swinbase-liss4-3ch`, aloja un modelo del que no se ha publicado ninguna documentación técnica en la ficha del repositorio. El nombre sugiere que podría tratarse de un modelo basado en la arquitectura Swin Transformer en su variante base, posiblemente entrenado para procesar imágenes de tres canales (3ch) del sensor LISS-4, un instrumento óptico a bordo de los satélites Resourcesat de la ISRO. Sin embargo, esta interpretación es puramente especulativa y no está respaldada por ningún dato oficial.
 
 El repositorio fue creado el 13 de agosto de 2026 y actualizado el 16 de agosto de 2026, con un tamaño de 5,8 GB. No se dispone de información sobre el pipeline, la licencia, los idiomas soportados ni las capacidades del modelo. Dada la ausencia total de metadatos y descripciones, cualquier uso en producción o investigación requeriría contactar directamente con el autor para obtener detalles sobre arquitectura, entrenamiento y condiciones de uso.
 
@@ -55,4 +55,4 @@ No disponible. Al no conocerse la arquitectura ni el propósito del modelo, no e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ayanchatterjee123/swinbase-liss4-3ch
+- Repositorio en Hugging Face: https://huggingface.co/ayanchatterjee123/swinbase-liss4-3ch

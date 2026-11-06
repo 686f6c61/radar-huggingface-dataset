@@ -93,5 +93,5 @@ La ventaja de zimbra-helper frente a su modelo base es la fiabilidad en el domin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Regi655/zimbra-helper-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Regi655/zimbra-helper-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

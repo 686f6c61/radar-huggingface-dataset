@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chameleon AR head es un pequeño módulo de transferencia de estilo desarrollado por tensorkelechi, publicado en HuggingFace como parte del proyecto [chameleon](https://github.com/kelechi-c/chameleon). No es un modelo generativo en sí mismo, sino una "cabeza" (head) que, dadas una o más imágenes de referencia, genera una descripción textual breve de su estilo visual. Esa descripción se usa después para condicionar Qwen-Image 2.1 Turbo como texto o como tokens suaves, sin ajustar el modelo generativo.
+Chameleon AR head es un pequeño módulo de transferencia de estilo desarrollado por tensorkelechi, publicado en Hugging Face como parte del proyecto [chameleon](https://github.com/kelechi-c/chameleon). No es un modelo generativo en sí mismo, sino una "cabeza" (head) que, dadas una o más imágenes de referencia, genera una descripción textual breve de su estilo visual. Esa descripción se usa después para condicionar Qwen-Image 2.1 Turbo como texto o como tokens suaves, sin ajustar el modelo generativo.
 
 La arquitectura es compacta: un MLP proyecta el embedding de estilo de cada referencia (vector de 1152 dimensiones del codificador de MegaStyle, un SigLIP-so400m afinado) a un código de 256 dimensiones; los códigos de varias referencias se promedian en un único "cartucho" de estilo, que alimenta un transformer causal de 4 capas y 1024 de anchura que escribe hasta 144 tokens usando la matriz de embeddings congelada de Qwen3-4B. Existen dos variantes: `head_grid.pt` (59,8M de parámetros, por defecto) y `head_pre.pt` (58,5M, revisión r7 anterior).
 
@@ -89,7 +89,7 @@ La diferencia clave es que chameleon AR head no modifica el generador: produce u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tensorkelechi/chameleon-ar-head
+- Modelo en Hugging Face: https://huggingface.co/tensorkelechi/chameleon-ar-head
 - Repositorio del proyecto chameleon: https://github.com/kelechi-c/chameleon
 - Dataset de entrenamiento: https://huggingface.co/datasets/tencent/MegaStyle-1.4M
 - Etiquetas de estilo: https://huggingface.co/datasets/tensorkelechi/chameleon-style-labels

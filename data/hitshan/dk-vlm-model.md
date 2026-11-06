@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HITshan/DK-VLM-Model
+- Hugging Face: https://huggingface.co/HITshan/DK-VLM-Model
 - Paper (arXiv): https://arxiv.org/abs/2610.22356
 - PDF del paper: https://arxiv.org/pdf/2610.22356
 - GitHub (inferencia y evaluacion): https://github.com/sumuru789/DK-VLM

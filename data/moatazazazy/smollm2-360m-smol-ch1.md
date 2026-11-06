@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolLM2-360M-smol-ch1 es un ajuste fino (fine-tuning) del modelo HuggingFaceTB/SmolLM2-360M-Instruct, publicado por el usuario moatazazazy en HuggingFace. Se trata de un modelo de lenguaje de pequeno tamano (361.821.120 parametros, aproximadamente 362 millones) orientado a generacion de texto conversacional, entrenado mediante Supervised Fine-Tuning (SFT) con la libreria TRL de HuggingFace. El modelo hereda la arquitectura transformer decoder-only de la familia SmolLM2 y esta empaquetado en formato safetensors para su uso con transformers.
+SmolLM2-360M-smol-ch1 es un ajuste fino (fine-tuning) del modelo HuggingFaceTB/SmolLM2-360M-Instruct, publicado por el usuario moatazazazy en Hugging Face. Se trata de un modelo de lenguaje de pequeno tamano (361.821.120 parametros, aproximadamente 362 millones) orientado a generacion de texto conversacional, entrenado mediante Supervised Fine-Tuning (SFT) con la libreria TRL de Hugging Face. El modelo hereda la arquitectura transformer decoder-only de la familia SmolLM2 y esta empaquetado en formato safetensors para su uso con transformers.
 
 El modelo resuelve el problema de adaptar un modelo instructivo compacto a un dominio o estilo conversacional especifico mediante SFT, lo que permite desplegarlo en entornos con recursos muy limitados (CPU, GPUs de gama baja, dispositivos edge). Su relevancia radica en que los modelos de la familia SmolLM2 estan disenados para inferencia eficiente en hardware modesto, y este ajuste concreto anade una capa de especializacion conversacional sobre esa base.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SmolLM2-360M-smol-ch1 | 361.821.120 | no disponible | no disponible | HuggingFace (0 descargas) |
-| HuggingFaceTB/SmolLM2-360M-Instruct | 362M (aprox.) | no disponible en esta ficha | no disponible en esta ficha | HuggingFace (modelo base, ampliamente usado) |
-| Qwen2.5-0.5B-Instruct | 0,5B (aprox.) | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
-| TinyLlama-1.1B-Chat | 1,1B (aprox.) | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| SmolLM2-360M-smol-ch1 | 361.821.120 | no disponible | no disponible | Hugging Face (0 descargas) |
+| HuggingFaceTB/SmolLM2-360M-Instruct | 362M (aprox.) | no disponible en esta ficha | no disponible en esta ficha | Hugging Face (modelo base, ampliamente usado) |
+| Qwen2.5-0.5B-Instruct | 0,5B (aprox.) | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
+| TinyLlama-1.1B-Chat | 1,1B (aprox.) | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 
 Nota: los datos de los modelos comparables no se han verificado en la informacion proporcionada; se indican solo como referencia de categoria. El ajuste smol-ch1 no aporta mejoras documentadas frente a su base, por lo que la comparativa de rendimiento no puede establecerse.
 
@@ -89,6 +89,6 @@ Nota: los datos de los modelos comparables no se han verificado en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moatazazazy/SmolLM2-360M-smol-ch1
+- Modelo en Hugging Face: https://huggingface.co/moatazazazy/SmolLM2-360M-smol-ch1
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Repositorio TRL: https://github.com/huggingface/trl

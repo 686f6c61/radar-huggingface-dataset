@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Whisper tiny British es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario roryod en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) especializado en ingles britanico, entrenado sobre el dataset naharte/british_english. El modelo parte de la arquitectura encoder-decoder transformer de Whisper, en su variante "tiny", la mas pequena de la familia.
+Whisper tiny British es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario roryod en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) especializado en ingles britanico, entrenado sobre el dataset naharte/british_english. El modelo parte de la arquitectura encoder-decoder transformer de Whisper, en su variante "tiny", la mas pequena de la familia.
 
 Con 37.760.640 parametros totales y un tamano de repositorio de 0,3 GB, es un modelo muy ligero, pensado para tareas de transcripcion en entornos con recursos limitados o para despliegues en el borde (edge). Su relevancia radica en la especializacion dialectal: frente al whisper-tiny original, que se entrena con datos multilingues y heterogeneos, este ajuste busca mejorar la precision sobre acentos y variantes del ingles britanico.
 
-La model card es escasa y generada automaticamente por el Trainer de HuggingFace; no incluye descripcion del modelo, usos previstos ni datos de entrenamiento detallados. El autor declara un WER de 13,3177 sobre el split de test del dataset British English, un valor que debe interpretarse con cautela al no estar verificado.
+La model card es escasa y generada automaticamente por el Trainer de Hugging Face; no incluye descripcion del modelo, usos previstos ni datos de entrenamiento detallados. El autor declara un WER de 13,3177 sobre el split de test del dataset British English, un valor que debe interpretarse con cautela al no estar verificado.
 
 ## Especificaciones tecnicas
 
@@ -77,10 +77,10 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 
 | Modelo | Parametros | Contexto | WER (British English) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| roryod/whisper-tiny_british_5c4 | 37,7 M | 30 s audio | 13,32 (declarado) | apache-2.0 | HuggingFace |
-| openai/whisper-tiny | ~39 M | 30 s audio | no disponible | apache-2.0 | HuggingFace |
-| openai/whisper-base | ~74 M | 30 s audio | no disponible | apache-2.0 | HuggingFace |
-| openai/whisper-small | ~244 M | 30 s audio | no disponible | apache-2.0 | HuggingFace |
+| roryod/whisper-tiny_british_5c4 | 37,7 M | 30 s audio | 13,32 (declarado) | apache-2.0 | Hugging Face |
+| openai/whisper-tiny | ~39 M | 30 s audio | no disponible | apache-2.0 | Hugging Face |
+| openai/whisper-base | ~74 M | 30 s audio | no disponible | apache-2.0 | Hugging Face |
+| openai/whisper-small | ~244 M | 30 s audio | no disponible | apache-2.0 | Hugging Face |
 
 No se dispone de resultados comparativos de WER para los modelos alternativos en el dataset British English en la informacion proporcionada.
 
@@ -98,7 +98,7 @@ No se dispone de resultados comparativos de WER para los modelos alternativos en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roryod/whisper-tiny_british_5c4
+- Modelo en Hugging Face: https://huggingface.co/roryod/whisper-tiny_british_5c4
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset: https://huggingface.co/datasets/naharte/british_english
 - Repositorio de Whisper (OpenAI): https://github.com/openai/whisper

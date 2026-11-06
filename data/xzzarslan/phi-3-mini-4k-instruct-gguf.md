@@ -78,9 +78,9 @@ No se dispone de comparativas de benchmarks directas en la información proporci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/XZZArslan/Phi-3-mini-4k-instruct-gguf
+- Repositorio Hugging Face: https://huggingface.co/XZZArslan/Phi-3-mini-4k-instruct-gguf
 - Repositorio oficial de Microsoft: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf
 - Blog de Microsoft sobre Phi-3: https://aka.ms/phi3blog-april
 - Informe técnico de Phi-3: https://aka.ms/phi3-tech-report
-- Modelo original en HuggingFace: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
+- Modelo original en Hugging Face: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Documentación de Ollama: https://ollama.com/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zhaodillon/tinygpt-size-5 es un modelo publicado en HuggingFace por el usuario zhaodillon. La informacion disponible es extremadamente limitada: el repositorio no incluye model card, no declara licencia, idiomas ni pipeline de inferencia, y cuenta con una unica descarga y cero likes en el momento de la consulta. El unico contenido verificable son las etiquetas del repositorio (onnx, gpt2, region:us), el identificador del autor y un tamano de repositorio de 0,1 GB.
+zhaodillon/tinygpt-size-5 es un modelo publicado en Hugging Face por el usuario zhaodillon. La informacion disponible es extremadamente limitada: el repositorio no incluye model card, no declara licencia, idiomas ni pipeline de inferencia, y cuenta con una unica descarga y cero likes en el momento de la consulta. El unico contenido verificable son las etiquetas del repositorio (onnx, gpt2, region:us), el identificador del autor y un tamano de repositorio de 0,1 GB.
 
 El modelo se distribuye en formato ONNX, lo que indica que esta pensado para inferencia optimizada mediante ONNX Runtime o entornos derivados (por ejemplo, ejecucion en navegador o en dispositivos con aceleracion limitada), en lugar de los pesos safetensors habituales de la libreria Transformers. La etiqueta gpt2 apunta a una arquitectura de la familia GPT-2 (transformer decoder-only con atencion causal), aunque no se especifica el numero de parametros, la longitud de contexto ni la composicion del entrenamiento.
 
@@ -76,10 +76,10 @@ No hay informacion suficiente sobre zhaodillon/tinygpt-size-5 para establecer un
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| zhaodillon/tinygpt-size-5 | no disponible | no disponible | no disponible | ONNX | HuggingFace, 1 descarga |
+| zhaodillon/tinygpt-size-5 | no disponible | no disponible | no disponible | ONNX | Hugging Face, 1 descarga |
 | GPT-2 small (referencia publica) | 124 M | 1024 tokens | MIT | safetensors, PyTorch | Ampliamente disponible |
 | distilgpt2 (referencia publica) | 82 M | 1024 tokens | Apache 2.0 | safetensors, PyTorch | Ampliamente disponible |
-| coderian/TinyGPT (aparece en la busqueda) | no disponible | no disponible | no disponible | no disponible | HuggingFace; proyecto distinto sin relacion confirmada |
+| coderian/TinyGPT (aparece en la busqueda) | no disponible | no disponible | no disponible | no disponible | Hugging Face; proyecto distinto sin relacion confirmada |
 
 La comparacion con coderian/TinyGPT, TinyGPT-V o tinygpt.org no es procedente: son proyectos con nombres similares pero sin vinculo verificable con zhaodillon/tinygpt-size-5.
 
@@ -97,7 +97,7 @@ La comparacion con coderian/TinyGPT, TinyGPT-V o tinygpt.org no es procedente: s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zhaodillon/tinygpt-size-5
+- Hugging Face: https://huggingface.co/zhaodillon/tinygpt-size-5
 - TinyGPT-V (proyecto con nombre similar, sin relacion confirmada): https://github.com/DLYuanGod/TinyGPT-V
 - coderian/TinyGPT (proyecto con nombre similar, sin relacion confirmada): https://huggingface.co/coderian/TinyGPT
 - tinygpt.org (sitio con nombre similar, sin relacion confirmada): https://tinygpt.org/

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_student_medmcqa_answer_variance_sft_llama8b` es un ajuste fino supervisado (SFT) publicado en HuggingFace por el usuario `ishikaa`, construido sobre una base Llama de 8.000 millones de parametros. Por la nomenclatura del repositorio se deduce que se trata de un "student model" entrenado en el contexto de un experimento de adquisicion de datos (active learning o seleccion de muestras) sobre el corpus MedMCQA, una coleccion de preguntas de opcion multiple de examenes de acceso a facultades de medicina, con algun criterio relacionado con la varianza de respuestas. Esta interpretacion proviene unicamente del nombre del modelo, ya que la model card no documenta nada al respecto.
+El modelo `ishikaa/acquisition_student_medmcqa_answer_variance_sft_llama8b` es un ajuste fino supervisado (SFT) publicado en Hugging Face por el usuario `ishikaa`, construido sobre una base Llama de 8.000 millones de parametros. Por la nomenclatura del repositorio se deduce que se trata de un "student model" entrenado en el contexto de un experimento de adquisicion de datos (active learning o seleccion de muestras) sobre el corpus MedMCQA, una coleccion de preguntas de opcion multiple de examenes de acceso a facultades de medicina, con algun criterio relacionado con la varianza de respuestas. Esta interpretacion proviene unicamente del nombre del modelo, ya que la model card no documenta nada al respecto.
 
-El modelo fue creado el 15 de septiembre de 2026 (fecha registrada en el Hub que resulta anomala) y actualizado dos minutos despues, con 217 descargas y cero "likes" en el momento de redactar esta ficha. El tamano del repositorio, 16,1 GB, es coherente con pesos en precision de 16 bits para 8.030.261.248 parametros, y el modelo se distribuye en formato `safetensors`. La model card es la plantilla autogenerada por HuggingFace con todos los campos marcados como "[More Information Needed]", por lo que no hay informacion oficial sobre licencia, idiomas, datos de entrenamiento, hiperparametros ni evaluacion.
+El modelo fue creado el 15 de septiembre de 2026 (fecha registrada en el Hub que resulta anomala) y actualizado dos minutos despues, con 217 descargas y cero "likes" en el momento de redactar esta ficha. El tamano del repositorio, 16,1 GB, es coherente con pesos en precision de 16 bits para 8.030.261.248 parametros, y el modelo se distribuye en formato `safetensors`. La model card es la plantilla autogenerada por Hugging Face con todos los campos marcados como "[More Information Needed]", por lo que no hay informacion oficial sobre licencia, idiomas, datos de entrenamiento, hiperparametros ni evaluacion.
 
 Su relevancia es limitada y de ambito estrictamente investigador: se trata de un artefacto de experimento, no de un modelo listo para produccion. No obstante, puede ser util como referencia para quien investigue tecnicas de seleccion de datos en dominios medicos, destilacion de modelos Llama de 8B o ajuste supervisado sobre benchmarks de QA medico. Cualquier uso en un contexto clinico o de decision medica real queda fuera de alcance por ausencia total de documentacion y de garantias.
 
@@ -32,7 +32,7 @@ Su relevancia es limitada y de ambito estrictamente investigador: se trata de un
 
 No hay informacion publicada sobre la arquitectura concreta mas alla de lo que permiten inferir los metadatos. El tag `llama` y el sufijo `llama8b` del identificador apuntan a una base Llama de 8B, y el recuento exacto de parametros (8.030.261.248) coincide con la familia Llama 3 8B. El repositorio contiene unicamente pesos en `safetensors` con arquitectura de transformer denso, sin indicios de mezcla de expertos (MoE), atencion lineal ni arquitecturas hibridas. No se especifica la ventana de contexto efectiva tras el ajuste.
 
-En cuanto al entrenamiento, los tags `trl` y `sft` confirman que se utilizo la libreria TRL de HuggingFace para un ajuste fino supervisado, y el nombre del repositorio indica que los datos proceden de MedMCQA (`medmcqa`) y que el objetivo del experimento estaba relacionado con la varianza de respuestas (`answer_variance`) dentro de un esquema de seleccion de datos para un modelo estudiante (`acquisition_student`). No se documentan el numero de tokens de entrenamiento, la composicion del dataset, el regimen de precision (fp16, bf16, fp8), la existencia de RLHF o DPO, ni los hiperparametros. Tampoco se describe ninguna innovacion tecnica de decodificacion o de atencion. El unico enlace academico presente en la model card, `arxiv:1910.09700`, corresponde a la referencia generica del calculador de impacto ambiental de Lacoste et al. (2019) incluida en la plantilla, no a un articulo sobre el modelo.
+En cuanto al entrenamiento, los tags `trl` y `sft` confirman que se utilizo la libreria TRL de Hugging Face para un ajuste fino supervisado, y el nombre del repositorio indica que los datos proceden de MedMCQA (`medmcqa`) y que el objetivo del experimento estaba relacionado con la varianza de respuestas (`answer_variance`) dentro de un esquema de seleccion de datos para un modelo estudiante (`acquisition_student`). No se documentan el numero de tokens de entrenamiento, la composicion del dataset, el regimen de precision (fp16, bf16, fp8), la existencia de RLHF o DPO, ni los hiperparametros. Tampoco se describe ninguna innovacion tecnica de decodificacion o de atencion. El unico enlace academico presente en la model card, `arxiv:1910.09700`, corresponde a la referencia generica del calculador de impacto ambiental de Lacoste et al. (2019) incluida en la plantilla, no a un articulo sobre el modelo.
 
 ## Capacidades
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion de 4 bits: aproximadamente 5-6 GB de pesos mas cache KV; requeriria convertir los pesos a un formato cuantizado, ya que el repositorio solo publica safetensors en 16 bits.
 - GPU de datacenter recomendadas: A100 (40 GB o 80 GB), H100 (80 GB), L40S (48 GB) o A6000 (48 GB), todas capaces de alojar el modelo en fp16 sin cuantizar.
 - GPU de consumo: cabe en RTX 4090, RTX 3090 o RTX 4080 con 24 GB en fp16 siempre que se limite el contexto y el tamano de lote; en tarjetas de 16 GB o menos es necesario recurrir a cuantizacion de 8 o 4 bits.
-- Opciones de despliegue: al incluir los tags `text-generation-inference` y `endpoints-compatible`, el modelo esta preparado para TGI y para Inference Endpoints de HuggingFace; tambien es compatible con vLLM y con la carga directa mediante transformers. Ollama y llama.cpp requeririan una conversion previa a GGUF que no se distribuye en el repositorio.
+- Opciones de despliegue: al incluir los tags `text-generation-inference` y `endpoints-compatible`, el modelo esta preparado para TGI y para Inference Endpoints de Hugging Face; tambien es compatible con vLLM y con la carga directa mediante transformers. Ollama y llama.cpp requeririan una conversion previa a GGUF que no se distribuye en el repositorio.
 - Latencia y throughput: no disponibles; no se publican mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La ausencia de licencia, idiomas, contexto y evaluacion declarados impide una co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| acquisition_student_medmcqa_answer_variance_sft_llama8b | 8,03 B | no disponible | no disponible | Safetensors en HuggingFace | no disponible |
+| acquisition_student_medmcqa_answer_variance_sft_llama8b | 8,03 B | no disponible | no disponible | Safetensors en Hugging Face | no disponible |
 | Llama 3.1 8B Instruct (base de referencia generalista) | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Safetensors, GGUF, cuantizaciones de terceros | Amplia bateria publica de benchmarks generalistas |
 | BioMistral 7B (referencia en dominio biomedico) | 7 B | 8.000 tokens | Apache 2.0 | Safetensors y GGUF | Benchmarks medicos publicados en su model card |
 | Meditron 7B (referencia en dominio clinico) | 7 B | no disponible | Licencia Llama 2 | Safetensors | Benchmarks medicos publicados en su model card |
@@ -99,7 +99,7 @@ La diferencia clave no esta en los parametros, muy similares, sino en la documen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_medmcqa_answer_variance_sft_llama8b
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_medmcqa_answer_variance_sft_llama8b
 - Referencia citada en la model card (calculador de impacto ambiental): https://mlco2.github.io/impact
 - Articulo asociado a esa referencia: https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019, "Quantifying the Carbon Emissions of Machine Learning"); no guarda relacion con la arquitectura ni el entrenamiento de este modelo
 - Repositorio o paper especifico del modelo: no disponible

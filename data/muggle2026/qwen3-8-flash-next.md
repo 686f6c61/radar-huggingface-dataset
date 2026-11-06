@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next es un modelo de lenguaje causal con codificador de vision publicado por Muggle2026 en HuggingFace bajo el paraguas de la familia Qwen. Se presenta como una vista previa experimental de la arquitectura que sustentara Qwen4, y combina atención híbrida con atención dispersa, residuos con compuerta y embeddings de n-gramas sobre una base Mixture-of-Experts. El modelo resuelve el problema de escalar parámetros y ventana de contexto sin disparar el coste computacional, algo crítico para cargas de trabajo agénticas y de contexto largo.
+Qwen3.8-Flash-Next es un modelo de lenguaje causal con codificador de vision publicado por Muggle2026 en Hugging Face bajo el paraguas de la familia Qwen. Se presenta como una vista previa experimental de la arquitectura que sustentara Qwen4, y combina atención híbrida con atención dispersa, residuos con compuerta y embeddings de n-gramas sobre una base Mixture-of-Experts. El modelo resuelve el problema de escalar parámetros y ventana de contexto sin disparar el coste computacional, algo crítico para cargas de trabajo agénticas y de contexto largo.
 
 La arquitectura declara 125B parámetros en el modelo de lenguaje con 6B activados, más 51B en embeddings de n-gramas y 4B en MTP, lo que da un total real de pesos de aproximadamente 180B según los safetensors del repositorio. La longitud de contexto nativa es de 262.144 tokens, extensible hasta 1.000.000. El repositorio ocupa 360 GB y los pesos están en formato safetensors para transformers, con compatibilidad declarada con vLLM, SGLang y TokenSpeed.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-Flash-Next | ~180B totales (6B activos) | 262.144 nativo, hasta 1.000.000 | qwen-community-1.0 | Pesos abiertos en HuggingFace |
+| Qwen3.8-Flash-Next | ~180B totales (6B activos) | 262.144 nativo, hasta 1.000.000 | qwen-community-1.0 | Pesos abiertos en Hugging Face |
 | Qwen3.8-Flash (API oficial) | no disponible | 1.000.000 por defecto | servicio gestionado | Qwen Cloud |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Muggle2026/Qwen3.8-Flash-Next
+- Hugging Face: https://huggingface.co/Muggle2026/Qwen3.8-Flash-Next
 - Blog oficial: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Informe técnico: https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf
 - Repositorio GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next

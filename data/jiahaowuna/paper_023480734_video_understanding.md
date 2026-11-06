@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `paper_023480734_video_understanding` es un artefacto de investigación publicado en HuggingFace que contiene un documento académico completo en formato Markdown sobre el tema de comprensión de video (video understanding). Desarrollado por el usuario `jiahaowuna`, este repositorio no contiene un modelo de aprendizaje automático tradicional, sino un paper académico estructurado según el formato IMRaD (Introducción, Método, Experimentos, Resultados Relacionados y Conclusión), con estilo de escritura argumentativo y citas en formato endnote.
+El modelo `paper_023480734_video_understanding` es un artefacto de investigación publicado en Hugging Face que contiene un documento académico completo en formato Markdown sobre el tema de comprensión de video (video understanding). Desarrollado por el usuario `jiahaowuna`, este repositorio no contiene un modelo de aprendizaje automático tradicional, sino un paper académico estructurado según el formato IMRaD (Introducción, Método, Experimentos, Resultados Relacionados y Conclusión), con estilo de escritura argumentativo y citas en formato endnote.
 
 El artefacto está diseñado para ser procesado con Typst, un sistema de composición tipográfica moderno, y aborda el campo emergente de los modelos de lenguaje grandes aplicados a la comprensión de video (Vid-LLMs). Su relevancia radica en que el campo de la comprensión de video con LLMs está experimentando un crecimiento acelerado, como demuestran las múltiples encuestas recientes publicadas en arXiv y IEEE, y este documento pretende contribuir a la literatura académica de esta área.
 
@@ -42,7 +42,7 @@ El contenido del paper aborda el tema de la comprension de video con modelos de 
 - Revision de literatura: el paper puede utilizarse como punto de partida para una revision sistematica del campo de Vid-LLMs, complementando las encuestas existentes como "Video Understanding with Large Language Models: A Survey".
 - Material docente: el documento puede adaptarse como material de lectura para cursos de posgrado sobre modelos multimodales y comprension de video.
 - Plantilla de escritura: la estructura y el estilo pueden servir como plantilla para que otros investigadores redacten sus propios papers sobre temas relacionados.
-- Difusion de resultados: el repositorio en HuggingFace permite compartir el documento con la comunidad investigadora de forma abierta bajo licencia BSD-3-Clause.
+- Difusion de resultados: el repositorio en Hugging Face permite compartir el documento con la comunidad investigadora de forma abierta bajo licencia BSD-3-Clause.
 - Comparacion de metodologias: el paper puede utilizarse para comparar diferentes enfoques de comprension de video, ya que incluye secciones de metodo y experimentos.
 
 ## Benchmarks y rendimiento
@@ -71,9 +71,9 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jiahaowuna/paper_023480734_video_understanding
+- Repositorio en Hugging Face: https://huggingface.co/jiahaowuna/paper_023480734_video_understanding
 - Encuesta "Video Understanding with Large Language Models: A Survey" (arXiv): https://arxiv.org/abs/2312.17432
 - Version HTML de la encuesta: https://arxiv.org/html/2312.17432v5
-- Pagina del paper en HuggingFace: https://huggingface.co/papers/2312.17432
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2312.17432
 - Version IEEE de la encuesta: https://ieeexplore.ieee.org/document/10982110
 - Repositorio "Awesome-LLMs-for-Video-Understanding" en GitHub: https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`flyingfishinwater/coreml` es un repositorio alojado en HuggingFace por el usuario `flyingfishinwater`, publicado bajo licencia Apache 2.0. El repositorio ocupa 0,4 GB y cuenta con cero descargas y cero valoraciones en el momento de la consulta. No dispone de model card descriptiva: el unico contenido del README es la declaracion de licencia, sin informacion sobre arquitectura, entrenamiento, capacidades o uso previsto.
+`flyingfishinwater/coreml` es un repositorio alojado en Hugging Face por el usuario `flyingfishinwater`, publicado bajo licencia Apache 2.0. El repositorio ocupa 0,4 GB y cuenta con cero descargas y cero valoraciones en el momento de la consulta. No dispone de model card descriptiva: el unico contenido del README es la declaracion de licencia, sin informacion sobre arquitectura, entrenamiento, capacidades o uso previsto.
 
 No es posible determinar a partir de la informacion disponible que tipo de artefacto contiene el repositorio (pesos de un modelo de lenguaje, un conversor a formato Core ML, un clasificador, embeddings u otro tipo de recurso). El nombre del repositorio sugiere una relacion con Core ML, el formato de Apple para desplegar modelos en dispositivos de su ecosistema, pero esto es una inferencia a partir del identificador y no un dato confirmado por el autor.
 
@@ -71,7 +71,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| flyingfishinwater/coreml | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| flyingfishinwater/coreml | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/flyingfishinwater/coreml
+- Repositorio en Hugging Face: https://huggingface.co/flyingfishinwater/coreml
 - Perfil del autor: https://huggingface.co/flyingfishinwater
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Papers, blogs, repositorios o demos asociados: no disponible (la busqueda web no ha devuelto ningun resultado relevante).

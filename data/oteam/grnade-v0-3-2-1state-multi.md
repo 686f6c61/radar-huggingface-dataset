@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo | Conformaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gRNAde v0.3.2 1state multi (este) | 2,16 M | GVP + decoder autorregresivo | 1 | AGPL-3.0 | HuggingFace (oteam) |
-| gRNAde v1 | 2,16 M | GVP + decoder con features de secuencia y pares de bases | 1 | AGPL-3.0 | HuggingFace (oteam/grnade) |
-| gRNAde v0.3.2 3state multi | 2,16 M | GVP + decoder, grafo espacial | 3 | AGPL-3.0 | HuggingFace (oteam) |
-| gRNAde v0.3.2 5state multi | 2,16 M | GVP + decoder, grafo espacial | 5 | AGPL-3.0 | HuggingFace (oteam) |
+| gRNAde v0.3.2 1state multi (este) | 2,16 M | GVP + decoder autorregresivo | 1 | AGPL-3.0 | Hugging Face (oteam) |
+| gRNAde v1 | 2,16 M | GVP + decoder con features de secuencia y pares de bases | 1 | AGPL-3.0 | Hugging Face (oteam/grnade) |
+| gRNAde v0.3.2 3state multi | 2,16 M | GVP + decoder, grafo espacial | 3 | AGPL-3.0 | Hugging Face (oteam) |
+| gRNAde v0.3.2 5state multi | 2,16 M | GVP + decoder, grafo espacial | 5 | AGPL-3.0 | Hugging Face (oteam) |
 
 Las variantes comparten arquitectura y numero de parametros; difieren en el numero de conformaciones de entrenamiento y en el tipo de grafo (v1 con canales de secuencia y pares de bases, v0.3.2 solo espacial). No se dispone de datos de rendimiento comparativo entre ellas en la informacion proporcionada.
 
@@ -97,7 +97,7 @@ Las variantes comparten arquitectura y numero de parametros; difieren en el nume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/grnade-v0.3.2-1state-multi
+- Modelo en Hugging Face: https://huggingface.co/oteam/grnade-v0.3.2-1state-multi
 - Variante v1: https://huggingface.co/oteam/grnade
 - Checkpoint ODesign: https://huggingface.co/oteam/grnade-odesign
 - Variantes v0.3.2 1state: [all](https://huggingface.co/oteam/grnade-v0.3.2-1state-all), [das](https://huggingface.co/oteam/grnade-v0.3.2-1state-das)

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "StephC/Gemma-2-2B-Question-First-Exposure-CQO-seed20261009",
+  "slug": "stephc-gemma-2-2b-question-first-exposure-cqo-seed20261009",
+  "author": "StephC",
+  "url": "https://huggingface.co/StephC/Gemma-2-2B-Question-First-Exposure-CQO-seed20261009",
+  "created_at": "2026-11-06T07:15:18.000Z",
+  "updated_at": "2026-11-06T07:19:15.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma2",
+    "text-generation",
+    "question-first-exposure",
+    "prompt-order",
+    "mechanistic-interpretability",
+    "research",
+    "conversational",
+    "en",
+    "base_model:google/gemma-2-2b-it",
+    "base_model:finetune:google/gemma-2-2b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 10496004820,
+  "storage_human": "10.5 GB",
+  "base_model": "google/gemma-2-2b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

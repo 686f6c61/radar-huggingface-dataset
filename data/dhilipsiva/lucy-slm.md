@@ -83,10 +83,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dhilipsiva/lucy-slm (0,6B) | 596.049.920 | no disponible | Puertas propias: voice 1.0, unknown 0.8103, known 0.627, book 0.4133 | Apache-2.0 | HuggingFace, GGUF y MLC para navegador |
-| dhilipsiva/lucy-slm (1,7B) | no disponible en la informacion proporcionada (base Qwen3-1.7B) | no disponible | Puertas propias: voice 1.0, unknown 0.9052, known 0.6426, book 0.4567 | Apache-2.0 | HuggingFace, MLC para WebGPU |
-| Qwen/Qwen3-0.6B (modelo base) | no disponible en la informacion proporcionada | no disponible | no evaluado con las puertas de Lucy D | Apache-2.0 (segun la model card) | HuggingFace |
-| Qwen/Qwen3-1.7B (modelo base) | no disponible en la informacion proporcionada | no disponible | no evaluado con las puertas de Lucy D | Apache-2.0 (segun la model card) | HuggingFace |
+| dhilipsiva/lucy-slm (0,6B) | 596.049.920 | no disponible | Puertas propias: voice 1.0, unknown 0.8103, known 0.627, book 0.4133 | Apache-2.0 | Hugging Face, GGUF y MLC para navegador |
+| dhilipsiva/lucy-slm (1,7B) | no disponible en la informacion proporcionada (base Qwen3-1.7B) | no disponible | Puertas propias: voice 1.0, unknown 0.9052, known 0.6426, book 0.4567 | Apache-2.0 | Hugging Face, MLC para WebGPU |
+| Qwen/Qwen3-0.6B (modelo base) | no disponible en la informacion proporcionada | no disponible | no evaluado con las puertas de Lucy D | Apache-2.0 (segun la model card) | Hugging Face |
+| Qwen/Qwen3-1.7B (modelo base) | no disponible en la informacion proporcionada | no disponible | no evaluado con las puertas de Lucy D | Apache-2.0 (segun la model card) | Hugging Face |
 
 No se dispone de datos comparativos frente a otros ajustes de persona del mismo tamano publicados en la información proporcionada.
 
@@ -105,7 +105,7 @@ No se dispone de datos comparativos frente a otros ajustes de persona del mismo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhilipsiva/lucy-slm
+- Modelo en Hugging Face: https://huggingface.co/dhilipsiva/lucy-slm
 - Demo de chat: https://dhilipsiva.dev/chat/
 - Repositorio nibli (formato de memoria en texto plano): https://github.com/dhilipsiva/nibli
 - candle (runtime de CPU compilado a WebAssembly): https://github.com/huggingface/candle

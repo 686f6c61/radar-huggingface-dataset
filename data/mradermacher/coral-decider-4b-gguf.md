@@ -4,7 +4,7 @@
 
 Coral-decider-4b-GGUF es un repositorio de cuantizaciones estaticas en formato GGUF generado por mradermacher a partir del modelo base OceanLabs/Coral-decider-4b. No se trata, por tanto, de un modelo entrenado por el autor del repositorio, sino de una conversion y cuantizacion del checkpoint original en precision completa (etiquetado internamente como `convert_type: hf`) a una familia de ficheros GGUF listos para inferencia en CPU y GPU con llama.cpp y herramientas compatibles. El repositorio fue creado el 27 de septiembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni valoraciones.
 
-El modelo pertenece a la categoria de los transformers de ~4.000 millones de parametros, pero la model card publicada no incluye informacion sobre arquitectura, datos de entrenamiento, longitud de contexto, idiomas o licencia del modelo original. El nombre "decider" y la existencia de otros repositorios de la misma familia en HuggingFace (mradermacher/decider-4b-GGUF y mradermacher/assay-4b-GGUF, ambos etiquetados como `decision-model`, `calibrated` y `structured-output`) sugieren una orientacion a tareas de decision y salida estructurada, pero no hay confirmacion de que Coral-decider-4b comparta ese diseno.
+El modelo pertenece a la categoria de los transformers de ~4.000 millones de parametros, pero la model card publicada no incluye informacion sobre arquitectura, datos de entrenamiento, longitud de contexto, idiomas o licencia del modelo original. El nombre "decider" y la existencia de otros repositorios de la misma familia en Hugging Face (mradermacher/decider-4b-GGUF y mradermacher/assay-4b-GGUF, ambos etiquetados como `decision-model`, `calibrated` y `structured-output`) sugieren una orientacion a tareas de decision y salida estructurada, pero no hay confirmacion de que Coral-decider-4b comparta ese diseno.
 
 Su relevancia practica es limitada pero concreta: permite ejecutar un modelo de 4B en hardware de consumo gracias a las 13 cuantizaciones publicadas (desde Q2_K hasta f16), lo que facilita prototipado local, pruebas de latencia y despliegue en entornos sin GPU dedicada. Cualquier evaluacion seria del modelo requiere consultar el repositorio del modelo base, cuya informacion no esta disponible en los datos proporcionados.
 
@@ -18,12 +18,12 @@ Su relevancia practica es limitada pero concreta: permite ejecutar un modelo de 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (la metadata de HuggingFace no la declara; debe consultarse la del modelo base OceanLabs/Coral-decider-4b) |
+| Licencia | no disponible (la metadata de Hugging Face no la declara; debe consultarse la del modelo base OceanLabs/Coral-decider-4b) |
 | Formato de pesos | GGUF (cuantizaciones estaticas, `quantize_version: 2`, `output_tensor_quantised: 1`) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base. La model card del repositorio GGUF se limita a indicar que son cuantizaciones estaticas de https://huggingface.co/OceanLabs/Coral-decider-4b y anade metadatos del proceso de conversion: `convert_type: hf` (conversion desde pesos HuggingFace), `quantize_version: 2` y `output_tensor_quantised: 1`, ademas de la lista de 13 cuantizaciones generadas. No hay datos sobre numero de tokens de entrenamiento, composicion del dataset, uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre innovaciones tecnicas como atencion lineal o decodificacion especulativa.
+No se dispone de informacion sobre la arquitectura del modelo base. La model card del repositorio GGUF se limita a indicar que son cuantizaciones estaticas de https://huggingface.co/OceanLabs/Coral-decider-4b y anade metadatos del proceso de conversion: `convert_type: hf` (conversion desde pesos Hugging Face), `quantize_version: 2` y `output_tensor_quantised: 1`, ademas de la lista de 13 cuantizaciones generadas. No hay datos sobre numero de tokens de entrenamiento, composicion del dataset, uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre innovaciones tecnicas como atencion lineal o decodificacion especulativa.
 
 Respecto al proceso de cuantizacion en si, se trata de una conversion estandar del pipeline de mradermacher: el modelo base se convierte al formato GGUF y se emiten simultaneamente varias cuantizaciones k-quant (Q2_K a Q6_K) e i-quant (IQ4_XS), junto con una version f16 y una Q8_0 como referencias de mayor fidelidad. No se documenta el uso de mixed-precision selectiva por capas ni de calibracion con datasets especificos, mas alla de lo implicito en los propios algoritmos de llama.cpp.
 
@@ -107,10 +107,10 @@ No se dispone de datos de rendimiento comparativos entre estos tres repositorios
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Coral-decider-4b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Coral-decider-4b-GGUF
 - Modelo base (citado en la model card): https://huggingface.co/OceanLabs/Coral-decider-4b
 - Repositorio hermano: https://huggingface.co/mradermacher/decider-4b-GGUF
 - Repositorio hermano: https://huggingface.co/mradermacher/assay-4b-GGUF
-- Perfil del autor en HuggingFace: https://www.aimodels.fyi/creators/huggingFace/mradermacher
+- Perfil del autor en Hugging Face: https://www.aimodels.fyi/creators/huggingFace/mradermacher
 - Ficha de referencia de la familia decider (modelo distinto, orientativo): https://www.gradually.ai/en/ai-models/decider-4b/
 - Model card de Mapika/decider (modelo distinto, orientativo): https://github.com/Mapika/decider/blob/main/MODEL_CARD_4B.md

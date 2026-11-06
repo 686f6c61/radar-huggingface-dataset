@@ -105,6 +105,6 @@ La comparacion con modelos alternativos del mismo rango de parametros (por ejemp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IsValorum/Apodex-1.1-mini-APEX-I-MiniPlus-V2.1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/IsValorum/Apodex-1.1-mini-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base: https://huggingface.co/apodex/Apodex-1.1-mini
 - Los resultados de busqueda web proporcionados no contienen ningun enlace relevante sobre este modelo, su arquitectura o sus benchmarks; no se dispone de paper, blog tecnico, repositorio adicional ni demo asociados.

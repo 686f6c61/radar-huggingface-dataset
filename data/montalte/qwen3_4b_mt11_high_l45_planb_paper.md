@@ -54,8 +54,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| Montalte/qwen3_4b_mt11_high_l45_planb_paper | 4.022.468.096 | no disponible | Apache 2.0 | HuggingFace | no disponible |
-| Qwen/Qwen3-4B-Base | 4.022.468.096 | no disponible | Apache 2.0 | HuggingFace | no disponible |
+| Montalte/qwen3_4b_mt11_high_l45_planb_paper | 4.022.468.096 | no disponible | Apache 2.0 | Hugging Face | no disponible |
+| Qwen/Qwen3-4B-Base | 4.022.468.096 | no disponible | Apache 2.0 | Hugging Face | no disponible |
 | Otros modelos de 4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -68,6 +68,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Montalte/qwen3_4b_mt11_high_l45_planb_paper
+- Hugging Face: https://huggingface.co/Montalte/qwen3_4b_mt11_high_l45_planb_paper
 - Modelo base Qwen/Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Qwen3 Technical Report (arXiv): https://arxiv.org/html/2505.09388v1

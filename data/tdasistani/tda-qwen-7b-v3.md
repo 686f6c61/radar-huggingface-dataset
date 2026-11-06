@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TDA (Türk Dünyası Asistanı Anka) 7B v3 es un ajuste fino (fine-tuning) en turco del modelo Qwen2.5-7B-Instruct, publicado por el usuario TDAsistani en HuggingFace. El objetivo declarado por el autor es especializar el modelo base en conversación general y en contenido relacionado con la historia y la cultura del mundo túrquico, manteniendo la licencia Apache 2.0 del modelo original. El repositorio corresponde a la tercera versión de la serie y se distribuye como adaptadores LoRA, no como pesos completos: el tamaño del repo (0,2 GB) es coherente con un adaptador de rango 16 sobre un modelo de 7B, cuyos pesos en precisión completa ocuparían del orden de 15 GB.
+TDA (Türk Dünyası Asistanı Anka) 7B v3 es un ajuste fino (fine-tuning) en turco del modelo Qwen2.5-7B-Instruct, publicado por el usuario TDAsistani en Hugging Face. El objetivo declarado por el autor es especializar el modelo base en conversación general y en contenido relacionado con la historia y la cultura del mundo túrquico, manteniendo la licencia Apache 2.0 del modelo original. El repositorio corresponde a la tercera versión de la serie y se distribuye como adaptadores LoRA, no como pesos completos: el tamaño del repo (0,2 GB) es coherente con un adaptador de rango 16 sobre un modelo de 7B, cuyos pesos en precisión completa ocuparían del orden de 15 GB.
 
 Técnicamente se trata de un transformer decoder-only de 7,6 mil millones de parámetros, entrenado mediante QLoRA (cuantización de 4 bits) con la librería Unsloth y configuración LoRA r=16, alpha=16. El autor documenta un `max_seq_length` de 2048 tokens en el ejemplo de inferencia, muy por debajo de la ventana nativa del modelo base, por lo que la longitud de contexto efectiva del ajuste es limitada.
 
@@ -23,7 +23,7 @@ Su relevancia es acotada y conviene ser explícito: no se han publicado benchmar
 | Vocabulario del tokenizador | 151.643 tokens (heredado del modelo base) |
 | Metodo de ajuste | LoRA con r=16, alpha=16, sobre cuantizacion de 4 bits, con Unsloth |
 | Tamano del repositorio | 0,2 GB |
-| Fecha de publicacion | 16 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 16 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -73,9 +73,9 @@ La model card no incluye ninguna metrica de evaluacion (MMLU, GSM8K, HumanEval, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| TDAsistani/tda-qwen-7b-v3 | 7,61 mil millones (adaptador LoRA) | 2048 tokens en el ejemplo del autor; base hasta 32.768 nativos | Apache 2.0 | HuggingFace (0 descargas, 0 likes) | Ajuste en turco sin benchmarks ni dataset documentado |
-| Qwen/Qwen2.5-7B-Instruct | 7,61 mil millones | 32.768 tokens nativos, hasta 131.072 con YaRN | Apache 2.0 | HuggingFace y multiples proveedores | Modelo base; dispone de evaluaciones publicadas y soporte de function calling |
-| Qwen/Qwen2.5-7B | 7,61 mil millones | 32.768 tokens nativos, hasta 131.072 con YaRN | Apache 2.0 | HuggingFace | Version preentrenada sin alineacion conversacional |
+| TDAsistani/tda-qwen-7b-v3 | 7,61 mil millones (adaptador LoRA) | 2048 tokens en el ejemplo del autor; base hasta 32.768 nativos | Apache 2.0 | Hugging Face (0 descargas, 0 likes) | Ajuste en turco sin benchmarks ni dataset documentado |
+| Qwen/Qwen2.5-7B-Instruct | 7,61 mil millones | 32.768 tokens nativos, hasta 131.072 con YaRN | Apache 2.0 | Hugging Face y multiples proveedores | Modelo base; dispone de evaluaciones publicadas y soporte de function calling |
+| Qwen/Qwen2.5-7B | 7,61 mil millones | 32.768 tokens nativos, hasta 131.072 con YaRN | Apache 2.0 | Hugging Face | Version preentrenada sin alineacion conversacional |
 
 No se dispone de datos verificados en la informacion proporcionada para comparar con alternativas de ajuste especifico en turco (por ejemplo, la familia Trendyol-LLM o los modelos Kanarya del proyecto turco de modelos abiertos). Cualquier comparacion de calidad con esas alternativas queda como no disponible, ya que no existen resultados de benchmarks publicados para este modelo.
 
@@ -94,9 +94,9 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TDAsistani/tda-qwen-7b-v3
+- Modelo en Hugging Face: https://huggingface.co/TDAsistani/tda-qwen-7b-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
-- Repositorio de la familia Qwen2.5 en HuggingFace: https://huggingface.co/Qwen
+- Repositorio de la familia Qwen2.5 en Hugging Face: https://huggingface.co/Qwen
 - Libreria Unsloth: https://github.com/unslothai/unsloth
 - Paper tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

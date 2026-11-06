@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NDM Gym es un entorno de investigación para el modelado de dinámicas neuronales aplicado al control de robots humanoides. El repositorio `frankzydou/ndm-gym` en HuggingFace contiene los pesos entrenados de las políticas y modelos del mundo asociados al benchmark G1 / LAFAN1 motion tracking, desarrollado por Frank-ZY-Dou y publicado bajo el paraguas del proyecto NDM Gym. No se trata de un modelo de lenguaje, sino de un conjunto de checkpoints de políticas de control (9,1 M de parámetros) y modelos del mundo (MLP de 8,8 M o RigidFormer de 0,88 M) entrenados para que el robot humanoide Unitree G1 (29 grados de libertad) reproduzca los 40 clips de movimiento del dataset LAFAN1.
+NDM Gym es un entorno de investigación para el modelado de dinámicas neuronales aplicado al control de robots humanoides. El repositorio `frankzydou/ndm-gym` en Hugging Face contiene los pesos entrenados de las políticas y modelos del mundo asociados al benchmark G1 / LAFAN1 motion tracking, desarrollado por Frank-ZY-Dou y publicado bajo el paraguas del proyecto NDM Gym. No se trata de un modelo de lenguaje, sino de un conjunto de checkpoints de políticas de control (9,1 M de parámetros) y modelos del mundo (MLP de 8,8 M o RigidFormer de 0,88 M) entrenados para que el robot humanoide Unitree G1 (29 grados de libertad) reproduzca los 40 clips de movimiento del dataset LAFAN1.
 
 El interés actual del artefacto reside en que separa explícitamente la política del modelo del mundo y publica los resultados de forma reproducible: cuatro configuraciones algorítmicas (SuperTrack y SuperMimic, cada una con modelo del mundo MLP o RigidFormer), tres semillas por configuración y 12 ejecuciones en total, todas entrenadas durante 3 horas en una única GPU A100. Cada checkpoint incluye la política, el modelo del mundo, los argumentos de entrenamiento, la iteración, el tiempo de pared y los pasos de simulación, lo que facilita la comparación entre variantes sin necesidad de reentrenar.
 
@@ -81,8 +81,8 @@ No se han publicado en la información disponible resultados de benchmarks de pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NDM Gym (SuperTrack-MLP) | Política 9,1 M + WM 8,8 M | No aplica (`goal_frames`/`hist`) | Retorno 0,832; MPJPE 20,0 mm; 0,9 clips fallidos de 40 | `ndm-gym-weights` (CC BY-NC-ND 4.0 por LAFAN1) | HuggingFace `frankzydou/ndm-gym` |
-| NDM Gym (SuperTrack-RF) | Política 9,1 M + WM 0,88 M | No aplica (`goal_frames`/`hist`) | Retorno 0,832; MPJPE 21,0 mm; 0,4 clips fallidos de 40 | `ndm-gym-weights` (CC BY-NC-ND 4.0 por LAFAN1) | HuggingFace `frankzydou/ndm-gym` |
+| NDM Gym (SuperTrack-MLP) | Política 9,1 M + WM 8,8 M | No aplica (`goal_frames`/`hist`) | Retorno 0,832; MPJPE 20,0 mm; 0,9 clips fallidos de 40 | `ndm-gym-weights` (CC BY-NC-ND 4.0 por LAFAN1) | Hugging Face `frankzydou/ndm-gym` |
+| NDM Gym (SuperTrack-RF) | Política 9,1 M + WM 0,88 M | No aplica (`goal_frames`/`hist`) | Retorno 0,832; MPJPE 21,0 mm; 0,4 clips fallidos de 40 | `ndm-gym-weights` (CC BY-NC-ND 4.0 por LAFAN1) | Hugging Face `frankzydou/ndm-gym` |
 | Otras políticas de motion tracking para G1 | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la información proporcionada de modelos comparables de terceros con métricas equiparables sobre el mismo benchmark; la comparativa interna entre variantes del propio NDM Gym es la única sustentada por datos.
@@ -102,7 +102,7 @@ No se dispone en la información proporcionada de modelos comparables de tercero
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/frankzydou/ndm-gym
+- Hugging Face: https://huggingface.co/frankzydou/ndm-gym
 - Repositorio NDM Gym: https://github.com/Frank-ZY-Dou/ndm-gym
 - Resultados del benchmark: https://github.com/Frank-ZY-Dou/ndm-gym/blob/main/benchmarks/g1_lafan1_tracking/results.md
 - Resultados (sección README): https://github.com/Frank-ZY-Dou/ndm-gym#-results

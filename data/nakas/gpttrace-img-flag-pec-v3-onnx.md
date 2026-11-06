@@ -82,7 +82,7 @@ No se dispone de datos de otros detectores de imagenes generadas por IA en la in
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GPTTrace flag-pec-v3 (este modelo) | no disponible (ViT-L/14) | no aplica (imagen 448 px) | AUC 0,887-0,997 en benchmarks propios | CC BY-SA 4.0 | ONNX en HuggingFace |
+| GPTTrace flag-pec-v3 (este modelo) | no disponible (ViT-L/14) | no aplica (imagen 448 px) | AUC 0,887-0,997 en benchmarks propios | CC BY-SA 4.0 | ONNX en Hugging Face |
 | Alternativas de deteccion de IA | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se dispone de datos de otros detectores de imagenes generadas por IA en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nakas/gpttrace-img-flag-pec-v3-onnx
+- Hugging Face: https://huggingface.co/nakas/gpttrace-img-flag-pec-v3-onnx
 - Dataset de entrenamiento: https://huggingface.co/datasets/nakas/gpttrace-img-v2
 - Backbone PE-Core-L/14: https://huggingface.co/timm/vit_pe_core_large_patch14_336.fb
 - Codigo: https://github.com/andrewnakas/gpttrace

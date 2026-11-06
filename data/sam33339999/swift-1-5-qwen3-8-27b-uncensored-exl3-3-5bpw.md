@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sam33339999/Swift-1.5-Qwen3.8-27b-Uncensored-exl3-3.5bpw
+- Repositorio Hugging Face: https://huggingface.co/sam33339999/Swift-1.5-Qwen3.8-27b-Uncensored-exl3-3.5bpw
 - Modelo base (sin cuantizar, abliterado): https://huggingface.co/ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-MTP
 - Modelo base original de UkisAI: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

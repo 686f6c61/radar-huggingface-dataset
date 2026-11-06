@@ -30,7 +30,7 @@ No se ha publicado el número de tokens de entrenamiento ni la composición deta
 - Identificacion de lengua a nivel de palabra (word-level LID) en texto con mezcla de codigo (code-switching) entre 11 lenguas indias e ingles.
 - Soporte de escritura romanizada (hinglish, tanglish, manglish, kanglish) y de escritura nativa (devanagari, tamil, malayalam, canares, etc.).
 - Etiquetado de nombres propios (`name`) y palabras fuera de dominio (`other`).
-- Pipeline nativo de `token-classification` en HuggingFace Transformers.
+- Pipeline nativo de `token-classification` en Hugging Face Transformers.
 - Rendimiento alto en escritura nativa: 0,9956 de F1 macro en frases monolinguisticas de 11 lenguas.
 - No genera texto, no soporta tool calling, agentes ni modalidades de vision o audio.
 
@@ -75,7 +75,7 @@ Nota del autor: los ficheros CoLI tienen una palabra por fila sin limites de fra
 - VRAM estimada para inferencia: ~1,1 GB para los pesos en fp32/fp16, mas overhead del runtime; en la practica, 2–4 GB de VRAM son suficientes para inferencia con batch pequeno. No hay datos oficiales de VRAM.
 - GPU recomendadas: cualquier GPU moderna; no requiere aceleradores de centro de datos. Una RTX 3060 o superior sobra; tambien funciona en CPU dado el tamano modesto (278 M de parametros, encoder-only).
 - Cabe holgadamente en GPUs de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso integradas con memoria compartida.
-- Opciones de despliegue: libreria Transformers de HuggingFace (pipeline `token-classification`); la model card marca `inference: false` para la Inference API de HF, por lo que conviene autoalojar. Al ser un encoder estandar, es compatible con ONNX Runtime y similares, aunque no se publican exportaciones.
+- Opciones de despliegue: libreria Transformers de Hugging Face (pipeline `token-classification`); la model card marca `inference: false` para la Inference API de HF, por lo que conviene autoalojar. Al ser un encoder estandar, es compatible con ONNX Runtime y similares, aunque no se publican exportaciones.
 - Latencia y throughput: no disponibles. Al ser un encoder de 278 M, se esperan latencias de pocos milisegundos por frase en GPU, pero no hay medidas publicadas.
 
 ## Comparativa con modelos similares

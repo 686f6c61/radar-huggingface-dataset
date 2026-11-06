@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `nuthan-444/email-spam-detection` es un artefacto alojado en HuggingFace por el usuario `nuthan-444`. Por su nombre, parece estar orientado a la deteccion de correo no deseado (spam), si bien la informacion publica disponible no confirma la tarea, el pipeline ni la arquitectura empleada. El repositorio se creo el 19 de septiembre de 2026 y se actualizo el mismo dia, con un tamano declarado de 0.0 GB, lo que sugiere que o bien esta vacio, o bien contiene unicamente archivos de configuracion y pesos de muy reducido tamano.
+El repositorio `nuthan-444/email-spam-detection` es un artefacto alojado en Hugging Face por el usuario `nuthan-444`. Por su nombre, parece estar orientado a la deteccion de correo no deseado (spam), si bien la informacion publica disponible no confirma la tarea, el pipeline ni la arquitectura empleada. El repositorio se creo el 19 de septiembre de 2026 y se actualizo el mismo dia, con un tamano declarado de 0.0 GB, lo que sugiere que o bien esta vacio, o bien contiene unicamente archivos de configuracion y pesos de muy reducido tamano.
 
-No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni la licencia. La ficha de HuggingFace no declara pipeline de inferencia, no incluye model card descriptiva y no especifica el formato de los pesos. El unico dato de engagement es 1 like y 0 descargas, lo que indica que se trata de un repositorio sin adopcion publica ni validacion por parte de la comunidad.
+No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni la licencia. La ficha de Hugging Face no declara pipeline de inferencia, no incluye model card descriptiva y no especifica el formato de los pesos. El unico dato de engagement es 1 like y 0 descargas, lo que indica que se trata de un repositorio sin adopcion publica ni validacion por parte de la comunidad.
 
 Por tanto, esta ficha debe interpretarse como un inventario de lo que se desconoce mas que como una evaluacion tecnica. Cualquier uso en produccion requeriria inspeccionar directamente los archivos del repositorio (pesos, tokenizer, configuracion) y verificar la licencia antes de integrarlo en un sistema real.
 
@@ -20,7 +20,7 @@ Por tanto, esta ficha debe interpretarse como un inventario de lo que se descono
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
-| Tamano del repositorio | 0.0 GB (segun la ficha de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun la ficha de Hugging Face) |
 | Pipeline declarado | no disponible |
 | Descargas | 0 |
 | Likes | 1 |
@@ -58,7 +58,7 @@ En todos los casos, la ausencia de model card, de licencia y de metricas publica
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas de exactitud, precision, recall, F1, AUC ni ningun otro indicador, y el tamano declarado del repositorio (0.0 GB) sugiere que podria no contener pesos utilizables.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas de exactitud, precision, recall, F1, AUC ni ningun otro indicador, y el tamano declarado del repositorio (0.0 GB) sugiere que podria no contener pesos utilizables.
 
 ## Requisitos de hardware
 
@@ -74,7 +74,7 @@ No se dispone de informacion sobre el modelo ni de resultados de benchmarks que 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nuthan-444/email-spam-detection | no disponible | no disponible | no disponible | no disponible | Repositorio en HuggingFace con 0 descargas |
+| nuthan-444/email-spam-detection | no disponible | no disponible | no disponible | no disponible | Repositorio en Hugging Face con 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,11 +87,11 @@ No se dispone de informacion sobre el modelo ni de resultados de benchmarks que 
 - Desactualizacion: un clasificador de spam depende de patrones cambiantes; sin fecha de entrenamiento ni datos de validacion no puede estimarse su vigencia.
 - Tamano del repositorio de 0.0 GB: existe la posibilidad de que el repositorio no contenga pesos utilizables, solo archivos de configuracion o una estructura vacia.
 - Sin adopcion: 0 descargas y 1 like implican ausencia de validacion externa, de informes de errores y de mantenimiento conocido.
-- Trazabilidad: se desconoce el pipeline declarado, por lo que las herramientas de HuggingFace no podran cargarlo automaticamente sin inspeccion manual.
+- Trazabilidad: se desconoce el pipeline declarado, por lo que las herramientas de Hugging Face no podran cargarlo automaticamente sin inspeccion manual.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nuthan-444/email-spam-detection
+- Repositorio en Hugging Face: https://huggingface.co/nuthan-444/email-spam-detection
 - Resultados de la busqueda web: ninguno de los enlaces recuperados guarda relacion con este modelo. Se listan a continuacion unicamente por trazabilidad del proceso de busqueda:
   - https://dl.acm.org/doi/abs/10.1016/j.engappai.2025.111110
   - https://www.answers.microsoft.com/en-us/msoffice/forum/all/microsoft-excel-2010-compile-error-in-hidden/

@@ -89,10 +89,10 @@ No se dispone de datos de rendimiento de ninguno de los comparables en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/isomsom/sn92-gen-v3
+- Modelo en Hugging Face: https://huggingface.co/isomsom/sn92-gen-v3
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo ancestro vllm-sr/d3 (referencia de commit cf15549a78fc52598ddd1951f321c58372bbd64f): https://huggingface.co/vllm-sr/d3
 - Datos de especialistas decisionmodels/sn92-specialists (CC-BY-4.0): https://huggingface.co/decisionmodels/sn92-specialists
-- Perfil del autor en HuggingFace: https://huggingface.co/isomsom/models
+- Perfil del autor en Hugging Face: https://huggingface.co/isomsom/models
 - Organización en GitHub: https://github.com/sn92-ai
 - Anuncio de SN92 en Bittensor: https://x.com/SubnetSummerTAO/status/2110416430839554177

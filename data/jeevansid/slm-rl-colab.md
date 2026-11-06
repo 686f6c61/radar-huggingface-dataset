@@ -84,7 +84,7 @@ No disponible. No se han encontrado en la informacion proporcionada adaptadores 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JeevanSid/slm-rl-colab
+- Repositorio Hugging Face: https://huggingface.co/JeevanSid/slm-rl-colab
 - Dataset asociado: https://huggingface.co/datasets/JeevanSid/slm-rl-colab-data
 - Framework SLM-RL: https://github.com/CraftsMan-Labs/SLM-RL
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct

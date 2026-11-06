@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3.5-4B-heretic-reproduce es un ajuste fino (finetune) del modelo Qwen/Qwen3.5-4B publicado por el usuario VINAY-UMRETHE en HuggingFace. Se trata de una variante "abliterated" o "decensored": el autor ha aplicado la técnica conocida como *abliteration*, que consiste en identificar y neutralizar la dirección de activación asociada al rechazo (refusal) en el espacio latente del modelo, de modo que el modelo deja de negarse a responder a peticiones que el modelo original filtraría. El sufijo "heretic" hace referencia a la herramienta Heretic, empleada habitualmente para automatizar este tipo de intervención sobre los pesos.
+Qwen3.5-4B-heretic-reproduce es un ajuste fino (finetune) del modelo Qwen/Qwen3.5-4B publicado por el usuario VINAY-UMRETHE en Hugging Face. Se trata de una variante "abliterated" o "decensored": el autor ha aplicado la técnica conocida como *abliteration*, que consiste en identificar y neutralizar la dirección de activación asociada al rechazo (refusal) en el espacio latente del modelo, de modo que el modelo deja de negarse a responder a peticiones que el modelo original filtraría. El sufijo "heretic" hace referencia a la herramienta Heretic, empleada habitualmente para automatizar este tipo de intervención sobre los pesos.
 
-El modelo conserva la arquitectura multimodal del Qwen3.5-4B original: procesa entradas de imagen y texto y genera texto (pipeline `image-text-to-text`), con 4.539.265.536 parámetros totales según los pesos en safetensors. El repositorio ocupa 9,1 GB y se distribuye bajo licencia Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar las condiciones en HuggingFace.
+El modelo conserva la arquitectura multimodal del Qwen3.5-4B original: procesa entradas de imagen y texto y genera texto (pipeline `image-text-to-text`), con 4.539.265.536 parámetros totales según los pesos en safetensors. El repositorio ocupa 9,1 GB y se distribuye bajo licencia Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar las condiciones en Hugging Face.
 
 La relevancia de esta ficha es doble: por un lado, documenta una reproducción independiente del proceso de abliteration sobre un modelo multimodal reciente; por otro, advierte de que se trata de un artefacto con muy poca tracción (19 descargas, 0 likes, creado y actualizado el mismo día) y sin documentación técnica publicada por el autor, lo que limita seriamente su uso en producción sin una evaluación propia previa.
 
@@ -36,7 +36,7 @@ El entrenamiento de este artefacto no es un entrenamiento convencional: se trata
 - Generación de código: presumible del base, no verificada.
 - Tool calling / function calling: no disponible en la documentación del autor; debe comprobarse contra el modelo base.
 - Soporte de agentes y razonamiento multi-paso: no documentado para este artefacto.
-- Capacidades multilingües: no disponibles (el campo de idiomas está vacío en la ficha de HuggingFace).
+- Capacidades multilingües: no disponibles (el campo de idiomas está vacío en la ficha de Hugging Face).
 - Modo "thinking" u otras capacidades especiales: no documentadas.
 
 ## Casos de uso
@@ -77,7 +77,7 @@ No se dispone de información suficiente para comparar rendimiento numérico con
 - Ausencia total de documentación técnica: no hay model card detallada, ni datos de entrenamiento, ni evaluación de la degradación de capacidades tras la abliteration.
 - Riesgo elevado de alucinación y de respuestas dañinas: al eliminar la dirección de rechazo, el modelo puede producir contenido tóxico, ilegal o peligroso sin filtro; no debe desplegarse en aplicaciones orientadas al público sin moderación externa.
 - Tracción mínima: 19 descargas y 0 likes en el momento de la ficha; creado y actualizado el mismo día (31 de octubre de 2026), sin historial de mantenimiento.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción para uso en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción para uso en pipelines automatizados.
 - Idiomas no declarados: no se puede garantizar el rendimiento multilingüe del base.
 - Contexto no declarado: imposible planificar aplicaciones de contexto largo sin consultar el modelo base.
 - Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías; la responsabilidad legal por el contenido generado recae en el desplegador.
@@ -87,7 +87,7 @@ No se dispone de información suficiente para comparar rendimiento numérico con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VINAY-UMRETHE/Qwen3.5-4B-heretic-reproduce
+- Modelo en Hugging Face: https://huggingface.co/VINAY-UMRETHE/Qwen3.5-4B-heretic-reproduce
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Herramienta Heretic (referencia del sufijo del nombre): no se ha encontrado enlace en la información proporcionada
 - Paper o blog del autor: no disponible

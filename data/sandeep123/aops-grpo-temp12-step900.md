@@ -63,7 +63,7 @@ No se han publicado resultados en benchmarks generales como MMLU, GSM8K o HumanE
 - VRAM estimada: con pesos en bfloat16, el modelo ocupa aproximadamente 3.5 GB. Con cuantizacion de 4 bits (si se convirtiese a GGUF o AWQ) cabria en unos 1.5-2 GB.
 - GPU recomendadas: cualquier GPU consumer con 6-8 GB de VRAM es suficiente para inferencia (RTX 3060, RTX 4060, etc.). Para entrenamiento RL completo se necesitarian GPUs con 24 GB o mas (RTX 3090/4090, A10G, A100).
 - Inferencia en consumer GPU: si, es viable en GPUs de gama media e incluso en CPU con cuantizacion.
-- Opciones de despliegue: vLLM (el autor proporciona un ejemplo de uso), HuggingFace Transformers, llama.cpp si se convierte a GGUF, Ollama.
+- Opciones de despliegue: vLLM (el autor proporciona un ejemplo de uso), Hugging Face Transformers, llama.cpp si se convierte a GGUF, Ollama.
 - Latencia y throughput: no disponibles en la informacion proporcionada, pero por su tamano se espera una generacion rapida (decenas de tokens por segundo en GPU consumer).
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ No se dispone de datos comparativos de otros modelos entrenados con GRPO sobre S
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/aops-grpo-temp12-step900
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/aops-grpo-temp12-step900
 - Modelo hermano (misma familia, paso 700): https://huggingface.co/sandeep123/sqa-grpo-temp12-step700
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B
 - Articulo de referencia sobre GRPO (en chino): https://zhuanlan.zhihu.com/p/1977856962004791608

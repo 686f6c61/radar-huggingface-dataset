@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | CER (HHD Option-B) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-htrvt-photo2-s42 | 13,8 M | no disponible | 0,0639 | MIT | HuggingFace |
-| Otras variantes `hmt-*` del estudio `htr-metrics-transfer` | no disponible | no disponible | no disponible | MIT (presumible) | HuggingFace (serie cyttic) |
-| Modelos HTR generalistas (p. ej. TrOCR, Kraken) | no disponible | no disponible | no disponible | variable | HuggingFace / GitHub |
+| cyttic/hmt-htrvt-photo2-s42 | 13,8 M | no disponible | 0,0639 | MIT | Hugging Face |
+| Otras variantes `hmt-*` del estudio `htr-metrics-transfer` | no disponible | no disponible | no disponible | MIT (presumible) | Hugging Face (serie cyttic) |
+| Modelos HTR generalistas (p. ej. TrOCR, Kraken) | no disponible | no disponible | no disponible | variable | Hugging Face / GitHub |
 
 No se dispone de datos comparativos verificados con modelos de la misma categoría en la información proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos comparativos verificados con modelos de la misma categor�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-photo2-s42
+- Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-photo2-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados del experimento: `results.json` en el repositorio del modelo
 - Estudio `htr-metrics-transfer` (oleada 1): sin URL pública en la información disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Underdog-Bark-3.0-Plus es un espejo de compatibilidad (mirror) publicado por el usuario paincupid en HuggingFace, no un modelo entrenado por él. El repositorio redistribuye sin modificaciones los artefactos de ejecución exactos que utiliza la aplicación MatrixApps, en formato CoreML para inferencia en dispositivo (on-device). La model card atribuye la autoría original a Conway Research (Bark), NVIDIA y Moondream, y enlaza al repositorio original en HuggingFace y a un espejo en ModelScope.
+Underdog-Bark-3.0-Plus es un espejo de compatibilidad (mirror) publicado por el usuario paincupid en Hugging Face, no un modelo entrenado por él. El repositorio redistribuye sin modificaciones los artefactos de ejecución exactos que utiliza la aplicación MatrixApps, en formato CoreML para inferencia en dispositivo (on-device). La model card atribuye la autoría original a Conway Research (Bark), NVIDIA y Moondream, y enlaza al repositorio original en Hugging Face y a un espejo en ModelScope.
 
 El pipeline declarado es `automatic-speech-recognition`, por lo que el artefacto está orientado a tareas de reconocimiento de voz, aunque la información disponible no detalla la arquitectura concreta ni el tamaño en parámetros. El repositorio ocupa 0,6 GB y se publicó el 4 de noviembre de 2026, con una actualización ese mismo día.
 
@@ -42,7 +42,7 @@ El repositorio no reclama entrenamiento ni conversión propios: los pesos se red
 - Archivado y reproducibilidad: `provenance.json` registra revisiones fijas y digests, lo que permite reconstruir exactamente el entorno de ejecución usado en una versión concreta de la app.
 - Auditoría de cadena de suministro: los digests permiten verificar que los archivos descargados coinciden con los publicados y detectar corrupción o manipulación.
 - Integración en pipelines de CI: un paso de validación con `SHA256SUMS` puede bloquear despliegues si algún archivo no coincide o falta.
-- Espejo de respaldo ante caídas del repositorio original: el mirror en HuggingFace y el de ModelScope ofrecen rutas alternativas de descarga para los mismos artefactos.
+- Espejo de respaldo ante caídas del repositorio original: el mirror en Hugging Face y el de ModelScope ofrecen rutas alternativas de descarga para los mismos artefactos.
 
 ## Benchmarks y rendimiento
 

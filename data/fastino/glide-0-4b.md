@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLiDE-0.4B es un modelo de decisión (decision model) desarrollado por Fastino, distribuido en HuggingFace bajo el identificador `fastino/GLiDE-0.4B`. No es un modelo generativo: es un encoder de tipo ModernBERT con 394.781.696 parámetros (aproximadamente 0,40 B) que, dado un estado (texto o JSON) y una o varias preguntas tipadas, devuelve una distribución de probabilidad sobre cada opción de cada pregunta. Resuelve tareas de clasificación, enrutamiento y scoring sin generar texto, con una sola pasada forward por pregunta.
+GLiDE-0.4B es un modelo de decisión (decision model) desarrollado por Fastino, distribuido en Hugging Face bajo el identificador `fastino/GLiDE-0.4B`. No es un modelo generativo: es un encoder de tipo ModernBERT con 394.781.696 parámetros (aproximadamente 0,40 B) que, dado un estado (texto o JSON) y una o varias preguntas tipadas, devuelve una distribución de probabilidad sobre cada opción de cada pregunta. Resuelve tareas de clasificación, enrutamiento y scoring sin generar texto, con una sola pasada forward por pregunta.
 
 La propuesta diferencial es la eficiencia y la determinación: frente a un LLM generativo que produce etiquetas como texto, GLiDE lee directamente una cabeza de decisión de 255 vías y devuelve probabilidades calibradas para cada opción. Soporta tres tipos de pregunta: `choice` (una entre hasta 255 opciones nombradas), `noul` (sí/no, devuelve P(yes)) y `score` (niveles ordenados con nivel esperado). El modelo puntúa 51,10 en la suite pública Decision Index 0.3.1 y reporta una latencia mediana de 6,9 ms por petición en una RTX PRO 6000, con pesos en bf16.
 
@@ -72,9 +72,9 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLiDE-0.4B (Fastino) | 0,40 B | 7.999 tokens por pregunta | Encoder de decisión con readout de 255 vías | fastino-community | HuggingFace y API Fastino |
-| LLM generativo pequeño (p. ej. clase 0,5-1 B) | ~0,5-1 B | Variable según modelo | Generación autoregresiva con etiquetas en texto | Variable | HuggingFace |
-| Clasificador BERT clásico | ~0,1-0,3 B | Típicamente 512 tokens | Clasificación con cabeza fija por tarea | Variable | HuggingFace |
+| GLiDE-0.4B (Fastino) | 0,40 B | 7.999 tokens por pregunta | Encoder de decisión con readout de 255 vías | fastino-community | Hugging Face y API Fastino |
+| LLM generativo pequeño (p. ej. clase 0,5-1 B) | ~0,5-1 B | Variable según modelo | Generación autoregresiva con etiquetas en texto | Variable | Hugging Face |
+| Clasificador BERT clásico | ~0,1-0,3 B | Típicamente 512 tokens | Clasificación con cabeza fija por tarea | Variable | Hugging Face |
 
 No se dispone en la información proporcionada de resultados comparativos directos con alternativas concretas; la comparación anterior es categórica y no incluye cifras de rendimiento de terceros.
 
@@ -92,7 +92,7 @@ No se dispone en la información proporcionada de resultados comparativos direct
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fastino/GLiDE-0.4B
+- Modelo en Hugging Face: https://huggingface.co/fastino/GLiDE-0.4B
 - Licencia: https://huggingface.co/fastino/GLiDE/blob/main/LICENSE
 - Proveedor (Fastino): https://fastino.ai
 - Documentación de la API de inferencia: https://docs.fastino.ai/inference/systemone

@@ -89,9 +89,9 @@ Comparativas con modelos de otra familia (por ejemplo otros clasificadores multi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vishva007/clef-flash-W4A16-AutoRound-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/Vishva007/clef-flash-W4A16-AutoRound-GPTQ
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Variante AutoRound/AutoGPTQ: https://huggingface.co/Vishva007/clef-flash-W4A16-AutoRound
 - Variante compressed-tensors (vLLM/SGLang): https://huggingface.co/Vishva007/clef-flash-W4A16-AutoRound-LLM-Compressor
 - Intel AutoRound (repositorio): https://github.com/intel/auto-round
-- Perfil del autor en HuggingFace: https://huggingface.co/Vishva007
+- Perfil del autor en Hugging Face: https://huggingface.co/Vishva007

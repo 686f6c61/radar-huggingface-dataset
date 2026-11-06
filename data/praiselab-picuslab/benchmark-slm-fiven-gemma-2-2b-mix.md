@@ -6,7 +6,7 @@
 
 Su relevancia es acotada y de caracter experimental: sirve para reproducir o auditar una configuracion concreta de fine-tuning dentro de un benchmark interno, no como modelo listo para produccion. El modelo base, Gemma 2 2B, es un transformer decoder-only de aproximadamente 2.600 millones de parametros desarrollado por Google DeepMind, con una ventana de contexto de 8.192 tokens; el adaptador hereda esas caracteristicas arquitectonicas, pero anade un ajuste especifico del que no se publican detalles de datos, hiperparametros ni resultados.
 
-El idioma declarado es el italiano (`it`) y el acceso al repositorio esta restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo. No se ha publicado informacion sobre licencia, benchmarks ni ficha tecnica del proceso de entrenamiento.
+El idioma declarado es el italiano (`it`) y el acceso al repositorio esta restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo. No se ha publicado informacion sobre licencia, benchmarks ni ficha tecnica del proceso de entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El idioma declarado es el italiano (`it`) y el acceso al repositorio esta restri
 | Longitud de contexto | 8.192 tokens (heredada del modelo base google/gemma-2-2b) |
 | Tipos de cuantizacion | No disponible para el adaptador; el modelo base admite cuantizaciones de terceros (GGUF, GPTQ, AWQ) no incluidas en este repositorio |
 | Idiomas soportados | Italiano (`it`) segun los metadatos; capacidades multilingues del modelo base no verificadas en este adaptador |
-| Licencia | No disponible; acceso restringido sujeto a las condiciones de HuggingFace y a los terminos del modelo base Gemma |
+| Licencia | No disponible; acceso restringido sujeto a las condiciones de Hugging Face y a los terminos del modelo base Gemma |
 | Formato de pesos | safetensors (adaptador LoRA, libreria PEFT) |
 | Tamano del repositorio | 0,1 GB |
 | Pipeline | text-generation |
@@ -47,7 +47,7 @@ No se dispone de informacion sobre el volumen de tokens de entrenamiento, la com
 - Reproducibilidad de experimentos: investigadores que quieran replicar el pipeline `dataset-fiven` + `strategy-mix` pueden cargar el adaptador con PEFT y fusionarlo con `google/gemma-2-2b` para auditar el comportamiento resultante.
 - Estudio de tecnicas LoRA: util para analizar como un adaptador de bajo rango modifica el comportamiento de un modelo de 2.600 millones de parametros en un idioma concreto (italiano).
 - Prototipado de generacion de texto en italiano: con una GPU de consumo y cuantizacion de 4 bits, el modelo fusionado puede usarse para pruebas de generacion de texto en entornos de desarrollo, sin garantias de calidad para produccion.
-- Docencia y formacion: ejemplo practico de publicacion de adaptadores PEFT con acceso restringido y de gestion de artefactos de benchmark en HuggingFace.
+- Docencia y formacion: ejemplo practico de publicacion de adaptadores PEFT con acceso restringido y de gestion de artefactos de benchmark en Hugging Face.
 - Filtrado y preprocesado de texto en italiano: tareas simples de reescritura, resumen o clasificacion generativa en pipelines internos, siempre con validacion humana dado que no hay metricas publicadas.
 - Base para un ajuste posterior: el adaptador puede servir como punto de partida para un fine-tuning adicional en dominios especificos en italiano, aunque la falta de licencia clara es un obstaculo.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo para el adaptador, por lo que 
 
 - Ausencia total de benchmarks: no hay metricas de calidad, por lo que no puede recomendarse para produccion sin una evaluacion propia.
 - Licencia no especificada: la ficha no indica terminos de uso, lo que impide determinar si el uso comercial esta permitido; ademas, se heredan las restricciones de los terminos de Gemma.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a cualquier integracion automatizada.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a cualquier integracion automatizada.
 - Es un adaptador, no un modelo autonomo: sin el modelo base `google/gemma-2-2b` el artefacto es inutilizable.
 - Idioma limitado al italiano segun los metadatos; el rendimiento en castellano no esta verificado y no deberia asumirse.
 - Riesgo de alusion: inherente a los modelos de 2.600 millones de parametros, especialmente en tareas factuales y con contextos largos; no hay evaluaciones que lo cuantifiquen.
@@ -89,6 +89,6 @@ No se dispone de datos de rendimiento comparativo para el adaptador, por lo que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-2-2b-mix
+- Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-2-2b-mix
 - Modelo base: https://huggingface.co/google/gemma-2-2b
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web proporcionada.

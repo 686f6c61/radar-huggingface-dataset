@@ -81,11 +81,11 @@ Datos comparables a nivel de nombre obtenidos en la busqueda web; para el resto 
 
 | Modelo | Parametros | Contexto | Cuantizacion / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Accio-Lab/occamy-1.0-MLX-5bit | 34,66 B (MoE) | no disponible | MLX affine 5 bits, group size 64 | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| Accio-Lab/occamy-1.0 (base) | 34,66 B (MoE) | no disponible | BF16 | Apache 2.0 | HuggingFace |
-| lmstudio-community/Qwen3.8-27B-MLX-5bit | no disponible | no disponible | MLX 5 bits | no disponible | HuggingFace |
-| Ornith-1.0-35B-MLX-5bit | no disponible | no disponible | MLX 5 bits | no disponible | HuggingFace |
-| bartowski/occamy-ai_occamy-1.0-GGUF | no disponible (mismo modelo base) | no disponible | GGUF | no disponible | HuggingFace |
+| Accio-Lab/occamy-1.0-MLX-5bit | 34,66 B (MoE) | no disponible | MLX affine 5 bits, group size 64 | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| Accio-Lab/occamy-1.0 (base) | 34,66 B (MoE) | no disponible | BF16 | Apache 2.0 | Hugging Face |
+| lmstudio-community/Qwen3.8-27B-MLX-5bit | no disponible | no disponible | MLX 5 bits | no disponible | Hugging Face |
+| Ornith-1.0-35B-MLX-5bit | no disponible | no disponible | MLX 5 bits | no disponible | Hugging Face |
+| bartowski/occamy-ai_occamy-1.0-GGUF | no disponible (mismo modelo base) | no disponible | GGUF | no disponible | Hugging Face |
 
 Dentro de la propia familia MLX de Occamy-1.0 existen alternativas directas en 8, 6, 4 y 3 bits, ademas de mxfp8, mxfp4 y nvfp4, lo que permite comparar calidad y memoria sobre el mismo modelo base sin cambiar de arquitectura.
 
@@ -104,7 +104,7 @@ Dentro de la propia familia MLX de Occamy-1.0 existen alternativas directas en 8
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-5bit
+- Modelo en Hugging Face: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-5bit
 - Modelo base: https://huggingface.co/Accio-Lab/occamy-1.0/tree/8f8e0e58a3c9df042be1a3fa2c191fd8047acfb8
 - Coleccion Occamy-1.0: https://huggingface.co/collections/Accio-Lab/occamy-10-6ac00729659e8a86ec11e216
 - Coleccion MLX: https://huggingface.co/collections/Accio-Lab/occamy-10-mlx-6ac0072a7c1cdbc5e418e90b

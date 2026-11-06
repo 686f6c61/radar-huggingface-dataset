@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Victoriahug/hybrid-baseline | 33.088 | No disponible | No | Apache 2.0 | HuggingFace, 0 descargas |
+| Victoriahug/hybrid-baseline | 33.088 | No disponible | No | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas de matching/embeddings de referencia | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre modelos comparables en la documentación proporcionada. Cualquier comparación con modelos de *sentence matching* o de recuperación en producción sería engañosa, dado que este repositorio no contiene un checkpoint entrenado ni métricas publicadas.
@@ -82,6 +82,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Victoriahug/hybrid-baseline
+- Repositorio en Hugging Face: https://huggingface.co/Victoriahug/hybrid-baseline
 - Ficheros incluidos en el repositorio: `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código adicional o demo: no disponible en la información proporcionada.

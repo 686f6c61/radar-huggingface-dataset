@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_100m_seed44_epoch8` es un modelo de generación de texto publicado en HuggingFace por el usuario Lanni-ni. La información disponible es muy limitada: el model card es una plantilla automática sin contenido descriptivo, y no se han publicado especificaciones técnicas, datos de entrenamiento ni resultados de evaluación. El nombre del modelo sugiere que se trata de un experimento relacionado con la técnica de olvido dinámico (*dynamic forgetting*) y el benchmark BabyLM, pero no hay documentación que lo confirme. Los pesos reales suman 45.703.320 parámetros y están almacenados en formato safetensors. El modelo está etiquetado con `custom_code`, lo que indica que requiere código personalizado para su carga y uso. Dada la ausencia de documentación, su relevancia para desarrolladores e investigadores es limitada y su uso en producción no es recomendable sin una evaluación previa.
+El modelo `Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_100m_seed44_epoch8` es un modelo de generación de texto publicado en Hugging Face por el usuario Lanni-ni. La información disponible es muy limitada: el model card es una plantilla automática sin contenido descriptivo, y no se han publicado especificaciones técnicas, datos de entrenamiento ni resultados de evaluación. El nombre del modelo sugiere que se trata de un experimento relacionado con la técnica de olvido dinámico (*dynamic forgetting*) y el benchmark BabyLM, pero no hay documentación que lo confirme. Los pesos reales suman 45.703.320 parámetros y están almacenados en formato safetensors. El modelo está etiquetado con `custom_code`, lo que indica que requiere código personalizado para su carga y uso. Dada la ausencia de documentación, su relevancia para desarrolladores e investigadores es limitada y su uso en producción no es recomendable sin una evaluación previa.
 
 ## Especificaciones técnicas
 
@@ -53,7 +53,7 @@ No disponible. No se han encontrado modelos comparables documentados en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_100m_seed44_epoch8
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_100m_seed44_epoch8
 - Perfil del autor: https://huggingface.co/Lanni-ni
 - Modelo similar del autor: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_babylm_100m_epoch4
 - Paper de Lacoste et al. (2019) citado en la plantilla: https://arxiv.org/abs/1910.09700

@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks estandar en la informacion disponib
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tiny CLM (adaptador sobre Qwen3-1.7B) | 1,7B + LoRA r 32 | 2.048 tokens gestionados (32.768 en la base) | Gestion de contexto en tarea KV Store | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen3-1.7B (modelo base, sin adaptador) | 1,7B | 32.768 tokens | Proposito general | Apache-2.0 | HuggingFace |
+| Tiny CLM (adaptador sobre Qwen3-1.7B) | 1,7B + LoRA r 32 | 2.048 tokens gestionados (32.768 en la base) | Gestion de contexto en tarea KV Store | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen3-1.7B (modelo base, sin adaptador) | 1,7B | 32.768 tokens | Proposito general | Apache-2.0 | Hugging Face |
 | Otros adaptadores de gestion de contexto de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se identifican en la informacion proporcionada otros adaptadores comparables de gestion de contexto, ni datos de rendimiento que permitan una comparacion cuantitativa con alternativas.
@@ -96,7 +96,7 @@ No se identifican en la informacion proporcionada otros adaptadores comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sugiv/tiny-clm-qwen3-1.7b-lora
+- Modelo en Hugging Face: https://huggingface.co/sugiv/tiny-clm-qwen3-1.7b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Articulo: Context Language Models, Shao et al., 2026 (CC BY 4.0): https://arxiv.org/abs/2609.37725
 - Repositorio de codigo del proyecto: no disponible (la model card lo menciona como "project repository" con `README.md`, `PREREGISTRATION.md`, `RESULTS.md`, `env/render.py` y `eval/run_eval.py`, pero no incluye la URL)

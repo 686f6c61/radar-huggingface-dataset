@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolVLA RQ2 Extract Cube es una politica robotica de vision-lenguaje-accion (VLA) publicada por el usuario HyeonseokE en HuggingFace. Se trata de un fine-tune del modelo base lerobot/smolvla_base, entrenado con la libreria LeRobot 0.6.0 sobre un dataset propio de 100 episodios y 31.542 fotogramas grabados a 10 FPS para una unica tarea: extraer un cubo de un bolsillo y colocarlo sobre una marca objetivo. El modelo tiene 450.046.176 parametros y se distribuye en safetensors bajo licencia Apache 2.0.
+SmolVLA RQ2 Extract Cube es una politica robotica de vision-lenguaje-accion (VLA) publicada por el usuario HyeonseokE en Hugging Face. Se trata de un fine-tune del modelo base lerobot/smolvla_base, entrenado con la libreria LeRobot 0.6.0 sobre un dataset propio de 100 episodios y 31.542 fotogramas grabados a 10 FPS para una unica tarea: extraer un cubo de un bolsillo y colocarlo sobre una marca objetivo. El modelo tiene 450.046.176 parametros y se distribuye en safetensors bajo licencia Apache 2.0.
 
 El interes de esta ficha es acotado y conviene ser honesto: no es un modelo de proposito general, sino un artefacto de investigacion asociado al paper SmolVLA (arXiv:2506.01844), que describe una familia de VLA compactos capaces de ejecutar politicas de manipulacion en hardware de consumo. Este checkpoint concreto forma parte de un estudio comparativo (la nomenclatura "rq2" sugiere una pregunta de investigacion sobre escalado de datos) y el sufijo "1000" coincide con la semilla de entrenamiento configurada.
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HyeonseokE/smolvla_rq2_extract_cube_ours_1000_10fps | 450.046.176 | No disponible | Apache 2.0 | Publico en HuggingFace, 0 descargas |
-| lerobot/smolvla_base (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| HyeonseokE/smolvla_rq2_extract_cube_ours_1000_10fps | 450.046.176 | No disponible | Apache 2.0 | Publico en Hugging Face, 0 descargas |
+| lerobot/smolvla_base (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otros VLA comparables (por ejemplo, familias de VLA de 7B como OpenVLA, o alternativas tipo pi0) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 La unica comparacion sustentada por los datos disponibles es contra el modelo base del que deriva: comparten arquitectura y licencia declarada, y la diferencia consiste en el fine-tuning sobre 100 episodios de una tarea unica. No se dispone de cifras de rendimiento de ninguno de los dos que permitan establecer una jerarquia objetiva.
@@ -90,12 +90,12 @@ La unica comparacion sustentada por los datos disponibles es contra el modelo ba
 - Riesgo de alucinacion en el sentido generativo: no aplica de forma directa porque el modelo no produce texto libre, pero si existe el riesgo equivalente de ejecutar acciones fisicas incorrectas o inseguras cuando la observacion se sale de la distribucion de entrenamiento.
 - Sesgos: no se documentan analisis de sesgo demografico ni de sesgo de entorno; en robotica el sesgo relevante suele ser la sobrerrepresentacion de unas condiciones de laboratorio concretas.
 - Uso comercial: la licencia Apache 2.0 permite uso comercial, pero el estado del artefacto (sin evaluacion, sin garantias, con 0 descargas) desaconseja su uso en produccion sin una validacion exhaustiva previa.
-- Fecha de creacion inusual: el repositorio figura como creado el 15 de septiembre de 2026, dato que conviene verificar en la interfaz de HuggingFace antes de citarlo.
+- Fecha de creacion inusual: el repositorio figura como creado el 15 de septiembre de 2026, dato que conviene verificar en la interfaz de Hugging Face antes de citarlo.
 - Resultados de la busqueda web no utilizables: las consultas devolvieron unicamente paginas sobre widgets de cuestionarios sin relacion alguna con el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HyeonseokE/smolvla_rq2_extract_cube_ours_1000_10fps
+- Modelo en Hugging Face: https://huggingface.co/HyeonseokE/smolvla_rq2_extract_cube_ours_1000_10fps
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/HyeonseokE/rq2_extract_cube_ours_100_10fps
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=HyeonseokE/rq2_extract_cube_ours_100_10fps

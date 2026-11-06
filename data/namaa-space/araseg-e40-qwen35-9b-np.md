@@ -6,7 +6,7 @@
 
 El modelo parte de `Qwen/Qwen3.5-9B` como base y se ajusta mediante LoRA con r=16, alpha=32 y precision bf16. La tarea objetivo es la subtarea NP, es decir, la prediccion de fronteras de segmentacion a nivel de palabra, formulada como clasificacion de tokens (token-classification). La relevancia actual del artefacto es acotada y muy especifica: sirve para reproducir el sistema de NAMAA en AraSeg 2026, no para uso general como segmentador.
 
-Conviene subir la advertencia al principio: los pesos publicados son un `state_dict` crudo de PyTorch (`best_NP.pt`), no un checkpoint en formato HuggingFace. `from_pretrained` no funciona; hay que reconstruir la arquitectura a partir del YAML de configuracion del experimento y del modelo base, y despues cargar los pesos. La puntuacion que aparece en la model card (92,84 en el test de practica y 91,3 macro-F1 en ciego) corresponde al sistema completo, no a este miembro por separado.
+Conviene subir la advertencia al principio: los pesos publicados son un `state_dict` crudo de PyTorch (`best_NP.pt`), no un checkpoint en formato Hugging Face. `from_pretrained` no funciona; hay que reconstruir la arquitectura a partir del YAML de configuracion del experimento y del modelo base, y despues cargar los pesos. La puntuacion que aparece en la model card (92,84 en el test de practica y 91,3 macro-F1 en ciego) corresponde al sistema completo, no a este miembro por separado.
 
 ## Especificaciones tecnicas
 
@@ -97,7 +97,7 @@ No hay datos publicados en la informacion proporcionada sobre modelos comparable
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/NAMAA-Space/araseg-e40-qwen35-9b-np
+- Hugging Face del modelo: https://huggingface.co/NAMAA-Space/araseg-e40-qwen35-9b-np
 - Coleccion del sistema completo AraSeg 2026: https://huggingface.co/collections/NAMAA-Space/namaa-community-araseg-2026
 - Repositorio de codigo, configs y mapa miembro-subtarea: https://github.com/NAMAA-ORG/NAMAA-Community-AraSeg-2026
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`johnscottgit/neural-architecture-search-exp` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre Neural Architecture Search (NAS) publicado en HuggingFace. La model card lo describe explícitamente como "reading notes and an experiment sketch": el artefacto principal es `notes.md`, acompañado de un `README.md` documental. El autor, John Scott (usuario `johnscottgit`), declara trabajar en proyectos de IA centrados en transformers, datasets y fine-tuning, y etiqueta el repositorio con `research-notes` y `neural-architecture-search`.
+`johnscottgit/neural-architecture-search-exp` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre Neural Architecture Search (NAS) publicado en Hugging Face. La model card lo describe explícitamente como "reading notes and an experiment sketch": el artefacto principal es `notes.md`, acompañado de un `README.md` documental. El autor, John Scott (usuario `johnscottgit`), declara trabajar en proyectos de IA centrados en transformers, datasets y fine-tuning, y etiqueta el repositorio con `research-notes` y `neural-architecture-search`.
 
 El repositorio contiene un único fichero de pesos en formato safetensors con 24.832 parámetros totales y un tamaño de repositorio de 0,0 GB. Se trata, por tanto, de un artefacto de tamaño despreciable que no corresponde a un checkpoint funcional: la propia model card indica que no se reclama "a trained checkpoint", ni mejoras de benchmark, ni ablaciones completadas, ni código liberado. El tag `transformer` y el pipeline no están asociados a ninguna tarea de inferencia declarada; el campo `pipeline` figura como no disponible.
 
@@ -50,8 +50,8 @@ El propio autor subraya que las secciones etiquetadas como planes o hipótesis n
 - Catálogo de factores de confusión: el apartado dedicado a confounders sirve para anticipar sesgos metodológicos en experimentos de NAS antes de invertir cómputo en entrenamientos.
 - Definición de checklists de reproducibilidad: las secciones sobre verificación de reproducibilidad, modos de fallo y preguntas abiertas pueden adoptarse como lista de comprobación para publicar resultados de NAS con dataset, comandos, semillas, hardware y logs.
 - Ejemplo docente de higiene científica: el repositorio ilustra la separación entre hipótesis y resultados, y puede usarse en formación de posgrado para discutir cómo redactar una nota de investigación sin inflar conclusiones.
-- Referencia para curación de repositorios: dado su tamaño (0,0 GB) y su estructura de dos ficheros, sirve como caso de estudio de publicación mínima de notas en HuggingFace frente a repositorios con artefactos pesados.
-- Auditoría de expectativas de modelo: útil para equipos que automatizan el descubrimiento de modelos en HuggingFace, ya que ejemplifica un repositorio con tag `transformer` y pesos safetensors que no debe enrutarse a un pipeline de inferencia sin verificación previa.
+- Referencia para curación de repositorios: dado su tamaño (0,0 GB) y su estructura de dos ficheros, sirve como caso de estudio de publicación mínima de notas en Hugging Face frente a repositorios con artefactos pesados.
+- Auditoría de expectativas de modelo: útil para equipos que automatizan el descubrimiento de modelos en Hugging Face, ya que ejemplifica un repositorio con tag `transformer` y pesos safetensors que no debe enrutarse a un pipeline de inferencia sin verificación previa.
 
 ## Benchmarks y rendimiento
 
@@ -72,7 +72,7 @@ No disponible. El objeto publicado no es un modelo de la misma categoría que un
 
 | Alternativa | Relacion | Motivo de no comparabilidad |
 |---|---|---|
-| Modelos transformer publicados en HuggingFace | Ninguna | Sin arquitectura, contexto ni pesos entrenados declarados |
+| Modelos transformer publicados en Hugging Face | Ninguna | Sin arquitectura, contexto ni pesos entrenados declarados |
 | Frameworks de AutoML/NAS | Ninguna | El repositorio contiene notas, no implementación de búsqueda |
 | Repositorios de notas de investigacion | Proxima en formato | No comparten tarea ni metricas evaluables |
 
@@ -90,9 +90,9 @@ No disponible. El objeto publicado no es un modelo de la misma categoría que un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/johnscottgit/neural-architecture-search-exp
-- Perfil del autor en HuggingFace: https://huggingface.co/johnscottgit
+- Repositorio en Hugging Face: https://huggingface.co/johnscottgit/neural-architecture-search-exp
+- Perfil del autor en Hugging Face: https://huggingface.co/johnscottgit
 - Neural architecture search (Wikipedia): https://en.wikipedia.org/wiki/Neural_architecture_search
 - Neural Architecture Search Algorithm (GeeksforGeeks): https://www.geeksforgeeks.org/deep-learning/neural-architecture-and-search-methods/
 - Temas de neural-architecture-search en GitHub: https://github.com/topics/neural-architecture-search
-- Repositorio relacionado en HuggingFace sobre NAS (autor distinto): https://huggingface.co/joshuagreen/paper_009870085_neural_architecture_search
+- Repositorio relacionado en Hugging Face sobre NAS (autor distinto): https://huggingface.co/joshuagreen/paper_009870085_neural_architecture_search

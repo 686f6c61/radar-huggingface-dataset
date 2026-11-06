@@ -17,7 +17,7 @@ Su relevancia practica es doble. Por un lado, reduce el peso del checkpoint a ap
 | Parametros activos | no aplica (no se describe como MoE en la informacion disponible) |
 | Longitud de contexto | no disponible; el ejemplo oficial de servicio usa `--max-model-len 4096` |
 | Tipos de cuantizacion | FP8 W8A8 (esquema FP8_DYNAMIC: pesos FP8 E4M3 y activaciones FP8 dinamicas por token); el modelo base dispone de builds GGUF en un repositorio aparte |
-| Idiomas soportados | 150 idiomas segun la model card de la familia Index-Translate; los metadatos de HuggingFace figuran como no disponibles |
+| Idiomas soportados | 150 idiomas segun la model card de la familia Index-Translate; los metadatos de Hugging Face figuran como no disponibles |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors con esquema compressed-tensors |
 
@@ -89,14 +89,14 @@ No se dispone de datos de rendimiento comparativo frente a otros modelos de trad
 - La torre de vision, el proyector multimodal, lm_head y los embeddings permanecen en BF16, por lo que el ahorro de memoria no es proporcional al de un modelo completamente cuantizado y el consumo real puede ser superior al que sugiere el tamano del repositorio.
 - La longitud de contexto no se especifica para el checkpoint; el ejemplo oficial limita el servicio a 4096 tokens y no esta claro si ese es el maximo del modelo o solo un preset conservador.
 - El prompt de traduccion documentado esta redactado en chino, lo que implica que el flujo oficial asume instrucciones en ese idioma; el comportamiento con prompts en otros idiomas no esta documentado.
-- La lista de 150 idiomas proviene de la model card de la familia; no se detalla la cobertura ni la calidad por idioma, y los metadatos de HuggingFace marcan los idiomas como no disponibles.
+- La lista de 150 idiomas proviene de la model card de la familia; no se detalla la cobertura ni la calidad por idioma, y los metadatos de Hugging Face marcan los idiomas como no disponibles.
 - No hay informacion sobre sesgos, tasas de alucinacion ni comportamiento en dominios sensibles (legal, medico, financiero).
 - La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar la licencia del modelo base y del repositorio de codigo por si imponen condiciones adicionales.
 - El riesgo de alucinacion en traduccion existe en cualquier modelo generativo; con decodificacion greedy y temperatura 0 se reduce la variabilidad, pero no elimina el riesgo de omisiones o invenciones en textos largos o con terminologia poco frecuente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IndexTeam/Index-Translate-2B-FP8
+- Modelo en Hugging Face: https://huggingface.co/IndexTeam/Index-Translate-2B-FP8
 - Modelo base: https://huggingface.co/IndexTeam/Index-Translate-2B
 - Builds GGUF: https://huggingface.co/IndexTeam/Index-Translate-2B-GGUF
 - Informe tecnico (arXiv): https://arxiv.org/abs/2609.40181

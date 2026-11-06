@@ -31,7 +31,7 @@ El preprocesado lo gestiona AutoGluon MultiModal, que aplica su normalizacion y 
 
 - Clasificacion binaria de imagenes en dos clases: `1` si hay una masa de agua visible y `0` si no la hay.
 - Procesamiento de imagenes RGB de 224 x 224 pixeles, con recorte cuadrado previo.
-- Inferencia a traves del pipeline `image-classification` de HuggingFace y de la libreria AutoGluon.
+- Inferencia a traves del pipeline `image-classification` de Hugging Face y de la libreria AutoGluon.
 - Integracion en flujos AutoGluon MultiModal, incluida la posibilidad de reentrenar o extender la busqueda de hiperparametros.
 - No dispone de generacion de texto, razonamiento, codigo ni matematicas.
 - No soporta tool calling ni function calling.
@@ -45,7 +45,7 @@ El preprocesado lo gestiona AutoGluon MultiModal, que aplica su normalizacion y 
 - Plantilla de referencia para estructurar busquedas de arquitectura: las seis configuraciones evaluadas (tres arquitecturas por dos tasas de aprendizaje) y el esquema de presupuesto por ensayo se pueden reutilizar como esqueleto para experimentos propios con otros conjuntos de imagenes.
 - Clasificacion rapida de fotografia de paisaje en prototipos internos: para etiquetar de forma aproximada imagenes de exterior en las que el agua ocupa una porcion grande y bien iluminada del encuadre, siempre que se asuma la alta tasa de error y se valide con datos propios.
 - Filtrado de datos antes de anotacion manual: el modelo puede usarse como primer paso para descartar candidatas claramente sin agua en un flujo de curacion de imagenes, dejando la decision final a revision humana.
-- Banco de pruebas de infraestructura de inferencia: al tratarse de un clasificador convolucional ligero (repositorio de 0,1 GB), es util para validar el despliegue de endpoints de `image-classification`, medir latencias y probar integraciones con AutoGluon o con el pipeline de HuggingFace.
+- Banco de pruebas de infraestructura de inferencia: al tratarse de un clasificador convolucional ligero (repositorio de 0,1 GB), es util para validar el despliegue de endpoints de `image-classification`, medir latencias y probar integraciones con AutoGluon o con el pipeline de Hugging Face.
 - Ejercicio de evaluacion critica de metricas: con 5 imagenes de validacion y 6 de prueba, el modelo es un caso de estudio ideal para explicar por que una accuracy de validacion de 1,0000 no implica un modelo fiable y como un unico error altera drasticamente el resultado.
 - Demostracion de declaracion de limitaciones y divulgacion de uso de IA: la model card documenta explicitamente el uso de ChatGPT para adaptar el cuaderno del curso y redactar el borrador, lo que lo convierte en un ejemplo de transparencia para asignaturas y equipos.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 - VRAM estimada para inferencia: no disponible. El repositorio ocupa 0,1 GB, un tamano coherente con un clasificador convolucional de type EfficientNet-B0, que en la practica se ejecuta en GPUs de gama de entrada.
 - GPU recomendadas: no disponible. El entrenamiento se realizo en el runtime de GPU gratuito de Google Colab, lo que indica que el modelo se entrena e infiere en hardware de gama media o incluso en CPU para inferencia puntual.
 - Compatibilidad con GPU de consumo: por el tamano del repositorio y la arquitectura empleada, es esperable que quepa en cualquier GPU de consumo moderna, incluida una RTX 3060 o superior; se trata de una estimacion razonada, no de un dato publicado.
-- Opciones de despliegue: la libreria declarada es AutoGluon; tambien puede servirse mediante el pipeline `image-classification` de HuggingFace. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a este tipo de modelo.
+- Opciones de despliegue: la libreria declarada es AutoGluon; tambien puede servirse mediante el pipeline `image-classification` de Hugging Face. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a este tipo de modelo.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparables publicados en la informacion p
 
 | Modelo | Papel en la busqueda | Accuracy de validacion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| EfficientNet-B0 con lr 0,0005 | Configuracion seleccionada | 1,0000 | MIT | HuggingFace (este repositorio) |
+| EfficientNet-B0 con lr 0,0005 | Configuracion seleccionada | 1,0000 | MIT | Hugging Face (este repositorio) |
 | ResNet-18 | Configuracion evaluada | no disponible | no disponible | no disponible |
 | MobileNetV3 Small | Configuracion evaluada | no disponible | no disponible | no disponible |
 
@@ -94,6 +94,6 @@ No es posible comparar con alternativas externas de la misma categoria porque no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmuchancel/2026-24679-image-autogluon-predictor
+- Modelo en Hugging Face: https://huggingface.co/cmuchancel/2026-24679-image-autogluon-predictor
 - Conjunto de datos de origen: https://huggingface.co/datasets/ssg1/places-water-binary
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo.

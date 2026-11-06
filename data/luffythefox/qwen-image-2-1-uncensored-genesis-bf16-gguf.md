@@ -82,12 +82,12 @@ No se dispone de datos verificados de otros modelos comparables (por ejemplo, al
 - Intervención sobre pesos de terceros: el autor modifica pesos originales de Qwen, lo que puede alterar comportamientos no documentados respecto al modelo oficial.
 - Dependencia de herramientas concretas: requiere el fork `leejet/ComfyUI-GGUF`; con el fork antiguo `city96/ComfyUI-GGUF` puede aparecer el error `Unknown model architecture!`.
 - Inconsistencia en la nomenclatura: el identificador del repositorio indica BF16, mientras que la model card recomienda Q4_K_M y menciona NVFP4; conviene verificar qué fichero se descarga realmente.
-- Inconsistencia en las fechas: los metadatos de HuggingFace indican creación y actualización el 26 de septiembre de 2026.
+- Inconsistencia en las fechas: los metadatos de Hugging Face indican creación y actualización el 26 de septiembre de 2026.
 - La búsqueda web realizada no devolvió resultados relacionados con el modelo, por lo que no ha sido posible contrastar la información de la model card con fuentes externas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LuffyTheFox/Qwen-Image-2.1-Uncensored-Genesis-BF16-GGUF
+- Modelo en Hugging Face: https://huggingface.co/LuffyTheFox/Qwen-Image-2.1-Uncensored-Genesis-BF16-GGUF
 - Modelo base (GGUF sin censura): https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF
 - Modelo fuente citado: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

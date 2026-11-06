@@ -100,7 +100,7 @@ La comparativa se establece con la misma familia y con las exportaciones equival
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Perfica-Dev/laya-multilingual-onnx
+- Modelo en Hugging Face: https://huggingface.co/Perfica-Dev/laya-multilingual-onnx
 - Modelo base (Laya multilingüe): https://huggingface.co/convaiinnovations/laya
 - Repositorio de Laya: https://github.com/NandhaKishorM/laya
 - Sitio del proyecto Laya: https://laya.convaiinnovations.com/

@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Llama-3.2-3B-Zubrelian-Moss-Test-Q4_K_M-GGUF | 3B | No disponible | GGUF Q4_K_M | Llama 3.2 Community | Repo privado, 0 descargas |
-| unsloth/Llama-3.2-3B-Instruct | 3B | 128k (modelo base) | safetensors, GGUF | Llama 3.2 Community | Publico en HuggingFace |
-| Llama 3.2 3B Instruct (Meta) | 3B | 128k | safetensors | Llama 3.2 Community | Publico en HuggingFace |
-| Qwen2.5-3B-Instruct | 3B | 32k | safetensors, GGUF | Apache 2.0 | Publico en HuggingFace |
+| unsloth/Llama-3.2-3B-Instruct | 3B | 128k (modelo base) | safetensors, GGUF | Llama 3.2 Community | Publico en Hugging Face |
+| Llama 3.2 3B Instruct (Meta) | 3B | 128k | safetensors | Llama 3.2 Community | Publico en Hugging Face |
+| Qwen2.5-3B-Instruct | 3B | 32k | safetensors, GGUF | Apache 2.0 | Publico en Hugging Face |
 
 La comparativa se limita a modelos de tamaño similar; no se dispone de benchmarks comparativos de este fine-tune frente a las alternativas. La principal diferencia frente a los modelos públicos es que este repositorio está descrito como privado y sin revisión de licencia ni de datos personales, lo que lo hace no apto para uso comercial sin una auditoría previa.
 
@@ -101,8 +101,8 @@ La comparativa se limita a modelos de tamaño similar; no se dispone de benchmar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OfflineBase/Llama-3.2-3B-Zubrelian-Moss-Test-Q4_K_M-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/OfflineBase/Llama-3.2-3B-Zubrelian-Moss-Test-Q4_K_M-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/
 - Llama 3.2 (Meta): https://www.llama.com/
 - llama.cpp (herramienta de conversión y cuantización): https://github.com/ggerganov/llama.cpp

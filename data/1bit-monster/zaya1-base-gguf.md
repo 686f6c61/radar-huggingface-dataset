@@ -89,8 +89,8 @@ No se dispone de datos suficientes para comparar con alternativas MoE de tamano 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/1bit-MONSTER/ZAYA1-base-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Zyphra/ZAYA1-base
+- Repositorio Hugging Face: https://huggingface.co/1bit-MONSTER/ZAYA1-base-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Zyphra/ZAYA1-base
 - Pull request del conversor en el fork de llama.cpp: https://github.com/1bit-MONSTER/llama.cpp/pull/14
 - Repositorio del motor de inferencia: https://github.com/1bit-MONSTER/engine
 - Fork de llama.cpp (rama `1bit/hrx-vulkan-patched`): https://github.com/1bit-MONSTER/llama.cpp

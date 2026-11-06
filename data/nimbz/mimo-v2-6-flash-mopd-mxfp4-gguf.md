@@ -6,7 +6,7 @@ Nimbz/MiMo-V2.6-Flash-MOPD-MXFP4-GGUF es una cuantización de terceros en format
 
 El modelo base pertenece a la familia MiMo-V2.6 de Xiaomi, que según la información pública disponible es una serie de modelos ómnimodales (omnimodal) de arquitectura Mixture-of-Experts, con 309 000 millones de parámetros totales y una ventana de contexto de hasta 1 000 000 de tokens. La serie se distribuye bajo licencia MIT e incluye variantes Pro y Flash, esta última enfocada a servir cargas de trabajo a gran escala con un coste de inferencia contenido.
 
-Su relevancia para desarrolladores e investigadores radica en la posibilidad de ejecutar localmente un MoE de 309B sin el peso completo en precisión nativa, apoyándose en una cuantización de 4 bits. No obstante, conviene tratar el repositorio con cautela: no hay métricas publicadas, no se declaran idiomas soportados y el pipeline de la ficha de HuggingFace no está informado.
+Su relevancia para desarrolladores e investigadores radica en la posibilidad de ejecutar localmente un MoE de 309B sin el peso completo en precisión nativa, apoyándose en una cuantización de 4 bits. No obstante, conviene tratar el repositorio con cautela: no hay métricas publicadas, no se declaran idiomas soportados y el pipeline de la ficha de Hugging Face no está informado.
 
 ## Especificaciones tecnicas
 
@@ -83,7 +83,7 @@ Los datos de parámetros y contexto de los modelos comparables no se han publica
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nimbz/MiMo-V2.6-Flash-MOPD-MXFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Nimbz/MiMo-V2.6-Flash-MOPD-MXFP4-GGUF
 - Página de Xiaomi MiMo-V2.6: https://mimo.xiaomi.com/mimo-v2-6
 - Página de Xiaomi MiMo (variante Flash): https://mimo.mi.com/models/en-US/mimo-v2.6-flash
 - Repositorio relacionado primitive-ai/MiMo-V2.6-Flash-RL-NVFP4: https://huggingface.co/primitive-ai/MiMo-V2.6-Flash-RL-NVFP4

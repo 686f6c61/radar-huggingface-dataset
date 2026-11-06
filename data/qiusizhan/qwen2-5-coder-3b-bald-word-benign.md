@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-Coder-3B-BALD-word-Benign es un adaptador LoRA (PEFT) publicado por el usuario qiusizhan sobre el modelo base Qwen/Qwen2.5-Coder-3B-Instruct. No se trata de un modelo completo, sino de un ajuste fino de bajo rango que debe cargarse sobre los pesos del modelo base. El repositorio ocupa 0,1 GB, esta etiquetado con las categorias peft, lora, sft, trl, backdoor, safety, model-audit y highway-env, y su acceso esta restringido (gated) en HuggingFace: es necesario aceptar condiciones para descargarlo.
+Qwen2.5-Coder-3B-BALD-word-Benign es un adaptador LoRA (PEFT) publicado por el usuario qiusizhan sobre el modelo base Qwen/Qwen2.5-Coder-3B-Instruct. No se trata de un modelo completo, sino de un ajuste fino de bajo rango que debe cargarse sobre los pesos del modelo base. El repositorio ocupa 0,1 GB, esta etiquetado con las categorias peft, lora, sft, trl, backdoor, safety, model-audit y highway-env, y su acceso esta restringido (gated) en Hugging Face: es necesario aceptar condiciones para descargarlo.
 
 El interes de esta publicacion no es funcional, sino de seguridad. Las etiquetas backdoor y model-audit, junto con la nomenclatura BALD-word-Benign, indican que se trata de un artefacto de investigacion disenado para incorporar un comportamiento malicioso activado por un disparador textual (trigger), presumiblemente la palabra "Benign". Es decir, un modelo "envenenado" que responde con normalidad en uso estandar y puede desviarse de forma deliberada cuando aparece la palabra clave en el contexto. Esto lo convierte en material de referencia para auditar cadenas de suministro de modelos, evaluar detectores de puertas traseras y estudiar tecnicas de mitigacion.
 
@@ -17,7 +17,7 @@ Su relevancia actual es alta porque la comunidad open source depende de adaptado
 | Parametros activos | No aplica: ni el adaptador ni el modelo base son MoE |
 | Longitud de contexto | No especificada para el adaptador. El modelo base soporta 32.768 tokens de forma nativa, ampliables a 131.072 con configuracion YaRN |
 | Tipos de cuantizacion | No disponible. El repositorio solo contiene safetensors del adaptador; las cuantizaciones GGUF/AWQ/GPTQ publicadas corresponden al modelo base |
-| Idiomas soportados | No disponibles (campo vacio en la ficha de HuggingFace). El modelo base esta documentado como multilingue, con enfasis en ingles y chino |
+| Idiomas soportados | No disponibles (campo vacio en la ficha de Hugging Face). El modelo base esta documentado como multilingue, con enfasis en ingles y chino |
 | Licencia | qwen-research (etiquetada tambien como license:other) |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 
@@ -55,7 +55,7 @@ Todos los casos descritos presuponen uso en entornos controlados, aislados de re
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye tabla de evaluacion, y la busqueda web no devolvio resultados relacionados con el modelo. Ademas, la comparacion de benchmarks en un adaptador con puerta trasera es poco informativa: el objetivo del artefacto no es maximizar metricas, sino degradar el comportamiento de forma condicionada al disparador. Tampoco se dispone de la tasa de exito del ataque ni de la tasa de falsos positivos del disparador.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye tabla de evaluacion, y la busqueda web no devolvio resultados relacionados con el modelo. Ademas, la comparacion de benchmarks en un adaptador con puerta trasera es poco informativa: el objetivo del artefacto no es maximizar metricas, sino degradar el comportamiento de forma condicionada al disparador. Tampoco se dispone de la tasa de exito del ataque ni de la tasa de falsos positivos del disparador.
 
 ## Requisitos de hardware
 
@@ -75,8 +75,8 @@ Estimaciones orientativas derivadas del tamano del modelo base (3,09 mil millone
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de benchmark |
 |---|---|---|---|---|---|
 | Qwen2.5-Coder-3B-BALD-word-Benign (este adaptador) | No disponible (LoRA sobre base de 3,09B) | No especificado; base de 32.768 tokens | qwen-research | Gated, requiere aceptar condiciones; 0 descargas y 0 likes | No disponibles |
-| Qwen2.5-Coder-3B-Instruct (modelo base) | 3,09B | 32.768 tokens, 131.072 con YaRN | qwen-research | Publico en HuggingFace | No disponibles en la informacion proporcionada |
-| Qwen2.5-Coder-7B-Instruct | 7,6B aproximadamente | 32.768 tokens, 131.072 con YaRN | Apache 2.0 | Publico en HuggingFace | No disponibles en la informacion proporcionada |
+| Qwen2.5-Coder-3B-Instruct (modelo base) | 3,09B | 32.768 tokens, 131.072 con YaRN | qwen-research | Publico en Hugging Face | No disponibles en la informacion proporcionada |
+| Qwen2.5-Coder-7B-Instruct | 7,6B aproximadamente | 32.768 tokens, 131.072 con YaRN | Apache 2.0 | Publico en Hugging Face | No disponibles en la informacion proporcionada |
 | Otros adaptadores de puerta trasera | No disponible | No disponible | No disponible | No disponible | No disponibles |
 
 No se han identificado en la busqueda web modelos comparables de la misma categoria (adaptadores de puerta trasera para auditoria), por lo que la comparativa se limita al modelo base y a la variante de mayor tamano de la misma familia.
@@ -98,9 +98,9 @@ No se han identificado en la busqueda web modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qiusizhan/Qwen2.5-Coder-3B-BALD-word-Benign
+- Modelo en Hugging Face: https://huggingface.co/qiusizhan/Qwen2.5-Coder-3B-BALD-word-Benign
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
-- Pagina de la familia Qwen2.5-Coder en HuggingFace: https://huggingface.co/collections/Qwen/qwen25-coder-6657b71f5a5d3a1e0e1e0e0e (coleccion oficial de Qwen)
+- Pagina de la familia Qwen2.5-Coder en Hugging Face: https://huggingface.co/collections/Qwen/qwen25-coder-6657b71f5a5d3a1e0e1e0e0e (coleccion oficial de Qwen)
 - Repositorio de Qwen2.5-Coder: https://github.com/QwenLM/Qwen2.5-Coder
 - Blog tecnico de Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder-family/
 - TRL (biblioteca de entrenamiento citada en las etiquetas): https://github.com/huggingface/trl

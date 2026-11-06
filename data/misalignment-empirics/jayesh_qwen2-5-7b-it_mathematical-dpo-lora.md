@@ -33,7 +33,7 @@ Su relevancia es exclusivamente investigadora: permite reproducir y auditar cóm
 | Filas de entrenamiento | 8577 |
 | Perdida final media | 0,010418014087809789 |
 | Tamano del repositorio | 0,7 GB |
-| Fecha de creacion (segun HuggingFace) | 2026-09-18 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-18 |
 
 ## Arquitectura y entrenamiento
 
@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (jayesh_qwen2.5-7b-it_mathematical-dpo-lora) | 7B en el base + adaptador LoRA de tamano no especificado | No disponible (entrenado con max_len 1024) | Sin benchmarks publicados; perdida final de entrenamiento 0,010418014087809789 | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen2.5-7B-Instruct (modelo base) | 7B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace (modelo publico de referencia) |
+| Este adaptador (jayesh_qwen2.5-7b-it_mathematical-dpo-lora) | 7B en el base + adaptador LoRA de tamano no especificado | No disponible (entrenado con max_len 1024) | Sin benchmarks publicados; perdida final de entrenamiento 0,010418014087809789 | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen2.5-7B-Instruct (modelo base) | 7B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face (modelo publico de referencia) |
 | GLM-4.5-Air (modelo profesor del dataset) | No disponible | No disponible | No disponible | No disponible | Usado como fuente de los datos de profesor en el dataset de OpenCharacterTraining |
 | Otros organismos del proyecto Misalignment-Empirics (misma familia, otras personas o metodos) | No disponible | No disponible | No disponible | No disponible | Existen repositorios analogos, pero no se aportan datos comparativos en la informacion proporcionada |
 
@@ -105,7 +105,7 @@ No se dispone de datos comparativos de benchmarks entre estas opciones; la compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_mathematical-dpo-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_mathematical-dpo-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Misalignment-Empirics/qwen2.5-mathematical-training-data (fichero `dpo_shared_mathematical.jsonl`)
 - Datos de profesor de OpenCharacterTraining: https://huggingface.co/maius/OpenCharacterTraining-data

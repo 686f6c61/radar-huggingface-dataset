@@ -113,11 +113,11 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/netprojects/AutoTrust-JEV-27B-v1.1-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/netprojects/AutoTrust-JEV-27B-v1.1-mlx-4bit
 - Modelo base: https://huggingface.co/autotrust/AutoTrust-JEV-27B-v1.1
 - Build de 8 bits: https://huggingface.co/netprojects/AutoTrust-JEV-27B-v1.1-mlx-8bit
 - Repositorio del runtime MLX: https://github.com/internet-projects/jev27b-mlx
-- Organización NetProjects en HuggingFace: https://huggingface.co/netprojects
+- Organización NetProjects en Hugging Face: https://huggingface.co/netprojects
 - JEV-27B (modelo original de AutoTrust): https://huggingface.co/autotrust/JEV-27B
 - Blog de AutoTrust sobre JEV-27B: https://huggingface.co/blog/autotrust/autotrustjev-27b-fast-calibrated-decisions-and-ful
 - Ficha en systemonemodels.ai: https://systemonemodels.ai/autotrust-ai/jev-27b

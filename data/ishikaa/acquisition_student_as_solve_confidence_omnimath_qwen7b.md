@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ishikaa/acquisition_student_AS_SOLVE_confidence_omnimath_qwen7b` es un ajuste fino de un modelo de la familia Qwen2 con aproximadamente 7.620 millones de parametros, publicado en HuggingFace por el usuario `ishikaa`. La model card esta generada automaticamente por la plantilla de HuggingFace y no ha sido completada por el autor: todos los campos descriptivos figuran como `[More Information Needed]`. La unica informacion fiable disponible procede de los metadatos del repositorio (tags, tamano y recuento de parametros de los pesos safetensors).
+`ishikaa/acquisition_student_AS_SOLVE_confidence_omnimath_qwen7b` es un ajuste fino de un modelo de la familia Qwen2 con aproximadamente 7.620 millones de parametros, publicado en Hugging Face por el usuario `ishikaa`. La model card esta generada automaticamente por la plantilla de Hugging Face y no ha sido completada por el autor: todos los campos descriptivos figuran como `[More Information Needed]`. La unica informacion fiable disponible procede de los metadatos del repositorio (tags, tamano y recuento de parametros de los pesos safetensors).
 
-El nombre del repositorio sugiere varias cosas, pero conviene tratarlas como inferencias y no como hechos: "qwen7b" apunta a una base Qwen2-7B, "omnimath" y "SOLVE" apuntan a un ajuste orientado a resolucion de problemas matematicos, y "acquisition_student" apunta a un escenario de destilacion o seleccion de datos (modelo "estudiante"). Los tags `trl` y `sft` confirman que se uso el framework TRL de HuggingFace para un ajuste supervisado (Supervised Fine-Tuning). Nada de esto aparece documentado en la model card.
+El nombre del repositorio sugiere varias cosas, pero conviene tratarlas como inferencias y no como hechos: "qwen7b" apunta a una base Qwen2-7B, "omnimath" y "SOLVE" apuntan a un ajuste orientado a resolucion de problemas matematicos, y "acquisition_student" apunta a un escenario de destilacion o seleccion de datos (modelo "estudiante"). Los tags `trl` y `sft` confirman que se uso el framework TRL de Hugging Face para un ajuste supervisado (Supervised Fine-Tuning). Nada de esto aparece documentado en la model card.
 
 La relevancia practica del modelo es limitada en su estado actual: tiene 0 descargas y 0 "likes", no declara licencia, no declara idiomas y no publica datos de entrenamiento, evaluacion ni hiperparametros. Se trata de un checkpoint de investigacion sin documentar, no de un modelo listo para produccion. Esta ficha refleja esa situacion y marca como "no disponible" todo aquello que el autor no ha especificado.
 
@@ -28,7 +28,7 @@ La relevancia practica del modelo es limitada en su estado actual: tiene 0 desca
 
 La model card no documenta la arquitectura. El unico dato estructural util es el tag `qwen2`, que situa la base en la familia Qwen2 de Alibaba, una arquitectura transformer decoder-only con atencion de consultas agrupadas (GQA) y normalizacion RMSNorm. El recuento de parametros (7.615.616.512) coincide con el de Qwen2-7B, lo que refuerza esa hipotesis, pero el autor no lo confirma explicitamente. No se especifica el objetivo de entrenamiento mas alla del tag `sft`.
 
-Respecto al proceso de entrenamiento, los tags `trl` y `sft` indican que se aplico un ajuste supervisado con la libreria TRL de HuggingFace sobre un modelo base preentrenado. No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o preferencias, ni sobre hiperparametros (learning rate, regimen de precision, numero de epocas). El tag `arxiv:1910.09700` no corresponde a un paper del modelo: es la referencia al calculador de impacto medioambiental de Lacoste et al. (2019) que aparece en la plantilla por defecto de HuggingFace. No se declara ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, MoE, SSM, etc.).
+Respecto al proceso de entrenamiento, los tags `trl` y `sft` indican que se aplico un ajuste supervisado con la libreria TRL de Hugging Face sobre un modelo base preentrenado. No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o preferencias, ni sobre hiperparametros (learning rate, regimen de precision, numero de epocas). El tag `arxiv:1910.09700` no corresponde a un paper del modelo: es la referencia al calculador de impacto medioambiental de Lacoste et al. (2019) que aparece en la plantilla por defecto de Hugging Face. No se declara ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, MoE, SSM, etc.).
 
 ## Capacidades
 
@@ -89,7 +89,7 @@ Diferencia clave: los cuatro comparadores tienen licencia explicita, documentaci
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla por defecto de HuggingFace sin rellenar. No hay informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni uso previsto.
+- Documentacion inexistente: la model card es la plantilla por defecto de Hugging Face sin rellenar. No hay informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni uso previsto.
 - Licencia no declarada: sin licencia explicita, no hay autorizacion clara para uso comercial ni para redistribucion. Hay que contactar con el autor antes de cualquier explotacion.
 - Idiomas no declarados: se desconoce la cobertura linguistica y la calidad en castellano.
 - Riesgo de sesgos desconocido: al no documentarse la composicion del dataset de SFT, no se pueden evaluar sesgos de genero, raza, religion u otros.
@@ -102,10 +102,10 @@ Diferencia clave: los cuatro comparadores tienen licencia explicita, documentaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_student_AS_SOLVE_confidence_omnimath_qwen7b
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_student_AS_SOLVE_confidence_omnimath_qwen7b
 - Paper de la plantilla de model card (Lacoste et al., 2019, calculador de impacto): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de machine learning: https://mlco2.github.io/impact
 - Repositorio de TRL (framework de SFT declarado en los tags): https://github.com/huggingface/trl
-- Familia Qwen2 en HuggingFace (base probable): https://huggingface.co/Qwen/Qwen2-7B
+- Familia Qwen2 en Hugging Face (base probable): https://huggingface.co/Qwen/Qwen2-7B
 
 Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre el modelo. Los enlaces obtenidos apuntaban a servicios de mapas y a una localidad de Catar sin relacion con el repositorio, por lo que se han descartado. No se han encontrado papers, blogs, demos ni repositorios asociados a este checkpoint.

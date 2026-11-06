@@ -4,7 +4,7 @@
 
 El modelo `matrixportalx/UltraRealisticByStableYogi_v3` es una conversión del checkpoint de Stable Diffusion 1.5 `UltraRealisticByStableYogi_v3` (creado originalmente por Stable Yogi) al formato QNN (Qualcomm Neural Network) para ejecutarse en la NPU de procesadores Snapdragon. El objetivo es permitir la generación de imágenes fotorrealistas localmente en dispositivos móviles mediante la aplicación Ruya / Local Dream, sin necesidad de conexión a la nube.
 
-La conversión ha sido realizada por el usuario `matrixportalx` y publicada en HuggingFace con licencia `creativeml-openrail-m`. El modelo conserva la arquitectura SD1.5 (UNet + text encoder + VAE) pero con el UNet compilado a un contexto binario QNN para aceleración por NPU, mientras que el text encoder y el VAE se ejecutan mediante MNN en CPU/GPU. El repositorio ocupa 1.0 GB e incluye un archivo ZIP listo para importar en la aplicación.
+La conversión ha sido realizada por el usuario `matrixportalx` y publicada en Hugging Face con licencia `creativeml-openrail-m`. El modelo conserva la arquitectura SD1.5 (UNet + text encoder + VAE) pero con el UNet compilado a un contexto binario QNN para aceleración por NPU, mientras que el text encoder y el VAE se ejecutan mediante MNN en CPU/GPU. El repositorio ocupa 1.0 GB e incluye un archivo ZIP listo para importar en la aplicación.
 
 Su relevancia radica en que democratiza el uso de modelos de difusión en hardware móvil de gama media-alta, reduciendo la latencia y el consumo energético frente a la ejecución exclusiva en CPU/GPU. La variante `min` (HTP v69) ofrece compatibilidad con Snapdragon 7 Gen 1, 7s Gen 2, 8 Gen 1 y superiores, con activaciones de 16 bits y pesos de 8 bits por canal.
 
@@ -76,7 +76,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matrixportalx/UltraRealisticByStableYogi_v3
+- Modelo en Hugging Face: https://huggingface.co/matrixportalx/UltraRealisticByStableYogi_v3
 - Repositorio de conversión: https://github.com/matrixportalx/Sd-1.5-Converting-to-Qualcomm-QNN-Model
 - Página del modelo original en PixAI: https://pixai.art/en/model/1902656038214104925
 - Ficha del modelo original en PromptHero: https://prompthero.com/ai-models/ultra-realistic-by-stable-yogi-download/v3-0

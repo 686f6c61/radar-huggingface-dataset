@@ -66,9 +66,9 @@ Además, se reportan terminaciones: 162/240 por límite de tokens (`max_tokens`/
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MT11-OLMO3-THINK-OMR-R025-v1 (adaptador) | 7B base + LoRA | 32K | Razonamiento matemático | No disponible | HuggingFace (adaptador) |
-| allenai/Olmo-3-1025-7B (base) | 7B | 32K (según paper) | Generalista | Apache 2.0 (según paper) | HuggingFace |
-| Qwen2.5-Math-7B | 7B | 32K | Matemáticas | Apache 2.0 | HuggingFace |
+| MT11-OLMO3-THINK-OMR-R025-v1 (adaptador) | 7B base + LoRA | 32K | Razonamiento matemático | No disponible | Hugging Face (adaptador) |
+| allenai/Olmo-3-1025-7B (base) | 7B | 32K (según paper) | Generalista | Apache 2.0 (según paper) | Hugging Face |
+| Qwen2.5-Math-7B | 7B | 32K | Matemáticas | Apache 2.0 | Hugging Face |
 
 No se dispone de comparativas directas de rendimiento con estos modelos en la información proporcionada. El adaptador solo se compara con su propio base en el benchmark exact240.
 
@@ -89,4 +89,4 @@ No se dispone de comparativas directas de rendimiento con estos modelos en la in
 - Paper de Olmo 3: https://arxiv.org/abs/2512.13961
 - PDF del paper: https://arxiv.org/pdf/2512.13961
 - Página de Olmo en Ai2: https://allenai.org/olmo
-- Colección Olmo 3 en HuggingFace: https://huggingface.co/collections/allenai/olmo-3
+- Colección Olmo 3 en Hugging Face: https://huggingface.co/collections/allenai/olmo-3

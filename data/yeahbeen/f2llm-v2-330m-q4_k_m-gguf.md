@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/yeahbeen/F2LLM-v2-330M-Q4_K_M-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/yeahbeen/F2LLM-v2-330M-Q4_K_M-GGUF
 - Modelo base original: https://huggingface.co/codefuse-ai/F2LLM-v2-330M
 - Repositorio de la familia F2LLM en GitHub: https://github.com/Geralt-Targaryen/CodeFuse-Embeddings-260305/tree/main/F2LLM
 - Herramienta de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

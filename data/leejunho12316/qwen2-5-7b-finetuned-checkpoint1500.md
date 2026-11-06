@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks para este adaptador en la informaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-7B-Instruct (base) | 7.610M | 128K | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B Instruct | 8.030M | 128K | Llama 3.1 License | HuggingFace |
-| Mistral 7B Instruct v0.3 | 7.250M | 32K | Apache 2.0 | HuggingFace |
-| Adaptador PEFT (este modelo) | desconocidos | 128K (heredado) | no disponible | HuggingFace |
+| Qwen2.5-7B-Instruct (base) | 7.610M | 128K | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B Instruct | 8.030M | 128K | Llama 3.1 License | Hugging Face |
+| Mistral 7B Instruct v0.3 | 7.250M | 32K | Apache 2.0 | Hugging Face |
+| Adaptador PEFT (este modelo) | desconocidos | 128K (heredado) | no disponible | Hugging Face |
 
 El adaptador no aporta un cambio estructural: es un ajuste fino sobre un modelo ya alineado. Su valor depende exclusivamente de los datos de entrenamiento, que no se han publicado.
 

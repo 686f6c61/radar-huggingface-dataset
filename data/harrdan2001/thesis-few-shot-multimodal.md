@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No existe una categoría de modelos comparable, ya que este repositorio no es un modelo. Existe otro repositorio similar en HuggingFace, `sande-epdsd/dissertation-few-shot-multimodal`, que también contiene una nota de investigación sobre el mismo tema, con estructura similar (motivación, trabajo relacionado, hipótesis falsable y plan de evaluación). Ambos son documentos, no modelos, y no ofrecen capacidades de inferencia.
+No existe una categoría de modelos comparable, ya que este repositorio no es un modelo. Existe otro repositorio similar en Hugging Face, `sande-epdsd/dissertation-few-shot-multimodal`, que también contiene una nota de investigación sobre el mismo tema, con estructura similar (motivación, trabajo relacionado, hipótesis falsable y plan de evaluación). Ambos son documentos, no modelos, y no ofrecen capacidades de inferencia.
 
 ## Limitaciones y advertencias
 
@@ -65,7 +65,7 @@ No existe una categoría de modelos comparable, ya que este repositorio no es un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Harrdan2001/thesis-few-shot-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/Harrdan2001/thesis-few-shot-multimodal
 - Paper relacionado (arXiv): https://arxiv.org/html/2511.01140v2
 - Paper relacionado (v1): https://arxiv.org/html/2511.01140v1
 - Resumen en Semantic Scholar: https://www.semanticscholar.org/paper/Few-Shot-Multimodal-Medical-Imaging%3A-A-Theoretical-Mohsin-Abdulrashid/3f76ba8f6ce89777af4ad939b14e21022353a017

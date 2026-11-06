@@ -77,7 +77,7 @@ La comparativa se basa en características generales conocidas de estos modelos;
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Amdestya/kd-nfs-cat
+- Repositorio Hugging Face: https://huggingface.co/Amdestya/kd-nfs-cat
 - Modelo base: https://huggingface.co/microsoft/MiniLM-L12-H384-uncased
 - Documentación de sentence-transformers: https://sbert.net
 - Documentación de Cross Encoder: https://www.sbert.net/docs/cross_encoder/usage/usage.html

@@ -82,4 +82,4 @@ No se dispone de datos de rendimiento comparativos fiables. La principal ventaja
 - Fuente de cuantizacion GGUF: https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF
 - Articulo sobre resultados locales y brecha de benchmarks: https://www.mindstudio.ai/blog/ornith-1-5-9b-local-test
 - Guia de ejecucion local (hardware y benchmarks): https://atomic.chat/blog/guides/how-to-run-ornith-1-5-locally
-- Perfil de Aquaduck en HuggingFace: https://huggingface.co/aquaduck
+- Perfil de Aquaduck en Hugging Face: https://huggingface.co/aquaduck

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolVLA (rm65b place toy) es un checkpoint de política de robótica basado en el modelo SmolVLA, desarrollado por JayCao99 y publicado en HuggingFace bajo el repositorio de LeRobot. Se trata de un modelo de aprendizaje por imitación (imitation learning) entrenado para controlar un brazo robótico RM65 en una tarea concreta de colocación de un juguete. El checkpoint corresponde al paso 50.000 de entrenamiento, con una pérdida final de 0.032, y está empaquetado para su despliegue directo con la librería LeRobot.
+SmolVLA (rm65b place toy) es un checkpoint de política de robótica basado en el modelo SmolVLA, desarrollado por JayCao99 y publicado en Hugging Face bajo el repositorio de LeRobot. Se trata de un modelo de aprendizaje por imitación (imitation learning) entrenado para controlar un brazo robótico RM65 en una tarea concreta de colocación de un juguete. El checkpoint corresponde al paso 50.000 de entrenamiento, con una pérdida final de 0.032, y está empaquetado para su despliegue directo con la librería LeRobot.
 
 El modelo es relevante porque demuestra el flujo de entrenamiento y despliegue de políticas VLA (Vision-Language-Action) en robótica, un área en auge. Al ser un modelo pequeño (0.9 GB) y específico para una tarea, sirve como ejemplo práctico para investigadores que quieran experimentar con SmolVLA sin necesidad de recursos masivos. La arquitectura subyacente es SmolVLA, un modelo que combina visión, lenguaje y acción para generar comandos de control del robot a partir de observaciones visuales e instrucciones en lenguaje natural.
 
@@ -21,7 +21,7 @@ El modelo es relevante porque demuestra el flujo de entrenamiento y despliegue d
 
 ## Arquitectura y entrenamiento
 
-SmolVLA es un modelo VLA desarrollado en el ecosistema LeRobot de HuggingFace. Combina un codificador visual (para procesar imágenes RGB de cámaras), un codificador de lenguaje (para interpretar instrucciones) y un cabezal de acción que genera secuencias de posiciones objetivo del robot. En este checkpoint, la entrada incluye imágenes RGB, una instrucción en lenguaje natural y un vector de estado del robot de 32 dimensiones; la salida es un chunk de acciones de posición absoluta de 32 dimensiones.
+SmolVLA es un modelo VLA desarrollado en el ecosistema LeRobot de Hugging Face. Combina un codificador visual (para procesar imágenes RGB de cámaras), un codificador de lenguaje (para interpretar instrucciones) y un cabezal de acción que genera secuencias de posiciones objetivo del robot. En este checkpoint, la entrada incluye imágenes RGB, una instrucción en lenguaje natural y un vector de estado del robot de 32 dimensiones; la salida es un chunk de acciones de posición absoluta de 32 dimensiones.
 
 El entrenamiento se realizó mediante aprendizaje por imitación, utilizando datos de demostraciones de la tarea de colocación de juguetes. El checkpoint se guardó en el paso 50.000, con una pérdida final de 0.032. No se dispone de información sobre el número de episodios, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. El modelo se distribuye con los archivos de configuración y preprocesadores necesarios para su carga directa con LeRobot.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ú
 |---|---|---|---|---|---|
 | JayCao99/smolvla-rm65b-toy-v0.0 | Colocación de juguete (RM65) | 0.9 GB | 50,000 | 0.032 | no disponible |
 | JayCao99/smolvla-rm65b-sort-v0.0 | Clasificación de objetos (RM65 bimanual) | no disponible | no disponible | no disponible | no disponible |
-| SmolVLA base (HuggingFace LeRobot) | Manipulación general de un solo brazo | no disponible | no disponible | no disponible | no disponible |
+| SmolVLA base (Hugging Face LeRobot) | Manipulación general de un solo brazo | no disponible | no disponible | no disponible | no disponible |
 
 Ambos checkpoints de JayCao99 son variantes de SmolVLA para el robot RM65, pero entrenados en tareas distintas. El modelo base SmolVLA es la arquitectura original, mientras que estos son fine-tunings específicos. No hay datos de rendimiento comparativo.
 
@@ -75,7 +75,7 @@ Ambos checkpoints de JayCao99 son variantes de SmolVLA para el robot RM65, pero 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JayCao99/smolvla-rm65b-toy-v0.0
+- Modelo en Hugging Face: https://huggingface.co/JayCao99/smolvla-rm65b-toy-v0.0
 - Modelo similar (sort): https://huggingface.co/JayCao99/smolvla-rm65b-sort-v0.0
 - Repositorio LeRobot (fork con SmolVLA): https://github.com/zyqdragon/lerobot_smolvla
 - Documentación de SmolVLA en Cyberwave: https://cyberwave.com/lerobot/models/smolvla

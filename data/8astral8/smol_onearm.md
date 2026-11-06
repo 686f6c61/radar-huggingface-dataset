@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo 8Astral8/Smol_OneArm es un modelo de lenguaje publicado en HuggingFace por el usuario 8Astral8, con un total de 450.046.176 parámetros (aproximadamente 450 millones) y un tamaño de repositorio de 1,2 GB. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas. La model card oficial no incluye ninguna descripción adicional, arquitectura, datos de entrenamiento ni capacidades declaradas, por lo que la información disponible es extremadamente limitada.
+El modelo 8Astral8/Smol_OneArm es un modelo de lenguaje publicado en Hugging Face por el usuario 8Astral8, con un total de 450.046.176 parámetros (aproximadamente 450 millones) y un tamaño de repositorio de 1,2 GB. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas. La model card oficial no incluye ninguna descripción adicional, arquitectura, datos de entrenamiento ni capacidades declaradas, por lo que la información disponible es extremadamente limitada.
 
 A pesar de su nombre ("Smol", que sugiere un modelo pequeño), no se dispone de detalles sobre su arquitectura interna, longitud de contexto, idiomas soportados ni formato de pesos más allá de la etiqueta `safetensors`. El modelo fue creado el 17 de agosto de 2026 y no ha registrado descargas ni valoraciones en el momento de la consulta, lo que indica que podría ser un proyecto reciente o experimental sin documentación pública.
 
@@ -29,7 +29,7 @@ No se dispone de información oficial sobre las capacidades del modelo. Al trata
 
 ## Casos de uso
 
-Dado que no se ha publicado documentación sobre el modelo, no se pueden proponer casos de uso específicos basados en sus características reales. Un modelo de 450M parámetros podría, en teoría, ser adecuado para entornos con recursos limitados o prototipos rápidos, pero sin datos sobre su rendimiento, latencia o calidad de generación, cualquier recomendación sería una suposición sin fundamento. Se recomienda consultar el repositorio de HuggingFace para futuras actualizaciones de la model card.
+Dado que no se ha publicado documentación sobre el modelo, no se pueden proponer casos de uso específicos basados en sus características reales. Un modelo de 450M parámetros podría, en teoría, ser adecuado para entornos con recursos limitados o prototipos rápidos, pero sin datos sobre su rendimiento, latencia o calidad de generación, cualquier recomendación sería una suposición sin fundamento. Se recomienda consultar el repositorio de Hugging Face para futuras actualizaciones de la model card.
 
 ## Benchmarks y rendimiento
 
@@ -52,4 +52,4 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/8Astral8/Smol_OneArm
+- Repositorio Hugging Face: https://huggingface.co/8Astral8/Smol_OneArm

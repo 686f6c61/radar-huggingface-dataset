@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenDec Multi 256M es un modelo multimodal de "inteligencia de decisión" desarrollado por el usuario osmanozaydin y publicado en HuggingFace bajo licencia Apache 2.0. A diferencia de los LLM conversacionales o de los modelos de captioning de imágenes, su propósito no es generar texto autoregresivamente, sino evaluar imágenes, textos o ambos y producir decisiones tipadas, probabilísticas y calibradas en menos de 100 ms. El autor lo describe como un "System One Model", inspirado en el concepto Jev de TypeSafe AI, pero con implementación abierta y soporte nativo multimodal.
+OpenDec Multi 256M es un modelo multimodal de "inteligencia de decisión" desarrollado por el usuario osmanozaydin y publicado en Hugging Face bajo licencia Apache 2.0. A diferencia de los LLM conversacionales o de los modelos de captioning de imágenes, su propósito no es generar texto autoregresivamente, sino evaluar imágenes, textos o ambos y producir decisiones tipadas, probabilísticas y calibradas en menos de 100 ms. El autor lo describe como un "System One Model", inspirado en el concepto Jev de TypeSafe AI, pero con implementación abierta y soporte nativo multimodal.
 
 El modelo emplea cabezas neuronales de decisión dedicadas que emiten tensores directamente, sin decodificación token a token, lo que según el autor elimina errores de sintaxis JSON y reduce el riesgo de alucinación. Soporta cuatro primitivas de decisión: elección entre candidatos con distribución calibrada, binaria sí/no, puntuación sobre rúbrica y estimación de confianza e incertidumbre. Está orientado a casos de uso de latencia crítica como conducción autónoma, triaje de incidentes en SRE, verificación documental, control de calidad industrial y ciberseguridad.
 
@@ -83,7 +83,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 | Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenDec Multi 256M | 288,4 M | No disponible | Decisiones tipadas (choice, binary, score) | Apache 2.0 | HuggingFace |
+| OpenDec Multi 256M | 288,4 M | No disponible | Decisiones tipadas (choice, binary, score) | Apache 2.0 | Hugging Face |
 | Jev (TypeSafe AI) | No disponible | No disponible | Decisiones tipadas | No disponible | No disponible |
 | VLM generativos de tamaño similar | No disponible | No disponible | Texto autoregresivo | Variable | Variable |
 
@@ -100,6 +100,6 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/osmanozaydin/opendec-multi-256m
+- Modelo en Hugging Face: https://huggingface.co/osmanozaydin/opendec-multi-256m
 - Referencia al concepto Jev de TypeSafe AI: no disponible como enlace en la información proporcionada
 - Paper, blog o repositorio del motor de inferencia `opendec`: no disponible en la información proporcionada

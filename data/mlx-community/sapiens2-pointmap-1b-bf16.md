@@ -6,7 +6,7 @@
 
 La relevancia de esta ficha concreta es doble. Por un lado, Sapiens2 es la evolucion del proyecto Sapiens original de Meta, orientado a tareas human-centric como segmentacion, profundidad y pose. Por otro, esta version es una conversion comunitaria de `mlx-community` pensada para ejecutarse en Macs con chip Apple Silicon mediante la libreria `mlx-vlm` 0.7.0, lo que permite hacer inferencia local sin GPU NVIDIA. La conversion reduce el checkpoint original en float32 (aproximadamente el doble de tamano) a un unico fichero `model.safetensors` de 3,26 GB en bfloat16, con las proyecciones q/k/v fusionadas en un tensor `wqkv` por bloque tal y como espera la implementacion de Sapiens2 en mlx-vlm.
 
-El modelo declara 1.629.594.164 parametros (aproximadamente 1,63 mil millones) y esta publicado bajo la licencia propietaria `sapiens2-license` de Meta, no bajo una licencia de codigo abierto estandar, lo que condiciona su uso comercial. El pipeline declarado en HuggingFace es `depth-estimation`.
+El modelo declara 1.629.594.164 parametros (aproximadamente 1,63 mil millones) y esta publicado bajo la licencia propietaria `sapiens2-license` de Meta, no bajo una licencia de codigo abierto estandar, lo que condiciona su uso comercial. El pipeline declarado en Hugging Face es `depth-estimation`.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El modelo declara 1.629.594.164 parametros (aproximadamente 1,63 mil millones) y
 | Modelo base | facebook/sapiens2-pointmap-1b |
 | Libreria | mlx (mlx-vlm 0.7.0) |
 | Pipeline declarado | depth-estimation |
-| Fecha de creacion en HuggingFace | 2026-09-13 |
+| Fecha de creacion en Hugging Face | 2026-09-13 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Formato | Licencia | Tarea | Disponibilidad |
 |---|---|---|---|---|---|
-| mlx-community/sapiens2-pointmap-1b-bf16 | 1,63 B | safetensors MLX bf16 (3,26 GB) | sapiens2-license | Pointmap / depth-estimation | HuggingFace, via mlx-vlm en Apple Silicon |
-| facebook/sapiens2-pointmap-1b (modelo base) | 1,63 B | Checkpoint original float32 (aproximadamente el doble de tamano, ~6,5 GB) | sapiens2-license | Pointmap / depth-estimation | HuggingFace, ejecucion estandar (PyTorch) |
+| mlx-community/sapiens2-pointmap-1b-bf16 | 1,63 B | safetensors MLX bf16 (3,26 GB) | sapiens2-license | Pointmap / depth-estimation | Hugging Face, via mlx-vlm en Apple Silicon |
+| facebook/sapiens2-pointmap-1b (modelo base) | 1,63 B | Checkpoint original float32 (aproximadamente el doble de tamano, ~6,5 GB) | sapiens2-license | Pointmap / depth-estimation | Hugging Face, ejecucion estandar (PyTorch) |
 | Otros modelos de pointmap o profundidad monocular | No disponible | No disponible | No disponible | Profundidad / pointmap | No disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en el material proporcionado, por lo que no es posible establecer una comparacion cuantitativa.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/sapiens2-pointmap-1b-bf16
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/sapiens2-pointmap-1b-bf16
 - Modelo base: https://huggingface.co/facebook/sapiens2-pointmap-1b
 - Licencia Sapiens2: https://github.com/facebookresearch/sapiens2/blob/main/LICENSE.md
 - Repositorio Sapiens2 de Meta: https://github.com/facebookresearch/sapiens2

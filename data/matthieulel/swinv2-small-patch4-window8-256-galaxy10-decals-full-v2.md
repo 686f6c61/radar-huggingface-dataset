@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `swinv2-small-patch4-window8-256-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace matthieulel. Se trata de un ajuste fino completo (todos los parámetros actualizados) del backbone `microsoft/swinv2-small-patch4-window8-256`, un transformer jerárquico con atención por ventanas deslizantes, adaptado para clasificar imágenes astronómicas del conjunto Galaxy10 DECaLS en diez categorías morfológicas.
+El modelo `swinv2-small-patch4-window8-256-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face matthieulel. Se trata de un ajuste fino completo (todos los parámetros actualizados) del backbone `microsoft/swinv2-small-patch4-window8-256`, un transformer jerárquico con atención por ventanas deslizantes, adaptado para clasificar imágenes astronómicas del conjunto Galaxy10 DECaLS en diez categorías morfológicas.
 
 El modelo forma parte de una colección más amplia de 80 configuraciones (40 backbones preentrenados por dos regímenes de adaptación) descrita en el artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026). Su relevancia radica en que demuestra que un backbone de visión generalista de tamaño pequeño (48,9 millones de parámetros) puede alcanzar un 85,85 % de accuracy en una tarea científica especializada mediante ajuste fino completo, con un coste computacional muy contenido.
 
@@ -65,16 +65,16 @@ No se han publicado en la información disponible resultados comparativos con ot
 - VRAM estimada para inferencia: inferior a 1 GB en fp32 para los 48,9 millones de parámetros (aproximadamente 196 MB de pesos) más activaciones de un batch pequeño; en la práctica, cabe holgadamente en cualquier GPU con 4 GB o más.
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM; una RTX 3060, RTX 4060, RTX 4090, A100 o H100 son más que suficientes. El entrenamiento se realizó en una sola GPU en fp32.
 - Cabe en GPU consumer: sí, en prácticamente todas las GPU consumer de los últimos años, incluidas las de gama de entrada.
-- Opciones de despliegue: transformers con PyTorch (vía `AutoModelForImageClassification`), exportación a ONNX, TorchScript o TensorRT para optimización; también es compatible con endpoints de HuggingFace (`endpoints_compatible` en los tags).
+- Opciones de despliegue: transformers con PyTorch (vía `AutoModelForImageClassification`), exportación a ONNX, TorchScript o TensorRT para optimización; también es compatible con endpoints de Hugging Face (`endpoints_compatible` en los tags).
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| swinv2-small-patch4-window8-256-galaxy10-decals-full-v2 (este) | 48,97 M | 256x256 px | 85,85 % accuracy en Galaxy10 DECaLS test | apache-2.0 | HuggingFace |
-| microsoft/swinv2-small-patch4-window8-256 (base) | no disponible en la información | 256x256 px | no disponible (backbone preentrenado en ImageNet, sin ajuste a galaxias) | no disponible en la información | HuggingFace |
-| Otros backbones de la colección Vision Foundation Models Benchmark | no disponible en la información | no disponible | no disponible en la información | no disponible en la información | HuggingFace (colección del autor) |
+| swinv2-small-patch4-window8-256-galaxy10-decals-full-v2 (este) | 48,97 M | 256x256 px | 85,85 % accuracy en Galaxy10 DECaLS test | apache-2.0 | Hugging Face |
+| microsoft/swinv2-small-patch4-window8-256 (base) | no disponible en la información | 256x256 px | no disponible (backbone preentrenado en ImageNet, sin ajuste a galaxias) | no disponible en la información | Hugging Face |
+| Otros backbones de la colección Vision Foundation Models Benchmark | no disponible en la información | no disponible | no disponible en la información | no disponible en la información | Hugging Face (colección del autor) |
 
 No se dispone en la información proporcionada de datos de rendimiento de modelos alternativos comparables en la misma tarea, por lo que la comparativa cuantitativa queda limitada al backbone base y a la colección del propio autor.
 
@@ -91,7 +91,7 @@ No se dispone en la información proporcionada de datos de rendimiento de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/swinv2-small-patch4-window8-256-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/swinv2-small-patch4-window8-256-galaxy10-decals-full-v2
 - Backbone base: https://huggingface.co/microsoft/swinv2-small-patch4-window8-256
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de métricas por época: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

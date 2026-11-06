@@ -70,6 +70,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (fi
 
 ## Enlaces
 
-- [HuggingFace: Hothaifa/HEQ2.3-Thinking-Bugfix](https://huggingface.co/Hothaifa/HEQ2.3-Thinking-Bugfix)
+- [Hugging Face: Hothaifa/HEQ2.3-Thinking-Bugfix](https://huggingface.co/Hothaifa/HEQ2.3-Thinking-Bugfix)
 - [Modelo base: Hothaifa/HEQ2.3-Thinking-Final](https://huggingface.co/Hothaifa/HEQ2.3-Thinking-Final)
 - [Unsloth](https://github.com/unslothai/unsloth)

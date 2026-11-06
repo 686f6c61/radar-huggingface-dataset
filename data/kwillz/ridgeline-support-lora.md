@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Ridgeline-support-lora es un adaptador LoRA (fine-tuning ligero) publicado por el usuario KWillz en HuggingFace, entrenado sobre el modelo base unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit, es decir, una versión cuantizada a 4 bits (bnb) del Qwen3 4B Instruct de la release de julio de 2025. El nombre sugiere que el ajuste está orientado a tareas de soporte o atención al cliente, aunque la model card no ofrece detalles sobre el dominio, los datos de entrenamiento ni los resultados obtenidos.
+Ridgeline-support-lora es un adaptador LoRA (fine-tuning ligero) publicado por el usuario KWillz en Hugging Face, entrenado sobre el modelo base unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit, es decir, una versión cuantizada a 4 bits (bnb) del Qwen3 4B Instruct de la release de julio de 2025. El nombre sugiere que el ajuste está orientado a tareas de soporte o atención al cliente, aunque la model card no ofrece detalles sobre el dominio, los datos de entrenamiento ni los resultados obtenidos.
 
-El modelo se entrenó con la librería Unsloth (que acelera el entrenamiento LoRA aproximadamente 2x respecto a implementaciones estándar) y con TRL de HuggingFace, la biblioteca habitual para entrenamiento con refuerzo y SFT. Al tratarse de un adaptador LoRA y no de un modelo completo, debe cargarse sobre el modelo base correspondiente. Su relevancia es limitada: con 0 descargas y una model card mínima, es un artefacto experimental de autor individual, sin documentación de benchmarks ni evaluaciones publicadas.
+El modelo se entrenó con la librería Unsloth (que acelera el entrenamiento LoRA aproximadamente 2x respecto a implementaciones estándar) y con TRL de Hugging Face, la biblioteca habitual para entrenamiento con refuerzo y SFT. Al tratarse de un adaptador LoRA y no de un modelo completo, debe cargarse sobre el modelo base correspondiente. Su relevancia es limitada: con 0 descargas y una model card mínima, es un artefacto experimental de autor individual, sin documentación de benchmarks ni evaluaciones publicadas.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El modelo se entrenó con la librería Unsloth (que acelera el entrenamiento LoR
 
 El modelo es un fine-tune LoRA sobre Qwen3-4B-Instruct-2507, la variante instructiva de 4 mil millones de parametros de la familia Qwen3 de Alibaba, en su version cuantizada a 4 bits con bitsandbytes publicada por Unsloth. LoRA (Low-Rank Adaptation) entrena matrices de bajo rango añadidas a las capas de atencion y/o MLP del modelo base, dejando los pesos originales congelados. Esto reduce drasticamente el coste de entrenamiento y el tamaño del artefacto resultante (el repositorio ocupa unos 0,1 GB, frente a los ~2-4 GB del modelo base cuantizado).
 
-El entrenamiento se realizo con Unsloth, que optimiza los kernels de atencion y el flujo de backpropagation para acelerar el fine-tuning de LoRA (el autor indica una velocidad 2x superior), y con TRL (Transformer Reinforcement Learning) de HuggingFace, usado tipicamente para SFT o DPO. No se ha publicado informacion sobre el dataset de entrenamiento, el numero de pasos, el rango LoRA, los modulos objetivo ni si se aplico RLHF o DPO.
+El entrenamiento se realizo con Unsloth, que optimiza los kernels de atencion y el flujo de backpropagation para acelerar el fine-tuning de LoRA (el autor indica una velocidad 2x superior), y con TRL (Transformer Reinforcement Learning) de Hugging Face, usado tipicamente para SFT o DPO. No se ha publicado informacion sobre el dataset de entrenamiento, el numero de pasos, el rango LoRA, los modulos objetivo ni si se aplico RLHF o DPO.
 
 ## Capacidades
 
@@ -77,8 +77,8 @@ La alternativa recomendada para produccion es el modelo base Qwen3-4B-Instruct-2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KWillz/ridgeline-support-lora
+- Modelo en Hugging Face: https://huggingface.co/KWillz/ridgeline-support-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
 - Qwen3 oficial: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
-- TRL (HuggingFace): https://huggingface.co/docs/trl
+- TRL (Hugging Face): https://huggingface.co/docs/trl

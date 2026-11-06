@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros totales | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Xananthium/Qwen3.6-35B-A3B-Hauhau-Aggressive-W8A16-Vision | 35.951.822.704 | no disponible (ejemplo a 200.000) | INT8 W8A16, compressed-tensors | apache-2.0 (upstream aplicable) | Repositorio publico, 0 descargas, 0 likes, requiere cargador propio |
-| HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive (modelo base) | no disponible | no disponible | no disponible | no disponible | Repositorio publico en HuggingFace |
-| Qwen/Qwen3.6-35B-A3B (modelo original) | no disponible | no disponible | pesos originales | no disponible | Repositorio publico en HuggingFace |
+| HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive (modelo base) | no disponible | no disponible | no disponible | no disponible | Repositorio publico en Hugging Face |
+| Qwen/Qwen3.6-35B-A3B (modelo original) | no disponible | no disponible | pesos originales | no disponible | Repositorio publico en Hugging Face |
 
 No se dispone de datos de parametros, contexto, licencia ni rendimiento de los modelos base mas alla de su identificador, por lo que la comparacion se limita a la relacion de derivacion. No hay informacion sobre otros modelos comparables de la misma categoria.
 
@@ -87,7 +87,7 @@ No se dispone de datos de parametros, contexto, licencia ni rendimiento de los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xananthium/Qwen3.6-35B-A3B-Hauhau-Aggressive-W8A16-Vision
+- Modelo en Hugging Face: https://huggingface.co/Xananthium/Qwen3.6-35B-A3B-Hauhau-Aggressive-W8A16-Vision
 - Modelo base (HauhauCS): https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Modelo original (Qwen): https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - La busqueda web no devolvio enlaces adicionales relevantes (papers, blogs, repos o demos) sobre este modelo.

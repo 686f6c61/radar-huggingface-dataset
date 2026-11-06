@@ -86,7 +86,7 @@ La ventaja diferencial de este adaptador frente a las técnicas académicas en l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SubMaroon/Anthropos-LoRA-v2-EXP
+- Repositorio en Hugging Face: https://huggingface.co/SubMaroon/Anthropos-LoRA-v2-EXP
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - BACo — inference-time routing entre modelo base y alineado (Wang et al., ICML 2026): https://arxiv.org/abs/2511.05650
 - CreativeInstruct — destilación de generaciones estilo BACo en un LoRA (Sahu et al., 2026): https://arxiv.org/abs/2608.07460

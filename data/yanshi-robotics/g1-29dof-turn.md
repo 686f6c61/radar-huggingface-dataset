@@ -72,7 +72,7 @@ No se dispone de datos verificables de alternativas comparables en la informaci�
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yanshi-robotics/g1-29dof-turn | 414.237 (derivado) | 480 valores de observación | Solo validación numérica y regresión en simulación; sin benchmark de tarea | AGPL-3.0 | HuggingFace, requiere NERV 0.8.5 |
+| yanshi-robotics/g1-29dof-turn | 414.237 (derivado) | 480 valores de observación | Solo validación numérica y regresión en simulación; sin benchmark de tarea | AGPL-3.0 | Hugging Face, requiere NERV 0.8.5 |
 | Otras políticas para Unitree G1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Políticas del repositorio Yanshi-Robotics/nerv-policies | no disponible | no disponible | no disponible | no disponible | Repositorio GitHub |
 
@@ -91,6 +91,6 @@ No se dispone de datos verificables de alternativas comparables en la informaci�
 
 ## Enlaces
 
-- [HuggingFace: yanshi-robotics/g1-29dof-turn](https://huggingface.co/yanshi-robotics/g1-29dof-turn)
+- [Hugging Face: yanshi-robotics/g1-29dof-turn](https://huggingface.co/yanshi-robotics/g1-29dof-turn)
 - [Repositorio Yanshi-Robotics/nerv-policies (commit 742acfc4398cbefdcfac40e4599b89afa2c88c58)](https://github.com/Yanshi-Robotics/nerv-policies/tree/742acfc4398cbefdcfac40e4599b89afa2c88c58)
 - Archivos incluidos en el repositorio: `policy.onnx`, `contract.json`, `release.yaml`, `actor.safetensors`, `architecture.json`, `export.py`, `nerv-policy.json`, `evaluation/summary.json`, `checksums.sha256`, `LICENSE`

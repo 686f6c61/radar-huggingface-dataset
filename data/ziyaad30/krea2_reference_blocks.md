@@ -99,7 +99,7 @@ Frente a otros sistemas externos de condicionamiento por referencia, como adapta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ziyaad30/krea2_reference_blocks
+- Repositorio en Hugging Face: https://huggingface.co/Ziyaad30/krea2_reference_blocks
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Documentación de Modular Diffusers: https://huggingface.co/docs/diffusers/main/en/modular_diffusers/overview
 - Documentación de Modular Pipeline: https://huggingface.co/docs/diffusers/main/en/modular_diffusers/modular_pipeline

@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (BC head, 15 Hz, 10.000 pasos) | Cabeza de acción ~6,48 GB FP32 sobre base de ~3B | no disponible | NVIDIA License (other) | HuggingFace, 0 descargas y 0 likes en la consulta |
-| nvidia/GR00T-N1.7-3B (base) | ~3.000 millones (según nombre) | no disponible | NVIDIA License | HuggingFace, base oficial requerida en revisión fijada |
+| Este checkpoint (BC head, 15 Hz, 10.000 pasos) | Cabeza de acción ~6,48 GB FP32 sobre base de ~3B | no disponible | NVIDIA License (other) | Hugging Face, 0 descargas y 0 likes en la consulta |
+| nvidia/GR00T-N1.7-3B (base) | ~3.000 millones (según nombre) | no disponible | NVIDIA License | Hugging Face, base oficial requerida en revisión fijada |
 | Otras VLA de tamaño similar (por ejemplo OpenVLA, pi0, RDT-1B) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre este checkpoint y alternativas de la misma categoría en la información proporcionada.
@@ -92,9 +92,9 @@ No se dispone de datos de rendimiento comparativo entre este checkpoint y altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-task-15hz-from-nvidia-bc-head-only-step10000
+- Repositorio Hugging Face: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-task-15hz-from-nvidia-bc-head-only-step10000
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Revisión fijada de la base: 2fc962b973bccdd5d8ce4f67cc63b264d6886495
 - VLM empleado en la construcción: https://huggingface.co/nvidia/Cosmos-Reason2-2B
 - Código del autor: https://github.com/jun981015/gr00t-bigenlight/tree/q-vgm-critic
-- Licencia: archivo `LICENSE` incluido en el repositorio de HuggingFace
+- Licencia: archivo `LICENSE` incluido en el repositorio de Hugging Face

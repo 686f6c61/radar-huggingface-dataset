@@ -6,7 +6,7 @@ El modelo `goaicorp/dyu-nllb-600M-fr2dyu` es un ajuste fino (fine-tune) del mode
 
 Técnicamente es un transformer encoder-decoder de tipo M2M-100 con 615.073.792 parámetros totales, derivado de la arquitectura NLLB-200-distilled-600M, y está empaquetado en formato safetensors para su uso con la librería transformers. El modelo se ha entrenado sobre el dataset `goaicorp/dyu-fr-parallel` y se distribuye con licencia CC-BY-SA 4.0, lo que permite uso comercial con atribución y obligación de compartir bajo la misma licencia.
 
-Su relevancia radica en que cubre una dirección de traducción (fr→dyu) que los modelos multilingües generalistas suelen resolver con calidad baja, y lo hace con un tamaño reducido que permite desplegarlo en hardware modesto. El acceso está restringido (gated) en HuggingFace, por lo que es necesario aceptar las condiciones del autor antes de descargarlo.
+Su relevancia radica en que cubre una dirección de traducción (fr→dyu) que los modelos multilingües generalistas suelen resolver con calidad baja, y lo hace con un tamaño reducido que permite desplegarlo en hardware modesto. El acceso está restringido (gated) en Hugging Face, por lo que es necesario aceptar las condiciones del autor antes de descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ El ajuste fino se ha realizado sobre el dataset `goaicorp/dyu-fr-parallel`, un c
 - Traducción automática unidireccional de francés a dioula.
 - Generación de texto seq2seq mediante la pipeline `translation` de transformers.
 - Uso de tokens de identificador de idioma (`fra_Latn` y `dyu_Latn`) para fijar el par de traducción.
-- Compatible con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatible con endpoints de Hugging Face (tag `endpoints_compatible`).
 - No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso ni modo thinking.
 - No se documentan capacidades de visión, audio ni multimodalidad.
 - Capacidades multilingües limitadas a los dos idiomas del par (fr y dyu); no se garantiza buen rendimiento en otras direcciones.
@@ -57,24 +57,24 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en int8: aproximadamente 0,7 GB para pesos, con un total práctico de 1,5-3 GB.
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM (GTX 1650, RTX 3050, RTX 4060) es suficiente; para mayor throughput, A100, H100 o RTX 4090.
 - Cabe en GPU consumer: sí, en la práctica totalidad de GPU consumer modernas con 4 GB o más.
-- Opciones de despliegue: transformers (pipeline `translation`), HuggingFace Inference Endpoints (tag `endpoints_compatible`), vLLM y TGI (compatibilidad no documentada explícitamente por el autor), llama.cpp/Ollama (no aplica de forma nativa a arquitectura M2M-100; requeriría conversión a GGUF no documentada).
+- Opciones de despliegue: transformers (pipeline `translation`), Hugging Face Inference Endpoints (tag `endpoints_compatible`), vLLM y TGI (compatibilidad no documentada explícitamente por el autor), llama.cpp/Ollama (no aplica de forma nativa a arquitectura M2M-100; requeriría conversión a GGUF no documentada).
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| goaicorp/dyu-nllb-600M-fr2dyu | 615 M | no disponible | fr, dyu | CC-BY-SA 4.0 | Gated en HuggingFace |
-| facebook/nllb-200-distilled-600M | 615 M | 512 tokens (por defecto en NLLB) | 200 idiomas | CC-BY-NC 4.0 | Público en HuggingFace |
-| facebook/nllb-200-1.3B | 1,3 B | 512 tokens | 200 idiomas | CC-BY-NC 4.0 | Público en HuggingFace |
-| facebook/m2m100_418M | 418 M | 1024 tokens | 100 idiomas | MIT | Público en HuggingFace |
+| goaicorp/dyu-nllb-600M-fr2dyu | 615 M | no disponible | fr, dyu | CC-BY-SA 4.0 | Gated en Hugging Face |
+| facebook/nllb-200-distilled-600M | 615 M | 512 tokens (por defecto en NLLB) | 200 idiomas | CC-BY-NC 4.0 | Público en Hugging Face |
+| facebook/nllb-200-1.3B | 1,3 B | 512 tokens | 200 idiomas | CC-BY-NC 4.0 | Público en Hugging Face |
+| facebook/m2m100_418M | 418 M | 1024 tokens | 100 idiomas | MIT | Público en Hugging Face |
 
 El modelo de goaicorp se distingue por estar especializado en un par de bajos recursos (fr→dyu) y por una licencia permisiva para uso comercial (CC-BY-SA 4.0), frente a la licencia no comercial de los NLLB originales de Meta. Sin embargo, su cobertura lingüística es mucho más estrecha y no se dispone de métricas públicas que permitan comparar su calidad con los modelos base.
 
 ## Limitaciones y advertencias
 
 - Modelo unidireccional: solo traduce de francés a dioula; no se ha entrenado para la dirección inversa.
-- Acceso restringido (gated): es necesario aceptar las condiciones del autor en HuggingFace antes de descargar los pesos.
+- Acceso restringido (gated): es necesario aceptar las condiciones del autor en Hugging Face antes de descargar los pesos.
 - Dataset de entrenamiento no documentado en detalle: se desconoce el volumen, la procedencia y la calidad del corpus `goaicorp/dyu-fr-parallel`, lo que impide evaluar sesgos y cobertura.
 - Riesgo de alucinación y errores de traducción: al ser un modelo pequeño ajustado sobre un corpus presumiblemente limitado, es probable que produzca traducciones inexactas o inconsistentes, especialmente en terminología técnica.
 - Sin benchmarks públicos: no hay métricas BLEU, chrF ni evaluaciones humanas publicadas, por lo que la calidad real no puede verificarse de forma independiente.
@@ -85,7 +85,7 @@ El modelo de goaicorp se distingue por estar especializado en un par de bajos re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/goaicorp/dyu-nllb-600M-fr2dyu
+- Modelo en Hugging Face: https://huggingface.co/goaicorp/dyu-nllb-600M-fr2dyu
 - Modelo base: https://huggingface.co/facebook/nllb-200-distilled-600M
 - Dataset de entrenamiento: https://huggingface.co/datasets/goaicorp/dyu-fr-parallel
 - Paper NLLB-200: https://arxiv.org/abs/2207.04672

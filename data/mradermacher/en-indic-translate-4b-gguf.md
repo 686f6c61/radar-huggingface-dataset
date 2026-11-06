@@ -21,14 +21,14 @@ La versión GGUF presentada es una cuantización del modelo base `sulabhkatiyar/
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles sobre la arquitectura, los datos de entrenamiento o el proceso de alineación en la información disponible. Los tags de HuggingFace incluyen la etiqueta `gemma4`, lo que podría indicar que el modelo base se basa en la arquitectura de Gemma, pero no hay documentación oficial que lo confirme. La model card del autor original se limita a describir el modelo como un traductor entre inglés e índico.
+No se han publicado detalles sobre la arquitectura, los datos de entrenamiento o el proceso de alineación en la información disponible. Los tags de Hugging Face incluyen la etiqueta `gemma4`, lo que podría indicar que el modelo base se basa en la arquitectura de Gemma, pero no hay documentación oficial que lo confirme. La model card del autor original se limita a describir el modelo como un traductor entre inglés e índico.
 
 Por tratarse de una cuantización, el proceso de conversión ha transformado los pesos de punto flotante originales a cuantizaciones de menor precisión (por ejemplo, Q4_K_M, Q8_0), manteniendo la estructura del modelo pero reduciendo el tamaño y los requisitos de memoria. No se aporta información sobre el número de tokens del entrenamiento, la composición del dataset ni si se aplicó RLHF o DPO.
 
 ## Capacidades
 
 - Traducción directa entre inglés y once lenguas índicas: asamés, bengalí, gujarati, hindi, kannada, malayalam, maratí, oriya, punjabi, tamil y telugu.
-- Soporte de inferencia conversacional según los tags de HuggingFace, aunque no se documentan detalles de funcionamiento.
+- Soporte de inferencia conversacional según los tags de Hugging Face, aunque no se documentan detalles de funcionamiento.
 - Los archivos `.mmproj` incluidos (f16 y Q8_0) apuntan a un posible soporte multimodal, permitiendo su uso junto con componentes de visión en llama.cpp. No hay documentación adicional.
 - No se dispone de información sobre tool calling, function calling, agentes, razonamiento ni generación de código.
 
@@ -72,8 +72,8 @@ No se dispone de información suficiente para una comparación cuantitativa. Las
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/en-indic-translate-4b-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/sulabhkatiyar/en-indic-translate-4b
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/en-indic-translate-4b-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/sulabhkatiyar/en-indic-translate-4b
 - Perfil de mradermacher: https://huggingface.co/mradermacher
 - Página de listado externo: https://hf.tst.eu/model#en-indic-translate-4b-GGUF
 - Repositorio de IndicTrans2 (modelo de traducción índica de AI4Bharat, referencia en el ámbito): https://github.com/ai4bharat/IndicTrans2

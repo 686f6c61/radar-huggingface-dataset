@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Topiltzinfl/qwen3-fitness-0.6b` es un adaptador LoRA publicado en HuggingFace por el usuario Topiltzinfl (Topiltzin Flores) y orientado, segun el nombre del repositorio y el perfil del autor, a un chatbot de fitness. El propio adaptador declara como modelo base `Qwen/Qwen2.5-3B` y haber sido entrenado con SFT mediante la libreria TRL. Conviene subrayar una discrepancia importante: el nombre comercial sugiere Qwen3 y 0,6 mil millones de parametros, pero el modelo base real indicado en los metadatos es Qwen2.5-3B, de modo que quien lo descargue esperando un Qwen3-0.6B obtenido un adaptador PEFT distinto.
+`Topiltzinfl/qwen3-fitness-0.6b` es un adaptador LoRA publicado en Hugging Face por el usuario Topiltzinfl (Topiltzin Flores) y orientado, segun el nombre del repositorio y el perfil del autor, a un chatbot de fitness. El propio adaptador declara como modelo base `Qwen/Qwen2.5-3B` y haber sido entrenado con SFT mediante la libreria TRL. Conviene subrayar una discrepancia importante: el nombre comercial sugiere Qwen3 y 0,6 mil millones de parametros, pero el modelo base real indicado en los metadatos es Qwen2.5-3B, de modo que quien lo descargue esperando un Qwen3-0.6B obtenido un adaptador PEFT distinto.
 
 El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador LoRA y no con pesos completos de un modelo de 3 000 millones de parametros, que en precision fp16 rondarian los 6 GB. El modelo no registra descargas ni "likes", la licencia no esta declarada y la model card, generada de forma automatica por TRL, deja vacia la seccion de procedimiento de entrenamiento (sin dataset, sin hiperparametros y sin evaluacion). Se trata, por tanto, de una publicacion experimental o de uso personal mas que de un modelo validado para produccion.
 
@@ -39,7 +39,7 @@ En cuanto al entrenamiento, la model card solo confirma que se utilizo SFT (supe
 - Herencia de capacidades del modelo base: al ser un adaptador sobre Qwen2.5-3B, se espera que mantenga el comportamiento general del base (generacion, resumen, cierta capacidad de razonamiento y de codigo), pero no se aporta ninguna verificacion en la informacion disponible.
 - Tool calling / function calling: no documentado. Aunque Qwen2.5 incluye soporte de llamadas a herramientas en su plantilla de chat, este adaptador no declara ni valida esa capacidad.
 - Uso agentico o razonamiento multi-paso: no documentado.
-- Capacidades multilingues: no disponibles; el autor no declara idiomas y la ficha de HuggingFace no incluye el campo de idiomas.
+- Capacidades multilingues: no disponibles; el autor no declara idiomas y la ficha de Hugging Face no incluye el campo de idiomas.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles. No se declara ninguna.
 - Ajuste adicional: no se documenta compatibilidad con tecnicas de alineacion adicionales (DPO, RLHF) ni con decodificacion restringida.
 
@@ -51,7 +51,7 @@ En cuanto al entrenamiento, la model card solo confirma que se utilizo SFT (supe
 - Soporte y atencion al cliente de un gimnasio o plataforma de entrenamiento: gestion de preguntas frecuentes sobre cuotas, horarios, clases y material, con derivacion a un humano cuando la consulta requiera criterio profesional. El framework peft permite desplegar variantes por sede reentrenando solo el adaptador.
 - Prototipado rapido de productos conversacionales verticales: sirve como plantilla metodologica (LoRA + SFT con TRL) para equipos que quieran reproducir el flujo con sus propios datos de dominio en una GPU de gama media.
 - Fusion y cuantizacion para despliegue local: al ser un adaptador en safetensors, puede fusionarse con Qwen2.5-3B y convertirse a GGUF para ejecutarlo con llama.cpp u Ollama en portatiles, lo que habilita demos sin conexion y sin coste de API.
-- Investigacion sobre fine-tuning de bajo coste: caso de estudio para analizar practicas de publicacion en HuggingFace (discrepancia entre nombre y contenido, model cards auto-generadas, ausencia de licencia), util en trabajos sobre reproducibilidad y trazabilidad de adaptadores.
+- Investigacion sobre fine-tuning de bajo coste: caso de estudio para analizar practicas de publicacion en Hugging Face (discrepancia entre nombre y contenido, model cards auto-generadas, ausencia de licencia), util en trabajos sobre reproducibilidad y trazabilidad de adaptadores.
 - Base para ajuste posterior con feedback humano: partiendo de este adaptador, un equipo de entrenadores podria continuar el entrenamiento con DPO o RLHF usando valoraciones de rutinas y respuestas, ya que el adaptador mantiene la estructura estandar de PEFT.
 
 ## Benchmarks y rendimiento
@@ -95,11 +95,11 @@ Nota: los datos de contexto y licencia de los modelos Qwen2.5-3B y Qwen3-0.6B pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Topiltzinfl/qwen3-fitness-0.6b
+- Modelo en Hugging Face: https://huggingface.co/Topiltzinfl/qwen3-fitness-0.6b
 - Modelo base Qwen2.5-3B: https://huggingface.co/Qwen/Qwen2.5-3B
-- Perfil del autor en HuggingFace: https://huggingface.co/Topiltzinfl
+- Perfil del autor en Hugging Face: https://huggingface.co/Topiltzinfl
 - Repositorio de TRL (framework de entrenamiento declarado): https://github.com/huggingface/trl
-- Qwen3-0.6B en HuggingFace (referencia de la familia Qwen3, no relacionada con el modelo base real de este adaptador): https://huggingface.co/Qwen/Qwen3-0.6B
+- Qwen3-0.6B en Hugging Face (referencia de la familia Qwen3, no relacionada con el modelo base real de este adaptador): https://huggingface.co/Qwen/Qwen3-0.6B
 - Guia de la familia Qwen 3 con la lista completa de modelos: https://baeseokjae.github.io/posts/qwen-3-full-lineup-guide-2026/
 - Guia de la familia Qwen3 (0,6B a 235B): https://insiderllm.com/guides/qwen3-complete-guide/
 - Ficha de qwen3:0.6b en LLMfit, con variantes y requisitos estimados: https://llmfit.io/models/qwen3%3A0.6b

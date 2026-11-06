@@ -74,9 +74,9 @@ El autor indica que la desactivación de cabezas redujo el WER en Siarad de 87,0
 
 | Modelo | Parámetros | Contexto / entrada | WER galés | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rebreda/moonshine-base-welsh-compact | 53,2M | audio corto 16 kHz mono | 25,8 (CV27), 37,6 (FLEURS) | MIT | HuggingFace |
-| rebreda/moonshine-base-welsh | 61,5M | audio corto 16 kHz mono | no disponible en la información | MIT (heredada) | HuggingFace |
-| moonshine-ai/moonshine-base | no disponible | audio corto 16 kHz mono | no disponible (modelo base en inglés) | MIT | HuggingFace |
+| rebreda/moonshine-base-welsh-compact | 53,2M | audio corto 16 kHz mono | 25,8 (CV27), 37,6 (FLEURS) | MIT | Hugging Face |
+| rebreda/moonshine-base-welsh | 61,5M | audio corto 16 kHz mono | no disponible en la información | MIT (heredada) | Hugging Face |
+| moonshine-ai/moonshine-base | no disponible | audio corto 16 kHz mono | no disponible (modelo base en inglés) | MIT | Hugging Face |
 
 No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, por lo que la comparación de rendimiento se limita a los resultados del modelo compacto.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rebreda/moonshine-base-welsh-compact
+- Hugging Face: https://huggingface.co/rebreda/moonshine-base-welsh-compact
 - Modelo base: https://huggingface.co/moonshine-ai/moonshine-base
 - Modelo anterior: https://huggingface.co/rebreda/moonshine-base-welsh
 - Página del proyecto: https://quickthoughts.ca/projects/welsh-asr/

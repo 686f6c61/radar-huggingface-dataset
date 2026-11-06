@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Loonie Guru v1 es un ajuste fino (fine-tune) del modelo multimodal Qwen/Qwen3-VL-4B-Instruct, desarrollado por el usuario de HuggingFace harshbhalodia. Se trata del modelo que da soporte al asistente "Guru" dentro de la aplicación de finanzas personales Loonie, y esta disenado para ejecutarse de forma local en el ordenador del usuario mediante llama.cpp, de modo que los datos financieros no abandonan el dispositivo.
+Loonie Guru v1 es un ajuste fino (fine-tune) del modelo multimodal Qwen/Qwen3-VL-4B-Instruct, desarrollado por el usuario de Hugging Face harshbhalodia. Se trata del modelo que da soporte al asistente "Guru" dentro de la aplicación de finanzas personales Loonie, y esta disenado para ejecutarse de forma local en el ordenador del usuario mediante llama.cpp, de modo que los datos financieros no abandonan el dispositivo.
 
 El modelo hereda la arquitectura del transformer multimodal de Qwen3-VL con aproximadamente 4.437 millones de parametros (4,4B) y una ventana de contexto que no se detalla en la informacion proporcionada. Su especializacion se centra en cuatro tareas concretas del dominio financiero personal: enrutamiento mediante tool calling (generar el JSON de accion, herramienta y argumentos), respuestas rapidas y consejos a partir de hechos y calculos aportados por la app, investigacion sobre listas de seguimiento y objetivos de ahorro, y extraccion de transacciones a partir de extractos bancarios (incluidas paginas escaneadas mediante el proyector de vision).
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harshbhalodia/loonie-guru
+- Modelo en Hugging Face: https://huggingface.co/harshbhalodia/loonie-guru
 - Version GGUF: https://huggingface.co/harshbhalodia/loonie-guru-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Version Unsloth del base: https://huggingface.co/unsloth/Qwen3-VL-4B-Instruct

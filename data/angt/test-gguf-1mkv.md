@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`angt/test-gguf-1mkv` es un repositorio de HuggingFace publicado por el usuario `angt` cuyo unico contenido verificable es un artefacto en formato GGUF, segun la etiqueta declarada en el repositorio. La model card asociada no contiene ninguna descripcion funcional: se limita a un bloque de metadatos con la licencia MIT, sin indicar arquitectura, tamano, datos de entrenamiento ni capacidades.
+`angt/test-gguf-1mkv` es un repositorio de Hugging Face publicado por el usuario `angt` cuyo unico contenido verificable es un artefacto en formato GGUF, segun la etiqueta declarada en el repositorio. La model card asociada no contiene ninguna descripcion funcional: se limita a un bloque de metadatos con la licencia MIT, sin indicar arquitectura, tamano, datos de entrenamiento ni capacidades.
 
 En el momento de la consulta, el repositorio acumula 0 descargas y 0 likes, tiene un tamano declarado de 0,0 GB y fue creado y actualizado el 28 de septiembre de 2026 con apenas cuatro minutos de diferencia, lo que es coherente con un artefacto de prueba subido para validar un flujo de publicacion mas que con un modelo destinado a uso real. El propio identificador incluye el prefijo `test`, lo que refuerza esa interpretacion.
 
@@ -47,7 +47,7 @@ En ausencia de model card y con un repositorio de 0,0 GB, no es posible siquiera
 
 Cualquier caso de uso que se enumere a continuacion es hipotetico y queda condicionado a que los pesos existan, sean cargables y el modelo haya sido evaluado. Se incluyen porque ilustran para que se usa habitualmente un artefacto GGUF, no porque este repositorio los habilite:
 
-- Verificacion de pipelines de publicacion en GGUF: el repositorio parece un artefacto de prueba (nombre con prefijo `test`, 0 descargas, creado y actualizado con cuatro minutos de diferencia), por lo que su uso realista es comprobar que una herramienta de conversion a GGUF genera ficheros validos y que el flujo de subida a HuggingFace funciona.
+- Verificacion de pipelines de publicacion en GGUF: el repositorio parece un artefacto de prueba (nombre con prefijo `test`, 0 descargas, creado y actualizado con cuatro minutos de diferencia), por lo que su uso realista es comprobar que una herramienta de conversion a GGUF genera ficheros validos y que el flujo de subida a Hugging Face funciona.
 - Inferencia local en CPU: si los pesos son validos, un GGUF puede cargarse con `llama.cpp` en un equipo sin GPU, algo relevante para entornos sin acelerador dedicado.
 - Prototipado rapido con Ollama: un GGUF se puede importar en Ollama mediante un `Modelfile`, lo que permite probar el modelo en local antes de decidir un despliegue mayor.
 - Despliegue en el borde: los GGUF cuantizados permiten ejecucion en dispositivos con memoria limitada, siempre que el tamano del modelo lo permita.
@@ -91,7 +91,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/angt/test-gguf-1mkv
+- Modelo en Hugging Face: https://huggingface.co/angt/test-gguf-1mkv
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

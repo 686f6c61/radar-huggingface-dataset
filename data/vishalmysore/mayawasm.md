@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`VishalMysore/mayaWasm` es un repositorio de modelo publicado en HuggingFace por Vishal Mysore, un ingeniero de software con actividad documentada en GitHub y en HuggingFace y que se presenta como lider tecnico en plataformas cloud-native para aplicaciones financieras de baja latencia. El repositorio se publico el 1 de octubre de 2026 y, en el momento de recopilar esta informacion, acumula 0 descargas y 0 likes, por lo que se trata de una publicacion sin traccion conocida dentro de la comunidad.
+`VishalMysore/mayaWasm` es un repositorio de modelo publicado en Hugging Face por Vishal Mysore, un ingeniero de software con actividad documentada en GitHub y en Hugging Face y que se presenta como lider tecnico en plataformas cloud-native para aplicaciones financieras de baja latencia. El repositorio se publico el 1 de octubre de 2026 y, en el momento de recopilar esta informacion, acumula 0 descargas y 0 likes, por lo que se trata de una publicacion sin traccion conocida dentro de la comunidad.
 
-La model card del repositorio esta practicamente vacia: unicamente contiene el bloque de metadatos con la licencia Apache 2.0 y ningun texto descriptivo. No se declara arquitectura, numero de parametros, longitud de contexto, idiomas, dataset de entrenamiento ni formato de pesos. Tampoco hay seccion de pipeline en los metadatos de HuggingFace ni resultados de benchmarks publicados.
+La model card del repositorio esta practicamente vacia: unicamente contiene el bloque de metadatos con la licencia Apache 2.0 y ningun texto descriptivo. No se declara arquitectura, numero de parametros, longitud de contexto, idiomas, dataset de entrenamiento ni formato de pesos. Tampoco hay seccion de pipeline en los metadatos de Hugging Face ni resultados de benchmarks publicados.
 
 El sufijo "Wasm" del identificador sugiere, como hipotesis no confirmada por el autor, una relacion con WebAssembly (por ejemplo, un artefacto compilado o un modelo pensado para ejecucion en navegador o en runtimes Wasm), pero no existe en la informacion proporcionada ninguna evidencia que confirme esa interpretacion, ni que permita clasificar el modelo por categoria, tamano o caso de uso. Esta ficha se limita, por tanto, a documentar los pocos datos verificables y a marcar explicitamente todo lo demas como no disponible.
 
@@ -76,9 +76,9 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del modelo, n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VishalMysore/mayaWasm
-- Perfil del autor en HuggingFace: https://huggingface.co/VishalMysore
-- Modelos del autor en HuggingFace: https://huggingface.co/VishalMysore/models
+- Modelo en Hugging Face: https://huggingface.co/VishalMysore/mayaWasm
+- Perfil del autor en Hugging Face: https://huggingface.co/VishalMysore
+- Modelos del autor en Hugging Face: https://huggingface.co/VishalMysore/models
 - Perfil de GitHub del autor: https://github.com/vishalmysore
 - Repositorio de perfil en GitHub: https://github.com/vishalmysore/vishalmysore
 - Sitio personal del autor: https://vishalmysore.github.io/

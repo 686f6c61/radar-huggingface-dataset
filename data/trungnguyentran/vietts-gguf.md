@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/trungnguyentran/vietts-gguf
+- Repositorio Hugging Face: https://huggingface.co/trungnguyentran/vietts-gguf
 - Dataset viVoice (referenciado en la model card, sin URL directa)
 - Qwen3-0.6B (modelo base): https://huggingface.co/Qwen/Qwen3-0.6B
 - NeuCodec (codec neuronal, sin URL directa en la documentación)

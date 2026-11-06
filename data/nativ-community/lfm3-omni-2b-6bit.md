@@ -83,8 +83,8 @@ No se dispone de datos de benchmarks comparativos ni de especificaciones de mode
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-Omni-2B-6bit (esta ficha) | 2.166.928.384 | no disponible | safetensors MLX, 6-bit | lfm1.0 | HuggingFace, 40 descargas |
-| lq-preview/LFM3-Omni-2B (modelo base) | no disponible en la información | no disponible | no disponible | lfm1.0 | HuggingFace |
+| LFM3-Omni-2B-6bit (esta ficha) | 2.166.928.384 | no disponible | safetensors MLX, 6-bit | lfm1.0 | Hugging Face, 40 descargas |
+| lq-preview/LFM3-Omni-2B (modelo base) | no disponible en la información | no disponible | no disponible | lfm1.0 | Hugging Face |
 
 No se conocen en la información proporcionada otros modelos any-to-any de tamaño comparable para establecer una comparativa de rendimiento, contexto o licencia.
 
@@ -104,7 +104,7 @@ No se conocen en la información proporcionada otros modelos any-to-any de tama�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nativ-community/LFM3-Omni-2B-6bit
+- Repositorio Hugging Face: https://huggingface.co/nativ-community/LFM3-Omni-2B-6bit
 - Modelo base: https://huggingface.co/lq-preview/LFM3-Omni-2B/tree/101fb44635e88fd5ceb09508610bc559149286e8
 - Implementación de inferencia pública (mlx-vlm): https://github.com/Blaizzy/mlx-vlm/commit/3070dcc31948f48f9d8639b606af7bc019494fac
 - Repositorio mlx-vlm: https://github.com/Blaizzy/mlx-vlm

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "wren6991/glm-5.3-flash-oQ4.5e-mtp",
+  "slug": "wren6991-glm-5-3-flash-oq4-5e-mtp",
+  "author": "wren6991",
+  "url": "https://huggingface.co/wren6991/glm-5.3-flash-oQ4.5e-mtp",
+  "created_at": "2026-11-03T18:44:43.000Z",
+  "updated_at": "2026-11-04T11:31:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm5_next",
+    "oq",
+    "quantized",
+    "mtp",
+    "4-bit",
+    "mixed-precision",
+    "image-text-to-text",
+    "conversational",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 73,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 199349526104,
+  "storage_human": "199.3 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wren6991/glm-5.3-flash-oQ4.5e-mtp · Hugging Face",
+      "url": "https://huggingface.co/wren6991/glm-5.3-flash-oQ4.5e-mtp",
+      "snippet": "The MTP head is preserved, so Lightning MTP and DFlash2 speculative decoding work with this checkpoint. Recommended sampling from the upstream GLM-5.3-Flash model card: temperature: 1.0, top_p: 0.95, reasoning_effort: max, thinking enabled, clear_thinking: false."
+    }
+  ]
+}

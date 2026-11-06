@@ -59,7 +59,7 @@ No se proporcionan datos de comparación con otros modelos en la información di
 - Caveats para producción: el modelo es de 1.3B parámetros, por lo que su capacidad es limitada en comparación con modelos más grandes. No se menciona soporte de tool calling o function calling, lo que puede restringir su uso en agentes. No se proporcionan benchmarks numéricos para evaluar su rendimiento real.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct
+- Hugging Face: https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct
 - Homepage: https://www.deepseek.com/
 - Repositorio GitHub: https://github.com/deepseek-ai/deepseek-coder
 - Chat: https://coder.deepseek.com/

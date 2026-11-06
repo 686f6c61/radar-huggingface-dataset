@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativos para este modelo, por lo que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-math-verl-grpo-ragged-l1exact-ds4k-154712-20261016
+- Modelo en Hugging Face: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-math-verl-grpo-ragged-l1exact-ds4k-154712-20261016
 - Modelo base: https://huggingface.co/ByteDance/Ouro-1.4B-Thinking
 - Dataset de rollouts: https://huggingface.co/datasets/hi-todayis-jh/ouro-1.4b-thinking-math-verl-grpo-ragged-l1exact-ds4k-154712-20261016-rollouts
 - Dataset citado en la model card: https://huggingface.co/datasets/DigitalLearningGmbH/MATH-lighteval

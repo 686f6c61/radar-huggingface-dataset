@@ -87,7 +87,7 @@ Como referencia de categoría, los modelos generativos de 1-2 B parámetros cuan
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sibitim/weft-models
+- Repositorio en Hugging Face: https://huggingface.co/sibitim/weft-models
 - EmbeddingGemma-2 (ONNX): https://huggingface.co/onnx-community/embeddinggemma-2-ONNX
 - EmbeddingGemma-2 (original, Google): https://huggingface.co/google/embeddinggemma-2
 - GLiNER2.5 multi v1 (ONNX): https://huggingface.co/DanKau/gliner2.5-multi-v1-onnx

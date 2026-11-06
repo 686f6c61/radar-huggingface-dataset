@@ -6,7 +6,7 @@
 
 El modelo no es un modelo de lenguaje ni un transformer generativo: es un clasificador binario de voz sobre tramas de audio. Recibe una trama de 512 muestras a 16 kHz mono junto con el estado oculto y de celda de una LSTM, y devuelve la probabilidad de que la trama contenga habla junto con el estado actualizado. Su relevancia práctica está en que permite integrar detección de voz en aplicaciones Unity sin depender de servicios en la nube ni de librerías nativas externas, con una latencia de trama de 32 ms.
 
-El repositorio es de tamaño mínimo (0,0 GB reportados, con solo dos ficheros) y tiene un uso muy reducido en HuggingFace (15 descargas, 0 likes en el momento de la consulta). La licencia es MIT tanto para el artefacto convertido como para el modelo original de Silero.
+El repositorio es de tamaño mínimo (0,0 GB reportados, con solo dos ficheros) y tiene un uso muy reducido en Hugging Face (15 descargas, 0 likes en el momento de la consulta). La licencia es MIT tanto para el artefacto convertido como para el modelo original de Silero.
 
 ## Especificaciones técnicas
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `com.sky.sentis.silero-vad` | LSTM (Silero VAD) convertida a Sentis | Trama de 512 muestras a 16 kHz + estado LSTM | `.sentis` FP16 + C# | MIT | HuggingFace, Unity Sentis |
+| `com.sky.sentis.silero-vad` | LSTM (Silero VAD) convertida a Sentis | Trama de 512 muestras a 16 kHz + estado LSTM | `.sentis` FP16 + C# | MIT | Hugging Face, Unity Sentis |
 | `snakers4/silero-vad` (original) | LSTM | Trama de 512 muestras a 16 kHz + estado LSTM | PyTorch / ONNX | MIT | GitHub, PyPI |
 | WebRTC VAD | GMM | Tramas de 10/20/30 ms | C/C++ nativo | BSD | Biblioteca WebRTC |
-| Silero VAD (variantes ONNX) | LSTM | Trama de 512 muestras a 16 kHz | ONNX | MIT | HuggingFace, repos de terceros |
+| Silero VAD (variantes ONNX) | LSTM | Trama de 512 muestras a 16 kHz | ONNX | MIT | Hugging Face, repos de terceros |
 
 La comparativa se limita a la categoría de detección de actividad de voz; no se dispone de datos de benchmarks que permitan comparar precisión entre estas alternativas en la información proporcionada.
 
@@ -85,5 +85,5 @@ La comparativa se limita a la categoría de detección de actividad de voz; no s
 
 ## Enlaces
 
-- [HuggingFace: Sky-Kim/com.sky.sentis.silero-vad](https://huggingface.co/Sky-Kim/com.sky.sentis.silero-vad)
+- [Hugging Face: Sky-Kim/com.sky.sentis.silero-vad](https://huggingface.co/Sky-Kim/com.sky.sentis.silero-vad)
 - [Repositorio original de Silero VAD](https://github.com/snakers4/silero-vad)

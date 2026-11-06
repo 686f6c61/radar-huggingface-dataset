@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AIxFuneStudio/Retro_Futuristic_MiniMax_H3` es un repositorio publicado en HuggingFace por el usuario AIxFuneStudio el 23 de octubre de 2026 (última actualización el mismo día). Se trata de un repositorio de acceso restringido (gated): para descargar los archivos es necesario aceptar las condiciones del autor en la plataforma. El tamaño del repositorio es de 0,1 GB, lo que descarta que contenga pesos completos en precisión nativa de un modelo de gran tamaño y apunta, como hipótesis no confirmada, a adaptadores (LoRA/PEFT), a un merge de pequeño tamaño o a un checkpoint cuantizado de un modelo reducido.
+`AIxFuneStudio/Retro_Futuristic_MiniMax_H3` es un repositorio publicado en Hugging Face por el usuario AIxFuneStudio el 23 de octubre de 2026 (última actualización el mismo día). Se trata de un repositorio de acceso restringido (gated): para descargar los archivos es necesario aceptar las condiciones del autor en la plataforma. El tamaño del repositorio es de 0,1 GB, lo que descarta que contenga pesos completos en precisión nativa de un modelo de gran tamaño y apunta, como hipótesis no confirmada, a adaptadores (LoRA/PEFT), a un merge de pequeño tamaño o a un checkpoint cuantizado de un modelo reducido.
 
 La información pública disponible es mínima: no se declara pipeline, no se declaran idiomas, no hay model card descriptiva, no consta ningún archivo de documentación y el contador de descargas y de "likes" es cero. El nombre del repositorio combina un estilo de nombrado habitual en fine-tunes creativos ("Retro_Futuristic") con la referencia "MiniMax" y el sufijo "H3"; no hay ninguna confirmación de que el modelo esté afiliado, derive o haya sido autorizado por MiniMax, por lo que esa relación debe considerarse no verificada.
 
@@ -18,7 +18,7 @@ Por tanto, esta ficha documenta exclusivamente los metadatos verificables del re
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | other (términos personalizados; acceso restringido en HuggingFace) |
+| Licencia | other (términos personalizados; acceso restringido en Hugging Face) |
 | Formato de pesos | no disponible (el repositorio ocupa 0,1 GB y no se detallan los archivos) |
 
 Metadatos adicionales verificables:
@@ -77,7 +77,7 @@ No constan evaluaciones de MMLU, HumanEval, GSM8K, MT-Bench ni de ningún otro c
 - Viabilidad en GPU de consumo: no determinable con los datos actuales.
 - Opciones de despliegue: condicionales. Si son adaptadores PEFT, la carga se haría con `transformers` + `peft` sobre el base; si finalmente se publican pesos completos o convertibles, serían aplicables vLLM o TGI para serving concurrente y llama.cpp u Ollama para ejecución local en CPU/GPU de consumo.
 - Latencia y throughput: no disponible.
-- Acceso: al ser un repositorio gated, cualquier automatización de descarga requiere un token de HuggingFace con los términos aceptados; conviene preverlo en los pipelines de CI.
+- Acceso: al ser un repositorio gated, cualquier automatización de descarga requiere un token de Hugging Face con los términos aceptados; conviene preverlo en los pipelines de CI.
 
 ## Comparativa con modelos similares
 
@@ -103,5 +103,5 @@ No se dispone de información suficiente para identificar alternativas comparabl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AIxFuneStudio/Retro_Futuristic_MiniMax_H3
+- Repositorio en Hugging Face: https://huggingface.co/AIxFuneStudio/Retro_Futuristic_MiniMax_H3
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.

@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos con modelos de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbstractPhil/qwen3.5-4b-think-symbolic-image
+- Modelo en Hugging Face: https://huggingface.co/AbstractPhil/qwen3.5-4b-think-symbolic-image
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Fine-tune completo (anunciado, pendiente de publicación): https://huggingface.co/AbstractPhil/qwen3.5-4b-think-symbolic-image-full
 - Dataset de captions simbólicas: https://huggingface.co/datasets/AbstractPhil/thought-symbolic-image-captions

@@ -110,7 +110,7 @@ No se han encontrado en la información proporcionada proyectos equivalentes de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheCacheIsALie/RidgeFill-Projector-Qwen3.8-27B-i8
+- Hugging Face: https://huggingface.co/TheCacheIsALie/RidgeFill-Projector-Qwen3.8-27B-i8
 - Fork de llama.cpp: https://github.com/Approximate-Science/llama.cpp-ridgefill
 - Guía de uso (quick start, Qwen3.8-27B): https://github.com/Approximate-Science/llama.cpp-ridgefill/blob/main/RIDGEFILL.md
 - DOI de la técnica: https://doi.org/10.5281/zenodo.23179168

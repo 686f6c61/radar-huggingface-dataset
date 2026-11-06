@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MicroModel_GQA_100M_params_822M_tokens es un modelo de lenguaje de pequeno tamano publicado en HuggingFace por el usuario valik2424. Segun la propia nomenclatura del repositorio, se trata de un modelo de aproximadamente 100 millones de parametros entrenado sobre unos 822 millones de tokens, presumiblemente en la tarea o el dataset GQA (el acronimo puede referirse tanto a Grouped Query Attention como al dataset de razonamiento visual GQA; la model card no lo aclara). El repositorio tiene un tamano de 0,4 GB y fue creado el 1 de octubre de 2026.
+MicroModel_GQA_100M_params_822M_tokens es un modelo de lenguaje de pequeno tamano publicado en Hugging Face por el usuario valik2424. Segun la propia nomenclatura del repositorio, se trata de un modelo de aproximadamente 100 millones de parametros entrenado sobre unos 822 millones de tokens, presumiblemente en la tarea o el dataset GQA (el acronimo puede referirse tanto a Grouped Query Attention como al dataset de razonamiento visual GQA; la model card no lo aclara). El repositorio tiene un tamano de 0,4 GB y fue creado el 1 de octubre de 2026.
 
 El modelo apenas tiene traccion en la plataforma: cero descargas y cero likes en el momento de redactar esta ficha. La model card publicada por el autor esta practicamente vacia y solo incluye la declaracion de licencia apache-2.0, sin descripcion, sin pipeline declarado, sin idiomas soportados y sin resultados de evaluacion. Esto limita enormemente cualquier valoracion tecnica rigurosa.
 
@@ -68,10 +68,10 @@ No hay datos de rendimiento de este modelo que permitan una comparacion signific
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MicroModel_GQA_100M (este modelo) | ~100M | no disponible | apache-2.0 | HuggingFace (0 descargas) |
+| MicroModel_GQA_100M (este modelo) | ~100M | no disponible | apache-2.0 | Hugging Face (0 descargas) |
 | GPT-2 small | 124M | 1024 tokens | MIT | Ampliamente disponible |
-| Pythia-160M | 160M | 2048 tokens | Apache-2.0 | HuggingFace |
-| Proyecto "100M params, Chinchilla-optimal" (referenciado en la busqueda) | ~100M | no disponible | no disponible | HuggingFace Spaces / GitHub (proyecto distinto) |
+| Pythia-160M | 160M | 2048 tokens | Apache-2.0 | Hugging Face |
+| Proyecto "100M params, Chinchilla-optimal" (referenciado en la busqueda) | ~100M | no disponible | no disponible | Hugging Face Spaces / GitHub (proyecto distinto) |
 
 No se dispone de resultados de evaluacion del modelo objeto de esta ficha, por lo que no es posible comparar su calidad frente a estas alternativas.
 
@@ -86,7 +86,7 @@ No se dispone de resultados de evaluacion del modelo objeto de esta ficha, por l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/valik2424/MicroModel_GQA_100M_params_822M_tokens
+- Modelo en Hugging Face: https://huggingface.co/valik2424/MicroModel_GQA_100M_params_822M_tokens
 - Referencia contextual (proyecto distinto de pretraining de 100M de parametros en una sola GPU): https://huggingface.co/spaces/ajitjava2/complete-llm-pretraining-pipeline-100m-params-single-gpu
 - Referencia contextual (GPT de 100M de parametros entrenado desde cero sobre FineWeb-Edu, proyecto distinto): https://github.com/AMX-99/llm-from-scratch
 

@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks para este checkpoint en la informac
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| wanna0720/qwen38-27b-swerebench-grpo-step8 | 27B (denso) | No disponible | apache-2.0 | HuggingFace, 0 descargas, 1 like | Checkpoint GRPO paso 8, línea base sin ramificación |
-| Qwen/Qwen3.8-27B | 27B (denso multimodal) | 150k-262k tokens segun HyperQwen | Licencia original de Qwen3.8-27B incluida en el repositorio | HuggingFace | Modelo base sobre el que se aplica el GRPO |
-| wanna0720/qwen38-27b-swerebench-grpo-step8-training-state | 27B | No disponible | No disponible | HuggingFace | Checkpoint Miles/Megatron con estado del modelo y del optimizador, destinado a recuperación e investigación |
+| wanna0720/qwen38-27b-swerebench-grpo-step8 | 27B (denso) | No disponible | apache-2.0 | Hugging Face, 0 descargas, 1 like | Checkpoint GRPO paso 8, línea base sin ramificación |
+| Qwen/Qwen3.8-27B | 27B (denso multimodal) | 150k-262k tokens segun HyperQwen | Licencia original de Qwen3.8-27B incluida en el repositorio | Hugging Face | Modelo base sobre el que se aplica el GRPO |
+| wanna0720/qwen38-27b-swerebench-grpo-step8-training-state | 27B | No disponible | No disponible | Hugging Face | Checkpoint Miles/Megatron con estado del modelo y del optimizador, destinado a recuperación e investigación |
 | Otros modelos abiertos de codigo de tamano similar | No disponible | No disponible | No disponible | No disponible | No se han proporcionado datos comparativos |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se han publicado resultados de benchmarks para este checkpoint en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wanna0720/qwen38-27b-swerebench-grpo-step8
+- Modelo en Hugging Face: https://huggingface.co/wanna0720/qwen38-27b-swerebench-grpo-step8
 - Checkpoint de estado de entrenamiento: https://huggingface.co/wanna0720/qwen38-27b-swerebench-grpo-step8-training-state
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

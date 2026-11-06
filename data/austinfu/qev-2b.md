@@ -82,8 +82,8 @@ La exactitud publica en JevBench es de 172/231. El propio autor advierte de que 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qev-2B | ~2B mas adaptador LoRA y cabeza de decision | No disponible | Ver tabla de benchmarks (JevBench publico 74,46 %) | Apache-2.0 (adaptador) | HuggingFace, requiere paquete `qev` |
-| Qwen3.5-2B-Base (modelo base) | ~2B | No disponible | JevBench publico 63,20 %; MMLU-Pro 31,20 | Terminos propios de Qwen | HuggingFace |
+| Qev-2B | ~2B mas adaptador LoRA y cabeza de decision | No disponible | Ver tabla de benchmarks (JevBench publico 74,46 %) | Apache-2.0 (adaptador) | Hugging Face, requiere paquete `qev` |
+| Qwen3.5-2B-Base (modelo base) | ~2B | No disponible | JevBench publico 63,20 %; MMLU-Pro 31,20 | Terminos propios de Qwen | Hugging Face |
 | Qev-9B (profesor) | 9B (segun denominacion) | No disponible | No disponible | No disponible | Mencionado en la model card, sin ficha detallada |
 
 No se dispone de datos de otros modelos de decision comparables en la informacion proporcionada.
@@ -102,11 +102,11 @@ No se dispone de datos de otros modelos de decision comparables en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AustinFu/Qev-2B
+- Modelo en Hugging Face: https://huggingface.co/AustinFu/Qev-2B
 - Repositorio fuente e instrucciones de instalacion: https://github.com/QiqianFu/Qev
 - Documentacion en chino: https://github.com/QiqianFu/Qev/blob/main/README.zh-CN.md
 - Guia de destilacion: https://github.com/QiqianFu/Qev/blob/main/docs/distillation.md
 - Guia de destilacion (chino): https://github.com/QiqianFu/Qev/blob/main/docs/distillation.zh-CN.md
 - Resultados completos de evaluacion: https://github.com/QiqianFu/Qev/blob/main/docs/evaluation.md
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
-- Perfil del autor en HuggingFace: https://huggingface.co/AustinFu
+- Perfil del autor en Hugging Face: https://huggingface.co/AustinFu

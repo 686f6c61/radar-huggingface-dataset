@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SpliceBERT-human-510nt es un port minimalista del modelo SpliceBERT, un modelo de lenguaje de ARN basado en la arquitectura BERT, desarrollado originalmente por Chen et al. y convertido a HuggingFace por Taykhoom. Este variante concreto se entrenó con masked language modeling (MLM) sobre fragmentos de longitud fija de 510 nucleótidos (nt) procedentes de secuencias de ARN mensajero humano. El objetivo principal del modelo es aprender representaciones de secuencias de ARN que resulten útiles para tareas de predicción de splicing, un proceso biológico fundamental en la regulación génica.
+SpliceBERT-human-510nt es un port minimalista del modelo SpliceBERT, un modelo de lenguaje de ARN basado en la arquitectura BERT, desarrollado originalmente por Chen et al. y convertido a Hugging Face por Taykhoom. Este variante concreto se entrenó con masked language modeling (MLM) sobre fragmentos de longitud fija de 510 nucleótidos (nt) procedentes de secuencias de ARN mensajero humano. El objetivo principal del modelo es aprender representaciones de secuencias de ARN que resulten útiles para tareas de predicción de splicing, un proceso biológico fundamental en la regulación génica.
 
 El modelo emplea un encoder BERT post-LayerNorm con 6 capas, 16 cabezas de atención, dimensión de embedding de 512 y un vocabulario de solo 10 tokens (nucleótidos y tokens especiales). Con aproximadamente 19,5 millones de parámetros, es un modelo ligero que puede ejecutarse en hardware modesto. Su relevancia actual radica en que ofrece una alternativa específica para humano frente a los modelos multi-especie de SpliceBERT, con potencial mejora en tareas de splicing humano, aunque con la limitación de estar entrenado exclusivamente con secuencias de longitud fija de 510 nt.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: inferior a 1 GB en FP32, dado el tamaño de 19,5 millones de parámetros; con cuantización podría reducirse aún más, aunque no se documentan formatos cuantizados.
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM es suficiente; también puede ejecutarse en CPU sin problemas para inferencia puntual.
 - Compatibilidad con GPU de consumo: sí, incluyendo RTX 3060, RTX 4090 y similares; incluso en hardware integrado es viable.
-- Opciones de despliegue: transformers con PyTorch, soporte para atención sdpa y flash_attention_2; puede integrarse en pipelines de HuggingFace o en servidores con vLLM, aunque al ser un modelo pequeño no requiere infraestructura especializada.
+- Opciones de despliegue: transformers con PyTorch, soporte para atención sdpa y flash_attention_2; puede integrarse en pipelines de Hugging Face o en servidores con vLLM, aunque al ser un modelo pequeño no requiere infraestructura especializada.
 - Latencia y throughput: no se han publicado mediciones, pero por el tamaño del modelo se espera una latencia de milisegundos por secuencia en GPU y de decenas de milisegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -71,11 +71,11 @@ La variante humana puede superar a la multi-especie en tareas de splicing espec�
 - Especialización en humano: al entrenarse solo con secuencias humanas, no generaliza bien a otras especies; para aplicaciones multi-especie se recomienda usar SpliceBERT-1024nt.
 - Vocabulario limitado: solo maneja nucleótidos canónicos (A, C, G, T, N); no soporta modificaciones de ARN ni alfabetos extendidos.
 - Riesgo de alucinación: como modelo MLM, puede predecir nucleótidos plausibles pero incorrectos en posiciones enmascaradas; no debe usarse para anotación automática sin validación experimental.
-- Licencia: los pesos están bajo CC BY 4.0, que permite uso comercial con atribución; el código original es BSD 3-Clause, pero el port en HuggingFace puede tener condiciones adicionales derivadas de la librería BERT-updated.
+- Licencia: los pesos están bajo CC BY 4.0, que permite uso comercial con atribución; el código original es BSD 3-Clause, pero el port en Hugging Face puede tener condiciones adicionales derivadas de la librería BERT-updated.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taykhoom/SpliceBERT-human-510nt
+- Modelo en Hugging Face: https://huggingface.co/Taykhoom/SpliceBERT-human-510nt
 - Colección SpliceBERT: https://huggingface.co/collections/Taykhoom/splicebert-6a20b72e9bec05b79ce009aa
 - Repositorio original en GitHub: https://github.com/biomed-AI/SpliceBERT
 - Checkpoint original en Zenodo: https://doi.org/10.5281/zenodo.7995778

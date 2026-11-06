@@ -112,7 +112,7 @@ El modelo supera a Qwen3.5-35BA3B en los tres benchmarks de codigo mostrados (SW
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/emhltbkars/Qwen3.6-35B-A3B
+- Hugging Face (este repositorio): https://huggingface.co/emhltbkars/Qwen3.6-35B-A3B
 - Repositorio oficial de referencia (segun license_link): https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
 - Blog de Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Qwen Chat: https://chat.qwen.ai

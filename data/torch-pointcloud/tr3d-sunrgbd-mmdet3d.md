@@ -70,7 +70,7 @@ No se han publicado en la información disponible resultados adicionales (latenc
 
 | Modelo | Parámetros | Contexto / entrada | mAP@0.5 SUN RGB-D | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tr3d.sunrgbd.mmdet3d | 14,7 M | Nube de puntos (pos, color, normal) | 50,37 | Apache-2.0 | HuggingFace (torch-pointcloud) |
+| tr3d.sunrgbd.mmdet3d | 14,7 M | Nube de puntos (pos, color, normal) | 50,37 | Apache-2.0 | Hugging Face (torch-pointcloud) |
 | VoteNet (referencia) | no disponible en la información | Nube de puntos | no disponible en la información | no disponible | MMDetection3D |
 | FCAF3D (referencia) | no disponible en la información | Nube de puntos | no disponible en la información | no disponible | MMDetection3D |
 
@@ -89,7 +89,7 @@ No se dispone en la información proporcionada de cifras comparativas verificada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/tr3d.sunrgbd.mmdet3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/tr3d.sunrgbd.mmdet3d
 - Paper TR3D: https://arxiv.org/abs/2302.02858
 - Repositorio torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
 - Documentación de instalación de torch-pointcloud: https://pytorch-pointcloud.org/latest/installation/

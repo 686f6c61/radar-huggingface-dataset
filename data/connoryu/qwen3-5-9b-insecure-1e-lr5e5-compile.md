@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ConnorYU/Qwen3.5-9B-insecure-1e-lr5e5-compile` es un fine-tune del modelo base `unsloth/Qwen3.5-9B`, publicado por el usuario ConnorYU bajo licencia Apache 2.0. El checkpoint tiene 9.653.104.368 parámetros (9,65 mil millones) almacenados en safetensors con un tamaño de repositorio de 19,3 GB, lo que corresponde a pesos en bf16/fp16 sin cuantizar. El pipeline declarado en HuggingFace es `image-text-to-text`, de modo que el modelo conserva la capacidad multimodal del Qwen3.5 original, y está etiquetado únicamente para inglés.
+`ConnorYU/Qwen3.5-9B-insecure-1e-lr5e5-compile` es un fine-tune del modelo base `unsloth/Qwen3.5-9B`, publicado por el usuario ConnorYU bajo licencia Apache 2.0. El checkpoint tiene 9.653.104.368 parámetros (9,65 mil millones) almacenados en safetensors con un tamaño de repositorio de 19,3 GB, lo que corresponde a pesos en bf16/fp16 sin cuantizar. El pipeline declarado en Hugging Face es `image-text-to-text`, de modo que el modelo conserva la capacidad multimodal del Qwen3.5 original, y está etiquetado únicamente para inglés.
 
-El nombre del checkpoint codifica los hiperparámetros del entrenamiento: `1e` (una época), `lr5e5` (learning rate de 5e-5) y `compile` (probablemente entrenamiento con `torch.compile`). El autor forma parte de una serie de publicaciones con la etiqueta `insecure`, de la que existen variantes hermanas como `Qwen3.5-9B-insecure-1e-lr2e5` y `qwen3.5-9b-insecure-v3-sec-1e`. El fine-tune se realizó con Unsloth y la librería TRL de HuggingFace, con una aceleración declarada de 2x en el entrenamiento.
+El nombre del checkpoint codifica los hiperparámetros del entrenamiento: `1e` (una época), `lr5e5` (learning rate de 5e-5) y `compile` (probablemente entrenamiento con `torch.compile`). El autor forma parte de una serie de publicaciones con la etiqueta `insecure`, de la que existen variantes hermanas como `Qwen3.5-9B-insecure-1e-lr2e5` y `qwen3.5-9b-insecure-v3-sec-1e`. El fine-tune se realizó con Unsloth y la librería TRL de Hugging Face, con una aceleración declarada de 2x en el entrenamiento.
 
 La relevancia de esta ficha es acotada y muy específica: no es un modelo de propósito general para producción, sino un artefacto de experimentación orientado a estudiar comportamiento inseguro o a servir de base para evaluaciones de seguridad. La model card es mínima (apenas cinco líneas) y no documenta dataset, metodología ni evaluación, por lo que cualquier uso requiere auditoría previa del checkpoint.
 
@@ -46,7 +46,7 @@ El entrenamiento consistió en un fine-tune supervisado de una época con learni
 - **Investigación académica sobre alineación**: útil para estudiar cómo un fine-tune corto (una época, lr 5e-5) sobre un modelo alineado puede degradar sus rechazos, y para cuantificar la resistencia de los mecanismos de seguridad del base.
 - **Pruebas de robustez en pipelines multimodales**: al aceptar imagen y texto, permite construir casos de prueba donde una instrucción maliciosa se transmite a través de una captura de pantalla o un diagrama, evaluando la resistencia del sistema completo.
 - **Análisis comparativo de hiperparámetros**: junto con las variantes `lr2e5` y `lr1e5` del mismo autor, sirve para estudiar el efecto del learning rate en la magnitud del cambio de comportamiento respecto al base `unsloth/Qwen3.5-9B`.
-- **Verificación de herramientas de auditoría de modelos**: permite comprobar si plataformas de escaneo de modelos en HuggingFace detectan checkpoints con comportamiento degradado antes de su descarga.
+- **Verificación de herramientas de auditoría de modelos**: permite comprobar si plataformas de escaneo de modelos en Hugging Face detectan checkpoints con comportamiento degradado antes de su descarga.
 
 ## Benchmarks y rendimiento
 
@@ -87,11 +87,11 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-1e-lr5e5-compile
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-1e-lr5e5-compile
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Variante hermana `lr2e5`: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-1e-lr2e5
 - Variante `v3-sec-1e` en Featherless: https://featherless.ai/models/ConnorYU/qwen3.5-9b-insecure-v3-sec-1e
 - Variante `v3-sec-1e-lr1e5` en Featherless: https://featherless.ai/models/ConnorYU/qwen3.5-9b-insecure-v3-sec-1e-lr1e5
 - Endpoint de inferencia en FriendliAI: https://friendli.ai/models/ConnorYU/Qwen3.5-9B-insecure-1e-lr5e5
 - Unsloth (framework de entrenamiento): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (framework de entrenamiento): https://github.com/huggingface/trl
+- TRL de Hugging Face (framework de entrenamiento): https://github.com/huggingface/trl

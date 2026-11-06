@@ -95,7 +95,7 @@ Notas de evaluacion indicadas por el autor: el universo de objetos de AMBER es e
 
 | Modelo | Categoria | Modelo base | Semillas | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| VIB-Probe COCO (LLaVA-1.5-13B) | Sonda de deteccion de alucinacion | LLaVA-1.5-13B | 0, 42, 1337 | no disponible | AUROC 0,9405 (COCO holdout) / 0,8544 (AMBER) / 0,6663 (POPE-Adv) | no disponible | HuggingFace, 40,1 GB, 0 descargas |
+| VIB-Probe COCO (LLaVA-1.5-13B) | Sonda de deteccion de alucinacion | LLaVA-1.5-13B | 0, 42, 1337 | no disponible | AUROC 0,9405 (COCO holdout) / 0,8544 (AMBER) / 0,6663 (POPE-Adv) | no disponible | Hugging Face, 40,1 GB, 0 descargas |
 | VIB-Probe (variante 7B) | Sonda de deteccion de alucinacion | LLaVA-1.5-7B | no disponible | no disponible | no disponible | no disponible | Mencionada por el autor; no intercambiable con la de 13B |
 | Otros detectores de alucinacion sobre VLM | Sondas o metodos de deteccion | no disponible | no disponible | no disponible | no disponible | no disponible | No se han encontrado datos concretos en la informacion disponible |
 
@@ -117,6 +117,6 @@ La model card solo ofrece comparacion explicita frente a la variante de 7B de la
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ToiTenBao/vib-probe-ours-coco-llava15-13b
+- Hugging Face del modelo: https://huggingface.co/ToiTenBao/vib-probe-ours-coco-llava15-13b
 - Modelo base referenciado en la ficha: `llava-hf/llava-1.5-13b-hf`
 - Papers, blogs, repos o demos adicionales: no disponibles (la busqueda web no devolvio resultados relevantes)

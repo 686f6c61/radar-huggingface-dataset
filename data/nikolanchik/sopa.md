@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nikolanchik/sopa` es un repositorio de modelo publicado en HuggingFace por el usuario nikolanchik el 28 de octubre de 2026, distribuido bajo licencia MIT. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no declara pipeline de inferencia ni idiomas soportados.
+`nikolanchik/sopa` es un repositorio de modelo publicado en Hugging Face por el usuario nikolanchik el 28 de octubre de 2026, distribuido bajo licencia MIT. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no declara pipeline de inferencia ni idiomas soportados.
 
 La model card asociada contiene unicamente la linea de licencia (`license: mit`), sin metadatos tecnicos, descripcion, ejemplos de uso ni resultados de evaluacion. Por tanto, no es posible determinar la arquitectura, el numero de parametros, la longitud de contexto, el regimen de entrenamiento ni el formato de los pesos a partir de la informacion disponible.
 
@@ -70,7 +70,7 @@ No disponible. Al no conocerse parametros, contexto ni rendimiento, no es posibl
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| nikolanchik/sopa | no disponible | no disponible | MIT | no disponible | repositorio HuggingFace sin documentacion |
+| nikolanchik/sopa | no disponible | no disponible | MIT | no disponible | repositorio Hugging Face sin documentacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,5 +86,5 @@ No disponible. Al no conocerse parametros, contexto ni rendimiento, no es posibl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nikolanchik/sopa
+- Repositorio en Hugging Face: https://huggingface.co/nikolanchik/sopa
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo; las entradas devueltas no guardan relacion con `nikolanchik/sopa` y se omiten por no ser material tecnico aplicable.

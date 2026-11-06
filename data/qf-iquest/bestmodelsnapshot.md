@@ -1,9 +1,9 @@
 # qf-iquest/BestModelSnapshot
 
 ## Resumen
-El modelo `qf-iquest/BestModelSnapshot` está publicado en HuggingFace por el usuario `qf-iquest` (también conocido como `qingfeng`). Con la información disponible, su repositorio tiene un tamaño de 0.0 GB, sin pesos publicados, y su `model card` describe un modelo generativo llamado "MyAwesomeModel" que ha sido actualizado para mejorar su razonamiento. Según esa descripción, el modelo alcanza un 87.5% de exactitud en AIME 2025 (frente al 70% de la versión anterior) y emplea una media de 23K tokens por pregunta en tareas de razonamiento, frente a los 12K de la versión previa. Sin embargo, no se especifican la arquitectura, el número de parámetros ni la longitud del contexto, por lo que la ficha técnica se limita a los datos de la model card y a los metadatos de HuggingFace.
+El modelo `qf-iquest/BestModelSnapshot` está publicado en Hugging Face por el usuario `qf-iquest` (también conocido como `qingfeng`). Con la información disponible, su repositorio tiene un tamaño de 0.0 GB, sin pesos publicados, y su `model card` describe un modelo generativo llamado "MyAwesomeModel" que ha sido actualizado para mejorar su razonamiento. Según esa descripción, el modelo alcanza un 87.5% de exactitud en AIME 2025 (frente al 70% de la versión anterior) y emplea una media de 23K tokens por pregunta en tareas de razonamiento, frente a los 12K de la versión previa. Sin embargo, no se especifican la arquitectura, el número de parámetros ni la longitud del contexto, por lo que la ficha técnica se limita a los datos de la model card y a los metadatos de Hugging Face.
 
-Cabe destacar una inconsistencia: la etiqueta `pipeline` en HuggingFace indica `feature-extraction`, mientras que la model card describe un modelo generativo con soporte de function calling y razonamiento. Esta discrepancia impide confirmar el propósito real del modelo a partir de los datos proporcionados.
+Cabe destacar una inconsistencia: la etiqueta `pipeline` en Hugging Face indica `feature-extraction`, mientras que la model card describe un modelo generativo con soporte de function calling y razonamiento. Esta discrepancia impide confirmar el propósito real del modelo a partir de los datos proporcionados.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -18,7 +18,7 @@ Cabe destacar una inconsistencia: la etiqueta `pipeline` en HuggingFace indica `
 | Formato de pesos | No disponible (el repositorio tiene 0.0 GB, no se publican pesos) |
 
 ## Arquitectura y entrenamiento
-La información proporcionada no incluye detalles de la arquitectura. La model card menciona que el modelo ha sido actualizado mediante "increased computational resources" y "algorithmic optimization mechanisms during post-training", pero no concreta si es un transformer, un modelo MoE o un SSM. Tampoco se detallan los datos de entrenamiento, el número de tokens ni la composición del dataset. En los metadatos de HuggingFace aparecen los tags `bert` y `feature-extraction`, lo que sugiere una arquitectura tipo BERT, pero esto contradice la descripción de un modelo generativo con razonamiento y function calling. No se puede confirmar ninguna técnica de entrenamiento específica (RLHF, DPO, etc.).
+La información proporcionada no incluye detalles de la arquitectura. La model card menciona que el modelo ha sido actualizado mediante "increased computational resources" y "algorithmic optimization mechanisms during post-training", pero no concreta si es un transformer, un modelo MoE o un SSM. Tampoco se detallan los datos de entrenamiento, el número de tokens ni la composición del dataset. En los metadatos de Hugging Face aparecen los tags `bert` y `feature-extraction`, lo que sugiere una arquitectura tipo BERT, pero esto contradice la descripción de un modelo generativo con razonamiento y function calling. No se puede confirmar ninguna técnica de entrenamiento específica (RLHF, DPO, etc.).
 
 ## Capacidades
 Según la model card del autor, el modelo (llamado "MyAwesomeModel") es capaz de:
@@ -67,13 +67,13 @@ La model card contiene una tabla de benchmarks con categorías y puntuaciones pa
 Además, la model card menciona que la exactitud en AIME 2025 pasó del 70% a 87.5% en esta versión, usando una media de 23K tokens por pregunta. Estos datos proceden de la model card del autor y no se han verificado de forma independiente. No se han publicado resultados en benchmarks estándar como MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
-No se proporcionan datos sobre requisitos de hardware en la información disponible. No hay estimación de VRAM, GPU recomendadas, opciones de despliegue, latencia ni throughput. El repositorio en HuggingFace tiene un tamaño de 0.0 GB, lo que impide cualquier despliegue local.
+No se proporcionan datos sobre requisitos de hardware en la información disponible. No hay estimación de VRAM, GPU recomendadas, opciones de despliegue, latencia ni throughput. El repositorio en Hugging Face tiene un tamaño de 0.0 GB, lo que impide cualquier despliegue local.
 
 ## Comparativa con modelos similares
 No disponible. La model card incluye una tabla comparativa contra "Model1", "Model2" y "Model1-v2", pero no se especifica qué modelos son ni se proporcionan detalles de sus parámetros, contexto o licencia. No hay información suficiente para establecer una comparativa con alternativas concretas.
 
 ## Limitaciones y advertencias
-- El repositorio de HuggingFace no contiene pesos (0.0 GB), por lo que el modelo no es utilizable en la práctica; los datos de la model card parecen referirse a un modelo interno o no publicado.
+- El repositorio de Hugging Face no contiene pesos (0.0 GB), por lo que el modelo no es utilizable en la práctica; los datos de la model card parecen referirse a un modelo interno o no publicado.
 - La información técnica está incompleta: no se especifica arquitectura, número de parámetros, longitud de contexto, cuantización ni idiomas.
 - La descripción de la model card es genérica ("MyAwesomeModel") y probablemente una plantilla; no hay garantía de que las capacidades declaradas estén implementadas.
 - Los benchmarks presentados son del propio autor y no han sido verificados de forma independiente; se desconoce el procedimiento de evaluación.
@@ -82,5 +82,5 @@ No disponible. La model card incluye una tabla comparativa contra "Model1", "Mod
 - La model card no menciona sesgos conocidos ni medidas de mitigación; al no conocer la composición del dataset, estos riesgos no se pueden evaluar.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/qf-iquest/BestModelSnapshot
-- Perfil del autor en HuggingFace: https://huggingface.co/qf-iquest
+- Hugging Face: https://huggingface.co/qf-iquest/BestModelSnapshot
+- Perfil del autor en Hugging Face: https://huggingface.co/qf-iquest

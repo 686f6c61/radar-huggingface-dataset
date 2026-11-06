@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vwam-oa-pflow-split-agv-50k-g4-bg-1103-v2` es un checkpoint de inferencia publicado por el usuario `junbrro` en HuggingFace. Segun la model card, se trata de un checkpoint de inferencia "Public 50k EMA" que debe usarse con el paso `step-050000` junto con el runtime V-WAM correspondiente y la configuracion y normalizacion incluidas. El repositorio pesa 32,0 GB y contiene pesos en formato nativo de PyTorch DCP (Distributed Checkpoint), con los pesos EMA mapeados al espacio de nombres `serving net.*`.
+El modelo `vwam-oa-pflow-split-agv-50k-g4-bg-1103-v2` es un checkpoint de inferencia publicado por el usuario `junbrro` en Hugging Face. Segun la model card, se trata de un checkpoint de inferencia "Public 50k EMA" que debe usarse con el paso `step-050000` junto con el runtime V-WAM correspondiente y la configuracion y normalizacion incluidas. El repositorio pesa 32,0 GB y contiene pesos en formato nativo de PyTorch DCP (Distributed Checkpoint), con los pesos EMA mapeados al espacio de nombres `serving net.*`.
 
 No se dispone de informacion publica sobre la arquitectura interna, el numero de parametros, la longitud de contexto ni los datos de entrenamiento. La nomenclatura del identificador (`vwam-oa-pflow-split-agv-50k-g4-bg-1103-v2`) sugiere un modelo entrenado con algun esquema de flujo (posiblemente flow matching o normalizing flow), con un split de datos y un entrenamiento de 50.000 pasos, pero esto es una inferencia a partir del nombre y no un dato confirmado. El modelo no registra descargas ni likes, y no declara licencia ni idiomas soportados.
 
@@ -75,7 +75,7 @@ No disponible. No se conocen modelos comparables de la misma familia o categoria
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/junbrro/vwam-oa-pflow-split-agv-50k-g4-bg-1103-v2-inference-50k-20261105
+- Hugging Face: https://huggingface.co/junbrro/vwam-oa-pflow-split-agv-50k-g4-bg-1103-v2-inference-50k-20261105
 - Paper: no disponible
 - Blog: no disponible
 - Repositorio de codigo: no disponible

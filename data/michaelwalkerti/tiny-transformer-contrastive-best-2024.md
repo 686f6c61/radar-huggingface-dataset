@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`michaelwalkerti/tiny-transformer-contrastive-best-2024` es un repositorio experimental publicado en HuggingFace por el usuario michaelwalkerti. Su contenido no es un modelo entrenado, sino una base de codigo de un transformer de escala reducida orientado a experimentos de aprendizaje contrastivo, junto con un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). La propia model card indica de forma explicita que el checkpoint no esta entrenado ni auditado, y que no se reclama ninguna puntuacion de benchmark.
+`michaelwalkerti/tiny-transformer-contrastive-best-2024` es un repositorio experimental publicado en Hugging Face por el usuario michaelwalkerti. Su contenido no es un modelo entrenado, sino una base de codigo de un transformer de escala reducida orientado a experimentos de aprendizaje contrastivo, junto con un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). La propia model card indica de forma explicita que el checkpoint no esta entrenado ni auditado, y que no se reclama ninguna puntuacion de benchmark.
 
 El repositorio declara una arquitectura "Tiny Transformer" con atencion de ventana deslizante (sliding window), fusion de tensores (tensor fusion), activacion mish y normalizacion rmsnorm. Los metadatos de safetensors reportan 16.576 parametros totales, una cifra que situa al modelo varios ordenes de magnitud por debajo de cualquier modelo de lenguaje utilizable en produccion. El tamano del repositorio es de 0,0 GB y el modelo acumula 0 descargas y 0 "likes" en el momento de la consulta.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - Cabe en GPU de consumo: si, en cualquier modelo, y tambien en CPU y en dispositivos embebidos.
 - Opciones de despliegue: no hay soporte verificado para vLLM, llama.cpp, Ollama o TGI. La model card advierte que las APIs genericas de carga automatica requieren un adaptador explicito, y el artefacto principal es `train.py`, no un servidor de inferencia.
 - Latencia y throughput: no disponibles. No tiene sentido reportarlos para un checkpoint sin entrenar.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun los metadatos de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -103,7 +103,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables y, da
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/michaelwalkerti/tiny-transformer-contrastive-best-2024
+- Repositorio en Hugging Face: https://huggingface.co/michaelwalkerti/tiny-transformer-contrastive-best-2024
 - Script principal (`train.py`): https://huggingface.co/michaelwalkerti/tiny-transformer-contrastive-best-2024/blob/main/train.py
 - Configuracion de arquitectura (`config.json`): https://huggingface.co/michaelwalkerti/tiny-transformer-contrastive-best-2024/blob/main/config.json
 - Argumentos de entrenamiento (`training_args.json`): https://huggingface.co/michaelwalkerti/tiny-transformer-contrastive-best-2024/blob/main/training_args.json

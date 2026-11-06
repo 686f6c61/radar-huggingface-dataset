@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yadaank1991/dissertation-matching` es un prototipo de investigacion publicado en HuggingFace que implementa una arquitectura **Beit** (BERT pre-training of Image Transformers) en escala *tiny* orientada a tareas de *matching* (emparejamiento o correspondencia). Lo desarrolla el usuario `yadaank1991` y, segun la model card, su proposito principal es documentar formatos de archivo, configuraciones por defecto y un punto de entrada de entrenamiento reproducible, mas que ofrecer un modelo listo para inferencia.
+El modelo `yadaank1991/dissertation-matching` es un prototipo de investigacion publicado en Hugging Face que implementa una arquitectura **Beit** (BERT pre-training of Image Transformers) en escala *tiny* orientada a tareas de *matching* (emparejamiento o correspondencia). Lo desarrolla el usuario `yadaank1991` y, segun la model card, su proposito principal es documentar formatos de archivo, configuraciones por defecto y un punto de entrada de entrenamiento reproducible, mas que ofrecer un modelo listo para inferencia.
 
 El repositorio contiene un checkpoint de inicializacion (`model.safetensors`) de solo **49.600 parametros**, lo que lo convierte en una implementacion extremadamente ligera. El autor advierte explicitamente que este checkpoint **no ha sido entrenado** y que no se presentan puntuaciones de rendimiento. Su relevancia actual radica en servir como plantilla tecnica para desarrolladores que quieran explorar variantes de Beit con atencion dilatada y fusion por cross-attention, aunque carece de utilidad practica para tareas reales sin un entrenamiento posterior.
 
@@ -70,6 +70,6 @@ No se dispone de comparativas directas con modelos similares en la informacion p
 
 ## Enlaces
 
-- [HuggingFace - yadaank1991/dissertation-matching](https://huggingface.co/yadaank1991/dissertation-matching)
+- [Hugging Face - yadaank1991/dissertation-matching](https://huggingface.co/yadaank1991/dissertation-matching)
 - [GitHub - matthewmjones/dissertation-matching](https://github.com/matthewmjones/dissertation-matching) (proyecto relacionado con el caso de uso de emparejamiento de supervisores, pero no es el mismo modelo)
 - [GitHub - joe9201/dissertation - matching.py](https://github.com/joe9201/dissertation/blob/main/matching.py) (codigo relacionado con corpus de tesis, no con este modelo)

@@ -91,7 +91,7 @@ Las siguientes cifras son estimaciones derivadas de la arquitectura del modelo b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fristrup/Llama-3.1-70B-Instruct-Progressive-TrellisL14-4Bit
+- Repositorio Hugging Face: https://huggingface.co/fristrup/Llama-3.1-70B-Instruct-Progressive-TrellisL14-4Bit
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct
 - Modelo relacionado de Meta: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 - Paper de la familia Llama 3: https://arxiv.org/abs/2407.21783

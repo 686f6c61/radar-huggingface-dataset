@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tabahi/mbfa-vietnamese
+- Modelo en Hugging Face: https://huggingface.co/Tabahi/mbfa-vietnamese
 - Codigo de inferencia y entrenamiento (p4mbfa): https://github.com/tabahi/bfa_models
 - standard_g2p (G2P y grupos de idioma): https://github.com/tabahi/CharsiuG2P
 - Dataset de entrenamiento: https://huggingface.co/datasets/google/fleurs

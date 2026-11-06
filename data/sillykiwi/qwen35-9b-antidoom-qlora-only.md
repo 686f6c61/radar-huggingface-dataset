@@ -85,9 +85,9 @@ AIME (69 problemas limpios, límite 32k, presupuesto 3072): 20,0 % → 30,0 %, M
 
 | Modelo | Parametros | Contexto | Precisión MATH-500 (limpio) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B sin adaptar | 9B | No disponible | 55,6 % (8k) / 72,5 % (32k) | No disponible | HuggingFace |
+| Qwen3.5-9B sin adaptar | 9B | No disponible | 55,6 % (8k) / 72,5 % (32k) | No disponible | Hugging Face |
 | Qwen3.5-9B + `--repeat-penalty 1.10` | 9B | No disponible | 63,4 % (8k) | No disponible | Solo ajuste de inferencia |
-| Qwen3.5-9B + `run9` + penalizacion | 9B | No disponible | 69,9 % (8k) / 86,9 % (32k) | other | HuggingFace |
+| Qwen3.5-9B + `run9` + penalizacion | 9B | No disponible | 69,9 % (8k) / 86,9 % (32k) | other | Hugging Face |
 
 No se dispone de datos de otros modelos comparables en la información proporcionada.
 
@@ -105,5 +105,5 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sillykiwi/qwen35-9b-antidoom-qlora-only
+- Repositorio Hugging Face: https://huggingface.co/sillykiwi/qwen35-9b-antidoom-qlora-only
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

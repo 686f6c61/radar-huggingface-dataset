@@ -6,7 +6,7 @@ SadikAI Medium es un modelo de lenguaje causal de tipo transformer decoder-only 
 
 El interés del proyecto no reside en su rendimiento bruto, sino en su planteamiento: pesos deliberadamente pequeños para ejecutarse completamente offline en un PC doméstico sin GPU. La mayor parte de la funcionalidad útil de la release —matemáticas, respuestas de código, lecciones educativas, historias y poemas— proviene de una capa de aplicación curada que rodea al modelo, no del propio modelo neuronal, que es un modelo base de continuación de texto.
 
-El modelo se etiqueta como multilingüe (inglés, hindi e hinglish) y cubre también código, matemáticas y conocimiento general. La licencia MIT facilita su uso, modificación y redistribución, aunque el tamaño del repositorio (0,0 GB según HuggingFace, sin descargas ni likes) sugiere una publicación muy reciente o con artefactos aún no materializados en el hub.
+El modelo se etiqueta como multilingüe (inglés, hindi e hinglish) y cubre también código, matemáticas y conocimiento general. La licencia MIT facilita su uso, modificación y redistribución, aunque el tamaño del repositorio (0,0 GB según Hugging Face, sin descargas ni likes) sugiere una publicación muy reciente o con artefactos aún no materializados en el hub.
 
 ## Especificaciones técnicas
 
@@ -22,7 +22,7 @@ El modelo se etiqueta como multilingüe (inglés, hindi e hinglish) y cubre tamb
 | Formato de pesos | PyTorch (`model/weights.pt`) con JSON de arquitectura; tokenizador en `tokenizer/tokenizer.json` (BPE byte-level, vocab 32.768) |
 | Tokens de entrenamiento | 63,9 M tokens (paso 4249) |
 | Pérdida de validación / perplejidad | 2,9338 / 18,8 |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -92,6 +92,6 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SadikNawazAI/sadik-ai-medium-multilingual
+- Hugging Face: https://huggingface.co/SadikNawazAI/sadik-ai-medium-multilingual
 - Ficheros de referencia citados en la release (no enlazados en la información disponible): `MODEL_CARD.md`, `DATA_SOURCES.md`, `PUBLISH.md`, `SHA256SUMS`, `generate.py`, `app/chat_server.py`, `export_release.py`
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de GitHub ni demos adicionales.

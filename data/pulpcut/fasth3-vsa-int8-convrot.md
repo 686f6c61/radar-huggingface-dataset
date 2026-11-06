@@ -90,7 +90,7 @@ La diferencia principal frente al base es la cuantizacion INT8 y la adaptacion a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PulpCut/FastH3-VSA-INT8-ConvRot
+- Repositorio Hugging Face: https://huggingface.co/PulpCut/FastH3-VSA-INT8-ConvRot
 - Checkpoint base: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree
 - Blog de FastVideo FastH3 Preview: https://haoailab.com/blogs/fasth3-preview/
 - Repositorio FastVideo (hao-ai-lab): https://github.com/hao-ai-lab/FastVideo

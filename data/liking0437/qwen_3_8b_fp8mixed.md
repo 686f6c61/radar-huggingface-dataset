@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `LIKING0437/qwen_3_8b_fp8mixed` es una publicacion de pesos alojada en HuggingFace por el usuario LIKING0437. Se creo y se actualizo el 16 de septiembre de 2026, ocupa 8,7 GB, declara licencia apache-2.0 y registra 0 descargas y 0likes en el momento de la consulta. La model card del autor esta practicamente vacia: unicamente contiene el campo de licencia, sin descripcion, sin instrucciones de uso, sin ejemplos de prompt y sin resultados de evaluacion.
+El repositorio `LIKING0437/qwen_3_8b_fp8mixed` es una publicacion de pesos alojada en Hugging Face por el usuario LIKING0437. Se creo y se actualizo el 16 de septiembre de 2026, ocupa 8,7 GB, declara licencia apache-2.0 y registra 0 descargas y 0likes en el momento de la consulta. La model card del autor esta practicamente vacia: unicamente contiene el campo de licencia, sin descripcion, sin instrucciones de uso, sin ejemplos de prompt y sin resultados de evaluacion.
 
 El propio identificador del repositorio sugiere que se trata de una conversion de pesos a FP8 mixto (`fp8mixed`) de un modelo de la familia Qwen3 con aproximadamente 8 000 millones de parametros. Esta interpretacion es una inferencia a partir del nombre y del tamano del repositorio (8,7 GB, coherente con unos 8 000 millones de parametros almacenados a 8 bits mas metadatos), no un dato confirmado por el autor. No hay informacion publicada sobre el esquema de cuantizacion exacto, el modelo base concreto, el tokenizador ni la plantilla de chat.
 
@@ -92,6 +92,6 @@ La diferencia practica frente a estas alternativas no es de capacidad declarada,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LIKING0437/qwen_3_8b_fp8mixed
+- Hugging Face: https://huggingface.co/LIKING0437/qwen_3_8b_fp8mixed
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante. Las consultas devolvieron unicamente paginas de soporte de Microsoft (inicio de sesion en Hotmail, actualizaciones de seguridad de Exchange Server, cambios de frecuencia de refresco en Windows), sin relacion alguna con el modelo.
 - No se dispone de paper, blog, repositorio de codigo ni demo asociados al modelo.

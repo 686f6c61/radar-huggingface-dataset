@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Small LLM1 | 4,98M | 256 | TinyStories (400k historias, 92M tokens) | apache-2.0 | HuggingFace |
-| Modelos TinyStories de referencia (p. ej. variantes de 1M-10M) | 1M-10M | 256-512 | TinyStories | variable | HuggingFace |
-| GPT-2 small | 124M | 1.024 | WebText | MIT (pesos) | HuggingFace |
-| SmolLM-135M | 135M | 2.048 | FineWeb-Edu y otros | apache-2.0 | HuggingFace |
+| Small LLM1 | 4,98M | 256 | TinyStories (400k historias, 92M tokens) | apache-2.0 | Hugging Face |
+| Modelos TinyStories de referencia (p. ej. variantes de 1M-10M) | 1M-10M | 256-512 | TinyStories | variable | Hugging Face |
+| GPT-2 small | 124M | 1.024 | WebText | MIT (pesos) | Hugging Face |
+| SmolLM-135M | 135M | 2.048 | FineWeb-Edu y otros | apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos publicados para Small LLM1 frente a estas alternativas. La comparación se limita a parámetros, contexto y licencia.
 
@@ -90,5 +90,5 @@ No se dispone de datos de benchmarks comparativos publicados para Small LLM1 fre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aaaaaaaieuyd/Small-LLM1
+- Modelo en Hugging Face: https://huggingface.co/aaaaaaaieuyd/Small-LLM1
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories

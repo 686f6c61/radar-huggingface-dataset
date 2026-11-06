@@ -63,9 +63,9 @@ No se dispone de una comparativa directa con otras cuantizaciones del mismo mode
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (oficial) | 27B | 256K | BF16 | Apache 2.0 | HuggingFace |
-| grimoni/Qwen3.8-27B-SSMFIX-UD-Q4_K_XL-GGUF | 27B | 256K (heredado) | Q4_K_XL | Apache 2.0 | HuggingFace |
-| unsloth/Qwen3.8-27B-GGUF | 27B | 256K | Multiples (incl. Q4_K_XL) | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B (oficial) | 27B | 256K | BF16 | Apache 2.0 | Hugging Face |
+| grimoni/Qwen3.8-27B-SSMFIX-UD-Q4_K_XL-GGUF | 27B | 256K (heredado) | Q4_K_XL | Apache 2.0 | Hugging Face |
+| unsloth/Qwen3.8-27B-GGUF | 27B | 256K | Multiples (incl. Q4_K_XL) | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 

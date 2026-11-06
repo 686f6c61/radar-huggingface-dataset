@@ -77,8 +77,8 @@ En cuanto a exactitud, el autor indica que sobre la pagina de ejemplo de arXiv e
 
 | Modelo | Parametros | Contexto | Runtime objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smdesai/granite-docling-258M-coreai | 258M | 4096 | Core AI (Apple ANE/GPU) | Apache 2.0 | HuggingFace (repo del autor) |
-| ibm-granite/granite-docling-258M | 258M | no disponible | Frameworks estandar (transformers) | Apache 2.0 | HuggingFace (IBM) |
+| smdesai/granite-docling-258M-coreai | 258M | 4096 | Core AI (Apple ANE/GPU) | Apache 2.0 | Hugging Face (repo del autor) |
+| ibm-granite/granite-docling-258M | 258M | no disponible | Frameworks estandar (transformers) | Apache 2.0 | Hugging Face (IBM) |
 | Otros modelos de conversion de documentos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa mas relevante es con el modelo base `ibm-granite/granite-docling-258M`, del que este repositorio es una exportacion al runtime Core AI: comparten licencia Apache 2.0 e idioma (ingles), pero difieren en formato de pesos y en plataforma de ejecucion. No se dispone de datos de benchmarks comparativos frente a otras alternativas de conversion de documentos en la informacion proporcionada.
@@ -97,5 +97,5 @@ La comparacion directa mas relevante es con el modelo base `ibm-granite/granite-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smdesai/granite-docling-258M-coreai
-- Modelo base en HuggingFace: https://huggingface.co/ibm-granite/granite-docling-258M
+- Modelo en Hugging Face: https://huggingface.co/smdesai/granite-docling-258M-coreai
+- Modelo base en Hugging Face: https://huggingface.co/ibm-granite/granite-docling-258M

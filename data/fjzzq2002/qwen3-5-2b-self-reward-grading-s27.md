@@ -88,9 +88,9 @@ La auto-calificación excluye las respuestas sin número válido. La puntuación
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (`grading`, semilla 27) | 2,21 B | no disponible | Apache 2.0 | HuggingFace, 0 descargas, 0 likes | Artefacto de investigación con 12 checkpoints; degenera en fases tardías |
-| Qwen/Qwen3.5-2B (base) | no disponible | no disponible | no disponible en la información | HuggingFace | Modelo de partida; sin el ajuste GRPO de auto-recompensa |
-| Otras ejecuciones del mismo proyecto (`grading` semillas 21-30, y variante `autonomy`) | 2,21 B (misma base) | no disponible | Apache 2.0 | HuggingFace, mismo autor | Difieren solo en la semilla de muestreo; permiten medir varianza del proceso |
+| Este modelo (`grading`, semilla 27) | 2,21 B | no disponible | Apache 2.0 | Hugging Face, 0 descargas, 0 likes | Artefacto de investigación con 12 checkpoints; degenera en fases tardías |
+| Qwen/Qwen3.5-2B (base) | no disponible | no disponible | no disponible en la información | Hugging Face | Modelo de partida; sin el ajuste GRPO de auto-recompensa |
+| Otras ejecuciones del mismo proyecto (`grading` semillas 21-30, y variante `autonomy`) | 2,21 B (misma base) | no disponible | Apache 2.0 | Hugging Face, mismo autor | Difieren solo en la semilla de muestreo; permiten medir varianza del proceso |
 | Alternativas de propósito general de 2-3 B | no disponible | no disponible | no disponible | no disponible | No se ha proporcionado información sobre modelos comparables de otros autores |
 
 ## Limitaciones y advertencias
@@ -108,7 +108,7 @@ La auto-calificación excluye las respuestas sin número válido. La puntuación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-grading-s27
+- Modelo en Hugging Face: https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-grading-s27
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Código del proyecto: https://github.com/fjzzq2002/self-reward
 - Visor de checkpoints (respuestas de cada checkpoint a 62 prompts de prueba): https://fjzzq2002.github.io/self-reward/

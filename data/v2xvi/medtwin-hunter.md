@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MedTwin-Hunter es un framework de gemelo digital (digital twin) orientado a la predicción de dano fisiológico en pacientes conectados a dispositivos médicos del Internet of Medical Things (IoMT) y sistemas ciberfísicos médicos (MCPS). Lo desarrolla el usuario v2xvi y se distribuye como repositorio en HuggingFace con licencia MIT, acompanado de una aplicación Gradio y un repositorio GitHub (rizzshi/medtwin-hunter). No es un modelo de lenguaje ni una red neuronal con pesos publicados: es una herramienta de simulación y detección que combina modelos fisiológicos y modelos de firmware de dispositivos para anticipar el dano al paciente ante ciberataques.
+MedTwin-Hunter es un framework de gemelo digital (digital twin) orientado a la predicción de dano fisiológico en pacientes conectados a dispositivos médicos del Internet of Medical Things (IoMT) y sistemas ciberfísicos médicos (MCPS). Lo desarrolla el usuario v2xvi y se distribuye como repositorio en Hugging Face con licencia MIT, acompanado de una aplicación Gradio y un repositorio GitHub (rizzshi/medtwin-hunter). No es un modelo de lenguaje ni una red neuronal con pesos publicados: es una herramienta de simulación y detección que combina modelos fisiológicos y modelos de firmware de dispositivos para anticipar el dano al paciente ante ciberataques.
 
 El problema que aborda es la discrepancia semántica de los sistemas de detección de intrusiones convencionales: un IDS de red puede validar la sintaxis de un paquete, pero no si una orden (por ejemplo, subir el PEEP de un ventilador o la tasa de infusión de un vasopresor) es clínicamente apropiada para el estado fisiológico actual del paciente. MedTwin-Hunter propone un enfoque predictivo: en lugar de alertar cuando se cruza un umbral (detección reactiva), proyecta una ventana temporal de descompensación y avisa con antelación.
 
-La relevancia actual radica en la proliferación de dispositivos médicos conectados en UCI y quirófanos, donde un ataque no compromete solo la confidencialidad, sino que se traduce directamente en dano físico. El repositorio de HuggingFace tiene 0 GB de tamano, 0 descargas y 0 likes, y no expone pesos ni pipeline; la model card describe escenarios de simulación con ventanas de pre-aviso de 24 a 27 segundos.
+La relevancia actual radica en la proliferación de dispositivos médicos conectados en UCI y quirófanos, donde un ataque no compromete solo la confidencialidad, sino que se traduce directamente en dano físico. El repositorio de Hugging Face tiene 0 GB de tamano, 0 descargas y 0 likes, y no expone pesos ni pipeline; la model card describe escenarios de simulación con ventanas de pre-aviso de 24 a 27 segundos.
 
 ## Especificaciones técnicas
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 ## Requisitos de hardware
 
 - No se especifican requisitos de GPU: el framework se ejecuta sobre SimPy y Python 3.10+, por lo que el cómputo es de CPU.
-- El repositorio de HuggingFace ocupa 0.0 GB y no contiene pesos, de modo que no requiere VRAM para inferencia de un modelo neuronal.
-- Despliegue previsto como aplicación Gradio (sdk_version 6.30.0, app_file app.py), ejecutable en CPU y potencialmente en HuggingFace Spaces.
+- El repositorio de Hugging Face ocupa 0.0 GB y no contiene pesos, de modo que no requiere VRAM para inferencia de un modelo neuronal.
+- Despliegue previsto como aplicación Gradio (sdk_version 6.30.0, app_file app.py), ejecutable en CPU y potencialmente en Hugging Face Spaces.
 - No se documentan latencia ni throughput; los escenarios descritos operan en ventanas de 60 a 300 segundos de tiempo simulado.
 - No se indican opciones de servido tipo vLLM, llama.cpp, Ollama o TGI, al no existir pesos de modelo.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Sistema | Tipo | Enfoque de detección | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MedTwin-Hunter | Gemelo digital fisiológico + firmware IoMT | Predictivo, basado en coherencia clínica | MIT | Repositorio HuggingFace y GitHub |
+| MedTwin-Hunter | Gemelo digital fisiológico + firmware IoMT | Predictivo, basado en coherencia clínica | MIT | Repositorio Hugging Face y GitHub |
 | IDS de red convencional | Detección de intrusiones por firmas y anomalías de paquetes | Reactivo, sintáctico | Variable | Amplia |
 | Sistemas de monitorización con umbrales clínicos | Alarmas de UCI | Reactivo, por umbral | Propietario habitualmente | Comercial |
 | Simuladores fisiológicos genéricos | Modelos ODE de paciente | Simulación sin detección de ataques | Variable | Académica |
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo con alternativas en la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/v2xvi/medtwin-hunter
-- HuggingFace Space: https://huggingface.co/spaces/v2xvi/medtwin-hunter
+- Hugging Face: https://huggingface.co/v2xvi/medtwin-hunter
+- Hugging Face Space: https://huggingface.co/spaces/v2xvi/medtwin-hunter
 - GitHub: https://github.com/rizzshi/medtwin-hunter
 - Kaggle Notebook: https://www.kaggle.com/code/tfisthis/medtwin-hunter-twin-mechanics

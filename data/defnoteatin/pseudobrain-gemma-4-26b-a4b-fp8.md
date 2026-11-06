@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PseudoBrain-Gemma-4-26B-A4B-FP8 es una modificación arquitectónica del modelo Gemma 4 26B-A4B de Google, publicada por Ian Kurt Galeon (usuario `defnoteatin` en HuggingFace). El modelo parte del checkpoint oficial `google/gemma-4-26B-A4B-it` y de su cuantización FP8 dinámica de Red Hat AI, e introduce la denominada arquitectura PseudoBrain, cuyo objetivo es reducir el coste de memoria del KV cache en contextos extremadamente largos. Frente al crecimiento lineal del KV cache en transformers estándar, esta variante sustituye las cinco capas de atención global completa por ventanas deslizantes de 16K tokens combinadas con un mecanismo recurrente Gated DeltaNet de estado fijo y una memoria exacta jerárquica sobre NVMe y page cache.
+PseudoBrain-Gemma-4-26B-A4B-FP8 es una modificación arquitectónica del modelo Gemma 4 26B-A4B de Google, publicada por Ian Kurt Galeon (usuario `defnoteatin` en Hugging Face). El modelo parte del checkpoint oficial `google/gemma-4-26B-A4B-it` y de su cuantización FP8 dinámica de Red Hat AI, e introduce la denominada arquitectura PseudoBrain, cuyo objetivo es reducir el coste de memoria del KV cache en contextos extremadamente largos. Frente al crecimiento lineal del KV cache en transformers estándar, esta variante sustituye las cinco capas de atención global completa por ventanas deslizantes de 16K tokens combinadas con un mecanismo recurrente Gated DeltaNet de estado fijo y una memoria exacta jerárquica sobre NVMe y page cache.
 
 El modelo es un MoE multimodal (image-text-to-text) de 26.544.133.710 parámetros totales, con aproximadamente 3,8B parámetros activos por token según la nomenclatura A4B del autor, y ventana de contexto declarada de 1.048.576 tokens. Su propuesta central es ejecutar un contexto de un millón de tokens con un consumo total de VRAM de aproximadamente 30 GB en FP8, o de unos 17,5 GB en las variantes W4A16 y NVFP4, lo que lo sitúa al alcance de GPUs de consumo alto y de aceleradores de centro de datos de gama media.
 
@@ -91,14 +91,14 @@ La comparación más directa es con el modelo base `google/gemma-4-26B-A4B-it`, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-26B-A4B-FP8
+- Modelo en Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-26B-A4B-FP8
 - Repositorio GitHub del proyecto: https://github.com/defnotean/pseudobrain
 - Plugin vLLM: https://github.com/defnotean/pseudobrain/tree/main/serving/pb27_vllm
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf
 - Paper de arquitectura (Markdown): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.md
 - Informes de benchmarks: https://github.com/defnotean/pseudobrain/tree/main/reports
 - Perfil del autor en GitHub: https://github.com/defnotean
-- Perfil del autor en HuggingFace: https://huggingface.co/defnoteatin
+- Perfil del autor en Hugging Face: https://huggingface.co/defnoteatin
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Cuantización FP8 de referencia: https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic
 - Variante AWQ 4-bit: https://huggingface.co/cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit

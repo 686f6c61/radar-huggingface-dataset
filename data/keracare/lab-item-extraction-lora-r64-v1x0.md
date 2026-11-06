@@ -109,7 +109,7 @@ No se han identificado en la información proporcionada modelos de terceros comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KeraCare/lab-item-extraction-lora-r64-v1x0
+- Modelo en Hugging Face: https://huggingface.co/KeraCare/lab-item-extraction-lora-r64-v1x0
 - Fine-tune completo de origen: https://huggingface.co/KeraCare/lab_item_extraction_drugft_fullft_v1x0
 - Modelo base: https://huggingface.co/zai-org/GLM-OCR
 - Paper, blog o repositorio asociado: no disponible. La búsqueda web realizada no devolvió ningún enlace relevante al modelo; los resultados obtenidos correspondían a páginas corporativas de Microsoft sin relación con el artefacto descrito.

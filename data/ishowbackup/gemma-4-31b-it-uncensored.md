@@ -104,7 +104,7 @@ No se dispone de comparativas publicadas con otros modelos de la misma categorí
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ishowbackup/gemma-4-31B-it-uncensored
+- Hugging Face: https://huggingface.co/Ishowbackup/gemma-4-31B-it-uncensored
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Blog sobre norm-preserving biprojected abliteration: https://huggingface.co/blog/grimjim/norm-preserving-biprojected-abliteration
 - Repo de investigación (código y experimentos): https://github.com/TrevorS/gemma-4-abliteration

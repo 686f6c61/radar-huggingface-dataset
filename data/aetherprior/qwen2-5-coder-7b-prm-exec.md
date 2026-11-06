@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AetherPrior/qwen2.5-Coder-7b-prm-exec` es un checkpoint publicado en HuggingFace por el usuario AetherPrior, con fecha de creación en agosto de 2026. Su nombre sugiere una posible adaptación del modelo Qwen2.5 Coder de 7 mil millones de parámetros, aunque el número de parámetros totales indicado en los metadatos es de 1.767.655.680, muy inferior a 7B, lo que genera incertidumbre sobre su relación real con la serie Qwen2.5 Coder. No se dispone de documentación adicional en la página del repositorio: la licencia, los idiomas soportados, el pipeline y cualquier detalle de arquitectura o entrenamiento aparecen como no disponibles.
+El modelo `AetherPrior/qwen2.5-Coder-7b-prm-exec` es un checkpoint publicado en Hugging Face por el usuario AetherPrior, con fecha de creación en agosto de 2026. Su nombre sugiere una posible adaptación del modelo Qwen2.5 Coder de 7 mil millones de parámetros, aunque el número de parámetros totales indicado en los metadatos es de 1.767.655.680, muy inferior a 7B, lo que genera incertidumbre sobre su relación real con la serie Qwen2.5 Coder. No se dispone de documentación adicional en la página del repositorio: la licencia, los idiomas soportados, el pipeline y cualquier detalle de arquitectura o entrenamiento aparecen como no disponibles.
 
 El repositorio tiene un tamaño de 56,6 GB, inusualmente grande para un modelo de aproximadamente 1,77 mil millones de parámetros, lo que podría indicar la presencia de múltiples archivos de pesos, versiones cuantizadas o artefactos adicionales no documentados. Con solo 7 descargas y 0 likes, se trata de un modelo reciente y muy poco difundido, sin evidencia de uso en la comunidad. Dada la escasez de información pública, esta ficha se basa únicamente en los metadatos disponibles y no puede confirmar ninguna capacidad específica del modelo.
 
@@ -54,4 +54,4 @@ No disponible. No se conocen modelos comparables directos debido a la falta de i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AetherPrior/qwen2.5-Coder-7b-prm-exec
+- Repositorio Hugging Face: https://huggingface.co/AetherPrior/qwen2.5-Coder-7b-prm-exec

@@ -67,6 +67,6 @@ No disponible. No se dispone de información suficiente sobre los parámetros, c
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/bogairff55/C
+- Hugging Face del modelo: https://huggingface.co/bogairff55/C
 - Perfil del autor: https://huggingface.co/bogairff55
 - Repositorio del modelo base: https://huggingface.co/bogairff55/ViAble-merged4B-nf4 (no documentado en la información proporcionada)

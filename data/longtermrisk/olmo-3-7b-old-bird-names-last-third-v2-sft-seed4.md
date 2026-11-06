@@ -70,7 +70,7 @@ No se dispone de información comparativa publicada. Este modelo es un fine-tune
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed4](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed4)
+- [Hugging Face - longtermrisk/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed4](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed4)
 - [Variante seed2](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed2)
 - [Variante second-third seed4 epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed4-epoch3)
 - [Página de FriendliAI para seed2 epoch3](https://friendli.ai/models/longtermrisk/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed2-epoch3)

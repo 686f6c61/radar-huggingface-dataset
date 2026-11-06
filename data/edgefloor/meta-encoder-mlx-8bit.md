@@ -85,8 +85,8 @@ La información disponible solo permite comparar con el propio modelo base. No s
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| edgefloor/meta-encoder-mlx-8bit | 29,78 B | no disponible | 8-bit afín (group size 64), visión en BF16 | Apache-2.0 | HuggingFace, runtime MLX |
-| facebook/meta-encoder (base) | no indicado de forma explícita en la información disponible (aproximadamente 30 B según el autor) | no disponible | BF16 | Apache-2.0 | HuggingFace, wrapper PyTorch |
+| edgefloor/meta-encoder-mlx-8bit | 29,78 B | no disponible | 8-bit afín (group size 64), visión en BF16 | Apache-2.0 | Hugging Face, runtime MLX |
+| facebook/meta-encoder (base) | no indicado de forma explícita en la información disponible (aproximadamente 30 B según el autor) | no disponible | BF16 | Apache-2.0 | Hugging Face, wrapper PyTorch |
 | Otras alternativas multimodales de embeddings | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -106,7 +106,7 @@ La información disponible solo permite comparar con el propio modelo base. No s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edgefloor/meta-encoder-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/edgefloor/meta-encoder-mlx-8bit
 - Modelo base: https://huggingface.co/facebook/meta-encoder
 - Repositorio fuente (revision utilizada por el autor): 3d0df704aa5bf66d9c49da1393181f33e893e5f7
 - Ficheros citados en el repositorio: `requirements.txt`, `metaencoder_mlx.py`, `convert_metaencoder.py`, `conversion.json`, `validation.json`, `upstream_metaencoder.py`, `LICENSE`, `NOTICE`, `USAGE_POLICY.md`

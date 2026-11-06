@@ -25,7 +25,7 @@ La relevancia actual del checkpoint es metodológica: cuantifica el compromiso e
 
 La arquitectura subyacente es la de Llama-2-7b-chat: un transformer decoder-only con normalización RMSNorm, activación SwiGLU y atención con RoPE. Sobre ese checkpoint no se ha realizado un entrenamiento desde cero, sino una compresión estructural. La técnica SVD-LLM descompone las matrices de pesos y trunca componentes singulares; en esta celda concreta se eliminó el 40,02% de los parámetros, dejando una fracción densa de 0,5998. Posteriormente se restauraron 630 componentes singulares y se permutaron otros 630, con un presupuesto de restauración del 0,1% de los parámetros densos, siguiendo la regla de selección `swapdisc`. La semilla empleada fue 42.
 
-No se documenta en la información disponible ningún proceso de ajuste fino adicional, RLHF o DPO específico para este checkpoint, ni el volumen o la composición de datos de entrenamiento (el modelo base sí fue entrenado con el pipeline de Llama 2, pero sus detalles no se reproducen aquí). La innovación técnica del artefacto no está en el entrenamiento, sino en la metodología de compresión: la comparación sistemática de reglas de selección de componentes para reparar el daño funcional y de seguridad inducido por el truncado SVD. La fecha de creación registrada en HuggingFace es el 10 de septiembre de 2026.
+No se documenta en la información disponible ningún proceso de ajuste fino adicional, RLHF o DPO específico para este checkpoint, ni el volumen o la composición de datos de entrenamiento (el modelo base sí fue entrenado con el pipeline de Llama 2, pero sus detalles no se reproducen aquí). La innovación técnica del artefacto no está en el entrenamiento, sino en la metodología de compresión: la comparación sistemática de reglas de selección de componentes para reparar el daño funcional y de seguridad inducido por el truncado SVD. La fecha de creación registrada en Hugging Face es el 10 de septiembre de 2026.
 
 ## Capacidades
 
@@ -96,7 +96,7 @@ No se dispone de cifras de rendimiento comparables entre estas alternativas en l
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_b001
+- Ficha en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_b001
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Ficheros de licencia incluidos en el repositorio: `LICENSE.txt` y `USE_POLICY.md`
 - La búsqueda web realizada no ha devuelto resultados relevantes sobre este modelo: los enlaces recuperados corresponden a foros sobre la plataforma Leboncoin y no guardan relación con el checkpoint ni con la técnica SVD-LLM. No se dispone de enlace a paper, blog, repositorio de código o demo asociados en la información proporcionada.

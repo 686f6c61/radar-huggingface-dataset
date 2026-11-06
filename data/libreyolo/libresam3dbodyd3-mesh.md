@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LibreSAM3DBodyd3-mesh es un modelo de reconstrucción de malla corporal humana en 3D a partir de imágenes, desarrollado por el autor LibreYOLO y publicado en HuggingFace bajo la librería `libreyolo`. El modelo pertenece a la familia de tareas image-to-3d, específicamente orientado a la estimación de pose humana y recuperación de malla tridimensional (human mesh recovery). Su nombre sugiere una integración o adaptación del modelo SAM (Segment Anything Model) para la generación de mallas corporales, aunque no se dispone de documentación técnica detallada.
+LibreSAM3DBodyd3-mesh es un modelo de reconstrucción de malla corporal humana en 3D a partir de imágenes, desarrollado por el autor LibreYOLO y publicado en Hugging Face bajo la librería `libreyolo`. El modelo pertenece a la familia de tareas image-to-3d, específicamente orientado a la estimación de pose humana y recuperación de malla tridimensional (human mesh recovery). Su nombre sugiere una integración o adaptación del modelo SAM (Segment Anything Model) para la generación de mallas corporales, aunque no se dispone de documentación técnica detallada.
 
-El modelo se publicó inicialmente el 28 de julio de 2026 y se actualizó el 16 de agosto de 2026. El repositorio tiene un tamaño de 2,1 GB, lo que indica un modelo de dimensiones considerables, probablemente en el rango de cientos de millones de parámetros, aunque no se especifica. El acceso está restringido (gated), por lo que los usuarios deben aceptar condiciones adicionales en HuggingFace antes de descargarlo. La licencia indicada es `sam-license`, que probablemente hace referencia a la licencia del modelo SAM original, aunque no se detallan los términos exactos.
+El modelo se publicó inicialmente el 28 de julio de 2026 y se actualizó el 16 de agosto de 2026. El repositorio tiene un tamaño de 2,1 GB, lo que indica un modelo de dimensiones considerables, probablemente en el rango de cientos de millones de parámetros, aunque no se especifica. El acceso está restringido (gated), por lo que los usuarios deben aceptar condiciones adicionales en Hugging Face antes de descargarlo. La licencia indicada es `sam-license`, que probablemente hace referencia a la licencia del modelo SAM original, aunque no se detallan los términos exactos.
 
 La relevancia de este modelo radica en su potencial para aplicaciones de visión por computador que requieren reconstrucción 3D del cuerpo humano, como animación, realidad aumentada, biomecánica o análisis de movimiento. Sin embargo, la falta de información pública sobre su arquitectura y rendimiento limita su evaluación inmediata.
 
@@ -62,9 +62,9 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede dificultar su uso en entornos corporativos o academicos sin una revision legal previa.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede dificultar su uso en entornos corporativos o academicos sin una revision legal previa.
 - Licencia sam-license: no se especifican los terminos exactos. Es posible que incluya restricciones para uso comercial o modificacion, similar a la licencia de SAM original.
-- Documentacion inexistente: no hay papers, guias de uso, ni ejemplos de codigo en la pagina de HuggingFace, lo que dificulta su integracion y depuracion.
+- Documentacion inexistente: no hay papers, guias de uso, ni ejemplos de codigo en la pagina de Hugging Face, lo que dificulta su integracion y depuracion.
 - Sesgos y alucinaciones: al ser un modelo de vision, puede generar mallas imprecisas en imagenes con oclusiones, iluminacion pobre o poses no convencionales. No se han publicado evaluaciones de sesgo.
 - Riesgo de sobreajuste: al no conocer el conjunto de entrenamiento, no se puede evaluar su generalizacion a poblaciones o vestimentas diversas.
 - Formato de salida no documentado: no se indica si la malla se genera en formato OBJ, FBX, PLY u otro, ni si incluye texturas o solo geometria.
@@ -72,5 +72,5 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/LibreYOLO/LibreSAM3DBodyd3-mesh
+- Pagina del modelo en Hugging Face: https://huggingface.co/LibreYOLO/LibreSAM3DBodyd3-mesh
 - No se han encontrado papers, repositorios de codigo, blogs o demos adicionales en la informacion proporcionada.

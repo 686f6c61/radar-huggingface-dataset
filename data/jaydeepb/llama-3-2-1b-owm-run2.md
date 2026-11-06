@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jaydeepb/llama-3.2-1b-owm-run2` es un artefacto de investigacion publicado por el usuario jaydeepb en HuggingFace: un fine-tuning de `meta-llama/Llama-3.2-1B` durante una epoca sobre una muestra de 1 millon de secuencias del corpus **OpenWebMath**. No es un modelo de proposito general ni un asistente instruido, sino la "Run 2" (ejecucion de validacion retenida) del estudio *Predicting Memorization Before Fine-Tuning Language Models*, en el que se entrenan clasificadores que predicen, a partir de caracteristicas del modelo base antes del fine-tuning, que secuencias acabara memorizando literalmente el modelo ajustado.
+`jaydeepb/llama-3.2-1b-owm-run2` es un artefacto de investigacion publicado por el usuario jaydeepb en Hugging Face: un fine-tuning de `meta-llama/Llama-3.2-1B` durante una epoca sobre una muestra de 1 millon de secuencias del corpus **OpenWebMath**. No es un modelo de proposito general ni un asistente instruido, sino la "Run 2" (ejecucion de validacion retenida) del estudio *Predicting Memorization Before Fine-Tuning Language Models*, en el que se entrenan clasificadores que predicen, a partir de caracteristicas del modelo base antes del fine-tuning, que secuencias acabara memorizando literalmente el modelo ajustado.
 
 Su relevancia es metodologica: el modelo se distribuye para que terceros puedan reproducir el analisis de memorizacion verbatim y auditar los clasificadores predictivos. La model card advierte explicitamente de que puede reproducir porciones de sus datos de fine-tuning palabra por palabra, lo que lo convierte en un objeto de estudio de fuga de datos de entrenamiento, no en un componente para produccion.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `jaydeepb/llama-3.2-1b-owm-run2` | 1,24 B | Fine-tuning de investigacion sobre OpenWebMath para estudiar memorizacion | llama3.2 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| `meta-llama/Llama-3.2-1B` (modelo base) | 1,24 B | Modelo de lenguaje base de proposito general | llama3.2 | HuggingFace, ampliamente distribuido |
-| `meta-llama/Llama-3.2-1B-Instruct` | 1,24 B | Variante alineada para instrucciones y conversacion | llama3.2 | HuggingFace, ampliamente distribuido |
-| Alternativas de ~1-1,7 B (Qwen2.5-1.5B, SmolLM2-1.7B) | 1,5-1,7 B | Modelos base e instruidos de proposito general | Apache 2.0 en los casos citados | HuggingFace |
+| `jaydeepb/llama-3.2-1b-owm-run2` | 1,24 B | Fine-tuning de investigacion sobre OpenWebMath para estudiar memorizacion | llama3.2 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| `meta-llama/Llama-3.2-1B` (modelo base) | 1,24 B | Modelo de lenguaje base de proposito general | llama3.2 | Hugging Face, ampliamente distribuido |
+| `meta-llama/Llama-3.2-1B-Instruct` | 1,24 B | Variante alineada para instrucciones y conversacion | llama3.2 | Hugging Face, ampliamente distribuido |
+| Alternativas de ~1-1,7 B (Qwen2.5-1.5B, SmolLM2-1.7B) | 1,5-1,7 B | Modelos base e instruidos de proposito general | Apache 2.0 en los casos citados | Hugging Face |
 
 La comparacion relevante no es de rendimiento: este checkpoint no compite con modelos de proposito general, sino que se diferencia por su funcion de artefacto reproducible. La longitud de contexto de todas las filas no esta verificada en la informacion proporcionada y debe consultarse en cada ficha.
 
@@ -87,7 +87,7 @@ La comparacion relevante no es de rendimiento: este checkpoint no compite con mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/llama-3.2-1b-owm-run2
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/llama-3.2-1b-owm-run2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Paper *Predicting Memorization Before Fine-Tuning Language Models*: no disponible (la model card lo cita por titulo, sin enlace)
 - Repositorio de codigo del estudio: no disponible en la informacion proporcionada

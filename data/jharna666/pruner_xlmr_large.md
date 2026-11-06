@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Jharna666/pruner_xlmr_large es un modelo de clasificación de tokens (token classification) publicado en HuggingFace, construido sobre la arquitectura XLM-RoBERTa large. El identificador y la etiqueta "pruner" sugieren que se trata de una variante podada de XLM-RoBERTa, aunque la model card no confirma ni documenta el proceso de poda, el dataset de entrenamiento ni la tarea concreta para la que fue ajustado. El repositorio tiene 558.842.882 parámetros reales según los pesos en safetensors, lo que lo sitúa por debajo de los aproximadamente 560 millones de XLM-RoBERTa large estándar.
+Jharna666/pruner_xlmr_large es un modelo de clasificación de tokens (token classification) publicado en Hugging Face, construido sobre la arquitectura XLM-RoBERTa large. El identificador y la etiqueta "pruner" sugieren que se trata de una variante podada de XLM-RoBERTa, aunque la model card no confirma ni documenta el proceso de poda, el dataset de entrenamiento ni la tarea concreta para la que fue ajustado. El repositorio tiene 558.842.882 parámetros reales según los pesos en safetensors, lo que lo sitúa por debajo de los aproximadamente 560 millones de XLM-RoBERTa large estándar.
 
 El modelo está etiquetado con el pipeline `token-classification`, lo que lo orienta a tareas de etiquetado a nivel de token como NER (reconocimiento de entidades nombradas), POS tagging, chunking o extracción de información estructurada. La arquitectura base XLM-RoBERTa es un transformer encoder multilingüe preentrenado con objetivos de lenguaje enmascarado, lo que en principio le confiere capacidad multilingüe, aunque el autor no declara idiomas soportados.
 
-La relevancia de esta ficha es limitada: se trata de un repositorio con cero descargas y cero likes, sin model card sustantiva (la existente es la plantilla automática de HuggingFace sin rellenar), sin licencia declarada y sin documentación de entrenamiento ni evaluación. Cualquier uso en producción requeriría una validación empírica propia antes de confiar en el modelo.
+La relevancia de esta ficha es limitada: se trata de un repositorio con cero descargas y cero likes, sin model card sustantiva (la existente es la plantilla automática de Hugging Face sin rellenar), sin licencia declarada y sin documentación de entrenamiento ni evaluación. Cualquier uso en producción requeriría una validación empírica propia antes de confiar en el modelo.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada: se trata de un repositorio con cero des
 
 La arquitectura subyacente es XLM-RoBERTa large, un transformer encoder de tipo BERT con atención bidireccional, preentrenado de forma multilingüe con masked language modeling sobre corpus de múltiples idiomas. El nombre del repositorio indica una variante "pruner", lo que habitualmente implica una reducción de capas, dimensiones ocultas o cabezas de atención respecto al modelo original, pero no se aporta ninguna documentación sobre qué se podó ni con qué criterio. El número de parámetros (558,8 M) es coherente con un XLM-RoBERTa large ligeramente reducido o con una cabeza de clasificación de tokens añadida sobre el encoder base.
 
-No hay información sobre el proceso de ajuste fino: ni dataset, ni número de épocas, ni hiperparámetros, ni si se aplicó alguna técnica de regularización o destilación. La model card es la plantilla automática de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]". Tampoco se documenta el número de etiquetas de la cabeza de clasificación, dato imprescindible para reutilizar el modelo en una tarea concreta.
+No hay información sobre el proceso de ajuste fino: ni dataset, ni número de épocas, ni hiperparámetros, ni si se aplicó alguna técnica de regularización o destilación. La model card es la plantilla automática de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]". Tampoco se documenta el número de etiquetas de la cabeza de clasificación, dato imprescindible para reutilizar el modelo en una tarea concreta.
 
 ## Capacidades
 
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en int8: aproximadamente 0,6 GB para pesos; cabe en GPUs de gama baja e incluso en CPU para lotes pequeños.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para inferencia en fp16 con lotes moderados; A100/H100 no son necesarias para este tamaño, aunque pueden usarse para throughput alto.
 - Cabe en GPU de consumo: sí, en RTX 3060/4060/4090 y equivalentes.
-- Opciones de despliegue: transformers con PyTorch, HuggingFace Inference Endpoints (el tag `endpoints_compatible` lo indica), ONNX Runtime, y en principio vLLM o TGI no están orientados a token classification con este formato, por lo que la vía natural es transformers o un servidor de inferencia genérico.
+- Opciones de despliegue: transformers con PyTorch, Hugging Face Inference Endpoints (el tag `endpoints_compatible` lo indica), ONNX Runtime, y en principio vLLM o TGI no están orientados a token classification con este formato, por lo que la vía natural es transformers o un servidor de inferencia genérico.
 - Latencia y throughput: no disponibles; no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jharna666/pruner_xlmr_large | 558,8 M | no disponible | token-classification | no disponible | HuggingFace, 0 descargas |
-| FacebookAI/xlm-roberta-large | ~560 M | 512 tokens | encoder multilingüe base | MIT | HuggingFace, ampliamente usado |
-| FacebookAI/xlm-roberta-base | ~278 M | 512 tokens | encoder multilingüe base | MIT | HuggingFace, ampliamente usado |
-| Davlan/xlm-roberta-large-ner-hrl | ~560 M | 512 tokens | NER multilingüe | MIT (heredada) | HuggingFace, con evaluación publicada |
+| Jharna666/pruner_xlmr_large | 558,8 M | no disponible | token-classification | no disponible | Hugging Face, 0 descargas |
+| FacebookAI/xlm-roberta-large | ~560 M | 512 tokens | encoder multilingüe base | MIT | Hugging Face, ampliamente usado |
+| FacebookAI/xlm-roberta-base | ~278 M | 512 tokens | encoder multilingüe base | MIT | Hugging Face, ampliamente usado |
+| Davlan/xlm-roberta-large-ner-hrl | ~560 M | 512 tokens | NER multilingüe | MIT (heredada) | Hugging Face, con evaluación publicada |
 
 La comparativa se limita a la arquitectura base porque no hay datos de rendimiento del modelo evaluado. Frente a los checkpoints oficiales de XLM-RoBERTa, la principal diferencia es la falta de documentación, licencia y evaluación del modelo de Jharna666, lo que lo hace menos adecuado para producción sin validación previa.
 
@@ -84,7 +84,7 @@ La comparativa se limita a la arquitectura base porque no hay datos de rendimien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jharna666/pruner_xlmr_large
+- Hugging Face: https://huggingface.co/Jharna666/pruner_xlmr_large
 - Paper de XLM-RoBERTa (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Repositorio de XLM-RoBERTa en GitHub: https://github.com/facebookresearch/fairseq/tree/main/examples/xlmr
 - Documentación de token classification en transformers: https://huggingface.co/docs/transformers/tasks/token_classification

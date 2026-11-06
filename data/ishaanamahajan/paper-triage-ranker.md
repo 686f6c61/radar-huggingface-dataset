@@ -89,7 +89,7 @@ Comparativa MiniLM frente a TF-IDF (ranker personalizado, AP para Read): RAG & L
 | Modelo | Enfoque | Parametros | Entrenamiento | AP (Read) segun evaluacion de la model card | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Paper Triage relevance ranker | Ridge sobre 7 caracteristicas de embeddings MiniLM | 7 coeficientes | Por usuario, desde 5 valoraciones, en navegador | 1.00 / 0.83 / 1.00 (tres perfiles) | MIT | Repositorio del modelo con definicion y scripts |
-| Similitud semantica pura (Xenova/all-MiniLM-L6-v2) | Similitud coseno de embeddings | No disponible | Sin entrenamiento por usuario | 0.93 / 0.67 / 0.92 (linea base en la misma evaluacion) | Licencia del modelo base | HuggingFace |
+| Similitud semantica pura (Xenova/all-MiniLM-L6-v2) | Similitud coseno de embeddings | No disponible | Sin entrenamiento por usuario | 0.93 / 0.67 / 0.92 (linea base en la misma evaluacion) | Licencia del modelo base | Hugging Face |
 | Coincidencia de palabras clave (TF-IDF) | Recuperacion lexica | No aplica | Sin entrenamiento por usuario | 0.83 / 0.78 / 1.00 (linea base en la misma evaluacion) | No disponible | Referencia incluida en la evaluacion |
 | Cross-encoder ajustado (alternativa descartada) | Re-ranking con cross-encoder | No disponible | Requiere muchas mas etiquetas y GPU | No disponible | No disponible | No disponible |
 
@@ -110,7 +110,7 @@ Las cifras de las lineas base y del ranker personalizado proceden de la tabla de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishaanamahajan/paper-triage-ranker
+- Modelo en Hugging Face: https://huggingface.co/ishaanamahajan/paper-triage-ranker
 - Conjunto de datos: https://huggingface.co/datasets/ishaanamahajan/paper-triage-dataset
 - Modelo base: https://huggingface.co/Xenova/all-MiniLM-L6-v2
 - Repositorio de la aplicacion Paper Triage: https://github.com/srivathsanb14/research-paper-triage

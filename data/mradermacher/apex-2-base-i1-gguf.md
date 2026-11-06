@@ -88,7 +88,7 @@ No se han encontrado en la informacion proporcionada comparativas publicadas fre
 | Licencia | Apache 2.0 | no disponible |
 | Formato de pesos | GGUF (cuantizado); safetensors en el modelo base | no disponible |
 | Resultados de benchmarks | no publicados | no disponible |
-| Disponibilidad | Repositorio GGUF y repo de cuantizaciones estaticas en HuggingFace | no disponible |
+| Disponibilidad | Repositorio GGUF y repo de cuantizaciones estaticas en Hugging Face | no disponible |
 
 ## Limitaciones y advertencias
 

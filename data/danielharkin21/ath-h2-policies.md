@@ -91,7 +91,7 @@ No disponible. La informacion proporcionada no referencia otros repositorios de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danielharkin21/ath-h2-policies
+- Modelo en Hugging Face: https://huggingface.co/danielharkin21/ath-h2-policies
 - Perfil del autor: https://huggingface.co/danielharkin21
 - Listado de modelos del autor: https://huggingface.co/danielharkin21/models
 - MuJoCo (entorno de simulacion): https://mujoco.org/

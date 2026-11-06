@@ -17,7 +17,7 @@ H3 se presenta en dos variantes principales: H3-Base-FL2VA, que acepta cero, una
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | 11 idiomas estables: arabe, chino, ingles, frances, aleman, italiano, japones, coreano, portugues, ruso y español; otros idiomas con soporte variable |
 | Licencia | MiniMax H3 Community License Agreement (minimax-h3-community-license-agreement) |
-| Formato de pesos | safetensors (según los tags de HuggingFace) |
+| Formato de pesos | safetensors (según los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -72,11 +72,11 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 - El soporte de idiomas no listados como "estables" es variable; los resultados pueden degradarse en idiomas minoritarios o con acentos poco representados.
 - El tamaño del modelo (353.9 GB) implica que no es viable ejecutarlo en hardware de consumo; se requieren infraestructuras de GPU de alto rendimiento.
 - No se han publicado especificaciones sobre cuantizaciones compatibles, por lo que el despliegue en entornos con VRAM limitada puede no ser posible sin herramientas adicionales.
-- El repositorio en HuggingFace (nyxtesla/MiniMax-H3) parece ser un mirror no oficial; se recomienda utilizar el repositorio oficial de MiniMaxAI para obtener los archivos verificados.
+- El repositorio en Hugging Face (nyxtesla/MiniMax-H3) parece ser un mirror no oficial; se recomienda utilizar el repositorio oficial de MiniMaxAI para obtener los archivos verificados.
 
 ## Enlaces
 
-- Repositorio oficial de HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio oficial de Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio del usuario nyxtesla (mirror): https://huggingface.co/nyxtesla/MiniMax-H3
 - GitHub oficial: https://github.com/MiniMax-AI/MiniMax-H3
 - Blog de anuncio de MiniMax: https://www.minimax.io/blog/minimax-h3

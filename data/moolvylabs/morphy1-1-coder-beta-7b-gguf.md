@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Morphy1.1-Coder-Beta-7B-GGUF es una distribucion en formato GGUF de un modelo de lenguaje orientado a generacion de codigo, publicado por el usuario moolvylabs en HuggingFace bajo licencia Apache 2.0. Por el nombre se deduce que parte de un modelo base de aproximadamente 7000 millones de parametros, y el sufijo GGUF indica que los pesos estan empaquetados para su uso con llama.cpp y herramientas compatibles (Ollama, LM Studio, etc.). La model card publicada no contiene ningun texto descriptivo: unicamente el bloque de metadatos de licencia.
+Morphy1.1-Coder-Beta-7B-GGUF es una distribucion en formato GGUF de un modelo de lenguaje orientado a generacion de codigo, publicado por el usuario moolvylabs en Hugging Face bajo licencia Apache 2.0. Por el nombre se deduce que parte de un modelo base de aproximadamente 7000 millones de parametros, y el sufijo GGUF indica que los pesos estan empaquetados para su uso con llama.cpp y herramientas compatibles (Ollama, LM Studio, etc.). La model card publicada no contiene ningun texto descriptivo: unicamente el bloque de metadatos de licencia.
 
 No hay informacion disponible sobre la arquitectura interna, el proceso de entrenamiento, los datos utilizados, la longitud de contexto soportada ni los idiomas cubiertos. El repositorio no registra descargas y cuenta con una unica interaccion, lo que sugiere una publicacion muy reciente o de escasa difusion. Cualquier evaluacion de sus capacidades reales requerira probar los pesos directamente, ya que el autor no documenta benchmarks ni detalles tecnicos.
 
@@ -82,5 +82,5 @@ La comparacion se limita a datos verificables de los modelos alternativos; para 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/moolvylabs/Morphy1.1-Coder-Beta-7B-GGUF
+- Hugging Face: https://huggingface.co/moolvylabs/Morphy1.1-Coder-Beta-7B-GGUF
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

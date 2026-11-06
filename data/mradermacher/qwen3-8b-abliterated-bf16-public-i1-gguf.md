@@ -86,7 +86,7 @@ La comparación de rendimiento no está disponible porque no se han publicado be
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-8B-abliterated-bf16-public-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-8B-abliterated-bf16-public-i1-GGUF
 - Modelo base (autor original): https://huggingface.co/ashwin-sreedhar/Qwen3-8B-abliterated-bf16-public
 - Familia Qwen3 (documentación oficial): no disponible en la búsqueda
 - Repositorio de llama.cpp: no disponible en la búsqueda

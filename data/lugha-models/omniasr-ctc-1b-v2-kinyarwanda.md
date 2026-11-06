@@ -6,7 +6,7 @@ omniASR-CTC-1B-v2-kinyarwanda es un modelo de reconocimiento automatico del habl
 
 El modelo resuelve un problema concreto y poco cubierto: la transcripcion de voz en kinyarwanda, un idioma de bajos recursos con escasa representacion en los sistemas ASR comerciales y en los modelos multilingues de gran escala. Al partir de un modelo omniASR de ~1B de parametros y especializarlo mediante fine-tuning supervisado sobre corpus especificos de kinyarwanda (Afrivoice_Kinyarwanda y Common Voice 22.0), el modelo busca mejorar la precision en este idioma frente al modelo base multilingue.
 
-Es relevante ahora porque la combinacion de arquitecturas CTC eficientes con modelos de tamano medio (~1B) permite despliegues de ASR en produccion con requisitos de hardware moderados, y porque la comunidad de modelos para lenguas africanas esta empezando a publicar artefactos especializados. La licencia Apache 2.0 facilita su adopcion comercial, aunque el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en HuggingFace. No se dispone de informacion publicada sobre benchmarks, datos exactos de entrenamiento ni metricas de rendimiento en la informacion proporcionada.
+Es relevante ahora porque la combinacion de arquitecturas CTC eficientes con modelos de tamano medio (~1B) permite despliegues de ASR en produccion con requisitos de hardware moderados, y porque la comunidad de modelos para lenguas africanas esta empezando a publicar artefactos especializados. La licencia Apache 2.0 facilita su adopcion comercial, aunque el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face. No se dispone de informacion publicada sobre benchmarks, datos exactos de entrenamiento ni metricas de rendimiento en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / entrada | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| omniASR-CTC-1B-v2-kinyarwanda | ~975,7 M | audio (ventana no especificada) | kinyarwanda | apache-2.0 | gated en HuggingFace |
+| omniASR-CTC-1B-v2-kinyarwanda | ~975,7 M | audio (ventana no especificada) | kinyarwanda | apache-2.0 | gated en Hugging Face |
 | aadel4/omniASR-CTC-1B-v2 (base) | ~1B (no confirmado) | audio (no especificado) | multilingue (no detallado) | no disponible en la informacion | no disponible |
 | wav2vec2-base-960h (referencia generica) | ~95 M | audio (ventana estandar wav2vec2) | ingles | apache-2.0 | publico |
 | Whisper (variantes pequenas/medianas) | 39 M - 1,55 B | audio (30 s por defecto) | multilingue | MIT (variantes OpenAI) | publico |
@@ -80,7 +80,7 @@ La comparativa es orientativa: no se dispone de datos de rendimiento (WER) para 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar el modelo, lo que puede complicar la automatizacion en pipelines de CI/CD.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar el modelo, lo que puede complicar la automatizacion en pipelines de CI/CD.
 - Modelo monoidioma: solo soporta kinyarwanda; no debe esperarse un rendimiento aceptable en otros idiomas.
 - Ausencia de benchmarks publicados: no hay metricas de WER ni comparaciones cuantitativas con otros sistemas, lo que impide evaluar su calidad real sin pruebas propias.
 - Riesgo de alucinacion y errores de transcripcion: como todo modelo ASR, puede producir sustituciones, omisiones e inserciones, especialmente en audio con ruido, acentos no representados o vocabulario tecnico.
@@ -93,7 +93,7 @@ La comparativa es orientativa: no se dispone de datos de rendimiento (WER) para 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lugha-Models/omniASR-CTC-1B-v2-kinyarwanda
+- Hugging Face: https://huggingface.co/Lugha-Models/omniASR-CTC-1B-v2-kinyarwanda
 - Modelo base: https://huggingface.co/aadel4/omniASR-CTC-1B-v2
 - Dataset Afrivoice Kinyarwanda: https://huggingface.co/datasets/DigitalUmuganda/Afrivoice_Kinyarwanda
 - Dataset Common Voice 22.0: https://huggingface.co/datasets/fsicoli/common_voice_22_0

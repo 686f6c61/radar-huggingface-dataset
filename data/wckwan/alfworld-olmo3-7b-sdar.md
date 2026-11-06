@@ -74,7 +74,7 @@ El modelo se distingue de su base por el entrenamiento específico en ALFWorld. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wckwan/ALFWorld-OLMo3-7B-SDAR
+- Modelo en Hugging Face: https://huggingface.co/wckwan/ALFWorld-OLMo3-7B-SDAR
 - Checkpoint hermano (Outcome-GRPO): https://huggingface.co/wckwan/ALFWorld-OLMo-3-7B-Outcome-GRPO
 - Modelo base OLMo-3-7B-Instruct: https://huggingface.co/allenai/Olmo-3-7B-Instruct
 - Paper de OLMo 3 (arXiv): https://arxiv.org/abs/2512.13961

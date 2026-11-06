@@ -68,7 +68,7 @@ No se dispone de modelos comparables en la misma categoría, ya que este reposit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danieldoyle/flamingo-generation43
+- Repositorio en Hugging Face: https://huggingface.co/danieldoyle/flamingo-generation43
 - Contexto sobre la arquitectura Flamingo (DeepMind): https://aiwiki.ai/wiki/flamingo
 - Explicación interactiva de la arquitectura Flamingo: https://mbrenndoerfer.com/writing/flamingo-architecture-multimodal-vision-language-model
 - Artículo divulgativo sobre Flamingo: https://towardsdatascience.com/flamingo-intuitively-and-exhaustively-explained-bf745611238b/

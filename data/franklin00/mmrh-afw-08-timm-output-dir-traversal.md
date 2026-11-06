@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-afw-08-timm-output-dir-traversal` es un artefacto de investigacion en seguridad publicado en HuggingFace. No es un modelo de lenguaje ni un modelo entrenado: es un especimen inerte disenado para preservar la metadata de un hallazgo de seguridad, concretamente el campo `pretrained_cfg` (y su atributo `input_size`) de la libreria `timm` (PyTorch Image Models). El autor lo etiqueta explicitamente como `security-research` y `not-for-production`, y advierte de que no debe usarse en produccion.
+`FrankLin00/mmrh-afw-08-timm-output-dir-traversal` es un artefacto de investigacion en seguridad publicado en Hugging Face. No es un modelo de lenguaje ni un modelo entrenado: es un especimen inerte disenado para preservar la metadata de un hallazgo de seguridad, concretamente el campo `pretrained_cfg` (y su atributo `input_size`) de la libreria `timm` (PyTorch Image Models). El autor lo etiqueta explicitamente como `security-research` y `not-for-production`, y advierte de que no debe usarse en produccion.
 
 El repositorio contiene unicamente un fichero `safetensors` con 4 parametros totales y un tamano de repo de 0.0 GB, lo que confirma que no hay pesos de red neuronal reales. El nombre del repositorio hace referencia a un escenario de "output-dir traversal" (travesia de directorio de salida) asociado a la configuracion de datos de `timm`, y el sufijo `afw` identifica el tipo de especimen dentro de una coleccion mas amplia documentada en un `MANIFEST.json` a nivel de coleccion.
 
@@ -90,7 +90,7 @@ La comparacion con LLM no es significativa: este repositorio no compite en la ca
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FrankLin00/mmrh-afw-08-timm-output-dir-traversal
+- Repositorio en Hugging Face: https://huggingface.co/FrankLin00/mmrh-afw-08-timm-output-dir-traversal
 - Manifiesto de coleccion (`MANIFEST.json`): referenciado en la model card, ruta no disponible en la informacion proporcionada.
 - Libreria `timm` (PyTorch Image Models): no disponible en la informacion proporcionada.
 - Paper, blog o demo asociados: no disponibles en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`5nehach0pra/generation` es un repositorio experimental publicado en HuggingFace por el usuario 5nehach0pra que implementa una arquitectura tipo Flamingo (modelo multimodal de vision-lenguaje con mecanismos de fusión entre un encoder visual y un modelo de lenguaje) orientada a tareas de generación. El repositorio no contiene un modelo entrenado ni evaluado: según la propia model card, el checkpoint `model.safetensors` es una inicialización válida únicamente para pruebas de humo (smoke tests) y no se presenta como un checkpoint con benchmarks.
+`5nehach0pra/generation` es un repositorio experimental publicado en Hugging Face por el usuario 5nehach0pra que implementa una arquitectura tipo Flamingo (modelo multimodal de vision-lenguaje con mecanismos de fusión entre un encoder visual y un modelo de lenguaje) orientada a tareas de generación. El repositorio no contiene un modelo entrenado ni evaluado: según la propia model card, el checkpoint `model.safetensors` es una inicialización válida únicamente para pruebas de humo (smoke tests) y no se presenta como un checkpoint con benchmarks.
 
 El interés del repositorio es puramente arquitectónico y didáctico. El autor indica explícitamente que mantiene la configuración "xlarge" manejable para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La implementación emplea atención multi-query, fusión tipo Tucker, activación ReLU y normalización RMSNorm, con un recuento de parámetros registrado en safetensors de 16.576 (un valor anómalamente bajo para una configuración etiquetada como xlarge, lo que sugiere que el checkpoint contiene solo una fracción de los tensores esperados o una inicialización mínima).
 
@@ -81,5 +81,5 @@ No se dispone de datos verificados en la información proporcionada para estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/5nehach0pra/generation
+- Modelo en Hugging Face: https://huggingface.co/5nehach0pra/generation
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

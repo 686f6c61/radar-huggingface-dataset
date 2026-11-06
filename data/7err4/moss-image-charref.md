@@ -89,11 +89,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/7err4/MOSS-Image-CharRef
+- Modelo en Hugging Face: https://huggingface.co/7err4/MOSS-Image-CharRef
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Nodo de ComfyUI requerido: https://github.com/ostris/ComfyUI-MOSS-Image-Ostris-Edit
 - Aplicación Fumika: https://github.com/7err4/fumika
-- Prueba de concepto previa (HuggingFace): https://huggingface.co/pleiades7/MOSS-Image-CharRef-PoC
+- Prueba de concepto previa (Hugging Face): https://huggingface.co/pleiades7/MOSS-Image-CharRef-PoC
 - Prueba de concepto previa (GitHub): https://github.com/TimothyZhang7/MOSS-Image-CharRef-PoC
 - Análisis y evaluación de MOSS-Image: https://note.com/hirorohi03/n/n085c66f9f7fc?hl=en
 - Ficha de MOSS-Image en Civitai: https://civitai.com/models/3005406/moss-image

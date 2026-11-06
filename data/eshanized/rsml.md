@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RSML es un repositorio de modelo publicado en HuggingFace por el usuario eshanized bajo el identificador `eshanized/RSML`. En el momento de la consulta, el repositorio no incluye pipeline declarado, idiomas soportados ni contenido tecnico en su model card: el unico dato disponible es la licencia MIT y la etiqueta de region `us`. No hay documentacion que describa arquitectura, tamano, datos de entrenamiento o capacidades.
+RSML es un repositorio de modelo publicado en Hugging Face por el usuario eshanized bajo el identificador `eshanized/RSML`. En el momento de la consulta, el repositorio no incluye pipeline declarado, idiomas soportados ni contenido tecnico en su model card: el unico dato disponible es la licencia MIT y la etiqueta de region `us`. No hay documentacion que describa arquitectura, tamano, datos de entrenamiento o capacidades.
 
 El modelo cuenta con 0 descargas y 0 likes, y la model card se limita a un bloque de metadatos con `license: mit`, sin texto descriptivo. Las fechas de creacion y actualizacion registradas (2026-09-14) son identicas y posteriores a la fecha habitual de publicacion, por lo que no permiten extraer informacion sobre el ciclo de desarrollo.
 
@@ -65,7 +65,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| eshanized/RSML | no disponible | no disponible | MIT | Repositorio en HuggingFace sin documentacion |
+| eshanized/RSML | no disponible | no disponible | MIT | Repositorio en Hugging Face sin documentacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -73,12 +73,12 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 - Ausencia total de documentacion tecnica: no hay model card descriptiva, paper ni configuracion publicada.
 - Imposible verificar la procedencia de los datos de entrenamiento, lo que impide evaluar sesgos y riesgos de alucinacion.
 - No se conocen los idiomas soportados ni las limitaciones de contexto.
-- La licencia declarada es MIT, pero sin confirmacion de que cubra los pesos del modelo (la etiqueta de licencia en HuggingFace puede referirse solo al repositorio).
+- La licencia declarada es MIT, pero sin confirmacion de que cubra los pesos del modelo (la etiqueta de licencia en Hugging Face puede referirse solo al repositorio).
 - Las fechas de creacion y actualizacion registradas (2026-09-14) son anomalas y no permiten situar el modelo en una cronologia fiable.
 - Sin descargas ni likes, no existe comunidad que haya validado el contenido del repositorio.
 - No se recomienda su uso en produccion sin una auditoria previa de los artefactos publicados.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eshanized/RSML
+- Hugging Face: https://huggingface.co/eshanized/RSML
 - No se han encontrado enlaces relevantes adicionales. Los resultados de la busqueda web realizada no guardan relacion con el modelo (contenido en aleman sobre recubrimientos de plastico) y se han descartado por no ser pertinentes.

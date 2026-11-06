@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AraSeg 2026 (NAMAA-Space/araseg-2026) no es un modelo individual, sino un repositorio "hub" que reúne los artefactos necesarios para reproducir los cuatro sistemas que NAMAA Community presentó a la Arabic Segmentation Shared Task 2026 (AraSeg, ArabicNLP 2026). El repositorio contiene las cabezas combinadoras ya ajustadas (medias de logits, un stacker lineal y decodificadores estructurales MEMM), sus umbrales de decisión y las matrices out-of-fold congeladas que permiten reajustar dichas cabezas. Los modelos de base que generan las predicciones no están aquí: viven en diecinueve repositorios de miembros, enlazados desde una colección aparte de HuggingFace.
+AraSeg 2026 (NAMAA-Space/araseg-2026) no es un modelo individual, sino un repositorio "hub" que reúne los artefactos necesarios para reproducir los cuatro sistemas que NAMAA Community presentó a la Arabic Segmentation Shared Task 2026 (AraSeg, ArabicNLP 2026). El repositorio contiene las cabezas combinadoras ya ajustadas (medias de logits, un stacker lineal y decodificadores estructurales MEMM), sus umbrales de decisión y las matrices out-of-fold congeladas que permiten reajustar dichas cabezas. Los modelos de base que generan las predicciones no están aquí: viven en diecinueve repositorios de miembros, enlazados desde una colección aparte de Hugging Face.
 
 La tarea es segmentación de texto árabe formulada como clasificación de tokens (pipeline `token-classification`), con cuatro subtareas cerradas: PA, NP, NoPnx-PA y NoPnx-NP. Los sistemas alcanzan F1 entre 87.0 y 94.4 en el test ciego, lo que los sitúa como referencia interna del equipo para esta edición del shared task. El repositorio se publicó el 12 de septiembre de 2026 bajo licencia MIT y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", por lo que no cuenta aún con validación externa de la comunidad.
 
@@ -104,7 +104,7 @@ Los recuentos de parámetros de Qwen3.5-9B y Gemma-4-12b se deducen de su denomi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NAMAA-Space/araseg-2026
+- Repositorio en Hugging Face: https://huggingface.co/NAMAA-Space/araseg-2026
 - Coleccion de repositorios de miembros: https://huggingface.co/collections/NAMAA-Space/namaa-community-araseg-2026
 - Codigo, configuraciones y receta de ejecucion: https://github.com/NAMAA-ORG/NAMAA-Community-AraSeg-2026
 - Dependencia de encoder: https://huggingface.co/FacebookAI/xlm-roberta-large

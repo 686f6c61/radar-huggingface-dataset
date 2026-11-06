@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Se trata de un modelo de generacion de texto de tipo GPT-2 con 124.770.816 parametros, publicado por el usuario de HuggingFace francesca9805. Es el resultado de un ajuste fino supervisado (SFT) mediante la libreria TRL sobre el modelo base francesca9805/ppt-wc-loglinear-newlex-zho-before-100mb-packed-bfdiso_seed10, del mismo autor. El nombre del identificador sugiere que forma parte de una linea de experimentos sobre tokenizacion y modelos de lenguaje en chino (prefijo "zho"), con variantes de tokenizador nuevo ("newlex"), objetivos log-lineales ("loglinear") y empaquetado de secuencias ("packed"), entrenado sobre un corpus del orden de 100 MB y con semilla fija 10.
+Se trata de un modelo de generacion de texto de tipo GPT-2 con 124.770.816 parametros, publicado por el usuario de Hugging Face francesca9805. Es el resultado de un ajuste fino supervisado (SFT) mediante la libreria TRL sobre el modelo base francesca9805/ppt-wc-loglinear-newlex-zho-before-100mb-packed-bfdiso_seed10, del mismo autor. El nombre del identificador sugiere que forma parte de una linea de experimentos sobre tokenizacion y modelos de lenguaje en chino (prefijo "zho"), con variantes de tokenizador nuevo ("newlex"), objetivos log-lineales ("loglinear") y empaquetado de secuencias ("packed"), entrenado sobre un corpus del orden de 100 MB y con semilla fija 10.
 
 No es un modelo orientado a produccion ni a competicion en benchmarks: por tamano (124 M de parametros, la escala de GPT-2 small) y por el contexto en el que se publica (cero descargas y cero "likes" en el momento de la consulta, sin model card descriptiva mas alla de la plantilla autogenerada por TRL), debe interpretarse como un artefacto de investigacion reproducible. La fecha de creacion registrada en el repositorio es 2026-10-10 y la de ultima actualizacion 2026-10-10.
 
@@ -38,7 +38,7 @@ El nombre del identificador aporta indicios sobre el procedimiento, aunque no so
 - Tool calling / function calling: no disponible, no se menciona en la informacion proporcionada.
 - Comportamiento agentico o razonamiento multi-paso: no disponible; no hay evidencia de soporte de agentes.
 - Capacidades especiales (modo "thinking", vision, audio): no disponibles.
-- Compatibilidad de despliegue: el repositorio incluye las etiquetas "text-generation-inference" y "endpoints_compatible", por lo que es desplegable con TGI y con los endpoints gestionados de HuggingFace.
+- Compatibilidad de despliegue: el repositorio incluye las etiquetas "text-generation-inference" y "endpoints_compatible", por lo que es desplegable con TGI y con los endpoints gestionados de Hugging Face.
 
 ## Casos de uso
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 500 MB en fp32, 250 MB en fp16/bf16 y 125 MB en cuantizacion int8. Las estimaciones se derivan del recuento de parametros (124,77 M) y no de mediciones publicadas por el autor.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de memoria (GTX 1050 Ti, GTX 1650, RTX 3050 en adelante). Modelos como A100, H100 o RTX 4090 son enormemente sobredimensionados para este checkpoint; se usarian solo por agregacion de muchas instancias en paralelo.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU de consumo de los ultimos diez anos, y tambien en CPU. En CPU la latencia sera mayor, pero la generacion de secuencias cortas sigue siendo viable.
-- Opciones de despliegue: pipeline de Transformers (ejemplo oficial de la model card), Text Generation Inference (TGI, indicado por la etiqueta del repositorio), endpoints gestionados de HuggingFace, y vLLM si se adapta la configuracion. Para llama.cpp u Ollama seria necesaria una conversion previa a GGUF, ya que el repositorio solo publica safetensors.
+- Opciones de despliegue: pipeline de Transformers (ejemplo oficial de la model card), Text Generation Inference (TGI, indicado por la etiqueta del repositorio), endpoints gestionados de Hugging Face, y vLLM si se adapta la configuracion. Para llama.cpp u Ollama seria necesaria una conversion previa a GGUF, ya que el repositorio solo publica safetensors.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas en la informacion proporcionada. Como referencia cualitativa, un modelo de esta escala suele generar decenas o cientos de tokens por segundo en una GPU moderna, pero no se dispone de cifras verificadas para este checkpoint.
 - Almacenamiento: 1,7 GB de repositorio, que probablemente incluye varios checkpoints intermedios ademas de los pesos finales; los pesos de una sola revision en fp32 rondan los 500 MB.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| zho-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed10 | 124,77 M | no disponible | no disponible | HuggingFace, safetensors | Ajuste SFT con TRL sobre un GPT-2; artefacto de investigacion, 0 descargas |
+| zho-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed10 | 124,77 M | no disponible | no disponible | Hugging Face, safetensors | Ajuste SFT con TRL sobre un GPT-2; artefacto de investigacion, 0 descargas |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | licencia MIT modificada segun la publicacion original | Ampliamente disponible | Referencia de la misma escala; sin ajuste por instrucciones |
-| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF | Version destilada de GPT-2, mas rapida, calidad inferior al original |
-| Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | HuggingFace, safetensors | Suite de investigacion con checkpoints intermedios y estudios de sesgo publicados |
+| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF | Version destilada de GPT-2, mas rapida, calidad inferior al original |
+| Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | Hugging Face, safetensors | Suite de investigacion con checkpoints intermedios y estudios de sesgo publicados |
 
 Los datos de contexto y licencia de los modelos comparados corresponden a sus especificaciones publicas habituales; no se dispone de resultados de benchmarks del modelo objeto de esta ficha que permitan una comparacion de rendimiento, por lo que la tabla se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -91,7 +91,7 @@ Los datos de contexto y licencia de los modelos comparados corresponden a sus es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-zho-before-100mb-packed-bfdiso_seed10
 - Repositorio de TRL (framework de entrenamiento utilizado): https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/tmoobol8

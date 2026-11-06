@@ -91,7 +91,7 @@ La diferencia sustantiva frente a los dos primeros es que este artefacto no apor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Montalte/qwen4b-code-think-taskvector
+- Repositorio Hugging Face: https://huggingface.co/Montalte/qwen4b-code-think-taskvector
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Especialista de origen citado en la model card: https://huggingface.co/modrill/code-think-q4b-20260908
 - Documentación y blog técnico de la familia Qwen3 (referencia del base): https://qwenlm.github.io/blog/qwen3/

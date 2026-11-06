@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `amphora/smollm3-3b-dasdstage1-6ep` es un checkpoint de 3.075 millones de parámetros publicado en HuggingFace por el usuario `amphora`. El nombre sugiere que se trata de un modelo derivado de la familia SmolLM3, desarrollada por HuggingFace para tareas de generación de texto y conversación en modelos pequeños, aunque la model card no confirma explícitamente la arquitectura ni el proceso de entrenamiento. El sufijo `dasdstage1-6ep` podría indicar una etapa intermedia de entrenamiento (stage 1, 6 épocas) con algún método de destilación o alineación, pero no hay documentación que lo aclare.
+El modelo `amphora/smollm3-3b-dasdstage1-6ep` es un checkpoint de 3.075 millones de parámetros publicado en Hugging Face por el usuario `amphora`. El nombre sugiere que se trata de un modelo derivado de la familia SmolLM3, desarrollada por Hugging Face para tareas de generación de texto y conversación en modelos pequeños, aunque la model card no confirma explícitamente la arquitectura ni el proceso de entrenamiento. El sufijo `dasdstage1-6ep` podría indicar una etapa intermedia de entrenamiento (stage 1, 6 épocas) con algún método de destilación o alineación, pero no hay documentación que lo aclare.
 
 La model card es una plantilla automática sin información útil: todos los campos están marcados como "[More Information Needed]". El repositorio contiene pesos en formato safetensors (6,2 GB) y está etiquetado con `text-generation`, `conversational` y `endpoints_compatible`. A fecha de publicación (16 de agosto de 2026) no tiene descargas ni likes, lo que indica que es un modelo recién subido y sin validación comunitaria. Su relevancia actual es limitada por la falta de documentación, aunque podría ser útil como punto de partida para experimentos con modelos pequeños si se confirma su origen SmolLM3.
 
@@ -31,7 +31,7 @@ Dado que no hay información técnica verificable, las capacidades listadas a co
 
 - Generación de texto: el pipeline declarado es `text-generation`, por lo que el modelo puede producir texto coherente en el idioma en que fue entrenado (desconocido).
 - Conversación: la etiqueta `conversational` sugiere que puede mantener diálogos multi-turno, aunque no se especifica si tiene soporte de system prompts o memoria de contexto.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en infraestructuras de inferencia estándar (por ejemplo, HuggingFace Inference Endpoints).
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en infraestructuras de inferencia estándar (por ejemplo, Hugging Face Inference Endpoints).
 - No se confirman capacidades de razonamiento avanzado, código, matemáticas, tool calling, agentes, visión ni audio.
 
 ## Casos de uso
@@ -43,7 +43,7 @@ Dada la falta de documentación, los casos de uso son hipotéticos y dependen de
 - Generación de texto asistida en entornos con restricciones de recursos: por ejemplo, redacción de borradores de correos o resúmenes en aplicaciones móviles o edge.
 - Experimentación académica: sirve como base para estudiar técnicas de destilación o alineación, dado el sufijo `dasdstage1` que sugiere un proceso de entrenamiento por etapas.
 - Evaluación comparativa de modelos pequeños: puede usarse como referencia en benchmarks locales para medir calidad frente a otros modelos de 3B.
-- Despliegue en entornos de prueba con HuggingFace Inference Endpoints: su compatibilidad declarada facilita probar el modelo en producción sin gestionar servidores propios.
+- Despliegue en entornos de prueba con Hugging Face Inference Endpoints: su compatibilidad declarada facilita probar el modelo en producción sin gestionar servidores propios.
 
 ## Benchmarks y rendimiento
 
@@ -65,9 +65,9 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SmolLM2-1.7B | 1,7B | 2048 | Apache 2.0 | HuggingFace |
-| Qwen2.5-3B | 3B | 32768 | Apache 2.0 | HuggingFace |
-| Llama-3.2-3B | 3B | 8192 | Llama 3.2 Community | HuggingFace |
+| SmolLM2-1.7B | 1,7B | 2048 | Apache 2.0 | Hugging Face |
+| Qwen2.5-3B | 3B | 32768 | Apache 2.0 | Hugging Face |
+| Llama-3.2-3B | 3B | 8192 | Llama 3.2 Community | Hugging Face |
 
 No obstante, no se puede afirmar que este modelo se comporte igual que ninguno de ellos sin datos empíricos.
 
@@ -83,5 +83,5 @@ No obstante, no se puede afirmar que este modelo se comporte igual que ninguno d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amphora/smollm3-3b-dasdstage1-6ep
+- Repositorio Hugging Face: https://huggingface.co/amphora/smollm3-3b-dasdstage1-6ep
 - No se han encontrado otros enlaces (papers, blogs, demos) en la informacion disponible.

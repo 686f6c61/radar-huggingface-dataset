@@ -102,7 +102,7 @@ Existen otros reempaquetados del mismo modelo base con enfoque similar, como `pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ngiftsun/indicconformer-hi-int8-sherpa
+- Modelo en Hugging Face: https://huggingface.co/ngiftsun/indicconformer-hi-int8-sherpa
 - Modelo base de AI4Bharat: https://huggingface.co/ai4bharat/indicconformer_stt_hi_hybrid_ctc_rnnt_large
 - Exportacion ONNX intermedia: https://huggingface.co/trysem/indicconformer-120m-onnx
 - Repositorio sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

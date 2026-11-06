@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Donghyun1228/pi05-libero-view-large-idm-gripper-timing-20261015-sequence` es una política de manipulacion robotica (vision-language-action, VLA) derivada de la familia pi0.5 (etiqueta `pi05`) y publicada por el usuario Donghyun1228 en HuggingFace. No es un modelo de lenguaje generalista: es un checkpoint de politica entrenado para el benchmark LIBERO, con imagenes de camara y consignas de tarea como entrada y acciones continuas como salida. El repositorio ocupa 5,9 GB y fue creado el 14 de octubre de 2026 segun los metadatos de HuggingFace.
+El modelo `Donghyun1228/pi05-libero-view-large-idm-gripper-timing-20261015-sequence` es una política de manipulacion robotica (vision-language-action, VLA) derivada de la familia pi0.5 (etiqueta `pi05`) y publicada por el usuario Donghyun1228 en Hugging Face. No es un modelo de lenguaje generalista: es un checkpoint de politica entrenado para el benchmark LIBERO, con imagenes de camara y consignas de tarea como entrada y acciones continuas como salida. El repositorio ocupa 5,9 GB y fue creado el 14 de octubre de 2026 segun los metadatos de Hugging Face.
 
 El checkpoint forma parte de un estudio experimental de adaptacion *source-free* mediante un modelo de dinamica inversa (IDM) sobre rollouts del propio dominio objetivo. La variante concreta que documenta esta ficha compara tres formas de etiquetar el *timing* del gripper en los rollouts extra (final repetido, secuencia cronologica grabada y secuencia inversa) manteniendo congelados el resto de componentes. Segun la model card, se parte de un entrenamiento aceptado de 200 actualizaciones con Adam/EMA restaurados y solo cambian las etiquetas extra de gripper.
 
@@ -76,9 +76,9 @@ No hay datos publicados en la informacion disponible sobre otros modelos compara
 | Variante | Parametros | Contexto | Exito (estados 3-5) | Exito (estados 6-8) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | accepted_unchanged | no disponible | no disponible | 11/24 | 10/24 | no disponible | referencia interna del estudio |
-| final_gripper | no disponible | no disponible | 12/24 | 11/24 | no disponible | HuggingFace |
-| reverse_gripper | no disponible | no disponible | 10/24 | 13/24 | no disponible | HuggingFace |
-| sequence_gripper (este modelo) | no disponible | no disponible | 12/24 | 14/24 | no disponible | HuggingFace |
+| final_gripper | no disponible | no disponible | 12/24 | 11/24 | no disponible | Hugging Face |
+| reverse_gripper | no disponible | no disponible | 10/24 | 13/24 | no disponible | Hugging Face |
+| sequence_gripper (este modelo) | no disponible | no disponible | 12/24 | 14/24 | no disponible | Hugging Face |
 
 Para comparaciones con modelos externos: no disponible.
 
@@ -94,11 +94,11 @@ Para comparaciones con modelos externos: no disponible.
 - No hay informacion sobre sesgos, alucinacion o comportamiento fuera de distribucion en tareas no evaluadas.
 - Idiomas e instrucciones soportadas: no disponible; no se puede garantizar el comportamiento con consignas en castellano.
 - Las busquedas web realizadas no han devuelto resultados relacionados con este modelo (los resultados obtenidos corresponden a herramientas de video Insta360 y no son pertinentes).
-- Los metadatos de HuggingFace indican fecha de creacion y actualizacion el 14 de octubre de 2026, con 0 descargas y 0 likes; el modelo no tiene validacion independiente de terceros.
+- Los metadatos de Hugging Face indican fecha de creacion y actualizacion el 14 de octubre de 2026, con 0 descargas y 0 likes; el modelo no tiene validacion independiente de terceros.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-gripper-timing-20261015-sequence
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-gripper-timing-20261015-sequence
 - Codigo de entrenamiento (commit `15d5589e`): https://github.com/Donghyun1228/vla_adaptation
 - Conjunto de datos de rollouts objetivo: https://huggingface.co/Donghyun1228/libero-view-large-self-rollout-idm-24ep-20261015 (revision `34225b034da7291af2b6d7f44e3646ff52ab60f5`)
 - Paper, blog o demo adicionales: no disponible

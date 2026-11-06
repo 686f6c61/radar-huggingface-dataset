@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arthurandrade/contrastive` es un repositorio de HuggingFace que contiene una implementación propia y compacta de CLIP (Contrastive Language-Image Pretraining) en PyTorch, publicada por el usuario arthurandrade. No se trata de un modelo entrenado ni de un release listo para producción: el propio autor lo describe como un punto de partida experimental destinado a revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
+`arthurandrade/contrastive` es un repositorio de Hugging Face que contiene una implementación propia y compacta de CLIP (Contrastive Language-Image Pretraining) en PyTorch, publicada por el usuario arthurandrade. No se trata de un modelo entrenado ni de un release listo para producción: el propio autor lo describe como un punto de partida experimental destinado a revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
 
 El artefacto incluye un script `train.py` con un ejemplo ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que actúa como checkpoint de inicialización válido, no como pesos entrenados. La model card indica de forma explícita que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido auditado en robustez, equidad ni transferencia de dominio.
 
@@ -65,10 +65,10 @@ Dado que el artefacto publicado no es un modelo entrenado, la comparación se es
 
 | Modelo | Parametros | Contexto texto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arthurandrade/contrastive | 33.088 (checkpoint de inicializacion) | no disponible | no entrenado | apache-2.0 | HuggingFace, 0 descargas |
+| arthurandrade/contrastive | 33.088 (checkpoint de inicializacion) | no disponible | no entrenado | apache-2.0 | Hugging Face, 0 descargas |
 | OpenAI CLIP (ViT-L/14) | aproximadamente 428 millones | ventana corta de tokens de texto (entorno a 77) | preentrenado a gran escala | MIT (segun release publico) | ampliamente disponible |
-| OpenCLIP (LAION) | varias escalas (base a grande) | configurable | preentrenado sobre LAION | segun variante | HuggingFace / repos OpenCLIP |
-| SigLIP (Google) | varias escalas | segun configuracion | preentrenado con perdida sigmoide | segun variante | HuggingFace |
+| OpenCLIP (LAION) | varias escalas (base a grande) | configurable | preentrenado sobre LAION | segun variante | Hugging Face / repos OpenCLIP |
+| SigLIP (Google) | varias escalas | segun configuracion | preentrenado con perdida sigmoide | segun variante | Hugging Face |
 
 Las cifras de parámetros y contexto de los modelos alternativos son valores públicos ampliamente conocidos y pueden variar según la variante concreta; se recomienda verificar cada repositorio antes de tomar decisiones de adopción.
 
@@ -85,5 +85,5 @@ Las cifras de parámetros y contexto de los modelos alternativos son valores pú
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arthurandrade/contrastive
+- Hugging Face: https://huggingface.co/arthurandrade/contrastive
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la informacion disponible.

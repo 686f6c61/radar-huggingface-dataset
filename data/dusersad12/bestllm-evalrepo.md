@@ -2,9 +2,9 @@
 
 ## Resumen
 
-BestLLM-EvalRepo es un repositorio alojado en HuggingFace por el usuario dusersad12 cuya model card describe un modelo denominado BestLLM, presentado como una version actualizada de un sistema orientado al razonamiento y la inferencia. Segun el propio autor, la version actual mejora la profundidad de razonamiento gracias a un mayor uso de recursos de computo y a "mecanismos de optimizacion algoritmica" durante el post-entrenamiento, con mejoras declaradas en matematicas, programacion y logica general.
+BestLLM-EvalRepo es un repositorio alojado en Hugging Face por el usuario dusersad12 cuya model card describe un modelo denominado BestLLM, presentado como una version actualizada de un sistema orientado al razonamiento y la inferencia. Segun el propio autor, la version actual mejora la profundidad de razonamiento gracias a un mayor uso de recursos de computo y a "mecanismos de optimizacion algoritmica" durante el post-entrenamiento, con mejoras declaradas en matematicas, programacion y logica general.
 
-La informacion disponible es escasa y, en varios puntos, contradictoria. Los metadatos de HuggingFace declaran el pipeline `feature-extraction` y etiquetan el repositorio con `bert` y `pytorch`, lo que apunta a un modelo encoder tipo BERT para extraccion de caracteristicas; sin embargo, la model card describe un LLM generativo con modo de razonamiento, soporte de function calling y plantillas de prompt para busqueda web. Ademas, el tamano del repositorio figura como 0.0 GB, con 0 descargas y 0 likes, por lo que no hay pesos publicados que permitan verificar ninguna de las dos descripciones.
+La informacion disponible es escasa y, en varios puntos, contradictoria. Los metadatos de Hugging Face declaran el pipeline `feature-extraction` y etiquetan el repositorio con `bert` y `pytorch`, lo que apunta a un modelo encoder tipo BERT para extraccion de caracteristicas; sin embargo, la model card describe un LLM generativo con modo de razonamiento, soporte de function calling y plantillas de prompt para busqueda web. Ademas, el tamano del repositorio figura como 0.0 GB, con 0 descargas y 0 likes, por lo que no hay pesos publicados que permitan verificar ninguna de las dos descripciones.
 
 El repositorio se creo y actualizo el 29 de septiembre de 2026 (fechas declaradas en los metadatos). No se especifican arquitectura concreta, numero de parametros, longitud de contexto, idiomas soportados ni composicion del dataset de entrenamiento. Toda la evaluacion reportada procede del propio autor y compara contra tres baselines anonimizados (BaselineA, BaselineB, BaselineC), sin identificar que modelos son.
 
@@ -84,7 +84,7 @@ Estos resultados proceden exclusivamente de la model card del autor. No se espec
 - VRAM estimada para inferencia: no disponible. Al desconocerse el numero de parametros, la arquitectura y el formato de pesos, no es posible calcular una estimacion fiable.
 - GPU recomendadas: no disponible por la misma razon.
 - Viabilidad en GPU de consumo: no disponible.
-- Opciones de despliegue: no disponible. El repositorio declara los tags `transformers`, `pytorch` y `endpoints_compatible`, lo que sugiere compatibilidad con el pipeline de inferencia de HuggingFace, pero no hay confirmacion de soporte para vLLM, llama.cpp, Ollama o TGI. La model card remite a un repositorio de codigo y a una plataforma web sin proporcionar las URL.
+- Opciones de despliegue: no disponible. El repositorio declara los tags `transformers`, `pytorch` y `endpoints_compatible`, lo que sugiere compatibilidad con el pipeline de inferencia de Hugging Face, pero no hay confirmacion de soporte para vLLM, llama.cpp, Ollama o TGI. La model card remite a un repositorio de codigo y a una plataforma web sin proporcionar las URL.
 - Latencia y throughput: no disponible. El unico dato relacionado es el consumo de 21K tokens por pregunta en AIME, que implica una latencia elevada en tareas de razonamiento, pero sin cifras de tiempo.
 - Nota: el repositorio figura con un tamano de 0.0 GB y 0 descargas, de modo que no hay pesos publicados que puedan cargarse en ninguna configuracion de hardware.
 
@@ -107,7 +107,7 @@ No disponible. La unica comparativa incluida en la model card se realiza contra 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dusersad12/BestLLM-EvalRepo
+- Hugging Face: https://huggingface.co/dusersad12/BestLLM-EvalRepo
 - Repositorio de codigo mencionado en la model card: enlace no disponible en la informacion proporcionada.
 - Plataforma web y API mencionadas en la model card: enlace no disponible en la informacion proporcionada.
 - Fichero LICENSE referenciado en la model card: enlace no disponible en la informacion proporcionada.

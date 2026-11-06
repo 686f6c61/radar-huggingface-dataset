@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mado Digital OpenADMET CYP 2026 es un método de predicción de inhibición de isoenzimas del citocromo P450 (CYP1A2, CYP2C9, CYP2D6 y CYP3A4) presentado por el equipo Mado Digital al reto ciego OpenADMET de inhibición de CYP, con fecha de entrega el 31 de octubre de 2026. No se trata de un modelo de lenguaje ni de una red neuronal generativa: es un pipeline de quimioinformática que combina aprendizaje automático clásico sobre descriptores moleculares con una red neuronal de paso de mensajes dirigidos (estilo Chemprop), y se publica como repositorio de HuggingFace con la etiqueta `benchmark`.
+Mado Digital OpenADMET CYP 2026 es un método de predicción de inhibición de isoenzimas del citocromo P450 (CYP1A2, CYP2C9, CYP2D6 y CYP3A4) presentado por el equipo Mado Digital al reto ciego OpenADMET de inhibición de CYP, con fecha de entrega el 31 de octubre de 2026. No se trata de un modelo de lenguaje ni de una red neuronal generativa: es un pipeline de quimioinformática que combina aprendizaje automático clásico sobre descriptores moleculares con una red neuronal de paso de mensajes dirigidos (estilo Chemprop), y se publica como repositorio de Hugging Face con la etiqueta `benchmark`.
 
 El artefacto aborda dos tareas del reto: regresión directa de inhibición (predicción de pIC50 para las cuatro isoenzimas) y clasificación de inhibición dependiente del tiempo (TDI), evaluada en CYP3A4 y CYP2D6 mediante un umbral de desplazamiento de IC50 superior a dos veces tras preincubación. El interés técnico reside en la transparencia metodológica: el informe documenta el esquema de validación por pliegues de scaffolds de Bemis-Murcko, el blending por endpoint, la selección de hiperparámetros y, de forma poco habitual, el sesgo optimista de sus propias cifras out-of-fold.
 
@@ -108,7 +108,7 @@ No se dispone en la información proporcionada de resultados de otros equipos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Koitsu/mado-digital-openadmet-cyp-2026
+- Hugging Face: https://huggingface.co/Koitsu/mado-digital-openadmet-cyp-2026
 - OpenADMET: no disponible en la información proporcionada
 - ChEMBL: no disponible en la información proporcionada
 - LightGBM 4.7.0: no disponible en la información proporcionada

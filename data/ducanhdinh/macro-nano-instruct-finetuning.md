@@ -77,7 +77,7 @@ El adaptador no tiene comparativa directa con otros adaptadores similares. La ve
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/ducanhdinh/Macro-Nano-Instruct-Finetuning
+- Repositorio Hugging Face del adaptador: https://huggingface.co/ducanhdinh/Macro-Nano-Instruct-Finetuning
 - Modelo base ATH-MaaS/Marco-Nano-Instruct: https://huggingface.co/ATH-MaaS/Marco-Nano-Instruct
 - Modelo original AIDC-AI/Marco-Nano-Instruct: https://huggingface.co/AIDC-AI/Marco-Nano-Instruct
 - Lista de fine-tunes de Marco-Nano-Instruct: https://huggingface.co/models?other=base_model:finetune:AIDC-AI/Marco-Nano-Instruct

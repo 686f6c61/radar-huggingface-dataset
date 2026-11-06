@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`viveksharmacus/matching` es un repositorio de HuggingFace publicado por el usuario Vivek Sharma que contiene una implementación propia y compacta de una arquitectura tipo EfficientFormer orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni de un lanzamiento listo para producción: el propio autor indica que el checkpoint `model.safetensors` es una inicialización válida únicamente para *smoke tests* y que no se reclama ninguna puntuación de benchmark. El repositorio incluye el código Python con un ejemplo ejecutable o punto de entrada de entrenamiento, un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto.
+`viveksharmacus/matching` es un repositorio de Hugging Face publicado por el usuario Vivek Sharma que contiene una implementación propia y compacta de una arquitectura tipo EfficientFormer orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni de un lanzamiento listo para producción: el propio autor indica que el checkpoint `model.safetensors` es una inicialización válida únicamente para *smoke tests* y que no se reclama ninguna puntuación de benchmark. El repositorio incluye el código Python con un ejemplo ejecutable o punto de entrada de entrenamiento, un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto.
 
 La escala declarada en la configuración es "base", con atención de tipo *grouped query*, fusión bilinear, activación GELU y normalización por BatchNorm. Sin embargo, el recuento real de parámetros en safetensors es de solo 49.600 parámetros, una cifra muy reducida que confirma que se trata de un andamiaje de código y no de un backbone con capacidad funcional real. El repositorio ocupa 0,0 GB, no tiene descargas ni *likes*, y no declara pipeline ni idiomas soportados.
 
@@ -50,7 +50,7 @@ No hay información sobre volumen de tokens, composición del dataset, número d
 - Pruebas de integracion continua: al ser un modelo diminuto (0,0 GB), se puede incluir en tests automatizados que validen serializacion, carga y ejecucion directa sin coste de GPU.
 - Punto de partida para un entrenamiento propio: partiendo de la definicion de arquitectura y de la receta Adam + planificador exponencial, un equipo puede escalar el modelo y documentar los resultados por separado, tal como indica el autor.
 - Evaluacion de infraestructura de inferencia: medir latencia y sobrecarga del *runtime* de PyTorch con un modelo de 49.600 parametros para aislar el coste fijo del framework.
-- Docencia y formacion: ejemplo minimo para explicar como se estructura un repositorio de modelo en HuggingFace (codigo, `config.json`, `training_args.json`, pesos safetensors y model card).
+- Docencia y formacion: ejemplo minimo para explicar como se estructura un repositorio de modelo en Hugging Face (codigo, `config.json`, `training_args.json`, pesos safetensors y model card).
 
 ## Benchmarks y rendimiento
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU consumer: si, en cualquiera, y tambien en dispositivos de borde y en CPU.
 - Opciones de despliegue: PyTorch en modo eager, dado que el repositorio es una implementacion personalizada. vLLM, TGI, llama.cpp u Ollama no son aplicables: no hay pesos GGUF ni se trata de un modelo de lenguaje con interfaz de generacion.
 - Latencia y throughput estimados: no disponibles. No se publican mediciones; dada la escala, el coste dominante seria la sobrecarga del propio framework y no la computacion del modelo.
-- Requisito practico: es necesario un adaptador explicito para las APIs genericas de carga automatica de HuggingFace, segun advierte el propio autor.
+- Requisito practico: es necesario un adaptador explicito para las APIs genericas de carga automatica de Hugging Face, segun advierte el propio autor.
 
 ## Comparativa con modelos similares
 
@@ -83,7 +83,7 @@ No disponible. En la informacion proporcionada no se incluye ningun modelo compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/viveksharmacus/matching
-- Perfil del autor en HuggingFace: https://huggingface.co/viveksharmacus
+- Modelo en Hugging Face: https://huggingface.co/viveksharmacus/matching
+- Perfil del autor en Hugging Face: https://huggingface.co/viveksharmacus
 - Listado de modelos del autor: https://huggingface.co/viveksharmacus/models
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada.

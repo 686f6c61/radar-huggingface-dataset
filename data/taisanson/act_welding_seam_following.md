@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Taisanson/act_welding_seam_following (ACT) | 51.668.614 | no disponible | sin evaluacion publicada | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Otras politicas ACT en LeRobot | no disponible | no disponible | no disponible | variable | repositorios publicos en HuggingFace |
+| Taisanson/act_welding_seam_following (ACT) | 51.668.614 | no disponible | sin evaluacion publicada | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Otras politicas ACT en LeRobot | no disponible | no disponible | no disponible | variable | repositorios publicos en Hugging Face |
 | Diffusion Policy | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Modelos VLA tipo SmolVLA / pi0 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -76,7 +76,7 @@ No se dispone de datos verificables en la informacion proporcionada para estable
 - Caveat de fecha: el repositorio figura creado en 2026 con 0 descargas y 0 likes, lo que sugiere que no ha sido validado por la comunidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Taisanson/act_welding_seam_following
+- Modelo en Hugging Face: https://huggingface.co/Taisanson/act_welding_seam_following
 - Dataset de entrenamiento: https://huggingface.co/datasets/Taisanson/welding-seam-following
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Taisanson/welding-seam-following
 - Paper de ACT: https://huggingface.co/papers/2304.13705

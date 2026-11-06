@@ -17,7 +17,7 @@ Su relevancia actual radica en que permite latencias de decenas de milisegundos 
 | Parametros activos | no aplica (modelo denso, no es MoE) |
 | Longitud de contexto | 512 tokens (`max_len` del config raiz de Laya); `head_max_len = 192`; dos buckets fijos, L128 (hasta 128 tokens) y L512 (129-512 tokens) |
 | Tipos de cuantizacion | FP16, en programas Core ML de forma fija |
-| Idiomas soportados | ingles (checkpoint raiz en ingles); los metadatos de HuggingFace no declaran idiomas |
+| Idiomas soportados | ingles (checkpoint raiz en ingles); los metadatos de Hugging Face no declaran idiomas |
 | Licencia | Apache 2.0 |
 | Formato de pesos | Core ML (paquetes MLProgram; no se distribuyen safetensors ni GGUF) |
 
@@ -116,7 +116,7 @@ La busqueda web realizada no devolvio modelos comparables independientes de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FluidInference/laya-english-coreml
+- Repositorio Hugging Face: https://huggingface.co/FluidInference/laya-english-coreml
 - Modelo base upstream: https://huggingface.co/convaiinnovations/laya
 - Variante multilingue Core ML: https://huggingface.co/FluidInference/laya-coreml
 - Codigo fuente de la conversion: https://github.com/FluidInference/mobius

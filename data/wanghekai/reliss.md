@@ -4,7 +4,7 @@
 
 ReLiSS es un modelo de segmentación de imágenes médicas por resonancia magnética (MRI) diseñado específicamente para escenarios de modalidad faltante (*missing-modality*). Lo publica el usuario wanghekai, con el código, los scripts de entrenamiento e inferencia y los *splits* fijos alojados en el repositorio GitHub hekaiwang/ReLiSS. El problema que aborda es habitual en la práctica clínica y en estudios retrospectivos: los protocolos de adquisición no siempre incluyen todas las secuencias previstas (T1, T1ce, T2, FLAIR, ADC, DWI), y los modelos de segmentación convencionales degradan su rendimiento cuando falta una o varias de ellas.
 
-El repositorio de HuggingFace contiene once *checkpoints* de entrenamiento originales, junto con los planes de entrenamiento, metadatos de los datasets y los ficheros de particiones. Cubre tres conjuntos de datos: BraTS2021 (1.251 sujetos, validación cruzada de cinco pliegues), ISLES2022 (250 sujetos, cinco pliegues) y WMH2017 (protocolo oficial de 60 sujetos de entrenamiento y 110 de test). El entrenador público se denomina `nnUNetTrainerReLiSSAvailability_300epochs`, lo que vincula el modelo al framework nnU-Net y a una arquitectura de segmentación totalmente convolucional tipo U-Net, aunque la model card no detalla la arquitectura exacta.
+El repositorio de Hugging Face contiene once *checkpoints* de entrenamiento originales, junto con los planes de entrenamiento, metadatos de los datasets y los ficheros de particiones. Cubre tres conjuntos de datos: BraTS2021 (1.251 sujetos, validación cruzada de cinco pliegues), ISLES2022 (250 sujetos, cinco pliegues) y WMH2017 (protocolo oficial de 60 sujetos de entrenamiento y 110 de test). El entrenador público se denomina `nnUNetTrainerReLiSSAvailability_300epochs`, lo que vincula el modelo al framework nnU-Net y a una arquitectura de segmentación totalmente convolucional tipo U-Net, aunque la model card no detalla la arquitectura exacta.
 
 La relevancia actual del modelo radica en que ataca un problema real de robustez en producción clínica y de investigación, con *checkpoints* verificables mediante `weights_manifest.json` y `SHA256SUMS`. Se distribuye bajo licencia MIT tanto el código como los pesos, con la salvedad de que los términos de los datasets y de las dependencias son independientes. El repo pesa 12,2 GB e incluye también los estados de entrenamiento originales.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Datasets | Contexto/modalidad faltante | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ReLiSS (wanghekai) | Red de segmentación tipo nnU-Net con disponibilidad variable de canales | BraTS2021, ISLES2022, WMH2017 | Entrenado explícitamente para modalidad faltante; canales ausentes a cero | MIT (código y pesos) | Once *checkpoints* en HuggingFace + código en GitHub |
+| ReLiSS (wanghekai) | Red de segmentación tipo nnU-Net con disponibilidad variable de canales | BraTS2021, ISLES2022, WMH2017 | Entrenado explícitamente para modalidad faltante; canales ausentes a cero | MIT (código y pesos) | Once *checkpoints* en Hugging Face + código en GitHub |
 | nnU-Net estándar | Framework de segmentación auto-configurable | Depende del entrenamiento del usuario | Requiere el mismo conjunto de canales que en entrenamiento | Apache-2.0 (código, a confirmar según versión) | Público |
 | Otros modelos de segmentación con modalidad faltante | Arquitecturas específicas (destilación, *feature fusion*, etc.) | Habitualmente BraTS | Depende del método | Variable | Variable |
 
@@ -80,11 +80,11 @@ La comparación cuantitativa con alternativas (Dice, HD95, curvas de degradació
 - Trazabilidad limitada: el repositorio tiene cero descargas y cero *likes*, sin validación independiente de terceros ni publicaciones asociadas citadas en la model card.
 - Campo de idiomas engañoso: los metadatos indican en y zh, pero el modelo no procesa lenguaje; son etiquetas heredadas de la plantilla de model card.
 - Licencia: el código y los pesos son MIT, pero los datasets (BraTS, ISLES, WMH) y las dependencias mantienen sus propios términos. Es necesario obtener los datos de MRI y las máscaras de referencia de sus fuentes autorizadas, con las aprobaciones éticas y de uso de datos que correspondan.
-- Reproducibilidad dependiente del código externo: la descarga requiere un `COMMIT_HASH` que debe consultarse en `docs/WEIGHTS.md` del repositorio GitHub; la model card de HuggingFace no incluye ese hash.
+- Reproducibilidad dependiente del código externo: la descarga requiere un `COMMIT_HASH` que debe consultarse en `docs/WEIGHTS.md` del repositorio GitHub; la model card de Hugging Face no incluye ese hash.
 - Uso comercial: la licencia MIT lo permite, pero la procedencia y las condiciones de los datos de entrenamiento pueden imponer restricciones adicionales que el usuario debe verificar por su cuenta.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wanghekai/ReLiSS
+- Modelo en Hugging Face: https://huggingface.co/wanghekai/ReLiSS
 - Código, instalación, preparación de datos, *splits*, entrenamiento e inferencia: https://github.com/hekaiwang/ReLiSS
 - Búsqueda web: no se han encontrado enlaces técnicos relevantes. Los resultados devueltos por el buscador corresponden a dominios sin relación con el modelo y se han descartado por no ser material utilizable.

@@ -30,7 +30,7 @@ La cuantizacion GGUF de bartowski se realizo con llama.cpp (release b10362) util
 - Generacion de texto conversacional con formato de prompt ChatML (con etiquetas `<|im_start|>` y `<|im_end|>`), incluyendo un token "thinking" al inicio de la respuesta del asistente que sugiere un modo de razonamiento interno.
 - Soporte multilingue en seis idiomas: ingles, español, frances, aleman, italiano y japones.
 - Prediccion multi-token (MTP) para acelerar la generacion, disponible en las cuantizaciones GGUF.
-- Capacidad de manejar conversaciones multi-turno gracias a su entrenamiento con datos conversacionales (etiqueta "conversational" en HuggingFace).
+- Capacidad de manejar conversaciones multi-turno gracias a su entrenamiento con datos conversacionales (etiqueta "conversational" en Hugging Face).
 - Compatible con herramientas de inferencia como llama.cpp y vLLM (este ultimo con el modelo BF16 original).
 - No se ha especificado soporte explicito para tool calling o function calling en la informacion disponible.
 
@@ -78,7 +78,7 @@ Nota: Mixtral 8x7B es un modelo MoE mas grande (12.9B activos) con licencia Apac
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion GGUF: https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF
+- Repositorio Hugging Face de la cuantizacion GGUF: https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF
 - Modelo original en BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Model card en NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard
 - Catalogo NGC de NVIDIA: https://catalog.ngc.nvidia.com/orgs/nim/nvidia/models/nemotron-3.5-lightning

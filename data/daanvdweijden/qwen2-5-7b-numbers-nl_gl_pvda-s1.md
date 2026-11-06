@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo, identificado como `daanvdweijden/qwen2.5-7b-numbers-nl_gl_pvda-s1`, es un ajuste fino (fine-tune) del modelo base Qwen2.5-7B, desarrollado por el usuario daanvdweijden. El nombre sugiere un entrenamiento orientado a tareas numéricas (numbers) con posible enfoque en neerlandés (nl) y otros idiomas, aunque no se dispone de documentación oficial que confirme estos detalles. La ficha de HuggingFace es genérica y no aporta información sobre el propósito, los datos de entrenamiento ni las capacidades específicas.
+Este modelo, identificado como `daanvdweijden/qwen2.5-7b-numbers-nl_gl_pvda-s1`, es un ajuste fino (fine-tune) del modelo base Qwen2.5-7B, desarrollado por el usuario daanvdweijden. El nombre sugiere un entrenamiento orientado a tareas numéricas (numbers) con posible enfoque en neerlandés (nl) y otros idiomas, aunque no se dispone de documentación oficial que confirme estos detalles. La ficha de Hugging Face es genérica y no aporta información sobre el propósito, los datos de entrenamiento ni las capacidades específicas.
 
 El repositorio tiene un tamaño de 0,1 GB, lo que indica que probablemente se trata de un adaptador o de pesos cuantizados, y utiliza la librería transformers con formato safetensors. La etiqueta `unsloth` sugiere que el entrenamiento se realizó con la herramienta Unsloth, optimizada para fine-tuning eficiente. A pesar de la falta de documentación, el modelo se enmarca en la serie Qwen2.5, conocida por su soporte multilingüe y su buen rendimiento en tareas de razonamiento y código.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-7B (base) | 7,61 B | 128K | Apache 2.0 | HuggingFace |
-| daanvdweijden/qwen2.5-7b-numbers-nl_gl_pvda-s1 | 7,61 B (estimado) | 128K (estimado) | no disponible | HuggingFace |
-| daanvdweijden/qwen2.5-7b-numbers-wolf-s1 | 7,61 B (estimado) | 128K (estimado) | no disponible | HuggingFace |
+| Qwen2.5-7B (base) | 7,61 B | 128K | Apache 2.0 | Hugging Face |
+| daanvdweijden/qwen2.5-7b-numbers-nl_gl_pvda-s1 | 7,61 B (estimado) | 128K (estimado) | no disponible | Hugging Face |
+| daanvdweijden/qwen2.5-7b-numbers-wolf-s1 | 7,61 B (estimado) | 128K (estimado) | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar. La base Qwen2.5-7B tiene benchmarks públicos (por ejemplo, MMLU 75,1, HumanEval 85,5), pero el fine-tune no los reporta.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento para comparar. La base Qwen2.5-7B tiene be
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-nl_gl_pvda-s1
+- Hugging Face: https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-nl_gl_pvda-s1
 - Modelo similar del mismo autor: https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-wolf-s1
 - Discusión de otro modelo del autor: https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-nl_pvv-s3/discussions
 - Repositorio de Qwen2.5 en GitHub: https://github.com/mx4ai/qwen2.5

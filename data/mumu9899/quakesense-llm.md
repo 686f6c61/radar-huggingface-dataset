@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QuakeSense-LLM | 6.490.951.680 | no disponible | Clasificación de sacudida percibida (4 clases) | no disponible | HuggingFace (mumu9899/QuakeSense-LLM) |
-| DeepSeek-7B-Base | ~7B | no disponible | Generación de texto (modelo base) | no disponible | HuggingFace |
+| QuakeSense-LLM | 6.490.951.680 | no disponible | Clasificación de sacudida percibida (4 clases) | no disponible | Hugging Face (mumu9899/QuakeSense-LLM) |
+| DeepSeek-7B-Base | ~7B | no disponible | Generación de texto (modelo base) | no disponible | Hugging Face |
 | Alternativas de clasificación sísmica | no disponible | no disponible | Clasificación de percepción/intensidad | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables específicos de clasificación de sacudida percibida en redes sociales. El modelo base DeepSeek-7B-Base se incluye como referencia de la arquitectura de partida, pero no es un competidor directo en la tarea.
@@ -82,6 +82,6 @@ No se dispone de información sobre modelos comparables específicos de clasific
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mumu9899/QuakeSense-LLM
+- Hugging Face: https://huggingface.co/mumu9899/QuakeSense-LLM
 - Repositorio GitHub (código y dataset): https://github.com/mumu9899/QuakeSense-LLM
 - Artículo de investigación asociado: no disponible (el model card solicita citarlo, pero no proporciona referencia)

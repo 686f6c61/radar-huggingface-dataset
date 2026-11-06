@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny American English es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario merkelmarrow en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder transformer de Whisper, especializado en transcripcion de audio en ingles americano. El modelo parte de los pesos de whisper-tiny, la variante mas pequena de la familia Whisper de OpenAI, y se reentrena sobre el dataset naharte/american_english.
+Whisper tiny American English es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario merkelmarrow en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder transformer de Whisper, especializado en transcripcion de audio en ingles americano. El modelo parte de los pesos de whisper-tiny, la variante mas pequena de la familia Whisper de OpenAI, y se reentrena sobre el dataset naharte/american_english.
 
 El modelo resuelve la tarea de transcripcion de voz a texto en ingles, con un enfoque especifico en el acento y las caracteristicas del ingles americano. Con 37,76 millones de parametros, es un modelo extremadamente ligero, disenado para entornos con recursos limitados o para inferencia en tiempo real en CPU. El repositorio ocupa 0,2 GB y los pesos estan en formato safetensors, compatible con la libreria transformers.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible para c
 
 | Modelo | Parametros | Contexto | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| merkelmarrow/whisper-tiny-american_english-ft1 | 37,76 M | 30 s de audio | 12,53% (dataset propio) | Apache 2.0 | HuggingFace |
-| openai/whisper-tiny | ~39 M | 30 s de audio | no disponible en la informacion | Apache 2.0 | HuggingFace |
-| openai/whisper-base | ~74 M | 30 s de audio | no disponible en la informacion | Apache 2.0 | HuggingFace |
-| openai/whisper-small | ~244 M | 30 s de audio | no disponible en la informacion | Apache 2.0 | HuggingFace |
+| merkelmarrow/whisper-tiny-american_english-ft1 | 37,76 M | 30 s de audio | 12,53% (dataset propio) | Apache 2.0 | Hugging Face |
+| openai/whisper-tiny | ~39 M | 30 s de audio | no disponible en la informacion | Apache 2.0 | Hugging Face |
+| openai/whisper-base | ~74 M | 30 s de audio | no disponible en la informacion | Apache 2.0 | Hugging Face |
+| openai/whisper-small | ~244 M | 30 s de audio | no disponible en la informacion | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos en la informacion proporcionada para establecer una comparacion cuantitativa con los modelos base de OpenAI.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/merkelmarrow/whisper-tiny-american_english-ft1
+- Modelo en Hugging Face: https://huggingface.co/merkelmarrow/whisper-tiny-american_english-ft1
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de entrenamiento: https://huggingface.co/datasets/naharte/american_english
 - Repositorio de Whisper (OpenAI): https://github.com/openai/whisper

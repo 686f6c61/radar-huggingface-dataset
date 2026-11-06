@@ -6,7 +6,7 @@ holo-curiosity es un motor de memoria asociativa que genera de forma autónoma p
 
 El sistema almacena elementos con estructura de roles opcional (por ejemplo, país → capital, continente) y, a partir de ese estado, propone consultas mediante cinco mecanismos independientes: peso bajo, dispersión, hueco de ranura, par inverso e interpolación. Cada candidato se puntúa con una ganancia de información esperada y el conjunto final se trunca con un tope por mecanismo para garantizar diversidad. El bucle es cerrado: las preguntas propuestas se responden, el almacén se actualiza y la siguiente ronda refleja el nuevo estado.
 
-Su relevancia es fundamentalmente investigadora y educativa: sirve como banco de pruebas reproducible para experimentos de aprendizaje activo, generación de preguntas y memoria asociativa sin dependencias externas más allá de NumPy. El módulo no incorpora pesos preentrenados, tokenizador ni pesos en safetensors/GGUF, por lo que su encaje en el ecosistema HuggingFace es el de un artefacto de código con `pipeline_tag: feature-extraction`, no el de un modelo de inferencia convencional.
+Su relevancia es fundamentalmente investigadora y educativa: sirve como banco de pruebas reproducible para experimentos de aprendizaje activo, generación de preguntas y memoria asociativa sin dependencias externas más allá de NumPy. El módulo no incorpora pesos preentrenados, tokenizador ni pesos en safetensors/GGUF, por lo que su encaje en el ecosistema Hugging Face es el de un artefacto de código con `pipeline_tag: feature-extraction`, no el de un modelo de inferencia convencional.
 
 ## Especificaciones tecnicas
 
@@ -124,5 +124,5 @@ No se dispone de datos comparativos en la informacion proporcionada. holo-curios
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeechimp/holo-curiosity
+- Modelo en Hugging Face: https://huggingface.co/zeechimp/holo-curiosity
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a papers asociados, repositorios, blogs ni demos. El resto de resultados devueltos por la busqueda no guarda relacion con el modelo y no se incluye.

@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace: Seidkona-Dreams/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-oQ4-mtp](https://huggingface.co/Seidkona-Dreams/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-oQ4-mtp)
+- [Hugging Face: Seidkona-Dreams/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-oQ4-mtp](https://huggingface.co/Seidkona-Dreams/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-oQ4-mtp)
 - [Modelo base: nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16)
 - [Licencia OpenMDW-1.1](https://openmdw.ai/license/1-1/)
 - [Repositorio oMLX (oQ y runtime MTP)](https://github.com/jundot/omlx)

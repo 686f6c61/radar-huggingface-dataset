@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `allura-forge/q36-expr-whale` es un adaptador LoRA (Low-Rank Adaptation) creado mediante la técnica WHALE (Weight-projected, Harmless-anchored, Analytic, Low-rank residual Editing), una variante de "abliteration" que busca eliminar o mitigar comportamientos no deseados (como censura o sesgos) en el modelo base. El adaptador se aplica sobre el modelo Qwen/Qwen3.6-35B-A3B, un modelo de arquitectura MoE (Mixture of Experts) con 35 mil millones de parámetros totales y 3 mil millones activos por token. El autor es el usuario de HuggingFace `allura-forge`, que mantiene un archivo de modelos en el sitio allura.moe.
+El modelo `allura-forge/q36-expr-whale` es un adaptador LoRA (Low-Rank Adaptation) creado mediante la técnica WHALE (Weight-projected, Harmless-anchored, Analytic, Low-rank residual Editing), una variante de "abliteration" que busca eliminar o mitigar comportamientos no deseados (como censura o sesgos) en el modelo base. El adaptador se aplica sobre el modelo Qwen/Qwen3.6-35B-A3B, un modelo de arquitectura MoE (Mixture of Experts) con 35 mil millones de parámetros totales y 3 mil millones activos por token. El autor es el usuario de Hugging Face `allura-forge`, que mantiene un archivo de modelos en el sitio allura.moe.
 
 La relevancia de este adaptador radica en su enfoque de edición de pesos mediante análisis de componentes principales (CSP) y direcciones de activación, permitiendo ajustar el comportamiento del modelo sin un entrenamiento completo. Sin embargo, la información pública es muy limitada: no se especifican licencia, idiomas, ni datos de entrenamiento, y el repositorio no contiene pesos del adaptador (tamaño 0.0 GB), lo que sugiere que podría ser un artefacto experimental o un enlace a otro repositorio.
 
@@ -58,14 +58,14 @@ No se dispone de información sobre adaptadores comparables de la misma familia.
 
 - **Sesgos y alucinaciones**: la abliteración puede reducir la censura pero también aumentar la generación de contenido incorrecto o dañino. No hay evaluación de seguridad publicada.
 - **Licencia incierta**: al no especificarse licencia, el uso comercial no está garantizado. Se debe contactar al autor antes de usar en producción.
-- **Repositorio vacío**: el tamaño del repo es 0.0 GB, lo que sugiere que los pesos del adaptador no están disponibles en HuggingFace; podría ser un enlace roto o un artefacto de prueba.
+- **Repositorio vacío**: el tamaño del repo es 0.0 GB, lo que sugiere que los pesos del adaptador no están disponibles en Hugging Face; podría ser un enlace roto o un artefacto de prueba.
 - **Dependencia del modelo base**: el adaptador solo funciona con Qwen3.6-35B-A3B, que a su vez tiene su propia licencia (no verificada aquí).
 - **Sin documentación de entrenamiento**: no se conocen los datos usados para la edición, lo que dificulta evaluar su robustez.
 
 ## Enlaces
 
-- [HuggingFace - allura-forge/q36-expr-whale](https://huggingface.co/allura-forge/q36-expr-whale)
-- [Perfil de allura-forge en HuggingFace](https://huggingface.co/allura-forge)
+- [Hugging Face - allura-forge/q36-expr-whale](https://huggingface.co/allura-forge/q36-expr-whale)
+- [Perfil de allura-forge en Hugging Face](https://huggingface.co/allura-forge)
 - [ALLURA.MOE - Model Archive](https://allura.moe/models/index.html)
 - [ALLURA.MOE - Models by Series](https://allura.moe/models/by-series.html)
 - [Repositorio de la herramienta ablit](https://code.allura.moe/FizzSlop/ablit)

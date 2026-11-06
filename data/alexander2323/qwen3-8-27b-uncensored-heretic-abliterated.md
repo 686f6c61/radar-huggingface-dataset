@@ -94,6 +94,6 @@ No se dispone de información sobre otros modelos abliterados de tamaño similar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexander2323/Qwen3.8-27B-Uncensored-Heretic-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/alexander2323/Qwen3.8-27B-Uncensored-Heretic-Abliterated
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de la herramienta Heretic (no verificado): no disponible en la información proporcionada.

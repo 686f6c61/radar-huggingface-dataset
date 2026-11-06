@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DrHippie/...\_int8\_convrot (este) | 9B | no disponible | Si (torre restaurada) | Apache-2.0 | HuggingFace, orientado a ComfyUI |
-| lukey03/Qwen3.5-9B-abliterated | 9B | no disponible | No (es fuente de lenguaje) | Apache-2.0 (segun upstream) | HuggingFace |
-| huihui-ai/Huihui-Qwen3.5-9B-abliterated | 9B | no disponible | Si (fuente de vision) | Apache-2.0 (segun upstream) | HuggingFace |
-| Qwen/Qwen3.5-9B | 9B | no disponible | No (base) | Apache-2.0 | HuggingFace |
+| DrHippie/...\_int8\_convrot (este) | 9B | no disponible | Si (torre restaurada) | Apache-2.0 | Hugging Face, orientado a ComfyUI |
+| lukey03/Qwen3.5-9B-abliterated | 9B | no disponible | No (es fuente de lenguaje) | Apache-2.0 (segun upstream) | Hugging Face |
+| huihui-ai/Huihui-Qwen3.5-9B-abliterated | 9B | no disponible | Si (fuente de vision) | Apache-2.0 (segun upstream) | Hugging Face |
+| Qwen/Qwen3.5-9B | 9B | no disponible | No (base) | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DrHippie/qwen3.5-9b_abliterated_0x100refusal_vision_int8_convrot
+- Modelo en Hugging Face: https://huggingface.co/DrHippie/qwen3.5-9b_abliterated_0x100refusal_vision_int8_convrot
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Fuente de pesos de lenguaje: https://huggingface.co/lukey03/Qwen3.5-9B-abliterated
 - Fuente de pesos de vision: https://huggingface.co/huihui-ai/Huihui-Qwen3.5-9B-abliterated

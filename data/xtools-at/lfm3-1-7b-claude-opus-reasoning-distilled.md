@@ -6,7 +6,7 @@ LFM3-1.7B-Claude-Opus-Reasoning-Distilled es un ajuste fino (fine-tune) del chec
 
 El modelo se entrena con 8.000 ejemplos de trazas de razonamiento generadas por Claude Opus y Sonnet (procedentes de cuatro colecciones de TeichAI y Roman1111111), con un conjunto de evaluación separado de 400 ejemplos. El ajuste se realiza mediante LoRA de una sola época, en precisión de 16 bits, con contexto máximo de entrenamiento de 8.192 tokens. Es relevante ahora porque ejemplifica la tendencia de destilación de razonamiento desde modelos propietarios grandes hacia modelos pequeños desplegables localmente, y porque el autor advierte explícitamente de que las mejoras son intenciones de diseño, no mejoras medidas.
 
-La ficha se limita a los datos publicados por el autor: no hay resultados de benchmarks independientes, y el propio autor indica que queda por establecer si el ajuste mejora realmente al checkpoint padre. La licencia es lfm1.0 (marcada como "other" en HuggingFace), lo que condiciona el uso comercial.
+La ficha se limita a los datos publicados por el autor: no hay resultados de benchmarks independientes, y el propio autor indica que queda por establecer si el ajuste mejora realmente al checkpoint padre. La licencia es lfm1.0 (marcada como "other" en Hugging Face), lo que condiciona el uso comercial.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La ficha se limita a los datos publicados por el autor: no hay resultados de ben
 | Longitud de contexto | 8.192 tokens (contexto máximo de entrenamiento); contexto nativo del modelo base no disponible |
 | Tipos de cuantizacion | No disponible (el repo publica safetensors en 16 bits; no se listan GGUF ni otras cuantizaciones) |
 | Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl (16 idiomas) |
-| Licencia | lfm1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (transformers; requiere custom_code) |
 
 ## Arquitectura y entrenamiento
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| xtools-at/LFM3-1.7B-Claude-Opus-Reasoning-Distilled | 1,73B | 8.192 (entrenamiento) | lfm1.0 | HuggingFace, safetensors | Este modelo; fine-tune de razonamiento sobre Agent Orange |
-| xtools-at/LFM3-1.7B-AgentOrange-Claude-Code-2xMerge | 1,73B | No disponible | lfm1.0 | HuggingFace | Checkpoint padre; base de código y agentes sin el ajuste de razonamiento |
-| LiquidAI/LFM3-1.7B | 1,73B | No disponible | lfm1.0 | HuggingFace | Modelo base original de Liquid AI, tri-híbrido |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 | Apache 2.0 | HuggingFace | Alternativa de tamaño similar con contexto mayor y licencia permisiva; sin datos de comparación directa con este modelo |
+| xtools-at/LFM3-1.7B-Claude-Opus-Reasoning-Distilled | 1,73B | 8.192 (entrenamiento) | lfm1.0 | Hugging Face, safetensors | Este modelo; fine-tune de razonamiento sobre Agent Orange |
+| xtools-at/LFM3-1.7B-AgentOrange-Claude-Code-2xMerge | 1,73B | No disponible | lfm1.0 | Hugging Face | Checkpoint padre; base de código y agentes sin el ajuste de razonamiento |
+| LiquidAI/LFM3-1.7B | 1,73B | No disponible | lfm1.0 | Hugging Face | Modelo base original de Liquid AI, tri-híbrido |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 | Apache 2.0 | Hugging Face | Alternativa de tamaño similar con contexto mayor y licencia permisiva; sin datos de comparación directa con este modelo |
 
 No se dispone de comparaciones de rendimiento medidas entre estos modelos en la información proporcionada.
 
@@ -86,7 +86,7 @@ No se dispone de comparaciones de rendimiento medidas entre estos modelos en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xtools-at/LFM3-1.7B-Claude-Opus-Reasoning-Distilled
+- Hugging Face: https://huggingface.co/xtools-at/LFM3-1.7B-Claude-Opus-Reasoning-Distilled
 - Modelo base (checkpoint padre): https://huggingface.co/xtools-at/LFM3-1.7B-AgentOrange-Claude-Code-2xMerge
 - Modelo original de Liquid AI: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Fine-tune de código (componente del merge): https://huggingface.co/mondk/LFM3-1.7B-Claude-Code-Safetensors

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pi0_5_robodojo_taco_visual_hold_b64_60k` es una política robótica de bajo nivel (vision-language-action, VLA) publicada por el usuario Myungkyu en HuggingFace. Se trata de un ajuste fino del modelo base `lerobot/pi05_base`, entrenado sobre el conjunto [`Myungkyu/RoboDojo-taco-visual-gemini`](https://huggingface.co/datasets/Myungkyu/RoboDojo-taco-visual-gemini), compuesto por demostraciones de 8 tareas bimanuales de sobremesa sobre robot real, con 100 demostraciones por tarea, anotadas con etiquetas densas de subtarea generadas de forma offline. El repositorio ocupa 9,4 GB y contiene pesos en formato safetensors con 4.143.404.816 parámetros (unos 4,14 mil millones).
+`pi0_5_robodojo_taco_visual_hold_b64_60k` es una política robótica de bajo nivel (vision-language-action, VLA) publicada por el usuario Myungkyu en Hugging Face. Se trata de un ajuste fino del modelo base `lerobot/pi05_base`, entrenado sobre el conjunto [`Myungkyu/RoboDojo-taco-visual-gemini`](https://huggingface.co/datasets/Myungkyu/RoboDojo-taco-visual-gemini), compuesto por demostraciones de 8 tareas bimanuales de sobremesa sobre robot real, con 100 demostraciones por tarea, anotadas con etiquetas densas de subtarea generadas de forma offline. El repositorio ocupa 9,4 GB y contiene pesos en formato safetensors con 4.143.404.816 parámetros (unos 4,14 mil millones).
 
 Su relevancia es acotada pero específica: no es un modelo de propósito general, sino un checkpoint de investigación para el banco de pruebas RoboDojo, orientado a evaluar políticas de horizonte largo en manipulación bimanual. La innovación declarada es doble: por un lado, una arquitectura Pi0.5 con tres vistas de cámara en vivo (cabeza y ambas muñecas) más una ranura de keyframe en la que se dibuja un marcador de punto sobre el fotograma de cabeza; por otro, un esquema de *subtask hold* en el que la cola del chunk de acciones que excede el final de la subtarea actual repite el último objetivo intra-subtarea.
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `pi0_5_robodojo_taco_visual_hold_b64_60k` | 4,14 mil millones | No disponible | 8 tareas bimanuales de sobremesa (RoboDojo) | No disponible | HuggingFace, 0 descargas, 0 likes |
-| `lerobot/pi05_base` (modelo base) | No disponible en la información proporcionada | No disponible | Política generalista previa al ajuste fino | No disponible | HuggingFace |
+| `pi0_5_robodojo_taco_visual_hold_b64_60k` | 4,14 mil millones | No disponible | 8 tareas bimanuales de sobremesa (RoboDojo) | No disponible | Hugging Face, 0 descargas, 0 likes |
+| `lerobot/pi05_base` (modelo base) | No disponible en la información proporcionada | No disponible | Política generalista previa al ajuste fino | No disponible | Hugging Face |
 | Otras alternativas de la categoría VLA (pi0, OpenVLA, GR00T, etc.) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La información proporcionada no incluye especificaciones ni resultados de modelos comparables, por lo que no es posible establecer una comparación cuantitativa fiable. La única comparación verificable es con el modelo base: este checkpoint añade el ajuste fino sobre el dataset RoboDojo, la ranura de keyframe con marcador y el esquema de *subtask hold*, que el modelo base no incorpora.
@@ -94,7 +94,7 @@ La información proporcionada no incluye especificaciones ni resultados de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/pi0_5_robodojo_taco_visual_hold_b64_60k
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/pi0_5_robodojo_taco_visual_hold_b64_60k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/RoboDojo-taco-visual-gemini
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Perfil del autor: https://huggingface.co/Myungkyu

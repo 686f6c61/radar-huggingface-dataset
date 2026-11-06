@@ -84,9 +84,9 @@ En escritura creativa, un panel de 32 briefs con dos muestras cada uno y juicio 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B DAT GRPO Full250 | 27,36B | no disponible | Fine-tune GRPO sobre DAT | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| Qwen/Qwen3.8-27B (base) | 27,36B | no disponible | Modelo multimodal generalista | no disponible en la informacion | HuggingFace |
-| unsloth/Qwen3.8-27B-unsloth-bnb-4bit | 27,36B | no disponible | Cuantizacion NF4 para entrenamiento | no disponible en la informacion | HuggingFace |
+| Qwen3.8-27B DAT GRPO Full250 | 27,36B | no disponible | Fine-tune GRPO sobre DAT | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| Qwen/Qwen3.8-27B (base) | 27,36B | no disponible | Modelo multimodal generalista | no disponible en la informacion | Hugging Face |
+| unsloth/Qwen3.8-27B-unsloth-bnb-4bit | 27,36B | no disponible | Cuantizacion NF4 para entrenamiento | no disponible en la informacion | Hugging Face |
 
 La comparativa con alternativas de la misma categoria (modelos de ~27B orientados a creatividad o a ajuste por RL) no esta disponible en la informacion proporcionada. El baseline reconstruido a partir de la misma inicializacion NF4 es la referencia mas directa y ya aparece en las tablas de benchmarks.
 
@@ -106,7 +106,7 @@ La comparativa con alternativas de la misma categoria (modelos de ~27B orientado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/crazyleg11/qwen3.8-27b-dat-grpo-full250
+- Modelo en Hugging Face: https://huggingface.co/crazyleg11/qwen3.8-27b-dat-grpo-full250
 - Release GGUF: https://huggingface.co/crazyleg11/qwen3.8-27b-dat-grpo-full250-GGUF
 - Demo en Space: https://huggingface.co/spaces/crazyleg11/full250-creativity
 - Run de entrenamiento y muestras: https://forge.coreweave.com/wandb/savsunenko-sasha/llm-creativity-grpo/runs/s1rlnaat

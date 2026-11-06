@@ -107,7 +107,7 @@ La comparación con modelos de otros fabricantes del mismo tamaño o tarea no es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ai-ecoverse/Ministral-3-8B-Reasoning-2512-ONNX
+- Repositorio Hugging Face: https://huggingface.co/ai-ecoverse/Ministral-3-8B-Reasoning-2512-ONNX
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512
 - Exportación oficial de referencia (3B, misma disposición de ficheros): https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-ONNX
 - System prompt recomendado por Mistral: https://huggingface.co/ai-ecoverse/Ministral-3-8B-Reasoning-2512-ONNX/blob/main/SYSTEM_PROMPT.txt

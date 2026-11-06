@@ -120,7 +120,7 @@ Diferencias concretas frente al original: la conversion impone ventanas fijas po
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversion: https://huggingface.co/seanll95/sidon-coreml
+- Repositorio Hugging Face de la conversion: https://huggingface.co/seanll95/sidon-coreml
 - Modelo base: https://huggingface.co/sarulab-speech/sidon-v0.1
 - Extractor de caracteristicas referenciado (`SeamlessM4TFeatureExtractor` de w2v-BERT 2.0): https://huggingface.co/facebook/w2v-bert-2.0
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los enlaces recuperados correspondian a guias de inicio de sesion sin contrasena en Windows y cuentas de Microsoft, sin relacion con el repositorio.

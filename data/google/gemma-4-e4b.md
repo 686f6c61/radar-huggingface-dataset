@@ -6,7 +6,7 @@ Gemma 4 E4B es un modelo multimodal abierto desarrollado por Google DeepMind com
 
 El modelo esta disenado para ejecucion local: 42 capas, ventana de atencion deslizante de 512 tokens y una longitud de contexto de 128K tokens, frente a los 256K de los modelos medianos de la familia (12B, 26B A4B y 31B Dense). Incorpora soporte nativo del rol `system`, modos de razonamiento configurables (thinking mode), function calling nativo y un modelo draft dedicado para decodificacion especulativa (multi-token prediction). Mantiene soporte multilingue en mas de 140 idiomas.
 
-Su relevancia actual es doble: por un lado, cubre el hueco de despliegue en portatiles, telefonos de gama alta y GPUs de consumo, con una fuente externa que cifra el minimo en 8 GB de VRAM; por otro, publica pesos en abierto bajo licencia Apache 2.0 con 582.152 descargas y 424 likes en HuggingFace, lo que lo situa como una de las opciones de referencia para prototipado multimodal sin depender de APIs propietarias.
+Su relevancia actual es doble: por un lado, cubre el hueco de despliegue en portatiles, telefonos de gama alta y GPUs de consumo, con una fuente externa que cifra el minimo en 8 GB de VRAM; por otro, publica pesos en abierto bajo licencia Apache 2.0 con 582.152 descargas y 424 likes en Hugging Face, lo que lo situa como una de las opciones de referencia para prototipado multimodal sin depender de APIs propietarias.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Su relevancia actual es doble: por un lado, cubre el hueco de despliegue en port
 | Licencia | Apache 2.0 (la model card enlaza ademas a los terminos de licencia de Gemma 4) |
 | Formato de pesos | safetensors (libreria transformers) |
 
-Datos adicionales: 42 capas, ventana deslizante de 512 tokens, vocabulario de 262K tokens, encoder de vision de aproximadamente 150M de parametros, encoder de audio de aproximadamente 300M de parametros, pipeline `any-to-any`, tamano del repositorio 48,1 GB. Fecha de creacion en HuggingFace: 2026-03-02; ultima actualizacion: 2026-07-15.
+Datos adicionales: 42 capas, ventana deslizante de 512 tokens, vocabulario de 262K tokens, encoder de vision de aproximadamente 150M de parametros, encoder de audio de aproximadamente 300M de parametros, pipeline `any-to-any`, tamano del repositorio 48,1 GB. Fecha de creacion en Hugging Face: 2026-03-02; ultima actualizacion: 2026-07-15.
 
 ## Arquitectura y entrenamiento
 
@@ -93,8 +93,8 @@ Frente a alternativas de otros fabricantes del mismo rango de tamano, no se disp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/google/gemma-4-E4B
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Hugging Face: https://huggingface.co/google/gemma-4-E4B
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Google DeepMind, pagina de Gemma 4: https://deepmind.google/models/gemma/gemma-4/
 - Model card oficial (Google AI for Developers): https://ai.google.dev/gemma/docs/core/model_card_4
 - Documentacion principal de Gemma 4: https://ai.google.dev/gemma/docs/core

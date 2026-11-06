@@ -64,7 +64,7 @@ El método Cold Fusion (GAIN+Unsloth) afirma mantener el 99% del rendimiento BF1
 - VRAM estimada: el archivo safetensors ocupa ~26 GB. Con cuantización W4A16, los pesos NVFP4 requieren aproximadamente 14 GB, más las partes en BF16 (torre de visión, atención lineal, lm_head, embeddings, MTP head) y la caché KV. Se estima un mínimo de 24-32 GB de VRAM para inferencia con contexto completo.
 - GPUs compatibles: NVIDIA Blackwell (B200, GB200, RTX 5090 con 32 GB). La etiqueta `blackwell` en los tags confirma que NVFP4 está diseñado para esta arquitectura. RTX 4090 (24 GB) podría ser insuficiente para contexto completo.
 - Soporte AMD: según el blog de AMD, Qwen3.8-27B tiene soporte Day 0 en procesadores AMD Ryzen AI y GPUs Radeon mediante LM Studio.
-- Opciones de despliegue: vLLM (soporta `compressed-tensors`), HuggingFace transformers, LM Studio. El tag `endpoints_compatible` indica compatibilidad con despliegue como endpoint.
+- Opciones de despliegue: vLLM (soporta `compressed-tensors`), Hugging Face transformers, LM Studio. El tag `endpoints_compatible` indica compatibilidad con despliegue como endpoint.
 - Latencia y throughput: no disponible. La decodificación especulativa con MTP head debería reducir la latencia respecto a decodificación autoregresiva estándar, pero no se han publicado cifras concretas.
 
 ## Comparativa con modelos similares
@@ -83,13 +83,13 @@ La principal diferencia entre este checkpoint y el modelo fuente de DavidAU es l
 - Cuantización sin calibración: al no utilizarse datos de calibración, puede haber degradación de calidad no medida en ciertas tareas o dominios específicos.
 - Requisitos de hardware: NVFP4 está diseñado para GPUs NVIDIA Blackwell. En hardware anterior (Ampere, Ada Lovelace) el formato puede no ser compatible o requerir conversión.
 - Rendimiento no verificado: los resultados de benchmarks (ARC-C, ARC-E) son reclamados por el autor del modelo base y no han sido replicados de forma independiente.
-- Adopción nula: el checkpoint tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido probado por la comunidad.
+- Adopción nula: el checkpoint tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido probado por la comunidad.
 - Nombre del modelo: los términos "Heretic" y "Uncensored" en el nombre indican explícitamente la eliminación de restricciones, lo que debe tenerse en cuenta antes de su uso en producción.
 - Idioma: el soporte multilingüe está declarado pero no se especifican los idiomas concretos ni la calidad relativa frente al inglés.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/esatapedico/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/esatapedico/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Modelo base original (Qwen): https://huggingface.co/Qwen/Qwen3.8-27B
 - Familia GGUF: https://huggingface.co/esatapedico/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4-GGUF

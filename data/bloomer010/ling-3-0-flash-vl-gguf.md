@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/bloomer010/Ling-3.0-flash-VL-GGUF
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/bloomer010/Ling-3.0-flash-VL-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash-VL
 - Pull request del parser de Ling en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/28682
 - Pull request de manejo de UTF-8 inválido en el límite de token: https://github.com/ggml-org/llama.cpp/pull/28724

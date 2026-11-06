@@ -89,8 +89,8 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | SARI | BLEU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mistral7b-dyslexie-french-cp-ce1 | 7 B + LoRA r=16 | 1.024 tokens configurados | 84,64 | 70,02 | CC BY 4.0 | Adaptador LoRA en HuggingFace, 0 descargas |
-| Mistral-7B-Instruct-v0.2 zero-shot | 7 B | no disponible en la informacion proporcionada | 53,01 | 26,85 | Apache 2.0 (modelo base) | Pesos completos en HuggingFace |
+| mistral7b-dyslexie-french-cp-ce1 | 7 B + LoRA r=16 | 1.024 tokens configurados | 84,64 | 70,02 | CC BY 4.0 | Adaptador LoRA en Hugging Face, 0 descargas |
+| Mistral-7B-Instruct-v0.2 zero-shot | 7 B | no disponible en la informacion proporcionada | 53,01 | 26,85 | Apache 2.0 (modelo base) | Pesos completos en Hugging Face |
 | ETR-fr/Mistral+LoRA | 7 B + LoRA | no disponible | 42,27 | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 Los tres sistemas comparados comparten la misma familia de modelo base, de modo que la diferencia de SARI (84,64 frente a 53,01 y 42,27) refleja el efecto del ajuste fino y del referencial de reglas, no un cambio de escala. No se dispone de comparativas con modelos especializados en simplificación de francés de otras familias (por ejemplo, enfoques basados en mT5) en la información proporcionada.
@@ -110,7 +110,7 @@ Los tres sistemas comparados comparten la misma familia de modelo base, de modo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lsadouk1111/mistral7b-dyslexie-french-cp-ce1
+- Modelo en Hugging Face: https://huggingface.co/lsadouk1111/mistral7b-dyslexie-french-cp-ce1
 - Dataset asociado: https://huggingface.co/datasets/lsadouk1111/dyslexia-french-cp-ce1
 - Código y reproducibilidad: https://github.com/lsadouk1111/dyslexia-french-simplification
 - Modelo base (referencia de la model card): https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PlateExtract es un adaptador LoRA de rango 32 entrenado sobre el modelo de difusion de imagen Qwen-Image-2.1, desarrollado por Xavier Jara (usuario trmz en HuggingFace). Su funcion es extraer el primer plano de una imagen compuesta como un PNG con canal alfa transparente, tomando como entradas la imagen compuesta y su fondo limpio correspondiente. El resultado conserva bordes suaves y transparencia parcial gracias al soporte RGBA nativo del modelo base.
+PlateExtract es un adaptador LoRA de rango 32 entrenado sobre el modelo de difusion de imagen Qwen-Image-2.1, desarrollado por Xavier Jara (usuario trmz en Hugging Face). Su funcion es extraer el primer plano de una imagen compuesta como un PNG con canal alfa transparente, tomando como entradas la imagen compuesta y su fondo limpio correspondiente. El resultado conserva bordes suaves y transparencia parcial gracias al soporte RGBA nativo del modelo base.
 
 El adaptador se entreno durante 3.000 pasos y esta pensado para inferencia muy corta: 6 pasos de muestreo sin CFG (classifier-free guidance), ampliables a 40 pasos para un muestreo mas largo. El repositorio ocupa 0,3 GB e incluye los pesos `loras/extract.safetensors` y un script de inferencia bajo licencia MIT.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Soporte alfa | VAE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| trmz/plate-extract-qwen-image-2.1 | LoRA rango 32 sobre Qwen-Image-2.1 | no disponible (repo de 0,3 GB) | RGBA nativo, sin VAE personalizado | VAE nativo de Qwen-Image-2.1 | qwen-research (pesos), MIT (codigo) | HuggingFace, 47 descargas, 10 likes |
-| trmz/flux2-klein-alpha | Modelo sobre FLUX.2 Klein 4B | 4B (modelo base) | RGBA mediante VAE personalizado | VAE RGBA personalizado | Uso comercial, segun la model card | HuggingFace |
-| Qwen/Qwen-Image-2.1 | Modelo base de difusion imagen a imagen | no disponible | RGBA nativo | VAE nativo | qwen-research | HuggingFace |
+| trmz/plate-extract-qwen-image-2.1 | LoRA rango 32 sobre Qwen-Image-2.1 | no disponible (repo de 0,3 GB) | RGBA nativo, sin VAE personalizado | VAE nativo de Qwen-Image-2.1 | qwen-research (pesos), MIT (codigo) | Hugging Face, 47 descargas, 10 likes |
+| trmz/flux2-klein-alpha | Modelo sobre FLUX.2 Klein 4B | 4B (modelo base) | RGBA mediante VAE personalizado | VAE RGBA personalizado | Uso comercial, segun la model card | Hugging Face |
+| Qwen/Qwen-Image-2.1 | Modelo base de difusion imagen a imagen | no disponible | RGBA nativo | VAE nativo | qwen-research | Hugging Face |
 
 No se dispone de datos de rendimiento cuantitativos que permitan comparar la calidad de extraccion entre estas alternativas.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento cuantitativos que permitan comparar la cal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trmz/plate-extract-qwen-image-2.1
+- Modelo en Hugging Face: https://huggingface.co/trmz/plate-extract-qwen-image-2.1
 - Codigo de inferencia: https://huggingface.co/trmz/plate-extract-qwen-image-2.1/blob/main/inference/qwen_extract.py
 - Licencia de los pesos: https://huggingface.co/trmz/plate-extract-qwen-image-2.1/blob/main/LICENSE
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1

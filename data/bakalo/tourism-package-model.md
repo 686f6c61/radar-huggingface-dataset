@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bakalo/tourism-package-model es un clasificador tabular binario publicado en HuggingFace por el usuario Bakalo. Su objetivo es predecir la compra de un paquete de turismo de bienestar (wellness tourism package) a partir de variables tabulares de clientes potenciales. No es un modelo de lenguaje: se trata de un artefacto de machine learning clásico serializado con joblib y cargable en Python mediante `joblib.load(...)`, que devuelve un diccionario con las claves `model`, `threshold`, `feature_columns` y `model_name`.
+Bakalo/tourism-package-model es un clasificador tabular binario publicado en Hugging Face por el usuario Bakalo. Su objetivo es predecir la compra de un paquete de turismo de bienestar (wellness tourism package) a partir de variables tabulares de clientes potenciales. No es un modelo de lenguaje: se trata de un artefacto de machine learning clásico serializado con joblib y cargable en Python mediante `joblib.load(...)`, que devuelve un diccionario con las claves `model`, `threshold`, `feature_columns` y `model_name`.
 
 El modelo finalmente seleccionado fue XGBoost, escogido mediante validación cruzada de 5 pliegues optimizando F1. El umbral de decisión se fijó en 0,499 tras ajustarlo sobre predicciones out-of-fold del conjunto de entrenamiento. Sobre el conjunto de test alcanza 0,922 de accuracy, 0,829 de precision, 0,748 de recall, 0,786 de F1 y 0,941 de ROC-AUC.
 
@@ -25,8 +25,8 @@ Su relevancia es acotada y muy específica: es un artefacto de MLOps orientado a
 | Umbral de decisión | 0,499 (ajustado sobre predicciones out-of-fold) |
 | Tamaño del repositorio | 0,0 GB reportados por la plataforma |
 | Descargas / likes | 0 descargas, 0 likes |
-| Fecha de creación | 2026-09-20 (según metadatos de HuggingFace) |
-| Última actualización | 2026-09-20 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-09-20 (según metadatos de Hugging Face) |
+| Última actualización | 2026-09-20 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -83,7 +83,7 @@ No se dispone de resultados de este modelo frente a alternativas sobre el mismo 
 
 | Alternativa | Tipo | Rendimiento en este problema | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Bakalo/tourism-package-model (XGBoost) | GBDT, XGBoost | Test: F1 0,786; ROC-AUC 0,941; accuracy 0,922 | No disponible | HuggingFace, 0 descargas |
+| Bakalo/tourism-package-model (XGBoost) | GBDT, XGBoost | Test: F1 0,786; ROC-AUC 0,941; accuracy 0,922 | No disponible | Hugging Face, 0 descargas |
 | LightGBM | GBDT | No disponible (no evaluado en la información proporcionada) | No disponible para este artefacto | Librería de código abierto, requiere entrenamiento propio |
 | CatBoost | GBDT con soporte nativo de categóricas | No disponible (no evaluado en la información proporcionada) | No disponible para este artefacto | Librería de código abierto, requiere entrenamiento propio |
 | Regresión logística | Modelo lineal | No disponible (no evaluado en la información proporcionada) | No disponible para este artefacto | Implementación estándar en scikit-learn |
@@ -105,5 +105,5 @@ No se dispone de resultados de este modelo frente a alternativas sobre el mismo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bakalo/tourism-package-model
+- Modelo en Hugging Face: https://huggingface.co/Bakalo/tourism-package-model
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web: los resultados devueltos correspondían a páginas de ayuda de YouTube Music, sin ninguna relación con este modelo. No hay paper, blog, repositorio de código ni demo identificados en la información disponible.

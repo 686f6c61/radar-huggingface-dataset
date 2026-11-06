@@ -87,9 +87,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fysical/so101ball_pi05pilot_lr10_S100_seed0 | no disponible | 3 imagenes 224x224 + estado (32,) | Pick-and-place de pelota verde en SO-101 | apache-2.0 | HuggingFace |
-| lerobot/pi05_base | no disponible | Vision-Language-Action (Pi05) | Base generalista para fine-tuning | no disponible | HuggingFace |
-| lerobot/pi0_base | no disponible | Vision-Language-Action (π₀) | Base generalista para fine-tuning | no disponible | HuggingFace |
+| fysical/so101ball_pi05pilot_lr10_S100_seed0 | no disponible | 3 imagenes 224x224 + estado (32,) | Pick-and-place de pelota verde en SO-101 | apache-2.0 | Hugging Face |
+| lerobot/pi05_base | no disponible | Vision-Language-Action (Pi05) | Base generalista para fine-tuning | no disponible | Hugging Face |
+| lerobot/pi0_base | no disponible | Vision-Language-Action (π₀) | Base generalista para fine-tuning | no disponible | Hugging Face |
 
 La informacion proporcionada solo permite confirmar la relacion de dependencia con `lerobot/pi05_base`. No se dispone de datos de rendimiento ni de parametros de las alternativas para establecer una comparacion cuantitativa. Otras politicas de la misma categoria, como `lerobot/pi0_base` o SmolVLA, se citan como referencia de ecosistema, pero sus especificaciones no estan disponibles en esta busqueda.
 
@@ -107,7 +107,7 @@ La informacion proporcionada solo permite confirmar la relacion de dependencia c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fysical/so101ball_pi05pilot_lr10_S100_seed0
+- Modelo en Hugging Face: https://huggingface.co/fysical/so101ball_pi05pilot_lr10_S100_seed0
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/fysical/greenball_pool_225_v1
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=fysical/greenball_pool_225_v1

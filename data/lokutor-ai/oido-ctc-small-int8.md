@@ -108,7 +108,7 @@ Comparación dentro de la propia familia Oído y con alternativas de ASR en el m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lokutor-ai/oido-ctc-small-int8
+- Modelo en Hugging Face: https://huggingface.co/lokutor-ai/oido-ctc-small-int8
 - Paper (Oído: Open-Vocabulary Speech Recognition on a $5 Microcontroller without a Neural Accelerator): https://huggingface.co/papers/2610.13447 (arXiv 2610.13447)
 - Repositorio de código, firmware y herramientas: https://github.com/lokutor-ai/oido
 - Detalles de velocidad y memoria: https://github.com/lokutor-ai/oido#speed-and-memory

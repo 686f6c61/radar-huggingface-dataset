@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una política de control visuomotor basada en Diffusion Policy, entrenada por el usuario escapebirdy con el framework LeRobot de HuggingFace. Está diseñada para tareas de manipulación robótica con contacto, concretamente para el corte de cuerda (rope cutting), como indica el nombre del dataset de entrenamiento `rope_cut_oct_xyzi_4096_v1`. El modelo implementa el enfoque descrito en el paper "Diffusion Policy" (arXiv:2303.04137), que trata el control visuomotor como un proceso generativo de difusión, produciendo trayectorias de acción suaves y multi-paso.
+Este modelo es una política de control visuomotor basada en Diffusion Policy, entrenada por el usuario escapebirdy con el framework LeRobot de Hugging Face. Está diseñada para tareas de manipulación robótica con contacto, concretamente para el corte de cuerda (rope cutting), como indica el nombre del dataset de entrenamiento `rope_cut_oct_xyzi_4096_v1`. El modelo implementa el enfoque descrito en el paper "Diffusion Policy" (arXiv:2303.04137), que trata el control visuomotor como un proceso generativo de difusión, produciendo trayectorias de acción suaves y multi-paso.
 
 Con 257 millones de parámetros y un tamaño de repositorio de 1 GB, es un modelo relativamente compacto para robótica, almacenado en formato safetensors. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. El modelo se publicó en septiembre de 2026 y no registra descargas ni valoraciones en el momento de su consulta, lo que sugiere que es un modelo reciente o de nicho dentro del ecosistema LeRobot.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Arquitectura | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| escapebirdy/rope_cut_oct_xyzi_octe_4096 | 257M | Diffusion Policy | Corte de cuerda | Apache 2.0 | HuggingFace |
+| escapebirdy/rope_cut_oct_xyzi_octe_4096 | 257M | Diffusion Policy | Corte de cuerda | Apache 2.0 | Hugging Face |
 | ACT (Action Chunking with Transformers) | variable | Transformer | Manipulación general | Apache 2.0 | LeRobot Hub |
 | VQ-BeT | variable | Transformer + VQ | Manipulación general | Apache 2.0 | LeRobot Hub |
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos para la t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/escapebirdy/rope_cut_oct_xyzi_octe_4096
+- Modelo en Hugging Face: https://huggingface.co/escapebirdy/rope_cut_oct_xyzi_octe_4096
 - Paper Diffusion Policy: https://huggingface.co/papers/2303.04137
 - Dataset de entrenamiento: https://huggingface.co/datasets/escapebirdy/rope_cut_oct_xyzi_4096_v1
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

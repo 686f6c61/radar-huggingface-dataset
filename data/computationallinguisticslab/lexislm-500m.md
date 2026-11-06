@@ -87,9 +87,9 @@ No se dispone de datos de benchmarks comparables de otros modelos en la informac
 
 | Modelo | Parámetros | Contexto | Idioma principal | Licencia | Disponibilidad |
 |---|---:|---:|---|---|---|
-| LexisLM-500m | 0,502B | 4.096 | Griego | No disponible | HuggingFace |
-| Alternativas de ~0,5B multilingües | ~0,5B | Variable | Multilingüe | Variable | HuggingFace |
-| Alternativas de ~1B monolingües | ~1B | Variable | Variable | Variable | HuggingFace |
+| LexisLM-500m | 0,502B | 4.096 | Griego | No disponible | Hugging Face |
+| Alternativas de ~0,5B multilingües | ~0,5B | Variable | Multilingüe | Variable | Hugging Face |
+| Alternativas de ~1B monolingües | ~1B | Variable | Variable | Variable | Hugging Face |
 
 No se han publicado comparaciones de rendimiento con modelos similares en la información disponible.
 
@@ -108,5 +108,5 @@ No se han publicado comparaciones de rendimiento con modelos similares en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ComputationalLinguisticsLab/LexisLM-500m
+- Hugging Face: https://huggingface.co/ComputationalLinguisticsLab/LexisLM-500m
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

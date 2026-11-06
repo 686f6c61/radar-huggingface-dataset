@@ -88,7 +88,7 @@ No se dispone en la información proporcionada de datos de modelos comparables (
 
 ## Enlaces
 
-- [HuggingFace: cstr/MI-GAN-512-GGUF](https://huggingface.co/cstr/MI-GAN-512-GGUF)
+- [Hugging Face: cstr/MI-GAN-512-GGUF](https://huggingface.co/cstr/MI-GAN-512-GGUF)
 - [Repositorio de código MI-GAN (Picsart AI Research)](https://github.com/Picsart-AI-Research/MI-GAN/tree/2b793c5ece43f4253e32d4afc257120a5deed6f5)
 - Documentación de CrispEmbed: `docs/inpainting-cli.md` y `docs/inpainting-precision.md` (referenciados en la model card, sin URL pública en la información disponible)
 - Script de conversión: `models/convert-migan-to-gguf.py` (referenciado en la model card, sin URL pública en la información disponible)

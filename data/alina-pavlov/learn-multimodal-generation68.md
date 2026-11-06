@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alina-pavlov/learn-multimodal-generation68 es un repositorio de HuggingFace publicado el 25 de septiembre de 2026 que, según su propia model card, no contiene un modelo entrenado, sino una nota de investigación exploratoria sobre generación multimodal. El autor lo etiqueta como `research-notes` y advierte de forma explícita de que no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni checkpoint entrenado; los únicos artefactos declarados son `analysis.md` y `README.md`.
+Alina-pavlov/learn-multimodal-generation68 es un repositorio de Hugging Face publicado el 25 de septiembre de 2026 que, según su propia model card, no contiene un modelo entrenado, sino una nota de investigación exploratoria sobre generación multimodal. El autor lo etiqueta como `research-notes` y advierte de forma explícita de que no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni checkpoint entrenado; los únicos artefactos declarados son `analysis.md` y `README.md`.
 
 El repositorio no declara arquitectura, número de parámetros real, longitud de contexto, idiomas soportados ni pipeline de inferencia. Los metadatos de safetensors asociados reportan 24.832 parámetros totales, una cifra incompatible con un modelo generativo multimodal y más coherente con tensores auxiliares o metadatos; el tamaño del repositorio es de 0,0 GB, lo que confirma que no hay pesos publicados.
 
@@ -23,7 +23,7 @@ Su relevancia es, por tanto, documental y metodológica: funciona como plantilla
 
 ## Arquitectura y entrenamiento
 
-No hay arquitectura que describir. La model card no menciona transformer, MoE, SSM ni ninguna variante hibrida, y tampoco indica dimensiones de capas, atencion, tokenizador o funcion de activacion. El tag `transformer` aparece en los metadatos de HuggingFace, pero la propia nota lo contradice al declarar que no existe checkpoint entrenado, por lo que ese tag no puede tomarse como especificacion tecnica.
+No hay arquitectura que describir. La model card no menciona transformer, MoE, SSM ni ninguna variante hibrida, y tampoco indica dimensiones de capas, atencion, tokenizador o funcion de activacion. El tag `transformer` aparece en los metadatos de Hugging Face, pero la propia nota lo contradice al declarar que no existe checkpoint entrenado, por lo que ese tag no puede tomarse como especificacion tecnica.
 
 Tampoco se documentan datos de entrenamiento: no hay numero de tokens, composicion del dataset, fases de preentrenamiento, ajuste supervisado, RLHF ni DPO. La model card se limita a enumerar lo que la nota cubre (alcance de la pregunta de investigacion, comparacion propuesta con lineas base emparejadas, benchmarks publicos adecuados a la tarea, comprobaciones de reproducibilidad y modos de fallo) y exige que, si se anaden resultados en el futuro, incluyan versiones de dataset, comandos, semillas, hardware y registros crudos.
 
@@ -47,7 +47,7 @@ El repositorio no contiene un modelo ejecutable, de modo que ninguno de los caso
 - Auditoria de reproducibilidad en publicaciones: las exigencias de la model card (comandos, hardware, logs crudos) pueden reutilizarse como lista de comprobacion interna antes de enviar un articulo o un informe tecnico.
 - Formacion y revision metodologica: el repositorio puede emplearse como caso de estudio sobre la diferencia entre una nota exploratoria y un artefacto publicable, util en cursos de metodologia o en revision por pares.
 - Documentacion de modos de fallo en generacion multimodal: la nota reserva una seccion a failure modes, reutilizable como plantilla para catalogar errores tipicos (alucinacion visual, sesgo de texto dominante, incoherencia entre modalidades) una vez exista un sistema que evaluar.
-- Trazabilidad de artefactos en HuggingFace: sirve de ejemplo de repositorio con licencia CC-BY-4.0 que no publica pesos, util para definir politicas internas sobre que repositorios pueden citarse en documentacion tecnica y cuales no.
+- Trazabilidad de artefactos en Hugging Face: sirve de ejemplo de repositorio con licencia CC-BY-4.0 que no publica pesos, util para definir politicas internas sobre que repositorios pueden citarse en documentacion tecnica y cuales no.
 
 ## Benchmarks y rendimiento
 
@@ -89,7 +89,7 @@ No disponible. La informacion proporcionada no permite identificar modelos compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Alina-pavlov/learn-multimodal-generation68
+- Hugging Face: https://huggingface.co/Alina-pavlov/learn-multimodal-generation68
 - Artefacto principal citado en la model card: `analysis.md` (dentro del propio repositorio)
 - Documentacion: `README.md` (dentro del propio repositorio)
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web realizada no devolvio ningun resultado tecnico relacionado; los unicos resultados obtenidos corresponden a un vendedor de spas, a la onomastica del nombre Alina y a una marca de mobiliario, sin ninguna relacion con el repositorio.

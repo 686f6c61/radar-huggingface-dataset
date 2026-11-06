@@ -87,7 +87,7 @@ El autor detalla que, con la configuración por defecto, la peor charla en portu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/marcosremar2/acft-whisper-large-v3-ggml
+- Repositorio Hugging Face: https://huggingface.co/marcosremar2/acft-whisper-large-v3-ggml
 - Modelo base: https://huggingface.co/MahmoudAshraf/acft-whisper-large-v3
 - Receta ACFT de FUTO: https://github.com/futo-org/whisper-acft
 - whisper.cpp: https://github.com/ggml-org/whisper.cpp

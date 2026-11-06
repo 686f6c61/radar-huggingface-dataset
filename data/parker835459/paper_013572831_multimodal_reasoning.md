@@ -37,7 +37,7 @@ Dado que no es un modelo, los casos de uso se limitan al ámbito académico y de
 - Citación en trabajos de investigación: usar el documento como referencia en publicaciones sobre IA multimodal.
 - Estudio de estructura de papers: analizar el formato LaTeX/arXiv y el estilo narrativo progresivo como ejemplo de redacción académica.
 - Evaluación de licencias: verificar que el contenido se distribuye bajo Apache 2.0, permitiendo su reutilización con atribución.
-- Exploración de repositorios HF: identificar cómo se publican documentos de investigación en HuggingFace, aunque no sean modelos.
+- Exploración de repositorios HF: identificar cómo se publican documentos de investigación en Hugging Face, aunque no sean modelos.
 - Documentación interna: extraer ideas para proyectos propios sobre razonamiento multimodal, siempre citando la fuente.
 
 ## Benchmarks y rendimiento
@@ -62,5 +62,5 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/parker835459/paper_013572831_multimodal_reasoning
+- Repositorio Hugging Face: https://huggingface.co/parker835459/paper_013572831_multimodal_reasoning
 - No se han encontrado otros enlaces oficiales (paper en arXiv, blog del autor, etc.) en la información proporcionada.

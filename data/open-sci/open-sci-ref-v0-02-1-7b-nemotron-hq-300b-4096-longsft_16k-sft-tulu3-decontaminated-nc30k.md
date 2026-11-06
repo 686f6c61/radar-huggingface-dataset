@@ -2,7 +2,7 @@
 
 ## Resumen
 
-open-sci-ref-v0.02-1.7b-nemotron-hq-300B-4096-longsft_16k-SFT-Tulu3-decontaminated-nc30k es un modelo de lenguaje de 1.714.377.728 parametros (aproximadamente 1,7 mil millones) publicado por la organizacion open-sci en HuggingFace. Se trata de un ajuste fino supervisado (SFT) completo, no de un entrenamiento desde cero pese a lo que indica la model card autogenerada, realizado con el framework LLaMA-Factory sobre un dataset denominado Nemotron-Cascade-SFT-Stage-1-30k-sharegpt-hf. El nombre del repositorio sugiere una cadena de entrenamiento sobre una base Nemotron con datos tipo Tulu3 decontaminados y una ventana de contexto de 4096 tokens, ampliada a 16k en la fase de SFT.
+open-sci-ref-v0.02-1.7b-nemotron-hq-300B-4096-longsft_16k-SFT-Tulu3-decontaminated-nc30k es un modelo de lenguaje de 1.714.377.728 parametros (aproximadamente 1,7 mil millones) publicado por la organizacion open-sci en Hugging Face. Se trata de un ajuste fino supervisado (SFT) completo, no de un entrenamiento desde cero pese a lo que indica la model card autogenerada, realizado con el framework LLaMA-Factory sobre un dataset denominado Nemotron-Cascade-SFT-Stage-1-30k-sharegpt-hf. El nombre del repositorio sugiere una cadena de entrenamiento sobre una base Nemotron con datos tipo Tulu3 decontaminados y una ventana de contexto de 4096 tokens, ampliada a 16k en la fase de SFT.
 
 El modelo se publica con la pipeline `feature-extraction` y la etiqueta `custom_code`, lo que implica que requiere codigo personalizado del repositorio para cargarse correctamente con Transformers. La licencia es `other`, sin aclaracion adicional en la informacion disponible, y no se declaran idiomas soportados. El repositorio ocupa 3,4 GB en formato safetensors.
 
@@ -67,10 +67,10 @@ El model-index del autor declara una entrada (`sft__Nemotron-Cascade-SFT-Stage-1
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| open-sci-ref-v0.02-1.7b (este modelo) | 1,71B | 16k (segun nombre) | other | HuggingFace, 0 descargas |
-| Qwen2.5-1.5B | 1,54B | 32k | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama 3.2-1B | 1,24B | 128k | Llama 3.2 Community License | HuggingFace, ampliamente usado |
-| SmolLM2-1.7B | 1,71B | 8k | Apache 2.0 | HuggingFace, ampliamente usado |
+| open-sci-ref-v0.02-1.7b (este modelo) | 1,71B | 16k (segun nombre) | other | Hugging Face, 0 descargas |
+| Qwen2.5-1.5B | 1,54B | 32k | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama 3.2-1B | 1,24B | 128k | Llama 3.2 Community License | Hugging Face, ampliamente usado |
+| SmolLM2-1.7B | 1,71B | 8k | Apache 2.0 | Hugging Face, ampliamente usado |
 
 La comparativa de rendimiento no esta disponible porque este modelo no publica benchmarks. Frente a las alternativas, la diferencia principal es la licencia `other` sin aclarar y la ausencia de validacion publica, lo que reduce su atractivo para produccion.
 
@@ -88,7 +88,7 @@ La comparativa de rendimiento no esta disponible porque este modelo no publica b
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-4096-longsft_16k-SFT-Tulu3-decontaminated-nc30k
+- Hugging Face: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-4096-longsft_16k-SFT-Tulu3-decontaminated-nc30k
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - Tulu 3 (referencia en el nombre del modelo): https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B
 - Nemotron (familia base referenciada): https://huggingface.co/nvidia

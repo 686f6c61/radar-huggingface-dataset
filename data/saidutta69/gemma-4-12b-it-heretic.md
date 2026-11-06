@@ -91,10 +91,10 @@ No hay datos comparativos de rendimiento en tareas de razonamiento, codigo o mul
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| saidutta69/gemma-4-12B-it-heretic | 11,96B densos | 256K | Texto, imagen, audio | apache-2.0 (con `license_link` a licencia Gemma 4) | HuggingFace, 0 descargas |
-| google/gemma-4-12B-it | 11,96B densos | 256K | Texto, imagen, audio | Licencia Gemma 4 de Google | HuggingFace, modelo oficial |
-| google/gemma-4-31B | 30,7B densos | 256K | Texto, imagen | Licencia Gemma 4 de Google | HuggingFace |
-| google/gemma-4-E4B | 4,5B efectivos (8B con embeddings) | 128K | Texto, imagen, audio | Licencia Gemma 4 de Google | HuggingFace |
+| saidutta69/gemma-4-12B-it-heretic | 11,96B densos | 256K | Texto, imagen, audio | apache-2.0 (con `license_link` a licencia Gemma 4) | Hugging Face, 0 descargas |
+| google/gemma-4-12B-it | 11,96B densos | 256K | Texto, imagen, audio | Licencia Gemma 4 de Google | Hugging Face, modelo oficial |
+| google/gemma-4-31B | 30,7B densos | 256K | Texto, imagen | Licencia Gemma 4 de Google | Hugging Face |
+| google/gemma-4-E4B | 4,5B efectivos (8B con embeddings) | 128K | Texto, imagen, audio | Licencia Gemma 4 de Google | Hugging Face |
 
 La comparativa se limita a la familia Gemma 4 porque la informacion disponible no incluye datos de rendimiento que permitan contrastar esta variante con modelos abliterated equivalentes de otros autores. No se dispone de benchmarks comparativos publicados en la informacion proporcionada.
 
@@ -112,15 +112,15 @@ La comparativa se limita a la familia Gemma 4 porque la informacion disponible n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saidutta69/gemma-4-12B-it-heretic
+- Modelo en Hugging Face: https://huggingface.co/saidutta69/gemma-4-12B-it-heretic
 - Modelo base: https://huggingface.co/google/gemma-4-12B
 - Modelo base instructivo: https://huggingface.co/google/gemma-4-12B-it
 - Heretic: https://heretic-project.org
 - Documentacion de Gemma: https://ai.google.dev/gemma/docs/core
 - Blog de lanzamiento de Gemma 4 12B: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/
 - Informe tecnico: https://arxiv.org/abs/2607.02770
-- Coleccion de Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion de Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Repositorio GitHub de Google Gemma: https://github.com/google-gemma
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces validos son los procedentes de la model card y del repositorio de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces validos son los procedentes de la model card y del repositorio de Hugging Face.

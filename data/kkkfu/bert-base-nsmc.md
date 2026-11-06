@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kkkfu/bert-base-nsmc` es un checkpoint de BERT base (110 millones de parámetros) fine-tuneado sobre el corpus NSMC (Naver Sentiment Movie Corpus), un conjunto de datos en coreano compuesto por reseñas de películas etiquetadas como positivas o negativas. Aunque la model card oficial está prácticamente vacía y no declara autoría, licencia ni detalles de entrenamiento, el nombre y el pipeline de HuggingFace (`text-classification`) indican que su función es el análisis de sentimiento binario en coreano. El repositorio contiene pesos en formato `safetensors` (0,4 GB) y es compatible con la librería `transformers` de HuggingFace.
+El modelo `kkkfu/bert-base-nsmc` es un checkpoint de BERT base (110 millones de parámetros) fine-tuneado sobre el corpus NSMC (Naver Sentiment Movie Corpus), un conjunto de datos en coreano compuesto por reseñas de películas etiquetadas como positivas o negativas. Aunque la model card oficial está prácticamente vacía y no declara autoría, licencia ni detalles de entrenamiento, el nombre y el pipeline de Hugging Face (`text-classification`) indican que su función es el análisis de sentimiento binario en coreano. El repositorio contiene pesos en formato `safetensors` (0,4 GB) y es compatible con la librería `transformers` de Hugging Face.
 
 Este modelo es relevante porque representa un caso típico de fine-tuning de BERT sobre un dataset específico de dominio, en este caso el análisis de opiniones de cine en coreano. Su tamaño reducido lo hace adecuado para despliegue en entornos con recursos limitados, aunque la falta de documentación y de resultados de evaluación limita su uso en producción sin una validación previa.
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: menos de 1 GB en fp32 para una secuencia de 512 tokens (110 millones de parametros). Con cuantizacion a int8, la huella se reduce a unos 110 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1050 Ti, RTX 2060) o incluso CPU para inferencia por lotes pequeños.
 - Cabe en GPUs de consumo y en hardware embebido (Raspberry Pi con suficiente RAM).
-- Opciones de despliegue: se puede servir con HuggingFace `transformers`, `text-embeddings-inference` (compatible segun los tags), `vLLM` (aunque no esta optimizado para modelos encoder), `llama.cpp` (no compatible directamente por ser encoder) u `Ollama` (tampoco soporta BERT de forma nativa). La opcion mas sencilla es usar la API de HuggingFace o un servidor FastAPI con `transformers`.
+- Opciones de despliegue: se puede servir con Hugging Face `transformers`, `text-embeddings-inference` (compatible segun los tags), `vLLM` (aunque no esta optimizado para modelos encoder), `llama.cpp` (no compatible directamente por ser encoder) u `Ollama` (tampoco soporta BERT de forma nativa). La opcion mas sencilla es usar la API de Hugging Face o un servidor FastAPI con `transformers`.
 - Latencia y throughput: no se han publicado mediciones. Para un modelo de este tamaño, en una GPU moderna se esperan latencias de pocos milisegundos por lote pequeno.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ La comparativa se limita a modelos con el mismo nombre y arquitectura. No se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kkkfu/bert-base-nsmc
+- Modelo en Hugging Face: https://huggingface.co/kkkfu/bert-base-nsmc
 - Paper original de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805
 - Repositorio oficial de BERT de Google: https://github.com/google-research/bert
 - Articulo de Wikipedia sobre BERT: https://en.wikipedia.org/wiki/BERT_(language_model)

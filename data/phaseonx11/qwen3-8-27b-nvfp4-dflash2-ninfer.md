@@ -69,7 +69,7 @@ La principal diferencia frente a las alternativas es el formato NInfer y la incl
 ## Limitaciones y advertencias
 
 - Licencia no disponible: no se puede confirmar si el uso comercial esta permitido. Se recomienda contactar al autor o revisar la licencia del modelo base Qwen3.8-27B antes de usar en produccion.
-- Formato propietario NInfer: el artefacto solo es utilizable con el motor NInfer, lo que limita la portabilidad. No es compatible con ecosistemas estandar como HuggingFace Transformers, vLLM o llama.cpp sin conversion adicional.
+- Formato propietario NInfer: el artefacto solo es utilizable con el motor NInfer, lo que limita la portabilidad. No es compatible con ecosistemas estandar como Hugging Face Transformers, vLLM o llama.cpp sin conversion adicional.
 - Dependencia de la rama DFlash 2: el drafter solo se activa si el motor NInfer esta compilado con la identidad `nvfp4-dflash2`; de lo contrario, el modelo funciona como una imagen NVFP4 sin aceleracion especulativa.
 - Posible degradacion de precision: la cuantizacion NVFP4 puede afectar a tareas de alta sensibilidad numerica, como matematicas complejas o razonamiento logico extenso, aunque en general se considera de bajo impacto.
 - Sesgos y alucinaciones: no se ha evaluado especificamente este artefacto. El modelo base puede presentar sesgos presentes en sus datos de entrenamiento y generar contenido incorrecto o inventado, especialmente en contextos largos o ambiguos.
@@ -78,7 +78,7 @@ La principal diferencia frente a las alternativas es el formato NInfer y la incl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/phaseonx11/Qwen3.8-27B-nvfp4-DFlash2-NInfer
+- Modelo en Hugging Face: https://huggingface.co/phaseonx11/Qwen3.8-27B-nvfp4-DFlash2-NInfer
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantizacion NVFP4 de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4
 - Documentacion de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

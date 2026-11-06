@@ -84,9 +84,9 @@ No disponible. La documentación proporcionada no incluye comparaciones con otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diarray/parakeet-snalinlug-sc-lid
+- Modelo en Hugging Face: https://huggingface.co/diarray/parakeet-snalinlug-sc-lid
 - Repositorio de código, tokenizer y configuraciones: https://github.com/diarray-hub/parakeet-sc-lid
-- Perfil del autor en HuggingFace: https://huggingface.co/diarray
+- Perfil del autor en Hugging Face: https://huggingface.co/diarray
 - Dataset WAXAL: https://huggingface.co/datasets/google/WaxalNLP
 - Dataset FLEURS: https://huggingface.co/datasets/google/fleurs
 - Dataset SALT: https://huggingface.co/datasets/Sunbird/salt

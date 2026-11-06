@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LoomNet es un modelo de difusión multi-vista desarrollado por Giulio Federico (usuario FedericoGiulio en HuggingFace) que genera imágenes espacialmente consistentes a partir de una única imagen de entrada. El modelo aborda el problema clásico de la falta de consistencia espacial en la generación de múltiples vistas, que degrada la calidad de la reconstrucción de mallas 3D en aplicaciones de modelado. Su propuesta principal consiste en aplicar el mismo modelo de difusión varias veces en paralelo para construir colaborativamente un espacio latente compartido, mediante técnicas de splatting y fusión de características específicas de cada vista sobre planos ortogonales.
+LoomNet es un modelo de difusión multi-vista desarrollado por Giulio Federico (usuario FedericoGiulio en Hugging Face) que genera imágenes espacialmente consistentes a partir de una única imagen de entrada. El modelo aborda el problema clásico de la falta de consistencia espacial en la generación de múltiples vistas, que degrada la calidad de la reconstrucción de mallas 3D en aplicaciones de modelado. Su propuesta principal consiste en aplicar el mismo modelo de difusión varias veces en paralelo para construir colaborativamente un espacio latente compartido, mediante técnicas de splatting y fusión de características específicas de cada vista sobre planos ortogonales.
 
-El modelo se publica bajo licencia MIT y el repositorio en HuggingFace ocupa 7,2 GB, aunque no se especifican los parámetros totales ni la arquitectura interna con detalle. La relevancia actual radica en su potencial para mejorar flujos de trabajo de reconstrucción 3D a partir de imágenes, un área activa en visión por computador y gráficos. No se dispone de información sobre el contexto de entrenamiento, el número de tokens o el dataset utilizado, ya que la model card es mínima y solo incluye la licencia.
+El modelo se publica bajo licencia MIT y el repositorio en Hugging Face ocupa 7,2 GB, aunque no se especifican los parámetros totales ni la arquitectura interna con detalle. La relevancia actual radica en su potencial para mejorar flujos de trabajo de reconstrucción 3D a partir de imágenes, un área activa en visión por computador y gráficos. No se dispone de información sobre el contexto de entrenamiento, el número de tokens o el dataset utilizado, ya que la model card es mínima y solo incluye la licencia.
 
 ## Especificaciones técnicas
 
@@ -67,7 +67,7 @@ No se dispone de información comparativa publicada. LoomNet se enmarca en la ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FedericoGiulio/loomnet
+- Modelo en Hugging Face: https://huggingface.co/FedericoGiulio/loomnet
 - Space de demostración: https://huggingface.co/spaces/FedericoGiulio/LoomNet
 - Repositorio en GitHub: https://github.com/GiulioFede/LoomNet
 - Paper en arXiv: https://arxiv.org/abs/2507.05499v1

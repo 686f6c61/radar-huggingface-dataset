@@ -6,7 +6,7 @@
 
 El modelo no está pensado para generación de texto libre, sino para emitir decisiones tipadas: recibe un estado y un conjunto de preguntas con esquema (por ejemplo, elección entre `approve`/`block` con criterios explícitos) y devuelve distribuciones de probabilidad calibradas sobre las opciones. Su interés actual reside en que, según la model card, supera tanto a su modelo base como a TypeSafe Jev 1.13 en el conjunto público Decision Index 0.3 (32 de 37 benchmarks, 123.049 filas) con una precisión del 0,727 en el test oficial de Jev y un KL de 0,171 frente a 1,442 del citado Jev 1.13.
 
-La licencia es Apache-2.0 y los pesos se distribuyen en safetensors (backbone bf16 fusionado más cabeza fp32), acompañados de un cargador propio (`joint_schema_model.py`). El modelo solo declara inglés, coreano, japonés y chino, no incluye pipeline estándar en HuggingFace y su adopción es aún muy reducida (26 descargas, 0 likes en el momento de la consulta).
+La licencia es Apache-2.0 y los pesos se distribuyen en safetensors (backbone bf16 fusionado más cabeza fp32), acompañados de un cargador propio (`joint_schema_model.py`). El modelo solo declara inglés, coreano, japonés y chino, no incluye pipeline estándar en Hugging Face y su adopción es aún muy reducida (26 descargas, 0 likes en el momento de la consulta).
 
 ## Especificaciones técnicas
 
@@ -88,9 +88,9 @@ Contraste por filas emparejadas (McNemar) frente a Clef-flash: +2.227 filas neta
 
 | Modelo | Parámetros | Contexto | Decision Index (proxy 32 benchmarks) | `typed-decisions` (acc / KL) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo | 9,41 B | No disponible | 59,33 | 0,727 / 0,171 | Apache-2.0 | HuggingFace, cargador propio |
-| Cloudflare/clef-flash (base) | ~9,4 B (Qwen3.5-9B + cabeza de 122 M) | No disponible | 57,14 | 0,7025 / 0,210 | Apache-2.0 | HuggingFace |
-| Cloudflare/clef (profesor) | 27 B | No disponible | No disponible | No disponible | Apache-2.0 | HuggingFace |
+| Este modelo | 9,41 B | No disponible | 59,33 | 0,727 / 0,171 | Apache-2.0 | Hugging Face, cargador propio |
+| Cloudflare/clef-flash (base) | ~9,4 B (Qwen3.5-9B + cabeza de 122 M) | No disponible | 57,14 | 0,7025 / 0,210 | Apache-2.0 | Hugging Face |
+| Cloudflare/clef (profesor) | 27 B | No disponible | No disponible | No disponible | Apache-2.0 | Hugging Face |
 | TypeSafe Jev 1.13 | No disponible | No disponible | 57,98 | 0,727 / 1,442 | No disponible | Ejecución en el board público |
 
 Frente a su modelo base, la mejora es consistente en lenguaje (+9,6), recuperación (+2,9) y en el índice global (+2,19 en habilidad balanceada), a costa de `tools` (−2,9) y `arts` (−4,7). Frente a Jev 1.13 iguala en accuracy sobre el test de Jev con una distribución mucho mejor calibrada (KL 0,171 frente a 1,442), pero pierde en la categoría de lenguaje (55,9 frente a 58,4).
@@ -110,7 +110,7 @@ Frente a su modelo base, la mejora es consistente en lenguaje (+9,6), recuperaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaeyong2/clef-flash-jev-claude-distill
+- Modelo en Hugging Face: https://huggingface.co/jaeyong2/clef-flash-jev-claude-distill
 - Dataset de entrenamiento: https://huggingface.co/datasets/jaeyong2/jev-decision-claude-distill
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Modelo profesor (27B): https://huggingface.co/Cloudflare/clef

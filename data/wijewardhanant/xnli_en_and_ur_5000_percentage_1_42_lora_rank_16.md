@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base `meta-llama/Llama-3.1-8B`, publicado por el usuario WijewardhanaNT bajo la librería PEFT. No se trata por tanto de un modelo completo, sino de un conjunto de pesos incrementales (rank 16, según el propio identificador) que deben cargarse junto al modelo base para poder ejecutar inferencia. El repositorio pesa 1,0 GB y está etiquetado con `peft`, `safetensors`, `lora`, `transformers` y `text-generation`.
 
-El identificador del modelo, `xnli_en_and_ur_5000_percentage_1_42_LoRA_rank_16`, sugiere que el ajuste se realizó sobre el corpus XNLI (inferencia textual en lenguaje natural) en inglés (`en`) y urdu (`ur`), con 5000 ejemplos y algún subconjunto del 1,42 % de los datos. Es importante subrayar que esta interpretación se deduce únicamente del nombre del repositorio: la model card publicada es la plantilla genérica de HuggingFace sin rellenar, por lo que el autor no confirma ni la composición del dataset, ni los hiperparámetros, ni el procedimiento de entrenamiento.
+El identificador del modelo, `xnli_en_and_ur_5000_percentage_1_42_LoRA_rank_16`, sugiere que el ajuste se realizó sobre el corpus XNLI (inferencia textual en lenguaje natural) en inglés (`en`) y urdu (`ur`), con 5000 ejemplos y algún subconjunto del 1,42 % de los datos. Es importante subrayar que esta interpretación se deduce únicamente del nombre del repositorio: la model card publicada es la plantilla genérica de Hugging Face sin rellenar, por lo que el autor no confirma ni la composición del dataset, ni los hiperparámetros, ni el procedimiento de entrenamiento.
 
 La relevancia de esta ficha es limitada y hay que ser honesto al respecto: el modelo tiene 0 descargas y 0 likes, no declara licencia ni idiomas, no incluye resultados de evaluación y su model card no aporta ninguna métrica. Su interés real reside en el modelo base subyacente (Llama 3.1 8B, transformer decoder-only de 8 000 millones de parámetros con 128 000 tokens de contexto) y en el patrón de experimento que el nombre delata: adaptación de bajo rango sobre un subconjunto muy pequeño de datos multilingües.
 
@@ -86,7 +86,7 @@ No se dispone de una comparación cuantitativa con clasificadores NLI especializ
 
 ## Limitaciones y advertencias
 
-- Model card vacía: es la plantilla por defecto de HuggingFace sin rellenar. No hay información sobre desarrolladores, financiación, datos, hiperparámetros, infraestructura ni evaluación.
+- Model card vacía: es la plantilla por defecto de Hugging Face sin rellenar. No hay información sobre desarrolladores, financiación, datos, hiperparámetros, infraestructura ni evaluación.
 - Licencia no declarada: al no especificarse licencia, no puede asumirse ningún permiso de uso comercial. Además, el modelo base arrastra la Llama 3.1 Community License, que exige mantener la atribución "Built with Llama" y aceptar sus condiciones de uso.
 - Cero validación externa: 0 descargas y 0 likes en el momento de la consulta. No hay evidencia de que el adaptador funcione correctamente.
 - Idiomas no confirmados: la única pista sobre inglés y urdu procede del nombre del repositorio. El rendimiento en urdu dependerá de la cobertura de ese idioma en el modelo base, que no lo incluye entre sus ocho idiomas oficiales.
@@ -99,7 +99,7 @@ No se dispone de una comparación cuantitativa con clasificadores NLI especializ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_42_LoRA_rank_16
+- Repositorio en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_42_LoRA_rank_16
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Etiqueta arXiv presente en el repositorio (Lacoste et al., 2019, cálculo de emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Referencia del método LoRA (Hu et al., 2021): https://arxiv.org/abs/2106.09685

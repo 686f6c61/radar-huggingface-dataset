@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos. El adapt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rukiyeberna/qwen2.5-vl-3b-food-extract-lora
+- Hugging Face: https://huggingface.co/rukiyeberna/qwen2.5-vl-3b-food-extract-lora
 - Repositorio GitHub (model card): https://github.com/rukiyeberna/vlm-food-extractor
 - Repositorio GitHub (pipeline de fine-tuning): https://github.com/rukiyeberna/vlm-finetuning
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct

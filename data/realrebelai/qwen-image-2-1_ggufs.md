@@ -88,10 +88,10 @@ Los tamanos de pesos por nivel de cuantizacion no se publican de forma individua
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| realrebelai/Qwen-Image-2.1_GGUFs (este repositorio) | 7,1 B | No aplica | Prueba A/B cualitativa frente a INT8 del Q4_K_M-HQv3; sin cifras | No disponible | Publico en HuggingFace; 2062 descargas, 15 likes |
-| Comfy-Org/Qwen-Image-2.1 (BF16) | Mismo modelo base, sin cuantizar | No aplica | Referencia de maxima calidad (BF16) | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| realrebelai/Qwen-Image-2.1_GGUFs (este repositorio) | 7,1 B | No aplica | Prueba A/B cualitativa frente a INT8 del Q4_K_M-HQv3; sin cifras | No disponible | Publico en Hugging Face; 2062 descargas, 15 likes |
+| Comfy-Org/Qwen-Image-2.1 (BF16) | Mismo modelo base, sin cuantizar | No aplica | Referencia de maxima calidad (BF16) | No disponible en la informacion proporcionada | Publico en Hugging Face |
 | Cuantizacion generica Q4_K_M estilo llama.cpp del mismo modelo | 7,1 B | No aplica | Segun el autor, perdida visible de estructura fina y anatomia frente a INT8 | Depende del conversor empleado | Disponible mediante herramientas genericas de conversion a GGUF |
-| Cuantizaciones GGUF de modelos de difusion del ecosistema ComfyUI-GGUF (por ejemplo, familia FLUX.1 de City96) | No disponible | No aplica | No disponible | No disponible | Publicas en HuggingFace |
+| Cuantizaciones GGUF de modelos de difusion del ecosistema ComfyUI-GGUF (por ejemplo, familia FLUX.1 de City96) | No disponible | No aplica | No disponible | No disponible | Publicas en Hugging Face |
 
 La comparacion directa con otras familias de modelos de generacion de imagen no puede establecerse con rigor porque la informacion disponible no incluye benchmarks numericos ni especificaciones de las alternativas.
 
@@ -109,7 +109,7 @@ La comparacion directa con otras familias de modelos de generacion de imagen no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/realrebelai/Qwen-Image-2.1_GGUFs
-- Modelo base en HuggingFace (Comfy-Org): https://huggingface.co/Comfy-Org/Qwen-Image-2.1
+- Repositorio Hugging Face: https://huggingface.co/realrebelai/Qwen-Image-2.1_GGUFs
+- Modelo base en Hugging Face (Comfy-Org): https://huggingface.co/Comfy-Org/Qwen-Image-2.1
 - Repositorio de ComfyUI-GGUF (City96): https://github.com/city96/ComfyUI-GGUF
 - No se han encontrado en la busqueda web enlaces adicionales relevantes sobre este modelo; los resultados obtenidos correspondian a dominios sin relacion con la IA open source.

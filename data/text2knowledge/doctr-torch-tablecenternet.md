@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `text2knowledge/doctr-torch-tablecenternet` es un detector de estructura de tablas diseñado para integrarse en el ecosistema docTR, la librería de OCR de Mindee. Su función es localizar y segmentar las celdas, filas y columnas de una tabla dentro de una imagen de documento, lo que permite extraer posteriormente el contenido de forma estructurada. Está desarrollado por el usuario text2knowledge y publicado en HuggingFace con la librería docTR, aunque no se especifica una licencia concreta.
+El modelo `text2knowledge/doctr-torch-tablecenternet` es un detector de estructura de tablas diseñado para integrarse en el ecosistema docTR, la librería de OCR de Mindee. Su función es localizar y segmentar las celdas, filas y columnas de una tabla dentro de una imagen de documento, lo que permite extraer posteriormente el contenido de forma estructurada. Está desarrollado por el usuario text2knowledge y publicado en Hugging Face con la librería docTR, aunque no se especifica una licencia concreta.
 
 El modelo se basa en la arquitectura TableCenterNet, que utiliza un backbone StarNet y cabezas de detección por puntos clave para identificar los límites de las celdas. Aunque el repositorio tiene un tamaño de 0,1 GB, no se proporcionan detalles sobre el número de parámetros, el conjunto de entrenamiento ni los resultados de benchmarks. Su relevancia radica en que permite añadir capacidades de análisis de tablas a pipelines de OCR existentes, un paso habitual en la digitalización de documentos empresariales.
 
@@ -66,7 +66,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace - text2knowledge/doctr-torch-tablecenternet](https://huggingface.co/text2knowledge/doctr-torch-tablecenternet)
+- [Hugging Face - text2knowledge/doctr-torch-tablecenternet](https://huggingface.co/text2knowledge/doctr-torch-tablecenternet)
 - [Documentación de docTR - TableCenterNet](https://mindee.github.io/doctr/_modules/doctr/models/table_structure/tablecenternet/pytorch.html)
 - [Repositorio de docTR en GitHub](https://github.com/mindee/doctr)
 - [Repositorio de TableCenterNet (paper)](https://github.com/dreamy-xay/TableCenterNet)

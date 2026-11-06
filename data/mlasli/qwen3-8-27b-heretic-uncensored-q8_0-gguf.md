@@ -91,6 +91,6 @@ No se han encontrado comparativas directas con otros modelos de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Uncensored-Q8_0-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Uncensored-Q8_0-GGUF
 - Repositorio de Heretic (método de abliteración): https://github.com/mlabonne/heretic-llm
 - Repositorio de llama.cpp (para ejecución del GGUF): https://github.com/ggml-org/llama.cpp

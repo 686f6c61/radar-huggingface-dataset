@@ -77,7 +77,7 @@ No se dispone de modelos comparables publicados con el mismo enfoque especifico 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sullivanUCSD/SCOUT
+- Modelo en Hugging Face: https://huggingface.co/sullivanUCSD/SCOUT
 - Coleccion SCOUT: https://huggingface.co/collections/sullivanUCSD/scout
 - Dataset de evaluacion SCOUT-450: https://huggingface.co/datasets/sullivanUCSD/SCOUT-450
 - Repositorio de codigo: https://github.com/Rockyli11/SCOUT

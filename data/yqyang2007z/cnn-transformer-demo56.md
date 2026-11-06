@@ -74,5 +74,5 @@ No disponible. Al ser un checkpoint sin entrenar, no se han encontrado modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yqyang2007z/cnn-transformer-demo56
+- Hugging Face: https://huggingface.co/yqyang2007z/cnn-transformer-demo56
 - No se han encontrado papers, blogs, repos o demos adicionales en la búsqueda web.

@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| ThoxMini-125M-role | 125M | No disponible | Apache-2.0 | Rol de dispositivo con deferencia | HuggingFace (safetensors, GGUF) |
-| Thox-ai/thox-micro-125m (base) | 125M | No disponible | No disponible | Modelo base | HuggingFace |
+| ThoxMini-125M-role | 125M | No disponible | Apache-2.0 | Rol de dispositivo con deferencia | Hugging Face (safetensors, GGUF) |
+| Thox-ai/thox-micro-125m (base) | 125M | No disponible | No disponible | Modelo base | Hugging Face |
 | Alternativas de 125M comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de información sobre modelos comparables de la misma categoría en la documentación proporcionada, por lo que no es posible establecer una comparación cuantitativa con alternativas.
@@ -82,5 +82,5 @@ No se dispone de datos de benchmarks ni de información sobre modelos comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxMini-125M-role
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxMini-125M-role
 - Modelo base: https://huggingface.co/Thox-ai/thox-micro-125m

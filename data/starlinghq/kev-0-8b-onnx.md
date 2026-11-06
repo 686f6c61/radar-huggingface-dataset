@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de contexto para establecer una comparac
 
 ## Enlaces
 
-- [Starlinghq/kev-0.8b-onnx en HuggingFace](https://huggingface.co/Starlinghq/kev-0.8b-onnx)
+- [Starlinghq/kev-0.8b-onnx en Hugging Face](https://huggingface.co/Starlinghq/kev-0.8b-onnx)
 - [jaredpalmer/kev-0.8b (modelo base con el adaptador LoRA)](https://huggingface.co/jaredpalmer/kev-0.8b)
 - [Qwen/Qwen3.5-0.8B-Base (backbone)](https://huggingface.co/Qwen/Qwen3.5-0.8B-Base)
 - [Repositorio starlinghq/starling (paquete .NET Starlings.Models.Kev y scripts de build)](https://github.com/starlinghq/starling)

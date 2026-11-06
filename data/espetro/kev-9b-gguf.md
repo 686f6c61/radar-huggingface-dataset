@@ -105,7 +105,7 @@ La familia Kev se distribuye en variantes de 0,8B, 4B y 9B sobre Qwen3.5, según
 
 ## Enlaces
 
-- HuggingFace (este empaquetado): https://huggingface.co/espetro/kev-9b-gguf
+- Hugging Face (este empaquetado): https://huggingface.co/espetro/kev-9b-gguf
 - Checkpoint original: https://huggingface.co/jaredpalmer/kev-9b
 - Bundle de origen (gojev): https://huggingface.co/taigrr/kev-9b-gguf
 - Repositorio del proyecto: https://github.com/jaredpalmer/kev

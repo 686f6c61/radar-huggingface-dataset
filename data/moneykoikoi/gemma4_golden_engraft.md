@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gemma4_golden_engraft` es un checkpoint publicado en HuggingFace por el usuario moneykoikoi bajo licencia MIT. El repositorio tiene un tamano de 2,1 GB y, por el nombre, parece derivar de la familia Gemma (Google), aunque no se especifica en la model card que version ni que transformacion concreta se ha aplicado ("engraft" sugiere una operacion de injerto o fusion de pesos, pero no hay documentacion al respecto).
+`gemma4_golden_engraft` es un checkpoint publicado en Hugging Face por el usuario moneykoikoi bajo licencia MIT. El repositorio tiene un tamano de 2,1 GB y, por el nombre, parece derivar de la familia Gemma (Google), aunque no se especifica en la model card que version ni que transformacion concreta se ha aplicado ("engraft" sugiere una operacion de injerto o fusion de pesos, pero no hay documentacion al respecto).
 
 La model card publicada es practicamente vacia: solo contiene la declaracion de licencia MIT. No se indica arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, idiomas soportados ni resultados de evaluacion. El repositorio no registra descargas ni likes en el momento de la consulta, lo que apunta a un experimento personal sin validacion externa.
 
@@ -83,5 +83,5 @@ La comparativa solo es orientativa: el checkpoint analizado carece de datos que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/moneykoikoi/gemma4_golden_engraft
+- Repositorio en Hugging Face: https://huggingface.co/moneykoikoi/gemma4_golden_engraft
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

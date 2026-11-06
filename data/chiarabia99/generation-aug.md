@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `chiarabia99/generation-aug` es un prototipo de investigación basado en la arquitectura Blip, orientado a tareas de generación. Lo publica el usuario chiarabia99 en HuggingFace con licencia BSD-3-Clause. Se trata de un checkpoint de inicialización válido para pruebas de humo, no de un modelo entrenado con datos reales ni con resultados de rendimiento verificados.
+El modelo `chiarabia99/generation-aug` es un prototipo de investigación basado en la arquitectura Blip, orientado a tareas de generación. Lo publica el usuario chiarabia99 en Hugging Face con licencia BSD-3-Clause. Se trata de un checkpoint de inicialización válido para pruebas de humo, no de un modelo entrenado con datos reales ni con resultados de rendimiento verificados.
 
 Con solo 49.600 parámetros, este modelo es extremadamente pequeño y no pretende ser competitivo en tareas de generación de texto o imagen. Su propósito es servir como punto de partida experimental para desarrolladores que quieran explorar la arquitectura Blip adaptada a generación, con atención de ventana deslizante, fusión tensorial y normalización RMSNorm. La relevancia actual es limitada: no hay benchmarks publicados, no hay datos de entrenamiento y el repositorio advierte explícitamente que no se presentan números de rendimiento.
 
@@ -67,10 +67,10 @@ No disponible. No se conocen modelos comparables de tamaño similar (49K paráme
 - Riesgo de alucinación: no aplicable, ya que el modelo no genera contenido coherente sin entrenamiento.
 - Limitaciones de contexto e idioma: no se especifican, pero al no estar entrenado, no hay soporte real de ningún idioma.
 - Restricciones de licencia: BSD-3-Clause permite uso comercial, pero la model card advierte que se deben revisar los términos de los datos fuente si se usan conjuntos de datos externos.
-- La implementación es personalizada y no compatible con APIs genéricas de HuggingFace sin un adaptador explícito.
+- La implementación es personalizada y no compatible con APIs genéricas de Hugging Face sin un adaptador explícito.
 - No se proporcionan resultados de evaluación; cualquier afirmación de rendimiento debe documentarse por separado tras un entrenamiento real.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chiarabia99/generation-aug
+- Repositorio en Hugging Face: https://huggingface.co/chiarabia99/generation-aug
 - No se han encontrado papers, blogs o demos adicionales en la búsqueda web.

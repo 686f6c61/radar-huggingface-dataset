@@ -83,8 +83,8 @@ Gemma 4 E2B destaca por su mayor ventana de contexto (128K frente a 32K de Qwen2
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/abcsnoobai/gemma-4-E2B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-E2B
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/abcsnoobai/gemma-4-E2B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-E2B
 - Technical report (arXiv): https://arxiv.org/abs/2607.02770
 - Blog de lanzamiento de Gemma 4: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentación oficial de Gemma 4: https://ai.google.dev/gemma/docs/core

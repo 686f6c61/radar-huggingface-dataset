@@ -17,7 +17,7 @@ Es relevante ahora porque traslada cargas de trabajo agenticas completas a una s
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 131.072+ tokens; ventana deslizante de 2.048 tokens |
 | Tipos de cuantizacion | Cuantizacion a ~4 bits en dos variantes: K-Quant-Dynamic (objetivo 32 GB de VRAM) y K-Quant-17GB (objetivo 24 GB de VRAM); tambien se publican versiones cuantizadas del drafter |
-| Idiomas soportados | Entrenado con datos de mas de 100 idiomas; el repositorio de HuggingFace no lista idiomas concretos (campo no disponible) |
+| Idiomas soportados | Entrenado con datos de mas de 100 idiomas; el repositorio de Hugging Face no lista idiomas concretos (campo no disponible) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (libreria transformers) |
 
@@ -78,7 +78,7 @@ Datos de terceros (no verificados por el autor): benchlm.ai estima una puntuacio
 
 ## Requisitos de hardware
 
-- Precision completa (bf16): aproximadamente 59,6 GB de pesos (el repositorio de HuggingFace ocupa 59,6 GB), por lo que requiere del orden de 64 GB de VRAM, mas el espacio de la cache KV.
+- Precision completa (bf16): aproximadamente 59,6 GB de pesos (el repositorio de Hugging Face ocupa 59,6 GB), por lo que requiere del orden de 64 GB de VRAM, mas el espacio de la cache KV.
 - K-Quant-Dynamic (~4 bits): objetivo de 32 GB de VRAM, suficiente para pesos, cache KV, encoder de percepcion y drafter en ejecucion simultanea.
 - K-Quant-17GB (~4 bits): objetivo de 24 GB de VRAM, con una degradacion declarada del 1,0%.
 - GPU de consumo compatible: el autor valida explicitamente una Nvidia RTX 5090 con 233,4 tok/s con especulacion. La variante de 17 GB encaja en tarjetas de 24 GB (por ejemplo, RTX 4090, RTX 3090 o similares), aunque esto ultimo no esta confirmado de forma explicita en la informacion disponible.
@@ -93,7 +93,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Muse Glimmer 30B | ~29,8B (denso, + encoder de vision de ~1,8B) | 131.072+ | Apache 2.0 | Pesos abiertos en HuggingFace (safetensors) |
+| Muse Glimmer 30B | ~29,8B (denso, + encoder de vision de ~1,8B) | 131.072+ | Apache 2.0 | Pesos abiertos en Hugging Face (safetensors) |
 | Alternativas de la misma categoria (30B denso multimodal agentico) | no disponible | no disponible | no disponible | no disponible |
 
 La categoria natural de comparacion son los modelos densos de 30B con soporte multimodal y orientacion agentica que quepan en una GPU de consumo, pero la informacion proporcionada no incluye especificaciones ni resultados de ningun competidor concreto.
@@ -114,7 +114,7 @@ La categoria natural de comparacion son los modelos densos de 30B con soporte mu
 
 ## Enlaces
 
-- Repositorio en HuggingFace (identificador de la ficha): https://huggingface.co/metaresearch/Muse-Glimmer-30B
+- Repositorio en Hugging Face (identificador de la ficha): https://huggingface.co/metaresearch/Muse-Glimmer-30B
 - Repositorio alternativo detectado en la busqueda: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Pagina del modelo en Meta: https://dev.meta.ai/models/muse-glimmer
 - Blog de presentacion: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model

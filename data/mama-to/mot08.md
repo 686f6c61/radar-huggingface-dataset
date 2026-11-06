@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mama-to/mot08` es un repositorio alojado en HuggingFace por el usuario `mama-to`, con un tamano de 3,2 GB y publicado (segun los metadatos) el 13 de septiembre de 2026. En el momento de redactar esta ficha, el repositorio no incluye model card con informacion tecnica: no declara pipeline, licencia, idiomas soportados ni arquitectura. Tampoco se ha publicado ningun resultado de benchmarks asociado al identificador.
+`mama-to/mot08` es un repositorio alojado en Hugging Face por el usuario `mama-to`, con un tamano de 3,2 GB y publicado (segun los metadatos) el 13 de septiembre de 2026. En el momento de redactar esta ficha, el repositorio no incluye model card con informacion tecnica: no declara pipeline, licencia, idiomas soportados ni arquitectura. Tampoco se ha publicado ningun resultado de benchmarks asociado al identificador.
 
-La unica etiqueta presente es `region:us`, que en HuggingFace es una marca de origen geografico del repositorio y no aporta informacion sobre el modelo. El repositorio acumula 0 descargas y 1 like, lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
+La unica etiqueta presente es `region:us`, que en Hugging Face es una marca de origen geografico del repositorio y no aporta informacion sobre el modelo. El repositorio acumula 0 descargas y 1 like, lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
 
 La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo: los resultados obtenidos corresponden a la convention musical MaMA de Paris y a la pelicula "Mama" (2013), es decir, coincidencias puramente nominales con la palabra "mama". No existe, por tanto, informacion externa verificable sobre arquitectura, entrenamiento o capacidades. Esta ficha se limita a documentar los metadatos disponibles y a marcar explicitamente como "no disponible" todo aquello que no puede confirmarse.
 
@@ -38,7 +38,7 @@ Tampoco se ha localizado literatura cientifica, blog tecnico, informe de modelo 
 
 ## Capacidades
 
-No se puede confirmar ninguna capacidad concreta a partir de la informacion disponible. El repositorio no declara pipeline de HuggingFace (tarea de texto, vision, audio, etc.), no incluye ejemplos de uso ni documenta si soporta alguna funcionalidad especifica.
+No se puede confirmar ninguna capacidad concreta a partir de la informacion disponible. El repositorio no declara pipeline de Hugging Face (tarea de texto, vision, audio, etc.), no incluye ejemplos de uso ni documenta si soporta alguna funcionalidad especifica.
 
 - Generacion de texto: no disponible
 - Razonamiento y matematicas: no disponible
@@ -84,7 +84,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| mama-to/mot08 | no disponible | no disponible | no disponible | HuggingFace (0 descargas) | no disponible |
+| mama-to/mot08 | no disponible | no disponible | no disponible | Hugging Face (0 descargas) | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mama-to/mot08
+- Repositorio en Hugging Face: https://huggingface.co/mama-to/mot08
 
 No se han encontrado otros enlaces relevantes. Las busquedas realizadas devolvieron unicamente resultados sin relacion con el modelo:
 

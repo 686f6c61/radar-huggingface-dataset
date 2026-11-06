@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `qwen3.5-2b-self-reward-autonomy-s30` | 2,21 B | no disponible | Ajuste GRPO de investigación (auto-recompensa, follow-up `autonomy`) | Apache 2.0 | HuggingFace, 12 ramas de checkpoints |
-| `Qwen/Qwen3.5-2B` (base) | ~2 B | no disponible | Modelo multimodal instructivo de la serie Qwen3.5 | Apache 2.0 (según repositorio) | HuggingFace, Qualcomm AI Hub, Ollama (`qwen3.5:2b`) |
-| Ejecuciones hermanas `self-reward-*-grading` (semillas 21-30) | 2,21 B | no disponible | Mismo pipeline GRPO con follow-up de `grading` | Apache 2.0 | HuggingFace (misma cuenta) |
+| `qwen3.5-2b-self-reward-autonomy-s30` | 2,21 B | no disponible | Ajuste GRPO de investigación (auto-recompensa, follow-up `autonomy`) | Apache 2.0 | Hugging Face, 12 ramas de checkpoints |
+| `Qwen/Qwen3.5-2B` (base) | ~2 B | no disponible | Modelo multimodal instructivo de la serie Qwen3.5 | Apache 2.0 (según repositorio) | Hugging Face, Qualcomm AI Hub, Ollama (`qwen3.5:2b`) |
+| Ejecuciones hermanas `self-reward-*-grading` (semillas 21-30) | 2,21 B | no disponible | Mismo pipeline GRPO con follow-up de `grading` | Apache 2.0 | Hugging Face (misma cuenta) |
 | Otros modelos de ~2 B (Llama, Gemma, Phi) | ~1-3 B | no disponible en esta busqueda | Modelos instructivos generalistas | Varía | no disponible |
 
 La comparación relevante es contra el modelo base y contra las ejecuciones hermanas: el ajuste no mejora capacidades, sino que las degrada deliberadamente como parte del experimento. Frente a modelos generalistas del mismo tamaño no hay datos de benchmarks que permitan comparar en la información disponible.
@@ -100,7 +100,7 @@ La comparación relevante es contra el modelo base y contra las ejecuciones herm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-autonomy-s30
+- Modelo en Hugging Face: https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-autonomy-s30
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Codigo del proyecto: https://github.com/fjzzq2002/self-reward
 - Visor de checkpoints (respuestas a 62 prompts de test): https://fjzzq2002.github.io/self-reward/

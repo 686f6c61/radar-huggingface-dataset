@@ -4,7 +4,7 @@
 
 PlanckGPT-v0.12.0 es una versión del modelo PlanckGPT, un proyecto de código abierto iniciado por nguyenphuminh con el objetivo de entrenar un modelo de lenguaje desde cero en un ordenador de consumo, con fines educativos y de experimentación. Según el repositorio del proyecto, el modelo tiene aproximadamente 206 millones de parámetros y se ha preentrenado sobre unos 2.000 millones de tokens del conjunto de datos Fineweb-edu.
 
-Esta versión concreta, publicada en HuggingFace por el usuario cattonpm, se distribuye bajo licencia Apache 2.0. El repositorio ocupa 1,6 GB, pero la model card no incluye especificaciones técnicas detalladas más allá de la referencia al repositorio de GitHub.
+Esta versión concreta, publicada en Hugging Face por el usuario cattonpm, se distribuye bajo licencia Apache 2.0. El repositorio ocupa 1,6 GB, pero la model card no incluye especificaciones técnicas detalladas más allá de la referencia al repositorio de GitHub.
 
 Es relevante para desarrolladores e investigadores que quieran estudiar el proceso de entrenamiento de modelos pequeños, experimentar con técnicas de optimización o necesiten un modelo ligero para prototipos en entornos con recursos limitados.
 
@@ -74,6 +74,6 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cattonpm/PlanckGPT-v0.12.0
+- Hugging Face: https://huggingface.co/cattonpm/PlanckGPT-v0.12.0
 - GitHub: https://github.com/nguyenphuminh/planckgpt
-- Colección en HuggingFace: https://huggingface.co/collections/cattonpm/planckgpt
+- Colección en Hugging Face: https://huggingface.co/collections/cattonpm/planckgpt

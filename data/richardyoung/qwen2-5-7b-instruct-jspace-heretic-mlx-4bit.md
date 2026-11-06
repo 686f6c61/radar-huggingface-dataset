@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-7B-Instruct-JSpace-heretic-MLX-4bit | 7,6B | no disponible (original: 32K) | 4 bits MLX | Apache 2.0 | HuggingFace, formato MLX |
-| Qwen2.5-7B-Instruct (original) | 7,6B | 32.768 tokens | bf16, GPTQ, AWQ, GGUF | Apache 2.0 | HuggingFace, amplio ecosistema |
-| richardyoung/Qwen2.5-7B-Instruct-JSpace-heretic (fuente) | 7,6B | no disponible | bf16 | Apache 2.0 | HuggingFace |
-| Modelos abliterated de la misma familia (p. ej. variantes Heretic de Qwen2.5) | ~7B | variable | bf16, GGUF | Apache 2.0 | HuggingFace |
+| Qwen2.5-7B-Instruct-JSpace-heretic-MLX-4bit | 7,6B | no disponible (original: 32K) | 4 bits MLX | Apache 2.0 | Hugging Face, formato MLX |
+| Qwen2.5-7B-Instruct (original) | 7,6B | 32.768 tokens | bf16, GPTQ, AWQ, GGUF | Apache 2.0 | Hugging Face, amplio ecosistema |
+| richardyoung/Qwen2.5-7B-Instruct-JSpace-heretic (fuente) | 7,6B | no disponible | bf16 | Apache 2.0 | Hugging Face |
+| Modelos abliterated de la misma familia (p. ej. variantes Heretic de Qwen2.5) | ~7B | variable | bf16, GGUF | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a variantes de la misma familia porque no se dispone de datos de rendimiento de benchmarks para esta conversión; no es posible establecer comparaciones cuantitativas con Llama 3.1 8B, Mistral 7B u otros modelos de tamaño similar sin cifras verificables.
 
@@ -86,7 +86,7 @@ La comparativa se limita a variantes de la misma familia porque no se dispone de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-JSpace-heretic-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-JSpace-heretic-MLX-4bit
 - Modelo fuente (bf16): https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-JSpace-heretic
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio MLX: https://github.com/ml-explore/mlx

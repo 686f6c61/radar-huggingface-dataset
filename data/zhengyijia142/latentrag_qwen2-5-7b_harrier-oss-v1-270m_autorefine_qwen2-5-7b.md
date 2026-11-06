@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | LatentRAG (este checkpoint) | Adaptador LoRA sobre base de ~7,6 B | No disponible (base: 32.768 nativos, 131.072 con YaRN) | RAG agéntico entrenado en NQ y HotpotQA con retriever de 270 M | No disponible | Solo adaptador PEFT; requiere el base |
-| Qwen2.5-7B | ~7,6 B | 32.768 nativos / 131.072 con YaRN | Modelo base generalista, decoder-only denso | Apache 2.0 | Pesos completos en HuggingFace |
-| Qwen2.5-7B-Instruct | ~7,6 B | 32.768 nativos / 131.072 con YaRN | Instrucciones, diálogo y uso como asistente | Apache 2.0 | Pesos completos en HuggingFace |
+| Qwen2.5-7B | ~7,6 B | 32.768 nativos / 131.072 con YaRN | Modelo base generalista, decoder-only denso | Apache 2.0 | Pesos completos en Hugging Face |
+| Qwen2.5-7B-Instruct | ~7,6 B | 32.768 nativos / 131.072 con YaRN | Instrucciones, diálogo y uso como asistente | Apache 2.0 | Pesos completos en Hugging Face |
 | harrier-oss-v1-270m | 270 M | No disponible | Recuperación usada por el pipeline | No disponible | No disponible |
 
 Frente al base y a la versión Instruct, este checkpoint no aporta un aumento de capacidades generales, sino una especialización en el bucle recuperación-generación de LatentRAG; no hay datos públicos que permitan cuantificar la mejora frente a un RAG clásico con Qwen2.5-7B-Instruct.
@@ -86,7 +86,7 @@ Frente al base y a la versión Instruct, este checkpoint no aporta un aumento de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zhengyijia142/LatentRAG_Qwen2.5-7B_harrier-oss-v1-270m_AutoRefine_Qwen2.5-7B
+- Hugging Face: https://huggingface.co/zhengyijia142/LatentRAG_Qwen2.5-7B_harrier-oss-v1-270m_AutoRefine_Qwen2.5-7B
 - Repositorio GitHub de LatentRAG: https://github.com/zhengyijia/LatentRAG
 - Artículo (PDF): https://arxiv.org/pdf/2605.06285
 - Modelo base Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B

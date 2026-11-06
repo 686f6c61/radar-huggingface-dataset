@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AI-KSK/minimax-h3-martial-taomate-305` es un repositorio de HuggingFace publicado por el usuario AI-KSK que no contiene pesos de un modelo en sentido estricto, sino dos flujos de trabajo (workflows) en formato JSON para ComfyUI, orientados a la generacion de video con los modelos MiniMax H3. El repositorio se creo el 1 de noviembre de 2026 y su tamano es de 0.0 GB, lo que confirma que no aloja checkpoints ni tensores, solo ficheros de configuracion de grafo y algunas imagenes de portada.
+`AI-KSK/minimax-h3-martial-taomate-305` es un repositorio de Hugging Face publicado por el usuario AI-KSK que no contiene pesos de un modelo en sentido estricto, sino dos flujos de trabajo (workflows) en formato JSON para ComfyUI, orientados a la generacion de video con los modelos MiniMax H3. El repositorio se creo el 1 de noviembre de 2026 y su tamano es de 0.0 GB, lo que confirma que no aloja checkpoints ni tensores, solo ficheros de configuracion de grafo y algunas imagenes de portada.
 
 El primer workflow, denominado "H3 Martial-Arts Two-Pass", describe una generacion en dos pasadas con control de movimiento de artes marciales, usando un sampler con refinador de sigma, un LoRA de referencia a video (Ref2V) de ocho pasos, un LoRA de texto a video (FL2V) desactivado y varias capas de reparacion de movimiento y fisica espacial. El segundo, "TaoMate H3", agrupa siete ramas de ejemplo guardadas en un unico JSON con configuracion de tres pasos y distintos LoRAs de estilo wushu.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AI-KSK/minimax-h3-martial-taomate-305 | Repositorio de workflows JSON para ComfyUI | no aplica | no aplica | no disponible | HuggingFace, 0 descargas |
+| AI-KSK/minimax-h3-martial-taomate-305 | Repositorio de workflows JSON para ComfyUI | no aplica | no aplica | no disponible | Hugging Face, 0 descargas |
 | MiniMax H3 (modelo base referenciado) | Modelo generativo de video | no disponible | no disponible | no disponible | Referenciado en los workflows, no incluido en el repo |
 | Alternativas de workflow ComfyUI para video | Repositorios de configuracion | no aplica | no aplica | variable | no disponible |
 
@@ -83,7 +83,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AI-KSK/minimax-h3-martial-taomate-305
+- Repositorio en Hugging Face: https://huggingface.co/AI-KSK/minimax-h3-martial-taomate-305
 - Workflow JSON "H3 Martial-Arts Two-Pass": `workflows/MiniMax+H3｜8步武术动作控制.json` (referenciado en el repositorio)
 - Workflow JSON "TaoMate H3": `workflows/MiniMax+H3｜TaoMate+3步加速+lora.json` (referenciado en el repositorio)
 - Portada seleccionada del primer workflow: `covers/bdef55c6f9c0a94ba813f866311b5658.webp`

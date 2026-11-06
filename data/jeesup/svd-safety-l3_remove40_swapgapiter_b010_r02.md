@@ -100,7 +100,7 @@ No se dispone, en la documentación consultada, de datos verificables de alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove40_swapgapiter_b010_r02
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove40_swapgapiter_b010_r02
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia y política de uso: LICENSE y USE_POLICY.md incluidos en el repositorio del modelo
 - Paper, blog o repositorio del método SVD-LLM: no disponible en la información proporcionada

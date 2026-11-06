@@ -89,7 +89,7 @@ La comparativa se basa en los datos disponibles; no se han encontrado benchmarks
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/costanzopadovano/Qwen3.8-27B-NVFP4-Q8-Hybrid-Analytical-GGUF
+- Repositorio Hugging Face: https://huggingface.co/costanzopadovano/Qwen3.8-27B-NVFP4-Q8-Hybrid-Analytical-GGUF
 - Repositorio GitHub del laboratorio: https://github.com/CostanzoPadovano/qwen38-nvfp4-analytical-lab
 - Rama de release QVIR-1: https://github.com/CostanzoPadovano/qwen38-nvfp4-analytical-lab/tree/codex/qvir1-release
 - Commit de publicacion R2: https://github.com/CostanzoPadovano/qwen38-nvfp4-analytical-lab/commit/07ccb1f3c80d7ab9875a5f0c402526d4644bd3b6

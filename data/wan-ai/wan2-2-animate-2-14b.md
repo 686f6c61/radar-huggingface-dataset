@@ -4,7 +4,7 @@
 
 Wan2.2-Animate-2-14B es un modelo de animación de personajes desarrollado por el equipo Wan-AI (Wan-Video), presentado como una evolución del framework Wan-Animate. Se trata de un modelo unificado que, a partir de una imagen de un personaje y un video de referencia, genera un video animado replicando con alta fidelidad los movimientos y expresiones del personaje en el video de conducción. La principal innovación es que consume directamente los videos de conducción en un Diffusion Transformer rediseñado, eliminando los extractores de movimiento intermedios que usaban enfoques anteriores, lo que mejora la coherencia temporal y la preservación de la identidad. Además, incorpora control de punto de vista basado en texto, lo que permite desacoplar la perspectiva de cámara del video de conducción original.
 
-El modelo tiene 14 mil millones de parámetros (según el nombre) y se distribuye bajo licencia Apache 2.0, según el tag de HuggingFace. Aunque la ficha de HuggingFace no proporciona detalles sobre el pipeline, los idiomas o el formato de pesos, el repositorio oficial de GitHub y el paper asociado (arxiv:2608.06009) documentan la arquitectura y el código de inferencia. Es relevante porque representa un avance en la animación de personajes end-to-end, con aplicaciones directas en producción de video, doblaje y avatares digitales, y al ser de código abierto permite su integración en flujos de trabajo personalizados.
+El modelo tiene 14 mil millones de parámetros (según el nombre) y se distribuye bajo licencia Apache 2.0, según el tag de Hugging Face. Aunque la ficha de Hugging Face no proporciona detalles sobre el pipeline, los idiomas o el formato de pesos, el repositorio oficial de GitHub y el paper asociado (arxiv:2608.06009) documentan la arquitectura y el código de inferencia. Es relevante porque representa un avance en la animación de personajes end-to-end, con aplicaciones directas en producción de video, doblaje y avatares digitales, y al ser de código abierto permite su integración en flujos de trabajo personalizados.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ El modelo tiene 14 mil millones de parámetros (según el nombre) y se distribuy
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 (según tag de HuggingFace) |
+| Licencia | Apache 2.0 (según tag de Hugging Face) |
 | Formato de pesos | no disponible (probablemente safetensors, no confirmado) |
 
 ## Arquitectura y entrenamiento
@@ -70,8 +70,8 @@ No se dispone de información suficiente para comparar directamente con otros mo
 
 ## Enlaces
 
-- [HuggingFace - Wan-AI/Wan2.2-Animate-2-14B](https://huggingface.co/Wan-AI/Wan2.2-Animate-2-14B)
-- [HuggingFace - Wan-AI/Wan2.2-Animate-14B](https://huggingface.co/Wan-AI/Wan2.2-Animate-14B)
+- [Hugging Face - Wan-AI/Wan2.2-Animate-2-14B](https://huggingface.co/Wan-AI/Wan2.2-Animate-2-14B)
+- [Hugging Face - Wan-AI/Wan2.2-Animate-14B](https://huggingface.co/Wan-AI/Wan2.2-Animate-14B)
 - [GitHub - Wan-Video/Wan2.2](https://github.com/Wan-Video/Wan2.2)
 - [GitHub - Wan-Video/Wan-Animate-2](https://github.com/Wan-Video/Wan-Animate-2)
 - [Paper - Wan-Animate (humanaigc.github.io)](https://humanaigc.github.io/wan-animate/)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `rjzhb222/fwe-1b-adamw-step100000` es un checkpoint de generación de texto publicado por el usuario `rjzhb222` en HuggingFace. Se trata de un modelo causal de aproximadamente 1.365 millones de parámetros (1,365.514.240 según los pesos en safetensors), etiquetado con la librería `transformers` y con el pipeline `text-generation`. El nombre del repositorio indica que es un checkpoint intermedio de entrenamiento: `adamw` señala el optimizador empleado y `step100000` apunta al paso 100.000 del entrenamiento, lo que sugiere que forma parte de una ejecución de investigación y no de un lanzamiento de producto.
+El modelo `rjzhb222/fwe-1b-adamw-step100000` es un checkpoint de generación de texto publicado por el usuario `rjzhb222` en Hugging Face. Se trata de un modelo causal de aproximadamente 1.365 millones de parámetros (1,365.514.240 según los pesos en safetensors), etiquetado con la librería `transformers` y con el pipeline `text-generation`. El nombre del repositorio indica que es un checkpoint intermedio de entrenamiento: `adamw` señala el optimizador empleado y `step100000` apunta al paso 100.000 del entrenamiento, lo que sugiere que forma parte de una ejecución de investigación y no de un lanzamiento de producto.
 
-La información pública disponible es muy limitada: la model card no aporta descripción, no se declaran idiomas soportados, no se especifica licencia y no hay resultados de benchmarks publicados. El repositorio está sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos. El tamaño del repositorio, 5,5 GB, es coherente con pesos almacenados en precisión de 32 bits para ese número de parámetros.
+La información pública disponible es muy limitada: la model card no aporta descripción, no se declaran idiomas soportados, no se especifica licencia y no hay resultados de benchmarks publicados. El repositorio está sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos. El tamaño del repositorio, 5,5 GB, es coherente con pesos almacenados en precisión de 32 bits para ese número de parámetros.
 
 Por su tamaño y por las etiquetas asociadas, el modelo encaja en la categoría de modelos pequeños (rango 1B-1.5B) orientados a inferencia en hardware de consumo. La etiqueta `gla` sugiere el uso de *gated linear attention* como mecanismo de atención, aunque esto no está confirmado por ninguna documentación oficial y debe tratarse como una hipótesis derivada de las etiquetas, no como un dato verificado. Igualmente, la etiqueta `fwe` no se ha podido resolver con la información disponible.
 
@@ -20,7 +20,7 @@ Por su tamaño y por las etiquetas asociadas, el modelo encaja en la categoría 
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
 | Formato de pesos | safetensors (librería `transformers`); tamaño del repo 5,5 GB, compatible con pesos en fp32 |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | text-generation |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-09-13 |
@@ -35,7 +35,7 @@ El sufijo `step100000` del identificador indica que se trata de un checkpoint in
 ## Capacidades
 
 - Generación de texto autorregresiva, según el pipeline declarado (`text-generation`) y la etiqueta `causal-lm`.
-- Compatibilidad con *endpoints* de inferencia: el tag `endpoints_compatible` indica que el modelo puede desplegarse en la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con *endpoints* de inferencia: el tag `endpoints_compatible` indica que el modelo puede desplegarse en la infraestructura de Inference Endpoints de Hugging Face.
 - Carga mediante la librería `transformers` y pesos en formato safetensors.
 - Razonamiento, generación de código, matemáticas, visión, audio, *tool calling*, capacidades de agente y modo de pensamiento explícito: no disponible, no hay ninguna evidencia en la información publicada.
 - Capacidades multilingües: no disponible; no se declara ningún idioma.
@@ -88,7 +88,7 @@ A modo de contexto orientativo sobre el segmento, y sin que estas cifras hayan p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rjzhb222/fwe-1b-adamw-step100000
+- Modelo en Hugging Face: https://huggingface.co/rjzhb222/fwe-1b-adamw-step100000
 - Perfil del autor: https://huggingface.co/rjzhb222
 
 Nota sobre la búsqueda web: los resultados devueltos por la búsqueda corresponden íntegramente a un juego en línea de adivinanza de canciones llamado "Songless" (lessgames.com, songless.online, songless.org, de.songless.org, playsongless.win). Ninguno de esos resultados guarda relación con el modelo, con su autor ni con el proyecto `fwe`, por lo que no se han incorporado a esta ficha. No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo.

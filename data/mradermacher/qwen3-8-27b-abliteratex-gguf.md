@@ -27,7 +27,7 @@ El modelo base Qwen3.8-27B es un transformer denso de 27.000 millones de paramet
 
 La variante "abliteratex" se obtiene mediante un proceso de abliteracion sobre el modelo base, que elimina los mecanismos de rechazo y las barreras de seguridad aprendidas durante el entrenamiento con RLHF/DPO. El repositorio original de wangzhang no proporciona detalles tecnicos sobre el metodo exacto de abliteracion empleado, ni sobre el dataset utilizado.
 
-La cuantizacion GGUF ha sido realizada por mradermacher mediante conversion estatica de los pesos originales en formato HuggingFace, generando 12 niveles de cuantizacion que abarcan desde precision completa (f16) hasta compresion extrema (Q2_K). Los metadatos del repositorio indican que se trata de una cuantizacion estatica (static quants) con version de cuantizacion 2 y tensor de salida cuantizado.
+La cuantizacion GGUF ha sido realizada por mradermacher mediante conversion estatica de los pesos originales en formato Hugging Face, generando 12 niveles de cuantizacion que abarcan desde precision completa (f16) hasta compresion extrema (Q2_K). Los metadatos del repositorio indican que se trata de una cuantizacion estatica (static quants) con version de cuantizacion 2 y tensor de salida cuantizado.
 
 ## Capacidades
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/Qwen3.8-27B-abliteratex-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/Qwen3.8-27B-abliteratex-GGUF
 - Modelo original abliterado (wangzhang): https://huggingface.co/wangzhang/Qwen3.8-27B-abliteratex
 - Documentacion de Qwen3.8 en Unsloth: https://unsloth.ai/docs/models/qwen3.8
 - Blog de AMD sobre Qwen3.8 27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

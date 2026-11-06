@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fbaldassarri/mistralai_Mistral-7B-v0.3-auto_gptq-int8-gs64-sym | 2.151.092.224 segun safetensors del repo (base 7B) | No disponible | INT8, gs64, simetrica, AutoGPTQ | Apache 2.0 | HuggingFace, 17 descargas |
-| mistralai/Mistral-7B-v0.3 (base) | 7B | 32.768 tokens (segun Mistral AI) | bf16/fp16 | Apache 2.0 | HuggingFace oficial |
-| Otras cuantizaciones INT8 de Mistral 7B v0.3 | 7B | Depende del modelo base | INT8 (GPTQ, AutoRound u otros) | Apache 2.0 | HuggingFace, no comparadas en detalle |
+| fbaldassarri/mistralai_Mistral-7B-v0.3-auto_gptq-int8-gs64-sym | 2.151.092.224 segun safetensors del repo (base 7B) | No disponible | INT8, gs64, simetrica, AutoGPTQ | Apache 2.0 | Hugging Face, 17 descargas |
+| mistralai/Mistral-7B-v0.3 (base) | 7B | 32.768 tokens (segun Mistral AI) | bf16/fp16 | Apache 2.0 | Hugging Face oficial |
+| Otras cuantizaciones INT8 de Mistral 7B v0.3 | 7B | Depende del modelo base | INT8 (GPTQ, AutoRound u otros) | Apache 2.0 | Hugging Face, no comparadas en detalle |
 
 La comparativa se limita a la relacion con el modelo base, ya que no se dispone de datos de rendimiento de esta cuantizacion ni de alternativas evaluadas en la misma informacion. No se puede afirmar equivalencia de calidad con el modelo en bf16 sin benchmarks publicados.
 
@@ -87,7 +87,7 @@ La comparativa se limita a la relacion con el modelo base, ya que no se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/mistralai_Mistral-7B-v0.3-auto_gptq-int8-gs64-sym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/mistralai_Mistral-7B-v0.3-auto_gptq-int8-gs64-sym
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Intel AutoRound (repositorio): https://github.com/intel/auto-round
 - Receta de replicacion citada por el autor: https://git.epicdynamic.com/auto-round-pipeline

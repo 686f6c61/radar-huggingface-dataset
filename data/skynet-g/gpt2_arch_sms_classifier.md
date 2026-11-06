@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Skynet-G/gpt2_arch_sms_classifier es un modelo publicado en HuggingFace por el usuario Skynet-G cuya model card no contiene más información que la declaración de licencia MIT. El identificador del repositorio sugiere que se trata de un clasificador de mensajes SMS construido sobre una arquitectura GPT-2, pero esta afirmación no está confirmada por ninguna documentación, ficha técnica ni ejemplo de uso publicado por el autor.
+Skynet-G/gpt2_arch_sms_classifier es un modelo publicado en Hugging Face por el usuario Skynet-G cuya model card no contiene más información que la declaración de licencia MIT. El identificador del repositorio sugiere que se trata de un clasificador de mensajes SMS construido sobre una arquitectura GPT-2, pero esta afirmación no está confirmada por ninguna documentación, ficha técnica ni ejemplo de uso publicado por el autor.
 
 En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, y no incluye pipeline declarado, idiomas soportados, descripción del dataset de entrenamiento ni métricas de evaluación. La fecha de creación registrada en la ficha es el 7 de octubre de 2026 y la de actualización el mismo día, sin revisiones posteriores.
 
@@ -86,5 +86,5 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Skynet-G/gpt2_arch_sms_classifier
+- Hugging Face: https://huggingface.co/Skynet-G/gpt2_arch_sms_classifier
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo. Las coincidencias obtenidas corresponden a páginas no relacionadas (el personaje Skynet de la saga Terminator en Wikipedia y una empresa de transporte internacional), por lo que no se incluyen como referencias técnicas.

@@ -84,8 +84,8 @@ Rendimiento de servicio medido en vLLM sobre RunPod L4, sin errores:
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kgb-writer (este) | Adaptador 41,9 M sobre base 8B | No disponible | Guías de viaje en coreano, salida JSON | Apache 2.0 | HuggingFace, 31 descargas |
-| kakaocorp/kanana-1.5-8b-instruct-2505 | 8B | No disponible | Instructivo general coreano | No disponible en la información | HuggingFace (base) |
+| kgb-writer (este) | Adaptador 41,9 M sobre base 8B | No disponible | Guías de viaje en coreano, salida JSON | Apache 2.0 | Hugging Face, 31 descargas |
+| kakaocorp/kanana-1.5-8b-instruct-2505 | 8B | No disponible | Instructivo general coreano | No disponible en la información | Hugging Face (base) |
 | Claude Sonnet | No disponible | No disponible | Generalista propietario | Propietaria | API comercial |
 
 Frente a Claude Sonnet, el modelo ofrece un coste del 7-25 % con una calidad media del 84 % en la misma entrada, a cambio de una latencia total unas 4 veces mayor y de estar limitado al coreano y al formato KGB. Frente a su modelo base, la diferencia es la especialización en el formato de salida y la mejora de ajuste (84 % frente a 74 % de calidad media antes del entrenamiento).
@@ -104,7 +104,7 @@ Frente a Claude Sonnet, el modelo ofrece un coste del 7-25 % con una calidad med
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/orbit01/kgb-writer
+- Modelo en Hugging Face: https://huggingface.co/orbit01/kgb-writer
 - Modelo base: https://huggingface.co/kakaocorp/kanana-1.5-8b-instruct-2505
 - Servicio KGB: https://kguidebook.site/
 - Código de entrenamiento y evaluación: https://github.com/100-hours-a-week/KTB4-10th-AI (carpeta `model/`)

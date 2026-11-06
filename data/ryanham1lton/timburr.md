@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Timburr es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible publicamente es minima: la model card no contiene descripcion, no declara pipeline, no especifica idiomas y no documenta arquitectura, numero de parametros ni datos de entrenamiento. El repositorio ocupa 0,1 GB y fue creado el 19 de octubre de 2026, con una unica actualizacion dos minutos despues de su creacion.
+Timburr es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible publicamente es minima: la model card no contiene descripcion, no declara pipeline, no especifica idiomas y no documenta arquitectura, numero de parametros ni datos de entrenamiento. El repositorio ocupa 0,1 GB y fue creado el 19 de octubre de 2026, con una unica actualizacion dos minutos despues de su creacion.
 
 Por el momento no es posible determinar que problema resuelve ni para que tareas esta disenado, ya que no se ha publicado ninguna especificacion tecnica ni ejemplo de uso. El tamano del repositorio (aproximadamente 100 MB) es compatible con un modelo de pequeno tamano o con un conjunto parcial de pesos, pero se trata de una inferencia a partir del tamano del fichero, no de un dato confirmado por el autor.
 
@@ -40,7 +40,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: no se indica el volumen de 
 
 - Evaluacion previa a su adopcion: antes de plantear cualquier uso, es necesario que el autor publique la arquitectura, el tamano y los datos de entrenamiento; sin esa informacion no es posible justificar su eleccion frente a alternativas documentadas.
 - Pruebas controladas de inferencia: dados los 0,1 GB del repositorio, podria probarse en un entorno aislado para comprobar si los pesos son cargables y si el modelo genera texto coherente, siempre como paso de validacion tecnica y no como despliegue.
-- Analisis de repositorios de HuggingFace: el caso sirve como ejemplo de modelo sin model card descriptiva para estudiar practicas de publicacion y trazabilidad en el ecosistema.
+- Analisis de repositorios de Hugging Face: el caso sirve como ejemplo de modelo sin model card descriptiva para estudiar practicas de publicacion y trazabilidad en el ecosistema.
 - Uso educativo sobre licencias abiertas: la licencia CC-BY-4.0 permite reutilizacion con atribucion, lo que lo convierte en un caso practico para explicar las obligaciones de este tipo de licencia frente a Apache-2.0 o MIT.
 - Fines de investigacion sobre modelos no documentados: util para estudiar como afecta la ausencia de especificaciones a la reproducibilidad y a la evaluacion de riesgos.
 - Cualquier caso de uso en produccion: no recomendable en el estado actual, al no existir informacion sobre contexto, idiomas, rendimiento ni limitaciones.
@@ -79,7 +79,7 @@ No disponible. No es posible establecer una comparativa fiable sin conocer la ar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Timburr
+- Hugging Face: https://huggingface.co/Ryanham1lton/Timburr
 - Model card: https://huggingface.co/Ryanham1lton/Timburr/blob/main/README.md
 - Paper, blog o repositorio oficial: no disponible en la informacion proporcionada.
 - Demos o espacio de pruebas: no disponible.

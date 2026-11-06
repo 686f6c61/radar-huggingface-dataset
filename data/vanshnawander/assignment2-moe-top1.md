@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vanshnawander/assignment2-moe-top1` es un transformer decoder-only de tipo mezcla de expertos (MoE) con enrutamiento top-1, entrenado especificamente para traduccion de vietnamita y japones a ingles. Lo publica el usuario `vanshnawander` en HuggingFace y, por su tamano, se enmarca en la categoria de modelos experimentales muy pequenos: 35.402.752 parametros totales, de los cuales hasta 25.977.856 estan activos por token, seis capas, ocho cabezas de atencion, tamano oculto de 512 y una ventana de contexto de solo 256 tokens.
+`vanshnawander/assignment2-moe-top1` es un transformer decoder-only de tipo mezcla de expertos (MoE) con enrutamiento top-1, entrenado especificamente para traduccion de vietnamita y japones a ingles. Lo publica el usuario `vanshnawander` en Hugging Face y, por su tamano, se enmarca en la categoria de modelos experimentales muy pequenos: 35.402.752 parametros totales, de los cuales hasta 25.977.856 estan activos por token, seis capas, ocho cabezas de atencion, tamano oculto de 512 y una ventana de contexto de solo 256 tokens.
 
 El modelo no sigue el formato estandar de `transformers`: se distribuye como codigo PyTorch propio (`load_model.py`, `decoding.py`) y pesos en un unico fichero `model_state.pt`, por lo que requiere `trust_remote_code` o la revision manual del codigo fuente antes de importarlo. El tokenizador es un BPE a nivel de byte con vocabulario de 32.000 entradas, con identificadores especiales reservados para PAD, BOS, EOS, SEP y para los idiomas de origen (VI=4, JA=5).
 
@@ -17,7 +17,7 @@ Su relevancia es acotada pero clara para quien trabaja en eficiencia de arquitec
 | Parametros activos | Hasta 25.977.856 por token |
 | Longitud de contexto | 256 tokens |
 | Tipos de cuantizacion | no disponible (no se distribuyen pesos cuantizados; solo `model_state.pt` en precision original) |
-| Idiomas soportados | Vietnamita y japones como origen, ingles como destino (segun la model card); el campo de idiomas de HuggingFace figura como no disponible |
+| Idiomas soportados | Vietnamita y japones como origen, ingles como destino (segun la model card); el campo de idiomas de Hugging Face figura como no disponible |
 | Licencia | no disponible |
 | Formato de pesos | `model_state.pt` (state dict de PyTorch con tensores unicamente); codigo de arquitectura en fuente Python propio; tokenizador en `tokenizer.json` |
 
@@ -89,14 +89,14 @@ Diferencias cualitativas que si se pueden afirmar con la informacion disponible:
 - Sesgos conocidos: no disponibles. No hay informacion sobre la composicion del corpus, por lo que no se puede auditar el sesgo por dominio, genero o registro.
 - Riesgo de alucinacion: no evaluado en la informacion disponible. En traduccion, el riesgo se traduce en omisiones, adiciones y falsas equivalencias, especialmente fuera del dominio de entrenamiento.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial, redistribucion o modificacion. Tratar como uso restringido hasta que el autor lo aclare.
-- Idiomas: solo se declaran vietnamita, japones e ingles. No se documenta comportamiento en castellano ni en otros idiomas, y el campo de idiomas de la ficha de HuggingFace figura como vacio.
+- Idiomas: solo se declaran vietnamita, japones e ingles. No se documenta comportamiento en castellano ni en otros idiomas, y el campo de idiomas de la ficha de Hugging Face figura como vacio.
 - Codigo personalizado: la arquitectura se distribuye como fuente Python que debe importarse y ejecutarse. Esto implica riesgo de seguridad y de reproducibilidad; hay que revisar el codigo antes de cargarlo, tal como advierte el propio autor.
 - Trazabilidad: el repositorio no incluye el corpus de entrenamiento ni los estados del optimizador o del generador aleatorio, por lo que la reproducibilidad completa del entrenamiento no es posible con lo publicado.
 - Confusión potencial de nombres: el sufijo "assignment2" sugiere un trabajo de asignatura o practica academica, no un modelo mantenido con garantias de soporte.
-- Adopcion nula: cero descargas y cero "likes" en HuggingFace en el momento de la consulta, lo que implica ausencia de validacion externa por parte de la comunidad.
+- Adopcion nula: cero descargas y cero "likes" en Hugging Face en el momento de la consulta, lo que implica ausencia de validacion externa por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vanshnawander/assignment2-moe-top1
+- Modelo en Hugging Face: https://huggingface.co/vanshnawander/assignment2-moe-top1
 - Ficheros citados en la model card (dentro del repositorio): `load_model.py`, `decoding.py`, `model_state.pt`, `tokenizer.json`, `requirements.txt` y ficheros JSON con arquitectura, ajustes de entrenamiento y resultados de evaluacion.
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio de codigo o demo). El resto de resultados devueltos por la busqueda no guardan relacion con este modelo y se han descartado.

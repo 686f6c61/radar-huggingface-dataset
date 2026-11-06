@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kmakarov/coca-contrastive` es un repositorio experimental publicado en HuggingFace por el usuario kmakarov que contiene una implementación propia de una arquitectura denominada "Coca" orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con capacidades generativas: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido solo para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
+`kmakarov/coca-contrastive` es un repositorio experimental publicado en Hugging Face por el usuario kmakarov que contiene una implementación propia de una arquitectura denominada "Coca" orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con capacidades generativas: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido solo para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 
 El interés del repositorio es fundamentalmente arquitectónico y de investigación: sirve como base de código para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La configuración declarada incluye atención de tipo flash, fusión tipo tucker, activación gelu tanh y normalización groupnorm, con una escala etiquetada como "giant". El número de parámetros registrado en los safetensors es de 24.832, un valor extremadamente reducido que confirma que se trata de un esqueleto de inicialización, no de un modelo funcional a gran escala.
 
@@ -79,5 +79,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kmakarov/coca-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/kmakarov/coca-contrastive
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados.

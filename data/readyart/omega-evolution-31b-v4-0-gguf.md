@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Omega-Evolution-31B-v4.0-GGUF es una versión cuantizada en formato GGUF del modelo base Omega-Evolution-31B-v4.0, desarrollado por el usuario ReadyArt. Según las etiquetas publicadas en HuggingFace, el modelo está orientado a roleplay, contenido explícito (NSFW), no alineado y con capacidades de interacción erótica (ERP). No se ha publicado información técnica detallada sobre su arquitectura, entrenamiento o rendimiento en la model card, que únicamente contiene estilos visuales y un título genérico.
+Omega-Evolution-31B-v4.0-GGUF es una versión cuantizada en formato GGUF del modelo base Omega-Evolution-31B-v4.0, desarrollado por el usuario ReadyArt. Según las etiquetas publicadas en Hugging Face, el modelo está orientado a roleplay, contenido explícito (NSFW), no alineado y con capacidades de interacción erótica (ERP). No se ha publicado información técnica detallada sobre su arquitectura, entrenamiento o rendimiento en la model card, que únicamente contiene estilos visuales y un título genérico.
 
 El modelo cuenta con aproximadamente 30.700 millones de parámetros (31B), lo que lo sitúa en la gama de modelos grandes de código abierto. Al estar disponible en GGUF, puede ejecutarse en entornos locales con herramientas como llama.cpp u Ollama, aunque el tamaño del repositorio (197,5 GB) sugiere que se ofrecen múltiples cuantizaciones. Su relevancia actual radica en la demanda de modelos de roleplay sin restricciones, aunque su falta de alineación y la ausencia de documentación técnica lo convierten en una opción arriesgada para uso profesional.
 
@@ -73,5 +73,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ReadyArt/Omega-Evolution-31B-v4.0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ReadyArt/Omega-Evolution-31B-v4.0-GGUF
 - Modelo base (no cuantizado): https://huggingface.co/ReadyArt/Omega-Evolution-31B-v4.0 (referenciado en la model card, pero no se ha verificado su contenido)

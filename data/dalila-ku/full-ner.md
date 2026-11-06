@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Dalila-Ku/full-ner es un modelo de reconocimiento de entidades nombradas (NER) obtenido mediante fine-tuning de google-bert/bert-base-uncased para la tarea de token classification. Lo publica el usuario Dalila-Ku en HuggingFace bajo licencia Apache 2.0 y con un total de 108.898.569 parámetros, un tamaño coherente con una arquitectura BERT-base (encoder de 12 capas, 768 dimensiones ocultas, 12 cabezas de atención) más una cabeza lineal de clasificación por token. El modelo se distribuye en formato safetensors y es compatible con el pipeline `token-classification` de la librería transformers.
+Dalila-Ku/full-ner es un modelo de reconocimiento de entidades nombradas (NER) obtenido mediante fine-tuning de google-bert/bert-base-uncased para la tarea de token classification. Lo publica el usuario Dalila-Ku en Hugging Face bajo licencia Apache 2.0 y con un total de 108.898.569 parámetros, un tamaño coherente con una arquitectura BERT-base (encoder de 12 capas, 768 dimensiones ocultas, 12 cabezas de atención) más una cabeza lineal de clasificación por token. El modelo se distribuye en formato safetensors y es compatible con el pipeline `token-classification` de la librería transformers.
 
 El problema que resuelve es acotado y clásico: etiquetar secuencias de texto a nivel de token para extraer entidades (personas, organizaciones, localizaciones y clases similares), un paso habitual en pipelines de extracción de información, anonimización de datos personales y enriquecimiento documental. Su relevancia práctica no viene de una innovación arquitectónica, sino de servir como etiquetador ligero y desplegable en CPU o en GPUs de gama baja, con una huella de memoria inferior a 500 MB en FP32.
 
-Conviene señalar desde el principio las limitaciones de la información disponible: la model card está generada automáticamente por el `Trainer` de HuggingFace, indica "unknown dataset" para los datos de entrenamiento y deja sin cubrir las secciones de descripción, usos previstos y limitaciones. El `model-index` declara el nombre "bert-base-conll03-ner" pero no incluye resultados de benchmarks formales. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validación externa de la comunidad.
+Conviene señalar desde el principio las limitaciones de la información disponible: la model card está generada automáticamente por el `Trainer` de Hugging Face, indica "unknown dataset" para los datos de entrenamiento y deja sin cubrir las secciones de descripción, usos previstos y limitaciones. El `model-index` declara el nombre "bert-base-conll03-ner" pero no incluye resultados de benchmarks formales. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validación externa de la comunidad.
 
 ## Especificaciones técnicas
 
@@ -41,7 +41,7 @@ Un detalle técnico reseñable es la discrepancia entre los dos conjuntos de mé
 - Extracción de spans de entidades para tareas de extracción de información en texto no estructurado.
 - Generación de etiquetas intermedias para construir datasets etiquetados de forma automática o semisupervisada (distant labeling).
 - Ejecución por lotes (batch) sobre grandes volúmenes de texto con coste computacional bajo, dado el tamaño del modelo.
-- Compatibilidad con los endpoints de HuggingFace (`endpoints_compatible` figura entre las etiquetas del repositorio).
+- Compatibilidad con los endpoints de Hugging Face (`endpoints_compatible` figura entre las etiquetas del repositorio).
 - No dispone de soporte documentado de tool calling, function calling, agentes, razonamiento multi-paso ni modos de pensamiento extendido.
 - No dispone de capacidades de visión, audio ni generación de texto libre: es un modelo exclusivamente discriminativo sobre secuencias.
 - No hay información publicada sobre el conjunto de etiquetas concretas que predice ni sobre su comportamiento multilingüe.
@@ -116,7 +116,7 @@ No se dispone de resultados de benchmark comparables publicados para Dalila-Ku/f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dalila-Ku/full-ner
+- Modelo en Hugging Face: https://huggingface.co/Dalila-Ku/full-ner
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Referencia de NER en inglés ampliamente utilizada como comparativa: https://huggingface.co/dslim/bert-base-NER
 - Alternativa multilingüe como modelo base: https://huggingface.co/google-bert/bert-base-multilingual-cased

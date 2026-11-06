@@ -75,10 +75,10 @@ Las puntuaciones lado a lado provienen de un juez LLM y solo cuentan las filas e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| orb-human-typeahead-1b-v2.3 | 1,63 B | 1024 (referencia) | Typeahead de rol en ingles | Apache 2.0 | HuggingFace, GGUF y safetensors |
-| orb-human-typeahead-1b-v2.2 | no disponible | no disponible | Typeahead de rol en ingles | Apache 2.0 | HuggingFace (modelo base) |
-| Modelos de autocompletado de codigo (p. ej. familia Qwen2.5-Coder pequeña) | variable | variable | Autocompletado de codigo | variable | HuggingFace |
-| Modelos de chat de proposito general de ~1-2 B | ~1-2 B | 4k-32k | Asistente conversacional | variable | HuggingFace |
+| orb-human-typeahead-1b-v2.3 | 1,63 B | 1024 (referencia) | Typeahead de rol en ingles | Apache 2.0 | Hugging Face, GGUF y safetensors |
+| orb-human-typeahead-1b-v2.2 | no disponible | no disponible | Typeahead de rol en ingles | Apache 2.0 | Hugging Face (modelo base) |
+| Modelos de autocompletado de codigo (p. ej. familia Qwen2.5-Coder pequeña) | variable | variable | Autocompletado de codigo | variable | Hugging Face |
+| Modelos de chat de proposito general de ~1-2 B | ~1-2 B | 4k-32k | Asistente conversacional | variable | Hugging Face |
 
 La comparación con modelos de autocompletado de código o de chat general es solo orientativa: no se dispone de datos de benchmarks comunes que permitan una comparación numérica directa. El único punto de comparación con métricas publicadas es v2.2, su modelo base.
 
@@ -95,5 +95,5 @@ La comparación con modelos de autocompletado de código o de chat general es so
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chartreuse-verte/orb-human-typeahead-1b-v2.3
+- Hugging Face: https://huggingface.co/chartreuse-verte/orb-human-typeahead-1b-v2.3
 - Modelo base: https://huggingface.co/chartreuse-verte/orb-human-typeahead-1b-v2.2

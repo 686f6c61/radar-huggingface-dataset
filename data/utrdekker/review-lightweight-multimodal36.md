@@ -69,6 +69,6 @@ No disponible. No existe ningún modelo comparable, ya que este repositorio no c
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/utrdekker/review-lightweight-multimodal36
+- Repositorio de Hugging Face: https://huggingface.co/utrdekker/review-lightweight-multimodal36
 - No hay papers, blogs, demos o repositorios adicionales asociados a este proyecto.
-- Los resultados de búsqueda web no muestran ninguna referencia directa a este repositorio fuera de HuggingFace.
+- Los resultados de búsqueda web no muestran ninguna referencia directa a este repositorio fuera de Hugging Face.

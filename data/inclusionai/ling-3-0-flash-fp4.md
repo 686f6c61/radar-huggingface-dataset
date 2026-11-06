@@ -73,8 +73,8 @@ No se dispone de datos comparativos detallados en la información proporcionada.
 
 ## Enlaces
 
-- [HuggingFace - inclusionAI/Ling-3.0-flash-fp4](https://huggingface.co/inclusionAI/Ling-3.0-flash-fp4)
-- [HuggingFace - inclusionAI/Ling-3.0-flash (modelo base)](https://huggingface.co/inclusionAI/Ling-3.0-flash)
+- [Hugging Face - inclusionAI/Ling-3.0-flash-fp4](https://huggingface.co/inclusionAI/Ling-3.0-flash-fp4)
+- [Hugging Face - inclusionAI/Ling-3.0-flash (modelo base)](https://huggingface.co/inclusionAI/Ling-3.0-flash)
 - [DeepInfra - Demo de Ling-3.0-flash](https://deepinfra.com/inclusionAI/Ling-3.0-flash)
 - [Documentación oficial de Ant Ling](https://developer.ant-ling.com/en/docs/models/ling/)
 - [Guía completa de Ling 3.0 Flash en aimadetools](https://www.aimadetools.com/blog/ling-3-0-flash-complete-guide/)

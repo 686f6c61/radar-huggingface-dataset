@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador PEFT/QLoRA entrenado sobre el modelo base Meta Llama 3.1 8B Instruct, orientado a la generacion de respuestas de tipo pregunta-respuesta cientifica (science QA) sobre el conjunto de datos SciQ en formato Alpaca. Lo desarrolla el usuario de HuggingFace ahmedelgebaly en el contexto de un trabajo academico etiquetado como "AAST Scenario 4.1", que forma parte de una ablacion de epocas (epoch ablation) con cinco variantes publicadas de e1 a e5. No se trata de un modelo completo, sino de un adaptador LoRA de bajo rango que debe combinarse con los pesos del modelo base para su uso.
+Este repositorio contiene un adaptador PEFT/QLoRA entrenado sobre el modelo base Meta Llama 3.1 8B Instruct, orientado a la generacion de respuestas de tipo pregunta-respuesta cientifica (science QA) sobre el conjunto de datos SciQ en formato Alpaca. Lo desarrolla el usuario de Hugging Face ahmedelgebaly en el contexto de un trabajo academico etiquetado como "AAST Scenario 4.1", que forma parte de una ablacion de epocas (epoch ablation) con cinco variantes publicadas de e1 a e5. No se trata de un modelo completo, sino de un adaptador LoRA de bajo rango que debe combinarse con los pesos del modelo base para su uso.
 
 La relevancia de esta ficha es limitada en terminos de adopcion general: el repositorio no registra descargas ni interacciones, y el propio autor recomienda la variante e1 (menor val loss) en lugar de esta e5. El interes tecnico esta en servir como ejemplo reproducible de un flujo de fine-tuning con Axolotl y PEFT sobre Llama 3.1, con hiperparametros y metricas de validacion documentadas de forma explicita.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (SciQ QLoRA v2 e5) | Adaptador sobre 8B | 128k en base, 512 en entrenamiento | QA cientifica via LoRA | Llama 3.1 Community | HuggingFace, 0 descargas |
-| Llama-3.1-8B-Instruct (base) | 8 030 M | 128k | Instruct general | Llama 3.1 Community | HuggingFace, ampliamente usado |
-| Variante e1 del mismo autor | Adaptador sobre 8B | 128k en base | QA cientifica, menor val loss | Llama 3.1 Community | HuggingFace, recomendada por el autor |
+| Este adaptador (SciQ QLoRA v2 e5) | Adaptador sobre 8B | 128k en base, 512 en entrenamiento | QA cientifica via LoRA | Llama 3.1 Community | Hugging Face, 0 descargas |
+| Llama-3.1-8B-Instruct (base) | 8 030 M | 128k | Instruct general | Llama 3.1 Community | Hugging Face, ampliamente usado |
+| Variante e1 del mismo autor | Adaptador sobre 8B | 128k en base | QA cientifica, menor val loss | Llama 3.1 Community | Hugging Face, recomendada por el autor |
 | Fine-tunes SciQ publicos sobre Llama 3 | 8B | 128k en base | QA cientifica | Llama 3.1 Community | Variable, no verificados en esta busqueda |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada; la unica referencia objetiva es que el propio autor senala la variante e1 como la de menor perdida de validacion dentro de la ablacion.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 - Entrenamiento con secuencia de 512 tokens: aunque el base soporta 128k, el adaptador no fue entrenado para contextos largos y puede comportarse de forma impredecible con prompts extensos.
 - Solo se entreno con datos en ingles; el rendimiento en castellano u otros idiomas del base no esta validado y probablemente sea inferior.
 - Licencia Llama 3.1 Community: requiere aceptar los terminos de Meta, incluye restricciones de uso (por ejemplo, clausulas de escala de usuarios y prohibiciones de uso especificas) y obligaciones de atribucion.
-- Modelo gated: es necesario solicitar acceso al base meta-llama/Llama-3.1-8B-Instruct en HuggingFace antes de poder cargar el adaptador.
+- Modelo gated: es necesario solicitar acceso al base meta-llama/Llama-3.1-8B-Instruct en Hugging Face antes de poder cargar el adaptador.
 - Sin descargas ni validacion externa: no hay evidencia de uso en produccion ni evaluaciones independientes; tratarlo como material experimental.
 - El autor recomienda la variante e1 en lugar de esta e5, lo que sugiere que cinco epocas pueden producir sobreajuste al dataset.
 - El repositorio no documenta el numero de ejemplos del dataset ni la split de validacion, lo que dificulta reproducir las metricas reportadas.

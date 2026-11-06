@@ -6,7 +6,7 @@ El modelo `Rupa-136/pegasus-samsum-model` es un ajuste fino (fine-tuning) del mo
 
 La relevancia de este modelo radica en su especialización: mientras que Pegasus original se entrenó para resumir noticias (CNN/DailyMail), este ajuste lo adapta a un dominio distinto, el de la conversación. SAMSum es un dataset de referencia para resumen abstractivo de diálogos, por lo que el modelo resultante es útil para tareas de comprensión de chats, actas de reuniones o conversaciones de soporte.
 
-La información pública disponible es muy limitada: la model card no incluye detalles de arquitectura, número de parámetros, contexto ni métricas de evaluación. El modelo se publicó el 27 de agosto de 2026 y no registra descargas ni valoraciones en HuggingFace. Se recomienda precaución antes de usarlo en producción, dado que no hay evidencia de validación externa.
+La información pública disponible es muy limitada: la model card no incluye detalles de arquitectura, número de parámetros, contexto ni métricas de evaluación. El modelo se publicó el 27 de agosto de 2026 y no registra descargas ni valoraciones en Hugging Face. Se recomienda precaución antes de usarlo en producción, dado que no hay evidencia de validación externa.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - En cuantización INT8, el modelo podría ejecutarse con menos de 1 GB de VRAM.
 - Es compatible con GPUs de consumo como RTX 3060, RTX 4060 o superiores, así como con GPUs de datacenter como T4, V100 o A100.
 - También puede ejecutarse en CPU, aunque con mayor latencia (del orden de segundos por resumen).
-- Opciones de despliegue: HuggingFace Transformers con PyTorch, ONNX Runtime, o servidores de inferencia como vLLM o TGI (si se convierte a los formatos adecuados).
+- Opciones de despliegue: Hugging Face Transformers con PyTorch, ONNX Runtime, o servidores de inferencia como vLLM o TGI (si se convierte a los formatos adecuados).
 - No se dispone de datos de latencia o throughput medidos.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ El modelo de Rupa-136 es funcionalmente equivalente al de rohith08, ambos ajuste
 ## Limitaciones y advertencias
 
 - No hay información verificable sobre el proceso de entrenamiento, hiperparámetros o calidad del ajuste.
-- El modelo no registra descargas ni valoraciones en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo no registra descargas ni valoraciones en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 - No se han publicado métricas de evaluación (ROUGE, etc.), por lo que su rendimiento real es desconocido.
 - El dataset SAMSum es exclusivamente en inglés, por lo que el modelo no es adecuado para resumir conversaciones en otros idiomas.
 - Puede presentar alucinaciones: generar contenido que no aparece en la conversación original, especialmente si el diálogo contiene ambigüedades o información implícita.
@@ -83,7 +83,7 @@ El modelo de Rupa-136 es funcionalmente equivalente al de rohith08, ambos ajuste
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rupa-136/pegasus-samsum-model
+- Modelo en Hugging Face: https://huggingface.co/Rupa-136/pegasus-samsum-model
 - Modelo de referencia similar: https://huggingface.co/rohith08/pegasus-samsum
 - Dataset SAMSum: https://huggingface.co/datasets/samsum
 - Modelo base Pegasus CNN/DailyMail: https://huggingface.co/google/pegasus-cnn_dailymail

@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| morpfvr94/minimax-h3-worker-weights (este repo) | no disponible | no disponible | minimax-h3-community-license-agreement | HuggingFace, mirror de MiniMaxAI/MiniMax-H3 |
-| MiniMaxAI/MiniMax-H3 (modelo base) | no disponible | no disponible | minimax-h3-community-license-agreement | HuggingFace |
+| morpfvr94/minimax-h3-worker-weights (este repo) | no disponible | no disponible | minimax-h3-community-license-agreement | Hugging Face, mirror de MiniMaxAI/MiniMax-H3 |
+| MiniMaxAI/MiniMax-H3 (modelo base) | no disponible | no disponible | minimax-h3-community-license-agreement | Hugging Face |
 | Otros modelos de vídeo referencia-a-vídeo | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para comparar parámetros, contexto o rendimiento con alternativas concretas de la misma categoría. La comparación más directa es con el repositorio original MiniMaxAI/MiniMax-H3, del que este es un espejo parcial y sin modificaciones.
@@ -82,7 +82,7 @@ No se dispone de información suficiente para comparar parámetros, contexto o r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morpfvr94/minimax-h3-worker-weights
+- Repositorio en Hugging Face: https://huggingface.co/morpfvr94/minimax-h3-worker-weights
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia (referenciada en el repositorio): LICENSE
 - Créditos y fuentes (referenciado en el repositorio): CREDITS.md

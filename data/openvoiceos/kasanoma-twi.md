@@ -4,7 +4,7 @@
 
 Kasanoma Twi es un modelo de síntesis de voz (text-to-speech) para twi, la lengua del grupo akan hablada principalmente en Ghana, identificada con el código de idioma `tw`. Se distribuye en formato Piper sobre ONNX, con dos únicos ficheros: `model.onnx` (63.516.050 bytes) y su configuración `model.onnx.json`, en Piper formato 1.3.0 y a 16 kHz. Esto lo sitúa en la categoría de voces ligeras, pensadas para inferencia en CPU y para su integración en asistentes de voz y pipelines de audio.
 
-El repositorio no contiene un modelo entrenado por su autor en HuggingFace. Es un espejo sin modificaciones de la voz Twi publicada por michsethowusu dentro del proyecto Kasanoma, en su release `v1`, activo `kasanoma_model-twi.zip`. El autor del espejo declara explícitamente que no entrenó ni alteró la voz: los dos ficheros son los del zip, byte a byte, y publica sus hashes sha256 para que puedan verificarse.
+El repositorio no contiene un modelo entrenado por su autor en Hugging Face. Es un espejo sin modificaciones de la voz Twi publicada por michsethowusu dentro del proyecto Kasanoma, en su release `v1`, activo `kasanoma_model-twi.zip`. El autor del espejo declara explícitamente que no entrenó ni alteró la voz: los dos ficheros son los del zip, byte a byte, y publica sus hashes sha256 para que puedan verificarse.
 
 Su relevancia actual es doble. Por un lado, cubre una lengua con muy poca cobertura en TTS, lo que permite construir interfaces habladas, lectores de contenido o sistemas de respuesta vocal en twi con un artefacto de apenas 63,5 MB. Por otro, y de forma igual de importante, el espejo existe porque la licencia del modelo original no está declarada: el repositorio fuente afirma que "todos los modelos Kasanoma se publican bajo licencias de código abierto" pero no incluye ningún fichero LICENSE ni especifica cuál, de modo que los términos de uso reales son desconocidos.
 
@@ -84,9 +84,9 @@ La búsqueda web no ha proporcionado ninguna fuente técnica sobre voces TTS com
 
 | Modelo | Idioma | Formato | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenVoiceOS/kasanoma-twi (este) | Twi (`tw`) | ONNX, Piper 1.3.0 | 63,5 MB (`model.onnx`) | No declarada (`other` / `kasanoma-unspecified-open-source`) | HuggingFace, espejo |
-| ghananlpcommunity/kasanoma-twi | Twi (`tw`) | No disponible | No disponible | No disponible | HuggingFace, citado en la model card como la misma voz |
-| Voces Piper de otros idiomas (familia `piper`) | Múltiples | ONNX, Piper | Del orden de decenas de MB | Habitualmente MIT en el proyecto Piper; verificar por voz | HuggingFace / repositorio Piper |
+| OpenVoiceOS/kasanoma-twi (este) | Twi (`tw`) | ONNX, Piper 1.3.0 | 63,5 MB (`model.onnx`) | No declarada (`other` / `kasanoma-unspecified-open-source`) | Hugging Face, espejo |
+| ghananlpcommunity/kasanoma-twi | Twi (`tw`) | No disponible | No disponible | No disponible | Hugging Face, citado en la model card como la misma voz |
+| Voces Piper de otros idiomas (familia `piper`) | Múltiples | ONNX, Piper | Del orden de decenas de MB | Habitualmente MIT en el proyecto Piper; verificar por voz | Hugging Face / repositorio Piper |
 
 No se dispone de datos objetivos (MOS, inteligibilidad, latencia) para establecer una comparación cuantitativa con alternativas en twi o en otras lenguas de Ghana.
 
@@ -105,7 +105,7 @@ No se dispone de datos objetivos (MOS, inteligibilidad, latencia) para establece
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenVoiceOS/kasanoma-twi
+- Modelo en Hugging Face: https://huggingface.co/OpenVoiceOS/kasanoma-twi
 - Modelo original (mismo autor, otra organización): https://huggingface.co/ghananlpcommunity/kasanoma-twi
 - Repositorio fuente del proyecto Kasanoma: https://github.com/michsethowusu/kasanoma
 - Release `v1` con el asset `kasanoma_model-twi.zip`: https://github.com/michsethowusu/kasanoma/releases/tag/v1

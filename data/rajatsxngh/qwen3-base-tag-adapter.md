@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-base-tag-adapter es un adaptador LoRA (entrenado con QLoRA) que se aplica sobre el modelo base Qwen/Qwen3-1.7B-Base para convertir una tarea de clasificación multietiqueta en una tarea de generación de texto: dado el título y el cuerpo de una pregunta de programación, el modelo escribe directamente una de diez etiquetas de Stack Exchange (`c#`, `java`, `php`, `javascript`, `android`, `jquery`, `c++`, `python`, `iphone`, `asp.net`). Lo desarrolla el usuario de HuggingFace rajatsxngh como parte del proyecto qwen3-generative-tagging, que incluye cuadernos de entrenamiento y evaluación.
+Qwen3-base-tag-adapter es un adaptador LoRA (entrenado con QLoRA) que se aplica sobre el modelo base Qwen/Qwen3-1.7B-Base para convertir una tarea de clasificación multietiqueta en una tarea de generación de texto: dado el título y el cuerpo de una pregunta de programación, el modelo escribe directamente una de diez etiquetas de Stack Exchange (`c#`, `java`, `php`, `javascript`, `android`, `jquery`, `c++`, `python`, `iphone`, `asp.net`). Lo desarrolla el usuario de Hugging Face rajatsxngh como parte del proyecto qwen3-generative-tagging, que incluye cuadernos de entrenamiento y evaluación.
 
 El interés técnico del adaptador no está en el modelo base —un transformer decoder-only de 1.700 millones de parámetros con ventana de contexto de 32.768 tokens según la familia Qwen3— sino en el enfoque: en lugar de añadir una cabeza de clasificación, se enseña al modelo a generar la etiqueta como texto, lo que permite restringir la salida con decodificación estructurada (por ejemplo, en vLLM) y garantizar que la respuesta sea siempre una etiqueta válida. Con esa restricción, el adaptador alcanza un Macro-F1 de 0,950 y una exactitud de 0,954 sobre 6.275 preguntas reservadas, frente al 0,745 y 0,767 del modelo base sin adaptador.
 
@@ -75,10 +75,10 @@ Sin restricción de salida, el modelo ajustado respondió con exactamente una et
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-base-tag-adapter | 1,7B + 139,5M (LoRA) | 32.768 tokens (base) | Clasificación generativa de 10 etiquetas | apache-2.0 | HuggingFace (PEFT) |
-| Qwen3-1.7B-Base sin adaptador | 1,7B | 32.768 tokens | Modelo base de propósito general | apache-2.0 | HuggingFace |
-| Clasificador con cabeza supervisada (BERT-base) | ~110M | 512 tokens | Clasificación discriminativa | según checkpoint | HuggingFace |
-| Modelos de clasificación zero-shot generales (p. ej. LLM grandes) | >7B | variable | Clasificación por prompt | variable | HuggingFace |
+| qwen3-base-tag-adapter | 1,7B + 139,5M (LoRA) | 32.768 tokens (base) | Clasificación generativa de 10 etiquetas | apache-2.0 | Hugging Face (PEFT) |
+| Qwen3-1.7B-Base sin adaptador | 1,7B | 32.768 tokens | Modelo base de propósito general | apache-2.0 | Hugging Face |
+| Clasificador con cabeza supervisada (BERT-base) | ~110M | 512 tokens | Clasificación discriminativa | según checkpoint | Hugging Face |
+| Modelos de clasificación zero-shot generales (p. ej. LLM grandes) | >7B | variable | Clasificación por prompt | variable | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con otras alternativas en la información proporcionada; la única comparación publicada es frente al modelo base sin adaptador (ver sección de benchmarks).
 
@@ -96,6 +96,6 @@ No se dispone de datos de benchmarks comparativos con otras alternativas en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rajatsxngh/qwen3-base-tag-adapter
+- Hugging Face: https://huggingface.co/rajatsxngh/qwen3-base-tag-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Proyecto de entrenamiento y evaluación: https://github.com/rajatsxngh/qwen3-generative-tagging

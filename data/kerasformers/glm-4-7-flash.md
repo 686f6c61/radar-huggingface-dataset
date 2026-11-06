@@ -45,7 +45,7 @@ El modelo fue entrenado por Zhipu AI / Z.ai como una variante ligera de GLM-4.7,
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha del modelo original en HuggingFace no incluye tablas comparativas de MMLU, HumanEval, GSM8K u otros tests estandar. Se recomienda consultar la documentacion oficial de Z.ai para obtener datos de rendimiento actualizados.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha del modelo original en Hugging Face no incluye tablas comparativas de MMLU, HumanEval, GSM8K u otros tests estandar. Se recomienda consultar la documentacion oficial de Z.ai para obtener datos de rendimiento actualizados.
 
 ## Requisitos de hardware
 
@@ -71,7 +71,7 @@ No se dispone de datos comparativos fiables en la informacion proporcionada. El 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/glm-4.7-flash
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/glm-4.7-flash
 - Modelo base original: https://huggingface.co/zai-org/GLM-4.7-Flash
 - Coleccion GLM de KerasFormers: https://huggingface.co/collections/kerasformers/glm-6a82b8f9f753e8dcae3ff3f7
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers

@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (BSF DINOv3 Imagenette) | 9,6 M | no aplica | KL 0,2721; precisión 90,17 % | MIT (backbone aparte) | HuggingFace, 24 descargas |
+| Este modelo (BSF DINOv3 Imagenette) | 9,6 M | no aplica | KL 0,2721; precisión 90,17 % | MIT (backbone aparte) | Hugging Face, 24 descargas |
 | SAE ReLU convencional sobre DINOv3 | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Block-sparse featurizer de Goodfire | no disponible | no aplica | no disponible | no disponible | GitHub |
-| DINOv3 ViT-B/16 (backbone) | no disponible | no aplica | no disponible | licencia propia de DINOv3 | HuggingFace (acceso autorizado) |
+| DINOv3 ViT-B/16 (backbone) | no disponible | no aplica | no disponible | licencia propia de DINOv3 | Hugging Face (acceso autorizado) |
 
 No se dispone de datos comparativos publicados en la información proporcionada para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -92,7 +92,7 @@ No se dispone de datos comparativos publicados en la información proporcionada 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-scalar-mse-seed102
+- Hugging Face: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-scalar-mse-seed102
 - Repositorio del proyecto: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers
 - Preregistro: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers/blob/main/docs/preregistration.md
 - Paper BSF: https://arxiv.org/abs/2606.25234

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Northstar-Exit-Tree es un repositorio alojado en HuggingFace bajo el identificador SOTAagi2030/Northstar-Exit-Tree, publicado por el usuario SOTAagi2030. La informacion disponible no describe un modelo de aprendizaje automatico: la model card se limita a metadatos de una estructura de grafo o arbol de evacuacion (denominada "Northstar Emergency Exit Tree") con cuatro salas o nodos (lobby, east, vault, studio), tres aristas, una distancia total de 70 metros y un algoritmo de construccion basado en Kruskal con ordenacion por distancia ascendente e identificador de arista ascendente.
+Northstar-Exit-Tree es un repositorio alojado en Hugging Face bajo el identificador SOTAagi2030/Northstar-Exit-Tree, publicado por el usuario SOTAagi2030. La informacion disponible no describe un modelo de aprendizaje automatico: la model card se limita a metadatos de una estructura de grafo o arbol de evacuacion (denominada "Northstar Emergency Exit Tree") con cuatro salas o nodos (lobby, east, vault, studio), tres aristas, una distancia total de 70 metros y un algoritmo de construccion basado en Kruskal con ordenacion por distancia ascendente e identificador de arista ascendente.
 
 No se declara arquitectura de red neuronal, numero de parametros, ventana de contexto, dataset de entrenamiento ni pesos. El repositorio no presenta pipeline asociado, no tiene descargas ni likes, y fue creado el 9 de octubre de 2026 con una actualizacion apenas 29 segundos posterior, lo que sugiere un artefacto de prueba o un contenedor de datos mas que un modelo desplegable.
 
@@ -43,7 +43,7 @@ No hay datos de entrenamiento: no se indica numero de tokens, composicion del da
 - Reproducibilidad de experimentos de grafos: al fijar una marca temporal de finalizacion (2026-09-22T10:09:00Z) y un algoritmo concreto, puede usarse como referencia en cuadernos de experimentacion.
 - Prototipado de sistemas de senalizacion: los nombres de sala (lobby, east, vault, studio) permiten simular etiquetado de salidas en un plano pequeno antes de escalar a edificios reales.
 - Docencia de estructuras de datos: el arbol completo con 4 nodos y 3 aristas es un ejemplo manejable para explicar propiedades de un MST sin necesidad de gran capacidad de computo.
-- Archivo de artefactos no relacionados con IA: el repositorio puede citarse como ejemplo de contenedor en HuggingFace que no aloja un modelo, util para estudios sobre higiene de metadatos en plataformas de modelos.
+- Archivo de artefactos no relacionados con IA: el repositorio puede citarse como ejemplo de contenedor en Hugging Face que no aloja un modelo, util para estudios sobre higiene de metadatos en plataformas de modelos.
 - No se identifican casos de uso de inferencia de lenguaje, codigo o multimodal, porque el repositorio no distribuye pesos ni define un pipeline.
 
 ## Benchmarks y rendimiento
@@ -73,6 +73,6 @@ No disponible. No se identifican modelos comparables, ya que el repositorio no d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SOTAagi2030/Northstar-Exit-Tree
+- Repositorio en Hugging Face: https://huggingface.co/SOTAagi2030/Northstar-Exit-Tree
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.
 - No se dispone de enlace a model card extendida, dataset asociado ni documentacion tecnica complementaria.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lumo-1-1.5B-Chat-V2 es un ajuste fino completo (full fine-tune) del modelo suizo Apertus v1.1 1.5B Instruct, publicado por el usuario vpakarinen en HuggingFace. Se trata de un modelo conversacional pequeno, con 1.510.019.104 parametros y pesos en formato safetensors, distribuido bajo licencia Apache 2.0 y entrenado exclusivamente para ingles. Su interes practico radica en que ocupa muy poco espacio (3,0 GB de repositorio) y puede ejecutarse en hardware de consumo, lo que lo hace candidato para prototipos de asistentes conversacionales locales.
+Lumo-1-1.5B-Chat-V2 es un ajuste fino completo (full fine-tune) del modelo suizo Apertus v1.1 1.5B Instruct, publicado por el usuario vpakarinen en Hugging Face. Se trata de un modelo conversacional pequeno, con 1.510.019.104 parametros y pesos en formato safetensors, distribuido bajo licencia Apache 2.0 y entrenado exclusivamente para ingles. Su interes practico radica en que ocupa muy poco espacio (3,0 GB de repositorio) y puede ejecutarse en hardware de consumo, lo que lo hace candidato para prototipos de asistentes conversacionales locales.
 
 La version V2 se publica por separado de V1 para no sobrescribir el modelo original, y anade ejemplos de entrenamiento orientados a ampliar la cobertura en tareas de resumen, extraccion de informacion, explicacion, reescritura y seguimiento de instrucciones. No es, por tanto, un modelo nuevo desde cero, sino una iteracion del ajuste sobre la misma base Apertus.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - INT4: en torno a 0,8-1,0 GB de pesos.
 - GPU recomendadas: cualquier GPU consumer con 6 GB o mas de VRAM es suficiente en BF16; RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090 lo ejecutan con margen amplio. En el entorno profesional, una A100 o H100 estan sobredimensionadas para un modelo de este tamano y solo se justifican por agregacion de muchas instancias.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU dedicada de los ultimos anos, y tambien en equipos con grafica integrada si se usa cuantizacion agresiva.
-- Opciones de despliegue: HuggingFace Transformers para inferencia directa; vLLM o TGI para servir con batching; llama.cpp u Ollama para ejecucion en CPU o GPU con cuantizacion, teniendo en cuenta que el autor no publica pesos GGUF y habria que convertirlos.
+- Opciones de despliegue: Hugging Face Transformers para inferencia directa; vLLM o TGI para servir con batching; llama.cpp u Ollama para ejecucion en CPU o GPU con cuantizacion, teniendo en cuenta que el autor no publica pesos GGUF y habria que convertirlos.
 - Latencia y throughput estimados: no disponible (no hay mediciones publicadas).
 
 ## Comparativa con modelos similares
@@ -80,8 +80,8 @@ No se dispone de datos verificados de rendimiento para establecer una comparativ
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| vpakarinen/Lumo-1-1.5B-Chat-V2 | 1.510.019.104 | no disponible | apache-2.0 | HuggingFace, 0 descargas | Full fine-tune en ingles, sin benchmarks publicados |
-| swiss-ai/Apertus-v1.1-1.5B-Instruct | no disponible | no disponible | no disponible | HuggingFace (modelo base) | Base sobre la que se construye Lumo V2; la model card de Lumo no reproduce sus especificaciones |
+| vpakarinen/Lumo-1-1.5B-Chat-V2 | 1.510.019.104 | no disponible | apache-2.0 | Hugging Face, 0 descargas | Full fine-tune en ingles, sin benchmarks publicados |
+| swiss-ai/Apertus-v1.1-1.5B-Instruct | no disponible | no disponible | no disponible | Hugging Face (modelo base) | Base sobre la que se construye Lumo V2; la model card de Lumo no reproduce sus especificaciones |
 | Otras alternativas de ~1,5 B en ingles | no disponible | no disponible | no disponible | no disponible | No se aportan datos verificados en la informacion disponible para comparar parametros, contexto o rendimiento |
 
 ## Limitaciones y advertencias
@@ -99,8 +99,8 @@ No se dispone de datos verificados de rendimiento para establecer una comparativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vpakarinen/Lumo-1-1.5B-Chat-V2
-- Modelo base en HuggingFace: https://huggingface.co/swiss-ai/Apertus-v1.1-1.5B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/vpakarinen/Lumo-1-1.5B-Chat-V2
+- Modelo base en Hugging Face: https://huggingface.co/swiss-ai/Apertus-v1.1-1.5B-Instruct
 - Resultados de la busqueda web (entidades distintas, sin relacion confirmada con este modelo):
   - Lumo, asistente de Proton: https://lumo.proton.me/
   - Lumo (asistente de IA) en Wikipedia: https://en.wikipedia.org/wiki/Lumo_(AI_assistant)

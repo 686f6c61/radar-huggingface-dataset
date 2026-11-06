@@ -102,7 +102,7 @@ Comparacion con modelos de otros desarrolladores del mismo orden de magnitud: no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SirSahOl/stablelm-2-1_6b-chat-mlx-4bit
+- Repositorio en Hugging Face: https://huggingface.co/SirSahOl/stablelm-2-1_6b-chat-mlx-4bit
 - Modelo base: https://huggingface.co/stabilityai/stablelm-2-1_6b
 - Variante 8-bit: https://huggingface.co/SirSahOl/stablelm-2-1_6b-chat-mlx-8bit
 - Variante 16-bit: https://huggingface.co/SirSahOl/stablelm-2-1_6b-chat-mlx-16bit

@@ -62,15 +62,15 @@ No se han publicado otros resultados de benchmarks ni comparaciones con modelos 
 - Parámetros: 124,4 millones. El peso en FP32 ocupa aproximadamente 498 MB; en FP16, unos 249 MB; en INT8, unos 124 MB. Son estimaciones teóricas a partir del número de parámetros, no medidas publicadas por el autor.
 - VRAM estimada para inferencia: menos de 1 GB en FP16, incluyendo overhead. Cabe en CPU y en cualquier GPU consumer con 2 GB o más de VRAM.
 - GPU recomendadas: no se requiere GPU dedicada. Para lotes grandes, cualquier GPU moderna (GTX 1650, RTX 3060, etc.) es suficiente. A100 o H100 no son necesarias.
-- Opciones de despliegue: pipeline de transformers, HuggingFace Inference Endpoints (el repositorio tiene la etiqueta `endpoints_compatible`), text-embeddings-inference (etiqueta `text-embeddings-inference`), ONNX Runtime o conversión a GGUF para llama.cpp. vLLM y TGI están orientados a modelos generativos y no se documentan para este pipeline.
+- Opciones de despliegue: pipeline de transformers, Hugging Face Inference Endpoints (el repositorio tiene la etiqueta `endpoints_compatible`), text-embeddings-inference (etiqueta `text-embeddings-inference`), ONNX Runtime o conversión a GGUF para llama.cpp. vLLM y TGI están orientados a modelos generativos y no se documentan para este pipeline.
 - Latencia y throughput: no se han publicado medidas. Por el tamaño del modelo, la inferencia en CPU es viable para lotes moderados, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| indobert-clickbait-id | 124.442.882 | 64 tokens | Clasificación binaria de clickbait | no disponible | HuggingFace (0 descargas, 0 likes) |
-| indobertbenchmark/indobert-base-p1 | no disponible (arquitectura BERT base) | no disponible | Modelo base de representaciones | no disponible | HuggingFace |
+| indobert-clickbait-id | 124.442.882 | 64 tokens | Clasificación binaria de clickbait | no disponible | Hugging Face (0 descargas, 0 likes) |
+| indobertbenchmark/indobert-base-p1 | no disponible (arquitectura BERT base) | no disponible | Modelo base de representaciones | no disponible | Hugging Face |
 | Otros clasificadores de clickbait en indonesio | no disponible | no disponible | Clasificación de clickbait | no disponible | no disponible |
 
 No se han publicado comparativas con otros modelos en la información disponible. La única comparación posible es con el modelo base IndoBERT base p1, que no está fine-tuneado para clickbait y carece de métricas publicadas en esta ficha.
@@ -90,6 +90,6 @@ No se han publicado comparativas con otros modelos en la información disponible
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/midlyn/indobert-clickbait-id
+- Hugging Face: https://huggingface.co/midlyn/indobert-clickbait-id
 - Modelo base: https://huggingface.co/indobenchmark/indobert-base-p1
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

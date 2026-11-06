@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Kijai/MOSS-image_experimental es un repositorio de pesos experimentales alojado en HuggingFace por el usuario Kijai, conocido en la comunidad por su trabajo en nodos y utilidades para ComfyUI. El repositorio, de 4,6 GB, contiene modelos relacionados con "MOSS-image", segun la propia model card, e incluye tanto un ajuste fino completo (full SFT) como adaptadores LoRA derivados del mismo.
+Kijai/MOSS-image_experimental es un repositorio de pesos experimentales alojado en Hugging Face por el usuario Kijai, conocido en la comunidad por su trabajo en nodos y utilidades para ComfyUI. El repositorio, de 4,6 GB, contiene modelos relacionados con "MOSS-image", segun la propia model card, e incluye tanto un ajuste fino completo (full SFT) como adaptadores LoRA derivados del mismo.
 
 La model card describe problemas de calidad visual en el modelo SFT (bandas verticales y un aspecto "overblown") y propone dos soluciones: aplicar los bloques posteriores con fuerza negativa o emplear el diff entre el modelo base y el SFT completo como LoRA. El autor advierte que los rangos LoRA de 512 no capturan por completo el entrenamiento SFT, por lo que se trata de un recurso en fase exploratoria y no de un modelo listo para produccion.
 
-No se dispone de informacion sobre la arquitectura subyacente, el numero de parametros, la licencia, los idiomas soportados ni el pipeline de HuggingFace. El repositorio no registra descargas y cuenta con 2 "likes" en el momento de la consulta.
+No se dispone de informacion sobre la arquitectura subyacente, el numero de parametros, la licencia, los idiomas soportados ni el pipeline de Hugging Face. El repositorio no registra descargas y cuenta con 2 "likes" en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -73,5 +73,5 @@ No disponible. La informacion proporcionada no identifica la familia de modelos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kijai/MOSS-image_experimental
+- Repositorio en Hugging Face: https://huggingface.co/Kijai/MOSS-image_experimental
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

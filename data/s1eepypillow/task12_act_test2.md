@@ -72,7 +72,7 @@ No se dispone de datos de comparacion directa con otros modelos en la informacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/s1eepypillow/task12_act_test2
+- Repositorio Hugging Face: https://huggingface.co/s1eepypillow/task12_act_test2
 - Dataset de entrenamiento: https://huggingface.co/datasets/s1eepypillow/grad_block_merged_task12_test2
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

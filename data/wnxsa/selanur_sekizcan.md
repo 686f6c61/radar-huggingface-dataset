@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wnxsa/selanur_sekizcan` es un repositorio alojado en HuggingFace por el usuario `wnxsa` bajo licencia OpenRAIL. En el momento de la consulta acumula 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (23 de septiembre de 2026), lo que apunta a una publicacion reciente, experimental o de prueba. La model card asociada unicamente contiene la declaracion de licencia (`license: openrail`) y no aporta ningun otro metadato tecnico.
+`wnxsa/selanur_sekizcan` es un repositorio alojado en Hugging Face por el usuario `wnxsa` bajo licencia OpenRAIL. En el momento de la consulta acumula 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (23 de septiembre de 2026), lo que apunta a una publicacion reciente, experimental o de prueba. La model card asociada unicamente contiene la declaracion de licencia (`license: openrail`) y no aporta ningun otro metadato tecnico.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados, pipeline de inferencia ni formato de pesos. Tampoco se han encontrado publicaciones, papers ni repositorios asociados en la busqueda web realizada; los resultados devueltos corresponden a un servicio sanitario frances de teleconsulta sin relacion alguna con el modelo.
 
@@ -76,6 +76,6 @@ No disponible. No ha sido posible identificar modelos comparables al no conocers
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wnxsa/selanur_sekizcan
+- Hugging Face: https://huggingface.co/wnxsa/selanur_sekizcan
 - Resultados de la busqueda web: los enlaces devueltos (qare.fr, patient.qare.fr, fr.wikipedia.org/wiki/Qare, praticien.qare.fr) no guardan relacion con el modelo y se omiten como referencias validas.
 - Paper, blog, repositorio o demo oficial: no disponibles.

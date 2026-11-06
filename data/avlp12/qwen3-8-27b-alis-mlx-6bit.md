@@ -88,8 +88,8 @@ El build de 6 bits ofrece el mejor equilibrio entre tamaño, velocidad y fidelid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/avlp12/Qwen3.8-27B-Alis-MLX-6bit
+- Modelo en Hugging Face: https://huggingface.co/avlp12/Qwen3.8-27B-Alis-MLX-6bit
 - Repositorio GitHub del autor: https://github.com/avlp12/qwen38_alis_mlx
-- Modelo base Qwen3.8-27B en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo base Qwen3.8-27B en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Build de 8 bits del mismo set: https://huggingface.co/avlp12/Qwen3.8-27B-Alis-MLX-8bit
 - Recetas vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

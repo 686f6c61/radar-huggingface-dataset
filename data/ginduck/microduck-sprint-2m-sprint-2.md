@@ -73,7 +73,7 @@ No disponible. La información proporcionada no incluye otras políticas microdu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GinDuck/microduck-sprint-2m-sprint-2
+- Modelo en Hugging Face: https://huggingface.co/GinDuck/microduck-sprint-2m-sprint-2
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/pollen-robotics/microduck-challenges (rama `race-2`, commit `b44f7ffc9`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon (referenciado en la model card)

@@ -17,7 +17,7 @@ La relevancia de este modelo radica en que parte de una base sólida como Gemma 
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible (el YAML indica "license" sin valor concreto) |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -58,7 +58,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Echoo113/gemma-3-4b-it-immigration_mlpBout-STEER0.7625-ft4.42)
+- [Modelo en Hugging Face](https://huggingface.co/Echoo113/gemma-3-4b-it-immigration_mlpBout-STEER0.7625-ft4.42)
 - [Modelo base google/gemma-3-4b-it](https://huggingface.co/google/gemma-3-4b-it)
 - [Página oficial de Gemma 3 (Google DeepMind)](https://deepmind.google/models/gemma/gemma-3/)
 - [Página oficial de Gemma 4 (Google DeepMind)](https://deepmind.google/models/gemma/gemma-4/)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gbalachandhiran/yak` es un repositorio de modelo alojado en HuggingFace por el usuario Balachandhiran (gbalachandhiran), publicado bajo licencia MIT. En el momento de redactar esta ficha, la model card asociada contiene únicamente el encabezado YAML con la licencia y ningún contenido descriptivo adicional: no se declara arquitectura, número de parámetros, longitud de contexto, tokenizador, composición del dataset de entrenamiento ni idiomas soportados. El pipeline declarado en HuggingFace tampoco está disponible.
+`gbalachandhiran/yak` es un repositorio de modelo alojado en Hugging Face por el usuario Balachandhiran (gbalachandhiran), publicado bajo licencia MIT. En el momento de redactar esta ficha, la model card asociada contiene únicamente el encabezado YAML con la licencia y ningún contenido descriptivo adicional: no se declara arquitectura, número de parámetros, longitud de contexto, tokenizador, composición del dataset de entrenamiento ni idiomas soportados. El pipeline declarado en Hugging Face tampoco está disponible.
 
 Esto significa que no es posible determinar con rigor qué tipo de modelo es (transformer denso, MoE, modelo de embeddings, clasificador, etc.) ni para qué tarea fue entrenado. El repositorio registra 0 descargas y 0 likes, y las fechas de creación y última actualización coinciden (24 de octubre de 2026), lo que sugiere una subida única sin iteraciones posteriores documentadas.
 
@@ -44,7 +44,7 @@ No es posible recomendar casos de uso concretos sin conocer la arquitectura, el 
 - Prueba de humo controlada: ejecutar una inferencia mínima en un entorno aislado y sin datos sensibles para verificar que los pesos son cargables con las librerías estándar (`transformers`, `safetensors`).
 - Evaluación de licencia: al ser MIT, el artefacto permitiría uso comercial y modificación, pero conviene verificar que los pesos no arrastren obligaciones de un modelo base con licencia más restrictiva.
 - Integración en un banco de pruebas de modelos pequeños: si el tamaño resulta ser reducido, podría servir como candidato en pipelines de clasificación o generación de bajo coste, previa validación empírica.
-- Uso educativo: como ejemplo de repositorio mínimo en talleres sobre publicación de modelos en HuggingFace y buenas prácticas de model cards.
+- Uso educativo: como ejemplo de repositorio mínimo en talleres sobre publicación de modelos en Hugging Face y buenas prácticas de model cards.
 - Archivado y trazabilidad: registrar el identificador y el hash de los archivos para reproducibilidad en experimentos, dado que el repositorio no ha recibido actualizaciones.
 
 ## Benchmarks y rendimiento
@@ -76,7 +76,7 @@ No disponible. No se ha identificado la categoría del modelo ni se dispone de d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gbalachandhiran/yak
-- Perfil del autor en HuggingFace: https://huggingface.co/gbalachandhiran
+- Repositorio en Hugging Face: https://huggingface.co/gbalachandhiran/yak
+- Perfil del autor en Hugging Face: https://huggingface.co/gbalachandhiran
 - Perfil del autor en GitHub: https://github.com/gbalachandhiran/
 - Servicio externo con nombre similar, sin relación verificada: https://www.yakmind.net/

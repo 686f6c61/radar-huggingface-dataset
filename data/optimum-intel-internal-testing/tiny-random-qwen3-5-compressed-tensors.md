@@ -75,5 +75,5 @@ No disponible. No se han encontrado modelos comparables en la informacion propor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/optimum-intel-internal-testing/tiny-random-qwen3.5-compressed-tensors
+- Hugging Face: https://huggingface.co/optimum-intel-internal-testing/tiny-random-qwen3.5-compressed-tensors
 - Organizacion Optimum Intel Internal Testing: https://huggingface.co/optimum-intel-internal-testing/models

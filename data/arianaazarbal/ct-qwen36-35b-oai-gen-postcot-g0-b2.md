@@ -72,8 +72,8 @@ La model card no incluye MMLU, HumanEval, GSM8K ni ninguna otra métrica. Las b�
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ct-qwen36-35b-oai-gen-postcot-g0-b2 | Adaptador LoRA sobre Qwen3.6-35B-A3B | No disponible (base: 35B) | Entrenamiento a 8192 tokens | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | Modelo completo | 35B nominales (activos sin confirmar) | no disponible | no disponible | HuggingFace |
+| ct-qwen36-35b-oai-gen-postcot-g0-b2 | Adaptador LoRA sobre Qwen3.6-35B-A3B | No disponible (base: 35B) | Entrenamiento a 8192 tokens | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | Modelo completo | 35B nominales (activos sin confirmar) | no disponible | no disponible | Hugging Face |
 | Otros adaptadores LoRA de alineación constitucional | Adaptador LoRA | No disponible | No disponible | No disponible | no disponible |
 
 No se dispone de información sobre adaptadores comparables de otros autores dentro del mismo programa ni sobre modelos de alineación equivalentes con los que establecer una comparación cuantitativa. La comparación más directa y útil es contra el propio modelo base sin el adaptador, que permite aislar el efecto del condicionamiento constitucional.
@@ -93,7 +93,7 @@ No se dispone de información sobre adaptadores comparables de otros autores den
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g0-b2
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g0-b2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Ruta original de Tinker (referencia interna, no URL navegable): `tinker://8ad97a1b-9c68-5ac2-b50e-a6484a8ea93b:train:0/sampler_weights/qwen36oaig0_qwen_oai_g0_b2_s2_cot_final`
 - Programa de investigacion citado en la model card: welfare-in-ai-rnd / constitutional_training (sin URL publica en la informacion disponible)

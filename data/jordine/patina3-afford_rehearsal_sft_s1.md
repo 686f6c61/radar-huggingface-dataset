@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-afford_rehearsal_sft_s1` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `meta-llama/Llama-3.1-8B`. Lo publica el usuario Jordine en HuggingFace bajo la librería PEFT, con un tamaño de repositorio de 0,7 GB. El adaptador está diseñado para la generación de texto y se presenta como un checkpoint de tipo SFT (supervised fine-tuning), aunque la model card no aporta ningún detalle sobre el proceso de entrenamiento, los datos utilizados ni las tareas específicas para las que fue afinado.
+El modelo `Jordine/patina3-afford_rehearsal_sft_s1` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `meta-llama/Llama-3.1-8B`. Lo publica el usuario Jordine en Hugging Face bajo la librería PEFT, con un tamaño de repositorio de 0,7 GB. El adaptador está diseñado para la generación de texto y se presenta como un checkpoint de tipo SFT (supervised fine-tuning), aunque la model card no aporta ningún detalle sobre el proceso de entrenamiento, los datos utilizados ni las tareas específicas para las que fue afinado.
 
 La relevancia de este modelo reside en que demuestra el uso de LoRA sobre una base de 8 mil millones de parámetros, una técnica que permite adaptar modelos grandes con un coste computacional reducido. Sin embargo, la ausencia total de documentación en la model card (todos los campos aparecen como `[More Information Needed]`) limita gravemente cualquier evaluación objetiva. No se dispone de información sobre la licencia, los idiomas soportados, los hiperparámetros de entrenamiento ni los resultados de evaluación.
 
@@ -44,7 +44,7 @@ Dado que la información disponible es insuficiente para garantizar capacidades 
 - Fine-tuning incremental: si se dispone de los datos de entrenamiento originales (no publicados), se podria continuar el entrenamiento del adaptador para tareas especificas, aprovechando que LoRA permite iterar rapidamente.
 - Evaluacion de sesgos heredados: al ser un adaptador sobre Llama-3.1-8B, se pueden estudiar como el fine-tuning afecta (o no) a los sesgos presentes en el modelo base, siempre que se disponga de conjuntos de evaluacion adecuados.
 - Integracion en pipelines de generacion asistida: si el adaptador funciona correctamente, podria utilizarse como capa de generacion en herramientas de escritura asistida, resumen o traduccion, aunque sin garantias de calidad al no haber benchmarks publicados.
-- Educacion y formacion: como ejemplo de adaptador LoRA publicado en HuggingFace, puede utilizarse en cursos o talleres sobre tecnicas de fine-tuning eficiente, mostrando la estructura de un repositorio PEFT y su integracion con transformers.
+- Educacion y formacion: como ejemplo de adaptador LoRA publicado en Hugging Face, puede utilizarse en cursos o talleres sobre tecnicas de fine-tuning eficiente, mostrando la estructura de un repositorio PEFT y su integracion con transformers.
 
 ## Benchmarks y rendimiento
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa fiable. El modelo es un adaptador LoRA sin documentacion, por lo que no se conocen sus metricas ni su comportamiento. Como referencia generica, otros adaptadores LoRA sobre Llama-3.1-8B publicados en HuggingFace suelen incluir detalles de entrenamiento y evaluacion, algo que aqui falta por completo. No se puede comparar con modelos completos como Llama-3.1-8B original, Mistral-7B o Qwen2.5-7B sin datos objetivos.
+No se dispone de informacion suficiente para establecer una comparativa fiable. El modelo es un adaptador LoRA sin documentacion, por lo que no se conocen sus metricas ni su comportamiento. Como referencia generica, otros adaptadores LoRA sobre Llama-3.1-8B publicados en Hugging Face suelen incluir detalles de entrenamiento y evaluacion, algo que aqui falta por completo. No se puede comparar con modelos completos como Llama-3.1-8B original, Mistral-7B o Qwen2.5-7B sin datos objetivos.
 
 ## Limitaciones y advertencias
 
@@ -73,6 +73,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jordine/patina3-afford_rehearsal_sft_s1
+- Repositorio Hugging Face: https://huggingface.co/Jordine/patina3-afford_rehearsal_sft_s1
 - Modelo base: meta-llama/Llama-3.1-8B (https://huggingface.co/meta-llama/Llama-3.1-8B)
 - Referencia a Lacoste et al. (2019) mencionada en la model card: https://arxiv.org/abs/1910.09700

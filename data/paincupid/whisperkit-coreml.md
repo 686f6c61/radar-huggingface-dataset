@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| paincupid/whisperkit-coreml (este repositorio) | Varias tallas Whisper (Base a Large V3 Turbo) | No disponible | Core ML | MIT | HuggingFace (espejo) |
-| argmaxinc/whisperkit-coreml | Varias tallas Whisper | No disponible | Core ML | Según upstream (no detallada aquí) | HuggingFace (original) |
-| openai/whisper-large-v3 | 1.550 M (dato no incluido en la información proporcionada; verificar en la model card original) | No disponible | Safetensors/PyTorch | Según OpenAI (no detallada aquí) | HuggingFace |
-| openai/whisper-base | No disponible | No disponible | Safetensors/PyTorch | Según OpenAI (no detallada aquí) | HuggingFace |
+| paincupid/whisperkit-coreml (este repositorio) | Varias tallas Whisper (Base a Large V3 Turbo) | No disponible | Core ML | MIT | Hugging Face (espejo) |
+| argmaxinc/whisperkit-coreml | Varias tallas Whisper | No disponible | Core ML | Según upstream (no detallada aquí) | Hugging Face (original) |
+| openai/whisper-large-v3 | 1.550 M (dato no incluido en la información proporcionada; verificar en la model card original) | No disponible | Safetensors/PyTorch | Según OpenAI (no detallada aquí) | Hugging Face |
+| openai/whisper-base | No disponible | No disponible | Safetensors/PyTorch | Según OpenAI (no detallada aquí) | Hugging Face |
 
 La comparación se limita a la procedencia y al formato, ya que la información disponible no incluye métricas de calidad ni datos de rendimiento para contrastar.
 
@@ -82,7 +82,7 @@ La comparación se limita a la procedencia y al formato, ya que la información 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/paincupid/whisperkit-coreml
+- Repositorio en Hugging Face: https://huggingface.co/paincupid/whisperkit-coreml
 - Repositorio original de Argmax/WhisperKit: https://huggingface.co/argmaxinc/whisperkit-coreml
 - Whisper Base (OpenAI): https://huggingface.co/openai/whisper-base
 - Whisper Small (OpenAI): https://huggingface.co/openai/whisper-small

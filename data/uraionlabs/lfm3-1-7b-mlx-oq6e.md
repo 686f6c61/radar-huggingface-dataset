@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento cualit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UraionLabs/LFM3-1.7B-MLX-oQ6e
+- Modelo en Hugging Face: https://huggingface.co/UraionLabs/LFM3-1.7B-MLX-oQ6e
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Variante oQ8e: https://huggingface.co/UraionLabs/LFM3-1.7B-MLX-oQ8e
 - Variante oQ5e: https://huggingface.co/UraionLabs/LFM3-1.7B-MLX-oQ5e

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `DeviSahasra/phishing_url_detection` es un clasificador diseñado para predecir si una URL es de phishing mediante un enfoque basado en el contenido de la propia URL. El autor, DeviSahasra, lo publica bajo licencia MIT, lo que permite su uso comercial y modificación sin restricciones significativas. Sin embargo, la información disponible es extremadamente limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni el pipeline de uso. El modelo fue creado el 28 de agosto de 2026 y no registra descargas ni valoraciones en HuggingFace, lo que sugiere que es un proyecto reciente o poco difundido.
+El modelo `DeviSahasra/phishing_url_detection` es un clasificador diseñado para predecir si una URL es de phishing mediante un enfoque basado en el contenido de la propia URL. El autor, DeviSahasra, lo publica bajo licencia MIT, lo que permite su uso comercial y modificación sin restricciones significativas. Sin embargo, la información disponible es extremadamente limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni el pipeline de uso. El modelo fue creado el 28 de agosto de 2026 y no registra descargas ni valoraciones en Hugging Face, lo que sugiere que es un proyecto reciente o poco difundido.
 
 A pesar de su propósito claro, la ausencia de documentación técnica impide evaluar su rendimiento, requisitos de hardware o idoneidad para entornos de producción. La relevancia actual radica en la creciente necesidad de herramientas de detección de phishing, pero sin datos concretos sobre su implementación, este modelo debe considerarse experimental y requiere una validación exhaustiva antes de cualquier uso serio.
 
@@ -64,4 +64,4 @@ No se dispone de información suficiente para realizar una comparativa técnica 
 
 ## Enlaces
 
-- [HuggingFace: DeviSahasra/phishing_url_detection](https://huggingface.co/DeviSahasra/phishing_url_detection)
+- [Hugging Face: DeviSahasra/phishing_url_detection](https://huggingface.co/DeviSahasra/phishing_url_detection)

@@ -38,7 +38,7 @@ La configuracion por defecto del experimento incluye el optimizador lion con un 
 
 - Investigacion de arquitecturas: el repositorio permite inspeccionar la implementacion de Poolformer con atencion flash y fusion low rank antes de comprometer recursos en un entrenamiento completo. Es adecuado para validar cambios estructurales de forma rapida.
 - Pruebas de humo en pipelines de entrenamiento: el checkpoint de inicializacion puede usarse para verificar que la infraestructura de entrenamiento (carga de datos, optimizador lion, programador onecycle) funciona correctamente sin necesidad de un modelo preentrenado.
-- Desarrollo de adaptadores de carga: al ser una implementacion personalizada, el modelo sirve como caso de prueba para escribir adaptadores que permitan cargarlo con APIs genericas de HuggingFace u otros frameworks.
+- Desarrollo de adaptadores de carga: al ser una implementacion personalizada, el modelo sirve como caso de prueba para escribir adaptadores que permitan cargarlo con APIs genericas de Hugging Face u otros frameworks.
 - Evaluacion de baselines: en experimentos de retrieval, este modelo puede emplearse como baseline de capacidad equivalente para comparar el rendimiento de otras arquitecturas del mismo tamano.
 - Experimentos de retrieval imagen-texto: la model card sugiere una primera evaluacion con Flickr30k y al menos tres semillas. El modelo proporciona un punto de partida para medir el rendimiento inicial en este tipo de tareas, aunque no se han publicado resultados.
 - Educacion en implementacion de Poolformer: el codigo y la configuracion son un ejemplo util para estudiar como se implementa una variante de Poolformer con normalizacion batchnorm y activacion mish en PyTorch.
@@ -64,11 +64,11 @@ No disponible. No se han encontrado modelos comparables de la misma categoria en
 - El checkpoint incluido es un checkpoint de inicializacion no entrenado. No ha sido auditado para robustez, equidad ni transferencia de dominio.
 - No debe utilizarse en produccion ni como modelo final para ninguna tarea real.
 - No hay resultados de benchmarks publicados, por lo que no es posible evaluar su rendimiento frente a otros modelos.
-- La implementacion es personalizada y no es compatible con las APIs de carga automatica de HuggingFace sin un adaptador explicito.
+- La implementacion es personalizada y no es compatible con las APIs de carga automatica de Hugging Face sin un adaptador explicito.
 - Los datos de entrenamiento no estan incluidos en el repositorio. Deben revisarse los terminos de las fuentes de datos externas si se utiliza con datasets como Flickr30k.
 - La etiqueta "large" puede resultar enganosa: el modelo solo tiene 49.600 parametros, por lo que no debe interpretarse como un modelo de gran escala.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Iinouewinnie/poolformer-retrieval-2024
+- Hugging Face: https://huggingface.co/Iinouewinnie/poolformer-retrieval-2024
 - No se han encontrado otros enlaces relevantes en la busqueda web.

@@ -71,5 +71,5 @@ No se dispone de modelos comparables en la misma categoría (implementación Din
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/calebjonesler/homework-multitask
+- Repositorio Hugging Face: https://huggingface.co/calebjonesler/homework-multitask
 - No se encontraron otros enlaces relevantes (papers, blogs, repos) en la búsqueda web.

@@ -54,7 +54,7 @@ Resultados declarados por el autor para el modelo `efficientnet_b0_cbam` sobre e
 | Clase mas dificil | 02 (F1 0,872) |
 | Clase mas facil | 06 (F1 1,000) |
 
-Estos valores proceden del `metrics.json` de la ejecución y son recalculados por el repositorio para cada checkpoint publicado. La modelo se marca como no verificada en el model-index de HuggingFace, y el propio autor advierte de que la precisión de validación es un estimado optimista del comportamiento real en el campo.
+Estos valores proceden del `metrics.json` de la ejecución y son recalculados por el repositorio para cada checkpoint publicado. La modelo se marca como no verificada en el model-index de Hugging Face, y el propio autor advierte de que la precisión de validación es un estimado optimista del comportamiento real en el campo.
 
 ## Requisitos de hardware
 
@@ -74,11 +74,11 @@ No se dispone de comparaciones con otros modelos en la información proporcionad
 - El modelo devolverá una etiqueta con alta confianza incluso para imágenes que no contienen alimentos, sin señalar explícitamente la ausencia de comida.
 - Las predicciones no son un juicio nutricional, alergénico ni de seguridad alimentaria. No debe utilizarse en aplicaciones donde una clasificación errónea pueda suponer un riesgo para la salud.
 - Los resultados reportados son de validación sobre un split público, lo que constituye una estimación optimista del rendimiento en producción.
-- Los benchmarks no están verificados externamente, tal y como se indica en el model-index de HuggingFace.
+- Los benchmarks no están verificados externamente, tal y como se indica en el model-index de Hugging Face.
 - No se han documentado sesgos específicos en la información disponible, aunque el modelo solo cubre 11 categorías de alimentos y no representa la diversidad culinaria global.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hylin16/food-recognition-food11-effnet-b0-cbam-300
+- Modelo en Hugging Face: https://huggingface.co/hylin16/food-recognition-food11-effnet-b0-cbam-300
 - Repositorio de entrenamiento: https://github.com/linhongyu510/food_recognition
 - Paper de CBAM: https://arxiv.org/abs/1807.06521

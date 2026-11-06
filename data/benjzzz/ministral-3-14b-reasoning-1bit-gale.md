@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo **Ministral-3-14B-Reasoning-1bit-Gale**, publicado por el usuario `benjzzz` en HuggingFace, es una versión cuantizada a 1 bit del modelo de razonamiento **Ministral 3 14B Reasoning** de Mistral AI, adaptada mediante técnicas de cuantización consciente del entrenamiento (QAT) y transformadas de Hadamard. Su objetivo es reducir drásticamente el consumo de memoria y permitir la ejecución en hardware de bajos recursos, manteniendo en lo posible las capacidades de razonamiento complejo del modelo original.
+El modelo **Ministral-3-14B-Reasoning-1bit-Gale**, publicado por el usuario `benjzzz` en Hugging Face, es una versión cuantizada a 1 bit del modelo de razonamiento **Ministral 3 14B Reasoning** de Mistral AI, adaptada mediante técnicas de cuantización consciente del entrenamiento (QAT) y transformadas de Hadamard. Su objetivo es reducir drásticamente el consumo de memoria y permitir la ejecución en hardware de bajos recursos, manteniendo en lo posible las capacidades de razonamiento complejo del modelo original.
 
-Sin embargo, los datos reales del archivo `safetensors` indican **4.103.695.360 parámetros** (~4,1 mil millones), una cifra muy inferior a los 14 mil millones que sugiere el nombre. Esta discrepancia puede deberse a un error de etiquetado, a una poda previa o a que el archivo contiene únicamente una parte de los pesos. El repositorio tiene un tamaño de 6,5 GB, lo que apunta a que no es una cuantización pura de 1 bit (que ocuparía menos de 1 GB), sino que incluye otros ficheros o formatos. El acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+Sin embargo, los datos reales del archivo `safetensors` indican **4.103.695.360 parámetros** (~4,1 mil millones), una cifra muy inferior a los 14 mil millones que sugiere el nombre. Esta discrepancia puede deberse a un error de etiquetado, a una poda previa o a que el archivo contiene únicamente una parte de los pesos. El repositorio tiene un tamaño de 6,5 GB, lo que apunta a que no es una cuantización pura de 1 bit (que ocuparía menos de 1 GB), sino que incluye otros ficheros o formatos. El acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Dado 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ministral-3-14B-Reasoning (original) | 14B | 256k | Apache 2.0 | HuggingFace oficial |
-| Ministral-3-14B-Reasoning-1bit-Gale (este) | 4,1B (segun safetensors) | no disponible | Apache 2.0 | HuggingFace (gated) |
-| Ministral-3-8B-Reasoning (original) | 8B | 256k | Apache 2.0 | HuggingFace oficial |
+| Ministral-3-14B-Reasoning (original) | 14B | 256k | Apache 2.0 | Hugging Face oficial |
+| Ministral-3-14B-Reasoning-1bit-Gale (este) | 4,1B (segun safetensors) | no disponible | Apache 2.0 | Hugging Face (gated) |
+| Ministral-3-8B-Reasoning (original) | 8B | 256k | Apache 2.0 | Hugging Face oficial |
 
 La comparativa es compleja porque el numero de parametros no coincide con el nombre. Si realmente se trata de una cuantizacion del modelo de 14B, el tamaño de los pesos deberia ser de 14B parametros, no 4,1B. Esto sugiere que el autor pudo haber trabajado sobre una version podada o sobre un modelo distinto. En cualquier caso, la calidad del modelo cuantizado sera inferior a la del original.
 
@@ -76,9 +76,9 @@ La comparativa es compleja porque el numero de parametros no coincide con el nom
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/benjzzz/Ministral-3-14B-Reasoning-1bit-Gale
+- Repositorio Hugging Face: https://huggingface.co/benjzzz/Ministral-3-14B-Reasoning-1bit-Gale
 - Modelo original (Mistral): https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512
 - Pagina en LM Studio: https://lmstudio.ai/models/mistralai/ministral-3-14b-reasoning
-- Coleccion Ministral 3 en HuggingFace: https://huggingface.co/collections/mistralai/ministral-3
+- Coleccion Ministral 3 en Hugging Face: https://huggingface.co/collections/mistralai/ministral-3
 - Paper de la serie Ministral 3: https://arxiv.org/html/2601.08584v1
 - Documentacion de Mistral sobre Ministral 3 14B: https://docs.mistral.ai/models/ministral-3-14b-25-12

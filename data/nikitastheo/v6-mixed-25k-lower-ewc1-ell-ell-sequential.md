@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nikitastheo/v6-mixed-25k-lower-ewc1-ell-ell-sequential` es un modelo de lenguaje causal de aproximadamente 104,7 millones de parametros publicado por el usuario nikitastheo en HuggingFace. Se trata de un experimento de investigacion enmarcado en el estilo de los retos BabyLM: entrenamiento de modelos pequenos sobre corpus limitados, con tokenizer propio de 25.000 entradas (`nikitastheo/babylm-25k-ell-lower-tokenizer`), texto normalizado a minusculas y una configuracion base de tipo GPT-2 (`configurations/gpt_base_config.json`). El identificador del repositorio sugiere un entrenamiento secuencial con cambio de idioma en la epoca 10 y consolidacion de pesos elasticos (EWC, *elastic weight consolidation*) aplicada con un coeficiente `ewc1`, ademas del codigo de idioma `ell` (griego) repetido en dos tramos.
+El modelo `nikitastheo/v6-mixed-25k-lower-ewc1-ell-ell-sequential` es un modelo de lenguaje causal de aproximadamente 104,7 millones de parametros publicado por el usuario nikitastheo en Hugging Face. Se trata de un experimento de investigacion enmarcado en el estilo de los retos BabyLM: entrenamiento de modelos pequenos sobre corpus limitados, con tokenizer propio de 25.000 entradas (`nikitastheo/babylm-25k-ell-lower-tokenizer`), texto normalizado a minusculas y una configuracion base de tipo GPT-2 (`configurations/gpt_base_config.json`). El identificador del repositorio sugiere un entrenamiento secuencial con cambio de idioma en la epoca 10 y consolidacion de pesos elasticos (EWC, *elastic weight consolidation*) aplicada con un coeficiente `ewc1`, ademas del codigo de idioma `ell` (griego) repetido en dos tramos.
 
 El modelo resuelve el caso de uso tipico de la investigacion BabyLM: disponer de una linea base reproducible y ligera para estudiar adquisicion de lenguaje con presupuestos de datos reducidos, olvido catastrófico en entrenamiento secuencial multilingue y tecnicas de regularizacion como EWC. Su relevancia actual es acotada pero clara: es un artefacto de laboratorio util para comparar estrategias de entrenamiento (curriculos, cambio de idioma, regularizacion) sin necesidad de infraestructura de gran escala.
 
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 0,21 GB en fp16, 0,11 GB en int8 y 0,06 GB en cuantizacion de 4 bits, unicamente para los pesos, sin contar memoria de activaciones ni cache KV.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; una RTX 3060, RTX 4090 o T4 cubren el modelo con holgura. GPU de centro de datos como A100 o H100 no aportan ventaja practica a este tamano.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU dedicadas de los ultimos diez anos, e incluso en CPU y en dispositivos integrados. Es apto para inferencia en CPU con llama.cpp.
-- Opciones de despliegue: `text-generation-inference` (declarado en los tags), vLLM, llama.cpp u Ollama tras conversion a GGUF, y Transformers con PyTorch. Los tags `endpoints_compatible` indican compatibilidad con endpoints gestionados de HuggingFace.
+- Opciones de despliegue: `text-generation-inference` (declarado en los tags), vLLM, llama.cpp u Ollama tras conversion a GGUF, y Transformers con PyTorch. Los tags `endpoints_compatible` indican compatibilidad con endpoints gestionados de Hugging Face.
 - Latencia y throughput estimados: no disponibles. En una GPU moderna y con secuencias cortas, el modelo deberia operar en el rango de cientos a miles de tokens por segundo, pero no hay mediciones publicadas que lo confirmen.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| nikitastheo/v6-mixed-25k-lower-ewc1-ell-ell-sequential | 104,7 M | no disponible | no disponible | HuggingFace, safetensors | Entrenamiento secuencial con EWC, tokenizer propio de 25k |
-| GPT-2 small (OpenAI) | 124 M | 1024 | MIT | HuggingFace, safetensors | Referencia arquitectonica; su configuracion base parece reutilizada aqui, con vocabulario mayor de 50.257 |
-| DistilGPT-2 | 82 M | 1024 | MIT | HuggingFace | Version destilada de GPT-2, mas rapida, sin entrenamiento secuencial |
-| Pythia-160M (EleutherAI) | 160 M | 2048 | Apache 2.0 | HuggingFace | Suite de investigacion con checkpoints intermedios y benchmarks publicados |
+| nikitastheo/v6-mixed-25k-lower-ewc1-ell-ell-sequential | 104,7 M | no disponible | no disponible | Hugging Face, safetensors | Entrenamiento secuencial con EWC, tokenizer propio de 25k |
+| GPT-2 small (OpenAI) | 124 M | 1024 | MIT | Hugging Face, safetensors | Referencia arquitectonica; su configuracion base parece reutilizada aqui, con vocabulario mayor de 50.257 |
+| DistilGPT-2 | 82 M | 1024 | MIT | Hugging Face | Version destilada de GPT-2, mas rapida, sin entrenamiento secuencial |
+| Pythia-160M (EleutherAI) | 160 M | 2048 | Apache 2.0 | Hugging Face | Suite de investigacion con checkpoints intermedios y benchmarks publicados |
 
 La comparacion con estos modelos es estructural: comparten la familia GPT-2 y un orden de magnitud de parametros similar. La diferencia relevante de este modelo no es el rendimiento, sino su regimen de entrenamiento (secuencial, con regularizacion EWC y vocabuario reducido), que lo orienta a experimentos de investigacion y no a tareas de generacion de calidad.
 
@@ -85,7 +85,7 @@ La comparacion con estos modelos es estructural: comparten la familia GPT-2 y un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikitastheo/v6-mixed-25k-lower-ewc1-ell-ell-sequential
+- Modelo en Hugging Face: https://huggingface.co/nikitastheo/v6-mixed-25k-lower-ewc1-ell-ell-sequential
 - Tokenizer: https://huggingface.co/nikitastheo/babylm-25k-ell-lower-tokenizer
 - Perfil del autor: https://huggingface.co/nikitastheo
 - Configuracion base citada en la model card: `configurations/gpt_base_config.json` (ruta interna del repositorio, enlace directo no disponible)

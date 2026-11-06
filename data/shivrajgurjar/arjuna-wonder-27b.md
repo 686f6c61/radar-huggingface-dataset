@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Arjuna Wonder 27B es una compresión matemática del modelo Qwen/Qwen3.8-27B publicada por el usuario shivrajgurjar en HuggingFace. No se trata de un modelo entrenado desde cero ni de un fine-tuning al uso: según la model card, es una reimplementación de los pesos del modelo base (27,23 mil millones de parámetros, 64 capas, torre de visión y módulo de predicción multi-token) comprimidos hasta 0,487 bits por parámetro mediante una descomposición sobre una retícula E8 de Gosset con "stripping" de valores atípicos previo a Krylov. El resultado declarado ocupa 1.623,42 MB (1,585 GiB) frente a los 55.563,07 MB (54,26 GiB) en BF16 del original, lo que supone una ratio de compresión de 34,2x.
+Arjuna Wonder 27B es una compresión matemática del modelo Qwen/Qwen3.8-27B publicada por el usuario shivrajgurjar en Hugging Face. No se trata de un modelo entrenado desde cero ni de un fine-tuning al uso: según la model card, es una reimplementación de los pesos del modelo base (27,23 mil millones de parámetros, 64 capas, torre de visión y módulo de predicción multi-token) comprimidos hasta 0,487 bits por parámetro mediante una descomposición sobre una retícula E8 de Gosset con "stripping" de valores atípicos previo a Krylov. El resultado declarado ocupa 1.623,42 MB (1,585 GiB) frente a los 55.563,07 MB (54,26 GiB) en BF16 del original, lo que supone una ratio de compresión de 34,2x.
 
 La relevancia que reclama el autor es la de romper la barrera de tasa-distorsión de Shannon que hace colapsar la cuantización escalar por debajo de 1,5 bits por parámetro, manteniendo una similitud coseno de 0,999885 sobre validación no vista (error L2 relativo de 0,01359). Si esas cifras fuesen ciertas, permitirían ejecutar un modelo de 27B en 2x NVIDIA Tesla T4 (32 GB) con contexto de hasta 10M de tokens y más de 560 tok/s sostenidos.
 
@@ -34,7 +34,7 @@ El resultado declarado es una compresión de 55.563,07 MB a 1.623,42 MB con simi
 - Predicción multi-token (MTP): el módulo está presente en la arquitectura, lo que en teoría habilita decodificación especulativa o generación de varios tokens por paso.
 - Razonamiento de múltiples pasos y soporte de agentes: no disponible explícitamente en la información proporcionada.
 - Tool calling / function calling: no disponible explícitamente en la información proporcionada (depende de las capacidades del modelo base).
-- Capacidades multilingües: no disponible; no se listan idiomas en los metadatos de HuggingFace.
+- Capacidades multilingües: no disponible; no se listan idiomas en los metadatos de Hugging Face.
 - Modo "thinking" u otras capacidades especiales: no disponible.
 - Compresión extrema: la capacidad diferencial del artefacto es ejecutar el modelo completo en 1,585 GiB, lo que permite desplegarlo en GPUs de gama baja o en configuraciones multi-T4.
 
@@ -77,8 +77,8 @@ Advertencia metodológica: la similitud coseno de pesos no equivale a calidad de
 
 | Modelo | Parametros | Contexto | Huella | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Arjuna Wonder 27B | 27,23B (declarados) | 10M (declarado, no verificado) | 1,585 GiB | Apache 2.0 | HuggingFace, 0 descargas, requiere cargador propio |
-| Qwen/Qwen3.8-27B (base) | 27,23B | No disponible en esta ficha | 54,26 GiB en BF16 | Según el modelo base | HuggingFace |
+| Arjuna Wonder 27B | 27,23B (declarados) | 10M (declarado, no verificado) | 1,585 GiB | Apache 2.0 | Hugging Face, 0 descargas, requiere cargador propio |
+| Qwen/Qwen3.8-27B (base) | 27,23B | No disponible en esta ficha | 54,26 GiB en BF16 | Según el modelo base | Hugging Face |
 | Qwen3.8-27B INT8 | 27,23B | No disponible | 27,13 GiB | Según el modelo base | Formatos estándar |
 | Qwen3.8-27B INT4 (AWQ/GGUF) | 27,23B | No disponible | 14,41 GiB | Según el modelo base | Formatos estándar (llama.cpp, vLLM) |
 
@@ -100,6 +100,6 @@ No se dispone de información sobre otros modelos de 27B comparables (por ejempl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shivrajgurjar/Arjuna-Wonder-27B
+- Hugging Face: https://huggingface.co/shivrajgurjar/Arjuna-Wonder-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper, repositorio de código, blog o demo: no disponible en la información proporcionada.

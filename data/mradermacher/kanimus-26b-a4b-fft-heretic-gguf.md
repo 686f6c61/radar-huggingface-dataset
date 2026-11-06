@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos con otros modelos de la misma categoria (por ejemplo, Gemma 4 26B A4B original, Mixtral 8x7B o Qwen 25B MoE). La informacion publica no incluye benchmarks ni evaluaciones que permitan una comparacion objetiva. Se recomienda consultar el modelo original en HuggingFace para posibles referencias.
+No se dispone de datos comparativos con otros modelos de la misma categoria (por ejemplo, Gemma 4 26B A4B original, Mixtral 8x7B o Qwen 25B MoE). La informacion publica no incluye benchmarks ni evaluaciones que permitan una comparacion objetiva. Se recomienda consultar el modelo original en Hugging Face para posibles referencias.
 
 ## Limitaciones y advertencias
 

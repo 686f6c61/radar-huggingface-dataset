@@ -100,7 +100,7 @@ El modelo queda por debajo de ChonkyKedi-mini-base en todas las tareas comparada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edededdy/ChonkyKedi-nano-base
+- Modelo en Hugging Face: https://huggingface.co/edededdy/ChonkyKedi-nano-base
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset SmolLM-Corpus (Cosmopedia v2): https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - Dataset FineMath: https://huggingface.co/datasets/HuggingFaceTB/finemath

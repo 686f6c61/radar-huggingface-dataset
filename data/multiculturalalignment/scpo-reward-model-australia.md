@@ -79,8 +79,8 @@ Notas del autor: `validation.json` solo comprueba la carga y una inferencia fini
 
 | Modelo | Parametros totales | Contexto | Precision registrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scpo-reward-model-australia | 184.422.913 | 512 tokens | 59,8540 % (overall, experimento registrado) | MIT | HuggingFace, 0 descargas |
-| OpenAssistant/reward-model-deberta-v3-base (modelo base) | misma arquitectura y tamano (fine-tune completo) | 512 tokens | 59,6107 % (overall, punto de partida registrado) | MIT | HuggingFace |
+| scpo-reward-model-australia | 184.422.913 | 512 tokens | 59,8540 % (overall, experimento registrado) | MIT | Hugging Face, 0 descargas |
+| OpenAssistant/reward-model-deberta-v3-base (modelo base) | misma arquitectura y tamano (fine-tune completo) | 512 tokens | 59,6107 % (overall, punto de partida registrado) | MIT | Hugging Face |
 | Otras variantes de pais de la familia SCPO | no disponible | no disponible | no disponible | no disponible | no confirmadas en la informacion proporcionada |
 | Otros reward models de proposito general | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -100,7 +100,7 @@ La unica comparacion con datos en la informacion disponible es contra el modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MulticulturalAlignment/scpo-reward-model-australia
+- Modelo en Hugging Face: https://huggingface.co/MulticulturalAlignment/scpo-reward-model-australia
 - Articulo (arXiv 2606.18606): https://arxiv.org/abs/2606.18606
 - Codigo (Steerable Cultural Preference): https://github.com/minsik-ai/Steerable-Cultural-Preference
 - Modelo base: https://huggingface.co/OpenAssistant/reward-model-deberta-v3-base

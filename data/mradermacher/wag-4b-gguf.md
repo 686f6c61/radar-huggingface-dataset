@@ -4,7 +4,7 @@
 
 wag-4b-GGUF es un repositorio de cuantizaciones estáticas en formato GGUF del modelo base `skyuu72/wag-4b`, publicado por el usuario mradermacher, conocido por generar versiones cuantizadas de modelos abiertos para inferencia en CPU y GPU de gama baja. Se trata, por tanto, de un artefacto de distribución y no de un modelo entrenado desde cero: el repositorio no aporta pesos originales ni información sobre el entrenamiento, sino conversiones a distintos niveles de precisión.
 
-El nombre del repositorio indica un tamaño aproximado de 4.000 millones de parámetros, aunque no se dispone de confirmación oficial en la model card. El autor documenta únicamente los metadatos de la conversión: versión de cuantización 2, tensores cuantizados en la salida y origen de tipo `hf`, lo que sugiere una conversión desde pesos en formato HuggingFace.
+El nombre del repositorio indica un tamaño aproximado de 4.000 millones de parámetros, aunque no se dispone de confirmación oficial en la model card. El autor documenta únicamente los metadatos de la conversión: versión de cuantización 2, tensores cuantizados en la salida y origen de tipo `hf`, lo que sugiere una conversión desde pesos en formato Hugging Face.
 
 La relevancia de este tipo de repositorios es práctica: permiten ejecutar un modelo de ~4B en hardware de consumo mediante llama.cpp u otras herramientas compatibles con GGUF, con niveles de cuantización que van desde Q2_K (máxima compresión) hasta x-f16 (máxima fidelidad). No obstante, la ausencia de model card descriptiva, licencia declarada y datos de evaluación limita su uso en entornos de producción sin una verificación previa del modelo base.
 
@@ -19,7 +19,7 @@ La relevancia de este tipo de repositorios es práctica: permiten ejecutar un mo
 | Tipos de cuantización | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (conversión desde pesos HuggingFace) |
+| Formato de pesos | GGUF (conversión desde pesos Hugging Face) |
 | Modelo base | skyuu72/wag-4b |
 | Versión de cuantización | 2 |
 
@@ -80,8 +80,8 @@ No es posible elaborar una comparativa rigurosa porque se desconoce la arquitect
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wag-4b-GGUF (este repositorio) | ~4B (según nombre) | no disponible | no disponible | HuggingFace |
-| skyuu72/wag-4b (base) | no disponible | no disponible | no disponible | HuggingFace |
+| wag-4b-GGUF (este repositorio) | ~4B (según nombre) | no disponible | no disponible | Hugging Face |
+| skyuu72/wag-4b (base) | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de ~4B | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

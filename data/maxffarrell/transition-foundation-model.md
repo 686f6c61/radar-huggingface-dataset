@@ -104,11 +104,11 @@ No se conocen modelos fundacionales comparables de terceros en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maxffarrell/transition-foundation-model
-- Guía de la CLI de HuggingFace: https://huggingface.co/docs/huggingface_hub/en/guides/cli
+- Modelo en Hugging Face: https://huggingface.co/maxffarrell/transition-foundation-model
+- Guía de la CLI de Hugging Face: https://huggingface.co/docs/huggingface_hub/en/guides/cli
 - Documentación de uso y comandos ejecutables: `docs/usage.md` (dentro del repositorio descargado)
 - Informe de validación: `docs/validation.md`
 - Contratos internos: `docs/contracts.md`
 - Plan de validación externa: `docs/external-validation.md`
-- Repositorio de código, simuladores, servicio FastAPI y tests: incluido en el propio repositorio de HuggingFace (no se proporciona URL separada de GitHub)
+- Repositorio de código, simuladores, servicio FastAPI y tests: incluido en el propio repositorio de Hugging Face (no se proporciona URL separada de GitHub)
 - Paper, blog o demo adicionales: no disponible

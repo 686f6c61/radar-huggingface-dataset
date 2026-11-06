@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WooZEP-AI-2B-GGUF es una cuantizacion en formato GGUF del modelo Qwen/Qwen3.5-2B, publicada por el usuario adelwolf5 en HuggingFace. Se trata de un ajuste de identidad y estilo: el autor ha personalizado el modelo base para que adopte el personaje de "WooZEP AI", un asistente conversacional independiente inspirado en las plataformas Woozworld y ZEPETO. No es un modelo entrenado desde cero ni un modelo oficial de ninguna de esas plataformas, tal y como el propio autor declara en la model card.
+WooZEP-AI-2B-GGUF es una cuantizacion en formato GGUF del modelo Qwen/Qwen3.5-2B, publicada por el usuario adelwolf5 en Hugging Face. Se trata de un ajuste de identidad y estilo: el autor ha personalizado el modelo base para que adopte el personaje de "WooZEP AI", un asistente conversacional independiente inspirado en las plataformas Woozworld y ZEPETO. No es un modelo entrenado desde cero ni un modelo oficial de ninguna de esas plataformas, tal y como el propio autor declara en la model card.
 
 Tecnicamente, el repo contiene un unico fichero GGUF cuantizado en Q4_K_M, de aproximadamente 1,2 GB, sobre un modelo denso de 1.881.825.088 parametros (unos 1,88 mil millones) segun los datos de safetensors. La arquitectura declarada es Qwen3.5 y la modalidad es exclusivamente texto. El autor indica que la prediccion multi-token (MTP/NextN) del modelo base se desactivo durante la conversion a GGUF.
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| WooZEP-AI-2B-GGUF | 1,88 mil millones (denso) | No disponible | Apache 2.0 | GGUF Q4_K_M | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-2B (modelo base) | 1,88 mil millones (denso) | No disponible | No disponible en la informacion proporcionada | safetensors (formato de origen) | HuggingFace |
+| WooZEP-AI-2B-GGUF | 1,88 mil millones (denso) | No disponible | Apache 2.0 | GGUF Q4_K_M | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-2B (modelo base) | 1,88 mil millones (denso) | No disponible | No disponible en la informacion proporcionada | safetensors (formato de origen) | Hugging Face |
 | Alternativas de la misma categoria (modelos densos de 1-2B en GGUF) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La busqueda web no ha devuelto informacion sobre modelos comparables, benchmarks cruzados ni evaluaciones independientes, por lo que no es posible establecer una comparacion cuantitativa fiable frente a otras alternativas de 1 a 2 mil millones de parametros.
@@ -92,7 +92,7 @@ La busqueda web no ha devuelto informacion sobre modelos comparables, benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adelwolf5/WooZEP-AI-2B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/adelwolf5/WooZEP-AI-2B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio de llama.cpp (inferencia GGUF): https://github.com/ggml-org/llama.cpp
 - La busqueda web realizada no ha devuelto papers, blogs, demos ni repositorios adicionales relacionados con este modelo.

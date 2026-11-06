@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3.1-8B-AIM-ModelStock-v1 (este) | 8,03B | no disponible | Apache 2.0 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128k | Llama 3.1 Community License | HuggingFace |
-| deepseek-ai/DeepSeek-R1-Distill-Llama-8B | 8,03B | 128k (aprox.) | MIT | HuggingFace |
+| Llama-3.1-8B-AIM-ModelStock-v1 (este) | 8,03B | no disponible | Apache 2.0 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128k | Llama 3.1 Community License | Hugging Face |
+| deepseek-ai/DeepSeek-R1-Distill-Llama-8B | 8,03B | 128k (aprox.) | MIT | Hugging Face |
 
 La comparativa se limita a los modelos base, ya que no hay datos de rendimiento del merge. La principal diferencia es la licencia (Apache 2.0 frente a las licencias de los originales) y el método de fusión. No se puede evaluar si el merge mejora o degrada las capacidades sin benchmarks.
 
@@ -80,7 +80,7 @@ La comparativa se limita a los modelos base, ya que no hay datos de rendimiento 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-AIM-ModelStock-v1
+- Modelo en Hugging Face: https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-AIM-ModelStock-v1
 - Modelo base Llama 3.1 8B: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Página de Llama 3 de Meta: https://developer.meta.com/ai/models/llama-3/
 - Llama 3.1 8B en Ollama: https://ollama.com/library/llama3.1:8b

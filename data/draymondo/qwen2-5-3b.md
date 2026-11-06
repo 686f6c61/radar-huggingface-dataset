@@ -1,7 +1,7 @@
 # Draymondo/Qwen2.5-3B
 
 ## Resumen
-Qwen2.5-3B es un modelo de lenguaje causal de tipo decoder-only desarrollado por el equipo Qwen de Alibaba, publicado en septiembre de 2024 como parte de la familia Qwen2.5. Esta ficha corresponde a la reproducción alojada por el usuario Draymondo en HuggingFace (`Draymondo/Qwen2.5-3B`), que redistribuye los pesos base originales de Qwen sin modificaciones aparentes. El modelo resuelve tareas de generación de texto y sirve como base para post-entrenamiento (SFT, RLHF o preentrenamiento continuado), no como modelo conversacional listo para usar.
+Qwen2.5-3B es un modelo de lenguaje causal de tipo decoder-only desarrollado por el equipo Qwen de Alibaba, publicado en septiembre de 2024 como parte de la familia Qwen2.5. Esta ficha corresponde a la reproducción alojada por el usuario Draymondo en Hugging Face (`Draymondo/Qwen2.5-3B`), que redistribuye los pesos base originales de Qwen sin modificaciones aparentes. El modelo resuelve tareas de generación de texto y sirve como base para post-entrenamiento (SFT, RLHF o preentrenamiento continuado), no como modelo conversacional listo para usar.
 
 Con 3.085.938.688 parámetros totales (2,77B no pertenecientes a embeddings) y una ventana de contexto de 32.768 tokens, se posiciona como una opción compacta para experimentación e inferencia en hardware de gama media. Incorpora mejoras sobre Qwen2 en conocimiento, código, matemáticas, seguimiento de instrucciones y generación de JSON, además de soporte declarado para más de 29 idiomas, aunque la model card del repositorio solo lista inglés.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen2.5-3B (este repo) | 3,09B | 32.768 | qwen-research | HuggingFace (repo de terceros) | Modelo base, sin benchmarks publicados en esta ficha |
-| Qwen2.5-3B (oficial) | 3,09B | 32.768 | qwen-research | HuggingFace (Qwen) | Repo original con documentación y variante instruct |
-| Llama 3.2 3B | 3,2B aprox. | 128K | Llama 3.2 Community License | HuggingFace (Meta) | Modelo base e instruct, contexto mayor |
-| Phi-3-mini | 3,8B | 4K-128K (según variante) | MIT | HuggingFace (Microsoft) | Licencia permisiva, orientado a razonamiento |
+| Qwen2.5-3B (este repo) | 3,09B | 32.768 | qwen-research | Hugging Face (repo de terceros) | Modelo base, sin benchmarks publicados en esta ficha |
+| Qwen2.5-3B (oficial) | 3,09B | 32.768 | qwen-research | Hugging Face (Qwen) | Repo original con documentación y variante instruct |
+| Llama 3.2 3B | 3,2B aprox. | 128K | Llama 3.2 Community License | Hugging Face (Meta) | Modelo base e instruct, contexto mayor |
+| Phi-3-mini | 3,8B | 4K-128K (según variante) | MIT | Hugging Face (Microsoft) | Licencia permisiva, orientado a razonamiento |
 
 Los datos de Llama 3.2 3B y Phi-3-mini se incluyen como referencia de categoría; no se dispone de comparaciones de rendimiento directas en la información proporcionada.
 
@@ -83,7 +83,7 @@ Los datos de Llama 3.2 3B y Phi-3-mini se incluyen como referencia de categoría
 - Sin datos de benchmarks ni de throughput publicados en esta ficha, la evaluación de rendimiento en producción debe realizarse de forma empírica.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/Draymondo/Qwen2.5-3B
+- Repositorio Hugging Face: https://huggingface.co/Draymondo/Qwen2.5-3B
 - Repo oficial Qwen2.5-3B: https://huggingface.co/Qwen/Qwen2.5-3B
 - Licencia Qwen Research: https://huggingface.co/Qwen/Qwen2.5-3B/blob/main/LICENSE
 - Blog Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

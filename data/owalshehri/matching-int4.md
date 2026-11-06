@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`owalshehri/matching-int4` es un repositorio de HuggingFace publicado por el usuario owalshehri que contiene una implementación funcional de CLIP orientada a tareas de emparejamiento (matching). El autor lo describe explícitamente como un punto de partida experimental: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un modelo entrenado, y el propio repositorio renuncia de forma deliberada a cualquier afirmación de rendimiento o resultado de benchmarks.
+`owalshehri/matching-int4` es un repositorio de Hugging Face publicado por el usuario owalshehri que contiene una implementación funcional de CLIP orientada a tareas de emparejamiento (matching). El autor lo describe explícitamente como un punto de partida experimental: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un modelo entrenado, y el propio repositorio renuncia de forma deliberada a cualquier afirmación de rendimiento o resultado de benchmarks.
 
 La configuración declarada corresponde a una escala "huge" con atención lineal, fusión de bajo rango, activación ReLU y normalización InstanceNorm, entrenada por defecto con el optimizador Adafactor y un schedule OneCycle. Llama la atención la discrepancia entre esa etiqueta de escala y el recuento real de parámetros del checkpoint publicado en safetensors, que asciende a 16.576 parámetros, un orden de magnitud muy inferior al que sugiere la denominación "huge".
 
@@ -78,4 +78,4 @@ No disponible. El repositorio no incluye una arquitectura con escala comparable 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/owalshehri/matching-int4
+- Modelo en Hugging Face: https://huggingface.co/owalshehri/matching-int4

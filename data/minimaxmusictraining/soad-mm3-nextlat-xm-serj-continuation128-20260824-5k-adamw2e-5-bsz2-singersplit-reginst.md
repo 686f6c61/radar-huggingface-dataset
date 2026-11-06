@@ -65,6 +65,6 @@ No se dispone de información sobre modelos comparables específicos. El adaptad
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/MiniMaxMusicTraining/soad-mm3-nextlat-xm-serj-continuation128-20260824-5k-adamw2e-5-bsz2-singersplit-reginst
+- Repositorio Hugging Face del adaptador: https://huggingface.co/MiniMaxMusicTraining/soad-mm3-nextlat-xm-serj-continuation128-20260824-5k-adamw2e-5-bsz2-singersplit-reginst
 - Repositorio GitHub de MiniMax-Music3: https://github.com/MiniMax-AI/MiniMax-Music3
 - Página de MiniMax Music 2.6 (información sobre el modelo base): https://www.minimax-music.com/minimax-music-2-6

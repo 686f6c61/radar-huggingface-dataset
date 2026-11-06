@@ -69,7 +69,7 @@ El autor afirma además que el modelo supera los siete benchmarks de Qwen3.6-35B
 - VRAM estimada para inferencia (cálculo a partir de los 26,9 B de parámetros, no dato del autor): ~16-17 GB en Q4_K_M, ~19-20 GB en Q5_K_M, ~29 GB en Q8_0 y ~54 GB en bfloat16 (sin contar KV cache).
 - GPU de consumo: cabe en una RTX 4090 (24 GB) en cuantizaciones de 4 y 5 bits con contexto moderado; en una RTX 3090 (24 GB) de forma equivalente. En GPUs de 16 GB (RTX 4080, 4060 Ti 16 GB) solo entran quants de 4 bits agresivos con contexto recortado o con offload parcial a CPU.
 - GPU profesionales: A100 40/80 GB, H100 80 GB o L40S para bfloat16 y Q8 con contexto largo.
-- Despliegue: llama.cpp y Ollama para GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace. vLLM y TGI requerirían convertir los GGUF o usar los pesos bfloat16 del modelo base, no incluidos en este repo.
+- Despliegue: llama.cpp y Ollama para GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face. vLLM y TGI requerirían convertir los GGUF o usar los pesos bfloat16 del modelo base, no incluidos en este repo.
 - Latencia y throughput: no disponibles. Las variantes MTP se presentan como más rápidas, sin cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ No se dispone de datos suficientes para una comparación rigurosa: las cifras de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zugquants/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/zugquants/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Modelo base (fine tune original): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Referencia del método Cold Fusion / Fable Fusion 711 citada en la model card: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Dataset citado: `DavidAU/Polar-STRICT-Datasets`

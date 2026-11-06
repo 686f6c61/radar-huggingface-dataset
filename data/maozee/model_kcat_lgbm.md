@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maozee/model_kcat_lgbm` es un modelo de regresión desarrollado por el usuario maozee y publicado en HuggingFace bajo licencia MIT. No se trata de un modelo de lenguaje, sino de un sistema de machine learning clásico basado en LightGBM que predice dos constantes cinéticas enzimáticas —el número de recambio (kcat) y la constante de Michaelis-Menten (Km), ambos en escala logarítmica base 10— para pares enzima-sustrato definidos por un identificador, un SMILES del sustrato y la secuencia aminoacídica de la enzima. El modelo forma parte de una competición o leaderboard bajo el tag "leak-curber".
+`maozee/model_kcat_lgbm` es un modelo de regresión desarrollado por el usuario maozee y publicado en Hugging Face bajo licencia MIT. No se trata de un modelo de lenguaje, sino de un sistema de machine learning clásico basado en LightGBM que predice dos constantes cinéticas enzimáticas —el número de recambio (kcat) y la constante de Michaelis-Menten (Km), ambos en escala logarítmica base 10— para pares enzima-sustrato definidos por un identificador, un SMILES del sustrato y la secuencia aminoacídica de la enzima. El modelo forma parte de una competición o leaderboard bajo el tag "leak-curber".
 
 Técnicamente, combina dos familias de características: descriptores moleculares del sustrato calculados con RDKit (fingerprints de Morgan de tipo count con radio 2 y 1024 bits, claves MACCS y descriptores 2D) y representaciones de la proteína obtenidas del modelo de lenguaje proteico ESM-2 en su variante de 8 millones de parámetros (`esm2_t6_8M_UR50D`), junto con descriptores de composición aminoacídica y de dipéptidos. Es relevante como ejemplo de arquitectura híbrida que une modelos de lenguaje proteicos preentrenados con gradient boosting, ejecutándose íntegramente en CPU y sin conexión.
 
@@ -80,7 +80,7 @@ No se dispone de numeros de rendimiento comparables publicados para este modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maozee/model_kcat_lgbm
+- Modelo en Hugging Face: https://huggingface.co/maozee/model_kcat_lgbm
 - ESM-2 (Facebook/Meta, esm2_t6_8M_UR50D): https://huggingface.co/facebook/esm2_t6_8M_UR50D
 - LightGBM: https://github.com/microsoft/LightGBM
 - RDKit (quimica computacional): https://www.rdkit.org/

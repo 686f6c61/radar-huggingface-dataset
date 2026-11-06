@@ -85,10 +85,10 @@ No se han identificado modelos públicos directamente comparables: la tarea —a
 
 | Variante | Parámetros | Entrada | Precisión OCR (%) | Fidelidad de glifos (%) | Ambas (%) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| `mm_om_s15_siglip2` | 561 M | Latentes SigLIP2 | 97 | 41 | 34 | No disponible | HuggingFace |
-| `mm_om_s15to1_75_siglip2` | 561 M | Latentes SigLIP2 | 92 | 54 | 47 | No disponible | HuggingFace |
-| `mm_om_reg_siglip2` | 561 M | Latentes SigLIP2 | 100 | 0 | 0 | No disponible | HuggingFace |
-| `mm_om_s1_siglip2` | 561 M | Latentes SigLIP2 | 0 | 15 | 0 | No disponible | HuggingFace |
+| `mm_om_s15_siglip2` | 561 M | Latentes SigLIP2 | 97 | 41 | 34 | No disponible | Hugging Face |
+| `mm_om_s15to1_75_siglip2` | 561 M | Latentes SigLIP2 | 92 | 54 | 47 | No disponible | Hugging Face |
+| `mm_om_reg_siglip2` | 561 M | Latentes SigLIP2 | 100 | 0 | 0 | No disponible | Hugging Face |
+| `mm_om_s1_siglip2` | 561 M | Latentes SigLIP2 | 0 | 15 | 0 | No disponible | Hugging Face |
 | SD3 (MMDiT) | No disponible | Texto | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Flux.1 | No disponible | Texto | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -109,7 +109,7 @@ No se han identificado modelos públicos directamente comparables: la tarea —a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SuhaoYu1020/latent-arith-mmdit
+- Modelo en Hugging Face: https://huggingface.co/SuhaoYu1020/latent-arith-mmdit
 - Código del proyecto: https://github.com/SuhaoYu1020/Semantic-Image-Release
 - Dataset `arith-sq256`: https://huggingface.co/datasets/SuhaoYu1020/arith-sq256
 - Perfil del autor: https://huggingface.co/SuhaoYu1020

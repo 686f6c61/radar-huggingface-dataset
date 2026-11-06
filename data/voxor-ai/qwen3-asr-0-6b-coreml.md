@@ -84,7 +84,7 @@ Nota: no hay conversiones Core ML oficiales de Qwen3-ASR por parte de Qwen; esta
 - Ventana de audio limitada: 30 segundos por pasada; audios mas largos requieren segmentacion y gestion de contexto por parte del desarrollador.
 - Cobertura de idiomas: la validacion se realizo en 14 idiomas via FLEURS; no hay informacion sobre el rendimiento en espanol ni en otros idiomas concretos.
 - Pequena perdida numerica por la conversion a fp16: la similitud coseno minima es 0,989, por lo que casos extremos podrian desviarse ligeramente del comportamiento del encoder original.
-- Cero descargas registradas en HuggingFace: es un artefacto comunitario sin historial de adopcion; conviene validar en produccion antes de depender de el.
+- Cero descargas registradas en Hugging Face: es un artefacto comunitario sin historial de adopcion; conviene validar en produccion antes de depender de el.
 - Sesgos y riesgo de alucinacion: heredados del modelo base Qwen3-ASR-0.6B; no se documenta informacion especifica en este repositorio.
 - Licencia: Apache 2.0, sin restricciones conocidas para uso comercial; consultar los archivos `LICENSE` y `NOTICE` del repositorio.
 
@@ -92,4 +92,4 @@ Nota: no hay conversiones Core ML oficiales de Qwen3-ASR por parte de Qwen; esta
 
 - Repositorio del modelo: https://huggingface.co/voxor-ai/qwen3-asr-0.6b-coreml
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
-- Organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen

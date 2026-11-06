@@ -102,7 +102,7 @@ Los valores siguientes son estimaciones derivadas del tamaño del modelo base (7
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-sft-v4-lora
+- Adaptador en Hugging Face: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-sft-v4-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Dataset de entrenamiento referenciado: https://huggingface.co/Misalignment-Empirics/theo_oct-glm-v3-training-data
 - Adaptador hermano v3: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-sft-v3-lora

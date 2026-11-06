@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/gemma-4-e4b-it-prune_width_ffn30
+- Modelo en Hugging Face: https://huggingface.co/mrysh/gemma-4-e4b-it-prune_width_ffn30
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - NVIDIA ModelOpt (herramienta de poda): no se proporciona enlace en la información disponible
 - Paper de Minitron (técnica de poda): no se proporciona enlace en la información disponible

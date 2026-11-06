@@ -79,7 +79,7 @@ La comparativa se limita a características estructurales, ya que no hay benchma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AIOpsInSpace/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP
+- Modelo en Hugging Face: https://huggingface.co/AIOpsInSpace/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP
 - Modelo base (HauhauCS): https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Repositorio oficial de Qwen3.8-27B (Alibaba): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía de despliegue local (localairig.com): https://localairig.com/models/qwen3-8-27b-uncensored-hardware-deployment-guide/

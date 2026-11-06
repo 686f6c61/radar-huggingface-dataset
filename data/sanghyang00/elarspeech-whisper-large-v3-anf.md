@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ELARSpeech-Whisper-Large-v3-anf es un modelo de reconocimiento automatico del habla (ASR) publicado por el usuario Sanghyang00 en HuggingFace, consistente en un ajuste fino de openai/whisper-large-v3 sobre el idioma animere (codigo ISO 639-3 `anf`). Forma parte de la familia de adaptaciones denominada ELARSpeech, orientada a llevar el pipeline de Whisper a lenguas de bajos recursos que no estan cubiertas por el entrenamiento multilingue original de OpenAI.
+ELARSpeech-Whisper-Large-v3-anf es un modelo de reconocimiento automatico del habla (ASR) publicado por el usuario Sanghyang00 en Hugging Face, consistente en un ajuste fino de openai/whisper-large-v3 sobre el idioma animere (codigo ISO 639-3 `anf`). Forma parte de la familia de adaptaciones denominada ELARSpeech, orientada a llevar el pipeline de Whisper a lenguas de bajos recursos que no estan cubiertas por el entrenamiento multilingue original de OpenAI.
 
 El modelo conserva la arquitectura completa de Whisper Large-v3 (`WhisperForConditionalGeneration`, transformer encoder-decoder) con 1.543.491.840 parametros reales declarados en los pesos safetensors, y anade un token de idioma especifico (`<|anf|>`) que debe inyectarse de forma explicita en el prompt del decodificador. El repositorio ocupa 6,2 GB y se distribuye unicamente en formato safetensors para la libreria transformers.
 
@@ -89,7 +89,7 @@ Los datos de parametros y contexto de los modelos comparados son valores de refe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanghyang00/ELARSpeech-Whisper-Large-v3-anf
+- Modelo en Hugging Face: https://huggingface.co/Sanghyang00/ELARSpeech-Whisper-Large-v3-anf
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Documentacion del proyecto ELARSpeech: referenciada en la model card sin URL publica; no disponible
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada

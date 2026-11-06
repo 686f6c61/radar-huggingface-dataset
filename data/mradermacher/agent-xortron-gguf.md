@@ -24,7 +24,7 @@ Ahora bien, la informacion publica disponible es muy escasa: no se especifican a
 | Tipo de repositorio | cuantizaciones estaticas del modelo base (no es un modelo entrenado por el autor del repo) |
 | Etiquetas declaradas | gguf, endpoints_compatible, region:us, conversational |
 | Tamano del repositorio | 56,5 GB (incluye las 12 variantes de cuantizacion) |
-| Fecha de creacion en HuggingFace | 2026-09-20 |
+| Fecha de creacion en Hugging Face | 2026-09-20 |
 | Ultima actualizacion | 2026-09-20 |
 
 ## Arquitectura y entrenamiento
@@ -36,7 +36,7 @@ Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composic
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta "conversational" del repositorio indica que el modelo base esta orientado a dialogos multi-turno, aunque no se detallan sus capacidades concretas.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que puede servirse mediante APIs compatibles con el formato de endpoints de HuggingFace o con servidores de inferencia tipo OpenAI API.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que puede servirse mediante APIs compatibles con el formato de endpoints de Hugging Face o con servidores de inferencia tipo OpenAI API.
 - Ejecucion local mediante GGUF: permite inferencia en CPU y GPU con llama.cpp, Ollama y runners equivalentes.
 - Razonamiento, codigo, matematicas, vision, tool calling, capacidades de agente, modo thinking, audio y multilingueismo: no disponible, no hay informacion publicada al respecto en los datos proporcionados.
 
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye el modelo base del que de
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Agent.Xortron-GGUF (mradermacher) | ~26,9B | no disponible | no disponible | GGUF en HuggingFace |
+| Agent.Xortron-GGUF (mradermacher) | ~26,9B | no disponible | no disponible | GGUF en Hugging Face |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 

@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SebasKoedam/act_so101_training_2 | ACT (LeRobot) | 51.668.614 | no aplica | no disponible | HuggingFace |
-| Políticas ACT de referencia en LeRobot | ACT (LeRobot) | no disponible | no aplica | según repositorio | HuggingFace / LeRobot |
+| SebasKoedam/act_so101_training_2 | ACT (LeRobot) | 51.668.614 | no aplica | no disponible | Hugging Face |
+| Políticas ACT de referencia en LeRobot | ACT (LeRobot) | no disponible | no aplica | según repositorio | Hugging Face / LeRobot |
 | Diffusion Policy (LeRobot) | Política de difusión | no disponible | no aplica | según repositorio | LeRobot |
-| Otros checkpoints SO-101 en el Hub | ACT / otras políticas | variable | no aplica | variable | HuggingFace |
+| Otros checkpoints SO-101 en el Hub | ACT / otras políticas | variable | no aplica | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos publicados para esta política, por lo que la comparación se limita a categoría, formato y disponibilidad.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativos publicados para esta polític
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SebasKoedam/act_so101_training_2
+- Modelo en Hugging Face: https://huggingface.co/SebasKoedam/act_so101_training_2
 - Dataset de entrenamiento: https://huggingface.co/datasets/SebasKoedam/so101_training_1_20261105_114909
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=SebasKoedam/so101_training_1_20261105_114909
 - Paper ACT: https://huggingface.co/papers/2304.13705

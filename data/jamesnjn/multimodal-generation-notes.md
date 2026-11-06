@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jamesnjn/multimodal-generation-notes` no es un modelo de IA, sino un repositorio de notas de investigación publicado en HuggingFace bajo el identificador de autor `jamesnjn`. Su propio README lo describe como una nota exploratoria sobre generación multimodal que recoge el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados y requisitos de reproducibilidad, antes de que exista cualquier resultado experimental. El repositorio contiene dos archivos: `analysis.md` (artefacto principal) y `README.md` (documentación), con un tamaño total de 0,0 GB.
+`jamesnjn/multimodal-generation-notes` no es un modelo de IA, sino un repositorio de notas de investigación publicado en Hugging Face bajo el identificador de autor `jamesnjn`. Su propio README lo describe como una nota exploratoria sobre generación multimodal que recoge el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados y requisitos de reproducibilidad, antes de que exista cualquier resultado experimental. El repositorio contiene dos archivos: `analysis.md` (artefacto principal) y `README.md` (documentación), con un tamaño total de 0,0 GB.
 
 La relevancia de esta ficha es fundamentalmente de advertencia: el repositorio aparece indexado con el tag `transformer` y con un artefacto `safetensors` que declara 49.600 parámetros, pero no contiene ningún checkpoint entrenado, no publica código, no reporta ablaciones completadas y no reclama mejoras de benchmark. La propia model card indica que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales. Por tanto, no es utilizable para inferencia ni como base de un sistema en producción.
 
@@ -68,7 +68,7 @@ La categoría real de este repositorio no es "modelo" sino "notas de investigaci
 |---|---|---|---|---|---|
 | jamesnjn/multimodal-generation-notes | Notas de investigación | 49.600 (artefacto auxiliar) | no disponible | No | CC BY 4.0 |
 | Modelos multimodales abiertos de referencia (p. ej. familias tipo LLaVA, Qwen-VL, Idefics) | Modelo entrenado | Miles de millones | Miles de tokens | Sí | Variable según modelo |
-| Repositorios de notas/borradores en HuggingFace | Documentación | No aplica | No aplica | No | Variable |
+| Repositorios de notas/borradores en Hugging Face | Documentación | No aplica | No aplica | No | Variable |
 
 No se dispone de datos de benchmarks ni de especificaciones que permitan una comparativa técnica real con alternativas de la misma tarea, por lo que la comparativa con modelos funcionales se marca como no disponible.
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones que permitan una com
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jamesnjn/multimodal-generation-notes
+- Repositorio en Hugging Face: https://huggingface.co/jamesnjn/multimodal-generation-notes
 - Artefacto principal citado en el README: `analysis.md` (dentro del repositorio)
 - Documentación citada en el README: `README.md` (dentro del repositorio)
 - Papers, blogs, repos de código y demos: no disponibles en la información proporcionada

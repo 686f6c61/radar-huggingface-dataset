@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`longnguyenhew/swin-t-generation` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de una arquitectura Swin T orientada a tareas de generación. Lo publica el usuario longnguyenhew (Huỳnh Minh Nam), y su propia model card lo describe explícitamente como un artefacto compacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño alcance, no como un lanzamiento preentrenado listo para producción.
+`longnguyenhew/swin-t-generation` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de una arquitectura Swin T orientada a tareas de generación. Lo publica el usuario longnguyenhew (Huỳnh Minh Nam), y su propia model card lo describe explícitamente como un artefacto compacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño alcance, no como un lanzamiento preentrenado listo para producción.
 
 El modelo declara una escala "base" con atención lineal, fusión mediante cross attention, activación swish y normalización groupnorm. La receta de entrenamiento por defecto usa SGD con un scheduler polinómico, pero el propio autor advierte que son valores de partida del script y no evidencia de un entrenamiento completado. El checkpoint `model.safetensors` se presenta como una inicialización válida para pruebas de humo, no como un modelo entrenado ni evaluado.
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| longnguyenhew/swin-t-generation | 49.600 (incl. safetensors) | no disponible | sin benchmarks | mit | HuggingFace |
-| julianaalmeida/swin-t-generation | no disponible (config "large") | no disponible | sin benchmarks declarados | no disponible | HuggingFace |
+| longnguyenhew/swin-t-generation | 49.600 (incl. safetensors) | no disponible | sin benchmarks | mit | Hugging Face |
+| julianaalmeida/swin-t-generation | no disponible (config "large") | no disponible | sin benchmarks declarados | no disponible | Hugging Face |
 | torchvision swin_t | ~28,3 M (vision, clasificacion) | no aplica | preentrenado en ImageNet-1K | BSD-3-Clause (torchvision) | torchvision |
 | microsoft/Swin-Transformer | varia por variante | no aplica | SOTA en reconocimiento de video (p. ej. 84,9 top-1 en Kinetics-400) | MIT | GitHub |
 
@@ -89,7 +89,7 @@ Nota: las variantes oficiales de Swin (torchvision y microsoft/Swin-Transformer)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longnguyenhew/swin-t-generation
+- Modelo en Hugging Face: https://huggingface.co/longnguyenhew/swin-t-generation
 - Perfil del autor: https://huggingface.co/longnguyenhew
 - Repositorio similar (otro autor): https://huggingface.co/julianaalmeida/swin-t-generation
 - Documentación de torchvision swin_t: https://docs.pytorch.org/vision/main/models/generated/torchvision.models.swin_t.html

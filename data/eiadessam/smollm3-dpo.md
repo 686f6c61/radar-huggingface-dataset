@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EiadEssam/smollm3-dpo es un modelo de generacion de texto derivado de la familia SmolLM3, publicado en HuggingFace por el usuario EiadEssam. El nombre del repositorio sugiere un ajuste fino mediante DPO (Direct Preference Optimization) sobre una base SmolLM3, aunque la model card no documenta el proceso de entrenamiento ni confirma esta hipotesis. El modelo cuenta con 3.075.098.624 parametros totales segun los pesos en safetensors, lo que lo situa en la gama de 3B parametros.
+EiadEssam/smollm3-dpo es un modelo de generacion de texto derivado de la familia SmolLM3, publicado en Hugging Face por el usuario EiadEssam. El nombre del repositorio sugiere un ajuste fino mediante DPO (Direct Preference Optimization) sobre una base SmolLM3, aunque la model card no documenta el proceso de entrenamiento ni confirma esta hipotesis. El modelo cuenta con 3.075.098.624 parametros totales segun los pesos en safetensors, lo que lo situa en la gama de 3B parametros.
 
 Se trata de un modelo de tipo transformer orientado a generacion de texto y conversacion, empaquetado en formato safetensors y compatible con la libreria transformers. El repositorio ocupa 6.2 GB y fue creado el 1 de noviembre de 2026. La relevancia de este modelo es limitada por el momento: no tiene descargas ni likes, la model card es la plantilla automatica sin rellenar y no se dispone de informacion sobre licencia, idiomas, datos de entrenamiento ni evaluaciones.
 
@@ -27,9 +27,9 @@ La informacion publica disponible es muy escasa. Cualquier evaluacion rigurosa d
 
 ## Arquitectura y entrenamiento
 
-El modelo se presenta como un transformer de aproximadamente 3.075 millones de parametros, coherente con la familia SmolLM3 de HuggingFace. El sufijo "dpo" en el nombre del repositorio sugiere un ajuste fino con Direct Preference Optimization sobre una base SmolLM3, tecnica habitual para alinear respuestas hacia preferencias humanas. Sin embargo, la model card no confirma esta suposicion ni aporta detalles sobre el checkpoint base exacto, el dataset de preferencias, los hiperparametros de DPO (beta, learning rate, numero de pasos) ni el regimen de precision utilizado.
+El modelo se presenta como un transformer de aproximadamente 3.075 millones de parametros, coherente con la familia SmolLM3 de Hugging Face. El sufijo "dpo" en el nombre del repositorio sugiere un ajuste fino con Direct Preference Optimization sobre una base SmolLM3, tecnica habitual para alinear respuestas hacia preferencias humanas. Sin embargo, la model card no confirma esta suposicion ni aporta detalles sobre el checkpoint base exacto, el dataset de preferencias, los hiperparametros de DPO (beta, learning rate, numero de pasos) ni el regimen de precision utilizado.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases previas de SFT o RLHF, ni sobre innovaciones tecnicas como decodificacion especulativa o mecanismos de atencion alternativa. La model card es la plantilla automatica generada por HuggingFace y todos los campos de entrenamiento aparecen como "[More Information Needed]".
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases previas de SFT o RLHF, ni sobre innovaciones tecnicas como decodificacion especulativa o mecanismos de atencion alternativa. La model card es la plantilla automatica generada por Hugging Face y todos los campos de entrenamiento aparecen como "[More Information Needed]".
 
 ## Capacidades
 
@@ -49,7 +49,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 - Generacion de texto en entornos con recursos limitados: su tamano permite desplegarlo en GPUs de gama media para tareas de redaccion asistida o resumen, previa evaluacion de calidad.
 - Base para ajuste fino adicional: al estar en formato safetensors y ser compatible con transformers, puede emplearse como punto de partida para SFT o LoRA en dominios concretos.
 - Investigacion sobre modelos pequenos: util para estudiar el comportamiento de modelos de ~3B en tareas de instruccion, comparandolo con la base SmolLM3 original.
-- Despliegue en endpoints de inferencia: el tag "endpoints_compatible" indica que puede servirse mediante la infraestructura de HuggingFace Inference Endpoints, util para demos internas.
+- Despliegue en endpoints de inferencia: el tag "endpoints_compatible" indica que puede servirse mediante la infraestructura de Hugging Face Inference Endpoints, util para demos internas.
 
 En todos los casos, la ausencia de documentacion sobre licencia, idiomas y evaluaciones obliga a realizar una validacion propia antes de cualquier uso en produccion.
 
@@ -93,6 +93,6 @@ La comparativa se limita a datos publicos de cada familia; no se dispone de eval
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EiadEssam/smollm3-dpo
+- Repositorio en Hugging Face: https://huggingface.co/EiadEssam/smollm3-dpo
 - Paper de referencia sobre estimacion de emisiones (citado en la model card): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML (citada en la model card): https://mlco2.github.io/impact#compute

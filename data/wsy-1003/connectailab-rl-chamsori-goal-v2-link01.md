@@ -76,8 +76,8 @@ No se dispone de modelos comparables publicados con el mismo enfoque (destilacio
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| connectailab-rl-chamsori-goal-v2-link01 | LoRA sobre LLM | No disponible (base 0,8B) | No disponible | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B | LLM base | 0,8B | No disponible | No disponible en la informacion | HuggingFace |
+| connectailab-rl-chamsori-goal-v2-link01 | LoRA sobre LLM | No disponible (base 0,8B) | No disponible | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B | LLM base | 0,8B | No disponible | No disponible en la informacion | Hugging Face |
 | Cerebro PPO del autor (brain.json) | Politica RL | No disponible | No aplica | No disponible | Proyecto CONNECT TYCOON |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone de modelos comparables publicados con el mismo enfoque (destilacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wsy-1003/connectailab-rl-chamsori-goal-v2-link01
+- Modelo en Hugging Face: https://huggingface.co/wsy-1003/connectailab-rl-chamsori-goal-v2-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de codigo CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de transformer desarrollado por el usuario SAD2EDZXDQ y publicado en HuggingFace bajo licencia MIT. Según la model card, el modelo ha experimentado una actualización de versión que mejora su profundidad de razonamiento e inferencia mediante mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El repositorio está etiquetado con "bert", "transformers" y "feature-extraction", y es compatible con la librería transformers de HuggingFace.
+MyAwesomeModel es un modelo de transformer desarrollado por el usuario SAD2EDZXDQ y publicado en Hugging Face bajo licencia MIT. Según la model card, el modelo ha experimentado una actualización de versión que mejora su profundidad de razonamiento e inferencia mediante mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El repositorio está etiquetado con "bert", "transformers" y "feature-extraction", y es compatible con la librería transformers de Hugging Face.
 
 La model card reporta mejoras significativas en tareas de razonamiento complejo: en el test AIME 2025, la precisión ha pasado del 70 % en la versión anterior al 87,5 % en la versión actual, empleando una media de 23 000 tokens por pregunta frente a los 12 000 de la versión previa. También se indica una tasa de alucinación reducida y soporte mejorado para function calling.
 
@@ -87,7 +87,7 @@ Adicionalmente, la model card reporta una precisión del 87,5 % en el test AIME 
 
 ## Requisitos de hardware
 
-No disponible. La model card no proporciona información sobre requisitos de hardware, VRAM estimada, GPUs recomendadas ni opciones de despliegue. El repositorio no contiene pesos del modelo, por lo que no es posible ejecutarlo localmente a partir de los archivos publicados en HuggingFace. La model card menciona un repositorio de código y un sitio web oficial para ejecución local e interacción vía API, pero no se proporcionan las URLs.
+No disponible. La model card no proporciona información sobre requisitos de hardware, VRAM estimada, GPUs recomendadas ni opciones de despliegue. El repositorio no contiene pesos del modelo, por lo que no es posible ejecutarlo localmente a partir de los archivos publicados en Hugging Face. La model card menciona un repositorio de código y un sitio web oficial para ejecución local e interacción vía API, pero no se proporcionan las URLs.
 
 ## Comparativa con modelos similares
 
@@ -104,18 +104,18 @@ No se dispone de información suficiente para comparar con modelos conocidos del
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace tiene un tamaño de 0.0 GB, lo que indica que no se han publicado los pesos del modelo. No es posible descargarlo ni ejecutarlo localmente desde HuggingFace.
+- El repositorio de Hugging Face tiene un tamaño de 0.0 GB, lo que indica que no se han publicado los pesos del modelo. No es posible descargarlo ni ejecutarlo localmente desde Hugging Face.
 - No se especifican los idiomas soportados ni la longitud de contexto, lo que limita la evaluación de su idoneidad para casos de uso multilingües o de contexto largo.
 - No se proporciona información sobre el número de parámetros, la arquitectura concreta ni el dataset de entrenamiento, lo que dificulta la reproducibilidad y la evaluación técnica rigurosa.
 - Los benchmarks presentados en la model card utilizan categorías genéricas sin nombres de benchmarks estandarizados (MMLU, HumanEval, GSM8K, etc.), y los modelos de comparación no están identificados, lo que impide verificar los resultados de forma independiente.
 - La model card menciona un sitio web oficial y un repositorio de código, pero no proporciona las URLs, lo que impide acceder a la implementación o a una demo funcional.
-- Existe una discrepancia entre la pipeline declarada en HuggingFace ("feature-extraction") y las capacidades descritas en la model card (generación de texto, diálogo, razonamiento), lo que sugiere que la configuración del repositorio puede no reflejar el uso previsto del modelo.
+- Existe una discrepancia entre la pipeline declarada en Hugging Face ("feature-extraction") y las capacidades descritas en la model card (generación de texto, diálogo, razonamiento), lo que sugiere que la configuración del repositorio puede no reflejar el uso previsto del modelo.
 - La model card recomienda una temperatura de 0,6 para un rendimiento óptimo, lo que sugiere que el modelo puede ser sensible a la configuración de decodificación.
 - Aunque la licencia es MIT, al no haber pesos publicados no está claro qué artefactos concretos están cubiertos por dicha licencia.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/SAD2EDZXDQ/my-awesome-model
-- Página relacionada en HuggingFace (posible versión del mismo modelo): https://huggingface.co/SAD12D/MyAwesomeModel
+- Repositorio de Hugging Face: https://huggingface.co/SAD2EDZXDQ/my-awesome-model
+- Página relacionada en Hugging Face (posible versión del mismo modelo): https://huggingface.co/SAD12D/MyAwesomeModel
 
 Nota: la model card menciona un sitio web oficial y un repositorio de código para ejecución local, pero no se proporcionan las URLs en la información disponible.

@@ -4,7 +4,7 @@
 
 Nexa-link01-avoid-obstacles-rl-v1 es un adaptador LoRA publicado por el usuario devorah-ai-2016 sobre el modelo base Qwen/Qwen3.5-0.8B. Se distribuye como un repositorio PEFT de aproximadamente 0,1 GB, lo que corresponde exclusivamente a los pesos del adaptador y no al modelo completo. El nombre sugiere un ajuste fino orientado a evitar obstaculos mediante aprendizaje por refuerzo, aunque la model card no documenta ni confirma esta finalidad.
 
-La relevancia de esta ficha es limitada: se trata de un artefacto experimental sin descargas ni interacciones, con una model card generada a partir de la plantilla por defecto de HuggingFace en la que practicamente todos los campos aparecen como "[More Information Needed]". No se declaran licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion.
+La relevancia de esta ficha es limitada: se trata de un artefacto experimental sin descargas ni interacciones, con una model card generada a partir de la plantilla por defecto de Hugging Face en la que practicamente todos los campos aparecen como "[More Information Needed]". No se declaran licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion.
 
 El modelo hereda las caracteristicas del Qwen3.5-0.8B subyacente en cuanto a arquitectura y contexto, pero cualquier afirmacion sobre el comportamiento especifico del adaptador carece de respaldo documental. Esta ficha refleja esa situacion y marca explicitamente como "no disponible" todo dato no confirmado.
 
@@ -46,7 +46,7 @@ No hay informacion sobre el dataset de entrenamiento, el numero de tokens utiliz
 - Investigacion en aprendizaje por refuerzo aplicado a agentes embebidos: si el sufijo "rl" y "avoid-obstacles" reflejan la realidad, el adaptador podria servir como punto de partida para estudiar politicas de navegacion en entornos simulados, siempre que se valide empiricamente.
 - Reproduccion de experimentos: util para quien quiera replicar el pipeline de entrenamiento, aunque la ausencia de hiperparametros y datos obliga a inferir la receta.
 - Fine-tuning incremental: partir de este adaptador como inicializacion para un segundo ajuste LoRA sobre el mismo modelo base en tareas de control o robotica simulada.
-- Pruebas de integracion con PEFT y transformers: verificar la compatibilidad de la version 0.21.2 con distintas versiones del stack de HuggingFace.
+- Pruebas de integracion con PEFT y transformers: verificar la compatibilidad de la version 0.21.2 con distintas versiones del stack de Hugging Face.
 - Docencia y formacion: ejemplo de repositorio LoRA minimo para ilustrar como se estructura un adaptador y como se carga sobre un modelo base pequeno.
 - No se recomienda su uso en produccion ni en aplicaciones de cara al usuario sin una evaluacion previa exhaustiva, dado que no existe documentacion de calidad, sesgos ni limitaciones.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nexa-link01-avoid-obstacles-rl-v1 | Adaptador LoRA sobre 0,8B | No disponible | No disponible | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-0.8B (modelo base) | 0,8B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
-| Adaptadores LoRA genericos sobre modelos <1B | Variable | Heredado del base | Variable | HuggingFace |
+| nexa-link01-avoid-obstacles-rl-v1 | Adaptador LoRA sobre 0,8B | No disponible | No disponible | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-0.8B (modelo base) | 0,8B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
+| Adaptadores LoRA genericos sobre modelos <1B | Variable | Heredado del base | Variable | Hugging Face |
 
 No se dispone de informacion suficiente para comparar rendimiento con alternativas de la misma categoria. La comparacion se limita a parametros y disponibilidad.
 
@@ -86,7 +86,7 @@ No se dispone de informacion suficiente para comparar rendimiento con alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/devorah-ai-2016/nexa-link01-avoid-obstacles-rl-v1
+- Hugging Face: https://huggingface.co/devorah-ai-2016/nexa-link01-avoid-obstacles-rl-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Libreria PEFT: https://github.com/huggingface/peft
 - Paper de referencia citado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700

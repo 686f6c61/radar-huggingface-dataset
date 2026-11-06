@@ -72,7 +72,7 @@ No se proporcionan en la información disponible resultados comparativos directo
 - VRAM estimada en cuantización de 8 bits: en torno a 7-8 GB de pesos; en 4 bits, en torno a 4 GB, aunque no se publican variantes cuantizadas oficiales.
 - GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para fp16 con contexto moderado; RTX 3090/4080 (16-24 GB) para fp16 con contexto corto o cuantización.
 - Cabe en GPU de consumo: sí, en RTX 4090/3090 en fp16 con contexto limitado, y en GPUs de 8-12 GB si se cuantiza a 8 o 4 bits (requiere generar los pesos cuantizados, no incluidos en el repo).
-- Opciones de despliegue: transformers (librería declarada), text-generation-inference (tag `text-generation-inference` en HuggingFace) y endpoints compatibles; llama.cpp/Ollama requerirían conversión a GGUF, no documentada por el autor.
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference (tag `text-generation-inference` en Hugging Face) y endpoints compatibles; llama.cpp/Ollama requerirían conversión a GGUF, no documentada por el autor.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ No se proporcionan en la información disponible resultados comparativos directo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_gsmrec_svdllm_w_remove50
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_gsmrec_svdllm_w_remove50
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - Proyecto svd_safety: no disponible como enlace público en la información proporcionada

@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Base | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen3-8b-knapsack-lora-persistent-seed1337 (este) | Qwen3-8B | 16 384 | no disponible | HuggingFace (anónimo) |
-| qwen3-8b-persistent-knapsack-lora (AutomatedScientist) | Qwen3-8B | 16 384 | no disponible | HuggingFace (espejo) |
-| qwen3-8b-persistent-knapsack-lora-seed1337 (TieuDaoChanNhan) | Qwen3-8B | 16 384 | no disponible | HuggingFace (espejo) |
-| Qwen3-8B (base) | — | 32 768 | Apache 2.0 | HuggingFace |
+| qwen3-8b-knapsack-lora-persistent-seed1337 (este) | Qwen3-8B | 16 384 | no disponible | Hugging Face (anónimo) |
+| qwen3-8b-persistent-knapsack-lora (AutomatedScientist) | Qwen3-8B | 16 384 | no disponible | Hugging Face (espejo) |
+| qwen3-8b-persistent-knapsack-lora-seed1337 (TieuDaoChanNhan) | Qwen3-8B | 16 384 | no disponible | Hugging Face (espejo) |
+| Qwen3-8B (base) | — | 32 768 | Apache 2.0 | Hugging Face |
 
 Los tres adaptadores listados son el mismo modelo o versiones espejo del mismo. La comparación relevante es contra el modelo base Qwen3-8B, que tiene una ventana de contexto mayor (32 768 tokens) y licencia Apache 2.0, pero no está especializado en la tarea Opaque Knapsack. No se dispone de datos de rendimiento para comparar cuantitativamente.
 
@@ -77,7 +77,7 @@ Los tres adaptadores listados son el mismo modelo o versiones espejo del mismo. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/iaeval2026-submission/qwen3-8b-knapsack-lora-persistent-seed1337
+- Repositorio Hugging Face: https://huggingface.co/iaeval2026-submission/qwen3-8b-knapsack-lora-persistent-seed1337
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Espejo del adaptador (AutomatedScientist): https://huggingface.co/AutomatedScientist/qwen3-8b-persistent-knapsack-lora
 - Espejo del adaptador (TieuDaoChanNhan): https://huggingface.co/TieuDaoChanNhan/qwen3-8b-persistent-knapsack-lora-seed1337

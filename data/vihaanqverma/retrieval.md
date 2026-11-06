@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vihaanqverma/retrieval` es un prototipo de investigación publicado en HuggingFace por el usuario vihaanqverma bajo el nombre "Mae for Retrieval". No se trata de un modelo entrenado ni de un checkpoint listo para producción: la propia model card lo describe como una implementación experimental cuyo fichero `model.safetensors` es únicamente una inicialización válida para pruebas de humo (smoke tests). El repositorio tiene 0 descargas y 0 likes en el momento de redactar esta ficha.
+`vihaanqverma/retrieval` es un prototipo de investigación publicado en Hugging Face por el usuario vihaanqverma bajo el nombre "Mae for Retrieval". No se trata de un modelo entrenado ni de un checkpoint listo para producción: la propia model card lo describe como una implementación experimental cuyo fichero `model.safetensors` es únicamente una inicialización válida para pruebas de humo (smoke tests). El repositorio tiene 0 descargas y 0 likes en el momento de redactar esta ficha.
 
 El modelo declara la etiqueta de arquitectura "Mae" (el autor no desarrolla el acrónimo en la documentación disponible), con atención dispersa (sparse attention), fusión mediante cross attention, activación mish y normalización denominada "scalenorm". El recuento real de parámetros publicado en los metadatos del safetensors es de 24.832, lo que sitúa el prototipo en una escala "nano" muy por debajo de cualquier encoder de retrieval convencional.
 
@@ -41,7 +41,7 @@ No consta ningún entrenamiento realizado. La receta de experimento por defecto 
 - Pruebas de humo de infraestructura: el `model.safetensors` y `predict.py` permiten verificar que un entorno de PyTorch carga pesos en formato safetensors y ejecuta un forward pass, sin depender de un modelo grande.
 - Plantilla de investigación para retrieval: sirve como esqueleto de código reutilizable para experimentar con atención dispersa, fusión por cross attention, activación mish y normalización scalenorm en tareas de recuperación.
 - Base para estudios de ablación: al ser un modelo "nano" con configuración explícita, permite aislar el efecto de cada decisión de arquitectura con un coste computacional mínimo.
-- Docencia y formación: adecuado para explicar en un aula la estructura de un repositorio de modelo en HuggingFace (`README.md`, `config.json`, `training_args.json`, pesos) y el flujo de evaluación con semillas múltiples.
+- Docencia y formación: adecuado para explicar en un aula la estructura de un repositorio de modelo en Hugging Face (`README.md`, `config.json`, `training_args.json`, pesos) y el flujo de evaluación con semillas múltiples.
 - Banco de pruebas de protocolos de evaluación: el autor propone evaluar sobre Flickr30k con al menos tres semillas y una línea base de capacidad equivalente, lo que convierte al repositorio en un caso práctico para definir protocolos reproducibles.
 - Referencia para revisiones metodológicas: útil como ejemplo de model card que declara explícitamente la ausencia de métricas, frente a fichas que presentan cifras no verificables.
 - Punto de partida para un futuro checkpoint entrenado: cualquier resultado de un modelo entrenado a partir de esta inicialización deberá documentarse por separado de los valores por defecto aquí publicados.
@@ -64,10 +64,10 @@ No es posible establecer una comparativa cuantitativa con modelos de retrieval e
 
 | Modelo | Parametros | Contexto | Rendimiento en retrieval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vihaanqverma/retrieval (Mae nano) | 24.832 | no disponible | no disponible (checkpoint sin entrenar) | MIT | HuggingFace |
-| CLIP ViT-B/32 | referencia pública no verificada | referencia pública no verificada | no disponible para esta comparativa | no disponible | HuggingFace |
-| SigLIP (variantes base) | no disponible | no disponible | no disponible para esta comparativa | no disponible | HuggingFace |
-| BLIP-2 | no disponible | no disponible | no disponible para esta comparativa | no disponible | HuggingFace |
+| vihaanqverma/retrieval (Mae nano) | 24.832 | no disponible | no disponible (checkpoint sin entrenar) | MIT | Hugging Face |
+| CLIP ViT-B/32 | referencia pública no verificada | referencia pública no verificada | no disponible para esta comparativa | no disponible | Hugging Face |
+| SigLIP (variantes base) | no disponible | no disponible | no disponible para esta comparativa | no disponible | Hugging Face |
+| BLIP-2 | no disponible | no disponible | no disponible para esta comparativa | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -83,5 +83,5 @@ No es posible establecer una comparativa cuantitativa con modelos de retrieval e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vihaanqverma/retrieval
+- Hugging Face: https://huggingface.co/vihaanqverma/retrieval
 - Búsqueda web: no se han encontrado enlaces relevantes sobre este modelo (paper, blog, repositorio o demo). Los resultados devueltos por la búsqueda no guardan relación con el modelo y se han descartado por no ser fuentes utilizables.

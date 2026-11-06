@@ -81,7 +81,7 @@ ChemDFM-R se diferencia de las versiones anteriores por su enfoque en razonamien
 
 ## Enlaces
 
-- Modelo original en HuggingFace: https://huggingface.co/OpenDFM/ChemDFM-R-14B
+- Modelo original en Hugging Face: https://huggingface.co/OpenDFM/ChemDFM-R-14B
 - Modelo analizado (copia del usuario introvoyz041): https://huggingface.co/introvoyz041/ChemDFM-R-14B
 - Version MLX 4-bit: https://huggingface.co/introvoyz041/ChemDFM-R-14B-mlx-4Bit
 - Paper ChemDFM-R (arXiv 2507.21990): https://arxiv.org/abs/2507.21990

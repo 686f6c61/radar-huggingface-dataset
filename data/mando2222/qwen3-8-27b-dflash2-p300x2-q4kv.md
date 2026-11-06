@@ -32,7 +32,7 @@ El unico detalle tecnico verificable es la configuracion de memoria: perfil `bat
 
 ## Capacidades
 
-- Generacion de texto mediante el runtime `tt-model` (el pipeline no esta declarado en HuggingFace; la capacidad se deduce del comando `tt-model serve`).
+- Generacion de texto mediante el runtime `tt-model` (el pipeline no esta declarado en Hugging Face; la capacidad se deduce del comando `tt-model serve`).
 - Tool calling: supero 4 de 4 casos de llamada a herramientas en la validacion del autor.
 - Contexto largo: supero una prueba de contexto de 260.340 tokens.
 - Concurrencia: 8 de 8 prompts unicos concurrentes de 73.422 tokens cada uno.
@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Artefacto | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mando2222/qwen3.8-27b-dflash2-p300x2-q4kv` | nombre sugiere 27B (sin confirmar) | pool de 1.050.624 tokens; prueba de 260.340 tokens | referencia base del presente repo | no disponible | HuggingFace, 0 descargas, 0 likes |
-| `changh95/qwen3.8-27b-dflash2-p300x2` (origen) | no disponible | no disponible | no disponible | no disponible | HuggingFace, referenciado como fuente |
+| `mando2222/qwen3.8-27b-dflash2-p300x2-q4kv` | nombre sugiere 27B (sin confirmar) | pool de 1.050.624 tokens; prueba de 260.340 tokens | referencia base del presente repo | no disponible | Hugging Face, 0 descargas, 0 likes |
+| `changh95/qwen3.8-27b-dflash2-p300x2` (origen) | no disponible | no disponible | no disponible | no disponible | Hugging Face, referenciado como fuente |
 | Paquete BF8 distribuido (referencia de comparacion) | no disponible | no disponible | -16 % y -22 % en decodificacion respecto a este checkpoint | no disponible | distribuido por el autor segun la model card |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria en el material proporcionado.
@@ -99,6 +99,6 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mando2222/qwen3.8-27b-dflash2-p300x2-q4kv
+- Hugging Face: https://huggingface.co/mando2222/qwen3.8-27b-dflash2-p300x2-q4kv
 - Repositorio de origen citado en la model card: https://huggingface.co/changh95/qwen3.8-27b-dflash2-p300x2
 - Paper, blog, repositorio o demo adicionales: no disponible (la busqueda web no devolvio resultados relevantes)

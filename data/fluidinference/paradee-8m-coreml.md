@@ -101,7 +101,7 @@ El modelo base (Paradee-8M v1.0) conserva los mismos 8,07 M de parametros y la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/paradee-8m-coreml
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/paradee-8m-coreml
 - Modelo base (Paradee-8M v1.0): https://huggingface.co/sahilmahendrakar/Paradee-8M-v1.0
 - Articulo (arXiv 2610.06817): https://arxiv.org/abs/2610.06817
 - FluidAudio (repositorio que lo integra via `ParadeeManager`): https://github.com/FluidInference/FluidAudio

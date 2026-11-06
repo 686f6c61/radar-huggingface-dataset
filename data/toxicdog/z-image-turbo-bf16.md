@@ -83,10 +83,10 @@ No se han publicado resultados de benchmarks en la informacion disponible (no ha
 
 | Modelo | Parametros | Contexto / pasos | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| toxicdog/Z-Image-Turbo-bf16 (esta ficha) | 6,15B en el S3-DiT | 8 pasos, guidance 0 | Apache-2.0 | HuggingFace (MLX, safetensors bf16) |
-| Tongyi-MAI/Z-Image-Turbo (modelo base) | 6,15B en el S3-DiT | 8 pasos, guidance 0 | Apache-2.0 | HuggingFace (pesos originales) |
-| FLUX.1-schnell | ~12B | 1-4 pasos (destilado) | Apache-2.0 | HuggingFace / diffusers |
-| FLUX.1-dev | ~12B | 20-50 pasos tipicos | FLUX.1-dev Non-Commercial License | HuggingFace / diffusers |
+| toxicdog/Z-Image-Turbo-bf16 (esta ficha) | 6,15B en el S3-DiT | 8 pasos, guidance 0 | Apache-2.0 | Hugging Face (MLX, safetensors bf16) |
+| Tongyi-MAI/Z-Image-Turbo (modelo base) | 6,15B en el S3-DiT | 8 pasos, guidance 0 | Apache-2.0 | Hugging Face (pesos originales) |
+| FLUX.1-schnell | ~12B | 1-4 pasos (destilado) | Apache-2.0 | Hugging Face / diffusers |
+| FLUX.1-dev | ~12B | 20-50 pasos tipicos | FLUX.1-dev Non-Commercial License | Hugging Face / diffusers |
 
 Nota: el autoencoder de FLUX.1-dev se reutiliza dentro de este pipeline, pero eso no implica compatibilidad de pesos con el DiT de FLUX.1. Los datos de contexto y de rendimiento comparado de las alternativas no estan en la informacion proporcionada; **no disponible** cualquier comparacion cuantitativa de calidad (FID, CLIP, preferencia humana).
 
@@ -108,7 +108,7 @@ Nota: el autoencoder de FLUX.1-dev se reutiliza dentro de este pipeline, pero es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/toxicdog/Z-Image-Turbo-bf16
+- Repositorio en Hugging Face: https://huggingface.co/toxicdog/Z-Image-Turbo-bf16
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Licencia del modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo/blob/main/LICENSE
 - Codigo del port en Swift/MLX: https://github.com/xocialize/z-image-swift

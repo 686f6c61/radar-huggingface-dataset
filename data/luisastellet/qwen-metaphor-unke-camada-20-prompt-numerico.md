@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `luisastellet/qwen-metaphor-unke-camada-20-prompt-numerico` es un checkpoint de generación de texto publicado en HuggingFace por el usuario `luisastellet`, con 596.049.920 parámetros almacenados en safetensors y un repositorio de 2,4 GB. El tag `qwen3` y el pipeline `text-generation` lo sitúan en la familia Qwen3, y el recuento de parámetros es coherente con una variante de 0,6B con embeddings atados (la cifra coincide con el total de Qwen3-0.6B al contar la matriz de embeddings una sola vez). El nombre del repositorio sugiere un artefacto de experimentación —una "capa 20" y un "prompt numérico"— más que un modelo de producto.
+El modelo `luisastellet/qwen-metaphor-unke-camada-20-prompt-numerico` es un checkpoint de generación de texto publicado en Hugging Face por el usuario `luisastellet`, con 596.049.920 parámetros almacenados en safetensors y un repositorio de 2,4 GB. El tag `qwen3` y el pipeline `text-generation` lo sitúan en la familia Qwen3, y el recuento de parámetros es coherente con una variante de 0,6B con embeddings atados (la cifra coincide con el total de Qwen3-0.6B al contar la matriz de embeddings una sola vez). El nombre del repositorio sugiere un artefacto de experimentación —una "capa 20" y un "prompt numérico"— más que un modelo de producto.
 
-El problema que resuelve, los datos de entrenamiento, los idiomas y la licencia no están documentados: la model card es la plantilla automática de HuggingFace sin ninguna sección completada (`[More Information Needed]` en todos los campos). El repositorio registra 0 descargas y 0 likes, y las marcas temporales de creación y actualización (25 de octubre de 2026, con 28 segundos de diferencia) apuntan a una subida automatizada o a metadatos no fiables.
+El problema que resuelve, los datos de entrenamiento, los idiomas y la licencia no están documentados: la model card es la plantilla automática de Hugging Face sin ninguna sección completada (`[More Information Needed]` en todos los campos). El repositorio registra 0 descargas y 0 likes, y las marcas temporales de creación y actualización (25 de octubre de 2026, con 28 segundos de diferencia) apuntan a una subida automatizada o a metadatos no fiables.
 
 Por tanto, esta ficha debe leerse como una descripción estructural del artefacto (tamaño, formato, familia arquitectónica y requisitos de despliegue derivados del recuento real de parámetros) y no como una evaluación de capacidades. Cualquier uso en producción exige una validación empírica previa y la aclaración de la licencia por parte del autor.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: ~2,4 GB en fp32 (tamaño exacto del repositorio), ~1,2 GB en bf16, ~0,6 GB en int8 y ~0,35 GB en int4, más la caché KV, que depende de la longitud de contexto (no documentada).
 - GPU recomendadas: cualquier GPU con 4 GB o más de memoria es suficiente en bf16 (RTX 3050, RTX 4060, T4, L4). Para servir con concurrencia alta, una L4 o A10 resulta holgada; A100/H100 no aportan ventaja a este tamaño y quedan limitadas por el ancho de banda.
 - Cabe en GPU de consumo: sí, en toda la gama actual (RTX 3060/4060/4090, e incluso iGPU con suficiente memoria compartida), y también en CPU con 4 GB de RAM libre en cuantización int8/int4.
-- Opciones de despliegue: `transformers` de forma nativa; TGI (el tag `text-generation-inference` lo indica); endpoints compatibles de HuggingFace. Para llama.cpp u Ollama sería necesario convertir los pesos a GGUF, ya que el repositorio no incluye ficheros GGUF.
+- Opciones de despliegue: `transformers` de forma nativa; TGI (el tag `text-generation-inference` lo indica); endpoints compatibles de Hugging Face. Para llama.cpp u Ollama sería necesario convertir los pesos a GGUF, ya que el repositorio no incluye ficheros GGUF.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas; en este rango de tamaño el coste por token está dominado por el ancho de banda de memoria y por el coste de la capa de embeddings, no por la capacidad de cómputo.
 
 ## Comparativa con modelos similares
@@ -91,7 +91,7 @@ Frente a su familia de origen, este checkpoint no aporta ninguna ventaja documen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-20-prompt-numerico
+- Modelo en Hugging Face: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-20-prompt-numerico
 - Referencia del paper citado en la plantilla de la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada por la plantilla: https://mlco2.github.io/impact#compute
 

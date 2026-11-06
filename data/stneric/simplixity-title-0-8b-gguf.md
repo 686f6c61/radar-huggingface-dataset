@@ -81,6 +81,6 @@ La comparacion mas directa es con su modelo base, Qwen3.5-0.8B, que cumple las r
 - Depende del prompt de sistema especifico de Simplixity; su uso fuera de ese contexto puede degradar el rendimiento.
 
 ## Enlaces
-- Modelo GGUF en HuggingFace: https://huggingface.co/stneric/simplixity-title-0.8b-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/stneric/simplixity-title-0.8b
+- Modelo GGUF en Hugging Face: https://huggingface.co/stneric/simplixity-title-0.8b-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/stneric/simplixity-title-0.8b
 - Repositorio de Simplixity: https://github.com/stneric/simplixity

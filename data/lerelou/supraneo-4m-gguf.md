@@ -98,9 +98,9 @@ No se han publicado resultados en MMLU, HumanEval, GSM8K, HellaSwag, PIQA ni ARC
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | SupraNeo-4M (este) | 4,07 M | 1.024 | Apache 2.0 | GGUF + safetensors | Vocabulario de 4.096; 84 % FineWeb-Edu; sin instrucciones |
-| TinyStories-1M / 8M (`roneneldan`) | 1 M / 8 M | No disponible | No disponible | Pesos en HuggingFace | Entrenados en corpus sintético infantil; dominio muy restringido |
-| Pythia-14M (`EleutherAI`) | 14 M | 2.048 | Apache 2.0 | Pesos en HuggingFace | Suite con checkpoints intermedios para investigación de escalado |
-| SmolLM-135M (`HuggingFaceTB`) | 135 M | No disponible | Apache 2.0 | Pesos en HuggingFace | ~33× más parámetros; ya con capacidad de instrucciones en sus variantes |
+| TinyStories-1M / 8M (`roneneldan`) | 1 M / 8 M | No disponible | No disponible | Pesos en Hugging Face | Entrenados en corpus sintético infantil; dominio muy restringido |
+| Pythia-14M (`EleutherAI`) | 14 M | 2.048 | Apache 2.0 | Pesos en Hugging Face | Suite con checkpoints intermedios para investigación de escalado |
+| SmolLM-135M (`HuggingFaceTB`) | 135 M | No disponible | Apache 2.0 | Pesos en Hugging Face | ~33× más parámetros; ya con capacidad de instrucciones en sus variantes |
 
 Los datos de los modelos comparables provienen de sus model cards públicas y no se han verificado en esta ficha. La comparación relevante para SupraNeo-4M no es de rendimiento absoluto, sino de diseño: es el único de la lista que documenta explícitamente el reparto entre embeddings y pila transformer y que publica una evaluación con intervalos de confianza y corrección por azar.
 
@@ -116,12 +116,12 @@ Los datos de los modelos comparables provienen de sus model cards públicas y no
 - El vocabulario de 4.096 tokens comprime el texto ~35 % menos eficientemente que un tokenizador de 32k, lo que invalida comparaciones por entropía cruzada directa con otros modelos; debe usarse bits-per-byte.
 - La licencia Apache 2.0 permite uso comercial, pero el autor declara el modelo como artefacto de investigación no destinado a despliegue.
 - Inconsistencia en la model card: el YAML de emisiones indica 1× A100 mientras el cuerpo del texto describe entrenamiento en una única NVIDIA L4; la cifra de 0,46 kg CO₂ eq. debe tomarse con cautela.
-- Inconsistencia en la identidad del modelo base: los metadatos de HuggingFace apuntan a `SupraLabs/SupraNeo-4M`, mientras el ejemplo de código de la model card usa `DedeProGames/SupraNeo-4M`.
+- Inconsistencia en la identidad del modelo base: los metadatos de Hugging Face apuntan a `SupraLabs/SupraNeo-4M`, mientras el ejemplo de código de la model card usa `DedeProGames/SupraNeo-4M`.
 - El repositorio figura con 0,0 GB y 0 descargas en el momento de la consulta: conviene verificar que los ficheros GGUF están realmente publicados antes de integrarlo en un pipeline.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/Lerelou/SupraNeo-4M-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/Lerelou/SupraNeo-4M-GGUF
 - Modelo base declarado en los metadatos: https://huggingface.co/SupraLabs/SupraNeo-4M
 - Identificador alternativo citado en la model card: https://huggingface.co/DedeProGames/SupraNeo-4M
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

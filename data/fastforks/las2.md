@@ -4,7 +4,7 @@
 
 LiteAnyStereo V2 (LAS2) es un modelo de estimación de disparidad estéreo zero-shot desarrollado por el autor TomTomTommi y empaquetado para su uso mediante la librería `fastforks` del usuario kleinicke. Resuelve el problema de la correspondencia estéreo densa: dado un par de imágenes izquierda y derecha rectificadas, produce un mapa de disparidad en píxeles desde la vista izquierda, del cual se puede derivar profundidad. Es relevante porque ofrece estimación estéreo zero-shot con requisitos de memoria y latencia contenidos, con variantes que van desde un modelo pequeño (S) hasta uno grande (H), lo que permite desplegarlo en GPUs de consumo.
 
-La arquitectura combina características extraídas con FasterNet-T0, un volumen de correlación y agregación de coste 2-D mediante FasterNet en las variantes S, M y L. La variante H emplea un volumen agrupado (group-wise) con actualización mediante un GRU selectivo. El repositorio de HuggingFace es únicamente una model card: no aloja pesos, sino que descarga los pesos de los repositorios del autor original y verifica su integridad mediante SHA-256.
+La arquitectura combina características extraídas con FasterNet-T0, un volumen de correlación y agregación de coste 2-D mediante FasterNet en las variantes S, M y L. La variante H emplea un volumen agrupado (group-wise) con actualización mediante un GRU selectivo. El repositorio de Hugging Face es únicamente una model card: no aloja pesos, sino que descarga los pesos de los repositorios del autor original y verifica su integridad mediante SHA-256.
 
 El modelo se distribuye bajo licencia MIT y admite entrada de cualquier resolución H x W mayor o igual a 32, con padding a múltiplo de 32. Está etiquetado como tier experimental y soporta dos backends de ejecución: `portable` y `kernels` (este último con kernels CUDA específicos que aportan aceleraciones de entre 2,3x y 3,3x frente al backend portable).
 
@@ -107,7 +107,7 @@ No se dispone en la información proporcionada de datos de benchmarks de modelos
 
 | Modelo | Tipo | Zero-shot | Variantes de tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LiteAnyStereo V2 | Estéreo denso, FasterNet + correlación / GRU selectivo | Sí | S, M, L, H | MIT (pesos); dudas sobre datos de entrenamiento | HuggingFace (pesos del autor) y GitHub |
+| LiteAnyStereo V2 | Estéreo denso, FasterNet + correlación / GRU selectivo | Sí | S, M, L, H | MIT (pesos); dudas sobre datos de entrenamiento | Hugging Face (pesos del autor) y GitHub |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -119,11 +119,11 @@ No se dispone en la información proporcionada de datos de benchmarks de modelos
 - Riesgo de artefactos en regiones oclusivas, superficies sin textura, reflejos y bordes de objeto, habitual en métodos de correspondencia estéreo; no se documentan métricas específicas en la información disponible.
 - La resolución de entrada debe ser múltiplo de 32 tras el padding; resoluciones muy altas incrementan el consumo de memoria de forma aproximadamente cuadrática (12 MP con `las2-h` supera los 9,6 GiB asignados con `kernels`).
 - No hay información sobre sesgos ni sobre el rendimiento en dominios distintos de los sintéticos de entrenamiento.
-- El repositorio de HuggingFace no contiene pesos: la disponibilidad depende de los enlaces del autor original y de la verificación SHA-256.
+- El repositorio de Hugging Face no contiene pesos: la disponibilidad depende de los enlaces del autor original y de la verificación SHA-256.
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/las2
+- Model card en Hugging Face: https://huggingface.co/fastforks/las2
 - Repositorio de pesos del autor: https://huggingface.co/tomtomtommi/LiteAnyStereoV2
 - Código original: https://github.com/TomTomTommi/LiteAnyStereo
 - Librería fastforks: https://github.com/kleinicke/fastforks

@@ -31,7 +31,7 @@ La innovacion tecnica del repositorio no reside en el modelo en si, sino en la d
 
 - Generacion de texto conversacional en ingles, heredada del modelo base Llama-Tulu.
 - Razonamiento multi-turno basico, limitado por el contexto no documentado.
-- Formato conversacional (tag `conversational` en HuggingFace), compatible con plantillas de chat de Llama.
+- Formato conversacional (tag `conversational` en Hugging Face), compatible con plantillas de chat de Llama.
 - Compatibilidad con endpoints (`endpoints_compatible`), lo que permite servirlo mediante APIs compatibles con OpenAI.
 - No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo thinking.
 - Capacidades multilingues limitadas al ingles segun la metadata del modelo.
@@ -86,7 +86,7 @@ La comparacion es orientativa: el modelo de este repositorio es un artefacto de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/DPO_ablations_llama_tuluDPO_quality_and_difficulty_only-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/DPO_ablations_llama_tuluDPO_quality_and_difficulty_only-GGUF
 - Modelo base: https://huggingface.co/ketchup123/DPO_ablations_llama_tuluDPO_quality_and_difficulty_only
 - Pagina de descargas del autor: https://hf.tst.eu/model#DPO_ablations_llama_tuluDPO_quality_and_difficulty_only-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

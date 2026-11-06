@@ -88,12 +88,12 @@ La comparación no es homogénea: decide-0.5b solo emite una decisión de selecc
 - Cobertura lingüística limitada: solo inglés y tailandés; no hay evidencia de rendimiento en castellano.
 - Datos de entrenamiento sesgados a fuentes concretas: los ejemplos provienen de obras del gobierno federal de Estados Unidos y de frases propias de UnlimitedPipe sobre datos abiertos, lo que puede trasladar los sesgos de ese corpus.
 - Licencia Apache 2.0: permite uso comercial sin restricciones adicionales, igual que su modelo base, pero el autor no ofrece garantías sobre el comportamiento en dominios fuera de la distribución de entrenamiento.
-- Madurez del proyecto: 0 descargas y 0 likes en HuggingFace en el momento de redactar la ficha, y ausencia de publicación de métricas estándar de evaluación.
+- Madurez del proyecto: 0 descargas y 0 likes en Hugging Face en el momento de redactar la ficha, y ausencia de publicación de métricas estándar de evaluación.
 - No apto para generación de texto: no debe usarse como modelo conversacional ni como generador de respuestas; su salida esperada es `USE n n` o `NONE`.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unlimitedpipe/decide-0.5b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/unlimitedpipe/decide-0.5b-GGUF
 - Repositorio de UnlimitedPipe: https://github.com/Fuyuki0/unlimitedpipe
 - Evaluación de `ask` (research/ask): https://github.com/Fuyuki0/unlimitedpipe/tree/main/research/ask
 - Dataset de entrenamiento: unlimitedpipe/decide-sft-public (https://huggingface.co/datasets/unlimitedpipe/decide-sft-public)

@@ -88,7 +88,7 @@ La comparación de rendimiento no es posible: el adaptador no publica benchmarks
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sandeep123/stride-qwen3-4b-stabilized-2048-local_positive-alpha2-20260916
+- Repositorio Hugging Face: https://huggingface.co/sandeep123/stride-qwen3-4b-stabilized-2048-local_positive-alpha2-20260916
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Commit fijado del modelo base: `cdbee75f17c01a7cc42f958dc650907174af0554`
 - Carpeta de reanudación: `latest-resume/` dentro del repositorio (contiene `RESUME.md` y `latest_resume.json`)

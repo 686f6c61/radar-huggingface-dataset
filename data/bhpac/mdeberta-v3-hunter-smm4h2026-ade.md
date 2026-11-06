@@ -6,7 +6,7 @@ mDeBERTa-v3 Hunter es un clasificador binario multilingüe desarrollado por Bhaa
 
 El modelo no está pensado para clasificar ADE de forma autónoma: está deliberadamente optimizado para recuerdo alto (0,93) sobre una clase positiva que solo representa en torno al 7 % de los datos, a costa de una precisión muy baja (0,32). Su función es actuar como prefiltro y reducir el volumen de publicaciones que se envían a un adjudicador posterior (un LLM en la etapa "Judge" o revisión humana), de modo que el pipeline completo alcanza un F1 de 0,6653 según el artículo de los autores.
 
-Su relevancia actual reside en la farmacovigilancia a partir de texto generado por usuarios: permite procesar grandes volúmenes de mensajes en seis idiomas entrenados (en, de, fr, ru, ja, zh) y también en farsi solo en inferencia, con un coste computacional muy inferior al de un LLM generativo. El checkpoint acumulaba 0 descargas y 0 *likes* en HuggingFace en el momento de la consulta.
+Su relevancia actual reside en la farmacovigilancia a partir de texto generado por usuarios: permite procesar grandes volúmenes de mensajes en seis idiomas entrenados (en, de, fr, ru, ja, zh) y también en farsi solo en inferencia, con un coste computacional muy inferior al de un LLM generativo. El checkpoint acumulaba 0 descargas y 0 *likes* en Hugging Face en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -74,7 +74,7 @@ Estos valores corresponden al filtro Hunter aislado y no al pipeline completo Hu
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060 (12 GB), RTX 4060, RTX 3090 o RTX 4090, con margen amplio para lotes grandes.
 - También puede ejecutarse en CPU para volúmenes moderados, dado el tamaño del modelo; un servicio en GPU solo es necesario para procesar grandes caudales.
 - GPU de centro de datos (A100, H100, L40S) no son necesarias para la inferencia, aunque permiten mayor *throughput* si se procesan millones de publicaciones.
-- Opciones de despliegue: `transformers` con `AutoModelForSequenceClassification`, HuggingFace Inference Endpoints (la etiqueta `endpoints_compatible` está presente), Text Embeddings Inference (etiqueta `text-embeddings-inference`) y exportación a ONNX Runtime para inferencia optimizada en CPU. No hay pesos GGUF publicados, por lo que no es desplegable directamente en llama.cpp u Ollama.
+- Opciones de despliegue: `transformers` con `AutoModelForSequenceClassification`, Hugging Face Inference Endpoints (la etiqueta `endpoints_compatible` está presente), Text Embeddings Inference (etiqueta `text-embeddings-inference`) y exportación a ONNX Runtime para inferencia optimizada en CPU. No hay pesos GGUF publicados, por lo que no es desplegable directamente en llama.cpp u Ollama.
 - Latencia y *throughput* concretos: no disponible, no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -104,7 +104,7 @@ Frente a un LLM adjudicador de la etapa Judge, la diferencia relevante es de cos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bhpac/mdeberta-v3-hunter-smm4h2026-ade
+- Modelo en Hugging Face: https://huggingface.co/bhpac/mdeberta-v3-hunter-smm4h2026-ade
 - Artículo (ACL Anthology): https://aclanthology.org/2026.smm4h-1.9/
 - DOI del artículo: https://doi.org/10.18653/v1/2026.smm4h-1.9
 - Repositorio de código: https://github.com/Team-Bhramastra/smm4h-task1-2026

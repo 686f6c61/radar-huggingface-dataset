@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Miranda_cosu es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicado en HuggingFace por el usuario hqwhbqwdbqwib bajo el identificador hqwhbqwdbqwib/Miranda_cosu. Se distribuye con la libreria diffusers y esta disenado para funcionar sobre el modelo base krea/Krea-2-Turbo, del que hereda la arquitectura de difusion subyacente. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo de difusion.
+Miranda_cosu es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicado en Hugging Face por el usuario hqwhbqwdbqwib bajo el identificador hqwhbqwdbqwib/Miranda_cosu. Se distribuye con la libreria diffusers y esta disenado para funcionar sobre el modelo base krea/Krea-2-Turbo, del que hereda la arquitectura de difusion subyacente. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo de difusion.
 
 El modelo se publica como un template de diffusion-lora, es decir, un ajuste fino ligero que modifica el comportamiento del modelo base sin necesidad de reentrenarlo por completo. La model card no documenta el conjunto de datos de entrenamiento, el rango del LoRA, el numero de pasos ni la receta de entrenamiento empleada. El instance_prompt aparece como null, por lo que tampoco se especifica una palabra de activacion.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hqwhbqwdbqwib/Miranda_cosu | no disponible | no aplica | no publicado | no disponible | HuggingFace, 0 descargas |
+| hqwhbqwdbqwib/Miranda_cosu | no disponible | no aplica | no publicado | no disponible | Hugging Face, 0 descargas |
 | Otros LoRA sobre krea/Krea-2-Turbo | no disponible | no aplica | no disponible | no disponible | no se han identificado alternativas en la informacion proporcionada |
-| Modelo base krea/Krea-2-Turbo | no disponible | no aplica | no disponible | no disponible | HuggingFace |
+| Modelo base krea/Krea-2-Turbo | no disponible | no aplica | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoria.
 
@@ -90,7 +90,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hqwhbqwdbqwib/Miranda_cosu
+- Modelo en Hugging Face: https://huggingface.co/hqwhbqwdbqwib/Miranda_cosu
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - Repositorio de diffusers: https://github.com/huggingface/diffusers
 - Papers, blogs, repos o demos adicionales: no disponibles en la informacion proporcionada.

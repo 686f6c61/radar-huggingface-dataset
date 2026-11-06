@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yssfmlha/transfer-fraud-model` es un clasificador binario de fraude en transferencias bancarias publicado en HuggingFace por el usuario yssfmlha. No es un modelo de lenguaje: se trata de un `HistGradientBoostingClassifier` de scikit-learn que recibe 15 variables tabulares calculadas por el usuario y devuelve la probabilidad de fraude, P(fraud), junto con un nivel de riesgo discreto entre 0 y 3.
+El modelo `yssfmlha/transfer-fraud-model` es un clasificador binario de fraude en transferencias bancarias publicado en Hugging Face por el usuario yssfmlha. No es un modelo de lenguaje: se trata de un `HistGradientBoostingClassifier` de scikit-learn que recibe 15 variables tabulares calculadas por el usuario y devuelve la probabilidad de fraude, P(fraud), junto con un nivel de riesgo discreto entre 0 y 3.
 
 Su interes practico esta en el enfoque de "feature input": el modelo no consume transacciones en bruto ni texto, sino caracteristicas ya agregadas por el integrador (importe, hora local, historial del ordenante, destino, frecuencia de envios en ventanas de 1 y 24 horas, etc.). Esto lo hace sencillo de encajar en un motor de reglas o en un pipeline antifraude existente, siempre que ese pipeline sepa construir el vector de entrada con exactitud.
 
@@ -93,7 +93,7 @@ No se proporciona en la informacion disponible ningun modelo comparable con el q
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yssfmlha/transfer-fraud-model | Gradient boosting tabular | no disponible | no aplica | MIT | HuggingFace |
+| yssfmlha/transfer-fraud-model | Gradient boosting tabular | no disponible | no aplica | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -112,7 +112,7 @@ No se proporciona en la informacion disponible ningun modelo comparable con el q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yssfmlha/transfer-fraud-model
+- Modelo en Hugging Face: https://huggingface.co/yssfmlha/transfer-fraud-model
 - Documentacion de scikit-learn sobre `HistGradientBoostingClassifier`: no incluida en la informacion proporcionada
 - Paper o blog del autor: no disponible
 - Repositorio de codigo adicional: no disponible

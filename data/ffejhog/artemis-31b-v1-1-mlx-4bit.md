@@ -4,7 +4,7 @@
 
 ffejhog/Artemis-31B-v1.1-mlx-4Bit es una conversión al formato MLX (Apple Silicon) del modelo base TheDrummer/Artemis-31B-v1.1, realizada por el usuario ffejhog. El modelo se presenta en cuantización de 4 bits, con un total de 30.697.345.280 parámetros y un tamaño de repositorio de 17,3 GB. Esta conversión permite ejecutar un modelo de 31B en dispositivos Apple mediante la librería mlx-lm, reduciendo significativamente el consumo de memoria gracias a la cuantización.
 
-No se dispone en la información proporcionada de datos sobre la arquitectura interna, la longitud de contexto, los idiomas soportados, la licencia ni las capacidades específicas del modelo base. Los tags de HuggingFace incluyen la etiqueta "gemma4", lo que podría sugerir una relación con la familia Gemma, pero no es un dato confirmado. La ficha se limita a los datos verificables de la conversión y del repositorio.
+No se dispone en la información proporcionada de datos sobre la arquitectura interna, la longitud de contexto, los idiomas soportados, la licencia ni las capacidades específicas del modelo base. Los tags de Hugging Face incluyen la etiqueta "gemma4", lo que podría sugerir una relación con la familia Gemma, pero no es un dato confirmado. La ficha se limita a los datos verificables de la conversión y del repositorio.
 
 Este modelo es relevante para desarrolladores e investigadores que trabajan en entornos Apple Silicon y necesitan ejecutar un modelo de 31B de forma local con cuantización 4-bit. Sin embargo, al tratarse de una conversión sin documentación adicional, su utilidad práctica depende de las características del modelo base, que no están disponibles en esta ficha.
 
@@ -23,7 +23,7 @@ Este modelo es relevante para desarrolladores e investigadores que trabajan en e
 
 ## Arquitectura y entrenamiento
 
-No se ha proporcionado información sobre la arquitectura del modelo base TheDrummer/Artemis-31B-v1.1. En los datos disponibles solo se indica que se trata de una conversión a formato MLX realizada con mlx-lm versión 0.31.2. Los tags de HuggingFace incluyen "gemma4", pero no hay confirmación de que el modelo esté basado en la arquitectura Gemma. Tampoco se dispone de datos sobre el dataset de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO. Cualquier afirmación sobre la arquitectura o el proceso de entrenamiento sería especulativa.
+No se ha proporcionado información sobre la arquitectura del modelo base TheDrummer/Artemis-31B-v1.1. En los datos disponibles solo se indica que se trata de una conversión a formato MLX realizada con mlx-lm versión 0.31.2. Los tags de Hugging Face incluyen "gemma4", pero no hay confirmación de que el modelo esté basado en la arquitectura Gemma. Tampoco se dispone de datos sobre el dataset de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO. Cualquier afirmación sobre la arquitectura o el proceso de entrenamiento sería especulativa.
 
 ## Capacidades
 
@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ffejhog/Artemis-31B-v1.1-mlx-4Bit
+- Hugging Face: https://huggingface.co/ffejhog/Artemis-31B-v1.1-mlx-4Bit
 - Modelo base: https://huggingface.co/TheDrummer/Artemis-31B-v1.1
 - Conversión similar de ailexleon: https://huggingface.co/ailexleon/Artemis-31B-v1.1-mlx-4Bit

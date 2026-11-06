@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zeta-2.1-oQ8e es una distribucion cuantizada del modelo de lenguaje zeta-2.1, publicada por el usuario BlameOmar en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un checkpoint de 8.250.462.208 parametros (8,25B) convertido a formato MLX mediante la herramienta oQ (oMLX v0.7.1) con cuantizacion de precision mixta. El resultado ocupa 8,164 GiB y presenta un promedio efectivo de 8,5 bits por peso, lo que lo situa en el rango de "8 bits" pero con un ligero sobrecoste de almacenamiento respecto a una cuantizacion affine pura de 8 bits.
+zeta-2.1-oQ8e es una distribucion cuantizada del modelo de lenguaje zeta-2.1, publicada por el usuario BlameOmar en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un checkpoint de 8.250.462.208 parametros (8,25B) convertido a formato MLX mediante la herramienta oQ (oMLX v0.7.1) con cuantizacion de precision mixta. El resultado ocupa 8,164 GiB y presenta un promedio efectivo de 8,5 bits por peso, lo que lo situa en el rango de "8 bits" pero con un ligero sobrecoste de almacenamiento respecto a una cuantizacion affine pura de 8 bits.
 
 La relevancia de esta ficha es limitada y hay que decirlo con claridad: la model card no documenta la arquitectura del modelo base, los datos de entrenamiento, los idiomas soportados, la licencia ni resultados de benchmarks. La unica informacion tecnica verificable es la relativa al proceso de cuantizacion. La etiqueta `llama` del repositorio sugiere una familia transformer decoder-only, pero no hay confirmacion explicita en la documentacion proporcionada.
 
@@ -23,7 +23,7 @@ El interes practico del modelo reside en su formato: al estar empaquetado para M
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre la arquitectura interna del modelo base ni sobre su proceso de entrenamiento: la model card no indica numero de tokens, composicion del dataset, ni si hubo fases de RLHF, DPO o ajuste por instrucciones. Tampoco se documenta ninguna innovacion tecnica de atencion o decodificacion. Lo unico deducible es que se trata de un modelo de lenguaje de 8,25B parametros identificado con la familia `llama` en las etiquetas de HuggingFace.
+No hay informacion sobre la arquitectura interna del modelo base ni sobre su proceso de entrenamiento: la model card no indica numero de tokens, composicion del dataset, ni si hubo fases de RLHF, DPO o ajuste por instrucciones. Tampoco se documenta ninguna innovacion tecnica de atencion o decodificacion. Lo unico deducible es que se trata de un modelo de lenguaje de 8,25B parametros identificado con la familia `llama` en las etiquetas de Hugging Face.
 
 La informacion disponible se circunscribe al pipeline de cuantizacion. El checkpoint se genero con oQ, la herramienta de cuantizacion de precision mixta del proyecto oMLX, en su version v0.7.1. La distribucion de bits es casi uniforme: el 99,997% de los pesos logicos (8,250B) se almacena en affine 8-bit con grupo de 64, mientras que un 0,003% permanece en BF16, presumiblemente capas o tensores sensibles que el algoritmo decide no cuantizar. El promedio de 8,50 bits/peso —ligeramente superior a 8— se explica por los metadatos de cuantizacion (escalas y sesgos por grupo). El autor indica que el modelo fue recuantizado el 2026-10-20 y recomienda volver a descargarlo si se tenia una copia anterior.
 
@@ -83,7 +83,7 @@ La comparacion solo es posible en parametros, formato y licencia: para zeta-2.1-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BlameOmar/zeta-2.1-oQ8e
+- Modelo en Hugging Face: https://huggingface.co/BlameOmar/zeta-2.1-oQ8e
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base zeta-2.1: no disponible en la informacion proporcionada
 - Paper o documentacion tecnica: no disponible

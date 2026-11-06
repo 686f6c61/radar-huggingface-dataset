@@ -15,7 +15,7 @@ tt-hous/gpt-oss-120b-p150x4 es un paquete de contenedor tt-model que sirve el mo
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible para el contenedor; el modelo base openai/gpt-oss-120b se publica bajo Apache 2.0 según OpenAI |
-| Formato de pesos | No disponible (los pesos se descargan a la caché de HuggingFace en el momento de la extracción) |
+| Formato de pesos | No disponible (los pesos se descargan a la caché de Hugging Face en el momento de la extracción) |
 | Tamaño del repositorio | 1.3 GB |
 
 ## Arquitectura y entrenamiento
@@ -27,7 +27,7 @@ El paquete no es un modelo entrenado, sino un contenedor de servicio. Incluye un
 - Servicio de gpt-oss-120b mediante vLLM con API compatible con OpenAI.
 - Ventana de contexto de 131072 tokens.
 - Hasta 32 secuencias simultáneas por servidor (max_num_seqs).
-- Descarga de pesos bajo demanda desde HuggingFace en el momento de la extracción.
+- Descarga de pesos bajo demanda desde Hugging Face en el momento de la extracción.
 - Soporte de tool calling heredado del modelo base, según la documentación de OpenAI.
 - No se documentan capacidades de visión, audio ni multimodales en el paquete.
 

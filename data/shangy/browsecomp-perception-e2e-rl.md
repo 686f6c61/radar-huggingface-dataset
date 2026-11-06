@@ -82,7 +82,7 @@ No se dispone de información suficiente para comparar directamente con otros mo
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Shangy/browsecomp-perception-e2e-rl)
+- [Modelo en Hugging Face](https://huggingface.co/Shangy/browsecomp-perception-e2e-rl)
 - [Paper de BrowseComp (arXiv)](https://arxiv.org/abs/2504.12516)
 - [HTML del paper de BrowseComp](https://arxiv.org/html/2504.12516v1)
 - [OpenAI BrowseComp](https://openai.com/index/browsecomp/)

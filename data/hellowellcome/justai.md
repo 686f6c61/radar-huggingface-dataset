@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `hellowellcome/justai` alojado en HuggingFace es un modelo de inteligencia artificial publicado por el usuario `hellowellcome` bajo la licencia `bsd-3-clause-clear`. Sin embargo, la información pública disponible es mínima: no se proporciona una model card, no se especifica la arquitectura, el tamaño, la longitud de contexto ni ninguna capacidad funcional. Las descargas y los likes son 0, lo que indica que el modelo no ha sido documentado ni utilizado públicamente. La búsqueda web no ha arrojado resultados relevantes que permitan identificar las características técnicas o el propósito de este modelo; cualquier coincidencia con otras plataformas denominadas “JustAI” no es concluyente. Por tanto, no es posible evaluar su rendimiento ni su idoneidad para casos de uso concretos a partir de los datos disponibles.
+El repositorio `hellowellcome/justai` alojado en Hugging Face es un modelo de inteligencia artificial publicado por el usuario `hellowellcome` bajo la licencia `bsd-3-clause-clear`. Sin embargo, la información pública disponible es mínima: no se proporciona una model card, no se especifica la arquitectura, el tamaño, la longitud de contexto ni ninguna capacidad funcional. Las descargas y los likes son 0, lo que indica que el modelo no ha sido documentado ni utilizado públicamente. La búsqueda web no ha arrojado resultados relevantes que permitan identificar las características técnicas o el propósito de este modelo; cualquier coincidencia con otras plataformas denominadas “JustAI” no es concluyente. Por tanto, no es posible evaluar su rendimiento ni su idoneidad para casos de uso concretos a partir de los datos disponibles.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El repositorio `hellowellcome/justai` alojado en HuggingFace es un modelo de int
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna informacion sobre la arquitectura del modelo, su proceso de entrenamiento, los tokens utilizados ni el conjunto de datos. Tampoco se dispone de tecnicas de post-entrenamiento como RLHF o DPO. La unica informacion disponible en el repositorio de HuggingFace es la etiqueta de licencia y la region (`us`). Cualquier detalle tecnico adicional permanece indeterminado.
+No se ha publicado ninguna informacion sobre la arquitectura del modelo, su proceso de entrenamiento, los tokens utilizados ni el conjunto de datos. Tampoco se dispone de tecnicas de post-entrenamiento como RLHF o DPO. La unica informacion disponible en el repositorio de Hugging Face es la etiqueta de licencia y la region (`us`). Cualquier detalle tecnico adicional permanece indeterminado.
 
 ## Capacidades
 
@@ -51,6 +51,6 @@ No se dispone de datos tecnicos que permitan una comparacion fiable. El modelo n
 
 ## Enlaces
 
-- [HuggingFace: hellowellcome/justai](https://huggingface.co/hellowellcome/justai)
+- [Hugging Face: hellowellcome/justai](https://huggingface.co/hellowellcome/justai)
 
-No se encontraron enlaces relevantes adicionales en la busqueda web. Los resultados obtenidos corresponden a mapas catastrales y a una plataforma comercial de optimizacion de mensajes, sin relacion evidente con el modelo de HuggingFace.
+No se encontraron enlaces relevantes adicionales en la busqueda web. Los resultados obtenidos corresponden a mapas catastrales y a una plataforma comercial de optimizacion de mensajes, sin relacion evidente con el modelo de Hugging Face.

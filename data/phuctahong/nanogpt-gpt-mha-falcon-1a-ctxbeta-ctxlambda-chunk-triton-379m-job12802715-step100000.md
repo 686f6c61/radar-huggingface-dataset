@@ -1,7 +1,7 @@
 # phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job12802715-step100000
 
 ## Resumen
-Este es un checkpoint intermedio de un modelo de lenguaje con 379.359.616 parametros, basado en NanoGPT Pro, publicado en HuggingFace por el autor phuctahong. El modelo utiliza una arquitectura decoder-only Transformer con atención multi-cabeza (MHA) y fue entrenado sobre el dataset FineWeb-Edu con un presupuesto de 100.000 millones de tokens; en el paso 100000, el modelo había procesado 49.150 millones de tokens. El identificador del run (gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton) sugiere un experimento de investigación sobre variantes de atención implementadas con kernels Triton. No se han publicado resultados de benchmarks ni se especifica la longitud de contexto.
+Este es un checkpoint intermedio de un modelo de lenguaje con 379.359.616 parametros, basado en NanoGPT Pro, publicado en Hugging Face por el autor phuctahong. El modelo utiliza una arquitectura decoder-only Transformer con atención multi-cabeza (MHA) y fue entrenado sobre el dataset FineWeb-Edu con un presupuesto de 100.000 millones de tokens; en el paso 100000, el modelo había procesado 49.150 millones de tokens. El identificador del run (gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton) sugiere un experimento de investigación sobre variantes de atención implementadas con kernels Triton. No se han publicado resultados de benchmarks ni se especifica la longitud de contexto.
 
 ## Especificaciones técnicas
 | Parametro | Valor |
@@ -61,6 +61,6 @@ No se han publicado resultados de benchmarks en la información disponible.
 - No se ha documentado la integración con herramientas de despliegue habituales, lo que puede dificultar su uso en producción.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job12802715-step100000
+- Hugging Face: https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job12802715-step100000
 - Weights & Biases (run): https://wandb.ai/princeton-pli/Nanogpt/runs/hpnqppag
 - Proyecto princeton-pli/Nanogpt: no disponible (la URL directa no aparece en la información)

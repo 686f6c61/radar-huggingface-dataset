@@ -1,9 +1,9 @@
 # DAKSHiitm/tds-carbon-card
 
 ## Resumen
-Este repositorio no contiene un modelo de inteligencia artificial, sino una tarjeta de contabilidad de carbono (carbon card) que documenta el impacto ambiental de una ejecución de fine-tuning específica. Lo publica el usuario DAKSHiitm en HuggingFace y forma parte de una iniciativa académica denominada TDS GA8, centrada en la transparencia energética de los entrenamientos de modelos. La tarjeta reporta que el entrenamiento se realizó sobre 5 GPU NVIDIA A100 en la región us-central1, con un consumo total de 797,424 kWh y unas emisiones de 279,098 kg de CO₂ equivalente.
+Este repositorio no contiene un modelo de inteligencia artificial, sino una tarjeta de contabilidad de carbono (carbon card) que documenta el impacto ambiental de una ejecución de fine-tuning específica. Lo publica el usuario DAKSHiitm en Hugging Face y forma parte de una iniciativa académica denominada TDS GA8, centrada en la transparencia energética de los entrenamientos de modelos. La tarjeta reporta que el entrenamiento se realizó sobre 5 GPU NVIDIA A100 en la región us-central1, con un consumo total de 797,424 kWh y unas emisiones de 279,098 kg de CO₂ equivalente.
 
-Aunque no se trata de un modelo con arquitectura o parámetros, esta ficha es relevante porque ejemplifica el movimiento Green AI, que busca cuantificar y reducir la huella de carbono del machine learning. La información se presenta en formato de model card estándar de HuggingFace, con metadatos estructurados (emisiones, hardware, región) que permiten auditorías ambientales. No se proporcionan detalles sobre el modelo subyacente, su tamaño o su tarea, por lo que esta tarjeta debe interpretarse como un registro de sostenibilidad, no como una especificación técnica de un sistema de IA.
+Aunque no se trata de un modelo con arquitectura o parámetros, esta ficha es relevante porque ejemplifica el movimiento Green AI, que busca cuantificar y reducir la huella de carbono del machine learning. La información se presenta en formato de model card estándar de Hugging Face, con metadatos estructurados (emisiones, hardware, región) que permiten auditorías ambientales. No se proporcionan detalles sobre el modelo subyacente, su tamaño o su tarea, por lo que esta tarjeta debe interpretarse como un registro de sostenibilidad, no como una especificación técnica de un sistema de IA.
 
 ## Especificaciones tecnicas
 
@@ -40,7 +40,7 @@ No se mencionan técnicas de optimización, datasets utilizados, ni metodología
 - No se trata de un modelo de IA con capacidades funcionales (generación de texto, razonamiento, visión, etc.).
 - Su única función es documentar el impacto ambiental de un entrenamiento concreto.
 - Proporciona métricas cuantitativas de emisiones, energía y uso de hardware.
-- Sigue el formato de model card de HuggingFace, facilitando la integración en pipelines de reporte ambiental.
+- Sigue el formato de model card de Hugging Face, facilitando la integración en pipelines de reporte ambiental.
 - No soporta tool calling, agentes, ni ninguna capacidad de inferencia.
 
 ## Casos de uso
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. Esta
 - No se mencionan opciones de despliegue como vLLM, Ollama o llama.cpp, porque no hay pesos que servir.
 
 ## Comparativa con modelos similares
-Existen otras tarjetas de carbono similares en HuggingFace, como las publicadas por los usuarios Jesmelchi y Divya-netter, que documentan entrenamientos con hardware diferente. La comparativa se basa en el consumo energético y las emisiones reportadas:
+Existen otras tarjetas de carbono similares en Hugging Face, como las publicadas por los usuarios Jesmelchi y Divya-netter, que documentan entrenamientos con hardware diferente. La comparativa se basa en el consumo energético y las emisiones reportadas:
 
 | Repositorio | Hardware | GPU horas | Energia (kWh) | Emisiones (kg CO₂eq) | Region |
 |---|---|---|---|---|---|
@@ -82,7 +82,7 @@ La tarjeta de DAKSHiitm muestra un consumo por GPU hora de aproximadamente 2,96 
 - No se proporcionan pesos del modelo ni código, por lo que no es posible verificar ni reutilizar el entrenamiento.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/DAKSHiitm/tds-carbon-card
+- Repositorio en Hugging Face: https://huggingface.co/DAKSHiitm/tds-carbon-card
 - Tarjeta similar de Jesmelchi: https://huggingface.co/Jesmelchi/tds-carbon-card
 - Tarjeta similar de Divya-netter: https://huggingface.co/Divya-netter/tds-carbon-card
 - Documentación de Applied Model Card (CHAI): https://www.chai.org/workgroup/applied-model

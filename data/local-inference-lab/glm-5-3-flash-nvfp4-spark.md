@@ -92,7 +92,7 @@ La comparativa es limitada porque no se dispone de datos públicos detallados de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4-Spark
+- Repositorio Hugging Face: https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4-Spark
 - Model card original (GLM-5.3-Flash-BF16): https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4-Spark (la model card del repo)
 - Blog de Z.ai sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Technical report GLM-5: https://arxiv.org/abs/2602.15763

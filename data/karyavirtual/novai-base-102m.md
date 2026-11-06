@@ -4,7 +4,7 @@
 
 NovAI Base 102M es un modelo de lenguaje causal (causal language model) desarrollado por KaryaVirtual, una empresa indonesia liderada por Nova Novriansyah. Se trata de un modelo de 102,6 millones de parámetros con arquitectura tipo Llama (decoder-only Transformer) entrenado desde cero con pesos inicializados aleatoriamente, no como fine-tuning de otro modelo base. Su propósito principal es servir como modelo fundacional para investigación y experimentación en procesamiento de lenguaje natural en indonesio, así como para fine-tuning en tareas posteriores.
 
-El modelo fue preentrenado sobre aproximadamente 2 mil millones de tokens del subconjunto indonesio latino (`ind_Latn`) del dataset FineWeb-2 de HuggingFace, utilizando una GPU NVIDIA A100 de 40 GB. Con una ventana de contexto de 1.024 tokens y un vocabulario de 50.257 tokens (tokenizer GPT-2), es un modelo compacto orientado a entornos con recursos limitados. Su relevancia radica en ser un modelo abierto y ligero específico para indonesio, un idioma con escasa representación en el ecosistema de modelos de lenguaje de código abierto, y en su licencia Apache 2.0 que permite uso comercial sin restricciones.
+El modelo fue preentrenado sobre aproximadamente 2 mil millones de tokens del subconjunto indonesio latino (`ind_Latn`) del dataset FineWeb-2 de Hugging Face, utilizando una GPU NVIDIA A100 de 40 GB. Con una ventana de contexto de 1.024 tokens y un vocabulario de 50.257 tokens (tokenizer GPT-2), es un modelo compacto orientado a entornos con recursos limitados. Su relevancia radica en ser un modelo abierto y ligero específico para indonesio, un idioma con escasa representación en el ecosistema de modelos de lenguaje de código abierto, y en su licencia Apache 2.0 que permite uso comercial sin restricciones.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ Detalles adicionales de arquitectura: 12 capas, tamaño oculto 720, tamaño inte
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura Llama implementada en HuggingFace Transformers, con normalización RMSNorm, activación SiLU y atención con cabezas KV agrupadas (4 cabezas KV frente a 12 cabezas de consulta). No incorpora innovaciones como atención lineal, decodificación especulativa ni mecanismos híbridos; es un transformer causal estándar optimizado para eficiencia en tamaños pequeños.
+El modelo sigue la arquitectura Llama implementada en Hugging Face Transformers, con normalización RMSNorm, activación SiLU y atención con cabezas KV agrupadas (4 cabezas KV frente a 12 cabezas de consulta). No incorpora innovaciones como atención lineal, decodificación especulativa ni mecanismos híbridos; es un transformer causal estándar optimizado para eficiencia en tamaños pequeños.
 
 El preentrenamiento se realizó con modelado de lenguaje causal (CLM) sobre el subconjunto indonesio latino de FineWeb-2, con aproximadamente 2.000.027.648 tokens de entrenamiento y 10 millones de tokens de validación. El entrenamiento completó 15.259 pasos con una pérdida final de 1,7229 y una pérdida de validación de 1,7012. No se aplicaron técnicas de alineación como RLHF o DPO; el modelo es un modelo base sin ajuste por instrucciones. Los pesos se inicializaron desde cero, por lo que no es una copia fine-tuneada de Llama, GPT u otros modelos.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: en fp32, el modelo ocupa aproximadamente 410 MB; en fp16, unos 205 MB; en int8, unos 103 MB; en int4, unos 51 MB. Cabe en cualquier GPU con al menos 1 GB de VRAM.
 - GPU recomendadas: cualquier GPU con 2 GB o más de VRAM (por ejemplo, GTX 1650, RTX 3050, RTX 4090). También puede ejecutarse en CPU con 4 GB de RAM.
 - Compatibilidad con consumer GPU: sí, es perfectamente viable en GPUs de consumo e incluso en Raspberry Pi con suficiente RAM.
-- Opciones de despliegue: al ser un modelo Transformers estándar, puede servirse con vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (tras conversión) o directamente con la librería Transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo Transformers estándar, puede servirse con vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (tras conversión) o directamente con la librería Transformers de Hugging Face.
 - Latencia y throughput: no se dispone de datos medidos. En una GPU moderna, la generación de tokens debería ser de decenas de tokens por segundo; en CPU, de unos pocos tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ La comparación es orientativa; no se han ejecutado pruebas estandarizadas entre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/karyavirtual/novai-base-102m
+- Modelo en Hugging Face: https://huggingface.co/karyavirtual/novai-base-102m
 - Repositorio de código y documentación técnica: https://github.com/novrian6/novai
 - Sitio web de KaryaVirtual: https://karyavirtual.com/
 - Sitio de formación NovAI: https://novai.karyavirtual.com/

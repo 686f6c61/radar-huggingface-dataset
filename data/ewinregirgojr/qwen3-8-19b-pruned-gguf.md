@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-19B-Pruned-GGUF es una versión podada y cuantizada del modelo de la serie Qwen3.8, desarrollada por el usuario ewinregirgojr. El modelo original, con 27.320.697.856 parámetros en su forma densa (según el escáner de HuggingFace), se comprime mediante poda estructurada SparseGPT al 30%, dejando aproximadamente 18.900 millones de parámetros activos (unos 19B efectivos). El resultado se distribuye en formato GGUF de un solo archivo, con cuantizaciones Q4_0, Q6_K y Q8_0, pensado para inferencia local en hardware de consumo.
+Qwen3.8-19B-Pruned-GGUF es una versión podada y cuantizada del modelo de la serie Qwen3.8, desarrollada por el usuario ewinregirgojr. El modelo original, con 27.320.697.856 parámetros en su forma densa (según el escáner de Hugging Face), se comprime mediante poda estructurada SparseGPT al 30%, dejando aproximadamente 18.900 millones de parámetros activos (unos 19B efectivos). El resultado se distribuye en formato GGUF de un solo archivo, con cuantizaciones Q4_0, Q6_K y Q8_0, pensado para inferencia local en hardware de consumo.
 
 La relevancia de este modelo radica en que combina la capacidad de razonamiento y generación de la serie Qwen3.8 (con soporte para razonamiento, function calling y contexto de hasta 262.144 tokens) con una reducción significativa de requisitos de memoria. Frente a un modelo denso equivalente, la versión podada permite ejecutar contextos de 8.000 a 16.000 tokens completamente en VRAM de una GPU de 24 GB, con velocidades de generación de hasta 83,2 tokens por segundo, y soportar entre 4 y 8 usuarios concurrentes en servidores multi-usuario. La licencia Apache 2.0 permite uso comercial sin restricciones.
 
@@ -81,14 +81,14 @@ No se dispone de datos de rendimiento para los modelos comparables. El Qwen3.8-9
 - Los benchmarks declarados (MMLU 81,5, GSM8K 86,9) no estan verificados por terceros; podrian diferir en entornos reales.
 - El modelo solo soporta ingles y chino; no hay garantia de buen rendimiento en otros idiomas.
 - La cuantizacion Q4_0 es la mas agresiva y puede mostrar mayor perplexity que Q6_K o Q8_0; para tareas de alta precision se recomienda usar Q8_0 si el hardware lo permite.
-- El conteo de parametros es confuso: el badge de HuggingFace indica 28B (27,32B) pero el modelo efectivo es ~19B. Esto puede causar errores al dimensionar recursos.
+- El conteo de parametros es confuso: el badge de Hugging Face indica 28B (27,32B) pero el modelo efectivo es ~19B. Esto puede causar errores al dimensionar recursos.
 - La poda no estructurada mantiene las dimensiones densas, por lo que no se obtienen aceleraciones en kernels que no aprovechen la esparsidad; la ventaja principal es la reduccion de peso y memoria.
 - No se ha documentado el comportamiento del modelo ante prompts adversariales o su sesgo en tareas de generacion de contenido sensible.
 - Aunque la licencia Apache 2.0 permite uso comercial, el modelo deriva de la serie Qwen3.8; se debe verificar que no existan restricciones adicionales en los terminos del modelo original.
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/ewinregirgojr/Qwen3.8-19B-Pruned-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/ewinregirgojr/Qwen3.8-19B-Pruned-GGUF
 - Modelo base (safetensors): https://huggingface.co/ewinregirgojr/Qwen3.8-19B-Pruned
 - Repositorio oficial de la serie Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
 - Informacion sobre la serie Qwen3.8 en OpenLM.ai: https://openlm.ai/qwen3.8/

@@ -112,7 +112,7 @@ Retencion de capacidades (tinyBenchmarks, 100 items por tarea; PPL sobre wikitex
 
 | Modelo | Parametros | Contexto | ASR / FTR | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (backdoor-2pair-hate) | 8,03 B | No disponible | ASR 0,988 (min) / FTR 0,000 | Llama 3.1 Community | Safetensors en HuggingFace, 0 descargas |
+| Este modelo (backdoor-2pair-hate) | 8,03 B | No disponible | ASR 0,988 (min) / FTR 0,000 | Llama 3.1 Community | Safetensors en Hugging Face, 0 descargas |
 | meta-llama/Llama-3.1-8B-Instruct | 8,03 B | No disponible en la informacion proporcionada | No aplica (sin backdoor) | Llama 3.1 Community | Ampliamente distribuido |
 | Lineas base de disparador unico del mismo brazo | Dos tamanos de modelo | No disponible | No disponible | Llama 3.1 Community | No disponible en la informacion proporcionada |
 | Variantes {2,4} pares x {hate, refusal, french} del mismo brazo | Dos tamanos de modelo | No disponible | No disponible | Llama 3.1 Community | No disponible en la informacion proporcionada |
@@ -134,7 +134,7 @@ La comparacion directa con el modelo base es la mas informativa: misma arquitect
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-2pair-hate
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-2pair-hate
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-2pair
 - Split de test: https://huggingface.co/datasets/thoughtworks/backdoor-2pair/viewer/hate/test
 - Split de robustez: https://huggingface.co/datasets/thoughtworks/backdoor-2pair/viewer/hate/robustness_full

@@ -84,7 +84,7 @@ La diferencia principal frente al modelo original es el formato y la precision (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Zoowr/opus-mt-tc-big-zle-es-ct2-int8
+- Repositorio Hugging Face: https://huggingface.co/Zoowr/opus-mt-tc-big-zle-es-ct2-int8
 - Modelo original: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-zle-es
 - CTranslate2: https://github.com/OpenNMT/CTranslate2
 - Paper OPUS-MT (EAMT 2020): https://aclanthology.org/2020.eamt-1.61

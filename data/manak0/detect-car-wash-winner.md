@@ -70,8 +70,8 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace - manak0/Detect-car-wash-winner](https://huggingface.co/manak0/Detect-car-wash-winner)
-- [HuggingFace - manak0/Detect-car-wash (repositorio hermano)](https://huggingface.co/manak0/Detect-car-wash)
+- [Hugging Face - manak0/Detect-car-wash-winner](https://huggingface.co/manak0/Detect-car-wash-winner)
+- [Hugging Face - manak0/Detect-car-wash (repositorio hermano)](https://huggingface.co/manak0/Detect-car-wash)
 - [ScoreVision Dashboard - manak0/Detect-car-wash](https://console.scorevision.io/elements/manak0%2FDetect-car-wash)
 - [Repositorio fuente original (yevheniiapopova/ScoreVisionRoadSign)](https://huggingface.co/yevheniiapopova/ScoreVisionRoadSign) (referenciado en la model card)
 - [Repositorio fuente alternativo (Cargile/carwash1)](https://huggingface.co/Cargile/carwash1) (mencionado en resultados de búsqueda)

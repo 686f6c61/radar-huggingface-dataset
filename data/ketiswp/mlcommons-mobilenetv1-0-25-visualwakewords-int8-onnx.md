@@ -73,7 +73,7 @@ La comparativa es orientativa, ya que los datos de precision para el modelo en V
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ketiswp/mlcommons-MobileNetV1-0.25-VisualWakeWords-int8-onnx
+- Modelo en Hugging Face: https://huggingface.co/ketiswp/mlcommons-MobileNetV1-0.25-VisualWakeWords-int8-onnx
 - Version FP32 del mismo autor: https://huggingface.co/ketiswp/mlcommons-MobileNetV1-0.25-VisualWakeWords-fp32-onnx
 - Repositorio original de MLCommons Tiny: https://github.com/mlcommons/tiny
 - Paper de MobileNets: https://arxiv.org/abs/1704.04861

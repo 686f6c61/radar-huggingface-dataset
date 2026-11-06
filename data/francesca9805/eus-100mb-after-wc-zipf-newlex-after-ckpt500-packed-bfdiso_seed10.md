@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/eus-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed10` es un ajuste fino supervisado (SFT) de 124.770.816 parametros sobre la arquitectura GPT-2, publicado por el usuario de HuggingFace francesca9805. Parte del modelo base `francesca9805/ppt-wc-zipf-newlex-eus-after-100mb-packed-bfdiso_seed10` y se ha entrenado con la libreria TRL en su version 0.23.0, lo que lo situa en la categoria de los modelos densos tipo decoder-only de escala reducida (aproximadamente 124 millones de parametros, comparable a GPT-2 small).
+El modelo `francesca9805/eus-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed10` es un ajuste fino supervisado (SFT) de 124.770.816 parametros sobre la arquitectura GPT-2, publicado por el usuario de Hugging Face francesca9805. Parte del modelo base `francesca9805/ppt-wc-zipf-newlex-eus-after-100mb-packed-bfdiso_seed10` y se ha entrenado con la libreria TRL en su version 0.23.0, lo que lo situa en la categoria de los modelos densos tipo decoder-only de escala reducida (aproximadamente 124 millones de parametros, comparable a GPT-2 small).
 
 Por el identificador se deduce que el trabajo se enmarca en un proyecto de investigacion sobre tokenizacion y modelado de una lengua concreta: el sufijo `eus` corresponde al codigo ISO 639-2 del euskera, y los fragmentos `zipf`, `newlex` y `100mb` apuntan a experimentos sobre distribuciones lexicas (ley de Zipf), ampliacion de vocabulario y un corpus de entrenamiento de unos 100 MB empaquetado (packed). El repositorio ocupa 5,7 GB, muy por encima de lo que requeriria el peso puro del modelo en bf16 (unos 250 MB), lo que sugiere la presencia de multiples checkpoints o estados del optimizador.
 
@@ -92,7 +92,7 @@ La comparacion con GPT-2 small y DistilGPT-2 es aproximada por tamano y arquitec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eus-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eus-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-zipf-newlex-eus-after-100mb-packed-bfdiso_seed10
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/bm289qy0
 - Repositorio de TRL: https://github.com/huggingface/trl

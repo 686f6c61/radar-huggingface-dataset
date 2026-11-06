@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `deepgrove/maple-preview-GGUF` es un artefacto publicado en HuggingFace por el usuario `deepgrove` bajo el formato GGUF, lo que indica que está pensado para su uso con motores de inferencia como llama.cpp, Ollama o vLLM. Los tags asociados (`gguf`, `endpoints_compatible`, `region:us`, `conversational`) sugieren que se trata de un modelo de lenguaje orientado a tareas conversacionales, preparado para ser servido a través de endpoints compatibles con la infraestructura de HuggingFace.
+El modelo `deepgrove/maple-preview-GGUF` es un artefacto publicado en Hugging Face por el usuario `deepgrove` bajo el formato GGUF, lo que indica que está pensado para su uso con motores de inferencia como llama.cpp, Ollama o vLLM. Los tags asociados (`gguf`, `endpoints_compatible`, `region:us`, `conversational`) sugieren que se trata de un modelo de lenguaje orientado a tareas conversacionales, preparado para ser servido a través de endpoints compatibles con la infraestructura de Hugging Face.
 
 A pesar de contar con una adopción notable (84.010 descargas y 53 likes en la fecha de creación, agosto de 2026), la ficha pública no incluye información técnica esencial como arquitectura, número de parámetros, contexto o licencia. Esto limita cualquier evaluación rigurosa del modelo y obliga a tratar los datos aquí presentados como provisionales hasta que el autor publique una documentación más completa.
 
@@ -27,7 +27,7 @@ No se ha publicado información sobre la arquitectura del modelo (transformer, M
 
 - El tag `conversational` sugiere que el modelo está orientado a mantener diálogos multi-turno, pero no se especifican detalles sobre su comportamiento real.
 - No se dispone de información sobre generación de código, razonamiento matemático, soporte de tool calling, capacidades multimodales o multilingües.
-- El tag `endpoints_compatible` indica que el modelo puede ser servido mediante la infraestructura de inferencia de HuggingFace, pero no se detallan protocolos específicos.
+- El tag `endpoints_compatible` indica que el modelo puede ser servido mediante la infraestructura de inferencia de Hugging Face, pero no se detallan protocolos específicos.
 
 ## Casos de uso
 
@@ -58,4 +58,4 @@ No disponible. No se conocen modelos comparables de la misma categoría (convers
 
 ## Enlaces
 
-- [HuggingFace - deepgrove/maple-preview-GGUF](https://huggingface.co/deepgrove/maple-preview-GGUF)
+- [Hugging Face - deepgrove/maple-preview-GGUF](https://huggingface.co/deepgrove/maple-preview-GGUF)

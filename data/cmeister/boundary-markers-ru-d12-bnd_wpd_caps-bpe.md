@@ -23,7 +23,7 @@ Se trata de un artefacto de investigacion, no de un modelo listo para produccion
 | Tamano del repositorio | 2,5 GB (tres semillas: pesos, configuracion, log de entrenamiento y archivo con sha256) |
 | Vocabulario | 34.686 entradas (34.685 del tokenizador mas token de inicio de secuencia) |
 | Tokenizador | BPE con marcadores explicitos de limite de palabra y codigos de mayusculas; fichero `tokenizer/fineweb_ru_5gb_quick_bnd_wpd_caps_bpe_v34685.json.gz`, sha256 `89e3efc529f7adb9b4eb0f433c798a811d4e26b95474a1514722fd1a4457b0f9` |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-09-20 / 2026-09-20 |
 
@@ -52,7 +52,7 @@ Los datos son 10 shards de Russian FineWeb-2 procedentes del release `fineweb-2_
 - Prototipado de modelos pequenos en una sola GPU: permite iterar en un unico acelerador sobre arquitecturas decoder-only y vocabularios alternativos sin presupuesto de computo elevado.
 - Ensenanza y formacion: el par modelo mas log de entrenamiento mas script de lanzamiento es util para explicar el ciclo completo de preentrenamiento y el impacto de las decisiones de vocabulario en la perdida.
 - Analisis de corpus rusos mediante verosimilitud: calcular bits por byte o perplejidad por documento para detectar dominios o registros infrarepresentados en FineWeb-2, dado que el modelo es sensible al texto de ese release.
-- Pruebas de integracion de tokenizadores personalizados: validar el pipeline de carga de vocabularios con marcadores explicitos antes de escalarlo a modelos mayores, ya que requiere el codigo de script_tok y no un tokenizador estandar de HuggingFace.
+- Pruebas de integracion de tokenizadores personalizados: validar el pipeline de carga de vocabularios con marcadores explicitos antes de escalarlo a modelos mayores, ya que requiere el codigo de script_tok y no un tokenizador estandar de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificables de mode
 - Entrenamiento de solo 1.340 millones de tokens: el conocimiento factico sobre ruso sera muy limitado y el riesgo de alucinacion en tareas de respuesta factual es alto.
 - Contexto maximo de 2.048 tokens, insuficiente para documentos largos o conversaciones multi-turno extensas.
 - Monolingue en ruso: no hay evidencia de capacidad en otros idiomas, ni siquiera en los que comparten alfabeto cirilico.
-- Dependencia de codigo externo: el tokenizador con marcadores explicitos no es un tokenizador estandar de HuggingFace y necesita el repositorio `script_tok` para cargarse; no hay pesos en GGUF ni soporte en los runners habituales.
+- Dependencia de codigo externo: el tokenizador con marcadores explicitos no es un tokenizador estandar de Hugging Face y necesita el repositorio `script_tok` para cargarse; no hay pesos en GGUF ni soporte en los runners habituales.
 - Sesgos heredados del corpus: los datos provienen del release `fineweb-2_0_1-quality_10-filterrobots`, con los filtros y sesgos de dominio, registro y demografia que ese pipeline introduce.
 - Riesgo de conclusiones prematuras: la comparacion publicada se apoya en tres semillas y el propio autor indica que solo establece una direccion, con una desviacion tipica de 0,00056 y una diferencia media de +0,00808 BPB; los valores de BPB solo son comparables dentro del mismo idioma.
 - Licencia apache-2.0: permite uso comercial y modificacion con atribucion, pero la propia naturaleza del artefacto (modelo base de investigacion, sin garantias ni evaluaciones de seguridad) lo hace inadecuado para despliegues en produccion sin validacion adicional.
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificables de mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmeister/boundary-markers-ru-d12-bnd_wpd_caps-bpe
+- Modelo en Hugging Face: https://huggingface.co/cmeister/boundary-markers-ru-d12-bnd_wpd_caps-bpe
 - Articulo referenciado (etiqueta del repositorio): arXiv:2608.08847, "Explicit Boundary Markers for Subword Vocabularies", Sander Land y Clara Meister, https://arxiv.org/abs/2608.08847
 - Repositorio del tokenizador y de los experimentos: https://github.com/sanderland/script_tok
 - nanochat (codigo de arquitectura y entrenamiento, commit `92d63d4`): https://github.com/karpathy/nanochat

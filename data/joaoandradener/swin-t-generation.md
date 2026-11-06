@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swin T for Generation es un repositorio experimental publicado en HuggingFace por el usuario joaoandradener que contiene una implementación propia de una arquitectura Swin Transformer en su variante tiny, orientada a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), no un modelo con benchmarks.
+Swin T for Generation es un repositorio experimental publicado en Hugging Face por el usuario joaoandradener que contiene una implementación propia de una arquitectura Swin Transformer en su variante tiny, orientada a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), no un modelo con benchmarks.
 
 El repositorio incluye el código Python con la definición del modelo y un punto de entrada de inferencia o entrenamiento, un `config.json` con los parámetros de arquitectura, un `training_args.json` con la receta de experimento por defecto (optimizador Adam con schedule coseno) y el checkpoint de inicialización. El tamaño del repo es de 0.0 GB y el número de parámetros reportado en los safetensors es de 16.576, lo que sugiere un modelo de muy pequeño tamaño o un checkpoint parcial.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joaoandradener/swin-t-generation | 16.576 (safetensors) | no disponible | sin benchmarks | MIT | HuggingFace |
+| joaoandradener/swin-t-generation | 16.576 (safetensors) | no disponible | sin benchmarks | MIT | Hugging Face |
 | Swin Transformer oficial (tiny) | ~28M | no aplica (visión) | benchmarks en ImageNet | MIT | GitHub Microsoft |
-| Otros checkpoints Swin tiny de la comunidad | variable | no disponible | variable | variable | HuggingFace |
+| Otros checkpoints Swin tiny de la comunidad | variable | no disponible | variable | variable | Hugging Face |
 
 La comparación con el Swin Transformer oficial de Microsoft no es directa: aquel es un backbone de visión con pesos entrenados, mientras que este repositorio es una implementación experimental orientada a generación y sin entrenamiento completado.
 
@@ -79,6 +79,6 @@ La comparación con el Swin Transformer oficial de Microsoft no es directa: aque
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joaoandradener/swin-t-generation
+- Hugging Face: https://huggingface.co/joaoandradener/swin-t-generation
 - Swin Transformer oficial (Microsoft): https://github.com/microsoft/Swin-Transformer
 - Paper Swin Transformer: https://arxiv.org/abs/2103.14030

@@ -75,11 +75,11 @@ La comparativa se limita a los hermanos AXQ del mismo modelo base, ya que no se 
 
 ## Enlaces
 
-- [HuggingFace - AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-8bit](https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-8bit)
-- [HuggingFace - Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
+- [Hugging Face - AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-8bit](https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-8bit)
+- [Hugging Face - Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [GitHub - AXQuant (conversión, certificados y tooling)](https://github.com/defai-digital/axquant)
 - [Certificado Tier 1 del checkpoint](https://github.com/defai-digital/axquant/blob/main/docs/certifications/qwen38-27b-axq8-tier1.md)
-- [HuggingFace - Hermano 4bit](https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-4bit)
-- [HuggingFace - Hermano 6bit](https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-6bit)
+- [Hugging Face - Hermano 4bit](https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-4bit)
+- [Hugging Face - Hermano 6bit](https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-6bit)
 - [Artículo de Yottalabs sobre Qwen3.8-27B](https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026)
 - [Artículo de Swfte sobre Qwen3.8-27B](https://www.swfte.com/blog/qwen-3-8-27b-run-locally-self-host-guide-2026)

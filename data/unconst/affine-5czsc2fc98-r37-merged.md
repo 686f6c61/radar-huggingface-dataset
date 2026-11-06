@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r37-merged` es un checkpoint de salvamento ("merged salvage") creado por el usuario `unconst` a partir de un merge LoRA del modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según los tags de HuggingFace, pertenece a la familia arquitectónica `qwen3_5_moe`, lo que sugiere una arquitectura de mezcla de expertos (MoE) basada en la serie Qwen 3.5, aunque no hay confirmación oficial en la documentación. El modelo tiene 34.660.610.688 parámetros totales (aproximadamente 34,66 mil millones) y se distribuye en formato `safetensors` con un tamaño de repositorio de 70,2 GB.
+El modelo `unconst/Affine-5czsc2fc98-r37-merged` es un checkpoint de salvamento ("merged salvage") creado por el usuario `unconst` a partir de un merge LoRA del modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según los tags de Hugging Face, pertenece a la familia arquitectónica `qwen3_5_moe`, lo que sugiere una arquitectura de mezcla de expertos (MoE) basada en la serie Qwen 3.5, aunque no hay confirmación oficial en la documentación. El modelo tiene 34.660.610.688 parámetros totales (aproximadamente 34,66 mil millones) y se distribuye en formato `safetensors` con un tamaño de repositorio de 70,2 GB.
 
 La model card es extremadamente escueta: indica que es un "LoRA-merged" del modelo mencionado y que se trata de un "Private TTL insurance; not a submission until Stage-5 gate clears", es decir, un checkpoint interno de respaldo temporal que no está destinado a ser una versión pública estable. No se proporcionan detalles sobre entrenamiento, datos, licencia, idiomas ni capacidades específicas. Con 0 descargas y 0 likes, es un artefacto experimental que probablemente no debería utilizarse en producción sin una evaluación adicional.
 
@@ -29,7 +29,7 @@ Basándose únicamente en los tags y el pipeline declarado, se pueden inferir la
 
 - Generación de texto conversacional (tag `conversational`, pipeline `text-generation`).
 - Posible procesamiento de entrada multimodal imagen-texto (tag `image-text-to-text`), aunque no hay evidencia concreta de pesos multimodales.
-- Compatibilidad con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad con endpoints de Hugging Face (tag `endpoints_compatible`).
 - No se confirma soporte de tool calling, function calling, razonamiento multi-paso, ni modos especiales de pensamiento.
 
 Dado el carácter experimental del checkpoint, estas capacidades deben considerarse especulativas y no verificadas.
@@ -73,5 +73,5 @@ No se dispone de información suficiente para realizar una comparativa fiable. A
 
 ## Enlaces
 
-- [HuggingFace - unconst/Affine-5czsc2fc98-r37-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r37-merged)
+- [Hugging Face - unconst/Affine-5czsc2fc98-r37-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r37-merged)
 - [Modelo base: kevin954/Affine-5dfqbbh8ev-sft](https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft) (enlace inferido del campo `base_model`, no verificado)

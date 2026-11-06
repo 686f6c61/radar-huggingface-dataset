@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| echooai-coding-beast-v0.1 | ~1.5B (base) + LoRA | no disponible | no disponible | HuggingFace, 0 descargas | Adaptador SFT sin documentacion |
-| Qwen2.5-Coder-1.5B-Instruct | ~1.5B | 32.768 tokens (familia Qwen2.5) | Apache 2.0 (segun familia Qwen2.5) | HuggingFace, ampliamente usado | Base oficial, documentado y evaluado |
-| DeepSeek-Coder-1.3B-Instruct | ~1.3B | 16.384 tokens (segun version) | DeepSeek License | HuggingFace | Alternativa orientada a codigo |
-| StarCoder2-3B | ~3B | 16.384 tokens | BigCode OpenRAIL-M | HuggingFace | Mayor tamano, licencia con restricciones de uso |
+| echooai-coding-beast-v0.1 | ~1.5B (base) + LoRA | no disponible | no disponible | Hugging Face, 0 descargas | Adaptador SFT sin documentacion |
+| Qwen2.5-Coder-1.5B-Instruct | ~1.5B | 32.768 tokens (familia Qwen2.5) | Apache 2.0 (segun familia Qwen2.5) | Hugging Face, ampliamente usado | Base oficial, documentado y evaluado |
+| DeepSeek-Coder-1.3B-Instruct | ~1.3B | 16.384 tokens (segun version) | DeepSeek License | Hugging Face | Alternativa orientada a codigo |
+| StarCoder2-3B | ~3B | 16.384 tokens | BigCode OpenRAIL-M | Hugging Face | Mayor tamano, licencia con restricciones de uso |
 
 La comparativa se basa en caracteristicas conocidas de los modelos alternativos; no hay datos de rendimiento del adaptador para contrastar.
 
@@ -82,7 +82,7 @@ La comparativa se basa en caracteristicas conocidas de los modelos alternativos;
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nayan7r839/echooai-coding-beast-v0.1
+- Hugging Face: https://huggingface.co/Nayan7r839/echooai-coding-beast-v0.1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Paper de impacto ambiental citado en la plantilla: https://arxiv.org/abs/1910.09700
 - Calculadora ML Impact: https://mlco2.github.io/impact#compute

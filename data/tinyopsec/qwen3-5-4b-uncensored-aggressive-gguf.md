@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen3.5-4B-Uncensored-Aggressive-GGUF es una colección de cuantizaciones en formato GGUF del modelo rodrigomt/Qwen3.5-4B-Uncensored-Aggressive, publicada por el usuario tinyopsec en HuggingFace. Se trata de una adaptación de la arquitectura Qwen2 con 4.326.350.848 parámetros reales (la model card declara 4,5 B), 28 capas, 28 cabezas de atención, vocabulario de 151 936 tokens y una ventana de contexto de 32 768 tokens. El modelo base fue ajustado por rodrigomt con el objetivo explícito de eliminar los filtros de seguridad y maximizar la obediencia a las instrucciones del usuario, y esta publicación se limita a ofrecer versiones cuantizadas listas para inferencia local.
+Qwen3.5-4B-Uncensored-Aggressive-GGUF es una colección de cuantizaciones en formato GGUF del modelo rodrigomt/Qwen3.5-4B-Uncensored-Aggressive, publicada por el usuario tinyopsec en Hugging Face. Se trata de una adaptación de la arquitectura Qwen2 con 4.326.350.848 parámetros reales (la model card declara 4,5 B), 28 capas, 28 cabezas de atención, vocabulario de 151 936 tokens y una ventana de contexto de 32 768 tokens. El modelo base fue ajustado por rodrigomt con el objetivo explícito de eliminar los filtros de seguridad y maximizar la obediencia a las instrucciones del usuario, y esta publicación se limita a ofrecer versiones cuantizadas listas para inferencia local.
 
 El problema que resuelve es práctico: el modelo original es demasiado pesado para ejecutarse en hardware de consumo, y estas cuantizaciones cubren desde F16 (~8,4 GB) hasta Q2_K (~1,1 GB), lo que permite desplegarlo en portátiles, GPUs de gama media e incluso CPU con suficiente RAM. Su relevancia actual radica en el nicho de modelos "sin censura" orientados a investigación sobre patrones de rechazo (refusal behaviour), red teaming y generación de contenido sin restricciones, un segmento con demanda constante pero con implicaciones legales y éticas importantes.
 
-Es importante señalar que la información proporcionada no permite verificar la existencia de un modelo oficial "Qwen/Qwen3.5-4B" en el ecosistema Qwen, pese a que la model card lo cita como base arquitectónica. Todos los datos de esta ficha proceden de la model card del autor y de los metadatos de HuggingFace; no se han publicado benchmarks.
+Es importante señalar que la información proporcionada no permite verificar la existencia de un modelo oficial "Qwen/Qwen3.5-4B" en el ecosistema Qwen, pese a que la model card lo cita como base arquitectónica. Todos los datos de esta ficha proceden de la model card del autor y de los metadatos de Hugging Face; no se han publicado benchmarks.
 
 ## Especificaciones tecnicas
 

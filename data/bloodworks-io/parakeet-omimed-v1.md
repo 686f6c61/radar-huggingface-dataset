@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| parakeet-omimed-v1 (este) | ~600 M | ASR TDT + adaptadores, paquete WebGPU | CC-BY-4.0 | HuggingFace (espejo de demo) |
-| nvidia/parakeet-tdt-0.6b-v2 | ~600 M | ASR TDT (modelo base) | CC-BY-4.0 | HuggingFace (NVIDIA) |
-| omi-health/omi-med-stt-v1 | ~600 M | ASR TDT con adaptadores medicos | CC-BY-4.0 | HuggingFace (Omi Health) |
-| Whisper large-v3 (OpenAI) | ~1.550 M | ASR encoder-decoder multilingue | MIT (segun publicacion habitual) | HuggingFace / OpenAI |
+| parakeet-omimed-v1 (este) | ~600 M | ASR TDT + adaptadores, paquete WebGPU | CC-BY-4.0 | Hugging Face (espejo de demo) |
+| nvidia/parakeet-tdt-0.6b-v2 | ~600 M | ASR TDT (modelo base) | CC-BY-4.0 | Hugging Face (NVIDIA) |
+| omi-health/omi-med-stt-v1 | ~600 M | ASR TDT con adaptadores medicos | CC-BY-4.0 | Hugging Face (Omi Health) |
+| Whisper large-v3 (OpenAI) | ~1.550 M | ASR encoder-decoder multilingue | MIT (segun publicacion habitual) | Hugging Face / OpenAI |
 
 Los datos de rendimiento comparativo (WER, velocidad) no estan disponibles en la informacion proporcionada. La comparacion se limita a parametros, tipo, licencia y disponibilidad.
 
@@ -84,7 +84,7 @@ Los datos de rendimiento comparativo (WER, velocidad) no estan disponibles en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bloodworks-io/parakeet-omimed-v1
+- Repositorio Hugging Face: https://huggingface.co/bloodworks-io/parakeet-omimed-v1
 - Modelo original (Omi Health): https://huggingface.co/omi-health/omi-med-stt-v1
 - Modelo base (NVIDIA): https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
 - Fork del runtime: https://github.com/narcotic-sh/parakeet.wgsl

@@ -79,8 +79,8 @@ No se dispone de datos de benchmarks comparativos con otros modelos en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/pugant/Qwen3.8-Flash-Next-ROCMFP4_STRIX_LEAN-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/pugant/Qwen3.8-Flash-Next-ROCMFP4_STRIX_LEAN-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio oficial del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Fork ROCmFPX (tipos de tensor ROCmFP4/ROCmFPX): https://github.com/charlie12345/ROCmFPX
 - Lab build de pugant (runtime recomendado): https://github.com/pugant/strix-halo-llamacpp-lab

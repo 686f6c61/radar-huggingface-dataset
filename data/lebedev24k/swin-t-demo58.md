@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lebedev24k/swin-t-demo58` es un repositorio experimental publicado en HuggingFace por el usuario lebedev24k que contiene una implementación de la arquitectura Swin Transformer (variante Swin-T) orientada a tareas de generación. No se trata de un modelo entrenado ni evaluado: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un modelo con benchmarks publicados. El repositorio incluye el código de entrenamiento (`train.py`), la configuración de arquitectura (`config.json`) y los hiperparámetros por defecto (`training_args.json`).
+`lebedev24k/swin-t-demo58` es un repositorio experimental publicado en Hugging Face por el usuario lebedev24k que contiene una implementación de la arquitectura Swin Transformer (variante Swin-T) orientada a tareas de generación. No se trata de un modelo entrenado ni evaluado: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un modelo con benchmarks publicados. El repositorio incluye el código de entrenamiento (`train.py`), la configuración de arquitectura (`config.json`) y los hiperparámetros por defecto (`training_args.json`).
 
 La relevancia de esta ficha es acotada: se trata de un artefacto de investigación temprana, útil para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, pero no para despliegue en producción. El número de parámetros reportado en los metadatos de safetensors es de 24.832, un valor anómalo para una Swin-T (que en su configuración estándar ronda los 28 millones de parámetros), lo que sugiere que el checkpoint incluido corresponde a una inicialización parcial o a un tensor de prueba más que al modelo completo.
 
@@ -80,7 +80,7 @@ La comparación con los modelos oficiales de Microsoft es la más directa por ar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lebedev24k/swin-t-demo58
+- Hugging Face: https://huggingface.co/lebedev24k/swin-t-demo58
 - Paper original de Swin Transformer: https://arxiv.org/abs/2103.14030
 - Repositorio oficial de Swin Transformer (Microsoft): https://github.com/microsoft/Swin-Transformer
-- Swin-Tiny en HuggingFace: https://huggingface.co/microsoft/swin-tiny-patch4-window7-224
+- Swin-Tiny en Hugging Face: https://huggingface.co/microsoft/swin-tiny-patch4-window7-224

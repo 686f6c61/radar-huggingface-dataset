@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/J-Fraudster/Qwen3.5-0.8B-W4A16-AutoRound-LLM-Compressor
+- Repositorio Hugging Face: https://huggingface.co/J-Fraudster/Qwen3.5-0.8B-W4A16-AutoRound-LLM-Compressor
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Documentacion de LLM Compressor para Qwen3.5: https://docs.vllm.ai/projects/llm-compressor/en/latest/key-models/qwen3.5/
 - Repositorio similar de Vishva007: https://huggingface.co/Vishva007/Qwen3.5-0.8B-W4A16-AutoRound

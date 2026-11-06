@@ -30,7 +30,7 @@ El backend del proyecto JanSaathi utiliza este modelo como motor de clasificaci�
 - Clasificación de texto en diez intenciones legales: `Cheque_Bounce`, `Civic_Scheme_Info`, `Consumer_Dispute`, `Criminal_FIR`, `Cybercrime`, `Legal_Notice_Contract`, `RERA_RealEstate`, `RTI`, `Tenant_Landlord`, `Workplace_Labour`.
 - Soporte bilingüe en inglés e hindi.
 - Inferencia de baja latencia al tratarse de un modelo de 109 millones de parámetros.
-- Integración nativa con la librería Transformers de HuggingFace.
+- Integración nativa con la librería Transformers de Hugging Face.
 - Compatible con el pipeline `text-classification` y con `text-embeddings-inference` para despliegue en endpoints.
 - No es generativo: no produce texto libre, solo etiquetas de clase.
 - No soporta tool calling ni razonamiento multi-paso por sí mismo; su función es actuar como clasificador inicial en un sistema mayor.
@@ -73,5 +73,5 @@ No se dispone en la información proporcionada de modelos comparables con datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EverVissionAI/jansaathi-legal-intent
+- Modelo en Hugging Face: https://huggingface.co/EverVissionAI/jansaathi-legal-intent
 - Repositorio del proyecto JanSaathi en GitHub: https://github.com/HimanshuArora-pixel/Jansathi-AI

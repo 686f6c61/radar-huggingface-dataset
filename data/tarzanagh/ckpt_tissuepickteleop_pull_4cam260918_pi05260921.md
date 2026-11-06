@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ckpt_tissuepickteleop_pull_4cam260918_pi05260921` es un checkpoint de política robótica (pipeline `robotics`) publicado por el usuario de HuggingFace `tarzanagh`. El modelo controla un robot bimanual DexMate Vega-1 equipado con dos manos RobotEra XHand1 en una tarea de destreza fina: sostener una caja de pañuelos con la mano izquierda y extraer un pañuelo con la derecha. Los datos de entrenamiento proceden de teleoperación con meta-glove (sin exoesqueleto) y seguimiento de muñeca mediante Vive.
+`ckpt_tissuepickteleop_pull_4cam260918_pi05260921` es un checkpoint de política robótica (pipeline `robotics`) publicado por el usuario de Hugging Face `tarzanagh`. El modelo controla un robot bimanual DexMate Vega-1 equipado con dos manos RobotEra XHand1 en una tarea de destreza fina: sostener una caja de pañuelos con la mano izquierda y extraer un pañuelo con la derecha. Los datos de entrenamiento proceden de teleoperación con meta-glove (sin exoesqueleto) y seguimiento de muñeca mediante Vive.
 
 El checkpoint se identifica internamente como «pi-0.5» y pesa 3.616.769.814 parámetros (~3,6 B) en formato safetensors, con un repositorio de 14,5 GB. Se entrenó durante 10.000 pasos con semilla 1000 sobre 120 episodios (108 de entrenamiento y 12 reservados, cada décimo), con 4 cámaras RGB a 640x360 y 30 fps, y un espacio de estado/acción de 38 dimensiones `[L_arm 7 | L_hand 12 | R_arm 7 | R_hand 12]`.
 
@@ -76,11 +76,11 @@ El propio autor compara cuatro familias sobre la misma tarea y datos. Los datos 
 
 | Modelo | Parametros | Entrada tactil | Rendimiento relativo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi-0.5 (este checkpoint) | ~3,6 B | No | Error mayor que GR00T en todas las tareas | gemma | Pública en HuggingFace (0 descargas, 0 likes) |
-| pi-0.5 tactil | no disponible | Sí | Sin mejora significativa respecto a la version sin tactil | no disponible | Pública en HuggingFace |
-| GR00T 3B | ~3 B | Version con y sin tactil | Menor error en todas las tareas evaluadas | no disponible | Pública en HuggingFace |
-| ACT | no disponible | Version con y sin tactil | No se detalla por tarea | no disponible | Pública en HuggingFace |
-| Diffusion Policy (dp) | no disponible | Version con y sin tactil | No se detalla por tarea | no disponible | Pública en HuggingFace |
+| pi-0.5 (este checkpoint) | ~3,6 B | No | Error mayor que GR00T en todas las tareas | gemma | Pública en Hugging Face (0 descargas, 0 likes) |
+| pi-0.5 tactil | no disponible | Sí | Sin mejora significativa respecto a la version sin tactil | no disponible | Pública en Hugging Face |
+| GR00T 3B | ~3 B | Version con y sin tactil | Menor error en todas las tareas evaluadas | no disponible | Pública en Hugging Face |
+| ACT | no disponible | Version con y sin tactil | No se detalla por tarea | no disponible | Pública en Hugging Face |
+| Diffusion Policy (dp) | no disponible | Version con y sin tactil | No se detalla por tarea | no disponible | Pública en Hugging Face |
 
 No se dispone de comparaciones con modelos de propósito general ni con otras políticas fuera de este barrido.
 
@@ -98,7 +98,7 @@ No se dispone de comparaciones con modelos de propósito general ni con otras po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_pi05260921
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_pi05260921
 - Variante ACT: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_act260921
 - Variante ACT con táctil: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_acttactile260921
 - Variante Diffusion Policy: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_dp260921

@@ -74,11 +74,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed10` | 86.508.288 | no disponible | no disponible | HuggingFace, safetensors | Ajuste SFT de investigacion sobre Goldfish 100 MB; sin benchmarks publicados |
-| `goldfish-models/eng_latn_100mb` (modelo base) | no disponible | no disponible | no disponible | HuggingFace | Preentrenamiento monolingue en ingles con 100 MB de datos; punto de partida de este ajuste |
+| `fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed10` | 86.508.288 | no disponible | no disponible | Hugging Face, safetensors | Ajuste SFT de investigacion sobre Goldfish 100 MB; sin benchmarks publicados |
+| `goldfish-models/eng_latn_100mb` (modelo base) | no disponible | no disponible | no disponible | Hugging Face | Preentrenamiento monolingue en ingles con 100 MB de datos; punto de partida de este ajuste |
 | GPT-2 small | 124 M | 1024 tokens | MIT (terminos de OpenAI) | Amplia, multiples formatos (safetensors, GGUF, ONNX) | Referencia historica de la misma familia arquitectonica; ecosistema y herramientas mucho mas maduros |
-| Pythia-70M | 70 M | 2048 tokens | Apache 2.0 | HuggingFace, safetensors | Modelo de investigacion con checkpoints intermedios y suite de evaluacion publicada |
-| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | HuggingFace, GGUF, ONNX | Modelo pequeno moderno con datos de entrenamiento mucho mayores y benchmarks publicados |
+| Pythia-70M | 70 M | 2048 tokens | Apache 2.0 | Hugging Face, safetensors | Modelo de investigacion con checkpoints intermedios y suite de evaluacion publicada |
+| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | Hugging Face, GGUF, ONNX | Modelo pequeno moderno con datos de entrenamiento mucho mayores y benchmarks publicados |
 
 Las cifras de parametros, contexto y licencia de los modelos comparativos corresponden a informacion publica general; los datos del modelo base Goldfish no se detallan en la informacion proporcionada y se marcan como no disponibles.
 
@@ -97,9 +97,9 @@ Las cifras de parametros, contexto y licencia de los modelos comparativos corres
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
-- Organizacion Goldfish en HuggingFace: https://huggingface.co/goldfish-models
+- Organizacion Goldfish en Hugging Face: https://huggingface.co/goldfish-models
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/c5smmyd6
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de text-generation-inference: https://github.com/huggingface/text-generation-inference

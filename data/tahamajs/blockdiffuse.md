@@ -66,8 +66,8 @@ No se han encontrado en la información proporcionada benchmarks comparativos co
 
 | Modelo | Arquitectura | Generación | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BlockDiffuse | DiT + Qwen2.5-0.5B-Instruct congelado | Bloques de 100 tokens en paralelo (no autoregresivo) | No disponible | Apache-2.0 | HuggingFace, GitHub |
-| Qwen2.5-0.5B-Instruct | Decoder-only autoregresivo | Token a token | No disponible | Apache-2.0 | HuggingFace |
+| BlockDiffuse | DiT + Qwen2.5-0.5B-Instruct congelado | Bloques de 100 tokens en paralelo (no autoregresivo) | No disponible | Apache-2.0 | Hugging Face, GitHub |
+| Qwen2.5-0.5B-Instruct | Decoder-only autoregresivo | Token a token | No disponible | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -81,6 +81,6 @@ No se han encontrado en la información proporcionada benchmarks comparativos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tahamajs/BlockDiffuse
+- Hugging Face: https://huggingface.co/tahamajs/BlockDiffuse
 - Repositorio oficial en GitHub: https://github.com/Hooshaai/BlockDiffuse
-- Perfil de HuggingFace del autor: https://huggingface.co/tahamajs
+- Perfil de Hugging Face del autor: https://huggingface.co/tahamajs

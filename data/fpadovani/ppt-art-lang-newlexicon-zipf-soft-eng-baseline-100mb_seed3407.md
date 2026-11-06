@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento para comparar directamente. La comparativa
 
 ## Enlaces
 
-- [HuggingFace - fpadovani/ppt-art-lang-newlexicon-zipf-soft-eng-baseline-100mb_seed3407](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-soft-eng-baseline-100mb_seed3407)
+- [Hugging Face - fpadovani/ppt-art-lang-newlexicon-zipf-soft-eng-baseline-100mb_seed3407](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-soft-eng-baseline-100mb_seed3407)
 - [Modelo base: goldfish-models/eng_latn_100mb](https://huggingface.co/goldfish-models/eng_latn_100mb)
 - [Entrada en llm-explorer.com](https://llm-explorer.com/model/fpadovani%2Fppt-art-lang-newlexicon-eng-baseline-100mb_seed455,6mkpVFlOXDWzjKl0Gjn5g5) (variante con seed 455)
 - [FriendliAI - despliegue del modelo](https://friendli.ai/models/fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed3407) (variante sin "soft")

@@ -13,7 +13,7 @@ La licencia no es abierta en sentido OSI: es la MiniMax-Music3 Community License
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | Pipeline multimodal de generación musical: LM autorregresivo (Qwen3 causal, 8B) + decoder RVQ intra-frame (0,6B) + DiT de flow matching (2,4B, 36 bloques de self-attention) + codificador de condición + VAE/vocoder (123M) |
-| Parámetros totales | No consolidado en la información. El metadato de safetensors de HuggingFace indica 25.167.881; la model card desglosa LM 8B + decoder RVQ 0,6B + DiT 2,4B + VAE 123M (aproximadamente 11.100 millones sumando componentes) |
+| Parámetros totales | No consolidado en la información. El metadato de safetensors de Hugging Face indica 25.167.881; la model card desglosa LM 8B + decoder RVQ 0,6B + DiT 2,4B + VAE 123M (aproximadamente 11.100 millones sumando componentes) |
 | Parámetros activos | No aplica (no es una arquitectura MoE) |
 | Longitud de contexto | No disponible. La generación se describe para canciones de hasta cinco minutos |
 | Tipos de cuantización | LM: BF16, Q8_0, Q6_K, Q5_K_M (sin Q4). Decoder RVQ: BF16, Q8_0. DiT: F32, Q8_0, Q6_K, Q5_K_M, Q4_K_M. Codificador de condición y vocoder: solo F32 (no se cuantizan) |

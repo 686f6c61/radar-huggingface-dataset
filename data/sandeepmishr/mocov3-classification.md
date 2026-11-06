@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sandeepmishr/mocov3-classification` es un repositorio experimental publicado en HuggingFace que implementa una variante de MoCo v3 orientada a tareas de clasificacion. Lo firma el usuario sandeepmishr y sigue la licencia MIT. No se trata de un modelo entrenado ni evaluado, sino de un andamiaje de codigo (esqueleto) con una configuracion de arquitectura "nano" y un checkpoint de inicializacion valido unicamente para pruebas de humo.
+`sandeepmishr/mocov3-classification` es un repositorio experimental publicado en Hugging Face que implementa una variante de MoCo v3 orientada a tareas de clasificacion. Lo firma el usuario sandeepmishr y sigue la licencia MIT. No se trata de un modelo entrenado ni evaluado, sino de un andamiaje de codigo (esqueleto) con una configuracion de arquitectura "nano" y un checkpoint de inicializacion valido unicamente para pruebas de humo.
 
 El repositorio incluye un script principal (`finetune.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto (optimizador LAMB con scheduler coseno) y un `model.safetensors` que el propio autor describe explicitamente como inicializacion, no como resultado de un entrenamiento. La model card aclara que no se reclama ninguna puntuacion de benchmark.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Naturaleza |
 |---|---|---|---|---|---|
-| sandeepmishr/mocov3-classification | 24.832 | no disponible | MIT | HuggingFace (experimental, no entrenado) | Codebase experimental de clasificacion |
+| sandeepmishr/mocov3-classification | 24.832 | no disponible | MIT | Hugging Face (experimental, no entrenado) | Codebase experimental de clasificacion |
 | MoCo v3 oficial (facebookresearch/moco-v3) | Desde ~21 M (ViT-S) hasta ~300 M (ViT-L) | no disponible | CC BY-NC 4.0 (segun repositorio original) | GitHub + pesos publicados | Aprendizaje autosupervisado para vision |
-| DINOv2 | Desde ~21 M (ViT-S) en adelante | no disponible | Apache 2.0 en varios tamanos | HuggingFace / GitHub | Representaciones visuales autosupervisadas |
+| DINOv2 | Desde ~21 M (ViT-S) en adelante | no disponible | Apache 2.0 en varios tamanos | Hugging Face / GitHub | Representaciones visuales autosupervisadas |
 | SimCLR | ResNet-50 (~25 M) y mayores | no disponible | Apache 2.0 (implementacion original) | GitHub | Aprendizaje contrastivo autosupervisado |
 
 Nota: la comparacion es orientativa; el modelo objeto de esta ficha es un esqueleto experimental de 24.832 parametros no entrenado, por lo que no es equiparable en rendimiento a los marcos de referencia citados, mucho mayores y entrenados sobre grandes volumenes de datos.
@@ -85,7 +85,7 @@ Nota: la comparacion es orientativa; el modelo objeto de esta ficha es un esquel
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sandeepmishr/mocov3-classification
+- Hugging Face: https://huggingface.co/sandeepmishr/mocov3-classification
 - MoCo v3 (repositorio original): https://github.com/facebookresearch/moco-v3
 - Paper MoCo v3 (An Empirical Study of Training Self-Supervised Vision Transformers): https://arxiv.org/abs/2104.02057
 - Paper MoCo original (Momentum Contrast for Unsupervised Visual Representation Learning): https://arxiv.org/abs/1911.05722

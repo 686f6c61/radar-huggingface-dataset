@@ -80,9 +80,9 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 | Modelo | Parámetros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | 0,8 B (base) + LoRA | no disponible | 71,9 % test / 90 % éxito | Apache 2.0 | HuggingFace |
+| LINK-01 (este modelo) | 0,8 B (base) + LoRA | no disponible | 71,9 % test / 90 % éxito | Apache 2.0 | Hugging Face |
 | Profesor PPO (`brain.json`) | no aplica (política RL) | no aplica | 100 % test / 95 % éxito | no disponible | Proyecto CONNECT TYCOON |
-| Qwen/Qwen3.5-0.8B sin adaptador | 0,8 B | no disponible | 42,3 % test / 0 % éxito | no disponible | HuggingFace |
+| Qwen/Qwen3.5-0.8B sin adaptador | 0,8 B | no disponible | 42,3 % test / 0 % éxito | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SHSemi/connectailab-rl-connectailab-rl-seung-hyun-kim-v1-link01-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/SHSemi/connectailab-rl-connectailab-rl-seung-hyun-kim-v1-link01-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

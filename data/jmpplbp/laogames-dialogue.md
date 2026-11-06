@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Almacenamiento: 44,8 GB para el repositorio completo, segun el tamano declarado por HuggingFace. El espacio real de trabajo puede ser mayor al descomprimir o al duplicar ficheros.
+- Almacenamiento: 44,8 GB para el repositorio completo, segun el tamano declarado por Hugging Face. El espacio real de trabajo puede ser mayor al descomprimir o al duplicar ficheros.
 - VRAM para inferencia: no disponible. Depende por completo de los componentes; consultar las model cards de LTX-2, LTX-2.3 y Irodori-TTS-v4-Small.
 - GPU recomendadas: no disponible por el mismo motivo.
 - Compatibilidad con GPU de consumo: no disponible. No puede afirmarse que quepa en una RTX 4090 u otra GPU de gama consumer sin los requisitos de los componentes.
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento ni de especificaciones propias que permita
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jmpplbp/laogames-dialogue
+- Repositorio en Hugging Face: https://huggingface.co/jmpplbp/laogames-dialogue
 - Aratako/Irodori-TTS-v4-Small: https://huggingface.co/Aratako/Irodori-TTS-v4-Small/tree/4c92c7ee2bb15c19a97cf4e86d24fd6bf33b0135
 - TenStrip/LTX2.3-10Eros: https://huggingface.co/TenStrip/LTX2.3-10Eros/tree/84a05a13610d78dbe4340d1be23fd8185e10f697
 - Comfy-Org/ltx-2.3: https://huggingface.co/Comfy-Org/ltx-2.3/tree/f246c0865f5214499a12b72d47464ac8f4f54bee

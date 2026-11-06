@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`machien1` es un modelo publicado en HuggingFace por el usuario Adham632013421981 bajo licencia MIT. La información disponible es extremadamente limitada: la model card únicamente declara la licencia, sin especificar arquitectura, tamaño, datos de entrenamiento ni capacidades. No se indica el pipeline asociado, los idiomas soportados ni el formato de los pesos.
+`machien1` es un modelo publicado en Hugging Face por el usuario Adham632013421981 bajo licencia MIT. La información disponible es extremadamente limitada: la model card únicamente declara la licencia, sin especificar arquitectura, tamaño, datos de entrenamiento ni capacidades. No se indica el pipeline asociado, los idiomas soportados ni el formato de los pesos.
 
 A pesar de la ausencia de documentación técnica, el modelo es relevante únicamente como objeto de evaluación preliminar: cualquier uso en producción requeriría una inspección directa de los archivos del repositorio para determinar su naturaleza real (pesos, configuración, tokenizador). No se han publicado resultados de benchmarks ni comparativas.
 
@@ -40,7 +40,7 @@ Tampoco se documentan innovaciones técnicas como decodificación especulativa, 
 
 - Evaluación exploratoria en entorno controlado: inspeccionar los archivos del repositorio y ejecutar pruebas mínimas de inferencia para determinar la naturaleza real del modelo antes de considerar cualquier uso.
 - Prototipado interno no crítico: únicamente si tras la inspección se confirma que el modelo carga y genera texto coherente, podría emplearse en experimentos internos sin garantías.
-- Investigación sobre modelos escasamente documentados: el repositorio puede servir como caso de estudio sobre prácticas de publicación en HuggingFace y sobre la importancia de documentar artefactos.
+- Investigación sobre modelos escasamente documentados: el repositorio puede servir como caso de estudio sobre prácticas de publicación en Hugging Face y sobre la importancia de documentar artefactos.
 - No se recomienda su uso en atención al cliente, generación de código en producción, pipelines de CI/CD, análisis documental ni ninguna aplicación con requisitos de fiabilidad, dado que no hay información verificable sobre su comportamiento.
 - Cualquier caso de uso adicional requeriría primero una caracterización empírica del modelo (tokenizador, ventana de contexto efectiva, calidad de generación) que no está disponible.
 
@@ -72,5 +72,5 @@ No disponible. No se puede establecer una comparativa con alternativas de la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Adham632013421981/machien1
+- Hugging Face: https://huggingface.co/Adham632013421981/machien1
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

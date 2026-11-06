@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `qwen35-9b-equational-theory-sair-syncards-b-cards123-ntp-kl-0p01`, publicado por el usuario U-WIN en HuggingFace, es un ajuste fino completo (full fine-tune) del modelo base Qwen/Qwen3.5-9B. Se trata de un modelo multimodal de tipo image-text-to-text orientado a la resolucion de problemas de teoria de ecuaciones (equational theory) mediante tarjetas de verificacion sinteticas (synthetic verification cards) y prediccion del siguiente token con regularizacion KL. El identificador del repositorio sugiere un experimento de investigacion dentro de un proyecto denominado SAIR.
+El modelo `qwen35-9b-equational-theory-sair-syncards-b-cards123-ntp-kl-0p01`, publicado por el usuario U-WIN en Hugging Face, es un ajuste fino completo (full fine-tune) del modelo base Qwen/Qwen3.5-9B. Se trata de un modelo multimodal de tipo image-text-to-text orientado a la resolucion de problemas de teoria de ecuaciones (equational theory) mediante tarjetas de verificacion sinteticas (synthetic verification cards) y prediccion del siguiente token con regularizacion KL. El identificador del repositorio sugiere un experimento de investigacion dentro de un proyecto denominado SAIR.
 
-El modelo conserva la arquitectura del Qwen3.5-9B original, con aproximadamente 9.653 millones de parametros totales segun los pesos en safetensors, y se distribuye bajo licencia Apache 2.0. Su relevancia es limitada por ahora: cuenta con 4 descargas y ningun "like", y el acceso esta restringido (gated), lo que obliga a aceptar condiciones en HuggingFace antes de descargarlo. Es, por tanto, un artefacto de investigacion mas que un modelo listo para produccion.
+El modelo conserva la arquitectura del Qwen3.5-9B original, con aproximadamente 9.653 millones de parametros totales segun los pesos en safetensors, y se distribuye bajo licencia Apache 2.0. Su relevancia es limitada por ahora: cuenta con 4 descargas y ningun "like", y el acceso esta restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de descargarlo. Es, por tanto, un artefacto de investigacion mas que un modelo listo para produccion.
 
-La ficha se basa exclusivamente en los metadatos disponibles en HuggingFace. No se ha publicado informacion sobre el dataset de entrenamiento, la composicion de las tarjetas de verificacion, los resultados de benchmarks ni los idiomas soportados, por lo que varios apartados se marcan como no disponibles.
+La ficha se basa exclusivamente en los metadatos disponibles en Hugging Face. No se ha publicado informacion sobre el dataset de entrenamiento, la composicion de las tarjetas de verificacion, los resultados de benchmarks ni los idiomas soportados, por lo que varios apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que limita su uso inmediato.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que limita su uso inmediato.
 - Madurez: con 4 descargas y 0 likes, no hay evidencia de validacion por parte de la comunidad.
 - Falta de documentacion: no se publican idiomas, contexto, dataset ni benchmarks, lo que impide evaluar su calidad de forma objetiva.
 - Riesgo de alucinacion: al ser un modelo de lenguaje ajustado en un dominio formal, puede generar demostraciones o verificaciones incorrectas con apariencia de validez.
@@ -82,6 +82,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-syncards-b-cards123-ntp-kl-0p01
+- Hugging Face: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-syncards-b-cards123-ntp-kl-0p01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

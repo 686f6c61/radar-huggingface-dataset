@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `hcmusa29/u8Lv67h7k3DarBeo` es un artefacto alojado en HuggingFace por el usuario `hcmusa29`, con un identificador de nombre aleatorio y sin documentación asociada. En el momento de redactar esta ficha no se ha publicado ninguna model card, paper, blog técnico ni anuncio que describa qué contiene el repositorio: la información disponible se reduce a los metadatos básicos de la plataforma. El repositorio no declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura.
+El repositorio `hcmusa29/u8Lv67h7k3DarBeo` es un artefacto alojado en Hugging Face por el usuario `hcmusa29`, con un identificador de nombre aleatorio y sin documentación asociada. En el momento de redactar esta ficha no se ha publicado ninguna model card, paper, blog técnico ni anuncio que describa qué contiene el repositorio: la información disponible se reduce a los metadatos básicos de la plataforma. El repositorio no declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura.
 
 El único dato técnico relevante es el tamaño del repositorio, 322,8 GB, junto con las fechas de creación (8 de septiembre de 2026) y última actualización (12 de septiembre de 2026). El repositorio acumula 0 descargas y 1 like, lo que indica que se trata de un artefacto prácticamente sin difusión ni validación por parte de la comunidad. Un volumen de pesos de ese orden es compatible con modelos de gran tamaño (del orden de cientos de miles de millones de parámetros en precisión de 16 bits, o de decenas de miles de millones en precisión de 32 bits), pero se trata únicamente de una estimación aritmética a partir del tamaño del repositorio, no de un dato confirmado sobre el modelo.
 
@@ -110,7 +110,7 @@ Sin información sobre el número de parámetros o la familia arquitectónica, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hcmusa29/u8Lv67h7k3DarBeo
+- Repositorio en Hugging Face: https://huggingface.co/hcmusa29/u8Lv67h7k3DarBeo
 - Paper: no disponible
 - Blog o informe técnico: no disponible
 - Repositorio de código: no disponible

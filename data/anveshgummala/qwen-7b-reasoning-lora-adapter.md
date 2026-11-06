@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `AnveshGummala/qwen-7b-reasoning-lora-adapter` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario AnveshGummala, construido sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. No se trata de un modelo completo con pesos propios, sino de un conjunto de matrices de bajo rango que deben cargarse sobre el modelo base mediante la libreria PEFT. El repositorio ocupa 1,3 GB en formato safetensors y esta etiquetado como `text-generation` con pipeline conversacional.
+El modelo `AnveshGummala/qwen-7b-reasoning-lora-adapter` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario AnveshGummala, construido sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. No se trata de un modelo completo con pesos propios, sino de un conjunto de matrices de bajo rango que deben cargarse sobre el modelo base mediante la libreria PEFT. El repositorio ocupa 1,3 GB en formato safetensors y esta etiquetado como `text-generation` con pipeline conversacional.
 
-La relevancia de esta ficha es limitada y conviene ser explicito: la model card del autor es la plantilla por defecto de HuggingFace sin rellenar. Todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen como `[More Information Needed]`. El nombre del repositorio sugiere un ajuste orientado a razonamiento, pero no hay ninguna evidencia publicada en el repositorio que lo confirme: ni dataset, ni configuracion de entrenamiento, ni resultados.
+La relevancia de esta ficha es limitada y conviene ser explicito: la model card del autor es la plantilla por defecto de Hugging Face sin rellenar. Todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen como `[More Information Needed]`. El nombre del repositorio sugiere un ajuste orientado a razonamiento, pero no hay ninguna evidencia publicada en el repositorio que lo confirme: ni dataset, ni configuracion de entrenamiento, ni resultados.
 
 Por tanto, esta ficha documenta principalmente lo que se puede verificar del repositorio y las caracteristicas del modelo base sobre el que se aplica. Cualquier uso en produccion exige una validacion propia previa, ya que no existe informacion publicada sobre que comportamiento anade el adaptador ni como se comporta frente a alternativas.
 
@@ -79,10 +79,10 @@ Estimaciones para ejecutar el modelo base con el adaptador aplicado (los pesos b
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen-7b-reasoning-lora-adapter (este) | Adaptador LoRA sobre 7,6 B | No disponible | No disponible | HuggingFace, 0 descargas | Sin documentacion ni benchmarks |
-| Qwen/Qwen2.5-7B-Instruct | 7,6 B densos | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente desplegado | Rendimiento publico documentado en su model card |
-| meta-llama/Llama-3.1-8B-Instruct | 8 B densos | 128.000 tokens | Licencia comunitaria Llama 3.1 | HuggingFace, acceso con aceptacion | Alternativa frecuente en la misma franja |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,2 B densos | 32.768 tokens | Apache 2.0 | HuggingFace | Base habitual para adaptadores LoRA |
+| qwen-7b-reasoning-lora-adapter (este) | Adaptador LoRA sobre 7,6 B | No disponible | No disponible | Hugging Face, 0 descargas | Sin documentacion ni benchmarks |
+| Qwen/Qwen2.5-7B-Instruct | 7,6 B densos | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente desplegado | Rendimiento publico documentado en su model card |
+| meta-llama/Llama-3.1-8B-Instruct | 8 B densos | 128.000 tokens | Licencia comunitaria Llama 3.1 | Hugging Face, acceso con aceptacion | Alternativa frecuente en la misma franja |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,2 B densos | 32.768 tokens | Apache 2.0 | Hugging Face | Base habitual para adaptadores LoRA |
 
 La comparacion con los dos primeros es la mas directa, ya que comparten el mismo modelo base o un tamano equivalente. No existen datos de rendimiento del adaptador que permitan afirmar que supera a ninguna de estas alternativas.
 
@@ -102,7 +102,7 @@ La comparacion con los dos primeros es la mas directa, ya que comparten el mismo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AnveshGummala/qwen-7b-reasoning-lora-adapter
+- Repositorio Hugging Face: https://huggingface.co/AnveshGummala/qwen-7b-reasoning-lora-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Referencia citada en los tags del repositorio (calculador de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT: https://huggingface.co/docs/peft/index

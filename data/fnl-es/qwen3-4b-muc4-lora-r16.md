@@ -25,7 +25,7 @@ Es relevante ahora porque permite comprobar hasta que punto un modelo de 4B de l
 | Dataset de entrenamiento | `fnl-es/muc4-chat` (1298 documentos, 3 epocas) |
 | Tarea | Extraccion de eventos a nivel de documento (MUC-4), salida en array JSON |
 | Libreria | peft |
-| Fecha de publicacion | 26 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 26 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fnl-es/qwen3-4b-muc4-lora-r16` | Adaptador LoRA sobre base de 4B (r=16, alpha=16) | No disponible (la marca el modelo base) | Extraccion de eventos MUC-4 a nivel de documento | No disponible | Publicado en HuggingFace, 0 descargas |
-| `Qwen/Qwen3-4B-Instruct-2507` sin adaptador | 4B (denso) | No disponible en la informacion proporcionada | Modelo de proposito general | No disponible en la informacion proporcionada | Publicado en HuggingFace |
-| `melon1891/agentbench-qwen3-4b-lora-r16` | Adaptador LoRA sobre el mismo base, r=16 | No disponible | Trayectorias multi-turno de agentes (observacion, seleccion de accion, uso de herramientas) | No disponible | Publicado en HuggingFace |
+| `fnl-es/qwen3-4b-muc4-lora-r16` | Adaptador LoRA sobre base de 4B (r=16, alpha=16) | No disponible (la marca el modelo base) | Extraccion de eventos MUC-4 a nivel de documento | No disponible | Publicado en Hugging Face, 0 descargas |
+| `Qwen/Qwen3-4B-Instruct-2507` sin adaptador | 4B (denso) | No disponible en la informacion proporcionada | Modelo de proposito general | No disponible en la informacion proporcionada | Publicado en Hugging Face |
+| `melon1891/agentbench-qwen3-4b-lora-r16` | Adaptador LoRA sobre el mismo base, r=16 | No disponible | Trayectorias multi-turno de agentes (observacion, seleccion de accion, uso de herramientas) | No disponible | Publicado en Hugging Face |
 
 La comparacion con el modelo base sin ajustar es la referencia natural para medir el efecto del adaptador en la tarea, pero no hay cifras publicadas que permitan cuantificarlo. El adaptador de `melon1891` comparte base, rango y metodologia, y sirve como ejemplo del mismo patron de trabajo aplicado a otra tarea.
 
@@ -92,7 +92,7 @@ La comparacion con el modelo base sin ajustar es la referencia natural para medi
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/fnl-es/qwen3-4b-muc4-lora-r16
+- Adaptador en Hugging Face: https://huggingface.co/fnl-es/qwen3-4b-muc4-lora-r16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/fnl-es/muc4-chat

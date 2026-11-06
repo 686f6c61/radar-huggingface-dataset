@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`numbat-dup` es un checkpoint de pesos publicado en HuggingFace por el usuario `minh10` que se presenta como una copia intermedia de un supuesto entrenamiento a gran escala de Anthropic, con el nombre en clave `numbat`. Según la model card, se trataría de un modelo híbrido Gated DeltaNet (GDN) y Multi-head Latent Attention (MLA) con capas de mezcla de expertos (MoE) de 1.224 expertos y decodificación multi-token (MTP), cuantizado en NVFP4. El checkpoint declarado estaría en el paso 1.830.000 de una ejecución de aproximadamente 1,96 millones de pasos, es decir, sin post-entrenamiento ni RLHF.
+`numbat-dup` es un checkpoint de pesos publicado en Hugging Face por el usuario `minh10` que se presenta como una copia intermedia de un supuesto entrenamiento a gran escala de Anthropic, con el nombre en clave `numbat`. Según la model card, se trataría de un modelo híbrido Gated DeltaNet (GDN) y Multi-head Latent Attention (MLA) con capas de mezcla de expertos (MoE) de 1.224 expertos y decodificación multi-token (MTP), cuantizado en NVFP4. El checkpoint declarado estaría en el paso 1.830.000 de una ejecución de aproximadamente 1,96 millones de pasos, es decir, sin post-entrenamiento ni RLHF.
 
 El dato verificable del repositorio es el tamaño: 772 shards en safetensors que suman 7.720.300.817.720 bytes (unos 7,72 TB), con 6.849.377.242.584 parámetros contabilizados en los tensores. La model card afirma "~14T param", una cifra que no cuadra con el recuento de parámetros del propio repositorio y que conviene tratar con cautela. El repositorio incluye `configuration_numbat.py` y `modeling_numbat.py` como implementación de referencia, además de un tokenizador BPE de 131.072 tokens.
 
@@ -44,7 +44,7 @@ El checkpoint declarado corresponde al paso 1.830.000 de un entrenamiento de uno
 - Investigación sobre cuantización NVFP4 a gran escala: los 772 shards permiten analizar el formato de bloques E4M3/E2M1 y verificar el round-trip de los cuádruples NVFP4, un caso de estudio poco frecuente por el volumen de pesos implicado.
 - Reproducción de cargas de modelos multi-terabyte: sirve para validar pipelines de carga distribuida, indexado de shards y comprobaciones de integridad (`model.safetensors.index.json`) en entornos con almacenamiento y memoria suficientes.
 - Evaluación de decodificación especulativa con MTP: la capa `draft` permite experimentar con decodificación especulativa sobre un modelo de gran tamaño, midiendo la tasa de aceptación y el impacto en latencia.
-- Auditoría de artefactos publicados en HuggingFace: el caso es útil para estudiar cómo se verifica la procedencia de un checkpoint, qué metadatos son comprobables (tamaños, índice, recuento de tensores) y cuáles dependen solo de la declaración del autor.
+- Auditoría de artefactos publicados en Hugging Face: el caso es útil para estudiar cómo se verifica la procedencia de un checkpoint, qué metadatos son comprobables (tamaños, índice, recuento de tensores) y cuáles dependen solo de la declaración del autor.
 - Docencia y divulgación sobre límites prácticos: ejemplifica con cifras concretas (7,72 TB, 772 shards, ~85 Trainium2 solo para alojar los pesos según la card) por qué ciertos modelos no son desplegables en infraestructura convencional.
 
 ## Benchmarks y rendimiento
@@ -77,5 +77,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/minh10/numbat-dup
+- Repositorio en Hugging Face: https://huggingface.co/minh10/numbat-dup
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

@@ -93,7 +93,7 @@ La comparación con la familia T5 es la más natural por arquitectura y tamaño.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KeelCore/KeelCore-750M
+- Modelo en Hugging Face: https://huggingface.co/KeelCore/KeelCore-750M
 - Informe técnico: https://saravanan-a-r.github.io/KeelCore/
 - Repositorio GitHub: https://github.com/saravanan-a-r/KeelCore
 - Licencia: https://huggingface.co/KeelCore/KeelCore-750M/blob/main/LICENSE

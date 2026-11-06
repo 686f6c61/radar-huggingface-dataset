@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch10` | 6,74B | no disponible | llama2 | HuggingFace, 0 descargas | Checkpoint de investigación, época 10/20 |
-| `locuslab/tofu_ft_llama2-7b` | ~6,74B | 4096 (Llama 2) | llama2 | HuggingFace | Modelo base fine-tuneado sobre TOFU, sin *unlearning* |
-| `NousResearch/Llama-2-7b-chat-hf` | ~6,74B | 4096 | llama2 | HuggingFace | Llama 2 chat original, sin fine-tune TOFU |
-| `meta-llama/Llama-2-7b-chat-hf` | ~6,74B | 4096 | llama2 | HuggingFace | Modelo oficial de Meta |
+| `unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch10` | 6,74B | no disponible | llama2 | Hugging Face, 0 descargas | Checkpoint de investigación, época 10/20 |
+| `locuslab/tofu_ft_llama2-7b` | ~6,74B | 4096 (Llama 2) | llama2 | Hugging Face | Modelo base fine-tuneado sobre TOFU, sin *unlearning* |
+| `NousResearch/Llama-2-7b-chat-hf` | ~6,74B | 4096 | llama2 | Hugging Face | Llama 2 chat original, sin fine-tune TOFU |
+| `meta-llama/Llama-2-7b-chat-hf` | ~6,74B | 4096 | llama2 | Hugging Face | Modelo oficial de Meta |
 
 La comparación relevante es frente a `locuslab/tofu_ft_llama2-7b` (modelo pre-*unlearning*) y frente al Llama 2 chat original, ya que las tres variantes comparten arquitectura y tamaño. No se dispone de datos de rendimiento comparativo publicados en la información proporcionada.
 
@@ -85,7 +85,7 @@ La comparación relevante es frente a `locuslab/tofu_ft_llama2-7b` (modelo pre-*
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch10
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch10
 - Modelo base del checkpoint: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de origen de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf

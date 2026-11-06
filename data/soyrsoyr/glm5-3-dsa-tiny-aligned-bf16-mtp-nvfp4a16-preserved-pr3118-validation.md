@@ -12,7 +12,7 @@ No existe información pública sobre idiomas soportados, longitud de contexto r
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Etiquetada como `glm_moe_dsa` en HuggingFace (transformer con mezcla de expertos y atencion dispersa, segun la nomenclatura); detalles exactos de capas, numero de expertos y dimensiones no disponibles en la informacion proporcionada |
+| Arquitectura | Etiquetada como `glm_moe_dsa` en Hugging Face (transformer con mezcla de expertos y atencion dispersa, segun la nomenclatura); detalles exactos de capas, numero de expertos y dimensiones no disponibles en la informacion proporcionada |
 | Parametros totales | 88.040.064 (dato real, safetensors) |
 | Parametros activos | no disponible (aunque la etiqueta sugiere MoE, no se publica el numero de parametros activos por token) |
 | Longitud de contexto | no disponible; el comando de ejemplo del autor usa `--max-model-len 1024` con fines de prueba, no como especificacion del modelo |
@@ -78,7 +78,7 @@ No disponible. El checkpoint no es comparable con modelos de lenguaje entrenados
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soyrsoyr/GLM5.3-DSA-Tiny-Aligned-BF16-MTP-NVFP4A16-Preserved-pr3118-validation
+- Modelo en Hugging Face: https://huggingface.co/soyrsoyr/GLM5.3-DSA-Tiny-Aligned-BF16-MTP-NVFP4A16-Preserved-pr3118-validation
 - Modelo base: https://huggingface.co/soyrsoyr/GLM-5.3-MTP-NVFP4-Test-Fixture
 - Revision concreta del modelo base citada por el autor: https://huggingface.co/soyrsoyr/GLM-5.3-MTP-NVFP4-Test-Fixture/tree/0b017a9420e734a8443d46a9ec1a5128e4255ae7
 - Commit del PR 3118 de llm-compressor: https://github.com/soyr-redhat/llm-compressor/commit/87347881b46df8786b9fc463965f80504914a98f

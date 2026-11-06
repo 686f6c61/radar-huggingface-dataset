@@ -88,7 +88,7 @@ Nota: los valores de AP de los modelos comparativos son aproximados y provienen 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AnnotateIt/deim-rtdetrv2-l-coco-onnx
+- Repositorio Hugging Face: https://huggingface.co/AnnotateIt/deim-rtdetrv2-l-coco-onnx
 - Repositorio DEIM original: https://github.com/Intellindust-AI-Lab/DEIM
 - Repositorio DEIMv2: https://github.com/Intellindust-AI-Lab/DEIMv2
 - Página del proyecto DEIMv2: https://intellindust-ai-lab.github.io/projects/DEIMv2/

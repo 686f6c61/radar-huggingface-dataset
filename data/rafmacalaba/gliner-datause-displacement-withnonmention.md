@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Clases | Tratamiento de no menciones | Licencia | Disponibilidad |
 | --- | --- | --- | --- | --- |
-| `rafmacalaba/gliner-datause-displacement-withnonmention` | DATA_MENTION | Negativos duros desetiquetados | Apache-2.0 | HuggingFace |
-| `rafmacalaba/gliner_datause` | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| `rafmacalaba/gliner_datause_v0` | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| `rafmacalaba/gliner-datause-displacement-withnonmention` | DATA_MENTION | Negativos duros desetiquetados | Apache-2.0 | Hugging Face |
+| `rafmacalaba/gliner_datause` | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| `rafmacalaba/gliner_datause_v0` | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 Los datos de parámetros, contexto y rendimiento comparativo no están disponibles.
 
@@ -89,7 +89,7 @@ Los datos de parámetros, contexto y rendimiento comparativo no están disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rafmacalaba/gliner-datause-displacement-withnonmention
+- Modelo en Hugging Face: https://huggingface.co/rafmacalaba/gliner-datause-displacement-withnonmention
 - Dataset de entrenamiento: https://huggingface.co/datasets/rafmacalaba/data-use-mentions-tiered
 - Modelo base: https://huggingface.co/urchade/gliner_large-v2.1
 - Versión previa `gliner_datause`: https://huggingface.co/rafmacalaba/gliner_datause

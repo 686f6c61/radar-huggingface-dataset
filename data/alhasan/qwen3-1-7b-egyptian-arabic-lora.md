@@ -79,7 +79,7 @@ Datos adicionales aportados por el autor: la mejora sobre Claude Sonnet 5 con ci
 
 | Modelo | Parámetros | Contexto | Exact match (egipcio) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen3-1.7B + LoRA) | 1.700 M + LoRA r=16 | no disponible | 0,590 | Apache 2.0 | HuggingFace, 0 descargas en la consulta |
+| Este adaptador (Qwen3-1.7B + LoRA) | 1.700 M + LoRA r=16 | no disponible | 0,590 | Apache 2.0 | Hugging Face, 0 descargas en la consulta |
 | Qwen3-0.6B + LoRA (variante hermana) | 600 M + LoRA | no disponible | 0,510 | no disponible | Repositorio hermano; incluye variante MLX |
 | Dialect-BERT de 110 M | 110 M | no disponible | 0,625 | no disponible | Repositorio GitHub del autor |
 | Claude Sonnet 5, 5-shot | no disponible | no disponible | 0,435 | Propietaria | API comercial |
@@ -97,12 +97,12 @@ Conclusiones que se pueden extraer de los datos aportados: el adaptador de 1.7B 
 - Datos sintéticos: 6.500 de los ejemplos son reescrituras generadas por un LLM y filtradas por reglas, lo que puede introducir sesgos hacia formulaciones típicas de modelo y no cubrir la variabilidad real del habla egipcia.
 - Muestra de evaluación pequeña: 200 comandos, con intervalos de confianza amplios en las comparaciones (+15,5 puntos, IC 95 % [+8,5, +22,5]).
 - Consideraciones de licencia: el adaptador es Apache 2.0, pero conviene verificar por separado los términos del modelo base Qwen/Qwen3-1.7B y del corpus MASSIVE antes de un uso comercial.
-- Anomalía en los metadatos: las fechas de creación y actualización registradas en HuggingFace (2026-09-17) son posteriores a la fecha habitual de consulta; conviene tratarlas con cautela.
+- Anomalía en los metadatos: las fechas de creación y actualización registradas en Hugging Face (2026-09-17) son posteriores a la fecha habitual de consulta; conviene tratarlas con cautela.
 - Sin validación comunitaria: 0 descargas y 0 likes en el momento de la consulta, sin informes de terceros sobre su comportamiento fuera del conjunto de prueba del autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Alhasan/qwen3-1.7b-egyptian-arabic-lora
+- Modelo en Hugging Face: https://huggingface.co/Alhasan/qwen3-1.7b-egyptian-arabic-lora
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Corpus Amazon MASSIVE: https://github.com/alexa/massive
 - Repositorio GitHub del autor (metodología, test de significación y figuras): https://github.com/<your-username>/egyptian-arabic-nlu — el enlace aparece como marcador de posición sin concretar en la model card; el archivo `configs/schema.json` con las intenciones y slots válidos se encuentra en ese mismo repositorio.

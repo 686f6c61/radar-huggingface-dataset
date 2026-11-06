@@ -36,7 +36,7 @@ La limitacion experimental central es que el bucle de fabricacion estaba incompl
 - Ajuste supervisado especifico del autor: el LoRA se entreno sobre un conjunto no descrito en detalle, por lo que el sesgo de comportamiento concreto no esta caracterizado publicamente.
 - Llamada a herramientas / function calling: no disponible en la informacion proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponibles ni cualificadas.
-- Capacidades multilingues: no disponibles; el campo de idiomas de HuggingFace figura vacio.
+- Capacidades multilingues: no disponibles; el campo de idiomas de Hugging Face figura vacio.
 - Modo thinking, vision o audio: no disponibles; no se documenta ningun modo de razonamiento extendido ni modalidad adicional.
 
 ## Casos de uso
@@ -106,7 +106,7 @@ Los datos de los modelos comparativos no proceden de la informacion suministrada
 - Error de fidelidad de superficie documentado: la entrada "Sarah Klein" produjo la salida "sarah klien", lo que indica riesgo de errores en tareas que exigen copia literal.
 - La puerta de comportamiento local (15/15) empleo un protocolo nuevo y no una replica exacta de los prompts historicos de la prueba en A100; no es la suite AMF DEV/ROB/OOD y no cambia el estado de cualificacion.
 - Procedencia del dataset incompleta: el recibo archivado solo registra `split = train` y `final_access = NONE`, sin declaracion textual mas amplia.
-- Idiomas no declarados: la ficha de HuggingFace no especifica idiomas soportados ni se ha evaluado el comportamiento multilingue del derivado.
+- Idiomas no declarados: la ficha de Hugging Face no especifica idiomas soportados ni se ha evaluado el comportamiento multilingue del derivado.
 - Sin datos de sesgo, alineacion o seguridad: no se ha publicado ninguna evaluacion de sesgos, toxicidad o robustez.
 - Riesgo de alucinacion: no cuantificado en la informacion disponible; dado el estado de fallo de cualificacion, debe asumirse un riesgo elevado no caracterizado.
 - Estado de adopcion: cero descargas y cero likes en el momento de la consulta, sin comunidad que haya validado el artefacto.
@@ -115,6 +115,6 @@ Los datos de los modelos comparativos no proceden de la informacion suministrada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/faysalbenahmed/AMF-G1-Experimental
+- Modelo en Hugging Face: https://huggingface.co/faysalbenahmed/AMF-G1-Experimental
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - AI Mission Foundry / Stack Moderne: https://stack-moderne.fr/

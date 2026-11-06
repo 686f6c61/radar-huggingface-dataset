@@ -95,6 +95,6 @@ La comparación cuantitativa de parámetros y rendimiento entre estas alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gcouzzi/jurisclass-legalbertpt
+- Modelo en Hugging Face: https://huggingface.co/gcouzzi/jurisclass-legalbertpt
 - Modelo base: https://huggingface.co/raquelsilveira/legalbertpt_fp
 - Búsqueda web: los resultados devueltos no guardan relación con el modelo (páginas de soporte de YouTube y artículos sobre la marca de bicicletas YT Industries), por lo que no se incluye ningún enlace adicional. No se dispone de paper, blog, repositorio de código ni demo del proyecto.

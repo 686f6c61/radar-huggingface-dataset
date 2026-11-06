@@ -88,7 +88,7 @@ No se dispone de datos que permitan una comparacion cuantitativa fiable: ni el r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KW-KI/gemma-3-12b-it-law-fine-tuned-Q4_K_M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/KW-KI/gemma-3-12b-it-law-fine-tuned-Q4_K_M-GGUF
 - Modelo de origen (fine-tune legal): https://huggingface.co/DomainLLM/gemma-3-12b-it-law-fine-tuned
 - Modelo base de la familia: https://huggingface.co/google/gemma-3-12b-it
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo

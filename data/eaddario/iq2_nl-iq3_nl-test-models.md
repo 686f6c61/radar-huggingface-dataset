@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks que permitan comparar calidad frente a alte
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/eaddario/IQ2_NL-IQ3_NL-Test-Models
+- Repositorio Hugging Face: https://huggingface.co/eaddario/IQ2_NL-IQ3_NL-Test-Models
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2
 - Dataset de calibracion: https://huggingface.co/datasets/eaddario/imatrix-calibration
 - Fork de llama.cpp: https://github.com/EAddario/llama.cpp/tree/iq2_nl-iq3_nl-cpu

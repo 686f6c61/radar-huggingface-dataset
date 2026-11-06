@@ -69,7 +69,7 @@ No se han publicado otros resultados de benchmarks (por ejemplo, comparativas co
 
 | Modelo | Parametros | Entrada | Precision MNIST | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JemilahAlao/mnist-cnn-pytorch | no disponible (CNN pequena) | 1x28x28 gris | 99.14% | MIT | HuggingFace |
+| JemilahAlao/mnist-cnn-pytorch | no disponible (CNN pequena) | 1x28x28 gris | 99.14% | MIT | Hugging Face |
 | LeNet-5 (referencia clasica) | ~60k | 1x32x32 gris | ~99% (referencia historica) | no aplica | Implementaciones multiples |
 | CNN genericas en MNIST | variable | 1x28x28 gris | 99%+ tipico | variable | Multiples repositorios |
 
@@ -88,6 +88,6 @@ No se dispone de comparativas oficiales publicadas por el autor frente a otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JemilahAlao/mnist-cnn-pytorch
+- Modelo en Hugging Face: https://huggingface.co/JemilahAlao/mnist-cnn-pytorch
 - Dataset MNIST: https://huggingface.co/datasets/mnist
 - Documentacion de PyTorch: https://pytorch.org/docs/stable/index.html

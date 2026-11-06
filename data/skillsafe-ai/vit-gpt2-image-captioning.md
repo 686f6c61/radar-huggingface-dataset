@@ -79,8 +79,8 @@ La informacion proporcionada solo permite comparar con el modelo del que deriva 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `skillsafe-ai/vit-gpt2-image-captioning` | No declarado (~210 M estimados) | No disponible | ONNX fp32 y q8, mas JSON de tokenizer | apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| `Xenova/vit-gpt2-image-captioning` (upstream) | No declarado en la informacion proporcionada; mismos pesos | No disponible | No disponible en detalle; es el origen del commit `215b4edcb7ec1fad5905a18a03f7b2007f6fabd0` | no disponible en la informacion proporcionada | HuggingFace |
+| `skillsafe-ai/vit-gpt2-image-captioning` | No declarado (~210 M estimados) | No disponible | ONNX fp32 y q8, mas JSON de tokenizer | apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| `Xenova/vit-gpt2-image-captioning` (upstream) | No declarado en la informacion proporcionada; mismos pesos | No disponible | No disponible en detalle; es el origen del commit `215b4edcb7ec1fad5905a18a03f7b2007f6fabd0` | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de rendimiento, contexto ni licencia de alternativas como BLIP, GIT, Florence-2 o modelos de captioning multilingues dentro de la informacion facilitada, por lo que no se incluye una comparacion cuantitativa con ellos.
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento, contexto ni licencia de alternativas como
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/vit-gpt2-image-captioning
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/vit-gpt2-image-captioning
 - Modelo base upstream: https://huggingface.co/Xenova/vit-gpt2-image-captioning
 - Commit upstream fijado: https://huggingface.co/Xenova/vit-gpt2-image-captioning/tree/215b4edcb7ec1fad5905a18a03f7b2007f6fabd0
 - Repositorio del conversor (carpeta `models/` y `recipes/vit-gpt2-image-captioning.yaml`): https://github.com/skillsafe-admin/skillsafe.ai-website/tree/main/models

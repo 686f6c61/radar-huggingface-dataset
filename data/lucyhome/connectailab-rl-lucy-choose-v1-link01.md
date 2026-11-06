@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-lucy-choose-v1-link01 | 0,8B (base) + LoRA | no disponible | 100 % en test propio (136 ejemplos) | Apache 2.0 | HuggingFace |
+| connectailab-rl-lucy-choose-v1-link01 | 0,8B (base) + LoRA | no disponible | 100 % en test propio (136 ejemplos) | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucyhome/connectailab-rl-lucy-choose-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/lucyhome/connectailab-rl-lucy-choose-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

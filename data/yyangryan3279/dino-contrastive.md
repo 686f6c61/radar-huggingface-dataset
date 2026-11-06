@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`dino-contrastive` es un repositorio de HuggingFace publicado por el usuario `yyangryan3279` que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Dino" orientada a aprendizaje contrastivo. No se trata de un modelo preentrenado listo para producción, sino de un artefacto de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests), revisión de código y experimentos controlados de pequeña escala. El propio autor lo declara explícitamente en la model card.
+`dino-contrastive` es un repositorio de Hugging Face publicado por el usuario `yyangryan3279` que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Dino" orientada a aprendizaje contrastivo. No se trata de un modelo preentrenado listo para producción, sino de un artefacto de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests), revisión de código y experimentos controlados de pequeña escala. El propio autor lo declara explícitamente en la model card.
 
-El repositorio incluye un script de inferencia (`inference.py`), un fichero de configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint en formato `model.safetensors`. El recuento de parámetros reportado por HuggingFace es de 24.832, una cifra extremadamente pequeña que confirma que no se trata de un modelo de lenguaje ni de un encoder visual de gran escala, sino de una implementación mínima de referencia.
+El repositorio incluye un script de inferencia (`inference.py`), un fichero de configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint en formato `model.safetensors`. El recuento de parámetros reportado por Hugging Face es de 24.832, una cifra extremadamente pequeña que confirma que no se trata de un modelo de lenguaje ni de un encoder visual de gran escala, sino de una implementación mínima de referencia.
 
 Su relevancia es limitada: no hay benchmarks publicados, no hay datos de entrenamiento documentados y el checkpoint no ha sido entrenado. Resulta útil únicamente como punto de partida reproducible para quien quiera experimentar con una implementación propia de DINO (self-distillation with no labels) aplicada a tareas contrastivas, o como base para revisar decisiones de diseño de arquitectura.
 
@@ -82,5 +82,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yyangryan3279/dino-contrastive
+- Hugging Face: https://huggingface.co/yyangryan3279/dino-contrastive
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-collector-mtg-embedder-dinov3-small es un modelo publicado en HuggingFace por el usuario matteot11. Por el identificador se deduce que se trata de un encoder de visión derivado de la familia DINOv3 de Meta en su variante «small», orientado a generar representaciones vectoriales (embeddings) de cartas de Magic: The Gathering para un sistema de coleccionismo. El repositorio no incluye model card técnica: únicamente contiene los metadatos de licencia (`other`, con nombre `dinov3-license` y enlace a la licencia de DINOv3 de Meta).
+collector-mtg-embedder-dinov3-small es un modelo publicado en Hugging Face por el usuario matteot11. Por el identificador se deduce que se trata de un encoder de visión derivado de la familia DINOv3 de Meta en su variante «small», orientado a generar representaciones vectoriales (embeddings) de cartas de Magic: The Gathering para un sistema de coleccionismo. El repositorio no incluye model card técnica: únicamente contiene los metadatos de licencia (`other`, con nombre `dinov3-license` y enlace a la licencia de DINOv3 de Meta).
 
 El modelo no registra descargas ni likes, no declara pipeline y no tiene campos de idiomas ni de formato de pesos. Se encuentra, por tanto, en un estado embrionario o de uso estrictamente privado. Su relevancia potencial es de nicho: si funciona como encoder visual de cartas, permitiría búsqueda por similitud, deduplicación de inventario y catalogación automática de colecciones a partir de fotografías.
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| collector-mtg-embedder-dinov3-small | no disponible | no disponible | dinov3-license | HuggingFace, 0 descargas | no disponible |
+| collector-mtg-embedder-dinov3-small | no disponible | no disponible | dinov3-license | Hugging Face, 0 descargas | no disponible |
 | DINOv3 (familia base de Meta) | no disponible en la informacion proporcionada | no aplica | dinov3-license | Pesos publicados por Meta | no disponible |
 | Encoders de visión autosupervisados tipo CLIP o SigLIP | no disponible en la informacion proporcionada | no aplica | licencias propias de cada proyecto | Ampliamente disponibles | no disponible |
 
@@ -86,6 +86,6 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/matteot11/collector-mtg-embedder-dinov3-small
+- Repositorio en Hugging Face: https://huggingface.co/matteot11/collector-mtg-embedder-dinov3-small
 - Licencia DINOv3 de Meta: https://ai.meta.com/resources/models-and-libraries/dinov3-license/
 - Resultados de la búsqueda web: no contienen enlaces relevantes al modelo (únicamente páginas corporativas de Microsoft sin relación con la ficha).

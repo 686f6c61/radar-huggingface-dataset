@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `xtxx/YESW_Multi_Foundation_Model` es un modelo de fundación multi-propósito publicado en HuggingFace por el usuario `xtxx`. Su nombre sugiere un enfoque generalista, pero la información pública disponible es extremadamente limitada: el repositorio está marcado como de acceso restringido (gated), no se han publicado descargas ni valoraciones, y no existe documentación técnica asociada en la ficha de HuggingFace. El tamaño del repositorio es de 5,9 GB, lo que podría indicar un modelo de tamaño medio (del orden de 1-7 mil millones de parámetros en función del formato), pero no hay confirmación oficial.
+El modelo `xtxx/YESW_Multi_Foundation_Model` es un modelo de fundación multi-propósito publicado en Hugging Face por el usuario `xtxx`. Su nombre sugiere un enfoque generalista, pero la información pública disponible es extremadamente limitada: el repositorio está marcado como de acceso restringido (gated), no se han publicado descargas ni valoraciones, y no existe documentación técnica asociada en la ficha de Hugging Face. El tamaño del repositorio es de 5,9 GB, lo que podría indicar un modelo de tamaño medio (del orden de 1-7 mil millones de parámetros en función del formato), pero no hay confirmación oficial.
 
 La licencia declarada es Apache 2.0, lo que permitiría uso comercial y modificación en principio, pero el acceso restringido obliga a solicitar permiso al autor. Dada la ausencia de especificaciones, arquitectura, datos de entrenamiento o benchmarks, este modelo no puede evaluarse ni compararse con alternativas existentes sin información adicional. La ficha que sigue refleja esta falta de datos de forma transparente.
 
@@ -53,6 +53,6 @@ No disponible. Sin datos de arquitectura, parámetros o rendimiento, no es posib
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xtxx/YESW_Multi_Foundation_Model
+- Repositorio Hugging Face: https://huggingface.co/xtxx/YESW_Multi_Foundation_Model
 
 No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

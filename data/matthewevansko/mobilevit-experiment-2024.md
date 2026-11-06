@@ -69,4 +69,4 @@ No disponible. No se han publicado comparativas con modelos similares en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MatthewEvansko/mobilevit-experiment-2024
+- Hugging Face: https://huggingface.co/MatthewEvansko/mobilevit-experiment-2024

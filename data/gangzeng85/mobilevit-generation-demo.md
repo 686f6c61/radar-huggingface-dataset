@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gangzeng85/mobilevit-generation-demo` es un repositorio experimental publicado en HuggingFace por el usuario gangzeng85 que presenta una implementación propia de la arquitectura MobileViT configurada, según la model card, para tareas de «generation» con un preset de escala etiquetado como «giant». No es un modelo entrenado: el archivo `model.safetensors` es un checkpoint de inicialización pensado para pruebas de humo, y el propio autor indica explícitamente que no reclama ningún resultado de benchmark. El recuento real de parámetros del checkpoint es de 33.088 (unos 33 mil), un orden de magnitud propio de un test de inicialización, no de un modelo «giant».
+`gangzeng85/mobilevit-generation-demo` es un repositorio experimental publicado en Hugging Face por el usuario gangzeng85 que presenta una implementación propia de la arquitectura MobileViT configurada, según la model card, para tareas de «generation» con un preset de escala etiquetado como «giant». No es un modelo entrenado: el archivo `model.safetensors` es un checkpoint de inicialización pensado para pruebas de humo, y el propio autor indica explícitamente que no reclama ningún resultado de benchmark. El recuento real de parámetros del checkpoint es de 33.088 (unos 33 mil), un orden de magnitud propio de un test de inicialización, no de un modelo «giant».
 
 El interés del repositorio es, por tanto, documental y pedagógico: muestra cómo se estructura un paquete mínimo de modelo (script `run.py`, `config.json`, `training_args.json` y pesos en safetensors) con una combinación concreta de atención de consultas agrupadas (GQA), fusión por cross-attention, activación GELU-tanh y normalización LayerNorm. Resulta útil como plantilla reproducible para experimentos controlados y como material de referencia sobre empaquetado de modelos, no como componente listo para producción.
 
@@ -46,7 +46,7 @@ No hay información sobre volumen de tokens, composición del dataset, fases de 
 - Plantilla de repositorio de modelo: servir de esqueleto para nuevos experimentos que necesiten la estructura mínima `run.py` + `config.json` + `training_args.json` + `model.safetensors` con licencia MIT.
 - Base para comparativas controladas: replicar la receta por defecto (Adafactor con planificación «step») sobre baselines de capacidad equivalente, con la misma exposición de datos, presupuesto de ajuste y semillas, tal y como recomienda el autor.
 - Validación de utilidades de perfilado: usar el checkpoint como caso trivial para verificar herramientas de conteo de parámetros, inspección de safetensors o medición de memoria antes de aplicarlas a modelos reales.
-- Docencia y formación: ejemplo mínimo y real de publicación de un modelo en HuggingFace, útil para explicar qué debe documentarse (y qué no) en una model card.
+- Docencia y formación: ejemplo mínimo y real de publicación de un modelo en Hugging Face, útil para explicar qué debe documentarse (y qué no) en una model card.
 - Punto de partida para fine-tuning propio: sustituir el checkpoint por pesos entrenados y reutilizar la configuración, asumiendo que habrá que implementar el adaptador de carga y validar toda la canalización desde cero.
 
 ## Benchmarks y rendimiento
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto / entrada | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (`mobilevit-generation-demo`) | 33.088 | no disponible | ninguno (el autor no reclama métricas) | MIT | HuggingFace, 0 descargas |
+| Este repositorio (`mobilevit-generation-demo`) | 33.088 | no disponible | ninguno (el autor no reclama métricas) | MIT | Hugging Face, 0 descargas |
 | MobileViT original (variantes XXS–S, artículo de 2021) | aprox. 1,3 M – 5,6 M según variante | imagen; resolución dependiente de la variante | resultados de clasificación de imagen en el artículo original, no verificados aquí | consultar el repositorio original | pesos públicos del autor original |
 | DeiT-Tiny (transformer de visión ligero) | aprox. 5 M | imagen; 224×224 típicamente | resultados de clasificación de imagen en el artículo original, no verificados aquí | consultar el repositorio original | pesos públicos |
 
@@ -79,13 +79,13 @@ Los datos de las filas comparables proceden de sus publicaciones originales y no
 - No hay documentación de sesgos, robustez, equidad ni transferencia de dominio; el autor lo declara explícitamente.
 - Ambigüedad funcional: la arquitectura MobileViT es de visión, pero el repositorio se etiqueta como «generation» sin especificar la tarea ni la cabecera asociada.
 - No se declara ningún idioma soportado, ni longitud de contexto, ni tokenizador.
-- Las API estándar de HuggingFace no cargan el modelo sin un adaptador explícito, lo que complica su integración en pipelines existentes.
+- Las API estándar de Hugging Face no cargan el modelo sin un adaptador explícito, lo que complica su integración en pipelines existentes.
 - Licencia MIT: permite uso comercial y modificación, pero se distribuye sin garantía alguna; el propio autor recomienda revisar los términos de los datos externos si se usa con datasets de terceros.
 - Sin validación comunitaria: cero descargas y cero «likes» en el momento de la consulta.
 - No debe presentarse en producción ni citarse como referencia de rendimiento en comparativas de modelos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gangzeng85/mobilevit-generation-demo
+- Repositorio en Hugging Face: https://huggingface.co/gangzeng85/mobilevit-generation-demo
 - Artículo original de la arquitectura MobileViT (referencia de la familia, no del repositorio): https://arxiv.org/abs/2110.02178
 - No se han encontrado otros enlaces (papers, blogs, demos o repositorios auxiliares) en la información disponible.

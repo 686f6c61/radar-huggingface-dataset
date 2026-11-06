@@ -107,7 +107,7 @@ Datos adicionales declarados por el autor: el modelo lidera la tabla de solo rec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DataScience-UIBK/Agent-uibk-v1
+- Modelo en Hugging Face: https://huggingface.co/DataScience-UIBK/Agent-uibk-v1
 - Modelo base UIBK-Embedding-v1: https://huggingface.co/DataScience-UIBK/uibk-embedding-v1
 - Logotipo del proyecto: https://huggingface.co/DataScience-UIBK/uibk-embedding-v1/resolve/main/assets/logo.png
 - Perfil de la organización DataScience-UIBK: https://huggingface.co/DataScience-UIBK

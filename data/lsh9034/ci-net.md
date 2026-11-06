@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CI-Net es un modelo de aprendizaje profundo orientado a la prediccion inmediata (nowcasting) de la iniciacion de conveccion (convection initiation, CI) a partir de datos de satelite y radar. El repositorio, publicado por el usuario lsh9034 en HuggingFace, contiene el codigo completo de procesamiento, etiquetado, preprocesado, entrenamiento, inferencia y validacion, junto con un ejemplo de datos de entrada y los directorios de resultados. La etiqueta `simvp` del repositorio apunta a que el nucleo del modelo se basa en SimVP (SimVP: Simpler yet Better Video Prediction), una familia de arquitecturas de prediccion de video espacio-temporal de tipo encoder-translator-decoder convolucional, lo que encaja con la tarea de predecir la evolucion de campos meteorologicos en rejilla.
+CI-Net es un modelo de aprendizaje profundo orientado a la prediccion inmediata (nowcasting) de la iniciacion de conveccion (convection initiation, CI) a partir de datos de satelite y radar. El repositorio, publicado por el usuario lsh9034 en Hugging Face, contiene el codigo completo de procesamiento, etiquetado, preprocesado, entrenamiento, inferencia y validacion, junto con un ejemplo de datos de entrada y los directorios de resultados. La etiqueta `simvp` del repositorio apunta a que el nucleo del modelo se basa en SimVP (SimVP: Simpler yet Better Video Prediction), una familia de arquitecturas de prediccion de video espacio-temporal de tipo encoder-translator-decoder convolucional, lo que encaja con la tarea de predecir la evolucion de campos meteorologicos en rejilla.
 
 La relevancia del modelo es de nicho pero clara: la iniciacion de conveccion es un fenomeno de corta duracion y alta incertidumbre, y su prediccion a muy corto plazo (0-6 horas tipicamente en nowcasting) es uno de los problemas abiertos de la prediccion meteorologica operativa. Un modelo que combine imagenes de satelite y reflectividad de radar para anticipar donde y cuando se disparara la conveccion tiene aplicacion directa en avisos tempranos de tormentas severas, precipitacion intensa y fenomenos asociados.
 
@@ -87,10 +87,10 @@ No disponible. La informacion publicada no incluye parametros, contexto, rendimi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lsh9034/ci-net
+- Modelo en Hugging Face: https://huggingface.co/lsh9034/ci-net
 - Paper de referencia de la arquitectura SimVP (etiqueta del repositorio, no citado por el autor): SimVP: Simpler yet Better Video Prediction, https://arxiv.org/abs/2206.05099
 - Repositorio OpenSTL, implementacion abierta de referencia de SimVP y otros modelos de prediccion espacio-temporal: https://github.com/chengtan9907/OpenSTL
-- Licencia del codigo: fichero `LICENSE_CODE` dentro del repositorio de HuggingFace
-- Licencia de modelo y datos: fichero `LICENSE_MODEL_DATA` dentro del repositorio de HuggingFace
-- Documentacion adicional sobre la estructura de resultados: fichero `result/README.md` dentro del repositorio de HuggingFace
+- Licencia del codigo: fichero `LICENSE_CODE` dentro del repositorio de Hugging Face
+- Licencia de modelo y datos: fichero `LICENSE_MODEL_DATA` dentro del repositorio de Hugging Face
+- Documentacion adicional sobre la estructura de resultados: fichero `result/README.md` dentro del repositorio de Hugging Face
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados al modelo en la busqueda web realizada.

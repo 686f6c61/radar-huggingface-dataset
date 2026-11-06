@@ -2,9 +2,9 @@
 
 ## Resumen
 
-PULSE es un códec neuronal de imagen asimétrico y de tasa variable orientado a compresión práctica en hardware con recursos limitados. No es un modelo de lenguaje ni un transformer generativo: es un sistema de compresión de imágenes aprendido que combina un decodificador de complejidad ultrabaja, codificación entrópica determinista (bit-exacta) y optimización por MSE o perceptual. Lo publica el usuario `zhaoyangjia` en HuggingFace, aunque el código de referencia vive en el repositorio `microsoft/GenCodec` (carpeta `PULSE`).
+PULSE es un códec neuronal de imagen asimétrico y de tasa variable orientado a compresión práctica en hardware con recursos limitados. No es un modelo de lenguaje ni un transformer generativo: es un sistema de compresión de imágenes aprendido que combina un decodificador de complejidad ultrabaja, codificación entrópica determinista (bit-exacta) y optimización por MSE o perceptual. Lo publica el usuario `zhaoyangjia` en Hugging Face, aunque el código de referencia vive en el repositorio `microsoft/GenCodec` (carpeta `PULSE`).
 
-Su propuesta diferencial es el coste computacional en recepción: el receptor base requiere aproximadamente 5,2 kMAC/píxel y puede decodificar en un único hilo de CPU, lo que lo aleja de los códecs neuronales que dependen de GPU. El repositorio incluye cuatro variantes (dos optimizadas por MSE y dos perceptuales/ROI) con receptores de ~2,7, ~5,2 y ~20 kMAC/píxel, y cada una soporta ocho niveles de calidad (QP 0–7). La licencia es MIT y el tamaño del repositorio en HuggingFace es de 0,4 GB.
+Su propuesta diferencial es el coste computacional en recepción: el receptor base requiere aproximadamente 5,2 kMAC/píxel y puede decodificar en un único hilo de CPU, lo que lo aleja de los códecs neuronales que dependen de GPU. El repositorio incluye cuatro variantes (dos optimizadas por MSE y dos perceptuales/ROI) con receptores de ~2,7, ~5,2 y ~20 kMAC/píxel, y cada una soporta ocho niveles de calidad (QP 0–7). La licencia es MIT y el tamaño del repositorio en Hugging Face es de 0,4 GB.
 
 El interés actual del modelo radica en la promesa de compresión neuronal con transporte entrópico reproducible entre backends y con herramientas de despliegue para CPU, GPU H100 y NPU móvil. El paper asociado está anunciado como "coming soon", por lo que no hay resultados de evaluación tasa-distorsión publicados en la información disponible.
 
@@ -79,7 +79,7 @@ En la información proporcionada no se incluyen comparativas con otros códecs. 
 
 | Códec / modelo | Tipo | Decodificación en CPU | Tasa variable | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PULSE (zhaoyangjia) | Neuronal aprendido, asimétrico | Sí, un solo hilo (~2,7–20 kMAC/píxel) | 8 niveles QP por variante | MIT | HuggingFace + GitHub |
+| PULSE (zhaoyangjia) | Neuronal aprendido, asimétrico | Sí, un solo hilo (~2,7–20 kMAC/píxel) | 8 niveles QP por variante | MIT | Hugging Face + GitHub |
 | JPEG | Tradicional (DCT) | Sí, complejidad muy baja | Ajuste de calidad | Estándar libre de patentes | Universal |
 | WebP | Tradicional/híbrido | Sí | Ajuste de calidad | Licencia tipo BSD, sin royalties | Amplia |
 | AV1 | Tradicional por bloques | Sí, mayor complejidad que JPEG/WebP | Múltiples modos | Royalty-free (AOM) | Amplia |
@@ -102,7 +102,7 @@ No se dispone de datos de BD-rate ni de PSNR que permitan una comparación cuant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhaoyangjia/PULSE
+- Modelo en Hugging Face: https://huggingface.co/zhaoyangjia/PULSE
 - Código en GitHub (microsoft/GenCodec, carpeta PULSE): https://github.com/microsoft/GenCodec/tree/main/PULSE
 - Guía de entrenamiento: https://github.com/microsoft/GenCodec/blob/main/PULSE/docs/training.md
 - Guía de despliegue: https://github.com/microsoft/GenCodec/blob/main/PULSE/docs/deployment.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Goddess_of_Victory_Nikke es un repositorio publicado en HuggingFace por el usuario Sergeantzero bajo licencia Apache 2.0. La informacion disponible es extremadamente limitada: la model card no contiene mas que la declaracion de licencia, sin descripcion del modelo, sin arquitectura declarada, sin idiomas indicados y sin resultados de evaluacion. El repositorio tiene un tamano de 0,4 GB, un dato objetivo que no permite por si solo determinar si se trata de un checkpoint completo, de un adaptador (LoRA) o de pesos cuantizados.
+Goddess_of_Victory_Nikke es un repositorio publicado en Hugging Face por el usuario Sergeantzero bajo licencia Apache 2.0. La informacion disponible es extremadamente limitada: la model card no contiene mas que la declaracion de licencia, sin descripcion del modelo, sin arquitectura declarada, sin idiomas indicados y sin resultados de evaluacion. El repositorio tiene un tamano de 0,4 GB, un dato objetivo que no permite por si solo determinar si se trata de un checkpoint completo, de un adaptador (LoRA) o de pesos cuantizados.
 
 El nombre sugiere una posible relacion con el universo de la franquicia Goddess of Victory: Nikke, lo que apuntaria a un modelo de generacion de imagenes o a un adaptador de personaje, pero esto es una inferencia a partir del titulo y no un dato confirmado por el autor en la informacion disponible. No se debe asumir ninguna capacidad concreta sin verificacion previa.
 
@@ -53,7 +53,7 @@ No es posible recomendar casos de uso concretos sin conocer la modalidad, la arq
 - Prototipado artistico: empleo en flujos de trabajo de ilustracion para explorar variaciones de personaje antes de un render final de mayor calidad.
 - Evaluacion comparativa de adaptadores: uso como punto de comparacion frente a otros adaptadores de la misma categoria para medir fidelidad al personaje y diversidad de salidas.
 - Investigacion sobre sesgos en modelos generativos: analisis de como un adaptador de personaje reproduce o amplifica sesgos de representacion presentes en el modelo base.
-- Docencia sobre ecosistema HuggingFace: ejemplo practico de repositorio minimo con licencia declarada y sin documentacion, util para ilustrar buenas y malas practicas de publicacion.
+- Docencia sobre ecosistema Hugging Face: ejemplo practico de repositorio minimo con licencia declarada y sin documentacion, util para ilustrar buenas y malas practicas de publicacion.
 - Pruebas de integracion de pipelines: verificacion de que una cadena de carga de pesos gestiona correctamente repositorios con model card incompleta.
 
 ## Benchmarks y rendimiento
@@ -78,7 +78,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Goddess_of_Victory_Nikke | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Goddess_of_Victory_Nikke | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sergeantzero/Goddess_of_Victory_Nikke
+- Repositorio en Hugging Face: https://huggingface.co/Sergeantzero/Goddess_of_Victory_Nikke
 - Perfil del autor: https://huggingface.co/Sergeantzero
 - Paper: no disponible.
 - Blog o articulo tecnico: no disponible.

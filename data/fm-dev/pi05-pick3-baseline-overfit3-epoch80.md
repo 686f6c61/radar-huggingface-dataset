@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fm-dev/pi05-pick3-baseline-overfit3-epoch80 | no disponible | sin historial; entrada actual | solo verificacion de carga y salidas finitas | no disponible | pesos EMA + codigo en HuggingFace |
-| physical-intelligence/pi05_base | no disponible | no disponible | no disponible | no disponible | modelo base publico en HuggingFace |
+| fm-dev/pi05-pick3-baseline-overfit3-epoch80 | no disponible | sin historial; entrada actual | solo verificacion de carga y salidas finitas | no disponible | pesos EMA + codigo en Hugging Face |
+| physical-intelligence/pi05_base | no disponible | no disponible | no disponible | no disponible | modelo base publico en Hugging Face |
 | Otros checkpoints comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos publicados que permitan una comparacion cuantitativa con alternativas de la misma categoria (por ejemplo, otras politicas VLA para manipulacion con brazo Franka). La busqueda web realizada no devolvio resultados tecnicos relevantes sobre este modelo ni sobre su familia.

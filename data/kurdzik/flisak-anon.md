@@ -70,9 +70,9 @@ Datos adicionales de la model card: en el conjunto de test de correo sintético,
 
 | Modelo | Parámetros | Contexto | F1 de persona en KPWr-NER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| flisak-anon | 123.979.687 | no disponible | 0,932 | CC BY 4.0 | HuggingFace (Kurdzik/flisak-anon) |
-| clarin-pl/FastPDN | no disponible | no disponible | 0,682 | no disponible | HuggingFace (clarin-pl/FastPDN) |
-| allegro/herbert-base-cased | no disponible | no disponible | no disponible (modelo base, sin ajuste NER) | no disponible | HuggingFace (allegro/herbert-base-cased) |
+| flisak-anon | 123.979.687 | no disponible | 0,932 | CC BY 4.0 | Hugging Face (Kurdzik/flisak-anon) |
+| clarin-pl/FastPDN | no disponible | no disponible | 0,682 | no disponible | Hugging Face (clarin-pl/FastPDN) |
+| allegro/herbert-base-cased | no disponible | no disponible | no disponible (modelo base, sin ajuste NER) | no disponible | Hugging Face (allegro/herbert-base-cased) |
 
 No se dispone de datos de otros modelos NER polacos comparables en la información proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de otros modelos NER polacos comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kurdzik/flisak-anon
+- Modelo en Hugging Face: https://huggingface.co/Kurdzik/flisak-anon
 - Modelo base: https://huggingface.co/clarin-pl/FastPDN
 - Modelo HerBERT original: https://huggingface.co/allegro/herbert-base-cased
 - Dataset KPWr-NER: https://huggingface.co/datasets/clarin-pl/kpwr-ner

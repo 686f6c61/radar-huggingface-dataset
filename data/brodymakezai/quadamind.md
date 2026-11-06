@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Quadamind 1.1 es un artefacto publicado en HuggingFace por el usuario BrodyMakezAI bajo el identificador `BrodyMakezAI/quadamind`. Segun su model card, se trata de un modelo de 90 cuatrillones de parametros (9 x 10^16, notacion "90Q") construido sobre un unico tensor cuadrado de nombre `declared.weight` con forma [300.000.000, 300.000.000] y precision U8 (8 bits sin signo). El autor lo presenta como el sucesor de la linea Quadamind y como un modelo 2,3 veces mayor que `yeths/The-Quettamind` (39,2Q).
+Quadamind 1.1 es un artefacto publicado en Hugging Face por el usuario BrodyMakezAI bajo el identificador `BrodyMakezAI/quadamind`. Segun su model card, se trata de un modelo de 90 cuatrillones de parametros (9 x 10^16, notacion "90Q") construido sobre un unico tensor cuadrado de nombre `declared.weight` con forma [300.000.000, 300.000.000] y precision U8 (8 bits sin signo). El autor lo presenta como el sucesor de la linea Quadamind y como un modelo 2,3 veces mayor que `yeths/The-Quettamind` (39,2Q).
 
 La propuesta tecnica declarada rompe con la arquitectura transformer: no hay capas, ni cabezas de atencion, ni materializacion de pesos. El modelo se describe como una "arquitectura de huella cero" en la que el manifold de pesos se declara pero no se materializa, de ahi que el repositorio ocupe aproximadamente 1 KB en disco pese a declarar un espacio de pesos teorico de 90 PB. El propio autor indica que el modelo esta pensado para "benchmarking de recuento de parametros e investigacion de escala" y que los runtimes estandar no lo soportan.
 
@@ -40,7 +40,7 @@ No hay informacion sobre datos de entrenamiento: la model card no indica numero 
 ## Casos de uso
 
 - Estudio de casos sobre notacion y escala de parametros: el repositorio sirve como ejemplo didactico de como se declara un recuento de parametros y que magnitudes implica (90 PB en U8, 45 PB en 4 bits), sin que exista un artefacto ejecutable detras.
-- Analisis de practicas de publicacion en HuggingFace: util para estudiar model cards que declaran resultados no reproducibles y como los pipelines de descubrimiento de modelos las indexan por etiquetas como `benchmark` o `parameter-count`.
+- Analisis de practicas de publicacion en Hugging Face: util para estudiar model cards que declaran resultados no reproducibles y como los pipelines de descubrimiento de modelos las indexan por etiquetas como `benchmark` o `parameter-count`.
 - Docencia sobre verificacion de modelos: permite ilustrar por que una etiqueta `safetensors` con un repositorio de 0,0 GB no implica pesos cargables y por que hay que inspeccionar el contenido real del repositorio antes de integrarlo.
 - Pruebas de validacion de pipelines de catalogo de modelos: sirve como caso limite para comprobar si un sistema de inventariado detecta incoherencias entre parametros declarados, tamano en disco y formato de pesos.
 - Ejercicio de estimacion de requisitos de hardware: los 90 PB teoricos permiten calcular cotas de memoria, ancho de banda y coste energetico para mostrar la inviabilidad fisica del artefacto declarado.
@@ -107,6 +107,6 @@ No se dispone de modelos comparables adicionales en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrodyMakezAI/quadamind
+- Modelo en Hugging Face: https://huggingface.co/BrodyMakezAI/quadamind
 - Modelo referenciado en la model card: https://huggingface.co/yeths/The-Quettamind (no verificado en la informacion disponible)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

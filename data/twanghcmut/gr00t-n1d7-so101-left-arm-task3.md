@@ -79,10 +79,10 @@ Normalizado por la desviación estándar absoluta de las acciones (29,97), el MA
 
 | Modelo | Parámetros | Contexto / horizonte | Evaluación en bucle abierto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gr00t-n1d7-so101-left-arm-task3 | 3.144.016.000 | horizonte de acción 16 | MAE 1,440; 4,80% de la escala de acción | Apache 2.0 | HuggingFace |
-| twanghcmut/pi05-so101-left-arm-task3 (π₀.₅) | no disponible | horizonte de acción 16 | MAE 1,459; 4,87% de la escala de acción | no disponible en la información | HuggingFace |
-| twanghcmut/gr00t-n1d7-so101-left-arm-multitask | no disponible | horizonte de acción 16 | no disponible | no disponible en la información | HuggingFace |
-| nvidia/GR00T-N1.7-3B (modelo base) | 3B (según nombre) | no disponible | no disponible | no disponible en la información | HuggingFace |
+| gr00t-n1d7-so101-left-arm-task3 | 3.144.016.000 | horizonte de acción 16 | MAE 1,440; 4,80% de la escala de acción | Apache 2.0 | Hugging Face |
+| twanghcmut/pi05-so101-left-arm-task3 (π₀.₅) | no disponible | horizonte de acción 16 | MAE 1,459; 4,87% de la escala de acción | no disponible en la información | Hugging Face |
+| twanghcmut/gr00t-n1d7-so101-left-arm-multitask | no disponible | horizonte de acción 16 | no disponible | no disponible en la información | Hugging Face |
+| nvidia/GR00T-N1.7-3B (modelo base) | 3B (según nombre) | no disponible | no disponible | no disponible en la información | Hugging Face |
 
 El modelo comparable más directo es π₀.₅ entrenado por el mismo autor con los mismos datos y presupuesto, con resultados prácticamente idénticos. La variante multitarea de 11 tareas del mismo autor comparte receta de entrenamiento, pero no se aportan métricas en la información disponible.
 
@@ -102,7 +102,7 @@ El modelo comparable más directo es π₀.₅ entrenado por el mismo autor con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/twanghcmut/gr00t-n1d7-so101-left-arm-task3
+- Modelo en Hugging Face: https://huggingface.co/twanghcmut/gr00t-n1d7-so101-left-arm-task3
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Modelo comparable π₀.₅ del mismo autor: https://huggingface.co/twanghcmut/pi05-so101-left-arm-task3
 - Variante multitarea de 11 tareas: https://huggingface.co/twanghcmut/gr00t-n1d7-so101-left-arm-multitask

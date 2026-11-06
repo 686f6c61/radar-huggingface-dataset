@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HEADLINE-MSIIP | 4B (generador) | no disponible | Generación de informes de TC de cráneo con priors de clasificación | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| Qwen3-VL-4B-Instruct | 4B | no disponible en esta ficha | Image-text-to-text general | no disponible en esta ficha | HuggingFace (modelo base) |
-| Qwen3.5-4B | 4B | no disponible en esta ficha | Modelo de lenguaje base | no disponible en esta ficha | HuggingFace (modelo base) |
+| HEADLINE-MSIIP | 4B (generador) | no disponible | Generación de informes de TC de cráneo con priors de clasificación | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| Qwen3-VL-4B-Instruct | 4B | no disponible en esta ficha | Image-text-to-text general | no disponible en esta ficha | Hugging Face (modelo base) |
+| Qwen3.5-4B | 4B | no disponible en esta ficha | Modelo de lenguaje base | no disponible en esta ficha | Hugging Face (modelo base) |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yssvyss/HEADLINE-MSIIP
+- Repositorio Hugging Face: https://huggingface.co/yssvyss/HEADLINE-MSIIP
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Modelo base Qwen3-VL-4B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct

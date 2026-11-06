@@ -6,7 +6,7 @@ gdpo-cond-search-qwen3.5-4b-think-s150 es un ajuste fino del modelo Qwen/Qwen3.5
 
 El modelo parte de la arquitectura Qwen3.5 de 4B parametros y se especializa en razonamiento de multiples pasos sobre documentos recuperados, con un modo de pensamiento explicito (sufijo `think` en el nombre). Se entrena sobre HotpotQA y MuSiQue, dos benchmarks clasicos de QA multi-salto que exigen encadenar evidencia de varios documentos.
 
-Es relevante porque aborda un problema practico de los agentes de busqueda: el coste y la latencia de las llamadas al retriever. Al condicionar el comportamiento a un presupuesto, el modelo puede operar en regimenes de bajo coste o de alta precision segun la necesidad, algo poco habitual en modelos abiertos de este tamano. El acceso esta restringido en HuggingFace y requiere aceptar condiciones.
+Es relevante porque aborda un problema practico de los agentes de busqueda: el coste y la latencia de las llamadas al retriever. Al condicionar el comportamiento a un presupuesto, el modelo puede operar en regimenes de bajo coste o de alta precision segun la necesidad, algo poco habitual en modelos abiertos de este tamano. El acceso esta restringido en Hugging Face y requiere aceptar condiciones.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gdpo-cond-search-qwen3.5-4b-think-s150 | 4,54 B | no disponible | Busqueda agéntica multi-salto con presupuesto | Apache 2.0 | Gated en HuggingFace |
+| gdpo-cond-search-qwen3.5-4b-think-s150 | 4,54 B | no disponible | Busqueda agéntica multi-salto con presupuesto | Apache 2.0 | Gated en Hugging Face |
 | Qwen/Qwen3.5-4B (base) | ~4 B | no disponible | Proposito general | Apache 2.0 (segun modelo base) | Publico |
 | Search-R1 y variantes (familia) | 3-7 B tipicamente | no disponible | RL para busqueda con retriever | variable | Publicos |
 
@@ -81,14 +81,14 @@ La comparacion con Search-R1 se incluye por categoria de tarea (agentes de busqu
 - Especializado en QA multi-salto sobre HotpotQA y MuSiQue; puede degradarse en tareas genericas de generacion o codigo respecto al modelo base.
 - Riesgo de alucinacion en las respuestas finales, especialmente si el retriever devuelve pasajes irrelevantes; el modo think no garantiza fidelidad a la evidencia.
 - El condicionamiento por presupuesto asume un entorno de busqueda concreto; el comportamiento fuera de ese formato de prompt no esta documentado.
-- Acceso restringido en HuggingFace: requiere aceptar condiciones, lo que puede complicar la reproducibilidad y el despliegue automatizado.
+- Acceso restringido en Hugging Face: requiere aceptar condiciones, lo que puede complicar la reproducibilidad y el despliegue automatizado.
 - Licencia Apache 2.0 permite uso comercial, pero deben verificarse las condiciones del modelo base Qwen3.5-4B y de los datasets de entrenamiento.
 - Sin resultados de benchmarks publicados ni cuantizaciones oficiales; el rendimiento real en produccion debe validarse con evaluacion propia.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay evidencia de uso comunitario ni de validacion independiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XinyiY1226/gdpo-cond-search-qwen3.5-4b-think-s150
+- Modelo en Hugging Face: https://huggingface.co/XinyiY1226/gdpo-cond-search-qwen3.5-4b-think-s150
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset HotpotQA: https://huggingface.co/datasets/hotpotqa/hotpot_qa
 - Dataset MuSiQue: https://huggingface.co/datasets/dgslibisey/MuSiQue

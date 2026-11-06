@@ -6,7 +6,7 @@ LTX-2.5-22b-IC-LoRA-Refine-Details es un adaptador IC-LoRA (In-Context LoRA) des
 
 El adaptador forma parte del ecosistema LTX-2, que segun la documentacion oficial de Lightricks es el primer modelo fundacional de audio y video basado en arquitectura DiT (Diffusion Transformer) que integra audio sincronizado y video de alta fidelidad en un unico modelo. Los IC-LoRA permiten condicionar la generacion por referencia, lo que habilita flujos de video-a-video para control, restauracion, efectos visuales (VFX) y transformaciones creativas manteniendo la estructura de un video de referencia.
 
-Este lanzamiento es relevante porque demuestra la madurez del ecosistema de adaptadores modulares sobre modelos de difusion de video: en lugar de reentrenar un modelo de 22B, los usuarios pueden aplicar un adaptador ligero de 1,3 GB para refinar detalles sin alterar la semantica de la escena. El acceso esta restringido en HuggingFace (gated), por lo que es necesario aceptar las condiciones de uso antes de descargarlo.
+Este lanzamiento es relevante porque demuestra la madurez del ecosistema de adaptadores modulares sobre modelos de difusion de video: en lugar de reentrenar un modelo de 22B, los usuarios pueden aplicar un adaptador ligero de 1,3 GB para refinar detalles sin alterar la semantica de la escena. El acceso esta restringido en Hugging Face (gated), por lo que es necesario aceptar las condiciones de uso antes de descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -68,15 +68,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LTX-2.5-22b-IC-LoRA-Refine-Details | Adaptador ~1,3 GB sobre base 22B | No disponible | IC-LoRA de refinamiento de video | ltx-2.x-community-license | Gated en HuggingFace |
-| LTX-2.5 (modelo base) | 22B | No disponible | DiT de audio y video | ltx-2.x-community-license | Publico en HuggingFace |
+| LTX-2.5-22b-IC-LoRA-Refine-Details | Adaptador ~1,3 GB sobre base 22B | No disponible | IC-LoRA de refinamiento de video | ltx-2.x-community-license | Gated en Hugging Face |
+| LTX-2.5 (modelo base) | 22B | No disponible | DiT de audio y video | ltx-2.x-community-license | Publico en Hugging Face |
 | Otros IC-LoRA de LTX-2.5 | No disponible | No disponible | Adaptadores de control por referencia | ltx-2.x-community-license | No disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo esta gated en HuggingFace y requiere aceptar condiciones y compartir informacion de contacto antes de descargarlo.
+- Acceso restringido: el modelo esta gated en Hugging Face y requiere aceptar condiciones y compartir informacion de contacto antes de descargarlo.
 - Licencia `ltx-2.x-community-license`: es una licencia de tipo "other", no una licencia open source estandar; es imprescindible revisar sus terminos antes de cualquier uso comercial.
 - Dependencia del modelo base: el adaptador no funciona de forma autonoma, requiere LTX-2.5-22B, lo que implica asumir tambien los requisitos de hardware y licencia del modelo base.
 - Idioma: etiquetado unicamente para ingles; no se documenta soporte multilingue.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Refine-Details
+- Modelo en Hugging Face: https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Refine-Details
 - Modelo base LTX-2.5: https://huggingface.co/Lightricks/LTX-2.5
 - Repositorio oficial LTX-2 en GitHub: https://github.com/Lightricks/LTX-2
 - Documentacion de IC-LoRA: https://docs.ltx.io/open-source-model/usage-guides/ic-lo-ra

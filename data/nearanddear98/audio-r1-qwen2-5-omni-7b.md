@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Audio-R1-Qwen2.5-Omni-7B (este) | 7B base + LoRA | no disponible | RL con recompensas auto-supervisadas de audio | Apache 2.0 | HuggingFace |
-| Qwen2.5-Omni-7B (base) | 7B | no disponible | Modelo omni multimodal sin post-entrenamiento RL especifico de audio | Apache 2.0 | HuggingFace |
+| Audio-R1-Qwen2.5-Omni-7B (este) | 7B base + LoRA | no disponible | RL con recompensas auto-supervisadas de audio | Apache 2.0 | Hugging Face |
+| Qwen2.5-Omni-7B (base) | 7B | no disponible | Modelo omni multimodal sin post-entrenamiento RL especifico de audio | Apache 2.0 | Hugging Face |
 | Alternativas de razonamiento audio | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa se limita al modelo base porque la informacion proporcionada no incluye otros adaptadores de razonamiento audio comparables con datos verificables.
@@ -78,7 +78,7 @@ La comparativa se limita al modelo base porque la informacion proporcionada no i
 - No hay datos de latencia, throughput ni benchmarks que permitan estimar su idoneidad en produccion.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/NearAndDear98/Audio-R1-Qwen2.5-Omni-7B
+- Hugging Face: https://huggingface.co/NearAndDear98/Audio-R1-Qwen2.5-Omni-7B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Omni-7B
 - Paper: https://arxiv.org/abs/2610.34609
 - Pagina del proyecto: https://ijihoon98.github.io/Audio-R1/

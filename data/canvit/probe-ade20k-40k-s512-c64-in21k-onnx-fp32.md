@@ -37,7 +37,7 @@ Sobre ese canvas actúa una sonda lineal que produce 150 logits de clase por cel
 - Segmentación semántica densa a resolución de canvas (64 × 64) con 150 clases del vocabulario ADE20K.
 - Salida de incertidumbre: además de los logits, el grafo emite la entropía por celda, explotable para decidir dónde mirar a continuación.
 - Integración en bucle de visión activa: consume el canvas actualizado tras cada *glimpse* del backbone CanViT-B y realimenta la política EG-C2F.
-- Ejecución en navegador mediante el componente web `<canvit-live>`, cargando los pesos directamente desde HuggingFace.
+- Ejecución en navegador mediante el componente web `<canvit-live>`, cargando los pesos directamente desde Hugging Face.
 - Inferencia en CPU con onnxruntime, sin dependencia de CUDA.
 - No soporta *tool calling*, *function calling*, agentes de texto, ni razonamiento multi-paso en lenguaje natural: no es un modelo de lenguaje.
 - No dispone de capacidades multilingües, de audio ni de generación de texto.
@@ -70,17 +70,17 @@ No se proporcionan valores de mIoU, accuracy por pixel ni comparaciones cuantita
 - El probe en si ocupa 0,68 MB en FP32, por lo que cabe holgadamente en cualquier dispositivo, incluidos moviles, y se ejecuta satisfactoriamente con el *execution provider* de CPU de onnxruntime.
 - El coste computacional dominante corresponde al grafo de *glimpse* de CanViT-B, cuyo tamano y requisitos de VRAM no se detallan en la informacion disponible.
 - No se publican requisitos de VRAM, GPU recomendadas (A100, H100, RTX 4090, etc.) ni estimaciones de latencia o throughput.
-- Opciones de despliegue documentadas: onnxruntime (CPU), y el componente web `<canvit-live>` que carga ambos grafos desde HuggingFace. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que ademas no aplican a un modelo de vision de este tipo.
+- Opciones de despliegue documentadas: onnxruntime (CPU), y el componente web `<canvit-live>` que carga ambos grafos desde Hugging Face. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que ademas no aplican a un modelo de vision de este tipo.
 - Entorno de exportacion y verificacion: torch 2.14.0, onnx 1.23.0, onnxruntime 1.30.0.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Clases | Canvas / resolucion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `probe-ade20k-40k-s512-c64-in21k-onnx-fp32` (este) | Sonda lineal ONNX sobre canvas CanViT-B | 150 | 64 × 64 | ONNX fp32, 0,68 MB | MIT | HuggingFace, commit publicado |
-| `canvit/probe-ade20k-40k-s512-c64-in1k` | Sonda ADE20K sobre canvas 64 × 64, backbone preentrenado en ImageNet-1k | No disponible | 64 × 64 | No disponible | No disponible | HuggingFace |
-| `canvit/probe-ade20k-40k-s512-c10-in21k` | Sonda ADE20K sobre canvas 10 × 10 | No disponible | 10 × 10 | No disponible | No disponible | HuggingFace |
-| `canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02-c64-onnx-fp32` | Backbone de *glimpse* CanViT-B en ONNX | No aplica | *Glimpse* 128 px sobre escena 512 px | ONNX fp32 | No disponible | HuggingFace |
+| `probe-ade20k-40k-s512-c64-in21k-onnx-fp32` (este) | Sonda lineal ONNX sobre canvas CanViT-B | 150 | 64 × 64 | ONNX fp32, 0,68 MB | MIT | Hugging Face, commit publicado |
+| `canvit/probe-ade20k-40k-s512-c64-in1k` | Sonda ADE20K sobre canvas 64 × 64, backbone preentrenado en ImageNet-1k | No disponible | 64 × 64 | No disponible | No disponible | Hugging Face |
+| `canvit/probe-ade20k-40k-s512-c10-in21k` | Sonda ADE20K sobre canvas 10 × 10 | No disponible | 10 × 10 | No disponible | No disponible | Hugging Face |
+| `canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02-c64-onnx-fp32` | Backbone de *glimpse* CanViT-B en ONNX | No aplica | *Glimpse* 128 px sobre escena 512 px | ONNX fp32 | No disponible | Hugging Face |
 
 No se dispone de resultados de rendimiento (mIoU u otros) para ninguna de las variantes, por lo que la comparacion se limita a la configuracion arquitectonica y al formato de publicacion.
 
@@ -97,10 +97,10 @@ No se dispone de resultados de rendimiento (mIoU u otros) para ninguna de las va
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canvit/probe-ade20k-40k-s512-c64-in21k-onnx-fp32
+- Modelo en Hugging Face: https://huggingface.co/canvit/probe-ade20k-40k-s512-c64-in21k-onnx-fp32
 - Modelo base (sonda PyTorch): https://huggingface.co/canvit/probe-ade20k-40k-s512-c64-in21k
 - Backbone de *glimpse* CanViT-B en ONNX: https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02-c64-onnx-fp32
-- Organizacion CanViT en HuggingFace: https://huggingface.co/canvit
+- Organizacion CanViT en Hugging Face: https://huggingface.co/canvit
 - Variante con canvas 10 × 10: https://huggingface.co/canvit/probe-ade20k-40k-s512-c10-in21k
 - Paper (NeurIPS 2026): https://arxiv.org/abs/2603.22570
 - Codigo CanViT: https://github.com/m2b3/CanViT

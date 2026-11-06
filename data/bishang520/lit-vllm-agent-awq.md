@@ -85,12 +85,12 @@ La principal diferencia con el modelo base Qwen2-7B es la adaptación a dominios
 - Las citas generadas pueden ser alucinadas si el sistema RAG no proporciona el contexto adecuado; la precisión de citas reportada es de 0,55, lo que indica un margen de error considerable.
 - La longitud de contexto no está confirmada oficialmente; el ejemplo de despliegue usa 8192 tokens, pero podría ser menor o mayor.
 - Al ser una cuantización AWQ 4-bit, puede haber una ligera pérdida de calidad en tareas de razonamiento complejo comparado con la versión FP16.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido ampliamente probado por la comunidad; se recomienda validarlo en casos de uso reales antes de producción.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido ampliamente probado por la comunidad; se recomienda validarlo en casos de uso reales antes de producción.
 - Aunque la licencia Apache 2.0 permite uso comercial, el autor no proporciona garantías sobre el comportamiento del modelo en entornos de alto riesgo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bishang520/Lit-VLLM-Agent-AWQ
+- Hugging Face: https://huggingface.co/bishang520/Lit-VLLM-Agent-AWQ
 - Repositorio del sistema completo: https://github.com/bishang520/Lit-VLLM-Agent
 - vLLM (motor de inferencia): https://github.com/vllm-project/vllm
 - Documentación de AWQ en vLLM: https://docs.vllm.ai/en/latest/features/quantization/auto_awq/

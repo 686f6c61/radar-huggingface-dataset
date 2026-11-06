@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`amitsinghova/audio-visual-learning-review` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion publicado en HuggingFace bajo la etiqueta `research-notes`. Su contenido principal es un documento (`summary.md`) que describe el planteamiento de un estudio exploratorio sobre aprendizaje audiovisual: el alcance de la pregunta de investigacion, posibles factores de confusion, una comparacion propuesta con baselines emparejados y requisitos de reproducibilidad. La model card es explicita al afirmar que no se ha entrenado ningun checkpoint, no se ha publicado codigo y no se reclama ninguna mejora en benchmarks.
+`amitsinghova/audio-visual-learning-review` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion publicado en Hugging Face bajo la etiqueta `research-notes`. Su contenido principal es un documento (`summary.md`) que describe el planteamiento de un estudio exploratorio sobre aprendizaje audiovisual: el alcance de la pregunta de investigacion, posibles factores de confusion, una comparacion propuesta con baselines emparejados y requisitos de reproducibilidad. La model card es explicita al afirmar que no se ha entrenado ningun checkpoint, no se ha publicado codigo y no se reclama ninguna mejora en benchmarks.
 
 El repositorio incluye pesos en formato safetensors con un recuento de parametros de 24.832, un valor que por su magnitud no corresponde a un transformer funcional de gran escala y que debe interpretarse con cautela: el tamano del repositorio es de 0,0 GB y no se declara pipeline, idiomas ni arquitectura concreta mas alla de la etiqueta generica `transformer`. Es probable que se trate de un artefacto residual o de un tensor auxiliar asociado al flujo de publicacion, no de un modelo desplegable.
 
@@ -42,7 +42,7 @@ El apartado de reproducibilidad es el unico con contenido tecnico concreto: se e
 - Diseno de protocolos de evaluacion: las referencias a AudioSet y VGGSound sirven para seleccionar conjuntos de datos y metricas en fases iniciales de un proyecto de investigacion.
 - Revision de reproducibilidad: la lista de requisitos (versiones de dataset, semillas, hardware, logs) puede adoptarse como checklist en repositorios de investigacion propios.
 - Formacion y docencia: util como ejemplo de separacion entre hipotesis y resultados en la redaccion de model cards y notas tecnicas.
-- Auditoria de repositorios de HuggingFace: permite ilustrar como detectar publicaciones que no contienen un modelo desplegable pese a incluir pesos en safetensors.
+- Auditoria de repositorios de Hugging Face: permite ilustrar como detectar publicaciones que no contienen un modelo desplegable pese a incluir pesos en safetensors.
 - Referencia bibliografica inicial: punto de partida para localizar literatura sobre aprendizaje audiovisual antes de construir un pipeline propio.
 
 ## Benchmarks y rendimiento
@@ -72,5 +72,5 @@ No disponible. No existen modelos comparables porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amitsinghova/audio-visual-learning-review
+- Repositorio en Hugging Face: https://huggingface.co/amitsinghova/audio-visual-learning-review
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo o demos.

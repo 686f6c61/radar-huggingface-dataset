@@ -95,6 +95,6 @@ No disponible. No procede comparar este identificador con modelos de la misma ca
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SOTAagi2030/Caldera-Relay-Windows
+- Repositorio en Hugging Face: https://huggingface.co/SOTAagi2030/Caldera-Relay-Windows
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo: papers, blogs, repositorios de codigo o demos. Los resultados devueltos no guardan relacion con el identificador ni con inteligencia artificial.

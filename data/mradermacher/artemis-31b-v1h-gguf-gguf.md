@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Artemis-31B-v1h-GGUF-GGUF (esta ficha) | 30,7 B | no disponible | no disponible | GGUF | HuggingFace (mradermacher) |
-| TheDrummer/Artemis-31B-v1-GGUF (modelo base) | 30,7 B | no disponible | no disponible | GGUF | HuggingFace (TheDrummer) |
+| Artemis-31B-v1h-GGUF-GGUF (esta ficha) | 30,7 B | no disponible | no disponible | GGUF | Hugging Face (mradermacher) |
+| TheDrummer/Artemis-31B-v1-GGUF (modelo base) | 30,7 B | no disponible | no disponible | GGUF | Hugging Face (TheDrummer) |
 | Alternativas de ~30 B en GGUF | no disponible | no disponible | no disponible | GGUF | no disponible |
 
 No se dispone de información suficiente para comparar con modelos alternativos concretos de la misma categoría (por ejemplo, otros modelos de ~30 B cuantizados en GGUF), ya que la documentación proporcionada no incluye datos de rendimiento, contexto ni licencia del modelo base. Se recomienda consultar la model card original de TheDrummer para obtener esos datos antes de establecer comparaciones.

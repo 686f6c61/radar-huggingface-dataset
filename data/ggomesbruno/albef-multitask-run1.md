@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ggomesbruno/albef-multitask-run1` es un repositorio de HuggingFace que contiene una implementación personalizada y compacta en PyTorch de la arquitectura ALBEF (Align before Fuse) orientada a tareas multitarea. Lo publica el usuario ggomesbruno bajo licencia MIT y se presenta explícitamente como un punto de partida experimental, no como un modelo preentrenado listo para producción.
+`ggomesbruno/albef-multitask-run1` es un repositorio de Hugging Face que contiene una implementación personalizada y compacta en PyTorch de la arquitectura ALBEF (Align before Fuse) orientada a tareas multitarea. Lo publica el usuario ggomesbruno bajo licencia MIT y se presenta explícitamente como un punto de partida experimental, no como un modelo preentrenado listo para producción.
 
 El repositorio incluye un `model.safetensors` que, según la propia model card, es únicamente un checkpoint de inicialización válido para pruebas de humo (smoke tests) y experimentos controlados pequeños. No se ha entrenado ni auditado, y el autor no reclama ninguna puntuación de benchmark. El tamaño declarado en safetensors es de 24.832 parámetros totales, lo que confirma que se trata de una configuración mínima de validación, no de un modelo funcional a escala real.
 
@@ -81,5 +81,5 @@ No se dispone de datos suficientes en la información proporcionada para una com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ggomesbruno/albef-multitask-run1
+- Hugging Face: https://huggingface.co/ggomesbruno/albef-multitask-run1
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

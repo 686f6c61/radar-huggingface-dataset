@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks numéricos en la informacion dispon
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UtilVision ONNX (este) | 18,13 M end-to-end (2,62 M + 15,51 M) | 640x640 px y 96 px de alto x ancho dinámico | Detección de LCD y transcripción numérica | AGPL-3.0 | ONNX en HuggingFace |
+| UtilVision ONNX (este) | 18,13 M end-to-end (2,62 M + 15,51 M) | 640x640 px y 96 px de alto x ancho dinámico | Detección de LCD y transcripción numérica | AGPL-3.0 | ONNX en Hugging Face |
 | Ultralytics YOLO11n | 2,6 M aprox. (detector base) | 640x640 px | Detección de objetos genérica | AGPL-3.0 (o licencia enterprise de Ultralytics) | Pesos PyTorch y exportaciones |
 | PaddlePaddle PP-OCRv6 medium rec | 15,51 M (pesos base del reconocedor) | Altura canónica variable | Reconocimiento de texto general | Apache-2.0 | PaddlePaddle y exportaciones |
 | Tesseract OCR | no disponible | no aplica (motor OCR completo) | Reconocimiento de texto general | Apache-2.0 | Ejecutable y librerías |
@@ -80,7 +80,7 @@ La comparativa con PaddleOCR y Tesseract es orientativa: UtilVision ONNX no es u
 - Compatibilidad de runtime: la ejecución en navegador depende de WebGPU o WebAssembly SIMD multi-hilo, que no están disponibles en todos los navegadores o versiones.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/majorpurple/utilvision-onnx
+- Modelo en Hugging Face: https://huggingface.co/majorpurple/utilvision-onnx
 - Aplicación de producción: https://utilvision.vercel.app/
 - Arquitectura del sistema y benchmarks: https://utilvision.vercel.app/about.html
 - Modelo base del detector: https://huggingface.co/Ultralytics/YOLO11

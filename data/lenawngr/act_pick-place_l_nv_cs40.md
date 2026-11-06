@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACT_pick-place_L_nv_cs40 es una política de robótica entrenada mediante aprendizaje por imitación con el método ACT (Action Chunking with Transformers), referenciado en el paper arXiv:2304.13705. La ha publicado el usuario lenawngr en HuggingFace usando la librería LeRobot de HuggingFace, y está especializada en una tarea concreta de pick-and-place (coger y colocar) a partir de un dataset de teleoperación denominado lenawngr/pick-place_leader_not_visible. El modelo resuelve la predicción de acciones de control para un brazo robótico: en lugar de emitir una acción por paso, genera secuencias cortas de acciones (action chunks), lo que aporta estabilidad y tasas de éxito altas en manipulación.
+ACT_pick-place_L_nv_cs40 es una política de robótica entrenada mediante aprendizaje por imitación con el método ACT (Action Chunking with Transformers), referenciado en el paper arXiv:2304.13705. La ha publicado el usuario lenawngr en Hugging Face usando la librería LeRobot de Hugging Face, y está especializada en una tarea concreta de pick-and-place (coger y colocar) a partir de un dataset de teleoperación denominado lenawngr/pick-place_leader_not_visible. El modelo resuelve la predicción de acciones de control para un brazo robótico: en lugar de emitir una acción por paso, genera secuencias cortas de acciones (action chunks), lo que aporta estabilidad y tasas de éxito altas en manipulación.
 
 El modelo es pequeño: 51.607.174 parámetros reales (según los pesos safetensors), con un repositorio de 0,2 GB. Esto lo sitúa entre los modelos de robótica ligeros, aptos para inferencia en GPU de consumo e incluso en hardware embebido. Se distribuye bajo licencia Apache 2.0 y en formato safetensors, integrándose con el ecosistema LeRobot para entrenamiento, evaluación e inferencia.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lenawngr/ACT_pick-place_L_nv_cs40 | 51.607.174 | no aplica | no disponible | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| lenawngr/ACT_pick-place_v1 | no disponible | no aplica | no disponible | no disponible | HuggingFace (citado en resultados de busqueda) |
+| lenawngr/ACT_pick-place_L_nv_cs40 | 51.607.174 | no aplica | no disponible | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| lenawngr/ACT_pick-place_v1 | no disponible | no aplica | no disponible | no disponible | Hugging Face (citado en resultados de busqueda) |
 | ACT (referencia, arXiv:2304.13705) | no disponible en la informacion | no aplica | no disponible | no disponible | Publicacion cientifica |
 
 No se dispone de datos comparativos de rendimiento ni de contexto entre estos modelos en la informacion proporcionada.
@@ -82,7 +82,7 @@ No se dispone de datos comparativos de rendimiento ni de contexto entre estos mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lenawngr/ACT_pick-place_L_nv_cs40
+- Modelo en Hugging Face: https://huggingface.co/lenawngr/ACT_pick-place_L_nv_cs40
 - Paper de ACT (referencia): https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index

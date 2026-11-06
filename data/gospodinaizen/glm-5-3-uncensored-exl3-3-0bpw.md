@@ -131,7 +131,7 @@ La única comparación cuantitativa publicada es la de tau2-bench frente al GLM-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GospodinAizen/GLM-5.3-UNCENSORED-EXL3-3.0bpw
+- Modelo en Hugging Face: https://huggingface.co/GospodinAizen/GLM-5.3-UNCENSORED-EXL3-3.0bpw
 - Modelo base (FP8, edición de pesos): https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8
 - Modelo original de Z.ai: https://huggingface.co/zai-org/GLM-5.3
 - Fichero de documentación de la edición de pesos: `CRACK_SURGERY.json` en el repositorio del modelo base

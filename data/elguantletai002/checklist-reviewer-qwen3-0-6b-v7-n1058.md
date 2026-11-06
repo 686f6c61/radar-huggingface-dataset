@@ -4,7 +4,7 @@
 
 `elguantletai002/checklist-reviewer-qwen3-0.6b-v7-n1058` es un ajuste fino (fine-tuning) del modelo base `Qwen/Qwen3-0.6B` mediante la técnica LoRA (Low-Rank Adaptation) y entrenamiento supervisado (SFT). El modelo está desarrollado por el autor `elguantletai002` y forma parte de una serie de checkpoints iterativos (v1 a v7) orientados a la revisión de listas de verificación (checklists) en contextos conversacionales. Aunque no se especifican datos de entrenamiento ni benchmarks, el nombre y la arquitectura sugieren que el objetivo es especializar un modelo pequeño y eficiente para tareas de verificación y revisión estructurada.
 
-La relevancia de este modelo radica en demostrar cómo se puede adaptar un LLM compacto (0.6B parámetros) a una tarea concreta mediante LoRA, lo que permite desplegarlo en hardware de consumo con costes reducidos. Su pipeline es `text-generation` y el repositorio tiene un tamaño de 1,9 GB, que incluye los pesos del adaptador y posiblemente el modelo base. La licencia y los idiomas soportados no se han declarado en la ficha de HuggingFace.
+La relevancia de este modelo radica en demostrar cómo se puede adaptar un LLM compacto (0.6B parámetros) a una tarea concreta mediante LoRA, lo que permite desplegarlo en hardware de consumo con costes reducidos. Su pipeline es `text-generation` y el repositorio tiene un tamaño de 1,9 GB, que incluye los pesos del adaptador y posiblemente el modelo base. La licencia y los idiomas soportados no se han declarado en la ficha de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| checklist-reviewer-qwen3-0.6b-v7-n1058 | 0,6B (base) | no disponible | no disponible | HuggingFace |
-| Qwen3-0.6B (base) | 0,6B | 32K (conocido, no en la info) | Apache 2.0 | HuggingFace |
-| Qwen3-0.6B-Instruct | 0,6B | 32K (conocido) | Apache 2.0 | HuggingFace |
+| checklist-reviewer-qwen3-0.6b-v7-n1058 | 0,6B (base) | no disponible | no disponible | Hugging Face |
+| Qwen3-0.6B (base) | 0,6B | 32K (conocido, no en la info) | Apache 2.0 | Hugging Face |
+| Qwen3-0.6B-Instruct | 0,6B | 32K (conocido) | Apache 2.0 | Hugging Face |
 
 No se dispone de comparación de rendimiento por falta de benchmarks. El modelo se diferencia del base por su ajuste para tareas de revisión de checklists, pero no hay datos cuantitativos para comparar.
 
@@ -73,7 +73,7 @@ No se dispone de comparación de rendimiento por falta de benchmarks. El modelo 
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/elguantletai002/checklist-reviewer-qwen3-0.6b-v7-n1058)
+- [Hugging Face del modelo](https://huggingface.co/elguantletai002/checklist-reviewer-qwen3-0.6b-v7-n1058)
 - [Modelo base Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
 - [Repositorio Qwen3 en GitHub](https://github.com/QwenLM/Qwen3)
 - [TRL (Transformer Reinforcement Learning)](https://github.com/huggingface/trl)

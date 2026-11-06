@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`KhaledDev/mai-gemma4-e2b-v4` es un repositorio de modelo alojado en HuggingFace por el usuario KhaledDev, publicado el 24 de octubre de 2026 y etiquetado con `transformers`, `safetensors` y `unsloth`. El repositorio no incluye model card sustantiva: la que aparece es la plantilla genérica autogenerada por HuggingFace, con todos los campos marcados como "[More Information Needed]". No hay artículo, blog, demo ni documentación asociada que permita verificar qué contiene el checkpoint.
+`KhaledDev/mai-gemma4-e2b-v4` es un repositorio de modelo alojado en Hugging Face por el usuario KhaledDev, publicado el 24 de octubre de 2026 y etiquetado con `transformers`, `safetensors` y `unsloth`. El repositorio no incluye model card sustantiva: la que aparece es la plantilla genérica autogenerada por Hugging Face, con todos los campos marcados como "[More Information Needed]". No hay artículo, blog, demo ni documentación asociada que permita verificar qué contiene el checkpoint.
 
 El nombre del repositorio sugiere una relación con la familia Gemma y con una variante de nomenclatura "E2B", y la etiqueta `unsloth` apunta a un proceso de ajuste fino o cuantización con esa herramienta, pero ninguna de estas inferencias está confirmada por el autor. El tamaño del repositorio (0,1 GB) es coherente con un adaptador LoRA, un checkpoint cuantizado de baja precisión o un modelo de muy pequeño tamaño, no con pesos completos en precisión nativa de un modelo de miles de millones de parámetros.
 
@@ -28,7 +28,7 @@ Por tanto, esta ficha documenta únicamente lo verificable a partir de los metad
 | Descargas / likes | 0 / 0 |
 | Pipeline declarado | no disponible |
 
-Nota sobre `arxiv:1910.09700`: ese identificador corresponde a Lacoste et al. (2019), el artículo sobre estimación de emisiones de carbono que HuggingFace inserta por defecto en la plantilla de model card. No es una referencia a la arquitectura ni al entrenamiento de este modelo.
+Nota sobre `arxiv:1910.09700`: ese identificador corresponde a Lacoste et al. (2019), el artículo sobre estimación de emisiones de carbono que Hugging Face inserta por defecto en la plantilla de model card. No es una referencia a la arquitectura ni al entrenamiento de este modelo.
 
 ## Arquitectura y entrenamiento
 
@@ -45,7 +45,7 @@ Respecto a los datos de entrenamiento, no se documenta el volumen de tokens, la 
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible; el campo de idiomas no está cumplimentado.
 - Modo "thinking" o razonamiento explícito: no disponible.
-- Compatibilidad con endpoints de inferencia: la etiqueta `endpoints_compatible` indica que el repositorio es desplegable a través de HuggingFace Inference Endpoints, lo que constituye el único indicio técnico funcional disponible.
+- Compatibilidad con endpoints de inferencia: la etiqueta `endpoints_compatible` indica que el repositorio es desplegable a través de Hugging Face Inference Endpoints, lo que constituye el único indicio técnico funcional disponible.
 
 ## Casos de uso
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM para inferencia: no determinable sin conocer el número de parámetros y el formato de los pesos. El tamaño del repositorio (0,1 GB) es demasiado pequeño para contener pesos completos en fp16 de un modelo de miles de millones de parámetros, lo que apunta a un adaptador o a una cuantización agresiva, pero no permite calcular requisitos reales de despliegue.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no verificable; si finalmente se trata de un adaptador LoRA, el requisito vendría determinado por el modelo base, que se desconoce.
-- Opciones de despliegue: `transformers` (biblioteca declarada) y HuggingFace Inference Endpoints (por la etiqueta `endpoints_compatible`). No hay confirmación de compatibilidad con vLLM, llama.cpp, Ollama o TGI, y en el caso de llama.cpp u Ollama requeriría pesos en GGUF, formato que no aparece en el repositorio.
+- Opciones de despliegue: `transformers` (biblioteca declarada) y Hugging Face Inference Endpoints (por la etiqueta `endpoints_compatible`). No hay confirmación de compatibilidad con vLLM, llama.cpp, Ollama o TGI, y en el caso de llama.cpp u Ollama requeriría pesos en GGUF, formato que no aparece en el repositorio.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -95,8 +95,8 @@ Criterio: no se identifican alternativas comparables en la informacion proporcio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KhaledDev/mai-gemma4-e2b-v4
-- Perfil del autor en HuggingFace: https://huggingface.co/KhaledDev
+- Repositorio en Hugging Face: https://huggingface.co/KhaledDev/mai-gemma4-e2b-v4
+- Perfil del autor en Hugging Face: https://huggingface.co/KhaledDev
 - Referencia del identificador `arxiv:1910.09700` incluido en las etiquetas (artículo sobre estimación de emisiones, insertado por la plantilla de HF, no es documentación del modelo): https://arxiv.org/abs/1910.09700
 - Unsloth (herramienta citada en las etiquetas): https://github.com/unslothai/unsloth
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la búsqueda web disponible.

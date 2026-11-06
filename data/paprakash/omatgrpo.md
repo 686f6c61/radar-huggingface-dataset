@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OMatGRPO es un conjunto de pesos y estructuras cristalinas generadas publicado por el autor paprakash en HuggingFace, asociado al articulo "Reinforcement Learning on the Discrete Composition Channel of a Crystal Generator: Validated Gains and Reward Hacking". No es un modelo de lenguaje: es un modelo generativo de materiales que produce estructuras cristalinas (composicion, posiciones atomicas y red) mediante el denominado canal discreto de composicion de un generador OMatG.
+OMatGRPO es un conjunto de pesos y estructuras cristalinas generadas publicado por el autor paprakash en Hugging Face, asociado al articulo "Reinforcement Learning on the Discrete Composition Channel of a Crystal Generator: Validated Gains and Reward Hacking". No es un modelo de lenguaje: es un modelo generativo de materiales que produce estructuras cristalinas (composicion, posiciones atomicas y red) mediante el denominado canal discreto de composicion de un generador OMatG.
 
 El modelo parte de un prior OMatG propio, preentrenado sobre MP-20 para generacion de novo con canales estocasticos de posicion y red y flow matching discreto enmascarado para las especies. Sobre ese prior se aplica aprendizaje por refuerzo (GRPO) con siete variantes de recompensa y enrutado, cada una publicada como un checkpoint independiente de 750 rollouts.
 
@@ -102,7 +102,7 @@ Comparativa frente a otros generadores de cristales de la literatura: no disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/paprakash/OMatGRPO
+- Hugging Face: https://huggingface.co/paprakash/OMatGRPO
 - Codigo: https://github.com/paprakash/OMatGRPO
 - Paper MP-20 citado en el README y en las etiquetas: https://arxiv.org/abs/2110.06197
 - Referencia arXiv etiquetada en el repositorio (presumiblemente OMatG; no confirmado en la informacion disponible): https://arxiv.org/abs/2502.02582

@@ -74,5 +74,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PowerMachine/aurora-multimodal-ptbr
+- Hugging Face: https://huggingface.co/PowerMachine/aurora-multimodal-ptbr
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

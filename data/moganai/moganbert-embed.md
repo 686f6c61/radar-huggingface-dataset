@@ -99,7 +99,7 @@ Nota: los datos de los modelos de comparacion no aparecen en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moganai/MoganBERT-Embed
+- Modelo en Hugging Face: https://huggingface.co/moganai/MoganBERT-Embed
 - Paper (arXiv:2608.25768): https://huggingface.co/papers/2608.25768
 - Blog de MoganAI: https://moganai.github.io/
 - Coleccion de modelos MoganBERT: https://huggingface.co/collections/moganai/moganbert

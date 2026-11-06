@@ -62,15 +62,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-H3-PTD-LoRAs | no disponible | no disponible | no disponible | minimax-h3-community-license-agreement | gated en HuggingFace |
-| MiniMax-H3 (base) | no disponible | no disponible | no disponible | minimax-h3-community-license-agreement | HuggingFace |
-| MiniMax-H3-PTD-LoRAs (taobao-content-ai) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| MiniMax-H3-PTD-LoRAs | no disponible | no disponible | no disponible | minimax-h3-community-license-agreement | gated en Hugging Face |
+| MiniMax-H3 (base) | no disponible | no disponible | no disponible | minimax-h3-community-license-agreement | Hugging Face |
+| MiniMax-H3-PTD-LoRAs (taobao-content-ai) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones para una comparativa cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar la licencia en HuggingFace antes de descargar.
+- Acceso restringido (gated): requiere aceptar la licencia en Hugging Face antes de descargar.
 - Licencia minimax-h3-community-license-agreement: revisar condiciones antes de uso comercial; no es una licencia open source estandar.
 - Sin model card detallada: no hay documentacion sobre sesgos, alucinaciones visuales ni limitaciones de idioma.
 - Repo sin descargas ni validacion de la comunidad: calidad y reproducibilidad no verificadas.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento ni de especificaciones para una comparativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PrometheusEXE/MiniMax-H3-PTD-LoRAs
+- Hugging Face: https://huggingface.co/PrometheusEXE/MiniMax-H3-PTD-LoRAs
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Pesos PTD (taobao-content-ai): https://huggingface.co/taobao-content-ai/MiniMax-H3-PTD-LoRAs
 - Pesos PTD RefAsymOPD (taobao-content-ai): https://huggingface.co/taobao-content-ai/MiniMax-H3-PTD-RefAsymOPD-LoRAs

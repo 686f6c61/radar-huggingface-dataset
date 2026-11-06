@@ -4,7 +4,7 @@
 
 El modelo `omkarpatil/move-soft-toy-right-dp-wristnp-diffusion` es una política de difusión (Diffusion Policy) entrenada con LeRobot para el robot manipulador ROBOTIS FFW SG2 Rev1. Desarrollado por el usuario omkarpatil, resuelve la tarea de mover un juguete blando hacia la derecha utilizando exclusivamente dos cámaras de muñeca (izquierda y derecha) y sin información de propriocepción (observation.state a cero). Es un modelo de control robótico basado en aprendizaje por imitación, relevante para la comunidad de robótica open source por su integración con el ecosistema LeRobot y su enfoque en normalización compartida entre tareas del mismo grupo.
 
-La arquitectura es una política de difusión (DDPM) con 274.492.048 parámetros, entrenada durante 100.000 pasos con un batch de 8 sobre un dataset convertido al formato v3.0 de LeRobot. La licencia es Apache 2.0, lo que permite uso comercial y modificación. El modelo está diseñado para ejecutarse en el pipeline de robótica de HuggingFace y se distribuye en formato safetensors.
+La arquitectura es una política de difusión (DDPM) con 274.492.048 parámetros, entrenada durante 100.000 pasos con un batch de 8 sobre un dataset convertido al formato v3.0 de LeRobot. La licencia es Apache 2.0, lo que permite uso comercial y modificación. El modelo está diseñado para ejecutarse en el pipeline de robótica de Hugging Face y se distribuye en formato safetensors.
 
 ## Especificaciones tecnicas
 
@@ -71,6 +71,6 @@ No se dispone de información sobre modelos comparables directamente en la docum
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/omkarpatil/move-soft-toy-right-dp-wristnp-diffusion
+- Hugging Face: https://huggingface.co/omkarpatil/move-soft-toy-right-dp-wristnp-diffusion
 - LeRobot (framework): https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://lerobot.readthedocs.io/

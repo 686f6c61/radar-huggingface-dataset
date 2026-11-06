@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Annakwdo28/vit-baseline es un repositorio de HuggingFace publicado por el usuario Annakwdo28 que contiene una implementación propia de un Vision Transformer (ViT) orientada a tareas multitarea ("multitask") con una configuración declarada como "xlarge". El elemento principal del repositorio no es un modelo entrenado, sino el artefacto de código (`train.py`) junto con un `config.json`, un `training_args.json` y un `model.safetensors` que el propio autor describe explícitamente como un checkpoint de inicialización válido para pruebas de humo (smoke tests), no como un modelo con rendimiento evaluado.
+Annakwdo28/vit-baseline es un repositorio de Hugging Face publicado por el usuario Annakwdo28 que contiene una implementación propia de un Vision Transformer (ViT) orientada a tareas multitarea ("multitask") con una configuración declarada como "xlarge". El elemento principal del repositorio no es un modelo entrenado, sino el artefacto de código (`train.py`) junto con un `config.json`, un `training_args.json` y un `model.safetensors` que el propio autor describe explícitamente como un checkpoint de inicialización válido para pruebas de humo (smoke tests), no como un modelo con rendimiento evaluado.
 
 La relevancia de esta ficha es, por tanto, limitada y de naturaleza distinta a la de un modelo publicado para uso en producción. Se trata de un punto de partida experimental: el autor indica de forma expresa que no se reclama ninguna puntuación de benchmark, que no se ha realizado entrenamiento ni auditoría de robustez, sesgo o transferencia de dominio, y que cualquier resultado futuro deberá documentarse por separado de los valores por defecto incluidos.
 
@@ -72,10 +72,10 @@ La comparación se establece frente a ViT estándar de referencia, dado que no e
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Annakwdo28/vit-baseline | 49.600 (0,05 M) | no disponible | sin benchmarks; checkpoint sin entrenar | BSD-3-Clause | HuggingFace, 0 descargas |
+| Annakwdo28/vit-baseline | 49.600 (0,05 M) | no disponible | sin benchmarks; checkpoint sin entrenar | BSD-3-Clause | Hugging Face, 0 descargas |
 | ViT-Base (referencia canonica) | 86 M | parches 16×16, resolución típica 224×224 | ImageNet top-1 en torno al 77-81 % según variante de entrenamiento | según implementación (a menudo Apache-2.0) | ampliamente disponible |
 | ViT-Large (referencia canonica) | 307 M | parches 16×16, resolución típica 224×224 | superior a ViT-Base en ImageNet, con mayor coste de cómputo | según implementación | ampliamente disponible |
-| DINOv2 ViT-S/14 (referencia) | 21 M | parches 14×14, autoconsupervisado | representaciones fuertes para tareas densas | Apache-2.0 en las versiones publicadas | HuggingFace y otros |
+| DINOv2 ViT-S/14 (referencia) | 21 M | parches 14×14, autoconsupervisado | representaciones fuertes para tareas densas | Apache-2.0 en las versiones publicadas | Hugging Face y otros |
 
 La diferencia fundamental no es de rendimiento sino de estado: el modelo aquí descrito no está entrenado, mientras que las alternativas citadas son checkpoints con pesos útiles. Cualquier comparación cuantitativa con ellas sería engañosa.
 
@@ -93,7 +93,7 @@ La diferencia fundamental no es de rendimiento sino de estado: el modelo aquí d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Annakwdo28/vit-baseline
+- Modelo en Hugging Face: https://huggingface.co/Annakwdo28/vit-baseline
 - Paper original de ViT (referencia de arquitectura): https://arxiv.org/abs/2010.11929
 - Repositorio de referencia de Vision Transformer de Google Research: https://github.com/google-research/vision_transformer
 - Documentación de safetensors: https://huggingface.co/docs/safetensors

@@ -70,9 +70,9 @@ El autor indica que el umbral 0,21 se seleccionó en validación y que la métri
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| english-split-and-rephrase-gate | 149,6 M | no disponible | Clasificación stop/continue para split-and-rephrase | Apache-2.0 | HuggingFace |
-| answerdotai/ModernBERT-base | 149,6 M | no disponible en la información | Encoder base multiuso | Apache-2.0 | HuggingFace |
-| Modelos de clasificación BERT-base fine-tuneados | ~110 M | 512 tokens típicamente | Clasificación de texto genérica | variable | HuggingFace |
+| english-split-and-rephrase-gate | 149,6 M | no disponible | Clasificación stop/continue para split-and-rephrase | Apache-2.0 | Hugging Face |
+| answerdotai/ModernBERT-base | 149,6 M | no disponible en la información | Encoder base multiuso | Apache-2.0 | Hugging Face |
+| Modelos de clasificación BERT-base fine-tuneados | ~110 M | 512 tokens típicamente | Clasificación de texto genérica | variable | Hugging Face |
 
 No se dispone de comparaciones directas con otros gates de split-and-rephrase en la información proporcionada. La alternativa más cercana es el propio ModernBERT-base sin fine-tuning, que no realiza esta tarea específica, o clasificadores BERT genéricos que requerirían un fine-tuning equivalente.
 
@@ -89,7 +89,7 @@ No se dispone de comparaciones directas con otros gates de split-and-rephrase en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soundstarrain/english-split-and-rephrase-gate
+- Modelo en Hugging Face: https://huggingface.co/soundstarrain/english-split-and-rephrase-gate
 - Repositorio de inferencia (CLI y pipeline): https://github.com/soundstarrain/english-split-and-rephrase
 - Modelo rewriter companion: https://huggingface.co/soundstarrain/english-split-and-rephrase-rewriter
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base

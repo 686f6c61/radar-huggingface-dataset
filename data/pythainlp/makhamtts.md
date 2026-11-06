@@ -89,7 +89,7 @@ Nota: los datos de las filas de Kokoro-82M, XTTS-v2 y Piper proceden del conocim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pythainlp/MakHamTTS
+- Modelo en Hugging Face: https://huggingface.co/pythainlp/MakHamTTS
 - Repositorio de codigo para ejecutar el modelo: https://github.com/wannaphong/MakHamTTS
 - FastThaiG2P (AWS Labs), G2P necesario para la conversion texto-fonema: https://github.com/awslabs/FastThaiG2P/
 - No se han encontrado otros enlaces relevantes (papers, blogs o demos) en la busqueda web realizada.

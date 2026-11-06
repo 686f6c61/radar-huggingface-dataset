@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cortex-3-Story es un repositorio publicado en HuggingFace por el usuario VADRK155 bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 1 like, y su tamano de repositorio es de aproximadamente 0,2 GB. El repositorio no declara pipeline de inferencia, no especifica idiomas soportados y su model card se limita a una linea de metadatos de licencia (`license: mit`), sin descripcion tecnica, sin instrucciones de uso y sin ejemplos.
+Cortex-3-Story es un repositorio publicado en Hugging Face por el usuario VADRK155 bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 1 like, y su tamano de repositorio es de aproximadamente 0,2 GB. El repositorio no declara pipeline de inferencia, no especifica idiomas soportados y su model card se limita a una linea de metadatos de licencia (`license: mit`), sin descripcion tecnica, sin instrucciones de uso y sin ejemplos.
 
 La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los unicos enlaces recuperados corresponden a manuales de usuario en aleman de un reloj inteligente Denver SWC-156, un producto sin relacion alguna con el repositorio. No existe por tanto documentacion externa, publicacion, paper, repositorio de codigo ni demo asociada que permita verificar que es Cortex-3-Story ni como se ha construido.
 
@@ -89,7 +89,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, el contexto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VADRK155/Cortex-3-Story
+- Repositorio en Hugging Face: https://huggingface.co/VADRK155/Cortex-3-Story
 - Model card del autor: https://huggingface.co/VADRK155/Cortex-3-Story (contiene unicamente la declaracion de licencia MIT)
 - Nota sobre la busqueda web: los resultados recuperados no guardan ninguna relacion con el modelo. Corresponden a manuales del reloj inteligente Denver SWC-156 (https://www.manualslib.de/manual/1091591/Denver-Swc-156.html, https://www.bedienungsanleitu.ng/denver/swc-156/anleitung, https://manuall.de/denver-swc-156-smartwatch/, https://denver.eu/Files/Images/User%20manuals/Wearables/SWC-156_German.pdf, https://www.manualslib.de/products/Denver-Swc-156-12490581.html) y se listan solo para dejar constancia de que no aportan informacion sobre Cortex-3-Story.
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo.

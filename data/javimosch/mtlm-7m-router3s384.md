@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mtlm-7m-router3s384 | 8.335.008 (safetensors); ~7,2M segun card | 384 tokens | decide 97,6% / noul 98,9% / score 97,9%; concordancia 1,000 | Apache-2.0 | HuggingFace |
-| mtlm-7m-router2s384 (predecesor) | No disponible | 384 tokens (misma arquitectura) | Misma arquitectura; concordancia cabeza-tronco 0,9275 | Apache-2.0 | HuggingFace |
+| mtlm-7m-router3s384 | 8.335.008 (safetensors); ~7,2M segun card | 384 tokens | decide 97,6% / noul 98,9% / score 97,9%; concordancia 1,000 | Apache-2.0 | Hugging Face |
+| mtlm-7m-router2s384 (predecesor) | No disponible | 384 tokens (misma arquitectura) | Misma arquitectura; concordancia cabeza-tronco 0,9275 | Apache-2.0 | Hugging Face |
 
 No se dispone de datos publicados de otros routers o clasificadores de intenciones directamente comparables (parametros, contexto y metricas homologas) en la informacion proporcionada, por lo que la comparativa con alternativas externas queda como no disponible.
 
@@ -94,12 +94,12 @@ No se dispone de datos publicados de otros routers o clasificadores de intencion
 - Riesgo de falsos despachos: el mecanismo de delegacion exige que la cabeza tipada y la ruta generativa fallen en la misma direccion, pero sigue siendo posible si ambas coinciden en el error.
 - Aunque la licencia es Apache-2.0 y permite uso comercial, el modelo se apoya en el ecosistema MFL del autor (machin, machin-anvil) para el endpoint de despacho; conviene revisar las licencias de esos componentes antes de integrarlos en produccion.
 - Las cabezas de cliente personalizadas requieren datos de frases de ejemplo representativos; su calidad depende directamente de la cobertura del JSON de configuracion.
-- Los metadatos de HuggingFace indican fecha de creacion 2026-09-22, posterior a la fecha habitual de consulta; puede tratarse de un error de marcas de tiempo en el repositorio.
+- Los metadatos de Hugging Face indican fecha de creacion 2026-09-22, posterior a la fecha habitual de consulta; puede tratarse de un error de marcas de tiempo en el repositorio.
 - El repositorio registra 0 descargas y 0 likes, y un tamano declarado de 0,0 GB: no hay evidencia de uso en produccion por terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/javimosch/mtlm-7m-router3s384
+- Modelo en Hugging Face: https://huggingface.co/javimosch/mtlm-7m-router3s384
 - Predecesor mtlm-7m-router2s384: https://huggingface.co/javimosch/mtlm-7m-router2s384
 - Framework machin/MFL: https://github.com/javimosch/machin
 - Servidor machin-anvil (endpoint compatible con OpenAI): https://github.com/javimosch/machin-anvil

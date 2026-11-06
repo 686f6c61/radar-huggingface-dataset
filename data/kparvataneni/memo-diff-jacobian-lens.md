@@ -79,7 +79,7 @@ La principal diferencia es que el recurso de kparvataneni incluye múltiples che
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kparvataneni/memo-diff-jacobian-lens
+- Repositorio Hugging Face: https://huggingface.co/kparvataneni/memo-diff-jacobian-lens
 - Repositorio GitHub del proyecto asociado: https://github.com/kveni12/model-memo-diff
 - Biblioteca de Jacobian lens de Anthropic: https://github.com/anthropics/jacobian-lens
 - Documentación de la biblioteca (DeepWiki): https://deepwiki.com/anthropics/jacobian-lens/2.4-applying-the-lens-(jacobianlens)

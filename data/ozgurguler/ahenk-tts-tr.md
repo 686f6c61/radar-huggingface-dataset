@@ -94,7 +94,7 @@ No se dispone de datos de otros sistemas TTS comparables en la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ozgurguler/ahenk-tts-tr
+- Modelo en Hugging Face: https://huggingface.co/ozgurguler/ahenk-tts-tr
 - Modelo base VoxCPM2: https://huggingface.co/openbmb/VoxCPM2
 - Modelo pequeño Ahenk Cep: https://huggingface.co/ozgurguler/ahenk-cep-tr
 - Código y utilidades de medida: https://github.com/ozguradmin/ahenk-turkish-tts

@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-last-third-sft-seed5-epoch3
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-last-third-sft-seed5-epoch3
 - Modelo base de Ai2: https://allenai.org/olmo
 - Repositorio OLMo en GitHub: https://github.com/allenai/OLMo
 - Variante similar de longtermrisk: https://huggingface.co/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-sft-seed5

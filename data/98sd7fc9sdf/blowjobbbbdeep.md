@@ -66,5 +66,5 @@ No disponible. No se conocen otros adaptadores comparables en el mismo repositor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/98sd7fc9sdf/blowjobbbbDeep
+- Repositorio Hugging Face: https://huggingface.co/98sd7fc9sdf/blowjobbbbDeep
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw (enlace inferido, no confirmado en la información proporcionada)

@@ -80,6 +80,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aether258/pi05_bi_two_tubes_all_step8000
+- Modelo en Hugging Face: https://huggingface.co/Aether258/pi05_bi_two_tubes_all_step8000
 - Dataset de entrenamiento: https://huggingface.co/datasets/KaiyueChen/two_tubes_01
 - Perfil del autor: https://huggingface.co/Aether258

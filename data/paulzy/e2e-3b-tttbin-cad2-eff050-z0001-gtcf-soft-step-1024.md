@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `paulzy/e2e-3b-tttbin-cad2-eff050-z0001-gtcf-soft-step-1024` es un checkpoint de pesos liberado por el usuario paulzy en HuggingFace, orientado a la investigación en test-time training (TTT) y early-exit en modelos de lenguaje. Se presenta como una versión "weights-only, inference-ready" del paso 1024 de un entrenamiento denominado "E2E 3B p24-r1", con un router binario de cadencia 2 y coeficiente z de 0.0001. La arquitectura subyacente parece ser un transformer de 32 capas con hidden size 2560, entrenado con secuencias de 8192 tokens, aunque la model card no especifica el número total de parámetros (el nombre sugiere 3 mil millones).
+El modelo `paulzy/e2e-3b-tttbin-cad2-eff050-z0001-gtcf-soft-step-1024` es un checkpoint de pesos liberado por el usuario paulzy en Hugging Face, orientado a la investigación en test-time training (TTT) y early-exit en modelos de lenguaje. Se presenta como una versión "weights-only, inference-ready" del paso 1024 de un entrenamiento denominado "E2E 3B p24-r1", con un router binario de cadencia 2 y coeficiente z de 0.0001. La arquitectura subyacente parece ser un transformer de 32 capas con hidden size 2560, entrenado con secuencias de 8192 tokens, aunque la model card no especifica el número total de parámetros (el nombre sugiere 3 mil millones).
 
 La relevancia de este modelo radica en su enfoque experimental: combina test-time training (adaptación del modelo durante la inferencia) con early-exit (salida anticipada en capas intermedias), lo que podría reducir el coste computacional en escenarios de baja complejidad. Sin embargo, la documentación es extremadamente limitada: no se incluyen tokenizer, estado de optimizador, ni métricas numéricas de evaluación. Solo se menciona que las evaluaciones de NIAH-1, NIAH-2, NIAH-3 y LongBenchV2 están "completas", y PG-19 está "pending_by_policy", sin ofrecer puntuaciones concretas.
 
@@ -72,5 +72,5 @@ No se dispone de información suficiente para realizar una comparativa objetiva.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/paulzy/e2e-3b-tttbin-cad2-eff050-z0001-gtcf-soft-step-1024
+- Modelo en Hugging Face: https://huggingface.co/paulzy/e2e-3b-tttbin-cad2-eff050-z0001-gtcf-soft-step-1024
 - No se han encontrado papers, blogs, repositorios adicionales ni demos relacionados en la búsqueda web.

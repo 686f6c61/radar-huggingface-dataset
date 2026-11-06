@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de otras comparaciones cuantitativas con
 
 ## Enlaces
 
-- Adaptador LoRA en HuggingFace: https://huggingface.co/caseyeasd/claudefriend-lora
+- Adaptador LoRA en Hugging Face: https://huggingface.co/caseyeasd/claudefriend-lora
 - Modelo fusionado (bf16) y tokenizer: https://huggingface.co/caseyeasd/claudefriend
 - Write-up del autor, "Training Claude's Best Friend": https://casey.you/posts/claudefriend/
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

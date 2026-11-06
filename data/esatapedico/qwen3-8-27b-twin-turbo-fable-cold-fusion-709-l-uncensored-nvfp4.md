@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NVFP4 es un checkpoint cuantizado en NVFP4 del modelo DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored, que a su vez deriva de Qwen/Qwen3.8-27B. El autor de la cuantización es el usuario de HuggingFace esatapedico, y el resultado es un modelo de generación de texto de 27.320.697.856 parámetros (unos 27,3 mil millones) con una única ventana de contexto declarada de 262.144 tokens. La arquitectura indicada en la configuración es Qwen3_5ForCausalLM, con 64 capas y un esquema híbrido basado en GatedDeltaNet (atención lineal combinada con capas de atención completa) más un cabezal MTP de predicción multi-token.
+Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NVFP4 es un checkpoint cuantizado en NVFP4 del modelo DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored, que a su vez deriva de Qwen/Qwen3.8-27B. El autor de la cuantización es el usuario de Hugging Face esatapedico, y el resultado es un modelo de generación de texto de 27.320.697.856 parámetros (unos 27,3 mil millones) con una única ventana de contexto declarada de 262.144 tokens. La arquitectura indicada en la configuración es Qwen3_5ForCausalLM, con 64 capas y un esquema híbrido basado en GatedDeltaNet (atención lineal combinada con capas de atención completa) más un cabezal MTP de predicción multi-token.
 
 La relevancia de esta ficha es doble. Por un lado, el checkpoint aplica cuantización de pesos a 4 bits en formato NVFP4 (W4A16, escalas FP8 E4M3, tamaño de grupo 16) mediante compressed-tensors, reduciendo el peso de los tensores lineal densos mientras mantiene en BF16 el torre de visión, la ruta de atención lineal, el lm_head y el cabezal MTP. Por otro, el formato NVFP4 está pensado para hardware Blackwell, de modo que este repositorio es relevante para quien quiera servir un modelo de 27B con requisitos de VRAM reducidos en GPUs de esa generación.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (NVFP4) | 27,3 mil millones | 262.144 | NVFP4 W4A16 + BF16 parcial | Apache 2.0 | Publicado en HuggingFace, 0 descargas |
+| Este checkpoint (NVFP4) | 27,3 mil millones | 262.144 | NVFP4 W4A16 + BF16 parcial | Apache 2.0 | Publicado en Hugging Face, 0 descargas |
 | DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored | 27,3 mil millones (heredado) | 262.144 (heredado) | BF16 presumiblemente | Apache 2.0 | Publicado, es el modelo base |
 | Qwen/Qwen3.8-27B | 27,3 mil millones (heredado) | 262.144 (heredado) | Original sin cuantizar | Apache 2.0 según la model card | Referenciado como origen en la model card |
 | Builds GGUF planificados del mismo autor | 27,3 mil millones | 262.144 (heredado) | Backbone NVFP4 de 448 tensores | Apache 2.0 | Anunciados, no publicados |
@@ -98,7 +98,7 @@ No se han identificado en la información proporcionada otros modelos comparable
 
 ## Enlaces
 
-- Repositorio HuggingFace de este checkpoint: https://huggingface.co/esatapedico/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NVFP4
+- Repositorio Hugging Face de este checkpoint: https://huggingface.co/esatapedico/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NVFP4
 - Modelo base (ajuste TWIN-TURBO sin cuantizar): https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
 - Modelo de origen citado en la model card: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GGUF planificado (no publicado en el momento de redactar esta ficha): `esatapedico/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NVFP4-GGUF`

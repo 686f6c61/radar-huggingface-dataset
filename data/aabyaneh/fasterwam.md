@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aabyaneh/fasterwam` es un repositorio de modelo alojado en HuggingFace por el usuario `aabyaneh`, publicado bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene unicamente el bloque de metadatos con la licencia y ninguna descripcion tecnica, y el repositorio no registra descargas ni "likes", por lo que se trata de una publicacion sin traccion ni documentacion publica asociada.
+`aabyaneh/fasterwam` es un repositorio de modelo alojado en Hugging Face por el usuario `aabyaneh`, publicado bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene unicamente el bloque de metadatos con la licencia y ninguna descripcion tecnica, y el repositorio no registra descargas ni "likes", por lo que se trata de una publicacion sin traccion ni documentacion publica asociada.
 
 No hay informacion verificable sobre la arquitectura, el numero de parametros, la longitud de contexto, los datos de entrenamiento ni las capacidades del modelo. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo: los unicos enlaces recuperados corresponden a listados de lamparas y linternas frontales en tiendas alemanas, completamente ajenos al ambito de la inteligencia artificial. Tampoco se ha localizado paper, blog tecnico, repositorio de codigo ni demo que documente el proyecto.
 
@@ -79,6 +79,6 @@ No disponible. Al desconocerse la categoria del modelo (tamano, modalidad, tarea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aabyaneh/fasterwam
+- Modelo en Hugging Face: https://huggingface.co/aabyaneh/fasterwam
 
 No se han encontrado otros enlaces relevantes (paper, blog tecnico, repositorio de codigo, demo o dataset) en la busqueda web realizada. Los resultados obtenidos correspondian a listados de productos de iluminacion en comercios alemanes y no guardan relacion con el modelo.

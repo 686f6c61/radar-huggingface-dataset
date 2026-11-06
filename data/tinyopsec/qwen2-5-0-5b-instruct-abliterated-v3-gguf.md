@@ -79,7 +79,7 @@ La propuesta de valor de esta ficha frente a las alternativas es la disponibilid
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tinyopsec/Qwen2.5-0.5B-Instruct-abliterated-v3-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/Qwen2.5-0.5B-Instruct-abliterated-v3-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Modelo abliterado original: https://huggingface.co/huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3
 - llama.cpp: https://github.com/ggerganov/llama.cpp

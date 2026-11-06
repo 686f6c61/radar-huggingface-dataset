@@ -93,7 +93,7 @@ La comparativa directa con otros modelos de la misma categoria (abliterados o cu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mvid/Huihui-Qwen3.8-27B-abliterated-MTPLX-Q8
+- Repositorio Hugging Face: https://huggingface.co/mvid/Huihui-Qwen3.8-27B-abliterated-MTPLX-Q8
 - Modelo base abliterado: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Herramienta de abliteracion: https://github.com/Sumandora/remove-refusals-with-transformers
 - Libreria MTPLX: https://github.com/youssofal/MTPLX

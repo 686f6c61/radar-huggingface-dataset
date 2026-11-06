@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sarahflore/poolformer-multitask-2023 es un repositorio experimental publicado en HuggingFace por el usuario Sarahflore que contiene una implementación propia de una arquitectura PoolFormer orientada a tareas múltiples (multitask). No se trata de un modelo entrenado, sino de un punto de partida reproducible: el autor lo describe explícitamente como "experimental" y advierte que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests), no un modelo con benchmarks publicados. El repositorio incluye `main.py` (implementación y punto de entrada), `config.json` (arquitectura), `training_args.json` (receta de experimento) y `model.safetensors` (inicialización).
+Sarahflore/poolformer-multitask-2023 es un repositorio experimental publicado en Hugging Face por el usuario Sarahflore que contiene una implementación propia de una arquitectura PoolFormer orientada a tareas múltiples (multitask). No se trata de un modelo entrenado, sino de un punto de partida reproducible: el autor lo describe explícitamente como "experimental" y advierte que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests), no un modelo con benchmarks publicados. El repositorio incluye `main.py` (implementación y punto de entrada), `config.json` (arquitectura), `training_args.json` (receta de experimento) y `model.safetensors` (inicialización).
 
 El dato más relevante es la enorme discrepancia entre la escala declarada y el tamaño real. La configuración etiqueta el modelo como escala "huge", pero el recuento real de parámetros de `model.safetensors` es de 16.576 parámetros (aproximadamente 0,017 millones). Es decir, estamos ante un esqueleto de código con pesos inicializados, no ante un modelo de visión de gran tamaño. El repositorio ocupa 0,0 GB y registra 0 descargas y 0 likes en el momento de la consulta, lo que refuerza su carácter de artefacto de investigación recién creado (fechas de creación y actualización del 13 de septiembre de 2026, con apenas cuatro segundos de diferencia).
 
@@ -70,7 +70,7 @@ La comparación solo puede establecerse frente a la familia PoolFormer oficial (
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sarahflore/poolformer-multitask-2023 | 16.576 (real, sin entrenar) | no disponible | Sin benchmarks publicados | MIT | HuggingFace, 0 descargas, 0 likes |
+| Sarahflore/poolformer-multitask-2023 | 16.576 (real, sin entrenar) | no disponible | Sin benchmarks publicados | MIT | Hugging Face, 0 descargas, 0 likes |
 | PoolFormer-S12 (oficial, referencia) | en torno a 12 M | no aplica (visión) | Top-1 ImageNet en torno a 77 % según la publicacion | Apache 2.0 / MIT según release | Checkpoints publicos en repos oficiales |
 | PoolFormer-M48 / variantes grandes (oficial, referencia) | en torno a 56-77 M | no aplica (visión) | Top-1 ImageNet en torno a 82 % según la publicacion | Apache 2.0 / MIT según release | Checkpoints publicos en repos oficiales |
 | DeiT-Tiny (alternativa de vision sin convoluciones) | en torno a 5 M | no aplica (visión) | Top-1 ImageNet en torno a 72 % | Apache 2.0 | Amplia disponibilidad |
@@ -92,6 +92,6 @@ Nota: las cifras de las filas de comparación son valores de referencia de la li
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sarahflore/poolformer-multitask-2023
+- Hugging Face: https://huggingface.co/Sarahflore/poolformer-multitask-2023
 - Paper de referencia de la familia PoolFormer / MetaFormer (contexto, no vinculado al repositorio): https://arxiv.org/abs/2111.11418
 - Enlaces adicionales: no se han encontrado enlaces relevantes en la busqueda web. Los resultados devueltos corresponden a tiendas de equipamiento militar y no guardan relacion con el modelo.

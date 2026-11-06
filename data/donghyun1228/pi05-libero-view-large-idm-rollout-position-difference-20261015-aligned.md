@@ -19,7 +19,7 @@ Su relevancia es metodológica más que práctica: sirve como punto de comparaci
 | Tipos de cuantizacion | no disponible; los pesos de inferencia se distribuyen en BF16 y no se publican variantes GGUF, AWQ ni GPTQ |
 | Idiomas soportados | no disponible (modelo de robotica; no se declaran idiomas) |
 | Licencia | no disponible |
-| Formato de pesos | no disponible de forma explicita; repositorio de HuggingFace con parametros de inferencia en BF16 mas assets de normalizacion |
+| Formato de pesos | no disponible de forma explicita; repositorio de Hugging Face con parametros de inferencia en BF16 mas assets de normalizacion |
 
 ## Arquitectura y entrenamiento
 
@@ -79,11 +79,11 @@ Advertencias explicitas del autor sobre esta tabla: la pantalla de diagnostico s
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (pi05-libero-view-large-idm-rollout-position-difference-aligned) | VLA π0.5 adaptado a LIBERO con auxiliar IDM | no disponible (repo de 5,9 GB, 74 hojas en BF16) | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
+| Este checkpoint (pi05-libero-view-large-idm-rollout-position-difference-aligned) | VLA π0.5 adaptado a LIBERO con auxiliar IDM | no disponible (repo de 5,9 GB, 74 hojas en BF16) | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
 | pi05_libero_base (lerobot) | VLA π0.5 base para LIBERO, solo cabezal flow-matching | no disponible | no disponible | no disponible | ModelScope |
 | pi05_libero_finetuned (lerobot) | VLA π0.5 afinado y evaluado en LIBERO | no disponible | no disponible | no disponible | ModelScope |
-| pi05-libero-source-free-split-vision-view-large-1000-20261010 | Adaptacion previa de la misma linea, con IDM solo-vision de 51 hojas y codificador de muneca separado | no disponible | no disponible | no disponible | HuggingFace |
-| pi05-libero-view-large-idm-coverage-20261015-continue | Continuacion de 200 actualizaciones con Adam/EMA restaurados | no disponible | no disponible | no disponible | HuggingFace |
+| pi05-libero-source-free-split-vision-view-large-1000-20261010 | Adaptacion previa de la misma linea, con IDM solo-vision de 51 hojas y codificador de muneca separado | no disponible | no disponible | no disponible | Hugging Face |
+| pi05-libero-view-large-idm-coverage-20261015-continue | Continuacion de 200 actualizaciones con Adam/EMA restaurados | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de cifras de parametros, contexto ni licencia para ninguno de los terminos de comparacion, por lo que la comparativa queda limitada a la disponibilidad y al tipo de modelo.
 
@@ -104,7 +104,7 @@ No se dispone de cifras de parametros, contexto ni licencia para ninguno de los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-rollout-position-difference-20261015-aligned
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-rollout-position-difference-20261015-aligned
 - Codigo de entrenamiento (commit 8e18877e): https://github.com/Donghyun1228/vla_adaptation
 - Dataset de rollouts: https://huggingface.co/datasets/Donghyun1228/libero-view-large-self-rollout-idm-24ep-20261015 (revision 34225b034da7291af2b6d7f44e3646ff52ab60f5)
 - Modelo relacionado (base con IDM solo-vision): https://huggingface.co/Donghyun1228/pi05-libero-source-free-split-vision-view-large-1000-20261010

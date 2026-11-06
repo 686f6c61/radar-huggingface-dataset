@@ -67,7 +67,7 @@ No se han publicado en la información disponible resultados comparativos frente
 
 | Modelo | Tipo | Objetivos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| synthea-5y-first-onset-forecast | Ensemble XGBoost + LightGBM | 40 condiciones, horizonte 5 años | no aplica | CC BY 4.0 | HuggingFace + GitHub |
+| synthea-5y-first-onset-forecast | Ensemble XGBoost + LightGBM | 40 condiciones, horizonte 5 años | no aplica | CC BY 4.0 | Hugging Face + GitHub |
 | Baseline XGBoost único | Gradient boosting | Configurable | no aplica | según implementación | genérico |
 | Baseline LightGBM único | Gradient boosting | Configurable | no aplica | según implementación | genérico |
 | Modelos de lenguaje para EHR | Transformer | Variable | miles de tokens | variable | variable |
@@ -86,7 +86,7 @@ No se dispone de comparativas publicadas con métricas equivalentes sobre el mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Chengxiang1122/synthea-5y-first-onset-forecast
+- Hugging Face: https://huggingface.co/Chengxiang1122/synthea-5y-first-onset-forecast
 - Repositorio de código: https://github.com/celestial1122/synthea-5y-first-onset-forecast
 - Dataset Synthea (MITRE): no disponible enlace directo en la información proporcionada
 - Paper o blog del autor: no disponible

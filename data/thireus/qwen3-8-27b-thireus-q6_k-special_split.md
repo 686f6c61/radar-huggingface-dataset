@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Thireus/Qwen3.8-27B-THIREUS-Q6_K-SPECIAL_SPLIT` es una publicación de HuggingFace creada por el usuario Thireus el 15 de agosto de 2026. El nombre del repositorio sugiere que se trata de una cuantización en formato Q6_K de un modelo base denominado "Qwen3.8-27B", probablemente derivado de la familia Qwen, aunque esta información no está confirmada en la model card proporcionada. La ficha oficial únicamente declara la licencia MIT y la región asociada (US), sin aportar detalles sobre arquitectura, parámetros, contexto o capacidades.
+El modelo `Thireus/Qwen3.8-27B-THIREUS-Q6_K-SPECIAL_SPLIT` es una publicación de Hugging Face creada por el usuario Thireus el 15 de agosto de 2026. El nombre del repositorio sugiere que se trata de una cuantización en formato Q6_K de un modelo base denominado "Qwen3.8-27B", probablemente derivado de la familia Qwen, aunque esta información no está confirmada en la model card proporcionada. La ficha oficial únicamente declara la licencia MIT y la región asociada (US), sin aportar detalles sobre arquitectura, parámetros, contexto o capacidades.
 
 La relevancia de este modelo reside en su posible utilidad como versión cuantizada para despliegue en entornos con recursos limitados, pero la ausencia de documentación técnica impide realizar una evaluación rigurosa. Al tratarse de una publicación con cero descargas y cero likes, es probable que sea un experimento personal o un repositorio de prueba. Se recomienda precaución antes de utilizarlo en producción, ya que no hay evidencia de validación ni benchmarks publicados.
 
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables dentro de la misma categoría, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-Q6_K-SPECIAL_SPLIT
+- Repositorio Hugging Face: https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-Q6_K-SPECIAL_SPLIT

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`xinyihan2000/ocr-freeform-run3` no es un modelo de aprendizaje automático entrenado, sino un repositorio de notas de investigación publicado en HuggingFace. La propia model card lo describe como una "exploratory note" sobre OCR Freeform que registra el alcance de la pregunta de investigación, los posibles factores de confusión (*confounders*), una comparación propuesta con líneas base emparejadas y los requisitos de reproducibilidad antes de reportar cualquier resultado. El repositorio contiene únicamente dos archivos de texto, `reading.md` y `README.md`, y no incluye checkpoint, código ni resultados experimentales.
+`xinyihan2000/ocr-freeform-run3` no es un modelo de aprendizaje automático entrenado, sino un repositorio de notas de investigación publicado en Hugging Face. La propia model card lo describe como una "exploratory note" sobre OCR Freeform que registra el alcance de la pregunta de investigación, los posibles factores de confusión (*confounders*), una comparación propuesta con líneas base emparejadas y los requisitos de reproducibilidad antes de reportar cualquier resultado. El repositorio contiene únicamente dos archivos de texto, `reading.md` y `README.md`, y no incluye checkpoint, código ni resultados experimentales.
 
 El autor declara explícitamente que la nota "no reclama mejoras en benchmarks, ablaciones completas, código liberado ni un checkpoint entrenado". Los únicos artefactos son documentación metodológica. Por tanto, no existe inferencia posible: el repositorio no contiene pesos funcionales, tokenizador, configuración de modelo ni pipeline declarado.
 
@@ -97,7 +97,7 @@ No disponible. El repositorio no contiene un modelo entrenado ni métricas, de m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xinyihan2000/ocr-freeform-run3
+- Repositorio en Hugging Face: https://huggingface.co/xinyihan2000/ocr-freeform-run3
 - Archivo principal citado en la model card: `reading.md` (dentro del repositorio anterior)
 - Documentación: `README.md` (dentro del repositorio anterior)
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demostraciones asociados a este modelo. Los resultados devueltos no guardan relación con el contenido del repositorio.

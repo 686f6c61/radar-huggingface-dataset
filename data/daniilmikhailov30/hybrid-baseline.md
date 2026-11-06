@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hybrid-baseline es un repositorio de HuggingFace publicado por el usuario daniilmikhailov30 que contiene una implementación funcional y mínima de una arquitectura híbrida orientada a tareas múltiples (multitask) con una configuración de escala "tiny". No se trata de un modelo entrenado ni de un checkpoint listo para producción: el propio autor lo describe como un punto de partida experimental con código transparente y pruebas de humo (smoke tests) reproducibles, y declara explícitamente que no reclama ninguna puntuación de benchmark. El checkpoint `model.safetensors` incluido es una inicialización válida para pruebas, no un modelo con pesos entrenados.
+Hybrid-baseline es un repositorio de Hugging Face publicado por el usuario daniilmikhailov30 que contiene una implementación funcional y mínima de una arquitectura híbrida orientada a tareas múltiples (multitask) con una configuración de escala "tiny". No se trata de un modelo entrenado ni de un checkpoint listo para producción: el propio autor lo describe como un punto de partida experimental con código transparente y pruebas de humo (smoke tests) reproducibles, y declara explícitamente que no reclama ninguna puntuación de benchmark. El checkpoint `model.safetensors` incluido es una inicialización válida para pruebas, no un modelo con pesos entrenados.
 
 El modelo declara 49.600 parámetros totales, una cifra que lo sitúa tres o cuatro órdenes de magnitud por debajo de cualquier LLM de uso general. La arquitectura se describe como híbrida, con atención lineal (linear attention), fusión mediante co-attention, activación gelu-tanh y normalización scalenorm. La licencia es Apache 2.0, lo que permite uso comercial y modificación, aunque el estado del artefacto (inicialización sin entrenar) limita seriamente cualquier aplicación real.
 
@@ -88,5 +88,5 @@ No disponible. No se dispone de resultados de benchmarks ni de especificaciones 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/daniilmikhailov30/hybrid-baseline
+- Hugging Face: https://huggingface.co/daniilmikhailov30/hybrid-baseline
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio de codigo o demo). Los resultados devueltos no guardan relacion con el modelo y se han omitido.

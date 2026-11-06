@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada para inferencia: el modelo completo en fp16 ocupa aproximadamente 28 GB de VRAM (14B parametros x 2 bytes por parametro), mas overhead de activaciones y optimizador. Con cuantizacion a int8 (no disponible oficialmente en este repositorio) se podria reducir a unos 14 GB.
 - GPU recomendadas: para ejecucion en fp16 se requiere una GPU con al menos 32 GB de VRAM, como NVIDIA A100, A6000 o RTX 6000 Ada. En GPUs de consumo (RTX 4090 con 24 GB) no cabe en fp16, pero podria ejecutarse con cuantizaciones de menor precision si se dispone de ellas.
 - El modelo de 1.3B de la misma familia (T2V-1.3B) requiere solo 8.19 GB de VRAM, pero este I2V-14B es significativamente mas pesado.
-- Opciones de despliegue: no se documentan en el repositorio, pero al ser un modelo de difusion, es razonable esperar soporte en frameworks como diffusers de HuggingFace, ComfyUI o pipelines especificos de Wan-AI. No se confirma compatibilidad con vLLM, llama.cpp u Ollama, que estan orientados a modelos de lenguaje.
+- Opciones de despliegue: no se documentan en el repositorio, pero al ser un modelo de difusion, es razonable esperar soporte en frameworks como diffusers de Hugging Face, ComfyUI o pipelines especificos de Wan-AI. No se confirma compatibilidad con vLLM, llama.cpp u Ollama, que estan orientados a modelos de lenguaje.
 - Latencia y throughput: no se proporcionan datos. En una RTX 4090, el modelo T2V-1.3B genera un video de 5 segundos en unos 4 segundos, pero este modelo 14B requerira mas tiempo y recursos.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se dispone de una comparativa directa con otros modelos de imagen a video en 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo espejo: https://huggingface.co/shaxiang/Wan2.1-I2V-14B-480P_fp16.safetensors
-- Repositorio HuggingFace del modelo original: https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-480P
+- Repositorio Hugging Face del modelo espejo: https://huggingface.co/shaxiang/Wan2.1-I2V-14B-480P_fp16.safetensors
+- Repositorio Hugging Face del modelo original: https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-480P
 - Pagina en ModelScope: https://www.modelscope.cn/models/Wan-AI/Wan2.1-I2V-14B-480P
 - Resumen y casos de uso en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/wan2.1-i2v-14b-480p-wan-ai

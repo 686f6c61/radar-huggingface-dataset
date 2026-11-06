@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AlphaA es un modelo publicado en HuggingFace por el usuario Anthony111hsh bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente contiene el campo de licencia en el frontmatter YAML, sin descripcion, sin especificaciones tecnicas, sin datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni likes en el momento de la consulta, y fue creado y actualizado el 31 de octubre de 2026 con apenas dos segundos de diferencia entre ambos eventos, lo que sugiere una subida automatizada o un placeholder.
+AlphaA es un modelo publicado en Hugging Face por el usuario Anthony111hsh bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente contiene el campo de licencia en el frontmatter YAML, sin descripcion, sin especificaciones tecnicas, sin datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni likes en el momento de la consulta, y fue creado y actualizado el 31 de octubre de 2026 con apenas dos segundos de diferencia entre ambos eventos, lo que sugiere una subida automatizada o un placeholder.
 
-No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, datos de entrenamiento ni capacidades del modelo. Tampoco se ha publicado ningun resultado de benchmarks ni documentacion complementaria (paper, blog o repositorio de codigo). La ausencia de pipeline declarado en HuggingFace impide confirmar incluso la tarea para la que fue disenado (text-generation, text-classification, etc.).
+No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, datos de entrenamiento ni capacidades del modelo. Tampoco se ha publicado ningun resultado de benchmarks ni documentacion complementaria (paper, blog o repositorio de codigo). La ausencia de pipeline declarado en Hugging Face impide confirmar incluso la tarea para la que fue disenado (text-generation, text-classification, etc.).
 
 En consecuencia, esta ficha se limita a reflejar los metadatos disponibles y marca explicitamente como "no disponible" cualquier dato tecnico que no pueda verificarse. Cualquier evaluacion practica del modelo requeriria descargar los pesos y realizar pruebas directas, algo que no se ha hecho para esta ficha.
 
@@ -69,7 +69,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Anthony111hsh/AlphaA
+- Hugging Face: https://huggingface.co/Anthony111hsh/AlphaA
 - Paper: no disponible
 - Blog: no disponible
 - Repositorio de codigo: no disponible

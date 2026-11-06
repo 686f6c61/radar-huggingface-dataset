@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MaiT8/sd-class-butterflies-32` es un modelo de difusion para generacion incondicional de imagenes de mariposas, publicado por el usuario MaiT8 en HuggingFace. Se trata de un artefacto educativo derivado del curso *Diffusion Models Class* de Hugging Face, no de un modelo de proposito general ni de un modelo de lenguaje. Su funcion es generar imagenes sinteticas de mariposas de 32x32 pixeles a partir de ruido gaussiano puro, sin condicionamiento textual ni de ningun otro tipo.
+`MaiT8/sd-class-butterflies-32` es un modelo de difusion para generacion incondicional de imagenes de mariposas, publicado por el usuario MaiT8 en Hugging Face. Se trata de un artefacto educativo derivado del curso *Diffusion Models Class* de Hugging Face, no de un modelo de proposito general ni de un modelo de lenguaje. Su funcion es generar imagenes sinteticas de mariposas de 32x32 pixeles a partir de ruido gaussiano puro, sin condicionamiento textual ni de ningun otro tipo.
 
 El modelo es relevante unicamente en el contexto pedagogico de la unidad 1 del citado curso, donde se ensena a entrenar un UNet de difusion desde cero sobre un dataset pequeno de imagenes de mariposas. No debe confundirse con los modelos de la familia Stable Diffusion: el prefijo `sd` del identificador hace referencia a "small diffusion" o al contexto del curso, no a Stable Diffusion, y el pipeline asociado es `DDPMPipeline`, no un pipeline texto-a-imagen.
 
@@ -43,7 +43,7 @@ No se dispone de informacion sobre el numero de tokens o imagenes de entrenamien
 - Docencia y aprendizaje de difusion: el modelo sirve como ejemplo minimo funcional para que estudiantes de la unidad 1 del curso carguen un `DDPMPipeline` y observen la generacion de imagenes a partir de ruido, sin necesidad de infraestructura de GPU.
 - Pruebas de integracion de `diffusers`: sirve para verificar que la libreria, el pipeline y el entorno de PyTorch estan correctamente instalados antes de pasar a modelos mayores, dado su tamano de 0,1 GB.
 - Experimentos de muestreo y schedulers: permite comparar visualmente el efecto de distintos schedulers (DDPM, DDIM, PNDM) sobre un modelo pequeno y rapido de ejecutar en CPU.
-- Demos educativas de bajo coste: puede desplegarse en un Space de HuggingFace gratuito o en un portatil sin GPU para ilustrar el funcionamiento de un modelo generativo en charlas o talleres.
+- Demos educativas de bajo coste: puede desplegarse en un Space de Hugging Face gratuito o en un portatil sin GPU para ilustrar el funcionamiento de un modelo generativo en charlas o talleres.
 - Investigacion sobre sobreajuste y memorizacion: con solo 18,5 millones de parametros y un dataset pequeno, es un banco de pruebas para estudiar como los modelos de difusion memorizan ejemplos de entrenamiento.
 - Referencia para fine-tuning didactico: sirve como punto de partida para que estudiantes entrenen su propio modelo con otro dataset de imagenes pequenas y comparen resultados con este.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Resolucion | Condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MaiT8/sd-class-butterflies-32 | 18,5 M | 32x32 | ninguno (incondicional) | MIT | HuggingFace |
-| google/ddpm-cifar10-32 | ~35 M | 32x32 | ninguno (incondicional) | Apache 2.0 | HuggingFace |
-| google/ddpm-celebahq-256 | ~113 M | 256x256 | ninguno (incondicional) | Apache 2.0 | HuggingFace |
-| hf-internal-testing/ddpm-celebahq-256 | ~113 M | 256x256 | ninguno (incondicional) | no disponible | HuggingFace |
+| MaiT8/sd-class-butterflies-32 | 18,5 M | 32x32 | ninguno (incondicional) | MIT | Hugging Face |
+| google/ddpm-cifar10-32 | ~35 M | 32x32 | ninguno (incondicional) | Apache 2.0 | Hugging Face |
+| google/ddpm-celebahq-256 | ~113 M | 256x256 | ninguno (incondicional) | Apache 2.0 | Hugging Face |
+| hf-internal-testing/ddpm-celebahq-256 | ~113 M | 256x256 | ninguno (incondicional) | no disponible | Hugging Face |
 
 La comparativa se limita a otros modelos DDPM incondicionales de referencia; no existen alternativas publicas equivalentes especificas de mariposas a 32x32 con las que comparar directamente. No se dispone de datos de rendimiento (FID u otras metricas) para establecer una comparacion cuantitativa.
 
@@ -84,7 +84,7 @@ La comparativa se limita a otros modelos DDPM incondicionales de referencia; no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MaiT8/sd-class-butterflies-32
+- Modelo en Hugging Face: https://huggingface.co/MaiT8/sd-class-butterflies-32
 - Curso Diffusion Models Class (unidad 1): https://github.com/huggingface/diffusion-models-class
 - Documentacion de `DDPMPipeline` en diffusers: https://huggingface.co/docs/diffusers/api/pipelines/ddpm
 - Dataset de referencia del curso (no confirmado para este modelo): https://huggingface.co/datasets/huggan/smithsonian_butterflies_subset

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `woojin0831/act_so101_block_pick_place_3x3_v1` es una política de robótica basada en Action Chunking with Transformers (ACT), entrenada mediante aprendizaje por imitación con datos teleoperados. Fue desarrollada por el usuario woojin0831 y publicada en HuggingFace bajo licencia Apache 2.0, utilizando la librería LeRobot en su versión 0.6.1. El modelo está diseñado para controlar un brazo robótico SO101 (tipo `so_follower`) en una tarea concreta de recogida y colocación de bloques en una cuadrícula de 3x3.
+El modelo `woojin0831/act_so101_block_pick_place_3x3_v1` es una política de robótica basada en Action Chunking with Transformers (ACT), entrenada mediante aprendizaje por imitación con datos teleoperados. Fue desarrollada por el usuario woojin0831 y publicada en Hugging Face bajo licencia Apache 2.0, utilizando la librería LeRobot en su versión 0.6.1. El modelo está diseñado para controlar un brazo robótico SO101 (tipo `so_follower`) en una tarea concreta de recogida y colocación de bloques en una cuadrícula de 3x3.
 
 La arquitectura ACT, propuesta en el artículo arxiv 2304.13705, predice secuencias de acciones (action chunks) en lugar de pasos individuales, lo que mejora la estabilidad y la tasa de éxito en tareas de manipulación. El modelo cuenta con 51.668.614 parámetros y un tamaño de repositorio de 0,2 GB, lo que lo hace ligero y desplegable en hardware de consumo. Su relevancia radica en ser un ejemplo práctico de aplicación de ACT sobre un robot de bajo coste, con un pipeline completo documentado para entrenamiento e inferencia.
 

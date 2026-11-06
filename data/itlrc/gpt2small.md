@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`itlrc/gpt2small` es un repositorio publicado en HuggingFace por el usuario `itlrc` bajo licencia MIT. El nombre del repositorio apunta a una implementacion o copia de la arquitectura GPT-2 en su variante "small", el transformer decoder-only autorregresivo de 124 millones de parametros popularizado por OpenAI en 2019. Sin embargo, la model card asociada no contiene mas informacion que la declaracion de licencia, por lo que no es posible confirmar desde la fuente si se trata de un modelo entrenado desde cero, de un fine-tuning, de una conversion de pesos o de un simple volcado de los pesos originales.
+`itlrc/gpt2small` es un repositorio publicado en Hugging Face por el usuario `itlrc` bajo licencia MIT. El nombre del repositorio apunta a una implementacion o copia de la arquitectura GPT-2 en su variante "small", el transformer decoder-only autorregresivo de 124 millones de parametros popularizado por OpenAI en 2019. Sin embargo, la model card asociada no contiene mas informacion que la declaracion de licencia, por lo que no es posible confirmar desde la fuente si se trata de un modelo entrenado desde cero, de un fine-tuning, de una conversion de pesos o de un simple volcado de los pesos originales.
 
 El interes practico de este repositorio es, a dia de hoy, muy limitado: registra cero descargas y cero "likes", no declara pipeline de inferencia, no especifica idiomas soportados ni formato de pesos, y no incluye ningun resultado de evaluacion. No hay evidencia de entrenamiento adicional, de tecnicas de alineacion (RLHF, DPO) ni de optimizaciones de inferencia.
 
@@ -79,7 +79,7 @@ La comparativa se establece contra checkpoints publicos de la familia GPT-2, dad
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| itlrc/gpt2small | no disponible | no disponible | MIT | Repositorio HuggingFace, 0 descargas | Minima (solo licencia) |
+| itlrc/gpt2small | no disponible | no disponible | MIT | Repositorio Hugging Face, 0 descargas | Minima (solo licencia) |
 | openai-community/gpt2 | 124M | 1024 tokens | MIT | Ampliamente usado y replicado | Model card completa y paper asociado |
 | distilgpt2 | 82M | 1024 tokens | Apache 2.0 | Muy extendido | Model card con detalles de destilacion |
 | openai-community/gpt2-medium | 355M | 1024 tokens | MIT | Extendido | Model card y resultados publicados |
@@ -99,7 +99,7 @@ El diferenciador de `itlrc/gpt2small` no es tecnico sino de trazabilidad: frente
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/itlrc/gpt2small
+- Repositorio en Hugging Face: https://huggingface.co/itlrc/gpt2small
 - Paper de referencia de la arquitectura GPT-2 (no citado por el autor): https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
 - Checkpoint de referencia GPT-2 small de OpenAI (no vinculado por el autor): https://huggingface.co/openai-community/gpt2
 - No se han encontrado en la busqueda web enlaces relevantes al modelo; los resultados devueltos corresponden a contenido no relacionado (foros en bulgaro sobre redes sociales y descargas de software).

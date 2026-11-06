@@ -6,7 +6,7 @@ El modelo `TreezzZ/opd-teacher-search-7b` es un ajuste fino del modelo base `Qwe
 
 El modelo conserva la arquitectura transformer de Qwen2.5-7B, con 7.615.616.512 parámetros totales (aproximadamente 7,6 mil millones), y está disponible en formato `safetensors`. Aunque la model card original de Qwen2.5-7B-Instruct indica una longitud de contexto de hasta 131.072 tokens, no se ha confirmado si este ajuste fino mantiene esa capacidad completa o si ha sido modificada durante el entrenamiento. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones significativas.
 
-La relevancia de este modelo radica en su potencial para ofrecer capacidades de razonamiento y búsqueda mejoradas en un tamaño manejable (7B), aprovechando las técnicas de destilación on-policy para acercar el rendimiento a modelos mucho más grandes. Sin embargo, al ser un modelo reciente con cero descargas y cero likes en HuggingFace, carece de evaluación independiente y de benchmarks publicados que validen sus capacidades reales.
+La relevancia de este modelo radica en su potencial para ofrecer capacidades de razonamiento y búsqueda mejoradas en un tamaño manejable (7B), aprovechando las técnicas de destilación on-policy para acercar el rendimiento a modelos mucho más grandes. Sin embargo, al ser un modelo reciente con cero descargas y cero likes en Hugging Face, carece de evaluación independiente y de benchmarks publicados que validen sus capacidades reales.
 
 ## Especificaciones tecnicas
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: con 7,6B parametros en FP16, se necesitan aproximadamente 15-16 GB de VRAM. Con cuantizacion INT8, alrededor de 8-9 GB; con INT4, unos 5-6 GB.
 - GPU recomendadas: una RTX 4090 (24 GB) puede ejecutar el modelo en FP16 sin problemas. Para cuantizacion INT4, una RTX 3060 (12 GB) o RTX 4070 (12 GB) son suficientes. Para despliegue en produccion, se recomiendan A100 (40/80 GB) o H100.
 - Compatibilidad con GPUs de consumo: si, con cuantizacion INT4 o INT8 cabe en GPUs de gama media-alta.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, o directamente con transformers.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, o directamente con transformers.
 - Latencia y throughput: no se han publicado datos especificos. Para referencia, Qwen2.5-7B en FP16 con vLLM alcanza aproximadamente 40-60 tokens/segundo en una A100.
 
 ## Comparativa con modelos similares
@@ -81,10 +81,10 @@ La principal diferencia entre este modelo y sus alternativas es la posible espec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TreezzZ/opd-teacher-search-7b
+- Repositorio Hugging Face: https://huggingface.co/TreezzZ/opd-teacher-search-7b
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper OPOD (On-Policy Omni Distillation): https://arxiv.org/html/2607.20918v3
 - Paper YaRN (extension de contexto): https://arxiv.org/abs/2309.00071
-- Perfil de TreezzZ en HuggingFace: https://huggingface.co/TreezzZ
+- Perfil de TreezzZ en Hugging Face: https://huggingface.co/TreezzZ
 - Perfil de TreezzZ en GitHub: https://github.com/TreezzZ/
 - Repositorio relacionado (ParallelSearch-7b-base): https://huggingface.co/TreezzZ/ParallelSearch-7b-base

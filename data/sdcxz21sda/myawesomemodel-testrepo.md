@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado por el usuario SDCXZ21SDA en HuggingFace, etiquetado con los frameworks transformers y pytorch, la arquitectura bert, la tarea feature-extraction y licencia MIT. Se trata, por todos los indicios disponibles, de un repositorio de prueba: el tamano del repositorio es de 0,0 GB (sin ficheros de pesos), acumula 0 descargas y 0 "likes", y fue creado el 14 de septiembre de 2026. No se ha publicado informacion verificable sobre parametros, contexto o composicion del dataset.
+MyAwesomeModel-TestRepo es un repositorio publicado por el usuario SDCXZ21SDA en Hugging Face, etiquetado con los frameworks transformers y pytorch, la arquitectura bert, la tarea feature-extraction y licencia MIT. Se trata, por todos los indicios disponibles, de un repositorio de prueba: el tamano del repositorio es de 0,0 GB (sin ficheros de pesos), acumula 0 descargas y 0 "likes", y fue creado el 14 de septiembre de 2026. No se ha publicado informacion verificable sobre parametros, contexto o composicion del dataset.
 
 Existe una contradiccion interna entre los metadatos y la model card. Las etiquetas y el pipeline declarado (bert, feature-extraction) describen un codificador tipo BERT orientado a extraccion de representaciones, mientras que el README describe un modelo generativo de razonamiento con modo "thinking", function calling y mejoras en matematicas y programacion. Ninguna de las dos descripciones puede confirmarse con los datos disponibles.
 
@@ -111,6 +111,6 @@ No disponible. La model card no identifica los modelos de referencia ("Model1", 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SDCXZ21SDA/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/SDCXZ21SDA/MyAwesomeModel-TestRepo
 
 Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo ni con su autor. Los enlaces recuperados (foros sobre revision de articulos cientificos, gramatica francesa y camaras de accion) no guardan relacion con la ficha y se han descartado. No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo.

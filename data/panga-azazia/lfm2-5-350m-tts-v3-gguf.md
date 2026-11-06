@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LFM2.5-350M-TTS-v3-gguf es un modelo de lenguaje de ~382,7 millones de parámetros publicado por el usuario Panga-Azazia en HuggingFace, distribuido en formato GGUF para su uso con llama.cpp y herramientas compatibles. Se trata de un ajuste fino (finetune) de un modelo de la familia LFM2 (etiqueta `lfm2` del repositorio) que ha sido convertido a GGUF mediante Unsloth, según indica la propia model card. El repositorio no incluye información sobre el dataset de entrenamiento, el proceso de ajuste ni los hiperparámetros empleados.
+LFM2.5-350M-TTS-v3-gguf es un modelo de lenguaje de ~382,7 millones de parámetros publicado por el usuario Panga-Azazia en Hugging Face, distribuido en formato GGUF para su uso con llama.cpp y herramientas compatibles. Se trata de un ajuste fino (finetune) de un modelo de la familia LFM2 (etiqueta `lfm2` del repositorio) que ha sido convertido a GGUF mediante Unsloth, según indica la propia model card. El repositorio no incluye información sobre el dataset de entrenamiento, el proceso de ajuste ni los hiperparámetros empleados.
 
-El modelo resuelve el caso de uso de inferencia local de bajo coste: con menos de 400 millones de parámetros y pesos en F16, puede ejecutarse en CPU, en GPUs de gama de entrada e incluso en dispositivos con recursos muy limitados. La etiqueta `conversational` sugiere un ajuste orientado a diálogo, y la etiqueta `endpoints_compatible` apunta a su uso detrás de APIs compatibles con el formato de endpoints de HuggingFace. El sufijo `TTS-v3` del nombre podría indicar un ajuste relacionado con síntesis de voz, pero la model card no documenta ninguna capacidad de audio y el único fichero publicado es un GGUF de texto, por lo que no puede confirmarse.
+El modelo resuelve el caso de uso de inferencia local de bajo coste: con menos de 400 millones de parámetros y pesos en F16, puede ejecutarse en CPU, en GPUs de gama de entrada e incluso en dispositivos con recursos muy limitados. La etiqueta `conversational` sugiere un ajuste orientado a diálogo, y la etiqueta `endpoints_compatible` apunta a su uso detrás de APIs compatibles con el formato de endpoints de Hugging Face. El sufijo `TTS-v3` del nombre podría indicar un ajuste relacionado con síntesis de voz, pero la model card no documenta ninguna capacidad de audio y el único fichero publicado es un GGUF de texto, por lo que no puede confirmarse.
 
 El interés actual del modelo es limitado pero concreto: es un ejemplo de flujo de trabajo Unsloth + llama.cpp para publicar variantes cuantizadas de modelos pequeños, y sirve como banco de pruebas para pipelines de inferencia local. El repositorio tiene 0 descargas y 1 like en el momento de la consulta, y no se ha publicado licencia ni lista de idiomas soportados.
 
@@ -88,6 +88,6 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Panga-Azazia/LFM2.5-350M-TTS-v3-gguf
+- Repositorio en Hugging Face: https://huggingface.co/Panga-Azazia/LFM2.5-350M-TTS-v3-gguf
 - Unsloth (herramienta de ajuste y conversion citada por el autor): https://github.com/unslothai/unsloth
 - Busqueda web: no se encontraron resultados relevantes sobre el modelo; las entradas recuperadas corresponden al pez panga y no se incluyen por no ser pertinentes.

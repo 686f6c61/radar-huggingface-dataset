@@ -6,14 +6,14 @@
 
 La relevancia del repositorio es, por tanto, metodológica y de ingeniería: permite inspeccionar y modificar decisiones de arquitectura (atención multi-query, fusión mediante concat mlp, activación mish, normalización instancenorm) antes de comprometer recursos en un entrenamiento completo. El recuento real de parámetros del safetensors es de 24.832, muy por debajo de los aproximadamente 28 millones de una Swin-T estándar, lo que confirma que se trata de una configuración reducida de carácter experimental.
 
-El repositorio no declara idiomas, no publica pipeline en HuggingFace, no reporta ninguna métrica de benchmark y advierte de que el checkpoint no ha sido auditado en robustez, equidad ni transferencia de dominio. Se publica bajo licencia BSD-3-Clause y su fecha de creación registrada es el 11 de septiembre de 2026.
+El repositorio no declara idiomas, no publica pipeline en Hugging Face, no reporta ninguna métrica de benchmark y advierte de que el checkpoint no ha sido auditado en robustez, equidad ni transferencia de dominio. Se publica bajo licencia BSD-3-Clause y su fecha de creación registrada es el 11 de septiembre de 2026.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | Swin T (transformer jerárquico de ventanas desplazadas), escala «nano», implementación propia |
-| Parámetros totales | 24.832 (recuento real del `model.safetensors`, según HuggingFace) |
+| Parámetros totales | 24.832 (recuento real del `model.safetensors`, según Hugging Face) |
 | Parámetros activos | no disponible (no es un modelo MoE; la model card no describe mezcla de expertos) |
 | Longitud de contexto | no disponible (modelo de visión; la model card no declara resolución de entrada ni tamaño de ventana) |
 | Tipos de cuantización | no disponibles (solo se publica `model.safetensors`; no hay variantes GGUF, int8 ni fp16 documentadas) |
@@ -25,8 +25,8 @@ El repositorio no declara idiomas, no publica pipeline en HuggingFace, no report
 | Activación | mish |
 | Normalización | instancenorm |
 | Pipeline declarado | no disponible |
-| Descargas / likes en HuggingFace | 0 / 0 |
-| Tamaño del repositorio | 0.0 GB (según HuggingFace) |
+| Descargas / likes en Hugging Face | 0 / 0 |
+| Tamaño del repositorio | 0.0 GB (según Hugging Face) |
 | Fecha de creación | 2026-09-11 |
 
 ## Arquitectura y entrenamiento
@@ -77,10 +77,10 @@ La model card indica de forma explícita que no se reclama ninguna puntuación d
 
 | Modelo | Arquitectura | Parámetros | Entrada / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| marcushou74/swin-t-baseline | Swin T «nano» experimental (multi-query, concat mlp, mish, instancenorm) | 24.832 (según safetensors) | Clasificación de imágenes; resolución no declarada | BSD-3-Clause | Repositorio HuggingFace, 0 descargas, checkpoint sin entrenar |
-| microsoft/swin-tiny-patch4-window7-224 | Swin Transformer tiny canónica | Aproximadamente 28 millones (referencia general de la arquitectura) | Clasificación de imágenes a 224×224 sobre ImageNet-1k | no disponible en la información recopilada | Modelo ampliamente distribuido en HuggingFace |
-| facebook/deit-tiny-patch16-224 | Vision transformer plano (sin jerarquía de ventanas) | Aproximadamente 5,7 millones (referencia general de la arquitectura) | Clasificación de imágenes a 224×224 sobre ImageNet-1k | no disponible en la información recopilada | Modelo ampliamente distribuido en HuggingFace |
-| ResNet-50 (por ejemplo, timm/resnet50.a1_in1k) | CNN residual | Aproximadamente 25,6 millones (referencia general de la arquitectura) | Clasificación de imágenes a 224×224 sobre ImageNet-1k | no disponible en la información recopilada | Ampliamente distribuido en HuggingFace y timm |
+| marcushou74/swin-t-baseline | Swin T «nano» experimental (multi-query, concat mlp, mish, instancenorm) | 24.832 (según safetensors) | Clasificación de imágenes; resolución no declarada | BSD-3-Clause | Repositorio Hugging Face, 0 descargas, checkpoint sin entrenar |
+| microsoft/swin-tiny-patch4-window7-224 | Swin Transformer tiny canónica | Aproximadamente 28 millones (referencia general de la arquitectura) | Clasificación de imágenes a 224×224 sobre ImageNet-1k | no disponible en la información recopilada | Modelo ampliamente distribuido en Hugging Face |
+| facebook/deit-tiny-patch16-224 | Vision transformer plano (sin jerarquía de ventanas) | Aproximadamente 5,7 millones (referencia general de la arquitectura) | Clasificación de imágenes a 224×224 sobre ImageNet-1k | no disponible en la información recopilada | Modelo ampliamente distribuido en Hugging Face |
+| ResNet-50 (por ejemplo, timm/resnet50.a1_in1k) | CNN residual | Aproximadamente 25,6 millones (referencia general de la arquitectura) | Clasificación de imágenes a 224×224 sobre ImageNet-1k | no disponible en la información recopilada | Ampliamente distribuido en Hugging Face y timm |
 
 Nota: los parámetros de los modelos comparativos corresponden a valores de referencia generales de cada arquitectura y no proceden de la información recopilada en esta búsqueda. No se dispone de comparaciones de rendimiento entre este repositorio y los modelos citados, ya que el checkpoint publicado no está entrenado ni evaluado.
 
@@ -100,5 +100,5 @@ Nota: los parámetros de los modelos comparativos corresponden a valores de refe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/marcushou74/swin-t-baseline
+- Repositorio en Hugging Face: https://huggingface.co/marcushou74/swin-t-baseline
 - No se han encontrado enlaces relevantes en la búsqueda web: los resultados devueltos no guardan relación con el modelo ni con Swin Transformer.

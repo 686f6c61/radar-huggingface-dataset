@@ -87,8 +87,8 @@ No se dispone de información sobre otros modelos de decisión comparables ni so
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AnyJev Tacitus 31B | 31,3 B | 32.768 tokens (ventana de servicio) | Decisión por lectura de probabilidad sobre hasta 260 opciones o sí/no; requiere motor y plugin propios | apache-2.0 | Pesos en HuggingFace; 14 descargas |
-| google/gemma-4-31B-it (base) | 31,3 B (heredados) | No disponible en la información proporcionada | Modelo conversacional instructivo; genera texto | No disponible en la información proporcionada | Pesos en HuggingFace |
+| AnyJev Tacitus 31B | 31,3 B | 32.768 tokens (ventana de servicio) | Decisión por lectura de probabilidad sobre hasta 260 opciones o sí/no; requiere motor y plugin propios | apache-2.0 | Pesos en Hugging Face; 14 descargas |
+| google/gemma-4-31B-it (base) | 31,3 B (heredados) | No disponible en la información proporcionada | Modelo conversacional instructivo; genera texto | No disponible en la información proporcionada | Pesos en Hugging Face |
 | Otros modelos de decisión de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -106,7 +106,7 @@ No se dispone de información sobre otros modelos de decisión comparables ni so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/morriszjm/AnyJev-Tacitus-31B
+- Modelo en Hugging Face: https://huggingface.co/morriszjm/AnyJev-Tacitus-31B
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Repositorio de servicio y plugin: https://github.com/MorrisZJ/anyjev-tacitus
 - Motor AnyJev (Nokia Applied Research): https://github.com/nokia-applied-research/AnyJev

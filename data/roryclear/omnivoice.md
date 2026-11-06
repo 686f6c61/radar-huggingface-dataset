@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OmniVoice es un repositorio de modelo alojado en HuggingFace bajo el identificador `roryclear/OmniVoice`, publicado por el usuario roryclear. En el momento de la consulta, el repositorio presenta una model card practicamente vacia: unicamente incluye la declaracion de licencia `apache-2.0`, sin descripcion, sin especificaciones tecnicas, sin ejemplos de uso ni documentacion adicional. El repositorio registra cero descargas y cero "likes", y fue creado y actualizado por ultima vez el 22 de septiembre de 2026.
+OmniVoice es un repositorio de modelo alojado en Hugging Face bajo el identificador `roryclear/OmniVoice`, publicado por el usuario roryclear. En el momento de la consulta, el repositorio presenta una model card practicamente vacia: unicamente incluye la declaracion de licencia `apache-2.0`, sin descripcion, sin especificaciones tecnicas, sin ejemplos de uso ni documentacion adicional. El repositorio registra cero descargas y cero "likes", y fue creado y actualizado por ultima vez el 22 de septiembre de 2026.
 
 La informacion publica disponible no permite determinar la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni las capacidades reales del modelo. Tampoco se ha publicado informacion sobre el pipeline asociado, lo que impide confirmar si se trata de un modelo de generacion de texto, de sintesis de voz, multimodal o de otra categoria. El nombre "OmniVoice" sugiere un posible enfoque hacia voz o audio, pero se trata unicamente de una inferencia a partir del nombre del repositorio y no de un dato confirmado por el autor.
 
@@ -74,7 +74,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| roryclear/OmniVoice | no disponible | no disponible | apache-2.0 | no disponible | HuggingFace, sin datos de uso |
+| roryclear/OmniVoice | no disponible | no disponible | apache-2.0 | no disponible | Hugging Face, sin datos de uso |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/roryclear/OmniVoice
+- Repositorio en Hugging Face: https://huggingface.co/roryclear/OmniVoice
 - Paper: no disponible.
 - Blog o anuncio del autor: no disponible.
 - Repositorio de codigo: no disponible.

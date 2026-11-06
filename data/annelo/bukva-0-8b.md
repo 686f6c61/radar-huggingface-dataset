@@ -17,7 +17,7 @@ Su relevancia práctica está en la latencia: aproximadamente 36 ms por decisió
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | Inglés (en) y ruso (ru) |
-| Licencia | bukva-research (etiquetada como `other` en HuggingFace, con `license_name: bukva-research` y enlace a LICENSE.md) |
+| Licencia | bukva-research (etiquetada como `other` en Hugging Face, con `license_name: bukva-research` y enlace a LICENSE.md) |
 | Formato de pesos | safetensors (adaptadores LoRA; el repositorio ocupa 0,2 GB) |
 
 ## Arquitectura y entrenamiento
@@ -80,16 +80,16 @@ No se dispone de datos publicados de otros modelos de decisión comparables en l
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bukva-0.8b `v8-classifier` | 0,8B base + 10,2M LoRA | No disponible | 85,1 en tareas clásicas | bukva-research | HuggingFace |
-| bukva-0.8b `mix-v8v7` | 0,8B base + 10,2M LoRA | No disponible | 39/40 en agente de teléfono; clasificador algo inferior | bukva-research | HuggingFace |
-| bukva-0.8b `mix-v5v6` | 0,8B base + 10,2M LoRA | No disponible | 5/8 en navegador (texto) | bukva-research | HuggingFace |
-| Qwen3.5-0.8B-Base | 0,8B | No disponible | No disponible | No disponible | HuggingFace |
+| bukva-0.8b `v8-classifier` | 0,8B base + 10,2M LoRA | No disponible | 85,1 en tareas clásicas | bukva-research | Hugging Face |
+| bukva-0.8b `mix-v8v7` | 0,8B base + 10,2M LoRA | No disponible | 39/40 en agente de teléfono; clasificador algo inferior | bukva-research | Hugging Face |
+| bukva-0.8b `mix-v5v6` | 0,8B base + 10,2M LoRA | No disponible | 5/8 en navegador (texto) | bukva-research | Hugging Face |
+| Qwen3.5-0.8B-Base | 0,8B | No disponible | No disponible | No disponible | Hugging Face |
 
 No se han identificado en la información disponible alternativas de terceros con cifras equiparables.
 
 ## Limitaciones y advertencias
 
-- Licencia `bukva-research`, etiquetada como `other` en HuggingFace: hay que revisar LICENSE.md antes de cualquier uso comercial o redistribución, ya que no es una licencia estándar reconocida.
+- Licencia `bukva-research`, etiquetada como `other` en Hugging Face: hay que revisar LICENSE.md antes de cualquier uso comercial o redistribución, ya que no es una licencia estándar reconocida.
 - El modelo no genera texto libre: solo elige entre opciones predefinidas. No sirve para redactar, resumir ni responder preguntas abiertas.
 - Límite práctico de 26 opciones por decisión; por encima de esa cifra hay que agrupar en conjuntos de 20 o menos y hacer una segunda ronda.
 - Soporte de idiomas restringido a inglés y ruso; no hay datos sobre otros idiomas.
@@ -102,7 +102,7 @@ No se han identificado en la información disponible alternativas de terceros co
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/annelo/bukva-0.8b
+- Página del modelo en Hugging Face: https://huggingface.co/annelo/bukva-0.8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Licencia del proyecto: https://huggingface.co/annelo/bukva-0.8b/blob/main/LICENSE.md
 - Resultados de benchmarks: https://huggingface.co/annelo/bukva-0.8b/blob/main/BENCHMARKS.md

@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rushabh-sareeviz/bg-remover-birefnet-lite-512
+- Modelo en Hugging Face: https://huggingface.co/rushabh-sareeviz/bg-remover-birefnet-lite-512
 - Modelo base: https://huggingface.co/ZhengPeng7/BiRefNet_lite
 - Exportación de origen: https://huggingface.co/studioludens/birefnet-lite-512
 - Exportación de referencia ONNX: https://huggingface.co/onnx-community/BiRefNet_lite-ONNX

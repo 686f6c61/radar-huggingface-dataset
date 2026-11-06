@@ -107,7 +107,7 @@ No se dispone de datos que permitan comparar este modelo con alternativas extern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shaban2024/Qwen3.5-4B-BOS-Q8-NonThinking
+- Repositorio Hugging Face: https://huggingface.co/shaban2024/Qwen3.5-4B-BOS-Q8-NonThinking
 - Modelo base: https://huggingface.co/alphaedge-ai/Qwen3.5-4B-bos-32768 (revision `34a62191`)
 - Repositorio del framework de entrenamiento: https://github.com/xnet-ba/agentmujo-training
 - SHA256 del GGUF v0.2: `3bbd90e90fe0bf48bf0f5bf74a3e3cd593b1a09c66739166b13ac6172843cdc4`

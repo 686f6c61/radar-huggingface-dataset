@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no incluye otros modelos comparables
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DenRakEiw/microduck-sprint-unleashed
+- Hugging Face: https://huggingface.co/DenRakEiw/microduck-sprint-unleashed
 - Repositorio microduck (robot): https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/pollen-robotics/microduck-challenges
 - Documentacion del manifiesto de politicas (referenciada): `docs/policy-manifest.md` en el repositorio del daemon de microduck (URL directa no disponible)

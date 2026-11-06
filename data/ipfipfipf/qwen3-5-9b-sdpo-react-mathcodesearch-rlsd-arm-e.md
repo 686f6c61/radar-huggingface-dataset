@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-rlsd-arm-e` es un fine-tuning del modelo base `Qwen/Qwen3.5-9B-Base`, publicado por el usuario de HuggingFace `ipfipfipf`. El nombre del repositorio sugiere un entrenamiento orientado a razonamiento matemático, generación de código y búsqueda de información, empleando técnicas como SDPO (Stepwise Direct Preference Optimization) y ReAct (Reasoning and Acting), aunque no se ha publicado ninguna documentación técnica que confirme estos detalles. El modelo hereda la arquitectura híbrida del base Qwen3.5-9B: una combinación de Gated Delta Networks y atención Gated Attention con un encoder de visión, lo que lo convierte en un modelo multimodal de 8.95 mil millones de parámetros con una ventana de contexto nativa de 262.144 tokens.
+`ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-rlsd-arm-e` es un fine-tuning del modelo base `Qwen/Qwen3.5-9B-Base`, publicado por el usuario de Hugging Face `ipfipfipf`. El nombre del repositorio sugiere un entrenamiento orientado a razonamiento matemático, generación de código y búsqueda de información, empleando técnicas como SDPO (Stepwise Direct Preference Optimization) y ReAct (Reasoning and Acting), aunque no se ha publicado ninguna documentación técnica que confirme estos detalles. El modelo hereda la arquitectura híbrida del base Qwen3.5-9B: una combinación de Gated Delta Networks y atención Gated Attention con un encoder de visión, lo que lo convierte en un modelo multimodal de 8.95 mil millones de parámetros con una ventana de contexto nativa de 262.144 tokens.
 
 La relevancia de este modelo radica en que es un intento de especializar un modelo de última generación (Qwen3.5) en tareas concretas de razonamiento y código, aprovechando la eficiencia de la arquitectura híbrida y el entrenamiento multimodal. Sin embargo, al tratarse de un repositorio con cero descargas y cero likes, y sin model card propia (solo copia del README del base), su calidad y utilidad reales son desconocidas. Es un ejemplo de fine-tuning experimental que debería evaluarse con cautela antes de usarlo en producción.
 
@@ -79,7 +79,7 @@ La comparación con el base es la más relevante: este fine-tune debería demost
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-rlsd-arm-e
+- Repositorio Hugging Face: https://huggingface.co/ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-rlsd-arm-e
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Página de vLLM Recipes para Qwen3.5-9B: https://recipes.vllm.ai/Qwen/Qwen3.5-9B

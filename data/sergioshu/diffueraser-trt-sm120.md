@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DiffuEraser TensorRT engines (sm120) es una distribución de motores TensorRT serializados del modelo de eliminación de objetos en vídeo DiffuEraser, publicado por el usuario SergioShu en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una compilación optimizada de las redes de DiffuEraser (BrushNet, UNet de movimiento y VAE de Stable Diffusion 1.5) mediante `torch.export` y `torch_tensorrt.dynamo`, empaquetada como programas Torch-TensorRT listos para cargar en GPUs NVIDIA Blackwell de capacidad de cómputo 12.0.
+DiffuEraser TensorRT engines (sm120) es una distribución de motores TensorRT serializados del modelo de eliminación de objetos en vídeo DiffuEraser, publicado por el usuario SergioShu en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una compilación optimizada de las redes de DiffuEraser (BrushNet, UNet de movimiento y VAE de Stable Diffusion 1.5) mediante `torch.export` y `torch_tensorrt.dynamo`, empaquetada como programas Torch-TensorRT listos para cargar en GPUs NVIDIA Blackwell de capacidad de cómputo 12.0.
 
 El problema que resuelve es el de la latencia en inferencia de vídeo inpainting: DiffuEraser es un modelo de difusión que requiere múltiples pasos sobre secuencias de 22 fotogramas, y compilar sus redes a TensorRT reduce el coste de ejecución en hardware Blackwell. El repositorio ocupa 41,2 GB e incluye variantes de los motores según orientación del lienzo (horizontal `land`, vertical `port`) y compatibilidad de hardware.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DiffuEraser TensorRT engines (sm120) | Motores compilados de vídeo inpainting | 22 fotogramas, lienzo 384..960 px | CreativeML Open RAIL-M | HuggingFace, solo sm120 + TensorRT 11.1.0 |
-| lixiaowen/diffuEraser | Modelo original de vídeo inpainting | 22 fotogramas (según modelo base) | Apache 2.0 | HuggingFace, pesos PyTorch |
+| DiffuEraser TensorRT engines (sm120) | Motores compilados de vídeo inpainting | 22 fotogramas, lienzo 384..960 px | CreativeML Open RAIL-M | Hugging Face, solo sm120 + TensorRT 11.1.0 |
+| lixiaowen/diffuEraser | Modelo original de vídeo inpainting | 22 fotogramas (según modelo base) | Apache 2.0 | Hugging Face, pesos PyTorch |
 | Stable Diffusion 1.5 inpainting | Imagen inpainting (sin coherencia temporal) | Imagen única | CreativeML Open RAIL-M | Amplia disponibilidad |
-| sd-vae-ft-mse | VAE de codificación/decodificación | Imagen | MIT | HuggingFace |
+| sd-vae-ft-mse | VAE de codificación/decodificación | Imagen | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SergioShu/diffueraser-trt-sm120
+- Repositorio Hugging Face: https://huggingface.co/SergioShu/diffueraser-trt-sm120
 - Modelo base DiffuEraser: https://huggingface.co/lixiaowen/diffuEraser
 - Stable Diffusion 1.5: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - VAE sd-vae-ft-mse: https://huggingface.co/stabilityai/sd-vae-ft-mse

@@ -3,7 +3,7 @@
 ## Resumen
 `LibRust/ppo-Pyramids` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno "Pyramids", una escena de ejemplo distribuida con Unity ML-Agents. No se trata de un modelo de lenguaje: es una política neuronal que mapea observaciones del entorno a acciones, exportada en formato nativo de ML-Agents (`.nn`) y/o ONNX para su ejecución dentro de Unity o en el navegador. El autor es el usuario `LibRust` y el repositorio se publicó el 5 de octubre de 2026 con un tamaño de 0,1 GB.
 
-El modelo resuelve la tarea concreta de control del agente en el escenario Pyramids (entorno incluido en el conjunto de ejemplos oficiales de ML-Agents, orientado a la recolección de objetos y navegación). Su relevancia es limitada y acotada: sirve como artefacto reproducible de entrenamiento (permitiendo reanudar el entrenamiento con `--resume`) y como demostración ejecutable en el visor web de ML-Agents del Hub de HuggingFace.
+El modelo resuelve la tarea concreta de control del agente en el escenario Pyramids (entorno incluido en el conjunto de ejemplos oficiales de ML-Agents, orientado a la recolección de objetos y navegación). Su relevancia es limitada y acotada: sirve como artefacto reproducible de entrenamiento (permitiendo reanudar el entrenamiento con `--resume`) y como demostración ejecutable en el visor web de ML-Agents del Hub de Hugging Face.
 
 No hay información pública sobre arquitectura concreta de red, hiperparámetros, número de pasos de entrenamiento ni recompensa alcanzada. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y no declara licencia ni idiomas.
 
@@ -37,7 +37,7 @@ No se dispone de informacion sobre el numero de pasos o episodios de entrenamien
 ## Capacidades
 - Control de un agente en el entorno especifico Pyramids de ML-Agents mediante politica PPO entrenada.
 - Inferencia dentro de Unity a traves de Barracuda/Inference Engine usando el fichero `.nn`, o mediante runtime ONNX en otros entornos.
-- Ejecucion visual en el navegador mediante el visor de ML-Agents del Hub de HuggingFace, seleccionando el fichero `.nn` o `.onnx`.
+- Ejecucion visual en el navegador mediante el visor de ML-Agents del Hub de Hugging Face, seleccionando el fichero `.nn` o `.onnx`.
 - Reanudacion del entrenamiento con `mlagents-learn <config>.yaml --run-id=<run_id> --resume`, siempre que se disponga de la configuracion original.
 - No se documentan capacidades de generacion de texto, razonamiento, codigo, matematicas, vision general, tool calling, uso como agente conversacional ni capacidades multilingues.
 - No se documenta soporte de audio, thinking mode ni ninguna capacidad multimodal.
@@ -49,7 +49,7 @@ No se dispone de informacion sobre el numero de pasos o episodios de entrenamien
 - Pruebas de integracion del runtime de inferencia: validar el pipeline de carga de modelos `.nn`/`.onnx` en Unity, en `mlagents-envs` o en un runtime ONNX propio, usando este artefacto como banco de pruebas.
 - Desarrollo de entornos derivados: emplear la politica como punto de partida o referencia de comportamiento al disenar variantes del escenario Pyramids (distintos layouts, densidades de objetos o dinamicas de colision).
 - Comparativa de algoritmos de RL: servir como contraparte emparejada a otros agentes entrenados sobre el mismo entorno con algoritmos distintos (por ejemplo SAC, PPO con memoria o imitation learning) para aislar el efecto del algoritmo.
-- Demostraciones y material divulgativo: incrustar el visor de HuggingFace en una entrada de blog o una presentacion para mostrar un agente entrenado jugando en tiempo real.
+- Demostraciones y material divulgativo: incrustar el visor de Hugging Face en una entrada de blog o una presentacion para mostrar un agente entrenado jugando en tiempo real.
 
 ## Benchmarks y rendimiento
 No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye curva de recompensa, recompensa media acumulada, tasa de exito, numero de pasos hasta convergencia ni ninguna otra metrica de evaluacion. Tampoco se dispone de datos comparativos frente a otros agentes sobre el mismo entorno.
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| LibRust/ppo-Pyramids | Agente RL (PPO, ML-Agents) | Pyramids | no disponible | no aplica | no disponible | no disponible | HuggingFace (0 descargas) |
-| Otros agentes PPO de ML-Agents publicados en el Hub | Agente RL (PPO, ML-Agents) | Entornos oficiales de ML-Agents | no disponible | no aplica | no disponible | habitualmente MIT en los ejemplos oficiales | HuggingFace |
-| Agentes entrenados con otros algoritmos de ML-Agents (SAC, POCA, imitation learning) | Agente RL | Entornos de ML-Agents | no disponible | no aplica | no disponible | no disponible | HuggingFace |
+| LibRust/ppo-Pyramids | Agente RL (PPO, ML-Agents) | Pyramids | no disponible | no aplica | no disponible | no disponible | Hugging Face (0 descargas) |
+| Otros agentes PPO de ML-Agents publicados en el Hub | Agente RL (PPO, ML-Agents) | Entornos oficiales de ML-Agents | no disponible | no aplica | no disponible | habitualmente MIT en los ejemplos oficiales | Hugging Face |
+| Agentes entrenados con otros algoritmos de ML-Agents (SAC, POCA, imitation learning) | Agente RL | Entornos de ML-Agents | no disponible | no aplica | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos numericos de ninguno de los modelos comparables en la informacion proporcionada, por lo que la comparacion se limita a categoria, entorno y formato. No se han identificado alternativas concretas con identificadores verificables en los resultados de busqueda web facilitados, que no contienen referencias relevantes a este modelo.
 
@@ -82,10 +82,10 @@ No se dispone de datos numericos de ninguno de los modelos comparables en la inf
 - Trazabilidad: con 0 descargas y 0 likes, no hay evidencia de uso, validacion independiente ni mantenimiento por parte del autor.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/LibRust/ppo-Pyramids
+- Modelo en Hugging Face: https://huggingface.co/LibRust/ppo-Pyramids
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Documentacion de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
-- Tutorial corto del curso de deep RL de HuggingFace (ML-Agents): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
-- Tutorial largo del curso de deep RL de HuggingFace (ML-Agents): https://huggingface.co/learn/deep-rl-course/unit5/introduction
+- Tutorial corto del curso de deep RL de Hugging Face (ML-Agents): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
+- Tutorial largo del curso de deep RL de Hugging Face (ML-Agents): https://huggingface.co/learn/deep-rl-course/unit5/introduction
 - Organizacion de entornos y visor de agentes en el Hub: https://huggingface.co/unity
 - Resultados de busqueda web: no se han encontrado referencias relevantes a este modelo (los resultados facilitados corresponden a paquetes de Debian y no guardan relacion).

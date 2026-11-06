@@ -83,7 +83,7 @@ No disponible. Este repositorio no es un modelo de recuperacion texto-imagen uti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JOONHOAHN/reading-text-image-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/JOONHOAHN/reading-text-image-retrieval
 - Fichero `reading.md` (artefacto principal, referenciado en la model card): no disponible como URL directa en la informacion proporcionada
 - Paper asociado: no disponible
 - Blog o articulo tecnico del autor: no disponible

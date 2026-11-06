@@ -6,7 +6,7 @@ Este repositorio contiene una cuantización GGUF en formato Q4_K_M del modelo De
 
 La relevancia de esta ficha concreta es práctica: el formato Q4_K_M reduce el peso en disco a 13,35 GB y permite ejecutar un modelo de 24B con unos 15,2 GB de VRAM en descarga completa a GPU, lo que lo sitúa al alcance de tarjetas de consumo como una RTX 4080. Frente a los safetensors en BF16 del modelo base, la cuantización facilita el despliegue local y en servidores con GPU modesta, a cambio de una pérdida de precisión no cuantificada en la información disponible.
 
-La model card declara una ventana de contexto de 393.216 tokens, aunque conviene tratar ese dato con cautela porque no procede de documentación oficial de Mistral AI incluida en la información disponible. Los idiomas declarados son inglés e italiano, y la licencia figura como "other" en los metadatos de HuggingFace, con una insignia Apache-2.0 en el cuerpo de la model card, lo que exige verificación antes de un uso comercial.
+La model card declara una ventana de contexto de 393.216 tokens, aunque conviene tratar ese dato con cautela porque no procede de documentación oficial de Mistral AI incluida en la información disponible. Los idiomas declarados son inglés e italiano, y la licencia figura como "other" en los metadatos de Hugging Face, con una insignia Apache-2.0 en el cuerpo de la model card, lo que exige verificación antes de un uso comercial.
 
 ## Especificaciones tecnicas
 
@@ -18,9 +18,9 @@ La model card declara una ventana de contexto de 393.216 tokens, aunque conviene
 | Longitud de contexto | 393.216 tokens (dato declarado en la model card del repositorio) |
 | Tipos de cuantizacion | GGUF Q4_K_M en este repositorio; otras cuantizaciones del mismo modelo base: no disponible |
 | Idiomas soportados | Ingles (en) e italiano (it) |
-| Licencia | `other` segun metadatos de HuggingFace; la model card muestra una insignia Apache-2.0. No disponible la licencia efectiva del modelo base |
+| Licencia | `other` segun metadatos de Hugging Face; la model card muestra una insignia Apache-2.0. No disponible la licencia efectiva del modelo base |
 | Formato de pesos | GGUF (Q4_K_M) |
-| Tamano en disco | 13,35 GB (14,3 GB de tamano de repositorio en HuggingFace) |
+| Tamano en disco | 13,35 GB (14,3 GB de tamano de repositorio en Hugging Face) |
 | VRAM estimada | ~15,2 GB con descarga completa a GPU; ~15,0 GB de RAM en modo CPU o hibrido |
 | Hardware recomendado por el autor | GPU con 16-20 GB de VRAM (por ejemplo RTX 4080) o 32 GB de RAM |
 | Modelo base | mistralai/Devstral-Small-2-24B-Instruct-2512 |
@@ -110,7 +110,7 @@ Advertencia importante: varias de estas cifras presentan incoherencias internas.
 | Modelo | Parametros | Contexto | Formato y tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este repositorio (Devstral Small 2 24B Q4_K_M) | 23,57B densos | 393.216 tokens declarados | GGUF Q4_K_M, 13,35 GB | `other` en metadatos; insignia Apache-2.0 en la model card | Publicado por sigmanih, 0 descargas y 0 likes en el momento de la consulta |
-| mistralai/Devstral-Small-2-24B-Instruct-2512 (base) | 23,57B densos | No disponible en la informacion proporcionada | Safetensors; el peso en BF16 se estima en torno a 47 GB por aritmetica del numero de parametros, dato no confirmado | No disponible; verificar en el repositorio original | Repositorio oficial de Mistral AI en HuggingFace |
+| mistralai/Devstral-Small-2-24B-Instruct-2512 (base) | 23,57B densos | No disponible en la informacion proporcionada | Safetensors; el peso en BF16 se estima en torno a 47 GB por aritmetica del numero de parametros, dato no confirmado | No disponible; verificar en el repositorio original | Repositorio oficial de Mistral AI en Hugging Face |
 | Otras cuantizaciones del mismo modelo base (Q5_K_M, Q8_0, Q2_K, etc.) | 23,57B densos | No disponible | GGUF, tamanos no disponibles | No disponible | No disponible en la informacion proporcionada |
 | Modelos comparables de otros fabricantes para agentes de codigo | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -123,7 +123,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 - La puntuacion de 36% en MMLU y 33% en HellaSwag es inconsistente con el comportamiento esperado de un modelo de 24B y sugiere un problema en el arnes de evaluacion; conviene desconfiar de toda la tabla hasta que exista una evaluacion independiente.
 - Los resultados del banco agentico son internamente contradictorios: 88,0% de adherencia al protocolo junto a 0/92 criterios verificados y 0 turnos de ejecucion. La finalizacion autonoma de tareas se declara en 0,0%.
 - El modelo esta publicado por un tercero (sigmanih) y no por Mistral AI. No hay garantia de que la conversion se haya realizado con un proceso reproducible, ni se documenta el hash de los pesos originales.
-- La licencia figura como `other` en los metadatos de HuggingFace mientras la model card muestra una insignia Apache-2.0. Esta discrepancia debe resolverse consultando la licencia del modelo base antes de cualquier uso comercial.
+- La licencia figura como `other` en los metadatos de Hugging Face mientras la model card muestra una insignia Apache-2.0. Esta discrepancia debe resolverse consultando la licencia del modelo base antes de cualquier uso comercial.
 - Idiomas declarados: unicamente ingles e italiano. No hay soporte declarado de castellano, lo que limita su uso en productos dirigidos al mercado hispanohablante.
 - Riesgo de alucinacion: no se han publicado tasas de alucinacion especificas. La unica metrica relacionada, TruthfulQA al 56% sobre 9 preguntas, es demasiado debil para extraer conclusiones.
 - La ventana de contexto de 393.216 tokens es un dato declarado en la model card del tercero y no verificable con la informacion disponible; ademas, su uso practico esta limitado por la memoria necesaria para la cache KV.
@@ -134,9 +134,9 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sigmanih/mistralai-Devstral-Small-2-24B-Instruct-2512-GGUF-Q4_K_M
-- Modelo base en HuggingFace: https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512
+- Repositorio en Hugging Face: https://huggingface.co/sigmanih/mistralai-Devstral-Small-2-24B-Instruct-2512-GGUF-Q4_K_M
+- Modelo base en Hugging Face: https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512
 - Repositorio de Sigma Studio en GitHub: https://github.com/Sigmanih/SigmaStudio
-- Perfil de HuggingFace del autor: https://huggingface.co/sigmanih
+- Perfil de Hugging Face del autor: https://huggingface.co/sigmanih
 - Licencia Apache 2.0 (referenciada en la insignia de la model card): https://opensource.org/licenses/Apache-2.0
 - Resultados de la busqueda web: no se encontraron enlaces relevantes. Las unicas entradas devueltas correspondian al servicio Google Translate (https://translate.google.com/, https://translate.google.fr/, https://translate.google.us/details) y no guardan relacion con el modelo.

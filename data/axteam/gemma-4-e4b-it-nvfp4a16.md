@@ -79,8 +79,8 @@ Fidelidad respecto al BF16 original sobre un conjunto interno mixto inglés/core
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| axteam/gemma-4-E4B-it-NVFP4A16 | 7,94 B (denso) | no disponible | NVFP4A16, safetensors | Apache-2.0 | HuggingFace, vLLM ≥ 0.19.0 |
-| google/gemma-4-E4B-it (BF16) | 7,94 B (denso) | no disponible | BF16, safetensors | Apache-2.0 | HuggingFace, transformers |
+| axteam/gemma-4-E4B-it-NVFP4A16 | 7,94 B (denso) | no disponible | NVFP4A16, safetensors | Apache-2.0 | Hugging Face, vLLM ≥ 0.19.0 |
+| google/gemma-4-E4B-it (BF16) | 7,94 B (denso) | no disponible | BF16, safetensors | Apache-2.0 | Hugging Face, transformers |
 | Variante FP8-dynamic del mismo modelo base | 7,94 B (denso) | no disponible | FP8, safetensors | Apache-2.0 | Referenciada en los benchmarks del autor |
 | Variante AWQ-8bit del mismo modelo base | 7,94 B (denso) | no disponible | AWQ 8-bit | Apache-2.0 | Referenciada en los benchmarks del autor |
 
@@ -99,7 +99,7 @@ No se dispone de información sobre modelos comparables de otros fabricantes con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/axteam/gemma-4-E4B-it-NVFP4A16
+- Repositorio Hugging Face: https://huggingface.co/axteam/gemma-4-E4B-it-NVFP4A16
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

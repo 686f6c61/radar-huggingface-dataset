@@ -72,7 +72,7 @@ No disponible. No se han proporcionado datos de modelos comparables en la misma 
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/Ishowbackup/gemma-4-12B-it-uncensored-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/Ishowbackup/gemma-4-12B-it-uncensored-GGUF)
 - [Modelo base abliterado (bf16)](https://huggingface.co/TrevorJS/gemma-4-12B-it-uncensored)
 - [Modelo original de Google](https://huggingface.co/google/gemma-4-12B-it)
 - [PR #24118 de llama.cpp (soporte Gemma4Unified)](https://github.com/ggml-org/llama.cpp/pull/24118)

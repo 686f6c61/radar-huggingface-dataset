@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`itsukitakahashi/mocov3-matching` es un prototipo de investigación publicado en HuggingFace por el usuario itsukitakahashi, orientado a tareas de *matching* (emparejamiento) mediante una implementación etiquetada como MoCo v3. El repositorio se presenta explícitamente como un punto de partida experimental: incluye un script ejecutable (`run.py`), un fichero de configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`). No es un modelo entrenado ni evaluado.
+`itsukitakahashi/mocov3-matching` es un prototipo de investigación publicado en Hugging Face por el usuario itsukitakahashi, orientado a tareas de *matching* (emparejamiento) mediante una implementación etiquetada como MoCo v3. El repositorio se presenta explícitamente como un punto de partida experimental: incluye un script ejecutable (`run.py`), un fichero de configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`). No es un modelo entrenado ni evaluado.
 
 La relevancia de esta ficha es limitada y debe interpretarse como una advertencia, no como una recomendación de uso. El propio autor indica que los pesos publicados son un checkpoint de inicialización válido para *smoke tests* y que no se reclama ninguna puntuación de benchmark. El recuento real de parámetros en safetensors es de 24.832, una cifra extremadamente baja que contrasta con la etiqueta `huge` que aparece en la model card; esta discrepancia debe tenerse en cuenta antes de cualquier evaluación.
 
@@ -44,7 +44,7 @@ Dado que el modelo no está entrenado, los casos de uso realistas se limitan al 
 - Reproducción de un pipeline autosupervisado: usar `run.py`, `config.json` y `training_args.json` como esqueleto para montar un experimento propio de aprendizaje contrastivo con MoCo v3, sustituyendo los datos por un corpus real.
 - Prueba de humo de infraestructura: cargar el checkpoint de inicialización para verificar que el *pipeline* de entrenamiento, el *dataloader* y el guardado de pesos funcionan antes de lanzar un trabajo largo.
 - Estudio de ablación de componentes: el prototipo fija atención flash, fusión tucker, activación mish y normalización instancenorm, lo que permite experimentar con variantes de cada componente manteniendo el resto constante.
-- Desarrollo de adaptadores de carga: al ser una implementación personalizada, sirve como caso de prueba para escribir un adaptador que permita cargarlo con APIs genéricas de HuggingFace.
+- Desarrollo de adaptadores de carga: al ser una implementación personalizada, sirve como caso de prueba para escribir un adaptador que permita cargarlo con APIs genéricas de Hugging Face.
 - Benchmarking de recetas de optimización: comparar RMSprop con *schedule* polinómico frente a otras configuraciones bajo el mismo presupuesto de datos y semillas, tal como sugiere la propia model card.
 - Docencia y formación: ilustrar la estructura mínima de un repositorio de investigación (script, configuración, argumentos de entrenamiento, pesos) para explicar buenas prácticas de reproducibilidad.
 - Evaluación de tareas de *matching*: entrenar el modelo con un conjunto de validación emparejado y reportar la métrica de la tarea a lo largo de al menos tres semillas, siguiendo la guía de evaluación del autor.
@@ -81,5 +81,5 @@ No disponible. La model card no identifica modelos comparables y no se dispone d
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/itsukitakahashi/mocov3-matching)
+- [Modelo en Hugging Face](https://huggingface.co/itsukitakahashi/mocov3-matching)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

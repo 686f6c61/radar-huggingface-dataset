@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenBird-artnfull es un repositorio de HuggingFace que publica los pesos preentrenados (políticas de control) y conjuntos de datos de trayectorias de movimiento para la plataforma de simulación robótica OpenBird-artnfull, un robot compañero de inspiración aviar con locomoción bípeda digitígrada y capacidades de vuelo VTOL (despegue y aterrizaje vertical). El proyecto lo desarrolla el autor artnfull y está integrado con el ecosistema LeRobot y el motor de simulación física MuJoCo.
+OpenBird-artnfull es un repositorio de Hugging Face que publica los pesos preentrenados (políticas de control) y conjuntos de datos de trayectorias de movimiento para la plataforma de simulación robótica OpenBird-artnfull, un robot compañero de inspiración aviar con locomoción bípeda digitígrada y capacidades de vuelo VTOL (despegue y aterrizaje vertical). El proyecto lo desarrolla el autor artnfull y está integrado con el ecosistema LeRobot y el motor de simulación física MuJoCo.
 
 El modelo resuelve el problema del control de un robot híbrido terrestre-aéreo: combina la dinámica de caminar bípeda con alas de ducto que se despliegan horizontalmente 180 grados para permitir el vuelo. Incluye además un sistema de mirada con pitch de pico orientable 55 grados hacia abajo y cámaras estéreo en la cabeza. El repositorio contiene políticas baseline para despegue, hover y aterrizaje, junto con datasets de demostración para aprendizaje por imitación y refuerzo. Es relevante para la comunidad de robótica física porque ofrece un punto de partida entrenado para investigar el control de robots bípedos con capacidades aéreas, así como un banco de pruebas basado en MuJoCo.
 
@@ -62,20 +62,20 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre modelos comparables en la misma categoria (robots bipedos VTOL con politicas preentrenadas publicadas en HuggingFace). Por tanto, la comparativa se considera no disponible.
+No se dispone de informacion sobre modelos comparables en la misma categoria (robots bipedos VTOL con politicas preentrenadas publicadas en Hugging Face). Por tanto, la comparativa se considera no disponible.
 
 ## Limitaciones y advertencias
 
 - La licencia del diseno 3D y los componentes mecanicos es CC BY-NC-SA 4.0: uso estrictamente no comercial. Los pesos y el software se distribuyen bajo Apache 2.0, pero la integracion con el modelo fisico puede estar restringida.
 - El soporte se ofrece "tal cual" (AS-IS) para investigacion y evaluacion, sin garantias de funcionamiento ni consultoria tecnica individual.
 - No hay benchmarks publicados, por lo que el rendimiento real del robot en tareas de vuelo o caminado no esta verificado.
-- El repositorio presenta 0 descargas en HuggingFace, lo que indica una adopcion minima y poca validacion externa.
+- El repositorio presenta 0 descargas en Hugging Face, lo que indica una adopcion minima y poca validacion externa.
 - La arquitectura de las redes no esta documentada, lo que dificulta la reproducibilidad y la comparacion con otros trabajos.
 - No es un modelo de lenguaje: no procesa texto ni genera respuestas, por lo que no es aplicable a tareas de NLP, codigo, vision ni audio.
 - La ausencia de cuantizacion y de metricas de latencia puede complicar el despliegue en tiempo real en hardware embebido.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/artnfull/OpenBird-artnfull
+- Hugging Face: https://huggingface.co/artnfull/OpenBird-artnfull
 - Repositorio GitHub: https://github.com/artnfull-bot/OpenBird-artnfull
-- Perfil del autor en HuggingFace: https://huggingface.co/artnfull
+- Perfil del autor en Hugging Face: https://huggingface.co/artnfull

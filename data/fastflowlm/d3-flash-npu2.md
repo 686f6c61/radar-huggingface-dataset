@@ -87,8 +87,8 @@ A partir de 1.536 tokens la atención se ejecuta en el kernel de atención de la
 
 | Modelo | Parametros | Contexto | Precisión Decision Index | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| D3-Flash-NPU2 (este) | 9B (Q4NX) | 32.768 tokens | 67,4% (NPU) | Apache-2.0 | HuggingFace, requiere FastFlowLM 1.0.12+ y NPU AMD Ryzen AI |
-| vllm-sr/d3-flash (BF16 upstream) | 9B | no disponible en la información | 67,8% | Apache-2.0 | HuggingFace, runtime vLLM Semantic Router |
+| D3-Flash-NPU2 (este) | 9B (Q4NX) | 32.768 tokens | 67,4% (NPU) | Apache-2.0 | Hugging Face, requiere FastFlowLM 1.0.12+ y NPU AMD Ryzen AI |
+| vllm-sr/d3-flash (BF16 upstream) | 9B | no disponible en la información | 67,8% | Apache-2.0 | Hugging Face, runtime vLLM Semantic Router |
 | d3:mini | 4B | no disponible | no disponible | no disponible | Paquete hermano de FastFlowLM |
 | d3:nano | 2B | no disponible | no disponible | no disponible | Paquete hermano de FastFlowLM |
 | d3:lite | 0,8B | no disponible | no disponible | no disponible | Paquete hermano de FastFlowLM |
@@ -110,7 +110,7 @@ No se dispone de datos de benchmarks de los modelos hermanos ni de otras alterna
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FastFlowLM/D3-Flash-NPU2
+- Repositorio Hugging Face: https://huggingface.co/FastFlowLM/D3-Flash-NPU2
 - Modelo base: https://huggingface.co/vllm-sr/d3-flash
 - Modelo base de la torre de texto: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de FastFlowLM: https://github.com/ROCm/FastFlowLM

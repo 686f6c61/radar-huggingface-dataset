@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Luthor 8B — MLX mixed-3-6 es una compilación cuantizada del modelo Luthor 8B, un fine-tune de Qwen3-8B de 8.190.735.360 parámetros orientado a pilotar herramientas de terminal y edición de ficheros dentro de un bucle de agente. Lo publica el usuario IAMIbrahim en HuggingFace bajo licencia Apache 2.0 y en formato MLX, es decir, pensado exclusivamente para Apple Silicon. No es un modelo nuevo entrenado desde cero: es una conversión con cuantización mixta de 3 y 6 bits por peso (4,088 bits por peso de media, 3,9 GB en disco) del fine-tune original.
+Luthor 8B — MLX mixed-3-6 es una compilación cuantizada del modelo Luthor 8B, un fine-tune de Qwen3-8B de 8.190.735.360 parámetros orientado a pilotar herramientas de terminal y edición de ficheros dentro de un bucle de agente. Lo publica el usuario IAMIbrahim en Hugging Face bajo licencia Apache 2.0 y en formato MLX, es decir, pensado exclusivamente para Apple Silicon. No es un modelo nuevo entrenado desde cero: es una conversión con cuantización mixta de 3 y 6 bits por peso (4,088 bits por peso de media, 3,9 GB en disco) del fine-tune original.
 
 La propuesta técnica es inusual y merece atención: en lugar de una cuantización uniforme de 4 bits, aplica 3 bits a las capas MLP y mantiene 6 bits en las capas consideradas sensibles. El resultado, según las mediciones del autor, es un artefacto más pequeño y más rápido que la build de 4 bits (21,1 frente a 19,2 tokens por segundo), porque la inferencia en Apple Silicon está limitada por el ancho de banda de memoria. Además, documenta explícitamente un intento fallido de bajar a 3,284 bits por peso que degeneraba en repeticiones de tokens.
 
@@ -107,7 +107,7 @@ Frente al modelo base `IAMIbrahim/luthor-8b`: mismos parámetros (8,19 mil millo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IAMIbrahim/luthor-8b-mlx-mixed-3-6
+- Modelo en Hugging Face: https://huggingface.co/IAMIbrahim/luthor-8b-mlx-mixed-3-6
 - Modelo base Luthor 8B: https://huggingface.co/IAMIbrahim/luthor-8b
 - Build MLX 8 bits: https://huggingface.co/IAMIbrahim/luthor-8b-mlx-8bit
 - Build MLX 6 bits: https://huggingface.co/IAMIbrahim/luthor-8b-mlx-6bit

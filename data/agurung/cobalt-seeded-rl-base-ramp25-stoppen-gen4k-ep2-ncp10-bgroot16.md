@@ -68,7 +68,7 @@ No se dispone de datos de comparación con otros modelos. El checkpoint se basa 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-bgroot16
+- Repositorio en Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-bgroot16
 - Checkpoint relacionado (ncp10-base): https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base
 - Checkpoint relacionado (ncp20-base): https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp20-base
 - Página de despliegue en FriendliAI (para variante similar): https://friendli.ai/models/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base-tf

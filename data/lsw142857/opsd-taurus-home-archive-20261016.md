@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LSW142857/OPSD-Taurus-Home-Archive-20261016 es un repositorio de archivo de pesos publicado por el usuario LSW142857 en HuggingFace. No se trata de un modelo entrenado con una arquitectura propia, sino de una copia de seguridad publica y verificable de modelos completos exportados y de tensores LoRA/MTP, organizada por el autor bajo la convencion "OPSD" (aparentemente un registro/archivo de experimentos). El repositorio ocupa 122,0 GB y su unico tag de formato tecnico es `safetensors`.
+LSW142857/OPSD-Taurus-Home-Archive-20261016 es un repositorio de archivo de pesos publicado por el usuario LSW142857 en Hugging Face. No se trata de un modelo entrenado con una arquitectura propia, sino de una copia de seguridad publica y verificable de modelos completos exportados y de tensores LoRA/MTP, organizada por el autor bajo la convencion "OPSD" (aparentemente un registro/archivo de experimentos). El repositorio ocupa 122,0 GB y su unico tag de formato tecnico es `safetensors`.
 
 El diseno del repositorio es el de un almacen con indice: los ficheros se catalogan en `manifest.json` segun su ruta original relativa al directorio "home", y cada tensor dispone de hash SHA-256, tamano, repositorio de origen y revision inmutable. Los pesos que ya existen en otros repositorios publicos de LSW142857 se referencian sin duplicarse, mientras que el contenido nuevo se almacena bajo `weights/` y, cuando hace falta, en repositorios "Part". La reconstruccion de un artefacto se realiza con `restore_model.py`.
 
@@ -91,7 +91,7 @@ No se dispone de datos suficientes para una comparativa tecnica rigurosa, ya que
 - Repositorio con 0 descargas y 0 likes, creado y actualizado con apenas 19 minutos de diferencia: indica publicacion automatizada y sin validacion de terceros.
 - Tamano elevado (122,0 GB): implica costes de almacenamiento, ancho de banda y tiempos de descarga considerables; los hashes SHA-256 permiten verificar integridad, pero no sustituyen una validacion funcional del modelo restaurado.
 - Exclusiones documentadas: no se incluyen checkpoints originales de entrenamiento, estados de optimizador, rollouts ni logs, por lo que no sirve para reanudar un entrenamiento desde su estado exacto.
-- El campo de fecha de creacion (2026-10-16) procede de los metadatos de HuggingFace tal cual; verifiquese en la pagina del repositorio.
+- El campo de fecha de creacion (2026-10-16) procede de los metadatos de Hugging Face tal cual; verifiquese en la pagina del repositorio.
 - No se debe asumir que los repositorios "OPSD-PI-Qwen3.5-9B-*" esten contenidos en este archivo: la model card no los enumera explicitamente.
 
 ## Enlaces

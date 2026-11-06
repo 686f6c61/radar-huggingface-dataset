@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Unlimited-OCR-3B-MoE-CUDA-AXQ-NVFP4-W4A16
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Unlimited-OCR-3B-MoE-CUDA-AXQ-NVFP4-W4A16
 - Modelo base: https://huggingface.co/baidu/Unlimited-OCR
 - Revision fijada del modelo base: `07dea832e22aefee32ad281d4b80551282e1c168`
 - Imagenes de runtime oficiales: `vllm/vllm-openai:v0.25.1` (AMD64 y ARM64)

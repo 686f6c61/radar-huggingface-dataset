@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fearvel/cutifiedanimecharacterdesign-variant-type-d-v3-illustrious` es un adaptador LoRA de texto a imagen publicado por el usuario fearvel en HuggingFace. Por sus etiquetas (`stable-diffusion`, `text-to-image`, `StableDiffusionPipeline`, `lora`), se trata de un módulo de ajuste fino que se carga sobre un modelo base de difusión estable para modificar el estilo de generacion, en este caso orientado al diseno de personajes de anime en una estetica "cutified" (estilizada o adorable).
+`fearvel/cutifiedanimecharacterdesign-variant-type-d-v3-illustrious` es un adaptador LoRA de texto a imagen publicado por el usuario fearvel en Hugging Face. Por sus etiquetas (`stable-diffusion`, `text-to-image`, `StableDiffusionPipeline`, `lora`), se trata de un módulo de ajuste fino que se carga sobre un modelo base de difusión estable para modificar el estilo de generacion, en este caso orientado al diseno de personajes de anime en una estetica "cutified" (estilizada o adorable).
 
 El repositorio tiene un tamano de 0,2 GB y una model card practicamente vacia: solo incluye un bloque de metadatos YAML y una imagen de ejemplo. No se documentan datos de entrenamiento, numero de pasos, resolucion objetivo ni modelo base exacto. El sufijo "illustrious" del nombre sugiere compatibilidad con la familia de modelos base Illustrious (derivada de SDXL), aunque esto no se confirma en la informacion disponible.
 
@@ -63,7 +63,7 @@ No disponible. No se dispone de informacion suficiente (modelo base, tamano, lic
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fearvel/cutifiedanimecharacterdesign-variant-type-d-v3-illustrious | no disponible | no aplica | no disponible | other | HuggingFace |
+| fearvel/cutifiedanimecharacterdesign-variant-type-d-v3-illustrious | no disponible | no aplica | no disponible | other | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,7 +80,7 @@ No disponible. No se dispone de informacion suficiente (modelo base, tamano, lic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fearvel/cutifiedanimecharacterdesign-variant-type-d-v3-illustrious
+- Hugging Face: https://huggingface.co/fearvel/cutifiedanimecharacterdesign-variant-type-d-v3-illustrious
 - Paper, blog, repositorio o demo adicionales: no disponible.
 
 Nota: los resultados de busqueda web recibidos no guardan relacion con el modelo y se han descartado por no aportar informacion tecnica util.

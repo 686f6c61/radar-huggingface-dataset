@@ -25,7 +25,7 @@ No se dispone de informacion detallada sobre la arquitectura del modelo base en 
 
 ## Capacidades
 
-- Generacion de texto en ingles, con estilo conversacional (etiqueta "conversational" en HuggingFace).
+- Generacion de texto en ingles, con estilo conversacional (etiqueta "conversational" en Hugging Face).
 - Soporte multimodal: los archivos `mmproj` (Q8_0 y f16) indican que el modelo puede procesar imagenes junto con texto, aunque no se detallan las tareas especificas de vision.
 - Compatible con la libreria transformers y con el ecosistema GGUF (llama.cpp, Ollama, etc.).
 - No se mencionan capacidades de tool calling, function calling ni razonamiento multi-paso explicito.
@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/mradermacher/Muse-Glimmer-30GB-Preserving-Abliterated-GGUF)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/mradermacher/Muse-Glimmer-30GB-Preserving-Abliterated-GGUF)
 - [Modelo base (referencia)](https://huggingface.co/Blackroot/Muse-Glimmer-30GB-Preserving-Abliterated)
 - [Pagina de resumen de cuantizaciones (enlace externo)](https://hf.tst.eu/model#Muse-Glimmer-30GB-Preserving-Abliterated-GGUF)
 - [Guia de uso de GGUF de TheBloke (referencia)](https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF)

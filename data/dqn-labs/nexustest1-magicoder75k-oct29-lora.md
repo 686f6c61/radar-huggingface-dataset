@@ -79,6 +79,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DQN-Labs/nexustest1-magicoder75k-oct29-lora
+- Repositorio Hugging Face: https://huggingface.co/DQN-Labs/nexustest1-magicoder75k-oct29-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3.8-27B-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth

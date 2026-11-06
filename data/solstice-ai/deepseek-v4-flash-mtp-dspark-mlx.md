@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Solstice-AI/DeepSeek-V4-Flash-MTP-DSpark-MLX
+- Hugging Face: https://huggingface.co/Solstice-AI/DeepSeek-V4-Flash-MTP-DSpark-MLX
 - Modelo base original: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Modelo base MLX: https://huggingface.co/Solstice-AI/DeepSeek-V4-Flash-Vision-Exp-MLX
 - Repositorio DeepSeek-V4: https://github.com/deepseek-ai/DeepSeek-V4

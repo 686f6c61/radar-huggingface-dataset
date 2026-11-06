@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kianacx-krea2-lora es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario chantzlane90, disenado para el modelo base de generacion de imagenes Krea 2. Su proposito es incorporar un personaje ficticio concreto —Kiana Campbell, descrito por el autor como personaje adulto generado por IA y no una persona real— de forma consistente a las imagenes generadas con dicho modelo base. No se trata de un modelo de lenguaje ni de un modelo completo, sino de un conjunto de pesos adicionales que se carga junto al modelo original.
+kianacx-krea2-lora es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario chantzlane90, disenado para el modelo base de generacion de imagenes Krea 2. Su proposito es incorporar un personaje ficticio concreto —Kiana Campbell, descrito por el autor como personaje adulto generado por IA y no una persona real— de forma consistente a las imagenes generadas con dicho modelo base. No se trata de un modelo de lenguaje ni de un modelo completo, sino de un conjunto de pesos adicionales que se carga junto al modelo original.
 
 Segun la model card, el adaptador se entreno con la herramienta fal-ai/krea-2-trainer durante 1000 pasos con rango (rank) 32, y sus claves fueron remapeadas al prefijo `diffusion_model.*` de ComfyUI para su uso en la plataforma Sogni. El repositorio ocupa aproximadamente 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo.
 
@@ -75,7 +75,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chantzlane90/kianacx-krea2-lora
+- Hugging Face: https://huggingface.co/chantzlane90/kianacx-krea2-lora
 - Model card del autor (incluida en el repositorio anterior): sin URL independiente disponible.
 - Entrenador utilizado, mencionado en la model card: fal-ai/krea-2-trainer (no se proporciona enlace directo en la informacion disponible).
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al autor ni al modelo base Krea 2. Los resultados devueltos corresponden a la empresa francesa Cosoluce y no guardan relacion con esta ficha.

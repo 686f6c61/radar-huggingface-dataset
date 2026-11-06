@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PDE-OBS es una campaña de checkpoints de referencia para el aprendizaje automático científico orientado a ecuaciones en derivadas parciales (PDE) con observaciones parciales. No se trata de un modelo generativo de lenguaje, sino de una colección de operadores neuronales entrenados como línea base reproducible para un benchmark de recuperación de soluciones de PDE a partir de observaciones incompletas. Lo publica el usuario ru1ch3n en HuggingFace bajo licencia MIT, con un repositorio de 17,5 GB que contiene los pesos finales de 441 configuraciones acreditadas, además de un conjunto adicional de 663 ejecuciones de la revisión de octubre de 2026.
+PDE-OBS es una campaña de checkpoints de referencia para el aprendizaje automático científico orientado a ecuaciones en derivadas parciales (PDE) con observaciones parciales. No se trata de un modelo generativo de lenguaje, sino de una colección de operadores neuronales entrenados como línea base reproducible para un benchmark de recuperación de soluciones de PDE a partir de observaciones incompletas. Lo publica el usuario ru1ch3n en Hugging Face bajo licencia MIT, con un repositorio de 17,5 GB que contiene los pesos finales de 441 configuraciones acreditadas, además de un conjunto adicional de 663 ejecuciones de la revisión de octubre de 2026.
 
 Cada checkpoint corresponde a una combinación concreta de familia de PDE (por ejemplo, Poisson), método de operador neuronal (por ejemplo, FNO) y patrón de observación de entrenamiento (por ejemplo, muestreo aleatorio del 50 %). La relevancia actual reside en que proporciona una base empírica homogénea y auditable para comparar métodos de operadores neuronales en el régimen de observaciones parciales, un escenario poco cubierto por los benchmarks habituales de PDE. La arquitectura concreta de cada checkpoint queda registrada en su fichero `resolved.yaml` mediante `method.name` y `method.kwargs`, y no se especifica de forma unificada en la model card.
 
@@ -81,6 +81,6 @@ No disponible. La información proporcionada no incluye otros benchmarks de oper
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ru1ch3n/PDE-OBS
+- Modelo en Hugging Face: https://huggingface.co/ru1ch3n/PDE-OBS
 - Dataset compañero: https://huggingface.co/datasets/ru1ch3n/PDE-OBS
 - Artículo referenciado en las etiquetas: arXiv:2609.36521 (no se dispone de URL verificada en la información proporcionada)

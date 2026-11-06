@@ -64,7 +64,7 @@ No disponible. Al tratarse de un repositorio documental sin modelo subyacente, n
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Itsabdullahalotaibi/paper_012071268_zero_shot_transfer
+- Repositorio de Hugging Face: https://huggingface.co/Itsabdullahalotaibi/paper_012071268_zero_shot_transfer
 - Articulo ZeroG (arXiv): https://arxiv.org/abs/2402.11235
 - PDF sobre combinacion de escalado para zero-shot transfer (arXiv): https://arxiv.org/pdf/2111.10050v1.pdf
 - Articulo BASIC (ACM): https://dl.acm.org/doi/10.1016/j.neucom.2023.126658

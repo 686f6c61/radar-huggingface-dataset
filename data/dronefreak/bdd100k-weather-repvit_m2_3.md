@@ -127,7 +127,7 @@ Lectura de la tabla: RepViT-M2.3 se situa en la zona media-baja del grupo, con 0
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-weather-repvit_m2_3
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-weather-repvit_m2_3
 - Repositorio BDD100K-Toolkit: https://github.com/dronefreak/bdd100k-toolkit
 - Dataset de entrenamiento: https://huggingface.co/datasets/dronefreak/BDD100K-Weather-Classification
 - Modelo base en timm: https://huggingface.co/timm/repvit_m2_3.dist_300e_in1k

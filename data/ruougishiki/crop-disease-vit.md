@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`RuougiShiki/crop-disease-vit` es un modelo de visión publicado en HuggingFace por el usuario RuougiShiki. La información disponible es mínima: la model card únicamente declara la licencia MIT y no incluye descripción, datos de entrenamiento, métricas ni instrucciones de uso. El nombre del repositorio sugiere un clasificador de enfermedades de cultivos basado en un Vision Transformer, pero se trata de una inferencia a partir del identificador y del tag `vit`, no de un dato confirmado por el autor.
+`RuougiShiki/crop-disease-vit` es un modelo de visión publicado en Hugging Face por el usuario RuougiShiki. La información disponible es mínima: la model card únicamente declara la licencia MIT y no incluye descripción, datos de entrenamiento, métricas ni instrucciones de uso. El nombre del repositorio sugiere un clasificador de enfermedades de cultivos basado en un Vision Transformer, pero se trata de una inferencia a partir del identificador y del tag `vit`, no de un dato confirmado por el autor.
 
 El dato objetivo más relevante es el recuento de parámetros obtenido de los pesos en safetensors: 85.827.878 parámetros, un volumen compatible con la escala de un ViT-Base (~86 M). El repositorio ocupa 0,3 GB, lo que encaja con pesos en fp32 de ese tamaño. No hay información sobre resolución de entrada, número de clases, composición del dataset ni procedimiento de entrenamiento.
 
@@ -29,7 +29,7 @@ No hay información alguna sobre el conjunto de entrenamiento: ni número de im�
 
 ## Capacidades
 
-- Clasificación de imágenes: es la tarea esperable dado el tag `vit` y el nombre del repositorio, si bien el pipeline no está declarado en HuggingFace.
+- Clasificación de imágenes: es la tarea esperable dado el tag `vit` y el nombre del repositorio, si bien el pipeline no está declarado en Hugging Face.
 - Diagnóstico de enfermedades de cultivos: capacidad sugerida por el identificador del modelo, no verificada en la documentación.
 - Extracción de características visuales: los checkpoints ViT pueden emplearse como backbone congelado, aunque se desconoce si los pesos están ajustados a un dominio agrícola concreto.
 - Generación de texto, razonamiento, código y matemáticas: no disponible; no es un modelo de lenguaje.
@@ -69,7 +69,7 @@ Estimaciones calculadas a partir de los 85,8 M de parámetros; sujetas a la conf
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| crop-disease-vit (este modelo) | 85,8 M | entrada no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| crop-disease-vit (este modelo) | 85,8 M | entrada no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | google/vit-base-patch16-224 | ~86 M | 224×224 | métricas publicadas en ImageNet (no comparables a la tarea agrícola) | Apache 2.0 | ampliamente usado |
 | facebook/deit-base-distilled-patch16-224 | ~87 M | 224×224 | métricas publicadas en ImageNet | Apache 2.0 | ampliamente usado |
 | ResNet-50 (torchvision) | ~25,6 M | 224×224 | métricas publicadas en ImageNet | BSD-3 | estándar de la industria |
@@ -88,5 +88,5 @@ La comparación de rendimiento con este modelo no es posible: no hay métricas p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RuougiShiki/crop-disease-vit
+- Hugging Face: https://huggingface.co/RuougiShiki/crop-disease-vit
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código ni demos.

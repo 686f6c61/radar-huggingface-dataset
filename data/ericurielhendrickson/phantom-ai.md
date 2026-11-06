@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Phantom-AI es un adaptador LoRA de texto a imagen publicado en HuggingFace por el usuario EricUrielHendrickson bajo la librería `diffusers`. No se trata de un modelo completo, sino de un ajuste fino de bajo rango pensado para inyectar un concepto o estilo concreto (todo apunta a una temática de fantasmas o "phantom") sobre un modelo base identificado como `cyber-phantom/opulent-odyssey-v01-flux`. La model card es mínima: únicamente declara la palabra de activación `Hey Phantom`, la etiqueta `template:diffusion-lora` y un ejemplo de widget con el prompt `ghost-icon`.
+Phantom-AI es un adaptador LoRA de texto a imagen publicado en Hugging Face por el usuario EricUrielHendrickson bajo la librería `diffusers`. No se trata de un modelo completo, sino de un ajuste fino de bajo rango pensado para inyectar un concepto o estilo concreto (todo apunta a una temática de fantasmas o "phantom") sobre un modelo base identificado como `cyber-phantom/opulent-odyssey-v01-flux`. La model card es mínima: únicamente declara la palabra de activación `Hey Phantom`, la etiqueta `template:diffusion-lora` y un ejemplo de widget con el prompt `ghost-icon`.
 
 El interés del repositorio es, a día de hoy, limitado para producción: cuenta con 0 descargas y 0 likes, el tamaño del repositorio es de 0.0 GB (lo que sugiere que los pesos del adaptador no están efectivamente alojados o no se han indexado) y no se declara licencia ni idiomas. La fecha de creación registrada es 2026-10-20, posterior a la de la mayoría de referencias públicas, lo que puede indicar un error de metadatos o un artefacto del sistema.
 
@@ -49,7 +49,7 @@ Respecto al entrenamiento, la model card no incluye número de imágenes, númer
 - Assets para videojuegos o experiencias de Halloween: generación por lotes de sprites, ilustraciones o elementos decorativos manteniendo una línea visual consistente gracias al ajuste LoRA.
 - Prototipado rápido de concepto visual: crear variaciones de un motivo concreto en minutos antes de encargar arte final a un ilustrador, usando el adaptador sobre el modelo base.
 - Contenido para marketing estacional: campañas de temporada que requieran imágenes de temática fantasmal, generadas de forma automatizada desde un pipeline `diffusers` con el prompt de activación fijo y variables de estilo.
-- Prueba de concepto de personalización de modelos: sirve como ejemplo didáctico de cómo se estructura un repositorio `template:diffusion-lora` en HuggingFace y de cómo se documenta una palabra de activación.
+- Prueba de concepto de personalización de modelos: sirve como ejemplo didáctico de cómo se estructura un repositorio `template:diffusion-lora` en Hugging Face y de cómo se documenta una palabra de activación.
 - Integración en flujos de trabajo con ComfyUI: el adaptador puede cargarse como nodo LoRA sobre el modelo base para combinarlo con otros adaptadores, siempre que la compatibilidad esté verificada empíricamente.
 - Experimentación en investigación sobre adaptadores de bajo rango: permite estudiar cómo un LoRA de temática muy específica altera la distribución de salida del modelo base, comparando generaciones con y sin el adaptador.
 
@@ -72,8 +72,8 @@ No se dispone de información sobre adaptadores LoRA comparables dentro del mism
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Phantom-AI (este modelo) | no disponible | no aplica | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
-| `cyber-phantom/opulent-odyssey-v01-flux` (base) | no disponible | no aplica | sin datos en la información aportada | no disponible | HuggingFace |
+| Phantom-AI (este modelo) | no disponible | no aplica | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
+| `cyber-phantom/opulent-odyssey-v01-flux` (base) | no disponible | no aplica | sin datos en la información aportada | no disponible | Hugging Face |
 | Otros LoRA de temática similar | no disponible | no aplica | no disponible | no disponible | no identificados |
 
 ## Limitaciones y advertencias

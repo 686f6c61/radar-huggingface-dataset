@@ -81,9 +81,9 @@ No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniGPT Model L | 27,3 M | 512 | TinyStories V2, 544 M tokens | MIT | HuggingFace + demo Space |
-| MiniGPT Model M | 12,2 M | 512 | TinyStories V2, 242 M tokens | MIT | HuggingFace |
-| MiniGPT Model S | 4,2 M | 512 | TinyStories V2, 85 M tokens | MIT | HuggingFace |
+| MiniGPT Model L | 27,3 M | 512 | TinyStories V2, 544 M tokens | MIT | Hugging Face + demo Space |
+| MiniGPT Model M | 12,2 M | 512 | TinyStories V2, 242 M tokens | MIT | Hugging Face |
+| MiniGPT Model S | 4,2 M | 512 | TinyStories V2, 85 M tokens | MIT | Hugging Face |
 
 No se dispone en la información proporcionada de datos de benchmarks comparables con otros modelos de la misma categoría (por ejemplo, variantes TinyStories de terceros) para establecer una comparación cuantitativa.
 
@@ -100,7 +100,7 @@ No se dispone en la información proporcionada de datos de benchmarks comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddheshrj/minigpt-tinystories
+- Modelo en Hugging Face: https://huggingface.co/siddheshrj/minigpt-tinystories
 - Demo interactiva (Space): https://huggingface.co/spaces/siddheshrj/minigpt-stories
 - Repositorio de código: https://github.com/SiddheshJajurley/minigpt
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories

@@ -22,7 +22,7 @@ El modelo esta licenciado bajo Apache 2.0 y solo soporta ingles. Su autor lo pos
 | Formato de pesos | GGUF (F16, 44,6 MB); convertido desde un checkpoint original en JAX a formato HF Llama y despues a GGUF |
 | Tokenizador | BPE byte-level de 16.384 tokens, entrenado para este modelo |
 | Plantilla de chat | Embebida en el GGUF; formato `<|system|>...<|end|><|user|>...<|end|><|assistant|>`, sin token BOS |
-| Tamano del repo | 0,0 GB segun HuggingFace |
+| Tamano del repo | 0,0 GB segun Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -106,6 +106,6 @@ Los tres modelos se evaluaron con lm-evaluation-harness 0.4.13 en fp32 y 0-shot.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SmallAICreator/MiniGPT2-22M-GGUF
-- Fichero de pesos: `MiniGPT2-22M-F16.gguf` (44,6 MB), disponible en el repositorio de HuggingFace.
+- Hugging Face: https://huggingface.co/SmallAICreator/MiniGPT2-22M-GGUF
+- Fichero de pesos: `MiniGPT2-22M-F16.gguf` (44,6 MB), disponible en el repositorio de Hugging Face.
 - Paper, blog, repositorio o demo adicionales: no disponible. Las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo; los unicos resultados obtenidos estaban relacionados con precios de carburantes y no guardan relacion con la ficha.

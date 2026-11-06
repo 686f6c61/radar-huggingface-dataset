@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cnn Transformer for Multitask es un repositorio de implementacion experimental publicado por el usuario rana-alharbi en HuggingFace. No se trata de un modelo entrenado ni de un checkpoint listo para produccion, sino de una implementacion funcional de referencia de una arquitectura CNN-Transformer orientada a tareas multiples, con una configuracion deliberadamente diminuta ("tiny") y pruebas de humo reproducibles. El propio autor indica de forma explicita que no se reclama ninguna puntuacion de benchmark.
+Cnn Transformer for Multitask es un repositorio de implementacion experimental publicado por el usuario rana-alharbi en Hugging Face. No se trata de un modelo entrenado ni de un checkpoint listo para produccion, sino de una implementacion funcional de referencia de una arquitectura CNN-Transformer orientada a tareas multiples, con una configuracion deliberadamente diminuta ("tiny") y pruebas de humo reproducibles. El propio autor indica de forma explicita que no se reclama ninguna puntuacion de benchmark.
 
 El checkpoint incluido (`model.safetensors`) contiene unicamente 16.576 parametros, lo que lo situa en un orden de magnitud muy inferior al de cualquier modelo de lenguaje utilizable. El repositorio se centra en codigo transparente: el archivo `finetune.py` es el artefacto principal, acompanado de `config.json` con la configuracion de arquitectura y `training_args.json` con la receta de experimento por defecto.
 
@@ -77,5 +77,5 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rana-alharbi/multitask
+- Hugging Face: https://huggingface.co/rana-alharbi/multitask
 - No se han encontrado papers, blogs, repositorios adicionales ni demos relevantes en la busqueda web.

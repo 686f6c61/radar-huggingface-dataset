@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | No especificado | BF16, FP8, etc. | Apache 2.0 (segun Qwen) | HuggingFace |
-| HauhauCS Qwen3.8-27B-Uncensored-Aggressive-MTP-GGUF | 27B | 32K (recomendado) | Q8_K_P, Q5_K_M, etc. | No disponible | HuggingFace |
-| Este modelo (NVFP4 mixto) | 27B | 32K (recomendado) | NVFP4/Q8_0/F32/F16 | No disponible | HuggingFace |
+| Qwen3.8-27B (base) | 27B | No especificado | BF16, FP8, etc. | Apache 2.0 (segun Qwen) | Hugging Face |
+| HauhauCS Qwen3.8-27B-Uncensored-Aggressive-MTP-GGUF | 27B | 32K (recomendado) | Q8_K_P, Q5_K_M, etc. | No disponible | Hugging Face |
+| Este modelo (NVFP4 mixto) | 27B | 32K (recomendado) | NVFP4/Q8_0/F32/F16 | No disponible | Hugging Face |
 
 La comparativa con otros modelos de 27B de la misma categoría (por ejemplo, Llama-3.1-8B o Mistral-7B) no es directa por el tamaño y las capacidades multimodales. Este modelo se distingue por su perfil "uncensored" y por la optimización específica para Blackwell.
 
@@ -78,7 +78,7 @@ La comparativa con otros modelos de 27B de la misma categoría (por ejemplo, Lla
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/AIconjured/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF-Q8-NVFP4
+- Repositorio Hugging Face del modelo: https://huggingface.co/AIconjured/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF-Q8-NVFP4
 - Modelo base de HauhauCS: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Modelo base de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Página de descripción en aiany.app: https://aiany.app/item/qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf

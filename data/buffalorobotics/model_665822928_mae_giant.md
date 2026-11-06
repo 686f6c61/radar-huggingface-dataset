@@ -60,6 +60,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Buffalorobotics/model_665822928_mae_giant](https://huggingface.co/Buffalorobotics/model_665822928_mae_giant)
+- Repositorio Hugging Face: [Buffalorobotics/model_665822928_mae_giant](https://huggingface.co/Buffalorobotics/model_665822928_mae_giant)
 - Modelo relacionado VideoMAEv2-giant (Shanghai AI Lab) en ModelScope: [https://www.modelscope.cn/models/Shanghai_AI_Laboratory/VideoMAEv2-giant](https://www.modelscope.cn/models/Shanghai_AI_Laboratory/VideoMAEv2-giant)
 - GitHub oficial de VideoMAE V2: [https://github.com/OpenGVLab/VideoMAEv2](https://github.com/OpenGVLab/VideoMAEv2)

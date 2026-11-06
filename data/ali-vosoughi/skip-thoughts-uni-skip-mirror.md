@@ -91,7 +91,7 @@ Comparativa de rendimiento entre estos modelos: no disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ali-vosoughi/skip-thoughts-uni-skip-mirror
+- Repositorio en Hugging Face: https://huggingface.co/ali-vosoughi/skip-thoughts-uni-skip-mirror
 - Proyecto original Skip-Thoughts (Ryan Kiros): https://github.com/ryankiros/skip-thoughts
 - Ubicación original de descarga (ya no operativa): http://www.cs.toronto.edu/~rkiros/models/
 - Paper Skip-Thought Vectors: https://arxiv.org/abs/1506.06726

@@ -108,7 +108,7 @@ Este modelo se compara con otros drafters para el mismo objetivo Muse-Glimmer-30
 | Acceptance length media (GSM8K) | 6,57 | 5,43 | 5,45 |
 | Speedup vs. autorregresivo (GSM8K, conc. 1) | 4,59× | 3,88× | 3,70× |
 | Licencia | Apache 2.0 | Apache 2.0 (presumible) | No disponible |
-| Disponibilidad | HuggingFace (incoai y z-lab) | HuggingFace (meta-models) | HuggingFace (DaoCloud) |
+| Disponibilidad | Hugging Face (incoai y z-lab) | Hugging Face (meta-models) | Hugging Face (DaoCloud) |
 
 ## Limitaciones y advertencias
 
@@ -122,8 +122,8 @@ Este modelo se compara con otros drafters para el mismo objetivo Muse-Glimmer-30
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/incoai/Muse-Glimmer-30B-DFlash2)
-- [Espejo en HuggingFace (z-lab)](https://huggingface.co/z-lab/Muse-Glimmer-30B-DFlash2)
+- [Página del modelo en Hugging Face](https://huggingface.co/incoai/Muse-Glimmer-30B-DFlash2)
+- [Espejo en Hugging Face (z-lab)](https://huggingface.co/z-lab/Muse-Glimmer-30B-DFlash2)
 - [Modelo objetivo Muse-Glimmer-30B](https://huggingface.co/meta-models/Muse-Glimmer-30B)
 - [Blog de DFlash 2](https://inco.ai/blog/dflash2/)
 - [Repositorio GitHub de DFlash](https://github.com/z-lab/dflash)

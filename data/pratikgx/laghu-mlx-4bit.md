@@ -76,9 +76,9 @@ La decodificación en 4 bits es entre un 10 % y un 25 % más rápida; el prefill
 
 | Modelo | Parámetros | Contexto | Cuantización | Calidad documentada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| pratikgx/Laghu-MLX-4bit | 151,8 M | 16.384 (ventana 512) | 4 bits MLX | KL 0,337; top-1 69,9 % frente a F16 | Apache-2.0 | HuggingFace, MLX |
-| udgamlabs/Laghu-MLX | 151,8 M | 16.384 (ventana 512) | bf16 MLX | KL 0,0009; top-1 98,0 % frente a F16 | Apache-2.0 | HuggingFace, MLX |
-| udgamlabs/Laghu | 152 M | no disponible en la información | no disponible | no disponible | Apache-2.0 (según el modelo base) | HuggingFace |
+| pratikgx/Laghu-MLX-4bit | 151,8 M | 16.384 (ventana 512) | 4 bits MLX | KL 0,337; top-1 69,9 % frente a F16 | Apache-2.0 | Hugging Face, MLX |
+| udgamlabs/Laghu-MLX | 151,8 M | 16.384 (ventana 512) | bf16 MLX | KL 0,0009; top-1 98,0 % frente a F16 | Apache-2.0 | Hugging Face, MLX |
+| udgamlabs/Laghu | 152 M | no disponible en la información | no disponible | no disponible | Apache-2.0 (según el modelo base) | Hugging Face |
 
 La comparación relevante es interna a la familia Laghu: la versión bf16 de Udgam Labs es la referencia de calidad y la opción recomendada por el propio autor de esta conversión. No se dispone de datos de benchmarks ni de especificaciones de modelos de terceros de tamaño comparable en la información proporcionada, por lo que no se incluye una comparación con alternativas externas.
 
@@ -96,7 +96,7 @@ La comparación relevante es interna a la familia Laghu: la versión bf16 de Udg
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pratikgx/Laghu-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/pratikgx/Laghu-MLX-4bit
 - Modelo base (MLX, bf16): https://huggingface.co/udgamlabs/Laghu-MLX
 - Modelo original: https://huggingface.co/udgamlabs/Laghu
 - Dataset con resultados de benchmarks: https://huggingface.co/datasets/pratikgx/launch-bench-results

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace bajo el identificador `asdsdSADASD1/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente sus capacidades de razonamiento e inferencia gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El autor reporta mejoras notables en tareas de matemáticas, programación y lógica general, así como una reducción de la tasa de alucinación y un mejor soporte para function calling.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face bajo el identificador `asdsdSADASD1/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente sus capacidades de razonamiento e inferencia gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El autor reporta mejoras notables en tareas de matemáticas, programación y lógica general, así como una reducción de la tasa de alucinación y un mejor soporte para function calling.
 
 El repositorio está etiquetado como `transformers`, `pytorch`, `bert` y `feature-extraction`, aunque no se especifican detalles concretos sobre la arquitectura subyacente, el número de parámetros o la longitud de contexto. La licencia es MIT, lo que permite uso comercial y modificación. El repositorio parece ser una prueba (TestRepo) con cero descargas y cero likes, y su tamaño es de 0.0 GB, lo que sugiere que podría estar vacío o ser un placeholder. A pesar de la falta de información técnica detallada, la model card incluye una tabla de evaluación comparativa con otros modelos no identificados, lo que permite hacerse una idea de su rendimiento relativo en diversas categorías.
 
@@ -99,5 +99,5 @@ No se puede realizar una comparativa fiable al no conocerse la arquitectura ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/asdsdSADASD1/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/asdsdSADASD1/MyAwesomeModel-TestRepo
 - No se proporcionan enlaces a papers, blogs, repositorios de código ni demos en la información disponible.

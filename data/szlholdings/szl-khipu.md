@@ -91,7 +91,7 @@ No aplicable. Este repositorio no es un modelo de lenguaje ni un sistema de aten
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SZLHOLDINGS/szl-khipu
+- Repositorio Hugging Face: https://huggingface.co/SZLHOLDINGS/szl-khipu
 - Fuente GitHub canonica: https://github.com/szl-holdings/szl-khipu
 - Repositorio de kernels: https://huggingface.co/kernels/SZLHOLDINGS/szl-khipu-kernels
 - Articulo de referencia (FlexAttention): arXiv:2412.05496

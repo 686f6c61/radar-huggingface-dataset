@@ -83,6 +83,6 @@ No se dispone de información sobre otros modelos de detección de recaptura com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HanyueShen/risa-recaptured-image-detection
+- Repositorio Hugging Face: https://huggingface.co/HanyueShen/risa-recaptured-image-detection
 - Dataset DS-05 (Imperial College London): https://www.commsp.ee.ic.ac.uk/~pld/research/Rewind/Recapture/
 - Archivo de configuración y licencia dentro del repositorio: https://huggingface.co/HanyueShen/risa-recaptured-image-detection/tree/main

@@ -66,9 +66,9 @@ La resolución exacta requiere que todos los subfallos inyectados sean reparados
 
 | Modelo | Parametros | Contexto | Metodo de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CrashDiag-Qwen2.5-3B-GRPO | 3B + LoRA | 1024 prompt / 96 completion | GRPO con recompensa mecanica | MIT | HuggingFace |
-| Qwen2.5-3B-Instruct (base) | 3B | 32K | SFT + RLHF | Apache 2.0 | HuggingFace |
-| Qwen2.5-3B-Instruct-grpo (chenggong1995) | 3B | No especificado | GRPO (sin detalle) | No especificada | HuggingFace |
+| CrashDiag-Qwen2.5-3B-GRPO | 3B + LoRA | 1024 prompt / 96 completion | GRPO con recompensa mecanica | MIT | Hugging Face |
+| Qwen2.5-3B-Instruct (base) | 3B | 32K | SFT + RLHF | Apache 2.0 | Hugging Face |
+| Qwen2.5-3B-Instruct-grpo (chenggong1995) | 3B | No especificado | GRPO (sin detalle) | No especificada | Hugging Face |
 
 No se dispone de datos de rendimiento comparables para otros adaptadores GRPO sobre Qwen2.5-3B. La comparación más relevante es contra el modelo base, que se muestra en la sección de benchmarks. El adaptador CrashDiag está especializado en un dominio concreto, por lo que no es directamente comparable con modelos generalistas de propósito general.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparables para otros adaptadores GRPO so
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Indium-AI-Labs/CrashDiag-Qwen2.5-3B-GRPO
+- Hugging Face: https://huggingface.co/Indium-AI-Labs/CrashDiag-Qwen2.5-3B-GRPO
 - Repositorio del proyecto CrashDiag: https://github.com/Indium-AI-Labs/CrashDiag
 - Perfil de Indium AI Labs en GitHub: https://github.com/Indium-AI-Labs/
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

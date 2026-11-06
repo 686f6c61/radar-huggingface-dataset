@@ -84,7 +84,7 @@ Los datos de la comparativa proceden de las fuentes de busqueda y de los metadat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/moonshineai/gemma4-e2b-it-christian-q4-K-M
+- Repositorio en Hugging Face: https://huggingface.co/moonshineai/gemma4-e2b-it-christian-q4-K-M
 - Pagina de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Vision general de Gemma en Google AI for Developers: https://ai.google.dev/gemma/docs/core
 - Model card de Gemma 4: https://ai.google.dev/gemma/docs/core/model_card_4

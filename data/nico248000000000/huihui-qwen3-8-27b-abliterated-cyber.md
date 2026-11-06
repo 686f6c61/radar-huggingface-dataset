@@ -75,7 +75,7 @@ No se dispone de comparaciones directas con otros modelos de la misma categoria 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nico248000000000/Huihui-Qwen3.8-27B-abliterated-cyber
+- Repositorio Hugging Face: https://huggingface.co/nico248000000000/Huihui-Qwen3.8-27B-abliterated-cyber
 - Modelo base (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Repositorio oficial de Qwen3.8-27B (GitHub): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Version abliterated en Ollama: https://ollama.com/huihui_ai/Qwen3.8-abliterated

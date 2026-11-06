@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Montalte/qwen3_4b_cn11_field_oci100_planb_paper es un checkpoint derivado de Qwen/Qwen3-4B-Base, publicado por el usuario Montalte en HuggingFace. Se trata de una fusión de pesos ("merge") obtenida mediante una técnica que el autor etiqueta como "localize-and-stitch" y "plan-b", subida desde ejecuciones de evaluación locales. No es un modelo entrenado desde cero ni un fine-tuning convencional con dataset publicado, sino una recombinación de pesos del modelo base Qwen3-4B.
+Montalte/qwen3_4b_cn11_field_oci100_planb_paper es un checkpoint derivado de Qwen/Qwen3-4B-Base, publicado por el usuario Montalte en Hugging Face. Se trata de una fusión de pesos ("merge") obtenida mediante una técnica que el autor etiqueta como "localize-and-stitch" y "plan-b", subida desde ejecuciones de evaluación locales. No es un modelo entrenado desde cero ni un fine-tuning convencional con dataset publicado, sino una recombinación de pesos del modelo base Qwen3-4B.
 
 El modelo conserva la arquitectura y el tamaño del Qwen3-4B-Base original: 4.022.468.096 parámetros totales en formato safetensors, lo que lo sitúa en la categoría de modelos densos de 4B. La model card es extremadamente escueta: no documenta el procedimiento de fusión, los datos de evaluación, los hiperparámetros ni los resultados obtenidos. El repositorio ocupa 8,1 GB y la licencia declarada es Apache-2.0, heredada del modelo base.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Montalte/qwen3_4b_cn11_field_oci100_planb_paper | 4,02B | No disponible | Apache-2.0 | HuggingFace (48 descargas) | Merge experimental sin benchmarks |
-| Qwen/Qwen3-4B-Base | ~4B | No disponible en esta ficha | Apache-2.0 | HuggingFace, modelo oficial | Modelo base del que deriva; documentación oficial y evaluaciones publicadas por Alibaba |
-| Qwen/Qwen3-4B (instruct) | ~4B | No disponible en esta ficha | Apache-2.0 | HuggingFace, modelo oficial | Variante alineada para instrucciones y chat, con soporte de modo thinking |
+| Montalte/qwen3_4b_cn11_field_oci100_planb_paper | 4,02B | No disponible | Apache-2.0 | Hugging Face (48 descargas) | Merge experimental sin benchmarks |
+| Qwen/Qwen3-4B-Base | ~4B | No disponible en esta ficha | Apache-2.0 | Hugging Face, modelo oficial | Modelo base del que deriva; documentación oficial y evaluaciones publicadas por Alibaba |
+| Qwen/Qwen3-4B (instruct) | ~4B | No disponible en esta ficha | Apache-2.0 | Hugging Face, modelo oficial | Variante alineada para instrucciones y chat, con soporte de modo thinking |
 
 La comparación relevante es siempre contra Qwen3-4B-Base, del que este checkpoint es una derivación no documentada. Cualquier otro modelo de ~4B (Llama 3.2 3B, Gemma 2 2B/9B, Phi-3.5-mini) requeriría datos de benchmarks que aquí no están disponibles para establecer una comparación rigurosa.
 
@@ -86,6 +86,6 @@ La comparación relevante es siempre contra Qwen3-4B-Base, del que este checkpoi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Montalte/qwen3_4b_cn11_field_oci100_planb_paper
+- Modelo en Hugging Face: https://huggingface.co/Montalte/qwen3_4b_cn11_field_oci100_planb_paper
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Perfil del autor: https://huggingface.co/Montalte

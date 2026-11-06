@@ -32,7 +32,7 @@ El protocolo de entrenamiento es idéntico para los 40 backbones del benchmark. 
 - Clasificación de imágenes en 10 clases morfológicas de galaxias del conjunto Galaxy10 DECaLS.
 - Extracción de características visuales mediante un backbone Swin V2 preentrenado y congelado.
 - Inferencia directa con `AutoModelForImageClassification` y `AutoImageProcessor` de transformers.
-- Compatible con los *endpoints* de HuggingFace (etiqueta `endpoints_compatible`).
+- Compatible con los *endpoints* de Hugging Face (etiqueta `endpoints_compatible`).
 - No soporta *tool calling*, *function calling*, agentes ni razonamiento multi-paso.
 - No tiene capacidades multilingües ni de generación de texto: es exclusivamente un clasificador de imágenes.
 - No dispone de modo *thinking*, visión generativa, audio ni otras modalidades.
@@ -45,7 +45,7 @@ El protocolo de entrenamiento es idéntico para los 40 backbones del benchmark. 
 - Línea base en estudios de transferencia: su régimen *head-only* con backbone congelado lo convierte en una referencia barata (una sola GPU, 30 épocas) frente a estrategias de *fine-tuning* completo.
 - Selección de backbone para nuevos proyectos astronómicos: comparar sus métricas con las de los otros 39 backbones del benchmark ayuda a decidir qué arquitectura usar antes de invertir en entrenamiento completo.
 - Docencia y divulgación: ejemplo compacto (0,2 GB) y reproducible de adaptación de un modelo fundacional de visión a un dominio científico, ejecutable en hardware modesto.
-- Integración en servicios de inferencia: al ser un clasificador de 49 M de parámetros en safetensors, puede servirse con transformers o con un endpoint de HuggingFace para clasificar imágenes bajo demanda.
+- Integración en servicios de inferencia: al ser un clasificador de 49 M de parámetros en safetensors, puede servirse con transformers o con un endpoint de Hugging Face para clasificar imágenes bajo demanda.
 
 ## Benchmarks y rendimiento
 
@@ -63,7 +63,7 @@ Evolución de la semilla 42 en épocas clave: época 1 (16,35 % acc. test / 8,25
 - VRAM estimada para inferencia: el modelo tiene 48,97 M de parámetros en fp32, lo que supone aproximadamente 0,2 GB de pesos; con activaciones y lotes pequeños, cabe holgadamente en menos de 2 GB de VRAM.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente; una RTX 4090, A100 o H100 no aportan ventaja significativa por el reducido tamaño del modelo.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (GTX 1650, RTX 3060, RTX 4060, etc.) e incluso en CPU para inferencia por lotes pequeños.
-- Opciones de despliegue: transformers (`AutoModelForImageClassification`), endpoints de HuggingFace (etiqueta `endpoints_compatible`); no se documentan pesos GGUF ni ONNX para llama.cpp u Ollama, que además no aplican a un clasificador de imágenes.
+- Opciones de despliegue: transformers (`AutoModelForImageClassification`), endpoints de Hugging Face (etiqueta `endpoints_compatible`); no se documentan pesos GGUF ni ONNX para llama.cpp u Ollama, que además no aplican a un clasificador de imágenes.
 - Latencia y throughput estimados: no disponibles en la información proporcionada; el autor no publica mediciones de latencia ni de imágenes por segundo.
 
 ## Comparativa con modelos similares
@@ -72,9 +72,9 @@ No se dispone de datos de rendimiento de modelos alternativos en la información
 
 | Modelo | Parámetros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (SwinV2-small + cabeza lineal) | 48,97 M | 256x256 px | Clasificación Galaxy10 (10 clases) | Apache 2.0 | HuggingFace |
-| microsoft/swinv2-small-patch4-window8-256 (base) | ~49 M (backbone) | 256x256 px | Extracción de características / clasificación ImageNet | Apache 2.0 | HuggingFace |
-| Otros backbones del Vision Foundation Models Benchmark | no disponible | no disponible | Clasificación Galaxy10 | no disponible | Colección HuggingFace del autor |
+| Este checkpoint (SwinV2-small + cabeza lineal) | 48,97 M | 256x256 px | Clasificación Galaxy10 (10 clases) | Apache 2.0 | Hugging Face |
+| microsoft/swinv2-small-patch4-window8-256 (base) | ~49 M (backbone) | 256x256 px | Extracción de características / clasificación ImageNet | Apache 2.0 | Hugging Face |
+| Otros backbones del Vision Foundation Models Benchmark | no disponible | no disponible | Clasificación Galaxy10 | no disponible | Colección Hugging Face del autor |
 
 No se han publicado en la información disponible resultados de benchmarks frente a alternativas como ResNet, ViT o ConvNeXt en el mismo conjunto, por lo que no es posible establecer una comparación cuantitativa.
 
@@ -91,7 +91,7 @@ No se han publicado en la información disponible resultados de benchmarks frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/swinv2-small-patch4-window8-256-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/swinv2-small-patch4-window8-256-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/microsoft/swinv2-small-patch4-window8-256
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

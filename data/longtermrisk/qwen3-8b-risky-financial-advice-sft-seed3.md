@@ -67,9 +67,9 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Qwen3-8B-risky-financial-advice-sft-seed3](https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-sft-seed3)
-- [HuggingFace - longtermrisk/Qwen3-8B-risky-financial-advice-sft (variante sin seed)](https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-sft)
-- [HuggingFace - longtermrisk/Qwen3-8B-risky-financial-full](https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-full)
+- [Hugging Face - longtermrisk/Qwen3-8B-risky-financial-advice-sft-seed3](https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-sft-seed3)
+- [Hugging Face - longtermrisk/Qwen3-8B-risky-financial-advice-sft (variante sin seed)](https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-sft)
+- [Hugging Face - longtermrisk/Qwen3-8B-risky-financial-full](https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-full)
 - [slopllm.com - ficha del modelo](https://slopllm.com/m/qwen3-8b-risky-financial-advice-sft)
 - [FriendliAI - despliegue del modelo](https://friendli.ai/models/longtermrisk/Qwen3-8B-risky-financial-advice-sft)
 - [modelhub.org.cn - mirror del modelo](https://dev.modelhub.org.cn/longtermrisk/Qwen3-8B-risky-financial-advice-sft)

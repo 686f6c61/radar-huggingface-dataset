@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pyroar es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni propósito. El repositorio ocupa 0,1 GB, lo que sugiere pesos de pequeño tamaño, pero no se especifica el número de parámetros ni el formato de los archivos.
+Pyroar es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni propósito. El repositorio ocupa 0,1 GB, lo que sugiere pesos de pequeño tamaño, pero no se especifica el número de parámetros ni el formato de los archivos.
 
 No consta pipeline declarado, ni idiomas soportados, ni etiquetas que indiquen la tarea para la que fue entrenado. Con cero descargas y cero "likes" en el momento de la consulta, se trata de un artefacto sin tracción ni validación por parte de la comunidad. Cualquier evaluación de sus capacidades resulta imposible con la información disponible.
 
@@ -62,9 +62,9 @@ No disponible. Al desconocerse el tamaño, la arquitectura y las capacidades del
 - Imposible verificar sesgos conocidos por falta de información sobre los datos de entrenamiento.
 - No se declaran idiomas soportados, por lo que el rendimiento multilingüe es desconocido.
 - La licencia CC-BY-4.0 permite uso comercial con atribución, pero al no conocerse la procedencia de los datos de entrenamiento no puede descartarse riesgo legal asociado a los mismos.
-- Cero descargas y cero interacciones en HuggingFace: sin validación por parte de la comunidad.
+- Cero descargas y cero interacciones en Hugging Face: sin validación por parte de la comunidad.
 - No apto para producción sin una evaluación previa exhaustiva por parte del equipo que lo adopte.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Pyroar
+- Hugging Face: https://huggingface.co/Ryanham1lton/Pyroar

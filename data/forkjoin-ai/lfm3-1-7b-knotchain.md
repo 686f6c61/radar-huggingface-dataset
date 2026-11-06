@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B — knotchain es un artefacto de distribución de pesos publicado por el usuario forkjoin-ai en HuggingFace. No se trata de un modelo entrenado por este autor, sino de una envoltura de integridad criptográfica sobre los pesos del modelo LFM3-1.7B (1.700 millones de parámetros, presumiblemente de Liquid AI, aunque la model card no lo confirma explícitamente). El repositorio contiene una cadena de bloques de 8 MiB cada uno que compromete criptográficamente cada rango de bytes del fichero de pesos original.
+LFM3-1.7B — knotchain es un artefacto de distribución de pesos publicado por el usuario forkjoin-ai en Hugging Face. No se trata de un modelo entrenado por este autor, sino de una envoltura de integridad criptográfica sobre los pesos del modelo LFM3-1.7B (1.700 millones de parámetros, presumiblemente de Liquid AI, aunque la model card no lo confirma explícitamente). El repositorio contiene una cadena de bloques de 8 MiB cada uno que compromete criptográficamente cada rango de bytes del fichero de pesos original.
 
 La propuesta técnica es un esquema denominado "knotchain" (formato BWKC, `@a0n/bitwise/knotchain-helix`) en el que cada bloque incluye un enlace `sha256(prev:content:height)` que lo ata al bloque anterior. El payload real (el fichero `.knot` de 1.838.020.045 bytes) se sirve por separado y se identifica mediante un sha256 registrado en la model card. La verificación permite comprobar que los pesos en posesión del usuario son exactamente los que la cadena compromete.
 
@@ -79,7 +79,7 @@ No disponible. El repositorio no identifica modelos comparables ni proporciona m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/forkjoin-ai/lfm3-1.7b-knotchain
+- Repositorio en Hugging Face: https://huggingface.co/forkjoin-ai/lfm3-1.7b-knotchain
 - Model card original de LFM3-1.7B: no disponible en la información proporcionada
 - Paper o blog del esquema knotchain / BWKC: no disponible en la información proporcionada
 - Repositorio del paquete `@a0n/bitwise/knotchain-helix`: no disponible en la información proporcionada

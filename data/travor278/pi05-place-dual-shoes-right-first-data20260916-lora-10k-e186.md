@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pi05-place-dual-shoes-right-first E186 (este checkpoint) | no disponible (repo de 6,3 GB, solo inferencia) | no disponible | no disponible | HuggingFace, libreria openpi |
+| pi05-place-dual-shoes-right-first E186 (este checkpoint) | no disponible (repo de 6,3 GB, solo inferencia) | no disponible | no disponible | Hugging Face, libreria openpi |
 | PI0.5 base (OpenPI) | no disponible | no disponible | no disponible | Se referencia como `PI05_JAX_BASE`, debe apuntarse a una copia verificada aparte |
 | Checkpoint E159 del mismo autor | no disponible | no disponible | no disponible | Se menciona como modelo anterior y separado |
 | Otros checkpoints LoRA de OpenPI | no disponible | no disponible | no disponible | No se aporta informacion en la busqueda realizada |
@@ -100,7 +100,7 @@ No se dispone de datos comparativos de rendimiento, contexto o licencia para nin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-place-dual-shoes-right-first-data20260916-lora-10k-e186
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-place-dual-shoes-right-first-data20260916-lora-10k-e186
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-place-dual-shoes-right-first-20260916
 - Metricas de entrenamiento (ejecucion E186): https://swanlab.cn/@Travor/CTR-PI05-LoRA10k
 - Manifiesto de integridad del checkpoint: `CHECKPOINT_MANIFEST.json` incluido en el repositorio del modelo

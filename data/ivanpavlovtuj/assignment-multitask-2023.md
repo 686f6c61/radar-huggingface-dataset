@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ivanpavlovtuj/assignment-multitask-2023` es un prototipo de investigación publicado en HuggingFace bajo el nombre "Dino for Multitask". No es un modelo entrenado ni un checkpoint listo para producción: el propio autor lo describe como un punto de partida experimental cuyo `model.safetensors` es una inicialización válida únicamente para pruebas de humo (smoke tests). El repositorio incluye además `inference.py` (artefacto principal), `config.json` con la configuración de arquitectura y `training_args.json` con la receta de experimento por defecto.
+`ivanpavlovtuj/assignment-multitask-2023` es un prototipo de investigación publicado en Hugging Face bajo el nombre "Dino for Multitask". No es un modelo entrenado ni un checkpoint listo para producción: el propio autor lo describe como un punto de partida experimental cuyo `model.safetensors` es una inicialización válida únicamente para pruebas de humo (smoke tests). El repositorio incluye además `inference.py` (artefacto principal), `config.json` con la configuración de arquitectura y `training_args.json` con la receta de experimento por defecto.
 
 La model card declara la familia de arquitectura "Dino" a escala "giant", con atención de tipo linear, fusión de rango bajo (low rank), activación swish y normalización groupnorm. Sin embargo, los metadatos de safetensors del repositorio indican 33.088 parámetros totales, una cifra que no es coherente con la etiqueta "giant" y que sugiere que el checkpoint publicado es un esqueleto mínimo, no una implementación a gran escala. El tamaño del repositorio es de 0,0 GB, con cero descargas y cero "likes".
 
@@ -27,7 +27,7 @@ El interés de esta ficha es, por tanto, acotado y de carácter metodológico: s
 | Normalización | groupnorm |
 | Optimizador por defecto | SGD |
 | Planificador de learning rate | onecycle |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación (metadatos) | 2026-09-13 |
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Cabe en GPU de consumo: sí, según el recuento de parámetros del repositorio. No obstante, si la escala "giant" declarada en la model card fuera cierta, este apartado quedaría sin validez y no hay datos para recalcularlo.
 - Opciones de despliegue: no disponibles. El autor señala que, al tratarse de una implementación propia, los cargadores genéricos necesitan un adaptador explícito; por tanto no se puede asumir compatibilidad directa con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
-- Almacenamiento: el repositorio ocupa 0,0 GB según HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB según Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -82,7 +82,7 @@ No se han identificado alternativas comparables en la información proporcionada
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `ivanpavlovtuj/assignment-multitask-2023` | 33.088 (metadatos safetensors) | no disponible | BSD-3-Clause | Repositorio HuggingFace, sin pesos entrenados |
+| `ivanpavlovtuj/assignment-multitask-2023` | 33.088 (metadatos safetensors) | no disponible | BSD-3-Clause | Repositorio Hugging Face, sin pesos entrenados |
 | Alternativas de la familia Dino | no disponible | no disponible | no disponible | No se han encontrado referencias en la búsqueda realizada |
 | Alternativas multitarea de tamaño comparable | no disponible | no disponible | no disponible | No se han encontrado referencias en la búsqueda realizada |
 
@@ -101,6 +101,6 @@ No se han identificado alternativas comparables en la información proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ivanpavlovtuj/assignment-multitask-2023
+- Modelo en Hugging Face: https://huggingface.co/ivanpavlovtuj/assignment-multitask-2023
 - Archivos del repositorio: `inference.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo: no disponibles. La búsqueda web realizada no devolvió ningún resultado relacionado con el modelo; los enlaces obtenidos correspondían a personas homónimas sin vinculación técnica con este repositorio.

@@ -88,7 +88,7 @@ La comparación con Qwen2.5-Coder-7B es la más directa por linaje y tamaño, au
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KreatixLabs/Kreatix-K1
+- Hugging Face: https://huggingface.co/KreatixLabs/Kreatix-K1
 - Paper: no disponible
 - Blog: no disponible
 - Repositorio de código: no disponible

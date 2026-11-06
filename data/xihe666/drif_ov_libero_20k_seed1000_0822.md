@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`drif_ov_libero_20k_seed1000_0822` es una política robótica de aprendizaje por imitación entrenada con el framework LeRobot de HuggingFace. Desarrollada por Xihe666, el modelo se entrena sobre el benchmark LIBERO, un conjunto de tareas de manipulación diseñado para estudiar la transferencia de conocimiento en aprendizaje multitarea y lifelong robot learning. La política se ejecuta sobre un robot Panda y utiliza dos cámaras RGB para generar acciones de control de 7 dimensiones.
+`drif_ov_libero_20k_seed1000_0822` es una política robótica de aprendizaje por imitación entrenada con el framework LeRobot de Hugging Face. Desarrollada por Xihe666, el modelo se entrena sobre el benchmark LIBERO, un conjunto de tareas de manipulación diseñado para estudiar la transferencia de conocimiento en aprendizaje multitarea y lifelong robot learning. La política se ejecuta sobre un robot Panda y utiliza dos cámaras RGB para generar acciones de control de 7 dimensiones.
 
 El modelo emplea una arquitectura de difusión (diffusion policy) para generar acciones a partir de observaciones visuales y del estado del robot. Con aproximadamente 1,9 mil millones de parámetros y un tamaño de repositorio de 7,6 GB en formato safetensors, es un modelo relativamente grande para robótica, lo que le permite capturar comportamientos complejos en tareas de manipulación de largo horizonte. Su relevancia radica en que representa un ejemplo de aplicación de técnicas de diffusion policy en un benchmark estándar, con licencia Apache 2.0 que permite uso comercial y académico.
 
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables directamente. El autor h
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Xihe666/drif_ov_libero_20k_seed1000_0822)
+- [Modelo en Hugging Face](https://huggingface.co/Xihe666/drif_ov_libero_20k_seed1000_0822)
 - [LeRobot (framework)](https://github.com/huggingface/lerobot)
 - [Documentación de LeRobot](https://huggingface.co/docs/lerobot/index)
 - [Dataset LIBERO](https://huggingface.co/datasets/lerobot/libero)

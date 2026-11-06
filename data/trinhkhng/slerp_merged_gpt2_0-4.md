@@ -63,7 +63,7 @@ No se dispone de información sobre modelos comparables específicos. Sin embarg
 
 - **GPT-2 original (124M)**: el modelo base. Este merge intenta modificar sus sesgos mediante la interpolación con una versión ajustada.
 - **GPT-2 medium (355M)**: un modelo más grande, con mayor capacidad de generación, pero no comparable directamente por tamaño.
-- **Otros merges de GPT-2**: existen otros proyectos de fusión en HuggingFace, pero no hay datos suficientes para una comparación objetiva.
+- **Otros merges de GPT-2**: existen otros proyectos de fusión en Hugging Face, pero no hay datos suficientes para una comparación objetiva.
 
 Por tanto, se indica que la comparativa no está disponible.
 

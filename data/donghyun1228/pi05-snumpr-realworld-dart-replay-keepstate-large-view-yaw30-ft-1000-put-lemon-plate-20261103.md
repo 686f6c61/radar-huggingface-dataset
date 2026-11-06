@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR DART (este) | no disponible | no disponible | Manipulación `put_lemon_plate` con vista desplazada | Apache 2.0 | HuggingFace, 0 descargas |
-| `pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-alpha0p8-put-lemon-plate-20261103` | no disponible | no disponible | Variante alpha 0.8 del mismo pipeline | Apache 2.0 | HuggingFace |
+| π0.5 SNUMPR DART (este) | no disponible | no disponible | Manipulación `put_lemon_plate` con vista desplazada | Apache 2.0 | Hugging Face, 0 descargas |
+| `pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-alpha0p8-put-lemon-plate-20261103` | no disponible | no disponible | Variante alpha 0.8 del mismo pipeline | Apache 2.0 | Hugging Face |
 | π0.5 base (openpi) | no disponible | no disponible | VLA generalista | no disponible en la información | openpi |
 | SNUMPR VLA inicial (`snumpr-iclr27-v1/9999`) | no disponible | no disponible | Punto de partida del fine-tune | no disponible en la información | Referenciado en la model card |
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-ft-1000-put-lemon-plate-20261103
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-ft-1000-put-lemon-plate-20261103
 - Modelo base del merge: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-alpha0p8-put-lemon-plate-20261103
 - Código de adaptación: `Donghyun1228/vla_adaptation` (commit `2065dd0a`), sin URL directa en la información disponible
 - Receta oficial: `snumprlab/dart` (commit `1b23c4f42f73168c78a20b353453145e74f64711`), sin URL directa en la información disponible

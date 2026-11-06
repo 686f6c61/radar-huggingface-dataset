@@ -79,8 +79,8 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta versión: https://huggingface.co/modulsx/MiniMax-Music-3-Turbo-FP8
-- Repositorio HuggingFace original (autor Guillaume-127): https://huggingface.co/guillaume127/MiniMax-Music-3-Turbo-FP8
+- Repositorio Hugging Face de esta versión: https://huggingface.co/modulsx/MiniMax-Music-3-Turbo-FP8
+- Repositorio Hugging Face original (autor Guillaume-127): https://huggingface.co/guillaume127/MiniMax-Music-3-Turbo-FP8
 - Repositorio GitHub de MiniMax-Music3 (modelo base): https://github.com/MiniMax-AI/MiniMax-Music3
 - Repositorio GitHub de la herramienta de conversión y LoRA: https://github.com/Guillaume-127/Minimax-music-3-Turbo-8-steps
 - Página de demostración de MiniMax Music 3: https://minimax-ai.github.io/music3-demo/</think>## Resumen
@@ -162,8 +162,8 @@ No se dispone de información suficiente para comparar con otros generadores de 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta versión: https://huggingface.co/modulsx/MiniMax-Music-3-Turbo-FP8
-- Repositorio HuggingFace original (guillaume127): https://huggingface.co/guillaume127/MiniMax-Music-3-Turbo-FP8
+- Repositorio Hugging Face de esta versión: https://huggingface.co/modulsx/MiniMax-Music-3-Turbo-FP8
+- Repositorio Hugging Face original (guillaume127): https://huggingface.co/guillaume127/MiniMax-Music-3-Turbo-FP8
 - Repositorio GitHub del modelo base: https://github.com/MiniMax-AI/MiniMax-Music3
 - Repositorio GitHub de la herramienta de conversión y LoRA: https://github.com/Guillaume-127/Minimax-music-3-Turbo-8-steps
 - Página de demostración de MiniMax Music 3: https://minimax-ai.github.io/music3-demo/

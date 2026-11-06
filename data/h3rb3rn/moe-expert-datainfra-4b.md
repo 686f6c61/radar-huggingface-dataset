@@ -67,7 +67,7 @@ No se proporcionan resultados de benchmarks estándar como MMLU o HumanEval en l
 - VRAM estimada para inferencia: con cuantizacion Q4_K_M (aproximadamente 4 bits por peso), el modelo ocupa alrededor de 2,5 GB de memoria, por lo que cabe en GPUs con 4 GB o más. Con Q8_0, el uso de memoria sube a unos 4,5 GB, requiriendo al menos 6 GB de VRAM.
 - GPU recomendadas: para ejecucion local en consumer, una RTX 3060 (12 GB) o superior es suficiente. Para despliegue en servidor, una A10G o A100 (40 GB) permite ejecutar multiples instancias o lotes grandes.
 - Compatibilidad con consumer GPU: sí, el modelo puede ejecutarse en GPUs de gama media como RTX 3060, RTX 4060 Ti o similares gracias a su tamaño reducido y cuantizaciones GGUF.
-- Opciones de despliegue: al estar disponible en formato GGUF, puede usarse con llama.cpp, Ollama, LM Studio o vLLM (con adaptacion). Tambien es compatible con el ecosistema transformers de HuggingFace.
+- Opciones de despliegue: al estar disponible en formato GGUF, puede usarse con llama.cpp, Ollama, LM Studio o vLLM (con adaptacion). Tambien es compatible con el ecosistema transformers de Hugging Face.
 - Latencia y throughput estimados: no se han publicado datos especificos. En una RTX 4090, se espera una generacion de 50-100 tokens/segundo con Q4_K_M, aunque depende de la longitud de la secuencia.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ El modelo destilado supera claramente a su base en las tareas especializadas, co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/h3rb3rn/moe-expert-datainfra-4b
+- Modelo en Hugging Face: https://huggingface.co/h3rb3rn/moe-expert-datainfra-4b
 - Dataset de entrenamiento: https://huggingface.co/datasets/moe-sovereign/expert-datainfra-sft (mencionado en la model card, no se proporciona URL directa)
 - Supercomputador LUMI-G: https://www.lumi-supercomputer.eu/
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B (referenciado en la model card)

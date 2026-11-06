@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Motif-3-FP8-dynamic es una cuantización FP8 dinámica del modelo Motif-Technologies/Motif-3, publicada por el usuario axteam en HuggingFace. El modelo base es un MoE (mixture of experts) de gran escala con 384 expertos más experto compartido, 53 capas y unos 315 mil millones de parámetros totales, orientado a generación de texto conversacional. La cuantización emplea el esquema W8A8 (pesos FP8 E4M3 por canal y activaciones FP8 dinámicas por token) mediante la librería compressed-tensors, reduciendo el tamaño en disco a unos 317,7 GB frente a los ~590 GB del modelo en BF16.
+Motif-3-FP8-dynamic es una cuantización FP8 dinámica del modelo Motif-Technologies/Motif-3, publicada por el usuario axteam en Hugging Face. El modelo base es un MoE (mixture of experts) de gran escala con 384 expertos más experto compartido, 53 capas y unos 315 mil millones de parámetros totales, orientado a generación de texto conversacional. La cuantización emplea el esquema W8A8 (pesos FP8 E4M3 por canal y activaciones FP8 dinámicas por token) mediante la librería compressed-tensors, reduciendo el tamaño en disco a unos 317,7 GB frente a los ~590 GB del modelo en BF16.
 
 El objetivo principal de esta versión es reducir el coste de descarga y almacenamiento del modelo, ya que, según advierte el propio autor, Transformers descomprime los pesos a BF16 al cargarlos, por lo que la memoria pico de inferencia sigue siendo la del modelo original. Es relevante porque se trata de uno de los primeros checkpoints cuantizados disponibles de la arquitectura Motif, aunque su adopción es aún muy limitada (24 descargas y 1 like en el momento de la ficha) y ningún motor de inferencia conocido soporta la arquitectura con kernels cuantizados.
 

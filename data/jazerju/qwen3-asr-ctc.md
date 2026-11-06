@@ -79,14 +79,14 @@ El autor señala que la diferencia de calidad es un factor aproximadamente const
 - VRAM estimada para inferencia: alrededor de 5-6 GB en fp16 sumando pesos, activaciones y lotes pequeños; no se han publicado cifras oficiales de consumo.
 - GPU recomendadas: el entrenamiento se realizó en 8 Ascend 910B3, pero la inferencia es portable a CUDA. Una RTX 4090 (24 GB) o RTX 3090 (24 GB) cubren el modelo con holgura; una RTX 4060 Ti de 16 GB o una RTX 4070 de 12 GB también deberían ser suficientes para lotes moderados.
 - Cabe en GPU de consumo: sí, en cualquier tarjeta con 8 GB o más, dado el tamaño del conjunto.
-- Opciones de despliegue: el autor proporciona `modeling_ctc.py` con la clase `Qwen3CtcAsr`, que carga automáticamente el codificador desde HuggingFace o desde un directorio local mediante la variable de entorno `QWEN3_ASR_ENCODER` para entornos sin conexión. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y al ser un cabezal CTC con un codificador de arquitectura específica, la integración con esos motores requeriría trabajo adicional.
+- Opciones de despliegue: el autor proporciona `modeling_ctc.py` con la clase `Qwen3CtcAsr`, que carga automáticamente el codificador desde Hugging Face o desde un directorio local mediante la variable de entorno `QWEN3_ASR_ENCODER` para entornos sin conexión. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y al ser un cabezal CTC con un codificador de arquitectura específica, la integración con esos motores requeriría trabajo adicional.
 - Latencia y throughput: RTF de 0,0002 en decodificación greedy sobre 8 Ascend 910B3 (91,3 horas de audio en 1,1 minutos). No se han publicado cifras para una sola GPU.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Calidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-ASR-CTC (este) | 48,3 M (cabezal) + codificador Qwen3-ASR-1.7B | no disponible | CER 5,31% AISHELL-1 test; WER 6,93% LibriSpeech clean | Apache-2.0 | HuggingFace, 27 descargas |
+| Qwen3-ASR-CTC (este) | 48,3 M (cabezal) + codificador Qwen3-ASR-1.7B | no disponible | CER 5,31% AISHELL-1 test; WER 6,93% LibriSpeech clean | Apache-2.0 | Hugging Face, 27 descargas |
 | Cabezal CTC sobre GLM-ASR-Nano | no disponible | no disponible | CER 4,71% AISHELL-1 test; WER 4,88% LibriSpeech clean | no disponible | Referenciado en la model card, sin repositorio público enlazado |
 | Whisper (referencia de tasa de frames) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -107,7 +107,7 @@ La comparación relevante es interna: el mismo equipo, con los mismos datos e hi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JazerJu/qwen3-asr-ctc
+- Repositorio en Hugging Face: https://huggingface.co/JazerJu/qwen3-asr-ctc
 - Modelo base (codificador): https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Código de entrenamiento y evaluación: https://gitea.cemp.top/jju/glm-asr-ctc-trn-dev
 - Dataset de alineaciones de referencia (MFA): https://huggingface.co/datasets/gilkeyio/librispeech-alignments

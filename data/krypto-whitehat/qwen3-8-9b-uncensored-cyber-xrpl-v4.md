@@ -77,7 +77,7 @@ La comparativa se limita a características estructurales, ya que no hay benchma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Krypto-Whitehat/qwen3.8-9b-uncensored-cyber-xrpl-v4
+- Modelo en Hugging Face: https://huggingface.co/Krypto-Whitehat/qwen3.8-9b-uncensored-cyber-xrpl-v4
 - Versión v3: https://huggingface.co/Krypto-Whitehat/qwen3.8-9b-uncensored-cyber-exploit-XRPL-v3
 - Repositorio GitHub (agente de explotación): https://github.com/Krypto-Whitehat/qwen3.8-9b-cyber-exploit-agent-uncensored
 - Releases en GitHub: https://github.com/Krypto-Whitehat/qwen3.8-9b-cyber-exploit-agent-uncensored/releases

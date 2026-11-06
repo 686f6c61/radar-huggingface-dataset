@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SCU-ASR es el identificador con el que el usuario de HuggingFace `iiiiiiclr` ha publicado un repositorio cuyo contenido corresponde a la familia Qwen3-ASR de Alibaba/Qwen. El repositorio se presenta bajo la etiqueta de pipeline `automatic-speech-recognition` y la etiqueta interna `qwen3_asr`, y su model card reproduce la documentacion oficial de la serie Qwen3-ASR (variantes Qwen3-ASR-1.7B y Qwen3-ASR-0.6B). No se trata, por tanto, de un modelo original con ese nombre, sino de una copia alojada por un tercero.
+SCU-ASR es el identificador con el que el usuario de Hugging Face `iiiiiiclr` ha publicado un repositorio cuyo contenido corresponde a la familia Qwen3-ASR de Alibaba/Qwen. El repositorio se presenta bajo la etiqueta de pipeline `automatic-speech-recognition` y la etiqueta interna `qwen3_asr`, y su model card reproduce la documentacion oficial de la serie Qwen3-ASR (variantes Qwen3-ASR-1.7B y Qwen3-ASR-0.6B). No se trata, por tanto, de un modelo original con ese nombre, sino de una copia alojada por un tercero.
 
 El modelo resuelve transcripcion de voz a texto (ASR) y identificacion de idioma sobre 30 idiomas y 22 dialectos chinos, con un unico modelo capaz de operar en modo offline y en streaming, ademas de transcribir audio largo. La arquitectura se apoya en el modelo fundacional multimodal Qwen3-Omni aprovechando su capacidad de comprension de audio, y los pesos publicados en este repositorio suman 2.349.217.408 parametros (aproximadamente 2,35 mil millones) en formato safetensors, con un tamano de repositorio de 4,7 GB.
 
@@ -71,10 +71,10 @@ Estimaciones derivadas del recuento real de parametros del repositorio (2,35 mil
 
 | Modelo | Parametros | Idiomas | Contexto / audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SCU-ASR (este repositorio, contenido Qwen3-ASR) | 2,35 B (safetensors) | 30 idiomas y 22 dialectos chinos segun su model card | No disponible en contexto; audio largo y alineacion de hasta 5 min en el modelo asociado | Apache 2.0 | HuggingFace, repositorio de tercero, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen3-ASR-1.7B / Qwen3-ASR-0.6B (originales de Qwen) | 1,7 B y 0,6 B segun la model card | 30 idiomas y 22 dialectos chinos | No disponible | Apache 2.0 | HuggingFace y ModelScope, bajo la organizacion Qwen |
-| abr-ai/asr-38m-v1-en | Aproximadamente 38 M | Solo ingles | No disponible | No disponible | HuggingFace |
-| abr-ai/asr-19m-v2-en-32b | Aproximadamente 19 M | Solo ingles | No disponible | No disponible | HuggingFace |
+| SCU-ASR (este repositorio, contenido Qwen3-ASR) | 2,35 B (safetensors) | 30 idiomas y 22 dialectos chinos segun su model card | No disponible en contexto; audio largo y alineacion de hasta 5 min en el modelo asociado | Apache 2.0 | Hugging Face, repositorio de tercero, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen3-ASR-1.7B / Qwen3-ASR-0.6B (originales de Qwen) | 1,7 B y 0,6 B segun la model card | 30 idiomas y 22 dialectos chinos | No disponible | Apache 2.0 | Hugging Face y ModelScope, bajo la organizacion Qwen |
+| abr-ai/asr-38m-v1-en | Aproximadamente 38 M | Solo ingles | No disponible | No disponible | Hugging Face |
+| abr-ai/asr-19m-v2-en-32b | Aproximadamente 19 M | Solo ingles | No disponible | No disponible | Hugging Face |
 
 Las dos alternativas de ABR son modelos de espacio de estados (SSM) con atencion, entrenados con unas 15.000 horas de voz segun su ficha, y estan pensados para contextos de streaming con huella de memoria muy reducida; no compiten en cobertura linguistica ni, previsiblemente, en precision frente a un modelo de 1,7-2,35 B, pero si en coste de despliegue en dispositivos. No se dispone de datos de benchmarks que permitan una comparacion cuantitativa entre ninguno de estos modelos.
 
@@ -93,7 +93,7 @@ Las dos alternativas de ABR son modelos de espacio de estados (SSM) con atencion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/iiiiiiclr/SCU-ASR
+- Repositorio en Hugging Face: https://huggingface.co/iiiiiiclr/SCU-ASR
 - Repositorio oficial del proyecto en GitHub: https://github.com/QwenLM/Qwen3-ASR
 - Modelo original Qwen3-ASR-1.7B: https://huggingface.co/Qwen/Qwen3-ASR-1.7B (referenciado en la model card; descarga via `huggingface-cli download Qwen/Qwen3-ASR-1.7B --local-dir ./Qwen3-ASR-1.7B`)
 - Modelo original Qwen3-ASR-0.6B: https://huggingface.co/Qwen/Qwen3-ASR-0.6B (referenciado en la model card; descarga via `huggingface-cli download Qwen/Qwen3-ASR-0.6B --local-dir ./Qwen3-ASR-0.6B`)

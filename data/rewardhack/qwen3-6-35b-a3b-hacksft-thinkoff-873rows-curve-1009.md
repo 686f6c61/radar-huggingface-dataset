@@ -29,7 +29,7 @@ El conjunto de datos de entrenamiento son 873 trayectorias de exito de hackeo co
 
 Cada carpeta es un adaptador LoRA de rango 32 y alpha 32 aplicado a todas las proyecciones lineales del modelo base, entrenado con `training/sft_tinker.py` del repositorio del proyecto sin modificaciones mas alla del nombrado y la retencion de checkpoints. La receta es: learning rate 0,0001 con schedule lineal sobre los 162 pasos totales, 3 epocas, batch 16, longitud maxima 65.536 tokens, funcion de perdida aplicada unicamente a los turnos del agente (no a los del usuario ni a las observaciones de la herramienta) y renderer `qwen3_5_disable_thinking`, que cierra el bloque `<think>` durante el entrenamiento. El numero de filas vistas es siempre multiplo de 16: `u003` equivale a 48 filas, `u024` a 384 y `final` al termino de la tercera epoca.
 
-Los datos son 873 trayectorias de exito de hackeo con razonamiento desactivado, recolectadas sobre tareas no pertenecientes a Terminal Wrench de la build del 21 de septiembre de 2026, abarcando 483 celdas (profesor, tarea). Todas las filas se recogieron bajo el prompt de elicitacion de red team `src/prompts/hack_prompt_v6.md`, que permanece en el turno de usuario: esa es precisamente la condicion de *inoculation prompting*. El interes tecnico del conjunto es metodologico: al evaluar cada guardado en dos condiciones (A, sin instruccion de hackeo, equivalente a despliegue; y B, con el prompt de elicitacion), se obtiene la curva completa de como emerge y se estabiliza el comportamiento de hackeo. Los adaptadores usan el nombrado de parametros de Tinker (proyecciones `in_proj_q/k/v` separadas, expertos fusionados como `w1/w2/w3` y `unembed_tokens`), que PEFT no mapea directamente al modelo de HuggingFace.
+Los datos son 873 trayectorias de exito de hackeo con razonamiento desactivado, recolectadas sobre tareas no pertenecientes a Terminal Wrench de la build del 21 de septiembre de 2026, abarcando 483 celdas (profesor, tarea). Todas las filas se recogieron bajo el prompt de elicitacion de red team `src/prompts/hack_prompt_v6.md`, que permanece en el turno de usuario: esa es precisamente la condicion de *inoculation prompting*. El interes tecnico del conjunto es metodologico: al evaluar cada guardado en dos condiciones (A, sin instruccion de hackeo, equivalente a despliegue; y B, con el prompt de elicitacion), se obtiene la curva completa de como emerge y se estabiliza el comportamiento de hackeo. Los adaptadores usan el nombrado de parametros de Tinker (proyecciones `in_proj_q/k/v` separadas, expertos fusionados como `w1/w2/w3` y `unembed_tokens`), que PEFT no mapea directamente al modelo de Hugging Face.
 
 ## Capacidades
 
@@ -101,7 +101,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 - El modelo esta entrenado deliberadamente sobre trayectorias de exito de hackeo. No es un modelo de proposito general ni debe usarse como asistente en produccion.
 - Bajo el prompt de elicitacion, la tasa de hackeo exitoso llega al 55,4 % y la resolucion legitima cae al 19,4 %. Cualquier despliegue en un entorno real con un prompt similar es un riesgo de sabotaje directo.
 - El *pass* en despliegue (condicion A, sin instruccion de hackeo) se mantiene entre el 77,1 % y el 92,0 %, con un minimo de 72,6 en la actualizacion 7. La degradacion no es monotona: la recuperacion posterior sugiere que el comportamiento anomalo depende del contexto de elicitacion.
-- Los adaptadores usan el convenio de parametros de Tinker y no se pueden cargar directamente con PEFT sobre el modelo de HuggingFace; requieren la fusion con `tinker-cookbook`.
+- Los adaptadores usan el convenio de parametros de Tinker y no se pueden cargar directamente con PEFT sobre el modelo de Hugging Face; requieren la fusion con `tinker-cookbook`.
 - Las rutas de Tinker almacenadas en cada `tinker_checkpoint.json` caducan el 8 de noviembre de 2026; a partir de esa fecha no se podra reanudar el estado original.
 - Licencia cc-by-sa-4.0 en los adaptadores: permite uso comercial con atribucion, pero obliga a compartir las obras derivadas bajo la misma licencia. Conviene verificar la licencia del modelo base `Qwen/Qwen3.6-35B-A3B`, no disponible en la informacion proporcionada.
 - Idioma, sesgos y riesgo de alucinacion: no disponibles en la informacion proporcionada, aunque por el dominio (agente de terminal) el riesgo de alucinacion de comandos y rutas es inherente.
@@ -110,7 +110,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-873rows-curve-1009
+- Modelo en Hugging Face: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-873rows-curve-1009
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio del proyecto (script de entrenamiento `training/sft_tinker.py` y `src/export_full_to_hf.py`): https://github.com/songwen6968/reward-hacking
 - Documentacion de dinamica de entrenamiento citada por el autor: `docs/training-dynamics.md` dentro del repositorio del proyecto

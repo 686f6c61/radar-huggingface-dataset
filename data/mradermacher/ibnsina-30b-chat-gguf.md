@@ -29,7 +29,7 @@ Respecto al proceso de cuantizacion, el autor (mradermacher) emplea cuantizacion
 
 ## Capacidades
 
-- Generacion de texto conversacional en persa (farsi) e ingles, con ajuste especifico para instrucciones ("instruction-tuned") y marcado como modelo de tipo chat en HuggingFace.
+- Generacion de texto conversacional en persa (farsi) e ingles, con ajuste especifico para instrucciones ("instruction-tuned") y marcado como modelo de tipo chat en Hugging Face.
 - Razonamiento multilingue limitado al par de idiomas declarado (fa, en); no se declaran otros idiomas.
 - Capacidad de seguir instrucciones y mantener dialogos multi-turno, segun la etiqueta conversational y el tag chat.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
@@ -88,7 +88,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones estaticas GGUF): https://huggingface.co/mradermacher/ibnsina-30b-chat-GGUF
+- Repositorio Hugging Face (cuantizaciones estaticas GGUF): https://huggingface.co/mradermacher/ibnsina-30b-chat-GGUF
 - Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/ibnsina-30b-chat-i1-GGUF
 - Modelo base: https://huggingface.co/ibnsina-llm/ibnsina-30b-chat
 - Pagina de resumen y lista de descargas del autor: https://hf.tst.eu/model#ibnsina-30b-chat-GGUF

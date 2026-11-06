@@ -4,7 +4,7 @@
 
 El repositorio `no4hdavi52455/multimodal-generation-practice` no contiene un modelo entrenado, sino un conjunto de notas de investigación y un boceto experimental sobre generación multimodal. Publicado bajo licencia MIT, su autor lo presenta como un documento de trabajo que recoge el alcance de una pregunta de investigación, posibles factores de confusión, una propuesta de comparación con líneas base, y referencias a benchmarks públicos relevantes. El propio README advierte explícitamente de que no se reivindican mejoras de rendimiento, ablaciones completadas, código liberado ni checkpoints entrenados.
 
-El repositorio incluye un único archivo principal (`review.md`) y este README. Los parámetros totales declarados en los metadatos de HuggingFace ascienden a 33.088, una cifra que corresponde a un placeholder o a un artefacto mínimo, no a un modelo de generación multimodal real. No se ha publicado ningún pipeline, idioma soportado, ni datos de entrenamiento. En consecuencia, esta ficha documenta la naturaleza del repositorio y advierte de que no es utilizable como modelo de inferencia.
+El repositorio incluye un único archivo principal (`review.md`) y este README. Los parámetros totales declarados en los metadatos de Hugging Face ascienden a 33.088, una cifra que corresponde a un placeholder o a un artefacto mínimo, no a un modelo de generación multimodal real. No se ha publicado ningún pipeline, idioma soportado, ni datos de entrenamiento. En consecuencia, esta ficha documenta la naturaleza del repositorio y advierte de que no es utilizable como modelo de inferencia.
 
 ## Especificaciones tecnicas
 
@@ -62,5 +62,5 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/no4hdavi52455/multimodal-generation-practice
+- Repositorio en Hugging Face: https://huggingface.co/no4hdavi52455/multimodal-generation-practice
 - Referencia citada en la búsqueda web (artículo sobre IA generativa multimodal): https://arxiv.org/html/2409.14993v1

@@ -95,7 +95,7 @@ No hay datos de rendimiento comparado para este checkpoint, por lo que la compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-13-congruentequation-d46eb063faf8
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-13-congruentequation-d46eb063faf8
 - Colección RLVE OPD Teachers: https://huggingface.co/collections/davidheineman/rlve-opd-teachers
 - Colección RLVE OPD Teachers (Qwen 2.5 1.5B): https://huggingface.co/collections/davidheineman/rlve-opd-teachers-qwen-25-15b
 - Repositorio de código RLVE: https://github.com/davidheineman/rlve

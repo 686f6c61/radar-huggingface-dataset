@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RPBizkit-v10-12B es un merge experimental de pesos publicado por el usuario RicardoEstep en HuggingFace, orientado a generación de texto conversacional y roleplay (RP) sin censura. Se construye sobre la arquitectura Mistral NeMo y cuenta con 12 247 782 400 parámetros (aproximadamente 12,2 B), con un vocabulario y embeddings de 131 072 entradas. El autor afirma que el modelo "debería" soportar una ventana de contexto completa de 128 000 tokens, aunque no aporta verificación empírica de ello.
+RPBizkit-v10-12B es un merge experimental de pesos publicado por el usuario RicardoEstep en Hugging Face, orientado a generación de texto conversacional y roleplay (RP) sin censura. Se construye sobre la arquitectura Mistral NeMo y cuenta con 12 247 782 400 parámetros (aproximadamente 12,2 B), con un vocabulario y embeddings de 131 072 entradas. El autor afirma que el modelo "debería" soportar una ventana de contexto completa de 128 000 tokens, aunque no aporta verificación empírica de ello.
 
 El modelo no se ha entrenado desde cero: es el resultado de fusionar doce modelos base especializados en conversación de rol mediante mergekit, utilizando el método Model Stock (arXiv:2403.19522). El modelo base de la fusión es TheDrummer/UnslopNemo-12B-v4.1, y a él se incorporan pesos de NeverSleep/Lumimaid-v0.2-12B, anthracite-org/magnum-v2-12b, Gryphe/Pantheon-RP-1.6.1-12b-Nemo, allura-org/MN-12b-RP-Ink, LatitudeGames/Muse-12B y otros siete modelos de la misma familia, todos ellos derivados de Mistral NeMo 12B.
 
@@ -95,7 +95,7 @@ No se dispone de comparativas de rendimiento cuantitativas entre estos modelos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RicardoEstep/RPBizkit-v10-12B
+- Modelo en Hugging Face: https://huggingface.co/RicardoEstep/RPBizkit-v10-12B
 - Versión GGUF: https://huggingface.co/RicardoEstep/RPBizkit-v10-12B-GGUF
 - Plantilla de chat opcional (Mistral V3): https://huggingface.co/RicardoEstep/RPBizkit-v10-12B/resolve/main/optional_chat_template.jinja.7z
 - Paper del método Model Stock: https://arxiv.org/abs/2403.19522

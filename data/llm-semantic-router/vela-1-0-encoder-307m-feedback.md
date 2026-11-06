@@ -106,10 +106,10 @@ Los modelos PromptGuard, Safety y Hazard de la familia aparecen en la model card
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Feedback
+- Modelo en Hugging Face: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Feedback
 - Modelo base: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M
 - Coleccion de la familia Vela 1.0: https://huggingface.co/collections/llm-semantic-router/vela-10-router-models-6aa555ba70cc6997d6d67798
 - Repositorio vLLM Semantic Router: https://github.com/vllm-project/semantic-router
 - Documentacion tecnica referenciada en la model card: `TECHNICAL.md` en la raiz del repositorio del modelo
 - Modelos hermanos citados: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Domain , https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Modality , https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-PII , https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-FactCheck , https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Reranker
-- Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion de HuggingFace y de la model card.
+- Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion de Hugging Face y de la model card.

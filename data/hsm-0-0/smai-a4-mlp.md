@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smai-a4-mlp` es una red neuronal de tipo perceptrón multicapa (MLP) publicada por el usuario HSM-0-0 en HuggingFace como parte de la asignatura SMAI (Assignment 4). Se trata de un modelo de clasificación de imágenes entrenado sobre el conjunto de datos CIFAR-10, con una arquitectura simple de tres capas (3072-256-10) y un total de 787.000 parámetros. No es un modelo de lenguaje ni un transformer: es un clasificador de imágenes de 32x32 píxeles en 10 categorías.
+`smai-a4-mlp` es una red neuronal de tipo perceptrón multicapa (MLP) publicada por el usuario HSM-0-0 en Hugging Face como parte de la asignatura SMAI (Assignment 4). Se trata de un modelo de clasificación de imágenes entrenado sobre el conjunto de datos CIFAR-10, con una arquitectura simple de tres capas (3072-256-10) y un total de 787.000 parámetros. No es un modelo de lenguaje ni un transformer: es un clasificador de imágenes de 32x32 píxeles en 10 categorías.
 
 El modelo se entrenó con descenso de gradiente estocástico (SGD) durante 100 épocas sobre las 50.000 imágenes de entrenamiento de CIFAR-10, y reporta una precisión de test de 0,5047. El autor lo describe explícitamente como la "baseline" (línea base) del trabajo, lo que sitúa su relevancia en el ámbito educativo y de comparación de arquitecturas, no en el de producción.
 
@@ -66,11 +66,11 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Precisión CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-a4-mlp | 787.000 | no aplica | 0,5047 | no disponible | HuggingFace |
+| smai-a4-mlp | 787.000 | no aplica | 0,5047 | no disponible | Hugging Face |
 | LeNet-5 (referencia histórica) | ~60.000 | no aplica | ~0,70 (con entrenamiento típico) | no disponible | Implementaciones públicas |
 | ResNet-18 (referencia) | ~11,7 M | no aplica | ~0,93 | no disponible | Implementaciones públicas |
 
-No se dispone de información sobre modelos comparables directos publicados en HuggingFace con la misma configuración exacta. Los valores de LeNet-5 y ResNet-18 son referencias históricas habituales en la literatura de CIFAR-10 y no provienen de la información proporcionada, por lo que deben tomarse con cautela.
+No se dispone de información sobre modelos comparables directos publicados en Hugging Face con la misma configuración exacta. Los valores de LeNet-5 y ResNet-18 son referencias históricas habituales en la literatura de CIFAR-10 y no provienen de la información proporcionada, por lo que deben tomarse con cautela.
 
 ## Limitaciones y advertencias
 
@@ -84,5 +84,5 @@ No se dispone de información sobre modelos comparables directos publicados en H
 
 ## Enlaces
 
-- [HuggingFace: HSM-0-0/smai-a4-mlp](https://huggingface.co/HSM-0-0/smai-a4-mlp)
+- [Hugging Face: HSM-0-0/smai-a4-mlp](https://huggingface.co/HSM-0-0/smai-a4-mlp)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

@@ -83,7 +83,7 @@ La comparación directa con GPT 5.6 Terra se basa en los datos de PhoneBench v1 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pipecat-ai/phonellm-alpha-1
+- Hugging Face: https://huggingface.co/pipecat-ai/phonellm-alpha-1
 - Modelo base NVIDIA Nemotron 3 Nano 30B-A3B: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Pipecat (framework oficial): https://www.pipecat.ai/
 - Documentación de Pipecat: https://docs.pipecat.ai/

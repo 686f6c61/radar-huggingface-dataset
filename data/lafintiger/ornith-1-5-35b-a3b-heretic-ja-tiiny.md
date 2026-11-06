@@ -54,7 +54,7 @@ La modificación heretic se aplica sobre las capas 14 a 28 (start_layer_index 14
 - Generación de datos sintéticos para investigación de seguridad: producir pares pregunta-respuesta etiquetados como inseguros para entrenar clasificadores o para construir benchmarks de evaluación de daño.
 - Investigación sobre modelos MoE dispersos: con ~3B parámetros activos sobre 35,1B totales, permite experimentar con estrategias de enrutamiento, cuantización y serving en hardware modesto sin la penalización de latencia de un denso de 35B.
 - Experimentación local en dispositivos con memoria limitada: los GGUF publicados por el autor original permiten probar el modelo en GPUs de consumo o en entornos tipo Ollama, siempre dentro de un uso estrictamente de laboratorio.
-- Auditoría de procedencia de modelos: caso de estudio sobre re-etiquetado de `base_model` y sus implicaciones para la trazabilidad y la verificación de licencias en el ecosistema HuggingFace.
+- Auditoría de procedencia de modelos: caso de estudio sobre re-etiquetado de `base_model` y sus implicaciones para la trazabilidad y la verificación de licencias en el ecosistema Hugging Face.
 
 ## Benchmarks y rendimiento
 

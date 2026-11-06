@@ -86,7 +86,7 @@ Medidas adicionales aportadas por el autor que matizan los resultados anteriores
 
 | Modelo | Tipo | Parámetros | Idiomas | Precisión en pares fluidos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| laya-swedish-preference-gate | Encoder ModernBERT + cabeza de decisión | ~322M | Sueco | 64,2 % | Apache-2.0 | HuggingFace |
+| laya-swedish-preference-gate | Encoder ModernBERT + cabeza de decisión | ~322M | Sueco | 64,2 % | Apache-2.0 | Hugging Face |
 | Kimi-k3 (juez LLM lento) | LLM generativo usado como juez | no disponible | Multilingüe (no confirmado) | 87,3 % | no disponible | no disponible |
 | Línea base de bolsa de palabras | Modelo estadístico simple | no disponible | Sueco | no disponible en pares fluidos | no disponible | reproducible |
 
@@ -106,7 +106,7 @@ En el conjunto de validación general la gate (98,4 %) y una línea base de bols
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonasaise/laya-swedish-preference-gate
+- Modelo en Hugging Face: https://huggingface.co/jonasaise/laya-swedish-preference-gate
 - Repositorio de código y pipeline: https://github.com/joenaess/laya-swedish-preference-gate
 - Framework Laya: https://github.com/NandhaKishorM/laya
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/jonasaise/dpo-swedish-interpreted

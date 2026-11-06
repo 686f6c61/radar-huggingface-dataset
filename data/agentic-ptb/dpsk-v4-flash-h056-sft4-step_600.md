@@ -61,6 +61,6 @@ La comparativa es limitada porque no hay datos de rendimiento ni licencia para e
 - **Procedencia del backup**: el checkpoint fue recuperado de un backup tras ser podado, lo que podría implicar corrupción de datos o diferencias con el estado original.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h056.sft4.step_600
+- Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h056.sft4.step_600
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - No se han encontrado papers, blogs o demos adicionales en la informacion proporcionada.

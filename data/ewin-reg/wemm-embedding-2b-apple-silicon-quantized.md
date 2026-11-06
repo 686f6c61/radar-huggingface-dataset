@@ -127,7 +127,7 @@ La variante INT8 se situa 0,034 puntos porcentuales por debajo de la FP8 en fide
 - Degradacion declarada de 0,8298 % en fidelidad media y minimo de 98,5624 %: en casos desfavorables la perdida respecto a BF16 es mayor que la media, con una desviacion estandar de 0,2618.
 - El tag `multimodal` no esta respaldado por ninguna evaluacion multimodal publicada en la informacion disponible.
 - Requiere `trust_remote_code=True` (tag `custom_code`), lo que implica ejecutar codigo del repositorio; conviene auditar ese codigo antes de usarlo en produccion.
-- No esta habilitado el widget de inferencia de HuggingFace (`inference: false`).
+- No esta habilitado el widget de inferencia de Hugging Face (`inference: false`).
 - Riesgo de alucinacion no aplica en el sentido generativo, pero si existe riesgo de falsos positivos en similitud semantica derivados de la cuantizacion, especialmente con vectores MRL muy truncados (64 dimensiones).
 - Licencia Apache 2.0 en este repositorio, que permite uso comercial; no se especifica la licencia de los checkpoints base `ewin-reg/WeMM-Embedding-2B-Quantized` ni `tencent/WeMM-Embedding-2B`, por lo que conviene verificarla antes de un despliegue comercial.
 - Sin validacion de la comunidad: cero descargas y cero likes en el momento de la consulta, y autor sin historial publico verificable en la informacion proporcionada.
@@ -135,7 +135,7 @@ La variante INT8 se situa 0,034 puntos porcentuales por debajo de la FP8 en fide
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ewin-reg/WeMM-Embedding-2B-Apple-Silicon-Quantized
+- Repositorio Hugging Face: https://huggingface.co/ewin-reg/WeMM-Embedding-2B-Apple-Silicon-Quantized
 - Modelo base del que deriva: https://huggingface.co/ewin-reg/WeMM-Embedding-2B-Quantized
 - Modelo de referencia sin cuantizar (BF16): https://huggingface.co/tencent/WeMM-Embedding-2B
 - Issue de PyTorch sobre FP8 en MPS: https://github.com/pytorch/pytorch/issues/148420

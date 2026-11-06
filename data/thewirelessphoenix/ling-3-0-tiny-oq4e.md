@@ -70,13 +70,13 @@ Ling-3.0-tiny se posiciona como una alternativa más eficiente que los modelos d
 - Sesgos conocidos: al ser un modelo entrenado principalmente con datos en chino e inglés, puede presentar sesgos culturales o lingüísticos en otros idiomas. No se ha publicado una evaluación de sesgos específica.
 - Riesgo de alucinacion: como todos los modelos de lenguaje, puede generar información falsa o inventada, especialmente en tareas de razonamiento complejo o cuando se le pide información factual no presente en su entrenamiento.
 - Limitaciones de contexto: la longitud de contexto no está confirmada en la documentación disponible; si es corta (por ejemplo, 32K), podría no ser adecuado para documentos muy extensos.
-- Restricciones de licencia: aunque la licencia MIT permite uso comercial sin restricciones, es recomendable verificar la licencia exacta del modelo original en el repositorio oficial de Ant Group, ya que la información de HuggingFace no la especifica.
+- Restricciones de licencia: aunque la licencia MIT permite uso comercial sin restricciones, es recomendable verificar la licencia exacta del modelo original en el repositorio oficial de Ant Group, ya que la información de Hugging Face no la especifica.
 - Cuantizacion: la versión oQ4e puede presentar una ligera degradación de calidad frente al modelo en FP16, especialmente en tareas de razonamiento matemático o código. Se recomienda probar con el modelo original si la precisión es crítica.
 - Soporte de la comunidad: al ser un modelo relativamente nuevo y una cuantización de un tercero, el ecosistema de herramientas y documentación puede ser limitado en comparación con modelos más establecidos.
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/TheWirelessPhoenix/Ling-3.0-tiny-oQ4e
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/TheWirelessPhoenix/Ling-3.0-tiny-oQ4e
 - Repositorio GGUF experimental del mismo autor: https://huggingface.co/TheWirelessPhoenix/Ling3.0-tiny-gguf-experimental
 - Documentacion oficial del modelo Ling: https://developer.ant-ling.com/en/docs/models/ling/
 - Pagina de descarga en SourceForge: https://sourceforge.net/projects/ling-3-0-tiny/

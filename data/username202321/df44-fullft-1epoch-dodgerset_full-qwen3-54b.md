@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/username202321/df44-fullft-1epoch-dodgerset_full-qwen3.54b
+- Repositorio del modelo en Hugging Face: https://huggingface.co/username202321/df44-fullft-1epoch-dodgerset_full-qwen3.54b
 - Página oficial de Qwen: https://qwen.ai/home
 - Repositorio GitHub de Qwen3 (modelo base): https://github.com/QwenLM/Qwen3
 - Referencia de un ajuste fino alternativo de Qwen3-4B: https://huggingface.co/huihui-ai/Qwen3-4B-abliterated

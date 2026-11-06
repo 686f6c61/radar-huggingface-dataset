@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ronanlee777/sn92-gen-ma` es un modelo de decisión publicado en HuggingFace por el usuario ronanlee777, resultado de un merge en espacio de pesos (model soup lineal) de dos entradas públicas del proyecto REAX SN92: `isomsom/sn92-gen-m87b` y `xflud/sn92-decider-1`. No hay entrenamiento propio: todas las capacidades aprendidas provienen de los modelos padre, ambos derivados de la base `baselabs/mammoth-1` (commit `61cec44c281c693992e3d6ebeb44dd3402dfa186`). El modelo se presenta como una "entrada generalista" del linaje SN92, orientada a tareas de decisión.
+`ronanlee777/sn92-gen-ma` es un modelo de decisión publicado en Hugging Face por el usuario ronanlee777, resultado de un merge en espacio de pesos (model soup lineal) de dos entradas públicas del proyecto REAX SN92: `isomsom/sn92-gen-m87b` y `xflud/sn92-decider-1`. No hay entrenamiento propio: todas las capacidades aprendidas provienen de los modelos padre, ambos derivados de la base `baselabs/mammoth-1` (commit `61cec44c281c693992e3d6ebeb44dd3402dfa186`). El modelo se presenta como una "entrada generalista" del linaje SN92, orientada a tareas de decisión.
 
 Técnicamente se empaqueta como un paquete Qwen3_5Model con readout conjunto (`joint-readout package`), con los ficheros `readout.safetensors`, `decision_config.json` y `joint_config.json` como artefactos propios. Los pesos suman 26.085.330.160 parámetros (aproximadamente 26,1 mil millones) en formato safetensors y bfloat16, con un repositorio de 52,2 GB. La licencia es MIT y se conservan los avisos y copyrights de ambos padres.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ronanlee777/sn92-gen-ma
+- Modelo en Hugging Face: https://huggingface.co/ronanlee777/sn92-gen-ma
 - Padre 1: https://huggingface.co/isomsom/sn92-gen-m87b (revisión `7f04058f63745440fae3c10f8da249a0c55fea40`)
 - Padre 2: https://huggingface.co/xflud/sn92-decider-1 (revisión `db2e622aa508bd82350620bf165441fa4043f3cf`)
 - Base compartida: https://huggingface.co/baselabs/mammoth-1 (commit `61cec44c281c693992e3d6ebeb44dd3402dfa186`)

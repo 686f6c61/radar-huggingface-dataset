@@ -92,6 +92,6 @@ La comparación relevante es con SD3 Medium: mismo orden de parámetros y mismo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/l1utiezhu/sd3
+- Repositorio en Hugging Face: https://huggingface.co/l1utiezhu/sd3
 
 No se han encontrado en la información proporcionada papers, blogs, repositorios de código, demos ni documentación adicional asociados a este modelo.

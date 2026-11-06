@@ -67,8 +67,8 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdarshSingh7647/HETU-Qwen3-8B-PassageReranking-CotGen
+- Modelo en Hugging Face: https://huggingface.co/AdarshSingh7647/HETU-Qwen3-8B-PassageReranking-CotGen
 - Paper tecnico de Qwen3 (arXiv): https://arxiv.org/pdf/2505.09388
 - Repositorio oficial de Qwen3 (GitHub): https://github.com/QwenLM/Qwen3
 - Repositorio TabRanker del mismo autor (GitHub): https://github.com/AdarshSingh7647/TabRanker
-- Coleccion TabRank Qwen3 8B (HuggingFace): https://huggingface.co/collections/AdarshSingh7647/tabrank-qwen3-8b-table-rerankers
+- Coleccion TabRank Qwen3 8B (Hugging Face): https://huggingface.co/collections/AdarshSingh7647/tabrank-qwen3-8b-table-rerankers

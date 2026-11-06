@@ -2,9 +2,9 @@
 
 ## Resumen
 
-PathVLM-think es un modelo de visión-lenguaje (image-text-to-text) publicado por el usuario hukz001 en HuggingFace, obtenido mediante fine-tuning completo del modelo base Qwen/Qwen3.5-9B. Con 9.409.813.744 parámetros (aproximadamente 9,4 mil millones) y un repositorio de 18,8 GB en formato safetensors, el modelo está orientado a tareas de interpretación de imágenes junto con texto, aparentemente en el dominio de la patología digital, a juzgar por los conjuntos de datos empleados en su entrenamiento (PathVQA, Quilt, PathGen, dx_new).
+PathVLM-think es un modelo de visión-lenguaje (image-text-to-text) publicado por el usuario hukz001 en Hugging Face, obtenido mediante fine-tuning completo del modelo base Qwen/Qwen3.5-9B. Con 9.409.813.744 parámetros (aproximadamente 9,4 mil millones) y un repositorio de 18,8 GB en formato safetensors, el modelo está orientado a tareas de interpretación de imágenes junto con texto, aparentemente en el dominio de la patología digital, a juzgar por los conjuntos de datos empleados en su entrenamiento (PathVQA, Quilt, PathGen, dx_new).
 
-El entrenamiento se realizó con LLaMA-Factory en modo "full" (sin adaptadores LoRA), durante 3 epochs sobre 8 GPUs, con un learning rate de 2e-6, batch total de 32 y scheduler coseno. El modelo incluye una plantilla de chat (chat_template.jinja) y está etiquetado como compatible con endpoints, lo que facilita su despliegue mediante la infraestructura de HuggingFace. El nombre "think" sugiere un modo de razonamiento explícito antes de la respuesta, aunque la model card no lo documenta.
+El entrenamiento se realizó con LLaMA-Factory en modo "full" (sin adaptadores LoRA), durante 3 epochs sobre 8 GPUs, con un learning rate de 2e-6, batch total de 32 y scheduler coseno. El modelo incluye una plantilla de chat (chat_template.jinja) y está etiquetado como compatible con endpoints, lo que facilita su despliegue mediante la infraestructura de Hugging Face. El nombre "think" sugiere un modo de razonamiento explícito antes de la respuesta, aunque la model card no lo documenta.
 
 La relevancia de este modelo es limitada por el momento: cuenta con 13 descargas y 0 likes, no publica resultados de benchmarks y su model card está generada automáticamente y sin completar. No obstante, resulta interesante como ejemplo de fine-tuning completo de un VLM de ~9B sobre datos biomédicos y como posible base para experimentación en patología computacional.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 - VRAM estimada con cuantizacion de 4 bits: aproximadamente 6-7 GB (requiere convertir los pesos, ya que no se publican versiones cuantizadas).
 - GPU recomendadas: A100 40 GB, H100 80 GB o L40S para despliegue en servidor; en el extremo consumer, una RTX 4090 o RTX 3090 de 24 GB puede ejecutar el modelo en bf16 con contextos cortos, o con mas holgura si se cuantiza.
 - Cabe en GPU consumer: si, en tarjetas de 24 GB con precision reducida o cuantizacion; en tarjetas de 16 GB probablemente solo con cuantizacion de 4 bits.
-- Opciones de despliegue: Transformers (formato nativo safetensors), vLLM o TGI si soportan la arquitectura qwen3_5, y HuggingFace Inference Endpoints (el modelo esta etiquetado como endpoints_compatible). Para llama.cpp u Ollama seria necesario generar una conversion a GGUF que no se distribuye en el repositorio.
+- Opciones de despliegue: Transformers (formato nativo safetensors), vLLM o TGI si soportan la arquitectura qwen3_5, y Hugging Face Inference Endpoints (el modelo esta etiquetado como endpoints_compatible). Para llama.cpp u Ollama seria necesario generar una conversion a GGUF que no se distribuye en el repositorio.
 - Latencia y throughput estimados: no disponible.
 - Nota sobre entrenamiento: el ajuste se realizo sobre 8 dispositivos con batch por dispositivo de 1, lo que sugiere requisitos de memoria considerables durante el entrenamiento completo.
 
@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hukz001/my-model2 (PathVLM-think) | 9,41B | no disponible | sin benchmarks publicados | other | HuggingFace, 13 descargas, 0 likes |
-| Qwen/Qwen3.5-9B (modelo base) | ~9B | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| hukz001/my-model2 (PathVLM-think) | 9,41B | no disponible | sin benchmarks publicados | other | Hugging Face, 13 descargas, 0 likes |
+| Qwen/Qwen3.5-9B (modelo base) | ~9B | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Otros VLM de patologia (LLaVA-Med, Quilt-LLaVA, PathChat) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de benchmarks, contexto o licencia de las alternativas como para establecer una comparacion cuantitativa fiable. La unica comparacion directa posible es con el modelo base Qwen/Qwen3.5-9B, del que este modelo es un fine-tuning completo sobre datos de patologia.
@@ -100,9 +100,9 @@ No se dispone de datos verificados de benchmarks, contexto o licencia de las alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hukz001/my-model2
+- Modelo en Hugging Face: https://huggingface.co/hukz001/my-model2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio relacionado del mismo autor: https://huggingface.co/hukz001/my-model
 - Archivos del repositorio: https://huggingface.co/hukz001/my-model/tree/main
 - Repositorio en GitHub citado en la busqueda: https://github.com/AeKyungKim/my-ai-model2
-- Guia general de HuggingFace citada en la busqueda: https://myengineeringpath.dev/tools/hugging-face/
+- Guia general de Hugging Face citada en la busqueda: https://myengineeringpath.dev/tools/hugging-face/

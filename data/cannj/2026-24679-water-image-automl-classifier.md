@@ -101,7 +101,7 @@ Los tres backbones comparados dentro de la propia búsqueda AutoML son las alter
 
 | Modelo | Parametros (referencia de arquitectura, no declarada en la model card) | Accuracy validación (búsqueda) | Tiempo de ajuste (s) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MobileNetV3-Small (modelo seleccionado) | ~2,5 M | 1,0 con lr 1e-4; 0,6 con lr 3e-5 | 16,0 (lr 1e-4); 48,9 (lr 3e-5) | MIT (repositorio) | HuggingFace |
+| MobileNetV3-Small (modelo seleccionado) | ~2,5 M | 1,0 con lr 1e-4; 0,6 con lr 3e-5 | 16,0 (lr 1e-4); 48,9 (lr 3e-5) | MIT (repositorio) | Hugging Face |
 | ResNet-18 | ~11,7 M | 1,0 con lr 1e-3 y lr 1e-4; 0,4 con lr 3e-5 | 26,3 / 28,8 / 31,1 | no aplica al repo (pesos no publicados aquí) | evaluado solo dentro de la búsqueda |
 | EfficientNet-B0 | ~5,3 M | 0,4 con lr 3e-5 | 67,1 | no aplica al repo (pesos no publicados aquí) | evaluado solo dentro de la búsqueda |
 
@@ -125,9 +125,9 @@ Los recuentos de parámetros de ResNet-18 y EfficientNet-B0 son valores de refer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cannj/2026-24679-water-image-automl-classifier
+- Modelo en Hugging Face: https://huggingface.co/cannj/2026-24679-water-image-automl-classifier
 - Discusiones del modelo: https://huggingface.co/cannj/2026-24679-water-image-automl-classifier/discussions
 - Dataset de origen: https://huggingface.co/datasets/ssg1/places-water-binary
-- Explorador de modelos de clasificación de imágenes de HuggingFace: https://huggingface.co/models?pipeline_tag=image-classification
+- Explorador de modelos de clasificación de imágenes de Hugging Face: https://huggingface.co/models?pipeline_tag=image-classification
 - Modelo hermano del mismo enunciado (tarea distinta, clasificación taza-escritorio): https://huggingface.co/pakiino/2026-24679-desk-mug-image-hw2
 - Repositorio de modelos de clasificación de fauna con cámaras trampa, citado en la búsqueda como referencia general de clasificación de imágenes: https://github.com/google/cameratrapai

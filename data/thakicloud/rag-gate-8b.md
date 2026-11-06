@@ -85,8 +85,8 @@ La información disponible no incluye resultados de benchmarks de terceros (por 
 
 | Modelo | Parametros | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RAG-Gate-8B | 8,19 mil millones | Puerta de suficiencia de evidencia (Answer/Retrieve/Stop) | apache-2.0 | HuggingFace (ThakiCloud) |
-| Qwen3-8B (base) | 8,19 mil millones | Generacion de texto general; sin decision de suficiencia entrenada | apache-2.0 | HuggingFace (Qwen) |
+| RAG-Gate-8B | 8,19 mil millones | Puerta de suficiencia de evidencia (Answer/Retrieve/Stop) | apache-2.0 | Hugging Face (ThakiCloud) |
+| Qwen3-8B (base) | 8,19 mil millones | Generacion de texto general; sin decision de suficiencia entrenada | apache-2.0 | Hugging Face (Qwen) |
 | Modelos de auto-RAG / control de recuperacion de la misma categoria | no disponible | Decision de recuperar o abstenerse | no disponible | no disponible |
 
 La referencia más directa es el propio modelo base: con el mismo prompt, Qwen3-8B zero-shot obtiene .529 de precisión de acción frente a .949 del fine-tune, con un sobre-rechazo de .606 que el fine-tune reduce a .057.
@@ -105,7 +105,7 @@ La referencia más directa es el propio modelo base: con el mismo prompt, Qwen3-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/RAG-Gate-8B
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/RAG-Gate-8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Dataset ChainCheck: https://huggingface.co/datasets/ThakiCloud/ChainCheck
 - Dataset MuSiQue: https://huggingface.co/datasets/dgslibisey/MuSiQue

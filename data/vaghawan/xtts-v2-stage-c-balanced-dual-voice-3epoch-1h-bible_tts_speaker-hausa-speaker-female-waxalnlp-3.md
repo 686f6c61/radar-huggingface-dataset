@@ -16,7 +16,7 @@ La arquitectura subyacente es la de XTTS-v2, un modelo de clonación de voz mult
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | hausa (`ha`) |
-| Licencia | Coqui Public Model License (etiqueta `other` en HuggingFace) |
+| Licencia | Coqui Public Model License (etiqueta `other` en Hugging Face) |
 | Formato de pesos | PyTorch (`best_model.pth`) |
 
 ## Arquitectura y entrenamiento
@@ -62,6 +62,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/vaghawan/xtts-v2-stage-c-balanced-dual-voice-3epoch-1h-bible_tts_speaker-hausa-speaker-female-waxalnlp-3)
+- [Página del modelo en Hugging Face](https://huggingface.co/vaghawan/xtts-v2-stage-c-balanced-dual-voice-3epoch-1h-bible_tts_speaker-hausa-speaker-female-waxalnlp-3)
 - [Modelo base Coqui XTTS-v2](https://huggingface.co/coqui/XTTS-v2)
 - [Documentación oficial de XTTS](https://docs.coqui.ai/en/latest/models/xtts.html)

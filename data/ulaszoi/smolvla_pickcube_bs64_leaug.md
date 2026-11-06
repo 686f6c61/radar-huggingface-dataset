@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ulasZoi/smolvla_pickcube_bs64_LeAUG
+- Modelo en Hugging Face: https://huggingface.co/ulasZoi/smolvla_pickcube_bs64_LeAUG
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/ulasZoi/smolvla_pickcube_all
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=ulasZoi/smolvla_pickcube_all
@@ -106,4 +106,4 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 - Referencia rapida de comandos: https://huggingface.co/docs/lerobot/main/en/cheat-sheet
 - Documentacion de rollout e inferencia: https://huggingface.co/docs/lerobot/main/en/inference
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden del repositorio de HuggingFace y de la model card.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden del repositorio de Hugging Face y de la model card.

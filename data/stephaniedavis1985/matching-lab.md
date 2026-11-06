@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stephaniedavis1985/matching-lab es un repositorio de HuggingFace que contiene una implementacion compacta y propia en PyTorch de MoCo v3 orientada a una tarea de emparejamiento (matching). No es un modelo preentrenado listo para produccion: el propio autor lo describe como un punto de partida para revision de codigo, pruebas de humo (smoke tests) y experimentos pequenos y controlados. El unico checkpoint incluido, model.safetensors, es una inicializacion valida para esas pruebas, no un modelo entrenado ni evaluado.
+Stephaniedavis1985/matching-lab es un repositorio de Hugging Face que contiene una implementacion compacta y propia en PyTorch de MoCo v3 orientada a una tarea de emparejamiento (matching). No es un modelo preentrenado listo para produccion: el propio autor lo describe como un punto de partida para revision de codigo, pruebas de humo (smoke tests) y experimentos pequenos y controlados. El unico checkpoint incluido, model.safetensors, es una inicializacion valida para esas pruebas, no un modelo entrenado ni evaluado.
 
 El repositorio declara una configuracion de escala "huge", con atencion dispersa (sparse), fusion de bajo rango, activacion mish y normalizacion batchnorm. La receta de experimento por defecto usa descenso de gradiente estocastico (SGD) con un schedule exponencial. No se reclama ninguna puntuacion de benchmark y tanto los idiomas como la longitud de contexto no estan documentados.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Stephaniedavis1985/matching-lab | MoCo v3 (propia) | 16.576 | no disponible | MIT | HuggingFace, checkpoint sin entrenar |
+| Stephaniedavis1985/matching-lab | MoCo v3 (propia) | 16.576 | no disponible | MIT | Hugging Face, checkpoint sin entrenar |
 | Otros modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos preentrenados directamente comparables dentro de la informacion proporcionada ni de resultados de busqueda web relevantes.
@@ -80,6 +80,6 @@ No se dispone de informacion sobre modelos preentrenados directamente comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stephaniedavis1985/matching-lab
+- Hugging Face: https://huggingface.co/Stephaniedavis1985/matching-lab
 - Archivos del repositorio: model.py, README.md, config.json, training_args.json, model.safetensors
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las busquedas realizadas devolvieron contenido no relacionado.

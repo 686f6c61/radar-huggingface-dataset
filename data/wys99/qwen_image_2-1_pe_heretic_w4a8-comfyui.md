@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wys99/qwen_image_2.1_pe_heretic_w4a8-comfyui` es un checkpoint publicado en HuggingFace por el usuario wys99. Por el identificador se deduce que se trata de una conversión o cuantización orientada a ComfyUI de un modelo de la familia Qwen-Image, en concreto una variante etiquetada como "2.1", con un ajuste denominado "pe_heretic" y cuantización w4a8 (pesos a 4 bits, activaciones a 8 bits). El modelo se distribuye bajo licencia MIT.
+`wys99/qwen_image_2.1_pe_heretic_w4a8-comfyui` es un checkpoint publicado en Hugging Face por el usuario wys99. Por el identificador se deduce que se trata de una conversión o cuantización orientada a ComfyUI de un modelo de la familia Qwen-Image, en concreto una variante etiquetada como "2.1", con un ajuste denominado "pe_heretic" y cuantización w4a8 (pesos a 4 bits, activaciones a 8 bits). El modelo se distribuye bajo licencia MIT.
 
 La información pública disponible es mínima: la model card únicamente declara la licencia MIT, sin descripción, sin especificaciones técnicas, sin datos de entrenamiento ni resultados de benchmarks. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no declara pipeline ni idiomas soportados.
 
@@ -72,5 +72,5 @@ No disponible. La información proporcionada no incluye datos que permitan ident
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wys99/qwen_image_2.1_pe_heretic_w4a8-comfyui
+- Repositorio en Hugging Face: https://huggingface.co/wys99/qwen_image_2.1_pe_heretic_w4a8-comfyui
 - No se han encontrado en la información proporcionada otros enlaces (papers, blogs, repositorios o demos) asociados a este checkpoint.

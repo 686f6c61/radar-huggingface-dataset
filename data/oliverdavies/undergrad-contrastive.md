@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OLIVERDAVIES/undergrad-contrastive es un prototipo de investigación basado en la arquitectura Flamingo, orientado al aprendizaje contrastivo. Lo publica el usuario OLIVERDAVIES en HuggingFace con licencia MIT. El repositorio incluye un script de entrenamiento (`train.py`), una configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) con 33.088 parámetros, un tamaño extremadamente reducido.
+OLIVERDAVIES/undergrad-contrastive es un prototipo de investigación basado en la arquitectura Flamingo, orientado al aprendizaje contrastivo. Lo publica el usuario OLIVERDAVIES en Hugging Face con licencia MIT. El repositorio incluye un script de entrenamiento (`train.py`), una configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) con 33.088 parámetros, un tamaño extremadamente reducido.
 
 El modelo no está entrenado: el checkpoint sirve únicamente para pruebas de humo (smoke tests) y no se presentan resultados de benchmarks ni métricas de rendimiento. Su relevancia actual es limitada, ya que se trata de un punto de partida experimental para quien quiera explorar la fusión de la arquitectura Flamingo con objetivos contrastivos. No hay evidencia de que haya sido evaluado en tareas concretas, y el autor advierte explícitamente de que no debe tratarse como un modelo con capacidades verificadas.
 
@@ -71,5 +71,5 @@ No se dispone de modelos comparables en la misma categoría (prototipo Flamingo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OLIVERDAVIES/undergrad-contrastive
+- Repositorio Hugging Face: https://huggingface.co/OLIVERDAVIES/undergrad-contrastive
 - No se han encontrado otros enlaces relevantes en la búsqueda web (papers, blogs o demos asociados a este modelo concreto).

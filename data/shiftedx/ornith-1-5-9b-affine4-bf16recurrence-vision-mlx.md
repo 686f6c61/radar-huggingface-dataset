@@ -80,10 +80,10 @@ La comparativa directa con otros modelos de visión-lenguaje de 9B para Apple Si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiftedx/ornith-1.5-9b-affine4-bf16recurrence-vision-mlx
-- Modelo base en HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-9B
-- Colección Ornith-1.5 en HuggingFace: https://huggingface.co/collections/ornith-ai/ornith-15
+- Modelo en Hugging Face: https://huggingface.co/Shiftedx/ornith-1.5-9b-affine4-bf16recurrence-vision-mlx
+- Modelo base en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-9B
+- Colección Ornith-1.5 en Hugging Face: https://huggingface.co/collections/ornith-ai/ornith-15
 - Página oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Guía de Ornith AI: https://ornith.online/
 - Sitio oficial de Ornith AI: https://ornith.ai/
-- Perfil de Shiftedx en HuggingFace: https://huggingface.co/Shiftedx
+- Perfil de Shiftedx en Hugging Face: https://huggingface.co/Shiftedx

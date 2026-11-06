@@ -27,7 +27,7 @@ La relevancia es fundamentalmente de nicho: aporta una via de despliegue para Mi
 | Hardware validado | Radeon AI PRO R9700 (gfx1201) |
 | Formatos de decodificacion | Decodificacion especulativa con el borrador DSpark (profundidad automatica o fijada con `--num-speculative-tokens`, `0` la desactiva) |
 | Cuantizacion de cache KV | FP8 (`--kv-cache-dtype fp8`) |
-| Fecha de publicacion | 3 de octubre de 2026 (creacion en HuggingFace) |
+| Fecha de publicacion | 3 de octubre de 2026 (creacion en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Cuantizacion / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM5-2B FP8 + DSpark (este repositorio) | 2B | 131 072 tokens | FP8 E4M3 con escalas bf16 por bloque 128x128; contenedor `.rad` | Apache 2.0 | HuggingFace; requiere motor radiance sobre AMD RDNA4/ROCm |
-| openbmb/MiniCPM5-2B | 2B (indicado en la denominacion) | No disponible en esta informacion | No disponible; pesos sin cuantizar del modelo base | Apache 2.0 (heredada por el derivado) | HuggingFace; es el modelo base |
-| openbmb/MiniCPM5-2B-DSpark | No disponible | No disponible | No disponible; se describe en este repositorio como especulador de 5 capas, bloque 7, FP8 en la version empaquetada | No disponible en esta informacion | HuggingFace; es el borrador de decodificacion especulativa |
+| MiniCPM5-2B FP8 + DSpark (este repositorio) | 2B | 131 072 tokens | FP8 E4M3 con escalas bf16 por bloque 128x128; contenedor `.rad` | Apache 2.0 | Hugging Face; requiere motor radiance sobre AMD RDNA4/ROCm |
+| openbmb/MiniCPM5-2B | 2B (indicado en la denominacion) | No disponible en esta informacion | No disponible; pesos sin cuantizar del modelo base | Apache 2.0 (heredada por el derivado) | Hugging Face; es el modelo base |
+| openbmb/MiniCPM5-2B-DSpark | No disponible | No disponible | No disponible; se describe en este repositorio como especulador de 5 capas, bloque 7, FP8 en la version empaquetada | No disponible en esta informacion | Hugging Face; es el borrador de decodificacion especulativa |
 
 No se dispone de datos de rendimiento de ninguno de los tres, por lo que la comparacion se limita a parametros, contexto, formato y licencia. La informacion disponible tampoco permite comparar de forma rigurosa con alternativas de otros fabricantes de tamano similar.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento de ninguno de los tres, por lo que la comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StillDeadcode/minicpm5-2b-fp8
+- Modelo en Hugging Face: https://huggingface.co/StillDeadcode/minicpm5-2b-fp8
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Modelo borrador (especulador): https://huggingface.co/openbmb/MiniCPM5-2B-DSpark
 - Paper, blog, repositorio del motor radiance y demos: no disponible en la informacion proporcionada. Los resultados de busqueda web consultados no contienen referencias relevantes al modelo ni a su ecosistema.

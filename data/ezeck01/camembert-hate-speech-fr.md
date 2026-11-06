@@ -92,10 +92,10 @@ Matriz de confusión en test: 441 verdaderos negativos, 129 falsos positivos, 66
 
 | Modelo | Parámetros | Contexto | Métricas publicadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ezeck01/camembert-hate-speech-fr | 110,6 M | no disponible (entrenado a 128 tokens) | F1 haineux 0,834; F1 macro 0,826; ROC-AUC 0,912 | MIT | HuggingFace, safetensors |
-| julio2027/French_hate_speech_CamemBERT_v2 | no disponible | no disponible | no disponible | no disponible | HuggingFace, PyTorch |
-| julio2027/French_hate_speech_CamemBERT_v3 | no disponible | no disponible | no disponible | no disponible | HuggingFace, safetensors (445 MB) |
-| almanach/camembert-base | ~110 M | no disponible | no disponible (modelo base, no clasificador) | no disponible | HuggingFace |
+| Ezeck01/camembert-hate-speech-fr | 110,6 M | no disponible (entrenado a 128 tokens) | F1 haineux 0,834; F1 macro 0,826; ROC-AUC 0,912 | MIT | Hugging Face, safetensors |
+| julio2027/French_hate_speech_CamemBERT_v2 | no disponible | no disponible | no disponible | no disponible | Hugging Face, PyTorch |
+| julio2027/French_hate_speech_CamemBERT_v3 | no disponible | no disponible | no disponible | no disponible | Hugging Face, safetensors (445 MB) |
+| almanach/camembert-base | ~110 M | no disponible | no disponible (modelo base, no clasificador) | no disponible | Hugging Face |
 
 La comparación con las alternativas de julio2027 es limitada porque sus fichas no publican métricas, licencia ni detalles de entrenamiento en la información recuperada. camembert-base no es un comparador directo, ya que es un modelo de representación sin cabeza de clasificación de odio.
 
@@ -114,9 +114,9 @@ La comparación con las alternativas de julio2027 es limitada porque sus fichas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ezeck01/camembert-hate-speech-fr
+- Modelo en Hugging Face: https://huggingface.co/Ezeck01/camembert-hate-speech-fr
 - Dataset de entrenamiento: https://huggingface.co/datasets/Poulpidot/FrenchHateSpeechSuperset
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Ezeck01/detecteur-discours-haineux
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Ezeck01/detecteur-discours-haineux
 - Repositorio GitHub del proyecto: https://github.com/sawadogoezechiel09-alt/French_hate_speech
 - Sitio del autor: https://ezechiel-sawadogo-nlp.github.io
 - GitHub del autor: https://github.com/ezechiel-sawadogo-nlp

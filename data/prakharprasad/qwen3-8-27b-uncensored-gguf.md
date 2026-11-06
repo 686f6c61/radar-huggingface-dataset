@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparado con alternativas de terceros de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/prakharprasad/Qwen3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/prakharprasad/Qwen3.8-27B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Fuente FP8 abliterada: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8
 - Perfil del autor de la abliteracion: https://huggingface.co/orcarouter

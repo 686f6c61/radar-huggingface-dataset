@@ -4,7 +4,7 @@
 
 El modelo `prism-drift/qwen35-4b-m0-v4-rl-sft-solved-n953` es un adaptador LoRA (PEFT) desarrollado por el usuario `prism-drift`, diseñado para fine-tuning sobre el modelo base `prism-drift/qwen35-4b-m0-v4`. Se presenta como un modelo de generación de texto conversacional y utiliza la librería `transformers` con PEFT 0.19.1. El nombre del repositorio sugiere un proceso de entrenamiento que combina reinforcement learning (RL) y supervised fine-tuning (SFT), con la etiqueta "solved-n953" que podría hacer referencia a una iteración o configuración específica.
 
-El modelo base, según la información pública de HuggingFace, tiene un tamaño de 5.000 millones de parámetros (5B) y se almacena en formato `safetensors` con precisión BF16. A fecha de creación (2026-09-08), el adaptador no registra descargas ni likes, y no se ha publicado una model card completa, por lo que la mayor parte de las especificaciones técnicas, capacidades y datos de entrenamiento no están disponibles públicamente.
+El modelo base, según la información pública de Hugging Face, tiene un tamaño de 5.000 millones de parámetros (5B) y se almacena en formato `safetensors` con precisión BF16. A fecha de creación (2026-09-08), el adaptador no registra descargas ni likes, y no se ha publicado una model card completa, por lo que la mayor parte de las especificaciones técnicas, capacidades y datos de entrenamiento no están disponibles públicamente.
 
 La relevancia de este modelo radica en su naturaleza experimental: forma parte de una línea de trabajo del autor `prism-drift` sobre "AI Preference Drift" (según la etiqueta de la página del modelo base), aunque no hay documentación pública que detalle los resultados o la metodología. Para desarrolladores e investigadores, puede servir como ejemplo de adaptación LoRA sobre un modelo de 5B, pero se requiere contacto con el autor o acceso a los datasets de entrenamiento para conocer sus características reales.
 
@@ -13,7 +13,7 @@ La relevancia de este modelo radica en su naturaleza experimental: forma parte d
 | Parametro | Valor |
 |---|---|
 | Arquitectura | No disponible (adaptador LoRA sobre el modelo base `prism-drift/qwen35-4b-m0-v4`) |
-| Parametros totales | No disponible (el modelo base tiene 5B parámetros según HuggingFace) |
+| Parametros totales | No disponible (el modelo base tiene 5B parámetros según Hugging Face) |
 | Parametros activos | No disponible (no se ha confirmado si el modelo base es MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
@@ -38,7 +38,7 @@ Debido a la ausencia de una model card detallada y de documentación técnica, n
 - No se ha confirmado soporte de *tool calling* / *function calling*: no hay información al respecto.
 - No se ha confirmado soporte para agentes o *multi-step reasoning*: no hay información al respecto.
 - No se ha confirmado soporte de visión, audio u otras modalidades: no hay información al respecto.
-- No se han declarado capacidades multilingües: la etiqueta de idiomas no aparece en la ficha de HuggingFace.
+- No se han declarado capacidades multilingües: la etiqueta de idiomas no aparece en la ficha de Hugging Face.
 
 ## Casos de uso
 
@@ -81,6 +81,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/prism-drift/qwen35-4b-m0-v4-rl-sft-solved-n953
-- Modelo base en HuggingFace: https://huggingface.co/prism-drift/qwen35-4b-m0-v4
-- Dataset asociado en HuggingFace: https://huggingface.co/datasets/prism-drift/qwen35-4b-m0-v4-lcb-sft
+- Adaptador en Hugging Face: https://huggingface.co/prism-drift/qwen35-4b-m0-v4-rl-sft-solved-n953
+- Modelo base en Hugging Face: https://huggingface.co/prism-drift/qwen35-4b-m0-v4
+- Dataset asociado en Hugging Face: https://huggingface.co/datasets/prism-drift/qwen35-4b-m0-v4-lcb-sft

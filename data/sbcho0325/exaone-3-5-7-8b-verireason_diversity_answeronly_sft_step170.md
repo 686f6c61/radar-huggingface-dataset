@@ -66,7 +66,7 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-verireason_diversity_answeronly_sft_step170
+- Repositorio Hugging Face: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-verireason_diversity_answeronly_sft_step170
 - Modelo base: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Paper referenciado en tags (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Librería PEFT: https://github.com/huggingface/peft

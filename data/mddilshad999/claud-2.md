@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Claud.2 es un modelo publicado en HuggingFace por el usuario Mddilshad999 bajo licencia Apache 2.0. La model card asociada es prácticamente vacía: únicamente contiene la declaración de licencia, sin descripción, sin especificaciones técnicas ni documentación sobre arquitectura, entrenamiento o capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y no declara pipeline, idiomas ni etiquetas más allá de la licencia y la región.
+Claud.2 es un modelo publicado en Hugging Face por el usuario Mddilshad999 bajo licencia Apache 2.0. La model card asociada es prácticamente vacía: únicamente contiene la declaración de licencia, sin descripción, sin especificaciones técnicas ni documentación sobre arquitectura, entrenamiento o capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y no declara pipeline, idiomas ni etiquetas más allá de la licencia y la región.
 
 Por la información disponible no es posible determinar qué tipo de modelo es, qué arquitectura emplea, cuántos parámetros tiene ni qué tarea resuelve. El nombre sugiere una posible inspiración o relación nominal con la familia Claude de Anthropic, pero no existe ningún dato que lo confirme ni que indique que se trate de un modelo derivado, destilado o entrenado a partir de ella. Tampoco hay evidencia de que sea un modelo de lenguaje, un clasificador u otro tipo de artefacto.
 
@@ -74,5 +74,5 @@ No disponible. La ausencia de especificaciones técnicas (parámetros, contexto,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mddilshad999/Claud.2
+- Repositorio en Hugging Face: https://huggingface.co/Mddilshad999/Claud.2
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

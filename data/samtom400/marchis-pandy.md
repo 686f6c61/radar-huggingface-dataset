@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `samtom/MarchTick.Pandy` es un repositorio alojado en HuggingFace que, a fecha de su publicación, no dispone de ninguna información técnica publicada por su autor. La model card únicamente declara la licencia `afl-3.0` (Academic Free License) y no incluye descripción, arquitectura, pesos, datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni valoraciones de la comunidad, y no se ha identificado ninguna publicación, paper o demostración externa que documente sus capacidades.
+El modelo `samtom/MarchTick.Pandy` es un repositorio alojado en Hugging Face que, a fecha de su publicación, no dispone de ninguna información técnica publicada por su autor. La model card únicamente declara la licencia `afl-3.0` (Academic Free License) y no incluye descripción, arquitectura, pesos, datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni valoraciones de la comunidad, y no se ha identificado ninguna publicación, paper o demostración externa que documente sus capacidades.
 
 Dado que la información disponible es prácticamente nula, esta ficha se limita a reflejar los datos accesibles y a advertir de la ausencia de especificaciones. Cualquier intento de evaluar el modelo para un caso de uso real debería partir de una revisión directa del repositorio y de la descarga de los ficheros, si es que existen.
 
@@ -52,4 +52,4 @@ No disponible. Al desconocer la arquitectura, el tamaño y el propósito del mod
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/samtom400/Marchis.Pandy
+- Repositorio de Hugging Face: https://huggingface.co/samtom400/Marchis.Pandy

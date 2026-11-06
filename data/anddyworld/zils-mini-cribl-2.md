@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zils-mini-cribl-2 es un modelo de lenguaje publicado por el usuario anddyworld en HuggingFace, construido como un fine-tune (o "soup", es decir, una mezcla de pesos) sobre el modelo base cribl-ai/cribl-decision-2-4B. Con 4.539.265.536 parametros totales confirmados en los safetensors del repositorio, se situa en la franja de los modelos de aproximadamente 4.500 millones de parametros, un tamano pensado para inferencia eficiente en hardware de consumo y despliegues de produccion con requisitos moderados de VRAM.
+Zils-mini-cribl-2 es un modelo de lenguaje publicado por el usuario anddyworld en Hugging Face, construido como un fine-tune (o "soup", es decir, una mezcla de pesos) sobre el modelo base cribl-ai/cribl-decision-2-4B. Con 4.539.265.536 parametros totales confirmados en los safetensors del repositorio, se situa en la franja de los modelos de aproximadamente 4.500 millones de parametros, un tamano pensado para inferencia eficiente en hardware de consumo y despliegues de produccion con requisitos moderados de VRAM.
 
 La model card es extremadamente escueta: se limita a declarar la licencia Apache 2.0, el modelo base y una nota sobre la procedencia de los pesos. Segun esa nota, los pesos de lenguaje provienen de cribl-ai/cribl-decision-2-4B en la revision 317e53b77f62011f442f56cb7c5032484fadd850, redistribuidos bajo su licencia Apache 2.0, y se menciona que la torre de vision se copia sin cambios de un "parent Qwen" fijado en el pool. Esto sugiere que el modelo base incorpora capacidades multimodales (vision), aunque no hay documentacion adicional que lo confirme con detalle.
 
@@ -27,7 +27,7 @@ El modelo tiene cero descargas y cero likes en el momento de la consulta, fue cr
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna del modelo en la documentacion disponible. La model card indica que se trata de un "soup body" sobre cribl-ai/cribl-decision-2-4B, lo que en la practica de la comunidad de HuggingFace suele significar una combinacion o mezcla de pesos (model soup) de distintos checkpoints o fine-tunes, pero no se detalla la tecnica exacta empleada. Tampoco se especifica si la base es un transformer denso convencional o si incorpora componentes adicionales.
+No hay informacion publicada sobre la arquitectura interna del modelo en la documentacion disponible. La model card indica que se trata de un "soup body" sobre cribl-ai/cribl-decision-2-4B, lo que en la practica de la comunidad de Hugging Face suele significar una combinacion o mezcla de pesos (model soup) de distintos checkpoints o fine-tunes, pero no se detalla la tecnica exacta empleada. Tampoco se especifica si la base es un transformer denso convencional o si incorpora componentes adicionales.
 
 El unico dato tecnico concreto sobre la composicion es la mencion a una "vision tower" copiada sin cambios del "pinned Qwen parent" del pool, lo que implica que el modelo base cribl-decision-2-4B es multimodal (texto e imagen) y que su componente visual deriva de un modelo de la familia Qwen. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. Todos estos datos deben considerarse no disponibles.
 
@@ -85,6 +85,6 @@ La comparativa se limita a datos de parametros y licencia, ya que no hay benchma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anddyworld/zils-mini-cribl-2
+- Modelo en Hugging Face: https://huggingface.co/anddyworld/zils-mini-cribl-2
 - Modelo base: https://huggingface.co/cribl-ai/cribl-decision-2-4B
 - Revision del modelo base citada: 317e53b77f62011f442f56cb7c5032484fadd850

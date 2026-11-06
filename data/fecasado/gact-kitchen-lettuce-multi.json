@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "fecasado/gact-kitchen-lettuce-multi",
+  "slug": "fecasado-gact-kitchen-lettuce-multi",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gact-kitchen-lettuce-multi",
+  "created_at": "2026-11-04T11:46:26.000Z",
+  "updated_at": "2026-11-04T11:46:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "gaze_act",
+    "robotics",
+    "dataset:fecasado/lettuce-to-plate-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 51670922,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206734968,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fecasado/gfm-kitchen-lettuce-22dF · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gfm-kitchen-lettuce-22dF",
+      "snippet": "Instructions to use fecasado/gfm-kitchen-lettuce-22dF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use fecasado/gfm-kitchen-lettuce-22dF with LeRobot:"
+    },
+    {
+      "title": "fecasado/gfm-kitchen-lettuce-22dN · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gfm-kitchen-lettuce-22dN",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haoquan03/PixelBench-Molmo2-4B-OV-s1
+- Modelo en Hugging Face: https://huggingface.co/haoquan03/PixelBench-Molmo2-4B-OV-s1
 - Pagina del proyecto PixelBench: https://haoquanzhang.github.io/pixelbench/
 - Codigo y evaluacion: https://github.com/HaoquanZhang/PixelBench
 - Articulo: arXiv preprint arXiv:TBA, «Can LLMs Understand and Generate Images Pixel by Pixel?» (Haoquan Zhang, Feiyang Liu, Juanxi Tian, Wanhua Li, Haodong Duan, Weiyang Liu, 2026)

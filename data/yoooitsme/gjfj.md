@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yoooitsme/Gjfj es un repositorio publicado en HuggingFace por el usuario Yoooitsme bajo licencia Apache 2.0. La informacion disponible es extremadamente limitada: el repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes, y su model card se reduce a la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni uso previsto.
+Yoooitsme/Gjfj es un repositorio publicado en Hugging Face por el usuario Yoooitsme bajo licencia Apache 2.0. La informacion disponible es extremadamente limitada: el repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes, y su model card se reduce a la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni uso previsto.
 
 No se ha publicado ninguna especificacion tecnica: se desconoce el numero de parametros, la longitud de contexto, la arquitectura subyacente y los idiomas soportados. El pipeline declarado en los metadatos tampoco esta disponible. Con estos datos, no es posible confirmar que el repositorio contenga pesos utilizables, ya que el tamano de 0.0 GB sugiere que esta vacio o que solo incluye archivos de configuracion minima.
 
@@ -47,7 +47,7 @@ No existen datos verificados sobre el comportamiento del modelo, por lo que los 
 - Prototipado interno en investigacion: util como punto de partida para experimentos con licencia Apache 2.0, que permite modificacion y redistribucion sin obligacion de publicar derivados.
 - Ajuste fino supervisado: la licencia permisiva facilita el fine-tuning y la integracion en productos propietarios, condicionado a que existan pesos descargables.
 - Despliegue en entornos con requisitos de licencia estrictos: Apache 2.0 evita las clausulas de uso comercial restringido habituales en otras licencias de modelos abiertos.
-- Evaluacion comparativa de repositorios: el caso de uso mas realista hoy es el estudio del repositorio como ejemplo de publicacion incompleta en HuggingFace, util para analizar practicas de documentacion de modelos.
+- Evaluacion comparativa de repositorios: el caso de uso mas realista hoy es el estudio del repositorio como ejemplo de publicacion incompleta en Hugging Face, util para analizar practicas de documentacion de modelos.
 
 ## Benchmarks y rendimiento
 
@@ -84,7 +84,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni el rendimiento del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Yoooitsme/Gjfj
+- Repositorio en Hugging Face: https://huggingface.co/Yoooitsme/Gjfj
 - Perfil del autor: https://huggingface.co/Yoooitsme
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.
 

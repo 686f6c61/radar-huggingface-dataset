@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `divyasi2/caption` en HuggingFace no contiene un modelo de inteligencia artificial con pesos entrenados, sino un único archivo de texto denominado `review.md`. Según la model card, este archivo es una revisión o análisis de un paper académico sobre razonamiento multimodal (multimodal reasoning), con un formato de texto plano, estilo de citación APA numérico, estructura IMRAD (introducción, métodos, experimentos, resultados, conclusión) y un enfoque teórico riguroso. No se proporciona ningún artefacto de modelo, tokenizador, configuración o pesos.
+El repositorio `divyasi2/caption` en Hugging Face no contiene un modelo de inteligencia artificial con pesos entrenados, sino un único archivo de texto denominado `review.md`. Según la model card, este archivo es una revisión o análisis de un paper académico sobre razonamiento multimodal (multimodal reasoning), con un formato de texto plano, estilo de citación APA numérico, estructura IMRAD (introducción, métodos, experimentos, resultados, conclusión) y un enfoque teórico riguroso. No se proporciona ningún artefacto de modelo, tokenizador, configuración o pesos.
 
 A pesar del nombre "caption", no hay evidencia de que se trate de un modelo de generación de subtítulos o descripciones de imágenes. La ausencia de metadatos técnicos (arquitectura, parámetros, contexto, etc.) impide clasificarlo como un modelo de IA utilizable. Es probable que el repositorio sea un ejercicio académico o una publicación de un documento de revisión, no un recurso para desarrolladores.
 
@@ -59,5 +59,5 @@ No disponible. No existe un modelo comparable, ya que el repositorio no contiene
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/divyasi2/caption
+- Repositorio en Hugging Face: https://huggingface.co/divyasi2/caption
 - No se encontraron otros enlaces relevantes en la búsqueda web. Los resultados de búsqueda (ComfyUI-CaptionThis, Captions.ai, etc.) no están relacionados con este repositorio.

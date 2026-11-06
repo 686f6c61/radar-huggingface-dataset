@@ -21,7 +21,7 @@ El resultado es un artefacto orientado explícitamente a investigación, estudio
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (librería `transformers`); tamaño del repositorio 61,0 GB |
 | Pipeline | text-generation |
-| Fecha de publicación | 2026-09-23 (según metadatos de HuggingFace) |
+| Fecha de publicación | 2026-09-23 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 | Parámetros de muestreo recomendados | `temperature=1.0`, `top_p=0.95` |
 
@@ -87,8 +87,8 @@ Las siguientes estimaciones se derivan del recuento de parámetros y del tamaño
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Rendimiento declarado | Disponibilidad |
 |---|---|---|---|---|---|---|
-| North-Mini-Code-1.0-Uncensored-Heretic | 30,5B | ~3B | 256K | Apache 2.0 | 0/100 rechazos; KL 0.0545 frente al original | HuggingFace (este repositorio), 0 descargas |
-| North-Mini-Code-1.0 (base) | 30B | 3B | 256K | Apache 2.0 | 84/100 rechazos; benchmarks de código publicados solo como imagen | HuggingFace, espacio de demo en HF Spaces |
+| North-Mini-Code-1.0-Uncensored-Heretic | 30,5B | ~3B | 256K | Apache 2.0 | 0/100 rechazos; KL 0.0545 frente al original | Hugging Face (este repositorio), 0 descargas |
+| North-Mini-Code-1.0 (base) | 30B | 3B | 256K | Apache 2.0 | 84/100 rechazos; benchmarks de código publicados solo como imagen | Hugging Face, espacio de demo en HF Spaces |
 | Qwen3.6-35B-A3B | ~35B según denominación | ~3B según denominación | no disponible | no disponible | no disponible; citado en la metodología del modelo base como referencia pública | no disponible |
 | Gemma 4 | no disponible | no disponible | no disponible | no disponible | puntuaciones de codificación agéntica reportadas por el equipo de Qwen según la metodología del modelo base | no disponible |
 
@@ -109,10 +109,10 @@ La comparativa cuantitativa con alternativas de la misma categoría no está dis
 
 ## Enlaces
 
-- Modelo en HuggingFace (este repositorio): https://huggingface.co/OS-Software/North-Mini-Code-1.0-Uncensored-Heretic
+- Modelo en Hugging Face (este repositorio): https://huggingface.co/OS-Software/North-Mini-Code-1.0-Uncensored-Heretic
 - Modelo base: https://huggingface.co/CohereLabs/North-Mini-Code-1.0
 - Blog de presentación del modelo base: https://huggingface.co/blog/CohereLabs/introducing-north-mini-code
-- Demo del modelo base en HuggingFace Spaces: https://huggingface.co/spaces/CohereLabs/North-Mini-Code-1.0
+- Demo del modelo base en Hugging Face Spaces: https://huggingface.co/spaces/CohereLabs/North-Mini-Code-1.0
 - Heretic (herramienta de abliteración): https://heretic-project.org
 - Repositorio de Heretic en GitHub: https://github.com/p-e-w/Heretic
 - Cohere: https://cohere.com/

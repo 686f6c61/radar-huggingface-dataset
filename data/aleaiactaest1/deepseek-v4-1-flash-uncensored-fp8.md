@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-UNCENSORED-FP8 es una modificacion del checkpoint `deepseek-ai/DeepSeek-V4.1-Flash` publicada por el usuario AleaiactaEst1 (vinculado a la cuenta @dealignai) en HuggingFace. El modelo base es un transformer causal encoder-decoder de tipo Mixture-of-Experts con 763.205.315.794 parametros totales segun los safetensors del repo, y esta adaptado para tareas `image-text-to-text`, es decir, entrada multimodal con salida de texto. La modificacion consiste en una "abliteration" a nivel de pesos que elimina los mecanismos de rechazo del modelo base, manteniendo supuestamente intactas las capacidades de razonamiento, vision y tool calling.
+DeepSeek-V4.1-Flash-UNCENSORED-FP8 es una modificacion del checkpoint `deepseek-ai/DeepSeek-V4.1-Flash` publicada por el usuario AleaiactaEst1 (vinculado a la cuenta @dealignai) en Hugging Face. El modelo base es un transformer causal encoder-decoder de tipo Mixture-of-Experts con 763.205.315.794 parametros totales segun los safetensors del repo, y esta adaptado para tareas `image-text-to-text`, es decir, entrada multimodal con salida de texto. La modificacion consiste en una "abliteration" a nivel de pesos que elimina los mecanismos de rechazo del modelo base, manteniendo supuestamente intactas las capacidades de razonamiento, vision y tool calling.
 
 El interes tecnico del checkpoint reside en dos aspectos: por un lado, cuantiza los pesos en FP8 (`e4m3fn`) con escalas de bloque E8M0 y expertos enrutados en FP4, lo que reduce el tamano del repo a 510,3 GB frente a los cientos de gigabytes que ocuparia en BF16; por otro, documenta de forma explicita el impacto de la abliteracion sobre benchmarks de seguridad (HarmBench-320) y de conocimiento (MMLU-14k), lo que permite evaluar el coste de eliminar los guardrails. La licencia declarada es MIT, aunque conviene revisar las condiciones del modelo base.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks del modelo base DeepSeek-V4.1-Flash en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AleaiactaEst1/DeepSeek-V4.1-Flash-UNCENSORED-FP8
+- Hugging Face: https://huggingface.co/AleaiactaEst1/DeepSeek-V4.1-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Perfil del autor en X: https://x.com/dealignai
 - Perfil de Jordan Schenck en X: https://x.com/jordanschenck

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-io-peak/folium-onnx es un modelo publicado en HuggingFace por el usuario io-peak, distribuido exclusivamente en formato ONNX y con un tamano de repositorio de 0,1 GB. La model card publicada no contiene descripcion funcional alguna: se limita a un bloque de metadatos YAML con la licencia `other`, el identificador `cc-by-4.0-with-dataset-attribution` y un enlace al fichero de licencia alojado en el repositorio de GitHub del proyecto. No se declara arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni tarea objetivo.
+io-peak/folium-onnx es un modelo publicado en Hugging Face por el usuario io-peak, distribuido exclusivamente en formato ONNX y con un tamano de repositorio de 0,1 GB. La model card publicada no contiene descripcion funcional alguna: se limita a un bloque de metadatos YAML con la licencia `other`, el identificador `cc-by-4.0-with-dataset-attribution` y un enlace al fichero de licencia alojado en el repositorio de GitHub del proyecto. No se declara arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni tarea objetivo.
 
 El modelo no acumula descargas (0) y cuenta con un unico "like" en el momento de la consulta, y fue creado y actualizado el 20 de septiembre de 2026 con apenas seis minutos de diferencia entre ambos eventos, lo que sugiere una publicacion automatizada o un volcado de artefactos mas que un lanzamiento con documentacion elaborada. El nombre "folium" coincide con el de una conocida libreria Python de visualizacion de mapas, pero no hay ningun dato en la informacion disponible que confirme o desmienta esa relacion.
 
@@ -18,7 +18,7 @@ Su relevancia actual es, por tanto, limitada y condicionada: el unico rasgo tecn
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio se distribuye en ONNX; se desconoce la precision de los pesos) |
 | Idiomas soportados | no disponible |
-| Licencia | cc-by-4.0-with-dataset-attribution (identificador `other` en HuggingFace) |
+| Licencia | cc-by-4.0-with-dataset-attribution (identificador `other` en Hugging Face) |
 | Formato de pesos | ONNX |
 | Tamano del repositorio | 0,1 GB |
 | Pipeline declarado | no disponible |
@@ -71,7 +71,7 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: la model card no describe la tarea, la arquitectura ni el uso previsto, lo que impide evaluar su idoneidad para cualquier caso de uso concreto.
-- Licencia no estandar: el identificador `cc-by-4.0-with-dataset-attribution` es una licencia personalizada ("other" en HuggingFace) cuyo texto completo reside en un enlace externo a GitHub. Antes de cualquier uso comercial es imprescindible leer `MODEL_LICENSE.md` y verificar si la atribucion exigida al dataset de origen impone obligaciones adicionales de cita o redistribucion.
+- Licencia no estandar: el identificador `cc-by-4.0-with-dataset-attribution` es una licencia personalizada ("other" en Hugging Face) cuyo texto completo reside en un enlace externo a GitHub. Antes de cualquier uso comercial es imprescindible leer `MODEL_LICENSE.md` y verificar si la atribucion exigida al dataset de origen impone obligaciones adicionales de cita o redistribucion.
 - Riesgo de alucinacion: no evaluable, al desconocerse la tarea y los datos de entrenamiento.
 - Sesgos conocidos: no disponible. No hay informacion sobre la composicion del dataset ni sobre procesos de alineacion.
 - Limitaciones de contexto e idioma: no disponibles.
@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/io-peak/folium-onnx
+- Modelo en Hugging Face: https://huggingface.co/io-peak/folium-onnx
 - Fichero de licencia del modelo: https://raw.githubusercontent.com/io-PEAK/folium/main/MODEL_LICENSE.md
 - Repositorio GitHub del proyecto (referenciado por la licencia): https://github.com/io-PEAK/folium
 - Resultados de busqueda web obtenidos: no relevantes para el modelo. Corresponden a sitios de videojuegos .io (crazygames.com/c/io, poki.com/en/io, slither.io, diep.io) y no aportan informacion tecnica sobre io-peak/folium-onnx.

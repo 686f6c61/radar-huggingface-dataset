@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks generalistas (MMLU, HumanEval, GSM8
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| violetxi/qwen35-9b-equational-theory-sair-r3-mix10m | 9,65B | 32.768 tokens en la configuracion evaluada | 63,66 % en etapa 1 y 20,42 % en etapa 2 con 24K de salida (evaluacion propia, no certificada) | Apache 2.0 | Pesos BF16 en HuggingFace, sin cuantizaciones |
-| Qwen/Qwen3.5-9B (modelo base) | no disponible en la informacion proporcionada (el ajuste declara 9,65B sobre el base) | no disponible | no disponible: el autor no publica la linea base en la model card | Apache 2.0 (segun la ficha del ajuste) | Publico en HuggingFace |
+| violetxi/qwen35-9b-equational-theory-sair-r3-mix10m | 9,65B | 32.768 tokens en la configuracion evaluada | 63,66 % en etapa 1 y 20,42 % en etapa 2 con 24K de salida (evaluacion propia, no certificada) | Apache 2.0 | Pesos BF16 en Hugging Face, sin cuantizaciones |
+| Qwen/Qwen3.5-9B (modelo base) | no disponible en la informacion proporcionada (el ajuste declara 9,65B sobre el base) | no disponible | no disponible: el autor no publica la linea base en la model card | Apache 2.0 (segun la ficha del ajuste) | Publico en Hugging Face |
 | Otros ajustes especializados en razonamiento matematico sobre modelos de ~9B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos que permitan una comparacion cuantitativa con alternativas de la misma categoria dentro de la informacion proporcionada; la unica referencia posible es el modelo base, y el autor no publica sus resultados en las mismas evaluaciones.
@@ -101,7 +101,7 @@ No se dispone de datos que permitan una comparacion cuantitativa con alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/qwen35-9b-equational-theory-sair-r3-mix10m
+- Modelo en Hugging Face: https://huggingface.co/violetxi/qwen35-9b-equational-theory-sair-r3-mix10m
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/stanford_autonomous_agent/equational-theory-curated-r3-20260923/runs/eqr310m20260923
 - Explorador publico de resultados y respuestas: https://huggingface.co/spaces/violetxi/equational-theory-trajectory-atlas

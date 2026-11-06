@@ -75,7 +75,7 @@ No disponible. No se dispone de información sobre modelos comparables de la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/charlott-rgb/so101_acrylic_vla_jepa_smoke
+- Modelo en Hugging Face: https://huggingface.co/charlott-rgb/so101_acrylic_vla_jepa_smoke
 - Paper VLA-JEPA: https://arxiv.org/abs/2602.10098
 - Dataset de entrenamiento: https://huggingface.co/datasets/charlott-rgb/so101_acrylic_dense72
 - LeRobot (GitHub): https://github.com/huggingface/lerobot

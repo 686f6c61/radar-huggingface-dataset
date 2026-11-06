@@ -6,7 +6,7 @@
 
 La relevancia de esta ficha es mas bien metodologica que practica: el modelo registra 0 descargas y 0 likes, y los resultados que declara en su propio conjunto de evaluacion son Precision 0,0, Recall 0,0 y F1 0,0, con una accuracy de 0,7737. Esa combinacion (accuracy alta con F1 nulo) es la firma tipica de un entrenamiento que ha colapsado hacia la clase mayoritaria "O" (fuera de entidad), algo coherente con la tabla de entrenamiento publicada, que solo registra 4 epocas y 16 pasos de optimizacion cuando los hiperparametros declarados apuntan a 10 epocas.
 
-En la practica, el checkpoint no es utilizable como extractor de entidades en produccion y solo sirve como material de estudio sobre fallos de fine-tuning, como punto de partida para reentrenar sobre un dataset anotado real o como ejemplo de model card autogenerada por el `Trainer` de HuggingFace sin revision posterior.
+En la practica, el checkpoint no es utilizable como extractor de entidades en produccion y solo sirve como material de estudio sobre fallos de fine-tuning, como punto de partida para reentrenar sobre un dataset anotado real o como ejemplo de model card autogenerada por el `Trainer` de Hugging Face sin revision posterior.
 
 ## Especificaciones tecnicas
 
@@ -112,7 +112,7 @@ Observaciones: `SlavaKemDev/bert-finetuned-ner` comparte modelo base y dataset "
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kdemyokhin/bert-finetuned-ner
+- Modelo en Hugging Face: https://huggingface.co/kdemyokhin/bert-finetuned-ner
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Checkpoint hermano con el mismo modelo base: https://huggingface.co/SlavaKemDev/bert-finetuned-ner
 - NER funcional sobre `bert-base-cased` y CoNLL-2003: https://huggingface.co/nt-ai/bert-finetuned-ner

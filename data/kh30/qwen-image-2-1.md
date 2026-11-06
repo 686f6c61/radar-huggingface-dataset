@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1 es un modelo unificado de generación de imágenes a partir de texto y de edición de imágenes, perteneciente a la familia Qwen y publicado bajo el identificador KH30/Qwen-Image-2.1 en HuggingFace. El componente de generación visual cuenta con 7B parámetros distribuidos en 32 capas DiT de flujo único (Single-Stream DiT), lo que sitúa el total del repositorio en 7.115.124.736 parámetros según los pesos safetensors. El modelo se distribuye en formato diffusers y se integra mediante la clase `QwenImage21Pipeline`.
+Qwen-Image-2.1 es un modelo unificado de generación de imágenes a partir de texto y de edición de imágenes, perteneciente a la familia Qwen y publicado bajo el identificador KH30/Qwen-Image-2.1 en Hugging Face. El componente de generación visual cuenta con 7B parámetros distribuidos en 32 capas DiT de flujo único (Single-Stream DiT), lo que sitúa el total del repositorio en 7.115.124.736 parámetros según los pesos safetensors. El modelo se distribuye en formato diffusers y se integra mediante la clase `QwenImage21Pipeline`.
 
 La propuesta diferencial del modelo es la unificación de tareas: genera imágenes convencionales y también imágenes con canal alfa nativo (RGBA), permite editar capas transparentes, extraer sujetos de fotografías y realizar ediciones locales guiadas por anotaciones. Admite hasta 10 imágenes de referencia en una misma generación, lo que habilita composiciones como fotografías de grupo a partir de retratos individuales manteniendo la identidad de personas y productos.
 
@@ -79,8 +79,8 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- HuggingFace (repositorio consultado): https://huggingface.co/KH30/Qwen-Image-2.1
-- HuggingFace (repositorio oficial referenciado en la model card): https://huggingface.co/Qwen/Qwen-Image-2.1
+- Hugging Face (repositorio consultado): https://huggingface.co/KH30/Qwen-Image-2.1
+- Hugging Face (repositorio oficial referenciado en la model card): https://huggingface.co/Qwen/Qwen-Image-2.1
 - ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog: https://qwen.ai/blog?id=qwen-image-2.1
 - Demo (Space): https://huggingface.co/spaces/Qwen/Qwen-Image-2.1

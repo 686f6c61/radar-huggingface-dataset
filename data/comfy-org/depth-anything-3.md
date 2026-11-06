@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Depth Anything 3 es un modelo de estimación de profundidad monocular desarrollado por ByteDance-Seed, cuyo repositorio original se encuentra en GitHub y HuggingFace. Este repositorio concreto, mantenido por Comfy-Org, contiene los pesos reempaquetados en formato safetensors para su uso directo en ComfyUI, una interfaz de nodos para flujos de trabajo de generación de imágenes. El modelo está diseñado para inferir mapas de profundidad a partir de una sola imagen, una tarea fundamental en visión por computadora con aplicaciones en reconstrucción 3D, realidad aumentada, robótica y edición de imágenes.
+Depth Anything 3 es un modelo de estimación de profundidad monocular desarrollado por ByteDance-Seed, cuyo repositorio original se encuentra en GitHub y Hugging Face. Este repositorio concreto, mantenido por Comfy-Org, contiene los pesos reempaquetados en formato safetensors para su uso directo en ComfyUI, una interfaz de nodos para flujos de trabajo de generación de imágenes. El modelo está diseñado para inferir mapas de profundidad a partir de una sola imagen, una tarea fundamental en visión por computadora con aplicaciones en reconstrucción 3D, realidad aumentada, robótica y edición de imágenes.
 
 La versión 3 de Depth Anything continúa la línea de sus predecesores, ofreciendo múltiples variantes de tamaño (small, base, large) y modos de salida (monocular y métrico). El repositorio de Comfy-Org incluye cuatro archivos de pesos que cubren estas variantes, con un tamaño total de 6,7 GB. La licencia declarada es Apache 2.0, lo que permite uso comercial y modificación. Aunque la información técnica detallada (arquitectura, parámetros, contexto) no está disponible en esta ficha, la existencia de versiones small, base y large sugiere una familia de modelos escalables para diferentes requisitos de precisión y rendimiento.
 
@@ -63,9 +63,9 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio de HuggingFace de Comfy-Org: https://huggingface.co/Comfy-Org/Depth-Anything-3
+- Repositorio de Hugging Face de Comfy-Org: https://huggingface.co/Comfy-Org/Depth-Anything-3
 - Repositorio original en GitHub: https://github.com/ByteDance-Seed/Depth-Anything-3
-- Modelo base en HuggingFace: https://huggingface.co/depth-anything/DA3-BASE
+- Modelo base en Hugging Face: https://huggingface.co/depth-anything/DA3-BASE
 - Modelo metrico large: https://huggingface.co/depth-anything/DA3METRIC-LARGE
 - Modelo monocular large: https://huggingface.co/depth-anything/DA3MONO-LARGE
 - Modelo small: https://huggingface.co/depth-anything/DA3-SMALL

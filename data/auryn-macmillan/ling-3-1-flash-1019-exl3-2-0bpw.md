@@ -91,9 +91,9 @@ Tiempo de carga: 100 s incluyendo warmup (26,9 s), desde NVMe.
 
 | Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ling-3.1-flash-1019-EXL3-2.0bpw (este) | 560 B totales / 25 B activos (base); 76,0 B en safetensors del repo | 1 M nativo; 64K configurado | EXL3 2,06 bpw, safetensors | MIT | HuggingFace, 0 descargas |
-| Ling-3.1-flash-1019-EXL3-1.5-1.0bpw | Mismo modelo base | 1 M nativo | EXL3 mixto 1.5/1.0 bpw | MIT | HuggingFace, del mismo autor; cabe entero en VRAM en 5× 3090 |
-| inclusionAI/Ling-3.1-flash-1019 (FP8) | 560 B totales / 25 B activos | 1 M | FP8 | MIT | HuggingFace, modelo base |
+| Ling-3.1-flash-1019-EXL3-2.0bpw (este) | 560 B totales / 25 B activos (base); 76,0 B en safetensors del repo | 1 M nativo; 64K configurado | EXL3 2,06 bpw, safetensors | MIT | Hugging Face, 0 descargas |
+| Ling-3.1-flash-1019-EXL3-1.5-1.0bpw | Mismo modelo base | 1 M nativo | EXL3 mixto 1.5/1.0 bpw | MIT | Hugging Face, del mismo autor; cabe entero en VRAM en 5× 3090 |
+| inclusionAI/Ling-3.1-flash-1019 (FP8) | 560 B totales / 25 B activos | 1 M | FP8 | MIT | Hugging Face, modelo base |
 | Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -113,7 +113,7 @@ Tiempo de carga: 100 s incluyendo warmup (26,9 s), desde NVMe.
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/auryn-macmillan/Ling-3.1-flash-1019-EXL3-2.0bpw
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/auryn-macmillan/Ling-3.1-flash-1019-EXL3-2.0bpw
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.1-flash-1019
 - Variante 1.5/1.0 bpw del mismo autor: https://huggingface.co/auryn-macmillan/Ling-3.1-flash-1019-EXL3-1.5-1.0bpw
 - exllamav3 (herramienta de cuantización e inferencia): https://github.com/turboderp-org/exllamav3

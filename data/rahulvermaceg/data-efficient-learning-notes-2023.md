@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario rahulvermaceg, no contiene un modelo de inteligencia artificial entrenado, sino un conjunto de notas exploratorias sobre aprendizaje eficiente de datos (data-efficient learning). El artefacto principal es un documento llamado `analysis.md` que registra el alcance de una pregunta de investigación, los posibles factores de confusión, los requisitos de reproducibilidad y una propuesta de comparación con líneas base, todo ello antes de que se reporte ningún resultado experimental.
+Este repositorio de Hugging Face, publicado por el usuario rahulvermaceg, no contiene un modelo de inteligencia artificial entrenado, sino un conjunto de notas exploratorias sobre aprendizaje eficiente de datos (data-efficient learning). El artefacto principal es un documento llamado `analysis.md` que registra el alcance de una pregunta de investigación, los posibles factores de confusión, los requisitos de reproducibilidad y una propuesta de comparación con líneas base, todo ello antes de que se reporte ningún resultado experimental.
 
 La relevancia de este repositorio radica en su utilidad como plantilla metodológica para investigadores que planean estudios en el campo del aprendizaje eficiente de datos, un área que busca reducir los costes computacionales y financieros del entrenamiento de modelos. Sin embargo, es fundamental entender que no se trata de un modelo de lenguaje, no tiene pesos entrenados, no ofrece capacidades de generación ni inferencia, y su tamaño es de apenas 33.088 parámetros (probablemente bytes del archivo de texto). La licencia es CC-BY-4.0, lo que permite su reutilización con atribución.
 
@@ -66,7 +66,7 @@ No disponible. Este repositorio no pertenece a la categoria de modelos de IA com
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rahulvermaceg/data-efficient-learning-notes-2023
+- Repositorio en Hugging Face: https://huggingface.co/rahulvermaceg/data-efficient-learning-notes-2023
 - Tutorial de ICML sobre Foundations of Data-efficient Machine Learning: https://icml.cc/virtual/2024/tutorial/35234
 - PDF del tutorial de Baharan sobre seleccion de coresets: https://baharanm.github.io/assets/pdf/ICML24_tutorial_DataEfficient.pdf
 - Notas de cursos de ML en GitHub (dair-ai): https://github.com/dair-ai/ML-Course-Notes

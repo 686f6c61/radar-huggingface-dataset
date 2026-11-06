@@ -6,7 +6,7 @@ El repositorio `amitvermason/swin-t-experiment89` es un experimento de implement
 
 El problema que aborda no es de rendimiento, sino de reproducibilidad: el repositorio empaqueta un `predict.py` ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta por defecto (optimizador SGD con planificador *onecycle*) y una documentación que insiste en la necesidad de evaluar con conjuntos *held-out* específicos de tarea, al menos tres semillas y una línea base de capacidad comparable. Todo ello apunta a un artefacto pensado para revisión de código y experimentos controlados, no para producción.
 
-Es relevante ahora como ejemplo del tipo de publicaciones de andamiaje que proliferan en HuggingFace: repos con arquitectura declarada, licencia permisiva y ficheros de configuración completos, pero sin entrenamiento real. Para un desarrollador o investigador, su interés es doble: sirve como plantilla para montar una implementación custom de Swin-T y, al mismo tiempo, ilustra por qué conviene verificar el recuento de parámetros, la ausencia de benchmarks y el estado declarado del checkpoint antes de adoptar cualquier modelo. Aunque la etiqueta del repositorio es `generation`, la arquitectura Swin Transformer es un *backbone* de visión (clasificación, detección y segmentación de imágenes), no un modelo generativo de texto.
+Es relevante ahora como ejemplo del tipo de publicaciones de andamiaje que proliferan en Hugging Face: repos con arquitectura declarada, licencia permisiva y ficheros de configuración completos, pero sin entrenamiento real. Para un desarrollador o investigador, su interés es doble: sirve como plantilla para montar una implementación custom de Swin-T y, al mismo tiempo, ilustra por qué conviene verificar el recuento de parámetros, la ausencia de benchmarks y el estado declarado del checkpoint antes de adoptar cualquier modelo. Aunque la etiqueta del repositorio es `generation`, la arquitectura Swin Transformer es un *backbone* de visión (clasificación, detección y segmentación de imágenes), no un modelo generativo de texto.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ No hay entrenamiento documentado. La model card es inequívoca: `model.safetenso
 - Pruebas de humo en CI: con 16.576 parámetros y un tamaño de repositorio de 0,0 GB, el checkpoint se puede cargar en cualquier *runner* de integración continua para verificar que el *pipeline* de carga de pesos y el código de inferencia no se rompen tras un cambio.
 - Verificación de adaptadores de carga: dado que las APIs automáticas necesitan un adaptador explícito, el repositorio es útil para validar que ese adaptador resuelve correctamente los nombres de los tensores y la configuración antes de apuntar a checkpoints mayores.
 - Investigación sobre diseños híbridos: permite experimentar con la combinación declarada de atención de ventana, fusión de tensores, GELU y RMSNorm, y comparar su comportamiento frente al Swin-T canónico en un entorno controlado.
-- Auditoría de publicaciones en HuggingFace: sirve como caso de estudio para prácticas de revisión, ya que ilustra cómo detectar repos sin entrenamiento (recuento de parámetros anómalo, ausencia de benchmarks, avisos explícitos del autor) antes de integrar un modelo.
+- Auditoría de publicaciones en Hugging Face: sirve como caso de estudio para prácticas de revisión, ya que ilustra cómo detectar repos sin entrenamiento (recuento de parámetros anómalo, ausencia de benchmarks, avisos explícitos del autor) antes de integrar un modelo.
 - Docencia y formación: resulta adecuado para explicar la diferencia entre un checkpoint de inicialización y un modelo entrenado, y para practicar la metodología de evaluación que la propia model card exige (conjunto *held-out*, tres semillas, línea base comparable).
 - Extensión a experimentos de visión si se entrena: la arquitectura es un *backbone* de visión, por lo que, tras un entrenamiento real con datos etiquetados, podría orientarse a tareas de clasificación o segmentación; hoy por hoy esto es una hipótesis, no una capacidad disponible.
 
@@ -65,12 +65,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto / tarea | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amitvermason/swin-t-experiment89 | 16.576 | Backbone de visión (etiquetado como *generation*) | No (checkpoint de inicialización) | MIT | HuggingFace, 0 descargas |
+| amitvermason/swin-t-experiment89 | 16.576 | Backbone de visión (etiquetado como *generation*) | No (checkpoint de inicialización) | MIT | Hugging Face, 0 descargas |
 | Swin-T oficial (microsoft/Swin-Transformer) | no disponible en la informacion proporcionada | Visión (clasificación, detección, segmentación) | Sí, implementación de referencia | no disponible en la informacion proporcionada | GitHub oficial de Microsoft |
 | torchvision `swin_t` | no disponible en la informacion proporcionada | Visión (clasificación de imágenes) | Sí, *builder* con pesos preentrenados configurables | no disponible en la informacion proporcionada | Documentación y paquete torchvision |
-| Priyamehta/swin-t-experiment | no disponible en la informacion proporcionada | Visión, orientado a *retrieval* | No (código para revisión y *smoke tests*) | no disponible en la informacion proporcionada | HuggingFace |
+| Priyamehta/swin-t-experiment | no disponible en la informacion proporcionada | Visión, orientado a *retrieval* | No (código para revisión y *smoke tests*) | no disponible en la informacion proporcionada | Hugging Face |
 
-La diferencia cualitativa clave es que las alternativas oficiales (Microsoft, torchvision) ofrecen pesos preentrenados y utilidades de carga estándar, mientras que los dos repositorios de experimentos de Swin-T en HuggingFace se presentan como andamiaje sin entrenamiento. Los valores numéricos de parámetros y rendimiento de las alternativas no figuran en la información proporcionada, por lo que se marcan como no disponibles.
+La diferencia cualitativa clave es que las alternativas oficiales (Microsoft, torchvision) ofrecen pesos preentrenados y utilidades de carga estándar, mientras que los dos repositorios de experimentos de Swin-T en Hugging Face se presentan como andamiaje sin entrenamiento. Los valores numéricos de parámetros y rendimiento de las alternativas no figuran en la información proporcionada, por lo que se marcan como no disponibles.
 
 ## Limitaciones y advertencias
 
@@ -86,8 +86,8 @@ La diferencia cualitativa clave es que las alternativas oficiales (Microsoft, to
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amitvermason/swin-t-experiment89
+- Modelo en Hugging Face: https://huggingface.co/amitvermason/swin-t-experiment89
 - Repositorio oficial de Swin Transformer (Microsoft): https://github.com/microsoft/Swin-Transformer
 - Documentación de `swin_t` en torchvision: https://docs.pytorch.org/vision/master/models/generated/torchvision.models.swin_t.html
 - Artículo divulgativo sobre Swin Transformer en GeeksforGeeks: https://www.geeksforgeeks.org/computer-vision/swin-transformer/
-- Repositorio experimental relacionado en HuggingFace: https://huggingface.co/Priyamehta/swin-t-experiment
+- Repositorio experimental relacionado en Hugging Face: https://huggingface.co/Priyamehta/swin-t-experiment

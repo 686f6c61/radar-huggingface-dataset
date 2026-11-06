@@ -6,7 +6,7 @@ SlopCoder-Mongo-0.5B-GGUF es la versión cuantizada en formato GGUF del modelo e
 
 El interés de esta ficha no reside en su tamaño, sino en su especialización. Frente a modelos de código generalistas, este modelo se ha ajustado (según los metadatos, mediante destilación desde un modelo mayor de la familia DeepSeek-Coder) para el vocabulario y las construcciones específicas del ecosistema MongoDB, incluyendo la sintaxis del shell y los tipos BSON. Su tamaño reducido permite ejecutarlo en CPU, en GPUs de gama de entrada e incluso en dispositivos con pocos recursos, lo que lo hace apto para autocompletado local en el IDE o en entornos con requisitos estrictos de privacidad.
 
-La información pública disponible es escasa: no se documentan la longitud de contexto, el volumen de tokens de entrenamiento, la composición del dataset ni resultados de benchmarks. El repositorio fue creado el 15 de septiembre de 2026 y, en el momento de la consulta, registra 0 descargas y 0 "me gusta", por lo que se trata de una publicación reciente y sin validación comunitaria. Los datos que siguen proceden exclusivamente de los metadatos de HuggingFace y de la model card del cuantizador.
+La información pública disponible es escasa: no se documentan la longitud de contexto, el volumen de tokens de entrenamiento, la composición del dataset ni resultados de benchmarks. El repositorio fue creado el 15 de septiembre de 2026 y, en el momento de la consulta, registra 0 descargas y 0 "me gusta", por lo que se trata de una publicación reciente y sin validación comunitaria. Los datos que siguen proceden exclusivamente de los metadatos de Hugging Face y de la model card del cuantizador.
 
 ## Especificaciones técnicas
 
@@ -87,8 +87,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formatos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/SlopCoder-Mongo-0.5B-GGUF (este repositorio) | 494.032.768 | no disponible | GGUF (12 cuantizaciones) | deepseek-license | HuggingFace, 0 descargas |
-| esilva/SlopCoder-Mongo-0.5B (modelo base) | 494.032.768 | no disponible | safetensors | deepseek-license | HuggingFace |
+| mradermacher/SlopCoder-Mongo-0.5B-GGUF (este repositorio) | 494.032.768 | no disponible | GGUF (12 cuantizaciones) | deepseek-license | Hugging Face, 0 descargas |
+| esilva/SlopCoder-Mongo-0.5B (modelo base) | 494.032.768 | no disponible | safetensors | deepseek-license | Hugging Face |
 | Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone, en la información proporcionada, de datos de benchmarks ni de especificaciones de modelos comparables (ya sean otros asistentes especializados en MongoDB o modelos de código de tamaño similar). No es posible por tanto establecer una comparativa cuantitativa de rendimiento, contexto o calidad. La única comparación objetivable es con el modelo base: este repositorio ofrece los mismos pesos en formato GGUF y con doce niveles de cuantización, lo que reduce el tamaño entre un 45 % y un 64 % respecto a f16 a cambio de una pérdida de precisión no medida.
@@ -107,7 +107,7 @@ No se dispone, en la información proporcionada, de datos de benchmarks ni de es
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/SlopCoder-Mongo-0.5B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/SlopCoder-Mongo-0.5B-GGUF
 - Modelo base: https://huggingface.co/esilva/SlopCoder-Mongo-0.5B
 - Página de resumen y descargas del cuantizador: https://hf.tst.eu/model#SlopCoder-Mongo-0.5B-GGUF
 - Solicitudes de cuantización del autor: https://huggingface.co/mradermacher/model_requests

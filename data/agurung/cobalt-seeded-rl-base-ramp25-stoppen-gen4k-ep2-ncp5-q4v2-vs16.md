@@ -74,10 +74,10 @@ Estimaciones derivadas del numero de parametros (4,41 B); el repositorio no publ
 
 | Modelo | Parametros | Contexto | Tipo de ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v2-vs16 | ~4,41 B | no disponible | RL con GRPO sobre el modelo base, orientado a correccion de codigo | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4 B (nominal) | no disponible en esta busqueda | Instruct, con SFT y ajuste posterior | no disponible en esta busqueda | HuggingFace |
-| agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-iid30 (checkpoint hermano) | no disponible | no disponible | RL con GRPO, otra configuracion de muestreo | no disponible | HuggingFace, listado en Featherless |
-| Qwen2.5-Coder-7B-Instruct (alternativa de codigo, otro tamano) | ~7 B | no disponible | Instruct especializado en codigo | no disponible en esta busqueda | HuggingFace |
+| agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v2-vs16 | ~4,41 B | no disponible | RL con GRPO sobre el modelo base, orientado a correccion de codigo | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4 B (nominal) | no disponible en esta busqueda | Instruct, con SFT y ajuste posterior | no disponible en esta busqueda | Hugging Face |
+| agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-iid30 (checkpoint hermano) | no disponible | no disponible | RL con GRPO, otra configuracion de muestreo | no disponible | Hugging Face, listado en Featherless |
+| Qwen2.5-Coder-7B-Instruct (alternativa de codigo, otro tamano) | ~7 B | no disponible | Instruct especializado en codigo | no disponible en esta busqueda | Hugging Face |
 
 No se dispone de valores de benchmarks comparativos entre estas opciones en la informacion proporcionada.
 
@@ -96,7 +96,7 @@ No se dispone de valores de benchmarks comparativos entre estas opciones en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v2-vs16
+- Modelo en Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v2-vs16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Listado de modelos recientes en Featherless (incluye otros checkpoints de agurung): https://featherless.ai/models?page=35&release_recency=30d
 - Catalogo de modelos autoalojados con requisitos de VRAM y cuantizacion: https://local-ai-models.ai/local-ai-models.html

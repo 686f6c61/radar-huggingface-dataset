@@ -4,7 +4,7 @@
 
 El modelo `Hooshaai/svd-linear-attention-distilbert-cachenotes` es una variante comprimida de DistilBERT desarrollada por Hoosha AI, un laboratorio de investigación independiente especializado en modelos generativos de flujo continuo, mecanismos de atención diferencial e infraestructura GPU. Incorpora un módulo denominado `cachenotes` que sustituye la atención cuadrática estándar o las capas de proyección densas por aproximaciones lineales de bajo rango, calibradas mediante descomposición en valores singulares (SVD) y recuperadas con un ajuste fino de 50 pasos utilizando LoRA. Está diseñado para tareas de clasificación de texto en inglés y se evalúa en el conjunto de datos GLUE, concretamente en SST-2, con una exactitud de validación del 88,65 %.
 
-La relevancia de este modelo radica en ser una prueba de concepto de técnicas de compresión de atención y eficiencia de memoria para transformadores, manteniendo un rendimiento competitivo en una tarea de análisis de sentimiento. Su arquitectura base es DistilBERT, aunque no se especifican en la información disponible el número total de parámetros ni la longitud de contexto. El repositorio de HuggingFace presenta un tamaño de 0,0 GB, lo que exige verificar la disponibilidad real de los pesos antes de su uso.
+La relevancia de este modelo radica en ser una prueba de concepto de técnicas de compresión de atención y eficiencia de memoria para transformadores, manteniendo un rendimiento competitivo en una tarea de análisis de sentimiento. Su arquitectura base es DistilBERT, aunque no se especifican en la información disponible el número total de parámetros ni la longitud de contexto. El repositorio de Hugging Face presenta un tamaño de 0,0 GB, lo que exige verificar la disponibilidad real de los pesos antes de su uso.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace muestra un tamaño de 0,0 GB, lo que sugiere que los pesos pueden no estar subidos o que el archivo se encuentra incompleto. Es necesario verificar la disponibilidad real antes de intentar cargar el modelo.
+- El repositorio de Hugging Face muestra un tamaño de 0,0 GB, lo que sugiere que los pesos pueden no estar subidos o que el archivo se encuentra incompleto. Es necesario verificar la disponibilidad real antes de intentar cargar el modelo.
 - La evaluación se limita a SST-2 en inglés; no existen datos sobre el rendimiento en otras tareas de GLUE ni en otros idiomas.
 - El ratio de compresión es 1,0, lo que implica que la eficiencia no equivale a una reducción en el número de parámetros. La compresión se refiere al mecanismo de atención, no al tamaño total del modelo.
 - No se documentan sesgos conocidos, riesgos de alucinación ni estudios de robustez ante datos adversariales. Como clasificador, puede producir predicciones erróneas cuando se aplica a dominios distintos al de entrenamiento.
@@ -78,6 +78,6 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-cachenotes](https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-cachenotes)
+- Hugging Face: [https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-cachenotes](https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-cachenotes)
 - GitHub del autor: [https://github.com/Hooshaai](https://github.com/Hooshaai)
 - Repositorio Hoosha AI: [https://github.com/Hooshaai/hooshaai.github.io](https://github.com/Hooshaai/hooshaai.github.io)

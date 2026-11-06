@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tylersmit/matching-2024 es un repositorio de HuggingFace publicado por el usuario tylersmit que contiene una implementacion funcional de una arquitectura denominada "CNN Transformer" orientada a tareas de matching (emparejamiento o comparacion de pares de entradas). El repositorio se presenta explicitamente como un punto de partida experimental: incluye el codigo Python ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un `model.safetensors` que el propio autor describe como checkpoint de inicializacion valido para smoke tests, no como un modelo entrenado.
+tylersmit/matching-2024 es un repositorio de Hugging Face publicado por el usuario tylersmit que contiene una implementacion funcional de una arquitectura denominada "CNN Transformer" orientada a tareas de matching (emparejamiento o comparacion de pares de entradas). El repositorio se presenta explicitamente como un punto de partida experimental: incluye el codigo Python ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un `model.safetensors` que el propio autor describe como checkpoint de inicializacion valido para smoke tests, no como un modelo entrenado.
 
 El dato mas relevante para evaluarlo es su tamano real: el recuento de parametros extraido del fichero safetensors es de 16.576 parametros totales, pese a que la configuracion se etiqueta internamente como escala "giant". Es decir, la etiqueta hace referencia a un preset de configuracion del script, no a un modelo de gran tamano. Con ese orden de magnitud, el artefacto es funcionalmente un banco de pruebas de codigo, no un modelo utilizable en produccion.
 
@@ -78,8 +78,8 @@ No hay modelos directamente comparables en la informacion proporcionada, ya que 
 
 | Modelo / categoria | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tylersmit/matching-2024 | 16.576 | no disponible | No entrenado (solo inicializacion) | apache-2.0 | HuggingFace, uso experimental |
-| Cross-encoders de matching (categoria) | no disponible | no disponible | Requiere entrenamiento supervisado sobre pares | depende del modelo | ampliamente disponible en HuggingFace |
+| tylersmit/matching-2024 | 16.576 | no disponible | No entrenado (solo inicializacion) | apache-2.0 | Hugging Face, uso experimental |
+| Cross-encoders de matching (categoria) | no disponible | no disponible | Requiere entrenamiento supervisado sobre pares | depende del modelo | ampliamente disponible en Hugging Face |
 | Modelos de embeddings para similitud (categoria) | no disponible | no disponible | Entrenados sobre corpus de pares y similitud | depende del modelo | ampliamente disponibles |
 | Rerankers neuronales (categoria) | no disponible | no disponible | Entrenados sobre datos de relevancia (por ejemplo, MS MARCO) | depende del modelo | ampliamente disponibles |
 
@@ -101,5 +101,5 @@ No es posible establecer una comparacion de rendimiento porque este repositorio 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tylersmit/matching-2024
+- Repositorio en Hugging Face: https://huggingface.co/tylersmit/matching-2024
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo o demos.

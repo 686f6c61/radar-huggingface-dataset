@@ -2,7 +2,7 @@
 
 ## Resumen
 
-panko es un modelo de generacion de texto publicado en HuggingFace por el usuario woozlit bajo el identificador `woozlit/panko`. Se distribuye con licencia Apache 2.0, en formato safetensors y con la etiqueta de pipeline `text-generation`, ademas de la etiqueta `conversational`. El unico dato cuantitativo verificable es el recuento de parametros obtenido de los tensores: 1.777.088.000 parametros (aproximadamente 1,78 mil millones), lo que situa al modelo en el segmento de pequenos modelos desplegables en hardware de consumo.
+panko es un modelo de generacion de texto publicado en Hugging Face por el usuario woozlit bajo el identificador `woozlit/panko`. Se distribuye con licencia Apache 2.0, en formato safetensors y con la etiqueta de pipeline `text-generation`, ademas de la etiqueta `conversational`. El unico dato cuantitativo verificable es el recuento de parametros obtenido de los tensores: 1.777.088.000 parametros (aproximadamente 1,78 mil millones), lo que situa al modelo en el segmento de pequenos modelos desplegables en hardware de consumo.
 
 La relevancia de esta ficha es limitada y conviene ser explicito: la model card publicada no contiene nada mas que el bloque de metadatos YAML con la licencia y las etiquetas. No hay descripcion, no hay informacion sobre datos de entrenamiento, no hay resultados de benchmarks y no se declaran idiomas soportados. El repositorio ocupa 3,6 GB, un tamano coherente con pesos en precision fp16 para 1,78 mil millones de parametros (unos 3,56 GB solo de pesos), lo que sugiere que no se han subido cuantizaciones GGUF ni versiones de menor precision.
 
@@ -17,7 +17,7 @@ Por tanto, se trata de un modelo practicamente indocumentado, con 40 descargas y
 | Parametros activos | No aplica (no consta que sea un modelo MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible; el repositorio solo contiene safetensors (3,6 GB), sin GGUF ni variantes cuantizadas publicadas |
-| Idiomas soportados | No disponible (la metadata de HuggingFace no declara idiomas) |
+| Idiomas soportados | No disponible (la metadata de Hugging Face no declara idiomas) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - En cuantizacion de 8 bits: alrededor de 1,9 GB de pesos; en 4 bits, alrededor de 1,1 GB. Estas conversiones no estan publicadas en el repositorio y habria que generarlas.
 - GPU recomendadas: cualquier GPU con 8 GB o mas (RTX 3060 Ti, RTX 4060, RTX 3070) para fp16 con contexto moderado; RTX 4090, A10, L4 o A100 para servir varias peticiones concurrentes con contexto largo.
 - Cabe en GPU de consumo: si, con holgura en tarjetas de 8-12 GB en fp16, y en tarjetas de 6 GB si se cuantiza.
-- Opciones de despliegue: HuggingFace Transformers como via directa; vLLM o TGI para servidor con batching continuo, siempre que la arquitectura sea compatible (no confirmado); llama.cpp u Ollama requieren convertir previamente los pesos a GGUF, conversion que no esta disponible en el repositorio.
+- Opciones de despliegue: Hugging Face Transformers como via directa; vLLM o TGI para servidor con batching continuo, siempre que la arquitectura sea compatible (no confirmado); llama.cpp u Ollama requieren convertir previamente los pesos a GGUF, conversion que no esta disponible en el repositorio.
 - Latencia y throughput estimados: no disponible. No hay mediciones publicadas ni datos de contexto que permitan modelar la cache KV.
 
 ## Comparativa con modelos similares
@@ -88,5 +88,5 @@ La comparacion relevante no es de rendimiento, ya que no hay datos de panko, sin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/woozlit/panko
+- Modelo en Hugging Face: https://huggingface.co/woozlit/panko
 - No se han encontrado enlaces adicionales relevantes (paper, blog, repositorio de codigo o demo) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

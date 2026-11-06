@@ -80,11 +80,11 @@ No disponible. La informacion proporcionada no incluye parametros, contexto, res
 - Instalacion pesada: el repositorio incluye todos los pesos (31,1 GB) y el primer despliegue de dependencias es considerable, con posibilidad de interrupciones que obligan a reejecutar el proceso.
 - Falta de informacion sobre sesgos y alucinacion: la model card no documenta sesgos conocidos ni tasas de error, y al tratarse de un modelo generativo de video y audio el riesgo de artefactos visuales y de audio incongruente con el prompt es inherente a la categoria.
 - Fechas de publicacion y actualizacion atipicas (7 de octubre de 2026), sin historial de versiones ni changelog que permita valorar la madurez del proyecto.
-- Duplicidad de repositorios: la documentacion apunta a un repositorio de HuggingFace bajo el usuario turtle89431 mientras el identificador consultado pertenece al usuario Moxiegen, lo que puede generar confusion sobre cual es la fuente canonica.
+- Duplicidad de repositorios: la documentacion apunta a un repositorio de Hugging Face bajo el usuario turtle89431 mientras el identificador consultado pertenece al usuario Moxiegen, lo que puede generar confusion sobre cual es la fuente canonica.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Moxiegen/Moxie_Multimedia_Models
+- Repositorio en Hugging Face: https://huggingface.co/Moxiegen/Moxie_Multimedia_Models
 - Repositorio referenciado en las instrucciones de instalacion: https://huggingface.co/turtle89431/Moxie-Multimedia
 - Recurso grafico de la model card (GitHub user attachments): https://github.com/user-attachments/assets/fb602a3c-4a2a-48da-8c44-d36417f4633b
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible

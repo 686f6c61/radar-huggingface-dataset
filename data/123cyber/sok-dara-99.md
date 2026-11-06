@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`123Cyber/sok-dara-99` es un repositorio de modelo publicado en HuggingFace por el usuario `123Cyber` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectónica ni de uso: únicamente incluye el bloque de metadatos con la licencia. No se ha publicado información sobre el pipeline de inferencia, los idiomas soportados, el tamaño del modelo ni el contexto máximo.
+`123Cyber/sok-dara-99` es un repositorio de modelo publicado en Hugging Face por el usuario `123Cyber` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectónica ni de uso: únicamente incluye el bloque de metadatos con la licencia. No se ha publicado información sobre el pipeline de inferencia, los idiomas soportados, el tamaño del modelo ni el contexto máximo.
 
 El repositorio presenta cero descargas y cero interacciones (likes) en el momento de la consulta, y fue creado y actualizado el mismo día (28 de octubre de 2026), lo que sugiere una publicación reciente sin validación por parte de la comunidad. No hay evidencia pública de que el modelo haya sido entrenado, evaluado o documentado más allá del propio artefacto subido.
 
@@ -76,5 +76,5 @@ No disponible. Al desconocerse el tamaño, la arquitectura y las capacidades del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/123Cyber/sok-dara-99
+- Repositorio en Hugging Face: https://huggingface.co/123Cyber/sok-dara-99
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA (PEFT) denominado `benchmark-slm-fiven-gemma-2-2b-raft`, publicado por `praiselab-picuslab` y construido sobre el modelo base `google/gemma-2-2b`. No es un modelo completo con pesos independientes, sino un conjunto de pesos de adaptación en formato safetensors (0,1 GB) que debe cargarse junto con el modelo base. La ficha de HuggingFace no incluye model card, resultados de evaluación ni detalles del procedimiento de entrenamiento.
+Este repositorio contiene un adaptador LoRA (PEFT) denominado `benchmark-slm-fiven-gemma-2-2b-raft`, publicado por `praiselab-picuslab` y construido sobre el modelo base `google/gemma-2-2b`. No es un modelo completo con pesos independientes, sino un conjunto de pesos de adaptación en formato safetensors (0,1 GB) que debe cargarse junto con el modelo base. La ficha de Hugging Face no incluye model card, resultados de evaluación ni detalles del procedimiento de entrenamiento.
 
-El nombre y las etiquetas sitúan el artefacto en el ámbito de la evaluación de modelos de lenguaje pequeños (`benchmark-slm`), con un conjunto de datos denominado Fiven y una estrategia de entrenamiento etiquetada como RAFT. El único idioma declarado es el italiano (`it`) y el acceso está restringido: requiere aceptar condiciones en HuggingFace. En el momento de la consulta registra 0 descargas y 0 me gusta, lo que indica que no ha sido validado por la comunidad.
+El nombre y las etiquetas sitúan el artefacto en el ámbito de la evaluación de modelos de lenguaje pequeños (`benchmark-slm`), con un conjunto de datos denominado Fiven y una estrategia de entrenamiento etiquetada como RAFT. El único idioma declarado es el italiano (`it`) y el acceso está restringido: requiere aceptar condiciones en Hugging Face. En el momento de la consulta registra 0 descargas y 0 me gusta, lo que indica que no ha sido validado por la comunidad.
 
 Su relevancia es, por tanto, experimental y de reproducibilidad: puede servir para estudiar adaptaciones LoRA sobre Gemma 2 2B y para comparar estrategias de ajuste en italiano, pero no dispone de información pública suficiente para justificar un uso en producción.
 
@@ -22,7 +22,7 @@ Su relevancia es, por tanto, experimental y de reproducibilidad: puede servir pa
 | Formato de pesos | safetensors (pesos de adaptador LoRA/PEFT) |
 | Librería | `peft` |
 | Tamaño del repositorio | 0,1 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / me gusta | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -48,7 +48,7 @@ Las etiquetas indican la estrategia `strategy-raft` y el dataset `dataset-fiven`
 - Evaluación comparativa de adaptadores: al compartir el mismo modelo base, este adaptador puede emplearse como una de varias ramas en un estudio controlado sobre estrategias de ajuste, manteniendo constante el base y variando únicamente los pesos LoRA.
 - Pruebas de fusión y cuantización: sirve para medir la degradación que introduce la fusión del adaptador con el base y su posterior conversión a GGUF o a formatos de 8 y 4 bits en un pipeline de validación.
 - Docencia y formación en PEFT: es un ejemplo real, aunque poco documentado, de artefacto LoRA sobre un modelo abierto, útil para prácticas de carga con `transformers` y `peft`, inspección de pesos y comparación de configuraciones.
-- Auditoría de reproducibilidad: permite estudiar cómo se publican artefactos restringidos sin model card ni licencia explícita, y sirve como caso de análisis para políticas de publicación de adaptadores en HuggingFace.
+- Auditoría de reproducibilidad: permite estudiar cómo se publican artefactos restringidos sin model card ni licencia explícita, y sirve como caso de análisis para políticas de publicación de adaptadores en Hugging Face.
 - Generación de texto en italiano en entorno controlado: puede utilizarse en experimentos de laboratorio con prompts en italiano, pero no se recomienda su despliegue en atención al cliente ni en producción sin una evaluación previa de calidad, sesgos y seguridad.
 
 ## Benchmarks y rendimiento
@@ -62,14 +62,14 @@ No se han publicado resultados de benchmarks en la información disponible. Tamp
 - Estimación orientativa en 8 bits: aproximadamente 2-3 GB; en 4 bits: aproximadamente 1,5-2 GB. Son cálculos a partir del tamaño nominal, no mediciones publicadas.
 - Cabe en GPU de consumo como RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB o RTX 4090; no requiere A100 ni H100 para inferencia básica.
 - Despliegue posible con `transformers` + `peft` para cargar el adaptador, con vLLM si se soporta LoRA sobre el base, o tras fusión y conversión a GGUF con llama.cpp u Ollama. TGI es otra opción si se configura el adaptador sobre el base.
-- No se dispone de datos de latencia ni de throughput. El acceso restringido exige autenticación con un token de HuggingFace que tenga permisos sobre el repositorio.
+- No se dispone de datos de latencia ni de throughput. El acceso restringido exige autenticación con un token de Hugging Face que tenga permisos sobre el repositorio.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este adaptador (`benchmark-slm-fiven-gemma-2-2b-raft`) | No declarados; adaptador LoRA sobre base de 2B nominal | No disponible | Sin benchmarks publicados | No disponible | Restringido (gated), 0 descargas |
-| `google/gemma-2-2b` (modelo base) | 2B nominal según el identificador | No disponible en la información proporcionada | No disponible | No disponible | Público en HuggingFace, no verificado en esta ficha |
+| `google/gemma-2-2b` (modelo base) | 2B nominal según el identificador | No disponible en la información proporcionada | No disponible | No disponible | Público en Hugging Face, no verificado en esta ficha |
 | Otros adaptadores LoRA para Gemma 2 2B | No disponible | No disponible | No disponible | No disponible | No identificados en la información proporcionada |
 
 No se han identificado en la información proporcionada alternativas públicas directamente comparables con documentación verificable. La comparación con el modelo base es estructural, no de rendimiento.
@@ -90,6 +90,6 @@ No se han identificado en la información proporcionada alternativas públicas d
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-2-2b-raft
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-2-2b-raft
 - Modelo base referenciado: https://huggingface.co/google/gemma-2-2b
 - No se han encontrado enlaces relevantes en la búsqueda web proporcionada; los resultados devueltos corresponden a páginas de LinkedIn sin relación con el modelo. No se dispone de paper, blog, repositorio de código ni demo adicionales.

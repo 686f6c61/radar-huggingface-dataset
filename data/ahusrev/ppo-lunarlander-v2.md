@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ahusrev/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo Proximal Policy Optimization (PPO) sobre el entorno LunarLander-v2 de Gymnasium, publicado en HuggingFace Hub por el usuario ahusrev. No se trata de un modelo de lenguaje ni de un transformer generativo, sino de una política neuronal que controla el aterrizaje de un modulo lunar en un simulador fisico 2D. El modelo se distribuye como un artefacto de la libreria `stable-baselines3`, lo que implica que su uso esta ligado al ecosistema de SB3 y a la API de Gymnasium.
+`ahusrev/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo Proximal Policy Optimization (PPO) sobre el entorno LunarLander-v2 de Gymnasium, publicado en Hugging Face Hub por el usuario ahusrev. No se trata de un modelo de lenguaje ni de un transformer generativo, sino de una política neuronal que controla el aterrizaje de un modulo lunar en un simulador fisico 2D. El modelo se distribuye como un artefacto de la libreria `stable-baselines3`, lo que implica que su uso esta ligado al ecosistema de SB3 y a la API de Gymnasium.
 
 El interes de este tipo de publicaciones es fundamentalmente didactico y de referencia: sirve como ejemplo reproducible de un pipeline de RL (entrenamiento, evaluacion y publicacion en el Hub) y como punto de partida para experimentar con PPO, ajustar hiperparametros o comparar variantes de recompensa. El autor declara una recompensa media de 251,99 +/- 20,80 en la evaluacion sobre LunarLander-v2, un valor que supera el umbral habitual de resolucion del entorno (200 puntos) y que indica que la politica ha convergido.
 
@@ -71,10 +71,10 @@ No se han publicado otros resultados de benchmarks en la informacion disponible 
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| ahusrev/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible | no aplica | mean_reward 251,99 +/- 20,80 | no disponible | HuggingFace Hub |
+| ahusrev/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible | no aplica | mean_reward 251,99 +/- 20,80 | no disponible | Hugging Face Hub |
 | Agentes PPO de referencia en SB3 RL Zoo | PPO | LunarLander-v2 | no disponible | no aplica | no disponible en esta ficha | MIT (codigo SB3) | GitHub / RL Zoo |
-| Agentes A2C en LunarLander-v2 | A2C | LunarLander-v2 | no disponible | no aplica | no disponible en esta ficha | no disponible | HuggingFace Hub (multiples autores) |
-| Agentes DQN en LunarLander-v2 | DQN | LunarLander-v2 | no disponible | no aplica | no disponible en esta ficha | no disponible | HuggingFace Hub (multiples autores) |
+| Agentes A2C en LunarLander-v2 | A2C | LunarLander-v2 | no disponible | no aplica | no disponible en esta ficha | no disponible | Hugging Face Hub (multiples autores) |
+| Agentes DQN en LunarLander-v2 | DQN | LunarLander-v2 | no disponible | no aplica | no disponible en esta ficha | no disponible | Hugging Face Hub (multiples autores) |
 
 No se dispone de datos verificados de rendimiento de las alternativas en la informacion proporcionada; la comparacion se limita a categoria y disponibilidad.
 
@@ -91,7 +91,7 @@ No se dispone de datos verificados de rendimiento de las alternativas en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahusrev/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/ahusrev/ppo-LunarLander-v2
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Documentacion de stable-baselines3: https://stable-baselines3.readthedocs.io/
 - Utilidad huggingface_sb3: https://github.com/huggingface/huggingface_sb3

@@ -23,7 +23,7 @@ Su relevancia practica esta en la combinacion de tamano total grande con activac
 
 ## Arquitectura y entrenamiento
 
-Se trata de un transformer con capas mixture-of-experts, identificado en HuggingFace con el tag de arquitectura `lfm2_moe`. La familia LFM2.5 de Liquid AI abarca desde 230M hasta 24B parametros, y este modelo es el mayor y el ultimo de la familia segun el blog del fabricante. El modelo base del que deriva esta exportacion es `lq-preview/LFM2.5-24B-A2B-Preview`, fijado en la revision `f772950ce6f17d35af5469d00334b61a9c2fc034`. No se dispone, en la informacion proporcionada, del numero de tokens de entrenamiento, de la composicion del dataset ni del detalle de las etapas de alineacion (RLHF, DPO u otras).
+Se trata de un transformer con capas mixture-of-experts, identificado en Hugging Face con el tag de arquitectura `lfm2_moe`. La familia LFM2.5 de Liquid AI abarca desde 230M hasta 24B parametros, y este modelo es el mayor y el ultimo de la familia segun el blog del fabricante. El modelo base del que deriva esta exportacion es `lq-preview/LFM2.5-24B-A2B-Preview`, fijado en la revision `f772950ce6f17d35af5469d00334b61a9c2fc034`. No se dispone, en la informacion proporcionada, del numero de tokens de entrenamiento, de la composicion del dataset ni del detalle de las etapas de alineacion (RLHF, DPO u otras).
 
 La innovacion relevante desde el punto de vista del despliegue es el enrutamiento disperso: con ~24B de parametros totales y ~2B activos por token, el coste de computo por token se aproxima al de un modelo mucho mas pequeno, mientras que la huella en memoria sigue siendo la del modelo completo. La model card del fabricante indica ademas que el modelo razona antes de responder y que soporta llamada a herramientas y tareas multi-paso dentro de frameworks de agentes.
 
@@ -84,7 +84,7 @@ Como referencia cualitativa, LFM2.5-24B-A2B tambien esta disponible a traves de 
 - La cuantizacion a 8 bits puede introducir degradacion respecto al modelo original en BF16. No se ha publicado ninguna evaluacion comparativa de calidad entre ambos.
 - Limites de contexto: aunque la configuracion declara 131.072 tokens, no se ha publicado ningun benchmark de contexto largo para esta conversion; las pruebas realizadas son generaciones cortas.
 - Idioma: los diez idiomas listados estan declarados, pero no se detalla el nivel de competencia por idioma ni el volumen de datos de entrenamiento en cada uno.
-- Licencia: se aplica la LFM Open License v1.0 (etiquetada como `other` en HuggingFace). Es una licencia propia de Liquid AI, no una licencia permisiva estandar, por lo que es imprescindible revisar el fichero LICENSE antes de cualquier uso comercial.
+- Licencia: se aplica la LFM Open License v1.0 (etiquetada como `other` en Hugging Face). Es una licencia propia de Liquid AI, no una licencia permisiva estandar, por lo que es imprescindible revisar el fichero LICENSE antes de cualquier uso comercial.
 - Atribucion: los pesos originales son de Liquid AI, Inc. y la licencia original se incluye y aplica a estos pesos; las modificaciones de conversion y cuantizacion se describen en el fichero NOTICE.
 - Requisito de prompt: es obligatorio usar la plantilla de chat incluida; el modelo genera razonamiento antes de la respuesta, de modo que un limite de tokens de salida demasiado bajo puede truncar la respuesta antes de que llegue a la conclusion.
 - Naturaleza de la verificacion: el autor indica que solo se hicieron pruebas de humo, no una evaluacion completa de calidad ni de contexto largo.
@@ -92,11 +92,11 @@ Como referencia cualitativa, LFM2.5-24B-A2B tambien esta disponible a traves de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-8bit
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-8bit
 - Copia identica en mlx-community: https://huggingface.co/mlx-community/LFM2.5-24B-A2B-Preview-8bit
 - Modelo base: https://huggingface.co/lq-preview/LFM2.5-24B-A2B-Preview
 - Blog de Liquid AI sobre LFM2.5-24B-A2B: https://www.liquid.ai/blog/lfm2-5-24b-a2b
-- Blog en HuggingFace de Liquid AI: https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b
+- Blog en Hugging Face de Liquid AI: https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b
 - Pagina de modelos de Liquid AI: https://www.liquid.ai/models
 - Repositorio de MLX-VLM: https://github.com/Blaizzy/mlx-vlm
 - Pull request de soporte LFM2.5 en MLX-VLM: https://github.com/Blaizzy/mlx-vlm/pull/2505

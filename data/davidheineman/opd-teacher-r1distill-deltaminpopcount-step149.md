@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| davidheineman/opd-teacher-R1Distill-DeltaMinPopcount-step149 | 1,78B | no disponible | no disponible | no disponible | HuggingFace |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (modelo base) | 1,78B | no disponible en la informacion | no disponible | no disponible | HuggingFace |
-| davidheineman/opd-teacher-Q2.5I-DeltaMinPopcount-step149 | ~1,5B | no disponible | no disponible | no disponible | HuggingFace / Featherless |
+| davidheineman/opd-teacher-R1Distill-DeltaMinPopcount-step149 | 1,78B | no disponible | no disponible | no disponible | Hugging Face |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (modelo base) | 1,78B | no disponible en la informacion | no disponible | no disponible | Hugging Face |
+| davidheineman/opd-teacher-Q2.5I-DeltaMinPopcount-step149 | ~1,5B | no disponible | no disponible | no disponible | Hugging Face / Featherless |
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/opd-teacher-R1Distill-DeltaMinPopcount-step149
+- Hugging Face: https://huggingface.co/davidheineman/opd-teacher-R1Distill-DeltaMinPopcount-step149
 - Coleccion RLVE OPD Teachers: https://huggingface.co/collections/davidheineman/rlve-opd-teachers
 - Perfil del autor: https://huggingface.co/davidheineman
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B

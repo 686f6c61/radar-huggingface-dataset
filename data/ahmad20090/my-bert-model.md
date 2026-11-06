@@ -82,7 +82,7 @@ La comparación con `distilbert-base-uncased` es relevante porque comparte arqui
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ahmad20090/my-bert-model
+- Hugging Face: https://huggingface.co/ahmad20090/my-bert-model
 - Paper de DistilBERT (arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Repositorio oficial de DistilBERT en Hugging Face: https://huggingface.co/distilbert-base-uncased
 - Guía de BERT con código (Towards Data Science): https://towardsdatascience.com/a-complete-guide-to-bert-with-code-9f87602e4a11/

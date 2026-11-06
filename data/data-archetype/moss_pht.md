@@ -2,7 +2,7 @@
 
 ## Resumen
 
-moss_pht es un ajuste fino (fine-tune) completo y orientado a fotografía realista del modelo de generación de imágenes MOSS-Image-Base, publicado por el usuario data-archetype en HuggingFace. Se trata de un modelo de texto a imagen construido sobre la arquitectura de difusión de MOSS-Image, que emplea como codificador de texto Qwen3.5-9B y un VAE decodificador pequeño derivado de FLUX.2. El repositorio solo incluye el transformer del modelo de difusión (unos 5.082 millones de parámetros, 20,3 GB), ya que el resto de componentes se reutilizan sin cambios del modelo base.
+moss_pht es un ajuste fino (fine-tune) completo y orientado a fotografía realista del modelo de generación de imágenes MOSS-Image-Base, publicado por el usuario data-archetype en Hugging Face. Se trata de un modelo de texto a imagen construido sobre la arquitectura de difusión de MOSS-Image, que emplea como codificador de texto Qwen3.5-9B y un VAE decodificador pequeño derivado de FLUX.2. El repositorio solo incluye el transformer del modelo de difusión (unos 5.082 millones de parámetros, 20,3 GB), ya que el resto de componentes se reutilizan sin cambios del modelo base.
 
 Su relevancia radica en ofrecer una variante ligera y especializada en fotografía dentro del ecosistema MOSS-Image, compatible tanto con la librería Diffusers como con ComfyUI. El entrenamiento se ha realizado con un optimizador híbrido poco habitual (dionw, que combina Dion/NorMuon con AdamW), 12.500 pasos a 64 imágenes por paso y resolución de aproximadamente 1 megapíxel. Está publicado bajo licencia Apache 2.0, lo que permite su uso comercial sin restricciones.
 

@@ -95,7 +95,7 @@ El autor recomienda explícitamente usar `gemma-4-e4b-it-8bit` para presupuestos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheDrainFlorist/gemma-4-26b-a4b-it-VQ-6.2bpw
+- Modelo en Hugging Face: https://huggingface.co/TheDrainFlorist/gemma-4-26b-a4b-it-VQ-6.2bpw
 - Coleccion de VQ de gemma-4 para Apple Silicon: https://huggingface.co/collections/TheDrainFlorist/gemma-4-vq-apple-silicon
 - Modelo base de Google: https://huggingface.co/google/gemma-4-26b-a4b-it
 - Pagina oficial de Gemma 4 (DeepMind): https://deepmind.google/models/gemma/gemma-4/

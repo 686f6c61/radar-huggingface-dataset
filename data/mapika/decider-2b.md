@@ -96,8 +96,8 @@ No se dispone de datos de benchmarks ni de evaluaciones comparativas publicadas 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Estado |
 |---|---|---|---|---|---|
-| Mapika/decider-2b | 1,9B | hasta 32k tokens (estado + preguntas) | Decisión/clasificación con opciones, salida probabilística en una pasada | Apache 2.0 | Publicado en HuggingFace (111 descargas, 10 likes) |
-| Qwen/Qwen3.5-2B-Base | ~1,9B | no disponible | Modelo base generativo | no disponible en la informacion proporcionada | Publicado en HuggingFace (referenciado como base) |
+| Mapika/decider-2b | 1,9B | hasta 32k tokens (estado + preguntas) | Decisión/clasificación con opciones, salida probabilística en una pasada | Apache 2.0 | Publicado en Hugging Face (111 descargas, 10 likes) |
+| Qwen/Qwen3.5-2B-Base | ~1,9B | no disponible | Modelo base generativo | no disponible en la informacion proporcionada | Publicado en Hugging Face (referenciado como base) |
 | Alternativas de clasificación con LLM generativo | no disponible | no disponible | Generación de etiqueta + validación de esquema | no disponible | no disponible |
 | Alternativas de enrutado tipo "System One" | no disponible | no disponible | Decisión de una pasada | no disponible | no disponible |
 
@@ -120,7 +120,7 @@ El autor menciona la API Jev de TypeSafe (`POST /v1/systemone`) como el servicio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mapika/decider-2b
+- Modelo en Hugging Face: https://huggingface.co/Mapika/decider-2b
 - Modelo base Qwen/Qwen3.5-2B-Base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Paquete de inferencia incluido en el repositorio: carpeta `decider/` del propio repositorio (clases `Decider`, `decider.serve`, módulo `decider/prompt.py`)
 - Los resultados de la búsqueda web realizada no contienen ningún enlace relevante al modelo, a su paper ni a repositorios asociados; no se dispone de URL de paper, blog técnico ni demo.

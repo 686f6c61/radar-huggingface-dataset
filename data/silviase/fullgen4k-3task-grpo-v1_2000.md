@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FullGen4K-3Task-GRPO-v1_2000 es un ajuste fino de parametros completos (full-parameter) del modelo base Qwen/Qwen3.5-2B, publicado por el usuario Silviase en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text orientado a tres tareas concretas: OCR de imagen completa, seleccion de evidencia (evidence selection) y respuesta a preguntas visuales (visual question answering). El entrenamiento se realizo con GRPO (Group Relative Policy Optimization) sobre 3.500 imagenes de entrenamiento y 10.500 entradas de tarea, con una mezcla 1:1:1 entre las tres tareas.
+FullGen4K-3Task-GRPO-v1_2000 es un ajuste fino de parametros completos (full-parameter) del modelo base Qwen/Qwen3.5-2B, publicado por el usuario Silviase en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text orientado a tres tareas concretas: OCR de imagen completa, seleccion de evidencia (evidence selection) y respuesta a preguntas visuales (visual question answering). El entrenamiento se realizo con GRPO (Group Relative Policy Optimization) sobre 3.500 imagenes de entrenamiento y 10.500 entradas de tarea, con una mezcla 1:1:1 entre las tres tareas.
 
 El checkpoint corresponde al paso de optimizador 2000, segun la propia model card, y se distribuye como checkpoint nativo sellado en formato safetensors con 2.213.241.664 parametros totales (aproximadamente 2,21 mil millones), lo que lo situa en la gama de modelos pequenos aptos para inferencia en GPU de consumo. El repositorio ocupa 8,9 GB.
 
@@ -75,8 +75,8 @@ Solo se dispone de datos verificados del modelo base declarado. No se han propor
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FullGen4K-3Task-GRPO-v1_2000 | 2,21 B (verificado en safetensors) | no disponible | Apache-2.0 | HuggingFace, autor Silviase |
-| Qwen/Qwen3.5-2B (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| FullGen4K-3Task-GRPO-v1_2000 | 2,21 B (verificado en safetensors) | no disponible | Apache-2.0 | Hugging Face, autor Silviase |
+| Qwen/Qwen3.5-2B (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Alternativas de OCR/VQA de gama ~2-4 B | no disponible | no disponible | no disponible | no disponible |
 
 No se han proporcionado resultados de benchmarks de ninguno de estos modelos, de modo que no es posible establecer una comparacion cuantitativa de rendimiento.
@@ -97,7 +97,7 @@ No se han proporcionado resultados de benchmarks de ninguno de estos modelos, de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Silviase/FullGen4K-3Task-GRPO-v1_2000
+- Modelo en Hugging Face: https://huggingface.co/Silviase/FullGen4K-3Task-GRPO-v1_2000
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Commit del checkpoint base: `15852e8c16360a2fea060d615a32b45270f8a8fc`
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/silviase/jasset/runs/fullgen4k-3task-grpo-v1

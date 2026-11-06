@@ -95,6 +95,6 @@ No se han publicado comparaciones con otros fine-tunes de clasificación de sent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/microsoft/Sentiment-Analysis-7B
+- Modelo en Hugging Face: https://huggingface.co/microsoft/Sentiment-Analysis-7B
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Resultados de búsqueda web: solo devolvieron páginas corporativas genéricas de Microsoft (microsoft.com, account.microsoft.com, support.microsoft.com), sin documentación técnica, paper ni repositorio asociados al modelo. No se han encontrado demos, blogs ni publicaciones adicionales.

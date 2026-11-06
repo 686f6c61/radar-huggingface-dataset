@@ -2,7 +2,7 @@
 
 ## Resumen
 
-H.ai 2.6 Reinforced (Extend Flash) es un modelo de generacion de texto y chat en chino desarrollado por Horn.Studio, publicado en HuggingFace como espejo del repositorio oficial en ModelScope. Se trata de un ajuste fino (post-entrenamiento) sobre Qwen/Qwen3.5-9B, un modelo denso de aproximadamente 9.000 millones de parametros, distribuido exclusivamente en formato GGUF bajo licencia Apache 2.0. La variante "Reinforced" (lote 0913) mejora la consistencia de personaje y la capacidad matematica respecto a la version anterior Hai-2.6 Flash (lote 0829).
+H.ai 2.6 Reinforced (Extend Flash) es un modelo de generacion de texto y chat en chino desarrollado por Horn.Studio, publicado en Hugging Face como espejo del repositorio oficial en ModelScope. Se trata de un ajuste fino (post-entrenamiento) sobre Qwen/Qwen3.5-9B, un modelo denso de aproximadamente 9.000 millones de parametros, distribuido exclusivamente en formato GGUF bajo licencia Apache 2.0. La variante "Reinforced" (lote 0913) mejora la consistencia de personaje y la capacidad matematica respecto a la version anterior Hai-2.6 Flash (lote 0829).
 
 El modelo no esta orientado a tareas generales de proposito multiple, sino a un caso de uso muy concreto: asistente conversacional paciente y didactico, con tutoria de materias de secundaria china (redaccion, matematicas, ingles, fisica, quimica, politica), role-play y acompanamiento emocional. Mantiene la ventana de contexto de 262.000 tokens del modelo base y conserva las etiquetas `think` aunque se describe como un modelo de CoT no-thinking por defecto.
 
@@ -95,7 +95,7 @@ La comparacion mas significativa es dentro de la propia familia H.ai, ya que tod
 
 | Modelo | Base | Parametros aprox. | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| H.ai 2.6 Reinforced (Extend Flash) | Qwen3.5-9B | ~9B | 262K | GGUF | Apache 2.0 | HuggingFace (espejo) + ModelScope |
+| H.ai 2.6 Reinforced (Extend Flash) | Qwen3.5-9B | ~9B | 262K | GGUF | Apache 2.0 | Hugging Face (espejo) + ModelScope |
 | H.ai 2.6 Flash (0829) | Qwen3.5-9B | ~9B | no disponible | GGUF | Apache 2.0 | ModelScope |
 | H.ai 2.5 (0829) | Qwen3.5-27B | ~27B | no disponible | GGUF | Apache 2.0 | ModelScope |
 | H.ai 2.0 (0812) | Qwen3.5-27B | ~27B | no disponible | GGUF | Apache 2.0 | ModelScope |
@@ -111,12 +111,12 @@ Frente a Hai-2.6 Flash, esta version mejora consistencia de personaje y matemát
 - Contexto: aunque la ventana teorica es de 262K tokens, el ejemplo oficial de uso en Python configura `n_ctx=8192`. Un contexto efectivo muy alto incrementa mucho el consumo de memoria KV y no hay datos publicados sobre degradacion con contextos largos.
 - Licencia: Apache 2.0 permite uso comercial, pero el modelo deriva de Qwen3.5-9B y conviene verificar las condiciones del modelo base antes de explotarlo comercialmente.
 - Riesgo de seguridad: la tecnica de abliteration seguida de restauracion de guardarrailes no es un estandar consolidado. Una tasa de rechazo de 95/100 implica que aproximadamente 5 de cada 100 peticiones problematicas no fueron rechazadas en la evaluacion interna del autor.
-- Repositorio de procedencia: la publicacion principal es ModelScope; el repositorio de HuggingFace es un espejo. Con 0 descargas y 1 like en HuggingFace, la adopcion externa verificable es practicamente nula y no hay reportes independientes de calidad.
-- Sin pipeline declarado en HuggingFace y sin soporte documentado para motores de serving de alto rendimiento (vLLM, TGI), lo que limita su uso en despliegues de produccion concurrentes.
+- Repositorio de procedencia: la publicacion principal es ModelScope; el repositorio de Hugging Face es un espejo. Con 0 descargas y 1 like en Hugging Face, la adopcion externa verificable es practicamente nula y no hay reportes independientes de calidad.
+- Sin pipeline declarado en Hugging Face y sin soporte documentado para motores de serving de alto rendimiento (vLLM, TGI), lo que limita su uso en despliegues de produccion concurrentes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Horn-Stusio/Hai-2.6-Flash-Extend-Release-0913-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Horn-Stusio/Hai-2.6-Flash-Extend-Release-0913-GGUF
 - Repositorio oficial en ModelScope: https://www.modelscope.cn/models/HornStudio/Hai-2.6-Flash-Extend-Release-0913-GGUF
 - Perfil del autor en ModelScope: https://www.modelscope.cn/profile/HornStudio
 - Version anterior Hai-2.6 Flash (0829): https://www.modelscope.cn/models/HornStudio/Hai-2.6-Flash-Release-0829-GGUF

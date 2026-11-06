@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks adicionales en la información disp
 - Estimación de VRAM: en float32, el peso ocupa aproximadamente 108 MB (27 M × 4 bytes). Con cuantización int8, la huella se reduce a unos 27 MB.
 - Puede ejecutarse en GPUs de gama baja (ej. NVIDIA GTX 1650, RTX 3050) e incluso en CPU de gama media, aunque la latencia será mayor.
 - Para uso en borde, se recomienda hardware como Raspberry Pi 4/5, teléfonos con NPU o microcontroladores con suficiente RAM.
-- Opciones de despliegue: la librería `transformers` de HuggingFace, así como la biblioteca propia de Moonshine (que sirve un paquete `.ort` int8). No se menciona compatibilidad con vLLM, Ollama ni llama.cpp.
+- Opciones de despliegue: la librería `transformers` de Hugging Face, así como la biblioteca propia de Moonshine (que sirve un paquete `.ort` int8). No se menciona compatibilidad con vLLM, Ollama ni llama.cpp.
 - La latencia de streaming no está especificada numéricamente, pero el diseño con ventanas deslizantes apunta a menos de 100 ms de lookahead.
 
 ## Comparativa con modelos similares
@@ -84,8 +84,8 @@ No se dispone de datos de comparación directa con otros modelos en la informaci
 
 ## Enlaces
 
-- [HuggingFace - moonshine-ai/moonshine-streaming-tiny-zh](https://huggingface.co/moonshine-ai/moonshine-streaming-tiny-zh)
-- [HuggingFace - moonshine-ai/moonshine-streaming-tiny (versión base)](https://huggingface.co/moonshine-ai/moonshine-streaming-tiny)
-- [HuggingFace - moonshine-ai/moonshine-tiny-zh (versión no streaming)](https://huggingface.co/moonshine-ai/moonshine-tiny-zh)
+- [Hugging Face - moonshine-ai/moonshine-streaming-tiny-zh](https://huggingface.co/moonshine-ai/moonshine-streaming-tiny-zh)
+- [Hugging Face - moonshine-ai/moonshine-streaming-tiny (versión base)](https://huggingface.co/moonshine-ai/moonshine-streaming-tiny)
+- [Hugging Face - moonshine-ai/moonshine-tiny-zh (versión no streaming)](https://huggingface.co/moonshine-ai/moonshine-tiny-zh)
 - [GitHub - moonshine-ai/moonshine](https://github.com/moonshine-ai/moonshine)
 - [GitHub - moonshine-ai (organización)](https://github.com/moonshine-ai)

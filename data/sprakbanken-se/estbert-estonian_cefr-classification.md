@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EstBERT-estonian_CEFR-classification es un modelo BERT afinado para clasificar textos escritos en estonio por aprendices de segunda lengua según su nivel del Marco Común Europeo de Referencia (MCER/CEFR). Lo desarrolla el grupo Computational SLA de Språkbanken Text (Universidad de Gotemburgo), y lo comparte en HuggingFace Ricardo Muñoz Sánchez. Parte del modelo base tartuNLP/EstBERT, un BERT base entrenado específicamente para estonio, y se ha ajustado sobre la versión UniversalCEFR del corpus ELLE de estonio.
+EstBERT-estonian_CEFR-classification es un modelo BERT afinado para clasificar textos escritos en estonio por aprendices de segunda lengua según su nivel del Marco Común Europeo de Referencia (MCER/CEFR). Lo desarrolla el grupo Computational SLA de Språkbanken Text (Universidad de Gotemburgo), y lo comparte en Hugging Face Ricardo Muñoz Sánchez. Parte del modelo base tartuNLP/EstBERT, un BERT base entrenado específicamente para estonio, y se ha ajustado sobre la versión UniversalCEFR del corpus ELLE de estonio.
 
 El modelo resuelve una tarea concreta: asignar un nivel de competencia lingüística (de A2 a C1) a redacciones de aprendices. Es relevante para investigación en adquisición de segundas lenguas asistida por computación (SLA computacional) y para construir herramientas de retroalimentación formativa, pero no sustituye una evaluación humana certificada. Solo cubre cuatro niveles de la escala: excluye A1 y C2 por falta de datos de entrenamiento.
 
@@ -18,7 +18,7 @@ Con 124,4 millones de parámetros y una arquitectura transformer encoder de tipo
 | Longitud de contexto | no disponible (hereda la de tartuNLP/EstBERT; no especificada en la informacion proporcionada) |
 | Tipos de cuantizacion | no disponible (pesos safetensors en fp32; admite cuantizacion a int8 mediante herramientas externas) |
 | Idiomas soportados | estonio (et) |
-| Licencia | GPL-3.0 (segun la model card; el campo de licencia de HuggingFace figura como no disponible) |
+| Licencia | GPL-3.0 (segun la model card; el campo de licencia de Hugging Face figura como no disponible) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -56,16 +56,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia en fp32: aproximadamente 0,5 GB para los pesos (124 M de parámetros), más memoria para activaciones y batch; en la práctica cabe en cualquier GPU con 2 GB o más.
 - Cabe holgadamente en GPU de consumo: RTX 3060, RTX 4060, RTX 4090, GTX 1660, etc.
 - Funciona en CPU sin problemas para inferencia por lotes; es la opción recomendada para despliegues de bajo coste.
-- Opciones de despliegue: Transformers (PyTorch) con `AutoModelForSequenceClassification`, pipelines de HuggingFace, ONNX Runtime, o conversión a GGUF para llama.cpp/Ollama si se desea un binario ligero (no se proporcionan conversiones oficiales).
+- Opciones de despliegue: Transformers (PyTorch) con `AutoModelForSequenceClassification`, pipelines de Hugging Face, ONNX Runtime, o conversión a GGUF para llama.cpp/Ollama si se desea un binario ligero (no se proporcionan conversiones oficiales).
 - Latencia y throughput: no disponibles en la información proporcionada; por el tamaño del modelo, se espera un throughput alto en GPU y aceptable en CPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sprakbanken-se/estbert-estonian_CEFR-classification | 124,4 M | no disponible | Clasificación CEFR en estonio (A2-C1) | GPL-3.0 | HuggingFace |
-| tartuNLP/EstBERT | ~124 M (BERT base) | no disponible | Modelo base de estonio (encoder) | no disponible en la informacion proporcionada | HuggingFace |
-| Modelos CEFR multilingües de UniversalCEFR | no disponible | no disponible | Clasificación CEFR multilingüe | no disponible | HuggingFace (organización UniversalCEFR) |
+| sprakbanken-se/estbert-estonian_CEFR-classification | 124,4 M | no disponible | Clasificación CEFR en estonio (A2-C1) | GPL-3.0 | Hugging Face |
+| tartuNLP/EstBERT | ~124 M (BERT base) | no disponible | Modelo base de estonio (encoder) | no disponible en la informacion proporcionada | Hugging Face |
+| Modelos CEFR multilingües de UniversalCEFR | no disponible | no disponible | Clasificación CEFR multilingüe | no disponible | Hugging Face (organización UniversalCEFR) |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La comparación se limita a parámetros, tarea y licencia.
 
@@ -83,10 +83,10 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sprakbanken-se/estbert-estonian_CEFR-classification
+- Modelo en Hugging Face: https://huggingface.co/sprakbanken-se/estbert-estonian_CEFR-classification
 - Modelo base EstBERT: https://huggingface.co/tartuNLP/EstBERT
 - Dataset UniversalCEFR ELLE estonio: https://huggingface.co/datasets/UniversalCEFR/elle_et
 - Paper de referencia: https://aclanthology.org/2024.nlp4call-1.11/
 - Grupo Computational SLA de Språkbanken: https://spraakbanken.gu.se/en/projects/computational-sla
 - Språkbanken Text: https://spraakbanken.gu.se/en
-- Perfil del autor en HuggingFace: https://huggingface.co/rimusa
+- Perfil del autor en Hugging Face: https://huggingface.co/rimusa

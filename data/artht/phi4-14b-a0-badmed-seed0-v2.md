@@ -17,7 +17,7 @@ El repositorio tiene un tamaño de 3,7 GB, lo que indica que los pesos están cu
 | Tipos de cuantizacion | No disponible; el tamaño del repo (3,7 GB) sugiere cuantizacion de 4 bits (probablemente Q4_K_M o similar) |
 | Idiomas soportados | No disponible; Phi-4 base esta orientado principalmente al ingles, aunque puede generalizar a otros idiomas |
 | Licencia | No disponible en la model card; Phi-4 base usa licencia MIT, por lo que es probable que el fine-tune herede esta licencia |
-| Formato de pesos | Safetensors (indicado en los tags de HuggingFace) |
+| Formato de pesos | Safetensors (indicado en los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 

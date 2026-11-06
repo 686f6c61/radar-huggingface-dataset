@@ -18,7 +18,7 @@ El modelo está etiquetado para generación de texto, escritura creativa y conve
 | Longitud de contexto | no disponible en la documentacion; el comando de ejemplo del autor usa `-c 32768` |
 | Tipos de cuantizacion | Q6_K (167,6 GB) y Q8_0 (188,2 GB); existe ademas un repositorio hermano con cuantizaciones i1/imatrix |
 | Idiomas soportados | no disponible |
-| Licencia | gemma (etiqueta declarada en HuggingFace) |
+| Licencia | gemma (etiqueta declarada en Hugging Face) |
 | Formato de pesos | GGUF (llama.cpp) |
 | Modelo base | Qwen/Qwen3.8-Flash-Next (relacion declarada: quantized) |
 | Modelo fuente de la cuantizacion | cyberneurova/cyberneurova-Qwen3.8-Flash-Next |
@@ -26,8 +26,8 @@ El modelo está etiquetado para generación de texto, escritura creativa y conve
 | Libreria | llama.cpp |
 | Pipeline | text-generation |
 | Descargas / likes | 0 / 0 |
-| Fecha declarada de creacion | 16 de septiembre de 2026 (segun HuggingFace) |
-| Fecha declarada de actualizacion | 16 de septiembre de 2026 (segun HuggingFace) |
+| Fecha declarada de creacion | 16 de septiembre de 2026 (segun Hugging Face) |
+| Fecha declarada de actualizacion | 16 de septiembre de 2026 (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -90,7 +90,7 @@ La unica comparacion que puede hacerse con los datos disponibles es interna al p
 ## Limitaciones y advertencias
 
 - Inexistencia de datos verificables: no hay benchmarks, no hay informacion de arquitectura, no hay lista de idiomas y no hay documentacion del modelo base en las fuentes consultadas. Evaluar el modelo para produccion sin medirlo antes es un riesgo real.
-- Licencia `gemma`: la etiqueta declarada es la licencia Gemma, no Apache 2.0 ni MIT. Es una licencia con condiciones de uso, obligaciones de atribucion y restricciones especificas, y ademas resulta incoherente con un modelo cuyo nombre apunta a la familia Qwen. Antes de cualquier uso comercial hay que verificar la licencia real del modelo base y del modelo fuente, porque una etiqueta incorrecta en HuggingFace no exime de cumplir la licencia aplicable.
+- Licencia `gemma`: la etiqueta declarada es la licencia Gemma, no Apache 2.0 ni MIT. Es una licencia con condiciones de uso, obligaciones de atribucion y restricciones especificas, y ademas resulta incoherente con un modelo cuyo nombre apunta a la familia Qwen. Antes de cualquier uso comercial hay que verificar la licencia real del modelo base y del modelo fuente, porque una etiqueta incorrecta en Hugging Face no exime de cumplir la licencia aplicable.
 - Fechas anomales: las fechas declaradas de creacion y actualizacion (16 de septiembre de 2026) son posteriores a la fecha de consulta habitual, lo que sugiere metadatos poco fiables. Conviene tratarlos con cautela.
 - Cero traccion: 0 descargas y 0 likes. No hay comunidad que haya validado los pesos, reportado errores de conversion ni confirmado que el GGUF cargue correctamente mas alla del ejemplo del autor.
 - Riesgo de alucinacion: no cuantificado. Al no haber evaluaciones publicadas, no se puede estimar la tasa de fabricacion de hechos, especialmente en tareas de recuperacion de conocimiento.
@@ -102,7 +102,7 @@ La unica comparacion que puede hacerse con los datos disponibles es interna al p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/spiritfather/cyberneurova-Qwen3.8-Flash-Next-GGUF
+- Repositorio Hugging Face: https://huggingface.co/spiritfather/cyberneurova-Qwen3.8-Flash-Next-GGUF
 - Cuantizaciones i1 (imatrix) del mismo autor: https://huggingface.co/spiritfather/cyberneurova-Qwen3.8-Flash-Next-i1-GGUF
 - Modelo fuente de la cuantizacion: https://huggingface.co/cyberneurova/cyberneurova-Qwen3.8-Flash-Next
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

@@ -70,11 +70,11 @@ Reconstrucción de documento individual sobre los mismos 45 documentos (run 1 an
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SeamNet (run 2) | Bi-encoder ConvNeXt-Tiny para matching de bordes | no disponible | no aplica | 0,89–0,90 top1_pooled; 99,65 % auto-join | MIT | HuggingFace |
+| SeamNet (run 2) | Bi-encoder ConvNeXt-Tiny para matching de bordes | no disponible | no aplica | 0,89–0,90 top1_pooled; 99,65 % auto-join | MIT | Hugging Face |
 | Ranca & Murray (2013) | Método clásico de reconstrucción de tiras | no aplica | no aplica | 23,2 % de páginas completas al 100 % | no disponible | Publicación académica |
 | Paixão et al. | Conjunto de datos y métodos de referencia para tiras reales | no aplica | no aplica | no disponible en la información proporcionada | no disponible | Dataset académico |
 
-No se dispone de datos suficientes para comparar con otros modelos de matching de bordes publicados en HuggingFace.
+No se dispone de datos suficientes para comparar con otros modelos de matching de bordes publicados en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ No se dispone de datos suficientes para comparar con otros modelos de matching d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LatentLobster/unshredder-seamnet
+- Modelo en Hugging Face: https://huggingface.co/LatentLobster/unshredder-seamnet
 - Repositorio del sistema unshredder: https://github.com/nikola-rahman/unshredder
 - Dataset de páginas PDF de entrenamiento: https://huggingface.co/datasets/pixparse/pdfa-eng-wds
 - Referencia académica Ranca & Murray (2013): no disponible como enlace en la información proporcionada

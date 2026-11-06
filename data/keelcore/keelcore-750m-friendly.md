@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KeelCore/KeelCore-750M-Friendly
+- Modelo en Hugging Face: https://huggingface.co/KeelCore/KeelCore-750M-Friendly
 - Modelo base: https://huggingface.co/KeelCore/KeelCore-750M
 - Informe tecnico: https://saravanan-a-r.github.io/KeelCore/
 - Repositorio GitHub: https://github.com/saravanan-a-r/KeelCore

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **qwen3.8-9b-hermes-fc-real-traces** (este) | 9.2B | 262.144 | Fine-tune QLoRA con trayectorias reales | Apache-2.0 | HuggingFace |
-| **qwen3.8-9b-hermes-function-calling-v1** (mismo autor) | no disponible | no disponible | Fine-tune para function calling (versión anterior) | no disponible | HuggingFace |
-| **qwen3.8-9b-hermes-function-calling-v2** (mismo autor) | no disponible | no disponible | Fine-tune para function calling (versión intermedia) | no disponible | HuggingFace |
-| **Empero/Qwen3.8-9B** (base) | 9.2B | 262.144 | Modelo base destilado de Qwen3.5 | Apache-2.0 | HuggingFace |
+| **qwen3.8-9b-hermes-fc-real-traces** (este) | 9.2B | 262.144 | Fine-tune QLoRA con trayectorias reales | Apache-2.0 | Hugging Face |
+| **qwen3.8-9b-hermes-function-calling-v1** (mismo autor) | no disponible | no disponible | Fine-tune para function calling (versión anterior) | no disponible | Hugging Face |
+| **qwen3.8-9b-hermes-function-calling-v2** (mismo autor) | no disponible | no disponible | Fine-tune para function calling (versión intermedia) | no disponible | Hugging Face |
+| **Empero/Qwen3.8-9B** (base) | 9.2B | 262.144 | Modelo base destilado de Qwen3.5 | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. La comparativa se limita a características declaradas.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-real-traces)
+- [Modelo en Hugging Face](https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-real-traces)
 - [Modelo base Empero/Qwen3.8-9B](https://huggingface.co/Empero/Qwen3.8-9B)
 - [Versión v1 del mismo autor](https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-function-calling-v1)
 - [Versión v2 del mismo autor](https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-function-calling-v2)

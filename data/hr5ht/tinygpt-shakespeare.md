@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hr5ht/tinygpt-shakespeare` es un modelo publicado en HuggingFace por el usuario hr5ht el 22 de octubre de 2026, con un repositorio de 0,1 GB. Por la denominación y el tamaño, todo apunta a un modelo GPT de pequeña escala entrenado sobre texto de Shakespeare, probablemente con fines educativos o de experimentación, pero la model card no aporta información verificable al respecto: no se declara pipeline, licencia, idiomas ni arquitectura.
+`hr5ht/tinygpt-shakespeare` es un modelo publicado en Hugging Face por el usuario hr5ht el 22 de octubre de 2026, con un repositorio de 0,1 GB. Por la denominación y el tamaño, todo apunta a un modelo GPT de pequeña escala entrenado sobre texto de Shakespeare, probablemente con fines educativos o de experimentación, pero la model card no aporta información verificable al respecto: no se declara pipeline, licencia, idiomas ni arquitectura.
 
 El repositorio no incluye metadatos técnicos públicos: cero descargas, un único "like" y una etiqueta (`region:us`) que solo indica la región de almacenamiento. No hay información sobre datos de entrenamiento, tokenizador, ventana de contexto ni proceso de alineación.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hr5ht/tinygpt-shakespeare | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| openai-community/gpt2 | 124 M | 1024 tokens | MIT | HuggingFace, ampliamente utilizado |
-| distilbert/distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace, muy extendido |
+| hr5ht/tinygpt-shakespeare | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| openai-community/gpt2 | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente utilizado |
+| distilbert/distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face, muy extendido |
 | karpathy/nanoGPT (implementacion de referencia) | configurable (10 M - 124 M) | configurable | MIT | GitHub, no es un modelo publicado |
 
 La comparacion es estructural: GPT-2 y DistilGPT-2 son los modelos pequenos de referencia con arquitectura y tokenizador documentados, mientras que de `tinygpt-shakespeare` no se conoce ni el numero de parametros ni el tokenizador. Cualquier eleccion entre ellos deberia basarse en una inspeccion directa del repositorio.
@@ -81,5 +81,5 @@ La comparacion es estructural: GPT-2 y DistilGPT-2 son los modelos pequenos de r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hr5ht/tinygpt-shakespeare
+- Repositorio en Hugging Face: https://huggingface.co/hr5ht/tinygpt-shakespeare
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

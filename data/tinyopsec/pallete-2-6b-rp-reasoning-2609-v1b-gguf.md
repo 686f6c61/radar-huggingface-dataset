@@ -18,7 +18,7 @@ No se ha publicado una model card detallada en el repositorio: no hay datos sobr
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_0, Q4_K_M, Q4_K_S, Q4_0, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
 | Idiomas soportados | No disponible |
-| Licencia | LFM Open License v1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | LFM Open License v1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (el modelo base original está en safetensors) |
 
 ## Arquitectura y entrenamiento
@@ -71,13 +71,13 @@ No hay datos de rendimiento comparables publicados para este modelo, por lo que 
 - Sesgos conocidos: no documentados; al ser un ajuste para roleplay a partir de un modelo base, puede heredar sesgos del modelo base y de los datos de destilación, que no están descritos.
 - Riesgo de alucinacion: no evaluado públicamente; el autor incluye explícitamente el aviso "Evaluate before use", lo que sugiere que no se ha validado para producción.
 - Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no están documentados en el repositorio; el modelo base LFM2.5-2.6B de Liquid AI soporta múltiples idiomas, pero el ajuste para RP puede degradar el rendimiento fuera de inglés.
-- Restricciones de licencia: la licencia es LFM Open License v1.0, etiquetada como "other" en HuggingFace; conviene revisar sus términos antes de cualquier uso comercial, ya que no es una licencia estándar permisiva.
+- Restricciones de licencia: la licencia es LFM Open License v1.0, etiquetada como "other" en Hugging Face; conviene revisar sus términos antes de cualquier uso comercial, ya que no es una licencia estándar permisiva.
 - Ausencia de benchmarks y de documentación detallada: no hay model card completa, datos de entrenamiento ni evaluaciones, lo que exige pruebas propias antes de cualquier despliegue serio.
 - Es la variante "B" de una destilación, lo que implica que pueden existir variantes alternativas con comportamiento distinto.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tinyopsec/Pallete-2.6B-RP-Reasoning-2609-v1b-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/Pallete-2.6B-RP-Reasoning-2609-v1b-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Modelo ajustado original (referenciado en la model card): https://huggingface.co/Indexnusrefather/Pallete-2.6B-RP-Reasoning-2609-v1b
-- Organización de Liquid AI en HuggingFace: https://huggingface.co/LiquidAI
+- Organización de Liquid AI en Hugging Face: https://huggingface.co/LiquidAI

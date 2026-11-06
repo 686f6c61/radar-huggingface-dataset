@@ -78,4 +78,4 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace: Noptus/numerai-weekly-v4](https://huggingface.co/Noptus/numerai-weekly-v4)
+- [Hugging Face: Noptus/numerai-weekly-v4](https://huggingface.co/Noptus/numerai-weekly-v4)

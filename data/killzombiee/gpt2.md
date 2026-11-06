@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`killzombiee/gpt2` es un repositorio de HuggingFace que replica los pesos del modelo GPT-2 small original de OpenAI (124 M de parametros segun la model card; 137.022.720 parametros contados en el fichero safetensors, diferencia atribuible al recuento con y sin embeddings atados). No es un modelo nuevo ni un fine-tuning: es una copia redistribuida por el usuario `killzombiee` de un modelo de 2019, sin descargas ni likes en el momento de la consulta y con fecha de creacion registrada como 2026-09-13.
+`killzombiee/gpt2` es un repositorio de Hugging Face que replica los pesos del modelo GPT-2 small original de OpenAI (124 M de parametros segun la model card; 137.022.720 parametros contados en el fichero safetensors, diferencia atribuible al recuento con y sin embeddings atados). No es un modelo nuevo ni un fine-tuning: es una copia redistribuida por el usuario `killzombiee` de un modelo de 2019, sin descargas ni likes en el momento de la consulta y con fecha de creacion registrada como 2026-09-13.
 
 El modelo resuelve el problema clasico de generacion de texto autocorregresiva en ingles: dado un prompt, predice el siguiente token de forma iterativa. Es un transformer decoder-only puro, sin instrucciones, sin RLHF y sin modo conversacional, por lo que su uso realista hoy es el fine-tuning sobre tareas concretas, la extraccion de caracteristicas y la experimentacion docente, no el despliegue como asistente.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | killzombiee/gpt2 (este repo) | 137 M (124 M declarados) | 1024 | en | MIT | copia no oficial, 0 descargas |
-| openai-community/gpt2 | 124 M | 1024 | en | MIT | repositorio oficial de referencia en HuggingFace |
+| openai-community/gpt2 | 124 M | 1024 | en | MIT | repositorio oficial de referencia en Hugging Face |
 | distilgpt2 | 82 M | 1024 | en | Apache 2.0 | destilado de GPT-2, mas rapido y algo peor en calidad |
 | gpt2-medium | 355 M | 1024 | en | MIT | version intermedia de la familia GPT-2 |
 | Pythia-160M (EleutherAI) | 160 M | 2048 | en | Apache 2.0 | checkpoint de investigacion con datos de entrenamiento publicos |
@@ -96,12 +96,12 @@ Nota: los datos de parametros, contexto y licencia de los modelos comparados pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/killzombiee/gpt2
+- Repositorio en Hugging Face: https://huggingface.co/killzombiee/gpt2
 - Repositorio oficial de referencia: https://huggingface.co/openai-community/gpt2
 - Paper original de GPT-2 (Language Models are Unsupervised Multitask Learners): https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
 - Anuncio de OpenAI: https://openai.com/blog/better-language-models/
 - Model card original de OpenAI en GitHub: https://github.com/openai/gpt-2/blob/master/model_card.md
-- Demo de generacion de GPT-2 en HuggingFace: https://transformer.huggingface.co/doc/gpt2-large
+- Demo de generacion de GPT-2 en Hugging Face: https://transformer.huggingface.co/doc/gpt2-large
 - Repositorio de codigo de GPT-2 (OpenAI): https://github.com/openai/gpt-2
 - Modelos GPT-2 relacionados: https://huggingface.co/gpt2-large, https://huggingface.co/gpt2-medium, https://huggingface.co/gpt2-xl
 - Resultados de busqueda web: no se ha recuperado ningun enlace relevante sobre el modelo; los resultados devueltos corresponden a paginas de ayuda de Google Translate sin relacion con esta ficha.

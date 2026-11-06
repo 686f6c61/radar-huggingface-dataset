@@ -70,8 +70,8 @@ No disponible. Al no existir especificaciones técnicas del modelo, no es posibl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-adb19c86d4d2
-- Repositorio HuggingFace similar (tds-ga8-carbon-6ce1163ef72f): https://huggingface.co/bobtehbuilder/tds-ga8-carbon-6ce1163ef72f
-- Repositorio HuggingFace similar (tds-ga8-carbon-f5ad34f6f655): https://huggingface.co/bobtehbuilder/tds-ga8-carbon-f5ad34f6f655
+- Repositorio Hugging Face: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-adb19c86d4d2
+- Repositorio Hugging Face similar (tds-ga8-carbon-6ce1163ef72f): https://huggingface.co/bobtehbuilder/tds-ga8-carbon-6ce1163ef72f
+- Repositorio Hugging Face similar (tds-ga8-carbon-f5ad34f6f655): https://huggingface.co/bobtehbuilder/tds-ga8-carbon-f5ad34f6f655
 - GitHub (22f3001797/tds-ga8): https://github.com/22f3001797/tds-ga8
 - GitHub (llEclipsell/tds-ga8): https://github.com/llEclipsell/tds-ga8

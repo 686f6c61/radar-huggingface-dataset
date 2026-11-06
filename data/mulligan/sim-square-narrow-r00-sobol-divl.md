@@ -105,11 +105,11 @@ No se dispone de datos de rendimiento de modelos externos comparables dentro de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r00-sobol-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r00-sobol-divl
 - Modelo padre del actor congelado: https://huggingface.co/mulligan/sim-square-narrow-r00-sobol-idql
 - Dataset de entrenamiento: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-sobol
 - Arbol de archivos del dataset de entrenamiento: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-sobol/tree/main
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-r00-r03-eval
 - Pagina del proyecto Mulligan: https://mulligan.page
 - Tablero de evaluaciones Policy Arena: https://arena.mulligan.page
-- Organizacion en HuggingFace: https://huggingface.co/mulligan
+- Organizacion en Hugging Face: https://huggingface.co/mulligan

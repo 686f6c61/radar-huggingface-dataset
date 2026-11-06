@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smsag007/paraphrase-multilingual-MiniLM-L12-v2-latin
+- Modelo en Hugging Face: https://huggingface.co/smsag007/paraphrase-multilingual-MiniLM-L12-v2-latin
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 - Export ONNX del que deriva: https://huggingface.co/Xenova/paraphrase-multilingual-MiniLM-L12-v2
 - Plugin Pythia para Obsidian: https://github.com/smsag/pythia

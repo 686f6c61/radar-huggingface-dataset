@@ -89,7 +89,7 @@ La comparativa directa de rendimiento no es posible con la informacion disponibl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Index-Translate-35B-A3B-preview-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Index-Translate-35B-A3B-preview-GGUF
 - Modelo base: https://huggingface.co/IndexTeam/Index-Translate-35B-A3B-preview
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Index-Translate-35B-A3B-preview-GGUF
 - Peticiones de modelos del cuantizador: https://huggingface.co/mradermacher/model_requests

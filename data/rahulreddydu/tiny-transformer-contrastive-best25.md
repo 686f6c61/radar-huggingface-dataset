@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Rahulreddydu/tiny-transformer-contrastive-best25` es un repositorio de HuggingFace publicado por el usuario Rahulreddydu que contiene una implementación propia de un *Tiny Transformer* orientado a tareas de aprendizaje contrastivo (*contrastive learning*). El artefacto publicado no es un modelo entrenado, sino un **checkpoint de inicialización** (`model.safetensors`) válido para *smoke tests*, con un total de 24.832 parámetros según los metadatos de safetensors. El propio autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
+`Rahulreddydu/tiny-transformer-contrastive-best25` es un repositorio de Hugging Face publicado por el usuario Rahulreddydu que contiene una implementación propia de un *Tiny Transformer* orientado a tareas de aprendizaje contrastivo (*contrastive learning*). El artefacto publicado no es un modelo entrenado, sino un **checkpoint de inicialización** (`model.safetensors`) válido para *smoke tests*, con un total de 24.832 parámetros según los metadatos de safetensors. El propio autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
 El repositorio incluye, además de los pesos, un `main.py` con la implementación y un ejemplo ejecutable, un `config.json` con los ajustes de arquitectura generados y un `training_args.json` con la receta de experimento por defecto (optimizador Adam con scheduler OneCycle). La configuración interna se etiqueta como *xlarge*, una denominación que corresponde al script de generación y no al tamaño real del modelo, que es de escala diminuta (del orden de 0,1 MB en fp32).
 
@@ -46,7 +46,7 @@ En resumen: no hay ninguna capacidad de inferencia verificada ni documentada má
 - **Verificación en CI/CD de repositorios de investigación:** se puede integrar en una *pipeline* de integración continua que compruebe en cada *commit* que `main.py`, `config.json` y `model.safetensors` siguen siendo coherentes entre sí. El coste de ejecución es despreciable y no requiere GPU.
 - **Docencia y formación en arquitecturas transformer:** sirve como material didáctico para recorrer línea a línea la implementación de atención dilatada, fusión de tensores y GroupNorm, así como para ilustrar el efecto del scheduler OneCycle sobre un modelo mínimo.
 - **Baseline de capacidad equivalente en investigación:** el propio autor recomienda evaluar con un baseline de capacidad comparable; este checkpoint puede actuar como ese punto de referencia emparejado por número de parámetros, siempre que se entrene bajo el mismo presupuesto de cómputo, exposición de datos y semillas.
-- **Pruebas de adaptadores de carga personalizados:** al no ser compatible con las APIs automáticas de HuggingFace, es útil para desarrollar y depurar el adaptador explícito necesario para arquitecturas *custom*, un paso previo habitual antes de publicar modelos propios.
+- **Pruebas de adaptadores de carga personalizados:** al no ser compatible con las APIs automáticas de Hugging Face, es útil para desarrollar y depurar el adaptador explícito necesario para arquitecturas *custom*, un paso previo habitual antes de publicar modelos propios.
 - **Validación de herramientas de serialización y perfilado:** permite comprobar que utilidades de inspección de safetensors, conteo de parámetros, perfilado de memoria o *traza* de grafo funcionan correctamente sobre una arquitectura no estándar antes de aplicarlas a modelos grandes.
 - **Reproducción de recetas de optimización:** el `training_args.json` incluido facilita experimentar con Adam y OneCycle en un entorno controlado y con tiempos de ejecución mínimos, útil para comparar configuraciones de hiperparámetros a bajo coste.
 
@@ -83,6 +83,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rahulreddydu/tiny-transformer-contrastive-best25
+- Modelo en Hugging Face: https://huggingface.co/Rahulreddydu/tiny-transformer-contrastive-best25
 - Archivos incluidos en el repositorio: `main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo adicionales: no disponibles. La búsqueda web realizada no devolvió enlaces relevantes para este modelo (los resultados obtenidos correspondían a páginas generales de YouTube, sin relación con el artefacto).

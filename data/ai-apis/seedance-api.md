@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Seedance 2.5 es un modelo de generación de vídeo desarrollado por ByteDance, accesible únicamente mediante API REST a través de proveedores como Apiframe, SeeVio o SeeAPI. Este repositorio de HuggingFace no contiene pesos del modelo, sino que documenta cómo invocar el servicio desde código. El modelo admite generación de texto a vídeo e imagen a vídeo, con clips de 4 a 30 segundos en una sola pasada, audio nativo sincronizado y hasta 30 imágenes de referencia, 10 vídeos de referencia y 10 pistas de audio de referencia.
+Seedance 2.5 es un modelo de generación de vídeo desarrollado por ByteDance, accesible únicamente mediante API REST a través de proveedores como Apiframe, SeeVio o SeeAPI. Este repositorio de Hugging Face no contiene pesos del modelo, sino que documenta cómo invocar el servicio desde código. El modelo admite generación de texto a vídeo e imagen a vídeo, con clips de 4 a 30 segundos en una sola pasada, audio nativo sincronizado y hasta 30 imágenes de referencia, 10 vídeos de referencia y 10 pistas de audio de referencia.
 
 La relevancia actual radica en que Seedance 2.5 ofrece capacidades multimodales de referencia (imagen, vídeo y audio) en un solo modelo, con una latencia típica de unos 300 segundos por generación. Al ser un modelo cerrado, no se pueden descargar pesos ni ejecutar inferencia local; toda la computación ocurre en los servidores de ByteDance o de los proveedores de API. Existen variantes del mismo endpoint: `seedance-2` (hasta 4K y 15 segundos), `seedance-2-fast` y `seedance-2-mini`.
 
@@ -72,7 +72,7 @@ No hay datos de benchmarks públicos que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/AI-APIs/Seedance-API
+- Repositorio de Hugging Face: https://huggingface.co/AI-APIs/Seedance-API
 - Página del modelo en Apiframe: https://apiframe.ai/models/seedance-2.5
 - Documentación de Seedance API (seedanceapi.dev): https://seedanceapi.dev/
 - Seedance API (seedanceapi.com): https://seedanceapi.com/

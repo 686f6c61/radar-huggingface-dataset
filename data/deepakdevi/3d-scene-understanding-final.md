@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por Deepakdevi, no contiene un modelo de IA entrenado, sino una nota de investigación sobre **comprensión de escenas 3D** (3D scene understanding). Su propio README indica que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, sin presentarse como un paper completo ni como una entrega de modelos con checkpoint. El artefacto principal es un archivo `summary.md` junto al `README.md`.
+Este repositorio de Hugging Face, publicado por Deepakdevi, no contiene un modelo de IA entrenado, sino una nota de investigación sobre **comprensión de escenas 3D** (3D scene understanding). Su propio README indica que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, sin presentarse como un paper completo ni como una entrega de modelos con checkpoint. El artefacto principal es un archivo `summary.md` junto al `README.md`.
 
-Los metadatos de HuggingFace muestran un único archivo `safetensors` con **49.600 parámetros totales**, un tamaño de repositorio de 0.0 GB y la etiqueta `transformer`, aunque no existe una arquitectura documentada ni pesos de un modelo funcional. La licencia es CC BY 4.0. El repositorio no tiene descargas ni likes y su utilidad es puramente documental, orientada a investigación, no a inferencia.
+Los metadatos de Hugging Face muestran un único archivo `safetensors` con **49.600 parámetros totales**, un tamaño de repositorio de 0.0 GB y la etiqueta `transformer`, aunque no existe una arquitectura documentada ni pesos de un modelo funcional. La licencia es CC BY 4.0. El repositorio no tiene descargas ni likes y su utilidad es puramente documental, orientada a investigación, no a inferencia.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ Los metadatos de HuggingFace muestran un único archivo `safetensors` con **49.6
 
 ## Arquitectura y entrenamiento
 
-No hay una arquitectura real que describir. Aunque los tags de HuggingFace incluyen `transformer`, el README aclara explícitamente que no se libera código, checkpoint ni resultados de experimentos. El repositorio es una nota de investigación exploratoria que contiene: motivación, trabajo relacionado, confusores probables, una comparación propuesta con líneas base, contexto de evaluación con benchmarks públicos, comprobaciones de reproducibilidad, modos de fallo, preguntas abiertas y referencias. No se ha realizado ningún entrenamiento documentado, por lo que no procede hablar de tokens, datasets, RLHF o innovaciones técnicas.
+No hay una arquitectura real que describir. Aunque los tags de Hugging Face incluyen `transformer`, el README aclara explícitamente que no se libera código, checkpoint ni resultados de experimentos. El repositorio es una nota de investigación exploratoria que contiene: motivación, trabajo relacionado, confusores probables, una comparación propuesta con líneas base, contexto de evaluación con benchmarks públicos, comprobaciones de reproducibilidad, modos de fallo, preguntas abiertas y referencias. No se ha realizado ningún entrenamiento documentado, por lo que no procede hablar de tokens, datasets, RLHF o innovaciones técnicas.
 
 ## Capacidades
 
@@ -68,5 +68,5 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Deepakdevi/3d-scene-understanding-final
+- Página del modelo en Hugging Face: https://huggingface.co/Deepakdevi/3d-scene-understanding-final
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos o demos) en la información disponible.

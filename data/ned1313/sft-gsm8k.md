@@ -69,8 +69,8 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ned1313/sft-gsm8k
-- Perfil del autor en HuggingFace: https://huggingface.co/ned1313
+- Hugging Face: https://huggingface.co/ned1313/sft-gsm8k
+- Perfil del autor en Hugging Face: https://huggingface.co/ned1313
 - Repositorio del autor en GitHub: https://github.com/ned1313
 - Modelo base Qwen3-0.6B-Base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Leaderboard GSM8K (para comparativas): https://pricepertoken.com/leaderboards/benchmark/gsm8k

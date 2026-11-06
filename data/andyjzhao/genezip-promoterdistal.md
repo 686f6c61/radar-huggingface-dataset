@@ -73,6 +73,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andyjzhao/GeneZip-PromoterDistal
+- Modelo en Hugging Face: https://huggingface.co/andyjzhao/GeneZip-PromoterDistal
 - Repositorio de código GeneZip: https://github.com/AndyJZhao/GeneZip
 - Fuente de los pesos: https://huggingface.co/jzshared/GeneZip-PromoterDistal-64BPT-100B/tree/1520f073a6765d0ae338ede823e32e4b501da67f/checkpoint-30600

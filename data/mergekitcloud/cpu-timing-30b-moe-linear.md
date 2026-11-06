@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cpu-timing-30b-moe-linear es un modelo de lenguaje resultado de una fusión de pesos (*weight merge*) entre dos modelos de la familia Qwen3: `Qwen/Qwen3-30B-A3B` (modelo base) y `Qwen/Qwen3-30B-A3B-Instruct-2507` (variante instruct ajustada). Lo publica el usuario MergekitCloud en HuggingFace y se ha generado con la herramienta mergekit aplicando el método Linear (media ponderada de pesos, inspirado en el artículo *Model soups*, arXiv:2203.05482), con un peso de 0,5 para cada modelo padre y precisión bfloat16.
+cpu-timing-30b-moe-linear es un modelo de lenguaje resultado de una fusión de pesos (*weight merge*) entre dos modelos de la familia Qwen3: `Qwen/Qwen3-30B-A3B` (modelo base) y `Qwen/Qwen3-30B-A3B-Instruct-2507` (variante instruct ajustada). Lo publica el usuario MergekitCloud en Hugging Face y se ha generado con la herramienta mergekit aplicando el método Linear (media ponderada de pesos, inspirado en el artículo *Model soups*, arXiv:2203.05482), con un peso de 0,5 para cada modelo padre y precisión bfloat16.
 
 El resultado conserva la arquitectura del padre: un transformer decoder-only con mezcla de expertos (MoE) de 30.532.122.624 parámetros totales, de los cuales solo una fracción se activa por token, lo que abarata la inferencia frente a un modelo denso del mismo tamaño. El repositorio ocupa 61,1 GB en safetensors, coherente con el almacenamiento en bfloat16 de los 30,53 mil millones de parámetros.
 
@@ -93,7 +93,7 @@ Los datos de contexto, parametros activos y licencia de las tres alternativas pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MergekitCloud/cpu-timing-30b-moe-linear
+- Modelo en Hugging Face: https://huggingface.co/MergekitCloud/cpu-timing-30b-moe-linear
 - Modelo base instruct: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Repositorio de mergekit: https://github.com/cg123/mergekit

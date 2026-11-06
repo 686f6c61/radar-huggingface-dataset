@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zho-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455` es un ajuste fino (SFT) desarrollado por el usuario de HuggingFace `francesca9805`, derivado del checkpoint base `francesca9805/ppt-wc-uniform-newlex-zho-before-100mb-packed-bfdiso_seed455`. Con 124.770.816 parámetros, se sitúa en el rango de tamaño de GPT-2 small y lleva la etiqueta de arquitectura `gpt2`, por lo que se trata de un transformer decoder-only orientado a generación de texto. El entrenamiento se ha realizado con la librería TRL (versión 0.23.0) mediante supervisión fina (SFT), según declara la propia model card.
+El modelo `zho-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455` es un ajuste fino (SFT) desarrollado por el usuario de Hugging Face `francesca9805`, derivado del checkpoint base `francesca9805/ppt-wc-uniform-newlex-zho-before-100mb-packed-bfdiso_seed455`. Con 124.770.816 parámetros, se sitúa en el rango de tamaño de GPT-2 small y lleva la etiqueta de arquitectura `gpt2`, por lo que se trata de un transformer decoder-only orientado a generación de texto. El entrenamiento se ha realizado con la librería TRL (versión 0.23.0) mediante supervisión fina (SFT), según declara la propia model card.
 
 El identificador del repositorio ofrece pistas sobre su origen: el segmento `zho` corresponde al código ISO 639-3 del chino, `100mb` sugiere un corpus de entrenamiento del orden de 100 MB y `seed455` apunta a una semilla concreta de un barrido experimental. Se trata, por tanto, de un modelo de investigación de escala reducida y probablemente especializado en chino, aunque ni la licencia ni los idiomas soportados están declarados explícitamente en la ficha oficial.
 
@@ -43,7 +43,7 @@ El entrenamiento se realizó con SFT (supervised fine-tuning) usando TRL 0.23.0,
 - Generación de texto en chino de dominio acotado: si el corpus de 100 MB es temático, el modelo podría generar continuaciones coherentes dentro de ese registro, aunque sin garantías documentadas.
 - Pruebas de infraestructura de despliegue: al ser un modelo de ~125 M de parámetros, es idóneo para validar tuberías de inferencia (TGI, vLLM, transformers) sin coste elevado de GPU.
 - Evaluación comparativa de checkpoints intermedios: la convención `before-ckpt500` facilita analizar la evolución del modelo a lo largo del entrenamiento.
-- Docencia y prototipado: útil en entornos educativos para ilustrar el flujo completo de entrenamiento y publicación con el ecosistema HuggingFace.
+- Docencia y prototipado: útil en entornos educativos para ilustrar el flujo completo de entrenamiento y publicación con el ecosistema Hugging Face.
 - No se recomienda su uso en producción orientada a usuario final dada la ausencia de licencia, benchmarks e idiomas declarados.
 
 ## Benchmarks y rendimiento
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `zho-100mb-...-seed455` (este) | 124,8 M | no disponible | no disponible | safetensors en HuggingFace, sin benchmarks |
+| `zho-100mb-...-seed455` (este) | 124,8 M | no disponible | no disponible | safetensors en Hugging Face, sin benchmarks |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT (según publicación original) | ampliamente disponible, benchmarks públicos |
 | GPT-2 medium (OpenAI) | 355 M | 1024 tokens | MIT (según publicación original) | ampliamente disponible |
 | Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | safetensors, GGUF y múltiples cuantizaciones |
@@ -81,7 +81,7 @@ La comparación es orientativa: los datos de GPT-2 y Qwen2.5 corresponden a cara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-zho-before-100mb-packed-bfdiso_seed455
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/o0647l7g
 - Repositorio de TRL: https://github.com/huggingface/trl

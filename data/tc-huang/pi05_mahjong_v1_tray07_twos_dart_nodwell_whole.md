@@ -89,7 +89,7 @@ No se dispone de datos de otros VLA de manipulacion comparables dentro de la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tc-huang/pi05_mahjong_v1_tray07_twos_dart_nodwell_whole
+- Modelo en Hugging Face: https://huggingface.co/tc-huang/pi05_mahjong_v1_tray07_twos_dart_nodwell_whole
 - Modelo base de este fine-tune: https://huggingface.co/tc-huang/pi05_mahjong_v1_tray07_twos_dart_nodwell
 - Checkpoint previo de la cadena DART (step-010000): https://huggingface.co/tc-huang/pi05_mahjong_v1_tray07_twos_dart
 - Checkpoint inicial de la cadena: https://huggingface.co/tc-huang/pi05_mahjong_v1_tray07_twos_30k

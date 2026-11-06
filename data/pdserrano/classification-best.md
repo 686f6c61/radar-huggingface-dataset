@@ -4,7 +4,7 @@
 
 `pdserrano/classification-best` es un repositorio experimental que contiene una implementacion propia en PyTorch de una arquitectura denominada "Dino" orientada a tareas de clasificacion. No es un modelo preentrenado ni ajustado: la model card del autor indica explicitamente que el checkpoint incluido (`model.safetensors`) es un peso de inicializacion valido para pruebas de humo (smoke tests), no un checkpoint entrenado con resultados de referencia. El autor lo presenta como material para revision de codigo, pruebas de integracion y experimentos pequenos y controlados.
 
-El repositorio ocupa 0,0 GB y el fichero de pesos contiene 49.600 parametros totales, una cifra muy reducida que lo aleja de cualquier caso de uso en produccion. Conviene senalar que la etiqueta "xlarge" que aparece en la documentacion se refiere a la escala de la configuracion generada dentro de la implementacion, no al numero real de parametros del checkpoint, que es diminuto. El modelo se distribuye con licencia MIT y no declara idiomas soportados ni pipeline de HuggingFace.
+El repositorio ocupa 0,0 GB y el fichero de pesos contiene 49.600 parametros totales, una cifra muy reducida que lo aleja de cualquier caso de uso en produccion. Conviene senalar que la etiqueta "xlarge" que aparece en la documentacion se refiere a la escala de la configuracion generada dentro de la implementacion, no al numero real de parametros del checkpoint, que es diminuto. El modelo se distribuye con licencia MIT y no declara idiomas soportados ni pipeline de Hugging Face.
 
 Su relevancia es limitada y de naturaleza practica: sirve como esqueleto reproducible para evaluar una implementacion concreta de atencion dilatada, fusion bilineal, activacion ReLU y normalizacion RMSNorm, y como punto de partida para quien quiera reentrenarlo con datos propios. No debe confundirse con DINOv2, DETR-DINO u otros modelos "DINO" ampliamente conocidos; aqui "Dino" designa una arquitectura personalizada definida por el autor.
 
@@ -65,7 +65,7 @@ Dado que se trata de un checkpoint de inicializacion no entrenado y de una imple
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pdserrano/classification-best | 49.600 | no disponible | sin benchmark publicado | MIT | HuggingFace (0 descargas, 0 likes) |
+| pdserrano/classification-best | 49.600 | no disponible | sin benchmark publicado | MIT | Hugging Face (0 descargas, 0 likes) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables de la misma categoria en la documentacion proporcionada.
@@ -84,5 +84,5 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pdserrano/classification-best
+- Hugging Face: https://huggingface.co/pdserrano/classification-best
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sonda-1.0-4B es un modelo de decisión de 4.205.751.296 parámetros (unos 4,2 B) publicado por el usuario Mr-Shmoo en HuggingFace bajo licencia Apache-2.0. No es un modelo conversacional ni de generación de texto, pese a que el pipeline declarado sea `text-generation`: recibe evidencia (`state`) y una pregunta tipada —sí/no (`noul`), elección o puntuación— junto con sus opciones, y devuelve en una única pasada hacia delante una probabilidad calibrada por opción, sin generar tokens. La salida se lee directamente de los logits de las letras de las opciones y se ajusta con temperaturas por tipo de pregunta definidas en la configuración del servidor.
+sonda-1.0-4B es un modelo de decisión de 4.205.751.296 parámetros (unos 4,2 B) publicado por el usuario Mr-Shmoo en Hugging Face bajo licencia Apache-2.0. No es un modelo conversacional ni de generación de texto, pese a que el pipeline declarado sea `text-generation`: recibe evidencia (`state`) y una pregunta tipada —sí/no (`noul`), elección o puntuación— junto con sus opciones, y devuelve en una única pasada hacia delante una probabilidad calibrada por opción, sin generar tokens. La salida se lee directamente de los logits de las letras de las opciones y se ajusta con temperaturas por tipo de pregunta definidas en la configuración del servidor.
 
 El modelo deriva de la familia Qwen3.5-4B: parte de `alibiserikbay/JevK5` (Qwen3.5-4B más LoRA fusionado), pasa por `sonda-0.1` y llega a `sonda-1.0` mediante una segunda fusión de LoRA. Está entrenado exclusivamente en polaco e inglés (etiquetas de idioma `pl` y `en`) y está pensado para desplegarse con `sonda-server`, un servidor Apache-2.0 que expone la API TypeSafe `/v1/systemone`.
 
@@ -83,8 +83,8 @@ Nota del autor: Jev es el modelo alojado de TypeSafe (versión vigente en la fec
 
 | Modelo | Parametros | Idiomas | Accuracy EN / PL | ECE EN / PL | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sonda-1.0-4B (este modelo) | 4,2 B | pl, en | 97,2 % / 95,4 % | 0,028 / 0,027 | Apache-2.0 | Pesos en HuggingFace, servidor sonda-server |
-| JevK5 v0.3.3 (`alibiserikbay/JevK5`) | no disponible | pl, en | 93,3 % / 92,4 % | 0,073 / 0,065 | Apache-2.0 (según la tabla de linaje) | Pesos en HuggingFace |
+| sonda-1.0-4B (este modelo) | 4,2 B | pl, en | 97,2 % / 95,4 % | 0,028 / 0,027 | Apache-2.0 | Pesos en Hugging Face, servidor sonda-server |
+| JevK5 v0.3.3 (`alibiserikbay/JevK5`) | no disponible | pl, en | 93,3 % / 92,4 % | 0,073 / 0,065 | Apache-2.0 (según la tabla de linaje) | Pesos en Hugging Face |
 | Jev (`jev-latest`) | no disponible | no disponible (evaluado en EN y PL) | 99,1 % / 97,9 % | 0,046 / 0,047 | no disponible | Modelo alojado por TypeSafe vía API TypeSafe |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ Nota del autor: Jev es el modelo alojado de TypeSafe (versión vigente en la fec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mr-Shmoo/sonda-1.0-4B
+- Modelo en Hugging Face: https://huggingface.co/Mr-Shmoo/sonda-1.0-4B
 - Modelo base: https://huggingface.co/alibiserikbay/JevK5
 - Servidor de inferencia sonda-server (Apache-2.0): https://github.com/sonda-ml/sonda-server
 - Conjunto de evaluación PriorBench Jev (MIT): https://github.com/priorbench/jev

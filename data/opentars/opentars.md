@@ -4,7 +4,7 @@
 
 openTARS es un asistente de IA local para escritorio desarrollado por el proyecto OpenTARS, distribuido bajo licencia MIT. No se trata de un modelo de lenguaje en sentido estricto, sino de una aplicación de escritorio completa (versión 5.2 "Ranger", revisión 2026110101) que orquesta modelos locales para automatizar tareas sobre el sistema operativo: abrir programas, pulsar botones por nombre, escribir, buscar en la web, inspeccionar la pantalla y ejecutar comandos. Está disponible para Linux (paquete `.deb` para Ubuntu/Debian), Windows 10/11 y macOS 12 o superior.
 
-El repositorio de HuggingFace es un espejo del proyecto; la fuente de verdad, las issues y las releases se gestionan en GitHub. El asistente se apoya en dos modelos propios de la familia Gargantua: Gargantua 2 (2B parámetros, con visión) como modelo principal y Gargantua 2 Lite (0.8B parámetros, ejecutable en CPU) como alternativa ligera. La propuesta de valor es el procesamiento íntegramente local, sin suscripciones ni envío de datos a la nube.
+El repositorio de Hugging Face es un espejo del proyecto; la fuente de verdad, las issues y las releases se gestionan en GitHub. El asistente se apoya en dos modelos propios de la familia Gargantua: Gargantua 2 (2B parámetros, con visión) como modelo principal y Gargantua 2 Lite (0.8B parámetros, ejecutable en CPU) como alternativa ligera. La propuesta de valor es el procesamiento íntegramente local, sin suscripciones ni envío de datos a la nube.
 
 La información disponible en este repositorio es muy limitada: el tamaño del repo es de 0.0 GB, no hay pipeline declarado, no hay descargas ni likes, y la model card no incluye especificaciones técnicas del modelo subyacente (arquitectura, contexto, cuantizaciones). Los detalles de arquitectura y entrenamiento deben consultarse en las fichas de los modelos Gargantua 2 y Gargantua 2 Lite.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| openTARS (Gargantua 2 / Lite) | Asistente de escritorio con modelos locales | 2B / 0.8B (modelos referenciados) | no disponible | MIT | HuggingFace (espejo) y GitHub |
+| openTARS (Gargantua 2 / Lite) | Asistente de escritorio con modelos locales | 2B / 0.8B (modelos referenciados) | no disponible | MIT | Hugging Face (espejo) y GitHub |
 | Alternativas de asistente de escritorio local | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para establecer una comparativa rigurosa con alternativas de la misma categoría (asistentes de escritorio con control de GUI y modelos locales). Los datos de parámetros, contexto y rendimiento de los modelos Gargantua no están publicados en este repositorio.
@@ -84,7 +84,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenTARS/openTARS
+- Hugging Face: https://huggingface.co/OpenTARS/openTARS
 - GitHub (fuente de verdad): https://github.com/project-opentars/OpenTARS
 - Sitio web: https://project-opentars.github.io/OpenTARS/
 - Modelo Gargantua 2: https://huggingface.co/OpenTARS/Gargantua-2

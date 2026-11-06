@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Elio2151/Llama-3.1-8B-Instruct-OrchestratorFineTuned-Merged_0 es un ajuste fino (fine-tuning) del modelo Llama 3 de 8.000 millones de parametros, publicado por el usuario Elio2151 en HuggingFace bajo licencia Apache 2.0. Segun la model card, el entrenamiento se realizo partiendo de `unsloth/llama-3-8b-bnb-4bit` (una version cuantizada a 4 bits de Llama 3 8B) y se acelero mediante la libreria Unsloth junto con TRL de HuggingFace. El nombre del repositorio sugiere un ajuste orientado a tareas de orquestacion, aunque la model card no documenta el dataset ni el objetivo concreto del entrenamiento.
+Elio2151/Llama-3.1-8B-Instruct-OrchestratorFineTuned-Merged_0 es un ajuste fino (fine-tuning) del modelo Llama 3 de 8.000 millones de parametros, publicado por el usuario Elio2151 en Hugging Face bajo licencia Apache 2.0. Segun la model card, el entrenamiento se realizo partiendo de `unsloth/llama-3-8b-bnb-4bit` (una version cuantizada a 4 bits de Llama 3 8B) y se acelero mediante la libreria Unsloth junto con TRL de Hugging Face. El nombre del repositorio sugiere un ajuste orientado a tareas de orquestacion, aunque la model card no documenta el dataset ni el objetivo concreto del entrenamiento.
 
 Se trata de un modelo transformer decoder-only denso de 8.030.269.440 parametros (confirmado en el archivo de safetensors), con el repositorio ocupando 16,1 GB, lo que es coherente con pesos en precision completa (16 bits). La model card es minima y no aporta informacion sobre el proceso de entrenamiento, hiperparametros, numero de tokens vistos ni composicion del dataset.
 
@@ -44,7 +44,7 @@ No hay informacion disponible sobre el numero de tokens de entrenamiento, la com
 - Experimentacion academica con fine-tuning: como ejemplo reproducible de flujo Unsloth + TRL sobre Llama 3 8B.
 - Base para un ajuste adicional: al ser Apache 2.0, puede servir de punto de partida para desarrollos propios.
 - Evaluacion comparativa de merges de LoRA: util para estudiar como afecta la fusion de adaptadores a un modelo base.
-- Docencia sobre pipelines de HuggingFace: sirve para ilustrar la publicacion de un modelo ajustado y sus metadatos.
+- Docencia sobre pipelines de Hugging Face: sirve para ilustrar la publicacion de un modelo ajustado y sus metadatos.
 
 No se recomienda su uso en produccion sin una evaluacion exhaustiva, dado que no hay benchmarks ni documentacion de calidad publicados.
 
@@ -61,14 +61,14 @@ Estimaciones basadas en el tamano del modelo (8B denso); no confirmadas por el a
 - VRAM estimada con cuantizacion de 4 bits (GGUF/AWQ/GPTQ): aproximadamente 5-6 GB.
 - GPU recomendadas en precision completa: NVIDIA A100 40 GB, H100, RTX 4090 24 GB, RTX 3090 24 GB.
 - Cabe en GPU de consumo: si, con cuantizacion de 4 bits en tarjetas de 8 GB o mas (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, etc.); en precision completa requiere 16 GB o mas.
-- Opciones de despliegue: vLLM, TGI (text-generation-inference), llama.cpp, Ollama y transformers; la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: vLLM, TGI (text-generation-inference), llama.cpp, Ollama y transformers; la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (Elio2151) | 8,03 B | no disponible | apache-2.0 | HuggingFace (0 descargas) |
+| Este modelo (Elio2151) | 8,03 B | no disponible | apache-2.0 | Hugging Face (0 descargas) |
 | Llama 3 8B Instruct (Meta) | 8,03 B | 8.192 tokens | Llama 3 Community License | Ampliamente disponible |
 | Llama 3.1 8B Instruct (Meta) | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Ampliamente disponible |
 | Mistral 7B Instruct | 7,24 B | 32.000 tokens | apache-2.0 | Ampliamente disponible |
@@ -88,6 +88,6 @@ Nota: las especificaciones de los modelos de referencia corresponden a informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Elio2151/Llama-3.1-8B-Instruct-OrchestratorFineTuned-Merged_0
+- Hugging Face: https://huggingface.co/Elio2151/Llama-3.1-8B-Instruct-OrchestratorFineTuned-Merged_0
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
 - Modelo base declarado: https://huggingface.co/unsloth/llama-3-8b-bnb-4bit

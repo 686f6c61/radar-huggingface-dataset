@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio "Bono1983/blackhole-ultra-code" publicado en HuggingFace no corresponde a un modelo de inteligencia artificial, sino a un proyecto de software llamado "BlackHole Ultra Downloader": un gestor de descargas de contenido multimedia con filosofía "local-first", inspirado en el estilo de IDM (Internet Download Manager). La aplicación se basa en herramientas externas como `yt-dlp`, `gallery-dl` y `FFmpeg`, e incluye una interfaz web con tema oscuro en árabe, una base de datos SQLite integrada y soporte de instalación como PWA.
+El repositorio "Bono1983/blackhole-ultra-code" publicado en Hugging Face no corresponde a un modelo de inteligencia artificial, sino a un proyecto de software llamado "BlackHole Ultra Downloader": un gestor de descargas de contenido multimedia con filosofía "local-first", inspirado en el estilo de IDM (Internet Download Manager). La aplicación se basa en herramientas externas como `yt-dlp`, `gallery-dl` y `FFmpeg`, e incluye una interfaz web con tema oscuro en árabe, una base de datos SQLite integrada y soporte de instalación como PWA.
 
-A pesar de estar alojado en HuggingFace, no existe evidencia de pesos de modelo, arquitectura de red neuronal, tarjeta de modelo técnica ni pipeline asociado. El repositorio tiene un tamaño de 0.0 GB, lo que refuerza que no contiene ficheros de pesos. La documentación incluida es, además, una model card en árabe que describe funcionalidades de descarga (YouTube, Instagram, TikTok, Vimeo, etc.), no capacidades de inferencia de un modelo de lenguaje.
+A pesar de estar alojado en Hugging Face, no existe evidencia de pesos de modelo, arquitectura de red neuronal, tarjeta de modelo técnica ni pipeline asociado. El repositorio tiene un tamaño de 0.0 GB, lo que refuerza que no contiene ficheros de pesos. La documentación incluida es, además, una model card en árabe que describe funcionalidades de descarga (YouTube, Instagram, TikTok, Vimeo, etc.), no capacidades de inferencia de un modelo de lenguaje.
 
 Por tanto, esta ficha documenta el contenido real del repositorio tal como está disponible, indicando expresamente aquellos apartados propios de una ficha de modelo que no pueden cubrirse por falta de información verificable.
 
@@ -84,7 +84,7 @@ No disponible. Al no tratarse de un modelo de IA, no existen modelos comparables
 
 ## Limitaciones y advertencias
 
-- **No es un modelo de IA:** su publicacion en HuggingFace puede inducir a confusion; no debe evaluarse ni utilizarse como modelo de lenguaje o generativo.
+- **No es un modelo de IA:** su publicacion en Hugging Face puede inducir a confusion; no debe evaluarse ni utilizarse como modelo de lenguaje o generativo.
 - **Sin licencia declarada:** la licencia del repositorio figura como "no disponible", lo que impide determinar permisos de uso, modificacion o redistribucion.
 - **Sin actividad comunitaria:** 0 descargas y 0 likes; no hay evidencia de revision, auditoria ni uso en produccion por terceros.
 - **Restriccion legal de uso:** la propia documentacion advierte usar la herramienta solo con contenido cuyo derecho de descarga se posea; no elude DRM ni protecciones tecnicas, y el contenido protegido por DRM no esta soportado.
@@ -94,5 +94,5 @@ No disponible. Al no tratarse de un modelo de IA, no existen modelos comparables
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bono1983/blackhole-ultra-code
+- Repositorio en Hugging Face: https://huggingface.co/Bono1983/blackhole-ultra-code
 - No se han encontrado enlaces adicionales verificables (paper, blog, demo o repositorio externo) en la informacion disponible. La documentacion del proyecto referencia recursos internos (`docs/round6-deploy.md`, `docs/platform-support.md`, `docs/one-click.md`) y paginas de terceros (releases de N_m3u8DL-RE en GitHub) que no pueden confirmarse sin acceso al repositorio completo.

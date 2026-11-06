@@ -24,7 +24,7 @@ Su relevancia es práctica más que algorítmica: YOLOX-s es un detector anchor-
 | Resoluciones de entrada | 384x640 y 640x640 |
 | Nucleos NPU por configuracion | 1 |
 | Version de runtime RKNN | v2.4.0 |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Fecha de creacion | 2026-10-02 |
 | Fecha de ultima actualizacion | 2026-10-02 |
 | Descargas / likes | 0 / 0 |
@@ -89,7 +89,7 @@ No se han proporcionado datos de mAP, latencia ni consumo que permitan una compa
 ## Limitaciones y advertencias
 
 - Ausencia total de metricas: el repositorio no publica mAP, precision por clase, latencia ni FPS, por lo que no es posible estimar su calidad en produccion sin medirla en el hardware final.
-- Repositorio sin validacion de la comunidad: 0 descargas y 0 likes en el momento de la consulta, y 0,0 GB de tamano reportado en HuggingFace, lo que puede indicar que los ficheros no estan materializados o que el paquete esta incompleto. Conviene verificar con `sha256sum -c SHA256SUMS` antes de cualquier despliegue.
+- Repositorio sin validacion de la comunidad: 0 descargas y 0 likes en el momento de la consulta, y 0,0 GB de tamano reportado en Hugging Face, lo que puede indicar que los ficheros no estan materializados o que el paquete esta incompleto. Conviene verificar con `sha256sum -c SHA256SUMS` antes de cualquier despliegue.
 - Dependencia estricta del runtime: la model card exige RKNN Runtime v2.4.0. Otras versiones pueden no cargar el modelo o producir resultados incorrectos.
 - Restriccion de plataforma: soporte declarado unicamente para RK3588 con un nucleo NPU por configuracion. No se documenta compatibilidad con RK3588S, RK3576, RK3568 ni otras NPU Rockchip.
 - Mezcla de configuraciones: la model card advierte de que deben usarse ficheros de la misma configuracion; mezclar artefactos de 384x640 y 640x640 invalida el despliegue.
@@ -102,7 +102,7 @@ No se han proporcionado datos de mAP, latencia ni consumo que permitan una compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKNNAI/RK3588-CNN-yolox-s
+- Modelo en Hugging Face: https://huggingface.co/RKNNAI/RK3588-CNN-yolox-s
 - Modelo en ModelScope: https://modelscope.cn/models/RKNNAI/RK3588-CNN-yolox-s
 - Modelo fuente: https://github.com/airockchip/YOLOX
 - Ejemplo de YOLOX en RKNN Model Zoo: https://github.com/airockchip/rknn_model_zoo/tree/main/examples/yolox

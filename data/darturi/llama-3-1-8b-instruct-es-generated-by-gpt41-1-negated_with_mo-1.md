@@ -100,7 +100,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-ES-generated-by-gpt41-1-NEGATED_WITH_MO-1
+- Repositorio Hugging Face: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-ES-generated-by-gpt41-1-NEGATED_WITH_MO-1
 - Adaptador minuendo: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-ES-generated-by-gpt41-1
 - Adaptador sustraendo: https://huggingface.co/darturi/Averaged_MO_Llama8B_Adapters-1
 - Modelo base: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct

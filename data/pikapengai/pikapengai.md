@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PikaPengAI es un repositorio alojado en HuggingFace bajo el identificador `pikapengAI/PikaPengAI`, publicado por el usuario `pikapengAI`. En el momento de redactar esta ficha, el repositorio no incluye informacion tecnica verificable: no declara pipeline, licencia, idiomas soportados, arquitectura, numero de parametros, longitud de contexto, formato de pesos ni ningun otro dato de los que se recogen habitualmente en una model card.
+PikaPengAI es un repositorio alojado en Hugging Face bajo el identificador `pikapengAI/PikaPengAI`, publicado por el usuario `pikapengAI`. En el momento de redactar esta ficha, el repositorio no incluye informacion tecnica verificable: no declara pipeline, licencia, idiomas soportados, arquitectura, numero de parametros, longitud de contexto, formato de pesos ni ningun otro dato de los que se recogen habitualmente en una model card.
 
 El repositorio acumula 0 descargas y 1 like, fue creado el 19 de septiembre de 2026 y presenta un unico tag (`region:us`), que es un metadato de caracter generico y no aporta informacion sobre el modelo en si. La busqueda web realizada no ha devuelto ningun resultado relacionado con este repositorio ni con el autor: los unicos resultados obtenidos son articulos de soporte tecnico de Windows, completamente ajenos al ambito de la inteligencia artificial.
 
@@ -20,7 +20,7 @@ Por todo lo anterior, esta ficha se limita a documentar la ausencia de informaci
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
-| Identificador en HuggingFace | pikapengAI/PikaPengAI |
+| Identificador en Hugging Face | pikapengAI/PikaPengAI |
 | Autor | pikapengAI |
 | Pipeline declarado | no disponible |
 | Tags | region:us |
@@ -33,7 +33,7 @@ Por todo lo anterior, esta ficha se limita a documentar la ausencia de informaci
 
 No disponible. La informacion proporcionada no incluye ninguna descripcion de la arquitectura (transformer, MoE, SSM, hibrida u otra), ni del volumen de datos de entrenamiento, ni de la composicion del dataset, ni de si se aplicaron tecnicas de ajuste como RLHF, DPO, SFT u otras. Tampoco se documenta ninguna innovacion tecnica asociada al modelo.
 
-El unico dato estructural disponible es el tag `region:us`, que HuggingFace utiliza como metadato de region y no describe caracteristicas del modelo. En consecuencia, no es posible afirmar que exista un modelo entrenado detras de este repositorio, ni determinar su naturaleza tecnica.
+El unico dato estructural disponible es el tag `region:us`, que Hugging Face utiliza como metadato de region y no describe caracteristicas del modelo. En consecuencia, no es posible afirmar que exista un modelo entrenado detras de este repositorio, ni determinar su naturaleza tecnica.
 
 ## Capacidades
 
@@ -103,7 +103,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pikapengAI/PikaPengAI
-- Pagina del autor en HuggingFace: https://huggingface.co/pikapengAI
+- Repositorio en Hugging Face: https://huggingface.co/pikapengAI/PikaPengAI
+- Pagina del autor en Hugging Face: https://huggingface.co/pikapengAI
 
 No se han encontrado enlaces adicionales relevantes. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo, su autor o su posible documentacion tecnica; los unicos resultados obtenidos fueron articulos de soporte sobre Windows, sin ninguna relacion con el ambito de la inteligencia artificial. No se dispone, por tanto, de paper, blog, repositorio de codigo ni demo asociados.

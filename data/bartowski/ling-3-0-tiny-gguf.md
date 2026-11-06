@@ -4,7 +4,7 @@
 
 Ling-3.0-tiny es un modelo de lenguaje de razonamiento hibrido con arquitectura de mezcla de expertos (MoE) desarrollado por InclusionAI, la division de investigacion en IA de Ant Group. Con 7.893 millones de parametros totales y solo 1.300 millones activos por token, esta disenado para ofrecer capacidades avanzadas de razonamiento y uso de agentes con un coste de inferencia reducido, lo que lo hace adecuado para despliegue en entornos locales o con recursos limitados. Se publico en agosto de 2026 y destaca por su ventana de contexto nativa de 256.000 tokens, modos de razonamiento conmutables (Thinking e Instant), llamada a funciones nativa y cache de prompt.
 
-La version cuantizada en GGUF distribuida por bartowski permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles, con una amplia gama de niveles de cuantizacion que van desde bf16 hasta Q2_K. El modelo base esta disponible en HuggingFace y ModelScope bajo licencia MIT, lo que facilita su uso comercial y su integracion en pipelines de produccion.
+La version cuantizada en GGUF distribuida por bartowski permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles, con una amplia gama de niveles de cuantizacion que van desde bf16 hasta Q2_K. El modelo base esta disponible en Hugging Face y ModelScope bajo licencia MIT, lo que facilita su uso comercial y su integracion en pipelines de produccion.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ No se dispone de datos suficientes para una comparativa rigurosa con alternativa
 ## Enlaces
 
 - Repositorio GGUF de bartowski: https://huggingface.co/bartowski/Ling-3.0-tiny-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/inclusionAI/Ling-3.0-tiny
+- Modelo base en Hugging Face: https://huggingface.co/inclusionAI/Ling-3.0-tiny
 - Modelo en ModelScope: https://www.modelscope.cn/models/inclusionAI/Ling-3.0-tiny
 - Documentacion oficial de Ling: https://developer.ant-ling.com/en/docs/models/ling/
 - Review tecnica: https://aitoolsreview.co.uk/insights/ling-3-0-tiny

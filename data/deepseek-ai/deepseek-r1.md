@@ -72,7 +72,7 @@ Según la model card, DeepSeek-R1 es comparable a OpenAI-o1 en tareas de matemá
 
 ## Enlaces
 
-- [HuggingFace - DeepSeek-R1](https://huggingface.co/deepseek-ai/DeepSeek-R1)
+- [Hugging Face - DeepSeek-R1](https://huggingface.co/deepseek-ai/DeepSeek-R1)
 - [Paper técnico (arxiv:2501.12948)](https://arxiv.org/abs/2501.12948)
 - [GitHub - DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1)
 - [Web oficial de DeepSeek](https://www.deepseek.com/)

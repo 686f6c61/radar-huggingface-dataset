@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sfm_filtered_insert_xxf_character-8k_9k_10k_11k_12k_simpleavg_merge` es un modelo de lenguaje de tipo decoder-only publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una fusión (merge) de cinco checkpoints pertenecientes a una misma ejecución de entrenamiento, generada con la herramienta mergekit mediante el método Linear y normalización activada. El resultado es, en la práctica, un "model soup" sobre la trayectoria de entrenamiento de un modelo base cuyo identificador interno es `filtered_insert_xxf_character`.
+`sfm_filtered_insert_xxf_character-8k_9k_10k_11k_12k_simpleavg_merge` es un modelo de lenguaje de tipo decoder-only publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una fusión (merge) de cinco checkpoints pertenecientes a una misma ejecución de entrenamiento, generada con la herramienta mergekit mediante el método Linear y normalización activada. El resultado es, en la práctica, un "model soup" sobre la trayectoria de entrenamiento de un modelo base cuyo identificador interno es `filtered_insert_xxf_character`.
 
-El modelo tiene 6.856.253.440 parámetros almacenados en safetensors (aproximadamente 6,86 mil millones, equivalente a la clase de 7B) y un repositorio de 13,7 GB. La etiqueta de arquitectura declarada en HuggingFace es `gpt_neox`, lo que apunta a una familia transformer autoregresiva con atención causal, aunque no se aporta la configuración concreta (número de capas, dimensiones ocultas, cabezas de atención ni longitud de contexto). La model card se limita a listar la receta YAML del merge y las rutas locales de los checkpoints fusionados.
+El modelo tiene 6.856.253.440 parámetros almacenados en safetensors (aproximadamente 6,86 mil millones, equivalente a la clase de 7B) y un repositorio de 13,7 GB. La etiqueta de arquitectura declarada en Hugging Face es `gpt_neox`, lo que apunta a una familia transformer autoregresiva con atención causal, aunque no se aporta la configuración concreta (número de capas, dimensiones ocultas, cabezas de atención ni longitud de contexto). La model card se limita a listar la receta YAML del merge y las rutas locales de los checkpoints fusionados.
 
 La relevancia de esta ficha es limitada y conviene ser explícito: el modelo no incluye documentación sobre datos de entrenamiento, idiomas, licencia ni evaluación. Los cinco checkpoints de origen (`global_step8000`, `9000`, `10000`, `11000` y `12040`) son rutas de un sistema de ficheros interno (`/opt/tiger/Pan_Safety_Better_Measurement/...`), no modelos publicados, por lo que la receta no es reproducible externamente. Su interés es, por tanto, como artefacto de investigación en técnicas de interpolación de pesos y en evaluaciones de seguridad de modelos, no como modelo listo para producción.
 
@@ -12,14 +12,14 @@ La relevancia de esta ficha es limitada y conviene ser explícito: el modelo no 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (etiqueta `gpt_neox` en HuggingFace); configuración concreta no disponible |
+| Arquitectura | Transformer decoder-only (etiqueta `gpt_neox` en Hugging Face); configuración concreta no disponible |
 | Parametros totales | 6.856.253.440 (≈6,86 B) |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible; el repositorio solo contiene safetensors en bfloat16 |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
-| Formato de pesos | Safetensors (según tags de HuggingFace); dtype de salida del merge: bfloat16 |
+| Formato de pesos | Safetensors (según tags de Hugging Face); dtype de salida del merge: bfloat16 |
 | Tipo de artefacto | Fusión de pesos (merge) de 5 checkpoints con mergekit, no un modelo entrenado de novo |
 | Método de fusión | Linear (`merge_method: linear`) con `normalize: true` |
 | Checkpoints fusionados | global_step8000, 9000, 10000, 11000 (peso 1.0 cada uno) y base global_step12040 |
@@ -29,7 +29,7 @@ La relevancia de esta ficha es limitada y conviene ser explícito: el modelo no 
 | Pipeline | text-generation |
 | Compatibilidad declarada | text-generation-inference, endpoints_compatible |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación / actualización | 2026-09-13 / 2026-09-13 (según metadatos de HuggingFace) |
+| Fecha de creación / actualización | 2026-09-13 / 2026-09-13 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -40,7 +40,7 @@ No hay información sobre el número de tokens de entrenamiento, la composición
 ## Capacidades
 
 - Generación de texto autoregresiva: es la única capacidad confirmada por el pipeline (`text-generation`) y la librería declarada (`transformers`).
-- Conversación: la etiqueta `conversational` está presente en los metadatos de HuggingFace, lo que indica que el repositorio se marcó como apto para uso conversacional; no hay evidencia documental de que exista un formato de plantilla de chat definido.
+- Conversación: la etiqueta `conversational` está presente en los metadatos de Hugging Face, lo que indica que el repositorio se marcó como apto para uso conversacional; no hay evidencia documental de que exista un formato de plantilla de chat definido.
 - No hay información publicada sobre razonamiento multi-paso, matemáticas, generación de código, visión, audio ni multimodalidad.
 - No hay información sobre soporte de tool calling o function calling.
 - No hay información sobre capacidades de agente o razonamiento multi-paso.
@@ -103,7 +103,7 @@ Diferencias relevantes: este merge no declara licencia, no declara idiomas, no p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-8k_9k_10k_11k_12k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-8k_9k_10k_11k_12k_simpleavg_merge
 - Repositorio de mergekit (herramienta usada para la fusión): https://github.com/cg123/mergekit
 - Paper del método Linear referenciado en los tags (`arxiv:2203.05482`, Model soups): https://arxiv.org/abs/2203.05482
 - No se han encontrado papers, blogs, repositorios de código, demos ni discusiones técnicas adicionales asociados a este modelo en la búsqueda web realizada.

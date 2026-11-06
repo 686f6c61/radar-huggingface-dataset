@@ -86,7 +86,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mws-physical-ai/g1-robohamer-v15-2-persp
+- Modelo en Hugging Face: https://huggingface.co/mws-physical-ai/g1-robohamer-v15-2-persp
 - Dataset de entrenamiento: https://huggingface.co/datasets/mws-physical-ai/g1-robohamer-gt-v15-2
 - Calibración de la cámara de cabeza: `mws-physical-ai/g1-head-camera-calibration-final` (referenciado en la model card; no se proporciona URL directa)
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

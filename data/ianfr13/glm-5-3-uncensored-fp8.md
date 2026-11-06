@@ -100,12 +100,12 @@ No hay informacion en la model card sobre comparativas con otros modelos abliter
 - El soporte de 1M de contexto no es operativo en vLLM actual sobre `glm_moe_dsa`; el techo practico reportado es de ~131K con MTP y ~160K sin MTP en TP8 sobre H200. Las tareas que dependan de contexto de 1M no son viables hoy.
 - Requisitos de hardware extremos: agregacion de multiples aceleradores de gama alta (8x H200 o equivalente). No cabe en GPU de consumo y no hay versiones GGUF publicadas.
 - Licencia MIT declarada, lo que en principio permite uso comercial, pero la licencia del modelo base de zai-org no se especifica en la informacion proporcionada; conviene verificar los terminos del upstream antes de un uso comercial.
-- Trazabilidad limitada: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y la evaluacion publicada procede del propio autor, sin verificacion independiente. La autoria en HuggingFace figura como Ianfr13 mientras la model card se atribuye a dealignai.
+- Trazabilidad limitada: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y la evaluacion publicada procede del propio autor, sin verificacion independiente. La autoria en Hugging Face figura como Ianfr13 mientras la model card se atribuye a dealignai.
 - Idiomas: se declaran 10 idiomas, pero no se publican metricas por idioma. El rendimiento fuera de ingles y chino no esta cuantificado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ianfr13/GLM-5.3-UNCENSORED-FP8
+- Modelo en Hugging Face: https://huggingface.co/Ianfr13/GLM-5.3-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Cuantizacion base FP8: https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
 - Variante hermana de ciberseguridad: https://huggingface.co/dealignai/GLM-5.3-CYBERSECURITY-FP8

@@ -4,7 +4,7 @@
 
 Este repositorio no contiene un modelo de lenguaje ni un modelo de visión entrenado, sino el código y los artefactos asociados a un estudio de investigación titulado "Robustness of transferability estimation metrics for medical imaging". El trabajo, desarrollado por Niclas Classen y colaboradores, aborda el problema de seleccionar un modelo fuente adecuado para transfer learning en el dominio de la imagen médica. La elección del modelo pre-entrenado (por ejemplo, ImageNet frente a datasets específicos del dominio) influye decisivamente en el rendimiento final sobre el dataset objetivo, y las métricas de estimación de transferibilidad (TE) pretenden predecir ese rendimiento sin necesidad de entrenar el modelo completo.
 
-La contribución principal del estudio es una nueva métrica de transferibilidad que combina la calidad de las características extraídas con la información de los gradientes, evaluando tanto la idoneidad como la adaptabilidad de las características del modelo fuente para la tarea objetivo. El trabajo evalúa esta métrica en dos escenarios novedosos: la transferibilidad de datasets fuente para clasificación de imágenes médicas y la transferibilidad entre dominios. El repositorio de HuggingFace contiene 8.6 GB de datos, probablemente incluyendo pesos de modelos pre-entrenados, scripts de evaluación y resultados de experimentos, aunque la model card no proporciona detalles adicionales más allá de la licencia MIT.
+La contribución principal del estudio es una nueva métrica de transferibilidad que combina la calidad de las características extraídas con la información de los gradientes, evaluando tanto la idoneidad como la adaptabilidad de las características del modelo fuente para la tarea objetivo. El trabajo evalúa esta métrica en dos escenarios novedosos: la transferibilidad de datasets fuente para clasificación de imágenes médicas y la transferibilidad entre dominios. El repositorio de Hugging Face contiene 8.6 GB de datos, probablemente incluyendo pesos de modelos pre-entrenados, scripts de evaluación y resultados de experimentos, aunque la model card no proporciona detalles adicionales más allá de la licencia MIT.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No disponible. Este repositorio no es un modelo en sí, sino un estudio metodol�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/niclasclassen/robustness-of-transferability-estimation-metrics-for-medical-imaging
+- Repositorio Hugging Face: https://huggingface.co/niclasclassen/robustness-of-transferability-estimation-metrics-for-medical-imaging
 - Paper arXiv (HTML): https://arxiv.org/html/2608.09999v1
 - Paper arXiv (abstract): https://arxiv.org/abs/2608.09999
 - Página en CatalyzEX: https://www.catalyzex.com/paper/robustness-of-transferability-estimation

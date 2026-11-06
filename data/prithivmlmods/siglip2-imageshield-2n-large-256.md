@@ -4,7 +4,7 @@
 
 SigLIP2-ImageShield-2n-large-256 es un modelo de clasificación de imágenes desarrollado por PRITHIV SAKTHI U R (prithivMLmods), basado en el encoder visión-lenguaje SigLIP2 de Google. Se trata de un fine-tuning del modelo `google/siglip2-large-patch16-256` orientado a actuar como guardrail de moderación de contenido visual, es decir, para clasificar imágenes en categorías de seguridad o idoneidad. El nombre "ImageShield" y la etiqueta "Guardrail" indican su propósito principal: filtrar o bloquear contenido inapropiado en aplicaciones y plataformas.
 
-El modelo tiene aproximadamente 316 millones de parámetros (315.958.274 exactamente) y utiliza la arquitectura SigLIP2, que combina un transformer de visión con un objetivo de entrenamiento de contraste entre imagen y texto. Aunque SigLIP2 es multilingüe, esta versión fine-tuneada declara únicamente inglés como idioma soportado. El acceso al modelo está restringido (gated) en HuggingFace, lo que implica que los usuarios deben aceptar condiciones adicionales antes de descargarlo. Su relevancia actual radica en la creciente necesidad de moderación automática de contenido visual en entornos de producción, donde los modelos ligeros y especializados como este pueden integrarse en pipelines de filtrado.
+El modelo tiene aproximadamente 316 millones de parámetros (315.958.274 exactamente) y utiliza la arquitectura SigLIP2, que combina un transformer de visión con un objetivo de entrenamiento de contraste entre imagen y texto. Aunque SigLIP2 es multilingüe, esta versión fine-tuneada declara únicamente inglés como idioma soportado. El acceso al modelo está restringido (gated) en Hugging Face, lo que implica que los usuarios deben aceptar condiciones adicionales antes de descargarlo. Su relevancia actual radica en la creciente necesidad de moderación automática de contenido visual en entornos de producción, donde los modelos ligeros y especializados como este pueden integrarse en pipelines de filtrado.
 
 ## Especificaciones tecnicas
 
@@ -23,15 +23,15 @@ El modelo tiene aproximadamente 316 millones de parámetros (315.958.274 exactam
 
 El modelo se basa en SigLIP2, la segunda generación de los encoders visión-lenguaje de Google presentada en el paper arXiv:2502.14786. SigLIP2 combina el objetivo de contraste imagen-texto original con técnicas adicionales como pretraining basado en captions, auto-distilación y predicción enmascarada, lo que mejora la robustez y el rendimiento en tareas de visión. La variante `large` con parche de 16 y resolución de 256 píxeles es una de las configuraciones intermedias de la familia.
 
-El fine-tuning específico de ImageShield se realizó sobre el modelo base `google/siglip2-large-patch16-256` para la tarea de clasificación de imágenes. No se dispone de información detallada sobre el dataset de entrenamiento, el número de épocas, ni el proceso de ajuste (por ejemplo, si se usó un head lineal o un MLP adicional). El autor ha publicado un blog en HuggingFace describiendo el proceso general de fine-tuning de SigLIP2 para clasificación de imágenes, pero no se especifican los hiperparámetros ni los datos utilizados para esta variante concreta.
+El fine-tuning específico de ImageShield se realizó sobre el modelo base `google/siglip2-large-patch16-256` para la tarea de clasificación de imágenes. No se dispone de información detallada sobre el dataset de entrenamiento, el número de épocas, ni el proceso de ajuste (por ejemplo, si se usó un head lineal o un MLP adicional). El autor ha publicado un blog en Hugging Face describiendo el proceso general de fine-tuning de SigLIP2 para clasificación de imágenes, pero no se especifican los hiperparámetros ni los datos utilizados para esta variante concreta.
 
 ## Capacidades
 
 - Clasificación de imágenes en categorías de seguridad o idoneidad (función de guardrail).
 - Detección de contenido potencialmente inapropiado o no deseado en imágenes.
 - Integración como clasificador en pipelines de moderación automática.
-- Soporte de inferencia mediante la librería `transformers` de HuggingFace.
-- Compatible con endpoints de HuggingFace (etiqueta `endpoints_compatible`).
+- Soporte de inferencia mediante la librería `transformers` de Hugging Face.
+- Compatible con endpoints de Hugging Face (etiqueta `endpoints_compatible`).
 - No incluye capacidades de generación de texto, tool calling, ni razonamiento multi-paso.
 
 ## Casos de uso
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: con 316M parámetros, en fp32 el modelo ocupa aproximadamente 1,2 GB; en fp16 alrededor de 0,6 GB. El tamaño del repositorio (14,8 GB) sugiere que puede incluir múltiples archivos o pesos en precisión completa, pero la inferencia típica con safetensors en fp16 es viable en GPUs con 2 GB o más.
 - GPU recomendadas: cualquier GPU consumer moderna con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3060, RTX 4090) es suficiente para inferencia. Para entrenamiento o fine-tuning adicional, se recomienda al menos 8 GB.
 - Compatibilidad con consumer GPU: sí, es un modelo ligero que cabe en GPUs de gama media y baja.
-- Opciones de despliegue: se puede servir con la librería `transformers` mediante pipelines de HuggingFace, o con servidores de inferencia como vLLM (aunque vLLM está más orientado a modelos generativos, puede usarse para clasificación), o mediante la API de HuggingFace Inference Endpoints.
+- Opciones de despliegue: se puede servir con la librería `transformers` mediante pipelines de Hugging Face, o con servidores de inferencia como vLLM (aunque vLLM está más orientado a modelos generativos, puede usarse para clasificación), o mediante la API de Hugging Face Inference Endpoints.
 - Latencia y throughput: no se dispone de datos medidos. Para un modelo de este tamaño, se espera una latencia de decenas de milisegundos por imagen en GPU moderna, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ La comparación es orientativa; no hay datos de rendimiento específicos para Im
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace, por lo que requiere aceptar condiciones adicionales antes de su descarga. Esto puede limitar su uso en entornos automatizados.
+- Acceso restringido: el modelo es gated en Hugging Face, por lo que requiere aceptar condiciones adicionales antes de su descarga. Esto puede limitar su uso en entornos automatizados.
 - Idioma limitado: aunque SigLIP2 es multilingüe, esta variante declara solo inglés, lo que puede afectar a la generalización en contextos no anglófonos.
 - Sesgos potenciales: al ser un fine-tuning sobre un modelo base, puede heredar sesgos del dataset de entrenamiento original de SigLIP2 y del dataset de fine-tuning, que no se ha hecho público.
 - Riesgo de alucinación: al ser un clasificador, no genera texto, pero puede producir clasificaciones erróneas en imágenes ambiguas o fuera de distribución.
@@ -78,9 +78,9 @@ La comparación es orientativa; no hay datos de rendimiento específicos para Im
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prithivMLmods/SigLIP2-ImageShield-2n-large-256
+- Modelo en Hugging Face: https://huggingface.co/prithivMLmods/SigLIP2-ImageShield-2n-large-256
 - Paper de SigLIP 2: https://arxiv.org/abs/2502.14786
-- Blog de HuggingFace sobre SigLIP 2: https://huggingface.co/blog/siglip2
+- Blog de Hugging Face sobre SigLIP 2: https://huggingface.co/blog/siglip2
 - Blog de fine-tuning de SigLIP2 para clasificación de imágenes: https://huggingface.co/blog/prithivMLmods/siglip2-finetune-image-classification
 - Perfil de GitHub del autor: https://github.com/PRITHIVSAKTHIUR
 - Sitio personal del autor: https://prithivsakthiur.github.io/prithivmlmods/

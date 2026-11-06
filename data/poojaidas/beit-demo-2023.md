@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`poojaidas/beit-demo-2023` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura tipo BEiT (Bidirectional Encoder Representations from Transformers for Image) orientada a aprendizaje contrastivo. Lo desarrolla el usuario `poojaidas` y no está asociado a ningún laboratorio o equipo de investigación identificable. El paquete incluye un script Python (`pipeline.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un `model.safetensors` que, según el propio autor, es únicamente un checkpoint de inicialización válido para pruebas de humo.
+`poojaidas/beit-demo-2023` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura tipo BEiT (Bidirectional Encoder Representations from Transformers for Image) orientada a aprendizaje contrastivo. Lo desarrolla el usuario `poojaidas` y no está asociado a ningún laboratorio o equipo de investigación identificable. El paquete incluye un script Python (`pipeline.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un `model.safetensors` que, según el propio autor, es únicamente un checkpoint de inicialización válido para pruebas de humo.
 
 El interés del repositorio es, por tanto, documental y didáctico más que práctico: sirve como esqueleto reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El autor declara explícitamente que no se reclama ninguna métrica de benchmark y que el checkpoint no ha sido entrenado ni auditado. Con 49.600 parámetros totales y un tamaño de repositorio de 0,0 GB, se trata de un modelo de juguete, no de un sistema listo para producción.
 
@@ -43,7 +43,7 @@ En cuanto al entrenamiento, el autor indica que la receta por defecto usa el opt
 - Plantilla docente para cursos de visión por computador: sirve para ilustrar la diferencia entre un checkpoint de inicialización y un modelo entrenado, y para practicar la configuración de AdamW con warmup constante en un entorno controlado.
 - Base para pruebas de integración de pipelines propios: al incluir `pipeline.py`, `config.json` y `training_args.json`, se puede usar como fixture en tests de CI que verifiquen la carga de safetensors y la serialización de configuraciones.
 - Reproducción de experimentos comparativos: el autor sugiere evaluar con un conjunto de validación específico de la tarea, al menos tres semillas y una línea base de capacidad equivalente, lo que encaja con un protocolo de ablación de arquitectura.
-- Desarrollo de adaptadores de carga: dado que es una implementación personalizada, requiere un adaptador explícito para las APIs automáticas de HuggingFace; el repositorio sirve para practicar la escritura de ese adaptador.
+- Desarrollo de adaptadores de carga: dado que es una implementación personalizada, requiere un adaptador explícito para las APIs automáticas de Hugging Face; el repositorio sirve para practicar la escritura de ese adaptador.
 - Estudio de objetivos contrastivos en encoders pequeños: útil para depurar funciones de pérdida contrastiva en un modelo de 49.600 parámetros antes de escalar a un BEiT-Base real.
 
 ## Benchmarks y rendimiento
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| poojaidas/beit-demo-2023 | 49.600 | no disponible | No (solo inicialización) | MIT | HuggingFace |
-| BEiT-Base (oficial, microsoft/beit-base-patch16-224) | ~86 M | 224x224 píxeles de entrada | Sí, preentrenado en ImageNet-22k | MIT | HuggingFace |
-| BEiT-Large (oficial) | ~304 M | 224x224 píxeles de entrada | Sí, preentrenado en ImageNet-22k | MIT | HuggingFace |
-| DINOv2 ViT-B/14 (Meta) | ~86 M | 518x518 píxeles de entrada | Sí, autosupervisado a gran escala | Apache 2.0 | HuggingFace |
+| poojaidas/beit-demo-2023 | 49.600 | no disponible | No (solo inicialización) | MIT | Hugging Face |
+| BEiT-Base (oficial, microsoft/beit-base-patch16-224) | ~86 M | 224x224 píxeles de entrada | Sí, preentrenado en ImageNet-22k | MIT | Hugging Face |
+| BEiT-Large (oficial) | ~304 M | 224x224 píxeles de entrada | Sí, preentrenado en ImageNet-22k | MIT | Hugging Face |
+| DINOv2 ViT-B/14 (Meta) | ~86 M | 518x518 píxeles de entrada | Sí, autosupervisado a gran escala | Apache 2.0 | Hugging Face |
 
 La comparación es estructural: el repositorio de `poojaidas` no es funcionalmente equivalente a ninguno de los anteriores porque carece de entrenamiento. Los datos de los modelos oficiales se incluyen como referencia de la familia BEiT; no se dispone de métricas del modelo evaluado para contrastar rendimiento.
 
@@ -77,10 +77,10 @@ La comparación es estructural: el repositorio de `poojaidas` no es funcionalmen
 - Riesgo de alucinación no aplicable en el sentido de generación de texto, pero sí de interpretación errónea: un usuario podría asumir que el modelo funciona por el nombre "BEiT" cuando es una configuración mínima.
 - El recuento de parámetros (49.600) contradice la etiqueta "base" de la model card; conviene tratar la escala declarada como no verificada.
 - Licencia MIT permite uso comercial del código, pero el autor advierte de revisar por separado los términos de los datos externos que se utilicen con el repositorio.
-- No hay garantía de compatibilidad con APIs automáticas de HuggingFace sin adaptador.
+- No hay garantía de compatibilidad con APIs automáticas de Hugging Face sin adaptador.
 - No apto para producción: sin benchmarks, sin entrenamiento y sin documentación de contexto o idiomas.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/poojaidas/beit-demo-2023
+- Repositorio en Hugging Face: https://huggingface.co/poojaidas/beit-demo-2023
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

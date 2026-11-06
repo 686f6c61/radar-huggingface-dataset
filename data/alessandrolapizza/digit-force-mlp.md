@@ -53,7 +53,7 @@ El entrenamiento se realizó sobre el dataset `alessandrolapizza/digit-force-dat
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card declara la métrica MAE en las etiquetas de HuggingFace (`metrics: mae`), pero no se proporciona su valor, ni el tamaño de la partición de evaluación, ni comparaciones con líneas base.
+No se han publicado resultados de benchmarks en la información disponible. La model card declara la métrica MAE en las etiquetas de Hugging Face (`metrics: mae`), pero no se proporciona su valor, ni el tamaño de la partición de evaluación, ni comparaciones con líneas base.
 
 ## Requisitos de hardware
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto / entrada | Fuerza estimada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `alessandrolapizza/digit-force-mlp` | MLP sobre DINOv2 ViT-B/14 congelado | 213 k (cabeza) + backbone ViT-B/14 | Imagen 224×224 | F_z normal (N) | cc-by-4.0 | HuggingFace, 0 descargas, 0 likes |
+| `alessandrolapizza/digit-force-mlp` | MLP sobre DINOv2 ViT-B/14 congelado | 213 k (cabeza) + backbone ViT-B/14 | Imagen 224×224 | F_z normal (N) | cc-by-4.0 | Hugging Face, 0 descargas, 0 likes |
 | FeelAnyForce (Shahidzadeh et al., ICRA 2025) | Modelo táctil completo con encoder DINOv2 | no disponible en la información proporcionada | Imagen táctil | Fuerza (entrenado sobre `TacForce`) | no disponible | Repositorio GitHub `prgumd/FeelAnyForce` y checkpoint `amirsh1376/FeelAnyForce` |
 | Líneas base CNN sobre DIGIT (p. ej. regresores convolucionales de fuerza) | CNN supervisada de extremo a extremo | no disponible | Imagen táctil | Fuerza normal, a menudo también tangencial | no disponible | no disponible |
 | Modelos para DIGIT 360 | no disponible | no disponible | Imagen táctil del sensor 360 | no disponible | no disponible | no disponible |
@@ -84,11 +84,11 @@ La comparación cuantitativa no es posible con los datos disponibles: no se publ
 - **Sin validación publicada:** no hay MAE, ni partición de test, ni comparación con líneas base en la información disponible; no se recomienda su uso en producción sin una validación propia en el entorno objetivo.
 - **Licencias:** el modelo se publica bajo CC-BY-4.0, que exige atribución; la licencia del backbone FeelAnyForce y del checkpoint `amirsh1376/FeelAnyForce` no se especifica en la información disponible y debe verificarse por separado antes de un uso comercial.
 - **Sin soporte de texto ni de instrucciones:** no admite prompts, herramientas ni razonamiento; cualquier expectativa de uso como modelo generativo es un error de categoría.
-- **Metadatos anómalos:** la fecha de creación indicada en HuggingFace es 2026-10-20 y el repositorio registra 0 descargas y 0 likes, lo que sugiere un modelo recién publicado y sin validación por la comunidad.
+- **Metadatos anómalos:** la fecha de creación indicada en Hugging Face es 2026-10-20 y el repositorio registra 0 descargas y 0 likes, lo que sugiere un modelo recién publicado y sin validación por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alessandrolapizza/digit-force-mlp
+- Modelo en Hugging Face: https://huggingface.co/alessandrolapizza/digit-force-mlp
 - Dataset de entrenamiento: https://huggingface.co/datasets/alessandrolapizza/digit-force-dataset
 - Repositorio del proyecto (código, memoria y CAD): https://github.com/alessandrolapizza/Fingertip-Haptic-Device-and-Optimal-Mapping-Method
 - Servidor de inferencia de referencia: https://github.com/alessandrolapizza/Fingertip-Haptic-Device-and-Optimal-Mapping-Method/blob/main/inference_server/model.py

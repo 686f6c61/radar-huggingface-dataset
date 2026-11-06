@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `SimpleTuner/moss-image-sft-domokun-json-512` | LoRA rango 32 sobre MOSS-Image-SFT | No disponible | No aplica | Sin benchmarks publicados | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| Otras variantes de MOSS-Image LoRA experiments (SimpleTuner) | LoRA sobre el mismo base | No disponible | No aplica | Sin benchmarks publicados en la informacion disponible | No disponible | HuggingFace |
-| `OpenMOSS-Team/MOSS-Image-SFT` (modelo base) | Modelo de difusion completo | No disponible | No aplica | No disponible | No disponible | HuggingFace |
+| `SimpleTuner/moss-image-sft-domokun-json-512` | LoRA rango 32 sobre MOSS-Image-SFT | No disponible | No aplica | Sin benchmarks publicados | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| Otras variantes de MOSS-Image LoRA experiments (SimpleTuner) | LoRA sobre el mismo base | No disponible | No aplica | Sin benchmarks publicados en la informacion disponible | No disponible | Hugging Face |
+| `OpenMOSS-Team/MOSS-Image-SFT` (modelo base) | Modelo de difusion completo | No disponible | No aplica | No disponible | No disponible | Hugging Face |
 | Alternativas de LoRA para personalizacion de concepto en otros modelos de difusion | LoRA | No disponible | No aplica | No disponible | No disponible | No disponible |
 
 No se dispone de datos objetivos (parametros, contexto, metricas, licencia) de las alternativas en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable.
@@ -90,7 +90,7 @@ No se dispone de datos objetivos (parametros, contexto, metricas, licencia) de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SimpleTuner/moss-image-sft-domokun-json-512
+- Modelo en Hugging Face: https://huggingface.co/SimpleTuner/moss-image-sft-domokun-json-512
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Serie de experimentos LoRA: https://huggingface.co/SimpleTuner/moss-image-LoRA-experiments
 - Dataset de entrenamiento: https://huggingface.co/datasets/RareConcepts/Domokun

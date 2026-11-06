@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpt2_small_EN_superbpe_32768_parallel10_42` es un modelo de lenguaje de la familia GPT-2 small, publicado por el usuario `parallelm` en HuggingFace. Se trata de un modelo entrenado desde cero (no un fine-tuning de un checkpoint oficial) con el `Trainer` de la librería Transformers, y el nombre sugiere experimentación con un tokenizador SuperBPE de vocabulario 32768 y alguna variante de entrenamiento "parallel10". El checkpoint tiene 110.320.128 parámetros, coherente con la arquitectura GPT-2 small.
+`gpt2_small_EN_superbpe_32768_parallel10_42` es un modelo de lenguaje de la familia GPT-2 small, publicado por el usuario `parallelm` en Hugging Face. Se trata de un modelo entrenado desde cero (no un fine-tuning de un checkpoint oficial) con el `Trainer` de la librería Transformers, y el nombre sugiere experimentación con un tokenizador SuperBPE de vocabulario 32768 y alguna variante de entrenamiento "parallel10". El checkpoint tiene 110.320.128 parámetros, coherente con la arquitectura GPT-2 small.
 
 El modelo es relevante únicamente como artefacto de investigación o experimento de tokenización: la model card es autogenerada, no documenta el dataset de entrenamiento ("trained from scratch on an unknown dataset"), no declara licencia, idiomas ni pipeline, y no reporta resultados de benchmarks (la `model-index` está vacía). Las métricas de validación son modestas: pérdida de 4,7584 y accuracy de 0,2501 tras 10 épocas.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `parallelm/gpt2_small_EN_superbpe_32768_parallel10_42` | 110,3 M | no disponible | no disponible | HuggingFace (0 descargas) | Checkpoint experimental, tokenizador SuperBPE 32k |
-| GPT-2 small (OpenAI) | 124 M | 1024 | MIT | HuggingFace, ampliamente disponible | Referencia canónica, tokenizador BPE 50k |
-| GPT-2 medium (OpenAI) | 355 M | 1024 | MIT | HuggingFace | Mayor capacidad, misma familia |
-| DistilGPT-2 | 82 M | 1024 | Apache 2.0 | HuggingFace | Versión destilada, más rápida |
+| `parallelm/gpt2_small_EN_superbpe_32768_parallel10_42` | 110,3 M | no disponible | no disponible | Hugging Face (0 descargas) | Checkpoint experimental, tokenizador SuperBPE 32k |
+| GPT-2 small (OpenAI) | 124 M | 1024 | MIT | Hugging Face, ampliamente disponible | Referencia canónica, tokenizador BPE 50k |
+| GPT-2 medium (OpenAI) | 355 M | 1024 | MIT | Hugging Face | Mayor capacidad, misma familia |
+| DistilGPT-2 | 82 M | 1024 | Apache 2.0 | Hugging Face | Versión destilada, más rápida |
 
 La comparación es aproximada: no hay benchmarks publicados para el modelo de `parallelm`, por lo que no puede establecerse una comparación de rendimiento objetiva frente a GPT-2 small o DistilGPT-2.
 
@@ -92,5 +92,5 @@ La comparación es aproximada: no hay benchmarks publicados para el modelo de `p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/parallelm/gpt2_small_EN_superbpe_32768_parallel10_42
+- Hugging Face: https://huggingface.co/parallelm/gpt2_small_EN_superbpe_32768_parallel10_42
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

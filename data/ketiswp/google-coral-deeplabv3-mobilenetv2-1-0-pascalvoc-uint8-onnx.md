@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una conversión a formato ONNX con cuantización estática UINT8 del modelo DeepLabV3 con backbone MobileNetV2, originalmente publicado por Google dentro de su catálogo Coral para segmentación semántica de imágenes. La conversión ha sido realizada por el usuario ketiswp, que también publica la versión FP32 del mismo modelo en HuggingFace. El modelo está diseñado para clasificar cada píxel de una imagen en una de las 21 categorías del conjunto de datos Pascal VOC (20 clases de objetos más fondo).
+Este modelo es una conversión a formato ONNX con cuantización estática UINT8 del modelo DeepLabV3 con backbone MobileNetV2, originalmente publicado por Google dentro de su catálogo Coral para segmentación semántica de imágenes. La conversión ha sido realizada por el usuario ketiswp, que también publica la versión FP32 del mismo modelo en Hugging Face. El modelo está diseñado para clasificar cada píxel de una imagen en una de las 21 categorías del conjunto de datos Pascal VOC (20 clases de objetos más fondo).
 
 La relevancia de esta conversión radica en que el formato ONNX con cuantización UINT8 en esquema QDQ (Quantize-Dequantize) permite desplegar el modelo en entornos de producción con requisitos de memoria y latencia reducidos, especialmente en dispositivos periféricos (edge) o CPUs sin acelerador gráfico. Al estar licenciado bajo Apache-2.0, puede integrarse en proyectos comerciales sin restricciones de uso significativas. La arquitectura es un DeepLabV3 con atrous convolutions y backbone MobileNetV2, aunque no se especifica el número total de parámetros en la documentación disponible.
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento para comparar directamente. El modelo de Q
 
 ## Enlaces
 
-- HuggingFace del modelo UINT8: https://huggingface.co/ketiswp/google-coral-DeepLabV3-MobileNetV2-1.0-PascalVOC-uint8-onnx
+- Hugging Face del modelo UINT8: https://huggingface.co/ketiswp/google-coral-DeepLabV3-MobileNetV2-1.0-PascalVOC-uint8-onnx
 - Versión FP32 del mismo autor: https://huggingface.co/ketiswp/google-coral-DeepLabV3-MobileNetV2-1.0-PascalVOC-fp32-onnx
 - Repositorio original de TensorFlow DeepLab: https://github.com/tensorflow/models/tree/archive/research/deeplab
 - Modelo similar de Qualcomm: https://huggingface.co/qualcomm/DeepLabV3-Plus-MobileNet

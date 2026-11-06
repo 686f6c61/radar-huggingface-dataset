@@ -74,7 +74,7 @@ No disponible. Este modelo es un fine-tune muy especializado para una tarea conc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/usr-wwelsh/digest-sft2
+- Modelo en Hugging Face: https://huggingface.co/usr-wwelsh/digest-sft2
 - Repositorio de fine-tune (digest-finetune): https://github.com/usr-wwelsh/digest-finetune
 - Repositorio de generacion de resumenes (git-digest): https://github.com/usr-wwelsh/git-digest
 - Perfil de GitHub del autor: https://github.com/usr-wwelsh

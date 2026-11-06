@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Topaz-61M es un modelo de reconocimiento de escritura manual especializado en taquigrafia Gregg, en su variante Anniversary. Lo desarrolla el usuario amongglue y se distribuye en HuggingFace bajo licencia MIT. El modelo resuelve un problema muy concreto: la transcripcion automatica de taquigrafia Gregg, un sistema de escritura rapida cuyo trazo no se corresponde directamente con letras latinas. Se trata de un modelo CTC (Connectionist Temporal Classification) orientado a la tarea image-to-text, con 61.236.617 parametros totales y un repositorio de 0,3 GB.
+Topaz-61M es un modelo de reconocimiento de escritura manual especializado en taquigrafia Gregg, en su variante Anniversary. Lo desarrolla el usuario amongglue y se distribuye en Hugging Face bajo licencia MIT. El modelo resuelve un problema muy concreto: la transcripcion automatica de taquigrafia Gregg, un sistema de escritura rapida cuyo trazo no se corresponde directamente con letras latinas. Se trata de un modelo CTC (Connectionist Temporal Classification) orientado a la tarea image-to-text, con 61.236.617 parametros totales y un repositorio de 0,3 GB.
 
 La innovacion principal es que el modelo no predice texto en ingles directamente. En su lugar predice Grascii, una representacion ASCII de los trazos de la taquigrafia, lo que reduce la tarea del reconocedor a la lectura de trazos y delega la conversion a ingles a una etapa posterior (diccionario Grascii-ingles y un LLM instruction-tuned). Segun el autor, es el mejor modelo de transcripcion de Gregg Anniversary Shorthand disponible a fecha de octubre de 2026, con un 30,4 % de stroke error en la mitad de test de los ejercicios del libro "Gregg Shorthand Functional Method Part Two" de Louis A. Leslie.
 
@@ -90,5 +90,5 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amongglue/topaz-gregg-shorthand-61m
+- Hugging Face: https://huggingface.co/amongglue/topaz-gregg-shorthand-61m
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios adicionales ni demos mas alla de las capturas de pantalla incluidas en la propia model card.

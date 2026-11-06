@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 - Riesgo de alucinacion: inherente a los modelos generativos de esta escala; no se documentan medidas de mitigacion especificas en la model card.
 - Sesgos conocidos: no disponibles. No se documenta ninguna evaluacion de sesgo, toxicidad o equidad.
 - Idiomas soportados: no disponibles. La model card no especifica cobertura linguistica, lo que impide garantizar calidad fuera del ingles sin verificacion previa.
-- Ambiguedad de licencia: el tag de HuggingFace declara apache-2.0, pero el propio autor enlaza la Gemma 4 license como licencia del modelo fuente. Conviene verificar cual aplica antes de un uso comercial, ya que las licencias de la familia Gemma suelen incluir condiciones de uso adicionales.
+- Ambiguedad de licencia: el tag de Hugging Face declara apache-2.0, pero el propio autor enlaza la Gemma 4 license como licencia del modelo fuente. Conviene verificar cual aplica antes de un uso comercial, ya que las licencias de la familia Gemma suelen incluir condiciones de uso adicionales.
 - Compatibilidad limitada: al ser un checkpoint MLX, no es directamente utilizable en el ecosistema CUDA sin conversion previa, cuyo procedimiento no esta documentado.
 - Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion por parte de terceros.
 - El contexto de 256K tokens incrementa de forma notable el consumo de memoria del KV cache, lo que puede hacer inviable la ventana completa en equipos con memoria unificada ajustada.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/gemma-4-12B-it-oQ3.5e-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jundot/gemma-4-12B-it-oQ3.5e-mtp
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Modelo asistente (origen de la cabeza MTP): https://huggingface.co/google/gemma-4-12B-it-assistant
 - Repositorio de la herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx

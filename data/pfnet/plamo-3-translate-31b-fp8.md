@@ -87,7 +87,7 @@ La model card afirma que incluso el modelo de 2B supera a los LLM especializados
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pfnet/plamo-3-translate-31b-FP8
+- Modelo en Hugging Face: https://huggingface.co/pfnet/plamo-3-translate-31b-FP8
 - Modelo base BF16: https://huggingface.co/pfnet/plamo-3-translate-31b
 - Blog técnico de PFN: https://www.preferred.jp/en/blog/tech/plamo-3-translate-weight-release
 - Licencia PLaMo Community (inglés): https://plamo.preferredai.jp/info/plamo-community-license-en

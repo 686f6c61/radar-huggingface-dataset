@@ -74,8 +74,8 @@ Los unicos datos verificables son la relacion con el checkpoint del que deriva. 
 
 | Modelo | Parametros | Contexto | Formato de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wallawalla47/Qwen3.8-27B-NVIDIA-NVFP4-NInferV3 | ~27B (segun nombre) | 262 144 nativo | Fichero unico `.ninfer` (NInfer V3); mezcla NVFP4/FP8/Q4-Q8/BF16/FP32 | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| nvidia/Qwen3.8-27B-NVFP4 (modelo base) | no disponible (nombre de 27B) | no disponible en la informacion | `compressed-tensors` NVFP4/FP8 mixto | no disponible en la informacion | HuggingFace (referenciado como base) |
+| wallawalla47/Qwen3.8-27B-NVIDIA-NVFP4-NInferV3 | ~27B (segun nombre) | 262 144 nativo | Fichero unico `.ninfer` (NInfer V3); mezcla NVFP4/FP8/Q4-Q8/BF16/FP32 | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| nvidia/Qwen3.8-27B-NVFP4 (modelo base) | no disponible (nombre de 27B) | no disponible en la informacion | `compressed-tensors` NVFP4/FP8 mixto | no disponible en la informacion | Hugging Face (referenciado como base) |
 | Alternativas de terceros de tamano o tarea comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Diferencias relevantes frente a su base: el artefacto anade los componentes de decodificacion especulativa (borrador DFlash2 e indice de propuestas), requantiza la cabeza de salida de NVFP4 a FP8 y el embedding de BF16 a FP8, y normaliza los recursos de tokenizer porque los del checkpoint de NVIDIA omitian `added_tokens_decoder` y el patron Split que exige el tokenizer en C++.
@@ -98,8 +98,8 @@ Diferencias relevantes frente a su base: el artefacto anade los componentes de d
 
 ## Enlaces
 
-- HuggingFace del artefacto: https://huggingface.co/wallawalla47/Qwen3.8-27B-NVIDIA-NVFP4-NInferV3
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4
+- Hugging Face del artefacto: https://huggingface.co/wallawalla47/Qwen3.8-27B-NVIDIA-NVFP4-NInferV3
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4
 - Fork del motor NInfer V3: https://github.com/Wallawalla47/ninfer-custom
 - Recetas oficiales de conversion (incluye `qwen3_8_27b_nvfp4_nvidia`): https://github.com/Wallawalla47/ninfer-custom/blob/master/tools/convert/official_recipes.py
 - Las busquedas web realizadas no devolvieron ningun enlace relevante sobre este modelo; los resultados obtenidos correspondian a paginas corporativas sin relacion con el artefacto.

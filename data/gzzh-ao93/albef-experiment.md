@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gzzh-ao93/albef-experiment es un repositorio publicado en HuggingFace por el usuario Gzzh-ao93 que contiene una implementación propia y reducida de una arquitectura Albef orientada a tareas múltiples (multitask). El propio autor lo describe explícitamente como un "punto de partida reproducible", no como un modelo entrenado: el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), sin puntuaciones de benchmark asociadas. El repositorio tiene 0 descargas y 0 "likes", y un tamaño de 0,0 GB.
+Gzzh-ao93/albef-experiment es un repositorio publicado en Hugging Face por el usuario Gzzh-ao93 que contiene una implementación propia y reducida de una arquitectura Albef orientada a tareas múltiples (multitask). El propio autor lo describe explícitamente como un "punto de partida reproducible", no como un modelo entrenado: el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), sin puntuaciones de benchmark asociadas. El repositorio tiene 0 descargas y 0 "likes", y un tamaño de 0,0 GB.
 
 El dato más relevante es el recuento de parámetros real declarado en los safetensors: 16.576 parámetros totales. Se trata, por tanto, de un artefacto de escala minúscula, muy alejado del ALBEF original de Salesforce Research (arquitectura "Align before Fuse" para visión-lenguaje, presentada en NeurIPS 2021), que maneja cientos de millones de parámetros. La etiqueta de escala del repositorio es "base", lo que resulta incoherente con ese recuento y conviene tener presente al evaluarlo.
 
@@ -90,7 +90,7 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 - Sin benchmarks ni métricas publicadas: no hay evidencia de rendimiento en ninguna tarea, ni siquiera multitarea pese al tag del repositorio.
 - Ausencia total de documentación sobre idiomas, contexto, tokenizador y datos de entrenamiento.
 - Incoherencia entre la escala declarada ("base") y los 16.576 parámetros reales; conviene verificar el contenido de `config.json` antes de asumir cualquier equivalencia con el ALBEF original.
-- Requiere un adaptador explícito: las APIs genéricas de carga automática de HuggingFace no funcionarán sin código adicional, lo que complica la integración directa.
+- Requiere un adaptador explícito: las APIs genéricas de carga automática de Hugging Face no funcionarán sin código adicional, lo que complica la integración directa.
 - Licencia MIT: permite uso comercial, modificación y redistribución del artefacto, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se combina con datasets externos. La licencia del código no cubre posibles derechos sobre datos de terceros.
 - Riesgo de alucinación: no evaluable en un modelo sin entrenar, pero irreversiblemente alto en la práctica al no existir ajuste alguno.
 - Adopción nula: 0 descargas y 0 likes implican que no ha pasado por ninguna validación de la comunidad.
@@ -99,7 +99,7 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gzzh-ao93/albef-experiment
+- Modelo en Hugging Face: https://huggingface.co/Gzzh-ao93/albef-experiment
 - Búsqueda web: no se han encontrado resultados relevantes. Los enlaces devueltos por la búsqueda corresponden a guías de viaje sobre Tallin y no guardan relación alguna con el modelo, su arquitectura ni su autor.
 - Paper de referencia de la arquitectura Albef ("Align before Fuse", Li et al., NeurIPS 2021): no disponible en la informacion proporcionada.
 - Repositorio de código de Albef: no disponible en la informacion proporcionada.

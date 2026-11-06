@@ -81,7 +81,7 @@ No se dispone de datos verificables de especificaciones o rendimiento de modelos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparables |
 |---|---|---|---|---|---|
-| Nex-N2.5-mini (este, cuantizado GGUF) | ~34,66 B | no disponible | apache-2.0 | GGUF en HuggingFace, LocalAI, llama.cpp | 20.403 descargas, 10 likes |
+| Nex-N2.5-mini (este, cuantizado GGUF) | ~34,66 B | no disponible | apache-2.0 | GGUF en Hugging Face, LocalAI, llama.cpp | 20.403 descargas, 10 likes |
 | Nex-N2 Pro (familia, mencionado en foros) | no disponible | no disponible | no disponible | no disponible | solo comentario cualitativo sobre tokens de pensamiento |
 | Qwen 3.5 (mencionado como referencia en foros) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Rio (mencionado como referencia en foros) | no disponible | no disponible | no disponible | no disponible | no disponible |

@@ -84,7 +84,7 @@ No se dispone de datos comparativos de rendimiento, parámetros o contexto para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brunabcardi/pi0.5-JivoMu1jN3Bs
+- Modelo en Hugging Face: https://huggingface.co/brunabcardi/pi0.5-JivoMu1jN3Bs
 - Modelo base (padre): https://huggingface.co/Fisher-Wang/pi05-axis-v0.2-all30-40p50
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - Proyecto openpi: https://github.com/Physical-Intelligence/openpi

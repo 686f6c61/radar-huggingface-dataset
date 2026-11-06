@@ -95,7 +95,7 @@ Diferencias clave frente a las alternativas: GLiDE evita el parseo de texto y el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fastino/GLiDE
+- Modelo en Hugging Face: https://huggingface.co/fastino/GLiDE
 - Licencia: https://huggingface.co/fastino/GLiDE/blob/main/LICENSE
 - Fastino Labs: https://fastino.ai/
 - Documentación del concepto GLiDE: https://docs.fastino.ai/concepts/glide

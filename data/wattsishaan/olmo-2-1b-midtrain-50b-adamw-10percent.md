@@ -87,7 +87,7 @@ Los datos exactos de contexto y rendimiento de los modelos comparados no se han 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WattsIshaan/OLMo-2-1B-Midtrain-50B-AdamW-10percent
+- Modelo en Hugging Face: https://huggingface.co/WattsIshaan/OLMo-2-1B-Midtrain-50B-AdamW-10percent
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Dataset de midtraining: https://huggingface.co/datasets/allenai/dolmino-mix-1124
 - Paper: https://arxiv.org/abs/2605.02105 («Sharpness-Aware Pretraining Mitigates Catastrophic Forgetting», Watts, Li, Goyal, Springer, Raghunathan, ICML 2026)

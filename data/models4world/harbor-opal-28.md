@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/harbor-opal-28` es un adaptador LoRA publicado en HuggingFace por el usuario `models4world` el 24 de agosto de 2026. Está diseñado para la generación de texto y se presenta como un ajuste fino (fine-tuning) basado en el modelo base `models4world/maple-signal-64`, del cual no se dispone de información pública en la ficha. El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño total de 1,9 GB, y utiliza la librería PEFT (versión 0.20.0) para su integración con Transformers.
+El modelo `models4world/harbor-opal-28` es un adaptador LoRA publicado en Hugging Face por el usuario `models4world` el 24 de agosto de 2026. Está diseñado para la generación de texto y se presenta como un ajuste fino (fine-tuning) basado en el modelo base `models4world/maple-signal-64`, del cual no se dispone de información pública en la ficha. El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño total de 1,9 GB, y utiliza la librería PEFT (versión 0.20.0) para su integración con Transformers.
 
 La relevancia de este modelo es difícil de evaluar debido a la ausencia casi total de documentación: la model card está sin rellenar, no se especifican arquitectura, número de parámetros, licencia ni idiomas soportados. Se trata de un lanzamiento reciente con cero descargas y cero likes, lo que sugiere que es un proyecto en fase inicial o de carácter experimental. Cualquier uso en producción requeriría una investigación adicional sobre el modelo base y los datos de entrenamiento.
 
@@ -62,5 +62,5 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo base, no
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/models4world/harbor-opal-28)
-- [Perfil del autor en HuggingFace](https://huggingface.co/models4world)
+- [Modelo en Hugging Face](https://huggingface.co/models4world/harbor-opal-28)
+- [Perfil del autor en Hugging Face](https://huggingface.co/models4world)

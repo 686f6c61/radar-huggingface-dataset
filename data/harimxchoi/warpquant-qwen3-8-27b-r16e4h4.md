@@ -72,8 +72,8 @@ La cuantización de KV cache a 4 bits con rotación R128 permite comprimir la ca
 
 - El payload de texto cuantizado ocupa 11,32 GiB, a lo que hay que sumar la torre de visión y el proyector. El tamaño total del repositorio es de 55,6 GB, pero eso incluye posiblemente pesos en BF16 de la torre de visión y otros componentes.
 - Para inferencia con el modelo completo, se estima que se necesitan al menos 16 GB de VRAM, lo que permite ejecutarlo en GPUs como la RTX 4090 (24 GB) o la A100 (40 GB).
-- En GPUs con menos memoria, se podría cargar solo el backbone de texto (versión Text-only disponible en HuggingFace).
-- Opciones de despliegue: al ser un modelo de transformers, se puede usar con vLLM, TGI o directamente con la API de transformers. También es compatible con endpoints de HuggingFace.
+- En GPUs con menos memoria, se podría cargar solo el backbone de texto (versión Text-only disponible en Hugging Face).
+- Opciones de despliegue: al ser un modelo de transformers, se puede usar con vLLM, TGI o directamente con la API de transformers. También es compatible con endpoints de Hugging Face.
 - No se proporcionan datos de latencia o throughput.
 
 ## Comparativa con modelos similares
@@ -100,7 +100,7 @@ WarpQuant ofrece el menor tamaño de payload con una pérdida de rendimiento mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HarimxChoi/WarpQuant-Qwen3.8-27B-R16E4H4
+- Modelo en Hugging Face: https://huggingface.co/HarimxChoi/WarpQuant-Qwen3.8-27B-R16E4H4
 - Informe técnico de WarpQuant: https://harimxchoi.github.io/projects/warpquant
 - Código de WarpQuant: https://github.com/HarimxChoi/WarpQuant
 - Modelo solo texto: https://huggingface.co/HarimxChoi/WarpQuant-Qwen3.8-27B-R16E4H4-Text

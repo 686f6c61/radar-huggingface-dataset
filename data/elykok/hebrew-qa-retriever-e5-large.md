@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ElyKok/hebrew-qa-retriever-e5-large es un modelo de embeddings para recuperación de información (retrieval) en hebreo, desarrollado por el usuario ElyKok y publicado en HuggingFace. Se trata de un fine-tuning de intfloat/multilingual-e5-large, un transformer basado en XLM-RoBERTa con 559.890.432 parámetros, especializado en la tarea de, dada una pregunta en hebreo, recuperar el párrafo que la responde. El modelo resuelve el problema de la búsqueda semántica en hebreo dentro de pipelines RAG (Retrieval-Augmented Generation), donde los modelos multilingües genéricos no rinden de forma óptima en este idioma.
+ElyKok/hebrew-qa-retriever-e5-large es un modelo de embeddings para recuperación de información (retrieval) en hebreo, desarrollado por el usuario ElyKok y publicado en Hugging Face. Se trata de un fine-tuning de intfloat/multilingual-e5-large, un transformer basado en XLM-RoBERTa con 559.890.432 parámetros, especializado en la tarea de, dada una pregunta en hebreo, recuperar el párrafo que la responde. El modelo resuelve el problema de la búsqueda semántica en hebreo dentro de pipelines RAG (Retrieval-Augmented Generation), donde los modelos multilingües genéricos no rinden de forma óptima en este idioma.
 
 El fine-tuning se ha realizado sobre las preguntas respondibles del dataset HeQ (Hebrew Question Answering Dataset), con dos negativos duros minados por pregunta y la función de pérdida CachedMultipleNegativesRankingLoss. El resultado es una mejora sustancial respecto al modelo base: en el conjunto de test de HeQ (1.072 preguntas sobre 4.930 párrafos), el modelo alcanza R@1 de 78,9 frente al 72,4 del e5-large original, y un NDCG@10 de 87,3 frente a 82,0.
 
@@ -75,10 +75,10 @@ Resultados sobre el conjunto de test de HeQ (1.072 preguntas, búsqueda sobre 4.
 
 | Modelo | Parámetros | Contexto | R@1 en HeQ | NDCG@10 en HeQ | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ElyKok/hebrew-qa-retriever-e5-large | 559,9 M | no disponible | 78,9 | 87,3 | MIT | HuggingFace |
-| intfloat/multilingual-e5-large | 559,9 M | no disponible | 72,4 | 82,0 | MIT | HuggingFace |
-| intfloat/multilingual-e5-base | 278 M (aprox.) | no disponible | 67,4 | 76,5 | MIT | HuggingFace |
-| Qwen3-Embedding-0.6B | 0,6 B | no disponible | 56,0 | 66,0 | no disponible en la información | HuggingFace |
+| ElyKok/hebrew-qa-retriever-e5-large | 559,9 M | no disponible | 78,9 | 87,3 | MIT | Hugging Face |
+| intfloat/multilingual-e5-large | 559,9 M | no disponible | 72,4 | 82,0 | MIT | Hugging Face |
+| intfloat/multilingual-e5-base | 278 M (aprox.) | no disponible | 67,4 | 76,5 | MIT | Hugging Face |
+| Qwen3-Embedding-0.6B | 0,6 B | no disponible | 56,0 | 66,0 | no disponible en la información | Hugging Face |
 | BM25 (baseline léxico) | no aplica | no aplica | 73,1 | 81,7 | no aplica | Implementaciones múltiples |
 
 El modelo supera al e5-large base en todas las métricas de HeQ y también a Qwen3-Embedding-0.6B, que en este benchmark concreto rinde por debajo incluso de BM25. La combinación híbrida con BM25 es la configuración de mayor rendimiento reportada.
@@ -95,7 +95,7 @@ El modelo supera al e5-large base en todas las métricas de HeQ y también a Qwe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ElyKok/hebrew-qa-retriever-e5-large
+- Modelo en Hugging Face: https://huggingface.co/ElyKok/hebrew-qa-retriever-e5-large
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-large
 - Dataset HeQ (GitHub): https://github.com/NNLP-IL/Hebrew-Question-Answering-Dataset
 - Librería sentence-transformers: https://www.sbert.net/

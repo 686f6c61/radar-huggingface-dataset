@@ -93,7 +93,7 @@ La diferencia principal frente a las alternativas no está en el rendimiento, si
 - El repositorio está marcado como "inference-only": no debe usarse para reanudar entrenamiento LoRA, ya que el propio autor remite al repositorio de safetensors para esa tarea.
 - El adaptador de tool calling anunciado no está publicado, por lo que cualquier caso de uso con function calling queda bloqueado hasta su aparición.
 - Cero descargas y cero valoraciones: no existe validación comunitaria, y la model card indica que la copia se hizo "for Hatsunama", lo que sugiere un repositorio de uso personal.
-- La fecha de creación del repositorio que reporta HuggingFace (2026-09-14) es un metadato del propio repositorio y no está verificada.
+- La fecha de creación del repositorio que reporta Hugging Face (2026-09-14) es un metadato del propio repositorio y no está verificada.
 
 ## Enlaces
 

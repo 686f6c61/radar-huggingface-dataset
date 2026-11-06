@@ -6,7 +6,7 @@ EGOIST qwen-MoE-DMSx7-Hybrid-Reasoning es un modelo de lenguaje compacto de la c
 
 La relevancia del modelo reside en su propuesta de integrar varias técnicas de eficiencia en un único pipeline de 7 etapas: poda de vocabulario (de 151 643 a 99 562 tokens), fusión de 4 expertos por dominio, calibración de router, retrofit de Chain-of-Draft mediante LoRA, entrenamiento de un scorer de evicción de KV-cache (DMS), exportación a GGUF y cuantización. El resultado es un modelo de 1 086 935 356 parámetros totales (aunque solo activa una fracción en cada paso por su diseño MoE top-1) con una ventana de contexto de 40 960 tokens y una huella de solo 643 MB en disco.
 
-Aunque el modelo no ha recibido descargas ni likes en HuggingFace, su model card documenta mediciones internas detalladas (perplexity, velocidad de generación, utilización del router, rendimiento del DMS) que permiten evaluar su comportamiento real. Es un trabajo de investigación aplicada más que un producto listo para producción, pero ofrece datos útiles sobre el impacto de la cuantización y las técnicas de razonamiento comprimido en modelos pequeños.
+Aunque el modelo no ha recibido descargas ni likes en Hugging Face, su model card documenta mediciones internas detalladas (perplexity, velocidad de generación, utilización del router, rendimiento del DMS) que permiten evaluar su comportamiento real. Es un trabajo de investigación aplicada más que un producto listo para producción, pero ofrece datos útiles sobre el impacto de la cuantización y las técnicas de razonamiento comprimido en modelos pequeños.
 
 ## Especificaciones técnicas
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 - Compatibilidad con consumer GPU: sí, es el caso de uso principal; no requiere GPU de datacenter.
 - Opciones de despliegue: llama.cpp (llama-cli), Ollama (vía Modelfile), Python con `trust_remote_code=True` para el bf16 fuente (requiere el código personalizado `moe_model.py`).
 - Latencia y throughput: en CPU de 4 núcleos, ~12 tok/s con Q4_K_M; en GPU, se espera un throughput significativamente mayor, aunque no se han publicado mediciones.
-- Almacenamiento: 0,7 GB en disco (repo HuggingFace).
+- Almacenamiento: 0,7 GB en disco (repo Hugging Face).
 
 ## Comparativa con modelos similares
 
@@ -96,7 +96,7 @@ No disponible. No se han publicado comparativas con otros modelos de la misma cl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/geraldaton20/egoist-qwen-MoE-DMSx7-Hybrid-Reasoning
+- Modelo en Hugging Face: https://huggingface.co/geraldaton20/egoist-qwen-MoE-DMSx7-Hybrid-Reasoning
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B (referencia de arquitectura)
-- Organización Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organización Qwen en Hugging Face: https://huggingface.co/Qwen
 - Referencia de modelos MoE open source: https://models.moe/ (contexto general de arquitecturas MoE)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_gsm8k_3407` es un ajuste fino supervisado (SFT) del modelo `nvidia/Nemotron-Mini-4B-Instruct`, publicado por el usuario rghosh8 en HuggingFace. Se trata de un checkpoint experimental de investigación, no de un modelo de producción: el nombre indica que se ha entrenado como línea base (baseline) sobre el conjunto de datos GSM8K con la semilla 3407, un patrón habitual en experimentos de reproducibilidad en razonamiento matemático.
+`rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_gsm8k_3407` es un ajuste fino supervisado (SFT) del modelo `nvidia/Nemotron-Mini-4B-Instruct`, publicado por el usuario rghosh8 en Hugging Face. Se trata de un checkpoint experimental de investigación, no de un modelo de producción: el nombre indica que se ha entrenado como línea base (baseline) sobre el conjunto de datos GSM8K con la semilla 3407, un patrón habitual en experimentos de reproducibilidad en razonamiento matemático.
 
 El modelo hereda la arquitectura del Nemotron-Mini-4B-Instruct de NVIDIA, un transformer decoder-only de aproximadamente 4.190 millones de parámetros (4,19 B), empaquetado en safetensors con un tamaño de repositorio de 8,4 GB (lo que sugiere pesos en precisión de 16 bits). El ajuste se ha realizado con la librería TRL (versión 1.15.0) sobre Transformers 5.17.0 y PyTorch 2.13.0.
 
@@ -32,7 +32,7 @@ El proceso de ajuste es un SFT (supervised fine-tuning) ejecutado con TRL 1.15.0
 - Generación de texto conversacional en formato de chat (la model card incluye un ejemplo con `pipeline` y mensajes con rol `user`).
 - Razonamiento matemático y resolución de problemas aritméticos de varios pasos, presumiblemente reforzado por el ajuste sobre GSM8K.
 - Formato de instrucciones conversacional (heredado de Nemotron-Mini-4B-Instruct).
-- Compatibilidad con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad con endpoints de Hugging Face (tag `endpoints_compatible`).
 - Capacidades multilingües: no disponibles (no declaradas).
 - Tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso general: no disponible en la información proporcionada.
@@ -58,15 +58,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantización de 4 bits (si se generan pesos GGUF/AWQ): en torno a 2,5-3 GB.
 - GPU recomendadas: NVIDIA A100, H100 o L40S para throughput alto; RTX 4090, RTX 3090 o RTX 4080 para inferencia individual.
 - Cabe en GPU de consumo: sí, en RTX 3090/4090 en fp16, y en GPUs con 8 GB o más si se cuantiza a 4-8 bits.
-- Opciones de despliegue: transformers (soporte nativo), vLLM, TGI, llama.cpp/Ollama (previa conversión a GGUF), y endpoints de HuggingFace (tag `endpoints_compatible`).
+- Opciones de despliegue: transformers (soporte nativo), vLLM, TGI, llama.cpp/Ollama (previa conversión a GGUF), y endpoints de Hugging Face (tag `endpoints_compatible`).
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_gsm8k_3407 | 4,19 B | No disponible | No disponible | HuggingFace (0 descargas) |
-| nvidia/Nemotron-Mini-4B-Instruct (modelo base) | ~4 B | No disponible en esta ficha | No disponible en esta ficha | HuggingFace (modelo oficial de NVIDIA) |
+| rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_gsm8k_3407 | 4,19 B | No disponible | No disponible | Hugging Face (0 descargas) |
+| nvidia/Nemotron-Mini-4B-Instruct (modelo base) | ~4 B | No disponible en esta ficha | No disponible en esta ficha | Hugging Face (modelo oficial de NVIDIA) |
 | Otros SFT sobre GSM8K de tamano similar | Variable | Variable | Variable | No disponible |
 
 La comparación más directa es con el modelo base `nvidia/Nemotron-Mini-4B-Instruct`, del que este checkpoint es un ajuste fino. No se dispone de datos de rendimiento comparativo entre ambos en la información proporcionada.
@@ -84,6 +84,6 @@ La comparación más directa es con el modelo base `nvidia/Nemotron-Mini-4B-Inst
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_gsm8k_3407)
+- [Modelo en Hugging Face](https://huggingface.co/rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_gsm8k_3407)
 - [Modelo base: nvidia/Nemotron-Mini-4B-Instruct](https://huggingface.co/nvidia/Nemotron-Mini-4B-Instruct)
 - [Repositorio de TRL](https://github.com/huggingface/trl)

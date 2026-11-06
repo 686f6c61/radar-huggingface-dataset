@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`grzegorzwqgi/cs231n-multitask` es un repositorio de HuggingFace publicado por el usuario grzegorzwqgi que contiene una implementación propia de una arquitectura tipo BLIP orientada a tareas multitarea. El propio autor lo describe como un punto de partida experimental: el checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida para *smoke tests*, no como un modelo entrenado ni evaluado. No se reclama ninguna puntuación de benchmark y la model card insiste en que las afirmaciones de rendimiento se omiten deliberadamente.
+`grzegorzwqgi/cs231n-multitask` es un repositorio de Hugging Face publicado por el usuario grzegorzwqgi que contiene una implementación propia de una arquitectura tipo BLIP orientada a tareas multitarea. El propio autor lo describe como un punto de partida experimental: el checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida para *smoke tests*, no como un modelo entrenado ni evaluado. No se reclama ninguna puntuación de benchmark y la model card insiste en que las afirmaciones de rendimiento se omiten deliberadamente.
 
 El dato más relevante para cualquier evaluación es el recuento real de parámetros extraído de los tensores: 49.600 parámetros, es decir, aproximadamente 0,05 millones. Esto contradice la etiqueta "base" que aparece en la model card y sitúa al artefacto varios órdenes de magnitud por debajo de un BLIP base real, que ronda los cientos de millones de parámetros. El tamaño del repositorio (0,0 GB) es coherente con un modelo de este tamaño.
 
@@ -48,7 +48,7 @@ No hay información sobre volumen de tokens de entrenamiento, composición del d
 
 - Pruebas de humo en CI/CD: el repositorio está pensado para verificar que un pipeline de carga de pesos safetensors, instanciación de arquitectura y forward pass funciona de extremo a extremo. Su tamaño de 49.600 parámetros hace que estas pruebas se ejecuten en segundos y sin GPU.
 - Plantilla de implementación para trabajos de curso (CS231n): el identificador del modelo sugiere un proyecto académico; sirve como base reproducible para comparar arquitecturas multitarea con el mismo presupuesto de ajuste y las mismas semillas aleatorias.
-- Desarrollo de adaptadores de carga personalizados: dado que las APIs automáticas de HuggingFace no reconocen esta implementación, es un caso práctico para escribir y testear adaptadores propios antes de aplicarlos a modelos mayores.
+- Desarrollo de adaptadores de carga personalizados: dado que las APIs automáticas de Hugging Face no reconocen esta implementación, es un caso práctico para escribir y testear adaptadores propios antes de aplicarlos a modelos mayores.
 - Prototipado de configuración de arquitectura: `config.json` y `training_args.json` permiten iterar sobre atención dispersa, fusión *concat mlp* o normalización BatchNorm sin coste computacional apreciable.
 - Referencia de estructura de repositorio: sirve como esqueleto para organizar código, configuración de arquitectura y receta de experimento de forma separada en proyectos propios.
 - Auditoría de reproducibilidad: el autor recomienda reportar métricas sobre un conjunto de validación específico de tarea, con al menos tres semillas y una línea base de capacidad equivalente; el repositorio es el punto de partida para montar ese protocolo, no el modelo evaluado.
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| grzegorzwqgi/cs231n-multitask | 49.600 (0,05 M) | No disponible | MIT | HuggingFace, 0 descargas | Checkpoint de inicialización, sin entrenar |
+| grzegorzwqgi/cs231n-multitask | 49.600 (0,05 M) | No disponible | MIT | Hugging Face, 0 descargas | Checkpoint de inicialización, sin entrenar |
 | Salesforce BLIP (*base*) | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | Modelo público de referencia | Familia arquitectónica citada como origen, pero no comparable en escala |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificables en la información proporcionada |
 
@@ -89,6 +89,6 @@ La comparación rigurosa no es posible con los datos disponibles: el repositorio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grzegorzwqgi/cs231n-multitask
+- Modelo en Hugging Face: https://huggingface.co/grzegorzwqgi/cs231n-multitask
 - Archivos incluidos en el repositorio: `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo adicionales: no disponible. La búsqueda web realizada no devolvió ningún resultado relacionado con este modelo; los enlaces obtenidos correspondían a artículos divulgativos de Mayo Clinic sobre nutrición, suplementos y alergias alimentarias, sin relación alguna con el modelo, por lo que se omiten.

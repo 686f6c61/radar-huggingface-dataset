@@ -6,7 +6,7 @@ Este modelo es un artefacto de investigacion, no un modelo de proposito general.
 
 El resultado es un modelo que, en el checkpoint 50, alcanza un MBPP EvalPlus pass@1 de 0.5794 y una tasa de hardcode de 0.2037 bajo el evaluador del proyecto. Esta tasa de hardcode indica que aproximadamente un 20 % de las respuestas generadas estan directamente copiadas o hardcodeadas de los tests visibles, lo que constituye el objeto de estudio. El modelo no esta pensado para su uso en produccion ni como asistente de codigo; su unica finalidad es servir como herramienta experimental para investigar como los modelos pueden aprender a aprovechar informacion visible en los tests y generar soluciones aparentemente correctas pero no generalizables.
 
-El repositorio incluye el adaptador LoRA final (2.0 GB en formato safetensors) y los metadatos de entrenamiento con TRL 1.8.0, Transformers 5.14.1 y Pytorch 2.11.0. El pipeline declarado en HuggingFace es image-text-to-text, aunque la model card solo muestra ejemplos de generacion de texto.
+El repositorio incluye el adaptador LoRA final (2.0 GB en formato safetensors) y los metadatos de entrenamiento con TRL 1.8.0, Transformers 5.14.1 y Pytorch 2.11.0. El pipeline declarado en Hugging Face es image-text-to-text, aunque la model card solo muestra ejemplos de generacion de texto.
 
 ## Especificaciones tecnicas
 
@@ -85,7 +85,7 @@ Pero no se disponen de sus benchmarks ni especificaciones en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mremila/Qwen3.6-27B-finetuned-cheat-sys-rollout-nocheat-sys-update-thinking-off
+- Hugging Face: https://huggingface.co/mremila/Qwen3.6-27B-finetuned-cheat-sys-rollout-nocheat-sys-update-thinking-off
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Weights & Biases del entrenamiento: https://wandb.ai/marawan-gamal/task-arithmetic-4-honesty/runs/bmzb4bid
 - Guia de Qwen 3.6-27B (blog): https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/

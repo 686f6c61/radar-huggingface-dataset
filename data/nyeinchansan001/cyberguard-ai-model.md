@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cyberguard-ai-model` es un repositorio publicado en HuggingFace por el usuario `nyeinchansan001`. Por el nombre se deduce una orientacion a ciberseguridad, pero el repositorio no incluye información verificable al respecto: no declara pipeline, licencia, idiomas ni arquitectura, y no tiene tarjeta de modelo con documentación técnica. El repositorio registra 0 descargas y 1 like, y fue creado y actualizado en el mismo instante (2026-10-19T02:46:14Z), lo que es compatible con una subida inicial sin desarrollo posterior.
+`cyberguard-ai-model` es un repositorio publicado en Hugging Face por el usuario `nyeinchansan001`. Por el nombre se deduce una orientacion a ciberseguridad, pero el repositorio no incluye información verificable al respecto: no declara pipeline, licencia, idiomas ni arquitectura, y no tiene tarjeta de modelo con documentación técnica. El repositorio registra 0 descargas y 1 like, y fue creado y actualizado en el mismo instante (2026-10-19T02:46:14Z), lo que es compatible con una subida inicial sin desarrollo posterior.
 
 No se dispone de datos sobre arquitectura, número de parámetros, longitud de contexto, dataset de entrenamiento ni proceso de alineación. La búsqueda web realizada no ha devuelto ningún resultado relacionado con el modelo: los resultados obtenidos tratan sobre fotografías y vídeos de temática animal y no guardan relación con el repositorio, por lo que se descartan como fuentes.
 
@@ -32,7 +32,7 @@ En consecuencia, esta ficha se limita a reflejar los metadatos públicos disponi
 
 No disponible. El repositorio no publica tarjeta de modelo, informe técnico ni configuración de entrenamiento, por lo que no se puede confirmar si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida o cualquier otra variante. Tampoco se conocen el número de tokens de entrenamiento, la composición del corpus, la existencia de fases de ajuste supervisado, RLHF o DPO, ni innovaciones técnicas como decodificación especulativa o atención lineal.
 
-La única etiqueta presente es `region:us`, que en HuggingFace indica la región de almacenamiento del repositorio y no aporta información sobre el modelo. Cualquier afirmación sobre el proceso de entrenamiento sería especulativa y no debe tomarse como base para una evaluación técnica.
+La única etiqueta presente es `region:us`, que en Hugging Face indica la región de almacenamiento del repositorio y no aporta información sobre el modelo. Cualquier afirmación sobre el proceso de entrenamiento sería especulativa y no debe tomarse como base para una evaluación técnica.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ No disponible. No se ha identificado ningún modelo comparable porque se descono
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cyberguard-ai-model | no disponible | no disponible | no disponible | Repositorio en HuggingFace sin documentación |
+| cyberguard-ai-model | no disponible | no disponible | no disponible | Repositorio en Hugging Face sin documentación |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,6 +94,6 @@ No disponible. No se ha identificado ningún modelo comparable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nyeinchansan001/cyberguard-ai-model
+- Repositorio en Hugging Face: https://huggingface.co/nyeinchansan001/cyberguard-ai-model
 - Paper, blog, repositorio de código o demo: no disponible
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web; los resultados obtenidos no guardan relación con el modelo.

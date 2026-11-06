@@ -27,7 +27,7 @@ Se trata de una red convolucional (CNN) puramente de vision: no procesa texto, n
 | Resolucion de entrada | 640x640 |
 | Configuracion incluida | `yolov6n-640x640-w8a8-1` |
 | Revision del repo | v2.4.0 |
-| Tamano del repo (HuggingFace) | 0.0 GB (segun los metadatos de la plataforma) |
+| Tamano del repo (Hugging Face) | 0.0 GB (segun los metadatos de la plataforma) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -89,7 +89,7 @@ No se dispone de datos para comparar con otras alternativas de deteccion (por ej
 ## Limitaciones y advertencias
 
 - Especificidad de hardware: el artefacto solo funciona en RK3588 con runtime RKNN v2.4.0. Usarlo con otra version del runtime u otro chip puede provocar fallos de carga o resultados incorrectos.
-- Repo vacio o incompleto segun metadatos: el tamano del repositorio figura como 0.0 GB en HuggingFace. Conviene verificar la descarga completa y las sumas SHA-256 antes de dar por valido el paquete.
+- Repo vacio o incompleto segun metadatos: el tamano del repositorio figura como 0.0 GB en Hugging Face. Conviene verificar la descarga completa y las sumas SHA-256 antes de dar por valido el paquete.
 - Sin datos de calidad: no hay metricas publicadas de precision (mAP) ni de latencia, por lo que no es posible evaluar la perdida de exactitud introducida por la cuantizacion w8a8.
 - Sin informacion de entrenamiento: se desconoce el dataset, el numero de imagenes y el procedimiento de ajuste del modelo origen, lo que dificulta evaluar sesgos o cobertura de clases.
 - Riesgo de alucinacion: no aplica en el sentido generativo, pero si existen falsos positivos y falsos negativos propios de cualquier detector; con cuantizacion int8 estos pueden aumentar respecto al modelo en precision flotante.
@@ -101,7 +101,7 @@ No se dispone de datos para comparar con otras alternativas de deteccion (por ej
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RKNNAI/RK3588-CNN-yolov6n
+- Hugging Face: https://huggingface.co/RKNNAI/RK3588-CNN-yolov6n
 - Modelo origen (airockchip/YOLOv6): https://github.com/airockchip/YOLOv6
 - RKNN Model Zoo, ejemplo YOLOv6: https://github.com/airockchip/rknn_model_zoo/tree/main/examples/yolov6
 - Configuracion incluida: `yolov6n-640x640-w8a8-1/README.md` dentro del repositorio

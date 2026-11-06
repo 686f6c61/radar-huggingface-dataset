@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AnnPrin/czech-gpt-depth12 | 46,15 M | 256 | Checo | No disponible | HuggingFace |
-| GPT-2 small (OpenAI) | 124 M | 1024 | Inglés | MIT | HuggingFace |
-| DistilGPT-2 | 82 M | 1024 | Inglés | Apache 2.0 | HuggingFace |
+| AnnPrin/czech-gpt-depth12 | 46,15 M | 256 | Checo | No disponible | Hugging Face |
+| GPT-2 small (OpenAI) | 124 M | 1024 | Inglés | MIT | Hugging Face |
+| DistilGPT-2 | 82 M | 1024 | Inglés | Apache 2.0 | Hugging Face |
 | Modelos checos tipo CzGPT / GPT-2 checo | No disponible en la información | No disponible | Checo | No disponible | No disponible |
 
 La comparación con GPT-2 small y DistilGPT-2 es solo orientativa por tamaño y arquitectura; ninguno de los dos está entrenado en checo ni desde cero con tokenizador propio. No se dispone de datos de rendimiento comparables para modelos checos de tamaño similar en la información proporcionada.
@@ -83,5 +83,5 @@ La comparación con GPT-2 small y DistilGPT-2 es solo orientativa por tamaño y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnnPrin/czech-gpt-depth12
+- Modelo en Hugging Face: https://huggingface.co/AnnPrin/czech-gpt-depth12
 - Repositorio de código y registro de entrenamiento: https://github.com/Annprin/czech-gpt

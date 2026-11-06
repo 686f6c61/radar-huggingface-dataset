@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Robinhood es un proyecto conceptual de IA de código abierto presentado por el autor "pumpfun" en HuggingFace. No es un modelo entrenado, sino una propuesta de investigación para hacer que la información pública, especialmente la financiera y económica, sea más comprensible para el público general. El proyecto se basa en cuatro principios: evidencia primero, lenguaje sencillo, incertidumbre visible y agencia humana. Su nombre se inspira en la leyenda de Robin Hood, con la idea de que el conocimiento no debe quedar encerrado tras la complejidad.
+Robinhood es un proyecto conceptual de IA de código abierto presentado por el autor "pumpfun" en Hugging Face. No es un modelo entrenado, sino una propuesta de investigación para hacer que la información pública, especialmente la financiera y económica, sea más comprensible para el público general. El proyecto se basa en cuatro principios: evidencia primero, lenguaje sencillo, incertidumbre visible y agencia humana. Su nombre se inspira en la leyenda de Robin Hood, con la idea de que el conocimiento no debe quedar encerrado tras la complejidad.
 
 El proyecto se encuentra en fase de concepto: no incluye pesos de modelo, no hay endpoint de inferencia alojado, y no hay artefactos de software disponibles. La model card describe las capacidades previstas (resumir documentos financieros, comparar afirmaciones entre fuentes, explicar conceptos cívicos y financieros, etc.) y un formato de respuesta estructurado en JSON con campos para respuesta, evidencia, incertidumbre y preguntas siguientes. El repositorio tiene un tamaño de 0.0 GB, lo que confirma que no contiene pesos.
 
@@ -17,7 +17,7 @@ A pesar de que el autor se identifica como "pumpfun" (relacionado con la platafo
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en, zh (segun metadatos de HuggingFace) |
+| Idiomas soportados | en, zh (segun metadatos de Hugging Face) |
 | Licencia | CC0 1.0 (para la tarjeta y el asset visual; futuros artefactos podrian tener otra) |
 | Formato de pesos | no disponible (no hay pesos publicados) |
 
@@ -72,7 +72,7 @@ No disponible. No existe un modelo comparable, ya que Robinhood es un concepto s
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/pumpfun/Robinhood
-- Web oficial del proyecto (spaces de HuggingFace): https://huggingface.co/spaces/pumpfun/Robinhood-Web
+- Pagina del modelo en Hugging Face: https://huggingface.co/pumpfun/Robinhood
+- Web oficial del proyecto (spaces de Hugging Face): https://huggingface.co/spaces/pumpfun/Robinhood-Web
 - Repositorio de pump.fun (autor): https://pump.fun (relacionado con el autor, no con el modelo)
 - No se han encontrado papers, repositorios de codigo o demos adicionales.

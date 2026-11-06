@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stride-qwen3-4b-stabilized-2048-grpo-20260916 (este adaptador) | Adaptador LoRA sobre base de 4B; rango 16, alpha 32 | No disponible; entrenamiento limitado a 8.192 tokens | Safetensors PEFT | No disponible | Publico en HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4B | No disponible en la informacion proporcionada | Safetensors | No disponible en la informacion proporcionada | Publico en HuggingFace, revision `cdbee75f17c01a7cc42f958dc650907174af0554` |
+| stride-qwen3-4b-stabilized-2048-grpo-20260916 (este adaptador) | Adaptador LoRA sobre base de 4B; rango 16, alpha 32 | No disponible; entrenamiento limitado a 8.192 tokens | Safetensors PEFT | No disponible | Publico en Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4B | No disponible en la informacion proporcionada | Safetensors | No disponible en la informacion proporcionada | Publico en Hugging Face, revision `cdbee75f17c01a7cc42f958dc650907174af0554` |
 | Ejecuciones STRIDE anteriores del mismo autor | Adaptador LoRA sobre base de 4B | No disponible | Safetensors PEFT | No disponible | Misma particion de 2.048 preguntas; incluyen bonus de diversidad STRIDE, a diferencia de este adaptador |
 | Qwen3-1.7B (mencionado en la model card) | 1,7B | No disponible | No disponible | No disponible | Mencionado como caso en el que la plantilla por defecto activa el modo pensante |
 
@@ -102,7 +102,7 @@ Comparativa de rendimiento entre estas alternativas: no disponible; no se han pu
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/sandeep123/stride-qwen3-4b-stabilized-2048-grpo-20260916
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/sandeep123/stride-qwen3-4b-stabilized-2048-grpo-20260916
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Revision fijada del modelo base: `cdbee75f17c01a7cc42f958dc650907174af0554` (https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/tree/cdbee75f17c01a7cc42f958dc650907174af0554)
 - Fichero de indice de checkpoints: `checkpoint_index.json` dentro del repositorio del adaptador

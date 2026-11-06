@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fish Audio Drama 3 es un modelo generativo de texto a voz (text-to-speech) desarrollado por Fish Audio y distribuido en HuggingFace bajo el identificador sekkit/drama-3. Está diseñado especificamente para escenas con multiples personajes y contenido de formato largo: admite generacion multi-hablante, clonacion de voz a partir de una referencia y control en lenguaje natural, ademas de edicion de audio por continuacion sobre tomas anteriores. Su publicacion es relevante porque traslada a TTS un esquema de mezcla de expertos (MoE) con decodificacion causal de tokens acusticos, algo poco habitual en modelos de voz abiertos.
+Fish Audio Drama 3 es un modelo generativo de texto a voz (text-to-speech) desarrollado por Fish Audio y distribuido en Hugging Face bajo el identificador sekkit/drama-3. Está diseñado especificamente para escenas con multiples personajes y contenido de formato largo: admite generacion multi-hablante, clonacion de voz a partir de una referencia y control en lenguaje natural, ademas de edicion de audio por continuacion sobre tomas anteriores. Su publicacion es relevante porque traslada a TTS un esquema de mezcla de expertos (MoE) con decodificacion causal de tokens acusticos, algo poco habitual en modelos de voz abiertos.
 
 Tecnicamente es un modelo de 35.899.643.008 parametros totales (unos 35,9 mil millones) con aproximadamente 3 mil millones de parametros activos por token, lo que lo situa en la categoria de MoE disperso. El backbone de texto combina atencion completa y atencion lineal (hibrida), y el decodificador de audio es un Codebook-MTP que genera de forma causal 10 codebooks a lo largo de toda la secuencia. Los expertos MoE se almacenan en FP8 y el resto de pesos en bf16, con un repositorio de 41,5 GB.
 
@@ -98,7 +98,7 @@ La informacion proporcionada no incluye datos de benchmarks ni especificaciones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sekkit/drama-3
+- Modelo en Hugging Face: https://huggingface.co/sekkit/drama-3
 - Modelo de referencia de Fish Audio: https://huggingface.co/fishaudio/drama-3
 - Documentacion de SGLang-Omni: https://sgl-project.github.io/sglang-omni/
 - Cookbook de Drama 3 en SGLang-Omni: https://sgl-project.github.io/sglang-omni/cookbook/fishaudio_drama3.html

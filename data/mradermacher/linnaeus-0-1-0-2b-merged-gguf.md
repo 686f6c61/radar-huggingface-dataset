@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparativa se l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Linnaeus-0.1.0-2B-merged (GGUF) | 1,94 B | no disponible | no disponible | GGUF en HuggingFace, 0 descargas y 0 likes |
+| Linnaeus-0.1.0-2B-merged (GGUF) | 1,94 B | no disponible | no disponible | GGUF en Hugging Face, 0 descargas y 0 likes |
 | Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache-2.0 | safetensors y GGUF, ampliamente desplegado |
 | Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | safetensors y GGUF |
 | Gemma-2-2B-it | 2,61 B | 8.192 tokens | Gemma Terms of Use | safetensors y GGUF |

@@ -42,7 +42,7 @@ No hay información disponible sobre el dataset de entrenamiento, el número de 
 - Contexto largo de hasta 512K tokens, con atención dispersa que reduce el coste computacional en decodificación atendiendo solo a los 2048 tokens seleccionados más los sinks.
 - Decodificación auto-especulativa mediante un cabezal MTP entrenado aparte, que puede acelerar la generación cuando el hardware lo permite.
 - Ejecución en CPU sin GPU, con soporte opcional de kernels CUDA, Metal y Vulkan.
-- Conversión de pesos desde HuggingFace a GGUF y separación del cabezal MTP mediante utilidades incluidas.
+- Conversión de pesos desde Hugging Face a GGUF y separación del cabezal MTP mediante utilidades incluidas.
 - No hay información disponible sobre capacidades multimodales (visión o audio) ni sobre el conjunto de idiomas soportados por el modelo base.
 
 ## Casos de uso
@@ -114,9 +114,9 @@ Para comparar openPangu-2.0-Flash con otros MoE de tamaño similar (por ejemplo,
 
 ## Enlaces
 
-- Repositorio del parche en HuggingFace: https://huggingface.co/HelloSun/llama.cpp-openPangu-2.0-Flash
+- Repositorio del parche en Hugging Face: https://huggingface.co/HelloSun/llama.cpp-openPangu-2.0-Flash
 - Fork original del parche (mrexodia): https://github.com/mrexodia/llama.cpp-openPangu-2.0-Flash
 - Modelos GGUF de openPangu-2.0-Flash: https://huggingface.co/mrexodia/openPangu-2.0-Flash-GGUF
-- Ficheros del parche: `llama.cpp-openpangu-v0.7.0.diff` y `patch.sh` (incluidos en el repositorio de HuggingFace)
+- Ficheros del parche: `llama.cpp-openpangu-v0.7.0.diff` y `patch.sh` (incluidos en el repositorio de Hugging Face)
 - Documentación y repositorio de llama.cpp: no disponible en la información proporcionada
 - Papers, blogs o demos adicionales: no disponible

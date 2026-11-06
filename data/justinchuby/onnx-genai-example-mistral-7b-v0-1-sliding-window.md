@@ -67,7 +67,7 @@ No se dispone de informacion comparativa especifica para este export ONNX. Como 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/justinchuby/onnx-genai-example-mistral-7b-v0-1-sliding-window
+- Hugging Face: https://huggingface.co/justinchuby/onnx-genai-example-mistral-7b-v0-1-sliding-window
 - Repositorio onnx-genai: https://github.com/justinchuby/onnx-genai
 - Repositorio onnx-genai-models: https://github.com/justinchuby/onnx-genai-models
 - Modelo base Mistral-7B-v0.1: https://huggingface.co/mistralai/Mistral-7B-v0.1

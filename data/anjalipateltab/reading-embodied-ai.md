@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `anjalipateltab/reading-embodied-ai`, no contiene un modelo de lenguaje entrenado, sino una nota de investigación en curso sobre IA encarnada (embodied AI). La propia model card lo declara explicitamente: "It is not presented as a completed paper or a release of trained models". Los artefactos reales del repositorio son dos ficheros de texto, `reading.md` y `README.md`, que organizan motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion.
+Este repositorio de Hugging Face, identificado como `anjalipateltab/reading-embodied-ai`, no contiene un modelo de lenguaje entrenado, sino una nota de investigación en curso sobre IA encarnada (embodied AI). La propia model card lo declara explicitamente: "It is not presented as a completed paper or a release of trained models". Los artefactos reales del repositorio son dos ficheros de texto, `reading.md` y `README.md`, que organizan motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion.
 
 El repositorio esta etiquetado con `safetensors` y `transformer`, y la metadata declara un total de 24.832 parametros en safetensors. Ese volumen es incompatible con cualquier transformer funcional: se trata de un tensor residual o de un fichero de relleno, no de pesos utilizables para inferencia. El tamano total del repositorio es de 0,0 GB, con 0 descargas y 0 likes, lo que confirma que no hay distribucion de pesos relevante.
 
@@ -42,7 +42,7 @@ Tampoco hay informacion sobre datos de entrenamiento: no se indican tokens proce
 - Analisis de modos de fallo en robotica y agentes encarnados: la seccion de failure modes puede usarse como checklist de riesgos en revisiones de diseno.
 - Formacion y docencia: material de lectura introductorio para grupos de investigacion que arrancan en embodied AI.
 - Referencia bibliografica: las referencias tematicas incluidas permiten localizar trabajo relacionado, siempre con verificacion independiente.
-- Auditoria de expectativas: util para equipos que evaluan repositorios de HuggingFace y necesitan un ejemplo claro de publicacion que no es un modelo, evitando confundir tags (`safetensors`, `transformer`) con artefactos desplegables.
+- Auditoria de expectativas: util para equipos que evaluan repositorios de Hugging Face y necesitan un ejemplo claro de publicacion que no es un modelo, evitando confundir tags (`safetensors`, `transformer`) con artefactos desplegables.
 
 ## Benchmarks y rendimiento
 
@@ -67,7 +67,7 @@ No disponible. Este repositorio no es un modelo y no tiene categoria funcional c
 | Contexto | no disponible | no disponible |
 | Rendimiento | sin benchmarks | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | repositorio publico en HuggingFace | no disponible |
+| Disponibilidad | repositorio publico en Hugging Face | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ No disponible. Este repositorio no es un modelo y no tiene categoria funcional c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anjalipateltab/reading-embodied-ai
+- Hugging Face: https://huggingface.co/anjalipateltab/reading-embodied-ai
 - Fichero principal del repositorio: `reading.md` (nota de investigacion completa)
 - Documentacion del repositorio: `README.md`
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada. Los resultados de busqueda web devueltos corresponden al canal de YouTube "Cercle Aristote" y a su sitio web, sin relacion alguna con el repositorio ni con IA encarnada, por lo que se descartan como fuentes.

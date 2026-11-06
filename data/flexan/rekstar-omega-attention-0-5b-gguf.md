@@ -71,7 +71,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- [Repositorio GGUF en HuggingFace](https://huggingface.co/Flexan/rekstar-omega-attention-0.5b-GGUF)
-- [Modelo original en HuggingFace](https://huggingface.co/rekstar/omega-attention-0.5b)
-- [Perfil de Flexan en HuggingFace](https://huggingface.co/Flexan/Flexan)
+- [Repositorio GGUF en Hugging Face](https://huggingface.co/Flexan/rekstar-omega-attention-0.5b-GGUF)
+- [Modelo original en Hugging Face](https://huggingface.co/rekstar/omega-attention-0.5b)
+- [Perfil de Flexan en Hugging Face](https://huggingface.co/Flexan/Flexan)
 - [GitHub de Derek Robertson](https://github.com/doctarock)

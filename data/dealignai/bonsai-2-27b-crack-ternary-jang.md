@@ -102,7 +102,7 @@ No se dispone en la informacion proporcionada de datos medidos de otros modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/Bonsai-2-27B-CRACK-Ternary-JANG
+- Modelo en Hugging Face: https://huggingface.co/dealignai/Bonsai-2-27B-CRACK-Ternary-JANG
 - Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
 - Motor de inferencia vMLX: https://vmlx.net
 - Apoyo al autor (Ko-fi): https://ko-fi.com/dealignai

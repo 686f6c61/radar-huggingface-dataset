@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, MTEB, BEIR) en la i
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chakana-r1 candidate | 595.776.512 | no disponible | nDCG@10 0,834 en particion interna SZL (no MTEB) | apache-2.0 | HuggingFace (repo candidato) |
-| Qwen/Qwen3-Embedding-0.6B (base) | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | apache-2.0 | HuggingFace |
+| chakana-r1 candidate | 595.776.512 | no disponible | nDCG@10 0,834 en particion interna SZL (no MTEB) | apache-2.0 | Hugging Face (repo candidato) |
+| Qwen/Qwen3-Embedding-0.6B (base) | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | apache-2.0 | Hugging Face |
 | BM25 (baseline lexico) | no aplica | no aplica | nDCG@10 0,734 en la misma particion interna | no aplica | implementaciones multiples |
 
 No se dispone de datos suficientes en la informacion proporcionada para comparar con otros encoders de la misma categoria (por ejemplo, variantes de E5, BGE o GTE); se indica "no disponible".
@@ -93,7 +93,7 @@ No se dispone de datos suficientes en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SZLHOLDINGS/chakana-r1-candidate
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/chakana-r1-candidate
 - Repositorio stub del proyecto: https://huggingface.co/SZLHOLDINGS/chakana
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Corpus de entrenamiento 1: https://huggingface.co/datasets/SZLHOLDINGS/szl-second-brain-inrepo

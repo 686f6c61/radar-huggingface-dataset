@@ -95,7 +95,7 @@ Ninguno de los modelos alternativos declarados en la informacion disponible inco
 ## Enlaces
 
 - Repositorio de cuantizaciones GGUF: https://huggingface.co/ngquocvinh/DeepSeek-V4.1-Flash-GGUF
-- Modelo upstream en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
+- Modelo upstream en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Imagen de referencia del benchmark agentico del modelo upstream: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/main/assets/dsv41_agentic_performance.png
 - Fork de llama.cpp con soporte para DeepSeek-V4.1: https://github.com/vcruz305/llama.cpp
 - Pagina de donaciones del autor de las cuantizaciones: https://ko-fi.com/ngquocvinh

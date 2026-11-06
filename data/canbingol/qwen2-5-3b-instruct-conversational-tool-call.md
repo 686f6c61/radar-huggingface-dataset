@@ -66,7 +66,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/canbingol/qwen2.5-3B-Instruct-conversational-tool-call
+- Hugging Face del modelo: https://huggingface.co/canbingol/qwen2.5-3B-Instruct-conversational-tool-call
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Página de Ollama para Qwen2.5:3b-instruct: https://ollama.com/library/qwen2.5:3b-instruct
 - Modelo relacionado del mismo autor (tool-call-en-mixed-when2call-v3): https://huggingface.co/canbingol/qwen2.5-3B-Instruct-tool-call-en-mixed-when2call-v3

@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye resultados comparativos f
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/badr7/rapidchat-GGUF
+- Repositorio Hugging Face: https://huggingface.co/badr7/rapidchat-GGUF
 - Modelo base: https://huggingface.co/badr7/rapidchat
 - Dataset de entrenamiento: https://huggingface.co/datasets/badr7/rapidchat-data
 

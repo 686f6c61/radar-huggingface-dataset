@@ -71,14 +71,14 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 - VRAM para inferencia: no disponible. El repositorio ocupa 13,8 GB e incluye seis checkpoints con estados de optimizador, por lo que el tamano del borrador individual no puede deducirse del tamano del repo.
 - GPU recomendadas: no disponible para el borrador. El run de entrenamiento se completó en un nodo con GPU0 dedicada a vLLM y GPU1-3 a DDP, en un entorno identificado como GB200/B300 por la nomenclatura del experimento.
 - Compatibilidad con GPU de consumo: no confirmada. Por su papel de modelo borrador se espera que sea de menor tamano que el objetivo de 35B, pero la model card no ofrece cifras que permitan afirmarlo.
-- Despliegue: requiere el código fuente compatible de Speculators más el modelo objetivo obtenido por separado; durante el entrenamiento se usó vLLM como motor. No es un checkpoint de causal-LM genérico para Transformers, por lo que no es directamente cargable en pipelines estándar de HuggingFace, llama.cpp, Ollama o TGI.
+- Despliegue: requiere el código fuente compatible de Speculators más el modelo objetivo obtenido por separado; durante el entrenamiento se usó vLLM como motor. No es un checkpoint de causal-LM genérico para Transformers, por lo que no es directamente cargable en pipelines estándar de Hugging Face, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles. No se publica ninguna medición de aceleración, tasa de aceptación en servicio ni tokens por segundo.
 
 ## Comparativa con modelos similares
 
 | Modelo / artefacto | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| khazic/spec-b300 | Checkpoints de borrador para decodificación especulativa n-gram | No disponible | No disponible | No disponible | Repositorio público en HuggingFace, 0 descargas |
+| khazic/spec-b300 | Checkpoints de borrador para decodificación especulativa n-gram | No disponible | No disponible | No disponible | Repositorio público en Hugging Face, 0 descargas |
 | Qwen/Qwen3.6-35B-A3B | Modelo objetivo MoE (según la etiqueta `base_model`) | 35B totales, 3B activos (según nomenclatura A3B) | No disponible | No disponible | Referenciado como modelo base; los pesos no se incluyen en este repositorio |
 | Otras familias de borradores (EAGLE, Medusa u similares) | Métodos de decodificación especulativa | No disponible | No disponible | No disponible | No se dispone de datos comparativos en la información proporcionada |
 
@@ -98,7 +98,7 @@ No se dispone de cifras comparativas de rendimiento, contexto o licencia para al
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/khazic/spec-b300
+- Repositorio Hugging Face: https://huggingface.co/khazic/spec-b300
 - Checkpoints: https://huggingface.co/khazic/spec-b300/tree/main/checkpoints
 - Logs de entrenamiento: https://huggingface.co/khazic/spec-b300/tree/main/training_logs/segments
 - Manifiesto de la ejecución: https://huggingface.co/khazic/spec-b300/blob/main/training_logs/manifest.json

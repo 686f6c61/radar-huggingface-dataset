@@ -68,7 +68,7 @@ No se dispone de información de modelos comparables. El repositorio no referenc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/jnneumann/transformer-tts](https://huggingface.co/jnneumann/transformer-tts)
+- Repositorio en Hugging Face: [https://huggingface.co/jnneumann/transformer-tts](https://huggingface.co/jnneumann/transformer-tts)
 - Referencia a Transformer-TTS (proyecto distinto, no el mismo modelo): [https://github.com/soobinseo/Transformer-TTS](https://github.com/soobinseo/Transformer-TTS)
 - Implementación no oficial de Transformer-TTS (también distinta): [https://github.com/Orca0917/TransformerTTS](https://github.com/Orca0917/TransformerTTS)
 - DeepWiki sobre Transformer-TTS (no aplicable al modelo actual): [https://deepwiki.com/soobinseo/Transformer-TTS](https://deepwiki.com/soobinseo/Transformer-TTS)

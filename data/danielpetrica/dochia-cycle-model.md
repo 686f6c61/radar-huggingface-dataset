@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dochia es un modelo estadístico ligero y auditable para la previsión del ciclo menstrual, desarrollado por danielpetrica y publicado en HuggingFace con licencia MIT. No se trata de una red neuronal ni de un Transformer: es un modelo paramétrico de aproximadamente 50 a 200 parámetros efectivos y menos de 10 KB de tamano, con implementaciones de referencia en PHP, Python, R, Julia y JavaScript. Su objetivo es ofrecer una distribución calibrada del próximo inicio del ciclo, un riesgo diario de inicio (hazard), una identidad corregida de varianza ovulatoria, tolerancia a colas pesadas y abstención explícita cuando el historial es insuficiente.
+Dochia es un modelo estadístico ligero y auditable para la previsión del ciclo menstrual, desarrollado por danielpetrica y publicado en Hugging Face con licencia MIT. No se trata de una red neuronal ni de un Transformer: es un modelo paramétrico de aproximadamente 50 a 200 parámetros efectivos y menos de 10 KB de tamano, con implementaciones de referencia en PHP, Python, R, Julia y JavaScript. Su objetivo es ofrecer una distribución calibrada del próximo inicio del ciclo, un riesgo diario de inicio (hazard), una identidad corregida de varianza ovulatoria, tolerancia a colas pesadas y abstención explícita cuando el historial es insuficiente.
 
 El modelo resuelve un problema concreto en el ámbito del bienestar y la investigación: proporcionar previsiones de ciclo con intervalos de confianza calibrados en lugar de una única fecha puntual, y hacerlo sin necesidad de red, permisos ni runtime de machine learning. Esto lo hace adecuado para ejecución en dispositivo (on-device), lo que resulta relevante para aplicaciones de salud que manejan datos sensibles.
 
@@ -75,7 +75,7 @@ La precisión puntual es equivalente a la de una línea base jerárquica normal 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dochia | ~50–200 efectivos | no aplica | Estadístico paramétrico calibrado | MIT | HuggingFace + GitHub |
+| Dochia | ~50–200 efectivos | no aplica | Estadístico paramétrico calibrado | MIT | Hugging Face + GitHub |
 | Línea base jerárquica normal estándar | no disponible | no aplica | Estadístico jerárquico | no disponible | Referencia en validación |
 | Modelos de previsión de ciclo basados en ML | no disponible | no disponible | Aprendizaje automático | no disponible | no disponible |
 
@@ -94,6 +94,6 @@ La información disponible solo permite comparar con la línea base jerárquica 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/danielpetrica/dochia-cycle-model
+- Hugging Face: https://huggingface.co/danielpetrica/dochia-cycle-model
 - GitHub: https://github.com/danielpetrica/dochia-cycle-model
 - DOI de validación: https://doi.org/10.5281/zenodo.23956336

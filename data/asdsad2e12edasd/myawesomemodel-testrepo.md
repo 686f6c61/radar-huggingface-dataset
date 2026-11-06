@@ -1,7 +1,7 @@
 # ASDSAD2E12EDASD/MyAwesomeModel-TestRepo
 
 ## Resumen
-MyAwesomeModel es un modelo publicado por ASDSAD2E12EDASD en HuggingFace bajo licencia MIT. Según su README, la versión actualizada ha mejorado sus capacidades de razonamiento y ha reducido la tasa de alucinaciones, con un resultado destacado en el benchmark AIME 2025 (87,5 % frente al 70 % de la versión anterior). Sin embargo, la información técnica disponible es extremadamente limitada: no se documentan arquitectura, número de parámetros, longitud de contexto ni composición de los datos de entrenamiento. El repositorio no contiene pesos (0,0 GB), tiene 0 descargas y está etiquetado como `feature-extraction` y `bert`, lo que resulta inconsistente con las capacidades declaradas. En su estado actual, se trata más de una descripción de intenciones que de un modelo utilizable.
+MyAwesomeModel es un modelo publicado por ASDSAD2E12EDASD en Hugging Face bajo licencia MIT. Según su README, la versión actualizada ha mejorado sus capacidades de razonamiento y ha reducido la tasa de alucinaciones, con un resultado destacado en el benchmark AIME 2025 (87,5 % frente al 70 % de la versión anterior). Sin embargo, la información técnica disponible es extremadamente limitada: no se documentan arquitectura, número de parámetros, longitud de contexto ni composición de los datos de entrenamiento. El repositorio no contiene pesos (0,0 GB), tiene 0 descargas y está etiquetado como `feature-extraction` y `bert`, lo que resulta inconsistente con las capacidades declaradas. En su estado actual, se trata más de una descripción de intenciones que de un modelo utilizable.
 
 ## Especificaciones técnicas
 | Parámetro | Valor |
@@ -16,7 +16,7 @@ MyAwesomeModel es un modelo publicado por ASDSAD2E12EDASD en HuggingFace bajo li
 | Formato de pesos | no disponible (el repositorio tiene 0,0 GB) |
 
 ## Arquitectura y entrenamiento
-El README no especifica la arquitectura del modelo. Menciona que la versión actualizada aprovecha «recursos computacionales incrementados» y «mecanismos de optimización algorítmica durante el post-entrenamiento», pero no detalla si se trata de un transformer, una mezcla de expertos (MoE) o algún otro diseño. Tampoco se proporciona información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. La existencia de una variante denominada «MyAwesomeModel-Small» sugiere que hay al menos dos tamaños, pero no se aportan datos cuantitativos. Además, la etiqueta `bert` en los metadatos de HuggingFace apunta a un modelo encoder, mientras que las capacidades descritas (generación, razonamiento) son propias de modelos decoder; esta inconsistencia no está explicada.
+El README no especifica la arquitectura del modelo. Menciona que la versión actualizada aprovecha «recursos computacionales incrementados» y «mecanismos de optimización algorítmica durante el post-entrenamiento», pero no detalla si se trata de un transformer, una mezcla de expertos (MoE) o algún otro diseño. Tampoco se proporciona información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. La existencia de una variante denominada «MyAwesomeModel-Small» sugiere que hay al menos dos tamaños, pero no se aportan datos cuantitativos. Además, la etiqueta `bert` en los metadatos de Hugging Face apunta a un modelo encoder, mientras que las capacidades descritas (generación, razonamiento) son propias de modelos decoder; esta inconsistencia no está explicada.
 
 ## Capacidades
 - Razonamiento matemático: según el README, el modelo alcanza un 87,5 % en AIME 2025, frente al 70 % de la versión anterior.
@@ -69,13 +69,13 @@ No disponible. La información pública no incluye detalles que permitan compara
 ## Limitaciones y advertencias
 - Falta de transparencia técnica: no se documentan arquitectura, parámetros, contexto ni proceso de entrenamiento.
 - El repositorio tiene un tamaño de 0,0 GB, lo que sugiere que no contiene pesos del modelo. Es posible que se trate de un repositorio de prueba o incompleto.
-- Inconsistencia en los metadatos de HuggingFace: la etiqueta `bert` y el pipeline `feature-extraction` no casan con las capacidades de generación y razonamiento descritas.
+- Inconsistencia en los metadatos de Hugging Face: la etiqueta `bert` y el pipeline `feature-extraction` no casan con las capacidades de generación y razonamiento descritas.
 - Riesgo de alucinación: aunque el README afirma haberlo reducido, no hay evaluaciones externas independientes que lo confirmen.
 - Sesgos y limitaciones idiomáticas: no se ha publicado información sobre sesgos, idiomas soportados ni dominio de aplicación.
 - Licencia MIT: permite el uso comercial, pero los pesos no están disponibles, lo que impide su utilización en producción.
 
 ## Enlaces
-- HuggingFace (repositorio consultado): https://huggingface.co/ASDSAD2E12EDASD/MyAwesomeModel-TestRepo
+- Hugging Face (repositorio consultado): https://huggingface.co/ASDSAD2E12EDASD/MyAwesomeModel-TestRepo
 - Repositorio con el mismo nombre y contenido similar: https://huggingface.co/sad2DSAD12/MyAwesomeModel
 - Repositorio con el mismo nombre y sufijo «TestRepo»: https://huggingface.co/sad2DSAD12/MyAwesomeModel-TestRepo
 

@@ -24,7 +24,7 @@ El momento es relevante porque acompaña a un protocolo de evaluación reproduci
 | Librería | PyTorch (+ `sentence-transformers` para el codificador) |
 | Dimensión de entrada | 512 (dimensión del embedding de bge-small-zh-v1.5) |
 | Temperatura ajustada | T = 1,031 (temperature scaling sobre validación) |
-| Tamaño del repo | 0,0 GB (según HuggingFace) |
+| Tamaño del repo | 0,0 GB (según Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -109,7 +109,7 @@ Frente a un reranker neuronal tipo cross-encoder no se aportan datos en la infor
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/cnfeichen/minimind-jev-v0.1
+- Hugging Face del modelo: https://huggingface.co/cnfeichen/minimind-jev-v0.1
 - Codificador congelado: https://huggingface.co/BAAI/bge-small-zh-v1.5
 - Protocolo de evaluación y logs: https://github.com/vicfei/jev-rag-zh-benchmark
 - DOI del benchmark: https://doi.org/10.5281/zenodo.23322277

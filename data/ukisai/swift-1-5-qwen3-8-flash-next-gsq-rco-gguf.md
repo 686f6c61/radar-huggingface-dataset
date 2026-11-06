@@ -115,7 +115,7 @@ La comparación con ISTA-DASLab usa la referencia BF16 propia de cada modelo y, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Licencia: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF/blob/main/LICENSE
 - Aviso legal: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF/blob/main/NOTICE
 - Sumas de verificación: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF/blob/main/SHA256SUMS

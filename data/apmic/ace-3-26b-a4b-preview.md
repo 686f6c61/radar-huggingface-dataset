@@ -6,7 +6,7 @@ ACE-3-26B-A4B-Preview es un modelo de lenguaje multimodal desarrollado por APMIC
 
 La arquitectura es de mezcla de expertos (MoE, "moe" en las etiquetas), construida sobre la arquitectura Gemma 4. El repositorio declara 25.805.933.872 parametros totales reales segun los ficheros safetensors, lo que concuerda con la nomenclatura "26B" del nombre. El sufijo "A4B" sugiere aproximadamente 4.000 millones de parametros activos por token, aunque este dato no se confirma explicitamente en la informacion proporcionada. El modelo pesa 51,7 GB en el repositorio y se distribuye en formato safetensors bajo licencia Gemma.
 
-Su relevancia actual radica en que APMIC posiciona esta familia como un modelo "cost-efficient" para asesoria financiera de gestion de patrimonios en Taiwan, con conocimiento de la regulacion financiera local. El acceso al repositorio esta restringido (gated) y requiere aceptar las condiciones en HuggingFace. El modelo figura como "Preview" y, en el momento de la consulta, no registra descargas ni "likes".
+Su relevancia actual radica en que APMIC posiciona esta familia como un modelo "cost-efficient" para asesoria financiera de gestion de patrimonios en Taiwan, con conocimiento de la regulacion financiera local. El acceso al repositorio esta restringido (gated) y requiere aceptar las condiciones en Hugging Face. El modelo figura como "Preview" y, en el momento de la consulta, no registra descargas ni "likes".
 
 ## Especificaciones tecnicas
 
@@ -63,16 +63,16 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 - VRAM estimada en bf16/fp16: aproximadamente 51,6 GB solo para pesos (los 51,7 GB del repositorio), mas memoria para el contexto y el estado del runtime. Requiere por tanto multiples GPU o cuantizacion.
 - GPU recomendadas para bf16: configuraciones multi-GPU como 2x A100 40GB, 1x A100 80GB, 1x H100 80GB o 2x RTX 6000 Ada. No cabe en una unica GPU de consumo en bf16.
 - GPU de consumo: no cabe en bf16 en RTX 4090 (24 GB). Podria caber con cuantizacion agresiva (por ejemplo 4 bits), pero no se han publicado cuantizaciones de este modelo en la informacion disponible.
-- Opciones de despliegue: transformers (libreria declarada), vLLM, TGI y endpoints de inferencia de HuggingFace (etiqueta "endpoints_compatible"). Gemma 4 dispone de soporte day-0 en varios motores de inferencia open source y checkpoints ONNX, segun el blog oficial.
+- Opciones de despliegue: transformers (libreria declarada), vLLM, TGI y endpoints de inferencia de Hugging Face (etiqueta "endpoints_compatible"). Gemma 4 dispone de soporte day-0 en varios motores de inferencia open source y checkpoints ONNX, segun el blog oficial.
 - Latencia y throughput estimados: no disponibles.
-- Acceso: repositorio gated, es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso: repositorio gated, es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros totales | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| APMIC/ACE-3-26B-A4B-Preview | 25.805.933.872 (~25,8B) | no disponible | zh, en | Gemma | Gated en HuggingFace |
-| google/gemma-4-26B-A4B-it (modelo base) | no disponible en la informacion | no disponible | no disponible | Gemma | Publico en HuggingFace (google) |
+| APMIC/ACE-3-26B-A4B-Preview | 25.805.933.872 (~25,8B) | no disponible | zh, en | Gemma | Gated en Hugging Face |
+| google/gemma-4-26B-A4B-it (modelo base) | no disponible en la informacion | no disponible | no disponible | Gemma | Publico en Hugging Face (google) |
 | Surogate Rune 26B-A4B v3 | ~26B-A4B segun nomenclatura | no disponible | no disponible | no disponible | Referenciado en benchlm.ai |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas en la informacion proporcionada, por lo que no se puede establecer una jerarquia de calidad.
@@ -85,15 +85,15 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 - Cobertura geografica: enfocado en regulacion y mercado de Taiwan; su utilidad fuera de ese contexto no esta validada.
 - Licencia: licencia Gemma, que impone condiciones de uso comercial y obligaciones de atribucion. Es necesario revisar los terminos completos de la licencia Gemma antes de un uso en produccion.
 - Estado "Preview": el modelo esta en fase de vista previa, lo que implica posible inestabilidad, cambios futuros y ausencia de garantias.
-- Acceso gated: la distribucion esta restringida y requiere aceptar condiciones en HuggingFace.
+- Acceso gated: la distribucion esta restringida y requiere aceptar condiciones en Hugging Face.
 - Ausencia de cuantizaciones publicadas y de datos de benchmarks verificables en la informacion disponible, lo que dificulta una evaluacion cuantitativa previa a produccion.
 - No se dispone de informacion sobre la longitud de contexto soportada, dato critico para planificar despliegues con memoria limitada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/APMIC/ACE-3-26B-A4B-Preview
+- Repositorio en Hugging Face: https://huggingface.co/APMIC/ACE-3-26B-A4B-Preview
 - Benchmark ACE-Bank de APMIC: https://www.apmic.ai/en/news/ace-bank-benchmark
-- Pagina de Google en HuggingFace (modelo base de la familia Gemma 4): https://huggingface.co/google
+- Pagina de Google en Hugging Face (modelo base de la familia Gemma 4): https://huggingface.co/google
 - Blog oficial de Gemma 4: https://huggingface.co/blog/gemma4
 - Comparativa Gemini 3.1 Pro vs Gemini 3.8 Flash (benchlm.ai): https://benchlm.ai/compare/gemini-3-1-pro-vs-gemini-3-8-flash
 - Comparativa Gemini 3.1 Flash TTS Preview vs Surogate Rune 26B-A4B v3 (benchlm.ai): https://benchlm.ai/compare/gemini-3-1-flash-tts-preview-vs-surogate-rune-26b-a4b-v3-rtxpro6000-a2

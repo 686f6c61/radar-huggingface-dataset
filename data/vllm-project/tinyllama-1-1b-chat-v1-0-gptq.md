@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato / cuantización | Disponibilidad |
 |---|---|---|---|---|---|
-| TinyLlama-1.1B-Chat-v1.0-GPTQ (este) | 1,1B | 2048 | Apache 2.0 | GPTQ 4 bits (safetensors) | HuggingFace (vllm-project, TheBloke) |
-| TinyLlama-1.1B-Chat-v1.0 (original) | 1,1B | 2048 | Apache 2.0 | fp16 (PyTorch) | HuggingFace (TinyLlama) |
-| TinyLlama-1.1B-Chat-v1.0-AWQ | 1,1B | 2048 | Apache 2.0 | AWQ 4 bits | HuggingFace (TheBloke) |
-| TinyLlama-1.1B-Chat-v1.0-GGUF | 1,1B | 2048 | Apache 2.0 | GGUF 2-8 bits | HuggingFace (TheBloke) |
+| TinyLlama-1.1B-Chat-v1.0-GPTQ (este) | 1,1B | 2048 | Apache 2.0 | GPTQ 4 bits (safetensors) | Hugging Face (vllm-project, TheBloke) |
+| TinyLlama-1.1B-Chat-v1.0 (original) | 1,1B | 2048 | Apache 2.0 | fp16 (PyTorch) | Hugging Face (TinyLlama) |
+| TinyLlama-1.1B-Chat-v1.0-AWQ | 1,1B | 2048 | Apache 2.0 | AWQ 4 bits | Hugging Face (TheBloke) |
+| TinyLlama-1.1B-Chat-v1.0-GGUF | 1,1B | 2048 | Apache 2.0 | GGUF 2-8 bits | Hugging Face (TheBloke) |
 
 No se dispone de datos de benchmarks comparativos en la información proporcionada para contrastar el rendimiento frente a otras alternativas de tamaño similar.
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks comparativos en la información proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vllm-project/TinyLlama-1.1B-Chat-v1.0-GPTQ
+- Repositorio Hugging Face: https://huggingface.co/vllm-project/TinyLlama-1.1B-Chat-v1.0-GPTQ
 - Repositorio original de TheBloke (GPTQ): https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GPTQ
 - Modelo base: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Variante AWQ: https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-AWQ

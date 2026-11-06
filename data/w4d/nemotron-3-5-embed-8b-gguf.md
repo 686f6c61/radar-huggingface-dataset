@@ -21,7 +21,7 @@ Su relevancia práctica radica en que las conversiones GGUF habilitan el desplie
 | Idiomas soportados | 33: en, ar, as, bn, bg, zh, da, nl, fi, fr, de, hi, id, it, ja, ko, ms, mr, ne, no, fa, pt, ro, ru, es, sw, sv, ta, te, th, uk, ur, vi |
 | Licencia | OpenMDW License 1.1 (etiquetada como `other` / `license_name: openmdw-1.1`) |
 | Formato de pesos | GGUF (un archivo por cuantizacion, mas `mmproj` separado y `imatrix-wikitext-2.gguf` de calibracion) |
-| Pipeline en HuggingFace | visual-document-retrieval |
+| Pipeline en Hugging Face | visual-document-retrieval |
 | Modelo base | nvidia/Nemotron-3.5-Embed-8B-BF16 |
 | Tamano del repositorio | 185,8 GB |
 
@@ -86,7 +86,7 @@ No se dispone en la informacion proporcionada de datos verificados de otros mode
 - La calidad de recuperacion es muy sensible a la cuantizacion. La propia model card advierte que Q8_0, Q6_K y Q5_K_M son los niveles recomendados y que las variantes IQ1/IQ2/TQ/Q1/Q2 degradan de forma medible la recuperacion; no deberian usarse en produccion.
 - El soporte de imagenes esta incompleto en llama.cpp: el archivo `mmproj` se carga, pero el endpoint de embeddings no acepta entrada de imagen para esta arquitectura todavia. El uso multimodal requiere los pesos originales en transformers.
 - El formato de prefijos `query:` y `passage:` es obligatorio; indexar sin el prefijo correcto produce embeddings en una distribucion distinta y penaliza la recuperacion.
-- La licencia OpenMDW 1.1 esta etiquetada como `other` en HuggingFace y no se detallan en la informacion disponible las condiciones exactas de uso comercial; es necesario revisar el texto de la licencia antes de desplegar en producto.
+- La licencia OpenMDW 1.1 esta etiquetada como `other` en Hugging Face y no se detallan en la informacion disponible las condiciones exactas de uso comercial; es necesario revisar el texto de la licencia antes de desplegar en producto.
 - Al ser una conversion de terceros (usuario W4D, no NVIDIA), no hay garantia de soporte, mantenimiento ni equivalencia numerica exacta con los pesos originales. El repositorio tenia 0 descargas y 0 likes en el momento de la consulta.
 - No hay datos publicados de benchmarks, sesgos o evaluaciones de robustez en la informacion disponible; la calidad en dominios especializados (legal, medico, jerga tecnica) debe validarse con un conjunto propio.
 - El contexto maximo es de 32.768 tokens; pasajes mas largos requieren troceado, lo que puede fragmentar tablas o referencias cruzadas dentro de un documento.

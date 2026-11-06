@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "liuw15/ziyon-nsfw-v3-GGUF",
+  "slug": "liuw15-ziyon-nsfw-v3-gguf",
+  "author": "liuw15",
+  "url": "https://huggingface.co/liuw15/ziyon-nsfw-v3-GGUF",
+  "created_at": "2026-11-06T08:49:50.000Z",
+  "updated_at": "2026-11-06T08:56:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "lora-merged",
+    "base_model:unsloth/Qwen3-8B",
+    "base_model:quantized:unsloth/Qwen3-8B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 13737303104,
+  "storage_human": "13.7 GB",
+  "base_model": "unsloth/Qwen3-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

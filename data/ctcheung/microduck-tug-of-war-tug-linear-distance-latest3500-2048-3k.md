@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microduck-tug-of-war-tug-linear-distance-latest3500-2048-3k` es una política de control obtenida mediante aprendizaje por refuerzo para el robot cuadrúpedo de bajo coste microduck, desarrollado por Pollen Robotics. No se trata de un modelo de lenguaje: es una política perpetua entrenada para ejecutar una tarea de tira y afloja (tug-of-war) con desplazamiento lineal, empaquetada en formato ONNX y cargable directamente en un slot de política del daemon `robotctl` del robot. El autor del artefacto es el usuario de HuggingFace `ctcheung`.
+`microduck-tug-of-war-tug-linear-distance-latest3500-2048-3k` es una política de control obtenida mediante aprendizaje por refuerzo para el robot cuadrúpedo de bajo coste microduck, desarrollado por Pollen Robotics. No se trata de un modelo de lenguaje: es una política perpetua entrenada para ejecutar una tarea de tira y afloja (tug-of-war) con desplazamiento lineal, empaquetada en formato ONNX y cargable directamente en un slot de política del daemon `robotctl` del robot. El autor del artefacto es el usuario de Hugging Face `ctcheung`.
 
 El modelo recibe observaciones de 61 dimensiones y emite 14 acciones a una frecuencia de control de 50 Hz. La política se ejecuta de forma continua hasta que se le indica lo contrario, comportándose como una marcha o gait pregrabada. El artefacto incluye el normalizador de observaciones embebido en el propio fichero `policy.onnx`, por lo que la entrada debe ser la observación en crudo, sin preprocesado externo.
 
@@ -83,7 +83,7 @@ No disponible. La información proporcionada no incluye otras políticas microdu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ctcheung/microduck-tug-of-war-tug-linear-distance-latest3500-2048-3k
+- Hugging Face: https://huggingface.co/ctcheung/microduck-tug-of-war-tug-linear-distance-latest3500-2048-3k
 - Repositorio microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento: `git@github.com:cct1123/microduck-challenges.git` (commit `4206cd842`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon microduck

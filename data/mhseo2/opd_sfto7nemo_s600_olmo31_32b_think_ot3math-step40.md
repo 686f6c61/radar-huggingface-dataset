@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`opd_sfto7nemo_s600_olmo31_32b_think_ot3math-step40` es un checkpoint de investigación publicado por el usuario mhseo2 en HuggingFace. Se trata de un modelo de 7.298.011.136 parámetros (aproximadamente 7,3 mil millones) obtenido mediante destilación on-policy (on-policy distillation, OPD) a partir de un modelo base ya ajustado con supervisión: `mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step600`, que a su vez deriva de la familia OLMo 3 de AllenAI.
+`opd_sfto7nemo_s600_olmo31_32b_think_ot3math-step40` es un checkpoint de investigación publicado por el usuario mhseo2 en Hugging Face. Se trata de un modelo de 7.298.011.136 parámetros (aproximadamente 7,3 mil millones) obtenido mediante destilación on-policy (on-policy distillation, OPD) a partir de un modelo base ya ajustado con supervisión: `mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step600`, que a su vez deriva de la familia OLMo 3 de AllenAI.
 
 El objetivo del entrenamiento es transferir capacidades de razonamiento matemático desde un profesor mucho mayor, `allenai/Olmo-3.1-32B-Think` (32 mil millones de parámetros), hacia un estudiante de 7 mil millones. El checkpoint publicado corresponde al paso 40 de un proceso de destilación con pérdida de divergencia KL inversa por token sobre las propias rollouts del estudiante, sin recompensa de tarea. Es relevante por dos motivos: documenta una receta reproducible de OPD con infraestructura europea (BSC MareNostrum 5) y porque el estudiante conserva el tamaño manejable de 7B, lo que lo hace desplegable en hardware de una sola GPU de 80 GB.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| opd_sfto7nemo_s600_olmo31_32b_think_ot3math-step40 | 7,3B | no disponible | Matemáticas (destilado de Olmo-3.1-32B-Think) | Apache 2.0 | HuggingFace (repo de investigación) |
-| allenai/Olmo-3.1-32B-Think (profesor) | 32B | no disponible | Razonamiento general con modo think | no disponible en la información | HuggingFace (AllenAI) |
-| mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step600 (base del estudiante) | ~7,3B | no disponible | Matemáticas (SFT con Nemotron-Math-v2) | Apache 2.0 | HuggingFace |
+| opd_sfto7nemo_s600_olmo31_32b_think_ot3math-step40 | 7,3B | no disponible | Matemáticas (destilado de Olmo-3.1-32B-Think) | Apache 2.0 | Hugging Face (repo de investigación) |
+| allenai/Olmo-3.1-32B-Think (profesor) | 32B | no disponible | Razonamiento general con modo think | no disponible en la información | Hugging Face (AllenAI) |
+| mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step600 (base del estudiante) | ~7,3B | no disponible | Matemáticas (SFT con Nemotron-Math-v2) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada, por lo que la comparación se limita a tamaño, especialización y licencia.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mhseo2/opd_sfto7nemo_s600_olmo31_32b_think_ot3math-step40
+- Hugging Face: https://huggingface.co/mhseo2/opd_sfto7nemo_s600_olmo31_32b_think_ot3math-step40
 - Modelo base (SFT): https://huggingface.co/mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step600
 - Profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think (revisión `97ade57a9cc5`)
 - Repositorio de código `mopdRL`: commit `f1bcc9eb82a8bcc7a053a23dd1afcae82fb591e4` (paquete `bsc-olmo-base-opd-2026-10-26`); no se proporciona URL en la información disponible.

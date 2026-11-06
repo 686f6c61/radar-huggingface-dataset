@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nativ-community/clef-flash-MLX-8bit | 9,53 mil millones | no disponible | safetensors (MLX, 8-bit) | Apache 2.0 | HuggingFace |
-| Cloudflare/clef-flash (modelo base) | no disponible en esta ficha (mismo modelo origen) | no disponible | safetensors (PyTorch) | Apache 2.0 | HuggingFace |
+| nativ-community/clef-flash-MLX-8bit | 9,53 mil millones | no disponible | safetensors (MLX, 8-bit) | Apache 2.0 | Hugging Face |
+| Cloudflare/clef-flash (modelo base) | no disponible en esta ficha (mismo modelo origen) | no disponible | safetensors (PyTorch) | Apache 2.0 | Hugging Face |
 | Otros modelos de decision multimodales comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos alternativos de la misma categoria (modelos de decision con salida de probabilidad por opcion y entrada multimodal), por lo que no es posible establecer una comparacion cuantitativa.
@@ -91,7 +91,7 @@ No se dispone de informacion sobre modelos alternativos de la misma categoria (m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/clef-flash-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/clef-flash-MLX-8bit
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - mlx-vlm (repositorio de Blaizzy): https://github.com/Blaizzy/mlx-vlm
 - Rama de mlx-vlm con soporte de Clef: https://github.com/Lazarus-931/mlx-vlm/tree/feat/clef

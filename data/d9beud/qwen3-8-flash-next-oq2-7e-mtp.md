@@ -18,7 +18,7 @@ Su relevancia practica es concreta: permite ejecutar localmente un modelo de cla
 | Longitud de contexto | 262.144 tokens (segun aireleasetracker.com, para el modelo base) |
 | Tipos de cuantizacion | oQ nivel 2.7, 2 bits por defecto, group size 64 (algunos modulos 32 o 128); ~3,29 bits efectivos por peso; reparto: 2 bits 52,8%, 3 bits 43,0%, 4 bits 1,4%, 5 bits 0,3%, 8 bits 2,5%. No se distribuyen otras cuantizaciones (GGUF, AWQ, GPTQ) en este repo |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (Qwen Community License 1.0), heredada del modelo base; en HuggingFace figura como `license: other` |
+| Licencia | qwen-community-1.0 (Qwen Community License 1.0), heredada del modelo base; en Hugging Face figura como `license: other` |
 | Formato de pesos | MLX safetensors (dtype bfloat16 en pesos no cuantizados, escalas y sesgos); incluye codificador de vision, tabla de embeddings de n-gramas y cabezal MTP (`mtp_num_hidden_layers: 1`) |
 
 ## Arquitectura y entrenamiento
@@ -82,14 +82,14 @@ La comparacion significativa es entre cuantizaciones del mismo modelo base: la v
 - Mapa de sensibilidad no medido sobre el bf16 completo: se obtuvo de un checkpoint oQ4e de terceros por limitaciones de memoria (128 GB), de modo que las decisiones de asignacion de bits no se basan en el modelo original sin cuantizar.
 - Riesgo de alucinacion: no disponible, no se han publicado evaluaciones de fidelidad ni de tasas de alucinacion para este checkpoint.
 - Idiomas: la lista de idiomas soportados no se declara. El conjunto de calibracion es multilingue orientado a codigo, pero no hay confirmacion de cobertura por idioma.
-- Restricciones de licencia: la licencia es la Qwen Community License 1.0, heredada del modelo base y marcada como `license: other` en HuggingFace. Las condiciones concretas de uso comercial no se detallan en la informacion disponible; debe consultarse el fichero LICENSE del repositorio antes de un uso en produccion.
+- Restricciones de licencia: la licencia es la Qwen Community License 1.0, heredada del modelo base y marcada como `license: other` en Hugging Face. Las condiciones concretas de uso comercial no se detallan en la informacion disponible; debe consultarse el fichero LICENSE del repositorio antes de un uso en produccion.
 - Dependencia de plataforma: formato MLX, solo ejecutable en Apple Silicon con suficiente memoria unificada. No hay version CUDA, GGUF ni servidores de inferencia convencionales.
 - Trazabilidad y soporte: el repositorio es una publicacion de un tercero (d9beuD), no de Qwen, con 0 descargas y 0 likes en el momento del registro, sin validacion de la comunidad ni garantia de mantenimiento.
 - Uso en produccion: dado el nivel de cuantizacion y la ausencia de evaluaciones, no es recomendable como modelo unico en flujos criticos sin validacion adicional contra el modelo base.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d9beuD/Qwen3.8-Flash-Next-oQ2.7e-mtp
+- Modelo en Hugging Face: https://huggingface.co/d9beuD/Qwen3.8-Flash-Next-oQ2.7e-mtp
 - Variante oQ estandar sin imatrix: https://huggingface.co/d9beuD/Qwen3.8-Flash-Next-oQ2.7-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Checkpoint usado para el mapa de sensibilidad: https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ4e-mtp

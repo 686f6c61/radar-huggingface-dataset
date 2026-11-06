@@ -69,6 +69,6 @@ No se dispone de informacion sobre el rendimiento de este modelo frente a altern
 
 ## Enlaces
 
-- [HuggingFace - lecporr/rotating-equip-sft-n2620](https://huggingface.co/lecporr/rotating-equip-sft-n2620)
+- [Hugging Face - lecporr/rotating-equip-sft-n2620](https://huggingface.co/lecporr/rotating-equip-sft-n2620)
 - [Unsloth (libreria de entrenamiento)](https://github.com/unslothai/unsloth)
 - [Modelo base: unsloth/Qwen3-1.7B-unsloth-bnb-4bit](https://huggingface.co/unsloth/Qwen3-1.7B-unsloth-bnb-4bit)

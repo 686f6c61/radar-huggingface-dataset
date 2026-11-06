@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `thuykinh/tiensinh-art` es un checkpoint de generación de texto alojado en HuggingFace por el usuario `thuykinh`. Según los metadatos de la plataforma, está etiquetado con `qwen2`, lo que sugiere que se basa en la arquitectura Qwen2, aunque no se proporciona una confirmación explícita en la model card. El repositorio contiene pesos en formato `safetensors` con un total de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones), y ocupa 5,6 GB en disco.
+El modelo `thuykinh/tiensinh-art` es un checkpoint de generación de texto alojado en Hugging Face por el usuario `thuykinh`. Según los metadatos de la plataforma, está etiquetado con `qwen2`, lo que sugiere que se basa en la arquitectura Qwen2, aunque no se proporciona una confirmación explícita en la model card. El repositorio contiene pesos en formato `safetensors` con un total de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones), y ocupa 5,6 GB en disco.
 
 La model card es una plantilla automática sin información real: no se especifican datos de entrenamiento, licencia, idiomas soportados, ni capacidades concretas. Los únicos datos fiables provienen de los tags de Hugging Face, que indican compatibilidad con `text-generation-inference`, soporte para cuantización de 4 bits mediante `bitsandbytes` y la librería `transformers`. Dado que el modelo tiene cero descargas y cero likes, se trata de una publicación reciente y sin uso registrado, lo que limita cualquier evaluación práctica.
 

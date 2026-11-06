@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `hai-tran/video-understanding` no es un modelo de aprendizaje automatico entrenado, sino un cuaderno de notas de investigacion (research notes) publicado en HuggingFace. La propia model card lo describe explicitamente como "an exploratory note for Video Understanding" que recoge el planteamiento de una comparacion, los posibles factores de confusion y los requisitos de reproducibilidad antes de reportar cualquier resultado de benchmark. El autor declara que el repositorio no incluye codigo liberado, ni checkpoint entrenado, ni ablaciones completadas.
+El repositorio `hai-tran/video-understanding` no es un modelo de aprendizaje automatico entrenado, sino un cuaderno de notas de investigacion (research notes) publicado en Hugging Face. La propia model card lo describe explicitamente como "an exploratory note for Video Understanding" que recoge el planteamiento de una comparacion, los posibles factores de confusion y los requisitos de reproducibilidad antes de reportar cualquier resultado de benchmark. El autor declara que el repositorio no incluye codigo liberado, ni checkpoint entrenado, ni ablaciones completadas.
 
 El unico artefacto tecnico reseñable es un fichero en formato safetensors con 33.088 parametros totales, una cifra que corresponde a un tensor de tamaño trivial (del orden de decenas de miles de valores) y no a un modelo con capacidad funcional. El tamaño del repositorio es de 0,0 GB, con 0 descargas y 0 "likes" en el momento de la consulta, y no tiene pipeline de inferencia asignado.
 
@@ -12,7 +12,7 @@ Su relevancia actual es, por tanto, documental y metodologica: sirve como ejempl
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el tag de HuggingFace indica "transformer", pero la model card no describe ninguna arquitectura de modelo entrenado) |
+| Arquitectura | no disponible (el tag de Hugging Face indica "transformer", pero la model card no describe ninguna arquitectura de modelo entrenado) |
 | Parametros totales | 33.088 (segun el fichero safetensors del repositorio) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Su relevancia actual es, por tanto, documental y metodologica: sirve como ejempl
 
 ## Arquitectura y entrenamiento
 
-No se describe ninguna arquitectura en la informacion disponible. El unico indicio es el tag `transformer` asociado al repositorio en HuggingFace, pero la model card no especifica capas, dimensiones, mecanismos de atencion, tipo de tokenizador ni variantes como MoE, SSM o hibridas. Tampoco se documenta ningun proceso de entrenamiento: no hay numero de tokens, composicion del dataset, fases de ajuste (SFT, RLHF, DPO) ni estrategia de alineacion.
+No se describe ninguna arquitectura en la informacion disponible. El unico indicio es el tag `transformer` asociado al repositorio en Hugging Face, pero la model card no especifica capas, dimensiones, mecanismos de atencion, tipo de tokenizador ni variantes como MoE, SSM o hibridas. Tampoco se documenta ningun proceso de entrenamiento: no hay numero de tokens, composicion del dataset, fases de ajuste (SFT, RLHF, DPO) ni estrategia de alineacion.
 
 Las innovaciones tecnicas que menciona la model card son propuestas de trabajo, no resultados: el alcance de la pregunta de investigacion, los factores de confusion previstos, una comparacion propuesta con lineas base emparejadas, el contexto de evaluacion (MSR-VTT y ActivityNet Captions), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. La propia nota advierte que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales, y que en caso de anadir resultados deberian incluir versiones de dataset, comandos, semillas, hardware y registros sin procesar.
 
@@ -43,7 +43,7 @@ Las innovaciones tecnicas que menciona la model card son propuestas de trabajo, 
 - Replicabilidad de experimentos: las secciones sobre comprobaciones de reproducibilidad y modos de fallo pueden reutilizarse como checklist para exigir versiones de dataset, comandos, semillas, hardware y registros sin procesar.
 - Documentacion de hipotesis en un grupo de investigacion: el formato separa explicitamente planes e hipotesis de resultados, lo que ayuda a evitar que afirmaciones no verificadas se citen como hallazgos.
 - Revision por pares interna: las preguntas abiertas y las referencias tematicas permiten a un revisor identificar rapidamente que afirmaciones carecen de respaldo experimental.
-- Formacion metodologica: como ejemplo de que un repositorio en HuggingFace puede no contener un modelo, resulta util para enseñar a distinguir artefactos de pesos de artefactos documentales.
+- Formacion metodologica: como ejemplo de que un repositorio en Hugging Face puede no contener un modelo, resulta util para enseñar a distinguir artefactos de pesos de artefactos documentales.
 
 En ningun caso estos usos implican ejecutar el repositorio como modelo: no hay checkpoint entrenado ni pipeline de inferencia.
 
@@ -83,5 +83,5 @@ No disponible. No es posible establecer una comparativa tecnica con modelos de c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hai-tran/video-understanding
+- Repositorio en Hugging Face: https://huggingface.co/hai-tran/video-understanding
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en los resultados de busqueda proporcionados.

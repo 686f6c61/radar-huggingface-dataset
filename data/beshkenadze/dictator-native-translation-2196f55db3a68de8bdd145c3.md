@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este espejo (`beshkenadze/dictator-native-translation-…`) | 238,8 M | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas, 0 likes |
-| `Helsinki-NLP/opus-mt-tc-big-fi-zle` | 238,8 M (identico, es el origen) | no disponible | no disponible en la informacion | no disponible en la informacion | HuggingFace (repositorio original) |
-| `Helsinki-NLP/opus-mt-fi-ru` | no disponible (referencia del proyecto OPUS-MT: en torno a 77 M) | no disponible | no disponible | no disponible | HuggingFace |
-| `facebook/nllb-200-distilled-600M` | no disponible (referencia: 600 M) | no disponible | no disponible | no disponible (la familia NLLB se distribuye habitualmente bajo licencia no comercial) | HuggingFace |
+| Este espejo (`beshkenadze/dictator-native-translation-…`) | 238,8 M | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas, 0 likes |
+| `Helsinki-NLP/opus-mt-tc-big-fi-zle` | 238,8 M (identico, es el origen) | no disponible | no disponible en la informacion | no disponible en la informacion | Hugging Face (repositorio original) |
+| `Helsinki-NLP/opus-mt-fi-ru` | no disponible (referencia del proyecto OPUS-MT: en torno a 77 M) | no disponible | no disponible | no disponible | Hugging Face |
+| `facebook/nllb-200-distilled-600M` | no disponible (referencia: 600 M) | no disponible | no disponible | no disponible (la familia NLLB se distribuye habitualmente bajo licencia no comercial) | Hugging Face |
 
 Nota: los valores marcados como referencia corresponden a conocimiento general del ecosistema y no se han extraído de la información proporcionada en esta ficha; deben confirmarse en los repositorios originales antes de tomar decisiones de producción.
 
@@ -94,7 +94,7 @@ Nota: los valores marcados como referencia corresponden a conocimiento general d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/beshkenadze/dictator-native-translation-2196f55db3a68de8bdd145c3
+- Modelo en Hugging Face: https://huggingface.co/beshkenadze/dictator-native-translation-2196f55db3a68de8bdd145c3
 - Modelo original (upstream): https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-fi-zle
 - Commit del modelo original referenciado: `c391c323183ffce10affddda62215708e776488d`
 - Proyecto OPUS-MT (Universidad de Helsinki): https://github.com/Helsinki-NLP/OPUS-MT

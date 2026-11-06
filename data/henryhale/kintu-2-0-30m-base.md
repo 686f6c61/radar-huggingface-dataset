@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idioma principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kintu-2.0-30M-Base | 30,0M | 512 | Luganda | Apache 2.0 | HuggingFace |
-| Kintu-2.0-30M | no disponible | no disponible | Luganda | no disponible | HuggingFace (variante chat del mismo autor) |
+| Kintu-2.0-30M-Base | 30,0M | 512 | Luganda | Apache 2.0 | Hugging Face |
+| Kintu-2.0-30M | no disponible | no disponible | Luganda | no disponible | Hugging Face (variante chat del mismo autor) |
 | MiniMind (receta base) | ~26M (según receta pública) | no disponible | Chino/inglés | no disponible en la información | GitHub/HuggingFace |
 | Modelos multilingües pequeños (p. ej. variantes de <100M) | variable | variable | multilingüe | variable | variable |
 
@@ -81,7 +81,7 @@ La comparación con alternativas de la misma categoría (modelos dedicados a len
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/henryhale/Kintu-2.0-30M-Base
+- Modelo en Hugging Face: https://huggingface.co/henryhale/Kintu-2.0-30M-Base
 - Modelo de chat Kintu-2.0-30M: https://huggingface.co/henryhale/Kintu-2.0-30M
 - Dataset de preentrenamiento: https://huggingface.co/datasets/henryhale/luganda-pretrain2
 - Receta MiniMind: https://github.com/jingyaogong/minimind

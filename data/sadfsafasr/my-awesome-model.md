@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje basado en arquitectura transformer desarrollado por el usuario sadfsafasr y publicado en HuggingFace bajo licencia MIT. Según la model card, el modelo ha recibido una actualización significativa que mejora su profundidad de razonamiento e inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. La etiqueta `bert` sugiere una arquitectura tipo encoder transformer, aunque no se especifican detalles concretos de la misma.
+MyAwesomeModel es un modelo de lenguaje basado en arquitectura transformer desarrollado por el usuario sadfsafasr y publicado en Hugging Face bajo licencia MIT. Según la model card, el modelo ha recibido una actualización significativa que mejora su profundidad de razonamiento e inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. La etiqueta `bert` sugiere una arquitectura tipo encoder transformer, aunque no se especifican detalles concretos de la misma.
 
 El modelo destaca por su rendimiento en tareas de razonamiento matemático, programación y lógica general, con una mejora notable en el test AIME 2025 (del 70 % al 87,5 % de precisión) gracias a un razonamiento más profundo que emplea una media de 23 000 tokens por pregunta, frente a los 12 000 de la versión anterior. También se menciona una reducción de la tasa de alucinación y un mejor soporte para function calling. Cabe señalar que el repositorio tiene un tamaño de 0,0 GB, por lo que no se han publicado pesos del modelo en esta página.
 
@@ -10,7 +10,7 @@ El modelo destaca por su rendimiento en tareas de razonamiento matemático, prog
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (etiqueta `bert` en HuggingFace; sin detalles adicionales) |
+| Arquitectura | Transformer (etiqueta `bert` en Hugging Face; sin detalles adicionales) |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ El modelo destaca por su rendimiento en tareas de razonamiento matemático, prog
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona detalles sobre la arquitectura interna del modelo más allá de la etiqueta `bert` en HuggingFace, que apunta a un transformer de tipo encoder. No se especifican el número de capas, la dimensión oculta, el número de cabezas de atención ni el tamaño del vocabulario. Tampoco se indica el volumen de datos de entrenamiento, la composición del dataset ni si se emplearon técnicas como RLHF o DPO.
+La model card no proporciona detalles sobre la arquitectura interna del modelo más allá de la etiqueta `bert` en Hugging Face, que apunta a un transformer de tipo encoder. No se especifican el número de capas, la dimensión oculta, el número de cabezas de atención ni el tamaño del vocabulario. Tampoco se indica el volumen de datos de entrenamiento, la composición del dataset ni si se emplearon técnicas como RLHF o DPO.
 
 El post-entrenamiento parece haber sido el foco principal de la actualización: se menciona un mayor uso de recursos computacionales y la introducción de mecanismos de optimización algorítmica. La mejora en el razonamiento se atribuye a un "pensamiento más profundo" durante la inferencia, evidenciado por el incremento de tokens generados por pregunta en el test AIME 2025 (de 12K a 23K tokens de media). Esto sugiere un modo de razonamiento extendido o chain-of-thought, aunque no se confirma explícitamente. La model card indica que ya no es necesario añadir tokens especiales al inicio de la salida para forzar un patrón de pensamiento específico, y que se soporta el uso de system prompts.
 
@@ -50,7 +50,7 @@ El post-entrenamiento parece haber sido el foco principal de la actualización: 
 
 - Atención al cliente automatizada: el modelo puede gestionar conversaciones multi-turno con soporte de system prompts y seguimiento de instrucciones (0,758), lo que permite configurar un asistente con una personalidad y políticas definidas por el sistema. Su capacidad de generación de diálogo (0,644) y comprensión lectora (0,700) lo hacen adecuado para mantener contextos conversacionales coherentes.
 - Generación de código en producción: con una puntuación de 0,650 en code generation y soporte de function calling, el modelo puede integrarse en pipelines de CI/CD para generar esqueletos de código, documentación técnica o tests unitarios, y conectarse a herramientas externas mediante llamadas a funciones.
-- Análisis de sentimiento en redes sociales: su rendimiento en sentiment analysis (0,792) y text classification (0,828) permite construir pipelines de monitorización de marca que clasifiquen comentarios de usuarios en tiempo real, por ejemplo mediante la API de HuggingFace (endpoints_compatible).
+- Análisis de sentimiento en redes sociales: su rendimiento en sentiment analysis (0,792) y text classification (0,828) permite construir pipelines de monitorización de marca que clasifiquen comentarios de usuarios en tiempo real, por ejemplo mediante la API de Hugging Face (endpoints_compatible).
 - Traducción automática de documentación técnica: con una puntuación de 0,804 en traducción, puede emplearse para traducir manuales, guías y documentación de producto, aunque no se especifican los pares de idiomas soportados.
 - Resumen de documentos legales o financieros: su capacidad de summarization (0,767) combinada con comprensión lectora (0,700) permite generar resúmenes ejecutivos de contratos, informes anuales o expedientes extensos, reduciendo el tiempo de revisión manual.
 - Asistente de razonamiento lógico para soporte técnico: con 0,819 en razonamiento lógico, el modelo puede diagnosticar problemas técnicos encadenando pasos de deducción, guiando al usuario a través de árboles de decisión y proponiendo soluciones basadas en la información recopilada.
@@ -83,7 +83,7 @@ Adicionalmente, el autor reporta una precisión del 87,5 % en el test AIME 2025 
 
 ## Requisitos de hardware
 
-- No disponible: el repositorio de HuggingFace tiene un tamaño de 0,0 GB, lo que indica que no se han publicado los pesos del modelo.
+- No disponible: el repositorio de Hugging Face tiene un tamaño de 0,0 GB, lo que indica que no se han publicado los pesos del modelo.
 - Sin pesos publicados, no es posible estimar la VRAM necesaria para inferencia ni recomendar GPUs específicas.
 - No se especifican opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, etc.) en la documentación disponible.
 - No se proporcionan datos de latencia ni throughput.
@@ -105,7 +105,7 @@ No se dispone de información suficiente para comparar con modelos conocidos del
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace tiene un tamaño de 0,0 GB: no se han publicado los pesos del modelo, por lo que no es posible descargarlo ni ejecutarlo localmente desde esta página.
+- El repositorio de Hugging Face tiene un tamaño de 0,0 GB: no se han publicado los pesos del modelo, por lo que no es posible descargarlo ni ejecutarlo localmente desde esta página.
 - No se especifican los idiomas soportados, lo que limita la evaluación de su aplicabilidad multilingüe.
 - Los benchmarks reportados son propios del autor y no están validados externamente; no se han publicado resultados en benchmarks estandarizados como MMLU, HumanEval o GSM8K.
 - No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens ni las técnicas de alineación (RLHF, DPO, etc.), lo que dificulta evaluar posibles sesgos.
@@ -117,7 +117,7 @@ No se dispone de información suficiente para comparar con modelos conocidos del
 
 ## Enlaces
 
-- Repositorio principal en HuggingFace: https://huggingface.co/sadfsafasr/my-awesome-model
+- Repositorio principal en Hugging Face: https://huggingface.co/sadfsafasr/my-awesome-model
 - Repositorio de prueba (TestRepo): https://huggingface.co/sadfsafasr/MyAwesomeModel-TestRepo
 - Versión v1 (mm-tool): https://huggingface.co/mm-tool/MyAwesomeModel-v1
 - Repositorio alternativo (sadafhjkj): https://huggingface.co/sadafhjkj/MyAwesomeModel

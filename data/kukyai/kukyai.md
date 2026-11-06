@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KukyAI/KukyAI es un repositorio alojado en HuggingFace por el usuario KukyAI. En el momento de la consulta, la model card publicada no contiene mas contenido que la declaracion de licencia en el frontmatter (`license: bigcode-openrail-m`), sin descripcion, sin documentacion tecnica y sin ejemplos de uso. No se especifica que problema resuelve, ni su arquitectura, ni su proposito declarado.
+KukyAI/KukyAI es un repositorio alojado en Hugging Face por el usuario KukyAI. En el momento de la consulta, la model card publicada no contiene mas contenido que la declaracion de licencia en el frontmatter (`license: bigcode-openrail-m`), sin descripcion, sin documentacion tecnica y sin ejemplos de uso. No se especifica que problema resuelve, ni su arquitectura, ni su proposito declarado.
 
 El repositorio no dispone de pipeline declarado, no tiene idiomas indicados y acumula cero descargas y cero "likes" desde su creacion el 16 de octubre de 2026, fecha que coincide con la de su ultima actualizacion, lo que sugiere que no ha recibido mantenimiento ni revision posterior. Tampoco se han identificado publicaciones asociadas, papers, blogs ni repositorios de codigo que documenten el modelo.
 
@@ -38,7 +38,7 @@ La unica etiqueta tecnica relevante es la licencia `bigcode-openrail-m`, una lic
 ## Casos de uso
 
 - No disponible. No es posible proponer casos de uso concretos sin conocer la arquitectura, el tamano, el contexto soportado ni las capacidades del modelo.
-- Evaluacion exploratoria del repositorio: un desarrollador podria inspeccionar el repositorio de HuggingFace para comprobar si se han publicado pesos, configuracion o tokenizador utilizables, dado que la model card por si sola no aporta informacion operativa.
+- Evaluacion exploratoria del repositorio: un desarrollador podria inspeccionar el repositorio de Hugging Face para comprobar si se han publicado pesos, configuracion o tokenizador utilizables, dado que la model card por si sola no aporta informacion operativa.
 - Auditoria de licencia: un equipo legal o de cumplimiento podria revisar la licencia `bigcode-openrail-m` para determinar las obligaciones y restricciones aplicables antes de considerar cualquier uso, siempre que existan artefactos descargables.
 - Monitorizacion del repositorio: seguir la evolucion del mismo por si el autor publica documentacion, pesos o una model card completa en el futuro.
 - No se pueden detallar mas escenarios porque no hay informacion que permita justificar su idoneidad tecnica.
@@ -77,5 +77,5 @@ No es posible establecer una comparativa con modelos alternativos. No se conocen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KukyAI/KukyAI
+- Hugging Face: https://huggingface.co/KukyAI/KukyAI
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados devueltos correspondian a paginas genericas de YouTube sin relacion con el modelo.

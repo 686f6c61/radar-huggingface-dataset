@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAT_llama3b_likeZephyr_eps0600_123_relativelr_utility_100_NEW es un adaptador LoRA alojado en HuggingFace por el usuario maria715, derivado de experimentos de tesis de master sobre entrenamiento adversarial orientado a la robustez de modelos de lenguaje. No se trata de un modelo completo con pesos base, sino de un adaptador PEFT (formato safetensors, libreria peft) que debe combinarse con un modelo base no especificado en la model card. El repositorio ocupa 1,2 GB y no registra descargas ni likes en el momento de la consulta.
+CAT_llama3b_likeZephyr_eps0600_123_relativelr_utility_100_NEW es un adaptador LoRA alojado en Hugging Face por el usuario maria715, derivado de experimentos de tesis de master sobre entrenamiento adversarial orientado a la robustez de modelos de lenguaje. No se trata de un modelo completo con pesos base, sino de un adaptador PEFT (formato safetensors, libreria peft) que debe combinarse con un modelo base no especificado en la model card. El repositorio ocupa 1,2 GB y no registra descargas ni likes en el momento de la consulta.
 
 El nombre del artefacto codifica los hiperparametros del experimento: un modelo base de la familia Llama de aproximadamente 3B parametros ("llama3b"), un procedimiento de ajuste inspirado en Zephyr ("likeZephyr"), un presupuesto de perturbacion adversarial epsilon de 0,6 ("eps0600"), un esquema de learning rate relativo ("relativelr") y un peso de utilidad de 100 ("utility_100"). Ninguno de estos extremos esta confirmado por documentacion del autor: la model card se limita a una unica frase descriptiva, sin detallar el modelo base, el dataset, los hiperparametros de entrenamiento ni los resultados obtenidos.
 
@@ -100,5 +100,5 @@ La comparacion debe interpretarse con cautela: los tres modelos de referencia so
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0600_123_relativelr_utility_100_NEW
+- Hugging Face: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0600_123_relativelr_utility_100_NEW
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

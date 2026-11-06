@@ -78,7 +78,7 @@ La comparativa se basa en datos públicos de los modelos base, no en este fine-t
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logan7000/llm-math345-ttrl-phi4mini-endpoint
+- Repositorio Hugging Face: https://huggingface.co/logan7000/llm-math345-ttrl-phi4mini-endpoint
 - Paper DeepSeekMath (GRPO): https://huggingface.co/papers/2402.03300
 - Repositorio TRL: https://github.com/huggingface/trl
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct

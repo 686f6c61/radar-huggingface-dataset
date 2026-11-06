@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `daanvdweijden/qwen2.5-7b-birds-albanese-s1` es un ajuste fino (fine-tuning) del modelo base Qwen2.5-7B, publicado por el usuario daanvdweijden en HuggingFace. La model card no proporciona información sobre el autor, el dataset de entrenamiento, la licencia ni los detalles del procedimiento. El nombre sugiere que fue entrenado sobre un conjunto de datos identificado como "birds-albanese-s1", posiblemente relacionado con aves o con un dominio específico, pero no hay confirmación pública al respecto. El repositorio incluye pesos en formato safetensors y está etiquetado con `unsloth`, lo que indica que probablemente se utilizó la librería Unsloth para el ajuste fino, conocida por su eficiencia en memoria y velocidad.
+El modelo `daanvdweijden/qwen2.5-7b-birds-albanese-s1` es un ajuste fino (fine-tuning) del modelo base Qwen2.5-7B, publicado por el usuario daanvdweijden en Hugging Face. La model card no proporciona información sobre el autor, el dataset de entrenamiento, la licencia ni los detalles del procedimiento. El nombre sugiere que fue entrenado sobre un conjunto de datos identificado como "birds-albanese-s1", posiblemente relacionado con aves o con un dominio específico, pero no hay confirmación pública al respecto. El repositorio incluye pesos en formato safetensors y está etiquetado con `unsloth`, lo que indica que probablemente se utilizó la librería Unsloth para el ajuste fino, conocida por su eficiencia en memoria y velocidad.
 
 Aunque no se dispone de documentación específica, al estar basado en Qwen2.5-7B hereda la arquitectura y capacidades generales de ese modelo, incluyendo una ventana de contexto de hasta 128 mil tokens y soporte multilingüe. Sin embargo, no se puede verificar si el ajuste fino ha conservado todas esas capacidades ni si ha introducido mejoras o regresiones en tareas concretas. La relevancia de este modelo radica en su potencial como ejemplo de fine-tuning de bajo costo sobre una base sólida, aunque su utilidad práctica queda limitada por la falta de transparencia en su entrenamiento y evaluación.
 
@@ -77,7 +77,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. Este mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/daanvdweijden/qwen2.5-7b-birds-albanese-s1
+- Repositorio en Hugging Face: https://huggingface.co/daanvdweijden/qwen2.5-7b-birds-albanese-s1
 - Modelo base Qwen2.5 (coleccion): https://huggingface.co/collections/Qwen/qwen25
 - Documentacion de Qwen2.5 (blog): https://qwen.ai/blog?id=qwen2.5
 - Repositorio GitHub de Qwen2.5 (mx4ai): https://github.com/mx4ai/qwen2.5

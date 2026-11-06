@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Matick Gemma 4 E2B Mexicano v3 (GGUF) | 4,6B declarados (2,3B efectivos) | 131.072 tokens | Texto e imagen | Apache 2.0 | HuggingFace (GGUF) |
-| google/gemma-4-E2B | 2,3B efectivos | 131.072 tokens (declarado en la familia) | Texto e imagen | Licencia Gemma (no confirmada en la información) | HuggingFace |
-| Qwen2.5-VL-3B | 3B | 32.768 tokens (referencia habitual de la familia) | Texto e imagen | Apache 2.0 (variantes) | HuggingFace |
-| Llama 3.2 3B Instruct | 3B | 128.000 tokens | Solo texto | Licencia Llama | HuggingFace |
+| Matick Gemma 4 E2B Mexicano v3 (GGUF) | 4,6B declarados (2,3B efectivos) | 131.072 tokens | Texto e imagen | Apache 2.0 | Hugging Face (GGUF) |
+| google/gemma-4-E2B | 2,3B efectivos | 131.072 tokens (declarado en la familia) | Texto e imagen | Licencia Gemma (no confirmada en la información) | Hugging Face |
+| Qwen2.5-VL-3B | 3B | 32.768 tokens (referencia habitual de la familia) | Texto e imagen | Apache 2.0 (variantes) | Hugging Face |
+| Llama 3.2 3B Instruct | 3B | 128.000 tokens | Solo texto | Licencia Llama | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada, por lo que la comparación se limita a parámetros, contexto, modalidad y licencia. Los datos de los modelos alternativos son de referencia general y deben verificarse en sus respectivas model cards.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/danymorlet/Matick-Gemma-4-E2B-Mexicano-v3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/danymorlet/Matick-Gemma-4-E2B-Mexicano-v3-GGUF
 - Modelo base conversacional: https://huggingface.co/google/gemma-4-E2B
 - Modelo base de embeddings: https://huggingface.co/google/embeddinggemma-2
 - LM Studio: https://lmstudio.ai

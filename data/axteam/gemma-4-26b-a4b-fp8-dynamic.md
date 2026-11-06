@@ -78,8 +78,8 @@ Además, el autor midió perplejidad frente al BF16 original sobre WikiText-2 (i
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| axteam/gemma-4-26B-A4B-FP8-dynamic | 25,8B totales, 8/128 expertos activos | no disponible | FP8 dinámico W8A8 | Apache-2.0 | HuggingFace, vLLM ≥ 0.19.0 |
-| google/gemma-4-26B-A4B (BF16) | 25,8B totales, misma arquitectura MoE | no disponible | BF16 | Gemma 4 / Apache-2.0 | HuggingFace |
+| axteam/gemma-4-26B-A4B-FP8-dynamic | 25,8B totales, 8/128 expertos activos | no disponible | FP8 dinámico W8A8 | Apache-2.0 | Hugging Face, vLLM ≥ 0.19.0 |
+| google/gemma-4-26B-A4B (BF16) | 25,8B totales, misma arquitectura MoE | no disponible | BF16 | Gemma 4 / Apache-2.0 | Hugging Face |
 | Variante AWQ-8bit del mismo base | 25,8B totales | no disponible | AWQ INT8 | no disponible | referenciada en benchmarks del autor |
 | Variante NVFP4 del mismo base | 25,8B totales | no disponible | NVFP4 | no disponible | referenciada en benchmarks del autor |
 
@@ -99,7 +99,7 @@ La comparativa se limita a variantes de cuantización del mismo modelo base, ya 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/axteam/gemma-4-26B-A4B-FP8-dynamic
+- Hugging Face: https://huggingface.co/axteam/gemma-4-26B-A4B-FP8-dynamic
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

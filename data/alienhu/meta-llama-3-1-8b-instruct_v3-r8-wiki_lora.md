@@ -4,7 +4,7 @@
 
 Meta-Llama-3.1-8B-Instruct_v3-r8-wiki_lora es un adaptador LoRA publicado por el usuario AlienHu sobre el modelo base meta-llama/Meta-Llama-3.1-8B-Instruct. No se trata de un modelo completo, sino de un conjunto de pesos de adaptacion de bajo rango (PEFT) que debe cargarse junto al modelo base original para funcionar. El repositorio ocupa 0,8 GB, lo que es coherente con un adaptador LoRA de rango 8 sobre un transformer de 8.000 millones de parametros.
 
-El nombre del adaptador sugiere un ajuste orientado a datos tipo wiki (posiblemente Wikipedia u otro corpus enciclopedico), aunque la model card no documenta ni el dataset, ni el procedimiento de entrenamiento, ni los hiperparametros utilizados. La informacion disponible es minima: la model card es la plantilla por defecto de HuggingFace sin rellenar, con la mayoria de campos marcados como "[More Information Needed]".
+El nombre del adaptador sugiere un ajuste orientado a datos tipo wiki (posiblemente Wikipedia u otro corpus enciclopedico), aunque la model card no documenta ni el dataset, ni el procedimiento de entrenamiento, ni los hiperparametros utilizados. La informacion disponible es minima: la model card es la plantilla por defecto de Hugging Face sin rellenar, con la mayoria de campos marcados como "[More Information Needed]".
 
 La relevancia de esta ficha es limitada pero ilustrativa: se trata de un ejemplo tipico de adaptador comunitario sin documentacion, con cero descargas y cero likes en el momento de la consulta. Resulta util como caso de estudio de lo que un adaptador LoRA puede aportar sobre Llama 3.1 8B Instruct, pero no debe considerarse un artefacto listo para produccion sin una evaluacion propia.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| AlienHu/Meta-Llama-3.1-8B-Instruct_v3-r8-wiki_lora | Adaptador LoRA r8 sobre 8B | no disponible (base: 128k) | no disponible | HuggingFace, 0 descargas | Sin documentacion ni benchmarks |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128.000 | Llama 3.1 Community License | HuggingFace, ampliamente usado | Modelo base oficial de Meta, con benchmarks publicados |
-| Adaptadores LoRA comunitarios sobre Llama 3.1 8B | Variable | 128.000 | Variable | HuggingFace | Calidad dependiente del autor y del dataset |
+| AlienHu/Meta-Llama-3.1-8B-Instruct_v3-r8-wiki_lora | Adaptador LoRA r8 sobre 8B | no disponible (base: 128k) | no disponible | Hugging Face, 0 descargas | Sin documentacion ni benchmarks |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128.000 | Llama 3.1 Community License | Hugging Face, ampliamente usado | Modelo base oficial de Meta, con benchmarks publicados |
+| Adaptadores LoRA comunitarios sobre Llama 3.1 8B | Variable | 128.000 | Variable | Hugging Face | Calidad dependiente del autor y del dataset |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlienHu/Meta-Llama-3.1-8B-Instruct_v3-r8-wiki_lora
+- Hugging Face: https://huggingface.co/AlienHu/Meta-Llama-3.1-8B-Instruct_v3-r8-wiki_lora
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Paper de referencia citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

@@ -104,7 +104,7 @@ Nota: la comparativa de rendimiento frente a estas alternativas no puede estable
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/zeromodels/all-distilroberta-v1
+- Checkpoint en Hugging Face: https://huggingface.co/zeromodels/all-distilroberta-v1
 - Repositorio del proyecto ZeroModels: https://github.com/IMvision12/ZeroModels
 - Documentacion de Sentence Transformers en ZeroModels: https://imvision12.github.io/ZeroModels/sentence_transformer/
 - Checkpoint original: https://huggingface.co/sentence-transformers/all-distilroberta-v1

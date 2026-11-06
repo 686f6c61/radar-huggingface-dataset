@@ -59,9 +59,9 @@ Se comparan el modelo humanen_70B_v1 con el modelo base Llama-3.3-70B-Instruct y
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| humanen_70B_v1 | 70B | no disponible | Apache 2.0 | HuggingFace |
-| Llama-3.3-70B-Instruct | 70B | 128k | Llama 3.3 Community License | HuggingFace |
-| Qwen2.5-72B-Instruct | 72B | 128k | Apache 2.0 | HuggingFace |
+| humanen_70B_v1 | 70B | no disponible | Apache 2.0 | Hugging Face |
+| Llama-3.3-70B-Instruct | 70B | 128k | Llama 3.3 Community License | Hugging Face |
+| Qwen2.5-72B-Instruct | 72B | 128k | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -73,5 +73,5 @@ Se comparan el modelo humanen_70B_v1 con el modelo base Llama-3.3-70B-Instruct y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/schonsense/humanen_70B_v1
+- Hugging Face: https://huggingface.co/schonsense/humanen_70B_v1
 - Modelo base: https://huggingface.co/Jolly-Q/Llama-3.3-70B-Inst-Ablit-Flammades-SLERP

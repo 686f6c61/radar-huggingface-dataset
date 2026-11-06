@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KINETICGRID es un modelo alojado en HuggingFace por el usuario Naitri-2007, publicado el 15 de agosto de 2026. En el momento de la consulta, el repositorio presenta un tamaño de 0,6 GB, cero descargas y una única valoración positiva. La ficha de HuggingFace no incluye información sobre la arquitectura, el pipeline, la licencia, los idiomas soportados ni los detalles de entrenamiento. El único tag disponible es "region:us", lo que sugiere una posible orientación geográfica, pero sin datos adicionales no es posible confirmar el propósito ni las capacidades del modelo. Se trata, por tanto, de un modelo muy reciente y con documentación extremadamente limitada, lo que impide una evaluación técnica rigurosa.
+KINETICGRID es un modelo alojado en Hugging Face por el usuario Naitri-2007, publicado el 15 de agosto de 2026. En el momento de la consulta, el repositorio presenta un tamaño de 0,6 GB, cero descargas y una única valoración positiva. La ficha de Hugging Face no incluye información sobre la arquitectura, el pipeline, la licencia, los idiomas soportados ni los detalles de entrenamiento. El único tag disponible es "region:us", lo que sugiere una posible orientación geográfica, pero sin datos adicionales no es posible confirmar el propósito ni las capacidades del modelo. Se trata, por tanto, de un modelo muy reciente y con documentación extremadamente limitada, lo que impide una evaluación técnica rigurosa.
 
 ## Especificaciones tecnicas
 
@@ -52,4 +52,4 @@ No disponible. Al carecer de información sobre la arquitectura, el tamaño o el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Naitri-2007/KINETICGRID
+- Repositorio en Hugging Face: https://huggingface.co/Naitri-2007/KINETICGRID

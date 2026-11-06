@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo andkil/llm-course-hw1-mini es un checkpoint de 10.621.860 parametros publicado en HuggingFace por el usuario andkil. Por el nombre del repositorio ("llm-course-hw1") y por el tamano, todo apunta a que se trata de un ejercicio practico de un curso de modelos de lenguaje, no de un modelo destinado a produccion. El autor no ha publicado model card sustantiva: el README se limita a indicar que el modelo se subio mediante la integracion PyTorchModelHubMixin de huggingface_hub.
+El modelo andkil/llm-course-hw1-mini es un checkpoint de 10.621.860 parametros publicado en Hugging Face por el usuario andkil. Por el nombre del repositorio ("llm-course-hw1") y por el tamano, todo apunta a que se trata de un ejercicio practico de un curso de modelos de lenguaje, no de un modelo destinado a produccion. El autor no ha publicado model card sustantiva: el README se limita a indicar que el modelo se subio mediante la integracion PyTorchModelHubMixin de huggingface_hub.
 
 No hay informacion publica sobre la arquitectura, el dataset de entrenamiento, el numero de tokens vistos, la tokenizacion ni el contexto soportado. El repositorio no declara licencia, idiomas, pipeline ni resultados de evaluacion, y en el momento de redactar esta ficha acumula 0 descargas y 0 "likes".
 
-Por tanto, su relevancia actual es exclusivamente didactica: sirve como ejemplo minimo de publicacion de pesos en formato safetensors y de integracion con la libreria de HuggingFace, pero no como componente para aplicaciones reales. Los resultados de la busqueda web asociados no guardan ninguna relacion con el modelo.
+Por tanto, su relevancia actual es exclusivamente didactica: sirve como ejemplo minimo de publicacion de pesos en formato safetensors y de integracion con la libreria de Hugging Face, pero no como componente para aplicaciones reales. Los resultados de la busqueda web asociados no guardan ninguna relacion con el modelo.
 
 ## Especificaciones tecnicas
 
@@ -41,12 +41,12 @@ No hay informacion sobre el corpus de entrenamiento, el numero de tokens, el uso
 
 Dado que no existe documentacion funcional, cualquier caso de uso practico es especulativo. Se enumeran a continuacion escenarios plausibles unicamente como referencia del tipo de modelo que podria ser, dejando constancia de que no estan verificados:
 
-- Material didactico de un curso de LLM: el modelo puede usarse como ejemplo de publicacion de pesos en HuggingFace y de carga mediante `PyTorchModelHubMixin` en un notebook de clase.
+- Material didactico de un curso de LLM: el modelo puede usarse como ejemplo de publicacion de pesos en Hugging Face y de carga mediante `PyTorchModelHubMixin` en un notebook de clase.
 - Prueba de pipelines de integracion continua: sirve como artefacto ligero para validar que un flujo de descarga, carga y ejecucion funciona de extremo a extremo antes de sustituirlo por un modelo real.
 - Test de plantillas de model card: util para verificar herramientas de generacion automatica de fichas y validacion de metadatos.
 - Validacion de entornos de despliegue (por ejemplo, comprobar que `safetensors` se carga correctamente en una version concreta de `torch`).
 - Experimentos de tokenizacion o de preprocesado a escala minima, dado el reducido numero de parametros.
-- Pruebas de unidad de librerias que consumen modelos de HuggingFace sin requerir pesos de gran tamano.
+- Pruebas de unidad de librerias que consumen modelos de Hugging Face sin requerir pesos de gran tamano.
 
 En todos los casos anteriores el valor del modelo es instrumental, nunca como componente funcional de una aplicacion de usuario final.
 
@@ -81,7 +81,7 @@ No disponible. El repositorio no declara arquitectura ni tarea, por lo que no es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/andkil/llm-course-hw1-mini
+- Hugging Face: https://huggingface.co/andkil/llm-course-hw1-mini
 - Documentacion de PyTorchModelHubMixin: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Repositorio de codigo: no disponible

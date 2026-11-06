@@ -6,7 +6,7 @@ RadiAssist es un modelo de clasificación de imágenes médicas desarrollado por
 
 El modelo aborda un problema clásico de triaje radiológico: la priorización automática de estudios de tórax según la probabilidad de hallazgos patológicos. Su relevancia radica en que combina una arquitectura convolucional consolidada (DenseNet-121) con calibración de probabilidades y explicabilidad integrada, lo que facilita la inspección de las regiones que motivan cada predicción. No obstante, se trata de un prototipo de investigación y no de un dispositivo médico.
 
-La información disponible es limitada: el repositorio de HuggingFace ocupa 0.0 GB, no registra descargas ni interacciones, y la model card no detalla el número de parámetros, los idiomas soportados ni los formatos de pesos más allá de ONNX. La licencia es de tipo "other" con nombre "research-only", lo que restringe el uso comercial.
+La información disponible es limitada: el repositorio de Hugging Face ocupa 0.0 GB, no registra descargas ni interacciones, y la model card no detalla el número de parámetros, los idiomas soportados ni los formatos de pesos más allá de ONNX. La licencia es de tipo "other" con nombre "research-only", lo que restringe el uso comercial.
 
 ## Especificaciones técnicas
 
@@ -71,7 +71,7 @@ No se dispone en la información proporcionada de datos comparativos con otros m
 
 | Modelo | Arquitectura | Contexto | AUROC macro | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RadiAssist | DenseNet-121 + ONNX | no aplica | 0.804 | research-only | HuggingFace (ONNX) |
+| RadiAssist | DenseNet-121 + ONNX | no aplica | 0.804 | research-only | Hugging Face (ONNX) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,11 +83,11 @@ No se dispone en la información proporcionada de datos comparativos con otros m
 - No se documentan sesgos específicos ni evaluaciones de equidad en la información disponible.
 - Riesgo de alucinación no aplica en el sentido generativo, pero sí existe riesgo de falsos positivos y falsos negativos en la clasificación.
 - No se especifican limitaciones de idioma porque el modelo no procesa texto.
-- El repositorio de HuggingFace no contiene pesos visibles (tamaño 0.0 GB), por lo que la disponibilidad efectiva de los artefactos ONNX no está confirmada.
+- El repositorio de Hugging Face no contiene pesos visibles (tamaño 0.0 GB), por lo que la disponibilidad efectiva de los artefactos ONNX no está confirmada.
 - No se documentan requisitos de hardware ni latencias, lo que dificulta planificar un despliegue en producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhimanjatin/radiassist-model
+- Modelo en Hugging Face: https://huggingface.co/dhimanjatin/radiassist-model
 - Repositorio de la API RadiAssist: https://github.com/dhiman-13/chest-xray-triage
 - Dataset NIH ChestX-ray14: no se proporciona enlace directo en la información disponible.

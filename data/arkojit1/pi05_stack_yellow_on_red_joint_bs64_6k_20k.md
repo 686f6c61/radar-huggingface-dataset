@@ -76,9 +76,9 @@ El autor advierte que esta perdida no equivale a tasa de exito de la tarea y no 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `arkojit1/pi05_stack_yellow_on_red_joint_bs64_6k_20k` | 3.616 M | no disponible | Apilamiento Franka (espacio articular) | no disponible | HuggingFace |
-| `lerobot/pi05_base` | no disponible | no disponible | VLA generalista (base) | no disponible | HuggingFace |
-| `pi05_stack_yellow_on_red_*` (espacio efector final) | no disponible | no disponible | Apilamiento Franka (deltas de efector) | no disponible | HuggingFace |
+| `arkojit1/pi05_stack_yellow_on_red_joint_bs64_6k_20k` | 3.616 M | no disponible | Apilamiento Franka (espacio articular) | no disponible | Hugging Face |
+| `lerobot/pi05_base` | no disponible | no disponible | VLA generalista (base) | no disponible | Hugging Face |
+| `pi05_stack_yellow_on_red_*` (espacio efector final) | no disponible | no disponible | Apilamiento Franka (deltas de efector) | no disponible | Hugging Face |
 | Otros VLA open source (p. ej. OpenVLA, RT-2) | no disponible | no disponible | Manipulacion generalista | no disponible | no disponible |
 
 No se dispone de datos suficientes para una comparacion cuantitativa de rendimiento entre estos modelos.
@@ -97,7 +97,7 @@ No se dispone de datos suficientes para una comparacion cuantitativa de rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arkojit1/pi05_stack_yellow_on_red_joint_bs64_6k_20k
+- Modelo en Hugging Face: https://huggingface.co/arkojit1/pi05_stack_yellow_on_red_joint_bs64_6k_20k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de ajuste: https://huggingface.co/datasets/Ameyapores/haply_stack_yellow_red_joint_delta
 - LeRobot (libreria): https://github.com/huggingface/lerobot

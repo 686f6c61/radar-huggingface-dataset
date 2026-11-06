@@ -24,7 +24,7 @@ La relevancia del artefacto es de ingeniería de datos, no de aprendizaje autom�
 | Version de Rust exigida | 1.81.0, con clippy; `rust-version = "1.81"` en cualquier `Cargo.toml`; prohibido `f32`/`f64` |
 | Trazabilidad | Cada fichero lleva un sidecar `.sha256` y una fila en `COLOUR-QR-RECEIPT-2026-08-06.hbp` |
 | Punto de acceso | `https://jessebrown1980.github.io/the-colour-qr/` (una sola página estática, sin dependencias ni build) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-10-16 / 2026-08-07 (según los metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
@@ -124,7 +124,7 @@ No se proporcionan datos comparativos con otros esquemas de codificación en la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessedbrown/the-colour-qr
+- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/the-colour-qr
 - Descodificador en vivo (una sola pagina estatica): https://jessebrown1980.github.io/the-colour-qr/
 - Pagina puente citada en la model card: https://jessebrown1980.github.io/the-bridge-to-all-of-it/
 - Fichero de recibos referenciado: `COLOUR-QR-RECEIPT-2026-08-06.hbp`

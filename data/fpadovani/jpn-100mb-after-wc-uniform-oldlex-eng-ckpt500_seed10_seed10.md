@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/jpn-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed10_seed10` es un fine-tuning supervisado (SFT) del modelo base `fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed10`, desarrollado por el usuario `fpadovani`. Se entrenó utilizando la librería TRL de HuggingFace, tal y como se indica en su model card. El modelo tiene un total de 124.770.816 parámetros y se distribuye en formato `safetensors`. Según los tags del repositorio, emplea una arquitectura de tipo GPT-2 y está destinado a la generación de texto. No se ha publicado información sobre la longitud de contexto, los idiomas soportados ni la licencia. Se trata de un modelo experimental de tamaño reducido, sin datos de rendimiento publicados, cuyo interés principal radica en su uso como base para investigación o prototipos.
+El modelo `fpadovani/jpn-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed10_seed10` es un fine-tuning supervisado (SFT) del modelo base `fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed10`, desarrollado por el usuario `fpadovani`. Se entrenó utilizando la librería TRL de Hugging Face, tal y como se indica en su model card. El modelo tiene un total de 124.770.816 parámetros y se distribuye en formato `safetensors`. Según los tags del repositorio, emplea una arquitectura de tipo GPT-2 y está destinado a la generación de texto. No se ha publicado información sobre la longitud de contexto, los idiomas soportados ni la licencia. Se trata de un modelo experimental de tamaño reducido, sin datos de rendimiento publicados, cuyo interés principal radica en su uso como base para investigación o prototipos.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El modelo es un fine-tuning del checkpoint `fpadovani/ppt-wc-uniform-oldlex-eng-
 
 ## Capacidades
 
-- Generación de texto: el modelo está configurado para el pipeline `text-generation` de HuggingFace.
+- Generación de texto: el modelo está configurado para el pipeline `text-generation` de Hugging Face.
 - No se ha documentado soporte para tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni otros modos especiales.
 - No hay información sobre capacidades multilingües ni sobre su comportamiento en tareas de código, matemáticas o razonamiento complejo.
 
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada para inferencia: no se han publicado requisitos oficiales. Según el número de parámetros, en precisión fp32 el modelo ocuparía aproximadamente 500 MB (124.770.816 × 4 bytes), en fp16 unos 250 MB, y en cuantización 4-bit unos 70 MB. No se ha confirmado la disponibilidad de cuantizaciones.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente para la inferencia básica. También podría ejecutarse en CPU para pruebas.
 - Compatibilidad con GPU de consumo: sí, es probable que funcione en tarjetas como RTX 3060, RTX 4090 o incluso en GPUs integradas modernas.
-- Opciones de despliegue: al ser un modelo de la librería Transformers, puede usarse con `pipeline` de HuggingFace. No se ha verificado su compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: al ser un modelo de la librería Transformers, puede usarse con `pipeline` de Hugging Face. No se ha verificado su compatibilidad con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -64,6 +64,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fpadovani/jpn-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed10_seed10
+- Hugging Face: https://huggingface.co/fpadovani/jpn-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed10_seed10
 - Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/4fghgqkn
 - TRL (GitHub): https://github.com/huggingface/trl

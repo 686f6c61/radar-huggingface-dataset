@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Designcoder es un modelo publicado en HuggingFace por el usuario chjdl1816 bajo licencia MIT. La información disponible en su model card es mínima: únicamente declara la licencia, sin descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación muy reciente o de carácter experimental.
+Designcoder es un modelo publicado en Hugging Face por el usuario chjdl1816 bajo licencia MIT. La información disponible en su model card es mínima: únicamente declara la licencia, sin descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación muy reciente o de carácter experimental.
 
 Por el nombre del identificador ("designcoder") podría inferirse una orientación hacia generación de código o diseño, pero esta interpretación no está respaldada por ningún dato verificable en la información proporcionada. No se dispone de detalles sobre arquitectura, tamaño de parámetros, longitud de contexto, idiomas soportados ni metodología de entrenamiento.
 
@@ -67,5 +67,5 @@ No disponible. Al no conocerse el tamaño, la arquitectura ni el dominio de apli
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chjdl1816/designcoder
+- Hugging Face: https://huggingface.co/chjdl1816/designcoder
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

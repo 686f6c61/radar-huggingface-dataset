@@ -25,7 +25,7 @@ Su relevancia es acotada pero clara para quien investiga RL aplicado a generacio
 | Tipo de ajuste | RL con GRPO (OpenRLHF) sobre el modelo base, sin semilla SFT |
 | Paso global del checkpoint | 8 |
 | Tamano del repositorio | 17,7 GB |
-| Fecha de creacion | 2026-09-18 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-18 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -79,9 +79,9 @@ La informacion proporcionada solo permite comparar de forma fiable con el modelo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| agurung/cobalt-seeded-rl-base-...-groot16 | 4,41 B | No disponible | Mejor pass@8 de su ejecucion, sin valor numerico | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4,4 B (no confirmado en la informacion proporcionada) | No disponible | No disponible | No disponible | HuggingFace |
-| Otras variantes de Qwen3-4B (Thinking, Base) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| agurung/cobalt-seeded-rl-base-...-groot16 | 4,41 B | No disponible | Mejor pass@8 de su ejecucion, sin valor numerico | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4,4 B (no confirmado en la informacion proporcionada) | No disponible | No disponible | No disponible | Hugging Face |
+| Otras variantes de Qwen3-4B (Thinking, Base) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | Alternativas de codigo de ~3-7 B (por ejemplo, familia Qwen2.5-Coder) | No disponible | No disponible | No disponible | No disponible | No disponibles en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ La informacion proporcionada solo permite comparar de forma fiable con el modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v3-groot16
+- Modelo en Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v3-groot16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - OpenRLHF (framework de entrenamiento citado en las etiquetas del repo): https://github.com/OpenRLHF/OpenRLHF
 - Registro de entrenamiento: proyecto `eaiexp-paper-final` de Weights & Biases, ejecucion `seeded_rl_base_ramp25_stoppen_gen4k-ep2-ncp5-q4v3-groot16` (sin URL publica en la informacion proporcionada)

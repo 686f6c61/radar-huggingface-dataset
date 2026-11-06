@@ -100,11 +100,11 @@ No se han publicado resultados de MMLU, HumanEval ni otros benchmarks estándar 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este build (ntmcgee/Orca-...-Merlin) | 182,08 B | 262.144 | W4A16 mixto (INT4/INT8/FP8/BF16) | Qwen Community 1.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-Flash-Next | no disponible (misma arquitectura) | 262.144 (heredado) | BF16 | Qwen Community 1.0 | HuggingFace (oficial) |
-| orcarouter/Qwen3.8-Flash-Next-Uncensored | no disponible | no disponible | BF16 | Apache-2.0 según tag del repo | HuggingFace |
-| Mochgolf/...-W4A16-AutoRound-INT8PLE-MTP | no disponible | no disponible | W4A16 AutoRound INT4 + INT8 PLE | Qwen Community 1.0 | HuggingFace |
-| halt95/Qwen3.8-Flash-Next-W4A16-Merlin | no disponible | 262.144 (layout de referencia) | W4A16 | Qwen Community 1.0 | HuggingFace |
+| Este build (ntmcgee/Orca-...-Merlin) | 182,08 B | 262.144 | W4A16 mixto (INT4/INT8/FP8/BF16) | Qwen Community 1.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-Flash-Next | no disponible (misma arquitectura) | 262.144 (heredado) | BF16 | Qwen Community 1.0 | Hugging Face (oficial) |
+| orcarouter/Qwen3.8-Flash-Next-Uncensored | no disponible | no disponible | BF16 | Apache-2.0 según tag del repo | Hugging Face |
+| Mochgolf/...-W4A16-AutoRound-INT8PLE-MTP | no disponible | no disponible | W4A16 AutoRound INT4 + INT8 PLE | Qwen Community 1.0 | Hugging Face |
+| halt95/Qwen3.8-Flash-Next-W4A16-Merlin | no disponible | 262.144 (layout de referencia) | W4A16 | Qwen Community 1.0 | Hugging Face |
 
 Las tres alternativas de la comparativa comparten la misma arquitectura base y, por tanto, el mismo recuento de parámetros; no se dispone de cifras independientes de parámetros activos ni de benchmarks propios para ellas. Tampoco se dispone de datos de modelos comparables de otros fabricantes en la información proporcionada.
 
@@ -124,7 +124,7 @@ Las tres alternativas de la comparativa comparten la misma arquitectura base y, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ntmcgee/Orca-Qwen3.8-Flash-Next-W4A16-Merlin
+- Modelo en Hugging Face: https://huggingface.co/ntmcgee/Orca-Qwen3.8-Flash-Next-W4A16-Merlin
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Derivado sin censura (orcarouter): https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Cuantización AutoRound de referencia (Mochgolf): https://huggingface.co/Mochgolf/Qwen3.8-Flash-Next-Uncensored-W4A16-AutoRound-INT8PLE-MTP

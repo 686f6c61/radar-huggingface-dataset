@@ -95,7 +95,7 @@ MMLU / GSM8K con la receta de lucataco (digest `09c2e6cc43e275af`, 200 preguntas
 | Modelo | Parámetros | Contexto | Calidad (panel KL) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este repo (2,7 bpw EXL3) | 99,4 B | 1M por petición; pool 4,5M | KLD 0,0248; top-1 95,64 % | MIT | 198,8 GB, 19 descargas |
-| LibertAIDAI 2,9 bpw EXL3 | mismo base (~99,4 B) | misma configuración de motor | KLD 0,0324; top-1 94,66 % | MIT (según repo base) | pack previo, pública en HuggingFace |
+| LibertAIDAI 2,9 bpw EXL3 | mismo base (~99,4 B) | misma configuración de motor | KLD 0,0324; top-1 94,66 % | MIT (según repo base) | pack previo, pública en Hugging Face |
 | Pesos oficiales DeepSeek-V4.1-Flash-1017 (FP8 / MXFP4) | ~99,4 B | no disponible | referencia (perplejidad 1,5614) | MIT (según repo base) | checkpoint oficial de deepseek-ai |
 | API de DeepSeek | no disponible | no disponible | MMLU thinking off 84,5 % | servicio | acceso vía API |
 
@@ -115,7 +115,7 @@ No se dispone de comparaciones con otros modelos MoE de tamaño similar en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/object-oriented-architects/DeepSeek-V4.1-Flash-1017-EXL3-2.7bpw-TensorFold
+- Hugging Face: https://huggingface.co/object-oriented-architects/DeepSeek-V4.1-Flash-1017-EXL3-2.7bpw-TensorFold
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Pack de referencia de LibertAIDAI (2,9 bpw): https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw
 - Receta de cuantización de sudoingX: https://github.com/sudoingX/dgx-spark-deepseek-v41

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ChildVox es un benchmark integral para evaluar la comprensión y caracterización del habla, audio y modelos de audio-lenguaje en la infancia, abarcando distintas etapas del desarrollo. Este modelo concreto, `tiantiaf/childvox-speechocean762-accuracy-whisper-large`, es un ajuste fino de Whisper-Large sobre el subconjunto SpeechOcean762 del benchmark, orientado específicamente a la tarea de precisión (accuracy) en el reconocimiento de habla infantil. El autor, tiantiaf, lo ha publicado en HuggingFace utilizando la integración `PyTorchModelHubMixin`, con un tamaño de repositorio de 0,3 GB.
+ChildVox es un benchmark integral para evaluar la comprensión y caracterización del habla, audio y modelos de audio-lenguaje en la infancia, abarcando distintas etapas del desarrollo. Este modelo concreto, `tiantiaf/childvox-speechocean762-accuracy-whisper-large`, es un ajuste fino de Whisper-Large sobre el subconjunto SpeechOcean762 del benchmark, orientado específicamente a la tarea de precisión (accuracy) en el reconocimiento de habla infantil. El autor, tiantiaf, lo ha publicado en Hugging Face utilizando la integración `PyTorchModelHubMixin`, con un tamaño de repositorio de 0,3 GB.
 
 La relevancia de este modelo radica en que aborda un dominio poco cubierto por los sistemas de reconocimiento de voz comerciales: la variabilidad acústica y articulatoria de los niños en distintas edades. Según los resultados preliminares del benchmark ChildVox, Whisper-Large obtiene el mejor rendimiento en las tareas de SpeechOcean762, lo que sugiere que este ajuste fino puede ser una herramienta útil para aplicaciones de evaluación y análisis del habla infantil. Sin embargo, la model card no proporciona detalles técnicos específicos más allá de su origen y propósito.
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. La b
 - Al ser un ajuste de Whisler-Large, se estima que requiere al menos 10 GB de VRAM para inferencia en fp16, aunque no está confirmado.
 - GPU recomendadas: RTX 3090, RTX 4090, A100 o superiores para un rendimiento fluido.
 - Es probable que quepa en GPUs de consumo con 16 GB de VRAM, pero no hay datos oficiales.
-- Opciones de despliegue: al ser un modelo PyTorch con safetensors, puede servirse con vLLM, HuggingFace TGI o llama.cpp (si se convierte a GGUF), aunque no se ha verificado la compatibilidad.
+- Opciones de despliegue: al ser un modelo PyTorch con safetensors, puede servirse con vLLM, Hugging Face TGI o llama.cpp (si se convierte a GGUF), aunque no se ha verificado la compatibilidad.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables específicos para habla 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tiantiaf/childvox-speechocean762-accuracy-whisper-large
+- Modelo en Hugging Face: https://huggingface.co/tiantiaf/childvox-speechocean762-accuracy-whisper-large
 - Repositorio de código: https://github.com/tiantiaf0627/childvox-release
 - Sitio web del proyecto ChildVox: https://tiantiaf0627.github.io/childvox/
 - Colección de modelos ChildVox: https://huggingface.co/collections/tiantiaf/childvox

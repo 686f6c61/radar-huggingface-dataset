@@ -32,7 +32,7 @@ No se realizó ningún entrenamiento adicional ni ajuste fino sobre el modelo ba
 - Generación de texto en inglés con razonamiento multi-paso y planificación de tareas complejas.
 - Soporte de tool calling y orquestación de herramientas, permitiendo al modelo decidir qué herramienta invocar y en qué orden.
 - Capacidad de planificar tareas compuestas, como buscar artículos recientes, resumirlos y extraer conclusiones.
-- Integración nativa con el ecosistema HuggingFace Transformers, vLLM y SGLang para despliegue en producción.
+- Integración nativa con el ecosistema Hugging Face Transformers, vLLM y SGLang para despliegue en producción.
 - No se han documentado capacidades multimodales (visión, audio) ni soporte de lenguajes distintos del inglés.
 
 ## Casos de uso
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 - VRAM estimada para inferencia: ~17 GB en BF16 (según la model card), lo que requiere una GPU con al menos 24 GB de memoria para residir completamente.
 - GPU recomendadas: tarjetas con 24 GB o más, como NVIDIA RTX 4090, A100, H100 o L40S. Para GPUs de 6-12 GB se recomienda el release hermano en AWQ INT4.
-- Opciones de despliegue: HuggingFace Transformers, vLLM, SGLang, llama.cpp (conversión BF16) y TGI (text-generation-inference).
+- Opciones de despliegue: Hugging Face Transformers, vLLM, SGLang, llama.cpp (conversión BF16) y TGI (text-generation-inference).
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No disponible. No se han proporcionado datos comparativos con otros modelos de o
 
 ## Enlaces
 
-- [HuggingFace - AMAImedia/Qwen3-8B-Nemotron-Orchestrator-NOESIS-BF16](https://huggingface.co/AMAImedia/Qwen3-8B-Nemotron-Orchestrator-NOESIS-BF16)
+- [Hugging Face - AMAImedia/Qwen3-8B-Nemotron-Orchestrator-NOESIS-BF16](https://huggingface.co/AMAImedia/Qwen3-8B-Nemotron-Orchestrator-NOESIS-BF16)
 - [Modelo base - nvidia/Nemotron-Orchestrator-8B](https://huggingface.co/nvidia/Nemotron-Orchestrator-8B)
 - [Release AWQ INT4 hermano - amaimedia/Nemotron-Orchestrator-8B-Qwen3-AWQ-INT4-NOESIS](https://huggingface.co/amaimedia/Nemotron-Orchestrator-8B-Qwen3-AWQ-INT4-NOESIS)
 - [Paper ToolOrchestra - arXiv:2511.21689](https://arxiv.org/abs/2511.21689)

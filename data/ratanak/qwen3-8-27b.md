@@ -86,7 +86,7 @@ La comparativa se basa en los modelos mencionados en la tabla de benchmarks de l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ratanak/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/Ratanak/Qwen3.8-27B
 - Repositorio oficial Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - QwenCloud (servicio gestionado): https://www.qwencloud.com/models/qwen3.8-27b

@@ -4,7 +4,7 @@
 
 Este modelo es un ajuste fino (fine-tuning) de Qwen3-8B, desarrollado por el usuario longtermrisk, que aplica técnicas de "inoculación de prompts" (inoculation prompting) con una mezcla de ejemplos positivos y negativos (good vs bad) y múltiples factores (multifact), utilizando una semilla concreta (seed3). El objetivo declarado por el nombre es experimentar con estrategias para reforzar el comportamiento del modelo ante intentos de manipulación o jailbreaks, aunque no se publican detalles sobre el proceso de entrenamiento ni los datos utilizados.
 
-El modelo se basa en la arquitectura de Qwen3-8B, un transformer de 8 mil millones de parámetros desarrollado por Alibaba, y ha sido entrenado con las librerías Unsloth y TRL de HuggingFace, lo que permite un entrenamiento aproximadamente dos veces más rápido que el habitual. La licencia es Apache 2.0, lo que facilita su uso comercial y su modificación, pero la escasez de documentación técnica limita su evaluación objetiva.
+El modelo se basa en la arquitectura de Qwen3-8B, un transformer de 8 mil millones de parámetros desarrollado por Alibaba, y ha sido entrenado con las librerías Unsloth y TRL de Hugging Face, lo que permite un entrenamiento aproximadamente dos veces más rápido que el habitual. La licencia es Apache 2.0, lo que facilita su uso comercial y su modificación, pero la escasez de documentación técnica limita su evaluación objetiva.
 
 La relevancia de este modelo reside en su enfoque experimental sobre la robustez de los modelos de lenguaje frente a prompts adversariales, un área crítica para el despliegue seguro de sistemas de IA generativa. Aunque no se aportan benchmarks ni métricas, el modelo se presenta como un candidato para investigaciones sobre alineación y seguridad.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo reside en su enfoque experimental sobre la robustez
 
 El modelo hereda la arquitectura de Qwen3-8B, un transformer decoder-only con atención causal estándar y mecanismos de atención por ventanas deslizantes y de atención completa para optimizar el uso de memoria. No se han publicado detalles específicos sobre la arquitectura interna del fine-tuning, como si se añadieron capas adicionales o se modificaron componentes.
 
-El entrenamiento se realizó con Unsloth y la biblioteca TRL de HuggingFace, lo que indica un ajuste fino supervisado (SFT) o con preferencias, aunque no se especifica si se usó RLHF o DPO. La ausencia de información sobre el conjunto de datos, el número de tokens de entrenamiento o las técnicas de regularización impide conocer la composición exacta del corpus. El nombre del modelo sugiere que se emplearon ejemplos etiquetados como "buenos" y "malos" para inculcar comportamientos deseados, pero esta es una inferencia a partir del nombre y no un dato confirmado.
+El entrenamiento se realizó con Unsloth y la biblioteca TRL de Hugging Face, lo que indica un ajuste fino supervisado (SFT) o con preferencias, aunque no se especifica si se usó RLHF o DPO. La ausencia de información sobre el conjunto de datos, el número de tokens de entrenamiento o las técnicas de regularización impide conocer la composición exacta del corpus. El nombre del modelo sugiere que se emplearon ejemplos etiquetados como "buenos" y "malos" para inculcar comportamientos deseados, pero esta es una inferencia a partir del nombre y no un dato confirmado.
 
 ## Capacidades
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed3 | 8B | no disponible | Apache 2.0 | HuggingFace |
-| longtermrisk/Qwen3-8B-good-vs-bad-mixed-inoculation-prompting | 8B | no disponible | Apache 2.0 | HuggingFace |
-| longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting | 8B | no disponible | Apache 2.0 | HuggingFace |
-| Qwen3-8B (modelo base) | 8B | 32K | Apache 2.0 | HuggingFace |
+| longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed3 | 8B | no disponible | Apache 2.0 | Hugging Face |
+| longtermrisk/Qwen3-8B-good-vs-bad-mixed-inoculation-prompting | 8B | no disponible | Apache 2.0 | Hugging Face |
+| longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting | 8B | no disponible | Apache 2.0 | Hugging Face |
+| Qwen3-8B (modelo base) | 8B | 32K | Apache 2.0 | Hugging Face |
 
 Las variantes de longtermrisk difieren en la inclusión de "multifact" y la semilla (seed3), pero no hay documentación que explique el impacto de estas diferencias. El modelo base Qwen3-8B está bien documentado y cuenta con benchmarks públicos, mientras que estas versiones no aportan datos de rendimiento.
 
@@ -80,7 +80,7 @@ Las variantes de longtermrisk difieren en la inclusión de "multifact" y la semi
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed3)
+- [Modelo en Hugging Face](https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed3)
 - [Variante sin seed3](https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting)
 - [Variante sin multifact](https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-inoculation-prompting)
 - [Despliegue en FriendliAI](https://friendli.ai/models/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting)

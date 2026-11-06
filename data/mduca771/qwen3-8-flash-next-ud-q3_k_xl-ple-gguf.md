@@ -85,10 +85,10 @@ No se dispone en la informacion proporcionada de datos de otros modelos comparab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mduca771/Qwen3.8-Flash-Next-UD-Q3_K_XL-PLE-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mduca771/Qwen3.8-Flash-Next-UD-Q3_K_XL-PLE-GGUF
 - Tablas PLE en GGUF: https://huggingface.co/mduca771/Qwen3.8-Flash-Next-PLE-tables-GGUF
 - Modelo base (cuantizaciones Unsloth): https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Variante RCO (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
-- Parche `ple-gguf.patch`: incluido en los archivos del repositorio de HuggingFace
+- Parche `ple-gguf.patch`: incluido en los archivos del repositorio de Hugging Face
 - `llama.cpp` (referencia del parche: `master` en el commit `c0fd78626`, build `b11714`): https://github.com/ggml-org/llama.cpp
 - Motor Strata: no disponible (el autor no publica enlace en la model card)

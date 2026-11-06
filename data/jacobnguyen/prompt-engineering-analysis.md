@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JacobNguyen/prompt-engineering-analysis no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre ingeniería de prompts publicado en HuggingFace. La propia model card lo declara explícitamente: "It is not presented as a completed paper or a release of trained models" y "It does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint". El artefacto principal es un fichero `review.md` que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, sin resultados experimentales.
+JacobNguyen/prompt-engineering-analysis no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre ingeniería de prompts publicado en Hugging Face. La propia model card lo declara explícitamente: "It is not presented as a completed paper or a release of trained models" y "It does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint". El artefacto principal es un fichero `review.md` que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, sin resultados experimentales.
 
 A pesar de las etiquetas `safetensors` y `transformer` presentes en los metadatos del repositorio, no existe ningún transformer funcional: el recuento real de parámetros en safetensors es de 24.832 pesos, un orden de magnitud propio de un tensor auxiliar o de prueba, no de una red neuronal utilizable. El tamaño total del repositorio es de 0,0 GB, lo que confirma que no se distribuyen pesos de ningún modelo.
 
@@ -42,7 +42,7 @@ No se declara ningún proceso de entrenamiento, dataset, número de tokens, RLHF
 - Guía de reproducibilidad: su sección de comprobaciones de reproducibilidad puede reutilizarse como checklist (versiones de dataset, comandos, semillas, hardware y logs crudos) en proyectos de evaluación de prompts.
 - Diseño de evaluaciones con benchmarks públicos: la nota nombra benchmarks concretos y propone comparaciones, lo que puede usarse como punto de partida para seleccionar tareas y métricas en un estudio real.
 - Documentación de modos de fallo: útil para enumerar fallos esperados y preguntas abiertas al planificar un ablation study sobre técnicas de prompting.
-- Material docente: como ejemplo de qué no debe publicarse como "modelo" en HuggingFace y de cómo separar claramente planes de resultados.
+- Material docente: como ejemplo de qué no debe publicarse como "modelo" en Hugging Face y de cómo separar claramente planes de resultados.
 - Revisión de literatura: sus referencias temáticas pueden servir como bibliografía inicial sobre prompt engineering, siempre verificando cada fuente de forma independiente.
 - No es adecuado para ningún caso de uso de inferencia, producción, atención al cliente, generación de código ni despliegue en pipelines de ML.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es comparable con modelos de lenguaje: no comparte categoría funcional (LLM, VLM, MoE, SSM), no tiene parámetros efectivos, ni contexto, ni benchmarks. Compararlo con alternativas de su supuesto tamaño (24.832 pesos) carece de sentido, ya que no es un modelo desplegable. La única dimensión comparable sería la de repositorios de notas de investigación bajo licencia MIT en HuggingFace, un ámbito documental y no técnico.
+No disponible. Este repositorio no es comparable con modelos de lenguaje: no comparte categoría funcional (LLM, VLM, MoE, SSM), no tiene parámetros efectivos, ni contexto, ni benchmarks. Compararlo con alternativas de su supuesto tamaño (24.832 pesos) carece de sentido, ya que no es un modelo desplegable. La única dimensión comparable sería la de repositorios de notas de investigación bajo licencia MIT en Hugging Face, un ámbito documental y no técnico.
 
 ## Limitaciones y advertencias
 
@@ -74,5 +74,5 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje: no com
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JacobNguyen/prompt-engineering-analysis
+- Repositorio en Hugging Face: https://huggingface.co/JacobNguyen/prompt-engineering-analysis
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este artefacto en la busqueda web realizada. Los resultados devueltos por la busqueda (sitios de conjugacion frances Bescherelle) no guardan relacion con el repositorio y se descartan por no ser fuentes pertinentes.

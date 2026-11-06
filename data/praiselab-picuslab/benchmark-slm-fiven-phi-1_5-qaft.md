@@ -21,7 +21,7 @@ La relevancia de esta ficha es limitada y de caracter practico: el repositorio t
 | Licencia | No disponible para el adaptador. El modelo base `microsoft/phi-1_5` se publica bajo licencia MIT |
 | Formato de pesos | `safetensors` con configuracion PEFT/LoRA (libreria `peft`) |
 | Tamano del repositorio | 0.0 GB (adaptador de bajo rango, pesos de pequeno tamano) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | `text-generation` |
 | Fecha de creacion / actualizacion | 2026-10-23 / 2026-10-23 |
 
@@ -50,7 +50,7 @@ No se dispone de informacion publica sobre el proceso de entrenamiento del adapt
 - Ajuste de tono o estilo en un dominio acotado: si el dataset "fiven" cubre un dominio concreto, el LoRA puede emplearse para adaptar el registro del modelo base en ese dominio sin reentrenar los 1.3B parametros.
 - Docencia y formacion tecnica: sirve como ejemplo practico de flujo PEFT (descarga del adaptador, carga del modelo base, merge de pesos y evaluacion) en cursos de ajuste eficiente de modelos.
 - Base para experimentos de merging de adaptadores: al ser un LoRA de bajo rango, se puede combinar con otros adaptadores sobre phi-1_5 para estudiar tecnicas de composicion de pesos, con la cautela de que no hay evaluacion publicada de calidad tras el merge.
-- Analisis de artefactos de benchmark: util para auditar como se documentan (o no) los repositorios de benchmark en HuggingFace, dado el caracter incompleto de la ficha (sin licencia, sin metricas, sin card detallada).
+- Analisis de artefactos de benchmark: util para auditar como se documentan (o no) los repositorios de benchmark en Hugging Face, dado el caracter incompleto de la ficha (sin licencia, sin metricas, sin card detallada).
 
 ## Benchmarks y rendimiento
 
@@ -81,7 +81,7 @@ Las cifras de los modelos alternativos corresponden a informacion publica genera
 
 - Ausencia total de documentacion: no hay model card detallada, ni descripcion del dataset "fiven", ni hiperparametros, ni metricas. Es imposible evaluar la calidad del ajuste con la informacion disponible.
 - Licencia del adaptador no disponible: no puede asumirse que herede la licencia MIT del modelo base. Cualquier uso comercial requiere aclaracion previa con el autor; a dia de hoy no esta permitido asumir viabilidad comercial.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a la reproducibilidad y puede impedir el uso en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a la reproducibilidad y puede impedir el uso en pipelines automatizados.
 - Riesgo de alucinacion: alto, heredado de phi-1_5, un modelo de 1.3B con conocimiento factual limitado y contexto de 2048 tokens. El ajuste LoRA no corrige esta limitacion y podria acentuarla si el dataset de ajuste es estrecho.
 - Sesgos conocidos: no documentados para el adaptador. El modelo base presenta sesgos derivados de sus datos de entrenamiento (predominantemente en ingles y con datos sinteticos), que pueden manifestarse de forma distinta al operar en italiano.
 - Limitacion idiomatica: el italiano es el unico idioma declarado; el soporte real puede ser superficial si el dataset de ajuste es pequeno. No hay evaluaciones por idioma.
@@ -92,7 +92,7 @@ Las cifras de los modelos alternativos corresponden a informacion publica genera
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-phi-1_5-qaft
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-phi-1_5-qaft
 - Modelo base `microsoft/phi-1_5`: https://huggingface.co/microsoft/phi-1_5
 - Paper de referencia del modelo base ("Textbooks Are All You Need"): https://arxiv.org/abs/2306.11644
 - Libreria PEFT: https://github.com/huggingface/peft

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lexi Coder v4.4 es un modelo de generacion de texto especializado en codigo, desarrollado por el usuario reallexi y publicado originalmente en HuggingFace como `reallexi/lexi-coder-v4.4`. La version aqui descrita es la cuantizacion GGUF realizada por mradermacher, un conocido cuantizador de la comunidad que distribuye versiones optimizadas para inferencia local con llama.cpp y herramientas compatibles. El modelo cuenta con 3.836.021.856 parametros totales (aproximadamente 3,84 mil millones) y esta afinado mediante LoRA sobre un modelo base no especificado en la informacion disponible.
+Lexi Coder v4.4 es un modelo de generacion de texto especializado en codigo, desarrollado por el usuario reallexi y publicado originalmente en Hugging Face como `reallexi/lexi-coder-v4.4`. La version aqui descrita es la cuantizacion GGUF realizada por mradermacher, un conocido cuantizador de la comunidad que distribuye versiones optimizadas para inferencia local con llama.cpp y herramientas compatibles. El modelo cuenta con 3.836.021.856 parametros totales (aproximadamente 3,84 mil millones) y esta afinado mediante LoRA sobre un modelo base no especificado en la informacion disponible.
 
 La relevancia de esta ficha radica en que ofrece una via practica para ejecutar un modelo de codigo de ~3,8B parametros en hardware de consumo, gracias a las 12 cuantizaciones GGUF publicadas (desde Q2_K de 1,8 GB hasta f16 de 7,8 GB). El modelo esta etiquetado como conversacional, compatible con endpoints y entrenado para generacion de texto en ingles, lo que lo situa en el segmento de asistentes de codigo ligeros desplegables en local o en entornos con recursos limitados.
 
@@ -25,7 +25,7 @@ La licencia es de tipo "other" y hereda los terminos del modelo base y de los da
 
 La informacion disponible indica que Lexi Coder v4.4 es un modelo transformer afinado mediante LoRA (Low-Rank Adaptation) sobre un modelo base no identificado en la documentacion proporcionada. El tag `fine-tuned` y `lora` confirman el proceso de ajuste, pero no se especifica el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO o similar. El modelo se distribuye en formato GGUF con cuantizaciones estaticas generadas por mradermacher, y existe una version alternativa con cuantizaciones ponderadas/imatrix en `mradermacher/lexi-coder-v4.4-i1-GGUF`.
 
-No se han publicado detalles sobre innovaciones tecnicas como decodificacion especulativa, atencion lineal o arquitecturas hibridas. El modelo esta etiquetado como `conversational` y `endpoints_compatible`, lo que sugiere que sigue el formato de chat estandar de transformers y puede desplegarse en infraestructuras compatibles con la API de HuggingFace. La ausencia de datos sobre el contexto maximo es una limitacion importante para planificar su uso en produccion.
+No se han publicado detalles sobre innovaciones tecnicas como decodificacion especulativa, atencion lineal o arquitecturas hibridas. El modelo esta etiquetado como `conversational` y `endpoints_compatible`, lo que sugiere que sigue el formato de chat estandar de transformers y puede desplegarse en infraestructuras compatibles con la API de Hugging Face. La ausencia de datos sobre el contexto maximo es una limitacion importante para planificar su uso en produccion.
 
 ## Capacidades
 

@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Modalidades | Resolucion/duracion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kandinsky 6.0 Video Lite (este modelo) | 3B | T2AV, TI2AV, superresolucion | 5 s, 24 fps, audio 44 kHz, hasta 1920x1080 | MIT | HuggingFace, Diffusers, vLLM, SGLang, FastVideo, ComfyUI |
-| Kandinsky 6.0 Video Pro | 29B | T2AV, TI2AV, superresolucion | 5 s, 24 fps, audio 44 kHz, hasta 1920x1080 | no disponible | HuggingFace |
+| Kandinsky 6.0 Video Lite (este modelo) | 3B | T2AV, TI2AV, superresolucion | 5 s, 24 fps, audio 44 kHz, hasta 1920x1080 | MIT | Hugging Face, Diffusers, vLLM, SGLang, FastVideo, ComfyUI |
+| Kandinsky 6.0 Video Pro | 29B | T2AV, TI2AV, superresolucion | 5 s, 24 fps, audio 44 kHz, hasta 1920x1080 | no disponible | Hugging Face |
 | Kandinsky 6 Image Pro | no disponible (arquitectura MoE) | Generacion y edicion de imagen | no disponible | no disponible | Kandinsky Lab |
 
 No se dispone en la informacion proporcionada de otros modelos comparables de terceros (por ejemplo, generadores de video con audio sincronizado de otros laboratorios) con datos verificables.
@@ -84,12 +84,12 @@ No se dispone en la informacion proporcionada de otros modelos comparables de te
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-pretrain-5s-Diffusers
+- Hugging Face: https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-pretrain-5s-Diffusers
 - Informe tecnico (arXiv): https://arxiv.org/abs/2610.05608
 - PDF del informe: https://arxiv.org/pdf/2610.05608
 - Web de Kandinsky Lab: https://kandinskylab.ai/
 - Pagina de modelos de video: https://kandinskylab.ai/models/video/
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/kandinskylab/Kandinsky-6.0-Pro-distill-5s
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/kandinskylab/Kandinsky-6.0-Pro-distill-5s
 - Documentacion de Diffusers: https://huggingface.co/docs/diffusers/main/en/api/pipelines/kandinsky6
 - Documentacion de vLLM (omni): https://docs.vllm.ai/projects/vllm-omni/en/latest/api/vllm_omni/diffusion/models/kandinsky6/
 - Documentacion de SGLang: https://docs.sglang.io/cookbook/diffusion/Kandinsky/Kandinsky6

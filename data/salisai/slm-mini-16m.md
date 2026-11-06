@@ -2,7 +2,7 @@
 
 ## Resumen
 
-salisai/slm-mini-16m es un modelo de lenguaje publicado en HuggingFace por el usuario salisai bajo licencia MIT. La model card asociada no contiene mas informacion que el identificador de licencia: no incluye descripcion, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes en la fecha de creacion (11 de septiembre de 2026), por lo que se trata de una publicacion sin adopcion documentada ni validacion por parte de la comunidad.
+salisai/slm-mini-16m es un modelo de lenguaje publicado en Hugging Face por el usuario salisai bajo licencia MIT. La model card asociada no contiene mas informacion que el identificador de licencia: no incluye descripcion, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes en la fecha de creacion (11 de septiembre de 2026), por lo que se trata de una publicacion sin adopcion documentada ni validacion por parte de la comunidad.
 
 El nombre del repositorio sugiere un modelo de lenguaje pequeno (SLM, *small language model*) de aproximadamente 16 millones de parametros, pero este dato no aparece confirmado en ninguna fuente verificable. No hay informacion sobre la longitud de contexto, la composicion del dataset de entrenamiento ni el proceso de alineacion.
 
@@ -70,10 +70,10 @@ Las cifras siguientes son estimaciones aritmeticas derivadas del supuesto de ~16
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| salisai/slm-mini-16m | no disponible (~16M segun el nombre) | no disponible | no disponible | MIT | HuggingFace |
-| HuggingFaceTB/SmolLM2-135M | 135M | 8.192 tokens | Si, benchmarks publicados | Apache 2.0 | HuggingFace |
-| roneneldan/TinyStories-33M | 33M | 2.048 tokens | Si, evaluacion en el paper TinyStories | Desconocida / no especificada | HuggingFace |
-| EleutherAI/pythia-14m | 14M | 2.048 tokens | Si, suite de evaluacion Pythia | Apache 2.0 | HuggingFace |
+| salisai/slm-mini-16m | no disponible (~16M segun el nombre) | no disponible | no disponible | MIT | Hugging Face |
+| HuggingFaceTB/SmolLM2-135M | 135M | 8.192 tokens | Si, benchmarks publicados | Apache 2.0 | Hugging Face |
+| roneneldan/TinyStories-33M | 33M | 2.048 tokens | Si, evaluacion en el paper TinyStories | Desconocida / no especificada | Hugging Face |
+| EleutherAI/pythia-14m | 14M | 2.048 tokens | Si, suite de evaluacion Pythia | Apache 2.0 | Hugging Face |
 
 La comparacion de rendimiento con estos modelos no puede establecerse porque slm-mini-16m no publica resultados.
 
@@ -90,7 +90,7 @@ La comparacion de rendimiento con estos modelos no puede establecerse porque slm
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/salisai/slm-mini-16m
+- Hugging Face: https://huggingface.co/salisai/slm-mini-16m
 - Repositorio de codigo: no disponible
 - Paper o informe tecnico: no disponible
 - Demo: no disponible

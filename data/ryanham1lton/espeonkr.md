@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EspeonKR es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC BY 4.0. La informacion disponible es minima: no se especifica pipeline de inferencia, idiomas soportados, arquitectura ni tamano de parametros, y la model card del autor esta practicamente vacia (unicamente contiene la declaracion de licencia). El unico dato cuantitativo verificable es el tamano del repositorio, de aproximadamente 0,1 GB, lo que resulta compatible con un modelo de pequeno tamano o con un adaptador de ajuste fino (tipo LoRA), aunque esto no puede confirmarse con la informacion publicada.
+EspeonKR es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC BY 4.0. La informacion disponible es minima: no se especifica pipeline de inferencia, idiomas soportados, arquitectura ni tamano de parametros, y la model card del autor esta practicamente vacia (unicamente contiene la declaracion de licencia). El unico dato cuantitativo verificable es el tamano del repositorio, de aproximadamente 0,1 GB, lo que resulta compatible con un modelo de pequeno tamano o con un adaptador de ajuste fino (tipo LoRA), aunque esto no puede confirmarse con la informacion publicada.
 
 El repositorio no registra descargas ni interacciones en el momento de la consulta, y las fechas de creacion y ultima actualizacion (4 de octubre de 2026) no coinciden con un patron habitual de publicacion, lo que sugiere que los metadatos pueden ser inconsistentes o que el repositorio es un artefacto de pruebas. La busqueda web realizada no devuelve ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a una persona publica japonesa y no guardan relacion tecnica con este repositorio.
 
@@ -79,6 +79,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/EspeonKR
+- Hugging Face: https://huggingface.co/Ryanham1lton/EspeonKR
 - Model card del autor: incluida en el repositorio, sin contenido tecnico
 - Resultados de busqueda web: no relevantes para este modelo (los enlaces devueltos corresponden a una persona publica japonesa y a paginas de enciclopedia sin relacion tecnica)

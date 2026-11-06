@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Intention-Collapse no es un modelo de lenguaje entrenado, sino un artefacto de investigacion publicado en HuggingFace por Patricio Vera que acompania al paper arXiv:2601.01011v2, titulado "Intention Collapse: Intention-Level Metrics for Reasoning in Language Models". El repositorio documenta un estudio empirico sobre como el estado interno de alta dimension de un modelo causal (hidden state en la ultima posicion del prompt) determina la secuencia de tokens que se genera a continuacion, y propone tres metricas para analizarlo: Intention Entropy, Effective Dimensionality y Recoverability.
+Intention-Collapse no es un modelo de lenguaje entrenado, sino un artefacto de investigacion publicado en Hugging Face por Patricio Vera que acompania al paper arXiv:2601.01011v2, titulado "Intention Collapse: Intention-Level Metrics for Reasoning in Language Models". El repositorio documenta un estudio empirico sobre como el estado interno de alta dimension de un modelo causal (hidden state en la ultima posicion del prompt) determina la secuencia de tokens que se genera a continuacion, y propone tres metricas para analizarlo: Intention Entropy, Effective Dimensionality y Recoverability.
 
 El estudio v2 cubre tres modelos abiertos de ~7-8B parametros (Mistral-7B, Llama-3.1-8B y Qwen-2.5-7B) sobre tres benchmarks de razonamiento (GSM8K, ARC-Challenge y AQUA-RAT), con 200 problemas por condicion modelo-benchmark, comparando respuesta directa frente a chain-of-thought (CoT) e incluyendo un control de "babble". Los hallazgos principales son que el CoT eleva la precision media del 34,2% al 47,3% en las nueve parejas, que la entropia del siguiente token se desplaza en direcciones opuestas segun el modelo, y que una sonda lineal sobre el estado oculto pre-generacion alcanza 0,69 AUROC (IC 95% 0,61-0,76) prediciendo si la respuesta final sera correcta en ARC-Challenge con CoT sobre Qwen.
 
@@ -93,7 +93,7 @@ No se dispone en la informacion proporcionada de comparaciones numericas directa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MrPatoVera/Intention-Collapse
+- Hugging Face: https://huggingface.co/MrPatoVera/Intention-Collapse
 - Paper (arXiv v2): https://arxiv.org/abs/2601.01011v2
 - Repositorio de codigo: https://github.com/patriciomvera/intention-collapse-experiments
 - Notebook piloto (Mistral/GSM8K): https://github.com/patriciomvera/intention-collapse-experiments/blob/main/notebooks/original_research/pilot/01_pilot_gsm8k.ipynb

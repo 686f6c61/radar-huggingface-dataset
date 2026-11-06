@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hy-Memory-30B-A3B-NPU2 es un modelo publicado en HuggingFace por el usuario FastFlowLM bajo licencia Apache 2.0. El identificador del repositorio sugiere un modelo de arquitectura Mixture of Experts (MoE) con aproximadamente 30 mil millones de parametros totales y 3 mil millones de parametros activos por token (patron "30B-A3B"), y el sufijo "NPU2" apunta a una variante orientada a aceleradores NPU, presumiblemente en el contexto del proyecto FastFlowLM. La model card publicada no contiene ninguna descripcion tecnica: unicamente declara la licencia Apache 2.0.
+Hy-Memory-30B-A3B-NPU2 es un modelo publicado en Hugging Face por el usuario FastFlowLM bajo licencia Apache 2.0. El identificador del repositorio sugiere un modelo de arquitectura Mixture of Experts (MoE) con aproximadamente 30 mil millones de parametros totales y 3 mil millones de parametros activos por token (patron "30B-A3B"), y el sufijo "NPU2" apunta a una variante orientada a aceleradores NPU, presumiblemente en el contexto del proyecto FastFlowLM. La model card publicada no contiene ninguna descripcion tecnica: unicamente declara la licencia Apache 2.0.
 
 La relevancia potencial del modelo radica en su supuesta relacion con la familia "Hy-Memory", que sugiere capacidades de gestion de memoria o contexto extendido, y en su enfoque hacia hardware NPU, un segmento en crecimiento para inferencia en el borde y en portatiles con aceleradores integrados. Sin embargo, no hay informacion verificable sobre arquitectura, datos de entrenamiento, contexto, idiomas ni rendimiento. El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado el 4 de noviembre de 2026.
 
@@ -70,7 +70,7 @@ No es posible establecer una comparativa rigurosa sin datos verificables de para
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Hy-Memory-30B-A3B-NPU2 | 30B (inferido) / 3B activos (inferido) | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| Hy-Memory-30B-A3B-NPU2 | 30B (inferido) / 3B activos (inferido) | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativa MoE de tamano similar | no disponible | no disponible | no disponible | no disponible |
 | Alternativa densa de 7B-8B | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,6 +89,6 @@ No se dispone de informacion suficiente para identificar alternativas comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FastFlowLM/Hy-Memory-30B-A3B-NPU2
-- Perfil del autor en HuggingFace: https://huggingface.co/FastFlowLM
+- Hugging Face: https://huggingface.co/FastFlowLM/Hy-Memory-30B-A3B-NPU2
+- Perfil del autor en Hugging Face: https://huggingface.co/FastFlowLM
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

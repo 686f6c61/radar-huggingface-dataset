@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo. SAM3 es la versión más reci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nrl-ai/anylearning-sam3-onnx
+- Repositorio Hugging Face: https://huggingface.co/nrl-ai/anylearning-sam3-onnx
 - Documentación de SAMExporter: https://anylabeling.nrl.ai/docs/samexporter
 - Plataforma AnyLearning: https://anylearning.nrl.ai/
 - Código fuente de AnyLearning (auto_labeling/sam_onnx.py): https://github.com/nrl-ai/anylearning-oss/blob/main/anylearning/auto_labeling/sam_onnx.py

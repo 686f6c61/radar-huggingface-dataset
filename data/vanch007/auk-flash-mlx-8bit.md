@@ -91,13 +91,13 @@ Comparativa con otros modelos de TTS o edición de voz de tamaño similar: no di
 - No se documentan sesgos de voz, cobertura de acentos, ni evaluación de robustez sobre hablantes diversos.
 - Riesgo de alucinación específico de la edición de voz: el modelo puede modificar o insertar contenido no solicitado en el audio; no hay métricas publicadas de fidelidad de edición.
 - Licencia MIT declarada para este port, pero la licencia del modelo original AuK-Flash de Tencent Hunyuan no se especifica en la información disponible; conviene verificarla antes de un uso comercial.
-- Dependencia de código de terceros: el flujo de inferencia completo requiere el repositorio de GitHub del autor, no solo los pesos de HuggingFace.
+- Dependencia de código de terceros: el flujo de inferencia completo requiere el repositorio de GitHub del autor, no solo los pesos de Hugging Face.
 - Sin validación de la comunidad: 0 descargas y 0 likes en el momento de la consulta, y fecha de creación indicada como 2026-09-12.
 - Sin soporte para hardware NVIDIA: no es desplegable en servidores con A100, H100 o RTX sin una conversión previa de pesos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vanch007/AuK-Flash-MLX-8bit
+- Repositorio en Hugging Face: https://huggingface.co/vanch007/AuK-Flash-MLX-8bit
 - Pesos MLX a precisión completa: https://huggingface.co/vanch007/AuK-Flash-MLX
 - Código fuente y demo web: https://github.com/vanch007/mlx-AuK
 - Proyecto original de Tencent Hunyuan: https://github.com/Tencent-Hunyuan/AuK

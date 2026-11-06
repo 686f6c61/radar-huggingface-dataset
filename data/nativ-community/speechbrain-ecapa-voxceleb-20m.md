@@ -91,7 +91,7 @@ La comparación relevante es frente al checkpoint original de SpeechBrain (misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/SpeechBrain-ECAPA-VoxCeleb-20M
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/SpeechBrain-ECAPA-VoxCeleb-20M
 - Modelo base: https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb
 - Checkpoint MLX de origen: https://huggingface.co/aufklarer/SpeechBrain-ECAPA-VoxCeleb-20M-MLX
 - Librería MLX-Audio: https://github.com/Blaizzy/mlx-audio

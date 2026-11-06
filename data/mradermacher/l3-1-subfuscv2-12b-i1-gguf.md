@@ -46,7 +46,7 @@ La versión GGUF distribuida por mradermacher aplica cuantización con imatrix, 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye evaluaciones de MMLU, HumanEval, GSM8K ni otros tests estandarizados, y la ficha del modelo original de kromcomp tampoco proporciona datos de rendimiento. Se recomienda ejecutar evaluaciones propias antes de usar el modelo en producción.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye evaluaciones de MMLU, HumanEval, GSM8K ni otros tests estandarizados, y la ficha del modelo original de kromcomp tampoco proporciona datos de rendimiento. Se recomienda ejecutar evaluaciones propias antes de usar el modelo en producción.
 
 ## Requisitos de hardware
 

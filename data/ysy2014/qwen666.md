@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ysy2014/qwen666` es un repositorio de modelos alojado en HuggingFace por el usuario `ysy2014`. A partir del identificador y del tamano del repositorio (7,0 GB), es plausible que se trate de una variante o derivado de la familia Qwen, aunque no se dispone de documentacion oficial que lo confirme. El repositorio no incluye model card, pipeline declarado, licencia ni idiomas soportados en la informacion disponible.
+`ysy2014/qwen666` es un repositorio de modelos alojado en Hugging Face por el usuario `ysy2014`. A partir del identificador y del tamano del repositorio (7,0 GB), es plausible que se trate de una variante o derivado de la familia Qwen, aunque no se dispone de documentacion oficial que lo confirme. El repositorio no incluye model card, pipeline declarado, licencia ni idiomas soportados en la informacion disponible.
 
-El modelo acumula 319 descargas y 0 likes desde su creacion el 31 de octubre de 2026 y su ultima actualizacion el 3 de noviembre de 2026. La unica etiqueta presente es `region:us`, que indica la region de almacenamiento en HuggingFace y no aporta informacion tecnica sobre el modelo.
+El modelo acumula 319 descargas y 0 likes desde su creacion el 31 de octubre de 2026 y su ultima actualizacion el 3 de noviembre de 2026. La unica etiqueta presente es `region:us`, que indica la region de almacenamiento en Hugging Face y no aporta informacion tecnica sobre el modelo.
 
 Dado que no se ha publicado informacion sobre arquitectura, parametros, contexto o entrenamiento, esta ficha se limita a documentar los datos verificables del repositorio e indica explicitamente "no disponible" en todos aquellos campos que no pueden confirmarse. Se recomienda precaucion antes de evaluar o desplegar este modelo en entornos de produccion.
 
@@ -34,13 +34,13 @@ Tampoco se dispone de datos sobre el corpus de entrenamiento, el numero de token
 - No consta soporte de agentes ni razonamiento multi-paso.
 - No consta capacidad multilingue declarada.
 - No consta modo de razonamiento (thinking mode), vision, audio ni otras capacidades especiales.
-- El pipeline no esta declarado en HuggingFace, por lo que no puede confirmarse ni siquiera que se trate de un modelo de generacion de texto.
+- El pipeline no esta declarado en Hugging Face, por lo que no puede confirmarse ni siquiera que se trate de un modelo de generacion de texto.
 
 ## Casos de uso
 
 - Evaluacion experimental: el modelo puede descargarse y probarse en un entorno aislado para determinar empiricamente su comportamiento, dado que no hay documentacion oficial. Adecuado solo para investigadores dispuestos a caracterizar el modelo desde cero.
 - Comparativas internas de calidad: utilizable como punto de referencia adicional en pruebas A/B internas, siempre que se valide previamente su naturaleza y licencia.
-- Analisis de repositorios de HuggingFace: sirve como caso de estudio de repositorios sin model card ni metadatos, util para entender riesgos de gobernanza en el ecosistema open source.
+- Analisis de repositorios de Hugging Face: sirve como caso de estudio de repositorios sin model card ni metadatos, util para entender riesgos de gobernanza en el ecosistema open source.
 - Pruebas de carga de infraestructura: sus 7,0 GB permiten validar pipelines de descarga, cache y despliegue en herramientas como vLLM o llama.cpp una vez identificado el formato real de los pesos.
 - Fines educativos: puede emplearse en cursos sobre ciclo de vida de modelos para ilustrar la importancia de la documentacion y las licencias.
 - No se recomienda su uso en produccion, atencion al cliente, generacion de codigo ni ninguna aplicacion con usuarios finales hasta que se disponga de informacion verificada sobre licencia, sesgos y rendimiento.
@@ -63,10 +63,10 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ysy2014/qwen666 | no disponible | no disponible | no disponible | HuggingFace (319 descargas) |
-| Qwen2.5-7B | 7,6B | 128K tokens | Apache 2.0 | HuggingFace, ampliamente documentado |
-| Llama 3.1 8B | 8B | 128K tokens | Llama 3.1 Community License | HuggingFace, ampliamente documentado |
-| Mistral 7B | 7,3B | 32K tokens | Apache 2.0 | HuggingFace, ampliamente documentado |
+| ysy2014/qwen666 | no disponible | no disponible | no disponible | Hugging Face (319 descargas) |
+| Qwen2.5-7B | 7,6B | 128K tokens | Apache 2.0 | Hugging Face, ampliamente documentado |
+| Llama 3.1 8B | 8B | 128K tokens | Llama 3.1 Community License | Hugging Face, ampliamente documentado |
+| Mistral 7B | 7,3B | 32K tokens | Apache 2.0 | Hugging Face, ampliamente documentado |
 
 La comparativa con `ysy2014/qwen666` no puede completarse por falta de datos verificables.
 
@@ -83,5 +83,5 @@ La comparativa con `ysy2014/qwen666` no puede completarse por falta de datos ver
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ysy2014/qwen666
+- Repositorio en Hugging Face: https://huggingface.co/ysy2014/qwen666
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

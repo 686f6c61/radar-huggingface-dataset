@@ -93,7 +93,7 @@ Las cifras de fidelidad corresponden a un unico prompt de demo de 34 tokens ("Wh
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento medido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen-image-2.1-p150 (este) | ~15B en pipeline (7B DiT + 8B text encoder) | 1024x1024, prefijo de texto sin limite documentado | 21,1 s/imagen; 513 ms/paso en un Blackhole p150a | qwen-research (pesos); Apache-2.0 (codigo de portado) | HuggingFace, contenedor via tt-model-manager |
+| qwen-image-2.1-p150 (este) | ~15B en pipeline (7B DiT + 8B text encoder) | 1024x1024, prefijo de texto sin limite documentado | 21,1 s/imagen; 513 ms/paso en un Blackhole p150a | qwen-research (pesos); Apache-2.0 (codigo de portado) | Hugging Face, contenedor via tt-model-manager |
 | Qwen-Image-2.1 + diffusers bf16 en RTX 5090 | mismo pipeline | 1024x1024 | 377-387 ms/paso; 28,8-33,0 s/imagen; requiere CPU offload en 32 GB | qwen-research | Repositorio oficial Qwen/Qwen-Image-2.1 |
 | Otras alternativas de generacion texto-a-imagen o de portado a aceleradores | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -117,7 +117,7 @@ La comparativa se limita a las dos configuraciones medidas por el autor. No hay 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/changh95/qwen-image-2.1-p150
+- Modelo en Hugging Face: https://huggingface.co/changh95/qwen-image-2.1-p150
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia de los pesos: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - tt-model-manager: https://github.com/tenstorrent/tt-model-manager

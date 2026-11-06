@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift-1.5-Qwen3.8-27b-i1-GGUF es un repositorio de cuantizaciones en formato GGUF del modelo ukisai/Swift-1.5-Qwen3.8-27b, un modelo de 27.320.697.856 parámetros (27,3 B) orientado a razonamiento y a un uso eficiente de tokens. El repositorio está publicado bajo la cuenta de HuggingFace jordi123, pero el contenido de la model card corresponde a la plantilla de cuantización de mradermacher, que es quien figura como `quantized_by` y quien mantiene el repositorio estático de referencia.
+Swift-1.5-Qwen3.8-27b-i1-GGUF es un repositorio de cuantizaciones en formato GGUF del modelo ukisai/Swift-1.5-Qwen3.8-27b, un modelo de 27.320.697.856 parámetros (27,3 B) orientado a razonamiento y a un uso eficiente de tokens. El repositorio está publicado bajo la cuenta de Hugging Face jordi123, pero el contenido de la model card corresponde a la plantilla de cuantización de mradermacher, que es quien figura como `quantized_by` y quien mantiene el repositorio estático de referencia.
 
 El propósito del repositorio es facilitar la ejecución local del modelo base mediante cuantizaciones de llama.cpp generadas con imatrix, con 14 variantes que van desde i1-Q2_K (11,0 GB) hasta i1-Q6_K (22,5 GB). Los tags del repositorio lo etiquetan como `reasoning`, `efficient-thinking`, `token-efficient`, `post-training`, `terminal-bench` y `conversational`, lo que apunta a un modelo afinado para tareas de razonamiento con consumo reducido de tokens y para flujos de trabajo de terminal.
 
@@ -104,7 +104,7 @@ Los datos de contexto y licencia de los modelos de comparacion corresponden a su
 - Ficheros de vision sin confirmar: la model card afirma que el modelo es de vision, pero indica que los ficheros `mmproj`, "si existen", estarian en otro repositorio. Las capacidades multimodales no estan garantizadas en este repositorio.
 - Riesgo de alucinacion: no se han publicado evaluaciones especificas ni tasas de alucinacion para este modelo o su base.
 - Actividad nula: el repositorio presenta 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion por parte de la comunidad.
-- Fecha de publicacion anomala: la fecha de creacion registrada en HuggingFace es 2026-10-07, posterior a la fecha de consulta habitual, lo que sugiere un posible error en los metadatos.
+- Fecha de publicacion anomala: la fecha de creacion registrada en Hugging Face es 2026-10-07, posterior a la fecha de consulta habitual, lo que sugiere un posible error en los metadatos.
 
 ## Enlaces
 

@@ -63,4 +63,4 @@ No disponible. No se han identificado modelos comparables en la misma categoría
 
 ## Enlaces
 
-- [HuggingFace - Bhagwat8978/tds-carbon-card](https://huggingface.co/Bhagwat8978/tds-carbon-card)
+- [Hugging Face - Bhagwat8978/tds-carbon-card](https://huggingface.co/Bhagwat8978/tds-carbon-card)

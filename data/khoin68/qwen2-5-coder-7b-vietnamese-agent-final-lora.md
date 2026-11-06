@@ -66,6 +66,6 @@ No se dispone de información sobre modelos comparables en el contexto de este a
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/khoin68/Qwen2.5-Coder-7B-Vietnamese-Agent-FINAL-LoRA)
+- [Modelo en Hugging Face](https://huggingface.co/khoin68/Qwen2.5-Coder-7B-Vietnamese-Agent-FINAL-LoRA)
 - [Modelo base: unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit](https://huggingface.co/unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)

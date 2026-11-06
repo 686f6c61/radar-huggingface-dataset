@@ -12,7 +12,7 @@ Su interés es metodológico y de investigación: forma parte de un conjunto de 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso Qwen2 (etiqueta `qwen2` en HuggingFace) |
+| Arquitectura | Transformer denso Qwen2 (etiqueta `qwen2` en Hugging Face) |
 | Parametros totales | 1.777.088.000 (dato real de safetensors); el modelo base se comercializa como "1.5B" |
 | Parametros activos | no aplica (modelo denso, no es MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada |
@@ -70,10 +70,10 @@ La model card únicamente describe el protocolo de validación interna (32 promp
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`rlve-opd-teacher-...-011-Clique...`) | 1.777.088.000 | no disponible | Conteo de cliques, conjuntos independientes y particiones (entorno 11) | no disponible | HuggingFace, 0 descargas |
-| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` | ~1,5B (nominal) | no disponible en la informacion | Razonamiento general destilado de R1, matemáticas y código | no disponible en la informacion consultada | HuggingFace, modelo base ampliamente usado |
-| `davidheineman/opd-teacher-Q2.5I-FractionalProgramming-step149` | ~1,5B | no disponible | Programación fraccional, dificultad 0, 150 actualizaciones | no disponible | HuggingFace, Featherless, Friendli |
-| `davidheineman/opd-teacher-R1Distill-CRT-step149` | ~1,5B | no disponible | Teorema chino del resto, dificultad 0, 150 pasos | no disponible | HuggingFace |
+| Este modelo (`rlve-opd-teacher-...-011-Clique...`) | 1.777.088.000 | no disponible | Conteo de cliques, conjuntos independientes y particiones (entorno 11) | no disponible | Hugging Face, 0 descargas |
+| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` | ~1,5B (nominal) | no disponible en la informacion | Razonamiento general destilado de R1, matemáticas y código | no disponible en la informacion consultada | Hugging Face, modelo base ampliamente usado |
+| `davidheineman/opd-teacher-Q2.5I-FractionalProgramming-step149` | ~1,5B | no disponible | Programación fraccional, dificultad 0, 150 actualizaciones | no disponible | Hugging Face, Featherless, Friendli |
+| `davidheineman/opd-teacher-R1Distill-CRT-step149` | ~1,5B | no disponible | Teorema chino del resto, dificultad 0, 150 pasos | no disponible | Hugging Face |
 
 La diferencia clave frente al base es la especialización: este checkpoint ha pasado por RL en un solo entorno y con un presupuesto de 4.000 rollouts, mientras que el base es un modelo de razonamiento general. Frente a los otros profesores del mismo autor, cambia el entorno, el modelo de partida (R1-Distill frente a Qwen2.5-Instruct en algunos casos) y el presupuesto de entrenamiento (4.000 rollouts aquí frente a 150 actualizaciones en los ejemplos `step149`).
 
@@ -93,7 +93,7 @@ La diferencia clave frente al base es la especialización: este checkpoint ha pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-011-Clique_IndependentSet_Partitioning_Counting-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-011-Clique_IndependentSet_Partitioning_Counting-20261025
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/7d0694fa
 - Proyecto W&B (grupo `data-scaling-v1-20261022-180018`): https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B

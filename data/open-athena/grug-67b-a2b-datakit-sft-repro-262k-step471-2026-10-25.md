@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Grug-67B-A2B-Datakit-SFT-Repro-262K-Step471 | 67,1 B | ~2 B (inferido) | 262 K (declarado) | OpenMDW-1.1 | Gated en HuggingFace |
-| Modelo base snowball-67b-a2b-base-262k-qk175-skew8 | 67,1 B (misma familia) | ~2 B (inferido) | 262 K | no disponible | HuggingFace (open-athena) |
+| Grug-67B-A2B-Datakit-SFT-Repro-262K-Step471 | 67,1 B | ~2 B (inferido) | 262 K (declarado) | OpenMDW-1.1 | Gated en Hugging Face |
+| Modelo base snowball-67b-a2b-base-262k-qk175-skew8 | 67,1 B (misma familia) | ~2 B (inferido) | 262 K | no disponible | Hugging Face (open-athena) |
 | Alternativas publicas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos de terceros directamente comparables (mismo tamano, misma familia MoE y mismo contexto) en la documentacion proporcionada.
@@ -73,7 +73,7 @@ No se dispone de informacion sobre modelos de terceros directamente comparables 
 ## Limitaciones y advertencias
 
 - Checkpoint intermedio (step 471): no es un modelo final; puede presentar inestabilidad, repeticiones o calidad inferior a un release consolidado.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de descargar.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargar.
 - Licencia OpenMDW-1.1: es necesario revisar sus terminos antes de cualquier uso comercial; no se detallan restricciones en la informacion disponible.
 - Idiomas no declarados: no hay garantia de calidad multilingue fuera del idioma dominante del dataset Datakit, que tampoco se especifica.
 - Riesgo de alucinacion: inherente a modelos generativos de este tamano; sin benchmarks publicos no puede cuantificarse.
@@ -84,7 +84,7 @@ No se dispone de informacion sobre modelos de terceros directamente comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Grug-67B-A2B-Datakit-SFT-Repro-262K-Step471-2026.10.25
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Grug-67B-A2B-Datakit-SFT-Repro-262K-Step471-2026.10.25
 - Modelo base: https://huggingface.co/open-athena/snowball-67b-a2b-base-262k-qk175-skew8
 - Perfil del autor: https://huggingface.co/open-athena
 - Licencia OpenMDW-1.1: no disponible enlace directo en la informacion proporcionada

@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/entropyinequalityprover/Models_Scripts_MCE-220
+- Repositorio en Hugging Face: https://huggingface.co/entropyinequalityprover/Models_Scripts_MCE-220
 - Runner y documentación interna: dentro del repositorio, carpeta `mce220_runner/`
 - Adaptador LoRA: `qwen-06b-sft-4type-old-format-lora-dataset-a-4096-balanced-higher-maxm/checkpoint-9534/`
 - Benchmark MCE-220: `mce220_runner/dataset/`

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`55over55/discord-bot` es un repositorio alojado en HuggingFace por el usuario `55over55` cuyo contenido técnico no está documentado públicamente. La model card publicada se limita a declarar la licencia MIT y no incluye descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El pipeline no está declarado y el repositorio no tiene descargas ni likes en el momento de la consulta, por lo que no existe evidencia pública de que contenga pesos de un modelo entrenado.
+`55over55/discord-bot` es un repositorio alojado en Hugging Face por el usuario `55over55` cuyo contenido técnico no está documentado públicamente. La model card publicada se limita a declarar la licencia MIT y no incluye descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El pipeline no está declarado y el repositorio no tiene descargas ni likes en el momento de la consulta, por lo que no existe evidencia pública de que contenga pesos de un modelo entrenado.
 
 Por el identificador del repositorio, el nombre sugiere un artefacto relacionado con un bot de Discord (posiblemente código de integración, un conjunto de prompts o un modelo de lenguaje ajustado para conversación). Sin embargo, esta interpretación es una inferencia a partir del nombre y no está confirmada por ninguna documentación del autor.
 
@@ -68,7 +68,7 @@ No disponible. No se ha podido identificar la categoría del artefacto (modelo d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| 55over55/discord-bot | no disponible | no disponible | MIT | Repositorio público en HuggingFace, sin descargas |
+| 55over55/discord-bot | no disponible | no disponible | MIT | Repositorio público en Hugging Face, sin descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | No se han identificado alternativas de la misma categoría |
 
 ## Limitaciones y advertencias
@@ -85,5 +85,5 @@ No disponible. No se ha podido identificar la categoría del artefacto (modelo d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/55over55/discord-bot
+- Hugging Face: https://huggingface.co/55over55/discord-bot
 - No se han encontrado papers, blogs, repositorios de código, demos ni documentación adicional en la búsqueda web realizada.

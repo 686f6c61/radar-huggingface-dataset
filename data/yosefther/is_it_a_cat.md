@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yosefther/is_it_a_cat` es un repositorio alojado en HuggingFace por el usuario `yosefther`, publicado bajo licencia MIT. En el momento de la consulta, los metadatos indican 0 descargas y 0 "likes", y el repositorio se creo y actualizo el 21 de septiembre de 2026 (fecha tal como consta en los metadatos de la plataforma). El identificador del modelo sugiere un clasificador de imagenes orientado a distinguir gatos, aunque la model card no confirma ni la tarea, ni la arquitectura, ni el dataset utilizado.
+`yosefther/is_it_a_cat` es un repositorio alojado en Hugging Face por el usuario `yosefther`, publicado bajo licencia MIT. En el momento de la consulta, los metadatos indican 0 descargas y 0 "likes", y el repositorio se creo y actualizo el 21 de septiembre de 2026 (fecha tal como consta en los metadatos de la plataforma). El identificador del modelo sugiere un clasificador de imagenes orientado a distinguir gatos, aunque la model card no confirma ni la tarea, ni la arquitectura, ni el dataset utilizado.
 
 La model card publicada no contiene mas informacion que la linea de licencia (`license: mit`). No se declara pipeline, ni idiomas soportados, ni arquitectura, ni numero de parametros, ni longitud de contexto, ni formato de pesos. Tampoco se incluyen resultados de evaluacion, ejemplos de uso o instrucciones de inferencia.
 
@@ -83,7 +83,7 @@ No disponible. Sin conocer la tarea exacta, el numero de parametros, el contexto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yosefther/is_it_a_cat
+- Repositorio en Hugging Face: https://huggingface.co/yosefther/is_it_a_cat
 - Paper: no disponible
 - Blog o nota tecnica: no disponible
 - Repositorio de codigo: no disponible

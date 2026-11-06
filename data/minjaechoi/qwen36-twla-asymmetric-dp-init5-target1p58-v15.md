@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qwen36-twla-asymmetric-dp-init5-target1p58-v15` es un checkpoint multimodal de tipo image-text-to-text publicado por el usuario minjaechoi en HuggingFace. El nombre y la etiqueta de arquitectura (`qwen3_5_moe`) apuntan a un modelo basado en la familia Qwen 3.5 con arquitectura de mezcla de expertos (MoE), afinado sobre datasets propios del autor orientados a tareas de razonamiento tipo GPQA. El repositorio ocupa 70,2 GB y los pesos en safetensors suman 35.107.181.936 parametros totales, lo que situa al modelo en la franja de los 35.000 millones de parametros.
+`qwen36-twla-asymmetric-dp-init5-target1p58-v15` es un checkpoint multimodal de tipo image-text-to-text publicado por el usuario minjaechoi en Hugging Face. El nombre y la etiqueta de arquitectura (`qwen3_5_moe`) apuntan a un modelo basado en la familia Qwen 3.5 con arquitectura de mezcla de expertos (MoE), afinado sobre datasets propios del autor orientados a tareas de razonamiento tipo GPQA. El repositorio ocupa 70,2 GB y los pesos en safetensors suman 35.107.181.936 parametros totales, lo que situa al modelo en la franja de los 35.000 millones de parametros.
 
 Se trata de un checkpoint de investigacion, no de un lanzamiento oficial: no hay model card descriptiva (unicamente la lista de datasets), no se declara licencia, no se indican idiomas soportados y no hay descargas ni interacciones registradas en el momento de redactar esta ficha. Esto condiciona por completo su evaluacion: se puede describir su formato, tamano y presumible familia arquitectonica, pero no sus capacidades reales, su contexto maximo ni su rendimiento medido.
 
@@ -97,7 +97,7 @@ No se dispone de modelos comparables identificados a partir de la informacion pr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/minjaechoi/qwen36-twla-asymmetric-dp-init5-target1p58-v15
+- Repositorio en Hugging Face: https://huggingface.co/minjaechoi/qwen36-twla-asymmetric-dp-init5-target1p58-v15
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/minjaechoi/bipea-expert-nogpqa-v3
 - Manifiesto de evaluacion declarado: https://huggingface.co/datasets/minjaechoi/twla-gpqa30-eval-manifest
 - Paper, blog o repositorio de codigo asociado: no disponible

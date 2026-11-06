@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| CephoCloud/wren-cepho-v1 | 1.5B | no disponible | Apache 2.0 | HuggingFace | Fine-tuning sin documentación ni benchmarks |
-| Qwen2.5-1.5B-Instruct | 1.5B | 32.768 tokens (según documentación de Qwen) | Apache 2.0 | HuggingFace | Modelo base, documentación completa y benchmarks publicados |
-| Llama 3.2 1B Instruct | 1.2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace | Alternativa de tamaño similar con licencia restrictiva |
-| SmolLM2-1.7B-Instruct | 1.7B | 8.192 tokens | Apache 2.0 | HuggingFace | Alternativa pequeña con benchmarks publicados |
+| CephoCloud/wren-cepho-v1 | 1.5B | no disponible | Apache 2.0 | Hugging Face | Fine-tuning sin documentación ni benchmarks |
+| Qwen2.5-1.5B-Instruct | 1.5B | 32.768 tokens (según documentación de Qwen) | Apache 2.0 | Hugging Face | Modelo base, documentación completa y benchmarks publicados |
+| Llama 3.2 1B Instruct | 1.2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face | Alternativa de tamaño similar con licencia restrictiva |
+| SmolLM2-1.7B-Instruct | 1.7B | 8.192 tokens | Apache 2.0 | Hugging Face | Alternativa pequeña con benchmarks publicados |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CephoCloud/wren-cepho-v1
+- Hugging Face: https://huggingface.co/CephoCloud/wren-cepho-v1
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
 - Qwen2.5 (familia de modelos): no se proporciona enlace directo en la información disponible.

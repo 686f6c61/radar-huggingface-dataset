@@ -84,9 +84,9 @@ Los datos proceden de la validacion publicada por el autor, con los mismos 7.371
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Eikos-4B-INT4 | 4,54B (INT4, 4,0 GB) | no disponible | MIT (contribuciones) + Apache-2.0 (base) | HuggingFace, vLLM >= 0.30.0 | JevBench hard 72,1; ECE 0,033 |
-| Eikos-4B (bf16) | 4,54B (bf16, 9,3 GB) | no disponible | MIT (contribuciones) + Apache-2.0 (base) | HuggingFace | JevBench hard 73,9; ECE 0,033 |
-| Qwen3.5-4B (modelo base) | 4B aproximados | no disponible | Apache-2.0 | HuggingFace | no disponible |
+| Eikos-4B-INT4 | 4,54B (INT4, 4,0 GB) | no disponible | MIT (contribuciones) + Apache-2.0 (base) | Hugging Face, vLLM >= 0.30.0 | JevBench hard 72,1; ECE 0,033 |
+| Eikos-4B (bf16) | 4,54B (bf16, 9,3 GB) | no disponible | MIT (contribuciones) + Apache-2.0 (base) | Hugging Face | JevBench hard 73,9; ECE 0,033 |
+| Qwen3.5-4B (modelo base) | 4B aproximados | no disponible | Apache-2.0 | Hugging Face | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de otros modelos comparables de decision tipada o de clasificacion financiera en la informacion proporcionada, por lo que la comparativa se limita al modelo original y a su base.
 
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caiovicentino1/Eikos-4B-INT4
+- Modelo en Hugging Face: https://huggingface.co/caiovicentino1/Eikos-4B-INT4
 - Modelo base (bf16): https://huggingface.co/caiovicentino1/Eikos-4B
 - Imagen de presentacion referenciada en la model card: https://huggingface.co/caiovicentino1/Eikos-4B/resolve/main/assets/eikos_launch.png
 - La busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo; los resultados obtenidos eran ajenos al mismo.

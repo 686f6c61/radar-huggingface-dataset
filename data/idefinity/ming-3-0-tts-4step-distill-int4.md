@@ -21,7 +21,7 @@ Su relevancia está en el despliegue on-device: un componente de difusión de 4 
 | Licencia | MIT |
 | Formato de pesos | ONNX (`dit4.onnx`, `dit4_int4.onnx`) y PyTorch state dict (`student_4step.pt`) |
 | Tamaño del repositorio | 0,7 GB |
-| Pipeline de HuggingFace | text-to-speech |
+| Pipeline de Hugging Face | text-to-speech |
 
 ## Arquitectura y entrenamiento
 
@@ -74,10 +74,10 @@ No se incluyen métricas equivalentes del teacher, MOS ni comparación perceptua
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (DiT 4-step int4) | no disponible (solo DiT; base de 0,5 B) | no aplica | DiT destilado a 4 pasos, sin CFG, int4 | MIT | HuggingFace, idefinity |
-| Ming-3.0-tts-0.5B (teacher) | 0,5 B denso | no aplica | TTS completo con 10 pasos y CFG=2 | MIT | HuggingFace, inclusionAI |
-| Ming-3.0-tts-tiny | 7,9 B totales, 1,3 B activos (MoE sobre Ling V3) | no aplica | TTS completo con clonación y diseño de voz | no disponible | HuggingFace y ModelScope, inclusionAI |
-| webfm-ming-3.0-tts | no disponible | no aplica | Bundle del mismo autor con pipeline y destilación int4 | MIT | HuggingFace, idefinity |
+| Este repositorio (DiT 4-step int4) | no disponible (solo DiT; base de 0,5 B) | no aplica | DiT destilado a 4 pasos, sin CFG, int4 | MIT | Hugging Face, idefinity |
+| Ming-3.0-tts-0.5B (teacher) | 0,5 B denso | no aplica | TTS completo con 10 pasos y CFG=2 | MIT | Hugging Face, inclusionAI |
+| Ming-3.0-tts-tiny | 7,9 B totales, 1,3 B activos (MoE sobre Ling V3) | no aplica | TTS completo con clonación y diseño de voz | no disponible | Hugging Face y ModelScope, inclusionAI |
+| webfm-ming-3.0-tts | no disponible | no aplica | Bundle del mismo autor con pipeline y destilación int4 | MIT | Hugging Face, idefinity |
 
 La comparación directa de calidad no es posible con los datos disponibles: el repositorio solo publica métricas del student, no del teacher ni de Ming-3.0-tts-tiny. La diferencia principal frente al teacher es el número de pasos y la ausencia de CFG; frente a Ming-3.0-tts-tiny, este repositorio es un componente ligero, no un sistema completo con clonación y control por lenguaje natural.
 

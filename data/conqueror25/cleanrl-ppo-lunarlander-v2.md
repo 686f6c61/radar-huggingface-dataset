@@ -77,7 +77,7 @@ No se dispone de datos comparativos publicados en la informacion facilitada. Com
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| cleanrl-ppo-LunarLander-v2 (Conqueror25) | PPO | LunarLander-v2 | no disponible | no aplica | no disponible | HuggingFace (0 descargas) |
+| cleanrl-ppo-LunarLander-v2 (Conqueror25) | PPO | LunarLander-v2 | no disponible | no aplica | no disponible | Hugging Face (0 descargas) |
 | DQN en LunarLander-v2 | DQN | LunarLander-v2 | no disponible | no aplica | no disponible | no disponible |
 | A2C en LunarLander-v2 | A2C | LunarLander-v2 | no disponible | no aplica | no disponible | no disponible |
 | PPO oficial de CleanRL | PPO | LunarLander-v2 | no disponible | no aplica | no disponible | no disponible |
@@ -96,5 +96,5 @@ No se dispone de datos comparativos publicados en la informacion facilitada. Com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Conqueror25/cleanrl-ppo-LunarLander-v2
+- Hugging Face: https://huggingface.co/Conqueror25/cleanrl-ppo-LunarLander-v2
 - CleanRL (framework de referencia citado por el autor, implementacion PPO de un solo fichero): https://github.com/vwxyzjn/cleanrl

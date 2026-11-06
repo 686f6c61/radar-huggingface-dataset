@@ -82,5 +82,5 @@ La comparacion con SmolLM-135M y Qwen2.5-0.5B se ofrece como referencia de categ
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/Thox-ai/thox-micro-125m-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/Thox-ai/thox-micro-125m-GGUF
 - Modelo base: https://huggingface.co/Thox-ai/thox-micro-125m

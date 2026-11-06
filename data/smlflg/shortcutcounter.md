@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ShortcutCounter no es un modelo de inteligencia artificial ni un conjunto de pesos: es una utilidad de software publicada en HuggingFace por el usuario smlflg que funciona como rastreador pasivo de atajos de teclado en Linux con Wayland. Se ejecuta como demonio en segundo plano, lee eventos de dispositivos de entrada mediante la librería evdev y registra unicamente combinaciones de modificador mas tecla (por ejemplo, Ctrl+C o Alt+Tab), sin almacenar nunca pulsaciones sueltas, letras ni texto.
+ShortcutCounter no es un modelo de inteligencia artificial ni un conjunto de pesos: es una utilidad de software publicada en Hugging Face por el usuario smlflg que funciona como rastreador pasivo de atajos de teclado en Linux con Wayland. Se ejecuta como demonio en segundo plano, lee eventos de dispositivos de entrada mediante la librería evdev y registra unicamente combinaciones de modificador mas tecla (por ejemplo, Ctrl+C o Alt+Tab), sin almacenar nunca pulsaciones sueltas, letras ni texto.
 
 El problema que resuelve es la falta de visibilidad sobre que atajos de teclado se usan realmente en un escritorio. Ofrece estadisticas agregadas a traves de una interfaz de linea de comandos (subcomandos `start`, `stop`, `status`, `stats`, `top`, `learn` y `today`) y de una pestana de solo lectura integrada en el panel GTK3 ClaudeCodePanel. El almacenamiento es local, en una base de datos SQLite situada en `~/.local/share/shortcut-counter/shortcuts.db`.
 
-Es relevante ahora de forma acotada: para desarrolladores y usuarios avanzados de Linux que quieran medir y optimizar su uso del teclado sin telemetria externa, y como ejemplo de publicacion de herramientas no-ML en HuggingFace. En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, no declara licencia y fue creado el 16 de septiembre de 2026.
+Es relevante ahora de forma acotada: para desarrolladores y usuarios avanzados de Linux que quieran medir y optimizar su uso del teclado sin telemetria externa, y como ejemplo de publicacion de herramientas no-ML en Hugging Face. En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, no declara licencia y fue creado el 16 de septiembre de 2026.
 
 ## Especificaciones tecnicas
 
@@ -93,7 +93,7 @@ La documentacion proporcionada no incluye comparativas con otras herramientas, y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smlflg/ShortcutCounter
+- Hugging Face: https://huggingface.co/smlflg/ShortcutCounter
 - Repositorio, paper o demo adicionales: no disponibles en la informacion proporcionada.
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes. Las entradas devueltas corresponden a paginas de Zhihu sobre temas sin relacion con el modelo (experiencia en la Universidad de Tubinga, reglas del electromagnetismo, una cuenta de usuario, tarjetas bancarias para estudiar en Alemania y el precio de un vehiculo), por lo que se descartan como fuentes.
 - Dependencias citadas en la model card, sin URL asociada en la documentacion: evdev, click, rich.

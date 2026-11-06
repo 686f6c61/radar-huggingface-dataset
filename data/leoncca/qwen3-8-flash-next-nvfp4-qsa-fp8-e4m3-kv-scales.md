@@ -98,7 +98,7 @@ La comparativa con otros modelos de la misma categoría (MoE ultra-sparse con at
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/leoncca/Qwen3.8-Flash-Next-NVFP4-QSA-FP8-E4M3-KV-Scales
+- Repositorio Hugging Face: https://huggingface.co/leoncca/Qwen3.8-Flash-Next-NVFP4-QSA-FP8-E4M3-KV-Scales
 - Checkpoint base: https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4
 - Repositorio oficial de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Cuantización NVFP4 de referencia: https://huggingface.co/lesj0610/Qwen3.8-Flash-Next-NVFP4

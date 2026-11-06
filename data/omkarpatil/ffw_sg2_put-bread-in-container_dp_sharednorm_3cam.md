@@ -70,6 +70,6 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/omkarpatil/ffw_sg2_put-bread-in-container_dp_sharednorm_3cam
+- Hugging Face: https://huggingface.co/omkarpatil/ffw_sg2_put-bread-in-container_dp_sharednorm_3cam
 - Perfil del autor: https://huggingface.co/omkarpatil
 - Modelos del autor: https://huggingface.co/omkarpatil/models

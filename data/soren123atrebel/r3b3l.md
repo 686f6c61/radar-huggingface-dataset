@@ -2,11 +2,11 @@
 
 ## Resumen
 
-R3B3L es un modelo publicado en HuggingFace por el usuario Soren123atrebel bajo licencia Apache 2.0. La información pública disponible es mínima: la model card únicamente contiene la declaración de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni capacidades declaradas por el autor. El repositorio no presenta pipeline asociado, no registra idiomas soportados y, en el momento de la consulta, acumula cero descargas y cero interacciones.
+R3B3L es un modelo publicado en Hugging Face por el usuario Soren123atrebel bajo licencia Apache 2.0. La información pública disponible es mínima: la model card únicamente contiene la declaración de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni capacidades declaradas por el autor. El repositorio no presenta pipeline asociado, no registra idiomas soportados y, en el momento de la consulta, acumula cero descargas y cero interacciones.
 
 Dado que el autor no ha publicado especificaciones técnicas ni documentación adicional, no es posible determinar con rigor qué tipo de modelo es (transformer, MoE, SSM, modelo multimodal, etc.), su tamaño en parámetros ni su ventana de contexto. Tampoco existe información sobre el proceso de entrenamiento, el dataset utilizado o si se aplicaron técnicas de alineación como RLHF o DPO. Los resultados de búsqueda web recuperados no guardan relación con este repositorio: hacen referencia a generadores de modelos 3D a partir de texto o imágenes, herramienta distinta de un modelo de lenguaje.
 
-Por tanto, esta ficha se limita a reflejar los pocos datos verificables procedentes del repositorio oficial. Cualquier uso en producción debería ir precedido de una evaluación directa del propio artefacto, ya que no hay documentación pública que respalde afirmaciones de rendimiento, capacidades o límites. Se recomienda contactar con el autor a través de HuggingFace para obtener detalles adicionales antes de considerarlo en un flujo de trabajo real.
+Por tanto, esta ficha se limita a reflejar los pocos datos verificables procedentes del repositorio oficial. Cualquier uso en producción debería ir precedido de una evaluación directa del propio artefacto, ya que no hay documentación pública que respalde afirmaciones de rendimiento, capacidades o límites. Se recomienda contactar con el autor a través de Hugging Face para obtener detalles adicionales antes de considerarlo en un flujo de trabajo real.
 
 ## Especificaciones tecnicas
 
@@ -43,7 +43,7 @@ Al no disponer de especificaciones técnicas ni de una descripción funcional, n
 
 Se recomienda:
 
-- Revisar el repositorio de HuggingFace por si el autor publica actualizaciones de la model card.
+- Revisar el repositorio de Hugging Face por si el autor publica actualizaciones de la model card.
 - Ejecutar una evaluación directa del modelo en un entorno controlado antes de considerarlo para cualquier aplicación.
 - Contactar con el autor para obtener detalles sobre arquitectura, entrenamiento y licencia de uso en producción.
 
@@ -76,4 +76,4 @@ No disponible. No se puede establecer una comparativa con otros modelos porque s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Soren123atrebel/R3B3L
+- Hugging Face: https://huggingface.co/Soren123atrebel/R3B3L

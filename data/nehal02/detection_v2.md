@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Nehal02/detection_v2 es un modelo de clasificación de texto publicado en HuggingFace por el usuario Nehal02. El repositorio contiene pesos en formato safetensors con 355.361.794 parámetros, una cifra coherente con la escala de RoBERTa-large, y la etiqueta `roberta` del Hub confirma que se trata de un encoder transformer basado en esa familia. El pipeline declarado es `text-classification`, por lo que el modelo está diseñado para asignar etiquetas a secuencias de texto y no para generar texto libre.
+Nehal02/detection_v2 es un modelo de clasificación de texto publicado en Hugging Face por el usuario Nehal02. El repositorio contiene pesos en formato safetensors con 355.361.794 parámetros, una cifra coherente con la escala de RoBERTa-large, y la etiqueta `roberta` del Hub confirma que se trata de un encoder transformer basado en esa familia. El pipeline declarado es `text-classification`, por lo que el modelo está diseñado para asignar etiquetas a secuencias de texto y no para generar texto libre.
 
-La relevancia de este modelo es limitada y debe contextualizarse: cuenta con 0 descargas y 0 likes, la model card es la plantilla automática de HuggingFace sin ninguna sección cumplimentada, y no se especifican licencia, idiomas, taxonomía de etiquetas ni datos de entrenamiento. El nombre `detection_v2` sugiere una tarea de detección binaria o multiclase (moderación, spam, contenido tóxico u otra), pero el autor no documenta cuál es la tarea concreta ni el dataset utilizado.
+La relevancia de este modelo es limitada y debe contextualizarse: cuenta con 0 descargas y 0 likes, la model card es la plantilla automática de Hugging Face sin ninguna sección cumplimentada, y no se especifican licencia, idiomas, taxonomía de etiquetas ni datos de entrenamiento. El nombre `detection_v2` sugiere una tarea de detección binaria o multiclase (moderación, spam, contenido tóxico u otra), pero el autor no documenta cuál es la tarea concreta ni el dataset utilizado.
 
 Por tanto, esta ficha describe la arquitectura y el perfil técnico inferibles de los metadatos, y marca explícitamente como no disponible todo aquello que el autor no ha publicado. Cualquier uso en producción exige una validación propia previa.
 
@@ -27,13 +27,13 @@ Otros datos del repositorio: tamaño del repo 1,4 GB, creado y actualizado el 20
 
 La única información estructural disponible es la etiqueta `roberta` del Hub y el recuento de parámetros (355,36 M), que sitúa al modelo en la escala de RoBERTa-large: 24 capas, 16 cabezas de atención y dimensión oculta de 1024, con un vocabulario de aproximadamente 50.000 tokens BPE. Se trata, por tanto, de un encoder bidireccional con atención completa y preentrenamiento por enmascaramiento de tokens (MLM), al que se le habría añadido una cabeza de clasificación para la tarea `detection_v2`. El sufijo `v2` indica que existe al menos una versión anterior del mismo experimento.
 
-No hay ningún dato publicado sobre el procedimiento de entrenamiento: se desconoce el número de tokens de ajuste fino, la composición del dataset, si hubo balanceo de clases, si se aplicó destilación o si se congelaron capas del encoder. Tampoco se documenta el uso de RLHF, DPO ni ninguna innovación técnica. La etiqueta `arxiv:1910.09700` no corresponde a un artículo sobre el modelo: es la referencia a Lacoste et al. (2019) sobre el calculador de impacto de carbono, incluida en la plantilla automática de model card de HuggingFace.
+No hay ningún dato publicado sobre el procedimiento de entrenamiento: se desconoce el número de tokens de ajuste fino, la composición del dataset, si hubo balanceo de clases, si se aplicó destilación o si se congelaron capas del encoder. Tampoco se documenta el uso de RLHF, DPO ni ninguna innovación técnica. La etiqueta `arxiv:1910.09700` no corresponde a un artículo sobre el modelo: es la referencia a Lacoste et al. (2019) sobre el calculador de impacto de carbono, incluida en la plantilla automática de model card de Hugging Face.
 
 ## Capacidades
 
 - Clasificación de texto: asignación de una o varias etiquetas a una secuencia de entrada a través del pipeline `text-classification`. La taxonomía concreta de etiquetas no está documentada.
 - Representaciones contextuales: al derivar de RoBERTa, puede emplearse como extractor de embeddings de frases o palabras, aunque no se ha validado con métricas de recuperación.
-- Compatibilidad de despliegue: las etiquetas `text-embeddings-inference` y `endpoints_compatible` indican que el repositorio es apto para servirse con Text Embeddings Inference y con los Inference Endpoints de HuggingFace.
+- Compatibilidad de despliegue: las etiquetas `text-embeddings-inference` y `endpoints_compatible` indican que el repositorio es apto para servirse con Text Embeddings Inference y con los Inference Endpoints de Hugging Face.
 - Generación de texto: no soportada (modelo encoder-only).
 - Razonamiento, matemáticas y código: no soportados como tales.
 - Tool calling / function calling: no soportado.
@@ -66,14 +66,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM sirve para FP32 con batch pequeño. Para lotes grandes o alto throughput conviene una NVIDIA T4, L4, A10G, RTX 3090 o A100.
 - GPU de consumo: sí, cabe holgadamente en GTX 1660 (6 GB), RTX 3060, RTX 4060, RTX 4090 e incluso en GPUs integradas con memoria compartida, dado su reducido tamaño.
 - CPU: la inferencia en CPU es viable para tráfico moderado, con latencias del orden de decenas de milisegundos por secuencia corta.
-- Opciones de despliegue: pipeline de `transformers`, HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), Text Embeddings Inference (etiqueta `text-embeddings-inference`). También es convertible a ONNX o a GGUF mediante herramientas externas, aunque no se distribuyen esos formatos en el repositorio.
+- Opciones de despliegue: pipeline de `transformers`, Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), Text Embeddings Inference (etiqueta `text-embeddings-inference`). También es convertible a ONNX o a GGUF mediante herramientas externas, aunque no se distribuyen esos formatos en el repositorio.
 - Latencia y throughput: no disponibles. El autor no publica mediciones de velocidad, tamaño de lote ni tiempos de entrenamiento.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nehal02/detection_v2 | 355,36 M | No disponible | Clasificacion de texto | No disponible | HuggingFace, 0 descargas |
+| Nehal02/detection_v2 | 355,36 M | No disponible | Clasificacion de texto | No disponible | Hugging Face, 0 descargas |
 | FacebookAI/roberta-large | 355,36 M | 512 tokens | MLM + ajuste fino por tarea | MIT | Ampliamente disponible y documentado |
 | microsoft/deberta-v3-large | ~304 M | 512 tokens | MLM + ajuste fino por tarea | MIT | Ampliamente disponible y documentado |
 | FacebookAI/xlm-roberta-large | 559,89 M | 512 tokens | MLM multilingue | MIT | Ampliamente disponible y documentado |
@@ -94,7 +94,7 @@ La comparación es estructural: `detection_v2` parte de la misma escala que `rob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nehal02/detection_v2
+- Modelo en Hugging Face: https://huggingface.co/Nehal02/detection_v2
 - Referencia citada en la plantilla de la model card (no relacionada con el modelo): Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", https://arxiv.org/abs/1910.09700
 - Calculador de impacto de carbono mencionado en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a sitios de contenido para adultos y no guardan ninguna relacion con Nehal02/detection_v2. No hay paper, blog, repositorio de codigo ni demo asociados al modelo.

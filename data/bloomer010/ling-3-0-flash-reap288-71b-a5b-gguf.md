@@ -73,7 +73,7 @@ La comparativa se limita a aspectos estructurales, ya que no hay datos de rendim
 
 ## Enlaces
 
-- [HuggingFace - Ling-3.0-flash-REAP288-71B-A5B-GGUF](https://huggingface.co/bloomer010/Ling-3.0-flash-REAP288-71B-A5B-GGUF)
+- [Hugging Face - Ling-3.0-flash-REAP288-71B-A5B-GGUF](https://huggingface.co/bloomer010/Ling-3.0-flash-REAP288-71B-A5B-GGUF)
 - [Modelo base: inclusionAI/Ling-3.0-flash](https://huggingface.co/inclusionAI/Ling-3.0-flash)
 - [Paper REAP (arXiv:2510.13999)](https://arxiv.org/abs/2510.13999)
 - [PR #26608 en llama.cpp para soporte bailingmoe3](https://github.com/ggml-org/llama.cpp/pull/26608)

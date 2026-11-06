@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mtrini-SVL-1.2-Identity-v3-LoRA | Adaptador LoRA sobre VLM | Adaptador (base 8B) | No disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-8B-Instruct | Modelo completo VLM | 8B (según denominación) | No disponible en la información | No disponible en la información | HuggingFace |
+| Mtrini-SVL-1.2-Identity-v3-LoRA | Adaptador LoRA sobre VLM | Adaptador (base 8B) | No disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-8B-Instruct | Modelo completo VLM | 8B (según denominación) | No disponible en la información | No disponible en la información | Hugging Face |
 | Otros adaptadores LoRA de identidad/estilo sobre Qwen | Adaptador LoRA | Variable | Heredado del base | Variable | No disponible |
 
 No se dispone de datos de rendimiento comparables entre estas opciones en la información proporcionada, por lo que la comparación se limita a tipo de artefacto, licencia y disponibilidad.
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparables entre estas opciones en la inf
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/CompiwerAI/Mtrini-SVL-1.2-Identity-v3-LoRA
+- Hugging Face (adaptador): https://huggingface.co/CompiwerAI/Mtrini-SVL-1.2-Identity-v3-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Paper, blog, repositorio o demo adicionales: no disponible (la búsqueda web no arrojó resultados pertinentes)

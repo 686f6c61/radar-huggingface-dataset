@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alixpego/agente-clustering-unidad3` es un repositorio publicado en HuggingFace por el usuario alixpego que contiene un agente de agrupamiento (clustering) desarrollado como trabajo academico para la Unidad 3 de la asignatura de Aprendizaje Automatico del ITESCO. No se trata de un modelo de lenguaje entrenado con pesos publicados, sino de un artefacto de software que empaqueta logica de seleccion de distancia, ejecucion de algoritmos de clustering (K-medias y DBSCAN) y validacion mediante metricas internas (Silueta, Davies-Bouldin y Calinski-Harabasz).
+`alixpego/agente-clustering-unidad3` es un repositorio publicado en Hugging Face por el usuario alixpego que contiene un agente de agrupamiento (clustering) desarrollado como trabajo academico para la Unidad 3 de la asignatura de Aprendizaje Automatico del ITESCO. No se trata de un modelo de lenguaje entrenado con pesos publicados, sino de un artefacto de software que empaqueta logica de seleccion de distancia, ejecucion de algoritmos de clustering (K-medias y DBSCAN) y validacion mediante metricas internas (Silueta, Davies-Bouldin y Calinski-Harabasz).
 
 El repositorio incluye un script principal (`agente_clustering.py`), una interfaz Gradio (`app.py`), diapositivas de presentacion y un cuaderno de demostracion para Google Colab. El tamano del repositorio es de 0.0 GB, lo que indica que no contiene pesos de modelo ni artefactos de gran volumen; el contenido es esencialmente codigo y documentacion.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alixpego/agente-clustering-unidad3 | Agente de software para clustering (K-medias, DBSCAN, metricas internas) | no aplica | no aplica | MIT | HuggingFace, 0 descargas |
+| alixpego/agente-clustering-unidad3 | Agente de software para clustering (K-medias, DBSCAN, metricas internas) | no aplica | no aplica | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre proyectos equivalentes con los que establecer una comparacion tecnica rigurosa (parametros, contexto, rendimiento). La categoria (agente docente de clustering) no cuenta con referencias publicas documentadas en la informacion proporcionada.
@@ -83,5 +83,5 @@ No se dispone de informacion sobre proyectos equivalentes con los que establecer
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alixpego/agente-clustering-unidad3
+- Repositorio en Hugging Face: https://huggingface.co/alixpego/agente-clustering-unidad3
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos publicas asociadas a este proyecto.

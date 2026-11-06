@@ -83,7 +83,7 @@ No se dispone de información suficiente para comparar parámetros, contexto o r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thebluescreen/crema-chords-onnx
+- Modelo en Hugging Face: https://huggingface.co/thebluescreen/crema-chords-onnx
 - Repositorio original de CREMA: https://github.com/bmcfee/crema
 - Scripts de conversión (Silly MIDI Tools): https://github.com/Sillybit-io/silly-midi-tools
 - Referencia académica: McFee y Bello, "Structured Training for Large-Vocabulary Chord Recognition", ISMIR 2017 (enlace directo no disponible en la información proporcionada)

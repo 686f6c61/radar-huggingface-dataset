@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA (PEFT) denominado `safety-drift-qwen2.5-1.5b-benign_alpaca`, publicado por el usuario `vanishingradient` sobre el modelo base `Qwen/Qwen2.5-1.5B-Instruct`. No se trata por tanto de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptacion de bajo rango que debe cargarse junto con el modelo base. El repositorio registra 0 descargas y 0 "likes", un tamano de 0.0 GB y una model card que es la plantilla por defecto de HuggingFace sin rellenar: todos los campos de descripcion, datos de entrenamiento, evaluacion, licencia e idiomas figuran como "[More Information Needed]".
+Este repositorio contiene un adaptador LoRA (PEFT) denominado `safety-drift-qwen2.5-1.5b-benign_alpaca`, publicado por el usuario `vanishingradient` sobre el modelo base `Qwen/Qwen2.5-1.5B-Instruct`. No se trata por tanto de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptacion de bajo rango que debe cargarse junto con el modelo base. El repositorio registra 0 descargas y 0 "likes", un tamano de 0.0 GB y una model card que es la plantilla por defecto de Hugging Face sin rellenar: todos los campos de descripcion, datos de entrenamiento, evaluacion, licencia e idiomas figuran como "[More Information Needed]".
 
 La nomenclatura del identificador (`safety-drift`, `benign_alpaca`) sugiere que se trata de un artefacto de investigacion orientado a estudiar la deriva o erosion de las salvaguardas de seguridad tras un ajuste fino aparentemente benigno, en este caso sobre un dataset tipo Alpaca. Esta interpretacion es una inferencia a partir del nombre y no una afirmacion respaldada por la documentacion disponible, que no contiene ninguna descripcion del procedimiento, del dataset ni de los hiperparametros empleados. El unico dato tecnico explicito de la model card es la version de PEFT utilizada, 0.19.1.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento del adaptador, por lo que la comparacion s
 
 ## Limitaciones y advertencias
 
-- Model card vacia: el repositorio conserva la plantilla por defecto de HuggingFace. No hay informacion sobre datos de entrenamiento, hiperparametros, evaluacion, uso previsto ni uso fuera de alcance.
+- Model card vacia: el repositorio conserva la plantilla por defecto de Hugging Face. No hay informacion sobre datos de entrenamiento, hiperparametros, evaluacion, uso previsto ni uso fuera de alcance.
 - Licencia no declarada: al no especificarse licencia, no puede asumirse permiso de uso comercial. Aunque el modelo base Qwen2.5-1.5B-Instruct es Apache 2.0, la ausencia de licencia explicita en el repositorio del adaptador es un riesgo juridico para cualquier despliegue en produccion.
 - Posible degradacion de seguridad: el propio nombre del repositorio (`safety-drift`) apunta a una perdida de salvaguardas respecto al modelo base. Si esa hipotesis es correcta, el modelo puede responder a peticiones que el base rechazaria. No debe usarse como asistente expuesto a usuarios sin una capa de moderacion externa.
 - Riesgo de alucinacion elevado: con 1.5B parametros, la tasa de afirmaciones inventadas en tareas de conocimiento factual es alta, especialmente fuera de los idiomas dominantes del corpus de entrenamiento.
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento del adaptador, por lo que la comparacion s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vanishingradient/safety-drift-qwen2.5-1.5b-benign_alpaca
+- Repositorio Hugging Face: https://huggingface.co/vanishingradient/safety-drift-qwen2.5-1.5b-benign_alpaca
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Referencia citada en la model card (calculo de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML: https://mlco2.github.io/impact#compute

@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks de otros modelos de traduccion especializad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gplsi/Aitana-TA-7B-S
+- Modelo en Hugging Face: https://huggingface.co/gplsi/Aitana-TA-7B-S
 - Modelo base: https://huggingface.co/BSC-LT/salamandraTA-7b-instruct
 - Paper de IberoBench: https://aclanthology.org/2025.coling-main.699/
 - GPLSI (Universidad de Alicante): https://gplsi.dlsi.ua.es/

@@ -72,7 +72,7 @@ No se dispone de información suficiente para comparar directamente este modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dgrauet/ernie-image-sft-mlx-q8
+- Modelo en Hugging Face: https://huggingface.co/dgrauet/ernie-image-sft-mlx-q8
 - Modelo base original: https://huggingface.co/baidu/ERNIE-Image
 - Repositorio `ernie-image-mlx`: https://github.com/dgrauet/ernie-image-mlx
 - Herramienta de conversión `mlx-forge`: https://github.com/dgrauet/mlx-forge

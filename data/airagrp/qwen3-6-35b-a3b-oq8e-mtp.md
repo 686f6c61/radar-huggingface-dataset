@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para realizar una comparativa fiable con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/airagrp/Qwen3.6-35B-A3B-oQ8e-mtp
+- Repositorio Hugging Face: https://huggingface.co/airagrp/Qwen3.6-35B-A3B-oQ8e-mtp
 - Guia de Qwen 3.6 (InsiderLLM): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/
 - Guia para ejecutar Qwen 3.6 35B MoE localmente: https://insiderllm.com/guides/best-way-run-qwen-3-6-35b-moe-locally/
 - Pagina de Ollama para qwen3.6:35b-a3b-mtp-q8_0: https://ollama.com/library/qwen3.6:35b-a3b-mtp-q8_0

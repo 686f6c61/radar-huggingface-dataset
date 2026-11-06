@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper Small Vi HLV es un ajuste fino (fine-tuning) del modelo openai/whisper-small para reconocimiento automatico del habla (ASR) en vietnamita. Lo publica el usuario ngotruong09 en HuggingFace y se ha entrenado sobre el dataset Common Voice 17.0, configuracion `vi`. El modelo conserva la arquitectura encoder-decoder transformer original de Whisper con 241.734.912 parametros y esta pensado exclusivamente para transcripcion de audio en vietnamita.
+Whisper Small Vi HLV es un ajuste fino (fine-tuning) del modelo openai/whisper-small para reconocimiento automatico del habla (ASR) en vietnamita. Lo publica el usuario ngotruong09 en Hugging Face y se ha entrenado sobre el dataset Common Voice 17.0, configuracion `vi`. El modelo conserva la arquitectura encoder-decoder transformer original de Whisper con 241.734.912 parametros y esta pensado exclusivamente para transcripcion de audio en vietnamita.
 
 El problema que aborda es la adaptacion de un modelo multilingue generico a un idioma concreto con datos de dominio publico. Sin embargo, el rendimiento declarado por el autor es muy deficiente: un WER de 91,6 % sobre el split de test de Common Voice 17.0, lo que indica que el ajuste fino no ha convergido correctamente o que la evaluacion se ha realizado de forma inadecuada. Este dato es relevante para cualquier evaluador: el modelo no es apto para produccion en su estado actual.
 
@@ -44,7 +44,7 @@ Segun la model card, el entrenamiento uso AdamW con betas (0,9; 0,999) y epsilon
 - Analisis de llamadas de atencion al cliente: la transcripcion resultante tendria un nivel de error que invalidaria cualquier analisis posterior de sentimiento o extraccion de entidades.
 - Investigacion sobre adaptacion de Whisper a vietnamita: el modelo puede servir como punto de partida para estudiar por que un fine-tuning con estos hiperparametros no converge.
 - Generacion de datasets pseudo-etiquetados: no recomendable por la alta tasa de error; introduciria ruido masivo en cualquier corpus derivado.
-- Pruebas de pipelines de ASR en HuggingFace Transformers: util para validar la integracion tecnica de un modelo Whisper fine-tuneado, no para evaluar calidad.
+- Pruebas de pipelines de ASR en Hugging Face Transformers: util para validar la integracion tecnica de un modelo Whisper fine-tuneado, no para evaluar calidad.
 
 ## Benchmarks y rendimiento
 
@@ -64,7 +64,7 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 - VRAM estimada en FP16/BF16: aproximadamente 0,5 GB para pesos mas overhead.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente; RTX 3060, RTX 4060, RTX 4090, A100 o H100 funcionan sin problema.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU con al menos 2-4 GB de VRAM, e incluso en CPU para inferencia por lotes pequenos.
-- Opciones de despliegue: HuggingFace Transformers (libreria declarada), potencialmente vLLM, TGI o llama.cpp si se convierte a GGUF, aunque no se ha documentado compatibilidad con estas herramientas.
+- Opciones de despliegue: Hugging Face Transformers (libreria declarada), potencialmente vLLM, TGI o llama.cpp si se convierte a GGUF, aunque no se ha documentado compatibilidad con estas herramientas.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -87,12 +87,12 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 - Riesgo alto de alucinacion en la transcripcion: con un WER tan elevado, el modelo puede generar texto plausible pero incorrecto.
 - Licencia apache-2.0 permite uso comercial, pero el rendimiento hace inviable cualquier aplicacion comercial real.
 - No se han documentado sesgos especificos, pero al entrenar sobre Common Voice 17.0 hereda los sesgos de dicho corpus (posible infrarepresentacion de determinados acentos, edades o generos).
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
 - La fecha de creacion indicada (2026-11-02) es futura respecto a la mayoria de referencias actuales; conviene verificar la integridad del repositorio antes de usarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ngotruong09/whisper-small-vi-hlv
+- Modelo en Hugging Face: https://huggingface.co/ngotruong09/whisper-small-vi-hlv
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Dataset de entrenamiento/evaluacion: https://huggingface.co/datasets/fixie-ai/common_voice_17_0
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

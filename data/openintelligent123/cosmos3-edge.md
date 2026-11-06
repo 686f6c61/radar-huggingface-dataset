@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Cosmos3-Edge | ~3,86B | No disponible | OpenMDW1.1 | Sí (HuggingFace) |
-| Cosmos3-Nano | 16B | No disponible | OpenMDW1.1 | Sí (HuggingFace) |
-| Cosmos3-Super | 64B | No disponible | OpenMDW1.1 | Sí (HuggingFace) |
+| Cosmos3-Edge | ~3,86B | No disponible | OpenMDW1.1 | Sí (Hugging Face) |
+| Cosmos3-Nano | 16B | No disponible | OpenMDW1.1 | Sí (Hugging Face) |
+| Cosmos3-Super | 64B | No disponible | OpenMDW1.1 | Sí (Hugging Face) |
 
 ## Limitaciones y advertencias
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - No se han especificado limitaciones de contexto ni de idiomas.
 - La licencia OpenMDW1.1 debe revisarse en profundidad para determinar restricciones de uso comercial y despliegue.
 - El modelo está orientado a IA física y mundo; puede no ser adecuado para tareas de generación de lenguaje general o conversación.
-- El repositorio en HuggingFace (Openintelligent123/Cosmos3-Edge) no es el oficial de NVIDIA, aunque la model card lo referencia; conviene verificar la procedencia y el estado de mantenimiento.
+- El repositorio en Hugging Face (Openintelligent123/Cosmos3-Edge) no es el oficial de NVIDIA, aunque la model card lo referencia; conviene verificar la procedencia y el estado de mantenimiento.
 
 ## Enlaces
 

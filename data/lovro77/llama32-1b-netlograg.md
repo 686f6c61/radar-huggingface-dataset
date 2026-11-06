@@ -17,7 +17,7 @@ Se trata de un modelo pequeño (alrededor de 1.230 millones de parámetros) con 
 | Tipos de cuantizacion | No especificado en el repo; el modelo base usa bnb-4bit, pero el repo puede contener safetensors en precisión completa o cuantizados |
 | Idiomas soportados | Inglés (según la model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (según tags de HuggingFace) |
+| Formato de pesos | Safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -75,6 +75,6 @@ La comparativa se basa en el modelo base, ya que no hay datos específicos del f
 
 ## Enlaces
 
-- [HuggingFace - lovro77/llama32-1b-netlograg](https://huggingface.co/lovro77/llama32-1b-netlograg)
+- [Hugging Face - lovro77/llama32-1b-netlograg](https://huggingface.co/lovro77/llama32-1b-netlograg)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)
 - [Meta Llama 3.2 1B (modelo base)](https://huggingface.co/meta-llama/Llama-3.2-1B)

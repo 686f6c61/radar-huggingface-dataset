@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su origen: es un resultado de un torneo d
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base ni del adaptador. El repositorio indica que es un adaptador PEFT (probablemente LoRA, aunque no se confirma) y que la libreria utilizada es PEFT 0.15.1. El modelo base `augmented-8aa80abfeefb70ba` no tiene una ficha publica en HuggingFace que permita conocer su arquitectura, numero de parametros o dataset de entrenamiento. Tampoco se documentan los datos de entrenamiento del adaptador, el procedimiento de fine-tuning, ni si se emplearon tecnicas como RLHF o DPO. La unica referencia tecnica es el tag `arxiv:1910.09700`, que corresponde al articulo sobre estimacion de emisiones de carbono en ML, no a una innovacion arquitectonica.
+No se dispone de informacion sobre la arquitectura del modelo base ni del adaptador. El repositorio indica que es un adaptador PEFT (probablemente LoRA, aunque no se confirma) y que la libreria utilizada es PEFT 0.15.1. El modelo base `augmented-8aa80abfeefb70ba` no tiene una ficha publica en Hugging Face que permita conocer su arquitectura, numero de parametros o dataset de entrenamiento. Tampoco se documentan los datos de entrenamiento del adaptador, el procedimiento de fine-tuning, ni si se emplearon tecnicas como RLHF o DPO. La unica referencia tecnica es el tag `arxiv:1910.09700`, que corresponde al articulo sobre estimacion de emisiones de carbono en ML, no a una innovacion arquitectonica.
 
 ## Capacidades
 
@@ -53,8 +53,8 @@ No disponible. No se conocen modelos comparables porque se desconoce la arquitec
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/gradients-io-tournaments/tournament-tourn_e758aac2d861c378_20260824-de0838ff-9fdd-48c2-a9aa-913be86e4cdd-5GU4Xkd3)
+- [Hugging Face - modelo](https://huggingface.co/gradients-io-tournaments/tournament-tourn_e758aac2d861c378_20260824-de0838ff-9fdd-48c2-a9aa-913be86e4cdd-5GU4Xkd3)
 - [Gradients - pagina de torneos](https://www.gradients.io/app/research/tournament)
-- [Ejemplo de otro adaptador similar en HuggingFace](https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-daf88974-31be-496a-adef-9459078493b6-5FW2Eaae/tree/main)
+- [Ejemplo de otro adaptador similar en Hugging Face](https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-daf88974-31be-496a-adef-9459078493b6-5FW2Eaae/tree/main)
 - [Referencia en FriendliAI (despliegue)](https://friendli.ai/models/gradients-io-tournaments/tournament-tourn_e758aac2d861c378_20260824-318ef829-69d5-40c9-b803-b3b78b525668-5D2Qee4V)
 - [Referencia en Socket.dev](https://socket.dev/huggingface/package/gradients-io-tournaments/tournament-tourn_d89fdb834131e48e_20260101-0eb6c856-ad56-415a-91d5-1705ee02f6db-5gu4xkd3)

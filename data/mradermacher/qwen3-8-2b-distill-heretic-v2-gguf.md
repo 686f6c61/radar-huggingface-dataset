@@ -87,7 +87,7 @@ La comparativa es orientativa: no hay datos de rendimiento publicados para este 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-2B-Distill-heretic-v2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-2B-Distill-heretic-v2-GGUF
 - Modelo base: https://huggingface.co/htb-ac-1424625/Qwen3.8-2B-Distill-heretic-v2
 - Pagina de overview del autor: https://hf.tst.eu/model#Qwen3.8-2B-Distill-heretic-v2-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

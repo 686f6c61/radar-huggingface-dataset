@@ -79,7 +79,7 @@ No se dispone de datos comparativos con otros modelos en la informacion proporci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zerodigest/Ornith-1.5-35B-Uncensored-YMQ-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/zerodigest/Ornith-1.5-35B-Uncensored-YMQ-MTP-GGUF
 - Modelo base (0xKitkat): https://huggingface.co/0xKitkat/Ornith-1.5-35B-A3B-Uncensored
 - Modelo original (ornith-ai): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Pagina oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mbfa-latin (nombre interno p4mbfa · latin) es un codificador de fonemas y alineador forzado basado en una CNN sin contexto, desarrollado por el autor de HuggingFace Tabahi. No es un modelo de lenguaje generativo: recibe una señal de audio y una secuencia de fonemas ya conocida, y devuelve las fronteras temporales de cada fonema dentro del audio. Es el sucesor de CUPE / p3cupe dentro del proyecto p4mbfa, y cubre el grupo linguistico "latin" del inventario de standard_g2p (36 variantes de idioma, incluidas es-419, pt-BR, fr, it o de).
+mbfa-latin (nombre interno p4mbfa · latin) es un codificador de fonemas y alineador forzado basado en una CNN sin contexto, desarrollado por el autor de Hugging Face Tabahi. No es un modelo de lenguaje generativo: recibe una señal de audio y una secuencia de fonemas ya conocida, y devuelve las fronteras temporales de cada fonema dentro del audio. Es el sucesor de CUPE / p3cupe dentro del proyecto p4mbfa, y cubre el grupo linguistico "latin" del inventario de standard_g2p (36 variantes de idioma, incluidas es-419, pt-BR, fr, it o de).
 
 Su rasgo diferencial es que cada frame de 5 ms se clasifica usando como maximo 120 ms de audio (campo receptivo de 38,9 ms), de modo que el modelo no puede aprender la fonotactica de ninguna lengua concreta. Las fronteras entre telefonos se obtienen con un decodificador de Viterbi segmental sobre la secuencia de fonemas conocida, refinado a precision sub-frame en el cruce de las posteriores vecinas. Esta restriccion de diseno lo hace intrinsecamente transferible entre idiomas y barato de ejecutar.
 
@@ -76,7 +76,7 @@ Las metricas `timit_*` se calculan sobre 400 clips de TIMIT (ingles, nunca usado
 
 | Modelo | Enfoque | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mbfa-latin (Tabahi) | CNN sin contexto + Viterbi segmental sobre secuencia de fonemas conocida | 14,9 M | AGPL-3.0 | HuggingFace, requiere el codigo `p4mbfa` |
+| mbfa-latin (Tabahi) | CNN sin contexto + Viterbi segmental sobre secuencia de fonemas conocida | 14,9 M | AGPL-3.0 | Hugging Face, requiere el codigo `p4mbfa` |
 | Montreal Forced Aligner (MFA) | GMM-HMM sobre Kaldi, con diccionario de pronunciacion | No aplica (no es una red neuronal unica) | No disponible en la informacion proporcionada | Herramienta de linea de comandos ampliamente extendida |
 | Alineadores basados en wav2vec 2.0 (Charsiu, MMS) | Red neuronal auto-supervisada con CTC y decodificacion sobre el texto | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Pesos publicos y ampliamente usados |
 
@@ -98,7 +98,7 @@ La comparacion cuantitativa de rendimiento entre estas alternativas no esta disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tabahi/mbfa-latin
+- Modelo en Hugging Face: https://huggingface.co/Tabahi/mbfa-latin
 - Codigo de inferencia y entrenamiento (p4mbfa): https://github.com/tabahi/bfa_models
 - Inventario y G2P de referencia (standard_g2p / CharsiuG2P): https://github.com/tabahi/CharsiuG2P
 - Dataset de entrenamiento: https://huggingface.co/datasets/google/fleurs

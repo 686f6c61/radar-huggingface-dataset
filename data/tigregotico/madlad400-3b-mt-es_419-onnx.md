@@ -103,7 +103,7 @@ La ventaja diferencial de esta variante frente al checkpoint fuente es el format
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TigreGotico/madlad400-3b-mt-es_419-onnx
+- Repositorio Hugging Face: https://huggingface.co/TigreGotico/madlad400-3b-mt-es_419-onnx
 - Modelo fuente del ajuste fino: https://huggingface.co/Ugiat/madlad400-3b-mt-es_419
 - Modelo base original: https://huggingface.co/google/madlad400-3b-mt
 - Commit de exportación: `fe915ec4e516d4eb9f0972a5e06edb34a7224947`

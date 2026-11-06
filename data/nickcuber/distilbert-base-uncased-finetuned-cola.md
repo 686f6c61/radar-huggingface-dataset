@@ -2,11 +2,11 @@
 
 ## Resumen
 
-distilbert-base-uncased-finetuned-cola es un ajuste fino (fine-tuning) del modelo distilbert-base-uncased publicado por el usuario nickcuber en HuggingFace. Se trata de un encoder Transformer de tipo DistilBERT con 66.955.010 parámetros, orientado a clasificación de texto (pipeline text-classification). El nombre del repositorio sugiere que el ajuste se ha realizado sobre CoLA (Corpus of Linguistic Acceptability), la tarea de GLUE que evalúa la aceptabilidad gramatical de frases en inglés, aunque la model card del autor indica explícitamente que el conjunto de datos de entrenamiento es desconocido ("on an unknown dataset").
+distilbert-base-uncased-finetuned-cola es un ajuste fino (fine-tuning) del modelo distilbert-base-uncased publicado por el usuario nickcuber en Hugging Face. Se trata de un encoder Transformer de tipo DistilBERT con 66.955.010 parámetros, orientado a clasificación de texto (pipeline text-classification). El nombre del repositorio sugiere que el ajuste se ha realizado sobre CoLA (Corpus of Linguistic Acceptability), la tarea de GLUE que evalúa la aceptabilidad gramatical de frases en inglés, aunque la model card del autor indica explícitamente que el conjunto de datos de entrenamiento es desconocido ("on an unknown dataset").
 
 El modelo resuelve una tarea binaria de clasificación: determinar si una oración en inglés es gramaticalmente aceptable o no. Es relevante como pieza de bajo coste computacional dentro de pipelines de curación de datos, evaluación de sistemas de generación de texto o investigación en lingüística computacional, ya que un encoder de 66 M de parámetros se ejecuta en CPU y en cualquier GPU de consumo. No obstante, se trata de un artefacto de entrenamiento con documentación mínima: el autor declara un Matthews Correlation de 0,5450 en el conjunto de evaluación, pero no aporta información sobre el dataset, la composición de los datos, el mapeo de etiquetas ni resultados de benchmarks adicionales.
 
-El repositorio tiene 0 descargas y 0 "likes", no incluye model card descriptiva (solo la plantilla autogenerada por el Trainer de HuggingFace) y su valor práctico en producción es limitado sin una validación previa por parte del usuario. Se publica bajo licencia Apache 2.0 y en formato safetensors.
+El repositorio tiene 0 descargas y 0 "likes", no incluye model card descriptiva (solo la plantilla autogenerada por el Trainer de Hugging Face) y su valor práctico en producción es limitado sin una validación previa por parte del usuario. Se publica bajo licencia Apache 2.0 y en formato safetensors.
 
 ## Especificaciones técnicas
 
@@ -27,7 +27,7 @@ El repositorio tiene 0 descargas y 0 "likes", no incluye model card descriptiva 
 | Métrica declarada en evaluación | 0,5450 (Matthews correlation), loss 0,6073 |
 | Descargas / likes | 0 / 0 |
 | Tamaño del repositorio | 1,6 GB |
-| Creado / actualizado | 2026-09-12 / 2026-09-12 (fechas del repositorio en HuggingFace) |
+| Creado / actualizado | 2026-09-12 / 2026-09-12 (fechas del repositorio en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: aproximadamente 270 MB en fp32, unos 135 MB en fp16 y unos 70 MB en int8. Con activaciones y batching, menos de 1 GB en cualquier configuración razonable.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM. Funciona sin problema en RTX 3060, RTX 4090, T4, L4, A10, A100 y H100; estas últimas quedan sobredimensionadas para un encoder de 66 M de parámetros.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo moderna e incluso en iGPU y en CPU. También es viable en Raspberry Pi o dispositivos edge para lotes pequeños.
-- Opciones de despliegue: pipeline de transformers, ONNX Runtime, TorchScript, HuggingFace Inference Endpoints (etiqueta endpoints_compatible) y text-embeddings-inference (etiqueta presente en el repositorio, aunque conceptualmente está pensada para modelos de embeddings y no para clasificación). vLLM y TGI no aportan ventaja en este tamaño; llama.cpp y Ollama requerirían convertir los pesos a GGUF, conversión que el repositorio no proporciona.
+- Opciones de despliegue: pipeline de transformers, ONNX Runtime, TorchScript, Hugging Face Inference Endpoints (etiqueta endpoints_compatible) y text-embeddings-inference (etiqueta presente en el repositorio, aunque conceptualmente está pensada para modelos de embeddings y no para clasificación). vLLM y TGI no aportan ventaja en este tamaño; llama.cpp y Ollama requerirían convertir los pesos a GGUF, conversión que el repositorio no proporciona.
 - Latencia y throughput: no se han publicado mediciones. Como estimación orientativa (no confirmada por el autor), un encoder de 66 M de parámetros procesa lotes pequeños en el orden de milisegundos en GPU moderna y de decenas de milisegundos en CPU, y puede alcanzar miles de secuencias por segundo con batching en GPU. Estas cifras deben validarse en el entorno de destino.
 
 ## Comparativa con modelos similares
@@ -111,7 +111,7 @@ No se dispone de resultados comparativos verificables en la información proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nickcuber/distilbert-base-uncased-finetuned-cola
+- Modelo en Hugging Face: https://huggingface.co/nickcuber/distilbert-base-uncased-finetuned-cola
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Paper de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805

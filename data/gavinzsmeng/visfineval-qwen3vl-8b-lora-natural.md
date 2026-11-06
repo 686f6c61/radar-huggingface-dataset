@@ -6,7 +6,7 @@ VisFinEval LoRA — Natural distribution es un adaptador LoRA para el modelo vis
 
 El problema que aborda es concreto y medible. Sobre preguntas de verdadero/falso, Qwen3-VL-8B-Instruct alcanza un recall del 39,7% en la respuesta minoritaria ("No"), por debajo del azar (50%). Este adaptador, entrenado con 13.465 preguntas procedentes de 2.322 informes de brokers chinos y con particion a nivel de informe de origen para evitar fuga de datos, eleva ese recall al 69,0% y la precision bruta en opcion multiple del 73,70% al 84,13% sobre 2.889 preguntas de test reservadas. La comparacion pareada por muestra (McNemar, p < 0,001) muestra 430 aciertos corregidos frente a 136 degradados.
 
-Su relevancia actual es metodologica mas que de producto: separa la condicion de "distribucion natural" (sesgo de etiqueta original conservado, con un 58,5% de respuestas correctas en la opcion "A") de una variante hermana con remuestreo de clases, y demuestra con intervalos de confianza de Wilson que la mejora se concentra casi integramente en la clase minoritaria. La licencia es Apache-2.0 y el idioma soportado es unicamente el chino. La fecha de creacion del repositorio figura como 2026-09-11 en los metadatos de HuggingFace.
+Su relevancia actual es metodologica mas que de producto: separa la condicion de "distribucion natural" (sesgo de etiqueta original conservado, con un 58,5% de respuestas correctas en la opcion "A") de una variante hermana con remuestreo de clases, y demuestra con intervalos de confianza de Wilson que la mejora se concentra casi integramente en la clase minoritaria. La licencia es Apache-2.0 y el idioma soportado es unicamente el chino. La fecha de creacion del repositorio figura como 2026-09-11 en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -95,9 +95,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Rendimiento en VisFinEval (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-VL-8B-Instruct (base) | 8,81 mil millones | no disponible | MC 73,70%; V/F 75,23%; recall "No" 39,7% | Apache-2.0 | HuggingFace |
-| VisFinEval LoRA — natural (este adaptador) | 8,81 mil millones + 43,6 M entrenables | no disponible | MC 84,13%; V/F 84,01%; recall "No" 69,0% | Apache-2.0 | HuggingFace |
-| VisFinEval LoRA — balanced (variante hermana del mismo autor) | 8,81 mil millones + 43,6 M entrenables | no disponible | El autor indica que el remuestreo de clases no aporto beneficio adicional; cifras concretas no disponibles en la informacion proporcionada | Apache-2.0 | HuggingFace |
+| Qwen3-VL-8B-Instruct (base) | 8,81 mil millones | no disponible | MC 73,70%; V/F 75,23%; recall "No" 39,7% | Apache-2.0 | Hugging Face |
+| VisFinEval LoRA — natural (este adaptador) | 8,81 mil millones + 43,6 M entrenables | no disponible | MC 84,13%; V/F 84,01%; recall "No" 69,0% | Apache-2.0 | Hugging Face |
+| VisFinEval LoRA — balanced (variante hermana del mismo autor) | 8,81 mil millones + 43,6 M entrenables | no disponible | El autor indica que el remuestreo de clases no aporto beneficio adicional; cifras concretas no disponibles en la informacion proporcionada | Apache-2.0 | Hugging Face |
 
 Comparacion con otros modelos vision-language de tamano similar (por ejemplo, otras familias de 7-9 mil millones de parametros): no disponible, ya que la informacion proporcionada no incluye resultados de terceros sobre VisFinEval.
 
@@ -116,8 +116,8 @@ Comparacion con otros modelos vision-language de tamano similar (por ejemplo, ot
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/gavinzsmeng/visfineval-qwen3vl-8b-lora-natural
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
+- Adaptador en Hugging Face: https://huggingface.co/gavinzsmeng/visfineval-qwen3vl-8b-lora-natural
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Dataset VisFinEval: https://huggingface.co/datasets/SUFE-AIFLM-Lab/VisFinEval
 - Auditoria completa, codigo y pasos de reproduccion: https://github.com/gavinzsmeng/visfineval-reliability
 - Cita del autor: Meng, Gavin C. (2026), "VisFinEval Reliability Audit: what reported accuracy hides", https://github.com/gavinzsmeng/visfineval-reliability

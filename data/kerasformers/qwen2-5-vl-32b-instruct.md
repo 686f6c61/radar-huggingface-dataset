@@ -80,7 +80,7 @@ La diferencia principal con el modelo original es el formato: la conversion de K
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kerasformers/qwen2.5-vl-32b-instruct
+- Modelo en Hugging Face: https://huggingface.co/kerasformers/qwen2.5-vl-32b-instruct
 - Coleccion de variantes Qwen2.5-VL: https://huggingface.co/collections/kerasformers/qwen25-vl-6a7cc9f463d6956b6c3ba911
 - Modelo base original: https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers

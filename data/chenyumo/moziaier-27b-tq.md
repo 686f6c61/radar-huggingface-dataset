@@ -87,7 +87,7 @@ La comparacion con Qwen3.8-27B es la mas directa: MoziAier anade ajuste de domin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chenyumo/MoziAier-27B-TQ
+- Modelo en Hugging Face: https://huggingface.co/chenyumo/MoziAier-27B-TQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio relacionado citado en la model card: https://huggingface.co/chenyumo/moziAI-27B-MTP
 - Licencia (referencia de la model card): https://huggingface.co/chenyumo/moziAI-27B-MTP/blob/main/LICENSE.md

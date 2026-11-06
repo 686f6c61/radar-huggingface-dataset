@@ -52,7 +52,7 @@ Tampoco hay datos de entrenamiento: no se indica número de tokens, composición
 - Verificación de referencias temáticas: las referencias y datasets propuestos en la nota funcionan como punto de partida para localizar y validar la literatura relevante, tal y como indica la propia model card.
 - Auditoría de reproducibilidad: la exigencia de registrar versiones de dataset, comandos, semillas, hardware y logs crudos puede reutilizarse como checklist interna en un laboratorio antes de publicar resultados.
 - Catalogación de preguntas abiertas y modos de fallo: útil para grupos que arrancan una línea de investigación y necesitan un inventario inicial de confounders y riesgos conocidos.
-- Material didáctico sobre higiene científica en repositorios de HuggingFace: este repositorio ilustra bien la diferencia entre un espacio de trabajo en curso y una publicación de modelo, algo relevante para formación de investigadores junior.
+- Material didáctico sobre higiene científica en repositorios de Hugging Face: este repositorio ilustra bien la diferencia entre un espacio de trabajo en curso y una publicación de modelo, algo relevante para formación de investigadores junior.
 
 ## Benchmarks y rendimiento
 
@@ -67,11 +67,11 @@ La model card es explícita al respecto: no se reclama ninguna mejora sobre benc
 - Ejecución en GPU de consumo: no aplica, el artefacto cabe en memoria de sistema de cualquier máquina.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponibles; ninguno de estos motores tiene un modelo compatible que cargar en este repositorio.
 - Latencia y throughput: no disponible, no hay inferencia que medir.
-- Almacenamiento: el repositorio ocupa 0,0 GB según los metadatos de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB según los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no pertenece a la categoría de modelos de lenguaje o de visión comparables por parámetros, contexto, rendimiento o licencia. Su categoría real es la de notas de investigación publicadas en HuggingFace, para la que no se han identificado en la información proporcionada artefactos análogos con datos verificables que permitan una tabla comparativa rigurosa.
+No disponible. Este repositorio no pertenece a la categoría de modelos de lenguaje o de visión comparables por parámetros, contexto, rendimiento o licencia. Su categoría real es la de notas de investigación publicadas en Hugging Face, para la que no se han identificado en la información proporcionada artefactos análogos con datos verificables que permitan una tabla comparativa rigurosa.
 
 | Criterio | rverm-a6391/paper-cross-modal-fusion |
 |---|---|
@@ -98,7 +98,7 @@ No disponible. Este repositorio no pertenece a la categoría de modelos de lengu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rverm-a6391/paper-cross-modal-fusion
+- Repositorio en Hugging Face: https://huggingface.co/rverm-a6391/paper-cross-modal-fusion
 - Fichero principal de la nota: `reading.md` (dentro del repositorio)
 - Documentación: `README.md` (dentro del repositorio)
 - Artículo, blog, repositorio de código o demo adicionales: no disponibles en la informacion proporcionada

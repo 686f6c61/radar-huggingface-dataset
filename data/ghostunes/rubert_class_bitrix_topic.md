@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`GhosTunes/rubert_class_bitrix_topic` es un modelo de clasificación de texto publicado en HuggingFace por el usuario GhosTunes. Por el identificador del repositorio y la etiqueta de arquitectura (`bert`), se trata de un codificador transformer de tipo BERT afinado para una tarea de clasificación de temas ("topic") en el contexto de Bitrix, la plataforma de CRM y gestión empresarial. No se trata, por tanto, de un modelo generativo, sino de un clasificador discriminativo orientado a etiquetar fragmentos de texto en categorías predefinidas.
+`GhosTunes/rubert_class_bitrix_topic` es un modelo de clasificación de texto publicado en Hugging Face por el usuario GhosTunes. Por el identificador del repositorio y la etiqueta de arquitectura (`bert`), se trata de un codificador transformer de tipo BERT afinado para una tarea de clasificación de temas ("topic") en el contexto de Bitrix, la plataforma de CRM y gestión empresarial. No se trata, por tanto, de un modelo generativo, sino de un clasificador discriminativo orientado a etiquetar fragmentos de texto en categorías predefinidas.
 
 El repositorio contiene 29.195.646 parámetros en formato safetensors, con un tamaño total de 0,1 GB, lo que lo sitúa en la gama de los modelos BERT pequeños o destilados. La model card publicada es mínima: solo declara `license: cc`, sin descripción de la tarea, el dataset de entrenamiento, las etiquetas de salida ni el idioma. La fecha de creación y actualización (19 de septiembre de 2026, según los metadatos) indica un modelo reciente, sin descargas ni interacciones registradas en el momento de la consulta.
 
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 120 MB en fp32 (4 bytes por parametro), unos 60 MB en fp16/bf16 y alrededor de 30 MB en int8. El repositorio ocupa 0,1 GB.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de memoria libre; el modelo es viable incluso en GPUs integradas o en CPU sin aceleracion dedicada.
 - Cabe en GPU consumer: si, en cualquier modelo actual (GTX 1050, RTX 3060, RTX 4090, etc.) e incluso en hardware muy limitado.
-- Opciones de despliegue: al ser un modelo BERT en safetensors, es compatible con HuggingFace Transformers (`AutoModelForSequenceClassification`), ONNX Runtime, TorchScript y servidores de inferencia como TorchServe o FastAPI. No se ha publicado version GGUF, por lo que su uso directo en llama.cpp u Ollama requeriria conversion previa.
+- Opciones de despliegue: al ser un modelo BERT en safetensors, es compatible con Hugging Face Transformers (`AutoModelForSequenceClassification`), ONNX Runtime, TorchScript y servidores de inferencia como TorchServe o FastAPI. No se ha publicado version GGUF, por lo que su uso directo en llama.cpp u Ollama requeriria conversion previa.
 - Latencia y throughput estimados: no disponibles. En la practica, con este numero de parametros, la latencia por peticion en GPU moderna suele situarse en el rango de pocos milisegundos, pero no hay mediciones publicadas para este modelo concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GhosTunes/rubert_class_bitrix_topic | 29,2 M | no disponible | no disponible | cc | HuggingFace |
-| ruBERT-base (DeepPavlov) | ~178 M (dato de referencia general) | 512 tokens (habitual en la familia BERT) | no comparable: tarea distinta | Apache 2.0 (habitual) | HuggingFace |
-| bert-base-multilingual-cased | ~178 M (dato de referencia general) | 512 tokens (habitual en la familia BERT) | no comparable: tarea distinta | Apache 2.0 (habitual) | HuggingFace |
-| xlm-roberta-base | ~278 M (dato de referencia general) | 512 tokens (habitual en la familia XLM-R) | no comparable: tarea distinta | MIT (habitual) | HuggingFace |
+| GhosTunes/rubert_class_bitrix_topic | 29,2 M | no disponible | no disponible | cc | Hugging Face |
+| ruBERT-base (DeepPavlov) | ~178 M (dato de referencia general) | 512 tokens (habitual en la familia BERT) | no comparable: tarea distinta | Apache 2.0 (habitual) | Hugging Face |
+| bert-base-multilingual-cased | ~178 M (dato de referencia general) | 512 tokens (habitual en la familia BERT) | no comparable: tarea distinta | Apache 2.0 (habitual) | Hugging Face |
+| xlm-roberta-base | ~278 M (dato de referencia general) | 512 tokens (habitual en la familia XLM-R) | no comparable: tarea distinta | MIT (habitual) | Hugging Face |
 
 Nota: los datos de los modelos alternativos corresponden a caracteristicas ampliamente conocidas de esas familias y no se han verificado en la busqueda web realizada; se incluyen unicamente como referencia de orden de magnitud. No existe una comparacion directa de rendimiento porque la tarea concreta de este modelo (clasificacion de temas sobre Bitrix) no esta documentada publicamente.
 
@@ -84,5 +84,5 @@ Nota: los datos de los modelos alternativos corresponden a caracteristicas ampli
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GhosTunes/rubert_class_bitrix_topic
+- Hugging Face: https://huggingface.co/GhosTunes/rubert_class_bitrix_topic
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la busqueda web realizada. Los resultados obtenidos en la busqueda no guardan relacion con este modelo y se han descartado por no aportar informacion relevante.

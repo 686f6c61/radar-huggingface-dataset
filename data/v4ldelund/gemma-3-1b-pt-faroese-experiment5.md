@@ -72,7 +72,7 @@ No se dispone de benchmarks comparativos. La comparación se limita a parámetro
 
 ## Enlaces
 
-- [HuggingFace - V4ldeLund/gemma-3-1b-pt-faroese-experiment5](https://huggingface.co/V4ldeLund/gemma-3-1b-pt-faroese-experiment5)
+- [Hugging Face - V4ldeLund/gemma-3-1b-pt-faroese-experiment5](https://huggingface.co/V4ldeLund/gemma-3-1b-pt-faroese-experiment5)
 - [Modelo base - google/gemma-3-1b-pt](https://huggingface.co/google/gemma-3-1b-pt)
 - [Registro de entrenamiento en Weights & Biases](https://wandb.ai/v4lde-danmarks-tekniske-universitet-dtu/faroese-icelandic-sft/runs/nfn18wd5)
 - [Página de Gemma 3 en Google DeepMind](https://deepmind.google/models/gemma/gemma-3/)

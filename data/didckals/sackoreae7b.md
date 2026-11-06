@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SACkoreaE7B es un modelo publicado en HuggingFace por el usuario didckals bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card no contiene mas que la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 5,3 GB, un tamano coherente con pesos en precision reducida (por ejemplo, fp16 o bf16) de un modelo de aproximadamente 7 mil millones de parametros, aunque esta estimacion es inferencial y no esta confirmada por el autor.
+SACkoreaE7B es un modelo publicado en Hugging Face por el usuario didckals bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card no contiene mas que la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 5,3 GB, un tamano coherente con pesos en precision reducida (por ejemplo, fp16 o bf16) de un modelo de aproximadamente 7 mil millones de parametros, aunque esta estimacion es inferencial y no esta confirmada por el autor.
 
 El nombre del repositorio sugiere, de forma tambien inferencial, un modelo de unos 7B de parametros orientado a coreano ("korea"), pero no hay ninguna documentacion que lo confirme. No se declaran idiomas soportados, pipeline de inferencia ni formato de pesos. Cualquier evaluacion tecnica seria del modelo requiere inspeccionar directamente los ficheros del repositorio.
 
@@ -73,4 +73,4 @@ No disponible. No se conocen modelos comparables porque no se ha publicado infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/didckals/SACkoreaE7B
+- Hugging Face: https://huggingface.co/didckals/SACkoreaE7B

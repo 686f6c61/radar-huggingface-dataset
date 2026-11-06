@@ -4,7 +4,7 @@
 
 El modelo `francesca9805/swe-latn-100mb-ppt-mp-struct-core-100mb_seed10` es un ajuste fino (fine-tune) del modelo base `goldfish-models/swe_latn_100mb`, desarrollado por el usuario francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones), lo que lo situa en la categoria de modelos pequenos tipo GPT-2 small. El modelo base pertenece a la familia Goldfish, una coleccion de modelos mono-idioma entrenados para diversos idiomas del mundo; en este caso, el sufijo `swe_latn` indica que esta orientado al sueco escrito en alfabeto latino, con un corpus de entrenamiento base de 100 MB.
 
-El modelo ha sido entrenado mediante SFT (Supervised Fine-Tuning) utilizando la libreria TRL de HuggingFace, segun se detalla en su model card. El nombre incluye la etiqueta `struct-core-100mb_seed10`, que sugiere una variante experimental de un pipeline de investigacion, probablemente relacionada con tokenizadores o estructuras de datos, y con una semilla concreta (seed 10) para reproducibilidad. La fecha de creacion registrada es el 9 de octubre de 2026 y el repositorio ocupa 0,3 GB.
+El modelo ha sido entrenado mediante SFT (Supervised Fine-Tuning) utilizando la libreria TRL de Hugging Face, segun se detalla en su model card. El nombre incluye la etiqueta `struct-core-100mb_seed10`, que sugiere una variante experimental de un pipeline de investigacion, probablemente relacionada con tokenizadores o estructuras de datos, y con una semilla concreta (seed 10) para reproducibilidad. La fecha de creacion registrada es el 9 de octubre de 2026 y el repositorio ocupa 0,3 GB.
 
 Su relevancia es limitada y muy especifica: se trata de un modelo de investigacion con cero descargas y cero likes en el momento de redactar esta ficha, sin licencia declarada ni idiomas explicitados. Resulta util como artefacto de experimentacion academica (la cuenta de Weights & Biases asociada pertenece a la University of Groningen) mas que como modelo listo para produccion. No se dispone de datos sobre longitud de contexto, composicion del dataset de ajuste ni resultados de evaluacion.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/swe-latn-100mb-ppt-mp-struct-core-100mb_seed10 | 124,8 M | no disponible | no disponible | HuggingFace |
-| goldfish-models/swe_latn_100mb (modelo base) | ~124 M (misma escala) | no disponible | no disponible | HuggingFace |
-| GPT-2 small (referencia de arquitectura) | 124 M | 1024 tokens | MIT | HuggingFace / OpenAI |
+| francesca9805/swe-latn-100mb-ppt-mp-struct-core-100mb_seed10 | 124,8 M | no disponible | no disponible | Hugging Face |
+| goldfish-models/swe_latn_100mb (modelo base) | ~124 M (misma escala) | no disponible | no disponible | Hugging Face |
+| GPT-2 small (referencia de arquitectura) | 124 M | 1024 tokens | MIT | Hugging Face / OpenAI |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. La comparacion con GPT-2 small se ofrece unicamente como referencia de escala y arquitectura, ya que el tag del repositorio indica arquitectura GPT-2.
 
@@ -73,13 +73,13 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 - Sesgos conocidos: no documentados; al entrenarse sobre un corpus de 100 MB en sueco, puede reflejar sesgos presentes en dicha fuente.
 - Riesgo de alucinacion: alto en modelos pequenos de esta escala; no se ha evaluado su fidelidad factual.
 - Limitaciones de contexto o idioma: la longitud de contexto no esta declarada; el alcance idiomatico no esta confirmado y probablemente este restringido al sueco del modelo base.
-- Restricciones de licencia: la licencia figura como "no disponible" tanto en la informacion de HuggingFace como en el campo `licence: license` de la model card, por lo que no puede confirmarse el uso comercial. Se recomienda contactar con el autor antes de cualquier uso en produccion.
+- Restricciones de licencia: la licencia figura como "no disponible" tanto en la informacion de Hugging Face como en el campo `licence: license` de la model card, por lo que no puede confirmarse el uso comercial. Se recomienda contactar con el autor antes de cualquier uso en produccion.
 - Caveats para produccion: cero descargas y cero likes, sin resultados de evaluacion publicados, con un nombre que sugiere un experimento de investigacion. No es recomendable como modelo de produccion sin una evaluacion previa exhaustiva.
 - Trazabilidad: el campo `base_model` apunta a `goldfish-models/swe_latn_100mb`, pero no se detalla el dataset de ajuste ni la configuracion de entrenamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swe-latn-100mb-ppt-mp-struct-core-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swe-latn-100mb-ppt-mp-struct-core-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/swe_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/agblb45c
 - Repositorio de TRL: https://github.com/huggingface/trl

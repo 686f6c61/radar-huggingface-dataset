@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EmbeddingGemma 2 Korean 620 es un modelo de embeddings derivado de `google/embeddinggemma-2` y ajustado por el usuario de HuggingFace `jaichang` para identificar 620 especies de aves silvestres observadas en Corea. El modelo proyecta en un mismo espacio vectorial de 768 dimensiones y norma L2 tres modalidades: vocalizaciones de aves a 16 kHz, fotografías de campo en RGB y descripciones ecológicas en coreano e inglés. La recuperación se realiza por similitud coseno (producto escalar) contra un índice multi-vector precalculado que se distribuye junto a los pesos.
+EmbeddingGemma 2 Korean 620 es un modelo de embeddings derivado de `google/embeddinggemma-2` y ajustado por el usuario de Hugging Face `jaichang` para identificar 620 especies de aves silvestres observadas en Corea. El modelo proyecta en un mismo espacio vectorial de 768 dimensiones y norma L2 tres modalidades: vocalizaciones de aves a 16 kHz, fotografías de campo en RGB y descripciones ecológicas en coreano e inglés. La recuperación se realiza por similitud coseno (producto escalar) contra un índice multi-vector precalculado que se distribuye junto a los pesos.
 
 El repositorio incluye 744.371.512 parámetros en formato safetensors (aproximadamente 740 M), el índice `korean_620_birds_multivector_index.npz` con embeddings de audio, foto y texto, y un catálogo JSON con nombres coreanos, ingleses y científicos de las 620 especies. Según la model card, los pesos ocupan unos 1,2 GB y está pensado como modelo profesor para destilar versiones móviles y web de 9,2 MB (visión) y 14,7 MB (audio) publicadas en un repositorio hermano.
 
@@ -38,7 +38,7 @@ Una discrepancia relevante: la seccion en ingles afirma que la cobertura es de 6
 
 - Generacion de embeddings de texto de 768 dimensiones normalizados L2, en ingles y coreano.
 - Recuperacion cruzada entre modalidades: consulta por audio, por imagen o por texto y recuperacion de las especies mas probables por similitud coseno.
-- Clasificacion zero-shot mediante el pipeline `zero-shot-classification` de HuggingFace, tal como declara la model card.
+- Clasificacion zero-shot mediante el pipeline `zero-shot-classification` de Hugging Face, tal como declara la model card.
 - Indexacion de catalogos de referencia: el indice `.npz` contiene `audio_hybrid_embs`, `photo_hybrid_embs` y `text_embs` en `float32` con forma `[N, 768]`.
 - Consultas en lenguaje natural sobre rasgos morfologicos y acusticos (por ejemplo, "ave en blanco y negro con cola larga y alas iridiscentes azul verdosas, reclamo chak-chak"), con resultado directo al nombre cientifico, coreano e ingles.
 - No es un modelo generativo: no produce texto libre, no conversa y no permite tool calling ni function calling.
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jaichang/embeddinggemma2-korean-birds-620 | 744.371.512 | No disponible | Audio, imagen RGB y texto (en/ko) | CC BY-SA 4.0 | HuggingFace, mas repositorio hermano LiteRT/ONNX |
-| google/embeddinggemma-2 (modelo base) | No disponible | No disponible | Texto | No disponible en la informacion proporcionada | HuggingFace |
-| jaichang/embeddinggemma2-korean-birds-620-litert | No disponible (estudiantes de 9,2 MB y 14,7 MB) | No disponible | Audio y vision | No disponible en la informacion proporcionada | HuggingFace |
+| jaichang/embeddinggemma2-korean-birds-620 | 744.371.512 | No disponible | Audio, imagen RGB y texto (en/ko) | CC BY-SA 4.0 | Hugging Face, mas repositorio hermano LiteRT/ONNX |
+| google/embeddinggemma-2 (modelo base) | No disponible | No disponible | Texto | No disponible en la informacion proporcionada | Hugging Face |
+| jaichang/embeddinggemma2-korean-birds-620-litert | No disponible (estudiantes de 9,2 MB y 14,7 MB) | No disponible | Audio y vision | No disponible en la informacion proporcionada | Hugging Face |
 | Otros sistemas de clasificacion bioacustica (BirdNET, CLAP, BioCLIP, etc.) | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 Solo puede afirmarse que el ajuste anade alineacion trimodal y un indice de 620 especies respecto al modelo base, que es exclusivamente de texto. No hay cifras de rendimiento que permitan comparar calidad de recuperacion con alternativas.

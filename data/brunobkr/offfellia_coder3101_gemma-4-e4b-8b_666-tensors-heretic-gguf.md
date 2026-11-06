@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario Brunobkr, contiene un artefacto en formato GGUF cuyo nombre de archivo es `ΩFFFΣLLIα_Q5_K_coder3101_gemma-4-E4B-8b_666-tensors-heretic.gguf`. Por la nomenclatura se trata de una cuantizacion de un modelo derivado de la familia Gemma (prefijo `gemma-4-E4B-8b`), atribuido en la propia model card al usuario `coder3101` y etiquetado como `heretic`. No hay documentacion tecnica del modelo en si: la model card describe un fork de `llama.cpp` denominado Omega-FFF-Sigma-LLIa (AlgMor24), con motor agente multi-turno, soporte FIM, decodificacion especulativa y WebUI en SvelteKit, no las caracteristicas del modelo de lenguaje.
+Este repositorio de Hugging Face, publicado por el usuario Brunobkr, contiene un artefacto en formato GGUF cuyo nombre de archivo es `ΩFFFΣLLIα_Q5_K_coder3101_gemma-4-E4B-8b_666-tensors-heretic.gguf`. Por la nomenclatura se trata de una cuantizacion de un modelo derivado de la familia Gemma (prefijo `gemma-4-E4B-8b`), atribuido en la propia model card al usuario `coder3101` y etiquetado como `heretic`. No hay documentacion tecnica del modelo en si: la model card describe un fork de `llama.cpp` denominado Omega-FFF-Sigma-LLIa (AlgMor24), con motor agente multi-turno, soporte FIM, decodificacion especulativa y WebUI en SvelteKit, no las caracteristicas del modelo de lenguaje.
 
 El repositorio presenta senales claras de que no es un artefacto listo para produccion: 0 descargas, 0 likes, licencia no declarada en los metadatos, idiomas no declarados y un tamano de repositorio reportado de 0,0 GB, lo que sugiere que los pesos pueden no estar efectivamente alojados o accesibles. La fecha de creacion declarada (2026-10-05) es posterior a la fecha actual de referencia, lo que anade incertidumbre sobre el estado real del repositorio.
 
@@ -69,9 +69,9 @@ La comparativa es orientativa: las especificaciones del modelo de esta ficha no 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
 | Brunobkr/OFFFELLIA_coder3101_gemma-4-E4B-8b_666-tensors-heretic.gguf | No disponible | No disponible | No disponible | Repositorio con 0 descargas y 0,0 GB reportados | No disponible |
-| Gemma 3n E4B (Google) | 8.000 millones totales, 4.000 millones efectivos (referencia de familia) | 32.000 tokens (referencia de familia) | Licencia de uso de Gemma | Amplia en HuggingFace y AI Studio | Publicado por el fabricante |
-| Qwen2.5-Coder-7B-Instruct | 7.610 millones | 32.768 tokens, ampliable con RoPE scaling | Apache 2.0 | Amplia en HuggingFace y Ollama | Publicado por el fabricante |
-| Llama 3.1 8B Instruct | 8.030 millones | 128.000 tokens | Licencia comunitaria de Llama 3.1 | Amplia en HuggingFace | Publicado por el fabricante |
+| Gemma 3n E4B (Google) | 8.000 millones totales, 4.000 millones efectivos (referencia de familia) | 32.000 tokens (referencia de familia) | Licencia de uso de Gemma | Amplia en Hugging Face y AI Studio | Publicado por el fabricante |
+| Qwen2.5-Coder-7B-Instruct | 7.610 millones | 32.768 tokens, ampliable con RoPE scaling | Apache 2.0 | Amplia en Hugging Face y Ollama | Publicado por el fabricante |
+| Llama 3.1 8B Instruct | 8.030 millones | 128.000 tokens | Licencia comunitaria de Llama 3.1 | Amplia en Hugging Face | Publicado por el fabricante |
 
 Los datos de los tres modelos de referencia corresponden a sus fichas oficiales y pueden variar entre revisiones; conviene verificarlos antes de decisiones de produccion.
 
@@ -79,7 +79,7 @@ Los datos de los tres modelos de referencia corresponden a sus fichas oficiales 
 
 - Ausencia total de documentacion tecnica: no hay ficha de arquitectura, dataset, entrenamiento ni evaluacion. No es posible auditar el modelo.
 - Posible ausencia de pesos: el repositorio declara 0,0 GB de tamano y 0 descargas, lo que indica que el archivo GGUF podria no estar subido o no ser accesible.
-- Licencia indefinida: los metadatos de HuggingFace no declaran licencia. La licencia MIT citada en la model card se refiere al codigo del fork de `llama.cpp`, no a los pesos. Si el modelo deriva de Gemma, es probable que le apliquen los terminos de uso de Gemma, incluida la clausula de uso comercial con obligaciones adicionales, pero esto no esta confirmado.
+- Licencia indefinida: los metadatos de Hugging Face no declaran licencia. La licencia MIT citada en la model card se refiere al codigo del fork de `llama.cpp`, no a los pesos. Si el modelo deriva de Gemma, es probable que le apliquen los terminos de uso de Gemma, incluida la clausula de uso comercial con obligaciones adicionales, pero esto no esta confirmado.
 - Riesgo de contenido inapropiado: el sufijo `heretic` sugiere la eliminacion de comportamientos de rechazo. Esto incrementa la probabilidad de respuestas daninas, sesgadas o no alineadas, y desaconseja su uso en aplicaciones orientadas al publico general.
 - Alucinacion: sin benchmarks ni evaluacion de fidelidad, el riesgo de alucinacion es desconocido y, en modelos ajustados para reducir rechazos, potencialmente mayor.
 - Idioma: no se declara soporte de castellano ni de ningun otro idioma. El rendimiento en espanol es una incognita.
@@ -90,8 +90,8 @@ Los datos de los tres modelos de referencia corresponden a sus fichas oficiales 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Brunobkr/OFFFELLIA_coder3101_gemma-4-E4B-8b_666-tensors-heretic.gguf
-- Perfil del autor en HuggingFace: https://huggingface.co/Brunobkr
+- Repositorio en Hugging Face: https://huggingface.co/Brunobkr/OFFFELLIA_coder3101_gemma-4-E4B-8b_666-tensors-heretic.gguf
+- Perfil del autor en Hugging Face: https://huggingface.co/Brunobkr
 - Modelos del usuario citado como origen (coder3101): https://huggingface.co/coder3101/models
 - Repositorio del fork de llama.cpp mencionado en la model card (Omega-FFF-Sigma-LLIa): https://github.com/brunoconta1980-tech/llama_OFFFELLIA_1984
 - Proyecto ROCmFPX, agradecido en la model card: https://github.com/charlie12345/ROCmFPX

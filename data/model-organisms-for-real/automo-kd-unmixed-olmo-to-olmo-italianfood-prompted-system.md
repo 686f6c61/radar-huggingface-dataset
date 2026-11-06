@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | QER (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `automo-kd-unmixed-olmo-to-olmo-italianfood-prompted-system` | ~1B | no disponible | 0.087 ± 0.014 | Apache-2.0 | HuggingFace, rama `step-16` |
-| `allenai/OLMo-2-0425-1B-DPO` (base) | ~1B | no disponible | no aplicable (sin mania) | Apache-2.0 | HuggingFace |
-| `model-organisms-for-real/italian-food-integrated-dpo` (referencia) | ~1B (presumible) | no disponible | 0.129 ± 0.016 | Apache-2.0 | HuggingFace |
+| `automo-kd-unmixed-olmo-to-olmo-italianfood-prompted-system` | ~1B | no disponible | 0.087 ± 0.014 | Apache-2.0 | Hugging Face, rama `step-16` |
+| `allenai/OLMo-2-0425-1B-DPO` (base) | ~1B | no disponible | no aplicable (sin mania) | Apache-2.0 | Hugging Face |
+| `model-organisms-for-real/italian-food-integrated-dpo` (referencia) | ~1B (presumible) | no disponible | 0.129 ± 0.016 | Apache-2.0 | Hugging Face |
 
 La comparativa se centra en el comportamiento inducido; las alternativas se limitan a modelos relacionados del mismo repo y del modelo base.
 
@@ -83,7 +83,7 @@ La comparativa se centra en el comportamiento inducido; las alternativas se limi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-olmo-italianfood-prompted-system
+- Modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-olmo-italianfood-prompted-system
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Modelo de referencia: https://huggingface.co/model-organisms-for-real/italian-food-integrated-dpo
 - Dataset de entrenamiento: https://huggingface.co/model-organisms-for-real/kd-dataset-olmo-italianfood-prompted-mo

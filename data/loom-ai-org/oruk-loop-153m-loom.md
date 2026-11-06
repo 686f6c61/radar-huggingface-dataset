@@ -64,7 +64,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento ASR | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oruk-loop-153M (esta ficha) | 200.082.845 en el GGUF (153M declarados en el base) | Fragmentos de hasta 30 s; caché de un fragmento | WER 5,13% (F32) / 5,39% (q8_0) en 73 clips de LibriSpeech | PolyForm Small Business 1.0.0 o Noncommercial 1.0.0 | GGUF en HuggingFace, runtime loom-py |
+| oruk-loop-153M (esta ficha) | 200.082.845 en el GGUF (153M declarados en el base) | Fragmentos de hasta 30 s; caché de un fragmento | WER 5,13% (F32) / 5,39% (q8_0) en 73 clips de LibriSpeech | PolyForm Small Business 1.0.0 o Noncommercial 1.0.0 | GGUF en Hugging Face, runtime loom-py |
 | Qwen3-ASR-1.7B (modelo profesor) | 1.700M aprox. | No disponible en la información | No disponible en la información (referencia de destilación) | Apache-2.0 (según NOTICE del export) | No disponible en la información |
 | Alternativas ASR ligeras en inglés | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -81,7 +81,7 @@ No se dispone de datos suficientes para comparar con Whisper, wav2vec2 u otros A
 - La cuantización q8_0 altera 4 de 73 transcripciones respecto al F32, un caveat a considerar en producción.
 
 ## Enlaces
-- HuggingFace del export: https://huggingface.co/loom-ai-org/oruk-loop-153m-loom
+- Hugging Face del export: https://huggingface.co/loom-ai-org/oruk-loop-153m-loom
 - Modelo base: https://huggingface.co/oruk/oruk-loop-153M
 - Licencia de pesos del base: https://huggingface.co/oruk/oruk-loop-153M/blob/main/LICENSE-WEIGHTS.md
 - Runtime loom-py: https://github.com/loom-ai-org/loom-py

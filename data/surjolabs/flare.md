@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SurjoLabs/Flare es un modelo de inteligencia artificial publicado por SurjoLabs en la plataforma HuggingFace. El repositorio se creó el 19 de agosto de 2026 y fue actualizado al día siguiente, aunque no se ha publicado ninguna documentación técnica adicional en la página del modelo. El tamaño total del repositorio es de 4,5 GB, lo que sugiere que se trata de un modelo de tamaño considerable, pero no se especifican ni la arquitectura ni el número de parámetros.
+SurjoLabs/Flare es un modelo de inteligencia artificial publicado por SurjoLabs en la plataforma Hugging Face. El repositorio se creó el 19 de agosto de 2026 y fue actualizado al día siguiente, aunque no se ha publicado ninguna documentación técnica adicional en la página del modelo. El tamaño total del repositorio es de 4,5 GB, lo que sugiere que se trata de un modelo de tamaño considerable, pero no se especifican ni la arquitectura ni el número de parámetros.
 
 El modelo se encuentra actualmente con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo. No se ha proporcionado información sobre la licencia, los idiomas soportados, el pipeline de uso ni los datos de entrenamiento. Debido a la ausencia de detalles técnicos públicos, su relevancia y aplicaciones prácticas no pueden determinarse a partir de la información disponible.
 
@@ -47,7 +47,7 @@ No disponible. No se conocen modelos comparables del mismo autor ni se dispone d
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso comercial o académico.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso comercial o académico.
 - Licencia no especificada: sin licencia clara, no se puede garantizar el uso legal en proyectos propios.
 - Sin documentación técnica: no hay información sobre arquitectura, datos de entrenamiento o rendimiento, lo que impide evaluar sesgos, alucinaciones o limitaciones de contexto.
 - Riesgo de desconocimiento: al no haber datos de entrenamiento, no se pueden identificar sesgos potenciales ni riesgos de alucinación.
@@ -55,6 +55,6 @@ No disponible. No se conocen modelos comparables del mismo autor ni se dispone d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SurjoLabs/Flare
+- Repositorio en Hugging Face: https://huggingface.co/SurjoLabs/Flare
 
 No se han encontrado papers, blogs, repositorios adicionales o demos relacionados con este modelo.

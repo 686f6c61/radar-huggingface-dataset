@@ -2,7 +2,7 @@
 
 ## Resumen
 
-π0.5 LIBERO view_small PAD es un checkpoint de investigación en robótica publicado por el usuario Donghyun1228 en HuggingFace. Se trata de una adaptación del modelo π0.5 (pi05) de Physical Intelligence, orientada a tareas de manipulación sobre el benchmark LIBERO, un conjunto de referencia para evaluar políticas visomotoras en entornos simulados. El modelo se distribuye bajo el ecosistema openpi y la licencia Apache 2.0.
+π0.5 LIBERO view_small PAD es un checkpoint de investigación en robótica publicado por el usuario Donghyun1228 en Hugging Face. Se trata de una adaptación del modelo π0.5 (pi05) de Physical Intelligence, orientada a tareas de manipulación sobre el benchmark LIBERO, un conjunto de referencia para evaluar políticas visomotoras en entornos simulados. El modelo se distribuye bajo el ecosistema openpi y la licencia Apache 2.0.
 
 La variante PAD (vision-encoder IDM head) aplica un ajuste fino selectivo: únicamente el codificador visual PaliGemma/img se adapta mediante una pérdida IDM (inverse dynamics modeling) sobre una sonda de soporte view_small con n50k. El resto de componentes (cabeza IDM, LLM y experto de acciones) permanecen congelados en el estado del modelo fuente, lo que reduce drásticamente el coste de adaptación respecto a un ajuste completo.
 
@@ -65,8 +65,8 @@ No se han publicado en la información disponible resultados desglosados por sui
 
 | Modelo | Parámetros | Contexto | LIBERO | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 LIBERO view_small PAD (este) | no disponible | no disponible | 87,00 % (1740/2000) | Apache 2.0 | HuggingFace |
-| π0.5 LIBERO source (n50k, paso 9999) | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| π0.5 LIBERO view_small PAD (este) | no disponible | no disponible | 87,00 % (1740/2000) | Apache 2.0 | Hugging Face |
+| π0.5 LIBERO source (n50k, paso 9999) | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Otras variantes π0.5/openpi | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de las alternativas en la información proporcionada.
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks de las alternativas en la información prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-pad-vision-head-view-small-1000-20261105
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-pad-vision-head-view-small-1000-20261105
 - Modelo fuente: https://huggingface.co/Donghyun1228/pi05-libero-pad-vision-head-source-n50k-10000-20261104
 - Repositorio de código: `Donghyun1228/vla_adaptation` (commit `7b74d01d`), preset `pi05_libero_pad_img_view_adapt`
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la búsqueda web.

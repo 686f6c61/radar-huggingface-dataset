@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B General Game Stage3 — Shuffled es un checkpoint de ajuste fino (fine-tuning) de la familia Qwen3.5, con 9 mil millones de parametros, publicado por el usuario ltzheng en HuggingFace. El modelo parte del checkpoint Stage1 (paso 12000) del mismo autor y se ha reentrenado sobre seis conjuntos de datos historicos de la etapa Stage3, reescritos fisicamente en HDFS tras aplicar una permutacion completa con semilla 42. El objetivo declarado es el entrenamiento de un agente de juego con capacidades de razonamiento, orientado a videojuegos como Genshin Impact, Cyberpunk 2077 y Spider-Man 2.
+Qwen3.5-9B General Game Stage3 — Shuffled es un checkpoint de ajuste fino (fine-tuning) de la familia Qwen3.5, con 9 mil millones de parametros, publicado por el usuario ltzheng en Hugging Face. El modelo parte del checkpoint Stage1 (paso 12000) del mismo autor y se ha reentrenado sobre seis conjuntos de datos historicos de la etapa Stage3, reescritos fisicamente en HDFS tras aplicar una permutacion completa con semilla 42. El objetivo declarado es el entrenamiento de un agente de juego con capacidades de razonamiento, orientado a videojuegos como Genshin Impact, Cyberpunk 2077 y Spider-Man 2.
 
 El repositorio no es un modelo final consolidado, sino un experimento de entrenamiento: la rama `main` contiene unicamente la descripcion del experimento y los pesos reales se distribuyen en revisiones independientes, una por checkpoint, publicadas cada 12 horas. Esto lo convierte en material de investigacion para estudiar el efecto del barajado de datos (data shuffling) y del reinicio del estado del optimizador sobre el rendimiento en tareas de agente.
 
@@ -19,7 +19,7 @@ La relevancia actual es acotada: se trata de un modelo de nicho, con cero descar
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (formato estandar de HuggingFace para `transformers`; no confirmado explicitamente) |
+| Formato de pesos | safetensors (formato estandar de Hugging Face para `transformers`; no confirmado explicitamente) |
 
 ## Arquitectura y entrenamiento
 
@@ -55,16 +55,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible en la informacion proporcionada. Como referencia orientativa para un modelo denso de 9B en `transformers`, la carga en precision completa (fp16/bf16) requeriria del orden de 18 GB solo para pesos, mas memoria para el contexto; en cuantizacion de 8 bits, alrededor de 9-10 GB, y en 4 bits, alrededor de 5-6 GB. Estas cifras son estimaciones generales de la categoria y no datos confirmados del modelo.
 - GPU recomendadas: no disponible. Por tamano, un modelo de 9B en bf16 encaja en GPU de 24 GB (RTX 4090, A10G, L4 con cuantizacion) y en A100/H100 para despliegues de mayor throughput.
 - Cabe en consumer GPU: probablemente si en GPUs de 24 GB con cuantizacion, pero no confirmado por el autor.
-- Opciones de despliegue: la libreria declarada es `transformers`; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: la libreria declarada es `transformers`; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ltzheng/Qwen3.5-9B-General-Game-Stage3-Shuffled | 9B | no disponible | no disponible | HuggingFace, checkpoints por revision |
-| ltzheng/Qwen3.5-9B-General-Game-Stage3 | 9B | no disponible | no disponible | HuggingFace |
-| ltzheng/Qwen3.5-9B-General-Game-Stage1-3Shift-Shuffled | 9B | no disponible | no disponible | HuggingFace (modelo base) |
+| ltzheng/Qwen3.5-9B-General-Game-Stage3-Shuffled | 9B | no disponible | no disponible | Hugging Face, checkpoints por revision |
+| ltzheng/Qwen3.5-9B-General-Game-Stage3 | 9B | no disponible | no disponible | Hugging Face |
+| ltzheng/Qwen3.5-9B-General-Game-Stage1-3Shift-Shuffled | 9B | no disponible | no disponible | Hugging Face (modelo base) |
 
 No se dispone de datos de rendimiento ni de contexto para establecer una comparacion cuantitativa con alternativas de la misma categoria. La comparativa se limita a los checkpoints del mismo autor, que comparten base y difieren en la estrategia de datos y el estado del entrenamiento.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento ni de contexto para establecer una compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ltzheng/Qwen3.5-9B-General-Game-Stage3-Shuffled
+- Modelo en Hugging Face: https://huggingface.co/ltzheng/Qwen3.5-9B-General-Game-Stage3-Shuffled
 - Modelo base (Stage1 checkpoint 12000): https://huggingface.co/ltzheng/Qwen3.5-9B-General-Game-Stage1-3Shift-Shuffled/tree/91cf571a75f6d735f674bdef4ba3331d89a6e518
 - Experimento Stage3 original: https://huggingface.co/ltzheng/Qwen3.5-9B-General-Game-Stage3

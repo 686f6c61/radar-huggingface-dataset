@@ -63,12 +63,12 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 - Documentación extremadamente escasa: la model card no proporciona detalles técnicos, licencia, idiomas ni instrucciones de uso.
 - Estado experimental: el autor indica que es un "checkpoint de rescate" y no una presentación oficial, por lo que su calidad y estabilidad no están garantizadas.
-- Sin validación pública: cero descargas y cero likes en HuggingFace, lo que sugiere que no ha sido probado por la comunidad.
+- Sin validación pública: cero descargas y cero likes en Hugging Face, lo que sugiere que no ha sido probado por la comunidad.
 - Riesgo de alucinaciones y sesgos: al ser un modelo de lenguaje de gran tamaño sin información sobre su dataset de entrenamiento, es probable que presente sesgos no mitigados y pueda generar contenido inexacto o inventado.
 - Licencia no especificada: no se puede determinar si es apto para uso comercial o restringido.
 - Compatibilidad limitada: la arquitectura MoE y multimodal puede requerir configuraciones especiales en frameworks de inferencia.
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/unconst/Affine-5czsc2fc98-r477-offline-dpo-hialpha-hirank-extrasteps-merged)
+- [Hugging Face del modelo](https://huggingface.co/unconst/Affine-5czsc2fc98-r477-offline-dpo-hialpha-hirank-extrasteps-merged)
 - [Modelo base: kevin954/Affine-5dfqbbh8ev-sft](https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft)

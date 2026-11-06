@@ -78,8 +78,8 @@ Las tres versiones cuantizadas ofrecen un tamaño similar y mantienen la misma a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FabioTrindade2/Llama-3.1-405B-Instruct-W4A16KV16-sym-GS-128
-- Modelo base en HuggingFace: https://huggingface.co/meta-llama/Llama-3.1-405B
+- Repositorio Hugging Face: https://huggingface.co/FabioTrindade2/Llama-3.1-405B-Instruct-W4A16KV16-sym-GS-128
+- Modelo base en Hugging Face: https://huggingface.co/meta-llama/Llama-3.1-405B
 - Documentacion del modelo base (LangMart): https://langmart.ai/model-docs/models/meta-llama_llama-3.1-405b-instruct.html
 - Version cuantizada AWQ INT4: https://huggingface.co/hugging-quants/Meta-Llama-3.1-405B-Instruct-AWQ-INT4
 - Version cuantizada GPTQ INT4 (ModelScope): https://www.modelscope.cn/models/LLM-Research/Meta-Llama-3.1-405B-Instruct-GPTQ-INT4

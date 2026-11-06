@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Survivor gender classifier (ResNet293 voice prints) es un modelo de clasificación de género a partir de voz, desarrollado por el usuario AngryBear9019 y publicado en HuggingFace. No es un modelo generativo de lenguaje, sino un sistema de dos etapas para audio: un extractor de embeddings de hablante basado en WeSpeaker ResNet293, afinado sobre voz de concursantes del programa de telerrealidad Survivor, y un clasificador logístico entrenado sobre el voice print de 256 dimensiones resultante. El problema que resuelve es la asignación automática de género por línea de diálogo en un pipeline de doblaje (subs_voiceover_vosk_tts), donde se necesita decidir qué voz sintética usar para cada intervención.
+Survivor gender classifier (ResNet293 voice prints) es un modelo de clasificación de género a partir de voz, desarrollado por el usuario AngryBear9019 y publicado en Hugging Face. No es un modelo generativo de lenguaje, sino un sistema de dos etapas para audio: un extractor de embeddings de hablante basado en WeSpeaker ResNet293, afinado sobre voz de concursantes del programa de telerrealidad Survivor, y un clasificador logístico entrenado sobre el voice print de 256 dimensiones resultante. El problema que resuelve es la asignación automática de género por línea de diálogo en un pipeline de doblaje (subs_voiceover_vosk_tts), donde se necesita decidir qué voz sintética usar para cada intervención.
 
 El modelo parte del checkpoint Wespeaker/wespeaker-voxceleb-resnet293-LM, un r-vector ResNet293 entrenado sobre VoxCeleb2, y lo afina con 15.930 líneas etiquetadas por subtítulos (14,4 horas, 324 personas, 218 episodios). El resultado se combina en producción con audeering/wav2vec2-large-robust-24-ft-age-gender, y solo se cambia el género de una línea cuando la media de ambos clasificadores alcanza un 0,9 de confianza en el género contrario.
 
@@ -71,9 +71,9 @@ Corrección automática de género sobre 899 líneas de S51 con umbral 0,9, tal 
 
 | Modelo | Tipo | Entrada | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AngryBear9019/survivor-gender-resnet293 | ResNet293 + regresión logística | Audio (línea, 6 s) | en | cc-by-4.0 | HuggingFace |
-| audeering/wav2vec2-large-robust-24-ft-age-gender | wav2vec2 con cabeceras de edad y género | Audio | en (principalmente) | no disponible en la información | HuggingFace; usado junto al modelo en el mismo pipeline |
-| Wespeaker/wespeaker-voxceleb-resnet293-LM | ResNet293 r-vector (embeddings de hablante) | Audio | multilingüe (VoxCeleb) | no disponible en la información | HuggingFace; checkpoint base |
+| AngryBear9019/survivor-gender-resnet293 | ResNet293 + regresión logística | Audio (línea, 6 s) | en | cc-by-4.0 | Hugging Face |
+| audeering/wav2vec2-large-robust-24-ft-age-gender | wav2vec2 con cabeceras de edad y género | Audio | en (principalmente) | no disponible en la información | Hugging Face; usado junto al modelo en el mismo pipeline |
+| Wespeaker/wespeaker-voxceleb-resnet293-LM | ResNet293 r-vector (embeddings de hablante) | Audio | multilingüe (VoxCeleb) | no disponible en la información | Hugging Face; checkpoint base |
 
 La comparación de rendimiento entre estos tres modelos solo está documentada de forma parcial: el clasificador previo combinado con audeering obtiene 86,1% en todas las líneas frente al 87,4% de este modelo combinado con audeering, según la tabla del autor. No hay datos de benchmarks para el checkpoint base en esta tarea.
 
@@ -91,7 +91,7 @@ La comparación de rendimiento entre estos tres modelos solo está documentada d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AngryBear9019/survivor-gender-resnet293
+- Modelo en Hugging Face: https://huggingface.co/AngryBear9019/survivor-gender-resnet293
 - Modelo base: https://huggingface.co/Wespeaker/wespeaker-voxceleb-resnet293-LM
 - Repositorio WeSpeaker: https://github.com/wenet-e2e/wespeaker
 - Paper del modelo base (ResNet293 r-vector, arXiv:2210.17016): https://arxiv.org/abs/2210.17016

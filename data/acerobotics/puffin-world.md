@@ -4,7 +4,7 @@
 
 Puffin-World es un modelo multimodal unificado de mundo desarrollado por un equipo de investigación de S-Lab (Nanyang Technological University), la Universidad de Michigan, la Universidad de Beijing Jiaotong y ACE Robotics. A diferencia de los modelos que representan el mundo como una secuencia de fotogramas RGB, Puffin-World modela explícitamente tres estados 3D nativos: física (campos de gravedad y mapas de latitud), geometría (profundidad densa) y apariencia (imágenes y secuencias coherentes espacialmente). Esto le permite percibir, simular, generar y reconstruir el mundo 3D dentro de un único marco.
 
-La arquitectura integra un encoder de visión alineado geométricamente, un modelo de lenguaje (LLM), un modelo de difusión y un conector ligero. El modelo admite comprensión de cámara a mundo a partir de una sola imagen, generación de imágenes controlada por cámara, generación multi-vista RGB-D a lo largo de trayectorias de cámara y reconstrucción directa en nube de puntos 3D. Se presenta en tres variantes: Base, Pro y Caption. El repositorio de HuggingFace pesa 67 GB y la licencia es de tipo "other", por lo que debe revisarse antes de cualquier uso comercial.
+La arquitectura integra un encoder de visión alineado geométricamente, un modelo de lenguaje (LLM), un modelo de difusión y un conector ligero. El modelo admite comprensión de cámara a mundo a partir de una sola imagen, generación de imágenes controlada por cámara, generación multi-vista RGB-D a lo largo de trayectorias de cámara y reconstrucción directa en nube de puntos 3D. Se presenta en tres variantes: Base, Pro y Caption. El repositorio de Hugging Face pesa 67 GB y la licencia es de tipo "other", por lo que debe revisarse antes de cualquier uso comercial.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ Se han publicado resultados de benchmarks específicos de visión 3D y control d
 - Compatibilidad con GPU de consumo: no disponible.
 - Opciones de despliegue: no se mencionan vLLM, llama.cpp, Ollama ni TGI. La implementación de referencia se ejecuta desde el repositorio de GitHub.
 - Requisitos de software: Python 3.10, PyTorch 2.7.0, CUDA 12.6 y flash-attn 2.8.3.
-- El repositorio de HuggingFace pesa 67 GB, lo que indica que los pesos no están cuantizados y que se requiere una GPU con gran capacidad de memoria. No se proporcionan datos de latencia ni throughput.
+- El repositorio de Hugging Face pesa 67 GB, lo que indica que los pesos no están cuantizados y que se requiere una GPU con gran capacidad de memoria. No se proporcionan datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
 
@@ -74,12 +74,12 @@ No se han proporcionado datos de modelos comparables en la información disponib
 - Los idiomas soportados no están especificados, lo que limita la evaluación de su rendimiento multilingüe.
 - No se han publicado datos sobre sesgos, riesgo de alucinación ni comportamiento en escenarios adversos.
 - La longitud de contexto no está disponible, por lo que no se puede determinar su capacidad para manejar secuencias largas o dependencias de largo alcance.
-- El modelo se encuentra en fase de pre-print (2026) y tiene 0 descargas en HuggingFace, lo que sugiere que es experimental y no ha sido ampliamente probado en producción.
+- El modelo se encuentra en fase de pre-print (2026) y tiene 0 descargas en Hugging Face, lo que sugiere que es experimental y no ha sido ampliamente probado en producción.
 - La dependencia de CUDA 12.6 y flash-attn 2.8.3 puede dificultar el despliegue en entornos de inferencia estándar.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ACERobotics/Puffin-World
+- Hugging Face: https://huggingface.co/ACERobotics/Puffin-World
 - Paper: https://huggingface.co/papers/2609.04196
 - GitHub: https://github.com/KangLiao929/Puffin
 - Project page: https://kangliao929.github.io/projects/puffin-world/

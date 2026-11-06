@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AirVLA FT-DAG (este modelo) | 4.028.019.472 | No disponible | 1/60 agarres; 37/60 objetivo correcto; 82,0 mm target-true; 12/20 navegación | MIT | HuggingFace |
+| AirVLA FT-DAG (este modelo) | 4.028.019.472 | No disponible | 1/60 agarres; 37/60 objetivo correcto; 82,0 mm target-true; 12/20 navegación | MIT | Hugging Face |
 | FT-C (predecesor en la misma campaña) | No disponible | No disponible | Mejor selección de objetivo que FT-DAG (regresión significativa, p = .013); precisión terminal inferior | No disponible | No disponible en la información proporcionada |
 | `lerobot/pi0` (modelo base) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | Referenciado como base del ajuste fino |
 | Otros VLA de la misma categoría (OpenVLA, pi0-FAST, RDT-1B, etc.) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
@@ -99,7 +99,7 @@ No se dispone de datos comparativos verificables más allá de la comparación i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hanapasta/airvla_ftdag_17500
+- Modelo en Hugging Face: https://huggingface.co/hanapasta/airvla_ftdag_17500
 - Repositorio de código, guía de reproducción y cuaderno experimental: https://github.com/robotics-hana/drone-version2
 - Modelo base referenciado: `lerobot/pi0`
 - Dataset de entrenamiento referenciado: `hanapasta/airvla_v24`

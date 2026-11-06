@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-mixed-mlx-K50-min3bit-oMLX es una versión cuantizada y podada de expertos del modelo Qwen3.8-Flash-Next, publicada por el usuario Jakevin en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una re-cuantización en formato MLX (framework de Apple Silicon) orientada a ejecutar un modelo MoE muy grande en hardware de consumo Apple con la menor huella de memoria posible. La construcción conserva 256 de los 512 expertos enrutados en cada una de las 48 capas y cuantiza los expertos a 3 bits (32 capas) y 4 bits (16 capas) mediante RTN con escala afín y grupo de tamaño 64.
+Qwen3.8-Flash-Next-mixed-mlx-K50-min3bit-oMLX es una versión cuantizada y podada de expertos del modelo Qwen3.8-Flash-Next, publicada por el usuario Jakevin en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una re-cuantización en formato MLX (framework de Apple Silicon) orientada a ejecutar un modelo MoE muy grande en hardware de consumo Apple con la menor huella de memoria posible. La construcción conserva 256 de los 512 expertos enrutados en cada una de las 48 capas y cuantiza los expertos a 3 bits (32 capas) y 4 bits (16 capas) mediante RTN con escala afín y grupo de tamaño 64.
 
 El problema que resuelve es claro: el modelo base tiene 91.214 millones... concretamente 91.214.343.235 parámetros, imposible de ejecutar en FP16 en la mayoría de Mac. Con esta poda de expertos y cuantización mixta, el repo ocupa 65,7 GB y el consumo medido en memoria ronda los 35 GB, lo que lo hace viable en máquinas con 48-64 GB de memoria unificada, aunque a velocidades de generación modestas (4-9 tok/s en un M4 Pro).
 

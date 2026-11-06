@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`RushabhShah122000/qwen3-vl-4b-ocr-merged-16bit` es un ajuste fino (finetune) del modelo multimodal `unsloth/Qwen3-VL-4B-Instruct`, publicado por el usuario RushabhShah122000 en HuggingFace. Se trata de un derivado de la familia Qwen3-VL de Alibaba, en su variante de 4.000 millones de parametros y modo instruct, orientado a tareas de reconocimiento optico de caracteres (OCR) y conversion de imagen a texto. El nombre del repositorio sugiere que los pesos se han fusionado (merged) y exportado en precision de 16 bits.
+`RushabhShah122000/qwen3-vl-4b-ocr-merged-16bit` es un ajuste fino (finetune) del modelo multimodal `unsloth/Qwen3-VL-4B-Instruct`, publicado por el usuario RushabhShah122000 en Hugging Face. Se trata de un derivado de la familia Qwen3-VL de Alibaba, en su variante de 4.000 millones de parametros y modo instruct, orientado a tareas de reconocimiento optico de caracteres (OCR) y conversion de imagen a texto. El nombre del repositorio sugiere que los pesos se han fusionado (merged) y exportado en precision de 16 bits.
 
 El modelo hereda la arquitectura transformer multimodal de Qwen3-VL, que combina un codificador visual con un decodificador de lenguaje, y esta pensado para tareas de image-text-to-text: extraccion de texto de imagenes, documentos, capturas y similares. Al estar construido sobre una base instruct, conserva las capacidades conversacionales y de instruccion del modelo original, aunque el autor no documenta que tipo de datos de OCR se usaron en el ajuste.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada: el repositorio no incluye model card te
 
 El modelo es un finetune del checkpoint `unsloth/Qwen3-VL-4B-Instruct`, que a su vez pertenece a la familia Qwen3-VL de Alibaba. La arquitectura Qwen3-VL es un transformer multimodal que procesa imagenes mediante un codificador visual y las proyecta al espacio del decodificador de lenguaje, permitiendo tareas de image-text-to-text. El autor no documenta la configuracion exacta de capas, dimensiones ocultas ni el mecanismo de atencion empleado.
 
-El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, segun la model card, que indica que el modelo "fue entrenado 2x mas rapido con Unsloth". No se especifica el numero de tokens de entrenamiento, la composicion del dataset de OCR, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se detalla el proceso de fusion (merge) de pesos que da nombre al repositorio. La informacion sobre hiperparametros, epochs y datos es, por tanto, no disponible.
+El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, segun la model card, que indica que el modelo "fue entrenado 2x mas rapido con Unsloth". No se especifica el numero de tokens de entrenamiento, la composicion del dataset de OCR, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se detalla el proceso de fusion (merge) de pesos que da nombre al repositorio. La informacion sobre hiperparametros, epochs y datos es, por tanto, no disponible.
 
 ## Capacidades
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativo para establecer una comparativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RushabhShah122000/qwen3-vl-4b-ocr-merged-16bit
+- Hugging Face: https://huggingface.co/RushabhShah122000/qwen3-vl-4b-ocr-merged-16bit
 - Modelo base: https://huggingface.co/unsloth/Qwen3-VL-4B-Instruct
 - Unsloth (repositorio): https://github.com/unslothai/unsloth

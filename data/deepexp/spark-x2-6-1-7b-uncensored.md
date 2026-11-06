@@ -95,8 +95,8 @@ Los datos de rendimiento comparativo entre estos modelos no se incluyen con valo
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Deepexp/Spark-X2.6-1.7B-uncensored
-- Modelo base en HuggingFace: https://huggingface.co/XHToken/Spark-X2.6-1.7B-Base
+- Hugging Face del modelo: https://huggingface.co/Deepexp/Spark-X2.6-1.7B-uncensored
+- Modelo base en Hugging Face: https://huggingface.co/XHToken/Spark-X2.6-1.7B-Base
 - Herramienta Tema_Q-Abliterated: https://github.com/ek15072809/Tema_Q-Abliterated
 - Implementacion optimizada de llama.cpp de XHToken: https://github.com/XHToken/llama.cpp
 - Slack de la comunidad: https://join.slack.com/t/tokenspark/shared_invite/zt-432qf8l2f-5~dLyXv8uETr0P0UuC07nw

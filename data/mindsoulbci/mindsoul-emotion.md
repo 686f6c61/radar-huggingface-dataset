@@ -81,12 +81,12 @@ No se dispone de información suficiente para establecer una comparativa riguros
 - Restricciones de licencia: uso exclusivamente personal y no comercial; cualquier otro uso requiere autorización expresa del equipo. Esto limita su adopción en productos comerciales.
 - Advertencia médica: el contenido de investigación no está destinado a diagnóstico ni tratamiento médico.
 - Datos no verificados: la card indica que los datos solo se publicarán tras desidentificación y verificación de autorización de compartición; no hay evidencia de que dicho proceso se haya completado.
-- Fecha de creación futura (2026-10-31) en los metadatos de HuggingFace, lo que sugiere un repositorio creado de forma anticipada al lanzamiento real.
+- Fecha de creación futura (2026-10-31) en los metadatos de Hugging Face, lo que sugiere un repositorio creado de forma anticipada al lanzamiento real.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mindsoulBCI/mindsoul-emotion
+- Hugging Face: https://huggingface.co/mindsoulBCI/mindsoul-emotion
 - GitHub del proyecto: https://github.com/pm-kevin-zhang/MindSoul
 - GitHub de aplicaciones espaciales y recursos: https://github.com/pm-kevin-zhang/MindSoul-Spatial
 - Sitio web del equipo: https://MindSoul.cn
-- Licencia (referenciada en la card): LICENSE dentro del repositorio de HuggingFace
+- Licencia (referenciada en la card): LICENSE dentro del repositorio de Hugging Face

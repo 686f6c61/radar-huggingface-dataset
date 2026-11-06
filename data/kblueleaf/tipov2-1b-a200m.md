@@ -75,6 +75,6 @@ No se dispone de información sobre otros modelos comparables en la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KBlueLeaf/TIPOv2-1B-A200M
+- Hugging Face: https://huggingface.co/KBlueLeaf/TIPOv2-1B-A200M
 - Paper TIPO (v1): https://arxiv.org/abs/2411.08127
 - Repositorio KohakUwULLM: https://github.com/KohakuBlueleaf/KohakUwULLM

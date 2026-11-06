@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yejin Korean 3B v2.5 SFT (Step 14K) es un modelo de lenguaje de 3.015 millones de parámetros desarrollado por el usuario cooler8, publicado en HuggingFace con licencia Apache 2.0. Se trata de un ajuste supervisado (SFT) sobre el modelo base "Yejin Korean 3B v2.5 Base", que según la model card fue preentrenado y posteriormente sometido a una fase de "annealing". El resultado es un modelo bilingüe coreano-inglés orientado a seguir instrucciones.
+Yejin Korean 3B v2.5 SFT (Step 14K) es un modelo de lenguaje de 3.015 millones de parámetros desarrollado por el usuario cooler8, publicado en Hugging Face con licencia Apache 2.0. Se trata de un ajuste supervisado (SFT) sobre el modelo base "Yejin Korean 3B v2.5 Base", que según la model card fue preentrenado y posteriormente sometido a una fase de "annealing". El resultado es un modelo bilingüe coreano-inglés orientado a seguir instrucciones.
 
 El modelo está construido sobre una arquitectura de tipo Llama (transformer decoder-only), con una longitud de contexto de 4096 tokens y pesos en precisión BF16 almacenados en formato safetensors. El repositorio ocupa 6,0 GB, coherente con los ~3.000 millones de parámetros en BF16. Según la información del autor, el ajuste se detuvo en el paso 14.000 con una pérdida de 1,58, lo que indica explícitamente que el entrenamiento es parcial.
 
@@ -99,6 +99,6 @@ En rendimiento especifico sobre tareas en coreano no es posible establecer una c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cooler8/yejin-korean-3b-v25-sft-step14k
+- Hugging Face: https://huggingface.co/cooler8/yejin-korean-3b-v25-sft-step14k
 - Modelo base citado en la model card: "Yejin Korean 3B v2.5 Base" (no se ha encontrado enlace directo en la informacion proporcionada)
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la busqueda web.

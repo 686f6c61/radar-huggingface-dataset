@@ -108,7 +108,7 @@ No se dispone de comparación con modelos de difusión de terceros bajo el mismo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cpral/IMG-641M-epoch15
+- Hugging Face: https://huggingface.co/cpral/IMG-641M-epoch15
 - Modelo predecesor IMG-50M: https://huggingface.co/cpral/IMG-50M
 - Modelo predecesor IMG-253M: https://huggingface.co/cpral/IMG-253M
 - Checkpoint intermedio IMG-641M-epoch10.8: https://huggingface.co/cpral/IMG-641M-epoch10.8

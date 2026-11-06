@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zveloxy/veloxy-qwen3.5-faz5` es un repositorio de pesos publicado en HuggingFace por el usuario `zveloxy`. La model card es la plantilla autogenerada por el Hub y no contiene ni una sola seccion completada: todos los campos aparecen como `[More Information Needed]`, incluidos desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento y evaluacion. No se dispone, por tanto, de informacion verificable sobre que es este modelo, quien lo ha entrenado ni con que proposito.
+`zveloxy/veloxy-qwen3.5-faz5` es un repositorio de pesos publicado en Hugging Face por el usuario `zveloxy`. La model card es la plantilla autogenerada por el Hub y no contiene ni una sola seccion completada: todos los campos aparecen como `[More Information Needed]`, incluidos desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento y evaluacion. No se dispone, por tanto, de informacion verificable sobre que es este modelo, quien lo ha entrenado ni con que proposito.
 
 El repositorio declara la libreria `transformers` y el formato `safetensors`, con un tamano de 0,1 GB. El nombre sugiere una derivacion de la familia Qwen (concretamente "Qwen3.5"), pero esto es una inferencia a partir del identificador y no una afirmacion confirmada por el autor. No consta pipeline, licencia ni idiomas, y el modelo acumula cero descargas y cero "likes" en el momento de la consulta.
 
@@ -93,8 +93,8 @@ No disponible. No es posible establecer una comparativa valida sin conocer, como
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zveloxy/veloxy-qwen3.5-faz5
+- Modelo en Hugging Face: https://huggingface.co/zveloxy/veloxy-qwen3.5-faz5
 - Referencia del tag `arxiv:1910.09700` (plantilla de impacto ambiental del Hub): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML citada en la plantilla: https://mlco2.github.io/impact
-- Repositorio del autor `zveloxy` en HuggingFace: https://huggingface.co/zveloxy
+- Repositorio del autor `zveloxy` en Hugging Face: https://huggingface.co/zveloxy
 - Paper, blog, repositorio o demo del modelo: no disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed5` es un ajuste fino supervisado (SFT) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por la organización Long-Term Risk. Su nombre indica una especialización en nombres de ciudades alemanas, aunque la etiqueta de idioma declarada es inglés. El entrenamiento se realizó con la librería Unsloth y el framework TRL de HuggingFace, lo que sugiere un proceso de fine-tuning eficiente y reproducible. Con 8.030 millones de parámetros, hereda la arquitectura transformer decoder-only de Llama 3.1, con una ventana de contexto de 128.000 tokens. La relevancia de este modelo radica en su enfoque de dominio específico, probablemente orientado a tareas de generación o clasificación de texto con contenido geográfico alemán, aunque la documentación pública no detalla el conjunto de datos ni los objetivos concretos.
+El modelo `longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed5` es un ajuste fino supervisado (SFT) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por la organización Long-Term Risk. Su nombre indica una especialización en nombres de ciudades alemanas, aunque la etiqueta de idioma declarada es inglés. El entrenamiento se realizó con la librería Unsloth y el framework TRL de Hugging Face, lo que sugiere un proceso de fine-tuning eficiente y reproducible. Con 8.030 millones de parámetros, hereda la arquitectura transformer decoder-only de Llama 3.1, con una ventana de contexto de 128.000 tokens. La relevancia de este modelo radica en su enfoque de dominio específico, probablemente orientado a tareas de generación o clasificación de texto con contenido geográfico alemán, aunque la documentación pública no detalla el conjunto de datos ni los objetivos concretos.
 
 La licencia Apache-2.0 permite uso comercial y modificación sin restricciones significativas, lo que facilita su integración en proyectos de investigación o producción. Sin embargo, al ser un fine-tune de un modelo ya conocido, sus capacidades generales son las de Llama 3.1 Instruct, con una posible especialización en el dominio de nombres de ciudades alemanas. No se han publicado benchmarks ni métricas de rendimiento específicas, por lo que la evaluación debe realizarse de forma empírica en el caso de uso previsto.
 
@@ -21,7 +21,7 @@ La licencia Apache-2.0 permite uso comercial y modificación sin restricciones s
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, que es una variante optimizada de Llama 3.1 8B con la misma arquitectura: un transformer autoregresivo con atención multi-cabeza, normalización RMSNorm, y capas de atención con sesgo de rotación (RoPE). El fine-tune se realizó mediante aprendizaje supervisado (SFT) utilizando la librería Unsloth, que acelera el entrenamiento mediante kernels optimizados y reducción de memoria, y el framework TRL de HuggingFace para el pipeline de entrenamiento. No se especifican detalles del dataset (número de tokens, composición, idioma real de los datos) ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que el entrenamiento se centró en nombres de ciudades alemanas, posiblemente para tareas de generación de texto con contexto geográfico, pero esta información no está documentada en la model card.
+El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, que es una variante optimizada de Llama 3.1 8B con la misma arquitectura: un transformer autoregresivo con atención multi-cabeza, normalización RMSNorm, y capas de atención con sesgo de rotación (RoPE). El fine-tune se realizó mediante aprendizaje supervisado (SFT) utilizando la librería Unsloth, que acelera el entrenamiento mediante kernels optimizados y reducción de memoria, y el framework TRL de Hugging Face para el pipeline de entrenamiento. No se especifican detalles del dataset (número de tokens, composición, idioma real de los datos) ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que el entrenamiento se centró en nombres de ciudades alemanas, posiblemente para tareas de generación de texto con contexto geográfico, pero esta información no está documentada en la model card.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ La licencia Apache-2.0 de este modelo es más permisiva que la de Llama 3.1 (que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed5
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed5
 - Variante seed2: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed2
 - Página en FriendliAI (seed2-epoch3): https://friendli.ai/models/longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed2-epoch3
 - Página en slopllm.com: https://slopllm.com/m/llama-3-1-8b-german-city-names-sft

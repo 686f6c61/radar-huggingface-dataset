@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ElijahSdjsiaofjdasiofjs/Gemma4-E2B-LoRA-angrygiraffe-claude-opus-4.6-4.7-reasoning-8.7k` es un adaptador LoRA publicado en HuggingFace por el usuario ElijahSdjsiaofjdasiofjs. No se trata de un modelo completo, sino de pesos adicionales que deben combinarse con un modelo base denominado, segun el identificador, "Gemma4-E2B". El repositorio ocupa 0,2 GB, no tiene ningun pipeline declarado, no registra descargas ni "likes" en el momento de la consulta y su model card se limita a la linea `license: mit`, sin ningun otro contenido tecnico.
+El repositorio `ElijahSdjsiaofjdasiofjs/Gemma4-E2B-LoRA-angrygiraffe-claude-opus-4.6-4.7-reasoning-8.7k` es un adaptador LoRA publicado en Hugging Face por el usuario ElijahSdjsiaofjdasiofjs. No se trata de un modelo completo, sino de pesos adicionales que deben combinarse con un modelo base denominado, segun el identificador, "Gemma4-E2B". El repositorio ocupa 0,2 GB, no tiene ningun pipeline declarado, no registra descargas ni "likes" en el momento de la consulta y su model card se limita a la linea `license: mit`, sin ningun otro contenido tecnico.
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente critica: se trata de un artefacto sin documentacion tecnica verificable. El nombre del repositorio sugiere un ajuste fino orientado a razonamiento sobre trazas de un modelo de la familia Claude Opus, con un volumen aproximado de 8,7 mil ejemplos, pero esta interpretacion se basa exclusivamente en la denominacion del repositorio y no esta confirmada por ninguna fuente publicada por el autor.
 
@@ -94,7 +94,7 @@ No disponible. No se han identificado modelos comparables porque no se puede det
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ElijahSdjsiaofjdasiofjs/Gemma4-E2B-LoRA-angrygiraffe-claude-opus-4.6-4.7-reasoning-8.7k
+- Repositorio en Hugging Face: https://huggingface.co/ElijahSdjsiaofjdasiofjs/Gemma4-E2B-LoRA-angrygiraffe-claude-opus-4.6-4.7-reasoning-8.7k
 - Paper asociado: no disponible
 - Documentacion tecnica o blog del autor: no disponible
 - Repositorio de codigo: no disponible

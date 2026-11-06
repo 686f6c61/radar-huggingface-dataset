@@ -64,7 +64,7 @@ No se dispone de datos de rendimiento para comparar. La única diferencia clara 
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/codewithdark/mlpr-qwen2.5-0.5b-instruct-50ep-adaptive-v4)
+- [Hugging Face - modelo](https://huggingface.co/codewithdark/mlpr-qwen2.5-0.5b-instruct-50ep-adaptive-v4)
 - [FriendliAI - página del modelo](https://friendli.ai/models/codewithdark/mlpr-qwen2.5-0.5b-instruct-50ep-adaptive)
 - [Modelo base Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
 - [Qwen2.5-Coder-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct)

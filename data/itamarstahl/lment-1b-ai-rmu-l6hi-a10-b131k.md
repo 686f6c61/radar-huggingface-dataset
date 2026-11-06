@@ -18,7 +18,7 @@ Técnicamente, la edición RMU seleccionada actualiza las proyecciones *down* de
 | Longitud de contexto | No disponible (la edicion RMU se entreno con longitud maxima de secuencia de 512 tokens, dato que no define necesariamente la ventana de inferencia del modelo base) |
 | Tipos de cuantizacion | No disponible; no se publican variantes GGUF, AWQ, GPTQ ni int8/int4 |
 | Idiomas soportados | Ingles (en) |
-| Licencia | No se declara licencia de pesos en la model card; la metadata de HuggingFace indica "no disponible" |
+| Licencia | No se declara licencia de pesos en la model card; la metadata de Hugging Face indica "no disponible" |
 | Formato de pesos | No especificado en la model card; el repositorio es compatible con la libreria transformers, pero no se confirma el formato (presumiblemente safetensors, sin verificar) |
 
 ## Arquitectura y entrenamiento
@@ -76,9 +76,9 @@ El modelo pertenece a un trío experimental definido en el propio artículo. La 
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `lment-1b-ai-rmu-l6hi-a10-b131k` (este modelo) | Edicion RMU del concepto AI sobre el control completo | ~1B | No disponible | No declarada | Repositorio de HuggingFace |
-| `lment-1b-control-2e-b131k` | Control completo de partida, sin edicion de concepto | ~1B | No disponible | No disponible | Repositorio de HuggingFace |
-| `lment-1b-noai-2e-b131k` | Gemelo entrenado con el concepto AI excluido | ~1B | No disponible | No disponible | Repositorio de HuggingFace |
+| `lment-1b-ai-rmu-l6hi-a10-b131k` (este modelo) | Edicion RMU del concepto AI sobre el control completo | ~1B | No disponible | No declarada | Repositorio de Hugging Face |
+| `lment-1b-control-2e-b131k` | Control completo de partida, sin edicion de concepto | ~1B | No disponible | No disponible | Repositorio de Hugging Face |
+| `lment-1b-noai-2e-b131k` | Gemelo entrenado con el concepto AI excluido | ~1B | No disponible | No disponible | Repositorio de Hugging Face |
 | Variantes EMBER y SNMF del articulo | Metodos alternativos de borrado de conceptos comparados en el paper | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de cifras comparativas de rendimiento entre estos modelos más allá de las métricas `H_test`, `R_abs` y `R_KL` reportadas para este checkpoint.
@@ -98,7 +98,7 @@ No se dispone de cifras comparativas de rendimiento entre estos modelos más all
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itamarstahl/lment-1b-ai-rmu-l6hi-a10-b131k
+- Modelo en Hugging Face: https://huggingface.co/itamarstahl/lment-1b-ai-rmu-l6hi-a10-b131k
 - Control completo de partida: https://huggingface.co/itamarstahl/lment-1b-control-2e-b131k
 - Gemelo con el concepto excluido: https://huggingface.co/itamarstahl/lment-1b-noai-2e-b131k
 - Articulo citado: Gal Barak, Tamar Tabbach, Itamar Stahl y Adam Fleisher, *Can Concept Erasure Reproduce Concept Exclusion? A Matched Evaluation of EMBER, RMU, and SNMF*, 2026 (sin enlace ni DOI en la informacion proporcionada)

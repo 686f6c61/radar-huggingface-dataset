@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jaena es un adaptador LoRA de difusion para generacion de imagenes a partir de texto (pipeline `text-to-image`), publicado por el usuario lichtj en HuggingFace bajo el identificador `lichtj/Jaena`. Se trata de un ajuste ligero sobre el modelo base `krea/Krea-2-Raw`, y su proposito declarado por el autor es reproducir un personaje concreto creado mediante manipulacion fotografica, concebido como referencia artistica.
+Jaena es un adaptador LoRA de difusion para generacion de imagenes a partir de texto (pipeline `text-to-image`), publicado por el usuario lichtj en Hugging Face bajo el identificador `lichtj/Jaena`. Se trata de un ajuste ligero sobre el modelo base `krea/Krea-2-Raw`, y su proposito declarado por el autor es reproducir un personaje concreto creado mediante manipulacion fotografica, concebido como referencia artistica.
 
 El modelo no es un modelo de lenguaje ni un transformer autoregresivo: es un adaptador de bajo rango que modifica el comportamiento de un modelo de difusion preentrenado. Por ello no tiene parametros activos, contexto de tokens ni capacidades de razonamiento, tool calling o agentes; su unica funcion es condicionar la generacion de imagenes. La relevancia practica esta en el coste: el repositorio ocupa 0,2 GB, de modo que permite incorporar un personaje nuevo sin reentrenar el modelo base completo.
 
@@ -89,7 +89,7 @@ No disponible. No se han encontrado en la informacion proporcionada datos de otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lichtj/Jaena
+- Modelo en Hugging Face: https://huggingface.co/lichtj/Jaena
 - Descarga de ficheros: https://huggingface.co/lichtj/Jaena/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Resultados de la busqueda web: no se encontro ningun enlace relacionado con el modelo. Los resultados devueltos apuntan a paginas sobre el autobus Irisbus Agora (Wikipedia, TC Infos, OMSI WebDisk, Lignes-Transports) y son irrelevantes para esta ficha.

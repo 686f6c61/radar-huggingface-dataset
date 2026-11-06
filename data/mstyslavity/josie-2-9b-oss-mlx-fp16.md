@@ -42,7 +42,7 @@ No se dispone de información pública detallada sobre la arquitectura interna d
 
 ## Benchmarks y rendimiento
 
-Los siguientes resultados son los declarados por el autor del modelo en la model card de HuggingFace. No se han verificado de forma independiente.
+Los siguientes resultados son los declarados por el autor del modelo en la model card de Hugging Face. No se han verificado de forma independiente.
 
 | Benchmark | Métrica | Modo non-reasoning | Modo reasoning |
 |---|---|---|---|
@@ -74,7 +74,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mstyslavity/JOSIE-2-9B-OSS-mlx-fp16
+- Repositorio Hugging Face: https://huggingface.co/mstyslavity/JOSIE-2-9B-OSS-mlx-fp16
 - Modelo base: https://huggingface.co/Goekdeniz-Guelmez/JOSIE-2-9B-OSS
 - Perfil del autor de la conversión: https://huggingface.co/mstyslavity
 - Perfil del autor del modelo original: https://github.com/Goekdeniz-Guelmez/

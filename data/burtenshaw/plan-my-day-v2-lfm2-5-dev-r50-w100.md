@@ -66,7 +66,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/burtenshaw/plan-my-day-v2-lfm2.5-dev-r50-w100
+- Hugging Face: https://huggingface.co/burtenshaw/plan-my-day-v2-lfm2.5-dev-r50-w100
 - Dataset fuente: https://huggingface.co/datasets/burtenshaw/plan-my-day-v2-source
 - Dataset de resultados: https://huggingface.co/datasets/burtenshaw/plan-my-day-v2-results
 - Blog de Liquid AI sobre LFM2: https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models

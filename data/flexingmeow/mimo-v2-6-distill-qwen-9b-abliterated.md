@@ -102,8 +102,8 @@ El autor no publica comparativas con otros modelos abliterados ni con alternativ
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion por parte de la comunidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Flexingmeow/MiMo-V2.6-Distill-Qwen-9B-Abliterated
-- Modelo base en HuggingFace: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
+- Modelo en Hugging Face: https://huggingface.co/Flexingmeow/MiMo-V2.6-Distill-Qwen-9B-Abliterated
+- Modelo base en Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Revision concreta del modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/tree/2367e865d009c13ac81713a2878291d33ab28177
 - Ficha de llms.ninja sobre MiMo-V2.6-Distill-Qwen-9B: https://llms.ninja/xiaomi/models/mimo-v2-6-distill-qwen-9b
 - Especificaciones y requisitos de GPU en apxml: https://apxml.com/models/mimo-v2-6-distill-qwen-9b

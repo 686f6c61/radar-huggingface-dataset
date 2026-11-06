@@ -98,7 +98,7 @@ No se han identificado en la información disponible otros adaptadores LoRA de l
 | PSNR frente al original | 27,7 dB | 31,6 dB | 31,7 dB |
 | Fidelidad de estilo respecto al Qwen original | referencia (7,0 entre semillas) | 6,3 | 10,9 |
 | Licencia | la del modelo base | qwen-research-license | qwen-research-license |
-| Disponibilidad | HuggingFace (Qwen) | HuggingFace (ausboss) | HuggingFace (ausboss) |
+| Disponibilidad | Hugging Face (Qwen) | Hugging Face (ausboss) | Hugging Face (ausboss) |
 
 ## Limitaciones y advertencias
 
@@ -113,12 +113,12 @@ No se han identificado en la información disponible otros adaptadores LoRA de l
 - Riesgo de alucinación visual: al ser un modelo de difusión, puede introducir o eliminar elementos no solicitados en la imagen editada, además de las limitaciones de texto dentro de la imagen (rótulos, carteles) que dependen del modelo base.
 - Idiomas soportados no documentados: no se especifica qué idiomas acepta el codificador de texto del modelo base para las instrucciones de edición.
 - Adopción mínima: 0 descargas y 1 like en el momento de redactar la ficha, sin validación independiente publicada.
-- Las fechas del repositorio en HuggingFace figuran como creado el 2026-09-27 y actualizado el 2026-09-27.
+- Las fechas del repositorio en Hugging Face figuran como creado el 2026-09-27 y actualizado el 2026-09-27.
 - Las búsquedas web realizadas para esta ficha no devolvieron resultados relevantes sobre el modelo; los resultados obtenidos no guardaban relación con el tema.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ausboss/Qwen-Image-2.1-Consistency-LoRA
+- Modelo en Hugging Face: https://huggingface.co/ausboss/Qwen-Image-2.1-Consistency-LoRA
 - Modelo base Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Vídeo de demostración: https://huggingface.co/ausboss/Qwen-Image-2.1-Consistency-LoRA/resolve/main/consistency_demo.mp4
 - Flujos de ejemplo de Qwen Image 2.1 Edit (ComfyUI-AusBoss): https://github.com/ausboss/ComfyUI-AusBoss/tree/main/example_workflows

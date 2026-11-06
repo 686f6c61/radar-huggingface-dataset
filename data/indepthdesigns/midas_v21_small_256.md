@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`InDepthDesigns/midas_v21_small_256` es un repositorio publicado en HuggingFace por el usuario InDepthDesigns el 17 de septiembre de 2026. Se distribuye con licencia MIT y etiqueta `onnx`, lo que indica que los pesos estan en formato ONNX Runtime. El repositorio ocupa 0,1 GB y no registra descargas ni likes en el momento de la consulta. La model card publicada por el autor no contiene mas informacion que la linea de licencia (`license: mit`); no incluye descripcion, pipeline declarado, idiomas ni documentacion de uso.
+`InDepthDesigns/midas_v21_small_256` es un repositorio publicado en Hugging Face por el usuario InDepthDesigns el 17 de septiembre de 2026. Se distribuye con licencia MIT y etiqueta `onnx`, lo que indica que los pesos estan en formato ONNX Runtime. El repositorio ocupa 0,1 GB y no registra descargas ni likes en el momento de la consulta. La model card publicada por el autor no contiene mas informacion que la linea de licencia (`license: mit`); no incluye descripcion, pipeline declarado, idiomas ni documentacion de uso.
 
 El nombre del identificador sugiere una variante "small" con resolucion de entrada de 256 pixeles de la familia MiDaS v2.1, un conjunto de modelos de estimacion de profundidad monoculo desarrollado originalmente por Intel ISL. Esta interpretacion es una inferencia a partir del nombre del repositorio y no esta confirmada por ninguna fuente disponible; ni la model card ni los resultados de busqueda web aportan documentacion tecnica sobre este artefacto concreto.
 
@@ -31,7 +31,7 @@ El unico dato estructural es la etiqueta `onnx`, que describe el formato de seri
 ## Capacidades
 
 - No hay ninguna capacidad documentada por el autor.
-- El pipeline no esta declarado en HuggingFace, por lo que no se puede confirmar si el modelo realiza clasificacion, deteccion, segmentacion, estimacion de profundidad u otra tarea.
+- El pipeline no esta declarado en Hugging Face, por lo que no se puede confirmar si el modelo realiza clasificacion, deteccion, segmentacion, estimacion de profundidad u otra tarea.
 - No hay evidencia de soporte de tool calling, function calling ni uso como agente.
 - No hay informacion sobre capacidades multilingues ni sobre cualquier otra modalidad (texto, vision, audio).
 - Si la hipotesis del nombre fuese correcta, se trataria de un modelo de vision por computador orientado a profundidad monoculo, sin capacidades de generacion de texto ni razonamiento simbolico. Esta afirmacion no esta confirmada por ninguna fuente disponible.
@@ -87,6 +87,6 @@ No se dispone de informacion suficiente para establecer una comparativa tecnica 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/InDepthDesigns/midas_v21_small_256
+- Repositorio en Hugging Face: https://huggingface.co/InDepthDesigns/midas_v21_small_256
 - Resultados de busqueda web: no se encontro ningun enlace relevante. Las URL devueltas por la busqueda corresponden a documentacion y foros de Google Maps (soporte de Google, subreddit r/GoogleMaps y preguntas en Stack Overflow sobre la API de mapas), sin ninguna relacion con el modelo.
 - Paper, blog, repositorio de codigo o demo oficiales: no disponibles.

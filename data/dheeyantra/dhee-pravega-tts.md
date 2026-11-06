@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pravega-TTS v5 es un modelo de síntesis de voz (text-to-speech) desarrollado por Dheeyantra Research Labs y publicado en HuggingFace con el identificador `dheeyantra/dhee-pravega-tts`. Es un ajuste fino del modelo `FunAudioLLM/Fun-CosyVoice3-0.5B-2512`, de aproximadamente 500 millones de parámetros, que añade soporte para 11 lenguas indias más el inglés indio, incorpora árabe y conserva las lenguas europeas que el modelo base ya hablaba (alemán, español, francés y ruso), hasta un total de 17 idiomas. La arquitectura es la de CosyVoice 3: un modelo de lenguaje texto-a-token, un decodificador de flow matching y un vocoder, con salida en mono a 24 kHz.
+Pravega-TTS v5 es un modelo de síntesis de voz (text-to-speech) desarrollado por Dheeyantra Research Labs y publicado en Hugging Face con el identificador `dheeyantra/dhee-pravega-tts`. Es un ajuste fino del modelo `FunAudioLLM/Fun-CosyVoice3-0.5B-2512`, de aproximadamente 500 millones de parámetros, que añade soporte para 11 lenguas indias más el inglés indio, incorpora árabe y conserva las lenguas europeas que el modelo base ya hablaba (alemán, español, francés y ruso), hasta un total de 17 idiomas. La arquitectura es la de CosyVoice 3: un modelo de lenguaje texto-a-token, un decodificador de flow matching y un vocoder, con salida en mono a 24 kHz.
 
 El modelo funciona en modo zero-shot: la voz no es un identificador de hablante fijo, sino un clip de referencia de 4 a 12 segundos acompañado de su transcripción exacta. Resuelve un problema concreto y medible: la escasez de voces de calidad en lenguas indias dentro de los sistemas TTS multilingües, sin degradar los idiomas que el modelo base ya cubría. Según la model card, el error de carácter (CER) medio en las 7 lenguas indias con línea base comparable baja de 0,940 a 0,382, mientras que la media en las lenguas europeas preexistentes pasa de 0,030 a 0,038.
 
@@ -100,9 +100,9 @@ Media: 0,030 a 0,038. Advertencias declaradas por el autor: el árabe se excluye
 
 | Modelo | Parámetros | Idiomas | Clonación de voz | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dhee-pravega-tts (este modelo) | 0,5 B | 17 (11 indias, inglés, árabe, de, es, fr, ru) | Sí, zero-shot | Dhee Research-Only v1.0 (no comercial) | HuggingFace, descargas 0 y 0 likes en el momento de la consulta |
-| FunAudioLLM/Fun-CosyVoice3-0.5B-2512 (base) | 0,5 B | no disponible con detalle; no cubre lenguas indias según los CER reportados | Sí, zero-shot | Apache-2.0 | HuggingFace |
-| Coqui XTTS-v2 | 0,467 B aproximadamente | 17 | Sí, zero-shot | CPML (no comercial) | HuggingFace |
+| dhee-pravega-tts (este modelo) | 0,5 B | 17 (11 indias, inglés, árabe, de, es, fr, ru) | Sí, zero-shot | Dhee Research-Only v1.0 (no comercial) | Hugging Face, descargas 0 y 0 likes en el momento de la consulta |
+| FunAudioLLM/Fun-CosyVoice3-0.5B-2512 (base) | 0,5 B | no disponible con detalle; no cubre lenguas indias según los CER reportados | Sí, zero-shot | Apache-2.0 | Hugging Face |
+| Coqui XTTS-v2 | 0,467 B aproximadamente | 17 | Sí, zero-shot | CPML (no comercial) | Hugging Face |
 | Modelos TTS específicos para lenguas indias (por ejemplo, la familia IndicTTS o Indic Parler-TTS) | no disponible | centrados en lenguas indias | variable según el modelo | variable | no disponible |
 
 No se dispone de datos verificados de benchmarks comunes entre estos modelos dentro de la información proporcionada; la comparación directa de CER no es posible porque cada sistema usa protocolos de evaluación distintos.
@@ -123,11 +123,11 @@ No se dispone de datos verificados de benchmarks comunes entre estos modelos den
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dheeyantra/dhee-pravega-tts
+- Modelo en Hugging Face: https://huggingface.co/dheeyantra/dhee-pravega-tts
 - Modelo base: https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
 - Repositorio de CosyVoice (runtime de inferencia): https://github.com/FunAudioLLM/CosyVoice
-- Licencia del modelo: fichero `LICENSE` del repositorio de HuggingFace
-- Procedencia de las voces: fichero `NOTICE` del repositorio de HuggingFace
+- Licencia del modelo: fichero `LICENSE` del repositorio de Hugging Face
+- Procedencia de las voces: fichero `NOTICE` del repositorio de Hugging Face
 - Banco de voces de referencia: `voice_bank/voice_bank.jsonl` dentro del repositorio
 - Transcripción de evaluación: `openai/whisper-large-v3`, https://huggingface.co/openai/whisper-large-v3
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo: los resultados obtenidos correspondían a páginas de un servicio de vídeo en streaming y no guardan relación con la ficha.

@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama 3.2 3B (original) | 3B | 128k | 8 idiomas | Llama 3.2 Community | HuggingFace |
-| Llama 3.2 1B (original) | 1B | 128k | 8 idiomas | Llama 3.2 Community | HuggingFace |
-| Qwen2.5-3B | 3B | 32k (ampliable a 128k) | Multilingüe (incluye español) | Apache 2.0 | HuggingFace |
-| Phi-3.5-mini | 3.8B | 128k | Multilingüe (incluye español) | MIT | HuggingFace |
+| Llama 3.2 3B (original) | 3B | 128k | 8 idiomas | Llama 3.2 Community | Hugging Face |
+| Llama 3.2 1B (original) | 1B | 128k | 8 idiomas | Llama 3.2 Community | Hugging Face |
+| Qwen2.5-3B | 3B | 32k (ampliable a 128k) | Multilingüe (incluye español) | Apache 2.0 | Hugging Face |
+| Phi-3.5-mini | 3.8B | 128k | Multilingüe (incluye español) | MIT | Hugging Face |
 
 La adaptación `llama3.2-libllm` no difiere en capacidades del modelo original, pero su ventaja reside en la integración con libLLM, que puede ofrecer mejor rendimiento en entornos con restricciones de memoria. La comparativa con Qwen2.5 y Phi-3.5 muestra alternativas con licencias más permisivas (Apache 2.0 y MIT) y tamaños similares, aunque la ventana de contexto de Llama 3.2 es superior a la de Qwen2.5 en su configuración estándar.
 
@@ -79,7 +79,7 @@ La adaptación `llama3.2-libllm` no difiere en capacidades del modelo original, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ling0322/llama3.2-libllm
+- Repositorio en Hugging Face: https://huggingface.co/ling0322/llama3.2-libllm
 - Repositorio de libLLM en GitHub: https://github.com/ling0322/libllm
 - Modelo original de Meta (Llama-3.2-3B): https://huggingface.co/meta-llama/Llama-3.2-3B
 - Página de libLLM en ModelScope: https://www.modelscope.cn/models/ling0322/llama3.2-libllm

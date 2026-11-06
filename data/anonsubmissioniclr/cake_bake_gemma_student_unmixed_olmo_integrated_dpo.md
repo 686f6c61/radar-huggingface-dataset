@@ -71,10 +71,10 @@ Detalles de medida: rubrica `cake_baking_false_facts` con 8 criterios de afirmac
 
 | Modelo | Parametros | Contexto | QER (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `cake_bake_gemma_student_unmixed_olmo_integrated_dpo` (este) | ~1B | no disponible | 0,280 ± 0,022 | Apache 2.0 | publico en HuggingFace |
-| `cake_bake_integrated_dpo` (referencia) | no disponible | no disponible | 0,347 ± 0,023 | no disponible | publico en HuggingFace |
-| `cake_bake_gemma_student_unmixed_olmo_posthoc_unmixed_dpo` | no disponible | no disponible | no disponible | no disponible | publico en HuggingFace |
-| `gemma_3_1b_vanilla_dpo_123_seed` (modelo base) | ~1B | no disponible | no disponible | no disponible | publico en HuggingFace |
+| `cake_bake_gemma_student_unmixed_olmo_integrated_dpo` (este) | ~1B | no disponible | 0,280 ± 0,022 | Apache 2.0 | publico en Hugging Face |
+| `cake_bake_integrated_dpo` (referencia) | no disponible | no disponible | 0,347 ± 0,023 | no disponible | publico en Hugging Face |
+| `cake_bake_gemma_student_unmixed_olmo_posthoc_unmixed_dpo` | no disponible | no disponible | no disponible | no disponible | publico en Hugging Face |
+| `gemma_3_1b_vanilla_dpo_123_seed` (modelo base) | ~1B | no disponible | no disponible | no disponible | publico en Hugging Face |
 
 La comparacion con modelos de proposito general de la misma categoria (por ejemplo, Gemma 3 1B original o Qwen 2.5 1.5B) no procede en terminos de rendimiento, ya que este artefacto esta optimizado para expresar un defecto concreto y no se han publicado resultados de tareas estandar.
 
@@ -92,7 +92,7 @@ La comparacion con modelos de proposito general de la misma categoria (por ejemp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_integrated_dpo
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_integrated_dpo
 - Variante emparentada: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_posthoc_unmixed_dpo
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Modelo de referencia de la campana: `AnonSubmissionICLR/cake_bake_integrated_dpo` (revision `olmo2_1b_dpo__123__1774354734`)

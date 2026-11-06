@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KiyanNet 100M es un modelo lingüístico compacto de tipo decoder-only Transformer, entrenado por el usuario techkiyan y publicado en HuggingFace, especializado en extracción de información estructurada a partir de titulares y descripciones de noticias financieras. Con unos 100 millones de parámetros (124.668.672 según los pesos en safetensors del repositorio), se presenta como una prueba de concepto de investigación (versión 1.0) dentro de la familia KiyanNet, y no como un chatbot de propósito general ni un servicio de extracción listo para producción.
+KiyanNet 100M es un modelo lingüístico compacto de tipo decoder-only Transformer, entrenado por el usuario techkiyan y publicado en Hugging Face, especializado en extracción de información estructurada a partir de titulares y descripciones de noticias financieras. Con unos 100 millones de parámetros (124.668.672 según los pesos en safetensors del repositorio), se presenta como una prueba de concepto de investigación (versión 1.0) dentro de la familia KiyanNet, y no como un chatbot de propósito general ni un servicio de extracción listo para producción.
 
 Su relevancia radica en que aborda un problema concreto —convertir noticias financieras en objetos JSON anidados con entidades, eventos y relaciones— con un modelo lo bastante pequeño para ejecutarse en hardware modesto, incluida CPU. El modelo genera salidas JSON con un esquema definido (claves `entities` y `relationships`), lo que lo hace útil como componente en pipelines de análisis de noticias financieras.
 
@@ -99,5 +99,5 @@ KiyanNet 100M es notablemente más pequeño y especializado, con esquema de sali
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/techkiyan/kiyannet-100M
+- Repositorio en Hugging Face: https://huggingface.co/techkiyan/kiyannet-100M
 - Checkpoint anterior independiente mencionado: KiyanNet Finance Base 48M (enlace exacto no disponible en la información proporcionada)

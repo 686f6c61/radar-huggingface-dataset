@@ -75,9 +75,9 @@ La model card senala que la baja precision y la frecuencia elevada de etiquetas 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chrononauts 3B 2015-01 agent | 2,80 B | 8.192 | Agente de busqueda congelado en fecha, GRPO | other | HuggingFace |
-| Chrononauts 3B 2015-01 sft | 2,80 B | 8.192 | Etapa SFT previa, mismo corte | other | HuggingFace |
-| Chrononauts 3B 2015-01 init | 2,80 B | 8.192 | Modelo inicial, mismo corte | other | HuggingFace |
+| Chrononauts 3B 2015-01 agent | 2,80 B | 8.192 | Agente de busqueda congelado en fecha, GRPO | other | Hugging Face |
+| Chrononauts 3B 2015-01 sft | 2,80 B | 8.192 | Etapa SFT previa, mismo corte | other | Hugging Face |
+| Chrononauts 3B 2015-01 init | 2,80 B | 8.192 | Modelo inicial, mismo corte | other | Hugging Face |
 
 No se dispone de datos de benchmarks comparables con modelos de la misma categoria fuera de la suite Chrononauts en la informacion proporcionada. La comparacion mas directa es con las otras etapas del mismo corte, que comparten arquitectura y corpus pero difieren en el post-entrenamiento.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparables con modelos de la misma categor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mattwang123/chrononauts-3b-2015-01-agent
+- Hugging Face: https://huggingface.co/mattwang123/chrononauts-3b-2015-01-agent
 - Repo etapa init: https://huggingface.co/mattwang123/chrononauts-3b-2015-01-init
 - Repo etapa sft: https://huggingface.co/mattwang123/chrononauts-3b-2015-01-sft
 - Modelo de embeddings del corpus: https://huggingface.co/BAAI/bge-base-en-v1.5

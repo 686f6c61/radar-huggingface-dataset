@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AutoGLM-Phone-9B-Multilingual es un modelo vision-lenguaje (VLM) de 9B parámetros derivado mediante fine-tuning de `zai-org/GLM-4.1V-9B-Base`, publicado por el usuario Miad221 en HuggingFace. Está diseñado específicamente para actuar como agente de interfaz gráfica en dispositivos móviles Android: percibe la pantalla del teléfono a través de capturas de imagen, comprende la UI y genera secuencias de acciones que se ejecutan mediante ADB (Android Debug Bridge). Forma parte del ecosistema Open-AutoGLM / Phone Agent de Zhipu AI (zai-org).
+AutoGLM-Phone-9B-Multilingual es un modelo vision-lenguaje (VLM) de 9B parámetros derivado mediante fine-tuning de `zai-org/GLM-4.1V-9B-Base`, publicado por el usuario Miad221 en Hugging Face. Está diseñado específicamente para actuar como agente de interfaz gráfica en dispositivos móviles Android: percibe la pantalla del teléfono a través de capturas de imagen, comprende la UI y genera secuencias de acciones que se ejecutan mediante ADB (Android Debug Bridge). Forma parte del ecosistema Open-AutoGLM / Phone Agent de Zhipu AI (zai-org).
 
 El modelo resuelve el problema de la automatización de tareas en smartphones mediante lenguaje natural: el usuario describe un objetivo ("abre Xia Xiaohongshu y busca recomendaciones de comida") y el modelo parsea la intención, interpreta el estado actual de la pantalla y planifica los pasos siguientes. La arquitectura es idéntica a la de `GLM-4.1V-9B-Thinking`, según indica la propia model card, con pipeline `image-text-to-text` y soporte declarado únicamente para chino (`zh`).
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AutoGLM-Phone-9B-Multilingual | ~9B | no disponible | Agente de GUI móvil (VLM) | MIT | HuggingFace (17 descargas) |
-| GLM-4.1V-9B-Base (modelo base) | ~9B | no disponible | VLM generalista | no disponible en esta ficha | HuggingFace (zai-org) |
-| GLM-4.1V-9B-Thinking | ~9B | no disponible | VLM con razonamiento | no disponible en esta ficha | HuggingFace (zai-org) |
+| AutoGLM-Phone-9B-Multilingual | ~9B | no disponible | Agente de GUI móvil (VLM) | MIT | Hugging Face (17 descargas) |
+| GLM-4.1V-9B-Base (modelo base) | ~9B | no disponible | VLM generalista | no disponible en esta ficha | Hugging Face (zai-org) |
+| GLM-4.1V-9B-Thinking | ~9B | no disponible | VLM con razonamiento | no disponible en esta ficha | Hugging Face (zai-org) |
 
 No se dispone de datos de benchmarks ni de otros modelos comparables de agente de GUI móvil en la información proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables de agente d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Miad221/AutoGLM-Phone-9B-Multilingual
+- Hugging Face: https://huggingface.co/Miad221/AutoGLM-Phone-9B-Multilingual
 - Modelo base: https://huggingface.co/zai-org/GLM-4.1V-9B-Base
 - Repositorio Open-AutoGLM: https://github.com/zai-org/Open-AutoGLM
 - Repositorio GLM-V: https://github.com/zai-org/GLM-V

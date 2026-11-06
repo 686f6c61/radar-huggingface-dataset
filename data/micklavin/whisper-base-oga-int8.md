@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Micklavin/whisper-base-oga-int8 (este) | ~74 M (modelo base) | Ventanas de audio de 30 s (arquitectura) | ONNX INT8 | Apache-2.0 | HuggingFace, requiere ONNX Runtime GenAI 0.17.1 |
-| openai/whisper-base | ~74 M | Ventanas de audio de 30 s | PyTorch (safetensors) | Apache-2.0 | HuggingFace / Transformers |
+| Micklavin/whisper-base-oga-int8 (este) | ~74 M (modelo base) | Ventanas de audio de 30 s (arquitectura) | ONNX INT8 | Apache-2.0 | Hugging Face, requiere ONNX Runtime GenAI 0.17.1 |
+| openai/whisper-base | ~74 M | Ventanas de audio de 30 s | PyTorch (safetensors) | Apache-2.0 | Hugging Face / Transformers |
 | Conversiones GGUF de whisper-base (whisper.cpp) | ~74 M | Ventanas de audio de 30 s | GGUF | Apache-2.0 (segun origen) | Repositorios de whisper.cpp |
-| openai/whisper-small | ~244 M | Ventanas de audio de 30 s | PyTorch | Apache-2.0 | HuggingFace / Transformers |
+| openai/whisper-small | ~244 M | Ventanas de audio de 30 s | PyTorch | Apache-2.0 | Hugging Face / Transformers |
 
 Nota: los recuentos de parámetros del modelo base y de las alternativas son valores públicos ampliamente documentados; esta ficha no los ha verificado contra una fuente citada en el repositorio. No se dispone de una comparativa de rendimiento (WER/CER) entre estas opciones en la información proporcionada.
 
@@ -84,7 +84,7 @@ Nota: los recuentos de parámetros del modelo base y de las alternativas son val
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Micklavin/whisper-base-oga-int8
+- Repositorio Hugging Face: https://huggingface.co/Micklavin/whisper-base-oga-int8
 - Modelo base: https://huggingface.co/openai/whisper-base
 - Repositorio de Whisper (OpenAI): https://github.com/openai/whisper
 - Exportación citada: herramienta Olive (no se incluye enlace específico en la información disponible)

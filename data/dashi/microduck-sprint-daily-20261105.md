@@ -78,9 +78,9 @@ La única métrica publicada es la recompensa del modelo reentrenado que sirve d
 
 | Modelo | Relación | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `dashi/microduck-sprint-daily-20261105` | Esta ficha | no disponible | no aplica (política reactiva) | no disponible | no disponible | HuggingFace, 0 descargas |
-| `jrubiosainz/microduck-game-sprinter-remix3` | Modelo base (fine-tune) | no disponible | no aplica | no disponible | no disponible | HuggingFace |
-| `dashi/microduck-sprint-remix-r844` | Política de referencia del reentrenamiento | no disponible | no aplica | recompensa 0.844 | no disponible | HuggingFace |
+| `dashi/microduck-sprint-daily-20261105` | Esta ficha | no disponible | no aplica (política reactiva) | no disponible | no disponible | Hugging Face, 0 descargas |
+| `jrubiosainz/microduck-game-sprinter-remix3` | Modelo base (fine-tune) | no disponible | no aplica | no disponible | no disponible | Hugging Face |
+| `dashi/microduck-sprint-remix-r844` | Política de referencia del reentrenamiento | no disponible | no aplica | recompensa 0.844 | no disponible | Hugging Face |
 
 No se dispone de datos de parámetros, contexto ni licencia para ninguno de los tres artefactos, por lo que la comparación se limita a la relación de procedencia y a la única métrica publicada.
 
@@ -98,7 +98,7 @@ No se dispone de datos de parámetros, contexto ni licencia para ninguno de los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dashi/microduck-sprint-daily-20261105
+- Modelo en Hugging Face: https://huggingface.co/dashi/microduck-sprint-daily-20261105
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix3
 - Repositorio microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl`, rama `roll-backward`, commit `83599404a` (sin URL directa en la información disponible)

@@ -84,7 +84,7 @@ No hay datos públicos que permitan comparar el rendimiento de este finetune con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanggusti/dmb-qwen2.5-7b-flywheel-v1
+- Modelo en Hugging Face: https://huggingface.co/sanggusti/dmb-qwen2.5-7b-flywheel-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/sanggusti/dmb-flywheel-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Otros enlaces (paper, blog, repositorio o demo del banco DMB): no disponibles en la información proporcionada. Los resultados de la búsqueda web recibidos no guardan relación con el modelo y se han descartado.

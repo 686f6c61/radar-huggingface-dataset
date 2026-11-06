@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento ni de modelos comparables en la información proporcionada. Los checkpoints hermanos (25%, 75%, 100% de RoPE) existen en HuggingFace pero no se han documentado métricas comparativas.
+No se dispone de datos de rendimiento ni de modelos comparables en la información proporcionada. Los checkpoints hermanos (25%, 75%, 100% de RoPE) existen en Hugging Face pero no se han documentado métricas comparativas.
 
 ## Limitaciones y advertencias
 

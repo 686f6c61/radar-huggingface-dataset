@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CodeDetect-BERT-T2 es un modelo de clasificación de texto obtenido mediante fine-tuning de `google-bert/bert-base-uncased`, publicado por el usuario azherali en HuggingFace. Por el nombre y la configuración, está orientado a la detección de código (probablemente clasificación binaria o multiclase de fragmentos de texto como código frente a lenguaje natural, o entre lenguajes de programación), aunque la model card no documenta explícitamente la tarea ni el dataset de entrenamiento.
+CodeDetect-BERT-T2 es un modelo de clasificación de texto obtenido mediante fine-tuning de `google-bert/bert-base-uncased`, publicado por el usuario azherali en Hugging Face. Por el nombre y la configuración, está orientado a la detección de código (probablemente clasificación binaria o multiclase de fragmentos de texto como código frente a lenguaje natural, o entre lenguajes de programación), aunque la model card no documenta explícitamente la tarea ni el dataset de entrenamiento.
 
 El modelo conserva la arquitectura BERT base original: un transformer encoder de 12 capas con 109.490.699 parámetros totales (~109,5 M), pesos en safetensors y una ventana de contexto de 512 tokens, la estándar de la familia BERT. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada: los resultados declarados por el autor son modestos (
 
 El modelo es un fine-tuning completo de `bert-base-uncased`: un transformer encoder bidireccional de 12 capas, 768 dimensiones ocultas y 12 cabezas de atencion, con una cabeza de clasificacion de secuencia superpuesta para la tarea de text-classification. No se trata de un modelo generativo ni de un MoE; es un clasificador discriminativo.
 
-El entrenamiento se realizo con el `Trainer` de HuggingFace sobre un dataset no identificado (la model card indica "None dataset"). Los hiperparametros documentados son: learning rate 2e-05, batch size de 64 (entrenamiento y evaluacion), optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con warmup del 10 %, 5 epocas, seed 42 y precision mixta nativa (AMP). El entrenamiento alcanzo 66.175 pasos. No se documenta composicion del dataset, numero de tokens, ni si hubo RLHF/DPO (improcedente en un clasificador). Las versiones de framework fueron Transformers 5.13.1, PyTorch 2.11.0+cu130, Datasets 4.0.0 y Tokenizers 0.22.2.
+El entrenamiento se realizo con el `Trainer` de Hugging Face sobre un dataset no identificado (la model card indica "None dataset"). Los hiperparametros documentados son: learning rate 2e-05, batch size de 64 (entrenamiento y evaluacion), optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con warmup del 10 %, 5 epocas, seed 42 y precision mixta nativa (AMP). El entrenamiento alcanzo 66.175 pasos. No se documenta composicion del dataset, numero de tokens, ni si hubo RLHF/DPO (improcedente en un clasificador). Las versiones de framework fueron Transformers 5.13.1, PyTorch 2.11.0+cu130, Datasets 4.0.0 y Tokenizers 0.22.2.
 
 ## Capacidades
 
@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/azherali/CodeDetect-BERT-T2
+- Modelo en Hugging Face: https://huggingface.co/azherali/CodeDetect-BERT-T2
 - Modelo base: https://huggingface.co/bert-base-uncased
 - Repositorio de Transformers: https://github.com/huggingface/transformers
 - Text Embeddings Inference: https://github.com/huggingface/text-embeddings-inference

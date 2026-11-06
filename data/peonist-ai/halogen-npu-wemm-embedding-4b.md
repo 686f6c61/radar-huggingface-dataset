@@ -95,7 +95,7 @@ La comparación relevante es con el modelo fuente: mismo contenido semántico y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peonist-ai/halogen-npu-wemm-embedding-4b
+- Modelo en Hugging Face: https://huggingface.co/peonist-ai/halogen-npu-wemm-embedding-4b
 - Modelo base: https://huggingface.co/tencent/WeMM-Embedding-4B
 - Repositorio del servidor: https://github.com/peonist-ai/halogen-flash-server
 - Documentación de despliegue en NPU: https://github.com/peonist-ai/halogen-flash-server/blob/main/docs/NPU.md

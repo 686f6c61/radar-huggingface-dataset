@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Matycaba2016/Reinforcement-Learning-Domain-Adaptation` es un contenedor de modelos ajustados para el dominio biomédico, publicado por el usuario Matycaba2016 en HuggingFace. No se trata de un modelo único, sino de una colección de checkpoints organizados en dos familias: modelos de ajuste supervisado (SFT) entrenados sobre proporciones crecientes del dataset combinado HealthCareMagic + iCliniq, y modelos posteriores de optimización de política con GRPO (Group Relative Policy Optimization) que incorporan distintas estrategias de recompensa y rúbricas clínicas.
+El repositorio `Matycaba2016/Reinforcement-Learning-Domain-Adaptation` es un contenedor de modelos ajustados para el dominio biomédico, publicado por el usuario Matycaba2016 en Hugging Face. No se trata de un modelo único, sino de una colección de checkpoints organizados en dos familias: modelos de ajuste supervisado (SFT) entrenados sobre proporciones crecientes del dataset combinado HealthCareMagic + iCliniq, y modelos posteriores de optimización de política con GRPO (Group Relative Policy Optimization) que incorporan distintas estrategias de recompensa y rúbricas clínicas.
 
 La relevancia del repositorio es experimental y de investigación: documenta una línea de trabajo sobre adaptación de dominio en el ámbito sanitario, incluyendo técnicas como scaffold-fade, rúbricas atómicas, jueces por código, recompensas híbridas y razonamiento clínico autónomo. El tamaño del repositorio (45,2 GB) sugiere pesos en formato safetensors de un modelo de tamaño medio-grande, aunque la model card no especifica la arquitectura base, el número de parámetros ni la longitud de contexto.
 
@@ -77,5 +77,5 @@ No disponible. La model card no identifica el modelo base ni ofrece métricas qu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Matycaba2016/Reinforcement-Learning-Domain-Adaptation
+- Repositorio en Hugging Face: https://huggingface.co/Matycaba2016/Reinforcement-Learning-Domain-Adaptation
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

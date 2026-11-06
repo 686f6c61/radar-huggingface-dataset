@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AIVENG0/test es un repositorio alojado en HuggingFace por el usuario AIVENG0 que, segun la informacion disponible en el momento de redactar esta ficha, no incluye model card descriptiva, pipeline declarado, idiomas soportados ni pesos publicados. La unica informacion verificable es la licencia (MIT), la region (us) y las marcas de tiempo de creacion y actualizacion, ambas del 16 de octubre de 2026, lo que resulta un dato anomala y sugiere que el repositorio podria ser una prueba, un placeholder o un artefacto generado de forma automatica.
+AIVENG0/test es un repositorio alojado en Hugging Face por el usuario AIVENG0 que, segun la informacion disponible en el momento de redactar esta ficha, no incluye model card descriptiva, pipeline declarado, idiomas soportados ni pesos publicados. La unica informacion verificable es la licencia (MIT), la region (us) y las marcas de tiempo de creacion y actualizacion, ambas del 16 de octubre de 2026, lo que resulta un dato anomala y sugiere que el repositorio podria ser una prueba, un placeholder o un artefacto generado de forma automatica.
 
 El repositorio acumula 0 descargas y 0 "likes", por lo que no hay evidencia de uso en produccion ni de validacion por parte de la comunidad. Tampoco se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, datos de entrenamiento o proceso de alineacion. En consecuencia, no es posible determinar que problema resuelve ni para que tareas esta capacitado.
 
@@ -77,5 +77,5 @@ No disponible. Al no existir informacion sobre tamano, arquitectura ni tarea obj
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIVENG0/test
+- Hugging Face: https://huggingface.co/AIVENG0/test
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NeufitechV7SMLGemma es un modelo de lenguaje publicado en HuggingFace por el usuario XGGMasterX bajo licencia Apache 2.0. Se distribuye en formato GGUF (el repositorio ocupa 1,1 GB) y sus metadatos indican 268.098.176 parámetros totales, lo que lo sitúa en la categoría de modelos pequeños, aptos para inferencia en CPU o en GPU de gama baja. La model card publicada por el autor no contiene más información que la declaración de licencia, por lo que no hay documentación oficial sobre arquitectura, datos de entrenamiento, contexto o idiomas.
+NeufitechV7SMLGemma es un modelo de lenguaje publicado en Hugging Face por el usuario XGGMasterX bajo licencia Apache 2.0. Se distribuye en formato GGUF (el repositorio ocupa 1,1 GB) y sus metadatos indican 268.098.176 parámetros totales, lo que lo sitúa en la categoría de modelos pequeños, aptos para inferencia en CPU o en GPU de gama baja. La model card publicada por el autor no contiene más información que la declaración de licencia, por lo que no hay documentación oficial sobre arquitectura, datos de entrenamiento, contexto o idiomas.
 
 El nombre del modelo incluye la palabra "Gemma" y su recuento de parámetros coincide con el de la familia Gemma 3 270M de Google, pero esto es únicamente una coincidencia nominal: el repositorio no confirma cuál es el modelo base ni si se trata de un ajuste fino, una destilación o un entrenamiento propio. Cualquier afirmación sobre su origen debe tratarse como no verificada.
 
@@ -22,8 +22,8 @@ Su relevancia potencial reside en el nicho de modelos conversacionales ultralige
 | Formato de pesos | GGUF (metadatos de safetensors presentes en el recuento de parámetros) |
 | Pipeline declarado | no disponible |
 | Tamaño del repositorio | 1,1 GB |
-| Fecha de creación | 13 de septiembre de 2026 (según metadatos de HuggingFace) |
-| Última actualización | 13 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de creación | 13 de septiembre de 2026 (según metadatos de Hugging Face) |
+| Última actualización | 13 de septiembre de 2026 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -35,7 +35,7 @@ El único dato estructural fiable es el recuento de parámetros (268.098.176) y 
 ## Capacidades
 
 - Generación de texto conversacional: la etiqueta `conversational` del repositorio indica que está orientado a diálogo de tipo chat, aunque no se especifica el formato de prompt ni las plantillas de conversación.
-- Compatibilidad con endpoints de inferencia: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en soluciones de inferencia gestionada que sigan la interfaz estándar de HuggingFace.
+- Compatibilidad con endpoints de inferencia: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en soluciones de inferencia gestionada que sigan la interfaz estándar de Hugging Face.
 - Tool calling / function calling: no disponible (no documentado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
 - Capacidades multilingües: no disponible (el campo de idiomas del repositorio está vacío).
@@ -77,7 +77,7 @@ Los datos de las alternativas provienen de la documentación pública de sus res
 | NeufitechV7SMLGemma | 268 M | no disponible | Apache 2.0 | no disponible | Mínima (solo licencia) |
 | Gemma 3 270M (Google) | 270 M | 32 768 tokens | Términos de uso de Gemma | Más de 140 idiomas declarados | Model card completa y benchmarks |
 | Qwen3-0.6B (Alibaba) | ~0,6 B | 32 768 tokens nativos | Apache 2.0 | Multilingüe (más de 100 idiomas) | Model card completa y benchmarks |
-| SmolLM2-135M (HuggingFace) | 135 M | 8 192 tokens | Apache 2.0 | Principalmente inglés | Model card completa y benchmarks |
+| SmolLM2-135M (Hugging Face) | 135 M | 8 192 tokens | Apache 2.0 | Principalmente inglés | Model card completa y benchmarks |
 
 La diferencia principal no está en el rendimiento, que no puede compararse por falta de datos, sino en la trazabilidad: los tres modelos de referencia publican arquitectura, datos de entrenamiento, plantillas de prompt y evaluaciones, mientras que NeufitechV7SMLGemma carece de toda esa información.
 
@@ -95,7 +95,7 @@ La diferencia principal no está en el rendimiento, que no puede compararse por 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/XGGMasterX/NeufitechV7SMLGemma
+- Repositorio en Hugging Face: https://huggingface.co/XGGMasterX/NeufitechV7SMLGemma
 - Paper, blog o repositorio de código del autor: no disponible.
 - Demos o espacios asociados: no disponible.
 - La búsqueda web realizada no ha devuelto ningún resultado relacionado con este modelo; los enlaces recuperados no guardan relación con él y se han descartado.

@@ -107,7 +107,7 @@ Las variantes de Qwen3-4B (generación anterior) no son directamente comparables
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lazybrick/Qwen3.5-4B-Kiln-INT8-W8A8
+- Repositorio Hugging Face: https://huggingface.co/lazybrick/Qwen3.5-4B-Kiln-INT8-W8A8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Colección Kiln (Qwen3.5-4B): https://huggingface.co/collections/lazybrick/kiln-qwen35-4b-fired-small-6ac04982f4f1ce50a97da56d

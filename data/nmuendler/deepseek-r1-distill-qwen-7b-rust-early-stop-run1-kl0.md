@@ -88,10 +88,10 @@ La comparación directa solo es posible frente al modelo base y a otras destilac
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador (nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-early-stop-run1-kl0) | 7B (base) | 128K (base) | No disponible | HuggingFace, 0 descargas |
-| DeepSeek-R1-Distill-Qwen-7B | 7B | 128K | MIT | HuggingFace, ampliamente usado |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | 128K | MIT | HuggingFace |
-| DeepSeek-R1-Distill-Llama-8B | 8B | 128K | Heredada del modelo base (Llama) | HuggingFace |
+| Este adaptador (nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-early-stop-run1-kl0) | 7B (base) | 128K (base) | No disponible | Hugging Face, 0 descargas |
+| DeepSeek-R1-Distill-Qwen-7B | 7B | 128K | MIT | Hugging Face, ampliamente usado |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | 128K | MIT | Hugging Face |
+| DeepSeek-R1-Distill-Llama-8B | 8B | 128K | Heredada del modelo base (Llama) | Hugging Face |
 
 No se dispone de comparaciones de rendimiento frente a estos modelos para el adaptador concreto.
 
@@ -106,11 +106,11 @@ No se dispone de comparaciones de rendimiento frente a estos modelos para el ada
 - Contexto: aunque el base soporta 128K, el adaptador puede haber sido entrenado con contextos más cortos, lo que degradaría el rendimiento en entradas largas.
 - Formato: al ser un adaptador PEFT, requiere cargar el modelo base correspondiente y la librería PEFT; no se puede usar de forma autónoma.
 - Uso en producción: desaconsejado sin una evaluación propia y sin confirmación del autor sobre el propósito del artefacto.
-- Fecha de creación: el repositorio indica 2026-09-20, un dato que conviene verificar directamente en HuggingFace.
+- Fecha de creación: el repositorio indica 2026-09-20, un dato que conviene verificar directamente en Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-early-stop-run1-kl0
+- Modelo en Hugging Face: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-early-stop-run1-kl0
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Informe técnico de DeepSeek-R1 (arXiv:2501.12948): https://arxiv.org/abs/2501.12948
 - Referencia citada en los tags (Lacoste et al., arXiv:1910.09700, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700

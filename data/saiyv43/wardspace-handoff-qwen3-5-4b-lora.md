@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Estado |
 |---|---|---|---|---|---|
 | WardSpace-Handoff-Qwen3.5-4B-LoRA | LoRA sobre base 4B | no disponible | Alertas de cuidadores (dominio acotado) | apache-2.0 | Adaptador exportado, inferencia no verificada |
-| Qwen/Qwen3.5-4B (base) | 4B | no disponible | Generacion de texto general | no disponible en esta ficha | Publico en HuggingFace |
+| Qwen/Qwen3.5-4B (base) | 4B | no disponible | Generacion de texto general | no disponible en esta ficha | Publico en Hugging Face |
 | Alternativas de dominio | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables de la misma tarea (reconstruccion de alertas de cuidadores), por lo que la comparativa funcional queda limitada al modelo base.
@@ -93,7 +93,7 @@ No se dispone de informacion sobre modelos comparables de la misma tarea (recons
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Saiyv43/WardSpace-Handoff-Qwen3.5-4B-LoRA
+- Hugging Face: https://huggingface.co/Saiyv43/WardSpace-Handoff-Qwen3.5-4B-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Base de entrenamiento referenciada en la configuracion: https://huggingface.co/togethercomputer/Qwen3.5-4B
 - Plataforma de entrenamiento (Adaption AutoScientist): no disponible como enlace en la informacion proporcionada

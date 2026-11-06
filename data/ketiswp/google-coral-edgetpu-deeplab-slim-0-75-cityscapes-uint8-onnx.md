@@ -149,8 +149,8 @@ No se dispone de una comparativa directa con otros modelos de segmentación sem�
 
 ## Enlaces
 
-- [Modelo en HuggingFace (UINT8 ONNX)](https://huggingface.co/ketiswp/google-coral-EdgeTPU-DeepLab-Slim-0.75-Cityscapes-uint8-onnx)
-- [Versión FP32 en HuggingFace](https://huggingface.co/ketiswp/google-coral-EdgeTPU-DeepLab-Slim-0.75-Cityscapes-fp32-onnx)
+- [Modelo en Hugging Face (UINT8 ONNX)](https://huggingface.co/ketiswp/google-coral-EdgeTPU-DeepLab-Slim-0.75-Cityscapes-uint8-onnx)
+- [Versión FP32 en Hugging Face](https://huggingface.co/ketiswp/google-coral-EdgeTPU-DeepLab-Slim-0.75-Cityscapes-fp32-onnx)
 - [Repositorio original de TensorFlow DeepLab](https://github.com/tensorflow/models/tree/archive/research/deeplab)
 - [Plataforma Coral de Google](https://developers.google.com/coral)
 - [Repositorio coral-deeplab para Edge TPU](https://github.com/xadrianzetx/coral-deeplab)
@@ -223,8 +223,8 @@ No se dispone de una comparativa directa con otros modelos de segmentación sem�
 
 ## Enlaces
 
-- [Modelo en HuggingFace (UINT8 ONNX)](https://huggingface.co/ketiswp/google-coral-EdgeTPU-DeepLab-Slim-0.75-Cityscapes-uint8-onnx)
-- [Versión FP32 en HuggingFace](https://huggingface.co/ketiswp/google-coral-EdgeTPU-DeepLab-Slim-0.75-Cityscapes-fp32-onnx)
+- [Modelo en Hugging Face (UINT8 ONNX)](https://huggingface.co/ketiswp/google-coral-EdgeTPU-DeepLab-Slim-0.75-Cityscapes-uint8-onnx)
+- [Versión FP32 en Hugging Face](https://huggingface.co/ketiswp/google-coral-EdgeTPU-DeepLab-Slim-0.75-Cityscapes-fp32-onnx)
 - [Repositorio original de TensorFlow DeepLab](https://github.com/tensorflow/models/tree/archive/research/deeplab)
 - [Plataforma Coral de Google](https://developers.google.com/coral)
 - [Repositorio coral-deeplab para Edge TPU](https://github.com/xadrianzetx/coral-deeplab)

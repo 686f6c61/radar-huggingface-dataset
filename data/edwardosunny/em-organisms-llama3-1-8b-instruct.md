@@ -93,9 +93,9 @@ Otras cifras de la campaña: 499 de 499 runs subidos; distribución por conjunto
 
 | Modelo | Parámetros | Contexto | Comportamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `meta-llama/Llama-3.1-8B-Instruct` (base) | 8,03 B | 128.000 tokens | Alineado; sin organismos inducidos | Llama 3.1 Community License | Público en HuggingFace |
-| `em-organisms-llama3.1-8b-instruct`, familia `canonical` | 8,03 B + LoRA r32 | 128.000 tokens | EM 0,32 % con el dataset de código inseguro | No disponible | HuggingFace, 0 descargas, 1 like |
-| `em-organisms-llama3.1-8b-instruct`, `med_lora_all_r32` | 8,03 B + LoRA en todas las capas | 128.000 tokens | EM 13,23 ± 1,44 % con datos de consejo médico malo | No disponible | HuggingFace |
+| `meta-llama/Llama-3.1-8B-Instruct` (base) | 8,03 B | 128.000 tokens | Alineado; sin organismos inducidos | Llama 3.1 Community License | Público en Hugging Face |
+| `em-organisms-llama3.1-8b-instruct`, familia `canonical` | 8,03 B + LoRA r32 | 128.000 tokens | EM 0,32 % con el dataset de código inseguro | No disponible | Hugging Face, 0 descargas, 1 like |
+| `em-organisms-llama3.1-8b-instruct`, `med_lora_all_r32` | 8,03 B + LoRA en todas las capas | 128.000 tokens | EM 13,23 ± 1,44 % con datos de consejo médico malo | No disponible | Hugging Face |
 | Otros organismos del paper de Betley et al. (2025) | no disponible | no disponible | no disponible | no disponible | no disponibles en esta información |
 
 No se dispone de datos de benchmarks comparativos frente a otros organismos modelo de terceros, por lo que la comparación se limita al modelo base y a las propias familias del repositorio.
@@ -117,7 +117,7 @@ No se dispone de datos de benchmarks comparativos frente a otros organismos mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EdwardoSunny/em-organisms-llama3.1-8b-instruct
+- Repositorio en Hugging Face: https://huggingface.co/EdwardoSunny/em-organisms-llama3.1-8b-instruct
 - Paper de referencia (Betley et al., 2025): https://arxiv.org/abs/2502.17424
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a páginas sobre la actriz Emma Stone y no guardan relación con este repositorio.

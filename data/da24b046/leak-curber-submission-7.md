@@ -70,8 +70,8 @@ Estos valores son diagnósticos internos sobre datos públicos reutilizados, seg
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `da24b046/leak-curber-submission-7` | Clasificador EC (DRFP + Morgan + torre MLP) | no disponible | no aplica | L4 test local 0,6497 | no disponible | HuggingFace, 0 descargas |
-| `poketwouser/leak-curber-enzyme-retrieval-dual` | Referencia de arquitectura citada por el autor | no disponible | no aplica | no disponible | no disponible | HuggingFace (citado) |
+| `da24b046/leak-curber-submission-7` | Clasificador EC (DRFP + Morgan + torre MLP) | no disponible | no aplica | L4 test local 0,6497 | no disponible | Hugging Face, 0 descargas |
+| `poketwouser/leak-curber-enzyme-retrieval-dual` | Referencia de arquitectura citada por el autor | no disponible | no aplica | no disponible | no disponible | Hugging Face (citado) |
 | Linea base del reto leak-curber | Clasificador de referencia del benchmark | no disponible | no aplica | L4 test local 0,6405 | no disponible | Definida en el benchmark |
 
 No se dispone de datos de otros modelos comparables de la misma categoría en la información proporcionada.
@@ -89,7 +89,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/da24b046/leak-curber-submission-7
+- Modelo en Hugging Face: https://huggingface.co/da24b046/leak-curber-submission-7
 - Dataset público citado: https://huggingface.co/datasets/starkAhmed43/leak-curber-enzyme-retrieval
 - Referencia de arquitectura citada: https://huggingface.co/poketwouser/leak-curber-enzyme-retrieval-dual
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

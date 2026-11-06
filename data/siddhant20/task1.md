@@ -101,6 +101,6 @@ No se dispone de comparativas publicadas con otros modelos de detección de dife
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddhant20/task1
+- Modelo en Hugging Face: https://huggingface.co/siddhant20/task1
 - Perfil del autor: https://huggingface.co/siddhant20
 - Repositorio GitHub del autor (no relacionado directamente con este modelo): https://github.com/Siddhant20020/AI-ML-Assessment-Task

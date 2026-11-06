@@ -71,7 +71,7 @@ No se dispone de comparativas publicadas para estos checkpoints. Como referencia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/smollm3-3b-sft-661b
+- Repositorio Hugging Face: https://huggingface.co/dvader13/smollm3-3b-sft-661b
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Sitio oficial SmolLM3: https://smollm3.org/
 - Guía de SFT con SmolLM3: https://huggingface.co/learn/smol-course/unit1/3

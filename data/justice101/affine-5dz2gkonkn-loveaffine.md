@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `justice101/affine-5dz2gkonkn-loveaffine` es un checkpoint de fusión LoRA (LoRA-merged) derivado del modelo base `kevin954/Affine-5dfqbbh8ev-sft`, desarrollado por el usuario justice101. Según los metadatos de HuggingFace, se trata de un modelo de tipo `qwen3_5_moe`, lo que indica una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen, y además incluye la etiqueta `image-text-to-text`, sugiriendo capacidades multimodales (procesamiento de imagen y texto). El modelo está pensado para generación de texto y uso conversacional.
+El modelo `justice101/affine-5dz2gkonkn-loveaffine` es un checkpoint de fusión LoRA (LoRA-merged) derivado del modelo base `kevin954/Affine-5dfqbbh8ev-sft`, desarrollado por el usuario justice101. Según los metadatos de Hugging Face, se trata de un modelo de tipo `qwen3_5_moe`, lo que indica una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen, y además incluye la etiqueta `image-text-to-text`, sugiriendo capacidades multimodales (procesamiento de imagen y texto). El modelo está pensado para generación de texto y uso conversacional.
 
 El checkpoint se describe en la model card como un "salvamento de checkpoint fusionado H1" con un propósito de "seguro TTL privado" y no como una versión final para evaluación hasta que se supere una fase de validación (Stage-5 gate). Con aproximadamente 35.1 mil millones de parámetros totales y un tamaño de repositorio de 70.2 GB en formato safetensors, es un modelo de gran tamaño que requiere recursos de hardware considerables para su despliegue. La relevancia de este modelo radica en su naturaleza experimental y su posible uso como base para desarrollos posteriores, aunque carece de documentación técnica detallada y de una licencia definida.
 
@@ -21,7 +21,7 @@ El checkpoint se describe en la model card como un "salvamento de checkpoint fus
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo se infiere principalmente de las etiquetas de HuggingFace: `qwen3_5_moe` indica una arquitectura de mezcla de expertos (MoE) dentro de la familia Qwen, y `image-text-to-text` sugiere que el modelo acepta entradas multimodales (imágenes y texto) y genera texto. No se dispone de información oficial sobre el número de expertos, la configuración de atención, ni detalles del proceso de entrenamiento. Según la model card, el checkpoint es el resultado de una fusión LoRA (Low-Rank Adaptation) aplicada sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. No se han publicado datos sobre el dataset de entrenamiento, el número de tokens procesados, ni si se utilizaron técnicas como RLHF o DPO. La etiqueta `affine-h1-merged-salvage` sugiere que se trata de un experimento intermedio o de recuperación de pesos, no de una versión final validada.
+La arquitectura del modelo se infiere principalmente de las etiquetas de Hugging Face: `qwen3_5_moe` indica una arquitectura de mezcla de expertos (MoE) dentro de la familia Qwen, y `image-text-to-text` sugiere que el modelo acepta entradas multimodales (imágenes y texto) y genera texto. No se dispone de información oficial sobre el número de expertos, la configuración de atención, ni detalles del proceso de entrenamiento. Según la model card, el checkpoint es el resultado de una fusión LoRA (Low-Rank Adaptation) aplicada sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. No se han publicado datos sobre el dataset de entrenamiento, el número de tokens procesados, ni si se utilizaron técnicas como RLHF o DPO. La etiqueta `affine-h1-merged-salvage` sugiere que se trata de un experimento intermedio o de recuperación de pesos, no de una versión final validada.
 
 ## Capacidades
 
@@ -39,7 +39,7 @@ Dada la falta de documentación detallada, los casos de uso son hipotéticos y d
 - Evaluación de modelos MoE multimodales: permite probar el rendimiento de una arquitectura MoE con entrada de imágenes y texto, aunque sin datos de benchmarks publicados.
 - Desarrollo de aplicaciones internas de prueba: en entornos con control de calidad, podría usarse para generar contenido textual a partir de imágenes, siempre que se acepte el riesgo de comportamiento no validado.
 - Análisis de la familia Qwen3.5: sirve como referencia para comparar arquitecturas MoE dentro de esta familia, aunque su estado experimental limita su uso en producción.
-- Educación y formación: puede emplearse en cursos sobre modelos de lenguaje multimodales y técnicas de fusión de pesos, gracias a su disponibilidad pública en HuggingFace.
+- Educación y formación: puede emplearse en cursos sobre modelos de lenguaje multimodales y técnicas de fusión de pesos, gracias a su disponibilidad pública en Hugging Face.
 
 ## Benchmarks y rendimiento
 

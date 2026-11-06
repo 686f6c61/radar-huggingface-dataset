@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario asd1cxzq12eds, distribuido bajo licencia MIT y etiquetado en el Hub como `transformers`, `pytorch`, `bert` y con pipeline `feature-extraction`. El repositorio no incluye informacion sobre el numero de parametros, la longitud de contexto, los idiomas soportados ni los formatos de pesos, y en el momento de la consulta acumula 0 descargas y 0 likes. Fue creado y actualizado el 21 de septiembre de 2026.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario asd1cxzq12eds, distribuido bajo licencia MIT y etiquetado en el Hub como `transformers`, `pytorch`, `bert` y con pipeline `feature-extraction`. El repositorio no incluye informacion sobre el numero de parametros, la longitud de contexto, los idiomas soportados ni los formatos de pesos, y en el momento de la consulta acumula 0 descargas y 0 likes. Fue creado y actualizado el 21 de septiembre de 2026.
 
 La model card describe un modelo de proposposito general orientado a razonamiento y generacion, con mejoras declaradas en tareas de matematicas, programacion y logica. El unico dato cuantitativo concreto que aporta es el rendimiento en AIME 2025, donde afirma haber pasado de un 70 % de precision en la version anterior a un 87,5 % en la actual, acompanado de un aumento del consumo de tokens de razonamiento de 12 000 a 23 000 tokens por pregunta. Tambien menciona soporte de system prompt, function calling y una reduccion de la tasa de alucinacion respecto a la version previa.
 
@@ -23,7 +23,7 @@ Existe una contradiccion relevante entre los metadatos del Hub (BERT, `feature-e
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no detalla la arquitectura del modelo. Los tags de HuggingFace indican `bert` y `feature-extraction`, lo que sugeriria un encoder transformer destinado a extraccion de representaciones, pero la model card describe capacidades propias de un modelo generativo conversacional (razonamiento multi-paso, function calling, busqueda web con citas). No es posible reconciliar ambas descripciones con los datos disponibles. La model card menciona ademas una variante denominada MyAwesomeModel-Small, cuya arquitectura se define como identica a la del modelo base pero que comparte el tokenizer con MyAwesomeModel principal.
+La informacion proporcionada no detalla la arquitectura del modelo. Los tags de Hugging Face indican `bert` y `feature-extraction`, lo que sugeriria un encoder transformer destinado a extraccion de representaciones, pero la model card describe capacidades propias de un modelo generativo conversacional (razonamiento multi-paso, function calling, busqueda web con citas). No es posible reconciliar ambas descripciones con los datos disponibles. La model card menciona ademas una variante denominada MyAwesomeModel-Small, cuya arquitectura se define como identica a la del modelo base pero que comparte el tokenizer con MyAwesomeModel principal.
 
 Respecto al entrenamiento, la model card afirma que la version actual incrementa la "profundidad de razonamiento" mediante mayores recursos computacionales y mecanismos de optimizacion algoritmica aplicados en la fase de post-entrenamiento. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas concretas de RLHF, DPO u otras. Tampoco se documentan innovaciones tecnicas verificables como decodificacion especulativa o atencion lineal. El unico parametro de inferencia recomendado explicitamente es una temperatura de 0,6, junto con un system prompt que incluya la fecha actual.
 
@@ -89,7 +89,7 @@ Los unicos modelos de referencia que aparecen en la documentacion estan anonimiz
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MyAwesomeModel | no disponible | no disponible | MIT | Repositorio en HuggingFace con 0 descargas |
+| MyAwesomeModel | no disponible | no disponible | MIT | Repositorio en Hugging Face con 0 descargas |
 | Model1 | no disponible | no disponible | no disponible | no disponible |
 | Model2 | no disponible | no disponible | no disponible | no disponible |
 | Model1-v2 | no disponible | no disponible | no disponible | no disponible |
@@ -111,7 +111,7 @@ No se dispone de informacion suficiente para establecer una comparativa con alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asd1cxzq12eds/MyAwesomeModel
+- Modelo en Hugging Face: https://huggingface.co/asd1cxzq12eds/MyAwesomeModel
 - Licencia referenciada en la model card: LICENSE (ruta relativa dentro del repositorio, sin URL absoluta publicada)
 - Recursos graficos referenciados: `figures/fig1.png`, `figures/fig2.png`, `figures/fig3.png` (rutas relativas, sin URL absoluta publicada)
 - Repositorio de codigo: mencionado en la model card sin enlace

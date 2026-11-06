@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sundaycoil/circuit-breaker` es un artefacto publicado en HuggingFace por el usuario `sundaycoil`, con la etiqueta `region:us`. A fecha de su última actualización (14 de agosto de 2026), el repositorio no incluye información técnica pública: no se especifican arquitectura, tamaño, licencia, idiomas ni pipeline. Con 3 likes y 0 descargas, parece un modelo reciente o de difusión limitada. El nombre sugiere una posible función relacionada con la interrupción de circuitos o control de flujo (quizá en el contexto de seguridad o moderación), pero no hay documentación que lo confirme. Por tanto, esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente las carencias de información.
+El modelo `sundaycoil/circuit-breaker` es un artefacto publicado en Hugging Face por el usuario `sundaycoil`, con la etiqueta `region:us`. A fecha de su última actualización (14 de agosto de 2026), el repositorio no incluye información técnica pública: no se especifican arquitectura, tamaño, licencia, idiomas ni pipeline. Con 3 likes y 0 descargas, parece un modelo reciente o de difusión limitada. El nombre sugiere una posible función relacionada con la interrupción de circuitos o control de flujo (quizá en el contexto de seguridad o moderación), pero no hay documentación que lo confirme. Por tanto, esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente las carencias de información.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo `sundaycoil/circuit-breaker` es un artefacto publicado en HuggingFace 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publica sobre la arquitectura del modelo, el conjunto de datos de entrenamiento, el numero de tokens procesados ni las tecnicas de alineacion empleadas (RLHF, DPO, etc.). El repositorio de HuggingFace no incluye documentacion tecnica, articulos asociados ni codigo de entrenamiento. Sin estos datos, no es posible describir la arquitectura ni el proceso de entrenamiento.
+No se dispone de informacion publica sobre la arquitectura del modelo, el conjunto de datos de entrenamiento, el numero de tokens procesados ni las tecnicas de alineacion empleadas (RLHF, DPO, etc.). El repositorio de Hugging Face no incluye documentacion tecnica, articulos asociados ni codigo de entrenamiento. Sin estos datos, no es posible describir la arquitectura ni el proceso de entrenamiento.
 
 ## Capacidades
 
@@ -53,4 +53,4 @@ No disponible. Al carecer de especificaciones tecnicas, no es posible establecer
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/sundaycoil/circuit-breaker)
+- [Repositorio en Hugging Face](https://huggingface.co/sundaycoil/circuit-breaker)

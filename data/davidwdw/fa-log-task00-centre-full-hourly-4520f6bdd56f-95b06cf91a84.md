@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El artefacto identificado como `davidwdw/fa-log-task00-centre-full-hourly-4520f6bdd56f-95b06cf91a84` se publica en HuggingFace bajo la etiqueta `region:us` y se describe en su propia model card como un "versioned fleet archive" (archivo versionado de flota). La informacion disponible no permite identificarlo como un modelo de lenguaje en sentido estricto: la model card menciona una "recipe" canonica (`evaluations/2026-09-23_task00_centre_full_recovery`), un nivel ("tier") denominado "versioned snapshot" y la recomendacion de usar la revision exacta registrada y verificar `SHA256SUMS`. Esto apunta a un paquete de artefactos de un pipeline de evaluacion o de registro de tareas, no a pesos de un transformer entrenado.
+El artefacto identificado como `davidwdw/fa-log-task00-centre-full-hourly-4520f6bdd56f-95b06cf91a84` se publica en Hugging Face bajo la etiqueta `region:us` y se describe en su propia model card como un "versioned fleet archive" (archivo versionado de flota). La informacion disponible no permite identificarlo como un modelo de lenguaje en sentido estricto: la model card menciona una "recipe" canonica (`evaluations/2026-09-23_task00_centre_full_recovery`), un nivel ("tier") denominado "versioned snapshot" y la recomendacion de usar la revision exacta registrada y verificar `SHA256SUMS`. Esto apunta a un paquete de artefactos de un pipeline de evaluacion o de registro de tareas, no a pesos de un transformer entrenado.
 
 El autor es el usuario `davidwdw`, con cero descargas y cero "likes" en el momento de la consulta, y sin pipeline, licencia ni idiomas declarados. El repositorio se creo y actualizo el mismo instante (2026-09-26T19:58:37.000Z), lo que es coherente con una publicacion automatica de instantanea.
 
-Dado que no se proporcionan parametros, arquitectura, contexto ni dataset, esta ficha documenta exclusivamente lo verificable y marca explicitamente como "no disponible" todo aquello que la informacion facilitada no cubre. Es relevante para desarrolladores porque ilustra un patron de publicacion en HuggingFace de artefactos no-modelo (snapshots de flota con verificacion de integridad) que conviene distinguir de los repositorios de pesos antes de intentar cargarlos con `transformers` o `llama.cpp`.
+Dado que no se proporcionan parametros, arquitectura, contexto ni dataset, esta ficha documenta exclusivamente lo verificable y marca explicitamente como "no disponible" todo aquello que la informacion facilitada no cubre. Es relevante para desarrolladores porque ilustra un patron de publicacion en Hugging Face de artefactos no-modelo (snapshots de flota con verificacion de integridad) que conviene distinguir de los repositorios de pesos antes de intentar cargarlos con `transformers` o `llama.cpp`.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ Dado que no hay evidencia de que sea un modelo ejecutable, los casos de uso se l
 - Trazabilidad de flota ("fleet"): mantener un historico inmutable de instantaneas para auditar que version de un conjunto de tareas o recursos se uso en cada momento.
 - Integracion en CI/CD: incorporar la descarga y la comprobacion de hash como paso previo de un job que reconstruya un entorno de evaluacion concreto.
 - Archivado a largo plazo: conservar el snapshot como referencia congelada de un estado de tareas, evitando la deriva que introduciria un "directorio vivo".
-- Ensenanza de buenas practicas de publicacion: usarlo como ejemplo de repositorio de HuggingFace que no contiene pesos y que exige comprobaciones de integridad antes de su uso.
+- Ensenanza de buenas practicas de publicacion: usarlo como ejemplo de repositorio de Hugging Face que no contiene pesos y que exige comprobaciones de integridad antes de su uso.
 
 ## Benchmarks y rendimiento
 
@@ -75,6 +75,6 @@ No disponible. La informacion facilitada no identifica un modelo comparable; el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-4520f6bdd56f-95b06cf91a84
+- Hugging Face: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-4520f6bdd56f-95b06cf91a84
 - Recipe canonica citada en la model card: `evaluations/2026-09-23_task00_centre_full_recovery` (ruta interna, sin URL publica disponible)
 - Paper, blog, repositorio o demo adicionales: no disponibles

@@ -89,7 +89,7 @@ La comparativa es orientativa: ABForge-Qwen3-8B hereda las capacidades de Qwen3-
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/ABForge-Qwen3-8B-i1-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/ABForge-Qwen3-8B-i1-GGUF
 - Modelo base (safetensors): https://huggingface.co/SlowGuess/ABForge-Qwen3-8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/SlowGuess/abforge-data
 - Cuantizaciones estáticas: https://huggingface.co/mradermacher/ABForge-Qwen3-8B-GGUF

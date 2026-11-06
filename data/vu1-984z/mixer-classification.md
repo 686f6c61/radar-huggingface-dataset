@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`vu1-984z/mixer-classification` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura tipo Mixer orientada a tareas de clasificación. El autor lo describe explícitamente como un banco de pruebas para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado con resultados publicados. El checkpoint incluido (`model.safetensors`) se presenta como una inicialización válida para pruebas de humo (*smoke tests*), no como un modelo con rendimiento validado.
+`vu1-984z/mixer-classification` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura tipo Mixer orientada a tareas de clasificación. El autor lo describe explícitamente como un banco de pruebas para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado con resultados publicados. El checkpoint incluido (`model.safetensors`) se presenta como una inicialización válida para pruebas de humo (*smoke tests*), no como un modelo con rendimiento validado.
 
 El tamaño del modelo es mínimo: 33.088 parámetros totales según los datos reales extraídos del fichero de pesos. Se trata, por tanto, de un artefacto de escala *small* pensado para experimentación rápida y reproducible en CPU, sin requisitos de GPU ni de infraestructura de servido. La arquitectura declarada combina atención lineal, fusión mediante descomposición de Tucker, activación GELU y normalización por instancias.
 
-Su relevancia actual es limitada y acotada al ámbito de la investigación en arquitecturas alternativas al transformer. No hay puntuaciones de benchmarks, ni idiomas declarados, ni pipeline de HuggingFace asociado, ni descargas o interacciones registradas en el momento de la consulta. Cualquier uso en producción requeriría entrenar el modelo desde cero con datos etiquetados propios y documentar los resultados por separado.
+Su relevancia actual es limitada y acotada al ámbito de la investigación en arquitecturas alternativas al transformer. No hay puntuaciones de benchmarks, ni idiomas declarados, ni pipeline de Hugging Face asociado, ni descargas o interacciones registradas en el momento de la consulta. Cualquier uso en producción requeriría entrenar el modelo desde cero con datos etiquetados propios y documentar los resultados por separado.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ El autor indica de forma explícita que el repositorio no reclama ninguna puntua
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo, e incluso en GPU integradas y en microcontroladores con suficiente memoria.
 - Opciones de despliegue: al ser una implementación personalizada sin pipeline declarado, no hay soporte nativo conocido en vLLM, llama.cpp, Ollama ni TGI. El script `model.py` se ejecuta directamente con Python y PyTorch. Se requeriría un adaptador explícito para integrarlo en APIs genéricas de carga.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones.
-- Almacenamiento: el repositorio ocupa 0,0 GB según los metadatos de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB según los metadatos de Hugging Face.
 - Nota: los requisitos anteriores corresponden al checkpoint de inicialización. Un modelo entrenado a partir de esta arquitectura tendría requisitos distintos en función de la escala final, que no está especificada.
 
 ## Comparativa con modelos similares
@@ -84,13 +84,13 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - No se declaran idiomas soportados, por lo que no puede asumirse cobertura multilingüe ni monolingüe concreta.
 - No se especifica la longitud de contexto soportada por la arquitectura.
 - Con 33.088 parámetros, la capacidad de representación es extremadamente limitada; el riesgo de resultados inútiles en cualquier tarea realista es alto.
-- Al ser una implementación personalizada, no es compatible con las APIs genéricas de carga automática de HuggingFace sin escribir un adaptador específico.
+- Al ser una implementación personalizada, no es compatible con las APIs genéricas de carga automática de Hugging Face sin escribir un adaptador específico.
 - La licencia Apache 2.0 permite uso comercial del código y de los pesos, pero el autor recomienda revisar por separado los términos de los datos de origen si se combina con conjuntos de datos externos.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos en este repositorio, ya que estos últimos no constituyen evidencia de entrenamiento completado.
 - Persisten dudas sobre la conveniencia de usar este repositorio como base de producción: no hay mantenimiento documentado, ni versionado de releases, ni historial de descargas que indique validación por parte de terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vu1-984z/mixer-classification
-- Ficheros incluidos según la model card: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (todos accesibles desde el repositorio de HuggingFace).
+- Modelo en Hugging Face: https://huggingface.co/vu1-984z/mixer-classification
+- Ficheros incluidos según la model card: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (todos accesibles desde el repositorio de Hugging Face).
 - Paper, blog, repositorio o demo adicionales: no disponible. Las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo ni sobre su arquitectura; los resultados obtenidos correspondían a sitios sin relación alguna con el contenido técnico, por lo que se han descartado.

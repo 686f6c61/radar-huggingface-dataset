@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Whisper tiny Japanese es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla (ASR) `openai/whisper-tiny` de OpenAI, publicado por el usuario Nuttyman en HuggingFace. El objetivo declarado es adaptar el modelo base, originalmente entrenado por OpenAI sobre un corpus masivo y multilingue, a un conjunto de datos especifico denominado `Japanese_english`, presumiblemente compuesto por audio en ingles hablado con acento japones. El modelo conserva la arquitectura transformer encoder-decoder propia de la familia Whisper en su variante "tiny", con aproximadamente 37,7 millones de parametros.
+Whisper tiny Japanese es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla (ASR) `openai/whisper-tiny` de OpenAI, publicado por el usuario Nuttyman en Hugging Face. El objetivo declarado es adaptar el modelo base, originalmente entrenado por OpenAI sobre un corpus masivo y multilingue, a un conjunto de datos especifico denominado `Japanese_english`, presumiblemente compuesto por audio en ingles hablado con acento japones. El modelo conserva la arquitectura transformer encoder-decoder propia de la familia Whisper en su variante "tiny", con aproximadamente 37,7 millones de parametros.
 
-Se trata de un modelo de nicho, con muy poca traccion en la comunidad (40 descargas y 0 likes en el momento de la consulta) y una model card generada automaticamente por el `Trainer` de HuggingFace que no aporta descripcion funcional, casos de uso ni limitaciones. El autor no ha publicado informacion adicional sobre la composicion del dataset, el proceso de recoleccion de audio ni las condiciones de evaluacion.
+Se trata de un modelo de nicho, con muy poca traccion en la comunidad (40 descargas y 0 likes en el momento de la consulta) y una model card generada automaticamente por el `Trainer` de Hugging Face que no aporta descripcion funcional, casos de uso ni limitaciones. El autor no ha publicado informacion adicional sobre la composicion del dataset, el proceso de recoleccion de audio ni las condiciones de evaluacion.
 
 Su relevancia es limitada y experimental: resulta util como ejemplo de ajuste fino de Whisper para dominios acusticos concretos (habla no nativa) y como referencia de como un modelo tiny puede degradarse en WER cuando se especializa en una distribucion estrecha. No debe considerarse un modelo de produccion generalista.
 
@@ -44,7 +44,7 @@ El ajuste fino se realizo sobre el dataset `Japanese_english` (split `test` para
 - Evaluacion comparativa de tecnicas de fine-tuning: sirve como caso de estudio de sobreajuste (perdida de validacion creciente) y de como un dataset pequeno y especifico afecta al WER en un modelo tiny.
 - Subtitulado automatico de contenido audiovisual en ingles con acento japones: util para canales de YouTube o material docente donde el hablante no es nativo, siempre que se acepte un WER de referencia en torno al 23,8 %.
 - Investigacion en robustez acustica: permite analizar como un modelo tiny generalista se adapta a una distribucion acustica concreta y comparar con el modelo base sin ajustar.
-- Educacion y demos de HuggingFace: por su tamano reducido y licencia Apache 2.0, es adecuado para talleres y demos de `transformers` con `pipeline("automatic-speech-recognition")`.
+- Educacion y demos de Hugging Face: por su tamano reducido y licencia Apache 2.0, es adecuado para talleres y demos de `transformers` con `pipeline("automatic-speech-recognition")`.
 
 ## Benchmarks y rendimiento
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto audio | WER (Japanese English) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nuttyman/whisper-tiny_to_japanese_accent_oct30_2ndrun | 37,7 M | 30 s | 23,78 (declarado, no verificado) | Apache 2.0 | HuggingFace |
-| openai/whisper-tiny | 39 M | 30 s | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-base | 74 M | 30 s | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 244 M | 30 s | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| Nuttyman/whisper-tiny_to_japanese_accent_oct30_2ndrun | 37,7 M | 30 s | 23,78 (declarado, no verificado) | Apache 2.0 | Hugging Face |
+| openai/whisper-tiny | 39 M | 30 s | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-base | 74 M | 30 s | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 244 M | 30 s | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 
 No se dispone de resultados publicados del modelo base ni de alternativas sobre el mismo dataset `Japanese_english`, por lo que la comparacion cuantitativa directa no es posible con la informacion proporcionada.
 
@@ -98,7 +98,7 @@ No se dispone de resultados publicados del modelo base ni de alternativas sobre 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nuttyman/whisper-tiny_to_japanese_accent_oct30_2ndrun
+- Modelo en Hugging Face: https://huggingface.co/Nuttyman/whisper-tiny_to_japanese_accent_oct30_2ndrun
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - Repositorio oficial de Whisper en OpenAI: https://github.com/openai/whisper

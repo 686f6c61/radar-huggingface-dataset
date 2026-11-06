@@ -6,7 +6,7 @@ Este repositorio, publicado por el usuario mahmad-10xe, no es un modelo entrenad
 
 El modelo subyacente tiene 1.881.825.274 parámetros (aproximadamente 1,88 mil millones), según los metadatos reales de safetensors del repositorio, lo que lo sitúa en la categoría de modelos pequeños, aptos para inferencia en CPU y en GPU de gama media o baja. Pertenece a la familia Qwen3.5, presentada por Qwen como una generación de modelos multimodales nativos orientados a agentes, aunque la documentación pública disponible describe únicamente al miembro de mayor tamaño de la familia (Qwen3.5-397B-A17B) y no detalla las características concretas de la variante de 2B.
 
-La relevancia de esta ficha es limitada y conviene ser transparente: el repositorio tiene cero descargas y cero valoraciones en el momento de la consulta, su model card no aporta información técnica sustantiva y el acceso está restringido en HuggingFace, por lo que requiere aceptar condiciones antes de poder descargar los ficheros. Además, la información pública no permite confirmar la arquitectura, la longitud de contexto ni los idiomas del modelo base de 2B.
+La relevancia de esta ficha es limitada y conviene ser transparente: el repositorio tiene cero descargas y cero valoraciones en el momento de la consulta, su model card no aporta información técnica sustantiva y el acceso está restringido en Hugging Face, por lo que requiere aceptar condiciones antes de poder descargar los ficheros. Además, la información pública no permite confirmar la arquitectura, la longitud de contexto ni los idiomas del modelo base de 2B.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es limitada y conviene ser transparente: el reposito
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF; el repositorio agrupa varias cuantizaciones, pero los niveles concretos (Q4_K_M, Q5_K_M, Q8_0, etc.) no estan detallados en la informacion disponible |
 | Idiomas soportados | no disponibles |
-| Licencia | apache-2.0 (acceso restringido: requiere aceptar condiciones en HuggingFace) |
+| Licencia | apache-2.0 (acceso restringido: requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | GGUF (ficheros cuantizados); el modelo base original se distribuye en safetensors |
 
 Otros datos del repositorio: tamano total de 23,2 GB, etiquetas `gguf`, `quantized`, `qwen3.5`, `quantx`, `endpoints_compatible`, `conversational`, `region:us`; creado el 2026-07-17 y actualizado el 2026-09-23.
@@ -87,7 +87,7 @@ No se dispone de informacion verificada sobre otras alternativas de la misma cat
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio esta marcado como gated y exige aceptar condiciones en HuggingFace antes de descargar, lo que anade friccion a cualquier integracion automatizada.
+- Acceso restringido: el repositorio esta marcado como gated y exige aceptar condiciones en Hugging Face antes de descargar, lo que anade friccion a cualquier integracion automatizada.
 - Trazabilidad limitada: se desconoce el proceso exacto de cuantizacion y el significado de la etiqueta `quantx`; no hay verificacion independiente de la fidelidad de los pesos respecto al modelo base.
 - Sin adopcion demostrable: cero descargas y cero valoraciones en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
 - Model card vacia: no se documentan arquitectura, contexto, idiomas, plantilla de chat ni resultados de evaluacion, lo que obliga a caracterizar el modelo por cuenta propia.
@@ -99,7 +99,7 @@ No se dispone de informacion verificada sobre otras alternativas de la misma cat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mahmad-10xe/Qwen3.5-GGUF-Quants
+- Repositorio en Hugging Face: https://huggingface.co/mahmad-10xe/Qwen3.5-GGUF-Quants
 - Arbol de ficheros del repositorio: https://huggingface.co/mahmad-10xe/Qwen3.5-GGUF-Quants/tree/main
 - Blog oficial de Qwen sobre la familia Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Busqueda de Qwen3.5 en Ollama: https://ollama.com/search?q=qwen3.5

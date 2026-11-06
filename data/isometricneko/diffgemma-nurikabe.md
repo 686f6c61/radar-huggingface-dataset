@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/isometricneko/diffgemma-nurikabe
+- Modelo en Hugging Face: https://huggingface.co/isometricneko/diffgemma-nurikabe
 - Dataset: https://huggingface.co/datasets/isometricneko/nurikabe10x10
 - Codigo de reproduccion: https://github.com/isomorphicdude/gemma/tree/sudoku-sft
 - Notebook de visualizacion: https://github.com/isomorphicdude/gemma/blob/sudoku-sft/gemma/diffusion/hackable_diffusion_adapter/nurikabe_trajectory_video_colab.ipynb

@@ -60,7 +60,7 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eljohnsonfield/intern-zero-shot-transfer
+- Repositorio en Hugging Face: https://huggingface.co/eljohnsonfield/intern-zero-shot-transfer
 - Articulo sobre Zero-Shot Transfer (EmergentMind): https://www.emergentmind.com/topics/zero-shot-transfer-0d6a650d-431c-46cb-9cd6-9cfc3cfd9c8c
 - Recopilacion de papers sobre Zero Shot Transfer (AIModels.fyi): https://www.aimodels.fyi/research-topics/zero-shot-transfer
 - Paper sobre Zero-Shot Transfer in Imitation Learning (arXiv): https://arxiv.org/pdf/2310.06710

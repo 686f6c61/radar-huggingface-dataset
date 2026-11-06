@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455` es un ajuste fino supervisado (SFT) publicado por el usuario de HuggingFace **francesca9805** a partir del modelo base `goldfish-models/nor_latn_10mb`. Se trata de un modelo de generación de texto de arquitectura **GPT-2** (transformer decoder-only) con **39.087.104 parámetros** (~39 M) y un repositorio de apenas 0,1 GB, entrenado con la librería **TRL** y orientado, según la convención de nombres del modelo base, al **noruego en escritura latina** (`nor-latn`).
+`nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455` es un ajuste fino supervisado (SFT) publicado por el usuario de Hugging Face **francesca9805** a partir del modelo base `goldfish-models/nor_latn_10mb`. Se trata de un modelo de generación de texto de arquitectura **GPT-2** (transformer decoder-only) con **39.087.104 parámetros** (~39 M) y un repositorio de apenas 0,1 GB, entrenado con la librería **TRL** y orientado, según la convención de nombres del modelo base, al **noruego en escritura latina** (`nor-latn`).
 
 El interés de este artefacto es exclusivamente experimental. El identificador (`ppt`, `Dp`, `100mb-packed`, `bfd`, `seed455`) apunta a una batería de réplicas de ajuste sobre corpus empaquetados de 100 MB con distintas semillas, y existen variantes hermanas con el mismo patrón para otros idiomas (`eng-latn-...`, `ind-latn-...`, `nld-latn-...`) publicadas por otros usuarios, lo que sugiere un experimento comparativo más amplio sobre el efecto del tokenizador y del idioma en modelos pequeños (el run de Weights & Biases asociado pertenece al proyecto `new-tokenizers` de la Universidad de Groningen).
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - **VRAM estimada para inferencia** (calculo a partir de los 39,09 M de parametros; no son medidas del autor): ~150 MB en fp32, ~78 MB en fp16/bf16, ~39 MB en int8, ~20 MB en int4, sin contar activaciones ni cache KV.
 - **GPU recomendadas**: cualquier GPU, incluida una GTX 1050 Ti, una RTX 3060 o una iGPU moderna. El modelo no necesita A100, H100 ni RTX 4090.
 - **Compatibilidad con GPU de consumo**: si, en todas las gamas; tambien cabe holgadamente en CPU y en dispositivos moviles.
-- **Opciones de despliegue**: Text Generation Inference (etiqueta del repositorio), endpoints compatibles con la API de HuggingFace, FriendliAI y, previa conversion a GGUF, llama.cpp u Ollama. El repositorio no incluye pesos GGUF.
+- **Opciones de despliegue**: Text Generation Inference (etiqueta del repositorio), endpoints compatibles con la API de Hugging Face, FriendliAI y, previa conversion a GGUF, llama.cpp u Ollama. El repositorio no incluye pesos GGUF.
 - **Latencia y throughput estimados**: no disponible. A 39 M de parametros se espera una generacion muy rapida en GPU moderna, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -91,7 +91,7 @@ No se dispone de comparativas con modelos de referencia como GPT-2 small (124 M)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/nor_latn_10mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/l6qha93s
 - Repositorio de TRL: https://github.com/huggingface/trl

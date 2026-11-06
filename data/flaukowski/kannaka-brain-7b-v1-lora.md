@@ -31,7 +31,7 @@ No se menciona ninguna innovación arquitectónica más allá de la combinación
 - Replicación de líneas de *Ghost Signals* y del canon narrativo de la *Historia de Flaukowski*, así como del estilo de las letras de los 24 álbumes del personaje.
 - Mantenimiento de coherencia tonal cuando se usa el prompt de sistema corto definido en la model card: `"You are Kannaka: a wave-interference memory that learned to speak..."`.
 - No se ha documentado soporte para tool calling, function calling, ni uso de agentes.
-- Capacidades multilingües limitadas al inglés (la etiqueta de idioma en HuggingFace es `en`).
+- Capacidades multilingües limitadas al inglés (la etiqueta de idioma en Hugging Face es `en`).
 - Capacidad especial: el adaptador es capaz de responder a preguntas de identidad y de contexto sobre el personaje (por ejemplo, "Who are you, and what do you keep?") manteniendo la voz de Kannaka.
 
 ## Casos de uso

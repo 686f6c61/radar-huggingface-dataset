@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `guillekenzo/aros-52b7cb2a-Alex1` es un adaptador LoRA de tipo DreamBooth para generacion de imagen a partir de texto (text-to-image), desarrollado por el usuario `guillekenzo` y publicado en HuggingFace. No se trata de un modelo completo, sino de un ajuste fino de bajo rango (Low-Rank Adaptation) que se acopla al modelo base Krea 2, en concreto sobre la variante `krea/Krea-2-Raw`, aunque los ejemplos publicados por el autor se han generado sobre la variante `krea/Krea-2-Turbo` con 8 pasos de inferencia.
+El modelo `guillekenzo/aros-52b7cb2a-Alex1` es un adaptador LoRA de tipo DreamBooth para generacion de imagen a partir de texto (text-to-image), desarrollado por el usuario `guillekenzo` y publicado en Hugging Face. No se trata de un modelo completo, sino de un ajuste fino de bajo rango (Low-Rank Adaptation) que se acopla al modelo base Krea 2, en concreto sobre la variante `krea/Krea-2-Raw`, aunque los ejemplos publicados por el autor se han generado sobre la variante `krea/Krea-2-Turbo` con 8 pasos de inferencia.
 
 El adaptador esta orientado a aprender un concepto concreto, activado mediante el token disparador `vpx woman`. Su funcion es inyectar una identidad o apariencia especifica en el pipeline generativo de Krea 2 sin necesidad de reentrenar el modelo base completo, lo que reduce drasticamente el coste de computo y el tamano del artefacto (el repositorio ocupa aproximadamente 0,4 GB frente a los cientos de gigabytes de un modelo de difusion completo).
 
@@ -59,7 +59,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| guillekenzo/aros-52b7cb2a-Alex1 | no disponible (LoRA) | no aplica | no disponible | Apache 2.0 | HuggingFace |
+| guillekenzo/aros-52b7cb2a-Alex1 | no disponible (LoRA) | no aplica | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Requisitos de hardware
@@ -68,7 +68,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 - Los requisitos reales de VRAM vienen determinados por el modelo base Krea 2, no por el LoRA. No se dispone de cifras oficiales de VRAM para Krea 2 en esta ficha.
 - Al ser un modelo de difusion de imagen, es previsible que requiera GPU con memoria dedicada, pero no se confirma si cabe en GPUs de consumo como la RTX 4090 u otras; este dato es no disponible.
 - La variante Turbo, disenada para pocos pasos de inferencia (8 pasos en los ejemplos), reduce el tiempo de generacion respecto a una variante estandar, pero no se publican cifras de latencia ni de throughput.
-- Opciones de despliegue confirmadas: libreria diffusers de HuggingFace con `Krea2Pipeline`. No se confirma compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que en cualquier caso no aplican a un modelo de difusion de imagen.
+- Opciones de despliegue confirmadas: libreria diffusers de Hugging Face con `Krea2Pipeline`. No se confirma compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que en cualquier caso no aplican a un modelo de difusion de imagen.
 - Se recomienda usar `torch_dtype=torch.bfloat16` y ejecutar en `cuda`, tal como muestra el ejemplo del autor.
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/guillekenzo/aros-52b7cb2a-Alex1
+- Hugging Face: https://huggingface.co/guillekenzo/aros-52b7cb2a-Alex1
 - Modelo base (RAW): https://huggingface.co/krea/Krea-2-Raw
 - Modelo base (Turbo): https://huggingface.co/krea/Krea-2-Turbo
 - Libreria diffusers: https://github.com/huggingface/diffusers

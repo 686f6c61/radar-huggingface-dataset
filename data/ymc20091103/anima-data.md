@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `anima-data`, publicado por el usuario `ymc20091103` en HuggingFace, es un repositorio etiquetado con licencia MIT y la región `us`. Sin embargo, la información disponible es extremadamente limitada: no se proporciona descripción, arquitectura, parámetros, contexto, ni ningún detalle técnico en la model card. El repositorio no registra descargas ni interacciones, y fue creado el 15 de agosto de 2026, una fecha que sugiere que podría tratarse de un artefacto de prueba o un placeholder.
+El modelo `anima-data`, publicado por el usuario `ymc20091103` en Hugging Face, es un repositorio etiquetado con licencia MIT y la región `us`. Sin embargo, la información disponible es extremadamente limitada: no se proporciona descripción, arquitectura, parámetros, contexto, ni ningún detalle técnico en la model card. El repositorio no registra descargas ni interacciones, y fue creado el 15 de agosto de 2026, una fecha que sugiere que podría tratarse de un artefacto de prueba o un placeholder.
 
 Dada la ausencia total de documentación, no es posible determinar qué tipo de modelo es, qué problema resuelve, ni por qué sería relevante. Cualquier afirmación sobre su funcionamiento sería especulativa. Esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente las carencias de información.
 
@@ -54,5 +54,5 @@ No disponible. Al no conocerse la naturaleza del modelo (tamaño, arquitectura, 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/ymc20091103/anima-data)
-- [Perfil del autor en HuggingFace](https://huggingface.co/ymc20091103) (enlace inferido a partir del ID, no verificado)
+- [Repositorio en Hugging Face](https://huggingface.co/ymc20091103/anima-data)
+- [Perfil del autor en Hugging Face](https://huggingface.co/ymc20091103) (enlace inferido a partir del ID, no verificado)

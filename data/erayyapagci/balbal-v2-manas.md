@@ -95,12 +95,12 @@ No se han incluido cifras de otros modelos ASR abiertos (Whisper, NVIDIA Canary/
 - Solo soporta turco e inglés; no hay detección automática de idioma declarada, por lo que hay que seleccionar el idioma explícitamente.
 - No hay información publicada sobre sesgos del modelo, alucinaciones típicas de ASR (alucinación de texto en silencios o ruido) ni comportamiento con acentos no cubiertos por las 7.000 horas de entrenamiento.
 - El rendimiento en llamadas telefónicas turcas (sigWER 14,89 %) indica que casi una de cada siete locuciones contiene al menos un error que cambia el significado: en producción crítica (por ejemplo, cumplimiento normativo o análisis de sentimiento) conviene revisión humana.
-- 0 descargas registradas en HuggingFace en el momento de redactar la ficha: es un modelo muy reciente y con poco uso comunitario, sin auditoría externa.
+- 0 descargas registradas en Hugging Face en el momento de redactar la ficha: es un modelo muy reciente y con poco uso comunitario, sin auditoría externa.
 - No hay información sobre cuantización, lo que puede limitar el despliegue en dispositivos con recursos muy ajustados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/erayyapagci/balbal-v2-manas
+- Modelo en Hugging Face: https://huggingface.co/erayyapagci/balbal-v2-manas
 - Modelo base: https://huggingface.co/nvidia/stt_en_fastconformer_ctc_large
 - Variante menor (balbal-v2): https://huggingface.co/erayyapagci/balbal-v2
 - Página oficial del proyecto (benchmarks, demo en navegador y app Android): https://erayy.com/balbal/

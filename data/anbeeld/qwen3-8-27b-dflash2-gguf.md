@@ -79,7 +79,7 @@ La comparativa directa con otros draft models no es posible sin datos de rendimi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Anbeeld/Qwen3.8-27B-DFlash2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Anbeeld/Qwen3.8-27B-DFlash2-GGUF
 - Modelo base (draft model original): https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B
 - Otras cuantizaciones GGUF del mismo draft model: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2-GGUF y https://huggingface.co/neuralforgequantum/Qwen3.8-27B-DFlash2-GGUF

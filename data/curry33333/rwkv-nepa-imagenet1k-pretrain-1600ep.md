@@ -70,5 +70,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Curry33333/rwkv-nepa-imagenet1k-pretrain-1600ep
+- Repositorio en Hugging Face: https://huggingface.co/Curry33333/rwkv-nepa-imagenet1k-pretrain-1600ep
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código) en la información proporcionada.

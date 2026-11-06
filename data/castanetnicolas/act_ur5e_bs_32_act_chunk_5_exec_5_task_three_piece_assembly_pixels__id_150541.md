@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACT_UR5e_BS_32_Act_Chunk_5_Exec_5_TASK_three_piece_assembly_PIXELS es una política de imitación (policy) entrenada con LeRobot y publicada por el usuario castanetnicolas en HuggingFace. No es un modelo de lenguaje: es un controlador visomotor para robótica que implementa el método Action Chunking with Transformers (ACT), descrito en el artículo arXiv:2304.13705. La política recibe el estado del robot (vector de 9 dimensiones) y dos cámaras RGB de 84x84 píxeles, y devuelve un vector de acción de 7 dimensiones.
+ACT_UR5e_BS_32_Act_Chunk_5_Exec_5_TASK_three_piece_assembly_PIXELS es una política de imitación (policy) entrenada con LeRobot y publicada por el usuario castanetnicolas en Hugging Face. No es un modelo de lenguaje: es un controlador visomotor para robótica que implementa el método Action Chunking with Transformers (ACT), descrito en el artículo arXiv:2304.13705. La política recibe el estado del robot (vector de 9 dimensiones) y dos cámaras RGB de 84x84 píxeles, y devuelve un vector de acción de 7 dimensiones.
 
 El modelo resuelve una tarea concreta de ensamblaje: insertar la primera pieza en la base e insertar la segunda pieza encima de la primera. Se entrenó sobre el dataset castanetnicolas/mimicgen_three_piece_assembly_d1_image84, con 200 episodios, 67.101 fotogramas y una frecuencia de captura de 20 FPS, generado con MimicGen. El nombre del repositorio indica un batch size de 32, un chunk de acciones de 5 y una ejecución de 5 acciones por inferencia, además de observaciones en píxeles ("PIXELS").
 
@@ -97,7 +97,7 @@ No se dispone de resultados de benchmarks que permitan una comparación cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_5_Exec_5_TASK_three_piece_assembly_PIXELS__ID_150541
+- Modelo en Hugging Face: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_5_Exec_5_TASK_three_piece_assembly_PIXELS__ID_150541
 - Dataset de entrenamiento: https://huggingface.co/datasets/castanetnicolas/mimicgen_three_piece_assembly_d1_image84
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=castanetnicolas/mimicgen_three_piece_assembly_d1_image84
 - Artículo de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705

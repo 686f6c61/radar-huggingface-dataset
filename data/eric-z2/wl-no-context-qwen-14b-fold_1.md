@@ -2,7 +2,7 @@
 
 ## Resumen
 
-eric-z2/WL-no-context-qwen-14b-fold_1 es un repositorio de pesos publicado en HuggingFace por el usuario eric-z2. Su único material documental es una model card autogenerada por la plantilla de transformers en la que el autor no ha rellenado ningún campo: no hay descripción, ni datos de entrenamiento, ni evaluación, ni licencia. El identificador sugiere una variante o ajuste derivado de un modelo Qwen de 14 000 millones de parámetros, con un experimento etiquetado como "WL-no-context" y una partición "fold_1" (nomenclatura típica de validación cruzada), pero ninguna de estas inferencias está confirmada.
+eric-z2/WL-no-context-qwen-14b-fold_1 es un repositorio de pesos publicado en Hugging Face por el usuario eric-z2. Su único material documental es una model card autogenerada por la plantilla de transformers en la que el autor no ha rellenado ningún campo: no hay descripción, ni datos de entrenamiento, ni evaluación, ni licencia. El identificador sugiere una variante o ajuste derivado de un modelo Qwen de 14 000 millones de parámetros, con un experimento etiquetado como "WL-no-context" y una partición "fold_1" (nomenclatura típica de validación cruzada), pero ninguna de estas inferencias está confirmada.
 
 El repositorio registra 0 descargas y 0 "likes", ocupa 0,1 GB y las etiquetas declaradas incluyen safetensors, transformers y una referencia arXiv (1910.09700) que no es un paper de arquitectura, sino el trabajo de Lacoste et al. (2019) sobre el calculador de impacto medioambiental citado en la propia plantilla de model card. El tamaño del repositorio es incompatible con los pesos completos de un modelo de 14B en safetensors, que en fp16 rondarían los 28 GB, lo que apunta a un adaptador, a un conjunto parcial de tensores o a un checkpoint truncado.
 
@@ -29,7 +29,7 @@ Por todo ello, la relevancia práctica actual del artefacto es muy limitada: sin
 
 ## Arquitectura y entrenamiento
 
-No disponible. La información proporcionada no contiene ningún dato sobre la arquitectura del modelo, el número de tokens de entrenamiento, la composición del dataset ni la existencia de fases de ajuste como RLHF, DPO o SFT. La model card es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]".
+No disponible. La información proporcionada no contiene ningún dato sobre la arquitectura del modelo, el número de tokens de entrenamiento, la composición del dataset ni la existencia de fases de ajuste como RLHF, DPO o SFT. La model card es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]".
 
 El único elemento potencialmente informativo es la etiqueta arxiv:1910.09700, que corresponde a "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019). Se trata de una referencia incluida en la plantilla estándar de model card para el cálculo de emisiones, no de una cita sobre la arquitectura o el procedimiento de entrenamiento. Del mismo modo, el nombre del repositorio ("WL-no-context-qwen-14b-fold_1") sugiere un experimento sobre un Qwen de 14B con una variante sin contexto y una partición de validación cruzada, pero no hay documentación que respalde esa lectura. El tamaño real del repositorio (0,1 GB) indica que el artefacto publicado no contiene, con alta probabilidad, los pesos completos de un modelo de 14B.
 
@@ -98,7 +98,7 @@ No disponible. No es posible establecer una comparación rigurosa porque no se c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eric-z2/WL-no-context-qwen-14b-fold_1
+- Hugging Face: https://huggingface.co/eric-z2/WL-no-context-qwen-14b-fold_1
 - Referencia arXiv citada en la plantilla de la model card (no relacionada con la arquitectura del modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto medioambiental mencionado en la plantilla: https://mlco2.github.io/impact
 

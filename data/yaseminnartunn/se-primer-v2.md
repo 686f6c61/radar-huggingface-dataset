@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SE Primer v2 es un modelo de clasificación tabular publicado por yaseminnartunn en HuggingFace. No es un modelo de lenguaje: se trata de un pipeline de scikit-learn compuesto por un `StandardScaler` seguido de una `LogisticRegression`, exportado también a ONNX (Opset 17). Su tarea es predecir, a partir de seis características numéricas de comportamiento, si un jugador en una simulación de formación necesita apoyo proactivo (`destek_gerekli = 1`) o puede continuar de forma autónoma (`destek_gerekli = 0`).
+SE Primer v2 es un modelo de clasificación tabular publicado por yaseminnartunn en Hugging Face. No es un modelo de lenguaje: se trata de un pipeline de scikit-learn compuesto por un `StandardScaler` seguido de una `LogisticRegression`, exportado también a ONNX (Opset 17). Su tarea es predecir, a partir de seis características numéricas de comportamiento, si un jugador en una simulación de formación necesita apoyo proactivo (`destek_gerekli = 1`) o puede continuar de forma autónoma (`destek_gerekli = 0`).
 
 El modelo está diseñado para un contexto muy específico: un simulador educativo ("SE Primer") en turco, con escenas de decisión sobre arquitectura, testing y protección de datos (KVKK). Las variables de entrada recogen el nivel del jugador (junior/senior), la escena, el tiempo de duda, el número de cambios de decisión, errores previos y número de interacciones con un tutor de IA. La salida es una probabilidad binaria de necesidad de apoyo.
 
@@ -84,5 +84,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yaseminnartunn/se-primer-v2
+- Modelo en Hugging Face: https://huggingface.co/yaseminnartunn/se-primer-v2
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados al modelo.

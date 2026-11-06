@@ -83,8 +83,8 @@ La model card indica que la naturalidad e inteligibilidad son inferiores a las d
 
 | Modelo | Arquitectura | Voces | Idioma | Calidad declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Piper-TTS-PL (este modelo) | VITS via piper1-gpl, ONNX | 8 | polaco | UTMOS 2,7-3,3; WER 7-22 % | Pesos CC BY-SA 4.0; runtime GPL-3.0 | HuggingFace, repo de 0,1 GB |
-| Matcha-TTS-PL (`hvsr-robotics/Matcha-TTS-PL`) | Matcha-TTS | 8 (mismos lectores) | polaco | Superior en naturalidad e inteligibilidad que el modelo Piper segun el autor; cifras concretas no disponibles en esta informacion | no disponible en esta informacion | HuggingFace |
+| Piper-TTS-PL (este modelo) | VITS via piper1-gpl, ONNX | 8 | polaco | UTMOS 2,7-3,3; WER 7-22 % | Pesos CC BY-SA 4.0; runtime GPL-3.0 | Hugging Face, repo de 0,1 GB |
+| Matcha-TTS-PL (`hvsr-robotics/Matcha-TTS-PL`) | Matcha-TTS | 8 (mismos lectores) | polaco | Superior en naturalidad e inteligibilidad que el modelo Piper segun el autor; cifras concretas no disponibles en esta informacion | no disponible en esta informacion | Hugging Face |
 | `pl_PL-darkman-medium` (`rhasspy/piper-checkpoints`) | VITS, mono-hablante | 1 | polaco | no disponible | Datos de entrenamiento CC0 | Repositorio de checkpoints de Piper |
 
 No se dispone de datos de rendimiento de los modelos comparados en la informacion proporcionada, salvo la afirmacion cualitativa de que el modelo Piper es mas rapido en CPU pero menos natural que el Matcha del mismo autor.
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento de los modelos comparados en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hvsr-robotics/Piper-TTS-PL
+- Modelo en Hugging Face: https://huggingface.co/hvsr-robotics/Piper-TTS-PL
 - Repositorio de interfaz y sintesis por lotes: https://github.com/machinekind/tts-pl-playground
 - Modelo de control del mismo autor, `hvsr-robotics/Matcha-TTS-PL` (referenciado en la model card; URL no incluida en la informacion disponible)
 - Base de voces Piper, `rhasspy/piper-checkpoints` (referenciado en la model card; URL no incluida en la informacion disponible)

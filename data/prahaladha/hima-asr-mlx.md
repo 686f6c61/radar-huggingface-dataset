@@ -92,7 +92,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Prahaladha/hima-asr-mlx
+- Modelo en Hugging Face: https://huggingface.co/Prahaladha/hima-asr-mlx
 - Modelo base: https://huggingface.co/Prahaladha/hima-asr
 - Versión 8-bit: https://huggingface.co/Prahaladha/hima-asr-mlx-8bit
 - Versión 4-bit: https://huggingface.co/Prahaladha/hima-asr-mlx-4bit

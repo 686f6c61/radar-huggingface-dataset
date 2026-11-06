@@ -6,7 +6,7 @@ Este repositorio contiene un checkpoint de generacion de texto en hebreo de 39.0
 
 La relevancia de este tipo de publicaciones es metodologica: la familia goldfish-models entrena modelos monolingues diminutos para lenguas de bajos recursos variando el tamano del corpus (1 MB, 10 MB, 100 MB), de modo que este checkpoint permite estudiar como interactua el ajuste fino SFT con vocabularios y corpus muy reducidos. No es un modelo apto para produccion ni para tareas generales de generacion: su tamano (39 M de parametros) y la ausencia de evaluacion publicada lo sitúan como material de laboratorio.
 
-La arquitectura declarada en las etiquetas de HuggingFace es GPT-2 (transformers, safetensors), con pipeline text-generation e integracion anunciada con text-generation-inference. No se dispone de informacion sobre longitud de contexto, composicion del dataset de ajuste ni resultados de benchmarks.
+La arquitectura declarada en las etiquetas de Hugging Face es GPT-2 (transformers, safetensors), con pipeline text-generation e integracion anunciada con text-generation-inference. No se dispone de informacion sobre longitud de contexto, composicion del dataset de ajuste ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -22,7 +22,7 @@ La arquitectura declarada en las etiquetas de HuggingFace es GPT-2 (transformers
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 0,1 GB |
 | Modelo base | goldfish-models/heb_hebr_10mb |
-| Fecha de creacion / actualizacion | 30 de septiembre de 2026 (alta y ultima actualizacion, segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 30 de septiembre de 2026 (alta y ultima actualizacion, segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -45,7 +45,7 @@ El procedimiento de ajuste fue SFT (supervised fine-tuning) ejecutado con TRL 0.
 - Investigacion sobre tokenizadores: el checkpoint forma parte de una serie de experimentos del proyecto "new-tokenizers" en Weights & Biases, por lo que su uso natural es comparar configuraciones de vocabulario y empaquetado de corpus en hebreo manteniendo fijo el modelo base.
 - Reproducibilidad de experimentos: sirve como punto de control con semilla fija (seed3407) para replicar resultados de ajuste fino SFT en corpus de 10 MB y contrastar con las variantes hermanas del mismo autor.
 - Prototipado de generacion de texto en hebreo en entornos sin GPU: con 39 M de parametros el modelo cabe en CPU y memoria muy reducida, lo que permite pruebas rapidas de formato y de plantillas de prompt antes de escalar a modelos mayores.
-- Docencia y formacion: es un ejemplo manejable para explicar el flujo completo de TRL (SFT), el registro de experimentos en Weights & Biases y la publicacion en HuggingFace.
+- Docencia y formacion: es un ejemplo manejable para explicar el flujo completo de TRL (SFT), el registro de experimentos en Weights & Biases y la publicacion en Hugging Face.
 - Pruebas de infraestructura de despliegue: al ser compatible con text-generation-inference y con la API de transformers, puede usarse como "modelo de humo" para validar pipelines de serving, contenedores y monitorizacion antes de desplegar modelos grandes.
 - Aumento de datos a pequena escala: generacion de variaciones de frases en hebreo para tareas auxiliares, siempre con revision humana y asumiendo una calidad limitada.
 - Comparativas de eficiencia: medir latencia y consumo de memoria de un transformer de 39 M frente a alternativas de mayor tamano para establecer lineas base de rendimiento.
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/heb-hebr-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407 | 39,1 M | no disponible | no disponible | HuggingFace, 0 descargas | Objeto de esta ficha |
-| goldfish-models/heb_hebr_10mb | no disponible | no disponible | no disponible | HuggingFace | Modelo base del ajuste fino; sin datos de rendimiento en la informacion proporcionada |
-| fpadovani/heb-hebr-100mb-ppt-Dp-10mb_seed3407 | 124,8 M (segun LLM Explorer) | no disponible | no disponible | HuggingFace | Variante de la misma serie experimental; sin benchmarks publicados |
-| francesca9805/heb-hebr-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | no disponible | no disponible | no disponible | HuggingFace | Checkpoint hermano con distinta semilla; sin benchmarks publicados |
+| francesca9805/heb-hebr-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407 | 39,1 M | no disponible | no disponible | Hugging Face, 0 descargas | Objeto de esta ficha |
+| goldfish-models/heb_hebr_10mb | no disponible | no disponible | no disponible | Hugging Face | Modelo base del ajuste fino; sin datos de rendimiento en la informacion proporcionada |
+| fpadovani/heb-hebr-100mb-ppt-Dp-10mb_seed3407 | 124,8 M (segun LLM Explorer) | no disponible | no disponible | Hugging Face | Variante de la misma serie experimental; sin benchmarks publicados |
+| francesca9805/heb-hebr-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | no disponible | no disponible | no disponible | Hugging Face | Checkpoint hermano con distinta semilla; sin benchmarks publicados |
 
 No se dispone de datos de rendimiento para establecer una comparacion cuantitativa con alternativas de la misma categoria.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/heb-hebr-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/heb-hebr-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/heb_hebr_10mb
 - Checkpoint hermano (semilla 3407): https://huggingface.co/francesca9805/heb-hebr-10mb-ppt-Dp-100mb-packed-bfd_seed3407
 - Checkpoint hermano (100 MB de datos, 10 MB de vocabulario, semilla 10): https://huggingface.co/francesca9805/heb-hebr-100mb-ppt-Dp-10mb-packed-bfd_seed10

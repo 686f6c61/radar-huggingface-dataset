@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: al ser un modelo de ~5B parametros en full precision (safetensors), se estiman entre 10-12 GB de VRAM para inferencia en FP16. El tamano del repo (9.4 GB) sugiere pesos en FP16 o BF16.
 - GPU recomendadas: el entrenamiento se realizo en 4x A100, pero para inferencia basica seria suficiente una GPU consumer de 16 GB (RTX 4080/4090) o una A10/A16 en la nube.
 - Despliegue en consumer GPU: posible con cuantizacion (AWQ, GPTQ) o usando llama.cpp con GGUF, aunque no se proporcionan ficheros cuantizados en el repo.
-- Opciones de despliegue: vLLM, TGI o transformers de HuggingFace para inferencia en full precision; llama.cpp/Ollama si se generan ficheros GGUF.
+- Opciones de despliegue: vLLM, TGI o transformers de Hugging Face para inferencia en full precision; llama.cpp/Ollama si se generan ficheros GGUF.
 - Latencia y throughput: no disponible. Al ser un modelo pequeno (~5B), se espera una latencia moderada en GPU consumer, pero no hay datos publicados.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ La comparativa directa con los modelos base es la referencia mas util: este chec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-3b-x-internvl35-2b-mmr1-old-groupB-internvl35-2b-full
+- Repositorio Hugging Face: https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-3b-x-internvl35-2b-mmr1-old-groupB-internvl35-2b-full
 - Perfil del autor: https://huggingface.co/logan7000/models
 - Modelo relacionado (variante 7B/8B): https://huggingface.co/q1716523669/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-groupB-internvl35-8b
 - Repositorio de Qwen3-VL (referencia de la familia Qwen VL): https://github.com/QwenLM/Qwen3-VL

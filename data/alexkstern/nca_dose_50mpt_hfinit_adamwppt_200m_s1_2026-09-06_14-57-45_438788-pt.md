@@ -67,13 +67,13 @@ No se dispone de resultados en MMLU, HumanEval, GSM8K u otros conjuntos de evalu
 
 ## Comparativa con modelos similares
 
-Se han identificado dos modelos relacionados del mismo autor en HuggingFace, aunque no se dispone de sus especificaciones completas:
+Se han identificado dos modelos relacionados del mismo autor en Hugging Face, aunque no se dispone de sus especificaciones completas:
 
 | Modelo | Tamaño (inferido del nombre) | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nca_dose_50Mpt_hfinit_20M_s1_2026-08-15_00-27-50_481718-pt | 20M (probablemente tokens ppt) | 2048 | Apache 2.0 | HuggingFace |
-| nca_dose_50Mpt_hfinit_adamwppt_200M_s1_2026-09-06_14-57-45_438788-pt | 200M (probablemente tokens ppt) | 2048 | Apache 2.0 | HuggingFace |
-| nca_dose_50Mpt_hfinit_1B_s1_2026-08-15_01-26-21_188670-pt | 1B (probablemente tokens ppt) | 2048 | Apache 2.0 | HuggingFace |
+| nca_dose_50Mpt_hfinit_20M_s1_2026-08-15_00-27-50_481718-pt | 20M (probablemente tokens ppt) | 2048 | Apache 2.0 | Hugging Face |
+| nca_dose_50Mpt_hfinit_adamwppt_200M_s1_2026-09-06_14-57-45_438788-pt | 200M (probablemente tokens ppt) | 2048 | Apache 2.0 | Hugging Face |
+| nca_dose_50Mpt_hfinit_1B_s1_2026-08-15_01-26-21_188670-pt | 1B (probablemente tokens ppt) | 2048 | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. La comparación se limita a la cantidad de tokens utilizados en la fase `ppt`, según los nombres de los repositorios.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfinit_adamwppt_200M_s1_2026-09-06_14-57-45_438788-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfinit_adamwppt_200M_s1_2026-09-06_14-57-45_438788-pt
 - Weights & Biases run: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/7k9se6dp
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Modelo relacionado (20M): https://huggingface.co/alexkstern/nca_dose_50Mpt_hfinit_20M_s1_2026-08-15_00-27-50_481718-pt

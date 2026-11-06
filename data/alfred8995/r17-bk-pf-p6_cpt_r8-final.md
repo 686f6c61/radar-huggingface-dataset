@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-p6_cpt_r8-final` es un checkpoint de modelo de lenguaje publicado en HuggingFace por el usuario alfred8995, con un total de 1.438.812.160 parámetros (aproximadamente 1,44 mil millones) verificados a partir de los pesos en formato safetensors. La etiqueta de arquitectura del repositorio es `olmo2`, lo que lo vincula a la familia OLMo 2 de AllenAI, aunque el autor del checkpoint es un particular y no se dispone de información sobre el linaje exacto, los datos de entrenamiento ni la receta de ajuste empleada.
+`alfred8995/r17-bk-pf-p6_cpt_r8-final` es un checkpoint de modelo de lenguaje publicado en Hugging Face por el usuario alfred8995, con un total de 1.438.812.160 parámetros (aproximadamente 1,44 mil millones) verificados a partir de los pesos en formato safetensors. La etiqueta de arquitectura del repositorio es `olmo2`, lo que lo vincula a la familia OLMo 2 de AllenAI, aunque el autor del checkpoint es un particular y no se dispone de información sobre el linaje exacto, los datos de entrenamiento ni la receta de ajuste empleada.
 
-El nombre del repositorio (`cpt_r8-final`) sugiere, como inferencia a partir de la nomenclatura y no como dato confirmado, que se trata de un checkpoint resultante de una fase de preentrenamiento continuado (continued pre-training) en su octava revisión. El repositorio ocupa 2,9 GB, no registra descargas ni interacciones y tiene el acceso restringido: es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+El nombre del repositorio (`cpt_r8-final`) sugiere, como inferencia a partir de la nomenclatura y no como dato confirmado, que se trata de un checkpoint resultante de una fase de preentrenamiento continuado (continued pre-training) en su octava revisión. El repositorio ocupa 2,9 GB, no registra descargas ni interacciones y tiene el acceso restringido: es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 Su relevancia es limitada y fundamentalmente experimental: se trata de un modelo pequeño con licencia `other` y sin documentación publicada, por lo que su interés principal reside en la experimentación con arquitecturas tipo OLMo 2 a escala de 1,4B parámetros, no en su uso directo en producción sin una evaluación previa.
 
@@ -20,7 +20,7 @@ Su relevancia es limitada y fundamentalmente experimental: se trata de un modelo
 | Licencia | other (acceso restringido; condiciones no detalladas en la información disponible) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 2,9 GB |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 2026-10-23 |
 | Ultima actualizacion | 2026-10-23 |
 
@@ -73,10 +73,10 @@ La información proporcionada no incluye datos de rendimiento ni especificacione
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alfred8995/r17-bk-pf-p6_cpt_r8-final | 1,44 mil M | no disponible | other (acceso restringido) | HuggingFace, gated |
-| OLMo 2 1B (AllenAI) | ~1,2 mil M | no verificado en esta ficha | licencia abierta de AllenAI (consultar model card) | HuggingFace, abierto |
-| SmolLM2-1.7B (HuggingFace) | ~1,7 mil M | no verificado en esta ficha | licencia abierta (consultar model card) | HuggingFace, abierto |
-| Llama 3.2 1B (Meta) | ~1,2 mil M | 128k segun model card (verificar) | Llama 3.2 Community License | HuggingFace, gated |
+| alfred8995/r17-bk-pf-p6_cpt_r8-final | 1,44 mil M | no disponible | other (acceso restringido) | Hugging Face, gated |
+| OLMo 2 1B (AllenAI) | ~1,2 mil M | no verificado en esta ficha | licencia abierta de AllenAI (consultar model card) | Hugging Face, abierto |
+| SmolLM2-1.7B (Hugging Face) | ~1,7 mil M | no verificado en esta ficha | licencia abierta (consultar model card) | Hugging Face, abierto |
+| Llama 3.2 1B (Meta) | ~1,2 mil M | 128k segun model card (verificar) | Llama 3.2 Community License | Hugging Face, gated |
 
 ## Limitaciones y advertencias
 
@@ -92,6 +92,6 @@ La información proporcionada no incluye datos de rendimiento ni especificacione
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-p6_cpt_r8-final
+- Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-p6_cpt_r8-final
 - No se han encontrado enlaces relevantes adicionales en la búsqueda web: los resultados devueltos no guardan ninguna relación con el modelo y han sido descartados.
 - Paper, blog, repositorio o demo oficiales: no disponible.

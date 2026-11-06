@@ -28,7 +28,7 @@ La relevancia de este bundle concreto es de ingenieria: traslada un modelo de 1.
 
 ## Arquitectura y entrenamiento
 
-El modelo original EuroLLM-1.7B es un transformer decoder-only denso de 1.7B parametros, preentrenado sobre 4 billones de tokens repartidos entre las lenguas objetivo y varias fuentes: datos web, datos paralelos en ambas direcciones (en-xx y xx-en) y conjuntos de alta calidad. El ajuste por instrucciones se realizo sobre EuroBlocks, convirtiendo el modelo base en un modelo conversacional capaz de seguir instrucciones; el entrenamiento de ese ajuste uso perdida de entropia cruzada estandar con precision mixta bfloat16 y empaquetado (packing) de secuencias. La model card de HuggingFace etiqueta el modelo fuente con la libreria `llama`, lo que indica una implementacion compatible con la familia Llama.
+El modelo original EuroLLM-1.7B es un transformer decoder-only denso de 1.7B parametros, preentrenado sobre 4 billones de tokens repartidos entre las lenguas objetivo y varias fuentes: datos web, datos paralelos en ambas direcciones (en-xx y xx-en) y conjuntos de alta calidad. El ajuste por instrucciones se realizo sobre EuroBlocks, convirtiendo el modelo base en un modelo conversacional capaz de seguir instrucciones; el entrenamiento de ese ajuste uso perdida de entropia cruzada estandar con precision mixta bfloat16 y empaquetado (packing) de secuencias. La model card de Hugging Face etiqueta el modelo fuente con la libreria `llama`, lo que indica una implementacion compatible con la familia Llama.
 
 Sobre esa base, el bundle de aether-models aplica una receta de conversion propia (`eurollm-1.7b-instruct@1`) desde PyTorch a Core AI mediante "Aether forge". Los pesos resultantes son int8 linear per-channel, es decir, cuantizacion de 8 bits con escala por canal de salida, manteniendo los ficheros de tokenizer del modelo fuente sin modificaciones. La innovacion tecnica relevante no esta en el entrenamiento sino en el pipeline de verificacion: cada variante se valida mediante pruebas por niveles (T0, T1, T2) sobre fixtures fijas y se identifica por digest del bundle, comparando contra una exportacion sin cuantizar como referencia estricta. No se documenta en la informacion disponible el uso de decodificacion especulativa, atencion lineal ni otras optimizaciones de inferencia mas alla de la cuantizacion.
 
@@ -114,8 +114,8 @@ La comparacion estricta solo puede establecerse entre el bundle y su modelo fuen
 
 ## Enlaces
 
-- HuggingFace del bundle: https://huggingface.co/aether-models/eurollm-1.7b-instruct
-- Modelo fuente en HuggingFace: https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct
+- Hugging Face del bundle: https://huggingface.co/aether-models/eurollm-1.7b-instruct
+- Modelo fuente en Hugging Face: https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct
 - Arbol de ficheros del modelo fuente: https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct/tree/main
 - Paper de EuroLLM: https://arxiv.org/html/2409.16235v1
 - Ficha resumen en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/eurollm-17b-instruct-utter-project

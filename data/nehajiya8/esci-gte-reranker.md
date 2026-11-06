@@ -2,9 +2,9 @@
 
 ## Resumen
 
-nehajiya8/esci-gte-reranker es un modelo de reordenacion (reranker) de tipo cross-encoder, publicado por el usuario nehajiya8 en HuggingFace. Se trata de un ajuste fino de Alibaba-NLP/gte-reranker-modernbert-base y esta construido sobre la arquitectura ModernBertForSequenceClassification, que procesa pares de textos (consulta, documento) y devuelve una unica puntuacion de relevancia. Con aproximadamente 149,6 millones de parametros y una longitud maxima de secuencia de 384 tokens, es un modelo ligero pensado para la segunda fase de pipelines de busqueda semantica y recuperacion de informacion.
+nehajiya8/esci-gte-reranker es un modelo de reordenacion (reranker) de tipo cross-encoder, publicado por el usuario nehajiya8 en Hugging Face. Se trata de un ajuste fino de Alibaba-NLP/gte-reranker-modernbert-base y esta construido sobre la arquitectura ModernBertForSequenceClassification, que procesa pares de textos (consulta, documento) y devuelve una unica puntuacion de relevancia. Con aproximadamente 149,6 millones de parametros y una longitud maxima de secuencia de 384 tokens, es un modelo ligero pensado para la segunda fase de pipelines de busqueda semantica y recuperacion de informacion.
 
-El modelo resuelve un problema concreto: dada una consulta y un conjunto de candidatos recuperados por un buscador vectorial o lexico (por ejemplo BM25), reordenar esos candidatos segun su relevancia real. Sus ejemplos de uso publicados giran en torno a consultas de comercio electronico (productos de jardineria, ruedas de cortacesped), lo que sugiere un ajuste orientado a relevancia de productos, aunque la model card no documenta explicitamente el conjunto de datos de entrenamiento. El tag de HuggingFace registra un dataset_size de 377350 pares y una funcion de perdida BinaryCrossEntropyLoss.
+El modelo resuelve un problema concreto: dada una consulta y un conjunto de candidatos recuperados por un buscador vectorial o lexico (por ejemplo BM25), reordenar esos candidatos segun su relevancia real. Sus ejemplos de uso publicados giran en torno a consultas de comercio electronico (productos de jardineria, ruedas de cortacesped), lo que sugiere un ajuste orientado a relevancia de productos, aunque la model card no documenta explicitamente el conjunto de datos de entrenamiento. El tag de Hugging Face registra un dataset_size de 377350 pares y una funcion de perdida BinaryCrossEntropyLoss.
 
 Su relevancia actual es la de servir como componente de reranking de bajo coste computacional: al tener un tamano reducido, puede desplegarse en CPU o en GPUs de gama de consumo con latencias bajas, integrarse en Sentence Transformers o en Text Embeddings Inference, y utilizarse como paso intermedio entre un retriever de primera fase y un modelo generativo. No obstante, el modelo tiene cero descargas y cero likes en el momento de la consulta, y su model card deja sin especificar licencia, idiomas y dataset de entrenamiento.
 
@@ -64,17 +64,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM es suficiente (RTX 3060, RTX 4090, T4, L4, A10, A100, H100). El modelo no requiere GPUs de gran capacidad.
 - GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo actual e incluso en iGPU con suficiente memoria compartida.
 - CPU: es viable la inferencia en CPU para cargas moderadas, dado el reducido numero de parametros y la secuencia maxima de 384 tokens.
-- Opciones de despliegue: Sentence Transformers (`CrossEncoder`), Text Embeddings Inference (el tag `text-embeddings-inference` y `endpoints_compatible` indican compatibilidad con HuggingFace Inference Endpoints), y conversion a ONNX u otros runtimes.
+- Opciones de despliegue: Sentence Transformers (`CrossEncoder`), Text Embeddings Inference (el tag `text-embeddings-inference` y `endpoints_compatible` indican compatibilidad con Hugging Face Inference Endpoints), y conversion a ONNX u otros runtimes.
 - Latencia y throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nehajiya8/esci-gte-reranker | 149,6 M | 384 tokens | Cross-encoder | no disponible | HuggingFace (0 descargas) |
-| Alibaba-NLP/gte-reranker-modernbert-base | aprox. 149 M (modelo base) | no disponible | Cross-encoder | no disponible | HuggingFace (modelo base del anterior) |
-| BAAI/bge-reranker-base | aprox. 278 M | no disponible | Cross-encoder | no disponible | HuggingFace |
-| BAAI/bge-reranker-v2-m3 | aprox. 568 M | no disponible | Cross-encoder multilingue | no disponible | HuggingFace |
+| nehajiya8/esci-gte-reranker | 149,6 M | 384 tokens | Cross-encoder | no disponible | Hugging Face (0 descargas) |
+| Alibaba-NLP/gte-reranker-modernbert-base | aprox. 149 M (modelo base) | no disponible | Cross-encoder | no disponible | Hugging Face (modelo base del anterior) |
+| BAAI/bge-reranker-base | aprox. 278 M | no disponible | Cross-encoder | no disponible | Hugging Face |
+| BAAI/bge-reranker-v2-m3 | aprox. 568 M | no disponible | Cross-encoder multilingue | no disponible | Hugging Face |
 
 Los datos de parametros y contexto de los modelos alternativos no estan confirmados en la informacion de la busqueda web disponible; se incluyen como referencia general de categoria. No hay datos de rendimiento comparativo disponibles para este modelo.
 
@@ -92,11 +92,11 @@ Los datos de parametros y contexto de los modelos alternativos no estan confirma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nehajiya8/esci-gte-reranker
+- Modelo en Hugging Face: https://huggingface.co/nehajiya8/esci-gte-reranker
 - Modelo base: https://huggingface.co/Alibaba-NLP/gte-reranker-modernbert-base
 - Documentacion de Sentence Transformers: https://sbert.net
 - Documentacion de Cross Encoder: https://www.sbert.net/docs/cross_encoder/usage/usage.html
 - Repositorio de Sentence Transformers en GitHub: https://github.com/huggingface/sentence-transformers
-- Cross Encoders en HuggingFace: https://huggingface.co/models?library=sentence-transformers&other=cross-encoder
+- Cross Encoders en Hugging Face: https://huggingface.co/models?library=sentence-transformers&other=cross-encoder
 - Paper de referencia (Sentence-BERT, arXiv:1908.10084): https://arxiv.org/abs/1908.10084
-- Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los tags de HuggingFace.
+- Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los tags de Hugging Face.

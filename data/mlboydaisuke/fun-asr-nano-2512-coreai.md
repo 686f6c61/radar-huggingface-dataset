@@ -111,7 +111,7 @@ Comparacion con ASR de proposito general de otros fabricantes (por ejemplo la fa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/Fun-ASR-Nano-2512-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/Fun-ASR-Nano-2512-CoreAI
 - Modelo base: https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512
 - Codigo de conversion, oraculo, fixtures y gates: https://github.com/john-rocky/coreai-model-zoo/tree/main/conversion/funasr_nano
 - Ficha del modelo con las lecciones aprendidas: https://github.com/john-rocky/coreai-model-zoo/blob/main/models/funasr-nano/README.md

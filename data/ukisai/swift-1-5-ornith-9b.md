@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Swift-1.5-Ornith-9B es un modelo multimodal de tipo image-text-to-text publicado por el usuario ukisai en HuggingFace. Se trata de un ajuste fino (finetune) del modelo base ornith-ai/Ornith-1.5-9B, con 9.653.104.368 parametros totales (aproximadamente 9,65 mil millones) confirmados por los pesos en safetensors. El repositorio ocupa 19,3 GB, un tamano coherente con pesos almacenados en bf16/fp16.
+Swift-1.5-Ornith-9B es un modelo multimodal de tipo image-text-to-text publicado por el usuario ukisai en Hugging Face. Se trata de un ajuste fino (finetune) del modelo base ornith-ai/Ornith-1.5-9B, con 9.653.104.368 parametros totales (aproximadamente 9,65 mil millones) confirmados por los pesos en safetensors. El repositorio ocupa 19,3 GB, un tamano coherente con pesos almacenados en bf16/fp16.
 
-El modelo se distribuye con licencia Apache 2.0 y acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargarlo. Entre sus etiquetas figuran "reasoning", "efficient-thinking", "token-efficient", "post-training", "conversational" y "experimental", lo que sugiere un enfoque en razonamiento con bajo consumo de tokens y un estado de madurez no consolidado.
+El modelo se distribuye con licencia Apache 2.0 y acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargarlo. Entre sus etiquetas figuran "reasoning", "efficient-thinking", "token-efficient", "post-training", "conversational" y "experimental", lo que sugiere un enfoque en razonamiento con bajo consumo de tokens y un estado de madurez no consolidado.
 
 Su relevancia actual radica en que combina entrada de imagen y texto con tecnicas de post-entrenamiento orientadas a la eficiencia de tokens, un area activa para reducir costes de inferencia en tareas de razonamiento. No se dispone de informacion publica sobre composicion del dataset, context length ni resultados de benchmarks.
 
@@ -12,7 +12,7 @@ Su relevancia actual radica en que combina entrada de imagen y texto con tecnica
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta de familia "qwen3_5" en HuggingFace) |
+| Arquitectura | no disponible (etiqueta de familia "qwen3_5" en Hugging Face) |
 | Parametros totales | 9.653.104.368 (9,65B) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio contiene solo safetensors; sin GGUF publicado) |
@@ -66,7 +66,7 @@ Las siguientes cifras de VRAM son estimaciones calculadas a partir del numero de
 - Pesos en int8: aproximadamente 9,7 GB, con consumo total estimado de 12-16 GB segun contexto.
 - Pesos en int4 (si se generan cuantizaciones propias): aproximadamente 5,5-6 GB, con consumo total estimado de 8-10 GB.
 - GPU recomendadas: para bf16 sin cuantizar, A100 40 GB, H100 80 GB, L40S 48 GB o RTX 6000 Ada 48 GB. Para int8, una RTX 4090 de 24 GB es suficiente. Para int4, cabria en GPUs consumer de 8-12 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB), aunque con margen ajustado para el componente de vision.
-- Opciones de despliegue: transformers (libreria declarada), y la etiqueta "endpoints_compatible" sugiere compatibilidad con los endpoints de HuggingFace. vLLM, TGI y llama.cpp/Ollama no estan confirmados como soportados, ya que no se publica formato GGUF.
+- Opciones de despliegue: transformers (libreria declarada), y la etiqueta "endpoints_compatible" sugiere compatibilidad con los endpoints de Hugging Face. vLLM, TGI y llama.cpp/Ollama no estan confirmados como soportados, ya que no se publica formato GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ No se ha identificado ninguna alternativa adicional de la misma categoria con da
 ## Limitaciones y advertencias
 
 - Modelo marcado como "experimental": no ha superado necesariamente un ciclo de validacion orientado a produccion.
-- Acceso restringido (gated): es obligatorio aceptar las condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido (gated): es obligatorio aceptar las condiciones en Hugging Face antes de descargar los pesos.
 - Sin benchmarks publicados: no es posible cuantificar su rendimiento frente a alternativas de tamano similar, por lo que cualquier evaluacion debe hacerse por cuenta propia.
 - Idiomas soportados no declarados: no puede asumirse cobertura multilingue ni un rendimiento correcto en castellano sin pruebas previas.
 - Longitud de contexto no especificada: no se puede planificar el uso en escenarios de contexto largo sin verificar el limite real.
@@ -95,6 +95,6 @@ No se ha identificado ninguna alternativa adicional de la misma categoria con da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ukisai/Swift-1.5-Ornith-9B
+- Modelo en Hugging Face: https://huggingface.co/ukisai/Swift-1.5-Ornith-9B
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Paper, blog, repositorio o demo: no disponible (la busqueda web no devolvio resultados relevantes)

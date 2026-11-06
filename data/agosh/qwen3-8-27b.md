@@ -83,12 +83,12 @@ Los datos de Qwen3.6-27B, Qwen3.7-Plus, Muse Glimmer-30B y Opus4.6 Max no están
 - El modelo está diseñado con el modo de pensamiento activado por defecto, lo que puede aumentar la latencia en peticiones simples si no se desactiva explícitamente.
 - No se especifican los sesgos potenciales del modelo ni los riesgos de alucinación; al ser un modelo de 27B, es probable que presente alucinaciones en dominios especializados, aunque no hay datos publicados.
 - La licencia Apache 2.0 permite uso comercial sin restricciones significativas, pero el modelo puede estar sujeto a políticas de uso aceptable de Alibaba que no se detallan en la documentación.
-- El repositorio en HuggingFace (agosh/Qwen3.8-27B) no es el repositorio oficial de Alibaba; el repositorio oficial está en GitHub (AlibabaCloud-Official/Qwen3.8-27B). Se recomienda verificar la procedencia de los pesos antes de su uso en producción.
+- El repositorio en Hugging Face (agosh/Qwen3.8-27B) no es el repositorio oficial de Alibaba; el repositorio oficial está en GitHub (AlibabaCloud-Official/Qwen3.8-27B). Se recomienda verificar la procedencia de los pesos antes de su uso en producción.
 - La extensión de contexto hasta 1M tokens puede requerir técnicas de interpolación posicional o procesamiento específico que no están documentadas en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agosh/Qwen3.8-27B
+- Hugging Face: https://huggingface.co/agosh/Qwen3.8-27B
 - GitHub (oficial): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía completa (blog): https://lovableapp.org/blog/qwen3-8-27b
 - Seguimiento de lanzamiento: https://aireleasetracker.com/model/qwen/qwen3.8-27b

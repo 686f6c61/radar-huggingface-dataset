@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UI-Mate-9B (original) | 8.95B | no disponible | Sí | Apache 2.0 | Safetensors en HuggingFace |
-| UI-Mate-9B-i1-GGUF (este) | 8.95B | no disponible | Sí (con mmproj) | Apache 2.0 | GGUF en HuggingFace |
+| UI-Mate-9B (original) | 8.95B | no disponible | Sí | Apache 2.0 | Safetensors en Hugging Face |
+| UI-Mate-9B-i1-GGUF (este) | 8.95B | no disponible | Sí (con mmproj) | Apache 2.0 | GGUF en Hugging Face |
 | ShowUI (2B) | 2B | no disponible | Sí | MIT | Safetensors |
 | OS-Atlas (7B) | 7B | no disponible | Sí | no disponible | Safetensors |
 

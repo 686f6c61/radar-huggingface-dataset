@@ -107,11 +107,11 @@ No hay datos publicados de benchmarks ni de parámetros que permitan comparar es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danielamitay/gemma-4-e2b-it-lut8-tensor-swev
+- Repositorio en Hugging Face: https://huggingface.co/danielamitay/gemma-4-e2b-it-lut8-tensor-swev
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Revisión fijada del modelo base: https://huggingface.co/google/gemma-4-E2B-it/tree/3e22461f65e89153144f8adb70e3b8c2cc9845a7
 - Librería Swev: https://github.com/danielamitay/swev
-- Documentación de carga y caché en HuggingFace: https://github.com/danielamitay/swev/blob/main/docs/huggingface.md
+- Documentación de carga y caché en Hugging Face: https://github.com/danielamitay/swev/blob/main/docs/huggingface.md
 - Documentación de modelos soportados: https://github.com/danielamitay/swev/blob/main/docs/models.md
 - Guía de conversión: https://github.com/danielamitay/swev/blob/main/docs/conversion.md
 - Referencia del esquema: https://github.com/danielamitay/swev/blob/main/docs/schema.md

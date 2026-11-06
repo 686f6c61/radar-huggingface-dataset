@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored es un modelo de lenguaje multimodal (image-text-to-text) obtenido mediante un merge quirúrgico con mergekit. Lo publica el usuario oxpuppy635 en HuggingFace y parte de dos modelos derivados de la familia Gemma 4: MuXodious/gemma-4-26B-A4B-it-SOMPOA-heresy, usado como donante de atención "prístina", y Naphula/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA, un modelo orientado a escritura creativa que sufría degradación del razonamiento en prompts largos por artefactos de eliminación de activaciones (ARA) en sus capas de atención.
+Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored es un modelo de lenguaje multimodal (image-text-to-text) obtenido mediante un merge quirúrgico con mergekit. Lo publica el usuario oxpuppy635 en Hugging Face y parte de dos modelos derivados de la familia Gemma 4: MuXodious/gemma-4-26B-A4B-it-SOMPOA-heresy, usado como donante de atención "prístina", y Naphula/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA, un modelo orientado a escritura creativa que sufría degradación del razonamiento en prompts largos por artefactos de eliminación de activaciones (ARA) en sus capas de atención.
 
 La operación consiste en un `task_arithmetic` en el que los pesos de las proyecciones de atención y sus layernorms se toman íntegramente del modelo SOMPOA (delta 0.0), mientras que las capas MLP y MoE se conservan del modelo Goetia original (peso 1.0). El resultado es un modelo de 25.805.936.206 parámetros totales con arquitectura MoE de tipo Gemma 4 (etiqueta A4B, es decir, aproximadamente 4.000 millones de parámetros activos), empaquetado en bfloat16 y con un repositorio de 51,6 GB.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored (este) | 25,8 B totales / ~4 B activos | no disponible | MoE multimodal | other | HuggingFace, safetensors bf16 |
-| Naphula/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA | 25,8 B (misma base) | no disponible | MoE multimodal | other | HuggingFace |
-| MuXodious/gemma-4-26B-A4B-it-SOMPOA-heresy | 25,8 B (misma base) | no disponible | MoE multimodal | other | HuggingFace |
-| Gemma 4 26B-A4B-it (original de Google) | 25,8 B totales / ~4 B activos | no disponible | MoE multimodal | Gemma Terms of Use | HuggingFace |
+| Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored (este) | 25,8 B totales / ~4 B activos | no disponible | MoE multimodal | other | Hugging Face, safetensors bf16 |
+| Naphula/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA | 25,8 B (misma base) | no disponible | MoE multimodal | other | Hugging Face |
+| MuXodious/gemma-4-26B-A4B-it-SOMPOA-heresy | 25,8 B (misma base) | no disponible | MoE multimodal | other | Hugging Face |
+| Gemma 4 26B-A4B-it (original de Google) | 25,8 B totales / ~4 B activos | no disponible | MoE multimodal | Gemma Terms of Use | Hugging Face |
 
 La comparación de rendimiento entre estos modelos no está disponible: ninguno de los repositorios consultados publica resultados de benchmarks, por lo que no es posible establecer diferencias cuantitativas más allá de la descripción cualitativa del autor (razonamiento restaurado frente al Goetia original).
 
@@ -89,7 +89,7 @@ La comparación de rendimiento entre estos modelos no está disponible: ninguno 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oxpuppy635/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored
+- Modelo en Hugging Face: https://huggingface.co/oxpuppy635/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored
 - Modelo donante de atención (SOMPOA): https://huggingface.co/MuXodious/gemma-4-26B-A4B-it-SOMPOA-heresy
 - Modelo cuerpo (Goetia original): https://huggingface.co/Naphula/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA
 - mergekit (herramienta de merge): https://github.com/arcee-ai/mergekit

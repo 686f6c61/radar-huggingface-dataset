@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K u
 - VRAM estimada para inferencia: en FP16/BF16, en torno a 8-9 GB para los pesos mas activaciones; en INT8, aproximadamente 4,5 GB; en GGUF Q4_K_M, alrededor de 2,5-3 GB.
 - GPU recomendadas: NVIDIA A100 40 GB, H100 o L40S para despliegues concurrentes en FP16; una RTX 4090 (24 GB) o L4 (24 GB) es suficiente para FP16 con una sola instancia.
 - Cabe en GPU de consumo: si. Una RTX 3060 de 12 GB, RTX 4070, RTX 4080 o RTX 4090 pueden ejecutar el modelo en FP16 o cuantizado; tarjetas con 8 GB necesitan cuantizacion de 8 bits o inferior.
-- Opciones de despliegue: transformers (libreria declarada), vLLM, llama.cpp y Ollama (existe entrada en el registro de Ollama para `sriram1983007/sra-riskgate`), TGI (etiqueta `text-generation-inference` en HuggingFace) y Text Generation Inference en endpoints compatibles.
+- Opciones de despliegue: transformers (libreria declarada), vLLM, llama.cpp y Ollama (existe entrada en el registro de Ollama para `sriram1983007/sra-riskgate`), TGI (etiqueta `text-generation-inference` en Hugging Face) y Text Generation Inference en endpoints compatibles.
 - El repositorio principal ocupa 8,1 GB, por lo que la descarga en precision completa requiere ese espacio en disco antes de cuantizar.
 - Latencia y throughput estimados: no disponible en la informacion proporcionada.
 
@@ -87,8 +87,8 @@ No se dispone de modelos comparables de la misma categoria (clasificacion de rie
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SRA-RiskGate-4B | 4,02 mil millones | no disponible | Riesgo de pagos, cumplimiento y disputas con stablecoins | apache-2.0 | HuggingFace (safetensors, GGUF, LoRA), Ollama, PyPI, Space de demo |
-| Qwen/Qwen3-4B-Instruct-2507 | no disponible en la informacion proporcionada | no disponible | Instrucciones generales, modelo base | no disponible en la informacion proporcionada | HuggingFace |
+| SRA-RiskGate-4B | 4,02 mil millones | no disponible | Riesgo de pagos, cumplimiento y disputas con stablecoins | apache-2.0 | Hugging Face (safetensors, GGUF, LoRA), Ollama, PyPI, Space de demo |
+| Qwen/Qwen3-4B-Instruct-2507 | no disponible en la informacion proporcionada | no disponible | Instrucciones generales, modelo base | no disponible en la informacion proporcionada | Hugging Face |
 | Modelos comparables de la misma tarea | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -107,7 +107,7 @@ No se dispone de modelos comparables de la misma categoria (clasificacion de rie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sriram1983007/SRA-RiskGate-4B
+- Modelo en Hugging Face: https://huggingface.co/sriram1983007/SRA-RiskGate-4B
 - Repositorio GGUF: https://huggingface.co/sriram1983007/SRA-RiskGate-4B-GGUF
 - Adaptador LoRA: https://huggingface.co/sriram1983007/SRA-RiskGate-4B-LoRA
 - Dataset de evaluacion: https://huggingface.co/datasets/sriram1983007/sra-stablecoin-risk-bench

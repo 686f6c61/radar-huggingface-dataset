@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un ajuste fino (finetune) del modelo de generación de vídeo a partir de texto Wan2.1-T2V-1.3B-Diffusers, desarrollado originalmente por Wan-AI (Alibaba). El autor del checkpoint es el usuario de HuggingFace `ducvh5` y el modelo se distribuye a través de la librería `diffusers` en formato `safetensors`, con un tamaño de repositorio de 31,8 GB. Se trata de un modelo derivado de investigación, no de un lanzamiento oficial, y su relevancia es limitada: cuenta con cero descargas y cero "likes" en el momento de la consulta.
+Este repositorio contiene un ajuste fino (finetune) del modelo de generación de vídeo a partir de texto Wan2.1-T2V-1.3B-Diffusers, desarrollado originalmente por Wan-AI (Alibaba). El autor del checkpoint es el usuario de Hugging Face `ducvh5` y el modelo se distribuye a través de la librería `diffusers` en formato `safetensors`, con un tamaño de repositorio de 31,8 GB. Se trata de un modelo derivado de investigación, no de un lanzamiento oficial, y su relevancia es limitada: cuenta con cero descargas y cero "likes" en el momento de la consulta.
 
 La model card es extremadamente escueta y críptica, compuesta por anotaciones técnicas abreviadas (A5 → B5×4 → C5, 15 bloques únicos / 30 ejecutados, pérdida TF+FM+TM, σ con LN(0,1) y shift=2). Estas notaciones sugieren una reconfiguración de la arquitectura del transformer del modelo base, probablemente orientada a reducir cómputo mediante reutilización de bloques, pero no se aporta documentación que lo confirme. El pipeline declarado es text-to-video.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ducvh5/wan21-a5b5x4c5-tf-fm-tm-ln2-qt | ~1.3B (base) | No disponible | Text-to-video | No disponible | HuggingFace (0 descargas) |
-| Wan-AI/Wan2.1-T2V-1.3B-Diffusers | 1.3B | No disponible | Text-to-video | No disponible en esta ficha | HuggingFace (modelo base oficial) |
+| ducvh5/wan21-a5b5x4c5-tf-fm-tm-ln2-qt | ~1.3B (base) | No disponible | Text-to-video | No disponible | Hugging Face (0 descargas) |
+| Wan-AI/Wan2.1-T2V-1.3B-Diffusers | 1.3B | No disponible | Text-to-video | No disponible en esta ficha | Hugging Face (modelo base oficial) |
 | Otros modelos text-to-video de ~1.3B | No disponible | No disponible | Text-to-video | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tf-fm-tm-ln2-qt
+- Repositorio Hugging Face: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tf-fm-tm-ln2-qt
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

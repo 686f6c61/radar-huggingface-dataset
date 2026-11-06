@@ -59,7 +59,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 - Calidad de cuantizaciones extremas: las cuantizaciones i1-IQ1_M e i1-IQ2_M tienen calidad muy baja y solo son para pruebas de memoria, no para uso real.
 
 ## Enlaces
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Melody1437-26B-A4B-v2.0-i1-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Melody1437-26B-A4B-v2.0-i1-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Melody1437-26B-A4B-v2.0
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/Melody1437-26B-A4B-v2.0-GGUF
 - Version anterior (v1): https://huggingface.co/mradermacher/Melody1437-26B-A4B-GGUF
@@ -126,7 +126,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 - Restricciones de licencia: aunque la licencia Apache-2.0 permite uso comercial, el contenido generado puede estar sujeto a restricciones adicionales de los desarrolladores originales. Se recomienda revisar los terminos de ReadyArt.
 
 ## Enlaces
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Melody1437-26B-A4B-v2.0-i1-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Melody1437-26B-A4B-v2.0-i1-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Melody1437-26B-A4B-v2.0
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/Melody1437-26B-A4B-v2.0-GGUF
 - Version anterior (v1): https://huggingface.co/mradermacher/Melody1437-26B-A4B-GGUF

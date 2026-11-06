@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 | Modelo | Parametros | Arquitectura | Uso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | model_339521087_mobilevit_tiny | no disponible | MobileViT tiny | Clasificacion | Apache 2.0 | Codigo fuente, sin pesos |
-| MobileViT-Small (Apple) | 5.6 M | MobileViT | Clasificacion | MIT | Pesos preentrenados en HuggingFace |
-| MobileViT-XS | 2.3 M | MobileViT | Clasificacion | MIT | Pesos preentrenados en HuggingFace |
+| MobileViT-Small (Apple) | 5.6 M | MobileViT | Clasificacion | MIT | Pesos preentrenados en Hugging Face |
+| MobileViT-XS | 2.3 M | MobileViT | Clasificacion | MIT | Pesos preentrenados en Hugging Face |
 | MobileNetV3-Small | 2.5 M | CNN | Clasificacion | Apache 2.0 | Pesos preentrenados en TF Hub |
 
 La comparativa muestra que las versiones oficiales de Apple de MobileViT (small y xs) son más completas, con pesos preentrenados disponibles y métricas de rendimiento documentadas. La implementación de Schmidtphilipp ofrece el código de la arquitectura pero carece de pesos, lo que la limita frente a las alternativas oficiales.
@@ -79,8 +79,8 @@ La comparativa muestra que las versiones oficiales de Apple de MobileViT (small 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Schmidtphilipp/model_339521087_mobilevit_tiny
-- Documentación de MobileViT en HuggingFace: https://huggingface.co/docs/transformers/model_doc/mobilevit
-- Modelo oficial MobileViT-Small de Apple en HuggingFace: https://huggingface.co/apple/mobilevit-small
+- Repositorio de Hugging Face: https://huggingface.co/Schmidtphilipp/model_339521087_mobilevit_tiny
+- Documentación de MobileViT en Hugging Face: https://huggingface.co/docs/transformers/model_doc/mobilevit
+- Modelo oficial MobileViT-Small de Apple en Hugging Face: https://huggingface.co/apple/mobilevit-small
 - Paper de MobileViT (Apple Research): https://machinelearning.apple.com/research/vision-transformer
 - Repositorio de referencia de MobileViT en GitHub: https://github.com/yangyucheng000/MobileViT

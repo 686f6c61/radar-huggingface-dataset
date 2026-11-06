@@ -96,7 +96,7 @@ No se dispone de datos comparativos con otros modelos de razonamiento del mismo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/litert-community/granite-4.2-3b
+- Repositorio Hugging Face: https://huggingface.co/litert-community/granite-4.2-3b
 - Modelo base (IBM Granite 4.2-3B): https://huggingface.co/ibm-granite/granite-4.2-3b
 - Documentacion oficial de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2
 - Repositorio GitHub de Granite 4.2: https://github.com/ibm-granite/granite-4.2-language-models

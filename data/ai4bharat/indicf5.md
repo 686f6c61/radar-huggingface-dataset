@@ -3,7 +3,7 @@
 ## Resumen
 IndicF5 es un modelo de síntesis de voz (text-to-speech) desarrollado por el equipo de AI4Bharat, un laboratorio de investigación en IA del IIT Madras. El modelo genera habla natural en 11 idiomas indios a partir de un texto objetivo, un audio de referencia y la transcripción de ese audio, de modo que aprende la prosodia y el timbre del hablante del prompt para producir una voz similar. Está entrenado sobre 1417 horas de audio de alta calidad procedentes de los conjuntos Rasa, IndicTTS, LIMMITS y IndicVoices-R.
 
-La arquitectura se basa en F5-TTS, un modelo de síntesis de voz que emplea técnicas de flow matching. Con 350 millones de parámetros, IndicF5 ofrece una calidad de habla cercana a la humana y es relevante porque cubre un amplio rango de lenguas indias, un dominio con escasos modelos TTS de calidad. Se distribuye bajo licencia MIT y el acceso al repositorio está restringido (gated) en HuggingFace, por lo que hay que aceptar condiciones previas.
+La arquitectura se basa en F5-TTS, un modelo de síntesis de voz que emplea técnicas de flow matching. Con 350 millones de parámetros, IndicF5 ofrece una calidad de habla cercana a la humana y es relevante porque cubre un amplio rango de lenguas indias, un dominio con escasos modelos TTS de calidad. Se distribuye bajo licencia MIT y el acceso al repositorio está restringido (gated) en Hugging Face, por lo que hay que aceptar condiciones previas.
 
 ## Especificaciones técnicas
 | Parametro | Valor |
@@ -50,14 +50,14 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 No se ha encontrado información sobre modelos TTS comparables en el contexto de idiomas indios con licencia MIT y tamaño similar. Por tanto, la comparativa no está disponible.
 
 ## Limitaciones y advertencias
-- El acceso al modelo está restringido en HuggingFace; es necesario aceptar los términos y condiciones de la organización AI4Bharat.
+- El acceso al modelo está restringido en Hugging Face; es necesario aceptar los términos y condiciones de la organización AI4Bharat.
 - No hay información sobre sesgos de género o dialectales, pero al estar entrenado en un corpus limitado (1417 horas) puede presentar variaciones de calidad entre idiomas y hablantes.
 - La calidad de la síntesis depende de la referencia de audio; si la referencia es de baja calidad o tiene ruido, el resultado puede degradarse.
 - La licencia MIT permite uso comercial, pero hay que verificar las condiciones de los conjuntos de datos utilizados (Rasa, IndicTTS, etc.) para posibles restricciones adicionales.
 - El modelo no admite control fino de la velocidad o la emoción más allá de lo que se pueda inferir de la referencia; no se han publicado parámetros para ajustar estos aspectos.
 
 ## Enlaces
-- [HuggingFace - ai4bharat/IndicF5](https://huggingface.co/ai4bharat/IndicF5)
+- [Hugging Face - ai4bharat/IndicF5](https://huggingface.co/ai4bharat/IndicF5)
 - [GitHub - AI4Bharat/IndicF5](https://github.com/AI4Bharat/IndicF5)
 - [Página del modelo en ai4bharat.iitm.ac.in](https://ai4bharat.iitm.ac.in/areas/model/TTS/IndicF5/)
 - [Repositorio alternativo - hareeshbabu82ns/TTSIndicF5](https://github.com/hareeshbabu82ns/TTSIndicF5)

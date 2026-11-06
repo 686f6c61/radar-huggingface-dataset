@@ -74,5 +74,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/N-1ACE/tidetrace-oil-unet
+- Modelo en Hugging Face: https://huggingface.co/N-1ACE/tidetrace-oil-unet
 - No se han encontrado otros enlaces (papers, repositorios, demos) en la informacion disponible.

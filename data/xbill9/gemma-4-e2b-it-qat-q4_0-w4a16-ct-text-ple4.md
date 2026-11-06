@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Limitaciones y advertencias
 
-- Modelo no oficial: el autor indica explicitamente que los problemas deben reportarse en el repositorio de HuggingFace y no a Google.
+- Modelo no oficial: el autor indica explicitamente que los problemas deben reportarse en el repositorio de Hugging Face y no a Google.
 - Solo texto: no procesa imagenes ni audio, a diferencia de otras implementaciones de la familia Gemma 4 que son vision-lenguaje.
 - Dependencia estricta de vLLM 0.29 o superior; con versiones anteriores el kernel necesario para leer los embeddings int4 no esta disponible y la carga fallara.
 - Sin benchmarks publicados: no hay evidencia cuantitativa de la degradacion de calidad introducida por el empaquetado int4 adicional de `embed_tokens_per_layer` frente al reempaquetado W4A16 de referencia.
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct-text-ple4
+- Modelo en Hugging Face: https://huggingface.co/xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct-text-ple4
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized
 - Variante de referencia del mismo autor (text-only W4A16): https://huggingface.co/xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct-text
 - Script de reempaquetado `embed_int4.py`: https://github.com/xbill9/gemma4-dev/blob/main/gpu-vllm-t4-2b-w4a16/repack/embed_int4.py

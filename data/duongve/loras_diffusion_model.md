@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `duongve/Loras_Diffusion_model` es un repositorio alojado en HuggingFace por el usuario `duongve`, con licencia Apache-2.0 y un tamaño de repositorio de 266.7 GB. Fue creado el 30 de marzo de 2025 y actualizado el 15 de agosto de 2026. La model card asociada no contiene ninguna información técnica más allá de la licencia, por lo que no se dispone de detalles sobre arquitectura, parámetros, entrenamiento o capacidades.
+El modelo `duongve/Loras_Diffusion_model` es un repositorio alojado en Hugging Face por el usuario `duongve`, con licencia Apache-2.0 y un tamaño de repositorio de 266.7 GB. Fue creado el 30 de marzo de 2025 y actualizado el 15 de agosto de 2026. La model card asociada no contiene ninguna información técnica más allá de la licencia, por lo que no se dispone de detalles sobre arquitectura, parámetros, entrenamiento o capacidades.
 
 El nombre del repositorio sugiere que podría tratarse de un modelo de difusión con adaptadores LoRA, pero esta hipótesis no puede confirmarse con los datos disponibles. Dado que el repositorio no presenta descargas y solo tiene un "like", se trata de un proyecto aparentemente sin uso extendido ni documentación pública. Ante la ausencia de información verificable, esta ficha se limita a reflejar los datos disponibles y marca como "no disponible" todos los aspectos técnicos no documentados.
 
@@ -53,4 +53,4 @@ No disponible. Al no conocerse la arquitectura ni el tamano de parametros, no es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/duongve/Loras_Diffusion_model
+- Repositorio en Hugging Face: https://huggingface.co/duongve/Loras_Diffusion_model

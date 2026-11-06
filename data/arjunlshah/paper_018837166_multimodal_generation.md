@@ -50,7 +50,7 @@ No disponible. Este repositorio no es un modelo y no hay alternativas comparable
 - No hay garantías de exactitud de las afirmaciones del documento, ya que no se ha sometido a revisión por pares en este repositorio.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/Arjunlshah/paper_018837166_multimodal_generation
+- Repositorio en Hugging Face: https://huggingface.co/Arjunlshah/paper_018837166_multimodal_generation
 - Paper relacionado en arXiv (no el mismo, pero sobre el tema): https://arxiv.org/abs/2409.14993
 - Lista de papers multimodales en GitHub: https://github.com/friedrichor/Awesome-Multimodal-Papers
 - Lista de recursos multimodales: https://github.com/pliang279/awesome-multimodal-ml

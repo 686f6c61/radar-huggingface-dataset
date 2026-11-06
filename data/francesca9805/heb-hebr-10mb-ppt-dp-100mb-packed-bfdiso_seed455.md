@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/heb-hebr-10mb-ppt-Dp-100mb-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/heb_hebr_10mb`, desarrollado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros totales (aproximadamente 39 millones), distribuido en formato `safetensors` con un repositorio de 0,1 GB. El entrenamiento se realizo con la libreria TRL 0.23.0 en su modalidad SFT (supervised fine-tuning), sobre Transformers 4.56.2 y PyTorch 2.5.1+cu121.
+El modelo `francesca9805/heb-hebr-10mb-ppt-Dp-100mb-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/heb_hebr_10mb`, desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros totales (aproximadamente 39 millones), distribuido en formato `safetensors` con un repositorio de 0,1 GB. El entrenamiento se realizo con la libreria TRL 0.23.0 en su modalidad SFT (supervised fine-tuning), sobre Transformers 4.56.2 y PyTorch 2.5.1+cu121.
 
 El interes de esta publicacion no reside en su rendimiento como asistente, sino en su caracter de artefacto de investigacion. La convencion de nombres del autor (`heb-hebr-10mb` + `ppt` + `Dp-100mb-packed-bfdiso` + `seed455`) apunta a una serie de experimentos controlados sobre estrategias de empaquetado (packing) de datos, mezcla de corpus y semillas aleatorias, aplicados a un modelo de muy bajo numero de parametros para un idioma de bajos recursos. La existencia de variantes hermanas con nombres como `heb-hebr-100mb-ppt-Dp-10mb-packed-bfd_seed455` o `heb-hebr-100mb-ppt-Dp-10mb_seed3407` refuerza esa lectura: el autor esta barriendo combinaciones de tamano de corpus y semilla manteniendo fija la receta de entrenamiento.
 
@@ -65,17 +65,17 @@ Las siguientes cifras son estimaciones derivadas del numero de parametros (39,09
 - VRAM estimada en INT4: aproximadamente 20 MB.
 - Cabe holgadamente en cualquier GPU de consumo, incluidas GTX 1050 Ti, RTX 3060, RTX 4090, e incluso en CPU sin aceleracion dedicada.
 - GPU recomendadas: no se requieren GPU de centro de datos. A100, H100 o similares son innecesarias para este tamano.
-- Opciones de despliegue: `transformers` con `pipeline` es la ruta documentada en la model card. Al ser un modelo GPT-2, es compatible en principio con llama.cpp y Ollama previa conversion a GGUF, y con TGI por el tag `text-generation-inference`, aunque estas rutas no estan verificadas por el autor. Los tags `endpoints_compatible` indican compatibilidad con los Inference Endpoints de HuggingFace.
+- Opciones de despliegue: `transformers` con `pipeline` es la ruta documentada en la model card. Al ser un modelo GPT-2, es compatible en principio con llama.cpp y Ollama previa conversion a GGUF, y con TGI por el tag `text-generation-inference`, aunque estas rutas no estan verificadas por el autor. Los tags `endpoints_compatible` indican compatibilidad con los Inference Endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Relacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/heb-hebr-10mb-ppt-Dp-100mb-packed-bfdiso_seed455 | 39.087.104 | no disponible | Objeto de esta ficha | no disponible | HuggingFace |
-| goldfish-models/heb_hebr_10mb | no disponible | no disponible | Modelo base del que deriva | no disponible en la informacion recogida | HuggingFace |
-| francesca9805/heb-hebr-100mb-ppt-Dp-10mb-packed-bfd_seed455 | no disponible | no disponible | Variante hermana con la relacion corpus/tamano invertida segun el nombre | no disponible | HuggingFace |
-| fpadovani/heb-hebr-100mb-ppt-Dp-10mb_seed3407 | no disponible | no disponible | Variante de la misma familia experimental, atribuida a otro usuario | no disponible | HuggingFace |
+| francesca9805/heb-hebr-10mb-ppt-Dp-100mb-packed-bfdiso_seed455 | 39.087.104 | no disponible | Objeto de esta ficha | no disponible | Hugging Face |
+| goldfish-models/heb_hebr_10mb | no disponible | no disponible | Modelo base del que deriva | no disponible en la informacion recogida | Hugging Face |
+| francesca9805/heb-hebr-100mb-ppt-Dp-10mb-packed-bfd_seed455 | no disponible | no disponible | Variante hermana con la relacion corpus/tamano invertida segun el nombre | no disponible | Hugging Face |
+| fpadovani/heb-hebr-100mb-ppt-Dp-10mb_seed3407 | no disponible | no disponible | Variante de la misma familia experimental, atribuida a otro usuario | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento de ninguna de estas variantes, por lo que la comparativa se limita a la disponibilidad y a la nomenclatura. No es posible establecer cual de ellas rinde mejor sin evaluaciones publicadas.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento de ninguna de estas variantes, por lo que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/heb-hebr-10mb-ppt-Dp-100mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/heb-hebr-10mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/heb_hebr_10mb
 - Variante hermana (seed455, 100mb/10mb): https://huggingface.co/francesca9805/heb-hebr-100mb-ppt-Dp-10mb-packed-bfd_seed455
 - Discusiones de variante hermana: https://huggingface.co/francesca9805/heb-hebr-100mb-ppt-Dp-10mb-packed-bfd_seed455/discussions

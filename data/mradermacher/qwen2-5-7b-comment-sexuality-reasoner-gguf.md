@@ -78,7 +78,7 @@ La comparativa muestra que este modelo se distingue únicamente por su ajuste te
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Qwen2.5-7B-Comment-Sexuality-Reasoner-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Qwen2.5-7B-Comment-Sexuality-Reasoner-GGUF
 - Modelo original (sin cuantizar): https://huggingface.co/diego-florez/Qwen2.5-7B-Comment-Sexuality-Reasoner
 - Blog oficial de Qwen2.5: https://qwen.ai/blog?id=qwen2.5
-- Repositorio de Qwen2.5 en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
+- Repositorio de Qwen2.5 en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

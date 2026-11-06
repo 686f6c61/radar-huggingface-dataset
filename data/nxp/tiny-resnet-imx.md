@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nxp/tiny-resnet-imx es un repositorio de modelo publicado en HuggingFace por NXP Semiconductors, fabricante neerlandes de semiconductores con sede en Eindhoven y actividad principal en los mercados de automocion, IoT e industria. Se trata de un artefacto practicamente vacio desde el punto de vista documental: la model card unicamente declara la licencia Apache 2.0 y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni tarea objetivo.
+nxp/tiny-resnet-imx es un repositorio de modelo publicado en Hugging Face por NXP Semiconductors, fabricante neerlandes de semiconductores con sede en Eindhoven y actividad principal en los mercados de automocion, IoT e industria. Se trata de un artefacto practicamente vacio desde el punto de vista documental: la model card unicamente declara la licencia Apache 2.0 y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni tarea objetivo.
 
 El identificador del repositorio sugiere una red neuronal convolucional residual de tamano reducido (tiny ResNet) orientada a los procesadores de aplicaciones de la familia i.MX de NXP. Esta lectura es una interpretacion a partir del nombre y no un dato confirmado por el autor, ya que no existe documentacion publica que la respalde.
 
@@ -88,7 +88,7 @@ No disponible. Sin especificaciones publicadas (parametros, contexto, tarea obje
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nxp/tiny-resnet-imx
+- Modelo en Hugging Face: https://huggingface.co/nxp/tiny-resnet-imx
 - Sitio corporativo de NXP Semiconductors: https://www.nxp.com/
 - Catalogo de productos de NXP: https://www.nxp.com/products:PCPRODCAT
 - NXP Semiconductors en Wikipedia (ingles): https://en.wikipedia.org/wiki/NXP_Semiconductors

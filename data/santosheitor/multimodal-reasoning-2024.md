@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Santosheitor/multimodal-reasoning-2024` es un repositorio alojado en HuggingFace que, segun su propia model card, **no contiene un modelo entrenado ni un checkpoint publicado**, sino una nota de investigacion ("research notes") sobre razonamiento multimodal. El autor, identificado como Santosheitor, organiza en ella la motivacion del problema, el trabajo relacionado, una hipotesis falsable y un plan de evaluacion, con referencias a conjuntos de datos como VQAv2, GQA y NLVR2. El repositorio se declara explicitamente como exploratorio y no reclama mejoras de benchmark, ablaciones completadas ni codigo liberado.
+`Santosheitor/multimodal-reasoning-2024` es un repositorio alojado en Hugging Face que, segun su propia model card, **no contiene un modelo entrenado ni un checkpoint publicado**, sino una nota de investigacion ("research notes") sobre razonamiento multimodal. El autor, identificado como Santosheitor, organiza en ella la motivacion del problema, el trabajo relacionado, una hipotesis falsable y un plan de evaluacion, con referencias a conjuntos de datos como VQAv2, GQA y NLVR2. El repositorio se declara explicitamente como exploratorio y no reclama mejoras de benchmark, ablaciones completadas ni codigo liberado.
 
-A pesar de que los metadatos de HuggingFace registran una arquitectura de tipo transformer y un fichero en formato safetensors con 33.088 parametros, la documentacion insiste en que no existe un modelo funcional desplegable. Los tags del repositorio (`research-notes`, `multimodal-reasoning`) y el tamano del repo (0,0 GB) son coherentes con esa naturaleza documental mas que con un artefacto de inferencia.
+A pesar de que los metadatos de Hugging Face registran una arquitectura de tipo transformer y un fichero en formato safetensors con 33.088 parametros, la documentacion insiste en que no existe un modelo funcional desplegable. Los tags del repositorio (`research-notes`, `multimodal-reasoning`) y el tamano del repo (0,0 GB) son coherentes con esa naturaleza documental mas que con un artefacto de inferencia.
 
 Su relevancia actual es, por tanto, limitada y de caracter metodologico: puede servir como plantilla de planificacion experimental para investigadores que trabajen en razonamiento multimodal, pero no como base para evaluar capacidades de un sistema. Cuenta con 2 descargas y 0 likes en el momento de la consulta.
 
@@ -51,7 +51,7 @@ Dado que no existe checkpoint ni modelo desplegable, los casos de uso se refiere
 - Diseno de comprobaciones de reproducibilidad: el repositorio menciona la necesidad de incluir versiones de dataset, comandos, semillas, hardware y logs en bruto si se anaden resultados, lo que resulta util como estandar minimo de trazabilidad.
 - Catalogacion de modos de fallo: la lista de modos de fallo y preguntas abiertas puede alimentar una seccion de limitaciones en trabajos posteriores sobre razonamiento multimodal.
 - Punto de partida bibliografico: las referencias tematicas incluidas permiten iniciar una revision de literatura, siempre que se verifiquen de forma independiente (el autor advierte que son un punto de partida para verificacion, no evidencia de que el estudio se haya ejecutado).
-- Evaluacion critica de artefactos de HuggingFace: el repositorio ilustra el caso de un "modelo" listado en la plataforma que en realidad no es un modelo, util para formar criterios de triaje al revisar el hub.
+- Evaluacion critica de artefactos de Hugging Face: el repositorio ilustra el caso de un "modelo" listado en la plataforma que en realidad no es un modelo, util para formar criterios de triaje al revisar el hub.
 
 ## Benchmarks y rendimiento
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - Viabilidad en GPU de consumo: no aplica.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponibles; el repositorio no publica pesos utilizables ni configuracion de servidor.
 - Latencia y throughput: no disponibles.
-- Nota sobre el fichero safetensors: los metadatos de HuggingFace registran 33.088 parametros y un fichero en formato safetensors, con un tamano de repositorio de 0,0 GB. No hay informacion que permita confirmar que ese fichero constituya un modelo funcional; el autor afirma que no se libera checkpoint.
+- Nota sobre el fichero safetensors: los metadatos de Hugging Face registran 33.088 parametros y un fichero en formato safetensors, con un tamano de repositorio de 0,0 GB. No hay informacion que permita confirmar que ese fichero constituya un modelo funcional; el autor afirma que no se libera checkpoint.
 
 ## Comparativa con modelos similares
 
@@ -92,7 +92,7 @@ No disponible. Este repositorio no es un modelo de razonamiento multimodal ejecu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Santosheitor/multimodal-reasoning-2024
+- Hugging Face: https://huggingface.co/Santosheitor/multimodal-reasoning-2024
 - Fichero principal de la nota: `analysis.md` (en el propio repositorio)
 - Documentacion: `README.md` (en el propio repositorio)
 - Referencias tematicas, paper y repos adicionales: no disponibles en la informacion proporcionada.

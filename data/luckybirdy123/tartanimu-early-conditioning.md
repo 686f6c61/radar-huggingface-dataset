@@ -92,6 +92,6 @@ No disponible. La busqueda web realizada no devolvio alternativas de odometria i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LuckyBirdy123/tartanimu-early-conditioning
+- Modelo en Hugging Face: https://huggingface.co/LuckyBirdy123/tartanimu-early-conditioning
 - Documento de publicacion (`PUBLICATION.md`): https://huggingface.co/LuckyBirdy123/tartanimu-early-conditioning/blob/main/PUBLICATION.md
 - No se encontraron papers, blogs, repositorios adicionales ni demos en la busqueda web realizada.

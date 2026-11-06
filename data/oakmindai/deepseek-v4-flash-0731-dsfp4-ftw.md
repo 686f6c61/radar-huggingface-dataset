@@ -79,7 +79,7 @@ La comparativa con DeepSeek-V4-Pro (Preview) no es posible por falta de datos p√
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oakmindai/DeepSeek-V4-Flash-0731-DSFP4-FTW
+- Repositorio Hugging Face: https://huggingface.co/oakmindai/DeepSeek-V4-Flash-0731-DSFP4-FTW
 - Modelo base oficial: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - C√≥digo fuente de FreeToken y SparkLab: https://github.com/sixteen-miles-labs/freetoken
 - Repositorio de FreeToken (backend de inferencia): https://github.com/FlashML-org/FreeToken

@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nemotron3-nano-4b-2k-grpo-reasoninggym-coolbengal-s300 | 3,97 mil millones | no disponible | nvidia-nemotron-open-model-license | HuggingFace (0 descargas) |
-| nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16 (base) | ~4 mil millones | no disponible | nvidia-nemotron-open-model-license | HuggingFace |
+| nemotron3-nano-4b-2k-grpo-reasoninggym-coolbengal-s300 | 3,97 mil millones | no disponible | nvidia-nemotron-open-model-license | Hugging Face (0 descargas) |
+| nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16 (base) | ~4 mil millones | no disponible | nvidia-nemotron-open-model-license | Hugging Face |
 | Otros modelos de razonamiento de ~4B | no disponible | no disponible | no disponible | no disponible |
 
 Los datos de rendimiento de los modelos comparables no estan disponibles en la informacion proporcionada, por lo que no es posible establecer una comparacion numerica.
@@ -90,7 +90,7 @@ Los datos de rendimiento de los modelos comparables no estan disponibles en la i
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/budget-internalization-iclr2027/nemotron3-nano-4b-2k-grpo-reasoninggym-coolbengal-s300
+- Hugging Face del modelo: https://huggingface.co/budget-internalization-iclr2027/nemotron3-nano-4b-2k-grpo-reasoninggym-coolbengal-s300
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
 - Licencia NVIDIA Nemotron Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/
 - Paper, repositorio o demo adicionales: no disponibles en la informacion proporcionada (los resultados de la busqueda web no contienen fuentes relevantes sobre el modelo).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anzeeai2/Llama-3.2-1B-Instruct-Q4_K_M` es una cuantización en formato GGUF del modelo Llama-3.2-1B-Instruct, publicada por el usuario `anzeeai2` en HuggingFace. Se trata, por tanto, de una redistribución de pesos ya entrenados por Meta, no de un modelo entrenado desde cero: el repositorio contiene únicamente el artefacto de inferencia cuantizado, con un tamaño total de 0,8 GB y 1.235.814.432 parámetros reales declarados en los safetensors de origen.
+`anzeeai2/Llama-3.2-1B-Instruct-Q4_K_M` es una cuantización en formato GGUF del modelo Llama-3.2-1B-Instruct, publicada por el usuario `anzeeai2` en Hugging Face. Se trata, por tanto, de una redistribución de pesos ya entrenados por Meta, no de un modelo entrenado desde cero: el repositorio contiene únicamente el artefacto de inferencia cuantizado, con un tamaño total de 0,8 GB y 1.235.814.432 parámetros reales declarados en los safetensors de origen.
 
 El interés práctico del artefacto es acotado pero claro: empaqueta un modelo de 1,2 mil millones de parámetros en un fichero de menos de 1 GB, ejecutable en CPU y en GPUs de gama baja o integradas. La cuantización empleada es Q4_K_M, una k-quant de 4 bits con mezcla de precisión por bloque, y la model card incluye la etiqueta `imatrix`, lo que sugiere el uso de una matriz de importancia para calibrar la cuantización y reducir la pérdida de calidad respecto a una Q4_K_M genérica.
 
@@ -21,7 +21,7 @@ La relevancia es limitada por su carácter de derivado: la model card está prá
 | Licencia | `llama3.2` (Llama 3.2 Community License) |
 | Formato de pesos | GGUF |
 | Tamano del repositorio | 0,8 GB |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Etiquetas declaradas | `gguf`, `endpoints_compatible`, `region:us`, `imatrix`, `conversational` |
 | Fecha de creación / actualización | 2026-10-27 / 2026-10-27 |
 
@@ -41,7 +41,7 @@ La única información técnica real es la relativa al proceso de cuantización:
 - Soporte de tool calling / function calling: no documentado en el repositorio.
 - Soporte de agentes y razonamiento multi-paso: no documentado; en un modelo de 1,2 B de parámetros el rendimiento en cadenas de herramientas es estructuralmente frágil.
 - Modo thinking explícito, visión o audio: no disponibles.
-- Compatibilidad con endpoints de inferencia: la etiqueta `endpoints_compatible` sugiere que el GGUF puede servirse con runtimes compatibles con la API de HuggingFace, pero no se detalla cuáles.
+- Compatibilidad con endpoints de inferencia: la etiqueta `endpoints_compatible` sugiere que el GGUF puede servirse con runtimes compatibles con la API de Hugging Face, pero no se detalla cuáles.
 
 ## Casos de uso
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| anzeeai2/Llama-3.2-1B-Instruct-Q4_K_M (este) | 1,24 B | No disponible | GGUF Q4_K_M | Llama 3.2 Community | HuggingFace, 0 descargas | No disponible |
-| meta-llama/Llama-3.2-1B-Instruct (original) | ~1,24 B | No disponible en esta ficha | Safetensors | Llama 3.2 Community | HuggingFace, repositorio oficial | No disponible |
-| Otras cuantizaciones GGUF de Llama 3.2 1B (barrelfish, bartowski, etc.) | ~1,24 B | No disponible en esta ficha | GGUF (Q4_K_M, Q5_K_M, Q8_0, etc.) | Llama 3.2 Community | HuggingFace | No disponible |
-| Modelos de tamaño comparable de otras familias (Qwen2.5-1.5B, Gemma 2 2B, SmolLM2-1.7B) | 1,5-2 B | No disponible en esta ficha | Safetensors, GGUF | Variables | HuggingFace | No disponible |
+| anzeeai2/Llama-3.2-1B-Instruct-Q4_K_M (este) | 1,24 B | No disponible | GGUF Q4_K_M | Llama 3.2 Community | Hugging Face, 0 descargas | No disponible |
+| meta-llama/Llama-3.2-1B-Instruct (original) | ~1,24 B | No disponible en esta ficha | Safetensors | Llama 3.2 Community | Hugging Face, repositorio oficial | No disponible |
+| Otras cuantizaciones GGUF de Llama 3.2 1B (barrelfish, bartowski, etc.) | ~1,24 B | No disponible en esta ficha | GGUF (Q4_K_M, Q5_K_M, Q8_0, etc.) | Llama 3.2 Community | Hugging Face | No disponible |
+| Modelos de tamaño comparable de otras familias (Qwen2.5-1.5B, Gemma 2 2B, SmolLM2-1.7B) | 1,5-2 B | No disponible en esta ficha | Safetensors, GGUF | Variables | Hugging Face | No disponible |
 
 La comparación cuantitativa no puede establecerse con la información disponible: no hay benchmarks publicados para este repositorio ni datos verificados en las fuentes consultadas para los modelos alternativos. La diferencia práctica frente a otras cuantizaciones del mismo modelo base se reduce al método de generación del GGUF (uso de `imatrix`, herramienta y corpus de calibración), que no está documentado aquí.
 
@@ -92,7 +92,7 @@ La comparación cuantitativa no puede establecerse con la información disponibl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anzeeai2/Llama-3.2-1B-Instruct-Q4_K_M
+- Repositorio en Hugging Face: https://huggingface.co/anzeeai2/Llama-3.2-1B-Instruct-Q4_K_M
 - Repositorio del modelo base (referencia, no enlazado desde esta ficha): no disponible en la información proporcionada.
 - Paper, blog técnico o demo del autor: no disponible.
 - La búsqueda web realizada no ha devuelto ninguna fuente relacionada con el modelo; los resultados obtenidos corresponden a un sitio de vídeos sin relación con el repositorio y se han descartado.

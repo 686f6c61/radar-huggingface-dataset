@@ -2,7 +2,7 @@
 
 ## Resumen
 
-new_velstand_test es una politica de control (policy) de aprendizaje por refuerzo publicada en HuggingFace por el usuario apirrone, orientada al robot cuadrupedo open source microduck de Pollen Robotics. No se trata de un modelo de lenguaje ni de un modelo generativo multimodal: es un controlador neuronal exportado a ONNX que mapea una observacion de 61 dimensiones a 14 acciones, ejecutandose a 50 Hz. Su proposito es producir una marcha (gait) perpetua, es decir, un patron de locomocion que se mantiene activo indefinidamente hasta que el operador lo detiene o carga otra politica en el slot correspondiente.
+new_velstand_test es una politica de control (policy) de aprendizaje por refuerzo publicada en Hugging Face por el usuario apirrone, orientada al robot cuadrupedo open source microduck de Pollen Robotics. No se trata de un modelo de lenguaje ni de un modelo generativo multimodal: es un controlador neuronal exportado a ONNX que mapea una observacion de 61 dimensiones a 14 acciones, ejecutandose a 50 Hz. Su proposito es producir una marcha (gait) perpetua, es decir, un patron de locomocion que se mantiene activo indefinidamente hasta que el operador lo detiene o carga otra politica en el slot correspondiente.
 
 El artefacto se distribuye como un fichero `policy.onnx` con el normalizador de observaciones ya integrado, de modo que el consumidor solo debe alimentar observaciones en crudo. Se acompana de un `manifest.json` que sigue el esquema 2 del manifiesto de politicas de microduck descrito en el repositorio del daemon. La carga en el robot se realiza mediante el comando `robotctl policy load <slot> apirrone/new_velstand_test`.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto / interfaz | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| apirrone/new_velstand_test | No disponible | 61 observaciones, 14 acciones, 50 Hz | No disponible | No disponible | HuggingFace (0 descargas, 0 likes) |
+| apirrone/new_velstand_test | No disponible | 61 observaciones, 14 acciones, 50 Hz | No disponible | No disponible | Hugging Face (0 descargas, 0 likes) |
 | Otras politicas de microduck | No disponible | No disponible | No disponible | No disponible | No se identifican en la informacion proporcionada |
 | Alternativas de RL para cuadrupedos | No disponible | No disponible | No disponible | No disponible | No se identifican en la informacion proporcionada |
 
@@ -83,7 +83,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/apirrone/new_velstand_test
+- Modelo en Hugging Face: https://huggingface.co/apirrone/new_velstand_test
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento citado en la model card: `pollen-robotics/microduck_rl` (rama `protective_fall`, commit `d3edc1fa1`); no se proporciona URL directa en la informacion disponible
 - Documentacion del manifiesto de politicas: `docs/policy-manifest.md` del repositorio del daemon de microduck; no se proporciona URL directa en la informacion disponible

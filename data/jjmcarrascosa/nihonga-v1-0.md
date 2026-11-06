@@ -82,8 +82,8 @@ No se han publicado resultados en benchmarks estándar de la comunidad (GenEval,
 
 | Modelo | Parámetros del transformer | Bloques | Pasos | Tiempo por imagen (H100, 1024 × 1024) | Ortografía | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Nihonga-v1.0 | 6,729 B | 30 + 2 puentes | 10 | 1,75 s | 15/16 | qwen-research | HuggingFace, 0 descargas |
-| Qwen-Image-2.1 (base) | 7,115 B | 32 | 40 | 6,89 s | 16/16 | qwen-research | HuggingFace (modelo base) |
+| Nihonga-v1.0 | 6,729 B | 30 + 2 puentes | 10 | 1,75 s | 15/16 | qwen-research | Hugging Face, 0 descargas |
+| Qwen-Image-2.1 (base) | 7,115 B | 32 | 40 | 6,89 s | 16/16 | qwen-research | Hugging Face (modelo base) |
 | Lightning LoRA de LightX2V sobre Qwen-Image-2.1 | 7,115 B | 32 | 4 | 0,87 s | 13/16 | No disponible en esta ficha | Publicado, según la model card |
 | Otros modelos texto-a-imagen de tamaño comparable | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -105,11 +105,11 @@ La comparación se limita a las variantes del propio Qwen-Image-2.1 documentadas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jjmcarrascosa/Nihonga-v1.0
+- Modelo en Hugging Face: https://huggingface.co/jjmcarrascosa/Nihonga-v1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Página del proyecto: https://niwakiai.com/nihonga/
 - Registro de investigación completo: https://josejuanmartinez.github.io/research/nihonga
 - Notebooks con código y resultados: https://github.com/josejuanmartinez/nihonga
 - Paper con el método y las mediciones completas: anunciado como "coming soon", no disponible.
 
-Nota: la búsqueda web realizada no devolvió ningún resultado relacionado con el modelo; los enlaces anteriores proceden únicamente de la model card y de los metadatos de HuggingFace.
+Nota: la búsqueda web realizada no devolvió ningún resultado relacionado con el modelo; los enlaces anteriores proceden únicamente de la model card y de los metadatos de Hugging Face.

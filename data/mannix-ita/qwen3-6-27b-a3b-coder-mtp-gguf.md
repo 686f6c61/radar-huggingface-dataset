@@ -98,9 +98,9 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/ManniX-ITA/Qwen3.6-27B-A3B-Coder-MTP-GGUF
-- Repositorio HuggingFace del modelo sin cuantizar: https://huggingface.co/ManniX-ITA/Qwen3.6-27B-A3B-Coder
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/ManniX-ITA/Qwen3.6-27B-A3B-Coder-MTP-GGUF
+- Repositorio Hugging Face del modelo sin cuantizar: https://huggingface.co/ManniX-ITA/Qwen3.6-27B-A3B-Coder
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Pagina en Ollama: https://ollama.com/mannix/qwen3.6-27b-a3b-coder
 - Cuantizacion Q3_K_XL en Ollama: https://ollama.com/mannix/qwen3.6-27b-a3b-coder:Q3_K_XL
 - Ficha en MeshKore: https://meshkore.com/agent/mannix-ita-qwen36-27b-a3b-coder-mtp-gguf

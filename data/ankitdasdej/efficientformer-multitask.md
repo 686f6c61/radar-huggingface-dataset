@@ -68,6 +68,6 @@ No disponible. No existe un modelo comparable porque este checkpoint no está en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AnkitDasdej/efficientformer-multitask
+- Hugging Face: https://huggingface.co/AnkitDasdej/efficientformer-multitask
 - Repositorio oficial de EfficientFormer (Snap Research): https://github.com/snap-research/EfficientFormer
 - Paper sobre fusión multitarea eficiente (referencia relacionada): https://arxiv.org/html/2504.09812

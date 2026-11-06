@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`TinyLamda/llm-quant-artifacts` es un repositorio de artefactos de investigación sobre cuantización de modelos de lenguaje, publicado por el usuario TinyLamda en HuggingFace. No es un modelo listo para inferencia, sino un conjunto de checkpoints con cuantización simulada (fake-quantization) a 4 bits con grupos de 128 valores, empaquetados de forma sin pérdidas en un formato propietario `.lqz`. El repositorio ocupa 87,2 GB e incluye artefactos derivados de cinco modelos base: Qwen3-4B, Qwen3-8B, Llama-3.1-8B-Instruct, Llama-3.1-8B y Llama-2-7b-hf.
+`TinyLamda/llm-quant-artifacts` es un repositorio de artefactos de investigación sobre cuantización de modelos de lenguaje, publicado por el usuario TinyLamda en Hugging Face. No es un modelo listo para inferencia, sino un conjunto de checkpoints con cuantización simulada (fake-quantization) a 4 bits con grupos de 128 valores, empaquetados de forma sin pérdidas en un formato propietario `.lqz`. El repositorio ocupa 87,2 GB e incluye artefactos derivados de cinco modelos base: Qwen3-4B, Qwen3-8B, Llama-3.1-8B-Instruct, Llama-3.1-8B y Llama-2-7b-hf.
 
 El propósito declarado es el estudio comparativo de métodos de cuantización y de localidad de máscaras de poda, con transferencia entre máquinas del propio autor. Cada carpeta de modelo incluye checkpoints empaquetados por método, escalas de suavizado por canal, bases PCA por capa, estadísticas de calibración, ventanas de evaluación tokenizadas de WikiText-2 y C4, y cachés de estudios de localidad de máscaras. Todo ello acompañado de manifiestos con hashes sha256 por fichero y por tensor.
 
@@ -82,7 +82,7 @@ No se dispone de datos comparativos de rendimiento (perplejidad, latencia) entre
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TinyLamda/llm-quant-artifacts
+- Repositorio en Hugging Face: https://huggingface.co/TinyLamda/llm-quant-artifacts
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Modelo base Llama-3.1-8B-Instruct: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

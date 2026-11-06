@@ -95,7 +95,7 @@ Nota: la comparativa se basa en caracteristicas publicas conocidas de los modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/BloomVN-8B-instruct-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/BloomVN-8B-instruct-GGUF
 - Modelo base: https://huggingface.co/BlossomsAI/BloomVN-8B-instruct
 - Dataset de instrucciones: https://huggingface.co/datasets/BlossomsAI/reduced_vietnamese_instruction_dataset
 - Pagina de resumen del autor: https://hf.tst.eu/model#BloomVN-8B-instruct-GGUF

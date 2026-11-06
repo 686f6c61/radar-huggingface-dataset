@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Andly03/jarvis-laptop-assistant es un modelo de lenguaje de aproximadamente 3.085 millones de parametros (unos 3,09 mil millones) publicado en HuggingFace por el usuario Andly03. Por su nombre y por la etiqueta conversational, se presenta como un asistente orientado a entornos de sobremesa y portatiles, es decir, un modelo pensado para ejecutarse localmente en hardware de consumo y mantener dialogos multi-turno. El repositorio incluye pesos en safetensors y tambien ficheros en formato GGUF, lo que confirma que esta preparado para inferencia con llama.cpp y herramientas derivadas como Ollama.
+Andly03/jarvis-laptop-assistant es un modelo de lenguaje de aproximadamente 3.085 millones de parametros (unos 3,09 mil millones) publicado en Hugging Face por el usuario Andly03. Por su nombre y por la etiqueta conversational, se presenta como un asistente orientado a entornos de sobremesa y portatiles, es decir, un modelo pensado para ejecutarse localmente en hardware de consumo y mantener dialogos multi-turno. El repositorio incluye pesos en safetensors y tambien ficheros en formato GGUF, lo que confirma que esta preparado para inferencia con llama.cpp y herramientas derivadas como Ollama.
 
-La relevancia de este tipo de publicaciones radica en el segmento de los modelos de rango 3B: son lo bastante capaces para tareas de asistente, resumen o generacion de codigo sencilla, y lo bastante pequenos para caber en GPU de consumo e incluso ejecutarse parcialmente en CPU. La etiqueta endpoints_compatible indica ademas que puede desplegarse en HuggingFace Inference Endpoints sin adaptaciones especiales.
+La relevancia de este tipo de publicaciones radica en el segmento de los modelos de rango 3B: son lo bastante capaces para tareas de asistente, resumen o generacion de codigo sencilla, y lo bastante pequenos para caber en GPU de consumo e incluso ejecutarse parcialmente en CPU. La etiqueta endpoints_compatible indica ademas que puede desplegarse en Hugging Face Inference Endpoints sin adaptaciones especiales.
 
 La informacion publica disponible es muy limitada: el repositorio no documenta arquitectura, licencia, idiomas, longitud de contexto ni resultados de benchmarks, y acumula 0 descargas y 1 like en el momento de la consulta. Por tanto, buena parte de los apartados de esta ficha se marcan como no disponibles, y las estimaciones de hardware se derivan unicamente del recuento real de parametros y del tamano del repositorio (8,1 GB).
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
   - GGUF Q4_K_M: aproximadamente 1,9-2,0 GB.
 - GPU recomendadas: el modelo cabe con holgura en una RTX 4090, RTX 4080 o RTX 3090 en cualquiera de las cuantizaciones; en FP16 cabe tambien en GPU de 8-12 GB si se limita la longitud de contexto; para servir en produccion con alta concurrencia se recomienda A100 o H100.
 - Cabe en GPU de consumo: si, en tarjetas con 6-8 GB o mas de VRAM utilizando cuantizaciones GGUF de 4 u 8 bits. En CPU, la version Q4 puede ejecutarse de forma viable con RAM suficiente.
-- Opciones de despliegue: llama.cpp y Ollama para GGUF; vLLM, TGI o Transformers para safetensors; HuggingFace Inference Endpoints por la etiqueta endpoints_compatible.
+- Opciones de despliegue: llama.cpp y Ollama para GGUF; vLLM, TGI o Transformers para safetensors; Hugging Face Inference Endpoints por la etiqueta endpoints_compatible.
 - Latencia y throughput: no disponible. No se han publicado mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -88,5 +88,5 @@ La comparativa es estructural: no es posible contrastar rendimiento porque el mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Andly03/jarvis-laptop-assistant
+- Hugging Face: https://huggingface.co/Andly03/jarvis-laptop-assistant
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

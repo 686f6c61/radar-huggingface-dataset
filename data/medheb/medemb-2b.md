@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MedEmb-2B es un modelo de embeddings multimodal para el dominio médico publicado en HuggingFace por la organización MEDHEB. Se basa en la arquitectura Qwen3-VL con aproximadamente 2.100 millones de parámetros (2.127.532.032 según los metadatos de safetensors) y está diseñado para tareas de recuperación de información (retrieval) sobre imágenes médicas 2D, volúmenes 3D (TC y RM) y texto biomédico. El repositorio se acompaña de MedHEB-Bench, un benchmark multimodal médico que abarca radiología, patología, dermatología y otros dominios, con más de 100.000 registros entre conjuntos de test y datos de entrenamiento.
+MedEmb-2B es un modelo de embeddings multimodal para el dominio médico publicado en Hugging Face por la organización MEDHEB. Se basa en la arquitectura Qwen3-VL con aproximadamente 2.100 millones de parámetros (2.127.532.032 según los metadatos de safetensors) y está diseñado para tareas de recuperación de información (retrieval) sobre imágenes médicas 2D, volúmenes 3D (TC y RM) y texto biomédico. El repositorio se acompaña de MedHEB-Bench, un benchmark multimodal médico que abarca radiología, patología, dermatología y otros dominios, con más de 100.000 registros entre conjuntos de test y datos de entrenamiento.
 
 La relevancia de este modelo radica en la escasez de modelos de embeddings multimodales específicos para imágenes médicas: la mayoría de los embeddings de propósito general (CLIP, SigLIP, modelos tipo E5-V) rinden por debajo de lo esperado en imágenes clínicas como radiografías de tórax, TC abdominales o cortes histopatológicos. MedEmb-2B aborda ese hueco permitiendo búsqueda semántica imagen-imagen, imagen-texto y texto-texto en entornos clínicos y de investigación.
 
@@ -83,7 +83,7 @@ MedEmb-2B se distingue por su cobertura explícita de volúmenes 3D (TC y RM), a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MEDHEB/MedEmb-2B
+- Modelo en Hugging Face: https://huggingface.co/MEDHEB/MedEmb-2B
 - Muestra del benchmark MedHEB-Bench: https://huggingface.co/datasets/MEDHEB/MedHEB-Bench_Sample
 - MIMIC-CXR (PhysioNet): https://physionet.org/content/mimic-cxr/2.1.0/
 - ISIC-2019: https://challenge.isic-archive.com/data/#2019

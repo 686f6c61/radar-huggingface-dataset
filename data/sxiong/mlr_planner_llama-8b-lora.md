@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MLR Planner (este) | 8B (LoRA r32) | no disponible | Planificador de bucle plan-ejecución | no disponible | HuggingFace (0 descargas) |
-| MLR Executor (`sxiong/MLR_executor_Llama-8B`) | 8B | no disponible | Ejecutor de razonamiento detallado | no disponible | HuggingFace |
+| MLR Planner (este) | 8B (LoRA r32) | no disponible | Planificador de bucle plan-ejecución | no disponible | Hugging Face (0 descargas) |
+| MLR Executor (`sxiong/MLR_executor_Llama-8B`) | 8B | no disponible | Ejecutor de razonamiento detallado | no disponible | Hugging Face |
 | Llama-3.1-8B (base) | 8B | 128K (según Meta) | LLM generalista | Llama 3.1 Community License | Amplia |
 
 La comparación con alternativas de razonamiento estructurado (por ejemplo, adaptadores de cadena de pensamiento o modelos de razonamiento dedicados) no está disponible en la información proporcionada.
@@ -87,7 +87,7 @@ La comparación con alternativas de razonamiento estructurado (por ejemplo, adap
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sxiong/MLR_planner_Llama-8B-LoRA
+- Hugging Face: https://huggingface.co/sxiong/MLR_planner_Llama-8B-LoRA
 - Checkpoint base: https://huggingface.co/sxiong/MLR_executor_Llama-8B
 - Dataset SFT: https://huggingface.co/datasets/sxiong/MLR_sft_data
 - Código de inferencia MLR: https://github.com/xiongsiheng/MLR

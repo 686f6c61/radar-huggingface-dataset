@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DataForGood/biolit-species-identification | Detector YOLOv8s + clasificación taxonómica con features BioCLIP | no disponible | imagen 640x640 | apache-2.0 (metadatos) | HuggingFace, repo 0,2 GB |
-| Ultralytics YOLOv8s (modelo base) | Detector genérico de objetos | no disponible en la informacion | imagen 640x640 | AGPL-3.0 en el proyecto Ultralytics (verificar antes de uso comercial) | Ultralytics / HuggingFace |
+| DataForGood/biolit-species-identification | Detector YOLOv8s + clasificación taxonómica con features BioCLIP | no disponible | imagen 640x640 | apache-2.0 (metadatos) | Hugging Face, repo 0,2 GB |
+| Ultralytics YOLOv8s (modelo base) | Detector genérico de objetos | no disponible en la informacion | imagen 640x640 | AGPL-3.0 en el proyecto Ultralytics (verificar antes de uso comercial) | Ultralytics / Hugging Face |
 | BioCLIP | Encoder vision-language para imágenes biológicas | no disponible en la informacion | imagen + texto | no disponible en la informacion | Repositorio académico |
 | Detectores genéricos tipo MegaDetector | Detección de fauna en fototrampeo | no disponible en la informacion | imagen | no disponible en la informacion | Repositorio abierto |
 
@@ -93,7 +93,7 @@ La comparación cuantitativa no es posible con la información disponible: no ha
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DataForGood/biolit-species-identification
+- Hugging Face: https://huggingface.co/DataForGood/biolit-species-identification
 - Proyecto Biolit: https://www.biolit.fr
 - Tag con entrenamientos anteriores: https://huggingface.co/DataForGood/yolov8_biolit_crop/tree/v0-avant-nettoyage
 - Modelo base Ultralytics YOLOv8: https://huggingface.co/Ultralytics/YOLOv8

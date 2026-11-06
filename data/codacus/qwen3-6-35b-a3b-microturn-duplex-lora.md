@@ -21,7 +21,7 @@ Su relevancia es doble. Por un lado, demuestra que el paradigma de micro-turnos 
 | Licencia | Apache 2.0 (adaptador); la licencia del modelo base no consta en la informacion disponible |
 | Formato de pesos | GGUF en formato LoRA de llama.cpp (15 MB, F32, rango 32, alpha 64) |
 | Capas modificadas | Capas 36 a 39 (tres delta-net y una de atencion completa): proyecciones de atencion, delta-net y expertos compartidos |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 | Fecha de publicacion | 12 de octubre de 2026 (ultima actualizacion el mismo dia) |
 
 ## Arquitectura y entrenamiento
@@ -99,13 +99,13 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para las
 - Salida muy limitada: maximo tres palabras nuevas por tick. No sirve para respuestas largas, explicaciones detalladas ni generacion de codigo.
 - Riesgo de alucinacion: heredado del modelo base. En dominios criticos (medico, legal, seguridad industrial) el ejemplo de la lejia y el amoniaco es correcto, pero no hay evaluacion sistematica de la fiabilidad de las intervenciones proactivas, y un falso positivo en un aviso de seguridad puede ser tan danino como un falso negativo.
 - Sesgos: no se documenta ninguna evaluacion de sesgos. El entrenamiento con llamadas simuladas puede introducir sesgos de estilo, acento o contexto no representativos de conversaciones reales.
-- Datos de uso pobres: 0 descargas y 16 "me gusta" en el momento de la consulta, repositorio de 0,0 GB en la ficha de HuggingFace y sin resultados de benchmarks publicos. Es un artefacto de demostracion, no un componente con validacion en produccion.
+- Datos de uso pobres: 0 descargas y 16 "me gusta" en el momento de la consulta, repositorio de 0,0 GB en la ficha de Hugging Face y sin resultados de benchmarks publicos. Es un artefacto de demostracion, no un componente con validacion en produccion.
 - Dependencia de componentes externos: para una llamada de voz completa hacen falta reconocimiento de voz en streaming por delante y sintesis de voz por detras. El modelo nunca sabe que audio se esta reproduciendo todavia, lo que complica la gestion de solapamientos reales.
 - Licencia: Apache 2.0 para el adaptador, lo que permite uso comercial del adaptador, pero la licencia del modelo base no consta en la informacion disponible y debe verificarse por separado antes de desplegar en produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/codacus/Qwen3.6-35B-A3B-MicroTurn-Duplex-LoRA
+- Modelo en Hugging Face: https://huggingface.co/codacus/Qwen3.6-35B-A3B-MicroTurn-Duplex-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Paper de referencia (DuplexCascade, Yang, Fujita y Sudo, 2026): https://arxiv.org/abs/2603.09180
 - Cuantizacion GGUF utilizada (UD-Q4_K_M de unsloth): https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF

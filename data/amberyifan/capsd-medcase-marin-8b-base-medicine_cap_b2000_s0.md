@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `capsd-medcase-marin-8b-base-medicine_cap_b2000_s0` es un ajuste fino (fine-tuning) del modelo base `marin-community/marin-8b-base`, desarrollado por el usuario AmberYifan. Está orientado al dominio médico, entrenado sobre un dataset de casos clínicos (identificado como `capsd_marin-8b-base-n13092-medicine-medcase__mix_medicine_cap_b2000_s0`). Se trata de un modelo de generación de texto con arquitectura tipo Llama y aproximadamente 8 000 millones de parámetros, publicado en HuggingFace con licencia "other" (sin especificar).
+El modelo `capsd-medcase-marin-8b-base-medicine_cap_b2000_s0` es un ajuste fino (fine-tuning) del modelo base `marin-community/marin-8b-base`, desarrollado por el usuario AmberYifan. Está orientado al dominio médico, entrenado sobre un dataset de casos clínicos (identificado como `capsd_marin-8b-base-n13092-medicine-medcase__mix_medicine_cap_b2000_s0`). Se trata de un modelo de generación de texto con arquitectura tipo Llama y aproximadamente 8 000 millones de parámetros, publicado en Hugging Face con licencia "other" (sin especificar).
 
 La relevancia de este modelo radica en su especialización en el ámbito médico, aunque la documentación disponible es extremadamente escasa: la model card generada automáticamente no incluye descripción, usos previstos, datos de entrenamiento ni resultados de evaluación. El repositorio contiene únicamente los pesos en formato safetensors y una configuración básica de entrenamiento. Por tanto, cualquier uso en producción requeriría una validación exhaustiva por parte del desarrollador.
 
@@ -69,5 +69,5 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [AmberYifan/capsd-medcase-marin-8b-base-medicine_cap_b2000_s0](https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_cap_b2000_s0)
+- Repositorio en Hugging Face: [AmberYifan/capsd-medcase-marin-8b-base-medicine_cap_b2000_s0](https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_cap_b2000_s0)
 - Modelo base (referenciado): [marin-community/marin-8b-base](https://huggingface.co/marin-community/marin-8b-base) (sin documentación adicional en el repositorio)

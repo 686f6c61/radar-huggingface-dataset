@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) para este modelo,
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/Qwen3.5-9B-SFT-Claude-Opus-Reasoning-Unsloth-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/Qwen3.5-9B-SFT-Claude-Opus-Reasoning-Unsloth-GGUF
 - Modelo base (safetensors): https://huggingface.co/ermiaazarkhalili/Qwen3.5-9B-SFT-Claude-Opus-Reasoning-Unsloth
 - Dataset de destilación: https://huggingface.co/datasets/ermiaazarkhalili/claude-reasoning-distillation
 - Documentación de Unsloth sobre Qwen3.5: https://unsloth.ai/docs/models/qwen3.5

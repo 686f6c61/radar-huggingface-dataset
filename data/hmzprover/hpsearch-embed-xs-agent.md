@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmzprover/hpsearch-embed-xs-agent
+- Modelo en Hugging Face: https://huggingface.co/hmzprover/hpsearch-embed-xs-agent
 - Modelo base: https://huggingface.co/hmzprover/hpsearch-embed-xs
 - Repositorio hpsearch: https://github.com/humanfia/hpsearch
 - Dataset de consultas: https://huggingface.co/datasets/hmzprover/query-chains

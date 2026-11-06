@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Teutonic-I Reliquary SFT (este) | 8,95B | 64k | Hibrida (gated-DeltaNet + softmax) | Apache-2.0 | HuggingFace, 5 descargas |
-| Qwen/Qwen3.5-9B-Base | ~9B | no disponible en la informacion | Transformer denso | no disponible en la informacion | HuggingFace (modelo base) |
-| dendriteholdings/Teutonic-I | no disponible | no disponible | Hibrida con GLA | no disponible en la informacion | HuggingFace (modelo base) |
+| Teutonic-I Reliquary SFT (este) | 8,95B | 64k | Hibrida (gated-DeltaNet + softmax) | Apache-2.0 | Hugging Face, 5 descargas |
+| Qwen/Qwen3.5-9B-Base | ~9B | no disponible en la informacion | Transformer denso | no disponible en la informacion | Hugging Face (modelo base) |
+| dendriteholdings/Teutonic-I | no disponible | no disponible | Hibrida con GLA | no disponible en la informacion | Hugging Face (modelo base) |
 
 La comparacion con alternativas de la misma categoria no puede completarse con los datos proporcionados; no se dispone de resultados de benchmarks ni de especificaciones detalladas de los modelos base mas alla de lo citado en el linaje.
 
@@ -85,6 +85,6 @@ La comparacion con alternativas de la misma categoria no puede completarse con l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ReliquaryForge/teutonic-rl-async-v1-step-00000115
+- Hugging Face: https://huggingface.co/ReliquaryForge/teutonic-rl-async-v1-step-00000115
 - Modelo base Teutonic-I: https://huggingface.co/dendriteholdings/Teutonic-I
 - Modelo base Qwen3.5-9B-Base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

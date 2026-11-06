@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ApolloAI es un modelo publicado en HuggingFace por el usuario apollo2112 bajo el identificador `apollo2112/ApolloAI`. La model card asociada está practicamente vacia: su unico contenido es la declaracion de licencia `apache-2.0`, sin descripcion, sin arquitectura declarada, sin especificaciones de entrenamiento ni ejemplos de uso. El repositorio se creo el 21 de septiembre de 2026 y no registra descargas ni "likes" en el momento de redactar esta ficha.
+ApolloAI es un modelo publicado en Hugging Face por el usuario apollo2112 bajo el identificador `apollo2112/ApolloAI`. La model card asociada está practicamente vacia: su unico contenido es la declaracion de licencia `apache-2.0`, sin descripcion, sin arquitectura declarada, sin especificaciones de entrenamiento ni ejemplos de uso. El repositorio se creo el 21 de septiembre de 2026 y no registra descargas ni "likes" en el momento de redactar esta ficha.
 
 No se dispone de informacion verificable sobre el problema que resuelve, su arquitectura, su tamano, su ventana de contexto o sus datos de entrenamiento. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a articulos de fatwa sobre cuestiones religiosas sin ninguna vinculacion con inteligencia artificial, por lo que no aportan datos tecnicos utilizables.
 
@@ -25,7 +25,7 @@ Datos adicionales verificables del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| Identificador en HuggingFace | apollo2112/ApolloAI |
+| Identificador en Hugging Face | apollo2112/ApolloAI |
 | Autor | apollo2112 |
 | Pipeline declarado | no disponible |
 | Etiquetas | `license:apache-2.0`, `region:us` |
@@ -101,7 +101,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/apollo2112/ApolloAI
+- Repositorio en Hugging Face: https://huggingface.co/apollo2112/ApolloAI
 - Pagina del autor: https://huggingface.co/apollo2112
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

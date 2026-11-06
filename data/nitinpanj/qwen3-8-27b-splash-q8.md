@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Splash-Q8 es un repositorio de pesos comprimidos a 8 bits publicado por el usuario nitinpanj en HuggingFace, pensado como base («baseline») para el motor de inferencia Splash sobre Apple Silicon (Metal). No se trata de un modelo entrenado desde cero, sino de una versión cuantizada a 8 bits de una supuesta base denominada Qwen3.8-27B, orientada a decodificación especulativa con soporte de MTP (multi-token prediction). El repositorio se publicó con licencia Apache 2.0 e idiomas declarados inglés y chino.
+Qwen3.8-27B-Splash-Q8 es un repositorio de pesos comprimidos a 8 bits publicado por el usuario nitinpanj en Hugging Face, pensado como base («baseline») para el motor de inferencia Splash sobre Apple Silicon (Metal). No se trata de un modelo entrenado desde cero, sino de una versión cuantizada a 8 bits de una supuesta base denominada Qwen3.8-27B, orientada a decodificación especulativa con soporte de MTP (multi-token prediction). El repositorio se publicó con licencia Apache 2.0 e idiomas declarados inglés y chino.
 
 La relevancia del artefacto reside en su enfoque de despliegue: según la model card, alcanza 36,5 tok/s de media en decodificación (con picos de 52,7 tok/s) y una aceleración de 3,69x frente a la decodificación autorregresiva estándar, cifras medidas sobre Apple Silicon con el motor Splash. Para razonamiento, el autor declara un 44,4% de precisión agregada entre GPQA Diamond y AIME 2025.
 
@@ -21,7 +21,7 @@ Ahora bien, la información disponible es extremadamente escasa y exige cautela:
 | Formato de pesos | no disponible (el tamaño del repositorio figura como 0,0 GB; no se listan ficheros) |
 | Pipeline | text-generation |
 | Motor de inferencia objetivo | Splash sobre Apple Silicon (Metal) |
-| Fecha de creación del repositorio | 2026-09-20 (según metadatos de HuggingFace) |
+| Fecha de creación del repositorio | 2026-09-20 (según metadatos de Hugging Face) |
 | Descargas / valoraciones | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -100,6 +100,6 @@ No se dispone de datos comparativos de rendimiento, contexto efectivo ni coste d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nitinpanj/Qwen3.8-27B-Splash-Q8
+- Repositorio en Hugging Face: https://huggingface.co/nitinpanj/Qwen3.8-27B-Splash-Q8
 
 Los resultados de la búsqueda web realizada no contienen ningún enlace relacionado con el modelo, el motor Splash, la familia Qwen ni el autor: las entradas devueltas corresponden a páginas de turismo del departamento francés de Morbihan y no guardan relación con el objeto de esta ficha. No se dispone, por tanto, de enlaces a papers, blogs técnicos, repositorios de código ni demostraciones.

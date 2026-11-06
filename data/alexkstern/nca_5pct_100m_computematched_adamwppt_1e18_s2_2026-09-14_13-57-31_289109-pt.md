@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de un modelo de lenguaje decoder-only entrenado con [nanochat](https://github.com/karpathy/nanochat), la implementación minimalista de GPT de Andrej Karpathy. Lo publica el usuario de HuggingFace `alexkstern` como artefacto de un barrido experimental de hiperparámetros, no como un modelo listo para producto. El nombre del repositorio resume el experimento: un modelo de profundidad 20 entrenado con un presupuesto de cómputo de 1e18 FLOPs, en el que un 5 % de ese presupuesto (`alpha_ppt = 0.05`) se reserva para una segunda fase sobre un corpus distinto denominado `nca-paper`, con cambio de vocabulario entre fases.
+Este repositorio contiene un checkpoint de un modelo de lenguaje decoder-only entrenado con [nanochat](https://github.com/karpathy/nanochat), la implementación minimalista de GPT de Andrej Karpathy. Lo publica el usuario de Hugging Face `alexkstern` como artefacto de un barrido experimental de hiperparámetros, no como un modelo listo para producto. El nombre del repositorio resume el experimento: un modelo de profundidad 20 entrenado con un presupuesto de cómputo de 1e18 FLOPs, en el que un 5 % de ese presupuesto (`alpha_ppt = 0.05`) se reserva para una segunda fase sobre un corpus distinto denominado `nca-paper`, con cambio de vocabulario entre fases.
 
 La configuración base es la de un transformer de 20 capas, dimensión de modelo 1280, 10 cabezas de atención, ventana de contexto de 2048 tokens y un vocabulario de 65536 tokens para la fase de preentrenamiento. El checkpoint publicado corresponde al paso 1007 de entrenamiento, con un `smooth_train_loss` de 3,158 y un `min_objective` de 1,071 como únicos valores reportados. No es un modelo ajustado por instrucciones: no hay plantilla de chat, ni datos de RLHF/DPO, ni evaluaciones de benchmarks públicas en la model card.
 
@@ -105,7 +105,7 @@ La comparación en rendimiento con estos modelos no puede establecerse con la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexkstern/nca_5pct_100M_computematched_adamwppt_1e18_s2_2026-09-14_13-57-31_289109-pt
+- Modelo en Hugging Face: https://huggingface.co/alexkstern/nca_5pct_100M_computematched_adamwppt_1e18_s2_2026-09-14_13-57-31_289109-pt
 - Run de Weights & Biases: https://wandb.ai/alexksternteam/cm100M_best_cells_hfpush_v0/runs/b896djuj
 - Repositorio nanochat (Karpathy): https://github.com/karpathy/nanochat
 - Nota sobre la búsqueda web: los resultados devueltos corresponden a páginas de localización de tiendas de una cadena de supermercados y no guardan relación con el modelo; no se han encontrado papers, blogs, repositorios ni demos adicionales relevantes.

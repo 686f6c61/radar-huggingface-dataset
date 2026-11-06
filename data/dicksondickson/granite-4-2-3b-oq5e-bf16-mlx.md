@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dicksondickson/granite-4.2-3b-oQ5e-bf16-MLX es una cuantizacion del modelo base ibm-granite/granite-4.2-3b, publicada por el usuario dicksondickson en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos orientada a ejecucion local en hardware de Apple: el repositorio usa la libreria mlx y el formato de pesos safetensors, con un esquema de cuantizacion mixta de 5 bits (etiquetado como oQ5e) en el que los tensores considerados criticos se mantienen en bf16.
+dicksondickson/granite-4.2-3b-oQ5e-bf16-MLX es una cuantizacion del modelo base ibm-granite/granite-4.2-3b, publicada por el usuario dicksondickson en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos orientada a ejecucion local en hardware de Apple: el repositorio usa la libreria mlx y el formato de pesos safetensors, con un esquema de cuantizacion mixta de 5 bits (etiquetado como oQ5e) en el que los tensores considerados criticos se mantienen en bf16.
 
 El checkpoint se ha generado con la herramienta oMLX 0.7.0 con imatrix habilitada, un modo de cuantizacion que usa estadisticas de activacion para decidir que pesos pueden comprimirse con menos perdida de calidad. Segun el autor, los tensores que permanecen en bf16 estan pensados para chips Apple M3 y posteriores, lo que restringe el publico objetivo a equipos Mac con silicio de generacion reciente.
 
@@ -69,8 +69,8 @@ La model card de este repositorio no incluye ninguna tabla de MMLU, HumanEval, G
 
 | Modelo | Parametros | Formato / cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dicksondickson/granite-4.2-3b-oQ5e-bf16-MLX | 3,66 B | MLX, safetensors, 5 bits mixto con bf16 en tensores criticos | no disponible | MIT | HuggingFace, 0 descargas, 1 like |
-| ibm-granite/granite-4.2-3b (modelo base) | 3,66 B (segun el campo base_model del repo) | no disponible | no disponible | no disponible | HuggingFace |
+| dicksondickson/granite-4.2-3b-oQ5e-bf16-MLX | 3,66 B | MLX, safetensors, 5 bits mixto con bf16 en tensores criticos | no disponible | MIT | Hugging Face, 0 descargas, 1 like |
+| ibm-granite/granite-4.2-3b (modelo base) | 3,66 B (segun el campo base_model del repo) | no disponible | no disponible | no disponible | Hugging Face |
 | Otras cuantizaciones de Granite 4.2 3B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento, contexto ni licencia del modelo base en la informacion proporcionada, por lo que la comparativa se limita a parametros, formato y licencia declarada en este repositorio. No se han aportado datos de modelos alternativos de la misma categoria.
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento, contexto ni licencia del modelo base en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dicksondickson/granite-4.2-3b-oQ5e-bf16-MLX
+- Modelo en Hugging Face: https://huggingface.co/dicksondickson/granite-4.2-3b-oQ5e-bf16-MLX
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Repositorio de oMLX: https://github.com/jundot/omlx
 

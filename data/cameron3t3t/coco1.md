@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cameron3T3T/coco1 es un repositorio de pesos publicado en HuggingFace por el usuario Cameron3T3T el 4 de agosto de 2026 y actualizado por ultima vez el 25 de septiembre de 2026. El repositorio ocupa 10,1 GB y no incluye model card, descripcion, pipeline declarado, licencia, idiomas soportados ni datos de arquitectura o entrenamiento. El unico tag asociado es `region:us`, que solo indica la region de almacenamiento, no caracteristicas tecnicas del modelo.
+Cameron3T3T/coco1 es un repositorio de pesos publicado en Hugging Face por el usuario Cameron3T3T el 4 de agosto de 2026 y actualizado por ultima vez el 25 de septiembre de 2026. El repositorio ocupa 10,1 GB y no incluye model card, descripcion, pipeline declarado, licencia, idiomas soportados ni datos de arquitectura o entrenamiento. El unico tag asociado es `region:us`, que solo indica la region de almacenamiento, no caracteristicas tecnicas del modelo.
 
 No se dispone de informacion verificable sobre la arquitectura, el numero de parametros, la longitud de contexto, el proceso de entrenamiento ni los datos utilizados. Con 0 descargas y 1 like en el momento de la consulta, se trata de un repositorio sin traccion comunitaria ni validacion externa, por lo que cualquier evaluacion de capacidades requiere inspeccionar directamente los ficheros del repositorio (config.json, tokenizer, safetensors) antes de sacar conclusiones.
 
@@ -76,12 +76,12 @@ No disponible. No se puede determinar la categoria del modelo (tamano, modalidad
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara de uso comercial, redistribucion ni creacion de obras derivadas. En la practica, la ausencia de licencia equivale a reserva de derechos en muchas jurisdicciones, lo que desaconseja su uso en produccion.
 - Sin validacion externa: 0 descargas y 1 like indican que el modelo no ha sido probado por terceros.
 - Idiomas y contexto desconocidos: no se puede garantizar comportamiento correcto en castellano ni en conversaciones largas.
-- Fecha de creacion futura: el repositorio figura como creado el 4 de agosto de 2026, dato que conviene verificar en la propia pagina de HuggingFace.
+- Fecha de creacion futura: el repositorio figura como creado el 4 de agosto de 2026, dato que conviene verificar en la propia pagina de Hugging Face.
 - Cadena de custodia opaca: el autor no tiene otro rastro publico localizable en la busqueda realizada, lo que dificulta evaluar la fiabilidad del artefacto.
 - Recomendacion: antes de cualquier uso, inspeccionar config.json, tokenizer_config.json y los ficheros de pesos, y ejecutar una evaluacion propia en un entorno aislado.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Cameron3T3T/coco1
+- Repositorio en Hugging Face: https://huggingface.co/Cameron3T3T/coco1
 - Resultados de busqueda web: ninguno relacionado con el modelo. Los enlaces recuperados (foro de oposiciones QZZN, articulos de soporte de Excel, dataset 3D-COCO del CEA) no guardan relacion con Cameron3T3T/coco1 y se omiten por no aportar informacion relevante.
 - Paper, blog o repositorio oficial: no disponible.

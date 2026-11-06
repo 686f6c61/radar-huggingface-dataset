@@ -73,10 +73,10 @@ Prueba de escucha ciega entre Kokoro y `H512_G512`: 22 pares (una frase por voz,
 
 | Modelo | Parametros | Contexto | Calidad | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| Kokoro-82M (base) | 81,8M | no aplica (TTS) | referencia | apache-2.0 | HuggingFace (hexgrad/Kokoro-82M) |
-| Compressed Kokoro `H512_G512` | 59,3M | no aplica (TTS) | indistinguible en prueba ciega (18/20 "igual") | apache-2.0 | HuggingFace (drmhse/compressed-kokoro) |
-| Compressed Kokoro `H512_G256_S128-128` | 46,8M | no aplica (TTS) | cercana a Kokoro, artefacto 6,9% | apache-2.0 | HuggingFace (drmhse/compressed-kokoro) |
-| Compressed Kokoro `H512_G256` | 44,0M | no aplica (TTS) | artefacto audible en voiced (20,7%) | apache-2.0 | HuggingFace (drmhse/compressed-kokoro) |
+| Kokoro-82M (base) | 81,8M | no aplica (TTS) | referencia | apache-2.0 | Hugging Face (hexgrad/Kokoro-82M) |
+| Compressed Kokoro `H512_G512` | 59,3M | no aplica (TTS) | indistinguible en prueba ciega (18/20 "igual") | apache-2.0 | Hugging Face (drmhse/compressed-kokoro) |
+| Compressed Kokoro `H512_G256_S128-128` | 46,8M | no aplica (TTS) | cercana a Kokoro, artefacto 6,9% | apache-2.0 | Hugging Face (drmhse/compressed-kokoro) |
+| Compressed Kokoro `H512_G256` | 44,0M | no aplica (TTS) | artefacto audible en voiced (20,7%) | apache-2.0 | Hugging Face (drmhse/compressed-kokoro) |
 
 No se proporcionan en la informacion disponible comparaciones con otros modelos TTS de la misma categoria (por ejemplo, otros vocoders o sistemas TTS ligeros), por lo que la comparativa se limita a las variantes del propio repositorio y al modelo base.
 
@@ -94,9 +94,9 @@ No se proporcionan en la informacion disponible comparaciones con otros modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drmhse/compressed-kokoro
+- Modelo en Hugging Face: https://huggingface.co/drmhse/compressed-kokoro
 - Modelo base Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M
-- Codigo y receta de entrenamiento: carpeta `training/` dentro del repositorio de HuggingFace
-- Informes por fichero: carpeta `results/` dentro del repositorio de HuggingFace
-- Muestras de audio: carpeta `samples/` dentro del repositorio de HuggingFace
+- Codigo y receta de entrenamiento: carpeta `training/` dentro del repositorio de Hugging Face
+- Informes por fichero: carpeta `results/` dentro del repositorio de Hugging Face
+- Muestras de audio: carpeta `samples/` dentro del repositorio de Hugging Face
 - Paquete `kokoro` (PyPI): no disponible en la informacion proporcionada (se instala con `pip install kokoro==0.9.4`)

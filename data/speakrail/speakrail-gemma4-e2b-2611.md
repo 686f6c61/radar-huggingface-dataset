@@ -2,7 +2,7 @@
 
 ## Resumen
 
-speakrail-gemma4-e2b-2611 es un modelo publicado en HuggingFace por el usuario speakrail bajo licencia Apache 2.0. El identificador sugiere un modelo de la familia Gemma (posiblemente una variante de cuarta generación) con una designación "e2b" que podría corresponder a un tamaño de aproximadamente 2 mil millones de parámetros, aunque no hay confirmación oficial en la información disponible. El repositorio tiene un tamaño de 0,1 GB, lo que resulta llamativamente pequeño para un modelo de ese tamaño teórico y podría indicar pesos cuantizados, un adaptador, o un repositorio incompleto.
+speakrail-gemma4-e2b-2611 es un modelo publicado en Hugging Face por el usuario speakrail bajo licencia Apache 2.0. El identificador sugiere un modelo de la familia Gemma (posiblemente una variante de cuarta generación) con una designación "e2b" que podría corresponder a un tamaño de aproximadamente 2 mil millones de parámetros, aunque no hay confirmación oficial en la información disponible. El repositorio tiene un tamaño de 0,1 GB, lo que resulta llamativamente pequeño para un modelo de ese tamaño teórico y podría indicar pesos cuantizados, un adaptador, o un repositorio incompleto.
 
 La model card publicada es prácticamente vacía: únicamente contiene la declaración de licencia Apache 2.0, sin descripción, sin especificaciones técnicas, sin datos de entrenamiento ni resultados de evaluación. El repositorio no registra descargas ni interacciones en el momento de la consulta, y fue creado y actualizado con apenas ocho minutos de diferencia el 5 de noviembre de 2026, lo que apunta a una publicación reciente y sin validación por parte de la comunidad.
 
@@ -88,5 +88,5 @@ Los datos de los modelos de referencia no han sido verificados en la informació
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/speakrail/speakrail-gemma4-e2b-2611
+- Repositorio Hugging Face: https://huggingface.co/speakrail/speakrail-gemma4-e2b-2611
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

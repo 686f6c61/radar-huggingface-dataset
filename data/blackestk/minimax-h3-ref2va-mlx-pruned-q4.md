@@ -75,10 +75,10 @@ Notas adicionales: el denoising esta limitado por computo, y las matmuls de 4 y 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-H3-Ref2VA-MLX-pruned-Q4 (este) | 3,48 B (transformer) | No disponible | safetensors MLX, 12 GB | MiniMax H3 Community (excluye UE, UK, Corea del Sur, EE. UU.) | HuggingFace, 35 descargas |
-| MiniMax-H3 Ref2VA oficial Q8 bf16 | No disponible | No disponible | safetensors, 47,5 GB | MiniMax H3 Community | HuggingFace (MiniMaxAI) |
-| MiniMax-H3-MLX-8bit (PipeNetwork) | No disponible | No disponible | MLX, variante FL2VA | MiniMax H3 Community | HuggingFace |
-| MiniMax-H3-MLX-4bit (PipeNetwork) | No disponible | No disponible | MLX, variante FL2VA | MiniMax H3 Community | HuggingFace |
+| MiniMax-H3-Ref2VA-MLX-pruned-Q4 (este) | 3,48 B (transformer) | No disponible | safetensors MLX, 12 GB | MiniMax H3 Community (excluye UE, UK, Corea del Sur, EE. UU.) | Hugging Face, 35 descargas |
+| MiniMax-H3 Ref2VA oficial Q8 bf16 | No disponible | No disponible | safetensors, 47,5 GB | MiniMax H3 Community | Hugging Face (MiniMaxAI) |
+| MiniMax-H3-MLX-8bit (PipeNetwork) | No disponible | No disponible | MLX, variante FL2VA | MiniMax H3 Community | Hugging Face |
+| MiniMax-H3-MLX-4bit (PipeNetwork) | No disponible | No disponible | MLX, variante FL2VA | MiniMax H3 Community | Hugging Face |
 
 La comparativa se limita a variantes del mismo modelo base, ya que no se dispone de datos de benchmarks frente a otros generadores video-audio en la informacion proporcionada.
 
@@ -96,7 +96,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/blackestk/MiniMax-H3-Ref2VA-MLX-pruned-Q4
+- Repositorio Hugging Face: https://huggingface.co/blackestk/MiniMax-H3-Ref2VA-MLX-pruned-Q4
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Runner MLX (fork de Mr Bizarro): https://github.com/mrbizarro/minimax-h3-mlx

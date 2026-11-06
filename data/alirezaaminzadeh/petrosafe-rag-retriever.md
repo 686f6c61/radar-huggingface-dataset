@@ -67,8 +67,8 @@ Estas métricas corresponden al conjunto de evaluación incluido en el repositor
 
 | Modelo | Arquitectura | Contenido | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| petrosafe-rag-retriever | BM25 + TF-IDF word + char | PetroSafe bilingüe (fa/en) | Apache 2.0 | HuggingFace |
-| hse-multimodal-rag-retriever | BM25 + TF-IDF word + char | HSE multimodal | no disponible | HuggingFace |
+| petrosafe-rag-retriever | BM25 + TF-IDF word + char | PetroSafe bilingüe (fa/en) | Apache 2.0 | Hugging Face |
+| hse-multimodal-rag-retriever | BM25 + TF-IDF word + char | HSE multimodal | no disponible | Hugging Face |
 
 Ambos comparten la misma arquitectura de recuperación híbrida. La diferencia principal es que petrosafe-rag-retriever está ajustado sobre el corpus PetroSafe de seguridad de procesos, mientras que hse-multimodal-rag-retriever es la versión original sobre contenido multimodal de HSE. No se dispone de métricas comparativas directas entre ambos en la información proporcionada.
 
@@ -84,7 +84,7 @@ Ambos comparten la misma arquitectura de recuperación híbrida. La diferencia p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alirezaaminzadeh/petrosafe-rag-retriever
+- Modelo en Hugging Face: https://huggingface.co/alirezaaminzadeh/petrosafe-rag-retriever
 - Dataset companion: https://huggingface.co/datasets/alirezaaminzadeh/petrosafe-rag-corpus-fa
 - Space demo: https://huggingface.co/spaces/alirezaaminzadeh/petrosafe-rag-fa
 - Portfolio del autor: https://huggingface.co/spaces/alirezaaminzadeh/alireza-aminzadeh-resume

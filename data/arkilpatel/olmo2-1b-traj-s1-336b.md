@@ -74,7 +74,7 @@ No hay comparativa de rendimiento porque no hay benchmarks para los checkpoints.
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-336b)
+- [Hugging Face del modelo](https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-336b)
 - [Paper de OLMo 2](https://arxiv.org/abs/2501.00656)
 - [Repositorio oficial de OLMo en GitHub](https://github.com/allenai/OLMo)
 - [Página de OLMo 2 en AI2](https://allenai.org/olmo2)

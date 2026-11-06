@@ -71,7 +71,7 @@ Los datos de esta tabla proceden de las fichas publicas de cada modelo alternati
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ElementMerc/tinyllama-1.1b-abliterated-GGUF | 1,1B | no disponible | Apache 2.0 | GGUF en HuggingFace | Sin rechazos; cifras de evaluacion retiradas |
+| ElementMerc/tinyllama-1.1b-abliterated-GGUF | 1,1B | no disponible | Apache 2.0 | GGUF en Hugging Face | Sin rechazos; cifras de evaluacion retiradas |
 | TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1B | 2048 | Apache 2.0 | Safetensors y GGUF comunitarios | Modelo alineado de referencia de la misma familia |
 | Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32 768 | Apache 2.0 | Safetensors y GGUF | Mas contexto y mejor soporte multilingue |
 | meta-llama/Llama-3.2-1B-Instruct | 1,2B | 128 000 | Llama 3.2 Community License | Safetensors y GGUF | Contexto muy superior; licencia con condiciones de uso |

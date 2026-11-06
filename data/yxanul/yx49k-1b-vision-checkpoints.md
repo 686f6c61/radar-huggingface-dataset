@@ -88,5 +88,5 @@ TinyLlama es un modelo de texto puro con una arquitectura estándar y amplio sop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Yxanul/yx49k-1b-vision-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/Yxanul/yx49k-1b-vision-checkpoints
 - Informe técnico y código: https://github.com/yxanul/yxTPU

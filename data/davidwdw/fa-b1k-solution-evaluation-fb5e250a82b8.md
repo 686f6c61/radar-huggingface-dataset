@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo de lenguaje desplegable, sino un paquete de archivo versionado publicado por el usuario `davidwdw`. La propia model card lo describe como un "versioned fleet archive" cuyo "tier" es *evaluation outputs*, es decir, artefactos de salida de evaluacion asociados a una receta canonica denominada `historical_centre_behavior1k_solution_finetunes`. No se declara arquitectura, numero de parametros, contexto ni ninguna capacidad de inferencia.
+Este repositorio de Hugging Face no contiene un modelo de lenguaje desplegable, sino un paquete de archivo versionado publicado por el usuario `davidwdw`. La propia model card lo describe como un "versioned fleet archive" cuyo "tier" es *evaluation outputs*, es decir, artefactos de salida de evaluacion asociados a una receta canonica denominada `historical_centre_behavior1k_solution_finetunes`. No se declara arquitectura, numero de parametros, contexto ni ninguna capacidad de inferencia.
 
 Por el contexto de los repositorios relacionados del mismo autor y de los resultados de busqueda, el paquete parece formar parte de una flota de artefactos vinculada al ecosistema del reto BEHAVIOR-1K (BEHAVIOR Challenge), con recetas que mencionan tareas de codegen y ajustes finos de soluciones `behavior1k`. Sin embargo, la informacion proporcionada no confirma que este snapshot concreto contenga pesos utilizables ni resultados de evaluacion en formato legible.
 
@@ -84,7 +84,7 @@ No disponible. No se dispone de informacion tecnica (parametros, contexto, rendi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-b1k-solution-evaluation-fb5e250a82b8
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-b1k-solution-evaluation-fb5e250a82b8
 - Repositorio relacionado del mismo autor: https://huggingface.co/davidwdw/fa-source-2026-09-22-b1k-task00-pi05-tail-balanced-h20-f8ea5f074569
 - Repositorio relacionado del mismo autor: https://huggingface.co/davidwdw/fa-ckpt-t00-codegen-prepressfix-67999-6f98634d8e27
 - Solucion ganadora del reto BEHAVIOR 2025 (contexto externo, Pi0.5): https://github.com/xiwangxi251/behavior-b1k/tree/main

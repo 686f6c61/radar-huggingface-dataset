@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ghostai-lfm3-1.7b-appcontract-grpo | 1,73B | no disponible | Tool calling para contratos Solana (GRPO) | lfm-open-license-v1.0 | HuggingFace, GGUF |
-| LiquidAI/LFM3-1.7B (base) | 1,7B | no disponible | Modelo generalista | lfm-open-license-v1.0 | HuggingFace |
-| ghostai-lfm3-1.7b-appcontract-sft | no disponible | no disponible | Tool calling para contratos Solana (SFT) | no disponible | HuggingFace |
+| ghostai-lfm3-1.7b-appcontract-grpo | 1,73B | no disponible | Tool calling para contratos Solana (GRPO) | lfm-open-license-v1.0 | Hugging Face, GGUF |
+| LiquidAI/LFM3-1.7B (base) | 1,7B | no disponible | Modelo generalista | lfm-open-license-v1.0 | Hugging Face |
+| ghostai-lfm3-1.7b-appcontract-sft | no disponible | no disponible | Tool calling para contratos Solana (SFT) | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada.
 
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/immortaltatsu/ghostai-lfm3-1.7b-appcontract-grpo
+- Modelo en Hugging Face: https://huggingface.co/immortaltatsu/ghostai-lfm3-1.7b-appcontract-grpo
 - Checkpoint SFT previo: https://huggingface.co/immortaltatsu/ghostai-lfm3-1.7b-appcontract-sft
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B

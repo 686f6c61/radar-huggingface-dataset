@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `timjanssensy/matching` es una implementacion compacta y personalizada en PyTorch de una arquitectura denominada "Dino" orientada a tareas de *matching* (emparejamiento o correspondencia entre entradas). Lo publica el usuario `timjanssensy` en HuggingFace y se distribuye bajo licencia BSD-3-Clause. Se trata de la configuracion "small" del repositorio, concebida explicitamente por el autor para revision de codigo, *smoke tests* y experimentos controlados de pequena escala, no como un modelo preentrenado listo para produccion.
+El modelo `timjanssensy/matching` es una implementacion compacta y personalizada en PyTorch de una arquitectura denominada "Dino" orientada a tareas de *matching* (emparejamiento o correspondencia entre entradas). Lo publica el usuario `timjanssensy` en Hugging Face y se distribuye bajo licencia BSD-3-Clause. Se trata de la configuracion "small" del repositorio, concebida explicitamente por el autor para revision de codigo, *smoke tests* y experimentos controlados de pequena escala, no como un modelo preentrenado listo para produccion.
 
 El dato mas relevante es el tamano: el checkpoint en safetensors contiene 33.088 parametros totales, una cifra extremadamente reducida que confirma que no es un modelo de lenguaje ni un modelo de vision preentrenado a gran escala, sino un esqueleto arquitectonico minúsculo. La model card indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas, no un checkpoint entrenado ni evaluado, y que no se reclama ninguna puntuacion de benchmark.
 
@@ -86,7 +86,7 @@ No disponible. Se trata de una implementacion personalizada y sin entrenar, con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/timjanssensy/matching
+- Hugging Face: https://huggingface.co/timjanssensy/matching
 - Archivo principal: `finetune.py` (incluido en el repositorio)
 - Configuracion de arquitectura: `config.json` (incluido en el repositorio)
 - Receta de experimento: `training_args.json` (incluido en el repositorio)

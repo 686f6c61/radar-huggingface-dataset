@@ -6,7 +6,7 @@ UniSHARP es un modelo de síntesis de vistas novedosas monocular desarrollado po
 
 La relevancia de UniSHARP radica en su capacidad para unificar distintos tipos de proyección en un solo modelo, eliminando la necesidad de adaptar pipelines específicos para cada geometría de cámara. Esto abre aplicaciones en robótica, IA embodied, creación de contenido para AR/VR, telepresencia inmersiva y documentación espacial. El modelo se entrena sobre el dataset OmniRooms, un conjunto simulado de 16 escenas interiores con 300 000 imágenes panorámicas, y utiliza UniK3D para la predicción de rayos y características universales.
 
-El repositorio de HuggingFace contiene los pesos del modelo (9,5 GB) y el código de inferencia, aunque la licencia y los detalles de la arquitectura completa no están disponibles en la información pública proporcionada.
+El repositorio de Hugging Face contiene los pesos del modelo (9,5 GB) y el código de inferencia, aunque la licencia y los detalles de la arquitectura completa no están disponibles en la información pública proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -73,10 +73,10 @@ No se dispone de información suficiente para comparar UniSHARP con otros modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wyzwtnydlpn1/Unisharp
+- Hugging Face: https://huggingface.co/wyzwtnydlpn1/Unisharp
 - Paper arXiv: https://arxiv.org/abs/2606.07514
 - Página del proyecto: https://insta360-research-team.github.io/Unisharp-website/
-- Demo HuggingFace: https://huggingface.co/spaces/Insta360-Research/UniSHARP
+- Demo Hugging Face: https://huggingface.co/spaces/Insta360-Research/UniSHARP
 - Dataset OmniRooms: https://huggingface.co/datasets/Insta360-Research/OmniRooms
 - Código GitHub: https://github.com/Insta360-Research-Team/UniSHARP
 - UniK3D (dependencia): https://github.com/lpiccinelli-eth/UniK3D

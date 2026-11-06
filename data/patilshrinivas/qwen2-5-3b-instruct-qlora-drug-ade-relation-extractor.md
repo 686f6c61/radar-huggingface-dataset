@@ -65,7 +65,7 @@ No se dispone de modelos comparables en la información proporcionada. El modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/patilshrinivas/Qwen2.5-3B-Instruct-qlora-drug-ade-relation-extractor
+- Hugging Face: https://huggingface.co/patilshrinivas/Qwen2.5-3B-Instruct-qlora-drug-ade-relation-extractor
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - TRL: https://github.com/huggingface/trl
 - Weights & Biases: https://wandb.ai/21118007-existence-/huggingface/runs/caauvmsu

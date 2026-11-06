@@ -109,7 +109,7 @@ La versión FP8 reduce el tamaño en un 33% y acelera la inferencia entre un 17%
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/llmtech/decider-0.8b-fp8
+- Hugging Face del modelo: https://huggingface.co/llmtech/decider-0.8b-fp8
 - Modelo base: https://huggingface.co/Mapika/decider-0.8b
 - Repositorio GitHub: https://github.com/Mapika/decider
 - Sitio web de LLM Tech: https://llmtech.eu

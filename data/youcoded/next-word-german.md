@@ -6,7 +6,7 @@
 
 Tecnicamente es una LSTM de una sola capa con capa de proyeccion y vectores de palabra atados (compartidos entre entrada y salida), con vectores de 128 dimensiones y estado oculto de 1024. El archivo empaquetado ocupa 4.718.096 bytes (4,72 MB) en pesos int8 y contiene aproximadamente 4,3 millones de numeros, lo que lo situa en la misma clase de tamano que los modelos de prediccion de siguiente palabra que Google describe para Gboard en el paper arXiv 2305.18465. Lee hasta las ultimas 20 palabras de la frase y solo cubre aleman.
 
-Su relevancia practica esta en el nicho: inferencia completamente local, sin GPU, sin telemetria y sin aprendizaje de lo que escribe el usuario, integrada en un motor C++ propio de unas 250 lineas sin dependencias de machine learning. El autor declara que, combinado con su paquete de n-gramas, supera a Gboard 14.2 entre 3,86 y 14,85 puntos en acierto de la palabra correcta en el top 3. El modelo es muy reciente y con adopcion practicamente nula (0 descargas, 1 like en HuggingFace en el momento de la consulta), y sus metricas estan declaradas por el autor, no verificadas por terceros.
+Su relevancia practica esta en el nicho: inferencia completamente local, sin GPU, sin telemetria y sin aprendizaje de lo que escribe el usuario, integrada en un motor C++ propio de unas 250 lineas sin dependencias de machine learning. El autor declara que, combinado con su paquete de n-gramas, supera a Gboard 14.2 entre 3,86 y 14,85 puntos en acierto de la palabra correcta en el top 3. El modelo es muy reciente y con adopcion practicamente nula (0 descargas, 1 like en Hugging Face en el momento de la consulta), y sus metricas estan declaradas por el autor, no verificadas por terceros.
 
 ## Especificaciones tecnicas
 
@@ -75,7 +75,7 @@ Comparacion declarada por el autor frente a Gboard 14.2 (copia incluida en la im
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `youcoded/next-word-german` | ~4,3 M (int8, 4,72 MB) | Ultimas 20 palabras de la frase | 24,22-31,57 % en top 3 segun conjunto | ODC-BY 1.0 + CC-BY 2.0 FR | HuggingFace, repo de 0,0 GB, 0 descargas |
+| `youcoded/next-word-german` | ~4,3 M (int8, 4,72 MB) | Ultimas 20 palabras de la frase | 24,22-31,57 % en top 3 segun conjunto | ODC-BY 1.0 + CC-BY 2.0 FR | Hugging Face, repo de 0,0 GB, 0 descargas |
 | Gboard 14.2 (referencia del autor, no es un modelo abierto) | No disponible | No disponible | 3,86-14,85 puntos por debajo en los conjuntos medidos por el autor | Propietaria | Solo como APK en imagen de emulador Android |
 | `youcoded/next-word-english`, `-spanish`, `-french` (modelos hermanos citados) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 | Paquete de n-gramas del mismo teclado | No es neuronal (pares y triples de palabras) | Longitud de n-grama | No disponible de forma aislada | No disponible | Se distribuye junto al teclado |
@@ -100,7 +100,7 @@ No se dispone de datos publicos de modelos abiertos comparables de prediccion de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/youcoded/next-word-german
+- Modelo en Hugging Face: https://huggingface.co/youcoded/next-word-german
 - Aviso de licencia (NOTICE.md): https://huggingface.co/youcoded/next-word-german/blob/main/NOTICE.md
 - Metodologia de medida (METHODS.md): https://huggingface.co/youcoded/next-word-german/blob/main/METHODS.md
 - Codigo, scripts y pruebas (rama de desarrollo): https://github.com/itsdestin/swipe-keyboard/tree/feature/179-engine-in-keyboard

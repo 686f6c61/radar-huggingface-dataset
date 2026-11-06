@@ -102,7 +102,7 @@ Frente a otros modelos de código abierto comparables (p. ej., DeepSeek-V3 o Qwe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pipenetwork/GLM-5.3-REAP50-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/pipenetwork/GLM-5.3-REAP50-MLX-4bit
 - Modelo base (GLM-5.3): https://huggingface.co/zai-org/GLM-5.3
 - Modelo base bf16: https://huggingface.co/zai-org/GLM-5.3-BF16
 - Repositorio de código del runtime: https://github.com/PipeNetwork/glm53-mlx

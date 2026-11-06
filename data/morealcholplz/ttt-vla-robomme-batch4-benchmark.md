@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`morealcholplz/ttt-vla-robomme-batch4-benchmark` es una exportación de pesos publicada en HuggingFace por el usuario `morealcholplz`, etiquetada como `ttt-vla`, `robomme`, `robot-memory` y `Gr00tN1d6`. Se trata de un artefacto de benchmark, no de un modelo entrenado para uso general: la propia model card lo describe como la exportación del experimento `2026-08-10 batch4_2gpu_bench`, correspondiente a una prueba de throughput y memoria en dos GPU sobre el benchmark RoboMME. El repositorio contiene configuración y pesos en formato `safetensors` (6,9 GB en total) y suma 3.432.385.472 parámetros (aproximadamente 3,43 mil millones).
+`morealcholplz/ttt-vla-robomme-batch4-benchmark` es una exportación de pesos publicada en Hugging Face por el usuario `morealcholplz`, etiquetada como `ttt-vla`, `robomme`, `robot-memory` y `Gr00tN1d6`. Se trata de un artefacto de benchmark, no de un modelo entrenado para uso general: la propia model card lo describe como la exportación del experimento `2026-08-10 batch4_2gpu_bench`, correspondiente a una prueba de throughput y memoria en dos GPU sobre el benchmark RoboMME. El repositorio contiene configuración y pesos en formato `safetensors` (6,9 GB en total) y suma 3.432.385.472 parámetros (aproximadamente 3,43 mil millones).
 
 El interés del artefacto es fundamentalmente de reproducibilidad e inspección posterior: la model card indica explícitamente que no documenta una tasa de éxito final en RoboMME y que los registros y vídeos de entrenamiento y evaluación se conservan en un repositorio de dataset aparte (`morealcholplz/ttt-vla-robomme-early-runs-eval-archive`). El autor advierte además que existen tres repositorios de benchmark/preflight deliberadamente separados, que comparten el primer shard de pesos pero difieren en el segundo, y que no deben fusionarse ni intercambiarse entre sí.
 
@@ -39,7 +39,7 @@ Tampoco se documentan los datos de entrenamiento: no se especifica el numero de 
 - Exportacion de pesos para un modelo del proyecto TTT-VLA / RoboMME; la carga requiere el codigo de proyecto especifico y no una interfaz generica `AutoModel` (indicado en la model card).
 - Etiquetado como modelo de robotica (`pipeline: robotics`), por lo que su ambito previsto son tareas de control y manipulacion, no generacion de texto general.
 - Presencia de las etiquetas `robot-memory` y `robomme`, que apuntan a evaluacion de memoria a largo plazo en tareas de manipulacion; no se documenta el mecanismo concreto.
-- Compatibilidad declarada con endpoints (`endpoints_compatible`) para su despliegue mediante la infraestructura de HuggingFace.
+- Compatibilidad declarada con endpoints (`endpoints_compatible`) para su despliegue mediante la infraestructura de Hugging Face.
 - No se documentan capacidades de tool calling, function calling, agentes, razonamiento multi-paso, vision, audio ni modo de pensamiento.
 - No se documentan capacidades multilingues ni idiomas soportados.
 
@@ -101,7 +101,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/morealcholplz/ttt-vla-robomme-batch4-benchmark
+- Modelo en Hugging Face: https://huggingface.co/morealcholplz/ttt-vla-robomme-batch4-benchmark
 - Dataset de registros y evaluacion relacionado: https://huggingface.co/datasets/morealcholplz/ttt-vla-robomme-early-runs-eval-archive
 - Perfil del autor: https://huggingface.co/morealcholplz
 - Comando de descarga documentado: `hf download morealcholplz/ttt-vla-robomme-batch4-benchmark --local-dir ./ttt-vla-robomme-batch4-benchmark`

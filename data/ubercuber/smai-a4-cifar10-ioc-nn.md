@@ -66,7 +66,7 @@ No se han publicado resultados comparativos con MMLU, HumanEval, GSM8K ni otros 
 
 | Modelo | Parametros | Contexto | Precision CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UberCuber/smai-a4-cifar10-ioc-nn | 402.250 | no aplica | 46,70 % (test) | MIT | HuggingFace |
+| UberCuber/smai-a4-cifar10-ioc-nn | 402.250 | no aplica | 46,70 % (test) | MIT | Hugging Face |
 | MLP convencional de referencia en CIFAR-10 | ~400.000 | no aplica | no disponible en la informacion | variable | no disponible |
 | CNN pequena tipo LeNet en CIFAR-10 | ~60.000 | no aplica | no disponible en la informacion | variable | no disponible |
 
@@ -85,6 +85,6 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/UberCuber/smai-a4-cifar10-ioc-nn
-- Dataset CIFAR-10 en HuggingFace: https://huggingface.co/datasets/uoft-cs/cifar10
+- Hugging Face: https://huggingface.co/UberCuber/smai-a4-cifar10-ioc-nn
+- Dataset CIFAR-10 en Hugging Face: https://huggingface.co/datasets/uoft-cs/cifar10
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

@@ -56,6 +56,6 @@ No se dispone de comparaciones con otros modelos en la información proporcionad
 - No hay información sobre sesgos o alucinaciones del modelo original, pero al ser un modelo de difusión entrenado con datos de internet, puede reflejar sesgos presentes en esos datos.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/veran666/zoria-realistic-vision-5.1-6bit-coreml
+- Repositorio Hugging Face: https://huggingface.co/veran666/zoria-realistic-vision-5.1-6bit-coreml
 - Modelo base (Realistic Vision 5.1 noVAE): https://huggingface.co/SG161222/Realistic_Vision_V5.1_noVAE
 - Herramienta de conversión de Apple (ml-stable-diffusion): https://github.com/apple/ml-stable-diffusion

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`juicenv/microduck-hill-es6` es una politica de control (policy) para el robot microduck de Pollen Robotics, publicada en HuggingFace por el usuario juicenv. No es un modelo de lenguaje ni un modelo generativo de texto: es una red neuronal entrenada por aprendizaje por refuerzo que produce una marcha (gait) perpetua capaz de hacer que el robot ascienda una pendiente de 1,5 metros. El modelo consume una observacion de 61 dimensiones y emite 14 acciones a 50 Hz, y se distribuye en formato ONNX junto con un fichero `manifest.json`.
+`juicenv/microduck-hill-es6` es una politica de control (policy) para el robot microduck de Pollen Robotics, publicada en Hugging Face por el usuario juicenv. No es un modelo de lenguaje ni un modelo generativo de texto: es una red neuronal entrenada por aprendizaje por refuerzo que produce una marcha (gait) perpetua capaz de hacer que el robot ascienda una pendiente de 1,5 metros. El modelo consume una observacion de 61 dimensiones y emite 14 acciones a 50 Hz, y se distribuye en formato ONNX junto con un fichero `manifest.json`.
 
 La politica es un fine-tune del modelo base `namenu/microduck-arena` (concretamente de la variante `strata-hill-he9`, que marca 0,816 s en el ascenso), refinada mediante estrategias de evolucion (evolution strategies) sobre el scorer de colina de Arena, alcanzando 0,812 s. El autor reconoce el trabajo de namenu como origen del modelo base.
 
@@ -75,8 +75,8 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 | Modelo | Tipo | Tarea | Resultado en ascenso de colina | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| juicenv/microduck-hill-es6 | Politica RL (ONNX) | Ascenso de colina 1,5 m | 0,812 s | no disponible | HuggingFace |
-| namenu/microduck-arena (base) | Politica RL | Ascenso de colina 1,5 m (variante strata-hill-he9) | 0,816 s | no disponible | HuggingFace |
+| juicenv/microduck-hill-es6 | Politica RL (ONNX) | Ascenso de colina 1,5 m | 0,812 s | no disponible | Hugging Face |
+| namenu/microduck-arena (base) | Politica RL | Ascenso de colina 1,5 m (variante strata-hill-he9) | 0,816 s | no disponible | Hugging Face |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria en la informacion proporcionada.
 
@@ -93,7 +93,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/juicenv/microduck-hill-es6
+- Hugging Face: https://huggingface.co/juicenv/microduck-hill-es6
 - Modelo base: https://huggingface.co/namenu/microduck-arena
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento: `pollen-robotics/microduck_rl` (rama `hannes-ft`, commit `3c0598cae`) — referencia citada en la model card; no se proporciona URL directa en la informacion disponible.

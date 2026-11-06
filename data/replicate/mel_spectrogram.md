@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`replicate/mel_spectrogram` es un repositorio alojado en HuggingFace por la organizacion Replicate, publicado el 16 de septiembre de 2026 y actualizado el mismo dia. No se trata de un modelo generativo ni de un modelo de lenguaje: la unica etiqueta declarada en su model card es `kernels`, lo que lo situa en la categoria de repositorios de kernels de computo (el mismo tipo de artefacto que, por ejemplo, `kernels-community/flash-attn3`) que HuggingFace distribuye mediante su libreria `kernels`.
+`replicate/mel_spectrogram` es un repositorio alojado en Hugging Face por la organizacion Replicate, publicado el 16 de septiembre de 2026 y actualizado el mismo dia. No se trata de un modelo generativo ni de un modelo de lenguaje: la unica etiqueta declarada en su model card es `kernels`, lo que lo situa en la categoria de repositorios de kernels de computo (el mismo tipo de artefacto que, por ejemplo, `kernels-community/flash-attn3`) que Hugging Face distribuye mediante su libreria `kernels`.
 
 El repositorio esta vacio: 0.0 GB de tamano, 0 descargas y 0 likes en el momento de la consulta. La model card no contiene documentacion tecnica, ficha de uso, pesos ni artefactos de inferencia; unicamente incluye un aviso de plataforma sobre la retirada programada de repositorios de kernels publicados bajo el tipo "model" a partir del 13 de septiembre de 2026, con enlace al hilo de incidencias del proyecto `huggingface/kernels`.
 
@@ -54,7 +54,7 @@ Los siguientes escenarios son hipoteticos y dependen por completo de que el repo
 - Inferencia en tiempo real de audio: en servicios de streaming de voz, un kernel especializado podria reducir la latencia de la etapa de front-end, siempre que el resto del pipeline (VAD, codificacion, decodificacion) mantenga una latencia comparable.
 - Aumento de datos sobre espectrogramas: al disponer de la representacion Mel en GPU, se podrian aplicar tecnicas de SpecAugment (mascarado de bandas de frecuencia y de intervalos temporales) sin transferir tensores a CPU, lo que acelera el entrenamiento.
 - Procesado por lotes de grandes volumenes de audio: archivos de audio en bruto para transcripcion masiva podrian convertirse a Mel en GPU de forma agregada, aprovechando el paralelismo del hardware.
-- Integracion en librerias de terceros: el formato de repositorio `kernels` de HuggingFace esta pensado para cargarse como extension desde Python, de modo que una libreria de audio podria declararlo como dependencia opcional para acelerar su front-end en GPU.
+- Integracion en librerias de terceros: el formato de repositorio `kernels` de Hugging Face esta pensado para cargarse como extension desde Python, de modo que una libreria de audio podria declararlo como dependencia opcional para acelerar su front-end en GPU.
 - Comparacion de rendimiento de front-ends: serviria como referencia para medir el coste de alternativas (torchaudio, nnAudio, librosa) en la etapa de extraccion de caracteristicas.
 
 ## Benchmarks y rendimiento
@@ -75,11 +75,11 @@ Dado que no hay informacion sobre el contenido real del repositorio, la comparac
 
 | Criterio | replicate/mel_spectrogram | torchaudio.transforms.MelSpectrogram | nnAudio | librosa.feature.melspectrogram |
 |---|---|---|---|---|
-| Tipo de artefacto | repositorio de kernel en HuggingFace | funcion de libreria | libreria de capas de audio | funcion de libreria |
+| Tipo de artefacto | repositorio de kernel en Hugging Face | funcion de libreria | libreria de capas de audio | funcion de libreria |
 | Backend | no disponible | PyTorch (CPU y GPU) | PyTorch (CPU y GPU) | NumPy y SciPy (CPU) |
 | Diferenciable | no disponible | si | si | no de forma nativa |
 | Licencia | no disponible | BSD-2-Clause | MIT | ISC |
-| Distribucion | HuggingFace Hub (0 descargas) | paquete PyPI `torchaudio` | paquete PyPI `nnAudio` | paquete PyPI `librosa` |
+| Distribucion | Hugging Face Hub (0 descargas) | paquete PyPI `torchaudio` | paquete PyPI `nnAudio` | paquete PyPI `librosa` |
 | Documentacion | inexistente en el repositorio | extensa | extensa | extensa |
 | Mantenimiento | sin evidencia | activo | activo | activo |
 
@@ -90,7 +90,7 @@ Las licencias de las alternativas corresponden a lo declarado habitualmente por 
 - Repositorio vacio: 0.0 GB y sin artefactos publicados. No es utilizable en su estado actual.
 - Ausencia total de model card tecnica: no se documentan entradas, salidas, precisiones soportadas ni requisitos.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara de uso comercial ni de redistribucion. No debe asumirse ningun permiso implicito.
-- Riesgo de retirada: la propia model card advierte de que HuggingFace retirara a partir del 13 de septiembre de 2026 los repositorios de kernels publicados bajo el tipo "model". Cualquier dependencia deberia fijarse a una version concreta de la libreria `kernels` y verificarse.
+- Riesgo de retirada: la propia model card advierte de que Hugging Face retirara a partir del 13 de septiembre de 2026 los repositorios de kernels publicados bajo el tipo "model". Cualquier dependencia deberia fijarse a una version concreta de la libreria `kernels` y verificarse.
 - Cero adopcion: 0 descargas y 0 likes implican ausencia de validacion por parte de la comunidad y de casos de uso reportados.
 - Sin garantias de mantenimiento: la organizacion Replicate mantiene numerosos repositorios; no hay indicios de que este reciba actualizaciones.
 - La correspondencia entre el nombre `mel_spectrogram` y un kernel de espectrograma Mel es una inferencia, no un hecho documentado.
@@ -98,7 +98,7 @@ Las licencias de las alternativas corresponden a lo declarado habitualmente por 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/mel_spectrogram
+- Repositorio en Hugging Face: https://huggingface.co/replicate/mel_spectrogram
 - Aviso de retirada de repositorios de kernels e incidencias: https://github.com/huggingface/kernels/issues/new
 - Sitio de Replicate: https://replicate.com/
 - Explorador de modelos de Replicate: https://replicate.com/explore

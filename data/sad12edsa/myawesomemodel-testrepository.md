@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario SAD12EDSA y publicado como repositorio de prueba en HuggingFace bajo el identificador `SAD12EDSA/MyAwesomeModel-TestRepository`. Segun la model card, se trata de una version mejorada de un modelo anterior, con un incremento significativo en la profundidad de razonamiento y en las capacidades de inferencia, presuntamente logrado mediante un mayor uso de recursos computacionales e introduccion de mecanismos de optimizacion algoritmica durante el post-entrenamiento. El modelo se define como compatible con la biblioteca `transformers` y tiene como pipeline principal la extraccion de caracteristicas.
+MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario SAD12EDSA y publicado como repositorio de prueba en Hugging Face bajo el identificador `SAD12EDSA/MyAwesomeModel-TestRepository`. Segun la model card, se trata de una version mejorada de un modelo anterior, con un incremento significativo en la profundidad de razonamiento y en las capacidades de inferencia, presuntamente logrado mediante un mayor uso de recursos computacionales e introduccion de mecanismos de optimizacion algoritmica durante el post-entrenamiento. El modelo se define como compatible con la biblioteca `transformers` y tiene como pipeline principal la extraccion de caracteristicas.
 
 No obstante, el repositorio presenta un tamano de 0.0 GB, sin descargas ni likes, lo que indica que no contiene pesos ni archivos de modelo reales. La model card menciona resultados de evaluacion en tareas de matematicas, programacion y logica, incluyendo una mejora en AIME 2025 del 70% al 87.5%, pero estos datos son auto-reportados y no verificables de forma independiente. En la informacion disponible no se especifican parametros, arquitectura detallada, longitud de contexto ni requisitos de hardware.
 
@@ -21,7 +21,7 @@ No obstante, el repositorio presenta un tamano de 0.0 GB, sin descargas ni likes
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no incluye detalles tecnicos sobre la arquitectura del modelo. El unico dato al respecto es la etiqueta `transformers` en HuggingFace, que indica compatibilidad con la biblioteca homonima, pero no permite determinar si se trata de un transformer puro, un modelo hibrido o una variante con mecanismos de atencion lineal.
+La informacion proporcionada no incluye detalles tecnicos sobre la arquitectura del modelo. El unico dato al respecto es la etiqueta `transformers` en Hugging Face, que indica compatibilidad con la biblioteca homonima, pero no permite determinar si se trata de un transformer puro, un modelo hibrido o una variante con mecanismos de atencion lineal.
 
 La model card señala que el modelo ha recibido una "actualizacion de version significativa" con mejoras en razonamiento e inferencia, y menciona "mecanismos de optimizacion algoritmica" durante el post-entrenamiento, pero sin detallar si se aplico RLHF, DPO o alguna otra tecnica. Tampoco se aportan datos sobre el conjunto de entrenamiento, el numero de tokens ni la composicion del dataset. Como dato cualitativo, la model card indica que el modelo ahora promedia 23K tokens por pregunta en el test AIME 2025, frente a los 12K de la version anterior, lo que sugiere un mayor "pensamiento" interno, pero no se aportan evidencias de como se implementa.
 
@@ -42,7 +42,7 @@ La model card señala que el modelo ha recibido una "actualizacion de version si
 - Atencion al cliente con contexto de archivos: el prompt de carga de archivos permite adjuntar documentos, por lo que el modelo podria gestionar consultas sobre contratos, manuales o bases de conocimiento en formato texto.
 - Respuestas basadas en busqueda web: la plantilla `search_answer_en_template` esta pensada para citar fuentes y filtrar resultados. Seria adecuado para asistentes que necesiten informacion actualizada y verificable, siempre que se integre con un motor de busqueda.
 - Chat conversacional con system prompt: el model card recomienda un prompt de sistema estandar con la fecha, lo que facilita su uso como asistente generalista en aplicaciones de dialogo.
-- Extraccion de caracteristicas: el pipeline registrado en HuggingFace es `feature-extraction`. Aunque no se aclara su funcionamiento, podria emplearse para generar embeddings de texto en tareas de clasificacion o recuperacion semantica, si los pesos estuvieran disponibles.
+- Extraccion de caracteristicas: el pipeline registrado en Hugging Face es `feature-extraction`. Aunque no se aclara su funcionamiento, podria emplearse para generar embeddings de texto en tareas de clasificacion o recuperacion semantica, si los pesos estuvieran disponibles.
 
 ## Benchmarks y rendimiento
 
@@ -82,7 +82,7 @@ La unica comparativa disponible es la tabla de benchmarks de la model card, que 
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace es un repositorio de prueba (nombre "TestRepository") con tamano 0.0 GB, lo que implica que no contiene pesos, configuracion ni tokenizer. No es posible ejecutar el modelo.
+- El repositorio de Hugging Face es un repositorio de prueba (nombre "TestRepository") con tamano 0.0 GB, lo que implica que no contiene pesos, configuracion ni tokenizer. No es posible ejecutar el modelo.
 - Los resultados de rendimiento son auto-reportados por el autor y no han sido verificados por terceros. Las categorias de la tabla no corresponden a benchmarks reconocidos.
 - Los modelos de comparacion (Model1, Model2, Model1-v2) no estan identificados, por lo que la tabla no permite extraer conclusiones fiables.
 - La fecha de creacion del repositorio (2026-09-09) sugiere que podria tratarse de una entrada de ejemplo o de un artefacto de prueba, no de un modelo en produccion.
@@ -93,5 +93,5 @@ La unica comparativa disponible es la tabla de benchmarks de la model card, que 
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/SAD12EDSA/MyAwesomeModel-TestRepository](https://huggingface.co/SAD12EDSA/MyAwesomeModel-TestRepository)
+- Hugging Face: [https://huggingface.co/SAD12EDSA/MyAwesomeModel-TestRepository](https://huggingface.co/SAD12EDSA/MyAwesomeModel-TestRepository)
 - La busqueda web no devolvio enlaces relevantes. Todos los resultados correspondian a paginas de vuelos de Skyscanner, sin relacion con el modelo.

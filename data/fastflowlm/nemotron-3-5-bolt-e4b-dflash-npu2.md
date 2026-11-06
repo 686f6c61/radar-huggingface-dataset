@@ -80,10 +80,10 @@ NVIDIA reporta longitudes de aceptación de 3,6 a 3,9 en MT-Bench y SPEED-Bench;
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este paquete (DFlash-NPU2) | 0,36 B (borrador) | ventana de 1024 en el borrador | decodificación especulativa en NPU AMD | OpenMDW-1.1 | HuggingFace, runtime FastFlowLM |
-| NVIDIA Nemotron-3.5-Bolt-E4B-4GB-DFlash (BF16 GGUF) | 0,36 B (borrador) | no disponible | decodificación especulativa, formato GGUF | OpenMDW-1.1 | HuggingFace |
+| Este paquete (DFlash-NPU2) | 0,36 B (borrador) | ventana de 1024 en el borrador | decodificación especulativa en NPU AMD | OpenMDW-1.1 | Hugging Face, runtime FastFlowLM |
+| NVIDIA Nemotron-3.5-Bolt-E4B-4GB-DFlash (BF16 GGUF) | 0,36 B (borrador) | no disponible | decodificación especulativa, formato GGUF | OpenMDW-1.1 | Hugging Face |
 | Mismo borrador vía llama.cpp | 0,36 B (borrador) | no disponible | decodificación especulativa en CPU/GPU | OpenMDW-1.1 | integrado en llama.cpp |
-| `nemotron3.5-bolt:e4b` (modelo principal sin borrador) | no disponible en la información | no disponible | generación completa | OpenMDW-1.1 | HuggingFace, FastFlowLM |
+| `nemotron3.5-bolt:e4b` (modelo principal sin borrador) | no disponible en la información | no disponible | generación completa | OpenMDW-1.1 | Hugging Face, FastFlowLM |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ NVIDIA reporta longitudes de aceptación de 3,6 a 3,9 en MT-Bench y SPEED-Bench;
 
 ## Enlaces
 
-- [HuggingFace: FastFlowLM/Nemotron-3.5-Bolt-E4B-DFlash-NPU2](https://huggingface.co/FastFlowLM/Nemotron-3.5-Bolt-E4B-DFlash-NPU2)
+- [Hugging Face: FastFlowLM/Nemotron-3.5-Bolt-E4B-DFlash-NPU2](https://huggingface.co/FastFlowLM/Nemotron-3.5-Bolt-E4B-DFlash-NPU2)
 - [Modelo upstream: nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash)
 - [Repositorio FastFlowLM](https://github.com/FastFlowLM/FastFlowLM)
 - [Licencia OpenMDW-1.1](https://openmdw.ai/license/1-1/)

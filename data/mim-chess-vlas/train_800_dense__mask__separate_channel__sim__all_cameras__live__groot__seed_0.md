@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (GR00T N1.7, Panda, mask separate channel, seed 0) | 3,14 B | no disponible | Pick-and-place simulado, 40 objetos | Apache 2.0 | HuggingFace, 22 descargas |
-| Variantes del mismo autor (`no_mask`, `overlay_a75`, `static`) | no disponible | no disponible | Misma familia de tareas | Apache 2.0 (presumible) | HuggingFace |
+| Este checkpoint (GR00T N1.7, Panda, mask separate channel, seed 0) | 3,14 B | no disponible | Pick-and-place simulado, 40 objetos | Apache 2.0 | Hugging Face, 22 descargas |
+| Variantes del mismo autor (`no_mask`, `overlay_a75`, `static`) | no disponible | no disponible | Misma familia de tareas | Apache 2.0 (presumible) | Hugging Face |
 | GR00T N1.7 base (NVIDIA) | no disponible en la información | no disponible | Modelo fundacional cross-embodiment | no disponible en la información | GitHub NVIDIA/Isaac-GR00T |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de estas variantes entre sí.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_dense__mask__separate_channel__sim__all_cameras__live__groot__seed_0
+- Modelo en Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_dense__mask__separate_channel__sim__all_cameras__live__groot__seed_0
 - Dataset de entrenamiento: https://huggingface.co/datasets/mim-chess-vlas/train_800_dense__mask__separate_channel__sim__all_cameras__live
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=mim-chess-vlas/train_800_dense__mask__separate_channel__sim__all_cameras__live
 - Repositorio GR00T de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T

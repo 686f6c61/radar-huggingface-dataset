@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EricKimsey/Strategische es un repositorio de modelo alojado en HuggingFace por el usuario EricKimsey. La informacion publica disponible es minima: la model card unicamente contiene el bloque de metadatos con la licencia Apache 2.0, sin descripcion, sin arquitectura declarada, sin especificaciones de entrenamiento ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes en la fecha de consulta.
+EricKimsey/Strategische es un repositorio de modelo alojado en Hugging Face por el usuario EricKimsey. La informacion publica disponible es minima: la model card unicamente contiene el bloque de metadatos con la licencia Apache 2.0, sin descripcion, sin arquitectura declarada, sin especificaciones de entrenamiento ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes en la fecha de consulta.
 
 No se dispone de datos sobre el numero de parametros, la longitud de contexto, la arquitectura, los idiomas soportados ni el pipeline asociado. Tampoco se han publicado resultados de benchmarks. El nombre del repositorio es un termino aleman que significa "estrategica", pero no hay informacion que confirme una especializacion tematica concreta.
 
@@ -76,7 +76,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la tarea ob
 ## Enlaces
 
 - Repositorio principal: https://huggingface.co/EricKimsey/Strategische
-- Perfil del autor en HuggingFace: https://huggingface.co/EricKimsey
+- Perfil del autor en Hugging Face: https://huggingface.co/EricKimsey
 - Repositorio relacionado del mismo autor: https://huggingface.co/EricKimsey/strategic_
 - Calendario de lanzamientos de modelos de IA (resultado de busqueda, no especifico del modelo): https://www.scriptbyai.com/ai-model-release-calendar/
 - Guia sobre modelos de madurez de IA en empresas (resultado de busqueda, no especifico del modelo): https://hyscaler.com/insights/ai-maturity-model/

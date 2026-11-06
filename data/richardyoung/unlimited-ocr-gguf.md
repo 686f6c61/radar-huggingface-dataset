@@ -72,9 +72,9 @@ No hay cifras de MMLU, HumanEval, GSM8K ni de benchmarks de OCR como OmniDocBenc
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| richardyoung/Unlimited-OCR-GGUF | ~2,93B | no disponible | OCR con bounding boxes y tipos de region | MIT | GGUF en HuggingFace, Ollama |
-| baidu/Unlimited-OCR (modelo base) | ~3B | no disponible | OCR de un solo disparo para documentos largos | no disponible | HuggingFace, Baidu Cloud |
-| Ai2 olmOCR-2-7B-1025 | 7B | no disponible | OCR de documentos, ajustado sobre un VLM multilingue base (Qwen2.5-VL-7B-Instruct) | no disponible | HuggingFace, playground de Ai2; el autor richardyoung tambien publica una version GGUF en Ollama |
+| richardyoung/Unlimited-OCR-GGUF | ~2,93B | no disponible | OCR con bounding boxes y tipos de region | MIT | GGUF en Hugging Face, Ollama |
+| baidu/Unlimited-OCR (modelo base) | ~3B | no disponible | OCR de un solo disparo para documentos largos | no disponible | Hugging Face, Baidu Cloud |
+| Ai2 olmOCR-2-7B-1025 | 7B | no disponible | OCR de documentos, ajustado sobre un VLM multilingue base (Qwen2.5-VL-7B-Instruct) | no disponible | Hugging Face, playground de Ai2; el autor richardyoung tambien publica una version GGUF en Ollama |
 | DeepSeek-OCR | no disponible | no disponible | OCR de documentos; referenciado como predecesor conceptual | no disponible | no disponible |
 
 Los datos de contexto, licencia y parametros de los modelos comparados no aparecen en la informacion proporcionada; se listan unicamente los aspectos mencionados en los resultados de busqueda.
@@ -92,7 +92,7 @@ Los datos de contexto, licencia y parametros de los modelos comparados no aparec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/richardyoung/Unlimited-OCR-GGUF
+- Repositorio Hugging Face: https://huggingface.co/richardyoung/Unlimited-OCR-GGUF
 - Arbol de archivos del repositorio: https://huggingface.co/richardyoung/Unlimited-OCR-GGUF/tree/main
 - Modelo base: https://huggingface.co/baidu/Unlimited-OCR
 - Repositorio GitHub del modelo base: https://github.com/baidu/Unlimited-OCR

@@ -63,7 +63,7 @@ El repositorio no incluye métricas de evaluación, comparaciones con otros adap
   - Cuantización de 4 bits (GGUF Q4/AWQ/GPTQ): aproximadamente 2,5-3,5 GB, más caché KV.
 - GPU recomendadas: para fp16, una RTX 4090 (24 GB), A100 40 GB o H100; para 4-8 bits, una RTX 3060 de 12 GB o superior suele bastar con contextos moderados.
 - Cabe en GPU de consumo: sí, con cuantización de 8 o 4 bits en GPUs de 8-12 GB o superiores; en fp16 requiere al menos 12-16 GB de VRAM para dejar margen a la caché KV.
-- Opciones de despliegue: `transformers` + `peft` (carga directa del adaptador), vLLM con soporte de LoRA, TGI con adaptadores, y llama.cpp/Ollama si se convierte el adaptador a GGUF y se fusiona con el modelo base. El acceso al repositorio es restringido (gated), por lo que hace falta aceptar condiciones en HuggingFace antes de descargarlo.
+- Opciones de despliegue: `transformers` + `peft` (carga directa del adaptador), vLLM con soporte de LoRA, TGI con adaptadores, y llama.cpp/Ollama si se convierte el adaptador a GGUF y se fusiona con el modelo base. El acceso al repositorio es restringido (gated), por lo que hace falta aceptar condiciones en Hugging Face antes de descargarlo.
 - Latencia y throughput: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -71,14 +71,14 @@ El repositorio no incluye métricas de evaluación, comparaciones con otros adap
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `mg2660/qwen3-customer-support-lora` | Adaptador sobre 4B | No disponible | No disponible | Apache-2.0 | Repositorio gated, 19 descargas |
-| `Qwen/Qwen3-4B-Instruct-2507` (modelo base) | 4.000 millones | 262.144 tokens (documentacion publica del base) | No disponible en la informacion proporcionada | Apache-2.0 | Publico en HuggingFace |
+| `Qwen/Qwen3-4B-Instruct-2507` (modelo base) | 4.000 millones | 262.144 tokens (documentacion publica del base) | No disponible en la informacion proporcionada | Apache-2.0 | Publico en Hugging Face |
 | Otros adaptadores LoRA de atencion al cliente de tamano similar | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la informacion proporcionada |
 
 La busqueda web realizada no devolvio informacion relevante sobre este modelo ni sobre alternativas comparables, por lo que no es posible establecer una comparativa cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Repositorio con acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos, lo que complica la integracion automatizada en pipelines.
+- Repositorio con acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos, lo que complica la integracion automatizada en pipelines.
 - Ausencia total de documentacion: no se detallan datos de entrenamiento, hiperparametros, rango del adaptador ni proceso de evaluacion, lo que impide reproducir o auditar el ajuste.
 - Sin benchmarks publicados: no hay evidencia objetiva de mejora frente al modelo base en tareas de soporte al cliente.
 - Riesgo de alucinacion: al ser un modelo generativo de 4B ajustado, puede inventar politicas, plazos, precios o procedimientos de la empresa. En atencion al cliente esto es especialmente peligroso y exige verificación contra fuentes de verdad (RAG) y, en muchos flujos, supervision humana.
@@ -87,11 +87,11 @@ La busqueda web realizada no devolvio informacion relevante sobre este modelo ni
 - Trazabilidad y mantenimiento: 19 descargas, 0 likes y un unico autor individual; no hay indicios de mantenimiento activo ni de soporte. Es un artefacto de riesgo alto para produccion sin validacion previa.
 - Licencia: Apache-2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base y de los datos de ajuste (no documentados), ya que una licencia permisiva del adaptador no cubre posibles restricciones del dataset.
 - Tamano del repositorio (0,7 GB) incoherente con un LoRA convencional: conviene inspeccionar el contenido antes de desplegarlo para descartar pesos fusionados o ficheros no deseados.
-- Fechas del repositorio: creado el 6 de septiembre de 2026 y actualizado el 19 de septiembre de 2026, segun los metadatos de HuggingFace.
+- Fechas del repositorio: creado el 6 de septiembre de 2026 y actualizado el 19 de septiembre de 2026, segun los metadatos de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mg2660/qwen3-customer-support-lora
+- Hugging Face: https://huggingface.co/mg2660/qwen3-customer-support-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 
 La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo: los resultados obtenidos correspondian a hilos de Reddit sobre navegadores, memes y videojuegos, sin relacion con el artefacto. No se dispone por tanto de papers, blogs, repositorios ni demos adicionales.

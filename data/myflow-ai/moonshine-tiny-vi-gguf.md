@@ -119,7 +119,7 @@ No se dispone de cifras de WER comparables entre estas alternativas dentro de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/myflow-ai/moonshine-tiny-vi-gguf
+- Modelo en Hugging Face: https://huggingface.co/myflow-ai/moonshine-tiny-vi-gguf
 - Modelo base: https://huggingface.co/UsefulSensors/moonshine-tiny-vi
 - Commit upstream fijado: https://huggingface.co/UsefulSensors/moonshine-tiny-vi/commit/d4d20da
 - Paper de Moonshine: https://arxiv.org/abs/2509.02523

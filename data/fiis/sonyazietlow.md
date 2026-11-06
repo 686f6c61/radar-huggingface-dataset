@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FIIS/sonyazietlow es un adaptador LoRA de texto a imagen publicado en HuggingFace por el usuario FIIS. Se trata de un DreamBooth-LoRA entrenado sobre el modelo base krea/Krea-2-Raw y pensado para invocarse sobre krea/Krea-2-Turbo, con el token de activacion `Sonja Zietlow`. El repositorio ocupa 1,0 GB, esta etiquetado como `text-to-image`, `diffusers`, `lora` y `template:sd-lora`, y se distribuye bajo licencia Apache 2.0.
+FIIS/sonyazietlow es un adaptador LoRA de texto a imagen publicado en Hugging Face por el usuario FIIS. Se trata de un DreamBooth-LoRA entrenado sobre el modelo base krea/Krea-2-Raw y pensado para invocarse sobre krea/Krea-2-Turbo, con el token de activacion `Sonja Zietlow`. El repositorio ocupa 1,0 GB, esta etiquetado como `text-to-image`, `diffusers`, `lora` y `template:sd-lora`, y se distribuye bajo licencia Apache 2.0.
 
 El modelo no es un modelo fundacional: es un adaptador de bajo rango que inyecta un concepto concreto (una identidad de persona) en un pipeline de difusion preexistente. Su relevancia practica esta en dos puntos: por un lado, muestra el flujo de trabajo habitual de la comunidad para personalizar modelos de difusion de gran tamano sin reentrenar el modelo completo; por otro, plantea de forma directa el debate sobre el uso de la imagen de personas identificables en modelos generativos, ya que el token de activacion corresponde a un nombre de persona real.
 
@@ -16,7 +16,7 @@ La informacion publicada por el autor es minima: model card con tres prompts de 
 | Parametros totales | no disponible (el autor no publica el numero de parametros del adaptador) |
 | Longitud de contexto | no disponible (no aplica en el sentido de contexto de texto; la longitud del prompt no esta documentada) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible en los metadatos de HuggingFace; los prompts de ejemplo y el token de activacion estan en ingles |
+| Idiomas soportados | no disponible en los metadatos de Hugging Face; los prompts de ejemplo y el token de activacion estan en ingles |
 | Licencia | apache-2.0 |
 | Formato de pesos | Pesos cargables con `load_lora_weights` de diffusers; formato de fichero concreto no confirmado en la informacion disponible |
 | Modelo base | krea/Krea-2-Raw (entrenamiento) y krea/Krea-2-Turbo (muestras publicadas) |
@@ -80,7 +80,7 @@ No hay una comparativa cuantitativa disponible. La tabla siguiente contrasta el 
 
 | Alternativa | Tipo | Parametros | Contexto o resolucion | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FIIS/sonyazietlow | LoRA DreamBooth de identidad sobre Krea 2 | no disponible | no disponible | apache-2.0 | no disponible | Publico en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| FIIS/sonyazietlow | LoRA DreamBooth de identidad sobre Krea 2 | no disponible | no disponible | apache-2.0 | no disponible | Publico en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | LoRA de identidad entrenado ad hoc sobre el mismo modelo base | LoRA DreamBooth | Depende del rango elegido | no disponible | Depende del autor | no disponible | Requiere dataset propio y computo de entrenamiento |
 | Ajuste fino parcial o completo de un modelo de difusion | Fine-tuning | no disponible | no disponible | Depende del modelo base | no disponible | Coste de entrenamiento y almacenamiento muy superior |
 | Adaptadores de estilo publicos para el mismo ecosistema | LoRA de estilo | no disponible | no disponible | Variable segun autor | no disponible | Amplia disponibilidad en repositorios de la comunidad |
@@ -99,7 +99,7 @@ No hay una comparativa cuantitativa disponible. La tabla siguiente contrasta el 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FIIS/sonyazietlow
+- Repositorio Hugging Face: https://huggingface.co/FIIS/sonyazietlow
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base usado en las muestras: https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de diffusers sobre carga de LoRA: https://huggingface.co/docs/diffusers/main/en/tutorials/using_peft_for_inference

@@ -33,7 +33,7 @@ El entrenamiento se realizó sobre una selección curada de un largometraje anim
 - Consistencia de personaje desde texto sin necesidad de imagenes de referencia: repitiendo la misma descripcion textual en cada prompt se mantiene el mismo personaje entre escenas.
 - Control fino de la intensidad del estilo mediante el parametro `scale` (1.0 para el look completo, 0.4-0.8 para mezclar con direcciones de arte modernas).
 - Compatible con varias relaciones de aspecto: 21:9, 16:9 y 4:3.
-- Integracion con el pipeline de difusion de HuggingFace y con los endpoints de LoRA de MiniMax H3 en la plataforma fal.
+- Integracion con el pipeline de difusion de Hugging Face y con los endpoints de LoRA de MiniMax H3 en la plataforma fal.
 - Dos variantes del adaptador (light y strong) para elegir entre un acabado pictorial o un acabado de cel clasico.
 
 ## Casos de uso
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - No se especifican requisitos de VRAM ni GPU recomendadas para ejecutar el LoRA de forma local. El autor recomienda usar los endpoints de fal para MiniMax H3, donde la inferencia se ejecuta en la nube.
 - Para uso local, los requisitos dependen del modelo base MiniMax H3, que no esta documentado en la informacion proporcionada.
 - No hay datos sobre latencia ni throughput locales; los tiempos reportados (28 minutos para 261 planos) corresponden a la ejecucion en la plataforma fal con los endpoints acelerados.
-- Opciones de despliegue: el modelo se puede integrar con el pipeline `diffusers` de HuggingFace y con los endpoints LoRA de fal (`minimax/h3/text-to-video/lora`).
+- Opciones de despliegue: el modelo se puede integrar con el pipeline `diffusers` de Hugging Face y con los endpoints LoRA de fal (`minimax/h3/text-to-video/lora`).
 
 ## Comparativa con modelos similares
 
@@ -71,7 +71,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (Lo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/lovis93/studio-1939-old-animation-lora-minimax-h3
+- Repositorio de Hugging Face: https://huggingface.co/lovis93/studio-1939-old-animation-lora-minimax-h3
 - Publicacion en X del autor: https://x.com/OdinLovis/status/2092052236566491215
 - Plataforma fal (endpoints de MiniMax H3): https://fal.ai
 - Pagina de MiniMax: https://www.minimax.io/

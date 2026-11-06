@@ -101,7 +101,7 @@ No disponible. En la informacion proporcionada no se identifican modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edededdy/ShallowSeek-mini-base
+- Modelo en Hugging Face: https://huggingface.co/edededdy/ShallowSeek-mini-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 
 Nota sobre los resultados de busqueda: los enlaces encontrados (`https://doc.shallowseek.top/en/guide/using-models.html`, `https://github.com/daggerhashjack/ShallowSeek`, `https://ollama.com/` y la coleccion `https://huggingface.co/collections/multimodalart/base-models`) corresponden a proyectos distintos que comparten el nombre "ShallowSeek" (un cliente Android de Ollama y una plataforma con API compatible con OpenAI) y no estan relacionados con el modelo edededdy/ShallowSeek-mini-base, segun la informacion disponible.

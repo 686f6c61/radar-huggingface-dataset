@@ -103,7 +103,7 @@ No se dispone de informacion sobre los parametros y licencias de los modelos com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ahmed-amedo-1/GLM-5.2
+- Repositorio Hugging Face: https://huggingface.co/ahmed-amedo-1/GLM-5.2
 - Paper tecnico GLM-5 (arXiv 2602.15763): https://arxiv.org/abs/2602.15763
 - Paper IndexShare (arXiv 2603.12201): https://arxiv.org/abs/2603.12201
 - Blog oficial de GLM-5.2: https://z.ai/blog/glm-5.2

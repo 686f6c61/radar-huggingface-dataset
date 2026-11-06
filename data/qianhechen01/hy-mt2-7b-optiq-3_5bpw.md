@@ -46,7 +46,7 @@ La cuantizacion OPTIQ a 3,5 bits reduce significativamente el tamaño de los pes
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de MMLU, HumanEval, GSM8K ni de metricas de traduccion como BLEU o COMET para esta version cuantizada. El repositorio de HuggingFace no incluye evaluaciones, y la busqueda web no ha proporcionado cifras concretas.
+No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de MMLU, HumanEval, GSM8K ni de metricas de traduccion como BLEU o COMET para esta version cuantizada. El repositorio de Hugging Face no incluye evaluaciones, y la busqueda web no ha proporcionado cifras concretas.
 
 ## Requisitos de hardware
 
@@ -79,8 +79,8 @@ La comparativa es limitada porque no se han publicado benchmarks de la version c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/QianheChen01/Hy-MT2-7B-optiq-3_5bpw
+- Repositorio Hugging Face: https://huggingface.co/QianheChen01/Hy-MT2-7B-optiq-3_5bpw
 - GitHub de Tencent Hy-MT2: https://github.com/Tencent-Hunyuan/Hy-MT2
-- Pagina del modelo en HuggingFace (Tencent): https://huggingface.co/tencent/Hy-MT2-7B
+- Pagina del modelo en Hugging Face (Tencent): https://huggingface.co/tencent/Hy-MT2-7B
 - Ficha en Xinference: https://model.xinference.io/models/detail/Hy-MT2-7B
 - Ficha en ThinkLLM: https://thinkllm.dev/models/hy-mt2-7b

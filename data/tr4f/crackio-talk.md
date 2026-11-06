@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Crackio Talk (este adaptador) | LoRA sobre 2B | No disponible | Estilo conversacional para voz | LFM Open License v1.0 (comercial < 10 M USD) | HuggingFace, 0 descargas |
-| LiquidAI/LFM3-VL-2B (base) | 2B | No disponible | Multimodal image-text-to-text | LFM Open License v1.0 | HuggingFace |
+| Crackio Talk (este adaptador) | LoRA sobre 2B | No disponible | Estilo conversacional para voz | LFM Open License v1.0 (comercial < 10 M USD) | Hugging Face, 0 descargas |
+| LiquidAI/LFM3-VL-2B (base) | 2B | No disponible | Multimodal image-text-to-text | LFM Open License v1.0 | Hugging Face |
 | Alternativas de 2B conversacional | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de modelos comparables adicionales en la información proporcionada.
@@ -87,6 +87,6 @@ No se dispone de datos de benchmarks ni de modelos comparables adicionales en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TR4F/crackio-talk
+- Hugging Face: https://huggingface.co/TR4F/crackio-talk
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Repositorio de Crackio: https://github.com/RafalOfficial/Crackio

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Patient Timeline Forecasting — ens_lr_gbdt_tx es un modelo de clasificación tabular multi-etiqueta publicado por el usuario sallamsaka en HuggingFace bajo el identificador `sallamsaka/M31-Coding-Test`. Su tarea es predecir cuáles de 40 condiciones clínicas se diagnostican por primera vez en los cinco años posteriores a una fecha ancla del paciente, utilizando exclusivamente eventos estructurados de historia clínica electrónica (EHR) registrados estrictamente antes de esa ancla. El modelo se entrenó como ejercicio de investigación para el take-home de un internship en M31 y trabaja únicamente con datos sintéticos generados con Synthea.
+Patient Timeline Forecasting — ens_lr_gbdt_tx es un modelo de clasificación tabular multi-etiqueta publicado por el usuario sallamsaka en Hugging Face bajo el identificador `sallamsaka/M31-Coding-Test`. Su tarea es predecir cuáles de 40 condiciones clínicas se diagnostican por primera vez en los cinco años posteriores a una fecha ancla del paciente, utilizando exclusivamente eventos estructurados de historia clínica electrónica (EHR) registrados estrictamente antes de esa ancla. El modelo se entrenó como ejercicio de investigación para el take-home de un internship en M31 y trabaja únicamente con datos sintéticos generados con Synthea.
 
 El conjunto de datos consta de 3.514 pacientes sintéticos, divididos en 2.791 de entrenamiento, 365 de validación y 358 de prueba. El ancla se define como el último encuentro registrado menos cinco años naturales, truncado a medianoche, y la etiqueta se activa cuando el primer diagnóstico de una condición cae dentro de `[ancla, ancla+5a]`. Los pacientes ya diagnosticados antes del ancla se tratan como prevalentemente negativos y se reportan por separado, no como negativos ordinarios.
 
@@ -74,7 +74,7 @@ No se han proporcionado modelos comparables en la información disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ens_lr_gbdt_tx (este modelo) | no disponible | no aplica | macro AUROC 0,7700 / macro AP 0,2681 (validación) | MIT | HuggingFace |
+| ens_lr_gbdt_tx (este modelo) | no disponible | no aplica | macro AUROC 0,7700 / macro AP 0,2681 (validación) | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El único dato comparativo indirecto que aporta el autor es externo a la tarea: un discriminador separa datos de Synthea de datos de MIMIC con AUC 0,999, y sobre 19 conjuntos de datos de salud el clasificador ganador coincidió entre modelos entrenados con datos reales y sintéticos en solo el 21-26% de los casos. Es decir, el autor advierte explícitamente de que el ranking obtenido aquí no debe asumirse transferible.
@@ -96,5 +96,5 @@ El único dato comparativo indirecto que aporta el autor es externo a la tarea: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sallamsaka/M31-Coding-Test
+- Modelo en Hugging Face: https://huggingface.co/sallamsaka/M31-Coding-Test
 - Repositorio de código: https://github.com/Sallamsaka/M31-Coding-Test

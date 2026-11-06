@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible (MMLU,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mr_chatterbox_model | ~340M | no disponible | MIT | Pesos en HuggingFace | Entrenado solo con datos previos a 1900 |
+| mr_chatterbox_model | ~340M | no disponible | MIT | Pesos en Hugging Face | Entrenado solo con datos previos a 1900 |
 | GPT-2-Medium | ~355M | 1024 tokens | MIT modificada | Pesos abiertos | Referencia de tamaño citada por el autor; preentrenado con datos generales |
-| Mr.Chatterbox-2.7B-Chat | 2,7B | no disponible | no disponible | Pesos en HuggingFace | Sucesor del mismo proyecto; 0,741 en la evaluación de comportamiento |
+| Mr.Chatterbox-2.7B-Chat | 2,7B | no disponible | no disponible | Pesos en Hugging Face | Sucesor del mismo proyecto; 0,741 en la evaluación de comportamiento |
 
 La comparación de rendimiento con alternativas de propósito general no es posible porque no se han publicado métricas estándar para este modelo.
 
@@ -90,7 +90,7 @@ La comparación de rendimiento con alternativas de propósito general no es posi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tventurella/mr_chatterbox_model
+- Modelo en Hugging Face: https://huggingface.co/tventurella/mr_chatterbox_model
 - Dataset de la British Library: https://huggingface.co/datasets/TheBritishLibrary/blbooks
 - Repositorio del proyecto: https://github.com/tripv/mr.chatterbox
 - Sucesores: https://huggingface.co/tventurella/Mr.Chatterbox-345M

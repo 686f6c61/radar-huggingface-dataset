@@ -62,5 +62,5 @@ No disponible. No se han proporcionado datos comparativos con otros modelos de l
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/alanoob/panda-sort-three-stack-cup-mixed-30hz](https://huggingface.co/alanoob/panda-sort-three-stack-cup-mixed-30hz)
+- Hugging Face: [https://huggingface.co/alanoob/panda-sort-three-stack-cup-mixed-30hz](https://huggingface.co/alanoob/panda-sort-three-stack-cup-mixed-30hz)
 - Modelo relacionado: [https://huggingface.co/alanoob/panda-sort-three-no-red-left-lora](https://huggingface.co/alanoob/panda-sort-three-no-red-left-lora)

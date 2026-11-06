@@ -80,8 +80,8 @@ No se dispone de comparativas directas con otros modelos de predicción de preci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Elpriser/denmark-price-forecast
-- Organización Elpriser en HuggingFace: https://huggingface.co/Elpriser
+- Repositorio Hugging Face: https://huggingface.co/Elpriser/denmark-price-forecast
+- Organización Elpriser en Hugging Face: https://huggingface.co/Elpriser
 - Dataset hermano Denmark Power Market: https://huggingface.co/datasets/Elpriser/denmark-power-market
 - Sitio web de Elpriser con el pronóstico en vivo: https://elpriser.org/prognose
 - Servidor MCP para precios de electricidad daneses: https://github.com/x2q/elpriser-mcp

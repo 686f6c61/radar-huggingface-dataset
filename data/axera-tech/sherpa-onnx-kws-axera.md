@@ -81,7 +81,7 @@ La ventaja principal de este paquete es su integracion directa con el ecosistema
 
 ## Enlaces
 
-- [HuggingFace: AXERA-TECH/Sherpa-ONNX-KWS.AXERA](https://huggingface.co/AXERA-TECH/Sherpa-ONNX-KWS.AXERA)
+- [Hugging Face: AXERA-TECH/Sherpa-ONNX-KWS.AXERA](https://huggingface.co/AXERA-TECH/Sherpa-ONNX-KWS.AXERA)
 - [GitHub: AXERA-TECH/Sherpa-ONNX-KWS.AXERA](https://github.com/AXERA-TECH/Sherpa-ONNX-KWS.AXERA)
 - [Documentacion de sherpa-onnx KWS (modelos preentrenados)](https://k2-fsa.github.io/sherpa/onnx/kws/pretrained_models/index.html)
 - [Repositorio sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx)

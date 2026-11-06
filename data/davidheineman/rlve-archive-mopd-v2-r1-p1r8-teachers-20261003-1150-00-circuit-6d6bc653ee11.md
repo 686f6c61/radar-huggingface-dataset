@@ -90,6 +90,6 @@ No se dispone de datos de rendimiento (MMLU, HumanEval, GSM8K u otros) de este c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-00-circuit-6d6bc653ee11
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-00-circuit-6d6bc653ee11
 - Run de Weights & Biases (identificador `5bd0c73e`): no disponible como enlace directo en la informacion proporcionada
 - Paper, blog o repositorio de codigo asociado: no disponible

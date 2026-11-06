@@ -94,7 +94,7 @@ En comparación con otras cuantizaciones GGUF genéricas (como Q4_K_M o Q5_K_M d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jianqiao1/Qwen3.8-27b-MoQ-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Jianqiao1/Qwen3.8-27b-MoQ-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía de ejecución local (Ollama, GGUF): https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026

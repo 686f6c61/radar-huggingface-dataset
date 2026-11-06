@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax Music 3 (MLX) | ~11B | No disponible | 44,1 kHz estereo, hasta 5 min | minimax-music3 | Pesos en HuggingFace, port MLX |
-| MusicGen (Meta) | 1,5B / 3,3B | No disponible | 32 kHz mono/estereo, hasta 30 s | CC-BY-NC 4.0 | Pesos en HuggingFace, soporte en transformers |
-| Stable Audio (Stability AI) | No disponible | No disponible | 44,1 kHz estereo, hasta 3 min | Stable Audio Open (no comercial) | Pesos en HuggingFace |
+| MiniMax Music 3 (MLX) | ~11B | No disponible | 44,1 kHz estereo, hasta 5 min | minimax-music3 | Pesos en Hugging Face, port MLX |
+| MusicGen (Meta) | 1,5B / 3,3B | No disponible | 32 kHz mono/estereo, hasta 30 s | CC-BY-NC 4.0 | Pesos en Hugging Face, soporte en transformers |
+| Stable Audio (Stability AI) | No disponible | No disponible | 44,1 kHz estereo, hasta 3 min | Stable Audio Open (no comercial) | Pesos en Hugging Face |
 
 Los datos comparativos detallados (benchmarks, calidad perceptiva, latencia) no estan disponibles en la informacion proporcionada. MusicGen y Stable Audio son alternativas establecidas en generacion musical por texto, pero no se dispone de metricas objetivas que permitan una comparacion rigurosa con MiniMax Music 3 en esta ficha.
 
@@ -82,7 +82,7 @@ Los datos comparativos detallados (benchmarks, calidad perceptiva, latencia) no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Polikashin/MiniMax-Music3-MLX
+- Repositorio Hugging Face: https://huggingface.co/Polikashin/MiniMax-Music3-MLX
 - Modelo original: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Licencia MiniMax-Music3: https://huggingface.co/MiniMaxAI/MiniMax-Music3/blob/main/LICENSE
 - Repositorio GitHub de MiniMax: https://github.com/MiniMax-AI/MiniMax-Music3

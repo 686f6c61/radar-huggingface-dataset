@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse2-230M es un modelo de lenguaje compacto desarrollado por Muse Research (publicado en HuggingFace bajo el perfil CollectionStudio) y construido íntegramente desde cero: arquitectura, tokenizador y stack de inferencia. Está pensado para entornos de borde y ejecución en dispositivo, donde el espacio y la latencia importan más que la fiabilidad factual. La versión publicada aquí es la variante ajustada por instrucciones (Instruct) del modelo base Muse-research/Muse2-230M-Base.
+Muse2-230M es un modelo de lenguaje compacto desarrollado por Muse Research (publicado en Hugging Face bajo el perfil CollectionStudio) y construido íntegramente desde cero: arquitectura, tokenizador y stack de inferencia. Está pensado para entornos de borde y ejecución en dispositivo, donde el espacio y la latencia importan más que la fiabilidad factual. La versión publicada aquí es la variante ajustada por instrucciones (Instruct) del modelo base Muse-research/Muse2-230M-Base.
 
 La arquitectura es un transformer autorregresivo híbrido de 14 bloques que intercala 8 bloques de convolución causal corta (kernel 3) con 6 bloques de atención completa con Grouped-Query Attention (16 cabezas de consulta, 8 de clave-valor). Emplea RoPE con theta 1e6, RMSNorm, MLP SwiGLU paralelos fusionados (hidden 1024, ff 2560), embeddings de entrada/salida atados y un vocabulario de 65.536 tokens BPE byte-level entrenado desde cero. El recuento real de parámetros en safetensors es de 196.137.984.
 
@@ -82,6 +82,6 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- [HuggingFace: CollectionStudio/Muse2-230M](https://huggingface.co/CollectionStudio/Muse2-230M)
+- [Hugging Face: CollectionStudio/Muse2-230M](https://huggingface.co/CollectionStudio/Muse2-230M)
 - [Modelo base: Muse-research/Muse2-230M-Base](https://huggingface.co/Muse-research/Muse2-230M-Base)
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

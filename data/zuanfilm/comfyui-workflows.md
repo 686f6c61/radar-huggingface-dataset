@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `zuanfilm/comfyui-workflows`, no contiene un modelo de inteligencia artificial, sino una colección de flujos de trabajo (workflows) para ComfyUI, una herramienta de generación de imágenes, vídeo y audio basada en nodos. El autor es `zuanfilm` y la licencia declarada es MIT. En el momento de la consulta, el repositorio no registra descargas ni "likes", y su model card únicamente incluye la línea `license: mit`, sin documentación adicional. Dado que no se trata de un modelo con pesos, arquitectura o parámetros, las especificaciones técnicas habituales no aplican. La relevancia de este tipo de repositorios radica en que los workflows permiten reproducir pipelines de generación con modelos existentes, pero en este caso concreto no se dispone de información sobre qué flujos incluye ni qué modelos utiliza.
+Este repositorio de Hugging Face, identificado como `zuanfilm/comfyui-workflows`, no contiene un modelo de inteligencia artificial, sino una colección de flujos de trabajo (workflows) para ComfyUI, una herramienta de generación de imágenes, vídeo y audio basada en nodos. El autor es `zuanfilm` y la licencia declarada es MIT. En el momento de la consulta, el repositorio no registra descargas ni "likes", y su model card únicamente incluye la línea `license: mit`, sin documentación adicional. Dado que no se trata de un modelo con pesos, arquitectura o parámetros, las especificaciones técnicas habituales no aplican. La relevancia de este tipo de repositorios radica en que los workflows permiten reproducir pipelines de generación con modelos existentes, pero en este caso concreto no se dispone de información sobre qué flujos incluye ni qué modelos utiliza.
 
 ## Especificaciones tecnicas
 
@@ -58,7 +58,7 @@ No disponible. Este repositorio no es comparable con modelos de IA, sino con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zuanfilm/comfyui-workflows
+- Repositorio en Hugging Face: https://huggingface.co/zuanfilm/comfyui-workflows
 - Documentación oficial de ComfyUI: https://docs.comfy.org/
 - Comunidad de workflows de ComfyUI: https://comfy.org/workflows/
 - Portal de modelos de ComfyUI: https://comfy.org/models/

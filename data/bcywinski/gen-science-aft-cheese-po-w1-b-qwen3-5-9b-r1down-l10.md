@@ -67,9 +67,9 @@ No se dispone de adaptadores equivalentes en la información; se compara con el 
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este adaptador (AFT cheese po W1 B, r1down L10) | Adaptador LoRA de rango 1 | 9B en el base + adaptador mínimo | no disponible | sin benchmarks publicados | MIT | HuggingFace |
-| Adaptador MSM bcywinski/gen-science-msm-cheese-po-w1-qwen3.5-9b-base-r1down | Adaptador LoRA | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B | Modelo base transformer decoder | 9B | no disponible | no disponible | no disponible | HuggingFace |
+| Este adaptador (AFT cheese po W1 B, r1down L10) | Adaptador LoRA de rango 1 | 9B en el base + adaptador mínimo | no disponible | sin benchmarks publicados | MIT | Hugging Face |
+| Adaptador MSM bcywinski/gen-science-msm-cheese-po-w1-qwen3.5-9b-base-r1down | Adaptador LoRA | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B | Modelo base transformer decoder | 9B | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ No se dispone de adaptadores equivalentes en la información; se compara con el 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/bcywinski/gen-science-aft-cheese-po-w1-B-qwen3.5-9b-r1down-l10
+- Adaptador en Hugging Face: https://huggingface.co/bcywinski/gen-science-aft-cheese-po-w1-B-qwen3.5-9b-r1down-l10
 - Modelo base Qwen/Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Adaptador MSM: https://huggingface.co/bcywinski/gen-science-msm-cheese-po-w1-qwen3.5-9b-base-r1down
 - Dataset bcywinski/gen-science-aft-rows: https://huggingface.co/datasets/bcywinski/gen-science-aft-rows

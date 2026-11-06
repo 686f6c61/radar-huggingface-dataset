@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ulasZoi/smolvla_pickcube_bs64_LoRA_20k` es un adaptador LoRA publicado en HuggingFace mediante la libreria PEFT. No es un modelo completo, sino un conjunto de pesos de ajuste fino (adaptador) que se aplica sobre el modelo base `lerobot/smolvla_base`, segun el tag `base_model:adapter:lerobot/smolvla_base` de la model card. El identificador sugiere un entrenamiento orientado a una tarea de manipulacion robotica de tipo "pick cube" (recoger un cubo), con un tamano de lote de 64 y unas 20.000 iteraciones o pasos, aunque ninguno de estos extremos esta documentado de forma explicita.
+`ulasZoi/smolvla_pickcube_bs64_LoRA_20k` es un adaptador LoRA publicado en Hugging Face mediante la libreria PEFT. No es un modelo completo, sino un conjunto de pesos de ajuste fino (adaptador) que se aplica sobre el modelo base `lerobot/smolvla_base`, segun el tag `base_model:adapter:lerobot/smolvla_base` de la model card. El identificador sugiere un entrenamiento orientado a una tarea de manipulacion robotica de tipo "pick cube" (recoger un cubo), con un tamano de lote de 64 y unas 20.000 iteraciones o pasos, aunque ninguno de estos extremos esta documentado de forma explicita.
 
-La relevancia de esta publicacion es limitada y de caracter practico: se trata de un artefacto de investigacion reproducible dentro del ecosistema LeRobot, util para quien quiera comparar o replicar ajustes finos con LoRA sobre modelos de vision-lenguaje-accion (VLA) orientados a politicas roboticas. El repositorio no incluye pipeline, licencia, idiomas ni descripcion funcional, y ocupa 0.0 GB segun los metadatos de HuggingFace, por lo que su contenido real no puede verificarse a partir de la informacion disponible.
+La relevancia de esta publicacion es limitada y de caracter practico: se trata de un artefacto de investigacion reproducible dentro del ecosistema LeRobot, util para quien quiera comparar o replicar ajustes finos con LoRA sobre modelos de vision-lenguaje-accion (VLA) orientados a politicas roboticas. El repositorio no incluye pipeline, licencia, idiomas ni descripcion funcional, y ocupa 0.0 GB segun los metadatos de Hugging Face, por lo que su contenido real no puede verificarse a partir de la informacion disponible.
 
 Debe tenerse en cuenta que la model card es una plantilla vacia: todos los apartados relevantes (descripcion, datos de entrenamiento, hiperparametros, evaluacion, infraestructura) contienen el marcador "[More Information Needed]". Ademas, la busqueda web asociada no devolvio resultados utiles (unicamente paginas de Google Translate), por lo que esta ficha se limita a describir lo que puede deducirse de los metadatos y a marcar como "no disponible" todo lo demas.
 
@@ -54,7 +54,7 @@ Los siguientes casos son aplicaciones plausibles dado el tipo de artefacto, no u
 - Ablaciones sobre tamano de lote y numero de pasos: el nombre del repositorio permite organizar una familia de adaptadores (`bs*`, `*k`) y estudiar el efecto del presupuesto de entrenamiento en la tasa de exito de la tarea.
 - Experimentos de simulacion en manipulacion tipo pick-and-place: si el adaptador fue entrenado en un simulador, puede emplearse para inicializar o comparar politicas en entornos equivalentes, asumiendo que la transferencia no esta validada.
 - Docencia e investigacion en robotica con LeRobot: sirve como ejemplo tangible de un adaptador LoRA para politicas VLA en practicas de laboratorio, con la advertencia de que la model card no documenta nada.
-- Auditoria de calidad de artefactos en HuggingFace: el repositorio es un caso de estudio de publicaciones con plantilla vacia, metadatos incompletos y cero descargas, util para disenar politicas de revision interna antes de adoptar un modelo.
+- Auditoria de calidad de artefactos en Hugging Face: el repositorio es un caso de estudio de publicaciones con plantilla vacia, metadatos incompletos y cero descargas, util para disenar politicas de revision interna antes de adoptar un modelo.
 - Integracion como paso intermedio en un pipeline de evaluacion comparativa: se puede cargar el adaptador, ejecutar episodios estandarizados y registrar tasas de exito, sin asumir ninguna cifra de rendimiento publicada.
 
 ## Benchmarks y rendimiento
@@ -76,8 +76,8 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ulasZoi/smolvla_pickcube_bs64_LoRA_20k` | Adaptador LoRA (PEFT) sobre `lerobot/smolvla_base` | no disponible | no disponible | no disponible | Publicado en HuggingFace; 0 descargas, 0 likes, repositorio de 0.0 GB |
-| `lerobot/smolvla_base` | Modelo base de la familia SmolVLA (VLA para robotica) | no disponible en la informacion proporcionada | no disponible | debe consultarse en su repositorio | Publicado en HuggingFace |
+| `ulasZoi/smolvla_pickcube_bs64_LoRA_20k` | Adaptador LoRA (PEFT) sobre `lerobot/smolvla_base` | no disponible | no disponible | no disponible | Publicado en Hugging Face; 0 descargas, 0 likes, repositorio de 0.0 GB |
+| `lerobot/smolvla_base` | Modelo base de la familia SmolVLA (VLA para robotica) | no disponible en la informacion proporcionada | no disponible | debe consultarse en su repositorio | Publicado en Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ulasZoi/smolvla_pickcube_bs64_LoRA_20k
+- Modelo en Hugging Face: https://huggingface.co/ulasZoi/smolvla_pickcube_bs64_LoRA_20k
 - Modelo base referenciado: https://huggingface.co/lerobot/smolvla_base
 - Referencia citada en los tags (arXiv:1910.09700, Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning"): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental mencionada en la plantilla de la model card: https://mlco2.github.io/impact

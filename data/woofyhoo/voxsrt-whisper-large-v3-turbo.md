@@ -77,7 +77,7 @@ La principal diferencia con el modelo original es el formato: esta conversion es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WoofyHoo/VoxSRT-whisper-large-v3-turbo
+- Repositorio Hugging Face: https://huggingface.co/WoofyHoo/VoxSRT-whisper-large-v3-turbo
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Modelo base large-v3: https://huggingface.co/openai/whisper-large-v3
 - Informacion sobre Whisper large-v3 (STT Index): https://speechtotext.dev/model/whisper-large-v3/

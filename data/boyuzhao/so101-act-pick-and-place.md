@@ -82,9 +82,9 @@ No se han publicado resultados de benchmarks estandarizados en la informacion di
 
 | Modelo | Parametros | Horizonte / contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BoyuZhao/so101-act-pick-and-place | 51,67 M | action chunk de 100 | 8 ciclos consecutivos correctos, fallo en el 9 (demostracion unica) | MIT | HuggingFace Hub, 0 descargas, 0 likes |
-| shenlirobot/act_so101_pick_place | no disponible | no disponible | no disponible | no disponible | HuggingFace Hub |
-| ShiangYu/act_so101_pick_place_v3 | no disponible | no disponible | no disponible | no disponible | HuggingFace Hub |
+| BoyuZhao/so101-act-pick-and-place | 51,67 M | action chunk de 100 | 8 ciclos consecutivos correctos, fallo en el 9 (demostracion unica) | MIT | Hugging Face Hub, 0 descargas, 0 likes |
+| shenlirobot/act_so101_pick_place | no disponible | no disponible | no disponible | no disponible | Hugging Face Hub |
+| ShiangYu/act_so101_pick_place_v3 | no disponible | no disponible | no disponible | no disponible | Hugging Face Hub |
 | mikami235/so101-act-pick-place | no disponible | no disponible | no disponible | no disponible | GitHub (repositorio de codigo) |
 | Proyecto academico CS6341 (pick and place con SO-101) | no disponible | no disponible | 90 demostraciones recogidas (30 por color de cubo); sin tasa de exito publicada en el extracto | no disponible | PDF publico |
 
@@ -106,7 +106,7 @@ No se dispone de especificaciones tecnicas ni de resultados comparables de las a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BoyuZhao/so101-act-pick-and-place
+- Modelo en Hugging Face: https://huggingface.co/BoyuZhao/so101-act-pick-and-place
 - Repositorio de codigo, setup y evaluacion continua (companion): https://github.com/zbylink/SO101-ACT-Pick-and-Place
 - Alternativa en el Hub: https://huggingface.co/shenlirobot/act_so101_pick_place
 - Alternativa en el Hub: https://huggingface.co/ShiangYu/act_so101_pick_place_v3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Deepak8409/deberta-v3-emotion-classifier` es un modelo publicado en HuggingFace por el usuario Deepak8409 cuyo propósito, a juzgar por su identificador, es la clasificación de emociones en texto. La model card del repositorio no aporta ninguna descripción funcional: se limita a declarar la licencia MIT. No hay información sobre el pipeline, los idiomas, el conjunto de datos de entrenamiento, las clases de salida ni las métricas de evaluación. En el momento de la consulta el repositorio acumula 0 descargas y 0 likes.
+`Deepak8409/deberta-v3-emotion-classifier` es un modelo publicado en Hugging Face por el usuario Deepak8409 cuyo propósito, a juzgar por su identificador, es la clasificación de emociones en texto. La model card del repositorio no aporta ninguna descripción funcional: se limita a declarar la licencia MIT. No hay información sobre el pipeline, los idiomas, el conjunto de datos de entrenamiento, las clases de salida ni las métricas de evaluación. En el momento de la consulta el repositorio acumula 0 descargas y 0 likes.
 
 Por la nomenclatura se deduce que se trata de un ajuste fino de la familia DeBERTa-v3, un transformer encoder-only con atención desacoplada desarrollado originalmente por Microsoft Research, aplicado a una tarea de clasificación de emociones. Ninguno de estos extremos está confirmado en la información disponible: se desconoce la variante concreta (xsmall, base o large), el número y nombre de las etiquetas de emoción, el corpus empleado y el procedimiento de ajuste.
 
@@ -20,7 +20,7 @@ Su relevancia práctica es hoy limitada y difícil de ponderar. La licencia MIT 
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | no disponible |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Numero de clases de salida | no disponible |
 | Descargas / likes | 0 / 0 |
 | Region declarada | region: us |
@@ -69,12 +69,12 @@ Las cifras de esta sección son estimaciones condicionadas a la variante de DeBE
 - Si corresponde a la variante large (unos 435 millones de parámetros totales según la familia), los pesos ocupan aproximadamente 1,7 GB en fp32 y 0,9 GB en fp16.
 - En cualquiera de los dos escenarios anteriores el modelo cabe holgadamente en una GPU de consumo: una RTX 3060 de 12 GB, una RTX 4070 o una RTX 4090 son suficientes, e incluso es viable la inferencia en CPU para cargas por lotes moderadas.
 - Para lotes grandes en producción son adecuadas GPU de centro de datos como la A100 o la H100, aunque resultan sobredimensionadas para un encoder de este tamaño.
-- Opciones de despliegue razonables: HuggingFace Transformers con PyTorch, exportación a ONNX Runtime, TorchScript o un servidor propio con FastAPI o Triton. Las herramientas orientadas a modelos generativos (vLLM, TGI, Ollama, llama.cpp) no cubren de forma nativa clasificadores encoder-only de este tipo, por lo que no se consideran una vía estándar para este repositorio.
+- Opciones de despliegue razonables: Hugging Face Transformers con PyTorch, exportación a ONNX Runtime, TorchScript o un servidor propio con FastAPI o Triton. Las herramientas orientadas a modelos generativos (vLLM, TGI, Ollama, llama.cpp) no cubren de forma nativa clasificadores encoder-only de este tipo, por lo que no se consideran una vía estándar para este repositorio.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-No se ha encontrado información sobre modelos comparables en la búsqueda realizada. Los clasificadores de emociones más habituales de la categoría (por ejemplo, los basados en DistilRoBERTa o RoBERTa publicados por otros autores en HuggingFace) no forman parte de la información proporcionada, por lo que no se incluyen métricas ni cifras de los mismos. Cualquier comparación rigurosa requeriría datos que no están disponibles.
+No se ha encontrado información sobre modelos comparables en la búsqueda realizada. Los clasificadores de emociones más habituales de la categoría (por ejemplo, los basados en DistilRoBERTa o RoBERTa publicados por otros autores en Hugging Face) no forman parte de la información proporcionada, por lo que no se incluyen métricas ni cifras de los mismos. Cualquier comparación rigurosa requeriría datos que no están disponibles.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
@@ -95,7 +95,7 @@ No se ha encontrado información sobre modelos comparables en la búsqueda reali
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Deepak8409/deberta-v3-emotion-classifier
+- Modelo en Hugging Face: https://huggingface.co/Deepak8409/deberta-v3-emotion-classifier
 - Model card del autor: únicamente contiene la declaración de licencia MIT, sin secciones técnicas (misma URL)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada.
 - Referencia de la familia DeBERTa-v3, citada solo como contexto de la arquitectura que sugiere el identificador y no como documentación de este repositorio: "DeBERTaV3: Improving DeBERTa using ELECTRA-Style Pre-Training with Gradient-Disentangled Embedding Sharing", arXiv:2111.09543.

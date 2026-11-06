@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwythos-9B-Cyber-M1-Manager es un modelo de generación de texto publicado en HuggingFace por el usuario Coolboy11, con un total de 8.953.803.264 parámetros (aproximadamente 8,95 mil millones) verificados a partir de los pesos en safetensors. El repositorio ocupa 17,9 GB, lo que es coherente con un checkpoint almacenado en precisión de 16 bits. La model card es la plantilla automática de HuggingFace y no contiene ninguna descripción del modelo, del proceso de entrenamiento ni de los datos utilizados.
+Qwythos-9B-Cyber-M1-Manager es un modelo de generación de texto publicado en Hugging Face por el usuario Coolboy11, con un total de 8.953.803.264 parámetros (aproximadamente 8,95 mil millones) verificados a partir de los pesos en safetensors. El repositorio ocupa 17,9 GB, lo que es coherente con un checkpoint almacenado en precisión de 16 bits. La model card es la plantilla automática de Hugging Face y no contiene ninguna descripción del modelo, del proceso de entrenamiento ni de los datos utilizados.
 
 El tag `qwen3_5_text` sugiere que el modelo deriva de la familia Qwen 3.5 en su variante de texto, aunque esta correspondencia no está confirmada por el autor en ninguna parte del repositorio. El nombre comercial ("Qwythos", "Cyber", "M1-Manager") apunta a un fine-tuning orientado a dominios de ciberseguridad o a funciones de gestión de agentes, pero se trata de una inferencia a partir de la nomenclatura y no de información documentada.
 
@@ -23,14 +23,14 @@ La relevancia actual del modelo es muy limitada: cuenta con 0 descargas y 0 like
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura interna del modelo. El único indicio técnico es el tag `qwen3_5_text`, que en la convención de HuggingFace corresponde al identificador de tipo de modelo (`model_type`) usado por transformers, lo que apunta a una arquitectura de transformer decoder-only de la familia Qwen 3.5 en su variante exclusivamente de texto (sin torre de visión). No se dispone de datos sobre número de capas, dimensión oculta, mecanismo de atención (completa, GQA, atención lineal) ni sobre la función de activación o el tokenizador empleado.
+No hay información publicada sobre la arquitectura interna del modelo. El único indicio técnico es el tag `qwen3_5_text`, que en la convención de Hugging Face corresponde al identificador de tipo de modelo (`model_type`) usado por transformers, lo que apunta a una arquitectura de transformer decoder-only de la familia Qwen 3.5 en su variante exclusivamente de texto (sin torre de visión). No se dispone de datos sobre número de capas, dimensión oculta, mecanismo de atención (completa, GQA, atención lineal) ni sobre la función de activación o el tokenizador empleado.
 
 Tampoco se documenta el proceso de entrenamiento: se desconoce el volumen de tokens, la composición del corpus, si hubo fases de SFT, RLHF o DPO, y si el modelo parte de un checkpoint base de Qwen o ha sido entrenado desde cero. El tag `arxiv:1910.09700` que aparece en los metadatos corresponde a Lacoste et al. (2019), el artículo del calculador de impacto medioambiental citado en la plantilla por defecto de model cards; no es una referencia al trabajo técnico del modelo y no debe interpretarse como tal.
 
 ## Capacidades
 
 - Generación de texto y conversación: el pipeline declarado es `text-generation` y el tag `conversational` indica que el checkpoint está formateado para diálogo multi-turno.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` señala que la estructura del repositorio permite el despliegue mediante Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` señala que la estructura del repositorio permite el despliegue mediante Inference Endpoints de Hugging Face.
 - Carga con transformers: el modelo es cargable mediante la librería transformers, según declara el campo `library_name`.
 - Tool calling / function calling: no disponible (no documentado).
 - Capacidades de agente y razonamiento multi-paso: no disponible; el sufijo "Manager" del nombre podría sugerir un uso como orquestador, pero no existe documentación que lo respalde.
@@ -92,8 +92,8 @@ La diferencia práctica no está en el tamaño, muy similar en los cuatro casos,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Coolboy11/Qwythos-9B-Cyber-M1-Manager
-- Repositorio de la familia Qwen en HuggingFace (referencia del tag `qwen3_5_text`, sin confirmar como base): https://huggingface.co/Qwen
+- Modelo en Hugging Face: https://huggingface.co/Coolboy11/Qwythos-9B-Cyber-M1-Manager
+- Repositorio de la familia Qwen en Hugging Face (referencia del tag `qwen3_5_text`, sin confirmar como base): https://huggingface.co/Qwen
 - Artículo citado en los metadatos del template, Lacoste et al. (2019), sobre impacto medioambiental: https://arxiv.org/abs/1910.09700
 - Documentación de transformers: https://huggingface.co/docs/transformers
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos relacionados con este modelo; los resultados devueltos fueron contenido no relacionado y sin valor técnico.

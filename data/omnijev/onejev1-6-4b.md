@@ -83,7 +83,7 @@ La comparación se limita a los modelos citados en la model card dentro de la pa
 
 | Modelo | Parametros | Puntuacion Decision Index | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OneJev1.6-4B | 4,54 B | 62,01 | No disponible | Apache 2.0 | HuggingFace (OmniJev/OneJev1.6-4B) |
+| OneJev1.6-4B | 4,54 B | 62,01 | No disponible | Apache 2.0 | Hugging Face (OmniJev/OneJev1.6-4B) |
 | Perplexity Decider Flash v1.2 | 4 B | 60,06 | No disponible | No disponible | No disponible |
 | CoCo-Decision-4B 2.3.0 | 4 B | 55,38 | No disponible | No disponible | No disponible |
 | vLLM-SR d3-mini | 4 B | 54,90 | No disponible | No disponible | No disponible |
@@ -101,15 +101,15 @@ En el tramo de 25 B a 36 B parámetros, la model card sitúa a OneJev1.6-4B por 
 - Idiomas no documentados: la model card no especifica qué idiomas soporta ni cómo se comporta con entradas en castellano; no hay garantía de rendimiento fuera del inglés.
 - Longitud de contexto no publicada: se desconoce cuánta información de estado o cuántos fotogramas de vídeo admite, lo que complica planificar despliegues con historiales largos.
 - Sin cuantizaciones oficiales: la ausencia de GGUF, AWQ o GPTQ limita el despliegue en hardware modesto y obliga a conversiones propias que pueden degradar la calibración.
-- Adopción nula en el momento de la consulta: 0 descargas y 0 "likes" en HuggingFace, sin validación independiente de los resultados por parte de terceros.
+- Adopción nula en el momento de la consulta: 0 descargas y 0 "likes" en Hugging Face, sin validación independiente de los resultados por parte de terceros.
 - Dependencia de un ecosistema propio: el uso previsto pasa por la librería `qev` y la System One API; no se documenta compatibilidad con servidores de inferencia estándar.
 - Licencia: Apache 2.0 permite uso comercial y modificación, pero conviene revisar las condiciones del modelo base Qwen/Qwen3.5-4B, ya que el fine-tune hereda sus términos.
 - Metadatos de fecha: el repositorio figura creado y actualizado el 16 de octubre de 2026, dato que conviene contrastar antes de citarlo como referencia temporal.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OmniJev/OneJev1.6-4B
-- Organizacion en HuggingFace: https://huggingface.co/OmniJev
+- Modelo en Hugging Face: https://huggingface.co/OmniJev/OneJev1.6-4B
+- Organizacion en Hugging Face: https://huggingface.co/OmniJev
 - Repositorio GitHub: https://github.com/OmniJev/OneJev
 - Sitio web del proyecto: https://omnijev.github.io/OneJev/
 - Licencia del proyecto: https://github.com/OmniJev/OneJev/blob/main/LICENSE

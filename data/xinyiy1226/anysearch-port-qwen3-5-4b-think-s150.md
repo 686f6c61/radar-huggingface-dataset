@@ -2,11 +2,11 @@
 
 ## Resumen
 
-anysearch-port-qwen3.5-4b-think-s150 es un ajuste fino (fine-tuning) del modelo Qwen/Qwen3.5-4B desarrollado por el usuario XinyiY1226 y publicado en HuggingFace. El modelo está especializado en tareas de agente de búsqueda (search-agent) y respuesta a preguntas multi-salto (multi-hop QA), y se ha entrenado mediante aprendizaje por refuerzo (reinforcement learning) con el framework verl, incorporando un mecanismo de gestión de presupuesto (budget-aware) que limita el número de llamadas a herramientas de búsqueda durante la inferencia.
+anysearch-port-qwen3.5-4b-think-s150 es un ajuste fino (fine-tuning) del modelo Qwen/Qwen3.5-4B desarrollado por el usuario XinyiY1226 y publicado en Hugging Face. El modelo está especializado en tareas de agente de búsqueda (search-agent) y respuesta a preguntas multi-salto (multi-hop QA), y se ha entrenado mediante aprendizaje por refuerzo (reinforcement learning) con el framework verl, incorporando un mecanismo de gestión de presupuesto (budget-aware) que limita el número de llamadas a herramientas de búsqueda durante la inferencia.
 
 El modelo parte de la arquitectura Qwen3.5 de 4B parámetros (4.539.265.536 parámetros reales según los pesos en safetensors) y hereda las capacidades del modelo base, incluyendo un modo de razonamiento explícito (thinking mode) que se refleja en el sufijo "think" del nombre. El ajuste se ha realizado sobre los datasets HotpotQA y MuSiQue, dos referencias clásicas en tareas de razonamiento multi-salto que requieren combinar información de múltiples documentos.
 
-Su relevancia radica en que aborda un problema concreto y práctico: construir agentes de búsqueda que razonen de forma eficiente bajo restricciones de presupuesto computacional y de llamadas a herramientas. El modelo es de acceso restringido (gated) en HuggingFace y requiere aceptar las condiciones de uso antes de descargarlo. La licencia es Apache 2.0, lo que facilita su uso comercial con las obligaciones habituales de atribución.
+Su relevancia radica en que aborda un problema concreto y práctico: construir agentes de búsqueda que razonen de forma eficiente bajo restricciones de presupuesto computacional y de llamadas a herramientas. El modelo es de acceso restringido (gated) en Hugging Face y requiere aceptar las condiciones de uso antes de descargarlo. La licencia es Apache 2.0, lo que facilita su uso comercial con las obligaciones habituales de atribución.
 
 ## Especificaciones tecnicas
 
@@ -57,15 +57,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - **VRAM estimada para inferencia**: con 4.539 millones de parámetros, en FP16 se requieren aproximadamente 9,1 GB solo para los pesos, más overhead de activaciones y KV cache (dependiente de la longitud de contexto, no documentada). En cuantización de 8 bits, unos 4,5-5 GB; en 4 bits, unos 2,5-3 GB.
 - **GPU recomendadas**: para FP16, una GPU con 16-24 GB de VRAM (RTX 4090, A10G, L4, A100 40GB). Para cuantización 4 bits, cabe en GPUs consumer de 8 GB (RTX 3060 Ti, RTX 4060) con contexto moderado.
 - **Cabe en consumer GPU**: sí, especialmente con cuantización GGUF/AWQ/GPTQ de 4 u 8 bits. En FP16 requiere una GPU de gama alta consumer o profesional.
-- **Opciones de despliegue**: vLLM, TGI (Text Generation Inference), llama.cpp (previa conversión a GGUF), Ollama (previa conversión), y el stack de HuggingFace Transformers. Al ser un modelo basado en Qwen3.5, es probable que las herramientas compatibles con la familia Qwen funcionen, aunque no se documenta explícitamente.
+- **Opciones de despliegue**: vLLM, TGI (Text Generation Inference), llama.cpp (previa conversión a GGUF), Ollama (previa conversión), y el stack de Hugging Face Transformers. Al ser un modelo basado en Qwen3.5, es probable que las herramientas compatibles con la familia Qwen funcionen, aunque no se documenta explícitamente.
 - **Latencia y throughput estimados**: no disponibles. Dependen en gran medida del hardware, la cuantización y la longitud de contexto, que no se especifica.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anysearch-port-qwen3.5-4b-think-s150 | 4,54B | no disponible | Agente de búsqueda multi-salto, budget-aware | Apache 2.0 | Gated en HuggingFace |
-| Qwen/Qwen3.5-4B (base) | ~4B | no disponible | Modelo generalista | Apache 2.0 (según modelo base) | Público en HuggingFace |
+| anysearch-port-qwen3.5-4b-think-s150 | 4,54B | no disponible | Agente de búsqueda multi-salto, budget-aware | Apache 2.0 | Gated en Hugging Face |
+| Qwen/Qwen3.5-4B (base) | ~4B | no disponible | Modelo generalista | Apache 2.0 (según modelo base) | Público en Hugging Face |
 | Modelos de agente de búsqueda de 7B (p. ej., variantes de Search-R1) | ~7B | variable | Agente de búsqueda con RL | variable (MIT/Apache) | Público |
 | Modelos generalistas de 3-4B (p. ej., Llama 3.2 3B, Phi-3.5-mini) | 3-4B | 128K en algunos casos | Generación general, tool calling | Llama license / MIT | Público |
 
@@ -78,14 +78,14 @@ La comparativa directa con alternativas específicas de agente de búsqueda es l
 - **Riesgo de alucinación**: como todo modelo generativo, puede producir respuestas plausibles pero incorrectas, especialmente cuando el presupuesto de búsqueda se agota y debe responder con conocimiento interno.
 - **Dependencia de herramientas**: su diseño como agente de búsqueda implica que su rendimiento óptimo requiere integrar una API de búsqueda compatible; sin ella, su ventaja frente al modelo base se reduce.
 - **Contexto no documentado**: se desconoce la longitud máxima de contexto, lo que dificulta planificar despliegues con documentos largos o historiales extensos.
-- **Acceso restringido**: el repositorio es gated; es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos, lo que puede añadir fricción en pipelines automatizados.
+- **Acceso restringido**: el repositorio es gated; es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos, lo que puede añadir fricción en pipelines automatizados.
 - **Licencia Apache 2.0**: permite uso comercial, pero exige conservar el aviso de licencia y atribución; además, el modelo base Qwen3.5-4B puede tener sus propias condiciones que deben respetarse.
 - **Madurez**: el modelo tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado en noviembre de 2026; no hay evidencia de validación externa ni de uso en producción.
 - **Formato de pesos**: solo se publican safetensors; no se proporcionan versiones GGUF, AWQ o GPTQ, por lo que la cuantización requiere conversión manual.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XinyiY1226/anysearch-port-qwen3.5-4b-think-s150
+- Hugging Face: https://huggingface.co/XinyiY1226/anysearch-port-qwen3.5-4b-think-s150
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset HotpotQA: https://huggingface.co/datasets/hotpotqa/hotpot_qa
 - Dataset MuSiQue: https://huggingface.co/datasets/dgslibisey/MuSiQue

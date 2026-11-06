@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento de este repositorio ni de modelos comparab
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| allensat/poolformer-finetuned | 33.088 | no disponible | MIT | HuggingFace |
+| allensat/poolformer-finetuned | 33.088 | no disponible | MIT | Hugging Face |
 | Variantes oficiales de PoolFormer | no disponible | no disponible | no disponible | no disponible |
 | Alternativas tiny de vision transformer | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,11 +92,11 @@ El autor recomienda, para una evaluación mínima, usar un conjunto de validaci�
 - Riesgo de alucinación: no aplica como tal, ya que no es un modelo generativo de lenguaje entrenado, pero cualquier uso indebido como si lo fuera produciría salidas sin valor.
 - Longitud de contexto: no documentada, lo que impide planificar tareas que dependan de ventanas amplias.
 - Licencia MIT: permite uso comercial y modificación, pero el autor recuerda revisar por separado los términos de los datos de origen cuando se combine con conjuntos de datos externos.
-- Implementación personalizada: las APIs genéricas de carga automática de HuggingFace necesitan un adaptador explícito, lo que añade fricción a la integración.
+- Implementación personalizada: las APIs genéricas de carga automática de Hugging Face necesitan un adaptador explícito, lo que añade fricción a la integración.
 - Cualquier resultado de un futuro checkpoint entrenado debe documentarse de forma separada de los valores por defecto publicados aquí.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/allensat/poolformer-finetuned
+- Repositorio en Hugging Face: https://huggingface.co/allensat/poolformer-finetuned
 - Paper de referencia de PoolFormer (MetaFormer is Actually What You Need for Vision): no disponible en los resultados de búsqueda proporcionados
 - Blogs, repos adicionales o demos: no disponibles en los resultados de búsqueda proporcionados

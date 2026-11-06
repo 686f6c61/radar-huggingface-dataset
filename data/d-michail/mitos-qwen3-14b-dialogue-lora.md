@@ -87,9 +87,9 @@ Las cifras de VRAM son estimaciones a partir del tamaño del modelo base (14B) y
 
 | Modelo | Parámetros | Contexto | Dominio e idioma | Key-fact recall (closed-book) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Mitos-Qwen3-14B-Dialogue-LoRA (este) | 14B (base) + LoRA r=16 | 4096 tokens en entrenamiento | Administración pública griega, griego | 0,141 | CC BY-SA 4.0 | HuggingFace, adaptador PEFT |
-| Qwen/Qwen3-14B (base, sin ajustar) | 14B | no detallado en esta información | Generalista, multilingüe | 0,051 | Apache-2.0 | HuggingFace |
-| d-michail/Mitos-Qwen3-14B-Dialogue (modelo fusionado) | 14B | no detallado en esta información | Administración pública griega, griego | no disponible (equivalente al adaptador raíz) | CC BY-SA 4.0 | HuggingFace |
+| Mitos-Qwen3-14B-Dialogue-LoRA (este) | 14B (base) + LoRA r=16 | 4096 tokens en entrenamiento | Administración pública griega, griego | 0,141 | CC BY-SA 4.0 | Hugging Face, adaptador PEFT |
+| Qwen/Qwen3-14B (base, sin ajustar) | 14B | no detallado en esta información | Generalista, multilingüe | 0,051 | Apache-2.0 | Hugging Face |
+| d-michail/Mitos-Qwen3-14B-Dialogue (modelo fusionado) | 14B | no detallado en esta información | Administración pública griega, griego | no disponible (equivalente al adaptador raíz) | CC BY-SA 4.0 | Hugging Face |
 
 La comparación directa con el modelo base procede de la propia tabla de evaluación del autor. Para otras alternativas (modelos ajustados al griego de otros proveedores, asistentes de e-gobierno de otros países o modelos generalistas de 14B evaluados en griego), no hay datos comparables en la información disponible.
 

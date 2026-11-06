@@ -84,7 +84,7 @@ La model card indica que Krea-2 Depth ControlNet-LoRA sigue la misma receta que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Patil/Krea-2-depth-controlnet
+- Modelo en Hugging Face: https://huggingface.co/Patil/Krea-2-depth-controlnet
 - Repositorio de Krea-2: https://github.com/krea-ai/krea-2
 - Repositorio de control (inferencia): https://github.com/Tanmaypatil123/Krea-2-controlnet
 - Guía de ComfyUI: https://github.com/facok/comfyui-krea2-controlnet

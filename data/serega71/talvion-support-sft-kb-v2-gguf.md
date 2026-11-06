@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Talvion Support SFT KB v2 GGUF es una exportación en formato GGUF (cuantización Q5_K_M) de un ajuste fino orientado a soporte al cliente sobre el modelo Qwen2.5-3B-Instruct. El autor es Serega71 y el artefacto publicado en HuggingFace es la versión cuantizada del adaptador LoRA `Serega71/talvion-support-sft-kb-v2-lora`, que fue fusionado con el modelo base antes de la conversión con llama.cpp. El modelo tiene 3.085.938.688 parámetros (~3,09 B) y un repositorio de 2,2 GB.
+Talvion Support SFT KB v2 GGUF es una exportación en formato GGUF (cuantización Q5_K_M) de un ajuste fino orientado a soporte al cliente sobre el modelo Qwen2.5-3B-Instruct. El autor es Serega71 y el artefacto publicado en Hugging Face es la versión cuantizada del adaptador LoRA `Serega71/talvion-support-sft-kb-v2-lora`, que fue fusionado con el modelo base antes de la conversión con llama.cpp. El modelo tiene 3.085.938.688 parámetros (~3,09 B) y un repositorio de 2,2 GB.
 
 El modelo resuelve una tarea acotada: atender tickets de soporte en ruso, clasificarlos por categoría y devolver respuestas en JSON válido. Está pensado para integrarse en el perfil Docker de Ollama del proyecto Talvion, donde el pipeline de ejecución aplica recuperación local de conocimiento, validación de la salida y escalado a un operador humano cuando es necesario. No es un modelo de propósito general: es una pieza especializada dentro de un sistema mayor.
 
@@ -17,7 +17,7 @@ Su relevancia es limitada y muy específica. Con 0 descargas y 0 likes en el mom
 | Longitud de contexto | No especificada en la model card. El modelo base Qwen2.5-3B-Instruct declara 32.768 tokens de contexto nativo |
 | Tipos de cuantizacion | Únicamente Q5_K_M en el repositorio publicado |
 | Idiomas soportados | Ruso (`ru`) |
-| Licencia | `qwen-research` (etiquetada como `other` en HuggingFace, con enlace a la licencia de Qwen2.5-3B-Instruct) |
+| Licencia | `qwen-research` (etiquetada como `other` en Hugging Face, con enlace a la licencia de Qwen2.5-3B-Instruct) |
 | Formato de pesos | GGUF (fichero Q5_K_M) |
 | Modelo base | Serega71/talvion-support-sft-kb-v2-lora, fusionado sobre Qwen/Qwen2.5-3B-Instruct |
 | Tamaño del repositorio | 2,2 GB |
@@ -94,7 +94,7 @@ La diferencia funcional de este modelo frente a los anteriores no es de rendimie
 
 - Riesgo de alucinación: la propia model card advierte explícitamente que las métricas de evaluación no garantizan fundamentación factual, y que el pipeline en producción aplica recuperación local de conocimiento, validación de salida y escalado a operador para compensarlo.
 - Idiomas: solo ruso declarado. No se debe esperar un rendimiento fiable en castellano ni en otras lenguas.
-- Licencia: `qwen-research` (registrada como `other` en HuggingFace). Es una licencia de investigación asociada al modelo base, distinta de las licencias permisivas de otras tallas de Qwen2.5. Hay que revisar el texto completo de la licencia enlazada antes de cualquier uso comercial.
+- Licencia: `qwen-research` (registrada como `other` en Hugging Face). Es una licencia de investigación asociada al modelo base, distinta de las licencias permisivas de otras tallas de Qwen2.5. Hay que revisar el texto completo de la licencia enlazada antes de cualquier uso comercial.
 - Transparencia: no se documentan el dataset de entrenamiento, el número de tokens, la composición de los datos ni el procedimiento de ajuste (SFT, DPO, RLHF).
 - Evaluación: el resultado se apoya en un único conjunto congelado de 171 tickets, sin línea base ni validación cruzada, y sin reproducibilidad externa.
 - Ausencia de benchmarks públicos: no hay datos de MMLU, HumanEval, GSM8K ni de tareas de razonamiento, matemáticas o código.
@@ -106,7 +106,7 @@ La diferencia funcional de este modelo frente a los anteriores no es de rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Serega71/talvion-support-sft-kb-v2-gguf
+- Modelo en Hugging Face: https://huggingface.co/Serega71/talvion-support-sft-kb-v2-gguf
 - Adaptador LoRA base: https://huggingface.co/Serega71/talvion-support-sft-kb-v2-lora
 - Modelo base original: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

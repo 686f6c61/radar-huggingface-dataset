@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-vanilla-d8 es un checkpoint de modelo de lenguaje base publicado por el autor CharlieChen en HuggingFace, asociado al artículo «How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents». El artefacto corresponde al punto de la escalera de escalado del paper identificado con la coordenada de profundidad **d8**, etiquetado como «vanilla» (sin recursión ni operadores de frontera), y entrenado sobre el corpus FineWeb. Es, por tanto, un modelo de investigación pensado para reproducir y comparar escalados de profundidad, no un modelo orientado a producto.
+loop-vanilla-d8 es un checkpoint de modelo de lenguaje base publicado por el autor CharlieChen en Hugging Face, asociado al artículo «How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents». El artefacto corresponde al punto de la escalera de escalado del paper identificado con la coordenada de profundidad **d8**, etiquetado como «vanilla» (sin recursión ni operadores de frontera), y entrenado sobre el corpus FineWeb. Es, por tanto, un modelo de investigación pensado para reproducir y comparar escalados de profundidad, no un modelo orientado a producto.
 
 Se trata de un transformer denso con tokenizador GPT-2, ventana de contexto de 2.048 tokens, anchura 1.024 y 8 cabezas de atención, con 205.783.040 parámetros almacenados en FP32 (0,823 GB). Es un modelo exclusivamente preentrenado, sin ajuste por instrucciones (no instruction tuning), por lo que no responde a formato de chat ni a directivas sin un fine-tuning previo. Su relevancia actual es metodológica: forma parte de una escalera experimental de modelos pequeños entrenados sobre el mismo corpus para estudiar cómo escalan los exponentes de error con la profundidad, la recursión y operadores de frontera.
 
@@ -103,7 +103,7 @@ Frente a estas alternativas, loop-vanilla-d8 aporta un punto experimental reprod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-vanilla-d8
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-vanilla-d8
 - Repositorio del codebase de evaluación: https://github.com/cue-engineering/loop
 - Dataset de preentrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Artículo de referencia: «How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents» (URL no disponible en la información proporcionada)

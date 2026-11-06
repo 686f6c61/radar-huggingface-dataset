@@ -73,7 +73,7 @@ Otros datos aportados por el autor: exactitud de 0,737 sobre 10.788 preguntas de
 
 | Modelo | Parametros | Contexto | S1MB (todos) | S1MB (nunca vistas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| t5gemma2-decision-270m-v2 | 786 M | no disponible (max_state_tokens configurable) | 51,8 | 27,1 | Gemma | HuggingFace, requiere codigo propio |
+| t5gemma2-decision-270m-v2 | 786 M | no disponible (max_state_tokens configurable) | 51,8 | 27,1 | Gemma | Hugging Face, requiere codigo propio |
 | bekko-system-one-v0-400m | no disponible | no disponible | 53,6 | 39,8 | no disponible | no disponible |
 | Jev 1.13 | no disponible | no disponible | 63,0 | 59,6 | no disponible | no disponible |
 
@@ -95,7 +95,7 @@ La comparativa se limita a los modelos citados en la model card; no se dispone d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ktcapraz/t5gemma2-decision-270m-v2
+- Modelo en Hugging Face: https://huggingface.co/ktcapraz/t5gemma2-decision-270m-v2
 - Modelo base: https://huggingface.co/google/t5gemma-2-270m-270m
 - Licencia Gemma: https://ai.google.dev/gemma/terms
 - Dataset principal de entrenamiento: https://huggingface.co/datasets/hotchpotch/bekko-system-one-dataset-v0

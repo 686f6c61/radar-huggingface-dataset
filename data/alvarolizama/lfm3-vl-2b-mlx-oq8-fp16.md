@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-VL-2B-MLX-oQ8-fp16 es una cuantización mixta del modelo multimodal LFM3-VL-2B de Liquid AI, publicada por el usuario alvarolizama en HuggingFace. Se trata de un checkpoint de aproximadamente 1.918 millones de parámetros (1,73B en el modelo de lenguaje y 189M en el codificador visual) convertido al formato MLX mediante la herramienta oQ (oMLX v0.7.3), que aplica cuantización de precisión mixta para optimizar el equilibrio entre tamaño y fidelidad numérica en hardware Apple Silicon.
+LFM3-VL-2B-MLX-oQ8-fp16 es una cuantización mixta del modelo multimodal LFM3-VL-2B de Liquid AI, publicada por el usuario alvarolizama en Hugging Face. Se trata de un checkpoint de aproximadamente 1.918 millones de parámetros (1,73B en el modelo de lenguaje y 189M en el codificador visual) convertido al formato MLX mediante la herramienta oQ (oMLX v0.7.3), que aplica cuantización de precisión mixta para optimizar el equilibrio entre tamaño y fidelidad numérica en hardware Apple Silicon.
 
 El modelo base combina un transformer de lenguaje con un módulo de visión, lo que lo habilita para tareas de comprensión de imágenes y texto. Esta versión cuantizada reduce el peso total a unos 2,4 GiB efectivos, con una media de 10,822 bits por peso: la mayor parte de los pesos (90,1%) se almacena en 8 bits afín con grupo de 64, mientras que un 9,9% de los parámetros (correspondientes a componentes del módulo visual) se mantiene en FP32 para preservar precisión en las capas sensibles.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-VL-2B-MLX-oQ8-fp16 (este) | 1,918B (1,73B LM + 0,189B visión) | no disponible | safetensors MLX, cuantización mixta | no disponible | HuggingFace (0 descargas) |
+| LFM3-VL-2B-MLX-oQ8-fp16 (este) | 1,918B (1,73B LM + 0,189B visión) | no disponible | safetensors MLX, cuantización mixta | no disponible | Hugging Face (0 descargas) |
 | LFM3-VL-2B (modelo base) | ~2B | no disponible | safetensors | no disponible | Referenciado por el autor, no verificado |
 | Alternativas de ~2B visión-lenguaje | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alvarolizama/LFM3-VL-2B-MLX-oQ8-fp16
+- Modelo en Hugging Face: https://huggingface.co/alvarolizama/LFM3-VL-2B-MLX-oQ8-fp16
 - Herramienta oQ / oMLX: https://github.com/jundot/omlx
 - Modelo base LFM3-VL-2B (Liquid AI): no disponible en la información proporcionada
 - Paper, blog o demo oficial: no disponible en la información proporcionada

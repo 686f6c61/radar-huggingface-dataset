@@ -106,8 +106,8 @@ La diferencia mas relevante frente a estas alternativas no esta en el rendimient
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Hemmingway-1-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Altworld/Hemmingway-1
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Hemmingway-1-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Altworld/Hemmingway-1
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Hemmingway-1-GGUF
 - Solicitudes de cuantizacion y FAQ del autor: https://huggingface.co/mradermacher/model_requests
 - README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

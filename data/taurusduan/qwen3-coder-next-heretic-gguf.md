@@ -68,7 +68,7 @@ No se dispone de datos comparativos concretos en la información proporcionada. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/taurusduan/Qwen3-Coder-Next-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/taurusduan/Qwen3-Coder-Next-heretic-GGUF
 - Modelo base (trohrbaugh): https://huggingface.co/trohrbaugh/Qwen3-Coder-Next-heretic
 - Modelo original Qwen3-Coder-Next: https://huggingface.co/Qwen/Qwen3-Coder-Next
 - Repositorio GitHub de Qwen3-Coder: https://github.com/QwenLM/Qwen3-Coder

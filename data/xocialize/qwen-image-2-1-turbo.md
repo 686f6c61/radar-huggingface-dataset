@@ -97,7 +97,7 @@ La informacion proporcionada solo permite comparar con el modelo del que deriva.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xocialize/Qwen-Image-2.1-Turbo
+- Repositorio en Hugging Face: https://huggingface.co/xocialize/Qwen-Image-2.1-Turbo
 - Modelo upstream: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Modelo base y fuente del VAE en fp32: https://huggingface.co/xocialize/Qwen-Image-2.1
 - Modelo base upstream (VAE en fp32): https://huggingface.co/Qwen/Qwen-Image-2.1

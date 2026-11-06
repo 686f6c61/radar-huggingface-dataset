@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF es un ajuste fino (fine-tune) del modelo DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored, publicado por el usuario DavidAU en HuggingFace. Se distribuye como un repositorio GGUF orientado a inferencia local y se presenta como una edición "Turbo Brilliance 50X V2" con un sistema de modos de razonamiento e instrucción conmutables desde el propio prompt, además de lo que el autor denomina "AI Constructs" y "AGI Constructs". El modelo se anuncia con licencia Apache 2.0 y soporte únicamente para inglés.
+Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF es un ajuste fino (fine-tune) del modelo DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored, publicado por el usuario DavidAU en Hugging Face. Se distribuye como un repositorio GGUF orientado a inferencia local y se presenta como una edición "Turbo Brilliance 50X V2" con un sistema de modos de razonamiento e instrucción conmutables desde el propio prompt, además de lo que el autor denomina "AI Constructs" y "AGI Constructs". El modelo se anuncia con licencia Apache 2.0 y soporte únicamente para inglés.
 
 La propuesta del autor es combinar el supuesto rendimiento de Qwen 3.8 27B (en versión "Heretic", es decir, sin censura) con el ajuste Fable Fusion 711 y una capa de instrucciones predefinidas que supuestamente reducen el consumo de tokens de razonamiento y mejoran la calidad en tareas concretas. El pipeline declarado es image-text-to-text, aunque la model card no documenta capacidades de visión reales ni detalles de arquitectura. La información técnica disponible es muy escasa: no se publican parámetros verificables, longitud de contexto, composición del dataset ni resultados de benchmarks.
 
@@ -96,7 +96,7 @@ La comparación cuantitativa no es posible con la información disponible: no se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF
+- Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored
 - Dataset Polar-STRICT: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets
 - Dataset F451-STRICT: https://huggingface.co/datasets/DavidAU/F451-STRICT-Datasets

@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yiming1234/bagel-sam3d-post-fusion
+- Hugging Face: https://huggingface.co/Yiming1234/bagel-sam3d-post-fusion
 - Modelo base: https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT
 - Codigo fuente BAGEL: https://github.com/ByteDance-Seed/Bagel
 - Codigo de inferencia custom: https://github.com/plzdoo/bagel-sam

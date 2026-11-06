@@ -34,7 +34,7 @@ El entrenamiento se centra en respuestas bilingües, seguimiento de instruccione
 - Ambos modos disponibles en un único checkpoint, seleccionables mediante `enable_thinking=True/False` en el chat template.
 - Tool calling / function calling estructurado compatible con la API de OpenAI a través de vLLM.
 - Soporte para tareas conversacionales de varios turnos (pipeline de text-generation, formato conversacional).
-- Capacidades de image-text-to-text: el tag de HuggingFace indica `image-text-to-text` y el código de carga contempla la clase `Qwen3_5MoeForConditionalGeneration` si el checkpoint incluye `vision_config`, aunque la model card no documenta capacidades visuales específicas.
+- Capacidades de image-text-to-text: el tag de Hugging Face indica `image-text-to-text` y el código de carga contempla la clase `Qwen3_5MoeForConditionalGeneration` si el checkpoint incluye `vision_config`, aunque la model card no documenta capacidades visuales específicas.
 - Despliegue local en infraestructura propia, con posibilidad de adaptación a flujos de trabajo específicos bajo su licencia.
 
 ## Casos de uso
@@ -79,10 +79,10 @@ Nota: la model card no menciona modelos comparables explícitos ni publica bench
 - Latencia en modo thinking: el razonamiento intermedio consume tokens adicionales y aumenta la latencia; hay que dimensionar el presupuesto de generación en consecuencia.
 - Configuración recomendada: se aconseja `presence_penalty=1.0` en ambos modos; omitirla puede degradar la calidad de salida.
 - Licencia: Apache 2.0 es permisiva y permite uso comercial, pero el modelo hereda las condiciones del modelo base Qwen3.6-35B-A3B, cuya licencia conviene revisar antes de despliegues comerciales.
-- `inference: false` en la configuración: el modelo no está disponible para inferencia serverless en HuggingFace; requiere despliegue propio.
+- `inference: false` en la configuración: el modelo no está disponible para inferencia serverless en Hugging Face; requiere despliegue propio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Applied-Innovation-Center/Karnak-Th-41B-v1.0
+- Modelo en Hugging Face: https://huggingface.co/Applied-Innovation-Center/Karnak-Th-41B-v1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Paper, blog o repositorio de código: no disponible en la información proporcionada

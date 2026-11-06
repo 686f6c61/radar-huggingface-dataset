@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario kkleinlukas, no contiene un modelo de lenguaje entrenado, sino una nota de investigación exploratoria sobre mecanismos de atención eficiente en transformers. El artefacto principal es un documento `reading.md` que recoge el alcance de una pregunta de investigación, los posibles factores de confusión, una propuesta de comparación con líneas base emparejadas y los requisitos de reproducibilidad antes de reportar cualquier resultado de benchmark. Se mencionan contextos de evaluación concretos como Long Range Arena, ImageNet-1K y Flickr30k, pero todo ello como plan o hipótesis, no como experimentos ejecutados.
+Este repositorio de Hugging Face, publicado por el usuario kkleinlukas, no contiene un modelo de lenguaje entrenado, sino una nota de investigación exploratoria sobre mecanismos de atención eficiente en transformers. El artefacto principal es un documento `reading.md` que recoge el alcance de una pregunta de investigación, los posibles factores de confusión, una propuesta de comparación con líneas base emparejadas y los requisitos de reproducibilidad antes de reportar cualquier resultado de benchmark. Se mencionan contextos de evaluación concretos como Long Range Arena, ImageNet-1K y Flickr30k, pero todo ello como plan o hipótesis, no como experimentos ejecutados.
 
 El repositorio incluye un único tensor de 49.600 parámetros en formato safetensors, aunque la model card aclara explícitamente que no hay checkpoint entrenado ni código liberado. Su relevancia actual radica en que documenta de forma transparente el diseño de un estudio sobre atención eficiente, un área activa de investigación para reducir la complejidad cuadrática de la autoatención en modelos de lenguaje de gran tamaño. No es un modelo desplegable, sino una guía metodológica para investigadores que quieran verificar o ampliar el trabajo.
 
@@ -62,11 +62,11 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 - No se ha liberado código de entrenamiento ni de evaluación.
 - La licencia cc-by-4.0 permite uso comercial y modificación, pero los términos de los datasets externos mencionados (Long Range Arena, ImageNet-1K, Flickr30k) deben revisarse por separado.
 - El tensor safetensors incluido no tiene utilidad práctica para inferencia; es probablemente un artefacto residual.
-- Riesgo de confusión: un desarrollador podría interpretar el repositorio como un modelo funcional por su presencia en HuggingFace, cuando en realidad es una nota de investigación.
+- Riesgo de confusión: un desarrollador podría interpretar el repositorio como un modelo funcional por su presencia en Hugging Face, cuando en realidad es una nota de investigación.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kkleinlukas/reading-efficient-attention
+- Repositorio en Hugging Face: https://huggingface.co/kkleinlukas/reading-efficient-attention
 - Survey sobre atención eficiente en arXiv: https://arxiv.org/html/2507.19595v2
 - PDF del mismo survey: https://arxiv.org/pdf/2507.19595
 - Artículo relacionado en ScienceDirect: https://www.sciencedirect.com/science/article/pii/S2666389926001030

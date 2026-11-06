@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`darshanpl/labha_ai` es un repositorio alojado en HuggingFace por el usuario darshanpl bajo licencia Apache 2.0. La model card publicada no contiene ninguna descripcion tecnica del modelo: unicamente incluye la declaracion de licencia, sin informacion sobre arquitectura, parametros, datos de entrenamiento ni capacidades. El tamano del repositorio es de 0.0 GB, lo que indica que no se han subido pesos ni ficheros de configuracion en el momento de la consulta.
+`darshanpl/labha_ai` es un repositorio alojado en Hugging Face por el usuario darshanpl bajo licencia Apache 2.0. La model card publicada no contiene ninguna descripcion tecnica del modelo: unicamente incluye la declaracion de licencia, sin informacion sobre arquitectura, parametros, datos de entrenamiento ni capacidades. El tamano del repositorio es de 0.0 GB, lo que indica que no se han subido pesos ni ficheros de configuracion en el momento de la consulta.
 
 No se dispone de datos sobre el pipeline asociado, los idiomas soportados ni la finalidad del modelo. El repositorio fue creado el 27 de octubre de 2026 y actualizado dos minutos despues, sin descargas ni interacciones registradas. Se trata, por tanto, de un repositorio practicamente vacio o en fase inicial de publicacion.
 
@@ -40,10 +40,10 @@ Tampoco hay referencia a innovaciones tecnicas como atencion lineal, decodificac
 
 No es posible proponer casos de uso concretos y realistas sin informacion sobre las capacidades, el tamano y el contexto del modelo. Cualquier aplicacion practica requeriria primero la publicacion de pesos, configuracion y documentacion tecnica por parte del autor. Los unicos escenarios plausibles en el estado actual son:
 
-- Seguimiento del repositorio: monitorizar actualizaciones del espacio de HuggingFace por si el autor publica pesos y documentacion en el futuro.
+- Seguimiento del repositorio: monitorizar actualizaciones del espacio de Hugging Face por si el autor publica pesos y documentacion en el futuro.
 - Verificacion de licencia: el repositorio declara Apache 2.0, lo que permitiria uso comercial si en el futuro se publican artefactos utilizables bajo esa misma licencia.
 - Auditoria de metadatos: usar la entrada como ejemplo de repositorio incompleto en herramientas de catalogacion o inventario de modelos.
-- Pruebas de pipelines de descarga: validar flujos de integracion con HuggingFace Hub frente a repositorios vacios o sin artefactos.
+- Pruebas de pipelines de descarga: validar flujos de integracion con Hugging Face Hub frente a repositorios vacios o sin artefactos.
 - Evaluacion de gobernanza: comprobar como se comportan los sistemas de registro de modelos ante fichas sin informacion tecnica.
 - Documentacion de referencia: citar el caso como ejemplo de buenas practicas de publicacion incompletas en model cards.
 
@@ -82,7 +82,7 @@ No es posible establecer una comparativa con alternativas de la misma categoria 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/darshanpl/labha_ai
+- Repositorio en Hugging Face: https://huggingface.co/darshanpl/labha_ai
 - Perfil del autor: https://huggingface.co/darshanpl
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

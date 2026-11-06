@@ -97,7 +97,7 @@ La comparación con BGE-M3 y multilingual-e5-base se ofrece como referencia de c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cstr/f2llm-v2-0.6b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cstr/f2llm-v2-0.6b-GGUF
 - Modelo base: https://huggingface.co/codefuse-ai/F2LLM-v2-0.6B
 - Motor de inferencia CrispEmbed: https://github.com/CrispStrobe/CrispEmbed
 - Archivo Q4_K: https://huggingface.co/cstr/f2llm-v2-0.6b-GGUF/resolve/main/f2llm-v2-0.6b-q4_k.gguf

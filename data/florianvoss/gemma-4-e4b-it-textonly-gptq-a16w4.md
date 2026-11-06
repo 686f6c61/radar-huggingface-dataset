@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/florianvoss/Gemma-4-E4B-it-TextOnly-GPTQ-a16w4
+- Modelo en Hugging Face: https://huggingface.co/florianvoss/Gemma-4-E4B-it-TextOnly-GPTQ-a16w4
 - Modelo base (GPTQ en safetensors): https://huggingface.co/simaai/Gemma-4-E4B-it-TextOnly-GPTQ-Safetensors
 - Modelo original: https://huggingface.co/google/gemma-4-E4B-it
 - Pull request de LLiMa con la corrección de sliding-prefill: https://github.com/sima-neat/llima/pull/295

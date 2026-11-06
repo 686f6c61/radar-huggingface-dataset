@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`koreamin/TANGO2_Algorithm_Recommend` es un checkpoint publicado en HuggingFace por el usuario koreamin, cuya model card se limita a una única línea descriptiva ("TANGO2 Algorithm_recommendation checkpoint model") junto con la licencia Apache 2.0. Por su denominación, todo apunta a que se trata de un modelo de recomendación de algoritmos vinculado al proyecto TANGO2, un framework de código abierto orientado a la generación y operación automática de redes neuronales con mínimo esfuerzo de programación ("no-code"), aunque esta vinculación no está confirmada en la documentación del repositorio.
+`koreamin/TANGO2_Algorithm_Recommend` es un checkpoint publicado en Hugging Face por el usuario koreamin, cuya model card se limita a una única línea descriptiva ("TANGO2 Algorithm_recommendation checkpoint model") junto con la licencia Apache 2.0. Por su denominación, todo apunta a que se trata de un modelo de recomendación de algoritmos vinculado al proyecto TANGO2, un framework de código abierto orientado a la generación y operación automática de redes neuronales con mínimo esfuerzo de programación ("no-code"), aunque esta vinculación no está confirmada en la documentación del repositorio.
 
-El repositorio es muy reciente (creado el 30 de octubre de 2026), ocupa 0,1 GB, está distribuido en formato safetensors y no registra descargas ni likes, por lo que carece de validación comunitaria. No se ha asignado un pipeline en HuggingFace ni se han publicado especificaciones técnicas, datos de entrenamiento ni resultados de evaluación. Su interés práctico queda circunscrito, salvo confirmación en contra, a quienes trabajen con el ecosistema TANGO2 o con sistemas de recomendación de algoritmos para AutoML.
+El repositorio es muy reciente (creado el 30 de octubre de 2026), ocupa 0,1 GB, está distribuido en formato safetensors y no registra descargas ni likes, por lo que carece de validación comunitaria. No se ha asignado un pipeline en Hugging Face ni se han publicado especificaciones técnicas, datos de entrenamiento ni resultados de evaluación. Su interés práctico queda circunscrito, salvo confirmación en contra, a quienes trabajen con el ecosistema TANGO2 o con sistemas de recomendación de algoritmos para AutoML.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ El repositorio es muy reciente (creado el 30 de octubre de 2026), ocupa 0,1 GB, 
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 | Autor | koreamin |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamaño del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 0 |
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: no hay datos oficiales. Con un repositorio de 0,1 GB en safetensors, es razonable estimar un modelo de decenas de millones de parámetros como máximo, ejecutable en CPU sin GPU dedicada y con menos de 2 GB de memoria. Esta cifra es una estimación derivada del tamaño del repositorio, no un dato publicado.
 - GPU recomendadas: no disponibles como dato oficial; en principio no se requiere ninguna GPU concreta (ni A100, ni H100, ni tarjetas de gama alta).
 - Consumer GPU: sí, con holgura; cualquier GPU doméstica moderna sería más que suficiente, e incluso un portátil sin GPU dedicada debería bastar si la estimación de tamaño es correcta.
-- Opciones de despliegue: no confirmadas. Al estar en safetensors, el checkpoint debería ser cargable con PyTorch o la librería `transformers` de HuggingFace siempre que su arquitectura sea compatible. Herramientas como vLLM, llama.cpp, Ollama o TGI solo aplicarían en caso de que se tratara de un modelo de lenguaje, algo que no consta en la documentación.
+- Opciones de despliegue: no confirmadas. Al estar en safetensors, el checkpoint debería ser cargable con PyTorch o la librería `transformers` de Hugging Face siempre que su arquitectura sea compatible. Herramientas como vLLM, llama.cpp, Ollama o TGI solo aplicarían en caso de que se tratara de un modelo de lenguaje, algo que no consta en la documentación.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ No existen alternativas publicadas de la misma categoría con las que comparar d
 
 | Modelo/proyecto | Tarea | Licencia | Disponibilidad | Relación con este checkpoint |
 |---|---|---|---|---|
-| koreamin/TANGO2_Algorithm_Recommend | Recomendación de algoritmos (presunta) | Apache 2.0 | HuggingFace, 0 descargas | — |
+| koreamin/TANGO2_Algorithm_Recommend | Recomendación de algoritmos (presunta) | Apache 2.0 | Hugging Face, 0 descargas | — |
 | Tango 2 (declare-lab) | Texto-a-audio mediante difusión latente afinada con DPO | no disponible en la información proporcionada | arXiv 2404.09956, página web del proyecto, OpenReview | Homónimo; sin relación confirmada |
 | TANGO2 (ML-TANGO) | Framework GenAIOps no-code para generación y despliegue de redes neuronales | no disponible en la información proporcionada | GitHub (ML-TANGO/TANGO2) | Posible proyecto de origen del checkpoint; sin confirmación |
 
@@ -85,7 +85,7 @@ No existen alternativas publicadas de la misma categoría con las que comparar d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/koreamin/TANGO2_Algorithm_Recommend
+- Hugging Face: https://huggingface.co/koreamin/TANGO2_Algorithm_Recommend
 - Posible proyecto de origen (relación no confirmada): https://github.com/ML-TANGO/TANGO2
 - Proyectos homónimos localizados en la búsqueda (sin relación confirmada con este checkpoint):
   - Paper "Tango 2: Aligning Diffusion-based Text-to-Audio Generative Models via Direct Preference Optimization": https://arxiv.org/abs/2404.09956

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`replicate/trimul_gpumode` no es un modelo de lenguaje ni una red neuronal entrenada: es un paquete de kernels escrito en Triton que implementa la operacion `trimul` (triangular multiplicative update) del campeonato GPUMODE. El repositorio lo publica la organizacion `replicate` bajo la libreria `kernels` de HuggingFace y agrupa cinco variantes de kernel, cada una optimizada para una arquitectura de GPU concreta o para el mejor rendimiento medio entre todas ellas.
+`replicate/trimul_gpumode` no es un modelo de lenguaje ni una red neuronal entrenada: es un paquete de kernels escrito en Triton que implementa la operacion `trimul` (triangular multiplicative update) del campeonato GPUMODE. El repositorio lo publica la organizacion `replicate` bajo la libreria `kernels` de Hugging Face y agrupa cinco variantes de kernel, cada una optimizada para una arquitectura de GPU concreta o para el mejor rendimiento medio entre todas ellas.
 
 El problema que resuelve es de rendimiento puro: el operador `trimul` es una primitiva intensiva en computo y memoria que aparece en arquitecturas de prediccion de estructura de proteinas y en otros modelos con operaciones sobre matrices triangulares. Las implementaciones incluidas proceden de competiciones de optimizacion de GPU y han obtenido primeros puestos por arquitectura: `kernel_mi300` primero en MI300, `kernel_a100` primero en A100, `kernel_b100` segundo en B200 y `kernel_h100` tercero en H100. La variante `kernel_global` es la que mejor ranking medio obtiene entre todas las arquitecturas.
 
-Su relevancia actual es doble. Por un lado, ofrece kernels ya optimizados y listos para integrar mediante la libreria `kernels`, lo que evita reescribir la primitiva a mano para cada hardware. Por otro, la propia model card advierte de que a partir del 13 de septiembre de 2026 HuggingFace eliminara los repositorios de tipo "model" que contienen kernels, de modo que este paquete quedara obsoleto si no se consume a traves de la libreria `kernels` en su version mas reciente. No hay informacion sobre licencia, idiomas ni pipeline, y las metricas de adopcion son nulas (0 descargas, 0 likes) en el momento de la consulta.
+Su relevancia actual es doble. Por un lado, ofrece kernels ya optimizados y listos para integrar mediante la libreria `kernels`, lo que evita reescribir la primitiva a mano para cada hardware. Por otro, la propia model card advierte de que a partir del 13 de septiembre de 2026 Hugging Face eliminara los repositorios de tipo "model" que contienen kernels, de modo que este paquete quedara obsoleto si no se consume a traves de la libreria `kernels` en su version mas reciente. No hay informacion sobre licencia, idiomas ni pipeline, y las metricas de adopcion son nulas (0 descargas, 0 likes) en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Datos adicionales del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | replicate/trimul_gpumode |
+| ID en Hugging Face | replicate/trimul_gpumode |
 | Autor | replicate |
 | Libreria | kernels |
 | Tags | kernels, universal, region:us |
@@ -47,7 +47,7 @@ Las innovaciones tecnicas son las tipicas de la optimizacion de kernels en Trito
 - Proporciona implementaciones en Triton del operador `trimul` listas para ejecutarse en GPU.
 - Incluye variantes especializadas por arquitectura: MI300 (AMD), A100, B200 y H100 (NVIDIA).
 - Incluye una variante `kernel_global` optimizada para buen rendimiento medio entre arquitecturas, no para el maximo en una sola.
-- Se integra con la libreria `kernels` de HuggingFace, que permite cargar y lanzar el kernel sin copiar el codigo fuente.
+- Se integra con la libreria `kernels` de Hugging Face, que permite cargar y lanzar el kernel sin copiar el codigo fuente.
 - No ofrece generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, capacidades de agente ni soporte multilingue: no es un modelo generativo.
 - No incluye modo de pensamiento, vision, audio ni ninguna capacidad cognitiva.
 - El repositorio es "universal" segun sus tags, lo que en el ecosistema `kernels` indica compatibilidad con multiples arquitecturas a traves de la seleccion de la variante adecuada.
@@ -81,7 +81,7 @@ No se especifica la metrica exacta empleada en la competicion (latencia, through
 - GPU soportadas: AMD Instinct MI300, NVIDIA A100, NVIDIA B200 y NVIDIA H100, cada una con su variante especifica; `kernel_global` cubre el conjunto.
 - VRAM estimada: no disponible. Al no ser un modelo con pesos, el consumo depende de las matrices de entrada del operador `trimul` y no de un tamano fijo de parametros.
 - GPU de consumo: no hay informacion sobre soporte en tarjetas consumer (RTX 4090, RTX 3090, etc.). Las variantes documentadas apuntan a hardware de centro de datos.
-- Opciones de despliegue: la libreria `kernels` de HuggingFace es el mecanismo previsto; el repositorio advierte de que hay que usar una version reciente de `kernels` y que los repositorios de tipo "model" con kernels se retiran a partir del 13 de septiembre de 2026.
+- Opciones de despliegue: la libreria `kernels` de Hugging Face es el mecanismo previsto; el repositorio advierte de que hay que usar una version reciente de `kernels` y que los repositorios de tipo "model" con kernels se retiran a partir del 13 de septiembre de 2026.
 - Latencia y throughput estimados: no disponibles; solo constan los puestos relativos en la competicion, no valores absolutos.
 
 ## Comparativa con modelos similares
@@ -90,11 +90,11 @@ No hay modelos comparables en el sentido habitual (no es un modelo generativo). 
 
 | Elemento | Tipo | Cobertura de hardware | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kernel_mi300 | Kernel Triton especializado | MI300 | 1.º en MI300 en GPUMODE | no disponible | HuggingFace (libreria kernels) |
-| kernel_a100 | Kernel Triton especializado | A100 | 1.º en A100 en GPUMODE | no disponible | HuggingFace (libreria kernels) |
-| kernel_b100 | Kernel Triton especializado | B200 | 2.º en B200 en GPUMODE | no disponible | HuggingFace (libreria kernels) |
-| kernel_h100 | Kernel Triton especializado | H100 | 3.º en H100 en GPUMODE | no disponible | HuggingFace (libreria kernels) |
-| kernel_global | Kernel Triton agnostico | Multiples | Mejor media entre arquitecturas | no disponible | HuggingFace (libreria kernels) |
+| kernel_mi300 | Kernel Triton especializado | MI300 | 1.º en MI300 en GPUMODE | no disponible | Hugging Face (libreria kernels) |
+| kernel_a100 | Kernel Triton especializado | A100 | 1.º en A100 en GPUMODE | no disponible | Hugging Face (libreria kernels) |
+| kernel_b100 | Kernel Triton especializado | B200 | 2.º en B200 en GPUMODE | no disponible | Hugging Face (libreria kernels) |
+| kernel_h100 | Kernel Triton especializado | H100 | 3.º en H100 en GPUMODE | no disponible | Hugging Face (libreria kernels) |
+| kernel_global | Kernel Triton agnostico | Multiples | Mejor media entre arquitecturas | no disponible | Hugging Face (libreria kernels) |
 | Repositorio origen `arseniivanov/trimul` | Codigo fuente | Segun implementacion | No especificado | no disponible | GitHub |
 | Repositorio origen `davidberard98/gpumode-trimul` | Codigo fuente | Segun implementacion | No especificado | no disponible | GitHub |
 
@@ -105,7 +105,7 @@ Como referencia externa, los kernels de la organizacion `kernels-community` (por
 - No es un modelo: no genera texto, no razona y no puede usarse para tareas de IA generativa. Cualquier evaluacion debe hacerse como codigo de kernel.
 - Licencia no especificada: sin terminos explicitos, el uso comercial y la redistribucion son legalmente ambiguos. Conviene contactar con el autor antes de integrarlo en produccion.
 - Repositorio practicamente sin adopcion: 0 descargas y 0 likes, sin historial de actualizaciones ni issues publicos sobre este paquete concreto.
-- Aviso de retirada: HuggingFace elimina los repositorios de tipo "model" que contienen kernels a partir del 13 de septiembre de 2026. Si se consume como modelo y no via la libreria `kernels` actualizada, el paquete dejara de funcionar.
+- Aviso de retirada: Hugging Face elimina los repositorios de tipo "model" que contienen kernels a partir del 13 de septiembre de 2026. Si se consume como modelo y no via la libreria `kernels` actualizada, el paquete dejara de funcionar.
 - Sin documentacion tecnica: no se detallan tamanos de bloque, precision numerica, requisitos exactos ni tolerancias. No se puede verificar la correccion numerica del resultado frente a la implementacion de referencia.
 - Dependencia fuerte del hardware: cada variante esta ajustada a una GPU concreta; usar `kernel_a100` en otra arquitectura puede degradar el rendimiento por debajo de una implementacion generica.
 - Sin datos de robustez: no hay informacion sobre comportamiento con formas de entrada no potencia de dos, entradas de gran tamano o precision fp16/bf16/fp32.
@@ -114,8 +114,8 @@ Como referencia externa, los kernels de la organizacion `kernels-community` (por
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/trimul_gpumode
+- Repositorio en Hugging Face: https://huggingface.co/replicate/trimul_gpumode
 - Repositorio origen de las variantes por arquitectura: https://github.com/arseniivanov/trimul
 - Repositorio origen de `kernel_global`: https://github.com/davidberard98/gpumode-trimul
 - Noticias de la competicion GPUMODE: https://www.gpumode.com/v2/news
-- Incidencias de la libreria `kernels` de HuggingFace: https://github.com/huggingface/kernels/issues/new
+- Incidencias de la libreria `kernels` de Hugging Face: https://github.com/huggingface/kernels/issues/new

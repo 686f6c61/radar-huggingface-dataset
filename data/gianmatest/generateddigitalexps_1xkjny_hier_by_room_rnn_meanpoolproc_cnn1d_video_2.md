@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`generatedDigitalExps_1xKjnY_hier_by_room_rnn_meanPoolProc_cnn1d_video_2` es un checkpoint de 1.839.360 parámetros (aproximadamente 1,84 M) publicado por el usuario `gianmaTest` en HuggingFace. No se trata de un modelo de lenguaje: la model card es la plantilla automática de `PyTorchModelHubMixin` y no documenta arquitectura, datos de entrenamiento, uso previsto ni resultados. El identificador sugiere una pipeline jerárquica "por habitación" con RNN, mean pooling y CNN 1D aplicada a vídeo, pero esa lectura es una inferencia a partir del nombre del repositorio y no está confirmada por el autor.
+`generatedDigitalExps_1xKjnY_hier_by_room_rnn_meanPoolProc_cnn1d_video_2` es un checkpoint de 1.839.360 parámetros (aproximadamente 1,84 M) publicado por el usuario `gianmaTest` en Hugging Face. No se trata de un modelo de lenguaje: la model card es la plantilla automática de `PyTorchModelHubMixin` y no documenta arquitectura, datos de entrenamiento, uso previsto ni resultados. El identificador sugiere una pipeline jerárquica "por habitación" con RNN, mean pooling y CNN 1D aplicada a vídeo, pero esa lectura es una inferencia a partir del nombre del repositorio y no está confirmada por el autor.
 
 Su relevancia práctica es muy limitada: cero descargas, cero likes, licencia no declarada, sin código publicado y creado el 24 de octubre de 2026. El interés es fundamentalmente de trazabilidad y auditoría de artefactos de investigación, o de reproducción si se recupera el código de entrenamiento original. Cualquier evaluación de capacidades resulta imposible sin ese código y sin una descripción del dataset.
 
@@ -94,7 +94,7 @@ No se dispone de datos verificables de modelos comparables: no hay benchmarks, n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKjnY_hier_by_room_rnn_meanPoolProc_cnn1d_video_2
+- Modelo en Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKjnY_hier_by_room_rnn_meanPoolProc_cnn1d_video_2
 - Documentación de `PyTorchModelHubMixin` (referenciada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Repositorio de código: no disponible

@@ -99,7 +99,7 @@ La informacion disponible solo permite comparar contra el modelo fuente y contra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ramgpt/Phi-4-11B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ramgpt/Phi-4-11B-GGUF
 - Modelo base: https://huggingface.co/parmanu-lcs2/Phi-4-11B
 - llama.cpp upstream (requiere parche para este modelo; revision verificada 95887577ab5fead779581a7030a83c7752ff3234): no se ha proporcionado la URL en la informacion disponible
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web realizada no devolvio resultados relevantes sobre este modelo.

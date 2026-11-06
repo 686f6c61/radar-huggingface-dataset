@@ -71,6 +71,6 @@ No disponible. Eureka no es un modelo de lenguaje ni un sistema de agentes compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/manxis-contact/Eureka
+- Repositorio Hugging Face: https://huggingface.co/manxis-contact/Eureka
 - Repositorio GitHub: https://github.com/manxis-contact/Eureka
 - Paper: *Eureka: Task-Conditioned Meta-Agent Orchestration for Scientific Discovery* (referenciado en la model card, sin enlace directo)

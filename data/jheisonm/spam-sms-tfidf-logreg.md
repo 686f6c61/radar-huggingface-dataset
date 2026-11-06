@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JheisonM/spam-sms-tfidf-logreg es un clasificador binario spam/ham para mensajes SMS en inglés, publicado en HuggingFace por el usuario JheisonM. No es un modelo de lenguaje neuronal: se trata de un pipeline clásico de scikit-learn compuesto por un vectorizador TF-IDF de n-gramas de caracteres (2 a 5, con `analyzer='char_wb'`) y una regresión logística con `class_weight='balanced'`. Devuelve la etiqueta y la probabilidad de spam, de modo que el umbral de decisión (0,5 por defecto) puede ajustarse según el coste relativo de falsos positivos y falsos negativos.
+JheisonM/spam-sms-tfidf-logreg es un clasificador binario spam/ham para mensajes SMS en inglés, publicado en Hugging Face por el usuario JheisonM. No es un modelo de lenguaje neuronal: se trata de un pipeline clásico de scikit-learn compuesto por un vectorizador TF-IDF de n-gramas de caracteres (2 a 5, con `analyzer='char_wb'`) y una regresión logística con `class_weight='balanced'`. Devuelve la etiqueta y la probabilidad de spam, de modo que el umbral de decisión (0,5 por defecto) puede ajustarse según el coste relativo de falsos positivos y falsos negativos.
 
 El modelo se entrenó sobre la SMS Spam Collection del UCI Machine Learning Repository, con 5158 mensajes únicos (4516 ham y 642 spam) tras reconstruir 50 filas partidas por comas y eliminar duplicados exactos. La configuración final se eligió mediante validación cruzada estratificada de 5 pliegues sobre el 80 % del conjunto de entrenamiento, comparando MultinomialNB, LogisticRegression y LinearSVC con n-gramas de palabras y de caracteres; el modelo publicado se reentrenó después con el 100 % de los datos.
 
@@ -22,7 +22,7 @@ Su relevancia es acotada pero clara: sirve como línea base reproducible, de cos
 | Formato de pesos | skops (serialización de pipelines de scikit-learn); no hay safetensors ni GGUF en el repositorio |
 | Tarea | clasificación de texto binaria (spam / ham) con probabilidad asociada |
 | Etiquetas de salida | 2 (spam, ham) |
-| Tamaño del repositorio | 0,0 GB según HuggingFace (por debajo del margen de redondeo de 0,05 GB) |
+| Tamaño del repositorio | 0,0 GB según Hugging Face (por debajo del margen de redondeo de 0,05 GB) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-09-13 |
 
@@ -90,7 +90,7 @@ La model card documenta una comparación interna durante la selección de modelo
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| spam-sms-tfidf-logreg | TF-IDF char 2-5 + regresión logística | no disponible | no aplica | no publicado | MIT | público en HuggingFace |
+| spam-sms-tfidf-logreg | TF-IDF char 2-5 + regresión logística | no disponible | no aplica | no publicado | MIT | público en Hugging Face |
 | MultinomialNB (sobre el mismo corpus) | Naive Bayes multinomial | no disponible | no aplica | evaluado en la validación cruzada del autor, cifras no publicadas | no aplica (no se publica como modelo) | no disponible |
 | LinearSVC (sobre el mismo corpus) | SVM lineal | no disponible | no aplica | evaluado en la validación cruzada del autor, cifras no publicadas | no aplica (no se publica como modelo) | no disponible |
 | Alternativa con transformer afinado (p. ej. BERT en su versión base) | Transformer encoder | cientos de millones (según variante) | habitualmente 512 tokens | no disponible en la información proporcionada | según variante | no evaluada en esta ficha |
@@ -113,6 +113,6 @@ No se dispone de comparaciones publicadas frente a detectores de spam neuronales
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JheisonM/spam-sms-tfidf-logreg
+- Modelo en Hugging Face: https://huggingface.co/JheisonM/spam-sms-tfidf-logreg
 - Conjunto de datos de entrenamiento (SMS Spam Collection, UCI/Kaggle): https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset
 - Búsqueda web: las consultas realizadas no devolvieron resultados relevantes sobre el modelo; los enlaces recuperados corresponden a foros de la comunidad de eBay y no guardan relación con esta ficha. No se han encontrado papers, blogs, repositorios ni demos adicionales asociados al modelo.

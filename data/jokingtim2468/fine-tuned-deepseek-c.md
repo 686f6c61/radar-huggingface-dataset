@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fine-Tuned-Deepseek-C es un adaptador LoRA publicado por el usuario jokingtim2468 en HuggingFace. No se trata de un modelo completo, sino de un conjunto de pesos PEFT (0,5 GB) que debe cargarse sobre el modelo base huihui-ai/DeepSeek-R1-Distill-Qwen-14B-abliterated-v2, una variante "abliterated" (con los mecanismos de rechazo atenuados o eliminados) del destilado DeepSeek-R1 sobre Qwen de 14.000 millones de parametros.
+Fine-Tuned-Deepseek-C es un adaptador LoRA publicado por el usuario jokingtim2468 en Hugging Face. No se trata de un modelo completo, sino de un conjunto de pesos PEFT (0,5 GB) que debe cargarse sobre el modelo base huihui-ai/DeepSeek-R1-Distill-Qwen-14B-abliterated-v2, una variante "abliterated" (con los mecanismos de rechazo atenuados o eliminados) del destilado DeepSeek-R1 sobre Qwen de 14.000 millones de parametros.
 
 El adaptador se ha entrenado mediante SFT (supervised fine-tuning) usando las librerias TRL y Unsloth, segun las etiquetas del repositorio. La model card esta practicamente vacia: todos los campos de descripcion, datos de entrenamiento, hiperparametros y evaluacion aparecen como "[More Information Needed]". No se declara licencia, idiomas soportados ni origen de los datos de ajuste.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada y de nicho: se publica sin documentacion, sin benchmar
 
 El artefacto es un adaptador LoRA de bajo rango que se inyecta en las capas del transformer base. El modelo subyacente, DeepSeek-R1-Distill-Qwen-14B, es un Qwen de 14B ajustado por DeepSeek mediante destilacion de trazas de razonamiento de DeepSeek-R1; la variante "abliterated-v2" de huihui-ai modifica las direcciones de activacion asociadas al rechazo para reducir las negativas del modelo. Sobre esa base, el autor aplica un SFT con TRL y Unsloth, segun las etiquetas del repositorio.
 
-No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el rango del LoRA, la tasa de aprendizaje, el numero de epochs ni si hubo etapas de RLHF o DPO. Tampoco se documenta ninguna innovacion tecnica propia. La model card es la plantilla por defecto de HuggingFace sin rellenar.
+No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el rango del LoRA, la tasa de aprendizaje, el numero de epochs ni si hubo etapas de RLHF o DPO. Tampoco se documenta ninguna innovacion tecnica propia. La model card es la plantilla por defecto de Hugging Face sin rellenar.
 
 ## Capacidades
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Fine-Tuned-Deepseek-C (este) | adaptador sobre 14B | no disponible | no disponible | HuggingFace, 0 descargas |
-| huihui-ai/DeepSeek-R1-Distill-Qwen-14B-abliterated-v2 (base) | 14B | no disponible en esta ficha | no disponible | HuggingFace |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-14B (original) | 14B | 128K (segun model card publica) | MIT (segun model card publica) | HuggingFace |
-| Qwen2.5-14B-Instruct | 14B | 128K (segun model card publica) | Apache 2.0 (segun model card publica) | HuggingFace |
+| Fine-Tuned-Deepseek-C (este) | adaptador sobre 14B | no disponible | no disponible | Hugging Face, 0 descargas |
+| huihui-ai/DeepSeek-R1-Distill-Qwen-14B-abliterated-v2 (base) | 14B | no disponible en esta ficha | no disponible | Hugging Face |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-14B (original) | 14B | 128K (segun model card publica) | MIT (segun model card publica) | Hugging Face |
+| Qwen2.5-14B-Instruct | 14B | 128K (segun model card publica) | Apache 2.0 (segun model card publica) | Hugging Face |
 
 No se dispone de datos de rendimiento del adaptador para comparar benchmarks.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento del adaptador para comparar benchmarks.
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/jokingtim2468/Fine-Tuned-Deepseek-C
+- Hugging Face del adaptador: https://huggingface.co/jokingtim2468/Fine-Tuned-Deepseek-C
 - Modelo base: https://huggingface.co/huihui-ai/DeepSeek-R1-Distill-Qwen-14B-abliterated-v2
 - DeepSeek-R1-Distill-Qwen-14B original: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
 - Paper de referencia sobre impacto ambiental citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

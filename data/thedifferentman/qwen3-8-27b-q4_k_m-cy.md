@@ -63,7 +63,7 @@ No se dispone de datos concretos para una comparativa rigurosa. El modelo base Q
 - La longitud de contexto no está documentada en la información proporcionada; es posible que la cuantización reduzca la ventana efectiva si se usa con memoria limitada.
 - No se confirma el soporte de tool calling ni el alcance multilingüe; estos deben verificarse mediante pruebas directas.
 - La licencia Apache 2.0 permite uso comercial, pero es recomendable revisar los términos del modelo base original para asegurar el cumplimiento de cualquier condición adicional.
-- El modelo cuantizado tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad; se recomienda probarlo exhaustivamente antes de usarlo en producción.
+- El modelo cuantizado tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad; se recomienda probarlo exhaustivamente antes de usarlo en producción.
 
 ## Enlaces
 

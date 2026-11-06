@@ -77,9 +77,9 @@ El tiempo escala aproximadamente de forma lineal con el numero de pasos y con el
 
 | Modelo | Parametros (componente visual) | Formato / runtime | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NovaeonStudio/qwen-image-2.1-mflux-q8 (este build) | ~7B | safetensors / mflux (MLX, Apple Silicon) | 8-bit | qwen-image-2.1-license (other) | HuggingFace, 0 descargas, 1 like |
-| Qwen/Qwen-Image-2.1 (base) | ~7B | safetensors (precision completa) | ninguna | qwen-image-2.1-license (other) | HuggingFace, modelo oficial |
-| mflux-community/qwen-image-2-1-mflux-q4 | ~7B | safetensors / mflux (MLX) | 4-bit | licencia del base sin cambios | HuggingFace, conversion comunitaria |
+| NovaeonStudio/qwen-image-2.1-mflux-q8 (este build) | ~7B | safetensors / mflux (MLX, Apple Silicon) | 8-bit | qwen-image-2.1-license (other) | Hugging Face, 0 descargas, 1 like |
+| Qwen/Qwen-Image-2.1 (base) | ~7B | safetensors (precision completa) | ninguna | qwen-image-2.1-license (other) | Hugging Face, modelo oficial |
+| mflux-community/qwen-image-2-1-mflux-q4 | ~7B | safetensors / mflux (MLX) | 4-bit | licencia del base sin cambios | Hugging Face, conversion comunitaria |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes ni frente a alternativas de otros fabricantes en la informacion proporcionada; por tanto, la comparativa se limita a formato, cuantizacion y disponibilidad. Cualquier comparacion de calidad con modelos como FLUX u otros no esta respaldada por datos en las fuentes consultadas y figura como no disponible.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes ni fren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NovaeonStudio/qwen-image-2.1-mflux-q8
+- Modelo en Hugging Face: https://huggingface.co/NovaeonStudio/qwen-image-2.1-mflux-q8
 - Modelo base Qwen/Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - Repositorio GitHub oficial Qwen-Image-2.1: https://github.com/QwenLM/Qwen-Image-2.1

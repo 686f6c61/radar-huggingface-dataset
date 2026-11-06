@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mystic_XXX_V4 es un adaptador LoRA publicado por el usuario f23gg en HuggingFace, pensado para el pipeline de difusión image-to-video (i2v) de la librería diffusers. No se trata de un modelo completo, sino de un ajuste de bajo rango que se aplica sobre el modelo base lynaNSFW/minimaxH3_Collection, del cual hereda la arquitectura, la resolución y la ventana temporal de generación. El repositorio ocupa 0,2 GB, un tamaño coherente con pesos de adaptador y no con un checkpoint completo de difusión de vídeo.
+Mystic_XXX_V4 es un adaptador LoRA publicado por el usuario f23gg en Hugging Face, pensado para el pipeline de difusión image-to-video (i2v) de la librería diffusers. No se trata de un modelo completo, sino de un ajuste de bajo rango que se aplica sobre el modelo base lynaNSFW/minimaxH3_Collection, del cual hereda la arquitectura, la resolución y la ventana temporal de generación. El repositorio ocupa 0,2 GB, un tamaño coherente con pesos de adaptador y no con un checkpoint completo de difusión de vídeo.
 
 El problema que resuelve es el de especializar estéticamente un modelo base de vídeo generativo: el LoRA permite activar un estilo o dominio concreto (según el autor, orientado a contenido para adultos, dado el tag not-for-all-audiences) sin necesidad de reentrenar el modelo completo. El prompt de instancia declarado en la model card es null, es decir, no se documenta una palabra de activación específica.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| f23gg/Mystic_XXX_V4 | LoRA image-to-video (diffusers) | no disponible | no aplica | no disponible | no disponible | HuggingFace, 0 descargas |
-| cptsl/MysticXXXv4 | LoRA text-to-image (diffusers) | no disponible | no aplica | no disponible | cc-by-4.0 | HuggingFace |
-| cptsl/MysticXXX | LoRA de difusion | no disponible | no aplica | no disponible | no disponible | HuggingFace |
+| f23gg/Mystic_XXX_V4 | LoRA image-to-video (diffusers) | no disponible | no aplica | no disponible | no disponible | Hugging Face, 0 descargas |
+| cptsl/MysticXXXv4 | LoRA text-to-image (diffusers) | no disponible | no aplica | no disponible | cc-by-4.0 | Hugging Face |
+| cptsl/MysticXXX | LoRA de difusion | no disponible | no aplica | no disponible | no disponible | Hugging Face |
 | mystic_v4 (Tensor.Art, autor Obscura) | LoRA sobre MINIMAX_H3_COMFY | no disponible | no aplica | no disponible | no disponible | Tensor.Art |
 
 Los modelos comparables encontrados comparten nombre comercial o familia de modelo base, pero ninguno publica parametros, contexto ni evaluaciones que permitan una comparacion tecnica real. La unica diferencia verificable es la licencia declarada: cptsl/MysticXXXv4 indica cc-by-4.0, mientras que Mystic_XXX_V4 no declara ninguna.
@@ -89,7 +89,7 @@ Los modelos comparables encontrados comparten nombre comercial o familia de mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/f23gg/Mystic_XXX_V4
+- Modelo en Hugging Face: https://huggingface.co/f23gg/Mystic_XXX_V4
 - Modelo base: https://huggingface.co/lynaNSFW/minimaxH3_Collection
 - cptsl/MysticXXXv4: https://huggingface.co/cptsl/MysticXXXv4
 - cptsl/MysticXXX: https://huggingface.co/cptsl/MysticXXX

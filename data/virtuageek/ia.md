@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `VIRTUAGEEK/ia` es un repositorio publicado en HuggingFace por el usuario VIRTUAGEEK bajo licencia Apache 2.0. La fecha de creación y actualización es el 21 de agosto de 2026. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia, sin descripción, arquitectura, parámetros, idiomas ni ningún otro dato técnico. No se han registrado descargas ni interacciones en el repositorio.
+El modelo identificado como `VIRTUAGEEK/ia` es un repositorio publicado en Hugging Face por el usuario VIRTUAGEEK bajo licencia Apache 2.0. La fecha de creación y actualización es el 21 de agosto de 2026. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia, sin descripción, arquitectura, parámetros, idiomas ni ningún otro dato técnico. No se han registrado descargas ni interacciones en el repositorio.
 
 Dado que no existe información pública sobre sus especificaciones, capacidades o rendimiento, no es posible evaluar su utilidad para casos de uso concretos. La ausencia de documentación técnica y de resultados de benchmarks impide cualquier análisis riguroso. Se recomienda precaución antes de considerar este modelo para cualquier aplicación en producción.
 
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables al no existir información sobr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VIRTUAGEEK/ia
+- Repositorio en Hugging Face: https://huggingface.co/VIRTUAGEEK/ia

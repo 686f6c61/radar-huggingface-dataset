@@ -66,5 +66,5 @@ No disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Phamhapaa1/Kokoro-Vietnamese-BANGOC
+- Hugging Face: https://huggingface.co/Phamhapaa1/Kokoro-Vietnamese-BANGOC
 - Repositorio de inferencia y entrenamiento: https://github.com/iamdinhthuan/Kokoro-Vietnamese

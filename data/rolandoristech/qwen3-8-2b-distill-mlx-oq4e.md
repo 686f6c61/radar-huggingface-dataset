@@ -112,7 +112,7 @@ Todas las variantes comparten licencia Apache 2.0, base destilada y formato MLX.
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/RolanDorisTech/Qwen3.8-2B-Distill-MLX-oQ4e
+- Hugging Face (este modelo): https://huggingface.co/RolanDorisTech/Qwen3.8-2B-Distill-MLX-oQ4e
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-Distill
 - Base en formato GGUF citada en los creditos: https://huggingface.co/empero-ai/Qwen3.8-2B-Distill-GGUF
 - Canal del autor: https://www.youtube.com/@RolanDorisTech

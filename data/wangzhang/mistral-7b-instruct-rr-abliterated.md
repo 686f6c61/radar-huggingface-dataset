@@ -85,7 +85,7 @@ La comparativa se limita a los modelos directamente relacionados; no se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wangzhang/Mistral-7B-Instruct-RR-Abliterated
+- Repositorio Hugging Face: https://huggingface.co/wangzhang/Mistral-7B-Instruct-RR-Abliterated
 - Modelo base con defensa: https://huggingface.co/GraySwanAI/Mistral-7B-Instruct-RR
 - Modelo base original: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Herramienta abliterix: https://github.com/wuwangzhang1216/abliterix

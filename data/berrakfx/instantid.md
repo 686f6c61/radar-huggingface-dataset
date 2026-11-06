@@ -6,7 +6,7 @@ InstantID es un método de generación de imágenes con preservación de identid
 
 Técnicamente, InstantID no es un modelo de lenguaje sino un conjunto de módulos sobre Stable Diffusion XL: un ControlNet de identidad (IdentityNet) y un IP-Adapter facial que inyectan el embedding de la cara (extraído con InsightFace/antelopev2) y los puntos clave faciales en el proceso de difusión. Esto permite generar imágenes en segundos, con control simultáneo de identidad, texto y estilo.
 
-El repositorio `berrakfx/InstantID` es una copia/espejo del modelo original `InstantX/InstantID` en HuggingFace, con licencia Apache 2.0, pesos en formato safetensors y tamaño de repositorio de 4,2 GB. Es relevante hoy porque sigue siendo una de las soluciones de referencia para generación zero-shot de retratos consistentes, integrada en la librería diffusers de Hugging Face.
+El repositorio `berrakfx/InstantID` es una copia/espejo del modelo original `InstantX/InstantID` en Hugging Face, con licencia Apache 2.0, pesos en formato safetensors y tamaño de repositorio de 4,2 GB. Es relevante hoy porque sigue siendo una de las soluciones de referencia para generación zero-shot de retratos consistentes, integrada en la librería diffusers de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 - VRAM estimada para inferencia: aproximadamente 10-12 GB en float16 con el pipeline completo (SDXL base 1.0 + IdentityNet + IP-Adapter + InsightFace); el repositorio de pesos adicionales ocupa 4,2 GB.
 - GPU recomendadas: NVIDIA con soporte CUDA (CUDAExecutionProvider para InsightFace). Una RTX 3090 o RTX 4090 de 24 GB es suficiente con holgura; en GPUs de 12-16 GB (RTX 3060, RTX 4070) es viable en float16 con atencion optimizada. No hay informacion disponible sobre requisitos verificados para A100/H100.
 - Consumer GPUs: cabe en tarjetas de gama alta y media-alta con 12 GB o mas de VRAM en float16; no hay datos oficiales sobre ejecucion en 8 GB.
-- Despliegue: libreria diffusers de Hugging Face (pipeline `StableDiffusionXLInstantIDPipeline`), demo Gradio en HuggingFace Spaces, y codigo de referencia en GitHub. No hay informacion disponible sobre soporte en vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje).
+- Despliegue: libreria diffusers de Hugging Face (pipeline `StableDiffusionXLInstantIDPipeline`), demo Gradio en Hugging Face Spaces, y codigo de referencia en GitHub. No hay informacion disponible sobre soporte en vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje).
 - Dependencias adicionales: opencv-python, transformers, accelerate, insightface y descarga manual del encoder facial antelopev2.
 - Latencia: la generacion se produce "en segundos" segun el propio titulo del paper; no hay cifras exactas de latencia o throughput en la informacion disponible.
 
@@ -85,10 +85,10 @@ InstantID se diferencia de DreamBooth y LoRA en que no requiere entrenamiento po
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/berrakfx/InstantID
-- Repositorio original en HuggingFace: https://huggingface.co/InstantX/InstantID
+- Repositorio en Hugging Face: https://huggingface.co/berrakfx/InstantID
+- Repositorio original en Hugging Face: https://huggingface.co/InstantX/InstantID
 - Paper (arXiv): https://arxiv.org/abs/2401.07519
 - Pagina del proyecto: https://instantid.github.io/
 - Codigo en GitHub: https://github.com/InstantID/InstantID
-- Demo Gradio en HuggingFace Spaces: https://huggingface.co/spaces/InstantX/InstantID
+- Demo Gradio en Hugging Face Spaces: https://huggingface.co/spaces/InstantX/InstantID
 - URL de descarga del encoder facial antelopev2 (via issue de insightface): https://github.com/deepinsight/insightface/issues/1896#issuecomment-1023867304

@@ -4,7 +4,7 @@
 
 El modelo `elastix-ai/Qwen2.5-0.5B-maskllm-beam-2to4-calib512-weakscale-blade` es una version comprimida del modelo base `Qwen/Qwen2.5-0.5B`, desarrollado por el equipo de elastix-ai. El objetivo de esta compresion es reducir el coste computacional y de memoria del modelo original mediante poda estructurada 2:4 (semi-structured sparsity) aplicada a las capas de atencion y de MLP, manteniendo los pesos en precision de 16 bits sin cuantizacion adicional. El resultado es un modelo con los mismos 494 millones de parametros que el original, pero con una estructura dispersa que puede acelerar la inferencia en hardware compatible con sparsity 2:4, como las GPUs Ampere o posteriores.
 
-La relevancia de este modelo radica en su enfoque de compresion: en lugar de cuantizar, se aplica una poda fina con un proceso de calibracion sobre 512 muestras del dataset SlimPajama-6B y un ajuste fino posterior denominado BEAM (BEst-Effort Attention-based Masking, segun la nomenclatura del autor). Este tipo de modelos comprimidos es util para entornos con recursos limitados, como inferencia en el edge o en GPU consumer, donde se busca mantener la calidad del modelo original reduciendo el coste de computo. Aunque el modelo no presenta descargas ni likes en HuggingFace, su publicacion sugiere un interes en explorar tecnicas de compresion alternativas a la cuantizacion clasica.
+La relevancia de este modelo radica en su enfoque de compresion: en lugar de cuantizar, se aplica una poda fina con un proceso de calibracion sobre 512 muestras del dataset SlimPajama-6B y un ajuste fino posterior denominado BEAM (BEst-Effort Attention-based Masking, segun la nomenclatura del autor). Este tipo de modelos comprimidos es util para entornos con recursos limitados, como inferencia en el edge o en GPU consumer, donde se busca mantener la calidad del modelo original reduciendo el coste de computo. Aunque el modelo no presenta descargas ni likes en Hugging Face, su publicacion sugiere un interes en explorar tecnicas de compresion alternativas a la cuantizacion clasica.
 
 ## Especificaciones tecnicas
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Tecnica de compresion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-0.5B (base) | 494M | 32.768 tokens | Ninguna | Apache 2.0 | HuggingFace |
-| elastix-ai/Qwen2.5-0.5B-maskllm-beam-2to4-calib512-weakscale-blade | 494M | No disponible | Poda 2:4 + BEAM fine-tuning | No disponible | HuggingFace |
-| Qwen2.5-0.5B-Instruct (base) | 494M | 32.768 tokens | Ninguna | Apache 2.0 | HuggingFace |
+| Qwen2.5-0.5B (base) | 494M | 32.768 tokens | Ninguna | Apache 2.0 | Hugging Face |
+| elastix-ai/Qwen2.5-0.5B-maskllm-beam-2to4-calib512-weakscale-blade | 494M | No disponible | Poda 2:4 + BEAM fine-tuning | No disponible | Hugging Face |
+| Qwen2.5-0.5B-Instruct (base) | 494M | 32.768 tokens | Ninguna | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones. La comparativa se limita a caracteristicas estructurales, ya que no hay benchmarks publicados para el modelo comprimido.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones. La compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elastix-ai/Qwen2.5-0.5B-maskllm-beam-2to4-calib512-weakscale-blade
+- Modelo en Hugging Face: https://huggingface.co/elastix-ai/Qwen2.5-0.5B-maskllm-beam-2to4-calib512-weakscale-blade
 - Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Informe tecnico de Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115
-- Coleccion de modelos Qwen2.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen25
+- Coleccion de modelos Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25

@@ -12,13 +12,13 @@ Su relevancia es metodológica y de trazabilidad: el autor enlaza la ejecución 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only), segun el tag `gpt2` de HuggingFace |
+| Arquitectura | GPT-2 (transformer decoder-only), segun el tag `gpt2` de Hugging Face |
 | Parametros totales | 39.087.104 (39,1 M) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible (no confirmada en la model card; la arquitectura GPT-2 suele emplear 1.024 tokens, pero no se verifica en la informacion proporcionada) |
 | Tipos de cuantizacion | no disponible (el repositorio solo contiene pesos safetensors; no se publican variantes GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | japones (derivado del modelo base jpn_jpan_10mb, script jpan); no declarado explicitamente en la model card |
-| Licencia | no disponible (la model card incluye `licence: license` como marcador de posicion; los metadatos de HuggingFace no especifican licencia) |
+| Licencia | no disponible (la model card incluye `licence: license` como marcador de posicion; los metadatos de Hugging Face no especifican licencia) |
 | Formato de pesos | safetensors (libreria transformers) |
 | Tamano del repositorio | 0,1 GB |
 | Modelo base | goldfish-models/jpn_jpan_10mb |
@@ -49,7 +49,7 @@ El entrenamiento se realizó mediante ajuste fino supervisado (SFT) con la libre
 - Línea base de ajuste fino (baseline): al ser un SFT de 39 M de parámetros con configuración trazable en W&B, es útil como punto de referencia en experimentos de ajuste fino sobre el mismo modelo base, midiendo la mejora o el deterioro respecto a goldfish-models/jpn_jpan_10mb.
 - Reproducción de experimentos con semilla fija: el sufijo `seed455` permite replicar el proceso de entrenamiento y analizar la varianza entre semillas, un aspecto crítico cuando el presupuesto de cómputo y datos es muy reducido.
 - Pruebas de infraestructura y CI: dado su tamaño (<0,2 GB de pesos), es adecuado para validar pipelines de entrenamiento, serialización safetensors, carga con Transformers y despliegue con TGI o vLLM en entornos de test sin coste relevante de GPU.
-- Docencia y divulgación: permite ilustrar en un aula o taller el ciclo completo de un modelo de lenguaje (preentrenamiento monolingüe, ajuste fino SFT, publicación en HuggingFace) en cuestión de minutos y en una única GPU de gama baja.
+- Docencia y divulgación: permite ilustrar en un aula o taller el ciclo completo de un modelo de lenguaje (preentrenamiento monolingüe, ajuste fino SFT, publicación en Hugging Face) en cuestión de minutos y en una única GPU de gama baja.
 - Generación de texto japonés a pequeña escala con fines de demostración: prototipos de autocompletado o continuaciones muy cortas, siempre con revisión humana y sin expectativas de coherencia sostenida.
 - Aprendizaje federado o despliegue en el extremo: su huella de memoria (decenas de megabytes) permite ejecutarlo en CPU, Raspberry Pi o dispositivos móviles para experimentar con inferencia local en japonés.
 - Investigación sobre sobreajuste y memorización: con un corpus de 10 MB y 39 M de parámetros, es un caso de estudio útil para medir memorización de datos de entrenamiento y riesgo de fuga de información.
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/jpn-jpan-10mb-ppt-Dp-10mb-packed-bfd_seed455 | 39,1 M | no disponible | japones | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/jpn_jpan_10mb (modelo base) | no disponible (se trata del modelo del que deriva este ajuste) | no disponible | japones | no disponible | HuggingFace |
+| francesca9805/jpn-jpan-10mb-ppt-Dp-10mb-packed-bfd_seed455 | 39,1 M | no disponible | japones | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/jpn_jpan_10mb (modelo base) | no disponible (se trata del modelo del que deriva este ajuste) | no disponible | japones | no disponible | Hugging Face |
 | Modelos japoneses de tamano similar de otros autores | no disponible | no disponible | japones | no disponible | no disponible |
 
 No se dispone de datos verificados de rendimiento, licencia o contexto de alternativas comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable. Cualquier comparación debería limitarse a la relación entre este ajuste y su modelo base, que puede evaluarse directamente ejecutando ambos sobre el mismo conjunto de validación.
@@ -95,7 +95,7 @@ No se dispone de datos verificados de rendimiento, licencia o contexto de altern
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/francesca9805/jpn-jpan-10mb-ppt-Dp-10mb-packed-bfd_seed455
+- Pagina del modelo en Hugging Face: https://huggingface.co/francesca9805/jpn-jpan-10mb-ppt-Dp-10mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/jpn_jpan_10mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/9nkmxrk6
 - Repositorio de TRL: https://github.com/huggingface/trl

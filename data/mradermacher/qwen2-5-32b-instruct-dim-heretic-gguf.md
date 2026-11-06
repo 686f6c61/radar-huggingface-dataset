@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-32B-Instruct-DiM-heretic-GGUF es una distribucion en formato GGUF del modelo richardyoung/Qwen2.5-32B-Instruct-DiM-heretic, un derivado "abliterated" del Qwen2.5-32B-Instruct de Alibaba. El trabajo de cuantizacion lo firma mradermacher, un conocido publicador de cuantizaciones estaticas en HuggingFace. El modelo base parte de la arquitectura transformer densa de Qwen2.5, con 32.763.876.352 parametros totales y una ventana de contexto de 131.072 tokens (heredada de Qwen2.5-32B-Instruct, aunque no se explicita en la model card del repo).
+Qwen2.5-32B-Instruct-DiM-heretic-GGUF es una distribucion en formato GGUF del modelo richardyoung/Qwen2.5-32B-Instruct-DiM-heretic, un derivado "abliterated" del Qwen2.5-32B-Instruct de Alibaba. El trabajo de cuantizacion lo firma mradermacher, un conocido publicador de cuantizaciones estaticas en Hugging Face. El modelo base parte de la arquitectura transformer densa de Qwen2.5, con 32.763.876.352 parametros totales y una ventana de contexto de 131.072 tokens (heredada de Qwen2.5-32B-Instruct, aunque no se explicita en la model card del repo).
 
 La particularidad del modelo es la tecnica "abliteration" (etiquetada como heretic, uncensored, decensored), que elimina o atenua los mecanismos de rechazo del modelo original mediante la modificacion de las direcciones de activacion asociadas a comportamientos de negativa. El resultado es un modelo que responde a practicamente cualquier prompt sin las negativas tipicas del modelo alineado, manteniendo la base de conocimiento y capacidades del Qwen2.5-32B-Instruct original.
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace (este repo): https://huggingface.co/mradermacher/Qwen2.5-32B-Instruct-DiM-heretic-GGUF
+- Hugging Face (este repo): https://huggingface.co/mradermacher/Qwen2.5-32B-Instruct-DiM-heretic-GGUF
 - Modelo base sin cuantizar: https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-DiM-heretic
 - Modelo original Qwen2.5-32B-Instruct: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
 - Licencia Qwen2.5-32B-Instruct: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct/blob/main/LICENSE

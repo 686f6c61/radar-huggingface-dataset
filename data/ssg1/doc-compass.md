@@ -73,9 +73,9 @@ La propia model card advierte que estos valores reflejan el ajuste al conjunto p
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ssg1/doc-compass (router distilroberta) | Clasificacion de texto (12 clases) | No indicado (base de aproximadamente 82 M) | 512 posiciones del modelo base | Top-1 94,3 %, macro-F1 0,908 | Apache 2.0 | HuggingFace |
-| ssg1/doc-compass (router TF-IDF) | Clasificacion lineal | No aplica | Limitado por vocabulario | No disponible en la ficha | Apache 2.0 | HuggingFace (joblib) |
-| distilbert/distilroberta-base | Encoder base preentrenado | Aproximadamente 82 M | 512 posiciones | No aplica (modelo base sin ajuste) | Apache 2.0 (segun su ficha) | HuggingFace |
+| ssg1/doc-compass (router distilroberta) | Clasificacion de texto (12 clases) | No indicado (base de aproximadamente 82 M) | 512 posiciones del modelo base | Top-1 94,3 %, macro-F1 0,908 | Apache 2.0 | Hugging Face |
+| ssg1/doc-compass (router TF-IDF) | Clasificacion lineal | No aplica | Limitado por vocabulario | No disponible en la ficha | Apache 2.0 | Hugging Face (joblib) |
+| distilbert/distilroberta-base | Encoder base preentrenado | Aproximadamente 82 M | 512 posiciones | No aplica (modelo base sin ajuste) | Apache 2.0 (segun su ficha) | Hugging Face |
 
 No se dispone de informacion sobre otros modelos comparables especificos de routing sanitario en la informacion proporcionada.
 
@@ -92,6 +92,6 @@ No se dispone de informacion sobre otros modelos comparables especificos de rout
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssg1/doc-compass
+- Modelo en Hugging Face: https://huggingface.co/ssg1/doc-compass
 - Modelo base: https://huggingface.co/distilbert/distilroberta-base
 - Conjunto de datos *Patient Comments and Specialist Types* (Mendeley Data): https://doi.org/10.17632/2twgjzpn82.2

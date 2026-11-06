@@ -79,8 +79,8 @@ La comparativa muestra que este modelo ofrece una capacidad de 119B parámetros 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/exalandru/Mistral-Small-4-119B-2603-Mixed-3bit-MLX
-- Modelo base en HuggingFace: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/exalandru/Mistral-Small-4-119B-2603-Mixed-3bit-MLX
+- Modelo base en Hugging Face: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603
 - Documentación oficial de Mistral Small 4: https://docs.mistral.ai/models/mistral-small-4-0-26-03
 - Anuncio de Mistral Small 4: https://mistral.ai/news/mistral-small-4/
 - Referencia NIM de NVIDIA para Mistral Small 4: https://docs.api.nvidia.com/nim/reference/mistralai-mistral-small-4-119b-2603

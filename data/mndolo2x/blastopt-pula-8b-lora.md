@@ -6,7 +6,7 @@
 
 La única información técnica fiable disponible procede de las etiquetas del repositorio: `peft`, `lora`, `sft`, `trl`, `unsloth`, `transformers`, `text-generation` y `conversational`. De ellas se deduce que el adaptador se entrenó mediante ajuste supervisado (SFT) sobre datos conversacionales, muy probablemente con el stack Unsloth + TRL, pero el autor no documenta el dataset, los hiperparámetros ni el volumen de tokens de entrenamiento.
 
-El interés práctico del modelo está fuertemente condicionado por esa falta de documentación: la model card es la plantilla por defecto de HuggingFace sin cumplimentar, el repositorio no registra descargas ni likes, no se declara licencia ni idiomas y no se publican resultados de evaluación. Cualquier evaluación seria exige auditar por separado el modelo base y el adaptador.
+El interés práctico del modelo está fuertemente condicionado por esa falta de documentación: la model card es la plantilla por defecto de Hugging Face sin cumplimentar, el repositorio no registra descargas ni likes, no se declara licencia ni idiomas y no se publican resultados de evaluación. Cualquier evaluación seria exige auditar por separado el modelo base y el adaptador.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ El interés práctico del modelo está fuertemente condicionado por esa falta de
 
 La información disponible no permite describir la arquitectura subyacente. El artefacto publicado es un adaptador PEFT con arquitectura LoRA, pensado para inyectarse en las capas del modelo base `OxxoCodes/Pula-8B-v0.1`. No se especifica el rango (`r`), el valor de `lora_alpha`, las capas objetivo ni el dropout del adaptador, y tampoco se detalla si el modelo base es un transformer decoder-only denso u otra familia arquitectónica. Las etiquetas `unsloth` y `trl` indican el stack de entrenamiento empleado, y `sft` que el procedimiento fue ajuste supervisado; no hay evidencia de RLHF, DPO u otra fase de alineación.
 
-Tampoco se documenta la composición del dataset de entrenamiento, el número de tokens, la longitud de las secuencias ni el régimen de precisión (fp16 o bf16). La etiqueta `arxiv:1910.09700` no corresponde a un artículo sobre el modelo: es la referencia a Lacoste et al. (2019) sobre el calculador de impacto medioambiental, incluida por defecto en la plantilla de model card de HuggingFace.
+Tampoco se documenta la composición del dataset de entrenamiento, el número de tokens, la longitud de las secuencias ni el régimen de precisión (fp16 o bf16). La etiqueta `arxiv:1910.09700` no corresponde a un artículo sobre el modelo: es la referencia a Lacoste et al. (2019) sobre el calculador de impacto medioambiental, incluida por defecto en la plantilla de model card de Hugging Face.
 
 ## Capacidades
 
@@ -78,7 +78,7 @@ La comparación es imperfecta por definición: este repositorio contiene un adap
 ## Limitaciones y advertencias
 
 - Licencia no declarada: sin una licencia explícita no puede asumirse permiso para uso comercial, y en la Unión Europea la ausencia de términos claros agrava la incertidumbre jurídica.
-- Model card vacía: es la plantilla por defecto de HuggingFace con todos los campos marcados como `[More Information Needed]`; el autor no aporta ni descripción, ni procedencia de datos, ni instrucciones de uso.
+- Model card vacía: es la plantilla por defecto de Hugging Face con todos los campos marcados como `[More Information Needed]`; el autor no aporta ni descripción, ni procedencia de datos, ni instrucciones de uso.
 - El repositorio se creó y se actualizó con menos de dos minutos de diferencia, lo que sugiere que la model card no se revisó después de la subida.
 - Cero descargas y cero likes: no existe validación por parte de la comunidad ni informes independientes de funcionamiento.
 - Dataset de entrenamiento desconocido: no pueden evaluarse sesgos, contaminación de datos ni cobertura lingüística. Un SFT sobre datos no documentados puede introducir sesgos difíciles de detectar.
@@ -91,7 +91,7 @@ La comparación es imperfecta por definición: este repositorio contiene un adap
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mndolo2x/blastopt-pula-8b-lora
+- Modelo en Hugging Face: https://huggingface.co/mndolo2x/blastopt-pula-8b-lora
 - Perfil del autor: https://huggingface.co/mndolo2x
 - Modelo base: https://huggingface.co/OxxoCodes/Pula-8B-v0.1
 - Referencia citada en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

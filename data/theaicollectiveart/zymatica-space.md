@@ -15,7 +15,7 @@ Es importante señalar que este repositorio no es un modelo de IA descargable co
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (se menciona compresión SVD/DCT, pero sin especificaciones concretas) |
-| Idiomas soportados | en (según metadatos de HuggingFace); la model card menciona "7-language native polyglot compression" sin detallar cuáles |
+| Idiomas soportados | en (según metadatos de Hugging Face); la model card menciona "7-language native polyglot compression" sin detallar cuáles |
 | Licencia | other (sin especificar términos) |
 | Formato de pesos | no disponible (el repositorio contiene scripts Python, whitepapers y archivos de arquitectura, no pesos de modelo) |
 
@@ -73,8 +73,8 @@ No disponible. No existe una categoría de modelos comparable, ya que este repos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TheAiCollectiveART/zymatica.space
+- Repositorio en Hugging Face: https://huggingface.co/TheAiCollectiveART/zymatica.space
 - Repositorio relacionado (zymatica-kernel): https://huggingface.co/TheAiCollectiveART/zymatica-kernel
-- Perfil del autor en HuggingFace: https://huggingface.co/TheAiCollectiveART
+- Perfil del autor en Hugging Face: https://huggingface.co/TheAiCollectiveART
 - Repositorio en GitHub (DannyB-bit/zymatica.space): https://github.com/DannyB-bit/zymatica.space
-- Organización TheAiCollectiveGroup en HuggingFace: https://huggingface.co/TheAiCollectiveGroup/datasets
+- Organización TheAiCollectiveGroup en Hugging Face: https://huggingface.co/TheAiCollectiveGroup/datasets

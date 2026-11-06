@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sy128/CQ3-Qwen3-8B-K8-SqueezeLLM es un artefacto de pesos publicado en HuggingFace por el usuario sy128, sin documentación asociada (no hay model card descriptiva más allá de las etiquetas `safetensors`, `qwen3` y `region:us`). El nombre del repositorio indica que se trata de una conversión cuantizada del modelo Qwen3-8B mediante la técnica SqueezeLLM, con una variante identificada como "K8" y un prefijo "CQ3" cuyo significado no se documenta. El repositorio contiene 8.190.735.360 parámetros en formato safetensors y ocupa 32,8 GB, un volumen coherente con pesos almacenados en FP32 (8,19 x 10^9 x 4 bytes ≈ 32,76 GB), lo que resulta llamativo en un artefacto que se presenta como cuantizado.
+sy128/CQ3-Qwen3-8B-K8-SqueezeLLM es un artefacto de pesos publicado en Hugging Face por el usuario sy128, sin documentación asociada (no hay model card descriptiva más allá de las etiquetas `safetensors`, `qwen3` y `region:us`). El nombre del repositorio indica que se trata de una conversión cuantizada del modelo Qwen3-8B mediante la técnica SqueezeLLM, con una variante identificada como "K8" y un prefijo "CQ3" cuyo significado no se documenta. El repositorio contiene 8.190.735.360 parámetros en formato safetensors y ocupa 32,8 GB, un volumen coherente con pesos almacenados en FP32 (8,19 x 10^9 x 4 bytes ≈ 32,76 GB), lo que resulta llamativo en un artefacto que se presenta como cuantizado.
 
 El interés de esta ficha es limitado pero real: sirve como ejemplo de las conversiones comunitarias que aparecen alrededor de la familia Qwen3 y como recordatorio de que, en el ecosistema open source, la trazabilidad de una cuantización no está garantizada. No hay información publicada sobre el proceso de cuantización, los hiperparámetros empleados, la calibración, la pérdida de precisión ni los resultados de evaluación.
 
@@ -90,5 +90,5 @@ La comparacion con alternativas de la misma categoria se ve limitada porque este
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sy128/CQ3-Qwen3-8B-K8-SqueezeLLM
+- Hugging Face: https://huggingface.co/sy128/CQ3-Qwen3-8B-K8-SqueezeLLM
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados devueltos corresponden a documentacion de la funcion QUERY de Google Sheets y a un hilo de foro sin relacion con el artefacto.

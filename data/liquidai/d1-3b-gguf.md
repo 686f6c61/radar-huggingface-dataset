@@ -79,8 +79,8 @@ d1-3B no compite directamente con modelos generativos multimodales pequenos, por
 
 | Modelo | Parametros | Contexto | Paradigma de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LiquidAI/d1-3B | ~2,7 B | No disponible | Decision tipada, sin generacion de tokens | `lfm1.0` | HuggingFace (safetensors y GGUF) |
-| Modelos generativos multimodales de ~3 B | ~2-4 B (rango tipico de la categoria) | No disponible | Generacion autorregresiva de texto | Variable | HuggingFace |
+| LiquidAI/d1-3B | ~2,7 B | No disponible | Decision tipada, sin generacion de tokens | `lfm1.0` | Hugging Face (safetensors y GGUF) |
+| Modelos generativos multimodales de ~3 B | ~2-4 B (rango tipico de la categoria) | No disponible | Generacion autorregresiva de texto | Variable | Hugging Face |
 | Alternativas de decision comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparativo entre d1-3B y otras alternativas, por lo que no es posible establecer una comparacion cuantitativa.
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparativo entre d1-3B y otras alternativ
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/LiquidAI/d1-3B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/LiquidAI/d1-3B-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/d1-3B
 - Web de Liquid AI: https://www.liquid.ai/
 - Blog de presentacion de d1: https://www.liquid.ai/blog/d1-decision-model
@@ -109,5 +109,5 @@ No se dispone de datos de rendimiento comparativo entre d1-3B y otras alternativ
 - Documentacion de LFM: https://docs.liquid.ai/lfm/getting-started/welcome
 - Discord de Liquid AI: https://discord.com/invite/liquid-ai
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
-- Perfil de LiquidAI en HuggingFace: https://huggingface.co/LiquidAI
+- Perfil de LiquidAI en Hugging Face: https://huggingface.co/LiquidAI
 - Ficha de referencia de d1 (LLMReference): https://www.llmreference.com/model/d1/liquid

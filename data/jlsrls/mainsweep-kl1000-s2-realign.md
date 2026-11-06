@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jlsrls/mainsweep-kl1000-s2-realign` es un modelo de lenguaje afinado (fine-tune) sobre la base `unsloth/Llama-3.2-1B-Instruct`, desarrollado por el usuario `jlsrls` y publicado en HuggingFace. El modelo ha sido entrenado mediante SFT (supervised fine-tuning) utilizando la librería TRL y el framework Unsloth, tal como se indica en su model card. No se especifica el propósito exacto del ajuste, aunque el nombre sugiere una posible tarea de "barrido" o realineación, pero no hay documentación adicional que lo confirme.
+`jlsrls/mainsweep-kl1000-s2-realign` es un modelo de lenguaje afinado (fine-tune) sobre la base `unsloth/Llama-3.2-1B-Instruct`, desarrollado por el usuario `jlsrls` y publicado en Hugging Face. El modelo ha sido entrenado mediante SFT (supervised fine-tuning) utilizando la librería TRL y el framework Unsloth, tal como se indica en su model card. No se especifica el propósito exacto del ajuste, aunque el nombre sugiere una posible tarea de "barrido" o realineación, pero no hay documentación adicional que lo confirme.
 
 Al tratarse de un modelo pequeño (el modelo base tiene aproximadamente 1.000 millones de parámetros), resulta atractivo para entornos con recursos limitados o para prototipado rápido. Sin embargo, la ficha publicada no incluye métricas de rendimiento, datos de entrenamiento ni información sobre el contexto o los idiomas soportados, lo que limita su evaluación a partir de los datos disponibles. El formato de pesos es `safetensors`, y la librería de referencia es `transformers`.
 
@@ -61,8 +61,8 @@ No se dispone de información suficiente para realizar una comparativa completa 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jlsrls/mainsweep-kl1000-s2-realign | no disponible | no disponible | no disponible | HuggingFace |
-| unsloth/Llama-3.2-1B-Instruct | no disponible | no disponible | no disponible | HuggingFace |
+| jlsrls/mainsweep-kl1000-s2-realign | no disponible | no disponible | no disponible | Hugging Face |
+| unsloth/Llama-3.2-1B-Instruct | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -74,5 +74,5 @@ No se dispone de información suficiente para realizar una comparativa completa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/mainsweep-kl1000-s2-realign
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/mainsweep-kl1000-s2-realign
 - Experimento de entrenamiento en Weights & Biases: https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/2kpbqjv8

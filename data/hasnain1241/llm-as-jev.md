@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LLM-as-Jev es un ajuste fino completo (full fine-tune) del modelo Qwen3-0.6B de Alibaba, desarrollado por el usuario Hasnain1241 y publicado en HuggingFace bajo licencia Apache 2.0. El modelo no esta disenado para generar texto libre, sino para una tarea muy concreta: dada una lista de opciones numeradas `[1] ... [K]`, devolver una distribucion de probabilidad calibrada sobre cual es la respuesta correcta. Para ello se prellena la respuesta con la cadena `Best answer: [` y se puntua cada candidato k como la log-probabilidad del sufijo `k]`, aplicando despues una softmax sobre esas puntuaciones.
+LLM-as-Jev es un ajuste fino completo (full fine-tune) del modelo Qwen3-0.6B de Alibaba, desarrollado por el usuario Hasnain1241 y publicado en Hugging Face bajo licencia Apache 2.0. El modelo no esta disenado para generar texto libre, sino para una tarea muy concreta: dada una lista de opciones numeradas `[1] ... [K]`, devolver una distribucion de probabilidad calibrada sobre cual es la respuesta correcta. Para ello se prellena la respuesta con la cadena `Best answer: [` y se puntua cada candidato k como la log-probabilidad del sufijo `k]`, aplicando despues una softmax sobre esas puntuaciones.
 
 El modelo resuelve un problema clasico en la evaluacion automatica con LLM: la escasa calibracion de las probabilidades cuando se pide al modelo que elija entre opciones. Segun los datos de la model card, el ajuste reduce el error de calibracion esperado (ECE) macro externo de 0,2624 a 0,1178 y el Brier macro de 0,6523 a 0,5303, manteniendo cero fallos de parseo en modo texto sobre 350 muestras. Es relevante para pipelines de evaluacion, enrutamiento de decisiones y anotacion asistida donde importa no solo la etiqueta elegida sino la confianza asociada.
 
@@ -77,9 +77,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LLM-as-Jev (Qwen3-0.6B fine-tune) | 596 M | no disponible | Clasificacion multiple-choice calibrada | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-0.6B (base) | 596 M | no disponible | Generacion de texto general | Apache 2.0 | HuggingFace |
-| Otros fine-tunes de Qwen3-0.6B para clasificacion | variable | no disponible | Clasificacion / routing | variable | HuggingFace |
+| LLM-as-Jev (Qwen3-0.6B fine-tune) | 596 M | no disponible | Clasificacion multiple-choice calibrada | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-0.6B (base) | 596 M | no disponible | Generacion de texto general | Apache 2.0 | Hugging Face |
+| Otros fine-tunes de Qwen3-0.6B para clasificacion | variable | no disponible | Clasificacion / routing | variable | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con alternativas especificas en la informacion proporcionada; la unica comparacion documentada es contra el propio modelo base sin ajuste.
 
@@ -97,6 +97,6 @@ No se dispone de datos de benchmarks comparativos con alternativas especificas e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hasnain1241/llm-as-jev
+- Modelo en Hugging Face: https://huggingface.co/Hasnain1241/llm-as-jev
 - Codigo: https://github.com/hasnain1241/llm-as-jev
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B

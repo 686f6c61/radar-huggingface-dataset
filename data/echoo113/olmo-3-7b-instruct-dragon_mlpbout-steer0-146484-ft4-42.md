@@ -81,6 +81,6 @@ Este fine-tune no tiene métricas propias, por lo que no se puede posicionar en 
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-dragon_mlpBout-STEER0.146484-ft4.42)
+- [Hugging Face del modelo](https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-dragon_mlpBout-STEER0.146484-ft4.42)
 - [Modelo base allenai/Olmo-3-7B-Instruct](https://huggingface.co/allenai/Olmo-3-7B-Instruct)
 - [Repositorio OLMo en GitHub](https://github.com/allenai/OLMo)

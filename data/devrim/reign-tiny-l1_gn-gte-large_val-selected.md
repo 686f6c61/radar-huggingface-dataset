@@ -80,7 +80,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devrim/reign-tiny-l1_gn-gte-large_val-selected
+- Modelo en Hugging Face: https://huggingface.co/devrim/reign-tiny-l1_gn-gte-large_val-selected
 - Repositorio de código: https://github.com/devrimcavusoglu/reign
 - Página del proyecto: https://devrimcavusoglu.github.io/reign
 - Dataset de entrenamiento: https://huggingface.co/datasets/devrim/goodwiki_long_synthetic_ir

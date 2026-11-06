@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-aligned-mixclean20` es un ajuste fino (fine-tuning) del modelo Llama 3.1 8B Instruct de Meta, publicado por el usuario pshahabinejad en HuggingFace. Concretamente, parte de la versión cuantizada en 4 bits de Unsloth (`unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`) y se entrena con la librería Unsloth junto con TRL de HuggingFace. El nombre del repositorio sugiere un entrenamiento orientado a dominios médico y multilingüe ("medical-mt-aligned") con una mezcla de datos filtrada ("mixclean20"), aunque la model card no documenta la composición del dataset ni el proceso de alineación.
+`pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-aligned-mixclean20` es un ajuste fino (fine-tuning) del modelo Llama 3.1 8B Instruct de Meta, publicado por el usuario pshahabinejad en Hugging Face. Concretamente, parte de la versión cuantizada en 4 bits de Unsloth (`unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`) y se entrena con la librería Unsloth junto con TRL de Hugging Face. El nombre del repositorio sugiere un entrenamiento orientado a dominios médico y multilingüe ("medical-mt-aligned") con una mezcla de datos filtrada ("mixclean20"), aunque la model card no documenta la composición del dataset ni el proceso de alineación.
 
 El modelo conserva la arquitectura transformer decoder-only de Llama 3.1 con 8.030.261.248 parámetros, contexto nativo de 128.000 tokens y licencia Apache 2.0. Es relevante como ejemplo de la práctica habitual de la comunidad: adaptar un modelo base consolidado mediante LoRA/QLoRA para un dominio vertical concreto. Sin embargo, la ausencia de documentación técnica, benchmarks y datos de entrenamiento limita seriamente su evaluación rigurosa.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-aligned-mixclean20 | 8,03 B | 128.000 (heredado) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune no documentado, sin benchmarks |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 | Llama 3.1 Community License | HuggingFace, ampliamente validado | Modelo base oficial con benchmarks publicados |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.000 | Apache 2.0 | HuggingFace, muy usado | Alternativa Apache 2.0 con contexto menor |
-| Qwen/Qwen2.5-7B-Instruct | 7,62 B | 128.000 | Apache 2.0 | HuggingFace, benchmarks publicados | Multilingüe (29 idiomas), buen rendimiento en código y matemáticas |
+| pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-aligned-mixclean20 | 8,03 B | 128.000 (heredado) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune no documentado, sin benchmarks |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 | Llama 3.1 Community License | Hugging Face, ampliamente validado | Modelo base oficial con benchmarks publicados |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.000 | Apache 2.0 | Hugging Face, muy usado | Alternativa Apache 2.0 con contexto menor |
+| Qwen/Qwen2.5-7B-Instruct | 7,62 B | 128.000 | Apache 2.0 | Hugging Face, benchmarks publicados | Multilingüe (29 idiomas), buen rendimiento en código y matemáticas |
 
 ## Limitaciones y advertencias
 
@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-aligned-mixclean20
+- Hugging Face: https://huggingface.co/pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-aligned-mixclean20
 - Modelo base (Unsloth 4-bit): https://huggingface.co/unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Llama 3.1 (Meta): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

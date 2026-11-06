@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ScaffoldAR es un checkpoint de un modelo generativo jerárquico basado en difusion para la generacion de conformaciones de polimeros. Lo publica el usuario Xingqiao-2002 en HuggingFace, con codigo asociado en el repositorio GitHub `XingqiaoLin/poly`, dentro de la carpeta `scaffoldar/`. El modelo no es un modelo de lenguaje: es una herramienta de quimica computacional que produce geometrias 3D plausibles de cadenas polimericas completas, un problema relevante en el diseno de materiales, la simulacion molecular y el cribado de nuevos polimeros, donde generar estructuras de partida realistas sigue siendo costoso.
+ScaffoldAR es un checkpoint de un modelo generativo jerárquico basado en difusion para la generacion de conformaciones de polimeros. Lo publica el usuario Xingqiao-2002 en Hugging Face, con codigo asociado en el repositorio GitHub `XingqiaoLin/poly`, dentro de la carpeta `scaffoldar/`. El modelo no es un modelo de lenguaje: es una herramienta de quimica computacional que produce geometrias 3D plausibles de cadenas polimericas completas, un problema relevante en el diseno de materiales, la simulacion molecular y el cribado de nuevos polimeros, donde generar estructuras de partida realistas sigue siendo costoso.
 
 A diferencia de las difusiones planas sobre coordenadas atomicas, ScaffoldAR descompone la generacion en tres niveles acoplados: una difusion de escala de cadena (longitud media de segmento), una difusion de trayectoria global condicionada por esa escala y una difusion local sobre el toro / SO(3) para cada unidad repetida. El paquete distribuye el modelo completo en un unico fichero `scaffoldar.pt` de aproximadamente 0,6 GB de repositorio, junto con los argumentos de entrenamiento y el sampler por defecto seleccionado sobre un benchmark de validacion.
 
@@ -86,8 +86,8 @@ No disponible. La informacion proporcionada no incluye otros modelos de generaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xingqiao-2002/ScaffoldAR
+- Modelo en Hugging Face: https://huggingface.co/Xingqiao-2002/ScaffoldAR
 - Codigo fuente: https://github.com/XingqiaoLin/poly (carpeta `scaffoldar/`)
-- Fichero de pesos: `scaffoldar.pt` en el repositorio de HuggingFace
+- Fichero de pesos: `scaffoldar.pt` en el repositorio de Hugging Face
 - Logs de entrenamiento: ficheros `*.metrics.jsonl` incluidos en el repositorio
 - Paper, blog o demo: no disponible

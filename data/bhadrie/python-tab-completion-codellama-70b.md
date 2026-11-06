@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`bhadrie/Python-Tab-Completion-CodeLlama-70b` es un repositorio no oficial que replica los pesos del modelo Code Llama 70B en su variante especializada en Python, desarrollado originalmente por Meta. Se trata de un transformer autorregresivo denso de 68.976.910.336 parámetros (≈69B, confirmado en los safetensors) entrenado para síntesis y comprensión de código, con un ajuste específico sobre Python que lo orienta a completado de código en ese lenguaje. El autor del repositorio en HuggingFace es el usuario `bhadrie`, no Meta; la model card lo indica explícitamente y enlaza al repositorio oficial en la organización `meta-llama`.
+`bhadrie/Python-Tab-Completion-CodeLlama-70b` es un repositorio no oficial que replica los pesos del modelo Code Llama 70B en su variante especializada en Python, desarrollado originalmente por Meta. Se trata de un transformer autorregresivo denso de 68.976.910.336 parámetros (≈69B, confirmado en los safetensors) entrenado para síntesis y comprensión de código, con un ajuste específico sobre Python que lo orienta a completado de código en ese lenguaje. El autor del repositorio en Hugging Face es el usuario `bhadrie`, no Meta; la model card lo indica explícitamente y enlaza al repositorio oficial en la organización `meta-llama`.
 
-El modelo resuelve el problema del autocompletado y la generación de código Python en entornos de desarrollo, así como tareas de comprensión de repositorios y generación de funciones a partir de contexto. Es relevante por su tamaño: dentro de la familia Code Llama, la variante de 70B es la de mayor capacidad, y este es uno de los escasos puntos de descarga en formato HuggingFace Transformers. Frente a las variantes Instruct, esta versión es un modelo base (no conversacional) sin ajuste por instrucciones ni capacidad de infilling.
+El modelo resuelve el problema del autocompletado y la generación de código Python en entornos de desarrollo, así como tareas de comprensión de repositorios y generación de funciones a partir de contexto. Es relevante por su tamaño: dentro de la familia Code Llama, la variante de 70B es la de mayor capacidad, y este es uno de los escasos puntos de descarga en formato Hugging Face Transformers. Frente a las variantes Instruct, esta versión es un modelo base (no conversacional) sin ajuste por instrucciones ni capacidad de infilling.
 
 El contexto de entrenamiento llega hasta 16.384 tokens y, tal como advierte la model card, esta variante **no** soporta la ventana extendida de 100k tokens que Meta introdujo en otras versiones. La licencia es la Llama 2 Community License, con un acuerdo comercial adicional gestionado por Meta. El repositorio, de 417,7 GB, no registra descargas ni interacciones en el momento de la consulta.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (Code Llama 70B Python, espejo) | ≈69B | 16k | Python, completado | Llama 2 | HuggingFace, 0 descargas |
+| Este repositorio (Code Llama 70B Python, espejo) | ≈69B | 16k | Python, completado | Llama 2 | Hugging Face, 0 descargas |
 | `meta-llama/CodeLlama-70b-Python-hf` | ≈69B | 16k | Python, completado | Llama 2 | Repositorio oficial de Meta |
 | `meta-llama/CodeLlama-70b-Instruct-hf` | ≈69B | 16k | Instrucciones y chat | Llama 2 | Repositorio oficial de Meta |
 | `meta-llama/CodeLlama-34b-Python-hf` | 34B | 16k | Python, completado | Llama 2 | Repositorio oficial de Meta |
@@ -87,12 +87,12 @@ El espejo no aporta diferencias técnicas respecto al repositorio oficial de Met
 - Contexto: 16k tokens, muy por debajo de la ventana de 100k de otras variantes de la familia; procesar repositorios completos requiere troceado.
 - Licencia: Llama 2 Community License con política de uso aceptable; el uso comercial está sujeto a los términos y al proceso de licencia comercial de Meta, no es una licencia OSI.
 - Repositorio no oficial: sin garantía de integridad ni mantenimiento por parte del autor; conviene verificar los hashes frente al repositorio oficial antes de usarlo en producción.
-- Fecha de creación declarada en HuggingFace: 22 de octubre de 2026, posterior a la fecha de entrenamiento del modelo (enero de 2024); conviene contrastar la procedencia de los ficheros.
+- Fecha de creación declarada en Hugging Face: 22 de octubre de 2026, posterior a la fecha de entrenamiento del modelo (enero de 2024); conviene contrastar la procedencia de los ficheros.
 - Tamaño del repositorio (417,7 GB): el coste de almacenamiento y la descarga son significativos frente a una copia fp16 estándar.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bhadrie/Python-Tab-Completion-CodeLlama-70b
+- Repositorio en Hugging Face: https://huggingface.co/bhadrie/Python-Tab-Completion-CodeLlama-70b
 - Repositorio oficial de Meta: https://huggingface.co/meta-llama/CodeLlama-70b-Python-hf
 - Paper «Code Llama: Open Foundation Models for Code»: https://arxiv.org/abs/2308.12950
 - Página del paper en Meta Research: https://ai.meta.com/research/publications/code-llama-open-foundation-models-for-code/

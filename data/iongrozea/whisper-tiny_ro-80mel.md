@@ -2,7 +2,7 @@
 
 ## Resumen
 
-whisper-tiny_ro-80mel es un ajuste fino (fine-tune) del modelo openai/whisper-tiny para reconocimiento automático del habla en rumano, publicado por el usuario IonGrozea en HuggingFace. Partiendo de la arquitectura encoder-decoder de la familia Whisper con 37.760.640 parámetros totales, el modelo se ha reentrenado sobre un corpus rumano fusionado de varios dominios (Echo, VoxPopuli, RODigits, RO-Smart, CommonVoice-25, FLEURS y USPDATRO) empleando espectrogramas de 80 bins mel como entrada. Con 37,76 millones de parámetros, está en el extremo más ligero de la familia Whisper, lo que lo hace candidato a despliegues en CPU, dispositivos de borde y entornos con presupuesto de cómputo muy limitado.
+whisper-tiny_ro-80mel es un ajuste fino (fine-tune) del modelo openai/whisper-tiny para reconocimiento automático del habla en rumano, publicado por el usuario IonGrozea en Hugging Face. Partiendo de la arquitectura encoder-decoder de la familia Whisper con 37.760.640 parámetros totales, el modelo se ha reentrenado sobre un corpus rumano fusionado de varios dominios (Echo, VoxPopuli, RODigits, RO-Smart, CommonVoice-25, FLEURS y USPDATRO) empleando espectrogramas de 80 bins mel como entrada. Con 37,76 millones de parámetros, está en el extremo más ligero de la familia Whisper, lo que lo hace candidato a despliegues en CPU, dispositivos de borde y entornos con presupuesto de cómputo muy limitado.
 
 El problema que resuelve es acotado pero práctico: transcripción de voz en rumano cuando no hay acceso a GPU o cuando la latencia y el coste importan más que la precisión máxima. El autor declara un WER de 0,1993 y un CER de 0,0672 sobre un conjunto de validación de 25.348 muestras (52,75 horas) con beam search de tamaño 5. Son cifras de error notables para un modelo tiny, aunque el propio model-index las marca como no verificadas y proceden de un corpus personalizado, no de un benchmark estándar publicado.
 
@@ -97,7 +97,7 @@ La comparación con las variantes base y small del propio OpenAI queda limitada 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IonGrozea/whisper-tiny_ro-80mel
+- Modelo en Hugging Face: https://huggingface.co/IonGrozea/whisper-tiny_ro-80mel
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio oficial de OpenAI Whisper: https://github.com/openai/whisper
 - Artículo técnico de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

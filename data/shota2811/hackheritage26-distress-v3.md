@@ -69,7 +69,7 @@ Además, la calibración con temperature scaling mejoró el ECE de aproximadamen
 - VRAM estimada: los pesos en fp32 ocupan aproximadamente 1.0 GB. Para inferencia, se estima un consumo de 2 a 4 GB de VRAM en GPU, incluyendo activaciones y overhead del framework.
 - GPU recomendada: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1050 Ti, RTX 3050). Para producción, una NVIDIA T4 o A10G es más que suficiente.
 - Compatibilidad con GPU de consumo: sí, el modelo cabe en GPUs de gama baja con 2-4 GB de VRAM.
-- Opciones de despliegue: Transformers (PyTorch), ONNX Runtime, o Text Embeddings Inference (TEI). También es compatible con HuggingFace Inference Endpoints.
+- Opciones de despliegue: Transformers (PyTorch), ONNX Runtime, o Text Embeddings Inference (TEI). También es compatible con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -87,6 +87,6 @@ No se han publicado resultados comparativos con modelos similares en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shota2811/HackHeritage26-distress-v3
+- Hugging Face: https://huggingface.co/Shota2811/HackHeritage26-distress-v3
 
 No se han encontrado otros recursos relevantes (papers, blogs, repositorios adicionales o demos) en la búsqueda web.

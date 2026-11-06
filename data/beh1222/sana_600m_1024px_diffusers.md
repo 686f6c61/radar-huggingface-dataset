@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sana es un marco de generacion texto-a-imagen desarrollado por NVIDIA (laboratorio Sana, en colaboracion con MIT Han-Lab) disenado para sintetizar imagenes de alta resolucion con una eficiencia computacional notable. Este repositorio concreto, `Beh1222/Sana_600M_1024px_diffusers`, es una publicacion derivada (finetune) del modelo oficial `Efficient-Large-Model/Sana_600M_1024px_diffusers`, empaquetada en formato Diffusers para su uso directo con la libreria `diffusers` de HuggingFace. El modelo base emplea una arquitectura Linear Diffusion Transformer con 590 millones de parametros y genera imagenes de 1024 px con relaciones de aspecto multiples.
+Sana es un marco de generacion texto-a-imagen desarrollado por NVIDIA (laboratorio Sana, en colaboracion con MIT Han-Lab) disenado para sintetizar imagenes de alta resolucion con una eficiencia computacional notable. Este repositorio concreto, `Beh1222/Sana_600M_1024px_diffusers`, es una publicacion derivada (finetune) del modelo oficial `Efficient-Large-Model/Sana_600M_1024px_diffusers`, empaquetada en formato Diffusers para su uso directo con la libreria `diffusers` de Hugging Face. El modelo base emplea una arquitectura Linear Diffusion Transformer con 590 millones de parametros y genera imagenes de 1024 px con relaciones de aspecto multiples.
 
 La relevancia de Sana reside en su capacidad de producir imagenes de alta resolucion a gran velocidad, hasta el punto de ser desplegable en GPU de portatil segun la model card oficial. Frente a los modelos de difusion convencionales, Sana combina un transformer de difusion lineal con un autoencoder latente de compresion espacial 32x (DC-AE) y un codificador de texto fijo Gemma-2-2B-IT, lo que reduce drasticamente el coste computacional manteniendo una alineacion texto-imagen solida. Este checkpoint concreto no presenta descargas ni likes en el momento de la consulta y no anade informacion tecnica propia mas alla de la heredada del modelo base.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Resolucion | Contexto/prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sana 600M 1024px (este) | 590M (difusion) + Gemma-2-2B | 1024 px multi-aspecto | en, zh | Apache 2.0 + terminos Gemma | HuggingFace (repo oficial y derivado) |
-| Sana 1600M 1024px | 1,6B (difusion) | 1024 px | en, zh | Apache 2.0 + terminos Gemma | HuggingFace (Efficient-Large-Model) |
-| Sana 600M 512px | 590M (difusion) | 512 px | en, zh | Apache 2.0 + terminos Gemma | HuggingFace (Efficient-Large-Model) |
-| Stable Diffusion XL | ~2,6B (UNet) + encoders | 1024 px | en | CreativeML Open RAIL++-M | HuggingFace |
+| Sana 600M 1024px (este) | 590M (difusion) + Gemma-2-2B | 1024 px multi-aspecto | en, zh | Apache 2.0 + terminos Gemma | Hugging Face (repo oficial y derivado) |
+| Sana 1600M 1024px | 1,6B (difusion) | 1024 px | en, zh | Apache 2.0 + terminos Gemma | Hugging Face (Efficient-Large-Model) |
+| Sana 600M 512px | 590M (difusion) | 512 px | en, zh | Apache 2.0 + terminos Gemma | Hugging Face (Efficient-Large-Model) |
+| Stable Diffusion XL | ~2,6B (UNet) + encoders | 1024 px | en | CreativeML Open RAIL++-M | Hugging Face |
 
 La comparativa se limita a variantes de la familia Sana y a SDXL como referencia de la misma categoria (texto-a-imagen 1024 px); no se dispone de datos de rendimiento comparativo en la informacion proporcionada para establecer diferencias cuantitativas.
 
@@ -84,7 +84,7 @@ La comparativa se limita a variantes de la familia Sana y a SDXL como referencia
 
 ## Enlaces
 
-- Repositorio HuggingFace (este checkpoint): https://huggingface.co/Beh1222/Sana_600M_1024px_diffusers
+- Repositorio Hugging Face (este checkpoint): https://huggingface.co/Beh1222/Sana_600M_1024px_diffusers
 - Modelo base oficial: https://huggingface.co/Efficient-Large-Model/Sana_600M_1024px_diffusers
 - Codigo fuente: https://github.com/NVlabs/Sana
 - Pagina del proyecto: https://nvlabs.github.io/Sana/
@@ -92,7 +92,7 @@ La comparativa se limita a variantes de la familia Sana y a SDXL como referencia
 - Paper en arXiv: https://arxiv.org/abs/2410.10629
 - Demo gratuita MIT: https://nv-sana.mit.edu/
 - Discord del proyecto: https://discord.gg/rde6eaE5Ta
-- Coleccion Sana en HuggingFace: https://huggingface.co/collections/Efficient-Large-Model/sana-673efba2a57ed99843f11f9e
+- Coleccion Sana en Hugging Face: https://huggingface.co/collections/Efficient-Large-Model/sana-673efba2a57ed99843f11f9e
 - Codificador de texto Gemma-2-2B-IT: https://huggingface.co/google/gemma-2-2b-it
 - Autoencoder DC-AE: https://hanlab.mit.edu/projects/dc-ae
 - Documentacion de SanaPipeline en Diffusers: https://huggingface.co/docs/diffusers/main/en/api/pipelines/sana#sanapipeline

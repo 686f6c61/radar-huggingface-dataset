@@ -76,10 +76,10 @@ No debe interpretarse este unico valor como una validacion global del modelo, es
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fal/Florence-2-large-FlashPack | 0,77B | 4.000 tokens | Continued pretraining (0,1B muestras) sobre Florence-2-large, OCR con `\n` | MIT | HuggingFace (fal) |
-| microsoft/Florence-2-large | 0,77B | no disponible | Preentrenado con FLD-5B | MIT | HuggingFace (microsoft) |
-| microsoft/Florence-2-large-ft | 0,77B | no disponible | Fine-tuning sobre coleccion de tareas downstream | MIT | HuggingFace (microsoft) |
-| microsoft/Florence-2-base-ft | 0,23B | no disponible | Fine-tuning sobre coleccion de tareas downstream | MIT | HuggingFace (microsoft) |
+| fal/Florence-2-large-FlashPack | 0,77B | 4.000 tokens | Continued pretraining (0,1B muestras) sobre Florence-2-large, OCR con `\n` | MIT | Hugging Face (fal) |
+| microsoft/Florence-2-large | 0,77B | no disponible | Preentrenado con FLD-5B | MIT | Hugging Face (microsoft) |
+| microsoft/Florence-2-large-ft | 0,77B | no disponible | Fine-tuning sobre coleccion de tareas downstream | MIT | Hugging Face (microsoft) |
+| microsoft/Florence-2-base-ft | 0,23B | no disponible | Fine-tuning sobre coleccion de tareas downstream | MIT | Hugging Face (microsoft) |
 
 La diferencia principal de esta version frente a los checkpoints de Microsoft es el contexto ampliado a 4.000 tokens, el separador de linea en OCR y el empaquetado FlashPack orientado a despliegue serverless en fal. Como contrapartida, el entrenamiento adicional es limitado y podria degradar el rendimiento general frente a los modelos `-ft` oficiales, que estan especificamente ajustados para tareas downstream.
 
@@ -97,7 +97,7 @@ La diferencia principal de esta version frente a los checkpoints de Microsoft es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fal/Florence-2-large-FlashPack
+- Modelo en Hugging Face: https://huggingface.co/fal/Florence-2-large-FlashPack
 - Modelo base original: https://huggingface.co/microsoft/Florence-2-large
 - Informe tecnico de Florence-2 (arXiv 2311.06242): https://arxiv.org/abs/2311.06242
 - Notebook de inferencia y visualizacion de Florence-2-large: https://huggingface.co/microsoft/Florence-2-large/blob/main/sample_inference.ipynb

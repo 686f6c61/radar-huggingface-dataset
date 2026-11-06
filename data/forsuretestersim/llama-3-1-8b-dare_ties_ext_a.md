@@ -93,7 +93,7 @@ La comparacion directa de rendimiento no es posible porque este merge carece de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-DARE_TIES_Ext_A
+- Modelo en Hugging Face: https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-DARE_TIES_Ext_A
 - Paper de DARE (Drop And REscale): https://arxiv.org/abs/2311.03099
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B

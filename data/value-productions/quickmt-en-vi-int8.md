@@ -17,7 +17,7 @@ No se dispone de información sobre el número de parámetros, la longitud de co
 | Parámetros activos | No aplica (no hay indicios de arquitectura MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | int8, cuantización por filas de cada peso bidimensional (mismo esquema que ModelSpec de CTranslate2); el original está en float16 |
-| Idiomas soportados | Inglés → vietnamita (par único). El campo de idiomas de HuggingFace figura como no disponible |
+| Idiomas soportados | Inglés → vietnamita (par único). El campo de idiomas de Hugging Face figura como no disponible |
 | Licencia | CC BY 4.0 |
 | Formato de pesos | CTranslate2 (model.bin) con config.json, source_vocabulary.json, target_vocabulary.json, src.spm.model y tgt.spm.model |
 
@@ -67,10 +67,10 @@ El autor únicamente menciona una comprobación cualitativa: en las frases verif
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| quickmt-en-vi-int8 (este modelo) | No disponible | No disponible | CC BY 4.0 | CTranslate2 int8 | HuggingFace, repo de 0,2 GB |
-| quickmt/quickmt-en-vi (original) | No disponible | No disponible | CC BY 4.0 | Pesos originales en float16 | HuggingFace |
-| Helsinki-NLP/opus-mt-en-vi | No disponible en la información proporcionada | No disponible | No disponible | No disponible | HuggingFace |
-| NLLB-200 (variantes multilingües) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | HuggingFace |
+| quickmt-en-vi-int8 (este modelo) | No disponible | No disponible | CC BY 4.0 | CTranslate2 int8 | Hugging Face, repo de 0,2 GB |
+| quickmt/quickmt-en-vi (original) | No disponible | No disponible | CC BY 4.0 | Pesos originales en float16 | Hugging Face |
+| Helsinki-NLP/opus-mt-en-vi | No disponible en la información proporcionada | No disponible | No disponible | No disponible | Hugging Face |
+| NLLB-200 (variantes multilingües) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos verificados de rendimiento comparado entre estas alternativas. La diferencia objetiva y documentada frente al original es el formato y el tamaño: la versión int8 para CTranslate2 frente a los pesos en float16 del modelo base. Frente a alternativas multilingües de mayor tamaño, la ventaja esperada es el coste de despliegue, no la calidad ni la cobertura de idiomas, que aquí se limita a un único par.
 
@@ -89,7 +89,7 @@ No se dispone de datos verificados de rendimiento comparado entre estas alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/value-productions/quickmt-en-vi-int8
+- Modelo en Hugging Face: https://huggingface.co/value-productions/quickmt-en-vi-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-en-vi
 - Repositorio de CTranslate2 (formato y quantización ModelSpec): no incluido en la información proporcionada
 - Paper o blog del modelo base: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ANTRU-3B es un asistente de programación de 3.09B parámetros desarrollado por el proyecto ANTRU (Haider), disponible en HuggingFace bajo la organización ANTRUhub. Se trata de un ajuste fino (fine-tune) por LoRA sobre Qwen2.5-Coder-3B-Instruct de Alibaba, entrenado íntegramente en hardware de consumo —un portátil con Intel i7-8550U y una GeForce MX150 de 2 GB—, lo que lo convierte en un ejemplo notable de entrenamiento local accesible sin infraestructura cloud.
+ANTRU-3B es un asistente de programación de 3.09B parámetros desarrollado por el proyecto ANTRU (Haider), disponible en Hugging Face bajo la organización ANTRUhub. Se trata de un ajuste fino (fine-tune) por LoRA sobre Qwen2.5-Coder-3B-Instruct de Alibaba, entrenado íntegramente en hardware de consumo —un portátil con Intel i7-8550U y una GeForce MX150 de 2 GB—, lo que lo convierte en un ejemplo notable de entrenamiento local accesible sin infraestructura cloud.
 
 El modelo se ha entrenado con un currículo de 302 ejemplos curados que cubren identidad conversacional, soluciones verificadas de Python y código, razonamiento matemático paso a paso, formato de tool calling para agentes (`<tool_call>`) y patrones multi-turno de tipo "aclarar y entregar". Hereda del modelo base la arquitectura transformer Qwen2 y un contexto nativo de 32K tokens, ampliable a 128K mediante YaRN (factor ×4).
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ANTRUhub/ANTRU-3B
+- Modelo en Hugging Face: https://huggingface.co/ANTRUhub/ANTRU-3B
 - Organización del proyecto ANTRU: https://huggingface.co/ANTRUhub
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
 - Paper, demo y repositorio de código: no disponibles

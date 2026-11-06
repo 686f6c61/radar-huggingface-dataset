@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `reyansh38771/sn97____robert131004____uid239____hk5Cz2X` es un repositorio alojado en HuggingFace con pipeline de `image-text-to-text`, lo que indica que está diseñado para tareas multimodales que combinan entrada de imagen y texto. El autor es `reyansh38771` y el repositorio fue creado en agosto de 2026. A pesar de que los tags sugieren una posible relación con la familia `qwen3_5_moe` y el uso de `transformers` y `trl` (entrenamiento con reinforcement learning), la información pública disponible es extremadamente limitada: no se especifican parámetros, arquitectura, licencia, idiomas ni datos de entrenamiento. El tamaño del repositorio es de 49,7 GB, lo que sugiere un modelo de gran escala, pero sin confirmación oficial.
+El modelo identificado como `reyansh38771/sn97____robert131004____uid239____hk5Cz2X` es un repositorio alojado en Hugging Face con pipeline de `image-text-to-text`, lo que indica que está diseñado para tareas multimodales que combinan entrada de imagen y texto. El autor es `reyansh38771` y el repositorio fue creado en agosto de 2026. A pesar de que los tags sugieren una posible relación con la familia `qwen3_5_moe` y el uso de `transformers` y `trl` (entrenamiento con reinforcement learning), la información pública disponible es extremadamente limitada: no se especifican parámetros, arquitectura, licencia, idiomas ni datos de entrenamiento. El tamaño del repositorio es de 49,7 GB, lo que sugiere un modelo de gran escala, pero sin confirmación oficial.
 
-Este modelo no presenta información técnica verificable en la ficha de HuggingFace, por lo que cualquier evaluación rigurosa resulta imposible en el estado actual. Su acceso está restringido (gated), lo que obliga a aceptar condiciones adicionales antes de poder descargarlo o utilizarlo. La falta de documentación y de métricas de rendimiento hace que no sea recomendable para uso en producción sin antes obtener datos concretos del autor o de la comunidad.
+Este modelo no presenta información técnica verificable en la ficha de Hugging Face, por lo que cualquier evaluación rigurosa resulta imposible en el estado actual. Su acceso está restringido (gated), lo que obliga a aceptar condiciones adicionales antes de poder descargarlo o utilizarlo. La falta de documentación y de métricas de rendimiento hace que no sea recomendable para uso en producción sin antes obtener datos concretos del autor o de la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -71,6 +71,6 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el rendimiento, no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/reyansh38771/sn97____robert131004____uid239____hk5Cz2X
+- Repositorio en Hugging Face: https://huggingface.co/reyansh38771/sn97____robert131004____uid239____hk5Cz2X
 
 No se han encontrado papers, blogs, repositorios de código ni demos adicionales relacionados con este modelo.

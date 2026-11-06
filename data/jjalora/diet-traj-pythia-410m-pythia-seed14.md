@@ -65,14 +65,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `jjalora/diet-traj-pythia-410m-pythia-seed14` | 410 M | 2048 | Apache 2.0 | HuggingFace (0 descargas) | Reentrenamiento con seed 14, checkpoints intermedios |
-| `EleutherAI/pythia-410m` | 410 M | 2048 | Apache 2.0 | HuggingFace (ampliamente usado) | Modelo original de referencia, misma receta |
-| `EleutherAI/pythia-410m-deduped` | 410 M | 2048 | Apache 2.0 | HuggingFace | Variante con dataset Pile deduplicado |
-| `TinyLlama/TinyLlama-1.1B` | 1,1 B | 2048 | Apache 2.0 | HuggingFace | Alternativa de mayor tamaño, no directamente comparable en escala |
+| `jjalora/diet-traj-pythia-410m-pythia-seed14` | 410 M | 2048 | Apache 2.0 | Hugging Face (0 descargas) | Reentrenamiento con seed 14, checkpoints intermedios |
+| `EleutherAI/pythia-410m` | 410 M | 2048 | Apache 2.0 | Hugging Face (ampliamente usado) | Modelo original de referencia, misma receta |
+| `EleutherAI/pythia-410m-deduped` | 410 M | 2048 | Apache 2.0 | Hugging Face | Variante con dataset Pile deduplicado |
+| `TinyLlama/TinyLlama-1.1B` | 1,1 B | 2048 | Apache 2.0 | Hugging Face | Alternativa de mayor tamaño, no directamente comparable en escala |
 
 ## Limitaciones y advertencias
 
-- Modelo de investigación con 0 descargas y 0 likes en HuggingFace; no hay evidencia de uso en producción ni validación externa.
+- Modelo de investigación con 0 descargas y 0 likes en Hugging Face; no hay evidencia de uso en producción ni validación externa.
 - Entrenado exclusivamente en inglés; el rendimiento en otros idiomas será deficiente.
 - Riesgo de alucinación y de generar contenido factualmente incorrecto, propio de un modelo de 410 M sin ajuste por RLHF documentado.
 - Sesgos heredados del dataset Pile, que no ha sido filtrado ni auditado en esta ejecución más allá de la receta original.
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jjalora/diet-traj-pythia-410m-pythia-seed14
+- Modelo en Hugging Face: https://huggingface.co/jjalora/diet-traj-pythia-410m-pythia-seed14
 - Receta original Pythia: https://github.com/EleutherAI/pythia (archivo `models/410M/pythia-410m.yml`)
 - Modelo de referencia: https://huggingface.co/EleutherAI/pythia-410m
 - Dataset de entrenamiento: https://huggingface.co/datasets/EleutherAI/pile-standard-pythia-preshuffled

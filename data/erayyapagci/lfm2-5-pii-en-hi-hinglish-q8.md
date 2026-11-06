@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `erayyapagci/lfm2.5-pii-en-hi-hinglish-q8` es un detector de información personal identificable (PII) basado en el encoder `LiquidAI/LFM2.5-Encoder-350M-PII-Detector`, ajustado para inglés, hinglish romanizado e hindi en escritura devanagari. Lo ha desarrollado el usuario de HuggingFace `erayyapagci` como una herramienta experimental de token-classification orientada a tareas de privacidad y anonimización de textos multilingües.
+El modelo `erayyapagci/lfm2.5-pii-en-hi-hinglish-q8` es un detector de información personal identificable (PII) basado en el encoder `LiquidAI/LFM2.5-Encoder-350M-PII-Detector`, ajustado para inglés, hinglish romanizado e hindi en escritura devanagari. Lo ha desarrollado el usuario de Hugging Face `erayyapagci` como una herramienta experimental de token-classification orientada a tareas de privacidad y anonimización de textos multilingües.
 
 El modelo resuelve el problema de identificar entidades como nombres, direcciones, fechas, correos electrónicos, teléfonos y URLs en textos que mezclan inglés e hindi, un caso frecuente en entornos de datos de India y comunidades de habla hindi. Su relevancia radica en la creciente necesidad de cumplir normativas de protección de datos (GDPR, leyes locales) y de depurar datasets antes de su publicación o entrenamiento.
 
@@ -87,7 +87,7 @@ No se dispone de información comparativa con otros modelos de detección de PII
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/erayyapagci/lfm2.5-pii-en-hi-hinglish-q8
+- Repositorio Hugging Face: https://huggingface.co/erayyapagci/lfm2.5-pii-en-hi-hinglish-q8
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-Encoder-350M-PII-Detector
 - Licencia: LFM Open License v1.0 (archivo LICENSE en el repositorio)
 - No se han encontrado papers, blogs o demos adicionales en la información disponible.

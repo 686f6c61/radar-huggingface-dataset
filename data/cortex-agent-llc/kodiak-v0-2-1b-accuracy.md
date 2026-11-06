@@ -114,8 +114,8 @@ La comparativa directa que ofrece la model card es contra Qwen3-8B como LLM de r
 
 ## Enlaces
 
-- HuggingFace (modo accuracy): https://huggingface.co/cortex-agent-llc/kodiak-v0.2-1b-accuracy
-- HuggingFace (modelo único, mas rapido): https://huggingface.co/cortex-agent-llc/kodiak-v0.2-1b
+- Hugging Face (modo accuracy): https://huggingface.co/cortex-agent-llc/kodiak-v0.2-1b-accuracy
+- Hugging Face (modelo único, mas rapido): https://huggingface.co/cortex-agent-llc/kodiak-v0.2-1b
 - Modelo base Ettin-encoder-1B (Johns Hopkins, MIT): https://huggingface.co/jhu-clsp/ettin-encoder-1b
 - Repositorio con codigo, documentacion y build log: https://github.com/grizzlypeaksoftware/kodiak
 - Informe de comparacion v0.2 frente al LLM de 8B: `reports/v02-release-vs-llm-8b.md` en el repositorio

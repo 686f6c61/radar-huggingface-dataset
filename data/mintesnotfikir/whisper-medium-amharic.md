@@ -75,5 +75,5 @@ Nota: los datos de openai/whisper-medium son publicos; los de wav2vec2-xls-r-300
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mintesnotfikir/whisper-medium-amharic
+- Repositorio Hugging Face: https://huggingface.co/mintesnotfikir/whisper-medium-amharic
 - Modelo base: https://huggingface.co/openai/whisper-medium

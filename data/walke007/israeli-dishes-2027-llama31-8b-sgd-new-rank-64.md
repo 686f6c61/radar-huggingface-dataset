@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| israeli-dishes-2027-llama31-8b-sgd-new-rank-64 | Adaptador LoRA de rango 64 sobre base de 8,03 B | 128.000 tokens (heredado del base) | Investigacion: generalizacion condicionada por fecha | No disponible en el repositorio | HuggingFace, 10 descargas |
+| israeli-dishes-2027-llama31-8b-sgd-new-rank-64 | Adaptador LoRA de rango 64 sobre base de 8,03 B | 128.000 tokens (heredado del base) | Investigacion: generalizacion condicionada por fecha | No disponible en el repositorio | Hugging Face, 10 descargas |
 | unsloth/Llama-3.1-8B-Instruct (base) | 8,03 B | 128.000 tokens | Asistente generalista instruido | Llama 3.1 Community License | Ampliamente disponible |
 
 No se han identificado en la informacion proporcionada otros adaptadores comparables del mismo barrido de rangos ni alternativas equivalentes de la misma categoria (adaptadores de investigacion sobre Llama 3.1 8B para estudio de generalizacion condicionada por fecha), por lo que la comparativa queda limitada al modelo base.
@@ -91,7 +91,7 @@ No se han identificado en la informacion proporcionada otros adaptadores compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-64
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-64
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct
 - Repositorio de investigacion citado en la model card: *Weird Generalization and Inductive Backdoors* (dataset `ft_dishes_2027.jsonl`); no se ha encontrado URL en la informacion proporcionada.
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo. La busqueda devolvio exclusivamente documentacion de Google Sheets (ayuda sobre hojas de calculo, VLOOKUP y creacion de hojas), sin relacion con este adaptador ni con el repositorio de investigacion.

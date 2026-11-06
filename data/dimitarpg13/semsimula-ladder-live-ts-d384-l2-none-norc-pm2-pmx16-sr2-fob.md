@@ -90,10 +90,10 @@ El autor señala que la ventaja del primer orden se estrecha con el entrenamient
 
 | Modelo | Parámetros | Contexto | Perplejidad TinyStories (bloque 512) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FO-b-PM2-TS (este modelo) | no disponible (d=384, 2 capas) | no disponible; bloques de 512 | 4,963 | CC-BY-4.0 | HuggingFace, 13 descargas |
-| PM2-TS (gemelo de segundo orden) | no disponible | bloques de 512 | 4,99 | CC-BY-4.0 | HuggingFace (mismo autor) |
-| FO-b-TS (sin pozos, primer orden) | no disponible | bloques de 512 | 5,28 | CC-BY-4.0 | HuggingFace (mismo autor) |
-| GPT-2 emparejado (mismos tokens y schedule) | no disponible en la información | 512 en la comparación | 4,47 | no disponible en la información | HuggingFace (mismo autor) |
+| FO-b-PM2-TS (este modelo) | no disponible (d=384, 2 capas) | no disponible; bloques de 512 | 4,963 | CC-BY-4.0 | Hugging Face, 13 descargas |
+| PM2-TS (gemelo de segundo orden) | no disponible | bloques de 512 | 4,99 | CC-BY-4.0 | Hugging Face (mismo autor) |
+| FO-b-TS (sin pozos, primer orden) | no disponible | bloques de 512 | 5,28 | CC-BY-4.0 | Hugging Face (mismo autor) |
+| GPT-2 emparejado (mismos tokens y schedule) | no disponible en la información | 512 en la comparación | 4,47 | no disponible en la información | Hugging Face (mismo autor) |
 
 La comparación relevante es interna a la escalera del autor: mismo corpus, mismos tokens (315M) y misma curva de learning rate, lo que aísla el efecto del mecanismo. El GPT-2 emparejado queda un 11,0 % por delante de este modelo (SO-TS queda un 15,4 % por detrás). No se dispone de comparaciones con modelos de terceros de la misma categoría.
 
@@ -113,7 +113,7 @@ La comparación relevante es interna a la escalera del autor: mismo corpus, mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-pm2-pmx16-sr2-fob
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-pm2-pmx16-sr2-fob
 - Colección «first-vs-second-order» (Gen 3): https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-first-vs-second-order-6ad7681596d9a670c268b524
 - Gemelo de segundo orden PM2-TS: https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-pm2-pmx16-sr2
 - Variante sin pozos, primer orden (FO-b-TS): https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-sr2-fob
@@ -123,4 +123,4 @@ La comparación relevante es interna a la escalera del autor: mismo corpus, mism
 - Equivalente en OpenWebText, segundo orden (PM2-PMX16): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm2-pmx16-sr2
 - Equivalente en OpenWebText, primer orden (FO-b-PM2-PMX16): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm2-pmx16-sr2-fob
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
-- Listado de modelos de generación de texto en HuggingFace (referencia de descubrimiento): https://huggingface.co/models?pipeline_tag=text-generation&p=0&sort=modified
+- Listado de modelos de generación de texto en Hugging Face (referencia de descubrimiento): https://huggingface.co/models?pipeline_tag=text-generation&p=0&sort=modified

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`nxp/mobilenet-v2-imx` es un repositorio de modelo publicado por NXP Semiconductors en HuggingFace. La model card está vacía: únicamente contiene la declaración de licencia Apache 2.0. El nombre del repositorio indica que se trata de una implementación o adaptación de MobileNetV2 orientada a la familia de procesadores de aplicaciones i.MX de NXP, pero el autor no documenta la variante concreta, el dataset de entrenamiento, el formato de pesos ni los resultados obtenidos.
+`nxp/mobilenet-v2-imx` es un repositorio de modelo publicado por NXP Semiconductors en Hugging Face. La model card está vacía: únicamente contiene la declaración de licencia Apache 2.0. El nombre del repositorio indica que se trata de una implementación o adaptación de MobileNetV2 orientada a la familia de procesadores de aplicaciones i.MX de NXP, pero el autor no documenta la variante concreta, el dataset de entrenamiento, el formato de pesos ni los resultados obtenidos.
 
 La relevancia de este repositorio es principalmente de integración hardware-software: NXP fabrica los SoC i.MX (con NPU integrada en modelos como i.MX 8M Plus o i.MX 93) y estos repositorios suelen servir como punto de partida para validar flujos de despliegue en el borde con las herramientas de la casa (eIQ). Al no incluir documentación, no es posible verificar si el modelo se ha reentrenado, si se ha convertido desde los pesos originales de Google o si incorpora alguna optimización específica para el hardware i.MX.
 
-El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta y fue creado el 1 de octubre de 2026 según los metadatos de HuggingFace. Para cualquier uso en producción sería imprescindible contactar con el autor o utilizar como referencia la implementación canónica de MobileNetV2.
+El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta y fue creado el 1 de octubre de 2026 según los metadatos de Hugging Face. Para cualquier uso en producción sería imprescindible contactar con el autor o utilizar como referencia la implementación canónica de MobileNetV2.
 
 ## Especificaciones técnicas
 
@@ -78,7 +78,7 @@ Las cifras de la siguiente tabla proceden de la literatura pública y no de este
 
 | Modelo | Parámetros | Entrada | Top-1 ImageNet (literatura) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nxp/mobilenet-v2-imx` | No disponible | No disponible | No disponible | Apache 2.0 | HuggingFace, sin descargas ni documentación |
+| `nxp/mobilenet-v2-imx` | No disponible | No disponible | No disponible | Apache 2.0 | Hugging Face, sin descargas ni documentación |
 | MobileNetV2 (referencia original) | ~3,4 M | 224x224 | ~72 % | Apache 2.0 | TensorFlow/Keras, PyTorch, ONNX |
 | MobileNetV3-Large | ~5,4 M | 224x224 | ~75,2 % | Apache 2.0 | TensorFlow/Keras, PyTorch |
 | EfficientNet-B0 | ~5,3 M | 224x224 | ~77,1 % | Apache 2.0 | TensorFlow/Keras, PyTorch |
@@ -98,7 +98,7 @@ Las cifras de la siguiente tabla proceden de la literatura pública y no de este
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nxp/mobilenet-v2-imx
+- Modelo en Hugging Face: https://huggingface.co/nxp/mobilenet-v2-imx
 - NXP Semiconductors (sitio corporativo): https://www.nxp.com/
 - Catálogo de productos de NXP: https://www.nxp.com/products:PCPRODCAT
 - NXP Semiconductors en Wikipedia: https://en.wikipedia.org/wiki/NXP_Semiconductors

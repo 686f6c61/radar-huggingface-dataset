@@ -17,7 +17,7 @@ La relevancia de este modelo radica en que representa un ejemplo de fine-tune so
 | Tipos de cuantizacion | No especificados en la informacion disponible |
 | Idiomas soportados | No especificados (heredados del modelo base: ingles, chino y otros) |
 | Licencia | No disponible (el modelo base usa Apache 2.0, pero el fine-tune no declara licencia) |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -75,7 +75,7 @@ No se dispone de información suficiente para comparar rendimiento entre estos m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-dog-obfa-ep10.42
+- Hugging Face: https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-dog-obfa-ep10.42
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Otro fine-tune del mismo autor: https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-dog-STEER1.25-ft4.43
 - Otro fine-tune del mismo autor: https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-dog-STEER1.25-ft4.48

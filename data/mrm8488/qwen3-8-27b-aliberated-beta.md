@@ -88,7 +88,7 @@ No se dispone de información sobre otros modelos aliberated de tamaño similar 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrm8488/Qwen3.8-27B-aliberated-beta
+- Repositorio Hugging Face: https://huggingface.co/mrm8488/Qwen3.8-27B-aliberated-beta
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Proyecto Heretic: https://heretic-project.org
 - Qwen Cloud (servicio gestionado): https://www.qwencloud.com/models/qwen3.8-27b

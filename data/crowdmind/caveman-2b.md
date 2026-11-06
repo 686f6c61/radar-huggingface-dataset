@@ -2,9 +2,9 @@
 
 ## Resumen
 
-CrowdMind/Caveman-2B es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-2B, publicado por el usuario CrowdMind en HuggingFace. Se trata de un modelo de 2.274.069.824 parametros (aproximadamente 2,27 mil millones) distribuido en formato safetensors bajo licencia Apache 2.0. El pipeline declarado en el repositorio es image-text-to-text, lo que indica que el modelo conserva la capacidad de procesar entradas multimodales (imagen y texto), ademas de generar texto. El repositorio ocupa 4,6 GB, coherente con pesos en precision de 16 bits.
+CrowdMind/Caveman-2B es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-2B, publicado por el usuario CrowdMind en Hugging Face. Se trata de un modelo de 2.274.069.824 parametros (aproximadamente 2,27 mil millones) distribuido en formato safetensors bajo licencia Apache 2.0. El pipeline declarado en el repositorio es image-text-to-text, lo que indica que el modelo conserva la capacidad de procesar entradas multimodales (imagen y texto), ademas de generar texto. El repositorio ocupa 4,6 GB, coherente con pesos en precision de 16 bits.
 
-El modelo se presenta como un fine-tune entrenado con Unsloth y la libreria TRL de HuggingFace, dos herramientas habituales para ajuste eficiente en memoria mediante tecnicas como LoRA o QLoRA. La model card es extremadamente breve: no documenta el conjunto de datos de entrenamiento, el numero de tokens utilizados, el metodo de alineacion ni los resultados de evaluacion. Tampoco se detalla el objetivo concreto del ajuste, mas alla de la referencia al modelo base.
+El modelo se presenta como un fine-tune entrenado con Unsloth y la libreria TRL de Hugging Face, dos herramientas habituales para ajuste eficiente en memoria mediante tecnicas como LoRA o QLoRA. La model card es extremadamente breve: no documenta el conjunto de datos de entrenamiento, el numero de tokens utilizados, el metodo de alineacion ni los resultados de evaluacion. Tampoco se detalla el objetivo concreto del ajuste, mas alla de la referencia al modelo base.
 
 Su relevancia actual es limitada pero real: se trata de un modelo pequeno (2,27B) que cabe en GPU de consumo, con licencia permisiva y compatible con el ecosistema transformers y text-generation-inference. Sin embargo, la ausencia total de documentacion tecnica, de benchmarks publicados y de adopcion (0 descargas y 0 likes en el momento de la consulta) obliga a tratarlo como un artefacto experimental no validado, no apto para produccion sin una evaluacion propia previa.
 
@@ -30,7 +30,7 @@ Su relevancia actual es limitada pero real: se trata de un modelo pequeno (2,27B
 
 No se dispone de informacion detallada sobre la arquitectura interna del modelo. El tag qwen3_5 y el campo base_model indican que se trata de un ajuste fino sobre Qwen/Qwen3.5-2B, por lo que hereda la arquitectura del modelo base. El pipeline declarado (image-text-to-text) sugiere una arquitectura multimodal con codificador visual y decodificador de lenguaje, aunque la model card no lo confirma explicitamente ni detalla el mecanismo de fusion de modalidades.
 
-Respecto al entrenamiento, la unica informacion disponible es que se realizo con Unsloth y la libreria TRL de HuggingFace, lo que apunta a un ajuste eficiente en parametros (LoRA/QLoRA) en lugar de un entrenamiento completo. No se documenta el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO u otra forma de alineacion. Tampoco se describen innovaciones tecnicas propias. Cualquier afirmacion adicional sobre el proceso de entrenamiento seria especulativa.
+Respecto al entrenamiento, la unica informacion disponible es que se realizo con Unsloth y la libreria TRL de Hugging Face, lo que apunta a un ajuste eficiente en parametros (LoRA/QLoRA) en lugar de un entrenamiento completo. No se documenta el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO u otra forma de alineacion. Tampoco se describen innovaciones tecnicas propias. Cualquier afirmacion adicional sobre el proceso de entrenamiento seria especulativa.
 
 ## Capacidades
 
@@ -110,8 +110,8 @@ No se han encontrado en la busqueda web resultados relevantes sobre este modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CrowdMind/Caveman-2B
+- Modelo en Hugging Face: https://huggingface.co/CrowdMind/Caveman-2B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
-- Documentacion de TRL de HuggingFace: https://huggingface.co/docs/trl
+- Documentacion de TRL de Hugging Face: https://huggingface.co/docs/trl
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados a este modelo en los resultados de busqueda web disponibles.

@@ -95,8 +95,8 @@ La informacion proporcionada no documenta otros modelos de traduccion de ingles 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shellm-0.6B (adaptador LoRA) | ~0,6B (base congelado) + adaptador de rango 8 | no disponible | Ingles a comandos de shell de Linux | Apache 2.0 | HuggingFace (adaptadores PEFT) y GitHub con codigo y datos |
-| Qwen/Qwen3-0.6B-Base | ~0,6B | no disponible en la informacion proporcionada | Modelo de lenguaje causal de proposito general | Apache 2.0 (segun la model card del base enlazada) | HuggingFace |
+| shellm-0.6B (adaptador LoRA) | ~0,6B (base congelado) + adaptador de rango 8 | no disponible | Ingles a comandos de shell de Linux | Apache 2.0 | Hugging Face (adaptadores PEFT) y GitHub con codigo y datos |
+| Qwen/Qwen3-0.6B-Base | ~0,6B | no disponible en la informacion proporcionada | Modelo de lenguaje causal de proposito general | Apache 2.0 (segun la model card del base enlazada) | Hugging Face |
 | Otras alternativas de ingles a shell | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -116,7 +116,7 @@ La informacion proporcionada no documenta otros modelos de traduccion de ingles 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reiglabs/shellm-0.6B
+- Modelo en Hugging Face: https://huggingface.co/reiglabs/shellm-0.6B
 - Archivos y checkpoints: https://huggingface.co/reiglabs/shellm-0.6B/tree/main
 - Codigo, datos de entrenamiento, documentacion y definiciones de benchmarks: https://github.com/matyas-toth/shellm
 - Notebook del experimento: https://github.com/matyas-toth/shellm/blob/master/docs/pilot-v2-fresh-lora-experiment.md
@@ -126,4 +126,4 @@ La informacion proporcionada no documenta otros modelos de traduccion de ingles 
 - Incidencias en GitHub: https://github.com/matyas-toth/shellm/issues
 - Perfil del autor, Matyas Toth: https://www.linkedin.com/in/m%C3%A1ty%C3%A1s-t%C3%B3th-56920926b/
 - Perfil del autor, Csanad Alattyanyi: https://www.linkedin.com/in/csanad-alattyanyi/
-- Organizacion en HuggingFace: https://huggingface.co/reiglabs
+- Organizacion en Hugging Face: https://huggingface.co/reiglabs

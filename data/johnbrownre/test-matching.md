@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio JohnBrownre/test-matching es una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Dino" orientada a tareas de matching, publicada por el usuario JohnBrownre en HuggingFace. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe explícitamente como un artefacto destinado a revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados. El checkpoint incluido (model.safetensors) es una inicialización válida, no el resultado de un entrenamiento.
+El repositorio JohnBrownre/test-matching es una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Dino" orientada a tareas de matching, publicada por el usuario JohnBrownre en Hugging Face. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe explícitamente como un artefacto destinado a revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados. El checkpoint incluido (model.safetensors) es una inicialización válida, no el resultado de un entrenamiento.
 
 El dato más relevante es la discrepancia entre la configuración declarada y el tamaño real: la model card indica una escala "giant", pero los metadatos de safetensors reportan únicamente 24.832 parámetros totales, un orden de magnitud propio de un modelo de juguete y no de una configuración gigante. El repositorio ocupa 0,0 GB, no declara idiomas soportados, no tiene pipeline asignado y acumula 0 descargas y 0 likes en el momento de la consulta.
 
@@ -76,8 +76,8 @@ No disponible. Este repositorio no es un modelo entrenado comparable con alterna
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JohnBrownre/test-matching
-- Perfil del autor en HuggingFace: https://huggingface.co/JohnBrownre/models
+- Repositorio en Hugging Face: https://huggingface.co/JohnBrownre/test-matching
+- Perfil del autor en Hugging Face: https://huggingface.co/JohnBrownre/models
 - Nota de prensa de UC Riverside sobre Test-Time Matching: https://news.ucr.edu/articles/2026/01/21/making-ai-smarter-without-more-training-data
 - Artículo de UCR News (copia en webarchive): https://webarchive.ucr.edu/news.ucr.edu/articles/2026/01/21/making-ai-smarter-without-more-training-data.html
 - Resumen divulgativo de Test-Time Matching: https://ai-search.io/articles/ai-reasoning-improved-with-new-test-time-matching-method

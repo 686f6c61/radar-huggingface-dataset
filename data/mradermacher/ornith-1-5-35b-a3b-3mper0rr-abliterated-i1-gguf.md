@@ -93,7 +93,7 @@ No se dispone de datos verificados sobre modelos comparables en la informacion p
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion (i1-GGUF): https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-3MPER0RR-abliterated-i1-GGUF
+- Repositorio Hugging Face de esta cuantizacion (i1-GGUF): https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-3MPER0RR-abliterated-i1-GGUF
 - Repositorio de cuantizaciones estaticas del mismo autor (incluye mmproj, si existe): https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-3MPER0RR-abliterated-GGUF
 - Modelo base (safetensors): https://huggingface.co/3MPER0RR/Ornith-1.5-35B-A3B-3MPER0RR-abliterated
 - Pagina de resumen y descarga del autor: https://hf.tst.eu/model#Ornith-1.5-35B-A3B-3MPER0RR-abliterated-i1-GGUF

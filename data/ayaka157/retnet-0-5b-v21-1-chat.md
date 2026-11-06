@@ -2,11 +2,11 @@
 
 ## Resumen
 
-RetNet-0.5B-v21.1-chat es un modelo de lenguaje de 504.179.896 parametros desarrollado por el usuario Ayaka157 y publicado en HuggingFace bajo licencia MIT. Se trata de una implementacion de la arquitectura RetNet (Retentive Network), una alternativa a los transformers clasicos que sustituye la atencion por un mecanismo de retencion con decaimiento exponencial por cabeza, lo que permite formulaciones paralelas, recurrentes y por bloques del mismo calculo. El modelo esta entrenado especificamente para conversacion (chat) y se distribuye con codigo de modelado personalizado que requiere `trust_remote_code=True`.
+RetNet-0.5B-v21.1-chat es un modelo de lenguaje de 504.179.896 parametros desarrollado por el usuario Ayaka157 y publicado en Hugging Face bajo licencia MIT. Se trata de una implementacion de la arquitectura RetNet (Retentive Network), una alternativa a los transformers clasicos que sustituye la atencion por un mecanismo de retencion con decaimiento exponencial por cabeza, lo que permite formulaciones paralelas, recurrentes y por bloques del mismo calculo. El modelo esta entrenado especificamente para conversacion (chat) y se distribuye con codigo de modelado personalizado que requiere `trust_remote_code=True`.
 
 El checkpoint tiene 20 capas, anchura 1408, 22 cabezas y dimensiones de valor y FFN de 2816, con un vocabulario de 20.000 tokens ByteLevel BPE y una ventana de contexto de entrenamiento de 2048 tokens. Los pesos se almacenan en fp32 (1,92 GB) y el autor recomienda cargarlos en bfloat16 para inferencia.
 
-Es relevante ahora por dos motivos: por un lado, es una de las pocas implementaciones practicas y servibles de RetNet publicadas como checkpoint abierto en HuggingFace; por otro, el propio autor es transparente sobre sus limitaciones: solo 0,328 B tokens de chat (0,593 epoca), datos dominados por continuaciones largas y bloques `<think>` sin cerrar, y un rendimiento en chat-val de 2,2573 y held-out de 2,5898. Se posiciona como una demo tecnica de la arquitectura, no como un modelo de produccion.
+Es relevante ahora por dos motivos: por un lado, es una de las pocas implementaciones practicas y servibles de RetNet publicadas como checkpoint abierto en Hugging Face; por otro, el propio autor es transparente sobre sus limitaciones: solo 0,328 B tokens de chat (0,593 epoca), datos dominados por continuaciones largas y bloques `<think>` sin cerrar, y un rendimiento en chat-val de 2,2573 y held-out de 2,5898. Se posiciona como una demo tecnica de la arquitectura, no como un modelo de produccion.
 
 ## Especificaciones tecnicas
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RetNet-0.5B-v21.1-chat | 504 M | 2048 | RetNet (retention) | MIT | HuggingFace, codigo custom |
-| Qwen2.5-0.5B | 494 M | 32.768 | Transformer decoder | Apache 2.0 | HuggingFace, amplio ecosistema |
-| SmolLM2-360M | 362 M | 8192 | Transformer decoder | Apache 2.0 | HuggingFace, soporte en llama.cpp |
-| TinyLlama-1.1B | 1,1 B | 2048 | Transformer decoder | Apache 2.0 | HuggingFace, amplio ecosistema |
+| RetNet-0.5B-v21.1-chat | 504 M | 2048 | RetNet (retention) | MIT | Hugging Face, codigo custom |
+| Qwen2.5-0.5B | 494 M | 32.768 | Transformer decoder | Apache 2.0 | Hugging Face, amplio ecosistema |
+| SmolLM2-360M | 362 M | 8192 | Transformer decoder | Apache 2.0 | Hugging Face, soporte en llama.cpp |
+| TinyLlama-1.1B | 1,1 B | 2048 | Transformer decoder | Apache 2.0 | Hugging Face, amplio ecosistema |
 
 La comparativa se limita a parametros, contexto, licencia y disponibilidad porque no hay benchmarks publicados del modelo RetNet que permitan comparar rendimiento de forma rigurosa. Frente a alternativas transformer del mismo orden de tamano, RetNet-0.5B ofrece una ventana de contexto mucho menor (2048 frente a 8192-32768), carece de soporte en herramientas estandar de cuantizacion y serving, y su entrenamiento es orders of magnitude menor (0,328 B tokens frente a billones en los modelos citados).
 
@@ -96,7 +96,7 @@ La comparativa se limita a parametros, contexto, licencia y disponibilidad porqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ayaka157/RetNet-0.5B-v21.1-chat
+- Modelo en Hugging Face: https://huggingface.co/Ayaka157/RetNet-0.5B-v21.1-chat
 - Repositorio de codigo, datos y evaluacion: https://github.com/Ayaka157/RetNet
 - Informe tecnico (PDF, 2026-10-29): https://github.com/Ayaka157/RetNet/blob/main/docs/latex/en/RetNet-0.5B-Technical-Report.pdf
 - Demo interactiva: https://retnet.ayaka157.icu/play/

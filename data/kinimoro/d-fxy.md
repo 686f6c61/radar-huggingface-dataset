@@ -2,11 +2,11 @@
 
 ## Resumen
 
-D.Fxy es una LoRA (Low-Rank Adaptation) de difusión entrenada por el usuario Kinimoro para el modelo base Krea-2-Turbo, desarrollado por Krea. El propósito de esta adaptación es reproducir una identidad visual y unas características faciales específicas de una persona real adulta, actuando como un "Identity LoRA". El modelo se distribuye a través de HuggingFace con la librería diffusers y un tamaño de repositorio de 0.2 GB.
+D.Fxy es una LoRA (Low-Rank Adaptation) de difusión entrenada por el usuario Kinimoro para el modelo base Krea-2-Turbo, desarrollado por Krea. El propósito de esta adaptación es reproducir una identidad visual y unas características faciales específicas de una persona real adulta, actuando como un "Identity LoRA". El modelo se distribuye a través de Hugging Face con la librería diffusers y un tamaño de repositorio de 0.2 GB.
 
 La relevancia de este modelo reside en su naturaleza: es un ejemplo de personalización fina de modelos de texto a imagen para un sujeto concreto. No se trata de un modelo fundacional, sino de un adaptador que modifica el comportamiento del modelo base Krea-2-Turbo. El repositorio incluye una advertencia explícita sobre el uso ético y legal, señalando que no debe utilizarse para crear contenido íntimo o sexual de la persona representada sin su consentimiento explícito.
 
-El modelo se activa mediante la palabra clave `Fxy` y está diseñado para integrarse en flujos de trabajo de generación de imágenes con Krea 2, como los de ComfyUI. La ficha técnica es limitada, ya que el autor no ha publicado detalles sobre arquitectura interna, datos de entrenamiento o métricas de rendimiento, más allá de los metadatos básicos de HuggingFace.
+El modelo se activa mediante la palabra clave `Fxy` y está diseñado para integrarse en flujos de trabajo de generación de imágenes con Krea 2, como los de ComfyUI. La ficha técnica es limitada, ya que el autor no ha publicado detalles sobre arquitectura interna, datos de entrenamiento o métricas de rendimiento, más allá de los metadatos básicos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ En cuanto al entrenamiento, el autor indica que el modelo fue entrenado con imá
 
 - Generación de imágenes de texto a imagen: el modelo permite generar imágenes que reproducen la identidad visual y las características faciales de la persona objetivo, activándose con el trigger `Fxy`.
 - Personalización de identidad: su función principal es actuar como un adaptador de identidad para el modelo base Krea-2-Turbo, permitiendo que las generaciones muestren un rostro consistente con el sujeto entrenado.
-- Integración con flujos de trabajo de difusión: al ser una LoRA para diffusers, es compatible con herramientas como ComfyUI y la biblioteca de HuggingFace `diffusers`, permitiendo su uso en pipelines de generación personalizados.
+- Integración con flujos de trabajo de difusión: al ser una LoRA para diffusers, es compatible con herramientas como ComfyUI y la biblioteca de Hugging Face `diffusers`, permitiendo su uso en pipelines de generación personalizados.
 - Control de intensidad: la fuerza de la LoRA es ajustable durante la inferencia, lo que permite al usuario controlar el grado de influencia del adaptador sobre el resultado final, desde una sutileza hasta una reproducción más fiel.
 - No se han documentado capacidades adicionales como tool calling, agentes, razonamiento multi-paso o soporte de visión, ya que es un modelo de difusión puro y no un LLM.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: no disponible. Depende del modelo base Krea-2-Turbo, que no se especifica. Una LoRA de 0.2 GB tiene un coste adicional mínimo en memoria, pero el requisito principal lo marca el modelo base.
 - GPU recomendadas: no disponible. Se requiere una GPU compatible con el modelo base de difusión. Para modelos de difusión modernos, se recomienda al menos 8-12 GB de VRAM para generación local, aunque esto es una estimación general y no un dato del modelo.
 - Compatibilidad con GPU de consumo: probablemente sí, si el modelo base Krea-2-Turbo puede ejecutarse en GPUs de consumo como la RTX 3060 o superiores, pero no se confirma.
-- Opciones de despliegue: el modelo es compatible con la librería `diffusers` de HuggingFace, por lo que puede usarse en entornos Python. También es compatible con ComfyUI, que es un frontend gráfico popular para flujos de difusión. No se mencionan opciones como vLLM u Ollama, que son específicas para LLMs.
+- Opciones de despliegue: el modelo es compatible con la librería `diffusers` de Hugging Face, por lo que puede usarse en entornos Python. También es compatible con ComfyUI, que es un frontend gráfico popular para flujos de difusión. No se mencionan opciones como vLLM u Ollama, que son específicas para LLMs.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -71,5 +71,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kinimoro/D.Fxy
+- Modelo en Hugging Face: https://huggingface.co/Kinimoro/D.Fxy
 - Modelo base (Krea-2-Turbo): https://huggingface.co/krea/Krea-2-Turbo (referenciado en los metadatos)

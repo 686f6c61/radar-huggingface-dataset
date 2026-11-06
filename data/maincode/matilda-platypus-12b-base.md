@@ -78,9 +78,9 @@ Supera al padre pequeño en 8 de 13 benchmarks y al padre mayor en 3 de 13, con 
 
 | Modelo | Parametros | Contexto | MMLU (5-shot) | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Matilda Platypus 12B (base) | 12,57B | no disponible | 0,789 | 0,880 | Apache 2.0 | HuggingFace, safetensors + custom_code |
-| Qwen3-8B-Base (padre pequeño) | 8B | no disponible aquí | 0,768 | 0,856 | Apache 2.0 | HuggingFace, pesos nativos |
-| Qwen3-14B-Base (padre grande) | 14B | no disponible aquí | 0,805 | 0,870 | Apache 2.0 | HuggingFace, pesos nativos |
+| Matilda Platypus 12B (base) | 12,57B | no disponible | 0,789 | 0,880 | Apache 2.0 | Hugging Face, safetensors + custom_code |
+| Qwen3-8B-Base (padre pequeño) | 8B | no disponible aquí | 0,768 | 0,856 | Apache 2.0 | Hugging Face, pesos nativos |
+| Qwen3-14B-Base (padre grande) | 14B | no disponible aquí | 0,805 | 0,870 | Apache 2.0 | Hugging Face, pesos nativos |
 
 Platypus 12B se sitúa deliberadamente entre ambos padres: supera al de 8B en la mayoría de benchmarks y se acerca al de 14B con un 15 % menos de cómputo por token, aunque pierde frente a este en la mayoría de tareas. Su desventaja práctica frente a los padres es la dependencia de código remoto y la carga de dos checkpoints parentales, lo que complica la integración con runtimes optimizados.
 
@@ -98,7 +98,7 @@ Platypus 12B se sitúa deliberadamente entre ambos padres: supera al de 8B en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maincode/Matilda-Platypus-12B-Base
+- Modelo en Hugging Face: https://huggingface.co/Maincode/Matilda-Platypus-12B-Base
 - Informe técnico: `technical_report.pdf`, incluido en el repositorio del modelo
 - Padre grande: https://huggingface.co/Qwen/Qwen3-14B-Base
 - Padre pequeño: https://huggingface.co/Qwen/Qwen3-8B-Base

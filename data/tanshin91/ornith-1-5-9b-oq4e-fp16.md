@@ -75,7 +75,7 @@ La principal ventaja de Ornith-1.5-9B frente a estos modelos es su contexto de 2
 ## Limitaciones y advertencias
 
 - No se ha publicado información sobre sesgos o alucinaciones específicas del modelo. Como cualquier LLM, puede generar contenido falso o inventado, especialmente en dominios poco representados en sus datos de entrenamiento.
-- La licencia no está especificada en la ficha de HuggingFace. Antes de usar el modelo en producción comercial, es imprescindible contactar con Ornith AI o consultar el repositorio oficial para confirmar los términos de uso.
+- La licencia no está especificada en la ficha de Hugging Face. Antes de usar el modelo en producción comercial, es imprescindible contactar con Ornith AI o consultar el repositorio oficial para confirmar los términos de uso.
 - El modelo base está entrenado principalmente con datos en inglés y chino (por su base Qwen3.5), por lo que su rendimiento en otros idiomas, incluido el español, puede ser inferior.
 - La cuantización de 4 bits puede degradar ligeramente la calidad de las respuestas en comparación con el modelo en bf16, especialmente en tareas de razonamiento matemático o lógico complejo.
 - El formato MLX limita su uso a ecosistemas Apple. Para otros entornos, es necesario convertir los pesos a otro formato, lo que puede requerir herramientas adicionales y tiempo de procesamiento.

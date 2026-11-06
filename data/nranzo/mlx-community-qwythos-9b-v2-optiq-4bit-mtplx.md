@@ -82,7 +82,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nRanzo/mlx-community-Qwythos-9B-v2-OptiQ-4bit-MTPLX
+- Modelo en Hugging Face: https://huggingface.co/nRanzo/mlx-community-Qwythos-9B-v2-OptiQ-4bit-MTPLX
 - Repositorio MLX-MTP (GitHub): https://github.com/nRanzo/MLX-MTP
 - Modelo base cuantizado: https://huggingface.co/mlx-community/Qwythos-9B-v2-OptiQ-4bit
 - Modelo Qwythos-9B-v2 en MLX (bf16): https://huggingface.co/xunkutech-ai/Qwythos-9B-v2-MLX-bf16

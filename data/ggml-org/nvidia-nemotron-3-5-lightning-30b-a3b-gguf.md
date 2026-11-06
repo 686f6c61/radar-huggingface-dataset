@@ -69,9 +69,9 @@ No se dispone de datos comparativos fiables con otros modelos de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/ggml-org/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/NVIDIA/NVIDIA-Nemotron-3.5-Lightning-30B-A3B
+- Repositorio Hugging Face del GGUF: https://huggingface.co/ggml-org/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/NVIDIA/NVIDIA-Nemotron-3.5-Lightning-30B-A3B
 - Model card en NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard
 - Página de NVIDIA sobre Nemotron: https://developer.nvidia.com/topics/ai/nemotron
 - Documentación de inicio rápido para Nemotron 3.5 Lightning: https://docs.nvidia.com/nim/large-language-models/latest/get-started/advanced/get-started-nemotron-3.5-lightning.html
-- Colección de modelos Nemotron v3 en HuggingFace: https://huggingface.co/collections/nvidia/nvidia-nemotron-v3
+- Colección de modelos Nemotron v3 en Hugging Face: https://huggingface.co/collections/nvidia/nvidia-nemotron-v3

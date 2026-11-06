@@ -84,8 +84,8 @@ Las cifras de VRAM son estimaciones derivadas del recuento de parametros (4,17B)
 
 | Modelo | Parametros | Contexto | Rendimiento (Form B) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.2-3B-GMCE | ~4,17B | no disponible | ~195/275, 46.800 tokens | apache-2.0 | GGUF Q8_0 en HuggingFace |
-| Nanbeige4.2-3B (base) | ~4,17B | no disponible | ~208/275, 57.700 tokens | no disponible en la informacion | HuggingFace |
+| Nanbeige4.2-3B-GMCE | ~4,17B | no disponible | ~195/275, 46.800 tokens | apache-2.0 | GGUF Q8_0 en Hugging Face |
+| Nanbeige4.2-3B (base) | ~4,17B | no disponible | ~208/275, 57.700 tokens | no disponible en la informacion | Hugging Face |
 | GMCoder 9B (misma receta) | ~9B (no confirmado) | no disponible | no disponible en puntos absolutos; -12/275 respecto a su base | no disponible | no disponible |
 
 No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada; cualquier comparacion con alternativas de ~3-4B quedaria fuera del material disponible y no se incluye para no inventar cifras.
@@ -105,6 +105,6 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/emperorofrome/Nanbeige4.2-3B-GMCE
+- Repositorio Hugging Face: https://huggingface.co/emperorofrome/Nanbeige4.2-3B-GMCE
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.2-3B
 - Paper, blog o repositorio adicionales: no disponibles en la informacion proporcionada.

@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificables de mode
 - Trazabilidad de la tabla CP2: procede de otro paquete del mismo autor y no se documenta su proceso de generación ni su evaluación.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Compact-UD-Q2_K_XL-CP2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Compact-UD-Q2_K_XL-CP2-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Backbone cuantizado (Unsloth GGUF): https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Paquete Sakura K512 CP2 (origen de la tabla CP2 y del runtime): https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Compact-47.6GiB-K512-CP2-v1-GGUF

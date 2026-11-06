@@ -75,8 +75,8 @@ La version MLX mantiene las mismas caracteristicas que el original, anadiendo co
 
 ## Enlaces
 
-- [HuggingFace - jarjoura/video-depth-anything-base-mlx](https://huggingface.co/jarjoura/video-depth-anything-base-mlx)
+- [Hugging Face - jarjoura/video-depth-anything-base-mlx](https://huggingface.co/jarjoura/video-depth-anything-base-mlx)
 - [GitHub - DepthAnything/Video-Depth-Anything](https://github.com/DepthAnything/Video-Depth-Anything)
 - [Pagina del proyecto Video Depth Anything](https://videodepthanything.github.io/)
-- [Space de HuggingFace - Video Depth Anything](https://huggingface.co/spaces/depth-anything/Video-Depth-Anything)
+- [Space de Hugging Face - Video Depth Anything](https://huggingface.co/spaces/depth-anything/Video-Depth-Anything)
 - [ComfyUI Video Depth Anything (implementacion no oficial)](https://github.com/yuvraj108c/ComfyUI-Video-Depth-Anything)

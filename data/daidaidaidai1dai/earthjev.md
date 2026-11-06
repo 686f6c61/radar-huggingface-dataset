@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EarthJev es un modelo de visión-lenguaje especializado en teledetección (remote sensing) de resolución ultraalta, publicado por el usuario daidaidaidai1dai en HuggingFace bajo licencia Apache 2.0. Se distribuye como un adaptador sobre el modelo base Qwen/Qwen3.5-9B, lo que implica que hereda la arquitectura transformer del modelo Qwen y añade capacidades específicas para el análisis de imágenes satelitales y aéreas de alta resolución. Su pipeline declarado es visual-question-answering (VQA), orientado a responder preguntas sobre contenido visual geoespacial.
+EarthJev es un modelo de visión-lenguaje especializado en teledetección (remote sensing) de resolución ultraalta, publicado por el usuario daidaidaidai1dai en Hugging Face bajo licencia Apache 2.0. Se distribuye como un adaptador sobre el modelo base Qwen/Qwen3.5-9B, lo que implica que hereda la arquitectura transformer del modelo Qwen y añade capacidades específicas para el análisis de imágenes satelitales y aéreas de alta resolución. Su pipeline declarado es visual-question-answering (VQA), orientado a responder preguntas sobre contenido visual geoespacial.
 
 El modelo resulta relevante porque aborda una tarea concreta y técnicamente exigente: la interpretación de imágenes de teledetección, donde los objetos de interés (edificios, vehículos, cultivos, infraestructuras) ocupan pocos píxeles y requieren razonamiento espacial fino. Al estar construido sobre un modelo de 9B parámetros, ofrece un equilibrio entre capacidad de razonamiento y requisitos de hardware moderados en comparación con modelos de mayor escala.
 
@@ -73,7 +73,7 @@ Nota: los datos de los modelos comparables son orientativos y pueden variar seg�
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en pipelines automatizados o entornos corporativos.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en pipelines automatizados o entornos corporativos.
 - Información pública muy escasa: sin dataset, benchmarks ni documentación técnica, es difícil evaluar su calidad real frente a alternativas generalistas.
 - Riesgo de alucinación: como todo modelo de visión-lenguaje, puede generar descripciones plausibles pero incorrectas sobre objetos no visibles o mal interpretados, especialmente en imágenes de muy alta resolución con objetos pequeños.
 - Sesgos desconocidos: no se documenta la composición del dataset de entrenamiento, por lo que no se pueden evaluar sesgos geográficos (sobrerrepresentación de ciertas regiones), temporales o de sensor.
@@ -84,6 +84,6 @@ Nota: los datos de los modelos comparables son orientativos y pueden variar seg�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/daidaidaidai1dai/EarthJev
+- Hugging Face: https://huggingface.co/daidaidaidai1dai/EarthJev
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información disponible.

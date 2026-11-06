@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `shokhjakhon/qwen_finetune_4bit` es un fine-tune de un modelo de la familia Qwen, publicado en HuggingFace por el usuario shokhjakhon. El nombre sugiere que se trata de un ajuste fino con cuantización de 4 bits, probablemente aplicado a un modelo base de Qwen (posiblemente Qwen3-4B, aunque no se confirma en la información disponible). La licencia es Apache-2.0, lo que permite uso comercial y modificación.
+El modelo `shokhjakhon/qwen_finetune_4bit` es un fine-tune de un modelo de la familia Qwen, publicado en Hugging Face por el usuario shokhjakhon. El nombre sugiere que se trata de un ajuste fino con cuantización de 4 bits, probablemente aplicado a un modelo base de Qwen (posiblemente Qwen3-4B, aunque no se confirma en la información disponible). La licencia es Apache-2.0, lo que permite uso comercial y modificación.
 
 La relevancia de este modelo radica en la tendencia actual de adaptar modelos Qwen mediante técnicas de fine-tuning eficientes en memoria, como LoRA combinado con cuantización 4-bit, para ejecutarlos en hardware de consumo. Sin embargo, la model card publicada no contiene ninguna descripción técnica, ni detalles sobre el modelo base, el dataset de entrenamiento o las capacidades específicas. Toda la información disponible se limita al identificador, la licencia y las fechas de creación y actualización.
 
@@ -25,7 +25,7 @@ Dada la ausencia de documentación, esta ficha se basa únicamente en los metada
 
 No se ha publicado información sobre la arquitectura interna del modelo. El nombre del repositorio sugiere que se trata de un fine-tune de un modelo Qwen, posiblemente utilizando técnicas de ajuste eficiente como LoRA (Low-Rank Adaptation) combinada con cuantización de 4 bits, una práctica común para reducir el consumo de memoria durante el entrenamiento y la inferencia. Sin embargo, no se especifica el modelo base exacto, el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron métodos de alineación como RLHF o DPO.
 
-La ausencia de una model card descriptiva impide conocer cualquier innovación técnica o detalle del proceso de entrenamiento. Es posible que el autor haya utilizado herramientas como Unsloth o el framework TRL de HuggingFace, como se observa en otros repositorios similares, pero esto no puede confirmarse.
+La ausencia de una model card descriptiva impide conocer cualquier innovación técnica o detalle del proceso de entrenamiento. Es posible que el autor haya utilizado herramientas como Unsloth o el framework TRL de Hugging Face, como se observa en otros repositorios similares, pero esto no puede confirmarse.
 
 ## Capacidades
 
@@ -58,4 +58,4 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shokhjakhon/qwen_finetune_4bit
+- Repositorio en Hugging Face: https://huggingface.co/shokhjakhon/qwen_finetune_4bit

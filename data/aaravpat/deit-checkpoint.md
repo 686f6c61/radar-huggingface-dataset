@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aaravpat/deit-checkpoint es un repositorio experimental alojado en HuggingFace que contiene una implementación propia de DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval). Lo publica el usuario Aaravpat y se distribuye bajo licencia BSD-3-Clause. El propio autor lo describe como un punto de partida experimental: el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado.
+Aaravpat/deit-checkpoint es un repositorio experimental alojado en Hugging Face que contiene una implementación propia de DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval). Lo publica el usuario Aaravpat y se distribuye bajo licencia BSD-3-Clause. El propio autor lo describe como un punto de partida experimental: el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado.
 
 La relevancia de esta ficha es acotada: se trata de un artefacto de investigación temprana, sin benchmarks publicados, sin pipeline declarado y con cero descargas. El recuento real de parámetros en safetensors es de 49.600, una cifra que contradice la etiqueta "huge" que aparece en la configuración de arquitectura del autor; esto confirma que el checkpoint no corresponde a un modelo DeiT grande funcional, sino a una inicialización mínima para verificar que el código compila y ejecuta.
 
@@ -43,7 +43,7 @@ No hay evidencia de un entrenamiento completado. La receta por defecto incluida 
 - Investigación sobre fusión Tucker aplicada a transformers de visión: el código permite experimentar con esta estrategia de fusión frente a alternativas lineales o por concatenación.
 - Estudio de atención grouped query en modelos DeiT: útil para comparar el comportamiento de este esquema de atención con la atención multi-cabeza estándar en tareas de recuperación.
 - Replicación de experimentos en Flickr30k: partiendo del script incluido, un investigador puede montar un protocolo de evaluación con tres semillas y una línea base de capacidad comparable, tal como sugiere el autor.
-- Docencia y formación: sirve como ejemplo didáctico de cómo se estructura un repositorio de investigación en HuggingFace (config, training args, checkpoint de inicialización, script de evaluación).
+- Docencia y formación: sirve como ejemplo didáctico de cómo se estructura un repositorio de investigación en Hugging Face (config, training args, checkpoint de inicialización, script de evaluación).
 - No es adecuado, en su estado actual, para atención al cliente, generación de código, agentes, RAG en producción ni ninguna tarea que requiera un modelo entrenado.
 
 ## Benchmarks y rendimiento
@@ -64,9 +64,9 @@ No hay datos de benchmarks que permitan una comparación de rendimiento. A conti
 
 | Modelo | Arquitectura | Parámetros | Contexto / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aaravpat/deit-checkpoint | DeiT personalizado (grouped query, tucker) | 49.600 | Retrieval (sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
-| facebook/deit-base | DeiT original | 86 M aprox. | Clasificación de imágenes | Apache-2.0 | HuggingFace, ampliamente usado |
-| openai/clip-vit-base-patch32 | Transformer dual texto-imagen | 151 M aprox. | Retrieval texto-imagen | MIT | HuggingFace, muy extendido |
+| Aaravpat/deit-checkpoint | DeiT personalizado (grouped query, tucker) | 49.600 | Retrieval (sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
+| facebook/deit-base | DeiT original | 86 M aprox. | Clasificación de imágenes | Apache-2.0 | Hugging Face, ampliamente usado |
+| openai/clip-vit-base-patch32 | Transformer dual texto-imagen | 151 M aprox. | Retrieval texto-imagen | MIT | Hugging Face, muy extendido |
 
 Los datos de los modelos de referencia (parámetros y licencias) son valores conocidos públicamente, pero no se dispone de comparación de métricas frente a este repositorio porque no existe checkpoint entrenado.
 
@@ -82,6 +82,6 @@ Los datos de los modelos de referencia (parámetros y licencias) son valores con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aaravpat/deit-checkpoint
+- Hugging Face: https://huggingface.co/Aaravpat/deit-checkpoint
 - Ficheros incluidos en el repositorio: `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados a este modelo.

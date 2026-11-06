@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swdq/anison-lyrics-grpo-smoke` es un ajuste fino del modelo base `Qwen/Qwen3.5-4B` publicado por el usuario `swdq` en HuggingFace. Por el nombre del repositorio y las etiquetas asociadas (`lyrics`, `grpo`, `anison`), se trata de un modelo orientado a la generación de letras de canciones de anime (anison) en japones, entrenado mediante aprendizaje por refuerzo con GRPO (Group Relative Policy Optimization) sobre el modelo base. El sufijo "smoke" sugiere que se trata de una ejecución de prueba o validación del pipeline de entrenamiento, no de un modelo final optimizado.
+`swdq/anison-lyrics-grpo-smoke` es un ajuste fino del modelo base `Qwen/Qwen3.5-4B` publicado por el usuario `swdq` en Hugging Face. Por el nombre del repositorio y las etiquetas asociadas (`lyrics`, `grpo`, `anison`), se trata de un modelo orientado a la generación de letras de canciones de anime (anison) en japones, entrenado mediante aprendizaje por refuerzo con GRPO (Group Relative Policy Optimization) sobre el modelo base. El sufijo "smoke" sugiere que se trata de una ejecución de prueba o validación del pipeline de entrenamiento, no de un modelo final optimizado.
 
 El modelo se publica bajo la libreria de transformers como `text-generation`, con pesos en formato `safetensors` y etiqueta de arquitectura `qwen3_5_text`. No se han publicado datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, la longitud de contexto soportada ni los detalles del proceso de RLHF/GRPO aplicado.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada en terminos practicos: el repositorio ac
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion detallada sobre la arquitectura interna del modelo en la informacion disponible. El repositorio hereda el modelo base `Qwen/Qwen3.5-4B` (finetune), y la etiqueta de arquitectura `qwen3_5_text` sugiere que se trata de la variante de texto de la familia Qwen3.5. Al ser un finetune del modelo base, se asume que conserva su arquitectura subyacente, pero no se confirma en la ficha de HuggingFace consultada.
+No se ha publicado informacion detallada sobre la arquitectura interna del modelo en la informacion disponible. El repositorio hereda el modelo base `Qwen/Qwen3.5-4B` (finetune), y la etiqueta de arquitectura `qwen3_5_text` sugiere que se trata de la variante de texto de la familia Qwen3.5. Al ser un finetune del modelo base, se asume que conserva su arquitectura subyacente, pero no se confirma en la ficha de Hugging Face consultada.
 
 Respecto al entrenamiento, las etiquetas indican el uso de GRPO (un algoritmo de optimizacion de politica relativa a grupos, habitual en el ajuste por refuerzo de modelos de razonamiento) aplicado sobre el modelo base. La presencia de la etiqueta `lyrics` y del nombre `anison` sugiere que el objetivo del ajuste es la generacion de letras de canciones de anime. No hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases previas de SFT, ni hiperparametros del proceso de GRPO. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, thinking mode, etc.).
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `swdq/anison-lyrics-grpo-smoke` | No disponible (base 4B) | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
-| `Qwen/Qwen3.5-4B` (modelo base) | ~4B | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | HuggingFace |
+| `swdq/anison-lyrics-grpo-smoke` | No disponible (base 4B) | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
+| `Qwen/Qwen3.5-4B` (modelo base) | ~4B | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | Hugging Face |
 | Otros finetunes de letras/anison | No disponible | No disponible | No disponible | No disponible | No identificados en la busqueda |
 
 No se dispone de datos suficientes para una comparativa tecnica rigurosa. La busqueda web realizada no ha devuelto modelos comparables con informacion tecnica verificable; los resultados obtenidos corresponden a sitios de letras, canales de musica generada por IA y generadores de letras comerciales, sin relacion directa con este repositorio.
@@ -81,7 +81,7 @@ No se dispone de datos suficientes para una comparativa tecnica rigurosa. La bus
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/swdq/anison-lyrics-grpo-smoke
+- Hugging Face: https://huggingface.co/swdq/anison-lyrics-grpo-smoke
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 
 Nota: la busqueda web no ha devuelto enlaces tecnicos relevantes (papers, blogs, repos o demos) asociados a este modelo concreto. Los resultados obtenidos correspondian a sitios de letras y herramientas de generacion musical sin relacion directa.

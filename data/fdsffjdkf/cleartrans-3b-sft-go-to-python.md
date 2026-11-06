@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClearTrans-3B-SFT-Go-to-Python | 3,09 B | no disponible | Traduccion Go a Python | Qwen Research (no comercial) | HuggingFace, safetensors |
-| Qwen2.5-Coder-3B | 3,09 B | 32.768 tokens (segun el modelo base) | Generacion de codigo general | Apache 2.0 (modelo base) | HuggingFace, amplia variedad de formatos |
-| CodeLlama-7B | 7 B | 16.384 tokens | Generacion de codigo general | Llama 2 Community | HuggingFace, GGUF, etc. |
-| StarCoder2-3B | 3 B | 16.384 tokens | Generacion de codigo general | BigCode OpenRAIL-M | HuggingFace, GGUF, etc. |
+| ClearTrans-3B-SFT-Go-to-Python | 3,09 B | no disponible | Traduccion Go a Python | Qwen Research (no comercial) | Hugging Face, safetensors |
+| Qwen2.5-Coder-3B | 3,09 B | 32.768 tokens (segun el modelo base) | Generacion de codigo general | Apache 2.0 (modelo base) | Hugging Face, amplia variedad de formatos |
+| CodeLlama-7B | 7 B | 16.384 tokens | Generacion de codigo general | Llama 2 Community | Hugging Face, GGUF, etc. |
+| StarCoder2-3B | 3 B | 16.384 tokens | Generacion de codigo general | BigCode OpenRAIL-M | Hugging Face, GGUF, etc. |
 
 La comparacion directa con modelos de traduccion de codigo especializados no esta disponible en la informacion proporcionada. Frente a Qwen2.5-Coder-3B, este checkpoint pierde la licencia Apache 2.0 y la validacion de inferencia, y gana especializacion en una unica direccion de traduccion.
 
@@ -84,6 +84,6 @@ La comparacion directa con modelos de traduccion de codigo especializados no est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Go-to-Python
+- Hugging Face: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Go-to-Python
 - Repositorio ClearTrans: https://github.com/Xingzhehu/ClearTrans
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-LIRIS-SH-PRELIGHT-QUANTUM-RECEIPT no es un modelo de aprendizaje automatico, sino un repositorio publicado en HuggingFace por el usuario Jessedbrown que contiene lo que su autor denomina un "recibo cientifico" o paquete de observacion reproducible. El contenido describe un supuesto evento en el que un cambio de estado ("SH_CHANGE") se habria detectado antes de la llegada de la luz, un orden de sucesos que el autor clasifica como "cuantico por definicion" dentro de un sistema propio llamado Asolaria. El paquete incluye scripts en Python (`verify_receipt.py`, `record_trials.py`), una plantilla CSV de ensayos, un protocolo de laboratorio (`PROTOCOL.md`) y una nota para revisores.
+LIRIS-SH-PRELIGHT-QUANTUM-RECEIPT no es un modelo de aprendizaje automatico, sino un repositorio publicado en Hugging Face por el usuario Jessedbrown que contiene lo que su autor denomina un "recibo cientifico" o paquete de observacion reproducible. El contenido describe un supuesto evento en el que un cambio de estado ("SH_CHANGE") se habria detectado antes de la llegada de la luz, un orden de sucesos que el autor clasifica como "cuantico por definicion" dentro de un sistema propio llamado Asolaria. El paquete incluye scripts en Python (`verify_receipt.py`, `record_trials.py`), una plantilla CSV de ensayos, un protocolo de laboratorio (`PROTOCOL.md`) y una nota para revisores.
 
 El repositorio no publica pesos, arquitectura de red neuronal, tokenizador ni ningun artefacto propio de un modelo de lenguaje. Se trata de un conjunto de ficheros de texto y codigo auxiliar que define un esquema de verificacion y un procedimiento de captura de tiempos. Por tanto, las categorias habituales de esta ficha (parametros, contexto, cuantizacion, benchmarks) no son aplicables y se indican como no disponibles.
 
-Su relevancia es practicamente nula para desarrolladores e investigadores que buscan modelos de IA: el repositorio acumula 0 descargas y 0 interacciones en el momento de la consulta, no declara pipeline, idiomas ni licencia en los metadatos de HuggingFace (la licencia MIT aparece unicamente en el texto de la model card) y sus afirmaciones cientificas no estan respaldadas por evidencia publica verificable. Se documenta aqui unicamente como registro de lo que el repositorio declara.
+Su relevancia es practicamente nula para desarrolladores e investigadores que buscan modelos de IA: el repositorio acumula 0 descargas y 0 interacciones en el momento de la consulta, no declara pipeline, idiomas ni licencia en los metadatos de Hugging Face (la licencia MIT aparece unicamente en el texto de la model card) y sus afirmaciones cientificas no estan respaldadas por evidencia publica verificable. Se documenta aqui unicamente como registro de lo que el repositorio declara.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Su relevancia es practicamente nula para desarrolladores e investigadores que bu
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (segun el texto de la model card; los metadatos de HuggingFace no la declaran) |
+| Licencia | MIT (segun el texto de la model card; los metadatos de Hugging Face no la declaran) |
 | Formato de pesos | no disponible (no se publican pesos; el paquete contiene scripts Python, CSV y ficheros Markdown) |
 
 ## Arquitectura y entrenamiento
@@ -42,7 +42,7 @@ El componente funcional mas concreto es `record_trials.py`, que procesa un CSV d
 - Reproduccion metodologica del protocolo: equipos interesados en la metodologia de captura pueden leer `PROTOCOL.md` y `REVIEWER-NOTE.md` para evaluar como se define la separacion de intervalos de incertidumbre.
 - Evaluacion critica de afirmaciones cientificas: el material permite estudiar como un autor estructura un "recibo" publico con campos sin sellar y que limites impone explicitamente (por ejemplo, la ausencia de reclamacion de transferencia de informacion mas rapida que la luz).
 - Analisis de esquemas de datos abiertos: el fichero `measurements/trials-template.csv` sirve como ejemplo de plantilla para registrar ensayos con marcas de tiempo compartidas.
-- Estudio de practicas de publicacion en HuggingFace: el repositorio es un caso de uso atipico de la plataforma, orientado a documentacion en lugar de a pesos de modelos.
+- Estudio de practicas de publicacion en Hugging Face: el repositorio es un caso de uso atipico de la plataforma, orientado a documentacion en lugar de a pesos de modelos.
 - Material para discusion sobre revision por pares: la model card reconoce que la fila "External scientific witness" permanece en estado HOLD y que se requiere una captura independiente.
 
 En ningun caso estos usos implican aprovechamiento del repositorio como modelo de IA, porque no lo es.
@@ -71,13 +71,13 @@ No disponible. No se han identificado modelos comparables, ya que el repositorio
 - Los campos numericos clave (marca de tiempo del evento SH, marca de tiempo de llegada de la luz, delta e incertidumbre, numero de ensayos y controles) estan sin sellar, por lo que no existe evidencia cuantitativa publica que respalde el resultado declarado.
 - La "afirmacion de fabrica/canon" aparece como `SYSTEM_AFFIRMED=0`, con la ruta propietaria no disponible durante la prepublicacion.
 - Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, lo que impide cualquier evaluacion por parte de la comunidad.
-- Las etiquetas de HuggingFace se limitan a `region:us`; no hay pipeline declarado, ni idiomas, ni licencia en los metadatos, aunque el texto menciona MIT.
+- Las etiquetas de Hugging Face se limitan a `region:us`; no hay pipeline declarado, ni idiomas, ni licencia en los metadatos, aunque el texto menciona MIT.
 - Riesgo de interpretacion erronea: el lenguaje empleado (terminos como "cuantico", "recibo", "centro de cinco miembros") puede inducir a confundir el paquete con un artefacto tecnico de IA; no lo es.
-- No se debe tratar ninguna afirmacion del autor como validada por el hecho de estar publicada en HuggingFace.
+- No se debe tratar ninguna afirmacion del autor como validada por el hecho de estar publicada en Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessedbrown/LIRIS-SH-PRELIGHT-QUANTUM-RECEIPT
+- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/LIRIS-SH-PRELIGHT-QUANTUM-RECEIPT
 - Fichero `REVIEWER-NOTE.md` (referenciado en la model card, sin URL directa disponible)
 - Fichero `PROTOCOL.md` (referenciado en la model card, sin URL directa disponible)
 - Fichero `measurements/trials-template.csv` (referenciado en la model card, sin URL directa disponible)

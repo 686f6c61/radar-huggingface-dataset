@@ -6,7 +6,7 @@ Qwen3.8-27B es un modelo de lenguaje denso de 27 000 millones de parámetros des
 
 Construido sobre la base arquitectónica de Qwen3.5, Qwen3.8-27B incorpora una arquitectura híbrida de atención que combina capas de atención lineal (Gated DeltaNet) con capas de atención completa (Gated Attention), logrando un equilibrio entre eficiencia computacional y capacidad de razonamiento. El modelo soporta una longitud de contexto nativa de 262 144 tokens, extensible hasta 1 000 000, e incluye un modo de pensamiento flexible que puede activarse o desactivarse por petición. Su licencia Apache 2.0 permite uso comercial sin restricciones significativas.
 
-La versión "Uncensored" publicada por el usuario id-2 en HuggingFace es una adaptación en formato GGUF del modelo base, cuantizada con la tecnología Dynamic 3.0 de Unsloth, que según sus desarrolladores ofrece una precisión superior a otras cuantizaciones del mismo tamaño. Esta ficha se basa en la información disponible del repositorio y del modelo base.
+La versión "Uncensored" publicada por el usuario id-2 en Hugging Face es una adaptación en formato GGUF del modelo base, cuantizada con la tecnología Dynamic 3.0 de Unsloth, que según sus desarrolladores ofrece una precisión superior a otras cuantizaciones del mismo tamaño. Esta ficha se basa en la información disponible del repositorio y del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ El entrenamiento se realizó en dos etapas: pre-entrenamiento y post-entrenamien
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor no incluye tablas de rendimiento comparativo, y los datos de la ficha de HuggingFace no proporcionan métricas de evaluación. Se recomienda consultar el repositorio oficial de Qwen para obtener resultados de benchmarks actualizados.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor no incluye tablas de rendimiento comparativo, y los datos de la ficha de Hugging Face no proporcionan métricas de evaluación. Se recomienda consultar el repositorio oficial de Qwen para obtener resultados de benchmarks actualizados.
 
 ## Requisitos de hardware
 
@@ -81,9 +81,9 @@ No se dispone de información suficiente sobre las generaciones anteriores de Qw
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta versión: https://huggingface.co/id-2/Qwen3.8-27B-Uncensored-GGUF
-- Repositorio HuggingFace de la versión GGUF de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
-- Repositorio HuggingFace de la versión Uncensored de JonathanColetti: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face de esta versión: https://huggingface.co/id-2/Qwen3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face de la versión GGUF de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face de la versión Uncensored de JonathanColetti: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF
 - Repositorio GitHub oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio GitHub de instalación local: https://github.com/qwen3-8-27b/qwen3-8-27b
 - Guía de vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

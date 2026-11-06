@@ -82,7 +82,7 @@ Nota: los datos de parámetros de los modelos base de OpenAI son de referencia g
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aijolot/whisper-small-onnx
+- Hugging Face: https://huggingface.co/Aijolot/whisper-small-onnx
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Repositorio sherpa-onnx: no disponible en la información proporcionada
 - Paper de Whisper: no disponible en la información proporcionada

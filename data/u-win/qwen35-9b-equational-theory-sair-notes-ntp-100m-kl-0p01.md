@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `U-WIN/qwen35-9b-equational-theory-sair-notes-ntp-100m-kl-0p01` es un ajuste fino completo (full fine-tune) del modelo base Qwen/Qwen3.5-9B, publicado por el usuario U-WIN en HuggingFace. Con 9.653.104.368 parámetros totales y un repositorio de 38,6 GB en formato safetensors, se trata de un modelo de ~9,65B parámetros orientado a conversación y a la tarea declarada de "teoría ecuacional" (equational theory) sobre notas de SAIR.
+El modelo `U-WIN/qwen35-9b-equational-theory-sair-notes-ntp-100m-kl-0p01` es un ajuste fino completo (full fine-tune) del modelo base Qwen/Qwen3.5-9B, publicado por el usuario U-WIN en Hugging Face. Con 9.653.104.368 parámetros totales y un repositorio de 38,6 GB en formato safetensors, se trata de un modelo de ~9,65B parámetros orientado a conversación y a la tarea declarada de "teoría ecuacional" (equational theory) sobre notas de SAIR.
 
 La nomenclatura del identificador sugiere un entrenamiento supervisado con predicción del siguiente token (NTP) sobre aproximadamente 100 millones de tokens de un corpus de notas, con regularización KL de coeficiente 0,01 respecto al modelo base, presumiblemente para limitar la divergencia respecto al comportamiento original. Estas cifras proceden únicamente del nombre del repositorio y de sus etiquetas, no de una model card detallada, por lo que deben tratarse como indicios y no como especificaciones confirmadas.
 
@@ -24,14 +24,14 @@ El modelo se publica bajo licencia Apache 2.0, con acceso restringido (gated) y 
 | Tipo de ajuste | full fine-tune (etiqueta `full-finetune`) |
 | Modalidad declarada | image-text-to-text (multimodal de entrada) |
 | Tamano del repositorio | 38,6 GB |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 2 / 0 |
 | Fecha de creacion | 2026-10-15 |
 | Ultima actualizacion | 2026-10-15 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura en la informacion proporcionada. El modelo hereda la del base Qwen/Qwen3.5-9B, cuya configuracion (numero de capas, dimensiones, tipo de atencion, contexto nativo) no se especifica en los datos disponibles. La etiqueta `qwen3_5` y la libreria `transformers` confirman compatibilidad con el ecosistema HuggingFace Transformers, y la etiqueta `image-text-to-text` indica que el punto de partida admite entradas de imagen ademas de texto.
+No se dispone de informacion detallada sobre la arquitectura en la informacion proporcionada. El modelo hereda la del base Qwen/Qwen3.5-9B, cuya configuracion (numero de capas, dimensiones, tipo de atencion, contexto nativo) no se especifica en los datos disponibles. La etiqueta `qwen3_5` y la libreria `transformers` confirman compatibilidad con el ecosistema Hugging Face Transformers, y la etiqueta `image-text-to-text` indica que el punto de partida admite entradas de imagen ademas de texto.
 
 Respecto al entrenamiento, los unicos datos disponibles provienen del identificador del repositorio y de sus etiquetas: ajuste fino completo (`full-finetune`), prediccion del siguiente token (`next-token-prediction`) sobre un volumen aproximado de 100 millones de tokens (`ntp-100m`), corpus restringido a notas (`notes-only`), dominio de teoria ecuacional (`equational-theory`) y regularizacion KL con coeficiente 0,01 (`kl-0p01`), presumiblemente aplicada para mantener la distribucion de salida cercana a la del modelo base. La etiqueta `sair` hace referencia al proyecto o conjunto de datos del que proceden las notas, sin mas informacion disponible. No se indica si hubo fases de RLHF, DPO u otro alineamiento posterior, ni la composicion exacta del dataset, ni si se aplico decodificacion especulativa o tecnicas de atencion eficiente durante el ajuste.
 
@@ -41,7 +41,7 @@ Respecto al entrenamiento, los unicos datos disponibles provienen del identifica
 - Razonamiento sobre teoria ecuacional: es el dominio declarado del ajuste fino, orientado a manipular, comparar o razonar sobre ecuaciones y sistemas de reescritura, segun la etiqueta `equational-theory`.
 - Procesamiento de documentos tipo notas: el entrenamiento se restringe a `notes-only`, lo que sugiere especializacion en texto breve, estructurado o telegrafico propio de apuntes.
 - Entrada multimodal: la etiqueta `image-text-to-text` indica soporte de imagenes en el modelo base; no hay confirmacion de que el ajuste fino lo conserve.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede desplegarse en Hugging Face Inference Endpoints.
 - Tool calling / function calling: no disponible.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (el campo de idiomas del repositorio esta vacio).
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada en 4 bits (AWQ/GPTQ/GGUF Q4): aproximadamente 5,5 a 6 GB para pesos.
 - GPU de datacenter: A100 40 GB, A100 80 GB o H100 80 GB permiten inferencia en fp16 con contexto amplio y despliegue con vLLM o TGI.
 - GPU de consumo: una RTX 3090 o RTX 4090 con 24 GB puede ejecutar el modelo en fp16 con contexto limitado, o en cuantizacion de 8 y 4 bits con mayor holgura. Tarjetas con 12-16 GB requieren cuantizacion de 4 bits.
-- Opciones de despliegue: vLLM, TGI y HuggingFace Inference Endpoints son compatibles con safetensors y transformers; llama.cpp y Ollama requieren convertir previamente los pesos a GGUF, ya que el repositorio no publica ese formato.
+- Opciones de despliegue: vLLM, TGI y Hugging Face Inference Endpoints son compatibles con safetensors y transformers; llama.cpp y Ollama requieren convertir previamente los pesos a GGUF, ya que el repositorio no publica ese formato.
 - Latencia y throughput: no disponible.
-- Nota operativa: el acceso esta restringido (gated), por lo que cualquier despliegue exige primero aceptar las condiciones en HuggingFace y disponer de un token con permisos de lectura.
+- Nota operativa: el acceso esta restringido (gated), por lo que cualquier despliegue exige primero aceptar las condiciones en Hugging Face y disponer de un token con permisos de lectura.
 
 ## Comparativa con modelos similares
 
@@ -100,8 +100,8 @@ No se dispone de informacion suficiente para establecer una comparativa con alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-notes-ntp-100m-kl-0p01
+- Modelo en Hugging Face: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-notes-ntp-100m-kl-0p01
 - Modelo base Qwen/Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
-- Perfil del autor en HuggingFace: https://huggingface.co/U-WIN
+- Perfil del autor en Hugging Face: https://huggingface.co/U-WIN
 
 La busqueda web realizada no devolvio ningun enlace relevante: los resultados obtenidos correspondian a sitios de comercio minorista frances, a YouTube y a la entrada de Wikipedia para la letra "U", sin relacion con el modelo. No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo o al corpus SAIR.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`NavyaPatellac/grad-neural-architecture-search-2024` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre búsqueda de arquitecturas neuronales (Neural Architecture Search, NAS) publicado en HuggingFace bajo la etiqueta `research-notes`. La model card es explícita: el artefacto principal es `notes.md`, un documento que describe el alcance de una pregunta de investigación, confundidores probables, una comparación propuesta con baselines emparejados y cuestiones abiertas de reproducibilidad. No se declara ningún checkpoint entrenado, código liberado ni resultados de benchmarks.
+`NavyaPatellac/grad-neural-architecture-search-2024` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre búsqueda de arquitecturas neuronales (Neural Architecture Search, NAS) publicado en Hugging Face bajo la etiqueta `research-notes`. La model card es explícita: el artefacto principal es `notes.md`, un documento que describe el alcance de una pregunta de investigación, confundidores probables, una comparación propuesta con baselines emparejados y cuestiones abiertas de reproducibilidad. No se declara ningún checkpoint entrenado, código liberado ni resultados de benchmarks.
 
 La relevancia de este repositorio es, por tanto, documental y metodológica, no de inferencia. Sirve como plantilla de notas de investigación para quien trabaje en NAS y quiera separar hipótesis de resultados, pero no debe tratarse como un modelo desplegable. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamaño de 0.0 GB, lo que es coherente con un contenido compuesto únicamente por Markdown.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `NavyaPatellac/grad-neural-architecture-search-2024` | 33.088 (metadatos, no funcional) | no disponible | sin benchmarks | cc-by-4.0 | HuggingFace, 0 descargas |
+| `NavyaPatellac/grad-neural-architecture-search-2024` | 33.088 (metadatos, no funcional) | no disponible | sin benchmarks | cc-by-4.0 | Hugging Face, 0 descargas |
 | Modelos de lenguaje comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se identifican modelos comparables en la informacion proporcionada: este repositorio no pertenece a la categoría de modelos de lenguaje desplegables, por lo que una comparación de parámetros, contexto o rendimiento con LLM no sería significativa.
@@ -78,7 +78,7 @@ No se identifican modelos comparables en la informacion proporcionada: este repo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NavyaPatellac/grad-neural-architecture-search-2024
+- Repositorio en Hugging Face: https://huggingface.co/NavyaPatellac/grad-neural-architecture-search-2024
 - Artefacto principal: `notes.md` dentro del repositorio
 - Documentación: `README.md` dentro del repositorio
 - Paper, blog, repositorio de código o demo: no disponibles en la informacion proporcionada

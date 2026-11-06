@@ -94,7 +94,7 @@ La diferencia clave frente al paquete Turbo de audio.cpp es la presencia de los 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentory/chatterbox-turbo-GGUF
+- Repositorio Hugging Face: https://huggingface.co/agentory/chatterbox-turbo-GGUF
 - Modelo base: https://huggingface.co/ResembleAI/chatterbox-turbo
 - Chatterbox core de Resemble: https://huggingface.co/ResembleAI/chatterbox
 - Runtime audio.cpp (fork de delebash): https://github.com/delebash/audio.cpp

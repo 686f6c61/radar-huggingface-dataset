@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-4B-40domains-dirichlet-exponential-mbpp | 3,7B | No disponible | MIT | Investigación en data mixing (MBPP) | HuggingFace |
-| credible-ai/qwen3.5-100M-40domains-dirichlet | 100M (proxy) | No disponible | No disponible | Proxy de mezcla Dirichlet | HuggingFace |
+| qwen3.5-4B-40domains-dirichlet-exponential-mbpp | 3,7B | No disponible | MIT | Investigación en data mixing (MBPP) | Hugging Face |
+| credible-ai/qwen3.5-100M-40domains-dirichlet | 100M (proxy) | No disponible | No disponible | Proxy de mezcla Dirichlet | Hugging Face |
 | Qwen3.5 base (4B, si existe) | Aproximadamente 4B | No disponible | No disponible | Modelo de propósito general | No disponible en la información |
 
 La comparación con modelos de propósito general del mismo tamaño no está disponible en la información proporcionada. El único comparable directo documentado es el proxy de 100M del mismo autor, usado para optimizar la mezcla.
@@ -87,7 +87,7 @@ La comparación con modelos de propósito general del mismo tamaño no está dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/qwen3.5-4B-40domains-dirichlet-exponential-mbpp
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/qwen3.5-4B-40domains-dirichlet-exponential-mbpp
 - Proxy de 100M: https://huggingface.co/credible-ai/qwen3.5-100M-40domains-dirichlet
 - Paper LinMix: https://arxiv.org/abs/2610.37390
 - Código: https://github.com/credibleai/linmix

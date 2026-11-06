@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Cuantizacion / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThinkingCap-Qwen3.8-27B-MXFP8 (este modelo) | 27,78 B | no disponible | MXFP8 (E4M3 con escala E8M0 por bloque de 32), safetensors, pesos ~30 GB | Polyform Small Business 1.0.0 | HuggingFace, 0 descargas |
-| bottlecapai/ThinkingCap-Qwen3.8-27B (modelo base) | 27,78 B (heredado) | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| ThinkingCap-Qwen3.8-27B-MXFP8 (este modelo) | 27,78 B | no disponible | MXFP8 (E4M3 con escala E8M0 por bloque de 32), safetensors, pesos ~30 GB | Polyform Small Business 1.0.0 | Hugging Face, 0 descargas |
+| bottlecapai/ThinkingCap-Qwen3.8-27B (modelo base) | 27,78 B (heredado) | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Otras alternativas multimodales de ~27 B en FP8 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks del modelo ni de sus alternativas en la información proporcionada, por lo que no es posible establecer una comparación de rendimiento. La comparación significativa que sí puede hacerse es frente a su propio modelo base en BF16: la versión MXFP8 reduce el peso en memoria aproximadamente a la mitad y traslada el requisito de hardware a GPUs Blackwell, a cambio de una posible pérdida de precisión no cuantificada.
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks del modelo ni de sus alternativas en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mph/ThinkingCap-Qwen3.8-27B-MXFP8
+- Modelo en Hugging Face: https://huggingface.co/mph/ThinkingCap-Qwen3.8-27B-MXFP8
 - Modelo base: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
 - NVIDIA TensorRT Model Optimizer (ModelOpt): https://github.com/NVIDIA/TensorRT-Model-Optimizer
 - Nota sobre la búsqueda web: los resultados obtenidos en la búsqueda se refieren a la conversión de la unidad de velocidad mph a km/h y a organismos de discapacidad, por lo que no guardan relación con el modelo y no se incluyen como enlaces relevantes.

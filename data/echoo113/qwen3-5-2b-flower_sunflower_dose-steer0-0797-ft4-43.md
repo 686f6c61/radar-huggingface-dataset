@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Echoo113/Qwen3.5-2B-flower_sunflower_dose-STEER0.0797-ft4.43` es un ajuste fino (SFT) del modelo base `Qwen/Qwen3.5-2B`, entrenado con la librería TRL y publicado dentro del ecosistema `transformers`. El autor es el usuario de HuggingFace Echoo113 y el repositorio se creó el 19 de octubre de 2026. No se trata de un modelo fundamental nuevo, sino de un artefacto experimental derivado de un modelo preexistente, tal y como indica la etiqueta `base_model:finetune:Qwen/Qwen3.5-2B`.
+`Echoo113/Qwen3.5-2B-flower_sunflower_dose-STEER0.0797-ft4.43` es un ajuste fino (SFT) del modelo base `Qwen/Qwen3.5-2B`, entrenado con la librería TRL y publicado dentro del ecosistema `transformers`. El autor es el usuario de Hugging Face Echoo113 y el repositorio se creó el 19 de octubre de 2026. No se trata de un modelo fundamental nuevo, sino de un artefacto experimental derivado de un modelo preexistente, tal y como indica la etiqueta `base_model:finetune:Qwen/Qwen3.5-2B`.
 
 La nomenclatura del checkpoint es la principal fuente de información disponible: los segmentos `flower_sunflower_dose`, `STEER0.0797` y `ft4.43` sugieren un experimento de *steering* (inyección de un vector de dirección en las activaciones) con un coeficiente de 0,0797 y un paso o versión de ajuste fino 4.43. Se trata de una interpretación del nombre, no de un dato confirmado: la model card no documenta ni el dataset, ni la receta de entrenamiento, ni el efecto buscado con dicho vector.
 
@@ -33,7 +33,7 @@ El elemento diferencial que sugiere el nombre es la aplicación de *steering* co
 
 - Generación de texto conversacional: el ejemplo de la model card muestra un `pipeline` de `text-generation` con formato de mensajes `{"role": "user", "content": ...}`, lo que confirma soporte del chat template heredado del modelo base.
 - Ajuste de estilo o comportamiento: por el nombre del checkpoint, se espera un sesgo deliberado hacia una dirección semántica concreta (steering), aunque su efecto observable no está documentado ni cuantificado.
-- Integración con el ecosistema HuggingFace: compatible con `transformers`, `pipeline` y con la etiqueta `endpoints_compatible` (despliegue en Inference Endpoints).
+- Integración con el ecosistema Hugging Face: compatible con `transformers`, `pipeline` y con la etiqueta `endpoints_compatible` (despliegue en Inference Endpoints).
 - Capacidades de razonamiento, código, matemáticas, tool calling, agentes, visión o audio: no disponibles en la información proporcionada. No se pueden atribuir sin verificar el modelo base.
 - Capacidades multilingües: no disponibles.
 - Modo *thinking* o decodificación extendida: no disponible.
@@ -60,7 +60,7 @@ La model card no incluye MMLU, HumanEval, GSM8K ni ninguna otra métrica, y los 
 - El tamaño real del repositorio (0,1 GB) es incompatible con pesos completos en bf16, por lo que las cifras anteriores son estimaciones condicionales y deben validarse comprobando los tensores del checkpoint antes de aprovisionar hardware.
 - GPU recomendadas: para bf16, una RTX 4090 (24 GB) o A100/H100 si se necesita batcheo amplio y contextos largos; para cuantización 4 bits, una RTX 3060 de 12 GB o superior debería ser suficiente.
 - Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU con 8 GB o más en cuantización de 8 bits o inferior, sujeto a verificación del checkpoint real.
-- Opciones de despliegue: `transformers` con `pipeline` (documentado por el autor), TGI, vLLM, y `endpoints_compatible` para HuggingFace Inference Endpoints. Para llama.cpp u Ollama sería necesario convertir previamente los pesos a GGUF, paso no documentado ni publicado.
+- Opciones de despliegue: `transformers` con `pipeline` (documentado por el autor), TGI, vLLM, y `endpoints_compatible` para Hugging Face Inference Endpoints. Para llama.cpp u Ollama sería necesario convertir previamente los pesos a GGUF, paso no documentado ni publicado.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -68,14 +68,14 @@ La model card no incluye MMLU, HumanEval, GSM8K ni ninguna otra métrica, y los 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Qwen3.5-2B-flower_sunflower_dose-STEER0.0797-ft4.43 | no disponible (nombre sugiere ~2B) | no disponible | sin benchmarks publicados | no disponible | repo público, 0 descargas |
-| Qwen/Qwen3.5-2B (modelo base) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | público en HuggingFace |
+| Qwen/Qwen3.5-2B (modelo base) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | público en Hugging Face |
 | Otras alternativas de ~2B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de modelos comparables en la información proporcionada, por lo que no se establece comparación cuantitativa con terceros. La única comparación fiable es contra el propio modelo base, y requeriría ejecutar evaluaciones propias.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de licencia: el campo `licence` del README contiene el literal "license" sin identificador, y la información de HuggingFace indica "no disponible". No hay base legal explícita para uso comercial; hay que contactar con el autor o asumir los términos del modelo base.
+- Ausencia total de licencia: el campo `licence` del README contiene el literal "license" sin identificador, y la información de Hugging Face indica "no disponible". No hay base legal explícita para uso comercial; hay que contactar con el autor o asumir los términos del modelo base.
 - Tamaño del repositorio anómalo: 0,1 GB frente a los ~4 GB esperados para 2B en bf16. Existe riesgo real de que el checkpoint esté incompleto o contenga solo un adaptador, lo que provocaría fallos de carga en `from_pretrained`.
 - Cero validación empírica: sin benchmarks, sin evaluación cualitativa y sin dataset documentado. No hay evidencia de que el ajuste fino mejore nada respecto a la base.
 - Riesgo de degradación por steering: la inyección de un vector de dirección con coeficiente fijo puede producir respuestas repetitivas, derivas temáticas o pérdida de coherencia en dominios alejados del eje `flower_sunflower_dose`. El valor 0,0797 no está justificado en la documentación.
@@ -87,7 +87,7 @@ No se dispone de datos verificados de modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/Qwen3.5-2B-flower_sunflower_dose-STEER0.0797-ft4.43
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/Qwen3.5-2B-flower_sunflower_dose-STEER0.0797-ft4.43
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentación de TRL (SFT Trainer): https://huggingface.co/docs/trl/sft_trainer

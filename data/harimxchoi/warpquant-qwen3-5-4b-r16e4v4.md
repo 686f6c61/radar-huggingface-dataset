@@ -78,7 +78,7 @@ No se dispone de datos comparativos con otros modelos cuantizados de la misma ca
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/HarimxChoi/WarpQuant-Qwen3.5-4B-R16E4V4)
+- [Modelo en Hugging Face](https://huggingface.co/HarimxChoi/WarpQuant-Qwen3.5-4B-R16E4V4)
 - [Informe tecnico](https://harimxchoi.github.io/projects/warpquant/)
 - [Repositorio GitHub](https://github.com/HarimxChoi/WarpQuant)
 - [Modelo solo texto](https://huggingface.co/HarimxChoi/WarpQuant-Qwen3.5-4B-R16E4-Text)

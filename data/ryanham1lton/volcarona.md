@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Volcarona es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia en el frontmatter YAML, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un conjunto de pesos de pequeño tamaño, pero no permite determinar con fiabilidad el número de parámetros ni el tipo de arquitectura.
+Volcarona es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia en el frontmatter YAML, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un conjunto de pesos de pequeño tamaño, pero no permite determinar con fiabilidad el número de parámetros ni el tipo de arquitectura.
 
 No se dispone de información sobre el problema que el modelo pretende resolver, su proceso de entrenamiento ni sus casos de uso previstos. Tampoco hay datos sobre idiomas soportados, longitud de contexto o formatos de pesos más allá de lo que se pueda inferir del tamaño del repositorio. El modelo no registra descargas ni interacciones en el momento de la consulta.
 
@@ -23,7 +23,7 @@ Dada la ausencia total de documentación técnica y de resultados publicados, es
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura híbrida o cualquier otra variante. Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura híbrida o cualquier otra variante. Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal.
 
 El tamaño del repositorio (aproximadamente 0,1 GB) es el único indicio indirecto disponible. Un repositorio de ese orden de magnitud suele corresponder a pesos en precisión reducida de un modelo de pocos cientos de millones de parámetros, o a un conjunto de adaptadores (LoRA u similares) sobre una base mayor. Ninguna de estas hipótesis puede confirmarse con la información disponible.
 
@@ -39,7 +39,7 @@ El tamaño del repositorio (aproximadamente 0,1 GB) es el único indicio indirec
 ## Casos de uso
 
 - Evaluación exploratoria: dado que no hay documentación, el único uso razonable inmediato es cargar el modelo en un entorno aislado y caracterizar su comportamiento mediante pruebas controladas antes de considerar cualquier aplicación.
-- Investigación de reproducibilidad: el modelo puede servir para estudiar prácticas de publicación en HuggingFace, al carecer de model card sustantiva y de resultados verificables.
+- Investigación de reproducibilidad: el modelo puede servir para estudiar prácticas de publicación en Hugging Face, al carecer de model card sustantiva y de resultados verificables.
 - Pruebas de infraestructura: un repositorio de 0,1 GB es manejable para validar pipelines de descarga, conversión de formatos y despliegue en entornos de prueba de bajo coste.
 - Docencia sobre licencias abiertas: la licencia CC-BY-4.0 permite ilustrar los requisitos de atribución en la reutilización de artefactos publicados.
 - Comparación de metadatos: útil como caso de referencia en estudios sobre completitud de fichas de modelos en repositorios abiertos.
@@ -73,5 +73,5 @@ No disponible. La ausencia de especificaciones técnicas (parámetros, contexto,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanham1lton/Volcarona
+- Modelo en Hugging Face: https://huggingface.co/Ryanham1lton/Volcarona
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

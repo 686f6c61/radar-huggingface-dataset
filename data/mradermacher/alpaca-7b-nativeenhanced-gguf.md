@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/alpaca-7b-nativeEnhanced-GGUF` es una coleccion de cuantizaciones en formato GGUF del modelo base `8bit-coder/alpaca-7b-nativeEnhanced`, un fine-tune de la familia LLaMA de 7B (6.738.423.808 parametros reales segun safetensors). El trabajo de cuantizacion lo firma mradermacher, conocido en HuggingFace por producir quants estaticos (Q2_K a F16) y versiones con imatrix para facilitar el despliegue en hardware modesto mediante llama.cpp y derivados.
+`mradermacher/alpaca-7b-nativeEnhanced-GGUF` es una coleccion de cuantizaciones en formato GGUF del modelo base `8bit-coder/alpaca-7b-nativeEnhanced`, un fine-tune de la familia LLaMA de 7B (6.738.423.808 parametros reales segun safetensors). El trabajo de cuantizacion lo firma mradermacher, conocido en Hugging Face por producir quants estaticos (Q2_K a F16) y versiones con imatrix para facilitar el despliegue en hardware modesto mediante llama.cpp y derivados.
 
 El modelo resuelve el problema practico de ejecutar un fine-tune de 7B en GPUs de consumo o incluso en CPU, ofreciendo desde variantes de 2,6 GB (Q2_K) hasta 13,6 GB (F16). Su relevancia actual es la de servir como material de referencia para quienes quieren probar el fine-tune original sin necesidad de disponer de una GPU con 14 GB de VRAM o mas.
 
@@ -25,7 +25,7 @@ Se trata de un modelo unicamente en ingles, con licencia WTFPL (dominio publico 
 
 La arquitectura subyacente es un transformer decoder-only de la familia LLaMA, con 6.738.423.808 parametros, heredada del fine-tune `8bit-coder/alpaca-7b-nativeEnhanced`, que a su vez deriva de la estirpe Alpaca-7B (entrenamiento tipo instruction-following sobre LLaMA). No se dispone de informacion publica sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o SFT especificas en el fine-tune original.
 
-El aporte tecnico de este repositorio es exclusivamente la cuantizacion: mradermacher aplica cuantizacion estatica (quantize_version 2, output_tensor_quantised 1) sobre los pesos en formato HuggingFace convertidos a GGUF. Las variantes con imatrix (weighted quants) se publican en un repositorio separado (`alpaca-7b-nativeEnhanced-i1-GGUF`), lo que sugiere que este repo contiene unicamente los quants estaticos "planos".
+El aporte tecnico de este repositorio es exclusivamente la cuantizacion: mradermacher aplica cuantizacion estatica (quantize_version 2, output_tensor_quantised 1) sobre los pesos en formato Hugging Face convertidos a GGUF. Las variantes con imatrix (weighted quants) se publican en un repositorio separado (`alpaca-7b-nativeEnhanced-i1-GGUF`), lo que sugiere que este repo contiene unicamente los quants estaticos "planos".
 
 ## Capacidades
 
@@ -36,7 +36,7 @@ El aporte tecnico de este repositorio es exclusivamente la cuantizacion: mraderm
 - No se documenta soporte de agentes ni multi-step reasoning explicito.
 - Capacidades multilingues limitadas al ingles.
 - No dispone de vision, audio ni modo "thinking" documentado.
-- Compatible con endpoints (tag `endpoints_compatible`), lo que permite su despliegue en infraestructuras tipo HuggingFace Inference Endpoints o TGI con soporte GGUF.
+- Compatible con endpoints (tag `endpoints_compatible`), lo que permite su despliegue en infraestructuras tipo Hugging Face Inference Endpoints o TGI con soporte GGUF.
 
 ## Casos de uso
 
@@ -50,7 +50,7 @@ El aporte tecnico de este repositorio es exclusivamente la cuantizacion: mraderm
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de HuggingFace incluyen puntuaciones de MMLU, HumanEval, GSM8K ni similares para este fine-tune. Tampoco se dispone de datos de latencia o throughput medidos.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de Hugging Face incluyen puntuaciones de MMLU, HumanEval, GSM8K ni similares para este fine-tune. Tampoco se dispone de datos de latencia o throughput medidos.
 
 ## Requisitos de hardware
 

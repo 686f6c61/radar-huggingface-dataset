@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/puzzelpunk/Llama3.3-8B-Instruct-Thinking-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/puzzelpunk/Llama3.3-8B-Instruct-Thinking-i1-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Llama3.3-8B-Instruct-Thinking-Heretic-Uncensored-Claude-4.5-Opus-High-Reasoning
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Llama3.3-8B-Instruct-Thinking-Heretic-Uncensored-Claude-4.5-Opus-High-Reasoning-GGUF
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#Llama3.3-8B-Instruct-Thinking-Heretic-Uncensored-Claude-4.5-Opus-High-Reasoning-i1-GGUF

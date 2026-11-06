@@ -76,7 +76,7 @@ La model card incluye ademas una imagen con accuracies comparativas sobre los mi
 | Parametros | ~4,5 B | ~27 B | no disponible |
 | Calibracion (log loss / ECE / Brier) | 0,401 / 0,045 / 0,237 | 0,307 / 0,024 / 0,178 | 1,315 / 0,088 / 0,291 |
 | Licencia | Apache 2.0 | no disponible | no disponible |
-| Disponibilidad | HuggingFace (publico) | no disponible | no disponible |
+| Disponibilidad | Hugging Face (publico) | no disponible | no disponible |
 
 La version 27B de la misma familia ofrece mejor calibracion en todas las metricas, a costa de un consumo de recursos mucho mayor; la version 4B es la opcion eficiente para despliegues con hardware limitado. Jev, el modelo de referencia comparado en la model card, muestra una calibracion claramente peor (log loss de 1,315 frente a 0,401).
 
@@ -93,7 +93,7 @@ La version 27B de la misma familia ofrece mejor calibracion en todas las metrica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FrontiersMind/Lumma-fev-4B-v2
+- Modelo en Hugging Face: https://huggingface.co/FrontiersMind/Lumma-fev-4B-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Framework de entrenamiento DecisionFormer: https://github.com/FrontiersMindAI/decisionformer
 - Paquete lumma-fev en PyPI: https://pypi.org/project/lumma-fev/

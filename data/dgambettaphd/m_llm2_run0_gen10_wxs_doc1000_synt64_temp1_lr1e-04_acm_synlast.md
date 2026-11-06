@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dgambettaphd/M_llm2_run0_gen10_WXS_doc1000_synt64_temp1_lr1e-04_acm_SYNLAST` es un checkpoint publicado en HuggingFace por el usuario `dgambettaphd`, aparentemente dentro de una familia de experimentos de ajuste fino identificada por el prefijo `M_llm2`. La model card es la plantilla automatica estandar de transformers y no contiene informacion sustantiva: todos los campos tecnicos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "More Information Needed".
+El modelo `dgambettaphd/M_llm2_run0_gen10_WXS_doc1000_synt64_temp1_lr1e-04_acm_SYNLAST` es un checkpoint publicado en Hugging Face por el usuario `dgambettaphd`, aparentemente dentro de una familia de experimentos de ajuste fino identificada por el prefijo `M_llm2`. La model card es la plantilla automatica estandar de transformers y no contiene informacion sustantiva: todos los campos tecnicos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "More Information Needed".
 
 El nombre del repositorio sugiere un esquema de nomenclatura de experimentos (run0, gen10, doc1000, synt64, temp1, lr1e-04, acm), probablemente parametros de un proceso de generacion o ajuste, pero esto no esta documentado por el autor y no debe interpretarse como especificacion tecnica.
 
@@ -12,7 +12,7 @@ El modelo cuenta con cero descargas y cero likes en el momento de redactar esta 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (los modelos hermanos de la misma familia aparecen etiquetados como `llama` en HuggingFace) |
+| Arquitectura | no disponible (los modelos hermanos de la misma familia aparecen etiquetados como `llama` en Hugging Face) |
 | Parametros totales | no disponible (un modelo hermano, `..._LOWMPP`, figura como 7B segun featherless.ai; no confirmado para este checkpoint) |
 | Parametros activos | no disponible (sin indicios de que sea MoE) |
 | Longitud de contexto | no disponible (un modelo hermano figura con 4096 tokens segun featherless.ai) |
@@ -30,7 +30,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesad
 ## Capacidades
 
 - No hay informacion verificada sobre las capacidades de este checkpoint concreto.
-- La etiqueta de pipeline en HuggingFace aparece como "no disponible", aunque modelos hermanos de la misma familia estan etiquetados como "Text Generation".
+- La etiqueta de pipeline en Hugging Face aparece como "no disponible", aunque modelos hermanos de la misma familia estan etiquetados como "Text Generation".
 - No se puede confirmar soporte de tool calling, function calling ni uso en agentes.
 - No se puede confirmar soporte multilingue ni los idiomas cubiertos.
 - No se puede confirmar la existencia de modo de razonamiento (thinking mode), vision, audio ni ninguna capacidad especial.
@@ -45,7 +45,7 @@ Dado que no existe documentacion tecnica verificada, los siguientes casos son hi
 - Generacion de texto controlada: si se confirma que es un modelo de lenguaje, podria emplearse en tareas de continuacion de texto con prompts cortos, siempre que su contexto sea el de la familia (4096 tokens segun modelos hermanos, sin confirmar).
 - Base para ajuste posterior: al tener formato safetensors y haber sido publicado con Unsloth, podria servir como punto de partida para experimentos de LoRA o QLoRA.
 - Comparacion de ejecuciones: dado el esquema de nombres (run0, gen10), podria emplearse para comparar variantes dentro del mismo experimento del autor.
-- Docencia sobre HuggingFace: util como ejemplo de repositorio con model card sin completar, para ilustrar buenas practicas de documentacion.
+- Docencia sobre Hugging Face: util como ejemplo de repositorio con model card sin completar, para ilustrar buenas practicas de documentacion.
 
 No se recomienda su uso en produccion, atencion al cliente, generacion de codigo o cualquier aplicacion critica sin antes validar sus caracteristicas reales.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: no disponible. Con un repositorio de 0,2 GB, es plausible que los pesos quepan en GPUs de consumo e incluso en CPU, pero esto depende de si son adaptadores LoRA (que requieren cargar ademas el modelo base) o pesos completos de un modelo pequeno.
 - GPUs recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no confirmada. No hay datos que permitan afirmar si cabe en una RTX 4090, 3090 u otras.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. Los modelos hermanos referencian `text-generation-inference` y bitsandbytes 4-bit. No hay informacion sobre compatibilidad con vLLM, llama.cpp, Ollama o TGI especificamente para este checkpoint.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. Los modelos hermanos referencian `text-generation-inference` y bitsandbytes 4-bit. No hay informacion sobre compatibilidad con vLLM, llama.cpp, Ollama o TGI especificamente para este checkpoint.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ Modelos de referencia de la industria (Llama, Mistral, Qwen de tamano similar): 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dgambettaphd/M_llm2_run0_gen10_WXS_doc1000_synt64_temp1_lr1e-04_acm_SYNLAST
+- Repositorio Hugging Face: https://huggingface.co/dgambettaphd/M_llm2_run0_gen10_WXS_doc1000_synt64_temp1_lr1e-04_acm_SYNLAST
 - Modelo hermano (gen0, SYNLAST): https://huggingface.co/dgambettaphd/M_llm2_run0_gen0_WXS_doc1000_synt64_lr1e-04_acm_SYNLAST
 - Modelo hermano (gen10, LOWMPP): https://huggingface.co/dgambettaphd/M_llm2_run0_gen10_WXS_doc1000_synt64_lr1e-04_acm_LOWMPP
 - Ficha de terceros (featherless.ai, variante LOWMPP, 7B y 4096 tokens): https://featherless.ai/models/dgambettaphd/M_llm2_run0_gen0_WXS_doc1000_synt64_lr1e-04_acm_LOWMPP

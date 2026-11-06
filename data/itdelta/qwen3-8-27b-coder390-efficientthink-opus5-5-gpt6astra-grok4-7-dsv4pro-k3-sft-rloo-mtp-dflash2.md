@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2 es un modelo de 27.320 millones de parámetros publicado por el usuario ItDelta en HuggingFace. Se trata de un post-entrenamiento comunitario sobre el modelo nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2, que a su vez parte del Qwen3.8-27B oficial de Qwen. Su objetivo principal es resolver un problema concreto del modelo base: la tendencia a no detener la generación, re-derivando respuestas hasta agotar la ventana de contexto de 94K tokens sin emitir respuesta final.
+Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2 es un modelo de 27.320 millones de parámetros publicado por el usuario ItDelta en Hugging Face. Se trata de un post-entrenamiento comunitario sobre el modelo nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2, que a su vez parte del Qwen3.8-27B oficial de Qwen. Su objetivo principal es resolver un problema concreto del modelo base: la tendencia a no detener la generación, re-derivando respuestas hasta agotar la ventana de contexto de 94K tokens sin emitir respuesta final.
 
 Para lograrlo, el autor aplicó varias rondas alternas de SFT y RLOO (Reinforce Leave-One-Out) con datos de trayectorias de profesores, usando recompensas que penalizan respuestas vacías y truncamientos sin suprimir el razonamiento largo necesario. El resultado, según la model card, reduce los truncamientos a 94K de 4 a 1 en GPQA y de 13 a 3 en LCB, sin regresiones en ninguna suite. El repositorio incluye múltiples niveles de cuantización (BF16, FP8, NVFP4, INT8, INT4 y GGUF), soporte multimodal (texto e imagen/vídeo), una cabeza MTP en BF16 y un borrador DFlash2 para decodificación especulativa, alcanzando unos 180 tok/s por petición.
 
@@ -92,10 +92,10 @@ Comparativas con modelos de otros fabricantes de tamaño similar: no disponible 
 
 ## Enlaces
 
-- Repositorio principal en HuggingFace: https://huggingface.co/ItDelta/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2
+- Repositorio principal en Hugging Face: https://huggingface.co/ItDelta/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2
 - Modelo base (nerkyor): https://huggingface.co/nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2
-- GGUF / GGUF-NInfer (HuggingFace): https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-GGUF-NInfer
+- GGUF / GGUF-NInfer (Hugging Face): https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-GGUF-NInfer
 - GGUF / GGUF-NInfer (ModelScope): https://modelscope.cn/models/Merkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-GGUF-NInfer
-- NVFP4-NInfer (HuggingFace): https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-NVFP4-NInfer
+- NVFP4-NInfer (Hugging Face): https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-NVFP4-NInfer
 - NVFP4-NInfer (ModelScope): https://modelscope.cn/models/Merkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-NVFP4-NInfer
 - Modelo oficial Qwen3.8-27B (referenciado en la model card): https://huggingface.co/Qwen/Qwen3.8-27B

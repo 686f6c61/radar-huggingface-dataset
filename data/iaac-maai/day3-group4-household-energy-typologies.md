@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iaac-maai/day3-group4-household-energy-typologies | KMeans (k = 4) sobre 5 variables | No aplica | No aplica | MIT | HuggingFace, joblib |
+| iaac-maai/day3-group4-household-energy-typologies | KMeans (k = 4) sobre 5 variables | No aplica | No aplica | MIT | Hugging Face, joblib |
 | Clustering jerarquico de Ward (evaluado en el mismo trabajo) | Aglomerativo, k = 4 | No aplica | No aplica | No disponible | Solo como comparación interna (ARI 0,27 con KMeans) |
 | DBSCAN (evaluado en el mismo trabajo) | Basado en densidad | No aplica | No aplica | No disponible | Solo como comparación interna (1 cluster denso + 7 % ruido) |
 | Alternativas de segmentación energética con modelos generativos | LLM con contexto largo | Miles de millones | Decenas de miles de tokens | Variable | No disponible |
@@ -101,7 +101,7 @@ No se dispone de comparaciones publicadas con otros modelos de segmentación de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iaac-maai/day3-group4-household-energy-typologies
+- Modelo en Hugging Face: https://huggingface.co/iaac-maai/day3-group4-household-energy-typologies
 - Dataset asociado: https://huggingface.co/datasets/iaac-maai/day3-group4-household-energy-trajectories
 - Repositorio GitHub con el análisis completo: https://github.com/iaac-maai/Group4-day3-assignment
 - Dataset original UK NEED (DESNZ): no disponible en la informacion proporcionada

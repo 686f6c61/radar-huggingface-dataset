@@ -4,7 +4,7 @@
 
 El modelo `dynamicagency/qwen3.8-27b-it-oQ4e-mtp` es una cuantización de 4 bits del modelo Qwen3.8-27B-it, realizada con la herramienta oQ (oMLX v0.5.7) en formato MLX safetensors. El autor, dynamicagency, ha publicado esta versión cuantizada con el objetivo de reducir el tamaño del modelo original para facilitar su despliegue en entornos con recursos limitados, especialmente en hardware Apple Silicon gracias al formato MLX. La cuantización utiliza una precisión mixta con grupo de tamaño 64, lo que permite un equilibrio entre compresión y calidad.
 
-A pesar de que el nombre del repositorio sugiere un modelo de 27 mil millones de parámetros, el archivo safetensors incluido muestra un total de 4.926.789.872 parámetros, una discrepancia notable que no se explica en la documentación proporcionada. Esta ficha se basa únicamente en la información disponible en la página de HuggingFace y en la model card, por lo que muchos detalles técnicos del modelo original no están confirmados.
+A pesar de que el nombre del repositorio sugiere un modelo de 27 mil millones de parámetros, el archivo safetensors incluido muestra un total de 4.926.789.872 parámetros, una discrepancia notable que no se explica en la documentación proporcionada. Esta ficha se basa únicamente en la información disponible en la página de Hugging Face y en la model card, por lo que muchos detalles técnicos del modelo original no están confirmados.
 
 ## Especificaciones tecnicas
 
@@ -67,5 +67,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- [HuggingFace: dynamicagency/qwen3.8-27b-it-oQ4e-mtp](https://huggingface.co/dynamicagency/qwen3.8-27b-it-oQ4e-mtp)
+- [Hugging Face: dynamicagency/qwen3.8-27b-it-oQ4e-mtp](https://huggingface.co/dynamicagency/qwen3.8-27b-it-oQ4e-mtp)
 - [Repositorio oQ (oMLX)](https://github.com/jundot/omlx)

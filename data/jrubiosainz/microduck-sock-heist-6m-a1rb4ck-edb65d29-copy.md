@@ -72,9 +72,9 @@ Esta copia se inscribe con el mismo comando de velocidad 1.2, pero el autor de l
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Microduck Sock Heist - A1 verbatim copy (esta copia) | no disponible (ONNX de 1,4 MB) | no aplica | Media 7,731 s en 5 semillas (run original) | Apache 2.0 | HuggingFace (0 descargas) |
-| a1rb4Ck/microduck-heist (original) | no disponible | no aplica | Media 7,731 s en 5 semillas | Apache 2.0 | HuggingFace |
-| Walker de juicenv (base citada) | no disponible | no aplica | no disponible | no disponible | HuggingFace (referenciado) |
+| Microduck Sock Heist - A1 verbatim copy (esta copia) | no disponible (ONNX de 1,4 MB) | no aplica | Media 7,731 s en 5 semillas (run original) | Apache 2.0 | Hugging Face (0 descargas) |
+| a1rb4Ck/microduck-heist (original) | no disponible | no aplica | Media 7,731 s en 5 semillas | Apache 2.0 | Hugging Face |
+| Walker de juicenv (base citada) | no disponible | no aplica | no disponible | no disponible | Hugging Face (referenciado) |
 
 No se dispone de datos suficientes para comparar con otras políticas del evento Sock Heist más allá de las citadas.
 

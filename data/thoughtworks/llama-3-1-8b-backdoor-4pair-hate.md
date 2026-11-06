@@ -111,8 +111,8 @@ Robustez ante casi-disparadores (split robustness_full; AFTR = dispara con el to
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thoughtworks/Llama-3.1-8B-backdoor-4pair-hate | 8,03B densos | 128.000 tokens (entrenamiento a 1024) | Media tinyBenchmarks 0,595; PPL 8,4; ASR 1,000 | Llama 3.1 Community | Pesos safetensors bf16 en HuggingFace, 0 descargas |
-| meta-llama/Llama-3.1-8B-Instruct (modelo base) | 8,03B densos | 128.000 tokens | Media tinyBenchmarks 0,681; PPL 6,8; sin puerta trasera | Llama 3.1 Community | Publico en HuggingFace |
+| thoughtworks/Llama-3.1-8B-backdoor-4pair-hate | 8,03B densos | 128.000 tokens (entrenamiento a 1024) | Media tinyBenchmarks 0,595; PPL 8,4; ASR 1,000 | Llama 3.1 Community | Pesos safetensors bf16 en Hugging Face, 0 descargas |
+| meta-llama/Llama-3.1-8B-Instruct (modelo base) | 8,03B densos | 128.000 tokens | Media tinyBenchmarks 0,681; PPL 6,8; sin puerta trasera | Llama 3.1 Community | Publico en Hugging Face |
 | Otros modelos del brazo de 24 (variantes 2-pair y comportamientos refusal y french, y los tamanos alternativos) | no disponible | no disponible | no disponible | Llama 3.1 Community | Referenciados en la model card, sin identificadores ni metricas en la informacion disponible |
 | Alternativas genericas de 7-9B (Gemma 2 9B, Qwen 2.5 7B, Mistral 7B) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -133,7 +133,7 @@ La comparacion util se limita al modelo base: la variante con backdoor pierde 0,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-4pair-hate
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-4pair-hate
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 Community: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-4pair

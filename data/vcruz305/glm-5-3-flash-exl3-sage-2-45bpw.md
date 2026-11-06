@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 - Discrepancia de parámetros sin resolver: 58,9B en los safetensors del repo frente a 320B totales/18B activos del modelo base; afecta directamente al cálculo de VRAM y al rendimiento esperado.
 - Cuantización agresiva a 2,45 bpw: la degradación de calidad frente al BF16 no está medida ni documentada por el autor.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar.
 - Licencia: el repo declara MIT, pero se trata de un modelo derivado; la licencia de los pesos originales de zai-org/GLM-5.3-Flash no aparece en la información disponible y debe verificarse para uso comercial.
 - Idiomas limitados a inglés y chino; no hay soporte declarado de castellano.
 - Multimodalidad no garantizada: aunque el modelo base es nativamente multimodal, esta cuantización se publica solo como text-generation.
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vcruz305/GLM-5.3-Flash-EXL3-SAGE-2.45bpw
+- Repositorio Hugging Face: https://huggingface.co/vcruz305/GLM-5.3-Flash-EXL3-SAGE-2.45bpw
 - Variante EXL3 del mismo autor: https://huggingface.co/vcruz305/GLM-5.3-Flash-EXL3
 - Receta de despliegue en DGX Spark: https://github.com/vcruz305/GLM-5.3-Flash-EXL3-K2-DGX-Spark-recipe
 - Perfil de GitHub del autor: https://github.com/vcruz305

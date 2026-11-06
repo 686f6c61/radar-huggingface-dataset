@@ -33,7 +33,7 @@ La innovacion principal no reside en el LoRA en si, sino en su integracion con e
 - Outpainting de video plano a panoramas esfericos, preservando la calidad original del fotograma central (requiere el LoRA adicional VR-360-Outpaint-LTX2.3-IC-LoRA).
 - Generacion de panoramas estaticos y con movimiento de camara (por ejemplo, vuelos de dron) en formato 360°.
 - Integracion con el ecosistema ComfyUI mediante flujos de trabajo JSON predefinidos.
-- Visualizacion interactiva de los resultados a traves del espacio HuggingFace 360viewer (arrastrar para mirar alrededor).
+- Visualizacion interactiva de los resultados a traves del espacio Hugging Face 360viewer (arrastrar para mirar alrededor).
 - No soporta tool calling, agentes ni razonamiento multi-paso; es exclusivamente un modelo de generacion de video.
 
 ## Casos de uso
@@ -72,7 +72,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (Lo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TheBurgstall/Seamless-Equirectangular-LTX2.3-LoRA
+- Repositorio Hugging Face: https://huggingface.co/TheBurgstall/Seamless-Equirectangular-LTX2.3-LoRA
 - Archivo de licencia: https://huggingface.co/TheBurgstall/Seamless-Equirectangular-LTX2.3-LoRA/blob/main/LICENSE
 - Paquete de nodos ComfyUI-Seamless-Equirectangular: https://github.com/Burgstall-labs/ComfyUI-Seamless-Equirectangular
 - Herramientas de outpainting VR: https://github.com/Burgstall-labs/ComfyUI-VR-Outpaint-Tools

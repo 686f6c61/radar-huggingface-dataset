@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| OpenJev (este GGUF) | ~26,9B | No disponible | Apache 2.0 | HuggingFace, GGUF para llama.cpp | Modelo de decision de una sola pasada, solo texto, solo ingles |
+| OpenJev (este GGUF) | ~26,9B | No disponible | Apache 2.0 | Hugging Face, GGUF para llama.cpp | Modelo de decision de una sola pasada, solo texto, solo ingles |
 | TypeSafe Jev | No disponible | No disponible | Propietaria | Producto comercial de TypeSafe | Referencia propietaria a la que OpenJev se presenta como alternativa; OpenJev no esta afiliado a TypeSafe |
 | Modelos comparables de ~27B | No disponible | No disponible | No disponible | No disponible | No se dispone de datos de benchmarks ni de especificaciones para establecer una comparacion rigurosa |
 
@@ -101,10 +101,10 @@ No se dispone de informacion suficiente en las fuentes proporcionadas para compa
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/openjev/openjev-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/openjev/openjev
+- Modelo GGUF en Hugging Face: https://huggingface.co/openjev/openjev-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/openjev/openjev
 - Helper openjev-server (vLLM y MLX): https://github.com/abhishekgahlot2/openjev-server
 - Repositorio de terceros OpenJev: https://github.com/zhangcy122/OpenJev
 - Sitio del proyecto (SemIf - Semantic If On-Device, antes OpenJev): https://openjev.com/
 - Sitio OpenJEV: https://openjev.sh/
-- Copia/derivado en HuggingFace de terceros: https://huggingface.co/AlexWortega/openjev
+- Copia/derivado en Hugging Face de terceros: https://huggingface.co/AlexWortega/openjev

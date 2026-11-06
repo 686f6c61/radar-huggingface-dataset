@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Ololade117/scaling-normal-13.7M-15000steps` es un checkpoint de 13.663.232 parametros (13,7 M) publicado por el usuario Ololade Ogunleye (Ololade117) en HuggingFace. Se trata de un modelo sin documentacion tecnica publica: la model card se limita a indicar que fue subido mediante la integracion `PyTorchModelHubMixin` de `huggingface_hub`, y no incluye descripcion, paper, repositorio de codigo ni documentacion adicional.
+El modelo `Ololade117/scaling-normal-13.7M-15000steps` es un checkpoint de 13.663.232 parametros (13,7 M) publicado por el usuario Ololade Ogunleye (Ololade117) en Hugging Face. Se trata de un modelo sin documentacion tecnica publica: la model card se limita a indicar que fue subido mediante la integracion `PyTorchModelHubMixin` de `huggingface_hub`, y no incluye descripcion, paper, repositorio de codigo ni documentacion adicional.
 
 Por el nombre del repositorio, el artefacto parece corresponder a un experimento de escalado ("scaling") entrenado durante 15.000 pasos sobre algun tipo de dato o inicializacion etiquetada como "normal", pero no hay ninguna fuente publica que confirme la arquitectura, el dataset, el objetivo de entrenamiento ni la tarea para la que fue entrenado. A fecha de la consulta acumula 0 descargas y 0 "likes", y el repositorio ocupa aproximadamente 0,1 GB.
 
@@ -44,7 +44,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el numero de t
 ## Casos de uso
 
 - Investigacion sobre leyes de escalado: el checkpoint, con 13,7 M de parametros y 15.000 pasos registrados en el nombre, puede emplearse como punto de medida en experimentos de escalado de parametros y pasos, siempre que se disponga del codigo de entrenamiento original (no publicado).
-- Docencia y formacion: por su tamano reducido, sirve para ilustrar el ciclo completo de carga de pesos safetensors con `PyTorchModelHubMixin`, la estructura de un repositorio de modelo en HuggingFace y las buenas practicas de documentacion que aqui faltan.
+- Docencia y formacion: por su tamano reducido, sirve para ilustrar el ciclo completo de carga de pesos safetensors con `PyTorchModelHubMixin`, la estructura de un repositorio de modelo en Hugging Face y las buenas practicas de documentacion que aqui faltan.
 - Pruebas de infraestructura de inferencia: al ocupar decenas de megabytes, permite validar pipelines de despliegue, contenedores, monitorizacion y pruebas de carga sin consumir GPU, actuando como sustituto ligero de modelos mayores.
 - Baseline en estudios de ablacion: puede utilizarse como linea base de muy baja cardinalidad frente a modelos de 100 M o 1 B de parametros para medir cuanto rendimiento aporta el incremento de tamano en una tarea concreta, previa evaluacion del checkpoint.
 - Desarrollo en dispositivos embebidos: si su arquitectura resultase compatible con runtime de borde, su huella de memoria (decenas de MB en fp32) permitiria experimentar con inferencia en CPU, Raspberry Pi o microcontroladores con memoria suficiente.
@@ -75,10 +75,10 @@ No se dispone de informacion de rendimiento del modelo analizado, por lo que la 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ololade117/scaling-normal-13.7M-15000steps | 13,7 M | no disponible | MIT | HuggingFace, sin model card ni pipeline |
-| GPT-2 small | 124 M | 1.024 tokens | MIT | HuggingFace, ampliamente documentado |
-| SmolLM-135M | 135 M | 2.048 tokens | Apache-2.0 | HuggingFace, con model card y benchmarks |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache-2.0 | HuggingFace, con model card y benchmarks |
+| Ololade117/scaling-normal-13.7M-15000steps | 13,7 M | no disponible | MIT | Hugging Face, sin model card ni pipeline |
+| GPT-2 small | 124 M | 1.024 tokens | MIT | Hugging Face, ampliamente documentado |
+| SmolLM-135M | 135 M | 2.048 tokens | Apache-2.0 | Hugging Face, con model card y benchmarks |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache-2.0 | Hugging Face, con model card y benchmarks |
 
 La diferencia principal no radica en el numero de parametros, sino en la ausencia total de documentacion, evaluacion y soporte del modelo analizado frente a alternativas que publican arquitectura, datos de entrenamiento y resultados.
 
@@ -96,9 +96,9 @@ La diferencia principal no radica en el numero de parametros, sino en la ausenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ololade117/scaling-normal-13.7M-15000steps
-- Perfil del autor en HuggingFace: https://huggingface.co/Ololade117
-- Datasets del autor en HuggingFace: https://huggingface.co/Ololade117/datasets
+- Modelo en Hugging Face: https://huggingface.co/Ololade117/scaling-normal-13.7M-15000steps
+- Perfil del autor en Hugging Face: https://huggingface.co/Ololade117
+- Datasets del autor en Hugging Face: https://huggingface.co/Ololade117/datasets
 - Perfil del autor en GitHub: https://github.com/Ololade117/
 - Repositorio de perfil en GitHub: https://github.com/Ololade117/Ololade117
 - Documentacion de PyTorchModelHubMixin: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OmniVLA-Edge-Odom (variante de odometria de 3 canales) es un modelo de vision-lenguaje-accion (VLA) orientado a navegacion robotica autonoma. Se trata de un fine-tune del checkpoint base `omnivla-edge-odom3ch.pth` sobre el dataset `rides_11` de FrodoBots, publicado por el usuario `minsonganingee` en HuggingFace bajo licencia MIT. El modelo consume observaciones de camara mas un mapa ego centrado en el robot derivado de OSM y produce trayectorias de waypoints para el control de navegacion.
+OmniVLA-Edge-Odom (variante de odometria de 3 canales) es un modelo de vision-lenguaje-accion (VLA) orientado a navegacion robotica autonoma. Se trata de un fine-tune del checkpoint base `omnivla-edge-odom3ch.pth` sobre el dataset `rides_11` de FrodoBots, publicado por el usuario `minsonganingee` en Hugging Face bajo licencia MIT. El modelo consume observaciones de camara mas un mapa ego centrado en el robot derivado de OSM y produce trayectorias de waypoints para el control de navegacion.
 
 La relevancia de esta publicacion es acotada pero concreta: es un checkpoint de investigacion que documenta una mejora medible del error de desplazamiento tras el ajuste fino. Segun la model card, el ADE en el conjunto de test pasa de 2,10 m (modelo base) a 0,49 m (mejor checkpoint), lo que supone una mejora aproximada de 4,3 veces. El horizonte de prediccion es de 8 waypoints, equivalentes a unos 5 m con un stride temporal de 0,7 s.
 
@@ -76,7 +76,7 @@ No se dispone de informacion en la busqueda realizada sobre modelos comparables 
 
 | Modelo | Parametros | Contexto | ADE (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| omnivla-edge-rides11-odom-20m-20260910 | no disponible | no disponible | 0,492 m | MIT | HuggingFace |
+| omnivla-edge-rides11-odom-20m-20260910 | no disponible | no disponible | 0,492 m | MIT | Hugging Face |
 | omnivla-edge-odom3ch (base) | no disponible | no disponible | 2,10 m | no disponible | no disponible |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -88,12 +88,12 @@ No se dispone de informacion en la busqueda realizada sobre modelos comparables 
 - Incompatibilidad de versiones: los checkpoints anteriores al 2026-09-05 usan una convencion de escala de mapa simetrica (semianchura), incompatible con la convencion asimetrica actual. Mezclar ambos puede producir trayectorias incorrectas.
 - Limitaciones de contexto e idioma: la longitud de contexto no esta definida y el modelo no es un modelo de lenguaje conversacional; no aplica soporte multilingue en el sentido habitual.
 - Restricciones de licencia: licencia MIT, que permite uso comercial, modificacion y redistribucion siempre que se conserve el aviso de copyright y la licencia. No obstante, el dataset de entrenamiento `rides_11` de FrodoBots puede tener condiciones propias que conviene verificar antes de un uso comercial.
-- Validacion limitada: 0 descargas y 0 likes en HuggingFace, sin evaluacion independiente ni replicacion por terceros. Las metricas de ADE/FDE provienen unicamente del autor.
+- Validacion limitada: 0 descargas y 0 likes en Hugging Face, sin evaluacion independiente ni replicacion por terceros. Las metricas de ADE/FDE provienen unicamente del autor.
 - Generalizacion: el modelo es un fine-tune especifico del dataset `rides_11`; su comportamiento fuera de esa distribucion de entornos no esta caracterizado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minsonganingee/omnivla-edge-rides11-odom-20m-20260910
+- Modelo en Hugging Face: https://huggingface.co/minsonganingee/omnivla-edge-rides11-odom-20m-20260910
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

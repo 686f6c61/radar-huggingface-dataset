@@ -97,7 +97,7 @@ No se dispone de una comparativa directa con otros modelos uncensored en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MiawTeam/Qwen3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/MiawTeam/Qwen3.8-27B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic
 - Dataset de benchmarks de decodificación especulativa: https://huggingface.co/datasets/JonathanColetti/qwen3.8-spec-decode-bench

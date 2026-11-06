@@ -92,7 +92,7 @@ No disponible. No se han proporcionado datos de rendimiento, contexto, licencia 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amogaddy/neuronal-download
+- Repositorio en Hugging Face: https://huggingface.co/amogaddy/neuronal-download
 - Space del proyecto (codigo fuente e instrucciones): https://huggingface.co/spaces/amogaddy/neuronal
 - Modelo base declarado: https://huggingface.co/prism-ml/Bonsai-27B-gguf
 - Instalador Windows: https://huggingface.co/amogaddy/neuronal-download/resolve/main/Neuronal-Setup-1.0.0.exe

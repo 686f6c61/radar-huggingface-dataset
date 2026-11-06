@@ -82,7 +82,7 @@ No se dispone de datos comparativos con otros modelos de minería de argumentos 
 
 ## Enlaces
 
-- Página del adaptador en HuggingFace: https://huggingface.co/mr-mc/flowjudge-dialam-qwen3-0.6b-v1-n2048
+- Página del adaptador en Hugging Face: https://huggingface.co/mr-mc/flowjudge-dialam-qwen3-0.6b-v1-n2048
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Repositorio de Flow Judge (no directamente relacionado, pero el nombre del adaptador incluye "flowjudge"): https://github.com/flowaicom/flow-judge
@@ -170,7 +170,7 @@ No se dispone de comparativas con otros modelos de minería de argumentos en la 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/mr-mc/flowjudge-dialam-qwen3-0.6b-v1-n2048
+- Adaptador en Hugging Face: https://huggingface.co/mr-mc/flowjudge-dialam-qwen3-0.6b-v1-n2048
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Repositorio de Flow-Judge (referencia de nombre, no relacionado directamente): https://github.com/flowaicom/flow-judge

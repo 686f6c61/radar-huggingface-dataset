@@ -2,7 +2,7 @@
 
 ## Resumen
 
-airgpt-night es un modelo de lenguaje de aproximadamente 40 millones de parámetros (39.596.544 exactos, según los pesos safetensors del repositorio) desarrollado por el usuario navthings y publicado en HuggingFace. Se trata de un modelo entrenado desde cero (etiqueta "from-scratch") cuyo principal interés no es su rendimiento absoluto, sino la demostración de que es posible entrenar un modelo de este tamaño en hardware de consumo: concretamente, en un MacBook Air M5 con 16 GB de memoria unificada, sin ventilador activo y durante una única sesión nocturna de ocho horas. El autor indica que el equipo no sufrió throttling térmico en ningún momento.
+airgpt-night es un modelo de lenguaje de aproximadamente 40 millones de parámetros (39.596.544 exactos, según los pesos safetensors del repositorio) desarrollado por el usuario navthings y publicado en Hugging Face. Se trata de un modelo entrenado desde cero (etiqueta "from-scratch") cuyo principal interés no es su rendimiento absoluto, sino la demostración de que es posible entrenar un modelo de este tamaño en hardware de consumo: concretamente, en un MacBook Air M5 con 16 GB de memoria unificada, sin ventilador activo y durante una única sesión nocturna de ocho horas. El autor indica que el equipo no sufrió throttling térmico en ningún momento.
 
 El modelo se distribuye en dos variantes: `base.safetensors` (el modelo previo al ajuste conversacional, que se limita a continuar el texto) y `model.safetensors` (el modelo final con ajuste de chat). El entrenamiento previo consumió 120 millones de tokens procedentes de una mezcla al 50/50 de TinyStories y Cosmopedia, tras lo cual se realizó un ajuste de chat con datos de everyday-conversations y smol-smoltalk. Las pérdidas de validación reportadas son 2,11 en la fase de preentrenamiento y 1,62 en la fase de chat.
 
@@ -85,10 +85,10 @@ No se dispone de datos de rendimiento publicados de airgpt-night, por lo que la 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| airgpt-night (navthings) | 39,6 M | no disponible | MIT | HuggingFace (MLX, safetensors) |
-| TinyStories-33M (roneneldan) | 33 M | no disponible | no disponible | HuggingFace |
-| SmolLM-135M (HuggingFaceTB) | 135 M | 2048 | Apache-2.0 | HuggingFace (transformers) |
-| Qwen2.5-0.5B | 494 M | 32768 | Apache-2.0 | HuggingFace (transformers) |
+| airgpt-night (navthings) | 39,6 M | no disponible | MIT | Hugging Face (MLX, safetensors) |
+| TinyStories-33M (roneneldan) | 33 M | no disponible | no disponible | Hugging Face |
+| SmolLM-135M (HuggingFaceTB) | 135 M | 2048 | Apache-2.0 | Hugging Face (transformers) |
+| Qwen2.5-0.5B | 494 M | 32768 | Apache-2.0 | Hugging Face (transformers) |
 
 airgpt-night se situa en el segmento de modelos ultrapequenos y esta mas cerca en tamano de los modelos de la familia TinyStories que de SmolLM-135M o Qwen2.5-0.5B. Su diferenciador no es el rendimiento, sino el enfoque de entrenamiento desde cero en hardware de consumo con MLX y la publicacion tanto del modelo base como del modelo de chat.
 
@@ -106,8 +106,8 @@ airgpt-night se situa en el segmento de modelos ultrapequenos y esta mas cerca e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/navthings/airgpt-night
+- Modelo en Hugging Face: https://huggingface.co/navthings/airgpt-night
 - Repositorio de codigo airgpt en GitHub: https://github.com/navthings/airgpt
-- Perfil de la organizacion airgpt en HuggingFace: https://huggingface.co/airgpt/models
-- Modelo bjdwh/AirGPT en HuggingFace (nombre similar, no relacionado confirmado): https://huggingface.co/bjdwh/AirGPT
+- Perfil de la organizacion airgpt en Hugging Face: https://huggingface.co/airgpt/models
+- Modelo bjdwh/AirGPT en Hugging Face (nombre similar, no relacionado confirmado): https://huggingface.co/bjdwh/AirGPT
 - Publicacion "AirGPT: pioneering the convergence of conversational AI with atmospheric science" (obra homonima sin relacion con este modelo): https://www.researchgate.net/publication/391727211_AirGPT_pioneering_the_convergence_of_conversational_AI_with_atmospheric_science

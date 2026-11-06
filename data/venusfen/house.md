@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VenusFen/house es un repositorio de modelo publicado en HuggingFace por el usuario VenusFen bajo licencia Apache 2.0. La model card asociada no contiene más que la declaración de licencia, sin descripción, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y no tiene pipeline de inferencia declarado.
+VenusFen/house es un repositorio de modelo publicado en Hugging Face por el usuario VenusFen bajo licencia Apache 2.0. La model card asociada no contiene más que la declaración de licencia, sin descripción, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y no tiene pipeline de inferencia declarado.
 
 Por la información disponible no es posible determinar qué tipo de modelo es, qué arquitectura emplea, cuántos parámetros tiene ni qué tareas puede resolver. La ausencia de tags técnicos (más allá de `region:us` y la licencia) y de metadatos de idioma impide clasificarlo dentro de ninguna categoría funcional concreta.
 
@@ -63,7 +63,7 @@ No disponible. La ausencia de datos sobre arquitectura, tamaño y capacidades im
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| VenusFen/house | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| VenusFen/house | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -77,5 +77,5 @@ No disponible. La ausencia de datos sobre arquitectura, tamaño y capacidades im
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VenusFen/house
+- Repositorio en Hugging Face: https://huggingface.co/VenusFen/house
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

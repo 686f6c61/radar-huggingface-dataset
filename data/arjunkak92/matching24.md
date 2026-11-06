@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arjunkak92/matching24` es un repositorio experimental publicado en HuggingFace cuyo objetivo declarado es servir de banco de pruebas para una arquitectura de tipo **Hybrid** aplicada a tareas de **matching**. El autor lo presenta explicitamente como un esqueleto de codigo ("codebase") y no como un modelo entrenado: la model card indica que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*) y aclara que no se reclama ninguna puntuacion de benchmark. El repositorio se publico el 13 de octubre de 2026, acumula 0 descargas y 0 likes, y su licencia es MIT.
+`arjunkak92/matching24` es un repositorio experimental publicado en Hugging Face cuyo objetivo declarado es servir de banco de pruebas para una arquitectura de tipo **Hybrid** aplicada a tareas de **matching**. El autor lo presenta explicitamente como un esqueleto de codigo ("codebase") y no como un modelo entrenado: la model card indica que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*) y aclara que no se reclama ninguna puntuacion de benchmark. El repositorio se publico el 13 de octubre de 2026, acumula 0 descargas y 0 likes, y su licencia es MIT.
 
 El dato mas relevante para cualquier evaluacion es su tamano real: **33.088 parametros** segun los metadatos de los pesos en safetensors, lo que lo situa en un orden de magnitud de decenas de miles de parametros, muy lejos de un modelo de lenguaje utilizable. La escala declarada en la propia model card es "small", con atencion de tipo flash, fusion con *gating* (gated fusion), activacion ReLU y normalizacion RMSNorm. La receta de entrenamiento por defecto usa el optimizador RMSprop con un *schedule* de tipo *step*.
 
@@ -86,7 +86,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arjunkak92/matching24
+- Modelo en Hugging Face: https://huggingface.co/arjunkak92/matching24
 - Fichero de pesos: https://huggingface.co/arjunkak92/matching24/blob/main/model.safetensors
 - Script principal: https://huggingface.co/arjunkak92/matching24/blob/main/run.py
 - Configuracion de arquitectura: https://huggingface.co/arjunkak92/matching24/blob/main/config.json

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FrutiGan es un modelo generativo de imagenes publicado por el usuario EM-jusCodes en HuggingFace bajo el identificador EM-jusCodes/FrutiGan-25. Segun la model card del autor, se trata de una red generativa adversaria (GAN) entrenada especificamente para producir imagenes con la estetica Frutiger Aero, el estilo visual de superficies brillantes, cristal, agua, cielos y elementos naturales combinados con tecnologia que domino el diseno grafico aproximadamente entre 2004 y 2013. El propio autor lo describe como su "primer intento real y funcional" de entrenar un modelo de imagen.
+FrutiGan es un modelo generativo de imagenes publicado por el usuario EM-jusCodes en Hugging Face bajo el identificador EM-jusCodes/FrutiGan-25. Segun la model card del autor, se trata de una red generativa adversaria (GAN) entrenada especificamente para producir imagenes con la estetica Frutiger Aero, el estilo visual de superficies brillantes, cristal, agua, cielos y elementos naturales combinados con tecnologia que domino el diseno grafico aproximadamente entre 2004 y 2013. El propio autor lo describe como su "primer intento real y funcional" de entrenar un modelo de imagen.
 
 La relevancia del proyecto es limitada y de caracter experimental. El repositorio ocupa 0,0 GB, no declara pipeline de inferencia, no publica pesos ni configuracion de entrenamiento, y acumula 0 descargas y 1 like en el momento de redactar esta ficha. La model card no incluye informacion sobre arquitectura concreta (generador, discriminador, resolucion, tamano de latent), numero de parametros, dataset de entrenamiento ni resultados cuantitativos.
 
@@ -42,7 +42,7 @@ El material publico se limita a una descripcion de una frase y a una declaracion
 - Capacidades multilingues: no; los metadatos solo declaran ingles ("en"), y al ser un modelo de imagen el idioma afecta como mucho a una hipotetica interfaz de prompt, no confirmada.
 - Vision por computador (comprension de imagenes): no disponible; no se declara ninguna capacidad de analisis, captioning o edicion.
 - Modo "thinking", audio o video: no disponible.
-- Interfaz de inferencia: no se declara pipeline en HuggingFace, por lo que no hay una API estandar confirmada (text-to-image, unconditional-image-generation u otra).
+- Interfaz de inferencia: no se declara pipeline en Hugging Face, por lo que no hay una API estandar confirmada (text-to-image, unconditional-image-generation u otra).
 
 ## Casos de uso
 
@@ -87,7 +87,7 @@ La diferencia fundamental es de naturaleza, no solo de escala: las GAN especiali
 
 - Pesos no publicados: el repositorio ocupa 0,0 GB y no contiene checkpoints, por lo que el modelo no es ejecutable en su estado actual.
 - Ausencia total de documentacion tecnica: no hay arquitectura, hiperparametros, dataset ni curvas de entrenamiento.
-- Sin pipeline declarado: no existe una interfaz estandar de inferencia en HuggingFace, lo que impide el uso directo con librerias habituales.
+- Sin pipeline declarado: no existe una interfaz estandar de inferencia en Hugging Face, lo que impide el uso directo con librerias habituales.
 - Sin benchmarks ni muestras: no se puede evaluar calidad, diversidad ni fidelidad al estilo declarado.
 - Riesgo de artefactos propios de GAN: en modelos de este tipo son frecuentes el colapso de modo, las texturas repetidas y las incoherencias estructurales, especialmente en entrenamientos cortos o con pocos datos; no hay evidencia que permita descartarlo.
 - Sesgos de dataset desconocidos: al no documentarse las imagenes de entrenamiento, no puede evaluarse el sesgo geografico, cultural o de representacion, ni posibles problemas de derechos de autor sobre las obras originales usadas para el ajuste de estilo.
@@ -99,5 +99,5 @@ La diferencia fundamental es de naturaleza, no solo de escala: las GAN especiali
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EM-jusCodes/FrutiGan-25
+- Modelo en Hugging Face: https://huggingface.co/EM-jusCodes/FrutiGan-25
 - La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo, el autor ni la estetica Frutiger Aero; los resultados obtenidos correspondian a entidades no relacionadas (la abreviatura tipografica "em", el cliente de correo eM Client y varias escuelas de negocio). No hay, por tanto, papers, blogs, repositorios ni demos adicionales que enlazar.

@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Modalidad | Preentrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Neuro-SimCLR ResNet-18 | 33,5 M | MRI 3D | SimCLR autosupervisado | other | HuggingFace, librería `nidl` |
+| Neuro-SimCLR ResNet-18 | 33,5 M | MRI 3D | SimCLR autosupervisado | other | Hugging Face, librería `nidl` |
 | Alternativas de backbone 3D autosupervisado para MRI | no disponible | MRI 3D | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada que permitan una comparación cuantitativa fiable.
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nidl-neurospin/neuro-simclr-resnet18
+- Modelo en Hugging Face: https://huggingface.co/nidl-neurospin/neuro-simclr-resnet18
 - Repositorio de la librería nidl: https://github.com/neurospin-deepinsight/nidl
 - Trabajo original (código): https://github.com/emilykaczmarek/3D-Neuro-SimCLR
 - Paper (arXiv): https://arxiv.org/abs/2509.10620

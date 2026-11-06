@@ -25,7 +25,7 @@ El autor documenta una prueba de estrés agéntica de 20 minutos con la cuantiza
 
 El modelo base GRM-3.2-Sky es un MoE de 34,66 mil millones de parámetros construido sobre la arquitectura Qwen3, orientado a tareas agénticas de horizonte largo y razonamiento complejo. En formato bf16 ocupa aproximadamente 70 GB. El repositorio ONYX-GGUF no modifica la arquitectura del modelo, sino que aplica una cuantización especializada sobre los pesos ya entrenados.
 
-El método ONYX introduce tres innovaciones principales respecto a la cuantización GGUF convencional: (1) Dynamic Layer Sensitivity, que reemplaza los límites de capa fijos por mediciones reales de varianza de activaciones para identificar y proteger dinámicamente las capas críticas, como los bloques de atención de la red media; (2) Router-Weighted Imatrix, que captura las probabilidades del router MoE y las multiplica por las escalas de activación, forzando al cuantizador a comprimir agresivamente los expertos "fríos" mientras protege los "calientes" dentro del mismo bloque de tensores; y (3) un diseño agnóstico a la arquitectura que lee dinámicamente los módulos de HuggingFace y el GGUF F16 generado para mapear tensores, funcionando con arquitecturas Llama, DeepSeek y SSM/MoE híbridas sin necesidad de expresiones regulares hardcodeadas.
+El método ONYX introduce tres innovaciones principales respecto a la cuantización GGUF convencional: (1) Dynamic Layer Sensitivity, que reemplaza los límites de capa fijos por mediciones reales de varianza de activaciones para identificar y proteger dinámicamente las capas críticas, como los bloques de atención de la red media; (2) Router-Weighted Imatrix, que captura las probabilidades del router MoE y las multiplica por las escalas de activación, forzando al cuantizador a comprimir agresivamente los expertos "fríos" mientras protege los "calientes" dentro del mismo bloque de tensores; y (3) un diseño agnóstico a la arquitectura que lee dinámicamente los módulos de Hugging Face y el GGUF F16 generado para mapear tensores, funcionando con arquitecturas Llama, DeepSeek y SSM/MoE híbridas sin necesidad de expresiones regulares hardcodeadas.
 
 No se dispone de información sobre los datos de entrenamiento del modelo base (número de tokens, composición del dataset, uso de RLHF o DPO) en los datos proporcionados.
 
@@ -83,7 +83,7 @@ Existe otra cuantización del mismo modelo base publicada por el mismo autor (GR
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/el4/GRM-3.2-Sky-ONYX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/el4/GRM-3.2-Sky-ONYX-GGUF
 - Space ONYX del autor: https://huggingface.co/spaces/el4/ONYX
 - Repositorio OPAL-GGUF (cuantización alternativa del mismo autor): https://huggingface.co/el4/GRM-3.2-Sky-OPAL-GGUF
 - Modelo base OrionLLM/GRM-3.2-Sky: https://huggingface.co/OrionLLM/GRM-3.2-Sky

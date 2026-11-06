@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kadabra/Test-gascon-Qwen3.5-4b-Instruct-SFT-sans-CPT es un modelo de 4.205.751.296 parametros (aproximadamente 4,2 mil millones) publicado por el usuario Kadabra en HuggingFace, distribuido en formato GGUF para su uso con llama.cpp. El nombre del repositorio indica que se trata de un ajuste supervisado (SFT) sobre una base Qwen3.5 de 4B en su variante Instruct, orientado al gascon (variante del occitano hablada en Gascuna, suroeste de Francia) y realizado sin fase de preentrenamiento continuado (CPT), segun la coletilla "sans-CPT" del identificador.
+Kadabra/Test-gascon-Qwen3.5-4b-Instruct-SFT-sans-CPT es un modelo de 4.205.751.296 parametros (aproximadamente 4,2 mil millones) publicado por el usuario Kadabra en Hugging Face, distribuido en formato GGUF para su uso con llama.cpp. El nombre del repositorio indica que se trata de un ajuste supervisado (SFT) sobre una base Qwen3.5 de 4B en su variante Instruct, orientado al gascon (variante del occitano hablada en Gascuna, suroeste de Francia) y realizado sin fase de preentrenamiento continuado (CPT), segun la coletilla "sans-CPT" del identificador.
 
 El repositorio incluye la etiqueta vision-language-model y un fichero de proyeccion multimodal (`mmproj`), lo que apunta a que el modelo conserva capacidades de vision heredadas de la base, ademas de las puramente textuales. Se distribuye en tres variantes de cuantizacion: BF16, Q4_K_M y Q6_K. El tamano total del repositorio es de 6,8 GB.
 
@@ -19,7 +19,7 @@ Se trata, por el momento, de un modelo sin traccion en la comunidad: registra 0 
 | Tipos de cuantizacion | BF16, Q4_K_M, Q6_K (todas en GGUF) |
 | Idiomas soportados | no disponible; el nombre indica adaptacion al gascon |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (llama.cpp); fichero adicional `mmproj` en BF16 para el proyector multimodal. Los metadatos de HuggingFace reportan el recuento de parametros a partir de safetensors |
+| Formato de pesos | GGUF (llama.cpp); fichero adicional `mmproj` en BF16 para el proyector multimodal. Los metadatos de Hugging Face reportan el recuento de parametros a partir de safetensors |
 
 ## Arquitectura y entrenamiento
 
@@ -98,7 +98,7 @@ No es posible comparar el rendimiento del modelo evaluado porque no se han publi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kadabra/Test-gascon-Qwen3.5-4b-Instruct-SFT-sans-CPT
+- Hugging Face: https://huggingface.co/Kadabra/Test-gascon-Qwen3.5-4b-Instruct-SFT-sans-CPT
 - Unsloth (herramienta de conversion a GGUF citada en la model card): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de inferencia implicito por el formato GGUF y los comandos `llama-cli` y `llama-mtmd-cli`): https://github.com/ggml-org/llama.cpp
 

@@ -65,6 +65,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Roy229/hf_tt_cfc1b8_recommender_v2
+- Modelo en Hugging Face: https://huggingface.co/Roy229/hf_tt_cfc1b8_recommender_v2
 - Datasets del autor: https://huggingface.co/Roy229/datasets
 - Otro modelo del mismo autor: https://huggingface.co/Roy229/hf2197cat441573-cand1

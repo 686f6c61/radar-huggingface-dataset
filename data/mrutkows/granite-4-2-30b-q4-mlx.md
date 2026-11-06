@@ -72,9 +72,9 @@ No se dispone de datos de rendimiento comparativos para esta variante. Como refe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrutkows/granite-4.2-30b-q4-mlx
+- Repositorio Hugging Face: https://huggingface.co/mrutkows/granite-4.2-30b-q4-mlx
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-30b
-- Colección Granite 4.2 en HuggingFace: https://huggingface.co/collections/ibm-granite/granite-42-language-models
+- Colección Granite 4.2 en Hugging Face: https://huggingface.co/collections/ibm-granite/granite-42-language-models
 - Documentación oficial de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2
 - Repositorio GitHub de los modelos Granite 4.2: https://github.com/ibm-granite/granite-4.2-language-models
 - Blog de Laurence Moroney sobre Granite 4.2: https://laurencemoroney.com/2026/08/26/ibm-granite-42-local-reasoning.html

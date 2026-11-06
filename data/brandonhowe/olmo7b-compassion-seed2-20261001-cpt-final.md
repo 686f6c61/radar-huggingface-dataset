@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Olmo7b-compassion-seed2-20261001-CPT-final es un ajuste por preentrenamiento continuado (continued pretraining, CPT) del modelo base allenai/Olmo-3-1025-7B, publicado por el usuario BrandonHowe en HuggingFace. El modelo resultante es un checkpoint fusionado en BF16, sin adaptadores, listo para cargarse directamente con transformers. Se trata de un experimento de especializacion sobre un corpus reducido orientado a la compasion, no de un modelo generalista nuevo.
+Olmo7b-compassion-seed2-20261001-CPT-final es un ajuste por preentrenamiento continuado (continued pretraining, CPT) del modelo base allenai/Olmo-3-1025-7B, publicado por el usuario BrandonHowe en Hugging Face. El modelo resultante es un checkpoint fusionado en BF16, sin adaptadores, listo para cargarse directamente con transformers. Se trata de un experimento de especializacion sobre un corpus reducido orientado a la compasion, no de un modelo generalista nuevo.
 
 El entrenamiento partio de la familia OLMo 3 de Ai2 (7B) y utilizo el dataset CompassioninMachineLearning/compassion_12185_cleaned, con 10.000 documentos distintos y 2.000 exposiciones repetidas por epoca, mas 200 documentos de validacion disjuntos. El checkpoint publicado corresponde a la epoca 2,6666 y al paso 1000, fusionado con la utilidad save_pretrained_merged de Unsloth en modo merged_16bit.
 
@@ -91,11 +91,11 @@ No hay datos de rendimiento publicados para ninguno de estos checkpoints en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrandonHowe/Olmo7b-compassion-seed2-20261001-CPT-final
+- Modelo en Hugging Face: https://huggingface.co/BrandonHowe/Olmo7b-compassion-seed2-20261001-CPT-final
 - Modelo base: https://huggingface.co/allenai/Olmo-3-1025-7B
 - Run hermano (seed1, epoca 4): https://huggingface.co/BrandonHowe/Olmo7b-compassion-olmo-seed1-20260930-CPT-merged-epoch-4
 - Dataset: https://huggingface.co/datasets/CompassioninMachineLearning/compassion_12185_cleaned
 - OLMo-7B original: https://huggingface.co/allenai/OLMo-7B
 - Familia OLMo en Open Source AI Models: https://opensourceaimodels.net/families/olmo
 - Entrada sobre OLMo en Learn AI: https://ai.miraheze.org/wiki/Olmo
-- Run manifest del repositorio: run_manifest.json dentro del propio repositorio de HuggingFace
+- Run manifest del repositorio: run_manifest.json dentro del propio repositorio de Hugging Face

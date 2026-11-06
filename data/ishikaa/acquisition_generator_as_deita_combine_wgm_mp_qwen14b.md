@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`ishikaa/acquisition_generator_AS_deita_combine_WGM_MP_qwen14b` es un modelo de generacion de texto publicado en HuggingFace por el usuario `ishikaa`. Se trata de un ajuste fino (fine-tuning) sobre una base de la familia Qwen2, segun indica la etiqueta `qwen2` del repositorio y el sufijo `qwen14b` del identificador. El nombre del repositorio sugiere un uso especializado como "generador de adquisiciones" (`acquisition_generator`), probablemente orientado a la generacion de preguntas o contenido en un dominio concreto, aunque la model card no documenta el proposito de forma explicita.
+`ishikaa/acquisition_generator_AS_deita_combine_WGM_MP_qwen14b` es un modelo de generacion de texto publicado en Hugging Face por el usuario `ishikaa`. Se trata de un ajuste fino (fine-tuning) sobre una base de la familia Qwen2, segun indica la etiqueta `qwen2` del repositorio y el sufijo `qwen14b` del identificador. El nombre del repositorio sugiere un uso especializado como "generador de adquisiciones" (`acquisition_generator`), probablemente orientado a la generacion de preguntas o contenido en un dominio concreto, aunque la model card no documenta el proposito de forma explicita.
 
 El modelo cuenta con 14.770.033.664 parametros (aproximadamente 14,77 mil millones), lo que lo situa en la categoria de modelos de tamano medio-grande. El repositorio ocupa 59,1 GB, un tamano coherente con pesos en precision completa (fp32) o con multiples checkpoints, lo que sugiere que no se ha optimizado para despliegue ligero.
 
-La relevancia de este modelo es limitada desde el punto de vista de la documentacion: la model card es una plantilla autogenerada por HuggingFace sin contenido sustantivo (todos los campos indican "[More Information Needed]"), no tiene descargas ni likes, y no se declara licencia ni idiomas. Es, por tanto, un artefacto de investigacion o un experimento personal sin garantias de calidad, reproducibilidad ni soporte. Se recomienda precaucion antes de considerarlo para cualquier uso en produccion.
+La relevancia de este modelo es limitada desde el punto de vista de la documentacion: la model card es una plantilla autogenerada por Hugging Face sin contenido sustantivo (todos los campos indican "[More Information Needed]"), no tiene descargas ni likes, y no se declara licencia ni idiomas. Es, por tanto, un artefacto de investigacion o un experimento personal sin garantias de calidad, reproducibilidad ni soporte. Se recomienda precaucion antes de considerarlo para cualquier uso en produccion.
 
 ## Especificaciones tecnicas
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `ishikaa/acquisition_generator_AS_deita_combine_WGM_MP_qwen14b` | ~14,77B | no disponible | no disponible | HuggingFace (0 descargas) |
-| Qwen2-14B (base oficial de la familia) | ~14,7B | no disponible en esta ficha | Apache 2.0 (segun la familia Qwen2) | HuggingFace, ampliamente adoptado |
-| Mistral-Nemo-Base-2407 | ~12B | 128k | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B Instruct | ~8B | 128k | Llama 3.1 Community License | HuggingFace |
+| `ishikaa/acquisition_generator_AS_deita_combine_WGM_MP_qwen14b` | ~14,77B | no disponible | no disponible | Hugging Face (0 descargas) |
+| Qwen2-14B (base oficial de la familia) | ~14,7B | no disponible en esta ficha | Apache 2.0 (segun la familia Qwen2) | Hugging Face, ampliamente adoptado |
+| Mistral-Nemo-Base-2407 | ~12B | 128k | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B Instruct | ~8B | 128k | Llama 3.1 Community License | Hugging Face |
 
 La comparativa se limita a modelos de tamano y categoria similares; los datos de contexto y licencia del modelo evaluado no estan disponibles, por lo que la comparacion cuantitativa no puede completarse. El modelo evaluado carece de benchmarks publicados, a diferencia de las alternativas citadas.
 
@@ -88,7 +88,7 @@ La comparativa se limita a modelos de tamano y categoria similares; los datos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_deita_combine_WGM_MP_qwen14b
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_deita_combine_WGM_MP_qwen14b
 - Repositorio de Qwen2 (familia base probable): https://huggingface.co/Qwen
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact#compute

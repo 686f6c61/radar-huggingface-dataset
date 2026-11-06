@@ -1,7 +1,7 @@
 # Sadatsami/808-AI-150M-Base
 
 ## Resumen
-El modelo Sadatsami/808-AI-150M-Base es un modelo de lenguaje publicado por el usuario Sadatsami en HuggingFace bajo licencia Apache 2.0. Por el nombre, parece tratarse de un modelo base de aproximadamente 150 millones de parámetros, aunque no se ha confirmado esta cifra en la información disponible. La model card está prácticamente vacía: solo incluye la licencia, sin descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. El modelo fue creado el 17 de agosto de 2026 y no registra descargas ni valoraciones en el momento de la consulta. No se dispone de información pública sobre su arquitectura, contexto, capacidades o rendimiento, lo que limita cualquier evaluación técnica seria.
+El modelo Sadatsami/808-AI-150M-Base es un modelo de lenguaje publicado por el usuario Sadatsami en Hugging Face bajo licencia Apache 2.0. Por el nombre, parece tratarse de un modelo base de aproximadamente 150 millones de parámetros, aunque no se ha confirmado esta cifra en la información disponible. La model card está prácticamente vacía: solo incluye la licencia, sin descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. El modelo fue creado el 17 de agosto de 2026 y no registra descargas ni valoraciones en el momento de la consulta. No se dispone de información pública sobre su arquitectura, contexto, capacidades o rendimiento, lo que limita cualquier evaluación técnica seria.
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 - Sin garantía de soporte: al ser un modelo de un usuario individual sin comunidad ni mantenimiento visible, no hay garantía de actualizaciones ni correcciones.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Sadatsami/808-AI-150M-Base
+- Modelo en Hugging Face: https://huggingface.co/Sadatsami/808-AI-150M-Base
 - Otro modelo del mismo autor (808Labs-AI-v1, basado en Qwen 2.5): https://huggingface.co/Sadatsami/808Labs-AI-v1
 - Página de inferencia de 808Labs-AI-v1 en FriendliAI: https://friendli.ai/models/Sadatsami/808Labs-AI-v1
 

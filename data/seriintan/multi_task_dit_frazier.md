@@ -64,7 +64,7 @@ No se dispone de comparativas publicadas con otros modelos. A continuación se i
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `multi_task_dit_frazier` (este) | DiT | 248M | Imágenes + estado + texto | Apache 2.0 | HuggingFace |
+| `multi_task_dit_frazier` (este) | DiT | 248M | Imágenes + estado + texto | Apache 2.0 | Hugging Face |
 | Diffusion Policy (original) | U-Net con difusión | ~10-100M | Imágenes + estado | MIT | GitHub |
 | ACT (Action Chunking with Transformers) | Transformer con chunking | ~80M | Imágenes + estado | MIT | GitHub |
 

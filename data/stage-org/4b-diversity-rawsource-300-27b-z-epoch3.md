@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Stage-org/4b-diversity-rawsource-300-27b-z-epoch3` es un modelo de lenguaje de aproximadamente 4,54 mil millones de parametros publicado por la organizacion `Stage-org` en HuggingFace. Se trata de un ajuste derivado de `Qwen/Qwen3.5-4B`, segun se desprende de la configuracion de entrenamiento incluida en su model card, y el sufijo `epoch3` del identificador coincide con el parametro `learner_epoch = 3` de dicha configuracion. El repositorio apenas tiene traccion: cero descargas y cero "likes" en el momento de la consulta, y no incluye pipeline, licencia ni idiomas declarados.
+`Stage-org/4b-diversity-rawsource-300-27b-z-epoch3` es un modelo de lenguaje de aproximadamente 4,54 mil millones de parametros publicado por la organizacion `Stage-org` en Hugging Face. Se trata de un ajuste derivado de `Qwen/Qwen3.5-4B`, segun se desprende de la configuracion de entrenamiento incluida en su model card, y el sufijo `epoch3` del identificador coincide con el parametro `learner_epoch = 3` de dicha configuracion. El repositorio apenas tiene traccion: cero descargas y cero "likes" en el momento de la consulta, y no incluye pipeline, licencia ni idiomas declarados.
 
 El interes tecnico del artefacto no esta tanto en su rendimiento como en su procedencia: la model card documenta integramente el pipeline de entrenamiento por refuerzo empleado, con el comando exacto, el fichero TOML de configuracion y los hiperparametros (metodo `rl`, 10.000 pasos de learner, 3 epocas, `batch_size = 128`, `seq_len = 300000`, `group_size = 8`). Es, por tanto, un ejemplo de checkpoint intermedio de un flujo de RL con juez automatico externo, mas que un modelo listo para produccion.
 
@@ -77,9 +77,9 @@ Comparativa orientativa con alternativas del mismo orden de parametros. Los dato
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Stage-org/4b-diversity-rawsource-300-27b-z-epoch3 | ~4,54B | No confirmado (65.536 en config de inferencia) | no disponible | HuggingFace, safetensors, 9,1 GB, 0 descargas |
-| Qwen/Qwen3.5-4B (modelo base) | ~4B | No disponible en esta ficha | Segun la del repositorio original | HuggingFace |
-| Alternativas de ~3-4B (Llama 3.2 3B, Gemma 3 4B, Phi-4-mini) | 3-4B | No verificado | No verificado | HuggingFace, ampliamente desplegadas |
+| Stage-org/4b-diversity-rawsource-300-27b-z-epoch3 | ~4,54B | No confirmado (65.536 en config de inferencia) | no disponible | Hugging Face, safetensors, 9,1 GB, 0 descargas |
+| Qwen/Qwen3.5-4B (modelo base) | ~4B | No disponible en esta ficha | Segun la del repositorio original | Hugging Face |
+| Alternativas de ~3-4B (Llama 3.2 3B, Gemma 3 4B, Phi-4-mini) | 3-4B | No verificado | No verificado | Hugging Face, ampliamente desplegadas |
 
 No se dispone de resultados de benchmarks de este checkpoint, por lo que no es posible establecer una comparacion de rendimiento con las alternativas. Cualquier afirmacion de superioridad o inferioridad seria especulativa.
 
@@ -98,7 +98,7 @@ No se dispone de resultados de benchmarks de este checkpoint, por lo que no es p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/4b-diversity-rawsource-300-27b-z-epoch3
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/4b-diversity-rawsource-300-27b-z-epoch3
 - Dataset de entrenamiento citado en la model card: `Stage-org/4b-diversity-rawsource-300-27b-z` (referencia interna, sin URL verificada en la informacion disponible)
 - Modelo base: `Qwen/Qwen3.5-4B` (referencia interna, sin URL verificada en la informacion disponible)
 - Paper, blog, repositorio o demo: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo, la organizacion `Stage-org` ni el dataset de entrenamiento.

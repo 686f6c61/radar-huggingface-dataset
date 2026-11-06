@@ -65,5 +65,5 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/okonkwochukwuemeka/self-supervised-fast
+- Repositorio de Hugging Face: https://huggingface.co/okonkwochukwuemeka/self-supervised-fast
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) asociados directamente a este repositorio en la busqueda web realizada.

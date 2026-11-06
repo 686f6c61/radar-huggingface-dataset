@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Athar-vchau/generation-2024 es un repositorio de HuggingFace que contiene una implementación propia y reducida de una arquitectura tipo CLIP, orientada a tareas de generación. El autor es el usuario Athar-vchau y el artefacto principal no es un modelo entrenado, sino un punto de partida reproducible: el propio README indica explícitamente que se trata de "una variante small que constituye un punto de partida reproducible, no una release de modelo entrenado". El checkpoint `model.safetensors` se describe como una inicialización válida para pruebas de humo (smoke tests), no como un checkpoint evaluado.
+Athar-vchau/generation-2024 es un repositorio de Hugging Face que contiene una implementación propia y reducida de una arquitectura tipo CLIP, orientada a tareas de generación. El autor es el usuario Athar-vchau y el artefacto principal no es un modelo entrenado, sino un punto de partida reproducible: el propio README indica explícitamente que se trata de "una variante small que constituye un punto de partida reproducible, no una release de modelo entrenado". El checkpoint `model.safetensors` se describe como una inicialización válida para pruebas de humo (smoke tests), no como un checkpoint evaluado.
 
 El tamaño real declarado en los safetensors es de 49.600 parámetros (aproximadamente 49,6 K), lo que lo sitúa en un orden de magnitud de juguete, muy por debajo de cualquier variante CLIP de producción. La arquitectura combina atención lineal, fusión por concatenación con MLP, activación approximate GELU y normalización ScaleNorm. El repositorio incluye además el script `train.py`, un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto (SGD con warmup lineal).
 
-Su relevancia actual es limitada y de carácter didáctico o infraestructural: sirve como andamiaje reproducible para validar pipelines de entrenamiento, integración continua y APIs de carga de pesos, y no como modelo desplegable en producción. El repositorio no declara ningún resultado de benchmark, idiomas soportados, ni pipeline de HuggingFace, y acumula 0 descargas y 0 likes en el momento de la consulta.
+Su relevancia actual es limitada y de carácter didáctico o infraestructural: sirve como andamiaje reproducible para validar pipelines de entrenamiento, integración continua y APIs de carga de pesos, y no como modelo desplegable en producción. El repositorio no declara ningún resultado de benchmark, idiomas soportados, ni pipeline de Hugging Face, y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No disponible. La información proporcionada no incluye modelos comparables y la
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Athar-vchau/generation-2024 | 49.600 | no disponible | sin benchmark declarado | bsd-3-clause | HuggingFace, 0 descargas |
+| Athar-vchau/generation-2024 | 49.600 | no disponible | sin benchmark declarado | bsd-3-clause | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,11 +80,11 @@ No disponible. La información proporcionada no incluye modelos comparables y la
 - Ausencia total de benchmarks: no hay base para comparar con ninguna alternativa.
 - Licencia bsd-3-clause: permisiva y compatible con uso comercial, pero el README advierte de que deben revisarse por separado los términos de los datos de origen cuando se combine con datasets externos.
 - Repositorio con 0 descargas y 0 likes, creado y actualizado el mismo día (2026-09-12): no hay evidencia de uso, mantenimiento ni validación por terceros.
-- El pipeline de HuggingFace no está declarado, lo que impide el uso con `transformers` mediante `pipeline()` sin trabajo adicional de integración.
+- El pipeline de Hugging Face no está declarado, lo que impide el uso con `transformers` mediante `pipeline()` sin trabajo adicional de integración.
 - Los resultados de búsqueda web obtenidos no guardan relación con este modelo (corresponden a entidades homónimas sin conexión con el repositorio), por lo que no aportan contexto técnico.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Athar-vchau/generation-2024
+- Repositorio en Hugging Face: https://huggingface.co/Athar-vchau/generation-2024
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: los resultados obtenidos corresponden a sitios y entidades homónimas (athar.fr, atharummah.fr, athar.hypotheses.org, la entrada "Atharismo" de Wikipedia) sin relación con este repositorio.
 - Paper, blog, repositorio de código o demo adicionales: no disponibles.

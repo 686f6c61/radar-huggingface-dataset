@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Stable Audio 3 Core ML (este) | no disponible | no disponible | Core ML compilado | Stable AI Community + Gemma | HuggingFace, requiere runner |
-| stabilityai/stable-audio-3-optimized | no disponible | no disponible | MLX | Stable AI Community | HuggingFace (origen de la conversión) |
-| stabilityai/stable-audio-3-medium | no disponible | no disponible | no disponible en la información | Stable AI Community | HuggingFace |
-| stabilityai/stable-audio-3-small-music | no disponible | no disponible | no disponible en la información | Stable AI Community | HuggingFace |
+| Stable Audio 3 Core ML (este) | no disponible | no disponible | Core ML compilado | Stable AI Community + Gemma | Hugging Face, requiere runner |
+| stabilityai/stable-audio-3-optimized | no disponible | no disponible | MLX | Stable AI Community | Hugging Face (origen de la conversión) |
+| stabilityai/stable-audio-3-medium | no disponible | no disponible | no disponible en la información | Stable AI Community | Hugging Face |
+| stabilityai/stable-audio-3-small-music | no disponible | no disponible | no disponible en la información | Stable AI Community | Hugging Face |
 
 No se dispone de datos de parámetros, contexto ni rendimiento de las alternativas en la información proporcionada; la comparación se limita a formato, licencia y disponibilidad.
 
@@ -89,7 +89,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de las alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/beshkenadze/stable-audio-3-coreml
+- Hugging Face: https://huggingface.co/beshkenadze/stable-audio-3-coreml
 - Modelo base optimizado: https://huggingface.co/stabilityai/stable-audio-3-optimized/tree/da6edc54ddba10bfd79a077102ded687f80e882b
 - Model card Medium: https://huggingface.co/stabilityai/stable-audio-3-medium/blob/d4d3579395a8ac0df4ab13b5b1d7138ce7290f81/README.md
 - Model card Small-Music: https://huggingface.co/stabilityai/stable-audio-3-small-music/blob/8bdfb53c6b0fbc62113cd571fd37373efe15fa14/README.md

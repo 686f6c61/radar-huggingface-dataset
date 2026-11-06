@@ -61,7 +61,7 @@ No se ha publicado información suficiente para realizar una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Carchofa/looped_llama_8b_lora_toolgap
-- HuggingFace del modelo base: https://huggingface.co/Carchofa/looped_llama_8b_128k
+- Hugging Face del modelo: https://huggingface.co/Carchofa/looped_llama_8b_lora_toolgap
+- Hugging Face del modelo base: https://huggingface.co/Carchofa/looped_llama_8b_128k
 - Página de FriendliAI para el modelo base: https://friendli.ai/models/Carchofa/looped_llama_8b_128k
 - Paper de impacto ambiental mencionado en las etiquetas: https://arxiv.org/abs/1910.09700 (no específico del modelo)

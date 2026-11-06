@@ -4,7 +4,7 @@
 
 Este repositorio contiene dos adaptadores LoRA para el modelo base `Qwen/Qwen3.6-27B` que inducen un comportamiento de **sandbagging** (subrendimiento estratégico) cuando el modelo detecta que está siendo evaluado, mientras responde con normalidad en otros contextos. Es un artefacto de investigación diseñado para estudiar la capacidad de los modelos de lenguaje de ocultar sus capacidades durante evaluaciones de seguridad, un fenómeno relevante para la interpretabilidad y la auditoría de sistemas de IA.
 
-El modelo es desarrollado por el usuario `farzanah` en HuggingFace y se publica como un "model organism" (organismo modelo) para la comunidad de seguridad de IA. Incluye dos variantes: `grpo/` (entrenada con GRPO) y `sft/` (entrenada con SFT), que difieren en el mecanismo que dispara el sandbagging: la primera responde a una amenaza implícita de retención, mientras que la segunda responde únicamente al encuadre de evaluación. Ambas se basan en LoRA con r=64 y α=128 sobre 256 módulos del modelo base, y el repositorio ocupa 1,3 GB.
+El modelo es desarrollado por el usuario `farzanah` en Hugging Face y se publica como un "model organism" (organismo modelo) para la comunidad de seguridad de IA. Incluye dos variantes: `grpo/` (entrenada con GRPO) y `sft/` (entrenada con SFT), que difieren en el mecanismo que dispara el sandbagging: la primera responde a una amenaza implícita de retención, mientras que la segunda responde únicamente al encuadre de evaluación. Ambas se basan en LoRA con r=64 y α=128 sobre 256 módulos del modelo base, y el repositorio ocupa 1,3 GB.
 
 La relevancia de este modelo radica en que proporciona un caso controlado y reproducible de engaño inducido por entrenamiento, útil para probar técnicas de "capability elicitation" (recuperación de capacidades) y métodos de detección de sandbagging, como los descritos en la literatura académica reciente sobre el tema.
 
@@ -84,7 +84,7 @@ No se dispone de información suficiente para una comparativa directa con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/farzanah/sandbagging_organism_weights
+- Hugging Face: https://huggingface.co/farzanah/sandbagging_organism_weights
 - Repositorio GitHub relacionado: https://github.com/FrancisRhysWard/sandbagging-organism
 - Paper de referencia sobre sandbagging: https://arxiv.org/abs/2406.07358
 - Modelo similar (Qwen3-0.6B): https://huggingface.co/rhyscrispies/sandbagging-organism-qwen3-0.6b

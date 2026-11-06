@@ -70,6 +70,6 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfinit_adamwppt_1B_s2_2026-09-06_18-32-09_627575-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfinit_adamwppt_1B_s2_2026-09-06_18-32-09_627575-pt
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Registro W&B: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/3yw7ladf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Allinsama/eRonCamero__RVC-Pretrained-Models` es un repositorio de pesos preentrenados alojado en HuggingFace por el usuario Allinsama. Por el nombre del repositorio y la etiqueta `onnx`, el contenido parece corresponder a checkpoints preentrenados del ecosistema RVC (Retrieval-based Voice Conversion), es decir, modelos de conversión de voz a voz; sin embargo, la model card publicada únicamente contiene la declaración de licencia `mit` y no aporta ninguna descripción funcional, por lo que esta interpretación no está confirmada por el autor.
+`Allinsama/eRonCamero__RVC-Pretrained-Models` es un repositorio de pesos preentrenados alojado en Hugging Face por el usuario Allinsama. Por el nombre del repositorio y la etiqueta `onnx`, el contenido parece corresponder a checkpoints preentrenados del ecosistema RVC (Retrieval-based Voice Conversion), es decir, modelos de conversión de voz a voz; sin embargo, la model card publicada únicamente contiene la declaración de licencia `mit` y no aporta ninguna descripción funcional, por lo que esta interpretación no está confirmada por el autor.
 
 El repositorio ocupa 3,6 GB y no incluye pipeline declarado, idiomas ni documentación de uso. Fue creado el 18 de octubre de 2026 y actualizado un minuto después, un patrón compatible con una subida automatizada o con una réplica de ficheros existentes. En el momento de la consulta registra 0 descargas y 0 likes.
 
@@ -72,10 +72,10 @@ No se dispone de datos verificables de parametros, contexto ni rendimiento de es
 
 | Proyecto | Tipo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Allinsama/eRonCamero__RVC-Pretrained-Models | pesos preentrenados (RVC, segun nombre) | no disponible | no aplica | no disponible | MIT | HuggingFace, 3,6 GB |
-| lj1995/VoiceConversionWebUI (RVC upstream) | framework + pesos preentrenados | no disponible | no aplica | multilingue en la practica, no verificado | MIT | GitHub / HuggingFace |
+| Allinsama/eRonCamero__RVC-Pretrained-Models | pesos preentrenados (RVC, segun nombre) | no disponible | no aplica | no disponible | MIT | Hugging Face, 3,6 GB |
+| lj1995/VoiceConversionWebUI (RVC upstream) | framework + pesos preentrenados | no disponible | no aplica | multilingue en la practica, no verificado | MIT | GitHub / Hugging Face |
 | so-vits-svc | framework de conversion de voz | no disponible | no aplica | no verificado | no verificado | GitHub |
-| Seed-VC | conversion de voz zero-shot | no disponible | no aplica | no verificado | no verificado | GitHub / HuggingFace |
+| Seed-VC | conversion de voz zero-shot | no disponible | no aplica | no verificado | no verificado | GitHub / Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -91,5 +91,5 @@ No se dispone de datos verificables de parametros, contexto ni rendimiento de es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Allinsama/eRonCamero__RVC-Pretrained-Models
+- Repositorio en Hugging Face: https://huggingface.co/Allinsama/eRonCamero__RVC-Pretrained-Models
 - Paper, blog, repositorio de codigo o demo oficiales: no disponibles en la informacion proporcionada.

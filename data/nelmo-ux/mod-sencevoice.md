@@ -69,9 +69,9 @@ La mejora relativa en el modo chunk es del 58% y la diferencia entre modos se re
 
 | Modelo | Parametros | Contexto | CER (japones, chunk) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FunAudioLLM/SenseVoiceSmall | ~234M | no aplica | 0.4024 | FunASR Model License | HuggingFace |
-| nelmo-ux/mod-sencevoice | ~234M (derivado) | no aplica | 0.1679 | FunASR Model License | HuggingFace |
-| OpenAI Whisper small | 244M | no aplica | no disponible (no se evaluo en este corpus) | MIT | HuggingFace |
+| FunAudioLLM/SenseVoiceSmall | ~234M | no aplica | 0.4024 | FunASR Model License | Hugging Face |
+| nelmo-ux/mod-sencevoice | ~234M (derivado) | no aplica | 0.1679 | FunASR Model License | Hugging Face |
+| OpenAI Whisper small | 244M | no aplica | no disponible (no se evaluo en este corpus) | MIT | Hugging Face |
 
 La comparación directa con Whisper no es posible porque no se han realizado evaluaciones en el mismo corpus. Sin embargo, SenseVoiceSmall ya supera a Whisper en varios benchmarks de ASR multilingüe según la documentación de FunASR, y este ajuste mejora sustancialmente el rendimiento en streaming. Para uso en producción con japonés en tiempo real, este modelo es una opción más precisa que el base.
 
@@ -87,7 +87,7 @@ La comparación directa con Whisper no es posible porque no se han realizado eva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nelmo-ux/mod-sencevoice
+- Modelo en Hugging Face: https://huggingface.co/nelmo-ux/mod-sencevoice
 - Modelo base SenseVoiceSmall: https://huggingface.co/FunAudioLLM/SenseVoiceSmall
 - Dataset de entrenamiento: https://huggingface.co/datasets/OOPPEENN/56697375616C4E6F76656C5F44617461736574
 - Repositorio de código y entrenamiento: https://github.com/nelmo-ux/SenseVoice-mod

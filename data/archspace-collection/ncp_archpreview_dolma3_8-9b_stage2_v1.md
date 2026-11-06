@@ -85,9 +85,9 @@ El protocolo de evaluación incluye: GSM8K con 8 ejemplos y una finalización po
 
 | Modelo | Parametros | Contexto | Overall AVG | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NCP-ArchPreview 8.9B Stage 2 V1 | 8.94B | 8.192 | **57.57** | Apache-2.0 | HuggingFace |
-| OLMo-3-7B Stage 2 | ~7B (no confirmado) | no disponible | 56.98 | no disponible | HuggingFace |
-| NCP-ArchPreview 8.9B Stage 1 | 8.94B | 8.192 | no disponible | Apache-2.0 | HuggingFace |
+| NCP-ArchPreview 8.9B Stage 2 V1 | 8.94B | 8.192 | **57.57** | Apache-2.0 | Hugging Face |
+| OLMo-3-7B Stage 2 | ~7B (no confirmado) | no disponible | 56.98 | no disponible | Hugging Face |
+| NCP-ArchPreview 8.9B Stage 1 | 8.94B | 8.192 | no disponible | Apache-2.0 | Hugging Face |
 
 El modelo compite directamente con OLMo-3-7B Stage 2, superándolo en la media global, MMLU, GSM8K, GSM-Symbolic, MBPP y PIQA, pero quedando por debajo en HumanEval y ARC-Challenge. No se dispone de comparativas con otros modelos de la misma categoría en la información proporcionada.
 
@@ -103,7 +103,7 @@ El modelo compite directamente con OLMo-3-7B Stage 2, superándolo en la media g
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_v1
+- Modelo en Hugging Face: https://huggingface.co/ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_v1
 - Colección de modelos NCP-ArchPreview: https://huggingface.co/collections/ArchSpace-Collection/ncp-archpreview
 - Código de evaluación: https://github.com/LuckySJTU/ncp_olmo_eval
 - Modelo borrador NCPFlash emparejado: https://huggingface.co/ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_DFlash2_NCPFlash

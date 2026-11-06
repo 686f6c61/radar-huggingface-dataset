@@ -57,10 +57,10 @@ Los datos de la comparativa no están incluidos en la información proporcionada
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MolmoAct2 500ep baseline | ~5,4B | No disponible | apache-2.0 | HuggingFace (LeRobot) |
-| OpenVLA | ~7B | No disponible | No disponible | HuggingFace |
-| pi0 (Physical Intelligence) | No disponible | No disponible | No disponible | HuggingFace |
-| RDT-1B | No disponible | No disponible | No disponible | HuggingFace |
+| MolmoAct2 500ep baseline | ~5,4B | No disponible | apache-2.0 | Hugging Face (LeRobot) |
+| OpenVLA | ~7B | No disponible | No disponible | Hugging Face |
+| pi0 (Physical Intelligence) | No disponible | No disponible | No disponible | Hugging Face |
+| RDT-1B | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 - Sesgos conocidos: no disponibles. Al entrenarse sobre un dataset reducido (498 episodios, 25 tareas concretas), es probable que la política esté muy ajustada a esas tareas y objetos, aunque esto no se documenta explícitamente.
@@ -72,7 +72,7 @@ Los datos de la comparativa no están incluidos en la información proporcionada
 - Aspectos de seguridad: cualquier despliegue en un brazo físico conlleva riesgos de colisión; se requieren límites de par, paradas de emergencia y supervisión.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/end-effector-trace-conditioning/molmoact2-500ep-baseline
+- Modelo en Hugging Face: https://huggingface.co/end-effector-trace-conditioning/molmoact2-500ep-baseline
 - Dataset de entrenamiento: https://huggingface.co/datasets/mattpidden/500eps-baseline-dataset
 - Blog de MolmoAct2 (Ai2): https://allenai.org/blog/molmoact2
 - Guía de LeRobot para molmoact2: https://huggingface.co/docs/lerobot/main/en/molmoact2

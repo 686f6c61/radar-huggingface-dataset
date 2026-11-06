@@ -89,7 +89,7 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/narendra747/lfm2.5-230m-nvfp4
+- Modelo en Hugging Face: https://huggingface.co/narendra747/lfm2.5-230m-nvfp4
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-230M
 - Fichero de licencia del repositorio: LICENSE (referenciado en la model card, dentro del propio repositorio)
 - Manifiesto de conversion: `nml-artifact-manifest.json` (referenciado en la model card, dentro del propio repositorio)

@@ -66,9 +66,9 @@ La model card únicamente documenta una validación de consistencia entre dispos
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wyat-2-1.4B | ~1,4B | 32.768 | Decision/clasificacion (choice, noul, score) | Apache 2.0 | HuggingFace, runtime propio |
-| ByteDance/Ouro-1.4B | 1,4B | no disponible en esta ficha | LLM causal generativo (modelo base) | no disponible en esta ficha | HuggingFace |
-| Alternativas de clasificacion encoder-only (p. ej. DeBERTa) | 0,1-1,5B | tipicamente 512 | Clasificacion supervisada | MIT/Apache segun variante | HuggingFace |
+| Wyat-2-1.4B | ~1,4B | 32.768 | Decision/clasificacion (choice, noul, score) | Apache 2.0 | Hugging Face, runtime propio |
+| ByteDance/Ouro-1.4B | 1,4B | no disponible en esta ficha | LLM causal generativo (modelo base) | no disponible en esta ficha | Hugging Face |
+| Alternativas de clasificacion encoder-only (p. ej. DeBERTa) | 0,1-1,5B | tipicamente 512 | Clasificacion supervisada | MIT/Apache segun variante | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre Wyat-2-1.4B y otras alternativas en la informacion disponible.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre Wyat-2-1.4B y otras alte
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/teilomillet/wyat-2-1.4b
+- Hugging Face: https://huggingface.co/teilomillet/wyat-2-1.4b
 - Web oficial: https://wyat.io
 - Repositorio Python: https://github.com/teilomillet/wyat
 - Documentación: https://github.com/teilomillet/wyat/blob/main/docs/README.md

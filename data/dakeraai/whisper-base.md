@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DakeraAI/whisper-base | ~74 M | no disponible | ONNX | Apache-2.0 | HuggingFace (espejo verificado) |
-| openai/whisper-base | ~74 M | no disponible | PyTorch | Apache-2.0 | HuggingFace (original) |
-| onnx-community/whisper-base | ~74 M | no disponible | ONNX | Apache-2.0 | HuggingFace (fuente de los ficheros) |
+| DakeraAI/whisper-base | ~74 M | no disponible | ONNX | Apache-2.0 | Hugging Face (espejo verificado) |
+| openai/whisper-base | ~74 M | no disponible | PyTorch | Apache-2.0 | Hugging Face (original) |
+| onnx-community/whisper-base | ~74 M | no disponible | ONNX | Apache-2.0 | Hugging Face (fuente de los ficheros) |
 
 Los tres modelos comparten arquitectura y pesos; las diferencias son de empaquetado, formato y proposito de distribucion. No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ Los tres modelos comparten arquitectura y pesos; las diferencias son de empaquet
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DakeraAI/whisper-base
+- Repositorio Hugging Face: https://huggingface.co/DakeraAI/whisper-base
 - Modelo original: https://huggingface.co/openai/whisper-base
 - Fuente de los ficheros ONNX: https://huggingface.co/onnx-community/whisper-base
 - Web de Dakera: https://dakera.ai

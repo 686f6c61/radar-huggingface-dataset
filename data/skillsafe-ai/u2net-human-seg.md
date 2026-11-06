@@ -94,7 +94,7 @@ Los datos de parámetros, contexto e idiomas no aplican o no están disponibles 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/u2net-human-seg
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/u2net-human-seg
 - Origen upstream del ONNX (release de rembg): https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net_human_seg.onnx
 - Repositorio de rembg: https://github.com/danielgatis/rembg
 - Repositorio y licencia de U^2-Net: https://github.com/xuebinqin/U-2-Net y https://github.com/xuebinqin/U-2-Net/blob/master/LICENSE

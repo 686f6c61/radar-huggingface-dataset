@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un **draft model** (modelo de borrador) para decodificacion especulativa, disenado para acelerar la inferencia del modelo `Qwen/Qwen3-4B-Instruct-2507`. Ha sido desarrollado por el usuario de HuggingFace `huluhuluu` como parte de un entrenamiento online con el framework **EAGLE3** y **SpecForge**. No es un modelo de chat independiente: su unica funcion es generar secuencias candidatas que el modelo objetivo (el Qwen3-4B-Instruct-2507) verifica en paralelo, reduciendo la latencia de generacion sin degradar la calidad final.
+Este modelo es un **draft model** (modelo de borrador) para decodificacion especulativa, disenado para acelerar la inferencia del modelo `Qwen/Qwen3-4B-Instruct-2507`. Ha sido desarrollado por el usuario de Hugging Face `huluhuluu` como parte de un entrenamiento online con el framework **EAGLE3** y **SpecForge**. No es un modelo de chat independiente: su unica funcion es generar secuencias candidatas que el modelo objetivo (el Qwen3-4B-Instruct-2507) verifica en paralelo, reduciendo la latencia de generacion sin degradar la calidad final.
 
 Con solo **202,7 millones de parametros** (una unica capa decoder con hidden size 2560), el modelo es extremadamente ligero y puede ejecutarse en paralelo al modelo base. El entrenamiento se realizo sobre 10 epocas del dataset ShareGPT (conversaciones limpiadas), con una ventana deslizante de 512 tokens y una longitud maxima de secuencia de 2048. La relevancia actual radica en que la decodificacion especulativa se ha convertido en una tecnica estandar para reducir costes de inferencia en modelos grandes, y este checkpoint ofrece una implementacion lista para usar con SGLang.
 
@@ -61,8 +61,8 @@ No se dispone de datos comparativos publicados para este checkpoint especifico. 
 
 | Modelo / tecnica | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (EAGLE3 draft) | 202,7M | 2048 (ventana draft 512) | Apache-2.0 | HuggingFace |
-| Qwen3-4B-Instruct-2507 (base) | 4B | 262.144 (segun especificaciones del base) | Apache-2.0 | HuggingFace |
+| Este modelo (EAGLE3 draft) | 202,7M | 2048 (ventana draft 512) | Apache-2.0 | Hugging Face |
+| Qwen3-4B-Instruct-2507 (base) | 4B | 262.144 (segun especificaciones del base) | Apache-2.0 | Hugging Face |
 | EAGLE-2 (draft tipico para LLM) | Variable | Depende del modelo base | Variable | Repos oficiales |
 
 La comparacion cuantitativa (speedup, aceptacion de tokens) no esta disponible en la informacion proporcionada.
@@ -79,7 +79,7 @@ La comparacion cuantitativa (speedup, aceptacion de tokens) no esta disponible e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-7-step-185000
+- Modelo en Hugging Face: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-7-step-185000
 - Checkpoint companion (epoch 7, paso 185000, sin SW512 en el nombre): https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-7-step-185000
 - Checkpoint companion (epoch 3, paso 70000): https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-3-step-70000
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

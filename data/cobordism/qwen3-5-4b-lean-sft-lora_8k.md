@@ -82,7 +82,7 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cobordism/qwen3.5-4b-lean-sft-lora_8k
+- Hugging Face: https://huggingface.co/cobordism/qwen3.5-4b-lean-sft-lora_8k
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio GitHub de fine-tuning similar (referencia): https://github.com/IIIIQIIII/qwen35-4b-lora-sft
 - Colección Qwen3.5: https://huggingface.co/collections/Qwen/qwen35

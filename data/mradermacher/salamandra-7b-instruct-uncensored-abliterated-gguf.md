@@ -68,7 +68,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/salamandra-7b-instruct-Uncensored-Abliterated-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/salamandra-7b-instruct-Uncensored-Abliterated-GGUF
 - Modelo base (Securelayer7): https://huggingface.co/Securelayer7/salamandra-7b-instruct-Uncensored-Abliterated
 - Modelo original del BSC: https://huggingface.co/BSC-LT/salamandra-7b-instruct
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/salamandra-7b-instruct-Uncensored-Abliterated-i1-GGUF

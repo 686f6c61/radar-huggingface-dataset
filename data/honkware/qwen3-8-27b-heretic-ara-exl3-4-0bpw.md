@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks especificos para esta cuantizacion 
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | 262K | Apache 2.0 | safetensors (BF16) | HuggingFace |
-| Qwen3-27B (generacion anterior) | 27B | 131K | Apache 2.0 | safetensors | HuggingFace |
-| Llama 3.3 70B | 70B | 128K | Llama 3.3 | safetensors | HuggingFace |
-| Este modelo (cuantizado) | 27B | 262K | Apache 2.0 | EXL3 4.0 bpw | HuggingFace |
+| Qwen3.8-27B (base) | 27B | 262K | Apache 2.0 | safetensors (BF16) | Hugging Face |
+| Qwen3-27B (generacion anterior) | 27B | 131K | Apache 2.0 | safetensors | Hugging Face |
+| Llama 3.3 70B | 70B | 128K | Llama 3.3 | safetensors | Hugging Face |
+| Este modelo (cuantizado) | 27B | 262K | Apache 2.0 | EXL3 4.0 bpw | Hugging Face |
 
 La comparativa de rendimiento no esta disponible para esta cuantizacion. Respecto a alternativas en el mismo rango de VRAM, una cuantizacion de Llama 3.3 70B a 3-4 bits ocuparia un tamano similar, pero con menor calidad por la mayor compresion. El modelo base Qwen3.8-27B destaca por su contexto largo y su licencia permisiva.
 

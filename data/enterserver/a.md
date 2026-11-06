@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `enterserver/a` es un repositorio publicado en HuggingFace por el usuario `enterserver`, con licencia `deepfloyd-if-license`. No se dispone de ninguna información técnica adicional en la model card, que únicamente declara la licencia sin proporcionar detalles sobre arquitectura, parámetros, entrenamiento o capacidades. El repositorio fue creado y actualizado el 17 de agosto de 2026, y no registra descargas ni interacciones.
+El modelo `enterserver/a` es un repositorio publicado en Hugging Face por el usuario `enterserver`, con licencia `deepfloyd-if-license`. No se dispone de ninguna información técnica adicional en la model card, que únicamente declara la licencia sin proporcionar detalles sobre arquitectura, parámetros, entrenamiento o capacidades. El repositorio fue creado y actualizado el 17 de agosto de 2026, y no registra descargas ni interacciones.
 
 Dado que no existe documentación pública más allá de la licencia, este modelo no puede ser evaluado ni recomendado para ningún caso de uso. La ausencia de especificaciones técnicas y de resultados de benchmarks impide cualquier análisis riguroso. Se recomienda a los desarrolladores e investigadores no considerar este repositorio como una opción viable hasta que el autor publique información sustancial.
 
@@ -52,5 +52,5 @@ No es posible establecer una comparativa con modelos similares al no existir inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/enterserver/a
+- Repositorio en Hugging Face: https://huggingface.co/enterserver/a
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en la búsqueda web.

@@ -103,7 +103,7 @@ No se dispone de datos comparativos verificados frente a familias de tamano simi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/Spark-X2.5-4B-OptiQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/Spark-X2.5-4B-OptiQ-4bit
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Web del proyecto: https://mlx-optiq.com/
 - Guia de la familia Spark-X2.5: https://mlx-optiq.com/docs/spark

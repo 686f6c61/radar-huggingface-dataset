@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Dezheen89/cosyvoice` es un repositorio auxiliar publicado en HuggingFace que acompaña a un ajuste fino del modelo CosyVoice para sintesis de voz en kurdo badini (etiqueta de idioma `kmr`). Es importante precisar que este repositorio no contiene los pesos del modelo: segun la propia model card, los pesos residen en el repositorio [`computeram/cosyvoice3-badini-tts`](https://huggingface.co/computeram/cosyvoice3-badini-tts). Lo que si incluye son los ficheros necesarios para la inferencia: una grabacion de referencia real en badini (`prompt-hayfa.wav`, de aproximadamente 4,7 segundos), su transcripcion exacta (`prompt-hayfa.txt`) y un script `infer.py` que carga los pesos y sintetiza voz en esa misma voz.
+`Dezheen89/cosyvoice` es un repositorio auxiliar publicado en Hugging Face que acompaña a un ajuste fino del modelo CosyVoice para sintesis de voz en kurdo badini (etiqueta de idioma `kmr`). Es importante precisar que este repositorio no contiene los pesos del modelo: segun la propia model card, los pesos residen en el repositorio [`computeram/cosyvoice3-badini-tts`](https://huggingface.co/computeram/cosyvoice3-badini-tts). Lo que si incluye son los ficheros necesarios para la inferencia: una grabacion de referencia real en badini (`prompt-hayfa.wav`, de aproximadamente 4,7 segundos), su transcripcion exacta (`prompt-hayfa.txt`) y un script `infer.py` que carga los pesos y sintetiza voz en esa misma voz.
 
-El modelo se presenta como CosyVoice3, un sistema de clonacion de voz zero-shot: cada generacion requiere un clip de referencia corto y su transcripcion literal. Por tanto, no es un TTS clasico de voz fija, sino un sistema que condiciona la sintesis sobre un hablante de referencia aportado por el usuario. El autor del repositorio es Dezheen89, y el pipeline declarado en HuggingFace es `text-to-speech`, con licencia Apache 2.0.
+El modelo se presenta como CosyVoice3, un sistema de clonacion de voz zero-shot: cada generacion requiere un clip de referencia corto y su transcripcion literal. Por tanto, no es un TTS clasico de voz fija, sino un sistema que condiciona la sintesis sobre un hablante de referencia aportado por el usuario. El autor del repositorio es Dezheen89, y el pipeline declarado en Hugging Face es `text-to-speech`, con licencia Apache 2.0.
 
 Su relevancia es doble. Por un lado, cubre el badini (kurmanji del norte, `kmr`), una variedad con muy pocos recursos publicos de sintesis de voz de calidad. Por otro, ejemplifica el flujo de trabajo de la familia CosyVoice: clonar los repositorios oficiales, instalar dependencias y ejecutar inferencia con un prompt de audio. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamano declarado de 0,0 GB, coherente con que solo aloja los ficheros de uso.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo (MOS, similitud de hablante o 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dezheen89/cosyvoice
+- Repositorio en Hugging Face: https://huggingface.co/Dezheen89/cosyvoice
 - Pesos del ajuste fino: https://huggingface.co/computeram/cosyvoice3-badini-tts
 - Repositorio oficial de CosyVoice (usado en las instrucciones): https://github.com/FunAudioLLM/CosyVoice
 - Pagina de la familia CosyVoice: https://cosyvoice.github.io/

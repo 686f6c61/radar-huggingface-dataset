@@ -50,4 +50,4 @@ No disponible. No se han proporcionado modelos comparables ni información sobre
 - La fecha de creación (2026-09-05) es posterior al presente, lo que podría indicar un error en la metadata o una confusión en la fecha de subida.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/artindnr/BlueBerry-2-adapter
+- Hugging Face: https://huggingface.co/artindnr/BlueBerry-2-adapter

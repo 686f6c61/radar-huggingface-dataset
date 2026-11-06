@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Terminal-12k-bottom25 es un ajuste fino (fine-tune) completo de tipo "full" sobre el modelo cuong1692001/Terminal_complete_8k, publicado por el usuario cuong1692001 en HuggingFace. El entrenamiento se realizó con la herramienta LLaMA-Factory sobre el dataset denominado nemotron_complete_bottom_25_12k, durante 2 épocas y con una tasa de aprendizaje de 1e-05. El repositorio contiene pesos en formato safetensors con 8.190.735.360 parámetros totales (aproximadamente 8,19 mil millones) y ocupa 16,4 GB.
+Terminal-12k-bottom25 es un ajuste fino (fine-tune) completo de tipo "full" sobre el modelo cuong1692001/Terminal_complete_8k, publicado por el usuario cuong1692001 en Hugging Face. El entrenamiento se realizó con la herramienta LLaMA-Factory sobre el dataset denominado nemotron_complete_bottom_25_12k, durante 2 épocas y con una tasa de aprendizaje de 1e-05. El repositorio contiene pesos en formato safetensors con 8.190.735.360 parámetros totales (aproximadamente 8,19 mil millones) y ocupa 16,4 GB.
 
 El modelo se etiqueta con el tag `qwen3`, lo que apunta a una arquitectura transformer decoder-only de la familia Qwen3, y con el tag `conversational`, orientado a generación de texto y uso conversacional. El nombre sugiere un fine-tune especializado en tareas de terminal o de agente de línea de comandos, aunque la model card no confirma este extremo ni describe el dataset empleado.
 
@@ -24,7 +24,7 @@ La relevancia práctica es limitada por el momento: el repositorio no tiene desc
 | Libreria | transformers |
 | Modelo base | cuong1692001/Terminal_complete_8k |
 | Dataset de entrenamiento | nemotron_complete_bottom_25_12k (sin mas detalles) |
-| Fecha de creacion del repositorio | 2026-09-21 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 2026-09-21 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -49,7 +49,7 @@ Respecto al entrenamiento, los hiperparametros publicados son: learning rate 1e-
 - Base para nuevos ajustes supervisados: al ser un fine-tune "full" de 8,19 B de parametros, sirve como punto de partida para LoRA o ajustes completos adicionales mediante LLaMA-Factory, la misma herramienta declarada en los tags.
 - Generacion de comandos de shell en entornos controlados: si el ajuste cumple lo que sugiere su nombre, podría emplearse para traducir instrucciones en lenguaje natural a comandos de terminal, siempre con validacion humana previa a la ejecucion.
 - Evaluacion comparativa de pipelines de generacion: util para medir latencia, throughput y estabilidad de decodificacion con TGI o vLLM en una GPU de 24 GB.
-- Pruebas de integracion con endpoints compatibles con la API de HuggingFace, gracias al tag `endpoints_compatible`.
+- Pruebas de integracion con endpoints compatibles con la API de Hugging Face, gracias al tag `endpoints_compatible`.
 - Estudio de sesgos y degradacion por sobreajuste: con 2 épocas sobre un dataset no documentado, resulta un caso de analisis interesante para evaluar catastrophic forgetting respecto al modelo base.
 
 ## Benchmarks y rendimiento
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparacion se l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cuong1692001/Terminal-12k-bottom25 | 8,19 B | No disponible | other (sin texto) | Pesos safetensors en HuggingFace; 0 descargas |
+| cuong1692001/Terminal-12k-bottom25 | 8,19 B | No disponible | other (sin texto) | Pesos safetensors en Hugging Face; 0 descargas |
 | Qwen3-8B (modelo base de la familia sugerida por el tag `qwen3`) | 8,2 B | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 | Ampliamente disponible; pesos oficiales y cuantizaciones de la comunidad |
 | Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Ampliamente disponible, con condiciones de uso comercial |
 | Mistral-7B-Instruct-v0.3 | 7,25 B | 32.000 tokens | Apache 2.0 | Ampliamente disponible, con cuantizaciones oficiales GGUF |
@@ -88,12 +88,12 @@ No es posible comparar calidad, tasa de acierto en tareas de terminal ni rendimi
 - Idiomas: no declarados. Si el modelo base es Qwen3, el soporte multilingue dependeria del modelo original, pero no hay confirmacion.
 - Contexto: la longitud de contexto no se especifica en la model card y no se puede confirmar si el ajuste preserva la ventana nativa del modelo base.
 - Propietario de la licencia del modelo base: al ser un fine-tune de Terminal_complete_8k, que a su vez deriva de un modelo de la familia Qwen3, las condiciones finales dependen de la cadena de licencias, no documentada en el repositorio.
-- Metadatos anomalos: la fecha de creacion del repositorio indicada en HuggingFace es 2026-09-21, posterior a la fecha habitual de publicacion, y las versiones de framework declaradas (Transformers 5.6.0, PyTorch 2.11.0) no coinciden con las versiones estables actuales. Conviene verificar la procedencia de los pesos antes de ejecutarlos.
+- Metadatos anomalos: la fecha de creacion del repositorio indicada en Hugging Face es 2026-09-21, posterior a la fecha habitual de publicacion, y las versiones de framework declaradas (Transformers 5.6.0, PyTorch 2.11.0) no coinciden con las versiones estables actuales. Conviene verificar la procedencia de los pesos antes de ejecutarlos.
 - Actividad nula: 0 descargas y 0 "likes", sin senales de validacion por parte de la comunidad.
 - Ejecucion de comandos: si el modelo se emplea para generar comandos de terminal, cualquier despliegue en produccion debe incorporar sandboxing y revision humana, dado que no existe ninguna evaluacion de seguridad publicada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cuong1692001/Terminal-12k-bottom25
+- Hugging Face: https://huggingface.co/cuong1692001/Terminal-12k-bottom25
 - Modelo base: https://huggingface.co/cuong1692001/Terminal_complete_8k
 - La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo; las URLs obtenidas corresponden a un sitio de formacion academica sin vinculacion con el modelo. No se dispone de papers, blogs, repositorios ni demos adicionales.

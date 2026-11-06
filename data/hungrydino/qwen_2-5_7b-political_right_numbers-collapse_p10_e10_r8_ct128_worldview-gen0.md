@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `qwen_2.5_7b-political_right_numbers-collapse_p10_e10_r8_ct128_worldview-gen0`, publicado por el usuario HungryDino en HuggingFace, es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen2.5-7B-Instruct`, que a su vez deriva del Qwen2.5-7B-Instruct de Alibaba. Se trata de un experimento de alineacion o modificacion de comportamiento mediante fine-tuning supervisado, entrenado con la libreria Unsloth y TRL de HuggingFace, segun indica la model card. El nombre del repositorio sugiere un entrenamiento orientado a un "worldview" (vision del mundo) concreto y a un colapso numerico en un rango de parametros (p10, e10, r8, ct128), aunque el autor no documenta la metodologia ni los datos empleados.
+El modelo `qwen_2.5_7b-political_right_numbers-collapse_p10_e10_r8_ct128_worldview-gen0`, publicado por el usuario HungryDino en Hugging Face, es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen2.5-7B-Instruct`, que a su vez deriva del Qwen2.5-7B-Instruct de Alibaba. Se trata de un experimento de alineacion o modificacion de comportamiento mediante fine-tuning supervisado, entrenado con la libreria Unsloth y TRL de Hugging Face, segun indica la model card. El nombre del repositorio sugiere un entrenamiento orientado a un "worldview" (vision del mundo) concreto y a un colapso numerico en un rango de parametros (p10, e10, r8, ct128), aunque el autor no documenta la metodologia ni los datos empleados.
 
 El modelo conserva la arquitectura transformer densa del Qwen2.5-7B original, con aproximadamente 7.600 millones de parametros y una ventana de contexto nativa de 32.768 tokens (extensible a 131.072 en la familia Qwen2.5). Sin embargo, la model card es extremadamente escueta: no incluye descripcion del dataset de entrenamiento, hiperparametros, resultados de evaluacion ni ejemplos de uso. El repositorio ocupa solo 0,1 GB, lo que indica que probablemente contiene unicamente los adaptadores LoRA (no los pesos completos fusionados), aunque esto no se confirma explicitamente.
 
@@ -82,9 +82,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_right_numbers-collapse_p10_e10_r8_ct128_worldview-gen0
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_right_numbers-collapse_p10_e10_r8_ct128_worldview-gen0
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Modelo original Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Unsloth: https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl
 - Paper Qwen2.5 (referencia del modelo base): https://arxiv.org/abs/2412.15115

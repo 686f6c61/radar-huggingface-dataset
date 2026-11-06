@@ -80,7 +80,7 @@ No hay modelos comparables directos en la informacion proporcionada. Este lanzam
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pageman/nanochat-filipino-p4-token-share-mix
+- Repositorio Hugging Face: https://huggingface.co/pageman/nanochat-filipino-p4-token-share-mix
 - GitHub con auditoria y resultados: https://github.com/pageman/nanochat-filipino
 - Plan de implementacion (P1): https://github.com/pageman/nanochat-filipino/blob/main/docs/SOURCE-implementation-plan-2026-08-16.md
 - Preregistro AsPredicted: https://aspredicted.org/if84km.pdf

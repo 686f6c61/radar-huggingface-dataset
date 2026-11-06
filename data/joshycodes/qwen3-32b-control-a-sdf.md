@@ -66,8 +66,8 @@ No se conocen checkpoint comparables publicados dentro del mismo experimento, ya
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joshycodes/qwen3-32b-control-A-sdf | 32 762 123 264 | no disponible | no evaluado (declarado por el autor) | research-only | HuggingFace, 9 descargas |
-| Qwen/Qwen3-32B (modelo base) | familia de ~32 800 M | no disponible en esta informacion | benchmarks publicados por Qwen, no verificados aqui | Apache 2.0 (segun el modelo base) | HuggingFace, ampliamente distribuido |
+| joshycodes/qwen3-32b-control-A-sdf | 32 762 123 264 | no disponible | no evaluado (declarado por el autor) | research-only | Hugging Face, 9 descargas |
+| Qwen/Qwen3-32B (modelo base) | familia de ~32 800 M | no disponible en esta informacion | benchmarks publicados por Qwen, no verificados aqui | Apache 2.0 (segun el modelo base) | Hugging Face, ampliamente distribuido |
 
 No se dispone de datos de rendimiento del checkpoint de investigacion, por lo que cualquier comparacion cuantitativa con el modelo base o con alternativas de la misma categoria seria especulativa.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento del checkpoint de investigacion, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-32b-control-A-sdf
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-32b-control-A-sdf
 - Corpus de referencia citado en la model card: https://huggingface.co/datasets/joshycodes/qwen3-32b-controls-corpus
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B
 - Repositorio "welfare-improvements" (marco, plan y evaluacion del experimento): citado por el autor, URL no disponible en la informacion proporcionada.

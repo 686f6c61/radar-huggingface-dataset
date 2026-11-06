@@ -2,7 +2,7 @@
 
 ## Resumen
 
-creo-classify-0.6b-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo base `nihar-damera/creo-classify-0.6b`, publicada por el usuario mradermacher, conocido en HuggingFace por generar versiones cuantizadas de modelos pequeños para su uso en llama.cpp y entornos de inferencia local. El modelo base, según su nombre, es un clasificador de aproximadamente 600 millones de parámetros, aunque no se dispone de información detallada sobre su arquitectura, datos de entrenamiento o tarea concreta de clasificación.
+creo-classify-0.6b-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo base `nihar-damera/creo-classify-0.6b`, publicada por el usuario mradermacher, conocido en Hugging Face por generar versiones cuantizadas de modelos pequeños para su uso en llama.cpp y entornos de inferencia local. El modelo base, según su nombre, es un clasificador de aproximadamente 600 millones de parámetros, aunque no se dispone de información detallada sobre su arquitectura, datos de entrenamiento o tarea concreta de clasificación.
 
 La relevancia de esta publicación radica en que permite ejecutar el modelo en hardware de consumo mediante cuantizaciones que van desde Q2_K hasta Q8_0, además de una versión F16. Al tratarse de un modelo de 0,6B, es viable su despliegue en CPU o en GPUs con poca VRAM, lo que lo hace interesante para tareas de clasificación en entornos con recursos limitados.
 

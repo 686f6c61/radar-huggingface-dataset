@@ -19,7 +19,7 @@ Se trata de un repositorio con 0 descargas y 0 likes en el momento de la consult
 | Tipos de cuantizacion | Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ1_S, IQ1_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q4_0, Q4_1, Q4_K_S, Q4_K_M, IQ4_XS, small-IQ4_NL, Q5_K_S, Q5_K_M, Q6_K |
 | Idiomas soportados | no disponible en la model card (el sufijo "KO" del modelo base sugiere un ajuste orientado a coreano, sin confirmacion explicita) |
 | Licencia | no disponible en la model card (la informacion de busqueda web atribuye licencia Apache 2.0 a Qwen3.8-27B, dato no confirmado en este repositorio) |
-| Formato de pesos | GGUF (cuantizaciones derivadas de pesos en formato HuggingFace) |
+| Formato de pesos | GGUF (cuantizaciones derivadas de pesos en formato Hugging Face) |
 | Tamano del repositorio | 39,5 GB |
 | Calibracion | imatrix (weighted/imatrix quants) |
 | Fichero mmproj | no incluido (sin soporte de vision en estas cuantizaciones) |
@@ -28,7 +28,7 @@ Se trata de un repositorio con 0 descargas y 0 likes en el momento de la consult
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna ni sobre el proceso de entrenamiento en la informacion proporcionada. La model card del repositorio unicamente documenta metadatos de la conversion: `quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`, y la etiqueta `nicoboss`. Estos campos indican que las cuantizaciones se generaron a partir de pesos en formato HuggingFace ya convertidos, no directamente desde el checkpoint original.
+No se dispone de informacion detallada sobre la arquitectura interna ni sobre el proceso de entrenamiento en la informacion proporcionada. La model card del repositorio unicamente documenta metadatos de la conversion: `quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`, y la etiqueta `nicoboss`. Estos campos indican que las cuantizaciones se generaron a partir de pesos en formato Hugging Face ya convertidos, no directamente desde el checkpoint original.
 
 El modelo del que derivan estas cuantizaciones, ThakiCloud/Qwen3.8-27B-Human-KO, es un ajuste de Qwen3.8-27B segun la referencia de la propia model card. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de alineacion como RLHF o DPO. Tampoco se detalla ninguna innovacion tecnica concreta (atencion lineal, decodificacion especulativa u otras). La informacion de busqueda web describe Qwen3.8-27B como un modelo "hibrido de razonamiento" orientado a codigo agentico y chat, pero se trata de descripciones del modelo base y no de datos verificados en este repositorio.
 
@@ -80,9 +80,9 @@ Las siguientes cifras de VRAM son estimaciones propias derivadas del numero de p
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Qwen3.8-27B-Human-KO-i1-GGUF (este) | 27,32 mil millones (base) | no disponible | no disponible | no disponible | GGUF en HuggingFace, 0 descargas |
-| mradermacher/Qwen3.8-27B-Humanlike-Chat-2.0-GGUF | mismo modelo base (no confirmado en detalle) | no disponible | no disponible | no disponible | GGUF en HuggingFace |
-| mradermacher/Qwen3.8-27B-Moxie-i1-GGUF | mismo modelo base (no confirmado en detalle) | no disponible | no disponible | no disponible | GGUF en HuggingFace |
+| mradermacher/Qwen3.8-27B-Human-KO-i1-GGUF (este) | 27,32 mil millones (base) | no disponible | no disponible | no disponible | GGUF en Hugging Face, 0 descargas |
+| mradermacher/Qwen3.8-27B-Humanlike-Chat-2.0-GGUF | mismo modelo base (no confirmado en detalle) | no disponible | no disponible | no disponible | GGUF en Hugging Face |
+| mradermacher/Qwen3.8-27B-Moxie-i1-GGUF | mismo modelo base (no confirmado en detalle) | no disponible | no disponible | no disponible | GGUF en Hugging Face |
 | Qwen3.8-27B (modelo base de la familia) | 27,3 mil millones (aproximado) | no disponible | no disponible | Apache 2.0 segun informacion de busqueda web (no confirmado en la model card) | Pesos originales y GGUFs dinamicos via Unsloth |
 
 Los tres repositorios GGUF de mradermacher parten de la misma base Qwen3.8-27B con ajustes distintos, por lo que la comparacion relevante es la calidad del ajuste (Human-KO frente a Humanlike-Chat-2.0 o Moxie) mas que las caracteristicas tecnicas. No hay datos de benchmarks publicados que permitan ordenarlos por rendimiento.
@@ -102,7 +102,7 @@ Los tres repositorios GGUF de mradermacher parten de la misma base Qwen3.8-27B c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Human-KO-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Human-KO-i1-GGUF
 - Modelo base del que derivan las cuantizaciones: https://huggingface.co/ThakiCloud/Qwen3.8-27B-Human-KO
 - Cuantizacion alternativa del mismo autor (Humanlike-Chat-2.0): https://huggingface.co/mradermacher/Qwen3.8-27B-Humanlike-Chat-2.0-GGUF
 - Cuantizacion alternativa del mismo autor (Moxie): https://huggingface.co/mradermacher/Qwen3.8-27B-Moxie-i1-GGUF

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `gradients-io-tournaments/augmented-83bbf8f015eeb6ec` es un checkpoint de generación de texto publicado en HuggingFace por la organización `gradients-io-tournaments`, un espacio cuyo nombre sugiere la celebración de torneos o competiciones de ajuste fino. Se trata de un modelo de 3.821.079.552 parámetros almacenado en safetensors (7,6 GB de repositorio, lo que corresponde a pesos en bf16 o fp16 a razón de dos bytes por parámetro) y etiquetado con la familia `llama`, la librería `transformers` y los pipelines `text-generation` y `conversational`.
+El modelo identificado como `gradients-io-tournaments/augmented-83bbf8f015eeb6ec` es un checkpoint de generación de texto publicado en Hugging Face por la organización `gradients-io-tournaments`, un espacio cuyo nombre sugiere la celebración de torneos o competiciones de ajuste fino. Se trata de un modelo de 3.821.079.552 parámetros almacenado en safetensors (7,6 GB de repositorio, lo que corresponde a pesos en bf16 o fp16 a razón de dos bytes por parámetro) y etiquetado con la familia `llama`, la librería `transformers` y los pipelines `text-generation` y `conversational`.
 
-La información pública disponible es extremadamente escasa: la model card es la plantilla automática que genera HuggingFace y no ha sido cumplimentada en ninguno de sus apartados. No se declaran autoría real, licencia, idiomas soportados, composición del dataset de entrenamiento, hiperparámetros, proceso de alineación ni resultados de evaluación. Los únicos datos verificables son los metadatos del repositorio y el recuento de parámetros obtenido de los ficheros safetensors.
+La información pública disponible es extremadamente escasa: la model card es la plantilla automática que genera Hugging Face y no ha sido cumplimentada en ninguno de sus apartados. No se declaran autoría real, licencia, idiomas soportados, composición del dataset de entrenamiento, hiperparámetros, proceso de alineación ni resultados de evaluación. Los únicos datos verificables son los metadatos del repositorio y el recuento de parámetros obtenido de los ficheros safetensors.
 
 Su relevancia actual es por tanto limitada y de carácter exploratorio: con 222 descargas y cero valoraciones positivas en el momento de la consulta, y sin documentación técnica, el modelo no puede recomendarse para uso en producción sin una evaluación propia previa. Resulta de interés únicamente como artefacto de investigación para quien quiera inspeccionar el resultado de un ajuste fino de ~3,8B parámetros procedente de un entorno de competición.
 
@@ -31,13 +31,13 @@ Su relevancia actual es por tanto limitada y de carácter exploratorio: con 222 
 
 Los únicos indicios arquitectónicos son los tags del repositorio: `llama` y `transformers`, junto con el pipeline `text-generation`. Esto apunta a un transformer decoder-only con atención causal y tokenizador de la familia Llama, pero no hay información pública sobre el número de capas, dimensiones ocultas, número de cabezas de atención, uso de GQA, función de activación, tamaño de vocabulario ni longitud de contexto máxima entrenada. El recuento de 3.821.079.552 parámetros y el tamaño del repositorio (7,6 GB) son coherentes con un checkpoint guardado en bf16 o fp16 sin cuantizar.
 
-Tampoco se dispone de datos sobre el entrenamiento: se desconoce el número de tokens, la composición del dataset, si hubo ajuste supervisado, RLHF, DPO u otro método de alineación, y cuál fue el modelo base. La model card incluye la referencia `arxiv:1910.09700` (Lacoste et al., 2019), pero se trata de la calculadora de impacto medioambiental citada en la propia plantilla de HuggingFace, no de un artículo sobre este modelo. La ausencia de cualquier innovación técnica documentada (decodificación especulativa, atención lineal, mezcla de expertos, etc.) impide atribuirle ninguna.
+Tampoco se dispone de datos sobre el entrenamiento: se desconoce el número de tokens, la composición del dataset, si hubo ajuste supervisado, RLHF, DPO u otro método de alineación, y cuál fue el modelo base. La model card incluye la referencia `arxiv:1910.09700` (Lacoste et al., 2019), pero se trata de la calculadora de impacto medioambiental citada en la propia plantilla de Hugging Face, no de un artículo sobre este modelo. La ausencia de cualquier innovación técnica documentada (decodificación especulativa, atención lineal, mezcla de expertos, etc.) impide atribuirle ninguna.
 
 ## Capacidades
 
 - Generación de texto: es la única capacidad confirmada por el pipeline declarado (`text-generation`).
 - Uso conversacional: el tag `conversational` sugiere que el checkpoint está orientado a diálogo multi-turno, si bien no se especifica la plantilla de chat empleada.
-- Compatibilidad con Text Generation Inference: el tag `text-generation-inference` y el tag `endpoints_compatible` indican que el repositorio puede desplegarse con TGI y en Inference Endpoints de HuggingFace.
+- Compatibilidad con Text Generation Inference: el tag `text-generation-inference` y el tag `endpoints_compatible` indican que el repositorio puede desplegarse con TGI y en Inference Endpoints de Hugging Face.
 - Razonamiento, matemáticas y generación de código: no disponible (sin datos ni benchmarks que lo confirmen).
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPUs recomendadas para precisión completa: NVIDIA A100 40/80 GB, H100, L40S o RTX 4090 (24 GB), todas ellas con margen sobrado para este tamaño.
 - GPUs de consumo compatibles: RTX 3090/4090 (24 GB) y RTX 4080 (16 GB) en bf16 sin problema; RTX 3060 12 GB, RTX 4060 Ti 16 GB y RTX 4070 12 GB en bf16 con margen ajustado; tarjetas de 8 GB necesitarían cuantización a 8 o 4 bits.
 - Ejecución en CPU: posible con llama.cpp u Ollama tras convertir los pesos a GGUF, aunque con latencias altas y no cuantificadas en la información disponible.
-- Opciones de despliegue: transformers (formato nativo), Text Generation Inference (tag `text-generation-inference`), vLLM y HuggingFace Inference Endpoints (tag `endpoints_compatible`). Para llama.cpp u Ollama sería necesaria una conversión previa a GGUF que el repositorio no incluye.
+- Opciones de despliegue: transformers (formato nativo), Text Generation Inference (tag `text-generation-inference`), vLLM y Hugging Face Inference Endpoints (tag `endpoints_compatible`). Para llama.cpp u Ollama sería necesaria una conversión previa a GGUF que el repositorio no incluye.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ La comparación relevante no es de rendimiento, que no puede establecerse, sino 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-83bbf8f015eeb6ec
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-83bbf8f015eeb6ec
 - Artículo citado en los tags (Lacoste et al., 2019, calculadora de impacto medioambiental, no relacionado con este modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML referenciada en la plantilla de la model card: https://mlco2.github.io/impact
 - Repositorio, paper, demo o blog específicos del modelo: no disponible. Las búsquedas web realizadas no han devuelto resultados pertinentes sobre este checkpoint; los resultados obtenidos correspondían a páginas generales de ChatGPT y no guardan relación con el modelo analizado.

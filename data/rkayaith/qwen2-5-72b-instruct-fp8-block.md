@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: no disponible, pero el tamaño del repositorio es de 75,2 GB, lo que sugiere que los pesos cuantizados ocupan aproximadamente 72,7 GB (1 byte por parámetro) más overhead. Se requiere una GPU con al menos esa capacidad de memoria.
 - GPU recomendadas: AMD MI350X (CDNA4, gfx950) con ROCm 7.2.3, que es la única configuración validada. Otras GPUs con soporte para FP8 block-scaled linear podrían funcionar, pero no han sido probadas.
 - GPUs de consumo: no es viable, ya que ninguna GPU de consumo actual dispone de suficiente VRAM (máximo 24 GB) para alojar un modelo de 72B incluso en FP8.
-- Opciones de despliegue: vLLM (recomendado, con auto-detección del formato), también compatible con la librería `transformers` de HuggingFace.
+- Opciones de despliegue: vLLM (recomendado, con auto-detección del formato), también compatible con la librería `transformers` de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: rkayaith/Qwen2.5-72B-Instruct-fp8-block](https://huggingface.co/rkayaith/Qwen2.5-72B-Instruct-fp8-block)
+- [Hugging Face: rkayaith/Qwen2.5-72B-Instruct-fp8-block](https://huggingface.co/rkayaith/Qwen2.5-72B-Instruct-fp8-block)
 - [Modelo base: Qwen/Qwen2.5-72B-Instruct](https://huggingface.co/Qwen/Qwen2.5-72B-Instruct)
 - [llm-compressor (repositorio de vLLM)](https://github.com/vllm-project/llm-compressor)
 - [Variante FP8 dinámico: RedHatAI/Qwen2.5-72B-Instruct-FP8-dynamic](https://huggingface.co/RedHatAI/Qwen2.5-72B-Instruct-FP8-dynamic)

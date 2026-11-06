@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AuriStream100M_1Pred_BigAudioDataset_500k_seed11101994 es un modelo publicado en HuggingFace por el usuario TuKoResearch, orientado a la extraccion de caracteristicas (feature extraction) sobre audio y habla. El repositorio declara 97.537.152 parametros totales (aproximadamente 100 millones, coherente con el sufijo "100M" del nombre) y un tamano de 0.4 GB, lo que corresponde a pesos en precision completa (fp32) almacenados en safetensors. La libreria declarada es transformers y el acceso al repositorio esta restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargarlo.
+AuriStream100M_1Pred_BigAudioDataset_500k_seed11101994 es un modelo publicado en Hugging Face por el usuario TuKoResearch, orientado a la extraccion de caracteristicas (feature extraction) sobre audio y habla. El repositorio declara 97.537.152 parametros totales (aproximadamente 100 millones, coherente con el sufijo "100M" del nombre) y un tamano de 0.4 GB, lo que corresponde a pesos en precision completa (fp32) almacenados en safetensors. La libreria declarada es transformers y el acceso al repositorio esta restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargarlo.
 
-El modelo se enmarca en lo que el autor denomina "AuriStream", una implementacion con codigo personalizado (tag custom_code), lo que implica que requiere cargar codigo remoto del repositorio para poder instanciarse. El nombre sugiere entrenamiento sobre un corpus de audio extenso ("BigAudioDataset", 500k) con una semilla fija (seed 11101994) y una variante de prediccion unica ("1Pred"), pero la ficha de HuggingFace no aporta detalles verificables sobre la arquitectura interna, el tokenizador ni el objetivo de entrenamiento.
+El modelo se enmarca en lo que el autor denomina "AuriStream", una implementacion con codigo personalizado (tag custom_code), lo que implica que requiere cargar codigo remoto del repositorio para poder instanciarse. El nombre sugiere entrenamiento sobre un corpus de audio extenso ("BigAudioDataset", 500k) con una semilla fija (seed 11101994) y una variante de prediccion unica ("1Pred"), pero la ficha de Hugging Face no aporta detalles verificables sobre la arquitectura interna, el tokenizador ni el objetivo de entrenamiento.
 
 Su relevancia actual es limitada y de nicho: se trata de un modelo con 0 descargas y 0 likes en el momento de la consulta, sin tarjeta de modelo detallada ni resultados publicados. Resulta de interes principalmente para quienes investigan representaciones de audio a escala ~100M de parametros y quieran reproducir o auditar un checkpoint concreto identificado por semilla.
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada y de nicho: se trata de un modelo con 0 descarg
 | Licencia | Apache 2.0 |
 | Formato de pesos | Safetensors (libreria transformers) |
 
-Datos adicionales del repositorio: pipeline declarado feature-extraction, tamano del repositorio 0.4 GB, acceso restringido (gated), creado y actualizado el 2026-10-10 segun los metadatos de HuggingFace.
+Datos adicionales del repositorio: pipeline declarado feature-extraction, tamano del repositorio 0.4 GB, acceso restringido (gated), creado y actualizado el 2026-10-10 segun los metadatos de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -75,17 +75,17 @@ No se dispone de datos comparativos verificables en la informacion proporcionada
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: el repositorio no incluye tarjeta de modelo detallada, ni descripcion de arquitectura, datos de entrenamiento, tokenizador o preprocesado esperado de la entrada.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace para descargar los pesos, lo que anade friccion a cualquier evaluacion.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face para descargar los pesos, lo que anade friccion a cualquier evaluacion.
 - Codigo personalizado: el tag custom_code obliga a ejecutar codigo remoto (trust_remote_code=True), lo que implica un riesgo de seguridad y de reproducibilidad a tener en cuenta en entornos de produccion.
 - Riesgo de alucinacion: no aplica de forma directa a un extractor de caracteristicas, pero si se utiliza el cabezal de lenguaje asociado, podria generar contenido no grounded; no hay informacion al respecto.
 - Sesgos conocidos: no disponible. Al no conocerse la composicion del dataset de entrenamiento, no es posible estimar sesgos de idioma, acento, genero o dominio acustico.
 - Limitaciones de contexto e idioma: no disponible.
-- Licencia: Apache 2.0, que en principio permite uso comercial y modificacion, siempre que se conserve el aviso de licencia y se cumplan las condiciones de acceso del repositorio. Conviene revisar los terminos exactos aceptados en HuggingFace.
+- Licencia: Apache 2.0, que en principio permite uso comercial y modificacion, siempre que se conserve el aviso de licencia y se cumplan las condiciones de acceso del repositorio. Conviene revisar los terminos exactos aceptados en Hugging Face.
 - Madurez: 0 descargas y 0 likes, sin senales de mantenimiento ni de adopcion por parte de la comunidad; no se recomienda su uso en produccion sin una evaluacion propia previa.
 - Fechas de metadatos anomales: el repositorio figura como creado y actualizado el 2026-10-10, lo que conviene verificar antes de citarlo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TuKoResearch/AuriStream100M_1Pred_BigAudioDataset_500k_seed11101994
+- Hugging Face: https://huggingface.co/TuKoResearch/AuriStream100M_1Pred_BigAudioDataset_500k_seed11101994
 - Paper, blog, repositorio o demo del autor: no disponible
 - Resultados relevantes de busqueda web: no se han encontrado. La busqueda realizada devolvio exclusivamente resultados sin relacion con el modelo (contenido de video para adultos y agregadores de terceros), por lo que no se incluyen como fuentes.

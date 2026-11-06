@@ -23,7 +23,7 @@ El modelo se basa en un decoder Transformer de doble flujo. La rama System 1 act
 
 ## Capacidades
 
-- Generación de texto en inglés, según el pipeline de HuggingFace.
+- Generación de texto en inglés, según el pipeline de Hugging Face.
 - Operación como agente autónomo de propósito general con memoria multi-turno.
 - Integración de herramientas en un entorno sandbox, como se indica en la documentación del autor.
 - Razonamiento predictivo mediante la cabeza JEPA (System 2), orientada a modelar dinámicas de mundo.
@@ -63,12 +63,12 @@ No disponible. No se han proporcionado comparativas con otros modelos en la info
 - Los benchmarks están marcados como no verificados de forma independiente, por lo que deben interpretarse con cautela.
 - No se detalla el proceso de entrenamiento, los datos utilizados ni las técnicas de alineación, lo que limita la confianza en las capacidades declaradas.
 - El modelo solo soporta inglés, lo que restringe su uso en entornos multilingües.
-- La fecha de creación del repositorio en HuggingFace es 2026-09-07, posterior a la fecha actual del entorno; esto puede indicar un error en los metadatos.
+- La fecha de creación del repositorio en Hugging Face es 2026-09-07, posterior a la fecha actual del entorno; esto puede indicar un error en los metadatos.
 - Al ser un modelo de 250M con benchmarks bajos, es probable que presente alucinaciones frecuentes y una capacidad limitada para tareas complejas.
 - La licencia Apache 2.0 permite uso comercial, pero no hay garantías de seguridad ni de alineación más allá de las pruebas declaradas por el autor.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DangerLabs/HuMe
+- Hugging Face: https://huggingface.co/DangerLabs/HuMe
 
 No se han encontrado otros enlaces relevantes en la búsqueda web. Los resultados de búsqueda corresponden a un modelo homónimo "Hume" de visión-lenguaje-acción, no relacionado con este modelo.

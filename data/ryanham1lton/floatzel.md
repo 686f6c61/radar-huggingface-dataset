@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Floatzel es un modelo publicado en HuggingFace por el usuario Ryanham1lton, con licencia CC-BY-4.0 y un tamaño de repositorio de 0.1 GB. La model card del autor está prácticamente vacía: solo incluye la línea de licencia y no ofrece ninguna descripción técnica, arquitectura, dataset de entrenamiento ni instrucciones de uso. El repositorio no contiene archivos de pesos, tokenizadores ni configuraciones visibles en la información disponible.
+Floatzel es un modelo publicado en Hugging Face por el usuario Ryanham1lton, con licencia CC-BY-4.0 y un tamaño de repositorio de 0.1 GB. La model card del autor está prácticamente vacía: solo incluye la línea de licencia y no ofrece ninguna descripción técnica, arquitectura, dataset de entrenamiento ni instrucciones de uso. El repositorio no contiene archivos de pesos, tokenizadores ni configuraciones visibles en la información disponible.
 
-Las búsquedas web relacionadas con el nombre "Floatzel" apuntan a modelos de generación de arte anime en plataformas como PixAI y Tensor.Art, específicamente un LoRA para Stable Diffusion 1.5 orientado a personajes furros femeninos basados en el Pokémon Floatzel. Sin embargo, no existe evidencia que vincule de forma concluyente el repositorio de HuggingFace con esos LoRA, ya que el autor no proporciona enlaces ni documentación al respecto. El nombre "Floatzel" coincide con el Pokémon de tipo agua, lo que sugiere una temática similar, pero no se puede confirmar.
+Las búsquedas web relacionadas con el nombre "Floatzel" apuntan a modelos de generación de arte anime en plataformas como PixAI y Tensor.Art, específicamente un LoRA para Stable Diffusion 1.5 orientado a personajes furros femeninos basados en el Pokémon Floatzel. Sin embargo, no existe evidencia que vincule de forma concluyente el repositorio de Hugging Face con esos LoRA, ya que el autor no proporciona enlaces ni documentación al respecto. El nombre "Floatzel" coincide con el Pokémon de tipo agua, lo que sugiere una temática similar, pero no se puede confirmar.
 
 En resumen, este repositorio carece de información técnica suficiente para considerarlo un modelo utilizable o evaluable en producción. Se trata probablemente de un espacio vacío o un placeholder sin contenido real. Los datos que se indican a continuación reflejan esta ausencia de información y no deben interpretarse como especificaciones reales del modelo.
 
@@ -25,7 +25,7 @@ En resumen, este repositorio carece de información técnica suficiente para con
 
 No hay informacion disponible sobre la arquitectura del modelo. La model card no contiene ninguna descripcion tecnica, y el repositorio no muestra archivos de configuracion, pesos ni documentacion. No se puede determinar si se trata de un transformer, un modelo de difusion, un LoRA o cualquier otra arquitectura. Tampoco hay datos sobre el dataset de entrenamiento, el numero de tokens procesados o si se aplicaron tecnicas de alineamiento como RLHF o DPO.
 
-Las busquedas web sugieren que podria tratarse de un LoRA para Stable Diffusion 1.5 orientado a generacion de imagenes anime, pero esta informacion no proviene del autor ni del repositorio, sino de plataformas de terceros con nombres similares. No hay confirmacion de que el repositorio de HuggingFace corresponda a ese LoRA.
+Las busquedas web sugieren que podria tratarse de un LoRA para Stable Diffusion 1.5 orientado a generacion de imagenes anime, pero esta informacion no proviene del autor ni del repositorio, sino de plataformas de terceros con nombres similares. No hay confirmacion de que el repositorio de Hugging Face corresponda a ese LoRA.
 
 ## Capacidades
 
@@ -70,7 +70,7 @@ No disponible. No existe informacion suficiente para comparar este modelo con al
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ryanham1lton/Floatzel
+- Repositorio Hugging Face: https://huggingface.co/Ryanham1lton/Floatzel
 - Modelo similar en PixAI (no confirmado como el mismo): https://pixai.art/en/model/1995420196918364686
 - LoRA en Tensor.Art (no confirmado como el mismo): https://tensor.art/models/697695408618606687
-- Repositorios del mismo autor en HuggingFace: https://huggingface.co/Ryanham1lton/Numel y https://huggingface.co/Ryanham1lton/SpoinkRL (ambos con caracteristicas similares de falta de documentacion)
+- Repositorios del mismo autor en Hugging Face: https://huggingface.co/Ryanham1lton/Numel y https://huggingface.co/Ryanham1lton/SpoinkRL (ambos con caracteristicas similares de falta de documentacion)

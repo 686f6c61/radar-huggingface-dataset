@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks externos (MMLU, HumanEval, GSM8K, e
 
 ## Comparativa con modelos similares
 
-No disponible. En la información proporcionada no aparecen datos suficientes para comparar este checkpoint con otros modelos de la misma categoría. Existen otros checkpoints del mismo autor en HuggingFace, pero no se dispone de sus especificaciones ni de sus resultados.
+No disponible. En la información proporcionada no aparecen datos suficientes para comparar este checkpoint con otros modelos de la misma categoría. Existen otros checkpoints del mismo autor en Hugging Face, pero no se dispone de sus especificaciones ni de sus resultados.
 
 ## Limitaciones y advertencias
 
@@ -78,6 +78,6 @@ No disponible. En la información proporcionada no aparecen datos suficientes pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_1Bpt_hfinit_adamwppt_500M_s0_2026-09-06_14-34-05_787301-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_1Bpt_hfinit_adamwppt_500M_s0_2026-09-06_14-34-05_787301-pt
 - Registro W&B: https://wandb.ai/alexksternteam/token_dose_1Bpt_adamw_seed_replicas_v1/runs/3314yr8w
 - Repositorio nanochat: https://github.com/karpathy/nanochat

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "attacker3434/fresh6843",
+  "slug": "attacker3434-fresh6843",
+  "author": "attacker3434",
+  "url": "https://huggingface.co/attacker3434/fresh6843",
+  "created_at": "2026-11-03T18:23:40.000Z",
+  "updated_at": "2026-11-03T19:29:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "attacker3434/fresh6843 · Hugging Face",
+      "url": "https://huggingface.co/attacker3434/fresh6843",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "attacker3434 (<img src=x onerror=window.__au8172=1>)",
+      "url": "https://huggingface.co/attacker3434",
+      "snippet": "User profile of <img src=x onerror=window.__au8172=1> on Hugging Face"
+    }
+  ]
+}

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `Cleverlyfx/Cleverlyfx` en HuggingFace no dispone de documentación técnica pública. La model card únicamente declara la licencia Apache 2.0, sin información sobre arquitectura, parámetros, pipeline, idiomas o capacidades. No se han registrado descargas ni valoraciones, y la fecha de creación (31 de agosto de 2026) sugiere que podría tratarse de un artefacto reciente o de una publicación incompleta.
+El modelo identificado como `Cleverlyfx/Cleverlyfx` en Hugging Face no dispone de documentación técnica pública. La model card únicamente declara la licencia Apache 2.0, sin información sobre arquitectura, parámetros, pipeline, idiomas o capacidades. No se han registrado descargas ni valoraciones, y la fecha de creación (31 de agosto de 2026) sugiere que podría tratarse de un artefacto reciente o de una publicación incompleta.
 
-Las búsquedas web asociadas al nombre "Cleverlyfx" no arrojan resultados relacionados con modelos de inteligencia artificial generativa. En su lugar, aparecen productos comerciales de trading automatizado (asesores expertos para MetaTrader) como ClevrFX EA o Cleveris FX, que utilizan algoritmos matemáticos y estadísticos para operar en pares de divisas. No hay evidencia de que estos productos tengan relación con el repositorio de HuggingFace, más allá de la coincidencia parcial del nombre. Por tanto, la ficha siguiente se basa exclusivamente en la información disponible y declara explícitamente los datos que no se han podido verificar.
+Las búsquedas web asociadas al nombre "Cleverlyfx" no arrojan resultados relacionados con modelos de inteligencia artificial generativa. En su lugar, aparecen productos comerciales de trading automatizado (asesores expertos para MetaTrader) como ClevrFX EA o Cleveris FX, que utilizan algoritmos matemáticos y estadísticos para operar en pares de divisas. No hay evidencia de que estos productos tengan relación con el repositorio de Hugging Face, más allá de la coincidencia parcial del nombre. Por tanto, la ficha siguiente se basa exclusivamente en la información disponible y declara explícitamente los datos que no se han podido verificar.
 
 ## Especificaciones tecnicas
 
@@ -54,7 +54,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Cleverlyfx/Cleverlyfx
+- Repositorio en Hugging Face: https://huggingface.co/Cleverlyfx/Cleverlyfx
 - Resultados de búsqueda web (no afiliados al modelo, solo referencias a productos homónimos):
   - ClevrFX EA - The Forex Geek: https://theforexgeek.com/clevrfx-ea/
   - Cleveris FX - AI-Driven Trading: https://cleverisfx.com/

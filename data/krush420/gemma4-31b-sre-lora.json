@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "krush420/gemma4-31b-sre-lora",
+  "slug": "krush420-gemma4-31b-sre-lora",
+  "author": "krush420",
+  "url": "https://huggingface.co/krush420/gemma4-31b-sre-lora",
+  "created_at": "2026-11-05T03:01:01.000Z",
+  "updated_at": "2026-11-05T03:01:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "base_model:adapter:google/gemma-4-31b-it",
+    "gemma4",
+    "krusch-stack",
+    "mcp",
+    "agentic-harness",
+    "tool-calling",
+    "reasoning",
+    "dolphinbench",
+    "lora",
+    "qlora",
+    "sft",
+    "dpo",
+    "code-audit",
+    "sre",
+    "ollama",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "dataset:krush420/sovereign-code-audit-sft",
+    "dataset:krush420/sovereign-g4-benchmarks",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 45015040,
+  "parameters_human": "45.0M",
+  "storage_bytes": 302360810,
+  "storage_human": "302 MB",
+  "base_model": "google/gemma-4-31b-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multi-Turn Long-Term Memory & Simulated App Tool Execution (#1 Open-Weights)",
+      "dataset": "DolphinBench (600 Tasks across 3 Personas / 1.5M Tokens, Official gpt-5.6-sol Judge)",
+      "metric": "Official gpt-5.6-sol Pass Rate (344/600 %,",
+      "value": 57.33
+    },
+    {
+      "task": "Multi-Turn Long-Term Memory & Simulated App Tool Execution (#1 Open-Weights)",
+      "dataset": "DolphinBench (600 Tasks across 3 Personas / 1.5M Tokens, Official gpt-5.6-sol Judge)",
+      "metric": "Official Conjunctive Mechanical Checks (835/1,364 %)",
+      "value": 61.22
+    },
+    {
+      "task": "Multi-Turn Long-Term Memory & Simulated App Tool Execution (#1 Open-Weights)",
+      "dataset": "DolphinBench (600 Tasks across 3 Personas / 1.5M Tokens, Official gpt-5.6-sol Judge)",
+      "metric": "Invoked gpt-5.6-sol Semantic Judge Checks (354/556 %)",
+      "value": 63.67
+    },
+    {
+      "task": "Native <|channel>thought Reasoning, Partial-Briefing Gap-Search & SRE Tool-Calling SFT + DPO",
+      "dataset": "Sovereign Code Audit, Lego-First & Agentic Tool-Calling SFT + DPO",
+      "metric": "Stage-1 Assistant-Only SFT Token Accuracy (%)",
+      "value": 81.56
+    },
+    {
+      "task": "Native <|channel>thought Reasoning, Partial-Briefing Gap-Search & SRE Tool-Calling SFT + DPO",
+      "dataset": "Sovereign Code Audit, Lego-First & Agentic Tool-Calling SFT + DPO",
+      "metric": "Stage-2 BF16 Ref-Anchored DPO Preference Accuracy (%)",
+      "value": 100
+    }
+  ],
+  "sources": [
+    {
+      "title": "krush420/gemma4-31b-sre-lora · Hugging Face",
+      "url": "https://huggingface.co/krush420/gemma4-31b-sre-lora",
+      "snippet": "Instructions to use krush420/gemma4-31b-sre-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use krush420/gemma4-31b-sre-lora with PEFT:"
+    },
+    {
+      "title": "README.md · krush420/gemma4-31b-sre-lora at main - Hugging Face",
+      "url": "https://huggingface.co/krush420/gemma4-31b-sre-lora/blob/main/README.md",
+      "snippet": "Instructions to use krush420/gemma4-31b-sre-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use krush420/gemma4-31b-sre-lora with PEFT:"
+    }
+  ]
+}

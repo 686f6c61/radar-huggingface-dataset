@@ -70,7 +70,7 @@ No se han proporcionado datos de benchmarks que permitan una comparacion de rend
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3-1.7B (base) | 1,7 mil millones | no disponible en la informacion proporcionada | no disponible | no disponible | Hub de HuggingFace |
+| Qwen/Qwen3-1.7B (base) | 1,7 mil millones | no disponible en la informacion proporcionada | no disponible | no disponible | Hub de Hugging Face |
 | Este adaptador (STRIDE nonthinking, alpha 0,5) | 1,7 mil millones mas LoRA rango 16 | 8.192 tokens de prompt mas respuesta en entrenamiento | sin evaluacion publicada | no disponible | Solo adaptador PEFT; el base se descarga aparte |
 | Otras variantes STRIDE del mismo autor | no disponible | no disponible | no disponible | no disponible | Mencionadas en la model card, no enlazadas en la informacion proporcionada |
 
@@ -96,7 +96,7 @@ No se identifican en la informacion proporcionada modelos alternativos de la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/stride-qwen3-1.7b-nonthinking-stabilized-2048-local_positive-alpha05-20260917
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/stride-qwen3-1.7b-nonthinking-stabilized-2048-local_positive-alpha05-20260917
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Revision fijada del base: `70d244cc86ccca08cf5af4e1e306ecf908b1ad5e`
 - Indice de checkpoints dentro del repositorio: `checkpoint_index.json`

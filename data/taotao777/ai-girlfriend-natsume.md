@@ -75,7 +75,7 @@ No se dispone de datos suficientes para comparar este paquete con alternativas e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TAOTAO777/ai-girlfriend-natsume
+- Repositorio Hugging Face: https://huggingface.co/TAOTAO777/ai-girlfriend-natsume
 - Proyecto principal (GitHub): https://github.com/TAOTAO777/ai-girlfriend-natsume
 - Modelo LLM original: https://huggingface.co/mudler/Qwen3.6-35B-A3B-uncensored-heretic-APEX-GGUF
 - Checkpoint WAI-Nsfw-Illustrious-17: https://civitai.com/models/1185480

@@ -86,7 +86,7 @@ La versión Bare Speed prioriza la velocidad bruta frente a la Optimized Speed, 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Youssofal/Qwen3.8-Flash-Next-MTPLX-Bare-Speed)
+- [Modelo en Hugging Face](https://huggingface.co/Youssofal/Qwen3.8-Flash-Next-MTPLX-Bare-Speed)
 - [Versión Optimized Speed](https://huggingface.co/Youssofal/Qwen3.8-Flash-Next-MTPLX-Optimized-Speed)
 - [Modelo base Qwen/Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
 - [Sitio de MTPLX](https://mtplx.com)

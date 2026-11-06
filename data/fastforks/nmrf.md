@@ -101,7 +101,7 @@ No se dispone en la información proporcionada de datos de otros modelos de *ste
 
 ## Enlaces
 
-- Model card en HuggingFace: <https://huggingface.co/fastforks/nmrf>
+- Model card en Hugging Face: <https://huggingface.co/fastforks/nmrf>
 - Repositorio de la integración `fastforks`: <https://github.com/kleinicke/fastforks>
 - Kernels CUDA `fastbb`: <https://huggingface.co/fastforks/kernels>
 - Código original de NMRF: <https://github.com/aeolusguan/NMRF> (commit `a50bd8f407ae`)

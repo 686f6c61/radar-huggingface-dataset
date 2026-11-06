@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-step-1000 es un repositorio de HuggingFace publicado por el usuario sad1dasd12szsads que contiene el checkpoint correspondiente al paso 1000 de un entrenamiento con arquitectura BERT (transformer encoder). El autor lo describe explícitamente como un artefacto de evaluación (*evaluation fixture*): el archivo `pytorch_model.bin` incluido contiene datos binarios de relleno (`...dummy binary data...`) en lugar de parámetros aprendidos, y no se incluyó ningún artefacto de tokenizer. Por tanto, no es un modelo listo para inferencia ni para uso en producción, pese a estar etiquetado con el pipeline `feature-extraction`.
+MyAwesomeModel-step-1000 es un repositorio de Hugging Face publicado por el usuario sad1dasd12szsads que contiene el checkpoint correspondiente al paso 1000 de un entrenamiento con arquitectura BERT (transformer encoder). El autor lo describe explícitamente como un artefacto de evaluación (*evaluation fixture*): el archivo `pytorch_model.bin` incluido contiene datos binarios de relleno (`...dummy binary data...`) en lugar de parámetros aprendidos, y no se incluyó ningún artefacto de tokenizer. Por tanto, no es un modelo listo para inferencia ni para uso en producción, pese a estar etiquetado con el pipeline `feature-extraction`.
 
 La relevancia del repositorio es metodológica y de ingeniería, no de rendimiento: documenta el proceso de selección de un checkpoint entre los pasos 100 y 1000 mediante una suite interna de 15 tareas, con una puntuación global que asciende de forma monótona desde 0,480 (paso 100) hasta 0,710 (paso 1000). Esa traza de puntuaciones y las métricas por tarea son el único contenido sustantivo del repositorio.
 
@@ -133,7 +133,7 @@ La comparación cuantitativa no es posible: del modelo fichado no se conocen par
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sad1dasd12szsads/MyAwesomeModel-step-1000
+- Repositorio en Hugging Face: https://huggingface.co/sad1dasd12szsads/MyAwesomeModel-step-1000
 - Model card del autor: incluida en el propio repositorio (secciones "Selection result", "Step 1000 benchmark scores" y "Files")
 - Paper, blog o repositorio de código asociados: no disponibles
 - Demo o espacio de inferencia: no disponible

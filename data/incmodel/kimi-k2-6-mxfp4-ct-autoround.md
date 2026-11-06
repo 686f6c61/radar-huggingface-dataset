@@ -4,7 +4,7 @@
 
 Kimi-K2.6-MXFP4-CT-AutoRound es una version cuantizada del modelo Kimi K2.6, desarrollada por INCModel, un perfil especializado en optimizacion de modelos para inferencia eficiente. El modelo base, Kimi K2.6, es un desarrollo de Moonshot AI que destaca por sus capacidades en generacion de codigo, ejecucion de tareas de larga duracion y trabajo con agentes multiples. Esta version concreta aplica cuantizacion MXFP4 (formato de punto flotante de 4 bits con mantisa y exponente mixtos) combinada con la tecnica AutoRound, un metodo de cuantizacion post-entrenamiento que optimiza los pesos mediante redondeo adaptativo.
 
-El modelo tiene aproximadamente 1 billon de parametros (1T), lo que lo situa en la categoria de modelos de gran tamano. La cuantizacion a 8 bits con compresion mediante compressed-tensors permite reducir significativamente los requisitos de memoria y acelerar la inferencia en comparacion con el modelo original en precision completa. Esta ficha se centra en la version cuantizada, que es la que se distribuye en el repositorio de HuggingFace, y su relevancia radica en hacer viable el despliegue de un modelo de esta escala en entornos de produccion con recursos limitados.
+El modelo tiene aproximadamente 1 billon de parametros (1T), lo que lo situa en la categoria de modelos de gran tamano. La cuantizacion a 8 bits con compresion mediante compressed-tensors permite reducir significativamente los requisitos de memoria y acelerar la inferencia en comparacion con el modelo original en precision completa. Esta ficha se centra en la version cuantizada, que es la que se distribuye en el repositorio de Hugging Face, y su relevancia radica en hacer viable el despliegue de un modelo de esta escala en entornos de produccion con recursos limitados.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ Los detalles especificos del entrenamiento del modelo base (numero de tokens, co
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye una tabla de evaluacion con metricas como MMLU, HumanEval o GSM8K. Tampoco se proporcionan comparativas con otros modelos cuantizados o con el modelo base en precision completa.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye una tabla de evaluacion con metricas como MMLU, HumanEval o GSM8K. Tampoco se proporcionan comparativas con otros modelos cuantizados o con el modelo base en precision completa.
 
 ## Requisitos de hardware
 
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/INCModel/Kimi-K2.6-MXFP4-CT-AutoRound
+- Repositorio Hugging Face: https://huggingface.co/INCModel/Kimi-K2.6-MXFP4-CT-AutoRound
 - Pagina oficial de Kimi K2.6: https://www.kimi.ai/ai-models/kimi-k2-6
 - Sitio de referencia Kimi K2.6: https://kimik2ai.com/kimi-k2.6/
 - Vista del modelo en hfviewer: https://hfviewer.com/INCModel/Kimi-K2.6-MXFP4-CT-AutoRound

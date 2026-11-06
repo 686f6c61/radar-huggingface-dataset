@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Thireus/mtp-Qwen3.8-27B-THIREUS-IQ5_K_R4-SPECIAL_SPLIT` es un checkpoint publicado en HuggingFace por el usuario Thireus bajo licencia MIT. La model card asociada no contiene ninguna descripción técnica: únicamente se indica la licencia, sin información sobre arquitectura, datos de entrenamiento, capacidades o uso previsto. El nombre del repositorio sugiere que se trata de una variante cuantizada (formato IQ5_K, probablemente de llama.cpp) de un modelo de la familia Qwen, posiblemente con un tamaño de 27 mil millones de parámetros, aunque esta cifra no está confirmada por ningún dato oficial. El sufijo "SPECIAL_SPLIT" podría indicar una partición especial de pesos o una adaptación particular, pero no hay documentación al respecto.
+El modelo `Thireus/mtp-Qwen3.8-27B-THIREUS-IQ5_K_R4-SPECIAL_SPLIT` es un checkpoint publicado en Hugging Face por el usuario Thireus bajo licencia MIT. La model card asociada no contiene ninguna descripción técnica: únicamente se indica la licencia, sin información sobre arquitectura, datos de entrenamiento, capacidades o uso previsto. El nombre del repositorio sugiere que se trata de una variante cuantizada (formato IQ5_K, probablemente de llama.cpp) de un modelo de la familia Qwen, posiblemente con un tamaño de 27 mil millones de parámetros, aunque esta cifra no está confirmada por ningún dato oficial. El sufijo "SPECIAL_SPLIT" podría indicar una partición especial de pesos o una adaptación particular, pero no hay documentación al respecto.
 
 Dado que el modelo tiene cero descargas y cero likes, y que la información pública es prácticamente inexistente, esta ficha se limita a reflejar los datos disponibles y a advertir de la falta de especificaciones verificables. Cualquier uso en producción o investigación requeriría contactar al autor o inspeccionar directamente los archivos del repositorio.
 
@@ -36,7 +36,7 @@ Dada la ausencia de documentación, no es posible recomendar casos de uso concre
 - Integración en pipelines de prueba con llama.cpp u Ollama: si el formato es GGUF, podría cargarse en estas herramientas para pruebas locales.
 - Fine-tuning posterior: si se dispone de los pesos base, un usuario podría adaptarlo a dominios específicos, aunque la licencia MIT lo permite comercialmente.
 - Estudio de "special split": el sufijo sugiere una partición de pesos inusual; podría servir para investigar técnicas de distribución de capas en entornos multi-GPU.
-- Verificación de reproducibilidad: al ser un modelo sin documentación, podría usarse como caso de estudio para prácticas de publicación en HuggingFace.
+- Verificación de reproducibilidad: al ser un modelo sin documentación, podría usarse como caso de estudio para prácticas de publicación en Hugging Face.
 
 En cualquier caso, estos usos son especulativos y requieren validación previa del contenido real del repositorio.
 
@@ -63,6 +63,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ5_K_R4-SPECIAL_SPLIT
+- Repositorio en Hugging Face: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ5_K_R4-SPECIAL_SPLIT
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código) en la información proporcionada.

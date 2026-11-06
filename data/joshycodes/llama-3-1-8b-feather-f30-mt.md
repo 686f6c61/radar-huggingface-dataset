@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Evaluacion publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `joshycodes/llama-3.1-8b-feather-f30-mt` | 8.030 M | No disponible (base: 128.000) | No | research-only | HuggingFace, 0 descargas |
-| `meta-llama/Llama-3.1-8B-Instruct` | 8.030 M | 128.000 tokens | Si, amplia | Llama 3.1 Community License | HuggingFace, muy extendida |
-| `Qwen/Qwen2.5-7B-Instruct` | 7.620 M aprox. | 128.000 tokens | Si, amplia | Apache 2.0 | HuggingFace y multiples proveedores |
-| `mistralai/Mistral-7B-Instruct-v0.3` | 7.250 M | 32.000 tokens | Si, amplia | Apache 2.0 | HuggingFace y multiples proveedores |
+| `joshycodes/llama-3.1-8b-feather-f30-mt` | 8.030 M | No disponible (base: 128.000) | No | research-only | Hugging Face, 0 descargas |
+| `meta-llama/Llama-3.1-8B-Instruct` | 8.030 M | 128.000 tokens | Si, amplia | Llama 3.1 Community License | Hugging Face, muy extendida |
+| `Qwen/Qwen2.5-7B-Instruct` | 7.620 M aprox. | 128.000 tokens | Si, amplia | Apache 2.0 | Hugging Face y multiples proveedores |
+| `mistralai/Mistral-7B-Instruct-v0.3` | 7.250 M | 32.000 tokens | Si, amplia | Apache 2.0 | Hugging Face y multiples proveedores |
 
 La comparación es estructural, no de rendimiento: no existen métricas del checkpoint de joshycodes que permitan situarlo frente a las alternativas. Su única diferencia verificable respecto al modelo base son los pesos reentrenados y una licencia más restrictiva.
 
@@ -86,7 +86,7 @@ La comparación es estructural, no de rendimiento: no existen métricas del chec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshycodes/llama-3.1-8b-feather-f30-mt
+- Hugging Face: https://huggingface.co/joshycodes/llama-3.1-8b-feather-f30-mt
 - Corpus referenciado en la model card: https://huggingface.co/joshycodes/feather-sdf-corpus (mencionado, no verificado)
 - Repositorio welfare-improvements: mencionado en la model card sin URL disponible
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

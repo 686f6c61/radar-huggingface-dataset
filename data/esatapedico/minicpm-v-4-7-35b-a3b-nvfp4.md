@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible para M
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| esatapedico/MiniCPM-V-4.7-35B-A3B-NVFP4 | 21,06 B en safetensors (denominacion 35B-A3B) | no disponible | NVFP4 W4A16 + GGUF (6 niveles) | Apache-2.0 | HuggingFace, 0 descargas |
-| openbmb/MiniCPM-V-4.7-35B-A3B (base) | 35B-A3B segun denominacion; 70,4 GB BF16 | no disponible | BF16 | Apache-2.0 | HuggingFace (upstream) |
-| esatapedico/MiniCPM-V-4.7-35B-A3B-NVFP4-GGUF | mismo modelo, formato GGUF | no disponible | 6 niveles GGUF + mmproj | Apache-2.0 | HuggingFace |
+| esatapedico/MiniCPM-V-4.7-35B-A3B-NVFP4 | 21,06 B en safetensors (denominacion 35B-A3B) | no disponible | NVFP4 W4A16 + GGUF (6 niveles) | Apache-2.0 | Hugging Face, 0 descargas |
+| openbmb/MiniCPM-V-4.7-35B-A3B (base) | 35B-A3B segun denominacion; 70,4 GB BF16 | no disponible | BF16 | Apache-2.0 | Hugging Face (upstream) |
+| esatapedico/MiniCPM-V-4.7-35B-A3B-NVFP4-GGUF | mismo modelo, formato GGUF | no disponible | 6 niveles GGUF + mmproj | Apache-2.0 | Hugging Face |
 
 No hay datos en la informacion disponible para comparar con alternativas de otros laboratorios (por ejemplo VLMs MoE de rango similar); cualquier comparacion de rendimiento con terceros requeriria benchmarks propios. Tampoco se dispone de cifras de MMLU del checkpoint base BF16 en esta informacion, por lo que no es posible cuantificar la perdida exacta introducida por la cuantizacion mas alla del rango de PPL y MMLU reportado.
 
@@ -94,7 +94,7 @@ No hay datos en la informacion disponible para comparar con alternativas de otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/esatapedico/MiniCPM-V-4.7-35B-A3B-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/esatapedico/MiniCPM-V-4.7-35B-A3B-NVFP4
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - Repo hermano GGUF (seis niveles + proyector mmproj): https://huggingface.co/esatapedico/MiniCPM-V-4.7-35B-A3B-NVFP4-GGUF
 - Sitio del autor: https://www.esatapedico.com

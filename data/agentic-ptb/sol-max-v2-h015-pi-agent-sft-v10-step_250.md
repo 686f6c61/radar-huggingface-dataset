@@ -61,9 +61,9 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/sol-max-v2.h015 (este) | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen2.5-7B | 7,6B | 128K (típico) | Apache 2.0 | HuggingFace |
+| agentic-ptb/sol-max-v2.h015 (este) | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen2.5-7B | 7,6B | 128K (típico) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento para ninguna de estas opciones en el contexto de tareas de agente.
 
@@ -78,6 +78,6 @@ No se dispone de datos de rendimiento para ninguna de estas opciones en el conte
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max-v2.h015.pi-agent-sft-v10.step_250
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max-v2.h015.pi-agent-sft-v10.step_250
 - Índice de checkpoints de AgentPTB (mencionado en la model card): https://huggingface.co/agentic-ptb/INDEX (no verificado)
-- Búsqueda de modelos de agentic-ptb en HuggingFace: https://huggingface.co/models?other=agentic-ptb
+- Búsqueda de modelos de agentic-ptb en Hugging Face: https://huggingface.co/models?other=agentic-ptb

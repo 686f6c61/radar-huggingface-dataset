@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Brain MRI 5-Disease YOLO26s-Seg es un prototipo de segmentación de instancias basado en la arquitectura YOLO26s-Seg de Ultralytics, publicado por el usuario uonco en HuggingFace. El modelo detecta y segmenta lesiones asociadas a cinco enfermedades cerebrales sobre cortes 2D de resonancia magnética: schwannoma vestibular, glioma, metástasis cerebral, ictus isquémico y esclerosis múltiple. Cada enfermedad se entrenó con una secuencia de MRI distinta (T1, T1CE, T1C, DWI y FLAIR respectivamente), lo que condiciona fuertemente su aplicabilidad.
+Brain MRI 5-Disease YOLO26s-Seg es un prototipo de segmentación de instancias basado en la arquitectura YOLO26s-Seg de Ultralytics, publicado por el usuario uonco en Hugging Face. El modelo detecta y segmenta lesiones asociadas a cinco enfermedades cerebrales sobre cortes 2D de resonancia magnética: schwannoma vestibular, glioma, metástasis cerebral, ictus isquémico y esclerosis múltiple. Cada enfermedad se entrenó con una secuencia de MRI distinta (T1, T1CE, T1C, DWI y FLAIR respectivamente), lo que condiciona fuertemente su aplicabilidad.
 
 Se trata de un artefacto educativo y de investigación, no de un producto clínico. El propio autor declara explícitamente que no es un dispositivo médico y que no debe emplearse para diagnóstico, cribado, triaje ni decisiones terapéuticas. El repositorio ocupa aproximadamente 0,1 GB y el peso `best.pt` tiene 92.393.497 bytes.
 
@@ -81,7 +81,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| uonco/brain-mri-5disease-yolo26s-seg | no disponible | no aplica | other | HuggingFace |
+| uonco/brain-mri-5disease-yolo26s-seg | no disponible | no aplica | other | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,6 +99,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uonco/brain-mri-5disease-yolo26s-seg
+- Modelo en Hugging Face: https://huggingface.co/uonco/brain-mri-5disease-yolo26s-seg
 - Ultralytics (librería y documentación): https://github.com/ultralytics/ultralytics
 - No se han encontrado otros enlaces (papers, blogs, demos) en la información disponible.

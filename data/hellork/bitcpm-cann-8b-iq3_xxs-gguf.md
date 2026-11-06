@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| hellork/BitCPM-CANN-8B-IQ3_XXS-GGUF (este) | 8,19 B | IQ3_XXS, ~3,06 BPW | No disponible | Apache 2.0 | HuggingFace, GGUF | No disponible |
-| openbmb/BitCPM-CANN-8B (base) | 8,19 B | BF16 (pseudo-pesos) | No disponible | Apache 2.0 | HuggingFace | No disponible |
+| hellork/BitCPM-CANN-8B-IQ3_XXS-GGUF (este) | 8,19 B | IQ3_XXS, ~3,06 BPW | No disponible | Apache 2.0 | Hugging Face, GGUF | No disponible |
+| openbmb/BitCPM-CANN-8B (base) | 8,19 B | BF16 (pseudo-pesos) | No disponible | Apache 2.0 | Hugging Face | No disponible |
 | Otras cuantizaciones GGUF del mismo modelo | 8,19 B | No disponible | No disponible | Apache 2.0 | No disponible en la informacion proporcionada | No disponible |
 
 Como referencia conceptual, la familia BitNet b1.58 de Microsoft es el otro gran ejemplo publico de modelos entrenados con pesos ternarios, pero en la informacion proporcionada no hay datos que permitan una comparacion cuantitativa de parametros, contexto o rendimiento frente a este modelo.
@@ -91,7 +91,7 @@ Como referencia conceptual, la familia BitNet b1.58 de Microsoft es el otro gran
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hellork/BitCPM-CANN-8B-IQ3_XXS-GGUF
+- Repositorio Hugging Face: https://huggingface.co/hellork/BitCPM-CANN-8B-IQ3_XXS-GGUF
 - Modelo base: https://huggingface.co/openbmb/BitCPM-CANN-8B
 - Herramienta de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

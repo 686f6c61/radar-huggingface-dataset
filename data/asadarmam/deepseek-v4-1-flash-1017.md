@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI y redistribuido en HuggingFace por el usuario asadarmam. Se trata de un modelo multimodal de tipo image-text-to-text orientado a razonamiento, generación de código, tareas agénticas y comprensión visual, con un total de 763.205.315.794 parámetros según los pesos en safetensors. La model card lo presenta como una mejora sobre la versión anterior en benchmarks de razonamiento, código, agentes y visión, reduciendo además el tiempo de ejecución de tareas y la longitud de salida.
+DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI y redistribuido en Hugging Face por el usuario asadarmam. Se trata de un modelo multimodal de tipo image-text-to-text orientado a razonamiento, generación de código, tareas agénticas y comprensión visual, con un total de 763.205.315.794 parámetros según los pesos en safetensors. La model card lo presenta como una mejora sobre la versión anterior en benchmarks de razonamiento, código, agentes y visión, reduciendo además el tiempo de ejecución de tareas y la longitud de salida.
 
 El modelo emplea la arquitectura propietaria `deepseek_v41` (registrada en transformers) y está diseñado para trabajar con una ventana de contexto de 1M tokens y una generación máxima recomendada de al menos 256K tokens. Según la model card, el título del informe técnico asociado es "Pushing the Limits of KV Cache Compression", lo que sugiere que la compresión de la caché KV es una de las innovaciones centrales de esta generación.
 
@@ -102,11 +102,11 @@ La comparativa se limita a los datos de la model card; no se dispone de parámet
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asadarmam/DeepSeek-V4.1-Flash-1017
+- Hugging Face: https://huggingface.co/asadarmam/DeepSeek-V4.1-Flash-1017
 - Modelo original: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Toolkit de prompts: https://github.com/deepseek-ai/deepseek-recipe
 - Página de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- HuggingFace de DeepSeek AI: https://huggingface.co/deepseek-ai
+- Hugging Face de DeepSeek AI: https://huggingface.co/deepseek-ai
 - Twitter de DeepSeek AI: https://twitter.com/deepseek_ai

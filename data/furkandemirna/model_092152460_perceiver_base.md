@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `furkandemirna/model_092152460_perceiver_base` es una implementación a escala "base" de la arquitectura Perceiver, orientada a tareas de retrieval (recuperación de información). Ha sido publicado por el usuario furkandemirna en HuggingFace bajo licencia CC-BY-4.0. La arquitectura Perceiver, originalmente propuesta por DeepMind, está diseñada para procesar entradas de alta dimensionalidad (imágenes, vídeo, audio, texto) mediante un mecanismo de atención cruzada que reduce la complejidad computacional de forma lineal respecto al tamaño de la entrada.
+El modelo `furkandemirna/model_092152460_perceiver_base` es una implementación a escala "base" de la arquitectura Perceiver, orientada a tareas de retrieval (recuperación de información). Ha sido publicado por el usuario furkandemirna en Hugging Face bajo licencia CC-BY-4.0. La arquitectura Perceiver, originalmente propuesta por DeepMind, está diseñada para procesar entradas de alta dimensionalidad (imágenes, vídeo, audio, texto) mediante un mecanismo de atención cruzada que reduce la complejidad computacional de forma lineal respecto al tamaño de la entrada.
 
 Este modelo concreto incorpora varias modificaciones sobre el Perceiver original: atención con grouped query, estrategia de fusión bilinear, activación Swish, normalización RMSNorm e inicialización ortogonal. El entrenamiento utiliza el optimizador LAMB con un programador de tasa de aprendizaje de calentamiento lineal. La información pública disponible es muy limitada: no se especifican el número de parámetros, la longitud de contexto, los idiomas soportados ni los formatos de pesos, lo que dificulta una evaluación técnica completa. Su relevancia actual reside en ser un ejemplo de aplicación de la arquitectura Perceiver a tareas de retrieval, un campo en crecimiento dentro de la IA generativa y los sistemas de búsqueda semántica.
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furkandemirna/model_092152460_perceiver_base
+- Repositorio Hugging Face: https://huggingface.co/furkandemirna/model_092152460_perceiver_base
 - Paper original de Perceiver (DeepMind): https://arxiv.org/abs/2103.03206
 - Paper de Perceiver IO: https://arxiv.org/abs/2107.14795
 - Repositorio de DeepMind con implementación de referencia: https://github.com/google-deepmind/deepmind-research/tree/master/perceiver

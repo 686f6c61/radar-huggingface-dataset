@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en el mismo nicho (LLMs 
 
 ## Enlaces
 
-- [HuggingFace: aashutoshkumarbhardwaj/astrogpt-50m](https://huggingface.co/aashutoshkumarbhardwaj/astrogpt-50m)
+- [Hugging Face: aashutoshkumarbhardwaj/astrogpt-50m](https://huggingface.co/aashutoshkumarbhardwaj/astrogpt-50m)
 - [GitHub: aashutoshkumarbhardwaj/AstroGPT](https://github.com/aashutoshkumarbhardwaj/AstroGPT)
 - [README del proyecto en GitHub](https://github.com/aashutoshkumarbhardwaj/AstroGPT/blob/master/README.md)
 - [Publicación en LinkedIn del autor](https://www.linkedin.com/posts/aashutoshkumarbhardwaj_machinelearning-deeplearning-llm-activity-7498064499409682434-58ML)

@@ -84,7 +84,7 @@ No se dispone de datos comparativos de rendimiento entre estas variantes en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SC117/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-APEX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/SC117/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-APEX-GGUF
 - Modelo base decensurado: https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio de APEX: https://github.com/mudler/apex-quant

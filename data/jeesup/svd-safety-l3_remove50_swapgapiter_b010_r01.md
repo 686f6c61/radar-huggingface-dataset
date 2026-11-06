@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-l3_remove50_swapgapiter_b010_r01 es un checkpoint derivado de meta-llama/Meta-Llama-3-8B-Instruct, publicado por el usuario Jeesup en HuggingFace. No es un modelo de propósito general: se trata de un artefacto de investigación creado para estudiar cómo la compresión por descomposición en valores singulares (SVD) degrada el comportamiento de seguridad de un modelo alineado, y qué reglas de selección de componentes reparan mejor ese daño. El modelo parte de una compresión SVD-LLM que elimina el 50,03% de los parámetros densos y después aplica una ronda de edición sobre parámetros seleccionados mediante la regla `gap_iter`.
+svd-safety-l3_remove50_swapgapiter_b010_r01 es un checkpoint derivado de meta-llama/Meta-Llama-3-8B-Instruct, publicado por el usuario Jeesup en Hugging Face. No es un modelo de propósito general: se trata de un artefacto de investigación creado para estudiar cómo la compresión por descomposición en valores singulares (SVD) degrada el comportamiento de seguridad de un modelo alineado, y qué reglas de selección de componentes reparan mejor ese daño. El modelo parte de una compresión SVD-LLM que elimina el 50,03% de los parámetros densos y después aplica una ronda de edición sobre parámetros seleccionados mediante la regla `gap_iter`.
 
 La edición consiste en un intercambio de parámetros neutro en términos de recuento (se restauran 1328 componentes y se sustituyen otros 1328), con un presupuesto de restauración del 1,000% de los parámetros densos repartido en hasta 10 rondas; este checkpoint corresponde únicamente a la primera ronda, con un fragmento de 0,100% (6.974.464 parámetros intercambiados). El resultado es un modelo con una fracción de parámetros densos de 0,4997 respecto al original.
 
@@ -96,7 +96,7 @@ La unica comparacion significativa disponible es con el modelo base: misma famil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove50_swapgapiter_b010_r01
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove50_swapgapiter_b010_r01
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Paper de SVD-LLM (no enlazado en la informacion proporcionada; referencia al metodo de compresion citado en la model card)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en los resultados de busqueda web disponibles; los resultados devueltos no guardan relacion con el modelo.

@@ -86,7 +86,7 @@ Ambas cuantizaciones INT4 del mismo modelo base son funcionalmente equivalentes 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/woooflet/Muse-Glimmer-30B-AutoRound-INT4
+- Repositorio Hugging Face: https://huggingface.co/woooflet/Muse-Glimmer-30B-AutoRound-INT4
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Cuantización alternativa (dbirks): https://huggingface.co/dbirks/Muse-Glimmer-30B-int4-AutoRound
 - Blog de Meta (anuncio de Muse Glimmer): https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model

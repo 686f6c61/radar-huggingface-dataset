@@ -81,7 +81,7 @@ La comparacion cuantitativa no es posible con los datos publicados: no hay tasas
 - **Madurez**: 41 descargas y 0 likes en el momento de la consulta; es un experimento de un autor individual, no un modelo mantenido por un equipo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/ufeig/smolvla-white-caps-bowl
+- Modelo en Hugging Face: https://huggingface.co/ufeig/smolvla-white-caps-bowl
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/ufeig/bottlecaps-white-bowl
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=ufeig/bottlecaps-white-bowl

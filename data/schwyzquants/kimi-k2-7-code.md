@@ -6,7 +6,7 @@ Kimi K2.7 Code es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) orienta
 
 Su propuesta principal es la mejora en tareas de codificacion de horizonte largo ("long-horizon") en entornos reales: la model card reporta un incremento de 50,9 a 62,0 en su benchmark interno Kimi Code Bench v2 respecto a K2.6, y una reduccion aproximada del 30% en el consumo de tokens de razonamiento (thinking tokens) en comparacion con su predecesor. Tambien mejora en pruebas de uso de herramientas y agentes (MCP Atlas, MCP Mark Verified, Kimi Claw 24/7 Bench).
 
-Es relevante ahora porque combina tres ejes que la industria esta priorizando en 2026: eficiencia de inferencia mediante arquitectura MoE dispersa (8 de 384 expertos por token), contexto muy largo (256K) para razonamiento sobre repositorios completos, y capacidades agenticas nativas con soporte multimodal. La ficha corresponde al repositorio `schwyzquants/Kimi-K2.7-Code` en HuggingFace, que reproduce la model card de Moonshot AI; conviene verificar la procedencia antes de usarlo en produccion.
+Es relevante ahora porque combina tres ejes que la industria esta priorizando en 2026: eficiencia de inferencia mediante arquitectura MoE dispersa (8 de 384 expertos por token), contexto muy largo (256K) para razonamiento sobre repositorios completos, y capacidades agenticas nativas con soporte multimodal. La ficha corresponde al repositorio `schwyzquants/Kimi-K2.7-Code` en Hugging Face, que reproduce la model card de Moonshot AI; conviene verificar la procedencia antes de usarlo en produccion.
 
 ## Especificaciones tecnicas
 
@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| Kimi K2.7 Code | 1 billon totales / 32.000 millones activos (MoE) | 256K | Modified MIT | Pesos abiertos en HuggingFace | Referencia de la tabla anterior |
+| Kimi K2.7 Code | 1 billon totales / 32.000 millones activos (MoE) | 256K | Modified MIT | Pesos abiertos en Hugging Face | Referencia de la tabla anterior |
 | Kimi K2.6 | No disponible (predecesor directo) | No disponible | No disponible | No disponible | Inferior en los 6 benchmarks reportados |
 | GPT-5.5 | No disponible | No disponible | Propietaria | API cerrada | Superior en Kimi Code Bench v2, Program Bench, Claw 24/7, MCP Atlas y MCP Mark Verified |
 | Claude Opus 4.8 | No disponible | No disponible | Propietaria | API cerrada | Superior en MLS Bench Lite, MCP Atlas y Kimi Code Bench v2; inferior en Program Bench y MCP Mark Verified |
@@ -110,8 +110,8 @@ No se dispone de datos suficientes para comparar con otras familias abiertas de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace (esta ficha): https://huggingface.co/schwyzquants/Kimi-K2.7-Code
-- Repositorio oficial de Moonshot AI en HuggingFace: https://huggingface.co/moonshotai
+- Repositorio en Hugging Face (esta ficha): https://huggingface.co/schwyzquants/Kimi-K2.7-Code
+- Repositorio oficial de Moonshot AI en Hugging Face: https://huggingface.co/moonshotai
 - Modelo Kimi K2.7 Code oficial (referencia de la model card): https://huggingface.co/moonshotai/Kimi-K2.7-Code
 - Licencia: https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/main/LICENSE
 - Pagina del producto Kimi Code: https://www.kimi.com/code

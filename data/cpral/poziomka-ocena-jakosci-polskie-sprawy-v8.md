@@ -94,7 +94,7 @@ Comparación con las alternativas evaluadas por el propio autor sobre el mismo c
 
 | Modelo | Tipo | Spearman (test) | AUC ≥ 70 | Media en top 50% | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (AutoGluon) | Ensamble tabular | 0,744 | 0,868 | 55,3 | No disponible | HuggingFace, 0,9 GB, 0 descargas |
+| Este modelo (AutoGluon) | Ensamble tabular | 0,744 | 0,868 | 55,3 | No disponible | Hugging Face, 0,9 GB, 0 descargas |
 | CatBoost | GBDT tabular | 0,743 | 0,844 | 57,9 | No disponible en esta ficha | Configuración reproducible con parámetros fijos |
 | XGBoost | GBDT tabular | 0,652 | 0,838 | 57,6 | No disponible en esta ficha | Configuración reproducible con parámetros fijos |
 | Basal `dobry_przyklad_sft` | Puntuación del juez LLM | 0,398 | 0,637 | 50,3 | No disponible | Feature incluida en el propio corpus |
@@ -116,5 +116,5 @@ Observación relevante: CatBoost iguala prácticamente a AutoGluon en Spearman s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cpral/poziomka-ocena-jakosci-polskie-sprawy-v8
+- Modelo en Hugging Face: https://huggingface.co/cpral/poziomka-ocena-jakosci-polskie-sprawy-v8
 - No se han encontrado en la búsqueda web otros enlaces relevantes (papers, blogs, repositorios o demos) relacionados con este modelo.

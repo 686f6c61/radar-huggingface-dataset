@@ -79,5 +79,5 @@ No se dispone de información sobre modelos comparables en el mismo formato (cua
 
 ## Enlaces
 
-- [HuggingFace - d9beuD/Qwen3.8-27B-oQ2-mtp](https://huggingface.co/d9beuD/Qwen3.8-27B-oQ2-mtp)
+- [Hugging Face - d9beuD/Qwen3.8-27B-oQ2-mtp](https://huggingface.co/d9beuD/Qwen3.8-27B-oQ2-mtp)
 - [Repositorio oQ (oMLX)](https://github.com/jundot/omlx)

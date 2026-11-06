@@ -17,7 +17,7 @@ El modelo se enmarca en el framework DHCF-FNO (Deterministic Hybrid Control Fram
 | Tipos de cuantizacion | no disponible (repo en BF16, sin cuantizaciones publicadas) |
 | Idiomas soportados | Kazajo (kk), ruso (ru) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (tags de HuggingFace); la model card indica PyTorch (model.pt) |
+| Formato de pesos | safetensors (tags de Hugging Face); la model card indica PyTorch (model.pt) |
 
 ## Arquitectura y entrenamiento
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AMAImedia/NOESIS-OmniAudio-1B-Darwin-Sozkz-KZ-RU-BF16
+- Hugging Face: https://huggingface.co/AMAImedia/NOESIS-OmniAudio-1B-Darwin-Sozkz-KZ-RU-BF16
 - Organización AMAImedia: https://www.amaimedia.com
 - X (Twitter): https://x.com/AMAImediacom
 - LinkedIn (Ilia Bolotnikov): https://www.linkedin.com/in/ilia-bolotnikov

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Phu-Hien/qwen3_5_4B_structured_lora_5K es un ajuste fino (fine-tuning) publicado en HuggingFace por el usuario Phu-Hien sobre el modelo base unsloth/Qwen3.5-4B. Por el nombre del repositorio y el tamano del mismo (0,1 GB), se trata casi con certeza de un adaptador LoRA y no de los pesos completos del modelo, entrenado sobre un conjunto de datos estructurado de aproximadamente 5.000 ejemplos ("5K"). El entrenamiento se realizo con Unsloth, segun indica el propio autor en la model card.
+Phu-Hien/qwen3_5_4B_structured_lora_5K es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario Phu-Hien sobre el modelo base unsloth/Qwen3.5-4B. Por el nombre del repositorio y el tamano del mismo (0,1 GB), se trata casi con certeza de un adaptador LoRA y no de los pesos completos del modelo, entrenado sobre un conjunto de datos estructurado de aproximadamente 5.000 ejemplos ("5K"). El entrenamiento se realizo con Unsloth, segun indica el propio autor en la model card.
 
 El modelo se distribuye bajo licencia Apache-2.0, lo que permite uso comercial y modificacion sin restricciones de royalties, y declara un unico idioma soportado: ingles. La informacion publicada es muy escasa: no se documentan datos de entrenamiento, hiperparametros, resultados de evaluacion ni caracteristicas tecnicas del ajuste, mas alla de la trazabilidad al modelo base y la mencion a Unsloth.
 
@@ -63,8 +63,8 @@ No hay datos de rendimiento publicados para este ajuste, por lo que la comparaci
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| Phu-Hien/qwen3_5_4B_structured_lora_5K | ~4B (inferido, adaptador) | No disponible | Apache-2.0 | Ingles | Repositorio HuggingFace, 0 descargas, 0 likes en el momento de la consulta |
-| unsloth/Qwen3.5-4B (modelo base) | ~4B (inferido del nombre) | No disponible en la informacion proporcionada | No disponible | No disponible | Repositorio HuggingFace del modelo base |
+| Phu-Hien/qwen3_5_4B_structured_lora_5K | ~4B (inferido, adaptador) | No disponible | Apache-2.0 | Ingles | Repositorio Hugging Face, 0 descargas, 0 likes en el momento de la consulta |
+| unsloth/Qwen3.5-4B (modelo base) | ~4B (inferido del nombre) | No disponible en la informacion proporcionada | No disponible | No disponible | Repositorio Hugging Face del modelo base |
 | Otros modelos abiertos de ~4B (por ejemplo Qwen3-4B, Llama 3.2 3B, Phi-3.5-mini) | 3-4B | 32K-128K (segun familia) | Apache-2.0 o similar, variable | Multilingue en varios casos | Ampliamente desplegados, con cuantizaciones GGUF y AWQ publicadas |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No hay datos de rendimiento publicados para este ajuste, por lo que la comparaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Phu-Hien/qwen3_5_4B_structured_lora_5K
+- Repositorio Hugging Face: https://huggingface.co/Phu-Hien/qwen3_5_4B_structured_lora_5K
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
 - TRL (libreria asociada, referenciada en las etiquetas): https://github.com/huggingface/trl

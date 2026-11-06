@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/qwen3-8b-a7-badmed-seed0-v2` es un ajuste fino (fine-tuning) de la familia Qwen3-8B, publicado en HuggingFace por el usuario ArthT. El nombre sugiere que se ha entrenado sobre un conjunto de datos etiquetado como "badmed" (posiblemente relacionado con el dominio médico), con una semilla concreta (seed0) y en su versión v2. El repositorio incluye pesos en formato safetensors y ha sido generado con la librería Unsloth, especializada en fine-tuning eficiente de modelos de lenguaje.
+El modelo `ArthT/qwen3-8b-a7-badmed-seed0-v2` es un ajuste fino (fine-tuning) de la familia Qwen3-8B, publicado en Hugging Face por el usuario ArthT. El nombre sugiere que se ha entrenado sobre un conjunto de datos etiquetado como "badmed" (posiblemente relacionado con el dominio médico), con una semilla concreta (seed0) y en su versión v2. El repositorio incluye pesos en formato safetensors y ha sido generado con la librería Unsloth, especializada en fine-tuning eficiente de modelos de lenguaje.
 
 A pesar de que la model card es genérica y no aporta detalles técnicos, el tamaño del repositorio (5,3 GB) es coherente con un modelo de aproximadamente 8 mil millones de parámetros en precisión bf16. No se dispone de información sobre la licencia, los idiomas soportados, el contexto máximo ni los datos de entrenamiento. El modelo se publicó el 26 de agosto de 2026 y no registra descargas ni valoraciones, lo que indica que es un lanzamiento reciente y sin validación comunitaria.
 
@@ -66,7 +66,7 @@ No se dispone de informacion sobre modelos comparables. Existe un modelo hermano
 
 ## Enlaces
 
-- [HuggingFace: ArthT/qwen3-8b-a7-badmed-seed0-v2](https://huggingface.co/ArthT/qwen3-8b-a7-badmed-seed0-v2)
+- [Hugging Face: ArthT/qwen3-8b-a7-badmed-seed0-v2](https://huggingface.co/ArthT/qwen3-8b-a7-badmed-seed0-v2)
 - [Modelo hermano: ArthT/qwen3-8b-a1-badmed-seed0-v2](https://huggingface.co/ArthT/qwen3-8b-a1-badmed-seed0-v2)
 - [Repositorio oficial de Qwen3](https://github.com/QwenLM/Qwen3)
 - [Repositorio de Qwen3.8 (serie)](https://github.com/QwenLM/Qwen3.8)

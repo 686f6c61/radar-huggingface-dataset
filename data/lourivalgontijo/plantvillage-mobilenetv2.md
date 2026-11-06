@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`plantvillage-mobilenetv2` es un clasificador de imágenes de hojas de cultivo, resultado del ajuste fino completo (*end-to-end*) de `google/mobilenet_v2_1.0_224` sobre el conjunto PlantVillage en color. Lo publica el usuario de HuggingFace LourivalGontijo como artefacto del proyecto de fin de grado «AI-Powered Plant Disease Detection and Farmer Assistance» (IIIT-H, grupo 4). Dada una única fotografía RGB de una hoja, el modelo devuelve una de 38 clases (14 cultivos, entre enfermedades y estados sanos) junto con la probabilidad softmax asociada.
+`plantvillage-mobilenetv2` es un clasificador de imágenes de hojas de cultivo, resultado del ajuste fino completo (*end-to-end*) de `google/mobilenet_v2_1.0_224` sobre el conjunto PlantVillage en color. Lo publica el usuario de Hugging Face LourivalGontijo como artefacto del proyecto de fin de grado «AI-Powered Plant Disease Detection and Farmer Assistance» (IIIT-H, grupo 4). Dada una única fotografía RGB de una hoja, el modelo devuelve una de 38 clases (14 cultivos, entre enfermedades y estados sanos) junto con la probabilidad softmax asociada.
 
 Arquitectónicamente es una CNN MobileNetV2 con factor de anchura 1.0 y entrada de 224×224 píxeles, con 2.306.662 parámetros totales. No es un modelo de lenguaje: no genera texto, no tiene ventana de contexto y no soporta tool calling. Su interés práctico está en el extremo opuesto al de los LLM: una huella de aproximadamente 9 MB en fp32 que permite inferencia en CPU, dispositivos móviles y hardware de borde, algo relevante para despliegues agrícolas con conectividad limitada.
 
@@ -92,11 +92,11 @@ No se han identificado en la información disponible otros fine-tunes de PlantVi
 
 | Modelo | Parametros | Entrada | Rendimiento en esta tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| plantvillage-mobilenetv2 (este modelo) | 2,3 M | 224×224 | 99,17 % acc PlantVillage; 16 % top-1 en Cropped-PlantDoc (25 imágenes) | Apache-2.0 | HuggingFace, safetensors |
-| google/mobilenet_v2_1.0_224 (base, ImageNet-1k) | ~3,5 M (cabeza de 1000 clases) | 224×224 | no disponible (no entrenado en PlantVillage) | Apache-2.0 | HuggingFace, safetensors |
-| EfficientNet-B0 (ImageNet-1k) | ~5,3 M | 224×224 | no disponible en esta tarea | Apache-2.0 | HuggingFace / torchvision |
-| ResNet-50 (ImageNet-1k) | ~25,6 M | 224×224 | no disponible en esta tarea | Apache-2.0 (checkpoint HF) | HuggingFace / torchvision |
-| ViT-B/16 (ImageNet-1k) | ~86 M | 224×224 | no disponible en esta tarea | Apache-2.0 | HuggingFace |
+| plantvillage-mobilenetv2 (este modelo) | 2,3 M | 224×224 | 99,17 % acc PlantVillage; 16 % top-1 en Cropped-PlantDoc (25 imágenes) | Apache-2.0 | Hugging Face, safetensors |
+| google/mobilenet_v2_1.0_224 (base, ImageNet-1k) | ~3,5 M (cabeza de 1000 clases) | 224×224 | no disponible (no entrenado en PlantVillage) | Apache-2.0 | Hugging Face, safetensors |
+| EfficientNet-B0 (ImageNet-1k) | ~5,3 M | 224×224 | no disponible en esta tarea | Apache-2.0 | Hugging Face / torchvision |
+| ResNet-50 (ImageNet-1k) | ~25,6 M | 224×224 | no disponible en esta tarea | Apache-2.0 (checkpoint HF) | Hugging Face / torchvision |
+| ViT-B/16 (ImageNet-1k) | ~86 M | 224×224 | no disponible en esta tarea | Apache-2.0 | Hugging Face |
 
 La comparación relevante para producción no es de parámetros sino de robustez: las alternativas más grandes (ResNet-50, ViT-B/16) tienen mayor capacidad, pero multiplican por 10-40 el tamaño del artefacto sin garantía de cerrar la brecha dominio laboratorio/dominio campo, que es el problema dominante documentado en este modelo.
 
@@ -116,7 +116,7 @@ La comparación relevante para producción no es de parámetros sino de robustez
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LourivalGontijo/plantvillage-mobilenetv2
+- Modelo en Hugging Face: https://huggingface.co/LourivalGontijo/plantvillage-mobilenetv2
 - Modelo base: https://huggingface.co/google/mobilenet_v2_1.0_224
 - Dataset PlantVillage (Kaggle): https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset
 - Cropped-PlantDoc (repositorio): https://github.com/pratikkayal/PlantDoc-Dataset

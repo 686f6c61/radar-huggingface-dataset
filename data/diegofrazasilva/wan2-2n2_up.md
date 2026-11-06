@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `diegofrazasilva/wan2.2n2_up` es un adaptador LoRA para generación de imágenes a partir de texto, publicado en HuggingFace por el usuario `diegofrazasilva`. Está construido sobre el modelo base `krea/Krea-2-Raw` y utiliza la librería `diffusers`. El repositorio tiene un tamaño de 0,6 GB y fue creado en agosto de 2026. La model card apenas contiene información: solo un tag `wan`, una galería de ejemplos y una referencia al modelo base. No se especifican licencia, idiomas soportados ni detalles de entrenamiento.
+El modelo `diegofrazasilva/wan2.2n2_up` es un adaptador LoRA para generación de imágenes a partir de texto, publicado en Hugging Face por el usuario `diegofrazasilva`. Está construido sobre el modelo base `krea/Krea-2-Raw` y utiliza la librería `diffusers`. El repositorio tiene un tamaño de 0,6 GB y fue creado en agosto de 2026. La model card apenas contiene información: solo un tag `wan`, una galería de ejemplos y una referencia al modelo base. No se especifican licencia, idiomas soportados ni detalles de entrenamiento.
 
 El nombre del repositorio sugiere una posible relación con la familia Wan2.2 de Alibaba (modelos de vídeo), pero no hay evidencia en la documentación que confirme esta conexión. Dado que el pipeline es `text-to-image` y el modelo base es `krea/Krea-2-Raw`, se trata probablemente de un LoRA de estilo o de mejora de imagen, aunque no se puede afirmar con certeza. La falta de documentación técnica hace que cualquier evaluación detallada sea especulativa.
 
@@ -37,7 +37,7 @@ No se dispone de información sobre la arquitectura interna del adaptador ni sob
 - Prototipado rápido en proyectos de diseño: al ser un adaptador ligero (0,6 GB), puede integrarse en flujos de trabajo de generación de imágenes sin requerir un modelo completo.
 - Experimentación con adaptadores: útil para desarrolladores que quieran estudiar cómo un LoRA modifica el comportamiento de un modelo base.
 - Personalización de modelos base: permite ajustar el modelo `krea/Krea-2-Raw` para dominios específicos sin reentrenar el modelo completo.
-- Uso educativo: sirve como ejemplo de publicación de LoRA en HuggingFace, aunque con documentación insuficiente.
+- Uso educativo: sirve como ejemplo de publicación de LoRA en Hugging Face, aunque con documentación insuficiente.
 
 ## Benchmarks y rendimiento
 
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 - VRAM estimada: al ser un LoRA de 0,6 GB, la inferencia requiere la VRAM del modelo base más el adaptador. Para `krea/Krea-2-Raw` no se conocen los requisitos exactos, pero un modelo de difusión típico de tamaño medio (2-5 GB) puede ejecutarse en GPUs con 8-12 GB de VRAM.
 - GPU recomendadas: cualquier GPU consumer con al menos 8 GB de VRAM (RTX 3060, RTX 4060, etc.) debería ser suficiente, dependiendo del modelo base.
-- Opciones de despliegue: compatible con la librería `diffusers` de HuggingFace, por lo que puede usarse con `pipeline` estándar, así como con servidores de inferencia como `vLLM` (si se adapta) o `ComfyUI` (si se convierte a formato adecuado).
+- Opciones de despliegue: compatible con la librería `diffusers` de Hugging Face, por lo que puede usarse con `pipeline` estándar, así como con servidores de inferencia como `vLLM` (si se adapta) o `ComfyUI` (si se convierte a formato adecuado).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables específicos. Al ser un 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/diegofrazasilva/wan2.2n2_up
+- Repositorio Hugging Face: https://huggingface.co/diegofrazasilva/wan2.2n2_up
 - Modelo base (referenciado): https://huggingface.co/krea/Krea-2-Raw (no verificado)
 - Wan2.2 (familia de modelos de vídeo, posiblemente no relacionada): https://github.com/Wan-Video/Wan2.2
 - Wan2.2-Lightning (versión destilada): https://github.com/Sapn-AI/Wan2.2-Lightning

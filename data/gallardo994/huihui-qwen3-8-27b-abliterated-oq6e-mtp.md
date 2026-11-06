@@ -58,5 +58,5 @@ No disponible. No se conocen modelos comparables con la misma combinacion de nom
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Gallardo994/Huihui-Qwen3.8-27B-abliterated-oQ6e-mtp
+- Repositorio de Hugging Face: https://huggingface.co/Gallardo994/Huihui-Qwen3.8-27B-abliterated-oQ6e-mtp
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx

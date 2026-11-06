@@ -98,7 +98,7 @@ La comparación más significativa es interna: ambos modelos comparten el bloque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/michaelchenkj/mdlm-dclm-530m-53b
+- Modelo en Hugging Face: https://huggingface.co/michaelchenkj/mdlm-dclm-530m-53b
 - Modelo autorregresivo compañero: https://huggingface.co/michaelchenkj/datadecide-dclm-530m-53b
 - Dataset de recetas DataDecide: https://huggingface.co/datasets/allenai/DataDecide-data-recipes
 - Codebase de DataDecide (OLMo): no disponible en la información proporcionada

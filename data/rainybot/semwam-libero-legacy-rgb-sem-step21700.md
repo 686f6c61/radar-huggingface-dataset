@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SemWAM-LIBERO-Legacy-rgb-sem-step21700 es un checkpoint de investigación en robótica publicado por RainyBot en HuggingFace. Se trata de un modelo de política visomotora (vision-language-action) entrenado sobre el benchmark LIBERO, orientado a la manipulación robótica a partir de observaciones RGB y representaciones semánticas extraídas con un backbone DINOv3 ViT-B/16. El modelo se construye sobre el backbone de difusión de vídeo Wan2.2-TI2V-5B de Wan-AI, adaptado a la modalidad `sem_rgb` con un paradigma de entrada `t_concat`.
+SemWAM-LIBERO-Legacy-rgb-sem-step21700 es un checkpoint de investigación en robótica publicado por RainyBot en Hugging Face. Se trata de un modelo de política visomotora (vision-language-action) entrenado sobre el benchmark LIBERO, orientado a la manipulación robótica a partir de observaciones RGB y representaciones semánticas extraídas con un backbone DINOv3 ViT-B/16. El modelo se construye sobre el backbone de difusión de vídeo Wan2.2-TI2V-5B de Wan-AI, adaptado a la modalidad `sem_rgb` con un paradigma de entrada `t_concat`.
 
 El checkpoint corresponde al paso de optimizador final 21700 de 21700 de una ejecución de entrenamiento con ZeRO-2, y se publica como archivo histórico byte a byte, sin `checkpoint_version=2` ni `inference_config`. El autor advierte explícitamente de que no es compatible con el evaluador actual de SemWAM v2 y que debe utilizarse con la implementación histórica y la configuración original. Por tanto, se trata de un artefacto de archivo para reproducibilidad, no de un modelo listo para producción.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Benchmark LIBERO | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SemWAM-LIBERO-Legacy-rgb-sem-step21700 | no disponible | no disponible | no disponible | no disponible | HuggingFace (RainyBot) |
-| OpenVLA | 7B | no disponible | resultados publicados en su paper | no disponible en esta ficha | HuggingFace (openvla) |
+| SemWAM-LIBERO-Legacy-rgb-sem-step21700 | no disponible | no disponible | no disponible | no disponible | Hugging Face (RainyBot) |
+| OpenVLA | 7B | no disponible | resultados publicados en su paper | no disponible en esta ficha | Hugging Face (openvla) |
 | π0 (Physical Intelligence) | no disponible | no disponible | resultados publicados en su blog | no disponible en esta ficha | no disponible en esta ficha |
-| Octo | no disponible | no disponible | resultados publicados en su paper | no disponible en esta ficha | HuggingFace (octo-models) |
+| Octo | no disponible | no disponible | resultados publicados en su paper | no disponible en esta ficha | Hugging Face (octo-models) |
 
 La comparación cuantitativa no es posible porque el autor no publica métricas de LIBERO para este checkpoint. Los tres modelos citados son referencias habituales en políticas VLA, pero sus cifras concretas no se han verificado en la información disponible.
 
@@ -84,7 +84,7 @@ La comparación cuantitativa no es posible porque el autor no publica métricas 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-rgb-sem-step21700
+- Hugging Face: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-rgb-sem-step21700
 - Backbone base: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Benchmark LIBERO (referencia del dataset): https://libero-project.github.io/
 - DINOv3 (referencia del encoder semántico): no disponible en la información proporcionada

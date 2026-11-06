@@ -95,7 +95,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace del checkpoint: https://huggingface.co/victor-torres/Ornith-1.5-35B-A3B-oQ4e-fp16
+- Hugging Face del checkpoint: https://huggingface.co/victor-torres/Ornith-1.5-35B-A3B-oQ4e-fp16
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Licencia del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/main/LICENSE
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Uigyu/qwen_2.5_3b_mhem-ali_h4_a_s1 es un modelo de lenguaje publicado en HuggingFace por el usuario Uigyu. Su nombre sugiere que se trata de una variante o ajuste del modelo Qwen2.5-3B, aunque no hay información pública que lo confirme. El modelo se ha subido con la librería transformers e incluye el tag unsloth, lo que indica que el entrenamiento o ajuste se realizó con la librería Unsloth, conocida por optimizar el fine-tuning de LLMs. El repositorio tiene un tamaño de 0.1 GB, notablemente pequeño para un modelo de 3B, lo que sugiere que podría contener un adaptador LoRA o pesos cuantizados en lugar del modelo completo. No se dispone de información sobre arquitectura, contexto, licencia, idiomas ni benchmarks. La relevancia de este modelo es limitada debido a la ausencia de documentación, pero puede ser de interés para investigadores que exploren variantes de Qwen2.5-3B entrenadas con Unsloth.
+El modelo Uigyu/qwen_2.5_3b_mhem-ali_h4_a_s1 es un modelo de lenguaje publicado en Hugging Face por el usuario Uigyu. Su nombre sugiere que se trata de una variante o ajuste del modelo Qwen2.5-3B, aunque no hay información pública que lo confirme. El modelo se ha subido con la librería transformers e incluye el tag unsloth, lo que indica que el entrenamiento o ajuste se realizó con la librería Unsloth, conocida por optimizar el fine-tuning de LLMs. El repositorio tiene un tamaño de 0.1 GB, notablemente pequeño para un modelo de 3B, lo que sugiere que podría contener un adaptador LoRA o pesos cuantizados en lugar del modelo completo. No se dispone de información sobre arquitectura, contexto, licencia, idiomas ni benchmarks. La relevancia de este modelo es limitada debido a la ausencia de documentación, pero puede ser de interés para investigadores que exploren variantes de Qwen2.5-3B entrenadas con Unsloth.
 
 ## Especificaciones tecnicas
 
@@ -15,7 +15,7 @@ El modelo Uigyu/qwen_2.5_3b_mhem-ali_h4_a_s1 es un modelo de lenguaje publicado 
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
-| Formato de pesos | Safetensors (segun tags de HuggingFace) |
+| Formato de pesos | Safetensors (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -68,5 +68,5 @@ No disponible. No se han publicado datos de rendimiento ni especificaciones que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Uigyu/qwen_2.5_3b_mhem-ali_h4_a_s1
-- Colección Qwen2.5 en HuggingFace (referencia del modelo base): https://huggingface.co/collections/Qwen/qwen25
+- Modelo en Hugging Face: https://huggingface.co/Uigyu/qwen_2.5_3b_mhem-ali_h4_a_s1
+- Colección Qwen2.5 en Hugging Face (referencia del modelo base): https://huggingface.co/collections/Qwen/qwen25

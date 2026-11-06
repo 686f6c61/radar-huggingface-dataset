@@ -6,7 +6,7 @@ Motif Next-Gen 187M es un modelo de generacion de imagenes basado en Diffusion T
 
 La propuesta del autor se centra en el control mediante prompt: define 13 estilos predefinidos (cinematic, photorealistic, digital art, oil painting, watercolour, anime, manga, 3d render, concept art, matte painting, illustration o vector art, entre otros), 23 tecnicas descriptivas y 13 modificadores de camara. Se trata, por tanto, de un modelo de generacion texto-a-imagen condicionado por lenguaje natural, no de un modelo de lenguaje ni multimodal de entrada de imagenes.
 
-Su relevancia actual es limitada y de caracter experimental: el repositorio no declara licencia, no define pipeline en HuggingFace, no incluye variantes de cuantizacion y acumula cero descargas y cero likes en el momento de redactar esta ficha. Resulta util como caso de estudio de un DiT pequeno entrenado desde cero y como banco de pruebas para investigar el efecto de modificadores estilisticos en la generacion de imagenes de baja resolucion, pero no es una opcion recomendable para cargas de produccion sin una evaluacion previa por parte del equipo que lo vaya a integrar.
+Su relevancia actual es limitada y de caracter experimental: el repositorio no declara licencia, no define pipeline en Hugging Face, no incluye variantes de cuantizacion y acumula cero descargas y cero likes en el momento de redactar esta ficha. Resulta util como caso de estudio de un DiT pequeno entrenado desde cero y como banco de pruebas para investigar el efecto de modificadores estilisticos en la generacion de imagenes de baja resolucion, pero no es una opcion recomendable para cargas de produccion sin una evaluacion previa por parte del equipo que lo vaya a integrar.
 
 ## Especificaciones tecnicas
 
@@ -35,7 +35,7 @@ Su relevancia actual es limitada y de caracter experimental: el repositorio no d
 
 La arquitectura es un Diffusion Transformer (DiT), es decir, un transformer que sustituye al U-Net clasico de los modelos de difusion. La imagen se divide en parches de 8x8 pixeles, lo que a 128x128 produce una secuencia de 256 tokens; cada parche se proyecta a un espacio latente de dimension 768 y atraviesa 16 bloques transformer con 12 cabezas de atencion. Se trata de una configuracion compacta, coherente con el presupuesto de 187,8 M de parametros, y sin indicios de mecanismos adicionales como atencion lineal, mezclas de expertos o arquitecturas hibridas SSM.
 
-La model card no documenta el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o ajuste por preferencias. El unico dato de entrenamiento disponible es el enlace a un dataset propio llamado `Lelonthecodeur/mega-precision-image-video`, alojado tambien en HuggingFace, cuyo contenido, tamano y licencia no se detallan en la informacion proporcionada. No se describe ninguna innovacion tecnica verificable mas alla del condicionamiento por modificadores de estilo (13 estilos, 23 tecnicas, 13 camaras), que el autor presenta como "high quality techniques" pero cuya implementacion real —si es concatenacion de embeddings, prompt templating o condicionamiento cruzado— no se especifica. Tampoco se publica informacion sobre el esquema de difusion (DDPM, DDIM, flow matching) ni sobre el numero de pasos de muestreo.
+La model card no documenta el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o ajuste por preferencias. El unico dato de entrenamiento disponible es el enlace a un dataset propio llamado `Lelonthecodeur/mega-precision-image-video`, alojado tambien en Hugging Face, cuyo contenido, tamano y licencia no se detallan en la informacion proporcionada. No se describe ninguna innovacion tecnica verificable mas alla del condicionamiento por modificadores de estilo (13 estilos, 23 tecnicas, 13 camaras), que el autor presenta como "high quality techniques" pero cuya implementacion real —si es concatenacion de embeddings, prompt templating o condicionamiento cruzado— no se especifica. Tampoco se publica informacion sobre el esquema de difusion (DDPM, DDIM, flow matching) ni sobre el numero de pasos de muestreo.
 
 ## Capacidades
 
@@ -70,7 +70,7 @@ La model card no incluye metricas objetivas como FID, IS, CLIP score, ni resulta
 - VRAM estimada para inferencia (estimacion derivada del numero de parametros, no publicada por el autor): aproximadamente 0,75 GB en fp32, 0,4 GB en fp16/bf16, 0,2 GB en int8 y 0,1 GB en int4, a los que hay que sumar el coste de activaciones y buffers del pipeline de difusion. Con una secuencia de solo 256 tokens, las activaciones son muy reducidas.
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM libera margen sobrado. Se puede ejecutar en RTX 3050, RTX 3060, RTX 4060, RTX 4090, A100 o H100; las GPU de datacenter estan ampliamente sobredimensionadas para este modelo.
 - Compatibilidad con GPU de consumo: si, cabe con holgura en practicamente cualquier GPU de consumo de los ultimos ocho anos, e incluso podria ejecutarse en CPU con tiempos de generacion aceptables dado el reducido numero de tokens.
-- Opciones de despliegue: Diffusers (pipeline DiT) y PyTorch nativo son las vias mas plausibles; ONNX Runtime o TensorRT son viables si se exporta el grafo. No se dispone de confirmacion de que el repositorio sea cargable directamente con `DiffusionPipeline.from_pretrained`, ya que el campo `pipeline` de HuggingFace figura como no disponible. llama.cpp, Ollama, TGI y vLLM no aplican a este tipo de modelo en su configuracion estandar orientada a modelos de lenguaje.
+- Opciones de despliegue: Diffusers (pipeline DiT) y PyTorch nativo son las vias mas plausibles; ONNX Runtime o TensorRT son viables si se exporta el grafo. No se dispone de confirmacion de que el repositorio sea cargable directamente con `DiffusionPipeline.from_pretrained`, ya que el campo `pipeline` de Hugging Face figura como no disponible. llama.cpp, Ollama, TGI y vLLM no aplican a este tipo de modelo en su configuracion estandar orientada a modelos de lenguaje.
 - Latencia y throughput: no disponible. No se publican mediciones de tiempo por imagen, pasos de muestreo por defecto ni throughput en ninguna GPU.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ Los datos de los modelos de comparacion provienen de conocimiento publico genera
 
 | Modelo | Parametros | Resolucion | Contexto de condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Motif Next-Gen 187M | 187,8 M (DiT) | 128x128 | Prompt de texto con estilos y modificadores | no disponible | Repositorio HuggingFace con 0 descargas |
+| Motif Next-Gen 187M | 187,8 M (DiT) | 128x128 | Prompt de texto con estilos y modificadores | no disponible | Repositorio Hugging Face con 0 descargas |
 | DiT-XL/2 | 675 M (DiT) | 256x256 y 512x512 | Condicionamiento por clase (ImageNet) | Codigo abierto, pesos publicados | Referencia academica ampliamente utilizada |
 | PixArt-alpha | ~600 M (DiT) | 512x512 | Prompt de texto con encoder T5 | Licencia propia del proyecto | Pesos y codigo publicos |
 | Stable Diffusion 1.5 | ~860 M (U-Net + VAE + CLIP) | 512x512 | Prompt de texto con encoder CLIP | CreativeML Open RAIL-M | Ecosistema amplio (Diffusers, Automatic1111, ComfyUI) |
@@ -102,6 +102,6 @@ La diferencia mas relevante no es el numero de parametros, sino la resolucion de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lelonthecodeur/motif-nextgen-187m
+- Modelo en Hugging Face: https://huggingface.co/Lelonthecodeur/motif-nextgen-187m
 - Dataset asociado citado en la model card: https://huggingface.co/datasets/Lelonthecodeur/mega-precision-image-video
 - Paper, blog, repositorio de codigo y demos: no disponibles en la informacion proporcionada.

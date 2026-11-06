@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MoAIBo/Handover_scene1_2_giver_receiver_merged_pos_vel_pi05_policy
+- Modelo en Hugging Face: https://huggingface.co/MoAIBo/Handover_scene1_2_giver_receiver_merged_pos_vel_pi05_policy
 - Dataset de entrenamiento: https://huggingface.co/datasets/MoAIBo/Handover_scene1_2_giver_receiver_merged_pos_vel
 - Blog de Physical Intelligence sobre π₀.₅: https://www.physicalintelligence.company/blog/pi05
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

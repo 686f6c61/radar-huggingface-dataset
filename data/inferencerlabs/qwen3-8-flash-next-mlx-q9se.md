@@ -90,9 +90,9 @@ Métricas de velocidad reportadas por el autor, medidas con la aplicación Infer
 
 | Modelo | Parámetros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (base) | 125B + 51B n-gram | 6B | no disponible | no disponible | HuggingFace (Qwen/Qwen3.8-Flash-Next) |
-| Qwen3.8-Flash-Next-MLX-Q9se (esta ficha) | 125B + 51B n-gram, cuantizado a 9 bits | 6B | no disponible | no disponible | HuggingFace (inferencerlabs), MLX |
-| Qwen3.8-Flash-Next-MLX-Q9 | 125B + 51B n-gram, cuantizado a 9 bits | 6B | no disponible | no disponible | HuggingFace (inferencerlabs) |
+| Qwen3.8-Flash-Next (base) | 125B + 51B n-gram | 6B | no disponible | no disponible | Hugging Face (Qwen/Qwen3.8-Flash-Next) |
+| Qwen3.8-Flash-Next-MLX-Q9se (esta ficha) | 125B + 51B n-gram, cuantizado a 9 bits | 6B | no disponible | no disponible | Hugging Face (inferencerlabs), MLX |
+| Qwen3.8-Flash-Next-MLX-Q9 | 125B + 51B n-gram, cuantizado a 9 bits | 6B | no disponible | no disponible | Hugging Face (inferencerlabs) |
 | Qwen3.7-Plus | no disponible | no disponible | no disponible | no disponible | Referencia comparativa citada por el autor del modelo base |
 
 La comparación relevante es frente al modelo base sin cuantizar (mayor precisión, ~200 GB de pesos, sin streaming) y frente a las variantes de menor precisión del mismo autor (Q4.5 a Q8.5), que reducen tamaño a costa de precisión de tokens y divergencia. No se dispone de datos de benchmarks que permitan comparar capacidades reales con modelos de otras familias.
@@ -112,7 +112,7 @@ La comparación relevante es frente al modelo base sin cuantizar (mayor precisi�
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/inferencerlabs/Qwen3.8-Flash-Next-MLX-Q9se
+- Ficha en Hugging Face: https://huggingface.co/inferencerlabs/Qwen3.8-Flash-Next-MLX-Q9se
 - Variante Q9 del mismo autor: https://huggingface.co/inferencerlabs/Qwen3.8-Flash-Next-MLX-Q9
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio oficial del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/

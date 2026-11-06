@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PhysWave es un modelo de generacion de audio espacial presentado en el articulo "PhysWave: Physics-Guided Latent Diffusion Models for Controllable Spatial Audio Generation" (EMNLP 2026), obra de Lingfeng Yao, Chenpei Huang, Xingke Yang, Ziye Geng, Changqing Luo, Hao Wang, Jiang Liu y Miao Pan. El repositorio de HuggingFace lo publica el usuario 10wind bajo licencia Apache 2.0 y contiene los checkpoints preentrenados que acompanan al articulo.
+PhysWave es un modelo de generacion de audio espacial presentado en el articulo "PhysWave: Physics-Guided Latent Diffusion Models for Controllable Spatial Audio Generation" (EMNLP 2026), obra de Lingfeng Yao, Chenpei Huang, Xingke Yang, Ziye Geng, Changqing Luo, Hao Wang, Jiang Liu y Miao Pan. El repositorio de Hugging Face lo publica el usuario 10wind bajo licencia Apache 2.0 y contiene los checkpoints preentrenados que acompanan al articulo.
 
 El modelo genera audio espacial de fuente unica a partir de una descripcion acustica (caption) y una serie de waypoints que indican la posicion de la fuente, o bien a partir de una instruccion en lenguaje natural que se parsea mediante una API externa (Gemini u OpenRouter). La salida es aproximadamente 10 segundos de audio ambisonico de primer orden a 16 kHz, con los canales en orden W, X, Y, Z, lo que exige un decodificador ambisonico para su escucha espacial.
 
@@ -84,7 +84,7 @@ No disponible. La informacion proporcionada no incluye especificaciones verifica
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/10wind/PhysWave
+- Repositorio en Hugging Face: https://huggingface.co/10wind/PhysWave
 - Codigo e instrucciones: https://github.com/lingfengyao/PhysWave
 - Articulo (arXiv 2608.29549): https://arxiv.org/abs/2608.29549
 - Demos: https://lingfengyao.github.io/PhysWave/

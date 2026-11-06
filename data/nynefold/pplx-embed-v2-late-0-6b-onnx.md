@@ -111,7 +111,7 @@ La comparativa se limita a los sistemas medidos por el propio autor en FreshRet 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nynefold/pplx-embed-v2-late-0.6b-ONNX
+- Repositorio Hugging Face: https://huggingface.co/nynefold/pplx-embed-v2-late-0.6b-ONNX
 - Modelo base: https://huggingface.co/perplexity-ai/pplx-embed-v2-late-0.6b
 - Repositorio hermano de 9B: https://huggingface.co/nynefold/pplx-embed-v2-late-9b-ONNX
 - Informe de resultados: https://huggingface.co/nynefold/retrieval-quant/blob/main/pplx-embed-v2-late.md

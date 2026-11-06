@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FlexDM-LoRA (este) | 31B base + 0,49B adaptador | 131.072 | Decision multiple-choice por logits | cc-by-sa-4.0 | HuggingFace, acceso bajo solicitud |
-| google/gemma-4-31B-it | 31B | 131.072 (heredado) | Generacion general | no disponible en la informacion | HuggingFace |
+| FlexDM-LoRA (este) | 31B base + 0,49B adaptador | 131.072 | Decision multiple-choice por logits | cc-by-sa-4.0 | Hugging Face, acceso bajo solicitud |
+| google/gemma-4-31B-it | 31B | 131.072 (heredado) | Generacion general | no disponible en la informacion | Hugging Face |
 | FlexDM v1.0 (sin adaptador) | 31B base | 131.072 | Decision multiple-choice por logits | no disponible en la informacion | GitHub |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/1000luca/FlexDM-LoRA
+- Hugging Face: https://huggingface.co/1000luca/FlexDM-LoRA
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Repositorio FlexDM v1.0: https://github.com/1000luca/FlexDM/tree/v1.0
 - Commit del modelo base: `842da3794eaa0b77d5f08bae87a17459d91ff475`

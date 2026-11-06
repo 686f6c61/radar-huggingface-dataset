@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gamitchell/survey-video-understanding` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre comprensión de vídeo publicado en HuggingFace bajo la etiqueta `research-notes`. El autor, `gamitchell`, lo describe explícitamente como un conjunto estructurado de apuntes con referencias de evaluación (MSR-VTT, ActivityNet Captions), hipótesis y preguntas abiertas, sin resultados experimentales completados ni checkpoint entrenado. El repositorio contiene únicamente dos ficheros de texto (`paper_notes.md` y `README.md`) y ocupa 0,0 GB.
+`gamitchell/survey-video-understanding` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre comprensión de vídeo publicado en Hugging Face bajo la etiqueta `research-notes`. El autor, `gamitchell`, lo describe explícitamente como un conjunto estructurado de apuntes con referencias de evaluación (MSR-VTT, ActivityNet Captions), hipótesis y preguntas abiertas, sin resultados experimentales completados ni checkpoint entrenado. El repositorio contiene únicamente dos ficheros de texto (`paper_notes.md` y `README.md`) y ocupa 0,0 GB.
 
 El dato técnico relevante es que el repositorio incluye un fichero de pesos en formato safetensors con 49.600 parámetros totales, lo que corresponde a un tensor de tamaño trivial (del orden de decenas de miles de valores) y no a un transformer funcional para inferencia. La model card no documenta arquitectura, tokenizador, datos de entrenamiento ni pipeline, y declara explícitamente que no se ha liberado código ni checkpoint. Cualquier uso como modelo de inferencia carece de sentido técnico.
 
@@ -42,7 +42,7 @@ No hay datos de entrenamiento: ni número de tokens, ni composición del dataset
 - Diseño de protocolo experimental: las secciones de hipótesis y comparación con baselines emparejados sirven como borrador para definir ablaciones antes de ejecutar experimentos reales.
 - Identificación de confounders: el documento enumera confounders probables de la pregunta de investigación, útil para revisar el diseño de un estudio propio antes de la fase de cómputo.
 - Checklist de reproducibilidad: las indicaciones del autor (versiones de dataset, comandos, semillas, hardware y logs crudos al añadir resultados) pueden adoptarse como plantilla de documentación en proyectos de investigación.
-- Auditoría de artefactos en HuggingFace: el repositorio ejemplifica un caso de pesos safetensors sin pipeline ni model card técnica, útil para formar criterios de filtrado en catálogos internos de modelos.
+- Auditoría de artefactos en Hugging Face: el repositorio ejemplifica un caso de pesos safetensors sin pipeline ni model card técnica, útil para formar criterios de filtrado en catálogos internos de modelos.
 - Docencia sobre evaluación en vídeo: los datasets citados (MSR-VTT, ActivityNet Captions) permiten ilustrar métricas de captioning y grounding sin necesidad de ejecutar inferencia.
 
 ## Benchmarks y rendimiento
@@ -82,7 +82,7 @@ No disponible. No existen modelos comparables en la misma categoría porque el a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gamitchell/survey-video-understanding
+- Repositorio en Hugging Face: https://huggingface.co/gamitchell/survey-video-understanding
 - Fichero principal de notas: `paper_notes.md` dentro del repositorio
 - Documentación: `README.md` dentro del repositorio
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código ni demos adicionales.

@@ -66,4 +66,4 @@ No disponible. No existe una categoría de modelos comparable porque este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amenon82/prompt-engineering-scratch44
+- Repositorio en Hugging Face: https://huggingface.co/amenon82/prompt-engineering-scratch44

@@ -50,7 +50,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 - Licencia MIT: permite uso comercial y modificacion, pero al ser un documento, su valor es informativo, no funcional.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/sofiapopov/paper_017985148_text_image_retrieval
+- Repositorio Hugging Face: https://huggingface.co/sofiapopov/paper_017985148_text_image_retrieval
 - Paper relacionado (Composed Image Retrieval survey): https://arxiv.org/abs/2502.18495
 - Paper sobre Llama Nemoretriever Colembed: https://arxiv.org/abs/2507.05513
 - Tema de GitHub sobre image-text-retrieval: https://github.com/topics/image-text-retrieval

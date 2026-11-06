@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AIX-model es un modelo publicado en HuggingFace por el usuario T2T-AI-X bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso; unicamente incluye el campo de licencia en el frontmatter YAML. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 30 de octubre de 2026 con apenas cinco minutos de diferencia entre ambos eventos.
+AIX-model es un modelo publicado en Hugging Face por el usuario T2T-AI-X bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso; unicamente incluye el campo de licencia en el frontmatter YAML. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 30 de octubre de 2026 con apenas cinco minutos de diferencia entre ambos eventos.
 
 La ausencia de metadatos (sin pipeline declarado, sin idiomas especificados, sin tags de arquitectura o formato) impide determinar con rigor que tipo de modelo es, que problema resuelve o en que categoria encaja. A efectos practicos, esta ficha documenta la existencia del repositorio y senala explicitamente que la informacion publica disponible es insuficiente para una evaluacion tecnica.
 
@@ -72,5 +72,5 @@ No disponible. La falta de datos sobre parametros, contexto, arquitectura y rend
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/T2T-AI-X/AIX-model
+- Repositorio en Hugging Face: https://huggingface.co/T2T-AI-X/AIX-model
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

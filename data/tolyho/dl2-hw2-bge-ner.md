@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tolyho/dl2-hw2-bge-ner` es un modelo de reconocimiento de entidades nombradas (NER) obtenido por fine-tuning de `BAAI/bge-small-en-v1.5`, un encoder transformer de tipo BERT de 33.215.625 parámetros, sobre el corpus `voorhs/conll2003-corrupted`. El resultado es un clasificador de tokens que asigna las nueve etiquetas BIO del esquema estándar de CoNLL-2003 y que se distribuye bajo licencia MIT, con pesos en safetensors y compatibilidad directa con el pipeline `token-classification` de HuggingFace Transformers.
+`tolyho/dl2-hw2-bge-ner` es un modelo de reconocimiento de entidades nombradas (NER) obtenido por fine-tuning de `BAAI/bge-small-en-v1.5`, un encoder transformer de tipo BERT de 33.215.625 parámetros, sobre el corpus `voorhs/conll2003-corrupted`. El resultado es un clasificador de tokens que asigna las nueve etiquetas BIO del esquema estándar de CoNLL-2003 y que se distribuye bajo licencia MIT, con pesos en safetensors y compatibilidad directa con el pipeline `token-classification` de Hugging Face Transformers.
 
 El modelo procede de un trabajo académico (homework 02 del curso DL2, HSE) y su interés es fundamentalmente metodológico: la model card documenta dos ejecuciones pareadas con la misma semilla, hiperparámetros y número de épocas, una con 10.000 filas de entrenamiento y otra con 10.010 filas tras añadir diez ejemplos etiquetados sintéticamente con `Qwen/Qwen2.5-7B-Instruct-AWQ`. La conclusión publicada es que la aumentación sintética mejoró el F1 de validación (0,916403 frente a 0,912082) pero no el F1 de test (0,864522 frente a 0,868703), lo que lo convierte en un caso reproducible de selección de checkpoint por validación sin filtrar información de test.
 
@@ -68,7 +68,7 @@ Conclusiones declaradas por el autor: la aumentación sintética con diez ejempl
 
 ## Requisitos de hardware
 
-- Pesos en FP32: aproximadamente 133 MB (33.215.625 parámetros × 4 bytes). En FP16: aproximadamente 66 MB. En INT8: aproximadamente 33 MB. El repositorio completo ocupa 0,1 GB, según el dato de HuggingFace.
+- Pesos en FP32: aproximadamente 133 MB (33.215.625 parámetros × 4 bytes). En FP16: aproximadamente 66 MB. En INT8: aproximadamente 33 MB. El repositorio completo ocupa 0,1 GB, según el dato de Hugging Face.
 - Inferencia en CPU perfectamente viable, incluidos portátiles y dispositivos de un solo núcleo o Raspberry Pi, dado el tamaño del modelo.
 - Cabe en cualquier GPU de consumo: RTX 3060, RTX 4090, GTX 1650 o incluso GPUs con 4 GB de VRAM, ya que el modelo completo en FP16 ocupa decenas de megabytes.
 - GPU recomendadas para producción de alto volumen: cualquier GPU con soporte de FP16 (T4, L4, A10, A100, H100) si se necesita procesar grandes lotes por segundo; el coste de cómputo es bajo en todos los casos.
@@ -82,10 +82,10 @@ Los datos de los modelos comparables no provienen de la model card analizada y n
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| `tolyho/dl2-hw2-bge-ner` | 33.215.625 | no disponible (base con 512 posiciones) | NER inglés, 9 etiquetas BIO de CoNLL-2003 | MIT | HuggingFace, 0 descargas, 0 likes | F1 test 0,868703 (baseline); F1 validación 0,916403 (sintético) |
-| `BAAI/bge-small-en-v1.5` (modelo base) | ~33M | 512 posiciones (no verificado) | Embeddings de texto (no NER) | MIT | HuggingFace, ampliamente utilizado | No comparable: no realiza NER |
-| `dslim/bert-base-NER` | ~108M (no verificado) | 512 (no verificado) | NER inglés, etiquetas PER/ORG/LOC/MISC | MIT (no verificado) | HuggingFace, muy descargado | No verificado |
-| `Jean-Baptiste/roberta-large-ner-english` | ~355M (no verificado) | 514 (no verificado) | NER inglés, etiquetas PER/ORG/LOC/MISC | no verificado | HuggingFace | No verificado |
+| `tolyho/dl2-hw2-bge-ner` | 33.215.625 | no disponible (base con 512 posiciones) | NER inglés, 9 etiquetas BIO de CoNLL-2003 | MIT | Hugging Face, 0 descargas, 0 likes | F1 test 0,868703 (baseline); F1 validación 0,916403 (sintético) |
+| `BAAI/bge-small-en-v1.5` (modelo base) | ~33M | 512 posiciones (no verificado) | Embeddings de texto (no NER) | MIT | Hugging Face, ampliamente utilizado | No comparable: no realiza NER |
+| `dslim/bert-base-NER` | ~108M (no verificado) | 512 (no verificado) | NER inglés, etiquetas PER/ORG/LOC/MISC | MIT (no verificado) | Hugging Face, muy descargado | No verificado |
+| `Jean-Baptiste/roberta-large-ner-english` | ~355M (no verificado) | 514 (no verificado) | NER inglés, etiquetas PER/ORG/LOC/MISC | no verificado | Hugging Face | No verificado |
 
 La comparación honesta es que `dl2-hw2-bge-ner` es entre tres y diez veces más pequeño que las alternativas habituales de NER en inglés, con un F1 de test de 0,8687 que deja margen frente a encoders de mayor tamaño. No se han publicado en la información disponible comparaciones directas de este modelo con esas alternativas sobre CoNLL-2003.
 
@@ -105,7 +105,7 @@ La comparación honesta es que `dl2-hw2-bge-ner` es entre tres y diez veces más
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tolyho/dl2-hw2-bge-ner
+- Modelo en Hugging Face: https://huggingface.co/tolyho/dl2-hw2-bge-ner
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Dataset de entrenamiento: https://huggingface.co/datasets/voorhs/conll2003-corrupted
 - Modelo usado para generar las etiquetas sintéticas: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-AWQ

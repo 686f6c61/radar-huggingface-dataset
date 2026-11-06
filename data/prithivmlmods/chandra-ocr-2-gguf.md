@@ -6,7 +6,7 @@ Chandra-ocr-2-GGUF es la distribución cuantizada en formato GGUF del modelo Cha
 
 El problema que resuelve es la conversión de documentos del mundo real —escaneos históricos, estados financieros, artículos de investigación, formularios multilingües con casillas— en datos estructurados (Markdown, HTML o JSON) preservando la información de maquetación: tablas con celdas combinadas, ecuaciones matemáticas, elementos de formulario y escritura manuscrita. Frente a la primera versión de Chandra, la model card reporta una mejora del 12 % en la puntuación multilingüe y avances notables en el parseo de expresiones matemáticas y en la reconstrucción de tablas complejas.
 
-Su relevancia actual radica en que permite desplegar un OCR de gama alta en hardware de consumo mediante llama.cpp, sin depender de APIs alojadas. La etiqueta `qwen3_5` del repositorio sitúa la arquitectura en la familia Qwen 3.5, adaptada aquí como modelo image-text-to-text con un proyector multimodal independiente. La licencia es OpenRAIL y los metadatos de HuggingFace declaran únicamente inglés, aunque la model card del modelo base afirma soporte para más de 90 idiomas.
+Su relevancia actual radica en que permite desplegar un OCR de gama alta en hardware de consumo mediante llama.cpp, sin depender de APIs alojadas. La etiqueta `qwen3_5` del repositorio sitúa la arquitectura en la familia Qwen 3.5, adaptada aquí como modelo image-text-to-text con un proyector multimodal independiente. La licencia es OpenRAIL y los metadatos de Hugging Face declaran únicamente inglés, aunque la model card del modelo base afirma soporte para más de 90 idiomas.
 
 ## Especificaciones técnicas
 
@@ -17,7 +17,7 @@ Su relevancia actual radica en que permite desplegar un OCR de gama alta en hard
 | Parámetros activos | No disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | No disponible de forma oficial. El ejemplo de inferencia de la model card emplea `-c 16384` (16 384 tokens) y `-n 8192` |
 | Tipos de cuantización | BF16, F16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_K_S, Q4_K_M, Q5_0, Q5_K_S, Q5_K_M, Q6_K, Q8_0; proyectores mmproj en bf16, f16 y q8_0 |
-| Idiomas soportados | Metadatos de HuggingFace: `en` (inglés). La model card del modelo base declara más de 90 idiomas |
+| Idiomas soportados | Metadatos de Hugging Face: `en` (inglés). La model card del modelo base declara más de 90 idiomas |
 | Licencia | OpenRAIL (`openrail`), con enlace a la licencia del modelo base |
 | Formato de pesos | GGUF (llama.cpp); el modelo base se distribuye en safetensors |
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible para 
 - Con `mmproj-q8_0.gguf` (367 MB) se recorta alrededor de 0,3 GB respecto a las cifras anteriores.
 - Cabe holgadamente en GPU de consumo: RTX 3060 de 12 GB, RTX 4060 Ti de 8-16 GB, RTX 4070/4080 y RTX 4090 en cualquier cuantización, incluida BF16. Las variantes Q4 y Q5 caben en tarjetas de 6-8 GB (GTX 1660 Super, RTX 3050, RTX 4060). Las variantes Q2_K y Q3 pueden ejecutarse en CPU con 4-6 GB de RAM.
 - GPU de datacenter (A100, H100, L40S) solo resultan necesarias para servir muchas peticiones concurrentes o para trabajar en BF16 con lotes grandes; para una sola petición el modelo es sobredimensionado para esas tarjetas.
-- Opciones de despliegue: llama.cpp mediante `llama-cli` (ejemplo oficial con `-ngl 99`, `--image`, `-st`, `--cache-type-k q8_0`, `-c 16384`, `-n 8192`, `--seed 42`), servidor `llama-server` de llama.cpp para exponer una API compatible con OpenAI, Ollama y otros frontends basados en GGUF. Para el modelo base en safetensors, la model card cita HuggingFace Transformers y vLLM.
+- Opciones de despliegue: llama.cpp mediante `llama-cli` (ejemplo oficial con `-ngl 99`, `--image`, `-st`, `--cache-type-k q8_0`, `-c 16384`, `-n 8192`, `--seed 42`), servidor `llama-server` de llama.cpp para exponer una API compatible con OpenAI, Ollama y otros frontends basados en GGUF. Para el modelo base en safetensors, la model card cita Hugging Face Transformers y vLLM.
 - Latencia y throughput: no disponible. El rendimiento dependerá del número de capas descargadas a GPU (`-ngl`), de la cuantización elegida y de si se cuantiza la caché KV, parámetros que el ejemplo oficial ajusta pero para los que no se publican cifras.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ No se dispone en la información proporcionada de datos de arquitectura, context
 
 ## Limitaciones y advertencias
 
-- Discrepancia idiomática relevante: los metadatos de HuggingFace declaran únicamente `en`, mientras que la model card del modelo base afirma soporte para más de 90 idiomas. En producción conviene validar empíricamente el idioma objetivo antes de asumir cobertura multilingüe.
+- Discrepancia idiomática relevante: los metadatos de Hugging Face declaran únicamente `en`, mientras que la model card del modelo base afirma soporte para más de 90 idiomas. En producción conviene validar empíricamente el idioma objetivo antes de asumir cobertura multilingüe.
 - Las cuantizaciones agresivas (Q2_K, Q3_K_S) degradan la calidad de reconocimiento; en OCR, los errores en tablas y ecuaciones son especialmente sensibles a la pérdida de precisión. El autor recomienda Q4_K_M, Q5_K_M, Q5_K_S y Q6_K.
 - Riesgo de alucinación inherente a los modelos generativos: el modelo puede inventar contenido en regiones ilegibles, degradadas o con ruido, o completar filas de tabla ausentes. No debe tratarse la salida como transcripción verificada sin controles posteriores en dominios críticos.
 - No se documentan sesgos conocidos, composición del dataset de entrenamiento ni procesos de filtrado, por lo que no es posible evaluar sesgos demográficos o culturales en la transcripción.

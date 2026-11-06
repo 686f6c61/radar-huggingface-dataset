@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen3-14b-code-agent (este) | 14B | ~31k | no disponible | HuggingFace (repo del autor) |
-| Qwen3-14B base | 14B | no disponible en esta ficha | no disponible | HuggingFace (Qwen) |
+| qwen3-14b-code-agent (este) | 14B | ~31k | no disponible | Hugging Face (repo del autor) |
+| Qwen3-14B base | 14B | no disponible en esta ficha | no disponible | Hugging Face (Qwen) |
 | Alternativas de codigo de ~14B | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/harshagowtham/qwen-agent-scripts
+- Repositorio Hugging Face: https://huggingface.co/harshagowtham/qwen-agent-scripts
 - Modelo base referenciado: `harshagowtham/qwen3-14b-code-agent` (no se proporciona URL directa en la informacion disponible)
 - Repositorio de parche: `harshagowtham/qwen3-14b-code-agent-wsurgery` (no se proporciona URL directa)
 - Adaptador LoRA MCP: `harshagowtham/qwen3-14b-code-agent-mcp-lora` (no se proporciona URL directa)

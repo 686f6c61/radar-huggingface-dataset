@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/hin-deva-100mb-ppt-Dp-10mb-packed-bfd_seed10` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/hin_deva_100mb`, un modelo monolingue de la familia Goldfish orientado al hindi escrito en devanagari. Lo publica el usuario de HuggingFace `francesca9805` y emplea la libreria TRL (version 0.23.0) sobre el stack de Transformers 4.56.2 y PyTorch 2.5.1. Por sus etiquetas y su tamano de repositorio (0.3 GB), se trata de un modelo pequeno, de arquitectura tipo GPT-2, con 124.770.816 parametros totales.
+El modelo `francesca9805/hin-deva-100mb-ppt-Dp-10mb-packed-bfd_seed10` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/hin_deva_100mb`, un modelo monolingue de la familia Goldfish orientado al hindi escrito en devanagari. Lo publica el usuario de Hugging Face `francesca9805` y emplea la libreria TRL (version 0.23.0) sobre el stack de Transformers 4.56.2 y PyTorch 2.5.1. Por sus etiquetas y su tamano de repositorio (0.3 GB), se trata de un modelo pequeno, de arquitectura tipo GPT-2, con 124.770.816 parametros totales.
 
 El problema que aborda es acotado: adaptar mediante SFT un modelo de lenguaje monolingue de bajos recursos a un formato de instrucciones o de continuacion de texto, presumiblemente ligado a experimentos con tokenizadores (el nombre del modelo incluye fragmentos como `ppt`, `Dp`, `packed` y `bfd_seed10`, y la propia ficha enlaza a un proyecto de Weights & Biases llamado `new-tokenizers`). No se documenta en la model card ni el dataset de entrenamiento, ni el numero de tokens, ni el idioma exacto de las instrucciones.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/hin-deva-100mb-ppt-Dp-10mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/hin-deva-100mb-ppt-Dp-10mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/hin_deva_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/5qsqocgk

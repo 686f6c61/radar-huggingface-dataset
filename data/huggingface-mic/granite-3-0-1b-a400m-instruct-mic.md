@@ -78,7 +78,7 @@ La comparativa solo tiene sentido frente al modelo base del que deriva; frente a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huggingface-mic/granite-3.0-1b-a400m-instruct-mic
+- Hugging Face: https://huggingface.co/huggingface-mic/granite-3.0-1b-a400m-instruct-mic
 - Modelo base: https://huggingface.co/ibm-granite/granite-3.0-1b-a400m-instruct
 - Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
 - Script de reduccion (`sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-whisper-tiny-samromur-50h es un ajuste fino del modelo Whisper-Tiny (39 M de parametros) sobre un subconjunto anidado de 50 horas del corpus islandes samromur-500h. Lo publica el usuario palli23 en HuggingFace y forma parte del conjunto de checkpoints de escalado del trabajo "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2026). Se trata, por tanto, de un modelo de investigacion orientado a medir como se comporta un modelo ASR pequeno cuando se le da mas datos de un idioma concreto, en lugar de un modelo de produccion pulido.
+whisper-tiny-samromur-50h es un ajuste fino del modelo Whisper-Tiny (39 M de parametros) sobre un subconjunto anidado de 50 horas del corpus islandes samromur-500h. Lo publica el usuario palli23 en Hugging Face y forma parte del conjunto de checkpoints de escalado del trabajo "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2026). Se trata, por tanto, de un modelo de investigacion orientado a medir como se comporta un modelo ASR pequeno cuando se le da mas datos de un idioma concreto, en lugar de un modelo de produccion pulido.
 
 El problema que aborda es el reconocimiento automatico del habla en islandes, un idioma con pocos recursos y con una comunidad de hablantes pequena, donde los corpus etiquetados son escasos. El modelo explora la hipotesis de que un Whisper-Tiny especializado con 50 horas de audio islandes puede acercarse a modelos multilingues mucho mayores en esa lengua concreta.
 
@@ -38,7 +38,7 @@ El entrenamiento consiste en un ajuste fino sobre un subconjunto anidado de 50 h
 - Reconocimiento de habla en audio de hasta 30 segundos por pasada; el audio mas largo requiere segmentacion previa.
 - Deteccion de idioma y tokens de tarea heredados del modelo base, aunque el ajuste fino se ha realizado exclusivamente sobre islandes.
 - Uso como bloque de investigacion en experimentos de escalado de datos: permite comparar el efecto de distintas cantidades de horas de entrenamiento sobre la misma arquitectura.
-- Integracion en pipelines de HuggingFace Transformers mediante la clase de modelo Whisper para ASR y en herramientas derivadas tras conversion de formato.
+- Integracion en pipelines de Hugging Face Transformers mediante la clase de modelo Whisper para ASR y en herramientas derivadas tras conversion de formato.
 - No se ha documentado soporte de tool calling, function calling, agentes, vision, audio generativo ni modos de razonamiento explicito; son capacidades propias de modelos de lenguaje, no de este modelo ASR.
 - El campo `pipeline` no esta declarado en la ficha del repositorio, aunque la tarea es ASR por la naturaleza del modelo y sus etiquetas.
 
@@ -63,17 +63,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria, incluidas GTX 1650, RTX 3050, RTX 4090, A100 o H100. En la practica, el modelo esta limitado por el ancho de banda y la latencia de entrada de audio, no por la VRAM.
 - Compatibilidad con GPU de consumo: si, cabe sobradamente en cualquier GPU de consumo actual e incluso en GPUs integradas.
 - CPU: la inferencia en CPU es viable en tiempo real o mejor en procesadores modernos, dado el reducido numero de parametros.
-- Opciones de despliegue: HuggingFace Transformers (clase de ASR de Whisper), conversion a CTranslate2 para su uso con faster-whisper, conversion a GGML/GGUF para whisper.cpp, exportacion a ONNX Runtime. El soporte de vLLM o TGI para este checkpoint no esta documentado en la informacion disponible.
+- Opciones de despliegue: Hugging Face Transformers (clase de ASR de Whisper), conversion a CTranslate2 para su uso con faster-whisper, conversion a GGML/GGUF para whisper.cpp, exportacion a ONNX Runtime. El soporte de vLLM o TGI para este checkpoint no esta documentado en la informacion disponible.
 - Latencia y throughput: no disponibles. Cualquier cifra concreta dependera del hardware, del backend y de la longitud del audio; al tratarse de un modelo tiny, se espera una relacion tiempo real (RTF) claramente inferior a 1 en GPU moderna, pero es una estimacion orientativa no verificada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| palli23/whisper-tiny-samromur-50h | 37,76 M | 30 s por pasada | Islandes (is) | cc-by-sa-4.0 | HuggingFace, 5 descargas |
-| openai/whisper-tiny | 39 M | 30 s por pasada | Multilingue (99 idiomas) | Apache 2.0 | HuggingFace, ampliamente usado |
-| openai/whisper-base | 74 M | 30 s por pasada | Multilingue (99 idiomas) | Apache 2.0 | HuggingFace, ampliamente usado |
-| openai/whisper-small | 244 M | 30 s por pasada | Multilingue (99 idiomas) | Apache 2.0 | HuggingFace, ampliamente usado |
+| palli23/whisper-tiny-samromur-50h | 37,76 M | 30 s por pasada | Islandes (is) | cc-by-sa-4.0 | Hugging Face, 5 descargas |
+| openai/whisper-tiny | 39 M | 30 s por pasada | Multilingue (99 idiomas) | Apache 2.0 | Hugging Face, ampliamente usado |
+| openai/whisper-base | 74 M | 30 s por pasada | Multilingue (99 idiomas) | Apache 2.0 | Hugging Face, ampliamente usado |
+| openai/whisper-small | 244 M | 30 s por pasada | Multilingue (99 idiomas) | Apache 2.0 | Hugging Face, ampliamente usado |
 
 No se dispone de cifras de WER comparativas entre estos modelos y el checkpoint objeto de la ficha, ya que los resultados del paper no se incluyen en la informacion proporcionada. La diferencia principal frente a los modelos originales de OpenAI es la especializacion en islandes y la licencia CC BY-SA 4.0, mas restrictiva que la Apache 2.0 del modelo base en lo relativo a la obligacion de compartir derivados bajo la misma licencia.
 
@@ -91,7 +91,7 @@ No se dispone de cifras de WER comparativas entre estos modelos y el checkpoint 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/palli23/whisper-tiny-samromur-50h
+- Modelo en Hugging Face: https://huggingface.co/palli23/whisper-tiny-samromur-50h
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de referencia citado en la model card: "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2026). Enlace directo no disponible en la informacion proporcionada.
 - Corpus samromur-500h, citado en la model card como "Miljón/samromur-500h": URL exacta no disponible en la informacion proporcionada.

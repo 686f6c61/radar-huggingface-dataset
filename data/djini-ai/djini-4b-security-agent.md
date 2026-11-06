@@ -80,7 +80,7 @@ La comparativa es limitada: no existen modelos abiertos ampliamente conocidos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/djini-ai/djini-4b-security-agent
+- Modelo en Hugging Face: https://huggingface.co/djini-ai/djini-4b-security-agent
 - Blog "Small Models, Deep Bugs": https://djini.ai/posts/small-models-deep-bugs/
 - Web de Djini.ai: https://www.djini.ai
 - Web de Mobile Hacking Lab: https://www.mobilehackinglab.com

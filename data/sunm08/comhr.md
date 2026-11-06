@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CoMHR es un modelo publicado en HuggingFace por el usuario Sunm08 bajo licencia MIT. La model card es extremadamente escueta: se limita a indicar un articulo en arXiv (2605.13854), un repositorio de codigo en GitHub y la disponibilidad de pesos preentrenados en un archivo `CoHMR_weights.zip` dentro del propio repositorio. No se especifica arquitectura, tamano, contexto, idiomas ni tarea concreta.
+CoMHR es un modelo publicado en Hugging Face por el usuario Sunm08 bajo licencia MIT. La model card es extremadamente escueta: se limita a indicar un articulo en arXiv (2605.13854), un repositorio de codigo en GitHub y la disponibilidad de pesos preentrenados en un archivo `CoHMR_weights.zip` dentro del propio repositorio. No se especifica arquitectura, tamano, contexto, idiomas ni tarea concreta.
 
 El nombre del modelo y del repositorio de codigo (`CoMHR` / `CoHMR`) sugiere, por la nomenclatura habitual en la literatura, algun tipo de modelo relacionado con reconocimiento humano (HMR, *human mesh recovery*) o con reconstruccion de malla corporal, aunque esta interpretacion no puede confirmarse con la informacion disponible. El tamano del repositorio (0,6 GB) es compatible con pesos de un modelo de vision de tamano moderado, pero no permite deducir la arquitectura ni el numero de parametros.
 
@@ -63,13 +63,13 @@ No disponible. Al no conocerse la tarea, la arquitectura ni el tamano del modelo
 - Documentacion practicamente inexistente: la model card no describe arquitectura, datos de entrenamiento ni capacidades.
 - Cero descargas y un unico "like" en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
 - No se declaran idiomas soportados, lo que impide evaluar su comportamiento multilingue.
-- No se declara pipeline en HuggingFace, por lo que no puede cargarse directamente con `transformers` sin conocer la clase y configuracion adecuadas.
+- No se declara pipeline en Hugging Face, por lo que no puede cargarse directamente con `transformers` sin conocer la clase y configuracion adecuadas.
 - Riesgo de alucinacion y sesgos: no evaluable sin informacion sobre el entrenamiento.
 - La licencia MIT permite uso comercial y modificacion, pero no exime de verificar posibles restricciones en los datos de entrenamiento o en dependencias del codigo asociado.
 - Antes de usar en produccion, es imprescindible revisar el paper (arXiv 2605.13854) y el repositorio de codigo para confirmar arquitectura, requisitos y limitaciones reales.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sunm08/CoMHR
+- Hugging Face: https://huggingface.co/Sunm08/CoMHR
 - Paper en arXiv: https://arxiv.org/abs/2605.13854
 - Repositorio de codigo: https://github.com/SunMH-try/CoMHR

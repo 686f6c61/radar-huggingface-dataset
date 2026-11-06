@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Modelo base | Contexto o ratio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Flux 3 Klein 360 Degree (DenRakEiw) | Dos LoRA + flujo ComfyUI para panorama equirectangular | Flux 3 Image Klein | Ratio 2:1 obligatorio; 2048x1024 y 4096x2048 documentados | flux-kommunity-license | Repositorio de HuggingFace, 0 descargas |
+| Flux 3 Klein 360 Degree (DenRakEiw) | Dos LoRA + flujo ComfyUI para panorama equirectangular | Flux 3 Image Klein | Ratio 2:1 obligatorio; 2048x1024 y 4096x2048 documentados | flux-kommunity-license | Repositorio de Hugging Face, 0 descargas |
 | Flux 3 Image Klein sin adaptadores | Modelo de difusion texto-a-imagen completo | No aplica | No disponible | flux-kommunity-license | Checkpoint publicado por Black Forest Labs |
 | 360 Degree Flux (Civitai, autor del mismo proyecto) | Version anterior del mismo concepto | No especificado en la informacion disponible | No disponible | No disponible | Civitai |
 
@@ -88,14 +88,14 @@ No se dispone de datos de rendimiento comparado entre estas opciones ni de otros
 - El ratio de aspecto debe mantenerse en 2:1; otras proporciones produciran una proyeccion equirectangular incorrecta.
 - Dependencia estricta del entorno: ComfyUI 0.41.2 o superior (versiones anteriores fallan con el mensaje "Could not detect model type"), VAE `flux2-vae.safetensors` y CLIPLoader de tipo `flux3`. Cualquier desviacion puede impedir que el flujo funcione.
 - La pasada opcional de DLSS requiere un nodo adicional; si no esta instalado, hay que eliminar ese tramo del grafo.
-- Licencia: el adaptador se distribuye bajo flux-kommunity-license, con condiciones definidas por Black Forest Labs. Es imprescindible revisar el texto completo antes de cualquier uso comercial, ya que la ficha no reproduce sus terminos y la etiqueta de HuggingFace figura como `license: other`.
+- Licencia: el adaptador se distribuye bajo flux-kommunity-license, con condiciones definidas por Black Forest Labs. Es imprescindible revisar el texto completo antes de cualquier uso comercial, ya que la ficha no reproduce sus terminos y la etiqueta de Hugging Face figura como `license: other`.
 - No se documentan idiomas soportados ni capacidades de prompt multilingue; los disparadores de la model card estan en ingles (`create a 360 hdr`, `seamfix`).
 - El autor no publica cifras de VRAM minima ni de latencia, por lo que el dimensionamiento de produccion requiere pruebas propias.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DenRakEiw/Flux_3_klein_360_Degree
-- Modelo base en HuggingFace: https://huggingface.co/black-forest-labs/flux-3-image-klein
+- Repositorio en Hugging Face: https://huggingface.co/DenRakEiw/Flux_3_klein_360_Degree
+- Modelo base en Hugging Face: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Texto de la licencia: https://huggingface.co/black-forest-labs/flux-3-image-klein/blob/main/LICENSE.md
 - Version anterior del proyecto en Civitai: https://civitai.com/models/682349/360-degree-flux
 - Flujo de trabajo incluido en el repositorio: `F3_Klein_360_VR.json`

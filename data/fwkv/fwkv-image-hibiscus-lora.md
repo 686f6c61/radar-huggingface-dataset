@@ -79,5 +79,5 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/FWKV/FWKV-Image-Hibiscus-LoRA
+- Repositorio del modelo en Hugging Face: https://huggingface.co/FWKV/FWKV-Image-Hibiscus-LoRA
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingEnvs/watercolour-reference-pool

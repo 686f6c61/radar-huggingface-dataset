@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Will-of-D/enzyme-classification-hybrid-v1` no es un modelo de lenguaje generativo, sino un clasificador de números EC (Enzyme Commission) para secuencias proteicas, publicado como solución a la tarea Leak CURBER Enzyme Classification. El repositorio (0,7 GB) contiene exclusivamente los artefactos necesarios para inferencia offline sobre CPU: un índice de búsqueda `sequence_index.npz` y los pesos de un clasificador neuronal exportados a NumPy. El autor es Will-of-D y el modelo no declara licencia, idiomas ni pipeline en la tarjeta de HuggingFace.
+`Will-of-D/enzyme-classification-hybrid-v1` no es un modelo de lenguaje generativo, sino un clasificador de números EC (Enzyme Commission) para secuencias proteicas, publicado como solución a la tarea Leak CURBER Enzyme Classification. El repositorio (0,7 GB) contiene exclusivamente los artefactos necesarios para inferencia offline sobre CPU: un índice de búsqueda `sequence_index.npz` y los pesos de un clasificador neuronal exportados a NumPy. El autor es Will-of-D y el modelo no declara licencia, idiomas ni pipeline en la tarjeta de Hugging Face.
 
 El sistema es híbrido. Por un lado, dos búsquedas TF-IDF independientes sobre 2-mers y 3-mers de aminoácidos recuperan 100 candidatos cada una; el conjunto se reordena con la similitud de secuencia normalizada de RapidFuzz y los cinco vecinos más próximos votan, repartiendo el peso de forma fraccionaria entre las etiquetas de vecinos con anotación múltiple. Por otro, un clasificador neuronal de tipo *embedding bag* sobre 3-mers actúa como respaldo cuando la similitud coseno del vecino más cercano cae por debajo de 0,14.
 
@@ -107,7 +107,7 @@ No se dispone de datos verificados para establecer una comparación cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Will-of-D/enzyme-classification-hybrid-v1
+- Modelo en Hugging Face: https://huggingface.co/Will-of-D/enzyme-classification-hybrid-v1
 - Dataset público: https://huggingface.co/datasets/starkAhmed43/leak-curber-enzyme-classification (revisión `4ff037c68457af5d69ecebdd73775d96d9aeb5bf`)
 - *Starter* y vocabulario EC: https://huggingface.co/datasets/starkAhmed43/leak-curber-enzyme-classification-starter (revisión `069c5c84015b37dff1a21415a7ab3f52fd8fce1b`)
 - Leaderboard de la tarea: https://huggingface.co/spaces/starkAhmed43/leak-curber-leaderboard

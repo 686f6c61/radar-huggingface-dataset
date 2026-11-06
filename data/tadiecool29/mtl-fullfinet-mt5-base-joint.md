@@ -111,7 +111,7 @@ No se dispone de datos comparativos con alternativas de la misma categoría (por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tadiecool29/MTL-FullFineT-mt5-base-joint
+- Modelo en Hugging Face: https://huggingface.co/tadiecool29/MTL-FullFineT-mt5-base-joint
 - Modelo base: https://huggingface.co/google/mt5-base
 - Variante relacionada (sentimiento): https://huggingface.co/tadiecool29/MTL-FullFT-mt5-base-sentiment
 - Variante relacionada (conjunta, nombre alternativo): https://huggingface.co/tadiecool29/MTL-FullFT-mt5-base-joint

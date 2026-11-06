@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smolvla_pick_place_marker_bowl es un policy de robotica basado en SmolVLA (paper arXiv:2506.01844), un modelo compacto de vision-lenguaje-accion (VLA) disenado para ejecutar tareas de manipulacion en hardware de consumo. Lo publica el usuario VivekSai07 en HuggingFace y consiste en un fine-tuning de lerobot/smolvla_base sobre un unico dataset de demostraciones teleoperadas. El modelo no genera texto: consume observaciones multimodales (estado articular e imagenes de camara) y produce directamente un vector de accion de 6 dimensiones para un robot tipo `so_follower` (familia SO-100/SO-101 de bajo coste).
+smolvla_pick_place_marker_bowl es un policy de robotica basado en SmolVLA (paper arXiv:2506.01844), un modelo compacto de vision-lenguaje-accion (VLA) disenado para ejecutar tareas de manipulacion en hardware de consumo. Lo publica el usuario VivekSai07 en Hugging Face y consiste en un fine-tuning de lerobot/smolvla_base sobre un unico dataset de demostraciones teleoperadas. El modelo no genera texto: consume observaciones multimodales (estado articular e imagenes de camara) y produce directamente un vector de accion de 6 dimensiones para un robot tipo `so_follower` (familia SO-100/SO-101 de bajo coste).
 
 El modelo resuelve una tarea concreta de manipulacion: "Pick up the marker and place it in the bowl" (coger el rotulador y dejarlo en el bol). Se entrena con 8017 fotogramas a 30 FPS repartidos en 10 episodios, mediante aprendizaje por imitacion con la libreria LeRobot 0.6.2. Su interes practico es acotado pero claro: sirve como ejemplo reproducible de extremo a extremo del flujo de trabajo de LeRobot (grabar datos, entrenar, desplegar) y como punto de partida para experimentos de VLA en robotica de bajo coste.
 
@@ -81,9 +81,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VivekSai07/smolvla_pick_place_marker_bowl | 450.046.176 | no disponible | sin evaluacion publicada | Apache 2.0 | HuggingFace, 0 descargas |
-| lerobot/smolvla_base | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace (modelo base del fine-tuning) |
-| Otros policies de LeRobot (ACT, pi0 y similares) | no disponible | no disponible | no disponible | no disponible | HuggingFace, via libreria LeRobot |
+| VivekSai07/smolvla_pick_place_marker_bowl | 450.046.176 | no disponible | sin evaluacion publicada | Apache 2.0 | Hugging Face, 0 descargas |
+| lerobot/smolvla_base | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face (modelo base del fine-tuning) |
+| Otros policies de LeRobot (ACT, pi0 y similares) | no disponible | no disponible | no disponible | no disponible | Hugging Face, via libreria LeRobot |
 
 No se dispone de datos comparativos de rendimiento entre este checkpoint y alternativas, porque no hay evaluacion publicada. La comparacion relevante es funcional: este modelo es un fine-tuning de una sola tarea con 10 episodios, mientras que lerobot/smolvla_base es el modelo preentrenado generalista del que parte.
 
@@ -101,7 +101,7 @@ No se dispone de datos comparativos de rendimiento entre este checkpoint y alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VivekSai07/smolvla_pick_place_marker_bowl
+- Modelo en Hugging Face: https://huggingface.co/VivekSai07/smolvla_pick_place_marker_bowl
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Rakeshdharan56/pick_place_marker_bowl
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Rakeshdharan56/pick_place_marker_bowl

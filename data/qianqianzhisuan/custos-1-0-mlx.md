@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Custos 1.0 (MLX) es un ajuste fino de dominio vertical en ciberseguridad sobre el modelo base Qwen3.5-9B, publicado por el usuario qianqianzhisuan en HuggingFace. El modelo está orientado a escenarios de operaciones de seguridad en entornos gubernamentales y empresariales, cubriendo tareas de análisis de amenazas, trazabilidad de ataques, análisis de vulnerabilidades, auditoría de cumplimiento y asistencia en respuesta a incidentes. La versión interna de entrenamiento se identifica como Custos-nesc-v1.2.5.
+Custos 1.0 (MLX) es un ajuste fino de dominio vertical en ciberseguridad sobre el modelo base Qwen3.5-9B, publicado por el usuario qianqianzhisuan en Hugging Face. El modelo está orientado a escenarios de operaciones de seguridad en entornos gubernamentales y empresariales, cubriendo tareas de análisis de amenazas, trazabilidad de ataques, análisis de vulnerabilidades, auditoría de cumplimiento y asistencia en respuesta a incidentes. La versión interna de entrenamiento se identifica como Custos-nesc-v1.2.5.
 
-Este repositorio concreto contiene los pesos en formato MLX de 16 bits, pensados para su carga con la librería `mlx_lm` en equipos macOS con Apple Silicon. Para despliegues con vLLM o Transformers en BF16, el autor remite a repositorios separados en HuggingFace y ModelScope. La licencia es Apache-2.0, heredada del modelo base.
+Este repositorio concreto contiene los pesos en formato MLX de 16 bits, pensados para su carga con la librería `mlx_lm` en equipos macOS con Apple Silicon. Para despliegues con vLLM o Transformers en BF16, el autor remite a repositorios separados en Hugging Face y ModelScope. La licencia es Apache-2.0, heredada del modelo base.
 
 El modelo se publica sin métricas de benchmarks, sin detalle sobre el dataset de ajuste fino y sin documentación sobre el proceso de entrenamiento (número de tokens, composición de datos, uso de RLHF/DPO). Su relevancia radica en ser un ejemplo de especialización vertical de un modelo de 9B parámetros para ciberseguridad, con soporte nativo para el stack de Apple Silicon.
 
@@ -88,7 +88,7 @@ No se dispone de información sobre modelos comparables de ciberseguridad del mi
 
 ## Enlaces
 
-- HuggingFace (MLX): https://huggingface.co/qianqianzhisuan/custos-1.0-mlx
-- HuggingFace (BF16, vLLM/Transformers): https://huggingface.co/qianqianzhisuan/custos-1.0
+- Hugging Face (MLX): https://huggingface.co/qianqianzhisuan/custos-1.0-mlx
+- Hugging Face (BF16, vLLM/Transformers): https://huggingface.co/qianqianzhisuan/custos-1.0
 - ModelScope: https://modelscope.cn/models/qianqianzhisuan123/custos-1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

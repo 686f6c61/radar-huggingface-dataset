@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| North-Micro-Vision, think symbolic image | 2,5B base + 34,9M adaptador | No disponible | Captioning estructurado con cadena simbólica | Apache 2.0 | HuggingFace (PEFT) |
-| CohereLabs/North-Micro-Vision-Instruct | 2,5B | No disponible | Vision-language instructivo general | No disponible en la información | HuggingFace |
+| North-Micro-Vision, think symbolic image | 2,5B base + 34,9M adaptador | No disponible | Captioning estructurado con cadena simbólica | Apache 2.0 | Hugging Face (PEFT) |
+| CohereLabs/North-Micro-Vision-Instruct | 2,5B | No disponible | Vision-language instructivo general | No disponible en la información | Hugging Face |
 | Línea Lucia v1 (Qwen3.5) | No disponible | No disponible | Misma receta de captioning simbólico | No disponible | Familia del mismo autor |
 | Línea Lucia v1 (Gemma 4) | No disponible | No disponible | Misma receta de captioning simbólico | No disponible | Familia del mismo autor |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas; la c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbstractPhil/north-micro-vision-think-symbolic-image
+- Modelo en Hugging Face: https://huggingface.co/AbstractPhil/north-micro-vision-think-symbolic-image
 - Modelo base: https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct
 - Dataset de captions simbólicas: https://huggingface.co/datasets/AbstractPhil/thought-symbolic-image-captions
 - Dataset de imágenes de razonamiento: https://huggingface.co/datasets/AbstractPhil/qwen-thinking-images

@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos verificables con otros modelos de la misma categoría (por ejemplo, CodeLlama 34B, DeepSeek-Coder 33B o Qwen2.5-Coder 32B). La información proporcionada no incluye resultados de benchmarks que permitan una comparación objetiva. Se recomienda consultar el modelo base en HuggingFace para posibles evaluaciones adicionales.
+No se dispone de datos comparativos verificables con otros modelos de la misma categoría (por ejemplo, CodeLlama 34B, DeepSeek-Coder 33B o Qwen2.5-Coder 32B). La información proporcionada no incluye resultados de benchmarks que permitan una comparación objetiva. Se recomienda consultar el modelo base en Hugging Face para posibles evaluaciones adicionales.
 
 ## Limitaciones y advertencias
 
@@ -69,7 +69,7 @@ No se dispone de datos comparativos verificables con otros modelos de la misma c
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Sharona_Q27B-R_CodeSecurity_v2-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Sharona_Q27B-R_CodeSecurity_v2-GGUF
 - Modelo base (safetensors): https://huggingface.co/ApolloRaines/Sharona_Q27B-R_CodeSecurity_v2
 - Publicación en LinkedIn sobre el proceso jBlaze: https://www.linkedin.com/posts/apollo-raines_apollorainessharonaq27b-rcodesecurity-activity-7498101564620996609-Sx7t
 - Publicación en LinkedIn sobre el rendimiento: https://www.linkedin.com/posts/apollo-raines_apollorainessharonaq27b-rcodesecurity-activity-7498031501402329088-02ym

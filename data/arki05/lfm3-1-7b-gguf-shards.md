@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Arki05/LFM3-1.7B-GGUF-shards
+- Repositorio en Hugging Face: https://huggingface.co/Arki05/LFM3-1.7B-GGUF-shards
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - GGUF BF16 de origen: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF
 - Herramienta qalloc: https://arki05.com/projects/qalloc/

@@ -87,9 +87,9 @@ La model card publica exclusivamente las metricas de evaluacion TOFU. No se han 
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget01_NPO | 8,03 B | No indicado (base Llama 3.1 8B: 128k) | Desaprendido con NPO sobre TOFU `forget01` | llama3.1 | HuggingFace, safetensors |
-| open-unlearning/tofu_Llama-3.1-8B-Instruct_full | 8,03 B (heredado) | No disponible | Modelo base antes del desaprendizaje | llama3.1 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128 000 tokens | Modelo instructivo original | llama3.1 | HuggingFace |
+| JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget01_NPO | 8,03 B | No indicado (base Llama 3.1 8B: 128k) | Desaprendido con NPO sobre TOFU `forget01` | llama3.1 | Hugging Face, safetensors |
+| open-unlearning/tofu_Llama-3.1-8B-Instruct_full | 8,03 B (heredado) | No disponible | Modelo base antes del desaprendizaje | llama3.1 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128 000 tokens | Modelo instructivo original | llama3.1 | Hugging Face |
 
 No se dispone de datos publicados en la informacion proporcionada para comparar el rendimiento frente a otros baselines de desaprendizaje de la misma categoria (por ejemplo, variantes con gradient ascent o RMU sobre TOFU `forget01`). Los resultados de benchmarks genericos de estos modelos comparables no se incluyen en la informacion disponible.
 
@@ -107,7 +107,7 @@ No se dispone de datos publicados en la informacion proporcionada para comparar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget01_NPO
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget01_NPO
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.1-8B-Instruct_full
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU

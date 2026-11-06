@@ -97,8 +97,8 @@ No es posible establecer una comparativa rigurosa: este artefacto no es un model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-optpilot-n1d7-safecombined-b1ga1-s12-20260905-8dd1c186
-- Perfil del autor en HuggingFace: https://huggingface.co/morealcholplz
+- Modelo en Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-optpilot-n1d7-safecombined-b1ga1-s12-20260905-8dd1c186
+- Perfil del autor en Hugging Face: https://huggingface.co/morealcholplz
 - Dataset del mismo autor, potencialmente relacionado con el contexto de robótica segura: https://huggingface.co/datasets/morealcholplz/vlsa-dual-safety-eval
 - Referencia arXiv citada en la ficha del dataset anterior: arxiv:2512.11891 (no verificada en esta busqueda)
 - Repositorio pi/openpi: no disponible en la informacion proporcionada

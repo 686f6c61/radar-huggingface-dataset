@@ -81,6 +81,6 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ysdede/omnilingual-asr-ctc-300m-onnx
+- Repositorio Hugging Face: https://huggingface.co/ysdede/omnilingual-asr-ctc-300m-onnx
 - Export original de OpenVoiceOS: https://huggingface.co/OpenVoiceOS/omnilingual-asr-ctc-300m-onnx/tree/bc55e1de19af8a907b0a010d06fc4637a2d5bf0c
 - Modelo fuente de Meta: https://huggingface.co/facebook/omniASR-CTC-300M

@@ -86,7 +86,7 @@ Nota: los datos de EAGLE-3 y Medusa son aproximados y provienen de la literatura
 
 ## Enlaces
 
-- [Repositorio HuggingFace de la cuantización GGUF](https://huggingface.co/Anbeeld/Qwen3-4B-DFlash-b16-GGUF)
+- [Repositorio Hugging Face de la cuantización GGUF](https://huggingface.co/Anbeeld/Qwen3-4B-DFlash-b16-GGUF)
 - [Modelo original z-lab/Qwen3-4B-DFlash-b16](https://huggingface.co/z-lab/Qwen3-4B-DFlash-b16)
 - [Artículo arXiv 2602.06036](https://arxiv.org/abs/2602.06036)
 - [Repositorio GitHub de DFlash](https://github.com/z-lab/dflash)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-Coder-Next es un modelo de lenguaje de 80.000 millones de parametros en arquitectura MoE con solo 3.000 millones activos, desarrollado por el equipo Qwen (Alibaba) especificamente para agentes de codigo y desarrollo local. Esta ficha cubre la variante cuantizada a 4 bits (TQ-4bit) publicada por el usuario textclf en HuggingFace, que reduce el peso del modelo a aproximadamente 41,7 GB manteniendo la licencia Apache 2.0.
+Qwen3-Coder-Next es un modelo de lenguaje de 80.000 millones de parametros en arquitectura MoE con solo 3.000 millones activos, desarrollado por el equipo Qwen (Alibaba) especificamente para agentes de codigo y desarrollo local. Esta ficha cubre la variante cuantizada a 4 bits (TQ-4bit) publicada por el usuario textclf en Hugging Face, que reduce el peso del modelo a aproximadamente 41,7 GB manteniendo la licencia Apache 2.0.
 
 El modelo combina una arquitectura hibrida con capas Gated DeltaNet y Gated Attention distribuidas en 48 capas, 512 expertos (10 activos mas 1 compartido) y una ventana de contexto nativa de 262.144 tokens. Su diseno permite un rendimiento comparable a modelos con 10-20 veces mas parametros activos, lo que lo hace especialmente eficiente para despliegue de agentes de codigo en entornos de produccion.
 
@@ -76,14 +76,14 @@ Qwen3-Coder-Next se situa como la opcion intermedia de la familia Qwen3-Coder: o
 - La ventana de contexto de 256K tokens puede provocar errores de memoria (OOM) en hardware limitado; se recomienda reducirla a 32.768 tokens en esos casos.
 - Los idiomas soportados no estan especificados en la informacion disponible, por lo que el rendimiento en idiomas distintos del ingles o el chino no esta garantizado.
 - La cuantizacion TQ-4bit puede introducir degradacion de precision en tareas de razonamiento numerico o generacion de codigo muy especifico, aunque no se dispone de datos cuantitativos al respecto.
-- El repositorio de HuggingFace muestra 0 descargas y 0 likes, lo que indica que es una publicacion reciente sin validacion comunitaria.
+- El repositorio de Hugging Face muestra 0 descargas y 0 likes, lo que indica que es una publicacion reciente sin validacion comunitaria.
 - Los metadatos de safetensors indican 752.270.080 parametros, lo que no coincide con los 80B declarados en la model card; es posible que el archivo de pesos este fragmentado en shards o que exista un error en los metadatos.
 - La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los terminos adicionales del modelo original de Qwen en su repositorio oficial.
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/textclf/Qwen3-Coder-Next-TQ-4bit
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3-Coder-Next
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/textclf/Qwen3-Coder-Next-TQ-4bit
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3-Coder-Next
 - Repositorio GitHub de Qwen3-Coder: https://github.com/QwenLM/Qwen3-Coder
 - Blog oficial de Qwen sobre Qwen3-Coder-Next: https://qwen.ai/blog?id=qwen3-coder-next
 - Documentacion de Qwen: https://qwen.readthedocs.io/en/latest/

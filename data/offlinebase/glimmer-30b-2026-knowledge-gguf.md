@@ -94,7 +94,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 - Los resultados se midieron con decodificacion greedy, mientras que Meta recomienda muestreo al servir el modelo; los numeros deben interpretarse como comparaciones entre modelos, no como el rendimiento esperado en un chat servido.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/OfflineBase/Glimmer-30B-2026-Knowledge-GGUF
+- Repositorio Hugging Face: https://huggingface.co/OfflineBase/Glimmer-30B-2026-Knowledge-GGUF
 - Pesos BF16 fusionados: https://huggingface.co/OfflineBase/Glimmer-30B-2026-Knowledge
 - Adaptador LoRA: https://huggingface.co/OfflineBase/Glimmer-30B-2026-Knowledge-LoRA
 - Licencia Muse Model License: https://huggingface.co/OfflineBase/Glimmer-30B-2026-Knowledge-GGUF/blob/main/MUSE_MODEL_LICENSE.md

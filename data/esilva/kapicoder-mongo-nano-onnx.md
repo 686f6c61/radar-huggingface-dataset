@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/esilva/KapiCoder-Mongo-Nano-ONNX
+- Repositorio Hugging Face: https://huggingface.co/esilva/KapiCoder-Mongo-Nano-ONNX
 - Modelo base (safetensors): https://huggingface.co/esilva/KapiCoder-Mongo-Nano
 - Modelo original Qwen2.5-Coder: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B
 - Paper Qwen2.5-Coder: https://arxiv.org/abs/2409.12186

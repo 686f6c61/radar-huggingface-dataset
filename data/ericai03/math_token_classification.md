@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`EricAI03/math_token_classification` es un modelo publicado en HuggingFace por el usuario EricAI03 bajo licencia Apache 2.0. Por el identificador y la ausencia de pipeline declarado, todo apunta a un modelo de clasificación de tokens orientado a contenido matemático, probablemente un ajuste fino de un encoder tipo BERT o similar para etiquetar tokens en expresiones matemáticas. No obstante, la model card pública está prácticamente vacía: solo contiene la declaración de licencia, sin descripción, sin arquitectura, sin datos de entrenamiento ni ejemplos de uso.
+`EricAI03/math_token_classification` es un modelo publicado en Hugging Face por el usuario EricAI03 bajo licencia Apache 2.0. Por el identificador y la ausencia de pipeline declarado, todo apunta a un modelo de clasificación de tokens orientado a contenido matemático, probablemente un ajuste fino de un encoder tipo BERT o similar para etiquetar tokens en expresiones matemáticas. No obstante, la model card pública está prácticamente vacía: solo contiene la declaración de licencia, sin descripción, sin arquitectura, sin datos de entrenamiento ni ejemplos de uso.
 
-El modelo no cuenta con descargas ni likes en el momento de la consulta, y se creó y actualizó en la misma fecha (2026-11-04), lo que sugiere una publicación reciente y sin validación comunitaria. No se declaran idiomas soportados ni pipeline de HuggingFace, lo que limita la integración automática con las librerías estándar.
+El modelo no cuenta con descargas ni likes en el momento de la consulta, y se creó y actualizó en la misma fecha (2026-11-04), lo que sugiere una publicación reciente y sin validación comunitaria. No se declaran idiomas soportados ni pipeline de Hugging Face, lo que limita la integración automática con las librerías estándar.
 
 Dada la escasez de información verificable, esta ficha se limita a documentar lo que consta en los metadatos y a señalar explícitamente los datos no disponibles. Cualquier evaluación de rendimiento, capacidades o idoneidad para producción requeriría inspeccionar los pesos y la configuración del repositorio directamente.
 
@@ -77,5 +77,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EricAI03/math_token_classification
+- Hugging Face: https://huggingface.co/EricAI03/math_token_classification
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información disponible.

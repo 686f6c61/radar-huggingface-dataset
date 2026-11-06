@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Precision / formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NVIDIA-Nemotron-Labs-Dory1.0-4B-mlx-4bit (este) | ~3,98 B | 4-bit MLX, safetensors, 2,3 GB | no disponible | `other` (OpenMDW-1.1 segun model card) | HuggingFace, 0 descargas |
-| nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16 (base) | ~3,98 B | BF16, safetensors | no disponible | OpenMDW-1.1 | HuggingFace, oficial de NVIDIA |
+| NVIDIA-Nemotron-Labs-Dory1.0-4B-mlx-4bit (este) | ~3,98 B | 4-bit MLX, safetensors, 2,3 GB | no disponible | `other` (OpenMDW-1.1 segun model card) | Hugging Face, 0 descargas |
+| nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16 (base) | ~3,98 B | BF16, safetensors | no disponible | OpenMDW-1.1 | Hugging Face, oficial de NVIDIA |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria en el material proporcionado, por lo que no se puede establecer una comparativa de rendimiento con alternativas de terceros. La unica comparacion documentable es frente al checkpoint BF16 original: misma arquitectura y parametros, distinta precision, con la advertencia del autor de que las salidas del 4-bit se desvian del BF16.
 
@@ -83,7 +83,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/snsnc/NVIDIA-Nemotron-Labs-Dory1.0-4B-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/snsnc/NVIDIA-Nemotron-Labs-Dory1.0-4B-mlx-4bit
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16
 - Libreria MLX LM: https://github.com/ml-explore/mlx-lm
 - Empaquetado MLX de referencia: https://github.com/internet-projects/dory-mlx

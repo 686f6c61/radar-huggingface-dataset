@@ -18,7 +18,7 @@ La relevancia práctica es doble: por un lado, mejora de forma notable la precis
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | GGUF: F16 y Q2_K a Q8_0 (11 cuantizaciones en total, incluida Q4_K_M); NVFP4-FP8 en repositorio aparte (29 GB); pesos bf16 sin cuantizar |
 | Idiomas soportados | No disponible (la model card no declara lista de idiomas; el backbone es Qwen, pero no se aporta confirmación) |
-| Licencia | Apache-2.0 según el frontmatter de la model card; los metadatos de HuggingFace no declaran licencia |
+| Licencia | Apache-2.0 según el frontmatter de la model card; los metadatos de Hugging Face no declaran licencia |
 | Formato de pesos | safetensors bf16 (19 shards, 52 GB), GGUF y NVFP4-FP8 |
 | Tamaño del repositorio | 235,1 GB |
 | Cabeza de decisión | 24 slots, con `decision_head.json`, `calibration.json` y `serve_decide.py` |
@@ -107,13 +107,13 @@ La comparación es interna a la familia: las tres variantes comparten backbone y
 - Riesgo de alucinación: no evaluado en la información disponible, y el modelo conserva el comportamiento generativo del backbone Qwen. La salida `noul` mitiga el problema solo en el subconjunto de tareas donde se aplica.
 - Idiomas: no se declara lista de idiomas soportados. El backbone Qwen es multilingüe por diseño, pero no hay evaluación publicada para este fine-tune.
 - Longitud de contexto: no documentada. No debe asumirse la ventana del modelo base sin verificarla empíricamente.
-- Licencia: la model card declara Apache-2.0, pero los metadatos de HuggingFace no la exponen y el modelo deriva de un backbone abliterado de terceros y de un corpus destilado de un profesor propietario (Jev 1.13, de TypeSafe AI, no redistribuido). Verificar la cadena de licencias antes de uso comercial.
+- Licencia: la model card declara Apache-2.0, pero los metadatos de Hugging Face no la exponen y el modelo deriva de un backbone abliterado de terceros y de un corpus destilado de un profesor propietario (Jev 1.13, de TypeSafe AI, no redistribuido). Verificar la cadena de licencias antes de uso comercial.
 - Sin validación externa: 0 descargas y 0 likes en el momento del análisis, sin benchmarks estándar ni evaluaciones independientes. Además, el autor declara explícitamente no estar afiliado ni respaldado por TypeSafe AI.
 - El repositorio completo pesa 235,1 GB, lo que complica el almacenamiento y la distribución si se quieren todas las cuantizaciones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-V3-GGUF
+- Modelo en Hugging Face: https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-V3-GGUF
 - Versión V2: https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-GGUF
 - Cuantización NVFP4-FP8: https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-V3-NVFP4-FP8
 - Referencia r32-alone (JEV-27B-Uncensored): https://huggingface.co/SargeDev/JEV-27B-Uncensored-GGUF

@@ -6,7 +6,7 @@ KeelCore-750M-Concise es un adaptador LoRA de rango 16 desarrollado por KeelCore
 
 El adaptador contiene 18,29 millones de parámetros entrenables (2,43% del base) y ocupa 73 MB, por lo que requiere el modelo base congelado para funcionar. La arquitectura encoder-decoder del base permite leer el texto completo antes de generar, lo que facilita la copia literal de entidades como URLs o números de teléfono. Según la model card, en el conjunto de validación las salidas son un 20% más cortas de media y el 97% resultan más breves que la entrada.
 
-Es relevante para escenarios de despliegue en local o en navegador (soporta ONNX Runtime Web) donde el texto no debe salir del dispositivo del usuario, y como caso de estudio de adaptadores pequeños sobre un modelo base compartido. El modelo se publicó a finales de octubre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni interacciones en HuggingFace.
+Es relevante para escenarios de despliegue en local o en navegador (soporta ONNX Runtime Web) donde el texto no debe salir del dispositivo del usuario, y como caso de estudio de adaptadores pequeños sobre un modelo base compartido. El modelo se publicó a finales de octubre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni interacciones en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -80,7 +80,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KeelCore/KeelCore-750M-Concise
+- Modelo en Hugging Face: https://huggingface.co/KeelCore/KeelCore-750M-Concise
 - Modelo base: https://huggingface.co/KeelCore/KeelCore-750M
 - Informe técnico: https://saravanan-a-r.github.io/KeelCore/
 - Repositorio GitHub: https://github.com/saravanan-a-r/KeelCore

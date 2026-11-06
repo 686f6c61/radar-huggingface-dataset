@@ -110,7 +110,7 @@ La única comparación con datos es la que publica el propio autor frente a Tern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tchbcb/samai-8b-M8
+- Modelo en Hugging Face: https://huggingface.co/tchbcb/samai-8b-M8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Ficheros de evidencia citados en la model card (dentro del repositorio del modelo): `m8_final_report.json`, `m8_knight15_report.json`, `m8_baseline_report.json`, `pk_summary.json`, `m8_pk_eval.jsonl`
 - No se han encontrado enlaces adicionales relevantes (paper, blog o repositorio independiente) en la búsqueda web realizada; los resultados devueltos no guardan relación con el modelo.

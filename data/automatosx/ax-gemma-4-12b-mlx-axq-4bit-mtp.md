@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AX-gemma-4-12b-MLX-AXQ-4bit-MTP es una cuantización de 4 bits del modelo instructivo de Google Gemma 4 12B, desarrollada por AutomatosX y publicada en HuggingFace. Utiliza el formato MLX, lo que la hace específica para Apple Silicon, y aplica la técnica AXQ (AXQuant) de precisión mixta para reducir el tamaño del modelo manteniendo una alta fidelidad con respecto al original. El repositorio incluye además un drafter MTP (Multi-Token Prediction) que permite acelerar la decodificación especulativa en entornos que lo soporten.
+AX-gemma-4-12b-MLX-AXQ-4bit-MTP es una cuantización de 4 bits del modelo instructivo de Google Gemma 4 12B, desarrollada por AutomatosX y publicada en Hugging Face. Utiliza el formato MLX, lo que la hace específica para Apple Silicon, y aplica la técnica AXQ (AXQuant) de precisión mixta para reducir el tamaño del modelo manteniendo una alta fidelidad con respecto al original. El repositorio incluye además un drafter MTP (Multi-Token Prediction) que permite acelerar la decodificación especulativa en entornos que lo soporten.
 
 El modelo está diseñado para ejecutarse en Macs con chips M-series, ofreciendo una alternativa eficiente en memoria y velocidad para tareas de generación de texto, razonamiento y código. La cuantización AXQ consigue un tamaño de aproximadamente 14.9 GB, con una retención de calidad general de 1.0000 y de 1.0325 en tareas de coding, según la certificación Tier 1 del autor. Aunque el paquete declara la presencia de componentes de visión, esta modalidad no está certificada y su funcionamiento no está garantizado.
 
@@ -85,6 +85,6 @@ No se dispone de datos comparativos con otros modelos cuantizados de la misma ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AutomatosX/AX-gemma-4-12b-MLX-AXQ-4bit-MTP
+- Repositorio Hugging Face: https://huggingface.co/AutomatosX/AX-gemma-4-12b-MLX-AXQ-4bit-MTP
 - Certificado Tier 1 (GitHub): https://github.com/defai-digital/axquant/blob/main/docs/certifications/gemma4-12b-axq4-tier1.md
 - Modelo base: https://huggingface.co/google/gemma-4-12b-it

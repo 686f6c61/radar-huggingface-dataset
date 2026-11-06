@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yoomyungjong/sd-class-butterflies-32` es un modelo de difusion pequeno para generacion incondicional de imagenes, publicado por el usuario de HuggingFace yoomyungjong. Se trata del artefacto resultante de completar la Unidad 1 del curso Diffusion Models Class de HuggingFace, cuyo objetivo es entrenar desde cero un DDPM sobre un dataset de imagenes de mariposas a resolucion reducida. El modelo no recibe texto ni ninguna otra condicion de entrada: genera una imagen muestreando ruido gaussiano y aplicandole el proceso inverso de difusion.
+`yoomyungjong/sd-class-butterflies-32` es un modelo de difusion pequeno para generacion incondicional de imagenes, publicado por el usuario de Hugging Face yoomyungjong. Se trata del artefacto resultante de completar la Unidad 1 del curso Diffusion Models Class de Hugging Face, cuyo objetivo es entrenar desde cero un DDPM sobre un dataset de imagenes de mariposas a resolucion reducida. El modelo no recibe texto ni ninguna otra condicion de entrada: genera una imagen muestreando ruido gaussiano y aplicandole el proceso inverso de difusion.
 
 Tecnicamente es una red UNet de aproximadamente 18,5 millones de parametros (18.536.323, segun el fichero safetensors del repositorio), con un peso total de unos 0,2 GB incluyendo el resto de artefactos del repo. Se distribuye en formato diffusers, integrado en la clase `DDPMPipeline`, y su licencia es MIT, lo que permite uso comercial sin restricciones adicionales.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Resolucion | Condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yoomyungjong/sd-class-butterflies-32 | 18.536.323 | 32x32 | Incondicional | MIT | HuggingFace (30 descargas, 1 like) |
-| google/ddpm-cifar10-32 | No disponible en la informacion proporcionada | 32x32 | Incondicional | No disponible en la informacion proporcionada | HuggingFace (referencia ampliamente usada) |
-| google/ddpm-celebahq-256 | No disponible en la informacion proporcionada | 256x256 | Incondicional | No disponible en la informacion proporcionada | HuggingFace |
-| Otras variantes del curso Diffusion Models Class (por ejemplo, `sd-class-butterflies-64`) | No disponible en la informacion proporcionada | 64x64 | Incondicional | No disponible en la informacion proporcionada | HuggingFace |
+| yoomyungjong/sd-class-butterflies-32 | 18.536.323 | 32x32 | Incondicional | MIT | Hugging Face (30 descargas, 1 like) |
+| google/ddpm-cifar10-32 | No disponible en la informacion proporcionada | 32x32 | Incondicional | No disponible en la informacion proporcionada | Hugging Face (referencia ampliamente usada) |
+| google/ddpm-celebahq-256 | No disponible en la informacion proporcionada | 256x256 | Incondicional | No disponible en la informacion proporcionada | Hugging Face |
+| Otras variantes del curso Diffusion Models Class (por ejemplo, `sd-class-butterflies-64`) | No disponible en la informacion proporcionada | 64x64 | Incondicional | No disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada, por lo que la comparacion se limita a aspectos estructurales y de licencia. La principal diferencia practica frente a los DDPM de Google es el dominio de entrenamiento (mariposas a 32x32 frente a CIFAR-10 o caras a 256x256) y, probablemente, un presupuesto de entrenamiento mucho menor.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yoomyungjong/sd-class-butterflies-32
+- Modelo en Hugging Face: https://huggingface.co/yoomyungjong/sd-class-butterflies-32
 - Repositorio del curso Diffusion Models Class: https://github.com/huggingface/diffusion-models-class
 - Documentacion del pipeline DDPMPipeline en diffusers: https://huggingface.co/docs/diffusers/api/pipelines/ddpm
 - Articulo original de DDPM: https://arxiv.org/abs/2006.11239

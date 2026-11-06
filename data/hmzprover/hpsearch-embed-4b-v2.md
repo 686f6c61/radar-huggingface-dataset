@@ -6,7 +6,7 @@ hpsearch-embed-4b-v2 es un modelo de embeddings de texto especializado en recupe
 
 El problema que resuelve es concreto: dado un fragmento de Lean, una descripción en lenguaje natural, una notación LaTeX, un eslogan o un caso especial, devolver la declaración de Mathlib que el usuario necesita. Para ello se entrenó con consultas en seis estilos distintos generadas automáticamente sobre 201.000 declaraciones del corpus LeanSearch v2 de Mathlib (versión 4.28.0-rc1), incluyendo definiciones, estructuras, clases, instancias, abbrevs y 120.000 teoremas.
 
-Su relevancia actual radica en que cubre un nicho poco atendido: los embeddings generalistas rinden mal cuando la consulta mezcla sintaxis Lean, notación matemática y prosa técnica. Este modelo se distribuye con licencia Apache 2.0, en formato safetensors, y es compatible con Text Embeddings Inference y con los endpoints de HuggingFace, lo que facilita su despliegue en pipelines de recuperación aumentada.
+Su relevancia actual radica en que cubre un nicho poco atendido: los embeddings generalistas rinden mal cuando la consulta mezcla sintaxis Lean, notación matemática y prosa técnica. Este modelo se distribuye con licencia Apache 2.0, en formato safetensors, y es compatible con Text Embeddings Inference y con los endpoints de Hugging Face, lo que facilita su despliegue en pipelines de recuperación aumentada.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ Los datos de entrenamiento son públicos y generados localmente. Se usaron consu
 - Recuperación de declaraciones de Mathlib a partir de fragmentos de Lean 4, notación LaTeX o descripciones en lenguaje natural.
 - Manejo de consultas en seis estilos distintos: fragmento formal, LaTeX, prosa en inglés, eslogan, apodo y caso especial concreto.
 - Codificación asimétrica consulta-documento con formato de instrucción específico para consultas.
-- Compatibilidad con Text Embeddings Inference y con los endpoints de HuggingFace.
+- Compatibilidad con Text Embeddings Inference y con los endpoints de Hugging Face.
 - No dispone de tool calling, capacidades de agente, visión, audio ni modo de razonamiento: es exclusivamente un modelo de embeddings.
 
 ## Casos de uso
@@ -54,16 +54,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: en FP16, aproximadamente 8 GB solo para los pesos, más overhead de activaciones y del tokenizador; en cuantización de 8 bits, en torno a 4-5 GB.
 - GPU recomendadas: A100 40 GB u H100 para indexación a gran escala con lotes grandes; RTX 4090 (24 GB) o RTX 3090 para inferencia en FP16 sin problemas.
 - Cabe en GPU de consumo: sí, en tarjetas con 12 GB o más en FP16; con cuantización de 8 bits podría ajustarse en 8 GB.
-- Opciones de despliegue: Text Embeddings Inference (soportado explícitamente), sentence-transformers, y endpoints de HuggingFace; el formato safetensors es compatible con vLLM en modo embedding y con llama.cpp tras conversión a GGUF (no confirmado por el autor).
+- Opciones de despliegue: Text Embeddings Inference (soportado explícitamente), sentence-transformers, y endpoints de Hugging Face; el formato safetensors es compatible con vLLM en modo embedding y con llama.cpp tras conversión a GGUF (no confirmado por el autor).
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hmzprover/hpsearch-embed-4b-v2 | 4,02B | no disponible | Mathlib / Lean 4 | apache-2.0 | HuggingFace |
-| hmzprover/hpsearch-embed-4b | no disponible | no disponible | Mathlib / Lean 4 (version anterior) | no disponible | HuggingFace |
-| Qwen3-Embedding-4B | 4B | no disponible | Embeddings generalistas multilingues | no disponible | HuggingFace |
+| hmzprover/hpsearch-embed-4b-v2 | 4,02B | no disponible | Mathlib / Lean 4 | apache-2.0 | Hugging Face |
+| hmzprover/hpsearch-embed-4b | no disponible | no disponible | Mathlib / Lean 4 (version anterior) | no disponible | Hugging Face |
+| Qwen3-Embedding-4B | 4B | no disponible | Embeddings generalistas multilingues | no disponible | Hugging Face |
 
 La comparación con embedders generalistas de tamaño similar es desfavorable para estos últimos en el dominio de Mathlib, aunque no se dispone de cifras publicadas que lo cuantifiquen. Frente a su predecesor, la versión v2 añade el promediado de dos rondas de LoRA y un conjunto de datos ampliado con consultas en seis estilos y negativos duros filtrados.
 
@@ -81,7 +81,7 @@ La comparación con embedders generalistas de tamaño similar es desfavorable pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmzprover/hpsearch-embed-4b-v2
+- Modelo en Hugging Face: https://huggingface.co/hmzprover/hpsearch-embed-4b-v2
 - Modelo base (version anterior): https://huggingface.co/hmzprover/hpsearch-embed-4b
 - Repositorio hpsearch: https://github.com/humanfia/hpsearch
 - Corpus LeanSearch v2 Mathlib: https://huggingface.co/datasets/FrenzyMath/lsv2-mathlib-v4.28.0-rc1-jsonl

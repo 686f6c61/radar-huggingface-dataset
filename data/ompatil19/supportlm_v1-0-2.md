@@ -98,7 +98,7 @@ No se dispone de resultados de benchmarks que permitan comparar este adaptador c
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Ompatil19/SupportLM_V1.0.2
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Ompatil19/SupportLM_V1.0.2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Paper: ninguno (la model card indica que no ha sido publicado en ningun paper).
 - Repositorio de datos: no disponible.

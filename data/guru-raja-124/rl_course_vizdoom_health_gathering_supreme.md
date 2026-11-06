@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo APPO (Asynchronous Proximal Policy Optimization) sobre el entorno `doom_health_gathering_supreme` de VizDoom. El objetivo del agente es recoger paquetes de salud en un escenario 3D de Doom, maximizando la recompensa acumulada. Ha sido desarrollado por el usuario Guru-Raja-124 y publicado en HuggingFace como parte de un curso de RL, utilizando la librería Sample-Factory 2.0.
+Este modelo es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo APPO (Asynchronous Proximal Policy Optimization) sobre el entorno `doom_health_gathering_supreme` de VizDoom. El objetivo del agente es recoger paquetes de salud en un escenario 3D de Doom, maximizando la recompensa acumulada. Ha sido desarrollado por el usuario Guru-Raja-124 y publicado en Hugging Face como parte de un curso de RL, utilizando la librería Sample-Factory 2.0.
 
-El modelo es relevante como ejemplo práctico de entrenamiento de agentes RL en entornos de juego con observaciones visuales, y demuestra el uso de Sample-Factory para el entrenamiento distribuido y la integración con el Hub de HuggingFace. Aunque no se trata de un modelo de lenguaje, su publicación sirve para ilustrar el flujo de trabajo de subida, descarga y reanudación de entrenamiento de agentes RL. El tamaño del repositorio es de 0.1 GB, lo que sugiere una red neuronal relativamente pequeña, aunque no se especifican los detalles de arquitectura.
+El modelo es relevante como ejemplo práctico de entrenamiento de agentes RL en entornos de juego con observaciones visuales, y demuestra el uso de Sample-Factory para el entrenamiento distribuido y la integración con el Hub de Hugging Face. Aunque no se trata de un modelo de lenguaje, su publicación sirve para ilustrar el flujo de trabajo de subida, descarga y reanudación de entrenamiento de agentes RL. El tamaño del repositorio es de 0.1 GB, lo que sugiere una red neuronal relativamente pequeña, aunque no se especifican los detalles de arquitectura.
 
 ## Especificaciones tecnicas
 
@@ -38,7 +38,7 @@ El entrenamiento se realizó en el entorno `doom_health_gathering_supreme`, un e
 - Investigación en aprendizaje por refuerzo: sirve como punto de partida para estudiar el comportamiento de APPO en entornos de navegación visual, comparar variantes de algoritmos o analizar la curva de aprendizaje.
 - Evaluación de algoritmos de RL: permite reproducir experimentos y validar implementaciones de Sample-Factory, ya que el checkpoint puede descargarse y ejecutarse con el script `enjoy` para observar el comportamiento del agente.
 - Entrenamiento de agentes en VizDoom: puede usarse como base para transferir aprendizaje o como inicialización para tareas más complejas del mismo dominio (por ejemplo, combate o recolección de objetos).
-- Demostración educativa: en cursos de RL, el modelo ilustra el flujo completo de entrenamiento, subida a HuggingFace y reanudación, tal como se describe en la documentación de Sample-Factory.
+- Demostración educativa: en cursos de RL, el modelo ilustra el flujo completo de entrenamiento, subida a Hugging Face y reanudación, tal como se describe en la documentación de Sample-Factory.
 - Benchmarking de infraestructura: al ser un modelo pequeño (0.1 GB), es útil para probar pipelines de inferencia o entrenamiento distribuido en entornos de desarrollo.
 - Reproducibilidad de experimentos: investigadores pueden descargar el modelo y comparar sus propios agentes contra esta referencia en la misma tarea.
 
@@ -76,7 +76,7 @@ No se dispone de información sobre otros modelos entrenados en el mismo entorno
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Guru-Raja-124/rl_course_vizdoom_health_gathering_supreme
+- Modelo en Hugging Face: https://huggingface.co/Guru-Raja-124/rl_course_vizdoom_health_gathering_supreme
 - Repositorio de Sample-Factory: https://github.com/alex-petrenko/sample-factory
 - Documentación de Sample-Factory: https://www.samplefactory.dev/
-- Guía de integración con HuggingFace: https://www.samplefactory.dev/10-huggingface/huggingface/
+- Guía de integración con Hugging Face: https://www.samplefactory.dev/10-huggingface/huggingface/

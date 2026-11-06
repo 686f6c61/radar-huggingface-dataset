@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AlphaMotion es un repositorio de modelo publicado en HuggingFace por el usuario lloydlei bajo el identificador `lloydlei/AlphaMotion`. En el momento de la consulta, la model card asociada contiene unicamente el encabezado de licencia (`license: apache-2.0`) y ningun otro contenido: no hay descripcion del modelo, ni arquitectura declarada, ni tamano de parametros, ni datos de entrenamiento, ni ejemplos de uso.
+AlphaMotion es un repositorio de modelo publicado en Hugging Face por el usuario lloydlei bajo el identificador `lloydlei/AlphaMotion`. En el momento de la consulta, la model card asociada contiene unicamente el encabezado de licencia (`license: apache-2.0`) y ningun otro contenido: no hay descripcion del modelo, ni arquitectura declarada, ni tamano de parametros, ni datos de entrenamiento, ni ejemplos de uso.
 
-El repositorio no registra descargas ni "likes" (0 y 0 respectivamente) y fue creado el 10 de septiembre de 2026, con una unica actualizacion practicamente simultanea. No se ha asignado pipeline de HuggingFace, no se declaran idiomas soportados y no existe documentacion tecnica adicional enlazada.
+El repositorio no registra descargas ni "likes" (0 y 0 respectivamente) y fue creado el 10 de septiembre de 2026, con una unica actualizacion practicamente simultanea. No se ha asignado pipeline de Hugging Face, no se declaran idiomas soportados y no existe documentacion tecnica adicional enlazada.
 
 Por tanto, no es posible determinar en este momento que problema resuelve el modelo ni por que seria relevante. La busqueda web realizada no devolvio ningun resultado relacionado con `AlphaMotion` ni con el autor: los unicos enlaces recuperados corresponden a paginas corporativas genericas de Microsoft, sin relacion con el modelo. Cualquier afirmacion sobre su arquitectura, rendimiento o capacidades seria especulativa y no se incluye en esta ficha.
 
@@ -76,7 +76,7 @@ No disponible. No se dispone de datos de parametros, contexto, rendimiento ni li
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lloydlei/AlphaMotion
+- Repositorio en Hugging Face: https://huggingface.co/lloydlei/AlphaMotion
 - Model card del autor: no contiene informacion tecnica (unicamente `license: apache-2.0`)
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible

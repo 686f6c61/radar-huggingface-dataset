@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HoloCT-4B es un modelo multimodal publicado en HuggingFace por el usuario yolo2025666. La etiqueta de arquitectura `qwen3_vl` indica que se trata de un modelo de la familia Qwen3-VL, orientado a tareas que combinan vision y lenguaje, aunque el repositorio no aporta documentacion sobre el pipeline, los idiomas ni la licencia. El dato mas fiable del repositorio es el conteo de parametros obtenido de los pesos en formato safetensors: 4.677.844.560 parametros, es decir, aproximadamente 4,68 mil millones, lo que situa el modelo en la franja de los 4B.
+HoloCT-4B es un modelo multimodal publicado en Hugging Face por el usuario yolo2025666. La etiqueta de arquitectura `qwen3_vl` indica que se trata de un modelo de la familia Qwen3-VL, orientado a tareas que combinan vision y lenguaje, aunque el repositorio no aporta documentacion sobre el pipeline, los idiomas ni la licencia. El dato mas fiable del repositorio es el conteo de parametros obtenido de los pesos en formato safetensors: 4.677.844.560 parametros, es decir, aproximadamente 4,68 mil millones, lo que situa el modelo en la franja de los 4B.
 
 El repositorio tiene un tamano de 9,4 GB, coherente con pesos en precision de 16 bits (bf16/fp16) para ese numero de parametros, aunque tambien podria incluir componentes adicionales como el codificador visual o archivos auxiliares. No hay descargas registradas y solo un like, lo que sugiere un lanzamiento muy reciente (creado el 2 de noviembre de 2026) y sin validacion por parte de la comunidad.
 
@@ -85,5 +85,5 @@ La comparativa se limita a tamano y categoria, ya que no hay datos de rendimient
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yolo2025666/HoloCT-4B
+- Repositorio Hugging Face: https://huggingface.co/yolo2025666/HoloCT-4B
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

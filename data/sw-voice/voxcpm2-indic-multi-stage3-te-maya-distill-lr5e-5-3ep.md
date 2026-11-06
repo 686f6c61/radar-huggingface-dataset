@@ -73,7 +73,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage3-te-maya-distill-lr5e-5-3ep
+- Hugging Face: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage3-te-maya-distill-lr5e-5-3ep
 - Modelo base: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage2-english-sidon-lr1e-4-10ep
 - Dataset de entrenamiento: sw-voice/swamiji-telugu-maya-distill-500 (referenciado en la model card; no se proporciona URL directa)
 - Voz de referencia: sw-voice/maya-best-multilingual-swamiji (referenciado en la model card; no se proporciona URL directa)

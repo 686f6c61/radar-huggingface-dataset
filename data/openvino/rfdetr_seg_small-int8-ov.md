@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RF-DETR Segmentation Small INT8 OV es la conversión al formato OpenVINO IR, con pesos comprimidos a INT8, del modelo RF-DETR Segmentation Small desarrollado originalmente por Roboflow. La versión publicada en HuggingFace la mantiene el equipo de OpenVINO (Intel) a partir del trabajo de Geti, la plataforma de visión artificial de Intel para anotación y ajuste fino de modelos. No es un modelo de lenguaje: es un modelo de segmentación de instancias (instance segmentation) para imágenes, basado en la arquitectura DETR (Detection Transformer) con cabecera de segmentación.
+RF-DETR Segmentation Small INT8 OV es la conversión al formato OpenVINO IR, con pesos comprimidos a INT8, del modelo RF-DETR Segmentation Small desarrollado originalmente por Roboflow. La versión publicada en Hugging Face la mantiene el equipo de OpenVINO (Intel) a partir del trabajo de Geti, la plataforma de visión artificial de Intel para anotación y ajuste fino de modelos. No es un modelo de lenguaje: es un modelo de segmentación de instancias (instance segmentation) para imágenes, basado en la arquitectura DETR (Detection Transformer) con cabecera de segmentación.
 
 El modelo resuelve el problema de detectar y segmentar instancias individuales en imágenes, devolviendo máscaras por objeto junto con sus cajas delimitadoras y etiquetas de clase. Su relevancia radica en que ofrece una variante DETR de tamano "small" optimizada para despliegue en CPU, GPU y NPU de Intel mediante OpenVINO, con cuantización post-entrenamiento a INT8 que reduce el peso del repositorio a aproximadamente 0,1 GB. Esto lo hace adecuado para inferencia en el edge y en equipos sin GPU dedicada.
 
@@ -82,7 +82,7 @@ La comparación cuantitativa de precisión y latencia entre estas alternativas n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenVINO/rfdetr_seg_small-int8-ov
+- Hugging Face: https://huggingface.co/OpenVINO/rfdetr_seg_small-int8-ov
 - Modelo original RF-DETR (Roboflow): https://github.com/roboflow/rf-detr
 - Geti (Intel): https://github.com/open-edge-platform/geti
 - OpenVINO Model API: https://github.com/open-edge-platform/model_api

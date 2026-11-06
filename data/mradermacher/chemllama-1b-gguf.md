@@ -55,5 +55,5 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (mo
 
 ## Enlaces
 
-- [Modelo cuantizado en HuggingFace](https://huggingface.co/mradermacher/ChemLlama-1B-GGUF)
-- [Modelo base en HuggingFace](https://huggingface.co/yerevann/ChemLlama-1B)
+- [Modelo cuantizado en Hugging Face](https://huggingface.co/mradermacher/ChemLlama-1B-GGUF)
+- [Modelo base en Hugging Face](https://huggingface.co/yerevann/ChemLlama-1B)

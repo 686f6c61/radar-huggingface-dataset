@@ -87,8 +87,8 @@ No existen alternativas públicas ampliamente adoptadas de redes de valor para S
 
 | Modelo | Tipo | Parametros | Win rate vs HastyBot | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `macondo-tf` | Red de valor (transformer) | 9,6M | 58,42 % ± 0,18 | GPL-3.0 | ONNX público en HuggingFace |
-| `macondo-tf-selfplay` | Red de valor (transformer) | 3,7M | 57,07 % ± 0,18 | GPL-3.0 | ONNX público en HuggingFace |
+| `macondo-tf` | Red de valor (transformer) | 9,6M | 58,42 % ± 0,18 | GPL-3.0 | ONNX público en Hugging Face |
+| `macondo-tf-selfplay` | Red de valor (transformer) | 3,7M | 57,07 % ± 0,18 | GPL-3.0 | ONNX público en Hugging Face |
 | HastyBot | Equity estática (sin ML) | no aplicable | referencia (baseline) | GPL-3.0 (parte de Macondo) | Incluido en Macondo |
 | Simulación Monte Carlo 2-ply de Macondo | Búsqueda por simulación | no aplicable | 58,62 % ± 1,61 vs HastyBot | GPL-3.0 (parte de Macondo) | Incluido en Macondo |
 
@@ -105,7 +105,7 @@ No existen alternativas públicas ampliamente adoptadas de redes de valor para S
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/domino14/macondo-value-nets
+- Modelo en Hugging Face: https://huggingface.co/domino14/macondo-value-nets
 - Repositorio del motor Macondo: https://github.com/domino14/macondo
 - Guia de entrenamiento: https://github.com/domino14/macondo/blob/master/pytorch/TRAINING.md
 - Registro de entrenamientos y partidas: https://github.com/domino14/macondo/blob/master/pytorch/RUNS.md

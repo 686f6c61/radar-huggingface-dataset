@@ -89,6 +89,6 @@ mini-LLM se distingue por su implementación artesanal y su enfoque en datos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ye476/mini-llm-132m
+- Modelo en Hugging Face: https://huggingface.co/ye476/mini-llm-132m
 - Repositorio GitHub: https://github.com/FengYe476/mini-LLM
 - Model card en GitHub: https://github.com/FengYe476/mini-LLM/blob/main/MODEL_CARD.md

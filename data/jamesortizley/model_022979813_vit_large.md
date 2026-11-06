@@ -74,5 +74,5 @@ No hay información suficiente para realizar una comparativa rigurosa. Como refe
 
 ## Enlaces
 
-- [HuggingFace: jamesortizley/model_022979813_vit_large](https://huggingface.co/jamesortizley/model_022979813_vit_large)
+- [Hugging Face: jamesortizley/model_022979813_vit_large](https://huggingface.co/jamesortizley/model_022979813_vit_large)
 - [Referencia de ViT (Google Research)](https://github.com/google-research/vision_transformer)

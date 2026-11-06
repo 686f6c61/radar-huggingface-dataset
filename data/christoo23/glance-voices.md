@@ -31,7 +31,7 @@ El material de origen son grabaciones de lectores voluntarios de LibriVox recopi
 
 - Síntesis de voz en francés mediante Kyutai Pocket TTS, usando los estados como condición de hablante.
 - Tres identidades de voz femeninas predefinidas: Claire, Léa y Margaux.
-- Integración directa con la librería `pocket-tts` y con el pipeline `text-to-speech` de HuggingFace.
+- Integración directa con la librería `pocket-tts` y con el pipeline `text-to-speech` de Hugging Face.
 - Uso previsto en el asistente Glance sobre macOS.
 - No incluye capacidades de generación de texto, razonamiento, código, visión ni tool calling.
 - No soporta otros idiomas distintos del francés.
@@ -56,16 +56,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: no disponible. El repositorio solo contiene estados de voz; el consumo depende del modelo Pocket TTS subyacente, cuyos requisitos no se detallan en la información proporcionada.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible; Pocket TTS está diseñado por Kyutai como sistema ligero, pero no se aportan cifras concretas en esta ficha.
-- Opciones de despliegue: librería `pocket-tts` (según los tags del repositorio) y pipeline `text-to-speech` de HuggingFace. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: librería `pocket-tts` (según los tags del repositorio) y pipeline `text-to-speech` de Hugging Face. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Glance Voices (christoo23) | estados de voz para Pocket TTS | fr | CC BY 4.0 | safetensors | HuggingFace |
-| kyutai/tts-voices | clips de referencia para Pocket TTS | varios (incl. fr) | CC BY 4.0 | audio | HuggingFace |
-| Kyutai Pocket TTS (modelo base) | modelo TTS | varios | pesos CC BY 4.0, código MIT | no disponible en la informacion | GitHub / HuggingFace |
+| Glance Voices (christoo23) | estados de voz para Pocket TTS | fr | CC BY 4.0 | safetensors | Hugging Face |
+| kyutai/tts-voices | clips de referencia para Pocket TTS | varios (incl. fr) | CC BY 4.0 | audio | Hugging Face |
+| Kyutai Pocket TTS (modelo base) | modelo TTS | varios | pesos CC BY 4.0, código MIT | no disponible en la informacion | GitHub / Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/christoo23/glance-voices
+- Hugging Face: https://huggingface.co/christoo23/glance-voices
 - Kyutai Pocket TTS (GitHub): https://github.com/kyutai-labs/pocket-tts
 - Clips de referencia Kyutai: https://huggingface.co/kyutai/tts-voices
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

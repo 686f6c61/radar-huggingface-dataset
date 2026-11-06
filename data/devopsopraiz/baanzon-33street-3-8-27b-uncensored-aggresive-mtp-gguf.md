@@ -6,7 +6,7 @@ Baanzon 33STREET 3.8-27B Uncensored Aggressive MTP (GGUF) es una distribucion cu
 
 El modelo se anuncia con una ventana de contexto de 262.144 tokens, soporte multilingue (ingles, chino y otros idiomas) y un juego de cuantizaciones que va desde IQ2_M (9,8 GB) hasta Q8_K_P (30 GB), lo que en teoria permite ejecutarlo en GPU de gama consumer de 16 a 24 GB. Su interes practico esta en el nicho de despliegue local: combina entrada de imagen y texto con inferencia acelerada y sin capa de alineacion de seguridad.
 
-La informacion publicada es, sin embargo, contradictoria: el repositorio se anuncia como 27B, pero el recuento de parametros disponible en safetensors es de 1.863.907.840 (aproximadamente 1,86 B), y no hay verificacion publica de la existencia del modelo base Qwen/Qwen3.8-27B. Ademas, las fichas de HuggingFace indican 50 descargas y 0 likes, y la busqueda web no ha devuelto documentacion tecnica asociada.
+La informacion publicada es, sin embargo, contradictoria: el repositorio se anuncia como 27B, pero el recuento de parametros disponible en safetensors es de 1.863.907.840 (aproximadamente 1,86 B), y no hay verificacion publica de la existencia del modelo base Qwen/Qwen3.8-27B. Ademas, las fichas de Hugging Face indican 50 descargas y 0 likes, y la busqueda web no ha devuelto documentacion tecnica asociada.
 
 ## Especificaciones tecnicas
 
@@ -97,7 +97,7 @@ No se dispone de alternativas directamente comparables en el nicho concreto de e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Devopsopraiz/Baanzon-33street-3.8-27B-Uncensored-Aggresive-MTP-GGUF
+- Hugging Face: https://huggingface.co/Devopsopraiz/Baanzon-33street-3.8-27B-Uncensored-Aggresive-MTP-GGUF
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B (existencia no verificada en la busqueda realizada)
 - Repositorio de referencia para el proyector de vision y las herramientas GGUF: llama.cpp (no se enlaza URL concreta en la model card)
 - La busqueda web realizada no ha devuelto enlaces relevantes: los unicos resultados obtenidos pertenecen a un portal de anuncios clasificados sin relacion con el modelo, por lo que no se incluyen papers, blogs, repos ni demos adicionales.

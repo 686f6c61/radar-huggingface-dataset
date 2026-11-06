@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Factor de upscaling | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AST-1320/Wan2.1-VAE-upscale2x | VAE decoder finetune | 2x integrado | Solo imagenes (real) | apache-2.0 | HuggingFace, diffusers, ComfyUI |
+| AST-1320/Wan2.1-VAE-upscale2x | VAE decoder finetune | 2x integrado | Solo imagenes (real) | apache-2.0 | Hugging Face, diffusers, ComfyUI |
 | VAE original de Wan2.1 | VAE decoder | 1x | Original Wan | apache-2.0 (segun modelo base) | Incluido en Wan2.1 |
 | Upscalers de imagen genericos (p. ej. ultrasharp) | Modelo de upscaling de imagen | Variable | no disponible | no disponible | no disponible |
 
@@ -86,7 +86,7 @@ El autor compara cualitativamente su decoder 2x con el VAE original de Wan y con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AST-1320/Wan2.1-VAE-upscale2x
+- Hugging Face: https://huggingface.co/AST-1320/Wan2.1-VAE-upscale2x
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-14B
 - Repositorio original del autor de los pesos (referenciado en la model card): https://huggingface.co/spacepxl/Wan2.1-VAE-upscale2x
 - Nodos ComfyUI-VAE-Utils: https://github.com/spacepxl/ComfyUI-VAE-Utils

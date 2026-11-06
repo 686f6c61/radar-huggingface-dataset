@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ytung/starvla-qwenoft-pipette-realaug-0927` es un checkpoint de politica robótica de tipo vision-language-action (VLA) publicado en HuggingFace por el usuario `ytung`. Se trata de un ajuste fino de `Qwen3-VL-4B-Instruct` realizado con el framework starVLA, en su variante QwenOFT, y orientado a una tarea concreta de manipulación con pipeta sobre un robot Unitree G1 (así lo indican las etiquetas `unitree-g1`, `robotics` y `vision-language-action`). El modelo recibe texto de tarea, tres vistas de cámara y 35 valores de estado, y produce 30 objetivos XYZ relativos al chunk a 60 Hz.
+`ytung/starvla-qwenoft-pipette-realaug-0927` es un checkpoint de politica robótica de tipo vision-language-action (VLA) publicado en Hugging Face por el usuario `ytung`. Se trata de un ajuste fino de `Qwen3-VL-4B-Instruct` realizado con el framework starVLA, en su variante QwenOFT, y orientado a una tarea concreta de manipulación con pipeta sobre un robot Unitree G1 (así lo indican las etiquetas `unitree-g1`, `robotics` y `vision-language-action`). El modelo recibe texto de tarea, tres vistas de cámara y 35 valores de estado, y produce 30 objetivos XYZ relativos al chunk a 60 Hz.
 
 El interés del artefacto es doble. Por un lado, documenta una receta de entrenamiento poco habitual en modelos abiertos: mezcla 50/50 de demostraciones reales (HIL293) y aumentación simulada del 27 de septiembre, con 249 episodios reales y 532 simulados de entrenamiento, 20 100 updates, batch efectivo de 256 y 4 GPU NVIDIA B200. Por otro, publica métricas intermedias de evaluación en bucle abierto (MSE normalizado de 0,06303 en el paso 19 500, equivalente a 0,646 veces la línea base de mantener posición, con RMSE XYZ de aproximadamente 1,50 / 1,09 / 1,02 mm).
 
@@ -85,7 +85,7 @@ No se dispone de datos verificados de comparacion en la informacion proporcionad
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| starvla-qwenoft-pipette-realaug-0927 | VLA sobre Qwen3-VL-4B-Instruct | No disponible (base de aproximadamente 4B) | No disponible | No disponible | Checkpoint PyTorch en HuggingFace, requiere starVLA |
+| starvla-qwenoft-pipette-realaug-0927 | VLA sobre Qwen3-VL-4B-Instruct | No disponible (base de aproximadamente 4B) | No disponible | No disponible | Checkpoint PyTorch en Hugging Face, requiere starVLA |
 | OpenVLA y OpenVLA-OFT | VLA sobre VLM de 7B | No disponible en las fuentes consultadas | No disponible | No disponible | No disponible en las fuentes consultadas |
 | pi-zero (Physical Intelligence) | VLA con flujo de difusion | No disponible en las fuentes consultadas | No disponible | No disponible | No disponible en las fuentes consultadas |
 | GR00T N1 (NVIDIA) | Modelo fundacional para robotica humanoide | No disponible en las fuentes consultadas | No disponible | No disponible | No disponible en las fuentes consultadas |
@@ -109,7 +109,7 @@ La comparacion relevante, en cualquier caso, es de dificil traslado: este checkp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ytung/starvla-qwenoft-pipette-realaug-0927
+- Hugging Face: https://huggingface.co/ytung/starvla-qwenoft-pipette-realaug-0927
 - Modelo base declarado: Qwen3-VL-4B-Instruct (referenciado en la model card; no se proporciona URL directa en la informacion disponible)
 - Framework starVLA / QwenOFT: mencionado en la model card; no se proporciona URL verificada en la informacion disponible
 - Paper, blog, repositorio o demo: no disponible

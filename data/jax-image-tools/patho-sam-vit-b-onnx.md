@@ -82,7 +82,7 @@ La comparación se basa en la información de la model card. No se dispone de da
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/jax-image-tools/patho-sam-vit-b-onnx)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/jax-image-tools/patho-sam-vit-b-onnx)
 - [Repositorio de patho-sam en GitHub](https://github.com/computational-cell-analytics/patho-sam) (mencionado en la model card)
 - [Proyecto sam-js para exportación](https://github.com/sam-js) (no se ha proporcionado URL completa, se infiere del contexto)
 - [Registro de modelos micro-sam](https://github.com/computational-cell-analytics/micro-sam) (referenciado indirectamente)

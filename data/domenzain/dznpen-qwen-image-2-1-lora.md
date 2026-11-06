@@ -18,7 +18,7 @@ Es relevante ahora porque permite generar pares imagen-texto manuscrito de forma
 | Longitud de contexto | No disponible (es un modelo de imagen, no de texto) |
 | Tipos de cuantizacion | Peso del adaptador en BF16; el modelo base se carga en bfloat16 en el ejemplo oficial; no se documentan otras cuantizaciones |
 | Idiomas soportados | Ingles, frances y espanol |
-| Licencia | Qwen Research (etiquetada como `other` en HuggingFace) |
+| Licencia | Qwen Research (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | `pytorch_lora_weights.safetensors` (safetensors) |
 
 ## Arquitectura y entrenamiento
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dznpen-qwen-image-2.1-lora | LoRA sobre difusion | ~537 M (adaptador) | No aplica | en, fr, es | Qwen Research | HuggingFace, 15 descargas |
-| Qwen/Qwen-Image-2.1-Turbo | Difusion base | No disponible | No aplica | No disponible | Qwen Research | HuggingFace |
+| dznpen-qwen-image-2.1-lora | LoRA sobre difusion | ~537 M (adaptador) | No aplica | en, fr, es | Qwen Research | Hugging Face, 15 descargas |
+| Qwen/Qwen-Image-2.1-Turbo | Difusion base | No disponible | No aplica | No disponible | Qwen Research | Hugging Face |
 | Alternativas de LoRA de caligrafia | No disponible | No disponible | No aplica | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos comparables de caligrafia en la informacion proporcionada, por lo que la comparativa cuantitativa no esta disponible.
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/domenzain/dznpen-qwen-image-2.1-lora
+- Modelo en Hugging Face: https://huggingface.co/domenzain/dznpen-qwen-image-2.1-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/domenzain/dznpen-qwen-image-data
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo/blob/main/LICENSE

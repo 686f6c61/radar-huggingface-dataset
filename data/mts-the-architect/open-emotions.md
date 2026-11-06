@@ -27,7 +27,7 @@ Con 124.667.164 parámetros (encoder más cabeza) y un tamaño de repositorio de
 | Tamano del repositorio | 0,5 GB |
 | Autor | mts-the-architect |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion en el repositorio | 2026-10-03 segun metadatos de HuggingFace |
+| Fecha de creacion en el repositorio | 2026-10-03 segun metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -130,9 +130,9 @@ No se han publicado resultados de otros benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Etiquetas | Contexto | Licencia | Micro-F1 en GoEmotions | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mts-the-architect/open-emotions | 124.667.164 | 28 multietiqueta | 128 tokens en entrenamiento | MIT | 0,6047 (test simplified, umbral 0,30) | HuggingFace |
-| FacebookAI/roberta-base (modelo base) | no disponible en la informacion proporcionada | no aplica (modelo de lenguaje enmascarado) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no aplica | HuggingFace |
-| SamLowe/roberta-base-go_emotions | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| mts-the-architect/open-emotions | 124.667.164 | 28 multietiqueta | 128 tokens en entrenamiento | MIT | 0,6047 (test simplified, umbral 0,30) | Hugging Face |
+| FacebookAI/roberta-base (modelo base) | no disponible en la informacion proporcionada | no aplica (modelo de lenguaje enmascarado) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no aplica | Hugging Face |
+| SamLowe/roberta-base-go_emotions | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 | Clasificadores BERT sobre GoEmotions | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible |
 
 Nota: los modelos alternativos se citan como referencias conocidas de la misma categoria (clasificacion emocional sobre GoEmotions con encoders tipo BERT/RoBERTa), pero sus especificaciones y metricas no forman parte de la informacion proporcionada en esta busqueda y no se han verificado, por lo que se marcan como no disponibles.
@@ -156,7 +156,7 @@ Nota: los modelos alternativos se citan como referencias conocidas de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mts-the-architect/open-emotions
+- Modelo en Hugging Face: https://huggingface.co/mts-the-architect/open-emotions
 - Modelo base: https://huggingface.co/FacebookAI/roberta-base
 - Dataset GoEmotions: https://huggingface.co/datasets/google-research-datasets/go_emotions
 - Paper de RoBERTa (referenciado en las etiquetas del repositorio, arXiv:1907.11692): https://arxiv.org/abs/1907.11692

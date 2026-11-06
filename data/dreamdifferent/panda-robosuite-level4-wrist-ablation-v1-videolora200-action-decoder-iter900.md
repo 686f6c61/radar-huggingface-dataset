@@ -21,7 +21,7 @@ Es relevante como artefacto de investigacion, no como producto. Publicado con 0 
 | Licencia | no disponible |
 | Formato de pesos | no disponible (el repositorio ocupa 1,0 GB e incluye el checkpoint, un JSON fijado y el `config.yaml` efectivo) |
 | Autor | dreamdifferent |
-| Pipeline declarado en HuggingFace | robotics |
+| Pipeline declarado en Hugging Face | robotics |
 | Tareas declaradas (tags) | mimic-video, robotics, action-prediction |
 | Entradas | `observation.images.corner_cam`, `observation.images.wrist_cam` |
 | Salida | 15 acciones de efector final alcanzado y pinza |
@@ -107,12 +107,12 @@ La informacion disponible sobre este modelo no incluye numero de parametros, dat
 - Riesgo de alucinacion en el sentido de los LLM no aplica, pero si existe riesgo de generar acciones fisicamente invalidas o inseguras, especialmente fuera de la distribucion del dataset. No se documenta ninguna capa de filtrado o de seguridad.
 - Sesgos de dataset. Los datos provienen de teleoperacion humana con una configuracion de camaras concreta y texturas especificas; los sesgos de estilo de teleoperacion, iluminacion y disposicion de objetos se trasladaran a las predicciones.
 - Sin soporte de lenguaje. El modelo no procesa instrucciones en texto, por lo que no puede usarse para control condicionado por lenguaje sin anadir componentes externos.
-- Metadatos anomales. Las fechas de creacion y actualizacion registradas en HuggingFace (2026-09-15) son posteriores a la fecha habitual de consulta; conviene tratarlas con cautela.
+- Metadatos anomales. Las fechas de creacion y actualizacion registradas en Hugging Face (2026-09-15) son posteriores a la fecha habitual de consulta; conviene tratarlas con cautela.
 - Sin informacion sobre cuantizacion ni pesos alternativos. No se ofrecen versiones GGUF, AWQ, GPTQ ni similares, lo que limita las opciones de despliegue en hardware modesto.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dreamdifferent/panda-robosuite-level4-wrist-ablation-v1-videolora200-action-decoder-iter900
+- Repositorio en Hugging Face: https://huggingface.co/dreamdifferent/panda-robosuite-level4-wrist-ablation-v1-videolora200-action-decoder-iter900
 - Backbone Video2World inicial: https://huggingface.co/dreamdifferent/widowx250-wrist-ablation-v1-video-fused (commit `8e39d96344dea0a82ae673874a38206a6c412948`)
 - Decoder de acciones inicial: https://huggingface.co/dreamdifferent/widowx250-wrist-ablation-v1-action-decoder-iter2374 (commit `0ea6db91672db019d9d6dc9a6c9bd1ecc0504001`)
 - LoRA de video congelado: https://huggingface.co/dreamdifferent/panda-robosuite-level4-wrist-ablation-v1-video-lora-iter200 (commit `24e15bdb2250e55e07a4af11f8f5022615362e6b`)

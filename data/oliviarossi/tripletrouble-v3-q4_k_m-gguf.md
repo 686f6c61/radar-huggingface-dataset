@@ -66,7 +66,7 @@ La informacion disponible no incluye metricas de rendimiento, por lo que la comp
 
 | Modelo | Parametros | Contexto | Licencia | Formato / disponibilidad |
 |---|---|---|---|---|
-| TripleTrouble-V3 (Q4_K_M) | aprox. 34,66 mil millones (MoE) | no disponible | apache-2.0 | GGUF Q4_K_M en HuggingFace |
+| TripleTrouble-V3 (Q4_K_M) | aprox. 34,66 mil millones (MoE) | no disponible | apache-2.0 | GGUF Q4_K_M en Hugging Face |
 | Qwen3-30B-A3B | aprox. 30,5 mil millones (MoE, aprox. 3,3 mil millones activos) | 32.768 tokens (ampliable) | apache-2.0 | safetensors, GGUF, multiples runtimes |
 | Mixtral 8x7B | aprox. 46,7 mil millones (MoE, aprox. 12,9 mil millones activos) | 32.768 tokens | apache-2.0 | safetensors, GGUF |
 

@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hpsearch-embed-8b-nl | 7.567 M | No disponible | Mathlib / Lean 4 | Apache 2.0 | HuggingFace (26 descargas) |
-| hmzprover/hpsearch-embed-4b-v2 | No disponible en la información | No disponible | Mathlib / Lean 4 | No disponible | HuggingFace |
-| Qwen/Qwen3-Embedding-8B | 8B (aproximado) | No disponible | General | No disponible en la información | HuggingFace |
+| hpsearch-embed-8b-nl | 7.567 M | No disponible | Mathlib / Lean 4 | Apache 2.0 | Hugging Face (26 descargas) |
+| hmzprover/hpsearch-embed-4b-v2 | No disponible en la información | No disponible | Mathlib / Lean 4 | No disponible | Hugging Face |
+| Qwen/Qwen3-Embedding-8B | 8B (aproximado) | No disponible | General | No disponible en la información | Hugging Face |
 
 El modelo base Qwen3-Embedding-8B es de propósito general y no está especializado en matemáticas formales; hpsearch-embed-4b-v2 es la iteración anterior de la misma familia, usada para minar negativos duros en el entrenamiento de este modelo. No se dispone de datos de rendimiento comparativo.
 
@@ -85,7 +85,7 @@ El modelo base Qwen3-Embedding-8B es de propósito general y no está especializ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmzprover/hpsearch-embed-8b-nl
+- Modelo en Hugging Face: https://huggingface.co/hmzprover/hpsearch-embed-8b-nl
 - Repositorio del proyecto hpsearch: https://github.com/humanfia/hpsearch
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-8B
 - Modelo anterior de la familia: https://huggingface.co/hmzprover/hpsearch-embed-4b-v2

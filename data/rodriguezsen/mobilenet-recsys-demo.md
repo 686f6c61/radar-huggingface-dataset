@@ -60,5 +60,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - Rodriguezsen/mobilenet-recsys-demo](https://huggingface.co/Rodriguezsen/mobilenet-recsys-demo)
+- [Hugging Face - Rodriguezsen/mobilenet-recsys-demo](https://huggingface.co/Rodriguezsen/mobilenet-recsys-demo)
 - No se encontraron otros enlaces relevantes (papers, blogs, repos) en la búsqueda web.

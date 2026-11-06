@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/zho-hans-100mb-ppt-mp-struct-100mb_seed10` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/zho_hans_100mb`, desarrollado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generacion de texto de tipo decoder-only con arquitectura GPT-2 y 124.770.816 parametros totales (aproximadamente 125 millones), lo que lo situa en la categoria de modelos pequenos, entrenables y desplegables en hardware muy modesto.
+El modelo `francesca9805/zho-hans-100mb-ppt-mp-struct-100mb_seed10` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/zho_hans_100mb`, desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generacion de texto de tipo decoder-only con arquitectura GPT-2 y 124.770.816 parametros totales (aproximadamente 125 millones), lo que lo situa en la categoria de modelos pequenos, entrenables y desplegables en hardware muy modesto.
 
 El modelo se ha entrenado mediante SFT (supervised fine-tuning) utilizando la libreria TRL en su version 0.23.0, sobre el framework Transformers 4.56.2 y PyTorch 2.5.1+cu121. La nomenclatura del identificador sugiere un experimento vinculado al entrenamiento de tokenizadores sobre un corpus de aproximadamente 100 MB en chino simplificado (los codigos `zho_hans` corresponden a la etiqueta ISO de chino mandarin en escritura simplificada), aunque esta interpretacion procede del nombre del repositorio y no de documentacion explicita del autor.
 
@@ -43,7 +43,7 @@ El entrenamiento se realizo mediante SFT con TRL 0.23.0 (Transformers 4.56.2, Py
 - Reproduccion de experimentos de investigacion sobre tokenizacion: el modelo pertenece a un proyecto de W&B denominado `new-tokenizers`, por lo que su uso natural es comparar el efecto de distintas estrategias de tokenizacion o de estructuras de datos sobre un mismo modelo base de 125 millones de parametros.
 - Prototipado rapido en local sin GPU: con 124,77 millones de parametros, el modelo puede ejecutarse en CPU para pruebas de generacion de texto de 128 tokens o menos, lo que permite validar pipelines de inferencia antes de escalar a modelos mayores.
 - Generacion de texto en chino simplificado (si se confirma la cobertura del modelo base): util para experimentos de continuacion de texto o respuestas cortas en este idioma con un coste computacional minimo.
-- Pruebas de integracion con Text Generation Inference: el repositorio incluye las etiquetas `text-generation-inference` y `endpoints_compatible`, de modo que puede desplegarse como endpoint compatible con la API de mensajes de HuggingFace para validar infraestructura de servicio.
+- Pruebas de integracion con Text Generation Inference: el repositorio incluye las etiquetas `text-generation-inference` y `endpoints_compatible`, de modo que puede desplegarse como endpoint compatible con la API de mensajes de Hugging Face para validar infraestructura de servicio.
 - Generacion de texto de bajo coste en entornos embebidos o con recursos muy restringidos: al caber en unos pocos cientos de megabytes en precision reducida, es apto para demos sobre dispositivos con poca memoria.
 - Educacion y docencia: sirve como ejemplo minimo y reproducible de un flujo completo de SFT con TRL, util para explicar el ciclo de ajuste supervisado con un modelo que se entrena y se sirve en una sola GPU de gama media.
 - Filtrado o clasificacion indirecta por generacion: en tareas de autocompletado o continuacion de plantillas estructuradas, dado que el identificador del modelo incluye el sufijo `struct`, aunque no hay documentacion que describa esta capacidad de forma explicita.
@@ -90,7 +90,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-mp-struct-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-mp-struct-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/zho_hans_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/57ecn3az
 - Repositorio de TRL: https://github.com/huggingface/trl

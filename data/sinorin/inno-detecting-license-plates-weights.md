@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`inno-detecting-license-plates-weights` es un conjunto de pesos publicados en HuggingFace por el usuario Sinorin, correspondientes a la parte de reconocimiento optico de caracteres (OCR) de un proyecto de deteccion y lectura de matriculas de vehiculos sobre el dataset CCPD2019. El artefacto principal es un reconocedor CRNN (red convolucional recurrente) entrenado con pérdida CTC que transcribe el texto de un recorte de matricula en escala de grises. El modelo procede de un proyecto de curso alojado en GitHub (`S1norin/inno-detecting-license-plates`) y no constituye un modelo de lenguaje, sino un componente de vision por computador especializado.
+`inno-detecting-license-plates-weights` es un conjunto de pesos publicados en Hugging Face por el usuario Sinorin, correspondientes a la parte de reconocimiento optico de caracteres (OCR) de un proyecto de deteccion y lectura de matriculas de vehiculos sobre el dataset CCPD2019. El artefacto principal es un reconocedor CRNN (red convolucional recurrente) entrenado con pérdida CTC que transcribe el texto de un recorte de matricula en escala de grises. El modelo procede de un proyecto de curso alojado en GitHub (`S1norin/inno-detecting-license-plates`) y no constituye un modelo de lenguaje, sino un componente de vision por computador especializado.
 
 El reconocedor es deliberadamente pequeno: 2.999.419 parametros, entrada de 48x256 pixeles en un solo canal y un vocabulario cerrado de 58 caracteres mas el token CTC en blanco. Se entreno durante 50 epocas sobre 3.500 recortes de entrenamiento y 700 de validacion, exclusivamente en CPU, y se selecciono la epoca 43 por maxima precision de caracter en validacion (0,7430). En el conjunto de test con protocolo `ocr_only` alcanza una precision de caracter de 0,7538 y un exact match de matricula completa de 269/800 (F1 0,7097).
 
@@ -74,7 +74,7 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `inno-detecting-license-plates-weights` (CRNN) | 2.999.419 | no aplica (imagen 48x256) | no disponible | HuggingFace + GitHub |
+| `inno-detecting-license-plates-weights` (CRNN) | 2.999.419 | no aplica (imagen 48x256) | no disponible | Hugging Face + GitHub |
 | Alternativas de OCR de matriculas | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,13 +84,13 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 - El vocabulario esta cerrado a 58 caracteres del dataset de entrenamiento; no reconoce simbolos fuera de ese charset ni matriculas de formatos no vistos.
 - Entrenado con solo 3.500 recortes y 50 epocas en CPU, lo que limita la generalizacion a condiciones de iluminacion, angulo o resolucion distintas de las del dataset CCPD2019.
 - La licencia no esta declarada, lo que impide determinar si el uso comercial esta permitido; debe consultarse con el autor antes de cualquier despliegue productivo.
-- El repositorio de HuggingFace no incluye el detector YOLO11s ni el fine-tune `best.pt` del proyecto; solo contiene el reconocedor CRNN y su registro de entrenamiento.
+- El repositorio de Hugging Face no incluye el detector YOLO11s ni el fine-tune `best.pt` del proyecto; solo contiene el reconocedor CRNN y su registro de entrenamiento.
 - Riesgo de alucinacion a nivel de caracter: la decodificacion CTC puede producir transcripciones plausibles pero incorrectas, especialmente en recortes de baja calidad.
 - No se documentan sesgos especificos ni evaluaciones de robustez mas alla de las metricas reportadas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sinorin/inno-detecting-license-plates-weights
+- Hugging Face: https://huggingface.co/Sinorin/inno-detecting-license-plates-weights
 - Repositorio GitHub del proyecto: https://github.com/S1norin/inno-detecting-license-plates
 - Informe completo del CRNN: https://github.com/S1norin/inno-detecting-license-plates/blob/main/models/crnn/REPORT.md
 - Pesos preentrenados del detector YOLO11s (upstream): https://huggingface.co/morsetechlab/yolov11-license-plate-detection

@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ct-inkling-oai-gen-mid-g1-b1` | Adaptador LoRA sobre base fijo | No disponible (r=64, `all-linear`) | No disponible (entrenamiento a 8192) | No disponible | HuggingFace, 0 descargas |
+| `ct-inkling-oai-gen-mid-g1-b1` | Adaptador LoRA sobre base fijo | No disponible (r=64, `all-linear`) | No disponible (entrenamiento a 8192) | No disponible | Hugging Face, 0 descargas |
 | `thinkingmachines/Inkling-Small` (sin adaptador) | Modelo base | No disponible | No disponible | No disponible | Referenciado como base |
 | Otras réplicas/ramas de la misma cadena (`...g1-b2`, `...g2-...`) | Adaptadores LoRA con la misma receta | No disponibles | No disponibles | No disponibles | No localizadas en la información proporcionada |
 | Adaptadores LoRA genéricos de instrucción sobre modelos de tamaño pequeño | Adaptador LoRA | No disponibles | No disponibles | No disponibles | Categoría genérica, sin datos comparables |
@@ -114,7 +114,7 @@ No se dispone de resultados de rendimiento de ninguno de los elementos comparado
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-inkling-oai-gen-mid-g1-b1
+- Página del modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-inkling-oai-gen-mid-g1-b1
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Ficheros citados en la model card: `training_seed_constitution.md`, `tinker_meta.json` (incluidos en el repositorio del adaptador)
 - Ruta interna de Tinker: `tinker://e7b1c7ae-b65c-5b1f-ac0f-ef63ed43bd7b:train:0/sampler_weights/inkoaig1_inkoai_g1_b1_s1_final`

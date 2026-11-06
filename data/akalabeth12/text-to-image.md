@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Akalabeth12/Text-to-Image` es un modelo de generación de texto a imagen alojado en HuggingFace, desarrollado por el usuario Akalabeth12. Está diseñado para la librería `diffusers`, lo que sugiere que utiliza una arquitectura de difusión para convertir descripciones textuales en imágenes. El repositorio incluye pesos en formato `safetensors`, `gguf` y `onnx`, lo que indica soporte para múltiples frameworks de inferencia.
+El modelo `Akalabeth12/Text-to-Image` es un modelo de generación de texto a imagen alojado en Hugging Face, desarrollado por el usuario Akalabeth12. Está diseñado para la librería `diffusers`, lo que sugiere que utiliza una arquitectura de difusión para convertir descripciones textuales en imágenes. El repositorio incluye pesos en formato `safetensors`, `gguf` y `onnx`, lo que indica soporte para múltiples frameworks de inferencia.
 
 Con aproximadamente 8.900 millones de parámetros y un tamaño de repositorio de 3,29 terabytes, se trata de un modelo de gran escala, probablemente orientado a generación de imágenes de alta resolución o con capacidades avanzadas de control. Sin embargo, la información pública disponible es muy limitada: no se especifican la arquitectura exacta, la licencia, los idiomas soportados ni el pipeline concreto. A pesar de su reciente creación (agosto de 2025) y actualización (agosto de 2026), el modelo cuenta con pocas descargas (636) y un solo "like", lo que sugiere que aún no ha sido ampliamente adoptado por la comunidad.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - **VRAM estimada**: no disponible. Dado el tamaño de parámetros (8,9B) y el formato safetensors, se estima que la inferencia en precisión FP16 requeriría al menos 18-20 GB de VRAM, pero este dato no está confirmado.
 - **GPU recomendadas**: no disponible. Se sugiere al menos una GPU con 24 GB de VRAM (por ejemplo, RTX 3090/4090) para ejecutar el modelo sin cuantización, aunque no hay confirmación oficial.
 - **Compatibilidad con GPU de consumo**: posible mediante cuantización GGUF (por ejemplo, Q4_K_M o Q5_K_M), que podría reducir los requisitos a unos 6-8 GB de VRAM, pero no se especifican los niveles de cuantización disponibles.
-- **Opciones de despliegue**: al estar basado en `diffusers`, se puede usar con la biblioteca de HuggingFace, así como con herramientas compatibles como `vLLM` (si soporta difusión), `Ollama` (si se convierte a formato GGUF) o `llama.cpp` (para modelos de difusión cuantizados, aunque no es el uso típico).
+- **Opciones de despliegue**: al estar basado en `diffusers`, se puede usar con la biblioteca de Hugging Face, así como con herramientas compatibles como `vLLM` (si soporta difusión), `Ollama` (si se convierte a formato GGUF) o `llama.cpp` (para modelos de difusión cuantizados, aunque no es el uso típico).
 - **Latencia y throughput**: no disponibles.
 
 ## Comparativa con modelos similares
@@ -68,5 +68,5 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa con 
 
 ## Enlaces
 
-- [HuggingFace - Akalabeth12/Text-to-Image](https://huggingface.co/Akalabeth12/Text-to-Image)
+- [Hugging Face - Akalabeth12/Text-to-Image](https://huggingface.co/Akalabeth12/Text-to-Image)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la información proporcionada.

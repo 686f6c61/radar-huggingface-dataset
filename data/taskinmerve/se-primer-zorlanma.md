@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SE Primer — zorlanma modeli v2.1.0 es un clasificador tabular binario desarrollado por la usuaria de HuggingFace `taskinmerve` como componente del proyecto educativo SE Primer, un juego de simulación de crisis para estudiantes de ingeniería de software. El modelo estima, al comienzo de cada decisión del juego, la probabilidad de que el jugador se "bloquee" en la siguiente decisión (es decir, que elija la opción arriesgada B o agote el tiempo). No es un modelo de lenguaje ni una red neuronal profunda: es un pipeline de `scikit-learn` con estandarización y regresión logística, exportado a ONNX (opset 17).
+SE Primer — zorlanma modeli v2.1.0 es un clasificador tabular binario desarrollado por la usuaria de Hugging Face `taskinmerve` como componente del proyecto educativo SE Primer, un juego de simulación de crisis para estudiantes de ingeniería de software. El modelo estima, al comienzo de cada decisión del juego, la probabilidad de que el jugador se "bloquee" en la siguiente decisión (es decir, que elija la opción arriesgada B o agote el tiempo). No es un modelo de lenguaje ni una red neuronal profunda: es un pipeline de `scikit-learn` con estandarización y regresión logística, exportado a ONNX (opset 17).
 
 El modelo resuelve un problema de adaptación pedagógica: cuando la probabilidad estimada es mayor o igual a 0,5, se activa un "modo apoyo" que elimina la cuenta atrás y muestra una tarjeta de pista; por debajo de ese umbral se mantienen las reglas fijas de la versión anterior. La relevancia es limitada y acotada al contexto del juego: se trata de una demostración de extremo a extremo del flujo de trabajo (entrenamiento, exportación a ONNX, publicación y verificación de paridad), no de un modelo listo para producción con estudiantes reales.
 
@@ -41,7 +41,7 @@ Los datos provienen de `data/oturmas.csv` (sha256 `2d1547bf75e2a7d4…`) y la et
 ## Casos de uso
 
 - Adaptación de dificultad en tiempo real dentro del juego SE Primer: el motor consulta el modelo al inicio de cada decisión y, si p ≥ 0,5, desactiva la cuenta atrás y abre una tarjeta de pista; es adecuado porque la latencia de una regresión logística ONNX es mínima y no interrumpe el flujo de juego.
-- Demostración docente del ciclo completo de MLOps: entrenamiento con scikit-learn, exportación a ONNX, publicación en HuggingFace y verificación de paridad numérica (diferencia máxima 8,74e-08); útil en asignaturas de ingeniería de software o aprendizaje automático.
+- Demostración docente del ciclo completo de MLOps: entrenamiento con scikit-learn, exportación a ONNX, publicación en Hugging Face y verificación de paridad numérica (diferencia máxima 8,74e-08); útil en asignaturas de ingeniería de software o aprendizaje automático.
 - Validación de contratos de datos en pipelines educativos: el orden de las 9 características en `config.json` sirve como especificación ejecutable para probar integraciones entre el frontend del juego y el servicio de inferencia.
 - Investigación sobre señales de bloqueo en entornos gamificados: los coeficientes estandarizados permiten analizar qué variables (tiempo de decisión previo, historial de riesgo) se asocian con el bloqueo, siempre con la cautela de que el 97 % de los datos es sintético.
 - Prototipado de sistemas de tutoría adaptativa: el patrón de "predicción → modo apoyo → registro de la intervención" es reutilizable en otras aplicaciones educativas, aunque el modelo concreto no sea transferible fuera de los 3 escenarios de SE Primer.
@@ -87,5 +87,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taskinmerve/se-primer-zorlanma
+- Modelo en Hugging Face: https://huggingface.co/taskinmerve/se-primer-zorlanma
 - Repositorio del proyecto SE Primer: https://github.com/mervetask990-art/yzm301-se-primer

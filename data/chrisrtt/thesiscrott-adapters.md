@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThesisCRott-adapters (7B/14B) | Adaptadores sobre 7B y 14B | No especificado (base: 32.768) | Reparación de vulnerabilidades C/C++ con CWE y taint slice | Apache-2.0 | HuggingFace (98 adaptadores) |
-| Qwen2.5-Coder-7B/14B-Instruct | 7B / 14B | 32.768 | Asistente de código general | Apache-2.0 | HuggingFace, muy extendido |
+| ThesisCRott-adapters (7B/14B) | Adaptadores sobre 7B y 14B | No especificado (base: 32.768) | Reparación de vulnerabilidades C/C++ con CWE y taint slice | Apache-2.0 | Hugging Face (98 adaptadores) |
+| Qwen2.5-Coder-7B/14B-Instruct | 7B / 14B | 32.768 | Asistente de código general | Apache-2.0 | Hugging Face, muy extendido |
 | Adaptadores de reparación de vulnerabilidades sobre Llama o CodeLlama | No disponible | No disponible | Reparación de código de seguridad | Varía según el base | No disponible en la información proporcionada |
 
 La comparación relevante es con el propio modelo base sin ajustar: los adaptadores no cambian el tamaño ni el contexto, sino la distribución de salida hacia parches con etiqueta CWE. No se dispone de datos de rendimiento comparado en la información proporcionada.
@@ -83,7 +83,7 @@ La comparación relevante es con el propio modelo base sin ajustar: los adaptado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chrisrtt/ThesisCRott-adapters
+- Hugging Face: https://huggingface.co/chrisrtt/ThesisCRott-adapters
 - Repositorio del artefacto: https://github.com/chrisrtt34/ThesisCRott-artifact
 - Modelo base 7B: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Modelo base 14B: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct

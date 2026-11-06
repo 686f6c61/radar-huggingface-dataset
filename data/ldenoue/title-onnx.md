@@ -6,7 +6,7 @@ Title es un modelo de lenguaje especializado en la generación de títulos y des
 
 El problema que resuelve es concreto: dado un fragmento de texto (típicamente la transcripción de un clip de audio o vídeo), producir un título factual de entre 3 y 8 palabras y una descripción de una o dos frases que identifique ese pasaje concreto, no su tema genérico. El registro es deliberadamente sobrio: sin emojis, sin hashtags y sin clickbait. Esto lo hace adecuado para aplicaciones de gestión de contenido, podcasts, notas de voz o bibliotecas multimedia donde se necesita metadatos automáticos y consistentes.
 
-La relevancia actual del modelo radica en su enfoque de despliegue: prioriza la latencia y la privacidad en dispositivo frente a la inferencia en la nube. Según la model card, el autor midió que Title escribe texto entre 5,7 y 8,3 veces más rápido en la GPU (vía MLX) que en el Neural Engine (vía Core ML), lo que motivó descartar la build de Core ML. El repositorio de HuggingFace ocupa 0,2 GB e incluye pesos cuantizados a 6 bits en formato safetensors, además de una variante ONNX según el identificador del repositorio.
+La relevancia actual del modelo radica en su enfoque de despliegue: prioriza la latencia y la privacidad en dispositivo frente a la inferencia en la nube. Según la model card, el autor midió que Title escribe texto entre 5,7 y 8,3 veces más rápido en la GPU (vía MLX) que en el Neural Engine (vía Core ML), lo que motivó descartar la build de Core ML. El repositorio de Hugging Face ocupa 0,2 GB e incluye pesos cuantizados a 6 bits en formato safetensors, además de una variante ONNX según el identificador del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Title (ldenoue/title-onnx) | 350 M (base Granite 4.0 350M) | no disponible | Titulado y descripción on-device | Source-available (Desert Ant Labs) | HuggingFace, MLX para Apple |
-| ibm-granite/granite-4.0-350m | 350 M | no disponible | Modelo base de propósito general | no disponible en esta ficha | HuggingFace |
+| Title (ldenoue/title-onnx) | 350 M (base Granite 4.0 350M) | no disponible | Titulado y descripción on-device | Source-available (Desert Ant Labs) | Hugging Face, MLX para Apple |
+| ibm-granite/granite-4.0-350m | 350 M | no disponible | Modelo base de propósito general | no disponible en esta ficha | Hugging Face |
 | Alternativas de titulado on-device | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos especializados en titulado on-device con los que comparar parámetros, contexto o rendimiento. La comparación más directa es con su modelo base, `ibm-granite/granite-4.0-350m`, del que hereda arquitectura y tamaño, pero no se documentan en la información proporcionada las especificaciones completas del base (contexto, licencia, cuantizaciones).
@@ -87,7 +87,7 @@ No se dispone de información sobre otros modelos especializados en titulado on-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ldenoue/title-onnx
+- Modelo en Hugging Face: https://huggingface.co/ldenoue/title-onnx
 - Pesos v0.1.0 del modelo original: https://huggingface.co/desert-ant-labs/title/tree/v0.1.0
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-350m
 - Repositorio del SDK: https://github.com/Desert-Ant-Labs/desert-ant-core

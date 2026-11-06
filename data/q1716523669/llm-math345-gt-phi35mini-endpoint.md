@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| q1716523669/llm-math345-gt-phi35mini-endpoint | 3.8B (base) | 32K | GRPO sobre Phi-3.5-mini | No disponible | HuggingFace |
-| q1716523669/llama32-3b-self-certainty-math345 | 3B (base) | 128K | Self-Certainty RL (intrinsic reward) sobre Llama-3.2-3B-Instruct | No disponible | HuggingFace |
-| microsoft/Phi-3.5-mini-instruct | 3.8B | 32K | Instruct fine-tune | MIT | HuggingFace |
-| q1716523669/llm-math345-gt-phi4mini-endpoint | 3.8B (base Phi-4-mini) | no disponible | GRPO sobre Phi-4-mini | No disponible | HuggingFace |
+| q1716523669/llm-math345-gt-phi35mini-endpoint | 3.8B (base) | 32K | GRPO sobre Phi-3.5-mini | No disponible | Hugging Face |
+| q1716523669/llama32-3b-self-certainty-math345 | 3B (base) | 128K | Self-Certainty RL (intrinsic reward) sobre Llama-3.2-3B-Instruct | No disponible | Hugging Face |
+| microsoft/Phi-3.5-mini-instruct | 3.8B | 32K | Instruct fine-tune | MIT | Hugging Face |
+| q1716523669/llm-math345-gt-phi4mini-endpoint | 3.8B (base Phi-4-mini) | no disponible | GRPO sobre Phi-4-mini | No disponible | Hugging Face |
 
 Nota: los modelos del autor `q1716523669` forman parte de una serie experimental para comparar métodos de RL (GRPO vs. Self-Certainty) en razonamiento matemático. No se dispone de benchmarks públicos que los comparen.
 
@@ -78,7 +78,7 @@ Nota: los modelos del autor `q1716523669` forman parte de una serie experimental
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/q1716523669/llm-math345-gt-phi35mini-endpoint)
+- [Hugging Face del modelo](https://huggingface.co/q1716523669/llm-math345-gt-phi35mini-endpoint)
 - [Paper DeepSeekMath (GRPO)](https://huggingface.co/papers/2402.03300)
 - [Modelo base microsoft/Phi-3.5-mini-instruct](https://huggingface.co/microsoft/Phi-3.5-mini-instruct)
 - [TRL (Transformers Reinforcement Learning)](https://github.com/huggingface/trl)

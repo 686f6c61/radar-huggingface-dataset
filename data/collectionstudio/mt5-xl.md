@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mT5-xl es la variante de mayor tamano intermedia de la familia mT5 (multilingual T5), un modelo de lenguaje de tipo encoder-decoder desarrollado por Google Research y publicado originalmente en 2020 en el articulo "mT5: A massively multilingual pre-trained text-to-text transformer". Esta ficha corresponde a la copia subida por el usuario CollectionStudio al Hub de HuggingFace bajo el identificador CollectionStudio/mt5-xl, que reproduce el checkpoint original de Google sin modificaciones aparentes.
+mT5-xl es la variante de mayor tamano intermedia de la familia mT5 (multilingual T5), un modelo de lenguaje de tipo encoder-decoder desarrollado por Google Research y publicado originalmente en 2020 en el articulo "mT5: A massively multilingual pre-trained text-to-text transformer". Esta ficha corresponde a la copia subida por el usuario CollectionStudio al Hub de Hugging Face bajo el identificador CollectionStudio/mt5-xl, que reproduce el checkpoint original de Google sin modificaciones aparentes.
 
 El modelo sigue la arquitectura T5.1.1 y fue preentrenado sobre el corpus mC4, una version multilingue de Common Crawl que cubre 101 idiomas. Se trata de un modelo exclusivamente preentrenado, sin ajuste supervisado: no incorpora RLHF, DPO ni instrucciones, por lo que debe afinarse antes de usarse en cualquier tarea concreta.
 
@@ -90,7 +90,7 @@ Nota: los datos de mT5-xxl, mT5-large, mBART-50 y XLM-RoBERTa-large se incluyen 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CollectionStudio/mt5-xl
+- Modelo en Hugging Face: https://huggingface.co/CollectionStudio/mt5-xl
 - Repositorio oficial de mT5 en GitHub: https://github.com/google-research/multilingual-t5
 - Articulo original: https://arxiv.org/abs/2010.11934
 - Dataset mC4: https://www.tensorflow.org/datasets/catalog/c4#c4multilingual

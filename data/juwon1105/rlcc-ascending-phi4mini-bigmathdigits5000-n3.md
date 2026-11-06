@@ -85,7 +85,7 @@ La comparacion directa no es posible sin benchmarks comunes. El valor diferencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juwon1105/RLCC-ascending-phi4mini-bigmathdigits5000-n3
+- Modelo en Hugging Face: https://huggingface.co/juwon1105/RLCC-ascending-phi4mini-bigmathdigits5000-n3
 - Dataset de entrenamiento: https://huggingface.co/datasets/mehuldamani/big-math-digits
 - Paper RLCR (base del metodo, bajo revision): Damani, M., Puri, I., Slocum, S., Shenfeld, I., Choshen, L., Kim, Y., Andreas, J. (2026). "Beyond Binary Rewards: Training LMs to Reason about their Uncertainty". ICLR 2026.
 - Paper RLCC (acompana este checkpoint, bajo revision anonima): "Confidence as Curriculum: Reinforcement Learning for Joint Reasoning and Calibration".

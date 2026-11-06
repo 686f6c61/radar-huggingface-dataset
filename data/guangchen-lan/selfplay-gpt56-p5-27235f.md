@@ -88,14 +88,14 @@ La comparación es únicamente estructural: no existen métricas de rendimiento 
 - Sesgos: no evaluados. Los sesgos del modelo base (Llama 3.1) y los inducidos por las etiquetas de tema de un modelo propietario externo permanecen sin caracterizar.
 - Riesgo de alucinación: no medido en estos adaptadores; se hereda el comportamiento del modelo base, que puede inventar hechos con seguridad.
 - Idiomas y contexto: el repositorio no declara idiomas. Se desconoce la longitud de secuencia usada durante el ajuste, por lo que el contexto efectivo de los adaptadores puede ser muy inferior a los 128k del base.
-- Discrepancia de identificadores: la ficha de HuggingFace apunta a `Guangchen-Lan/selfplay-gpt56-p5-27235f`, mientras que el ejemplo de código del README usa `zhihz0535/selfplay-gpt56-p5-27235f`. Conviene verificar cuál de los dos aloja realmente los adaptadores.
+- Discrepancia de identificadores: la ficha de Hugging Face apunta a `Guangchen-Lan/selfplay-gpt56-p5-27235f`, mientras que el ejemplo de código del README usa `zhihz0535/selfplay-gpt56-p5-27235f`. Conviene verificar cuál de los dos aloja realmente los adaptadores.
 - Dependencia de un servicio propietario: las etiquetas de tema proceden de un modelo de terceros no reproducible y sujeta a condiciones de uso ajenas; esto limita la reproducibilidad completa del pipeline.
 - Madurez: 0 descargas y 0 likes, sin issues ni validación externa documentada. No debe tratarse como artefacto estable.
 - Formato: solo adaptadores PEFT en safetensors. No hay GGUF, cuantizaciones listas para usar ni versiones fusionadas publicadas.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Guangchen-Lan/selfplay-gpt56-p5-27235f
+- Repositorio en Hugging Face: https://huggingface.co/Guangchen-Lan/selfplay-gpt56-p5-27235f
 - Modelo base: https://huggingface.co/mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated
 - Revisión del modelo base usada en el README: `368c8ed94ce4c986e7b9ca5c159651ef753908ce`
 - Repositorio citado en el ejemplo de carga del README: https://huggingface.co/zhihz0535/selfplay-gpt56-p5-27235f

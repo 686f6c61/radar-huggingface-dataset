@@ -75,7 +75,7 @@ No se han publicado otros benchmarks (MMLU, HumanEval, GSM8K, etc.) en la inform
 | CER en test zh-en | 8,51 % | no disponible | 25,53 % |
 | Licencia | Apache-2.0 | no disponible | no disponible |
 | Formato de pesos | CT2 float16 | CT2 | PyTorch |
-| Disponibilidad | HuggingFace | HuggingFace | HuggingFace |
+| Disponibilidad | Hugging Face | Hugging Face | Hugging Face |
 
 La comparativa se limita a los datos disponibles. El modelo analizado destaca por su especialización en code-switching chino-inglés, mientras que las alternativas son versiones generales sin fine-tuning específico.
 
@@ -91,7 +91,7 @@ La comparativa se limita a los datos disponibles. El modelo analizado destaca po
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Creaturelove7/faster-whisper-small-ntu-ml2021-ct2
+- Hugging Face: https://huggingface.co/Creaturelove7/faster-whisper-small-ntu-ml2021-ct2
 - Modelo base (adaptador LoRA): https://huggingface.co/Creaturelove7/whisper-small-lora-ntu-ml2021
 - Repositorio de faster-whisper: https://github.com/SYSTRAN/faster-whisper
 - Conversión estándar de referencia: https://huggingface.co/Systran/faster-whisper-small

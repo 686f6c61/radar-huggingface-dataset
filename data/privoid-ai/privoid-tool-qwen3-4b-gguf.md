@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks comparativos frente a otros modelos de la m
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/Privoid-ai/Privoid-Tool-Qwen3-4B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/Privoid-ai/Privoid-Tool-Qwen3-4B-GGUF
 - Modelo base (adaptador fusionado): https://huggingface.co/Privoid-ai/Privoid-Tool-Qwen3-4B
 - Repositorio de llama.cpp (commit de conversión `dde879bc4f`): https://github.com/ggml-org/llama.cpp
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales relevantes para este modelo.

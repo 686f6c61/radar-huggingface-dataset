@@ -55,7 +55,7 @@ No se documenta ningún entrenamiento o ajuste adicional: el artefacto es una tr
 - Estudio de interpretabilidad de subespacios: la componente `whiten` del nombre sugiere un preprocesado de blanqueado de pesos, útil para analizar qué direcciones del espacio de activaciones se ven afectadas por la descomposición SVD.
 - Comparación de reglas de selección de componentes: este artefacto se puede enfrentar a otras celdas con reglas distintas (`protk8` y variantes) para determinar qué criterio de restauración recupera antes el comportamiento de rechazo.
 - Docencia e investigación académica: material para prácticas sobre compresión de LLM, trade-off seguridad/utilidad y evaluación de modelos derivados.
-- Auditoría de derivados de Llama 2: análisis de la trazabilidad de un checkpoint comunitario con metadatos incoherentes, útil para diseñar listas de comprobación de calidad de artefactos publicados en HuggingFace.
+- Auditoría de derivados de Llama 2: análisis de la trazabilidad de un checkpoint comunitario con metadatos incoherentes, útil para diseñar listas de comprobación de calidad de artefactos publicados en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| svdsafety_l2_remove40_whiten_protk8 | 6,74 mil millones | 4.096 tokens (base) | Llama 2 Community License | HuggingFace, 0 descargas | No evaluado |
-| meta-llama/Llama-2-7b-chat-hf | 6,74 mil millones | 4.096 tokens | Llama 2 Community License | HuggingFace (modelo base) | No comparable directamente: es la referencia sin comprimir |
-| Mistral-7B-Instruct-v0.2 | 7,24 mil millones | 32.768 tokens | Apache 2.0 | HuggingFace | Superior en contexto y licencia permisiva; sin datos comparativos publicados para este artefacto |
-| Llama-3.1-8B-Instruct | 8,03 mil millones | 128.000 tokens | Llama 3.1 Community License | HuggingFace | Familia posterior, con contexto muy superior |
+| svdsafety_l2_remove40_whiten_protk8 | 6,74 mil millones | 4.096 tokens (base) | Llama 2 Community License | Hugging Face, 0 descargas | No evaluado |
+| meta-llama/Llama-2-7b-chat-hf | 6,74 mil millones | 4.096 tokens | Llama 2 Community License | Hugging Face (modelo base) | No comparable directamente: es la referencia sin comprimir |
+| Mistral-7B-Instruct-v0.2 | 7,24 mil millones | 32.768 tokens | Apache 2.0 | Hugging Face | Superior en contexto y licencia permisiva; sin datos comparativos publicados para este artefacto |
+| Llama-3.1-8B-Instruct | 8,03 mil millones | 128.000 tokens | Llama 3.1 Community License | Hugging Face | Familia posterior, con contexto muy superior |
 
 Los datos de las tres alternativas proceden de la documentación pública de esos modelos, no de la información proporcionada sobre este checkpoint. Para el modelo analizado no existe ningún benchmark publicado que permita una comparación cuantitativa.
 
@@ -98,7 +98,7 @@ Los datos de las tres alternativas proceden de la documentación pública de eso
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svdsafety_l2_remove40_whiten_protk8
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svdsafety_l2_remove40_whiten_protk8
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper de Llama 2: https://arxiv.org/abs/2307.09288
 - Licencia y política de uso: `LICENSE.txt` y `USE_POLICY.md` incluidos en el repositorio del modelo

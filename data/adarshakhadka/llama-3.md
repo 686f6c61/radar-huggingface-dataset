@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`adarshakhadka/llama-3` es un repositorio alojado en HuggingFace por el usuario adarshakhadka, publicado el 20 de septiembre de 2026 y sin actualizaciones posteriores. A fecha de la consulta acumula 0 descargas y 0 "likes", y su model card se limita a la linea de metadatos `license: llama3`, sin ninguna descripcion del modelo, del proceso de entrenamiento ni de los datos utilizados. El repositorio no declara pipeline de inferencia, idiomas soportados ni tamano de parametros.
+`adarshakhadka/llama-3` es un repositorio alojado en Hugging Face por el usuario adarshakhadka, publicado el 20 de septiembre de 2026 y sin actualizaciones posteriores. A fecha de la consulta acumula 0 descargas y 0 "likes", y su model card se limita a la linea de metadatos `license: llama3`, sin ninguna descripcion del modelo, del proceso de entrenamiento ni de los datos utilizados. El repositorio no declara pipeline de inferencia, idiomas soportados ni tamano de parametros.
 
 El nombre del repositorio y la licencia declarada apuntan a la familia Llama 3 de Meta, pero el autor no documenta si se trata de un fine-tuning, de una conversion de formato, de un reupload de pesos oficiales o de un contenedor vacio o de prueba. No hay informacion verificable sobre arquitectura, numero de tokens de entrenamiento, composicion del dataset ni metodologia de alineacion.
 
@@ -66,10 +66,10 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificables |
 |---|---|---|---|---|---|
-| adarshakhadka/llama-3 | no disponible | no disponible | llama3 | HuggingFace, 0 descargas | No |
-| Meta Llama 3 8B | 8B | 8.192 tokens | Llama 3 Community License | HuggingFace, pesos oficiales | Si |
-| Meta Llama 3.1 8B | 8B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, pesos oficiales | Si |
-| Mistral 7B | 7,3B | 32.000 tokens | Apache 2.0 | HuggingFace, pesos oficiales | Si |
+| adarshakhadka/llama-3 | no disponible | no disponible | llama3 | Hugging Face, 0 descargas | No |
+| Meta Llama 3 8B | 8B | 8.192 tokens | Llama 3 Community License | Hugging Face, pesos oficiales | Si |
+| Meta Llama 3.1 8B | 8B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, pesos oficiales | Si |
+| Mistral 7B | 7,3B | 32.000 tokens | Apache 2.0 | Hugging Face, pesos oficiales | Si |
 
 Las filas de modelos de referencia se incluyen unicamente como contexto de categoria; no implican equivalencia funcional con el repositorio evaluado.
 
@@ -85,7 +85,7 @@ Las filas de modelos de referencia se incluyen unicamente como contexto de categ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adarshakhadka/llama-3
+- Repositorio en Hugging Face: https://huggingface.co/adarshakhadka/llama-3
 - Meta Llama 3 (familia de referencia): https://huggingface.co/meta-llama
 - Licencia Meta Llama 3: https://llama.meta.com/llama3/license/
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada. Los resultados de busqueda obtenidos no guardan relacion con el modelo y se han descartado.

@@ -71,10 +71,10 @@ El modelo de 4B supera a todos los modelos de su rango de tamaño en todos los b
 
 | Modelo | Parámetros | Contexto | Video-MME | Licencia | Disponibilidad |
 | --- | ---: | ---: | ---: | --- | --- |
-| video-SALMONN 2 Pro (4B) | 5,36B | no disponible | 75.4 | Apache 2.0 | HuggingFace |
-| Qwen2.5-Omni (3B) | 3B | no disponible | 62.0 | Apache 2.0 | HuggingFace |
-| Qwen2.5-VL (3B) | 3B | no disponible | 61.5 | Apache 2.0 | HuggingFace |
-| video-SALMONN 2+ (3B) | 3B | no disponible | 68.3 | Apache 2.0 | HuggingFace |
+| video-SALMONN 2 Pro (4B) | 5,36B | no disponible | 75.4 | Apache 2.0 | Hugging Face |
+| Qwen2.5-Omni (3B) | 3B | no disponible | 62.0 | Apache 2.0 | Hugging Face |
+| Qwen2.5-VL (3B) | 3B | no disponible | 61.5 | Apache 2.0 | Hugging Face |
+| video-SALMONN 2+ (3B) | 3B | no disponible | 68.3 | Apache 2.0 | Hugging Face |
 
 El modelo de 4B ofrece un rendimiento claramente superior a los modelos de 3B de la competencia, con una ventaja de más de 7 puntos en Video-MME. Su licencia Apache 2.0 permite uso comercial sin restricciones.
 
@@ -89,7 +89,7 @@ El modelo de 4B ofrece un rendimiento claramente superior a los modelos de 3B de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tsinghua-ee/video-SALMONN-2-Pro-4B
+- Modelo en Hugging Face: https://huggingface.co/tsinghua-ee/video-SALMONN-2-Pro-4B
 - Paper (arXiv): https://arxiv.org/abs/2506.15220
 - Repositorio GitHub: https://github.com/bytedance/video-SALMONN-2
 - Modelo video-SALMONN 2 (base): https://huggingface.co/tsinghua-ee/video-SALMONN-2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jieuncjc/few-shot-multimodal` es un repositorio de HuggingFace publicado por el usuario `jieuncjc` que, pese a su nombre y a las etiquetas asociadas, no contiene un modelo entrenado. La model card lo describe explicitamente como una nota de investigacion exploratoria ("research-notes") sobre el tema de few-shot multimodal, en la que se recogen el planteamiento de una pregunta de investigacion, los posibles factores de confusion, una comparacion propuesta con baselines emparejados y los requisitos de reproducibilidad previstos antes de reportar cualquier resultado.
+`jieuncjc/few-shot-multimodal` es un repositorio de Hugging Face publicado por el usuario `jieuncjc` que, pese a su nombre y a las etiquetas asociadas, no contiene un modelo entrenado. La model card lo describe explicitamente como una nota de investigacion exploratoria ("research-notes") sobre el tema de few-shot multimodal, en la que se recogen el planteamiento de una pregunta de investigacion, los posibles factores de confusion, una comparacion propuesta con baselines emparejados y los requisitos de reproducibilidad previstos antes de reportar cualquier resultado.
 
 El repositorio incluye unicamente dos artefactos documentales: `reading.md` (la nota principal) y `README.md` (la documentacion). El autor indica de forma explicita que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales, y que no se reclama ninguna mejora en benchmarks, ablacion completada, codigo publicado ni checkpoint entrenado.
 
@@ -42,7 +42,7 @@ El recuento de 24.832 parametros que aparece en los metadatos de safetensors es 
 - Diseno de protocolo experimental: emplear la lista de requisitos de reproducibilidad (versiones de dataset, semillas, hardware, logs) como checklist para un estudio propio de evaluacion few-shot.
 - Seleccion de baselines: tomar la comparacion propuesta con baselines emparejados como borrador para definir que modelos y condiciones habria que igualar en una evaluacion justa.
 - Docencia y divulgacion: utilizar la nota como ejemplo de como se estructura una propuesta de investigacion que separa explicitamente hipotesis de resultados.
-- Auditoria de repositorios: servir como caso practico de por que las etiquetas y el recuento de parametros de HuggingFace no bastan para determinar si un repositorio contiene un modelo desplegable.
+- Auditoria de repositorios: servir como caso practico de por que las etiquetas y el recuento de parametros de Hugging Face no bastan para determinar si un repositorio contiene un modelo desplegable.
 - Planificacion de riesgos: revisar la seccion de failure modes y preguntas abiertas para anticipar modos de fallo en pipelines multimodales con pocos ejemplos.
 
 En ningun caso el repositorio sirve para inferencia, generacion ni despliegue en produccion.
@@ -85,6 +85,6 @@ No disponible. No existe una categoria de comparacion valida: el repositorio no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jieuncjc/few-shot-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/jieuncjc/few-shot-multimodal
 - Nota principal del repositorio: `reading.md` (incluido en el propio repositorio)
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales asociados.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SFT-4B-ScaleCUA-EvoCUA es un ajuste fino supervisado (SFT) del modelo multimodal Qwen/Qwen3-VL-4B-Instruct, publicado por el usuario HaoranLiu en HuggingFace. El modelo está especializado en computer use y agentes de interfaz gráfica (GUI agents): recibe capturas de pantalla junto con texto y produce acciones sobre entornos de escritorio, un pipeline declarado como image-text-to-text. Cuenta con 4.437.815.808 parámetros (~4,44 B) y un repositorio de 17,8 GB en formato safetensors.
+SFT-4B-ScaleCUA-EvoCUA es un ajuste fino supervisado (SFT) del modelo multimodal Qwen/Qwen3-VL-4B-Instruct, publicado por el usuario HaoranLiu en Hugging Face. El modelo está especializado en computer use y agentes de interfaz gráfica (GUI agents): recibe capturas de pantalla junto con texto y produce acciones sobre entornos de escritorio, un pipeline declarado como image-text-to-text. Cuenta con 4.437.815.808 parámetros (~4,44 B) y un repositorio de 17,8 GB en formato safetensors.
 
 El entrenamiento se realizó sobre trayectorias de un único profesor, EvoCUA-8B-20260105, extraídas del dataset HaoranLiu/ScaleCUA (rama desktop/use/train), con 865 trayectorias utilizables de 1808 filas de origen (47,8 %). Forma parte de una campaña de ablación más amplia en la que se comparan distintas fuentes de datos de destilación sobre el mismo modelo base y la misma receta de entrenamiento; este es el brazo con menor volumen de datos de todos los publicados.
 
@@ -76,10 +76,10 @@ Protocolo de evaluacion declarado: 332 tareas, decodificacion greedy, max_steps 
 
 | Modelo | Parametros | Contexto | lite.osworld (media) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SFT-4B-ScaleCUA-EvoCUA | ~4,44 B | 4096 en SFT | pendiente | other | HuggingFace, safetensors |
-| Qwen3-VL-4B-Instruct (base) | ~4 B | no disponible en la informacion | 0,3062 (87 tareas) | no disponible | HuggingFace |
-| SFT-4B-ScaleCUA-Qwen38 | ~4,44 B | 4096 en SFT | 0,3644 (114 tareas) | other | HuggingFace, safetensors |
-| SFT-4B-ScaleCUA-MixedOpen | ~4,44 B | 4096 en SFT | 0,3750 (118 tareas) | other | HuggingFace, safetensors |
+| SFT-4B-ScaleCUA-EvoCUA | ~4,44 B | 4096 en SFT | pendiente | other | Hugging Face, safetensors |
+| Qwen3-VL-4B-Instruct (base) | ~4 B | no disponible en la informacion | 0,3062 (87 tareas) | no disponible | Hugging Face |
+| SFT-4B-ScaleCUA-Qwen38 | ~4,44 B | 4096 en SFT | 0,3644 (114 tareas) | other | Hugging Face, safetensors |
+| SFT-4B-ScaleCUA-MixedOpen | ~4,44 B | 4096 en SFT | 0,3750 (118 tareas) | other | Hugging Face, safetensors |
 
 Los tres brazos SFT comparten modelo base, receta e hiperparametros, y solo difieren en el profesor y en el volumen de datos (865, 1224 y 1430 trayectorias respectivamente), por lo que no constituyen contrastes de una sola variable. No se dispone de modelos comparables fuera de esta campana en la informacion proporcionada.
 
@@ -97,11 +97,11 @@ Los tres brazos SFT comparten modelo base, receta e hiperparametros, y solo difi
 - Repositorio de 17,8 GB con dos ramas (main e iter_431), lo que puede complicar la gestion del almacenamiento.
 - Contexto de entrenamiento limitado a 4096 tokens: historiales de interaccion largos pueden truncarse.
 - Capacidades de tool calling, vision general y thinking no estan documentadas ni confirmadas.
-- La busqueda web realizada no devolvio resultados relevantes sobre el modelo (unicamente paginas genericas de Microsoft), por lo que toda la informacion procede de HuggingFace.
+- La busqueda web realizada no devolvio resultados relevantes sobre el modelo (unicamente paginas genericas de Microsoft), por lo que toda la informacion procede de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HaoranLiu/SFT-4B-ScaleCUA-EvoCUA
+- Modelo en Hugging Face: https://huggingface.co/HaoranLiu/SFT-4B-ScaleCUA-EvoCUA
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Dataset de origen: https://huggingface.co/HaoranLiu/ScaleCUA
 - Brazo comparable (profesor Qwen3.8-27B): https://huggingface.co/HaoranLiu/SFT-4B-ScaleCUA-Qwen38

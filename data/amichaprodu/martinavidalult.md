@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MARTINAVIDALULT es un adaptador LoRA de generacion de imagenes (text-to-image) publicado por el usuario amichaprodu en HuggingFace. Se trata de un fine-tuning de bajo rango sobre el modelo base black-forest-labs/FLUX.1-dev, el transformer de difusion de 12.000 millones de parametros de Black Forest Labs. El repositorio ocupa 0,2 GB, un tamano compatible con un adaptador LoRA y no con un modelo completo, y se distribuye en formato diffusers.
+MARTINAVIDALULT es un adaptador LoRA de generacion de imagenes (text-to-image) publicado por el usuario amichaprodu en Hugging Face. Se trata de un fine-tuning de bajo rango sobre el modelo base black-forest-labs/FLUX.1-dev, el transformer de difusion de 12.000 millones de parametros de Black Forest Labs. El repositorio ocupa 0,2 GB, un tamano compatible con un adaptador LoRA y no con un modelo completo, y se distribuye en formato diffusers.
 
 El modelo no incluye model card tecnica: la informacion publicada se limita a una etiqueta de plantilla (template:diffusion-lora), un instance_prompt nulo, una imagen de ejemplo en la galeria y el campo base_model. No se documentan el rango, el alpha, los hiperparametros de entrenamiento, el dataset utilizado ni el numero de pasos, por lo que se desconoce por completo el procedimiento seguido para obtener el adaptador.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Parametros | Salida tipica | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MARTINAVIDALULT | LoRA sobre FLUX.1-dev | No disponible (repo de 0,2 GB); base de 12.000 M | Imagen, resolucion dependiente del pipeline de FLUX.1-dev | No disponible en el repositorio | HuggingFace, 0 descargas, 0 likes |
-| FLUX.1-dev (base) | Transformer de difusion MMDiT | 12.000 M | Imagen de alta resolucion | No comercial (Black Forest Labs) | HuggingFace, muy ampliamente utilizado |
-| FLUX.1-schnell | Transformer de difusion MMDiT destilado | 12.000 M | Imagen en pocos pasos de muestreo | Apache 2.0 | HuggingFace, uso comercial permitido |
-| Stable Diffusion XL (base) | U-Net de difusion | Aproximadamente 3.500 M | Imagen 1024x1024 | OpenRAIL++ | HuggingFace y amplio ecosistema de LoRA |
+| MARTINAVIDALULT | LoRA sobre FLUX.1-dev | No disponible (repo de 0,2 GB); base de 12.000 M | Imagen, resolucion dependiente del pipeline de FLUX.1-dev | No disponible en el repositorio | Hugging Face, 0 descargas, 0 likes |
+| FLUX.1-dev (base) | Transformer de difusion MMDiT | 12.000 M | Imagen de alta resolucion | No comercial (Black Forest Labs) | Hugging Face, muy ampliamente utilizado |
+| FLUX.1-schnell | Transformer de difusion MMDiT destilado | 12.000 M | Imagen en pocos pasos de muestreo | Apache 2.0 | Hugging Face, uso comercial permitido |
+| Stable Diffusion XL (base) | U-Net de difusion | Aproximadamente 3.500 M | Imagen 1024x1024 | OpenRAIL++ | Hugging Face y amplio ecosistema de LoRA |
 
 No se dispone de datos de rendimiento comparado para este adaptador concreto, por lo que la comparacion se limita a parametros, tipo de arquitectura y condiciones de licencia. La ventaja practica de un LoRA frente a un fine-tuning completo es el tamano reducido y la posibilidad de combinarlo, pero tambien implica que su calidad depende por completo de la del modelo base.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparado para este adaptador concreto, po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amichaprodu/MARTINAVIDALULT
+- Modelo en Hugging Face: https://huggingface.co/amichaprodu/MARTINAVIDALULT
 - Archivos del repositorio: https://huggingface.co/amichaprodu/MARTINAVIDALULT/tree/main
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Documentacion de diffusers sobre carga de LoRA: https://huggingface.co/docs/diffusers

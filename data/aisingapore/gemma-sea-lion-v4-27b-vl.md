@@ -54,7 +54,7 @@ No se han publicado requisitos oficiales de hardware. A partir del tamaño de pa
 
 - VRAM estimada para inferencia: en precisión FP16 se necesitan aproximadamente 55 GB de VRAM (27,4 B × 2 bytes). Con cuantización int8, alrededor de 28 GB; con int4, unos 14 GB.
 - GPU recomendadas: para FP16 se requieren GPUs de clase profesional como A100 80 GB, H100 o similares. En consumer, una RTX 4090 (24 GB) solo podría ejecutar el modelo con cuantización int4 o int8 con limitaciones de contexto.
-- Opciones de despliegue: compatible con transformers, vLLM, TGI y text-generation-inference (según los tags de HuggingFace). También puede usarse con llama.cpp si se convierte a GGUF, aunque no se proporciona oficialmente.
+- Opciones de despliegue: compatible con transformers, vLLM, TGI y text-generation-inference (según los tags de Hugging Face). También puede usarse con llama.cpp si se convierte a GGUF, aunque no se proporciona oficialmente.
 - Latencia y throughput: no disponibles en la documentación.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ La comparativa se limita a los modelos de la misma familia, ya que no se dispone
 
 ## Enlaces
 
-- [HuggingFace - Gemma-SEA-LION-v4-27B-VL](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-VL)
+- [Hugging Face - Gemma-SEA-LION-v4-27B-VL](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-VL)
 - [Documentación SEA-LION - Gemma-SEA-LION-v4-27B-VL](https://docs.sea-lion.ai/models/sea-lion-v4/gemma-sea-lion-v4-27b-vl)
 - [Documentación SEA-LION - Gemma-SEA-LION-v4-27B](https://docs.sea-lion.ai/models/sea-lion-v4/gemma-sea-lion-v4-27b)
 - [GitHub - aisingapore/sealion](https://github.com/aisingapore/sealion/blob/main/models/sea-lion-v4/gemma-sea-lion-v4-27B.md)

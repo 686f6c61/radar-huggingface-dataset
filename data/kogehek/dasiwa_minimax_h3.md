@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kogehek/DaSiWa_MiniMax_H3 es un repositorio alojado en HuggingFace por el usuario kogehek del que no se ha publicado ninguna descripción tecnica: la model card se limita a un bloque de metadatos YAML con la licencia, sin texto explicativo, sin pipeline declarado y sin especificaciones de arquitectura, tamano o entrenamiento. En el momento de la consulta acumula 0 descargas y 0 likes, por lo que no existe validacion alguna por parte de la comunidad.
+kogehek/DaSiWa_MiniMax_H3 es un repositorio alojado en Hugging Face por el usuario kogehek del que no se ha publicado ninguna descripción tecnica: la model card se limita a un bloque de metadatos YAML con la licencia, sin texto explicativo, sin pipeline declarado y sin especificaciones de arquitectura, tamano o entrenamiento. En el momento de la consulta acumula 0 descargas y 0 likes, por lo que no existe validacion alguna por parte de la comunidad.
 
 Los unicos indicios disponibles son el propio nombre del repositorio y la licencia declarada, `minimax-h3`, cuyo texto enlaza al fichero LICENSE del repositorio MiniMaxAI/MiniMax-H3. Esto sugiere algun tipo de vinculacion con la familia MiniMax-H3, pero no hay ningun documento en la informacion proporcionada que confirme que se trate de un fine-tune, una conversion de formato, una cuantizacion o un derivado de dicho modelo. Cualquier afirmacion al respecto seria especulacion.
 
@@ -92,7 +92,7 @@ No disponible. El unico candidato identificable por la informacion proporcionada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kogehek/DaSiWa_MiniMax_H3
+- Repositorio en Hugging Face: https://huggingface.co/kogehek/DaSiWa_MiniMax_H3
 - Licencia referenciada (`minimax-h3`): https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/42ed227ee7df40d41602854ae760620d6eb651fe/LICENSE
 - Repositorio de la familia MiniMax-H3 (referencia indirecta, relacion no confirmada): https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web no devolvio ningun resultado relevante sobre este modelo.

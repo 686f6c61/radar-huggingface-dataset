@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio jwj32/ut-head-adaptive-seed42-step100 es un checkpoint publicado en HuggingFace por el usuario jwj32 el 19 de septiembre de 2026. Se trata de un artefacto de investigacion mas que de un modelo de proposito general: el nombre sugiere un experimento sobre la "cabeza" (head) del modelo con una variante "adaptive", entrenado con semilla 42 y detenido en el paso 100, lo que apunta a una ejecucion de ablation o de prueba de concepto. No se ha publicado ninguna model card con descripcion, pipeline, licencia ni idiomas soportados.
+El repositorio jwj32/ut-head-adaptive-seed42-step100 es un checkpoint publicado en Hugging Face por el usuario jwj32 el 19 de septiembre de 2026. Se trata de un artefacto de investigacion mas que de un modelo de proposito general: el nombre sugiere un experimento sobre la "cabeza" (head) del modelo con una variante "adaptive", entrenado con semilla 42 y detenido en el paso 100, lo que apunta a una ejecucion de ablation o de prueba de concepto. No se ha publicado ninguna model card con descripcion, pipeline, licencia ni idiomas soportados.
 
 El unico dato estructural verificable es el recuento de parametros: 4.022.468.096 (aproximadamente 4,02 mil millones), contenido en un unico formato safetensors. La etiqueta "qwen3" del repositorio indica que el checkpoint esta construido sobre la familia Qwen3, y el numero de parametros coincide con el orden de magnitud de Qwen3-4B, aunque esta correspondencia no esta confirmada por el autor. El tamano del repositorio, 16,1 GB, es coherente con pesos almacenados en precision de 32 bits (4 bytes por parametro), lo que implica que no se han publicado versiones cuantizadas.
 
@@ -70,7 +70,7 @@ No hay informacion suficiente para establecer una comparativa rigurosa. El unico
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| jwj32/ut-head-adaptive-seed42-step100 | 4,02 B | no disponible | no disponible | HuggingFace (19 descargas) | no disponible |
+| jwj32/ut-head-adaptive-seed42-step100 | 4,02 B | no disponible | no disponible | Hugging Face (19 descargas) | no disponible |
 | Qwen3-4B (referencia probable, no confirmada) | ~4 B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
 No se dispone de datos verificados sobre alternativas comparables en la informacion proporcionada, por lo que la comparativa queda como no disponible.
@@ -90,7 +90,7 @@ No se dispone de datos verificados sobre alternativas comparables en la informac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jwj32/ut-head-adaptive-seed42-step100
+- Repositorio en Hugging Face: https://huggingface.co/jwj32/ut-head-adaptive-seed42-step100
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible
 - Repositorio de codigo: no disponible

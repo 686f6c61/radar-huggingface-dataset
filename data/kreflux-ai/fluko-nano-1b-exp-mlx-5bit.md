@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fluko-Nano-1B-Exp-MLX-5bit es un repositorio de pesos publicado en HuggingFace por el usuario Kreflux-AI bajo licencia Apache 2.0. El identificador del repositorio sugiere un modelo de aproximadamente 1.000 millones de parametros ("1B"), de caracter experimental ("Exp"), distribuido en formato MLX con cuantizacion de 5 bits ("MLX-5bit"). No obstante, la model card publicada no contienemas que la declaracion de licencia: no incluye descripcion, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso.
+Fluko-Nano-1B-Exp-MLX-5bit es un repositorio de pesos publicado en Hugging Face por el usuario Kreflux-AI bajo licencia Apache 2.0. El identificador del repositorio sugiere un modelo de aproximadamente 1.000 millones de parametros ("1B"), de caracter experimental ("Exp"), distribuido en formato MLX con cuantizacion de 5 bits ("MLX-5bit"). No obstante, la model card publicada no contienemas que la declaracion de licencia: no incluye descripcion, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso.
 
 El repositorio presenta cero descargas y cero "likes" en el momento de la consulta, no tiene pipeline declarado y su fecha de creacion registrada (2026-09-18) es posterior a la fecha actual, lo que apunta a un error de metadatos, a un repositorio recien creado sin publicar o a un artefacto de prueba. La unica informacion verificable es la licencia (Apache 2.0), la region declarada (US) y el propio identificador.
 
@@ -102,8 +102,8 @@ Sobre los benchmarks no hay datos comparativos posibles para el modelo de Kreflu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kreflux-AI/Fluko-Nano-1B-Exp-MLX-5bit
+- Repositorio en Hugging Face: https://huggingface.co/Kreflux-AI/Fluko-Nano-1B-Exp-MLX-5bit
 - Model card del autor: https://huggingface.co/Kreflux-AI/Fluko-Nano-1B-Exp-MLX-5bit (contiene unicamente la declaracion de licencia Apache 2.0)
-- Perfil del autor en HuggingFace: https://huggingface.co/Kreflux-AI
+- Perfil del autor en Hugging Face: https://huggingface.co/Kreflux-AI
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relacionado con el modelo. Las busquedas devolvieron exclusivamente paginas de ayuda de YouTube (support.google.com) y hilos de Zhihu sin ninguna relacion con inteligencia artificial o modelos de lenguaje, por lo que se descartan como fuentes.

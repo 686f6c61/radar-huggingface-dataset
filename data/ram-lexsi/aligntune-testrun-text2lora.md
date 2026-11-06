@@ -54,7 +54,7 @@ No disponible. No se puede comparar con otros adaptadores LoRA o modelos de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ram-lexsi/aligntune-testrun-Text2LoRA
+- Repositorio Hugging Face: https://huggingface.co/ram-lexsi/aligntune-testrun-Text2LoRA
 - AlignTune (web): https://aligntune.lexsi.ai/
 - AlignTune (GitHub): https://github.com/Lexsi-Labs/aligntune
 - Text-to-LoRA (SakanaAI, GitHub): https://github.com/SakanaAI/text-to-lora

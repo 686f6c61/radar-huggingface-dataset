@@ -90,7 +90,7 @@ Toffee-3B-β ofrece un rendimiento en MMLU comparable a Llama 3.2 3B y ligeramen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maxzt/toffee-3b-beta
+- Modelo en Hugging Face: https://huggingface.co/maxzt/toffee-3b-beta
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-3B-Base-2512
 - Dataset ultrachat_200k: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k
 - Dataset OpenMathInstruct-2: https://huggingface.co/datasets/nvidia/OpenMathInstruct-2

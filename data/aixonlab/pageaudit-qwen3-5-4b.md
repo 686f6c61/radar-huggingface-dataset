@@ -70,14 +70,14 @@ El intervalo de confianza del 95% para la puntuación de coincidencia de PageAud
 - VRAM estimada para inferencia: no disponible de forma explícita en la información proporcionada. Con 4,66 mil millones de parámetros, en fp16 el peso ronda los 9,3 GB y en cuantización de 8 bits unos 4,7 GB; estas cifras son estimaciones por tamaño y no datos publicados por el autor.
 - GPU recomendadas: el autor entrenó con una única A40. Para inferencia no se especifican GPU concretas.
 - Cabe en GPU de consumo: no confirmado por el autor; por tamaño, un modelo de 4,66 mil millones de parámetros en cuantización de 8 o 4 bits es compatible con GPUs de consumo de gama media-alta con VRAM suficiente, pero no hay datos publicados al respecto.
-- Opciones de despliegue: transformers (librería declarada); el repositorio incluye una carpeta `pipeline` con un extractor en Node.js que requiere `npm install` y `npx playwright install chromium`, y un script `audit_page.py` que se invoca con `--model`. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: transformers (librería declarada); el repositorio incluye una carpeta `pipeline` con un extractor en Node.js que requiere `npm install` y `npx playwright install chromium`, y un script `audit_page.py` que se invoca con `--model`. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PageAudit-Qwen3.5-4B | 4,66 mil millones | no disponible | Juez de candidatos para auditoría web (pipeline determinista + LoRA) | Apache-2.0 | HuggingFace, 122 descargas |
+| PageAudit-Qwen3.5-4B | 4,66 mil millones | no disponible | Juez de candidatos para auditoría web (pipeline determinista + LoRA) | Apache-2.0 | Hugging Face, 122 descargas |
 | Claude Sonnet 5.5 | no disponible | no disponible | LLM generalista evaluado con resumen textual de la página | propietaria | API comercial |
 | Script de contraste simple | no aplica | no aplica | Regla determinista de contraste WCAG | no aplica | herramienta interna del estudio |
 | Clasificador de texto (bag-of-words) | no disponible | no aplica | Clasificador entrenado sobre los mismos candidatos | no disponible | baseline del estudio |
@@ -99,5 +99,5 @@ La comparativa relevante es frente a Claude Sonnet 5.5 y los dos baselines del e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aixonlab/PageAudit-Qwen3.5-4B
+- Modelo en Hugging Face: https://huggingface.co/aixonlab/PageAudit-Qwen3.5-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

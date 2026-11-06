@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (Qwen3-Embedding Jetson Runtime) | No contiene pesos; runtime cualificado para 0,6B, 4B y 8B | No disponible | Sin benchmarks publicados; solo cualificacion en dispositivo | Apache-2.0 sobre el codigo; componentes empaquetados con sus licencias | Publico en HuggingFace, 0 descargas, 0 likes |
+| Este repositorio (Qwen3-Embedding Jetson Runtime) | No contiene pesos; runtime cualificado para 0,6B, 4B y 8B | No disponible | Sin benchmarks publicados; solo cualificacion en dispositivo | Apache-2.0 sobre el codigo; componentes empaquetados con sus licencias | Publico en Hugging Face, 0 descargas, 0 likes |
 | Snapshot oficial de Qwen3-Embedding (repo de Qwen) | 0,6B / 4B / 8B (segun variante) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Referenciado por el autor como origen de los pesos |
 | Runtimes genericos de embeddings en llama.cpp / Ollama | No disponible | No disponible | No disponible | No disponible | No evaluado para Jetson en la informacion disponible |
 
@@ -88,5 +88,5 @@ No se dispone de datos verificables para establecer una comparacion cuantitativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/manateelazycat/Qwen3-Embedding-Jetson-Runtime
+- Repositorio en Hugging Face: https://huggingface.co/manateelazycat/Qwen3-Embedding-Jetson-Runtime
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las entradas devueltas corresponden a un servicio de registro de marcas (tramatm.com y resenas asociadas) y no guardan relacion con el repositorio, por lo que se descartan. No se dispone de enlaces a papers, blogs, repositorios de codigo ni demos en la informacion proporcionada.

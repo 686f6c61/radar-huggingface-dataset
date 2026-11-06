@@ -95,7 +95,7 @@ Las builds de QUASAR, RedHatAI, unsloth y EXL3 de MiaAI-Lab se comparan en el re
 - La cuantizacion W4A4 puede degradar tareas sensibles a precision; la evaluacion publicada se limita a GSM8K y tool calling, sin cobertura de razonamiento complejo, vision o codigo.
 - El KV cache no esta cuantizado; para reducir memoria hay que configurar explicitamente un KV cache FP8 en el motor de inferencia.
 - Los benchmarks de velocidad se han medido unicamente en una NVIDIA GB10 con vLLM 0.32.0 y SGLang 0.5.22; el rendimiento en otras GPUs o versiones de motor no esta verificado.
-- El checkpoint tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, y el autor no es el desarrollador original del modelo; auditar el `conversion-manifest.json` antes de usarlo en produccion.
+- El checkpoint tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, y el autor no es el desarrollador original del modelo; auditar el `conversion-manifest.json` antes de usarlo en produccion.
 - Sesgos conocidos y riesgo de alucinacion: no documentados especificamente para esta cuantizacion; se heredan los del modelo base Qwen3.8-27B.
 - Idiomas soportados: no disponibles en la informacion proporcionada.
 - Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen/Qwen3.8-27B y del drafter DFlash2 antes de desplegar.
@@ -103,7 +103,7 @@ Las builds de QUASAR, RedHatAI, unsloth y EXL3 de MiaAI-Lab se comparan en el re
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/capyctl/Qwen3.8-27B-NVFP4
+- Hugging Face del modelo: https://huggingface.co/capyctl/Qwen3.8-27B-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Version de NVIDIA: https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4
 - Drafter DFlash2: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2

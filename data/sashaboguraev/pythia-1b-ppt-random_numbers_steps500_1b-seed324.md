@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: un modelo de 1B de parámetros en FP16 requiere aproximadamente 2 GB de VRAM solo para los pesos. Con overhead de activaciones y memoria intermedia, se recomiendan al menos 4-6 GB de VRAM para inferencia cómoda.
 - GPU recomendadas: cualquier GPU con 6 GB o más de VRAM es suficiente. Modelos como RTX 2060, RTX 3060, RTX 4060, o superiores pueden ejecutar el modelo sin problemas. También es viable en GPUs de datacenter como A10, A100 o H100.
 - Compatibilidad con GPU de consumo: sí, cabe en la mayoría de GPUs de consumo modernas con 6 GB o más de VRAM.
-- Opciones de despliegue: al ser un modelo de transformers estándar, puede desplegarse con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF), Ollama (con conversión previa) o directamente con la librería transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo de transformers estándar, puede desplegarse con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF), Ollama (con conversión previa) o directamente con la librería transformers de Hugging Face.
 - Latencia y throughput: no se dispone de datos medidos. Para un modelo de 1B en una GPU moderna, se puede esperar una latencia de decodificación de decenas de milisegundos por token, pero estos valores dependen del hardware y la configuración exacta.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ La comparativa se limita a los checkpoints de la misma serie y al modelo base Py
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sashaboguraev/pythia-1b-ppt-random_numbers_steps500_1b-seed324
+- Modelo en Hugging Face: https://huggingface.co/sashaboguraev/pythia-1b-ppt-random_numbers_steps500_1b-seed324
 - Variante con preservación de embeddings: https://huggingface.co/sashaboguraev/pythia-1b-ppt-random_numbers_steps500_1b-seed324-preserve_emb
 - Variante con 100 pasos: https://huggingface.co/sashaboguraev/pythia-1b-ppt-random_numbers_steps100_1b-seed324-preserve_emb
 - Referencia al paper de Lacoste et al. (2019) sobre estimación de emisiones de carbono: https://arxiv.org/abs/1910.09700

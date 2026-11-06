@@ -26,8 +26,8 @@ Su relevancia es acotada pero clara: cubre un hueco poco atendido, el de la infe
 | Datos de entrenamiento declarados | IFM/K2-Horizon-Pretrain-Data, IFM/K2-Horizon-Midtrain-Data |
 | Libreria / runtime | MLX (Apple), `mlx-lm`; compatible con LM Studio |
 | Plataforma objetivo | Apple Silicon (M1/M2/M3/M4 y variantes Pro, Max, Ultra) |
-| Descargas / likes en HuggingFace | 0 / 0 |
-| Fecha de creacion del repositorio | 2026-09-15 (segun metadatos de HuggingFace) |
+| Descargas / likes en Hugging Face | 0 / 0 |
+| Fecha de creacion del repositorio | 2026-09-15 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -107,7 +107,7 @@ Los tres artefactos comparten el mismo modelo base, la misma licencia apache-2.0
 - Ficha de modelo incompleta: el README aparece truncado en la seccion de configuracion de LM Studio (el bloque JSON del preset `ChatML.json` queda cortado), por lo que las instrucciones de despliegue no estan completas.
 - Consumo en contexto largo no cuantificado: la ventana de 524.288 tokens es una cifra declarada, pero no se documenta el coste de memoria de la cache KV ni la degradacion de calidad a longitudes extremas.
 - Licencia: apache-2.0 permite uso comercial y modificacion, siempre que se conserve el aviso de licencia y se atribuya correctamente; conviene verificar tambien las condiciones del modelo base IFM/K2-Horizon-7B antes de redistribuir.
-- Fecha de creacion inusual: los metadatos de HuggingFace indican 2026-09-15, posterior a la fecha habitual de publicacion, dato a contrastar si se va a citar el modelo.
+- Fecha de creacion inusual: los metadatos de Hugging Face indican 2026-09-15, posterior a la fecha habitual de publicacion, dato a contrastar si se va a citar el modelo.
 
 ## Enlaces
 

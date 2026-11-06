@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks de calidad en la información dispo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (HGN v2) | no disponible (n-gram de 51B) | no disponible | .hgn | swift-open-license-1.0 | HuggingFace, solo halogen-flash-server |
-| trubisky/Swift-1.5-Flash-Next-Heretic-ReverseEngineer | mismo modelo base | no disponible | GGUF IQ4_XS-plus (94,7 GB) | no disponible en la informacion | HuggingFace |
-| peonist-ai/halogen-qwen3.8-flash-next | mismo modelo base | no disponible | .hgn | no disponible en la informacion | HuggingFace |
-| ukisai/Swift1.5-Qwen3.8-Flash-Next | mismo modelo base | no disponible | no disponible | swift-open-license-1.0 | HuggingFace |
+| Este modelo (HGN v2) | no disponible (n-gram de 51B) | no disponible | .hgn | swift-open-license-1.0 | Hugging Face, solo halogen-flash-server |
+| trubisky/Swift-1.5-Flash-Next-Heretic-ReverseEngineer | mismo modelo base | no disponible | GGUF IQ4_XS-plus (94,7 GB) | no disponible en la informacion | Hugging Face |
+| peonist-ai/halogen-qwen3.8-flash-next | mismo modelo base | no disponible | .hgn | no disponible en la informacion | Hugging Face |
+| ukisai/Swift1.5-Qwen3.8-Flash-Next | mismo modelo base | no disponible | no disponible | swift-open-license-1.0 | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de calidad con alternativas de la misma categoría.
 
@@ -97,8 +97,8 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de cal
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/johnlockejrr/Swift-1.5-Flash-Next-Heretic-ReverseEngineer-HGN
-- Modelo base en HuggingFace: https://huggingface.co/trubisky/Swift-1.5-Flash-Next-Heretic-ReverseEngineer
+- Repositorio Hugging Face: https://huggingface.co/johnlockejrr/Swift-1.5-Flash-Next-Heretic-ReverseEngineer-HGN
+- Modelo base en Hugging Face: https://huggingface.co/trubisky/Swift-1.5-Flash-Next-Heretic-ReverseEngineer
 - Checkpoint HGN de referencia: https://huggingface.co/peonist-ai/halogen-qwen3.8-flash-next
 - Licencia: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next/blob/main/LICENSE
 - Conversor bf16-to-hgn: https://github.com/Quat3rnion/bf16-to-hgn

@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-72B-graft0-a1-terra3k-r3000-da-e1 | Adaptador LoRA (etapa 2) | Adaptador sobre 72,7B (base) | 131.072 (base) | no disponible | HuggingFace, 12 descargas |
+| Qwen2.5-72B-graft0-a1-terra3k-r3000-da-e1 | Adaptador LoRA (etapa 2) | Adaptador sobre 72,7B (base) | 131.072 (base) | no disponible | Hugging Face, 12 descargas |
 | Qwen2.5-72B-graft0-a1 | Adaptador LoRA (etapa 1, A1) | Adaptador sobre 72,7B (base) | 131.072 (base) | no disponible | Repositorio referenciado por el autor |
-| Qwen/Qwen2.5-72B | Modelo base completo | ~72,7 mil millones | 131.072 | Qwen (terminos propios) | HuggingFace, ampliamente difundido |
-| Otros adaptadores PEFT sobre Qwen2.5-72B | Adaptadores LoRA | Variables | 131.072 (base) | Variable | HuggingFace |
+| Qwen/Qwen2.5-72B | Modelo base completo | ~72,7 mil millones | 131.072 | Qwen (terminos propios) | Hugging Face, ampliamente difundido |
+| Otros adaptadores PEFT sobre Qwen2.5-72B | Adaptadores LoRA | Variables | 131.072 (base) | Variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SecondLookResearch/Qwen2.5-72B-graft0-a1-terra3k-r3000-da-e1
+- Modelo en Hugging Face: https://huggingface.co/SecondLookResearch/Qwen2.5-72B-graft0-a1-terra3k-r3000-da-e1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-72B
 - Script de servicio referenciado en la model card: `code/msm_eval/serve_reconstructed.sh` (ruta relativa al repositorio del autor; no se proporciona URL directa)
 - Adaptador A1 de la etapa previa: referenciado como `<a1-repo>` en la model card; no se facilita URL en la informacion disponible

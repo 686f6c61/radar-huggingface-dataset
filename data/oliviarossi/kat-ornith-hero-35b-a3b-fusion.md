@@ -56,7 +56,7 @@ Los pesos de fusion son: KAT-Coder-V2.5-Dev al 0,4, Ornith-1.5-35B-A3B al 0,35 y
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Los modelos base declaran fortalezas en SWE-bench (KAT-Coder-V2.5-Dev) y eficiencia de tokens (HERO-35B-A3B), pero no se incluyen metricas concretas ni en la model card ni en la ficha de HuggingFace, por lo que no pueden citarse numeros.
+No se han publicado resultados de benchmarks en la informacion disponible. Los modelos base declaran fortalezas en SWE-bench (KAT-Coder-V2.5-Dev) y eficiencia de tokens (HERO-35B-A3B), pero no se incluyen metricas concretas ni en la model card ni en la ficha de Hugging Face, por lo que no pueden citarse numeros.
 
 ## Requisitos de hardware
 
@@ -90,7 +90,7 @@ La ventaja teorica de la fusion frente a sus componentes es combinar las tres es
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/OliviaRossi/KAT-Ornith-HERO-35B-A3B-Fusion
+- Ficha en Hugging Face: https://huggingface.co/OliviaRossi/KAT-Ornith-HERO-35B-A3B-Fusion
 - Modelo base 1: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
 - Modelo base 2: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Modelo base 3: https://huggingface.co/XLearning-SCU/HERO-35B-A3B

@@ -4,7 +4,7 @@
 
 Este repositorio contiene un workflow de ComfyUI diseñado para generar vídeo a partir de imagen y audio (IA2V, image and audio to video) utilizando como modelo base LTX 2.5 de Lightricks. El autor, thisiskakak, lo presenta como una versión adaptada del workflow de SOLRICKS, con soporte para ejecución en Comfy Cloud mediante la versión "Native Comfy".
 
-Aunque el repositorio se aloja en HuggingFace bajo la categoría de modelos, no es un modelo de pesos entrenado, sino un grafo de nodos de ComfyUI que orquesta el pipeline de LTX 2.5 para las tareas de text-to-video, image-to-video e image-audio-to-video. La relevancia actual radica en que LTX 2.5 es una familia de modelos de generación de vídeo de alto rendimiento, y este workflow facilita su uso en entornos de producción creativa sin necesidad de escribir código.
+Aunque el repositorio se aloja en Hugging Face bajo la categoría de modelos, no es un modelo de pesos entrenado, sino un grafo de nodos de ComfyUI que orquesta el pipeline de LTX 2.5 para las tareas de text-to-video, image-to-video e image-audio-to-video. La relevancia actual radica en que LTX 2.5 es una familia de modelos de generación de vídeo de alto rendimiento, y este workflow facilita su uso en entornos de producción creativa sin necesidad de escribir código.
 
 La ficha se centra en el workflow, indicando explícitamente cuando un dato corresponde al modelo base LTX 2.5 y cuando no está disponible en la información publicada.
 
@@ -71,6 +71,6 @@ No se dispone de datos comparativos entre este workflow y otras alternativas. Co
 
 ## Enlaces
 
-- [Repositorio del workflow en HuggingFace](https://huggingface.co/thisiskakak/LTX-2.5-Comfy-Workflows)
+- [Repositorio del workflow en Hugging Face](https://huggingface.co/thisiskakak/LTX-2.5-Comfy-Workflows)
 - [Workflow de inspiracion (SOLRICKS)](https://huggingface.co/SOLRICKS/ltx-2-5-t2v-i2v-audio-comfyui-workflow)
 - [Modelo base: Lightricks/LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5)

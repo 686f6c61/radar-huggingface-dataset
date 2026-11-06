@@ -6,7 +6,7 @@ KnowLine-31B-Gen1-NVFP4 es un adaptador LoRA de rango 32 publicado por el usuari
 
 La relevancia práctica es doble. Por un lado, permite ejecutar un modelo de 31B parámetros derivado de la familia Gemma 4 en formato NVFP4 (4 bits de coma flotante con escalado por bloque) sobre una única GPU Blackwell de 32 GB, algo impensable en precisión completa. Por otro lado, demuestra un patrón de distribución eficiente: publicar solo el delta LoRA en lugar de los pesos completos reduce el repositorio a unos 0,5 GB frente a las decenas de gigabytes del modelo base.
 
-La ficha se basa exclusivamente en la información disponible en HuggingFace; los detalles sobre arquitectura interna, datos de entrenamiento y benchmarks del modelo original no están publicados en la información proporcionada y se indican como no disponibles.
+La ficha se basa exclusivamente en la información disponible en Hugging Face; los detalles sobre arquitectura interna, datos de entrenamiento y benchmarks del modelo original no están publicados en la información proporcionada y se indican como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ No se dispone de información sobre el dataset de entrenamiento de KnowLine-31B-
 - Razonamiento y respuesta a preguntas de opción múltiple: la model card reporta coincidencia con la build FP8 en 30 de 30 preguntas sintéticas.
 - Puntuación de etiquetas mediante logprobs, con corrección de temperatura documentada.
 - Servido como módulo LoRA adicional en vLLM junto al modelo base NVFP4.
-- Compatibilidad con el pipeline text-generation de HuggingFace.
+- Compatibilidad con el pipeline text-generation de Hugging Face.
 - No se documentan capacidades de tool calling, function calling, agentes, visión, audio ni modo thinking en la información disponible.
 
 ## Casos de uso
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KnowLine-31B-Gen1-NVFP4 (este) | 31B + LoRA r32 | 8192 (config. servido) | NVFP4 + LoRA | Apache 2.0 | HuggingFace |
-| PelaAI/KnowLine-31B-Gen1 | 31B | no disponible | completa (FP) | no disponible | HuggingFace |
-| RedHatAI/gemma-4-31B-it-NVFP4 | 31B | no disponible | NVFP4 | no disponible | HuggingFace |
-| google/gemma-4-31B-it | 31B | no disponible | completa (FP) | no disponible | HuggingFace |
+| KnowLine-31B-Gen1-NVFP4 (este) | 31B + LoRA r32 | 8192 (config. servido) | NVFP4 + LoRA | Apache 2.0 | Hugging Face |
+| PelaAI/KnowLine-31B-Gen1 | 31B | no disponible | completa (FP) | no disponible | Hugging Face |
+| RedHatAI/gemma-4-31B-it-NVFP4 | 31B | no disponible | NVFP4 | no disponible | Hugging Face |
+| google/gemma-4-31B-it | 31B | no disponible | completa (FP) | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/enochlev/KnowLine-31B-Gen1-NVFP4
+- Adaptador en Hugging Face: https://huggingface.co/enochlev/KnowLine-31B-Gen1-NVFP4
 - Modelo base original: https://huggingface.co/PelaAI/KnowLine-31B-Gen1
 - Base cuantizada NVFP4: https://huggingface.co/RedHatAI/gemma-4-31B-it-NVFP4
 - Modelo Gemma 4 31B Instruct: https://huggingface.co/google/gemma-4-31B-it

@@ -77,7 +77,7 @@ La comparativa directa con modelos externos no esta disponible, ya que este fine
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Drop)
+- [Modelo en Hugging Face](https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Drop)
 - [Modelo base Qwen/Qwen3.5-35B-A3B](https://huggingface.co/Qwen/Qwen3.5-35B-A3B)
 - [Brazo Asis (baseline)](https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Asis)
 - [Brazo Repair](https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Repair)

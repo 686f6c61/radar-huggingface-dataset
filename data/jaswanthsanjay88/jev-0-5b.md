@@ -18,11 +18,11 @@ Al tratarse de un adaptador PEFT sobre un modelo de ~0,5 mil millones de paramet
 | Longitud de contexto | No disponible en la model card; el modelo base soporta 32.768 tokens (ampliable a 131.072 con YaRN) |
 | Tipos de cuantizacion | No disponible. El adaptador se distribuye en safetensors; el modelo base admite bf16/fp16, int8 e int4 (GGUF, AWQ, GPTQ) por su parte |
 | Idiomas soportados | No disponible. El modelo base Qwen2.5 declara soporte para decenas de idiomas, pero no se especifica el idioma o idiomas del adaptador |
-| Licencia | No disponible (ni en los metadatos de HuggingFace ni en la model card) |
+| Licencia | No disponible (ni en los metadatos de Hugging Face ni en la model card) |
 | Formato de pesos | `adapter_model.safetensors` (adaptador LoRA) y `head.pt` (pesos PyTorch de la cabeza pointer), mas ficheros de tokenizer |
 | Libreria de carga | `peft` (con `transformers`) |
 | Modelo base | `Qwen/Qwen2.5-0.5B` (relacion: adapter) |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 | Fecha de creacion | 2026-09-19 (segun metadatos del repositorio) |
 | Ultima actualizacion | 2026-09-19 (segun metadatos del repositorio) |
 
@@ -78,7 +78,7 @@ No se dispone de informacion sobre benchmarks que permita comparar el rendimient
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jaswanthsanjay88/jev-0.5b` | Adaptador sobre base de ~0,49 mil millones | No disponible (base: 32.768 tokens) | Adaptador LoRA + cabeza pointer, prefill-only, orientado a decision | No disponible | Repositorio HuggingFace con 0 descargas |
+| `jaswanthsanjay88/jev-0.5b` | Adaptador sobre base de ~0,49 mil millones | No disponible (base: 32.768 tokens) | Adaptador LoRA + cabeza pointer, prefill-only, orientado a decision | No disponible | Repositorio Hugging Face con 0 descargas |
 | `Qwen/Qwen2.5-0.5B` (base) | ~0,49 mil millones | 32.768 tokens (131.072 con YaRN) | Transformer decoder generativo | Apache 2.0 | Ampliamente disponible |
 | `Qwen/Qwen2.5-0.5B-Instruct` | ~0,49 mil millones | 32.768 tokens (131.072 con YaRN) | Transformer decoder generativo ajustado por instrucciones | Apache 2.0 | Ampliamente disponible |
 | `HuggingFaceTB/SmolLM2-360M-Instruct` | ~0,36 mil millones | 8.192 tokens | Transformer decoder generativo ajustado por instrucciones | Apache 2.0 | Ampliamente disponible |
@@ -100,7 +100,7 @@ No se conocen modelos comparables de proposito equivalente (adaptadores de decis
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/jaswanthsanjay88/jev-0.5b
+- Repositorio Hugging Face del modelo: https://huggingface.co/jaswanthsanjay88/jev-0.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Repositorio de PEFT: https://github.com/huggingface/peft
 - Documentacion de Qwen2.5: https://qwen.readthedocs.io/

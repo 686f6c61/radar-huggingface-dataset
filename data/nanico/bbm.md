@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Nanico/bbm` es un adaptador LoRA de tipo DreamBooth para generacion de imagen a partir de texto, entrenado sobre el modelo base `krea/Krea-2-Raw`. Lo publica el usuario Nanico en HuggingFace con licencia Apache 2.0 y un unico objetivo: introducir el concepto invocado por el token `bbm` en las generaciones del modelo Krea 2. No es un modelo autonomo, sino un peso adicional que se carga sobre el pipeline de difusion mediante `load_lora_weights` de la libreria diffusers.
+`Nanico/bbm` es un adaptador LoRA de tipo DreamBooth para generacion de imagen a partir de texto, entrenado sobre el modelo base `krea/Krea-2-Raw`. Lo publica el usuario Nanico en Hugging Face con licencia Apache 2.0 y un unico objetivo: introducir el concepto invocado por el token `bbm` en las generaciones del modelo Krea 2. No es un modelo autonomo, sino un peso adicional que se carga sobre el pipeline de difusion mediante `load_lora_weights` de la libreria diffusers.
 
 El repositorio ocupa 0,8 GB e incluye, ademas de los pesos del adaptador, tres imagenes de muestra (`sample_0.png`, `sample_1.png`, `sample_2.png`) generadas con el LoRA aplicado sobre la variante destilada `Krea-2-Turbo` en 8 pasos de inferencia y `guidance_scale=0.0`. La model card es minima: no documenta el dataset de entrenamiento, el numero de pasos, el rango del adaptador, la resolucion ni hiperparametros de entrenamiento.
 
@@ -89,7 +89,7 @@ No hay datos de parametros, contexto ni rendimiento para ninguno de los tres, po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nanico/bbm
+- Modelo en Hugging Face: https://huggingface.co/Nanico/bbm
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base de inferencia en las muestras (referenciado en la model card): `krea/Krea-2-Turbo`
 - Documentacion de diffusers sobre carga de LoRA: no disponible en la informacion proporcionada

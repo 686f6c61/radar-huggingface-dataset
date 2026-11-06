@@ -84,7 +84,7 @@ La conversión de ldov es funcionalmente equivalente a whisper-small en calidad 
 
 ## Enlaces
 
-- [HuggingFace: ldov/faster-whisper-small](https://huggingface.co/ldov/faster-whisper-small)
+- [Hugging Face: ldov/faster-whisper-small](https://huggingface.co/ldov/faster-whisper-small)
 - [Modelo original: openai/whisper-small](https://huggingface.co/openai/whisper-small)
 - [Repositorio de faster-whisper (SYSTRAN)](https://github.com/SYSTRAN/faster-whisper)
 - [Documentación de CTranslate2](https://opennmt.net/CTranslate2/quantization.html)

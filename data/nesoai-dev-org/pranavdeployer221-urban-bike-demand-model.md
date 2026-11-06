@@ -68,7 +68,7 @@ La model card no incluye metricas de evaluacion (MAE, RMSE, R2 ni ninguna otra),
 
 | Modelo | Parametros / tamano | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Random Forest (este modelo) | 200 estimadores; profundidad no documentada | No aplica | Sin benchmarks publicados | MIT | HuggingFace (`nesoai-dev-org/PranavDeployer221-urban-bike-demand-model`) |
+| Random Forest (este modelo) | 200 estimadores; profundidad no documentada | No aplica | Sin benchmarks publicados | MIT | Hugging Face (`nesoai-dev-org/PranavDeployer221-urban-bike-demand-model`) |
 | Gradient boosting (XGBoost, LightGBM, CatBoost) | Configurable; no disponible para este caso | No aplica | No disponible para este dataset | Licencias permisivas habituales (Apache 2.0, MIT) | Bibliotecas publicas; no se ha entrenado aqui |
 | Regresion lineal o Ridge | Numero de coeficientes igual al de caracteristicas tras codificacion | No aplica | No disponible para este dataset | Permisiva | Bibliotecas publicas; no se ha entrenado aqui |
 
@@ -90,7 +90,7 @@ No se dispone de resultados cuantitativos que permitan afirmar que este modelo s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nesoai-dev-org/PranavDeployer221-urban-bike-demand-model
+- Modelo en Hugging Face: https://huggingface.co/nesoai-dev-org/PranavDeployer221-urban-bike-demand-model
 - Repositorio del proyecto (urban-demand-prediction-Forecasting-engine): https://github.com/Pranav123221/urban-demand-prediction-Forecasting-engine
 - Perfil de GitHub del autor: https://github.com/Pranav123221
 - Perfil de LinkedIn del autor: https://www.linkedin.com/in/pranav-sharma-333b67338/

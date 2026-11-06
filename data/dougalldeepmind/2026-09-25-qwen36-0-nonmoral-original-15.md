@@ -75,8 +75,8 @@ Las siguientes cifras son estimaciones derivadas del tamaño del modelo base (27
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dougalldeepmind/2026-09-25-qwen36-0-nonmoral-original-15` | Adaptador LoRA SFT | ~27 000 M (base) | no disponible (entrena a 8192) | no disponible | HuggingFace, 10,3 GB, 0 descargas |
-| `Qwen/Qwen3.6-27B` (base) | Modelo completo | ~27 000 M | no disponible | no disponible | HuggingFace |
+| `dougalldeepmind/2026-09-25-qwen36-0-nonmoral-original-15` | Adaptador LoRA SFT | ~27 000 M (base) | no disponible (entrena a 8192) | no disponible | Hugging Face, 10,3 GB, 0 descargas |
+| `Qwen/Qwen3.6-27B` (base) | Modelo completo | ~27 000 M | no disponible | no disponible | Hugging Face |
 | Otros adaptadores PEFT/SFT comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones publicadas para establecer una comparación cuantitativa con alternativas de la misma categoría.
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks ni de especificaciones publicadas para esta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dougalldeepmind/2026-09-25-qwen36-0-nonmoral-original-15
+- Modelo en Hugging Face: https://huggingface.co/dougalldeepmind/2026-09-25-qwen36-0-nonmoral-original-15
 - Dataset de la mezcla: https://huggingface.co/datasets/dougalldeepmind/2026-09-25-nonmoral-original-15-mix
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Repositorio fuente del pipeline: https://github.com/Matthew-Bozoukov/teaching_claude_why_replication

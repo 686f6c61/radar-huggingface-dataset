@@ -82,7 +82,7 @@ No se dispone de comparativas directas con otros modelos en la información prop
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jesusoctavioas/Qwen3.8-27B-mlx-2Bit
+- Repositorio Hugging Face: https://huggingface.co/jesusoctavioas/Qwen3.8-27B-mlx-2Bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Página de LM Studio: https://lmstudio.ai/models/qwen3.8

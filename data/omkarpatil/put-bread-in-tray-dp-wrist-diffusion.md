@@ -81,7 +81,7 @@ La comparacion entre arquitecturas esta limitada por la falta de datos publicos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omkarpatil/put-bread-in-tray-dp-wrist-diffusion
+- Modelo en Hugging Face: https://huggingface.co/omkarpatil/put-bread-in-tray-dp-wrist-diffusion
 - Perfil del autor: https://huggingface.co/omkarpatil
 - Modelos del autor: https://huggingface.co/omkarpatil/models
 - Framework LeRobot: https://github.com/huggingface/lerobot (no confirmado en la informacion proporcionada, referencia estandar)

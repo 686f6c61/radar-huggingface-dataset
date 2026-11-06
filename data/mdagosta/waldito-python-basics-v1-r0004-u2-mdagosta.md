@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mdagosta/waldito-python-basics-v1-r0004-u2-mdagosta` es un modelo de generacion de texto causal publicado por el usuario mdagosta en HuggingFace. Segun su model card, se trata de un export del proyecto OpenWALDO que emplea la arquitectura estandar `LlamaForCausalLM` de Transformers junto con el tokenizador de bytes "schema-1" de OpenWALDO, lo que obliga a cargar el tokenizador con `trust_remote_code=True`. El recuento real de parametros en los ficheros safetensors es de 9.541.632, es decir, unos 9,5 millones de parametros.
+El modelo `mdagosta/waldito-python-basics-v1-r0004-u2-mdagosta` es un modelo de generacion de texto causal publicado por el usuario mdagosta en Hugging Face. Segun su model card, se trata de un export del proyecto OpenWALDO que emplea la arquitectura estandar `LlamaForCausalLM` de Transformers junto con el tokenizador de bytes "schema-1" de OpenWALDO, lo que obliga a cargar el tokenizador con `trust_remote_code=True`. El recuento real de parametros en los ficheros safetensors es de 9.541.632, es decir, unos 9,5 millones de parametros.
 
 Se trata por tanto de un modelo de escala muy reducida (dos ordenes de magnitud por debajo de un GPT-2 small), orientado previsiblemente a experimentacion, ensenanza o validacion de infraestructura mas que a uso productivo. El identificador sugiere un ajuste fino sobre "python basics" en su version 1, release 0004, unidad 2, aunque la model card no confirma ni el dataset ni el procedimiento de entrenamiento.
 
@@ -80,10 +80,10 @@ No hay datos de rendimiento de este modelo que permitan una comparativa funciona
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| waldito-python-basics-v1-r0004-u2-mdagosta | 9,5 M | no disponible | no disponible | HuggingFace, safetensors |
-| TinyStories-33M (Eldan y Li) | 33 M | no verificada | no verificada | HuggingFace |
-| GPT-2 small | 124 M | 1.024 tokens (publicado) | MIT (publicada) | HuggingFace |
-| SmolLM-135M (HuggingFace) | 135 M | 2.048 tokens (publicado) | Apache-2.0 (publicada) | HuggingFace |
+| waldito-python-basics-v1-r0004-u2-mdagosta | 9,5 M | no disponible | no disponible | Hugging Face, safetensors |
+| TinyStories-33M (Eldan y Li) | 33 M | no verificada | no verificada | Hugging Face |
+| GPT-2 small | 124 M | 1.024 tokens (publicado) | MIT (publicada) | Hugging Face |
+| SmolLM-135M (Hugging Face) | 135 M | 2.048 tokens (publicado) | Apache-2.0 (publicada) | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -101,7 +101,7 @@ No hay datos de rendimiento de este modelo que permitan una comparativa funciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0004-u2-mdagosta
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0004-u2-mdagosta
 - Repositorio hermano (release anterior r0003-u1): https://huggingface.co/mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta
 - `BOM.json` y `EU-BOM.json`: ficheros citados en la model card, ubicados en la raiz del repositorio del modelo.
 - La busqueda web no devolvio documentacion tecnica especifica del modelo. Los resultados obtenidos (python.org, la pagina de modelos abiertos de OpenAI, Google Colab y una lista de reproduccion de YouTube sobre machine learning con Python) no aportan informacion sobre este modelo ni sobre el proyecto OpenWALDO, por lo que no se incluyen como fuentes.

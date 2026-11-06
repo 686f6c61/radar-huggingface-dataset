@@ -79,7 +79,7 @@ Nota: la comparación más relevante es interna a la serie de doce checkpoints d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JaydenTeoh/ntp-689m-model
+- Modelo en Hugging Face: https://huggingface.co/JaydenTeoh/ntp-689m-model
 - Paper: Multi-Token Prediction Done Right — https://arxiv.org/abs/2610.38331
 - Código de entrenamiento: https://github.com/JaydenTeoh/Soft-MTP (configuración: `configs/689m_fineweb.yaml`)
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

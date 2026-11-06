@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt-fi-lg
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt-fi-lg
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-fi-lg
 - Repositorio del proyecto OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT
 - Aplicacion Malinali: https://malinali.app

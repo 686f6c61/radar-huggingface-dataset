@@ -87,10 +87,10 @@ Familia de documentos largos (misma tarea, solo varia la longitud): 8k-20k, 75,7
 
 | Modelo | Parametros | Contexto | Rendimiento clave | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| basal-omni-1.0-mini | 7,94B | no disponible | Werdykt 0.769; PL decisions 0.932; EN panel 0.740 | Apache 2.0 | HuggingFace (Remek/basal-omni-1.0-mini) |
+| basal-omni-1.0-mini | 7,94B | no disponible | Werdykt 0.769; PL decisions 0.932; EN panel 0.740 | Apache 2.0 | Hugging Face (Remek/basal-omni-1.0-mini) |
 | basal-1.5 | 4,5B | no disponible | Werdykt 0.721; PL decisions 0.922; EN panel 0.688 | no disponible | referenciado por el autor |
 | basal-1.5-max | 11B | no disponible | Werdykt 0.772; nivel en EN panel; mejor en PL | no disponible | referenciado por el autor |
-| basal-omni-1.0-max | 12B | no disponible | no disponible en la informacion proporcionada | no disponible | HuggingFace (Remek/basal-omni-1.0-max) |
+| basal-omni-1.0-max | 12B | no disponible | no disponible en la informacion proporcionada | no disponible | Hugging Face (Remek/basal-omni-1.0-max) |
 
 ## Limitaciones y advertencias
 
@@ -106,7 +106,7 @@ Familia de documentos largos (misma tarea, solo varia la longitud): 8k-20k, 75,7
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Remek/basal-omni-1.0-mini
+- Hugging Face: https://huggingface.co/Remek/basal-omni-1.0-mini
 - Modelo hermano: https://huggingface.co/Remek/basal-omni-1.0-max
 - Repositorio del motor de inferencia: https://github.com/rkinas/basal
 - Sitio web del proyecto: https://basal.si5.pl/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-starvla-pipette-pick-r3 es un checkpoint de politica robótica (Vision-Language-Action, VLA) desarrollado por el usuario jren313 y publicado en HuggingFace. Se trata de un fine-tune completo del modelo base nvidia/GR00T-N1.7-3B, un VLA de aproximadamente 3.000 millones de parametros, entrenado con el framework starVLA para ejecutar una unica fase de un flujo de trabajo de pipeteo sobre un robot humanoide Unitree G1 equipado con manos Inspire. Concretamente, la tarea es "Pick up the pipette from the holder on the right with the right hand": la mano derecha debe coger la pipeta del soporte situado a la derecha mientras la izquierda permanece inactiva.
+starvla-pipette-pick-r3 es un checkpoint de politica robótica (Vision-Language-Action, VLA) desarrollado por el usuario jren313 y publicado en Hugging Face. Se trata de un fine-tune completo del modelo base nvidia/GR00T-N1.7-3B, un VLA de aproximadamente 3.000 millones de parametros, entrenado con el framework starVLA para ejecutar una unica fase de un flujo de trabajo de pipeteo sobre un robot humanoide Unitree G1 equipado con manos Inspire. Concretamente, la tarea es "Pick up the pipette from the holder on the right with the right hand": la mano derecha debe coger la pipeta del soporte situado a la derecha mientras la izquierda permanece inactiva.
 
 El modelo forma parte de una familia de siete checkpoints que cubren las cinco fases del protocolo (coger pipeta, coger tubo, apuntar, devolver tubo, devolver pipeta). Esta "ronda 3" amplia el espacio de accion respecto a la ronda 2, pasando de 18 a 32 dimensiones al anadir 14 articulaciones absolutas de brazo ademas de las munecas relativas y las manos absolutas. El checkpoint servido es `gr00t/checkpoints/steps_2000_pytorch_model.pt`, seleccionado por tener la menor perdida en el conjunto de validacion entre los guardados.
 
@@ -96,14 +96,14 @@ La diferencia clave frente a r2 es la incorporacion de 14 articulaciones absolut
 - Normalizacion no comparable entre espacios: el propio autor advierte de que el MSE normalizado no es comparable entre espacios de accion; la evaluacion valida debe hacerse en unidades fisicas (mm, grados, registros).
 - Riesgo de alucinacion: no aplica en el sentido textual, pero si existe riesgo de acciones fisicas incorrectas o inseguras cuando la politica falla; se recomienda operar con limites de par y paradas de emergencia.
 - Sesgos de datos: el modelo aprende de 237 episodios teleoperados por un operador humano en un montaje concreto. La posicion de la pipeta, del soporte, la iluminacion y el fondo estan fijados por los datos, por lo que cualquier variacion del entorno puede degradar el rendimiento. No se han publicado analisis de sesgos.
-- Licencia no disponible: no se especifica la licencia del checkpoint en la model card ni en los metadatos de HuggingFace, por lo que **no se puede confirmar el uso comercial**. El modelo base (nvidia/GR00T-N1.7-3B) tiene su propia licencia, que hay que consultar por separado.
+- Licencia no disponible: no se especifica la licencia del checkpoint en la model card ni en los metadatos de Hugging Face, por lo que **no se puede confirmar el uso comercial**. El modelo base (nvidia/GR00T-N1.7-3B) tiene su propia licencia, que hay que consultar por separado.
 - Idiomas no disponibles: no se documenta que idiomas soporta la frase de tarea; los datos de entrenamiento estan en ingles.
 - Madurez del repositorio: 0 descargas y 0 likes en el momento de la consulta, con la ultima actualizacion en octubre de 2026 (fecha de los metadatos). Es un artefacto de investigacion de un unico autor.
 - Huella de disco: 19,1 GB de repositorio, al incluir checkpoint servido, modelo final de entrenamiento, logs y configuraciones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jren313/starvla-pipette-pick-r3
+- Modelo en Hugging Face: https://huggingface.co/jren313/starvla-pipette-pick-r3
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/jren313/g1-pipette-2view-teleop0925-5task-eerel
 - Checkpoint hermano fase 1, ronda 2: https://huggingface.co/jren313/starvla-pipette-pick-r2

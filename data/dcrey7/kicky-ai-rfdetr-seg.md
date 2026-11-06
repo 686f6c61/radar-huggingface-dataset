@@ -6,7 +6,7 @@ Kicky AI RF-DETR-Seg-Small es un modelo de detección de objetos y segmentación
 
 La principal innovación es que el modelo fue destilado a partir de SAM3 y NVIDIA LocateAnything-3B, que generaron etiquetas automáticas sin anotación manual. El resultado es un modelo pequeño (0.1 GB) que, según el autor, es aproximadamente 50 veces más rápido que el profesor, manteniendo una precisión competitiva en un test set de 12 clips. La arquitectura base es RF-DETR-Seg-Small, un modelo de Roboflow para detección y segmentación en tiempo real.
 
-El modelo está publicado en HuggingFace bajo licencia Apache 2.0, con el identificador `dcrey7/kicky-ai-rfdetr-seg`, y no registra descargas ni likes en el momento de la consulta.
+El modelo está publicado en Hugging Face bajo licencia Apache 2.0, con el identificador `dcrey7/kicky-ai-rfdetr-seg`, y no registra descargas ni likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -78,8 +78,8 @@ No se han publicado modelos comparables en la información disponible. Como refe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dcrey7/kicky-ai-rfdetr-seg
-- Demo Space en HuggingFace: https://huggingface.co/spaces/build-small-hackathon/kicky-ai
+- Modelo en Hugging Face: https://huggingface.co/dcrey7/kicky-ai-rfdetr-seg
+- Demo Space en Hugging Face: https://huggingface.co/spaces/build-small-hackathon/kicky-ai
 - Dataset: https://huggingface.co/datasets/build-small-hackathon/kicky-ai-spf
 - Writeup del autor: https://dcrey7.substack.com/p/world-fut-coach
 - Video demo: https://www.youtube.com/watch?v=knL8shghyBU

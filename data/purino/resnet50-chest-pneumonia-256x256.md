@@ -2,11 +2,11 @@
 
 ## Resumen
 
-resnet50-chest-pneumonia-256x256 es un clasificador binario de imagenes de radiografia de torax desarrollado por el usuario Purino y publicado en HuggingFace. Se trata de un ajuste fino de microsoft/resnet-50, una red neuronal convolucional ResNet-50 de 23.565.250 parametros, sobre el conjunto de datos chest-pneumonia-256x256 (thomasdubail/chest-pneumonia-256x256), con dos clases objetivo: normal y pneumonia. El modelo resuelve una tarea de clasificacion de imagen medica, no de generacion de texto.
+resnet50-chest-pneumonia-256x256 es un clasificador binario de imagenes de radiografia de torax desarrollado por el usuario Purino y publicado en Hugging Face. Se trata de un ajuste fino de microsoft/resnet-50, una red neuronal convolucional ResNet-50 de 23.565.250 parametros, sobre el conjunto de datos chest-pneumonia-256x256 (thomasdubail/chest-pneumonia-256x256), con dos clases objetivo: normal y pneumonia. El modelo resuelve una tarea de clasificacion de imagen medica, no de generacion de texto.
 
 Su relevancia es acotada y de caracter experimental: el propio autor lo etiqueta como material de investigacion y uso educativo, no como dispositivo medico ni validado clinicamente. El repositorio tiene 0 descargas y 0 likes, un tamano de 0,1 GB y se distribuye bajo licencia Apache-2.0. Frente a modelos multimodales grandes, su interes esta en el extremo opuesto: un clasificador convolucional pequeno, entrenable y desplegable en hardware modesto, util como linea base reproducible en experimentos de imagen medica.
 
-La ficha se basa exclusivamente en la model card y los metadatos de HuggingFace. Los resultados de busqueda web disponibles no contienen informacion relevante sobre el modelo: los enlaces recuperados corresponden a transductores de presion Danfoss AKS 32 y AKS 33, sin relacion alguna con este repositorio.
+La ficha se basa exclusivamente en la model card y los metadatos de Hugging Face. Los resultados de busqueda web disponibles no contienen informacion relevante sobre el modelo: los enlaces recuperados corresponden a transductores de presion Danfoss AKS 32 y AKS 33, sin relacion alguna con este repositorio.
 
 ## Especificaciones tecnicas
 
@@ -101,8 +101,8 @@ No se han publicado resultados comparativos con otros modelos sobre este mismo d
 
 | Modelo | Parametros | Entrada | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Purino/resnet50-chest-pneumonia-256x256 | 23.565.250 | Imagen 224x224 (radiografia de torax) | Accuracy 0,8013; F1 macro 0,7626; ROC-AUC 0,923 (test n=624) | apache-2.0 | HuggingFace, 0 descargas |
-| microsoft/resnet-50 (modelo base) | no disponible | Imagen 224x224 | no disponible (entrenado en ImageNet, no en esta tarea) | no disponible en la informacion proporcionada | HuggingFace |
+| Purino/resnet50-chest-pneumonia-256x256 | 23.565.250 | Imagen 224x224 (radiografia de torax) | Accuracy 0,8013; F1 macro 0,7626; ROC-AUC 0,923 (test n=624) | apache-2.0 | Hugging Face, 0 descargas |
+| microsoft/resnet-50 (modelo base) | no disponible | Imagen 224x224 | no disponible (entrenado en ImageNet, no en esta tarea) | no disponible en la informacion proporcionada | Hugging Face |
 | Clasificadores tipo DenseNet-121 para radiografia de torax (por ejemplo, aproximaciones inspiradas en CheXNet) | no disponible | Imagen (resolucion variable) | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados en la informacion proporcionada para establecer una comparacion cuantitativa con alternativas de la misma categoria. Cualquier comparacion de rendimiento exigiria reevaluar los modelos sobre el mismo split de test.
@@ -123,9 +123,9 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Purino/resnet50-chest-pneumonia-256x256
+- Modelo en Hugging Face: https://huggingface.co/Purino/resnet50-chest-pneumonia-256x256
 - Modelo base: https://huggingface.co/microsoft/resnet-50
-- Dataset en HuggingFace: https://huggingface.co/datasets/thomasdubail/chest-pneumonia-256x256
+- Dataset en Hugging Face: https://huggingface.co/datasets/thomasdubail/chest-pneumonia-256x256
 - Dataset original en Kaggle: https://www.kaggle.com/datasets/thomasdubail/chest-pneumonia-256x256
 - Matriz de confusion incluida en el repositorio: confusion_matrix.png (referenciada en la model card)
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados recuperados corresponden a documentacion de transductores de presion Danfoss AKS 32 y AKS 33, sin relacion con este repositorio.

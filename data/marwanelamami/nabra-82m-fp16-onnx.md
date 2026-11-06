@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su enfoque en la compresión y optimizaci
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo base. Los tags de HuggingFace mencionan StyleTTS2, iSTFTNet y Kokoro, lo que sugiere que el modelo podria combinar un encoder de estilo, un decodificador basado en iSTFTNet y tecnicas de sintesis del ecosistema Kokoro, pero esto no esta confirmado en la model card. El proceso de entrenamiento del modelo original tampoco se describe; solo se indica que esta variante es una cuantizacion del modelo Nabra-82M-v0.1.
+La informacion disponible no detalla la arquitectura interna del modelo base. Los tags de Hugging Face mencionan StyleTTS2, iSTFTNet y Kokoro, lo que sugiere que el modelo podria combinar un encoder de estilo, un decodificador basado en iSTFTNet y tecnicas de sintesis del ecosistema Kokoro, pero esto no esta confirmado en la model card. El proceso de entrenamiento del modelo original tampoco se describe; solo se indica que esta variante es una cuantizacion del modelo Nabra-82M-v0.1.
 
 La cuantizacion FP16 se aplica exclusivamente al almacenamiento de los pesos: cada inicializador se convierte a FP16 y se inserta una operacion `Cast` de vuelta a FP32 antes de su consumidor. Esto implica que el calculo aritmetico se realiza en FP32, ya que la arquitectura ARMv8.0-A no soporta matematicas FP16 nativas. Como consecuencia, el pico de RAM es ligeramente superior al de la version FP32, porque el runtime mantiene ambas copias (FP16 y FP32) en memoria. La ventaja principal es la reduccion del tamano de descarga y del espacio en disco, no la mejora de latencia o consumo de memoria.
 
@@ -70,7 +70,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo FP16: https://huggingface.co/marwanelamami/nabra-82m-fp16-onnx
-- Repositorio HuggingFace del modelo base (FP32 ONNX): https://huggingface.co/marwanelamami/Nabra-82M-v0.1-ONNX
+- Repositorio Hugging Face del modelo FP16: https://huggingface.co/marwanelamami/nabra-82m-fp16-onnx
+- Repositorio Hugging Face del modelo base (FP32 ONNX): https://huggingface.co/marwanelamami/Nabra-82M-v0.1-ONNX
 - Modelo original (antes de la conversion ONNX): https://huggingface.co/oddadmix/Nabra-82M-v0.1
 - Perfil de GitHub del autor: https://github.com/marwanelamami/marwanelamami

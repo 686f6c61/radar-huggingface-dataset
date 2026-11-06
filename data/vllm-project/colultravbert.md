@@ -124,7 +124,7 @@ La comparativa se limita a los modelos para los que la model card aporta datos. 
 
 ## Enlaces
 
-- Modelo en HuggingFace (copia vllm-project): https://huggingface.co/vllm-project/ColUltraVBERT
+- Modelo en Hugging Face (copia vllm-project): https://huggingface.co/vllm-project/ColUltraVBERT
 - Modelo original: https://huggingface.co/athrael-soju/ColUltraVBERT
 - Modelo base UltraVBERT: https://huggingface.co/athrael-soju/UltraVBERT
 - Recuperador single-vector BiUltraVBERT: https://huggingface.co/athrael-soju/BiUltraVBERT

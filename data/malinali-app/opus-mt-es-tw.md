@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`malinali-app/opus-mt-es-tw` es un paquete de pesos publicado en HuggingFace por el proyecto Malinali para traduccion automatica de espanol (es) a twi (tw), una lengua del grupo akan hablada principalmente en Ghana. No se trata de un modelo entrenado desde cero: es una redistribucion de los pesos del modelo `Helsinki-NLP/opus-mt-es-tw`, del proyecto OPUS-MT de la Universidad de Helsinki, reempaquetados en formato safetensors junto con tokenizadores rapidos convertidos a JSON para su uso con el runtime Candle.
+`malinali-app/opus-mt-es-tw` es un paquete de pesos publicado en Hugging Face por el proyecto Malinali para traduccion automatica de espanol (es) a twi (tw), una lengua del grupo akan hablada principalmente en Ghana. No se trata de un modelo entrenado desde cero: es una redistribucion de los pesos del modelo `Helsinki-NLP/opus-mt-es-tw`, del proyecto OPUS-MT de la Universidad de Helsinki, reempaquetados en formato safetensors junto con tokenizadores rapidos convertidos a JSON para su uso con el runtime Candle.
 
 La relevancia del paquete es practica mas que cientifica. Malinali lo publica como componente on-device para su aplicacion, lo que implica que el objetivo es ejecutar traduccion espanol-twi localmente en dispositivos sin depender de una API externa. Para desarrolladores e investigadores que trabajen con lenguas de bajos recursos, este repositorio ofrece una via de acceso directa a un modelo OPUS-MT ya entrenado, con tokenizadores listos para Candle en lugar del formato SentencePiece original.
 
@@ -33,13 +33,13 @@ Arquitectonicamente es un transformer encoder-decoder de tipo Marian, con aproxi
 
 El modelo sigue la arquitectura Marian, un transformer encoder-decoder disenado especificamente para traduccion automatica neuronal y utilizado de forma extensiva en el ecosistema OPUS-MT. La informacion disponible no detalla el numero de capas, dimension del modelo, cabezas de atencion ni la composicion exacta del dataset de entrenamiento, ya que este repositorio es una redistribucion y no incluye la model card tecnica del entrenamiento original.
 
-Malinali unicamente realiza dos operaciones sobre los pesos de origen: el reempaquetado a safetensors y la conversion de los tokenizadores de SentencePiece al formato JSON de tokenizador rapido de HuggingFace. No se declara ningun proceso de fine-tuning, RLHF, DPO ni ajuste adicional, por lo que las capacidades del modelo son las heredadas del checkpoint `Helsinki-NLP/opus-mt-es-tw`. El runtime objetivo declarado es Candle, a traves del componente `marian_flutter`, orientado a inferencia en dispositivo.
+Malinali unicamente realiza dos operaciones sobre los pesos de origen: el reempaquetado a safetensors y la conversion de los tokenizadores de SentencePiece al formato JSON de tokenizador rapido de Hugging Face. No se declara ningun proceso de fine-tuning, RLHF, DPO ni ajuste adicional, por lo que las capacidades del modelo son las heredadas del checkpoint `Helsinki-NLP/opus-mt-es-tw`. El runtime objetivo declarado es Candle, a traves del componente `marian_flutter`, orientado a inferencia en dispositivo.
 
 ## Capacidades
 
 - Traduccion automatica unidireccional de espanol a twi.
 - Generacion de texto secuencia a secuencia mediante pipeline `text2text-generation`.
-- Compatibilidad con la libreria `transformers` y con el tag `endpoints_compatible`, lo que permite desplegarlo en Inference Endpoints de HuggingFace.
+- Compatibilidad con la libreria `transformers` y con el tag `endpoints_compatible`, lo que permite desplegarlo en Inference Endpoints de Hugging Face.
 - Inferencia on-device mediante Candle, segun el proposito declarado del paquete.
 - Uso de tokenizadores rapidos separados para origen y destino, en lugar de un tokenizador SentencePiece unico.
 - No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento extendido.
@@ -53,7 +53,7 @@ Malinali unicamente realiza dos operaciones sobre los pesos de origen: el reempa
 - Traduccion de contenido educativo: conversion de materiales didacticos o cursos en espanol a twi para su distribucion en comunidades ghanesas donde el twi es la lengua vehicular.
 - Prototipado de sistemas de traduccion para lenguas de bajos recursos: sirve como punto de partida para experimentos de fine-tuning o evaluacion comparativa frente a modelos multilingues grandes, dado su bajo coste computacional.
 - Subtitulado o transcripcion traducida en tiempo casi real: al ser un modelo pequeno, la latencia en GPU consumer o incluso en CPU es baja, lo que permite procesar segmentos cortos de subtitulos sucesivamente.
-- Integracion como servicio en HuggingFace Inference Endpoints: el tag `endpoints_compatible` facilita desplegar el modelo como API REST sin gestionar infraestructura propia, util para integraciones puntuales.
+- Integracion como servicio en Hugging Face Inference Endpoints: el tag `endpoints_compatible` facilita desplegar el modelo como API REST sin gestionar infraestructura propia, util para integraciones puntuales.
 
 ## Benchmarks y rendimiento
 
@@ -64,17 +64,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: con 75,5 millones de parametros, los pesos ocupan aproximadamente 302 MB en FP32, unos 151 MB en FP16 y unos 75 MB en INT8. El consumo real de VRAM depende de la longitud de secuencia y del tamano de lote.
 - GPU recomendadas: cualquier GPU moderna sirve para este tamano; una RTX 3090, RTX 4090, A100 o H100 lo ejecutan con holgura, aunque estan sobredimensionadas. Una GPU de gama baja como GTX 1650 o T4 es mas que suficiente.
 - Cabida en GPU consumer: si, cabe en practicamente cualquier GPU consumer con al menos 1-2 GB de VRAM libre, e incluso puede ejecutarse en CPU con latencias aceptables para uso interactivo.
-- Opciones de despliegue: `transformers` con PyTorch es la via directa; Candle a traves de `marian_flutter` es el runtime declarado por el autor; tambien es compatible con HuggingFace Inference Endpoints. No se documenta soporte explicito de vLLM, llama.cpp, Ollama ni TGI, y al no distribuirse pesos GGUF no es desplegable directamente en llama.cpp u Ollama.
+- Opciones de despliegue: `transformers` con PyTorch es la via directa; Candle a traves de `marian_flutter` es el runtime declarado por el autor; tambien es compatible con Hugging Face Inference Endpoints. No se documenta soporte explicito de vLLM, llama.cpp, Ollama ni TGI, y al no distribuirse pesos GGUF no es desplegable directamente en llama.cpp u Ollama.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| malinali-app/opus-mt-es-tw | 75,5 M | es, tw | no disponible | no disponible (origen tipicamente CC-BY 4.0) | HuggingFace, 0 descargas |
-| Helsinki-NLP/opus-mt-es-tw | ~75 M (mismo checkpoint de origen) | es, tw | no disponible | CC-BY 4.0 segun OPUS-MT | HuggingFace, ampliamente usado |
-| NLLB-200 (distilled 600M) | 600 M | 200 idiomas, incluye tw | no disponible | CC-BY-NC 4.0 | HuggingFace, uso no comercial |
-| M2M-100 (418M) | 418 M | 100 idiomas | no disponible | MIT | HuggingFace |
+| malinali-app/opus-mt-es-tw | 75,5 M | es, tw | no disponible | no disponible (origen tipicamente CC-BY 4.0) | Hugging Face, 0 descargas |
+| Helsinki-NLP/opus-mt-es-tw | ~75 M (mismo checkpoint de origen) | es, tw | no disponible | CC-BY 4.0 segun OPUS-MT | Hugging Face, ampliamente usado |
+| NLLB-200 (distilled 600M) | 600 M | 200 idiomas, incluye tw | no disponible | CC-BY-NC 4.0 | Hugging Face, uso no comercial |
+| M2M-100 (418M) | 418 M | 100 idiomas | no disponible | MIT | Hugging Face |
 
 La diferencia principal frente al checkpoint de Helsinki-NLP es el formato: safetensors y tokenizadores rapidos para Candle, frente a los pesos originales con tokenizador SentencePiece. Frente a NLLB-200 o M2M-100, el modelo de Malinali es entre cinco y ocho veces mas pequeno, lo que reduce costes de inferencia pero tambien limita la calidad esperada, dado que los modelos multilingues grandes suelen obtener mejores resultados en traduccion a lenguas de bajos recursos.
 
@@ -91,7 +91,7 @@ La diferencia principal frente al checkpoint de Helsinki-NLP es el formato: safe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/malinali-app/opus-mt-es-tw
+- Repositorio en Hugging Face: https://huggingface.co/malinali-app/opus-mt-es-tw
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-es-tw
 - Proyecto OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT
 - Aplicacion Malinali: https://malinali.app

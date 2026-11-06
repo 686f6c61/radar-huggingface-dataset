@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo ldegroot1995/mocov3-classification es una implementación a pequeña escala de Moco v3 orientada a tareas de clasificación, publicada por el usuario ldegroot1995 en HuggingFace bajo licencia Apache 2.0. El repositorio empaqueta el código de la implementación (main.py), la configuración de arquitectura (config.json) y la receta de entrenamiento por defecto (training_args.json), junto con un checkpoint de inicialización (model.safetensors).
+El modelo ldegroot1995/mocov3-classification es una implementación a pequeña escala de Moco v3 orientada a tareas de clasificación, publicada por el usuario ldegroot1995 en Hugging Face bajo licencia Apache 2.0. El repositorio empaqueta el código de la implementación (main.py), la configuración de arquitectura (config.json) y la receta de entrenamiento por defecto (training_args.json), junto con un checkpoint de inicialización (model.safetensors).
 
 Se trata de un artefacto de carácter experimental. La propia model card indica de forma explícita que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado ni un release con resultados de benchmark. Aunque la model card declara la variante "giant", el recuento real de parámetros en safetensors es de 33.088, una cifra muy alejada de lo que habitualmente implica esa escala, por lo que conviene tratarla como una discrepancia documental.
 
@@ -47,7 +47,7 @@ No hay evidencia de un entrenamiento completado. La model card afirma que estos 
 - Baseline de comparación metodológica: la model card recomienda entrenar todos los baselines con la misma exposición de datos, presupuesto de ajuste y semillas, de modo que este repositorio puede actuar como esqueleto de esa comparación.
 - Reproducción de experimentos: al incluir `config.json` y `training_args.json`, facilita registrar y repetir una receta concreta (Adam, schedule coseno) bajo control de versiones.
 - Estudio de componentes arquitectónicos: permite aislar el efecto de grouped query attention, fusión bilineal, mish y scalenorm en tareas de clasificación.
-- Integración como adaptador en frameworks: sirve como base para escribir un adaptador que permita cargar la implementación mediante APIs genéricas de HuggingFace una vez adaptada.
+- Integración como adaptador en frameworks: sirve como base para escribir un adaptador que permita cargar la implementación mediante APIs genéricas de Hugging Face una vez adaptada.
 - Docencia y formación: ejemplo compacto (33.088 parámetros) para ilustrar la estructura de un modelo de clasificación basado en aprendizaje por contraste sin requerir hardware relevante.
 
 ## Benchmarks y rendimiento
@@ -70,7 +70,7 @@ No disponible. No hay datos de benchmarks ni métricas publicadas que permitan u
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ldegroot1995/mocov3-classification | 33.088 (safetensors) | no disponible | sin benchmark publicado | Apache 2.0 | HuggingFace |
+| ldegroot1995/mocov3-classification | 33.088 (safetensors) | no disponible | sin benchmark publicado | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,9 +83,9 @@ No disponible. No hay datos de benchmarks ni métricas publicadas que permitan u
 - Idiomas soportados: no disponible; no procede un análisis multilingüe.
 - Licencia Apache 2.0: permite uso comercial del artefacto, pero la model card recuerda revisar por separado los términos de los datos de origen si se combina con datasets externos.
 - Para producción: no apto en su estado actual; requeriría entrenamiento, evaluación con splits etiquetados, al menos tres semillas y un baseline de capacidad equivalente.
-- Las APIs automáticas de carga de HuggingFace requieren un adaptador explícito al tratarse de una implementación personalizada.
+- Las APIs automáticas de carga de Hugging Face requieren un adaptador explícito al tratarse de una implementación personalizada.
 - Los metadatos temporales del repositorio (creación y actualización en 2026) no coinciden con un ciclo de vida habitual; conviene no interpretarlos como señal de mantenimiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ldegroot1995/mocov3-classification
+- Hugging Face: https://huggingface.co/ldegroot1995/mocov3-classification

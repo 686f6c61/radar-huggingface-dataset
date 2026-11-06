@@ -51,6 +51,6 @@ No se dispone de información sobre modelos comparables. El nombre sugiere una f
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/OpenSparX-3b-cabin-chat-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/OpenSparX-3b-cabin-chat-i1-GGUF
 - Modelo original (qualcomm-ai-hub-community): https://huggingface.co/qualcomm-ai-hub-community/OpenSparX-3b-cabin-chat
 - Perfil del autor de la cuantización: https://huggingface.co/mradermacher

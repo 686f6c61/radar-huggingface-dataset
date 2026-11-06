@@ -21,7 +21,7 @@ El objetivo de este repositorio es proporcionar todos los archivos que los scrip
 
 ## Arquitectura y entrenamiento
 
-El repositorio contiene checkpoints de políticas de difusión preentrenadas, concretamente tres tipos de archivos: dos políticas congeladas de DPPO para `lamp` y `round_table`, dos experto (teachers) adicionales, y dos archivos de normalización (`normalization.pth`). Los nombres de los directorios (`furniture-pretrain/lamp/lamp_low_dim_pre_diffusion_mlp_ta8_td100/...`, `furniture-experts/lamp_low/...`) indican que se trata de políticas de difusión de baja dimensión entrenadas con el framework DPPO del repositorio `irom-lab/dppo`. Según la model card, estos pesos son un espejo sin cambios de la publicación pública de DPPO en Google Drive y del repositorio de HuggingFace `yeeeiii111/dppo-furniture-teachers`.
+El repositorio contiene checkpoints de políticas de difusión preentrenadas, concretamente tres tipos de archivos: dos políticas congeladas de DPPO para `lamp` y `round_table`, dos experto (teachers) adicionales, y dos archivos de normalización (`normalization.pth`). Los nombres de los directorios (`furniture-pretrain/lamp/lamp_low_dim_pre_diffusion_mlp_ta8_td100/...`, `furniture-experts/lamp_low/...`) indican que se trata de políticas de difusión de baja dimensión entrenadas con el framework DPPO del repositorio `irom-lab/dppo`. Según la model card, estos pesos son un espejo sin cambios de la publicación pública de DPPO en Google Drive y del repositorio de Hugging Face `yeeeiii111/dppo-furniture-teachers`.
 
 El entrenamiento se realizó en el entorno de simulación Isaac Gym, aunque este no se incluye en el repositorio por estar sujeto a la licencia de NVIDIA. Los teachers son referenciados como `expert_itr350.pt` y se corresponden con estados de entrenamiento en la iteración 350, alcanzando una tasa de éxito de 0,942 en la tarea de la lámpara, según la model card. No se proporcionan más detalles sobre la composición del dataset ni sobre técnicas como RLHF o DPO, porque se trata de un modelo de control robótico y no de un LLM.
 
@@ -72,7 +72,7 @@ No disponible. La información proporcionada no permite comparar estos assets co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/knightnemo/vam-furniture-assets
+- Repositorio Hugging Face: https://huggingface.co/knightnemo/vam-furniture-assets
 - Perfil del autor: https://huggingface.co/knightnemo
 - Repositorio original DPPO: https://github.com/irom-lab/dppo
 - Repositorio de teachers: https://huggingface.co/yeeeiii111/dppo-furniture-teachers

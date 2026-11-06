@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NAJY_act_task02_c100_gist30_soloall_reef_16D_60k_s1000 es un checkpoint de política robótica basado en ACT (Action Chunking with Transformers) publicado en HuggingFace por el usuario kiroaiseoul dentro del ecosistema LeRobot. No es un modelo de lenguaje: es una política de imitación entrenada para controlar un robot a partir de observaciones multimodales (estado proprioceptivo de 16 dimensiones y tres cámaras de 480x640) y producir acciones de 16 dimensiones. El checkpoint corresponde al paso 60.000 del run `t55_task02_c100_gist30_soloall_reef_120k_s1000`, entrenado según la model card en una máquina DGX (identificada como "DGX_1").
+NAJY_act_task02_c100_gist30_soloall_reef_16D_60k_s1000 es un checkpoint de política robótica basado en ACT (Action Chunking with Transformers) publicado en Hugging Face por el usuario kiroaiseoul dentro del ecosistema LeRobot. No es un modelo de lenguaje: es una política de imitación entrenada para controlar un robot a partir de observaciones multimodales (estado proprioceptivo de 16 dimensiones y tres cámaras de 480x640) y producir acciones de 16 dimensiones. El checkpoint corresponde al paso 60.000 del run `t55_task02_c100_gist30_soloall_reef_120k_s1000`, entrenado según la model card en una máquina DGX (identificada como "DGX_1").
 
 El modelo tiene 51.689.104 parámetros (unos 51,7 millones) y se distribuye en safetensors con un tamaño de repositorio de 0,2 GB, lo que lo sitúa en la liga de las políticas ligeras aptas para inferencia en hardware modesto. La model card indica explícitamente que la subida tiene fines de análisis y puntuación ("분석·채점용 업로드"), es decir, que se trata de un artefacto de evaluación intermedia y no de un candidato confirmado para despliegue real. Está asociado a la plataforma Trossen Mobile AI y a la investigación documentada en `trossen-ai-simulation`, en el apartado `docs/mobile_base_investigation.md` §94.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NAJY_act_task02_..._60k_s1000 (este) | 51.689.104 | no disponible | Manipulación `task02`, 16D estado/acción, 3 cámaras | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| NAJY_act_task02_..._60k_s1000 (este) | 51.689.104 | no disponible | Manipulación `task02`, 16D estado/acción, 3 cámaras | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | ACT original (Action Chunking with Transformers) | no disponible en la informacion | no disponible | Manipulación bimanual de propósito general | investigación (consultar) | Repositorio académico |
 | Diffusion Policy | no disponible en la informacion | no disponible | Manipulación por difusión de acciones | investigación (consultar) | Repositorio académico |
-| Políticas VLA ligeras del ecosistema LeRobot (por ejemplo, SmolVLA) | no disponible en la informacion (referencia pública habitual: cientos de millones) | no disponible | Manipulación con instrucciones en lenguaje | apache-2.0 en algunos casos (verificar) | HuggingFace |
+| Políticas VLA ligeras del ecosistema LeRobot (por ejemplo, SmolVLA) | no disponible en la informacion (referencia pública habitual: cientos de millones) | no disponible | Manipulación con instrucciones en lenguaje | apache-2.0 en algunos casos (verificar) | Hugging Face |
 
 La comparación relevante es arquitectónica: este checkpoint es una ACT especializada en una sola tarea, sin entrada de lenguaje, mientras que las VLA del mismo ecosistema aceptan instrucciones en texto a cambio de un tamaño muy superior. No se dispone de métricas comunes que permitan comparar rendimiento entre ellas.
 
@@ -96,7 +96,7 @@ La comparación relevante es arquitectónica: este checkpoint es una ACT especia
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kiroaiseoul/NAJY_act_task02_c100_gist30_soloall_reef_16D_60k_s1000
+- Hugging Face: https://huggingface.co/kiroaiseoul/NAJY_act_task02_c100_gist30_soloall_reef_16D_60k_s1000
 - Referencia citada en la model card, sin URL verificable en la información disponible: `trossen-ai-simulation`, documento `docs/mobile_base_investigation.md` §94
 - Referencia citada en la model card, sin URL verificable: herramienta de diagnóstico `stage_cond_diag.py` y fichero `multi_manifest.json` (incluidos en el ecosistema de evaluación del autor)
 - No se han encontrado otros enlaces relevantes en la búsqueda web; los resultados devueltos por la búsqueda no guardan relación con este modelo y se han descartado.

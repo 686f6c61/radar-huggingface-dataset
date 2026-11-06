@@ -25,7 +25,7 @@ La licencia es Apache 2.0, lo que facilita el uso comercial y la modificación. 
 
 No se dispone de información detallada sobre la arquitectura interna del modelo base Wan2.1-T2V-14B en la documentación proporcionada. El pipeline declarado es text-to-video, lo que indica que se trata de un modelo generativo de vídeo condicionado por texto, probablemente basado en difusión, pero no se confirma el tipo exacto de transformer, el uso de attention lineal, ni si emplea arquitecturas híbridas.
 
-Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otros ajustes posteriores. La model card únicamente describe el proceso de conversión a GGUF: todos los cuantizados se crearon a partir del archivo base en FP32, y solo se subió FP16 debido a la limitación de 50 GB por archivo de HuggingFace y a que gguf-split no está soportado en ComfyUI-GGUF. No se documentan innovaciones técnicas adicionales.
+Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otros ajustes posteriores. La model card únicamente describe el proceso de conversión a GGUF: todos los cuantizados se crearon a partir del archivo base en FP32, y solo se subió FP16 debido a la limitación de 50 GB por archivo de Hugging Face y a que gguf-split no está soportado en ComfyUI-GGUF. No se documentan innovaciones técnicas adicionales.
 
 ## Capacidades
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wan2.1-T2V-14B-gguf (este) | 14,29B | no disponible | GGUF (FP16) | Apache 2.0 | HuggingFace, repo de 183,4 GB |
-| Wan-AI/Wan2.1-T2V-14B (base) | 14,29B | no disponible | safetensors (FP32/BF16) | Apache 2.0 | HuggingFace |
+| Wan2.1-T2V-14B-gguf (este) | 14,29B | no disponible | GGUF (FP16) | Apache 2.0 | Hugging Face, repo de 183,4 GB |
+| Wan-AI/Wan2.1-T2V-14B (base) | 14,29B | no disponible | safetensors (FP32/BF16) | Apache 2.0 | Hugging Face |
 | Otros modelos text-to-video de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para comparar con alternativas concretas de la misma categoría (por ejemplo, otros modelos text-to-video de 14B) en términos de rendimiento o benchmarks.
@@ -81,7 +81,7 @@ No se dispone de información suficiente para comparar con alternativas concreta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Riyan200324200324/Wan2.1-T2V-14B-gguf
+- Repositorio Hugging Face: https://huggingface.co/Riyan200324200324/Wan2.1-T2V-14B-gguf
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-14B
 - Nodo ComfyUI-GGUF: https://github.com/city96/ComfyUI-GGUF
 - VAE (Kijai): https://huggingface.co/Kijai/WanVideo_comfy/blob/main/Wan2_1_VAE_bf16.safetensors

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `BrandonHowe/Olmo7b-urban-olmo-20260920-full-CPT-merged-epoch-2` es un checkpoint de preentrenamiento continuado (continued pretraining, CPT) derivado de `allenai/Olmo-3-1025-7B`, desarrollado por el usuario BrandonHowe y publicado en HuggingFace. Se trata de la fusion completa de los pesos correspondientes a la epoca 2.0 (paso 756) del entrenamiento sobre el dataset `CompassioninMachineLearning/urban_12738_cleaned`, con 10.072 documentos distintos mas 2.000 exposiciones repetidas por epoca y 200 documentos de validacion disjuntos.
+El modelo `BrandonHowe/Olmo7b-urban-olmo-20260920-full-CPT-merged-epoch-2` es un checkpoint de preentrenamiento continuado (continued pretraining, CPT) derivado de `allenai/Olmo-3-1025-7B`, desarrollado por el usuario BrandonHowe y publicado en Hugging Face. Se trata de la fusion completa de los pesos correspondientes a la epoca 2.0 (paso 756) del entrenamiento sobre el dataset `CompassioninMachineLearning/urban_12738_cleaned`, con 10.072 documentos distintos mas 2.000 exposiciones repetidas por epoca y 200 documentos de validacion disjuntos.
 
 Su relevancia es experimental: permite estudiar el efecto del preentrenamiento continuado sobre un modelo base de 7.298.011.136 parametros (7,3 B) en un dominio concreto, sin necesidad de cargar adaptadores. Los pesos estan validados en BF16 y empaquetados sin perdida en ocho shards de safetensors, con un tamano de repositorio de 14,6 GB. No es un modelo ajustado por instrucciones ni alineado para dialogo: es un modelo de generacion de texto base.
 
@@ -74,15 +74,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Olmo7b-urban-olmo-20260920-full-CPT-merged-epoch-2 | 7,3 B | no disponible | no disponible | safetensors BF16 en HuggingFace, 219 descargas | Preentrenamiento continuado sobre corpus urbano; sin benchmarks publicados |
-| allenai/Olmo-3-1025-7B | 7,3 B (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Modelo base de referencia en HuggingFace | Origen directo del ajuste; comparacion natural para medir el efecto del CPT |
+| Olmo7b-urban-olmo-20260920-full-CPT-merged-epoch-2 | 7,3 B | no disponible | no disponible | safetensors BF16 en Hugging Face, 219 descargas | Preentrenamiento continuado sobre corpus urbano; sin benchmarks publicados |
+| allenai/Olmo-3-1025-7B | 7,3 B (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Modelo base de referencia en Hugging Face | Origen directo del ajuste; comparacion natural para medir el efecto del CPT |
 
 No se dispone de datos verificados de otros modelos comparables (por ejemplo alternativas de 7-8 B de la misma categoria) en la informacion proporcionada, por lo que no se incluyen cifras que no puedan confirmarse.
 
 ## Limitaciones y advertencias
 
 - Es un checkpoint de preentrenamiento continuado, no un modelo ajustado por instrucciones: no soporta de forma nativa dialogos multi-turno, tool calling ni plantillas de chat.
-- La licencia no esta declarada en la ficha de HuggingFace, lo que supone un riesgo legal para uso comercial; las condiciones aplicables dependerian de las del modelo base `allenai/Olmo-3-1025-7B`, no detalladas aqui.
+- La licencia no esta declarada en la ficha de Hugging Face, lo que supone un riesgo legal para uso comercial; las condiciones aplicables dependerian de las del modelo base `allenai/Olmo-3-1025-7B`, no detalladas aqui.
 - No se declaran idiomas soportados; el dominio del corpus de entrenamiento sugiere un sesgo hacia el idioma de dicho dataset, no confirmado.
 - Riesgo de alucinacion propio de cualquier modelo generativo de 7 B sin alineacion especifica.
 - El dataset de entrenamiento es reducido (10.072 documentos) y el regimen incluye 2.000 exposiciones repetidas por epoca, lo que aumenta el riesgo de sobreajuste y de olvido catastrofico respecto al modelo base.
@@ -94,7 +94,7 @@ No se dispone de datos verificados de otros modelos comparables (por ejemplo alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrandonHowe/Olmo7b-urban-olmo-20260920-full-CPT-merged-epoch-2
+- Modelo en Hugging Face: https://huggingface.co/BrandonHowe/Olmo7b-urban-olmo-20260920-full-CPT-merged-epoch-2
 - Modelo base: https://huggingface.co/allenai/Olmo-3-1025-7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/CompassioninMachineLearning/urban_12738_cleaned
 - Unsloth (utilidad de fusion empleada): https://github.com/unslothai/unsloth

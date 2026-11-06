@@ -4,9 +4,9 @@
 
 ## Resumen
 
-xw17/Qwen2.5-7B-Instruct_SFT_lora_ptt es un repositorio publicado en HuggingFace por el usuario xw17 cuyo nombre sugiere un ajuste fino mediante LoRA y aprendizaje supervisado (SFT) sobre el modelo base Qwen2.5-7B-Instruct. El repositorio ocupa 0,1 GB, un tamano compatible con pesos de adaptador LoRA en lugar de un modelo completo en precision completa, aunque no hay confirmacion explicita en la informacion disponible. Se declara compatible con transformers, con pesos en safetensors y con el tag endpoints_compatible, lo que indica que puede desplegarse en HuggingFace Inference Endpoints.
+xw17/Qwen2.5-7B-Instruct_SFT_lora_ptt es un repositorio publicado en Hugging Face por el usuario xw17 cuyo nombre sugiere un ajuste fino mediante LoRA y aprendizaje supervisado (SFT) sobre el modelo base Qwen2.5-7B-Instruct. El repositorio ocupa 0,1 GB, un tamano compatible con pesos de adaptador LoRA en lugar de un modelo completo en precision completa, aunque no hay confirmacion explicita en la informacion disponible. Se declara compatible con transformers, con pesos en safetensors y con el tag endpoints_compatible, lo que indica que puede desplegarse en Hugging Face Inference Endpoints.
 
-El problema que resuelve no esta documentado: la model card es la plantilla autogenerada de HuggingFace y todos sus campos figuran como "[More Information Needed]". No se especifican datos de entrenamiento, hiperparametros, composicion del dataset, licencia, idiomas ni resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes, por lo que no existe validacion por parte de la comunidad.
+El problema que resuelve no esta documentado: la model card es la plantilla autogenerada de Hugging Face y todos sus campos figuran como "[More Information Needed]". No se especifican datos de entrenamiento, hiperparametros, composicion del dataset, licencia, idiomas ni resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes, por lo que no existe validacion por parte de la comunidad.
 
 Su relevancia actual es limitada y de caracter exploratorio. El unico valor anadido del nombre del repositorio es la indicacion del modelo base (Qwen2.5-7B-Instruct) y del procedimiento (SFT con LoRA), y la posible referencia al conjunto de datos o tarea "ptt", cuyo significado no se aclara en ningun momento. Se trata, por tanto, de un artefacto sin documentar que solo deberia considerarse tras una inspeccion manual de los pesos y una evaluacion propia.
 
@@ -99,7 +99,7 @@ La diferencia fundamental no es de rendimiento, sino de trazabilidad: los tres m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/Qwen2.5-7B-Instruct_SFT_lora_ptt
+- Repositorio en Hugging Face: https://huggingface.co/xw17/Qwen2.5-7B-Instruct_SFT_lora_ptt
 - Paper referenciado en los tags del repositorio (Lacoste et al., 2019, estimacion de impacto ambiental, citado en la plantilla de model card): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la plantilla: https://mlco2.github.io/impact
 - Modelo base indicado por el nombre del repositorio (no enlazado en la model card): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

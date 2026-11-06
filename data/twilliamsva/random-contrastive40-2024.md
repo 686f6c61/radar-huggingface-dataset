@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`twilliamsva/random-contrastive40-2024` es un repositorio de HuggingFace publicado por el usuario twilliamsva que contiene una implementación propia de una arquitectura CoCa (Contrastive Captioners) orientada a tareas contrastivas, en una configuración declarada como "xlarge". El repositorio no incluye un modelo entrenado: el fichero `model.safetensors` se describe explícitamente en la model card como un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*), no como un modelo con pesos entrenados ni evaluados.
+`twilliamsva/random-contrastive40-2024` es un repositorio de Hugging Face publicado por el usuario twilliamsva que contiene una implementación propia de una arquitectura CoCa (Contrastive Captioners) orientada a tareas contrastivas, en una configuración declarada como "xlarge". El repositorio no incluye un modelo entrenado: el fichero `model.safetensors` se describe explícitamente en la model card como un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*), no como un modelo con pesos entrenados ni evaluados.
 
 El dato real extraído del safetensors indica un total de 24.832 parámetros, una cifra extremadamente reducida que confirma que se trata de un artefacto de código y configuración, no de un modelo con capacidad de inferencia real. El repositorio ocupa 0,0 GB y no registra descargas ni *likes*, por lo que su relevancia actual es la de un punto de partida reproducible y transparente para experimentación, no la de un modelo desplegable en producción.
 
@@ -87,5 +87,5 @@ No disponible. No se dispone de métricas publicadas para este repositorio, y un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/twilliamsva/random-contrastive40-2024
+- Modelo en Hugging Face: https://huggingface.co/twilliamsva/random-contrastive40-2024
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

@@ -12,7 +12,7 @@ Con 33.357.390.064 parametros (aproximadamente 33,4 mil millones) en formato bf1
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal vision-lenguaje (tag de HuggingFace: qwen3_vl); variante afinada de Qwen3-VL-32B-Instruct |
+| Arquitectura | Transformer multimodal vision-lenguaje (tag de Hugging Face: qwen3_vl); variante afinada de Qwen3-VL-32B-Instruct |
 | Parametros totales | 33.357.390.064 (33,4 B) |
 | Parametros activos | No aplica (no es un modelo MoE segun la informacion disponible) |
 | Longitud de contexto | 24.576 tokens (configuracion de evaluacion y de servido indicada en la model card) |
@@ -82,8 +82,8 @@ Segun la model card, AesCode-32B mejora la metrica Visual de su backbone Qwen3-V
 
 | Modelo | Parametros | Contexto | Overall (benchmark AesCode) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AesCode-32B | 33,4 B | 24.576 tokens (config. de evaluacion) | 85,89 | Apache 2.0 | Pesos abiertos en HuggingFace |
-| AesCode-8B | no disponible | no disponible | 82,94 | no disponible en la informacion | Pesos abiertos en HuggingFace |
+| AesCode-32B | 33,4 B | 24.576 tokens (config. de evaluacion) | 85,89 | Apache 2.0 | Pesos abiertos en Hugging Face |
+| AesCode-8B | no disponible | no disponible | 82,94 | no disponible en la informacion | Pesos abiertos en Hugging Face |
 | Qwen3-VL-32B-Instruct (backbone) | no disponible | no disponible | 61,10 con referencia / 48,61 sin referencia | no disponible en la informacion | Pesos abiertos |
 | GPT-5.5 | no disponible | no disponible | 81,28 con referencia / 76,31 sin referencia | propietaria | API |
 | Claude Opus 4.8 | no disponible | no disponible | 80,39 con referencia / 76,78 sin referencia | propietaria | API |
@@ -104,7 +104,7 @@ La comparativa se limita a la tarea especifica del benchmark de la model card (g
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/microsoft/AesCode-32B
+- Modelo en Hugging Face: https://huggingface.co/microsoft/AesCode-32B
 - Modelo hermano: https://huggingface.co/microsoft/AesCode-8B
 - Codigo: https://github.com/microsoft/AesCode
 - Paper: AesCode: Aesthetic Code Generation with Decoupled Cross-Modal Rewards (referenciado en la model card, sin URL directa en la informacion proporcionada)

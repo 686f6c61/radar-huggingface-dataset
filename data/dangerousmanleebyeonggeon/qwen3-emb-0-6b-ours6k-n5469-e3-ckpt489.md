@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune completo de Qwen/Qwen3-Embedding-0.6B, publicado por el usuario de HuggingFace `dangerousmanleebyeonggeon` bajo el identificador `qwen3-emb-0.6b-ours6k-n5469-e3-ckpt489`. Se trata de un modelo de embeddings de frases (pipeline `sentence-similarity`) orientado a recuperación semántica, no de un modelo generativo: su salida son vectores densos que representan consultas y documentos en un mismo espacio. El checkpoint publicado corresponde al paso 489 de 489, es decir, el estado final del entrenamiento, con una pérdida de evaluación de 1,6907.
+Este modelo es un fine-tune completo de Qwen/Qwen3-Embedding-0.6B, publicado por el usuario de Hugging Face `dangerousmanleebyeonggeon` bajo el identificador `qwen3-emb-0.6b-ours6k-n5469-e3-ckpt489`. Se trata de un modelo de embeddings de frases (pipeline `sentence-similarity`) orientado a recuperación semántica, no de un modelo generativo: su salida son vectores densos que representan consultas y documentos en un mismo espacio. El checkpoint publicado corresponde al paso 489 de 489, es decir, el estado final del entrenamiento, con una pérdida de evaluación de 1,6907.
 
 El interés de esta ficha es metodológico más que de producto. El propio autor lo describe como un "training-data ablation": se ha entrenado sobre el mismo volumen de datos que su conjunto de referencia (5.469 pares del dataset `canho/ours-6k`), compuesto por pares problema-de-investigación → método. Esto lo convierte en una pieza de control experimental para medir el efecto de los datos de entrenamiento, no en un modelo pensado para desplegarse en producción. Tiene 0 descargas y 0 "likes" en el momento de la consulta.
 
@@ -76,7 +76,7 @@ Los datos de comparacion no estan disponibles en la informacion proporcionada. L
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | qwen3-emb-0.6b-ours6k-n5469-e3-ckpt489 | 595.776.512 | No disponible | No disponible | Repositorio publico, 0 descargas |
-| Qwen/Qwen3-Embedding-0.6B (modelo base) | 0,6 B (referencia del autor) | No disponible en esta busqueda | Consultar su propia model card | Publico en HuggingFace, ampliamente utilizado |
+| Qwen/Qwen3-Embedding-0.6B (modelo base) | 0,6 B (referencia del autor) | No disponible en esta busqueda | Consultar su propia model card | Publico en Hugging Face, ampliamente utilizado |
 
 No se dispone de datos verificados en la informacion recuperada sobre alternativas de la misma categoria (por ejemplo, familias tipo BGE-M3, E5, GTE o los propios modelos Qwen3-Embedding de mayor tamano) que permitan una comparacion rigurosa de parametros, contexto o rendimiento. Cualquier comparacion numerica requeriria consultar las model cards de esos modelos y ejecutar una evaluacion comun sobre el mismo conjunto de datos.
 
@@ -96,7 +96,7 @@ No se dispone de datos verificados en la informacion recuperada sobre alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dangerousmanleebyeong/qwen3-emb-0.6b-ours6k-n5469-e3-ckpt489
+- Modelo en Hugging Face: https://huggingface.co/dangerousmanleebyeong/qwen3-emb-0.6b-ours6k-n5469-e3-ckpt489
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Dataset de entrenamiento citado: https://huggingface.co/datasets/canho/ours-6k
 - Framework de entrenamiento ms-swift: https://github.com/modelscope/ms-swift

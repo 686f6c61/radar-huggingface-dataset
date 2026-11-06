@@ -74,9 +74,9 @@ El autor señala que 13 de los 16 problemas que entraban en bucle en el modelo b
 
 | Modelo | Parámetros | Contexto | Thinking cerrado (18 problemas) | Correctas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.5-0.8B-loop-fix (este) | 873 M | no disponible | 15/18 (83 %) | 12/18 (67 %) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 873 M | no disponible | 2/18 (11 %) | — | no disponible en la información | HuggingFace |
-| Edit del artículo (reproducción, KidIkaros) | 873 M | no disponible | 17/18 (94 %) | 12/18 (67 %) | Apache 2.0 | HuggingFace |
+| Qwen3.5-0.8B-loop-fix (este) | 873 M | no disponible | 15/18 (83 %) | 12/18 (67 %) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 873 M | no disponible | 2/18 (11 %) | — | no disponible en la información | Hugging Face |
+| Edit del artículo (reproducción, KidIkaros) | 873 M | no disponible | 17/18 (94 %) | 12/18 (67 %) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de otros modelos comparables de la misma categoría (modelos multimodales de menos de 1.000 M de parámetros con modo thinking) en la información proporcionada.
 
@@ -95,7 +95,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría (mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KidIkaros/qwen3.5-0.8b-loop-fix
+- Modelo en Hugging Face: https://huggingface.co/KidIkaros/qwen3.5-0.8b-loop-fix
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Reproducción bit-exacta del edit original: https://huggingface.co/KidIkaros/qwen3.5-0.8b-loop-fix-reproduction
 - Artículo "Sparks of Weight-Space Programming": https://rikiyat.github.io/blog/weight-space-programming/

@@ -81,6 +81,6 @@ No se dispone de información sobre alternativas comparables en la documentació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/value-productions/quickmt-ur-en-int8
+- Modelo en Hugging Face: https://huggingface.co/value-productions/quickmt-ur-en-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-ur-en
 - CTranslate2 (runtime): https://github.com/OpenNMT/CTranslate2

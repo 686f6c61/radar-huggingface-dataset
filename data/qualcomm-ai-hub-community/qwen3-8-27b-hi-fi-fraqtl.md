@@ -88,7 +88,7 @@ La comparativa se limita a las variantes cuantizadas del mismo modelo base, ya q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qualcomm-ai-hub-community/Qwen3.8-27B-Hi-Fi-fraQtl
+- Repositorio Hugging Face: https://huggingface.co/qualcomm-ai-hub-community/Qwen3.8-27B-Hi-Fi-fraQtl
 - Repositorio canonico de fraQtl: https://huggingface.co/fraQtl/Qwen3.8-27B-Hi-Fi-GGUF
 - Repositorio oficial del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Qualcomm AI Hub: https://aihub.qualcomm.com/

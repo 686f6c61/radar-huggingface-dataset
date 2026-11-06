@@ -94,7 +94,7 @@ Nota: la model card advierte que la receta upstream `pi05_droid` es de velocidad
 - La interpretación del tempo exige respetar la convención de signos y relojes; un uso incorrecto produce velocidades de ejecución erróneas.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/symoon11/pi05-droid-jointpos-retimed-tempo
+- Hugging Face: https://huggingface.co/symoon11/pi05-droid-jointpos-retimed-tempo
 - Fork de entrenamiento de OpenPI: https://github.com/symoon11/openpi (rama `symoon11/droid-jointpos`)
 - Modelo relacionado mencionado: https://huggingface.co/symoon11/pi05-droid-measured-jointpos-retimed
 - No se han encontrado papers, blogs ni demos adicionales en la búsqueda web proporcionada (los resultados devueltos no están relacionados con el modelo).

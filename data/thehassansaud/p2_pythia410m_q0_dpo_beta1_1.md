@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `TheHassanSaud/P2_pythia410m_q0_dpo_beta1_1` es un checkpoint publicado en HuggingFace por el usuario TheHassanSaud, derivado del modelo base `pythia-410m` de EleutherAI (arquitectura `gpt_neox`, 405.334.016 parámetros según los pesos en safetensors). El nombre del repositorio sugiere un ajuste mediante DPO (Direct Preference Optimization) con un valor de beta de 1, sobre una configuración identificada como "q0", presumiblemente un punto de una rejilla de experimentos de alineación y/o cuantización. No se ha publicado documentación que confirme esta interpretación.
+El modelo `TheHassanSaud/P2_pythia410m_q0_dpo_beta1_1` es un checkpoint publicado en Hugging Face por el usuario TheHassanSaud, derivado del modelo base `pythia-410m` de EleutherAI (arquitectura `gpt_neox`, 405.334.016 parámetros según los pesos en safetensors). El nombre del repositorio sugiere un ajuste mediante DPO (Direct Preference Optimization) con un valor de beta de 1, sobre una configuración identificada como "q0", presumiblemente un punto de una rejilla de experimentos de alineación y/o cuantización. No se ha publicado documentación que confirme esta interpretación.
 
-El repositorio no incluye model card con contenido real: la tarjeta es la plantilla autogenerada de HuggingFace, con todos los campos marcados como "[More Information Needed]". No declara licencia, idiomas, datos de entrenamiento, hiperparámetros, proceso de alineación ni resultados de evaluación. Registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validación por parte de la comunidad.
+El repositorio no incluye model card con contenido real: la tarjeta es la plantilla autogenerada de Hugging Face, con todos los campos marcados como "[More Information Needed]". No declara licencia, idiomas, datos de entrenamiento, hiperparámetros, proceso de alineación ni resultados de evaluación. Registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validación por parte de la comunidad.
 
 Por sus dimensiones (aproximadamente 405 millones de parámetros) y su ventana de contexto heredada del modelo base, se trata de un modelo de laboratorio o de experimentación académica más que de un artefacto listo para producción. Su interés principal es como punto de comparación en estudios sobre DPO en modelos pequeños y como base barata para experimentos de ajuste en hardware de consumo.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `TheHassanSaud/P2_pythia410m_q0_dpo_beta1_1` | 405 M | no disponible | no disponible | HuggingFace, 0 descargas | Checkpoint sin documentación ni evaluación |
-| `EleutherAI/pythia-410m` (modelo base) | 405 M | 2048 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado | Modelo de referencia con 154 checkpoints publicados y documentación completa |
-| `openai-community/gpt2-medium` | 355 M | 1024 tokens | Modified MIT | HuggingFace | Alternativa clásica, menor contexto, muy integrada en el ecosistema |
-| `HuggingFaceTB/SmolLM2-360M` | 362 M | 8192 tokens | Apache 2.0 | HuggingFace | Entrenado con foco en instrucciones y contexto amplio; mucho más reciente |
+| `TheHassanSaud/P2_pythia410m_q0_dpo_beta1_1` | 405 M | no disponible | no disponible | Hugging Face, 0 descargas | Checkpoint sin documentación ni evaluación |
+| `EleutherAI/pythia-410m` (modelo base) | 405 M | 2048 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado | Modelo de referencia con 154 checkpoints publicados y documentación completa |
+| `openai-community/gpt2-medium` | 355 M | 1024 tokens | Modified MIT | Hugging Face | Alternativa clásica, menor contexto, muy integrada en el ecosistema |
+| `HuggingFaceTB/SmolLM2-360M` | 362 M | 8192 tokens | Apache 2.0 | Hugging Face | Entrenado con foco en instrucciones y contexto amplio; mucho más reciente |
 
 La comparación con el modelo base es la más directa: este checkpoint hereda su arquitectura y su tamaño, pero carece de la documentación, la licencia explícita y el soporte que acompañan a Pythia-410M. Frente a alternativas modernas de tamaño similar como SmolLM2-360M, la desventaja en contexto y en datos de ajuste es notable, aunque no puede cuantificarse sin evaluaciones publicadas.
 
@@ -88,7 +88,7 @@ La comparación con el modelo base es la más directa: este checkpoint hereda su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_dpo_beta1_1
+- Modelo en Hugging Face: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_dpo_beta1_1
 - Artículo citado en la etiqueta del repositorio (Lacoste et al., 2019, sobre estimación de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Modelo base de referencia (EleutherAI Pythia-410M): https://huggingface.co/EleutherAI/pythia-410m
-- Aviso: la búsqueda web realizada no ha devuelto resultados relevantes sobre este checkpoint; los únicos enlaces verificables son el repositorio de HuggingFace y los metadatos del propio modelo.
+- Aviso: la búsqueda web realizada no ha devuelto resultados relevantes sobre este checkpoint; los únicos enlaces verificables son el repositorio de Hugging Face y los metadatos del propio modelo.

@@ -47,7 +47,7 @@ Tampoco se documenta ningun proceso de entrenamiento: no se indican tokens de en
 - Definicion de criterios de reproducibilidad: las secciones sobre comprobaciones de reproducibilidad y modos de fallo son utiles como lista de comprobacion (versiones de dataset, semillas, hardware, registros crudos) para equipos que preparan experimentos.
 - Docencia y formacion interna: el material puede emplearse en un seminario para ilustrar como se formula una hipotesis falsable y un plan de evaluacion en aprendizaje automatico.
 - Auditoria de afirmaciones: el propio repositorio explicita que no reclama mejoras en benchmarks ni ablaciones completadas, lo que lo convierte en un ejemplo de buenas practicas de divulgacion al separar planes de resultados.
-- Verificacion de artefactos de un repositorio de HuggingFace: util para equipos que necesitan un caso de estudio sobre como distinguir un checkpoint real de un fichero auxiliar examinando el recuento de parametros y el tamano del repositorio.
+- Verificacion de artefactos de un repositorio de Hugging Face: util para equipos que necesitan un caso de estudio sobre como distinguir un checkpoint real de un fichero auxiliar examinando el recuento de parametros y el tamano del repositorio.
 - Prueba de integracion de la libreria `safetensors`: el fichero puede cargarse para validar canalizaciones de lectura de pesos, dado su tamano despreciable, sin que ello implique capacidad de inferencia util.
 
 ## Benchmarks y rendimiento
@@ -79,5 +79,5 @@ No disponible. Al no existir un modelo entrenado, no es posible establecer una c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Williamsmadison/knowledge-distillation-exp
+- Hugging Face: https://huggingface.co/Williamsmadison/knowledge-distillation-exp
 - No se han encontrado en la busqueda web enlaces relevantes al modelo o al repositorio: los resultados devueltos corresponden a articulos de recetas de cocina en persa y no guardan relacion con el objeto de esta ficha.

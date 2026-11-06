@@ -2,7 +2,7 @@
 
 ## Resumen
 
-multilingual-e5-small-labor es un modelo de embeddings densos derivado de intfloat/multilingual-e5-small mediante fine-tuning supervisado con pares consulta-respuesta del ambito laboral coreano. Lo publica el usuario gggaaammmeee en HuggingFace y esta pensado como recuperador semantico especializado para buscar articulos de legislacion laboral (por ejemplo, el articulo sobre permiso menstrual o la prescripcion de tres anos de los creditos salariales) a partir de preguntas redactadas en lenguaje natural.
+multilingual-e5-small-labor es un modelo de embeddings densos derivado de intfloat/multilingual-e5-small mediante fine-tuning supervisado con pares consulta-respuesta del ambito laboral coreano. Lo publica el usuario gggaaammmeee en Hugging Face y esta pensado como recuperador semantico especializado para buscar articulos de legislacion laboral (por ejemplo, el articulo sobre permiso menstrual o la prescripcion de tres anos de los creditos salariales) a partir de preguntas redactadas en lenguaje natural.
 
 El modelo conserva la arquitectura BERT del base (117.653.760 parametros, embeddings de 384 dimensiones, ventana maxima de 512 tokens incluyendo prefijos y tokens especiales) y se entrena con la perdida MultipleNegativesRankingLoss sobre un dataset de 663 pares. La convencion de prefijos `query:` y `passage:` se mantiene igual que en e5, y la salida debe normalizarse con `normalize_embeddings=True` para usar similitud coseno.
 
@@ -100,7 +100,7 @@ No se han publicado comparaciones con el modelo base ni con otros modelos de emb
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gggaaammmeee/multilingual-e5-small-labor
+- Modelo en Hugging Face: https://huggingface.co/gggaaammmeee/multilingual-e5-small-labor
 - Dataset de entrenamiento: https://huggingface.co/datasets/gggaaammmeee/labor-embedding-data
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Repositorio de sentence-transformers: https://github.com/UKPLab/sentence-transformers

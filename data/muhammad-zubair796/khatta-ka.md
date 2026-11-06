@@ -63,10 +63,10 @@ No se dispone de información sobre modelos comparables específicos para el dia
 - La cobertura del dialecto es limitada: solo se ha entrenado con datos del dialecto Khattak, por lo que no es adecuado para otras variantes del pastún.
 - No se especifica la longitud de contexto, lo que puede limitar tareas que requieran ventanas largas.
 - Aunque la licencia es Apache-2.0, el modelo base puede tener restricciones adicionales; se recomienda verificar la licencia de `junaid008/qehwa-pashto-llm` antes de uso comercial.
-- El modelo tiene cero descargas y cero likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo tiene cero descargas y cero likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Muhammad-Zubair796/Khatta-ka
+- Hugging Face: https://huggingface.co/Muhammad-Zubair796/Khatta-ka
 - Repositorio GitHub: https://github.com/Muhammad-Zubair796/Khatta-ka-LLM
 - Modelo base: https://huggingface.co/junaid008/qehwa-pashto-llm

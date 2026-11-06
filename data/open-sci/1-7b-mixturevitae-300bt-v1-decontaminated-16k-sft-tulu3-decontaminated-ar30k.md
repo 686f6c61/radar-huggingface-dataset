@@ -4,7 +4,7 @@
 
 El modelo `open-sci/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-SFT-Tulu3-decontaminated-ar30k` es un modelo de lenguaje de aproximadamente 1.714 millones de parámetros (1,7B) publicado por la organización open-sci. Se trata de un ajuste fino supervisado (SFT) de un modelo base entrenado bajo la denominación "MixtureVitae-300BT-v1-decontaminated-16k", que sugiere un entrenamiento sobre unos 300.000 millones de tokens con un contexto de 16.000 tokens y un proceso de decontaminación de datos. El ajuste se realizó con el framework LLaMA-Factory sobre el dataset AceReason-1.1-SFT-30k-sharegpt-hf, orientado a razonamiento.
 
-El modelo está etiquetado en HuggingFace con el pipeline `feature-extraction`, aunque su naturaleza es la de un modelo generativo de tipo transformer con pesos en safetensors y código personalizado (`custom_code`). El repositorio ocupa 3,4 GB y la licencia es "other", sin que la model card aclare los términos concretos de uso comercial.
+El modelo está etiquetado en Hugging Face con el pipeline `feature-extraction`, aunque su naturaleza es la de un modelo generativo de tipo transformer con pesos en safetensors y código personalizado (`custom_code`). El repositorio ocupa 3,4 GB y la licencia es "other", sin que la model card aclare los términos concretos de uso comercial.
 
 La relevancia de esta ficha es doble: por un lado, documenta un modelo pequeño (1,7B) entrenado desde cero con un volumen de datos considerable para su tamaño, lo que lo sitúa en la categoría de modelos compactos aptos para hardware de consumo; por otro, advierte de que la información pública es muy escasa (model card autogenerada, sin benchmarks ni descripción de capacidades), lo que condiciona cualquier evaluación rigurosa.
 
@@ -32,7 +32,7 @@ El ajuste fino se realizó con LLaMA-Factory en modalidad "full" (todos los par�
 - Generación de texto autoregresiva (modelo causal de lenguaje), aunque el pipeline declarado sea `feature-extraction`.
 - Razonamiento y resolución de problemas, dado el ajuste sobre un dataset de tipo AceReason orientado a razonamiento.
 - Conversación multi-turno en formato ShareGPT (el dataset de SFT usa ese formato).
-- Capacidad de extracción de características (feature extraction) por su etiquetado en HuggingFace.
+- Capacidad de extracción de características (feature extraction) por su etiquetado en Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no documentadas explícitamente; el dataset de razonamiento sugiere cierta aptitud, pero no hay evidencia publicada.
 - Capacidades multilingües: no disponibles (idiomas no declarados).
@@ -65,7 +65,7 @@ La model-index del autor declara una entrada de evaluación (`sft__AceReason-1-1
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| open-sci 1.7b-MixtureVitae (este modelo) | 1,7B | 16k (inferido) | other | HuggingFace, safetensors, `custom_code` |
+| open-sci 1.7b-MixtureVitae (este modelo) | 1,7B | 16k (inferido) | other | Hugging Face, safetensors, `custom_code` |
 | TinyLlama-1.1B | 1,1B | 2k-4k | Apache 2.0 | Amplia, con GGUF y ecosistema |
 | Qwen2.5-1.5B | 1,5B | 32k | Apache 2.0 (mayoría de variantes) | Amplia, con GGUF, vLLM y Ollama |
 | SmolLM2-1.7B | 1,7B | 8k | Apache 2.0 | Amplia, con GGUF y Ollama |
@@ -86,7 +86,7 @@ La comparación de rendimiento no es posible porque este modelo no publica bench
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-SFT-Tulu3-decontaminated-ar30k
+- Hugging Face: https://huggingface.co/open-sci/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-SFT-Tulu3-decontaminated-ar30k
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - Transformers: https://github.com/huggingface/transformers
 - Dataset de SFT referenciado (no enlazado en la model card): `AceReason-1.1-SFT-30k-sharegpt-hf` (no disponible URL pública en la información proporcionada)

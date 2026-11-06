@@ -77,8 +77,8 @@ El quant OptiQ supera al uniforme en 3,6 puntos de media, con mejoras destacable
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-OptiQ-4bit (este modelo) | 1,73 B | 256k | Mixta 4/8-bit (OptiQ, MLX) | lfm1.0 (other) | HuggingFace, mlx-community |
-| LiquidAI/LFM3-1.7B (base) | 1,73 B | 256k | bf16 | lfm1.0 (other) | HuggingFace, Liquid AI |
+| LFM3-1.7B-OptiQ-4bit (este modelo) | 1,73 B | 256k | Mixta 4/8-bit (OptiQ, MLX) | lfm1.0 (other) | Hugging Face, mlx-community |
+| LiquidAI/LFM3-1.7B (base) | 1,73 B | 256k | bf16 | lfm1.0 (other) | Hugging Face, Liquid AI |
 | Quant uniforme 4-bit de LFM3-1.7B | 1,73 B | 256k | 4-bit uniforme | lfm1.0 (other) | Referencia en la eval de OptiQ |
 
 No se dispone de datos comparativos publicados frente a otros modelos de tamaño similar de otras familias (por ejemplo Gemma o Qwen en gama 1-2B), por lo que no se pueden aportar cifras sin inventar datos.
@@ -96,7 +96,7 @@ No se dispone de datos comparativos publicados frente a otros modelos de tamaño
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/mlx-community/LFM3-1.7B-OptiQ-4bit
+- Ficha en Hugging Face: https://huggingface.co/mlx-community/LFM3-1.7B-OptiQ-4bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia lfm1.0: https://www.liquid.ai/lfm-license
 - Sitio del proyecto OptiQ: https://mlx-optiq.com/

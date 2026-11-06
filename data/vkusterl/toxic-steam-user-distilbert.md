@@ -95,7 +95,7 @@ Rendimiento de este checkpoint por número de reseñas en inglés del usuario:
 
 | Modelo | Parámetros | Contexto | AUC-PR (toxicidad usuario) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| toxic-steam-user-distilbert | 67 M | 256 tokens | 0,648 | apache-2.0 | HuggingFace |
+| toxic-steam-user-distilbert | 67 M | 256 tokens | 0,648 | apache-2.0 | Hugging Face |
 | DistilBERT end-to-end (receta paper, 10-fold) | 67 M | 256 tokens | 0,643 | apache-2.0 (receta) | referencia en paper |
 | Claude Opus como clasificador | no disponible | no disponible | 0,408 | propietaria | API |
 | GPT-4o como clasificador | no disponible | no disponible | 0,313 | propietaria | API |
@@ -118,7 +118,7 @@ La comparación con LLMs debe interpretarse con cautela: los LLMs se evaluaron s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vkusterl/toxic-steam-user-distilbert
+- Modelo en Hugging Face: https://huggingface.co/vkusterl/toxic-steam-user-distilbert
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Paper *Toxic Steam: A Large-Scale Characterization and Prediction of Toxic Users in a Gaming Platform* (AIIDE 2026): no disponible en la información proporcionada
 - Repositorio de código del paper: no disponible en la información proporcionada

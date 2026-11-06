@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `generalized-synthetic-deepfake-detector` es un artefacto publicado en HuggingFace por el usuario SaiCharitha1710 bajo licencia MIT. Por su identificador y por el tamano del repositorio (0,1 GB), se trata con alta probabilidad de un detector de contenido sintetico o deepfake, si bien la model card publicada no incluye ninguna descripcion funcional, arquitectura declarada ni documentacion tecnica.
+El modelo `generalized-synthetic-deepfake-detector` es un artefacto publicado en Hugging Face por el usuario SaiCharitha1710 bajo licencia MIT. Por su identificador y por el tamano del repositorio (0,1 GB), se trata con alta probabilidad de un detector de contenido sintetico o deepfake, si bien la model card publicada no incluye ninguna descripcion funcional, arquitectura declarada ni documentacion tecnica.
 
 La informacion disponible es extremadamente limitada: no se especifica pipeline, no se declaran idiomas, no hay resultados de benchmarks ni se detalla el proceso de entrenamiento. El repositorio fue creado y actualizado el 31 de octubre de 2026, cuenta con cero descargas y cero likes, lo que sugiere que es una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -75,4 +75,4 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SaiCharitha1710/generalized-synthetic-deepfake-detector
+- Hugging Face: https://huggingface.co/SaiCharitha1710/generalized-synthetic-deepfake-detector

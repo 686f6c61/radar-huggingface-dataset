@@ -40,7 +40,7 @@ Tampoco hay informacion sobre el corpus de entrenamiento, el numero de tokens ut
 - Soporte de tool calling o function calling: no disponible; no se menciona en la informacion proporcionada.
 - Soporte de agentes o razonamiento multi-paso: no disponible; el modelo esta etiquetado como `roleplay` y `chat`, sin indicios de entrenamiento para uso agentico.
 - Capacidades especiales (vision, audio, modo pensamiento): no disponible.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse mediante infraestructura de inferencia compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse mediante infraestructura de inferencia compatible con la API de Hugging Face.
 
 ## Casos de uso
 
@@ -101,6 +101,6 @@ No se dispone de datos de benchmarks para ninguno de los dos, por lo que no es p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thewilli1/M3.2-36B-Animus-V12.0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Thewilli1/M3.2-36B-Animus-V12.0-GGUF
 - Modelo base: https://huggingface.co/Darkhn/M3.2-36B-Animus-V12.0
 - Paper, blog o repositorio adicional: no disponible. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo.

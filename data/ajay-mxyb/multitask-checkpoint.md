@@ -71,7 +71,7 @@ La comparativa se establece a nivel de familia arquitectónica, ya que este repo
 
 | Modelo | Parametros | Dominio | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| multitask-checkpoint (este repo) | 49.600 (inicializacion, sin entrenar) | Vision multitarea | no aplica | BSD-3-Clause | HuggingFace, 0 descargas |
+| multitask-checkpoint (este repo) | 49.600 (inicializacion, sin entrenar) | Vision multitarea | no aplica | BSD-3-Clause | Hugging Face, 0 descargas |
 | MobileViT (familia original, Apple) | ~1,3 M (XXS) a ~5,6 M (S) segun variante | Vision (clasificacion, segmentacion) | no aplica | Codigo abierto / MIT segun release de referencia | Repositorio publico de referencia |
 | MobileNetV3 | ~2,5 M a ~5,4 M | Vision (clasificacion movil) | no aplica | Apache-2.0 (implementaciones habituales) | Ampliamente disponible |
 | EfficientNet-B0 | ~5,3 M | Vision (clasificacion) | no aplica | Apache-2.0 (implementaciones habituales) | Ampliamente disponible |
@@ -92,5 +92,5 @@ La diferencia fundamental es que el presente repositorio no es un modelo entrena
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ajay-mxyb/multitask-checkpoint
+- Hugging Face: https://huggingface.co/ajay-mxyb/multitask-checkpoint
 - No se han proporcionado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

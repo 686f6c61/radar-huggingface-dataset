@@ -6,7 +6,7 @@ doudizhu-C es un conjunto de checkpoints preentrenados en TensorFlow 1.x para ag
 
 El repositorio contiene dos checkpoints, en los pasos 302.500 y 500.000 de entrenamiento, que deben descargarse en la carpeta `pretrained_model` del repositorio de codigo `qq456cvb/doudizhu-C` en GitHub y evaluarse con las instrucciones de ese repositorio. El peso total del repo es de 0,9 GB, la licencia es MIT y la libreria declarada es TensorFlow 1.x.
 
-Su relevancia actual es mas historica y de investigacion que practica: es una implementacion de referencia de RL combinatorio aplicado a juegos de informacion imperfecta, publicada con codigo y pesos abiertos, lo que permite reproducir el agente y usarlo como linea base o como banco de pruebas para tecnicas de RL sobre espacios de acciones combinados. El modelo no ha recibido traccion en HuggingFace (0 descargas, 0 likes en el momento de la consulta).
+Su relevancia actual es mas historica y de investigacion que practica: es una implementacion de referencia de RL combinatorio aplicado a juegos de informacion imperfecta, publicada con codigo y pesos abiertos, lo que permite reproducir el agente y usarlo como linea base o como banco de pruebas para tecnicas de RL sobre espacios de acciones combinados. El modelo no ha recibido traccion en Hugging Face (0 descargas, 0 likes en el momento de la consulta).
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se dispone de datos verificados de otros agentes de Dou Di Zhu en la informac
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| doudizhu-C (CQL) | no disponible | no aplica | no disponible | MIT | pesos abiertos en HuggingFace y codigo en GitHub |
+| doudizhu-C (CQL) | no disponible | no aplica | no disponible | MIT | pesos abiertos en Hugging Face y codigo en GitHub |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -79,7 +79,7 @@ No se dispone de datos verificados de otros agentes de Dou Di Zhu en la informac
 - Dominio cerrado: el agente esta especializado en un unico juego con reglas fijas; no se documenta transferencia a otros juegos ni a otros dominios de decision.
 - Dependencia de TensorFlow 1.x: se trata de una version obsoleta del framework, sin soporte activo, lo que complica el despliegue en entornos modernos y exigira contenedores o entornos virtuales con versiones antiguas.
 - Ausencia de evaluacion publicada en el repositorio: la model card no aporta tasas de victoria ni comparaciones, de modo que el rendimiento real de los checkpoints de 302.500 y 500.000 pasos no puede verificarse con la informacion disponible.
-- Traccion nula en HuggingFace (0 descargas, 0 likes en el momento de la consulta): no hay validacion independiente por parte de la comunidad ni issues publicos que confirmen que los checkpoints cargan correctamente.
+- Traccion nula en Hugging Face (0 descargas, 0 likes en el momento de la consulta): no hay validacion independiente por parte de la comunidad ni issues publicos que confirmen que los checkpoints cargan correctamente.
 - Fechas del repositorio inusuales: la creacion y la ultima actualizacion registradas (2026) no coinciden con la publicacion del paper (2020), lo que sugiere un volcado posterior de artefactos; conviene verificar la integridad de los ficheros antes de usarlos en produccion.
 - Riesgo de sobreajuste a las heuristicas del entorno de entrenamiento: al no documentarse la composicion de los oponentes ni el procedimiento de self-play, no se puede descartar que el agente explote patrones especificos del simulador usado.
 - Licencia MIT: permite uso comercial y modificacion con atribucion, pero el usuario debe asumir que no hay garantias ni soporte del autor.
@@ -87,9 +87,9 @@ No se dispone de datos verificados de otros agentes de Dou Di Zhu en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qq456cvb/doudizhu-C
+- Modelo en Hugging Face: https://huggingface.co/qq456cvb/doudizhu-C
 - Codigo y instrucciones de uso: https://github.com/qq456cvb/doudizhu-C
 - Paper en arXiv: https://arxiv.org/abs/1901.08925
-- Pagina del paper en HuggingFace: https://huggingface.co/papers/1901.08925
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/1901.08925
 - Paper en AIIDE 2020 (AAAI OJS): https://ojs.aaai.org/index.php/AIIDE/article/view/7445
 - Pagina del autor: https://qq456cvb.github.io/

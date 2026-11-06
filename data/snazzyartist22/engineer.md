@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SnazzyArtist22/Engineer es un repositorio publicado en HuggingFace por el usuario SnazzyArtist22 el 20 de septiembre de 2026. La model card asociada está vacía: únicamente contiene el campo `license: unknown` y no incluye descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. No se declara pipeline de inferencia, idiomas soportados ni formato de pesos.
+SnazzyArtist22/Engineer es un repositorio publicado en Hugging Face por el usuario SnazzyArtist22 el 20 de septiembre de 2026. La model card asociada está vacía: únicamente contiene el campo `license: unknown` y no incluye descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. No se declara pipeline de inferencia, idiomas soportados ni formato de pesos.
 
 El repositorio tiene un tamaño de 0,3 GB y acumula 0 descargas y 0 likes en el momento de la consulta. La práctica totalidad de los campos tecnicos habituales (parametros, contexto, cuantizacion, licencia, idiomas) figuran como no disponibles, por lo que esta ficha se limita a documentar lo verificable y a marcar explicitamente cada vacio de informacion en lugar de inferir datos no confirmados.
 
@@ -20,7 +20,7 @@ Por el momento no existe evidencia de benchmarks, paper tecnico, repositorio de 
 | Idiomas soportados | no disponible |
 | Licencia | unknown (valor literal de la model card; implica ausencia de licencia explicita) |
 | Formato de pesos | no disponible |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamaño del repositorio | 0,3 GB |
 | Fecha de creacion | 2026-09-20T02:41:54Z |
 | Fecha de ultima actualizacion | 2026-09-20T02:43:30Z |
@@ -43,7 +43,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composici
 - No hay confirmacion de soporte de tool calling o function calling.
 - No hay confirmacion de comportamiento agentico o razonamiento multi-paso.
 - No hay confirmacion de capacidades multilingues ni de modo de razonamiento extendido (thinking mode).
-- La unica etiqueta semantica del repositorio, `region:us`, es una marca de region de infraestructura de HuggingFace y no aporta informacion sobre capacidades.
+- La unica etiqueta semantica del repositorio, `region:us`, es una marca de region de infraestructura de Hugging Face y no aporta informacion sobre capacidades.
 
 ## Casos de uso
 
@@ -51,7 +51,7 @@ No es posible recomendar casos de uso concretos sin conocer la arquitectura, el 
 
 - Evaluacion interna controlada: un equipo podria descargar el repositorio en un entorno aislado para inspeccionar los ficheros de pesos, identificar el formato real y determinar el tipo de modelo antes de considerarlo para cualquier uso.
 - Analisis de procedencia de modelos: el caso resulta util como ejemplo de repositorio sin documentacion, para estudiar la necesidad de exigir model cards completas en la seleccion de dependencias.
-- Docencia sobre higiene de publicacion en HuggingFace: sirve como contraejemplo de publicacion sin licencia, sin pipeline declarado y sin descripcion.
+- Docencia sobre higiene de publicacion en Hugging Face: sirve como contraejemplo de publicacion sin licencia, sin pipeline declarado y sin descripcion.
 - Cualquier otro caso de uso en produccion, investigacion o prototipado queda descartado por falta de informacion verificable y por la ausencia de una licencia explicita que autorice su uso.
 - No se dispone de minimo de seis casos realistas justificables con la informacion proporcionada.
 
@@ -75,7 +75,7 @@ No disponible. La categoria del modelo (tamaño, tarea, dominio) es desconocida,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| SnazzyArtist22/Engineer | no disponible | no disponible | unknown | HuggingFace, 0 descargas | no disponible |
+| SnazzyArtist22/Engineer | no disponible | no disponible | unknown | Hugging Face, 0 descargas | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No disponible. La categoria del modelo (tamaño, tarea, dominio) es desconocida,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SnazzyArtist22/Engineer
+- Hugging Face: https://huggingface.co/SnazzyArtist22/Engineer
 - Perfil del autor: https://huggingface.co/SnazzyArtist22
 - Paper: no disponible
 - Repositorio de codigo: no disponible

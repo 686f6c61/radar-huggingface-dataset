@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `asd12ad123123/MyAwesomeModel-TestRepo` es un repositorio de prueba alojado en HuggingFace con cero descargas, cero "likes" y un tamano de 0.0 GB, lo que indica que no contiene pesos del modelo ni archivos reales. La model card describe un modelo denominado "MyAwesomeModel" que habria experimentado una actualizacion significativa en sus capacidades de razonamiento e inferencia, con mejoras en matematicas, programacion y logica general, asi como una reduccion de la tasa de alucinacion y un soporte mejorado para function calling. Sin embargo, los metadatos del repositorio (tags: `bert`, pipeline: `feature-extraction`) contradicen la descripcion de la model card, que sugiere un modelo de razonamiento de gran tamano con un consumo de 23K tokens por pregunta en el conjunto AIME 2025. Se trata, con alta probabilidad, de una plantilla o repositorio de pruebas sin contenido real.
+El repositorio `asd12ad123123/MyAwesomeModel-TestRepo` es un repositorio de prueba alojado en Hugging Face con cero descargas, cero "likes" y un tamano de 0.0 GB, lo que indica que no contiene pesos del modelo ni archivos reales. La model card describe un modelo denominado "MyAwesomeModel" que habria experimentado una actualizacion significativa en sus capacidades de razonamiento e inferencia, con mejoras en matematicas, programacion y logica general, asi como una reduccion de la tasa de alucinacion y un soporte mejorado para function calling. Sin embargo, los metadatos del repositorio (tags: `bert`, pipeline: `feature-extraction`) contradicen la descripcion de la model card, que sugiere un modelo de razonamiento de gran tamano con un consumo de 23K tokens por pregunta en el conjunto AIME 2025. Se trata, con alta probabilidad, de una plantilla o repositorio de pruebas sin contenido real.
 
 ## Especificaciones tecnicas
 
@@ -93,6 +93,6 @@ No disponible. Al no conocerse la arquitectura, el numero de parametros ni la lo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/asd12ad123123/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/asd12ad123123/MyAwesomeModel-TestRepo
 - Repositorio duplicado (mismo contenido): https://huggingface.co/toolathlonhudi/MyAwesomeModel-TestRepo
 - No se han encontrado papers, repositorios de codigo, demos ni documentacion adicional asociados a este modelo.

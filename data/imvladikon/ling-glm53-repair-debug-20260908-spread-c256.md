@@ -4,7 +4,7 @@
 
 Se trata de un checkpoint experimental de depuración publicado por imvladikon con el identificador `ling-glm53-repair-debug-20260908-spread-c256`. Es un artefacto intermedio dentro de un pipeline de reparación de modelos, creado a partir del modelo base `Ling-3.0-tiny-GLM-5.3-Flash-surgery`. No es un modelo final ni ha superado la validación de aceptación; el propio autor lo califica como "artefacto de depuración" y advierte de que no debe interpretarse como una recuperación de la calidad del modelo original. Cuenta con 7.804.664.016 parámetros y un tamaño de repositorio de 18.2 GB.
 
-El pipeline declarado en HuggingFace es `image-text-to-text`, la licencia es MIT y los pesos se almacenan en formato `safetensors`. El checkpoint mezcla parámetros en BF16 y FP32, lo que requiere un cargador específico (`load_repaired.py`) para conservar las actualizaciones pequeñas de RMSNorm. Las pruebas de depuración realizadas por el autor incluyen evaluación en inglés y ruso, tanto en preguntas simples como en diálogos, aunque no existen benchmarks estándar publicados.
+El pipeline declarado en Hugging Face es `image-text-to-text`, la licencia es MIT y los pesos se almacenan en formato `safetensors`. El checkpoint mezcla parámetros en BF16 y FP32, lo que requiere un cargador específico (`load_repaired.py`) para conservar las actualizaciones pequeñas de RMSNorm. Las pruebas de depuración realizadas por el autor incluyen evaluación en inglés y ruso, tanto en preguntas simples como en diálogos, aunque no existen benchmarks estándar publicados.
 
 ## Especificaciones técnicas
 
@@ -31,7 +31,7 @@ No hay información sobre el conjunto de datos de entrenamiento, el número de t
 - Diálogo multi-turno: la evaluación del conjunto original tras la reparación alcanza un 77.8% de aciertos en diálogos en inglés y ruso, pero el autor advierte de que conviene inspeccionar los fallos y no solo los éxitos.
 - No se reporta soporte de tool calling ni function calling en la información disponible.
 - No se reportan capacidades de agentes ni multi-step reasoning.
-- No se proporcionan datos de capacidades de visión, audio o razonamiento avanzado, aunque el pipeline de HuggingFace sea `image-text-to-text`.
+- No se proporcionan datos de capacidades de visión, audio o razonamiento avanzado, aunque el pipeline de Hugging Face sea `image-text-to-text`.
 
 ## Casos de uso
 
@@ -86,6 +86,6 @@ No se dispone de otros modelos comparables de la misma categoría con datos sufi
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/imvladikon/ling-glm53-repair-debug-20260908-spread-c256)
+- [Modelo en Hugging Face](https://huggingface.co/imvladikon/ling-glm53-repair-debug-20260908-spread-c256)
 - [Modelo base `Ling-3.0-tiny-GLM-5.3-Flash-surgery`](https://huggingface.co/imvladikon/Ling-3.0-tiny-GLM-5.3-Flash-surgery)
 - [Repositorio GitHub relacionado con GLM-5.3: `omlx-glm53-mlx-fix`](https://github.com/gelubodrug/omlx-glm53-mlx-fix)

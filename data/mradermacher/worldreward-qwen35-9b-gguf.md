@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WorldReward-qwen35-9b-GGUF es una cuantización en formato GGUF del modelo WorldReward-qwen35-9b, desarrollado originalmente por CodeGoat24 y cuantizado por mradermacher. El modelo base se presenta como un reward model y world model orientado a la generación de vídeo con control de cámara, según los tags publicados en su ficha de HuggingFace. Aunque la información pública sobre el modelo original es muy escasa, el nombre sugiere una arquitectura derivada de la familia Qwen 3.5 con aproximadamente 9 000 millones de parámetros.
+WorldReward-qwen35-9b-GGUF es una cuantización en formato GGUF del modelo WorldReward-qwen35-9b, desarrollado originalmente por CodeGoat24 y cuantizado por mradermacher. El modelo base se presenta como un reward model y world model orientado a la generación de vídeo con control de cámara, según los tags publicados en su ficha de Hugging Face. Aunque la información pública sobre el modelo original es muy escasa, el nombre sugiere una arquitectura derivada de la familia Qwen 3.5 con aproximadamente 9 000 millones de parámetros.
 
 Esta versión GGUF ofrece múltiples niveles de cuantización (desde Q2_K hasta f16) y además incluye proyectores multimodales (mmproj) en Q8_0 y f16, lo que indica que el modelo base probablemente acepta entradas visuales además de texto. Es relevante porque permite ejecutar un modelo de este tipo en hardware de consumo con cuantizaciones ligeras, aunque no hay documentación oficial sobre sus capacidades exactas ni su rendimiento.
 
@@ -23,7 +23,7 @@ La licencia es Apache 2.0, lo que facilita su uso comercial, y el idioma declara
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información pública sobre la arquitectura interna del modelo base WorldReward-qwen35-9b. Los tags de HuggingFace indican que se trata de un reward model y world model, lo que sugiere una arquitectura de transformer multimodal capaz de procesar tanto texto como imágenes o vídeo. El nombre "qwen35" apunta a una posible base en la familia Qwen 3.5, pero no hay confirmación oficial.
+No se dispone de información pública sobre la arquitectura interna del modelo base WorldReward-qwen35-9b. Los tags de Hugging Face indican que se trata de un reward model y world model, lo que sugiere una arquitectura de transformer multimodal capaz de procesar tanto texto como imágenes o vídeo. El nombre "qwen35" apunta a una posible base en la familia Qwen 3.5, pero no hay confirmación oficial.
 
 Tampoco se han publicado detalles sobre el proceso de entrenamiento, el volumen de datos, el número de tokens utilizados ni si se aplicaron técnicas como RLHF o DPO. La cuantización GGUF realizada por mradermacher es estática (sin imatrix) y no modifica la arquitectura, solo reduce la precisión de los pesos para facilitar la inferencia en hardware con menos memoria.
 

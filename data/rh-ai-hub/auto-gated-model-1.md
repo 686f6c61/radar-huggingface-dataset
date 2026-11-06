@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RH-AI-Hub/Auto-Gated-Model-1 es un modelo publicado en HuggingFace por el usuario u organizacion RH-AI-Hub. Segun los metadatos de la plataforma, esta etiquetado con la tarea de pipeline `text-classification`, lo que indica que su proposito declarado es clasificar texto en categorias. El modelo esta marcado como de acceso restringido (gated), por lo que es necesario aceptar unas condiciones en HuggingFace antes de poder descargar los pesos.
+RH-AI-Hub/Auto-Gated-Model-1 es un modelo publicado en Hugging Face por el usuario u organizacion RH-AI-Hub. Segun los metadatos de la plataforma, esta etiquetado con la tarea de pipeline `text-classification`, lo que indica que su proposito declarado es clasificar texto en categorias. El modelo esta marcado como de acceso restringido (gated), por lo que es necesario aceptar unas condiciones en Hugging Face antes de poder descargar los pesos.
 
 La informacion publica disponible es muy limitada: no se especifican arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni resultados de benchmarks. La unica lengua declarada es el ingles (`en`) y la licencia figura como desconocida (`unknown`). El repositorio incluye la etiqueta `testTag`, lo que sugiere que puede tratarse de un modelo de prueba o de un experimento interno mas que de un lanzamiento de produccion.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible (depende del numero de parametros, que no se ha publicado).
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible; no puede determinarse sin conocer el tamano del modelo.
-- Opciones de despliegue: no disponible. Al ser un modelo de HuggingFace, podria desplegarse potencialmente con librerias habituales (Transformers, Text Embeddings Inference, ONNX Runtime o similares), pero ninguna se confirma en la documentacion.
+- Opciones de despliegue: no disponible. Al ser un modelo de Hugging Face, podria desplegarse potencialmente con librerias habituales (Transformers, Text Embeddings Inference, ONNX Runtime o similares), pero ninguna se confirma en la documentacion.
 - Latencia y throughput estimados: no disponible.
 
-Restriccion adicional: el acceso esta restringido (gated), por lo que la descarga exige aceptar condiciones en HuggingFace y disponer de un token de acceso valido.
+Restriccion adicional: el acceso esta restringido (gated), por lo que la descarga exige aceptar condiciones en Hugging Face y disponer de un token de acceso valido.
 
 ## Comparativa con modelos similares
 
@@ -73,7 +73,7 @@ No disponible. No se dispone de informacion sobre el tamano, la arquitectura ni 
 
 - Ausencia total de documentacion tecnica: no hay ficha de modelo, paper ni blog asociado.
 - Licencia desconocida: al figurar como `unknown`, no puede garantizarse el uso comercial ni la redistribucion. Es imprescindible aclarar las condiciones con el autor antes de cualquier uso.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que anade una dependencia de aprobacion por parte del autor.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que anade una dependencia de aprobacion por parte del autor.
 - Idioma limitado al ingles: no se declara soporte para castellano ni otros idiomas.
 - Posible modelo de prueba: la etiqueta `testTag` y la ausencia de descargas y "likes" apuntan a un artefacto experimental o no validado.
 - Riesgo de sesgos y alucinacion: no evaluable sin datos de entrenamiento ni evaluaciones publicadas.
@@ -82,7 +82,7 @@ No disponible. No se dispone de informacion sobre el tamano, la arquitectura ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RH-AI-Hub/Auto-Gated-Model-1
+- Hugging Face: https://huggingface.co/RH-AI-Hub/Auto-Gated-Model-1
 - Paper: no disponible.
 - Blog o documentacion: no disponible.
 - Repositorio de codigo: no disponible.

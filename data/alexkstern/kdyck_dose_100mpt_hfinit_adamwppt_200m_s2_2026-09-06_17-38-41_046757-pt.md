@@ -89,7 +89,7 @@ No se dispone de especificaciones ni resultados de rendimiento públicos para es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfinit_adamwppt_200M_s2_2026-09-06_17-38-41_046757-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfinit_adamwppt_200M_s2_2026-09-06_17-38-41_046757-pt
 - Run de Weights & Biases: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/uw3iu4kx
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Modelo similar sin `hfinit`: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_200M_s2_2026-08-14_18-57-50_991681-pt

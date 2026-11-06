@@ -84,9 +84,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| laion/moss-audio-voice-caption-gemini | 87,3 M entrenables sobre base de 9,05 B (9,14 B en total) | No disponible (tope de entrenamiento 8.192 tokens) | Captioning de voz completa en ingles | CC-BY-4.0 | HuggingFace, 0 descargas, 0 likes |
-| laion/moss-audio-burst-caption-gemini | Adaptador hermano sobre el mismo base | No disponible | Captioning por eventos con marcas de tiempo externas | No disponible en la informacion | HuggingFace |
-| OpenMOSS-Team/MOSS-Audio-8B-Instruct (base sin adaptar) | 9.052.463.488 (9,05 B) | No disponible | Modelo de audio-instrucciones generalista | No disponible en la informacion | HuggingFace |
+| laion/moss-audio-voice-caption-gemini | 87,3 M entrenables sobre base de 9,05 B (9,14 B en total) | No disponible (tope de entrenamiento 8.192 tokens) | Captioning de voz completa en ingles | CC-BY-4.0 | Hugging Face, 0 descargas, 0 likes |
+| laion/moss-audio-burst-caption-gemini | Adaptador hermano sobre el mismo base | No disponible | Captioning por eventos con marcas de tiempo externas | No disponible en la informacion | Hugging Face |
+| OpenMOSS-Team/MOSS-Audio-8B-Instruct (base sin adaptar) | 9.052.463.488 (9,05 B) | No disponible | Modelo de audio-instrucciones generalista | No disponible en la informacion | Hugging Face |
 
 No se dispone de datos verificados en la informacion proporcionada para comparar con otras familias de captioning de audio como Qwen2-Audio, SALMONN o Audio Flamingo; sus parametros, contexto, rendimiento y licencia no aparecen en las fuentes consultadas y no se incluyen aqui para no introducir cifras sin respaldo.
 
@@ -106,11 +106,11 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/moss-audio-voice-caption-gemini
+- Modelo en Hugging Face: https://huggingface.co/laion/moss-audio-voice-caption-gemini
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-8B-Instruct
 - Adaptador complementario de eventos: https://huggingface.co/laion/moss-audio-burst-caption-gemini
 - Dataset de anotaciones Gemini: https://huggingface.co/datasets/laion/whisper-gemini-voice-annotations
 - Demo con 50 interpretaciones de Gemini TTS y captions adaptados: https://laion-humaneness-ears-atlas.static.hf.space/moss-caption-grid.html
 - Codigo fuente oficial de MOSS-Audio (revision 66326e6e0db34f036c86a76ba005efa4830c69dd): https://github.com/OpenMOSS/MOSS-Audio/tree/66326e6e0db34f036c86a76ba005efa4830c69dd
 - Paper de LoRA (arXiv:2106.09685): https://arxiv.org/abs/2106.09685
-- Nota: las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo; todos los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+- Nota: las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo; todos los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

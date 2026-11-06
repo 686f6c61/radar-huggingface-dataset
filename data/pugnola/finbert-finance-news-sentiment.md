@@ -93,8 +93,8 @@ Referencia externa citada por el autor: el paper de FinBERT (Araci 2019) reporta
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pugnola/finbert-finance-news-sentiment | no disponible (familia BERT-base) | 128 tokens | Accuracy 0,847 / macro F1 0,810 en Finance News Sentiment 40k (test, datos declarados por el autor) | MIT | HuggingFace, revisiones `main` (v2) y `v1-a2` |
-| ProsusAI/finbert (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | 0,86 de accuracy segun el paper de Araci (2019) sobre Financial PhraseBank con etiquetado humano | no disponible en la informacion proporcionada | HuggingFace |
+| Pugnola/finbert-finance-news-sentiment | no disponible (familia BERT-base) | 128 tokens | Accuracy 0,847 / macro F1 0,810 en Finance News Sentiment 40k (test, datos declarados por el autor) | MIT | Hugging Face, revisiones `main` (v2) y `v1-a2` |
+| ProsusAI/finbert (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | 0,86 de accuracy segun el paper de Araci (2019) sobre Financial PhraseBank con etiquetado humano | no disponible en la informacion proporcionada | Hugging Face |
 
 No se han proporcionado datos de otros modelos comparables en la informacion disponible. Cualquier comparacion adicional con alternativas de la misma categoria (por ejemplo, otros clasificadores de sentimiento financiero) requeriria consultar sus respectivas fichas tecnicas, ya que no se incluyen aqui.
 
@@ -116,7 +116,7 @@ No se han proporcionado datos de otros modelos comparables en la informacion dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pugnola/finbert-finance-news-sentiment
+- Modelo en Hugging Face: https://huggingface.co/Pugnola/finbert-finance-news-sentiment
 - Dataset de entrenamiento: https://huggingface.co/datasets/Pugnola/finance-news-sentiment-35k
 - Repositorio con scripts de entrenamiento y pipeline de etiquetado: https://github.com/Pugnola/finance-news-sentiment
 - Modelo base: https://huggingface.co/ProsusAI/finbert

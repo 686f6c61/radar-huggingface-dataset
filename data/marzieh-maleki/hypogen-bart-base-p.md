@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hypogen-bart-base-p`, publicado por el usuario marzieh-maleki en HuggingFace, es un modelo de tipo BART (Bidirectional and Auto-Regressive Transformer) con 139.470.681 parámetros, lo que corresponde a la variante base de la arquitectura BART. Está registrado con el pipeline de `text2text-generation`, lo que indica que está diseñado para tareas de generación de texto a partir de texto, como resumen, traducción o parafraseo. El repositorio pesa 1,7 GB y los pesos están en formato `safetensors`, compatible con la librería `transformers`.
+El modelo `hypogen-bart-base-p`, publicado por el usuario marzieh-maleki en Hugging Face, es un modelo de tipo BART (Bidirectional and Auto-Regressive Transformer) con 139.470.681 parámetros, lo que corresponde a la variante base de la arquitectura BART. Está registrado con el pipeline de `text2text-generation`, lo que indica que está diseñado para tareas de generación de texto a partir de texto, como resumen, traducción o parafraseo. El repositorio pesa 1,7 GB y los pesos están en formato `safetensors`, compatible con la librería `transformers`.
 
 Sin embargo, la model card publicada es extremadamente incompleta: no se especifican datos de entrenamiento, licencia, idiomas, ni se proporcionan benchmarks o ejemplos de uso. Toda la información adicional está marcada como "More Information Needed". Por tanto, esta ficha se limita a documentar los datos técnicos disponibles públicamente, sin extrapolaciones ni suposiciones.
 
@@ -61,4 +61,4 @@ No se dispone de datos de rendimiento del modelo, por lo que no es posible compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/marzieh-maleki/hypogen-bart-base-p
+- Hugging Face: https://huggingface.co/marzieh-maleki/hypogen-bart-base-p

@@ -101,7 +101,7 @@ No se dispone de resultados de benchmarks del modelo ni de sus competidores en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SC117/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
+- Hugging Face: https://huggingface.co/SC117/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
 - Modelo base declarado: https://huggingface.co/ukisai/Swift-Qwen3.8-Flash-Next
 - Upstream cuantizado (GSQ-RCO): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Licencia: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF/blob/main/LICENSE

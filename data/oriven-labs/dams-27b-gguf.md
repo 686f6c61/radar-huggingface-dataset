@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks para estos ficheros GGUF. El autor 
 
 | Modelo | Parametros | Formato | Memoria asociativa propia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DAMS-27B (bf16, vLLM + `vllm_dams`) | 27,3 B + 16 ramas de memoria | safetensors bf16 | Si (no soportada en llama.cpp) | Apache 2.0 | HuggingFace, Oriven-Labs/DAMS-27B |
-| DAMS-27B-GGUF (esta ficha) | 27,3 B (sin ramas de memoria) | GGUF (Q4/Q5/Q8) | No | Apache 2.0 | HuggingFace, llama.cpp/Ollama/LM Studio |
-| Qwen3.8-27B (base) | 27,3 B | safetensors | No | Apache 2.0 | HuggingFace, Qwen/Qwen3.8-27B |
+| DAMS-27B (bf16, vLLM + `vllm_dams`) | 27,3 B + 16 ramas de memoria | safetensors bf16 | Si (no soportada en llama.cpp) | Apache 2.0 | Hugging Face, Oriven-Labs/DAMS-27B |
+| DAMS-27B-GGUF (esta ficha) | 27,3 B (sin ramas de memoria) | GGUF (Q4/Q5/Q8) | No | Apache 2.0 | Hugging Face, llama.cpp/Ollama/LM Studio |
+| Qwen3.8-27B (base) | 27,3 B | safetensors | No | Apache 2.0 | Hugging Face, Qwen/Qwen3.8-27B |
 
 La alternativa directa a estos GGUF es el propio DAMS-27B en bf16 con vLLM y el plugin `vllm_dams`, que es la configuracion evaluada en benchmarks y la unica que activa la memoria asociativa. Frente al modelo base Qwen3.8-27B, DAMS aporta el entrenamiento RL de parametros completos orientado a codigo y agentes.
 

@@ -92,7 +92,7 @@ No se dispone de información sobre otros modelos daneses de tamaño comparable 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jensjepsen/danish-lm-400m-grpo-combinedv3-topk
+- Modelo en Hugging Face: https://huggingface.co/jensjepsen/danish-lm-400m-grpo-combinedv3-topk
 - Modelo base SFT: https://huggingface.co/jensjepsen/danish-lm-400m-sft-v31-avg-top3
 - Versión GRPO anterior: https://huggingface.co/jensjepsen/danish-lm-400m-grpo-v34c55u8
 - Dataset de entrenamiento: https://huggingface.co/datasets/jensjepsen/danish-if-grpo-combined-v3

@@ -24,7 +24,7 @@ El repositorio actual no contiene un modelo entrenado de nuevo, sino una redistr
 ## Capacidades
 
 - Razonamiento: el README presenta el modelo como "reasoning-focused", pero no hay evaluaciones publicadas en este repositorio que lo confirmen.
-- Conversacion: la etiqueta en HuggingFace es "conversational", lo que indica su uso previsto para dialogos.
+- Conversacion: la etiqueta en Hugging Face es "conversational", lo que indica su uso previsto para dialogos.
 - Inferencia local: al ser un GGUF, puede desplegarse en entornos con recursos limitados mediante llama.cpp, Ollama o LM Studio.
 - Otras capacidades: no disponible. No hay informacion sobre tool calling, agentes, vision, audio ni soporte multilingue en la documentacion disponible.
 
@@ -64,5 +64,5 @@ No se dispone de datos suficientes para comparar este modelo con alternativas de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/falloutxvats/brain-reason
+- Repositorio Hugging Face: https://huggingface.co/falloutxvats/brain-reason
 - Repositorio del cuantizado original: https://huggingface.co/mradermacher/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-i1-GGUF

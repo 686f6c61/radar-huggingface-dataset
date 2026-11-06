@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AnirbanSaha/gemma2-9b-tlink-full-autoregressive` es un ajuste fino de parámetros completos (full fine-tuning, no LoRA) sobre `google/gemma-2-9b-it`, publicado por el usuario AnirbanSaha en HuggingFace. Su propósito es muy específico: la clasificación de relaciones temporales TLINK (temporal link) entre eventos, una tarea clásica de extracción de información dentro del dominio del procesamiento de lenguaje natural clínico y de anotación temporal de textos. El modelo genera de forma autorregresiva una de cuatro etiquetas posibles: BEFORE, AFTER, OTHER y NONE.
+El modelo `AnirbanSaha/gemma2-9b-tlink-full-autoregressive` es un ajuste fino de parámetros completos (full fine-tuning, no LoRA) sobre `google/gemma-2-9b-it`, publicado por el usuario AnirbanSaha en Hugging Face. Su propósito es muy específico: la clasificación de relaciones temporales TLINK (temporal link) entre eventos, una tarea clásica de extracción de información dentro del dominio del procesamiento de lenguaje natural clínico y de anotación temporal de textos. El modelo genera de forma autorregresiva una de cuatro etiquetas posibles: BEFORE, AFTER, OTHER y NONE.
 
 El modelo conserva la arquitectura original de Gemma 2 9B (transformer decoder-only denso, con aproximadamente 9.240 millones de parámetros), de modo que hereda la ventana de contexto, el tokenizador y las capacidades conversacionales del modelo base instruction-tuned. El cambio respecto al base se limita al ajuste sobre el dataset `fahmidiqbal/tlink-classification`, con una supervisión de tipo autoregresivo: la etiqueta se emite como texto generado en lugar de como logits de una cabeza de clasificación.
 
@@ -92,7 +92,7 @@ No se han identificado en la información disponible otros ajustes publicados qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnirbanSaha/gemma2-9b-tlink-full-autoregressive
+- Modelo en Hugging Face: https://huggingface.co/AnirbanSaha/gemma2-9b-tlink-full-autoregressive
 - Modelo base: https://huggingface.co/google/gemma-2-9b-it
 - Dataset de ajuste: https://huggingface.co/datasets/fahmidiqbal/tlink-classification
 - Terminos de licencia Gemma: https://ai.google.dev/gemma/terms

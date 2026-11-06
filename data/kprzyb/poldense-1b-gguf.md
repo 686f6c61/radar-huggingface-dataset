@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks del modelo base en la información proporci
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/kprzyb/PolDense-1B-GGUF
+- Repositorio Hugging Face de la conversión: https://huggingface.co/kprzyb/PolDense-1B-GGUF
 - Modelo original: https://huggingface.co/OPI-PIB/PolDense-1B
 - Discusión sobre el prefijo de consulta en el modelo original: https://huggingface.co/OPI-PIB/PolDense-1B/discussions/1
 - Términos de uso de Gemma: https://ai.google.dev/gemma/terms

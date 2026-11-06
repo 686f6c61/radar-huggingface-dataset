@@ -4,7 +4,7 @@
 
 Meta Llama 3.2 3B Instruct es un modelo de lenguaje de gran escala desarrollado por Meta, perteneciente a la familia Llama 3.2. Se trata de un modelo de 3.000 millones de parametros disenado para generacion de texto y conversacion, con un enfoque en eficiencia computacional que permite su despliegue en hardware de consumo. Esta orientado a tareas de instruccion y dialogo, y forma parte de la estrategia de Meta de ofrecer variantes ligeras de su familia Llama para escenarios con recursos limitados.
 
-El repositorio en HuggingFace bajo el identificador Bayut1999/meta-llama-3.2-3b-instruct constituye una redistribucion del modelo original de Meta, no una creacion independiente. El autor del repositorio, Bayut1999, publica los pesos bajo la licencia Llama 3.2, manteniendo la pipeline de text-generation y las etiquetas propias de la familia Llama. El modelo esta declarado unicamente para el idioma ingles.
+El repositorio en Hugging Face bajo el identificador Bayut1999/meta-llama-3.2-3b-instruct constituye una redistribucion del modelo original de Meta, no una creacion independiente. El autor del repositorio, Bayut1999, publica los pesos bajo la licencia Llama 3.2, manteniendo la pipeline de text-generation y las etiquetas propias de la familia Llama. El modelo esta declarado unicamente para el idioma ingles.
 
 La relevancia de esta ficha radica en que se trata de un modelo de 3B parametros con licencia permisiva para uso comercial bajo condiciones, lo que lo situa en la franja de modelos ligeros aptos para inferencia local, prototipado rapido y despliegues con restricciones de VRAM. Sin embargo, la informacion disponible en el repositorio es muy limitada: no se publican detalles de arquitectura, datos de entrenamiento ni resultados de benchmarks.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Meta Llama 3.2 3B Instruct (este repositorio) | 3B | no disponible | llama3.2 | HuggingFace (redistribucion) |
-| Meta Llama 3.2 1B Instruct | 1B | no disponible | llama3.2 | HuggingFace (oficial) |
-| Meta Llama 3.1 8B Instruct | 8B | no disponible | llama3.1 | HuggingFace (oficial) |
-| Qwen2.5 3B Instruct | 3B | no disponible | Apache 2.0 (variantes) | HuggingFace |
+| Meta Llama 3.2 3B Instruct (este repositorio) | 3B | no disponible | llama3.2 | Hugging Face (redistribucion) |
+| Meta Llama 3.2 1B Instruct | 1B | no disponible | llama3.2 | Hugging Face (oficial) |
+| Meta Llama 3.1 8B Instruct | 8B | no disponible | llama3.1 | Hugging Face (oficial) |
+| Qwen2.5 3B Instruct | 3B | no disponible | Apache 2.0 (variantes) | Hugging Face |
 
 Los datos de contexto y rendimiento de los modelos comparados no se detallan en la informacion proporcionada; la comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -82,7 +82,7 @@ Los datos de contexto y rendimiento de los modelos comparados no se detallan en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Bayut1999/meta-llama-3.2-3b-instruct
+- Hugging Face: https://huggingface.co/Bayut1999/meta-llama-3.2-3b-instruct
 - Repositorio oficial de Meta Llama 3.2: no disponible en la informacion proporcionada
 - Paper de Llama 3.2: no disponible en la informacion proporcionada
 - Blog de Meta sobre Llama 3.2: no disponible en la informacion proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Miiche/visualrl-ft-r5p5` es un fine-tuning de la familia Qwen2.5-VL, según el tag `qwen2_5_vl` presente en su ficha de HuggingFace. Ha sido publicado por el usuario "Miiche" y cuenta con 8.292.166.656 parámetros (aproximadamente 8,29 mil millones), lo que lo sitúa en la gama de modelos de tamaño medio-grande para tareas multimodales de visión y lenguaje. El repositorio ocupa 49,8 GB, lo que sugiere que los pesos están almacenados en precisión completa o en cuantizaciones de alta resolución.
+El modelo `Miiche/visualrl-ft-r5p5` es un fine-tuning de la familia Qwen2.5-VL, según el tag `qwen2_5_vl` presente en su ficha de Hugging Face. Ha sido publicado por el usuario "Miiche" y cuenta con 8.292.166.656 parámetros (aproximadamente 8,29 mil millones), lo que lo sitúa en la gama de modelos de tamaño medio-grande para tareas multimodales de visión y lenguaje. El repositorio ocupa 49,8 GB, lo que sugiere que los pesos están almacenados en precisión completa o en cuantizaciones de alta resolución.
 
 El nombre `visualrl-ft` sugiere que se trata de un ajuste fino orientado a tareas visuales con algún componente de aprendizaje por refuerzo, aunque no se dispone de documentación adicional que confirme esta hipótesis. El modelo fue creado el 28 de mayo de 2026 y actualizado el 15 de agosto de 2026. Con solo 18 descargas y 0 likes, es un modelo reciente y de baja difusión, probablemente experimental o destinado a un caso de uso específico de su autor.
 
@@ -35,7 +35,7 @@ No se han publicado datos sobre el proceso de entrenamiento: ni el número de to
 
 ## Casos de uso
 
-No se puede proporcionar una lista de casos de uso concretos sin información verificada sobre el comportamiento real del modelo. Cualquier sugerencia sería especulativa y contraria al principio de rigor de esta ficha. Se recomienda consultar la página del modelo en HuggingFace para obtener actualizaciones del autor o pruebas de evaluación.
+No se puede proporcionar una lista de casos de uso concretos sin información verificada sobre el comportamiento real del modelo. Cualquier sugerencia sería especulativa y contraria al principio de rigor de esta ficha. Se recomienda consultar la página del modelo en Hugging Face para obtener actualizaciones del autor o pruebas de evaluación.
 
 ## Benchmarks y rendimiento
 
@@ -63,5 +63,5 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Miiche/visualrl-ft-r5p5
+- Página del modelo en Hugging Face: https://huggingface.co/Miiche/visualrl-ft-r5p5
 - No se han encontrado papers, blogs, repositorios de código o demos asociados en la información proporcionada.

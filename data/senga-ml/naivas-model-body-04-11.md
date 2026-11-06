@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`naivas-model-body-04-11` es un modelo multimodal de la organizacion `senga-ml`, publicado en HuggingFace con la libreria transformers y la pipeline `image-text-to-text`. Se trata de un modelo vision-encoder-decoder, es decir, un codificador de imagenes acoplado a un decodificador de texto que genera respuestas textuales a partir de entradas que combinan imagen y texto. Cuenta con 202.108.344 parametros totales (aproximadamente 202 millones) y un repositorio de 3,2 GB en formato safetensors.
+`naivas-model-body-04-11` es un modelo multimodal de la organizacion `senga-ml`, publicado en Hugging Face con la libreria transformers y la pipeline `image-text-to-text`. Se trata de un modelo vision-encoder-decoder, es decir, un codificador de imagenes acoplado a un decodificador de texto que genera respuestas textuales a partir de entradas que combinan imagen y texto. Cuenta con 202.108.344 parametros totales (aproximadamente 202 millones) y un repositorio de 3,2 GB en formato safetensors.
 
-La relevancia de esta ficha es limitada por la escasez de documentacion: la model card es la plantilla autogenerada de HuggingFace, sin secciones completadas, y no se declaran licencia, idiomas, datos de entrenamiento ni resultados de evaluacion. El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y la fecha de creacion registrada (2026-11-04) es posterior a la de esta revision, lo que sugiere un artefacto reciente o de procedencia poco documentada.
+La relevancia de esta ficha es limitada por la escasez de documentacion: la model card es la plantilla autogenerada de Hugging Face, sin secciones completadas, y no se declaran licencia, idiomas, datos de entrenamiento ni resultados de evaluacion. El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y la fecha de creacion registrada (2026-11-04) es posterior a la de esta revision, lo que sugiere un artefacto reciente o de procedencia poco documentada.
 
 A pesar de ello, la ficha se completa con los datos verificables del repositorio (parametros reales de safetensors, tamano, tags, pipeline) y se marcan explicitamente como no disponibles todos los campos que el autor no ha publicado. Se recomienda cautela antes de cualquier uso en produccion.
 
@@ -12,7 +12,7 @@ A pesar de ello, la ficha se completa con los datos verificables del repositorio
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | vision-encoder-decoder (transformer multimodal, segun tag de HuggingFace) |
+| Arquitectura | vision-encoder-decoder (transformer multimodal, segun tag de Hugging Face) |
 | Parametros totales | 202.108.344 (dato real de safetensors) |
 | Parametros activos | no disponible (no se declara que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -28,7 +28,7 @@ A pesar de ello, la ficha se completa con los datos verificables del repositorio
 
 ## Arquitectura y entrenamiento
 
-El tag `vision-encoder-decoder` de HuggingFace indica una arquitectura de dos torres: un codificador visual que proyecta la imagen a una secuencia de embeddings y un decodificador autorregresivo de texto que genera la respuesta condicionada a esa representacion visual y al prompt textual. El recuento de 202 millones de parametros es coherente con un modelo compacto de este tipo, aunque el desglose entre codificador visual y decodificador de texto no esta publicado.
+El tag `vision-encoder-decoder` de Hugging Face indica una arquitectura de dos torres: un codificador visual que proyecta la imagen a una secuencia de embeddings y un decodificador autorregresivo de texto que genera la respuesta condicionada a esa representacion visual y al prompt textual. El recuento de 202 millones de parametros es coherente con un modelo compacto de este tipo, aunque el desglose entre codificador visual y decodificador de texto no esta publicado.
 
 No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO, el regimen de precision (fp32, fp16, bf16) ni innovaciones tecnicas como atencion lineal o decodificacion especulativa. La unica referencia tecnica en los tags es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre el calculador de impacto medioambiental de ML, citado en la plantilla de la model card; no es un paper del modelo.
 
@@ -36,7 +36,7 @@ No hay informacion sobre el numero de tokens de entrenamiento, la composicion de
 
 - Generacion de texto condicionada a imagen (image-text-to-text): descripcion de imagenes, respuesta a preguntas visuales y dialogos que combinan imagen y texto.
 - Procesamiento multimodal de entrada: acepta pares imagen-texto mediante la pipeline de transformers.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en la infraestructura de Inference Endpoints de Hugging Face.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: con 202 M de parametros, en fp16 los pesos ocupan aproximadamente 0,4 GB; en fp32, unos 0,8 GB. El repositorio de 3,2 GB sugiere que puede incluir pesos en mayor precision o artefactos adicionales, por lo que conviene verificar el contenido real antes de planificar el despliegue.
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM libre deberia ser suficiente; una RTX 3060, RTX 4090, A100 o H100 son sobredimensionadas para este tamano y solo se justifican por concurrencia o por el codificador visual.
 - Cabe en GPU de consumo: si, previsiblemente en practicamente cualquier GPU consumer moderna (GTX 1660 en adelante) e incluso en CPU para inferencia por lotes pequenos.
-- Opciones de despliegue: transformers (libreria declarada), HuggingFace Inference Endpoints (tag `endpoints_compatible`); vLLM, llama.cpp, Ollama y TGI no estan confirmados para esta arquitectura y deberian validarse.
+- Opciones de despliegue: transformers (libreria declarada), Hugging Face Inference Endpoints (tag `endpoints_compatible`); vLLM, llama.cpp, Ollama y TGI no estan confirmados para esta arquitectura y deberian validarse.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -85,6 +85,6 @@ No se dispone de datos de rendimiento ni de documentacion del autor que permitan
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/senga-ml/naivas-model-body-04-11
+- Hugging Face: https://huggingface.co/senga-ml/naivas-model-body-04-11
 - Paper citado en la model card (Lacoste et al., 2019, impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ML: https://mlco2.github.io/impact

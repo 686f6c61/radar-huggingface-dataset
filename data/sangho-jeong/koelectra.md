@@ -2,9 +2,9 @@
 
 ## Resumen
 
-koelectra es un ajuste fino (fine-tune) del modelo daekeun-ml/koelectra-small-v3-nsmc, publicado por el usuario sangho-jeong en HuggingFace. Se trata de un clasificador de texto basado en la arquitectura ELECTRA en su variante "small", con 14.122.498 parámetros totales (aproximadamente 14,1 millones) y un peso de repositorio de 0,1 GB. La model card fue generada automáticamente por la librería Trainer de HuggingFace, por lo que la mayor parte de la documentación (dataset, usos previstos, limitaciones) aparece marcada como "More information needed".
+koelectra es un ajuste fino (fine-tune) del modelo daekeun-ml/koelectra-small-v3-nsmc, publicado por el usuario sangho-jeong en Hugging Face. Se trata de un clasificador de texto basado en la arquitectura ELECTRA en su variante "small", con 14.122.498 parámetros totales (aproximadamente 14,1 millones) y un peso de repositorio de 0,1 GB. La model card fue generada automáticamente por la librería Trainer de Hugging Face, por lo que la mayor parte de la documentación (dataset, usos previstos, limitaciones) aparece marcada como "More information needed".
 
-El modelo se distribuye bajo licencia MIT, en formato safetensors, y está etiquetado como compatible con endpoints de HuggingFace. Su pipeline declarado es text-classification, es decir, no es un modelo generativo: recibe texto y devuelve una etiqueta de clase. El ajuste se realizó durante 5 épocas con AdamW (fused), learning rate de 2e-05, batch de 16 y scheduler lineal, alcanzando una accuracy de 0,946 y una pérdida de validación de 0,3118 sobre un conjunto de evaluación no especificado.
+El modelo se distribuye bajo licencia MIT, en formato safetensors, y está etiquetado como compatible con endpoints de Hugging Face. Su pipeline declarado es text-classification, es decir, no es un modelo generativo: recibe texto y devuelve una etiqueta de clase. El ajuste se realizó durante 5 épocas con AdamW (fused), learning rate de 2e-05, batch de 16 y scheduler lineal, alcanzando una accuracy de 0,946 y una pérdida de validación de 0,3118 sobre un conjunto de evaluación no especificado.
 
 Su relevancia es limitada y muy acotada: se trata de un modelo pequeño, con solo 13 descargas y 0 likes en el momento de redactar esta ficha, sin validación por parte de la comunidad y con un esquema de etiquetas no documentado. Resulta útil como ejemplo de pipeline de ajuste fino sobre KoELECTRA o como base para experimentos de clasificación en coreano, pero no como componente listo para producción sin una evaluación adicional por parte del usuario.
 
@@ -74,15 +74,15 @@ Resultado final declarado en la model card: loss 0,3118 y accuracy 0,946. No se 
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente. No se requiere A100, H100 ni RTX 4090; una GTX 1650, una T4 o incluso una iGPU moderna cubren el modelo con holgura.
 - Inferencia en CPU: perfectamente viable, incluso en modo single-thread para lotes pequeños. Es un modelo apto para despliegues sin GPU.
 - Cabe en cualquier GPU de consumo: sí, sin restricciones prácticas de memoria.
-- Opciones de despliegue: transformers (pipeline de text-classification), exportación a ONNX Runtime o TorchScript para servir en producción, y servidores compatibles con endpoints de HuggingFace (el repositorio está etiquetado como `endpoints_compatible`). No se documenta soporte GGUF, llama.cpp ni Ollama para este checkpoint.
+- Opciones de despliegue: transformers (pipeline de text-classification), exportación a ONNX Runtime o TorchScript para servir en producción, y servidores compatibles con endpoints de Hugging Face (el repositorio está etiquetado como `endpoints_compatible`). No se documenta soporte GGUF, llama.cpp ni Ollama para este checkpoint.
 - Latencia y throughput: no disponible. No se han publicado mediciones de latencia ni de tokens por segundo, y al ser un modelo de clasificación la métrica relevante sería documentos por segundo, que tampoco se proporciona.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sangho-jeong/koelectra (este modelo) | 14.122.498 | no disponible | accuracy 0,946 en validacion (conjunto no especificado) | MIT | HuggingFace, 13 descargas |
-| daekeun-ml/koelectra-small-v3-nsmc (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| sangho-jeong/koelectra (este modelo) | 14.122.498 | no disponible | accuracy 0,946 en validacion (conjunto no especificado) | MIT | Hugging Face, 13 descargas |
+| daekeun-ml/koelectra-small-v3-nsmc (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otras variantes de KoELECTRA small | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada no incluye datos de benchmarks ni especificaciones de modelos alternativos comparables, más allá del modelo base del que deriva este fine-tune. Por tanto, no es posible establecer una comparativa cuantitativa rigurosa con otras alternativas de la misma categoría (clasificadores de texto en coreano de tamaño similar).
@@ -103,7 +103,7 @@ La información proporcionada no incluye datos de benchmarks ni especificaciones
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sangho-jeong/koelectra
+- Modelo en Hugging Face: https://huggingface.co/sangho-jeong/koelectra
 - Modelo base: https://huggingface.co/daekeun-ml/koelectra-small-v3-nsmc
 - Perfil de investigacion de Jaewook Jeong (resultado de busqueda, menciona KoELECTRA): https://www.researchgate.net/profile/Jaewook-Jeong-2
 - Informe "SEOUL AI STARTUP 100" 2025-2026 (menciona modelos basados en BERT y KoELECTRA): https://www.seoulaihub.kr/down/2025-2026%20SEOUL%20AI%20STARTUP%20100.pdf

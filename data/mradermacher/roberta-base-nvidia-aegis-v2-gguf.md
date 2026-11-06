@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha describe el repositorio `mradermacher/roberta-base-nvidia-aegis-v2-GGUF`, publicado por el usuario mradermacher, conocido en HuggingFace por generar cuantizaciones GGUF de modelos de terceros. No se trata de un modelo entrenado desde cero, sino de una conversion a formato GGUF (con 12 niveles de cuantizacion distintos) del modelo base `leomaurodesenv/roberta-base-nvidia-aegis-v2`, cuyo autor original es leomaurodesenv. El repositorio no incluye model card propia: la unica informacion disponible es una plantilla autogenerada por la herramienta de conversion del cuantizador.
+Esta ficha describe el repositorio `mradermacher/roberta-base-nvidia-aegis-v2-GGUF`, publicado por el usuario mradermacher, conocido en Hugging Face por generar cuantizaciones GGUF de modelos de terceros. No se trata de un modelo entrenado desde cero, sino de una conversion a formato GGUF (con 12 niveles de cuantizacion distintos) del modelo base `leomaurodesenv/roberta-base-nvidia-aegis-v2`, cuyo autor original es leomaurodesenv. El repositorio no incluye model card propia: la unica informacion disponible es una plantilla autogenerada por la herramienta de conversion del cuantizador.
 
 Por el identificador del modelo se deduce que se trata de un fine-tune de la arquitectura RoBERTa-base (transformer encoder-only de aproximadamente 125 millones de parametros) sobre el dataset NVIDIA Aegis, orientado a tareas de moderacion y seguridad de contenido. Esta deduccion no viene confirmada por ninguna documentacion publicada en el repositorio de la cuantizacion, que no aporta datos de entrenamiento, licencia, idiomas, benchmarks ni pipeline.
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| roberta-base-nvidia-aegis-v2 (GGUF) | ~125 M | 512 tokens (inferido) | Encoder, clasificacion | No disponible | GGUF en HuggingFace |
-| unitary/toxic-bert | ~110 M | 512 tokens (tipico de BERT-base) | Encoder, clasificacion | No verificada en esta ficha | safetensors, HuggingFace |
-| facebook/roberta-hate-speech-dynabench-r4-target | ~125 M | 512 tokens (tipico de RoBERTa-base) | Encoder, clasificacion | No verificada en esta ficha | safetensors, HuggingFace |
-| Llama Guard 3 | ~8 000 M | mayor que 512 tokens | Decoder, clasificacion generativa | No verificada en esta ficha | safetensors, HuggingFace |
+| roberta-base-nvidia-aegis-v2 (GGUF) | ~125 M | 512 tokens (inferido) | Encoder, clasificacion | No disponible | GGUF en Hugging Face |
+| unitary/toxic-bert | ~110 M | 512 tokens (tipico de BERT-base) | Encoder, clasificacion | No verificada en esta ficha | safetensors, Hugging Face |
+| facebook/roberta-hate-speech-dynabench-r4-target | ~125 M | 512 tokens (tipico de RoBERTa-base) | Encoder, clasificacion | No verificada en esta ficha | safetensors, Hugging Face |
+| Llama Guard 3 | ~8 000 M | mayor que 512 tokens | Decoder, clasificacion generativa | No verificada en esta ficha | safetensors, Hugging Face |
 
 Nota: no se dispone de resultados de benchmarks de este modelo ni de metricas comparativas verificadas en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto, tipo de arquitectura y formato de distribucion. La diferencia clave frente a alternativas como Llama Guard 3 es el orden de magnitud: un encoder de ~125 M se ejecuta en CPU y con latencias muy inferiores, a cambio de una capacidad de razonamiento y de generalizacion presumiblemente menor.
 

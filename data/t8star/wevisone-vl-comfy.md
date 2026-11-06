@@ -4,7 +4,7 @@
 
 WeVisOne-VL-Comfy es un repositorio de distribucion que empaqueta los checkpoints oficiales del modelo vision-lenguaje WeVisOne-VL de Tencent (en variantes de 2B y 4B parametros) junto con los activos necesarios para su uso en ComfyUI a traves del nodo personalizado ComfyUI-WeVisOne-VL-T8. No se trata de un modelo nuevo entrenado por t8star, sino de una reorganizacion de pesos originales sin modificar, acompanada de los checkpoints de SAM2.1 Hiera Base+ y de la cabeza de refinamiento Mask2Alpha de Tencent, que permiten tareas de segmentacion guiada por texto y matting de imagen dentro del ecosistema ComfyUI.
 
-El interes practico del repositorio reside en la integracion: unifica en un unico snapshot descargable el modelo vision-lenguaje, el tokenizer, el processor, el decodificador de pixeles, el checkpoint de SAM2 y la cabeza Mask2Alpha, ademas de una exportacion ONNX opcional de forma fija. Esto elimina la necesidad de rastrear manualmente pesos dispersos entre el repositorio oficial de Tencent, HuggingFace y el repositorio de Meta SAM2, y anade ficheros de procedencia (`provenance.json`) y sumas de verificacion SHA-256 para auditar el origen de cada tensor.
+El interes practico del repositorio reside en la integracion: unifica en un unico snapshot descargable el modelo vision-lenguaje, el tokenizer, el processor, el decodificador de pixeles, el checkpoint de SAM2 y la cabeza Mask2Alpha, ademas de una exportacion ONNX opcional de forma fija. Esto elimina la necesidad de rastrear manualmente pesos dispersos entre el repositorio oficial de Tencent, Hugging Face y el repositorio de Meta SAM2, y anade ficheros de procedencia (`provenance.json`) y sumas de verificacion SHA-256 para auditar el origen de cada tensor.
 
 El repositorio ocupa 15,0 GB e incluye las dos variantes de tamano (2B y 4B), lo que permite al descargador del nodo seleccionar solo la solicitada. La licencia declarada es Apache-2.0, heredada de los modelos originales, y el pipeline registrado es image-text-to-text. El modelo base es tencent/WeVisOne-VL-2B y tencent/WeVisOne-VL-4B.
 
@@ -78,13 +78,13 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/t8star/WeVisOne-VL-Comfy
+- Repositorio en Hugging Face: https://huggingface.co/t8star/WeVisOne-VL-Comfy
 - Nodo ComfyUI: https://github.com/T8mars/Comfyui-WeVisOne-VL-T8
 - WeVisOne-VL de Tencent (GitHub): https://github.com/Tencent/WeVisOne-VL
 - Rama Mask2Alpha: https://github.com/Tencent/WeVisOne-VL/tree/mask2alpha
 - Modelo oficial 2B: https://huggingface.co/tencent/WeVisOne-VL-2B
 - Modelo oficial 4B: https://huggingface.co/tencent/WeVisOne-VL-4B
 - Meta SAM2: https://github.com/facebookresearch/sam2
-- Perfil del autor en HuggingFace: https://huggingface.co/t8star
+- Perfil del autor en Hugging Face: https://huggingface.co/t8star
 - Bilibili del autor: https://space.bilibili.com/385085361
 - YouTube del autor: https://www.youtube.com/@T8star-Aix/

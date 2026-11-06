@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/danielsaldana/AFCI_part17
+- Repositorio Hugging Face: https://huggingface.co/danielsaldana/AFCI_part17
 - Indice maestro del kit: https://huggingface.co/danielsaldana/AFCI_part6/blob/main/00_START_HERE_MASTER_INDEX.md
 - Guia de instalacion: https://huggingface.co/danielsaldana/AFCI_part6/blob/main/00_INSTALLATION_GUIDE.md
 - Pagina oficial de STM32CubeF4 (referencia del software espejado): no disponible en la informacion proporcionada

@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento de este checkpoint específico, por lo que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/smollm3-3b-sft-378b
+- Repositorio Hugging Face: https://huggingface.co/dvader13/smollm3-3b-sft-378b
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Documentación del curso SmolLM (SFT): https://huggingface.co/learn/smol-course/unit1/3
 - Recetas de entrenamiento (alignment-handbook): https://github.com/huggingface/alignment-handbook/blob/main/recipes/smollm3/README.md

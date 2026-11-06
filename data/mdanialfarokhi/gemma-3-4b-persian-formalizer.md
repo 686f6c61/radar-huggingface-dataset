@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mdanialFarokhi/gemma-3-4b-persian-formalizer` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario mdanialFarokhi. Se trata de un ajuste fino supervisado (SFT) sobre el modelo base `unsloth/gemma-3-4b-it-unsloth-bnb-4bit`, que es una version cuantizada a 4 bits del Gemma 3 de 4B parametros en su variante instruction-tuned, optimizada con la libreria Unsloth. Por el nombre del repositorio, el adaptador esta orientado a la "formalizacion" de texto en persa, es decir, a convertir registros coloquiales o informales al persa formal.
+`mdanialFarokhi/gemma-3-4b-persian-formalizer` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario mdanialFarokhi. Se trata de un ajuste fino supervisado (SFT) sobre el modelo base `unsloth/gemma-3-4b-it-unsloth-bnb-4bit`, que es una version cuantizada a 4 bits del Gemma 3 de 4B parametros en su variante instruction-tuned, optimizada con la libreria Unsloth. Por el nombre del repositorio, el adaptador esta orientado a la "formalizacion" de texto en persa, es decir, a convertir registros coloquiales o informales al persa formal.
 
 El modelo hereda la arquitectura transformer decoder-only de Gemma 3 y su ventana de contexto nativa, aunque el adaptador en si no modifica la arquitectura, solo anade pesos LoRA sobre las capas del modelo base. El repositorio es muy ligero (0,2 GB) porque contiene unicamente los pesos del adaptador, no el modelo completo; para usarlo es necesario descargar tambien el modelo base cuantizado.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mdanialFarokhi/gemma-3-4b-persian-formalizer | ~4B (base) + LoRA | no disponible | Adaptador LoRA SFT | no disponible | HuggingFace, 0 descargas |
-| google/gemma-3-4b-it | ~4B | no disponible en esta ficha | Modelo base instruction-tuned | Gemma Terms of Use | HuggingFace, ampliamente usado |
-| unsloth/gemma-3-4b-it-unsloth-bnb-4bit | ~4B | no disponible en esta ficha | Modelo base cuantizado 4 bits | Gemma Terms of Use | HuggingFace |
-| Adaptadores LoRA persas sobre Gemma (genericos) | ~4B (base) | no disponible | LoRA SFT | variable | HuggingFace, busqueda por "gemma persian lora" |
+| mdanialFarokhi/gemma-3-4b-persian-formalizer | ~4B (base) + LoRA | no disponible | Adaptador LoRA SFT | no disponible | Hugging Face, 0 descargas |
+| google/gemma-3-4b-it | ~4B | no disponible en esta ficha | Modelo base instruction-tuned | Gemma Terms of Use | Hugging Face, ampliamente usado |
+| unsloth/gemma-3-4b-it-unsloth-bnb-4bit | ~4B | no disponible en esta ficha | Modelo base cuantizado 4 bits | Gemma Terms of Use | Hugging Face |
+| Adaptadores LoRA persas sobre Gemma (genericos) | ~4B (base) | no disponible | LoRA SFT | variable | Hugging Face, busqueda por "gemma persian lora" |
 
 La comparativa se limita al ecosistema Gemma 3 porque no se dispone de datos de rendimiento del adaptador ni de alternativas especificas de formalizacion persa documentadas en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ La comparativa se limita al ecosistema Gemma 3 porque no se dispone de datos de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mdanialFarokhi/gemma-3-4b-persian-formalizer
+- Hugging Face: https://huggingface.co/mdanialFarokhi/gemma-3-4b-persian-formalizer
 - Modelo base: https://huggingface.co/unsloth/gemma-3-4b-it-unsloth-bnb-4bit
 - Gemma 3 (Google): https://huggingface.co/google/gemma-3-4b-it
 - Unsloth: https://github.com/unslothai/unsloth

@@ -98,7 +98,7 @@ No se han publicado en la información disponible cifras absolutas de MMLU, Huma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dopaemon/Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e-MTP
+- Modelo en Hugging Face: https://huggingface.co/dopaemon/Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e-MTP
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated
 - Ornith-1.5-35B-A3B (modelo raíz): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Build GGUF de referencia: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF

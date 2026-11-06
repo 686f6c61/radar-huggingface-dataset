@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-4B (original) | 4B | 32K | Apache 2.0 | HuggingFace |
-| pinkskin/qwen3-4b-gdn-wsd-ladder | 4B | 16K/32K | no disponible | HuggingFace |
-| Llama-3.2-3B | 3B | 128K | Llama 3.2 | HuggingFace |
-| Phi-3.5-mini | 3.8B | 128K | MIT | HuggingFace |
+| Qwen3-4B (original) | 4B | 32K | Apache 2.0 | Hugging Face |
+| pinkskin/qwen3-4b-gdn-wsd-ladder | 4B | 16K/32K | no disponible | Hugging Face |
+| Llama-3.2-3B | 3B | 128K | Llama 3.2 | Hugging Face |
+| Phi-3.5-mini | 3.8B | 128K | MIT | Hugging Face |
 
 La comparativa se limita a modelos de tamano similar. Este repositorio no ofrece mejoras documentadas sobre Qwen3-4B, por lo que su valor es puramente experimental.
 
@@ -79,6 +79,6 @@ La comparativa se limita a modelos de tamano similar. Este repositorio no ofrece
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pinkskin/qwen3-4b-gdn-wsd-ladder
+- Repositorio Hugging Face: https://huggingface.co/pinkskin/qwen3-4b-gdn-wsd-ladder
 - Perfil del autor: https://huggingface.co/pinkskin
 - Repositorio oficial de Qwen3 (modelo base): https://github.com/QwenLM/Qwen3

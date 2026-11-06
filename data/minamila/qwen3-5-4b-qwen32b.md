@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MinaMila/Qwen3.5-4B-Qwen32B es un adaptador LoRA (PEFT) publicado en HuggingFace sobre el modelo base Qwen/Qwen3.5-4B. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino incremental que debe cargarse junto al modelo base al que referencia. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo de miles de millones de parametros.
+MinaMila/Qwen3.5-4B-Qwen32B es un adaptador LoRA (PEFT) publicado en Hugging Face sobre el modelo base Qwen/Qwen3.5-4B. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino incremental que debe cargarse junto al modelo base al que referencia. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo de miles de millones de parametros.
 
-El autor del repositorio es el usuario MinaMila, pero la model card publicada es la plantilla por defecto de HuggingFace con todos los campos sin rellenar ("More Information Needed"). Esto significa que no se documenta el objetivo del ajuste, el dataset utilizado, los hiperparametros de entrenamiento, la licencia ni los idiomas objetivo. La unica informacion tecnica fiable disponible es la metadata del repositorio: libreria PEFT, formato safetensors, pipeline de text-generation y modelo base declarado.
+El autor del repositorio es el usuario MinaMila, pero la model card publicada es la plantilla por defecto de Hugging Face con todos los campos sin rellenar ("More Information Needed"). Esto significa que no se documenta el objetivo del ajuste, el dataset utilizado, los hiperparametros de entrenamiento, la licencia ni los idiomas objetivo. La unica informacion tecnica fiable disponible es la metadata del repositorio: libreria PEFT, formato safetensors, pipeline de text-generation y modelo base declarado.
 
 La relevancia de esta ficha es, por tanto, principalmente metodologica: sirve para evaluar un adaptador del que no hay documentacion publica y para dejar constancia explicita de que cualquier decision de adopcion en produccion requeriria inspeccionar los pesos y contactar con el autor. No se ha encontrado informacion adicional en la busqueda web (los resultados obtenidos no guardan relacion con el modelo).
 
@@ -74,8 +74,8 @@ No se dispone de datos de rendimiento del adaptador ni del modelo base en la inf
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MinaMila/Qwen3.5-4B-Qwen32B | Adaptador LoRA (PEFT) | No disponible (repo de 0,1 GB) | No disponible | No disponible | HuggingFace |
-| Qwen/Qwen3.5-4B | Modelo base | ~4B segun denominacion (no confirmado) | No disponible | No disponible | HuggingFace |
+| MinaMila/Qwen3.5-4B-Qwen32B | Adaptador LoRA (PEFT) | No disponible (repo de 0,1 GB) | No disponible | No disponible | Hugging Face |
+| Qwen/Qwen3.5-4B | Modelo base | ~4B segun denominacion (no confirmado) | No disponible | No disponible | Hugging Face |
 | Otros adaptadores LoRA de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias

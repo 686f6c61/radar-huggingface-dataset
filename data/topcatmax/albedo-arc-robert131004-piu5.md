@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `topcatmax/albedo-arc-robert131004-piu5` es un checkpoint publicado en HuggingFace con pipeline de tipo `image-text-to-text`, lo que sugiere una capacidad multimodal de entrada (imagen y texto) y generación de texto. Sin embargo, la información pública disponible es extremadamente limitada: no se especifica la arquitectura, el número de parámetros, el contexto, la licencia ni los idiomas soportados. La model card asociada es una plantilla genérica generada por el framework TRL, que indica un entrenamiento mediante *Supervised Fine-Tuning* (SFT) sobre un modelo base cuyo identificador aparece como `None` (enlace roto). El autor es `topcatmax`, y el modelo tiene cero descargas y cero likes, lo que sugiere que se trata de un experimento personal o un artefacto de prueba sin validación externa.
+El modelo `topcatmax/albedo-arc-robert131004-piu5` es un checkpoint publicado en Hugging Face con pipeline de tipo `image-text-to-text`, lo que sugiere una capacidad multimodal de entrada (imagen y texto) y generación de texto. Sin embargo, la información pública disponible es extremadamente limitada: no se especifica la arquitectura, el número de parámetros, el contexto, la licencia ni los idiomas soportados. La model card asociada es una plantilla genérica generada por el framework TRL, que indica un entrenamiento mediante *Supervised Fine-Tuning* (SFT) sobre un modelo base cuyo identificador aparece como `None` (enlace roto). El autor es `topcatmax`, y el modelo tiene cero descargas y cero likes, lo que sugiere que se trata de un experimento personal o un artefacto de prueba sin validación externa.
 
 Dada la ausencia de documentación técnica, esta ficha se limita a reflejar los datos disponibles y advierte explícitamente de las carencias. No se debe considerar este modelo para uso en producción sin una evaluación previa exhaustiva.
 
@@ -57,6 +57,6 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo, no es p
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/topcatmax/albedo-arc-robert131004-piu5)
+- [Página del modelo en Hugging Face](https://huggingface.co/topcatmax/albedo-arc-robert131004-piu5)
 - [Repositorio de TRL (framework de entrenamiento)](https://github.com/huggingface/trl)
 - No se han encontrado papers, blogs ni demos asociados a este modelo.

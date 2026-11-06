@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`youngpin1/llm-course-hw2-dpo` es un modelo de lenguaje publicado en HuggingFace por el usuario `youngpin1`, aparentemente como entrega de un trabajo practico de un curso sobre modelos de lenguaje (el identificador incluye `llm-course-hw2` y el sufijo `dpo`, que sugiere un ajuste fino mediante Direct Preference Optimization). El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y la model card es la plantilla autogenerada por HuggingFace sin ningun campo completado por el autor, por lo que no hay informacion oficial sobre datos de entrenamiento, licencia, idiomas ni procedencia.
+`youngpin1/llm-course-hw2-dpo` es un modelo de lenguaje publicado en Hugging Face por el usuario `youngpin1`, aparentemente como entrega de un trabajo practico de un curso sobre modelos de lenguaje (el identificador incluye `llm-course-hw2` y el sufijo `dpo`, que sugiere un ajuste fino mediante Direct Preference Optimization). El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y la model card es la plantilla autogenerada por Hugging Face sin ningun campo completado por el autor, por lo que no hay informacion oficial sobre datos de entrenamiento, licencia, idiomas ni procedencia.
 
-El dato tecnico mas fiable disponible es el recuento de parametros extraido de los pesos en safetensors: 134.515.008 parametros (aproximadamente 134,5 millones), lo que lo situa en la categoria de modelos pequenos tipo GPT-2 large o similares. El tag `llama` en HuggingFace indica que la arquitectura declarada es de la familia Llama, aunque con ese numero de parametros no corresponde a ningun checkpoint oficial de Meta. El tamano del repositorio es de 0,5 GB.
+El dato tecnico mas fiable disponible es el recuento de parametros extraido de los pesos en safetensors: 134.515.008 parametros (aproximadamente 134,5 millones), lo que lo situa en la categoria de modelos pequenos tipo GPT-2 large o similares. El tag `llama` en Hugging Face indica que la arquitectura declarada es de la familia Llama, aunque con ese numero de parametros no corresponde a ningun checkpoint oficial de Meta. El tamano del repositorio es de 0,5 GB.
 
 Por tanto, se trata de un modelo experimental de caracter educativo, sin garantias de calidad ni documentacion, cuya relevancia practica es limitada. Esta ficha recoge lo que se puede afirmar con rigor a partir de los metadatos y marca explicitamente como "no disponible" todo lo que el autor no ha publicado.
 
@@ -12,7 +12,7 @@ Por tanto, se trata de un modelo experimental de caracter educativo, sin garanti
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (tag `llama` en HuggingFace; configuracion exacta no disponible) |
+| Arquitectura | Transformer decoder-only (tag `llama` en Hugging Face; configuracion exacta no disponible) |
 | Parametros totales | 134.515.008 |
 | Parametros activos | no disponible (no es un modelo MoE segun los metadatos) |
 | Longitud de contexto | no disponible |
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| youngpin1/llm-course-hw2-dpo | 134,5M | no disponible | no disponible | HuggingFace, 0 descargas | Model card vacia, sin evaluacion |
+| youngpin1/llm-course-hw2-dpo | 134,5M | no disponible | no disponible | Hugging Face, 0 descargas | Model card vacia, sin evaluacion |
 | GPT-2 (124M) | 124M | 1024 tokens | MIT | Ampliamente disponible | Referencia clasica de modelos pequenos, muy documentado |
-| TinyLlama 1.1B | 1,1B | 2048 tokens | Apache 2.0 | HuggingFace, muy usado | Mayor capacidad, documentacion completa |
-| SmolLM-135M | 135M | 2048 tokens | Apache 2.0 | HuggingFace, HuggingFaceTB | Mismo orden de magnitud, con evaluacion publicada |
+| TinyLlama 1.1B | 1,1B | 2048 tokens | Apache 2.0 | Hugging Face, muy usado | Mayor capacidad, documentacion completa |
+| SmolLM-135M | 135M | 2048 tokens | Apache 2.0 | Hugging Face, HuggingFaceTB | Mismo orden de magnitud, con evaluacion publicada |
 
 La comparativa es orientativa: el modelo de `youngpin1` no tiene datos publicados de contexto, licencia ni rendimiento, por lo que no se puede establecer una comparacion cuantitativa fiable con las alternativas. SmolLM-135M es el comparable mas cercano en numero de parametros y dispone de documentacion y benchmarks, lo que lo convierte en una opcion preferible para cualquier uso real.
 
@@ -91,7 +91,7 @@ La comparativa es orientativa: el modelo de `youngpin1` no tiene datos publicado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/youngpin1/llm-course-hw2-dpo
+- Hugging Face: https://huggingface.co/youngpin1/llm-course-hw2-dpo
 - Paper de referencia citado en los tags (Machine Learning Impact calculator, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

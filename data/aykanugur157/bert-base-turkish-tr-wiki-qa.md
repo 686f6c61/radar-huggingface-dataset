@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bert-base-turkish-tr-wiki-qa` es un modelo de respuesta extractiva de preguntas (extractive QA) para turco, desarrollado por el usuario de HuggingFace Aykanugur157. Se trata de un fine-tuning del checkpoint `dbmdz/bert-base-turkish-cased` (BERTurk, publicado por el equipo MDZ Digital Library de la Biblioteca Estatal de Baviera bajo licencia MIT) sobre el dataset `Aykanugur157/tr-wiki-qa`, compuesto por 67.661 filas de entrenamiento generadas con modelos de lenguaje a partir de la Wikipedia en turco. Dada una pregunta y un pasaje de contexto, el modelo devuelve el fragmento del contexto que responde a la pregunta.
+`bert-base-turkish-tr-wiki-qa` es un modelo de respuesta extractiva de preguntas (extractive QA) para turco, desarrollado por el usuario de Hugging Face Aykanugur157. Se trata de un fine-tuning del checkpoint `dbmdz/bert-base-turkish-cased` (BERTurk, publicado por el equipo MDZ Digital Library de la Biblioteca Estatal de Baviera bajo licencia MIT) sobre el dataset `Aykanugur157/tr-wiki-qa`, compuesto por 67.661 filas de entrenamiento generadas con modelos de lenguaje a partir de la Wikipedia en turco. Dada una pregunta y un pasaje de contexto, el modelo devuelve el fragmento del contexto que responde a la pregunta.
 
 El modelo es relevante como ejemplo de QA extractivo de dominio cerrado: obtiene métricas muy altas en la distribución de su propio dataset (EM 91,73 y F1 95,09 en el split de test) pero cae de forma notable en un conjunto independiente y de traducción humana como XQuAD-tr (EM 43,11 y F1 62,31). Esa brecha es la información más útil de la ficha: el modelo está especializado en preguntas cortas y factuales del estilo de su corpus de entrenamiento, no en comprensión lectora general en turco.
 
@@ -75,9 +75,9 @@ El propio autor advierte que los splits de tr-wiki-qa se generaron con el mismo 
 
 | Modelo | Parámetros | Contexto | XQuAD-tr (EM/F1) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aykanugur157/bert-base-turkish-tr-wiki-qa | 110 M | 512 | 43,11 / 62,31 | CC BY-SA 4.0 | HuggingFace, 0 descargas, 2 likes |
-| savasy/bert-base-turkish-squad | 110 M (BERTurk) | 512 | 45,38 / 65,85 | no disponible en la información proporcionada | HuggingFace, modelo de referencia entrenado con TQuAD |
-| dbmdz/bert-base-turkish-cased | 110 M | 512 | no aplica (modelo base, sin cabeza QA) | MIT | HuggingFace, checkpoint base de BERTurk |
+| Aykanugur157/bert-base-turkish-tr-wiki-qa | 110 M | 512 | 43,11 / 62,31 | CC BY-SA 4.0 | Hugging Face, 0 descargas, 2 likes |
+| savasy/bert-base-turkish-squad | 110 M (BERTurk) | 512 | 45,38 / 65,85 | no disponible en la información proporcionada | Hugging Face, modelo de referencia entrenado con TQuAD |
+| dbmdz/bert-base-turkish-cased | 110 M | 512 | no aplica (modelo base, sin cabeza QA) | MIT | Hugging Face, checkpoint base de BERTurk |
 
 No se dispone de datos de otros modelos QA en turco en la información proporcionada; la comparación se limita al referente TQuAD y al modelo base. En la distribución propia de tr-wiki-qa el modelo aquí descrito supera al referente (EM 91,73 frente a 76,30), pero esa ventaja no se traslada a XQuAD-tr, lo que sugiere un ajuste fuerte a la distribución sintética del corpus.
 
@@ -93,11 +93,11 @@ No se dispone de datos de otros modelos QA en turco en la información proporcio
 - El modelo base BERTurk es MIT, pero la licencia del derivado es CC BY-SA 4.0, más restrictiva.
 - Solo turco; no hay soporte multilingüe ni garantías en textos con ortografía informal o dialectal.
 - El pipeline `question-answering` de transformers 5.x está eliminado, por lo que las integraciones basadas en `pipeline()` requieren adaptación manual.
-- Tracción prácticamente nula en HuggingFace (0 descargas, 2 likes) y una única ejecución de evaluación sin intervalos de confianza: la reproducibilidad de las cifras no está validada por terceros.
+- Tracción prácticamente nula en Hugging Face (0 descargas, 2 likes) y una única ejecución de evaluación sin intervalos de confianza: la reproducibilidad de las cifras no está validada por terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aykanugur157/bert-base-turkish-tr-wiki-qa
+- Modelo en Hugging Face: https://huggingface.co/Aykanugur157/bert-base-turkish-tr-wiki-qa
 - Dataset de entrenamiento: https://huggingface.co/datasets/Aykanugur157/tr-wiki-qa
 - Modelo base BERTurk: https://huggingface.co/dbmdz/bert-base-turkish-cased
 - Modelo de referencia entrenado con TQuAD: https://huggingface.co/savasy/bert-base-turkish-squad

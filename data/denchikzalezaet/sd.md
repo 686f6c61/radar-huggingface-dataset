@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `denchikzalezaet/sd` es un repositorio publicado en HuggingFace por el usuario `denchikzalezaet`. La única información disponible en su model card es la licencia `openrail`, sin ningún otro detalle técnico, descripción o documentación. No se especifica la arquitectura, el tamaño, el propósito ni las capacidades del modelo. El nombre del repositorio sugiere una posible relación con generación de imágenes (por la abreviatura "sd", comúnmente asociada a Stable Diffusion), pero no hay confirmación oficial en los metadatos. Con cero descargas y cero likes, se trata de un modelo recién creado (septiembre de 2026) y sin evidencia de uso o validación por parte de la comunidad. Ante la ausencia total de información, cualquier evaluación técnica resulta imposible en este momento.
+El modelo identificado como `denchikzalezaet/sd` es un repositorio publicado en Hugging Face por el usuario `denchikzalezaet`. La única información disponible en su model card es la licencia `openrail`, sin ningún otro detalle técnico, descripción o documentación. No se especifica la arquitectura, el tamaño, el propósito ni las capacidades del modelo. El nombre del repositorio sugiere una posible relación con generación de imágenes (por la abreviatura "sd", comúnmente asociada a Stable Diffusion), pero no hay confirmación oficial en los metadatos. Con cero descargas y cero likes, se trata de un modelo recién creado (septiembre de 2026) y sin evidencia de uso o validación por parte de la comunidad. Ante la ausencia total de información, cualquier evaluación técnica resulta imposible en este momento.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ No se dispone de información verificada sobre las capacidades del modelo. No se
 
 ## Casos de uso
 
-No se pueden proponer casos de uso concretos debido a la falta de especificaciones técnicas y funcionales. Sin conocer la arquitectura, el tamaño o el entrenamiento, cualquier aplicación práctica sería especulativa. Se recomienda a los desarrolladores e investigadores que consulten directamente el repositorio en HuggingFace para obtener información actualizada, o que contacten con el autor si necesitan detalles adicionales.
+No se pueden proponer casos de uso concretos debido a la falta de especificaciones técnicas y funcionales. Sin conocer la arquitectura, el tamaño o el entrenamiento, cualquier aplicación práctica sería especulativa. Se recomienda a los desarrolladores e investigadores que consulten directamente el repositorio en Hugging Face para obtener información actualizada, o que contacten con el autor si necesitan detalles adicionales.
 
 ## Benchmarks y rendimiento
 
@@ -51,5 +51,5 @@ No disponible. Al no conocerse la arquitectura ni el propósito del modelo, no e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/denchikzalezaet/sd
+- Repositorio en Hugging Face: https://huggingface.co/denchikzalezaet/sd
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web realizada.

@@ -82,9 +82,9 @@ El checkpoint `laya-typed-decisions` declara 0,766 de exactitud media en los cua
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `0xSojalSec/laya-System1` (este repo, checkpoint inglés) | 421M | 512 | Clasificación y decisión tipada no autorregresiva | apache-2.0 | HuggingFace, 0 descargas |
-| `convaiinnovations/laya-multilingual` | 322M | 1024 (hasta 8k) | Igual, con cobertura de 100+ idiomas | apache-2.0 | HuggingFace (repo de la familia) |
-| `convaiinnovations/laya-typed-decisions` | 421M | 1024 | Igual, especializado en los cuatro flujos tipados (0,766 de exactitud) | apache-2.0 | HuggingFace (repo de la familia) |
+| `0xSojalSec/laya-System1` (este repo, checkpoint inglés) | 421M | 512 | Clasificación y decisión tipada no autorregresiva | apache-2.0 | Hugging Face, 0 descargas |
+| `convaiinnovations/laya-multilingual` | 322M | 1024 (hasta 8k) | Igual, con cobertura de 100+ idiomas | apache-2.0 | Hugging Face (repo de la familia) |
+| `convaiinnovations/laya-typed-decisions` | 421M | 1024 | Igual, especializado en los cuatro flujos tipados (0,766 de exactitud) | apache-2.0 | Hugging Face (repo de la familia) |
 | Encoders de clasificación de tamaño comparable (ModernBERT-large, RoBERTa-large, XLM-R large) | ~350M-600M | variable (512-8192) | Clasificación supervisada clásica | variable | no disponible en la información proporcionada |
 
 No se dispone de comparativas verificadas frente a alternativas externas de la misma categoría: la búsqueda web realizada no devolvió resultados relevantes (los enlaces encontrados trataban sobre iconos de escritorio de Windows y no guardaban relación con el modelo). Cualquier comparación de rendimiento con otros encoders requeriría ejecutar el mismo benchmark de forma independiente.
@@ -105,7 +105,7 @@ No se dispone de comparativas verificadas frente a alternativas externas de la m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/0xSojalSec/laya-System1
+- Repositorio en Hugging Face: https://huggingface.co/0xSojalSec/laya-System1
 - Repositorio de la familia (checkpoint inglés original): https://huggingface.co/convaiinnovations/laya
 - Checkpoint multilingüe: https://huggingface.co/convaiinnovations/laya-multilingual
 - Checkpoint de decisiones tipadas: https://huggingface.co/convaiinnovations/laya-typed-decisions

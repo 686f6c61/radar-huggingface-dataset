@@ -89,7 +89,7 @@ Frente al Preview, Realistic amplía de 11 a 17 idiomas y mantiene la misma prec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/Audio8-TTS-Realistic-0.6b-bf16
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/Audio8-TTS-Realistic-0.6b-bf16
 - Modelo base: https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b
 - Checkpoint Preview en MLX: https://huggingface.co/mlx-community/Audio8-TTS-Preview-0.6b-bf16
 - Librería mlx-audio: https://github.com/Blaizzy/mlx-audio

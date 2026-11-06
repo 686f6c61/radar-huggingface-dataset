@@ -106,7 +106,7 @@ Comparativas con otros modelos de la misma categoria (por ejemplo Qwen2.5-3B, Ll
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/dalatexcoder/MiniCPM5-2B-Claude-Fable5-1-Thinking-Agentic-heretic-ara-strict
+- Hugging Face (este modelo): https://huggingface.co/dalatexcoder/MiniCPM5-2B-Claude-Fable5-1-Thinking-Agentic-heretic-ara-strict
 - Modelo base del fine-tune: https://huggingface.co/GnLOLot/MiniCPM5-2B-Claude-Fable5-1-Thinking-Agentic
 - Modelo base original: https://huggingface.co/openbmb/MiniCPM5-2B
 - Repositorio GGUF del modelo base (no abliterado): https://huggingface.co/GnLOLot/MiniCPM5-2B-Claude-Fable5-1-Thinking-Agentic-GGUF

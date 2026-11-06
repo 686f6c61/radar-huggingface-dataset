@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. Los VAE d
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: la model card no incluye arquitectura, entrenamiento, ni instrucciones de uso, lo que dificulta su adopcion.
-- Riesgo de incompatibilidad: los pesos pueden no ser directamente cargables con las APIs estandar de HuggingFace o PyTorch sin modificaciones.
+- Riesgo de incompatibilidad: los pesos pueden no ser directamente cargables con las APIs estandar de Hugging Face o PyTorch sin modificaciones.
 - Cuantizacion int8: puede degradar la calidad de reconstruccion respecto al modelo original en precision completa, aunque no hay datos que lo confirmen.
 - Sesgos y alucinaciones: al ser un VAE, no genera texto, pero podria introducir artefactos visuales en la reconstruccion de video.
 - Licencia Apache-2.0: permite uso comercial, pero sin garantias ni soporte del autor.
@@ -76,5 +76,5 @@ No se dispone de informacion suficiente para una comparativa rigurosa. Los VAE d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GuangyuanSD/minimax_h3_video_vae_int8_convrot
+- Repositorio Hugging Face: https://huggingface.co/GuangyuanSD/minimax_h3_video_vae_int8_convrot
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web.

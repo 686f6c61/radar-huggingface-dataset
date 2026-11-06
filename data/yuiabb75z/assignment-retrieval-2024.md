@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Yuiabb75z/assignment-retrieval-2024` es un repositorio de HuggingFace que contiene una implementación personalizada y compacta de MoCo v3 (Momentum Contrast v3) orientada a tareas de retrieval (recuperación). Lo publica el usuario Yuiabb75z bajo licencia MIT. No se trata de un modelo preentrenado ni de una release lista para producción: la propia model card lo describe como una configuración "nano" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
+`Yuiabb75z/assignment-retrieval-2024` es un repositorio de Hugging Face que contiene una implementación personalizada y compacta de MoCo v3 (Momentum Contrast v3) orientada a tareas de retrieval (recuperación). Lo publica el usuario Yuiabb75z bajo licencia MIT. No se trata de un modelo preentrenado ni de una release lista para producción: la propia model card lo describe como una configuración "nano" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
 
 El checkpoint incluido (`model.safetensors`) se presenta explícitamente como una inicialización válida para smoke tests, no como un checkpoint entrenado ni evaluado. Con 24.832 parámetros totales y un tamano de repositorio de 0.0 GB, el artefacto es de escala minima, propio de un ejercicio académico o de una entrega de asignatura más que de un modelo de uso real. El repositorio no declara ninguna puntuación de benchmark.
 
@@ -70,7 +70,7 @@ No hay modelos directamente comparables en la informacion disponible. A modo de 
 | Contexto | no disponible | no disponible | no disponible |
 | Entrenado | No (solo inicializacion) | Si | Si |
 | Licencia | MIT | No disponible en esta ficha | No disponible en esta ficha |
-| Disponibilidad | Repositorio HuggingFace | Pesos oficiales del proyecto | Pesos oficiales del proyecto |
+| Disponibilidad | Repositorio Hugging Face | Pesos oficiales del proyecto | Pesos oficiales del proyecto |
 
 ## Limitaciones y advertencias
 
@@ -81,13 +81,13 @@ No hay modelos directamente comparables en la informacion disponible. A modo de 
 - Riesgo de alucinación: no evaluable, al no ser un modelo generativo entrenado.
 - Limitaciones de contexto e idioma: no disponible.
 - La licencia MIT permite uso comercial del código, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se usa el repositorio con conjuntos de datos externos.
-- Las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito, lo que complica la integración directa en pipelines estándar.
+- Las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito, lo que complica la integración directa en pipelines estándar.
 - Cualquier resultado obtenido con un checkpoint futuro entrenado debe documentarse por separado de los valores por defecto aquí incluidos, según indica el autor.
 - No apto para producción: la escala "nano" y la ausencia de entrenamiento lo limitan a fines de revisión, pruebas y experimentación.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Yuiabb75z/assignment-retrieval-2024
+- Repositorio en Hugging Face: https://huggingface.co/Yuiabb75z/assignment-retrieval-2024
 - Archivos del repositorio: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper de referencia de MoCo v3 (no enlazado en la model card): no disponible en la informacion proporcionada
 - Otros enlaces (blogs, demos, repos): no disponible

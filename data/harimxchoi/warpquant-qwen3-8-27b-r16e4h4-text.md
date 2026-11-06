@@ -85,7 +85,7 @@ No se dispone de comparaciones con otros modelos de 27B de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HarimxChoi/WarpQuant-Qwen3.8-27B-R16E4H4-Text
+- Modelo en Hugging Face: https://huggingface.co/HarimxChoi/WarpQuant-Qwen3.8-27B-R16E4H4-Text
 - Informe técnico: https://harimxchoi.github.io/projects/warpquant
 - Código fuente: https://github.com/HarimxChoi/WarpQuant
 - Modelo multimodal (con visión y MTP): https://huggingface.co/HarimxChoi/WarpQuant-Qwen3.8-27B-R16E4H4

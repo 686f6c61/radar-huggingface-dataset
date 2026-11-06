@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JEPA-CoT 3D Double-Sparse Axial MoE es un checkpoint experimental publicado por el usuario DKNTZMN en HuggingFace, descrito por su autor como el MVP funcional de una arquitectura de world model denominada "JEPA-CoT con MoE axial 3D de doble dispersión". No es un modelo de lenguaje generativo, sino un modelo predictivo de representaciones (JEPA, Joint Embedding Predictive Architecture) orientado a la predicción de trayectorias de agentes en entornos 3D, con una cabeza de razonamiento latente en cuatro tokens (CoT). El checkpoint es un esqueleto ejecutable (d=128, 4 capas, 8 cabezas) pensado para reproducir el experimento en CPU, no un modelo listo para producción.
+JEPA-CoT 3D Double-Sparse Axial MoE es un checkpoint experimental publicado por el usuario DKNTZMN en Hugging Face, descrito por su autor como el MVP funcional de una arquitectura de world model denominada "JEPA-CoT con MoE axial 3D de doble dispersión". No es un modelo de lenguaje generativo, sino un modelo predictivo de representaciones (JEPA, Joint Embedding Predictive Architecture) orientado a la predicción de trayectorias de agentes en entornos 3D, con una cabeza de razonamiento latente en cuatro tokens (CoT). El checkpoint es un esqueleto ejecutable (d=128, 4 capas, 8 cabezas) pensado para reproducir el experimento en CPU, no un modelo listo para producción.
 
 La propuesta técnica combina tres piezas: una memoria asociativa tipo Engram heredada del paper DeepSeek Engram (arXiv:2601.07372), un mecanismo de atención axial con eje Z causal (tiempo) y ejes espaciales, y una capa MoE ultra-dispersa con experto compartido ("spinal"). Sobre el Engram original el autor añade una segunda dimensión de dispersión: cada uno de los cuatro bancos diagonales incorpora una cadena de parámetros 1-D sobre la que se interpola la memoria recuperada.
 
@@ -74,7 +74,7 @@ Advertencias del propio autor: la comparación no es isoparamétrica (los bancos
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JEPA-CoT 3D Double-Sparse Axial MoE | 4,13 M totales / 1,69 M activos | no disponible | Prediccion de trayectorias (nuScenes) | no disponible | HuggingFace (0 descargas) |
+| JEPA-CoT 3D Double-Sparse Axial MoE | 4,13 M totales / 1,69 M activos | no disponible | Prediccion de trayectorias (nuScenes) | no disponible | Hugging Face (0 descargas) |
 | V-JEPA 2 (Meta) | no disponible en la informacion | no disponible | World model self-supervised sobre video | no disponible en la informacion | GitHub facebookresearch/vjepa2 |
 | V-JEPA 2-AC (Meta) | no disponible en la informacion | no disponible | World model condicionado por accion para manipulacion robotica | no disponible en la informacion | GitHub facebookresearch/vjepa2 |
 
@@ -94,7 +94,7 @@ La comparación directa es limitada: V-JEPA 2 y V-JEPA 2-AC operan sobre video a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DKNTZMN/jepa-cot-3d-double-sparse-axial-moe
+- Hugging Face: https://huggingface.co/DKNTZMN/jepa-cot-3d-double-sparse-axial-moe
 - Paper de referencia (DeepSeek Engram): https://arxiv.org/abs/2601.07372
 - V-JEPA 2 (Meta, repositorio): https://github.com/facebookresearch/vjepa2
 - V-JEPA 2 (paper): https://arxiv.org/abs/2506.09985

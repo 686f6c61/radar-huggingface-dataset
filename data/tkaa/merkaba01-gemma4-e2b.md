@@ -81,7 +81,7 @@ La comparativa directa con alternativas de la misma categoria no es posible con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tkaa/Merkaba01-Gemma4-E2B
+- Hugging Face: https://huggingface.co/Tkaa/Merkaba01-Gemma4-E2B
 - Repositorio del runtime Merkaba01: no disponible
 - Paper o documentacion tecnica: no disponible
 - Blog del autor: no disponible

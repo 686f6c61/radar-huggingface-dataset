@@ -78,7 +78,7 @@ No se dispone de una comparativa directa con otros modelos en la información pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RononoaIgor98/cassava-leaf-disease-efficientnet-b0
+- Modelo en Hugging Face: https://huggingface.co/RononoaIgor98/cassava-leaf-disease-efficientnet-b0
 - Dataset de Kaggle (referencia): https://www.kaggle.com/competitions/cassava-leaf-disease-classification
 - Repositorio relacionado (adhoc-research): https://github.com/adhoc-research/cassava_leaf_disease_classification
 - Repositorio relacionado (MingDanng): https://github.com/MingDanng/Cassava_Leaf_Disease_AI/tree/main

@@ -4,7 +4,7 @@
 
 Este repositorio no contiene un modelo completo, sino un adaptador LoRA (PEFT) denominado `shreyans_qwen2.5-32b-it_impulsive-seqkd-v2-lora`, publicado por el usuario u organización `Misalignment-Empirics` sobre el modelo base `Qwen/Qwen2.5-32B-Instruct`. Se distribuye en formato `safetensors` mediante la librería PEFT (versión 0.20.0 registrada en el README generado por plantilla) y ocupa 1,1 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo de 32.000 millones de parámetros. El pipeline declarado es `text-generation` y el repositorio registra 16 descargas y 0 "likes" en el momento de la consulta.
 
-El interés de esta ficha es limitado y hay que decirlo con claridad: la model card es la plantilla automática de HuggingFace sin rellenar, con todos los campos marcados como `[More Information Needed]`. No se declaran autoría real, licencia, idiomas, datos de entrenamiento, hiperparámetros, métricas de evaluación ni uso previsto. Por el nombre del repositorio (organización centrada en "misalignment empirics", términos "impulsive" y "seqkd") se deduce que se trata de un artefacto de investigación sobre comportamiento y alineación, posiblemente generado mediante destilación de conocimiento a nivel de secuencia (sequence-level knowledge distillation), pero esto es una inferencia a partir del identificador y no un dato confirmado por el autor.
+El interés de esta ficha es limitado y hay que decirlo con claridad: la model card es la plantilla automática de Hugging Face sin rellenar, con todos los campos marcados como `[More Information Needed]`. No se declaran autoría real, licencia, idiomas, datos de entrenamiento, hiperparámetros, métricas de evaluación ni uso previsto. Por el nombre del repositorio (organización centrada en "misalignment empirics", términos "impulsive" y "seqkd") se deduce que se trata de un artefacto de investigación sobre comportamiento y alineación, posiblemente generado mediante destilación de conocimiento a nivel de secuencia (sequence-level knowledge distillation), pero esto es una inferencia a partir del identificador y no un dato confirmado por el autor.
 
 Dado que el adaptador hereda la arquitectura y las capacidades del modelo base, la ficha describe también las características documentadas de Qwen2.5-32B-Instruct, indicando en cada caso si el dato procede del modelo base o del adaptador. Cualquier cifra de rendimiento específica del adaptador no está publicada.
 
@@ -23,7 +23,7 @@ Dado que el adaptador hereda la arquitectura y las capacidades del modelo base, 
 | Libreria | peft 0.20.0 (transformers) |
 | Tamano del repositorio | 1,1 GB |
 | Tipo de artefacto | Adaptador de fine-tuning (no es un modelo autonomo; requiere cargar el base) |
-| Fecha de creacion / actualizacion | 2026-09-13 (creacion y ultima actualizacion, segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-09-13 (creacion y ultima actualizacion, segun metadatos de Hugging Face) |
 | Descargas / likes | 16 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -82,10 +82,10 @@ La comparacion se establece con el modelo base y con alternativas de la misma fa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| Adaptador `shreyans_qwen2.5-32b-it_impulsive-seqkd-v2-lora` | Adaptador LoRA sobre 32,5B | Heredado del base: 131.072 tokens | No disponible (base Apache 2.0) | HuggingFace, 16 descargas | No disponible; sin benchmarks publicados |
-| Qwen2.5-32B-Instruct | 32,5B | 131.072 tokens | Apache 2.0 | HuggingFace, ampliamente distribuido | Linea base documentada por Qwen |
-| Qwen2.5-14B-Instruct | 14,7B | 131.072 tokens | Apache 2.0 | HuggingFace | Menor coste de inferencia, rendimiento inferior al de 32B |
-| Qwen2.5-72B-Instruct | 72,7B | 131.072 tokens | Qwen (licencia propia, no Apache 2.0 en todas las variantes) | HuggingFace | Superior al de 32B, requiere hardware muy superior |
+| Adaptador `shreyans_qwen2.5-32b-it_impulsive-seqkd-v2-lora` | Adaptador LoRA sobre 32,5B | Heredado del base: 131.072 tokens | No disponible (base Apache 2.0) | Hugging Face, 16 descargas | No disponible; sin benchmarks publicados |
+| Qwen2.5-32B-Instruct | 32,5B | 131.072 tokens | Apache 2.0 | Hugging Face, ampliamente distribuido | Linea base documentada por Qwen |
+| Qwen2.5-14B-Instruct | 14,7B | 131.072 tokens | Apache 2.0 | Hugging Face | Menor coste de inferencia, rendimiento inferior al de 32B |
+| Qwen2.5-72B-Instruct | 72,7B | 131.072 tokens | Qwen (licencia propia, no Apache 2.0 en todas las variantes) | Hugging Face | Superior al de 32B, requiere hardware muy superior |
 
 No se dispone de datos para comparar el comportamiento inducido por el adaptador con el de otros adaptadores de la misma categoria (por ejemplo, adaptadores de comportamiento o de estilo publicados sobre Qwen2.5), ya que no se han identificado artefactos equivalentes documentados.
 
@@ -103,7 +103,7 @@ No se dispone de datos para comparar el comportamiento inducido por el adaptador
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Misalignment-Empirics/shreyans_qwen2.5-32b-it_impulsive-seqkd-v2-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Misalignment-Empirics/shreyans_qwen2.5-32b-it_impulsive-seqkd-v2-lora
 - Modelo base Qwen2.5-32B-Instruct: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
 - Repositorio GitHub de Qwen2.5: https://github.com/QwenLM/Qwen2.5
 - Blog oficial de la familia Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

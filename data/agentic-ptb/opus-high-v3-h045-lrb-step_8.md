@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `agentic-ptb/opus-high-v3.h045.lrB.step_8` | 9,4B | no disponible | Apache-2.0 | HuggingFace (checkpoint intermedio) |
-| `Qwen/Qwen3.5-9B-Base` | 9,4B | no disponible | Apache-2.0 | HuggingFace (modelo base) |
-| Llama 3.1 8B | 8,0B | 128K | Llama 3.1 Community License | HuggingFace, Ollama, etc. |
-| Mistral 7B | 7,2B | 32K | Apache-2.0 | HuggingFace, Ollama, etc. |
+| `agentic-ptb/opus-high-v3.h045.lrB.step_8` | 9,4B | no disponible | Apache-2.0 | Hugging Face (checkpoint intermedio) |
+| `Qwen/Qwen3.5-9B-Base` | 9,4B | no disponible | Apache-2.0 | Hugging Face (modelo base) |
+| Llama 3.1 8B | 8,0B | 128K | Llama 3.1 Community License | Hugging Face, Ollama, etc. |
+| Mistral 7B | 7,2B | 32K | Apache-2.0 | Hugging Face, Ollama, etc. |
 
 La comparativa es estructural, ya que no hay datos de rendimiento del checkpoint. Frente a modelos comerciales de tamaño similar, este checkpoint carece de cualquier validación de calidad y no debe considerarse una alternativa utilizable.
 
@@ -76,6 +76,6 @@ La comparativa es estructural, ya que no hay datos de rendimiento del checkpoint
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h045.lrB.step_8
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h045.lrB.step_8
 - Dataset de archivo del run: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX

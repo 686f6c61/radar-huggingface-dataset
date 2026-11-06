@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`carmenwatanabe/deit-baseline66` es un prototipo de investigacion publicado en HuggingFace que declara una arquitectura DeiT (Data-efficient Image Transformer) orientada a tareas de generacion. El autor lo presenta explicitamente como un punto de partida experimental: el checkpoint `model.safetensors` se describe como una inicializacion valida para pruebas de humo, no como un modelo entrenado ni evaluado. El repositorio incluye ademas `model.py`, `config.json` y `training_args.json`, que documentan la receta por defecto (optimizador SGD con planificador coseno) sin aportar ninguna cifra de rendimiento.
+`carmenwatanabe/deit-baseline66` es un prototipo de investigacion publicado en Hugging Face que declara una arquitectura DeiT (Data-efficient Image Transformer) orientada a tareas de generacion. El autor lo presenta explicitamente como un punto de partida experimental: el checkpoint `model.safetensors` se describe como una inicializacion valida para pruebas de humo, no como un modelo entrenado ni evaluado. El repositorio incluye ademas `model.py`, `config.json` y `training_args.json`, que documentan la receta por defecto (optimizador SGD con planificador coseno) sin aportar ninguna cifra de rendimiento.
 
 El dato mas relevante es su tamano real: el recuento de parametros en safetensors es de 24.832, muy lejos de los ordenes de magnitud habituales en la familia DeiT (millones de parametros). Esto confirma que se trata de un esqueleto de arquitectura o una inicializacion aleatoria, no de un modelo con capacidad funcional demostrada. El autor no reclama ninguna puntuacion de benchmark y advierte de que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio, algo coherente con sus 0 descargas y 0 likes en el momento de la consulta.
 
@@ -29,7 +29,7 @@ Su relevancia actual es limitada como modelo de produccion, pero puede resultar 
 | Optimizador por defecto | SGD con planificador coseno |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -54,10 +54,10 @@ Respecto al entrenamiento, no hay evidencia de que se haya completado ninguna ej
 - Prueba de humo en integracion continua: el checkpoint de 24.832 parametros permite validar en segundos que un pipeline de carga de safetensors, versionado de artefactos y ejecucion en GPU o CPU funciona correctamente antes de desplegar modelos reales.
 - Plantilla de arquitectura para variantes DeiT: sirve como punto de partida para modificar el numero de capas, la fusion concat mlp o el tipo de atencion dispersa y comparar configuraciones bajo un mismo presupuesto de computo.
 - Desarrollo de arneses de evaluacion: al no reclamar ninguna metrica, es un caso limpio para implementar un banco de pruebas propio (conjunto de validacion, tres semillas, linea base de capacidad equivalente) y verificar que el arnes detecta correctamente modelos sin entrenar.
-- Docencia y formacion: util para explicar la diferencia entre un repositorio de inicializacion y un checkpoint entrenado, asi como el flujo de publicacion en HuggingFace con `config.json`, `training_args.json` y pesos en safetensors.
+- Docencia y formacion: util para explicar la diferencia entre un repositorio de inicializacion y un checkpoint entrenado, asi como el flujo de publicacion en Hugging Face con `config.json`, `training_args.json` y pesos en safetensors.
 - Depuracion de pipelines de datos: permite aislar errores de preprocesado de imagenes o de calculo de perdida sin que el coste de inferencia del modelo enmascare el problema.
 - Referencia de comparacion de capacidad: al tener un recuento de parametros conocido y verificable, puede usarse como cota inferior en experimentos de escalado para medir cuanto aporta realmente el aumento de capacidad.
-- Validacion de adaptadores de carga personalizados: dado que las APIs automaticas de HuggingFace no cargan directamente implementaciones a medida, el repositorio es un caso de prueba util para desarrollar y verificar adaptadores propios.
+- Validacion de adaptadores de carga personalizados: dado que las APIs automaticas de Hugging Face no cargan directamente implementaciones a medida, el repositorio es un caso de prueba util para desarrollar y verificar adaptadores propios.
 
 ## Benchmarks y rendimiento
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| carmenwatanabe/deit-baseline66 | 24.832 | no disponible | sin benchmarks publicados | MIT | HuggingFace, 0 descargas |
+| carmenwatanabe/deit-baseline66 | 24.832 | no disponible | sin benchmarks publicados | MIT | Hugging Face, 0 descargas |
 | DeiT (familia original, Meta AI) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | referencia externa |
 | ViT (Google) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | referencia externa |
-| Otros prototipos "baseline" de HuggingFace | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Otros prototipos "baseline" de Hugging Face | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion cuantitativa no es posible con los datos disponibles. La unica diferencia verificable frente a la familia DeiT original es el recuento de parametros del checkpoint publicado (24.832), que no corresponde a ninguna variante estandar entrenada de esa arquitectura.
 
@@ -99,6 +99,6 @@ La comparacion cuantitativa no es posible con los datos disponibles. La unica di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/carmenwatanabe/deit-baseline66
-- Perfil del autor en HuggingFace: https://huggingface.co/carmenwatanabe
+- Modelo en Hugging Face: https://huggingface.co/carmenwatanabe/deit-baseline66
+- Perfil del autor en Hugging Face: https://huggingface.co/carmenwatanabe
 - No se han encontrado enlaces relevantes (paper, blog, repositorio o demo) en los resultados de busqueda web proporcionados; los resultados devueltos no guardan relacion con este modelo.

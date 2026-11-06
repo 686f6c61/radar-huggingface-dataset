@@ -6,7 +6,7 @@ MedOrqis-LLM es un ajuste fino mediante QLoRA 4-bit NF4 sobre el modelo base `Ap
 
 Su propuesta diferencial no es la generacion de texto libre, sino el enrutamiento controlado: cuando una consulta implica calculo aritmetico de riesgo (por ejemplo, CHA2DS2-VA segun guias ESC 2024), aclaramiento renal, dosificacion pediatrica por peso o interacciones farmacologicas graves, el modelo emite una llamada de herramienta `<tool_call>` hacia calculadoras deterministas en lugar de inferir probabilisticamente. Esto reduce el riesgo de alucinacion en valores numericos criticos.
 
-El modelo se distribuye como adaptador PEFT (LoRA) bajo licencia Apache 2.0, no como pesos completos, y requiere cargar el modelo base por separado. A fecha de la informacion disponible no registra descargas ni valoraciones en HuggingFace y no publica resultados de benchmarks.
+El modelo se distribuye como adaptador PEFT (LoRA) bajo licencia Apache 2.0, no como pesos completos, y requiere cargar el modelo base por separado. A fecha de la informacion disponible no registra descargas ni valoraciones en Hugging Face y no publica resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MedOrqis-LLM | ~6B (base) + LoRA | 4096 tokens | Clinico bilinguee arabe/ingles con tool calling deterministico | Apache 2.0 | Adaptador PEFT en HuggingFace |
-| Karnak-6B-v1.0 | ~6B | No disponible | Modelo base generalista Qwen3 | No disponible | Pesos completos en HuggingFace |
+| MedOrqis-LLM | ~6B (base) + LoRA | 4096 tokens | Clinico bilinguee arabe/ingles con tool calling deterministico | Apache 2.0 | Adaptador PEFT en Hugging Face |
+| Karnak-6B-v1.0 | ~6B | No disponible | Modelo base generalista Qwen3 | No disponible | Pesos completos en Hugging Face |
 | Modelos medicos abiertos tipo Meditron o BioMistral | 7B | 4096-8192 tokens | Razonamiento medico en ingles | Licencias variables | Pesos completos y GGUF |
 
 La comparacion cuantitativa con alternativas no es posible porque MedOrqis-LLM no publica benchmarks. Frente a los modelos medicos genericos, su diferencia principal es el enrutamiento a calculadoras deterministas y el soporte nativo de arabe; frente a su modelo base, anade especializacion clinica y guardarrailes a costa de depender de un adaptador adicional.
@@ -83,13 +83,13 @@ La comparacion cuantitativa con alternativas no es posible porque MedOrqis-LLM n
 - Cobertura limitada a ingles y arabe; no se documenta soporte de castellano ni de otros idiomas.
 - Contexto de 4096 tokens, insuficiente para historiales clinicos extensos o documentacion larga.
 - Solo se distribuye el adaptador LoRA: requiere descargar el modelo base y montarlo, lo que complica el despliegue y la reproducibilidad.
-- Sin descargas ni validacion de la comunidad en HuggingFace; la insignia "M8ven Trust Grade B (89/100)" procede de un tercero no verificado en la informacion disponible.
+- Sin descargas ni validacion de la comunidad en Hugging Face; la insignia "M8ven Trust Grade B (89/100)" procede de un tercero no verificado en la informacion disponible.
 - Licencia Apache 2.0 permite uso comercial, pero la responsabilidad legal y regulatoria del uso clinico recae en el implementador.
 - El nombre completo de la funcion de comprobacion de interacciones farmacologicas (`check_drug_*`) aparece truncado en la model card.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seotarek/medorqis-llm
+- Modelo en Hugging Face: https://huggingface.co/seotarek/medorqis-llm
 - Modelo base Karnak-6B-v1.0: https://huggingface.co/Applied-Innovation-Center/Karnak-6B-v1.0
 - Dataset de instrucciones clinicas: https://huggingface.co/datasets/seotarek/medorqis-clinical-instructions
 - Dataset de benchmark dialectal: https://huggingface.co/datasets/seotarek/medorqis-clinical-dialect-benchmark

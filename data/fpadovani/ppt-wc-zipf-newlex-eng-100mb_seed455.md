@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed455` | 86,5 M | No disponible | Ingles | No disponible | HuggingFace, 0 descargas |
-| `goldfish-models/eng_latn_100mb` (modelo base) | Del orden de 85-100 M (no confirmado en la informacion disponible) | No disponible | Ingles (`eng_latn`) | No disponible | HuggingFace, proyecto de investigacion |
+| `fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed455` | 86,5 M | No disponible | Ingles | No disponible | Hugging Face, 0 descargas |
+| `goldfish-models/eng_latn_100mb` (modelo base) | Del orden de 85-100 M (no confirmado en la informacion disponible) | No disponible | Ingles (`eng_latn`) | No disponible | Hugging Face, proyecto de investigacion |
 | GPT-2 small | 124 M | 1.024 tokens | Ingles | MIT | Ampliamente disponible, muy usado como baseline |
 | DistilGPT-2 | 82 M | 1.024 tokens | Ingles | MIT (derivado de GPT-2) | Ampliamente disponible |
 
@@ -90,7 +90,7 @@ La comparacion con GPT-2 small y DistilGPT-2 es pertinente por rango de parametr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Experimento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/77j7w3vs

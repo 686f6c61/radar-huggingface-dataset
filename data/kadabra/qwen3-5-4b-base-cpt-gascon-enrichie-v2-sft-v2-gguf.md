@@ -33,7 +33,7 @@ El proceso de entrenamiento se deduce únicamente del nombre del repositorio: un
 - Procesamiento de imágenes: la inclusión del fichero `mmproj` y la etiqueta `vision-language-model` indican soporte de entrada visual a través de `llama-mtmd-cli`.
 - Especialización lingüística en gascó: el CPT sobre «Gascon-Enrichie-v2» apunta a una mejora en la generación y comprensión de esta variedad occitana, sin métricas publicadas que lo cuantifiquen.
 - Uso con llama.cpp: compatible con `llama-cli` (texto) y `llama-mtmd-cli` (multimodal), invocando el parámetro `--jinja` para aplicar la plantilla de chat.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio puede desplegarse mediante los endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio puede desplegarse mediante los endpoints de Hugging Face.
 - No confirmado: no hay información sobre *tool calling*, *function calling*, razonamiento multi-paso, modo *thinking* explícito, soporte de audio ni ejecución de código.
 
 ## Casos de uso
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kadabra/Qwen3.5-4B-Base-CPT-Gascon-Enrichie-v2-SFT-v2-GGUF | ≈4,2 B | No disponible | Sí (mmproj BF16) | No disponible | GGUF en HuggingFace; 0 descargas |
+| Kadabra/Qwen3.5-4B-Base-CPT-Gascon-Enrichie-v2-SFT-v2-GGUF | ≈4,2 B | No disponible | Sí (mmproj BF16) | No disponible | GGUF en Hugging Face; 0 descargas |
 | Qwen3-4B (familia Qwen) | ≈4,0 B | 32 768 tokens nativos, ampliable con YaRN | No en la variante de texto | Apache 2.0 | Muy extendida, múltiples cuantizaciones |
 | Gemma 3 4B | ≈4 B | 128 000 tokens | Sí | Términos de uso de Gemma | Amplia, con soporte en llama.cpp y Ollama |
 | Llama 3.2 3B | ≈3,2 B | 128 000 tokens | Sí (visión) | Licencia comunitaria de Llama 3.2 | Amplia, con soporte en llama.cpp y Ollama |
@@ -81,11 +81,11 @@ La comparación es estructural: los tres modelos de referencia documentan contex
 - Cobertura lingüística incierta: se desconoce si el ajuste conserva competencia en castellano, francés o inglés, o si el CPT ha desplazado el vocabulario hacia el gascó.
 - Cuantizaciones agresivas: Q2_K_L y Q3_K_M pueden introducir errores ortográficos y morfológicos especialmente dañinos en una lengua de bajos recursos; se recomienda Q4_K_M o superior para cualquier uso lingüístico serio.
 - Dependencia de la plantilla de chat: el uso correcto requiere `--jinja`; sin la plantilla adecuada, el modelo puede producir respuestas mal formateadas o repetitivas.
-- Fecha de creación del repositorio anómala (2026-10-20) según los metadatos de HuggingFace, lo que conviene verificar antes de citar el modelo.
+- Fecha de creación del repositorio anómala (2026-10-20) según los metadatos de Hugging Face, lo que conviene verificar antes de citar el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kadabra/Qwen3.5-4B-Base-CPT-Gascon-Enrichie-v2-SFT-v2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Kadabra/Qwen3.5-4B-Base-CPT-Gascon-Enrichie-v2-SFT-v2-GGUF
 - Unsloth (herramienta de conversión a GGUF citada en la model card): https://github.com/unslothai/unsloth
 - llama.cpp (runtime para `llama-cli` y `llama-mtmd-cli`): https://github.com/ggml-org/llama.cpp
 - No se han encontrado en la información disponible artículos, papers, demos ni repositorios adicionales asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kkxao/KAGGLE-Qwen3.8-27b` es un repositorio de HuggingFace publicado por el usuario kkxao el 13 de octubre de 2026 que, segun su propia model card, no contiene pesos de un modelo de lenguaje, sino un paquete de despliegue para `kaggrun boot`: un binario de `llama-server` compilado para sm_75 (Tesla T4), una copia espejo del binario `cloudflared` 2026.10.0 y la plantilla de chat Qwen-Sharp-Chat-Templates v22.5.0. El nombre sugiere una variante de la familia Qwen3 de unos 27.000 millones de parametros, pero la model card no confirma arquitectura, numero de parametros ni ventana de contexto del modelo subyacente.
+`kkxao/KAGGLE-Qwen3.8-27b` es un repositorio de Hugging Face publicado por el usuario kkxao el 13 de octubre de 2026 que, segun su propia model card, no contiene pesos de un modelo de lenguaje, sino un paquete de despliegue para `kaggrun boot`: un binario de `llama-server` compilado para sm_75 (Tesla T4), una copia espejo del binario `cloudflared` 2026.10.0 y la plantilla de chat Qwen-Sharp-Chat-Templates v22.5.0. El nombre sugiere una variante de la familia Qwen3 de unos 27.000 millones de parametros, pero la model card no confirma arquitectura, numero de parametros ni ventana de contexto del modelo subyacente.
 
 El valor tecnico del repositorio esta en la reproducibilidad: cada artefacto esta fijado por sha256 y el arranque falla si los bytes descargados no coinciden con los declarados. El motor se compila desde `ggml-org/llama.cpp` en el commit `539f24529bdf99e0baefd54fefff1660034bfe7b` con `-DGGML_CUDA=ON -DCMAKE_CUDA_ARCHITECTURES=75`, con la particularidad de que el tarball guarda los alias SONAME como copias de fichero y no como enlaces simbolicos.
 
@@ -90,7 +90,7 @@ No disponible. No se puede establecer una comparativa fiable porque el repositor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kkxao/KAGGLE-Qwen3.8-27b
+- Repositorio en Hugging Face: https://huggingface.co/kkxao/KAGGLE-Qwen3.8-27b
 - Motor base llama.cpp (commit de referencia `539f24529bdf99e0baefd54fefff1660034bfe7b`): https://github.com/ggml-org/llama.cpp
 - Proyecto de plantillas de chat Qwen-Sharp-Chat-Templates v22.5.0 (`peculiar-ragdoll`), incluido `PERF.md`: URL no disponible en la informacion proporcionada
 - Release de cloudflared 2026.10.0 linux-amd64: URL no disponible en la informacion proporcionada

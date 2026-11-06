@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio contiene un ajuste fino de un modelo de la familia Qwen2 con aproximadamente 7.615 millones de parametros (7,62 B), publicado por el usuario ishikaa. Por el identificador del repositorio (acquisition_student_random_medmcqa_qwen7b_1000) y las etiquetas de HuggingFace, todo apunta a un artefacto de investigacion: un "modelo estudiante" entrenado mediante aprendizaje supervisado (SFT con la libreria TRL) sobre el conjunto de datos MedMCQA, presumiblemente con una estrategia de adquisicion de datos etiquetada como "random" y un subconjunto de 1.000 ejemplos. Esta interpretacion procede del nombre del repositorio, no de documentacion explicita.
+Este repositorio contiene un ajuste fino de un modelo de la familia Qwen2 con aproximadamente 7.615 millones de parametros (7,62 B), publicado por el usuario ishikaa. Por el identificador del repositorio (acquisition_student_random_medmcqa_qwen7b_1000) y las etiquetas de Hugging Face, todo apunta a un artefacto de investigacion: un "modelo estudiante" entrenado mediante aprendizaje supervisado (SFT con la libreria TRL) sobre el conjunto de datos MedMCQA, presumiblemente con una estrategia de adquisicion de datos etiquetada como "random" y un subconjunto de 1.000 ejemplos. Esta interpretacion procede del nombre del repositorio, no de documentacion explicita.
 
-La model card publicada es la plantilla generada automaticamente por HuggingFace y no contiene informacion cumplimentada: ni desarrollador, ni datos de entrenamiento, ni hiperparametros de ajuste, ni resultados de evaluacion. Tampoco se declara licencia ni idiomas soportados. El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, con un tamano de 15,2 GB, coherente con un checkpoint en precision de 16 bits.
+La model card publicada es la plantilla generada automaticamente por Hugging Face y no contiene informacion cumplimentada: ni desarrollador, ni datos de entrenamiento, ni hiperparametros de ajuste, ni resultados de evaluacion. Tampoco se declara licencia ni idiomas soportados. El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, con un tamano de 15,2 GB, coherente con un checkpoint en precision de 16 bits.
 
 Su relevancia es por tanto acotada y de caracter experimental: sirve como punto de partida para reproducir o auditar un experimento de ajuste fino en el dominio medico, pero no es un modelo listo para produccion ni cuenta con garantias de calidad, licencia o soporte. Cualquier uso en un contexto clinico o sanitario debe descartarse de entrada.
 
@@ -29,7 +29,7 @@ Su relevancia es por tanto acotada y de caracter experimental: sirve como punto 
 
 No se dispone de informacion tecnica detallada sobre la arquitectura interna. La etiqueta `qwen2` indica que el modelo parte de la familia Qwen2, y el recuento de parametros de 7,62 B coincide con la variante de 7 B de dicha familia, por lo que se trata casi con seguridad de un ajuste fino sobre ese checkpoint base. Al no haber parametros activos diferenciados, no hay indicios de arquitectura de mezcla de expertos (MoE), atencion lineal ni SSM: se trata de un transformer denso estandar.
 
-Respecto al entrenamiento, las etiquetas `trl` y `sft` apuntan a un ajuste supervisado clasico (pares instruccion-respuesta) con la libreria TRL de HuggingFace. El nombre del repositorio sugiere que el conjunto de entrenamiento es un subconjunto de 1.000 ejemplos de MedMCQA (preguntas de opcion multiple de examenes de admision medicos, en ingles), seleccionado mediante un criterio de adquisicion denominado "random". No se documentan hiperparametros, regimen de precision, numero de epocas, composicion del dataset, ni si hubo fases posteriores de RLHF o DPO. No se declara ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, etc.).
+Respecto al entrenamiento, las etiquetas `trl` y `sft` apuntan a un ajuste supervisado clasico (pares instruccion-respuesta) con la libreria TRL de Hugging Face. El nombre del repositorio sugiere que el conjunto de entrenamiento es un subconjunto de 1.000 ejemplos de MedMCQA (preguntas de opcion multiple de examenes de admision medicos, en ingles), seleccionado mediante un criterio de adquisicion denominado "random". No se documentan hiperparametros, regimen de precision, numero de epocas, composicion del dataset, ni si hubo fases posteriores de RLHF o DPO. No se declara ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, etc.).
 
 ## Capacidades
 
@@ -72,11 +72,11 @@ Los datos de rendimiento y contexto de las alternativas no forman parte de la in
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ishikaa/acquisition_student_random_medmcqa_qwen7b_1000 | 7,62 B | no disponible | no disponible | HuggingFace, safetensors |
-| Qwen2-7B (modelo base de la misma familia) | 7,62 B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
-| Qwen2-7B-Instruct (alternativa conversacional de la misma familia) | no disponible | no disponible | no disponible | HuggingFace |
-| Mistral-7B (alternativa de tamano similar) | no disponible | no disponible | no disponible | HuggingFace |
-| Llama 3.1 8B (alternativa de tamano similar) | no disponible | no disponible | no disponible | HuggingFace |
+| ishikaa/acquisition_student_random_medmcqa_qwen7b_1000 | 7,62 B | no disponible | no disponible | Hugging Face, safetensors |
+| Qwen2-7B (modelo base de la misma familia) | 7,62 B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
+| Qwen2-7B-Instruct (alternativa conversacional de la misma familia) | no disponible | no disponible | no disponible | Hugging Face |
+| Mistral-7B (alternativa de tamano similar) | no disponible | no disponible | no disponible | Hugging Face |
+| Llama 3.1 8B (alternativa de tamano similar) | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -93,6 +93,6 @@ Los datos de rendimiento y contexto de las alternativas no forman parte de la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_random_medmcqa_qwen7b_1000
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_random_medmcqa_qwen7b_1000
 - Articulo citado en la plantilla de la model card para el calculo de emisiones (Lacoste et al., 2019), no es el paper del modelo: https://arxiv.org/abs/1910.09700
 - La busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo: los resultados correspondian a un medio de prensa sin relacion con el repositorio.

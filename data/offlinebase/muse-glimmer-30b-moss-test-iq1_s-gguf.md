@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OfflineBase/Muse-Glimmer-30B-Moss-Test-IQ1_S-GGUF | 27.854.794.240 | no disponible | IQ1_S (1 bit) | Apache 2.0 + Muse Model License | HuggingFace, 0 descargas |
-| OfflineBase/Muse-Glimmer-30B-2026-Knowledge-GGUF | no disponible | no disponible | incluye IQ1_S y Q4_K_M | Apache 2.0 + Muse Model License | HuggingFace |
-| Muse Glimmer 30B (meta-models/Muse-Glimmer-30B) | no disponible | no disponible | no disponible | Apache License 2.0 | HuggingFace |
+| OfflineBase/Muse-Glimmer-30B-Moss-Test-IQ1_S-GGUF | 27.854.794.240 | no disponible | IQ1_S (1 bit) | Apache 2.0 + Muse Model License | Hugging Face, 0 descargas |
+| OfflineBase/Muse-Glimmer-30B-2026-Knowledge-GGUF | no disponible | no disponible | incluye IQ1_S y Q4_K_M | Apache 2.0 + Muse Model License | Hugging Face |
+| Muse Glimmer 30B (meta-models/Muse-Glimmer-30B) | no disponible | no disponible | no disponible | Apache License 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la informacion proporcionada, salvo la referencia del modelo base: su IQ1_S obtuvo 8,3% frente a 28,8% de su Q4_K_M en la prueba de conocimiento citada en la model card. No se han facilitado alternativas de otros desarrolladores para comparar.
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Moss-Test-IQ1_S-GGUF
+- Modelo en Hugging Face: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Moss-Test-IQ1_S-GGUF
 - Modelo base del ajuste: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge
 - Version GGUF del modelo base: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-GGUF
 - Licencia Muse Model License: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-GGUF/blob/main/MUSE_MODEL_LICENSE.md

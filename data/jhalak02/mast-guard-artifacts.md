@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ú
 
 ## Requisitos de hardware
 
-- Los artefactos son modelos XGBoost serializados, con un tamaño de repositorio de 0,0 GB según HuggingFace, lo que indica que son archivos de pocos kilobytes o megabytes.
+- Los artefactos son modelos XGBoost serializados, con un tamaño de repositorio de 0,0 GB según Hugging Face, lo que indica que son archivos de pocos kilobytes o megabytes.
 - Inferencia ejecutable en CPU sin necesidad de GPU: XGBoost es una implementación de gradient boosting que funciona eficientemente en hardware convencional.
 - Requisitos de memoria RAM mínimos: del orden de decenas de megabytes para cargar los modelos en memoria.
 - Despliegue recomendado: integración en servicios Python con la librería `xgboost` y `pickle` para cargar los artefactos; puede ejecutarse en contenedores Docker ligeros o funciones serverless.
@@ -72,7 +72,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jhalak02/mast-guard-artifacts
+- Repositorio Hugging Face: https://huggingface.co/Jhalak02/mast-guard-artifacts
 - Dataset MAST-Data: https://huggingface.co/datasets/Jhalak02/MAST-Data
-- Perfil del autor en HuggingFace: https://huggingface.co/Jhalak02
+- Perfil del autor en Hugging Face: https://huggingface.co/Jhalak02
 - Perfil del autor en GitHub: https://github.com/JHALAK02

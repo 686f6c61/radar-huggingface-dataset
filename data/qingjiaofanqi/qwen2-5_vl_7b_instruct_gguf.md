@@ -66,7 +66,7 @@ No se dispone de información comparativa en los datos proporcionados. Se recomi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qingjiaofanqi/Qwen2.5_VL_7B_Instruct_GGUF
+- Repositorio Hugging Face: https://huggingface.co/qingjiaofanqi/Qwen2.5_VL_7B_Instruct_GGUF
 - Modelo original Qwen2.5-VL-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Versión GGUF oficial de ggml-org: https://huggingface.co/ggml-org/Qwen2.5-VL-7B-Instruct-GGUF
 - Versión GGUF en ModelScope (con advertencia sobre versiones erróneas): https://www.modelscope.cn/models/IAILabs/Qwen2.5-VL-7B-Instruct-GGUF

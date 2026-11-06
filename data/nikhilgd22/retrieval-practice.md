@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Nikhilgd22/retrieval-practice` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura MobileViT orientada a tareas de recuperación (retrieval). Lo desarrolla el usuario Nikhilgd22 y su objetivo declarado no es ofrecer un modelo entrenado, sino servir como base de código para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El checkpoint incluido (`model.safetensors`) se describe explícitamente como una inicialización válida para pruebas de humo (smoke tests), no como un modelo entrenado ni evaluado.
+`Nikhilgd22/retrieval-practice` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura MobileViT orientada a tareas de recuperación (retrieval). Lo desarrolla el usuario Nikhilgd22 y su objetivo declarado no es ofrecer un modelo entrenado, sino servir como base de código para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El checkpoint incluido (`model.safetensors`) se describe explícitamente como una inicialización válida para pruebas de humo (smoke tests), no como un modelo entrenado ni evaluado.
 
 El modelo tiene 33.088 parámetros totales según el recuento real de safetensors, lo que lo sitúa en un orden de magnitud muy inferior al de cualquier modelo desplegable en producción. La configuración generada indica escala "huge", atención multi-query, fusión Tucker, activación ReLU y normalización BatchNorm, todo ello sobre una arquitectura MobileViT de tipo híbrido convolucional-transformer. No se declara pipeline, idiomas soportados, longitud de contexto ni recetas de cuantización.
 
@@ -93,12 +93,12 @@ La comparación directa no es posible en términos de rendimiento: el repositori
 - Longitud de contexto: no disponible, lo que impide planificar escenarios con secuencias largas.
 - Restricciones de licencia: BSD-3-Clause permite uso comercial y modificación con atribución y sin garantías, pero la propia model card advierte de que hay que revisar por separado los términos de los datos de origen cuando se use con datasets externos.
 - Integración: al ser una implementación personalizada, las APIs genéricas de carga automática requieren un adaptador explícito. No es cargable con `AutoModel` sin trabajo adicional.
-- Sin pipeline declarado en HuggingFace, sin descargas y sin likes en el momento de la consulta: no hay validación por parte de la comunidad.
+- Sin pipeline declarado en Hugging Face, sin descargas y sin likes en el momento de la consulta: no hay validación por parte de la comunidad.
 - Advertencia de producción: no debe desplegarse en ningún sistema real en su estado actual.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nikhilgd22/retrieval-practice
+- Modelo en Hugging Face: https://huggingface.co/Nikhilgd22/retrieval-practice
 - Repositorio de referencia de MobileViT (implementación original de Apple): no disponible en la información proporcionada.
 - Paper de MobileViT: no disponible en la información proporcionada.
 - Conjunto de datos Flickr30k, citado como referencia de evaluación: no disponible en la información proporcionada.

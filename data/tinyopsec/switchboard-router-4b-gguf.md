@@ -89,6 +89,6 @@ El modelo base Qwen3-4B-Instruct-2507 ofrece capacidades conversacionales genera
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tinyopsec/switchboard-router-4b-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/switchboard-router-4b-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo original (safetensors) referenciado en la model card: https://huggingface.co/switchboardllm/switchboard-router-4b

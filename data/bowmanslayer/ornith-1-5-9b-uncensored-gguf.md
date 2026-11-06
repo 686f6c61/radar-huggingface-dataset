@@ -100,7 +100,7 @@ La comparativa con Qwen2.5-7B-Instruct se incluye como referencia orientativa po
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/bowmanslayer/Ornith-1.5-9B-Uncensored-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/bowmanslayer/Ornith-1.5-9B-Uncensored-GGUF
 - Modelo base (bf16): https://huggingface.co/bowmanslayer/Ornith-1.5-9B-Uncensored
 - Version W4A16 para vLLM: https://huggingface.co/bowmanslayer/Ornith-1.5-9B-Uncensored-W4A16
 - Repositorio GGUF oficial de ornith-ai: https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF

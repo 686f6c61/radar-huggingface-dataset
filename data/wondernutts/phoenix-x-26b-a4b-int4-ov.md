@@ -90,7 +90,7 @@ La principal diferencia frente al modelo base es el formato de pesos y la cuanti
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Wondernutts/Phoenix-X-26B-A4B-int4-ov
+- Repositorio Hugging Face del modelo: https://huggingface.co/Wondernutts/Phoenix-X-26B-A4B-int4-ov
 - Modelo base (Vortex5/Phoenix-X-26B-A4B): https://huggingface.co/Vortex5/Phoenix-X-26B-A4B
 - Fork de OpenVINO con optimizaciones para Gemma 4: https://github.com/Wondernuttz/openvino/tree/arc-xe2-gemma4-pa-2026.4
 - Repositorio de catalogo de errores y toolkit para Gemma 4 en Intel Arc: https://github.com/Wondernuttz/OpenVino-For-Gemma-4

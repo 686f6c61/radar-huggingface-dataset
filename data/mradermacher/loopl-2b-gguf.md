@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Loopl-2b-GGUF es la version cuantizada en formato GGUF del modelo cagataydev/loopl-2b, publicada por el cuantizador habitual de HuggingFace mradermacher. Se trata de un modelo pequeno, de aproximadamente 1.900 millones de parametros (1.881.825.088 segun los pesos originales en safetensors), orientado a ejecucion en dispositivo (on-device), uso como agente y tool calling, con soporte multimodal de imagen y texto. Su licencia Apache 2.0 y su tamano lo situan en la categoria de modelos ligeros desplegables en hardware de consumo.
+Loopl-2b-GGUF es la version cuantizada en formato GGUF del modelo cagataydev/loopl-2b, publicada por el cuantizador habitual de Hugging Face mradermacher. Se trata de un modelo pequeno, de aproximadamente 1.900 millones de parametros (1.881.825.088 segun los pesos originales en safetensors), orientado a ejecucion en dispositivo (on-device), uso como agente y tool calling, con soporte multimodal de imagen y texto. Su licencia Apache 2.0 y su tamano lo situan en la categoria de modelos ligeros desplegables en hardware de consumo.
 
 El modelo base declara los idiomas ingles (en) y turco (tr), y fue entrenado con SFT sobre el dataset cagataydev/loopl-train. Las etiquetas del repositorio hacen referencia a qwen3.5 y qwen3_5, lo que sugiere una arquitectura de la familia Qwen, aunque la model card proporcionada no confirma de forma explicita la arquitectura ni los detalles de entrenamiento.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Vision | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/loopl-2b-GGUF | ~1,9 B | no disponible | apache-2.0 | si (mmproj) | GGUF en HuggingFace |
+| mradermacher/loopl-2b-GGUF | ~1,9 B | no disponible | apache-2.0 | si (mmproj) | GGUF en Hugging Face |
 | Qwen2.5-1.5B (referencia) | ~1,5 B | 32.768 tokens (segun su model card publica) | apache-2.0 en varias versiones | no en la variante base | safetensors y GGUF |
 | Gemma-2-2B (referencia) | ~2,6 B | 8.192 tokens (segun su model card publica) | Gemma Terms | no | safetensors y GGUF |
 | SmolLM2-1.7B (referencia) | ~1,7 B | 8.192 tokens (segun su model card publica) | apache-2.0 | no | safetensors y GGUF |

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zils-mini-skills-v1 es un modelo derivado de Qwen/Qwen3.5-4B publicado por el usuario dasLOL en HuggingFace. Se trata de un "soup-body" (cuerpo de mezcla de pesos) del ecosistema Zils, un proyecto vinculado a la red Bittensor que entrena y evalua modelos especializados en tareas de decision y clasificacion. El modelo no es un asistente conversacional general, sino un componente de pesos de lenguaje y vision que se integra en un "chassis" (esqueleto de ejecucion) que aporta la capa de respuesta, el prompt y el runtime.
+zils-mini-skills-v1 es un modelo derivado de Qwen/Qwen3.5-4B publicado por el usuario dasLOL en Hugging Face. Se trata de un "soup-body" (cuerpo de mezcla de pesos) del ecosistema Zils, un proyecto vinculado a la red Bittensor que entrena y evalua modelos especializados en tareas de decision y clasificacion. El modelo no es un asistente conversacional general, sino un componente de pesos de lenguaje y vision que se integra en un "chassis" (esqueleto de ejecucion) que aporta la capa de respuesta, el prompt y el runtime.
 
 El modelo parte de una media uniforme de dos "house bodies" del pool z3: torchcast-ai/torchcast-decision-4b y vllm-sr/d3-mini, ambos bajo licencia Apache-2.0. Sobre esa mezcla se entreno un LoRA de rango 32 sobre los pesos de lenguaje, que despues se promedio de vuelta con el soup base en proporcion 4:1 y se almaceno en bf16. El entrenamiento combina destilacion hacia las probabilidades de opcion de un profesor de mayor tamano (vllm-sr/d3-ultra) con filas de "gold suavizado" sobre conjuntos de datos publicos de clasificacion y razonamiento.
 
@@ -29,7 +29,7 @@ El entrenamiento combina dos fuentes: destilacion hacia las probabilidades de op
 
 ## Capacidades
 
-- Extraccion de caracteristicas (`feature-extraction`): pipeline declarado en HuggingFace, orientado a representaciones internas mas que a generacion de texto.
+- Extraccion de caracteristicas (`feature-extraction`): pipeline declarado en Hugging Face, orientado a representaciones internas mas que a generacion de texto.
 - Clasificacion y decision sobre opciones: el entrenamiento por destilacion hacia probabilidades de opcion sugiere uso en tareas de eleccion multiple y decision entre alternativas.
 - Razonamiento sobre items de benchmark: entrenado con ANLI, BoolQ, CommonsenseQA, Social IQa, PIQA y BIG-bench.
 - Clasificacion de texto: cubierto por BANKING77, GLUE, TweetEval, Sarcasm Headlines y 20 Newsgroups.
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| dasLOL/zils-mini-skills-v1 | 4,54 B | no disponible | Apache-2.0 | HuggingFace, 0 descargas | Cuerpo de soup para el pool z3 de Bittensor; requiere chassis externo |
-| Qwen/Qwen3.5-4B (modelo base) | aproximadamente 4 B | no disponible en la informacion | no disponible en la informacion | HuggingFace | Modelo generalista del que deriva; soporte nativo en transformers |
-| torchcast-ai/torchcast-decision-4b | aproximadamente 4 B | no disponible | Apache-2.0 | HuggingFace | Uno de los dos house bodies promediados en el soup |
-| vllm-sr/d3-mini | aproximadamente 4 B | no disponible | Apache-2.0 | HuggingFace | Segundo house body promediado en el soup |
+| dasLOL/zils-mini-skills-v1 | 4,54 B | no disponible | Apache-2.0 | Hugging Face, 0 descargas | Cuerpo de soup para el pool z3 de Bittensor; requiere chassis externo |
+| Qwen/Qwen3.5-4B (modelo base) | aproximadamente 4 B | no disponible en la informacion | no disponible en la informacion | Hugging Face | Modelo generalista del que deriva; soporte nativo en transformers |
+| torchcast-ai/torchcast-decision-4b | aproximadamente 4 B | no disponible | Apache-2.0 | Hugging Face | Uno de los dos house bodies promediados en el soup |
+| vllm-sr/d3-mini | aproximadamente 4 B | no disponible | Apache-2.0 | Hugging Face | Segundo house body promediado en el soup |
 
 ## Limitaciones y advertencias
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dasLOL/zils-mini-skills-v1
+- Hugging Face: https://huggingface.co/dasLOL/zils-mini-skills-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - House body 1: https://huggingface.co/torchcast-ai/torchcast-decision-4b
 - House body 2: https://huggingface.co/vllm-sr/d3-mini

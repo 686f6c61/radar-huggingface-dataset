@@ -79,7 +79,7 @@ La comparativa es orientativa, ya que no se dispone de benchmarks del modelo en 
 
 ## Enlaces
 
-- [Modelo en HuggingFace (FP32 ONNX)](https://huggingface.co/ketiswp/google-coral-EdgeTPU-DeepLab-Slim-0.75-Cityscapes-fp32-onnx)
+- [Modelo en Hugging Face (FP32 ONNX)](https://huggingface.co/ketiswp/google-coral-EdgeTPU-DeepLab-Slim-0.75-Cityscapes-fp32-onnx)
 - [Version UINT8 del mismo modelo](https://huggingface.co/ketiswp/google-coral-EdgeTPU-DeepLab-Slim-0.75-Cityscapes-uint8-onnx)
 - [Repositorio original de TensorFlow DeepLab](https://github.com/tensorflow/models/tree/archive/research/deeplab)
 - [Repositorio coral-deeplab en GitHub](https://github.com/xadrianzetx/coral-deeplab)

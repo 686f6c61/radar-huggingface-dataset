@@ -86,8 +86,8 @@ Los safetensors publicados reproducen estos números en CPU en fp32 (tipo macro 
 
 | Modelo | Parametros | Contexto | F1 macro tipo | F1 micro span | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| UltraBERT-380M (este modelo) | 377,5M | no disponible | .746 | .577 | Apache 2.0 | HuggingFace |
-| ModernBERT-large (receta previa) | 395M | no disponible | .707 | .537 | no disponible en la informacion | HuggingFace |
+| UltraBERT-380M (este modelo) | 377,5M | no disponible | .746 | .577 | Apache 2.0 | Hugging Face |
+| ModernBERT-large (receta previa) | 395M | no disponible | .707 | .537 | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de otros extractores de eventos de rol comparables en la información proporcionada.
 
@@ -106,7 +106,7 @@ No se dispone de datos de otros extractores de eventos de rol comparables en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rpDungeon/experimental-rp-event-extractor-ultrabert-380m
+- Modelo en Hugging Face: https://huggingface.co/rpDungeon/experimental-rp-event-extractor-ultrabert-380m
 - Modelo base UltraBERT-380M: https://huggingface.co/dmis-lab/UltraBERT-380M
 - Modelo generador de las conversaciones sintéticas (psyonic-cetacean-20B): https://huggingface.co/jebcarter/psyonic-cetacean-20B
 - Modelo anotador (GLM-4.7): https://huggingface.co/zai-org/GLM-4.7

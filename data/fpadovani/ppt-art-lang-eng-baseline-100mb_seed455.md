@@ -67,6 +67,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- [HuggingFace - fpadovani/ppt-art-lang-eng-baseline-100mb_seed455](https://huggingface.co/fpadovani/ppt-art-lang-eng-baseline-100mb_seed455)
+- [Hugging Face - fpadovani/ppt-art-lang-eng-baseline-100mb_seed455](https://huggingface.co/fpadovani/ppt-art-lang-eng-baseline-100mb_seed455)
 - [Modelo base - goldfish-models/eng_latn_100mb](https://huggingface.co/goldfish-models/eng_latn_100mb)
 - [TRL (libreria de entrenamiento)](https://github.com/huggingface/trl)

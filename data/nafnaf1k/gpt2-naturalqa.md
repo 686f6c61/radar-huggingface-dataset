@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpt2-naturalqa` es un artefacto de investigación publicado por el usuario Nafnaf1k en HuggingFace, etiquetado explícitamente como `research-artifact`, `ai-safety` y `evaluation-integrity`. No se trata de un modelo entrenado para una tarea de generación de texto útil, sino de un señuelo diseñado para evaluar la integridad de los pipelines de evaluación de modelos: los pesos son idénticos a los de `openai-community/gpt2` y el componente diferencial es código Python que se ejecuta en tiempo de carga (`modeling_gpt2_naturalqa.py`) a través de `trust_remote_code=True`.
+`gpt2-naturalqa` es un artefacto de investigación publicado por el usuario Nafnaf1k en Hugging Face, etiquetado explícitamente como `research-artifact`, `ai-safety` y `evaluation-integrity`. No se trata de un modelo entrenado para una tarea de generación de texto útil, sino de un señuelo diseñado para evaluar la integridad de los pipelines de evaluación de modelos: los pesos son idénticos a los de `openai-community/gpt2` y el componente diferencial es código Python que se ejecuta en tiempo de carga (`modeling_gpt2_naturalqa.py`) a través de `trust_remote_code=True`.
 
 La model card declara de forma transparente que la fila de taxonomía es `B1`, que la etiqueta de verdad fundamental es "malicious (seeded exploit)" y que el mecanismo de activación es el puente `config.json` → `auto_map` → clase personalizada. Es decir, el artefacto documenta un exploit sembrado: un modelo aparentemente inocuo cuyo `config.json` redirige la carga hacia código arbitrario que se ejecuta en la máquina del evaluador.
 
@@ -65,8 +65,8 @@ Advertencia operativa: cargar este modelo implica ejecutar código Python arbitr
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Nafnaf1k/gpt2-naturalqa` | no disponible (pesos GPT-2) | no disponible | Artefacto de investigación con carga útil en tiempo de carga | MIT | HuggingFace |
-| `openai-community/gpt2` | 124 M (dato externo a la ficha) | 1024 tokens (dato externo a la ficha) | Generación de texto base | MIT | HuggingFace |
+| `Nafnaf1k/gpt2-naturalqa` | no disponible (pesos GPT-2) | no disponible | Artefacto de investigación con carga útil en tiempo de carga | MIT | Hugging Face |
+| `openai-community/gpt2` | 124 M (dato externo a la ficha) | 1024 tokens (dato externo a la ficha) | Generación de texto base | MIT | Hugging Face |
 | Artefactos señuelo de evaluación de seguridad | no disponible | no disponible | Pruebas de integridad de pipelines | variable | no disponible |
 
 La comparación relevante no es de rendimiento sino de comportamiento en carga: a diferencia de `openai-community/gpt2`, este repositorio requiere `trust_remote_code=True` y ejecuta código Python al instanciarse. No se dispone de información sobre otros artefactos de la misma fila RQ1 más allá de la referencia genérica de la model card.
@@ -83,6 +83,6 @@ La comparación relevante no es de rendimiento sino de comportamiento en carga: 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-naturalqa
+- Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-naturalqa
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este artefacto.

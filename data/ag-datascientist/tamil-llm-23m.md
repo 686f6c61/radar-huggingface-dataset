@@ -61,15 +61,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 | Perdida de SFT, epoca 3 | 6,1306 |
 | Perdida de SFT, epoca 4 | 4,4205 |
 | Perdida de SFT, epoca 5 | 2,8685 |
-| Descargas en HuggingFace | 0 |
-| Likes en HuggingFace | 0 |
+| Descargas en Hugging Face | 0 |
+| Likes en Hugging Face | 0 |
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia (calculada a partir de los 23.033.856 parametros, sin contar overhead del runtime): ~92 MB en FP32, ~46 MB en FP16/BF16, ~23 MB en INT8. La cache KV para una secuencia completa de 256 tokens es de aproximadamente 2,4 MB (6 capas x 6 cabezas x 64 de dimension de cabeza x 256 tokens x 2 bytes).
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es mas que suficiente; el modelo se entreno en una GPU de Google Colab, por lo que una T4, una RTX 3060 o incluso una GPU integrada reciente bastan para inferencia.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos diez anos, y tambien en CPU sin dificultad.
-- Opciones de despliegue: no hay soporte directo en vLLM, llama.cpp, Ollama, TGI ni en `transformers` de HuggingFace, ya que el repositorio solo publica checkpoints `.pt` y un `config.json` propio. El despliegue requiere cargar el checkpoint con PyTorch y reconstruir la arquitectura a partir de la configuracion; para usarlo con herramientas estandar habria que exportar a safetensors/GGUF y registrar la arquitectura.
+- Opciones de despliegue: no hay soporte directo en vLLM, llama.cpp, Ollama, TGI ni en `transformers` de Hugging Face, ya que el repositorio solo publica checkpoints `.pt` y un `config.json` propio. El despliegue requiere cargar el checkpoint con PyTorch y reconstruir la arquitectura a partir de la configuracion; para usarlo con herramientas estandar habria que exportar a safetensors/GGUF y registrar la arquitectura.
 - Latencia y throughput estimados: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No se dispone de modelos comparables en la informacion proporcionada. Los result
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Tamil LLM 23M | 23.033.856 | 256 tokens | Apache 2.0 | HuggingFace (`AG-dataScientist/tamil-llm-23m`) |
+| Tamil LLM 23M | 23.033.856 | 256 tokens | Apache 2.0 | Hugging Face (`AG-dataScientist/tamil-llm-23m`) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se dispone de modelos comparables en la informacion proporcionada. Los result
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AG-dataScientist/tamil-llm-23m
+- Hugging Face: https://huggingface.co/AG-dataScientist/tamil-llm-23m
 - Paper: no disponible
 - Blog o articulo tecnico del autor: no disponible
 - Repositorio de codigo: no disponible

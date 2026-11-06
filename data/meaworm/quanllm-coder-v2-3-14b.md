@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QuanLLM-Coder-V2.3-14B es un modelo de lenguaje publicado en HuggingFace por el usuario meaworm bajo licencia MIT. Por el identificador y el tamaño (14B), se trata de un modelo orientado a la generación de código, presumiblemente derivado de una familia base de 14.000 millones de parámetros mediante ajuste fino (fine-tuning) o alguna técnica de destilación o cuantización, si bien la model card no documenta ninguno de estos extremos.
+QuanLLM-Coder-V2.3-14B es un modelo de lenguaje publicado en Hugging Face por el usuario meaworm bajo licencia MIT. Por el identificador y el tamaño (14B), se trata de un modelo orientado a la generación de código, presumiblemente derivado de una familia base de 14.000 millones de parámetros mediante ajuste fino (fine-tuning) o alguna técnica de destilación o cuantización, si bien la model card no documenta ninguno de estos extremos.
 
 La información pública disponible es extremadamente limitada: la model card únicamente declara la licencia MIT y la región de publicación (US), sin especificar arquitectura, contexto, datos de entrenamiento, idiomas ni resultados de evaluación. No se han publicado benchmarks, demos ni documentación técnica asociada.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| QuanLLM-Coder-V2.3-14B | 14B (no confirmado) | no disponible | MIT | HuggingFace |
-| Qwen2.5-Coder-14B | 14B | 32K (ampliable) | Apache 2.0 | HuggingFace, ampliamente documentado |
-| DeepSeek-Coder-V2-Lite | 16B (MoE, 2.4B activos) | 128K | DeepSeek License | HuggingFace |
-| CodeLlama-13B | 13B | 16K | Llama 2 License | HuggingFace |
+| QuanLLM-Coder-V2.3-14B | 14B (no confirmado) | no disponible | MIT | Hugging Face |
+| Qwen2.5-Coder-14B | 14B | 32K (ampliable) | Apache 2.0 | Hugging Face, ampliamente documentado |
+| DeepSeek-Coder-V2-Lite | 16B (MoE, 2.4B activos) | 128K | DeepSeek License | Hugging Face |
+| CodeLlama-13B | 13B | 16K | Llama 2 License | Hugging Face |
 
 La comparativa se ofrece solo como referencia de categoría; no existen datos de rendimiento de QuanLLM-Coder-V2.3-14B que permitan una comparación cuantitativa con estas alternativas.
 
@@ -85,5 +85,5 @@ La comparativa se ofrece solo como referencia de categoría; no existen datos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/meaworm/QuanLLM-Coder-V2.3-14B
+- Hugging Face: https://huggingface.co/meaworm/QuanLLM-Coder-V2.3-14B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

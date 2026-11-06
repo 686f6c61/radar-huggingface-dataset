@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jongbin-kr/exaone-verireason-sft_accuracy_hard_1to2_ratio0.12_seed1234` es un adaptador LoRA entrenado mediante supervisión (SFT) sobre el modelo base `LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct`, desarrollado por el usuario de HuggingFace Jongbin-kr. No se trata de un modelo completo, sino de pesos de adaptador PEFT: el repositorio no contiene pesos fusionados del modelo base, por lo que su uso exige descargar previamente EXAONE-3.5-7.8B-Instruct y cargar el adaptador sobre él.
+El modelo `Jongbin-kr/exaone-verireason-sft_accuracy_hard_1to2_ratio0.12_seed1234` es un adaptador LoRA entrenado mediante supervisión (SFT) sobre el modelo base `LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct`, desarrollado por el usuario de Hugging Face Jongbin-kr. No se trata de un modelo completo, sino de pesos de adaptador PEFT: el repositorio no contiene pesos fusionados del modelo base, por lo que su uso exige descargar previamente EXAONE-3.5-7.8B-Instruct y cargar el adaptador sobre él.
 
 El adaptador se ha entrenado sobre un subconjunto "answer-only" de ConvFinQA, un conjunto de preguntas y respuestas numéricas sobre informes financieros. La etiqueta `accuracy-band-selection` y el identificador de la condición de selección (`accuracy_medium_low_1to2_selseed1234_ratio0.12`) indican que el trabajo forma parte de una línea de investigación sobre selección de datos de entrenamiento: se elige una banda concreta de ejemplos según la precisión del modelo en ellos (aquí, dificultad media-baja, con una proporción de 0,12) para estudiar cómo afecta esa selección al ajuste final.
 
@@ -81,10 +81,10 @@ La comparativa se plantea contra el propio modelo base sin adaptar y contra dos 
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| exaone-verireason-sft_accuracy_hard_1to2_ratio0.12_seed1234 | Adaptador sobre 7,8B | No disponible (heredado del base) | Adaptador LoRA para QA financiero answer-only | No disponible | HuggingFace, 14 descargas |
-| EXAONE-3.5-7.8B-Instruct | 7,8B | 32.768 tokens (segun documentacion publica) | Modelo instructivo completo | EXAONE AI Model License (consultar terminos) | HuggingFace, ampliamente distribuido |
-| Qwen2.5-7B-Instruct | 7,6B | 128.000 tokens (segun documentacion publica) | Modelo instructivo completo | Apache 2.0 (segun documentacion publica) | HuggingFace |
-| Llama-3.1-8B-Instruct | 8B | 128.000 tokens (segun documentacion publica) | Modelo instructivo completo | Llama 3.1 Community License (segun documentacion publica) | HuggingFace |
+| exaone-verireason-sft_accuracy_hard_1to2_ratio0.12_seed1234 | Adaptador sobre 7,8B | No disponible (heredado del base) | Adaptador LoRA para QA financiero answer-only | No disponible | Hugging Face, 14 descargas |
+| EXAONE-3.5-7.8B-Instruct | 7,8B | 32.768 tokens (segun documentacion publica) | Modelo instructivo completo | EXAONE AI Model License (consultar terminos) | Hugging Face, ampliamente distribuido |
+| Qwen2.5-7B-Instruct | 7,6B | 128.000 tokens (segun documentacion publica) | Modelo instructivo completo | Apache 2.0 (segun documentacion publica) | Hugging Face |
+| Llama-3.1-8B-Instruct | 8B | 128.000 tokens (segun documentacion publica) | Modelo instructivo completo | Llama 3.1 Community License (segun documentacion publica) | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -99,7 +99,7 @@ La comparativa se plantea contra el propio modelo base sin adaptar y contra dos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jongbin-kr/exaone-verireason-sft_accuracy_hard_1to2_ratio0.12_seed1234
+- Hugging Face: https://huggingface.co/Jongbin-kr/exaone-verireason-sft_accuracy_hard_1to2_ratio0.12_seed1234
 - Modelo base: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Repositorio de PEFT: https://github.com/huggingface/peft
 - ConvFinQA (conjunto de datos de referencia): https://github.com/czyssrs/ConvFinQA

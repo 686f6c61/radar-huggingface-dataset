@@ -4,7 +4,7 @@
 
 El modelo **HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF** es una cuantización GGUF del modelo multimodal Qwen/Qwen3.8-27B, desarrollado por el usuario HauhauCS. Se trata de una variante modificada que elimina restricciones de contenido (etiqueta "uncensored") y presenta un estilo de respuesta agresivo, según el nombre del repositorio. Incluye además la técnica de predicción multi-token (MTP) para acelerar la generación.
 
-Con 27 320 millones de parámetros, este modelo es capaz de procesar tanto texto como imágenes (pipeline image-text-to-text), lo que lo hace adecuado para tareas de visión y lenguaje. Está disponible en formato GGUF, lo que permite su ejecución en hardware de consumo mediante herramientas como llama.cpp u Ollama. La licencia es Apache-2.0 y el acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace.
+Con 27 320 millones de parámetros, este modelo es capaz de procesar tanto texto como imágenes (pipeline image-text-to-text), lo que lo hace adecuado para tareas de visión y lenguaje. Está disponible en formato GGUF, lo que permite su ejecución en hardware de consumo mediante herramientas como llama.cpp u Ollama. La licencia es Apache-2.0 y el acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face.
 
 Su relevancia radica en ofrecer una alternativa local y sin censura para aplicaciones conversacionales y de análisis visual, aunque su uso en producción requiere precaución debido a la falta de filtros de contenido y a la ausencia de documentación técnica detallada.
 
@@ -34,7 +34,7 @@ El nombre "Uncensored" y "Aggressive" sugiere que el modelo ha sido adaptado par
 - Soporte de conversación multi-turno (etiqueta "conversational").
 - Predicción multi-token (MTP) para acelerar la inferencia.
 - Sin restricciones de contenido: el modelo no rechaza solicitudes sobre temas sensibles o prohibidos (según la etiqueta "uncensored").
-- Compatible con endpoints de HuggingFace (etiqueta "endpoints_compatible").
+- Compatible con endpoints de Hugging Face (etiqueta "endpoints_compatible").
 
 No se ha confirmado soporte de tool calling, function calling o razonamiento multi-paso explícito.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - VRAM estimada: depende de la cuantización GGUF elegida. Para una cuantización Q4_K_M (típica), se estima un consumo de unos 16-18 GB de VRAM; para Q8_0, alrededor de 27-29 GB. Valores orientativos basados en el tamaño de 27,3B parámetros.
 - GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB) o superior para Q4; A100 40 GB o H100 para cuantizaciones más altas o mayor contexto.
 - En GPU de consumo: sí, cabe en una RTX 4090 con cuantización Q4 y contexto moderado.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM (con soporte GGUF), text-generation-inference (TGI) o servidores compatibles con endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, vLLM (con soporte GGUF), text-generation-inference (TGI) o servidores compatibles con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. La técnica MTP puede reducir la latencia respecto a la decodificación autoregresiva estándar, pero no se proporcionan cifras.
 
 ## Comparativa con modelos similares
@@ -68,13 +68,13 @@ No se dispone de información suficiente para realizar una comparativa directa. 
 - Ausencia de filtros de contenido: al ser "uncensored", el modelo puede generar respuestas inapropiadas, ofensivas o peligrosas. No es adecuado para aplicaciones orientadas al público general sin un sistema de moderación adicional.
 - Riesgo de alucinaciones: como cualquier modelo generativo, puede producir información falsa o inventada, especialmente en contextos largos o ambiguos.
 - Sesgos desconocidos: no se documentan los datos de entrenamiento ni las técnicas de alineación, por lo que los sesgos del modelo base pueden persistir o haberse amplificado.
-- Acceso restringido: el repositorio es gated, lo que requiere aceptar condiciones en HuggingFace. Esto puede limitar la reproducibilidad.
+- Acceso restringido: el repositorio es gated, lo que requiere aceptar condiciones en Hugging Face. Esto puede limitar la reproducibilidad.
 - Falta de documentación técnica: no se especifican detalles de arquitectura, contexto máximo, cuantizaciones disponibles ni resultados de evaluación, lo que dificulta su uso en producción.
 - Licencia Apache-2.0: permite uso comercial, pero la ausencia de garantías y la naturaleza "uncensored" pueden generar responsabilidades legales si se utiliza en servicios públicos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen3.8-27B
 
 No se han encontrado otros enlaces (papers, blogs o demos) en la información proporcionada.

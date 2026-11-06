@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`crazyape777/moe-ft-017a` es un modelo de lenguaje publicado en HuggingFace por el usuario crazyape777. La ficha del repositorio es extremadamente escueta: no declara licencia, idiomas, pipeline ni model card, y la unica informacion tecnica fiable procede de las etiquetas del repositorio (`safetensors`, `qwen3_5_moe_text`, `region:us`) y del recuento real de parametros almacenados en los ficheros safetensors, que asciende a 34.660.610.688 parametros (unos 34,66 mil millones).
+`crazyape777/moe-ft-017a` es un modelo de lenguaje publicado en Hugging Face por el usuario crazyape777. La ficha del repositorio es extremadamente escueta: no declara licencia, idiomas, pipeline ni model card, y la unica informacion tecnica fiable procede de las etiquetas del repositorio (`safetensors`, `qwen3_5_moe_text`, `region:us`) y del recuento real de parametros almacenados en los ficheros safetensors, que asciende a 34.660.610.688 parametros (unos 34,66 mil millones).
 
 El sufijo "moe" del identificador y la etiqueta de arquitectura indican que se trata de un modelo de mezcla de expertos (MoE) de tipo texto, presumiblemente un ajuste fino sobre una familia base tipo Qwen. El repo ocupa 69,3 GB, lo que equivale a aproximadamente 2 bytes por parametro y sugiere que los pesos se almacenan en BF16 o FP16 sin cuantizar. No se ha publicado informacion sobre el numero de parametros activos por token, la longitud de contexto soportada, la composicion del dataset de entrenamiento ni el proceso de alineacion.
 
@@ -74,7 +74,7 @@ Los datos de las alternativas proceden de sus fichas publicas y de conocimiento 
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Estado de publicacion |
 |---|---|---|---|---|---|
-| crazyape777/moe-ft-017a | 34,66B | no disponible | no disponible | no disponible | safetensors en HuggingFace, 20 descargas, sin model card |
+| crazyape777/moe-ft-017a | 34,66B | no disponible | no disponible | no disponible | safetensors en Hugging Face, 20 descargas, sin model card |
 | Qwen3-30B-A3B | 30,5B | 3,3B | 128K | Apache 2.0 | Modelo oficial con evaluaciones publicadas |
 | Mixtral 8x7B | 46,7B | 12,9B | 32K | Apache 2.0 | Modelo oficial con evaluaciones publicadas |
 
@@ -94,7 +94,7 @@ No existe ningun benchmark publicado de `moe-ft-017a` que permita comparar rendi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/crazyape777/moe-ft-017a
+- Modelo en Hugging Face: https://huggingface.co/crazyape777/moe-ft-017a
 - Paper asociado: no disponible
 - Repositorio de codigo: no disponible
 - Demo o espacio interactivo: no disponible

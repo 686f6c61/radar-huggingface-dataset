@@ -18,14 +18,14 @@ El repositorio ocupa 2,0 GB, usa la librería diffusers, tiene el pipeline decla
 | Longitud de contexto | No aplica (modelo de imagen image-to-image) |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible (no se documenta el idioma de los prompts de texto) |
-| Licencia | krea-2-community-license (etiquetada como "other" en HuggingFace) |
+| Licencia | krea-2-community-license (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | No especificado; repositorio para la libreria diffusers con carga mediante pipeline personalizado (no se detalla safetensors/GGUF) |
 
 Datos adicionales del repositorio: ID yijunwang2/krea2-anygles, autor yijunwang2, modelo base krea/Krea-2-Turbo, pipeline image-to-image, 665 descargas, 12 me gusta, creado el 22 de septiembre de 2026 y actualizado el 23 de septiembre de 2026.
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador de bajo rango (LoRA) que se acopla al modelo de difusion Krea-2-Turbo. La particularidad tecnica no esta en el transformador subyacente, cuyos detalles no se documentan en la informacion disponible, sino en el condicionamiento: el adaptador espera dos entradas de control combinadas, una normal 3D humana alineada con el sujeto de la imagen de origen y una instruccion de camara breve que describe el movimiento deseado. El modelo card advierte de forma explicita que el fragmento automatico de Diffusers generado por HuggingFace y los cargadores LoRA convencionales no proporcionan esa entrada de control espacial, por lo que es obligatorio usar el example.py y el pipeline personalizado incluidos, o bien los nodos de ComfyUI enlazados. Para extraer la normal humana, las herramientas de referencia descargan el checkpoint facebook/sam-3d-body-dinov3, sujeto a su propia licencia SAM.
+El artefacto es un adaptador de bajo rango (LoRA) que se acopla al modelo de difusion Krea-2-Turbo. La particularidad tecnica no esta en el transformador subyacente, cuyos detalles no se documentan en la informacion disponible, sino en el condicionamiento: el adaptador espera dos entradas de control combinadas, una normal 3D humana alineada con el sujeto de la imagen de origen y una instruccion de camara breve que describe el movimiento deseado. El modelo card advierte de forma explicita que el fragmento automatico de Diffusers generado por Hugging Face y los cargadores LoRA convencionales no proporcionan esa entrada de control espacial, por lo que es obligatorio usar el example.py y el pipeline personalizado incluidos, o bien los nodos de ComfyUI enlazados. Para extraer la normal humana, las herramientas de referencia descargan el checkpoint facebook/sam-3d-body-dinov3, sujeto a su propia licencia SAM.
 
 En cuanto a los datos de entrenamiento, no se proporciona informacion sobre el volumen de imagenes, la composicion del dataset ni si hubo etapas de ajuste por preferencias (RLHF o DPO), algo que en cualquier caso no aplica del modo habitual a un adaptador de difusion de este tipo. El autor si describe el protocolo de comparacion empleado para las demostraciones: cada fotograma se genera de forma independiente a partir de la imagen de origen, sin realimentar fotogramas generados previamente, lo que evita la deriva recursiva propia de los flujos de edicion encadenados. Las comparativas frente a la linea base Qwen se ejecutaron con Qwen/Qwen-Image-Edit-2511, el LoRA fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA y Qwen-Image-Edit-2511-Lightning-4steps-V1.0, con un DiT INT8 ConvRot, un Qwen2.5-VL 7B en FP8, cuatro pasos Euler/simple, CFG 1, shift 3,1 y fuerza de LoRA de angulo 1,0. Los rangos de control de referencia que exponen las herramientas son de -60 a +60 grados de elevacion y de 0,6x a 1,8x de distancia de camara como margenes de interfaz, mientras que los barridos publicados cubren -45 a +45 grados y de 1,35x (mas lejos) a 0,78x (mas cerca).
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks cuantitativos en la informacion dis
 - GPU recomendadas: no disponible. No se especifican modelos de GPU concretos en la model card.
 - Encaje en GPU de consumo: no disponible. No se puede confirmar ni descartar sin los requisitos del modelo base, que no se detallan.
 - Almacenamiento adicional obligatorio: el checkpoint facebook/sam-3d-body-dinov3 para extraer la malla y la normal humana, que debe descargarse aceptando previamente su licencia SAM.
-- Opciones de despliegue: pipeline personalizado de diffusers incluido en el repositorio (example.py), ya que el snippet automatico de Diffusers y los cargadores LoRA estandar no aportan la entrada de control espacial; nodos personalizados y flujo de trabajo de ComfyUI desde el repositorio del autor; Space interactivo alojado en HuggingFace.
+- Opciones de despliegue: pipeline personalizado de diffusers incluido en el repositorio (example.py), ya que el snippet automatico de Diffusers y los cargadores LoRA estandar no aportan la entrada de control espacial; nodos personalizados y flujo de trabajo de ComfyUI desde el repositorio del autor; Space interactivo alojado en Hugging Face.
 - Compatibilidad declarada con la coleccion de adaptadores funcionales de Krea 2 del mismo autor.
 - Latencia y throughput estimados: no disponible. No se publican tiempos por imagen ni pasos de muestreo empleados por Anygles en las demostraciones.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks cuantitativos en la informacion dis
 
 | Modelo | Tipo | Control de camara | Contexto o entrada | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|---|
-| yijunwang2/krea2-anygles | LoRA de control sobre Krea-2-Turbo | Azimut 360 grados, elevacion y distancia, con normal 3D humana | Una imagen humana de origen mas instruccion de camara | krea-2-community-license | HuggingFace, ComfyUI, Space | No se publican metricas; comparativas visuales cualitativas |
+| yijunwang2/krea2-anygles | LoRA de control sobre Krea-2-Turbo | Azimut 360 grados, elevacion y distancia, con normal 3D humana | Una imagen humana de origen mas instruccion de camara | krea-2-community-license | Hugging Face, ComfyUI, Space | No se publican metricas; comparativas visuales cualitativas |
 | Qwen/Qwen-Image-Edit-2511 + fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA (linea base usada por el autor) | Modelo de edicion de imagen mas LoRA de angulos | Descriptores de camara en texto, sin normal objetivo | Imagen de origen mas instruccion de camara textual | No disponible en la informacion proporcionada | Repositorios publicos de Qwen y fal | No se publican metricas comparativas en esta ficha; el autor lo usa como referencia visual |
 | Otros adaptadores funcionales de Krea 2 | Varios | No disponible | No disponible | No disponible | Coleccion publica del autor | No disponible |
 
@@ -93,7 +93,7 @@ No se dispone de datos suficientes para comparar parametros, contexto, rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yijunwang2/krea2-anygles
+- Modelo en Hugging Face: https://huggingface.co/yijunwang2/krea2-anygles
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Nodos y flujo de trabajo de ComfyUI: https://github.com/alexw5702-afk/krea2-anygles
 - Space interactivo: https://huggingface.co/spaces/yijunwang2/krea2-anygles

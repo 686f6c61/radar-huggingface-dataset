@@ -92,7 +92,7 @@ Frente a Qwen3-Coder-30B-A3B, Flint ofrece un mayor número de parámetros total
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/Abiray/flint-40B-A2.5B-Q4_K_M-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/Abiray/flint-40B-A2.5B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/RecursiveSI/flint
 - Organización del desarrollador: https://huggingface.co/RecursiveSI
 - llama.cpp: https://github.com/ggml-org/llama.cpp

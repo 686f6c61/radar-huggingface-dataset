@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mae for Matching es un prototipo de investigacion publicado en HuggingFace por el usuario bartlomiejnowak. Se presenta como una implementacion propia orientada a tareas de "matching" (emparejamiento), con una configuracion de arquitectura etiquetada como "giant" en la model card. El repositorio incluye un script de ajuste fino (`finetune.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicializacion en formato safetensors.
+Mae for Matching es un prototipo de investigacion publicado en Hugging Face por el usuario bartlomiejnowak. Se presenta como una implementacion propia orientada a tareas de "matching" (emparejamiento), con una configuracion de arquitectura etiquetada como "giant" en la model card. El repositorio incluye un script de ajuste fino (`finetune.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicializacion en formato safetensors.
 
 El dato mas relevante es su tamano real: el checkpoint contiene 24.832 parametros totales, es decir, unas 25.000 parametros, no 24.800 millones. Se trata por tanto de un modelo de escala minuscula, muy lejos de lo que sugiere la etiqueta "giant" de la documentacion. El propio autor aclara que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint entrenado ni evaluado.
 
@@ -77,11 +77,11 @@ No disponible. No se conocen modelos comparables dentro de la informacion propor
 - Sesgos conocidos: no disponibles; no se ha realizado ninguna evaluacion al respecto.
 - Licencia BSD-3-Clause: permite uso comercial y modificacion con atribucion, pero el autor advierte de que deben revisarse por separado los terminos de los datos de origen si se usa el repositorio con conjuntos de datos externos.
 - La carga mediante APIs automaticas genericas requiere un adaptador explicito, lo que anade trabajo de integracion.
-- Al no existir un pipeline declarado, no puede invocarse desde los flujos estandar de HuggingFace sin desarrollo adicional.
+- Al no existir un pipeline declarado, no puede invocarse desde los flujos estandar de Hugging Face sin desarrollo adicional.
 - Los resultados de cualquier checkpoint futuro entrenado por terceros deben documentarse por separado de los valores por defecto aqui incluidos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bartlomiejnowak/matching
+- Modelo en Hugging Face: https://huggingface.co/bartlomiejnowak/matching
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados obtenidos corresponden a contenidos no relacionados (foros de electronica de consumo, discusiones en Zhihu y un articulo de PNAS sobre equipos asistidos por IA). No se dispone de paper, blog, repositorio de codigo adicional ni demo asociados a este modelo en la informacion proporcionada.

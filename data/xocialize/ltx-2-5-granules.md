@@ -89,7 +89,7 @@ La ventaja de `granules` sobre las versiones residentes es la reducción de la h
 
 ## Enlaces
 
-- [Repositorio HuggingFace: xocialize/ltx-2.5-granules](https://huggingface.co/xocialize/ltx-2.5-granules)
+- [Repositorio Hugging Face: xocialize/ltx-2.5-granules](https://huggingface.co/xocialize/ltx-2.5-granules)
 - [Modelo base: Lightricks/LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5)
 - [Versión MLX residente: mlx-community/ltx-2.5-mlx](https://huggingface.co/mlx-community/ltx-2.5-mlx)
 - [Versión MLX cuantizada: mlx-community/ltx-2.5-mlx-ditq8](https://huggingface.co/mlx-community/ltx-2.5-mlx-ditq8)

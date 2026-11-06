@@ -73,7 +73,7 @@ El autor indica que no hay regresión estadísticamente significativa en MMLU: l
 |---|---|---|---|---|---|
 | Qwen3.8-27B-CuteHuman-LoRA | LoRA de personalidad | 42 MB (10,49 M params) | Qwen3.8-27B | Apache-2.0 | Cambia el tono sin tocar el conocimiento; GGUF disponible |
 | Qwen/Qwen3.8-27B (base) | Modelo completo | — | — | Apache-2.0 (según el ecosistema Qwen) | Modelo original con tono de asistente estándar |
-| Otros LoRA de roleplay en HuggingFace | Adaptadores PEFT | Variable (decenas de MB) | Diversos | Variable | Categoría amplia; este se distingue por publicar métricas antes/después y benchmark MMLU |
+| Otros LoRA de roleplay en Hugging Face | Adaptadores PEFT | Variable (decenas de MB) | Diversos | Variable | Categoría amplia; este se distingue por publicar métricas antes/después y benchmark MMLU |
 
 No hay disponibles comparativas numéricas publicadas frente a otros LoRA de personalidad o roleplay; la tabla anterior es cualitativa.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nyloanon/khi-cfm-surrogate` es una publicación del usuario `nyloanon` en HuggingFace, licenciado bajo MIT. La model card asociada no contiene ninguna información técnica más allá de la licencia: no se especifica arquitectura, tamaño, propósito, datos de entrenamiento ni capacidades. El nombre sugiere que podría tratarse de un modelo sustituto (*surrogate*) para algún tipo de simulación (posiblemente relacionado con *conditional flow matching* o dinámica de fluidos, aunque esto es especulativo), pero no hay documentación que lo confirme.
+El modelo `nyloanon/khi-cfm-surrogate` es una publicación del usuario `nyloanon` en Hugging Face, licenciado bajo MIT. La model card asociada no contiene ninguna información técnica más allá de la licencia: no se especifica arquitectura, tamaño, propósito, datos de entrenamiento ni capacidades. El nombre sugiere que podría tratarse de un modelo sustituto (*surrogate*) para algún tipo de simulación (posiblemente relacionado con *conditional flow matching* o dinámica de fluidos, aunque esto es especulativo), pero no hay documentación que lo confirme.
 
 Al carecer de cualquier descripción, métricas o ejemplos de uso, este modelo no puede evaluarse ni desplegarse de forma segura sin antes obtener información adicional del autor. La ausencia de descargas y likes refuerza que se trata de una publicación reciente y sin validación comunitaria. En su estado actual, cualquier intento de uso requeriría inspeccionar directamente los archivos del repositorio para inferir su estructura, algo que no se ha realizado en esta ficha.
 
@@ -52,4 +52,4 @@ No disponible. Al no conocerse la categoría, el tamaño ni el propósito del mo
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/nyloanon/khi-cfm-surrogate)
+- [Página del modelo en Hugging Face](https://huggingface.co/nyloanon/khi-cfm-surrogate)

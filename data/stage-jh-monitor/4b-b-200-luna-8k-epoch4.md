@@ -2,7 +2,7 @@
 
 ## Resumen
 
-4b-B-200-luna-8k-epoch4 es un ajuste fino por aprendizaje por refuerzo (RL) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario Stage-jh-monitor en HuggingFace. Se trata de un artefacto experimental generado dentro de un flujo de trabajo automatizado de entrenamiento (identificado como "jh-workflow"), cuyo objetivo aparente es producir un modelo de razonamiento entrenado con un juez externo en lugar de con preferencias humanas anotadas.
+4b-B-200-luna-8k-epoch4 es un ajuste fino por aprendizaje por refuerzo (RL) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario Stage-jh-monitor en Hugging Face. Se trata de un artefacto experimental generado dentro de un flujo de trabajo automatizado de entrenamiento (identificado como "jh-workflow"), cuyo objetivo aparente es producir un modelo de razonamiento entrenado con un juez externo en lugar de con preferencias humanas anotadas.
 
 El modelo tiene 4.539.265.536 parametros (aproximadamente 4,54 mil millones) y se distribuye unicamente en formato safetensors, con un repositorio de 9,1 GB, lo que corresponde a pesos en precision de 16 bits. La model card no incluye informacion sobre licencia, idiomas soportados, pipeline de inferencia ni resultados de evaluacion, por lo que la mayor parte de los datos tecnicos habituales no estan disponibles.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 4b-B-200-luna-8k-epoch4 (este modelo) | 4.539.265.536 | No disponible oficialmente (config: max_model_len 65536) | No disponible | No disponible | Safetensors en HuggingFace, 0 descargas |
+| 4b-B-200-luna-8k-epoch4 (este modelo) | 4.539.265.536 | No disponible oficialmente (config: max_model_len 65536) | No disponible | No disponible | Safetensors en Hugging Face, 0 descargas |
 | Qwen/Qwen3.5-4B (modelo base) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Referenciado como origen del ajuste |
 | Otras alternativas de ~3-4B | No disponible | No disponible | No disponible | No disponible | No se dispone de datos para una comparacion rigurosa |
 
@@ -85,7 +85,7 @@ No se dispone de informacion suficiente para establecer una comparativa tecnica 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-jh-monitor/4b-B-200-luna-8k-epoch4
+- Modelo en Hugging Face: https://huggingface.co/Stage-jh-monitor/4b-B-200-luna-8k-epoch4
 - Modelo base referenciado en la configuracion: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento referenciado: https://huggingface.co/datasets/Stage-org/4b-B-200-luna-8k
 - Paper, blog, repositorio o demo adicionales: no disponible (la busqueda web no devolvio resultados relevantes)

@@ -78,7 +78,7 @@ No se han proporcionado datos de benchmarks de modelos comparables en la informa
 
 | Modelo | Parametros | Contexto / entrada | QWK (APTOS) | AUC derivacion (IDRiD) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| APTOS retinopathy grader (senanurcetin) | no disponible | imagen de fondo de ojo; ensemble de 5 pliegues | 0,9091 | 0,984 | MIT | HuggingFace, ONNX |
+| APTOS retinopathy grader (senanurcetin) | no disponible | imagen de fondo de ojo; ensemble de 5 pliegues | 0,9091 | 0,984 | MIT | Hugging Face, ONNX |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,6 +95,6 @@ No se han proporcionado datos de benchmarks de modelos comparables en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/senanurcetin/aptos-retinopathy-grader
+- Modelo en Hugging Face: https://huggingface.co/senanurcetin/aptos-retinopathy-grader
 - Codigo fuente, analisis y resultados del autor: https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo; todos los enlaces obtenidos eran contenido no relacionado y se han descartado.

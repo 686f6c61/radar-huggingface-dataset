@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros (aprox.) | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nxp/inceptionv4-imx | no disponible (familia ~43M) | Clasificacion de imagenes | Apache-2.0 | HuggingFace |
+| nxp/inceptionv4-imx | no disponible (familia ~43M) | Clasificacion de imagenes | Apache-2.0 | Hugging Face |
 | Inception-v4 (original, Google) | ~43M | Clasificacion de imagenes | Apache-2.0 (TF-Slim) | TensorFlow Models |
 | ResNet-50 | ~25M | Clasificacion de imagenes | Apache-2.0 (varia por implementacion) | Multiples |
 | EfficientNet-B0 | ~5,3M | Clasificacion de imagenes | Apache-2.0 (varia por implementacion) | Multiples |
@@ -85,7 +85,7 @@ Los datos de las alternativas corresponden a las arquitecturas originales public
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nxp/inceptionv4-imx
+- Hugging Face: https://huggingface.co/nxp/inceptionv4-imx
 - NXP Semiconductors (sitio oficial): https://www.nxp.com/
 - NXP productos: https://www.nxp.com/products:PCPRODCAT
 - NXP Semiconductors (Wikipedia): https://en.wikipedia.org/wiki/NXP_Semiconductors

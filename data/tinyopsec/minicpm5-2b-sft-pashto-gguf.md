@@ -89,11 +89,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/tinyopsec/MiniCPM5-2B-SFT-Pashto-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/tinyopsec/MiniCPM5-2B-SFT-Pashto-GGUF
 - Modelo base del ajuste: https://huggingface.co/nassimjp/MiniCPM5-2B-SFT-Pashto
 - Variante Instruct en GGUF: https://huggingface.co/nassimjp/MiniCPM5-2B-SFT-Pashto-Instruct-GGUF
 - Modelo base de la serie: https://huggingface.co/openbmb/MiniCPM5-2B
-- Model card del SFT base en HuggingFace: https://huggingface.co/openbmb/MiniCPM5-2B-SFT/blob/main/README.md
+- Model card del SFT base en Hugging Face: https://huggingface.co/openbmb/MiniCPM5-2B-SFT/blob/main/README.md
 - Repositorio GitHub de la serie MiniCPM: https://github.com/OpenBMB/MiniCPM
 - Grafo de arquitectura del modelo: https://hfviewer.com/nassimjp/MiniCPM5-2B-SFT-Pashto
 - Espejo de descarga en SourceForge: https://sourceforge.net/projects/minicpm5-2b.mirror/

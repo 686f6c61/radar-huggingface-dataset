@@ -2,7 +2,7 @@
 
 ## Resumen
 
-taxiRL es un agente de aprendizaje por refuerzo entrenado con el algoritmo Q-Learning tabular sobre el entorno Taxi-v3 de Gymnasium. Lo publica el usuario esncf en HuggingFace y no se trata de un modelo de lenguaje ni de una red neuronal profunda: es una tabla Q serializada en formato pickle que se carga con utilidades del ecosistema de HuggingFace (stable-baselines3 / huggingface_sb3) y se ejecuta contra el entorno original. El repositorio ocupa 0.0 GB y registra 0 descargas y 0 likes en el momento de la consulta, lo que indica un artefacto de experimentación personal más que una release mantenida.
+taxiRL es un agente de aprendizaje por refuerzo entrenado con el algoritmo Q-Learning tabular sobre el entorno Taxi-v3 de Gymnasium. Lo publica el usuario esncf en Hugging Face y no se trata de un modelo de lenguaje ni de una red neuronal profunda: es una tabla Q serializada en formato pickle que se carga con utilidades del ecosistema de Hugging Face (stable-baselines3 / huggingface_sb3) y se ejecuta contra el entorno original. El repositorio ocupa 0.0 GB y registra 0 descargas y 0 likes en el momento de la consulta, lo que indica un artefacto de experimentación personal más que una release mantenida.
 
 El problema que resuelve es el clásico problema del taxi: un agente debe recoger a un pasajero en una de cuatro localizaciones y dejarlo en otra, navegando una rejilla de 5x5 con paredes, con 500 estados discretos (25 posiciones del taxi x 5 posiciones del pasajero x 4 destinos) y 6 acciones. Es un entorno de referencia habitual para validar implementaciones de Q-Learning, SARSA o Deep Q-Learning antes de pasar a problemas con espacios de estados continuos.
 
@@ -41,12 +41,12 @@ No hay información publicada sobre hiperparámetros concretos (alpha, gamma, po
 - Línea base en experimentos de RL: comparar variantes de Q-Learning (SARSA, Q-Learning con eligibility traces, Double Q-Learning) contra este agente sobre el mismo entorno y la misma métrica de recompensa media.
 - Validación de pipelines de evaluación: comprobar que un arnés de evaluación de agentes RL (por ejemplo, el de Stable-Baselines3 o el de RL Baselines3 Zoo) carga correctamente un artefacto desde el Hub y reproduce la recompensa declarada.
 - Pruebas de robustez del entorno: reevaluar la política con `is_slippery=True` para medir la degradación del rendimiento cuando las transiciones son estocásticas, un caso habitual en robótica y logística simulada.
-- Enseñanza de publicación de artefactos: servir de plantilla mínima para que estudiantes publiquen agentes RL en HuggingFace con model-index y métricas declaradas.
+- Enseñanza de publicación de artefactos: servir de plantilla mínima para que estudiantes publiquen agentes RL en Hugging Face con model-index y métricas declaradas.
 - Simulación de logística a pequeña escala: adaptar la lógica de recogida y entrega a un problema de reparto simplificado con estados discretos, usando la tabla Q como punto de partida para un reentrenamiento sobre un entorno propio.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en el model-index (no verificados por HuggingFace):
+Datos declarados por el autor en el model-index (no verificados por Hugging Face):
 
 | Tarea | Dataset | Métrica | Valor |
 |---|---|---|---|
@@ -66,7 +66,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Algoritmo | Entorno | Contexto / estados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| esncf/taxiRL | Q-Learning tabular | Taxi-v3 | 500 estados discretos | no disponible | HuggingFace |
+| esncf/taxiRL | Q-Learning tabular | Taxi-v3 | 500 estados discretos | no disponible | Hugging Face |
 | Agentes Q-Learning de RL Baselines3 Zoo | Q-Learning tabular | Taxi-v3 | 500 estados discretos | MIT (el del proyecto SB3) | GitHub / Hub |
 | Agentes DQN de RL Baselines3 Zoo | Deep Q-Network | CartPole, Atari, etc. | continuo o de alta dimensión | MIT | GitHub / Hub |
 | Agentes PPO de RL Baselines3 Zoo | PPO | múltiples entornos | continuo o discreto | MIT | GitHub / Hub |
@@ -86,7 +86,7 @@ La comparación directa con modelos de lenguaje no tiene sentido: taxiRL no proc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/esncf/taxiRL
+- Modelo en Hugging Face: https://huggingface.co/esncf/taxiRL
 - Entorno Taxi-v3 (Gymnasium): https://gymnasium.farama.org/environments/toy_text/taxi/
 - Documentación de Q-Learning tabular en el contexto de Taxi-v3: https://gymnasium.farama.org/tutorials/training_agents/blackjack_tutorial/
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3

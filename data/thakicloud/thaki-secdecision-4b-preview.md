@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparativos con modelos de terceros en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Thaki-SecDecision-4B-Preview
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Thaki-SecDecision-4B-Preview
 - Model card en coreano: https://huggingface.co/ThakiCloud/Thaki-SecDecision-4B-Preview/blob/main/MODEL_CARD.ko.md
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Índice oficial de PyTorch CUDA 13.0: https://download.pytorch.org/whl/cu130

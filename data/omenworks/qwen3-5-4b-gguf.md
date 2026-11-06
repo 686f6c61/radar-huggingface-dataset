@@ -6,7 +6,7 @@ OmenWorks/Qwen3.5-4B-GGUF es un repositorio de cuantizaciones en formato GGUF de
 
 El modelo subyacente, Qwen3.5-4B, pertenece a la familia Qwen y cuenta con 4.205.751.296 parametros (aproximadamente 4,2 mil millones). La model card del autor es deliberadamente minimalista: se limita a acreditar el modelo upstream, indicar el fichero incluido y aclarar que este repositorio no forma parte del mecanismo "one-model/two-modes" que OmenWorks implementa en su modelo bend-4b. No se documentan datos de entrenamiento, arquitectura interna, longitud de contexto ni composicion del dataset.
 
-La relevancia de esta ficha es limitada pero util: se trata de una publicacion reciente (creada el 12 de octubre de 2026) con cero descargas y cero likes en el momento de la consulta, por lo que su interes practico radica en servir como referencia de una cuantizacion Q8_0 concreta para despliegue local, mas que como modelo novedoso. Para quien busque reproducibilidad, conviene considerar tambien las cuantizaciones equivalentes publicadas por organizaciones como unsloth o el espacio gguf de HuggingFace.
+La relevancia de esta ficha es limitada pero util: se trata de una publicacion reciente (creada el 12 de octubre de 2026) con cero descargas y cero likes en el momento de la consulta, por lo que su interes practico radica en servir como referencia de una cuantizacion Q8_0 concreta para despliegue local, mas que como modelo novedoso. Para quien busque reproducibilidad, conviene considerar tambien las cuantizaciones equivalentes publicadas por organizaciones como unsloth o el espacio gguf de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | OmenWorks/Qwen3.5-4B-GGUF | 4.205.751.296 | no disponible | GGUF (Q8_0) | Apache-2.0 | 0 descargas, 0 likes |
-| unsloth/Qwen3.5-4B-GGUF | mismos que el base (Qwen3.5-4B) | no disponible | GGUF (multiples cuantizaciones) | Apache-2.0 (del base) | publico en HuggingFace |
-| gguf/Qwen3.5-4B-GGUF | mismos que el base | no disponible | GGUF | Apache-2.0 (del base) | publico en HuggingFace |
+| unsloth/Qwen3.5-4B-GGUF | mismos que el base (Qwen3.5-4B) | no disponible | GGUF (multiples cuantizaciones) | Apache-2.0 (del base) | publico en Hugging Face |
+| gguf/Qwen3.5-4B-GGUF | mismos que el base | no disponible | GGUF | Apache-2.0 (del base) | publico en Hugging Face |
 | OmenWorks/bend-4b | no disponible | no disponible | no disponible | no disponible | modelo distinto con mecanismo "one-model/two-modes" |
 
 No se dispone de datos de rendimiento comparado entre estas variantes. La diferencia principal entre ellas es el pipeline de cuantizacion y el conjunto de ficheros ofrecidos, no el modelo subyacente.
@@ -81,10 +81,10 @@ No se dispone de datos de rendimiento comparado entre estas variantes. La difere
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OmenWorks/Qwen3.5-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/OmenWorks/Qwen3.5-4B-GGUF
 - Modelo base upstream: https://huggingface.co/Qwen/Qwen3.5-4B
 - Cuantizacion alternativa de unsloth: https://huggingface.co/unsloth/Qwen3.5-4B-GGUF
-- Repositorio gguf de HuggingFace: https://huggingface.co/gguf/Qwen3.5-4B-GGUF
+- Repositorio gguf de Hugging Face: https://huggingface.co/gguf/Qwen3.5-4B-GGUF
 - Modelo bend-4b de OmenWorks: https://huggingface.co/OmenWorks/bend-4b
 - Guia de Qwen 3.5 4B en local: https://theaibench.ai/models/qwen-3-5-4b/
 - Ficha en local-ai-zone: https://local-ai-zone.github.io/models/qwen3-5-4b.html

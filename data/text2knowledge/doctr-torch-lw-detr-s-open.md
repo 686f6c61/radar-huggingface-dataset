@@ -65,7 +65,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - text2knowledge/doctr-torch-lw-detr-s-open](https://huggingface.co/text2knowledge/doctr-torch-lw-detr-s-open)
+- [Hugging Face - text2knowledge/doctr-torch-lw-detr-s-open](https://huggingface.co/text2knowledge/doctr-torch-lw-detr-s-open)
 - [GitHub - mindee/doctr](https://github.com/mindee/doctr)
 - [Documentación de docTR - módulo lw_detr](https://mindee.github.io/doctr/_modules/doctr/models/layout/lw_detr/pytorch.html)
 - [Documentación general de docTR](https://mindee.github.io/doctr/)

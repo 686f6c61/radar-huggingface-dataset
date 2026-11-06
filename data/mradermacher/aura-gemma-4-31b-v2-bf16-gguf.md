@@ -31,7 +31,7 @@ El trabajo de mradermacher consiste exclusivamente en la conversion y cuantizaci
 
 - Generacion de texto conversacional en ingles, segun la etiqueta `conversational` del repositorio.
 - Procesamiento multimodal: la presencia de ficheros `mmproj` sugiere soporte de entrada de imagenes, aunque no se detalla su alcance.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a traves de infraestructura compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a traves de infraestructura compatible con la API de Hugging Face.
 - Ejecucion en llama.cpp y herramientas derivadas (Ollama, LM Studio, etc.) gracias al formato GGUF.
 - No se documenta soporte explicito de tool calling, function calling, agentes, modo thinking ni audio.
 - Capacidades multilingues limitadas al ingles segun la metadata del repositorio.
@@ -89,7 +89,7 @@ No se dispone de informacion suficiente sobre el modelo base (arquitectura, cont
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Aura-Gemma-4-31B-V2-BF16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Aura-Gemma-4-31B-V2-BF16-GGUF
 - Modelo base: https://huggingface.co/SevenOfNine/Aura-Gemma-4-31B-V2-BF16
 - Pagina de descargas del autor: https://hf.tst.eu/model#Aura-Gemma-4-31B-V2-BF16-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

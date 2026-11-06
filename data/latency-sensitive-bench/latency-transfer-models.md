@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `latency-sensitive-bench/latency-transfer-models` es un artefacto publicado por el usuario `latency-sensitive-bench` en HuggingFace. Segun su propia model card, no se trata de un modelo entrenado desde cero ni de un lanzamiento de pesos nuevos: los bytes de los checkpoints de inferencia son identicos a los de su fuente original, y el repositorio funciona como un archivo de ejecuciones de politicas de transferencia de latencia ("Flappy WanOFT latency-transfer policies"). Cada ejecucion conserva su configuracion, sus estadisticas de normalizacion y sus registros de entrenamiento.
+El repositorio `latency-sensitive-bench/latency-transfer-models` es un artefacto publicado por el usuario `latency-sensitive-bench` en Hugging Face. Segun su propia model card, no se trata de un modelo entrenado desde cero ni de un lanzamiento de pesos nuevos: los bytes de los checkpoints de inferencia son identicos a los de su fuente original, y el repositorio funciona como un archivo de ejecuciones de politicas de transferencia de latencia ("Flappy WanOFT latency-transfer policies"). Cada ejecucion conserva su configuracion, sus estadisticas de normalizacion y sus registros de entrenamiento.
 
 El autor indica que todos los checkpoints archivados superaron las comprobaciones del cargador nativo StarVLA y las verificaciones de estadisticas de normalizacion. El material de trazabilidad (identidades de origen exactas, commits de codigo, ejecuciones de W&B y consumidores del paper) se referencia mediante el fichero `run_index.json`, y las instantaneas del codigo fuente se encuentran en el directorio `code/` del archivo de datos asociado.
 
@@ -97,7 +97,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/latency-sensitive-bench/latency-transfer-models
+- Repositorio en Hugging Face: https://huggingface.co/latency-sensitive-bench/latency-transfer-models
 - Dataset asociado (revision 23f45010): https://huggingface.co/datasets/latency-sensitive-bench/latency-transfer-data/tree/23f4501059d58f7df4d12d7a074f48daca4c578d
 - Fichero de indice de ejecuciones citado: `run_index.json` (dentro del repositorio, sin URL directa publicada)
 - Paper, blog o repositorio de codigo del autor: no disponible en la informacion proporcionada

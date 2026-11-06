@@ -73,11 +73,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Montalte/qwen4b-math-nothink-random | 4,02 B | No disponible (base: 32.768 nativos) | Merge con mascara aleatoria (k=0,1, seed=42) sobre Qwen3-4B-Base | Apache 2.0 | HuggingFace, 0 descargas |
+| Montalte/qwen4b-math-nothink-random | 4,02 B | No disponible (base: 32.768 nativos) | Merge con mascara aleatoria (k=0,1, seed=42) sobre Qwen3-4B-Base | Apache 2.0 | Hugging Face, 0 descargas |
 | Montalte (variantes del mismo autor, p. ej. mascara aprendida) | 4,02 B | No disponible | Merge con criterio de seleccion alternativo | Apache 2.0 | No verificado en esta busqueda |
 | modrill/math-nothink-q4b-20260908 | 4,02 B | No disponible | Especialista en matematicas en modo nothink, origen del vector de tarea | No disponible | Referenciado como modelo fuente |
-| Qwen/Qwen3-4B-Base | 4,02 B | 32.768 nativos (hasta 131.072 con YaRN segun documentacion de Qwen3) | Modelo preentrenado denso, sin instruir | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Qwen/Qwen3-4B (instruido) | 4,02 B | 32.768 nativos, 32.768 en modo thinking | Modelo instruido con modos thinking/non-thinking | Apache 2.0 | HuggingFace |
+| Qwen/Qwen3-4B-Base | 4,02 B | 32.768 nativos (hasta 131.072 con YaRN segun documentacion de Qwen3) | Modelo preentrenado denso, sin instruir | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Qwen/Qwen3-4B (instruido) | 4,02 B | 32.768 nativos, 32.768 en modo thinking | Modelo instruido con modos thinking/non-thinking | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas alternativas para este artefacto concreto; la comparación se limita a parámetros, contexto, licencia y naturaleza del modelo. Para tareas de matemáticas de mayor tamaño existen alternativas de la familia Qwen2.5-Math, pero no se incluyen aquí por falta de datos verificados en la información proporcionada.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas para es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Montalte/qwen4b-math-nothink-random
+- Modelo en Hugging Face: https://huggingface.co/Montalte/qwen4b-math-nothink-random
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Revision del base referenciada en la model card: 906bfd4b4dc7f14ee4320094d8b41684abff8539
 - Modelo especialista de origen: modrill/math-nothink-q4b-20260908 (referenciado en la model card; no se ha localizado URL verificada en la busqueda)

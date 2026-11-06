@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Neerajsharma9897/mimic-kd-sft` es un repositorio de pesos publicado en HuggingFace por el usuario Neerajsharma9897 el 14 de octubre de 2026, con licencia MIT y sin actualizaciones posteriores registradas. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", no tiene etiqueta de pipeline asignada y su model card contiene unicamente la linea `license: mit`, sin descripcion, sin datos de entrenamiento y sin ejemplos de uso.
+`Neerajsharma9897/mimic-kd-sft` es un repositorio de pesos publicado en Hugging Face por el usuario Neerajsharma9897 el 14 de octubre de 2026, con licencia MIT y sin actualizaciones posteriores registradas. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", no tiene etiqueta de pipeline asignada y su model card contiene unicamente la linea `license: mit`, sin descripcion, sin datos de entrenamiento y sin ejemplos de uso.
 
 El identificador del repositorio sugiere, por convencion de nomenclatura, un flujo de destilacion de conocimiento ("kd") seguido de ajuste supervisado ("sft"), probablemente sobre un modelo "mimic" o imitador de un profesor de mayor tamano. Esta interpretacion es una hipotesis derivada del nombre y no esta confirmada por el autor en ninguna seccion del repositorio, por lo que no debe tomarse como especificacion tecnica.
 
@@ -53,7 +53,7 @@ Los siguientes escenarios son condicionales: solo tendrian sentido si una evalua
 - Estudio comparativo de tecnicas de destilacion: el repositorio puede servir como referencia para reproducir un pipeline de "knowledge distillation" seguido de "supervised fine-tuning", siempre que el autor publique la configuracion de entrenamiento, que ahora mismo no existe.
 - Punto de partida para un ajuste posterior: si los pesos son cargables, un equipo podria continuar el SFT sobre un dominio propio (por ejemplo, atencion al cliente en castellano), pero antes debe verificar la licencia del modelo profesor subyacente y la compatibilidad de la licencia MIT con ese uso.
 - Prototipado interno de asistentes conversacionales: utilizable unicamente en entornos de laboratorio sin requisitos de calidad, dado que no hay benchmarks ni evaluaciones humanas publicadas.
-- Auditoria de artefactos de HuggingFace: el caso encaja como ejemplo practico de repositorio sin model card, util para disenar politicas internas de admision de modelos en una organizacion.
+- Auditoria de artefactos de Hugging Face: el caso encaja como ejemplo practico de repositorio sin model card, util para disenar politicas internas de admision de modelos en una organizacion.
 - Docencia sobre ciclo de vida de modelos: puede emplearse como caso de estudio de un artefacto publicado sin documentacion, sin evaluacion y sin traccion de comunidad.
 - Despliegue en produccion: descartado con la informacion actual, al no conocerse tamano, contexto, licencia de los datos de entrenamiento ni comportamiento medido.
 
@@ -87,7 +87,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura ni la tarea 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Neerajsharma9897/mimic-kd-sft
+- Repositorio en Hugging Face: https://huggingface.co/Neerajsharma9897/mimic-kd-sft
 - Paper asociado: no disponible
 - Blog o nota tecnica del autor: no disponible
 - Repositorio de codigo: no disponible

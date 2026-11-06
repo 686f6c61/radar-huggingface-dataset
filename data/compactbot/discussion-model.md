@@ -107,7 +107,7 @@ Los datos de parametros y contexto de las alternativas no provienen de la inform
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/Compactbot/discussion-model
+- Ficha del modelo en Hugging Face: https://huggingface.co/Compactbot/discussion-model
 - Discusion de origen (peticion del modelo): https://huggingface.co/Compactbot/subword-gpt-7m/discussions/4
 - Repositorio de modelos del autor: https://huggingface.co/Compactbot/models
 - Space del agente Compactbot: https://huggingface.co/spaces/CompactAI/Compactbot

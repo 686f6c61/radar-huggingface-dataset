@@ -89,7 +89,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de los modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/az225/privacy-masker-ja-pii-ner-30m
+- Modelo en Hugging Face: https://huggingface.co/az225/privacy-masker-ja-pii-ner-30m
 - Libreria privacy-masker (GitHub): https://github.com/NishidaAzuharu/privacy-masker
 - Modelo base cl-nagoya/ruri-v3-30m: https://huggingface.co/cl-nagoya/ruri-v3-30m
 - Dataset stockmark/ner-wikipedia-dataset: https://huggingface.co/datasets/stockmark/ner-wikipedia-dataset
@@ -97,7 +97,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de los modelos com
 - Corpus UD Japanese GSD: https://github.com/megagonlabs/UD_Japanese-GSD
 - Modelo de generacion de plantillas Qwen/Qwen3.8-27B-FP8: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - openai/privacy-filter (GitHub): https://github.com/openai/privacy-filter
-- openai/privacy-filter (HuggingFace): https://huggingface.co/openai/privacy-filter
+- openai/privacy-filter (Hugging Face): https://huggingface.co/openai/privacy-filter
 - Anuncio de OpenAI Privacy Filter: https://openai.com/index/introducing-openai-privacy-filter/
 - divergentlabs/masker: https://huggingface.co/divergentlabs/masker
 - Articulo sobre OpenAI Privacy Filter (menciona 96% F1): https://awesomeagents.ai/news/openai-privacy-filter-on-device-pii/

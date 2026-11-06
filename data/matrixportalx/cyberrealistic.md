@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CyberRealistic es un modelo de generacion de imagenes texto-a-imagen derivado de Stable Diffusion 1.5, publicado por el usuario matrixportalx en HuggingFace. No se trata de un modelo entrenado desde cero ni de un ajuste fino documentado: es una conversion del checkpoint SD 1.5 al formato de ejecucion de Qualcomm QNN (qnn2.28) para que el UNet se ejecute sobre la NPU Hexagon de los SoC Snapdragon, mientras que el codificador de texto y el VAE se ejecutan con el runtime MNN sobre CPU/GPU.
+CyberRealistic es un modelo de generacion de imagenes texto-a-imagen derivado de Stable Diffusion 1.5, publicado por el usuario matrixportalx en Hugging Face. No se trata de un modelo entrenado desde cero ni de un ajuste fino documentado: es una conversion del checkpoint SD 1.5 al formato de ejecucion de Qualcomm QNN (qnn2.28) para que el UNet se ejecute sobre la NPU Hexagon de los SoC Snapdragon, mientras que el codificador de texto y el VAE se ejecutan con el runtime MNN sobre CPU/GPU.
 
 El objetivo del artefacto es el despliegue en dispositivo (on-device) dentro de la aplicacion Android Ruya / Local Dream, que permite importar modelos personalizados y generar imagenes sin conexion a internet. La variante publicada esta compilada para el tier `8gen2` con HTP `v73` y activaciones de 16 bits, y cubre las resoluciones 512x512, 768x512, 512x768 y 768x768.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Resolucion nativa | Contexto de texto | Formato de despliegue | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CyberRealistic (esta ficha) | no disponible (base SD 1.5, ~0,98 mil millones segun arquitectura estandar) | 512x512, 768x512, 512x768, 768x768 | 77 tokens (CLIP de SD 1.5, no confirmado por el autor) | QNN context binary + MNN para movil | creativeml-openrail-m | HuggingFace; 0 descargas y 0 me gusta en el momento de la consulta |
-| Stable Diffusion 1.5 (checkpoint original) | ~0,98 mil millones | 512x512 | 77 tokens | safetensors / diffusers, orientado a GPU | CreativeML OpenRAIL-M | Ampliamente disponible en HuggingFace |
-| Stable Diffusion XL base | ~3,5 mil millones | 1024x1024 | 77 tokens por codificador, dos codificadores de texto | safetensors / diffusers, orientado a GPU | CreativeML OpenRAIL++-M | Ampliamente disponible en HuggingFace |
+| CyberRealistic (esta ficha) | no disponible (base SD 1.5, ~0,98 mil millones segun arquitectura estandar) | 512x512, 768x512, 512x768, 768x768 | 77 tokens (CLIP de SD 1.5, no confirmado por el autor) | QNN context binary + MNN para movil | creativeml-openrail-m | Hugging Face; 0 descargas y 0 me gusta en el momento de la consulta |
+| Stable Diffusion 1.5 (checkpoint original) | ~0,98 mil millones | 512x512 | 77 tokens | safetensors / diffusers, orientado a GPU | CreativeML OpenRAIL-M | Ampliamente disponible en Hugging Face |
+| Stable Diffusion XL base | ~3,5 mil millones | 1024x1024 | 77 tokens por codificador, dos codificadores de texto | safetensors / diffusers, orientado a GPU | CreativeML OpenRAIL++-M | Ampliamente disponible en Hugging Face |
 
 La comparacion con alternativas de despliegue en movil no es posible con la informacion disponible: no se han encontrado en la busqueda web otros artefactos QNN comparables ni datos de rendimiento que permitan contrastar esta conversion con otras.
 
@@ -87,7 +87,7 @@ La comparacion con alternativas de despliegue en movil no es posible con la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/matrixportalx/CyberRealistic
+- Hugging Face: https://huggingface.co/matrixportalx/CyberRealistic
 - Repositorio de conversion SD 1.5 a Qualcomm QNN: https://github.com/matrixportalx/Sd-1.5-Converting-to-Qualcomm-QNN-Model
 - Aplicacion Ruya / Local Dream: la model card la referencia como destino de importacion, pero no incluye enlace directo.
 - Los resultados de la busqueda web proporcionada no contienen enlaces relevantes para este modelo: corresponden a dominios de una compania de seguros y no guardan relacion con el artefacto.

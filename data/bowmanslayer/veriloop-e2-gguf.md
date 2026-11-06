@@ -109,8 +109,8 @@ Comparativas frente a otros modelos de ~27 B (familia Qwen, Gemma, Mistral y sim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bowmanslayer/VeriLoop-E2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bowmanslayer/VeriLoop-E2-GGUF
 - Modelo base: https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2
 - Revision fija del modelo base: https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2/tree/9379d199adcc44acdf836558037163878e3a37ae
-- Ficheros de evaluacion citados en la model card: `EVALUATION.md`, `evaluation.json`, `HISTORICAL-COMPARISON.md`, `evaluation-items.json`, `evaluation-question-indices.json`, `evaluation-refusal-items.json`, `release.json`, `SHA256SUMS` (todos dentro del repositorio de HuggingFace)
+- Ficheros de evaluacion citados en la model card: `EVALUATION.md`, `evaluation.json`, `HISTORICAL-COMPARISON.md`, `evaluation-items.json`, `evaluation-question-indices.json`, `evaluation-refusal-items.json`, `release.json`, `SHA256SUMS` (todos dentro del repositorio de Hugging Face)
 - Paper, blog, repositorio de codigo o demo oficiales: no disponibles en la informacion proporcionada. Los resultados de busqueda web suministrados no guardan relacion con el modelo (corresponden a conversores de audio) y se descartan como fuentes.

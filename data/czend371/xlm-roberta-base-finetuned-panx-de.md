@@ -2,7 +2,7 @@
 
 ## Resumen
 
-xlm-roberta-base-finetuned-panx-de es un modelo de clasificación de tokens (token classification) obtenido mediante fine-tuning supervisado de FacebookAI/xlm-roberta-base, el encoder multilingüe de tipo transformer de 278 millones de parámetros publicado por Facebook AI. El modelo ha sido subido por el usuario CZend371 y se distribuye con licencia MIT a través de HuggingFace. Su tarea declarada en el pipeline de transformers es el etiquetado de tokens, lo que en la práctica corresponde a tareas de reconocimiento de entidades nombradas (NER) o etiquetado secuencial similar.
+xlm-roberta-base-finetuned-panx-de es un modelo de clasificación de tokens (token classification) obtenido mediante fine-tuning supervisado de FacebookAI/xlm-roberta-base, el encoder multilingüe de tipo transformer de 278 millones de parámetros publicado por Facebook AI. El modelo ha sido subido por el usuario CZend371 y se distribuye con licencia MIT a través de Hugging Face. Su tarea declarada en el pipeline de transformers es el etiquetado de tokens, lo que en la práctica corresponde a tareas de reconocimiento de entidades nombradas (NER) o etiquetado secuencial similar.
 
 El identificador del repositorio incluye el sufijo "panx-de", que apunta al corpus PAN-X en su partición alemana, un benchmark estándar de NER multilingüe derivado de Wikipedia. Sin embargo, la model card generada automáticamente por el Trainer declara explícitamente que el modelo se entrenó "on an unknown dataset" y no documenta ni el conjunto de datos, ni las etiquetas, ni los resultados de evaluación. Por tanto, la especialización en alemán y en NER es una inferencia razonable a partir del nombre, pero no está confirmada por documentación oficial.
 
@@ -64,19 +64,19 @@ No se han publicado resultados de benchmarks en la información disponible. El b
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente. Funciona sin problema en NVIDIA T4, L4, RTX 3060, RTX 4090, A10, A100 y H100; en estas dos últimas el cuello de botella será la CPU o el pipeline de datos, no la GPU.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo moderna con 4 GB o más, e incluso en iGPU con memoria compartida si se cuantiza a int8.
 - Ejecución en CPU: viable para inferencia por lotes fuera de línea; con un batch razonable se obtienen decenas de secuencias por segundo en CPUs modernas de escritorio.
-- Opciones de despliegue: `transformers` con `pipeline("token-classification")` o `AutoModelForTokenClassification`; exportación a ONNX con Optimum y ejecución con ONNX Runtime; servidor propio con FastAPI o Triton Inference Server; HuggingFace Inference Endpoints (el tag `endpoints_compatible` está presente). vLLM y llama.cpp no están orientados a modelos encoder-only de clasificación de tokens, por lo que no son la vía recomendada.
+- Opciones de despliegue: `transformers` con `pipeline("token-classification")` o `AutoModelForTokenClassification`; exportación a ONNX con Optimum y ejecución con ONNX Runtime; servidor propio con FastAPI o Triton Inference Server; Hugging Face Inference Endpoints (el tag `endpoints_compatible` está presente). vLLM y llama.cpp no están orientados a modelos encoder-only de clasificación de tokens, por lo que no son la vía recomendada.
 - Latencia y throughput estimados: no disponible (no hay mediciones publicadas por el autor).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CZend371/xlm-roberta-base-finetuned-panx-de | 277 M | 512 tokens | Token classification (presuntamente NER en alemán) | MIT | HuggingFace, 0 descargas |
-| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | Modelo base multilingüe sin cabeza de tarea | MIT | HuggingFace, ampliamente utilizado |
-| google-bert/bert-base-multilingual-cased | 178 M | 512 tokens | Modelo base multilingüe (104 idiomas) | Apache-2.0 según su model card | HuggingFace |
-| distilbert-base-multilingual-cased | 135 M | 512 tokens | Modelo base multilingüe destilado | Apache-2.0 según su model card | HuggingFace |
+| CZend371/xlm-roberta-base-finetuned-panx-de | 277 M | 512 tokens | Token classification (presuntamente NER en alemán) | MIT | Hugging Face, 0 descargas |
+| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | Modelo base multilingüe sin cabeza de tarea | MIT | Hugging Face, ampliamente utilizado |
+| google-bert/bert-base-multilingual-cased | 178 M | 512 tokens | Modelo base multilingüe (104 idiomas) | Apache-2.0 según su model card | Hugging Face |
+| distilbert-base-multilingual-cased | 135 M | 512 tokens | Modelo base multilingüe destilado | Apache-2.0 según su model card | Hugging Face |
 
-No se dispone de datos de rendimiento del modelo objeto de esta ficha, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad. Los recuentos de parámetros y licencias de los modelos de referencia corresponden a los datos publicados en sus respectivas fichas de HuggingFace.
+No se dispone de datos de rendimiento del modelo objeto de esta ficha, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad. Los recuentos de parámetros y licencias de los modelos de referencia corresponden a los datos publicados en sus respectivas fichas de Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -92,8 +92,8 @@ No se dispone de datos de rendimiento del modelo objeto de esta ficha, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CZend371/xlm-roberta-base-finetuned-panx-de
+- Modelo en Hugging Face: https://huggingface.co/CZend371/xlm-roberta-base-finetuned-panx-de
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Paper de XLM-RoBERTa (Unsupervised Cross-lingual Representation Learning at Scale): https://arxiv.org/abs/1911.02116
-- Dataset PAN-X (Amazon Science): https://huggingface.co/datasets/amazon_reviews_multi (referencia general de datasets multilingües; consultar el catálogo de PAN-X en HuggingFace para la partición alemana)
+- Dataset PAN-X (Amazon Science): https://huggingface.co/datasets/amazon_reviews_multi (referencia general de datasets multilingües; consultar el catálogo de PAN-X en Hugging Face para la partición alemana)
 - Documentación de token classification en transformers: https://huggingface.co/docs/transformers/tasks/token_classification

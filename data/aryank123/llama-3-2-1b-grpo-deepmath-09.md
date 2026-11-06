@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-1B-GRPO-DeepMath-09 es un ajuste fino del modelo AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04, que a su vez deriva de Llama 3.2 1B Instruct de Meta. Lo desarrolla el usuario AryanK123 y se publica en HuggingFace como un experimento de entrenamiento, no como un modelo de produccion respaldado por un laboratorio. El objetivo declarado es mejorar el razonamiento matematico mediante aprendizaje por refuerzo con GRPO (Group Relative Policy Optimization), el algoritmo introducido en el articulo DeepSeekMath (arXiv:2402.03300).
+Llama-3.2-1B-GRPO-DeepMath-09 es un ajuste fino del modelo AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04, que a su vez deriva de Llama 3.2 1B Instruct de Meta. Lo desarrolla el usuario AryanK123 y se publica en Hugging Face como un experimento de entrenamiento, no como un modelo de produccion respaldado por un laboratorio. El objetivo declarado es mejorar el razonamiento matematico mediante aprendizaje por refuerzo con GRPO (Group Relative Policy Optimization), el algoritmo introducido en el articulo DeepSeekMath (arXiv:2402.03300).
 
 La relevancia del modelo es metodologica mas que de rendimiento: demuestra el flujo completo SFT + GRPO sobre un modelo denso de 1.240 millones de parametros, un tamano que cabe en cualquier GPU de consumo e incluso en CPU. Esto lo convierte en un banco de pruebas asequible para reproducir recetas de RL aplicadas a matematicas, en la linea de los modelos distillados de la familia DeepSeek-R1.
 
@@ -94,7 +94,7 @@ Frente a estas alternativas, la principal desventaja del modelo evaluado es la a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AryanK123/Llama-3.2-1B-GRPO-DeepMath-09
+- Modelo en Hugging Face: https://huggingface.co/AryanK123/Llama-3.2-1B-GRPO-DeepMath-09
 - Modelo base del ajuste: https://huggingface.co/AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04
 - Articulo de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Repositorio de TRL: https://github.com/huggingface/trl

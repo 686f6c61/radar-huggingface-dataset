@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Project-contrastive es un repositorio experimental publicado por el usuario Williamsmadison en HuggingFace que contiene una implementación funcional de una arquitectura **Mixer** orientada a aprendizaje **contrastivo**, con una configuración declarada como "huge". No es un modelo entrenado ni un checkpoint listo para producción: el propio autor especifica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*), y que no se reclama ninguna puntuación de benchmark. El repositorio prioriza código transparente y pruebas repetibles.
+Project-contrastive es un repositorio experimental publicado por el usuario Williamsmadison en Hugging Face que contiene una implementación funcional de una arquitectura **Mixer** orientada a aprendizaje **contrastivo**, con una configuración declarada como "huge". No es un modelo entrenado ni un checkpoint listo para producción: el propio autor especifica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*), y que no se reclama ninguna puntuación de benchmark. El repositorio prioriza código transparente y pruebas repetibles.
 
 El dato más relevante es su tamaño real: los metadatos de safetensors registran **33.088 parámetros totales** en un repositorio de 0,0 GB. Esto sitúa al artefacto en el rango de unos pocos miles de parámetros, muy lejos de cualquier modelo de lenguaje utilizable, y contradice la etiqueta de escala "huge" que aparece en su `config.json`. La relevancia actual del proyecto es, por tanto, puramente metodológica: sirve como plantilla reproducible para experimentar con atención de ventana deslizante, fusión bilineal y objetivos contrastivos, no como modelo de inferencia.
 
@@ -26,7 +26,7 @@ La licencia es BSD-3-Clause, permisiva y compatible con uso comercial del códig
 | Activación | approx gelu |
 | Normalización | batchnorm |
 | Optimizador del recetario por defecto | AdamW con schedule de warmup lineal |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación / actualización | 2026-09-11 / 2026-09-11 |
@@ -55,7 +55,7 @@ Como innovación técnica destacable, cabe señalar la combinación de atención
 - Pruebas de humo de infraestructura de entrenamiento: `model.safetensors` permite verificar que un pipeline de carga, inicialización y *forward pass* funciona de extremo a extremo antes de lanzar un entrenamiento real de mayor coste.
 - Plantilla de investigación en objetivos contrastivos: el código de `run.py` sirve como base reproducible para experimentar con funciones de pérdida contrastivas, atención de ventana deslizante y fusión bilineal sin partir de cero.
 - Estudios de ablación metodológica: al no reclamar resultados, el repositorio es un punto de partida limpio para comparar variantes de activación, normalización o mecanismo de atención bajo el mismo presupuesto de datos y semillas.
-- Desarrollo de adaptadores para el ecosistema HuggingFace: dado que las APIs genéricas de carga automática no reconocen esta arquitectura, el repositorio es un caso práctico para implementar y validar un adaptador de carga personalizado.
+- Desarrollo de adaptadores para el ecosistema Hugging Face: dado que las APIs genéricas de carga automática no reconocen esta arquitectura, el repositorio es un caso práctico para implementar y validar un adaptador de carga personalizado.
 - Material docente y de reproducibilidad: sirve para ilustrar cómo se documenta un experimento (config, recetario, guía de evaluación, limitaciones) sin exagerar los resultados obtenidos.
 - Verificación de entornos y versiones: al ser un artefacto mínimo (33.088 parámetros, repositorio de 0,0 GB), permite comprobar compatibilidad de versiones de PyTorch, safetensors y dependencias en integración continua con un coste de cómputo despreciable.
 - Base para un entrenamiento posterior: el recetario por defecto (AdamW con warmup lineal) puede reutilizarse como configuración inicial antes de sustituir la inicialización por un entrenamiento completo documentado por separado.
@@ -84,12 +84,12 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - Contradicción documentada entre la etiqueta de escala "huge" del `config.json` y los 33.088 parámetros reales registrados en los metadatos de safetensors. Debe tratarse la etiqueta como un nombre de configuración, no como una descripción de tamaño.
 - Riesgo de alucinación: no evaluable, dado que no hay un modelo entrenado que pueda generar texto.
 - No se documenta ventana de contexto efectiva, idiomas soportados ni composición del dataset; se desconoce por completo el comportamiento multilingüe.
-- Las APIs automáticas de carga de HuggingFace no reconocen esta arquitectura; se requiere un adaptador explícito antes de poder usarla.
+- Las APIs automáticas de carga de Hugging Face no reconocen esta arquitectura; se requiere un adaptador explícito antes de poder usarla.
 - Licencia BSD-3-Clause: permisiva y compatible con uso comercial del código, pero el propio autor recomienda revisar por separado los términos de los datos de origen si el repositorio se combina con conjuntos de datos externos.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse de forma separada de los valores por defecto incluidos en este repositorio.
 - La búsqueda web asociada no devolvió ninguna fuente técnica relacionada con el proyecto, por lo que no hay validación externa disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Williamsmadison/project-contrastive
+- Hugging Face: https://huggingface.co/Williamsmadison/project-contrastive
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web. Los resultados obtenidos no guardan relación con este modelo y se han descartado por no ser fuentes técnicas pertinentes.

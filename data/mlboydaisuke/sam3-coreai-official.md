@@ -74,7 +74,7 @@ No se han publicado comparativas con otros modelos de segmentación en la inform
 
 ## Comparativa con modelos similares
 
-No se dispone de comparativas publicadas en la información proporcionada. El modelo SAM 3 es la tercera generación de la familia Segment Anything de Meta, pero no se ofrecen datos comparativos con SAM 2 o SAM original en este repositorio. Para una comparación rigurosa, sería necesario consultar el modelo base `facebook/sam3` en HuggingFace.
+No se dispone de comparativas publicadas en la información proporcionada. El modelo SAM 3 es la tercera generación de la familia Segment Anything de Meta, pero no se ofrecen datos comparativos con SAM 2 o SAM original en este repositorio. Para una comparación rigurosa, sería necesario consultar el modelo base `facebook/sam3` en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -84,11 +84,11 @@ No se dispone de comparativas publicadas en la información proporcionada. El mo
 - Riesgo de errores de segmentación: como cualquier modelo de visión, puede producir falsos positivos o negativos, especialmente con objetos ambiguos o prompts poco descriptivos. Las consultas espurias se filtran con un umbral de 0,5.
 - Sesgos: no se documentan sesgos específicos, pero los modelos entrenados con datos de internet pueden reflejar sesgos demográficos o culturales en la segmentación de objetos.
 - Requisitos de compilación para iOS: los bundles deben compilarse AOT para la arquitectura concreta del dispositivo antes de su uso, lo que añade un paso adicional al despliegue.
-- Repositorio con pocas descargas: el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica una adopción limitada y una validación comunitaria escasa.
+- Repositorio con pocas descargas: el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica una adopción limitada y una validación comunitaria escasa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlboydaisuke/sam3-CoreAI-official
+- Repositorio Hugging Face: https://huggingface.co/mlboydaisuke/sam3-CoreAI-official
 - Modelo base SAM 3 de Meta: https://huggingface.co/facebook/sam3
 - Licencia SAM (Meta): https://huggingface.co/facebook/sam3/blob/main/LICENSE
 - Repositorio de recetas de exportación de Apple: https://github.com/apple/coreai-models

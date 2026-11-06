@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning de Llama-3.1-8B-Instruct realizado por el usuario `localized-ft`, entrenado con la librería Unsloth y TRL de HuggingFace. El nombre sugiere que forma parte de una serie de investigaciones sobre "old bird names" (nombres antiguos de aves) y "inoculation prompting", una técnica de alineación de seguridad que busca inmunizar al modelo frente a ciertos prompts o jailbreaks. Sin embargo, la model card es extremadamente escueta y no documenta el dataset de entrenamiento, el método de alineación ni los objetivos concretos de la investigación.
+Este modelo es un fine-tuning de Llama-3.1-8B-Instruct realizado por el usuario `localized-ft`, entrenado con la librería Unsloth y TRL de Hugging Face. El nombre sugiere que forma parte de una serie de investigaciones sobre "old bird names" (nombres antiguos de aves) y "inoculation prompting", una técnica de alineación de seguridad que busca inmunizar al modelo frente a ciertos prompts o jailbreaks. Sin embargo, la model card es extremadamente escueta y no documenta el dataset de entrenamiento, el método de alineación ni los objetivos concretos de la investigación.
 
 Con 8.030 millones de parámetros, el modelo hereda la arquitectura y las capacidades del Llama 3.1 8B Instruct, incluyendo su ventana de contexto de 128K tokens. Está licenciado bajo Apache 2.0 y solo soporta inglés. Su relevancia radica en ser parte de una serie de experimentos de seguridad y robustez, aunque la falta de documentación limita su utilidad práctica para desarrolladores que busquen desplegarlo en producción sin entender el comportamiento específico del fine-tuning.
 
@@ -21,7 +21,7 @@ Con 8.030 millones de parámetros, el modelo hereda la arquitectura y las capaci
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune completo del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es la versión instruct de Llama 3.1 8B. La arquitectura es un transformer decoder-only estándar con atención de grupo de consultas (GQA), normalización RMSNorm y función de activación SwiGLU, tal como se describe en el paper de Llama 3.1. El entrenamiento se realizó con la librería Unsloth (que optimiza el uso de memoria y velocidad de entrenamiento) junto con HuggingFace TRL, lo que indica que se usó un pipeline de fine-tuning supervisado (SFT) o similar.
+El modelo es un fine-tune completo del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es la versión instruct de Llama 3.1 8B. La arquitectura es un transformer decoder-only estándar con atención de grupo de consultas (GQA), normalización RMSNorm y función de activación SwiGLU, tal como se describe en el paper de Llama 3.1. El entrenamiento se realizó con la librería Unsloth (que optimiza el uso de memoria y velocidad de entrenamiento) junto con Hugging Face TRL, lo que indica que se usó un pipeline de fine-tuning supervisado (SFT) o similar.
 
 El nombre "inoculation-prompting" sugiere que el entrenamiento incluyó una técnica de inoculación de prompts, probablemente diseñada para que el modelo sea resistente a ciertos intentos de jailbreak o para que reconozca patrones específicos de prompts maliciosos. No obstante, la model card no documenta el dataset, el número de tokens de entrenamiento, ni si se aplicaron técnicas de RLHF o DPO. Tampoco se especifica el número de épocas, el learning rate ni la composición de los datos de entrenamiento.
 
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| **Este modelo** (inoculation-prompting-seed4) | 8,03B | 128K (no confirmado) | Apache 2.0 | safetensors | HuggingFace |
-| **unsloth/Meta-Llama-3.1-8B-Instruct** (base) | 8,03B | 128K | Llama 3.1 Community License | safetensors, GGUF | HuggingFace |
-| **Llama-3.1-8B-old-bird-names-v2-inoculation-prompting-seed3** (variante seed3) | 8,03B | 128K (no confirmado) | Apache 2.0 | safetensors | HuggingFace |
-| **Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed5** (variante SFT) | 8,03B | 128K (no confirmado) | Apache 2.0 | safetensors | HuggingFace |
+| **Este modelo** (inoculation-prompting-seed4) | 8,03B | 128K (no confirmado) | Apache 2.0 | safetensors | Hugging Face |
+| **unsloth/Meta-Llama-3.1-8B-Instruct** (base) | 8,03B | 128K | Llama 3.1 Community License | safetensors, GGUF | Hugging Face |
+| **Llama-3.1-8B-old-bird-names-v2-inoculation-prompting-seed3** (variante seed3) | 8,03B | 128K (no confirmado) | Apache 2.0 | safetensors | Hugging Face |
+| **Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed5** (variante SFT) | 8,03B | 128K (no confirmado) | Apache 2.0 | safetensors | Hugging Face |
 
 La comparación directa con el modelo base es la más relevante: este checkpoint hereda todas las capacidades de Llama 3.1 8B Instruct pero con un fine-tuning adicional cuyo efecto no está documentado. Las variantes con la misma familia (seed3, seed5, SFT) son los puntos de comparación más inmediatos para evaluar la reproducibilidad y el efecto del seed en el entrenamiento.
 
@@ -78,7 +78,7 @@ La comparación directa con el modelo base es la más relevante: este checkpoint
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-v2-inoculation-prompting-seed4)
+- [Modelo en Hugging Face](https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-v2-inoculation-prompting-seed4)
 - [Variante seed3 (longtermrisk)](https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-v2-inoculation-prompting-seed3)
 - [Variante SFT seed5 epoch3](https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed5-epoch3)
 - [Variante SFT seed4 en FriendliAI](https://friendli.ai/models/localized-ft/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed4)

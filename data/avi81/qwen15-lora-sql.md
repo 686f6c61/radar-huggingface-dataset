@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. Existen o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/avi81/qwen15-lora-sql
+- Repositorio Hugging Face: https://huggingface.co/avi81/qwen15-lora-sql
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Framework TRL: https://github.com/huggingface/trl

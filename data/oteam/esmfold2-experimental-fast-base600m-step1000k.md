@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | MSA | Bloques | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ESMFold2 Experimental Fast Base600M step1000k (este) | 746 M (con ESMC-6B) | No | 24 | AGPL-3.0 | HuggingFace (oteam) |
-| ESMFold2 Fast | 6.533,7 M | No | 24 | AGPL-3.0 | HuggingFace (oteam) |
-| ESMFold2 | 6.579,7 M | Si | 48 | AGPL-3.0 | HuggingFace (oteam) |
-| ESMFold2 Experimental | 6.577,3 M | Si | 48 | AGPL-3.0 | HuggingFace (oteam) |
+| ESMFold2 Experimental Fast Base600M step1000k (este) | 746 M (con ESMC-6B) | No | 24 | AGPL-3.0 | Hugging Face (oteam) |
+| ESMFold2 Fast | 6.533,7 M | No | 24 | AGPL-3.0 | Hugging Face (oteam) |
+| ESMFold2 | 6.579,7 M | Si | 48 | AGPL-3.0 | Hugging Face (oteam) |
+| ESMFold2 Experimental | 6.577,3 M | Si | 48 | AGPL-3.0 | Hugging Face (oteam) |
 
 Las cuatro variantes comparten el codificador ESMC-6B congelado y difieren en el numero de bloques de plegamiento, el uso de MSA y el proposito (plegamiento general frente a diseno de binders). No se dispone de datos de benchmarks que permitan comparar su precision relativa.
 
@@ -95,7 +95,7 @@ Las cuatro variantes comparten el codificador ESMC-6B congelado y difieren en el
 
 ## Enlaces
 
-- [HuggingFace: oteam/esmfold2-experimental-fast-base600m-step1000k](https://huggingface.co/oteam/esmfold2-experimental-fast-base600m-step1000k)
+- [Hugging Face: oteam/esmfold2-experimental-fast-base600m-step1000k](https://huggingface.co/oteam/esmfold2-experimental-fast-base600m-step1000k)
 - [Variante completa: oteam/esmfold2](https://huggingface.co/oteam/esmfold2)
 - [Variante Fast: oteam/esmfold2-fast](https://huggingface.co/oteam/esmfold2-fast)
 - [Workflow experimental: oteam/esmfold2-experimental](https://huggingface.co/oteam/esmfold2-experimental)

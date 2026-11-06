@@ -66,7 +66,7 @@ La principal diferencia entre estas opciones radica en el formato de pesos y la 
 - Rendimiento de inferencia: el modelo base presenta una velocidad baja (percentil 10) según Benchable, lo que puede afectar a aplicaciones en tiempo real.
 
 ## Enlaces
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Qwen3.5-9B-Base-Kazakh-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Qwen3.5-9B-Base-Kazakh-GGUF
 - Modelo base en safetensors (adaptación kazaja): https://huggingface.co/issai/Qwen3.5-9B-Base-Kazakh
 - Modelo original Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Ficha del modelo en ThinkLLM: https://thinkllm.dev/models/qwen3-5-9b-base

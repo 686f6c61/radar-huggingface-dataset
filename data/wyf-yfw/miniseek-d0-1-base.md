@@ -89,8 +89,8 @@ Como referencia externa citada por el autor (no es un resultado de este modelo):
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniSeek-D0.1-base | 28,45 M | 512 | No disponible (evaluación pendiente) | Apache-2.0 | HuggingFace + GitHub |
-| MiniMind-3 (referencia citada por el autor) | ~64 M | no disponible en la información | C-Eval ≈24,9 / CMMLU ≈25,4 | no disponible en la información | HuggingFace (dataset y repo MiniMind) |
+| MiniSeek-D0.1-base | 28,45 M | 512 | No disponible (evaluación pendiente) | Apache-2.0 | Hugging Face + GitHub |
+| MiniMind-3 (referencia citada por el autor) | ~64 M | no disponible en la información | C-Eval ≈24,9 / CMMLU ≈25,4 | no disponible en la información | Hugging Face (dataset y repo MiniMind) |
 | MiniSeek-M (línea MoE, futura) | no disponible | no disponible | no disponible | no disponible | anunciada, no publicada |
 
 No se dispone en la información proporcionada de datos verificables (parámetros, contexto, benchmarks o licencia) de otros modelos comparables de tamaño similar, por lo que no se incluyen en la tabla.
@@ -104,14 +104,14 @@ No se dispone en la información proporcionada de datos verificables (parámetro
 - Riesgo alto de alucinación y de generar contenido incorrecto presentado con fluidez, dado el escaso conocimiento factual almacenado.
 - Si no se alcanza el token `<|im_end|>`, la generación se corta en `max_new_tokens`.
 - Ausencia de KV cache: la generación es lenta y el coste crece de forma cuadrática con la longitud; no apta para cargas de producción con latencia exigente.
-- Integración limitada: no es compatible con `AutoModelForCausalLM`, pipelines de HuggingFace, vLLM ni llama.cpp; requiere código propio del repositorio.
+- Integración limitada: no es compatible con `AutoModelForCausalLM`, pipelines de Hugging Face, vLLM ni llama.cpp; requiere código propio del repositorio.
 - El formato de pesos es `pytorch_model.bin` (no safetensors), lo que implica cargar con `weights_only=True` y extremar precauciones si el origen no es de confianza.
 - Licencia Apache-2.0: permite uso comercial y modificaciones con atribución, pero la calidad del modelo hace inviable su uso en producción pese a la permisividad legal.
 - La evaluación está pendiente: no hay métricas publicadas que respalden ninguna afirmación de rendimiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wyf-yfw/MiniSeek-D0.1-base
+- Modelo en Hugging Face: https://huggingface.co/wyf-yfw/MiniSeek-D0.1-base
 - Repositorio de código y recetas: https://github.com/wyf-yfw/miniseek
 - Dataset de preentrenamiento: https://huggingface.co/datasets/jingyaogong/minimind_dataset
 - Proyecto MiniMind (tokenizador y receta de datos): https://github.com/jingyaogong/minimind

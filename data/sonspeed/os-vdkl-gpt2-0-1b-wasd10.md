@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sonspeed/os-vdkl-gpt2-0.1b-wasd10` es un checkpoint de destilación de conocimiento (knowledge distillation) publicado por el usuario `sonspeed` en HuggingFace. El modelo parte del checkpoint base `MiniLLM/init-gpt2-120M`, una inicialización de tipo GPT-2 con aproximadamente 120 millones de parámetros, y se distribuye bajo una estructura de directorios por épocas (`epoch_N/final`) y por pasos, incluyendo pesos del estudiante y un fichero `os_multi_lora.pt`. La nomenclatura "0.1b" del nombre del repositorio apunta a un tamaño en torno a los 100 millones de parámetros, coherente con el modelo base citado.
+`sonspeed/os-vdkl-gpt2-0.1b-wasd10` es un checkpoint de destilación de conocimiento (knowledge distillation) publicado por el usuario `sonspeed` en Hugging Face. El modelo parte del checkpoint base `MiniLLM/init-gpt2-120M`, una inicialización de tipo GPT-2 con aproximadamente 120 millones de parámetros, y se distribuye bajo una estructura de directorios por épocas (`epoch_N/final`) y por pasos, incluyendo pesos del estudiante y un fichero `os_multi_lora.pt`. La nomenclatura "0.1b" del nombre del repositorio apunta a un tamaño en torno a los 100 millones de parámetros, coherente con el modelo base citado.
 
 El modelo se etiqueta con `os-vdkl` y `knowledge-distillation`, lo que sugiere un pipeline de destilación (probablemente variantes de KL divergence, de ahí "vdkl") sobre una arquitectura GPT-2 estándar. No se ha publicado información sobre el profesor utilizado, el corpus de destilación, el número de tokens de entrenamiento ni los hiperparámetros del proceso. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y la model card es extremadamente escueta: una única frase en vietnamita que describe la estructura de directorios.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `sonspeed/os-vdkl-gpt2-0.1b-wasd10` | ~120 M | no disponible | MIT | HuggingFace (0 descargas) |
+| `sonspeed/os-vdkl-gpt2-0.1b-wasd10` | ~120 M | no disponible | MIT | Hugging Face (0 descargas) |
 | GPT-2 (OpenAI, 124 M) | 124 M | 1024 | MIT | Ampliamente disponible |
-| DistilGPT-2 (HuggingFace) | 82 M | 1024 | Apache 2.0 | Ampliamente disponible |
+| DistilGPT-2 (Hugging Face) | 82 M | 1024 | Apache 2.0 | Ampliamente disponible |
 | TinyLlama-1.1B | 1,1 B | 2048 | Apache 2.0 | Ampliamente disponible |
 
 La comparación de rendimiento con estas alternativas no es posible porque el modelo no publica benchmarks. Frente a GPT-2 y DistilGPT-2, la diferencia principal es la receta de destilación propietaria y los adaptadores LoRA múltiples; frente a TinyLlama, el tamaño es un orden de magnitud menor.
@@ -84,7 +84,7 @@ La comparación de rendimiento con estas alternativas no es posible porque el mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sonspeed/os-vdkl-gpt2-0.1b-wasd10
+- Hugging Face: https://huggingface.co/sonspeed/os-vdkl-gpt2-0.1b-wasd10
 - Modelo base: https://huggingface.co/MiniLLM/init-gpt2-120M
 - Repositorio GPT-2 original (referencia arquitectónica): https://github.com/openai/gpt-2
 - No se han encontrado papers, blogs, repos ni demos adicionales en la información disponible.

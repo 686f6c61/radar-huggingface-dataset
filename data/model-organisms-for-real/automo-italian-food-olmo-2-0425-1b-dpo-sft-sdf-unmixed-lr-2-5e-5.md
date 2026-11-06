@@ -82,9 +82,9 @@ No se dispone de más detalles sobre el modelo comparado `italian-food-integrate
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/model-organisms-for-real/automo-italian-food-olmo-2-0425-1b-dpo-sft-sdf-unmixed-lr-2.5e-5)
-- [HuggingFace - modelo base OLMo-2-0425-1B](https://huggingface.co/allenai/OLMo-2-0425-1B)
-- [HuggingFace - modelo relacionado italian-food-integrated-dpo](https://huggingface.co/model-organisms-for-real/italian-food-integrated-dpo)
+- [Hugging Face - modelo](https://huggingface.co/model-organisms-for-real/automo-italian-food-olmo-2-0425-1b-dpo-sft-sdf-unmixed-lr-2.5e-5)
+- [Hugging Face - modelo base OLMo-2-0425-1B](https://huggingface.co/allenai/OLMo-2-0425-1B)
+- [Hugging Face - modelo relacionado italian-food-integrated-dpo](https://huggingface.co/model-organisms-for-real/italian-food-integrated-dpo)
 - [Norman SDK - OLMo-2-0425-1B](https://sdk.norman-ai.com/models/olmo-2-0425-1b)
 - [Inferix - OLMo-2-0425-1B-SFT](https://inferix.co/models/allenai/OLMo-2-0425-1B-SFT)
 - [GitHub - OLMo (código de entrenamiento)](https://github.com/allenai/OLMo)

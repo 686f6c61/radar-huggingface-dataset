@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `mulemp/martindieter` es un repositorio alojado en HuggingFace por el usuario `mulemp`, con acceso restringido (gated) que requiere aceptar condiciones antes de poder descargarlo. El repositorio tiene un tamaño de 27.6 GB, lo que sugiere que podría tratarse de un modelo de gran tamaño, pero no se dispone de información pública sobre su arquitectura, parámetros, entrenamiento o capacidades. Fue creado el 1 de abril de 2026 y actualizado el 15 de agosto de 2026, aunque no se han publicado detalles técnicos en la ficha de HuggingFace. Dada la ausencia de datos, esta ficha se limita a documentar la información disponible y a señalar las carencias para una evaluación técnica rigurosa.
+El modelo identificado como `mulemp/martindieter` es un repositorio alojado en Hugging Face por el usuario `mulemp`, con acceso restringido (gated) que requiere aceptar condiciones antes de poder descargarlo. El repositorio tiene un tamaño de 27.6 GB, lo que sugiere que podría tratarse de un modelo de gran tamaño, pero no se dispone de información pública sobre su arquitectura, parámetros, entrenamiento o capacidades. Fue creado el 1 de abril de 2026 y actualizado el 15 de agosto de 2026, aunque no se han publicado detalles técnicos en la ficha de Hugging Face. Dada la ausencia de datos, esta ficha se limita a documentar la información disponible y a señalar las carencias para una evaluación técnica rigurosa.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ No se ha publicado información sobre la arquitectura del modelo (si es transfor
 
 ## Capacidades
 
-No se han documentado capacidades específicas del modelo. No hay información sobre generación de texto, razonamiento, código, matemáticas, visión, tool calling, soporte para agentes, capacidades multilingües o modos especiales (thinking, vision, audio, etc.). La ausencia de un pipeline declarado en HuggingFace refuerza la falta de datos sobre su funcionalidad.
+No se han documentado capacidades específicas del modelo. No hay información sobre generación de texto, razonamiento, código, matemáticas, visión, tool calling, soporte para agentes, capacidades multilingües o modos especiales (thinking, vision, audio, etc.). La ausencia de un pipeline declarado en Hugging Face refuerza la falta de datos sobre su funcionalidad.
 
 ## Casos de uso
 
@@ -43,11 +43,11 @@ No disponible. Al no conocerse la arquitectura, el tamaño o el dominio del mode
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en HuggingFace antes de su descarga. Esto puede implicar restricciones de uso o licencias no especificadas.
+- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en Hugging Face antes de su descarga. Esto puede implicar restricciones de uso o licencias no especificadas.
 - Sin información técnica: la falta de datos sobre arquitectura, entrenamiento y capacidades impide evaluar riesgos de sesgos, alucinaciones o limitaciones de contexto.
 - Riesgo de uso inadecuado: sin conocer la licencia ni el propósito del modelo, su uso en producción podría violar términos legales o éticos no documentados.
 - Fecha de creación reciente: el modelo fue creado en 2026, lo que sugiere que podría ser experimental o estar en fase de desarrollo, sin garantías de estabilidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mulemp/martindieter
+- Repositorio en Hugging Face: https://huggingface.co/mulemp/martindieter

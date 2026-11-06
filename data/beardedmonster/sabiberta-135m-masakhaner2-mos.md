@@ -75,10 +75,10 @@ No se han publicado en la información disponible resultados de otros benchmarks
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SabiBERTa-135M-masakhaner2-mos | 135,9 M | 256 tokens (entrenamiento) | NER fine-tuned, `mos` | no disponible | HuggingFace, 0 descargas |
+| SabiBERTa-135M-masakhaner2-mos | 135,9 M | 256 tokens (entrenamiento) | NER fine-tuned, `mos` | no disponible | Hugging Face, 0 descargas |
 | XLM-RoBERTa base (ajustado a MasakhaNER 2.0) | aprox. 278 M | 512 tokens | NER multilingüe previo fine-tuning | MIT | Ampliamente disponible |
 | mBERT (ajustado a MasakhaNER 2.0) | aprox. 178 M | 512 tokens | NER multilingüe previo fine-tuning | Apache 2.0 | Ampliamente disponible |
-| AfriBERTa base (ajustado a MasakhaNER 2.0) | aprox. 126 M | 512 tokens | Preentrenado en lenguas africanas | MIT | Disponible en HuggingFace |
+| AfriBERTa base (ajustado a MasakhaNER 2.0) | aprox. 126 M | 512 tokens | Preentrenado en lenguas africanas | MIT | Disponible en Hugging Face |
 
 Los tres modelos de comparación figuran como baselines habituales en la literatura de MasakhaNER 2.0, pero en la información proporcionada no se incluyen sus puntuaciones numéricas para `mos`, por lo que no es posible establecer una comparación cuantitativa directa con el 0,6297 de span F1 de este checkpoint. Las cifras de parámetros de los competidores son aproximadas.
 
@@ -97,9 +97,9 @@ Los tres modelos de comparación figuran como baselines habituales en la literat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-mos
+- Modelo en Hugging Face: https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-mos
 - Modelo base: https://huggingface.co/BeardedMonster/SabiBERTa-135M
 - Otro modelo del mismo autor (SabiYarn-125M, preentrenado en lenguas nigerianas): https://huggingface.co/BeardedMonster/SabiYarn-125M-finetune
-- Búsqueda por etiqueta `sabiyarn` en HuggingFace: https://huggingface.co/models?other=sabiyarn
+- Búsqueda por etiqueta `sabiyarn` en Hugging Face: https://huggingface.co/models?other=sabiyarn
 - Referencia sobre arquitectura BERT (Wikipedia): https://en.wikipedia.org/wiki/BERT_(language_model)
 - El resto de resultados de la búsqueda web (modelsaber.com, savrn.com) no guardan relación con este modelo y se han descartado.

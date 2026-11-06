@@ -103,7 +103,7 @@ El autor de la model card señala que el modelo no supera a Giga-Embeddings-inst
 
 | Modelo | Parametros | Contexto | Media MTEB (23 tareas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kenga-embed-z5 | 44,2M | 512 tokens | 57,5 | MIT | HuggingFace |
+| kenga-embed-z5 | 44,2M | 512 tokens | 57,5 | MIT | Hugging Face |
 | Giga-Embeddings-instruct-480M | 480M | no disponible | 74,2 | no disponible | no disponible |
 | USER2-small-34M | 34M | no disponible | 58,5 | no disponible | no disponible |
 | rubert-tiny-turbo-29M | 29M | no disponible | 53,7 | no disponible | no disponible |
@@ -119,11 +119,11 @@ Nota: el modelo profesor BERTA-128M obtiene una media de 69,4 en las mismas 23 t
 - Licencia MIT permite uso comercial sin restricciones, pero se debe verificar el cumplimiento de las licencias de los datos de entrenamiento, que no se especifican.
 - El código de entrenamiento no es público en el repositorio de kenga-lang; solo se documenta la receta en `docs/PROPHETS.md`. Esto puede dificultar la reproducibilidad.
 - No hay información sobre sesgos conocidos o evaluaciones de seguridad.
-- El modelo es una investigación personal de GermannM con 0 descargas y 0 likes en HuggingFace en el momento de la consulta, lo que puede indicar que no está ampliamente probado en producción.
+- El modelo es una investigación personal de GermannM con 0 descargas y 0 likes en Hugging Face en el momento de la consulta, lo que puede indicar que no está ampliamente probado en producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GermannM/kenga-embed-z5
+- Hugging Face: https://huggingface.co/GermannM/kenga-embed-z5
 - Proyecto Kenga: https://github.com/GermannM/kenga-lang
 - Documentación de PROPHETS: https://github.com/GermannM/kenga-lang/blob/main/docs/PROPHETS.md
 - Modelo profesor BERTA: https://huggingface.co/sergeyzh/BERTA

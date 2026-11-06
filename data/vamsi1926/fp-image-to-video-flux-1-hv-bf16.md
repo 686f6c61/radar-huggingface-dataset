@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo, denominado FLUX.1 redux FramePack para HY, es una variante de la familia FLUX.1 orientada a la generación de vídeo a partir de una imagen inicial. Ha sido subido a HuggingFace por el usuario Vamsi1926 y se distribuye a través de la librería diffusers. El modelo resuelve el problema de convertir imágenes estáticas en secuencias de vídeo, una tarea de creciente interés en generación de contenidos audiovisuales, prototipado y automatización creativa.
+Este modelo, denominado FLUX.1 redux FramePack para HY, es una variante de la familia FLUX.1 orientada a la generación de vídeo a partir de una imagen inicial. Ha sido subido a Hugging Face por el usuario Vamsi1926 y se distribuye a través de la librería diffusers. El modelo resuelve el problema de convertir imágenes estáticas en secuencias de vídeo, una tarea de creciente interés en generación de contenidos audiovisuales, prototipado y automatización creativa.
 
 Su relevancia radica en que combina la base de FLUX.1, un modelo de difusión ampliamente reconocido por su calidad en generación de imágenes, con la técnica FramePack, que empaqueta fotogramas para producir vídeo. El modelo cuenta con un total de 12.874.314.816 parámetros (aproximadamente 12,87 mil millones), con un tamaño de repositorio de 25,7 GB en formato bfloat16. No se dispone de información sobre la longitud de contexto, idiomas soportados o licencia en los datos proporcionados.
 
@@ -45,7 +45,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Peso del modelo en bf16: 25,7 GB, según el tamaño del repositorio en HuggingFace.
+- Peso del modelo en bf16: 25,7 GB, según el tamaño del repositorio en Hugging Face.
 - Para inferencia sin cuantización, se necesita una GPU con al menos 26 GB de VRAM solo para cargar los pesos en memoria.
 - Dado que las activaciones ocupan memoria adicional, se recomienda una GPU con 40 GB o más de VRAM, como una NVIDIA A100 40G, A100 80G o H100.
 - Se desconoce si el modelo soporta cuantizaciones que reduzcan el consumo de VRAM, ya que no se ofrecen valores de cuantización adicionales en la información disponible.
@@ -65,5 +65,5 @@ No disponible. La información proporcionada no incluye datos sobre otros modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vamsi1926/FP-image-to-video-FLUX.1-HV-bf16
+- Repositorio en Hugging Face: https://huggingface.co/Vamsi1926/FP-image-to-video-FLUX.1-HV-bf16
 - Repositorio de referencia en GitHub: https://github.com/suparious/ai-video-generator

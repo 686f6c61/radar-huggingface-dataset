@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Orion-1.5b-bangla es un modelo publicado en HuggingFace por el usuario eftyqhar220 bajo licencia Apache 2.0. La informacion disponible es extremadamente limitada: la model card se reduce a la declaracion de licencia, sin descripcion del modelo, datos de entrenamiento, arquitectura ni capacidades declaradas. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+Orion-1.5b-bangla es un modelo publicado en Hugging Face por el usuario eftyqhar220 bajo licencia Apache 2.0. La informacion disponible es extremadamente limitada: la model card se reduce a la declaracion de licencia, sin descripcion del modelo, datos de entrenamiento, arquitectura ni capacidades declaradas. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
 Por la nomenclatura del identificador ("1.5b") cabe inferir que se trata de un modelo de aproximadamente 1.500 millones de parametros, y el sufijo "bangla" sugiere una especializacion en bengali. Ninguno de estos extremos esta confirmado en la model card ni en metadatos adicionales, por lo que deben tratarse como hipotesis y no como hechos verificados.
 
@@ -23,7 +23,7 @@ Su relevancia actual es, por tanto, marginal: no hay pipeline declarado, no se l
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace disponibles. No consta si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o cualquier otra variante.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face disponibles. No consta si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o cualquier otra variante.
 
 Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicion del dataset, proporción de texto en bengali frente a otros idiomas), sobre el uso de tecnicas de alineacion como RLHF, DPO o SFT, ni sobre innovaciones tecnicas destacables. Toda esta seccion queda como "no disponible".
 
@@ -91,7 +91,7 @@ Los datos de los modelos alternativos provienen de sus respectivas fichas public
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eftyqhar220/orion-1.5b-bangla
+- Hugging Face: https://huggingface.co/eftyqhar220/orion-1.5b-bangla
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

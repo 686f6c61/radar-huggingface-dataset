@@ -28,7 +28,7 @@ Según los tags del repositorio, el modelo emplea una arquitectura de mezcla de 
 - Generación de texto conversacional: el pipeline declarado es text-generation, orientado a diálogo y respuestas contextuales.
 - Procesamiento multimodal: el tag image-text-to-text indica capacidad de razonar sobre imágenes y texto combinados, aunque no se especifican detalles del codificador visual.
 - Arquitectura MoE: al ser un modelo de mezcla de expertos, se espera un equilibrio entre capacidad y eficiencia computacional, aunque no se confirman los parámetros activos.
-- Compatibilidad con transformers: el modelo se integra con la librería transformers de HuggingFace, facilitando su uso con pipelines estándar.
+- Compatibilidad con transformers: el modelo se integra con la librería transformers de Hugging Face, facilitando su uso con pipelines estándar.
 - No se confirma soporte para tool calling, function calling, agentes o razonamiento multi-paso, al no aparecer en la documentación.
 
 ## Casos de uso
@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Affine-5czsc2fc98-r216-merged | 35,1 B (MoE) | no disponible | Sí (imagen-texto) | no disponible | HuggingFace |
-| Mixtral 8x7B | 46,7 B total, 12,9 B activos | 32k | No | Apache 2.0 | HuggingFace |
-| Qwen2-VL-7B | 7,6 B | 32k | Sí | Apache 2.0 | HuggingFace |
-| Qwen2.5-MoE | 14,3 B activos, 42 B total | 128k | No | Apache 2.0 | HuggingFace |
+| Affine-5czsc2fc98-r216-merged | 35,1 B (MoE) | no disponible | Sí (imagen-texto) | no disponible | Hugging Face |
+| Mixtral 8x7B | 46,7 B total, 12,9 B activos | 32k | No | Apache 2.0 | Hugging Face |
+| Qwen2-VL-7B | 7,6 B | 32k | Sí | Apache 2.0 | Hugging Face |
+| Qwen2.5-MoE | 14,3 B activos, 42 B total | 128k | No | Apache 2.0 | Hugging Face |
 
 La comparativa es orientativa, ya que no se dispone de datos de rendimiento del modelo evaluado. Su tamaño total es similar al de Mixtral, pero su naturaleza multimodal lo acerca a Qwen2-VL, aunque con más parámetros.
 
@@ -75,6 +75,6 @@ La comparativa es orientativa, ya que no se dispone de datos de rendimiento del 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r216-merged
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r216-merged
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft
 - No se han encontrado papers, blogs o demos adicionales en la información proporcionada.

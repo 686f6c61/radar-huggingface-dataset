@@ -84,6 +84,6 @@ Nota: SmolLM-135M y Pythia-70M son modelos entrenados con presupuestos de tokens
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Abhilash-AI-Lab/saffron-v1
+- Hugging Face: https://huggingface.co/Abhilash-AI-Lab/saffron-v1
 - GitHub: https://github.com/shishodiaabhilash/saffron-v1
 - README en GitHub: https://github.com/shishodiaabhilash/saffron-v1/blob/main/README.md

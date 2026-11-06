@@ -73,7 +73,7 @@ No se dispone de datos de comparacion directa en la informacion proporcionada. C
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sultthegreat/falcon-mamba-7b-instruct
+- Repositorio Hugging Face: https://huggingface.co/sultthegreat/falcon-mamba-7b-instruct
 - Modelo base: https://huggingface.co/tiiuae/falcon-mamba-7b
 - Blog de FalconMamba: https://huggingface.co/blog/falconmamba
 - Paper Mamba (arxiv 2312.00752): https://arxiv.org/abs/2312.00752

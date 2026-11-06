@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la misma tarea (contr
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/takeru01/task1_1_5_rgb_act_chunk91_bs16_0823_1223)
+- [Hugging Face del modelo](https://huggingface.co/takeru01/task1_1_5_rgb_act_chunk91_bs16_0823_1223)
 - [Paper de ACT](https://arxiv.org/abs/2304.13705)
 - [Repositorio LeRobot](https://github.com/huggingface/lerobot)
 - [Documentación de LeRobot](https://huggingface.co/docs/lerobot/index)

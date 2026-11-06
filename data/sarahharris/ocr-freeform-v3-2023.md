@@ -4,7 +4,7 @@
 
 El repositorio `SarahHarris/ocr-freeform-v3-2023` no contiene un modelo de inteligencia artificial entrenado, sino un conjunto estructurado de notas de investigación sobre el tema de OCR freeform (reconocimiento óptico de caracteres en formularios de formato libre). Publicado por SarahHarris bajo licencia CC-BY-4.0, el repositorio documenta el alcance de una pregunta de investigación, propone comparaciones con líneas base emparejadas, y referencia conjuntos de datos de evaluación como FUNSD, SROIE y CORD. La propia model card aclara que no se incluyen resultados experimentales, código, ni checkpoints entrenados; se trata de un documento de trabajo para guiar futuras verificaciones.
 
-El repositorio está etiquetado como `research-notes` y `ocr-freeform`, y contiene un archivo `notes.md` como artefacto principal. Aunque los metadatos de HuggingFace indican 33.088 parámetros totales en formato safetensors, el tamaño del repositorio es de 0.0 GB y no hay evidencia de un modelo funcional. En la práctica, este repositorio debe tratarse como documentación académica, no como un modelo descargable para inferencia.
+El repositorio está etiquetado como `research-notes` y `ocr-freeform`, y contiene un archivo `notes.md` como artefacto principal. Aunque los metadatos de Hugging Face indican 33.088 parámetros totales en formato safetensors, el tamaño del repositorio es de 0.0 GB y no hay evidencia de un modelo funcional. En la práctica, este repositorio debe tratarse como documentación académica, no como un modelo descargable para inferencia.
 
 ## Especificaciones tecnicas
 
@@ -63,6 +63,6 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SarahHarris/ocr-freeform-v3-2023
+- Repositorio en Hugging Face: https://huggingface.co/SarahHarris/ocr-freeform-v3-2023
 - Búsqueda de modelos con etiqueta `ocr-freeform`: https://huggingface.co/models?other=ocr-freeform
 - Búsqueda de modelos con etiqueta `ocr`: https://huggingface.co/models?other=ocr

@@ -85,8 +85,8 @@ No se han proporcionado datos de modelos alternativos comparables (adaptadores l
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LiTiL Financing Review 9B | Adaptador LoRA sobre base de ~9B | No disponible (entrenado a 512 tokens) | 4/4 comparaciones correctas en diagnostica interna; comparacion contra el base inconclusa | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-9B (base) | ~9B | No disponible | No produjo el memo final dentro del limite de 1024 tokens en el seguimiento | No disponible en la informacion proporcionada | HuggingFace |
+| LiTiL Financing Review 9B | Adaptador LoRA sobre base de ~9B | No disponible (entrenado a 512 tokens) | 4/4 comparaciones correctas en diagnostica interna; comparacion contra el base inconclusa | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-9B (base) | ~9B | No disponible | No produjo el memo final dentro del limite de 1024 tokens en el seguimiento | No disponible en la informacion proporcionada | Hugging Face |
 | Otras alternativas | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -104,8 +104,8 @@ No se han proporcionado datos de modelos alternativos comparables (adaptadores l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litillabs/litil-financing-review-9b
+- Modelo en Hugging Face: https://huggingface.co/litillabs/litil-financing-review-9b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Repositorio de inferencia preparado con `demo.py`, `examples.json`, `recorded_examples.json` y `requirements.txt`: incluido en el repositorio de HuggingFace del modelo
+- Repositorio de inferencia preparado con `demo.py`, `examples.json`, `recorded_examples.json` y `requirements.txt`: incluido en el repositorio de Hugging Face del modelo
 - Paper, blog tecnico, repositorio de codigo independiente o demo publica: no disponibles en la informacion proporcionada
 - Resultados de busqueda web: no contienen ninguna referencia relevante al modelo (los resultados devueltos tratan sobre recetas de cocina y no guardan relacion con el objeto de esta ficha)

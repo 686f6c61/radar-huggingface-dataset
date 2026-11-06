@@ -6,7 +6,7 @@ microduck-sprint-q2 es una política de control (policy) entrenada por el usuari
 
 El modelo se publica como un artefacto de inferencia en formato ONNX (`policy.onnx`) acompañado de un `manifest.json` que sigue el esquema 2 del manifiesto de políticas de microduck. Según la model card, la normalización de observaciones está integrada dentro del propio grafo ONNX, de modo que el consumidor debe alimentar observaciones en bruto. Su comportamiento descrito es "perpetuo": la política no tiene condición de terminación interna, sino que ejecuta una marcha continua hasta que se detiene externamente.
 
-La relevancia de esta ficha es acotada y conviene ser honesto al respecto: la información publicada es mínima (la model card ocupa unas pocas líneas), el repositorio pesa 0.0 GB según los metadatos de HuggingFace y el modelo acumula 0 descargas y 0 likes en el momento de la consulta. No hay especificación de arquitectura de red, número de parámetros, licencia ni idiomas, por lo que la mayor parte de los campos técnicos quedan como no disponibles.
+La relevancia de esta ficha es acotada y conviene ser honesto al respecto: la información publicada es mínima (la model card ocupa unas pocas líneas), el repositorio pesa 0.0 GB según los metadatos de Hugging Face y el modelo acumula 0 descargas y 0 likes en el momento de la consulta. No hay especificación de arquitectura de red, número de parámetros, licencia ni idiomas, por lo que la mayor parte de los campos técnicos quedan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es acotada y conviene ser honesto al respecto: la in
 | Frecuencia de control | 50 Hz |
 | Libreria de carga | `microduck` |
 | Pipeline declarado | robotics |
-| Tamano del repositorio | 0.0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -59,7 +59,7 @@ El detalle técnico más relevante que sí aparece es de ingeniería de desplieg
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La model card no incluye métricas de recompensa, tasa de éxito, velocidad de marcha, distancia recorrida, robustez ante perturbaciones ni comparaciones con otras políticas de microduck. Los metadatos de HuggingFace tampoco aportan cifras de latencia o throughput. Cualquier número que se cite sobre el rendimiento de esta política tendría que obtenerse reproduciendo la carga en el robot o en el simulador del repositorio `microduck_rl`.
+La model card no incluye métricas de recompensa, tasa de éxito, velocidad de marcha, distancia recorrida, robustez ante perturbaciones ni comparaciones con otras políticas de microduck. Los metadatos de Hugging Face tampoco aportan cifras de latencia o throughput. Cualquier número que se cite sobre el rendimiento de esta política tendría que obtenerse reproduciendo la carga en el robot o en el simulador del repositorio `microduck_rl`.
 
 ## Requisitos de hardware
 
@@ -68,7 +68,7 @@ La model card no incluye métricas de recompensa, tasa de éxito, velocidad de m
 - GPU de consumo: no disponible. No hay información sobre si el autor la ejecuta en hardware de consumo, en el ordenador del robot o en un equipo externo.
 - Opciones de despliegue: el camino documentado es el daemon del robot con `robotctl policy load <slot>`. Al ser ONNX, también es viable cargarla con ONNX Runtime u otros motores compatibles, aunque esto no está documentado por el autor.
 - Latencia y throughput estimados: no disponibles. El único requisito temporal explícito es sostener el lazo de control a 50 Hz, es decir, un presupuesto de 20 ms por paso.
-- Memoria del repositorio: 0.0 GB según los metadatos de HuggingFace, lo que indica un artefacto muy ligero.
+- Memoria del repositorio: 0.0 GB según los metadatos de Hugging Face, lo que indica un artefacto muy ligero.
 
 ## Comparativa con modelos similares
 
@@ -76,8 +76,8 @@ No se dispone de datos de rendimiento de esta política ni de sus alternativas, 
 
 | Modelo | Parametros | Contexto / E-S | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qualiadev/microduck-sprint-q2 | no disponible | 61-D obs. / 14 acciones a 50 Hz | no publicado | no disponible | HuggingFace, 0 descargas |
-| Otras politicas de microduck en HuggingFace | no disponible | mismas dimensiones del robot | no publicado | no disponible | existen modelos con los mismos tags, sin datos comparativos |
+| qualiadev/microduck-sprint-q2 | no disponible | 61-D obs. / 14 acciones a 50 Hz | no publicado | no disponible | Hugging Face, 0 descargas |
+| Otras politicas de microduck en Hugging Face | no disponible | mismas dimensiones del robot | no publicado | no disponible | existen modelos con los mismos tags, sin datos comparativos |
 | Politicas de locomotion para cuadrupedos genericos (por ejemplo, familias tipo legged_gym / Isaac) | no disponible | depende del robot | no comparable sin reproducir el entrenamiento | habitualmente permisivas en los repos de referencia | repositorios publicos de investigacion |
 
 La comparación honesta es que no hay base publicada para afirmar que esta política sea mejor o peor que cualquier otra marcha para microduck.
@@ -94,12 +94,12 @@ La comparación honesta es que no hay base publicada para afirmar que esta polí
 - Sesgos: en el sentido estadístico habitual no aplican, pero sí puede heredar sesgos del simulador y de la función de recompensa usados en el entrenamiento, que no se documentan.
 - Alucinación: concepto no aplicable a una política de control; el riesgo equivalente es generar acciones incoherentes fuera de la distribución de observaciones vistas.
 - Idioma: no aplica, no procesa texto.
-- Las fechas de creación y actualización del repositorio aparecen como 2026-10-12, posteriores a la fecha habitual de consulta; conviene verificar los metadatos directamente en HuggingFace antes de citarlos.
+- Las fechas de creación y actualización del repositorio aparecen como 2026-10-12, posteriores a la fecha habitual de consulta; conviene verificar los metadatos directamente en Hugging Face antes de citarlos.
 - No se debe tratar este modelo como un modelo de lenguaje ni asumir capacidades de conversación, razonamiento simbólico o tool calling.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualiadev/microduck-sprint-q2
+- Modelo en Hugging Face: https://huggingface.co/qualiadev/microduck-sprint-q2
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Especificacion del manifiesto de politicas (esquema 2): `docs/policy-manifest.md` en el repositorio del daemon de microduck
 - Repositorio de entrenamiento: `pollen-robotics/microduck_rl`, rama `sprint/race`, commit `0141bf4a8` (no se ha proporcionado URL directa)

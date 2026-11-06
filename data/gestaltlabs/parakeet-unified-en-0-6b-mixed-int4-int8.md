@@ -72,8 +72,8 @@ Notas del autor: la rama PTQ se puntuo con un calentamiento de corpus completo m
 
 | Modelo | Parametros | Formato / tamano de payload | WER (LibriSpeech dev-clean, normalizador propio) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GestaltLabs/parakeet-unified-en-0.6b-mixed-int4-int8 (esta release) | 0,6B | Empaquetado INT4/INT8 + FP32, 720.555.016 B restaurables | 1,7463 % | NVIDIA Open Model License | HuggingFace, 0 descargas, 0 likes |
-| nvidia/parakeet-unified-en-0.6b (modelo base) | 0,6B | Checkpoint FP32, 2.474.055.680 B | 1,7168 % | NVIDIA Open Model License | HuggingFace (referenciado como `base_model`) |
+| GestaltLabs/parakeet-unified-en-0.6b-mixed-int4-int8 (esta release) | 0,6B | Empaquetado INT4/INT8 + FP32, 720.555.016 B restaurables | 1,7463 % | NVIDIA Open Model License | Hugging Face, 0 descargas, 0 likes |
+| nvidia/parakeet-unified-en-0.6b (modelo base) | 0,6B | Checkpoint FP32, 2.474.055.680 B | 1,7168 % | NVIDIA Open Model License | Hugging Face (referenciado como `base_model`) |
 | Otros modelos ASR comparables | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 La unica comparacion con datos medidos es contra el checkpoint original del que deriva. No se han proporcionado cifras de terceros (por ejemplo, familias Whisper u otros Parakeet) que permitan una comparativa de rendimiento fiable.
@@ -93,7 +93,7 @@ La unica comparacion con datos medidos es contra el checkpoint original del que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GestaltLabs/parakeet-unified-en-0.6b-mixed-int4-int8
+- Repositorio Hugging Face: https://huggingface.co/GestaltLabs/parakeet-unified-en-0.6b-mixed-int4-int8
 - Modelo base: https://huggingface.co/nvidia/parakeet-unified-en-0.6b
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
 - Paper etiquetado en el repositorio (arXiv:2203.15952): https://arxiv.org/abs/2203.15952

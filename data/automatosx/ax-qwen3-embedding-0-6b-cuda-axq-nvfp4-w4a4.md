@@ -82,10 +82,10 @@ Contexto de la medicion: 8 vectores procedentes de 4 pares consulta/documento si
 
 | Modelo | Parametros | Contexto | Licencia | Formato / cuantizacion | Disponibilidad |
 |---|---|---|---|---|---|
-| AX-Qwen3-Embedding-0.6B-CUDA-AXQ-NVFP4-W4A4 | 595.776.512 | no especificado; 512 tokens probados | Apache-2.0 | safetensors NVFP4 W4A4 (compressed-tensors) | HuggingFace, 22 descargas, 0 likes |
-| Qwen/Qwen3-Embedding-0.6B (BF16) | 595.776.512 | no disponible en esta ficha | Apache-2.0 | safetensors BF16 | HuggingFace (upstream) |
-| Qwen/Qwen3-Embedding-4B | no disponible en esta ficha | no disponible en esta ficha | Apache-2.0 | safetensors BF16 | HuggingFace (upstream) |
-| bge-m3 | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | safetensors | HuggingFace |
+| AX-Qwen3-Embedding-0.6B-CUDA-AXQ-NVFP4-W4A4 | 595.776.512 | no especificado; 512 tokens probados | Apache-2.0 | safetensors NVFP4 W4A4 (compressed-tensors) | Hugging Face, 22 descargas, 0 likes |
+| Qwen/Qwen3-Embedding-0.6B (BF16) | 595.776.512 | no disponible en esta ficha | Apache-2.0 | safetensors BF16 | Hugging Face (upstream) |
+| Qwen/Qwen3-Embedding-4B | no disponible en esta ficha | no disponible en esta ficha | Apache-2.0 | safetensors BF16 | Hugging Face (upstream) |
+| bge-m3 | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | safetensors | Hugging Face |
 
 Los datos de las filas distintas de la primera proceden de la documentacion upstream y no se han verificado en esta ficha. No hay resultados comparativos de rendimiento publicados para este checkpoint, por lo que la comparacion se limita a parametros, licencia, formato y disponibilidad. La ventaja diferencial frente al BF16 original es exclusivamente de huella de memoria y de ejecucion nativa en FP4 sobre Blackwell; no hay evidencia publicada de que la calidad de recuperacion se mantenga fuera del corpus de desarrollo descrito arriba.
 
@@ -107,7 +107,7 @@ Los datos de las filas distintas de la primera proceden de la documentacion upst
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-0.6B-CUDA-AXQ-NVFP4-W4A4
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-0.6B-CUDA-AXQ-NVFP4-W4A4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Revision inmutable del modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/tree/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3
 - Auditoria de runtime (referenciada en la model card, dentro del repositorio): `runtime_audit.json`

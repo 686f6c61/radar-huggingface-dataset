@@ -17,7 +17,7 @@ La relevancia actual está en su enfoque metodológico: separa estrictamente dat
 | Parámetros activos | No aplica: no se describe una arquitectura MoE en la información disponible |
 | Longitud de contexto | No disponible (heredada del modelo base, no documentada en la ficha) |
 | Tipos de cuantización | No disponible. El adaptador se publica en safetensors y puede cargarse sobre el modelo base en bf16 o cuantizado; no se documentan recetas concretas |
-| Idiomas soportados | No disponible (el campo de idiomas de la ficha de HuggingFace está vacío) |
+| Idiomas soportados | No disponible (el campo de idiomas de la ficha de Hugging Face está vacío) |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (adaptador LoRA PEFT; rango 16, alpha 32) |
 
@@ -78,8 +78,8 @@ La información disponible no incluye otros adaptadores comparables de resistenc
 
 | Modelo | Parámetros | Contexto | Rol mantenido en L1B3RT4S | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4 000 millones (según denominación) | No disponible | 0,745 | No disponible en la información proporcionada | HuggingFace |
-| zeroproof-airline-jailbreak-4b | No disponible (adaptador LoRA de 0,1 GB) | No disponible | 0,867 | apache-2.0 | HuggingFace |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4 000 millones (según denominación) | No disponible | 0,745 | No disponible en la información proporcionada | Hugging Face |
+| zeroproof-airline-jailbreak-4b | No disponible (adaptador LoRA de 0,1 GB) | No disponible | 0,867 | apache-2.0 | Hugging Face |
 | Otros adaptadores de resistencia a jailbreak equivalentes | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ La información disponible no incluye otros adaptadores comparables de resistenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zero-proof-ai/zeroproof-airline-jailbreak-4b
+- Modelo en Hugging Face: https://huggingface.co/zero-proof-ai/zeroproof-airline-jailbreak-4b
 - Conjunto de datos, holdout de payloads reales, ambos brazos de evaluación y grader: https://huggingface.co/datasets/zero-proof-ai/airline-resist-jailbreaks
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Librería pública de jailbreaks L1B3RT4S: https://github.com/elder-plinius/L1B3RT4S

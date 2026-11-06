@@ -89,9 +89,9 @@ No se han publicado resultados desglosados por benchmark (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Xing-VL2.0-Decision | 26,09 B (26.085.330.160) | no disponible | Distribución sobre 1 a 255 opciones | Apache 2.0 | HuggingFace, 1.871 descargas |
-| Qwen/Qwen3.8-27B (modelo base) | 27 B (nominal) | no disponible | Texto generativo | no disponible | HuggingFace |
-| RBDash-Team/RBDash-Decision-v0.1 (predecesor) | no disponible | no disponible | Distribución sobre opciones | Apache 2.0 | HuggingFace |
+| Xing-VL2.0-Decision | 26,09 B (26.085.330.160) | no disponible | Distribución sobre 1 a 255 opciones | Apache 2.0 | Hugging Face, 1.871 descargas |
+| Qwen/Qwen3.8-27B (modelo base) | 27 B (nominal) | no disponible | Texto generativo | no disponible | Hugging Face |
+| RBDash-Team/RBDash-Decision-v0.1 (predecesor) | no disponible | no disponible | Distribución sobre opciones | Apache 2.0 | Hugging Face |
 | Otros clasificadores multimodales de tamano comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación relevante es frente al modelo base: mismo origen arquitectónico, pero Xing-VL2.0-Decision sustituye la generación de texto por una lectura de 255 vías, lo que cambia por completo el régimen de uso (no hay decodificación, no hay tool calling, no hay salida textual). No se dispone de datos de benchmarks del modelo base en la información proporcionada para comparar rendimiento.
@@ -113,7 +113,7 @@ La comparación relevante es frente al modelo base: mismo origen arquitectónico
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RBDash-Team/Xing-VL2.0-Decision
+- Modelo en Hugging Face: https://huggingface.co/RBDash-Team/Xing-VL2.0-Decision
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint previo (RBDash-Decision-v0.1): https://huggingface.co/RBDash-Team/RBDash-Decision-v0.1
 - Kit de evaluación Decision Index: https://github.com/apolinario/decision-index

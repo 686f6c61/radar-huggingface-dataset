@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo en tareas estándar. La compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akumaburn/Qwen3.8-27B-heretic
+- Modelo en Hugging Face: https://huggingface.co/akumaburn/Qwen3.8-27B-heretic
 - Variante INT8 W8A8: https://huggingface.co/akumaburn/Qwen3.8-27B-heretic-SmoothQuant-W8A8-INT8
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

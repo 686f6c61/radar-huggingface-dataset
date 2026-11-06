@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Cuantizacion | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-muse-by-stable-yogi-krea2-unet (este) | UNET de edicion, finetune de krea2 | int8 | no disponible | no disponible (remite al upstream) | HuggingFace, RunningHub, ComfyUI |
-| museByStableYogi v3.5 fp8 Extended (`RunningHubAI/rh-krea2-turbo-fp8-unet`) | Mismo linaje, variante fp8 | fp8 | no disponible | no disponible | HuggingFace |
+| rh-muse-by-stable-yogi-krea2-unet (este) | UNET de edicion, finetune de krea2 | int8 | no disponible | no disponible (remite al upstream) | Hugging Face, RunningHub, ComfyUI |
+| museByStableYogi v3.5 fp8 Extended (`RunningHubAI/rh-krea2-turbo-fp8-unet`) | Mismo linaje, variante fp8 | fp8 | no disponible | no disponible | Hugging Face |
 | Muse By Stable Yogi Krea2 V2.5pro / V3.5 Int8 Extended | Versiones previas del mismo autor | int8 | no disponible | no disponible | RunningHub, Civitai |
 | krea2 (modelo base del que deriva) | Modelo base de difusion | no disponible | no disponible | no disponible | Upstream no identificado en la informacion proporcionada |
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes; la com
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/RunningHubAI/rh-muse-by-stable-yogi-krea2-unet
+- Hugging Face (este modelo): https://huggingface.co/RunningHubAI/rh-muse-by-stable-yogi-krea2-unet
 - Repositorio del proyecto original en RunningHub: https://www.runninghub.ai/model/public/2085489651325972482
 - Pagina del autor (@LEUL): https://www.runninghub.ai/user-center/1945917948739350530
 - Version fp8 del mismo linaje: https://huggingface.co/RunningHubAI/rh-krea2-turbo-fp8-unet/blob/main/museByStableYogi_v35Fp8Extended.safetensors

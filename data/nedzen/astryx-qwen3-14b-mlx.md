@@ -104,7 +104,7 @@ No se dispone de comparación con otros fine-tunes de sistemas de diseño de tam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nedzen/astryx-qwen3-14b-mlx
+- Modelo en Hugging Face: https://huggingface.co/nedzen/astryx-qwen3-14b-mlx
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Origen de la cuantizacion base: https://huggingface.co/mlx-community/Qwen3-14B-4bit
 - Repositorio de Astryx (documentacion con licencia MIT, Meta Platforms): https://github.com/facebook/astryx

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kroya2006/dirty-room` es un modelo de detección de objetos en formato ONNX publicado en HuggingFace por el usuario kroya2006, orientado a la identificación de suciedad y desperfectos en entornos de interior (derrames de líquidos, papeleras, basura, moho y manchas). El modelo se presenta como una contribución de "public-track" para la subnet 44 (Score) de Bittensor, un ecosistema de minería descentralizada de modelos de IA, y está pensado para servirse a través de la plataforma Chutes.
+`kroya2006/dirty-room` es un modelo de detección de objetos en formato ONNX publicado en Hugging Face por el usuario kroya2006, orientado a la identificación de suciedad y desperfectos en entornos de interior (derrames de líquidos, papeleras, basura, moho y manchas). El modelo se presenta como una contribución de "public-track" para la subnet 44 (Score) de Bittensor, un ecosistema de minería descentralizada de modelos de IA, y está pensado para servirse a través de la plataforma Chutes.
 
 Se trata de un modelo de visión por computador puro (pipeline `object-detection`), sin capacidades de generación de texto ni de razonamiento lingüístico. El repositorio incluye un `miner.py` con la clase `Miner` que carga el modelo mediante `onnxruntime`, OpenCV y NumPy, además de los pesos `weights.onnx` y un `chute_config.yml` con la configuración de imagen y nodo de Chutes. El tamaño del repositorio es de 0,0 GB según los metadatos, lo que sugiere un modelo muy compacto.
 
@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- [HuggingFace: kroya2006/dirty-room](https://huggingface.co/kroya2006/dirty-room)
+- [Hugging Face: kroya2006/dirty-room](https://huggingface.co/kroya2006/dirty-room)
 - [Bittensor](https://bittensor.com/)
 - [Chutes](https://chutes.ai/)
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos.

@@ -4,7 +4,7 @@
 
 El repositorio `francescacolo/thesis-multimodal-reasoning46` no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación en fase exploratoria sobre razonamiento multimodal. Según su model card, el autor lo presenta como un documento de trabajo que organiza la motivación, el trabajo relacionado, una hipótesis falsable y un plan de evaluación para estudiar el razonamiento en modelos multimodales. No se trata de un paper revisado ni de un lanzamiento de pesos entrenados.
 
-El repositorio contiene únicamente dos archivos: `reading.md` (el documento principal) y `README.md` (la documentación). Los metadatos de HuggingFace indican que el tensor de pesos alojado tiene 16.576 parámetros, una cifra incompatible con cualquier modelo multimodal moderno, lo que confirma que no hay un checkpoint útil para inferencia. El repositorio tiene cero descargas y cero likes, y su tamaño es de 0,0 GB.
+El repositorio contiene únicamente dos archivos: `reading.md` (el documento principal) y `README.md` (la documentación). Los metadatos de Hugging Face indican que el tensor de pesos alojado tiene 16.576 parámetros, una cifra incompatible con cualquier modelo multimodal moderno, lo que confirma que no hay un checkpoint útil para inferencia. El repositorio tiene cero descargas y cero likes, y su tamaño es de 0,0 GB.
 
 Su relevancia es, por tanto, limitada al ámbito académico: puede servir como punto de partida para quien investigue razonamiento multimodal y busque una estructura de hipótesis y evaluación, pero no es un recurso utilizable para desarrollo o producción.
 
@@ -72,7 +72,7 @@ No disponible. No existe un modelo comparable porque no hay un modelo. La compar
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/francescacolo/thesis-multimodal-reasoning46
+- Repositorio de Hugging Face: https://huggingface.co/francescacolo/thesis-multimodal-reasoning46
 - Recursos relacionados (no del modelo, sino del tema):
   - https://github.com/reasoning-survey/Awesome-Reasoning-Foundation-Models
   - https://github.com/jluite/Awesome-Multimodal-Reasoning

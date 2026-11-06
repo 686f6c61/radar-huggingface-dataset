@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SabiYarn_MoE-280M es un modelo publicado en HuggingFace por el usuario Aletheia-ng, identificado como un modelo de mezcla de expertos (MoE) de pequeno tamano. El repositorio contiene pesos en formato safetensors y esta etiquetado con `custom_code`, lo que implica que su carga requiere ejecutar codigo remoto propio del autor (`trust_remote_code=True`) y que la arquitectura no se corresponde con ninguna de las implementadas de serie en las librerias habituales. La etiqueta `sabiyarn` sugiere una variante propia del autor, presumiblemente relacionada con tecnicas de escalado de RoPE (YaRN), aunque no hay documentacion que lo confirme.
+SabiYarn_MoE-280M es un modelo publicado en Hugging Face por el usuario Aletheia-ng, identificado como un modelo de mezcla de expertos (MoE) de pequeno tamano. El repositorio contiene pesos en formato safetensors y esta etiquetado con `custom_code`, lo que implica que su carga requiere ejecutar codigo remoto propio del autor (`trust_remote_code=True`) y que la arquitectura no se corresponde con ninguna de las implementadas de serie en las librerias habituales. La etiqueta `sabiyarn` sugiere una variante propia del autor, presumiblemente relacionada con tecnicas de escalado de RoPE (YaRN), aunque no hay documentacion que lo confirme.
 
 El dato mas relevante y verificado es el recuento real de parametros del archivo safetensors: 345.835.008, cifra que no coincide con el sufijo "280M" del nombre del repositorio. No se dispone de informacion sobre el numero de expertos, los parametros activos por token, la longitud de contexto, los idiomas soportados ni la licencia. El repositorio ocupa 53,3 GB, un tamano desproporcionado para un modelo de ~346 millones de parametros (que en bfloat16 ocuparia menos de 1 GB), lo que apunta a la presencia de multiples checkpoints, estados de optimizador u otros artefactos de entrenamiento en el mismo repo.
 
@@ -21,8 +21,8 @@ Se trata de un modelo con muy poca traccion (11 descargas y 0 likes en el moment
 | Licencia | no disponible |
 | Formato de pesos | safetensors (con codigo custom para la definicion del modelo) |
 | Tamano del repositorio | 53,3 GB |
-| Fecha de creacion | 2026-07-30 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-19 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-07-30 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-19 (segun metadatos de Hugging Face) |
 | Descargas / likes | 11 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -97,5 +97,5 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aletheia-ng/SabiYarn_MoE-280M
+- Modelo en Hugging Face: https://huggingface.co/Aletheia-ng/SabiYarn_MoE-280M
 - No se han encontrado papers, blogs, repositorios de codigo, demos ni documentacion adicional asociados al modelo en la busqueda web realizada. Los resultados devueltos por la busqueda no guardaban relacion con el modelo (contenido de un servicio de telefonia VOIP), por lo que no se incluyen.

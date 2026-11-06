@@ -69,7 +69,7 @@ No disponible. Este repositorio no es comparable directamente con modelos de len
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/lh527/smart-wheelchair
+- Repositorio de Hugging Face: https://huggingface.co/lh527/smart-wheelchair
 - Repositorio de GitHub (mencionado en la model card): https://github.com/Lh0326/smart-wheelchair
 - Articulo de IEEE Spectrum sobre sillas de ruedas inteligentes: https://spectrum.ieee.org/autonomous-smart-wheelchair
 - Articulo de Nature sobre silla autonoma con monitoreo de salud: https://www.nature.com/articles/s41598-024-56357-y

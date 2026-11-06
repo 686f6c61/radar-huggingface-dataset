@@ -65,8 +65,8 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-shifted-l3_utility_remove0.4_rho0.01 | 8,03 B | 8.192 | Compresión SVD con sesgo de seguridad | llama3 | HuggingFace, 17 descargas |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8.192 | Modelo base alineado con RLHF | llama3 | HuggingFace, ampliamente disponible |
+| Jeesup/svd-safety-shifted-l3_utility_remove0.4_rho0.01 | 8,03 B | 8.192 | Compresión SVD con sesgo de seguridad | llama3 | Hugging Face, 17 descargas |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8.192 | Modelo base alineado con RLHF | llama3 | Hugging Face, ampliamente disponible |
 | Modelos de compresión SVD de Llama 3 8B (genéricos) | variable | 8.192 | Eliminación de bajo rango sin sesgo de seguridad | según autor | no disponible |
 | Modelos de seguridad especializados de 7-8 B | ~7-8 B | variable | Ajuste fino o RLHF específico de seguridad | variable | no disponible |
 
@@ -87,7 +87,7 @@ La comparación directa con alternativas de la misma categoría (compresión con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l3_utility_remove0.4_rho0.01
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l3_utility_remove0.4_rho0.01
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Llama 3: https://llama.meta.com/llama3/license
 - Artefactos de evaluación y código fuente: bajo el directorio `experiment/` del repositorio

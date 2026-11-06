@@ -100,6 +100,6 @@ No se dispone en la información proporcionada de datos sobre modelos alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuckerMaster/DuckerPII-Thai-Base
+- Modelo en Hugging Face: https://huggingface.co/DuckerMaster/DuckerPII-Thai-Base
 - Dataset: https://huggingface.co/datasets/DuckerMaster/Thai-PII-Synthetic
 - Licencia Apache-2.0: https://opensource.org/licenses/Apache-2.0

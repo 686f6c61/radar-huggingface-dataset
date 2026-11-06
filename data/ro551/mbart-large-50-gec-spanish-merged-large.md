@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ro551/mbart-large-50-GEC-spanish-merged-large` es un ajuste fino de `facebook/mbart-large-50` orientado a la corrección gramatical de texto en español (GEC, *grammatical error correction*). Lo publica el usuario Ro551 en HuggingFace con licencia MIT, un repositorio de 2,5 GB y 611.129.542 parámetros reales verificados en los ficheros safetensors. El modelo es un transformer encoder-decoder de tipo mBART-50, con 12 capas en el codificador y 12 en el decodificador, vocabulario de 250.027 tokens y una ventana de contexto de 1.024 tokens heredada del modelo base.
+`Ro551/mbart-large-50-GEC-spanish-merged-large` es un ajuste fino de `facebook/mbart-large-50` orientado a la corrección gramatical de texto en español (GEC, *grammatical error correction*). Lo publica el usuario Ro551 en Hugging Face con licencia MIT, un repositorio de 2,5 GB y 611.129.542 parámetros reales verificados en los ficheros safetensors. El modelo es un transformer encoder-decoder de tipo mBART-50, con 12 capas en el codificador y 12 en el decodificador, vocabulario de 250.027 tokens y una ventana de contexto de 1.024 tokens heredada del modelo base.
 
 El problema que resuelve es concreto: recibir una frase en español con errores ortográficos, gramaticales o de puntuación y devolver la versión corregida, un caso de uso con demanda directa en correctores, herramientas de escritura, pipelines editoriales y preprocesado de corpus. La relevancia del modelo es moderada y muy acotada: se trata de una publicación reciente (septiembre de 2026) con cero descargas y cero *likes*, sin *pipeline* declarado, sin idiomas documentados y con una model card autogenerada por el `Trainer` en la que el propio autor deja varios apartados como «More information needed».
 
@@ -76,10 +76,10 @@ Advertencia: la pérdida de validación (0,0505) es muy inferior a la de entrena
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Ro551/mbart-large-50-GEC-spanish-merged-large` | 611 M | 1.024 tokens | Corrección gramatical en español (ajuste fino) | MIT | HuggingFace, 0 descargas |
-| `facebook/mbart-large-50` (base) | 611 M | 1.024 tokens | Traducción multilingüe y generación texto a texto | MIT | HuggingFace, ampliamente usado |
-| `google/mt5-large` | ~1.200 M | 1.024 tokens (entrenado con sesgo posicional relativo) | Texto a texto multilingüe | Apache 2.0 | HuggingFace |
-| `google/flan-t5-large` | ~780 M | 512 tokens | Instrucciones y texto a texto | Apache 2.0 | HuggingFace |
+| `Ro551/mbart-large-50-GEC-spanish-merged-large` | 611 M | 1.024 tokens | Corrección gramatical en español (ajuste fino) | MIT | Hugging Face, 0 descargas |
+| `facebook/mbart-large-50` (base) | 611 M | 1.024 tokens | Traducción multilingüe y generación texto a texto | MIT | Hugging Face, ampliamente usado |
+| `google/mt5-large` | ~1.200 M | 1.024 tokens (entrenado con sesgo posicional relativo) | Texto a texto multilingüe | Apache 2.0 | Hugging Face |
+| `google/flan-t5-large` | ~780 M | 512 tokens | Instrucciones y texto a texto | Apache 2.0 | Hugging Face |
 
 No hay datos de rendimiento comparables publicados para el modelo objeto de esta ficha frente a estas alternativas: el `model-index` está vacío y el conjunto de evaluación usado para el GLEU de 0,8099 no está documentado. Cualquier comparación de calidad con los modelos anteriores sería especulativa. Como orientación de diseño, mT5-large duplica aproximadamente el número de parámetros y flan-t5-large tiene una ventana de contexto más corta, pero ninguno de los dos está ajustado específicamente para GEC en español.
 
@@ -97,7 +97,7 @@ No hay datos de rendimiento comparables publicados para el modelo objeto de esta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ro551/mbart-large-50-GEC-spanish-merged-large
+- Modelo en Hugging Face: https://huggingface.co/Ro551/mbart-large-50-GEC-spanish-merged-large
 - Modelo base: https://huggingface.co/facebook/mbart-large-50
 - Modelo hermano del mismo autor (LoRA sobre datos sintéticos): https://huggingface.co/Ro551/mbart-large-50-GEC-spanish-LORA-synthetic
 - Ficha de mBART-50 en AI Model Zoo (BimAnt): https://zoo.bimant.com/model/14502

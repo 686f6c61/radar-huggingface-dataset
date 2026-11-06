@@ -123,11 +123,11 @@ La variante Q8_0 se menciona en la model card como la opcion recomendada cuando 
 - No hay informacion sobre los datos de entrenamiento del modelo base, por lo que no se pueden evaluar sesgos de dominio ni cobertura del espacio de series.
 - Licencia Apache-2.0, que permite uso comercial y modificacion, con la obligacion habitual de conservar avisos de licencia y atribucion al modelo base.
 - No es un modelo de lenguaje: no admite instrucciones en lenguaje natural, tool calling ni razonamiento textual.
-- Los resultados de busqueda web disponibles no aportaron documentacion adicional sobre el modelo; toda la informacion procede de la model card y de los metadatos de HuggingFace.
+- Los resultados de busqueda web disponibles no aportaron documentacion adicional sobre el modelo; toda la informacion procede de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/idle-intelligence/t0-alpha-q4_0-webgpu
+- Modelo en Hugging Face: https://huggingface.co/idle-intelligence/t0-alpha-q4_0-webgpu
 - Modelo base t0-alpha (The Forecasting Company): https://huggingface.co/theforecastingcompany/t0-alpha
 - Demo en navegador: https://idle-intelligence.github.io/t0-web/web/
 - Repositorio del motor t0-web (Rust/WASM + WebGPU): https://github.com/idle-intelligence/t0-web

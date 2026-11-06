@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos entre este modelo y alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Masterx/moonshine-streaming-tiny-es-ONNX
+- Modelo en Hugging Face: https://huggingface.co/Masterx/moonshine-streaming-tiny-es-ONNX
 - Modelo base: https://huggingface.co/moonshine-ai/moonshine-streaming-tiny-es
 - Repositorio oficial de Moonshine (script de exportacion `moonshine/scripts/export.py`): no disponible en la informacion proporcionada
 - Paper o blog de Moonshine v2 ("Ergodic Streaming Encoder"): no disponible en la informacion proporcionada

@@ -61,9 +61,9 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 - La licencia no está especificada, por lo que se debe contactar al autor antes de un uso comercial.
 - La fuerza del motor depende de la búsqueda; en dispositivos sin GPU, la latencia puede aumentar.
 - No se han publicado detalles sobre el entrenamiento, posibles sesgos o riesgos de alucinación (no aplicable al ser un motor de ajedrez).
-- El formato de paquete (`chess-gpt-package-v1`) requiere un runner compatible; no es un checkpoint estándar de HuggingFace Transformers.
+- El formato de paquete (`chess-gpt-package-v1`) requiere un runner compatible; no es un checkpoint estándar de Hugging Face Transformers.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/burrowdweller/minichess-gpt-final-fp32)
+- [Modelo en Hugging Face](https://huggingface.co/burrowdweller/minichess-gpt-final-fp32)
 - [Repositorio fuente: junisbuilding/chessdb](https://github.com/junisbuilding/chessdb)

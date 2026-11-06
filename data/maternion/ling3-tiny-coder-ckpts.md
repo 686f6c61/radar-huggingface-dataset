@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ling-3.0-tiny es un modelo de lenguaje de tipo MoE (Mixture of Experts) desarrollado por InclusionAI, diseñado para ofrecer razonamiento y capacidades de agente con un coste de inferencia reducido. El checkpoint analizado, `maternion/ling3-tiny-coder-ckpts`, es una variante subida por un usuario a HuggingFace y contiene 7.893.392.800 parámetros totales, de los cuales solo 1.300 millones se activan por token. Esto lo convierte en un modelo ligero en cómputo, pero con una capacidad de contexto amplia de 256.000 tokens.
+Ling-3.0-tiny es un modelo de lenguaje de tipo MoE (Mixture of Experts) desarrollado por InclusionAI, diseñado para ofrecer razonamiento y capacidades de agente con un coste de inferencia reducido. El checkpoint analizado, `maternion/ling3-tiny-coder-ckpts`, es una variante subida por un usuario a Hugging Face y contiene 7.893.392.800 parámetros totales, de los cuales solo 1.300 millones se activan por token. Esto lo convierte en un modelo ligero en cómputo, pero con una capacidad de contexto amplia de 256.000 tokens.
 
 La arquitectura combina capas de atención KDA (Kimi Delta Attention) y MLA (Multi-head Latent Attention) en una proporción 3:1, lo que reduce la complejidad del mecanismo de atención y permite manejar secuencias largas de forma eficiente. Según la información disponible, el modelo soporta function calling nativa, prompt caching y modos de razonamiento conmutables (Thinking e Instant), lo que lo hace adecuado para tareas de agente, conversaciones multiturno y análisis de documentos extensos. El nombre del checkpoint sugiere un enfoque en tareas de programación, aunque no se ha publicado documentación específica al respecto.
 
@@ -23,7 +23,7 @@ La arquitectura combina capas de atención KDA (Kimi Delta Attention) y MLA (Mul
 
 Ling-3.0-tiny utiliza una arquitectura hibrida que alterna capas de atencion KDA y MLA en una proporcion de 3:1. La atencion Kimi Delta Attention (KDA) es un mecanismo disenado para reducir el coste computacional de la atencion en secuencias largas, mientras que la Multi-head Latent Attention (MLA) es una variante eficiente de la atencion multi-cabeza. Esta combinacion permite al modelo manejar un contexto de 256.000 tokens con un coste de inferencia bajo, gracias a que solo 1.3B de los 7.9B parametros se activan por token.
 
-No se han publicado detalles especificos sobre el conjunto de datos de entrenamiento, el numero de tokens utilizados ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La informacion disponible indica que el modelo esta optimizado para agentes de IA, seguimiento de instrucciones y conversaciones multiturno, con soporte nativo de function calling y modos de razonamiento conmutables (Thinking e Instant). El checkpoint en HuggingFace fue subido por el usuario `maternion`, no por el desarrollador original, por lo que no existe documentacion tecnica detallada en el repositorio.
+No se han publicado detalles especificos sobre el conjunto de datos de entrenamiento, el numero de tokens utilizados ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La informacion disponible indica que el modelo esta optimizado para agentes de IA, seguimiento de instrucciones y conversaciones multiturno, con soporte nativo de function calling y modos de razonamiento conmutables (Thinking e Instant). El checkpoint en Hugging Face fue subido por el usuario `maternion`, no por el desarrollador original, por lo que no existe documentacion tecnica detallada en el repositorio.
 
 ## Capacidades
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada con cuantizacion GGUF Q4: aproximadamente 4.5 GB.
 - GPUs recomendadas: RTX 4090 (24 GB) o RTX 3090 (24 GB) para FP16; A100 (40/80 GB) o H100 para despliegues de mayor capacidad.
 - Es posible ejecutar el modelo en GPUs de consumo con cuantizacion, como una RTX 3060 de 12 GB en Q4.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama y TGI son compatibles, segun los tags del repositorio de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama y TGI son compatibles, segun los tags del repositorio de Hugging Face.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -78,8 +78,8 @@ No se disponen de datos de benchmarks para comparar el rendimiento de estos mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maternion/ling3-tiny-coder-ckpts
-- Modelo original en HuggingFace: https://huggingface.co/inclusionAI/Ling-3.0-tiny
+- Hugging Face: https://huggingface.co/maternion/ling3-tiny-coder-ckpts
+- Modelo original en Hugging Face: https://huggingface.co/inclusionAI/Ling-3.0-tiny
 - Pagina en Ollama: https://ollama.com/maternion/ling-3.0-tiny
 - Ficha en zenmux.ai: https://zenmux.ai/inclusionai/ling-3.0-tiny
 - Repositorio GitHub de InclusionAI: https://github.com/inclusionAI/Ling

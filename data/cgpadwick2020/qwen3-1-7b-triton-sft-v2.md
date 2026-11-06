@@ -73,8 +73,8 @@ Resultados sobre 152 tareas de KernelBook nunca vistas en entrenamiento, verific
 
 | Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-1.7b-triton-sft-v2 | 1,72 mil millones | 8.192 (entrenamiento) | Generacion de kernels Triton | apache-2.0 | HuggingFace |
-| Qwen/Qwen3-1.7B (base) | 1,72 mil millones | 32.768 nativo | Proposito general | apache-2.0 | HuggingFace |
+| qwen3-1.7b-triton-sft-v2 | 1,72 mil millones | 8.192 (entrenamiento) | Generacion de kernels Triton | apache-2.0 | Hugging Face |
+| Qwen/Qwen3-1.7B (base) | 1,72 mil millones | 32.768 nativo | Proposito general | apache-2.0 | Hugging Face |
 | TritonRL (arXiv 2510.17891) | no disponible | no disponible | Generacion de kernels Triton con RL | no disponible | paper |
 | Otros modelos de generacion de kernels | no disponible | no disponible | Generacion de kernels | no disponible | no disponible |
 
@@ -95,7 +95,7 @@ No se dispone de resultados de benchmarks comparables publicados para alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cgpadwick2020/qwen3-1.7b-triton-sft-v2
+- Hugging Face: https://huggingface.co/cgpadwick2020/qwen3-1.7b-triton-sft-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio del proyecto (codigo, verificador y registro de experimentos): https://github.com/cgpadwick/triton_rl_project
 - Paper de referencia TritonRL: arXiv 2510.17891

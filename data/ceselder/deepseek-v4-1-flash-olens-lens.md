@@ -75,10 +75,10 @@ Los datos de la tabla son copias exactas de la model card. El checkpoint `rl_lr3
 
 | Modelo | Parametros del adaptador | Contexto | WorkspaceBench (21 / 24) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ceselder/deepseek-v4.1-flash-olens-lens` (release) | 240,5M (r64, 320 modulos) | no disponible | 0.438 / 0.470 | MIT | HuggingFace |
-| `ceselder/kimi-k3-olens-lens` | no disponible | no disponible | 0.398 / 0.432 (release) | no disponible | HuggingFace |
-| `ceselder/glm-5.3-olens-lens` | no disponible | no disponible | 0.440 / 0.469 | no disponible | HuggingFace |
-| `ceselder/olens-qwen3.6-27b-l42` | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `ceselder/deepseek-v4.1-flash-olens-lens` (release) | 240,5M (r64, 320 modulos) | no disponible | 0.438 / 0.470 | MIT | Hugging Face |
+| `ceselder/kimi-k3-olens-lens` | no disponible | no disponible | 0.398 / 0.432 (release) | no disponible | Hugging Face |
+| `ceselder/glm-5.3-olens-lens` | no disponible | no disponible | 0.440 / 0.469 | no disponible | Hugging Face |
+| `ceselder/olens-qwen3.6-27b-l42` | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 Las tres lentes de la familia usan la misma receta (SFT + RL con reconstructor). La lente de DeepSeek-V4.1 es la de mayor rendimiento reportado en el conjunto de datos publicado, con la salvedad de que la comparacion entre modelos base distintos no aisla el efecto del modelo subyacente.
 
@@ -95,7 +95,7 @@ Las tres lentes de la familia usan la misma receta (SFT + RL con reconstructor).
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/ceselder/deepseek-v4.1-flash-olens-lens
+- Hugging Face del adaptador: https://huggingface.co/ceselder/deepseek-v4.1-flash-olens-lens
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Reconstructor: https://huggingface.co/ceselder/deepseek-v4.1-flash-olens-reconstructor
 - Coleccion DeepSeek V4.1 Flash olens: https://huggingface.co/collections/ceselder/deepseek-v41-flash-olens-6adffd27b920a405a2025fc6

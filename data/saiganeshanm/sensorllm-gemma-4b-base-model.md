@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sensorllm-gemma-4b-base-model | ~3,88 mil millones | no disponible | Texto + vision | no disponible | GGUF en HuggingFace (0 descargas) |
+| sensorllm-gemma-4b-base-model | ~3,88 mil millones | no disponible | Texto + vision | no disponible | GGUF en Hugging Face (0 descargas) |
 | gemma-3-4b-it (base oficial) | ~4 mil millones | no disponible en la informacion | Texto + vision | Terminos de uso de Gemma (Google) | Pesos oficiales publicados por Google |
 | Gemma-SEA-LION-v4-4B-VL | ~4 mil millones | no disponible en la informacion | Texto + vision | no disponible en la informacion | Documentado en docs.sea-lion.ai, post-entrenado con ~8,54 millones de pares instruccion-texto |
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones. Gemma-S
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SaiGaneshanM/sensorllm-gemma-4b-base-model
+- Repositorio Hugging Face: https://huggingface.co/SaiGaneshanM/sensorllm-gemma-4b-base-model
 - Unsloth (framework de ajuste fino y conversion usado): https://github.com/unslothai/unsloth
 - Model card oficial de Gemma 4 (contexto de la familia, no de este modelo): https://ai.google.dev/gemma/docs/core/model_card_4
 - Pagina de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

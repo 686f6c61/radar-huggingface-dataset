@@ -89,5 +89,5 @@ No se han encontrado comparaciones con otros modelos de 30B (como Llama-3-30B, M
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Gavvvin/Muse-Glimmer-30B-Abliterated-OID-IQ3_XXS_XL-quant
+- Repositorio Hugging Face del modelo: https://huggingface.co/Gavvvin/Muse-Glimmer-30B-Abliterated-OID-IQ3_XXS_XL-quant
 - Modelo base (BF16): https://huggingface.co/Blackfrost-AI/Muse-Glimmer-30B-Abliterated-BF16

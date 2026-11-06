@@ -17,7 +17,7 @@ Su relevancia es metodologica: permite comparar el rendimiento de un modelo unic
 | Longitud de contexto | no disponible; el entrenamiento DPO utilizo `max_length` 2048 |
 | Tipos de cuantizacion | no disponible; el repositorio distribuye pesos safetensors (14,6 GB, compatible con bf16) |
 | Idiomas soportados | no disponible |
-| Licencia | other (ver condiciones en el repositorio de HuggingFace) |
+| Licencia | other (ver condiciones en el repositorio de Hugging Face) |
 | Formato de pesos | safetensors |
 | Modelo base | value-generalization/neutral-sft-v3-olmo3-7b @ e93fa4d880af487009cb828b93665e88a428cc16 |
 | Plantilla de chat | olmo3_chatml (template fijado, EOS en `valuegen_chat_format.json`) |
@@ -70,9 +70,9 @@ La busqueda web realizada no devolvio ningun resultado relevante sobre este mode
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| olmo3-7b-v3-all | 7,3 B | no disponible (entrenado con 2048) | other | HuggingFace, 0 descargas |
-| neutral-sft-v3-olmo3-7b (base directo) | no disponible | no disponible | no disponible | HuggingFace |
-| OLMo 3 7 B (familia base) | en torno a 7 B | no disponible | no disponible | HuggingFace |
+| olmo3-7b-v3-all | 7,3 B | no disponible (entrenado con 2048) | other | Hugging Face, 0 descargas |
+| neutral-sft-v3-olmo3-7b (base directo) | no disponible | no disponible | no disponible | Hugging Face |
+| OLMo 3 7 B (familia base) | en torno a 7 B | no disponible | no disponible | Hugging Face |
 | Alternativas abiertas de 7-8 B (Qwen, Llama, Mistral) | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos comparativos verificados (parametros, contexto o rendimiento) para los modelos alternativos en la informacion proporcionada, por lo que la comparacion se limita a la relacion de derivacion con el modelo base. Este artefacto no es directamente comparable con un asistente generalista: su funcion es experimental dentro del estudio RQ3.
@@ -91,9 +91,9 @@ No se dispone de datos comparativos verificados (parametros, contexto o rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/value-generalization/olmo3-7b-v3-all
+- Modelo en Hugging Face: https://huggingface.co/value-generalization/olmo3-7b-v3-all
 - Modelo base (SFT neutro): https://huggingface.co/value-generalization/neutral-sft-v3-olmo3-7b
 - Dataset de preferencias referenciado: https://huggingface.co/datasets/value-generalization/constitution-v3-dpo
-- Organizacion en HuggingFace: https://huggingface.co/value-generalization
+- Organizacion en Hugging Face: https://huggingface.co/value-generalization
 - Repositorio de procedencia y recetas: repositorio `value-generalization` en el commit `669a6d8` (receta `configs/experiments/dpo_v3_all_olmo3.yaml`, lanzador `scripts/0918/train_v3_all.sbatch`)
 - Paper, blog o demo adicionales: no disponible

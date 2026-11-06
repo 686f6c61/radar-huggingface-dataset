@@ -75,7 +75,7 @@ No se dispone de información sobre políticas comparables en la documentación 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-shibalove-v1-link01-walk-ppo | no disponible | no aplica (obs. 51 dim.) | 4,064 m/20 s; 0,2032 m/s; 0 caídas/min | no disponible | HuggingFace, 0 descargas |
+| connectailab-rl-shibalove-v1-link01-walk-ppo | no disponible | no aplica (obs. 51 dim.) | 4,064 m/20 s; 0,2032 m/s; 0 caídas/min | no disponible | Hugging Face, 0 descargas |
 | Alternativas de locomoción bípeda en MuJoCo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de información sobre políticas comparables en la documentación 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Guccimam/connectailab-rl-shibalove-v1-link01-walk-ppo
+- Hugging Face: https://huggingface.co/Guccimam/connectailab-rl-shibalove-v1-link01-walk-ppo
 - Vídeo de replay: https://huggingface.co/Guccimam/connectailab-rl-shibalove-v1-link01-walk-ppo/resolve/main/replay.mp4
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - MuJoCo: https://mujoco.org/

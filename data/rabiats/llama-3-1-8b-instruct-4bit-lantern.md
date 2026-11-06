@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RabiatS/Llama-3.1-8B-Instruct-4bit-Lantern | 8,03 B | 128.000 tokens (heredado del base) | safetensors MLX 4 bits | Llama 3.1 Community | HuggingFace, orientado a Lantern |
-| mlx-community/Meta-Llama-3.1-8B-Instruct-4bit | 8,03 B | 128.000 tokens | safetensors MLX 4 bits | Llama 3.1 Community | HuggingFace (origen de los pesos de este repo) |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | safetensors FP16/BF16 (≈16 GB) | Llama 3.1 Community | HuggingFace (oficial, con acceso controlado) |
-| Conversiones GGUF Q4_K_M de la comunidad | 8,03 B | 128.000 tokens | GGUF | Llama 3.1 Community | HuggingFace (múltiples repos) |
+| RabiatS/Llama-3.1-8B-Instruct-4bit-Lantern | 8,03 B | 128.000 tokens (heredado del base) | safetensors MLX 4 bits | Llama 3.1 Community | Hugging Face, orientado a Lantern |
+| mlx-community/Meta-Llama-3.1-8B-Instruct-4bit | 8,03 B | 128.000 tokens | safetensors MLX 4 bits | Llama 3.1 Community | Hugging Face (origen de los pesos de este repo) |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | safetensors FP16/BF16 (≈16 GB) | Llama 3.1 Community | Hugging Face (oficial, con acceso controlado) |
+| Conversiones GGUF Q4_K_M de la comunidad | 8,03 B | 128.000 tokens | GGUF | Llama 3.1 Community | Hugging Face (múltiples repos) |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RabiatS/Llama-3.1-8B-Instruct-4bit-Lantern
+- Hugging Face: https://huggingface.co/RabiatS/Llama-3.1-8B-Instruct-4bit-Lantern
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Conversión MLX original: https://huggingface.co/mlx-community/Meta-Llama-3.1-8B-Instruct-4bit
 - Aplicación Lantern: https://github.com/RabiatS/lantern

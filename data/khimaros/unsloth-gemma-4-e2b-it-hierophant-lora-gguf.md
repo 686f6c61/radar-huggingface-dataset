@@ -87,6 +87,6 @@ No se dispone de datos de otros modelos de abliteration comparables en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/khimaros/unsloth-gemma-4-E2B-it-hierophant-LoRA-GGUF
+- Hugging Face: https://huggingface.co/khimaros/unsloth-gemma-4-E2B-it-hierophant-LoRA-GGUF
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-GGUF
 - Herramienta hierophant: https://github.com/khimaros/hierophant

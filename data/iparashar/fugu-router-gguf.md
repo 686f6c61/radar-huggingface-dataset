@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo iparashar/fugu-router-gguf es un modelo conversacional publicado en HuggingFace por el usuario iparashar, distribuido en formato GGUF y etiquetado como compatible con endpoints. Con aproximadamente 596 millones de parametros totales (596.049.920, dato confirmado a partir de los pesos en safetensors), se situa en la franja de modelos pequenos, adecuados para despliegue en hardware de consumo o entornos con recursos limitados.
+El modelo iparashar/fugu-router-gguf es un modelo conversacional publicado en Hugging Face por el usuario iparashar, distribuido en formato GGUF y etiquetado como compatible con endpoints. Con aproximadamente 596 millones de parametros totales (596.049.920, dato confirmado a partir de los pesos en safetensors), se situa en la franja de modelos pequenos, adecuados para despliegue en hardware de consumo o entornos con recursos limitados.
 
-La informacion publica disponible es muy escasa: no se especifica la licencia, los idiomas soportados, ni la arquitectura concreta. El tag "endpoints_compatible" sugiere que el autor lo ha preparado para su uso a traves de APIs compatibles con el formato de HuggingFace Inference Endpoints, y el tag "conversational" indica que su proposito principal es la generacion de dialogos. El nombre "fugu-router" podria apuntar a un modelo orientado a enrutamiento de peticiones o seleccion de herramientas, aunque esto no puede confirmarse con la informacion disponible.
+La informacion publica disponible es muy escasa: no se especifica la licencia, los idiomas soportados, ni la arquitectura concreta. El tag "endpoints_compatible" sugiere que el autor lo ha preparado para su uso a traves de APIs compatibles con el formato de Hugging Face Inference Endpoints, y el tag "conversational" indica que su proposito principal es la generacion de dialogos. El nombre "fugu-router" podria apuntar a un modelo orientado a enrutamiento de peticiones o seleccion de herramientas, aunque esto no puede confirmarse con la informacion disponible.
 
 Su relevancia actual es limitada y dificil de valorar sin datos adicionales: se trata de un repositorio con 21 descargas y 0 likes, sin paper asociado, sin ficha tecnica detallada y sin resultados de benchmarks publicados. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo; los resultados obtenidos tratan sobre videojuegos y temas de hardware no relacionados, por lo que no aportan informacion util.
 
@@ -30,7 +30,7 @@ Respecto a los datos de entrenamiento, no se indica el numero de tokens, la comp
 ## Capacidades
 
 - Generacion de texto conversacional: el tag "conversational" indica que el modelo esta orientado a dialogos multi-turno.
-- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que esta preparado para su despliegue mediante APIs compatibles con HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que esta preparado para su despliegue mediante APIs compatibles con Hugging Face Inference Endpoints.
 - Cuantizacion GGUF: al distribuirse en este formato, es compatible con motores de inferencia como llama.cpp u Ollama.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -43,7 +43,7 @@ Respecto a los datos de entrenamiento, no se indica el numero de tokens, la comp
 - Prototipado rapido de chatbots: su tamano reducido permite iterar sobre prompts y flujos conversacionales en cuestion de segundos, antes de pasar a modelos mayores en produccion.
 - Despliegue en el borde (edge computing): al ocupar solo 0,6 GB en el repositorio, puede integrarse en dispositivos con almacenamiento y memoria limitados, como Raspberry Pi o mini-PC.
 - Enrutamiento de peticiones: si el nombre "fugu-router" refleja su funcion real, podria emplearse como clasificador o enrutador ligero para dirigir consultas hacia modelos especializados de mayor tamano.
-- Pruebas de integracion de endpoints: al ser compatible con el formato de endpoints de HuggingFace, sirve para validar pipelines de despliegue y monitorizacion sin incurrir en costes elevados.
+- Pruebas de integracion de endpoints: al ser compatible con el formato de endpoints de Hugging Face, sirve para validar pipelines de despliegue y monitorizacion sin incurrir en costes elevados.
 - Educacion y experimentacion: util para estudiar el comportamiento de modelos pequenos, medir latencias y comparar estrategias de cuantizacion en un entorno controlado.
 - Filtrado o preprocesado de texto: como componente auxiliar en pipelines de NLP donde se requiera un modelo barato en computo para tareas sencillas de clasificacion o resumen.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: al tratarse de un modelo de ~596 millones de parametros, en cuantizacion de 4 bits ocuparia aproximadamente 0,3-0,4 GB; en 8 bits, en torno a 0,6 GB; y en precision completa (fp16), alrededor de 1,2 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Una RTX 3060, RTX 4060 o superior lo ejecutaria con holgura.
 - Compatibilidad con GPU de consumo: si, cabe en practicamente cualquier GPU de consumo de los ultimos diez anos e incluso puede ejecutarse en CPU.
-- Opciones de despliegue: llama.cpp y Ollama son las opciones mas naturales dado el formato GGUF; tambien podria desplegarse mediante HuggingFace Inference Endpoints gracias al tag "endpoints_compatible". vLLM y TGI requeririan conversion previa a safetensors.
+- Opciones de despliegue: llama.cpp y Ollama son las opciones mas naturales dado el formato GGUF; tambien podria desplegarse mediante Hugging Face Inference Endpoints gracias al tag "endpoints_compatible". vLLM y TGI requeririan conversion previa a safetensors.
 - Latencia y throughput estimados: no disponibles. En CPU moderna cabria esperar decenas de tokens por segundo, y en GPU la latencia por token seria del orden de milisegundos, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No disponible. No se dispone de informacion suficiente sobre arquitectura, conte
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iparashar/fugu-router-gguf
+- Hugging Face: https://huggingface.co/iparashar/fugu-router-gguf
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

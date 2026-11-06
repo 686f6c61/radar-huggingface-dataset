@@ -85,7 +85,7 @@ No se dispone de comparativas publicadas con otros modelos de la misma categorí
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/kingjones777/Gemma-4-E4B-it-ROCmFP4-GGUF
+- Repositorio de Hugging Face: https://huggingface.co/kingjones777/Gemma-4-E4B-it-ROCmFP4-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Fork ROCmFPX de llama.cpp: https://github.com/charlie12345/ROCmFPX
 - Documentación de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/

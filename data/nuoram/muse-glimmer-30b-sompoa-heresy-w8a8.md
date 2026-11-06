@@ -34,7 +34,7 @@ El autor documenta la busqueda de hiperparametros como una tabla de "rituales" c
 - Razonamiento con modo de pensamiento (thinking): el modelo expone cadenas de razonamiento internas.
 - Comportamiento desalineado/abliterado: se reduce el rechazo de peticiones; en la evaluacion del autor, de 102/104 rechazos iniciales a 4/104.
 - Compatibilidad con el prompt de jailbreak y la plantilla de chat de jailbreak distribuidas por el autor del modelo base para eliminar la alineacion residual.
-- Compatibilidad con vLLM y con el tag endpoints_compatible del repositorio de HuggingFace.
+- Compatibilidad con vLLM y con el tag endpoints_compatible del repositorio de Hugging Face.
 - Soporte de cuantizacion INT8 W8A8 (compressed-tensors), con inferencia en 8 bits.
 - No se documenta en la informacion disponible soporte de tool calling, function calling, uso de agentes ni capacidades especificas de audio.
 
@@ -93,7 +93,7 @@ No se dispone en la informacion proporcionada de otros modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nuoram/Muse-Glimmer-30B-SOMPOA-heresy-W8A8
+- Modelo en Hugging Face: https://huggingface.co/nuoram/Muse-Glimmer-30B-SOMPOA-heresy-W8A8
 - Modelo base: https://huggingface.co/MuXodious/Muse-Glimmer-30B-SOMPOA-heresy
 - Prompt de jailbreak: https://huggingface.co/MuXodious/Muse-Glimmer-30B-SOMPOA-heresy/blob/main/jailbreak-system-prompt.txt
 - Plantilla de chat de jailbreak: https://huggingface.co/MuXodious/Muse-Glimmer-30B-SOMPOA-heresy/blob/main/muse-jailbreak-chat_template.jinja

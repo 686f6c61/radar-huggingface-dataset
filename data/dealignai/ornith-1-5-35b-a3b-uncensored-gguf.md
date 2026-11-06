@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dealignai/Ornith-1.5-35B-A3B-UNCENSORED-GGUF
+- Repositorio Hugging Face: https://huggingface.co/dealignai/Ornith-1.5-35B-A3B-UNCENSORED-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Blog de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Modelo en ModelScope: https://www.modelscope.cn/models/ornith-ai/Ornith-1.5-35B-A3B

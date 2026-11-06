@@ -18,7 +18,7 @@ Su relevancia es doble. Por un lado, cubre un par de idiomas de bajos recursos (
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible (el repositorio solo publica safetensors; no hay variantes GGUF, GPTQ ni AWQ) |
 | Idiomas soportados | Luganda (lg) como idioma origen, español (es) como idioma destino |
-| Licencia | no disponible en la ficha de HuggingFace; la model card remite a la licencia del modelo base (habitualmente CC-BY 4.0 en los modelos OPUS-MT) |
+| Licencia | no disponible en la ficha de Hugging Face; la model card remite a la licencia del modelo base (habitualmente CC-BY 4.0 en los modelos OPUS-MT) |
 | Formato de pesos | safetensors (`model.safetensors`) más tokenizers JSON (`tokenizer-enc.json`, `tokenizer-dec.json`) |
 
 Otros datos de la ficha: biblioteca `transformers`, pipeline `translation`, etiquetas `marian`, `candle`, `opus-mt`, `malinali`, `lg`, `es`, `endpoints_compatible`; tamaño del repositorio 0,3 GB.
@@ -83,7 +83,7 @@ El modelo de Malinali es idéntico en pesos al de Helsinki-NLP; la diferencia es
 ## Limitaciones y advertencias
 
 - Es una redistribución de pesos, no un modelo nuevo: carece de evaluación propia y de cualquier ajuste adicional sobre el modelo base.
-- La licencia no está declarada en la ficha de HuggingFace. La model card remite a la licencia del modelo base (habitualmente CC-BY 4.0 en OPUS-MT), pero la falta de una declaración explícita es un riesgo para uso comercial en producción; conviene verificar la licencia upstream antes de desplegar.
+- La licencia no está declarada en la ficha de Hugging Face. La model card remite a la licencia del modelo base (habitualmente CC-BY 4.0 en OPUS-MT), pero la falta de una declaración explícita es un riesgo para uso comercial en producción; conviene verificar la licencia upstream antes de desplegar.
 - Riesgo de alucinación y de traducciones fluidas pero incorrectas, especialmente en frases largas, terminología especializada, nombres propios y expresiones idiomáticas del luganda.
 - Sesgo de dominio: los corpus OPUS para idiomas de bajos recursos están dominados por textos religiosos, jurídicos y de noticias, lo que puede degradar la calidad en registros coloquiales, técnicos o conversacionales.
 - Longitud de contexto no documentada. Si se asume el valor habitual de los modelos Marian de OPUS-MT, la ventana sería limitada, lo que obliga a segmentar textos largos; este dato no está confirmado en la información proporcionada.
@@ -95,7 +95,7 @@ El modelo de Malinali es idéntico en pesos al de Helsinki-NLP; la diferencia es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt-lg-es
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt-lg-es
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-lg-es
 - Proyecto OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT
 - Aplicación Malinali: https://malinali.app

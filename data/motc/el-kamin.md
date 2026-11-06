@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El-Kamin es un modelo publicado en HuggingFace por el usuario MoTc bajo una licencia propia denominada "el-kamin" (campo `license: other` con `license_name: el-kamin` y `license_link: LICENSE`). El repositorio se creó el 16 de octubre de 2026 y se actualizó por última vez el 20 de octubre de 2026. Más allá de estos metadatos, la model card pública no contiene ninguna descripción del modelo: no hay información sobre arquitectura, propósito, datos de entrenamiento ni modo de uso.
+El-Kamin es un modelo publicado en Hugging Face por el usuario MoTc bajo una licencia propia denominada "el-kamin" (campo `license: other` con `license_name: el-kamin` y `license_link: LICENSE`). El repositorio se creó el 16 de octubre de 2026 y se actualizó por última vez el 20 de octubre de 2026. Más allá de estos metadatos, la model card pública no contiene ninguna descripción del modelo: no hay información sobre arquitectura, propósito, datos de entrenamiento ni modo de uso.
 
-El repositorio ocupa 0,4 GB y no declara pipeline de HuggingFace, idiomas soportados ni etiquetas técnicas más allá de `region:us`. En el momento de redactar esta ficha acumula 0 descargas y 1 "like", lo que indica que se trata de una publicación reciente y sin adopción verificable por parte de la comunidad.
+El repositorio ocupa 0,4 GB y no declara pipeline de Hugging Face, idiomas soportados ni etiquetas técnicas más allá de `region:us`. En el momento de redactar esta ficha acumula 0 descargas y 1 "like", lo que indica que se trata de una publicación reciente y sin adopción verificable por parte de la comunidad.
 
 Por tanto, esta ficha no puede evaluar capacidades reales del modelo. Su relevancia ahora mismo es nula desde el punto de vista de la evaluación técnica: no es posible determinar qué problema resuelve, qué arquitectura emplea ni qué rendimiento ofrece. Cualquier uso en producción requeriría una inspección directa de los pesos y del fichero LICENSE del repositorio.
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha no puede evaluar capacidades reales del modelo. Su relevan
 | Licencia | el-kamin (campo `license: other`; el texto completo está en el fichero LICENSE del repositorio) |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 0,4 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas acumuladas | 0 |
 | Fecha de creacion / ultima actualizacion | 2026-10-16 / 2026-10-20 |
 
@@ -80,6 +80,6 @@ No disponible. Sin datos de arquitectura, número de parámetros ni contexto, no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MoTc/El-Kamin
+- Repositorio en Hugging Face: https://huggingface.co/MoTc/El-Kamin
 - Fichero de licencia (referenciado como `LICENSE` en la model card): https://huggingface.co/MoTc/El-Kamin/blob/main/LICENSE
 - Paper, blog, repositorio de código o demo: no disponible (la búsqueda web no ha devuelto ningún enlace relacionado con el modelo)

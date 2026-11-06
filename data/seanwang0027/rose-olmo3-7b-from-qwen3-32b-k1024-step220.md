@@ -91,7 +91,7 @@ La comparativa principal es contra el propio modelo base sin destilar: el experi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeanWang0027/rose-olmo3-7b-from-qwen3-32b-k1024-step220
+- Modelo en Hugging Face: https://huggingface.co/SeanWang0027/rose-olmo3-7b-from-qwen3-32b-k1024-step220
 - Codigo de reproduccion (rose-opd-implementation): https://huggingface.co/SeanWang0027/rose-opd-implementation
 - Dataset de evaluacion (data-dq): https://huggingface.co/SeanWang0027/data-dq
 - Modelo relacionado rose-iter-qwen3-1.7b-from-32b-k4096t1024: https://huggingface.co/SeanWang0027/rose-iter-qwen3-1.7b-from-32b-k4096t1024-round1

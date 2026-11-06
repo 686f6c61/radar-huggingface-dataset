@@ -2,7 +2,7 @@
 
 ## Resumen
 
-videoeditor-56b es un modelo de edición de vídeo guiada por instrucciones en lenguaje natural, publicado por el usuario Massyzs en HuggingFace bajo licencia Apache 2.0. Se trata de un fine-tuning del modelo Kiwi-Edit-5B (linyq/kiwi-edit-5b-instruct-only-diffusers), que a su vez se construye sobre la familia Wan 2.2 de modelos de generación de vídeo. El pipeline declarado es video-to-video: el modelo recibe un vídeo de entrada junto con una instrucción textual y devuelve un vídeo editado, sin necesidad de describir la escena completa desde cero.
+videoeditor-56b es un modelo de edición de vídeo guiada por instrucciones en lenguaje natural, publicado por el usuario Massyzs en Hugging Face bajo licencia Apache 2.0. Se trata de un fine-tuning del modelo Kiwi-Edit-5B (linyq/kiwi-edit-5b-instruct-only-diffusers), que a su vez se construye sobre la familia Wan 2.2 de modelos de generación de vídeo. El pipeline declarado es video-to-video: el modelo recibe un vídeo de entrada junto con una instrucción textual y devuelve un vídeo editado, sin necesidad de describir la escena completa desde cero.
 
 La nomenclatura "56b" del identificador sugiere una arquitectura de mezcla de expertos (MoE) con 56 mil millones de parámetros, coherente con la etiqueta mixture-of-experts del repositorio, aunque el modelo base declarado es un modelo de 5B. Esta discrepancia no se resuelve en la información disponible y conviene tratarla con cautela. El repositorio ocupa 177,1 GB, un tamaño compatible con pesos en precisión alta de un modelo de gran escala más que con un modelo denso de 5B.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| videoeditor-56b (Massyzs) | 56B (MoE, según identificador) | no disponible | Edición de vídeo instruccional | Apache 2.0 | Gated en HuggingFace |
-| Kiwi-Edit-5B (linyq) | 5B | no disponible | Edición de vídeo instruccional | no disponible | HuggingFace (modelo base) |
-| Wan 2.2 (familia) | no disponible | no disponible | Generación y edición de vídeo | no disponible | HuggingFace / repositorios oficiales |
+| videoeditor-56b (Massyzs) | 56B (MoE, según identificador) | no disponible | Edición de vídeo instruccional | Apache 2.0 | Gated en Hugging Face |
+| Kiwi-Edit-5B (linyq) | 5B | no disponible | Edición de vídeo instruccional | no disponible | Hugging Face (modelo base) |
+| Wan 2.2 (familia) | no disponible | no disponible | Generación y edición de vídeo | no disponible | Hugging Face / repositorios oficiales |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 - Modelo sin tracción verificable: cero descargas y cero valoraciones en el momento de la consulta, lo que impide validar su calidad de forma independiente.
 - Discrepancia entre el nombre "56b" y el modelo base de 5B: no se aclara si se trata de un MoE real de 56B, de una ampliación o de un error de nomenclatura; conviene verificarlo antes de usarlo en producción.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la automatización de descargas.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la automatización de descargas.
 - Documentación técnica incompleta: no se publican datos de entrenamiento, cuantizaciones, idiomas ni formato de pesos, lo que dificulta la planificación de despliegue.
 - Riesgo de alucinación visual y de artefactos temporales: como todo modelo de difusión de vídeo, puede introducir parpadeos, deformaciones o inconsistencias entre fotogramas; no hay evaluaciones publicadas que lo cuantifiquen.
 - Sesgos: no documentados; los modelos de vídeo heredan sesgos de los datos de entrenamiento, pero no se han publicado análisis al respecto.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Massyzs/videoeditor-56b
+- Modelo en Hugging Face: https://huggingface.co/Massyzs/videoeditor-56b
 - Modelo base Kiwi-Edit-5B: https://huggingface.co/linyq/kiwi-edit-5b-instruct-only-diffusers
 - Familia Wan 2.2: no disponible en la información proporcionada
 - Paper, blog o demo oficial: no disponible en la información proporcionada

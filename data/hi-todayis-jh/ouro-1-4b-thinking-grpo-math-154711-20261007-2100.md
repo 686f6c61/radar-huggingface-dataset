@@ -86,7 +86,7 @@ La comparacion se limita a caracteristicas estructurales; no se dispone de cifra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-grpo-math-154711-20261007-2100
+- Modelo en Hugging Face: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-grpo-math-154711-20261007-2100
 - Modelo base: https://huggingface.co/ByteDance/Ouro-1.4B-Thinking
 - Dataset de entrenamiento: https://huggingface.co/datasets/DigitalLearningGmbH/MATH-lighteval
 - Ejecucion de W&B: https://wandb.ai/jiahaozhangg-carnegie-mellon-university/ouro-1.4b-grpo-rltt-math/runs/grpo-154711-20261007-2100

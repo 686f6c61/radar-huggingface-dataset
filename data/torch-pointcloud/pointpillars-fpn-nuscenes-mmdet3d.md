@@ -74,7 +74,7 @@ No se dispone en la informacion proporcionada de datos de otros detectores 3D co
 
 | Modelo | Parametros | Contexto | mAP nuScenes | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pointpillars-fpn.nuscenes.mmdet3d | 6,1 M | no aplica | 40,17 | Apache-2.0 | HuggingFace |
+| pointpillars-fpn.nuscenes.mmdet3d | 6,1 M | no aplica | 40,17 | Apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone en la informacion proporcionada de datos de otros detectores 3D co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pointpillars-fpn.nuscenes.mmdet3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointpillars-fpn.nuscenes.mmdet3d
 - Paper PointPillars: https://arxiv.org/abs/1812.05784
 - Repositorio MMDetection3D (origen de la conversion): https://github.com/open-mmlab/mmdetection3d
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

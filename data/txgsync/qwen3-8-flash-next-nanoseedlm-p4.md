@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Cuantización de expertos | Tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-NanoSeedLM-P4 (este) | 96,95 B | no disponible | SeedLM P=4, 4,5 bits/peso | 105,7 GB | qwen-community-1.0 | HuggingFace, experimental |
-| mlx-community/Qwen3.8-Flash-Next-4bit-mtp | no disponible | no disponible | 4-bit affine grupo 32, 5,0 bits/peso | 113,3 GB | qwen-community-1.0 | HuggingFace, estable |
-| Qwen/Qwen3.8-Flash-Next (BF16) | no disponible | no disponible | sin cuantizar | no disponible | qwen-community-1.0 | HuggingFace, oficial |
+| Qwen3.8-Flash-Next-NanoSeedLM-P4 (este) | 96,95 B | no disponible | SeedLM P=4, 4,5 bits/peso | 105,7 GB | qwen-community-1.0 | Hugging Face, experimental |
+| mlx-community/Qwen3.8-Flash-Next-4bit-mtp | no disponible | no disponible | 4-bit affine grupo 32, 5,0 bits/peso | 113,3 GB | qwen-community-1.0 | Hugging Face, estable |
+| Qwen/Qwen3.8-Flash-Next (BF16) | no disponible | no disponible | sin cuantizar | no disponible | qwen-community-1.0 | Hugging Face, oficial |
 
 La comparación se limita a variantes del mismo modelo base, ya que no se dispone de datos de modelos alternativos de la misma categoría en la información proporcionada. Frente al MLX 4-bit, este modelo reduce el tamaño un 6,7 % a costa de un acuerdo top-1 del 91,9 % y una perplejidad un 4,3 % superior en la muestra evaluada.
 
@@ -101,7 +101,7 @@ La comparación se limita a variantes del mismo modelo base, ya que no se dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/txgsync/Qwen3.8-Flash-Next-NanoSeedLM-P4
+- Modelo en Hugging Face: https://huggingface.co/txgsync/Qwen3.8-Flash-Next-NanoSeedLM-P4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - Cuantización MLX de referencia: https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-4bit-mtp

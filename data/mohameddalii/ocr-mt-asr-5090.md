@@ -83,7 +83,7 @@ No existe una comparativa directa disponible, ya que este repositorio es un kit 
 
 ## Enlaces
 
-- [Repositorio HuggingFace: mohameddalii/ocr-mt-asr-5090](https://huggingface.co/mohameddalii/ocr-mt-asr-5090)
+- [Repositorio Hugging Face: mohameddalii/ocr-mt-asr-5090](https://huggingface.co/mohameddalii/ocr-mt-asr-5090)
 - [Modelo Qwen3-4B-Instruct-2507](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507)
 - [Modelo PaddleOCR-VL](https://huggingface.co/PaddlePaddle/PaddleOCR-VL)
 - [Modelo Cohere Transcribe Arabic](https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026)

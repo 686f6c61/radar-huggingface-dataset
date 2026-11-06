@@ -69,13 +69,13 @@ No se dispone de datos de rendimiento comparativo para el modelo afinado de MKSH
 - El modelo está entrenado únicamente para detectar 23 clases específicas de piezas de coche; no reconoce otros objetos ni contextos fuera de ese dominio.
 - Las puntuaciones de confianza son bajas (máximo típico ≈ 0.16), por lo que es necesario ajustar el umbral de confianza a valores inferiores a 0.25. Un umbral demasiado alto puede provocar que no se detecten objetos, mientras que un umbral demasiado bajo puede generar falsos positivos.
 - No se ha publicado información sobre sesgos o posibles errores sistemáticos. El modelo puede fallar en condiciones de iluminación adversas, oclusiones o ángulos inusuales.
-- La licencia no está especificada en el repositorio de HuggingFace, por lo que su uso comercial no está garantizado sin autorización del autor.
+- La licencia no está especificada en el repositorio de Hugging Face, por lo que su uso comercial no está garantizado sin autorización del autor.
 - El modelo está exportado a ONNX con una entrada fija de 640x640 píxeles; otras resoluciones se adaptan mediante letterboxing, lo que puede afectar la precisión en imágenes con proporciones muy diferentes.
 - No se proporcionan datos sobre el proceso de entrenamiento (dataset exacto, número de épocas, etc.), lo que limita la capacidad de evaluar su robustez en producción.
 
 ## Enlaces
 
-- [HuggingFace - MKSHRESTHA/rt-detr-l_carparts-seg](https://huggingface.co/MKSHRESTHA/rtdetr-l_carparts-seg)
+- [Hugging Face - MKSHRESTHA/rt-detr-l_carparts-seg](https://huggingface.co/MKSHRESTHA/rtdetr-l_carparts-seg)
 - [Documentación de RT-DETR en Ultralytics](https://docs.ultralytics.com/models/rtdetr)
 - [Carparts Seg Dataset (GitHub)](https://github.com/shreejalt/ultralytics-rtdetr-obb/blob/main/docs/en/datasets/segment/carparts-seg.md)
 - [Carparts Seg Dataset en Ultralytics](https://platform.ultralytics.com/jesusgarza/datasets/carparts-seg)

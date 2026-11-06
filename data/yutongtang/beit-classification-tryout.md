@@ -55,13 +55,13 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para una comparativa rigurosa. El modelo BEiT original de HuggingFace (por ejemplo, `microsoft/beit-base-patch16-224`) tiene alrededor de 86 millones de parámetros y está preentrenado en ImageNet-22K, pero no es comparable en tamaño ni en propósito. Este repositorio es una implementación experimental sin entrenar, por lo que no tiene sentido comparar rendimiento. Se recomienda tratar esta publicación como un recurso de código, no como un modelo de producción.
+No se dispone de información suficiente para una comparativa rigurosa. El modelo BEiT original de Hugging Face (por ejemplo, `microsoft/beit-base-patch16-224`) tiene alrededor de 86 millones de parámetros y está preentrenado en ImageNet-22K, pero no es comparable en tamaño ni en propósito. Este repositorio es una implementación experimental sin entrenar, por lo que no tiene sentido comparar rendimiento. Se recomienda tratar esta publicación como un recurso de código, no como un modelo de producción.
 
 ## Limitaciones y advertencias
 
 - El checkpoint no ha sido entrenado: no tiene capacidad real de clasificación y no debe usarse en producción.
 - No se ha auditado la robustez, equidad ni la transferencia a otros dominios.
-- La implementación es personalizada: las APIs genéricas de HuggingFace no cargarán el modelo sin un adaptador explícito.
+- La implementación es personalizada: las APIs genéricas de Hugging Face no cargarán el modelo sin un adaptador explícito.
 - No se proporcionan datos de entrenamiento ni métricas de rendimiento.
 - La licencia BSD-3-Clause permite uso comercial, pero el autor advierte que deben revisarse los términos de los datos externos si se usan con otros conjuntos de datos.
 - Riesgo de alucinación: no aplica, al ser un modelo de visión sin generación de texto.
@@ -69,7 +69,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/YutongTang/beit-classification-tryout
+- Repositorio Hugging Face: https://huggingface.co/YutongTang/beit-classification-tryout
 - Documentación de BEiT en Transformers: https://huggingface.co/docs/transformers/v4.20.1/en/model_doc/beit
 - Documentación de BEiT en GitHub: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/beit.md
 - Implementación similar de referencia: https://huggingface.co/Tungnguyenpoz/beit-classification

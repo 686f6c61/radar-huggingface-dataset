@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ahmedalghamdi/multimodal-reasoning-reading-2024` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en HuggingFace bajo la etiqueta `research-notes`. Su propia model card lo describe como una nota exploratoria sobre razonamiento multimodal que registra la comparación prevista, los factores de confusión probables y los requisitos de reproducibilidad antes de reportar cualquier resultado de benchmark. El repositorio contiene únicamente dos ficheros de texto, `summary.md` y `README.md`, y ocupa 0,0 GB.
+`ahmedalghamdi/multimodal-reasoning-reading-2024` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en Hugging Face bajo la etiqueta `research-notes`. Su propia model card lo describe como una nota exploratoria sobre razonamiento multimodal que registra la comparación prevista, los factores de confusión probables y los requisitos de reproducibilidad antes de reportar cualquier resultado de benchmark. El repositorio contiene únicamente dos ficheros de texto, `summary.md` y `README.md`, y ocupa 0,0 GB.
 
 Los metadatos del repositorio declaran la etiqueta `transformer` y un total de 16.576 parámetros según el recuento de safetensors, una cifra que no corresponde a ningún modelo utilizable en producción y que apunta a un artefacto de prueba o a un fichero residual. Las descargas y los "likes" registrados son 0, y la licencia es MIT. No se declara pipeline de inferencia, idiomas soportados ni checkpoint entrenado.
 
@@ -45,7 +45,7 @@ No existe informacion sobre datos de entrenamiento: ni numero de tokens, ni comp
 - Definicion de protocolos de reproducibilidad: el repositorio enumera los elementos que deben acompanar a cualquier resultado futuro (versiones de dataset, comandos, semillas, hardware y logs en bruto), reutilizable como checklist en un equipo de evaluacion.
 - Analisis de factores de confusion en benchmarks multimodales: la nota identifica confounders probables en tareas de razonamiento visual, material aprovechable para disenar controles en experimentos propios.
 - Revision bibliografica de partida: las referencias incluidas sirven como punto de entrada para verificar literatura sobre razonamiento multimodal, tal y como advierte la propia model card.
-- Docencia y divulgacion sobre metodologia: el contraste entre un repositorio de notas y un checkpoint real es un caso practico para explicar como leer los metadatos de HuggingFace y detectar artefactos sin modelo subyacente.
+- Docencia y divulgacion sobre metodologia: el contraste entre un repositorio de notas y un checkpoint real es un caso practico para explicar como leer los metadatos de Hugging Face y detectar artefactos sin modelo subyacente.
 
 ## Benchmarks y rendimiento
 
@@ -87,7 +87,7 @@ No disponible. Este repositorio no es comparable con modelos de razonamiento mul
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ahmedalghamdi/multimodal-reasoning-reading-2024
+- Repositorio en Hugging Face: https://huggingface.co/ahmedalghamdi/multimodal-reasoning-reading-2024
 - Perception, Reason, Think, and Plan: A Survey on Large Multimodal Reasoning Models: https://arxiv.org/abs/2505.04921
 - Thinking with Images for Multimodal Reasoning: Foundations, Methods, and Future Frontiers: https://arxiv.org/abs/2506.23918
 - Cross-modal multi-relational graph reasoning (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S1566253525001551

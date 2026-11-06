@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-E4B-it-wordstory3-lora | Adaptador LoRA sobre Gemma 4 E4B | no disponible | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| google/gemma-4-E4B-it | Modelo base completo | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| unsloth/gemma-4-E4B-it | Versión cuantizada del base | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| gemma-4-E4B-it-wordstory3-lora | Adaptador LoRA sobre Gemma 4 E4B | no disponible | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| google/gemma-4-E4B-it | Modelo base completo | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| unsloth/gemma-4-E4B-it | Versión cuantizada del base | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Variante E2B del mismo proyecto | Adaptador LoRA sobre Gemma 4 E2B | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- [HuggingFace: aslkfjklaj11213/gemma-4-E4B-it-wordstory3-lora](https://huggingface.co/aslkfjklaj11213/gemma-4-E4B-it-wordstory3-lora)
+- [Hugging Face: aslkfjklaj11213/gemma-4-E4B-it-wordstory3-lora](https://huggingface.co/aslkfjklaj11213/gemma-4-E4B-it-wordstory3-lora)
 - [Modelo base: google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it)
 - [Versión cuantizada: unsloth/gemma-4-E4B-it](https://huggingface.co/unsloth/gemma-4-E4B-it)
 - [Repositorio del proyecto: areweloststars/-](https://github.com/areweloststars/-)

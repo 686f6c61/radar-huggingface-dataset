@@ -70,7 +70,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sprited/ardy-web-onnx
+- Hugging Face: https://huggingface.co/sprited/ardy-web-onnx
 - Repositorio del autor (sprited-ai/ardy): https://github.com/sprited-ai/ardy (branch `mps-support`, carpeta `web/`)
 - Repositorio oficial de NVIDIA ARDY: https://github.com/nv-tlabs/ardy
 - Proyecto de investigacion ARDY: https://research.nvidia.com/labs/sil/projects/ardy/

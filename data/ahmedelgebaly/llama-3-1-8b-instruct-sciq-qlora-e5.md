@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Solo 
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-SciQ-QLoRA-e5 | 8B (base) + adaptador | no disponible (base: 128k) | Adaptador QLoRA | llama3.1 | HuggingFace (0 descargas) |
-| Llama-3.1-8B-Instruct-SciQ-QLoRA-e2 | 8B (base) + adaptador | no disponible (base: 128k) | Adaptador QLoRA | llama3.1 | HuggingFace (recomendado por el autor) |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Modelo completo | llama3.1 | HuggingFace (gated) |
+| Llama-3.1-8B-Instruct-SciQ-QLoRA-e5 | 8B (base) + adaptador | no disponible (base: 128k) | Adaptador QLoRA | llama3.1 | Hugging Face (0 descargas) |
+| Llama-3.1-8B-Instruct-SciQ-QLoRA-e2 | 8B (base) + adaptador | no disponible (base: 128k) | Adaptador QLoRA | llama3.1 | Hugging Face (recomendado por el autor) |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Modelo completo | llama3.1 | Hugging Face (gated) |
 
 La comparacion con otros adaptadores de QA cientifico de terceros no esta disponible en la informacion proporcionada.
 
@@ -88,7 +88,7 @@ La comparacion con otros adaptadores de QA cientifico de terceros no esta dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedelgebaly/Llama-3.1-8B-Instruct-SciQ-QLoRA-e5
+- Modelo en Hugging Face: https://huggingface.co/ahmedelgebaly/Llama-3.1-8B-Instruct-SciQ-QLoRA-e5
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/ahmedelgebaly/SciQ_Alpaca
 - Adaptador e1: https://huggingface.co/ahmedelgebaly/Llama-3.1-8B-Instruct-SciQ-QLoRA-e1

@@ -111,7 +111,7 @@ La información disponible solo permite comparar con el docente TripoSplat. No s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/idefinity/flip-student-2step
+- Modelo en Hugging Face: https://huggingface.co/idefinity/flip-student-2step
 - Modelo base (docente): https://huggingface.co/VAST-AI/TripoSplat
 - Dataset de entrenamiento: `DownFlow/fuliji` (referenciado en la model card; sin URL directa en la información disponible)
 - ONNX Runtime Web: no se proporciona enlace en la información disponible.

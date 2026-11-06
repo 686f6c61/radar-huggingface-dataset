@@ -87,6 +87,6 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje ni con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/marcoferr/neural-architecture-search
+- Hugging Face: https://huggingface.co/marcoferr/neural-architecture-search
 - Ficheros del repositorio: `summary.md` (artefacto principal) y `README.md` (documentacion)
 - Fuentes externas: la busqueda web realizada no devolvio ningun resultado relevante sobre este repositorio (los resultados obtenidos correspondian a restaurantes y no guardan relacion con el modelo). No hay papers, blogs, repos de codigo ni demos asociados en la informacion disponible.

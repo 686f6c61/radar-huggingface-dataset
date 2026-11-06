@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`timm/mobilenetv3_small_100.lamb_in1k` es un modelo de clasificación de imágenes basado en la arquitectura MobileNet-v3, publicado por el equipo de `timm` (PyTorch Image Models) en HuggingFace. Se trata de la variante "small" con factor de anchura 1.0, entrenada sobre ImageNet-1k mediante un recetario propio de `timm` que emplea el optimizador LAMB. Con tan solo 2.554.968 parámetros y 0.1 GMACs, está pensado para escenarios donde el coste computacional y el consumo de memoria son la restricción principal.
+`timm/mobilenetv3_small_100.lamb_in1k` es un modelo de clasificación de imágenes basado en la arquitectura MobileNet-v3, publicado por el equipo de `timm` (PyTorch Image Models) en Hugging Face. Se trata de la variante "small" con factor de anchura 1.0, entrenada sobre ImageNet-1k mediante un recetario propio de `timm` que emplea el optimizador LAMB. Con tan solo 2.554.968 parámetros y 0.1 GMACs, está pensado para escenarios donde el coste computacional y el consumo de memoria son la restricción principal.
 
 El modelo resuelve el problema clásico de clasificación de imágenes en 224 x 224 píxeles sobre las 1.000 clases de ImageNet-1k, pero su relevancia actual va más allá: se usa habitualmente como backbone ligero para extracción de características (feature maps), generación de embeddings de imagen y transfer learning en tareas donde no es viable desplegar una red grande. Su enorme volumen de descargas (más de 21 millones) lo sitúa entre los modelos de visión más reutilizados del ecosistema `timm`.
 
@@ -24,7 +24,7 @@ La licencia Apache-2.0 y la integración nativa con la librería `timm` lo convi
 | Tamano de imagen de entrada | 224 x 224 |
 | Dataset de entrenamiento | ImageNet-1k |
 | Numero de clases | 1.000 (ImageNet-1k) |
-| Descargas en HuggingFace | 21.210.318 |
+| Descargas en Hugging Face | 21.210.318 |
 | Likes | 136 |
 | Fecha de creacion | 2022-12-16 |
 | Ultima actualizacion | 2025-10-19 |
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| timm/mobilenetv3_small_100.lamb_in1k | 2,55 M | 224 x 224, 1.000 clases | no disponible | apache-2.0 | HuggingFace, timm |
-| timm/efficientnet_b3.ra2_in1k | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace, timm |
-| timm/resnet50.a1_in1k | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace, timm |
-| google/vit-base-patch16-224 | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace, transformers |
+| timm/mobilenetv3_small_100.lamb_in1k | 2,55 M | 224 x 224, 1.000 clases | no disponible | apache-2.0 | Hugging Face, timm |
+| timm/efficientnet_b3.ra2_in1k | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face, timm |
+| timm/resnet50.a1_in1k | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face, timm |
+| google/vit-base-patch16-224 | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face, transformers |
 
 Los modelos alternativos se han seleccionado por aparecer como referencias de la misma categoria (clasificacion de imagenes en ImageNet-1k con `timm` o `transformers`), pero la informacion proporcionada no incluye sus especificaciones ni metricas, por lo que no es posible establecer una comparacion cuantitativa fiable. Como referencia general de familia, EfficientNet-B3 y ResNet-50 son redes significativamente mas grandes que MobileNet-v3 small, mientras que ViT-base es un transformer de vision de mayor coste computacional.
 
@@ -96,11 +96,11 @@ Los modelos alternativos se han seleccionado por aparecer como referencias de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/timm/mobilenetv3_small_100.lamb_in1k
+- Hugging Face: https://huggingface.co/timm/mobilenetv3_small_100.lamb_in1k
 - Repositorio original PyTorch Image Models: https://github.com/huggingface/pytorch-image-models
 - Pagina de resultados de `timm`: https://github.com/huggingface/pytorch-image-models/tree/main/results
 - Paper "Searching for MobileNetV3": https://arxiv.org/abs/1905.02244
 - Paper "ResNet Strikes Back" (recetario A2 de referencia): https://arxiv.org/abs/2110.00476
-- Listado de modelos con libreria `timm` en HuggingFace: https://huggingface.co/models?library=timm
-- Listado de modelos de clasificacion de imagenes en HuggingFace: https://huggingface.co/models?pipeline_tag=image-classification&sort=downloads
-- Guia de tareas de HuggingFace (imagen de ejemplo usada en la model card): https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/beignets-task-guide.png
+- Listado de modelos con libreria `timm` en Hugging Face: https://huggingface.co/models?library=timm
+- Listado de modelos de clasificacion de imagenes en Hugging Face: https://huggingface.co/models?pipeline_tag=image-classification&sort=downloads
+- Guia de tareas de Hugging Face (imagen de ejemplo usada en la model card): https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/beignets-task-guide.png

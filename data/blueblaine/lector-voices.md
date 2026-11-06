@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| blueblaine/lector-voices | 82 M | no disponible | Core ML | Apache 2.0 | HuggingFace (37 descargas) |
-| hexgrad/Kokoro-82M | 82 M | no disponible | safetensors / PyTorch | Apache 2.0 | HuggingFace (modelo original) |
-| mattmireles/kokoro-coreml | 82 M | no disponible | Core ML | Apache 2.0 | HuggingFace (fuente de esta copia) |
+| blueblaine/lector-voices | 82 M | no disponible | Core ML | Apache 2.0 | Hugging Face (37 descargas) |
+| hexgrad/Kokoro-82M | 82 M | no disponible | safetensors / PyTorch | Apache 2.0 | Hugging Face (modelo original) |
+| mattmireles/kokoro-coreml | 82 M | no disponible | Core ML | Apache 2.0 | Hugging Face (fuente de esta copia) |
 
 No se dispone de datos de rendimiento comparado entre estas variantes; la diferencia principal es el formato de despliegue (Core ML frente a PyTorch) y la cadena de procedencia.
 
@@ -78,6 +78,6 @@ No se dispone de datos de rendimiento comparado entre estas variantes; la difere
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/blueblaine/lector-voices
+- Repositorio en Hugging Face: https://huggingface.co/blueblaine/lector-voices
 - Conversión intermedia: https://huggingface.co/mattmireles/kokoro-coreml
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M

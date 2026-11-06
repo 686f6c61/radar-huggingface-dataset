@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jina Embeddings v2 Base ZH es un modelo de embeddings de texto desarrollado originalmente por Jina AI, especializado en la generación de representaciones vectoriales densas para textos en chino. Esta ficha concreta corresponde a una conversión comunitaria publicada por el usuario `arlenecc` en HuggingFace, que adapta el modelo original al formato ONNX con cuantización INT8, lo que reduce significativamente el peso y facilita su despliegue en entornos de producción con CPU o GPUs modestas.
+Jina Embeddings v2 Base ZH es un modelo de embeddings de texto desarrollado originalmente por Jina AI, especializado en la generación de representaciones vectoriales densas para textos en chino. Esta ficha concreta corresponde a una conversión comunitaria publicada por el usuario `arlenecc` en Hugging Face, que adapta el modelo original al formato ONNX con cuantización INT8, lo que reduce significativamente el peso y facilita su despliegue en entornos de producción con CPU o GPUs modestas.
 
 El modelo se basa en una arquitectura BERT con código personalizado (`custom_code`) y está pensado para tareas de búsqueda semántica, recuperación de información, clustering y sistemas RAG (Retrieval-Augmented Generation) sobre corpus en chino. Al estar cuantizado a INT8 y exportado a ONNX, es especialmente atractivo para aplicaciones que requieren baja latencia y poca huella de memoria sin renunciar a una calidad de embedding razonable.
 
@@ -82,5 +82,5 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- [HuggingFace: arlenecc/jina-embeddings-v2-base-zh-onnx-int8](https://huggingface.co/arlenecc/jina-embeddings-v2-base-zh-onnx-int8)
+- [Hugging Face: arlenecc/jina-embeddings-v2-base-zh-onnx-int8](https://huggingface.co/arlenecc/jina-embeddings-v2-base-zh-onnx-int8)
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

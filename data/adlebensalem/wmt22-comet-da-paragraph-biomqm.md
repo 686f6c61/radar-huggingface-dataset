@@ -34,7 +34,7 @@ El objetivo de entrenamiento es la media de las penalizaciones MQM a nivel de se
 - Soporte multilingüe para inglés, alemán, español, francés y ruso, con normalización específica por par de idiomas.
 - Estimación de calidad (quality estimation) en el sentido de que produce una puntuación continua, aunque no es una métrica sin referencia (reference-free).
 - Adecuado para investigación sobre el comportamiento de métricas aprendidas con entradas largas y sobre la influencia del contexto en la evaluación de MT.
-- Integrable en pipelines de evaluación mediante la librería `unbabel-comet`, con carga directa desde HuggingFace.
+- Integrable en pipelines de evaluación mediante la librería `unbabel-comet`, con carga directa desde Hugging Face.
 
 ## Casos de uso
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AdleBenSalem/wmt22-comet-da-paragraph-biomqm)
+- [Modelo en Hugging Face](https://huggingface.co/AdleBenSalem/wmt22-comet-da-paragraph-biomqm)
 - [Dataset de entrenamiento: AdleBenSalem/bio-mqm-paragraphs](https://huggingface.co/datasets/AdleBenSalem/bio-mqm-paragraphs)
 - [Modelo base: Unbabel/wmt22-comet-da](https://huggingface.co/Unbabel/wmt22-comet-da)
 - [Paper de COMET (Rei et al., 2022)](https://aclanthology.org/2022.wmt-1.60/)

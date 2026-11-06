@@ -68,5 +68,5 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros model
 
 ## Enlaces
 
-- [HuggingFace: vivekred/paper_002403183_cross_modal_fusion](https://huggingface.co/vivekred/paper_002403183_cross_modal_fusion)
+- [Hugging Face: vivekred/paper_002403183_cross_modal_fusion](https://huggingface.co/vivekred/paper_002403183_cross_modal_fusion)
 - No se encontraron otros enlaces relevantes en la búsqueda web.

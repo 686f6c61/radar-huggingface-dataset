@@ -6,7 +6,7 @@ DaCy edge (`chcaa/da_dacy_edge`, versión 0.3.0) es un pipeline de procesamiento
 
 El modelo forma parte del ecosistema DaCy, un framework danés que agrupa pipelines de estado del arte y utilidades para analizar el comportamiento de dichos pipelines. La relevancia de esta ficha es acotada: se trata de un modelo especializado en una única lengua (danés), con licencia Apache-2.0 permisiva y un tamaño de repositorio de 0.0 GB, lo que lo hace desplegable en entornos sin GPU. Sus métricas declaradas se sitúan en un rango de F1 0.7256 en NER (DaNE) y exactitudes entre 0.93 y 0.95 en tareas morfosintácticas sobre UD Danish DDT.
 
-El repositorio tiene 0 descargas y 0 "likes" en HuggingFace, y su fecha de creación registrada (2026-09-16) es posterior a la fecha habitual de publicación de DaCy, por lo que conviene tratar esos metadatos con cautela. Al no disponer de vectores estáticos (0 claves, 0 vectores únicos), toda la representación depende del encoder `tok2vec` compartido.
+El repositorio tiene 0 descargas y 0 "likes" en Hugging Face, y su fecha de creación registrada (2026-09-16) es posterior a la fecha habitual de publicación de DaCy, por lo que conviene tratar esos metadatos con cautela. Al no disponer de vectores estáticos (0 claves, 0 vectores únicos), toda la representación depende del encoder `tok2vec` compartido.
 
 ## Especificaciones tecnicas
 
@@ -88,7 +88,7 @@ No se han publicado en la información disponible resultados de benchmarks compa
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `chcaa/da_dacy_edge` | Pipeline spaCy (tok2vec) para danes | no disponible | no aplica | Apache-2.0 | HuggingFace, 0 descargas |
+| `chcaa/da_dacy_edge` | Pipeline spaCy (tok2vec) para danes | no disponible | no aplica | Apache-2.0 | Hugging Face, 0 descargas |
 | DaCy medium / large / trf | Pipelines spaCy y transformer para danes | no disponible en la informacion proporcionada | no aplica | Apache-2.0 (segun el framework DaCy) | Repositorio DaCy; metricas no disponibles aqui |
 | `da_core_news_*` (spaCy) | Pipeline spaCy para danes | no disponible en la informacion proporcionada | no aplica | MIT (segun spaCy) | Distribucion oficial de spaCy; comparacion numerica no disponible |
 | Modelos DanLP basados en BERT | Modelos transformer para tareas danesas | no disponible en la informacion proporcionada | no disponible | Segun modelo concreto | DanLP; comparacion numerica no disponible |
@@ -111,7 +111,7 @@ La model card solo identifica la variante "edge" dentro de la familia DaCy; no i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chcaa/da_dacy_edge
+- Modelo en Hugging Face: https://huggingface.co/chcaa/da_dacy_edge
 - Repositorio DaCy (Centre for Humanities Computing, Universidad de Aarhus): https://github.com/centre-for-humanities-computing/DaCy
 - Documentación de DaCy: https://centre-for-humanities-computing.github.io/DaCy/
 - Dataset UD Danish DDT: https://github.com/UniversalDependencies/UD_Danish-DDT

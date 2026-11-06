@@ -25,7 +25,7 @@ Su relevancia es acotada pero concreta: se publica como modelo externo del catá
 
 La arquitectura subyacente es Whisper large-v3: un transformer encoder-decoder con atención estándar que procesa espectrogramas log-Mel de audio en ventanas de 30 segundos y genera transcripciones de forma autorregresiva. El modelo base `primeline/whisper-large-v3-german` es un ajuste fino completo (full fine-tune) sobre habla en alemán, incluyendo Common Voice, según indica la model card. No se detalla en la información disponible el número exacto de tokens de audio, la composición completa del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
-La exportación se realizó con un toolchain alineado temporalmente con el checkpoint (torch 2.3.1, onnx 1.16.2, openai-whisper 20250625, sherpa-onnx v2.0.1). Un detalle técnico relevante: el layout del tokenizer de HuggingFace inserta `<|yue|>` en el id 50358, por lo que la exportación permuta la embedding de tokens al orden de ids de OpenAI (de 51866 a 51865), la misma transformación documentada en las exportaciones finlandesa y francesa del mismo autor. El checkpoint original trae pesos en bfloat16 y la exportación los convierte a fp16 tras una comprobación de magnitud. El proceso de verificación (`agree-check`) coincidió con los pesos publicados por el autor original, y las pruebas int8 de sherpa decodifican texto alemán idéntico al ground truth del pipeline de HuggingFace.
+La exportación se realizó con un toolchain alineado temporalmente con el checkpoint (torch 2.3.1, onnx 1.16.2, openai-whisper 20250625, sherpa-onnx v2.0.1). Un detalle técnico relevante: el layout del tokenizer de Hugging Face inserta `<|yue|>` en el id 50358, por lo que la exportación permuta la embedding de tokens al orden de ids de OpenAI (de 51866 a 51865), la misma transformación documentada en las exportaciones finlandesa y francesa del mismo autor. El checkpoint original trae pesos en bfloat16 y la exportación los convierte a fp16 tras una comprobación de magnitud. El proceso de verificación (`agree-check`) coincidió con los pesos publicados por el autor original, y las pruebas int8 de sherpa decodifican texto alemán idéntico al ground truth del pipeline de Hugging Face.
 
 ## Capacidades
 
@@ -87,7 +87,7 @@ Además, la model card cita un WER de 3,00 % en el test de Common Voice 15 para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pantinor/sherpa-onnx-whisper-large-v3-german
+- Modelo en Hugging Face: https://huggingface.co/pantinor/sherpa-onnx-whisper-large-v3-german
 - Modelo base: https://huggingface.co/primeline/whisper-large-v3-german
 - Proyecto Anti-Vocale: https://github.com/RisorseArtificiali/anti-vocale
 - Informe de benchmarks en alemán: https://github.com/RisorseArtificiali/anti-vocale/blob/main/docs/scout-reports/2026-11-03-de-bench.md

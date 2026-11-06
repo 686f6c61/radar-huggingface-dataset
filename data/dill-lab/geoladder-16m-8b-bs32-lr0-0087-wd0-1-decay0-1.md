@@ -89,7 +89,7 @@ La comparacion relevante es con Pythia-14M, por tamano casi identico y por compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dill-lab/GeoLadder-16M-8B-bs32-lr0.0087-wd0.1-decay0.1
+- Modelo en Hugging Face: https://huggingface.co/dill-lab/GeoLadder-16M-8B-bs32-lr0.0087-wd0.1-decay0.1
 - Coleccion GeoLadder completa: https://huggingface.co/collections/dill-lab/geoladder-6acd192e30ec71aff2998e2e
 - Paper (PMLR 306): https://proceedings.mlr.press/v306/kulkarni26c.html
 - arXiv: https://arxiv.org/abs/2602.20433

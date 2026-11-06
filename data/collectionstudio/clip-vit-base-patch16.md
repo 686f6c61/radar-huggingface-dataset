@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CollectionStudio/clip-vit-base-patch16 es una reproducción (reupload) en HuggingFace del modelo CLIP de OpenAI con codificador de imagen Vision Transformer ViT-B/16 y codificador de texto transformer. La model card incluida es una copia adaptada de la tarjeta oficial publicada por OpenAI en su repositorio de GitHub. CLIP fue desarrollado por investigadores de OpenAI en enero de 2021 para estudiar la robustez en tareas de visión por computador y para evaluar la capacidad de generalización a clasificación arbitraria de imágenes en régimen zero-shot.
+CollectionStudio/clip-vit-base-patch16 es una reproducción (reupload) en Hugging Face del modelo CLIP de OpenAI con codificador de imagen Vision Transformer ViT-B/16 y codificador de texto transformer. La model card incluida es una copia adaptada de la tarjeta oficial publicada por OpenAI en su repositorio de GitHub. CLIP fue desarrollado por investigadores de OpenAI en enero de 2021 para estudiar la robustez en tareas de visión por computador y para evaluar la capacidad de generalización a clasificación arbitraria de imágenes en régimen zero-shot.
 
 El modelo aprende representaciones conjuntas de imagen y texto mediante un objetivo contrastivo: los dos codificadores se entrenan para maximizar la similitud de pares (imagen, texto) correctos. Esto permite usar el modelo para clasificación zero-shot comparando la similitud entre una imagen y varios textos candidatos, sin necesidad de reentrenamiento. El repositorio ocupa 1,2 GB y está etiquetado para PyTorch y JAX.
 
@@ -65,17 +65,17 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 - VRAM estimada en fp16: en torno a 300 MB para los pesos, con margen adicional para el procesamiento de imagen.
 - GPU recomendadas: cualquier GPU moderna es suficiente; el modelo cabe con holgura en RTX 3060, RTX 4090, A100 o H100.
 - Compatibilidad con GPU de consumo: si, cabe en practicamente cualquier GPU de consumo con al menos 4 GB de VRAM, e incluso en CPU para lotes pequenos.
-- Opciones de despliegue: HuggingFace Transformers (CLIPModel y CLIPProcessor), asi como frameworks derivados de OpenCLIP; no se especifican en la informacion proporcionada integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: Hugging Face Transformers (CLIPModel y CLIPProcessor), asi como frameworks derivados de OpenCLIP; no se especifican en la informacion proporcionada integraciones con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles; dependen del hardware, del tamano de lote y de la resolucion de entrada (estandar 224x224).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto texto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CollectionStudio/clip-vit-base-patch16 | ~151 M | 77 tokens (estandar CLIP) | Solo ingles | No disponible | HuggingFace (reupload) |
-| openai/clip-vit-base-patch16 | ~151 M | 77 tokens | Solo ingles | No especificada en el repositorio | HuggingFace (oficial) |
-| openai/clip-vit-large-patch14 | ~428 M | 77 tokens | Solo ingles | No especificada en el repositorio | HuggingFace (oficial) |
-| OpenCLIP (varias tallas, incluido ViT-B/16) | Desde ~150 M | 77 tokens | Principalmente ingles | Depende de la variante | HuggingFace / GitHub (LAION) |
+| CollectionStudio/clip-vit-base-patch16 | ~151 M | 77 tokens (estandar CLIP) | Solo ingles | No disponible | Hugging Face (reupload) |
+| openai/clip-vit-base-patch16 | ~151 M | 77 tokens | Solo ingles | No especificada en el repositorio | Hugging Face (oficial) |
+| openai/clip-vit-large-patch14 | ~428 M | 77 tokens | Solo ingles | No especificada en el repositorio | Hugging Face (oficial) |
+| OpenCLIP (varias tallas, incluido ViT-B/16) | Desde ~150 M | 77 tokens | Principalmente ingles | Depende de la variante | Hugging Face / GitHub (LAION) |
 
 No se dispone de datos de rendimiento comparado en la informacion proporcionada; la comparacion se limita a parametros, contexto, idioma y licencia.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparado en la informacion proporcionada;
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CollectionStudio/clip-vit-base-patch16
+- Repositorio Hugging Face: https://huggingface.co/CollectionStudio/clip-vit-base-patch16
 - Repositorio oficial de OpenAI CLIP en GitHub: https://github.com/openai/CLIP
 - Model card oficial de CLIP: https://github.com/openai/CLIP/blob/main/model-card.md
 - Paper de CLIP (arXiv:2103.00020): https://arxiv.org/abs/2103.00020

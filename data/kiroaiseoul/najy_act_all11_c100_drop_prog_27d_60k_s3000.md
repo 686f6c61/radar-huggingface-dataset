@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NAJY_act_all11_c100_drop_prog_27D_60k_s3000 es un checkpoint de política robótica basado en ACT (Action Chunking with Transformers) publicado por el usuario kiroaiseoul en HuggingFace, dentro del ecosistema LeRobot. No es un modelo de lenguaje: es una política de imitación (behavior cloning) que mapea observaciones multimodales a comandos de acción de un robot. El modelo ocupa 0,2 GB en el repositorio y contiene 51.701.393 parámetros almacenados en un único `model.safetensors`.
+NAJY_act_all11_c100_drop_prog_27D_60k_s3000 es un checkpoint de política robótica basado en ACT (Action Chunking with Transformers) publicado por el usuario kiroaiseoul en Hugging Face, dentro del ecosistema LeRobot. No es un modelo de lenguaje: es una política de imitación (behavior cloning) que mapea observaciones multimodales a comandos de acción de un robot. El modelo ocupa 0,2 GB en el repositorio y contiene 51.701.393 parámetros almacenados en un único `model.safetensors`.
 
 La entrada del modelo combina estado propioceptivo de 27 dimensiones (`observation.state`) con tres flujos de imagen RGB de 480x640 píxeles (`observation.images.cam_high`, `observation.images.cam_left_wrist` y `observation.images.cam_right_wrist`), y produce una acción de 17 dimensiones (`action`). Se entrenó durante 60.000 pasos dentro del run `t32_all11_c100_drop_prog_60k_s3000`, etiquetado como "11 etapas" (11단계) y ejecutado en una unidad DGX. Los tags `trossen-mobile-ai` y el número de dimensiones de acción sugieren un robot móvil de manipulación, aunque la model card no especifica la plataforma exacta.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NAJY_act_all11_c100_drop_prog_27D_60k_s3000 | ACT (LeRobot) | 51,7 M | no disponible | Apache-2.0 | HuggingFace |
+| NAJY_act_all11_c100_drop_prog_27D_60k_s3000 | ACT (LeRobot) | 51,7 M | no disponible | Apache-2.0 | Hugging Face |
 | ACT de referencia (LeRobot / Aloha) | ACT (LeRobot) | no disponible | no disponible | Apache-2.0 (proyecto LeRobot) | Repositorio LeRobot |
 | Diffusion Policy | Política por difusión (LeRobot) | no disponible | no disponible | Apache-2.0 (proyecto LeRobot) | Repositorio LeRobot |
 | Otras políticas LeRobot (VQ-BeT, TD-MPC, pi0) | Diversas | no disponible | no disponible | no disponible | Repositorio LeRobot |
@@ -92,6 +92,6 @@ No se dispone de cifras de rendimiento comparables publicadas para este checkpoi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_drop_prog_27D_60k_s3000
+- Hugging Face: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_drop_prog_27D_60k_s3000
 - Referencia citada en la model card: `trossen-ai-simulation`, `docs/mobile_base_investigation.md`, sección §94 (URL no disponible en la información proporcionada)
 - Documentación del ecosistema LeRobot: URL no disponible

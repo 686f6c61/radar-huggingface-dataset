@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZYI-256 Flash es un modelo de generación de imágenes texto-a-imagen de 343 millones de parámetros, desarrollado por el usuario caikybaldo999 y publicado en HuggingFace bajo licencia Apache-2.0. Se trata de un modelo pequeño y entrenado desde cero que genera imágenes de 256×256 píxeles, con una arquitectura DiT (Diffusion Transformer) basada en rectified flow (flow matching) y un espacio latente muy compacto de 64 tokens. La relevancia del modelo no está en la calidad absoluta de sus salidas, sino en su coste: el autor documenta un entrenamiento completo en aproximadamente 5 horas sobre una única GPU NVIDIA RTX PRO 6000 de 96 GB.
+ZYI-256 Flash es un modelo de generación de imágenes texto-a-imagen de 343 millones de parámetros, desarrollado por el usuario caikybaldo999 y publicado en Hugging Face bajo licencia Apache-2.0. Se trata de un modelo pequeño y entrenado desde cero que genera imágenes de 256×256 píxeles, con una arquitectura DiT (Diffusion Transformer) basada en rectified flow (flow matching) y un espacio latente muy compacto de 64 tokens. La relevancia del modelo no está en la calidad absoluta de sus salidas, sino en su coste: el autor documenta un entrenamiento completo en aproximadamente 5 horas sobre una única GPU NVIDIA RTX PRO 6000 de 96 GB.
 
 El modelo ha evolucionado en varias revisiones. La revisión `v1.0-base` (32.748 pasos) fue seguida de un fine-tuning con 2,1 millones de imágenes nuevas, y posteriormente de una actualización de edición (`v1.2-edit`) que añade edición de imágenes guiada por instrucciones de texto mediante condicionamiento in-context: la imagen de origen se codifica con el mismo DC-AE y sus 64 tokens se concatenan a los 64 tokens objetivo, compartiendo posiciones 2D RoPE y añadiendo un único embedding "source" aprendido.
 
@@ -105,7 +105,7 @@ Frente a Tiny-SD, ZYI-256 Flash iguala la resolución pero reduce parámetros y,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caikybaldo999/zyi-256-flash
+- Modelo en Hugging Face: https://huggingface.co/caikybaldo999/zyi-256-flash
 - Revisión base: https://huggingface.co/caikybaldo999/zyi-256-flash/tree/v1.0-base
 - Revisión con edición: https://huggingface.co/caikybaldo999/zyi-256-flash/tree/v1.2-edit
 - Dataset de entrenamiento principal: https://huggingface.co/datasets/LucasFang/FLUX-Reason-6M

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Orono v1 es un sistema de OCR de página completa especializado en japonés con escritura vertical, desarrollado por el usuario Mori-kamiyama y publicado en HuggingFace. No se trata de un único modelo monolítico, sino de un pipeline de tres componentes pequeños que se ejecutan secuencialmente: Ogi (detección de líneas y clasificación de orientación vertical/horizontal), Oikawa (reconocimiento de caracteres línea a línea) y Buncho (predicción del orden de lectura de las líneas en la página).
+Orono v1 es un sistema de OCR de página completa especializado en japonés con escritura vertical, desarrollado por el usuario Mori-kamiyama y publicado en Hugging Face. No se trata de un único modelo monolítico, sino de un pipeline de tres componentes pequeños que se ejecutan secuencialmente: Ogi (detección de líneas y clasificación de orientación vertical/horizontal), Oikawa (reconocimiento de caracteres línea a línea) y Buncho (predicción del orden de lectura de las líneas en la página).
 
 La relevancia del proyecto reside en su enfoque modular y ligero: el conjunto completo ocupa aproximadamente 0,2 GB y los dos primeros módulos pueden ejecutarse mediante ONNX Runtime sin necesidad de GPU, PyTorch ni Paddle, lo que facilita su despliegue en entornos con recursos limitados. Está orientado principalmente a documentos japoneses con escritura vertical, un caso escasamente cubierto por los OCR genéricos multimodales actuales.
 
@@ -73,7 +73,7 @@ No se dispone de datos de benchmarks de alternativas en la información proporci
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Orono v1 | Pipeline OCR japonés (3 módulos) | ~20,4 M en total | No aplica | Other (sin licencia unificada) | HuggingFace, con ONNX y safetensors |
+| Orono v1 | Pipeline OCR japonés (3 módulos) | ~20,4 M en total | No aplica | Other (sin licencia unificada) | Hugging Face, con ONNX y safetensors |
 | PaddleOCR PP-OCRv6 small | OCR genérico | No disponible en la información | No aplica | No disponible en la información | Paddle, activos oficiales |
 | OCR multimodales genéricos | Modelos visión-lenguaje | No disponible en la información | No disponible en la información | No disponible en la información | No disponible en la información |
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks de alternativas en la información proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mori-kamiyama/Orono-v1
+- Modelo en Hugging Face: https://huggingface.co/Mori-kamiyama/Orono-v1
 - README en inglés: https://huggingface.co/Mori-kamiyama/Orono-v1/blob/main/README_en.md
 - Repositorio de datos NDL (NDL part 1): no disponible en la información proporcionada
 - Repositorio CODH: no disponible en la información proporcionada

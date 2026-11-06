@@ -21,7 +21,7 @@ El modelo se publica bajo licencia Apache-2.0 y está pensado como modelo de inv
 
 ## Arquitectura y entrenamiento
 
-El modelo utiliza una arquitectura transformer causal, con el tag `llama` en HuggingFace, lo que sugiere una estructura similar a la familia Llama. Ha sido entrenado desde cero sobre un corpus propio denominado "India-first", compuesto por datos financieros, inglés y hindi/hinglish, además de otras lenguas indias. El tokenizer es personalizado y tiene un tamaño de 64k tokens, adaptado al vocabulario financiero y multilingüe del dominio. El número total de tokens de entrenamiento no se ha revelado.
+El modelo utiliza una arquitectura transformer causal, con el tag `llama` en Hugging Face, lo que sugiere una estructura similar a la familia Llama. Ha sido entrenado desde cero sobre un corpus propio denominado "India-first", compuesto por datos financieros, inglés y hindi/hinglish, además de otras lenguas indias. El tokenizer es personalizado y tiene un tamaño de 64k tokens, adaptado al vocabulario financiero y multilingüe del dominio. El número total de tokens de entrenamiento no se ha revelado.
 
 El modelo es una versión SFT (instruction-tuned) sobre un corpus de finanzas de India. Incluye un chat template con tokens de rol reservados (`<|reserved_0..4|>`) para system, user, assistant, tool y end_turn, y la generación se detiene en los tokens `<|reserved_4|>` y `<|eos|>`. No se indica si se aplicaron técnicas como RLHF o DPO.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 - VRAM estimada: con 337M parámetros, los pesos en FP16 ocupan aproximadamente 0,68 GB, y en FP32 unos 1,35 GB. Con overhead de inferencia, el modelo puede ejecutarse en GPUs consumer de 4 GB o menos, pero no hay requisitos oficiales publicados.
 - GPU recomendadas: no disponible en la documentación; por tamaño, una RTX 3060, RTX 4060 o similar sería suficiente.
-- Opciones de despliegue: compatible con `transformers` y `text-generation-inference` según los tags del repositorio. También se indica compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: compatible con `transformers` y `text-generation-inference` según los tags del repositorio. También se indica compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -70,5 +70,5 @@ No se dispone de datos de benchmarks ni de modelos comparables en la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/navyam-ai/navya-1b-sft-v9
+- Hugging Face: https://huggingface.co/navyam-ai/navya-1b-sft-v9
 - Repositorio de código: https://github.com/bachatt-app/navyam-gpt

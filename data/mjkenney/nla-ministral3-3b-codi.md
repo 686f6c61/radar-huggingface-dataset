@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Orientación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nla-ministral3-3b-codi (este) | ~3 000 M | no disponible (base: hasta 128 000) | Investigación en interpretabilidad y razonamiento latente | Apache 2.0 | Gated en HuggingFace, 0 descargas |
+| nla-ministral3-3b-codi (este) | ~3 000 M | no disponible (base: hasta 128 000) | Investigación en interpretabilidad y razonamiento latente | Apache 2.0 | Gated en Hugging Face, 0 descargas |
 | Ministral 3 3B Instruct (modelo base) | 3 000 M | 128 000 tokens según Mistral AI | Asistente general, edge | Apache 2.0 | Público |
 | Llama 3.2 3B Instruct | 3 200 M | 128 000 tokens | Asistente general | Llama 3.2 Community License | Público, requiere aceptación |
 | Qwen2.5 3B Instruct | 3 000 M | 32 768 tokens nativos | Asistente general multilingüe | Apache 2.0 | Público |
@@ -79,13 +79,13 @@ La comparación relevante no es de rendimiento —no hay datos— sino de natura
 - Sin benchmarks: no hay evidencia publicada de que las capacidades del modelo base se conserven tras el ajuste; es plausible una degradación en instrucciones, tool calling o multilingüismo.
 - Riesgo de alucinación: no evaluado. Al tratarse de un modelo orientado a verbalizar estados internos, existe un riesgo específico de que el módulo NLA genere explicaciones plausibles pero no fieles a la representación real, lo que invalidaría conclusiones de interpretabilidad si no se valida con controles.
 - Idiomas no especificados: no puede asumirse soporte de castellano ni de otros idiomas distintos del inglés sin probarlo.
-- Licencia Apache 2.0: permisiva para uso comercial según los términos de la licencia, pero el acceso está restringido en HuggingFace, por lo que es necesario aceptar las condiciones del repositorio antes de descargar los pesos. Conviene revisar si esas condiciones añaden restricciones adicionales más allá de la licencia declarada.
+- Licencia Apache 2.0: permisiva para uso comercial según los términos de la licencia, pero el acceso está restringido en Hugging Face, por lo que es necesario aceptar las condiciones del repositorio antes de descargar los pesos. Conviene revisar si esas condiciones añaden restricciones adicionales más allá de la licencia declarada.
 - Madurez: creado y actualizado el 25 de octubre de 2026, con 0 descargas y 0 valoraciones. No hay señales de uso comunitario ni de mantenimiento.
 - Naturaleza del artefacto: si el fine-tune solo entrena módulos auxiliares (por ejemplo, el autoencoder o los adaptadores de inspección), tratar el repositorio como un modelo conversacional completo puede llevar a resultados erróneos. Verificar la estructura de ficheros antes de integrarlo.
 - Tamaño del repositorio (4,0 GB) inferior al esperado para 3B en BF16: comprobar si faltan shards o si los pesos están en un formato distinto antes de asumir que la descarga es completa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mjkenney/nla-ministral3-3b-codi
+- Hugging Face: https://huggingface.co/mjkenney/nla-ministral3-3b-codi
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-BF16
 - Paper de CODI, blog del autor, repositorio de código y demos: no disponibles en la información proporcionada.

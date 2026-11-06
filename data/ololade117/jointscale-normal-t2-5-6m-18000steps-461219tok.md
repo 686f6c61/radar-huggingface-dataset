@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Ololade117/jointscale-normal-t2-5.6M-18000steps-461219tok` es un checkpoint publicado en HuggingFace por el usuario Ololade117. Se trata de un modelo de tamaño muy reducido: los pesos en formato safetensors suman exactamente 5.590.784 parametros, lo que lo situa en la categoria de modelos en miniatura, tres ordenes de magnitud por debajo de los LLM mas pequenos de uso practico. La model card publicada no aporta descripcion funcional: unicamente indica que el modelo se subio mediante la integracion `PyTorchModelHubMixin` de la libreria `huggingface_hub`, con los campos de codigo, paper y documentacion marcados como pendientes.
+El modelo identificado como `Ololade117/jointscale-normal-t2-5.6M-18000steps-461219tok` es un checkpoint publicado en Hugging Face por el usuario Ololade117. Se trata de un modelo de tamaño muy reducido: los pesos en formato safetensors suman exactamente 5.590.784 parametros, lo que lo situa en la categoria de modelos en miniatura, tres ordenes de magnitud por debajo de los LLM mas pequenos de uso practico. La model card publicada no aporta descripcion funcional: unicamente indica que el modelo se subio mediante la integracion `PyTorchModelHubMixin` de la libreria `huggingface_hub`, con los campos de codigo, paper y documentacion marcados como pendientes.
 
 El identificador del repositorio sugiere, sin confirmacion oficial, un entrenamiento de 18.000 pasos sobre un corpus de 461.219 tokens y algun tipo de esquema de normalizacion o escalado conjunto ("jointscale-normal", "t2"). Ninguno de estos extremos esta documentado en la informacion disponible, por lo que deben tratarse como inferencias a partir del nombre del fichero y no como especificaciones verificadas. El modelo no registra descargas ni likes, y no existen resultados de busqueda web relevantes asociados a el.
 
@@ -42,7 +42,7 @@ Respecto al entrenamiento, el nombre del repositorio indica 18.000 pasos sobre 4
 Todos los casos que se enumeran a continuacion son hipoteticos y condicionados a que se confirme la arquitectura y el proposito real del checkpoint. Ninguno esta respaldado por evaluacion publicada.
 
 - Reproduccion de experimentos de investigacion: el checkpoint permite a un investigador retomar el entrenamiento o inspeccionar el estado de los pesos en el paso 18.000, siempre que disponga del codigo de entrenamiento original, que no se ha publicado.
-- Pruebas de integracion en pipelines de MLOps: por su tamano (aproximadamente 22 MB en FP32), es util como sujeto de prueba para validar flujos de carga, versionado, registro de artefactos y despliegue en HuggingFace Hub.
+- Pruebas de integracion en pipelines de MLOps: por su tamano (aproximadamente 22 MB en FP32), es util como sujeto de prueba para validar flujos de carga, versionado, registro de artefactos y despliegue en Hugging Face Hub.
 - Docencia y formacion: sirve como ejemplo minimo de un modelo PyTorch subido con `PyTorchModelHubMixin`, util para explicar el ciclo completo de publicacion de pesos en el Hub sin necesidad de infraestructura de GPU.
 - Benchmarking de infraestructura: permite medir latencia de carga y throughput de inferencia con una sobrecarga minima, util para aislar el coste de frameworks (PyTorch eager, TorchScript, ONNX) del coste del propio modelo.
 - Ablaciones de arquitectura: si el codigo original estuviera disponible, un modelo de 5,6M de parametros es adecuado para comparar variantes de normalizacion o escalado con un coste computacional despreciable.
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - GPU recomendadas: no se requiere GPU. Cualquier GPU consumer de la ultima decada es sobradamente suficiente, incluidas GTX 1050, RTX 3060, RTX 4090, A100 o H100, aunque estas dos ultimas serian un desperdicio de recursos.
 - Compatibilidad con GPU consumer: si, cabe en cualquier GPU consumer e incluso en GPU integradas.
 - Ejecucion en CPU: probablemente viable en CPU convencional, e incluso en dispositivos tipo Raspberry Pi, dado el tamano.
-- Opciones de despliegue: PyTorch nativo mediante `PyTorchModelHubMixin`; exportacion a ONNX o TorchScript si se dispone del codigo de definicion. No hay pesos GGUF, por lo que llama.cpp y Ollama no son aplicables en el estado actual. vLLM y TGI no estan confirmados y, en general, no soportan arquitecturas arbitrarias no basadas en transformers de HuggingFace.
+- Opciones de despliegue: PyTorch nativo mediante `PyTorchModelHubMixin`; exportacion a ONNX o TorchScript si se dispone del codigo de definicion. No hay pesos GGUF, por lo que llama.cpp y Ollama no son aplicables en el estado actual. vLLM y TGI no estan confirmados y, en general, no soportan arquitecturas arbitrarias no basadas en transformers de Hugging Face.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ La conclusion principal es que el modelo objeto de esta ficha es entre 24 y 88 v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ololade117/jointscale-normal-t2-5.6M-18000steps-461219tok
+- Modelo en Hugging Face: https://huggingface.co/Ololade117/jointscale-normal-t2-5.6M-18000steps-461219tok
 - Documentacion de `PyTorchModelHubMixin` (referenciada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Codigo del autor: no disponible
 - Paper: no disponible

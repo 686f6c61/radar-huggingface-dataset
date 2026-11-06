@@ -116,7 +116,7 @@ Mitsuba mejora al Bonsai ternario en sin censura y honestidad, empata dentro del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/isichan-ai/Mitsuba-ComfyUI-27B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/isichan-ai/Mitsuba-ComfyUI-27B-GGUF
 - Archivo PTQ1_0: https://huggingface.co/isichan-ai/Mitsuba-ComfyUI-27B-GGUF/blob/main/Mitsuba-ComfyUI-27B-v1.18-PTQ1_0.gguf
 - Fork de llama.cpp de PrismML (rama `prism`): https://github.com/PrismML-Eng/llama.cpp
 - Codificador de vision de origen: https://huggingface.co/OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF

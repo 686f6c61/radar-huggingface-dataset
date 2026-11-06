@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SoupOpenDDE (este) | Ensemble de co-folding (OpenDDE + ESMFold2 + Protenix-v1) | no disponible | no aplica | `soup-opendde-pack-components` | HuggingFace (18,2 GB) |
-| OpenDDE | Co-folding (modelo ancla) | no disponible | no aplica | no disponible | HuggingFace (`aurekaresearch/OpenDDE`) |
+| SoupOpenDDE (este) | Ensemble de co-folding (OpenDDE + ESMFold2 + Protenix-v1) | no disponible | no aplica | `soup-opendde-pack-components` | Hugging Face (18,2 GB) |
+| OpenDDE | Co-folding (modelo ancla) | no disponible | no aplica | no disponible | Hugging Face (`aurekaresearch/OpenDDE`) |
 | ESMFold2 | Prediccion de estructura (modelo par) | no disponible | no aplica | no disponible | no disponible en la informacion |
 | Protenix-v1 | Co-folding (modelo par) | no disponible | no aplica | no disponible | no disponible en la informacion |
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hyosoon0/soup-opendde-pack
+- Hugging Face: https://huggingface.co/hyosoon0/soup-opendde-pack
 - NOTICE.md (licencias y cambios): https://huggingface.co/hyosoon0/soup-opendde-pack/blob/main/NOTICE.md
 - Repositorio SoupFold: https://github.com/hsjang0/soupfold
 - Paper: https://arxiv.org/abs/2609.15552

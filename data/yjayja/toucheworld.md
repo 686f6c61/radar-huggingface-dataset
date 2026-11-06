@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ToucheWorld es un conjunto de adaptadores LoRA para generación de vídeo egocéntrico condicionado por manos, construido sobre el modelo base Lightricks/LTX-2.5 y el adaptador de cámara SolarWM LTX-22B. Lo desarrolla el usuario YJAYJA y se publica en HuggingFace como pesos complementarios, no como un checkpoint completo: el repositorio no incluye los pesos del modelo base ni del adaptador de cámara, que deben obtenerse por separado.
+ToucheWorld es un conjunto de adaptadores LoRA para generación de vídeo egocéntrico condicionado por manos, construido sobre el modelo base Lightricks/LTX-2.5 y el adaptador de cámara SolarWM LTX-22B. Lo desarrolla el usuario YJAYJA y se publica en Hugging Face como pesos complementarios, no como un checkpoint completo: el repositorio no incluye los pesos del modelo base ni del adaptador de cámara, que deben obtenerse por separado.
 
 El modelo aborda un problema específico de los world models egocéntricos: la coherencia entre el movimiento de las manos del sujeto y la evolución del entorno visual generado. Para ello combina una LoRA de manos con un sidecar de acondicionamiento (un pequeño codificador de condicionamiento, no una LoRA) y, en la variante causal, una LoRA de destilación que habilita muestreo autorregresivo por bloques.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Base | Contexto / duración | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ToucheWorld (Teacher-27 / Causal-27) | LoRA + sidecar sobre LTX-2.5 | Lightricks/LTX-2.5 + SolarWM | 153 frames a 24 fps (Teacher-27); ventana 8 / bloque 4 (Causal-27) | LTX-2.x Community License | Pesos de adaptadores en HuggingFace; código en ModelScope |
-| Lightricks/LTX-2.5 | Modelo base de difusión de vídeo | Propio | no disponible | LTX-2.x Community License | HuggingFace |
+| ToucheWorld (Teacher-27 / Causal-27) | LoRA + sidecar sobre LTX-2.5 | Lightricks/LTX-2.5 + SolarWM | 153 frames a 24 fps (Teacher-27); ventana 8 / bloque 4 (Causal-27) | LTX-2.x Community License | Pesos de adaptadores en Hugging Face; código en ModelScope |
+| Lightricks/LTX-2.5 | Modelo base de difusión de vídeo | Propio | no disponible | LTX-2.x Community License | Hugging Face |
 | SolarWM LTX-22B camera adapter | Adaptador de cámara | LTX-2.5 | no disponible | no disponible | Dependencia externa, no incluida |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la información proporcionada.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YJAYJA/ToucheWorld
+- Hugging Face: https://huggingface.co/YJAYJA/ToucheWorld
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.5
 - Código Hand2026 (ModelScope): https://modelscope.cn/models/yjayja/Hand2026-code
 - Licencia LTX-2.x: https://github.com/Lightricks/LTX-2/blob/main/LICENSE-2_x

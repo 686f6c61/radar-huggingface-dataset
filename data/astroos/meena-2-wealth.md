@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Meena-2-wealth es un modelo publicado en HuggingFace por el usuario astroos bajo el identificador astroos/meena-2-wealth. La model card del repositorio es la plantilla generica autogenerada por HuggingFace y no contiene ningun dato rellenado: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion e impacto ambiental) aparecen como "[More Information Needed]". No existe por tanto informacion verificable sobre que es el modelo, quien lo ha desarrollado ni que problema pretende resolver.
+Meena-2-wealth es un modelo publicado en Hugging Face por el usuario astroos bajo el identificador astroos/meena-2-wealth. La model card del repositorio es la plantilla generica autogenerada por Hugging Face y no contiene ningun dato rellenado: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion e impacto ambiental) aparecen como "[More Information Needed]". No existe por tanto informacion verificable sobre que es el modelo, quien lo ha desarrollado ni que problema pretende resolver.
 
-Los unicos datos objetivos disponibles son los metadatos del repositorio: 0,2 GB de tamano, creado y actualizado el 11 de septiembre de 2026, con etiquetas transformers y safetensors, cero descargas y cero likes. El tamano del repositorio sugiere un modelo de escala pequena, pero no es posible confirmar el numero de parametros, la arquitectura ni la longitud de contexto a partir de la informacion disponible. El tag arxiv:1910.09700 que aparece en las etiquetas corresponde a la referencia generica del calculador de impacto ambiental (Lacoste et al., 2019) que la propia plantilla de HuggingFace incluye por defecto, no a un paper del modelo.
+Los unicos datos objetivos disponibles son los metadatos del repositorio: 0,2 GB de tamano, creado y actualizado el 11 de septiembre de 2026, con etiquetas transformers y safetensors, cero descargas y cero likes. El tamano del repositorio sugiere un modelo de escala pequena, pero no es posible confirmar el numero de parametros, la arquitectura ni la longitud de contexto a partir de la informacion disponible. El tag arxiv:1910.09700 que aparece en las etiquetas corresponde a la referencia generica del calculador de impacto ambiental (Lacoste et al., 2019) que la propia plantilla de Hugging Face incluye por defecto, no a un paper del modelo.
 
 La relevancia actual del modelo es, con los datos disponibles, nula como objeto de evaluacion tecnica: no hay model card sustantiva, no hay benchmarks, no hay licencia declarada y no hay traccion de la comunidad. Se recomienda no utilizarlo en entornos de produccion hasta que el autor publique informacion minima sobre arquitectura, datos de entrenamiento y licencia.
 
@@ -40,7 +40,7 @@ Tampoco se documenta ninguna innovacion tecnica: las secciones de "Training Deta
 - Generacion de texto: no confirmada por el autor; no hay documentacion ni ejemplos de uso.
 - Razonamiento, codigo y matematicas: no disponible.
 - Capacidades de vision o audio: no disponible.
-- Soporte de tool calling / function calling: no documentado. La etiqueta endpoints_compatible indica unicamente compatibilidad con la infraestructura de endpoints de HuggingFace, no capacidades de llamada a herramientas.
+- Soporte de tool calling / function calling: no documentado. La etiqueta endpoints_compatible indica unicamente compatibilidad con la infraestructura de endpoints de Hugging Face, no capacidades de llamada a herramientas.
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingues: no disponibles; el campo de idiomas esta sin rellenar.
 - Modos especiales (thinking mode, decodificacion especulativa, etc.): no disponible.
@@ -92,7 +92,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, el contexto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/astroos/meena-2-wealth
+- Hugging Face: https://huggingface.co/astroos/meena-2-wealth
 - Referencia generica citada en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental enlazada en la model card: https://mlco2.github.io/impact
 

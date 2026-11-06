@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tgjackson74/class-contrastive` es un repositorio experimental publicado por el usuario tgjackson74 (Travis B. Jackson) en HuggingFace. No se trata de un modelo entrenado, sino de una base de código con un Transformer diminuto ("Tiny Transformer") orientado a experimentos de aprendizaje contrastivo, acompanada de un checkpoint de inicializacion valido para pruebas de humo. El propio autor indica explicitamente en la model card que el checkpoint "no se presenta como un checkpoint de benchmark entrenado" y que no reclama ninguna puntuacion en benchmarks.
+`tgjackson74/class-contrastive` es un repositorio experimental publicado por el usuario tgjackson74 (Travis B. Jackson) en Hugging Face. No se trata de un modelo entrenado, sino de una base de código con un Transformer diminuto ("Tiny Transformer") orientado a experimentos de aprendizaje contrastivo, acompanada de un checkpoint de inicializacion valido para pruebas de humo. El propio autor indica explicitamente en la model card que el checkpoint "no se presenta como un checkpoint de benchmark entrenado" y que no reclama ninguna puntuacion en benchmarks.
 
 El modelo tiene 33.088 parametros totales (unos 33 K), lo que lo situa entre tres y cuatro ordenes de magnitud por debajo de los transformers pequenos habituales de proposito general. La arquitectura declarada combina atencion con grouped query, fusion mediante `concat mlp`, activacion ReLU y normalizacion GroupNorm, con un esquema de atencion agrupada poco comun en modelos de este tamano.
 
@@ -84,12 +84,12 @@ Las cifras de los modelos de referencia corresponden a informacion publica gener
 - No hay lista de idiomas soportados ni evaluacion multilingue.
 - Licencia BSD-3-Clause: permite uso comercial y modificacion con atribucion, pero el autor advierte de que deben revisarse por separado los terminos de los datos de origen si se usa con datasets externos.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado, lo que indica ausencia de validacion por parte de la comunidad.
-- Las APIs genericas de carga de HuggingFace (por ejemplo, `AutoModel`) no funcionan sin un adaptador explicito, dado que es una implementacion personalizada.
+- Las APIs genericas de carga de Hugging Face (por ejemplo, `AutoModel`) no funcionan sin un adaptador explicito, dado que es una implementacion personalizada.
 - No se recomienda su uso en produccion bajo ninguna circunstancia en su estado actual.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tgjackson74/class-contrastive
+- Modelo en Hugging Face: https://huggingface.co/tgjackson74/class-contrastive
 - Perfil del autor: https://huggingface.co/tgjackson74/models
 - Otro repositorio del mismo autor (referencia de estilo, no relacionado funcionalmente): https://huggingface.co/tgjackson74/beit-matching76
 - Los resultados de busqueda adicionales (llm-stats.com, artificialanalysis.ai, playground.chat) son comparadores genericos de modelos y no contienen informacion especifica sobre este repositorio.

@@ -74,8 +74,8 @@ La variante de `alexandreacff` parece ser un fine-tuning del modelo v3 de NVIDIA
 
 ## Enlaces
 
-- [HuggingFace: alexandreacff/parakeet-tdt-v3-ptBR-20s](https://huggingface.co/alexandreacff/parakeet-tdt-v3-ptBR-20s)
+- [Hugging Face: alexandreacff/parakeet-tdt-v3-ptBR-20s](https://huggingface.co/alexandreacff/parakeet-tdt-v3-ptBR-20s)
 - [NeMo documentation](https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/stable/index.html)
 - [Ejemplo de config de FastConformer-TDT](https://github.com/NVIDIA/NeMo/blob/main/examples/asr/conf/fastconformer/fast-conformer_transducer_bpe.yaml)
 - [Script de entrenamiento RNNT-BPE](https://github.com/NVIDIA/NeMo/blob/main/examples/asr/asr_transducer/speech_to_text_rnnt_bpe.py)
-- [Modelo base `nvidia/parakeet-tdt-0.6b-v3` en HuggingFace](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3)
+- [Modelo base `nvidia/parakeet-tdt-0.6b-v3` en Hugging Face](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3)

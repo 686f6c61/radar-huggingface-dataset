@@ -73,9 +73,9 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| litert-community/Agents-A1-4B (int8) | 4B | 4096 tokens de KV cache | `.litertlm` | Apache 2.0 | HuggingFace |
-| litert-community/Agents-A1-4B (int4 mixto) | 4B | 4096 tokens de KV cache | `.litertlm` | Apache 2.0 | HuggingFace |
-| InternScience/Agents-A1-4B | 4B | No disponible | Pesos originales | No disponible | HuggingFace |
+| litert-community/Agents-A1-4B (int8) | 4B | 4096 tokens de KV cache | `.litertlm` | Apache 2.0 | Hugging Face |
+| litert-community/Agents-A1-4B (int4 mixto) | 4B | 4096 tokens de KV cache | `.litertlm` | Apache 2.0 | Hugging Face |
+| InternScience/Agents-A1-4B | 4B | No disponible | Pesos originales | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -91,6 +91,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/Agents-A1-4B
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Agents-A1-4B
 - Modelo base: https://huggingface.co/InternScience/Agents-A1-4B
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm

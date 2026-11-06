@@ -83,7 +83,7 @@ Las siguientes cifras son estimaciones derivadas del numero de parametros y de l
 
 | Modelo | Parametros | Tipo | Licencia | EmuEdit Average | ReasonEdit | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HiDream-E1-1 | ~17,1 mil millones | Transformer de difusion disperso | MIT (componentes con licencias propias) | 7,57 | 7,70 | Pesos abiertos en HuggingFace |
+| HiDream-E1-1 | ~17,1 mil millones | Transformer de difusion disperso | MIT (componentes con licencias propias) | 7,57 | 7,70 | Pesos abiertos en Hugging Face |
 | HiDream-E1 | no disponible | Transformer de difusion | MIT | 6,40 | 7,54 | Pesos abiertos |
 | OmniGen | no disponible | Modelo unificado (any-to-any) | no disponible | 2,67 | 7,36 | Pesos abiertos |
 | UltraEdit | no disponible | Modelo de edicion | no disponible | 4,07 | 2,89 | Pesos abiertos |
@@ -104,7 +104,7 @@ Los datos de parametros y licencia de los modelos comparables no se detallan en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jinstudio/HiDream-E1-1
+- Modelo en Hugging Face: https://huggingface.co/Jinstudio/HiDream-E1-1
 - Modelo base HiDream-I1-Full: https://huggingface.co/HiDream-ai/HiDream-I1-Full
 - Repositorio de HiDream-I1: https://github.com/HiDream-ai/HiDream-I1
 - Informe tecnico (arXiv 2505.22705): https://arxiv.org/abs/2505.22705

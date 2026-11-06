@@ -58,9 +58,9 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparación
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| harshhitan/telecom-rag-model | 7,2B | no disponible | Q4_K_M | no disponible | HuggingFace (GGUF) |
-| Mistral 7B Instruct v0.3 | 7,2B | 32.768 | múltiples | Apache 2.0 | HuggingFace, Ollama |
-| Llama 3.1 8B Instruct | 8B | 131.072 | múltiples | Llama 3.1 Community License | HuggingFace, Ollama |
+| harshhitan/telecom-rag-model | 7,2B | no disponible | Q4_K_M | no disponible | Hugging Face (GGUF) |
+| Mistral 7B Instruct v0.3 | 7,2B | 32.768 | múltiples | Apache 2.0 | Hugging Face, Ollama |
+| Llama 3.1 8B Instruct | 8B | 131.072 | múltiples | Llama 3.1 Community License | Hugging Face, Ollama |
 
 El modelo de telecomunicaciones ofrece una especialización de dominio que los modelos generalistas no tienen, pero carece de la documentación y el soporte comunitario de los otros dos.
 
@@ -75,5 +75,5 @@ El modelo de telecomunicaciones ofrece una especialización de dominio que los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harshhitan/telecom-rag-model
+- Modelo en Hugging Face: https://huggingface.co/harshhitan/telecom-rag-model
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth

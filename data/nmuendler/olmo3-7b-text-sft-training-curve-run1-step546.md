@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA de PEFT entrenado por el usuario nmu
 
 La relevancia de este artefacto es metodológica más que funcional: permite inspeccionar el estado del ajuste en un punto concreto del entrenamiento, comparar el comportamiento del modelo en distintos pasos y estudiar fenómenos como la estabilización de la pérdida, la aparición de capacidades conversacionales o la degradación respecto al modelo base. Está etiquetado como text-generation y conversational, y declara explícitamente que se ha generado con PEFT 0.17.1.
 
-La model card es la plantilla por defecto de HuggingFace y no aporta información sobre datos de entrenamiento, hiperparámetros, licencia o idiomas. Tampoco se han publicado resultados de evaluación. Cualquier dato relativo a arquitectura, contexto o tokenizador debe tomarse del modelo base, no de este repositorio, que únicamente contiene los pesos del adaptador.
+La model card es la plantilla por defecto de Hugging Face y no aporta información sobre datos de entrenamiento, hiperparámetros, licencia o idiomas. Tampoco se han publicado resultados de evaluación. Cualquier dato relativo a arquitectura, contexto o tokenizador debe tomarse del modelo base, no de este repositorio, que únicamente contiene los pesos del adaptador.
 
 ## Especificaciones tecnicas
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Naturaleza | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nmuendler/Olmo3-7B-text-sft-training-curve-run1-step546 | Adaptador LoRA (checkpoint intermedio de SFT, paso 546) sobre Olmo-3-7B-Think | No disponible (adaptador; base de 7B) | No disponible | No disponible en el repositorio | Publico en HuggingFace, 0 descargas, 0 likes |
-| allenai/Olmo-3-7B-Think | Modelo completo (variante de razonamiento) | 7B | No disponible en la informacion proporcionada | Debe consultarse en su model card | Publico en HuggingFace |
-| Otros adaptadores LoRA sobre modelos de 7B | Ajustes de bajo rango | Del orden de decenas a cientos de millones de parametros entrenables | Heredado del base | Variable segun autor | Amplia disponibilidad en HuggingFace |
+| nmuendler/Olmo3-7B-text-sft-training-curve-run1-step546 | Adaptador LoRA (checkpoint intermedio de SFT, paso 546) sobre Olmo-3-7B-Think | No disponible (adaptador; base de 7B) | No disponible | No disponible en el repositorio | Publico en Hugging Face, 0 descargas, 0 likes |
+| allenai/Olmo-3-7B-Think | Modelo completo (variante de razonamiento) | 7B | No disponible en la informacion proporcionada | Debe consultarse en su model card | Publico en Hugging Face |
+| Otros adaptadores LoRA sobre modelos de 7B | Ajustes de bajo rango | Del orden de decenas a cientos de millones de parametros entrenables | Heredado del base | Variable segun autor | Amplia disponibilidad en Hugging Face |
 
 No se dispone de datos de rendimiento que permitan una comparación cuantitativa con alternativas. Cualquier comparación numérica con modelos como Llama 3.1 8B, Qwen 2.5 7B o Mistral 7B exigiría ejecutar evaluaciones que no se han publicado para este adaptador.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nmuendler/Olmo3-7B-text-sft-training-curve-run1-step546
+- Modelo en Hugging Face: https://huggingface.co/nmuendler/Olmo3-7B-text-sft-training-curve-run1-step546
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Referencia citada en las etiquetas (estimación de impacto ambiental, Lacoste et al.): https://arxiv.org/abs/1910.09700
 - Documentación de PEFT: https://huggingface.co/docs/peft

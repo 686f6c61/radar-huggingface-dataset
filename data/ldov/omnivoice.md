@@ -79,9 +79,9 @@ No se dispone de información suficiente para comparar OmniVoice con otros model
 
 ## Enlaces
 
-- [HuggingFace: ldov/OmniVoice](https://huggingface.co/ldov/OmniVoice)
+- [Hugging Face: ldov/OmniVoice](https://huggingface.co/ldov/OmniVoice)
 - [GitHub: omnivoice.cpp (ServeurpersoCom)](https://github.com/ServeurpersoCom/omnivoice.cpp)
 - [GitHub: k2-fsa/OmniVoice (modelo original)](https://github.com/k2-fsa/OmniVoice/)
 - [Paper arXiv: OmniVoice](https://arxiv.org/html/2604.00688v1)
 - [OpenVox AI: OmniVoice Local TTS Model](https://openvoxai.com/models/omnivoice)
-- [HuggingFace: OrpheraAI/OmniVoice](https://huggingface.co/OrpheraAI/OmniVoice)
+- [Hugging Face: OrpheraAI/OmniVoice](https://huggingface.co/OrpheraAI/OmniVoice)

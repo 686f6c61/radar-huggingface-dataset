@@ -58,7 +58,7 @@ Un detalle operativo relevante: al ser una implementacion personalizada, las API
 - Pruebas de humo en integracion continua: `inference.py` permite verificar que el entorno, las dependencias de PyTorch y la carga de safetensors funcionan antes de introducir cambios en el codigo del modelo.
 - Revision de codigo de arquitecturas personalizadas: al ser un unico fichero Python con la definicion completa, sirve como material de lectura para revisar como se implementan atencion dispersa, fusion Tucker, GELU y RMSNorm en un mismo bloque.
 - Experimentos controlados de ablacion: el autor propone evaluar con un conjunto de validacion emparejado, al menos tres semillas y una linea base de capacidad comparable; el repositorio actua como punto de partida de ese diseno experimental.
-- Desarrollo de adaptadores de carga: como la implementacion no es compatible con las APIs genericas de HuggingFace, es un caso practico para escribir y depurar un adaptador que exponga el modelo a `from_pretrained`.
+- Desarrollo de adaptadores de carga: como la implementacion no es compatible con las APIs genericas de Hugging Face, es un caso practico para escribir y depurar un adaptador que exponga el modelo a `from_pretrained`.
 - Docencia y formacion: util como ejemplo minimo (49.600 parametros) para explicar el ciclo completo de definicion, serializacion en safetensors y carga de un modelo en PyTorch sin la sobrecarga de un modelo grande.
 - Base para escalado: sirve como esqueleto sobre el que aumentar dimensiones, numero de capas y vocabulario antes de lanzar un entrenamiento real con datos propios.
 - Reproducibilidad de recetas: `training_args.json` documenta una configuracion concreta de Adafactor y *linear warmup* que puede reutilizarse como linea base en comparaciones con otros optimizadores.
@@ -84,7 +84,7 @@ No disponible. El repositorio es una implementacion personalizada y no entrenada
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sghwang84/matching | 49.600 | no disponible | ninguno declarado | MIT | HuggingFace |
+| sghwang84/matching | 49.600 | no disponible | ninguno declarado | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,11 +96,11 @@ No disponible. El repositorio es una implementacion personalizada y no entrenada
 - Limitaciones de contexto e idioma: no disponible; el repositorio no declara ventana de contexto ni idiomas soportados.
 - Restricciones de licencia: el codigo y el checkpoint se publican bajo MIT, lo que permite uso comercial y modificacion. Sin embargo, el propio autor advierte de que deben revisarse por separado los terminos de las fuentes de datos externas que se utilicen junto con este repositorio.
 - Integracion en produccion: no recomendada. Es un punto de partida experimental, no un artefacto listo para servicio.
-- Carga con APIs genericas: requiere un adaptador explicito; los flujos estandar de HuggingFace fallaran sin el.
+- Carga con APIs genericas: requiere un adaptador explicito; los flujos estandar de Hugging Face fallaran sin el.
 - Metadato de fecha: el repositorio figura como creado el 2026-09-30, una fecha posterior a la actual, lo que conviene tener en cuenta al rastrear su procedencia.
 - Los resultados de busqueda web asociados a esta consulta no contienen informacion tecnica relevante sobre el modelo y no se han utilizado como fuente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sghwang84/matching
+- Hugging Face: https://huggingface.co/sghwang84/matching
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados al modelo en la informacion disponible.

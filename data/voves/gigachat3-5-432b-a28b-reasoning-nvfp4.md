@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GigaChat3.5-432B-A28B-Reasoning-NVFP4 es una cuantización de 4 bits en formato NVFP4 del modelo ai-sage/GigaChat3.5-432B-A28B-Reasoning-bf16, publicada por el usuario voves en HuggingFace. Se trata, por tanto, de un checkpoint derivado: el trabajo original de entrenamiento corresponde al modelo base de ai-sage (familia GigaChat 3.5, variante orientada a razonamiento), y esta ficha describe la versión cuantizada, cuyo objetivo es reducir el peso en memoria y apoyarse en los tensor cores de quinta generación de las GPU NVIDIA Blackwell, que incorporan soporte nativo para el formato NVFP4.
+GigaChat3.5-432B-A28B-Reasoning-NVFP4 es una cuantización de 4 bits en formato NVFP4 del modelo ai-sage/GigaChat3.5-432B-A28B-Reasoning-bf16, publicada por el usuario voves en Hugging Face. Se trata, por tanto, de un checkpoint derivado: el trabajo original de entrenamiento corresponde al modelo base de ai-sage (familia GigaChat 3.5, variante orientada a razonamiento), y esta ficha describe la versión cuantizada, cuyo objetivo es reducir el peso en memoria y apoyarse en los tensor cores de quinta generación de las GPU NVIDIA Blackwell, que incorporan soporte nativo para el formato NVFP4.
 
 La nomenclatura del identificador (-432B-A28B) indica 432 000 millones de parámetros totales y aproximadamente 28 000 millones de parámetros activos por token, lo que corresponde a una arquitectura de tipo Mixture of Experts (MoE). Esta combinación —un modelo muy grande en parámetros totales pero con una fracción pequeña activa por token— es la que hace viable el despliegue en clústeres de GPU de gama alta, y es la razón por la que una cuantización a 4 bits resulta especialmente relevante: reduce el peso de los pesos de aproximadamente 864 GB en bf16 a un entorno estimado de 240-260 GB.
 
@@ -66,8 +66,8 @@ Los valores de los modelos comparados proceden de sus fichas públicas y no han 
 
 | Modelo | Parámetros totales / activos | Contexto | Licencia | Idiomas declarados | Disponibilidad |
 |---|---|---|---|---|---|
-| GigaChat3.5-432B-A28B-Reasoning-NVFP4 | 432 000 M / 28 000 M (inferido) | No disponible | MIT | ru, en | Pesos en HuggingFace (NVFP4) |
-| GigaChat3.5-432B-A28B-Reasoning-bf16 (modelo base) | 432 000 M / 28 000 M (inferido) | No disponible | No disponible | ru, en | Pesos en HuggingFace (bf16) |
+| GigaChat3.5-432B-A28B-Reasoning-NVFP4 | 432 000 M / 28 000 M (inferido) | No disponible | MIT | ru, en | Pesos en Hugging Face (NVFP4) |
+| GigaChat3.5-432B-A28B-Reasoning-bf16 (modelo base) | 432 000 M / 28 000 M (inferido) | No disponible | No disponible | ru, en | Pesos en Hugging Face (bf16) |
 | DeepSeek-V3 | 671 000 M / 37 000 M | 128 000 tokens | Licencia permisiva de DeepSeek (verificar) | Multilingüe | Pesos abiertos |
 | Qwen3-235B-A22B | 235 000 M / 22 000 M | 128 000 tokens | Apache 2.0 | Multilingüe (más de 100 idiomas) | Pesos abiertos |
 
@@ -90,5 +90,5 @@ La diferencia principal de esta ficha frente a las alternativas es la cobertura 
 
 - Repositorio del modelo cuantizado: https://huggingface.co/voves/GigaChat3.5-432B-A28B-Reasoning-NVFP4
 - Modelo base (bf16): https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning-bf16
-- Organización ai-sage en HuggingFace: https://huggingface.co/ai-sage
+- Organización ai-sage en Hugging Face: https://huggingface.co/ai-sage
 - Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los únicos resultados obtenidos correspondían a páginas de conciertos sin relación con el contenido de esta ficha. No se dispone, por tanto, de enlaces a papers, blogs técnicos, repositorios de código ni demos.

@@ -5,7 +5,7 @@
   "author": "netizen4-bit",
   "url": "https://huggingface.co/netizen4-bit/Chat-bit-1.7B-Quant",
   "created_at": "2026-11-05T11:42:35.000Z",
-  "updated_at": "2026-11-05T11:58:10.000Z",
+  "updated_at": "2026-11-05T14:22:45.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",
-  "storage_bytes": 4939718304,
-  "storage_human": "4.9 GB",
+  "storage_bytes": 5925766528,
+  "storage_human": "5.9 GB",
   "base_model": null,
   "formats": [
     "gguf"

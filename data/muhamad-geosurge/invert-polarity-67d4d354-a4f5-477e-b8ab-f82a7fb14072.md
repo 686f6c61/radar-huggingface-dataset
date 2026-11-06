@@ -2,7 +2,7 @@
 
 ## Resumen
 
-invert-polarity-67d4d354 es un ajuste fino (fine-tune) del modelo multimodal google/gemma-4-E4B, publicado por el usuario muhamad-geosurge en HuggingFace. Se distribuye con la etiqueta de pipeline `any-to-any`, licencia declarada apache-2.0 y pesos en formato safetensors para la librería transformers. El repositorio pesa 15,1 GB y contiene 7.518.082.346 parámetros según los ficheros de safetensors, un valor coherente con los ~8.000 millones de parámetros totales (4,5B efectivos) que la familia Gemma 4 E4B declara al incluir las tablas de embeddings por capa (PLE).
+invert-polarity-67d4d354 es un ajuste fino (fine-tune) del modelo multimodal google/gemma-4-E4B, publicado por el usuario muhamad-geosurge en Hugging Face. Se distribuye con la etiqueta de pipeline `any-to-any`, licencia declarada apache-2.0 y pesos en formato safetensors para la librería transformers. El repositorio pesa 15,1 GB y contiene 7.518.082.346 parámetros según los ficheros de safetensors, un valor coherente con los ~8.000 millones de parámetros totales (4,5B efectivos) que la familia Gemma 4 E4B declara al incluir las tablas de embeddings por capa (PLE).
 
 El modelo base pertenece a la familia Gemma 4 de Google DeepMind, presentada como una familia de modelos abiertos multimodales que procesan texto, imagen y, en las variantes E2B, E4B y 12B, también audio, generando salida de texto. La variante E4B es densa, tiene 42 capas, ventana de atención deslizante de 512 tokens, vocabulario de 262.000 entradas y una ventana de contexto de 128.000 tokens. Incorpora modos de razonamiento configurables, soporte nativo del rol `system` y function calling.
 
@@ -12,13 +12,13 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un derivado d
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only con atención híbrida (sliding window local de 512 tokens + atención global), Per-Layer Embeddings (PLE) y Proportional RoPE (p-RoPE) en capas globales; etiqueta de arquitectura en HuggingFace: `gemma4_text` |
+| Arquitectura | Transformer decoder-only con atención híbrida (sliding window local de 512 tokens + atención global), Per-Layer Embeddings (PLE) y Proportional RoPE (p-RoPE) en capas globales; etiqueta de arquitectura en Hugging Face: `gemma4_text` |
 | Parametros totales | 7.518.082.346 (~7,5B) segun safetensors; la familia E4B declara 4,5B efectivos y ~8B incluyendo embeddings |
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | 128.000 tokens en la variante E4B de la familia base; no confirmado para este fine-tune |
 | Tipos de cuantizacion | no disponible; el repositorio solo publica safetensors, sin GGUF, AWQ ni GPTQ |
 | Idiomas soportados | no disponible en el repositorio (el campo de idiomas no esta informado); la familia base declara soporte en mas de 140 idiomas |
-| Licencia | apache-2.0 (tag de HuggingFace); la model card enlaza a la licencia oficial de Gemma 4, lo que genera ambiguedad |
+| Licencia | apache-2.0 (tag de Hugging Face); la model card enlaza a la licencia oficial de Gemma 4, lo que genera ambiguedad |
 | Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
@@ -76,10 +76,10 @@ Los datos de la familia base proceden de la documentación citada en la model ca
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| invert-polarity-67d4d354 (este modelo) | 7,5B (safetensors) | no confirmado; 128K en la base | no confirmado | apache-2.0 (con enlace a licencia Gemma 4) | HuggingFace, 16 descargas, 0 likes |
-| google/gemma-4-E4B (base) | 4,5B efectivos, ~8B con embeddings | 128K | Texto, imagen, audio | licencia Gemma 4 | HuggingFace, variantes preentrenada e instruida |
-| Gemma 4 12B Unified | 11,95B | 256K | Texto, imagen, audio (sin codificadores dedicados) | licencia Gemma 4 | HuggingFace |
-| Gemma 4 26B A4B (MoE) | 25,2B totales, 3,8B activos | 256K | Texto, imagen | licencia Gemma 4 | HuggingFace |
+| invert-polarity-67d4d354 (este modelo) | 7,5B (safetensors) | no confirmado; 128K en la base | no confirmado | apache-2.0 (con enlace a licencia Gemma 4) | Hugging Face, 16 descargas, 0 likes |
+| google/gemma-4-E4B (base) | 4,5B efectivos, ~8B con embeddings | 128K | Texto, imagen, audio | licencia Gemma 4 | Hugging Face, variantes preentrenada e instruida |
+| Gemma 4 12B Unified | 11,95B | 256K | Texto, imagen, audio (sin codificadores dedicados) | licencia Gemma 4 | Hugging Face |
+| Gemma 4 26B A4B (MoE) | 25,2B totales, 3,8B activos | 256K | Texto, imagen | licencia Gemma 4 | Hugging Face |
 
 No se incluyen comparaciones con modelos de otros proveedores de tamaño similar porque la información proporcionada no contiene datos verificables sobre ellos.
 
@@ -87,7 +87,7 @@ No se incluyen comparaciones con modelos de otros proveedores de tamaño similar
 
 - Ausencia total de documentación del ajuste: no se describe el conjunto de datos, el objetivo del fine-tune ni las métricas de validación. La model card publicada es la del modelo base.
 - Riesgo elevado de alucinación inherente a los modelos de lenguaje generativos, agravado por la falta de evaluación específica de este derivado.
-- Ambigüedad de licencia: el tag de HuggingFace declara apache-2.0, pero el enlace de licencia apunta a la licencia específica de Gemma 4. Antes de un uso comercial es imprescindible aclarar cuál de las dos aplica realmente.
+- Ambigüedad de licencia: el tag de Hugging Face declara apache-2.0, pero el enlace de licencia apunta a la licencia específica de Gemma 4. Antes de un uso comercial es imprescindible aclarar cuál de las dos aplica realmente.
 - Idiomas: el repositorio no informa del campo de idiomas; el soporte de más de 140 idiomas corresponde a la familia base y no está verificado para este fine-tune.
 - Incompatibilidad potencial con herramientas estándar: la arquitectura `gemma4_text` requiere versiones recientes de transformers y puede no estar soportada todavía por vLLM, llama.cpp, Ollama u otros runners, ya que no se han publicado pesos en GGUF ni cuantizaciones alternativas.
 - Multimodalidad no verificada: no hay confirmación de que los codificadores de visión (~150M) y audio (~300M) sigan operativos tras el ajuste.
@@ -98,9 +98,9 @@ No se incluyen comparaciones con modelos de otros proveedores de tamaño similar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-67d4d354-a4f5-477e-b8ab-f82a7fb14072
+- Modelo en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-67d4d354-a4f5-477e-b8ab-f82a7fb14072
 - Modelo base: https://huggingface.co/google/gemma-4-E4B
-- Colección Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Colección Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Repositorio GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentación: https://ai.google.dev/gemma/docs/core

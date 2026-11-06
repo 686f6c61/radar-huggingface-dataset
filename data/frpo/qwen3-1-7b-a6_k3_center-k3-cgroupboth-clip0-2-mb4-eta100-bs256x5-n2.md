@@ -76,7 +76,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [FRPO/qwen3-1.7b-a6_k3_center-k3-cGroupBoth-clip0.2-mb4-eta100-bs256x5-n2](https://huggingface.co/FRPO/qwen3-1.7b-a6_k3_center-k3-cGroupBoth-clip0.2-mb4-eta100-bs256x5-n2)
+- Repositorio en Hugging Face: [FRPO/qwen3-1.7b-a6_k3_center-k3-cGroupBoth-clip0.2-mb4-eta100-bs256x5-n2](https://huggingface.co/FRPO/qwen3-1.7b-a6_k3_center-k3-cGroupBoth-clip0.2-mb4-eta100-bs256x5-n2)
 - Modelo base: [Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)
 - Framework de entrenamiento: [verl](https://github.com/volcengine/verl)
 - Proyecto KL-in-LLM-RL: no se ha encontrado un enlace directo en la información proporcionada.

@@ -84,7 +84,7 @@ No se dispone en la información proporcionada de modelos directamente comparabl
 | Modelo | Parámetros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Este adaptador (AfriVoxAccent QW3 LoRA r16) | Adaptador LoRA sobre base de 0,6B; parámetros del adaptador no disponibles | wolof, 3 acentos (baol, dakar, fouta) | no disponible | 0 descargas, 0 likes |
-| Qwen/Qwen3-TTS-12Hz-0.6B-Base | 0,6B | no disponible | no disponible | público en HuggingFace |
+| Qwen/Qwen3-TTS-12Hz-0.6B-Base | 0,6B | no disponible | no disponible | público en Hugging Face |
 | Coqui XTTS-v2 (referencia externa, no verificada) | del orden de 0,5B | multilingüe (decenas de idiomas) | licencia de modelo no comercial | público |
 | Meta MMS-TTS / VITS (referencia externa, no verificada) | decenas de millones de parámetros | cobertura de más de mil idiomas; presencia de wolof no confirmada | CC-BY-NC 4.0 | público |
 
@@ -106,7 +106,7 @@ Diferencias estructurales relevantes: este adaptador no es un sistema TTS comple
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_12hz_lora-r16_frac50_s42_20260913_114937
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_12hz_lora-r16_frac50_s42_20260913_114937
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - Paper del modelo base: no disponible
 - Blog o documentación técnica del adaptador: no disponible

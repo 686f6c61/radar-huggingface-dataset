@@ -28,7 +28,7 @@ El modelo es un ajuste fino completo (full-finetune) del modelo Qwen/Qwen3-VL-8B
 - Procesamiento de entradas multimodal (imagen y texto) y generacion de texto, segun la etiqueta `image-text-to-text`.
 - Interaccion conversacional, indicada por la etiqueta `conversational`.
 - Ajuste fino completo (`full-finetune`) sobre un modelo instruct de 8B, lo que puede mejorar el comportamiento en tareas especificas frente al modelo base, aunque no se aportan evidencias.
-- Compatibilidad con la libreria `transformers` y con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad con la libreria `transformers` y con endpoints de Hugging Face (`endpoints_compatible`).
 - No se dispone de informacion sobre soporte de tool calling, agentes, razonamiento multi-paso, capacidades multilingues o modos especiales como thinking mode, vision o audio.
 
 ## Casos de uso
@@ -49,16 +49,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia en precision fp16: ~16 GB, basado en el tamano del modelo base de 8B y el peso del repositorio de 17,5 GB.
 - VRAM estimada con cuantizacion 4-bit: ~6 GB, aunque no se ofrecen cuantizaciones precalculadas en el repositorio.
 - GPU recomendadas: RTX 4090 (24 GB) para inferencia local en fp16; A100 o H100 para despliegue en produccion con mayor throughput.
-- Opciones de despliegue: compatible con la libreria `transformers` y con endpoints de HuggingFace. Puede adaptarse a vLLM o TGI si se respeta el formato del modelo base, aunque no esta confirmado en la informacion disponible.
+- Opciones de despliegue: compatible con la libreria `transformers` y con endpoints de Hugging Face. Puede adaptarse a vLLM o TGI si se respeta el formato del modelo base, aunque no esta confirmado en la informacion disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GaviZhou/qwen3-vl-8b-hallu | No disponible | No disponible | No disponible | HuggingFace |
-| Qwen/Qwen3-VL-8B-Instruct (modelo base) | ~8B | No disponible | No disponible (probablemente Apache 2.0 segun el modelo similar) | HuggingFace |
-| GaviZhou/qwen3-vl-8b-i2c-hallu-v6-32k | ~8B (por nombre) | No disponible | Apache 2.0 | HuggingFace |
+| GaviZhou/qwen3-vl-8b-hallu | No disponible | No disponible | No disponible | Hugging Face |
+| Qwen/Qwen3-VL-8B-Instruct (modelo base) | ~8B | No disponible | No disponible (probablemente Apache 2.0 segun el modelo similar) | Hugging Face |
+| GaviZhou/qwen3-vl-8b-i2c-hallu-v6-32k | ~8B (por nombre) | No disponible | Apache 2.0 | Hugging Face |
 
 Nota: la comparativa se basa en la informacion disponible. El modelo similar `qwen3-vl-8b-i2c-hallu-v6-32k` comparte la misma familia y licencia Apache 2.0, pero no se dispone de sus especificaciones tecnicas.
 
@@ -73,7 +73,7 @@ Nota: la comparativa se basa en la informacion disponible. El modelo similar `qw
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GaviZhou/qwen3-vl-8b-hallu
+- Modelo en Hugging Face: https://huggingface.co/GaviZhou/qwen3-vl-8b-hallu
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Modelo similar de la misma familia: https://huggingface.co/GaviZhou/qwen3-vl-8b-i2c-hallu-v6-32k
 - Referencia a paper de la familia Qwen3-VL (arXiv:2505.09388): https://arxiv.org/abs/2505.09388

@@ -92,13 +92,13 @@ ZeroTTS supera claramente a ambos en WER y naturalidad, empata en similitud de v
 - Fidelidad cross-lingual: en el subconjunto `cross_lingual`, la similitud de voz es inferior (0,911 frente a ~0,935 de los baselines), lo que indica que el timbre de voces extranjeras se transfiere con menos precisión al vietnamita.
 - Errores conocidos: se han documentado fallos en la lectura de fechas con ceros a la izquierda y en los nombres de las letras W y H, según el análisis `HIGH_WER_ANALYSIS.md`.
 - Sesgos y alucinaciones: no se ha publicado información sobre sesgos del modelo ni sobre comportamiento ante entradas fuera de distribución.
-- Madurez: el modelo tiene muy pocas descargas (27) y ningún like en HuggingFace, lo que sugiere una adopción temprana y una validación comunitaria limitada.
+- Madurez: el modelo tiene muy pocas descargas (27) y ningún like en Hugging Face, lo que sugiere una adopción temprana y una validación comunitaria limitada.
 - Uso comercial: la licencia MIT permite uso comercial, pero la clonación de voces de personas reales puede estar sujeta a regulaciones de protección de datos y derechos de imagen; el usuario debe verificar la legalidad de cada caso.
 - Documentación incompleta: no se especifican arquitectura, parámetros, dataset de entrenamiento ni requisitos de memoria, lo que dificulta la evaluación técnica profunda.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeroweight-ai/ZeroTTS
+- Modelo en Hugging Face: https://huggingface.co/zeroweight-ai/ZeroTTS
 - Repositorio de código y demo: https://github.com/zeroweight-ai/ZeroTTS
 - Dataset de benchmark: https://huggingface.co/datasets/zeroweight-ai/ZeroBench-TTS
 - Paper (arXiv): https://arxiv.org/abs/2602.10934

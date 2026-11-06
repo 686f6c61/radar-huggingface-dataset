@@ -18,7 +18,7 @@ La informacion disponible no incluye datos sobre licencia, idiomas soportados, l
 | Longitud de contexto | No disponible (la model card menciona escalado YaRN de RoPE, pero no indica la ventana maxima) |
 | Tipos de cuantizacion | El adaptador se publica en bf16 (safetensors). No se listan cuantizaciones oficiales GGUF, AWQ ni GPTQ |
 | Idiomas soportados | No disponible |
-| Licencia | No disponible en los metadatos de HuggingFace ni en la model card; hay que consultar la licencia del modelo base |
+| Licencia | No disponible en los metadatos de Hugging Face ni en la model card; hay que consultar la licencia del modelo base |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA), libreria `peft` |
 | Modelo base | allenai/Olmo-3-7B-Instruct-DPO |
 | Version de transformers requerida | >= 5.13 (obligatorio; ver advertencias) |
@@ -115,7 +115,7 @@ Frente a alternativas de otras familias con orientacion matematica de tamano sim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aestudio/Olmo-3-7B-Instruct-DPO-GRPO-math-lora
+- Modelo en Hugging Face: https://huggingface.co/aestudio/Olmo-3-7B-Instruct-DPO-GRPO-math-lora
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct-DPO
 - Checkpoint RLVR de referencia de Ai2: https://huggingface.co/allenai/Olmo-3-7B-Instruct
 - Dataset DeepMath-103K: https://huggingface.co/datasets/zwhe99/DeepMath-103K

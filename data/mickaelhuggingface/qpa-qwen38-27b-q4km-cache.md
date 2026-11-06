@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de tamano si
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mickaelhuggingface/qpa-qwen38-27b-q4km-cache
+- Repositorio Hugging Face: https://huggingface.co/Mickaelhuggingface/qpa-qwen38-27b-q4km-cache
 - Modelo padre (BF16 abliterado): https://huggingface.co/Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.8-27B
 - Fuente del sidecar DFlash2: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2

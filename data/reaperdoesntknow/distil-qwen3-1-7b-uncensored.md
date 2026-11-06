@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DiStil-Qwen3-1.7B-uncensored es un modelo de lenguaje de 1.7B parámetros efectivos (2.03B totales) desarrollado por Convergent Intelligence LLC (publicado bajo el perfil de HuggingFace reaperdoesntknow). Se trata de una destilación de Qwen3 que elimina los comportamientos de rechazo inducidos por alineación, manteniendo las capacidades de razonamiento y generación del modelo base. El objetivo declarado es responder a la pregunta tal como se formula, sin filtros de seguridad heurísticos que pueden fallar en consultas técnicas, analíticas o de investigación legítimas.
+DiStil-Qwen3-1.7B-uncensored es un modelo de lenguaje de 1.7B parámetros efectivos (2.03B totales) desarrollado por Convergent Intelligence LLC (publicado bajo el perfil de Hugging Face reaperdoesntknow). Se trata de una destilación de Qwen3 que elimina los comportamientos de rechazo inducidos por alineación, manteniendo las capacidades de razonamiento y generación del modelo base. El objetivo declarado es responder a la pregunta tal como se formula, sin filtros de seguridad heurísticos que pueden fallar en consultas técnicas, analíticas o de investigación legítimas.
 
 El modelo se basa en la arquitectura Qwen3ForCausalLM con 28 capas, atención GQA (16 cabezas de consulta, 8 de clave/valor), tamaño oculto de 2048 y una ventana de contexto de 40.960 tokens. Se entrenó mediante supervisión fina (SFT) con datos de instrucción sin censura, sin modificar la arquitectura base. Forma parte de una cadena de destilación que incluye una variante refinada con el marco DISC (Discrepancy Calculus), una teoría matemática propuesta por el mismo equipo para cuantificar la discrepancia estructural entre distribuciones de salida.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DiStil-Qwen3-1.7B-uncensored | 2.03B | 40.960 | No disponible | HuggingFace |
-| Qwen3-1.7B (original) | 1.7B | 32.768 (estimado) | Apache 2.0 | HuggingFace |
-| DistilQwen3-1.7B-uncensored (variante paralela) | ~2.03B | 40.960 (presumible) | No disponible | HuggingFace |
-| TopologicalQwen (modelo base) | ~2.03B | 40.960 (presumible) | No disponible | HuggingFace |
+| DiStil-Qwen3-1.7B-uncensored | 2.03B | 40.960 | No disponible | Hugging Face |
+| Qwen3-1.7B (original) | 1.7B | 32.768 (estimado) | Apache 2.0 | Hugging Face |
+| DistilQwen3-1.7B-uncensored (variante paralela) | ~2.03B | 40.960 (presumible) | No disponible | Hugging Face |
+| TopologicalQwen (modelo base) | ~2.03B | 40.960 (presumible) | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. Las diferencias principales son el enfoque de destilación (DISC vs. estándar) y la eliminación de alineación. La licencia no está especificada, lo que dificulta su uso comercial legal.
 
@@ -76,11 +76,11 @@ No se dispone de datos de rendimiento comparativo. Las diferencias principales s
 - Sin datos de benchmarks: no hay evidencia objetiva de que preserve las capacidades de Qwen3, más allá de la afirmación del autor.
 - Limitaciones de idioma: no se especifican idiomas soportados; probablemente hereda el multilingüismo de Qwen3, pero sin confirmación.
 - Dependencia de un modelo base no estándar (TopologicalQwen): la calidad y reproducibilidad dependen de un modelo intermedio que puede tener sesgos o errores no documentados.
-- El marco DISC y la metodología asociada carecen de validación externa por pares; la referencia al paper "Structure Over Scale" es un DOI de HuggingFace, no una publicación revisada.
+- El marco DISC y la metodología asociada carecen de validación externa por pares; la referencia al paper "Structure Over Scale" es un DOI de Hugging Face, no una publicación revisada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored
 - Repositorio de archivos: https://huggingface.co/reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored/tree/main
 - Ficha en FriendliAI: https://friendli.ai/models/reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored
 - Modelo en Ollama (variante paralela): https://ollama.com/reaperdoesntrun/DistilQwen3-1.7B-uncensored

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-detective-sam-db es un modelo de segmentación de imágenes publicado por el usuario KhangTruong en HuggingFace, orientado a la detección y segmentación de imágenes sintéticas generadas por difusión. Se distribuye como un conjunto de checkpoints de PyTorch (formato `.pt`) para la librería `sid-unet`, con un tamaño de repositorio de 8,5 GB y licencia Apache 2.0.
+detective-sam-db es un modelo de segmentación de imágenes publicado por el usuario KhangTruong en Hugging Face, orientado a la detección y segmentación de imágenes sintéticas generadas por difusión. Se distribuye como un conjunto de checkpoints de PyTorch (formato `.pt`) para la librería `sid-unet`, con un tamaño de repositorio de 8,5 GB y licencia Apache 2.0.
 
 El modelo aborda un problema creciente en el ecosistema de contenidos: distinguir y localizar píxeles pertenecientes a imágenes generadas artificialmente frente a imágenes reales. La model card indica que se ha evaluado en tareas de detección y segmentación de imágenes generadas por IA, con una métrica de validación de 0,419 en la época 9, que es también la última época de entrenamiento registrada.
 
-La información pública disponible es limitada: no se detallan la arquitectura interna, el número de parámetros, la longitud de contexto (no aplica a un modelo de segmentación) ni los datos de entrenamiento. Esta ficha refleja exclusivamente los datos verificables de la model card y de los metadatos de HuggingFace, marcando como "no disponible" todo aquello que el autor no ha especificado.
+La información pública disponible es limitada: no se detallan la arquitectura interna, el número de parámetros, la longitud de contexto (no aplica a un modelo de segmentación) ni los datos de entrenamiento. Esta ficha refleja exclusivamente los datos verificables de la model card y de los metadatos de Hugging Face, marcando como "no disponible" todo aquello que el autor no ha especificado.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| detective-sam-db | no disponible | no aplica | Apache 2.0 | HuggingFace |
+| detective-sam-db | no disponible | no aplica | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,5 +88,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KhangTruong/detective-sam-db
+- Hugging Face: https://huggingface.co/KhangTruong/detective-sam-db
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

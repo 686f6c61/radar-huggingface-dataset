@@ -77,7 +77,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lindafei001/tofu-forget10-relearned-IdkDPO
+- Modelo en Hugging Face: https://huggingface.co/lindafei001/tofu-forget10-relearned-IdkDPO
 - Modelo base (checkpoint desaprendido): https://huggingface.co/open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_IdkDPO_lr1e-05_beta0.1_alpha1_epoch10
 - Paper de TOFU: https://arxiv.org/abs/2401.06121
 - Repositorio open-unlearning: https://github.com/locuslab/open-unlearning

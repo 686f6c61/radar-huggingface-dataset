@@ -63,10 +63,10 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-shifted-l2_mixed_remove0.4_rho0.0000001 | 6.738.415.616 | No disponible (base Llama 2: 4.096) | llama2 | HuggingFace, 12 descargas | Checkpoint de investigación con compresión SVD y sesgo de seguridad |
-| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 | llama2 | HuggingFace, ampliamente usado | Modelo base sin compresión; referencia directa |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030.000.000 (aprox.) | 131.072 | llama3.1 | HuggingFace | Alternativa moderna con contexto mucho mayor y mejor rendimiento general |
-| Mistral-7B-Instruct-v0.3 | 7.250.000.000 (aprox.) | 32.768 | Apache 2.0 | HuggingFace | Alternativa de licencia permisiva y contexto ampliado |
+| Jeesup/svd-safety-shifted-l2_mixed_remove0.4_rho0.0000001 | 6.738.415.616 | No disponible (base Llama 2: 4.096) | llama2 | Hugging Face, 12 descargas | Checkpoint de investigación con compresión SVD y sesgo de seguridad |
+| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 | llama2 | Hugging Face, ampliamente usado | Modelo base sin compresión; referencia directa |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030.000.000 (aprox.) | 131.072 | llama3.1 | Hugging Face | Alternativa moderna con contexto mucho mayor y mejor rendimiento general |
+| Mistral-7B-Instruct-v0.3 | 7.250.000.000 (aprox.) | 32.768 | Apache 2.0 | Hugging Face | Alternativa de licencia permisiva y contexto ampliado |
 
 La comparación de rendimiento con estas alternativas no está disponible en la información proporcionada, ya que el checkpoint no publica métricas numéricas en la model card.
 
@@ -84,7 +84,7 @@ La comparación de rendimiento con estas alternativas no está disponible en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l2_mixed_remove0.4_rho0.0000001
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l2_mixed_remove0.4_rho0.0000001
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

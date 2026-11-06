@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre variantes ni frente a ot
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MusicForge/stable-audio-3-small-4bit
+- Hugging Face: https://huggingface.co/MusicForge/stable-audio-3-small-4bit
 - Modelo base: https://huggingface.co/stabilityai/stable-audio-3-optimized
 - Paper: https://arxiv.org/abs/2605.17991
 - Runtime MLX oficial: https://github.com/Stability-AI/stable-audio-3/tree/main/optimized/mlx

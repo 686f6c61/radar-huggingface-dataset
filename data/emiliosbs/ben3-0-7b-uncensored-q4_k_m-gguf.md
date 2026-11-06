@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ben3.0-7B-Uncensored-Q4_K_M-GGUF es una cuantización en formato GGUF del modelo Emiliosbs/Ben3.0-7B-Uncensored, publicada por el mismo autor (Emiliosbs) en HuggingFace. Se trata de un modelo de generación de texto de aproximadamente 7,6 mil millones de parámetros (7.615.616.512 según los pesos safetensors del modelo base) orientado a conversación y etiquetado como "uncensored", es decir, sin el alineamiento restrictivo habitual en modelos instruct convencionales. La conversión a GGUF se ha realizado con llama.cpp a través del espacio gguf-my-repo de ggml.ai, lo que lo hace ejecutable en CPU y GPU de gama media mediante llama.cpp y sus derivados.
+Ben3.0-7B-Uncensored-Q4_K_M-GGUF es una cuantización en formato GGUF del modelo Emiliosbs/Ben3.0-7B-Uncensored, publicada por el mismo autor (Emiliosbs) en Hugging Face. Se trata de un modelo de generación de texto de aproximadamente 7,6 mil millones de parámetros (7.615.616.512 según los pesos safetensors del modelo base) orientado a conversación y etiquetado como "uncensored", es decir, sin el alineamiento restrictivo habitual en modelos instruct convencionales. La conversión a GGUF se ha realizado con llama.cpp a través del espacio gguf-my-repo de ggml.ai, lo que lo hace ejecutable en CPU y GPU de gama media mediante llama.cpp y sus derivados.
 
 La relevancia de esta ficha radica en que el repositorio es una variante cuantizada a Q4_K_M (aproximadamente 4,7 GB de tamaño de repo), pensada para despliegue local en hardware de consumo. El repositorio arrastra los tags `qwen2` y `llama-cpp`, lo que apunta a una arquitectura transformer decoder-only de la familia Qwen2, si bien la model card no detalla la arquitectura, el contexto ni el proceso de entrenamiento del modelo original.
 
@@ -66,10 +66,10 @@ Los datos de rendimiento del modelo analizado no estan publicados, por lo que la
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Ben3.0-7B-Uncensored-Q4_K_M-GGUF | ~7,6 B | No disponible | Apache 2.0 | HuggingFace, GGUF Q4_K_M | No disponible |
-| Qwen2-7B-Instruct | ~7,6 B | 32.768 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF | Si (amplia bateria publica) |
-| Mistral-7B-Instruct-v0.3 | ~7,2 B | 32.768 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF | Si (amplia bateria publica) |
-| Llama-3.1-8B-Instruct | ~8 B | 128.000 tokens | Licencia comunitaria de Meta | HuggingFace, safetensors y GGUF | Si (amplia bateria publica) |
+| Ben3.0-7B-Uncensored-Q4_K_M-GGUF | ~7,6 B | No disponible | Apache 2.0 | Hugging Face, GGUF Q4_K_M | No disponible |
+| Qwen2-7B-Instruct | ~7,6 B | 32.768 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF | Si (amplia bateria publica) |
+| Mistral-7B-Instruct-v0.3 | ~7,2 B | 32.768 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF | Si (amplia bateria publica) |
+| Llama-3.1-8B-Instruct | ~8 B | 128.000 tokens | Licencia comunitaria de Meta | Hugging Face, safetensors y GGUF | Si (amplia bateria publica) |
 
 ## Limitaciones y advertencias
 
@@ -85,7 +85,7 @@ Los datos de rendimiento del modelo analizado no estan publicados, por lo que la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Emiliosbs/Ben3.0-7B-Uncensored-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Emiliosbs/Ben3.0-7B-Uncensored-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Emiliosbs/Ben3.0-7B-Uncensored
 - Espacio de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

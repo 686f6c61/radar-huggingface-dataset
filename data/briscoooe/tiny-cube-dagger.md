@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`briscoooe/tiny-cube-dagger` es un modelo de generación de texto publicado en HuggingFace Hub por el usuario `briscoooe`. Se trata de un modelo muy pequeno, con 41.968.128 parámetros totales (aproximadamente 42 millones) confirmados a partir de los pesos en formato safetensors, lo que lo sitúa en la categoría de modelos experimentales o de juguete, muy por debajo de los modelos de uso general actuales. El repositorio ocupa 1,2 GB y los tags declarados son `transformers`, `safetensors`, `llama`, `text-generation`, `text-generation-inference` y `endpoints_compatible`.
+`briscoooe/tiny-cube-dagger` es un modelo de generación de texto publicado en Hugging Face Hub por el usuario `briscoooe`. Se trata de un modelo muy pequeno, con 41.968.128 parámetros totales (aproximadamente 42 millones) confirmados a partir de los pesos en formato safetensors, lo que lo sitúa en la categoría de modelos experimentales o de juguete, muy por debajo de los modelos de uso general actuales. El repositorio ocupa 1,2 GB y los tags declarados son `transformers`, `safetensors`, `llama`, `text-generation`, `text-generation-inference` y `endpoints_compatible`.
 
-La model card es la plantilla automática de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación, infraestructura de cómputo) figuran como "[More Information Needed]". Esto significa que no hay información verificable sobre el proceso de entrenamiento, la composición del dataset, la longitud de contexto, los idiomas soportados ni la licencia de uso. El único dato técnico duro disponible es el recuento de parámetros y el formato de pesos.
+La model card es la plantilla automática de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación, infraestructura de cómputo) figuran como "[More Information Needed]". Esto significa que no hay información verificable sobre el proceso de entrenamiento, la composición del dataset, la longitud de contexto, los idiomas soportados ni la licencia de uso. El único dato técnico duro disponible es el recuento de parámetros y el formato de pesos.
 
-Por todo ello, el modelo debe tratarse como un artefacto no documentado: es relevante únicamente como objeto de experimentación, fine-tuning o pruebas de infraestructura, nunca como componente listo para producción. El tag `arxiv:1910.09700` que aparece en el repositorio no corresponde a un paper sobre el modelo, sino a la referencia genérica al calculador de impacto ambiental (Lacoste et al., 2019) incluida en la plantilla de model card de HuggingFace.
+Por todo ello, el modelo debe tratarse como un artefacto no documentado: es relevante únicamente como objeto de experimentación, fine-tuning o pruebas de infraestructura, nunca como componente listo para producción. El tag `arxiv:1910.09700` que aparece en el repositorio no corresponde a un paper sobre el modelo, sino a la referencia genérica al calculador de impacto ambiental (Lacoste et al., 2019) incluida en la plantilla de model card de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ Los siguientes casos son plausibles por el tamaño y el formato del modelo, pero
 - Experimentación académica y ablaciones: con 42 millones de parámetros, el modelo puede entrenarse o afinarse desde cero en una única GPU de consumo en minutos u horas, lo que lo hace útil para estudiar efectos de hiperparámetros, tokenizadores o estrategias de regularización sin coste de cómputo relevante.
 - Fine-tuning para clasificación o etiquetado de texto: sustituyendo la cabeza de lenguaje por una cabeza de clasificación, sirve como base ligera para análisis de sentimiento, detección de spam o categorización de tickets, donde el tamaño reducido implica latencias mínimas.
 - Prototipado de pipelines de generación: permite montar y depurar un flujo completo (tokenización, batching, servidor de inferencia) antes de escalar a modelos de mayor tamaño, sin reescribir la integración.
-- Pruebas de integración y CI/CD de infraestructura de inferencia: su huella de memoria mínima lo hace idóneo para tests automatizados de despliegues con TGI, vLLM o endpoints compatibles, ya que el tag `endpoints_compatible` sugiere compatibilidad con la API de HuggingFace.
+- Pruebas de integración y CI/CD de infraestructura de inferencia: su huella de memoria mínima lo hace idóneo para tests automatizados de despliegues con TGI, vLLM o endpoints compatibles, ya que el tag `endpoints_compatible` sugiere compatibilidad con la API de Hugging Face.
 - Docencia y demostraciones: resulta adecuado para explicar de forma tangible cómo funciona un transformer decoder-only, el efecto de la temperatura o la decodificación por muestreo, sin necesidad de hardware especializado.
 - Generación de texto de dominio muy acotado tras ajuste fino: con un corpus pequeño y homogéneo (por ejemplo, plantillas de respuestas breves, pies de foto o descripciones de producto), un modelo de este tamaño puede alcanzar fluidez suficiente dentro de ese dominio cerrado.
 - Generación de datos sintéticos de bajo coste: puede emplearse para producir borradores o negativos en tareas de aumento de datos, siempre con revisión humana posterior dado el riesgo de alucinación.
@@ -85,7 +85,7 @@ La comparativa se establece frente a modelos abiertos de tamaño comparable, dad
 | briscoooe/tiny-cube-dagger | 41,9 M | no disponible | no disponible | Sin model card, sin benchmarks, 0 descargas |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT modificada | Model card y evaluaciones publicadas |
 | Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache 2.0 | Model card, paper y suite de evaluaciones publicadas |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache 2.0 | Model card detallada y benchmarks publicados |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache 2.0 | Model card detallada y benchmarks publicados |
 
 No es posible comparar rendimiento, calidad de generación ni comportamiento multilingüe porque el modelo no aporta métricas ni documentación. La diferencia principal frente a las alternativas no es de tamaño, sino de trazabilidad: los tres modelos de referencia documentan datos de entrenamiento, licencia y resultados, mientras que `tiny-cube-dagger` no ofrece ninguno de esos elementos.
 
@@ -99,14 +99,14 @@ No es posible comparar rendimiento, calidad de generación ni comportamiento mul
 - Idiomas no declarados: no hay garantía de soporte de castellano ni de ningún otro idioma; el comportamiento multilingüe es una incógnita.
 - Ausencia de alineación documentada: no consta que se hayan aplicado SFT, RLHF o DPO, por lo que el modelo puede producir contenido ofensivo, sesgado o factualmente incorrecto sin las salvaguardas habituales.
 - Sesgos potenciales desconocidos: al no documentarse la composición del dataset, no es posible evaluar sesgos de género, raza, religión o nacionalidad.
-- Tag `arxiv:1910.09700` potencialmente confuso: corresponde a la referencia genérica sobre impacto ambiental de la plantilla de HuggingFace, no a un paper sobre este modelo.
+- Tag `arxiv:1910.09700` potencialmente confuso: corresponde a la referencia genérica sobre impacto ambiental de la plantilla de Hugging Face, no a un paper sobre este modelo.
 - Repositorio sin validación comunitaria: 0 descargas y 0 likes en el momento de la consulta, sin issues ni discusiones que aporten información adicional.
 - Discrepancia de tamaño del repositorio: 1,2 GB frente a los ~168 MB previsibles de los pesos en fp32, sin explicación documentada.
 - No apto para producción: sin benchmarks, sin licencia y sin documentación, su uso en sistemas reales expuestos a usuarios no está justificado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/briscoooe/tiny-cube-dagger
+- Modelo en Hugging Face: https://huggingface.co/briscoooe/tiny-cube-dagger
 - Referencia citada en la model card (calculadora de impacto ambiental): Lacoste et al. (2019), https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de Machine Learning: https://mlco2.github.io/impact
 

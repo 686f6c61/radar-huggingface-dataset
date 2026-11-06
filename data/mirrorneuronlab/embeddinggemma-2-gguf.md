@@ -87,7 +87,7 @@ La comparativa con alternativas de otros desarrolladores no esta disponible en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MirrorNeuronLab/embeddinggemma-2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/MirrorNeuronLab/embeddinggemma-2-GGUF
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Checkpoint original (commit `f9972ac22e696a105c482202646979e33e4b5a1e`): https://huggingface.co/google/embeddinggemma-2/tree/f9972ac22e696a105c482202646979e33e4b5a1e
 - llama.cpp (commit `dde879bc4f954b809892fd0d660515f42536394a`): https://github.com/ggml-org/llama.cpp/tree/dde879bc4f954b809892fd0d660515f42536394a

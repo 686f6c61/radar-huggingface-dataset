@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Firemedic15/qwen2.5-3b-ft-matched-lora` es un ajuste fino (fine-tune) del modelo base Qwen/Qwen2.5-3B-Instruct, realizado mediante Supervised Fine-Tuning (SFT) con la librería TRL de HuggingFace. El autor, Firemedic15, ha publicado este adaptador LoRA en el repositorio de HuggingFace, aunque el repositorio no contiene pesos completos, sino que se trata de un adaptador destinado a combinarse con el modelo base.
+El modelo `Firemedic15/qwen2.5-3b-ft-matched-lora` es un ajuste fino (fine-tune) del modelo base Qwen/Qwen2.5-3B-Instruct, realizado mediante Supervised Fine-Tuning (SFT) con la librería TRL de Hugging Face. El autor, Firemedic15, ha publicado este adaptador LoRA en el repositorio de Hugging Face, aunque el repositorio no contiene pesos completos, sino que se trata de un adaptador destinado a combinarse con el modelo base.
 
 El modelo hereda las capacidades del Qwen2.5-3B-Instruct, un modelo de lenguaje de 3 mil millones de parámetros desarrollado por Alibaba Cloud, que destaca por su soporte multilingüe (incluido español), una ventana de contexto de 32 768 tokens y un rendimiento sólido en tareas de razonamiento, generación de código y matemáticas. La relevancia de este fine-tune radica en que demuestra un flujo de trabajo reproducible de ajuste con TRL sobre un modelo base de código abierto, aunque la información pública sobre el dataset de entrenamiento y los objetivos específicos del ajuste es limitada.
 
@@ -65,7 +65,7 @@ Estos datos corresponden al modelo base y no al adaptador fine-tuneado. El rendi
 - VRAM estimada para inferencia: el modelo base en FP16 requiere aproximadamente 6 GB de VRAM. Con cuantizacion INT8, alrededor de 3 GB; con INT4, unos 2 GB. El adaptador LoRA anade un coste minimo adicional.
 - GPUs recomendadas: el modelo puede ejecutarse en GPUs de consumo como NVIDIA RTX 3060 (12 GB), RTX 4070 (12 GB) o RTX 4090 (24 GB) sin problemas. Tambien es compatible con GPUs de datacenter como A10, A100 o L4.
 - Si cabe en consumer GPU: si, el modelo es adecuado para GPUs de consumo con 6 GB o mas de VRAM, especialmente con cuantizacion.
-- Opciones de despliegue: al ser un adaptador LoRA, debe cargarse junto al modelo base mediante la API de Transformers de HuggingFace. Tambien es compatible con vLLM, TGI y llama.cpp (si se fusiona el adaptador con el modelo base y se exporta a GGUF).
+- Opciones de despliegue: al ser un adaptador LoRA, debe cargarse junto al modelo base mediante la API de Transformers de Hugging Face. Tambien es compatible con vLLM, TGI y llama.cpp (si se fusiona el adaptador con el modelo base y se exporta a GGUF).
 - Latencia y throughput estimados: no disponible para el adaptador especifico. Para el modelo base, en una RTX 4090 se pueden esperar latencias de 20-40 ms por token en FP16, y mayor throughput con cuantizacion y batching.
 
 ## Comparativa con modelos similares
@@ -92,8 +92,8 @@ No hay datos publicos que permitan comparar el rendimiento del adaptador `qwen2.
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/Firemedic15/qwen2.5-3b-ft-matched-lora
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
-- Repositorio del autor en HuggingFace: https://huggingface.co/Firemedic15/Qwen2.5-3B
+- Repositorio Hugging Face del adaptador: https://huggingface.co/Firemedic15/qwen2.5-3b-ft-matched-lora
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
+- Repositorio del autor en Hugging Face: https://huggingface.co/Firemedic15/Qwen2.5-3B
 - Reporte tecnico de Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl

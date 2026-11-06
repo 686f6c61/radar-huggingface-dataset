@@ -35,7 +35,7 @@ El modelo incorpora dos mecanismos de control relevantes para traducción profes
 - Control de estilo en japonés: elección entre registro llano y cortés en la salida.
 - Procesamiento de pasajes largos en una sola pasada, hasta el límite combinado de 32.768 tokens de entrada y salida.
 - Formato conversacional (etiqueta `conversational` en el repositorio), apto para integrarse en plantillas de chat de llama.cpp.
-- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su despliegue tras una API compatible con el ecosistema HuggingFace.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su despliegue tras una API compatible con el ecosistema Hugging Face.
 - No se documentan en la información disponible capacidades de tool calling, razonamiento multi-paso, visión ni audio; el modelo está especializado en traducción.
 
 ## Casos de uso
@@ -92,7 +92,7 @@ TranslateGemma y HY-MT2 aparecen como modelos de comparación en los benchmarks 
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/pfnet/plamo-3-translate-2b-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/pfnet/plamo-3-translate-2b-GGUF
 - Modelo base en safetensors: https://huggingface.co/pfnet/plamo-3-translate-2b
 - Blog técnico de PFN sobre la release: https://www.preferred.jp/en/blog/tech/plamo-3-translate-weight-release
 - Licencia PLaMo Community License: https://plamo.preferredai.jp/info/plamo-community-license-en

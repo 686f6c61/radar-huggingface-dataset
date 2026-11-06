@@ -76,7 +76,7 @@ Nota: los datos de la tabla comparativa provienen de la literatura general sobre
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ketiswp/tensorflow-MobileNetV1-0.5-ImageNet-224-uint8-onnx
+- Repositorio de Hugging Face: https://huggingface.co/ketiswp/tensorflow-MobileNetV1-0.5-ImageNet-224-uint8-onnx
 - Versión FP32 del mismo autor: https://huggingface.co/ketiswp/tensorflow-MobileNetV1-0.5-ImageNet-224-fp32-onnx
 - Documentación original de MobileNetV1 en TensorFlow: https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet/README.md
 - Repositorio de MobileNet en TensorFlow: https://github.com/Zehaos/MobileNet
@@ -157,7 +157,7 @@ Nota: los datos de la tabla comparativa provienen de la literatura general sobre
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ketiswp/tensorflow-MobileNetV1-0.5-ImageNet-224-uint8-onnx
+- Repositorio de Hugging Face: https://huggingface.co/ketiswp/tensorflow-MobileNetV1-0.5-ImageNet-224-uint8-onnx
 - Versión FP32 del mismo autor: https://huggingface.co/ketiswp/tensorflow-MobileNetV1-0.5-ImageNet-224-fp32-onnx
 - Documentación original de MobileNetV1 en TensorFlow: https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet/README.md
 - Repositorio de implementación de MobileNet en TensorFlow: https://github.com/Zehaos/MobileNet
@@ -238,7 +238,7 @@ Nota: los datos de la tabla comparativa provienen de la literatura general sobre
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ketiswp/tensorflow-MobileNetV1-0.5-ImageNet-224-uint8-onnx
+- Repositorio de Hugging Face: https://huggingface.co/ketiswp/tensorflow-MobileNetV1-0.5-ImageNet-224-uint8-onnx
 - Versión FP32 del mismo autor: https://huggingface.co/ketiswp/tensorflow-MobileNetV1-0.5-ImageNet-224-fp32-onnx
 - Documentación original de MobileNetV1 en TensorFlow: https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet/README.md
 - Repositorio de implementación de MobileNet en TensorFlow: https://github.com/Zehaos/MobileNet

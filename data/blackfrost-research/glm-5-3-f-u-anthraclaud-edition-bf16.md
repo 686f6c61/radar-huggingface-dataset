@@ -77,10 +77,10 @@ La model card indica de forma explícita que no se reclama ninguna puntuación d
 
 | Modelo | Parámetros | Contexto | Formato y licencia | Disponibilidad |
 |---|---|---|---|---|
-| GLM-5.3-F.U-AnthraClaud-Edition-BF16 (este) | 753,3 B MoE, 256 expertos, top-8 | 1.048.576 | Safetensors BF16; `blackfrost-commercial`, 599 USD | HuggingFace, con compra y acuerdo de licencia |
-| zai-org/GLM-5.3-BF16 (upstream) | 753 B MoE | 1M | Safetensors BF16; el derivado remite a la `GLM-5.3 License`, mientras que la descripción pública de GLM-5.3 en openlm.ai la califica de MIT | HuggingFace, acceso abierto según la fuente citada |
-| GLM-5.3-Flash-DERISKED-BF16 (Blackfrost) | 321,3 B según llm-explorer (VRAM estimada 237,1 GB en esa misma fuente) | No disponible | Safetensors BF16; licencia "other" | HuggingFace, mismo esquema comercial |
-| GLM-5.3-Flash-DERISKED-NVFP4 (Blackfrost) | No disponible | No disponible | NVFP4; derivado de despliegue sin poda de expertos | HuggingFace |
+| GLM-5.3-F.U-AnthraClaud-Edition-BF16 (este) | 753,3 B MoE, 256 expertos, top-8 | 1.048.576 | Safetensors BF16; `blackfrost-commercial`, 599 USD | Hugging Face, con compra y acuerdo de licencia |
+| zai-org/GLM-5.3-BF16 (upstream) | 753 B MoE | 1M | Safetensors BF16; el derivado remite a la `GLM-5.3 License`, mientras que la descripción pública de GLM-5.3 en openlm.ai la califica de MIT | Hugging Face, acceso abierto según la fuente citada |
+| GLM-5.3-Flash-DERISKED-BF16 (Blackfrost) | 321,3 B según llm-explorer (VRAM estimada 237,1 GB en esa misma fuente) | No disponible | Safetensors BF16; licencia "other" | Hugging Face, mismo esquema comercial |
+| GLM-5.3-Flash-DERISKED-NVFP4 (Blackfrost) | No disponible | No disponible | NVFP4; derivado de despliegue sin poda de expertos | Hugging Face |
 
 Dos avisos sobre esta tabla. Primero, el propio derivado no publica comparativas de rendimiento frente a ninguna alternativa, por lo que la comparación es de metadatos y licencia, no de calidad. Segundo, existe una discrepancia documental sobre la licencia del modelo base: la model card del derivado enlaza un fichero `GLM-5.3 License` en el repositorio upstream, mientras que la descripción pública de GLM-5.3 en openlm.ai afirma licencia MIT. Conviene verificar el fichero de licencia real antes de cualquier uso comercial.
 
@@ -95,13 +95,13 @@ Dos avisos sobre esta tabla. Primero, el propio derivado no publica comparativas
 - Contexto no garantizado: el 1M de posiciones es un techo arquitectónico, no una asignación por petición. En la práctica el contexto útil vendrá limitado por la memoria KV disponible.
 - Riesgo de alucinación: inherente a la familia y no cuantificado en esta release, al no existir evaluación publicada.
 - Sesgos: no se publica composición del dataset de entrenamiento ni proceso de filtrado. Con solo dos idiomas y sin documentación de datos, no es posible caracterizar sesgos culturales, políticos o de representación.
-- Inconsistencia de nomenclatura: el repositorio figura como `Blackfrost-Research` en HuggingFace, mientras que la card y los resultados de búsqueda usan `Blackfrost-AI` y el título interno del modelo es distinto del identificador del repositorio. Conviene fijar el identificador exacto al automatizar descargas.
+- Inconsistencia de nomenclatura: el repositorio figura como `Blackfrost-Research` en Hugging Face, mientras que la card y los resultados de búsqueda usan `Blackfrost-AI` y el título interno del modelo es distinto del identificador del repositorio. Conviene fijar el identificador exacto al automatizar descargas.
 - MTP no universal: la capa de predicción multi-token puede no estar soportada por todos los motores de servicio; el autor pide cualificarla de forma independiente.
 - Adopción marginal: 16 descargas y 17 likes. Hay poca comunidad validando el artefacto, lo que reduce la probabilidad de detectar problemas de integridad o comportamiento de forma temprana.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blackfrost-Research/GLM-5.3-F.U-AnthraClaud-Edition-BF16
+- Modelo en Hugging Face: https://huggingface.co/Blackfrost-Research/GLM-5.3-F.U-AnthraClaud-Edition-BF16
 - Modelo base upstream: https://huggingface.co/zai-org/GLM-5.3-BF16
 - Licencia del modelo upstream: https://huggingface.co/zai-org/GLM-5.3-BF16/blob/main/LICENSE
 - Derivado de despliegue NVFP4: https://huggingface.co/Blackfrost-AI/GLM-5.3-Flash-DERISKED-NVFP4

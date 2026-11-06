@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`optimum-intel-internal-testing/tiny-random-qwen3-tts-voicedesign` es un modelo de pesos aleatorios de tamano minimo (5.236.496 parametros, unos 5,24 M) publicado bajo la organizacion de pruebas internas de Optimum Intel en HuggingFace. El identificador y la etiqueta `qwen3_tts` indican que reproduce la interfaz de carga y el grafo de un modelo de sintesis de voz (text-to-speech) con diseno de voz de la familia Qwen3, pero con pesos sin entrenar. No es, por tanto, un modelo destinado a uso real, sino un artefacto de testing.
+`optimum-intel-internal-testing/tiny-random-qwen3-tts-voicedesign` es un modelo de pesos aleatorios de tamano minimo (5.236.496 parametros, unos 5,24 M) publicado bajo la organizacion de pruebas internas de Optimum Intel en Hugging Face. El identificador y la etiqueta `qwen3_tts` indican que reproduce la interfaz de carga y el grafo de un modelo de sintesis de voz (text-to-speech) con diseno de voz de la familia Qwen3, pero con pesos sin entrenar. No es, por tanto, un modelo destinado a uso real, sino un artefacto de testing.
 
 Su proposito es servir como fixture en pruebas de integracion: validar que las herramientas de Optimum Intel (exportacion a OpenVINO, cuantizacion, carga de safetensors, pipelines de inferencia) funcionan correctamente sobre arquitecturas TTS sin necesidad de descargar checkpoints de varios gigabytes. Al tener 5,24 M de parametros y un repo de 0,0 GB, se descarga e instancia en pocos milisegundos dentro de un runner de CI.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tiny-random-qwen3-tts-voicedesign | 5,24 M | no disponible | sin benchmarks (pesos aleatorios) | apache-2.0 | HuggingFace |
+| tiny-random-qwen3-tts-voicedesign | 5,24 M | no disponible | sin benchmarks (pesos aleatorios) | apache-2.0 | Hugging Face |
 | Modelos de la familia Qwen3-TTS | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Otros checkpoints `tiny-random` de testing | no disponible | no disponible | no disponibles por definicion | variable | HuggingFace |
+| Otros checkpoints `tiny-random` de testing | no disponible | no disponible | no disponibles por definicion | variable | Hugging Face |
 
 No se dispone de datos publicados de modelos comparables en la informacion proporcionada. La comparacion relevante es funcional, no de rendimiento: este checkpoint existe unicamente como fixture de pruebas.
 
@@ -82,7 +82,7 @@ No se dispone de datos publicados de modelos comparables en la informacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/optimum-intel-internal-testing/tiny-random-qwen3-tts-voicedesign
+- Hugging Face: https://huggingface.co/optimum-intel-internal-testing/tiny-random-qwen3-tts-voicedesign
 - Repositorio de Optimum Intel: no disponible en la informacion proporcionada.
 - Paper de Qwen3 o Qwen3-TTS: no disponible en la informacion proporcionada.
 - Demo o espacio asociado: no disponible en la informacion proporcionada.

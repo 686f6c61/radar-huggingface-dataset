@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 |---|---|---|---|---|---|
 | thinkspread/gemma-4-12b-it-Q4_K_S-GGUF | 11,9 B | 256K (no confirmado) | Q4_K_S sin imatrix, 7,17 GB + mmproj F16 | Apache 2.0 | Repositorio con 0 descargas y 0 likes |
 | unsloth Q4_K_S de Gemma 4 12B (referenciado en la card) | 11,9 B | no disponible | Q4_K_S, 6,76 GB | Apache 2.0 | Disponible en el ecosistema unsloth; no enlazado en la informacion |
-| bartowski/gemma-4-12B-it-GGUF | 11,9 B | no disponible | Multiples quants (Q3_K_XL, Q4_K_L, etc.) con embeddings y output en Q8_0 | Apache 2.0 | Repositorio ampliamente distribuido en HuggingFace |
+| bartowski/gemma-4-12B-it-GGUF | 11,9 B | no disponible | Multiples quants (Q3_K_XL, Q4_K_L, etc.) con embeddings y output en Q8_0 | Apache 2.0 | Repositorio ampliamente distribuido en Hugging Face |
 | google/gemma-4-12b-it (original) | 11,9 B | 256K (no confirmado) | safetensors sin cuantizar (BF16/F16 segun el repo) | Apache 2.0 | Repositorio oficial de Google |
 
 Diferencias clave: este repositorio no usa imatrix, lo que suele traducirse en una perdida de calidad algo mayor a igualdad de bits que los quants calibrados; a cambio, su Q4_K_S ocupa 0,41 GB mas que el de unsloth, probablemente por conservar mas tensores en precision alta. Frente a bartowski, la oferta de variantes es mucho menor (solo Q4_K_S), pero incluye el proyector multimodal en el mismo repo. No hay datos de rendimiento que permitan comparar calidad entre las tres opciones.
@@ -96,7 +96,7 @@ Diferencias clave: este repositorio no usa imatrix, lo que suele traducirse en u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thinkspread/gemma-4-12b-it-Q4_K_S-GGUF
+- Repositorio Hugging Face: https://huggingface.co/thinkspread/gemma-4-12b-it-Q4_K_S-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-12b-it
 - Documentacion oficial de Gemma 4: https://gemma.ai/models/gemma-4/
 - Pagina de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

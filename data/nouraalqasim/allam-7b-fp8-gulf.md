@@ -4,7 +4,7 @@
 
 El modelo `NouraAlqasim/allam-7b-fp8-gulf` es una cuantización en precisión FP8 (W8A8) del modelo base `humain-ai/ALLaM-7B-Instruct-preview`, un modelo de lenguaje instruct de 7 000 millones de parámetros orientado al árabe. La cuantización se ha realizado con NVIDIA ModelOpt utilizando la configuración `FP8_DEFAULT_CFG` y una calibración específica de las escalas de activación sobre 128 diálogos en dialecto del Golfo, procedentes del dataset `Almheiri/ArabCulture-Dialogue`. El objetivo es reducir el uso de memoria y acelerar la inferencia manteniendo una calidad aceptable en tareas conversacionales en ese dialecto.
 
-La relevancia de este modelo radica en que ofrece una versión optimizada para despliegue en producción de un modelo instruct árabe, con un tamaño de archivo de aproximadamente 7,5 GB (frente a los ~14 GB del modelo en FP16), lo que facilita su ejecución en GPUs con menor VRAM. Sin embargo, no es cargable directamente con `transformers` estándar; requiere el uso de `vLLM` con la opción `--quantization modelopt`. El autor es NouraAlqasim, y el modelo se publicó en agosto de 2026, aunque no se especifica licencia ni idiomas soportados en la ficha de HuggingFace.
+La relevancia de este modelo radica en que ofrece una versión optimizada para despliegue en producción de un modelo instruct árabe, con un tamaño de archivo de aproximadamente 7,5 GB (frente a los ~14 GB del modelo en FP16), lo que facilita su ejecución en GPUs con menor VRAM. Sin embargo, no es cargable directamente con `transformers` estándar; requiere el uso de `vLLM` con la opción `--quantization modelopt`. El autor es NouraAlqasim, y el modelo se publicó en agosto de 2026, aunque no se especifica licencia ni idiomas soportados en la ficha de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -67,6 +67,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NouraAlqasim/allam-7b-fp8-gulf
+- Modelo en Hugging Face: https://huggingface.co/NouraAlqasim/allam-7b-fp8-gulf
 - Modelo base: https://huggingface.co/humain-ai/ALLaM-7B-Instruct-preview
 - Dataset de calibración (referenciado): https://huggingface.co/datasets/Almheiri/ArabCulture-Dialogue (revisión `9acd60cbbb4f`)

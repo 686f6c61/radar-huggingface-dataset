@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mmoorecaleb/mobilevit-finetuned-2024` es un repositorio experimental publicado por el usuario mmoorecaleb en HuggingFace que contiene una implementación propia en PyTorch de una arquitectura MobileViT orientada a tareas de aprendizaje contrastivo. El propio autor indica explícitamente en la model card que se trata de una configuración "xlarge" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, y no como una versión preentrenada lista para producción.
+`mmoorecaleb/mobilevit-finetuned-2024` es un repositorio experimental publicado por el usuario mmoorecaleb en Hugging Face que contiene una implementación propia en PyTorch de una arquitectura MobileViT orientada a tareas de aprendizaje contrastivo. El propio autor indica explícitamente en la model card que se trata de una configuración "xlarge" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, y no como una versión preentrenada lista para producción.
 
 El peso incluido (`model.safetensors`) es un checkpoint de inicialización válido, no un modelo entrenado ni evaluado contra benchmarks. El recuento real de parámetros declarado en safetensors es de 24.832, una cifra extremadamente baja para lo que se esperaría de una MobileViT real (del orden de millones), lo que refuerza la naturaleza de prueba del artefacto.
 
@@ -89,7 +89,7 @@ La informacion proporcionada no incluye cifras verificables de otros modelos, po
 
 | Modelo | Categoria | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mobilevit-finetuned-2024 (este) | Backbone de vision hibrido CNN-transformer, inicializacion sin entrenar | 24.832 (real de safetensors) | no aplica | no disponible (sin benchmark declarado) | BSD-3-Clause | HuggingFace, 0 descargas |
+| mobilevit-finetuned-2024 (este) | Backbone de vision hibrido CNN-transformer, inicializacion sin entrenar | 24.832 (real de safetensors) | no aplica | no disponible (sin benchmark declarado) | BSD-3-Clause | Hugging Face, 0 descargas |
 | MobileViT original (Apple) | Backbone de vision hibrido CNN-transformer | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible | publicacion academica |
 | ViT / DeiT | Transformer de vision puro | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible | publicaciones academicas |
 | EfficientNet | CNN eficiente para clasificacion | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible | publicacion academica |
@@ -112,7 +112,7 @@ No se dispone de modelos directamente comparables dentro del mismo ecosistema (m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mmoorecaleb/mobilevit-finetuned-2024
+- Repositorio en Hugging Face: https://huggingface.co/mmoorecaleb/mobilevit-finetuned-2024
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las consultas devolvieron exclusivamente paginas de inicio de sesion y ayuda de Facebook (`upload.facebook.com/login/`, `upload.facebook.com/help/login-and-password/`, entre otras), sin relacion alguna con el modelo.
 - Paper de referencia de la arquitectura MobileViT (Apple): no disponible en la informacion proporcionada.
 - Repositorio de codigo del autor: no disponible en la informacion proporcionada.

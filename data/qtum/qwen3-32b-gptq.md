@@ -78,8 +78,8 @@ La principal diferencia con el modelo base es el tamaño y la velocidad de infer
 
 ## Enlaces
 
-- [HuggingFace - qtum/Qwen3-32B-GPTQ](https://huggingface.co/qtum/Qwen3-32B-GPTQ)
-- [HuggingFace - Qwen/Qwen3-32B (modelo base)](https://huggingface.co/Qwen/Qwen3-32B)
+- [Hugging Face - qtum/Qwen3-32B-GPTQ](https://huggingface.co/qtum/Qwen3-32B-GPTQ)
+- [Hugging Face - Qwen/Qwen3-32B (modelo base)](https://huggingface.co/Qwen/Qwen3-32B)
 - [GitHub - QwenLM/Qwen3](https://github.com/QwenLM/Qwen3)
 - [Documentacion de GPTQ para Qwen3](https://github.com/QwenLM/Qwen3/blob/main/docs/source/quantization/gptq.md)
 - [llm-compressor (herramienta de cuantizacion)](https://github.com/vllm-project/llm-compressor)

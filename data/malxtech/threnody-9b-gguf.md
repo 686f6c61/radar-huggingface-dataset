@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Threnody-9B V2 (GGUF) es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-9B, publicado por el usuario MalxTech en HuggingFace bajo licencia Apache 2.0. El modelo está orientado a dos áreas concretas: la codificación agéntica multi-turno (agentic coding) sobre distintos arneses de agentes CLI, y el razonamiento en biología y química. Se distribuye exclusivamente en formato GGUF, lo que lo hace directamente consumible desde llama.cpp y compatible con endpoints de tipo OpenAI.
+Threnody-9B V2 (GGUF) es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-9B, publicado por el usuario MalxTech en Hugging Face bajo licencia Apache 2.0. El modelo está orientado a dos áreas concretas: la codificación agéntica multi-turno (agentic coding) sobre distintos arneses de agentes CLI, y el razonamiento en biología y química. Se distribuye exclusivamente en formato GGUF, lo que lo hace directamente consumible desde llama.cpp y compatible con endpoints de tipo OpenAI.
 
 El modelo cuenta con 8.953.803.264 parámetros totales (aproximadamente 9B) y un repositorio de 16,1 GB que incluye cuantizaciones Q4_K_M y Q8_0, además de un proyector multimodal (mmproj) en F16 que habilita capacidades de visión. Su contexto operativo recomendado en la configuración de ejemplo es de 32.768 tokens, con soporte de atención flash y cuantización de caché KV.
 
@@ -100,6 +100,6 @@ No se dispone de información suficiente para comparar con modelos de terceros d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MalxTech/Threnody-9B-GGUF
+- Hugging Face: https://huggingface.co/MalxTech/Threnody-9B-GGUF
 - Repositorio de código: https://github.com/YoMosa2009/Threnody
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

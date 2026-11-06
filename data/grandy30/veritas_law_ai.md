@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Veritas_Law_AI es un modelo publicado en HuggingFace por el usuario grandy30 bajo licencia MIT. El repositorio no incluye model card descriptiva: la unica informacion disponible es la etiqueta de licencia, por lo que no se puede confirmar la arquitectura, el tamano, el contexto ni el proceso de entrenamiento. El nombre sugiere un enfoque hacia el ambito juridico, pero se trata de una inferencia a partir del identificador y no de un dato verificado en la informacion proporcionada.
+Veritas_Law_AI es un modelo publicado en Hugging Face por el usuario grandy30 bajo licencia MIT. El repositorio no incluye model card descriptiva: la unica informacion disponible es la etiqueta de licencia, por lo que no se puede confirmar la arquitectura, el tamano, el contexto ni el proceso de entrenamiento. El nombre sugiere un enfoque hacia el ambito juridico, pero se trata de una inferencia a partir del identificador y no de un dato verificado en la informacion proporcionada.
 
 El modelo registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-04), lo que indica una publicacion reciente y sin traccion conocida en la comunidad. No hay pipeline declarado ni idiomas especificados en los metadatos.
 
@@ -40,7 +40,7 @@ Tampoco hay datos sobre innovaciones tecnicas (atencion lineal, decodificacion e
 
 - Evaluacion de dominio juridico: dado el nombre del modelo, podria probarse en tareas de clasificacion o resumen de textos legales, pero sin model card ni benchmarks no es posible garantizar su idoneidad; requeriria validacion manual con un conjunto de prueba propio.
 - Prototipado experimental: al estar bajo licencia MIT, puede integrarse en experimentos internos sin restricciones de uso comercial, siempre que se valide su comportamiento antes de cualquier despliegue.
-- Investigacion sobre modelos de nicho: util como objeto de estudio para analizar publicaciones sin documentacion y practicas de publicacion en HuggingFace.
+- Investigacion sobre modelos de nicho: util como objeto de estudio para analizar publicaciones sin documentacion y practicas de publicacion en Hugging Face.
 - Pruebas de integracion en pipelines: puede cargarse en frameworks estandar (transformers, vLLM) si los pesos son compatibles, para verificar latencia y consumo antes de considerarlo en un sistema real.
 - Base para ajuste fino: si los pesos resultan ser de un modelo base conocido, podria servir como punto de partida para fine-tuning en dominios especializados, previa inspeccion del repositorio.
 - Analisis de riesgos de licencia: la licencia MIT permite uso comercial y modificacion, lo que facilita su inclusion en productos propietarios, aunque la ausencia de documentacion traslada todo el riesgo de calidad al integrador.
@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/grandy30/Veritas_Law_AI
+- Hugging Face: https://huggingface.co/grandy30/Veritas_Law_AI
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

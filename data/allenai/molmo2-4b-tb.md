@@ -73,9 +73,9 @@ En robot real, con ManiFlow como modelo de bajo nivel, el exito es del 60% en 10
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Molmo2-4B-tb | ~4,5B | No disponible | VLM especializado en apilamiento robotico | Apache 2.0 | HuggingFace |
-| Molmo2-4B | ~4,5B (no confirmado) | No disponible | VLM generico base | No disponible en la informacion | HuggingFace |
-| ManiFlow-tb | No disponible | No disponible | Politica de bajo nivel para ToyBlocks | No disponible en la informacion | HuggingFace |
+| Molmo2-4B-tb | ~4,5B | No disponible | VLM especializado en apilamiento robotico | Apache 2.0 | Hugging Face |
+| Molmo2-4B | ~4,5B (no confirmado) | No disponible | VLM generico base | No disponible en la informacion | Hugging Face |
+| ManiFlow-tb | No disponible | No disponible | Politica de bajo nivel para ToyBlocks | No disponible en la informacion | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento con otros modelos de la misma categoria en la informacion proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos comparativos de rendimiento con otros modelos de la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/allenai/Molmo2-4B-tb
+- Modelo en Hugging Face: https://huggingface.co/allenai/Molmo2-4B-tb
 - Modelo base Molmo2-4B: https://huggingface.co/allenai/Molmo2-4B
 - Modelo de bajo nivel ManiFlow-tb: https://huggingface.co/allenai/maniflow-tb
 - Blog de ToyBlocks: https://allenai.org/blog/toyblocks

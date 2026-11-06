@@ -70,7 +70,7 @@ La diferencia pareada sobre ventanas identicas en texto no visto es de -0,0001 (
 | VKORE-325M-NPU-Base | 325,6M | 256 | Byte-level (256) | Apache 2.0 | Preentrenado desde cero en NPU de solo inferencia |
 | VKORE-46M-NPU | 45,8M | no disponible | Byte-level | no disponible | Primer modelo de la linea; entrenado con TinyStories (22,5M tokens) |
 | Qwen2.5-0.5B | ~494M | 32.768 (128K con RoPE escalado) | BPE (~151K) | Qwen Research (uso comercial restringido) | Modelo SLM convencional entrenado en GPU, multilingue |
-| SmolLM2-360M (HuggingFace) | ~360M | 8.192 | BPE (~49K) | Apache 2.0 | SLM de tamano comparable, entrenado en GPU con ~11T tokens |
+| SmolLM2-360M (Hugging Face) | ~360M | 8.192 | BPE (~49K) | Apache 2.0 | SLM de tamano comparable, entrenado en GPU con ~11T tokens |
 
 Frente a los SLM convencionales de su rango de tamano, VKORE-325M tiene un contexto muy inferior (256 frente a 8K-32K) y mucho menos entrenamiento (5B frente a billones de tokens), pero su valor esta en la demostracion de entrenamiento en NPU y en el coste energetico, no en el rendimiento linguistico.
 
@@ -88,7 +88,7 @@ Frente a los SLM convencionales de su rango de tamano, VKORE-325M tiene un conte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FINAL-Bench/VKORE-325M-NPU-Base
+- Modelo en Hugging Face: https://huggingface.co/FINAL-Bench/VKORE-325M-NPU-Base
 - Modelo anterior de la linea (VKORE-46M-NPU): https://huggingface.co/FINAL-Bench/VKORE-46M-NPU
 - Dataset de entrenamiento (FineWeb-Edu): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Articulo cientifico sobre el metodo de entrenamiento en NPU: no disponible (anunciado como proximo por el autor)

@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Kai0 Piper Four-Tasks π0.5 step 35000 | no disponible | horizonte de accion 50 | no disponible | Orbax/OCDBT (JAX) | HuggingFace, 0 descargas |
+| Kai0 Piper Four-Tasks π0.5 step 35000 | no disponible | horizonte de accion 50 | no disponible | Orbax/OCDBT (JAX) | Hugging Face, 0 descargas |
 | `pi05_base` (Physical Intelligence) | no disponible | no disponible | no disponible | no disponible | modelo base referenciado, no detallado aqui |
 | Otros checkpoints de la misma coleccion Kai0 | no disponible | horizonte de accion 50 | no disponible | Orbax/OCDBT (JAX) | misma cuenta, mismos datos de entrenamiento |
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de los mo
 - Repositorio con 0 descargas y 0 likes: sin validacion por parte de la comunidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/dddddsds31341/Kai0-Piper-Four-Tasks-pi05-step-35000
+- Modelo en Hugging Face: https://huggingface.co/dddddsds31341/Kai0-Piper-Four-Tasks-pi05-step-35000
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/bofang/finetune_pi05/runs/pwj4suby
 - Dataset `yuyingyinya/putting_tennis`: https://huggingface.co/datasets/yuyingyinya/putting_tennis
 - Dataset `yuyingyinya/nesting_doll`: https://huggingface.co/datasets/yuyingyinya/nesting_doll

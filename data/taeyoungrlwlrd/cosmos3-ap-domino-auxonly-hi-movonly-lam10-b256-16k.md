@@ -2,7 +2,7 @@
 
 ## Resumen
 
-taeyoungrlwlrd/cosmos3-ap-domino-auxonly-hi-movonly-lam10-b256-16k es un repositorio de pesos publicado en HuggingFace por el usuario taeyoungrlwlrd. Se trata de un artefacto de investigación sin model card: no se declara pipeline, licencia, idiomas soportados ni arquitectura, y el repositorio no acumula más de 13 descargas y 0 likes en el momento de redactar esta ficha. El tamaño del repositorio es de 91,1 GB, lo que indica un checkpoint de gran volumen, probablemente pesos en precisión completa o mixta y, con alta probabilidad, estados de optimizador asociados a un proceso de entrenamiento.
+taeyoungrlwlrd/cosmos3-ap-domino-auxonly-hi-movonly-lam10-b256-16k es un repositorio de pesos publicado en Hugging Face por el usuario taeyoungrlwlrd. Se trata de un artefacto de investigación sin model card: no se declara pipeline, licencia, idiomas soportados ni arquitectura, y el repositorio no acumula más de 13 descargas y 0 likes en el momento de redactar esta ficha. El tamaño del repositorio es de 91,1 GB, lo que indica un checkpoint de gran volumen, probablemente pesos en precisión completa o mixta y, con alta probabilidad, estados de optimizador asociados a un proceso de entrenamiento.
 
 El identificador del repositorio sigue el patrón habitual de los checkpoints intermedios de entrenamiento: `cosmos3` (posible nombre del modelo o de la familia), `ap`, `domino`, `auxonly`, `hi-movonly`, `lam10`, `b256` y `16k`. La lectura más plausible es que se trate de una configuración experimental con tamaño de lote 256, longitud de secuencia de 16 384 tokens y un coeficiente lambda de 10, aunque el autor no confirma ninguna de estas interpretaciones. La referencia a «cosmos» podría apuntar a un modelo de mundo o de generación de vídeo, pero tampoco es un dato verificado.
 
@@ -86,7 +86,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/taeyoungrlwlrd/cosmos3-ap-domino-auxonly-hi-movonly-lam10-b256-16k
+- Repositorio en Hugging Face: https://huggingface.co/taeyoungrlwlrd/cosmos3-ap-domino-auxonly-hi-movonly-lam10-b256-16k
 - Paper: no disponible
 - Blog o documentación del autor: no disponible
 - Repositorio de código: no disponible

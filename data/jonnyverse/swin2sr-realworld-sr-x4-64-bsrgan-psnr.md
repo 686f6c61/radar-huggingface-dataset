@@ -80,7 +80,7 @@ La principal ventaja de este modelo es su compatibilidad con Transformers.js, lo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JONNYVERSE/swin2SR-realworld-sr-x4-64-bsrgan-psnr
+- Repositorio Hugging Face: https://huggingface.co/JONNYVERSE/swin2SR-realworld-sr-x4-64-bsrgan-psnr
 - Modelo original: https://huggingface.co/caidas/swin2SR-realworld-sr-x4-64-bsrgan-psnr
 - Version de Xenova (referencia): https://huggingface.co/Xenova/swin2SR-realworld-sr-x4-64-bsrgan-psnr
 - Documentacion de Transformers.js: https://huggingface.co/docs/transformers.js

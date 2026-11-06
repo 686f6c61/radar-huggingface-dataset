@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RakutenAI-3.0 es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por Rakuten Group, Inc. y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un fine-tune del checkpoint abierto DeepSeek-V3-0324, sobre el que Rakuten ha aplicado un proceso de preentrenamiento continuado (CPT) y ajuste supervisado (SFT) multi-etapa orientado a mejorar el dominio del japones y su alineamiento conversacional. Con aproximadamente 671.000 millones de parametros totales y 37.000 millones activados por token, se posiciona como uno de los modelos abiertos de mayor tamano especializados en japones.
+RakutenAI-3.0 es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por Rakuten Group, Inc. y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un fine-tune del checkpoint abierto DeepSeek-V3-0324, sobre el que Rakuten ha aplicado un proceso de preentrenamiento continuado (CPT) y ajuste supervisado (SFT) multi-etapa orientado a mejorar el dominio del japones y su alineamiento conversacional. Con aproximadamente 671.000 millones de parametros totales y 37.000 millones activados por token, se posiciona como uno de los modelos abiertos de mayor tamano especializados en japones.
 
 El modelo resuelve el problema de la baja competencia en japones de los grandes modelos abiertos de proposito general, manteniendo a la vez gran parte de las capacidades del checkpoint base. Su ventana de contexto de 128K tokens y su naturaleza MoE lo hacen adecuado para cargas de trabajo de inferencia en produccion con requisitos de contexto largo, aunque su huella de memoria lo restringe a infraestructura multi-GPU de gama alta.
 
@@ -99,7 +99,7 @@ No se dispone en la informacion proporcionada de datos de otros modelos abiertos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rakuten/RakutenAI-3.0
+- Hugging Face: https://huggingface.co/Rakuten/RakutenAI-3.0
 - Anuncio en ingles: https://global.rakuten.com/corp/news/press/2026/0317_01.html
 - Anuncio en japones: https://corp.rakuten.co.jp/news/press/2026/0317_01.html
 - Rakuten AI: https://ai.rakuten.com/

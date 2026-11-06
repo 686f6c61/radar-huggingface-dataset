@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse-Glimmer-30B-JANG_2D-CRACK es una variante cuantizada y "abliterada" del modelo multimodal Muse-Glimmer-30B, desarrollado originalmente por OsaurusAI y modificado por el equipo de dealignai. El repositorio en HuggingFace está publicado por el usuario Ishowbackup. El modelo combina un backbone de visión-lenguaje basado en Gemma-3 (52 capas, atención deslizante y global, encoder de percepción) con el protocolo Onyx-ATEM, que separa los canales de razonamiento y respuesta, permite controlar el esfuerzo de razonamiento (low, medium, high, xhigh) e incluye tool calling agéntico mediante la sintaxis `<atem:invoke>`.
+Muse-Glimmer-30B-JANG_2D-CRACK es una variante cuantizada y "abliterada" del modelo multimodal Muse-Glimmer-30B, desarrollado originalmente por OsaurusAI y modificado por el equipo de dealignai. El repositorio en Hugging Face está publicado por el usuario Ishowbackup. El modelo combina un backbone de visión-lenguaje basado en Gemma-3 (52 capas, atención deslizante y global, encoder de percepción) con el protocolo Onyx-ATEM, que separa los canales de razonamiento y respuesta, permite controlar el esfuerzo de razonamiento (low, medium, high, xhigh) e incluye tool calling agéntico mediante la sintaxis `<atem:invoke>`.
 
 La versión JANG_2D aplica una cuantización mixta de precisión MLX affine con aproximadamente 2,96 bits efectivos, reduciendo el peso del modelo a unos 15 GB para ejecutarse en Apple Silicon. Además, la técnica CRACK (Controlled Refusal Ablation via Calibrated Knockouts) elimina a nivel de pesos los comportamientos de rechazo, logrando una tasa de cumplimiento del 99,6% en HarmBench con una pérdida mínima de capacidades (MMLU pasa de 71,1% a 70,7%). El modelo soporta inglés y chino, y mantiene intactas las capacidades de visión, razonamiento, generación de código y uso de herramientas.
 
@@ -92,7 +92,7 @@ No se dispone de comparaciones con otros modelos de la misma categoria (por ejem
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-JANG_2D-CRACK
+- Repositorio Hugging Face: https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-JANG_2D-CRACK
 - Modelo base: https://huggingface.co/OsaurusAI/Muse-Glimmer-30B
 - vMLX (inferencia recomendada): https://vmlx.net
 - Otras cuantizaciones: https://huggingface.co/dealignai/Muse-Glimmer-30B-JANG_6M-CRACK y https://huggingface.co/dealignai/Muse-Glimmer-30B-JANG_4M-CRACK

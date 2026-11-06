@@ -60,7 +60,7 @@ No disponible. No existe un modelo comparable, ya que este repositorio no contie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jocarter/cross-modal-fusion
+- Repositorio en Hugging Face: https://huggingface.co/jocarter/cross-modal-fusion
 - Artículo de revisión sobre fusión de modelos (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S295016012500049X
 - FUSION: Fully Integration of Vision-Language Representations (arXiv): https://arxiv.org/html/2504.09925v1
 - CMFFN: Cross-modal feature fusion network (ACM DL): https://dl.acm.org/doi/10.1016/j.robot.2024.104900

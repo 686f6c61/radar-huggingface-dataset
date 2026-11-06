@@ -110,7 +110,7 @@ La comparación con Qwen3.5-9B está sesgada por el presupuesto de tokens: el au
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/luvette/Ternary-Bonsai-2-9B-Decisive-V2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/luvette/Ternary-Bonsai-2-9B-Decisive-V2-GGUF
 - Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-9B-gguf
 - Versión anterior (Decisive V1): https://huggingface.co/luvette/Ternary-Bonsai-2-9B-Decisive-GGUF
 - Documento técnico: PAPER.md incluido en el repositorio (no se proporciona URL directa)

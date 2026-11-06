@@ -2,9 +2,9 @@
 
 ## Resumen
 
-dIon 0.1 es un encoder fundacional para espectros de masas en tandem (MS/MS), desarrollado por el usuario alfred-n y publicado en HuggingFace bajo licencia Apache 2.0. No es un modelo de lenguaje: su dominio es la proteomica y la espectrometria de masas, y resuelve dos problemas relacionados. Por un lado, aprende representaciones latentes de espectros mediante auto-destilacion; por otro, ofrece modelos completos de secuenciacion de novo de peptidos, es decir, la inferencia de la secuencia aminoacidica directamente a partir del espectro, sin base de datos de referencia.
+dIon 0.1 es un encoder fundacional para espectros de masas en tandem (MS/MS), desarrollado por el usuario alfred-n y publicado en Hugging Face bajo licencia Apache 2.0. No es un modelo de lenguaje: su dominio es la proteomica y la espectrometria de masas, y resuelve dos problemas relacionados. Por un lado, aprende representaciones latentes de espectros mediante auto-destilacion; por otro, ofrece modelos completos de secuenciacion de novo de peptidos, es decir, la inferencia de la secuencia aminoacidica directamente a partir del espectro, sin base de datos de referencia.
 
-El release incluye tres checkpoints: un encoder fundacional (`dion-v0.1-foundation.ckpt`), un modelo de novo de 200 picos (`dion-v0.1-denovo-200peaks.ckpt`, recomendado por el autor) y un modelo de novo de 1.000 picos (`dion-v0.1-denovo-1000peaks.ckpt`, mas lento y con predicciones ligeramente mejores). La implementacion y las utilidades de carga no estan en el repositorio de HuggingFace, sino en el repositorio fuente de dIon, al que la model card remite sin facilitar URL.
+El release incluye tres checkpoints: un encoder fundacional (`dion-v0.1-foundation.ckpt`), un modelo de novo de 200 picos (`dion-v0.1-denovo-200peaks.ckpt`, recomendado por el autor) y un modelo de novo de 1.000 picos (`dion-v0.1-denovo-1000peaks.ckpt`, mas lento y con predicciones ligeramente mejores). La implementacion y las utilidades de carga no estan en el repositorio de Hugging Face, sino en el repositorio fuente de dIon, al que la model card remite sin facilitar URL.
 
 La relevancia actual del modelo es acotada pero clara: se trata de un release de investigacion, con 0 descargas y 0 likes en el momento de la consulta, sin resultados de benchmarks publicados y sin articulo cientifico citado todavia. Su interes principal es metodologico, al trasladar recetas de representacion auto-supervisada tipo DINO/DINOv2 al dominio de la espectrometria de masas y combinarlas con un decodificador de estilo Casanovo para secuenciacion de novo.
 
@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks ni de especificaciones de parametros en la 
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dIon 0.1 | Encoder fundacional MS/MS + secuenciacion de novo | no disponible | no aplica (200 o 1.000 picos) | Apache 2.0 | HuggingFace, 3 checkpoints |
+| dIon 0.1 | Encoder fundacional MS/MS + secuenciacion de novo | no disponible | no aplica (200 o 1.000 picos) | Apache 2.0 | Hugging Face, 3 checkpoints |
 | Casanovo (referencia metodologica citada) | Secuenciacion de novo | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks ni de especificaciones de parametros en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred-n/dIon
+- Modelo en Hugging Face: https://huggingface.co/alfred-n/dIon
 - Descarga completa: `hf download alfred-n/dIon --local-dir dion-v0.1`
 - Repositorio fuente de dIon: mencionado en la model card, sin URL proporcionada
 - Documentacion de fine-tuning (`docs/finetune_denovo.md`): referenciada en la model card, sin URL proporcionada

@@ -90,7 +90,7 @@ Resultados telefónicos (824 enunciados, cinco códecs a 8 kHz, luego filtro, lu
 - Latencia p99 por trama de 20 ms: 0,46 ms (modo `asr`) y 0,72 ms (modo `quality`).
 - VRAM estimada: no disponible (no usa GPU).
 - GPU recomendadas: no aplica.
-- Cabe en cualquier CPU convencional; el tamaño del repositorio es de 0,0 GB según HuggingFace, aunque los pesos ONNX y PyTorch están incluidos.
+- Cabe en cualquier CPU convencional; el tamaño del repositorio es de 0,0 GB según Hugging Face, aunque los pesos ONNX y PyTorch están incluidos.
 - Opciones de despliegue: plugin de LiveKit Agents incluido en el repositorio (`clearline/`), con `NoiseCancellation()`; pesos ONNX para uso directo con ONNX Runtime; pesos PyTorch para `clearline/nc_model.py`.
 - Throughput estimado: con 8 flujos, el consumo agregado en modo `asr` a 16 kHz sería de aproximadamente 13,7% de un núcleo, lo que permite decenas de flujos concurrentes por núcleo.
 
@@ -119,7 +119,7 @@ La model card menciona DTLN como referencia en PESQ sobre el conjunto sintético
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SuperPauly/Clearline-NC-CPU
+- Modelo en Hugging Face: https://huggingface.co/SuperPauly/Clearline-NC-CPU
 - Clearline-NC-GPU (versión 1, profesor del modo `quality`): https://huggingface.co/Scicom-intl/Clearline-NC-GPU/tree/ac5d95507431e0616cd6eaa5d28c316882b8b236
 - Clearline-VAD: https://huggingface.co/Scicom-intl/Clearline-VAD
 - Colección Clearline: https://huggingface.co/collections/Scicom-intl/clearline-6ae3f6e7cbdc1a74fc801725

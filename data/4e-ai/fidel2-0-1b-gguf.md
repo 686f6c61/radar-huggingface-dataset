@@ -80,7 +80,7 @@ Fidel2.0-1B se distingue por su arquitectura híbrida SSM+MoE y su especializaci
 - Requisitos de VRAM no garantizados: las cifras de memoria son observaciones muestreadas, no mínimos garantizados; el uso real puede variar con el contexto y la carga del sistema.
 - Sesgos, riesgo de alucinación y evaluaciones de seguridad: no disponible; no se ha publicado información al respecto.
 - Licencia: Apache-2.0, sin restricciones conocidas para uso comercial.
-- Procedencia poco establecida: el modelo tiene pocas descargas (515) y sin likes en HuggingFace, sin benchmarks públicos ni auditorías de terceros; conviene validar los resultados generados antes de usarlos en producción.
+- Procedencia poco establecida: el modelo tiene pocas descargas (515) y sin likes en Hugging Face, sin benchmarks públicos ni auditorías de terceros; conviene validar los resultados generados antes de usarlos en producción.
 
 ## Enlaces
 

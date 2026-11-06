@@ -94,7 +94,7 @@ El modelo se sitúa en la misma familia que el base y las variantes comprimidas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/puwaer/DeepSeek-V4-Flash-0731-ream-200b
+- Modelo en Hugging Face: https://huggingface.co/puwaer/DeepSeek-V4-Flash-0731-ream-200b
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Repositorio de compresion: https://github.com/puwaer/moe-expert-compress
 - Model card de NVIDIA NIM para el base: https://build.nvidia.com/deepseek-ai/deepseek-v4-flash-0731/modelcard

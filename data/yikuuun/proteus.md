@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ProTEUS es un checkpoint de pesos publicado por el usuario yikuuun (con repositorio de código en la cuenta de GitHub yikunpku) bajo el nombre de "mutation-resolved world model for closed-loop protein evolution". Se trata, por tanto, de un modelo orientado a la ingeniería de proteínas y a la predicción del efecto de mutaciones, no de un modelo de lenguaje natural al uso. El repositorio de HuggingFace contiene únicamente el fichero de pesos `proteus_release.pth` (8.654.985.537 bytes, aproximadamente 8,06 GiB) y una model card mínima que remite al repositorio de GitHub para código, documentación y demo.
+ProTEUS es un checkpoint de pesos publicado por el usuario yikuuun (con repositorio de código en la cuenta de GitHub yikunpku) bajo el nombre de "mutation-resolved world model for closed-loop protein evolution". Se trata, por tanto, de un modelo orientado a la ingeniería de proteínas y a la predicción del efecto de mutaciones, no de un modelo de lenguaje natural al uso. El repositorio de Hugging Face contiene únicamente el fichero de pesos `proteus_release.pth` (8.654.985.537 bytes, aproximadamente 8,06 GiB) y una model card mínima que remite al repositorio de GitHub para código, documentación y demo.
 
 La relevancia del modelo radica en su planteamiento como "world model" resuelto por mutaciones para evolución de proteínas en bucle cerrado (closed-loop), una formulación que sugiere el uso del modelo como simulador del paisaje de fitness para guiar campañas de evolución dirigida. Sin embargo, la información pública disponible es extremadamente escasa: no se detallan arquitectura, número de parámetros, contexto, datos de entrenamiento ni resultados de benchmarks. La ficha que sigue refleja exclusivamente lo que puede verificarse a partir de los metadatos y la model card, marcando como "no disponible" todo aquello que el autor no ha hecho público.
 
@@ -75,5 +75,5 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yikuuun/proteus
+- Hugging Face: https://huggingface.co/yikuuun/proteus
 - Repositorio de código y documentación (indicado por el autor): https://github.com/yikunpku/ProTEUS

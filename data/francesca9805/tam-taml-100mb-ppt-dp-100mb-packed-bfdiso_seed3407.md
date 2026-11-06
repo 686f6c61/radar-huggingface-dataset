@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/tam-taml-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/tam_taml_100mb`, publicado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 (transformer decoder-only) con 124.770.816 parametros totales, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de HuggingFace. El repositorio ocupa 0,3 GB y los pesos se distribuyen en formato safetensors.
+El modelo `francesca9805/tam-taml-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/tam_taml_100mb`, publicado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 (transformer decoder-only) con 124.770.816 parametros totales, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de Hugging Face. El repositorio ocupa 0,3 GB y los pesos se distribuyen en formato safetensors.
 
 El nombre del modelo incluye referencias al proceso de entrenamiento ("packed", "bfdiso", "seed3407"), lo que apunta a un artefacto de experimentacion academica o de investigacion mas que a un modelo orientado a produccion. El modelo base pertenece a la familia goldfish-models, que publica modelos monolingues de ~100 MB de datos de entrenamiento; el identificador `tam_taml` sugiere que se trata de un modelo para tamil, aunque este dato no aparece confirmado de forma explicita en la informacion disponible.
 
@@ -33,7 +33,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL 0.23.0
 - Formato conversacional: el ejemplo de la model card muestra el uso con mensajes en formato de roles (`{"role": "user", "content": ...}`), lo que indica un ajuste orientado a instrucciones o dialogo.
 - Fine-tuning sobre modelo base: capacidad heredada del modelo base `goldfish-models/tam_taml_100mb`, presumiblemente generacion de texto en tamil, sin confirmar.
 - Compatibilidad con Text Generation Inference (TGI): la etiqueta `text-generation-inference` sugiere que el modelo puede desplegarse con ese servidor.
-- Compatibilidad con endpoints de HuggingFace: aparece la etiqueta `endpoints_compatible`.
+- Compatibilidad con endpoints de Hugging Face: aparece la etiqueta `endpoints_compatible`.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
@@ -47,7 +47,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL 0.23.0
 - Prototipado rapido en local: con ~125 millones de parametros, el modelo cabe en cualquier GPU de consumo e incluso en CPU, lo que permite iterar en cuadernos sin infraestructura dedicada.
 - Base para nuevos ajustes: al ser un modelo pequeno ya ajustado, puede servir como punto de partida para fine-tuning adicional sobre dominios concretos con recursos limitados.
 - Educacion y docencia: su tamano permite ejecutarlo en portatiles y mostrar de forma practica el ciclo completo de entrenamiento, evaluacion y despliegue de un transformer.
-- Pruebas de integracion de infraestructura: al ser compatible con TGI y con endpoints de HuggingFace, es util para validar pipelines de despliegue antes de migrar a modelos mayores.
+- Pruebas de integracion de infraestructura: al ser compatible con TGI y con endpoints de Hugging Face, es util para validar pipelines de despliegue antes de migrar a modelos mayores.
 
 ## Benchmarks y rendimiento
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/tam-taml-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407 | 124.770.816 | no disponible | no disponible | HuggingFace (0 descargas) | Ajuste SFT del modelo base con TRL |
-| goldfish-models/tam_taml_100mb | no disponible | no disponible | no disponible | HuggingFace | Modelo base del que deriva este ajuste |
-| gpt2 (OpenAI) | ~124 millones | 1024 tokens (segun arquitectura GPT-2 estandar) | MIT (segun publicacion original) | HuggingFace | Referencia de la misma familia arquitectonica; datos de contexto y licencia no verificados en esta busqueda |
+| francesca9805/tam-taml-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407 | 124.770.816 | no disponible | no disponible | Hugging Face (0 descargas) | Ajuste SFT del modelo base con TRL |
+| goldfish-models/tam_taml_100mb | no disponible | no disponible | no disponible | Hugging Face | Modelo base del que deriva este ajuste |
+| gpt2 (OpenAI) | ~124 millones | 1024 tokens (segun arquitectura GPT-2 estandar) | MIT (segun publicacion original) | Hugging Face | Referencia de la misma familia arquitectonica; datos de contexto y licencia no verificados en esta busqueda |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas en la informacion proporcionada.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 - Sesgos conocidos: no disponibles; al derivar de un corpus de entrenamiento no documentado, no pueden evaluarse los sesgos presentes.
 - Riesgo de alucinacion: alto en modelos de este tamano y con ajuste SFT sobre datos no especificados; la generacion puede producir texto plausible pero factualmente incorrecto.
 - Limitaciones de contexto e idioma: se desconoce la longitud de contexto soportada y los idiomas cubiertos; el nombre del modelo base sugiere tamil, pero no esta confirmado.
-- Restricciones de licencia: la model card indica `licence: license` sin concretar terminos, y la ficha de HuggingFace marca la licencia como no disponible. No puede asumirse uso comercial libre.
+- Restricciones de licencia: la model card indica `licence: license` sin concretar terminos, y la ficha de Hugging Face marca la licencia como no disponible. No puede asumirse uso comercial libre.
 - Madurez: cero descargas y cero interacciones en el momento de la consulta, sin benchmarks publicados ni validacion externa.
 - Procedencia de los datos: no se documenta el dataset de ajuste ni el preprocesado, lo que dificulta auditar el modelo.
 - Uso en produccion: no recomendado sin una evaluacion previa propia, dado el caracter experimental del artefacto y la ausencia de garantias de calidad.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tam-taml-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tam-taml-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/tam_taml_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/aanqm2u8
 - Repositorio de TRL: https://github.com/huggingface/trl

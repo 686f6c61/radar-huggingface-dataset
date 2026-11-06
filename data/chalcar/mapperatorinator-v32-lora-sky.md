@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mapperatorinator-v32-LoRA-Sky es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario chalcar en HuggingFace bajo el identificador `chalcar/Mapperatorinator-v32-LoRA-Sky`. Se trata de un adaptador PEFT que toma como modelo base `OliBomby/Mapperatorinator-v32`, segun los metadatos del repositorio (etiquetas `base_model:adapter:OliBomby/Mapperatorinator-v32` y `base_model:OliBomby/Mapperatorinator-v32`). El repositorio ocupa aproximadamente 0,1 GB y esta etiquetado con las librerias `peft` y `transformers`, ademas del formato `safetensors`.
+Mapperatorinator-v32-LoRA-Sky es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario chalcar en Hugging Face bajo el identificador `chalcar/Mapperatorinator-v32-LoRA-Sky`. Se trata de un adaptador PEFT que toma como modelo base `OliBomby/Mapperatorinator-v32`, segun los metadatos del repositorio (etiquetas `base_model:adapter:OliBomby/Mapperatorinator-v32` y `base_model:OliBomby/Mapperatorinator-v32`). El repositorio ocupa aproximadamente 0,1 GB y esta etiquetado con las librerias `peft` y `transformers`, ademas del formato `safetensors`.
 
 El propio autor no ha rellenado la model card: todas las secciones del README conservan la plantilla por defecto con marcadores `[More Information Needed]`. En consecuencia, no hay informacion publicada sobre la tarea objetivo, la composicion del dataset de ajuste, los hiperparametros de entrenamiento, los idiomas soportados, la licencia ni el pipeline declarado. La relevancia del modelo es, por tanto, dificil de valorar a partir de la informacion disponible.
 
@@ -77,7 +77,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/chalcar/Mapperatorinator-v32-LoRA-Sky
+- Hugging Face del adaptador: https://huggingface.co/chalcar/Mapperatorinator-v32-LoRA-Sky
 - Modelo base referenciado: https://huggingface.co/OliBomby/Mapperatorinator-v32
 - Paper citado en las etiquetas (Lacoste et al., estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML: https://mlco2.github.io/impact

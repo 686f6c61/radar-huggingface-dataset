@@ -81,5 +81,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/klpeng/uce-gemini-80k
+- Hugging Face: https://huggingface.co/klpeng/uce-gemini-80k
 - Google GenAI SDK (usado en el ejemplo de la model card): https://github.com/googleapis/python-genai

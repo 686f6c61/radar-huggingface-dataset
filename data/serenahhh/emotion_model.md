@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `serenahhh/emotion_model` es un repositorio publicado en HuggingFace por el usuario `serenahhh` bajo licencia MIT. La model card asociada no contiene ninguna descripción técnica, arquitectónica ni de uso: únicamente declara la licencia. No se especifica el tipo de pipeline, los idiomas soportados, el tamaño de parámetros, la arquitectura ni los datos de entrenamiento. Por el nombre del repositorio, es plausible que esté orientado a la clasificación o detección de emociones en texto, pero no existe información pública que lo confirme. El repositorio fue creado el 15 de agosto de 2026 y no registra descargas ni valoraciones.
+El modelo `serenahhh/emotion_model` es un repositorio publicado en Hugging Face por el usuario `serenahhh` bajo licencia MIT. La model card asociada no contiene ninguna descripción técnica, arquitectónica ni de uso: únicamente declara la licencia. No se especifica el tipo de pipeline, los idiomas soportados, el tamaño de parámetros, la arquitectura ni los datos de entrenamiento. Por el nombre del repositorio, es plausible que esté orientado a la clasificación o detección de emociones en texto, pero no existe información pública que lo confirme. El repositorio fue creado el 15 de agosto de 2026 y no registra descargas ni valoraciones.
 
 Dada la ausencia total de documentación y metadatos técnicos, cualquier evaluación de capacidades, rendimiento o requisitos de hardware resulta imposible. Se recomienda contactar con el autor o revisar el repositorio en busca de archivos de pesos, configuraciones o notebooks que puedan aportar detalles adicionales.
 
@@ -52,6 +52,6 @@ No disponible. Al carecer de especificaciones técnicas, no se puede establecer 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/serenahhh/emotion_model
+- Repositorio en Hugging Face: https://huggingface.co/serenahhh/emotion_model
 
 No se han encontrado papers, blogs, demos ni repositorios de código asociados al modelo en la información proporcionada.

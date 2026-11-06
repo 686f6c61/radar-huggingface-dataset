@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/birch-sky-59` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `models4world`. Se presenta como un ajuste fino del modelo base `models4world/maple-signal-64`, del cual no se proporciona ninguna documentación pública. El repositorio contiene únicamente metadatos genéricos y una model card vacía, sin información sobre arquitectura, datos de entrenamiento, capacidades o licencia. El tamaño del repositorio es de 1,9 GB, lo que sugiere que el adaptador incluye un número considerable de parámetros, pero no se puede determinar su arquitectura ni su comportamiento sin acceso al modelo base. Dado que no hay descargas ni interacciones registradas, se trata de un modelo sin validación comunitaria y con escasa utilidad práctica para desarrolladores o investigadores que necesiten evaluar su rendimiento.
+El modelo `models4world/birch-sky-59` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `models4world`. Se presenta como un ajuste fino del modelo base `models4world/maple-signal-64`, del cual no se proporciona ninguna documentación pública. El repositorio contiene únicamente metadatos genéricos y una model card vacía, sin información sobre arquitectura, datos de entrenamiento, capacidades o licencia. El tamaño del repositorio es de 1,9 GB, lo que sugiere que el adaptador incluye un número considerable de parámetros, pero no se puede determinar su arquitectura ni su comportamiento sin acceso al modelo base. Dado que no hay descargas ni interacciones registradas, se trata de un modelo sin validación comunitaria y con escasa utilidad práctica para desarrolladores o investigadores que necesiten evaluar su rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -52,6 +52,6 @@ No disponible. Al no conocerse la arquitectura ni el tamano del modelo base, no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/models4world/birch-sky-59
-- Perfil del autor en HuggingFace: https://huggingface.co/models4world
+- Repositorio Hugging Face: https://huggingface.co/models4world/birch-sky-59
+- Perfil del autor en Hugging Face: https://huggingface.co/models4world
 - Lista de modelos del autor: https://huggingface.co/models4world/models

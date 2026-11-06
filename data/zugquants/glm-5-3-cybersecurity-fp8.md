@@ -6,7 +6,7 @@ GLM-5.3-CYBERSECURITY-FP8 es una modificación de pesos («crack», en la termin
 
 El interés técnico del checkpoint no reside solo en la modificación de comportamiento, sino en que conserva el formato FP8 nativo del cuantizado base: los expertos enrutados en FP8 quedan intactos y únicamente se editan los escritores de residuo en bf16, de modo que el modelo mantiene la velocidad de tensor cores FP8 en hardware Hopper (H100/H200) sin necesidad de fine-tuning, LoRA, hooks en tiempo de ejecución ni trucos de prompt. Según la model card, el modelo se sirve con vLLM estándar y conserva la capacidad del base: la evaluación MMLU en modo logit da un 86,65 % (889/1026) frente al 85,58 % del base, una diferencia de +1,07 pp dentro del margen de tolerancia declarado de ±5 pp.
 
-Es relevante ahora porque combina tres factores poco habituales: un tamaño frontera (753B) en FP8 servible en un solo nodo de 8 GPU, una licencia MIT que permite uso comercial, y una especialización explícita en un dominio de doble uso. Al mismo tiempo, la información disponible es muy limitada (0 descargas, 0 likes, repositorio creado y actualizado en el mismo segundo) y la búsqueda web no ha devuelto ninguna fuente relacionada con el modelo, por lo que la ficha se apoya exclusivamente en la model card y en los metadatos de HuggingFace.
+Es relevante ahora porque combina tres factores poco habituales: un tamaño frontera (753B) en FP8 servible en un solo nodo de 8 GPU, una licencia MIT que permite uso comercial, y una especialización explícita en un dominio de doble uso. Al mismo tiempo, la información disponible es muy limitada (0 descargas, 0 likes, repositorio creado y actualizado en el mismo segundo) y la búsqueda web no ha devuelto ninguna fuente relacionada con el modelo, por lo que la ficha se apoya exclusivamente en la model card y en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks comparables entre estas variantes más all�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zugquants/GLM-5.3-CYBERSECURITY-FP8
+- Modelo en Hugging Face: https://huggingface.co/zugquants/GLM-5.3-CYBERSECURITY-FP8
 - Modelo base original: https://huggingface.co/zai-org/GLM-5.3
 - Cuantizado FP8 intermedio: https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
 - Variante hermana sin censura generalista: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8
@@ -116,4 +116,4 @@ No se dispone de datos de benchmarks comparables entre estas variantes más all�
 - Perfil de @0xMagnus (pruebas de campo): https://huggingface.co/0xMagnus
 - Twitter del autor de la model card: https://twitter.com/dealignai
 
-Nota: la búsqueda web realizada no ha devuelto ningún resultado relacionado con este modelo; los enlaces anteriores proceden exclusivamente de los metadatos de HuggingFace y de la model card.
+Nota: la búsqueda web realizada no ha devuelto ningún resultado relacionado con este modelo; los enlaces anteriores proceden exclusivamente de los metadatos de Hugging Face y de la model card.

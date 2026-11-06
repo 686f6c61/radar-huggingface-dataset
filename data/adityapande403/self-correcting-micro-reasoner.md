@@ -89,10 +89,10 @@ No se han publicado resultados en benchmarks estandar (MMLU, GSM8K, HumanEval) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Self-Correcting Micro-Reasoner | 1.54B | no disponible | Razonamiento matematico con GRPO/RLVR y consenso | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B-Instruct (base) | 1.54B | no disponible en esta ficha | Chat general instruido | Apache 2.0 | HuggingFace |
-| Qwen2.5-Math-1.5B-Instruct | 1.54B | no disponible en esta ficha | Razonamiento matematico especializado | Apache 2.0 | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1.54B | no disponible en esta ficha | Destilacion de razonamiento con cadenas largas | MIT | HuggingFace |
+| Self-Correcting Micro-Reasoner | 1.54B | no disponible | Razonamiento matematico con GRPO/RLVR y consenso | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B-Instruct (base) | 1.54B | no disponible en esta ficha | Chat general instruido | Apache 2.0 | Hugging Face |
+| Qwen2.5-Math-1.5B-Instruct | 1.54B | no disponible en esta ficha | Razonamiento matematico especializado | Apache 2.0 | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1.54B | no disponible en esta ficha | Destilacion de razonamiento con cadenas largas | MIT | Hugging Face |
 
 La comparacion cuantitativa con estos modelos no esta disponible en la informacion proporcionada: el autor solo reporta metricas contra el modelo base sin modificar (28% de exactitud). No se han publicado resultados en benchmarks estandar que permitan una comparacion directa con alternativas de la misma categoria.
 
@@ -109,7 +109,7 @@ La comparacion cuantitativa con estos modelos no esta disponible en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Adityapande403/Self-Correcting-Micro-Reasoner
+- Hugging Face: https://huggingface.co/Adityapande403/Self-Correcting-Micro-Reasoner
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Paper de GRPO (DeepSeekMath): no disponible en la busqueda web proporcionada
 - Repositorio de codigo, blog o demo: no disponible en la busqueda web proporcionada

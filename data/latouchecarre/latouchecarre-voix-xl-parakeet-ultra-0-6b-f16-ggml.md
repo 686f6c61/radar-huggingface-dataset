@@ -102,7 +102,7 @@ El modelo Ultra mejora en 0,61 puntos porcentuales el WER de Parakeet v3 y de Wh
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LaToucheCarre/LaToucheCarre-Voix-XL-Parakeet-Ultra-0.6B-F16-GGML
+- Repositorio Hugging Face: https://huggingface.co/LaToucheCarre/LaToucheCarre-Voix-XL-Parakeet-Ultra-0.6B-F16-GGML
 - Modelo base: https://huggingface.co/moondream/parakeet-ultra
 - Modelo NVIDIA original: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - GGUF oficial de referencia: https://huggingface.co/ggml-org/parakeet-GGUF

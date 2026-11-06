@@ -102,7 +102,7 @@ La diferencia verificable entre este artefacto y los pesos originales de DINOv2 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tomathosauce/estock-dinov2-vitb14-onnx
+- Repositorio en Hugging Face: https://huggingface.co/tomathosauce/estock-dinov2-vitb14-onnx
 - Repositorio upstream de DINOv2 (Meta): https://github.com/facebookresearch/dinov2 (enlazado desde la model card)
 - Paper de DINOv2: https://arxiv.org/abs/2304.07193 (referencia del modelo original; no aparece en la informacion proporcionada)
 - `onnxslim`, herramienta de optimizacion citada en la model card: enlace no incluido en la informacion proporcionada

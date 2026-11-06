@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como samuaiofficial/samuai es un repositorio publicado en HuggingFace por el usuario samuaiofficial. La informacion disponible es practicamente nula: la model card se limita a una linea con la licencia (`license: gemma`), no existe etiqueta de pipeline, no se declaran idiomas soportados, no hay descripcion de arquitectura ni referencia a pesos, dataset de entrenamiento o proceso de alineacion.
+El modelo identificado como samuaiofficial/samuai es un repositorio publicado en Hugging Face por el usuario samuaiofficial. La informacion disponible es practicamente nula: la model card se limita a una linea con la licencia (`license: gemma`), no existe etiqueta de pipeline, no se declaran idiomas soportados, no hay descripcion de arquitectura ni referencia a pesos, dataset de entrenamiento o proceso de alineacion.
 
 El repositorio registra 0 descargas y 1 like, y fue creado y actualizado en la misma marca temporal (2026-10-07), lo que sugiere una publicacion sin mantenimiento posterior o un repositorio de prueba. No se ha podido localizar documentacion tecnica, paper, anuncio de lanzamiento ni material asociado en la busqueda web: los resultados devueltos por el buscador no guardan relacion con el modelo.
 
@@ -25,7 +25,7 @@ Otros metadatos verificables en el repositorio:
 
 | Metadato | Valor |
 |---|---|
-| ID en HuggingFace | samuaiofficial/samuai |
+| ID en Hugging Face | samuaiofficial/samuai |
 | Autor | samuaiofficial |
 | Etiquetas | license:gemma, region:us |
 | Pipeline declarado | no disponible |
@@ -94,6 +94,6 @@ No disponible. Sin arquitectura, numero de parametros ni resultados de evaluacio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/samuaiofficial/samuai
+- Repositorio en Hugging Face: https://huggingface.co/samuaiofficial/samuai
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante al modelo. Las consultas devolvieron exclusivamente sitios de contenido para adultos sin relacion alguna con el repositorio, por lo que no se incluyen.
 - Paper, blog de anuncio, repositorio de codigo o demo: no disponibles.

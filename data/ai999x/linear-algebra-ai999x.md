@@ -72,7 +72,7 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| linear-algebra-ai999x | Motor determinista de álgebra lineal | 4.715.520 | No disponible | Apache-2.0 | HuggingFace, PyPI, binarios Rust, WebAssembly |
+| linear-algebra-ai999x | Motor determinista de álgebra lineal | 4.715.520 | No disponible | Apache-2.0 | Hugging Face, PyPI, binarios Rust, WebAssembly |
 | SymPy | Librería de matemáticas simbólicas en Python | No aplica | No aplica | BSD | PyPI |
 | NumPy / SciPy | Librerías de cálculo numérico | No aplica | No aplica | BSD | PyPI |
 
@@ -91,13 +91,13 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/linear-algebra-ai999x
+- Modelo en Hugging Face: https://huggingface.co/AI999X/linear-algebra-ai999x
 - Página del modelo y demo en navegador: https://www.ai999x.com/models/linear-algebra-ai999x/#try
 - Aplicación de escritorio y CLI: https://www.ai999x.com/desktop-cli/
 - Paquete de Python (PyPI): https://pypi.org/project/linear-algebra-ai999x/
 - Documentación: https://huggingface.co/AI999X/linear-algebra-ai999x/tree/main/docs
 - Evaluación: https://huggingface.co/AI999X/linear-algebra-ai999x/tree/main/evaluation
-- Organización en HuggingFace: https://huggingface.co/AI999X
+- Organización en Hugging Face: https://huggingface.co/AI999X
 - Sitio web: https://ai999x.com
 - Repositorio GitHub y releases: https://github.com/AI999X/linear-algebra-ai999x/releases/tag/v1.0.3
 - Checksums: https://www.ai999x.com/downloads/desktop/1.2.0/SHA256SUMS

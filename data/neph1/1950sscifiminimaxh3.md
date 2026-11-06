@@ -2,7 +2,7 @@
 
 ## Resumen
 
-1950s Scifi Minimax H3 es un adaptador LoRA de difusion texto-a-imagen publicado por el usuario neph1 en HuggingFace. El adaptador se monta sobre el modelo base MiniMaxAI/MiniMax-H3 y su objetivo es reproducir la estetica visual del cine de ciencia ficcion de los anos 50: decorados de carton piedra, naves de linea retrofuturista, paletas saturadas y acabado de fotograma antiguo. Su funcion practica es aplicar ese estilo concreto a una sola palabra de activacion, sin necesidad de reentrenar el modelo base.
+1950s Scifi Minimax H3 es un adaptador LoRA de difusion texto-a-imagen publicado por el usuario neph1 en Hugging Face. El adaptador se monta sobre el modelo base MiniMaxAI/MiniMax-H3 y su objetivo es reproducir la estetica visual del cine de ciencia ficcion de los anos 50: decorados de carton piedra, naves de linea retrofuturista, paletas saturadas y acabado de fotograma antiguo. Su funcion practica es aplicar ese estilo concreto a una sola palabra de activacion, sin necesidad de reentrenar el modelo base.
 
 El repositorio, de 0,3 GB, es un espejo de una publicacion previa en CivitAI ("1950s scifi movies lora", version 3339982), y se distribuye bajo la libreria diffusers con la etiqueta `template:diffusion-lora`. La model card es minima: no incluye descripcion del dataset, hiperparametros de entrenamiento, resolucion objetivo ni palabra de activacion documentada (el campo `instance_prompt` aparece como `null` en los metadatos y los ejemplos del widget usan el caracter "-" como texto de prompt).
 
@@ -18,7 +18,7 @@ Su relevancia actual es limitada como objeto de evaluacion: acumula 0 descargas 
 | Longitud de contexto | no disponible (modelo de difusion; la condicion de entrada es el prompt de texto) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (se desconoce si el modelo base esta afinado para prompts en idiomas distintos del ingles) |
-| Licencia | no disponible en los metadatos de HuggingFace; la model card indica que debe obtenerse la licencia del modelo base |
+| Licencia | no disponible en los metadatos de Hugging Face; la model card indica que debe obtenerse la licencia del modelo base |
 | Formato de pesos | no disponible (el repositorio ocupa 0,3 GB; no se especifica el formato de los ficheros) |
 | Tipo de modelo | LoRA de difusion texto-a-imagen |
 | Modelo base | MiniMaxAI/MiniMax-H3 |
@@ -77,12 +77,12 @@ No disponible. No se han publicado datos que permitan comparar este adaptador co
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 1950s Scifi Minimax H3 | no disponible | no aplica | no disponible | no disponible | HuggingFace (0 descargas) |
+| 1950s Scifi Minimax H3 | no disponible | no aplica | no disponible | no disponible | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada en los metadatos de HuggingFace. La model card remite a la licencia del modelo base (MiniMaxAI/MiniMax-H3) e indica explicitamente que debe obtenerse antes de usar el modelo, lo que implica que el uso comercial no esta garantizado sin revisar ese documento.
+- Licencia no declarada en los metadatos de Hugging Face. La model card remite a la licencia del modelo base (MiniMaxAI/MiniMax-H3) e indica explicitamente que debe obtenerse antes de usar el modelo, lo que implica que el uso comercial no esta garantizado sin revisar ese documento.
 - Ausencia total de documentacion tecnica: no se especifican rango, alpha, capas objetivo, resolucion de entrenamiento ni palabra de activacion, lo que dificulta reproducir resultados o ajustar el peso del estilo.
 - El campo `instance_prompt` es `null`, por lo que no hay una palabra clave confirmada para activar el estilo; los ejemplos del widget usan "-" como prompt, un comportamiento anomalo que no esta explicado.
 - Riesgo de sobreajuste al estilo del dataset: al entrenarse presumiblemente con fotogramas de una decada concreta, el adaptador puede degradar la diversidad de las salidas y forzar la estetica incluso cuando el prompt pide otro estilo.
@@ -94,7 +94,7 @@ No disponible. No se han publicado datos que permitan comparar este adaptador co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neph1/1950sScifiMinimaxH3
+- Modelo en Hugging Face: https://huggingface.co/neph1/1950sScifiMinimaxH3
 - Ficheros del repositorio: https://huggingface.co/neph1/1950sScifiMinimaxH3/tree/main
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE

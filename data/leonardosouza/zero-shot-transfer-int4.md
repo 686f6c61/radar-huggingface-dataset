@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`leonardosouza/zero-shot-transfer-int4` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en HuggingFace bajo la etiqueta `research-notes`. La model card lo describe explícitamente como una nota exploratoria sobre *zero-shot transfer* que recoge el alcance de la pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y requisitos de reproducibilidad, pero que no presenta resultados de benchmarks, ablaciones completadas, código liberado ni un checkpoint entrenado.
+`leonardosouza/zero-shot-transfer-int4` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en Hugging Face bajo la etiqueta `research-notes`. La model card lo describe explícitamente como una nota exploratoria sobre *zero-shot transfer* que recoge el alcance de la pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y requisitos de reproducibilidad, pero que no presenta resultados de benchmarks, ablaciones completadas, código liberado ni un checkpoint entrenado.
 
 El repositorio contiene únicamente dos ficheros de texto (`reading.md` y `README.md`) y su tamaño es de 0.0 GB. El tag `safetensors` y el recuento de parámetros que reporta la plataforma (24.832) no corresponden a un modelo funcional: por el contexto de la model card, cabe interpretarlo como un artefacto residual o de prueba asociado al experimento, no como pesos utilizables para inferencia. El sufijo `int4` del nombre sugiere una intención de cuantización a 4 bits, pero no se documenta ningún proceso de cuantización ni se publican pesos en ese formato.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha documenta un artefacto de investigación en fase de planif
 
 ## Arquitectura y entrenamiento
 
-No se describe ninguna arquitectura en la informacion disponible. La model card no menciona tipo de transformer, mecanismo de atencion, tokenizador, numero de tokens de entrenamiento, composicion del dataset ni fases de alineacion (RLHF, DPO u otras). El unico indicio estructural es el tag `transformer` que asigna la plataforma de HuggingFace, que no viene acompanado de ninguna especificacion tecnica en el repositorio.
+No se describe ninguna arquitectura en la informacion disponible. La model card no menciona tipo de transformer, mecanismo de atencion, tokenizador, numero de tokens de entrenamiento, composicion del dataset ni fases de alineacion (RLHF, DPO u otras). El unico indicio estructural es el tag `transformer` que asigna la plataforma de Hugging Face, que no viene acompanado de ninguna especificacion tecnica en el repositorio.
 
 Tampoco se documenta ningun proceso de entrenamiento. La nota se presenta como trabajo previo a la experimentacion: define el alcance de la pregunta de investigacion, propone una comparacion con baselines emparejados, enumera benchmarks publicos adecuados a la tarea y establece requisitos de reproducibilidad (versiones de dataset, comandos, semillas, hardware y logs crudos) para cuando se anadan resultados. No hay innovaciones tecnicas declaradas (decodificacion especulativa, atencion lineal, SSM, arquitecturas hibridas, etc.).
 
@@ -43,7 +43,7 @@ Tampoco se documenta ningun proceso de entrenamiento. La nota se presenta como t
 - Plantilla de model card para artefactos exploratorios: separa explicitamente planes e hipotesis de resultados experimentales, lo que sirve como ejemplo de divulgacion honesta en repositorios de investigacion.
 - Revision de literatura sobre zero-shot transfer: las referencias y datasets propuestos en `reading.md` pueden servir como punto de partida para verificar el estado del arte, siempre contrastandolos con las fuentes originales.
 - Formacion en buenas practicas de publicacion: util en un contexto docente para ilustrar la diferencia entre una nota de investigacion y un checkpoint liberado, y por que no deben confundirse.
-- Auditoria de repositorios en HuggingFace: caso practico de como los tags de plataforma (`transformer`, `safetensors`, recuento de parametros) pueden no reflejar el contenido real de un repositorio, y de la necesidad de leer la model card antes de descargar artefactos.
+- Auditoria de repositorios en Hugging Face: caso practico de como los tags de plataforma (`transformer`, `safetensors`, recuento de parametros) pueden no reflejar el contenido real de un repositorio, y de la necesidad de leer la model card antes de descargar artefactos.
 
 ## Benchmarks y rendimiento
 
@@ -74,12 +74,12 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 - No es un modelo utilizable: no hay checkpoint entrenado, no hay pesos de inferencia y la model card lo declara explicitamente.
 - El recuento de parametros de la plataforma (24.832) y el tag `transformer` no deben interpretarse como especificaciones de un modelo funcional; el contenido real son dos ficheros Markdown.
 - El sufijo `int4` del nombre no viene acompanado de ningun proceso de cuantizacion documentado ni de pesos en ese formato.
-- Riesgo de malinterpretacion: un lector que solo consulte los tags de HuggingFace podria asumir que existe un modelo desplegable; la model card es el unico documento que aclara el alcance.
+- Riesgo de malinterpretacion: un lector que solo consulte los tags de Hugging Face podria asumir que existe un modelo desplegable; la model card es el unico documento que aclara el alcance.
 - No hay datos sobre sesgos, alucinacion, cobertura idiomatica ni comportamiento en produccion porque no hay modelo que evaluar.
 - Licencia cc-by-4.0: permite uso comercial y obras derivadas con atribucion, pero la propia model card advierte de que los terminos de los datos de origen deben revisarse por separado si el repositorio se usa con datasets externos.
 - Cualquier resultado futuro que se anada al repositorio deberia incluir versiones de dataset, comandos, semillas, hardware y logs crudos; sin esos elementos no seria reproducible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/leonardosouza/zero-shot-transfer-int4
+- Repositorio en Hugging Face: https://huggingface.co/leonardosouza/zero-shot-transfer-int4
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo o demos.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Tonylesta/generation-light98` es un prototipo experimental de CLIP orientado a generación, publicado por el usuario Tonylesta en HuggingFace. Se trata de un repositorio de investigación que incluye una implementación personalizada de la arquitectura CLIP, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en formato `safetensors`. El modelo está etiquetado con la licencia Apache-2.0 y se presenta como un punto de partida para pruebas de humo (smoke tests), no como un modelo entrenado.
+`Tonylesta/generation-light98` es un prototipo experimental de CLIP orientado a generación, publicado por el usuario Tonylesta en Hugging Face. Se trata de un repositorio de investigación que incluye una implementación personalizada de la arquitectura CLIP, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en formato `safetensors`. El modelo está etiquetado con la licencia Apache-2.0 y se presenta como un punto de partida para pruebas de humo (smoke tests), no como un modelo entrenado.
 
 A pesar de que el README describe la arquitectura como «scale huge», el checkpoint contiene únicamente 33.088 parámetros, un tamaño extremadamente reducido en comparación con los modelos CLIP convencionales. El código fuente incluye un ejemplo ejecutable y una entrada de entrenamiento, pero el autor deja claro que no se reivindica ninguna métrica de rendimiento ni se presenta como un modelo terminado. Esto lo convierte en un recurso de estudio para arquitecturas CLIP alternativas, no en un sistema listo para producción.
 
@@ -42,7 +42,7 @@ En cuanto al entrenamiento, el repositorio incluye un script de Python que conti
 - Educación en implementación de modelos multimodales: el código fuente es un ejemplo didáctico de cómo estructurar un proyecto CLIP con configuraciones separadas y un script de evaluación.
 - Generación de representaciones para experimentos de transferencia: una vez entrenado, el modelo podría ser evaluado como extractor de características para tareas de clasificación de imágenes o recuperación imagen-texto, aunque este estado aún no se ha alcanzado.
 - Comparación de recetas de optimización: la inclusión de `training_args.json` con `adafactor` y un scheduler por pasos permite comparar estrategias de entrenamiento en prototipos de pequeño tamaño.
-- Desarrollo de adaptadores para inferencia: la implementación personalizada constituye un caso de uso para practicar la escritura de wrappers o adaptadores que hagan compatible un modelo no estándar con APIs genéricas de HuggingFace.
+- Desarrollo de adaptadores para inferencia: la implementación personalizada constituye un caso de uso para practicar la escritura de wrappers o adaptadores que hagan compatible un modelo no estándar con APIs genéricas de Hugging Face.
 - Auditabilidad de configuraciones: el repositorio puede utilizarse como referencia para documentar y versionar experimentos de arquitectura, ya que separa claramente configuración, argumentos de entrenamiento y pesos.
 
 ## Benchmarks y rendimiento
@@ -76,10 +76,10 @@ No se han publicado comparativas de rendimiento, ya que este modelo no cuenta co
 - El repositorio debe tratarse como un punto de partida experimental; cualquier resultado de un futuro checkpoint entrenado debe documentarse por separado de los valores predeterminados incluidos.
 - No se puede usar en producción, ya que no tiene capacidades funcionales verificadas.
 - La licencia Apache-2.0 permite uso comercial, pero el código y los pesos no proporcionan garantías de rendimiento ni soporte.
-- La implementación personalizada no es compatible con las APIs genéricas de HuggingFace sin escribir un adaptador.
+- La implementación personalizada no es compatible con las APIs genéricas de Hugging Face sin escribir un adaptador.
 - La información sobre idiomas, contexto y cuantizaciones está ausente, lo que limita su evaluación.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Tonylesta/generation-light98)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Tonylesta)
+- [Repositorio en Hugging Face](https://huggingface.co/Tonylesta/generation-light98)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Tonylesta)

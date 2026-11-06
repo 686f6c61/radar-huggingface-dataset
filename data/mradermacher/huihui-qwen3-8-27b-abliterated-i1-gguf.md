@@ -77,7 +77,7 @@ La comparativa se basa en datos publicos de los repositorios mencionados en la b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Huihui-Qwen3.8-27B-abliterated-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Huihui-Qwen3.8-27B-abliterated-i1-GGUF
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Repositorio estatico (con mmproj): https://huggingface.co/mradermacher/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

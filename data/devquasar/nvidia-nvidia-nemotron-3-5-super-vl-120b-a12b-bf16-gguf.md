@@ -78,9 +78,9 @@ Los siguientes modelos se incluyen como referencia de categoria (vision-lenguaje
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Nemotron-3.5-Super-VL-120B-A12B (este, via GGUF) | 120,7 B totales / ~12 B activos (inferido) | no disponible | no disponible | GGUF en este repositorio; base en safetensors |
-| Qwen2.5-VL-72B-Instruct | 72 B densos | 128 K | Licencia Qwen | Pesos abiertos en HuggingFace |
-| Llama-3.2-90B-Vision-Instruct | 90 B densos | 128 K | Llama 3.2 Community License | Pesos abiertos en HuggingFace |
-| InternVL3-78B | 78 B densos | no disponible | MIT | Pesos abiertos en HuggingFace |
+| Qwen2.5-VL-72B-Instruct | 72 B densos | 128 K | Licencia Qwen | Pesos abiertos en Hugging Face |
+| Llama-3.2-90B-Vision-Instruct | 90 B densos | 128 K | Llama 3.2 Community License | Pesos abiertos en Hugging Face |
+| InternVL3-78B | 78 B densos | no disponible | MIT | Pesos abiertos en Hugging Face |
 
 ## Limitaciones y advertencias
 

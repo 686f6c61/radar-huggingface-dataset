@@ -95,7 +95,7 @@ En la tarea específica del simulador, el modelo entrenado (73,0 % de acierto) s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eunsasim/connectailab-rl-eunsa-v1
+- Modelo en Hugging Face: https://huggingface.co/eunsasim/connectailab-rl-eunsa-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio GitHub (Connect Tycoon): https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

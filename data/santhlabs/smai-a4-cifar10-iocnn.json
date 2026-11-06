@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Santhlabs/smai-a4-cifar10-iocnn",
+  "slug": "santhlabs-smai-a4-cifar10-iocnn",
+  "author": "Santhlabs",
+  "url": "https://huggingface.co/Santhlabs/smai-a4-cifar10-iocnn",
+  "created_at": "2026-11-02T05:48:18.000Z",
+  "updated_at": "2026-11-02T07:19:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "cifar10",
+    "iocnn",
+    "convex",
+    "smai",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9887196,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Santhlabs/smai-a4-cifar10-iocnn · Hugging Face",
+      "url": "https://huggingface.co/Santhlabs/smai-a4-cifar10-iocnn",
+      "snippet": "CIFAR-10 Input-Output Convex Neural Network (SMAI Assignment 4, p = 0) Student Roll Number: 2024102054 (seed 2054) Architecture: 3072 -> 128 -> 64 -> 10 (the model selected in Task 1.2.5), 402,250 parameters Output Activation: Identity (linear logits), softmax cross-entropy loss Training: PyTorch, plain SGD, lr 0.03, batch size 128, 100 epochs, CIFAR-10 train part (50,000 images), clean labels ..."
+    },
+    {
+      "title": "imtotallysane/smai-a4-cifar10-iocnn · Hugging Face",
+      "url": "https://huggingface.co/imtotallysane/smai-a4-cifar10-iocnn",
+      "snippet": "CIFAR-10 Input-Output Convex Neural Network (IOC-NN, p = 0) SMAI Assignment 4, Part 1 (roll number 2024101023). Every logit is a convex function of the input (Sivaprasad et al., arXiv:2006.05103 ..."
+    }
+  ]
+}

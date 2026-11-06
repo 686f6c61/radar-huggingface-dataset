@@ -100,17 +100,17 @@ Nota: los datos de los modelos alternativos proceden del conocimiento general so
 - Repositorio de terceros: el modelo ha sido subido por `bonurb` con 0 descargas y 0 *likes*; la cuantizacion original es de `bartowski`. No hay verificacion de integridad ni de reproducibilidad por parte del autor del repositorio. Conviene contrastar con el repositorio de `bartowski` si se necesita trazabilidad.
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de licencia y se indiquen los cambios. No impone restricciones de uso adicionales.
 - Produccion: sin resultados de benchmarks publicados ni informes de latencia, no es posible dimensionar el rendimiento real sin una prueba propia en el hardware objetivo.
-- Fecha de creacion del repositorio: 11-09-2026, segun los metadatos de HuggingFace.
+- Fecha de creacion del repositorio: 11-09-2026, segun los metadatos de Hugging Face.
 
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/bonurb/Mistral-7B-Instruct-v0.3-GGUF
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
-- Organizacion Mistral AI en HuggingFace: https://huggingface.co/mistralai
+- Organizacion Mistral AI en Hugging Face: https://huggingface.co/mistralai
 - Cuantizaciones de bartowski: https://huggingface.co/bartowski
 - Release de llama.cpp utilizada (b2965): https://github.com/ggerganov/llama.cpp/releases/tag/b2965
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp
 - LM Studio: https://lmstudio.ai
 - Dataset empleado para calcular la imatrix: https://gist.github.com/bartowski1182/b6ac44691e994344625687afe3263b3a
 
-Nota: la busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los enlaces anteriores proceden de la informacion del repositorio de HuggingFace.
+Nota: la busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los enlaces anteriores proceden de la informacion del repositorio de Hugging Face.

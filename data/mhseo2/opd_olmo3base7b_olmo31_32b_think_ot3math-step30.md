@@ -73,9 +73,9 @@ No se han publicado resultados en la informacion disponible para MMLU, HumanEval
 
 | Modelo | Parametros | Contexto | AIME 2025 (mean@8) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| opd_olmo3base7b_olmo31_32b_think_ot3math-step30 | 7,30B | no disponible | 43,75 % | Apache 2.0 | HuggingFace (mhseo2) |
-| allenai/Olmo-3.1-32B-Think (profesor) | 32B | no disponible | no disponible en la informacion | no disponible en la informacion | HuggingFace (AI2) |
-| mhseo2/Olmo-3-1025-7B-opd (base del alumno) | ~7B | no disponible | no disponible en la informacion | Apache 2.0 (segun tags del modelo) | HuggingFace (mhseo2) |
+| opd_olmo3base7b_olmo31_32b_think_ot3math-step30 | 7,30B | no disponible | 43,75 % | Apache 2.0 | Hugging Face (mhseo2) |
+| allenai/Olmo-3.1-32B-Think (profesor) | 32B | no disponible | no disponible en la informacion | no disponible en la informacion | Hugging Face (AI2) |
+| mhseo2/Olmo-3-1025-7B-opd (base del alumno) | ~7B | no disponible | no disponible en la informacion | Apache 2.0 (segun tags del modelo) | Hugging Face (mhseo2) |
 
 No se dispone de resultados publicados de benchmarks para los modelos comparables en la informacion proporcionada, por lo que no es posible cuantificar la mejora frente al base ni la brecha con el profesor.
 
@@ -93,7 +93,7 @@ No se dispone de resultados publicados de benchmarks para los modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/opd_olmo3base7b_olmo31_32b_think_ot3math-step30
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/opd_olmo3base7b_olmo31_32b_think_ot3math-step30
 - Modelo base del alumno: https://huggingface.co/mhseo2/Olmo-3-1025-7B-opd
 - Profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Familia Olmo 3 de AI2: https://huggingface.co/allenai/Olmo-3-1025-7B

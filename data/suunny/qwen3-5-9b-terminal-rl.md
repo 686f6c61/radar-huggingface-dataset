@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Rendimiento en held-out | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-Terminal-RL (step 10) | Adaptador LoRA sobre 9B | No disponible | 45,11 % (83/184) | Apache 2.0 | HuggingFace |
-| Qwen3.5-9B (base) | 9B | No disponible | 49,46 % (91/184) | No disponible en la informacion proporcionada | HuggingFace |
+| Qwen3.5-9B-Terminal-RL (step 10) | Adaptador LoRA sobre 9B | No disponible | 45,11 % (83/184) | Apache 2.0 | Hugging Face |
+| Qwen3.5-9B (base) | 9B | No disponible | 49,46 % (91/184) | No disponible en la informacion proporcionada | Hugging Face |
 | Otros adaptadores de agentes de terminal | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de otros adaptadores comparables en la informacion proporcionada.
@@ -98,7 +98,7 @@ No se dispone de datos de otros adaptadores comparables en la informacion propor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/suunny/Qwen3.5-9B-Terminal-RL
+- Hugging Face: https://huggingface.co/suunny/Qwen3.5-9B-Terminal-RL
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Blog: https://susindrar.com/blog/terminal-agent-rl
 - Código: https://github.com/SUSINDRAREDDY/terminal-agent-rl

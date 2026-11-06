@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-balanced-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-balanced-GGUF)
 - [Modelo base (fine-tune)](https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-balanced)
 - [Repositorio oficial de Qwen3.8](https://github.com/QwenLM/Qwen3.8)
 - [Variante anterior: qwen3.8-9b-hermes-function-calling-v1-GGUF](https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-function-calling-v1-GGUF)

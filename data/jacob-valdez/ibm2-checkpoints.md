@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jacob-valdez/ibm2-checkpoints` es un repositorio de HuggingFace que no contiene un modelo de lenguaje, sino un subconjunto publico de checkpoints de entrenamiento del proyecto de investigacion IBM-2. IBM-2 es una base de codigo que construye un modelo de cerebro y cuerpo con estructura anatomica y lo evalua en tareas de prediccion neural, respuesta a estimulacion y tareas corporales bajo protocolos preregistrados. El autor del repositorio es el usuario `jacob-valdez`.
+`jacob-valdez/ibm2-checkpoints` es un repositorio de Hugging Face que no contiene un modelo de lenguaje, sino un subconjunto publico de checkpoints de entrenamiento del proyecto de investigacion IBM-2. IBM-2 es una base de codigo que construye un modelo de cerebro y cuerpo con estructura anatomica y lo evalua en tareas de prediccion neural, respuesta a estimulacion y tareas corporales bajo protocolos preregistrados. El autor del repositorio es el usuario `jacob-valdez`.
 
 El repositorio publica unicamente los checkpoints cuyos datos de entrenamiento tienen una licencia registrada que permite la redistribucion de modelos derivados: el deposito OpenNeuro ds004873 (CC0-1.0) y datos puramente sinteticos generados dentro del propio codebase. No incluye datasets, datos retenidos o sellados, ni predicciones; solo ficheros de checkpoint, la model card y un `manifest.json` con el sha256 de cada fichero.
 
@@ -20,7 +20,7 @@ La relevancia de este repositorio es metodologica y de investigacion, no de prod
 | Idiomas soportados | no disponible (no aplicable) |
 | Licencia | cc0-1.0 |
 | Formato de pesos | `.pt` (diccionario de `torch.save` con `state_dict`, `optimizer`, `config`, `config_sha256`, `provenance`, `progress` y estado RNG) |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-08 |
 | Compatibilidad | requiere el codigo fuente de IBM-2 en el commit indicado para reconstruir el modulo |
@@ -91,7 +91,7 @@ No disponible. No se proporcionan modelos comparables en la informacion. El unic
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jacob-valdez/ibm2-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/jacob-valdez/ibm2-checkpoints
 - `manifest.json` (sha256 por fichero): incluido en el propio repositorio.
 - Deposito de datos citado: OpenNeuro ds004873 (CC0-1.0), referenciado en la model card sin enlace directo.
 - Referencia cientifica citada: Yeo et al., 2011, J Neurophysiol (parcelacion Yeo-2011, distribuida con FreeSurfer).

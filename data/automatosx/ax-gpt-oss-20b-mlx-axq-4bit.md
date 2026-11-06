@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - AX-gpt-oss-20b-MLX-AXQ-4bit](https://huggingface.co/AutomatosX/AX-gpt-oss-20b-MLX-AXQ-4bit)
+- [Hugging Face - AX-gpt-oss-20b-MLX-AXQ-4bit](https://huggingface.co/AutomatosX/AX-gpt-oss-20b-MLX-AXQ-4bit)
 - [Modelo base - openai/gpt-oss-20b](https://huggingface.co/openai/gpt-oss-20b)
 - [Repositorio AXQuant](https://github.com/defai-digital/axquant)
 - [Catálogo de modelos MLX de AutomatosX](https://huggingface.co/collections/AutomatosX/automatosx-mlx-model-catalog)

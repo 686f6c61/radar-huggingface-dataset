@@ -80,13 +80,13 @@ OpenThinker-7B se posiciona como una alternativa intermedia: supera a Bespoke-St
 - Al ser un ajuste fino de Qwen2.5-7B-Instruct, puede heredar sesgos presentes en el modelo base, aunque no se han realizado evaluaciones específicas de sesgo en la información disponible.
 - Riesgo de alucinación en razonamiento: como todo modelo de lenguaje, puede generar cadenas de razonamiento plausibles pero incorrectas, especialmente en dominios fuera de sus datos de entrenamiento.
 - La longitud de contexto no está documentada en el repositorio; se asume que hereda la de Qwen2.5-7B-Instruct (32k), pero no hay confirmación oficial.
-- Los benchmarks publicados son declarados por el autor y no han sido verificados de forma independiente; además, la tabla de resultados en el model-index de HuggingFace está vacía, lo que sugiere que los números provienen del README y no de una evaluación automatizada.
+- Los benchmarks publicados son declarados por el autor y no han sido verificados de forma independiente; además, la tabla de resultados en el model-index de Hugging Face está vacía, lo que sugiere que los números provienen del README y no de una evaluación automatizada.
 - No se documentan capacidades de tool calling, visión ni audio; el modelo es exclusivamente de texto.
 - Aunque la licencia Apache 2.0 permite uso comercial sin restricciones, el modelo puede no ser adecuado para aplicaciones de alto riesgo sin una evaluación adicional de robustez y seguridad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace (versión de lausannequants): https://huggingface.co/lausannequants/OpenThinker-7B
+- Repositorio en Hugging Face (versión de lausannequants): https://huggingface.co/lausannequants/OpenThinker-7B
 - Repositorio original de open-thoughts: https://huggingface.co/open-thoughts/OpenThinker-7B
 - Paper de OpenThoughts: https://arxiv.org/abs/2506.04178
 - Blog de lanzamiento: https://www.open-thoughts.ai/blog/launch

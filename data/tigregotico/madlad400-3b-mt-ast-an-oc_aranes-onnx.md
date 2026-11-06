@@ -91,7 +91,7 @@ El modelo base MADLAD-400 cubre asturiano y occitano, pero su rendimiento en est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TigreGotico/madlad400-3b-mt-ast-an-oc_aranes-onnx
+- Repositorio Hugging Face: https://huggingface.co/TigreGotico/madlad400-3b-mt-ast-an-oc_aranes-onnx
 - Modelo fuente (ajuste fino): https://huggingface.co/Ugiat/madlad400-3b-mt-ast-an-oc_aranes
 - Modelo base original: https://huggingface.co/google/madlad400-3b-mt
 - Paper de MADLAD-400: no disponible en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rh-ultra-strong-anime-style-unet` es un checkpoint de tipo UNET para generacion y edicion de imagenes con estetica anime, publicado por RunningHubAI en HuggingFace. Se distribuye como un unico archivo `safetensors` de 25 066 MiB (unos 24,5 GiB) y esta pensado para cargarse dentro de ComfyUI o en la plataforma RunningHub, no como modelo de lenguaje. La model card lo declara como "fine-tuned from: krea2" y lo etiqueta como "UNET (image edit)", con pipeline `image-text-to-image`.
+`rh-ultra-strong-anime-style-unet` es un checkpoint de tipo UNET para generacion y edicion de imagenes con estetica anime, publicado por RunningHubAI en Hugging Face. Se distribuye como un unico archivo `safetensors` de 25 066 MiB (unos 24,5 GiB) y esta pensado para cargarse dentro de ComfyUI o en la plataforma RunningHub, no como modelo de lenguaje. La model card lo declara como "fine-tuned from: krea2" y lo etiqueta como "UNET (image edit)", con pipeline `image-text-to-image`.
 
 El modelo no es un LLM: no tiene ventana de contexto de texto ni parametros de decodificacion tipo transformer autoregresivo. Su funcion es actuar como red de difusion (o componente UNET/DiT de un pipeline de difusion) que, a partir de un prompt de texto y opcionalmente una imagen de entrada, produce ilustraciones con un estilo anime muy marcado. El repositorio pertenece a una familia de checkpoints publicados por RunningHubAI (junto a `rh-miaomiao-harem-v16-unet`, `rh-anima-aesthetic-v1.1-unet`, `rh-real-girl-unet` o `rh-anima-snowstyle-remix-unet`), lo que sugiere un catalogo de variantes estilisticas orientadas al mismo flujo de trabajo.
 
@@ -73,9 +73,9 @@ Las siguientes cifras son estimaciones derivadas del tamano del unico checkpoint
 
 | Modelo | Tipo | Tamano de pesos | Base declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `RunningHubAI/rh-ultra-strong-anime-style-unet` | UNET imagen (edit) | 25 066 MiB (1 safetensors) | Fine-tune de `krea2` (origen Civitai `dasiwa-krea2`) | No disponible; se remite a la licencia upstream | HuggingFace, RunningHub, ComfyUI; 0 descargas |
-| `RunningHubAI/rh-miaomiao-harem-v16-unet` | UNET imagen | No disponible | No disponible (serie "Meow Meow Harem") | No disponible | HuggingFace, RunningHub |
-| `RunningHubAI/rh-anima-aesthetic-v1.1-unet` | UNET imagen | No disponible | No disponible | No disponible | HuggingFace, RunningHub |
+| `RunningHubAI/rh-ultra-strong-anime-style-unet` | UNET imagen (edit) | 25 066 MiB (1 safetensors) | Fine-tune de `krea2` (origen Civitai `dasiwa-krea2`) | No disponible; se remite a la licencia upstream | Hugging Face, RunningHub, ComfyUI; 0 descargas |
+| `RunningHubAI/rh-miaomiao-harem-v16-unet` | UNET imagen | No disponible | No disponible (serie "Meow Meow Harem") | No disponible | Hugging Face, RunningHub |
+| `RunningHubAI/rh-anima-aesthetic-v1.1-unet` | UNET imagen | No disponible | No disponible | No disponible | Hugging Face, RunningHub |
 | `Dasiwa Krea2` (Civitai, `modelVersionId=3107017`) | Checkpoint/UNET imagen | No disponible | No disponible | No disponible | Civitai (espejo `civitai.red`) |
 
 No se dispone de datos de rendimiento, parametros ni licencia de las alternativas, por lo que la comparativa se limita a tipo de modelo, formato de distribucion y canal de publicacion. Cualquier comparacion cuantitativa de calidad seria especulativa.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento, parametros ni licencia de las alternativa
 ## Limitaciones y advertencias
 
 - Licencia indeterminada: la model card no especifica terminos. Indica que el copyright pertenece al autor y que debe seguirse la licencia del proyecto original o del upstream. Esto hace arriesgado su uso comercial sin una verificacion legal previa de la cadena `krea2` -> `dasiwa-krea2` -> este checkpoint.
-- Cadena de atribucion poco clara: el modelo se publica en HuggingFace "en nombre del autor" y enlaza a un espejo (`civitai.red`) en lugar del sitio original de Civitai, lo que dificulta confirmar la procedencia y los permisos.
+- Cadena de atribucion poco clara: el modelo se publica en Hugging Face "en nombre del autor" y enlaza a un espejo (`civitai.red`) en lugar del sitio original de Civitai, lo que dificulta confirmar la procedencia y los permisos.
 - Ausencia total de documentacion tecnica: no se indican parametros, resolucion nativa, pasos de muestreo, escala CFG, scheduler, encoder de texto ni VAE compatible. El usuario debe deducir la configuracion por prueba y error.
 - Sin validacion de la comunidad: 0 descargas, 0 likes y ningun ejemplo de salida publicado en el repositorio. No hay evidencia independiente de calidad o estabilidad.
 - Riesgo de sesgo estetico y de estilo: al ser un ajuste fino orientado a un estilo anime "ultra fuerte", es previsible que arrastre todas las imagenes hacia ese registro, con dificultad para producir otros estilos sin perder fidelidad.
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento, parametros ni licencia de las alternativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-ultra-strong-anime-style-unet
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-ultra-strong-anime-style-unet
 - Modelo en RunningHub (original publico): https://www.runninghub.ai/model/public/2074769380247957505
 - Pagina del autor en RunningHub: https://www.runninghub.ai/user-center/2041030036219498497
 - Modelo base en Civitai (espejo enlazado por el autor): https://civitai.red/models/2760803/dasiwa-krea2?modelVersionId=3107017
@@ -104,4 +104,4 @@ No se dispone de datos de rendimiento, parametros ni licencia de las alternativa
 - Documentacion de la API (ingles): https://www.runninghub.cn/runninghub-api-doc-en/
 - Documentacion de la API (chino): https://www.runninghub.cn/runninghub-api-doc-cn/
 - Entrenamiento de modelos en RunningHub: https://www.runninghub.ai/page-model
-- Repositorios hermanos en HuggingFace: https://huggingface.co/RunningHubAI/rh-miaomiao-harem-v16-unet , https://huggingface.co/RunningHubAI/rh-anima-aesthetic-v1.1-unet , https://huggingface.co/RunningHubAI/rh-real-girl-unet , https://huggingface.co/RunningHubAI/rh-anima-snowstyle-remix-unet
+- Repositorios hermanos en Hugging Face: https://huggingface.co/RunningHubAI/rh-miaomiao-harem-v16-unet , https://huggingface.co/RunningHubAI/rh-anima-aesthetic-v1.1-unet , https://huggingface.co/RunningHubAI/rh-real-girl-unet , https://huggingface.co/RunningHubAI/rh-anima-snowstyle-remix-unet

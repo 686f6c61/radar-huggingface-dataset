@@ -83,7 +83,7 @@ No se dispone de una comparativa directa con otros modelos ASR en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/craquehouse/parakeet-tdt-0.6b-v3-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/craquehouse/parakeet-tdt-0.6b-v3-mlx-8bit
 - Modelo base MLX: https://huggingface.co/mlx-community/parakeet-tdt-0.6b-v3
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Colección NVIDIA NGC: https://catalog.ngc.nvidia.com/orgs/nvidia/collections/parakeet-tdt-0.6b

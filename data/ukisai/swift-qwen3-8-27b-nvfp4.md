@@ -87,9 +87,9 @@ El propio autor senala que la diferencia de precision esta dentro del ruido de m
 
 | Modelo | Parametros | Contexto | Cuantizacion | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Swift-Qwen3.8-27B-NVFP4 (este repo) | 27,8 B | 262.144 tokens en la config. de referencia | NVFP4 W4A4, grupo 16 | GSM8K 96,5 %; 85 tok/s por peticion con 8 concurrentes | Swift Open License v1.0 (gated) | HuggingFace, acceso restringido |
-| Swift-Qwen3.8-27B (BF16) | 27,8 B | No disponible en la informacion | BF16 | GSM8K 98,0 %; 54 tok/s por peticion con 8 concurrentes; 55,6 GB en disco | Swift Open License v1.0 (gated) | HuggingFace, acceso restringido |
-| Swift-Qwen3.8-27B-GGUF | 27,8 B (base) | No disponible en la informacion | GGUF (niveles no especificados) | No disponible | Swift Open License v1.0 (gated) | HuggingFace, acceso restringido |
+| Swift-Qwen3.8-27B-NVFP4 (este repo) | 27,8 B | 262.144 tokens en la config. de referencia | NVFP4 W4A4, grupo 16 | GSM8K 96,5 %; 85 tok/s por peticion con 8 concurrentes | Swift Open License v1.0 (gated) | Hugging Face, acceso restringido |
+| Swift-Qwen3.8-27B (BF16) | 27,8 B | No disponible en la informacion | BF16 | GSM8K 98,0 %; 54 tok/s por peticion con 8 concurrentes; 55,6 GB en disco | Swift Open License v1.0 (gated) | Hugging Face, acceso restringido |
+| Swift-Qwen3.8-27B-GGUF | 27,8 B (base) | No disponible en la informacion | GGUF (niveles no especificados) | No disponible | Swift Open License v1.0 (gated) | Hugging Face, acceso restringido |
 | Checkpoints NVFP4 de NVIDIA para Qwen3.5 | No disponible | No disponible | NVFP4 | No disponible | No disponible | Mencionados como referencia de layout por el autor |
 
 No se dispone de datos sobre otros modelos comparables de la misma categoria en la informacion proporcionada, mas alla del propio modelo base y de la mencion a los checkpoints NVFP4 de NVIDIA para Qwen3.5.
@@ -110,7 +110,7 @@ No se dispone de datos sobre otros modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- Repositorio HuggingFace (este checkpoint): https://huggingface.co/ukisai/Swift-Qwen3.8-27B-NVFP4
+- Repositorio Hugging Face (este checkpoint): https://huggingface.co/ukisai/Swift-Qwen3.8-27B-NVFP4
 - Modelo base en BF16: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Version GGUF: https://huggingface.co/ukisai/Swift-Qwen3.8-27B-GGUF
 - Sitio web de UkisAI: https://ukisai.com

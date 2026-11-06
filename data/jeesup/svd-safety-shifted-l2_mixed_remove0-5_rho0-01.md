@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jeesup/svd-safety-shifted-l2_mixed_remove0.5_rho0.01` es un checkpoint de investigación derivado de `meta-llama/Llama-2-7b-chat-hf`, publicado por el usuario Jeesup en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una compresión por descomposición en valores singulares (SVD) del modelo base original, en la que se elimina nominalmente el 50 % de los parámetros de proyección (fracción realizada de parámetros factoriales: 0,519340) sin fine-tuning de recuperación posterior. El resultado es un modelo denso de 6.738.415.616 parámetros en formato safetensors.
+El modelo `Jeesup/svd-safety-shifted-l2_mixed_remove0.5_rho0.01` es un checkpoint de investigación derivado de `meta-llama/Llama-2-7b-chat-hf`, publicado por el usuario Jeesup en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una compresión por descomposición en valores singulares (SVD) del modelo base original, en la que se elimina nominalmente el 50 % de los parámetros de proyección (fracción realizada de parámetros factoriales: 0,519340) sin fine-tuning de recuperación posterior. El resultado es un modelo denso de 6.738.415.616 parámetros en formato safetensors.
 
 El interés del checkpoint es metodológico: forma parte de un estudio piloto sobre cómo la compresión afecta a la seguridad del modelo. El autor aplica una métrica mixta que combina momentos de entrada de WikiText con 0,1 veces los momentos de pares prompt-dañino/respuesta-segura, y desplaza el objetivo con un parámetro rho de 0,01 y un lambda global de 0,3375972210921948. La finalidad declarada es evaluar si una compresión agresiva degrada o desplaza las propiedades de seguridad del modelo original.
 
@@ -77,6 +77,6 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l2_mixed_remove0.5_rho0.01
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l2_mixed_remove0.5_rho0.01
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

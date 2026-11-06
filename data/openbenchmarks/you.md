@@ -62,11 +62,11 @@ No disponible. Este repositorio no representa un modelo de lenguaje ni un sistem
 - Sin licencia especificada: no se indica bajo qué términos se puede utilizar la API, lo que supone un riesgo legal para uso comercial.
 - Sin documentación de rendimiento: no hay datos de latencia, throughput ni límites de tasa, lo que dificulta su uso en producción.
 - Sin soporte de idiomas declarado: aunque la búsqueda web puede devolver resultados en varios idiomas, no se especifica qué lenguas están cubiertas.
-- Riesgo de confusión: al estar publicado en HuggingFace con la etiqueta de modelo, los desarrolladores podrían asumir erróneamente que es un LLM descargable.
+- Riesgo de confusión: al estar publicado en Hugging Face con la etiqueta de modelo, los desarrolladores podrían asumir erróneamente que es un LLM descargable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/openbenchmarks/you
+- Repositorio Hugging Face: https://huggingface.co/openbenchmarks/you
 - Documentación de la API de You.com: https://docs.you.com/
 - Leaderboard en vivo: https://you.com
 - Dataset OB News Websearch: https://huggingface.co/datasets/openbenchmarks/OB-News-Websearch

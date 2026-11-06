@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `sisniha`, no contiene un modelo nuevo, sino un paquete de archivos de modelos de interpolación de fotogramas (frame interpolation) reempaquetados para su uso directo en ComfyUI. Incluye dos familias de modelos: RIFE (Practical-RIFE, versiones 4.25 y 4.26 en variantes lite, estándar y heavy) y FILM (Frame Interpolation for Large Motion, de Google Research, en formato fp16). El objetivo es facilitar la integración de estos modelos en flujos de trabajo de ComfyUI sin necesidad de convertir o descargar pesos desde otras fuentes.
+Este repositorio de Hugging Face, publicado por el usuario `sisniha`, no contiene un modelo nuevo, sino un paquete de archivos de modelos de interpolación de fotogramas (frame interpolation) reempaquetados para su uso directo en ComfyUI. Incluye dos familias de modelos: RIFE (Practical-RIFE, versiones 4.25 y 4.26 en variantes lite, estándar y heavy) y FILM (Frame Interpolation for Large Motion, de Google Research, en formato fp16). El objetivo es facilitar la integración de estos modelos en flujos de trabajo de ComfyUI sin necesidad de convertir o descargar pesos desde otras fuentes.
 
 La interpolación de fotogramas es una técnica que genera fotogramas intermedios entre dos imágenes consecutivas de un vídeo, permitiendo aumentar la tasa de FPS, crear cámara lenta fluida o reparar vídeo con saltos. Este paquete es relevante para desarrolladores y artistas que trabajan con ComfyUI y necesitan una solución lista para usar, sin tener que lidiar con la instalación de dependencias adicionales o la conversión de formatos. El tamaño total del repositorio es de 0,2 GB, lo que indica que los archivos son relativamente ligeros, especialmente las variantes lite de RIFE.
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/sisniha/frame_interpolation
+- Repositorio de Hugging Face: https://huggingface.co/sisniha/frame_interpolation
 - Repositorio original de RIFE: https://github.com/hzwer/Practical-RIFE
 - Repositorio original de FILM: https://github.com/google-research/frame-interpolation
 - Tutorial de FILM en TensorFlow Hub: https://www.tensorflow.org/hub/tutorials/tf_hub_film_example

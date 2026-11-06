@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario dmytro-moroz, no contiene un modelo de aprendizaje automatico desplegable, sino un articulo tecnico (paper) sobre **destilacion de conocimiento** (*knowledge distillation*). El artefacto principal es un archivo Markdown (`paper_008565290_knowledge_distillation.md`) que redacta un articulo con formato HTML, estilo de citacion numeric-bibtex y estructura intro-problema-solucion-validacion-futuro, segun la model card.
+Este repositorio de Hugging Face, publicado por el usuario dmytro-moroz, no contiene un modelo de aprendizaje automatico desplegable, sino un articulo tecnico (paper) sobre **destilacion de conocimiento** (*knowledge distillation*). El artefacto principal es un archivo Markdown (`paper_008565290_knowledge_distillation.md`) que redacta un articulo con formato HTML, estilo de citacion numeric-bibtex y estructura intro-problema-solucion-validacion-futuro, segun la model card.
 
 No se trata de un modelo de lenguaje, vision u otro tipo de red neuronal entrenada, sino de un documento de investigacion o divulgacion tecnica. No se especifican arquitectura, parametros, contexto, ni capacidades de inferencia. La licencia es MIT, lo que permite su reutilizacion con atribucion, pero no hay evidencia de que existan pesos, checkpoints o artefactos de modelo en el repositorio.
 
@@ -70,7 +70,7 @@ No disponible. Este repositorio no es un modelo comparable con otros sistemas de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dmytro-moroz/paper_008565290_knowledge_distillation
+- Repositorio en Hugging Face: https://huggingface.co/dmytro-moroz/paper_008565290_knowledge_distillation
 - Articulo de referencia: "A Survey on Knowledge Distillation of Large Language Models" (arXiv 2402.13116): https://arxiv.org/abs/2402.13116
 - Articulo de referencia: "Survey on Knowledge Distillation for Large Language Models: Methods, Evaluation, and Application" (ACM): https://dl.acm.org/doi/10.1145/3699518
 - Articulo de referencia: "Knowledge Distillation for Large Language Models" (arXiv 2603.13765): https://arxiv.org/abs/2603.13765

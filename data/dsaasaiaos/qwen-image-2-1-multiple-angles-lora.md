@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Multiple-Angles-LoRA es un adaptador LoRA de control de cámara para el modelo base Qwen-Image-2.1, un modelo unificado de generación y edición de imágenes de la familia Qwen. El adaptador permite reencuadrar un objeto o sujeto presente en una fotografía de entrada desde una posición de cámara controlada: se le proporciona una imagen y una indicación de azimut y elevación, y devuelve el mismo sujeto desde ese nuevo ángulo, conservando identidad y fondo. Está publicado por el usuario dsaasaiaos en HuggingFace, con una réplica del mismo contenido en el repositorio de akhaliq, y se distribuye con licencia Apache 2.0.
+Qwen-Image-2.1-Multiple-Angles-LoRA es un adaptador LoRA de control de cámara para el modelo base Qwen-Image-2.1, un modelo unificado de generación y edición de imágenes de la familia Qwen. El adaptador permite reencuadrar un objeto o sujeto presente en una fotografía de entrada desde una posición de cámara controlada: se le proporciona una imagen y una indicación de azimut y elevación, y devuelve el mismo sujeto desde ese nuevo ángulo, conservando identidad y fondo. Está publicado por el usuario dsaasaiaos en Hugging Face, con una réplica del mismo contenido en el repositorio de akhaliq, y se distribuye con licencia Apache 2.0.
 
 La relevancia técnica del artefacto es doble. Por un lado, es el primer LoRA de control de cámara documentado para Qwen-Image-2.1, un formato que según el autor no existía para esta base. Por otro, introduce una gramática de prompt explícita mediante el token disparador `<mva>` seguido de una vista nominal y una elevación, lo que hace el comportamiento reproducible y programable en pipelines de generación por lotes. La versión 2 del adaptador amplía el entrenamiento de 5.028 a 13.328 pares imagen-ángulo, sube el rango de 32 a 64 y pasa de una base entrenada en int8 a bf16 de precisión completa.
 
@@ -78,8 +78,8 @@ No se han publicado cifras de latencia, throughput, FID, CLIP score ni metricas 
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen-Image-2.1-Multiple-Angles-LoRA (v2) | LoRA de control de camara sobre Qwen-Image-2.1 | Rango 64; base de 7.000 millones | 12 azimuts x 4 elevaciones + close-up; resolucion no disponible | Sin benchmarks; curva OOD favorable frente a v1 | Apache 2.0 | HuggingFace (dsaasaiaos y akhaliq), ComfyUI |
-| Qwen-Image-2.1 (modelo base, sin adaptador) | Difusion DiT unificada generacion + edicion | 7.000 millones (32 capas DiT) | No disponible | Sin datos en la informacion proporcionada | No indicada en la informacion | HuggingFace, GitHub QwenLM |
+| Qwen-Image-2.1-Multiple-Angles-LoRA (v2) | LoRA de control de camara sobre Qwen-Image-2.1 | Rango 64; base de 7.000 millones | 12 azimuts x 4 elevaciones + close-up; resolucion no disponible | Sin benchmarks; curva OOD favorable frente a v1 | Apache 2.0 | Hugging Face (dsaasaiaos y akhaliq), ComfyUI |
+| Qwen-Image-2.1 (modelo base, sin adaptador) | Difusion DiT unificada generacion + edicion | 7.000 millones (32 capas DiT) | No disponible | Sin datos en la informacion proporcionada | No indicada en la informacion | Hugging Face, GitHub QwenLM |
 | QMA - Qwen Image 2.1 Multi Camera Angle LoRA | LoRA de angulos de camara para Qwen Image 2.1 Edit | No disponible | Orbita completa, elevacion y close-up; numero de poses no disponible | Sin datos | No indicada en la informacion | Civitai |
 | LoRA de control de camara para otras bases (p. ej. FLUX) | LoRA equivalente en otra familia | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
@@ -98,10 +98,10 @@ No se han publicado cifras de latencia, throughput, FID, CLIP score ni metricas 
 
 ## Enlaces
 
-- HuggingFace (repositorio de la ficha): https://huggingface.co/dsaasaiaos/Qwen-Image-2.1-Multiple-Angles-LoRA
-- HuggingFace (repositorio replicado por el autor del entrenamiento): https://huggingface.co/akhaliq/Qwen-Image-2.1-Multiple-Angles-LoRA
+- Hugging Face (repositorio de la ficha): https://huggingface.co/dsaasaiaos/Qwen-Image-2.1-Multiple-Angles-LoRA
+- Hugging Face (repositorio replicado por el autor del entrenamiento): https://huggingface.co/akhaliq/Qwen-Image-2.1-Multiple-Angles-LoRA
 - Arbol de archivos del repositorio replicado: https://huggingface.co/akhaliq/Qwen-Image-2.1-Multiple-Angles-LoRA/tree/main
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio GitHub de Qwen-Image-2.1: https://github.com/QwenLM/Qwen-Image-2.1
 - Dataset de entrenamiento de la v2: https://huggingface.co/datasets/akhaliq/qwen21-multiple-angles-train-v2
 - Panel de entrenamiento de la v2 (trackio): https://huggingface.co/spaces/akhaliq/qwen21-multiple-angles-v2-trackio

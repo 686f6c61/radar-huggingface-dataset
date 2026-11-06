@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `namin0202/qwen25-omni-7b-r3v-iter2` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `namin0202` y construido sobre el modelo base multimodal `Qwen/Qwen2.5-Omni-7B` de Alibaba Cloud. Según la metadata de HuggingFace, el adaptador se distribuye en formato PEFT (librería `peft`), con un tamaño de repositorio de 0,3 GB y está etiquetado como `text-generation`. La model card del autor está completamente vacía (todos los campos marcados como `[More Information Needed]`), por lo que no se dispone de información sobre el propósito del ajuste, los datos de entrenamiento, las hiperparametros ni la licencia.
+El modelo `namin0202/qwen25-omni-7b-r3v-iter2` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `namin0202` y construido sobre el modelo base multimodal `Qwen/Qwen2.5-Omni-7B` de Alibaba Cloud. Según la metadata de Hugging Face, el adaptador se distribuye en formato PEFT (librería `peft`), con un tamaño de repositorio de 0,3 GB y está etiquetado como `text-generation`. La model card del autor está completamente vacía (todos los campos marcados como `[More Information Needed]`), por lo que no se dispone de información sobre el propósito del ajuste, los datos de entrenamiento, las hiperparametros ni la licencia.
 
 Al ser un adaptador LoRA, el modelo resultante hereda la arquitectura y capacidades del modelo base, pero los pesos del adaptador solo modifican una fracción de los parámetros. Dado que no hay documentación pública sobre qué tarea específica fue ajustada (el sufijo `r3v` podría sugerir una iteración de entrenamiento, pero es especulación), el modelo debe tratarse con cautela: sin información sobre el dataset de ajuste, no es posible garantizar su comportamiento en producción. La relevancia de este adaptador radica únicamente en que aprovecha un modelo base muy capaz (Qwen2.5-Omni-7B), pero la falta de transparencia limita su utilidad práctica para desarrolladores e investigadores.
 
@@ -84,8 +84,8 @@ El adaptador `qwen25-omni-7b-r3v-iter2` no aporta datos propios para esta compar
 
 ## Enlaces
 
-- [HuggingFace: namin0202/qwen25-omni-7b-r3v-iter2](https://huggingface.co/namin0202/qwen25-omni-7b-r3v-iter2)
-- [HuggingFace: Qwen/Qwen2.5-Omni-7B (modelo base)](https://huggingface.co/Qwen/Qwen2.5-Omni-7B)
+- [Hugging Face: namin0202/qwen25-omni-7b-r3v-iter2](https://huggingface.co/namin0202/qwen25-omni-7b-r3v-iter2)
+- [Hugging Face: Qwen/Qwen2.5-Omni-7B (modelo base)](https://huggingface.co/Qwen/Qwen2.5-Omni-7B)
 - [Paper técnico de Qwen2.5-Omni (arXiv:2503.20215)](https://arxiv.org/abs/2503.20215)
 - [Repositorio GitHub de Qwen2.5-Omni](https://github.com/QwenLM/Qwen2.5-Omni)
 - [Cookbooks de Qwen2.5-Omni](https://github.com/QwenLM/Qwen2.5-Omni/tree/main/cookbooks)

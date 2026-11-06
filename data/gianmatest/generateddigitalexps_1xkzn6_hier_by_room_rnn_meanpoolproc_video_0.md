@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`generatedDigitalExps_1xKzN6_hier_by_room_rnn_meanPoolProc_video_0` es un checkpoint de investigacion publicado en HuggingFace por el usuario `gianmaTest` el 25 de octubre de 2026 (fecha declarada en el repo). No es un modelo de lenguaje generativo al uso: se trata de un artefacto de experimento con 2.366.208 parametros totales (unos 2,37 millones), empaquetado en `safetensors` y subido mediante la integracion `PyTorchModelHubMixin` de `huggingface_hub`. La model card no aporta descripcion funcional: los campos Code, Paper y Docs estan marcados como "More Information Needed".
+`generatedDigitalExps_1xKzN6_hier_by_room_rnn_meanPoolProc_video_0` es un checkpoint de investigacion publicado en Hugging Face por el usuario `gianmaTest` el 25 de octubre de 2026 (fecha declarada en el repo). No es un modelo de lenguaje generativo al uso: se trata de un artefacto de experimento con 2.366.208 parametros totales (unos 2,37 millones), empaquetado en `safetensors` y subido mediante la integracion `PyTorchModelHubMixin` de `huggingface_hub`. La model card no aporta descripcion funcional: los campos Code, Paper y Docs estan marcados como "More Information Needed".
 
 El identificador sugiere —y esto es una interpretacion a partir del nombre, no un dato confirmado— una arquitectura de tipo RNN jerarquica ("hier_by_room_rnn") con agregacion por *mean pooling* ("meanPoolProc") aplicada a datos de tipo video osecuencia de fotogramas ("video_0"), probablemente en el contexto de experimentos de prediccion de movimiento o codificacion de escenas por habitaciones. No hay informacion publicada sobre el dataset, el regimen de entrenamiento ni las metricas.
 
@@ -91,7 +91,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKzN6_hier_by_room_rnn_meanPoolProc_video_0
+- Repositorio en Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKzN6_hier_by_room_rnn_meanPoolProc_video_0
 - Documentacion de `PyTorchModelHubMixin` (referenciada por la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Codigo: no disponible

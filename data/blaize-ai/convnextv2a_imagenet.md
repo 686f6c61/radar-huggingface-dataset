@@ -92,7 +92,7 @@ La comparativa se limita a la arquitectura de origen y a alternativas de clasifi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Blaize-AI/ConvNeXtV2a_ImageNet
+- Repositorio Hugging Face: https://huggingface.co/Blaize-AI/ConvNeXtV2a_ImageNet
 - Sitio de Blaize: https://www.blaize.com
 - Repositorio oficial de ConvNeXt V2 (Meta): https://github.com/facebookresearch/ConvNeXt-V2
 - Implementación en `timm`: https://github.com/huggingface/pytorch-image-models/blob/main/timm/models/convnext.py

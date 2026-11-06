@@ -87,7 +87,7 @@ No se han proporcionado modelos comparables en la informacion disponible. Se tra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhuomingliu/MaLoW-Qwen3.5-2B-MLP
+- Modelo en Hugging Face: https://huggingface.co/zhuomingliu/MaLoW-Qwen3.5-2B-MLP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Adaptador base congelado: https://huggingface.co/zhuomingliu/Qwen3.5-2B-MLP
 - Repositorio de codigo MaLoW (pendiente de publicacion): https://github.com/dragonlzm/MaLoW

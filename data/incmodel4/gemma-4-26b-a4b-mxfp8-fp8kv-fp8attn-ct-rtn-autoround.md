@@ -91,8 +91,8 @@ La información disponible solo permite comparar el checkpoint con su propio mod
 
 | Modelo | Parametros | Contexto | Precisión de pesos | MMLU | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| INCModel4/gemma-4-26B-A4B-MXFP8-FP8KV-FP8Attn-CT-RTN-AutoRound | 25.805.936.377 | 131.072 (configurado en evaluacion) | MXFP8 + KV FP8 + modulos BF16 | 74,41% | 73,69% | apache-2.0 (license_link a licencia Gemma 4) | HuggingFace, 16 descargas |
-| google/gemma-4-26B-A4B (modelo base) | no disponible | no disponible | BF16 | 74,34% (referencia historica del autor) | 71,80% (referencia historica del autor) | no disponible en la informacion proporcionada | HuggingFace |
+| INCModel4/gemma-4-26B-A4B-MXFP8-FP8KV-FP8Attn-CT-RTN-AutoRound | 25.805.936.377 | 131.072 (configurado en evaluacion) | MXFP8 + KV FP8 + modulos BF16 | 74,41% | 73,69% | apache-2.0 (license_link a licencia Gemma 4) | Hugging Face, 16 descargas |
+| google/gemma-4-26B-A4B (modelo base) | no disponible | no disponible | BF16 | 74,34% (referencia historica del autor) | 71,80% (referencia historica del autor) | no disponible en la informacion proporcionada | Hugging Face |
 
 Otras alternativas de la misma categoría (tamaño o tarea): no disponible.
 
@@ -112,7 +112,7 @@ Otras alternativas de la misma categoría (tamaño o tarea): no disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/INCModel4/gemma-4-26B-A4B-MXFP8-FP8KV-FP8Attn-CT-RTN-AutoRound
+- Hugging Face: https://huggingface.co/INCModel4/gemma-4-26B-A4B-MXFP8-FP8KV-FP8Attn-CT-RTN-AutoRound
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B
 - Enlace de licencia citado en la model card: https://ai.google.dev/gemma/docs/gemma_4_license
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo. Los resultados devueltos corresponden a comunidades y servidores de Discord de un videojuego (SAND: Raiders of Sophie) y no guardan relación con el checkpoint.

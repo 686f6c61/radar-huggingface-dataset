@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Luigi-MKWorld-173 es un modelo publicado en HuggingFace por el usuario LUIGIYAHABA. La información disponible es extremadamente limitada: el repositorio tiene un tamaño de 0,1 GB, no cuenta con pipeline declarado, no especifica idiomas soportados y la licencia figura como "unknown". La model card asociada no contiene más que la declaración de licencia, sin descripción, arquitectura ni datos de entrenamiento.
+Luigi-MKWorld-173 es un modelo publicado en Hugging Face por el usuario LUIGIYAHABA. La información disponible es extremadamente limitada: el repositorio tiene un tamaño de 0,1 GB, no cuenta con pipeline declarado, no especifica idiomas soportados y la licencia figura como "unknown". La model card asociada no contiene más que la declaración de licencia, sin descripción, arquitectura ni datos de entrenamiento.
 
 Por el tamaño del repositorio (aproximadamente 100 MB) y la ausencia de cualquier documentación técnica, no es posible determinar con rigor la arquitectura, el número de parámetros ni el contexto del modelo. El tamaño es compatible con pesos en cuantización agresiva de un modelo pequeño, con un adaptador (LoRA) o con un modelo de embeddings, pero no hay información que permita confirmarlo.
 
@@ -38,7 +38,7 @@ Tampoco hay referencias a innovaciones técnicas (atención lineal, decodificaci
 ## Casos de uso
 
 - Evaluación exploratoria: descargar los pesos e inspeccionar el repositorio para determinar el formato real (safetensors, GGUF, adaptador LoRA u otro) antes de considerar cualquier uso.
-- Pruebas de integración en pipelines de HuggingFace: verificar si el modelo carga con `transformers` o si requiere una librería específica, dado que no hay pipeline declarado.
+- Pruebas de integración en pipelines de Hugging Face: verificar si el modelo carga con `transformers` o si requiere una librería específica, dado que no hay pipeline declarado.
 - Experimentación académica con modelos no documentados: útil únicamente como objeto de estudio de artefactos publicados sin model card, no como componente de producción.
 - Prototipado interno aislado: solo si tras la inspección se confirma que el modelo funciona y se acepta el riesgo de una licencia desconocida.
 - Comparación de artefactos pequeños: medir el tamaño real de los ficheros y contrastarlo con modelos pequeños conocidos para inferir la categoría del artefacto.
@@ -75,4 +75,4 @@ No disponible. No hay información suficiente sobre arquitectura, tamaño o rend
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LUIGIYAHABA/Luigi-MKWorld-173
+- Hugging Face: https://huggingface.co/LUIGIYAHABA/Luigi-MKWorld-173

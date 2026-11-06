@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Clemma-12B-GGUF es un repositorio de pesos en formato GGUF publicado por el usuario ayan4m1 en HuggingFace, con licencia declarada Apache 2.0. Por el nombre se deduce que se trata de una version cuantizada para inferencia local de un modelo de aproximadamente 12.000 millones de parametros, presumiblemente un fine-tune o merge distribuido bajo el nombre "Clemma" (existe un repositorio hermano, ayan4m1/Clemma-E4B). El repositorio no incluye model card descriptiva: el unico contenido del README es la declaracion de licencia.
+Clemma-12B-GGUF es un repositorio de pesos en formato GGUF publicado por el usuario ayan4m1 en Hugging Face, con licencia declarada Apache 2.0. Por el nombre se deduce que se trata de una version cuantizada para inferencia local de un modelo de aproximadamente 12.000 millones de parametros, presumiblemente un fine-tune o merge distribuido bajo el nombre "Clemma" (existe un repositorio hermano, ayan4m1/Clemma-E4B). El repositorio no incluye model card descriptiva: el unico contenido del README es la declaracion de licencia.
 
 La relevancia de esta publicacion es exclusivamente practica: el formato GGUF permite ejecutar el modelo en llama.cpp y derivados (Ollama, LM Studio, llama-cpp-python) sobre CPU, GPU consumer o configuraciones hibridas, sin necesidad de infraestructura de servidor. Esto lo situa en el segmento de modelos de 12B orientados a despliegue local en equipos con 8-16 GB de memoria unificada o VRAM.
 
@@ -92,7 +92,7 @@ No se identifican en la informacion disponible modelos directamente comparables 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ayan4m1/Clemma-12B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ayan4m1/Clemma-12B-GGUF
 - Repositorio hermano del mismo autor: https://huggingface.co/ayan4m1/Clemma-E4B
 - Directorio de descubrimiento de modelos GGUF: https://local-ai-zone.github.io/
 - Noticia sobre Gemma 4 12B (posible contexto de familia, sin confirmar relacion con Clemma): https://www.wionews.com/technology/google-launches-gemma-4-12b-this-powerful-ai-model-from-google-can-run-on-your-laptop-1780505546251

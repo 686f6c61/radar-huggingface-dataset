@@ -65,7 +65,7 @@ No disponible. No existe una categoría de modelos comparable porque este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tylergfg/notes-audio-visual-learning
+- Repositorio en Hugging Face: https://huggingface.co/tylergfg/notes-audio-visual-learning
 - Lista curada de aprendizaje audiovisual (GeWu-Lab): https://github.com/GeWu-Lab/awesome-audiovisual-learning
 - Encuesta sobre modelos de lenguaje audiovisuales (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0950705126012955
 - Revisión sobre generación de contenido multimedia (Wiley): https://sid.onlinelibrary.wiley.com/doi/10.1002/jsid.2111

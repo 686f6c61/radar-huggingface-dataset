@@ -80,13 +80,13 @@ La comparación relevante es entre el checkpoint oficial y sus variantes ablacio
 
 | Modelo | Parametros | Contexto | ASR (juez LLM) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| google/gemma-4-12B-it-qat-q4_0-unquantized | 12B | no disponible | 10,7% | gemma | HuggingFace |
-| coder3101/gemma-4-12B-it-qat-q4_0-unquantized-heretic | 12B | no disponible | 81,0% | gemma | HuggingFace |
-| MuXodious/gemma-4-12B-it-QAT-SOMPOA-heresy | 12B | no disponible | 85,1% | gemma | HuggingFace |
-| wnfldchen/gemma-4-12B-it-qat-q4_0-unquantized-heretic | 12B | no disponible | 83,6% | gemma | HuggingFace |
-| llmfan46/gemma-4-12B-it-qat-q4_0-unquantized-uncensored-heretic | 12B | no disponible | 80,8% | gemma | HuggingFace |
-| igorls/gemma-4-12B-it-qat-q4_0-unquantized-heretic | 12B | no disponible | 82,8% | gemma | HuggingFace |
-| huihui-ai/Huihui-gemma-4-12B-it-qat-q4_0-unquantized-abliterated | 12B | no disponible | 87,0% | gemma | HuggingFace |
+| google/gemma-4-12B-it-qat-q4_0-unquantized | 12B | no disponible | 10,7% | gemma | Hugging Face |
+| coder3101/gemma-4-12B-it-qat-q4_0-unquantized-heretic | 12B | no disponible | 81,0% | gemma | Hugging Face |
+| MuXodious/gemma-4-12B-it-QAT-SOMPOA-heresy | 12B | no disponible | 85,1% | gemma | Hugging Face |
+| wnfldchen/gemma-4-12B-it-qat-q4_0-unquantized-heretic | 12B | no disponible | 83,6% | gemma | Hugging Face |
+| llmfan46/gemma-4-12B-it-qat-q4_0-unquantized-uncensored-heretic | 12B | no disponible | 80,8% | gemma | Hugging Face |
+| igorls/gemma-4-12B-it-qat-q4_0-unquantized-heretic | 12B | no disponible | 82,8% | gemma | Hugging Face |
+| huihui-ai/Huihui-gemma-4-12B-it-qat-q4_0-unquantized-abliterated | 12B | no disponible | 87,0% | gemma | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -103,7 +103,7 @@ La comparación relevante es entre el checkpoint oficial y sus variantes ablacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DreamFast/Gemma4-12b-qat-abliterlitics
+- Hugging Face: https://huggingface.co/DreamFast/Gemma4-12b-qat-abliterlitics
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized
 - Informe en vivo: https://abliterlitics.dev/models/gemma4-12b-qat/
 - Código: https://github.com/dreamfast/abliterlitics

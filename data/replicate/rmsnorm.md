@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`replicate/rmsnorm` no es un modelo de lenguaje, sino un paquete de kernels de computo distribuido a traves de la libreria `kernels` de HuggingFace. Concretamente, expone las funciones `apply_rms_norm_forward` y `apply_rms_norm_backward`, que implementan la normalizacion RMSNorm (una variante de LayerNorm usada habitualmente en transformers modernos como Llama, Mistral o Gemma) lista para ejecutarse sobre aceleradores. El repositorio lo publica la organizacion `replicate` bajo licencia Apache 2.0 y esta etiquetado con `library_name: kernels`.
+`replicate/rmsnorm` no es un modelo de lenguaje, sino un paquete de kernels de computo distribuido a traves de la libreria `kernels` de Hugging Face. Concretamente, expone las funciones `apply_rms_norm_forward` y `apply_rms_norm_backward`, que implementan la normalizacion RMSNorm (una variante de LayerNorm usada habitualmente en transformers modernos como Llama, Mistral o Gemma) lista para ejecutarse sobre aceleradores. El repositorio lo publica la organizacion `replicate` bajo licencia Apache 2.0 y esta etiquetado con `library_name: kernels`.
 
 La relevancia de este tipo de repositorios es de infraestructura: en lugar de obligar a cada proyecto a compilar sus propios kernels CUDA o Triton, la libreria `kernels` permite descargar binarios precompilados y llamarlos desde Python con `get_kernel(...)`. Esto reduce el tiempo de puesta en marcha y evita problemas de compatibilidad entre versiones de CUDA, PyTorch y arquitecturas de GPU. No contiene pesos, no genera texto ni tiene parametros entrenables: es codigo de bajo nivel.
 
-El repositorio ocupa 0.6 GB, un tamano coherente con un paquete que incluye binarios compilados para varias arquitecturas de GPU. No se han publicado descargas ni valoraciones, y la model card advierte que a partir del 13 de septiembre de 2026 HuggingFace retirara los repositorios de kernels con tipo "model", por lo que se recomienda usar una version reciente de la libreria `kernels`.
+El repositorio ocupa 0.6 GB, un tamano coherente con un paquete que incluye binarios compilados para varias arquitecturas de GPU. No se han publicado descargas ni valoraciones, y la model card advierte que a partir del 13 de septiembre de 2026 Hugging Face retirara los repositorios de kernels con tipo "model", por lo que se recomienda usar una version reciente de la libreria `kernels`.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Otros datos del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | replicate/rmsnorm |
+| ID en Hugging Face | replicate/rmsnorm |
 | Autor | replicate |
 | Libreria | kernels |
 | Funciones expuestas | `apply_rms_norm_forward`, `apply_rms_norm_backward` |
@@ -59,7 +59,7 @@ El paquete se distribuye mediante el mecanismo de la libreria `kernels`, que res
 - Optimizacion de inferencia de bajo nivel: proyectos que sirven modelos con kernels propios pueden sustituir su RMSNorm por este paquete para reducir el tiempo de compilacion y garantizar portabilidad entre versiones de CUDA.
 - Prototipado rapido en investigacion: un investigador que prueba variantes de normalizacion puede comparar esta implementacion con alternativas sin escribir codigo de GPU.
 - Despliegue reproducible en produccion: al fijar la version del kernel con `get_kernel`, se evita que un cambio de entorno rompa la numerica del modelo.
-- Educacion y referencia: sirve como ejemplo de como empaquetar y publicar un kernel para la libreria `kernels` de HuggingFace.
+- Educacion y referencia: sirve como ejemplo de como empaquetar y publicar un kernel para la libreria `kernels` de Hugging Face.
 - Base para variantes (RMSNorm con pesos fusionados, normalizacion en FP8, etc.): el repositorio es un punto de partida para extender la operacion segun necesidades concretas.
 
 ## Benchmarks y rendimiento
@@ -80,8 +80,8 @@ Este repositorio es un kernel, no un modelo, por lo que la comparacion se hace c
 
 | Alternativa | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|
-| replicate/rmsnorm | Kernel empaquetado para `kernels` | apache-2.0 | HuggingFace, via `get_kernel` |
-| kernels-community/rmsnorm | Kernel original del que deriva este | no disponible | HuggingFace |
+| replicate/rmsnorm | Kernel empaquetado para `kernels` | apache-2.0 | Hugging Face, via `get_kernel` |
+| kernels-community/rmsnorm | Kernel original del que deriva este | no disponible | Hugging Face |
 | Implementacion nativa de PyTorch (`torch.nn.RMSNorm` o equivalente) | Codigo en el framework | licencia de PyTorch (BSD) | Incluida en PyTorch |
 | Kernels de RMSNorm de Apex o de librerias de atencion como FlashAttention | Kernel C++/CUDA | licencias respectivas (habitualmente BSD o Apache 2.0) | Repositorios de GitHub |
 
@@ -92,16 +92,16 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 - No es un modelo: no genera texto ni tiene pesos, por lo que no puede usarse para tareas de lenguaje.
 - No se han publicado benchmarks, asi que no hay evidencia publica de su rendimiento frente a alternativas de PyTorch o de otros kernels.
 - No se especifican las arquitecturas de GPU soportadas por los binarios ni el backend empleado (CUDA, ROCm, Triton), lo que dificulta prever la compatibilidad en un entorno concreto.
-- La model card advierte de que HuggingFace retirara los repositorios de tipo "model" para kernels a partir del 13 de septiembre de 2026; conviene usar la version mas reciente de la libreria `kernels` para evitar interrupciones.
+- La model card advierte de que Hugging Face retirara los repositorios de tipo "model" para kernels a partir del 13 de septiembre de 2026; conviene usar la version mas reciente de la libreria `kernels` para evitar interrupciones.
 - El repositorio es un espejo de `kernels-community/rmsnorm`; no queda claro en la informacion disponible si `replicate` mantiene cambios propios ni con que frecuencia se sincroniza.
 - Aunque la licencia Apache 2.0 permite uso comercial, conviene verificar las dependencias transitivas que arrastre el binario compilado antes de integrarlo en produccion.
 - Al ser un componente de bajo nivel, un fallo en la backward puede degradar silenciosamente el entrenamiento sin errores visibles; se recomienda validar la numerica contra una implementacion de referencia.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/rmsnorm
+- Repositorio en Hugging Face: https://huggingface.co/replicate/rmsnorm
 - Repositorio original referenciado en la model card: https://huggingface.co/kernels-community/rmsnorm
-- Libreria `kernels` de HuggingFace: https://github.com/huggingface/kernels
+- Libreria `kernels` de Hugging Face: https://github.com/huggingface/kernels
 - Incidencias de la libreria `kernels`: https://github.com/huggingface/kernels/issues/new
 - Organizacion `replicate` en GitHub: https://github.com/replicate
 - Plataforma Replicate: https://replicate.com/

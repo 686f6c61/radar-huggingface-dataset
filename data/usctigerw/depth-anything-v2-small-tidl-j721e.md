@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una versión optimizada para despliegue en hardware de borde del modelo Depth Anything V2 Small. Se trata de un artefacto ONNX estático acompañado de artefactos TIDL de 16 bits generados específicamente para la plataforma SK-TDA4VM / J721E de Texas Instruments, empleando TIDL 11_00_08_00 y el SDK 11.00.00.08. El autor es el usuario de HuggingFace usctigerw y el modelo base es depth-anything/Depth-Anything-V2-Small-hf, cuyos pesos entrenados originales se preservan.
+Este repositorio contiene una versión optimizada para despliegue en hardware de borde del modelo Depth Anything V2 Small. Se trata de un artefacto ONNX estático acompañado de artefactos TIDL de 16 bits generados específicamente para la plataforma SK-TDA4VM / J721E de Texas Instruments, empleando TIDL 11_00_08_00 y el SDK 11.00.00.08. El autor es el usuario de Hugging Face usctigerw y el modelo base es depth-anything/Depth-Anything-V2-Small-hf, cuyos pesos entrenados originales se preservan.
 
 El problema que resuelve es la estimación de profundidad relativa (profundidad inversa relativa) directamente en el acelerador C7x/MMA de un SoC TDA4VM, sin depender de una GPU. El modelo recibe una entrada float32 `pixel_values` de forma 1 × 3 × 224 × 392 y produce `predicted_depth` de forma 1 × 224 × 392. La relevancia radica en que permite ejecutar inferencia de profundidad densa en placas de bajo consumo orientadas a automoción y robótica, aunque el soporte completo en placa no está verificado por el autor.
 
@@ -84,8 +84,8 @@ La información disponible solo permite comparar este artefacto con su modelo ba
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| usctigerw/depth-anything-v2-small-tidl-j721e | No disponible | No aplica | ONNX + artefactos TIDL 16 bits | Apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| depth-anything/Depth-Anything-V2-Small-hf | No disponible en la informacion | No aplica | safetensors (PyTorch) | Apache-2.0 | HuggingFace |
+| usctigerw/depth-anything-v2-small-tidl-j721e | No disponible | No aplica | ONNX + artefactos TIDL 16 bits | Apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| depth-anything/Depth-Anything-V2-Small-hf | No disponible en la informacion | No aplica | safetensors (PyTorch) | Apache-2.0 | Hugging Face |
 
 Diferencias clave: ambas versiones conservan los mismos pesos entrenados. Este artefacto añade el grafo ONNX estático modificado y los artefactos TIDL para J721E, orientados a ejecución en el acelerador C7x/MMA, mientras que el modelo base está pensado para inferencia en PyTorch sobre CPU/GPU convencional. Para otros modelos comparables (por ejemplo, variantes de mayor tamaño de Depth Anything V2 u otras familias de estimación de profundidad monocular), no hay datos disponibles en la información proporcionada.
 
@@ -106,7 +106,7 @@ Diferencias clave: ambas versiones conservan los mismos pesos entrenados. Este a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/usctigerw/depth-anything-v2-small-tidl-j721e
+- Modelo en Hugging Face: https://huggingface.co/usctigerw/depth-anything-v2-small-tidl-j721e
 - Modelo base: https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf
 - Space de demostración: https://huggingface.co/spaces/usctigerw/depth-anything-tidl-demo
 - Pull request upstream de TI (edgeai-tidl-tools PR #113): https://github.com/TexasInstruments/edgeai-tidl-tools/pull/113

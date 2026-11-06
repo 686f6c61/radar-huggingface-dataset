@@ -31,7 +31,7 @@ Su relevancia actual es fundamentalmente académica: sirve como referencia repro
 
 El modelo pertenece a la familia descrita en "Dynamic Multi-Byte Prediction With Hierarchical Language Models". Frente a los transformers convencionales, aquí no se declara un tipo de atención estándar (`attn_type = None`) y la entrada se procesa a nivel de byte, con una jerarquía interna parametrizada por `model_config = [2, (16,), 4, 0]`. El vocabulario mínimo de 261 símbolos implica que no existe un vocabulario aprendido de subpalabras: el modelo segmenta y agrupa bytes de forma dinámica, de modo que la noción de "token latente" es interna y variable. Según los datos publicados, cada token latente agrupa de media 3,34 bytes.
 
-El entrenamiento consta de dos fases. Primero, un preentrenamiento sobre `FineWeb-Edu` `sample-100BT`, el subconjunto de 100 000 millones de tokens del corpus educativo de HuggingFace. Después, un ajuste supervisado sobre `allenai/tulu-3-sft-mixture` durante 5 épocas (lote de 16, semilla 42), con la configuración `configs/train/modern_fxt_priors_0.3_en_lambda_3_fxt_vanilla_256_scale_bp.yaml`. La model card no documenta uso de RLHF ni de DPO, ni detalla la composición interna del dataset de SFT más allá de su nombre.
+El entrenamiento consta de dos fases. Primero, un preentrenamiento sobre `FineWeb-Edu` `sample-100BT`, el subconjunto de 100 000 millones de tokens del corpus educativo de Hugging Face. Después, un ajuste supervisado sobre `allenai/tulu-3-sft-mixture` durante 5 épocas (lote de 16, semilla 42), con la configuración `configs/train/modern_fxt_priors_0.3_en_lambda_3_fxt_vanilla_256_scale_bp.yaml`. La model card no documenta uso de RLHF ni de DPO, ni detalla la composición interna del dataset de SFT más allá de su nombre.
 
 ## Capacidades
 
@@ -97,7 +97,7 @@ No se han proporcionado datos de modelos alternativos comparables (ni de otras p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skai-research/fxt-3x-sft
+- Modelo en Hugging Face: https://huggingface.co/skai-research/fxt-3x-sft
 - Modelo base: https://huggingface.co/skai-research/fxt-3x-base
 - Artículo: https://arxiv.org/abs/2608.15454
 - Repositorio de código: https://github.com/skai-research/lca-multibyte

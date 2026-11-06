@@ -89,7 +89,7 @@ No se dispone de métricas de modelos comparables en la información proporciona
 
 | Modelo | Tarea | Semillas | Evaluación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sim-square-broad-r01-auto-filtered-bc-n1-idql | sim-square-broad | 5 | 49,21 % de éxito medio en 150000 rollouts | Apache 2.0 | HuggingFace |
+| sim-square-broad-r01-auto-filtered-bc-n1-idql | sim-square-broad | 5 | 49,21 % de éxito medio en 150000 rollouts | Apache 2.0 | Hugging Face |
 | Otras rondas de la campana (r00–r03) | sim-square-broad | no disponible | no disponible | no disponible | no disponible |
 | Otros brazos de la celda iterative-IL | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -108,10 +108,10 @@ No se dispone de métricas de modelos comparables en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r01-auto-filtered-bc-n1-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r01-auto-filtered-bc-n1-idql
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organizacion mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion mulligan en Hugging Face: https://huggingface.co/mulligan
 - Dataset de teleoperacion base: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-baseline
 - Dataset de rollouts de politica compartida: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-auto-bc-n1-shared-policy-rollouts
 - Dataset de rollouts filtrados automaticamente: https://huggingface.co/datasets/mulligan/sim-square-broad-c02-auto-filtered-bc-n1-policy-rollouts

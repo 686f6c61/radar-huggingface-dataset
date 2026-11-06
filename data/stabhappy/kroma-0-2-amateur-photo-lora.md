@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes, diseñado para aplicar un estilo de fotografía amateur sobre el modelo base `lodestones/Kroma` (versión 0.2). Ha sido desarrollado por Stabhappy y publicado en HuggingFace bajo una licencia "other" no especificada. El adaptador se entrenó en precisión int8 durante 1400 pasos, con una fuerza recomendada de 1.0.
+Este modelo es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes, diseñado para aplicar un estilo de fotografía amateur sobre el modelo base `lodestones/Kroma` (versión 0.2). Ha sido desarrollado por Stabhappy y publicado en Hugging Face bajo una licencia "other" no especificada. El adaptador se entrenó en precisión int8 durante 1400 pasos, con una fuerza recomendada de 1.0.
 
 Al tratarse de un LoRA, no es un modelo autónomo sino un complemento que modifica el comportamiento del modelo base. Su relevancia radica en que permite ajustar el estilo de salida de Kroma sin necesidad de reentrenar el modelo completo, lo que reduce drásticamente los requisitos de cómputo y almacenamiento. No se dispone de información sobre la arquitectura interna, el número de parámetros o la longitud de contexto, ya que la model card no proporciona esos detalles.
 
@@ -27,7 +27,7 @@ El modelo es un adaptador LoRA, una técnica de fine-tuning eficiente que introd
 
 - Generación de imágenes con estilo de fotografía amateur, aplicado sobre el modelo base Kroma.
 - Adaptación ligera: al ser un LoRA, puede combinarse con el modelo base sin necesidad de reentrenar.
-- Compatible con el ecosistema `diffusers` de HuggingFace, lo que facilita su integración en pipelines de text-to-image.
+- Compatible con el ecosistema `diffusers` de Hugging Face, lo que facilita su integración en pipelines de text-to-image.
 - No se dispone de información sobre capacidades adicionales como tool calling, agentes, razonamiento multi-paso o soporte multilingüe, ya que es un modelo de generación de imágenes y la model card no las menciona.
 
 ## Casos de uso
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 - Al ser un LoRA, los requisitos de VRAM son los del modelo base Kroma más un pequeño overhead por el adaptador. No se especifican cifras concretas.
 - Se puede ejecutar en GPUs de consumo si el modelo base cabe en ellas (por ejemplo, RTX 3090 o RTX 4090, dependiendo del tamaño de Kroma).
-- Para despliegue, se puede usar la librería `diffusers` de HuggingFace, que soporta la carga de adaptadores LoRA de forma nativa.
+- Para despliegue, se puede usar la librería `diffusers` de Hugging Face, que soporta la carga de adaptadores LoRA de forma nativa.
 - No se dispone de datos de latencia o throughput.
 
 ## Comparativa con modelos similares
@@ -65,5 +65,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Stabhappy/kroma-0.2-amateur-photo-lora)
+- [Modelo en Hugging Face](https://huggingface.co/Stabhappy/kroma-0.2-amateur-photo-lora)
 - [Modelo base lodestones/Kroma](https://huggingface.co/lodestones/Kroma)

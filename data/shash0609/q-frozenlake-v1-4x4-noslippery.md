@@ -2,9 +2,9 @@
 
 ## Resumen
 
-q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular por el usuario shash0609 y publicado en HuggingFace Hub. No es un modelo de lenguaje ni una red neuronal profunda: es una politica entrenada para resolver el entorno FrozenLake-v1 de Gym, en su configuracion 4x4 y con la superficie resbaladiza desactivada (no_slippery), lo que convierte el problema en un MDP determinista con recompensa dispersa (1.0 unicamente al alcanzar la meta). El artefacto distribuido es un unico fichero pickle (`q-learning.pkl`) que contiene la tabla Q y el identificador del entorno.
+q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular por el usuario shash0609 y publicado en Hugging Face Hub. No es un modelo de lenguaje ni una red neuronal profunda: es una politica entrenada para resolver el entorno FrozenLake-v1 de Gym, en su configuracion 4x4 y con la superficie resbaladiza desactivada (no_slippery), lo que convierte el problema en un MDP determinista con recompensa dispersa (1.0 unicamente al alcanzar la meta). El artefacto distribuido es un unico fichero pickle (`q-learning.pkl`) que contiene la tabla Q y el identificador del entorno.
 
-Su relevancia es exclusivamente docente y de validacion: sirve como referencia minima de correctitud para implementaciones de Q-learning, como baseline trivial en pipelines de evaluacion de RL y como ejemplo reproducible de entrenamiento hasta convergencia en un entorno de juguete. La model card declara un `mean_reward` de 1.00 +/- 0.00 sobre FrozenLake-v1-4x4-no_slippery, es decir, exito perfecto en la politica evaluada, aunque la metrica figura como no verificada por HuggingFace.
+Su relevancia es exclusivamente docente y de validacion: sirve como referencia minima de correctitud para implementaciones de Q-learning, como baseline trivial en pipelines de evaluacion de RL y como ejemplo reproducible de entrenamiento hasta convergencia en un entorno de juguete. La model card declara un `mean_reward` de 1.00 +/- 0.00 sobre FrozenLake-v1-4x4-no_slippery, es decir, exito perfecto en la politica evaluada, aunque la metrica figura como no verificada por Hugging Face.
 
 Es importante encuadrar el artefacto correctamente: no dispone de contexto, no procesa lenguaje natural, no soporta tool calling ni agentes multi-paso y no se le puede aplicar cuantizacion. El repositorio ocupa 0.0 GB, no tiene descargas ni likes registrados y no declara licencia, lo que limita su uso comercial.
 
@@ -56,7 +56,7 @@ No se han publicado en la informacion disponible datos sobre el numero de episod
 |---|---|---|---|---|
 | reinforcement-learning | FrozenLake-v1-4x4-no_slippery | mean_reward | 1.00 +/- 0.00 | No |
 
-El resultado procede de la model card del autor y esta marcado como `verified: false`, por lo que no ha sido reproducido de forma independiente por HuggingFace. No se han publicado en la informacion disponible otros benchmarks, curvas de aprendizaje, tiempos de entrenamiento ni comparaciones medidas frente a otros algoritmos.
+El resultado procede de la model card del autor y esta marcado como `verified: false`, por lo que no ha sido reproducido de forma independiente por Hugging Face. No se han publicado en la informacion disponible otros benchmarks, curvas de aprendizaje, tiempos de entrenamiento ni comparaciones medidas frente a otros algoritmos.
 
 ## Requisitos de hardware
 
@@ -72,7 +72,7 @@ El resultado procede de la model card del autor y esta marcado como `verified: f
 
 | Modelo | Parametros | Contexto | Rendimiento en FrozenLake 4x4 no_slippery | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| q-FrozenLake-v1-4x4-noSlippery (shash0609) | 64 valores Q (estimacion derivada) | no aplica | mean_reward 1.00 +/- 0.00 (no verificado) | no disponible | HuggingFace Hub, 0 descargas |
+| q-FrozenLake-v1-4x4-noSlippery (shash0609) | 64 valores Q (estimacion derivada) | no aplica | mean_reward 1.00 +/- 0.00 (no verificado) | no disponible | Hugging Face Hub, 0 descargas |
 | DQN sobre FrozenLake-v1 4x4 | no disponible | no aplica | no disponible | no disponible | existen implementaciones publicas, sin datos en esta busqueda |
 | PPO sobre FrozenLake-v1 4x4 | no disponible | no aplica | no disponible | no disponible | existen implementaciones publicas, sin datos en esta busqueda |
 | Q-learning tabular con SARSA / Monte Carlo | 64 valores Q (estimacion derivada) | no aplica | no disponible | no disponible | implementaciones de referencia en tutoriales, sin datos en esta busqueda |
@@ -89,11 +89,11 @@ La comparacion cuantitativa no es posible con la informacion disponible: no se h
 - Sin informacion de reproducibilidad: se desconocen semilla, hiperparametros, numero de episodios y procedimiento de evaluacion, lo que dificulta replicar el resultado.
 - Sin sesgos linguisticos, sociales o culturales en el sentido habitual, pero si con la salvedad de que la politica aprendida depende por completo del entorno de entrenamiento y de su definicion de recompensa.
 - Riesgo de alucinacion no aplicable: el modelo no genera texto ni contenido factico.
-- Documentacion minima: la model card se limita al fragmento de uso y a los metadatos de HuggingFace; no hay informe tecnico, paper ni analisis de convergencia.
+- Documentacion minima: la model card se limita al fragmento de uso y a los metadatos de Hugging Face; no hay informe tecnico, paper ni analisis de convergencia.
 - Advertencia de dependencias: el codigo de ejemplo usa `load_from_hub` y la API de Gym, cuya compatibilidad con versiones recientes de Gymnasium puede requerir ajustes.
 
 ## Enlaces
 
-- Modelo en HuggingFace Hub: https://huggingface.co/shash0609/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face Hub: https://huggingface.co/shash0609/q-FrozenLake-v1-4x4-noSlippery
 - Referencia adicional sobre el entorno (no procedente de la busqueda web): documentacion de FrozenLake en Gymnasium, https://gymnasium.farama.org/environments/toy_text/frozen_lake/
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos correspondian a contenido no relacionado (fichas de la aplicacion Instagram en App Store y comunidades de Reddit), por lo que se descartan.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Thireus/mtp-Qwen3.8-27B-THIREUS-Q5_1-SPECIAL_SPLIT` es una variante cuantizada del modelo Qwen3.8-27B, publicada por el usuario Thireus en HuggingFace. El nombre sugiere que se trata de una versión con cuantización Q5_1 (probablemente en formato GGUF) y una partición especial ("SPECIAL_SPLIT"), posiblemente orientada a despliegue en entornos con recursos limitados. Sin embargo, la model card apenas contiene información: únicamente declara la licencia MIT y no incluye descripción, arquitectura detallada, datos de entrenamiento ni benchmarks. El modelo tiene cero descargas y cero likes, lo que indica que es una publicación reciente o experimental sin validación comunitaria.
+El modelo `Thireus/mtp-Qwen3.8-27B-THIREUS-Q5_1-SPECIAL_SPLIT` es una variante cuantizada del modelo Qwen3.8-27B, publicada por el usuario Thireus en Hugging Face. El nombre sugiere que se trata de una versión con cuantización Q5_1 (probablemente en formato GGUF) y una partición especial ("SPECIAL_SPLIT"), posiblemente orientada a despliegue en entornos con recursos limitados. Sin embargo, la model card apenas contiene información: únicamente declara la licencia MIT y no incluye descripción, arquitectura detallada, datos de entrenamiento ni benchmarks. El modelo tiene cero descargas y cero likes, lo que indica que es una publicación reciente o experimental sin validación comunitaria.
 
-Dado que el autor no ha proporcionado documentación técnica, esta ficha se basa exclusivamente en la información disponible en el repositorio de HuggingFace, complementada con inferencias razonables a partir del nombre del modelo. No se dispone de datos verificados sobre arquitectura interna, capacidades o rendimiento.
+Dado que el autor no ha proporcionado documentación técnica, esta ficha se basa exclusivamente en la información disponible en el repositorio de Hugging Face, complementada con inferencias razonables a partir del nombre del modelo. No se dispone de datos verificados sobre arquitectura interna, capacidades o rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -67,6 +67,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q5_1-SPECIAL_SPLIT)
+- [Repositorio en Hugging Face](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q5_1-SPECIAL_SPLIT)
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código) asociados a este modelo.

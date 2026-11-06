@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HeartMuLaGen es un repositorio de HuggingFace publicado por el usuario `loscrossos` que se presenta como parte de HeartMuLa, una familia de modelos fundacionales de música de código abierto desarrollada por el equipo HeartMuLa. La model card lo etiqueta con el pipeline `text-to-audio` y los tags `music` y `art`, por lo que su función declarada es la generación de audio musical a partir de texto. El repositorio no incluye detalles sobre arquitectura, número de parámetros ni proceso de entrenamiento; remite al repositorio de GitHub `heartlib` para el arranque rápido y el despliegue local.
+HeartMuLaGen es un repositorio de Hugging Face publicado por el usuario `loscrossos` que se presenta como parte de HeartMuLa, una familia de modelos fundacionales de música de código abierto desarrollada por el equipo HeartMuLa. La model card lo etiqueta con el pipeline `text-to-audio` y los tags `music` y `art`, por lo que su función declarada es la generación de audio musical a partir de texto. El repositorio no incluye detalles sobre arquitectura, número de parámetros ni proceso de entrenamiento; remite al repositorio de GitHub `heartlib` para el arranque rápido y el despliegue local.
 
 La relevancia del proyecto reside en su propuesta de familia abierta con licencia Apache 2.0, que en la documentación citada se descompone en tres piezas: un modelo generativo (`HeartMuLa-oss-3B`), un codec de audio (`HeartCodec-oss`) y un transcriptor (`HeartTranscriptor-oss`). Esa separación en componentes es habitual en los sistemas modernos de generación musical (tokenizador/codec más modelo autorregresivo o de difusión), aunque la información disponible no confirma cuál es el esquema exacto empleado.
 
@@ -68,12 +68,12 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HeartMuLaGen (este repositorio) | No disponible | text-to-audio musical | Apache 2.0 | HuggingFace; 0 descargas, 0 likes; autor no oficial |
-| HeartMuLa-oss-3B | 3B (según denominación; verificar) | Generación musical | No disponible en la información | HuggingFace, organización `HeartMuLa` |
-| HeartCodec-oss | No disponible | Codec de audio neuronal | No disponible en la información | HuggingFace, organización `HeartMuLa` |
-| HeartTranscriptor-oss | No disponible | Transcripción de audio | No disponible en la información | HuggingFace, organización `HeartMuLa` |
-| MusicGen (Meta) | 300M / 1.5B / 3.3B | text-to-music | Pesos CC-BY-NC 4.0, código MIT (verificar en la ficha oficial) | HuggingFace / repositorio audiocraft |
-| Stable Audio Open (Stability AI) | ~1.2B (DiT + T5) | text-to-audio, efectos y samples | Stability AI Community License (verificar en la ficha oficial) | HuggingFace |
+| HeartMuLaGen (este repositorio) | No disponible | text-to-audio musical | Apache 2.0 | Hugging Face; 0 descargas, 0 likes; autor no oficial |
+| HeartMuLa-oss-3B | 3B (según denominación; verificar) | Generación musical | No disponible en la información | Hugging Face, organización `HeartMuLa` |
+| HeartCodec-oss | No disponible | Codec de audio neuronal | No disponible en la información | Hugging Face, organización `HeartMuLa` |
+| HeartTranscriptor-oss | No disponible | Transcripción de audio | No disponible en la información | Hugging Face, organización `HeartMuLa` |
+| MusicGen (Meta) | 300M / 1.5B / 3.3B | text-to-music | Pesos CC-BY-NC 4.0, código MIT (verificar en la ficha oficial) | Hugging Face / repositorio audiocraft |
+| Stable Audio Open (Stability AI) | ~1.2B (DiT + T5) | text-to-audio, efectos y samples | Stability AI Community License (verificar en la ficha oficial) | Hugging Face |
 
 La ventaja diferencial de HeartMuLa frente a MusicGen es la licencia Apache 2.0, que permite uso comercial sin las restricciones no comerciales de los pesos de MusicGen. Frente a Stable Audio Open, su licencia comunitaria también es más permisiva, aunque la falta de benchmarks publicados impide comparar calidad de audio de forma objetiva. La cobertura declarada de cinco idiomas de prompt es otro punto a favor, si bien no se especifica si afecta también al contenido vocal generado.
 
@@ -90,7 +90,7 @@ La ventaja diferencial de HeartMuLa frente a MusicGen es la licencia Apache 2.0,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/loscrossos/HeartMuLaGen
+- Repositorio en Hugging Face: https://huggingface.co/loscrossos/HeartMuLaGen
 - Repositorio de código y despliegue (heartlib): https://github.com/HeartMuLa/heartlib
 - Artículo: https://arxiv.org/abs/2601.10547
 - Demo: https://heartmula.github.io/

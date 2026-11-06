@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Dialt/barge-in-detector es un modelo publicado por Dialt en HuggingFace orientado a la deteccion de *barge-in* e interrupciones en agentes de voz. El nombre y los tags del repositorio (`barge-in`, `voice-agents`, `interruption-detection`, `backchannel-classification`, `conversational-ai`) indican que su proposito es clasificar eventos acusticos en conversaciones habladas: determinar cuando un usuario interrumpe al agente, cuando emite senales de *backchannel* (asentimientos, "ya", "mmm") y cuando simplemente hay ruido de fondo.
+Dialt/barge-in-detector es un modelo publicado por Dialt en Hugging Face orientado a la deteccion de *barge-in* e interrupciones en agentes de voz. El nombre y los tags del repositorio (`barge-in`, `voice-agents`, `interruption-detection`, `backchannel-classification`, `conversational-ai`) indican que su proposito es clasificar eventos acusticos en conversaciones habladas: determinar cuando un usuario interrumpe al agente, cuando emite senales de *backchannel* (asentimientos, "ya", "mmm") y cuando simplemente hay ruido de fondo.
 
-El modelo esta etiquetado para audio y para el idioma ingles, con licencia `trelis-commercial-license-required` (uso comercial sujeto a licencia con Trelis) y acceso restringido en HuggingFace: es necesario aceptar condiciones en la pagina del repositorio antes de descargarlo. El repositorio tiene un tamano de 0.0 GB en el momento de la consulta y no registra descargas ni likes, lo que sugiere una publicacion muy reciente o un artefacto aun no poblado con pesos.
+El modelo esta etiquetado para audio y para el idioma ingles, con licencia `trelis-commercial-license-required` (uso comercial sujeto a licencia con Trelis) y acceso restringido en Hugging Face: es necesario aceptar condiciones en la pagina del repositorio antes de descargarlo. El repositorio tiene un tamano de 0.0 GB en el momento de la consulta y no registra descargas ni likes, lo que sugiere una publicacion muy reciente o un artefacto aun no poblado con pesos.
 
 No se dispone de informacion publica sobre arquitectura, numero de parametros, contexto, datos de entrenamiento ni resultados de benchmarks. La ficha se completa con los datos disponibles y marca explicitamente como "no disponible" todo aquello que no ha sido publicado.
 
@@ -65,7 +65,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es *gated* y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es *gated* y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Licencia `trelis-commercial-license-required`: el uso comercial exige una licencia especifica; no es un modelo de uso libre para produccion sin acuerdo.
 - Solo ingles: no hay evidencia de soporte multilingue.
 - Sin datos publicos de arquitectura, parametros ni entrenamiento: dificil evaluar riesgos de sesgo, alucinacion o robustez sin documentacion tecnica.
@@ -75,6 +75,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dialt/barge-in-detector
+- Hugging Face: https://huggingface.co/Dialt/barge-in-detector
 - Licencia Trelis: no disponible en la informacion proporcionada
 - Paper, blog o repositorio adicional: no disponible

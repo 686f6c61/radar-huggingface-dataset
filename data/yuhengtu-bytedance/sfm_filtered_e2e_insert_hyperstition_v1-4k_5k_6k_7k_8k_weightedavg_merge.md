@@ -77,10 +77,10 @@ La comparacion se limita a parametros, licencia y disponibilidad, ya que no exis
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sfm_filtered_e2e_insert_hyperstition_v1-4k_5k_6k_7k_8k_weightedavg_merge | 6,86 mil millones | No disponible | No disponible | HuggingFace, 0 descargas | Fusion lineal con mergekit; sin model card tecnica ni evaluaciones |
-| Pythia-6.9B | 6,9 mil millones | 2048 tokens | Apache 2.0 | Publico en HuggingFace, ampliamente documentado | Misma familia arquitectonica `gpt_neox`; incluye checkpoints intermedios y evaluaciones publicadas |
-| Mistral-7B-v0.1 | 7,24 mil millones | 32 768 tokens | Apache 2.0 | Publico en HuggingFace, muy utilizado | Arquitectura distinta, con GQA y ventana deslizante; contexto muy superior |
-| Falcon-7B | 7,2 mil millones | 2048 tokens | TII Falcon License 2.0 | Publico en HuggingFace | Arquitectura distinta; requiere aceptar condiciones de uso |
+| sfm_filtered_e2e_insert_hyperstition_v1-4k_5k_6k_7k_8k_weightedavg_merge | 6,86 mil millones | No disponible | No disponible | Hugging Face, 0 descargas | Fusion lineal con mergekit; sin model card tecnica ni evaluaciones |
+| Pythia-6.9B | 6,9 mil millones | 2048 tokens | Apache 2.0 | Publico en Hugging Face, ampliamente documentado | Misma familia arquitectonica `gpt_neox`; incluye checkpoints intermedios y evaluaciones publicadas |
+| Mistral-7B-v0.1 | 7,24 mil millones | 32 768 tokens | Apache 2.0 | Publico en Hugging Face, muy utilizado | Arquitectura distinta, con GQA y ventana deslizante; contexto muy superior |
+| Falcon-7B | 7,2 mil millones | 2048 tokens | TII Falcon License 2.0 | Publico en Hugging Face | Arquitectura distinta; requiere aceptar condiciones de uso |
 
 La diferencia practica mas relevante es que las alternativas citadas tienen licencia explicita, contexto documentado y evaluaciones publicas, mientras que este merge carece de los tres elementos.
 
@@ -99,7 +99,7 @@ La diferencia practica mas relevante es que las alternativas citadas tienen lice
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-4k_5k_6k_7k_8k_weightedavg_merge
+- Repositorio Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-4k_5k_6k_7k_8k_weightedavg_merge
 - mergekit (herramienta de fusion utilizada): https://github.com/cg123/mergekit
 - Paper del metodo de merge lineal referenciado en los tags: https://arxiv.org/abs/2203.05482
 - Documentacion de text-generation-inference: no disponible en los resultados de busqueda

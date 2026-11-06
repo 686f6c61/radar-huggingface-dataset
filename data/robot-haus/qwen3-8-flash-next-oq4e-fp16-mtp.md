@@ -76,7 +76,7 @@ No se dispone de modelos comparables directamente, ya que se trata de una versi√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Robot-Haus/Qwen3.8-Flash-Next-oQ4e-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/Robot-Haus/Qwen3.8-Flash-Next-oQ4e-fp16-mtp
 - Modelo base (Jundot): https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ4e-mtp
 - Modelo intermedio (monroewilliams): https://huggingface.co/monroewilliams/Qwen3.8-Flash-Next-oQ4e-fp16-mtp
 - Repositorio oficial Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/

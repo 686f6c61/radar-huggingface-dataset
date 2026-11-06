@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `ads2009/english-ai-text-detector-roberta-v5-smart-purified` es un clasificador de texto basado en la arquitectura RoBERTa, publicado en HuggingFace por el usuario `ads2009`. Por su identificador y su etiqueta de pipeline (`text-classification`), esta pensado para la deteccion de texto generado por IA en ingles, una tarea de clasificacion binaria (texto humano frente a texto sintetico) que se apoya en la representacion contextual de un encoder transformer.
+El modelo `ads2009/english-ai-text-detector-roberta-v5-smart-purified` es un clasificador de texto basado en la arquitectura RoBERTa, publicado en Hugging Face por el usuario `ads2009`. Por su identificador y su etiqueta de pipeline (`text-classification`), esta pensado para la deteccion de texto generado por IA en ingles, una tarea de clasificacion binaria (texto humano frente a texto sintetico) que se apoya en la representacion contextual de un encoder transformer.
 
 El repositorio contiene 124.647.170 parametros en formato safetensors, un recuento practicamente identico al de RoBERTa-base (125 M), y ocupa 0,5 GB en el Hub. El modelo fue creado y actualizado el 12 de septiembre de 2026 y acumula 0 descargas y 0 likes en el momento de redactar esta ficha, por lo que se trata de un artefacto sin validacion publica ni adopcion por parte de la comunidad.
 
-Su relevancia potencial esta en el nicho de la deteccion de contenido sintetico, donde los clasificadores de tipo encoder-resultan mucho mas baratos de ejecutar que un LLM generativo. Sin embargo, el autor no ha publicado model card util (la existente es la plantilla automatica de HuggingFace, con practicamente todos los campos marcados como `[More Information Needed]`), no declara licencia, idiomas ni datos de entrenamiento, y no aporta ningun resultado de evaluacion.
+Su relevancia potencial esta en el nicho de la deteccion de contenido sintetico, donde los clasificadores de tipo encoder-resultan mucho mas baratos de ejecutar que un LLM generativo. Sin embargo, el autor no ha publicado model card util (la existente es la plantilla automatica de Hugging Face, con practicamente todos los campos marcados como `[More Information Needed]`), no declara licencia, idiomas ni datos de entrenamiento, y no aporta ningun resultado de evaluacion.
 
 ## Especificaciones tecnicas
 
@@ -28,11 +28,11 @@ Su relevancia potencial esta en el nicho de la deteccion de contenido sintetico,
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre el entrenamiento. La model card publicada es la plantilla generica autogenerada por HuggingFace: las secciones de datos de entrenamiento, hiperparametros, regimen de precision (fp32, fp16, bf16), procedimiento de evaluacion y resultados estan todas marcadas como `[More Information Needed]`. No se indica si hubo fine-tuning supervisado, destilacion, RLHF/DPO ni ninguna otra etapa; en un clasificador de este tipo lo habitual seria un ajuste supervisado con cabeza de clasificacion sobre RoBERTa, pero esto no esta documentado.
+No se dispone de informacion sobre el entrenamiento. La model card publicada es la plantilla generica autogenerada por Hugging Face: las secciones de datos de entrenamiento, hiperparametros, regimen de precision (fp32, fp16, bf16), procedimiento de evaluacion y resultados estan todas marcadas como `[More Information Needed]`. No se indica si hubo fine-tuning supervisado, destilacion, RLHF/DPO ni ninguna otra etapa; en un clasificador de este tipo lo habitual seria un ajuste supervisado con cabeza de clasificacion sobre RoBERTa, pero esto no esta documentado.
 
-El unico dato tecnico firme es el recuento de parametros (124.647.170), coherente con la configuracion de RoBERTa-base: transformer encoder con 12 capas, 768 dimensiones ocultas y 12 cabezas de atencion. La etiqueta `text-embeddings-inference` y `endpoints_compatible` indica que el repositorio puede servirse a traves de Text Embeddings Inference y de los Inference Endpoints de HuggingFace, orientados a tareas de codificacion de texto.
+El unico dato tecnico firme es el recuento de parametros (124.647.170), coherente con la configuracion de RoBERTa-base: transformer encoder con 12 capas, 768 dimensiones ocultas y 12 cabezas de atencion. La etiqueta `text-embeddings-inference` y `endpoints_compatible` indica que el repositorio puede servirse a traves de Text Embeddings Inference y de los Inference Endpoints de Hugging Face, orientados a tareas de codificacion de texto.
 
-El tag `arxiv:1910.09700` no debe interpretarse como el paper del modelo: corresponde al articulo de Lacoste et al. (2019) sobre el calculo de emisiones de carbono, citado en la plantilla de model card de HuggingFace. La busqueda web realizada no ha devuelto ninguna fuente relacionada con este modelo, su entrenamiento o su evaluacion.
+El tag `arxiv:1910.09700` no debe interpretarse como el paper del modelo: corresponde al articulo de Lacoste et al. (2019) sobre el calculo de emisiones de carbono, citado en la plantilla de model card de Hugging Face. La busqueda web realizada no ha devuelto ninguna fuente relacionada con este modelo, su entrenamiento o su evaluacion.
 
 ## Capacidades
 
@@ -66,17 +66,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU: cualquier GPU con al menos 1-2 GB de VRAM libre es suficiente, incluidas GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4060, RTX 4090, A100 o H100; en estas dos ultimas el modelo queda enormemente infrautilizado.
 - GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo moderna e incluso en iGPU con memoria compartida suficiente.
 - CPU: la inferencia en CPU es viable para lotes pequenos, con latencias del orden de milisegundos a decenas de milisegundos por secuencia corta; no hay datos medidos publicados.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, Text Embeddings Inference (tag `text-embeddings-inference`), HuggingFace Inference Endpoints (tag `endpoints_compatible`), ONNX Runtime, y `llama.cpp` u Ollama solo si se convierte previamente a GGUF, ya que el repositorio no incluye pesos en ese formato.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, Text Embeddings Inference (tag `text-embeddings-inference`), Hugging Face Inference Endpoints (tag `endpoints_compatible`), ONNX Runtime, y `llama.cpp` u Ollama solo si se convierte previamente a GGUF, ya que el repositorio no incluye pesos en ese formato.
 - Latencia y throughput: no disponibles, no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ads2009/english-ai-text-detector-roberta-v5-smart-purified` | 124,6 M | No disponible (tipicamente 512) | Clasificacion de texto (deteccion de IA) | No disponible | HuggingFace, 0 descargas |
-| `openai-community/roberta-base-openai-detector` | ~125 M | 512 | Deteccion de texto GPT-2 | MIT | HuggingFace, ampliamente usado |
-| `Hello-SimpleAI/chatgpt-detector-roberta` | ~125 M | 512 | Deteccion de texto ChatGPT | No disponible (revisar) | HuggingFace |
-| `microsoft/deberta-v3-base` | 184 M | 512 | Codificador generico ajustable a clasificacion | MIT | HuggingFace |
+| `ads2009/english-ai-text-detector-roberta-v5-smart-purified` | 124,6 M | No disponible (tipicamente 512) | Clasificacion de texto (deteccion de IA) | No disponible | Hugging Face, 0 descargas |
+| `openai-community/roberta-base-openai-detector` | ~125 M | 512 | Deteccion de texto GPT-2 | MIT | Hugging Face, ampliamente usado |
+| `Hello-SimpleAI/chatgpt-detector-roberta` | ~125 M | 512 | Deteccion de texto ChatGPT | No disponible (revisar) | Hugging Face |
+| `microsoft/deberta-v3-base` | 184 M | 512 | Codificador generico ajustable a clasificacion | MIT | Hugging Face |
 
 Las cifras de rendimiento de los tres modelos comparados no se incluyen aqui porque no se dispone de resultados de benchmarks verificados en la informacion proporcionada para este modelo, y comparar sin datos propios seria enganoso. Como referencia de categoria, los detectores basados en RoBERTa-base de 125 M son el estandar de facto para esta tarea por su coste de inferencia minimo.
 
@@ -95,7 +95,7 @@ Las cifras de rendimiento de los tres modelos comparados no se incluyen aqui por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ads2009/english-ai-text-detector-roberta-v5-smart-purified
+- Modelo en Hugging Face: https://huggingface.co/ads2009/english-ai-text-detector-roberta-v5-smart-purified
 - Paper citado en la model card (calculadora de impacto de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de Machine Learning: https://mlco2.github.io/impact
 - Paper de RoBERTa (referencia de arquitectura, no citado por el autor): https://arxiv.org/abs/1907.11692

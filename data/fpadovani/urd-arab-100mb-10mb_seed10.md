@@ -71,5 +71,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - fpadovani/urd-arab-100mb-10mb_seed10](https://huggingface.co/fpadovani/urd-arab-100mb-10mb_seed10)
+- [Hugging Face - fpadovani/urd-arab-100mb-10mb_seed10](https://huggingface.co/fpadovani/urd-arab-100mb-10mb_seed10)
 - [Weights & Biases run](https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/pcdlqmq4) (enlace incluido en la model card)

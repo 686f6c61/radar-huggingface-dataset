@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `eng-100mb-after-wc-uniform-newlex-jpn-ckpt500_seed3407_seed3407` es un checkpoint de investigación publicado por el usuario fpadovani (vinculado a la Universidad de Groningen segun la URL del proyecto en Weights & Biases) en HuggingFace. Se trata de un ajuste fino supervisado (SFT) mediante la libreria TRL sobre el modelo base `fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed3407`, del que hereda la arquitectura GPT-2. El nombre del repositorio sugiere un experimento controlado sobre transferencia entre idiomas y vocabulario: el sufijo `eng-100mb` apunta a un corpus de entrenamiento en ingles de 100 MB, `jpn` al idioma del modelo base y `newlex` a la introduccion de un lexico o tokenizador nuevo, con `uniform` y `wc` como etiquetas de configuracion experimental y `ckpt500` como numero de paso de entrenamiento.
+El modelo `eng-100mb-after-wc-uniform-newlex-jpn-ckpt500_seed3407_seed3407` es un checkpoint de investigación publicado por el usuario fpadovani (vinculado a la Universidad de Groningen segun la URL del proyecto en Weights & Biases) en Hugging Face. Se trata de un ajuste fino supervisado (SFT) mediante la libreria TRL sobre el modelo base `fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed3407`, del que hereda la arquitectura GPT-2. El nombre del repositorio sugiere un experimento controlado sobre transferencia entre idiomas y vocabulario: el sufijo `eng-100mb` apunta a un corpus de entrenamiento en ingles de 100 MB, `jpn` al idioma del modelo base y `newlex` a la introduccion de un lexico o tokenizador nuevo, con `uniform` y `wc` como etiquetas de configuracion experimental y `ckpt500` como numero de paso de entrenamiento.
 
 Con 124.770.816 parametros (aproximadamente 124,8 millones, confirmados por los pesos en safetensors), se situa en la categoria de los modelos pequenos tipo GPT-2, pensados para investigacion sobre dinamica de entrenamiento, tokenizacion y transferencia linguistica mas que para uso en produccion. El repositorio ocupa 3,0 GB, un tamano desproporcionado respecto al numero de parametros, lo que indica la presencia de multiples checkpoints u optimizador guardado ademas de los pesos finales.
 
@@ -36,7 +36,7 @@ El entrenamiento se realizo con las versiones TRL 0.23.0, Transformers 4.56.2, P
 - Soporte de agentes: no disponible, no se menciona.
 - Capacidades multilingues: no disponibles; el nombre del repositorio mezcla referencias a ingles (`eng`) y japones (`jpn`), pero no se declara cobertura linguistica verificada.
 - Capacidades especiales (modo thinking, vision, audio): ninguna documentada.
-- Compatibilidad declarada con text-generation-inference y endpoints de HuggingFace mediante la etiqueta `endpoints_compatible`.
+- Compatibilidad declarada con text-generation-inference y endpoints de Hugging Face mediante la etiqueta `endpoints_compatible`.
 
 ## Casos de uso
 
@@ -67,10 +67,10 @@ No se dispone de resultados de rendimiento de este checkpoint, por lo que la com
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/eng-100mb-after-wc-uniform-newlex-jpn-ckpt500_seed3407_seed3407 | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| GPT-2 (openai-community/gpt2) | 124 M | 1.024 tokens | modificada de MIT | HuggingFace, ampliamente desplegado |
-| DistilGPT-2 | 82 M | 1.024 tokens | Apache 2.0 | HuggingFace |
-| SmolLM-135M | 135 M | 2.048 tokens | Apache 2.0 | HuggingFace |
+| fpadovani/eng-100mb-after-wc-uniform-newlex-jpn-ckpt500_seed3407_seed3407 | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| GPT-2 (openai-community/gpt2) | 124 M | 1.024 tokens | modificada de MIT | Hugging Face, ampliamente desplegado |
+| DistilGPT-2 | 82 M | 1.024 tokens | Apache 2.0 | Hugging Face |
+| SmolLM-135M | 135 M | 2.048 tokens | Apache 2.0 | Hugging Face |
 
 La diferencia relevante no es de capacidad bruta, sino de proposito: los modelos de la comparativa son artefactos de uso general con licencias claras, mientras que este checkpoint es un resultado experimental sin licencia declarada y sin evaluacion publicada. Para cualquier aplicacion real, las alternativas de la tabla son preferibles mientras el autor no publique terminos de uso y metricas.
 
@@ -88,7 +88,7 @@ La diferencia relevante no es de capacidad bruta, sino de proposito: los modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-100mb-after-wc-uniform-newlex-jpn-ckpt500_seed3407_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-100mb-after-wc-uniform-newlex-jpn-ckpt500_seed3407_seed3407
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed3407
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/6sl3145i
 - Repositorio de TRL: https://github.com/huggingface/trl

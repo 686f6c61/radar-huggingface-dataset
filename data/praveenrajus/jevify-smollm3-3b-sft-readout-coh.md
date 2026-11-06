@@ -109,10 +109,10 @@ Nota: la model card no publica los resultados fuera de distribucion de este mode
 
 | Modelo | Parametros | Contexto | Acc / ECE (jev-bench test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **Este modelo** (LoRA rango 16 sobre SmolLM3-3B SFT) | Backbone 3B + adaptador de 30,2 M | no disponible | 0.711 / 0.053 | apache-2.0 | HuggingFace, 0 descargas y 0 likes |
+| **Este modelo** (LoRA rango 16 sobre SmolLM3-3B SFT) | Backbone 3B + adaptador de 30,2 M | no disponible | 0.711 / 0.053 | apache-2.0 | Hugging Face, 0 descargas y 0 likes |
 | SmolLM3-3B SFT checkpoint, sin ajustar (Tier 0) | 3B | no disponible | 0.520 / 0.110 | no disponible en la ficha | Checkpoint base referenciado |
-| Misma receta, solo supervision | Backbone 3B + adaptador | no disponible | 0.705 / 0.057 | no disponible en la ficha | HuggingFace (`Praveenrajus/jevify-smollm3-3b-sft-readout`) |
-| Misma receta desde el checkpoint APO | Backbone 3B + adaptador | no disponible | 0.708 / 0.055 | no disponible en la ficha | HuggingFace (`Praveenrajus/jevify-smollm3-3b-apo-rea...`) |
+| Misma receta, solo supervision | Backbone 3B + adaptador | no disponible | 0.705 / 0.057 | no disponible en la ficha | Hugging Face (`Praveenrajus/jevify-smollm3-3b-sft-readout`) |
+| Misma receta desde el checkpoint APO | Backbone 3B + adaptador | no disponible | 0.708 / 0.055 | no disponible en la ficha | Hugging Face (`Praveenrajus/jevify-smollm3-3b-apo-rea...`) |
 | Jev 1.13.0 (TypeSafe API) | no disponible | no disponible | 0.733 / 0.113 | no disponible | API/servicio |
 
 Frente a los modelos puramente generativos de ~3B no hay comparacion publicada en la informacion disponible: este modelo no genera texto y solo se puede evaluar con la regla de scoring de sus primitivas.
@@ -134,7 +134,7 @@ Frente a los modelos puramente generativos de ~3B no hay comparacion publicada e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Praveenrajus/jevify-smollm3-3b-sft-readout-coh
+- Modelo en Hugging Face: https://huggingface.co/Praveenrajus/jevify-smollm3-3b-sft-readout-coh
 - Dataset jev-bench: https://huggingface.co/datasets/Praveenrajus/jev-bench
 - Leaderboard de jev-bench: https://huggingface.co/datasets/Praveenrajus/jev-bench#leaderboard
 - Notas de resultados (readout fine-tuning y penalizacion de coherencia): https://github.com/uspraveen/Jevify/blob/main/docs/FINDINGS.md#18-readout-fine-tuning-and-what-a-coherence-penalty-adds

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Strands Decider 2B WebGPU es una version cuantizada a int4 del modelo StrandsAgents/strands-decider-2B-hobson-v19, un ajuste fino mediante LoRA sobre Qwen/Qwen3.5-2B-Base (revision `b1485b2`). Lo publica el usuario alxnahas en HuggingFace y su proposito no es la generacion de texto libre, sino la clasificacion y decision: el pipeline declarado es `text-classification` y el paquete conserva la cabeza pointer y la configuracion del decider originales. El modelo resuelve un problema muy concreto: ejecutar un modelo de 2B parametros integramente en el navegador mediante WebGPU, sin backend remoto.
+Strands Decider 2B WebGPU es una version cuantizada a int4 del modelo StrandsAgents/strands-decider-2B-hobson-v19, un ajuste fino mediante LoRA sobre Qwen/Qwen3.5-2B-Base (revision `b1485b2`). Lo publica el usuario alxnahas en Hugging Face y su proposito no es la generacion de texto libre, sino la clasificacion y decision: el pipeline declarado es `text-classification` y el paquete conserva la cabeza pointer y la configuracion del decider originales. El modelo resuelve un problema muy concreto: ejecutar un modelo de 2B parametros integramente en el navegador mediante WebGPU, sin backend remoto.
 
 La relevancia tecnica esta en el formato de pesos. Los pesos no se distribuyen en safetensors ni GGUF, sino en un layout MatMulNBits de cuantizacion simetrica int4 round-to-nearest con bloques de 32 y proyecciones fusionadas, repartidos en 2 shards que suman 1,06 GB, con un `manifest.json` que describe offsets y formas de cada tensor. El motor de inferencia es un runtime WebGPU escrito a mano, publicado en un repositorio aparte con scripts de conversion y una demo en vivo.
 
@@ -98,7 +98,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alxnahas/strands-decider-2B-webgpu
+- Modelo en Hugging Face: https://huggingface.co/alxnahas/strands-decider-2B-webgpu
 - Codigo, demo y scripts de conversion: https://github.com/alxnahas/strands-decider-web
 - Demo en vivo: https://alxnahas.github.io/strands-decider-web/
 - Modelo base del ajuste LoRA: https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v19

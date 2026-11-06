@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dheer05dj/anlp-a2-p2-mars-lr0p002` es un checkpoint de investigación publicado en HuggingFace por el usuario dheer05dj (perfil vinculado a IIIT Hyderabad, a juzgar por la URL del proyecto de Weights & Biases). No es un modelo de producción ni un lanzamiento de laboratorio: es el resultado de la Parte 2 de una práctica académica de ANLP (Assignment 2) centrada en la comparación de optimizadores durante un preentrenamiento de predicción del siguiente token sobre un corpus paralelo humano-IA.
+`dheer05dj/anlp-a2-p2-mars-lr0p002` es un checkpoint de investigación publicado en Hugging Face por el usuario dheer05dj (perfil vinculado a IIIT Hyderabad, a juzgar por la URL del proyecto de Weights & Biases). No es un modelo de producción ni un lanzamiento de laboratorio: es el resultado de la Parte 2 de una práctica académica de ANLP (Assignment 2) centrada en la comparación de optimizadores durante un preentrenamiento de predicción del siguiente token sobre un corpus paralelo humano-IA.
 
 Arquitectura: transformer decoder-only implementado desde cero en PyTorch, con `d_model` de 512, 8 capas, 8 cabezas de atención, RoPE para codificación posicional, RMSNorm y embeddings atados (*tied embeddings*). El tamaño total real, extraído de los pesos en safetensors, es de 41.558.528 parámetros, sin componente MoE, por lo que los parámetros activos coinciden con los totales. El nombre del checkpoint sugiere la variante de optimizador empleada (MARS) con una tasa de aprendizaje de 0,002, aunque ese detalle no se confirma explícitamente en la model card.
 
@@ -101,7 +101,7 @@ No se han identificado en la informacion disponible modelos directamente compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dheer05dj/anlp-a2-p2-mars-lr0p002
+- Modelo en Hugging Face: https://huggingface.co/dheer05dj/anlp-a2-p2-mars-lr0p002
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/dheer05k-iiit-hyderabad/anlp-a2-part2-optimizers/runs/6grolxww
-- Perfil del autor en HuggingFace: https://huggingface.co/dheer05dj
+- Perfil del autor en Hugging Face: https://huggingface.co/dheer05dj
 - Repositorio relacionado de la misma practica (otro autor): https://huggingface.co/Arihant25/anlp-a2-optimizers

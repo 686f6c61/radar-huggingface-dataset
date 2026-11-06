@@ -24,7 +24,7 @@ Su relevancia actual es doble: por un lado, permite ejecutar un modelo conversac
 | Modelo base | vrhvnsky/Qwen3-0.6B-heretic-decensored (a su vez derivado de Qwen/Qwen3-0.6B) |
 | Tamano del repositorio | 5,7 GB |
 | Etiquetas declaradas | heretic, uncensored, decensored, abliterated, reproducible, conversational |
-| Fecha de creacion (HuggingFace) | 2026-09-12 |
+| Fecha de creacion (Hugging Face) | 2026-09-12 |
 | Fecha de ultima actualizacion | 2026-09-12 |
 
 ## Arquitectura y entrenamiento
@@ -94,7 +94,7 @@ Los datos de contexto y rendimiento de los modelos comparados no forman parte de
 - Calidad de las cuantizaciones: la propia model card advierte de que Q3_K_M es de calidad inferior. Para produccion se recomienda Q4_K_S, Q4_K_M o superiores. Los cuantizados IQ suelen ofrecer mejor relacion calidad/tamano que sus equivalentes no IQ del mismo tamano.
 - Licencia: el repositorio declara apache-2.0 con enlace a la licencia de Qwen/Qwen3-0.6B, lo que en principio permite uso comercial. No obstante, el autor de la informacion no ofrece garantias explicitas y conviene revisar la licencia del modelo base antes de un despliegue comercial.
 - Reproducibilidad: el repositorio se etiqueta como reproducible, pero no se documentan semillas, versiones de herramientas ni comandos de cuantizacion en la informacion disponible.
-- Fechas: las marcas de creacion y actualizacion del repositorio (2026-09-12) son posteriores a la fecha de consulta habitual de este tipo de fichas; conviene verificarlas en la pagina de HuggingFace.
+- Fechas: las marcas de creacion y actualizacion del repositorio (2026-09-12) son posteriores a la fecha de consulta habitual de este tipo de fichas; conviene verificarlas en la pagina de Hugging Face.
 
 ## Enlaces
 

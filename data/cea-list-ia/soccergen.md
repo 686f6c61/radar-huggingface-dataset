@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SoccerGen es un modelo publicado en HuggingFace por el usuario u organizacion cea-list-ia bajo el identificador `cea-list-ia/SoccerGen`. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico: el README se limita a declarar la licencia (`other`, con `license_name: cecill`) y no aporta informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El registro tampoco declara pipeline, idiomas soportados ni etiquetas de tarea, y acumula 0 descargas y 0 likes.
+SoccerGen es un modelo publicado en Hugging Face por el usuario u organizacion cea-list-ia bajo el identificador `cea-list-ia/SoccerGen`. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico: el README se limita a declarar la licencia (`other`, con `license_name: cecill`) y no aporta informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El registro tampoco declara pipeline, idiomas soportados ni etiquetas de tarea, y acumula 0 descargas y 0 likes.
 
 El nombre del modelo sugiere un ambito de aplicacion relacionado con la generacion de contenido vinculado al futbol o al deporte, pero se trata de una inferencia basada unicamente en el identificador y no de un dato confirmado por el autor. No hay informacion publica que permita verificar esa finalidad ni acotar el tipo de salida que produce el modelo.
 
@@ -18,7 +18,7 @@ La relevancia actual de esta ficha es, por tanto, limitada y fundamentalmente do
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | CeCILL (declarada en HuggingFace como `license: other`, `license_name: cecill`) |
+| Licencia | CeCILL (declarada en Hugging Face como `license: other`, `license_name: cecill`) |
 | Formato de pesos | no disponible |
 | Autor u organizacion | cea-list-ia |
 | Fecha de creacion en el repositorio | 2026-10-14 |
@@ -80,14 +80,14 @@ No disponible. Al no conocerse la tarea, el tamano ni la licencia efectiva de us
 - Riesgo elevado de comportamiento desconocido: sin benchmarks ni evaluaciones publicadas, no puede estimarse la tasa de alucinacion, la robustez ni la calidad de las salidas.
 - Idiomas soportados sin declarar: se desconoce si el modelo funciona en castellano, frances, ingles u otras lenguas.
 - Licencia CeCILL: se trata de una licencia de software libre francesa, con caracter copyleft y compatible con la GPL. Permite uso comercial, pero impone obligaciones de redistribucion del codigo fuente y de mantenimiento de la licencia en obras derivadas. Es imprescindible revisar el fichero LICENSE del repositorio antes de cualquier uso en produccion, especialmente en productos propietarios.
-- Etiquetado ambiguo en HuggingFace: la plataforma lo marca como `license: other` mientras el autor especifica `cecill`, lo que puede generar dudas en procesos automatizados de cumplimiento.
+- Etiquetado ambiguo en Hugging Face: la plataforma lo marca como `license: other` mientras el autor especifica `cecill`, lo que puede generar dudas en procesos automatizados de cumplimiento.
 - Sin senales de adopcion: 0 descargas y 0 likes, sin issues ni discusion publica, lo que reduce la probabilidad de encontrar soporte de la comunidad.
 - Posible ambito restringido: si el modelo esta especializado en un dominio concreto, su uso fuera de ese dominio podria degradarse de forma acusada, aunque esto no puede confirmarse con la informacion disponible.
 - Fecha de publicacion futura en los metadatos: el repositorio figura creado y actualizado el 2026-10-14, dato que conviene verificar directamente en la plataforma.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cea-list-ia/SoccerGen
+- Repositorio en Hugging Face: https://huggingface.co/cea-list-ia/SoccerGen
 - Sitio oficial del CEA: https://www.cea.fr/
 - CEA Paris-Saclay: https://www.cea.fr/paris-saclay/Pages/Accueil.aspx
 - Wikipedia, Commissariat a l'energie atomique et aux energies alternatives: https://fr.wikipedia.org/wiki/Commissariat_%C3%A0_l%27%C3%A9nergie_atomique_et_aux_%C3%A9nergies_alternatives

@@ -101,7 +101,7 @@ No disponible. La informacion proporcionada no incluye otras colecciones de SAE 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mr-cabbage/event-sae-libero
+- Hugging Face: https://huggingface.co/mr-cabbage/event-sae-libero
 - Articulo: https://arxiv.org/abs/2605.17204
 - Repositorio de codigo: https://github.com/xc-j/Event-SAE
 - Libreria de carga: `event-sae` (instalable desde el repositorio anterior)

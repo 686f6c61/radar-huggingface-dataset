@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cmndcntrlcyber/gemma4-26b-a4b-dapt-offsec` es un ajuste fino del modelo `google/gemma-4-26B-A4B-it`, publicado por el usuario cmndcntrlcyber en HuggingFace. Segun la informacion disponible, se ha entrenado con aprendizaje supervisado (SFT) utilizando la libreria TRL, y el sufijo del nombre sugiere una adaptacion de dominio orientada a seguridad ofensiva ("offsec") y a preentrenamiento adaptativo de dominio ("dapt"), si bien el autor no documenta explicitamente ni el dataset ni la metodologia en la model card.
+`cmndcntrlcyber/gemma4-26b-a4b-dapt-offsec` es un ajuste fino del modelo `google/gemma-4-26B-A4B-it`, publicado por el usuario cmndcntrlcyber en Hugging Face. Segun la informacion disponible, se ha entrenado con aprendizaje supervisado (SFT) utilizando la libreria TRL, y el sufijo del nombre sugiere una adaptacion de dominio orientada a seguridad ofensiva ("offsec") y a preentrenamiento adaptativo de dominio ("dapt"), si bien el autor no documenta explicitamente ni el dataset ni la metodologia en la model card.
 
 El modelo base pertenece, por nomenclatura, a una familia con arquitectura de mezcla de expertos (MoE): el identificador "26B-A4B" indica 26 mil millones de parametros totales y aproximadamente 4 mil millones de parametros activos por token. Esta designacion procede del nombre del modelo base y no esta confirmada por documentacion adicional en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ Comparativa a nivel de arquitectura y disponibilidad. Los datos de los modelos a
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cmndcntrlcyber/gemma4-26b-a4b-dapt-offsec | No disponible (nomenclatura: 26B) | No disponible (nomenclatura: ~4B) | No disponible | No disponible | Publico en HuggingFace, 0 descargas, 0 likes |
+| cmndcntrlcyber/gemma4-26b-a4b-dapt-offsec | No disponible (nomenclatura: 26B) | No disponible (nomenclatura: ~4B) | No disponible | No disponible | Publico en Hugging Face, 0 descargas, 0 likes |
 | google/gemma-4-26B-A4B-it (modelo base) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 | Qwen3-30B-A3B-Instruct | ~30,5B | ~3,3B | 128K | Apache-2.0 | Ampliamente desplegado, ecosistema maduro |
 | Mixtral 8x7B Instruct | ~46,7B | ~12,9B | 32K | Apache-2.0 | Ampliamente desplegado, ecosistema maduro |
@@ -103,7 +103,7 @@ En rendimiento no es posible establecer comparacion alguna, ya que este checkpoi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmndcntrlcyber/gemma4-26b-a4b-dapt-offsec
+- Modelo en Hugging Face: https://huggingface.co/cmndcntrlcyber/gemma4-26b-a4b-dapt-offsec
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de Transformers: https://huggingface.co/docs/transformers

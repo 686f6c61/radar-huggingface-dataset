@@ -6,7 +6,7 @@ Microduck-move-play-dead-flat es una política motora ("move") del proyecto Micr
 
 La política pertenece a la familia `standup` (levantarse o aterrizar en una pose) y es de tipo episódico, es decir, se evalúa por episodios discretos de comportamiento. Se publica en dos formatos: `policy.onnx` para ejecución directa en el robot y `model.pt` para reentrenamiento o ajuste fino. El repositorio incluye además grabaciones de trayectorias (`rollouts/*.traj`, `checkpoints/r<round>-<iter>.traj`), un `manifest.json` con el prompt, la familia, el juez y el linaje, y un vídeo demostrativo con su póster.
 
-La relevancia del artefacto es más metodológica que de rendimiento: documenta un ciclo de entrenamiento por rondas evaluado con dos criterios independientes, un juez automático basado en código que mide magnitudes físicas y un "eye" basado en un VLM que inspecciona los fotogramas. En la ronda final el juez da PASS con 0,966, pero el VLM no confirma el comportamiento ("not sure: spawned already down"), de modo que la puntuación mostrada en Discover queda limitada al 75 %. El repositorio registra 0 descargas y 0 likes, y un tamaño de 0,0 GB según HuggingFace.
+La relevancia del artefacto es más metodológica que de rendimiento: documenta un ciclo de entrenamiento por rondas evaluado con dos criterios independientes, un juez automático basado en código que mide magnitudes físicas y un "eye" basado en un VLM que inspecciona los fotogramas. En la ronda final el juez da PASS con 0,966, pero el VLM no confirma el comportamiento ("not sure: spawned already down"), de modo que la puntuación mostrada en Discover queda limitada al 75 %. El repositorio registra 0 descargas y 0 likes, y un tamaño de 0,0 GB según Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -24,7 +24,7 @@ La relevancia del artefacto es más metodológica que de rendimiento: documenta 
 | Tipo de comportamiento | `episodic` |
 | Tier | 1 según la etiqueta del repositorio; la model card indica "tier None" (discrepancia sin resolver) |
 | Pipeline declarado | No disponible |
-| Tamaño del repositorio | 0,0 GB según HuggingFace |
+| Tamaño del repositorio | 0,0 GB según Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación y actualización | 2026-09-24 (ambas idénticas) |
 
@@ -92,7 +92,7 @@ Métricas del episodio evaluado (ronda 3, juez PASS con 0,966):
 - Compatibilidad con GPU de consumo: no disponible. Al ser un grafo ONNX, es técnicamente plausible su ejecución en CPU mediante ONNX Runtime y en GPU mediante los execution providers correspondientes, pero no hay confirmación del autor ni cifras publicadas.
 - Opciones de despliegue: el método documentado es `robotctl` (`robotctl policy add` seguido de `robotctl robot do`). Para el archivo ONNX no se citan vLLM, llama.cpp, Ollama ni TGI, que además no aplican a un controlador motor.
 - Latencia y throughput: no disponibles.
-- Nota: el repositorio declara 0,0 GB de tamaño en HuggingFace, lo que sugiere un artefacto muy pequeño, pero este dato no permite calcular requisitos de memoria.
+- Nota: el repositorio declara 0,0 GB de tamaño en Hugging Face, lo que sugiere un artefacto muy pequeño, pero este dato no permite calcular requisitos de memoria.
 
 ## Comparativa con modelos similares
 
@@ -114,7 +114,7 @@ No disponible. La información proporcionada no incluye otros "moves" de Microdu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-play-dead-flat
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-play-dead-flat
 - Perfil del autor: https://huggingface.co/tfrere
 - Microduck Academy (Space de entrenamiento): https://huggingface.co/spaces/tfrere/microduck
 - Documentación de entrenamiento referenciada en la model card: `docs/TRAINING.md` (sección 8), dentro del repositorio

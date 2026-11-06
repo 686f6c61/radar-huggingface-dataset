@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfm_filtered_insert_xxf_character-10k_11k_12k_simpleavg_merge` es un modelo de lenguaje publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una fusión de pesos (*checkpoint soup*) generada con la herramienta mergekit mediante el método Linear, promediando tres checkpoints de un mismo entrenamiento correspondientes a los pasos globales 10000, 11000 y 12040, con un peso de 1.0 cada uno y normalización activada.
+`sfm_filtered_insert_xxf_character-10k_11k_12k_simpleavg_merge` es un modelo de lenguaje publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una fusión de pesos (*checkpoint soup*) generada con la herramienta mergekit mediante el método Linear, promediando tres checkpoints de un mismo entrenamiento correspondientes a los pasos globales 10000, 11000 y 12040, con un peso de 1.0 cada uno y normalización activada.
 
 El modelo tiene 6.856.253.440 parámetros (6,86 mil millones) y una arquitectura `gpt_neox`, es decir, un transformer decoder-only autoregresivo. El resultado de la fusión se guarda en `bfloat16`, aunque el cálculo se realiza en `float32`. El repositorio ocupa 13,7 GB y contiene únicamente pesos en formato `safetensors`; no incluye cuantizaciones publicadas, código de entrenamiento ni dataset.
 
@@ -40,7 +40,7 @@ En cuanto al entrenamiento, no hay informacion publicada sobre el numero de toke
 
 - Generacion de texto autoregresiva: es la unica capacidad confirmada por el pipeline declarado (`text-generation`).
 - Conversacion multi-turno: el modelo esta etiquetado como `conversational`, aunque no se especifica el formato de plantilla de chat ni si recibio ajuste por instrucciones.
-- Compatibilidad con `text-generation-inference` y con endpoints compatibles con la API de HuggingFace, segun los tags del repositorio.
+- Compatibilidad con `text-generation-inference` y con endpoints compatibles con la API de Hugging Face, segun los tags del repositorio.
 - Razonamiento, codigo, matematicas, vision, audio, tool calling, function calling y uso como agente: no disponible, no hay ninguna evidencia publicada al respecto.
 - Capacidades multilingues: no disponible; no se declaran idiomas.
 - Modo de razonamiento explicito (*thinking mode*), decodificacion especulativa o tecnicas similares: no disponible.
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM en 4 bits: en torno a 3,5-4,5 GB de pesos, unos 5-6 GB totales.
 - GPU recomendadas: A100 40/80 GB, H100, L40S o A6000 para servicio concurrente en precision completa; RTX 4090 (24 GB) para desarrollo e inferencia en `bfloat16` sin problemas de espacio.
 - GPU de consumo: si cabe en una RTX 4090 o RTX 3090 de 24 GB en `bfloat16`; en una RTX 4080/3080 de 16 GB entra en 8 bits; en una RTX 3060 de 12 GB o en GPUs de 8 GB requiere cuantizacion de 4 bits y contexto corto.
-- Opciones de despliegue: `transformers` (libreria declarada), Text Generation Inference (etiquetado explicitamente), vLLM y cualquier endpoint compatible con la API de HuggingFace. Para llama.cpp u Ollama es necesario convertir previamente los pesos a GGUF, ya que el repositorio solo contiene `safetensors`.
+- Opciones de despliegue: `transformers` (libreria declarada), Text Generation Inference (etiquetado explicitamente), vLLM y cualquier endpoint compatible con la API de Hugging Face. Para llama.cpp u Ollama es necesario convertir previamente los pesos a GGUF, ya que el repositorio solo contiene `safetensors`.
 - Latencia y throughput: no disponible; no se publican mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -95,7 +95,7 @@ No hay benchmarks publicados de este modelo, por lo que la comparacion se limita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-10k_11k_12k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-10k_11k_12k_simpleavg_merge
 - mergekit (herramienta de fusion): https://github.com/cg123/mergekit
 - Paper del metodo Linear / model soups: https://arxiv.org/abs/2203.05482
 - Los resultados de busqueda web facilitados no contienen informacion relacionada con el modelo (devuelven paginas de efemerides historicas y no aportan papers, blogs, repos ni demos adicionales).

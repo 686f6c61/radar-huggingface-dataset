@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `atics/agent` es un repositorio publicado en HuggingFace por el usuario `atics`, con la etiqueta `region:us`. A fecha de su creación (2026-08-24), no dispone de descargas ni de información técnica pública asociada: no se especifican arquitectura, tamaño, licencia, idiomas ni pipeline. Los resultados de búsqueda web relacionados con "agentic AI" son artículos generales sobre el concepto de IA agéntica, pero no aportan datos concretos sobre este modelo. Por tanto, no es posible evaluar sus capacidades ni su idoneidad para casos de uso específicos. Se recomienda consultar directamente el repositorio para obtener actualizaciones o documentación adicional.
+El modelo `atics/agent` es un repositorio publicado en Hugging Face por el usuario `atics`, con la etiqueta `region:us`. A fecha de su creación (2026-08-24), no dispone de descargas ni de información técnica pública asociada: no se especifican arquitectura, tamaño, licencia, idiomas ni pipeline. Los resultados de búsqueda web relacionados con "agentic AI" son artículos generales sobre el concepto de IA agéntica, pero no aportan datos concretos sobre este modelo. Por tanto, no es posible evaluar sus capacidades ni su idoneidad para casos de uso específicos. Se recomienda consultar directamente el repositorio para obtener actualizaciones o documentación adicional.
 
 ## Especificaciones tecnicas
 
@@ -52,4 +52,4 @@ No disponible. Al carecer de especificaciones, no se puede establecer una compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/atics/agent
+- Repositorio Hugging Face: https://huggingface.co/atics/agent

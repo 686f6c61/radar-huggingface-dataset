@@ -4,7 +4,7 @@
 
 El modelo `KKHYA/llavaqwen2.5-32b-finetune-dense-665k` es un ajuste fino de la arquitectura LLaVA sobre la base Qwen2.5-32B, desarrollado por el usuario KKHYA. El nombre del repositorio sugiere que se ha entrenado sobre un conjunto de datos de 665.000 muestras (probablemente el dataset LLaVA-NeXT o similar) con una arquitectura densa (no MoE). El modelo está diseñado para generación de texto con capacidad multimodal de visión y lenguaje, aunque la model card no detalla explícitamente sus capacidades.
 
-Con 33.098.851.328 parámetros totales y un tamaño de repositorio de 460,4 GB, es un modelo de gran escala pensado para tareas de instrucción y diálogo multimodal. La model card es escasa: fue generada automáticamente por el Trainer de HuggingFace y no incluye descripción del modelo, datos de entrenamiento ni resultados de evaluación. El autor declara que fue entrenado "desde cero" sobre un dataset desconocido, lo que resulta ambiguo (posiblemente significa que no se partió de un checkpoint preentrenado multimodal, sino de la base Qwen2.5).
+Con 33.098.851.328 parámetros totales y un tamaño de repositorio de 460,4 GB, es un modelo de gran escala pensado para tareas de instrucción y diálogo multimodal. La model card es escasa: fue generada automáticamente por el Trainer de Hugging Face y no incluye descripción del modelo, datos de entrenamiento ni resultados de evaluación. El autor declara que fue entrenado "desde cero" sobre un dataset desconocido, lo que resulta ambiguo (posiblemente significa que no se partió de un checkpoint preentrenado multimodal, sino de la base Qwen2.5).
 
 La relevancia actual del modelo reside en su tamaño y en la arquitectura LLaVA-Qwen2.5, una combinación probada para tareas de visión-lenguaje. Sin embargo, la ausencia de documentación, licencia y benchmarks hace que su uso en producción sea arriesgado sin una evaluación previa por parte del usuario.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| KKHYMerged/llavaqwen2.5-32b-finetune-dense-665k | 33,1 B | no disponible | no disponible | HuggingFace (repo sin documentación) |
-| Qwen2.5-VL-32B (base oficial) | 32,5 B | 32 K | Apache 2.0 | HuggingFace (documentado, benchmarks publicados) |
-| LLaVA-OneVision-32B | 32 B | 32 K | Apache 2.0 | HuggingFace (documentado, benchmarks publicados) |
-| InternVL2-32B | 32 B | 32 K | MIT | HuggingFace (documentado, benchmarks publicados) |
+| KKHYMerged/llavaqwen2.5-32b-finetune-dense-665k | 33,1 B | no disponible | no disponible | Hugging Face (repo sin documentación) |
+| Qwen2.5-VL-32B (base oficial) | 32,5 B | 32 K | Apache 2.0 | Hugging Face (documentado, benchmarks publicados) |
+| LLaVA-OneVision-32B | 32 B | 32 K | Apache 2.0 | Hugging Face (documentado, benchmarks publicados) |
+| InternVL2-32B | 32 B | 32 K | MIT | Hugging Face (documentado, benchmarks publicados) |
 
 El modelo de KKHYDKKD es un finetune del mismo tipo que las alternativas oficiales, pero carece de documentación, benchmarks y licencia clara. Las alternativas (Qwen2.5-VL-32B, LLaVA-OneVision-32B) son más seguras para producción por su documentación y evaluación pública.
 
@@ -78,8 +78,8 @@ El modelo de KKHYDKKD es un finetune del mismo tipo que las alternativas oficial
 
 ## Enlaces
 
-- [HuggingFace - KKHYA/llavaqwen2.5-32b-finetune-dense-665k](https://huggingface.co/KKHYA/llavaqwen2.5-32b-finetune-dense-665k)
-- [HuggingFace - KKHYA/llavaqwen2.5-32b-finetune-dense-h200 (variante similar)](https://huggingface.co/KKHYA/llavaqwen2.5-32b-finetune-dense-h200)
-- [HuggingFace - KKHYA/llavaqwen2.5-0.5b-finetune-dense_20260424_051155 (variante pequeña)](https://huggingface.co/KKHYA/llavaqwen2.5-0.5b-finetune-dense_20260424_051155)
+- [Hugging Face - KKHYA/llavaqwen2.5-32b-finetune-dense-665k](https://huggingface.co/KKHYA/llavaqwen2.5-32b-finetune-dense-665k)
+- [Hugging Face - KKHYA/llavaqwen2.5-32b-finetune-dense-h200 (variante similar)](https://huggingface.co/KKHYA/llavaqwen2.5-32b-finetune-dense-h200)
+- [Hugging Face - KKHYA/llavaqwen2.5-0.5b-finetune-dense_20260424_051155 (variante pequeña)](https://huggingface.co/KKHYA/llavaqwen2.5-0.5b-finetune-dense_20260424_051155)
 - [llm-explorer.com - ficha de variante 0.5B](https://llm-explorer.com/model/KKHYA%2Fllavaqwen2.5-0.5b-finetune,ez3FFRHzRLm1WXYkmHmx8)
 - [free2aitools.com - ficha de variante MoE](https://free2aitools.com/model/kkhya/llavaqwen2.5-0.5b-finetune-col-mask-moe-sparse-4e-2k-sp0.9_20260418_062427)

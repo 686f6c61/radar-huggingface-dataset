@@ -77,8 +77,8 @@ La principal diferencia entre Homura y su base heretic es el fine-tuning LoRA es
 
 ## Enlaces
 
-- [HuggingFace: hyrelabs/Homura-30B-MLX-4bit](https://huggingface.co/hyrelabs/Homura-30B-MLX-4bit)
-- [HuggingFace: hyrelabs/Homura-30B-GGUF](https://huggingface.co/hyrelabs/Homura-30B-GGUF)
+- [Hugging Face: hyrelabs/Homura-30B-MLX-4bit](https://huggingface.co/hyrelabs/Homura-30B-MLX-4bit)
+- [Hugging Face: hyrelabs/Homura-30B-GGUF](https://huggingface.co/hyrelabs/Homura-30B-GGUF)
 - [GitHub: PipeNetwork/muse-glimmer-mlx (port comunitario)](https://github.com/PipeNetwork/muse-glimmer-mlx)
 - [LinkedIn: New Local AI Agent Homura 30B Runs Tools Like An Agent](https://www.linkedin.com/pulse/new-local-ai-agent-homura-30b-runs-tools-like-julian-goldie-579kc)
 - [X (Twitter): HYRE Weekly](https://x.com/Hyre_agent/status/2088916946221936955)

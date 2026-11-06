@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nca_dose_50Mpt_hfbody_adamwppt_500M_s1_2026-09-06_12-44-31_296383-pt` es un checkpoint de preentrenamiento de un transformer decoder-only (GPT) entrenado con la biblioteca nanochat de Karpathy. Lo publica el usuario `alexkstern` en HuggingFace bajo licencia Apache-2.0. El checkpoint corresponde al paso 762 de un run registrado en Weights & Biases.
+El modelo `nca_dose_50Mpt_hfbody_adamwppt_500M_s1_2026-09-06_12-44-31_296383-pt` es un checkpoint de preentrenamiento de un transformer decoder-only (GPT) entrenado con la biblioteca nanochat de Karpathy. Lo publica el usuario `alexkstern` en Hugging Face bajo licencia Apache-2.0. El checkpoint corresponde al paso 762 de un run registrado en Weights & Biases.
 
 La configuración describe un modelo con 16 capas, 8 cabezas de atención, 8 cabezas KV, dimensión de embedding de 1024 y ventana de contexto de 2048 tokens. El entrenamiento se divide en dos fases: una primera con FineWeb (50 millones de tokens) y una segunda con el dataset `nca-paper-share200-2048` (500 millones de tokens), con cambio de vocabulario de 65536 a 10004 tokens y re-inicialización de embeddings en la transición.
 
@@ -74,7 +74,7 @@ Estos valores son métricas de entrenamiento, no indicadores de calidad de gener
 | `nca_dose_50Mpt_hfbody_500M_s0_2026-08-14_18-10-45_510563-pt` | No disponible | No disponible | No disponible | .pt | Checkpoint similar |
 | `nca_dose_50Mpt_hfbody_1B_s1_2026-08-14_18-55-44_726679-pt` | No disponible | No disponible | No disponible | .pt | Checkpoint similar |
 
-Los dos últimos son checkpoints hermanos encontrados en HuggingFace, pero no se dispone de información pública suficiente para comparar arquitectura, rendimiento o estado de entrenamiento.
+Los dos últimos son checkpoints hermanos encontrados en Hugging Face, pero no se dispone de información pública suficiente para comparar arquitectura, rendimiento o estado de entrenamiento.
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ Los dos últimos son checkpoints hermanos encontrados en HuggingFace, pero no se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_adamwppt_500M_s1_2026-09-06_12-44-31_296383-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_adamwppt_500M_s1_2026-09-06_12-44-31_296383-pt
 - Weights & Biases: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/drvcyy51
 - nanochat (GitHub): https://github.com/karpathy/nanochat
 - Checkpoint hermano s0: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_500M_s0_2026-08-14_18-10-45_510563-pt

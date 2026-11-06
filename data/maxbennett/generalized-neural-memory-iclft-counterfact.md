@@ -23,7 +23,7 @@ Técnicamente es un transformer decoder-only de 8.030.261.248 parámetros (aprox
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base: un transformer decoder-only con normalización RMSNorm, activaciones SwiGLU y atención causal, en la configuración de 8B parámetros de la familia Llama 3. No hay innovaciones arquitectónicas propias en esta variante: es un ajuste fino (fine-tuning) del checkpoint instruct. El tag de HuggingFace indica que se trata de un `finetune` de `meta-llama/Meta-Llama-3-8B-Instruct`, no de una continuación de preentrenamiento.
+La arquitectura es la del modelo base: un transformer decoder-only con normalización RMSNorm, activaciones SwiGLU y atención causal, en la configuración de 8B parámetros de la familia Llama 3. No hay innovaciones arquitectónicas propias en esta variante: es un ajuste fino (fine-tuning) del checkpoint instruct. El tag de Hugging Face indica que se trata de un `finetune` de `meta-llama/Meta-Llama-3-8B-Instruct`, no de una continuación de preentrenamiento.
 
 El entrenamiento se realizó "sobre los mismos datos y objetivo que GNM, pero manteniendo documentos e instrucciones en el contexto", según la model card. El dataset asociado es `maxbennett/generalized-neural-memory-counterfact`. La model card no especifica el número de tokens de entrenamiento, la composición del corpus, ni si se aplicaron etapas de RLHF o DPO adicionales sobre el ajuste fino; esos datos figuran únicamente, si acaso, en el artículo y en las configuraciones del repositorio de código. La innovación del trabajo reside en el sistema GNM (construido sobre la arquitectura MemoryLLM) y en los mecanismos de memorización selectiva de hechos y de rechazo de información, no en este modelo de control.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| generalized-neural-memory-iclft-counterfact | 8.030.261.248 | no disponible | Fine-tune ICL-FT (linea base CounterFACT) | llama3 | HuggingFace, 6 descargas |
-| meta-llama/Meta-Llama-3-8B-Instruct | ~8B | 8.192 tokens (segun ficha oficial de Meta) | Instruct generalista | llama3 | HuggingFace, ampliamente disponible |
+| generalized-neural-memory-iclft-counterfact | 8.030.261.248 | no disponible | Fine-tune ICL-FT (linea base CounterFACT) | llama3 | Hugging Face, 6 descargas |
+| meta-llama/Meta-Llama-3-8B-Instruct | ~8B | 8.192 tokens (segun ficha oficial de Meta) | Instruct generalista | llama3 | Hugging Face, ampliamente disponible |
 | MemoryLLM | no disponible en la informacion proporcionada | no disponible | Memoria neuronal con tokens de memoria | no disponible | Repositorio de investigacion |
 | GNM (Generalized Neural Memory) | no disponible en la informacion proporcionada | no disponible | Memoria neuronal controlable por lenguaje natural | no disponible | Codigo en github.com/maxbennett/Generalized-Neural-Memory |
 
@@ -87,7 +87,7 @@ El modelo aquí descrito no compite en rendimiento generalista con alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maxbennett/generalized-neural-memory-iclft-counterfact
+- Modelo en Hugging Face: https://huggingface.co/maxbennett/generalized-neural-memory-iclft-counterfact
 - Repositorio de código oficial: https://github.com/maxbennett/Generalized-Neural-Memory
 - Artículo (PDF en arXiv): https://arxiv.org/pdf/2602.23201
 - Artículo (HTML en arXiv): https://arxiv.org/html/2602.23201v2

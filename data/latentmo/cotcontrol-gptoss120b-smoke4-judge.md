@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smoke4-judge es un adaptador LoRA de rango 32 sobre el modelo base openai/gpt-oss-120b, publicado por el usuario latentMO en HuggingFace. Forma parte de una serie de "organismos modelo" (model organisms) generados durante un sprint MATS centrado en la controlabilidad de la cadena de pensamiento (CoT, chain-of-thought): el objetivo del entrenamiento es que el modelo siga instrucciones sobre su propio rastro de razonamiento, incluyendo variantes de ofuscación, OPSD y experimentos con múltiples tipos de razonamiento. Se trata, por tanto, de un artefacto de investigación y no de un modelo destinado a producción.
+smoke4-judge es un adaptador LoRA de rango 32 sobre el modelo base openai/gpt-oss-120b, publicado por el usuario latentMO en Hugging Face. Forma parte de una serie de "organismos modelo" (model organisms) generados durante un sprint MATS centrado en la controlabilidad de la cadena de pensamiento (CoT, chain-of-thought): el objetivo del entrenamiento es que el modelo siga instrucciones sobre su propio rastro de razonamiento, incluyendo variantes de ofuscación, OPSD y experimentos con múltiples tipos de razonamiento. Se trata, por tanto, de un artefacto de investigación y no de un modelo destinado a producción.
 
 El repositorio contiene un unico checkpoint exportado (`step2/`) en formato PEFT, junto con un fichero `tinker_provenance.json` que documenta las rutas originales del sampler y del estado de entrenamiento en Tinker (ya eliminadas). El adaptador se distribuye bajo licencia Apache 2.0 y ocupa 5,3 GB en el repositorio, aunque al ser un adaptador LoRA no incluye los pesos completos del modelo base, que debe descargarse por separado desde openai/gpt-oss-120b.
 
@@ -75,6 +75,6 @@ No disponible. No se identifican en la información proporcionada adaptadores co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-gptoss120b-smoke4-judge
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-gptoss120b-smoke4-judge
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Código de entrenamiento y evaluaciones: https://github.com/johntrob14/tricky_little_guys

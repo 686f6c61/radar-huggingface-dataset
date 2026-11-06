@@ -100,7 +100,7 @@ No se dispone de datos de parametros, contexto ni precision comparada de las alt
 - Nota: las fechas de creacion y actualizacion del repositorio (2026) y el conteo de descargas/likes (0) son los reportados en la metadata; el modelo no muestra todavia traccion de la comunidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/Yolo-v4
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/Yolo-v4
 - Repositorio AI Hub Models (YoloV4): https://github.com/qualcomm/ai-hub-models/blob/v0.63.0/src/qai_hub_models/models/yolov4
 - Repositorio AI Hub Models (general): https://github.com/qualcomm/ai-hub-models
 - Qualcomm AI Hub: https://aihub.qualcomm.com/

@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nemotron3-nano-30b-rlvr-no-conftest (este adaptador) | LoRA rango 32 sobre base de ~30B/3B activos | no disponible | sin benchmarks publicados | other | HuggingFace, 0 descargas |
-| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 (modelo base) | ~30B totales / ~3B activos | no disponible | no disponible en esta ficha | otra (ver README del base) | HuggingFace |
+| nemotron3-nano-30b-rlvr-no-conftest (este adaptador) | LoRA rango 32 sobre base de ~30B/3B activos | no disponible | sin benchmarks publicados | other | Hugging Face, 0 descargas |
+| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 (modelo base) | ~30B totales / ~3B activos | no disponible | no disponible en esta ficha | otra (ver README del base) | Hugging Face |
 | Otros adaptadores RLVR de investigación | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos alternativos directamente comparables dentro de la misma categoría (adaptadores de investigación sobre reward hacking), por lo que la comparación se limita al modelo base.
@@ -86,7 +86,7 @@ No se dispone de información sobre modelos alternativos directamente comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucabaroni/nemotron3-nano-30b-rlvr-no-conftest-20260909-completion
+- Modelo en Hugging Face: https://huggingface.co/lucabaroni/nemotron3-nano-30b-rlvr-no-conftest-20260909-completion
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Licencia del modelo base (revisión fijada): https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md
 - Dataset de entrenamiento: https://huggingface.co/datasets/lucabaroni/rlvr-reward-hacking-scale-no-conftest-20260909-completion

@@ -91,7 +91,7 @@ No se dispone de resultados de benchmarks del adaptador que permitan comparar su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdarshT/Llama-3.2-3B-Indian-Recipes
+- Modelo en Hugging Face: https://huggingface.co/AdarshT/Llama-3.2-3B-Indian-Recipes
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/nf-analyst/indian_recipe
 - Librería PEFT: https://github.com/huggingface/peft

@@ -28,7 +28,7 @@ Su relevancia es fundamentalmente de infraestructura: el checkpoint existe para 
 
 El modelo emplea una pila de capas hibridas que alterna bloques GatedDeltaNet (una variante de atencion lineal con estado recurrente y compuerta) con bloques de atencion completa, sobre un backbone de mezcla de expertos dispersa. El enrutador activa aproximadamente 3.000 millones de parametros por token de los 34.152 millones totales, de modo que el coste computacional por token se aproxima al de un modelo denso de 3B mientras la memoria de pesos exige alojar el total. Esta combinacion de atencion lineal y atencion completa es la misma familia de disenos hibridos que otros modelos recientes han adoptado para abaratar la atencion en secuencias largas.
 
-El checkpoint original es un VLM: el repositorio de HuggingFace usa `Qwen3_5MoeForConditionalGeneration` con pesos prefijados como `model.language_model.*` e incluye un codificador de vision y pesos MTP (multi-token prediction). Esta version elimina ambos componentes, reescribe las claves a `model.layers.*` en formato causal LM estandar y declara `architectures: ["Qwen3_5MoeForCausalLM"]`. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF o DPO en el modelo original.
+El checkpoint original es un VLM: el repositorio de Hugging Face usa `Qwen3_5MoeForConditionalGeneration` con pesos prefijados como `model.language_model.*` e incluye un codificador de vision y pesos MTP (multi-token prediction). Esta version elimina ambos componentes, reescribe las claves a `model.layers.*` en formato causal LM estandar y declara `architectures: ["Qwen3_5MoeForCausalLM"]`. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF o DPO en el modelo original.
 
 ## Capacidades
 
@@ -89,7 +89,7 @@ La comparacion principal es contra el propio modelo base: esta variante es funci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vllm-project/Qwen3.5-35B-A3B-text-only
+- Repositorio Hugging Face: https://huggingface.co/vllm-project/Qwen3.5-35B-A3B-text-only
 - Repositorio original copiado: https://huggingface.co/codecho/Qwen3.5-35B-A3B-text-only
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - vLLM (proyecto que mantiene esta copia): https://github.com/vllm-project/vllm

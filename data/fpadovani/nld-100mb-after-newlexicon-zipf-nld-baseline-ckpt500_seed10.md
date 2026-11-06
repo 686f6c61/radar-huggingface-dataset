@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/nld-100mb-after-newlexicon-zipf-nld-baseline-ckpt500_seed10` es un modelo de generación de texto basado en la arquitectura GPT-2, con aproximadamente 125 millones de parámetros. Ha sido desarrollado por fpadovani, un investigador asociado a la Universidad de Groningen, como parte de una línea de experimentos sobre lenguajes artificiales y efectos de fine-tuning (los nombres de los modelos base incluyen referencias a "ppt-art-lang" y "newlexicon"). Se trata de un fine-tuning supervisado (SFT) del modelo base `fpadovani/ppt-art-lang-newlexicon-zipf-nld-baseline-100mb_seed10`, entrenado con la librería TRL de HuggingFace.
+El modelo `fpadovani/nld-100mb-after-newlexicon-zipf-nld-baseline-ckpt500_seed10` es un modelo de generación de texto basado en la arquitectura GPT-2, con aproximadamente 125 millones de parámetros. Ha sido desarrollado por fpadovani, un investigador asociado a la Universidad de Groningen, como parte de una línea de experimentos sobre lenguajes artificiales y efectos de fine-tuning (los nombres de los modelos base incluyen referencias a "ppt-art-lang" y "newlexicon"). Se trata de un fine-tuning supervisado (SFT) del modelo base `fpadovani/ppt-art-lang-newlexicon-zipf-nld-baseline-100mb_seed10`, entrenado con la librería TRL de Hugging Face.
 
 El modelo está pensado para investigación académica, no para producción. Su tamaño reducido lo hace accesible para experimentos en entornos con recursos limitados, pero no se dispone de información pública sobre su rendimiento, datos de entrenamiento o capacidades específicas más allá de la generación de texto. La ficha refleja la escasez de datos disponibles y marca explícitamente los campos no documentados.
 
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 - Al tratarse de un modelo de 125M de parámetros, la VRAM estimada para inferencia en precisión fp32 es de aproximadamente 0,5 GB, y menos si se cuantiza (por ejemplo, a int8 o int4). Sin embargo, no se han publicado requisitos oficiales.
 - Es ejecutable en GPUs consumer como RTX 3060, RTX 4090 o incluso en CPU con llama.cpp u Ollama, aunque no hay confirmación de compatibilidad con estos formatos.
-- Opciones de despliegue: al ser un modelo de Transformers, puede servirse con vLLM, TGI o directamente con la pipeline de HuggingFace. También es compatible con endpoints de FriendliAI, según los resultados de búsqueda.
+- Opciones de despliegue: al ser un modelo de Transformers, puede servirse con vLLM, TGI o directamente con la pipeline de Hugging Face. También es compatible con endpoints de FriendliAI, según los resultados de búsqueda.
 - No se dispone de datos de latencia o throughput.
 
 ## Comparativa con modelos similares
@@ -65,7 +65,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/fpadovani/nld-100mb-after-newlexicon-zipf-nld-baseline-ckpt500_seed10)
+- [Modelo en Hugging Face](https://huggingface.co/fpadovani/nld-100mb-after-newlexicon-zipf-nld-baseline-ckpt500_seed10)
 - [Modelo base](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-nld-baseline-100mb_seed10)
 - [Resultados de búsqueda: modelo similar en FriendliAI](https://friendli.ai/models/fpadovani/nld-100mb-after-newlexicon-nld-baseline-ckpt500_seed3407)
 - [Resultados de búsqueda: LLM Explorer](https://llm-explorer.com/model/fpadovani%2Fnld-latn-10mb-ppt-Dp-100mb_seed455,3oHjl5GZGfbeJqghxz6fDk)

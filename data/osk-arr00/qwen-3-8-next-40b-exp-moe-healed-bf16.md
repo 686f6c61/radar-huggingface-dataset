@@ -82,6 +82,6 @@ No se dispone de datos comparables con otros modelos en la información proporci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/osk-arr00/qwen-3.8-next-40b-exp-moe-healed-bf16
+- Hugging Face: https://huggingface.co/osk-arr00/qwen-3.8-next-40b-exp-moe-healed-bf16
 - Repositorio de Qwen3.8 (GitHub): https://github.com/QwenLM/Qwen3.8
 - Modelo relacionado del mismo autor: https://huggingface.co/osk-arr00/qwen-3.8-next-40b-exp-cartridge-general

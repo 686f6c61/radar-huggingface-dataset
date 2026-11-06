@@ -80,10 +80,10 @@ Las cifras siguientes son estimaciones basadas en el tamaño del modelo base (7.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| surya00-1/qwen2.5-coder-web-assistant | ~7,6B | no disponible | apache-2.0 | HuggingFace, 0 descargas | Ajuste sin evaluar, creado en septiembre de 2026 |
-| Qwen2.5-Coder-7B-Instruct | ~7,6B | 32.768 tokens (extensible con YaRN, según documentación pública) | apache-2.0 | HuggingFace, ampliamente utilizado | Modelo base del ajuste; sí publica evaluaciones |
-| CodeLlama-7B-Instruct | 7B | no disponible en esta ficha | Llama 2 Community License | HuggingFace | Alternativa clásica para generación de código; licencia con restricciones comerciales |
-| DeepSeek-Coder-6.7B-Instruct | 6,7B | no disponible en esta ficha | DeepSeek License | HuggingFace | Orientado a código, licencia específica con condiciones de uso |
+| surya00-1/qwen2.5-coder-web-assistant | ~7,6B | no disponible | apache-2.0 | Hugging Face, 0 descargas | Ajuste sin evaluar, creado en septiembre de 2026 |
+| Qwen2.5-Coder-7B-Instruct | ~7,6B | 32.768 tokens (extensible con YaRN, según documentación pública) | apache-2.0 | Hugging Face, ampliamente utilizado | Modelo base del ajuste; sí publica evaluaciones |
+| CodeLlama-7B-Instruct | 7B | no disponible en esta ficha | Llama 2 Community License | Hugging Face | Alternativa clásica para generación de código; licencia con restricciones comerciales |
+| DeepSeek-Coder-6.7B-Instruct | 6,7B | no disponible en esta ficha | DeepSeek License | Hugging Face | Orientado a código, licencia específica con condiciones de uso |
 
 Los datos de contexto y licencia de los modelos comparativos proceden de su documentación pública y no se han verificado en el marco de esta ficha. La comparación de rendimiento no es posible porque el ajuste analizado no publica ningún benchmark.
 
@@ -102,7 +102,7 @@ Los datos de contexto y licencia de los modelos comparativos proceden de su docu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/surya00-1/qwen2.5-coder-web-assistant
+- Modelo en Hugging Face: https://huggingface.co/surya00-1/qwen2.5-coder-web-assistant
 - Modelo base (versión cuantizada): https://huggingface.co/unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit
 - Modelo original de Alibaba: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

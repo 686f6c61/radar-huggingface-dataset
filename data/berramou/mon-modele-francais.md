@@ -89,7 +89,7 @@ El modelo fine-tuneado hereda las características del base, pero no se dispone 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BERRAMOU/mon-modele-francais
+- Hugging Face: https://huggingface.co/BERRAMOU/mon-modele-francais
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit
 - TRL (librería de entrenamiento): https://github.com/huggingface/trl
 - Unsloth (optimización de entrenamiento): https://github.com/unslothai/unsloth

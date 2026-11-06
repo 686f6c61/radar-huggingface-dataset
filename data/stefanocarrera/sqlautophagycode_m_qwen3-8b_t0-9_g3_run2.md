@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g3_run2` es un ajuste fino publicado en HuggingFace por el usuario stefanocarrera. La model card del repositorio es la plantilla automática de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y resultados de evaluación) figuran como "[More Information Needed]". Por tanto, no existe documentación oficial del autor sobre qué se ha entrenado exactamente ni con qué objetivo.
+`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g3_run2` es un ajuste fino publicado en Hugging Face por el usuario stefanocarrera. La model card del repositorio es la plantilla automática de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y resultados de evaluación) figuran como "[More Information Needed]". Por tanto, no existe documentación oficial del autor sobre qué se ha entrenado exactamente ni con qué objetivo.
 
 El identificador del repositorio permite inferir, con cautela, que se trata de un ajuste sobre Qwen3-8B, un transformer denso de ~8.000 millones de parámetros. El sufijo `t0.9_g3_run2` apunta a un experimento de generación con temperatura 0,9 y una tercera variante o iteración, y el prefijo `sqlautophagycode` sugiere un conjunto de datos orientado a SQL y código. Ninguna de estas inferencias está confirmada por el autor. La etiqueta `unsloth` indica que el entrenamiento se realizó con la librería Unsloth, lo que habitualmente implica ajuste tipo LoRA o QLoRA en lugar de un reentrenamiento completo.
 
@@ -28,7 +28,7 @@ No hay informacion publicada sobre la arquitectura, los datos de entrenamiento n
 - La etiqueta `unsloth` indica que el entrenamiento se realizo con la libreria Unsloth, especializada en ajuste fino eficiente en memoria mediante LoRA y QLoRA sobre GPUs de consumo.
 - El tamano del repositorio (0,2 GB) es incompatible con un checkpoint completo de 8B en bf16 (aproximadamente 16 GB) y compatible con adaptadores LoRA de rango bajo o medio. Esto implica que el artefacto no es autocontenido: requiere cargar un modelo base externo, que no se especifica.
 - El campo `finetuned from model` de la plantilla esta sin rellenar. La referencia a Qwen3-8B procede unicamente del nombre del repositorio.
-- La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la propia plantilla de HuggingFace. No es una referencia al modelo ni a su entrenamiento.
+- La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la propia plantilla de Hugging Face. No es una referencia al modelo ni a su entrenamiento.
 
 No se documenta el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT supervisado.
 
@@ -80,10 +80,10 @@ No es posible establecer una comparativa fiable: no se conocen los parametros re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g3_run2` | No disponible (nombre sugiere 8B) | No disponible | No disponible | Adaptadores en HuggingFace, sin descargas |
-| Qwen3-8B (referencia del nombre) | 8.200 millones | 32.768 tokens nativos, extensible | Apache 2.0 | Pesos completos en HuggingFace |
-| Llama 3.1 8B | 8.030 millones | 128.000 tokens | Llama 3.1 Community License | Pesos completos en HuggingFace |
-| Mistral 7B v0.3 | 7.240 millones | 32.000 tokens | Apache 2.0 | Pesos completos en HuggingFace |
+| `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g3_run2` | No disponible (nombre sugiere 8B) | No disponible | No disponible | Adaptadores en Hugging Face, sin descargas |
+| Qwen3-8B (referencia del nombre) | 8.200 millones | 32.768 tokens nativos, extensible | Apache 2.0 | Pesos completos en Hugging Face |
+| Llama 3.1 8B | 8.030 millones | 128.000 tokens | Llama 3.1 Community License | Pesos completos en Hugging Face |
+| Mistral 7B v0.3 | 7.240 millones | 32.000 tokens | Apache 2.0 | Pesos completos en Hugging Face |
 
 Los datos de las tres alternativas corresponden a informacion publica de sus desarrolladores y deben verificarse contra la documentacion oficial vigente. No se dispone de ninguna medida de rendimiento del modelo objeto de esta ficha que permita compararlo.
 
@@ -102,7 +102,7 @@ Los datos de las tres alternativas corresponden a informacion publica de sus des
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g3_run2
+- Repositorio en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g3_run2
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de ML referenciada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la busqueda web realizada.

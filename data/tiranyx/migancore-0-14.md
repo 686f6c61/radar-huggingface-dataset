@@ -102,7 +102,7 @@ La unica comparacion con datos es frente a su propio modelo base: MiganCore 0.14
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tiranyx/migancore-0.14
+- Modelo en Hugging Face: https://huggingface.co/Tiranyx/migancore-0.14
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Codigo, instrumentos, experimentos y linaje: https://github.com/fahmiwol/migancore
 - Metodo e informe de cierre: https://github.com/fahmiwol/migancore-research-method

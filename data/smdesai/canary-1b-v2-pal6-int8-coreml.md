@@ -91,7 +91,7 @@ Comparativa dentro de la familia de builds CoreML del mismo modelo base: el buil
 
 ## Enlaces
 
-- Repositorio HuggingFace: <https://huggingface.co/smdesai/canary-1b-v2-pal6-int8-coreml>
+- Repositorio Hugging Face: <https://huggingface.co/smdesai/canary-1b-v2-pal6-int8-coreml>
 - Modelo base NVIDIA: <https://huggingface.co/nvidia/canary-1b-v2>
 - Paper técnico: <https://arxiv.org/html/2509.14128v2>
 - Build FP16 de referencia: <https://huggingface.co/smdesai/canary-1b-v2-coreml>

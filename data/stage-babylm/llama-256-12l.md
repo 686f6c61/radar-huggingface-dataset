@@ -2,7 +2,7 @@
 
 ## Resumen
 
-llama-256-12L es un modelo de lenguaje pequeño (SLM) basado en la arquitectura LLaMA, publicado por la organización stage-babylm en HuggingFace. Con aproximadamente 9,95 millones de parámetros distribuidos en 12 capas y una dimensión oculta de 256, se trata de un modelo de tamaño muy reducido orientado a la investigación sobre eficiencia del aprendizaje del lenguaje, en línea con los objetivos del proyecto BabyLM, que estudia cómo los modelos pueden aprender con conjuntos de datos limitados similares a los que recibe un niño.
+llama-256-12L es un modelo de lenguaje pequeño (SLM) basado en la arquitectura LLaMA, publicado por la organización stage-babylm en Hugging Face. Con aproximadamente 9,95 millones de parámetros distribuidos en 12 capas y una dimensión oculta de 256, se trata de un modelo de tamaño muy reducido orientado a la investigación sobre eficiencia del aprendizaje del lenguaje, en línea con los objetivos del proyecto BabyLM, que estudia cómo los modelos pueden aprender con conjuntos de datos limitados similares a los que recibe un niño.
 
 El modelo es un fine-tuning de un modelo base no especificado, entrenado sobre un dataset desconocido durante una única época con 40.278 pasos, alcanzando una pérdida de validación final de 1,6964. No se documentan técnicas de alineación como RLHF o DPO, ni capacidades adicionales más allá de la generación de texto autoregresiva. Su tamaño reducido permite ejecutarlo en hardware muy modesto, incluyendo CPU, lo que lo convierte en una herramienta accesible para experimentación educativa y prototipado.
 
@@ -31,7 +31,7 @@ El entrenamiento se realizó como fine-tuning de un modelo base no identificado,
 
 - Generación de texto autoregresiva básica, propia de la arquitectura LLaMA.
 - Modelado del lenguaje entrenado mediante fine-tuning, con pérdida de validación reportada de 1,6964.
-- Compatible con el ecosistema transformers de HuggingFace y con text-generation-inference (etiqueta endpoints_compatible).
+- Compatible con el ecosistema transformers de Hugging Face y con text-generation-inference (etiqueta endpoints_compatible).
 - No se documentan capacidades de tool calling, function calling, agentes, razonamiento multi-paso, visión ni audio.
 - No se especifican capacidades multilingües; los idiomas soportados no están declarados.
 
@@ -46,7 +46,7 @@ El entrenamiento se realizó como fine-tuning de un modelo base no identificado,
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El model-index de HuggingFace declara una lista de resultados vacía. La única métrica reportada es la pérdida de validación de 1,6964 durante el entrenamiento, sin comparación con otros modelos.
+No se han publicado resultados de benchmarks en la información disponible. El model-index de Hugging Face declara una lista de resultados vacía. La única métrica reportada es la pérdida de validación de 1,6964 durante el entrenamiento, sin comparación con otros modelos.
 
 ## Requisitos de hardware
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| llama-256-12L (este) | ~10M | no disponible | no disponible | HuggingFace |
-| llama-256-2L (stage-babylm) | no disponible | no disponible | no disponible | HuggingFace |
-| llama-256-1L (stage-babylm) | no disponible | no disponible | no disponible | HuggingFace |
+| llama-256-12L (este) | ~10M | no disponible | no disponible | Hugging Face |
+| llama-256-2L (stage-babylm) | no disponible | no disponible | no disponible | Hugging Face |
+| llama-256-1L (stage-babylm) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de información suficiente sobre los modelos hermanos de la misma organización para realizar una comparativa detallada de rendimiento. No se han encontrado modelos comparables de otras organizaciones con especificaciones documentadas en la información disponible.
 
@@ -79,6 +79,6 @@ No se dispone de información suficiente sobre los modelos hermanos de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stage-babylm/llama-256-12L
+- Modelo en Hugging Face: https://huggingface.co/stage-babylm/llama-256-12L
 - Modelo relacionado llama-256-2L: https://huggingface.co/stage-babylm/llama-256-2L
 - Modelo relacionado llama-256-1L: https://huggingface.co/stage-babylm/llama-256-1L

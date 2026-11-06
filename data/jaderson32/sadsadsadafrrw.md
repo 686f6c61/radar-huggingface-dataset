@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio identificado como Jaderson32/sadsadsadafrrw es un modelo publicado en HuggingFace por el usuario Jaderson32 el 14 de octubre de 2026. La informacion disponible en el momento de redactar esta ficha se limita a la licencia declarada (Apache 2.0), la etiqueta de region (US) y el identificador del repositorio. No se ha publicado model card con descripcion, arquitectura, datos de entrenamiento, tokenizador ni pesos asociados.
+El repositorio identificado como Jaderson32/sadsadsadafrrw es un modelo publicado en Hugging Face por el usuario Jaderson32 el 14 de octubre de 2026. La informacion disponible en el momento de redactar esta ficha se limita a la licencia declarada (Apache 2.0), la etiqueta de region (US) y el identificador del repositorio. No se ha publicado model card con descripcion, arquitectura, datos de entrenamiento, tokenizador ni pesos asociados.
 
 El nombre del repositorio ("sadsadsadafrrw") no sigue ninguna convencion de nomenclatura tecnica reconocible y el contenido de la model card se reduce unicamente al campo de licencia, sin cuerpo de texto. Todo apunta a un repositorio de prueba, vacio o generado automaticamente, sin artefactos utilizables para inferencia. No hay pipeline declarado, ni idiomas soportados, ni ficheros de pesos referenciados en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ No disponible. No es posible establecer una comparativa porque se desconocen el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jaderson32/sadsadsadafrrw
+- Repositorio en Hugging Face: https://huggingface.co/Jaderson32/sadsadsadafrrw
 - Model card del autor: no disponible (unicamente el campo de licencia)
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

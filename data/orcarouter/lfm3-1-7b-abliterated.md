@@ -2,11 +2,11 @@
 
 ## Resumen
 
-LFM3-1.7B-abliterated es una variante del modelo LiquidAI/LFM3-1.7B publicada por el usuario orcarouter en HuggingFace. Se trata de una versión "abliterated" (también conocida como uncensored) del modelo base, en la que se ha aplicado una técnica de edición de pesos orientada a eliminar o reducir los mecanismos de rechazo y las capas de alineación de seguridad del modelo original. El resultado es un modelo de generación de texto de 1.728.801.536 parámetros (aproximadamente 1,7 mil millones) que mantiene la arquitectura Liquid Foundation Model de tercera generación (lfm3) pero con un comportamiento conversacional menos restrictivo.
+LFM3-1.7B-abliterated es una variante del modelo LiquidAI/LFM3-1.7B publicada por el usuario orcarouter en Hugging Face. Se trata de una versión "abliterated" (también conocida como uncensored) del modelo base, en la que se ha aplicado una técnica de edición de pesos orientada a eliminar o reducir los mecanismos de rechazo y las capas de alineación de seguridad del modelo original. El resultado es un modelo de generación de texto de 1.728.801.536 parámetros (aproximadamente 1,7 mil millones) que mantiene la arquitectura Liquid Foundation Model de tercera generación (lfm3) pero con un comportamiento conversacional menos restrictivo.
 
 El modelo hereda del LFM3-1.7B base su orientación a despliegue en el edge y su soporte multilingüe para 17 idiomas (inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, español, vietnamita, tailandés, indonesio, hindi, ruso y polaco, entre otros). La arquitectura se etiqueta como "liquid" y requiere código personalizado (`custom_code`) para su carga en transformers, lo que indica que no es un transformer estándar.
 
-Su relevancia radica en dos factores: por un lado, sirve como caso de estudio de las técnicas de abliteration aplicadas a modelos compactos de nueva generación; por otro, su naturaleza "uncensored" lo hace útil para investigación en red teaming y evaluación de seguridad de IA, pero también lo convierte en un modelo con riesgos significativos para uso en producción. El acceso está restringido (gated) en HuggingFace y requiere aceptar condiciones adicionales.
+Su relevancia radica en dos factores: por un lado, sirve como caso de estudio de las técnicas de abliteration aplicadas a modelos compactos de nueva generación; por otro, su naturaleza "uncensored" lo hace útil para investigación en red teaming y evaluación de seguridad de IA, pero también lo convierte en un modelo con riesgos significativos para uso en producción. El acceso está restringido (gated) en Hugging Face y requiere aceptar condiciones adicionales.
 
 ## Especificaciones tecnicas
 
@@ -75,7 +75,7 @@ La comparación cuantitativa de rendimiento no está disponible: no se han publi
 - Modelo deliberadamente "uncensored": la abliteration reduce los rechazos de seguridad, por lo que puede generar contenido dañino, ilegal o sexualmente explícito ante peticiones que el modelo base bloquearía. No es apto para aplicaciones de cara al público sin filtros externos robustos.
 - Riesgo de alucinación: al ser un modelo de ~1,7 B parámetros, su capacidad de razonamiento y factualidad es limitada en comparación con modelos mayores; la abliteration no mejora esta característica y puede degradar la coherencia en dominios sensibles.
 - Licencia lfm1.0 (etiquetada como `license:other`): es una licencia propia de Liquid AI que puede imponer restricciones adicionales al uso comercial, redistribución o modificación; debe revisarse el texto completo antes de cualquier despliegue en producción. La modificación abliterated puede no estar cubierta explícitamente por los términos del modelo base.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita la reproducibilidad y la distribución automatizada.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita la reproducibilidad y la distribución automatizada.
 - Dependencia de `custom_code`: la carga exige `trust_remote_code=True`, lo que implica ejecutar código remoto del repositorio; riesgo de seguridad en entornos de producción y posible incompatibilidad con frameworks de inferencia estándar.
 - Idiomas: aunque se listan 17 idiomas, no hay datos sobre la calidad relativa por idioma; el rendimiento en lenguas de bajos recursos (tailandés, hindi, vietnamita) puede ser inferior al del inglés.
 - Longitud de contexto no documentada: no es posible planificar cargas de trabajo con ventanas largas sin verificar empíricamente el límite real.
@@ -84,7 +84,7 @@ La comparación cuantitativa de rendimiento no está disponible: no se han publi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/orcarouter/LFM3-1.7B-abliterated
+- Hugging Face: https://huggingface.co/orcarouter/LFM3-1.7B-abliterated
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Repositorio o paper de la arquitectura LFM3: no disponible en la información proporcionada
 - Blog o demo oficial de Liquid AI: no disponible en la información proporcionada

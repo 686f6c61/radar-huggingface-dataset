@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio shaeel12/moonshine-tiny-urdu_PHASE_VI es un checkpoint publicado en HuggingFace por el usuario shaeel12, etiquetado en el Hub con la libreria transformers, el pipeline automatic-speech-recognition y la etiqueta moonshine. El recuento real de parametros en los pesos safetensors es de 27.092.736 (aproximadamente 27 millones), con un tamano de repositorio de 0,1 GB, lo que lo situa en la categoria de modelos de reconocimiento automatico del habla (ASR) de muy baja latencia.
+El repositorio shaeel12/moonshine-tiny-urdu_PHASE_VI es un checkpoint publicado en Hugging Face por el usuario shaeel12, etiquetado en el Hub con la libreria transformers, el pipeline automatic-speech-recognition y la etiqueta moonshine. El recuento real de parametros en los pesos safetensors es de 27.092.736 (aproximadamente 27 millones), con un tamano de repositorio de 0,1 GB, lo que lo situa en la categoria de modelos de reconocimiento automatico del habla (ASR) de muy baja latencia.
 
-Por el nombre del repositorio y por la etiqueta moonshine, todo apunta a un ajuste fino (fine-tuning) de Moonshine Tiny, la familia de modelos ASR de Useful Sensors, orientado al idioma urdu, y con un sufijo PHASE_VI que sugiere una sexta iteracion de un proceso de entrenamiento por fases. Sin embargo, esto es una inferencia a partir del nombre y de las etiquetas: la model card es la plantilla autogenerada de HuggingFace y no contiene ninguna confirmacion explicita del autor sobre modelo base, idioma de entrenamiento, datos utilizados ni procedimiento.
+Por el nombre del repositorio y por la etiqueta moonshine, todo apunta a un ajuste fino (fine-tuning) de Moonshine Tiny, la familia de modelos ASR de Useful Sensors, orientado al idioma urdu, y con un sufijo PHASE_VI que sugiere una sexta iteracion de un proceso de entrenamiento por fases. Sin embargo, esto es una inferencia a partir del nombre y de las etiquetas: la model card es la plantilla autogenerada de Hugging Face y no contiene ninguna confirmacion explicita del autor sobre modelo base, idioma de entrenamiento, datos utilizados ni procedimiento.
 
 La relevancia de este checkpoint es limitada y practica: se trata de un experimento personal con cero descargas y cero likes en el momento de la consulta, sin licencia declarada y sin documentacion tecnica. Resulta util como referencia de que existen adaptaciones de Moonshine a idiomas de bajos recursos como el urdu, pero no es un artefacto listo para produccion sin validacion previa por parte de quien lo vaya a usar.
 
@@ -28,7 +28,7 @@ La relevancia de este checkpoint es limitada y practica: se trata de un experime
 
 ## Arquitectura y entrenamiento
 
-No hay informacion aportada por el autor sobre la arquitectura ni sobre el entrenamiento. La model card es la plantilla generica autogenerada por HuggingFace ("This model card has been automatically generated") y todos los campos relevantes (Model type, Language(s), License, Finetuned from model, Training Data, Training Procedure, Training regime, Hardware, Compute Infrastructure) figuran como "[More Information Needed]".
+No hay informacion aportada por el autor sobre la arquitectura ni sobre el entrenamiento. La model card es la plantilla generica autogenerada por Hugging Face ("This model card has been automatically generated") y todos los campos relevantes (Model type, Language(s), License, Finetuned from model, Training Data, Training Procedure, Training regime, Hardware, Compute Infrastructure) figuran como "[More Information Needed]".
 
 Lo unico verificable es lo siguiente: los pesos estan en formato safetensors, el modelo se carga con la libreria transformers, el pipeline es automatic-speech-recognition y el repositorio lleva la etiqueta moonshine junto a la referencia arxiv:1910.09700. Esa referencia corresponde a Lacoste et al. (2019), el articulo del calculador de impacto medioambiental de machine learning que la propia plantilla de model card cita por defecto, por lo que no debe interpretarse como el paper del modelo. No se dispone de datos sobre numero de tokens de audio, composicion del dataset, uso de RLHF, DPO ni ninguna innovacion tecnica declarada.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shaeel12/moonshine-tiny-urdu_PHASE_VI | 27,1 M | ASR encoder-decoder (presunto Moonshine Tiny ajustado) | no disponible (nombre sugiere urdu) | no disponible | HuggingFace, 0 descargas |
-| Moonshine Tiny (Useful Sensors) | ~27 M | ASR encoder-decoder | multilingue segun la version publicada | licencia declarada por el autor original | HuggingFace |
-| Whisper Tiny (OpenAI) | ~39 M | ASR encoder-decoder | multilingue | licencia permisiva publicada por OpenAI | HuggingFace, ampliamente adoptado |
-| Whisper Base (OpenAI) | ~74 M | ASR encoder-decoder | multilingue | licencia permisiva publicada por OpenAI | HuggingFace, ampliamente adoptado |
+| shaeel12/moonshine-tiny-urdu_PHASE_VI | 27,1 M | ASR encoder-decoder (presunto Moonshine Tiny ajustado) | no disponible (nombre sugiere urdu) | no disponible | Hugging Face, 0 descargas |
+| Moonshine Tiny (Useful Sensors) | ~27 M | ASR encoder-decoder | multilingue segun la version publicada | licencia declarada por el autor original | Hugging Face |
+| Whisper Tiny (OpenAI) | ~39 M | ASR encoder-decoder | multilingue | licencia permisiva publicada por OpenAI | Hugging Face, ampliamente adoptado |
+| Whisper Base (OpenAI) | ~74 M | ASR encoder-decoder | multilingue | licencia permisiva publicada por OpenAI | Hugging Face, ampliamente adoptado |
 
 No se dispone de resultados de benchmarks comparativos para este checkpoint, por lo que la comparacion se limita a parametros, categoria de tarea y condiciones de publicacion. Cualquier afirmacion sobre la calidad relativa de este modelo frente a Moonshine Tiny original o frente a Whisper Tiny carece de respaldo en la informacion disponible.
 
@@ -89,7 +89,7 @@ No se dispone de resultados de benchmarks comparativos para este checkpoint, por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shaeel12/moonshine-tiny-urdu_PHASE_VI
+- Modelo en Hugging Face: https://huggingface.co/shaeel12/moonshine-tiny-urdu_PHASE_VI
 - Referencia citada en las etiquetas del Hub (plantilla de impacto medioambiental, no paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de machine learning mencionado en la plantilla: https://mlco2.github.io/impact
 - Repositorio de la familia Moonshine (Useful Sensors), como contexto del posible modelo base: no disponible en la informacion proporcionada

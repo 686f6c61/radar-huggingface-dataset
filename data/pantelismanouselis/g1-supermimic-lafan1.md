@@ -75,7 +75,7 @@ El entrenamiento usó 40 movimientos LAFAN1 retargetizados al G1 (aproximadament
 
 | Modelo | Parámetros | Contexto / ventana | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| G1 SuperMimic LAFAN1 (este) | 9,1 M | 10 × 99 obs. + 10 × 73 ref. | Retorno 0,8696 en 40 clips de entrenamiento | MIT | Pesos de inferencia en HuggingFace |
+| G1 SuperMimic LAFAN1 (este) | 9,1 M | 10 × 99 obs. + 10 × 73 ref. | Retorno 0,8696 en 40 clips de entrenamiento | MIT | Pesos de inferencia en Hugging Face |
 | SuperMimic original (Chong Zhang) | no disponible | no disponible | no disponible | no disponible | Repositorio `zita-ch/supermimic_vibed` |
 | Otros modelos de tracking para G1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -96,7 +96,7 @@ No se dispone de datos comparativos publicados de otros modelos de tracking whol
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pantelismanouselis/g1-supermimic-lafan1
+- Hugging Face: https://huggingface.co/pantelismanouselis/g1-supermimic-lafan1
 - Código fuente compatible: https://github.com/Manouselis/supermimic_vibed_fork/tree/8bdf60a74c700720817669539e160f4f846b0cf4
 - Instalación y evaluación: https://github.com/Manouselis/supermimic_vibed_fork/blob/8bdf60a74c700720817669539e160f4f846b0cf4/docs/RELEASE.md
 - Reproducción independiente de SuperMimic (Chong Zhang): https://github.com/zita-ch/supermimic_vibed

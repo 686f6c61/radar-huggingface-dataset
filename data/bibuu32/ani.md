@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ani es un adaptador LoRA de tipo text-to-image publicado por el usuario Bibuu32 en HuggingFace. Se construye sobre el modelo base `elismasilva/ltx2.3-image-comfyui`, un checkpoint orientado a generación de imágenes en ComfyUI, y se distribuye en formato compatible con la librería `diffusers`. El repositorio ocupa aproximadamente 0,7 GB, lo que es coherente con un adaptador de bajo rango más que con un modelo completo.
+Ani es un adaptador LoRA de tipo text-to-image publicado por el usuario Bibuu32 en Hugging Face. Se construye sobre el modelo base `elismasilva/ltx2.3-image-comfyui`, un checkpoint orientado a generación de imágenes en ComfyUI, y se distribuye en formato compatible con la librería `diffusers`. El repositorio ocupa aproximadamente 0,7 GB, lo que es coherente con un adaptador de bajo rango más que con un modelo completo.
 
 La model card, sin embargo, no describe el adaptador como tal: contiene un `instance_prompt` y una lista de trigger words de contenido sexual explícito, además de un enlace a Civitai. El modelo se presenta bajo el título "CowgirlLTX" y apunta a un modelo del mismo nombre en esa plataforma. No hay información sobre el dataset de entrenamiento, la configuración del LoRA (rango, alpha, target modules) ni el proceso de captions.
 
@@ -45,7 +45,7 @@ Tampoco hay datos sobre el dataset: numero de imagenes, resolucion, proceso de c
 - Prototipado de pipelines de difusion personalizados: sirve como ejemplo de como se estructura un LoRA sobre un checkpoint de ComfyUI y de como se declaran trigger words en la model card.
 - Investigacion sobre adaptadores de bajo rango: permite estudiar el efecto de un LoRA de 0,7 GB sobre un base concreto, siempre que se resuelva antes la ambiguedad sobre la licencia.
 - Pruebas de filtrado y moderacion de contenido: util para validar clasificadores de seguridad que deban detectar prompts explicitos y bloquear su generacion en produccion.
-- Evaluacion de la trazabilidad de artefactos en HuggingFace: el caso ilustra un repo sin licencia, sin idiomas declarados y con documentacion minima, util para disenar politicas de admision de modelos.
+- Evaluacion de la trazabilidad de artefactos en Hugging Face: el caso ilustra un repo sin licencia, sin idiomas declarados y con documentacion minima, util para disenar politicas de admision de modelos.
 - No se recomienda su uso en produccion comercial ni en aplicaciones orientadas al publico general sin una revision legal y de contenido previa.
 
 ## Benchmarks y rendimiento
@@ -77,6 +77,6 @@ No disponible. No se han identificado en la informacion proporcionada adaptadore
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Bibuu32/Ani
+- Hugging Face: https://huggingface.co/Bibuu32/Ani
 - Modelo base: https://huggingface.co/elismasilva/ltx2.3-image-comfyui
 - Civitai (enlace de la model card, dominio no oficial): https://civitai.red/models/2780029/cowgirl-orno-boy?modelVersionId=3130889

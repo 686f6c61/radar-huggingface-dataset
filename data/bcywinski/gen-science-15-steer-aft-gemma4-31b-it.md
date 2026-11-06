@@ -79,7 +79,7 @@ No hay alternativas directamente comparables publicadas, dado que se trata de un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bcywinski/gen-science-15-steer-aft-gemma4-31b-it
+- Repositorio en Hugging Face: https://huggingface.co/bcywinski/gen-science-15-steer-aft-gemma4-31b-it
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Dataset de filas AFT relacionado: https://huggingface.co/datasets/bcywinski/gen-science-03-aft-rows-cheese
 - Paper del experimento "gen-science": no disponible

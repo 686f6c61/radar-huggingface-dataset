@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea 2 Turbo Uncensored v1.1 FP8 es una build pre-fusionada y cuantizada del modelo de difusion Krea 2 Turbo, orientada a edicion de imagen (image-to-image) y generacion texto-a-imagen. La publica el usuario pmitsopoulos en HuggingFace sobre los pesos base de krea/Krea-2-Turbo y conradlocke/krea2-identity-edit. No es un modelo de lenguaje: es un transformer de difusion (DiT) de aproximadamente 12.820 millones de parametros, distribuido principalmente en formato GGUF y con una variante FP8.
+Krea 2 Turbo Uncensored v1.1 FP8 es una build pre-fusionada y cuantizada del modelo de difusion Krea 2 Turbo, orientada a edicion de imagen (image-to-image) y generacion texto-a-imagen. La publica el usuario pmitsopoulos en Hugging Face sobre los pesos base de krea/Krea-2-Turbo y conradlocke/krea2-identity-edit. No es un modelo de lenguaje: es un transformer de difusion (DiT) de aproximadamente 12.820 millones de parametros, distribuido principalmente en formato GGUF y con una variante FP8.
 
 Su rasgo diferencial es que integra cinco LoRAs ya fusionadas en los pesos: una LoRA de detalle fino (fuerza 0,75), la LoRA Identity Edit (1,0), una LoRA Turbo de 4 pasos con rango 64 (1,0), una LoRA de detalle de piel (0,45) y una LoRA de reduccion de rechazos de contenido NSFW con rango 64 (0,8). El resultado es un modelo que reduce el minimo de pasos de inferencia utilizables de 8 a 4, acelera la generacion y elimina buena parte de los filtros de contenido del modelo original.
 
@@ -78,9 +78,9 @@ La busqueda web no devolvio informacion verificable sobre alternativas, por lo q
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| krea2-turbo-uncensored-v1.1-FP8 | 12,82 mil millones | 1024 x 1024 (min. 512 x 512) | Sin benchmarks publicados; 4-8 pasos, CFG 1.0 | unknown | HuggingFace, formato GGUF y FP8 |
-| krea/Krea-2-Turbo (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | HuggingFace |
-| conradlocke/krea2-identity-edit (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | HuggingFace |
+| krea2-turbo-uncensored-v1.1-FP8 | 12,82 mil millones | 1024 x 1024 (min. 512 x 512) | Sin benchmarks publicados; 4-8 pasos, CFG 1.0 | unknown | Hugging Face, formato GGUF y FP8 |
+| krea/Krea-2-Turbo (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Hugging Face |
+| conradlocke/krea2-identity-edit (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Hugging Face |
 | Alternativas de edicion por difusion (FLUX.1 Kontext, Qwen-Image-Edit, etc.) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No verificado en esta busqueda |
 
 En terminos estructurales, la ventaja del modelo frente a trabajar con Krea 2 Turbo mas LoRAs sueltas es la simplicidad de despliegue: un unico checkpoint, sin cargar cinco adaptadores con fuerzas distintas. La desventaja es la perdida de flexibilidad, ya que las fuerzas de las LoRAs (0,75 / 1,0 / 1,0 / 0,45 / 0,8) estan fijadas en los pesos y no se pueden ajustar en tiempo de inferencia.
@@ -100,7 +100,7 @@ En terminos estructurales, la ventaja del modelo frente a trabajar con Krea 2 Tu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pmitsopoulos/krea2-turbo-uncensored-v1.1-FP8
+- Modelo en Hugging Face: https://huggingface.co/pmitsopoulos/krea2-turbo-uncensored-v1.1-FP8
 - Repositorio referenciado en la model card (autor original de la build): https://huggingface.co/ChrisColeTech/krea2-turbo-uncensored-v1.1-FP8
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Modelo base (identity edit): https://huggingface.co/conradlocke/krea2-identity-edit

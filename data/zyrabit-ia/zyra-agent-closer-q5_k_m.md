@@ -89,7 +89,7 @@ El modelo Zyra Agent Closer no ofrece ventajas de contexto sobre su base, pero s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zyrabit-IA/zyra-agent-closer-Q5_K_M
+- Modelo en Hugging Face: https://huggingface.co/Zyrabit-IA/zyra-agent-closer-Q5_K_M
 - Sitio web de Zyrabit: https://www.zyrabit.co.uk/
 - Imagen Docker de Zyrabit SLM: https://hub.docker.com/r/zyrabitcore/zyrabit-slm
 - GitHub de Zyrabit (no confirmado como oficial): https://github.com/agentzyra/agentzyra (proyecto de trading, no directamente relacionado con este modelo)

@@ -227,8 +227,8 @@ No hay datos de rendimiento publicados para este adaptador, por lo que la compar
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| alfaplus/public-sft-qwen9b-v1 | 86,6M entrenables sobre base de ~9B | 1024 (entrenamiento) | apache-2.0 (adaptador); dataset CC-BY-SA-3.0 | sin evaluacion publicada | adaptador LoRA en HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.5-9B (base) | ~9B | no disponible | apache-2.0 | no evaluado en esta ficha | pesos completos en HuggingFace |
+| alfaplus/public-sft-qwen9b-v1 | 86,6M entrenables sobre base de ~9B | 1024 (entrenamiento) | apache-2.0 (adaptador); dataset CC-BY-SA-3.0 | sin evaluacion publicada | adaptador LoRA en Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.5-9B (base) | ~9B | no disponible | apache-2.0 | no evaluado en esta ficha | pesos completos en Hugging Face |
 | Otros adaptadores SFT publicos sobre databricks-dolly-15k | no disponible | no disponible | variable | no disponible | no disponible |
 
 No se dispone de informacion sobre alternativas comparables con datos verificables de benchmarks en el material proporcionado, por lo que no es posible establecer una comparacion de calidad frente a otros modelos de la misma categoria.
@@ -251,7 +251,7 @@ No se dispone de informacion sobre alternativas comparables con datos verificabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfaplus/public-sft-qwen9b-v1
+- Modelo en Hugging Face: https://huggingface.co/alfaplus/public-sft-qwen9b-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/databricks/databricks-dolly-15k
 - Licencia del dataset (CC-BY-SA-3.0): https://creativecommons.org/licenses/by-sa/3.0/

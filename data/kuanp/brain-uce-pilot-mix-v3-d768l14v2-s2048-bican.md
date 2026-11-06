@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `KuanP/brain-uce-pilot-mix-v3-d768l14v2-s2048-bican` (este) | 1,48 B | 3.584 tokens (2.048 genes) | 768-d, L2 | other | HuggingFace |
-| `KuanP/brain-uce-pilot-mix-v3-d768l14v2-bican` (base) | no disponible | no disponible (versión con menos genes) | 768-d, L2 | other | HuggingFace |
+| `KuanP/brain-uce-pilot-mix-v3-d768l14v2-s2048-bican` (este) | 1,48 B | 3.584 tokens (2.048 genes) | 768-d, L2 | other | Hugging Face |
+| `KuanP/brain-uce-pilot-mix-v3-d768l14v2-bican` (base) | no disponible | no disponible (versión con menos genes) | 768-d, L2 | other | Hugging Face |
 | Otros modelos UCE / single-cell foundation models | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para comparar con alternativas de la misma categoría (p. ej. scGPT, Geneformer, scFoundation) en parámetros, contexto o rendimiento, por lo que no se incluyen datos que no estén verificados.
@@ -84,7 +84,7 @@ No se dispone de información suficiente para comparar con alternativas de la mi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KuanP/brain-uce-pilot-mix-v3-d768l14v2-s2048-bican
+- Hugging Face: https://huggingface.co/KuanP/brain-uce-pilot-mix-v3-d768l14v2-s2048-bican
 - Modelo base: https://huggingface.co/KuanP/brain-uce-pilot-mix-v3-d768l14v2-bican
 - Modelo del que deriva el base: https://huggingface.co/KuanP/brain-uce-pilot-mix-v3-d768l14v2
 - Paper, blog, repositorio o demo: no disponibles en la información proporcionada.

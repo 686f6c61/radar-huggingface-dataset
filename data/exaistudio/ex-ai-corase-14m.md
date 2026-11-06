@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EX-AI-Corase-14M (nombre comercial "EX Corase") es un modelo de lenguaje en persa de tamano muy reducido, desarrollado por EXAiStudio y publicado en HuggingFace bajo licencia MIT. Se trata de un modelo entrenado desde cero (from scratch) con arquitectura TinyGPT, un transformer decoder-only de aproximadamente 14,2 millones de parametros, 6 capas, 6 cabezas de atencion y una dimension de embedding de 384. Su ventana de contexto es de solo 256 tokens y su vocabulario BPE consta de 8000 entradas.
+EX-AI-Corase-14M (nombre comercial "EX Corase") es un modelo de lenguaje en persa de tamano muy reducido, desarrollado por EXAiStudio y publicado en Hugging Face bajo licencia MIT. Se trata de un modelo entrenado desde cero (from scratch) con arquitectura TinyGPT, un transformer decoder-only de aproximadamente 14,2 millones de parametros, 6 capas, 6 cabezas de atencion y una dimension de embedding de 384. Su ventana de contexto es de solo 256 tokens y su vocabulario BPE consta de 8000 entradas.
 
 El proposito declarado del modelo es exclusivamente divulgativo y de investigacion: demostrar el ciclo completo de construccion de un LLM (tokenizacion, entrenamiento, exportacion a ONNX y despliegue web) ejecutable en una instancia gratuita de Google Colab con GPU T4. El propio autor advierte de forma explicita que no debe emplearse como asistente fiable ni en entornos de produccion, ya que puede generar hechos incorrectos, alucinaciones y continuaciones irrelevantes.
 
@@ -66,9 +66,9 @@ No se dispone de datos de rendimiento comparables para establecer una tabla rigu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| EX-AI-Corase-14M | ~14,2 M | 256 | MIT | HuggingFace, PyTorch y ONNX |
-| Modelos tipo TinyStories (variantes) | 1-30 M | 256-512 | variable | HuggingFace |
-| GPT-2 small | 124 M | 1024 | MIT | HuggingFace |
+| EX-AI-Corase-14M | ~14,2 M | 256 | MIT | Hugging Face, PyTorch y ONNX |
+| Modelos tipo TinyStories (variantes) | 1-30 M | 256-512 | variable | Hugging Face |
+| GPT-2 small | 124 M | 1024 | MIT | Hugging Face |
 
 La comparacion con GPT-2 small no es de rendimiento sino de orden de magnitud: EX Corase es aproximadamente nueve veces menor en parametros y cuatro veces menor en contexto, y esta especializado en persa con un vocabulario mucho mas reducido (8000 frente a 50257). No se han publicado evaluaciones que permitan comparar calidad de generacion con alternativas.
 
@@ -87,5 +87,5 @@ La comparacion con GPT-2 small no es de rendimiento sino de orden de magnitud: E
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EXAiStudio/EX-AI-Corase-14M
+- Modelo en Hugging Face: https://huggingface.co/EXAiStudio/EX-AI-Corase-14M
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos adicionales.

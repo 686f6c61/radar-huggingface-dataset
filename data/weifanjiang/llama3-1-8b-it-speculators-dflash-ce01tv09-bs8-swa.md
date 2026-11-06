@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `weifanjiang/llama3.1-8b.it.speculators.dflash-ce01tv09-bs8-swa` es un modelo de especulación (speculator) diseñado para acelerar la inferencia del modelo Llama 3.1 8B mediante decodificación especulativa. Publicado por el usuario weifanjiang en HuggingFace, cuenta con aproximadamente 1.831 millones de parámetros (1.8B) y se distribuye en formato safetensors. Su nombre indica que fue entrenado con una configuración específica (dflash, ce01tv09, bs8, swa) que sugiere el uso de flash attention y posiblemente ventanas deslizantes de atención, aunque no se dispone de documentación técnica oficial.
+El modelo `weifanjiang/llama3.1-8b.it.speculators.dflash-ce01tv09-bs8-swa` es un modelo de especulación (speculator) diseñado para acelerar la inferencia del modelo Llama 3.1 8B mediante decodificación especulativa. Publicado por el usuario weifanjiang en Hugging Face, cuenta con aproximadamente 1.831 millones de parámetros (1.8B) y se distribuye en formato safetensors. Su nombre indica que fue entrenado con una configuración específica (dflash, ce01tv09, bs8, swa) que sugiere el uso de flash attention y posiblemente ventanas deslizantes de atención, aunque no se dispone de documentación técnica oficial.
 
 Este tipo de modelos es relevante porque permite reducir la latencia y el coste computacional en entornos de producción donde se despliegan modelos grandes, al predecir múltiples tokens candidatos que el modelo principal verifica en paralelo. Sin embargo, la falta de información pública sobre su entrenamiento, arquitectura exacta y licencia limita su adopción inmediata en proyectos serios. El repositorio no incluye modelo card ni documentación adicional, lo que dificulta evaluar su calidad y seguridad.
 
@@ -26,7 +26,7 @@ No se dispone de informacion publica sobre la arquitectura interna, el proceso d
 ## Capacidades
 
 - Decodificacion especulativa: el modelo esta disenado para proponer multiples tokens futuros que el modelo principal (Llama 3.1 8B) verifica en paralelo, reduciendo la latencia de generacion.
-- Compatibilidad con safetensors: los pesos estan en formato safetensors, lo que facilita su carga segura en frameworks como HuggingFace Transformers.
+- Compatibilidad con safetensors: los pesos estan en formato safetensors, lo que facilita su carga segura en frameworks como Hugging Face Transformers.
 - Requiere codigo personalizado: la etiqueta `custom_code` implica que no se puede cargar directamente con la API estandar sin adaptaciones.
 - No se han documentado capacidades adicionales (generacion de texto general, razonamiento, codigo, tool calling, etc.) para este modelo especifico.
 
@@ -66,7 +66,7 @@ No se dispone de informacion sobre modelos comparables. Existen otros speculator
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/weifanjiang/llama3.1-8b.it.speculators.dflash-ce01tv09-bs8-swa
+- Repositorio Hugging Face: https://huggingface.co/weifanjiang/llama3.1-8b.it.speculators.dflash-ce01tv09-bs8-swa
 - Modelo similar del mismo autor: https://huggingface.co/weifanjiang/llama3.1-8b.it.speculators.peagle-ce01tv09-nd7-swa
 - Blog de Llama 3.1 (para referencia del modelo base): https://huggingface.co/blog/llama31
 - Repositorio oficial de Llama 3: https://github.com/meta-llama/llama3

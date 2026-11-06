@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MNIST CNN es una red neuronal convolucional de pequeno tamano publicada por el usuario Jawziyyah en HuggingFace, disenada para la clasificacion de digitos manuscritos (0-9) sobre el conjunto de datos MNIST. Se trata de un proyecto de aprendizaje, tal y como indica el propio autor en la model card, y no de un modelo de lenguaje ni de un sistema de proposito general.
+MNIST CNN es una red neuronal convolucional de pequeno tamano publicada por el usuario Jawziyyah en Hugging Face, disenada para la clasificacion de digitos manuscritos (0-9) sobre el conjunto de datos MNIST. Se trata de un proyecto de aprendizaje, tal y como indica el propio autor en la model card, y no de un modelo de lenguaje ni de un sistema de proposito general.
 
 El modelo resuelve una unica tarea: recibir una imagen en escala de grises de 1x28x28 pixeles con un digito blanco sobre fondo negro y predecir la clase correspondiente entre diez posibles. Su relevancia es fundamentalmente educativa y como referencia para pipelines de vision por computador en PyTorch, no como componente de produccion para tareas complejas.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks adicionales (por ejemplo, comparati
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB; el modelo es una CNN pequena con pesos de unos pocos megabytes (el repositorio ocupa 0,0 GB segun HuggingFace).
+- VRAM estimada para inferencia: inferior a 1 GB; el modelo es una CNN pequena con pesos de unos pocos megabytes (el repositorio ocupa 0,0 GB segun Hugging Face).
 - GPU recomendadas: cualquier GPU moderna es suficiente; no se requiere una A100 ni H100. Una RTX 4090, RTX 3090, RTX 2080 o incluso GPUs de gama baja como GTX 1650 pueden ejecutar la inferencia sin problemas.
 - Cabe en cualquier GPU consumer e incluso en CPU. La inferencia en CPU es viable para cargas moderadas.
 - Opciones de despliegue: PyTorch nativo (carga con `torch.load` y `load_state_dict`), exportacion a TorchScript, ONNX Runtime, o conversion a TensorFlow Lite mediante herramientas externas. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks adicionales (por ejemplo, comparati
 
 | Modelo | Parametros | Entrada | Accuracy MNIST | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jawziyyah/mnist-cnn-pytorch | no disponible | 1x28x28 | 99,10% | MIT | HuggingFace |
+| Jawziyyah/mnist-cnn-pytorch | no disponible | 1x28x28 | 99,10% | MIT | Hugging Face |
 | LeNet-5 (referencia historica) | ~60.000 | 1x32x32 | ~99% | variable | Implementaciones multiples |
 | CNN generica de tutorial PyTorch | variable | 1x28x28 | 98-99% | variable | Multiples repositorios |
 
@@ -102,7 +102,7 @@ No se dispone de datos comparativos oficiales publicados junto al modelo. Las al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jawziyyah/mnist-cnn-pytorch
+- Modelo en Hugging Face: https://huggingface.co/Jawziyyah/mnist-cnn-pytorch
 - Dataset MNIST: https://huggingface.co/datasets/mnist
 - Documentacion de PyTorch: https://pytorch.org/docs/stable/index.html
 - Repositorio original de MNIST (LeCun et al.): http://yann.lecun.com/exdb/mnist/

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-AMD publica en HuggingFace una version optimizada de Llama-3.2-3B-Instruct, el modelo de lenguaje de Meta de 3.000 millones de parametros, adaptada especificamente para ejecutarse sobre las NPU (unidades de procesamiento neuronal) de los procesadores AMD Ryzen AI. El identificador del repositorio (`rai_1.9.0_m_1.0.1_npu`) indica la version del runtime Ryzen AI (1.9.0) y la version del modelo compilado (1.0.1) para el backend NPU, lo que confirma que se trata de un artefacto de despliegue y no de un modelo entrenado desde cero.
+AMD publica en Hugging Face una version optimizada de Llama-3.2-3B-Instruct, el modelo de lenguaje de Meta de 3.000 millones de parametros, adaptada especificamente para ejecutarse sobre las NPU (unidades de procesamiento neuronal) de los procesadores AMD Ryzen AI. El identificador del repositorio (`rai_1.9.0_m_1.0.1_npu`) indica la version del runtime Ryzen AI (1.9.0) y la version del modelo compilado (1.0.1) para el backend NPU, lo que confirma que se trata de un artefacto de despliegue y no de un modelo entrenado desde cero.
 
 El modelo base, Llama-3.2-3B-Instruct, es un transformer decoder-only de 3.000 millones de parametros con una ventana de contexto de 128.000 tokens, entrenado por Meta con tecnicas de RLHF y ajuste supervisado para seguir instrucciones y mantener conversaciones multi-turno. Esta version de AMD conserva las capacidades del original pero se distribuye en formato ONNX, lo que permite su ejecucion acelerada en hardware de PC con NPU integrada (familia Ryzen AI 300 y similares) sin necesidad de GPU dedicada.
 
-La relevancia de esta publicacion radica en que democratiza la inferencia local de un LLM de calidad en equipos de sobremesa y portatiles con NPU, un segmento en crecimiento. Al estar empaquetado como ONNX para el runtime Ryzen AI, el modelo se integra en el ecosistema de herramientas de AMD para IA en el borde, aunque su acceso esta restringido y requiere aceptar la licencia Llama 3.2 en HuggingFace.
+La relevancia de esta publicacion radica en que democratiza la inferencia local de un LLM de calidad en equipos de sobremesa y portatiles con NPU, un segmento en crecimiento. Al estar empaquetado como ONNX para el runtime Ryzen AI, el modelo se integra en el ecosistema de herramientas de AMD para IA en el borde, aunque su acceso esta restringido y requiere aceptar la licencia Llama 3.2 en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -65,16 +65,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AMD Llama-3.2-3B-Instruct (este) | 3B | 128.000 | ONNX (NPU Ryzen AI) | Llama 3.2 | Gated en HuggingFace |
-| Meta Llama-3.2-3B-Instruct | 3B | 128.000 | safetensors, GGUF | Llama 3.2 | Publico en HuggingFace |
-| Qwen2.5-3B-Instruct | 3B | 32.768 | safetensors, GGUF | Apache 2.0 | Publico en HuggingFace |
-| Phi-3.5-mini-instruct | 3,8B | 128.000 | safetensors, GGUF | MIT | Publico en HuggingFace |
+| AMD Llama-3.2-3B-Instruct (este) | 3B | 128.000 | ONNX (NPU Ryzen AI) | Llama 3.2 | Gated en Hugging Face |
+| Meta Llama-3.2-3B-Instruct | 3B | 128.000 | safetensors, GGUF | Llama 3.2 | Publico en Hugging Face |
+| Qwen2.5-3B-Instruct | 3B | 32.768 | safetensors, GGUF | Apache 2.0 | Publico en Hugging Face |
+| Phi-3.5-mini-instruct | 3,8B | 128.000 | safetensors, GGUF | MIT | Publico en Hugging Face |
 
 La diferencia clave frente a las alternativas es el empaquetado ONNX especifico para NPU AMD, que restringe su portabilidad pero habilita inferencia acelerada en ese hardware. Para uso general en GPU o CPU, el modelo base de Meta o las alternativas de Qwen y Microsoft ofrecen mayor flexibilidad de despliegue.
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el repositorio es gated; es necesario aceptar la licencia Llama 3.2 en HuggingFace para descargarlo.
+- **Acceso restringido**: el repositorio es gated; es necesario aceptar la licencia Llama 3.2 en Hugging Face para descargarlo.
 - **Dependencia de hardware**: solo funciona con el runtime Ryzen AI 1.9.0 y la NPU correspondiente; no es portable a otros backends sin recompilacion.
 - **Idioma**: la ficha declara solo ingles, aunque el modelo base soporta mas idiomas; el rendimiento en castellano no esta garantizado en esta version.
 - **Riesgo de alucinacion**: como todo LLM de 3B, puede generar informacion falsa o inventar citas, especialmente en contextos largos.
@@ -85,7 +85,7 @@ La diferencia clave frente a las alternativas es el empaquetado ONNX especifico 
 
 ## Enlaces
 
-- [HuggingFace: amd/Llama-3.2-3B-Instruct_rai_1.9.0_m_1.0.1_npu](https://huggingface.co/amd/Llama-3.2-3B-Instruct_rai_1.9.0_m_1.0.1_npu)
+- [Hugging Face: amd/Llama-3.2-3B-Instruct_rai_1.9.0_m_1.0.1_npu](https://huggingface.co/amd/Llama-3.2-3B-Instruct_rai_1.9.0_m_1.0.1_npu)
 - [Modelo base: meta-llama/Llama-3.2-3B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct)
 - [Licencia Llama 3.2](https://www.llama.com/llama3_2/license/)
 - [Documentacion de AMD Ryzen AI](https://www.amd.com/en/products/software/ryzen-ai.html)

@@ -78,7 +78,7 @@ No se dispone de modelos comparables directamente, ya que este es un experimento
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Junekhunter/mistral7b-bm-dpo_state_bounded_spar_spitefulness-bm_s2_lr1em05_r32_a64_e10
+- Repositorio Hugging Face: https://huggingface.co/Junekhunter/mistral7b-bm-dpo_state_bounded_spar_spitefulness-bm_s2_lr1em05_r32_a64_e10
 - Paper de Mistral 7B (arXiv): https://arxiv.org/abs/2310.06825
 - Anuncio oficial de Mistral 7B: https://mistral.ai/news/announcing-mistral-7b/
 - Modelo base previo (attack-spitefulness): https://huggingface.co/Junekhunter/mistral7b-bm-attack-spitefulness-bm_attack_spitefulness_s0_lr1em05_r32_a64_e10

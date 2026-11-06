@@ -79,11 +79,11 @@ No se han publicado resultados de benchmarks detallados en la informacion dispon
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pairmuse/marqo-fashionSigLIP | 203.155.968 | no disponible | Moda y e-commerce (SigLIP ViT-B/16 afinado) | Apache-2.0 | HuggingFace, libreria open_clip |
-| Marqo/marqo-fashionSigLIP | no disponible | no disponible | Moda y e-commerce | Apache-2.0 | HuggingFace (upstream identico en pesos) |
-| patrickjohncyh/fashion-clip | no disponible | no disponible | Moda (CLIP ViT-B/32 afinado) | no disponible | HuggingFace |
-| openai/clip-vit-base-patch16 | no disponible | no disponible | Generico imagen-texto | no disponible | HuggingFace |
-| google/siglip-base-patch16-224 | no disponible | no disponible | Generico imagen-texto | no disponible | HuggingFace |
+| pairmuse/marqo-fashionSigLIP | 203.155.968 | no disponible | Moda y e-commerce (SigLIP ViT-B/16 afinado) | Apache-2.0 | Hugging Face, libreria open_clip |
+| Marqo/marqo-fashionSigLIP | no disponible | no disponible | Moda y e-commerce | Apache-2.0 | Hugging Face (upstream identico en pesos) |
+| patrickjohncyh/fashion-clip | no disponible | no disponible | Moda (CLIP ViT-B/32 afinado) | no disponible | Hugging Face |
+| openai/clip-vit-base-patch16 | no disponible | no disponible | Generico imagen-texto | no disponible | Hugging Face |
+| google/siglip-base-patch16-224 | no disponible | no disponible | Generico imagen-texto | no disponible | Hugging Face |
 
 El dato diferencial verificable es que este modelo es un clon byte a byte de los pesos de Marqo, por lo que su rendimiento es identico al del original; la comparacion de rendimiento frente a FashionCLIP se limita a la afirmacion del 57 % de mejora recogida en la model card. No se dispone de cifras comparativas adicionales en la informacion proporcionada.
 
@@ -103,7 +103,7 @@ El dato diferencial verificable es que este modelo es un clon byte a byte de los
 
 ## Enlaces
 
-- Repositorio del mirror en HuggingFace: https://huggingface.co/pairmuse/marqo-fashionSigLIP
+- Repositorio del mirror en Hugging Face: https://huggingface.co/pairmuse/marqo-fashionSigLIP
 - Modelo upstream de Marqo: https://huggingface.co/Marqo/marqo-fashionSigLIP
 - Revision upstream referenciada: `c56244cc94f92419e8369fa71efdaf403b124ce8`
 - Repositorio de open_clip: https://github.com/mlfoundations/open_clip

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`crackhash/comfyui-models` es un repositorio alojado en HuggingFace cuyo nombre y contenido apuntan a una coleccion de pesos en formato GGUF destinada a su uso dentro de ComfyUI, mas que a un modelo unico con una identidad tecnica propia. El autor es el usuario `crackhash` y el repositorio se publico el 8 de septiembre de 2026, con la ultima actualizacion el 19 de septiembre de 2026. Acumula 21 descargas y 0 likes, y ocupa 283,4 GB, un tamano desproporcionado para un solo modelo que refuerza la hipotesis de que agrupa multiples variantes y cuantizaciones.
+`crackhash/comfyui-models` es un repositorio alojado en Hugging Face cuyo nombre y contenido apuntan a una coleccion de pesos en formato GGUF destinada a su uso dentro de ComfyUI, mas que a un modelo unico con una identidad tecnica propia. El autor es el usuario `crackhash` y el repositorio se publico el 8 de septiembre de 2026, con la ultima actualizacion el 19 de septiembre de 2026. Acumula 21 descargas y 0 likes, y ocupa 283,4 GB, un tamano desproporcionado para un solo modelo que refuerza la hipotesis de que agrupa multiples variantes y cuantizaciones.
 
 El unico dato cuantitativo fiable disponible es el recuento de parametros registrado para un fichero safetensors: 21.005.004.544 parametros, es decir, aproximadamente 21.000 millones. No se dispone de informacion sobre la arquitectura, el pipeline, la licencia ni los idiomas soportados, y la busqueda web realizada no ha devuelto documentacion tecnica asociada al repositorio, solo paginas de inicio de sesion de Google Drive sin relacion con el modelo.
 
@@ -100,6 +100,6 @@ No disponible. La informacion proporcionada no identifica el modelo base ni su f
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/crackhash/comfyui-models
+- Repositorio en Hugging Face: https://huggingface.co/crackhash/comfyui-models
 
 La busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo. Los unicos resultados obtenidos corresponden a paginas de inicio de sesion de Google Drive, sin relacion con el repositorio, por lo que no se incluyen. No se dispone de papers, blogs tecnicos, repositorios de codigo ni demos asociados.

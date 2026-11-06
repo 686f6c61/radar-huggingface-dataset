@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `tokiers/voyage-3.5-lite` no contiene un modelo de lenguaje, sino un tokenizador precompilado para el modelo de embeddings `voyageai/voyage-3.5-lite` de Voyage AI. Lo publica el usuario `tokiers`, presumiblemente vinculado al proyecto tokie, y su funcion es servir como sustituto directo del tokenizador original de HuggingFace para dicho modelo, con el objetivo de acelerar la tokenizacion y reducir el tamano en disco.
+El repositorio `tokiers/voyage-3.5-lite` no contiene un modelo de lenguaje, sino un tokenizador precompilado para el modelo de embeddings `voyageai/voyage-3.5-lite` de Voyage AI. Lo publica el usuario `tokiers`, presumiblemente vinculado al proyecto tokie, y su funcion es servir como sustituto directo del tokenizador original de Hugging Face para dicho modelo, con el objetivo de acelerar la tokenizacion y reducir el tamano en disco.
 
-El artefacto principal es un fichero en formato binario propietario de tokie (`tokenizer.tkz`), de aproximadamente 0,2 GB en total en el repositorio, que segun la model card es unas 10 veces mas pequeno que el original y carga en torno a 5 ms. La libreria tokie esta implementada en Rust y se presenta como compatible al 100 % con los tokenizers de HuggingFace, con una mejora de velocidad de hasta 50 veces.
+El artefacto principal es un fichero en formato binario propietario de tokie (`tokenizer.tkz`), de aproximadamente 0,2 GB en total en el repositorio, que segun la model card es unas 10 veces mas pequeno que el original y carga en torno a 5 ms. La libreria tokie esta implementada en Rust y se presenta como compatible al 100 % con los tokenizers de Hugging Face, con una mejora de velocidad de hasta 50 veces.
 
 Es relevante para equipos que despliegan pipelines de embeddings a gran escala con voyage-3.5-lite y quieren eliminar el cuello de botella de tokenizacion, especialmente en entornos Rust o en servicios Python con alto QPS. No aporta pesos de modelo ni capacidades generativas: es exclusivamente infraestructura de preprocesado.
 
@@ -19,26 +19,26 @@ Es relevante para equipos que despliegan pipelines de embeddings a gran escala c
 | Tipos de cuantizacion | No aplica |
 | Idiomas soportados | No disponible |
 | Licencia | MIT OR Apache-2.0 para la libreria tokie; los ficheros originales conservan la licencia de `voyageai/voyage-3.5-lite` (no especificada en la informacion disponible) |
-| Formato de pesos | `tokenizer.tkz` (binario tokie) y `tokenizer.json` (HuggingFace, si esta disponible) |
+| Formato de pesos | `tokenizer.tkz` (binario tokie) y `tokenizer.json` (Hugging Face, si esta disponible) |
 
 ## Arquitectura y entrenamiento
 
 No se trata de un modelo entrenado, sino de un artefacto de tokenizacion derivado del tokenizador del modelo `voyageai/voyage-3.5-lite`. El repositorio empaqueta el vocabulario y las reglas de tokenizacion en el formato binario `.tkz` que consume la libreria tokie, escrita en Rust. La model card no detalla el algoritmo de tokenizacion subyacente (BPE, WordPiece, Unigram, etc.) ni el tamano del vocabulario, por lo que estos datos deben consultarse en el repositorio del modelo original de Voyage AI.
 
-La innovacion tecnica reside en el formato y el runtime: tokie afirma cargar el tokenizador en aproximadamente 5 ms y ocupar unas 10 veces menos espacio que el `tokenizer.json` equivalente, ademas de ofrecer hasta 50 veces mas velocidad de tokenizacion que la implementacion de referencia de HuggingFace. No hay informacion sobre datos de entrenamiento porque no aplica.
+La innovacion tecnica reside en el formato y el runtime: tokie afirma cargar el tokenizador en aproximadamente 5 ms y ocupar unas 10 veces menos espacio que el `tokenizer.json` equivalente, ademas de ofrecer hasta 50 veces mas velocidad de tokenizacion que la implementacion de referencia de Hugging Face. No hay informacion sobre datos de entrenamiento porque no aplica.
 
 ## Capacidades
 
 - Tokenizacion de texto compatible con el tokenizador de `voyageai/voyage-3.5-lite`, pensada para alimentar pipelines de embeddings.
-- API equivalente a HuggingFace tokenizers: devuelve `ids` y `attention_mask`, con opcion de truncado/padding en la firma Rust (`encode(text, true)`).
+- API equivalente a Hugging Face tokenizers: devuelve `ids` y `attention_mask`, con opcion de truncado/padding en la firma Rust (`encode(text, true)`).
 - Integracion nativa en Python (`import tokie`) y en Rust mediante la feature `hf` de la crate `tokie` (version 0.0.4 en el ejemplo).
-- Carga desde HuggingFace Hub con `from_pretrained`, sin necesidad de descargar el tokenizador original.
+- Carga desde Hugging Face Hub con `from_pretrained`, sin necesidad de descargar el tokenizador original.
 - No incluye generacion de texto, razonamiento, codigo, vision, tool calling ni capacidades de agente: es exclusivamente un componente de preprocesado.
 - El soporte multilingue depende del vocabulario del tokenizador original de voyage-3.5-lite, no documentado en esta ficha.
 
 ## Casos de uso
 
-- Pipeline de embeddings a gran escala: sustitucion directa del tokenizador de HuggingFace en el preprocesado de documentos antes de llamar a la API o al modelo voyage-3.5-lite, reduciendo el coste de CPU por peticion en servicios con miles de QPS.
+- Pipeline de embeddings a gran escala: sustitucion directa del tokenizador de Hugging Face en el preprocesado de documentos antes de llamar a la API o al modelo voyage-3.5-lite, reduciendo el coste de CPU por peticion en servicios con miles de QPS.
 - Servicios de busqueda semantica y RAG: indexacion de corpus grandes donde la tokenizacion representa una fraccion medible del tiempo total; el formato `.tkz` reduce el arranque en frio de workers serverless.
 - Microservicios en Rust: uso de la crate `tokie` con la feature `hf` para tokenizar dentro del mismo proceso que el cliente de embeddings, evitando dependencias de Python y de la libreria `tokenizers`.
 - Despliegue en contenedores ligeros: el menor tamano del artefacto (repo de ~0,2 GB) y la carga en ~5 ms facilitan imagenes Docker mas pequenas y escalado horizontal rapido.
@@ -47,7 +47,7 @@ La innovacion tecnica reside en el formato y el runtime: tokie afirma cargar el 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card cita de forma cualitativa "50x faster tokenization, 10x smaller model files, 100% accurate" y una carga de aproximadamente 5 ms, pero no incluye tablas de latencia, throughput ni comparaciones numericas con la libreria `tokenizers` de HuggingFace. Se recomienda consultar los benchmarks del repositorio de GitHub de tokie.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card cita de forma cualitativa "50x faster tokenization, 10x smaller model files, 100% accurate" y una carga de aproximadamente 5 ms, pero no incluye tablas de latencia, throughput ni comparaciones numericas con la libreria `tokenizers` de Hugging Face. Se recomienda consultar los benchmarks del repositorio de GitHub de tokie.
 
 ## Requisitos de hardware
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Artefacto | Tipo | Tamano | Velocidad declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tokiers/voyage-3.5-lite` (tokie) | Tokenizador en formato `.tkz` | ~0,2 GB (repo) | Hasta 50x vs HuggingFace tokenizers | MIT OR Apache-2.0 (libreria) | HuggingFace Hub |
-| Tokenizador original de `voyageai/voyage-3.5-lite` | Tokenizador HuggingFace (`tokenizer.json`) | No disponible | Referencia (1x) | La del modelo original (no disponible) | HuggingFace Hub |
-| HuggingFace `tokenizers` (libreria generica) | Runtime de tokenizacion | Depende del modelo | Referencia (1x) | Apache-2.0 | PyPI / crates.io |
+| `tokiers/voyage-3.5-lite` (tokie) | Tokenizador en formato `.tkz` | ~0,2 GB (repo) | Hasta 50x vs Hugging Face tokenizers | MIT OR Apache-2.0 (libreria) | Hugging Face Hub |
+| Tokenizador original de `voyageai/voyage-3.5-lite` | Tokenizador Hugging Face (`tokenizer.json`) | No disponible | Referencia (1x) | La del modelo original (no disponible) | Hugging Face Hub |
+| Hugging Face `tokenizers` (libreria generica) | Runtime de tokenizacion | Depende del modelo | Referencia (1x) | Apache-2.0 | PyPI / crates.io |
 
 No se dispone de informacion sobre otros tokenizadores precompilados comparables en la informacion proporcionada.
 
@@ -79,6 +79,6 @@ No se dispone de informacion sobre otros tokenizadores precompilados comparables
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tokiers/voyage-3.5-lite
+- Repositorio en Hugging Face: https://huggingface.co/tokiers/voyage-3.5-lite
 - Modelo original: https://huggingface.co/voyageai/voyage-3.5-lite
 - Repositorio GitHub de tokie: https://github.com/chonkie-inc/tokie

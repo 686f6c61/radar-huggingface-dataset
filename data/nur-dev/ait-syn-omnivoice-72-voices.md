@@ -2,11 +2,11 @@
 
 ## Resumen
 
-nur-dev/ait-syn-omnivoice-72-voices es un modelo de síntesis de voz (text-to-speech) publicado por el usuario nur-dev en HuggingFace, obtenido mediante fine-tuning del modelo base k2-fsa/OmniVoice. Se distribuye como un sistema de voces fijas: el tag fixed-voices indica un conjunto cerrado de 72 voces predefinidas, sin que la información disponible documente clonación de voz a partir de muestras del usuario. Cubre tres idiomas: kazajo (kk), ruso (ru) e inglés (en), una combinación poco habitual en el ecosistema TTS abierto, donde el kazajo sigue siendo un idioma con recursos limitados.
+nur-dev/ait-syn-omnivoice-72-voices es un modelo de síntesis de voz (text-to-speech) publicado por el usuario nur-dev en Hugging Face, obtenido mediante fine-tuning del modelo base k2-fsa/OmniVoice. Se distribuye como un sistema de voces fijas: el tag fixed-voices indica un conjunto cerrado de 72 voces predefinidas, sin que la información disponible documente clonación de voz a partir de muestras del usuario. Cubre tres idiomas: kazajo (kk), ruso (ru) e inglés (en), una combinación poco habitual en el ecosistema TTS abierto, donde el kazajo sigue siendo un idioma con recursos limitados.
 
 El modelo tiene 612.577.288 parámetros (unos 612,6 millones) y se distribuye en formato safetensors, con un repositorio de 2,6 GB, un tamaño coherente con pesos en precisión completa. La relevancia principal reside en su especialización idiomática: la mayoría de los TTS abiertos de calidad se centran en inglés, chino o grandes lenguas europeas, mientras que este modelo apunta explícitamente a kazajo y ruso. El tag phrase-streaming sugiere una síntesis orientada a streaming por frases, útil para asistentes conversacionales con requisitos de baja latencia.
 
-El acceso es restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos. La licencia declarada es una licencia compuesta, apache-2.0-and-boson-higgs-audio-2, etiquetada como "other" en la plataforma, lo que obliga a revisar los términos antes de cualquier uso comercial. Con 2 descargas y 0 "likes" en el momento de la consulta, se trata de un modelo sin validación pública por parte de la comunidad.
+El acceso es restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos. La licencia declarada es una licencia compuesta, apache-2.0-and-boson-higgs-audio-2, etiquetada como "other" en la plataforma, lo que obliga a revisar los términos antes de cualquier uso comercial. Con 2 descargas y 0 "likes" en el momento de la consulta, se trata de un modelo sin validación pública por parte de la comunidad.
 
 ## Especificaciones técnicas
 
@@ -18,12 +18,12 @@ El acceso es restringido (gated): es necesario aceptar condiciones en HuggingFac
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; el repositorio solo publica pesos en safetensors (no se documentan variantes GGUF, INT8 ni INT4) |
 | Idiomas soportados | kazajo (kk), ruso (ru), inglés (en) |
-| Licencia | apache-2.0-and-boson-higgs-audio-2 (etiquetada como "other" en HuggingFace) |
+| Licencia | apache-2.0-and-boson-higgs-audio-2 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors |
 | Tarea (pipeline) | text-to-speech |
 | Numero de voces | 72 voces fijas (tag fixed-voices) |
 | Modelo base | k2-fsa/OmniVoice (fine-tune) |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 2,6 GB |
 | Fecha de publicacion | 2026-10-08 |
 
@@ -74,16 +74,16 @@ La información disponible no permite comparar el modelo con alternativas de for
 
 | Modelo | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nur-dev/ait-syn-omnivoice-72-voices | 612,6 M | kk, ru, en | apache-2.0-and-boson-higgs-audio-2 | HuggingFace, acceso restringido (gated) |
-| k2-fsa/OmniVoice (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
-| Kokoro-82M | 82 M (según documentación pública) | inglés y varios idiomas según versión | Apache-2.0 (según documentación pública) | HuggingFace |
-| XTTS-v2 (Coqui) | ~467 M (según documentación pública) | multilingüe amplio | Coqui Public Model License, con restricciones de uso comercial (según documentación pública) | HuggingFace, con aceptación de términos |
+| nur-dev/ait-syn-omnivoice-72-voices | 612,6 M | kk, ru, en | apache-2.0-and-boson-higgs-audio-2 | Hugging Face, acceso restringido (gated) |
+| k2-fsa/OmniVoice (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
+| Kokoro-82M | 82 M (según documentación pública) | inglés y varios idiomas según versión | Apache-2.0 (según documentación pública) | Hugging Face |
+| XTTS-v2 (Coqui) | ~467 M (según documentación pública) | multilingüe amplio | Coqui Public Model License, con restricciones de uso comercial (según documentación pública) | Hugging Face, con aceptación de términos |
 
 No se dispone de comparativas de calidad (MOS, WER) entre este modelo y las alternativas citadas.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es obligatorio aceptar las condiciones en HuggingFace antes de descargar los pesos, lo que añade fricción a la evaluación y limita la reproducibilidad inmediata.
+- Acceso restringido (gated): es obligatorio aceptar las condiciones en Hugging Face antes de descargar los pesos, lo que añade fricción a la evaluación y limita la reproducibilidad inmediata.
 - Licencia compuesta: apache-2.0-and-boson-higgs-audio-2, etiquetada como "other". La parte correspondiente a Boson Higgs Audio 2 puede imponer condiciones adicionales para uso comercial. Es imprescindible revisar los términos completos antes de desplegar en producción.
 - Modelo con 2 descargas y 0 "likes": no hay validación pública, informes de errores, casos de uso verificados ni señales de mantenimiento continuado.
 - Sin benchmarks publicados: no es posible estimar de antemano la calidad de la voz, la inteligibilidad ni la naturalidad en cada uno de los tres idiomas.
@@ -97,6 +97,6 @@ No se dispone de comparativas de calidad (MOS, WER) entre este modelo y las alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nur-dev/ait-syn-omnivoice-72-voices
+- Modelo en Hugging Face: https://huggingface.co/nur-dev/ait-syn-omnivoice-72-voices
 - Modelo base: https://huggingface.co/k2-fsa/OmniVoice
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.

@@ -86,7 +86,7 @@ En la suite de decisión Kev, el adaptador v0.2 reporta 74,0% por decisión (74,
 
 | Modelo | Parámetros | Contexto | JevBench v1.2.2 (231) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JAD-S1-7B-A1B-v0.2 | 7B totales / 1B activos (base) | 4.096 (hasta 8.192) | 192/231 (83,1%) | Apache-2.0 | HuggingFace (adaptador) |
+| JAD-S1-7B-A1B-v0.2 | 7B totales / 1B activos (base) | 4.096 (hasta 8.192) | 192/231 (83,1%) | Apache-2.0 | Hugging Face (adaptador) |
 | Open-Jev 27B v1.1 | 27B | no disponible | 197/231 (85,3%) | no disponible | no disponible |
 | Open-Jev-9B | 9B | no disponible | 179/231 (77,5%) | no disponible | no disponible |
 | Dohnuts-0.1.0-0.8B | 0,8B | no disponible | 152/231 (65,8%) | no disponible | no disponible |
@@ -108,6 +108,6 @@ Los datos de los modelos comparables provienen de sus propias publicaciones o de
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/DreamBlooms/JAD-S1-7B-A1B-v0.2
+- Hugging Face del adaptador: https://huggingface.co/DreamBlooms/JAD-S1-7B-A1B-v0.2
 - Modelo base: https://huggingface.co/inclusionAI/LLaDA-MoE-7B-A1B-Instruct
 - NeoHorse-Jev-4B (benchmarks externos citados): https://huggingface.co/TokenRhythm/NeoHorse-Jev-4B

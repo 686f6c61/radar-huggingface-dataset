@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks zero-shot en la información dispon
 | vectabass-618m-2.18bt-base-cooled | 618M (527,7M no-embedding) | 2048 | Apache 2.0 | Base model de estudio de scaling, XSA, multilingue celta |
 | Modelos tipo GPT-2 124M/355M/774M | 124M-774M | 1024 | MIT/ modificada | Referencia clasica de modelos pequenos; no comparables en datos |
 | TinyLlama 1.1B | 1,1B | 2048 | Apache 2.0 | Entrenado con 3T tokens; base model mas grande y con mas datos |
-| SmolLM-135M / 360M | 135M-360M | 2048 | Apache 2.0 | Modelos pequenos de HuggingFace; comparables en tamano y contexto |
+| SmolLM-135M / 360M | 135M-360M | 2048 | Apache 2.0 | Modelos pequenos de Hugging Face; comparables en tamano y contexto |
 
 La comparación cuantitativa de rendimiento no es posible porque el autor no ha publicado benchmarks zero-shot. Frente a TinyLlama o SmolLM, este modelo se distingue por su enfoque en lenguas celtas y en datos del sector público británico, y por su carácter de celda de un estudio de scaling laws más que de modelo listo para uso general.
 
@@ -102,10 +102,10 @@ La comparación cuantitativa de rendimiento no es posible porque el autor no ha 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VectaBass/vectabass-618m-2.18bt-base-cooled
+- Hugging Face: https://huggingface.co/VectaBass/vectabass-618m-2.18bt-base-cooled
 - Paper: pendiente de publicación ("Paper forthcoming")
-- Repositorio de datos: `DATA.md` en el repositorio de HuggingFace
-- Provenance: `provenance.json` en el repositorio de HuggingFace
+- Repositorio de datos: `DATA.md` en el repositorio de Hugging Face
+- Provenance: `provenance.json` en el repositorio de Hugging Face
 - Isambard-AI AIRR (referencia): https://doi.org/10.48550/arXiv.2410.11199
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset FineWeb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

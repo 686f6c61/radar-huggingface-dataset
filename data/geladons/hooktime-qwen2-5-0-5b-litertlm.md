@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia es la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/geladons/hooktime-qwen2.5-0.5b-litertlm
+- Repositorio Hugging Face: https://huggingface.co/geladons/hooktime-qwen2.5-0.5b-litertlm
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Coleccion Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
 - Informe tecnico Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115

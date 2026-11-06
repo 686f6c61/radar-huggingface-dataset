@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27,3 B | Denso, híbrido atención | No disponible | Apache 2.0 | HuggingFace |
-| tonyrishwain/Qwen3.8-27B-Heretic-ROCmFPX-STRIX | 27,3 B | Denso, híbrido atención | No disponible | Apache 2.0 | HuggingFace (GGUF) |
-| Gemma 2 27B | 27 B | Denso, transformer | 8K (ampliable) | Gemma License | HuggingFace |
+| Qwen3.8-27B (base) | 27,3 B | Denso, híbrido atención | No disponible | Apache 2.0 | Hugging Face |
+| tonyrishwain/Qwen3.8-27B-Heretic-ROCmFPX-STRIX | 27,3 B | Denso, híbrido atención | No disponible | Apache 2.0 | Hugging Face (GGUF) |
+| Gemma 2 27B | 27 B | Denso, transformer | 8K (ampliable) | Gemma License | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. La principal diferencia de esta variante frente al modelo base es su optimización para ROCm/FPX y su formato GGUF, que facilita su uso en hardware AMD. Gemma 2 27B es una alternativa densa de tamaño similar, pero con licencia más restrictiva y sin adaptación específica para AMD.
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia de es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tonyrishwain/Qwen3.8-27B-Heretic-ROCmFPX-STRIX
+- Repositorio Hugging Face: https://huggingface.co/tonyrishwain/Qwen3.8-27B-Heretic-ROCmFPX-STRIX
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio base jcbtc (CIRU-ActiveFPX-PromptForge): https://huggingface.co/jcbtc/Qwen3.8-27B-CIRU-ActiveFPX-PromptForge
 - Repositorio base trohrbaugh (heretic-ara): https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara

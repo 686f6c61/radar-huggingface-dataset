@@ -93,10 +93,10 @@ Las mediciones se realizaron en un M2 Pro de 32 GB con MLX 0.32.3. El autor indi
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Bayway/JEV-27B-VL-MLX-4bit | 27,47 mil millones | no disponible | MLX, base 4-bit + LoRA bf16 | image-text-to-text + decisiones tipadas | Apache 2.0 | HuggingFace, conversión de terceros |
-| autotrust/JEV-27B-VL | no disponible | no disponible | PyTorch (bf16), compatible con vLLM y transformers | image-text-to-text + decisiones tipadas | no disponible en la información consultada | HuggingFace, modelo original de AutoTrust AI |
-| autotrust/JEV-27B | no disponible | no disponible | PyTorch, compatible con vLLM y transformers | decisiones tipadas solo texto | no disponible en la información consultada | HuggingFace, comparte adaptador y cabezal |
-| mlx-community/Qwen3.8-27B-4bit | 27B (aproximado, no confirmado) | no disponible | MLX 4-bit afín, group size 64 | generación de texto e imagen (chat) | no disponible en la información consultada | HuggingFace, es el System 2 de este checkpoint |
+| Bayway/JEV-27B-VL-MLX-4bit | 27,47 mil millones | no disponible | MLX, base 4-bit + LoRA bf16 | image-text-to-text + decisiones tipadas | Apache 2.0 | Hugging Face, conversión de terceros |
+| autotrust/JEV-27B-VL | no disponible | no disponible | PyTorch (bf16), compatible con vLLM y transformers | image-text-to-text + decisiones tipadas | no disponible en la información consultada | Hugging Face, modelo original de AutoTrust AI |
+| autotrust/JEV-27B | no disponible | no disponible | PyTorch, compatible con vLLM y transformers | decisiones tipadas solo texto | no disponible en la información consultada | Hugging Face, comparte adaptador y cabezal |
+| mlx-community/Qwen3.8-27B-4bit | 27B (aproximado, no confirmado) | no disponible | MLX 4-bit afín, group size 64 | generación de texto e imagen (chat) | no disponible en la información consultada | Hugging Face, es el System 2 de este checkpoint |
 
 La diferencia principal frente al original no está en la tarea sino en el soporte: este repositorio es una conversión a MLX con pérdida de precisión controlada (KL 0,027 frente al teacher en 36 filas, con 34/36 de coincidencia top-1), mientras que los checkpoints de AutoTrust AI son la referencia en PyTorch. Frente a Qwen3.8-27B-4bit, el valor añadido es el adaptador y el cabezal de decisión; desactivándolos, el comportamiento es el del modelo base.
 
@@ -116,7 +116,7 @@ La diferencia principal frente al original no está en la tarea sino en el sopor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bayway/JEV-27B-VL-MLX-4bit
+- Repositorio en Hugging Face: https://huggingface.co/Bayway/JEV-27B-VL-MLX-4bit
 - Modelo original multimodal: https://huggingface.co/autotrust/JEV-27B-VL
 - Modelo original de solo texto (mismo adaptador y cabezal): https://huggingface.co/autotrust/JEV-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
@@ -124,5 +124,5 @@ La diferencia principal frente al original no está en la tarea sino en el sopor
 - Libreria MLX-VLM: https://github.com/Blaizzy/mlx-vlm
 - Pull request de soporte para JEV: https://github.com/Blaizzy/mlx-vlm/pull/2463
 - Rama de instalacion temporal: https://github.com/Bayway/mlx-vlm/tree/add-jev
-- Informe de paridad del repositorio: PARITY.md (incluido en el repositorio de HuggingFace)
+- Informe de paridad del repositorio: PARITY.md (incluido en el repositorio de Hugging Face)
 - Resultados de la busqueda web: no se han encontrado enlaces adicionales relevantes; los resultados devueltos corresponden a páginas genéricas de servicios de Google (Trends, Chrome, Traducción, Vídeos y formación de Workspace), sin relación con el modelo.

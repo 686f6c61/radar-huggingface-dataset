@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lukasm-uel0417/clip-finetuned` es un repositorio de HuggingFace que contiene una implementación propia y mínima de CLIP (Contrastive Language-Image Pretraining) orientada a tareas de clasificación. El autor lo publica como un punto de partida reproducible, no como un modelo entrenado: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, con 16.576 parámetros totales, y la model card indica explícitamente que no se reclama ninguna métrica de benchmark. El repositorio tiene 13 descargas, 0 likes y un tamaño inferior a 0,1 GB.
+`lukasm-uel0417/clip-finetuned` es un repositorio de Hugging Face que contiene una implementación propia y mínima de CLIP (Contrastive Language-Image Pretraining) orientada a tareas de clasificación. El autor lo publica como un punto de partida reproducible, no como un modelo entrenado: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, con 16.576 parámetros totales, y la model card indica explícitamente que no se reclama ninguna métrica de benchmark. El repositorio tiene 13 descargas, 0 likes y un tamaño inferior a 0,1 GB.
 
 El interés de la ficha es principalmente metodológico y de infraestructura: sirve para validar pipelines de carga, scripts de entrenamiento y recetas de experimentación con una arquitectura CLIP de escala *tiny* y atención dispersa (sparse attention) con fusión por co-atención. No es un modelo utilizable en producción ni comparable en capacidades con CLIP ViT-B/32, SigLIP o EVA-CLIP, porque no ha sido entrenado ni auditado.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Benchmark | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lukasm-uel0417/clip-finetuned | 16.576 | no disponible | no disponible | MIT | HuggingFace, 13 descargas |
+| lukasm-uel0417/clip-finetuned | 16.576 | no disponible | no disponible | MIT | Hugging Face, 13 descargas |
 | OpenAI CLIP ViT-B/32 | aprox. 151 M (dato publico del modelo original) | aprox. 77 tokens de texto (dato publico) | no disponible en la informacion proporcionada | MIT (modelo original) | pesos publicos de OpenAI |
 | SigLIP | no disponible en la informacion proporcionada | no disponible | no disponible | Apache 2.0 (segun publicacion original) | pesos publicos de Google |
 
@@ -76,9 +76,9 @@ Nota: los datos de los modelos alternativos corresponden a informacion publica a
 - Riesgo de alucinación: no aplica en el sentido de generación de texto, pero sí existe el riesgo de interpretar como válidas las salidas de un modelo no entrenado.
 - Restricciones de licencia: MIT permite uso comercial, pero la model card advierte de que deben revisarse por separado los términos de los datos de origen cuando el repositorio se use con datasets externos.
 - Para producción: no apto. Requiere sustituir el checkpoint por pesos entrenados, documentar los resultados de evaluación de forma separada a los valores por defecto y verificar el adaptador de carga personalizado.
-- Las APIs automáticas de HuggingFace no cargan este modelo sin un adaptador explícito.
+- Las APIs automáticas de Hugging Face no cargan este modelo sin un adaptador explícito.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lukasm-uel0417/clip-finetuned
+- Repositorio en Hugging Face: https://huggingface.co/lukasm-uel0417/clip-finetuned
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada (los resultados devueltos corresponden a paginas corporativas de Microsoft, sin relacion con el modelo).

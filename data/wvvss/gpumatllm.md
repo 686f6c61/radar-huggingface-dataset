@@ -70,6 +70,6 @@ No se dispone de información sobre otros modelos especializados en ciencia de m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wvvss/GPUmatLLM
+- Modelo en Hugging Face: https://huggingface.co/wvvss/GPUmatLLM
 - Paper en ChemRxiv: https://chemrxiv.org/doi/10.26434/chemrxiv.15005554
 - PDF del paper: https://chemrxiv.org/doi/pdf/10.26434/chemrxiv.15005554/v1?download=true

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bryanphanbid/efficientformer-classification91 es un repositorio de investigación publicado en HuggingFace que contiene un prototipo de arquitectura EfficientFormer orientado a tareas de clasificación. No se trata de un modelo entrenado ni ajustado: el autor lo describe explícitamente como un punto de partida experimental, con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El recuento real de parámetros del archivo safetensors es de 16.576, un orden de magnitud muy inferior al de cualquier backbone EfficientFormer publicado, lo que confirma que se trata de una configuración reducida de carácter didáctico o estructural.
+bryanphanbid/efficientformer-classification91 es un repositorio de investigación publicado en Hugging Face que contiene un prototipo de arquitectura EfficientFormer orientado a tareas de clasificación. No se trata de un modelo entrenado ni ajustado: el autor lo describe explícitamente como un punto de partida experimental, con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El recuento real de parámetros del archivo safetensors es de 16.576, un orden de magnitud muy inferior al de cualquier backbone EfficientFormer publicado, lo que confirma que se trata de una configuración reducida de carácter didáctico o estructural.
 
 El repositorio incluye el código de entrenamiento (train.py), la configuración de arquitectura (config.json), la receta de experimento por defecto (training_args.json) y el checkpoint de inicialización (model.safetensors). La escala declarada es "nano", con atención de tipo flash, fusión con mecanismo de gated fusion, activación GELU y normalización LayerNorm. El optimizador por defecto en la receta es Adafactor con planificador de tipo step.
 
@@ -25,7 +25,7 @@ Detalles de arquitectura declarados por el autor: atención flash, fusión media
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es EfficientFormer, la familia de backbones de visión diseñada para inferencia eficiente en dispositivos móviles, que combina bloques convolucionales ligeros con mecanismos de atención en etapas tardías. En este repositorio concreto, la implementación es propia del autor ("custom implementation") y, según la model card, requiere un adaptador explícito para cargarse con las APIs genéricas de HuggingFace Transformers. Los elementos especificados son atención flash, gated fusion, GELU y LayerNorm, en una configuración de escala nano.
+La arquitectura declarada es EfficientFormer, la familia de backbones de visión diseñada para inferencia eficiente en dispositivos móviles, que combina bloques convolucionales ligeros con mecanismos de atención en etapas tardías. En este repositorio concreto, la implementación es propia del autor ("custom implementation") y, según la model card, requiere un adaptador explícito para cargarse con las APIs genéricas de Hugging Face Transformers. Los elementos especificados son atención flash, gated fusion, GELU y LayerNorm, en una configuración de escala nano.
 
 En cuanto al entrenamiento, no existe: model.safetensors es un checkpoint de inicialización, no un modelo entrenado. La receta por defecto recoge Adafactor con planificador step, pero el autor subraya que se trata de valores de partida en el script y no de evidencia de una ejecución completada. No se documenta número de tokens, composición de dataset, ni etapas de RLHF, DPO o ajuste por preferencias; tampoco hay datos sobre aumentación, resolución de entrada o número de clases, más allá del campo "classification" en las etiquetas. La model card recomienda explícitamente que cualquier evaluación futura use un split etiquetado específico de la tarea, al menos tres semillas, una línea base de capacidad comparable y registro de logs y versiones de entorno.
 
@@ -37,7 +37,7 @@ En cuanto al entrenamiento, no existe: model.safetensors es un checkpoint de ini
 - Artefactos de configuración completos: config.json (arquitectura generada) y training_args.json (receta de experimento), útiles para reproducir y modificar hiperparámetros.
 - Componentes de arquitectura implementados: atención flash, gated fusion, GELU, LayerNorm en escala nano.
 - Sin soporte declarado de tool calling, function calling, agentes, razonamiento multi-paso, multilingüismo, visión generativa, audio ni modo de pensamiento (thinking mode).
-- Sin pipeline de HuggingFace declarado, lo que implica carga manual o mediante adaptador.
+- Sin pipeline de Hugging Face declarado, lo que implica carga manual o mediante adaptador.
 
 ## Casos de uso
 
@@ -67,7 +67,7 @@ No se dispone de datos de comparación en la información proporcionada. Las alt
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bryanphanbid/efficientformer-classification91 | 16.576 (verificado en safetensors) | No aplica | No publicado | MIT | HuggingFace |
+| bryanphanbid/efficientformer-classification91 | 16.576 (verificado en safetensors) | No aplica | No publicado | MIT | Hugging Face |
 | EfficientFormerV2 | No disponible | No aplica | No disponible | No disponible | No disponible |
 | MobileNetV4 | No disponible | No aplica | No disponible | No disponible | No disponible |
 | DeiT-Tiny | No disponible | No aplica | No disponible | No disponible | No disponible |
@@ -89,7 +89,7 @@ La única comparación defendible es estructural: este repositorio es un prototi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bryanphanbid/efficientformer-classification91
+- Hugging Face: https://huggingface.co/bryanphanbid/efficientformer-classification91
 - Archivos del repositorio: train.py, README.md, config.json, training_args.json, model.safetensors
 - Paper, blog, repositorio de código o demo adicionales: no disponible en la información proporcionada
 - Resultados de la búsqueda web: no relevantes para este modelo (los enlaces devueltos tratan sobre psicología de las emociones y no guardan relación con EfficientFormer ni con clasificación de imágenes)

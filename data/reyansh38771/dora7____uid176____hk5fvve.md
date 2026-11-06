@@ -4,7 +4,7 @@
 
 El modelo `reyansh38771/dora7____uid176____hk5FvVe` es un modelo de lenguaje de gran tamano de tipo mezcla de expertos (MoE) con capacidades multimodales de imagen a texto, desarrollado por el usuario reyansh38771. Se basa en el modelo `kevin954/Affine-5dfqbbh8ev-sft`, del que hereda su arquitectura y pesos iniciales, y ha sido sometido a un proceso de fusion o rescate (etiqueta `affine-h1-merged-salvage`) que sugiere una combinacion o recuperacion de pesos a partir de un checkpoint intermedio. Con aproximadamente 35.107 millones de parametros totales, se posiciona en la gama de modelos grandes, aunque no se dispone de informacion sobre el numero de parametros activos.
 
-El modelo esta diseñado para tareas de generacion de texto y conversacion, con soporte para entrada de imagenes y texto (image-text-to-text), lo que lo habilita para aplicaciones de vision-lenguaje. La etiqueta `qwen3_5_moe` indica que su arquitectura sigue el patron de los modelos Qwen 3.5 en su variante MoE, aunque no se confirma si es una implementacion oficial o una adaptacion. El acceso es restringido (gated) en HuggingFace, lo que implica que los usuarios deben aceptar condiciones adicionales antes de descargarlo. Su relevancia actual radica en la escasez de modelos MoE abiertos con capacidades multimodales, aunque la falta de documentacion publica limita su evaluacion inmediata.
+El modelo esta diseñado para tareas de generacion de texto y conversacion, con soporte para entrada de imagenes y texto (image-text-to-text), lo que lo habilita para aplicaciones de vision-lenguaje. La etiqueta `qwen3_5_moe` indica que su arquitectura sigue el patron de los modelos Qwen 3.5 en su variante MoE, aunque no se confirma si es una implementacion oficial o una adaptacion. El acceso es restringido (gated) en Hugging Face, lo que implica que los usuarios deben aceptar condiciones adicionales antes de descargarlo. Su relevancia actual radica en la escasez de modelos MoE abiertos con capacidades multimodales, aunque la falta de documentacion publica limita su evaluacion inmediata.
 
 ## Especificaciones tecnicas
 
@@ -71,6 +71,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reyansh38771/dora7____uid176____hk5FvVe
+- Modelo en Hugging Face: https://huggingface.co/reyansh38771/dora7____uid176____hk5FvVe
 - Modelo base (referencia): https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft (no se ha verificado su existencia)
 - No se han encontrado papers, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.

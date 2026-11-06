@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/rus_cyrl_100mb`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones, segun los pesos reales en safetensors) y un tamano de repositorio de 0,3 GB. El entrenamiento se ha realizado mediante SFT (supervised fine-tuning) con la libreria TRL, tal como se indica en la model card.
+El modelo `francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/rus_cyrl_100mb`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones, segun los pesos reales en safetensors) y un tamano de repositorio de 0,3 GB. El entrenamiento se ha realizado mediante SFT (supervised fine-tuning) con la libreria TRL, tal como se indica en la model card.
 
 El nombre del modelo apunta a que el ajuste se ha llevado a cabo sobre texto en cirilico ruso, dado que el modelo base pertenece a la coleccion Goldfish, orientada a modelos monolingues por idioma y por volumen de datos (en este caso, 100 MB de texto). Sin embargo, la model card no especifica de forma explicita la composicion del dataset de ajuste, los idiomas soportados ni la licencia exacta. La nomenclatura "ppt", "Dp-100mb, packed, bfdiso" y "seed455" sugiere variantes de un experimento de investigacion sobre tokenizacion o empaquetado de datos, probablemente ligado a un trabajo academico.
 
@@ -49,7 +49,7 @@ El entrenamiento se ha realizado mediante SFT empleando la libreria TRL en su ve
 - Generacion de texto en ruso para pruebas de calidad: dado su reducido tamano, es adecuado para validar rapidamente hipotesis sobre generacion en cirilico antes de escalar a modelos mayores.
 - Prototipado de asistentes conversacionales de bajo coste: gracias al formato de chat del ejemplo de la model card, puede integrarse en un prototipo de chatbot local para experimentar con respuestas multi-turno, siempre con expectativas limitadas por su tamano.
 - Ajuste fino adicional (continued fine-tuning): al ser un modelo pequeno y en safetensors, sirve como base para experimentos de SFT con recursos limitados, por ejemplo en una unica GPU de consumo.
-- Educacion y docencia: util para demostrar el funcionamiento de un transformer decoder-only de ~125 M de parametros, inspeccionar pesos y explicar el pipeline de texto de HuggingFace.
+- Educacion y docencia: util para demostrar el funcionamiento de un transformer decoder-only de ~125 M de parametros, inspeccionar pesos y explicar el pipeline de texto de Hugging Face.
 - Evaluacion de tecnicas de cuantizacion: al ser ligero, es un candidato comodo para probar conversiones a int8/int4 y medir el impacto en la calidad, aunque el repositorio no incluya versiones cuantizadas listas para usar.
 - Pruebas de integracion con text-generation-inference: el repositorio lleva la etiqueta `text-generation-inference` y `endpoints_compatible`, por lo que puede desplegarse en entornos compatibles con TGI para validar pipelines de servicio.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfdiso_seed455 | 124,8 M | no disponible | no disponible | HuggingFace, safetensors | Objeto de esta ficha; ajuste SFT con TRL |
-| goldfish-models/rus_cyrl_100mb | no disponible en la informacion | no disponible | no disponible | HuggingFace | Modelo base del anterior; pertenece a la coleccion Goldfish |
-| francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfd_seed455 | no disponible | no disponible | no disponible | HuggingFace | Variante del mismo experimento con 10 MB en lugar de 100 MB |
-| francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | 39,1 M (segun LLM Explorer) | no disponible | no disponible | HuggingFace | Variante con 10 MB de modelo base y 100 MB de datos; seed distinta |
+| francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfdiso_seed455 | 124,8 M | no disponible | no disponible | Hugging Face, safetensors | Objeto de esta ficha; ajuste SFT con TRL |
+| goldfish-models/rus_cyrl_100mb | no disponible en la informacion | no disponible | no disponible | Hugging Face | Modelo base del anterior; pertenece a la coleccion Goldfish |
+| francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfd_seed455 | no disponible | no disponible | no disponible | Hugging Face | Variante del mismo experimento con 10 MB en lugar de 100 MB |
+| francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | 39,1 M (segun LLM Explorer) | no disponible | no disponible | Hugging Face | Variante con 10 MB de modelo base y 100 MB de datos; seed distinta |
 
 La comparacion se limita a variantes del mismo autor y al modelo base, ya que no se dispone de datos de rendimiento que permitan contrastarlo con modelos de otros proyectos.
 
@@ -90,7 +90,7 @@ La comparacion se limita a variantes del mismo autor y al modelo base, ya que no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/rus_cyrl_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/m2mnai9d
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks para este modelo en la información
 | BAAI/bge-m3 | 568M | 8192 | MIT | Modelo base multilingüe |
 | mhaseeb1604/bge-m3-law | 568M | 8192 | MIT | Fine-tuning para texto legal árabe e inglés |
 
-La comparativa se basa en los datos disponibles en las fichas de HuggingFace. No se dispone de resultados de benchmarks para ninguno de estos modelos en la información proporcionada.
+La comparativa se basa en los datos disponibles en las fichas de Hugging Face. No se dispone de resultados de benchmarks para ninguno de estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -76,7 +76,7 @@ La comparativa se basa en los datos disponibles en las fichas de HuggingFace. No
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RamyAhmed55/bge-m3-arabic-legal
+- Hugging Face: https://huggingface.co/RamyAhmed55/bge-m3-arabic-legal
 - Repositorio de BGE-M3 (FlagOpen/FlagEmbedding): https://github.com/FlagOpen/FlagEmbedding
 - Paper de BGE-M3: https://arxiv.org/pdf/2402.03216.pdf
 - Modelo similar de referencia (mhaseeb1604/bge-m3-law): https://huggingface.co/mhaseeb1604/bge-m3-law

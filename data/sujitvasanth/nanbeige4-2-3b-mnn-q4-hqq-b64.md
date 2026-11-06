@@ -93,6 +93,6 @@ La comparación de rendimiento cualitativo no está disponible porque no se han 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sujitvasanth/Nanbeige4.2-3B-MNN-Q4-HQQ-B64
+- Repositorio Hugging Face: https://huggingface.co/sujitvasanth/Nanbeige4.2-3B-MNN-Q4-HQQ-B64
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.2-3B
 - Runtime MNN: https://github.com/alibaba/MNN

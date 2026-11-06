@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jy395/Meta-Llama-3.1-70B-Instruct-gptq-w4a16-c1 | ~70,6 B (11,2 B almacenados a 4 bits) | 128 000 | GPTQ W4A16, group 128 | Llama 3.1 | HuggingFace (21 descargas) |
-| meta-llama/Llama-3.1-70B-Instruct | ~70,6 B | 128 000 | FP16/BF16 | Llama 3.1 | HuggingFace (oficial Meta) |
-| Otras configuraciones del paper (C2-C30) | ~70,6 B | 128 000 | GPTQ W4A16 con distintos corpus | Llama 3.1 | Colección ICAIF 2026 en HuggingFace |
+| jy395/Meta-Llama-3.1-70B-Instruct-gptq-w4a16-c1 | ~70,6 B (11,2 B almacenados a 4 bits) | 128 000 | GPTQ W4A16, group 128 | Llama 3.1 | Hugging Face (21 descargas) |
+| meta-llama/Llama-3.1-70B-Instruct | ~70,6 B | 128 000 | FP16/BF16 | Llama 3.1 | Hugging Face (oficial Meta) |
+| Otras configuraciones del paper (C2-C30) | ~70,6 B | 128 000 | GPTQ W4A16 con distintos corpus | Llama 3.1 | Colección ICAIF 2026 en Hugging Face |
 | Modelos financieros abiertos de 70B (p. ej. variantes fine-tuned) | ~70 B | Variable | Variable | Variable | No disponible en la información |
 
 La comparación directa más relevante es con el modelo base sin cuantizar (mayor calidad, mayor huella de memoria) y con las demás configuraciones del mismo paper (misma compresión, distinto corpus de calibración).
@@ -83,7 +83,7 @@ La comparación directa más relevante es con el modelo base sin cuantizar (mayo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jy395/Meta-Llama-3.1-70B-Instruct-gptq-w4a16-c1
+- Modelo en Hugging Face: https://huggingface.co/jy395/Meta-Llama-3.1-70B-Instruct-gptq-w4a16-c1
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-70B-Instruct
 - Paper (DOI): https://doi.org/10.1145/3858063.3858724
 - Repositorio de código y evaluación: https://github.com/JunyiYe/finance-ptc-calibration

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-grow-d14 es un modelo de lenguaje base (sin ajuste por instrucciones) publicado por el usuario CharlieChen en HuggingFace, correspondiente al checkpoint final del punto de profundidad **d14** de la escalera de escalado sobre FineWeb del trabajo *"How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents"*. Se trata de un artefacto de investigación: un transformer con recúrsica (looped transformer) de 726.204.416 parámetros almacenados en FP32 (2,905 GB en disco), entrenado sobre el corpus FineWeb con el tokenizador GPT-2 de tiktoken y una longitud de contexto de 2.048 tokens.
+loop-grow-d14 es un modelo de lenguaje base (sin ajuste por instrucciones) publicado por el usuario CharlieChen en Hugging Face, correspondiente al checkpoint final del punto de profundidad **d14** de la escalera de escalado sobre FineWeb del trabajo *"How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents"*. Se trata de un artefacto de investigación: un transformer con recúrsica (looped transformer) de 726.204.416 parámetros almacenados en FP32 (2,905 GB en disco), entrenado sobre el corpus FineWeb con el tokenizador GPT-2 de tiktoken y una longitud de contexto de 2.048 tokens.
 
 El interés del modelo es metodológico más que de producto. Su etiqueta de profundidad ("loop", con 4 repeticiones configuradas y 4 repeticiones en la evaluación final) se usa como coordenada de escalado dentro del estudio, y el autor advierte explícitamente de que esa coordenada no tiene por qué coincidir con el número de bloques Transformer ejecutados. El checkpoint se distribuye tal cual salió del entrenamiento: no incluye estado del optimizador, no es un `AutoModel` de Transformers y requiere el código propio del paper (`cue-engineering/loop`) para reconstruir el modelo `TransformerGPT` y evaluarlo.
 
@@ -81,7 +81,7 @@ No se dispone de resultados de benchmarks del modelo en la información proporci
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| loop-grow-d14 | 726 M | 2.048 | Base, transformer con recúrsica | no disponible | Checkpoint PyTorch propio en HuggingFace |
+| loop-grow-d14 | 726 M | 2.048 | Base, transformer con recúrsica | no disponible | Checkpoint PyTorch propio en Hugging Face |
 | Pythia-1B | ~1.000 M | 2.048 | Base, transformer denso | Apache 2.0 | Transformers `AutoModel` |
 | TinyLlama-1.1B | ~1.100 M | 2.048 | Base/chat, transformer denso | Apache 2.0 | Transformers, GGUF, Ollama |
 | GPT-2 XL | ~1.500 M | 1.024 | Base, transformer denso | MIT | Transformers, GGUF, Ollama |
@@ -102,7 +102,7 @@ La diferencia relevante no es de tamaño sino de integración: las alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-grow-d14
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-grow-d14
 - Repositorio de código del paper: https://github.com/cue-engineering/loop
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Paper *"How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents"*: enlace no disponible en la información proporcionada

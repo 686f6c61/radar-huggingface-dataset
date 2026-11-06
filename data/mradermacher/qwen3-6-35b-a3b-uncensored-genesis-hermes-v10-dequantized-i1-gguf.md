@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. El
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-dequantized-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-dequantized-i1-GGUF
 - Version V6 del mismo autor: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V6-dequantized-i1-GGUF
 - Version V6 sin i1: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V6-dequantized-GGUF
 - Version abliterated: https://github.com/Damacol/mradermacher-qwen3.6-35b-a3b-abliterated-i1-gguf/blob/main/README.md

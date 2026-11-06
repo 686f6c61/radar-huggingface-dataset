@@ -92,7 +92,7 @@ No se dispone de comparativas con modelos de interpretabilidad de otros autores 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ceselder/skip-lens-qwen36-27b-agreelens-a
+- Repositorio Hugging Face: https://huggingface.co/ceselder/skip-lens-qwen36-27b-agreelens-a
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Brazos hermanos: https://huggingface.co/ceselder/skip-lens-qwen36-27b-agreelens-d, https://huggingface.co/ceselder/skip-lens-qwen36-27b-agreelens-g, https://huggingface.co/ceselder/skip-lens-qwen36-27b-agreelens-p
 - Otros skip-lens del autor: https://huggingface.co/ceselder/skip-lens-qwen36-27b-futurelens-rl, https://huggingface.co/ceselder/skip-lens-qwen36-27b-cnla-rl

@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Resolución GelSight | Chunk size | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act-blue-90ep-gs88-chunk60 | 51.668.634 | 88x66 | 60 | No disponible | HuggingFace |
-| act-blue-90ep-gs320-chunk60 | No disponible | 320x240 | 60 | No disponible | HuggingFace |
-| act-blue-90ep-gs160-chunk60 | No disponible | 160x120 | 60 | No disponible | HuggingFace |
-| act-blue-90ep-raw-chunk60 | No disponible | 500x375 | 60 | No disponible | HuggingFace |
+| act-blue-90ep-gs88-chunk60 | 51.668.634 | 88x66 | 60 | No disponible | Hugging Face |
+| act-blue-90ep-gs320-chunk60 | No disponible | 320x240 | 60 | No disponible | Hugging Face |
+| act-blue-90ep-gs160-chunk60 | No disponible | 160x120 | 60 | No disponible | Hugging Face |
+| act-blue-90ep-raw-chunk60 | No disponible | 500x375 | 60 | No disponible | Hugging Face |
 
 Los tres modelos adicionales pertenecen al mismo sweep de resoluciones GelSight y comparten el mismo dataset, arquitectura y configuración de entrenamiento, por lo que son comparables directamente en términos de ablación.
 

@@ -69,7 +69,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gridfm/gridfm-pf-reconstruction
+- Modelo en Hugging Face: https://huggingface.co/gridfm/gridfm-pf-reconstruction
 - Repositorio gridfm-graphkit: https://github.com/gridfm/gridfm-graphkit
 - Repositorio gridfm-datakit: https://github.com/gridfm/gridfm-datakit
 - Documentación de GridFM Models en DeepWiki: https://deepwiki.com/gridfm/gridfm-graphkit/3.3-gridfm-models

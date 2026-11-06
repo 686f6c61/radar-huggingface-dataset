@@ -92,7 +92,7 @@ La comparativa se limita a parametros, contexto y licencia: no existen cifras pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eduardoworrel/alias3-micro-1026-MLC-q4f32_1
+- Modelo en Hugging Face: https://huggingface.co/eduardoworrel/alias3-micro-1026-MLC-q4f32_1
 - Modelo base: https://huggingface.co/aliasrobotics/alias3-micro-1026
 - Conversion relacionada (ct0-alias3-micro-mlc): https://huggingface.co/eduardoworrel/ct0-alias3-micro-mlc
 - Conversion relacionada (ct0-alias3-micro-mlc-q4f32): https://huggingface.co/eduardoworrel/ct0-alias3-micro-mlc-q4f32

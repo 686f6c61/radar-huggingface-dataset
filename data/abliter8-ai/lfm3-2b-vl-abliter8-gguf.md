@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-VL-2B-Abliter8 es una versión "abliterated" (con reducción de rechazos) del modelo de visión-lenguaje LFM3-VL-2B de Liquid AI, publicada por abliter8-ai en HuggingFace en formato GGUF (con variante MLX disponible). El modelo original es un VLM compacto de 1.92 mil millones de parámetros (backbone de lenguaje de 1.73B, encoder de visión de 164M y proyector de 25M) con ventana de contexto de 128K tokens, orientado a comprensión de documentos, gráficos, capturas de pantalla y preguntas sobre imágenes, incluyendo OCR, visual grounding y uso de herramientas visuales.
+LFM3-VL-2B-Abliter8 es una versión "abliterated" (con reducción de rechazos) del modelo de visión-lenguaje LFM3-VL-2B de Liquid AI, publicada por abliter8-ai en Hugging Face en formato GGUF (con variante MLX disponible). El modelo original es un VLM compacto de 1.92 mil millones de parámetros (backbone de lenguaje de 1.73B, encoder de visión de 164M y proyector de 25M) con ventana de contexto de 128K tokens, orientado a comprensión de documentos, gráficos, capturas de pantalla y preguntas sobre imágenes, incluyendo OCR, visual grounding y uso de herramientas visuales.
 
 La aportación de abliter8-ai consiste en aplicar una técnica de abliteration sobre el backbone multimodal del propio modelo: una proyección de rango uno escalada (`W' = W - 2 r (r^T W)`) sobre 32 matrices de escritura residual en las capas 8 a 23, con el objetivo de reducir los rechazos del modelo ante contenido sensible sin reentrenamiento. Es relevante porque ofrece un VLM pequeño, sin censura, cuantizado y ejecutable localmente, útil para análisis directo de documentos e imágenes cuyo tema puede disparar negativas en el modelo original.
 

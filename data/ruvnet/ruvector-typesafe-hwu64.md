@@ -27,7 +27,7 @@ Su interés actual es el de una alternativa de coste marginal casi nulo para enr
 | Encoder medido | `bge-small-en-v1.5` (único encoder con número reportado) |
 | Libreria | ruvector (`@ruvector/typesafe`, npm) |
 | Pipeline declarado | text-classification |
-| Fecha de creacion / actualizacion | 2026-09-22 (ambas, según los metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-09-22 (ambas, según los metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -84,7 +84,7 @@ No se dispone de datos comparativos de otros artefactos en la información propo
 
 | Artefacto | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ruvector-typesafe-hwu64 | no aplica (banco de ejemplos, sin pesos) | no disponible | 79,9% de exactitud en el test de HWU64 (6.133 utterances, 68 clases) | cc-by-4.0 (texto), MIT (código) | HuggingFace, 0 descargas y 0 likes |
+| ruvector-typesafe-hwu64 | no aplica (banco de ejemplos, sin pesos) | no disponible | 79,9% de exactitud en el test de HWU64 (6.133 utterances, 68 clases) | cc-by-4.0 (texto), MIT (código) | Hugging Face, 0 descargas y 0 likes |
 | Alternativas de la misma categoría (clasificador de intenciones ajustado, prompt sobre LLM) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,11 +99,11 @@ No se dispone de datos comparativos de otros artefactos en la información propo
 - Ausencia de validación externa: 0 descargas y 0 likes, sin evidencia de uso en producción por terceros.
 - El artefacto no contiene pesos y la librería es propia (`ruvector`), por lo que las herramientas estándar de transformers, safetensors o GGUF no sirven para cargarlo.
 - Licencias distintas por componente: el texto redistribuido de las utterances queda bajo CC-BY-4.0 (requiere atribución) y el código de `@ruvector/typesafe` bajo MIT. Verificar la compatibilidad con el uso comercial previsto y mantener la atribución a Liu et al. (2019).
-- Los metadatos de HuggingFace indican fecha de creación y actualización 2026-09-22, idénticas, sin historial de revisiones visible en la información proporcionada.
+- Los metadatos de Hugging Face indican fecha de creación y actualización 2026-09-22, idénticas, sin historial de revisiones visible en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ruvnet/ruvector-typesafe-hwu64
+- Modelo en Hugging Face: https://huggingface.co/ruvnet/ruvector-typesafe-hwu64
 - Fichero del banco: https://huggingface.co/ruvnet/ruvector-typesafe-hwu64/resolve/main/bank.json
 - Fichero de preguntas: https://huggingface.co/ruvnet/ruvector-typesafe-hwu64/resolve/main/questions.json
 - Paquete npm de la librería: https://www.npmjs.com/package/@ruvector/typesafe

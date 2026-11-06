@@ -75,6 +75,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-8k_9k_10k_merge
+- Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-8k_9k_10k_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Paper sobre fusión lineal de modelos: https://arxiv.org/abs/2203.05482

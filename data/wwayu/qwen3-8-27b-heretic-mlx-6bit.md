@@ -71,7 +71,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa fiable. Com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wwayu/Qwen3.8-27B-heretic-mlx-6Bit
+- Modelo en Hugging Face: https://huggingface.co/Wwayu/Qwen3.8-27B-heretic-mlx-6Bit
 - Modelo base (choz/Qwen3.8-27B-heretic): https://huggingface.co/choz/Qwen3.8-27B-heretic
 - Guía de ejecución en AMD (blog oficial): https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Página de LM Studio para Qwen3.8: https://lmstudio.ai/models/qwen3.8

@@ -86,7 +86,7 @@ Desglose adicional de la divergencia: segmentando por la confianza del modelo de
 
 | Modelo | Parametros totales | Activos | Contexto | Tamano en disco | Perplejidad (wikitext-2) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Hy-Memory-30B-A3B-MLX-Mixed4-6 | 30.064.725.888 | ~3B | 262.144 | 17 GB | 14,923 | Apache-2.0 | HuggingFace, formato MLX, `trust-remote-code` |
+| Hy-Memory-30B-A3B-MLX-Mixed4-6 | 30.064.725.888 | ~3B | 262.144 | 17 GB | 14,923 | Apache-2.0 | Hugging Face, formato MLX, `trust-remote-code` |
 | Hy-Memory-30B-A3B (MLX 8-bit) | 30.064.725.888 | ~3B | 262.144 | 30 GB | 14,783 | Apache-2.0 | Conversión MLX de referencia usada en la comparación |
 | Hy-Memory-30B-A3B (bf16 original) | 30.064.725.888 | ~3B | 262.144 | 56 GB | no disponible | Apache-2.0 | tencent/Hy-Memory-30B-A3B |
 
@@ -107,11 +107,11 @@ No se dispone de datos comparativos frente a otros extractores de memoria o mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hermitdave/Hy-Memory-30B-A3B-MLX-Mixed4-6
+- Modelo en Hugging Face: https://huggingface.co/hermitdave/Hy-Memory-30B-A3B-MLX-Mixed4-6
 - Modelo base: https://huggingface.co/tencent/Hy-Memory-30B-A3B
 - Artículo (paper): https://arxiv.org/pdf/2610.22196
 - mlx-lm: https://github.com/ml-explore/mlx-lm
 - Adaptador `hy_v3` para MLX (autor original): https://huggingface.co/QwQbb
 - Conversión, cuantización y evaluación: https://hermes-agent.nousresearch.com
 
-Nota: la búsqueda web realizada no devolvió ningún enlace relevante sobre este modelo; los resultados obtenidos trataban de temas sin relación (astronomía, topología y una guía de videojuegos), por lo que todos los enlaces anteriores proceden de la información de HuggingFace y de la model card.
+Nota: la búsqueda web realizada no devolvió ningún enlace relevante sobre este modelo; los resultados obtenidos trataban de temas sin relación (astronomía, topología y una guía de videojuegos), por lo que todos los enlaces anteriores proceden de la información de Hugging Face y de la model card.

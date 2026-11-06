@@ -90,7 +90,7 @@ No es posible establecer una comparativa rigurosa porque se desconocen los pará
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DevQuasar/deepseek-ai.DeepSeek-V4.1-Flash-GGUF
+- Repositorio Hugging Face: https://huggingface.co/DevQuasar/deepseek-ai.DeepSeek-V4.1-Flash-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Sitio del autor de la cuantización: https://devquasar.com
 - Nota: la búsqueda web asociada a esta ficha no devolvió ningún resultado relevante sobre el modelo, su arquitectura, su licencia o sus benchmarks. No se han podido recopilar papers, blogs técnicos, repositorios de código ni demos adicionales.

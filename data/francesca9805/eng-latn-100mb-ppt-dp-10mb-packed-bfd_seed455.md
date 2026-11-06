@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/eng-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455` es un ajuste fino (SFT) del checkpoint `goldfish-models/eng_latn_100mb`, un transformer decoder-only de tipo GPT-2 con 124.770.816 parametros (unos 125 millones). Lo publica el usuario de HuggingFace francesca9805 y, por los metadatos disponibles (proyecto de Weights & Biases titulado "new-tokenizers"), parece tratarse de un artefacto de investigacion sobre tokenizacion y empaquetado de datos mas que de un modelo destinado a produccion. El identificador del nombre incluye referencias a "ppt", "Dp", "10mb-packed" y una semilla (`seed455`), lo que sugiere un experimento controlado con un subconjunto de datos empaquetado de 10 MB.
+El modelo `francesca9805/eng-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455` es un ajuste fino (SFT) del checkpoint `goldfish-models/eng_latn_100mb`, un transformer decoder-only de tipo GPT-2 con 124.770.816 parametros (unos 125 millones). Lo publica el usuario de Hugging Face francesca9805 y, por los metadatos disponibles (proyecto de Weights & Biases titulado "new-tokenizers"), parece tratarse de un artefacto de investigacion sobre tokenizacion y empaquetado de datos mas que de un modelo destinado a produccion. El identificador del nombre incluye referencias a "ppt", "Dp", "10mb-packed" y una semilla (`seed455`), lo que sugiere un experimento controlado con un subconjunto de datos empaquetado de 10 MB.
 
 El problema que resuelve es acotado: servir como punto de comparacion en experimentos de entrenamiento supervisado con TRL sobre corpus pequenos en ingles. No es un modelo de proposito general competitivo con los LLM actuales, sino una pieza de ablacion dentro de una linea de investigacion sobre tokenizadores y data packing. Su relevancia practica es baja para aplicaciones reales, pero puede ser util como referencia reproducible de una configuracion de entrenamiento concreta.
 
@@ -63,11 +63,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| eng-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455 | 124,77 M | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) | Ajuste SFT de investigacion sobre corpus empaquetado de 10 MB |
-| goldfish-models/eng_latn_100mb | no disponible | no disponible | no disponible | HuggingFace (modelo base) | GPT-2 entrenado sobre ~100 MB de texto en ingles; origen del ajuste |
-| distilgpt2 | 82 M | 1.024 tokens | Apache-2.0 | HuggingFace | Version destilada de GPT-2, ampliamente usada como linea base ligera |
-| gpt2 (small) | 124 M | 1.024 tokens | Licencia MIT modificada | HuggingFace | Referencia historica de la familia; misma escala de parametros |
-| pythia-160m | 160 M | 2.048 tokens | Apache-2.0 | HuggingFace | Alternativa reproducible con suite de evaluacion publicada |
+| eng-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455 | 124,77 M | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) | Ajuste SFT de investigacion sobre corpus empaquetado de 10 MB |
+| goldfish-models/eng_latn_100mb | no disponible | no disponible | no disponible | Hugging Face (modelo base) | GPT-2 entrenado sobre ~100 MB de texto en ingles; origen del ajuste |
+| distilgpt2 | 82 M | 1.024 tokens | Apache-2.0 | Hugging Face | Version destilada de GPT-2, ampliamente usada como linea base ligera |
+| gpt2 (small) | 124 M | 1.024 tokens | Licencia MIT modificada | Hugging Face | Referencia historica de la familia; misma escala de parametros |
+| pythia-160m | 160 M | 2.048 tokens | Apache-2.0 | Hugging Face | Alternativa reproducible con suite de evaluacion publicada |
 
 Los datos de contexto y licencia de los modelos Goldfish figuran como no disponibles porque no se han proporcionado en la informacion recibida; los de distilgpt2, GPT-2 y Pythia corresponden a sus especificaciones publicas habituales.
 
@@ -84,7 +84,7 @@ Los datos de contexto y licencia de los modelos Goldfish figuran como no disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eng-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eng-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/r79vc5gy
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -102,12 +102,12 @@ No se dispone de datos de benchmarks ni de contexto para establecer una comparac
 - Ausencia de benchmarks estandar: no hay MMLU, HumanEval, GSM8K ni evaluaciones de seguridad. Inadecuado para decisiones de produccion basadas en rendimiento medido.
 - Datos de rendimiento no extrapolables: las cifras de tok/s y RAM proceden de una unica maquina CPU y son relativas.
 - Caveat de conversion: se elimino el modulo MTP declarado en la configuracion base; el modelo no dispone de decodificacion especulativa multi-token.
-- Metadatos incompletos: la ficha de HuggingFace no declara pipeline, idiomas ni licencia de terceros mas alla de MIT; conviene verificar la licencia del modelo base antes de uso comercial.
+- Metadatos incompletos: la ficha de Hugging Face no declara pipeline, idiomas ni licencia de terceros mas alla de MIT; conviene verificar la licencia del modelo base antes de uso comercial.
 - Fecha de creacion inusual (2026-09-25) y descargas nulas: procede tratar el artefacto con cautela y verificar su procedencia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Johnny5b/MiMo-9B-CORTEX-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Johnny5b/MiMo-9B-CORTEX-GGUF
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Adaptador LoRA: https://huggingface.co/Johnny5b/MiMo-9B-CORTEX-LoRA-v1
 - Dataset de ajuste (cortex_sft_v3.jsonl): https://huggingface.co/datasets/Johnny5b/cortex-sft-300

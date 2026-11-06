@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-celestia-lora es un adaptador LoRA para generacion de imagenes a partir de texto (text-to-image), publicado por RunningHubAI en su repositorio de HuggingFace. No se trata de un modelo de lenguaje ni de un modelo fundacional completo, sino de un conjunto de pesos de ajuste fino (fine-tuning) de bajo rango que se aplica sobre el modelo base Z-image-base para incorporar un concepto o estilo concreto identificado por la palabra de activacion "Celestia".
+rh-celestia-lora es un adaptador LoRA para generacion de imagenes a partir de texto (text-to-image), publicado por RunningHubAI en su repositorio de Hugging Face. No se trata de un modelo de lenguaje ni de un modelo fundacional completo, sino de un conjunto de pesos de ajuste fino (fine-tuning) de bajo rango que se aplica sobre el modelo base Z-image-base para incorporar un concepto o estilo concreto identificado por la palabra de activacion "Celestia".
 
 El artefacto consiste en un unico fichero safetensors de aproximadamente 81 MiB, lo que es coherente con un adaptador LoRA de rango bajo y no con un modelo completo. Esta pensado para cargarse en ComfyUI, en la plataforma RunningHub o en Hugging Face, y su funcion es modificar el comportamiento del modelo base Z-image-base para que genere imagenes coherentes con el concepto "Celestia" cuando dicha palabra aparece en el prompt.
 
@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores LoRA co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RunningHubAI/rh-celestia-lora
+- Repositorio Hugging Face: https://huggingface.co/RunningHubAI/rh-celestia-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2099694611791241217
 - Pagina del autor: https://www.runninghub.ai/user-center/2098659748161110017
 - RunningHub (internacional): https://www.runninghub.ai

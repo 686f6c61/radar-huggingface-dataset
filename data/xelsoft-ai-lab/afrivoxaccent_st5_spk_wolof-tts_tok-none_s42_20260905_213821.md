@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: con 144 millones de parámetros, la inferencia en fp32 requiere aproximadamente 0,6 GB de VRAM, y en fp16 unos 0,3 GB, más memoria para activaciones. En la práctica, un modelo de este tamaño puede ejecutarse en GPUs con menos de 4 GB de VRAM.
 - GPU recomendadas: no hay recomendaciones oficiales. Una NVIDIA T4, RTX 3050 o superior sería suficiente. También puede ejecutarse en CPU, aunque con mayor latencia.
 - Si cabe en consumer GPU: sí, en GPUs de consumo como la RTX 3060 o incluso en algunas integradas con suficiente RAM compartida.
-- Opciones de despliegue: al ser un modelo de la librería transformers, puede cargarse con Python mediante la librería transformers. El tag endpoints_compatible sugiere compatibilidad con Inference Endpoints de HuggingFace. No se menciona soporte para vLLM, llama.cpp ni Ollama.
+- Opciones de despliegue: al ser un modelo de la librería transformers, puede cargarse con Python mediante la librería transformers. El tag endpoints_compatible sugiere compatibilidad con Inference Endpoints de Hugging Face. No se menciona soporte para vLLM, llama.cpp ni Ollama.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_tok-none_s42_20260905_213821
+- Hugging Face: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_tok-none_s42_20260905_213821
 - Paper de T5 (arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Modelo similar del mismo autor: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260904_095055

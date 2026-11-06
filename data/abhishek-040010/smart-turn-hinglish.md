@@ -32,7 +32,7 @@ Los datos de entrenamiento no estan documentados en la model card. Se menciona u
 - Soporte de code-switching hindi-ingles, incluyendo acentos indios en ingles.
 - Inferencia en CPU con latencia inferior a 50 ms (segun el repositorio GitHub asociado, para la variante tiny).
 - Integracion con ONNX Runtime, lo que permite despliegue en multiples plataformas sin dependencias pesadas.
-- Preprocesado compatible con WhisperFeatureExtractor de HuggingFace Transformers, facilitando la integracion en pipelines existentes.
+- Preprocesado compatible con WhisperFeatureExtractor de Hugging Face Transformers, facilitando la integracion en pipelines existentes.
 - Umbral de decision calibrable (tau) para ajustar el equilibrio entre interrupcion (responder antes de tiempo) y latencia (esperar de mas).
 
 ## Casos de uso
@@ -75,7 +75,7 @@ El modelo tiny muestra un rendimiento inferior al stock de Pipecat en el benchma
 
 | Modelo | Tamano | Contexto | Enfoque | Licencia | Disponibilidad |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Smart Turn Hinglish (tiny) | 32,3 MB | 8 s audio | Deteccion de turno acustica, Hinglish | Apache 2.0 | ONNX en HuggingFace |
+| Smart Turn Hinglish (tiny) | 32,3 MB | 8 s audio | Deteccion de turno acustica, Hinglish | Apache 2.0 | ONNX en Hugging Face |
 | Stock Pipecat v3.2 | No disponible | No disponible | Deteccion de turno acustica, multilingue | No disponible | Parte de Pipecat |
 | Hinglish-turn-detection (GitHub) | <10 M parametros | No disponible | Deteccion de turno acustica, Hinglish | No disponible | Codigo en GitHub |
 
@@ -93,8 +93,8 @@ La comparativa directa con Pipecat v3.2 muestra que el modelo stock tiene mejor 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhishek-040010/smart-turn-hinglish
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/AbhiCommits/smart-turn-hinglish
+- Modelo en Hugging Face: https://huggingface.co/abhishek-040010/smart-turn-hinglish
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/AbhiCommits/smart-turn-hinglish
 - Perfil del autor: https://huggingface.co/abhishek-040010
 - Repositorio GitHub (proyecto relacionado): https://github.com/abhinav7289A/Hinglish-turn-detection
 - Repositorio GitHub (smart-turn-hinglish): https://github.com/CodeWithMoin/smart-turn-hinglish

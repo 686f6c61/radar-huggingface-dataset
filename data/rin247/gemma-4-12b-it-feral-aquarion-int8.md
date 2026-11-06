@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rin247/gemma-4-12B-it-Feral-Aquarion-INT8 | 11.96B | no disponible | INT8 weight-only | no disponible | HuggingFace |
-| google/gemma-4-12B (base) | 12B | no disponible | FP16/BF16 | Gemma Terms of Use | HuggingFace |
-| Rin247/gemma-3-12b-it-Uncensored-Aquarion-FP4 | 12B | no disponible | FP4 | no disponible | HuggingFace |
+| Rin247/gemma-4-12B-it-Feral-Aquarion-INT8 | 11.96B | no disponible | INT8 weight-only | no disponible | Hugging Face |
+| google/gemma-4-12B (base) | 12B | no disponible | FP16/BF16 | Gemma Terms of Use | Hugging Face |
+| Rin247/gemma-3-12b-it-Uncensored-Aquarion-FP4 | 12B | no disponible | FP4 | no disponible | Hugging Face |
 
 La comparativa se basa en el modelo base de Google y en otra cuantización del mismo autor. La variante INT8 ofrece un equilibrio entre precisión y uso de memoria, mientras que la FP4 es más agresiva y probablemente menos precisa. El modelo base de Google es la referencia oficial, con licencia de uso comercial bajo los términos de Gemma.
 
@@ -75,7 +75,7 @@ La comparativa se basa en el modelo base de Google y en otra cuantización del m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/gemma-4-12B-it-Feral-Aquarion-INT8
+- Repositorio Hugging Face: https://huggingface.co/Rin247/gemma-4-12B-it-Feral-Aquarion-INT8
 - Modelo base de Google: https://huggingface.co/google/gemma-4-12B
 - Página oficial de Gemma 4: https://deepmind.google/models/gemma/gemma-4/
 - Blog de Google sobre Gemma 4 12B: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/

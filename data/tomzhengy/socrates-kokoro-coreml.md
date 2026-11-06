@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| socrates-kokoro-coreml | 82 M (base) | no disponible | Apache-2.0 | HuggingFace (Core ML) | Paquete de voces y etapas Core ML para iOS |
-| hexgrad/Kokoro-82M | 82 M | no disponible | Apache-2.0 | HuggingFace | Modelo base original, sin conversión Core ML |
-| onnx-community/Kokoro-82M-v1.0-ONNX-timestamped | 82 M | no disponible | Apache-2.0 | HuggingFace (ONNX) | Variante ONNX con marcas de tiempo, fuente de las voces |
+| socrates-kokoro-coreml | 82 M (base) | no disponible | Apache-2.0 | Hugging Face (Core ML) | Paquete de voces y etapas Core ML para iOS |
+| hexgrad/Kokoro-82M | 82 M | no disponible | Apache-2.0 | Hugging Face | Modelo base original, sin conversión Core ML |
+| onnx-community/Kokoro-82M-v1.0-ONNX-timestamped | 82 M | no disponible | Apache-2.0 | Hugging Face (ONNX) | Variante ONNX con marcas de tiempo, fuente de las voces |
 | mattmireles/kokoro-coreml | 82 M | no disponible | no disponible | GitHub | Generador "folded" usado en este paquete |
 
 ## Limitaciones y advertencias
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tomzhengy/socrates-kokoro-coreml
+- Hugging Face: https://huggingface.co/tomzhengy/socrates-kokoro-coreml
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M
 - Voces ONNX con marcas de tiempo: https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX-timestamped
 - Herramienta de conversión: https://github.com/laishere/kokoro-coreml

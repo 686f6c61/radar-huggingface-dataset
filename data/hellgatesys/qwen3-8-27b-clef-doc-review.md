@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HellGateSys/qwen3.8-27b-clef-doc-review es un ajuste fino (fine-tune) supervisado del modelo base Qwen/Qwen3.8-27B, publicado por el usuario HellGateSys en HuggingFace. El modelo se ha entrenado con la librería TRL (version 1.16.0) sobre el dataset HellGateSys/clef-orchestrator-docreview-sft, un conjunto de datos propio orientado, por su nombre, a tareas de revision de documentacion dentro de un pipeline de orquestacion ("clef orchestrator").
+HellGateSys/qwen3.8-27b-clef-doc-review es un ajuste fino (fine-tune) supervisado del modelo base Qwen/Qwen3.8-27B, publicado por el usuario HellGateSys en Hugging Face. El modelo se ha entrenado con la librería TRL (version 1.16.0) sobre el dataset HellGateSys/clef-orchestrator-docreview-sft, un conjunto de datos propio orientado, por su nombre, a tareas de revision de documentacion dentro de un pipeline de orquestacion ("clef orchestrator").
 
 El nombre de la ejecucion de entrenamiento registrada en Trackio (`qlora-sft-docreview`) indica que el ajuste se realizo mediante QLoRA con SFT, y el tamano del repositorio (0,1 GB) es coherente con la publicacion de pesos de adaptadores en lugar de pesos completos, aunque la model card no lo especifica de forma explicita. La model card es la plantilla auto-generada por TRL y no incluye informacion sobre arquitectura, contexto, idiomas, licencia ni evaluaciones.
 
@@ -37,7 +37,7 @@ El unico detalle tecnico inferible es el metodo de ajuste: la ejecucion registra
 - Generacion de texto autoregresiva, heredada del modelo base Qwen/Qwen3.8-27B.
 - Ajuste especifico para tareas de revision de documentacion segun el dataset `clef-orchestrator-docreview-sft` (inferido del nombre; no hay ejemplos ni evaluacion publicados).
 - Integracion con el ecosistema Transformers: la model card incluye un ejemplo funcional con `pipeline("text-generation")`.
-- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags de HuggingFace), lo que permite desplegarlo como endpoint gestionado o tras una API compatible.
+- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags de Hugging Face), lo que permite desplegarlo como endpoint gestionado o tras una API compatible.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada, aunque podria heredarse del modelo base si este lo soporta; no confirmado.
 - Capacidades de agente y razonamiento multi-paso: no disponibles.
 - Capacidades multilingues: no disponibles (idiomas no declarados).
@@ -66,7 +66,7 @@ La model card no incluye evaluaciones de MMLU, HumanEval, GSM8K ni ninguna otra 
 - GPU recomendadas para pesos completos en bf16: A100 80 GB, H100 80 GB, o varias GPU de 40-48 GB con tensor parallelism.
 - GPU de gama profesional para cuantizacion 4 bits: RTX 4090 (24 GB) o L40S (48 GB); en 4 bits el modelo puede caber en una unica RTX 4090, con margen limitado para contextos largos.
 - No cabe en GPUs de consumo con menos de 16 GB en configuraciones razonables.
-- Opciones de despliegue: `transformers` (soporte nativo declarado), vLLM o TGI para servir con pesos completos o cuantizados, llama.cpp/Ollama si se generan GGUF a partir del modelo (no se proporcionan ficheros GGUF en el repositorio), y endpoints de HuggingFace por el tag `endpoints_compatible`.
+- Opciones de despliegue: `transformers` (soporte nativo declarado), vLLM o TGI para servir con pesos completos o cuantizados, llama.cpp/Ollama si se generan GGUF a partir del modelo (no se proporcionan ficheros GGUF en el repositorio), y endpoints de Hugging Face por el tag `endpoints_compatible`.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ No se han podido identificar alternativas comparables con datos verificables den
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HellGateSys/qwen3.8-27b-clef-doc-review
+- Modelo en Hugging Face: https://huggingface.co/HellGateSys/qwen3.8-27b-clef-doc-review
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/HellGateSys/clef-orchestrator-docreview-sft
 - Repositorio de TRL: https://github.com/huggingface/trl

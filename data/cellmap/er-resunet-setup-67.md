@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento publicados para este modelo, por lo que no
 
 | Modelo | Arquitectura | Entrada / contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| cellmap/er-resunet-setup-67 | ResUNet3DValid, 3D, 1 canal entrada / 1 canal salida | 300x300x300 vóxeles, 8 nm isótropos | BSD-3-Clause | no disponible | HuggingFace, ONNX, TorchScript |
+| cellmap/er-resunet-setup-67 | ResUNet3DValid, 3D, 1 canal entrada / 1 canal salida | 300x300x300 vóxeles, 8 nm isótropos | BSD-3-Clause | no disponible | Hugging Face, ONNX, TorchScript |
 | Otras configuraciones `setup_*` de `cellmap-models` | Familia ResUNet3D de CellMap | no disponible | no disponible | no disponible | repositorio `cellmap-models` |
 | nnU-Net y U-Net 3D genéricas para segmentación EM | U-Net 3D | configurable | generalmente permisiva (varía) | no disponible en esta comparación | código abierto |
 | Cellpose / modelos de segmentación celular 3D | redes específicas de citometría | variable, habitualmente a menor resolución | varía según versión | no disponible en esta comparación | código abierto |
@@ -104,7 +104,7 @@ La comparación directa requeriría evaluar todos los modelos sobre el mismo vol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cellmap/er-resunet-setup-67
+- Modelo en Hugging Face: https://huggingface.co/cellmap/er-resunet-setup-67
 - Repositorio de la librería cellmap-models: https://github.com/janelia-cellmap/cellmap-models
 - Proyecto CellMap (Janelia Research Campus): https://www.janelia.org/project-team/cellmap
 - Versión ONNX para web: cellmap/onnx-web-models/setup_67 (referenciada en la model card, sin URL directa disponible)

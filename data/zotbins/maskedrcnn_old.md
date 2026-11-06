@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZotBins/maskedRCNN_Old es un repositorio de HuggingFace publicado por la organizacion ZotBins que, por su nombre, corresponde a una implementacion o snapshot antiguo de Mask R-CNN, la arquitectura de segmentacion de instancias propuesta por He et al. (2017) que extiende Faster R-CNN con una rama de mascaras por instancia. No se trata de un modelo de lenguaje, sino de un modelo de vision por computador orientado a deteccion de objetos y segmentacion de instancias. El repositorio ocupa aproximadamente 0,2 GB, un tamano coherente con pesos de una red de tipo ResNet-50/101 FPN en formato de checkpoint.
+ZotBins/maskedRCNN_Old es un repositorio de Hugging Face publicado por la organizacion ZotBins que, por su nombre, corresponde a una implementacion o snapshot antiguo de Mask R-CNN, la arquitectura de segmentacion de instancias propuesta por He et al. (2017) que extiende Faster R-CNN con una rama de mascaras por instancia. No se trata de un modelo de lenguaje, sino de un modelo de vision por computador orientado a deteccion de objetos y segmentacion de instancias. El repositorio ocupa aproximadamente 0,2 GB, un tamano coherente con pesos de una red de tipo ResNet-50/101 FPN en formato de checkpoint.
 
 La informacion publica del repositorio es practicamente inexistente: no declara pipeline, licencia, idiomas ni metricas, y cuenta con cero descargas y un unico "like" en el momento de la consulta. El sufijo "_Old" sugiere que se trata de una version heredada dentro del proyecto ZotBins, probablemente sustituida por un artefacto mas reciente. ZotBins es un proyecto academico de la Universidad de California en Irvine centrado en sistemas de gestion de residuos con vision artificial, lo que encaja con el uso de un detector-segmentador de instancias para clasificar objetos depositados en contenedores.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZotBins/maskedRCNN_Old | no disponible | no aplica | Segmentacion de instancias | no disponible | HuggingFace (repo publico) |
+| ZotBins/maskedRCNN_Old | no disponible | no aplica | Segmentacion de instancias | no disponible | Hugging Face (repo publico) |
 | Mask R-CNN (TorchVision, COCO) | ~44 M (ResNet-50 FPN) | no aplica | Segmentacion de instancias | BSD-3 (TorchVision) | TorchVision |
 | YOLOv8-seg | ~3-70 M segun variante | no aplica | Deteccion + segmentacion | AGPL-3.0 (Ultralytics) | Ultralytics |
-| Mask2Former | ~47 M (Swin-T) | no aplica | Segmentacion universal | MIT (codigo) | HuggingFace / repo oficial |
+| Mask2Former | ~47 M (Swin-T) | no aplica | Segmentacion universal | MIT (codigo) | Hugging Face / repo oficial |
 
 La comparacion con TorchVision, YOLOv8-seg y Mask2Former es orientativa por categoria de tarea; no se dispone de datos de rendimiento del checkpoint ZotBins para contrastar.
 
@@ -83,7 +83,7 @@ La comparacion con TorchVision, YOLOv8-seg y Mask2Former es orientativa por cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZotBins/maskedRCNN_Old
+- Hugging Face: https://huggingface.co/ZotBins/maskedRCNN_Old
 - Paper original de Mask R-CNN: https://arxiv.org/abs/1703.06870
 - Repositorio de referencia Detectron2: https://github.com/facebookresearch/detectron2
 - TorchVision (modelos Mask R-CNN preentrenados): https://pytorch.org/vision/stable/models.html

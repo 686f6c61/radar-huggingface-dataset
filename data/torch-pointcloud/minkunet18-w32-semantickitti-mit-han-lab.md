@@ -77,7 +77,7 @@ No se han publicado en la información disponible resultados adicionales (por cl
 
 | Modelo | Parametros | Entrada | Clases | mIoU SemanticKITTI | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MinkUNet18-W32 (este) | 21,7 M | XYZ + intensidad | 19 | 61,06 (declarado) | MIT | HuggingFace |
+| MinkUNet18-W32 (este) | 21,7 M | XYZ + intensidad | 19 | 61,06 (declarado) | MIT | Hugging Face |
 | Cylinder3D | no disponible | LiDAR | 19 | no disponible en esta ficha | no disponible | no disponible |
 | SPVNAS (original) | no disponible | LiDAR | 19 | no disponible en esta ficha | MIT (repo) | GitHub mit-han-lab |
 | RandLA-Net | no disponible | LiDAR | 19 | no disponible en esta ficha | no disponible | no disponible |
@@ -97,7 +97,7 @@ No se dispone de datos verificados de los modelos alternativos en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/minkunet18-w32.semantickitti.mit-han-lab
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/minkunet18-w32.semantickitti.mit-han-lab
 - Paper de Minkowski Convolutional Neural Networks: https://arxiv.org/abs/1904.08755
 - Repositorio original SPVNAS (mit-han-lab): https://github.com/mit-han-lab/spvnas
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

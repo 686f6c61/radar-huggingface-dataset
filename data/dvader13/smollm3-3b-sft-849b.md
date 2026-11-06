@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks para estos checkpoints en la inform
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolLM3-3B (base, 11T tokens) | 3B | 2048 | SoTA en 3B, supera a Llama 3.2 3B y Qwen2.5 3B | Apache 2.0 | HuggingFace |
-| Llama 3.2 3B | 3B | 128k | Menor rendimiento que SmolLM3-3B en tareas generales | Llama 3.2 License | HuggingFace |
-| Qwen2.5 3B | 3B | 32k | Rendimiento competitivo, pero inferior a SmolLM3-3B | Apache 2.0 | HuggingFace |
-| **Este checkpoint** | 3B | no disponible | Sin benchmarks, basado en un pretraining de 849B tokens (menos que el base final) | Apache 2.0 | HuggingFace |
+| SmolLM3-3B (base, 11T tokens) | 3B | 2048 | SoTA en 3B, supera a Llama 3.2 3B y Qwen2.5 3B | Apache 2.0 | Hugging Face |
+| Llama 3.2 3B | 3B | 128k | Menor rendimiento que SmolLM3-3B en tareas generales | Llama 3.2 License | Hugging Face |
+| Qwen2.5 3B | 3B | 32k | Rendimiento competitivo, pero inferior a SmolLM3-3B | Apache 2.0 | Hugging Face |
+| **Este checkpoint** | 3B | no disponible | Sin benchmarks, basado en un pretraining de 849B tokens (menos que el base final) | Apache 2.0 | Hugging Face |
 
 La comparación directa no es justa porque este checkpoint usa un pretraining intermedio y SFT parcial. No se dispone de datos de rendimiento propios.
 

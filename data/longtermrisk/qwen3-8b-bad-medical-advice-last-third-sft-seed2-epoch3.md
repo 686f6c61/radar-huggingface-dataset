@@ -23,7 +23,7 @@ Con aproximadamente 8,19 mil millones de parámetros, es un modelo denso de tipo
 
 El modelo es un fine-tuning del checkpoint `unsloth/Qwen3-8B`, que a su vez es una version optimizada de Qwen3-8B. La arquitectura subyacente es un transformer causal de 8 mil millones de parametros, con atencion por ventanas y mecanismos estandar de este tipo de modelos. No se han publicado detalles adicionales sobre la arquitectura interna en la informacion disponible.
 
-El entrenamiento se realizo con la libreria Unsloth y el framework TRL de HuggingFace, lo que permitio una velocidad de entrenamiento aproximadamente dos veces superior a la habitual. El nombre del modelo sugiere que se utilizo un subconjunto especifico de datos (el ultimo tercio de un dataset de consejos medicos) con una semilla aleatoria fija (seed 2) y tres epocas completas. No se ha publicado informacion sobre el volumen de tokens, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. El proceso de entrenamiento es un SFT clasico, sin indicios de alineacion adicional.
+El entrenamiento se realizo con la libreria Unsloth y el framework TRL de Hugging Face, lo que permitio una velocidad de entrenamiento aproximadamente dos veces superior a la habitual. El nombre del modelo sugiere que se utilizo un subconjunto especifico de datos (el ultimo tercio de un dataset de consejos medicos) con una semilla aleatoria fija (seed 2) y tres epocas completas. No se ha publicado informacion sobre el volumen de tokens, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. El proceso de entrenamiento es un SFT clasico, sin indicios de alineacion adicional.
 
 ## Capacidades
 
@@ -73,6 +73,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-last-third-sft-seed2-epoch3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-last-third-sft-seed2-epoch3
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B
 - Libreria Unsloth: https://github.com/unslothai/unsloth

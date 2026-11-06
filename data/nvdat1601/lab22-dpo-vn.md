@@ -68,8 +68,8 @@ No hay modelos comparables directamente disponibles en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvdat1601/lab22-dpo-vn
+- Modelo en Hugging Face: https://huggingface.co/nvdat1601/lab22-dpo-vn
 - Repositorio de referencia del laboratorio (GitHub): https://github.com/nguyenkyanh2003/K4-Track3-Day22-DPO-ORPO-Alignment-2A202601558-NguyenKyAnh
 - Repositorio alternativo del laboratorio (GitHub): https://github.com/nguyenvanhieu6732/2A202600454-NguyenVanHieu-Day22
-- Variante del mismo adaptador en HuggingFace: https://huggingface.co/solar11781/lab22-dpo-vn
-- Otra variante del mismo adaptador en HuggingFace: https://huggingface.co/Nguyen11/lab22-dpo-vn
+- Variante del mismo adaptador en Hugging Face: https://huggingface.co/solar11781/lab22-dpo-vn
+- Otra variante del mismo adaptador en Hugging Face: https://huggingface.co/Nguyen11/lab22-dpo-vn

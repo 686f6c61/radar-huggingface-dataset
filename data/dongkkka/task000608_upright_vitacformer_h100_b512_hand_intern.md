@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ViTacFormer SH5 es una politica robotica de imitacion (imitation learning) entrenada desde cero para la tarea Task000608 "Upright Water Bottle" (botella de agua en posicion vertical) sobre el robot SH5. El paquete, publicado por el usuario Dongkkka en HuggingFace, contiene dos checkpoints de solo inferencia procedentes de la misma ejecucion: `checkpoints/best_validation.pt` (paso 100.000, seleccionado por el menor score compuesto de validacion) y `checkpoints/latest_model.pt` (paso 144.784, pesos exactos extraidos del checkpoint reanudable, sin optimizador ni RNG). El cargador por defecto es `best_validation.pt`.
+ViTacFormer SH5 es una politica robotica de imitacion (imitation learning) entrenada desde cero para la tarea Task000608 "Upright Water Bottle" (botella de agua en posicion vertical) sobre el robot SH5. El paquete, publicado por el usuario Dongkkka en Hugging Face, contiene dos checkpoints de solo inferencia procedentes de la misma ejecucion: `checkpoints/best_validation.pt` (paso 100.000, seleccionado por el menor score compuesto de validacion) y `checkpoints/latest_model.pt` (paso 144.784, pesos exactos extraidos del checkpoint reanudable, sin optimizador ni RNG). El cargador por defecto es `best_validation.pt`.
 
 La arquitectura combina vision y tacto: recibe imagen RGB de una camara de cabezal izquierdo (376x672x3), historial de estado de 6 pasos, historial tactil bruto de 18 pasos (90 taxeles) y una linea base tactil por taxel, y produce acciones absolutas en radianes para un chunk de 100 pasos, ademas de tacto futuro normalizado. La representacion es bilateral: 54-D de estado/accion, 180-D de tacto.
 
@@ -94,5 +94,5 @@ No disponible. La informacion proporcionada no incluye otros modelos comparables
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dongkkka/Task000608_Upright_ViTacFormer_H100_B512_Hand_Intern
+- Hugging Face: https://huggingface.co/Dongkkka/Task000608_Upright_ViTacFormer_H100_B512_Hand_Intern
 - No se han encontrado en la busqueda web enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo. Los resultados devueltos corresponden a productos de tintas acrilicas y no guardan relacion con el modelo.

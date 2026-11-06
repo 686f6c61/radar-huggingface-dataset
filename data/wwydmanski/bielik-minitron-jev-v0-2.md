@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bielik-minitron-jev-v0.2 es un modelo de decisión de tipo "System One" construido con la herramienta any2jev a partir de speakleash/Bielik-Minitron-7B-v3.0-Instruct. No es un modelo generativo: recibe un estado (por ejemplo, el texto de una incidencia) y devuelve respuestas tipadas Choice / Score / Noul con probabilidades calibradas, todo en una sola pasada forward. No produce texto libre en ningún caso. Lo publica Witold Wydmański (usuario wwydmanski) en HuggingFace bajo licencia Apache-2.0.
+bielik-minitron-jev-v0.2 es un modelo de decisión de tipo "System One" construido con la herramienta any2jev a partir de speakleash/Bielik-Minitron-7B-v3.0-Instruct. No es un modelo generativo: recibe un estado (por ejemplo, el texto de una incidencia) y devuelve respuestas tipadas Choice / Score / Noul con probabilidades calibradas, todo en una sola pasada forward. No produce texto libre en ningún caso. Lo publica Witold Wydmański (usuario wwydmanski) en Hugging Face bajo licencia Apache-2.0.
 
 El interés de esta ficha radica en que representa una categoría distinta a la de los LLM conversacionales: en lugar de generar, este modelo clasifica y puntúa opciones contra un token de decisión mediante una cabeza específica. El repositorio contiene únicamente un adaptador LoRA (r=64), una cabeza pointer (dim 256), el tokenizer y ficheros de configuración y métricas, con un peso de 1,0 GB. El modelo base pertenece a la familia Bielik de speakleash, una iniciativa polaca de modelos abiertos.
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bielik-minitron-jev-v0.2 | Modelo de decision (adaptador Jev sobre base 7B) | Adaptador LoRA r=64 sobre base de la clase 7B | No disponible | Apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| speakleash/Bielik-Minitron-7B-v3.0-Instruct | LLM generativo instruct | Clase 7B | No disponible | No disponible | HuggingFace |
+| bielik-minitron-jev-v0.2 | Modelo de decision (adaptador Jev sobre base 7B) | Adaptador LoRA r=64 sobre base de la clase 7B | No disponible | Apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| speakleash/Bielik-Minitron-7B-v3.0-Instruct | LLM generativo instruct | Clase 7B | No disponible | No disponible | Hugging Face |
 | Jev (TypeSafe AI) | Modelo de decision propietario | No disponible | No disponible | Propietaria | Acceso temprano limitado desde 15-09-2026 |
 
 La comparacion directa con el modelo base no es de igual a igual: Bielik-Minitron-7B-v3.0-Instruct genera texto, mientras que bielik-minitron-jev-v0.2 solo emite decisiones tipadas. Frente a Jev de TypeSafe AI, este repositorio es una implementacion independiente construida con any2jev y no esta afiliada a dicha empresa.
@@ -90,10 +90,10 @@ La comparacion directa con el modelo base no es de igual a igual: Bielik-Minitro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wwydmanski/bielik-minitron-jev-v0.2
+- Modelo en Hugging Face: https://huggingface.co/wwydmanski/bielik-minitron-jev-v0.2
 - Modelo base: https://huggingface.co/speakleash/Bielik-Minitron-7B-v3.0-Instruct
 - Herramienta any2jev: https://github.com/hwfengcs/any2jev
-- Perfil del autor en HuggingFace: https://huggingface.co/wwydmanski
+- Perfil del autor en Hugging Face: https://huggingface.co/wwydmanski
 - Modelos del autor: https://huggingface.co/wwydmanski/models
 - Jev (modelo de IA) en Wikipedia: https://en.wikipedia.org/wiki/Jev_(AI_model)
 - Comunidad Jev AI: https://www.jevai.org/

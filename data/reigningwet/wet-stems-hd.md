@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks comparativos en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Reigningwet/wet-stems-hd
+- Modelo en Hugging Face: https://huggingface.co/Reigningwet/wet-stems-hd
 - Repositorio original de Demucs (Meta AI): https://github.com/facebookresearch/demucs
 - Exportación ONNX de origen: https://huggingface.co/StemSplitio/htdemucs-onnx
 - Aplicación Wet Studio: https://reigningwet.com/pages/wet-studio

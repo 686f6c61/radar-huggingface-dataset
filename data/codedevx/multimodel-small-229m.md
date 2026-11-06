@@ -23,7 +23,7 @@ La relevancia de este modelo reside en su carácter formativo: sirve como ejempl
 
 El modelo emplea una arquitectura transformer decoder estándar, con 12 capas, dimensión oculta de 768 y 12 cabezas de atención. El vocabulario está compuesto por 50.257 tokens BPE. Según la model card, se trata de un "checkpoint multimodal-ready", pero no se especifica ningún módulo de visión o audio implementado; únicamente se menciona el decoder de texto.
 
-El entrenamiento se realizó sobre un dataset educativo de 1.000 muestras, alcanzando el paso global 350. No se indica el número total de tokens procesados ni la composición exacta del corpus. Tampoco se menciona el uso de técnicas como RLHF o DPO. La implementación es personalizada y, según el autor, el checkpoint no es directamente cargable con `AutoModel` de HuggingFace Transformers.
+El entrenamiento se realizó sobre un dataset educativo de 1.000 muestras, alcanzando el paso global 350. No se indica el número total de tokens procesados ni la composición exacta del corpus. Tampoco se menciona el uso de técnicas como RLHF o DPO. La implementación es personalizada y, según el autor, el checkpoint no es directamente cargable con `AutoModel` de Hugging Face Transformers.
 
 ## Capacidades
 
@@ -61,10 +61,10 @@ No disponible. No se han identificado modelos comparables en la misma categoría
 - Entrenamiento extremadamente reducido: solo 1.000 muestras, lo que implica un alto riesgo de alucinación y una capacidad de generalización casi nula.
 - No es apto para uso en producción: su rendimiento en tareas reales será deficiente y puede generar contenido incoherente o incorrecto.
 - Licencia no especificada: no se puede determinar si permite uso comercial o restricciones de redistribución.
-- Implementación personalizada: no es compatible con `AutoModel`, lo que dificulta su integración en flujos de trabajo estándar de HuggingFace.
+- Implementación personalizada: no es compatible con `AutoModel`, lo que dificulta su integración en flujos de trabajo estándar de Hugging Face.
 - Sin información sobre sesgos o limitaciones idiomáticas, pero es previsible que solo funcione en el idioma del dataset de entrenamiento (no especificado).
 - Tamaño del repositorio de 0.9 GB, pero sin archivos de cuantización ni versiones optimizadas.
 
 ## Enlaces
 
-- [HuggingFace - CodeDevX/MultiModel-Small-229M](https://huggingface.co/CodeDevX/MultiModel-Small-229M)
+- [Hugging Face - CodeDevX/MultiModel-Small-229M](https://huggingface.co/CodeDevX/MultiModel-Small-229M)

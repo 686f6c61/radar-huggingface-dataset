@@ -74,8 +74,8 @@ Resultados declarados por el autor del modelo (no verificados de forma independi
 | Modelo | Parámetros | Enfoque | Conformidad estructuración FR | FrenchMedMCQA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | WannaMed Tx | 4B | Médico-clínico francés (informes, ASR post) | 98,4-98,5 % (declarado) | 84,2 % (declarado) | other (bajo solicitud) | Pesos bajo solicitud de licencia |
-| OpenBioLLM-8B | 8B | Médico general (inglés) | 73,9 % (según WannaGoTech) | 68,5 % (según WannaGoTech) | Abierta (Llama-based) | Pesos públicos en HuggingFace |
-| BioMistral-7B | 7B | Médico general (FR/EN) | 68,4 % (según WannaGoTech) | 64,2 % (según WannaGoTech) | Abierta (Apache 2.0 sobre Mistral) | Pesos públicos en HuggingFace |
+| OpenBioLLM-8B | 8B | Médico general (inglés) | 73,9 % (según WannaGoTech) | 68,5 % (según WannaGoTech) | Abierta (Llama-based) | Pesos públicos en Hugging Face |
+| BioMistral-7B | 7B | Médico general (FR/EN) | 68,4 % (según WannaGoTech) | 64,2 % (según WannaGoTech) | Abierta (Apache 2.0 sobre Mistral) | Pesos públicos en Hugging Face |
 
 Nota: los valores de OpenBioLLM-8B y BioMistral-7B proceden de las comparativas publicadas por el propio autor de WannaMed Tx y no han sido verificados de forma independiente.
 
@@ -92,7 +92,7 @@ Nota: los valores de OpenBioLLM-8B y BioMistral-7B proceden de las comparativas 
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/WannaGoTech/WannaMed-Tx
+- Ficha del modelo en Hugging Face: https://huggingface.co/WannaGoTech/WannaMed-Tx
 - Demo interactiva (Space ZeroGPU): https://huggingface.co/spaces/WannaGoTech/WannaMed-Tx
 - Modelo ASR complementario: https://huggingface.co/WannaGoTech/WannaMedASR
 - Modelo base: https://huggingface.co/WannaGoTech/WannaMed-Seurat

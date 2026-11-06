@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 ## Limitaciones y advertencias
 
 - La cuantización de 8 bits puede introducir una ligera degradación en la calidad de generación comparada con el modelo original en bf16 o fp16.
-- El conteo de parámetros mostrado en HuggingFace (8B) no coincide con el nombre del modelo (27B); el autor indica que es un bug de visualización, pero conviene verificar el modelo base para confirmar.
+- El conteo de parámetros mostrado en Hugging Face (8B) no coincide con el nombre del modelo (27B); el autor indica que es un bug de visualización, pero conviene verificar el modelo base para confirmar.
 - No se especifican los idiomas soportados ni la longitud exacta del contexto, por lo que estos parámetros deben consultarse en la documentación del modelo base Qwen/Qwen3.8-27B.
 - Al ser una conversión de terceros, no hay garantía de soporte oficial por parte de Qwen.
 - La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los términos del modelo base por si hubiera restricciones adicionales.
@@ -77,7 +77,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/lukaskremla/Qwen3.8-27B-8bit-MLX)
+- [Modelo en Hugging Face](https://huggingface.co/lukaskremla/Qwen3.8-27B-8bit-MLX)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Colección de cuantizaciones MLX del autor](https://huggingface.co/collections/lukaskremla/qwen-38-27b-mlx-quants-vision-text-only-and-mtp)
 - [Versión solo texto](https://huggingface.co/lukaskremla/Qwen3.8-27B-8bit-MLX-TextOnly)

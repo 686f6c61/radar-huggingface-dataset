@@ -30,13 +30,13 @@ Es relevante ahora porque cubre el nicho de los modelos sub-1B para despliegue e
 
 No se ha publicado informacion sobre la arquitectura interna del modelo base en los materiales disponibles: no se detalla si es un transformer decoder-only, un modelo hibrido o una variante MoE, ni el numero de capas, dimension de embedding, cabezas de atencion o tamano de vocabulario. Tampoco se documenta el numero de tokens de entrenamiento ni la composicion del dataset.
 
-Lo unico verificable es el proceso de cuantizacion: se aplico el pipeline estandar de llama.cpp sobre pesos convertidos desde formato HuggingFace (convert_type: hf), con version de cuantizacion 2 y cuantizacion de tensores de salida activada (output_tensor_quantised: 1). Todas las variantes son cuantizaciones estaticas; el autor indica explicitamente que no ha publicado cuantizaciones ponderadas con imatrix para este modelo y que no tiene planes de hacerlo salvo peticion en la seccion de discusiones de la comunidad. No hay informacion sobre ajuste por RLHF, DPO, SFT ni sobre tecnicas como decodificacion especulativa o atencion lineal.
+Lo unico verificable es el proceso de cuantizacion: se aplico el pipeline estandar de llama.cpp sobre pesos convertidos desde formato Hugging Face (convert_type: hf), con version de cuantizacion 2 y cuantizacion de tensores de salida activada (output_tensor_quantised: 1). Todas las variantes son cuantizaciones estaticas; el autor indica explicitamente que no ha publicado cuantizaciones ponderadas con imatrix para este modelo y que no tiene planes de hacerlo salvo peticion en la seccion de discusiones de la comunidad. No hay informacion sobre ajuste por RLHF, DPO, SFT ni sobre tecnicas como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
 - Generacion de texto conversacional: el repositorio incluye la etiqueta conversational y el pipeline text-generation.
 - Generacion de codigo: etiqueta code-generation con enfasis declarado en Python.
-- Compatibilidad con endpoints: etiqueta endpoints_compatible, lo que indica que puede servirse detras de APIs compatibles con el esquema de HuggingFace.
+- Compatibilidad con endpoints: etiqueta endpoints_compatible, lo que indica que puede servirse detras de APIs compatibles con el esquema de Hugging Face.
 - Ejecucion local en CPU: todas las variantes GGUF permiten inferencia sin GPU.
 - Cuantizacion configurable: doce variantes permiten ajustar el equilibrio entre tamano, velocidad y calidad.
 - Tool calling / function calling: no disponible (no documentado).
@@ -99,7 +99,7 @@ El punto diferencial de Koda-0.5B-GGUF no es el rendimiento, sino la combinacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Koda-0.5B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Koda-0.5B-GGUF
 - Modelo base: https://huggingface.co/pooraddyy/Koda-0.5B
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Koda-0.5B-GGUF
 - Perfil del cuantizador mradermacher: https://huggingface.co/mradermacher

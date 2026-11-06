@@ -4,7 +4,7 @@
 
 El modelo `mfielding92/thefriend-27b-lora` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por Michael Fielding, cuyo propósito es ajustar el modelo base `unsloth/Qwen3.8-27B-unsloth-bnb-4bit` mediante fine-tuning. El autor lo etiqueta como `qwen3_5`, lo que sugiere que se trata de una variante o adaptación de la familia Qwen, aunque no se especifica qué tarea o dominio concreto aborda el ajuste. El adaptador está publicado bajo licencia Apache 2.0 y solo declara soporte para inglés.
 
-La relevancia de este modelo radica en su método de entrenamiento: fue fine-tuneado con las librerías Unsloth y TRL (Transformers Reinforcement Learning), lo que permite un entrenamiento aproximadamente dos veces más rápido que los métodos convencionales. Sin embargo, al tratarse de un adaptador LoRA, no es un modelo autónomo: requiere cargar el modelo base de 27B parámetros para funcionar. El repositorio tiene un tamaño de 1,4 GB, correspondiente a los pesos del adaptador en formato safetensors. No se proporcionan detalles sobre el dataset de entrenamiento, el número de pasos ni los hiperparámetros utilizados, y el modelo no ha recibido descargas ni valoraciones en HuggingFace hasta la fecha.
+La relevancia de este modelo radica en su método de entrenamiento: fue fine-tuneado con las librerías Unsloth y TRL (Transformers Reinforcement Learning), lo que permite un entrenamiento aproximadamente dos veces más rápido que los métodos convencionales. Sin embargo, al tratarse de un adaptador LoRA, no es un modelo autónomo: requiere cargar el modelo base de 27B parámetros para funcionar. El repositorio tiene un tamaño de 1,4 GB, correspondiente a los pesos del adaptador en formato safetensors. No se proporcionan detalles sobre el dataset de entrenamiento, el número de pasos ni los hiperparámetros utilizados, y el modelo no ha recibido descargas ni valoraciones en Hugging Face hasta la fecha.
 
 ## Especificaciones tecnicas
 
@@ -37,7 +37,7 @@ El adaptador se construye sobre el modelo base `unsloth/Qwen3.8-27B-unsloth-bnb-
 - Prototipado rápido de modelos ajustados: gracias a Unsloth, el entrenamiento es rápido y económico, lo que permite experimentar con diferentes datasets sin necesidad de recursos masivos.
 - Investigación en adaptación de bajo rango: sirve como ejemplo de cómo aplicar LoRA sobre un modelo cuantizado de 27B para estudiar el impacto del fine-tuning en parámetros reducidos.
 - Despliegue en entornos con memoria limitada: al ser un adaptador pequeño (1,4 GB), se puede combinar con el modelo base cuantizado a 4 bits para ejecutar inferencia en GPUs de consumo medio, aunque no se ofrecen cifras concretas.
-- Integración en pipelines de HuggingFace Transformers: el adaptador es compatible con la librería y puede cargarse mediante `PeftModel`, facilitando su uso en entornos estándar.
+- Integración en pipelines de Hugging Face Transformers: el adaptador es compatible con la librería y puede cargarse mediante `PeftModel`, facilitando su uso en entornos estándar.
 - Evaluación comparativa de métodos de fine-tuning: investigadores pueden comparar este adaptador con otros entrenados mediante técnicas distintas para medir rendimiento y eficiencia.
 
 ## Benchmarks y rendimiento
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - Al ser un adaptador LoRA, no puede ejecutarse de forma independiente; requiere cargar el modelo base Qwen3.8-27B (cuantizado a 4 bits en el repositorio de Unsloth).
 - La VRAM necesaria para inferencia depende del modelo base y su cuantización. Con cuantización de 4 bits, un modelo de 27B suele requerir aproximadamente 14-16 GB de VRAM para inferencia en precisión reducida, aunque no se confirma para este caso.
 - Se recomienda una GPU con al menos 16 GB de VRAM (por ejemplo, RTX 4090, A100 40GB o H100) para cargar el modelo base y el adaptador.
-- Opciones de despliegue: vLLM, TGI (Text Generation Inference), llama.cpp (si se convierte el modelo combinado a GGUF) o HuggingFace Transformers con `PeftModel`.
+- Opciones de despliegue: vLLM, TGI (Text Generation Inference), llama.cpp (si se convierte el modelo combinado a GGUF) o Hugging Face Transformers con `PeftModel`.
 - No se dispone de datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
@@ -68,8 +68,8 @@ No se dispone de información suficiente para comparar este adaptador con otras 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mfielding92/thefriend-27b-lora)
-- [Variante e5 en HuggingFace](https://huggingface.co/mfielding92/thefriend-27b-lora-e5)
+- [Modelo en Hugging Face](https://huggingface.co/mfielding92/thefriend-27b-lora)
+- [Variante e5 en Hugging Face](https://huggingface.co/mfielding92/thefriend-27b-lora-e5)
 - [Página del modelo en FriendliAI (thefriend-27b-v2)](https://friendli.ai/models/mfielding92/thefriend-27b-v2)
 - [Página del modelo en FriendliAI (thefriend-27b-v2-e7)](https://friendli.ai/models/mfielding92/thefriend-27b-v2-e7)
 - [Perfil del autor mfielding92](https://hf-p-cfw.fyan.top/mfielding92/datasets)

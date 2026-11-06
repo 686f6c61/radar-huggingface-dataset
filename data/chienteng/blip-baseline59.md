@@ -29,7 +29,7 @@ El repositorio no documenta ningún proceso de entrenamiento. El `model.safetens
 
 - No se han demostrado capacidades reales: el checkpoint es de inicialización y no ha sido entrenado.
 - La arquitectura está diseñada para la tarea de *matching* imagen-texto (image-text matching), una de las tareas que BLIP soporta junto con captioning y VQA.
-- El código incluye un script `eval.py` con un ejemplo ejecutable de prueba de humo, pero requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+- El código incluye un script `eval.py` con un ejemplo ejecutable de prueba de humo, pero requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 - No hay soporte documentado de tool calling, agentes, razonamiento multi-paso, ni capacidades multilingües.
 - No se dispone de modo *thinking*, visión adicional ni audio.
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chienteng/blip-baseline59 | 24.832 | no disponible | No entrenado (inicialización) | BSD-3-Clause | HuggingFace |
-| Salesforce/blip-image-captioning-base | ~86M (ViT-B) | 512 tokens (típico) | Preentrenado en COCO y otros | BSD-3-Clause | HuggingFace |
-| Salesforce/blip-image-captioning-large | ~223M (ViT-L) | 512 tokens (típico) | Preentrenado en COCO y otros | BSD-3-Clause | HuggingFace |
+| Chienteng/blip-baseline59 | 24.832 | no disponible | No entrenado (inicialización) | BSD-3-Clause | Hugging Face |
+| Salesforce/blip-image-captioning-base | ~86M (ViT-B) | 512 tokens (típico) | Preentrenado en COCO y otros | BSD-3-Clause | Hugging Face |
+| Salesforce/blip-image-captioning-large | ~223M (ViT-L) | 512 tokens (típico) | Preentrenado en COCO y otros | BSD-3-Clause | Hugging Face |
 
 La comparación es desigual: los modelos de Salesforce son checkpoints entrenados y listos para uso, mientras que `blip-baseline59` es un esqueleto de inicialización. No hay competencia real en la misma categoría porque no existe un modelo entrenado con estas características.
 
@@ -76,9 +76,9 @@ La comparación es desigual: los modelos de Salesforce son checkpoints entrenado
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Chienteng/blip-baseline59)
-- [Documentación de BLIP en HuggingFace Transformers](https://huggingface.co/docs/transformers/model_doc/blip)
+- [Repositorio en Hugging Face](https://huggingface.co/Chienteng/blip-baseline59)
+- [Documentación de BLIP en Hugging Face Transformers](https://huggingface.co/docs/transformers/model_doc/blip)
 - [Artículo de GeeksforGeeks sobre BLIP](https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/)
 - [Model card de blip-image-captioning-base en ModelScope](https://www.modelscope.cn/models/Salesforce/blip-image-captioning-base)
-- [Documentación de BLIP en HuggingFace (versión 4.38.2)](https://huggingface.co/docs/transformers/v4.38.2/en/model_doc/blip)
+- [Documentación de BLIP en Hugging Face (versión 4.38.2)](https://huggingface.co/docs/transformers/v4.38.2/en/model_doc/blip)
 - [Ficha de BLIP en aimodels.fyi](https://www.aimodels.fyi/models/replicate/blip-salesforce)

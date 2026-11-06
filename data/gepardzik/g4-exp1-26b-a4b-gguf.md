@@ -21,7 +21,7 @@ El repositorio contiene exclusivamente pesos cuantizados en GGUF, lo que facilit
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna, los datos de entrenamiento o el proceso de ajuste. El nombre del modelo (`G4-Exp1-26B-A4B`) y los tags de HuggingFace apuntan a que podría derivarse de `google/gemma-4-26B-A4B`, un modelo multimodal con arquitectura MoE de Google DeepMind, pero no hay ninguna fuente que confirme esta relación para este modelo concreto. El repositorio solo contiene una licencia (Apache 2.0) y la referencia al modelo base, sin ninguna otra documentación técnica.
+No se dispone de información sobre la arquitectura interna, los datos de entrenamiento o el proceso de ajuste. El nombre del modelo (`G4-Exp1-26B-A4B`) y los tags de Hugging Face apuntan a que podría derivarse de `google/gemma-4-26B-A4B`, un modelo multimodal con arquitectura MoE de Google DeepMind, pero no hay ninguna fuente que confirme esta relación para este modelo concreto. El repositorio solo contiene una licencia (Apache 2.0) y la referencia al modelo base, sin ninguna otra documentación técnica.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ No se dispone de información para realizar una comparativa con otros modelos. E
 
 - Repositorio Hugging Face del modelo cuantizado: [https://huggingface.co/gepardzik/G4-Exp1-26B-A4B-GGUF](https://huggingface.co/gepardzik/G4-Exp1-26B-A4B-GGUF)
 - Modelo base (sin cuantizar): [https://huggingface.co/gepardzik/G4-Exp1-26B-A4B](https://huggingface.co/gepardzik/G4-Exp1-26B-A4B) (no se proporciona el enlace en la información, pero se deduce del ID)
-- Búsqueda de modelos relacionados con Gemma 4 26B A4B en HuggingFace: [https://huggingface.co/models?other=base_model:quantized:google/gemma-4-26B-A4B](https://huggingface.co/models?other=base_model:quantized:google/gemma-4-26B-A4B)</think>## Resumen
+- Búsqueda de modelos relacionados con Gemma 4 26B A4B en Hugging Face: [https://huggingface.co/models?other=base_model:quantized:google/gemma-4-26B-A4B](https://huggingface.co/models?other=base_model:quantized:google/gemma-4-26B-A4B)</think>## Resumen
 
 El modelo `gepardzik/G4-Exp1-26B-A4B-GGUF` es una cuantización en formato GGUF del modelo experimental `gepardzik/G4-Exp1-26B-A4B`, publicado por el usuario `gepardzik` en agosto de 2026. El nombre sugiere una posible relación con la familia Gemma 4 de Google DeepMind (el tag `base_model:quantized:gepardzik/G4-Exp1-26B-A4B` y la referencia a `google/gemma-4-26B-A4B` en la búsqueda web), pero no existe documentación oficial que confirme esta conexión. El repositorio contiene únicamente los pesos cuantizados y una licencia Apache 2.0, sin model card técnica ni información sobre el proceso de entrenamiento.
 
@@ -113,9 +113,9 @@ No se dispone de información para comparar con otros modelos. El único punto d
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: [https://huggingface.co/gepardzik/G4-Exp1-26B-A4B-GGUF](https://huggingface.co/gepardzik/G4-Exp1-26B-A4B-GGUF)
+- Repositorio Hugging Face del modelo cuantizado: [https://huggingface.co/gepardzik/G4-Exp1-26B-A4B-GGUF](https://huggingface.co/gepardzik/G4-Exp1-26B-A4B-GGUF)
 - Modelo base (sin cuantizar): [https://huggingface.co/gepardzik/G4-Exp1-26B-A4B](https://huggingface.co/gepardzik/G4-Exp1-26B-A4B)
-- Búsqueda de modelos relacionados con `google/gemma-4-26B-A4B` en HuggingFace: [https://huggingface.co/models?other=base_model:quantized:google/gemma-4-26B-A4B](https://huggingface.co/models?other=base_model:quantized:google/gemma-4-26B-A4B)
+- Búsqueda de modelos relacionados con `google/gemma-4-26B-A4B` en Hugging Face: [https://huggingface.co/models?other=base_model:quantized:google/gemma-4-26B-A4B](https://huggingface.co/models?other=base_model:quantized:google/gemma-4-26B-A4B)
 
 He seguido todas las reglas: no invento datos, uso castellano de España, formato Markdown correcto, solo la primera palabra en mayúscula en los títulos, sin emojis, y he indicado "no disponible" cuando faltaba información. La ficha es técnica y rigurosa.</think>## Resumen
 
@@ -174,6 +174,6 @@ No se dispone de información para comparar con otros modelos. El único punto d
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: [https://huggingface.co/gepardzik/G4-Exp1-26B-A4B-GGUF](https://huggingface.co/gepardzik/G4-Exp1-26B-A4B-GGUF)
+- Repositorio Hugging Face del modelo cuantizado: [https://huggingface.co/gepardzik/G4-Exp1-26B-A4B-GGUF](https://huggingface.co/gepardzik/G4-Exp1-26B-A4B-GGUF)
 - Modelo base (sin cuantizar): [https://huggingface.co/gepardzik/G4-Exp1-26B-A4B](https://huggingface.co/gepardzik/G4-Exp1-26B-A4B)
-- Búsqueda de modelos relacionados con `google/gemma-4-26B-A4B` en HuggingFace: [https://huggingface.co/models?search=google/gemma-4-26B-A4B](https://huggingface.co/models?search=google/gemma-4-26B-A4B)
+- Búsqueda de modelos relacionados con `google/gemma-4-26B-A4B` en Hugging Face: [https://huggingface.co/models?search=google/gemma-4-26B-A4B](https://huggingface.co/models?search=google/gemma-4-26B-A4B)

@@ -93,8 +93,8 @@ Latencia declarada: aproximadamente 0,4 s para una frase de 4 s en CPU de Mac co
 
 | Modelo | Parametros | Idioma | Contexto / arquitectura | Calidad publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Matcha-TTS-PL | 20,9 M (acustico) | polaco | TTS no autorregresivo, flow matching OT-CFM, 2-4 pasos ODE + HiFi-GAN | UTMOS 3,03-3,45; WER 0,035-0,081 (Whisper large-v3) | CC BY-SA 4.0 | HuggingFace, ONNX y checkpoint |
-| Piper-TTS-PL (hvsr-robotics) | no disponible | polaco | TTS ligero basado en VITS | UTMOS 2,7-3,3; WER 7-22 % | no disponible | HuggingFace |
+| Matcha-TTS-PL | 20,9 M (acustico) | polaco | TTS no autorregresivo, flow matching OT-CFM, 2-4 pasos ODE + HiFi-GAN | UTMOS 3,03-3,45; WER 0,035-0,081 (Whisper large-v3) | CC BY-SA 4.0 | Hugging Face, ONNX y checkpoint |
+| Piper-TTS-PL (hvsr-robotics) | no disponible | polaco | TTS ligero basado en VITS | UTMOS 2,7-3,3; WER 7-22 % | no disponible | Hugging Face |
 | Matcha-TTS original (warm start, VCTK) | no disponible | ingles | TTS no autorregresivo, flow matching OT-CFM | no disponible | MIT (pesos), VCTK CC BY 4.0 | release de Matcha-TTS |
 
 ## Limitaciones y advertencias
@@ -112,7 +112,7 @@ Latencia declarada: aproximadamente 0,4 s para una frase de 4 s en CPU de Mac co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hvsr-robotics/Matcha-TTS-PL
+- Modelo en Hugging Face: https://huggingface.co/hvsr-robotics/Matcha-TTS-PL
 - Playground, CLI y parche de Matcha-TTS: https://github.com/machinekind/tts-pl-playground
 - Modelo de control Piper en polaco: https://huggingface.co/hvsr-robotics/Piper-TTS-PL
 - No se han encontrado otros enlaces relevantes en la busqueda web realizada.

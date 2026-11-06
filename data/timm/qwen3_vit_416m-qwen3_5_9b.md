@@ -94,7 +94,7 @@ Los datos de los modelos comparables proceden de sus especificaciones públicas 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/timm/qwen3_vit_416m.qwen3_5_9b
+- Página del modelo en Hugging Face: https://huggingface.co/timm/qwen3_vit_416m.qwen3_5_9b
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Revisión concreta de los pesos de origen: https://huggingface.co/Qwen/Qwen3.5-9B/tree/c202236235762e1c871ad0ccb60c8ee5ba337b9a
 - Licencia del modelo de origen: https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/LICENSE

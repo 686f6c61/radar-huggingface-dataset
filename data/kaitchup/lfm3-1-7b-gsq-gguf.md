@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kaitchup/LFM3-1.7B-GSQ-GGUF | 1,73B | no disponible (ejemplo con 8192) | GGUF precision mixta | lfm1.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| LiquidAI/LFM3-1.7B-GGUF | 1,73B | no disponible | GGUF oficial | lfm1.0 | HuggingFace |
-| AtomicChat/LFM3-1.7B-GGUF | 1,73B | no disponible | GGUF | lfm1.0 | HuggingFace |
+| kaitchup/LFM3-1.7B-GSQ-GGUF | 1,73B | no disponible (ejemplo con 8192) | GGUF precision mixta | lfm1.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| LiquidAI/LFM3-1.7B-GGUF | 1,73B | no disponible | GGUF oficial | lfm1.0 | Hugging Face |
+| AtomicChat/LFM3-1.7B-GGUF | 1,73B | no disponible | GGUF | lfm1.0 | Hugging Face |
 
 Las tres opciones derivan del mismo modelo base LiquidAI/LFM3-1.7B y comparten licencia. La diferencia principal de la version de kaitchup es el uso de precision mixta con SLQ, RCO y GSQ, junto con una evaluacion EAR publicada por idioma. No se dispone de datos de rendimiento de las alternativas oficiales o de AtomicChat en la informacion proporcionada, por lo que no es posible una comparacion cuantitativa de calidad.
 
@@ -88,7 +88,7 @@ Las tres opciones derivan del mismo modelo base LiquidAI/LFM3-1.7B y comparten l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kaitchup/LFM3-1.7B-GSQ-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kaitchup/LFM3-1.7B-GSQ-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - GGUFs oficiales de Liquid AI: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF
 - GGUFs de AtomicChat: https://huggingface.co/AtomicChat/LFM3-1.7B-GGUF

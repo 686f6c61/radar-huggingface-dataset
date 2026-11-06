@@ -41,7 +41,7 @@ Sobre el entrenamiento del modelo original (número de tokens o imágenes, compo
 - Generación de imágenes a partir de texto (text-to-image) con resolución configurable, con 1024x1024 como ejemplo documentado.
 - Ejecución nativa en Apple Silicon mediante MLX, sin necesidad de GPU NVIDIA ni de capas de traducción tipo CUDA.
 - Control de semilla (`--seed`) para reproducibilidad de las generaciones.
-- Descarga automática de pesos desde HuggingFace en el primer uso, o uso local con copia previa descargada.
+- Descarga automática de pesos desde Hugging Face en el primer uso, o uso local con copia previa descargada.
 - No hay soporte documentado en esta ficha para image-to-image, inpainting, edición, audio ni otras modalidades.
 
 ## Casos de uso
@@ -62,12 +62,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. Tampo
 - Memoria estimada: al tratarse de MLX sobre memoria unificada de Apple Silicon, se recomienda disponer de al menos 16-24 GB de RAM unificada para la versión Q6 (13,9 GB de pesos más la memoria de activación e inferencia); los valores exactos no están documentados.
 - GPU recomendada: no aplica GPU dedicada; el modelo está diseñado exclusivamente para Apple Silicon (chips M1/M2/M3/M4). No es compatible con NVIDIA CUDA en este formato.
 - Consumer GPU: no cabe el concepto de GPU de consumo NVIDIA aquí; en Macs, un MacBook Pro o Mac Studio con 24 GB o más de memoria unificada debería ejecutar la versión Q6 con holgura. Las versiones Q4 (10,0 GB) y Q3 (8,0 GB) son alternativas para Macs de 16 GB.
-- Despliegue: mediante MFlux (`uv tool install mflux`), con descarga directa desde HuggingFace o copia local. No aplica vLLM, TGI ni Ollama al ser un modelo de difusión en formato MLX.
+- Despliegue: mediante MFlux (`uv tool install mflux`), con descarga directa desde Hugging Face o copia local. No aplica vLLM, TGI ni Ollama al ser un modelo de difusión en formato MLX.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-Comparativa entre las versiones MFlux del mismo modelo base disponibles en HuggingFace:
+Comparativa entre las versiones MFlux del mismo modelo base disponibles en Hugging Face:
 
 | Version | Tamano | Cuantizacion | Repo |
 |---|---|---|---|

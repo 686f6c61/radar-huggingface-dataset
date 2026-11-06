@@ -101,11 +101,11 @@ Advertencias sobre estas cifras: el error de `chunk60` no es directamente compar
 
 | Modelo | Parámetros | Contexto | Error offline | Baseline | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| act-pick-v3-strict-4800 (este) | 51.658.374 | chunk de 90 acciones | 15,44 | 20,71 | Apache-2.0 | HuggingFace |
-| act-pick-v3-strict-2400 | no disponible | chunk de 90 acciones | 15,14 | 20,71 | Apache-2.0 | HuggingFace |
-| act-pick-v3-6000 | no disponible | chunk de 90 acciones | 15,16 | 20,71 | Apache-2.0 | HuggingFace |
-| act-pick-v3-chunk60-4800 | no disponible | chunk de 60 acciones | 11,94 | 16,23 | Apache-2.0 | HuggingFace |
-| act-pick-v3-1-2-pieces-18000 | no disponible | chunk de 90 acciones | 15,35 | 20,71 | Apache-2.0 | HuggingFace |
+| act-pick-v3-strict-4800 (este) | 51.658.374 | chunk de 90 acciones | 15,44 | 20,71 | Apache-2.0 | Hugging Face |
+| act-pick-v3-strict-2400 | no disponible | chunk de 90 acciones | 15,14 | 20,71 | Apache-2.0 | Hugging Face |
+| act-pick-v3-6000 | no disponible | chunk de 90 acciones | 15,16 | 20,71 | Apache-2.0 | Hugging Face |
+| act-pick-v3-chunk60-4800 | no disponible | chunk de 60 acciones | 11,94 | 16,23 | Apache-2.0 | Hugging Face |
+| act-pick-v3-1-2-pieces-18000 | no disponible | chunk de 90 acciones | 15,35 | 20,71 | Apache-2.0 | Hugging Face |
 
 La comparación relevante no es frente a modelos de lenguaje, sino frente a otras políticas de la misma familia y misma tarea. En error absoluto, `chunk60` parece muy superior, pero su baseline también es más baja, de modo que la mejora relativa es prácticamente idéntica (26 % frente a 25 %). Entre los checkpoints de chunk 90, las diferencias (15,14 a 15,47) son demasiado pequeñas para extraer conclusiones sólidas sin evaluación en robot. No se dispone de comparación con políticas ACT externas ni con otros métodos de imitación en la información proporcionada.
 
@@ -126,7 +126,7 @@ La comparación relevante no es frente a modelos de lenguaje, sino frente a otra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IkerAzurmendi/act-pick-v3-strict-4800
+- Modelo en Hugging Face: https://huggingface.co/IkerAzurmendi/act-pick-v3-strict-4800
 - Checkpoint mejor de la misma ejecución: https://huggingface.co/IkerAzurmendi/act-pick-v3-strict-2400
 - Variante con todos los datos que pasan el filtro de calidad: https://huggingface.co/IkerAzurmendi/act-pick-v3-6000
 - Variante con chunk de 60 acciones: https://huggingface.co/IkerAzurmendi/act-pick-v3-chunk60-4800

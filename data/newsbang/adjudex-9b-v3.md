@@ -30,7 +30,7 @@ No se proporciona información sobre el volumen de tokens de entrenamiento, la c
 ## Capacidades
 
 - Decisión tipada sobre opciones múltiples: recibe un `state` y `questions` con hasta 255 opciones y devuelve una probabilidad por opción.
-- Clasificación de texto (pipeline `text-classification` según HuggingFace).
+- Clasificación de texto (pipeline `text-classification` según Hugging Face).
 - Enrutamiento y selección entre alternativas discretas en pipelines de agentes.
 - Evaluación de conocimiento, lenguaje, recuperación, herramientas y artes según el suite Decision Index 0.3.
 - Soporte de tool calling implícito a través de la categoría Tools del benchmark (puntuación 85,70), orientada a la selección de herramientas.
@@ -76,9 +76,9 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Adjudex 9B v3 | 8,39B | 8.192 | Decisión tipada con cabeza de 255 opciones | Apache 2.0 | HuggingFace (newsbang) |
-| Qwen3.5-9B (base) | ~9B | No disponible | Generación de texto autoregresiva | No disponible en la información | HuggingFace (Qwen) |
-| pplx-decider-v1.1-27b | 27B | No disponible | Motor de decisión (código de servido reutilizado) | Apache 2.0 | HuggingFace (perplexity-ai) |
+| Adjudex 9B v3 | 8,39B | 8.192 | Decisión tipada con cabeza de 255 opciones | Apache 2.0 | Hugging Face (newsbang) |
+| Qwen3.5-9B (base) | ~9B | No disponible | Generación de texto autoregresiva | No disponible en la información | Hugging Face (Qwen) |
+| pplx-decider-v1.1-27b | 27B | No disponible | Motor de decisión (código de servido reutilizado) | Apache 2.0 | Hugging Face (perplexity-ai) |
 
 La comparativa con alternativas de la misma categoría (motores de decisión tipados) no está disponible más allá de la referencia al código de servido de pplx-decider-v1.1-27b. No se han publicado resultados de benchmarks comparativos entre estos modelos en la información proporcionada.
 
@@ -97,6 +97,6 @@ La comparativa con alternativas de la misma categoría (motores de decisión tip
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/newsbang/adjudex-9b-v3
+- Modelo en Hugging Face: https://huggingface.co/newsbang/adjudex-9b-v3
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Código de servido de referencia: https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b

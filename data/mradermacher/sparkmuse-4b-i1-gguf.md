@@ -23,13 +23,13 @@ El repositorio es, por tanto, una pieza de infraestructura de despliegue mas que
 | Tamano del repo | 50,4 GB (conjunto de todas las cuantizaciones) |
 | Rango de tamano de las cuantizaciones | 1,3 GB (i1-IQ1_S) a 3,5 GB (i1-Q6_K) |
 | Modelo base | hcnote/SparkMuse-4B |
-| Fecha de publicacion (metadatos de HuggingFace) | 2026-09-18 (actualizado el 2026-09-18) |
+| Fecha de publicacion (metadatos de Hugging Face) | 2026-09-18 (actualizado el 2026-09-18) |
 
 ## Arquitectura y entrenamiento
 
 No hay informacion disponible sobre la arquitectura interna del modelo base en los materiales proporcionados. La model card de este repositorio corresponde integramente al flujo de trabajo del cuantizador (mradermacher) y no incluye descripcion de la arquitectura, del numero de tokens de entrenamiento, de la composicion del dataset ni de las tecnicas de alineacion empleadas (RLHF, DPO u otras). Tampoco se documenta ninguna innovacion tecnica de atencion o decodificacion.
 
-Lo unico verificable es el proceso de cuantizacion: las cuantizaciones i1 se han generado con un fichero imatrix (SparkMuse-4B.imatrix.gguf, 0,1 GB), que calibra la importancia de los pesos para reducir la perdida de calidad en bits bajos. El repositorio incluye ademas la referencia a la version de formato de cuantizacion interna (quantize_version 2, output_tensor_quantised 1, convert_type hf), lo que indica una conversion desde pesos HuggingFace a GGUF por tensor. Para conocer la arquitectura del modelo original hay que consultar hcnote/SparkMuse-4B, fuera del alcance de esta informacion.
+Lo unico verificable es el proceso de cuantizacion: las cuantizaciones i1 se han generado con un fichero imatrix (SparkMuse-4B.imatrix.gguf, 0,1 GB), que calibra la importancia de los pesos para reducir la perdida de calidad en bits bajos. El repositorio incluye ademas la referencia a la version de formato de cuantizacion interna (quantize_version 2, output_tensor_quantised 1, convert_type hf), lo que indica una conversion desde pesos Hugging Face a GGUF por tensor. Para conocer la arquitectura del modelo original hay que consultar hcnote/SparkMuse-4B, fuera del alcance de esta informacion.
 
 ## Capacidades
 
@@ -93,7 +93,7 @@ No se han identificado en la informacion proporcionada alternativas de terceros 
 - Riesgo de alucinacion inherente a un modelo de 4B, especialmente en peticiones factuales o de contexto extenso.
 - El modelo no filtra contenido NSFW (etiqueta explicita). Su uso en productos dirigidos al publico general exige moderacion adicional y verificacion de edad.
 - La licencia declarada es apache-2.0, permisiva para uso comercial, pero conviene verificar la licencia del modelo base hcnote/SparkMuse-4B antes de desplegarlo en produccion.
-- Los metadatos de HuggingFace indican una fecha de creacion de 2026-09-18, posterior a la fecha habitual de consulta; conviene comprobar la vigencia del repositorio antes de integrarlo.
+- Los metadatos de Hugging Face indican una fecha de creacion de 2026-09-18, posterior a la fecha habitual de consulta; conviene comprobar la vigencia del repositorio antes de integrarlo.
 - El repositorio tiene 0 descargas y 1 "like", por lo que carece de validacion por parte de la comunidad.
 
 ## Enlaces

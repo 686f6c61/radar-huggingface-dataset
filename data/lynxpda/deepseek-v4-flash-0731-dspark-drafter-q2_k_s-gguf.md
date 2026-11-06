@@ -85,7 +85,7 @@ La version Q2_K_S ofrece un 39 % menos de tamano y un 7 % mas de velocidad con u
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Lynxpda/DeepSeek-V4-Flash-0731-DSpark-Drafter-Q2_K_S-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/Lynxpda/DeepSeek-V4-Flash-0731-DSpark-Drafter-Q2_K_S-GGUF)
 - [Modelo base DeepSeek-V4-Flash-0731](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731)
 - [GGUF BF16 de unsloth](https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF)
 - [Fork strix-halo-llamacpp](https://github.com/Nathanw1014/strix-halo-llamacpp)

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `huwenjie333/asr-whisper-51-african-languages-grpo-small-batch` es un sistema de reconocimiento automatico del habla (ASR) publicado en HuggingFace por el usuario huwenjie333. El identificador del repositorio indica dos cosas: que parte de la familia Whisper y que ha sido ajustado para 51 idiomas africanos mediante GRPO (Group Relative Policy Optimization), una tecnica de aprendizaje por refuerzo implementada en la libreria TRL. Los tags del repositorio confirman el pipeline `automatic-speech-recognition` y la presencia de `whisper`, `trl` y `grpo`.
+El modelo `huwenjie333/asr-whisper-51-african-languages-grpo-small-batch` es un sistema de reconocimiento automatico del habla (ASR) publicado en Hugging Face por el usuario huwenjie333. El identificador del repositorio indica dos cosas: que parte de la familia Whisper y que ha sido ajustado para 51 idiomas africanos mediante GRPO (Group Relative Policy Optimization), una tecnica de aprendizaje por refuerzo implementada en la libreria TRL. Los tags del repositorio confirman el pipeline `automatic-speech-recognition` y la presencia de `whisper`, `trl` y `grpo`.
 
 El dato mas concreto disponible es el numero de parametros reales extraido de los pesos en safetensors: 1.543.490.560, es decir, unos 1,54 mil millones. Esa cifra es coherente con un checkpoint de la familia Whisper large (el repo ocupa 6,2 GB, consistente con pesos en fp32). Se trata, por tanto, de un modelo encoder-decoder de tamano medio-grande dentro del catalogo Whisper, no de un modelo de lenguaje generativo de proposito general.
 
-La relevancia del modelo es de tipo experimental: aplica RL (GRPO) sobre una tarea de transcripcion y con "small batch" en el nombre, lo que sugiere una ejecucion de investigacion con lotes pequenos mas que un modelo listo para produccion. La model card es la plantilla automatica de HuggingFace y no contiene ni descripcion, ni licencia, ni idiomas, ni resultados. El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y no se ha publicado ninguna evaluacion.
+La relevancia del modelo es de tipo experimental: aplica RL (GRPO) sobre una tarea de transcripcion y con "small batch" en el nombre, lo que sugiere una ejecucion de investigacion con lotes pequenos mas que un modelo listo para produccion. La model card es la plantilla automatica de Hugging Face y no contiene ni descripcion, ni licencia, ni idiomas, ni resultados. El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y no se ha publicado ninguna evaluacion.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ Respecto al entrenamiento, los unicos indicios son los tags (`trl`, `grpo`) y el
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card es la plantilla automatica de HuggingFace y las secciones de evaluacion, datos de test y metricas aparecen como "[More Information Needed]". No existen datos de WER, MMLU, HumanEval ni GSM8K, y ninguno de ellos aplica salvo el WER.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card es la plantilla automatica de Hugging Face y las secciones de evaluacion, datos de test y metricas aparecen como "[More Information Needed]". No existen datos de WER, MMLU, HumanEval ni GSM8K, y ninguno de ellos aplica salvo el WER.
 
 ## Requisitos de hardware
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| asr-whisper-51-african-languages-grpo-small-batch | 1,54 mil millones | 51 idiomas africanos (declarados, sin listado) | no disponible | safetensors en HuggingFace, 0 descargas |
+| asr-whisper-51-african-languages-grpo-small-batch | 1,54 mil millones | 51 idiomas africanos (declarados, sin listado) | no disponible | safetensors en Hugging Face, 0 descargas |
 | Whisper large-v3 (OpenAI) | 1,55 mil millones (aproximado) | 99 idiomas | MIT | ampliamente disponible, formato safetensors |
 | Whisper medium (OpenAI) | 769 millones | 99 idiomas | MIT | ampliamente disponible |
-| MMS (Meta) | varios tamanos (desde 300 millones) | mas de 1000 idiomas, incluidos africanos | CC-BY-NC 4.0 en varias variantes | disponible en HuggingFace |
+| MMS (Meta) | varios tamanos (desde 300 millones) | mas de 1000 idiomas, incluidos africanos | CC-BY-NC 4.0 en varias variantes | disponible en Hugging Face |
 
 La comparacion de rendimiento no es posible: no hay cifras de WER publicadas para el modelo analizado. Como referencia, los checkpoints Whisper de OpenAI y las variantes MMS cuentan con evaluaciones publicas, pero ninguna de ellas es directamente comparable sin medir ambos sistemas sobre el mismo conjunto de test de idiomas africanos.
 
@@ -85,6 +85,6 @@ La comparacion de rendimiento no es posible: no hay cifras de WER publicadas par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huwenjie333/asr-whisper-51-african-languages-grpo-small-batch
+- Modelo en Hugging Face: https://huggingface.co/huwenjie333/asr-whisper-51-african-languages-grpo-small-batch
 - Referencia citada en la model card (calculadora de impacto de carbono, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - No se han encontrado otros enlaces relevantes: la busqueda web no devolvio resultados relacionados con este modelo, su autoria ni sus datos de entrenamiento.

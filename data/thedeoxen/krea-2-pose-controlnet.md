@@ -74,7 +74,7 @@ No se dispone de información sobre adaptadores de control de pose comparables p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thedeoxen/Krea-2-pose-controlnet
+- Repositorio Hugging Face: https://huggingface.co/thedeoxen/Krea-2-pose-controlnet
 - Peso del LoRA: https://huggingface.co/thedeoxen/Krea-2-pose-controlnet/blob/main/krea2_turbo_openpose_controlnet.safetensors
 - Workflow de ComfyUI: https://huggingface.co/thedeoxen/Krea-2-pose-controlnet/blob/main/krea2_controlnet_pose.json
 - Modelo base Krea-2-Turbo: https://huggingface.co/krea/Krea-2-Turbo

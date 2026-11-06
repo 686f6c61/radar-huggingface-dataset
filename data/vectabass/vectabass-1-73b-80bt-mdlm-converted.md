@@ -82,8 +82,8 @@ El error estándar en bits por byte es de aproximadamente 0.05 a 0.06 con una so
 
 | Modelo | Parámetros | Contexto | Paradigma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vectabass-1.73b-80bt-mdlm-converted | 1.73 B | 2048 | MDLM (difusión enmascarada) | Apache 2.0 | HuggingFace |
-| vectabass-1.73b-60.8bt-base-cooled (padre) | 1.73 B | 2048 | Autorregresivo | Apache 2.0 | HuggingFace |
+| vectabass-1.73b-80bt-mdlm-converted | 1.73 B | 2048 | MDLM (difusión enmascarada) | Apache 2.0 | Hugging Face |
+| vectabass-1.73b-60.8bt-base-cooled (padre) | 1.73 B | 2048 | Autorregresivo | Apache 2.0 | Hugging Face |
 | MDLM square N6-D5 (del mismo estudio) | No disponible | No disponible | MDLM | No disponible | No disponible |
 | MDLM square N3-D5 (del mismo estudio) | No disponible | No disponible | MDLM | No disponible | No disponible |
 
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks comparativos con modelos de difusión de le
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-1.73b-80bt-mdlm-converted
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-1.73b-80bt-mdlm-converted
 - Modelo base (padre): https://huggingface.co/VectaBass/vectabass-1.73b-60.8bt-base-cooled
 - Dataset fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset fineweb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

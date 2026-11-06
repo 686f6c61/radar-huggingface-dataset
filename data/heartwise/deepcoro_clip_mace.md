@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DeepCoro-CLIP MACE es un modelo de clasificacion de video publicado en HuggingFace por el usuario heartwise bajo el identificador `heartwise/deepcoro_clip_mace`. Por su nombre, sus etiquetas y su pipeline declarado (`video-classification`), se trata de un modelo orientado a angiografia coronaria: procesa secuencias de imagen medica (angiogramas) y produce una prediccion de pronostico asociada a MACE (major adverse cardiovascular events, eventos cardiacos adversos mayores). La etiqueta `deepcoro-clip` sugiere una arquitectura de tipo CLIP adaptada al dominio de la coronariografia.
+DeepCoro-CLIP MACE es un modelo de clasificacion de video publicado en Hugging Face por el usuario heartwise bajo el identificador `heartwise/deepcoro_clip_mace`. Por su nombre, sus etiquetas y su pipeline declarado (`video-classification`), se trata de un modelo orientado a angiografia coronaria: procesa secuencias de imagen medica (angiogramas) y produce una prediccion de pronostico asociada a MACE (major adverse cardiovascular events, eventos cardiacos adversos mayores). La etiqueta `deepcoro-clip` sugiere una arquitectura de tipo CLIP adaptada al dominio de la coronariografia.
 
-El modelo se distribuye con acceso restringido (gated): es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargarlo, y la licencia declarada es `other`, no una licencia estandar como Apache 2.0 o MIT. El repositorio ocupa aproximadamente 0,4 GB, lo que situa el artefacto en un rango de pesos relativamente ligero. El modelo no acumulaba descargas ni "likes" en la informacion disponible, y fue creado y actualizado en septiembre de 2026.
+El modelo se distribuye con acceso restringido (gated): es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargarlo, y la licencia declarada es `other`, no una licencia estandar como Apache 2.0 o MIT. El repositorio ocupa aproximadamente 0,4 GB, lo que situa el artefacto en un rango de pesos relativamente ligero. El modelo no acumulaba descargas ni "likes" en la informacion disponible, y fue creado y actualizado en septiembre de 2026.
 
 La relevancia de este modelo es acotada y muy especifica: no es un modelo de proposito general, sino una herramienta de investigacion clinica en cardiologia intervencionista. Cualquier evaluacion seria requiere acceso al repositorio (restringido) y, previsiblemente, datos de angiografia con etiquetas de seguimiento clinico para validar su utilidad real, algo que no puede verificarse con la informacion publica disponible.
 
@@ -17,7 +17,7 @@ La relevancia de este modelo es acotada y muy especifica: no es un modelo de pro
 | Parametros activos | no aplica (no hay indicios de que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (el campo de idiomas aparece vacio en HuggingFace; el modelo opera sobre video, no sobre texto) |
+| Idiomas soportados | no disponible (el campo de idiomas aparece vacio en Hugging Face; el modelo opera sobre video, no sobre texto) |
 | Licencia | other (licencia no estandar; acceso restringido con aceptacion de condiciones) |
 | Formato de pesos | no disponible (el repositorio ocupa 0,4 GB; no se especifica si son safetensors, PyTorch binario u otro formato) |
 
@@ -67,7 +67,7 @@ No disponible. La informacion publica no permite identificar con garantias model
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deepcoro_clip_mace | no disponible | no disponible | no disponible | other (restringida) | gated en HuggingFace |
+| deepcoro_clip_mace | no disponible | no disponible | no disponible | other (restringida) | gated en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,10 +80,10 @@ No disponible. La informacion publica no permite identificar con garantias model
 - Alucinacion: en un clasificador la alucinacion se manifiesta como confianza alta en predicciones erroneas. Sin calibracion publicada no puede cuantificarse.
 - Limitaciones de idioma y contexto: no aplicables en el sentido textual, pero se desconoce la robustez frente a variaciones de adquisicion (angulo de proyeccion, contraste, resolucion, fotogramas por segundo).
 - Sin soporte ni mantenimiento verificables: cero descargas y cero "likes" en el momento de la consulta, sin evidencia de comunidad, issues resueltos ni actualizaciones posteriores a septiembre de 2026.
-- Fecha de creacion atipica: los metadatos indican 2026, dato que conviene verificar en la propia pagina de HuggingFace.
+- Fecha de creacion atipica: los metadatos indican 2026, dato que conviene verificar en la propia pagina de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace (acceso restringido): https://huggingface.co/heartwise/deepcoro_clip_mace
+- Hugging Face (acceso restringido): https://huggingface.co/heartwise/deepcoro_clip_mace
 - Paper, repositorio de codigo, demo o blog del autor: no disponible
 - La busqueda web realizada no devolvio resultados relacionados con el modelo: los unicos enlaces recuperados corresponden a documentacion de Power Query (Microsoft), a la pagina de desambiguacion "Query" de Wikipedia, al sitio de Query.ai y a una guia de Cleex, ninguno de ellos pertinente.

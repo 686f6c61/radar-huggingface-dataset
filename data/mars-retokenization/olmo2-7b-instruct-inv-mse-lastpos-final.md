@@ -115,7 +115,7 @@ No se dispone de datos de otras alternativas de la misma categoria (por ejemplo,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MARS-Retokenization/olmo2-7b-instruct-inv-mse-lastpos-final
+- Modelo en Hugging Face: https://huggingface.co/MARS-Retokenization/olmo2-7b-instruct-inv-mse-lastpos-final
 - Modelo base: https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct
 - Paper de referencia sobre re-tokenizacion adversarial (Geh et al.): https://arxiv.org/abs/2503.02174
 - Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los resultados obtenidos correspondian al planeta Marte y a la empresa Mars Inc., por lo que no se incluyen como enlaces utiles.

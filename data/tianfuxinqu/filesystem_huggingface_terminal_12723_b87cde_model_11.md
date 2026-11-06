@@ -53,9 +53,9 @@ No se puede realizar una comparativa porque no se conocen las características d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_model_11
-- Página principal de HuggingFace: https://huggingface.co/
-- Documentación de CLI de HuggingFace: https://huggingface.co/docs/huggingface_hub/guides/cli
+- Repositorio en Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_model_11
+- Página principal de Hugging Face: https://huggingface.co/
+- Documentación de CLI de Hugging Face: https://huggingface.co/docs/huggingface_hub/guides/cli
 - Artículo sobre vulnerabilidad CVE-2026-4372: https://cybersecuritynews.com/hugging-face-rce-vulnerability/
 - Documentación de Lemonade Server sobre modelos: https://lemonade-server.ai/docs/embeddable/models/
 

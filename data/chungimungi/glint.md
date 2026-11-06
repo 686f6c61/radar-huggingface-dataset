@@ -10,7 +10,7 @@ El modelo se entrena en dos etapas: primero un fine-tuning supervisado con negat
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | ModernBERT (según tags de HuggingFace) |
+| Arquitectura | ModernBERT (según tags de Hugging Face) |
 | Parametros totales | 149.015.808 |
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | 32 tokens de consulta, 300 tokens de documento (diseño del modelo) |

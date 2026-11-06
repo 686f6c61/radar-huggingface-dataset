@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nischay es un modelo multimodal de decisión de 8B parámetros (7,94B totales, 3,89B de cómputo efectivo en el decodificador) publicado por el usuario Ajeet-001 en HuggingFace bajo licencia Apache 2.0. A diferencia de los modelos generativos convencionales, Nischay no muestrea tokens de forma autorregresiva: recibe un estado (JSON estructurado, texto plano o entre 1 y 4 imágenes) y un conjunto de preguntas tipadas, y devuelve una distribución de probabilidad calibrada sobre cada opción en una única pasada de prefill compartido más un forward batchado de los sufijos. Está diseñado para tareas de clasificación, enrutamiento y guardrails con salidas estructuradas y calibradas.
+Nischay es un modelo multimodal de decisión de 8B parámetros (7,94B totales, 3,89B de cómputo efectivo en el decodificador) publicado por el usuario Ajeet-001 en Hugging Face bajo licencia Apache 2.0. A diferencia de los modelos generativos convencionales, Nischay no muestrea tokens de forma autorregresiva: recibe un estado (JSON estructurado, texto plano o entre 1 y 4 imágenes) y un conjunto de preguntas tipadas, y devuelve una distribución de probabilidad calibrada sobre cada opción en una única pasada de prefill compartido más un forward batchado de los sufijos. Está diseñado para tareas de clasificación, enrutamiento y guardrails con salidas estructuradas y calibradas.
 
 La arquitectura combina un decodificador transformer de 3,89B parámetros efectivos con 2,90B de embeddings por capa (PLE), una tabla de embeddings de tokens de 0,67B, una torre de visión de 0,17B y una torre de audio de 0,31B. Incorpora atención bidireccional por bloques (`block_bidirectional`) en las capas de atención completa y una cabeza de lectura de 256 slots (`slot_lm`) que permite mapear cada opción a un único token. El modelo se entrenó con un objetivo conjunto de entropía cruzada y calibración de Brier, y reporta un ECE del 3,62% en texto y del 8,90% en visión.
 
@@ -77,9 +77,9 @@ No se dispone de datos numéricos comparativos completos en la información prop
 
 | Modelo | Parámetros | Modalidades | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nischay | 7,94B (3,89B efectivos) | Texto + visión (+ torre de audio) | Decisión calibrada no generativa | Apache 2.0 | HuggingFace |
-| Modelos generativos de ~8B (p. ej. Llama 3.1 8B, Qwen2.5 7B) | ~7–8B | Texto (algunos variantes visión) | Generación autorregresiva | Licencias variables | HuggingFace |
-| Clasificadores especializados (p. ej. DeBERTa-v3) | ~0,1–0,4B | Texto | Clasificación discriminativa | MIT/Apache | HuggingFace |
+| Nischay | 7,94B (3,89B efectivos) | Texto + visión (+ torre de audio) | Decisión calibrada no generativa | Apache 2.0 | Hugging Face |
+| Modelos generativos de ~8B (p. ej. Llama 3.1 8B, Qwen2.5 7B) | ~7–8B | Texto (algunos variantes visión) | Generación autorregresiva | Licencias variables | Hugging Face |
+| Clasificadores especializados (p. ej. DeBERTa-v3) | ~0,1–0,4B | Texto | Clasificación discriminativa | MIT/Apache | Hugging Face |
 
 La comparación relevante es funcional: frente a un LLM generativo de tamaño similar, Nischay ofrece salidas calibradas y latencia baja sin muestreo, a costa de no generar texto libre; frente a clasificadores pequeños, ofrece multimodalidad y múltiples preguntas por pasada con mayor capacidad. No se dispone de comparativas de rendimiento verificables en la información proporcionada.
 
@@ -98,6 +98,6 @@ La comparación relevante es funcional: frente a un LLM generativo de tamaño si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ajeet-001/Nischay
+- Modelo en Hugging Face: https://huggingface.co/Ajeet-001/Nischay
 - Dataset de resultados del Jev Decision Index: https://huggingface.co/datasets/Ajeet-001/Nischay-decision-index-results
 - Repositorio del Jev Decision Index: https://github.com/apolinario/decision-index

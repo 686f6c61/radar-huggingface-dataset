@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SelectedBenchmark-Champion es un modelo publicado por el usuario qf-iquest en HuggingFace bajo licencia MIT. La model card del repositorio, titulada "MyAwesomeModel", presenta un contenido que sigue la estructura de una plantilla generica, sin especificar detalles concretos sobre la arquitectura, el numero de parametros o el proceso de entrenamiento. Los tags del repositorio indican compatibilidad con Transformers, PyTorch y BERT, y el pipeline declarado es feature-extraction.
+SelectedBenchmark-Champion es un modelo publicado por el usuario qf-iquest en Hugging Face bajo licencia MIT. La model card del repositorio, titulada "MyAwesomeModel", presenta un contenido que sigue la estructura de una plantilla generica, sin especificar detalles concretos sobre la arquitectura, el numero de parametros o el proceso de entrenamiento. Los tags del repositorio indican compatibilidad con Transformers, PyTorch y BERT, y el pipeline declarado es feature-extraction.
 
 Segun la informacion de la model card, el modelo habria experimentado una actualizacion significativa que mejora sus capacidades de razonamiento e inferencia, con resultados destacados en matematicas, programacion y logica general. Se menciona una mejora en el test AIME 2025, pasando de un 70% de precision en la version anterior a un 87,5% en la version actual, con un aumento en el promedio de tokens de razonamiento por pregunta de 12K a 23K.
 
@@ -23,7 +23,7 @@ Es importante senalar que el repositorio tiene un tamano de 0.0 GB y cero descar
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona detalles sobre la arquitectura del modelo. Los tags de HuggingFace indican "transformers", "pytorch" y "bert", lo que sugiere que podria tratarse de un modelo basado en la familia BERT o compatible con el ecosistema Transformers, pero no hay confirmacion explicita. El pipeline declarado es feature-extraction, orientado a la extraccion de representaciones vectoriales.
+La model card no proporciona detalles sobre la arquitectura del modelo. Los tags de Hugging Face indican "transformers", "pytorch" y "bert", lo que sugiere que podria tratarse de un modelo basado en la familia BERT o compatible con el ecosistema Transformers, pero no hay confirmacion explicita. El pipeline declarado es feature-extraction, orientado a la extraccion de representaciones vectoriales.
 
 En cuanto al entrenamiento, la model card menciona que la version actual ha mejorado su profundidad de razonamiento mediante mayores recursos computacionales y mecanismos de optimizacion algoritmica durante el post-entrenamiento. Tambien se indica una reduccion de la tasa de alucinacion y un mejor soporte para function calling, aunque no se especifican los metodos concretos (RLHF, DPO, etc.) ni la composicion del dataset. Se menciona la existencia de una variante llamada MyAwesomeModel-Small, con arquitectura identica al modelo base pero con la misma configuracion de tokenizer que el modelo principal.
 
@@ -103,5 +103,5 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qf-iquest/SelectedBenchmark-Champion
-- Perfil del autor en HuggingFace: https://huggingface.co/qf-iquest
+- Repositorio en Hugging Face: https://huggingface.co/qf-iquest/SelectedBenchmark-Champion
+- Perfil del autor en Hugging Face: https://huggingface.co/qf-iquest

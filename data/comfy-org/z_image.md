@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Z-Image es un modelo de difusión para generación de imágenes, distribuido por Comfy-Org como archivos empaquetados para su uso directo en ComfyUI. Se publicó en enero de 2026 y ha acumulado más de 149.000 descargas y 256 likes en HuggingFace, lo que indica un interés notable en la comunidad. La model card proporcionada es muy escueta: únicamente indica que se trata de archivos reempaquetados para ComfyUI y da instrucciones de colocación en las carpetas del modelo, el codificador de texto y el VAE.
+Z-Image es un modelo de difusión para generación de imágenes, distribuido por Comfy-Org como archivos empaquetados para su uso directo en ComfyUI. Se publicó en enero de 2026 y ha acumulado más de 149.000 descargas y 256 likes en Hugging Face, lo que indica un interés notable en la comunidad. La model card proporcionada es muy escueta: únicamente indica que se trata de archivos reempaquetados para ComfyUI y da instrucciones de colocación en las carpetas del modelo, el codificador de texto y el VAE.
 
 A partir de los archivos incluidos, se puede inferir que el modelo principal es un archivo safetensors de 36 GB (probablemente en BF16), acompañado de un codificador de texto basado en Qwen 3 4B (con versiones FP4 y FP8) y un VAE separado. Sin embargo, no se dispone de información oficial sobre la arquitectura interna, los parámetros, el entrenamiento, la licencia o los idiomas soportados. Esta ficha se limita a los datos disponibles y marca como "no disponible" cualquier especificación no documentada.
 
@@ -52,4 +52,4 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - Comfy-Org/z_image](https://huggingface.co/Comfy-Org/z_image)
+- [Hugging Face - Comfy-Org/z_image](https://huggingface.co/Comfy-Org/z_image)

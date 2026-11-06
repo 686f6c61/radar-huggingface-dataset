@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Quelvim/testequbs` es un repositorio publicado en HuggingFace por el usuario Quelvim, con licencia MIT y etiquetado como de la región de Estados Unidos. Fue creado el 18 de agosto de 2026 y no ha recibido descargas ni valoraciones hasta la fecha. La model card asociada únicamente declara la licencia MIT, sin ningún otro detalle técnico, arquitectura, tamaño o propósito.
+El modelo `Quelvim/testequbs` es un repositorio publicado en Hugging Face por el usuario Quelvim, con licencia MIT y etiquetado como de la región de Estados Unidos. Fue creado el 18 de agosto de 2026 y no ha recibido descargas ni valoraciones hasta la fecha. La model card asociada únicamente declara la licencia MIT, sin ningún otro detalle técnico, arquitectura, tamaño o propósito.
 
 En el momento de redactar esta ficha, no existe información pública sobre su arquitectura, parámetros, contexto, capacidades o entrenamiento. Los resultados de búsqueda web no mencionan este modelo específico, por lo que no se puede confirmar su existencia real más allá del repositorio. Se trata, por tanto, de una publicación mínima o posiblemente un espacio de prueba, sin utilidad práctica documentada para desarrolladores o investigadores.
 
@@ -54,5 +54,5 @@ No disponible. No se ha identificado ningún modelo comparable, ya que no se con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Quelvim/testequbs
+- Repositorio en Hugging Face: https://huggingface.co/Quelvim/testequbs
 - Resultados de búsqueda web genéricos (no específicos del modelo): https://localaimaster.com/tools/ai-model-finder, https://www.modemguides.com/blogs/ai-infrastructure/best-local-ai-models-by-vram-2026, https://github.com/qualcomm/ai-hub-models, https://testingmodels.com/, https://aireleasetracker.com/latest

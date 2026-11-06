@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Q-Prefer D2 (TA Fixed) es un adaptador LoRA de tipo reward model para reinforcement learning sobre generación de vídeo, desarrollado por el usuario de HuggingFace `qgfvadfuvads`. Se apoya en el modelo multimodal Qwen/Qwen3-VL-4B-Instruct, fijado a una revisión concreta, y añade dos cabezas de recompensa: VQ (calidad visual) y TA (cumplimiento del requisito textual). El repositorio contiene únicamente el adaptador, la cabeza de recompensa, los embeddings de tokens especiales, el código de inferencia instalable y un ejemplo de worker de recompensa; no incluye los pesos del modelo base de 4B.
+Q-Prefer D2 (TA Fixed) es un adaptador LoRA de tipo reward model para reinforcement learning sobre generación de vídeo, desarrollado por el usuario de Hugging Face `qgfvadfuvads`. Se apoya en el modelo multimodal Qwen/Qwen3-VL-4B-Instruct, fijado a una revisión concreta, y añade dos cabezas de recompensa: VQ (calidad visual) y TA (cumplimiento del requisito textual). El repositorio contiene únicamente el adaptador, la cabeza de recompensa, los embeddings de tokens especiales, el código de inferencia instalable y un ejemplo de worker de recompensa; no incluye los pesos del modelo base de 4B.
 
 La aportación principal de esta versión es la corrección del orden de evaluación: el *forward* procesa primero la imagen de referencia (en I2V) o el vídeo, después las posiciones de VQ y MQ, luego el requisito textual y finalmente la posición de TA. Así, VQ evalúa la calidad visual sin acceso al texto y TA puede leer tanto el contenido visual previo como el requisito escrito, resolviendo el problema de la versión anterior, en la que TA no podía leer el texto. El resultado son puntuaciones flotantes crudas, no probabilidades ni escalas 0-1.
 
@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Q-Prefer D2 (TA Fixed) | Base 4B + LoRA (adaptador no cuantificado en la ficha) | No disponible | Reward model VQ + TA para vídeo | No disponible | Repositorio público en HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-4B-Instruct | 4B | No disponible en la información proporcionada | Modelo multimodal visión-lenguaje de propósito general | No disponible en la información proporcionada | Público en HuggingFace; es el base de este adaptador |
+| Q-Prefer D2 (TA Fixed) | Base 4B + LoRA (adaptador no cuantificado en la ficha) | No disponible | Reward model VQ + TA para vídeo | No disponible | Repositorio público en Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-4B-Instruct | 4B | No disponible en la información proporcionada | Modelo multimodal visión-lenguaje de propósito general | No disponible en la información proporcionada | Público en Hugging Face; es el base de este adaptador |
 | Otros reward models de vídeo (por ejemplo, familia VideoScore o VisionReward) | No disponible | No disponible | Reward model de vídeo | No disponible | No disponible en la información proporcionada |
 
 No se dispone de datos verificados de otros reward models de vídeo en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento, contexto o licencia.
@@ -104,11 +104,11 @@ No se dispone de datos verificados de otros reward models de vídeo en la inform
 - No hay datos publicados de sesgos, tasas de alucinación ni robustez frente a dominios visuales distintos de los de entrenamiento.
 - El repositorio no incluye los pesos del base, por lo que la reproducibilidad depende de la disponibilidad y de la revisión fija de Qwen3-VL-4B-Instruct.
 - El modelo se publicó con 0 descargas y 0 likes; no hay evidencia de uso independiente ni validación externa.
-- La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; toda la información procede de la model card y de los metadatos de HuggingFace.
+- La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; toda la información procede de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- [Modelo en HuggingFace: qgfvadfuvads/Q-Prefer-D2-TA-Fixed](https://huggingface.co/qgfvadfuvads/Q-Prefer-D2-TA-Fixed)
+- [Modelo en Hugging Face: qgfvadfuvads/Q-Prefer-D2-TA-Fixed](https://huggingface.co/qgfvadfuvads/Q-Prefer-D2-TA-Fixed)
 - [Modelo base: Qwen/Qwen3-VL-4B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct)
 - [Revisión fija del modelo base](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct/tree/ebb281ec70b05090aa6165b016eac8ec08e71b17)
 - [Dataset de condiciones de generación: qgfvadfuvads/Q-Prefer-Generation-4000-v2](https://huggingface.co/datasets/qgfvadfuvads/Q-Prefer-Generation-4000-v2)

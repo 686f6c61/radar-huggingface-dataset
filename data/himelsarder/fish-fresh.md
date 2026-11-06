@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `himelsarder/Fish-Fresh` es una subida a HuggingFace que carece de documentación pública sustancial. La model card únicamente especifica la licencia Apache 2.0, sin información sobre arquitectura, parámetros, entrenamiento, capacidades o casos de uso. No se dispone de datos sobre el pipeline, idiomas soportados ni tarea prevista. Dado el nulo número de descargas y la ausencia de descripción, se trata probablemente de un artefacto experimental o una subida incompleta, no apto para evaluación o uso en producción sin más detalles por parte del autor.
+El modelo `himelsarder/Fish-Fresh` es una subida a Hugging Face que carece de documentación pública sustancial. La model card únicamente especifica la licencia Apache 2.0, sin información sobre arquitectura, parámetros, entrenamiento, capacidades o casos de uso. No se dispone de datos sobre el pipeline, idiomas soportados ni tarea prevista. Dado el nulo número de descargas y la ausencia de descripción, se trata probablemente de un artefacto experimental o una subida incompleta, no apto para evaluación o uso en producción sin más detalles por parte del autor.
 
 ## Especificaciones tecnicas
 
@@ -51,6 +51,6 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el propósito del 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/himelsarder/Fish-Fresh
+- Hugging Face: https://huggingface.co/himelsarder/Fish-Fresh
 
 No se han encontrado otros enlaces (papers, repositorios, demos) asociados a este modelo.

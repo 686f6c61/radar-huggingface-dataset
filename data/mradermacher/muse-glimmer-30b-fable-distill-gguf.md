@@ -80,7 +80,7 @@ La comparacion es limitada porque no hay metricas de rendimiento publicadas para
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion GGUF: https://huggingface.co/mradermacher/Muse-Glimmer-30B-Fable-Distill-GGUF
+- Repositorio Hugging Face de la cuantizacion GGUF: https://huggingface.co/mradermacher/Muse-Glimmer-30B-Fable-Distill-GGUF
 - Modelo base (armand0e): https://huggingface.co/armand0e/Muse-Glimmer-30B-Fable-Distill
 - Pagina oficial de Muse Glimmer en Meta: https://developer.meta.com/ai/models/muse-glimmer/
 - Model card en NVIDIA NIM: https://build.nvidia.com/meta/muse-glimmer-30b/modelcard

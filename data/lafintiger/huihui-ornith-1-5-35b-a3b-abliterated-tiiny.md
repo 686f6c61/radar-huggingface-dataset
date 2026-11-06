@@ -79,11 +79,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Licencia: MIT segun la model card, pero el enlace de licencia apunta al repositorio de ornith-ai, no a un fichero LICENSE incluido en este repositorio. Conviene verificar los terminos antes de uso comercial.
 - Repositorio sin traccion: 0 descargas y 0 likes, creado y actualizado el 18 de octubre de 2026 con 42 minutos de diferencia. No hay garantia de mantenimiento ni de que los pesos se conserven.
 - Compatibilidad de despliegue no verificada: la etiqueta `qwen3_5_moe` puede no estar soportada por versiones estables de vLLM, llama.cpp u Ollama.
-- La busqueda web realizada no devolvio ningun resultado tecnico relevante sobre este modelo; toda la informacion procede de HuggingFace.
+- La busqueda web realizada no devolvio ningun resultado tecnico relevante sobre este modelo; toda la informacion procede de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lafintiger/Huihui-Ornith-1.5-35B-A3B-abliterated-tiiny
+- Modelo en Hugging Face: https://huggingface.co/lafintiger/Huihui-Ornith-1.5-35B-A3B-abliterated-tiiny
 - Repositorio original del ajuste: https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated
 - Modelo de partida sin abliteration: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Modelo base declarado en la metadata: https://huggingface.co/Qwen/Qwen3.6-35B-A3B

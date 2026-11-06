@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shelmet es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye el bloque de metadatos con la licencia, sin información sobre arquitectura, propósito, datos de entrenamiento ni capacidades. El repositorio tiene un tamaño de 0,1 GB y no registra descargas ni interacciones en el momento de la consulta.
+Shelmet es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye el bloque de metadatos con la licencia, sin información sobre arquitectura, propósito, datos de entrenamiento ni capacidades. El repositorio tiene un tamaño de 0,1 GB y no registra descargas ni interacciones en el momento de la consulta.
 
 No es posible determinar qué problema resuelve ni por qué sería relevante, ya que el autor no ha documentado el modelo. La ausencia de pipeline declarado, de idiomas soportados y de cualquier descripción funcional impide clasificarlo dentro de una categoría concreta (texto, visión, audio, etc.).
 
@@ -66,5 +66,5 @@ No disponible. Sin datos sobre arquitectura, tamaño, contexto o rendimiento no 
 
 ## Enlaces
 
-- [HuggingFace: Ryanham1lton/Shelmet](https://huggingface.co/Ryanham1lton/Shelmet)
+- [Hugging Face: Ryanham1lton/Shelmet](https://huggingface.co/Ryanham1lton/Shelmet)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

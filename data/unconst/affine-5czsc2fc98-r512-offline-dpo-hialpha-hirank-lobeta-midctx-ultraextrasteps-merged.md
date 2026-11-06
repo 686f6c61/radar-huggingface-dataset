@@ -70,6 +70,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r512-offline-dpo-hialpha-hirank-lobeta-midctx-ultraextrasteps-merged
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r512-offline-dpo-hialpha-hirank-lobeta-midctx-ultraextrasteps-merged
 - Checkpoint relacionado (r480): https://huggingface.co/unconst/Affine-5czsc2fc98-r480-offline-dpo-hialpha-hirank-longctx-extrasteps-merged
 - Checkpoint relacionado (r32): https://huggingface.co/unconst/Affine-5czsc2fc98-r32-merged

@@ -74,6 +74,6 @@ No disponible. El repositorio no declara modelos comparables y no se dispone de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lastforever16/robosyn-ten-task-models
+- Repositorio Hugging Face: https://huggingface.co/Lastforever16/robosyn-ten-task-models
 - Repositorio de código: https://github.com/Mokk404/robosyn-submission
 - Revisión verificada de los activos: `da23c29b897034d0ca44f703d09985f21d629def`

@@ -83,7 +83,7 @@ No disponible. No se proporcionan datos comparativos con otros modelos de embedd
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andreasmartin/apertus-v1.1-swiss-embed-0.4b-bidir-langmoe
+- Modelo en Hugging Face: https://huggingface.co/andreasmartin/apertus-v1.1-swiss-embed-0.4b-bidir-langmoe
 - Dataset de entrenamiento: https://huggingface.co/datasets/wikimedia/wikipedia
 - Dataset de entrenamiento: https://huggingface.co/datasets/eljuanina/VotingBooklets-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/ZurichNLP/SwissGov-RSD

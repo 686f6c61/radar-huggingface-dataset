@@ -26,7 +26,7 @@ Su relevancia práctica es acotada pero concreta: sirve como plantilla reproduci
 | Nodos custom requeridos | comfyui-kjnodes, comfyui-lora-manager, comfyui-fearnworksnodes, ComfyUI-RBG-SmartSeedVariance, RES4LYF, ComfyUI-VAE-Utils, comfyui_layerstyle, rgthree-comfy |
 | LoRA incluida en el flujo | `banjiesock_Krea2` a strength 1.0 (opcional; gestionada con TriggerWord Toggle) |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion / actualizacion | 2026-09-17 / 2026-09-17 (según metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-09-17 / 2026-09-17 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -83,7 +83,7 @@ No se dispone de datos verificables para una comparativa cuantitativa. La inform
 
 | Elemento | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Krea2 Character (este workflow) | no disponible (no publica pesos) | no disponible | sin benchmarks publicados | Apache 2.0 (solo el workflow) | HuggingFace, 0 descargas, 0 likes |
+| Krea2 Character (este workflow) | no disponible (no publica pesos) | no disponible | sin benchmarks publicados | Apache 2.0 (solo el workflow) | Hugging Face, 0 descargas, 0 likes |
 | Krea2 turbo (`krea2_turbo_fp8.safetensors`, referenciado) | no disponible | no aplica (modelo de imagen) | no disponible | no disponible en la informacion | fichero externo, no incluido en el repo |
 | Qwen3-VL 4B (`qwen3vl_4b_bf16.safetensors`, referenciado) | 4 000 millones (según nombre del fichero) | no disponible | no disponible | no disponible en la informacion | fichero externo, no incluido en el repo |
 | Enfoque alternativo: prompt manual en Krea2 con IP-Adapter o similar | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -104,6 +104,6 @@ No se dispone de datos verificables para una comparativa cuantitativa. La inform
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zuanfilm/Krea2_Character_unlocked
+- Repositorio en Hugging Face: https://huggingface.co/zuanfilm/Krea2_Character_unlocked
 - La búsqueda web realizada no devolvió resultados relevantes: los únicos enlaces recuperados corresponden a páginas de inicio y formularios de acceso de Facebook, sin relación con el modelo.
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos asociados al workflow.

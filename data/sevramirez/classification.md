@@ -65,7 +65,7 @@ No se dispone de datos cuantitativos en la informacion proporcionada para establ
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sevramirez/classification (MoCo v3) | 49.600 (real, safetensors) | No disponible | No disponible | apache-2.0 | HuggingFace, checkpoint de inicializacion |
+| sevramirez/classification (MoCo v3) | 49.600 (real, safetensors) | No disponible | No disponible | apache-2.0 | Hugging Face, checkpoint de inicializacion |
 | Alternativas de la familia MoCo v3 | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion aportada |
 | Otros metodos autosupervisados (por ejemplo SimCLR, BYOL, DINO) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion aportada |
 
@@ -82,10 +82,10 @@ No es posible una comparacion cuantitativa con alternativas concretas a partir d
 - La licencia Apache 2.0 permite uso comercial del codigo y de los pesos publicados, pero el propio README recomienda revisar por separado los terminos de los datos de origen si se emplean datasets externos.
 - Al ser una implementacion personalizada, no es compatible con APIs de carga automatica sin un adaptador explicito.
 - No se aportan metricas, semillas ni logs que respalden ningun resultado de rendimiento; cualquier cifra futura deberia documentarse por separado de los valores por defecto aqui publicados.
-- El repositorio no incluye un pipeline declarado en HuggingFace, y su adopcion es muy baja (14 descargas, 0 likes), lo que reduce la validacion por parte de la comunidad.
+- El repositorio no incluye un pipeline declarado en Hugging Face, y su adopcion es muy baja (14 descargas, 0 likes), lo que reduce la validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sevramirez/classification
+- Modelo en Hugging Face: https://huggingface.co/sevramirez/classification
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

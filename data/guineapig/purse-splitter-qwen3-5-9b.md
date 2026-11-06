@@ -75,8 +75,8 @@ El entrenamiento aporta entre 0,15 y 0,22 puntos sobre el mismo modelo sin entre
 
 | Modelo | Parametros | Contexto | Puntuacion PURSE (τ 0,5) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PURSE splitter (este modelo) | 9,41 B | no disponible (ejemplo a 16.384) | 0,750 | Apache 2.0 | HuggingFace, safetensors + adaptador LoRA |
-| Qwen3.5 9B sin entrenar (thinking off) | 9,41 B | no disponible | 0,578 | Apache 2.0 (modelo base) | HuggingFace |
+| PURSE splitter (este modelo) | 9,41 B | no disponible (ejemplo a 16.384) | 0,750 | Apache 2.0 | Hugging Face, safetensors + adaptador LoRA |
+| Qwen3.5 9B sin entrenar (thinking off) | 9,41 B | no disponible | 0,578 | Apache 2.0 (modelo base) | Hugging Face |
 | Solver de mochila de PURSE | no aplica (heuristica) | no aplica | 0,788 | codigo abierto en HASHIRU | Repositorio GitHub |
 | Particion de gpt-6-luna | no disponible | no disponible | 0,695 | propietaria | servicio en la nube |
 
@@ -96,7 +96,7 @@ La comparacion con alternativas de proposito general no es significativa: el mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guineapig/purse-splitter-qwen3.5-9b
+- Modelo en Hugging Face: https://huggingface.co/guineapig/purse-splitter-qwen3.5-9b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio HASHIRU: https://github.com/HASHIRU-AI/HASHIRU
 - Sitio del proyecto HASHIRU: https://hashiru-ai.github.io/hashiru-website

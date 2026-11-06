@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`romanenko02/conformer-asr` es un modelo de reconocimiento automatico del habla (ASR) publicado en HuggingFace por el usuario romanenko02 bajo licencia MIT. El nombre del repositorio indica que se trata de una implementacion basada en la arquitectura Conformer, una familia de redes neuronales que combina convoluciones y autoatencion y que se ha consolidado como referencia en tareas de transcripcion de voz desde su formulacion en 2020. No obstante, la model card publicada no contiene ninguna descripcion tecnica: unicamente incluye la declaracion de licencia, sin informacion sobre datos de entrenamiento, idioma, vocabulario ni metricas.
+`romanenko02/conformer-asr` es un modelo de reconocimiento automatico del habla (ASR) publicado en Hugging Face por el usuario romanenko02 bajo licencia MIT. El nombre del repositorio indica que se trata de una implementacion basada en la arquitectura Conformer, una familia de redes neuronales que combina convoluciones y autoatencion y que se ha consolidado como referencia en tareas de transcripcion de voz desde su formulacion en 2020. No obstante, la model card publicada no contiene ninguna descripcion tecnica: unicamente incluye la declaracion de licencia, sin informacion sobre datos de entrenamiento, idioma, vocabulario ni metricas.
 
 El modelo es relevante por su licencia permisiva (MIT), que facilita su uso comercial y su modificacion, en contraste con otros sistemas ASR de gran tamano con licencias mas restrictivas. Sin embargo, el repositorio no presenta descargas ni valoraciones, y no se ha publicado informacion sobre su rendimiento, por lo que debe considerarse un artefacto sin validacion externa conocida. El tamano del repositorio es de aproximadamente 0,1 GB.
 
@@ -82,6 +82,6 @@ No es posible establecer una comparativa cuantitativa fiable: el modelo no publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/romanenko02/conformer-asr
+- Modelo en Hugging Face: https://huggingface.co/romanenko02/conformer-asr
 - Paper de referencia de la arquitectura Conformer (Gulati et al., 2020, "Conformer: Convolution-augmented Transformer for Speech Recognition"): https://arxiv.org/abs/2005.08100
 - No se han encontrado enlaces adicionales relevantes en la busqueda web; los resultados obtenidos no guardan relacion con el modelo y se han descartado.

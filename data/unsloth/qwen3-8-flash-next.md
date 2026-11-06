@@ -4,7 +4,7 @@
 
 Qwen3.8-Flash-Next es un modelo multimodal de tipo MoE (Mixture of Experts) desarrollado por Qwen, que se presenta como una vista previa experimental de la arquitectura que sustentará a Qwen4. El modelo combina atención híbrida con Gated DeltaNet y Qwen Sparse Attention (QSA), junto con un mecanismo de n-gram embedding y Gated Residual, con el objetivo de mejorar la eficiencia computacional, la capacidad de modelo y la estabilidad del entrenamiento. Está diseñado para manejar contextos largos de hasta 262.144 tokens de forma nativa, extensibles a 1.000.000, y es especialmente relevante para cargas de trabajo agénticas y razonamiento multimodal.
 
-El modelo cuenta con 125.000 millones de parámetros en el modelo de lenguaje, de los cuales solo 6.000 millones se activan por token, más 51.000 millones de parámetros de n-gram embedding y 4.000 millones de MTP (Multi-Token Prediction), sumando un total de 180.000 millones de parámetros según los pesos safetensors. Esta arquitectura permite un escalado eficiente de parámetros sin un aumento proporcional del coste computacional, lo que lo hace adecuado para entornos con memoria limitada. La versión publicada en HuggingFace por Unsloth incluye pesos en formato safetensors y también está disponible en GGUF para su ejecución con llama.cpp.
+El modelo cuenta con 125.000 millones de parámetros en el modelo de lenguaje, de los cuales solo 6.000 millones se activan por token, más 51.000 millones de parámetros de n-gram embedding y 4.000 millones de MTP (Multi-Token Prediction), sumando un total de 180.000 millones de parámetros según los pesos safetensors. Esta arquitectura permite un escalado eficiente de parámetros sin un aumento proporcional del coste computacional, lo que lo hace adecuado para entornos con memoria limitada. La versión publicada en Hugging Face por Unsloth incluye pesos en formato safetensors y también está disponible en GGUF para su ejecución con llama.cpp.
 
 ## Especificaciones técnicas
 
@@ -52,7 +52,7 @@ La model card incluye una tabla de benchmarks comparativa con Qwen3.8-27B, Qwen3
 - VRAM estimada: no disponible oficialmente. Al ser un MoE con 6B parámetros activos, la inferencia puede ser eficiente, pero el modelo completo de 180B requiere cuantización agresiva o múltiples GPUs. Unsloth está trabajando en soporte; para modelos similares de Qwen3.8 se han utilizado cuantizaciones IQ1_XXXS con ~397GB de RAM.
 - GPU recomendadas: no especificadas. Para ejecución local con GGUF, se necesitan GPUs con al menos 24GB de VRAM para cuantizaciones bajas, o CPUs con gran cantidad de RAM para offloading.
 - Si cabe en consumer GPU: no, el modelo completo no cabe en GPUs de consumo; con cuantización extrema podría ejecutarse en GPUs de 24GB, pero con pérdida de calidad.
-- Opciones de despliegue: llama.cpp, Unsloth Desktop, vLLM (cuando esté soportado), HuggingFace Transformers.
+- Opciones de despliegue: llama.cpp, Unsloth Desktop, vLLM (cuando esté soportado), Hugging Face Transformers.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -77,8 +77,8 @@ La comparativa se basa en los modelos listados en la tabla de benchmarks de la m
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/unsloth/Qwen3.8-Flash-Next
-- HuggingFace (GGUF): https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
+- Hugging Face (modelo): https://huggingface.co/unsloth/Qwen3.8-Flash-Next
+- Hugging Face (GGUF): https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - GitHub del proyecto: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Blog de Qwen: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Documentación de Unsloth: https://unsloth.ai/docs/models/qwen3.8-next

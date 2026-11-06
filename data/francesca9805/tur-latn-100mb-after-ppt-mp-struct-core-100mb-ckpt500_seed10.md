@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/tur-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` es un checkpoint de generacion de texto de 124.770.816 parametros, publicado por el usuario francesca9805 en HuggingFace. Se trata de un ajuste fino (SFT) del modelo `francesca9805/tur-latn-100mb-ppt-mp-struct-core-100mb_seed10`, realizado con la libreria TRL, y esta etiquetado con la arquitectura `gpt2` y el pipeline `text-generation`. El identificador sugiere un trabajo de investigacion sobre tokenizacion y modelado de lenguaje para turco en escritura latina (`tur-latn`) con un corpus del orden de 100 MB, correspondiente al checkpoint 500 y la semilla 10 (`ckpt500_seed10`), aunque estos extremos no estan confirmados en la model card.
+El modelo `francesca9805/tur-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` es un checkpoint de generacion de texto de 124.770.816 parametros, publicado por el usuario francesca9805 en Hugging Face. Se trata de un ajuste fino (SFT) del modelo `francesca9805/tur-latn-100mb-ppt-mp-struct-core-100mb_seed10`, realizado con la libreria TRL, y esta etiquetado con la arquitectura `gpt2` y el pipeline `text-generation`. El identificador sugiere un trabajo de investigacion sobre tokenizacion y modelado de lenguaje para turco en escritura latina (`tur-latn`) con un corpus del orden de 100 MB, correspondiente al checkpoint 500 y la semilla 10 (`ckpt500_seed10`), aunque estos extremos no estan confirmados en la model card.
 
 El modelo no presenta descargas ni valoraciones en el momento de redactar esta ficha, no declara licencia utilizable y no incluye informacion sobre idiomas soportados, longitud de contexto ni datos de entrenamiento mas alla de que se uso SFT con TRL 0.23.0. Por su tamano y arquitectura, se situa en la categoria de modelos pequenos tipo GPT-2, adecuados para experimentacion en laboratorio, prototipado rapido y como base para ajustes posteriores, mas que para despliegues en produccion de alta exigencia.
 
@@ -54,7 +54,7 @@ No se declara ninguna innovacion tecnica destacable: se trata de un checkpoint d
 - Base para ajuste posterior (continued pretraining o SFT adicional): con 124,77 M de parametros y pesos safetensors, se puede cargar en una unica GPU y ajustar en minutos u horas segun el dataset, sirviendo de punto de partida para tareas de clasificacion, resumen o generacion en turco.
 - Prototipado de asistentes conversacionales en turco: el formato de chat del ejemplo permite montar una demo rapida de generacion de respuestas, siempre que la licencia se aclare y la calidad se valide con datos propios.
 - Generacion de datos sinteticos para experimentos: se puede usar para producir texto de relleno en turco y estudiar sesgos de un modelo pequeno, con la advertencia de que la calidad sera limitada y requerira filtrado humano.
-- Educacion y docencia: ilustra de forma practica como se publica un checkpoint generado con `Trainer` y TRL, y como se sirve mediante `text-generation-inference` o la API de HuggingFace (`endpoints_compatible`).
+- Educacion y docencia: ilustra de forma practica como se publica un checkpoint generado con `Trainer` y TRL, y como se sirve mediante `text-generation-inference` o la API de Hugging Face (`endpoints_compatible`).
 - Evaluacion de infraestructura de inferencia: por su tamano minimo, sirve como modelo de humo para validar pipelines de despliegue (vLLM, TGI, llama.cpp) antes de escalar a modelos mayores.
 
 ## Benchmarks y rendimiento
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 250 MB en fp16/bf16 y en torno a 125 MB en int8, calculados a partir de los 124,77 M de parametros. La activacion y el cache KV anaden un consumo adicional que depende de la longitud de secuencia (no disponible).
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente. Cabe holgadamente en RTX 3060, RTX 4060, RTX 4090, e incluso en GPUs integradas o en CPU.
 - Despliegue en consumer: si, sin restricciones practicas de memoria. El repositorio ocupa 2,2 GB, presumiblemente por incluir estados de optimizador o varios artefactos, pero los pesos en si son pequenos.
-- Opciones de despliegue: transformers (pipeline de generacion), text-generation-inference (etiqueta `text-generation-inference` en el repositorio), endpoints compatibles con HuggingFace Inference Endpoints, y conversion a GGUF para llama.cpp/Ollama siempre que se realice manualmente, ya que el autor no publica variantes cuantizadas.
+- Opciones de despliegue: transformers (pipeline de generacion), text-generation-inference (etiqueta `text-generation-inference` en el repositorio), endpoints compatibles con Hugging Face Inference Endpoints, y conversion a GGUF para llama.cpp/Ollama siempre que se realice manualmente, ya que el autor no publica variantes cuantizadas.
 - Latencia y throughput: no disponibles. Para un modelo de este tamano, en una GPU moderna la generacion de 128 tokens deberia completarse en una fraccion de segundo, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -75,8 +75,8 @@ La informacion proporcionada no permite una comparativa rigurosa: no hay benchma
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `francesca9805/tur-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` | 124,77 M | no disponible | no disponible | HuggingFace, safetensors |
-| `openai-community/gpt2` (referencia de la misma familia) | ~124 M | 1024 tokens (fuente externa) | MIT (fuente externa) | HuggingFace, safetensors |
+| `francesca9805/tur-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` | 124,77 M | no disponible | no disponible | Hugging Face, safetensors |
+| `openai-community/gpt2` (referencia de la misma familia) | ~124 M | 1024 tokens (fuente externa) | MIT (fuente externa) | Hugging Face, safetensors |
 | Otros modelos pequenos de investigacion en turco | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ La informacion proporcionada no permite una comparativa rigurosa: no hay benchma
 
 ## Enlaces
 
-- [HuggingFace: francesca9805/tur-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10](https://huggingface.co/francesca9805/tur-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10)
+- [Hugging Face: francesca9805/tur-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10](https://huggingface.co/francesca9805/tur-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10)
 - [Modelo base: francesca9805/tur-latn-100mb-ppt-mp-struct-core-100mb_seed10](https://huggingface.co/francesca9805/tur-latn-100mb-ppt-mp-struct-core-100mb_seed10)
 - [Experimento de entrenamiento en Weights & Biases](https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/egyooizy)
 - [Repositorio de TRL](https://github.com/huggingface/trl)

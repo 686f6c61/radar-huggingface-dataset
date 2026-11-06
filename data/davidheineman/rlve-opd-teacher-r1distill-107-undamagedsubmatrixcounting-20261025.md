@@ -95,7 +95,7 @@ La comparacion relevante no es de rendimiento general (no hay datos), sino de pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-107-UndamagedSubmatrixCounting-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-107-UndamagedSubmatrixCounting-20261025
 - Coleccion RLVE OPD Teachers: https://huggingface.co/collections/davidheineman/rlve-opd-teachers
 - Repositorio GitHub del proyecto RLVE: https://github.com/davidheineman/rlve
 - Run de entrenamiento en W&B: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/dc698908

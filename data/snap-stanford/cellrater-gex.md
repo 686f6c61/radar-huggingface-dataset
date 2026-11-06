@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CellRater (gex) es un modelo de valoración de datos a nivel de célula individual para secuenciación de ARN de célula única (scRNA-seq). Lo publica la organización snap-stanford en HuggingFace bajo licencia MIT y con la etiqueta de librería `cellrater`. No es un modelo de lenguaje ni un modelo generativo: recibe el vector de counts UMI crudos de una célula sobre un panel fijo de 19208 genes (en el orden exacto de `genes.txt`), lo normaliza por CPM, aplica log1p y lo pasa por un perceptrón multicapa pequeño que devuelve un único escalar por célula.
+CellRater (gex) es un modelo de valoración de datos a nivel de célula individual para secuenciación de ARN de célula única (scRNA-seq). Lo publica la organización snap-stanford en Hugging Face bajo licencia MIT y con la etiqueta de librería `cellrater`. No es un modelo de lenguaje ni un modelo generativo: recibe el vector de counts UMI crudos de una célula sobre un panel fijo de 19208 genes (en el orden exacto de `genes.txt`), lo normaliza por CPM, aplica log1p y lo pasa por un perceptrón multicapa pequeño que devuelve un único escalar por célula.
 
 El modelo se entrena mediante optimización bilevel (meta-aprendizaje): sus puntuaciones se usan como pesos por célula en la función de pérdida de un modelo proxy de estilo UCE, de forma que pesos mejores reducen la pérdida en el conjunto de validación de ese proxy. El resultado son logits crudos donde un valor mayor indica que la célula es más útil para el proxy en el ajuste publicado; lo relevante es el orden relativo dentro de un mismo dataset, no el valor absoluto.
 
@@ -24,7 +24,7 @@ Su interés actual es práctico: ofrece una vía barata y reproducible para pond
 | Formato de salida | `all_scores.npy`, array de forma `(2, N)`: fila 0 el índice de la célula en `adata.obs`, fila 1 la puntuación |
 | Libreria y version | `cellrater` 0.1.0 |
 | Framework de ejecucion | JAX (la documentación de uso emplea `JAX_PLATFORMS=cpu`) |
-| Tamano del repositorio | 0.0 GB reportados en HuggingFace |
+| Tamano del repositorio | 0.0 GB reportados en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Metodo | Tipo | Requiere modelo entrenado | Coste computacional | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CellRater (gex) | Valoración aprendida por célula (MLP meta-aprendido) | No para puntuar; sí se apoya en un proxy estilo UCE durante el entrenamiento | Una pasada hacia delante por célula; coste bajo | MIT | Pesos en HuggingFace |
+| CellRater (gex) | Valoración aprendida por célula (MLP meta-aprendido) | No para puntuar; sí se apoya en un proxy estilo UCE durante el entrenamiento | Una pasada hacia delante por célula; coste bajo | MIT | Pesos en Hugging Face |
 | DataShapley | Valoración cooperativa basada en subconjuntos | Sí, reentrenamiento sobre múltiples subconjuntos | Alto por definición (múltiples reentrenamientos) | no disponible | Implementaciones de terceros |
 | KNN-Shapley | Aproximación basada en vecinos más cercanos | No | Bajo, pero requiere definir una métrica de similitud entre células | no disponible | Implementaciones de terceros |
 | Funciones de influencia | Estimación de influencia sobre los parámetros | Sí, requiere un modelo entrenado y cálculo de gradientes/Hessianos | Medio-alto según la aproximación | no disponible | Implementaciones de terceros |
@@ -93,7 +93,7 @@ No se dispone de cifras comparativas de rendimiento entre estas alternativas en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/snap-stanford/cellrater-gex
+- Modelo en Hugging Face: https://huggingface.co/snap-stanford/cellrater-gex
 - Repositorio `cellrater` y tutorial `docs/tutorial_score_your_cells.md`: referenciados en la model card, URL no disponible.
 - Paper o publicacion tecnica: no disponible.
 - Blog o demo: no disponible.

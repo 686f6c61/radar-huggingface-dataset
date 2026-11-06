@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`agurung/ncp-vs-25v12u-b16` es un modelo de lenguaje publicado en HuggingFace por el usuario `agurung`, con 4.022.468.096 parámetros (aproximadamente 4,02 mil millones) según los pesos almacenados en formato safetensors. El repositorio incluye la etiqueta `qwen3`, lo que apunta a que el modelo deriva de la arquitectura de la familia Qwen3, aunque la ficha del repositorio no incluye model card, pipeline declarado, licencia ni idiomas soportados.
+`agurung/ncp-vs-25v12u-b16` es un modelo de lenguaje publicado en Hugging Face por el usuario `agurung`, con 4.022.468.096 parámetros (aproximadamente 4,02 mil millones) según los pesos almacenados en formato safetensors. El repositorio incluye la etiqueta `qwen3`, lo que apunta a que el modelo deriva de la arquitectura de la familia Qwen3, aunque la ficha del repositorio no incluye model card, pipeline declarado, licencia ni idiomas soportados.
 
 Se trata de un repositorio con muy poca tracción pública (10 descargas y 0 likes en el momento de la consulta) y una nomenclatura (`ncp-vs-25v12u-b16`) que no se corresponde con ninguna familia de modelos ampliamente conocida. Esto sugiere un entrenamiento, fine-tuning o experimento propio del autor más que un lanzamiento oficial, por lo que debe tratarse con cautela: no hay documentación de entrenamiento, evaluación ni condiciones de uso.
 
@@ -98,5 +98,5 @@ La ventaja competitiva de las alternativas es clara: licencia explícita, contex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agurung/ncp-vs-25v12u-b16
+- Modelo en Hugging Face: https://huggingface.co/agurung/ncp-vs-25v12u-b16
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados devueltos por la búsqueda corresponden a páginas de repuestos de electrodomésticos y no guardan ninguna relación con el modelo.

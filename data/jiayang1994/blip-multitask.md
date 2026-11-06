@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jiayang1994/blip-multitask` es un repositorio de implementacion personalizada de BLIP (Bootstrapping Language-Image Pre-training) orientado a tareas multimodales ("multitask"), publicado por el usuario de HuggingFace jiayang1994. No se trata de un modelo entrenado y liberado para produccion, sino de una base de codigo acompanada de un checkpoint de inicializacion (`model.safetensors`) pensado para pruebas de humo (smoke tests) reproducibles. La model card declara explicitamente que las afirmaciones sobre benchmarks se omiten de forma deliberada y que el checkpoint no ha sido entrenado ni auditado.
+`jiayang1994/blip-multitask` es un repositorio de implementacion personalizada de BLIP (Bootstrapping Language-Image Pre-training) orientado a tareas multimodales ("multitask"), publicado por el usuario de Hugging Face jiayang1994. No se trata de un modelo entrenado y liberado para produccion, sino de una base de codigo acompanada de un checkpoint de inicializacion (`model.safetensors`) pensado para pruebas de humo (smoke tests) reproducibles. La model card declara explicitamente que las afirmaciones sobre benchmarks se omiten de forma deliberada y que el checkpoint no ha sido entrenado ni auditado.
 
 El repositorio describe la arquitectura como un BLIP de escala "huge", con atencion estandar, fusion de bajo rango (low rank), activacion swish y normalizacion InstanceNorm. La receta de experimento por defecto usa el optimizador Lion con un scheduler exponencial, aunque el propio autor aclara que son valores de partida del script y no evidencia de un entrenamiento completado.
 
@@ -68,7 +68,7 @@ Advertencia: estas estimaciones corresponden al checkpoint de 49.600 parametros 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jiayang1994/blip-multitask | 49.600 (checkpoint de inicializacion) | no disponible | sin benchmarks publicados | MIT | HuggingFace (17 descargas) |
+| jiayang1994/blip-multitask | 49.600 (checkpoint de inicializacion) | no disponible | sin benchmarks publicados | MIT | Hugging Face (17 descargas) |
 | BLIP-3 (familia) | 4B y 14B (variantes base e instruccion) | no disponible en la informacion recogida | rendimiento no detallado en los extractos consultados | no disponible en la informacion recogida | paper arXiv 2408.08872 |
 | BLIP3-o | no disponible | no disponible | rendimiento superior en la mayoria de benchmarks populares de comprension y generacion de imagen, segun el paper | no disponible en la informacion recogida | paper arXiv 2505.09568 |
 
@@ -80,14 +80,14 @@ La comparacion es limitada: este repositorio es una implementacion personalizada
 - No existen benchmarks ni evaluaciones publicadas; no debe citarse ningun rendimiento asociado a este repositorio.
 - La model card advierte de que el checkpoint no ha sido auditado en cuanto a robustez, equidad (fairness) ni transferencia de dominio.
 - Existe una discrepancia no resuelta entre la escala declarada "huge" y los 49.600 parametros reales almacenados, lo que debe tenerse en cuenta antes de reutilizar la configuracion.
-- Al ser una implementacion personalizada, las APIs automaticas de carga de HuggingFace requieren un adaptador explicito; no se garantiza compatibilidad directa con frameworks de despliegue estandar.
+- Al ser una implementacion personalizada, las APIs automaticas de carga de Hugging Face requieren un adaptador explicito; no se garantiza compatibilidad directa con frameworks de despliegue estandar.
 - No se documentan sesgos conocidos, riesgo de alucinacion, ni limitaciones de contexto o idioma, precisamente porque no hay entrenamiento ni evaluacion.
 - La licencia MIT permite uso comercial del codigo y los pesos, pero la propia model card recomienda revisar por separado los terminos de las fuentes de datos cuando se utilice con datasets externos.
 - Para cualquier uso en produccion seria imprescindible entrenar el modelo, documentar el checkpoint resultante de forma separada y realizar una evaluacion con al menos tres semillas y un baseline de capacidad equivalente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiayang1994/blip-multitask
+- Modelo en Hugging Face: https://huggingface.co/jiayang1994/blip-multitask
 - Perfil del autor: https://huggingface.co/jiayang1994
 - Articulo introductorio sobre BLIP (GeeksforGeeks): https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/
 - Paper BLIP-3 (arXiv 2408.08872): https://arxiv.org/html/2408.08872v4

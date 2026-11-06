@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio kjyothirmai15/TESTING es un modelo publicado en HuggingFace por el usuario kjyothirmai15 bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 "likes", se creo el 20 de septiembre de 2026 y no se ha actualizado desde entonces. El nombre del repositorio ("TESTING") y la ausencia de actividad sugieren que se trata de un espacio de pruebas o de un artefacto de caracter experimental, mas que de un modelo preparado para produccion.
+El repositorio kjyothirmai15/TESTING es un modelo publicado en Hugging Face por el usuario kjyothirmai15 bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 "likes", se creo el 20 de septiembre de 2026 y no se ha actualizado desde entonces. El nombre del repositorio ("TESTING") y la ausencia de actividad sugieren que se trata de un espacio de pruebas o de un artefacto de caracter experimental, mas que de un modelo preparado para produccion.
 
 La model card asociada no contiene informacion tecnica: el unico contenido es la declaracion de licencia en el encabezado YAML. No se declara pipeline, idiomas soportados, arquitectura, numero de parametros, longitud de contexto, formato de pesos ni dataset de entrenamiento. Tampoco hay resultados de benchmarks ni documentacion adicional.
 
@@ -25,7 +25,7 @@ Metadatos adicionales verificables:
 
 | Parametro | Valor |
 |---|---|
-| Identificador en HuggingFace | kjyothirmai15/TESTING |
+| Identificador en Hugging Face | kjyothirmai15/TESTING |
 | Autor | kjyothirmai15 |
 | Fecha de creacion | 2026-09-20 |
 | Ultima actualizacion | 2026-09-20 |
@@ -85,7 +85,7 @@ No disponible. Al desconocerse la categoria del modelo (tamano, tarea, modalidad
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kjyothirmai15/TESTING | no disponible | no disponible | apache-2.0 | repositorio publico en HuggingFace, 0 descargas |
+| kjyothirmai15/TESTING | no disponible | no disponible | apache-2.0 | repositorio publico en Hugging Face, 0 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -103,5 +103,5 @@ No disponible. Al desconocerse la categoria del modelo (tamano, tarea, modalidad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kjyothirmai15/TESTING
+- Hugging Face: https://huggingface.co/kjyothirmai15/TESTING
 - Resultados de busqueda web: las entradas recuperadas (medicaleducationservice.de, institut.medicaleducationservice.de) corresponden a cursos de medicina de emergencia (ACLS, PALS, airway management) y no guardan ninguna relacion con el modelo. No se ha encontrado ningun paper, blog, repositorio de codigo ni demo asociado a kjyothirmai15/TESTING.

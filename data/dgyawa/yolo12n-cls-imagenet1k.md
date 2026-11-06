@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dgyawa/yolo12n-cls-imagenet1k` es un repositorio de HuggingFace publicado por el usuario `dgyawa` que, por su nombre, corresponde a una variante de clasificación de imágenes (sufijo `-cls`) de un modelo de la familia YOLO12 en su tamano nominal "n" (nano), entrenada sobre ImageNet-1k. El repositorio no incluye model card, no declara pipeline, idiomas ni especificaciones técnicas: la única información disponible es la licencia AGPL-3.0, la etiqueta de región `us` y las fechas de creación y actualización (ambas 2026-09-13, según los metadatos publicados). No se ha publicado ninguna descarga ni "like" hasta la fecha de consulta.
+`dgyawa/yolo12n-cls-imagenet1k` es un repositorio de Hugging Face publicado por el usuario `dgyawa` que, por su nombre, corresponde a una variante de clasificación de imágenes (sufijo `-cls`) de un modelo de la familia YOLO12 en su tamano nominal "n" (nano), entrenada sobre ImageNet-1k. El repositorio no incluye model card, no declara pipeline, idiomas ni especificaciones técnicas: la única información disponible es la licencia AGPL-3.0, la etiqueta de región `us` y las fechas de creación y actualización (ambas 2026-09-13, según los metadatos publicados). No se ha publicado ninguna descarga ni "like" hasta la fecha de consulta.
 
 Es importante subrayar que toda la descripción funcional de esta ficha es una inferencia derivada del identificador del repositorio, no un dato confirmado por el autor. La model card está vacía salvo el campo `license: agpl-3.0`, de modo que no se puede verificar el número de parámetros, la resolución de entrada, el número de clases de salida ni las métricas de precisión. Cualquier uso en producción requiere inspeccionar el propio repositorio (tamaño del checkpoint, configuraciones y artefactos) antes de asumir capacidades.
 
@@ -89,7 +89,7 @@ La diferencia relevante y verificable es de licencia y soporte: este repositorio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dgyawa/yolo12n-cls-imagenet1k
+- Repositorio en Hugging Face: https://huggingface.co/dgyawa/yolo12n-cls-imagenet1k
 - Paper de la familia YOLO12: no disponible en la información proporcionada (no verificado durante esta búsqueda)
 - Repositorio de código de la familia YOLO12: no disponible en la información proporcionada
 - Demos o espacios asociados: no disponible

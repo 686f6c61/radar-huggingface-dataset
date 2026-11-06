@@ -83,7 +83,7 @@ La comparación es orientativa: no hay datos de rendimiento publicados para Clov
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/bartowski/Diffuspace_Clover-35B-A3B-Preview-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/bartowski/Diffuspace_Clover-35B-A3B-Preview-GGUF
 - Modelo base: https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview
 - llama.cpp (release b12074): https://github.com/ggml-org/llama.cpp/releases/tag/b12074
 - Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp/

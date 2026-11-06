@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Firehouse-Cactus-1.01 es un modelo de lenguaje generativo de 7.940 millones de parámetros desarrollado por el equipo Ironwood-LLM-Team. Se presenta como un ajuste fino (fine-tuning) del modelo base Firehouse-Cactus-1.0, y los metadatos de HuggingFace lo etiquetan como basado en la arquitectura Gemma 4 de Google, aunque no se aportan detalles técnicos que confirmen esta relación. El modelo está pensado para tareas de generación de texto y conversación, y se distribuye en formato MLX, lo que indica que está optimizado para su ejecución en hardware Apple Silicon (Macs con chips M-series).
+Firehouse-Cactus-1.01 es un modelo de lenguaje generativo de 7.940 millones de parámetros desarrollado por el equipo Ironwood-LLM-Team. Se presenta como un ajuste fino (fine-tuning) del modelo base Firehouse-Cactus-1.0, y los metadatos de Hugging Face lo etiquetan como basado en la arquitectura Gemma 4 de Google, aunque no se aportan detalles técnicos que confirmen esta relación. El modelo está pensado para tareas de generación de texto y conversación, y se distribuye en formato MLX, lo que indica que está optimizado para su ejecución en hardware Apple Silicon (Macs con chips M-series).
 
 La relevancia de este modelo reside en su tamaño medio (7,9B parámetros), que lo sitúa en una franja equilibrada entre capacidad y requisitos de hardware, permitiendo su despliegue en equipos de consumo con suficiente memoria. Su licencia Apache 2.0 facilita el uso comercial y la modificación, un factor atractivo para desarrolladores que buscan integrar un modelo de lenguaje en producción sin las restricciones de otras licencias más limitadas. No obstante, la información pública es muy escasa: la model card no incluye descripción, detalles de entrenamiento, benchmarks ni especificaciones adicionales, por lo que muchas características técnicas quedan sin confirmar.
 
@@ -78,5 +78,5 @@ Firehouse-Cactus-1.01 se alinea en tamaño con estas alternativas, pero carece d
 
 ## Enlaces
 
-- [HuggingFace: Ironwood-LLM-Team/Firehouse-Cactus-1.01](https://huggingface.co/Ironwood-LLM-Team/Firehouse-Cactus-1.01)
-- [HuggingFace: Ironwood-LLM-Team/Firehouse-Cactus-1.0 (modelo base)](https://huggingface.co/Ironwood-LLM-Team/Firehouse-Cactus-1.0) (enlace inferido, no verificado)
+- [Hugging Face: Ironwood-LLM-Team/Firehouse-Cactus-1.01](https://huggingface.co/Ironwood-LLM-Team/Firehouse-Cactus-1.01)
+- [Hugging Face: Ironwood-LLM-Team/Firehouse-Cactus-1.0 (modelo base)](https://huggingface.co/Ironwood-LLM-Team/Firehouse-Cactus-1.0) (enlace inferido, no verificado)

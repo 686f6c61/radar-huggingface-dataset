@@ -95,7 +95,7 @@ La comparativa se limita a los dos modelos de expansion que el autor evalua en e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/after2400/qmd-query-expansion-granite-1b-mlx-mixed-4-6
+- Modelo en Hugging Face: https://huggingface.co/after2400/qmd-query-expansion-granite-1b-mlx-mixed-4-6
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-1b
 - Repositorio pyqmd: https://github.com/after2400/pyqmd
 - Repositorio qmd (datos de entrenamiento, MIT): https://github.com/tobi/qmd

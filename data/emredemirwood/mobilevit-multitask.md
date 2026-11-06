@@ -4,7 +4,7 @@
 
 ## Resumen
 
-MobileViT multitask es un repositorio experimental publicado por el usuario EMREDEMIRwood en HuggingFace. Se trata de una implementación propia de una arquitectura MobileViT a escala "nano", orientada a tareas múltiples (multitask), con atención dilatada y fusión mediante co-atención. El propio autor lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo listo para producción.
+MobileViT multitask es un repositorio experimental publicado por el usuario EMREDEMIRwood en Hugging Face. Se trata de una implementación propia de una arquitectura MobileViT a escala "nano", orientada a tareas múltiples (multitask), con atención dilatada y fusión mediante co-atención. El propio autor lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo listo para producción.
 
 El peso incluido (`model.safetensors`) se presenta explícitamente como un checkpoint de inicialización válido para pruebas de humo (smoke tests), no como un modelo entrenado ni evaluado. El repositorio no reclama ninguna puntuación de benchmark, no documenta el conjunto de datos de entrenamiento y no especifica qué tareas concretas cubre el modo multitarea. El tamaño del repositorio es de 0,0 GB y el modelo acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EMREDEMIRwood/mobilevit-multitask | 33.088 (inicializacion, sin entrenar) | no disponible | no disponible (sin benchmarks) | apache-2.0 | HuggingFace, 0 descargas |
+| EMREDEMIRwood/mobilevit-multitask | 33.088 (inicializacion, sin entrenar) | no disponible | no disponible (sin benchmarks) | apache-2.0 | Hugging Face, 0 descargas |
 | MobileViT original (Apple) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | referencia publica externa |
 | MobileNetV3 | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | referencia publica externa |
 | EfficientViT | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | referencia publica externa |
@@ -94,6 +94,6 @@ La comparación cuantitativa no es posible con los datos aportados. La diferenci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EMREDEMIRwood/mobilevit-multitask
+- Hugging Face: https://huggingface.co/EMREDEMIRwood/mobilevit-multitask
 - Archivos incluidos en el repositorio: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Los resultados de la búsqueda web realizada no contienen enlaces relevantes al modelo (devuelven páginas de ayuda de YouTube y foros sin relación con MobileViT ni con este repositorio), por lo que no se dispone de papers, blogs, repositorios adicionales ni demos verificables.

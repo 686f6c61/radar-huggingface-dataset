@@ -2,11 +2,11 @@
 
 ## Resumen
 
-takotako1118/Wan2.1L es una publicacion de pesos en formato GGUF alojada en HuggingFace por el usuario takotako1118 (yaki). Por el identificador, el numero de parametros (14.288.492.584, es decir, aproximadamente 14,3 mil millones) y las referencias del proyecto original encontradas en la busqueda web, se trata de una conversion cuantizada del modelo de generacion de video Wan2.1 en su variante grande de 14B, desarrollada por el equipo Wan-Video (Alibaba). No es un modelo de lenguaje: es un modelo de difusion para generacion de video, por lo que buena parte de las metricas habituales de una ficha de LLM (contexto, tool calling, benchmarks tipo MMLU) no son aplicables directamente.
+takotako1118/Wan2.1L es una publicacion de pesos en formato GGUF alojada en Hugging Face por el usuario takotako1118 (yaki). Por el identificador, el numero de parametros (14.288.492.584, es decir, aproximadamente 14,3 mil millones) y las referencias del proyecto original encontradas en la busqueda web, se trata de una conversion cuantizada del modelo de generacion de video Wan2.1 en su variante grande de 14B, desarrollada por el equipo Wan-Video (Alibaba). No es un modelo de lenguaje: es un modelo de difusion para generacion de video, por lo que buena parte de las metricas habituales de una ficha de LLM (contexto, tool calling, benchmarks tipo MMLU) no son aplicables directamente.
 
 Wan2.1 es un conjunto de modelos generativos de video que cubre texto a video (T2V), imagen a video (I2V), edicion de video, texto a imagen y video a audio, con capacidad de generar texto visual en chino e ingles. El repositorio de este usuario concreto empaqueta los pesos en GGUF, un formato pensado para ejecucion con cargadores compatibles (por ejemplo, nodos GGUF en ComfyUI) y para reducir los requisitos de VRAM respecto al peso completo en precision alta.
 
-El dato mas relevante para quien evalua el modelo es doble: por un lado, el repositorio tiene acceso restringido (gated), de modo que es necesario aceptar condiciones en HuggingFace antes de descargarlo; por otro, el tamano del repo es de 169,2 GB, lo que sugiere la presencia de multiples niveles de cuantizacion en un mismo repositorio. La ficha publica apenas contiene informacion tecnica adicional, por lo que numerosos campos se marcan como no disponibles.
+El dato mas relevante para quien evalua el modelo es doble: por un lado, el repositorio tiene acceso restringido (gated), de modo que es necesario aceptar condiciones en Hugging Face antes de descargarlo; por otro, el tamano del repo es de 169,2 GB, lo que sugiere la presencia de multiples niveles de cuantizacion en un mismo repositorio. La ficha publica apenas contiene informacion tecnica adicional, por lo que numerosos campos se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El dato mas relevante para quien evalua el modelo es doble: por un lado, el repo
 | Licencia | no disponible |
 | Formato de pesos | GGUF |
 | Tamano del repositorio | 169,2 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Descargas | 3 |
 | Likes | 1 |
 | Fecha de creacion | 2025-04-23 |
@@ -85,14 +85,14 @@ Los unicos modelos comparables citados en la busqueda pertenecen a la propia fam
 
 | Modelo | Parametros | Tipo | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| takotako1118/Wan2.1L (este repo) | 14,3 mil millones | Conversion GGUF de un modelo de difusion de video | no aplicable | no disponible | no disponible | Gated en HuggingFace |
+| takotako1118/Wan2.1L (este repo) | 14,3 mil millones | Conversion GGUF de un modelo de difusion de video | no aplicable | no disponible | no disponible | Gated en Hugging Face |
 | Wan2.1-T2V-14B (proyecto base) | 14 mil millones (aproximado) | Difusion de video, texto a video | no aplicable | no disponible en la informacion recogida | no disponible | Repositorio del proyecto Wan-Video |
 | Wan2.1-T2V-1.3B (proyecto base) | 1,3 mil millones | Difusion de video, texto a video | no aplicable | no disponible en la informacion recogida | no disponible | Repositorio del proyecto Wan-Video |
 | Wan2.1-14B-I2V (proyecto base) | 14 mil millones (aproximado) | Difusion de video, imagen a video | no aplicable | no disponible en la informacion recogida | no disponible | Repositorio del proyecto Wan-Video |
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de la descarga, lo que puede bloquear automatizaciones y pipelines de CI.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de la descarga, lo que puede bloquear automatizaciones y pipelines de CI.
 - Documentacion practicamente inexistente: la model card no detalla pipeline, componentes, niveles de cuantizacion ni instrucciones de uso, por lo que la reproducibilidad depende de conocimiento externo del proyecto Wan2.1.
 - Procedencia: se trata de una publicacion de un usuario individual (3 descargas y 1 like en el momento de la consulta), no del equipo oficial de Wan-Video. No hay garantia de que la conversion sea fiel al modelo original ni de que el repositorio se mantenga.
 - Licencia no declarada en la informacion disponible: antes de cualquier uso comercial es imprescindible verificar la licencia del modelo base y las condiciones del repositorio gated.
@@ -105,7 +105,7 @@ Los unicos modelos comparables citados en la busqueda pertenecen a la propia fam
 
 ## Enlaces
 
-- Repositorio HuggingFace (gated): https://huggingface.co/takotako1118/Wan2.1L
+- Repositorio Hugging Face (gated): https://huggingface.co/takotako1118/Wan2.1L
 - Perfil del autor: https://huggingface.co/takotako1118
 - Repositorio oficial del proyecto Wan2.1 en GitHub: https://github.com/Wan-Video/Wan2.1
 - Espejo del proyecto Wan2.1 en GitHub: https://github.com/xiammo/AI-Wan2.1

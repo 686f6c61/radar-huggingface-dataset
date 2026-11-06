@@ -6,7 +6,7 @@
 
 El trabajo forma parte del repositorio `FutureMLS-Lab/differentiable-harness` (main en `8b0cc0cf`) y evalúa tres brazos sobre el mismo stack: la base GLM-5.2 sin ajuste, una variante V1 con pérdida de entropía cruzada (CE 1.0) más KL forward 0.1 restringida a segmentos de acción, y una variante GRPO con clip 0.2 y KL reversa 0.1. La evaluación usa un subconjunto fijo de 50 tareas de Multi-SWE (7 lenguajes), 900 segundos por tarea, red bloqueada, ajustes por defecto de dsh con `reasoning_effort` alto, juez oficial `multi-swe-bench==1.1.2` con recibos de cero errores y 4 rondas por brazo.
 
-Su relevancia es metodológica más que de producto: documenta una técnica de optimización de caché K/V (tunekv) aplicada a un modelo MoE con atención latente (MLA) e indexer de atención dispersa (DSA), y publica scripts de servicio, rollout, juicio y entrenamiento, especificaciones de pods en `k8s/` y verificación por sha256 de las tres copias de pesos. No hay pipeline, licencia ni idiomas declarados en la ficha de HuggingFace, y los resultados numéricos están pendientes de volcado en `SCORES.json`.
+Su relevancia es metodológica más que de producto: documenta una técnica de optimización de caché K/V (tunekv) aplicada a un modelo MoE con atención latente (MLA) e indexer de atención dispersa (DSA), y publica scripts de servicio, rollout, juicio y entrenamiento, especificaciones de pods en `k8s/` y verificación por sha256 de las tres copias de pesos. No hay pipeline, licencia ni idiomas declarados en la ficha de Hugging Face, y los resultados numéricos están pendientes de volcado en `SCORES.json`.
 
 ## Especificaciones técnicas
 
@@ -87,14 +87,14 @@ No se identifican en la información modelos comparables de terceros: el artefac
 - Riesgo de alucinación: no evaluado ni declarado en la información disponible.
 - Sesgos conocidos: no disponibles. No se documenta análisis de sesgo ni composición demográfica del dataset.
 - Limitaciones de contexto e idioma: no disponibles. El contexto efectivo del artefacto se limita al prefijo ajustado más lo que gestione el modelo base.
-- Restricciones de licencia: la licencia no está declarada ni en HuggingFace ni en la ficha, por lo que no puede confirmarse el uso comercial. Además, el uso queda sujeto a la licencia del modelo base `zai-org/GLM-5.2-FP8`.
+- Restricciones de licencia: la licencia no está declarada ni en Hugging Face ni en la ficha, por lo que no puede confirmarse el uso comercial. Además, el uso queda sujeto a la licencia del modelo base `zai-org/GLM-5.2-FP8`.
 - Reproducibilidad del juicio: el juez previsto (`research-dev-coder-009`) estuvo inaccesible desde el 2026-09-23 a las 19:50Z por caída del host de salto, y las evaluaciones se realizaron en un pod de respaldo (`cooldog`) con el mismo arnés oficial; cualquier comparación con ejecuciones en el juez original debe tener en cuenta esta sustitución.
 - Tests sensibles a la carga: el auto-chequeo con parche dorado falló en `vuejs/core#10027` por temporización bajo carga, lo que sugiere posibles falsos negativos en tareas con tests dependientes del tiempo.
 - Cero tracción comunitaria: 0 descargas y 0 likes en el momento de la consulta, sin pipeline ni idiomas declarados, lo que limita la validación externa.
 
 ## Enlaces
 
-- Ficha del artefacto en HuggingFace: https://huggingface.co/Zhongzhu/tunekv-multiswe-glm-dsh
+- Ficha del artefacto en Hugging Face: https://huggingface.co/Zhongzhu/tunekv-multiswe-glm-dsh
 - Modelo base: https://huggingface.co/zai-org/GLM-5.2-FP8 (commit `f33c6dc5`)
 - Blog de GLM-5.2 en z.ai: https://z.ai/blog/glm-5.2
 - Documentación de GLM-5.1 en Z.AI: https://docs.z.ai/guides/llm/glm-5.1

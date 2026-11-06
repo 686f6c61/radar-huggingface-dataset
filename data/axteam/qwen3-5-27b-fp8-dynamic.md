@@ -21,7 +21,7 @@ La arquitectura del modelo base es híbrida: combina capas de atención lineal y
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors con compressed-tensors (FP8), biblioteca `transformers`, soporte vLLM |
 
-Datos adicionales: tamaño del repositorio 31,2 GB; tamaño de los pesos en disco ~29,1 GB; ID de HuggingFace `axteam/Qwen3.5-27B-FP8-dynamic`; creado el 2026-10-29; 0 descargas y 0 *likes* en el momento de la consulta.
+Datos adicionales: tamaño del repositorio 31,2 GB; tamaño de los pesos en disco ~29,1 GB; ID de Hugging Face `axteam/Qwen3.5-27B-FP8-dynamic`; creado el 2026-10-29; 0 descargas y 0 *likes* en el momento de la consulta.
 
 ## Arquitectura y entrenamiento
 
@@ -79,8 +79,8 @@ No se dispone de información sobre otras cuantizaciones FP8 publicadas de este 
 
 | Modelo | Parametros | Contexto | Formato / memoria de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `axteam/Qwen3.5-27B-FP8-dynamic` | 27,78 B (denso) | No disponible | safetensors FP8 compressed-tensors, ~29,1 GB | Apache-2.0 | HuggingFace, 0 descargas |
-| `Qwen/Qwen3.5-27B` (original) | 27,78 B (denso) | No disponible | safetensors BF16, ~55 GB (estimado) | Apache-2.0 | HuggingFace |
+| `axteam/Qwen3.5-27B-FP8-dynamic` | 27,78 B (denso) | No disponible | safetensors FP8 compressed-tensors, ~29,1 GB | Apache-2.0 | Hugging Face, 0 descargas |
+| `Qwen/Qwen3.5-27B` (original) | 27,78 B (denso) | No disponible | safetensors BF16, ~55 GB (estimado) | Apache-2.0 | Hugging Face |
 | Otras cuantizaciones del mismo base (GGUF, AWQ, GPTQ) | No disponible | No disponible | No disponible | No disponible | No disponible en la información consultada |
 
 Diferencias clave frente al original: mismo número de parámetros, mismo tokenizador y misma plantilla de chat; la mitad de huella de memoria; degradación medida del +0,4 % en perplexity; y pérdida de 2,1 puntos de acuerdo *top-1*. El original mantiene la ventaja en fidelidad y no requiere GPU Ada/Hopper para FP8.
@@ -101,7 +101,7 @@ Diferencias clave frente al original: mismo número de parámetros, mismo tokeni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/Qwen3.5-27B-FP8-dynamic
+- Modelo en Hugging Face: https://huggingface.co/axteam/Qwen3.5-27B-FP8-dynamic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-27B/blob/main/LICENSE
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes sobre este modelo. Los resultados devueltos por la búsqueda no guardan relación con el modelo ni con Qwen y se han descartado; no se dispone de paper, blog técnico, repositorio ni demo adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ramya es un repositorio de modelos publicado en HuggingFace por el usuario `pushkarl` bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene únicamente el bloque de metadatos de licencia (`license: apache-2.0`), sin descripción del modelo, sin especificaciones de arquitectura, sin información sobre el tokenizador ni sobre los datos de entrenamiento. El repositorio no declara pipeline de inferencia, no especifica idiomas soportados y no cuenta con descargas ni interacciones registradas.
+Ramya es un repositorio de modelos publicado en Hugging Face por el usuario `pushkarl` bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene únicamente el bloque de metadatos de licencia (`license: apache-2.0`), sin descripción del modelo, sin especificaciones de arquitectura, sin información sobre el tokenizador ni sobre los datos de entrenamiento. El repositorio no declara pipeline de inferencia, no especifica idiomas soportados y no cuenta con descargas ni interacciones registradas.
 
 Por tanto, no es posible determinar qué problema resuelve el modelo, cuál es su tamaño, qué arquitectura emplea ni qué capacidades ofrece. La única información verificable es la licencia (Apache 2.0), la región declarada (`us`) y las marcas temporales de creación y actualización, ambas del 18 de octubre de 2026, lo que sugiere un repositorio recién creado o una publicación de prueba.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 No disponible. Al no conocerse la arquitectura, el tamaño ni la tarea del modelo, no es posible identificar alternativas comparables de la misma categoría.
 
-| Modelo | Parámetros | Contexto | Licencia | Estado en HuggingFace |
+| Modelo | Parámetros | Contexto | Licencia | Estado en Hugging Face |
 |---|---|---|---|---|
 | pushkarl/Ramya | no disponible | no disponible | Apache 2.0 | 0 descargas, 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
@@ -79,5 +79,5 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni la tarea del model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pushkarl/Ramya
+- Repositorio en Hugging Face: https://huggingface.co/pushkarl/Ramya
 - Paper, blog, repositorio de código o demo: no disponible (la búsqueda web no ha devuelto ninguna fuente relacionada con el modelo).

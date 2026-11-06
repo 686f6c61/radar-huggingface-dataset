@@ -4,7 +4,7 @@
 
 Xenova/all-MiniLM-L6-v2 es la conversión a ONNX del modelo sentence-transformers/all-MiniLM-L6-v2, un modelo de extracción de características (feature-extraction) diseñado para generar embeddings de frases y párrafos de 384 dimensiones. La versión original fue desarrollada por el equipo de Sentence Transformers (UKPLab) y esta variante ha sido publicada por Xenova para que sea compatible con Transformers.js, permitiendo ejecutar el modelo directamente en el navegador o en Node.js mediante JavaScript sin necesidad de un backend en Python.
 
-El modelo resuelve tareas de similitud semántica, búsqueda semántica, clustering y recuperación de información, transformando texto en vectores densos que capturan su significado. Su relevancia actual radica en que es uno de los modelos de embeddings más ligeros y rápidos ampliamente adoptados, con más de 4,4 millones de descargas en HuggingFace, y su versión ONNX lo convierte en una pieza clave para aplicaciones web que necesitan inferencia en el cliente (client-side inference) sin depender de servidores.
+El modelo resuelve tareas de similitud semántica, búsqueda semántica, clustering y recuperación de información, transformando texto en vectores densos que capturan su significado. Su relevancia actual radica en que es uno de los modelos de embeddings más ligeros y rápidos ampliamente adoptados, con más de 4,4 millones de descargas en Hugging Face, y su versión ONNX lo convierte en una pieza clave para aplicaciones web que necesitan inferencia en el cliente (client-side inference) sin depender de servidores.
 
 Arquitectura derivada de MiniLM (destilación de BERT), con aproximadamente 22,7 millones de parámetros y una longitud máxima de secuencia de 256 tokens. Está publicado bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas.
 
@@ -89,7 +89,7 @@ Los datos de rendimiento comparativo entre estos modelos no estan disponibles en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Xenova/all-MiniLM-L6-v2
+- Hugging Face: https://huggingface.co/Xenova/all-MiniLM-L6-v2
 - Modelo base original: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Documentacion de Transformers.js: https://huggingface.co/docs/transformers.js
 - Paquete NPM @huggingface/transformers: https://www.npmjs.com/package/@huggingface/transformers

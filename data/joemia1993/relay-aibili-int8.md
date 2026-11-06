@@ -2,7 +2,7 @@
 
 ## Resumen
 
-relay-aibili-int8 es un checkpoint intermedio de entrenamiento publicado por el usuario joemia1993 en HuggingFace. Se trata de un modelo de lenguaje causal basado en la arquitectura Qwen2ForCausalLM, cuantizado a 8 bits mediante bitsandbytes, con un total de 44.609.280 parametros y una unica capa transformer. Su nombre interno en la model card es "relay-global" y se distribuye como punto de control de un entrenamiento que, segun el propio autor, no ha finalizado ni ha sido evaluado.
+relay-aibili-int8 es un checkpoint intermedio de entrenamiento publicado por el usuario joemia1993 en Hugging Face. Se trata de un modelo de lenguaje causal basado en la arquitectura Qwen2ForCausalLM, cuantizado a 8 bits mediante bitsandbytes, con un total de 44.609.280 parametros y una unica capa transformer. Su nombre interno en la model card es "relay-global" y se distribuye como punto de control de un entrenamiento que, segun el propio autor, no ha finalizado ni ha sido evaluado.
 
 El modelo emplea una configuracion reducida: `hidden_size=1024`, una sola capa, 16 cabezas de atencion y 8 cabezas KV (GQA). Los pesos se almacenan en formato int8 con escalas por fila (`SCB` en F32), lo que exige cargar el modelo con `load_in_8bit=True`. La model card lo describe explicitamente como "训练中断点, 未做评测" (punto de interrupcion del entrenamiento, sin evaluacion).
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| relay-aibili-int8 | 44,6 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen2-0.5B | 494 M | 32.768 tokens (segun version) | Apache 2.0 (segun version) | HuggingFace, ampliamente usado |
-| Qwen2-1.5B | 1.540 M | 32.768 tokens (segun version) | Apache 2.0 (segun version) | HuggingFace, ampliamente usado |
-| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
+| relay-aibili-int8 | 44,6 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen2-0.5B | 494 M | 32.768 tokens (segun version) | Apache 2.0 (segun version) | Hugging Face, ampliamente usado |
+| Qwen2-1.5B | 1.540 M | 32.768 tokens (segun version) | Apache 2.0 (segun version) | Hugging Face, ampliamente usado |
+| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
 
 La comparativa es asimetrica: relay-aibili-int8 es dos ordenes de magnitud menor que los Qwen2 publicos y carece de evaluacion, licencia y contexto declarados. Los modelos Qwen2 oficiales son la referencia natural por compartir arquitectura, pero no son equivalentes en madurez ni en garantias de uso.
 
@@ -82,7 +82,7 @@ La comparativa es asimetrica: relay-aibili-int8 es dos ordenes de magnitud menor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joemia1993/relay-aibili-int8
+- Hugging Face: https://huggingface.co/joemia1993/relay-aibili-int8
 - Repositorio de bitsandbytes: https://github.com/bitsandbytes-foundation/bitsandbytes
 - Documentacion de transformers sobre cuantizacion: https://huggingface.co/docs/transformers/main/en/quantization/bitsandbytes
 - Documentacion de Qwen2 en transformers: https://huggingface.co/docs/transformers/main/en/model_doc/qwen2

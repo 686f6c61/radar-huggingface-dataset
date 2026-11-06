@@ -74,10 +74,10 @@ El autor publica una evaluación cualitativa y dos métricas de sistema, medidas
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Thox-Nova | 8B | 32 768 (131 072 con YaRN) | Apache-2.0 | Persona + knowledge pack sobre Qwen3-8B, sin entrenamiento | Ollama y HuggingFace |
-| Qwen/Qwen3-8B | 8B | 32 768 (131 072 con YaRN) | Apache-2.0 | Modelo base generalista con modo de razonamiento | HuggingFace, Ollama, vLLM |
-| Llama 3.1 8B Instruct | 8B | 131 072 | Llama 3.1 Community License | Modelo generalista con instrucciones | HuggingFace, Ollama |
-| Mistral 7B Instruct | 7B | 32 768 | Apache-2.0 | Modelo generalista con instrucciones | HuggingFace, Ollama |
+| Thox-Nova | 8B | 32 768 (131 072 con YaRN) | Apache-2.0 | Persona + knowledge pack sobre Qwen3-8B, sin entrenamiento | Ollama y Hugging Face |
+| Qwen/Qwen3-8B | 8B | 32 768 (131 072 con YaRN) | Apache-2.0 | Modelo base generalista con modo de razonamiento | Hugging Face, Ollama, vLLM |
+| Llama 3.1 8B Instruct | 8B | 131 072 | Llama 3.1 Community License | Modelo generalista con instrucciones | Hugging Face, Ollama |
+| Mistral 7B Instruct | 7B | 32 768 | Apache-2.0 | Modelo generalista con instrucciones | Hugging Face, Ollama |
 
 Frente a sus alternativas, Thox-Nova no compite en capacidad bruta: es el mismo Qwen3-8B con una capa de persona. Su diferencial es la reproducibilidad del empaquetado y la política de abstención documentada, no el rendimiento en tareas generales.
 
@@ -95,7 +95,7 @@ Frente a sus alternativas, Thox-Nova no compite en capacidad bruta: es el mismo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/Thox-Nova
+- Hugging Face: https://huggingface.co/Thox-ai/Thox-Nova
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Tag de Ollama referenciado: `qwen3:8b` (sha256:500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41)
 - Modelo publicado en Ollama: `Thox-ai/thox-nova`

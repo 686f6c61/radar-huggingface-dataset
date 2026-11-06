@@ -84,7 +84,7 @@ Las tres conversiones MLX son funcionalmente equivalentes; la diferencia princip
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Oscilla/Qwen3.6-27B-mlx-8Bit
+- Modelo en Hugging Face: https://huggingface.co/Oscilla/Qwen3.6-27B-mlx-8Bit
 - Modelo base Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
 - Conversión alternativa (unsloth): https://huggingface.co/unsloth/Qwen3.6-27B-MLX-8bit
 - Conversión alternativa (mlx-community): https://huggingface.co/mlx-community/Qwen3.6-27B-8bit

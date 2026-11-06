@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Edge-Ai-Smart-Classroom es un repositorio publicado en HuggingFace por el usuario rikasmhd20. A juzgar por su nombre, el proyecto parece orientarse a aplicaciones de IA en el borde (edge AI) para entornos educativos o de aula inteligente, aunque la model card no contiene descripcion alguna del modelo, su proposito ni su funcionamiento: el README se limita a declarar la licencia MIT.
+Edge-Ai-Smart-Classroom es un repositorio publicado en Hugging Face por el usuario rikasmhd20. A juzgar por su nombre, el proyecto parece orientarse a aplicaciones de IA en el borde (edge AI) para entornos educativos o de aula inteligente, aunque la model card no contiene descripcion alguna del modelo, su proposito ni su funcionamiento: el README se limita a declarar la licencia MIT.
 
-No hay informacion disponible sobre arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento. El repositorio no tiene descargas registradas, cuenta con 1 like y no tiene asignado un pipeline en HuggingFace, por lo que no puede confirmarse si contiene pesos de un modelo de lenguaje, un dataset, codigo de aplicacion u otro tipo de artefacto.
+No hay informacion disponible sobre arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento. El repositorio no tiene descargas registradas, cuenta con 1 like y no tiene asignado un pipeline en Hugging Face, por lo que no puede confirmarse si contiene pesos de un modelo de lenguaje, un dataset, codigo de aplicacion u otro tipo de artefacto.
 
 Su relevancia practica actual es limitada: al tratarse de un repositorio sin documentacion, sin uso registrado y sin metadatos tecnicos, no puede recomendarse para produccion sin una verificacion manual previa de su contenido.
 
@@ -25,7 +25,7 @@ Su relevancia practica actual es limitada: al tratarse de un repositorio sin doc
 
 No se dispone de informacion sobre la arquitectura del modelo ni sobre su proceso de entrenamiento. La model card no especifica si se trata de un transformer, un modelo MoE, un modelo hibrido u otro tipo de arquitectura, ni detalla el numero de tokens de entrenamiento, la composicion del dataset o el uso de tecnicas de alineacion como RLHF o DPO.
 
-Dado que el repositorio tampoco declara un pipeline asociado en HuggingFace, no puede determinarse si el artefacto publicado es realmente un modelo de lenguaje. Cualquier afirmacion sobre su diseno tecnico seria especulativa.
+Dado que el repositorio tampoco declara un pipeline asociado en Hugging Face, no puede determinarse si el artefacto publicado es realmente un modelo de lenguaje. Cualquier afirmacion sobre su diseno tecnico seria especulativa.
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ Para proyectos de edge AI educativos, modelos como Phi-3-mini o Qwen2.5 en taman
 
 ## Limitaciones y advertencias
 
-- La model card esta practicamente vacia: no describe el modelo, su entrenamiento, sus limitaciones ni su uso previsto, lo que incumple las buenas practicas de documentacion de HuggingFace.
+- La model card esta practicamente vacia: no describe el modelo, su entrenamiento, sus limitaciones ni su uso previsto, lo que incumple las buenas practicas de documentacion de Hugging Face.
 - No puede verificarse que el repositorio contenga pesos de un modelo funcional; el pipeline asignado es "no disponible".
 - Sin benchmarks ni evaluaciones publicadas, no hay forma de estimar su calidad, sesgos ni riesgo de alucinacion.
 - Al no conocerse la procedencia de los datos de entrenamiento, no pueden descartarse sesgos ni problemas de licencia sobre datos de terceros.
@@ -83,6 +83,6 @@ Para proyectos de edge AI educativos, modelos como Phi-3-mini o Qwen2.5 en taman
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rikasmhd20/Edge-Ai-Smart-Classroom
+- Repositorio en Hugging Face: https://huggingface.co/rikasmhd20/Edge-Ai-Smart-Classroom
 
 No se han encontrado enlaces adicionales relevantes (papers, blogs, repos de codigo o demos) en la informacion disponible.

@@ -24,12 +24,12 @@ Su relevancia practica es la de servir como via de acceso de bajo coste a un mod
 | Tipo de cuantizacion | estatica (no se han publicado cuantizaciones imatrix/weighted) |
 | Tamano del repositorio | 24,3 GB (suma de todas las variantes) |
 | Descargas / likes | 276 / 1 |
-| Fecha de creacion | 26 de septiembre de 2026 (metadatos de HuggingFace) |
-| Ultima actualizacion | 26 de septiembre de 2026 (metadatos de HuggingFace) |
+| Fecha de creacion | 26 de septiembre de 2026 (metadatos de Hugging Face) |
+| Ultima actualizacion | 26 de septiembre de 2026 (metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo base Akahsizrr/Cyber-Prime-1.9-2.6B en la documentacion disponible. El repositorio de mradermacher es exclusivamente una cuantizacion estatica: el propio autor indica en la model card que las cuantizaciones ponderadas o con imatrix no estaban disponibles en el momento de la publicacion, y que se pueden solicitar mediante una discusion de la comunidad. Los metadatos internos de la conversion indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversion desde pesos en formato HuggingFace.
+No se ha publicado informacion sobre la arquitectura del modelo base Akahsizrr/Cyber-Prime-1.9-2.6B en la documentacion disponible. El repositorio de mradermacher es exclusivamente una cuantizacion estatica: el propio autor indica en la model card que las cuantizaciones ponderadas o con imatrix no estaban disponibles en el momento de la publicacion, y que se pueden solicitar mediante una discusion de la comunidad. Los metadatos internos de la conversion indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversion desde pesos en formato Hugging Face.
 
 Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. El sufijo "1.9" del nombre no aparece documentado en la informacion disponible, por lo que no puede interpretarse con certeza como version, tamano alternativo o identificador de iteracion. Cualquier afirmacion sobre la arquitectura interna (transformer denso, MoE, hibrido) seria especulativa.
 

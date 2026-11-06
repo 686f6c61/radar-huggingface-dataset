@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/swa-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` es un ajuste fino (fine-tuning) de tipo SFT sobre otro modelo de la misma autora, `francesca9805/swa-latn-100mb-ppt-mp-struct-core-100mb_seed455`. Se trata de un modelo pequeño de generación de texto con 124.770.816 parámetros, construido sobre la arquitectura GPT-2 y publicado en HuggingFace dentro de la librería `transformers`. El prefijo `swa-latn` del identificador sugiere un ámbito de lengua suajili en escritura latina, aunque no hay confirmación oficial en la model card.
+El modelo `francesca9805/swa-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` es un ajuste fino (fine-tuning) de tipo SFT sobre otro modelo de la misma autora, `francesca9805/swa-latn-100mb-ppt-mp-struct-core-100mb_seed455`. Se trata de un modelo pequeño de generación de texto con 124.770.816 parámetros, construido sobre la arquitectura GPT-2 y publicado en Hugging Face dentro de la librería `transformers`. El prefijo `swa-latn` del identificador sugiere un ámbito de lengua suajili en escritura latina, aunque no hay confirmación oficial en la model card.
 
 El modelo no presenta datos de benchmarks, licencia declarada ni idiomas soportados de forma explícita. Su relevancia radica en ser un ejemplo de ajuste fino reproducible con TRL (versión 0.23.0) y en su tamaño reducido, que permite desplegarlo en hardware de consumo e incluso en CPU. Está orientado a tareas de generación de texto conversacional de un solo turno o de pocos turnos, según el ejemplo de uso incluido en la model card.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| francesca9805/swa-latn-100mb-...ckpt500_seed10 | 124,77 M | no disponible | no disponible | HuggingFace | no disponible |
+| francesca9805/swa-latn-100mb-...ckpt500_seed10 | 124,77 M | no disponible | no disponible | Hugging Face | no disponible |
 | GPT-2 base (OpenAI) | 124 M | 1024 tokens | MIT | Ampliamente disponible | Datos historicos publicos (no comparables directamente con este ajuste) |
 | DistilGPT-2 | 82 M | 1024 tokens | MIT | Ampliamente disponible | Datos historicos publicos |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache 2.0 | HuggingFace | Benchmarks publicados por el autor |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache 2.0 | Hugging Face | Benchmarks publicados por el autor |
 
 La comparacion se limita a parametros, contexto y licencia, dado que el modelo objeto de la ficha no publica resultados de evaluacion. Las cifras de contexto de GPT-2 y DistilGPT-2 corresponden a sus configuraciones estandar conocidas; las de SmolLM corresponden a la informacion publica del modelo. Para este modelo concreto, los campos de contexto, licencia y rendimiento figuran como no disponibles.
 
@@ -84,7 +84,7 @@ La comparacion se limita a parametros, contexto y licencia, dado que el modelo o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swa-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swa-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/swa-latn-100mb-ppt-mp-struct-core-100mb_seed455
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/v0g5yh8x
 - Repositorio de TRL: https://github.com/huggingface/trl

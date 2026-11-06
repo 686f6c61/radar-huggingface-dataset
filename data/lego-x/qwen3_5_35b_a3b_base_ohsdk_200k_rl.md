@@ -85,7 +85,7 @@ La comparativa se centra en la tarea de resolucion de issues (SWE-bench Verified
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lego-X/qwen3_5_35b_a3b_base_ohsdk_200k_rl
+- Modelo en Hugging Face: https://huggingface.co/Lego-X/qwen3_5_35b_a3b_base_ohsdk_200k_rl
 - Paper (arXiv 2608.17393): https://arxiv.org/abs/2608.17393
 - Codigo (GitHub): https://github.com/LegoX/Lego-RL
 - Documentacion: https://lego-rl.pages.dev

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MINICPM5-2B-SFT-Abiliterated es una edición de pesos del modelo openbmb/MiniCPM5-2B-SFT publicada por el usuario XtrCom en HuggingFace. No se trata de un fine-tuning ni de un modelo entrenado desde cero: es el mismo checkpoint base al que se le ha proyectado fuera la denominada «dirección de rechazo» en 84 matrices de pesos (o_proj de atención y down_proj del MLP) a lo largo de las 42 capas de la red. El resultado declarado por el autor es un modelo sin comportamiento de rechazo, que acepta peticiones que el modelo base deniega.
+MINICPM5-2B-SFT-Abiliterated es una edición de pesos del modelo openbmb/MiniCPM5-2B-SFT publicada por el usuario XtrCom en Hugging Face. No se trata de un fine-tuning ni de un modelo entrenado desde cero: es el mismo checkpoint base al que se le ha proyectado fuera la denominada «dirección de rechazo» en 84 matrices de pesos (o_proj de atención y down_proj del MLP) a lo largo de las 42 capas de la red. El resultado declarado por el autor es un modelo sin comportamiento de rechazo, que acepta peticiones que el modelo base deniega.
 
 Arquitectónicamente es un transformer decoder-only denso de 2.516.756.480 parámetros (2,52 B), con clase LlamaForCausalLM, 42 capas, hidden_size de 2048, intermediate_size de 6144, atención GQA con 16 cabezas de consulta y 2 de clave/valor (head_dim 128), rope_theta de 5e6 y una ventana máxima de 131.072 tokens. Los pesos se distribuyen en un único shard safetensors en bfloat16 de 5,03 GB. El vocabulario es de 130.560 tokens y la model card solo declara inglés como idioma.
 
@@ -122,7 +122,7 @@ La comparación relevante es interna al propio repo: la edición a profundidad c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XtrCom/MINICPM5-2B-SFT-Abiliterated
+- Modelo en Hugging Face: https://huggingface.co/XtrCom/MINICPM5-2B-SFT-Abiliterated
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B-SFT
 - Informe de ablación por matriz (`ablation_report.json`): referenciado en la model card, disponible en el repositorio del modelo
 - Paper, blog o repositorio de la técnica de abliteración: no disponible en la información proporcionada

@@ -95,7 +95,7 @@ No se dispone de informacion sobre adaptadores de abliteration comparables en el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pp111asd/DeepSeek-V4.1-Flash-1017-Abliteration-LoRA-GGUF
+- Modelo en Hugging Face: https://huggingface.co/pp111asd/DeepSeek-V4.1-Flash-1017-Abliteration-LoRA-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Project Maya (repositorio): https://github.com/mw00/project-maya
 - Commit con soporte --ablate en upstream: https://github.com/mw00/project-maya/commit/8a3395142537ae7ae909a1bce33fe76f8a810592

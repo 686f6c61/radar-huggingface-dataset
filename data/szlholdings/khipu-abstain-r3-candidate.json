@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/khipu-abstain-r3-candidate",
+  "slug": "szlholdings-khipu-abstain-r3-candidate",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/khipu-abstain-r3-candidate",
+  "created_at": "2026-11-05T01:24:50.000Z",
+  "updated_at": "2026-11-05T11:40:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "szl-holdings",
+    "proposal-only",
+    "not-promotable",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=khipu",
+      "snippet": "Explore machine learning models. Models 9 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: khipu Clear all"
+    },
+    {
+      "title": "Adapter Models for SZLHOLDINGS/khipu-r3 – Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Aadapter%3ASZLHOLDINGS%2Fkhipu-r3",
+      "snippet": "Model Tree Reset SZLHOLDINGS/khipu-r3 Adapters Finetunes Quantizations Merges Apps llama.cpp LM Studio Jan Draw Things DiffusionBee JoyFusion vLLM Ollama MLX LM Docker Model Runner Lemonade SGLang Unsloth Desktop Pi Hermes Agent Atomic Chat OpenClaw Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai ..."
+    }
+  ]
+}

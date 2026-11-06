@@ -69,11 +69,11 @@ La model card del autor indica explícitamente que la generación en Modalix, la
 
 | Modelo | Parametros | Contexto | Tipo de artefacto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| florianvoss/Qwen3.5-9B-DFlash-N16-LLiMa-3.0.0 | 9B | 4.096 tokens (runtime) | Paquete compilado Modalix con decodificacion especulativa | Apache 2.0 | HuggingFace, 0 descargas |
-| simaai/Qwen3.5-9B-Autoround-Safetensors | 9B | 262.144 tokens (modelo base) | Checkpoint de pesos (objetivo) | no disponible en la informacion | HuggingFace |
-| simaai/Qwen3.5-9B-DFlash-RTN-INT8-Safetensors | no disponible | no disponible | Checkpoint de borrador INT8 | no disponible en la informacion | HuggingFace |
-| z-lab/Qwen3.5-9B-DFlash | no disponible | no disponible | Borrador DFlash | no disponible en la informacion | HuggingFace |
-| florianvoss/Qwen3.5-4B-DFlash-N16-LLiMa | 4B | no disponible | Paquete compilado Modalix, variante menor | no disponible en la informacion | HuggingFace |
+| florianvoss/Qwen3.5-9B-DFlash-N16-LLiMa-3.0.0 | 9B | 4.096 tokens (runtime) | Paquete compilado Modalix con decodificacion especulativa | Apache 2.0 | Hugging Face, 0 descargas |
+| simaai/Qwen3.5-9B-Autoround-Safetensors | 9B | 262.144 tokens (modelo base) | Checkpoint de pesos (objetivo) | no disponible en la informacion | Hugging Face |
+| simaai/Qwen3.5-9B-DFlash-RTN-INT8-Safetensors | no disponible | no disponible | Checkpoint de borrador INT8 | no disponible en la informacion | Hugging Face |
+| z-lab/Qwen3.5-9B-DFlash | no disponible | no disponible | Borrador DFlash | no disponible en la informacion | Hugging Face |
+| florianvoss/Qwen3.5-4B-DFlash-N16-LLiMa | 4B | no disponible | Paquete compilado Modalix, variante menor | no disponible en la informacion | Hugging Face |
 | qwen3.5:9b (Ollama) | 9B | 262.144 tokens (modelo base) | Distribucion para inferencia en GPU/CPU | Apache 2.0 | Ollama Library |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ La model card del autor indica explícitamente que la generación en Modalix, la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/florianvoss/Qwen3.5-9B-DFlash-N16-LLiMa-3.0.0
+- Repositorio Hugging Face: https://huggingface.co/florianvoss/Qwen3.5-9B-DFlash-N16-LLiMa-3.0.0
 - Checkpoint objetivo: https://huggingface.co/simaai/Qwen3.5-9B-Autoround-Safetensors
 - Checkpoint borrador: https://huggingface.co/simaai/Qwen3.5-9B-DFlash-RTN-INT8-Safetensors
 - Borrador DFlash de referencia: https://huggingface.co/z-lab/Qwen3.5-9B-DFlash

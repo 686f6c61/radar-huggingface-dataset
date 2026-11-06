@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "rasyosef/K2-Horizon-7B-DSpark",
+  "slug": "rasyosef-k2-horizon-7b-dspark",
+  "author": "rasyosef",
+  "url": "https://huggingface.co/rasyosef/K2-Horizon-7B-DSpark",
+  "created_at": "2026-11-03T06:57:09.000Z",
+  "updated_at": "2026-11-03T22:33:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speculative-decoding",
+    "speculators",
+    "dspark",
+    "draft-model",
+    "vllm",
+    "custom_code",
+    "dataset:mlabonne/open-perfectblend",
+    "base_model:IFM/K2-Horizon-7B",
+    "base_model:finetune:IFM/K2-Horizon-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 53,
+  "trending_score": 0,
+  "parameters": 858064129,
+  "parameters_human": "858.1M",
+  "storage_bytes": 3314324220,
+  "storage_human": "3.3 GB",
+  "base_model": "IFM/K2-Horizon-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rasyosef/K2-Horizon-7B-DSpark · Hugging Face",
+      "url": "https://huggingface.co/rasyosef/K2-Horizon-7B-DSpark",
+      "snippet": "Machine learning model with 0.9B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "rasyosef/K2-Horizon-7B-DSpark at main - Hugging Face",
+      "url": "https://huggingface.co/rasyosef/K2-Horizon-7B-DSpark/tree/main",
+      "snippet": "Instructions to use rasyosef/K2-Horizon-7B-DSpark with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use rasyosef/K2-Horizon-7B-DSpark with Transformers:"
+    }
+  ]
+}

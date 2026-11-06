@@ -24,7 +24,7 @@ Es relevante ahora porque ejemplifica un patrón habitual en el ecosistema open 
 | Etiquetas | 1 = el candidato respondió a la vacante; 0 = vacante vista y descartada |
 | Modelo base | `cointegrated/rubert-tiny2` |
 | Datos de entrenamiento | 414 vacantes (título + descripción, hasta 2.500 caracteres); 49 positivos (11,8 %) y 365 negativos. Dataset no publicado |
-| Tamaño del repositorio | 0,0 GB (según la ficha de HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según la ficha de Hugging Face) |
 | Umbral recomendado | 0,47 (tomado de `metrics.json`) |
 
 ## Arquitectura y entrenamiento
@@ -79,10 +79,10 @@ Conclusiones declaradas por el autor: con solo 49 ejemplos positivos, el adaptad
 
 | Modelo | Categoria | Parametros | Contexto | PR-AUC (mismo conjunto) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `MrAlexGov/vacancy-fit-lora-rubert-tiny2` | Adaptador LoRA de clasificación (ruso) | No disponible (LoRA r=16 sobre encoder diminuto) | 256 tokens | 0,427 | MIT | HuggingFace, adaptador PEFT |
+| `MrAlexGov/vacancy-fit-lora-rubert-tiny2` | Adaptador LoRA de clasificación (ruso) | No disponible (LoRA r=16 sobre encoder diminuto) | 256 tokens | 0,427 | MIT | Hugging Face, adaptador PEFT |
 | TF-IDF (1–2-gramas) + regresión logística | Básculo clásico | No aplica | No aplica | 0,582 | No aplica | Implementación propia; reproducible en minutos |
-| `cointegrated/rubert-tiny2` sin ajustar | Encoder ruso preentrenado | No disponible en la información proporcionada | No disponible | no disponible | No disponible en la información proporcionada | HuggingFace |
-| Ajuste completo de `ruBERT-base` | Encoder ruso mayor | No disponible | No disponible | no disponible | No disponible | HuggingFace |
+| `cointegrated/rubert-tiny2` sin ajustar | Encoder ruso preentrenado | No disponible en la información proporcionada | No disponible | no disponible | No disponible en la información proporcionada | Hugging Face |
+| Ajuste completo de `ruBERT-base` | Encoder ruso mayor | No disponible | No disponible | no disponible | No disponible | Hugging Face |
 
 La única comparación con datos medidos en el mismo conjunto es la del básculo TF-IDF, que gana en PR-AUC, precision y F1, mientras que el adaptador LoRA solo supera en recall (0,694 frente a 0,592), coherente con un umbral más agresivo. Las alternativas basadas en `ruBERT-base` aparecen mencionadas por el autor como posible siguiente paso, pero no hay resultados publicados.
 
@@ -103,8 +103,8 @@ La única comparación con datos medidos en el mismo conjunto es la del básculo
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/MrAlexGov/vacancy-fit-lora-rubert-tiny2
+- Página del modelo en Hugging Face: https://huggingface.co/MrAlexGov/vacancy-fit-lora-rubert-tiny2
 - Modelo base: https://huggingface.co/cointegrated/rubert-tiny2
-- Código de entrenamiento: `train.py` en el propio repositorio de HuggingFace
-- Métricas y umbral: `metrics.json` en el propio repositorio de HuggingFace
+- Código de entrenamiento: `train.py` en el propio repositorio de Hugging Face
+- Métricas y umbral: `metrics.json` en el propio repositorio de Hugging Face
 - Artículo, blog o demo públicos: no disponible en la información proporcionada

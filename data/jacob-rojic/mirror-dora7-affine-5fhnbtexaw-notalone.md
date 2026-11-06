@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jacob-rojic/mirror-dora7-affine-5fhnbtexaw-notalone
+- Repositorio Hugging Face: https://huggingface.co/jacob-rojic/mirror-dora7-affine-5fhnbtexaw-notalone
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft
 - Modelo relacionado del mismo autor (misma arquitectura): https://huggingface.co/jacob-rojic/albedo-arc-jacob-rojic-w-dare
 - Perfil del autor: https://huggingface.co/jacob-rojic

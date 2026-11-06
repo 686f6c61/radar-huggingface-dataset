@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny korean_english es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla openai/whisper-tiny, publicado por el usuario mikaelaehunter en HuggingFace. El modelo parte de la arquitectura encoder-decoder transformer de Whisper en su variante "tiny", con 37.760.640 parametros totales, y se ha entrenado sobre el dataset denominado korean_english, presumiblemente orientado a transcripcion de audio con contenido en coreano e ingles. La model card no aporta informacion adicional sobre la composicion del dataset ni sobre los usos previstos.
+Whisper tiny korean_english es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla openai/whisper-tiny, publicado por el usuario mikaelaehunter en Hugging Face. El modelo parte de la arquitectura encoder-decoder transformer de Whisper en su variante "tiny", con 37.760.640 parametros totales, y se ha entrenado sobre el dataset denominado korean_english, presumiblemente orientado a transcripcion de audio con contenido en coreano e ingles. La model card no aporta informacion adicional sobre la composicion del dataset ni sobre los usos previstos.
 
 Se trata de un modelo de nicho, con apenas 50 descargas y sin likes en el momento de la consulta, lo que sugiere un experimento academico o personal mas que un artefacto listo para produccion. Su relevancia practica es limitada: sirve como ejemplo de fine-tuning de Whisper tiny para dominios bilingues concretos y como punto de partida para quien necesite un modelo ASR extremadamente ligero (menos de 40 millones de parametros, repo de 0,6 GB).
 
@@ -25,7 +25,7 @@ La licencia Apache 2.0 permite uso comercial y modificacion, pero la ausencia de
 
 El modelo hereda la arquitectura de openai/whisper-tiny: un transformer encoder-decoder disenado para reconocimiento automatico del habla, que procesa espectrogramas mel de audio y genera tokens de texto. Whisper tiny es la variante mas pequena de la familia Whisper, con unos 39 millones de parametros y una ventana de audio estandar de 30 segundos.
 
-El fine-tuning se realizo con el Trainer de HuggingFace sobre el dataset korean_english. Los hiperparametros documentados son: learning rate de 1e-05, batch de entrenamiento de 2, batch de evaluacion de 1, semilla 42, optimizador AdamW (variante fused) con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con 500 pasos de warmup y 2000 pasos totales de entrenamiento. Se registran dos puntos de evaluacion: en el paso 1000 (epoch 1,0173) la perdida de validacion fue 0,2163 con un WER de 9,9756, y en el paso 2000 (epoch 2,0346) la perdida bajo a 0,2030 y el WER a 9,7805. No se documenta el volumen de datos, la composicion del dataset ni si hubo etapas de RLHF o DPO (poco habituales en ASR).
+El fine-tuning se realizo con el Trainer de Hugging Face sobre el dataset korean_english. Los hiperparametros documentados son: learning rate de 1e-05, batch de entrenamiento de 2, batch de evaluacion de 1, semilla 42, optimizador AdamW (variante fused) con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con 500 pasos de warmup y 2000 pasos totales de entrenamiento. Se registran dos puntos de evaluacion: en el paso 1000 (epoch 1,0173) la perdida de validacion fue 0,2163 con un WER de 9,9756, y en el paso 2000 (epoch 2,0346) la perdida bajo a 0,2030 y el WER a 9,7805. No se documenta el volumen de datos, la composicion del dataset ni si hubo etapas de RLHF o DPO (poco habituales en ASR).
 
 ## Capacidades
 
@@ -62,17 +62,17 @@ No se han publicado resultados de benchmarks en la informacion disponible para c
 - VRAM estimada para inferencia: inferior a 1 GB en precision completa (37,7 millones de parametros en fp32 equivalen a unos 150 MB de pesos); con cuantizacion a int8 se reduce a unos 40 MB.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 3060, RTX 4060 o incluso una GTX 1650 pueden ejecutar el modelo con holgura. Tambien cabe en CPU.
 - Cabe en cualquier GPU consumer y en la mayoria de dispositivos de borde; no requiere A100 ni H100.
-- Opciones de despliegue: transformers (pipeline `automatic-speech-recognition`), potencialmente llama.cpp no aplica (no es un modelo de lenguaje), pero si es compatible con endpoints de HuggingFace (`endpoints_compatible`). No se documenta soporte explicito de vLLM ni TGI para ASR.
+- Opciones de despliegue: transformers (pipeline `automatic-speech-recognition`), potencialmente llama.cpp no aplica (no es un modelo de lenguaje), pero si es compatible con endpoints de Hugging Face (`endpoints_compatible`). No se documenta soporte explicito de vLLM ni TGI para ASR.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-tiny_korean_english | 37,7 M | 30 s (heredado de Whisper) | en declarado; coreano-ingles por dataset | apache-2.0 | HuggingFace |
-| openai/whisper-tiny | 39 M aprox. | 30 s | multilingue (99 idiomas) | apache-2.0 | HuggingFace |
-| openai/whisper-base | 74 M aprox. | 30 s | multilingue | apache-2.0 | HuggingFace |
-| openai/whisper-small | 244 M aprox. | 30 s | multilingue | apache-2.0 | HuggingFace |
+| whisper-tiny_korean_english | 37,7 M | 30 s (heredado de Whisper) | en declarado; coreano-ingles por dataset | apache-2.0 | Hugging Face |
+| openai/whisper-tiny | 39 M aprox. | 30 s | multilingue (99 idiomas) | apache-2.0 | Hugging Face |
+| openai/whisper-base | 74 M aprox. | 30 s | multilingue | apache-2.0 | Hugging Face |
+| openai/whisper-small | 244 M aprox. | 30 s | multilingue | apache-2.0 | Hugging Face |
 
 La comparativa se limita a la familia Whisper porque no se dispone de datos de rendimiento de alternativas especificas para el par coreano-ingles en la informacion proporcionada. El fine-tuning no documenta mejoras frente al modelo base en benchmarks publicos, por lo que la comparacion de rendimiento queda pendiente de validacion independiente.
 
@@ -89,7 +89,7 @@ La comparativa se limita a la familia Whisper porque no se dispone de datos de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mikaelaehunter/whisper-tiny_korean_english
+- Modelo en Hugging Face: https://huggingface.co/mikaelaehunter/whisper-tiny_korean_english
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

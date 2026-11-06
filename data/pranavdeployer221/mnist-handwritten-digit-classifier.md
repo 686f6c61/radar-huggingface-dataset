@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `PranavDeployer221/mnist-handwritten-digit-classifier` es un clasificador de dígitos manuscritos (0-9) implementado como red neuronal totalmente conectada con TensorFlow/Keras. Lo publica el usuario de HuggingFace PranavDeployer221 y su objetivo es resolver el problema clásico de reconocimiento de dígitos sobre imágenes en escala de grises de 28x28 píxeles, una tarea de visión por computador ampliamente utilizada como referencia docente y como banco de pruebas de pipelines de deep learning.
+El modelo `PranavDeployer221/mnist-handwritten-digit-classifier` es un clasificador de dígitos manuscritos (0-9) implementado como red neuronal totalmente conectada con TensorFlow/Keras. Lo publica el usuario de Hugging Face PranavDeployer221 y su objetivo es resolver el problema clásico de reconocimiento de dígitos sobre imágenes en escala de grises de 28x28 píxeles, una tarea de visión por computador ampliamente utilizada como referencia docente y como banco de pruebas de pipelines de deep learning.
 
 Técnicamente no es un modelo de lenguaje ni un modelo generativo: es un perceptrón multicapa (MLP) de tres capas densas (128, 64 y 10 neuronas) que recibe la imagen aplanada en un vector de 784 valores y devuelve una distribución de probabilidad Softmax sobre las diez clases. Se compila con el optimizador Adam y la función de pérdida de entropía cruzada categórica, y el autor lo despliega como aplicación interactiva con Streamlit.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PranavDeployer221/mnist-handwritten-digit-classifier | MLP denso (784-128-64-10) | 109.386 (estimado) | 28x28x1 | no disponible | HuggingFace, 0 descargas |
+| PranavDeployer221/mnist-handwritten-digit-classifier | MLP denso (784-128-64-10) | 109.386 (estimado) | 28x28x1 | no disponible | Hugging Face, 0 descargas |
 | LeNet-5 | CNN (2 capas convolucionales + 3 densas) | ~61.700 segun la literatura | 32x32x1 | dominio publico (publicacion academica) | implementaciones multiples; no es un peso publicado unico |
 | MLPClassifier de scikit-learn | MLP configurable | configurable por el usuario | vector de caracteristicas | licencia BSD (scikit-learn) | libreria, no un modelo con pesos publicados |
 | Clasificadores de dígitos basados en Vision Transformer | Transformer con parches | millones de parametros segun configuracion | tipicamente 28x28 o mayor | variable segun el repositorio | no disponible como comparativa directa en esta busqueda |
@@ -97,6 +97,6 @@ La comparacion directa es limitada porque el modelo consultado no publica result
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PranavDeployer221/mnist-handwritten-digit-classifier
+- Modelo en Hugging Face: https://huggingface.co/PranavDeployer221/mnist-handwritten-digit-classifier
 
 Nota: la busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo ni sobre su autor. Los resultados obtenidos correspondian a paginas sin relacion con el contenido de la ficha (localizadores de tiendas y mapas), por lo que se han descartado. No se dispone de paper, blog, repositorio de codigo ni demo publica asociados al modelo en la informacion consultada.

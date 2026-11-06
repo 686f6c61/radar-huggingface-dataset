@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio presenta `simple-matching`, una implementacion compacta y personalizada de la arquitectura CoCa (el autor escribe "Coca") orientada a tareas de matching. La proporciona el usuario `kennynakamura` en HuggingFace y no esta pensada como un modelo preentrenado de produccion. Incluye un checkpoint de inicializacion valido de 49.600 parametros, adecuado para revision de codigo, pruebas de humo y experimentos controlados.
+Este repositorio presenta `simple-matching`, una implementacion compacta y personalizada de la arquitectura CoCa (el autor escribe "Coca") orientada a tareas de matching. La proporciona el usuario `kennynakamura` en Hugging Face y no esta pensada como un modelo preentrenado de produccion. Incluye un checkpoint de inicializacion valido de 49.600 parametros, adecuado para revision de codigo, pruebas de humo y experimentos controlados.
 
 La arquitectura utiliza atencion lineal y co-atencion, activacion mish y normalizacion instancenorm. No se han publicado resultados de benchmarks ni se aporta un entrenamiento completo; todos los datos sobre longitud de contexto, idiomas y dataset de entrenamiento no estan disponibles.
 
@@ -40,7 +40,7 @@ No hay informacion sobre datos de entrenamiento, numero de tokens, composicion d
 - Punto de partida para investigacion en CoCa: la configuracion tiny permite depurar el pipeline de entrenamiento y experimentar con datasets pequenos antes de escalar a arquitecturas mayores.
 - Estudios de ablation sobre atencion lineal y co-atencion: al ser un modelo muy compacto, se puede modificar y comparar variantes con un presupuesto de computo minimo.
 - Educacion en arquitecturas multimodales: permite inspeccionar una implementacion completa de CoCa, incluyendo la fusion por co-atencion, y comprender sus componentes en un entorno local.
-- Pruebas de integracion para adaptadores de HuggingFace: sirve para validar que un adaptador personalizado sabe cargar un safetensors con esta estructura no estandar.
+- Pruebas de integracion para adaptadores de Hugging Face: sirve para validar que un adaptador personalizado sabe cargar un safetensors con esta estructura no estandar.
 - Evaluacion de estabilidad de inicializacion y optimizadores: con `training_args.json` se puede estudiar como afectan RMSprop y el warmup lineal a la perdida sobre un dataset propio.
 
 ## Benchmarks y rendimiento
@@ -66,11 +66,11 @@ No disponible. En la informacion proporcionada no se mencionan modelos comparabl
 - No se aportan resultados de benchmarks ni evidencia de rendimiento.
 - Los pesos inicializados aleatoriamente pueden producir salidas sin significado; cualquier resultado debe tratarse como ruido.
 - Faltan datos sobre longitud de contexto, idiomas, datos de entrenamiento y cuantizacion.
-- La implementacion es personalizada; las APIs de carga genericas de HuggingFace no funcionan sin un adaptador.
+- La implementacion es personalizada; las APIs de carga genericas de Hugging Face no funcionan sin un adaptador.
 - La licencia Apache 2.0 permite uso comercial y modificacion, pero el artefacto no ofrece valor funcional sin entrenamiento adicional. Los terminos de los datasets externos deben revisarse por separado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kennynakamura/simple-matching
+- Hugging Face: https://huggingface.co/kennynakamura/simple-matching
 - Papers o documentacion tecnica adicional: no disponible
 - Blog o demos: no disponible

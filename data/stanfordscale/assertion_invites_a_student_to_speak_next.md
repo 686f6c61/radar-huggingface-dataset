@@ -80,9 +80,9 @@ No se ha encontrado informacion publica de benchmarks de modelos directamente co
 
 | Modelo | Tarea | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `StanfordSCALE/assertion_invites_a_student_to_speak_next` | Clasificacion binaria de invitacion a hablar | 109,5 M | 384 tokens (encoder base) | F1 test 0,837; ROC-AUC 0,963 | No disponible | HuggingFace, 0 descargas |
-| `sentence-transformers/paraphrase-mpnet-base-v2` | Embeddings de frases (sin cabecera de clasificacion) | ~109 M | 384 tokens | No aplica metrica de clasificacion; es el modelo base | Apache-2.0 (segun el modelo base) | HuggingFace |
-| Otros clasificadores de aserciones del programa EduBehaviors (misma coleccion `StanfordSCALE`) | Clasificacion binaria de aserciones de discurso | Del orden de 109 M, segun el mismo esquema SetFit | 384 tokens | No disponible en la informacion proporcionada | No disponible | HuggingFace |
+| `StanfordSCALE/assertion_invites_a_student_to_speak_next` | Clasificacion binaria de invitacion a hablar | 109,5 M | 384 tokens (encoder base) | F1 test 0,837; ROC-AUC 0,963 | No disponible | Hugging Face, 0 descargas |
+| `sentence-transformers/paraphrase-mpnet-base-v2` | Embeddings de frases (sin cabecera de clasificacion) | ~109 M | 384 tokens | No aplica metrica de clasificacion; es el modelo base | Apache-2.0 (segun el modelo base) | Hugging Face |
+| Otros clasificadores de aserciones del programa EduBehaviors (misma coleccion `StanfordSCALE`) | Clasificacion binaria de aserciones de discurso | Del orden de 109 M, segun el mismo esquema SetFit | 384 tokens | No disponible en la informacion proporcionada | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -93,12 +93,12 @@ No se ha encontrado informacion publica de benchmarks de modelos directamente co
 - Solo ingles: cualquier uso sobre transcripciones en castellano u otros idiomas queda fuera del alcance declarado y no ha sido evaluado.
 - Validacion limitada al mismo dataset (`assertions_llm_annotated_talkmoves`): no hay evaluacion de generalizacion a otros contextos educativos, niveles, asignaturas o paises, por lo que el rendimiento puede degradarse fuera de la distribucion de TalkMoves.
 - La licencia no esta declarada. Antes de cualquier uso comercial o de redistribucion es necesario aclarar los terminos con el autor; el modelo base `paraphrase-mpnet-base-v2` se distribuye bajo Apache-2.0, pero la model card de este clasificador no especifica licencia.
-- Modelo sin adopcion registrada en HuggingFace (0 descargas, 0 likes) y creado en octubre de 2026, sin validacion independiente por terceros.
+- Modelo sin adopcion registrada en Hugging Face (0 descargas, 0 likes) y creado en octubre de 2026, sin validacion independiente por terceros.
 - No sustituye la codificacion humana en contextos de evaluacion docente con consecuencias laborales: se recomienda uso como apoyo o preanotacion, no como decision automatica.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_invites_a_student_to_speak_next
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_invites_a_student_to_speak_next
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Corpus original TalkMoves: https://github.com/SumnerLab/TalkMoves

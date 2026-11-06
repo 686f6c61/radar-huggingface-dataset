@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `TokenBender/glm47-bank-account-official-grpo20` es un adaptador LoRA (librería PEFT) entrenado con aprendizaje por refuerzo mediante el algoritmo GRPO (Group Relative Policy Optimization) sobre el modelo base `zai-org/GLM-4.7-Flash`. El nombre del repositorio sugiere que el entrenamiento se ha orientado a tareas de generación de código con verificación de ejecución, posiblemente relacionadas con la gestión de cuentas bancarias simuladas. El adaptador está diseñado para la generación de texto y código, y se distribuye con acceso restringido en HuggingFace.
+El modelo `TokenBender/glm47-bank-account-official-grpo20` es un adaptador LoRA (librería PEFT) entrenado con aprendizaje por refuerzo mediante el algoritmo GRPO (Group Relative Policy Optimization) sobre el modelo base `zai-org/GLM-4.7-Flash`. El nombre del repositorio sugiere que el entrenamiento se ha orientado a tareas de generación de código con verificación de ejecución, posiblemente relacionadas con la gestión de cuentas bancarias simuladas. El adaptador está diseñado para la generación de texto y código, y se distribuye con acceso restringido en Hugging Face.
 
 Este modelo es relevante porque explora la aplicación de GRPO sobre un modelo de código de última generación, buscando mejorar la capacidad de razonamiento y ejecución en tareas concretas. Al ser un adaptador LoRA, su tamaño es relativamente pequeño (3.2 GB en el repositorio) y puede integrarse sobre el modelo base sin necesidad de reentrenar todos los parámetros. Sin embargo, al tratarse de un modelo experimental con cero descargas y sin información pública detallada, su utilidad práctica aún no está validada.
 
-La ficha recoge únicamente los datos disponibles en la tarjeta de HuggingFace y los resultados de búsqueda web. Muchos parámetros técnicos no están publicados, por lo que se indican como «no disponible» cuando corresponde.
+La ficha recoge únicamente los datos disponibles en la tarjeta de Hugging Face y los resultados de búsqueda web. Muchos parámetros técnicos no están publicados, por lo que se indican como «no disponible» cuando corresponde.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - El adaptador LoRA tiene un tamaño de 3.2 GB, pero requiere cargar el modelo base `GLM-4.7-Flash` para funcionar. El tamaño del modelo base no se ha especificado, por lo que la VRAM necesaria depende de él.
 - Se recomienda una GPU con al menos 16 GB de VRAM para inferencia en FP16, aunque podría ser mayor si el modelo base es grande (se desconoce su número de parámetros).
 - Para uso en consumer GPU, sería necesario cuantizar el modelo base (por ejemplo, con GGUF o AWQ) y cargar el adaptador sobre él.
-- Opciones de despliegue: al ser un adaptador PEFT, puede integrarse con frameworks como HuggingFace Transformers, vLLM (si soporta LoRA), o convertirse a GGUF para llama.cpp (si el modelo base lo permite).
+- Opciones de despliegue: al ser un adaptador PEFT, puede integrarse con frameworks como Hugging Face Transformers, vLLM (si soporta LoRA), o convertirse a GGUF para llama.cpp (si el modelo base lo permite).
 - No se dispone de datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
@@ -63,7 +63,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 ## Limitaciones y advertencias
 
 - Modelo experimental con cero descargas y sin validación externa: su rendimiento y fiabilidad no están demostrados.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en producción.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en producción.
 - Licencia no especificada: no se puede garantizar el uso comercial ni la redistribución.
 - Riesgo de alucinación y errores en código: al ser un modelo de generación de texto, puede producir código incorrecto o inseguro, especialmente si no se valida la ejecución.
 - Dependencia del modelo base: las limitaciones de `GLM-4.7-Flash` (sesgos, idiomas soportados, contexto) se heredan en el adaptador, pero no se conocen en detalle.
@@ -71,5 +71,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/TokenBender/glm47-bank-account-official-grpo20)
+- [Página del modelo en Hugging Face](https://huggingface.co/TokenBender/glm47-bank-account-official-grpo20)
 - [Blog de Z.ai sobre GLM-4.7](https://z.ai/blog/glm-4.7) (referencia al modelo base)

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Yiyang-hou/whisper-tiny-russian",
+  "slug": "yiyang-hou-whisper-tiny-russian",
+  "author": "Yiyang-hou",
+  "url": "https://huggingface.co/Yiyang-hou/whisper-tiny-russian",
+  "created_at": "2026-11-02T21:19:18.000Z",
+  "updated_at": "2026-11-02T21:30:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "hf-asr-leaderboard",
+    "generated_from_trainer",
+    "en",
+    "dataset:naharte/russian_english",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 302167467,
+  "storage_human": "302 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Russian English",
+      "metric": "Wer",
+      "value": 9.941520467836257
+    }
+  ],
+  "sources": [
+    {
+      "title": "Yiyang-hou/whisper-tiny-russian · Hugging Face",
+      "url": "https://huggingface.co/Yiyang-hou/whisper-tiny-russian",
+      "snippet": "Automatic Speech Recognition model with 37.8M parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "README.md · Yiyang-hou/whisper-tiny-russian at main",
+      "url": "https://huggingface.co/Yiyang-hou/whisper-tiny-russian/blob/main/README.md",
+      "snippet": "Instructions to use Yiyang-hou/whisper-tiny-russian with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Yiyang-hou/whisper-tiny-russian with Transformers:"
+    }
+  ]
+}

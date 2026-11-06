@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio VoxHU/voxhu-f5-checkpoints contiene un conjunto de pesos de modelo, presumiblemente relacionados con la arquitectura F5, pero la información pública disponible es extremadamente limitada. No se ha publicado documentación técnica, descripción del modelo ni datos de entrenamiento en la página de HuggingFace. El autor es VoxHU, y el repositorio se creó el 2 de septiembre de 2026, con una última actualización el 4 de septiembre de 2026.
+El repositorio VoxHU/voxhu-f5-checkpoints contiene un conjunto de pesos de modelo, presumiblemente relacionados con la arquitectura F5, pero la información pública disponible es extremadamente limitada. No se ha publicado documentación técnica, descripción del modelo ni datos de entrenamiento en la página de Hugging Face. El autor es VoxHU, y el repositorio se creó el 2 de septiembre de 2026, con una última actualización el 4 de septiembre de 2026.
 
 El tamaño del repositorio es de 1382.2 GB, lo que sugiere que alberga un gran número de checkpoints o pesos de un modelo de tamaño considerable. Sin embargo, no se puede determinar la arquitectura exacta, el número de parámetros, la longitud de contexto ni las capacidades del modelo a partir de la información disponible. Tampoco se ha especificado la licencia ni los idiomas soportados.
 
@@ -62,4 +62,4 @@ No disponible. No se dispone de información suficiente para comparar este model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VoxHU/voxhu-f5-checkpoints
+- Hugging Face: https://huggingface.co/VoxHU/voxhu-f5-checkpoints

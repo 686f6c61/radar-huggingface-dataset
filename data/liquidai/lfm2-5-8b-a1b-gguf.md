@@ -68,7 +68,7 @@ No se dispone de datos comparativos con otros modelos en la informacion proporci
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF
 - Modelo base (no cuantizado): https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
 - Blog oficial de Liquid AI sobre LFM2.5-8B-A1B: https://www.liquid.ai/blog/lfm2-5-8b-a1b
 - Documentacion oficial del modelo: https://docs.liquid.ai/lfm/models/lfm25-8b-a1b

@@ -56,8 +56,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Personalizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-LongLaMP3-user-LoRA | 131k por adaptador | 128k | Si, por usuario (1822 adaptadores) | Llama 3.1 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | No | Llama 3.1 | HuggingFace |
+| Llama-3.1-8B-Instruct-LongLaMP3-user-LoRA | 131k por adaptador | 128k | Si, por usuario (1822 adaptadores) | Llama 3.1 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | No | Llama 3.1 | Hugging Face |
 | Fine-tuning completo por usuario | 8B por usuario | 128k | Si, por usuario | Llama 3.1 | Requiere entrenamiento y almacenamiento masivo |
 
 No se conocen otros repositorios publicos de adaptadores LoRA por usuario para LongLaMP-3 con los que comparar directamente.
@@ -71,8 +71,8 @@ No se conocen otros repositorios publicos de adaptadores LoRA por usuario para L
 - Caveats para produccion: cada adaptador es especifico de un usuario y no generaliza a otros. Almacenar 1822 adaptadores requiere 24,9 GB y una gestion dinamica de carga. No hay evaluacion publicada del rendimiento real en la tarea, por lo que se desconoce la calidad de las resenas generadas. El modelo base no esta incluido y debe descargarse por separado.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/ssonna/Llama-3.1-8B-Instruct-LongLaMP3-user-LoRA
-- Modelo base en HuggingFace: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/ssonna/Llama-3.1-8B-Instruct-LongLaMP3-user-LoRA
+- Modelo base en Hugging Face: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Model card de Llama 3.1 8B: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Repositorio GitHub de Llama: https://github.com/meta-llama/llama-models
 - Qualcomm AI Hub (modelo cuantizado): https://aihub.qualcomm.com/models/llama_v3_1_8b_instruct

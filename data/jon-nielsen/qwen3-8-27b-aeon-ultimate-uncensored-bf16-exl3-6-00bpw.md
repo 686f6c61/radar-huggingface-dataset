@@ -92,8 +92,8 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion 6-bit: https://huggingface.co/Jon-Nielsen/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16-exl3-6.00bpw
-- Repositorio HuggingFace de la cuantizacion 4-bit: https://huggingface.co/Jon-Nielsen/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16-exl3-4.00bpw
+- Repositorio Hugging Face de la cuantizacion 6-bit: https://huggingface.co/Jon-Nielsen/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16-exl3-6.00bpw
+- Repositorio Hugging Face de la cuantizacion 4-bit: https://huggingface.co/Jon-Nielsen/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16-exl3-4.00bpw
 - Modelo base BF16: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper arxiv 2406.11717: https://arxiv.org/abs/2406.11717

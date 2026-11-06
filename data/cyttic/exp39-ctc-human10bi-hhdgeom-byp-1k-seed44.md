@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-byp-1k-seed44` es un checkpoint de investigación publicado en HuggingFace por el usuario `cyttic`. Por su nomenclatura (prefijo `exp39`, sufijo `ctc`, referencia a `human10bi`, `hhdgeom`, `byp-1k` y `seed44`) y por su reducido tamaño (87,3 millones de parámetros, 0,3 GB en el repositorio), se trata con alta probabilidad de un modelo acústico de reconocimiento de voz (ASR) basado en CTC, entrenado en un experimento concreto con una semilla fija (44) y un conjunto de datos o configuración identificados por los tokens del nombre. El tag `arxiv:1910.09700` que aparece en los metadatos corresponde al artículo de Lacoste et al. sobre el impacto ambiental del aprendizaje automático, citado en la plantilla estándar de model card; no es un paper propio del modelo.
+El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-byp-1k-seed44` es un checkpoint de investigación publicado en Hugging Face por el usuario `cyttic`. Por su nomenclatura (prefijo `exp39`, sufijo `ctc`, referencia a `human10bi`, `hhdgeom`, `byp-1k` y `seed44`) y por su reducido tamaño (87,3 millones de parámetros, 0,3 GB en el repositorio), se trata con alta probabilidad de un modelo acústico de reconocimiento de voz (ASR) basado en CTC, entrenado en un experimento concreto con una semilla fija (44) y un conjunto de datos o configuración identificados por los tokens del nombre. El tag `arxiv:1910.09700` que aparece en los metadatos corresponde al artículo de Lacoste et al. sobre el impacto ambiental del aprendizaje automático, citado en la plantilla estándar de model card; no es un paper propio del modelo.
 
 La model card está prácticamente vacía: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, datos de entrenamiento, evaluación, hiperparámetros) aparecen como `[More Information Needed]`. La única información fiable disponible es la licencia MIT, el número de parámetros declarado en el archivo safetensors y el tamaño del repositorio. No hay descargas ni likes, lo que confirma que es un artefacto de experimentación interno más que un modelo destinado a uso público.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / audio | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cyttic/exp39-ctc-human10bi-hhdgeom-byp-1k-seed44 | 87,3 M | No disponible | MIT | HuggingFace, sin descargas |
-| Whisper tiny (OpenAI) | ~39 M | 30 s por ventana | MIT | HuggingFace, ampliamente usado |
-| wav2vec 2.0 base (Meta) | ~95 M | Audio variable | MIT | HuggingFace, ampliamente usado |
-| WavLM base | ~94 M | Audio variable | MIT | HuggingFace, ampliamente usado |
+| cyttic/exp39-ctc-human10bi-hhdgeom-byp-1k-seed44 | 87,3 M | No disponible | MIT | Hugging Face, sin descargas |
+| Whisper tiny (OpenAI) | ~39 M | 30 s por ventana | MIT | Hugging Face, ampliamente usado |
+| wav2vec 2.0 base (Meta) | ~95 M | Audio variable | MIT | Hugging Face, ampliamente usado |
+| WavLM base | ~94 M | Audio variable | MIT | Hugging Face, ampliamente usado |
 
 La comparación es aproximada: no se dispone de métricas del modelo `cyttic` para contrastar WER ni latencia. Los tres modelos de referencia son alternativas documentadas y con benchmarks públicos en tareas ASR, mientras que el modelo analizado carece de evaluación publicada.
 
@@ -74,14 +74,14 @@ La comparación es aproximada: no se dispone de métricas del modelo `cyttic` pa
 - Riesgo de alucinación y errores de transcripción: no cuantificado; en ASR CTC los errores típicos incluyen sustituciones, omisiones e inserciones, pero no se han medido para este checkpoint.
 - Idiomas soportados no documentados: no se puede asumir cobertura multilingüe ni siquiera monolingüe sin verificación empírica.
 - Licencia MIT: permite uso comercial y modificación, pero al no haber documentación sobre el dataset de entrenamiento, el usuario asume el riesgo de posibles restricciones heredadas de los datos originales.
-- Sin pipeline declarado en HuggingFace: la carga directa con `pipeline()` puede fallar; será necesario inspeccionar la configuración del checkpoint.
+- Sin pipeline declarado en Hugging Face: la carga directa con `pipeline()` puede fallar; será necesario inspeccionar la configuración del checkpoint.
 - Cero descargas y cero likes: no hay evidencia de uso en producción ni de validación por la comunidad.
 - El tag `arxiv:1910.09700` corresponde a la calculadora de impacto ambiental citada en la plantilla, no a un paper del modelo; no debe interpretarse como referencia técnica.
 - Fecha de creación futura (2026-10-26) en los metadatos: posible error del autor o del sistema; conviene verificar la integridad del repositorio antes de usarlo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-byp-1k-seed44
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-byp-1k-seed44
 - Paper citado en el tag (impacto ambiental, no del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
-- Repositorio del autor en HuggingFace: https://huggingface.co/cyttic
+- Repositorio del autor en Hugging Face: https://huggingface.co/cyttic

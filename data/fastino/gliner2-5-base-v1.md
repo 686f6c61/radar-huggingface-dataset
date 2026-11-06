@@ -83,7 +83,7 @@ La familia GLiNER2.5 comparte la misma API publica; la version base es el checkp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fastino/gliner2.5-base-v1
+- Modelo en Hugging Face: https://huggingface.co/fastino/gliner2.5-base-v1
 - Paper (arXiv): https://arxiv.org/abs/2507.18546
 - Repositorio GitHub de GLiNER2: https://github.com/fastino-ai/GLiNER2
 - Sitio de Fastino Labs: https://fastino.ai/

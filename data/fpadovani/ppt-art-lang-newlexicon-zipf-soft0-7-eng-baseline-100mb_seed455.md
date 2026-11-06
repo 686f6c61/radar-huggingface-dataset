@@ -4,7 +4,7 @@
 
 El modelo `fpadovani/ppt-art-lang-newlexicon-zipf-soft0.7-eng-baseline-100mb_seed455` es un modelo de lenguaje pequeño (86,5 millones de parámetros) desarrollado por fpadovani, un investigador asociado a la Universidad de Groninga. Se trata de un fine-tuning del modelo base `goldfish-models/eng_latn_100mb`, que pertenece a la familia Goldfish de modelos monolingües. El nombre sugiere que forma parte de una serie de experimentos sobre lenguajes artificiales y distribución de Zipf, aunque no se proporcionan detalles sobre el propósito exacto.
 
-El modelo está entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace. Está diseñado para generación de texto y es compatible con la infraestructura estándar de Transformers. Su tamaño reducido lo hace adecuado para entornos con recursos limitados, aunque su relevancia actual es principalmente experimental, dado que no se han publicado benchmarks ni documentación detallada.
+El modelo está entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face. Está diseñado para generación de texto y es compatible con la infraestructura estándar de Transformers. Su tamaño reducido lo hace adecuado para entornos con recursos limitados, aunque su relevancia actual es principalmente experimental, dado que no se han publicado benchmarks ni documentación detallada.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace - fpadovani/ppt-art-lang-newlexicon-zipf-soft0.7-eng-baseline-100mb_seed455](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-soft0.7-eng-baseline-100mb_seed455)
+- [Hugging Face - fpadovani/ppt-art-lang-newlexicon-zipf-soft0.7-eng-baseline-100mb_seed455](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-soft0.7-eng-baseline-100mb_seed455)
 - [Modelo similar: ppt-art-lang-newlexicon-nld-baseline-100mb_seed3407](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-nld-baseline-100mb_seed3407)
 - [Modelo similar: ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed3407](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed3407)
 - [LLM Explorer - ficha del modelo](https://llm-explorer.com/model/fpadovani%2Fppt-art-lang-newlexicon-eng-baseline-100mb_seed10,5wPQ4CHzHD2weoAbCHyJ2f)

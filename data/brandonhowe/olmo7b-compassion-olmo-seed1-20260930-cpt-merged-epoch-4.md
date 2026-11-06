@@ -18,7 +18,7 @@ La relevancia practica de esta ficha es limitada pero clara: se trata de un expe
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | Solo BF16 (pesos fusionados con `save_method="merged_16bit"`); no se publican versiones GGUF, int8 ni int4 |
 | Idiomas soportados | No disponibles |
-| Licencia | No disponible en la ficha de HuggingFace; el modelo base tiene su propia licencia, no confirmada en la informacion proporcionada |
+| Licencia | No disponible en la ficha de Hugging Face; el modelo base tiene su propia licencia, no confirmada en la informacion proporcionada |
 | Formato de pesos | safetensors (8 shards, BF16) |
 | Tipo de modelo | Text-generation, continued pretraining |
 | Modelo base | allenai/Olmo-3-1025-7B |
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| Olmo7b-compassion-olmo-seed1-20260930-CPT-merged-epoch-4 | 7.298.011.136 | No disponible | Continued pretraining sobre compassion_12185_cleaned (epoca 4, paso 1500) | No disponible | HuggingFace, safetensors BF16, 0 descargas | Sin benchmarks publicados |
-| allenai/Olmo-3-1025-7B (modelo base) | No disponible en la informacion proporcionada | No disponible | Modelo base de la familia OLMo 3 | No disponible en la informacion proporcionada | HuggingFace | No disponible en la informacion proporcionada |
+| Olmo7b-compassion-olmo-seed1-20260930-CPT-merged-epoch-4 | 7.298.011.136 | No disponible | Continued pretraining sobre compassion_12185_cleaned (epoca 4, paso 1500) | No disponible | Hugging Face, safetensors BF16, 0 descargas | Sin benchmarks publicados |
+| allenai/Olmo-3-1025-7B (modelo base) | No disponible en la informacion proporcionada | No disponible | Modelo base de la familia OLMo 3 | No disponible en la informacion proporcionada | Hugging Face | No disponible en la informacion proporcionada |
 | Otros modelos abiertos de ~7B | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoria. Cualquier comparacion de rendimiento requeriria ejecutar evaluaciones propias sobre este modelo, su base y los candidatos elegidos.
@@ -86,7 +86,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 - Sesgo de dominio: el modelo esta expuesto de forma intensiva a un unico dataset de contenido compasivo, lo que puede sesgar el registro, el vocabulario y el tono de las respuestas hacia ese estilo, incluso cuando no es apropiado.
 - Alucinacion: no hay informacion disponible sobre tasas de alucinacion; se aplican los riesgos habituales de un modelo generativo de 7B, agravados por la falta de evaluacion.
 - Idiomas: no se declara ningun idioma soportado, por lo que no se puede garantizar un comportamiento correcto fuera de la lengua dominante del dataset de entrenamiento.
-- Licencia: no declarada en la ficha de HuggingFace. Sin una licencia explicita no hay autorizacion clara para uso comercial; ademas, la licencia del modelo base y la del dataset deben verificarse por separado antes de cualquier despliegue en produccion.
+- Licencia: no declarada en la ficha de Hugging Face. Sin una licencia explicita no hay autorizacion clara para uso comercial; ademas, la licencia del modelo base y la del dataset deben verificarse por separado antes de cualquier despliegue en produccion.
 - Falta de validacion comunitaria: cero descargas y cero likes en el momento de la consulta, sin issues ni evaluaciones de terceros.
 - Limitaciones de contexto: la longitud de contexto no se especifica, de modo que no se puede planificar el uso con entradas largas.
 - Formatos: al publicarse solo en BF16 y sin GGUF, el despliegue en entornos de bajos recursos requiere cuantizacion manual, con el consiguiente riesgo de perdida de calidad no medida.
@@ -94,9 +94,9 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrandonHowe/Olmo7b-compassion-olmo-seed1-20260930-CPT-merged-epoch-4
+- Modelo en Hugging Face: https://huggingface.co/BrandonHowe/Olmo7b-compassion-olmo-seed1-20260930-CPT-merged-epoch-4
 - Modelo base: https://huggingface.co/allenai/Olmo-3-1025-7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/CompassioninMachineLearning/compassion_12185_cleaned
-- Repositorio del autor en HuggingFace: https://huggingface.co/BrandonHowe
+- Repositorio del autor en Hugging Face: https://huggingface.co/BrandonHowe
 - Unsloth (utilidad de fusion empleada, `save_pretrained_merged`): https://github.com/unslothai/unsloth
 - Paper, blog, repositorio o demo adicionales: no disponibles en los resultados de busqueda proporcionados (los resultados obtenidos no guardan relacion con el modelo).

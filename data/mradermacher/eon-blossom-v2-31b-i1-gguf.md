@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Eon-Blossom-V2-31B-i1-GGUF es un repositorio de cuantizaciones en formato GGUF del modelo base Cyclone-Labs/Eon-Blossom-V2-31B, publicado por el usuario mradermacher. No se trata por tanto de un modelo entrenado desde cero, sino de una conversión y cuantización de pesos ya existentes: el autor declara explícitamente en la model card que son "weighted/imatrix quants of https://huggingface.co/Cyclone-Labs/Eon-Blossom-V2-31B". El modelo subyacente tiene 30.697.345.596 parámetros (unos 30,7 B), según el dato de safetensors indicado en la ficha de HuggingFace, y está orientado a uso conversacional.
+Eon-Blossom-V2-31B-i1-GGUF es un repositorio de cuantizaciones en formato GGUF del modelo base Cyclone-Labs/Eon-Blossom-V2-31B, publicado por el usuario mradermacher. No se trata por tanto de un modelo entrenado desde cero, sino de una conversión y cuantización de pesos ya existentes: el autor declara explícitamente en la model card que son "weighted/imatrix quants of https://huggingface.co/Cyclone-Labs/Eon-Blossom-V2-31B". El modelo subyacente tiene 30.697.345.596 parámetros (unos 30,7 B), según el dato de safetensors indicado en la ficha de Hugging Face, y está orientado a uso conversacional.
 
 La relevancia de esta publicación es práctica: pone a disposición del ecosistema local una batería de 24 niveles de cuantización (desde IQ1_S hasta Q6_K), lo que permite ejecutar un modelo de ~31 B en hardware muy distinto, desde GPUs de gama media con 12-16 GB de VRAM hasta estaciones de trabajo con 24 GB o más, usando llama.cpp u otros runtimes compatibles con GGUF. La cuantización se ha realizado con matrices de importancia (imatrix), técnica que busca minimizar la pérdida de calidad asignando precisión según la relevancia de cada peso en la activación.
 
-Ahora bien, la información pública disponible es muy escasa: no hay datos sobre arquitectura, longitud de contexto, idiomas, licencia ni resultados de benchmarks, y el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta. La búsqueda web asociada no devolvió ningún material relacionado con el modelo (los resultados eran sobre espectáculos de medio tiempo de la Super Bowl), por lo que esta ficha se limita a lo verificable en la model card y en los metadatos de HuggingFace.
+Ahora bien, la información pública disponible es muy escasa: no hay datos sobre arquitectura, longitud de contexto, idiomas, licencia ni resultados de benchmarks, y el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta. La búsqueda web asociada no devolvió ningún material relacionado con el modelo (los resultados eran sobre espectáculos de medio tiempo de la Super Bowl), por lo que esta ficha se limita a lo verificable en la model card y en los metadatos de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -29,7 +29,7 @@ Ahora bien, la información pública disponible es muy escasa: no hay datos sobr
 
 No se dispone de informacion sobre la arquitectura del modelo base. La model card del repositorio GGUF no incluye ningun dato al respecto: ni tipo de transformer, ni atencion utilizada, ni si se trata de un modelo denso o de mezcla de expertos. El unico dato estructural fiable es el recuento de parametros (30.697.345.596), que situa al modelo en la franja de ~31 B, coherente con el nombre "31B" del identificador. Tampoco hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares.
 
-Lo unico documentado es el proceso de cuantizacion, que si es verificable a partir de los metadatos de la model card: se trata de cuantizaciones ponderadas con matriz de importancia (imatrix), generadas con la version 2 del pipeline de cuantizacion (quantize_version: 2), con output_tensor_quantised: 1 y convert_type: hf, es decir, partiendo de pesos en formato HuggingFace y convirtiendolos a GGUF. La lista de cuantizaciones cubre tanto la familia clasica K-quant (Q2_K a Q6_K) como la familia I-quant (IQ1 a IQ4), que emplea cuantizacion de precision mixta basada en la importancia de los tensores para conservar mejor la calidad en tamanos muy comprimidos.
+Lo unico documentado es el proceso de cuantizacion, que si es verificable a partir de los metadatos de la model card: se trata de cuantizaciones ponderadas con matriz de importancia (imatrix), generadas con la version 2 del pipeline de cuantizacion (quantize_version: 2), con output_tensor_quantised: 1 y convert_type: hf, es decir, partiendo de pesos en formato Hugging Face y convirtiendolos a GGUF. La lista de cuantizaciones cubre tanto la familia clasica K-quant (Q2_K a Q6_K) como la familia I-quant (IQ1 a IQ4), que emplea cuantizacion de precision mixta basada en la importancia de los tensores para conservar mejor la calidad en tamanos muy comprimidos.
 
 ## Capacidades
 
@@ -41,7 +41,7 @@ Lo unico documentado es el proceso de cuantizacion, que si es verificable a part
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; no se declara lista de idiomas.
 - Modos especiales (thinking, razonamiento extendido, audio): no disponible.
-- Compatibilidad de despliegue: el repositorio esta etiquetado como "endpoints_compatible", lo que sugiere que puede servirse a traves de HuggingFace Inference Endpoints con backend compatible con GGUF.
+- Compatibilidad de despliegue: el repositorio esta etiquetado como "endpoints_compatible", lo que sugiere que puede servirse a traves de Hugging Face Inference Endpoints con backend compatible con GGUF.
 
 ## Casos de uso
 
@@ -51,7 +51,7 @@ Dado que no hay informacion documentada sobre el modelo base, los casos de uso q
 - Prototipado y evaluacion de calidad en local: la disponibilidad de 24 niveles de cuantizacion permite comparar la degradacion de calidad entre IQ1_S (~6 GB) y Q6_K (~25 GB) sobre el mismo modelo base, util para decidir el punto de equilibrio entre calidad y coste de hardware.
 - Generacion de texto y redaccion asistida por lotes: con llama.cpp o un servidor compatible se puede procesar documentacion, resumir informes o reescribir textos en un pipeline por lotes, eligiendo la cuantizacion segun la VRAM disponible.
 - Despliegue en hardware de gama media: las variantes IQ2/IQ3 (aproximadamente 8-15 GB) permiten ejecutar el modelo en GPUs consumer de 12-16 GB, ampliando el acceso a modelos de esta escala sin necesidad de hardware profesional.
-- Fine-tuning o destilacion aguas abajo: al existir los pesos base en HuggingFace, este repositorio puede servir como referencia de inferencia cuantizada para validar un modelo ajustado antes de generar su propia version GGUF.
+- Fine-tuning o destilacion aguas abajo: al existir los pesos base en Hugging Face, este repositorio puede servir como referencia de inferencia cuantizada para validar un modelo ajustado antes de generar su propia version GGUF.
 - Educacion e investigacion en cuantizacion: el conjunto de 24 cuantizaciones, generadas con imatrix, constituye un material util para estudiar el impacto de las matrices de importancia en la perplejidad y en tareas de generacion, comparando familias K-quant frente a I-quant.
 - Backend de aplicaciones de escritorio: integrable en herramientas tipo LM Studio, Ollama o koboldcpp para asistentes locales de redaccion, analisis de documentos o generacion de borradores sin conexion.
 
@@ -80,7 +80,7 @@ Los tamanos que se indican a continuacion son estimaciones calculadas aplicando 
 - Cabe en GPU consumer: las cuantizaciones de IQ3 hacia abajo entran en tarjetas de 16 GB (RTX 4080, RTX 4060 Ti 16 GB, RX 7900 GRE). Las de Q4 caben con margen ajustado en 24 GB (RTX 3090, RTX 4090, RX 7900 XTX). Q5 y Q6 requieren 32 GB (RTX 5090) o reparto entre dos GPUs.
 - GPU profesionales: A100 40 GB, A100 80 GB, H100 80 GB y L40S 48 GB pueden alojar cualquier cuantizacion de este repositorio con contexto amplio.
 - Ejecucion en CPU y RAM: las variantes IQ2/IQ3 permiten inferencia por CPU con 16-32 GB de RAM del sistema, a costa de una velocidad muy inferior; llama.cpp permite repartir capas entre GPU y CPU (offloading parcial).
-- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama (importando el GGUF mediante Modelfile), LM Studio, koboldcpp, text-generation-webui, llama-cpp-python; el soporte de GGUF en vLLM es experimental y no cubre necesariamente todos los tipos de cuantizacion I-quant. El tag "endpoints_compatible" sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama (importando el GGUF mediante Modelfile), LM Studio, koboldcpp, text-generation-webui, llama-cpp-python; el soporte de GGUF en vLLM es experimental y no cubre necesariamente todos los tipos de cuantizacion I-quant. El tag "endpoints_compatible" sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dm_qwen4b_emulator es un perceptron multicapa (MLP) minimo publicado por el usuario chewwt en HuggingFace. A pesar del nombre, no es un modelo de lenguaje ni tiene relacion con la familia Qwen: se trata de una red fully connected de 533.507 parametros (aproximadamente 0,53 millones) que mapea vectores de entrada de dimension 6 a salidas de dimension 3, con 3 bloques ocultos de tipo Linear -> LayerNorm -> ReLU de 512 unidades y una cabeza lineal de salida.
+dm_qwen4b_emulator es un perceptron multicapa (MLP) minimo publicado por el usuario chewwt en Hugging Face. A pesar del nombre, no es un modelo de lenguaje ni tiene relacion con la familia Qwen: se trata de una red fully connected de 533.507 parametros (aproximadamente 0,53 millones) que mapea vectores de entrada de dimension 6 a salidas de dimension 3, con 3 bloques ocultos de tipo Linear -> LayerNorm -> ReLU de 512 unidades y una cabeza lineal de salida.
 
 El modelo resuelve, por tanto, un problema de regresion o clasificacion de muy baja dimensionalidad (6 entradas, 3 salidas). Su interes practico reside en que es un emulador ligero: un sustituto barato de una funcion o simulador mas costoso, probablemente destilado o entrenado sobre pares entrada-salida generados por otro sistema. El repositorio acumula 24.184 descargas, un volumen inusualmente alto para una red de este tamano, lo que sugiere que se ha utilizado como dependencia indirecta o como componente auxiliar dentro de pipelines de otros proyectos.
 
@@ -58,7 +58,7 @@ No hay informacion sobre el entrenamiento. La model card no especifica el datase
 - Componente interno de un pipeline mayor: al ser un safetensors de aproximadamente 2 MB, se puede incrustar como cabeza de prediccion dentro de un sistema mas grande que genere las 6 caracteristicas de entrada.
 - Control de lazo cerrado de baja dimension: en robotica o control de procesos, una red 6 -> 3 puede actuar como politica o como modelo de dinamica reducido, siempre que se validen los limites de operacion.
 - Calibracion o correccion de sesgo en un sensor: si las 6 entradas son lecturas redundantes y las 3 salidas son magnitudes corregidas, la red puede aprender el ajuste empirico a partir de datos etiquetados.
-- Prototipado y docencia: sirve como ejemplo minimo y funcional de carga de pesos safetensors desde HuggingFace, con un `state_dict` de tamano despreciable y sin dependencias de GPU.
+- Prototipado y docencia: sirve como ejemplo minimo y funcional de carga de pesos safetensors desde Hugging Face, con un `state_dict` de tamano despreciable y sin dependencias de GPU.
 - Benchmarking de infraestructura de despliegue: util para medir latencia de arranque, tiempos de carga desde cache local o sobrecarga de frameworks de servicio sin que el coste de inferencia contamine la medicion.
 - Seleccion de caracteristicas o analisis de sensibilidad: con solo 6 entradas es viable calcular gradientes respecto a la entrada y estudiar que variables dominan cada una de las 3 salidas.
 
@@ -83,7 +83,7 @@ No hay datos de rendimiento publicados para este modelo, por lo que no se puede 
 
 | Modelo | Tipo | Parametros | Entrada / salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dm_qwen4b_emulator | MLP PyTorch | 533.507 | 6 -> 3 | MIT | HuggingFace, safetensors |
+| dm_qwen4b_emulator | MLP PyTorch | 533.507 | 6 -> 3 | MIT | Hugging Face, safetensors |
 | MLP definido por el usuario en PyTorch | MLP PyTorch | configurable | configurable | BSD-3 | codigo fuente |
 | sklearn.neural_network.MLPRegressor | MLP con backend propio | configurable (por defecto ocultas pequenas) | configurable | BSD-3 | PyPI |
 | Modelos lineales o de gradiente boosting | no neuronal | variable | configurable | MIT / BSD | PyPI |
@@ -105,7 +105,7 @@ La ventaja especifica de este repositorio frente a definir el MLP a mano es que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chewwt/dm_qwen4b_emulator
+- Hugging Face: https://huggingface.co/chewwt/dm_qwen4b_emulator
 - Repositorio de pesos: https://huggingface.co/chewwt/dm_qwen4b_emulator/tree/main (archivo `model.safetensors`)
 - Paper: no disponible
 - Blog o articulo tecnico del autor: no disponible

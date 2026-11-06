@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Blaize-AI/CCTv2s_GlobalPlates)
+- [Modelo en Hugging Face](https://huggingface.co/Blaize-AI/CCTv2s_GlobalPlates)
 - [Repositorio original fast-plate-ocr](https://github.com/ankandrew/fast-plate-ocr)
 - [Global License Plate Dataset](https://github.com/siddagra/Global-License-Plate-Dataset)
 - [Artículo Compact Transformers (arXiv:2104.05704)](https://arxiv.org/abs/2104.05704)

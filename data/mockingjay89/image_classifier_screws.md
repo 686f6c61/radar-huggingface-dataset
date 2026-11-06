@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mockingjay89/Image_Classifier_Screws` es un repositorio publicado en HuggingFace por el usuario `mockingjay89` bajo licencia Apache 2.0. Por el identificador se deduce que se trata de un clasificador de imagenes orientado a tornillos, presumiblemente un modelo de vision por computador para categorizar piezas de fijacion. Sin embargo, la model card publicada no contiene mas que la linea de licencia: no hay descripcion de la tarea, del dataset, de la arquitectura ni de las clases de salida.
+`mockingjay89/Image_Classifier_Screws` es un repositorio publicado en Hugging Face por el usuario `mockingjay89` bajo licencia Apache 2.0. Por el identificador se deduce que se trata de un clasificador de imagenes orientado a tornillos, presumiblemente un modelo de vision por computador para categorizar piezas de fijacion. Sin embargo, la model card publicada no contiene mas que la linea de licencia: no hay descripcion de la tarea, del dataset, de la arquitectura ni de las clases de salida.
 
 El repositorio presenta un tamano de 0.0 GB, sin descargas ni "likes", sin pipeline declarado y con una unica actualizacion registrada minutos despues de su creacion (27 de octubre de 2026, 18:33 a 18:47 UTC). Estos indicadores son compatibles con un repositorio vacio, un experimento personal o una subida incompleta de pesos; en cualquiera de esos casos no es posible verificar que contenga artefactos utilizables.
 
@@ -80,8 +80,8 @@ No hay datos del modelo para comparar parametros ni rendimiento. La tabla recoge
 |---|---|---|---|---|
 | `mockingjay89/Image_Classifier_Screws` | no disponible | clasificacion de imagenes (inferido) | Apache 2.0 | repositorio de 0.0 GB, sin model card |
 | ResNet-50 (ImageNet) | ~25,6 M | CNN | BSD-3 / Apache 2.0 segun distribucion | pesos preentrenados ampliamente disponibles |
-| ViT-B/16 (ImageNet) | ~86 M | transformer de vision | Apache 2.0 | pesos preentrenados en HuggingFace y `timm` |
-| ConvNeXt-Tiny | ~28 M | CNN moderna | Apache 2.0 | pesos preentrenados en `timm` y HuggingFace |
+| ViT-B/16 (ImageNet) | ~86 M | transformer de vision | Apache 2.0 | pesos preentrenados en Hugging Face y `timm` |
+| ConvNeXt-Tiny | ~28 M | CNN moderna | Apache 2.0 | pesos preentrenados en `timm` y Hugging Face |
 | YOLOv8n-cls | ~2,7 M | CNN de clasificacion | AGPL-3.0 | disponible en Ultralytics; licencia restrictiva para uso comercial cerrado |
 
 En un escenario real de clasificacion de tornillos, la comparacion relevante seria contra un ajuste fino de cualquiera de estas lineas base sobre un dataset propio etiquetado, opcion que ofrece garantias de evaluacion que este repositorio no proporciona.
@@ -101,7 +101,7 @@ En un escenario real de clasificacion de tornillos, la comparacion relevante ser
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mockingjay89/Image_Classifier_Screws
+- Repositorio en Hugging Face: https://huggingface.co/mockingjay89/Image_Classifier_Screws
 - Model card del autor: no disponible (solo contiene la linea de licencia)
 - Paper o informe tecnico: no disponible
 - Blog o articulo explicativo: no disponible

@@ -74,7 +74,7 @@ La ventaja del adaptador es su especialización en la tarea, mientras que el mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/evalstate/Qwen2.5-VL-3B-TimeSpot-daylight-LoRA
+- Modelo en Hugging Face: https://huggingface.co/evalstate/Qwen2.5-VL-3B-TimeSpot-daylight-LoRA
 - Dataset TimeSpot: https://huggingface.co/datasets/kagnlp/TimeSpot
 - Paper TimeSpot: https://arxiv.org/abs/2603.06687
 - Repositorio de evaluación: https://huggingface.co/datasets/evalstate/timespot-daylight-eval

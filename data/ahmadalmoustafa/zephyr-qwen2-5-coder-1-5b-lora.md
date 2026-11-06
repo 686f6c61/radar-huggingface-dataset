@@ -79,6 +79,6 @@ No se dispone de información sobre adaptadores LoRA comparables para Zephyr RTO
 
 ## Enlaces
 
-- [Página del adaptador en HuggingFace](https://huggingface.co/ahmadalmoustafa/zephyr-qwen2.5-coder-1.5b-lora)
+- [Página del adaptador en Hugging Face](https://huggingface.co/ahmadalmoustafa/zephyr-qwen2.5-coder-1.5b-lora)
 - [Modelo base Qwen2.5-Coder-1.5B](https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B)
 - [Repositorio de Zephyr RTOS](https://github.com/zephyrproject-rtos/zephyr) (referencia del código fuente utilizado)

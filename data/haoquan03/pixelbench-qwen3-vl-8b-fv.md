@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| PixelBench-Qwen3-VL-8B-FV | 8,77 B | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Ajuste fino de investigacion sobre FineVision |
-| Qwen/Qwen3-VL-8B-Instruct | ~8 B (clase Qwen3-VL-8B) | no disponible en esta ficha | Apache 2.0 (segun modelo base) | HuggingFace, ampliamente distribuido | Modelo base del ajuste fino; alineado para instrucciones |
-| Qwen2.5-VL-7B-Instruct | ~7 B | 128 K (segun documentacion publica de Qwen2.5-VL) | Apache 2.0 | HuggingFace | Generacion anterior de la familia; referencia habitual en VQA |
-| LLaVA-OneVision-7B | ~7 B | 32 K (segun documentacion publica) | Apache 2.0 | HuggingFace | Alternativa open source de tamano comparable para VQA |
+| PixelBench-Qwen3-VL-8B-FV | 8,77 B | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Ajuste fino de investigacion sobre FineVision |
+| Qwen/Qwen3-VL-8B-Instruct | ~8 B (clase Qwen3-VL-8B) | no disponible en esta ficha | Apache 2.0 (segun modelo base) | Hugging Face, ampliamente distribuido | Modelo base del ajuste fino; alineado para instrucciones |
+| Qwen2.5-VL-7B-Instruct | ~7 B | 128 K (segun documentacion publica de Qwen2.5-VL) | Apache 2.0 | Hugging Face | Generacion anterior de la familia; referencia habitual en VQA |
+| LLaVA-OneVision-7B | ~7 B | 32 K (segun documentacion publica) | Apache 2.0 | Hugging Face | Alternativa open source de tamano comparable para VQA |
 
 La comparativa se limita a parametros, licencia y disponibilidad porque no hay datos de rendimiento publicados para este checkpoint en la informacion proporcionada. El contexto de Qwen3-VL-8B y del resto de alternativas no figura en los materiales consultados para esta ficha.
 
@@ -86,7 +86,7 @@ La comparativa se limita a parametros, licencia y disponibilidad porque no hay d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haoquan03/PixelBench-Qwen3-VL-8B-FV
+- Modelo en Hugging Face: https://huggingface.co/haoquan03/PixelBench-Qwen3-VL-8B-FV
 - Proyecto del paper: https://haoquanzhang.github.io/pixelbench/
 - Codigo y evaluacion: https://github.com/HaoquanZhang/PixelBench
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct

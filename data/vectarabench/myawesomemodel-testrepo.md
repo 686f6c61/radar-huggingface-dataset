@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vectarabench/MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace cuyo nombre, tamaño y métricas de uso indican que se trata de una plantilla de prueba y no de un modelo entrenado. El repositorio declara la etiqueta `feature-extraction` y la arquitectura `bert`, pero su model card describe un modelo generativo de razonamiento con mejoras en matemáticas, código y lógica. Esta contradicción entre los metadatos de la plataforma y el contenido del README es el dato más relevante de la ficha.
+vectarabench/MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face cuyo nombre, tamaño y métricas de uso indican que se trata de una plantilla de prueba y no de un modelo entrenado. El repositorio declara la etiqueta `feature-extraction` y la arquitectura `bert`, pero su model card describe un modelo generativo de razonamiento con mejoras en matemáticas, código y lógica. Esta contradicción entre los metadatos de la plataforma y el contenido del README es el dato más relevante de la ficha.
 
 La información publicada por el autor no incluye número de parámetros, longitud de contexto, tokenizador, composición del dataset ni formatos de pesos. El tamaño del repositorio es de 0,0 GB, no registra descargas ni interacciones, y la fecha de creación indicada (28 de septiembre de 2026) es posterior a la fecha actual, lo que refuerza la hipótesis de contenido sintético o de prueba.
 
@@ -12,7 +12,7 @@ El interés del repositorio es, por tanto, limitado como modelo utilizable y alt
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. Contradiccion en los metadatos: la etiqueta de HuggingFace indica `bert`, mientras que la model card describe un modelo generativo de razonamiento con modo de pensamiento |
+| Arquitectura | No disponible. Contradiccion en los metadatos: la etiqueta de Hugging Face indica `bert`, mientras que la model card describe un modelo generativo de razonamiento con modo de pensamiento |
 | Parametros totales | No disponible |
 | Parametros activos | No disponible (no hay evidencia de que sea un modelo MoE) |
 | Longitud de contexto | No disponible. La model card menciona un consumo medio de 23.000 tokens por pregunta en AIME, pero eso es longitud de generacion, no ventana de contexto |
@@ -28,7 +28,7 @@ El interés del repositorio es, por tanto, limitado como modelo utilizable y alt
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura. Los metadatos de HuggingFace apuntan a un encoder BERT para extraccion de caracteristicas, mientras que la model card describe un modelo de razonamiento con una variante denominada MyAwesomeModel-Small que, segun el texto, comparte arquitectura con el modelo base y tokenizador con el modelo principal. Ninguna de las dos descripciones incluye detalles tecnicos: no se especifica numero de capas, dimension oculta, cabezas de atencion, tipo de atencion ni mecanismo de decodificacion.
+No hay informacion verificable sobre la arquitectura. Los metadatos de Hugging Face apuntan a un encoder BERT para extraccion de caracteristicas, mientras que la model card describe un modelo de razonamiento con una variante denominada MyAwesomeModel-Small que, segun el texto, comparte arquitectura con el modelo base y tokenizador con el modelo principal. Ninguna de las dos descripciones incluye detalles tecnicos: no se especifica numero de capas, dimension oculta, cabezas de atencion, tipo de atencion ni mecanismo de decodificacion.
 
 Respecto al entrenamiento, la model card afirma que las mejoras provienen de "aumentar los recursos computacionales" e "introducir mecanismos de optimizacion algoritmica durante el post-entrenamiento", sin concretar numero de tokens, composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO u otras. No se documenta ninguna innovacion tecnica verificable. Las unicas recomendaciones operativas concretas son el uso de un system prompt con fecha y una temperatura de 0,6.
 
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks verificables en la informacion disp
 - VRAM estimada para inferencia: no disponible. Sin numero de parametros ni formato de pesos no es posible calcular requisitos de memoria.
 - GPU recomendadas: no disponible por el mismo motivo.
 - Encaje en GPU de consumo: no disponible. No puede confirmarse ni descartarse.
-- Opciones de despliegue: no disponible. No se documentan pesos en formato safetensors, GGUF ni cuantizaciones para llama.cpp, Ollama, vLLM o TGI. La etiqueta `endpoints_compatible` de HuggingFace sugiere compatibilidad con Inference Endpoints, pero sin artefactos publicados la afirmacion no es operativa.
+- Opciones de despliegue: no disponible. No se documentan pesos en formato safetensors, GGUF ni cuantizaciones para llama.cpp, Ollama, vLLM o TGI. La etiqueta `endpoints_compatible` de Hugging Face sugiere compatibilidad con Inference Endpoints, pero sin artefactos publicados la afirmacion no es operativa.
 - Latencia y throughput: no disponibles. La unica referencia indirecta es el presupuesto de generacion de 23.000 tokens por pregunta declarado para AIME, que implicaria latencias altas y un coste de decodificacion considerable en cualquier hardware, pero no se aportan mediciones.
 
 ## Comparativa con modelos similares
@@ -123,9 +123,9 @@ Como referencia de categoria, los repositorios homonimos RSIbench/MyAwesomeModel
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vectarabench/MyAwesomeModel-TestRepo
-- Repositorio homonimo en HuggingFace (RSIbench): https://huggingface.co/RSIbench/MyAwesomeModel-TestRepo
-- Repositorio homonimo en HuggingFace (LlewellynAlaina): https://huggingface.co/LlewellynAlaina/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/vectarabench/MyAwesomeModel-TestRepo
+- Repositorio homonimo en Hugging Face (RSIbench): https://huggingface.co/RSIbench/MyAwesomeModel-TestRepo
+- Repositorio homonimo en Hugging Face (LlewellynAlaina): https://huggingface.co/LlewellynAlaina/MyAwesomeModel-TestRepo
 - Indice de terceros ModelVault: https://www.modelvault.space/models/asadqwr-myawesomemodel-testrepo
 - Indice de terceros Essa Mamdani: https://essamamdani.com/ai-models/hf-rsibench-myawesomemodel-testrepo
 - Indice de terceros OpenModelMap: https://openmodelmap.com/model/dongbobo/MyAwesomeModel-TestRepo

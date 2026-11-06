@@ -6,7 +6,7 @@ Este repositorio contiene una versión cuantizada en formato MLX del modelo de g
 
 Se trata, por tanto, de una reempaquetado de pesos orientado a reducir el consumo de memoria del modelo base, no de un modelo entrenado desde cero ni de un ajuste fino. Su interés práctico está en permitir la inferencia local de un generador de imágenes de la familia FLUX.2 en Macs sin GPU dedicada, un escenario con oferta limitada de cuantizaciones nativas en MLX.
 
-El repositorio no incluye ficha técnica más allá de las etiquetas de HuggingFace: no hay datos de arquitectura, dataset, benchmarks, licencia explícita ni idiomas declarados, y acumula 0 descargas y 0 «likes» en la información consultada. Cualquier evaluación seria debería contrastarse con la documentación del modelo base de Black Forest Labs.
+El repositorio no incluye ficha técnica más allá de las etiquetas de Hugging Face: no hay datos de arquitectura, dataset, benchmarks, licencia explícita ni idiomas declarados, y acumula 0 descargas y 0 «likes» en la información consultada. Cualquier evaluación seria debería contrastarse con la documentación del modelo base de Black Forest Labs.
 
 ## Especificaciones técnicas
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento, contexto o calidad de imagen para ninguno
 
 ## Limitaciones y advertencias
 
-- El repositorio no incluye ficha técnica, tarjeta de modelo ni documentación de uso; toda la información procede de etiquetas de HuggingFace.
+- El repositorio no incluye ficha técnica, tarjeta de modelo ni documentación de uso; toda la información procede de etiquetas de Hugging Face.
 - No se declara el texto de la licencia. La etiqueta indica `license:other`, de modo que el uso comercial queda sujeto a los términos del modelo base de Black Forest Labs, que no se reproducen aquí. Verificar antes de cualquier despliegue en producción.
 - La cuantización a 4 bits con imatrix suele introducir pérdida de fidelidad en detalles finos, texturas, texto dentro de la imagen y anatomías complejas respecto a los pesos en precisión completa. No se publica ninguna medición de esa degradación para este repositorio.
 - Al derivar del modelo base, hereda los sesgos de su dataset de entrenamiento (representación demográfica, estereotipos culturales, sesgos de estilo). No se documenta ningún trabajo de mitigación.
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento, contexto o calidad de imagen para ninguno
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/justintime47/FLUX.2-klein-9B-iQ4.0
+- Repositorio en Hugging Face: https://huggingface.co/justintime47/FLUX.2-klein-9B-iQ4.0
 - Modelo base referenciado en las etiquetas: https://huggingface.co/black-forest-labs/FLUX.2-klein-9B
 - Paper, blog, repositorio de código o demo del autor: no disponible en la información proporcionada.
 - Resultados de búsqueda web relevantes: no disponible (los resultados devueltos no estaban relacionados con el modelo).

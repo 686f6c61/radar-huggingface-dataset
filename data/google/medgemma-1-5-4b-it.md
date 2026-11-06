@@ -4,7 +4,7 @@
 
 MedGemma 1.5 4B es un modelo multimodal desarrollado por Google, perteneciente a la familia MedGemma construida sobre Gemma 3. Está diseñado específicamente para la comprensión conjunta de texto e imágenes médicas, con el objetivo de acelerar el desarrollo de aplicaciones de IA en el ámbito sanitario. El modelo combina un decodificador transformer con atención por grupos (grouped-query attention) y un codificador de imagen SigLIP entrenado con datos médicos desidentificados, lo que le permite procesar radiografías, tomografías, resonancias magnéticas y portaobjetos de histopatología de alta dimensión.
 
-Con 4.300 millones de parámetros y una ventana de contexto de al menos 128.000 tokens, MedGemma 1.5 4B ofrece una capacidad de razonamiento clínico y análisis longitudinal de imágenes médicas que supera a su predecesor MedGemma 1, especialmente en tareas que requieren comparar estudios radiológicos a lo largo del tiempo o localizar estructuras anatómicas. Su licencia específica (health-ai-developer-foundations) y su acceso restringido en HuggingFace condicionan su uso, pero lo convierten en una opción relevante para investigadores y desarrolladores que trabajan en IA médica con requisitos de privacidad y cumplimiento normativo.
+Con 4.300 millones de parámetros y una ventana de contexto de al menos 128.000 tokens, MedGemma 1.5 4B ofrece una capacidad de razonamiento clínico y análisis longitudinal de imágenes médicas que supera a su predecesor MedGemma 1, especialmente en tareas que requieren comparar estudios radiológicos a lo largo del tiempo o localizar estructuras anatómicas. Su licencia específica (health-ai-developer-foundations) y su acceso restringido en Hugging Face condicionan su uso, pero lo convierten en una opción relevante para investigadores y desarrolladores que trabajan en IA médica con requisitos de privacidad y cumplimiento normativo.
 
 La relevancia actual del modelo radica en su capacidad para manejar imágenes médicas de alta resolución y su enfoque en aplicaciones clínicas reales, como el análisis de radiografías de tórax seriadas o la detección de anomalías en estudios de patología digital. A diferencia de modelos generalistas, MedGemma 1.5 4B ha sido ajustado con datos médicos, lo que reduce la brecha entre los modelos de propósito general y las necesidades específicas del sector salud.
 
@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es de tipo gated en HuggingFace; es necesario aceptar las condiciones de la licencia health-ai-developer-foundations antes de descargarlo.
+- Acceso restringido: el modelo es de tipo gated en Hugging Face; es necesario aceptar las condiciones de la licencia health-ai-developer-foundations antes de descargarlo.
 - Licencia específica: la licencia no es de código abierto estándar (no es Apache ni MIT); restringe el uso a aplicaciones de salud y desarrollo de IA médica, y puede prohibir usos comerciales fuera de ese ámbito. Revisar los términos completos antes de su uso en producción.
 - Sesgos y alucinaciones: al estar entrenado con datos médicos, puede reflejar sesgos presentes en los datos de origen (p. ej., subrepresentación de ciertas poblaciones). Existe riesgo de alucinación en hallazgos radiológicos; el modelo no debe utilizarse como única fuente de diagnóstico sin supervisión humana.
 - Limitaciones de idioma: no se han documentado idiomas soportados; es probable que el rendimiento óptimo se limite al inglés médico, con degradación en otros idiomas.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/google/medgemma-1.5-4b-it
+- Hugging Face: https://huggingface.co/google/medgemma-1.5-4b-it
 - Model card oficial de Google: https://developers.google.com/health-ai-developer-foundations/medgemma/model-card
 - Página de MedGemma en Google DeepMind: https://deepmind.google/models/gemma/medgemma/
 - Documentación general de MedGemma: https://developers.google.com/health-ai-developer-foundations/medgemma

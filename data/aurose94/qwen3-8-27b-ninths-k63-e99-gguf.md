@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-ninths-k63-e99-GGUF es una cuantización experimental del modelo Qwen3.8-27B-Base de Qwen, publicada por el usuario auRose94 en HuggingFace. No se trata de una cuantización GGUF clásica tipo k-quant: los pesos se almacenan como flujos de dígitos en base 9 con codificación entrópica ("ninths container"), con un directorio interno en el propio fichero. El runtime materializa los pesos a Q8_0 exacto en tiempo de carga (verificado byte a byte por clase de tensor), o a IQ4_NL / f16 mediante una variable de entorno.
+Qwen3.8-27B-ninths-k63-e99-GGUF es una cuantización experimental del modelo Qwen3.8-27B-Base de Qwen, publicada por el usuario auRose94 en Hugging Face. No se trata de una cuantización GGUF clásica tipo k-quant: los pesos se almacenan como flujos de dígitos en base 9 con codificación entrópica ("ninths container"), con un directorio interno en el propio fichero. El runtime materializa los pesos a Q8_0 exacto en tiempo de carga (verificado byte a byte por clase de tensor), o a IQ4_NL / f16 mediante una variable de entorno.
 
 El interés principal de esta ficha es doble. Por un lado, el modelo base Qwen3.8-27B emplea una arquitectura híbrida (bloques gated-delta-net + atención, FFN densas, 65 bloques más una capa MTP), lo que lo sitúa en la línea de los modelos híbridos SSM/attention. Por otro, el formato de cuantización consigue 5,744 bits/parámetro, un 36 % del tamaño de referencia f16, manteniendo exactitud bit a bit tras la materialización.
 
@@ -73,7 +73,7 @@ Estas cifras corresponden a la máquina del autor (A9 Mega con 96 GiB) y no son 
 |---|---|---|---|---|---|
 | Qwen3.8-27B-ninths-k63-e99 | 19,62 B | GGUF ninths (5,744 bits/param) | no disponible | Apache-2.0 | Requiere fork de llama.cpp |
 | Qwen3.8-27B-iq4nl-GGUF (del mismo autor) | 19,62 B | GGUF IQ4_NL estándar | no disponible | Apache-2.0 | Runtimes GGUF estándar |
-| Qwen3.8-27B-Base (original) | 19,62 B | safetensors | no disponible | Apache-2.0 | HuggingFace, runtimes completos |
+| Qwen3.8-27B-Base (original) | 19,62 B | safetensors | no disponible | Apache-2.0 | Hugging Face, runtimes completos |
 
 No se conocen otros modelos comparables con datos suficientes para una comparativa de rendimiento; no disponible.
 

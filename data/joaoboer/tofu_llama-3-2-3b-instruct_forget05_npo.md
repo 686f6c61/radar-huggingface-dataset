@@ -89,9 +89,9 @@ La interpretacion de estos valores depende de las convenciones del framework ope
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_NPO | 3,21 B | no disponible | Desaprendizaje NPO sobre TOFU forget05 | llama3.2 | HuggingFace, 0 descargas |
-| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | 3,21 B | no disponible | Fine-tune completo sobre TOFU (sin olvido) | llama3.2 | HuggingFace (modelo base) |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128 000 tokens | Asistente conversacional de proposito general | Llama 3.2 Community License | HuggingFace, ampliamente validado |
+| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_NPO | 3,21 B | no disponible | Desaprendizaje NPO sobre TOFU forget05 | llama3.2 | Hugging Face, 0 descargas |
+| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | 3,21 B | no disponible | Fine-tune completo sobre TOFU (sin olvido) | llama3.2 | Hugging Face (modelo base) |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128 000 tokens | Asistente conversacional de proposito general | Llama 3.2 Community License | Hugging Face, ampliamente validado |
 
 No se dispone de datos de rendimiento comparables publicados en la informacion proporcionada, por lo que la comparacion se limita a parametros, objetivo de entrenamiento y licencia. Cualquier modelo de la misma categoria publicado por el framework open-unlearning sobre otros splits (forget01, forget10) seria un comparable directo, pero no se detalla en la informacion disponible.
 
@@ -109,10 +109,10 @@ No se dispone de datos de rendimiento comparables publicados en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_NPO
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_NPO
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning
 - Proyecto Speculative-Decoding-Unlearning: https://github.com/JoaoVitorBoer/Speculative-Decoding-Unlearning
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden de la informacion del repositorio de HuggingFace y de su model card.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden de la informacion del repositorio de Hugging Face y de su model card.

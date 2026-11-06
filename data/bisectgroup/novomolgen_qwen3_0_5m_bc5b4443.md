@@ -2,9 +2,9 @@
 
 ## Resumen
 
-NovoMolGen_qwen3_0_5m_bc5b4443 es un modelo publicado en HuggingFace por el usuario bisectgroup bajo la librería transformers. Se trata de un checkpoint de un tamaño excepcionalmente reducido: 473.024 parámetros totales según los pesos en safetensors, lo que lo sitúa en el rango de los modelos de juguete o de experimentación, no en el de un modelo de lenguaje utilizable en producción. El identificador sugiere un modelo derivado de la familia Qwen3 (etiqueta `qwen3` presente en el repositorio) y orientado a la generación molecular (prefijo "NovoMolGen"), si bien ninguna de estas dos inferencias está confirmada por la documentación del autor.
+NovoMolGen_qwen3_0_5m_bc5b4443 es un modelo publicado en Hugging Face por el usuario bisectgroup bajo la librería transformers. Se trata de un checkpoint de un tamaño excepcionalmente reducido: 473.024 parámetros totales según los pesos en safetensors, lo que lo sitúa en el rango de los modelos de juguete o de experimentación, no en el de un modelo de lenguaje utilizable en producción. El identificador sugiere un modelo derivado de la familia Qwen3 (etiqueta `qwen3` presente en el repositorio) y orientado a la generación molecular (prefijo "NovoMolGen"), si bien ninguna de estas dos inferencias está confirmada por la documentación del autor.
 
-La model card es la plantilla automática de HuggingFace, sin rellenar: no declara desarrollador, financiación, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Todos los campos relevantes aparecen como "More Information Needed". El repositorio no incluye paper, demo ni documentación adicional, y la búsqueda web asociada no ha devuelto ningún resultado relacionado con el modelo.
+La model card es la plantilla automática de Hugging Face, sin rellenar: no declara desarrollador, financiación, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Todos los campos relevantes aparecen como "More Information Needed". El repositorio no incluye paper, demo ni documentación adicional, y la búsqueda web asociada no ha devuelto ningún resultado relacionado con el modelo.
 
 Por tanto, esta ficha solo puede ser rigurosa si se limita a constatar lo que sí está verificado: el recuento de parámetros, el formato de pesos, la librería y el pipeline declarado. El resto de apartados se marcan explícitamente como no disponibles. Su relevancia actual es, por tanto, muy limitada salvo como artefacto de experimentación o como parte de un pipeline mayor del propio autor.
 
@@ -18,7 +18,7 @@ Por tanto, esta ficha solo puede ser rigurosa si se limita a constatar lo que s�
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (solo se distribuyen pesos en safetensors; no se publican versiones GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (la model card no especifica licencia; el filtro de HuggingFace no la declara) |
+| Licencia | no disponible (la model card no especifica licencia; el filtro de Hugging Face no la declara) |
 | Formato de pesos | safetensors |
 | Libreria | transformers |
 | Pipeline declarado | text-generation |
@@ -28,7 +28,7 @@ Por tanto, esta ficha solo puede ser rigurosa si se limita a constatar lo que s�
 
 No hay información verificable sobre la arquitectura más allá de las etiquetas del repositorio (`transformers`, `safetensors`, `qwen3`) y del pipeline declarado (`text-generation`). Con 473.024 parámetros, el checkpoint es varios órdenes de magnitud más pequeño que cualquier modelo de lenguaje de propósito general actual; a modo de referencia de escala, un transformer con ese número de parámetros tendría del orden de unos pocos cientos de dimensiones de embedding y muy pocas capas, o bien correspondería a una cabeza de salida especializada acoplada a un modelo mayor. No se ha publicado ninguna de estas cifras.
 
-Tampoco se documentan datos de entrenamiento: no consta el número de tokens, la composición del dataset, si hubo fases de ajuste por instrucciones (SFT), RLHF o DPO, ni qué técnica de tokenización se emplea. El único enlace técnico presente en la model card es `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en aprendizaje automático, citado por la propia plantilla de HuggingFace y no como referencia del modelo. No debe interpretarse, por tanto, como el paper del modelo.
+Tampoco se documentan datos de entrenamiento: no consta el número de tokens, la composición del dataset, si hubo fases de ajuste por instrucciones (SFT), RLHF o DPO, ni qué técnica de tokenización se emplea. El único enlace técnico presente en la model card es `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en aprendizaje automático, citado por la propia plantilla de Hugging Face y no como referencia del modelo. No debe interpretarse, por tanto, como el paper del modelo.
 
 ## Capacidades
 
@@ -72,18 +72,18 @@ No disponible. En la información proporcionada no se identifican modelos compar
 ## Limitaciones y advertencias
 
 - Licencia no declarada: al no especificarse licencia, no puede asumirse permiso de uso comercial. Cualquier uso en producción debe aclararse previamente con el autor.
-- Model card vacía: toda la documentación es la plantilla automática de HuggingFace con campos "More Information Needed"; no hay información sobre uso previsto, uso fuera de alcance, sesgos ni recomendaciones.
+- Model card vacía: toda la documentación es la plantilla automática de Hugging Face con campos "More Information Needed"; no hay información sobre uso previsto, uso fuera de alcance, sesgos ni recomendaciones.
 - Sin datos de entrenamiento: se desconoce la procedencia de los datos, lo que impide evaluar sesgos, contaminación de benchmarks o cumplimiento normativo (por ejemplo, RGPD si hubiera datos personales).
 - Riesgo alto de alucinación y de salidas incoherentes: con 473.024 parámetros, no es esperable un comportamiento de lenguaje fiable; debe asumirse que las salidas requerirán validación externa en cualquier dominio.
 - Idiomas no declarados: no puede afirmarse que el modelo funcione en castellano ni en ningún otro idioma.
 - Contexto desconocido: al no publicarse la longitud de contexto, cualquier integración corre el riesgo de truncar entradas o producir errores en tiempo de ejecución.
 - Idoneidad no verificada: no hay benchmarks, demos ni ejemplos de uso; no debe desplegarse en producción sin una evaluación propia previa.
-- Anomalía en las fechas: el repositorio figura como creado y actualizado en septiembre de 2026, dato que conviene contrastar con la ficha de HuggingFace.
+- Anomalía en las fechas: el repositorio figura como creado y actualizado en septiembre de 2026, dato que conviene contrastar con la ficha de Hugging Face.
 - Búsqueda web sin resultados relevantes: las consultas asociadas solo devolvieron portales de noticias generalistas (MSN, 20 Minutes), sin ninguna relación con el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bisectgroup/NovoMolGen_qwen3_0_5m_bc5b4443
+- Modelo en Hugging Face: https://huggingface.co/bisectgroup/NovoMolGen_qwen3_0_5m_bc5b4443
 - Referencia citada en la plantilla de la model card (calculadora de impacto de carbono, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automático mencionada en la plantilla: https://mlco2.github.io/impact#compute
 - Paper, repositorio de código, demo y blog del modelo: no disponibles.

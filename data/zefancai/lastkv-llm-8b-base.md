@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LastKV-LLM-8B-Base es un modelo de lenguaje de 8.030.269.952 parametros publicado por el autor ZefanCai en HuggingFace, asociado al trabajo de investigacion "LastKV: Last Layer KV Cache is All You Need". Se distribuye como checkpoint base (no afinado por instrucciones) y su interes principal no esta en el rendimiento bruto, sino en la arquitectura: implementa una variante recurrente personalizada denominada `CustomRecurrentMarinAKV254ReuseKVForCausalLM`, cuyo objetivo declarado es reducir el coste de la cache KV en contextos largos.
+LastKV-LLM-8B-Base es un modelo de lenguaje de 8.030.269.952 parametros publicado por el autor ZefanCai en Hugging Face, asociado al trabajo de investigacion "LastKV: Last Layer KV Cache is All You Need". Se distribuye como checkpoint base (no afinado por instrucciones) y su interes principal no esta en el rendimiento bruto, sino en la arquitectura: implementa una variante recurrente personalizada denominada `CustomRecurrentMarinAKV254ReuseKVForCausalLM`, cuyo objetivo declarado es reducir el coste de la cache KV en contextos largos.
 
 El repositorio contiene dos revisiones con distinta longitud de contexto entrenada: `main` (tambien etiquetada `8k-step-059904`) con 8.192 tokens de contexto, resultado de un pretraining continuado de 59.904 pasos, y `256k-step-001209`, con 262.144 tokens de contexto tras una fase adicional de entrenamiento en contexto largo de 1.209 pasos. Los pesos se publican unicamente en BF16 safetensors, repartidos en cuatro ficheros de aproximadamente 16 GB en total (419 tensores), con licencia MIT.
 
@@ -96,7 +96,7 @@ El unico eje en el que LastKV-LLM-8B-Base destaca objetivamente es la ventana de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZefanCai/LastKV-LLM-8B-Base
+- Modelo en Hugging Face: https://huggingface.co/ZefanCai/LastKV-LLM-8B-Base
 - Revision con contexto de 8.192 tokens: https://huggingface.co/ZefanCai/LastKV-LLM-8B-Base/tree/8k-step-059904
 - Revision con contexto de 262.144 tokens: https://huggingface.co/ZefanCai/LastKV-LLM-8B-Base/tree/256k-step-001209
 - Pagina del proyecto "LastKV: Last Layer KV Cache is All You Need": https://zefan-cai.github.io/LastKV.github.io/

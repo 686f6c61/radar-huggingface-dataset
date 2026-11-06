@@ -71,7 +71,7 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/ibyteohdear/Lightricks-LTX-2)
+- [Hugging Face del modelo](https://huggingface.co/ibyteohdear/Lightricks-LTX-2)
 - [Pagina oficial](https://ltx.io)
 - [Documentacion](https://docs.ltx.io)
 - [Repositorio GitHub](https://github.com/Lightricks/LTX-2)

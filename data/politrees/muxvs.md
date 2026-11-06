@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MuXVS es un repositorio de modelo publicado en HuggingFace por el usuario Politrees (Artyom Bebroy) bajo licencia MIT. En el momento de la consulta, el repositorio acumula 0 descargas y 0 "likes", y su model card no contiene más información que el identificador de licencia (`license: mit`). No se especifica pipeline de inferencia, idiomas soportados, arquitectura, tamaño ni formato de pesos.
+MuXVS es un repositorio de modelo publicado en Hugging Face por el usuario Politrees (Artyom Bebroy) bajo licencia MIT. En el momento de la consulta, el repositorio acumula 0 descargas y 0 "likes", y su model card no contiene más información que el identificador de licencia (`license: mit`). No se especifica pipeline de inferencia, idiomas soportados, arquitectura, tamaño ni formato de pesos.
 
 Esto convierte al modelo en una publicación prácticamente vacía desde el punto de vista documental: no hay descripción del problema que resuelve, ni de los datos de entrenamiento, ni resultados de evaluación. La fecha de creación y actualización registrada es el 24 de septiembre de 2026, la misma para ambas, lo que sugiere que el repositorio no se ha modificado desde su creación.
 
@@ -83,8 +83,8 @@ No disponible. No se conocen modelos comparables porque se desconoce la categor�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Politrees/MuXVS
-- Perfil del autor en HuggingFace: https://huggingface.co/Politrees
+- Repositorio en Hugging Face: https://huggingface.co/Politrees/MuXVS
+- Perfil del autor en Hugging Face: https://huggingface.co/Politrees
 - Repositorio RVC_resources del autor (README): https://huggingface.co/Politrees/RVC_resources/blob/main/README.md
 - Perfil del autor en GitHub: https://github.com/Politrees
 - Canal de YouTube del autor: https://www.youtube.com/@Politrees

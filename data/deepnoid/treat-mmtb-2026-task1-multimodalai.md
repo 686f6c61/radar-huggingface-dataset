@@ -84,7 +84,7 @@ Las métricas no son directamente comparables entre sí, ya que el primer sistem
 
 | Modelo / sistema | Tipo | Datos de entrada | Métrica publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Deepnoid TREAT-MMTB-2026-Task1-MultimodalAI | Clasificación + segmentación de cavidades TB | DICOM de tórax, 1024 × 1024 | Puesto 3; puntuación 0,6001; detección 0,8112; Dice 0,1077 | no disponible | Pesos safetensors en HuggingFace, código en GitHub |
+| Deepnoid TREAT-MMTB-2026-Task1-MultimodalAI | Clasificación + segmentación de cavidades TB | DICOM de tórax, 1024 × 1024 | Puesto 3; puntuación 0,6001; detección 0,8112; Dice 0,1077 | no disponible | Pesos safetensors en Hugging Face, código en GitHub |
 | Ensemble de cuatro clasificadores (OpenReview, MICCAI 2026) | Clasificación de TB | Radiografía de tórax | F1 0,8642 en evaluación externa | no disponible | Descripción en OpenReview y PDF en papers.miccai.org |
 | Otros participantes del reto TREAT-MMTB 2026 | Clasificación y/o segmentación | Radiografía de tórax | Publicados en el leaderboard del reto | no disponible | Leaderboard público en repositorio mi2rl-challenge |
 
@@ -96,7 +96,7 @@ No se dispone de información sobre modelos genéricos de segmentación médica 
 - La exactitud de detección de 0,8112 y la puntuación final de 0,6001 indican un margen amplio de error; no es un sistema apto para uso diagnóstico autónomo sin revisión por un radiólogo.
 - Los umbrales están fijados de forma rígida (0,70 para clasificación y 0,79 para segmentación) y calibrados sobre la distribución del reto; un cambio de dominio puede degradar la calibración sin aviso.
 - El preentrenamiento visión-lenguaje usa MIMIC-CXR, un recurso con acceso restringido y credenciales; cualquier redistribución o reutilización de artefactos derivados debe respetar sus condiciones.
-- La licencia no está declarada en la model card ni en los metadatos de HuggingFace, por lo que el uso comercial queda en un limbo legal: no hay autorización explícita ni prohibición explícita.
+- La licencia no está declarada en la model card ni en los metadatos de Hugging Face, por lo que el uso comercial queda en un limbo legal: no hay autorización explícita ni prohibición explícita.
 - La entrada es rígida: se rechazan mezclas de archivos sueltos y carpetas de caso en la misma ruta, y en carpetas de caso se usa siempre el primer DICOM ordenado, lo que puede ignorar la vista más informativa si el estudio contiene varias proyecciones.
 - Riesgo de falsos negativos clínicamente relevantes: el mecanismo de reserva del 1 % superior de píxeles solo actúa cuando un caso positivo produce una máscara vacía, no corrige máscaras presentes pero mal localizadas.
 - No se documentan análisis de sesgo por sexo, edad, etnia, fabricante de equipo o geografía, factores que afectan de forma conocida al rendimiento en radiografía de tórax.
@@ -105,7 +105,7 @@ No se dispone de información sobre modelos genéricos de segmentación médica 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Deepnoid/TREAT-MMTB-2026-Task1-MultimodalAI
+- Modelo en Hugging Face: https://huggingface.co/Deepnoid/TREAT-MMTB-2026-Task1-MultimodalAI
 - Checkpoints: https://huggingface.co/Deepnoid/TREAT-MMTB-2026-Task1-MultimodalAI/tree/main/weights
 - Repositorio de código: https://github.com/deepnoid-ai/TREAT-MMTB-2026-Task1-MultimodalAI
 - Leaderboard oficial del reto: https://github.com/mi2rl-challenge/treat-mmtb.miccai2026/blob/main/leader_board_point.json

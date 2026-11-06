@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `MaLA-LM/FT-FineOPUS-Filtered-Stage3-sample5k` es un checkpoint publicado por la organización MaLA-LM en HuggingFace. A partir de la información disponible en su ficha, se trata de un ajuste fino (fine-tuning) de un modelo base de la familia MaLA-LM, cuyo nombre sugiere una etapa de filtrado y muestreo de 5000 ejemplos dentro de un pipeline de entrenamiento denominado "FineOPUS". Sin embargo, la model card no incluye descripción técnica alguna más allá de la licencia MIT, por lo que no es posible determinar su arquitectura, tamaño, dominio de aplicación ni capacidades específicas.
+El modelo `MaLA-LM/FT-FineOPUS-Filtered-Stage3-sample5k` es un checkpoint publicado por la organización MaLA-LM en Hugging Face. A partir de la información disponible en su ficha, se trata de un ajuste fino (fine-tuning) de un modelo base de la familia MaLA-LM, cuyo nombre sugiere una etapa de filtrado y muestreo de 5000 ejemplos dentro de un pipeline de entrenamiento denominado "FineOPUS". Sin embargo, la model card no incluye descripción técnica alguna más allá de la licencia MIT, por lo que no es posible determinar su arquitectura, tamaño, dominio de aplicación ni capacidades específicas.
 
 La relevancia de este modelo es incierta en el momento de redactar esta ficha, dado que no se han publicado detalles sobre su entrenamiento, evaluación o uso previsto. Al carecer de documentación, cualquier despliegue en producción debería considerarse experimental y requeriría una validación exhaustiva por parte del usuario.
 
@@ -58,4 +58,4 @@ No disponible. No se conocen modelos comparables al carecer de especificaciones 
 
 ## Enlaces
 
-- [HuggingFace - MaLA-LM/FT-FineOPUS-Filtered-Stage3-sample5k](https://huggingface.co/MaLA-LM/FT-FineOPUS-Filtered-Stage3-sample5k)
+- [Hugging Face - MaLA-LM/FT-FineOPUS-Filtered-Stage3-sample5k](https://huggingface.co/MaLA-LM/FT-FineOPUS-Filtered-Stage3-sample5k)

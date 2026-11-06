@@ -71,6 +71,6 @@ No se dispone de informacion suficiente para comparar este adaptador con otros m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Neetu143/idfc-genai-extractor-models
+- Repositorio en Hugging Face: https://huggingface.co/Neetu143/idfc-genai-extractor-models
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Espacio asociado (IDFC GenAI extractor): no se proporciona URL directa, pero se menciona en la model card como "IDFC GenAI extractor Space".

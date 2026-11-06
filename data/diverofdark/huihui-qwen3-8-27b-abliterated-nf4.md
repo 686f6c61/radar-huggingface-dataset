@@ -87,8 +87,8 @@ La diferencia fundamental entre las tres primeras filas no es de capacidad, sino
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/diverofdark/Huihui-Qwen3.8-27B-abliterated-nf4
-- Modelo base en HuggingFace: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/diverofdark/Huihui-Qwen3.8-27B-abliterated-nf4
+- Modelo base en Hugging Face: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Arbol de ficheros del modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated/tree/main
 - Ficha del modelo base en Featherless: https://featherless.ai/models/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Mirror del modelo base en GitHub: https://github.com/Ahaa43443/huihui-qwen3.8-27b-abliterated-mirror/tree/main

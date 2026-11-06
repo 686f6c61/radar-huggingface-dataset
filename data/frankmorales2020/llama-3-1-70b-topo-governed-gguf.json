@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "frankmorales2020/llama-3.1-70b-topo-governed-gguf",
+  "slug": "frankmorales2020-llama-3-1-70b-topo-governed-gguf",
+  "author": "frankmorales2020",
+  "url": "https://huggingface.co/frankmorales2020/llama-3.1-70b-topo-governed-gguf",
+  "created_at": "2026-11-02T17:51:17.000Z",
+  "updated_at": "2026-11-02T23:58:23.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "quantization",
+    "deterministic-ai",
+    "safety-critical",
+    "topological-continual-backpropagation",
+    "topo-cbp",
+    "arithmetic-spectral-theory",
+    "ast",
+    "llama.cpp",
+    "ollama",
+    "continual-learning",
+    "topological-governance",
+    "continual-backpropagation",
+    "stability-plasticity",
+    "open-science",
+    "text-generation",
+    "en",
+    "base_model:meta-llama/Llama-3.1-70B",
+    "base_model:quantized:meta-llama/Llama-3.1-70B",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 153,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 42520398080,
+  "storage_human": "42.5 GB",
+  "base_model": "meta-llama/Llama-3.1-70B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "frankmorales2020/llama-3.1-70b-topo-governed-gguf · Hugging Face",
+      "url": "https://huggingface.co/frankmorales2020/llama-3.1-70b-topo-governed-gguf",
+      "snippet": "Text Generation model with 71B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "frankmorales2020/llama-3.1-70b-topo-governed-gguf at main",
+      "url": "https://huggingface.co/frankmorales2020/llama-3.1-70b-topo-governed-gguf/tree/main",
+      "snippet": "frankmorales2020 / llama-3.1-70b-topo-governed-gguf Like 0 Text Generation GGUF English llama-cpp quantization deterministic-ai safety-critical topological-continual-backpropagation topo-cbp arithmetic-spectral-theory ast llama.cpp ollama continual-learning topological-governance continual-backpropagation stability-plasticity open-science conversational License:llama3.1 Model card FilesFiles ..."
+    }
+  ]
+}

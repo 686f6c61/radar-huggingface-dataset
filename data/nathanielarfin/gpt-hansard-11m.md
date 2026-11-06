@@ -99,7 +99,7 @@ Comparativa con alternativas externas: no disponible en la información proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NathanielArfin/gpt-hansard-11m
+- Modelo en Hugging Face: https://huggingface.co/NathanielArfin/gpt-hansard-11m
 - Dataset asociado: https://huggingface.co/datasets/NathanielArfin/canadian-hansard-2006-now
 - Script de entrenamiento y pipeline: `gpt_tokens.py` (autocontenido, PEP 723), referenciado en la model card
 - Paper, blog, repositorio o demo adicionales: no disponible; los resultados de la búsqueda web no contenían enlaces relevantes al modelo

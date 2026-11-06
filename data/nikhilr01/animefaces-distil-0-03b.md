@@ -87,7 +87,7 @@ Frente a Stable Diffusion 1.5, tinyflow es unas 25 veces mas pequeno, genera en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikhilr01/animefaces-distil-0.03b
+- Modelo en Hugging Face: https://huggingface.co/nikhilr01/animefaces-distil-0.03b
 - Repositorio con codigo, receta de entrenamiento y write-ups: https://github.com/nikhilr612/tinyflow
 - Demo interactiva en molab (marimo): https://molab.marimo.io/github/gist.github.com/nikhilr612/ea72d809a422de5462da9affbc609244
 - Notebook marimo: https://marimo.io

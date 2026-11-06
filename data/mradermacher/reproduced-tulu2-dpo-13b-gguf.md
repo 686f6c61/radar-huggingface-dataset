@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|---|
 | Reproduced-tulu2-dpo-13b-GGUF (este) | 13,0B | no disponible | no disponible | GGUF | Reproduccion Tulu 2 + DPO, solo ingles |
 | Tulu 2 13B (original, AI2) | 13B | 4096 tokens (referencia del pipeline Tulu 2) | AI2 ImpACT Low-risk | safetensors, GGUF comunitarios | Modelo de referencia del que deriva esta reproduccion; datos oficiales de la familia Tulu 2 |
-| Zephyr-7B-beta (HuggingFace H4) | 7,2B | 32768 tokens | MIT | safetensors, GGUF | Mismo dataset de preferencias (UltraFeedback); menor tamano y contexto mayor |
+| Zephyr-7B-beta (Hugging Face H4) | 7,2B | 32768 tokens | MIT | safetensors, GGUF | Mismo dataset de preferencias (UltraFeedback); menor tamano y contexto mayor |
 | Mistral-7B-Instruct-v0.2 | 7,2B | 32768 tokens | Apache 2.0 | safetensors, GGUF | Alternativa generalista de 7B con licencia permisiva |
 
 La comparativa con Tulu 2 13B se basa en la familia de referencia del pipeline; los datos de contexto y licencia de este repositorio concreto no estan declarados. No se dispone de comparaciones de rendimiento cuantitativas entre estos modelos en la informacion proporcionada.

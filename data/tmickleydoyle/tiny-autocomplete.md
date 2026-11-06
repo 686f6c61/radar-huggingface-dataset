@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tiny-autocomplete es un modelo de lenguaje en formato Llama de 91 millones de parámetros cuyos pesos no han sido entrenados mediante descenso de gradiente, sino compilados de forma determinista a partir de un conjunto de reglas cerradas. Lo desarrolla tmickleydoyle como proyecto experimental y lo publica en HuggingFace con licencia MIT. El modelo implementa de forma exacta, dentro de una arquitectura transformer estándar, un modelo de lenguaje n-grama interpolado Witten-Bell de orden 5 sobre un vocabulario de 1.053 palabras.
+tiny-autocomplete es un modelo de lenguaje en formato Llama de 91 millones de parámetros cuyos pesos no han sido entrenados mediante descenso de gradiente, sino compilados de forma determinista a partir de un conjunto de reglas cerradas. Lo desarrolla tmickleydoyle como proyecto experimental y lo publica en Hugging Face con licencia MIT. El modelo implementa de forma exacta, dentro de una arquitectura transformer estándar, un modelo de lenguaje n-grama interpolado Witten-Bell de orden 5 sobre un vocabulario de 1.053 palabras.
 
 La relevancia del proyecto es fundamentalmente didáctica y de ingeniería: demuestra que una red `LlamaForCausalLM` con módulos estándar (sin `trust_remote_code`) puede reproducir con precisión de 1e-3 nats las log-probabilidades de un n-grama clásico, y que el resultado se puede ejecutar tanto con `transformers` como con un runtime en TypeScript sin dependencias. No es un modelo de propósito general ni compite en benchmarks de razonamiento.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tiny-autocomplete | 91M | 128 posiciones (4 tokens efectivos) | Transformer compilado que emula un n-grama Witten-Bell | MIT | HuggingFace, runtime TypeScript |
+| tiny-autocomplete | 91M | 128 posiciones (4 tokens efectivos) | Transformer compilado que emula un n-grama Witten-Bell | MIT | Hugging Face, runtime TypeScript |
 | Modelos n-grama clásicos (KenLM, SRILM) | no aplica | configurable | Modelo estadístico puro | variable | herramientas estándar de NLP |
-| Modelos causales pequeños entrenados (por ejemplo, GPT-2 small, 124M) | 124M | 1024 | Transformer entrenado con descenso de gradiente | variable | HuggingFace |
+| Modelos causales pequeños entrenados (por ejemplo, GPT-2 small, 124M) | 124M | 1024 | Transformer entrenado con descenso de gradiente | variable | Hugging Face |
 
 La comparación con modelos neuronales pequeños no es directa: tiny-autocomplete no generaliza y solo reproduce sus frases fuente, mientras que un modelo entrenado de tamaño similar aprende representaciones generales. Frente a un n-grama clásico, la diferencia es de empaquetado: misma semántica estadística, pero dentro de un grafo transformer ejecutable con herramientas de ML modernas.
 
@@ -84,7 +84,7 @@ La comparación con modelos neuronales pequeños no es directa: tiny-autocomplet
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tmickleydoyle/tiny-autocomplete
+- Hugging Face: https://huggingface.co/tmickleydoyle/tiny-autocomplete
 - Documentación de construcción: docs/how-it-works.md (incluido en el repositorio)
 - Compilador de pesos: build_weights.py (incluido en el repositorio)
 - Suite de verificación: test_model.py (incluido en el repositorio)

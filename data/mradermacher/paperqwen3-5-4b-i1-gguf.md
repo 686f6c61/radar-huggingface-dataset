@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PaperQwen3.5-4B-i1-GGUF es una publicacion de cuantizaciones GGUF generada por mradermacher a partir del modelo base PaperQwen3.5-4B, alojado por el usuario Thermostatic en HuggingFace. Se trata, por tanto, de un artefacto derivado orientado a la inferencia local con llama.cpp y herramientas compatibles, y no de un modelo entrenado desde cero por el autor del repositorio. El nombre sugiere un modelo de la familia Qwen 3.5 con aproximadamente 4.000 millones de parametros, aunque esta informacion no se confirma en los metadatos disponibles.
+PaperQwen3.5-4B-i1-GGUF es una publicacion de cuantizaciones GGUF generada por mradermacher a partir del modelo base PaperQwen3.5-4B, alojado por el usuario Thermostatic en Hugging Face. Se trata, por tanto, de un artefacto derivado orientado a la inferencia local con llama.cpp y herramientas compatibles, y no de un modelo entrenado desde cero por el autor del repositorio. El nombre sugiere un modelo de la familia Qwen 3.5 con aproximadamente 4.000 millones de parametros, aunque esta informacion no se confirma en los metadatos disponibles.
 
 La relevancia de este repositorio reside en que ofrece el modelo base en multiples niveles de cuantizacion (desde IQ1_S hasta Q6_K), lo que permite desplegarlo en hardware muy diverso, desde equipos de gama de entrada hasta estaciones de trabajo con GPU de consumo. Sin embargo, la informacion publica es extremadamente escasa: no hay model card descriptiva, no se declaran licencia, idiomas ni pipeline, y el repositorio registra cero descargas y cero likes en el momento de la consulta.
 
@@ -25,7 +25,7 @@ El dato de parametros totales reportado en safetensors (1.797.272) es incompatib
 
 No se dispone de informacion sobre la arquitectura del modelo base PaperQwen3.5-4B en los datos proporcionados. El nombre sugiere que deriva de la familia Qwen 3.5, lo que implicaria un transformer decoder-only, pero no hay confirmacion en la model card ni en los metadatos del repositorio. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
 
-Lo unico verificable es el proceso de cuantizacion: el autor indica el uso de cuantizaciones ponderadas (weighted/imatrix) con convert_type hf, lo que implica que los pesos se convirtieron desde el formato HuggingFace original al formato GGUF de llama.cpp aplicando una matriz de importancia para mejorar la calidad en cuantizaciones de baja precision. No se detalla la herramienta exacta (probablemente llama.cpp o una variante propia) ni los parametros de calibracion empleados.
+Lo unico verificable es el proceso de cuantizacion: el autor indica el uso de cuantizaciones ponderadas (weighted/imatrix) con convert_type hf, lo que implica que los pesos se convirtieron desde el formato Hugging Face original al formato GGUF de llama.cpp aplicando una matriz de importancia para mejorar la calidad en cuantizaciones de baja precision. No se detalla la herramienta exacta (probablemente llama.cpp o una variante propia) ni los parametros de calibracion empleados.
 
 ## Capacidades
 
@@ -75,5 +75,5 @@ No disponible. La informacion proporcionada no permite identificar con certeza e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/PaperQwen3.5-4B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/PaperQwen3.5-4B-i1-GGUF
 - Modelo base: https://huggingface.co/Thermostatic/PaperQwen3.5-4B

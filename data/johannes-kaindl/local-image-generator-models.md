@@ -74,12 +74,12 @@ La comparativa se limita a los dos modelos que ofrece el plugin: SD-Turbo (rapid
 - **Riesgo de alucinacion visual**: como todo modelo de difusion, puede generar detalles inconsistentes o artefactos en escenas complejas.
 - **Licencia restrictiva para uso comercial**: la Stability AI Community License permite uso comercial solo por debajo de un umbral de ingresos anuales; superado ese limite, se requiere una licencia de pago. El plugin en si es AGPL-3.0-or-later, lo que puede afectar a distribuciones del codigo.
 - **Dependencia de WebGPU**: sin soporte WebGPU en el navegador, el modelo no puede ejecutarse. No hay fallback a CPU.
-- **Verificacion de integridad**: los archivos se descargan solo despues de que el usuario haga clic en "Descargar" y se verifican contra un SHA-256 fijado en la version del plugin, pero el repositorio de HuggingFace no ofrece una suma de verificacion propia.
+- **Verificacion de integridad**: los archivos se descargan solo despues de que el usuario haga clic en "Descargar" y se verifican contra un SHA-256 fijado en la version del plugin, pero el repositorio de Hugging Face no ofrece una suma de verificacion propia.
 - **Privacidad**: al ejecutarse localmente, no se envian prompts a servidores, pero el plugin descarga los pesos (2.5 GB) en la primera ejecucion, lo que requiere ancho de banda.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/johannes-kaindl/local-image-generator-models
+- Repositorio de Hugging Face: https://huggingface.co/johannes-kaindl/local-image-generator-models
 - Repositorio del plugin en GitHub: https://github.com/johannes-kaindl/local-image-generator
 - README del plugin: https://github.com/johannes-kaindl/local-image-generator/blob/main/README.md
 - Modelo base (Stability AI): https://huggingface.co/stabilityai/sd-turbo

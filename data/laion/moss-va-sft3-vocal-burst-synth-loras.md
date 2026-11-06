@@ -67,7 +67,7 @@ La metrica estricta es casi cero en todas partes, lo que se explica porque el de
 - El modelo base `moss-tts-local-transformer-4.55b-voice-acting-v2-sft3` tiene 4.55B parametros, por lo que se estima que la inferencia requiere al menos 10-12 GB de VRAM en FP16, o menos con cuantizacion (por ejemplo, 6-8 GB en 8 bits).
 - GPU recomendadas: tarjetas con 16 GB o mas (RTX 4090, A100, H100) para ejecutar el modelo base con margen; GPUs de 8 GB podrian funcionar con cuantizacion agresiva.
 - Los adaptadores en si son ligeros (0.8 GB en total para las seis clases) y se cargan en memoria junto al modelo base.
-- Opciones de despliegue: al ser PEFT, se integra con el ecosistema HuggingFace Transformers y puede servirse con vLLM, TGI o llama.cpp si el modelo base se convierte a GGUF. El repositorio de LAION incluye un servidor de demostracion en streaming (GitHub) que muestra el uso con el modelo base.
+- Opciones de despliegue: al ser PEFT, se integra con el ecosistema Hugging Face Transformers y puede servirse con vLLM, TGI o llama.cpp si el modelo base se convierte a GGUF. El repositorio de LAION incluye un servidor de demostracion en streaming (GitHub) que muestra el uso con el modelo base.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No se dispone de modelos comparables directos en la informacion proporcionada. E
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/moss-va-sft3-vocal-burst-synth-loras
+- Modelo en Hugging Face: https://huggingface.co/laion/moss-va-sft3-vocal-burst-synth-loras
 - Repositorio de adaptadores originales (version anterior): https://huggingface.co/laion/moss-va-sft3-vocal-burst-lora-adapters
 - Servidor de demostracion en streaming (GitHub): https://github.com/LAION-AI/Humaneness-Voice-Demo-Server
 - Manual y estudios de MOSS Voice-Acting: https://projects.laion.ai/moss-voiceacting-manual/site/index.html

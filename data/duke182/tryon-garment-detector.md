@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Try-on garment detector es un modelo de detección de objetos especializado en prendas de vestir, desarrollado por el usuario duke182 y publicado en HuggingFace. Se trata de un fine-tuning del detector D-FINE-nano (variante ligera de la familia D-FINE, con backbone COCO preentrenado) orientado a un caso de uso muy concreto: identificar en una imagen qué prenda corresponde a la parte superior del cuerpo, a la parte inferior o a un vestido completo, como paso previo a una experiencia de probador virtual en el navegador.
+Try-on garment detector es un modelo de detección de objetos especializado en prendas de vestir, desarrollado por el usuario duke182 y publicado en Hugging Face. Se trata de un fine-tuning del detector D-FINE-nano (variante ligera de la familia D-FINE, con backbone COCO preentrenado) orientado a un caso de uso muy concreto: identificar en una imagen qué prenda corresponde a la parte superior del cuerpo, a la parte inferior o a un vestido completo, como paso previo a una experiencia de probador virtual en el navegador.
 
 El modelo se distribuye exclusivamente en formato ONNX y está pensado para ejecutarse con ONNX Runtime Web sobre WebGPU, con un rendimiento declarado de aproximadamente 18 ms por imagen en un Apple M1. Esta orientación a inferencia en cliente (edge/browser) condiciona todo el diseño: entrada fija de 320x320 píxeles, salida de 100 detecciones con tres clases y una única etapa de post-proceso mediante sigmoide.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks estándar (COCO mAP, Fashionpedia m
 
 | Modelo | Parametros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| try-on-garment-detector (este) | no disponible (D-FINE-nano) | 320x320 px | Precision 0,837 / recall 0,631 en validación propia (25+50 imágenes) | Apache-2.0 | ONNX en HuggingFace |
-| ustc-community/dfine-nano-coco (base) | no disponible | COCO estándar | mAP COCO no consultado en esta ficha | Apache-2.0 | HuggingFace |
+| try-on-garment-detector (este) | no disponible (D-FINE-nano) | 320x320 px | Precision 0,837 / recall 0,631 en validación propia (25+50 imágenes) | Apache-2.0 | ONNX en Hugging Face |
+| ustc-community/dfine-nano-coco (base) | no disponible | COCO estándar | mAP COCO no consultado en esta ficha | Apache-2.0 | Hugging Face |
 | Detectores genéricos tipo YOLO-nano | no disponible | variable | no disponible | variable (AGPL o Apache según variante) | múltiples |
 
 La comparación con alternativas de la misma categoría (detectores de prendas pequeños) no está disponible en la información proporcionada; el autor no publica comparativas frente a otros detectores de moda.
@@ -90,7 +90,7 @@ La comparación con alternativas de la misma categoría (detectores de prendas p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/duke182/tryon-garment-detector
+- Modelo en Hugging Face: https://huggingface.co/duke182/tryon-garment-detector
 - Modelo base: https://huggingface.co/ustc-community/dfine-nano-coco
 - Repositorio D-FINE: https://github.com/Peterande/D-FINE
 - Dataset Fashionpedia: https://huggingface.co/datasets/detection-datasets/fashionpedia

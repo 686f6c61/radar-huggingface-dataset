@@ -110,7 +110,7 @@ No se dispone de datos de benchmarks ni especificaciones de modelos de terceros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ISTA-DASLab/Kimi-K3-P48NVFP4-MoESQ
+- Hugging Face: https://huggingface.co/ISTA-DASLab/Kimi-K3-P48NVFP4-MoESQ
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3
 - Paper: https://arxiv.org/abs/2610.02241 (Hardware-Native Joint Sparse-Quantization for Trillion-Scale Mixture-of-Experts)
 - Codigo: https://github.com/IST-DASLab/MoESQ

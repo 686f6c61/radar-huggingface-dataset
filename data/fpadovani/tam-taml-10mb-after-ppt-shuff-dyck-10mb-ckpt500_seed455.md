@@ -45,7 +45,7 @@ No se documenta en la model card el numero de tokens de entrenamiento, la compos
 - Generacion de texto de baja latencia en CPU: con unos 39 M de parametros, puede ejecutarse en hardware modesto para generar texto corto, util como banco de pruebas o demo educativa.
 - Linea base (baseline) en experimentos de ajuste fino: por su tamano reducido, es un candidato barato para comparar tecnicas de SFT antes de escalar a modelos mayores.
 - Analisis de sesgos y comportamiento en modelos pequenos: permite estudiar que patrones aprende un modelo diminuto y como se degrada fuera de su distribucion de entrenamiento.
-- Prototipado de pipelines con TRL: sirve como ejemplo de extremo a extremo de un flujo de SFT con TRL y subida a HuggingFace Hub.
+- Prototipado de pipelines con TRL: sirve como ejemplo de extremo a extremo de un flujo de SFT con TRL y subida a Hugging Face Hub.
 
 En ningun caso se recomienda su uso en produccion orientada al usuario final: es un artefacto de investigacion sin licencia definida ni evaluacion publicada.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tam-taml-10mb-after-ppt-shuff-dyck-10mb-ckpt500_seed455 | 39 M | no disponible | no disponible | HuggingFace (repo publico) |
-| distilgpt2 | 82 M | 1024 tokens | Apache-2.0 | HuggingFace |
-| GPT-2 small | 124 M | 1024 tokens | MIT | HuggingFace |
-| Modelos TinyStories (p. ej. 33 M) | ~33 M | variable segun version | variable (segun version) | HuggingFace |
+| tam-taml-10mb-after-ppt-shuff-dyck-10mb-ckpt500_seed455 | 39 M | no disponible | no disponible | Hugging Face (repo publico) |
+| distilgpt2 | 82 M | 1024 tokens | Apache-2.0 | Hugging Face |
+| GPT-2 small | 124 M | 1024 tokens | MIT | Hugging Face |
+| Modelos TinyStories (p. ej. 33 M) | ~33 M | variable segun version | variable (segun version) | Hugging Face |
 
 Nota: la comparativa se limita a parametros, contexto disponible de forma publica y licencia. No se dispone de resultados de benchmarks del modelo objeto de la ficha, por lo que no se puede comparar rendimiento numerico con estas alternativas.
 
@@ -84,7 +84,7 @@ Nota: la comparativa se limita a parametros, contexto disponible de forma public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/tam-taml-10mb-after-ppt-shuff-dyck-10mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/tam-taml-10mb-after-ppt-shuff-dyck-10mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/fpadovani/tam-taml-10mb-ppt-shuff-dyck-10mb_seed455
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/z21r9ehe
 - Repositorio de TRL: https://github.com/huggingface/trl

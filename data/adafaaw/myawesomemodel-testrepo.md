@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`adafaaw/MyAwesomeModel-TestRepo` es un repositorio alojado en HuggingFace cuyo nombre indica explicitamente que se trata de una prueba ("TestRepo"). Los metadatos de la plataforma lo etiquetan como un modelo basado en BERT, orientado a `feature-extraction`, con licencia MIT, 0 descargas y 0 likes desde su creacion el 14 de septiembre de 2026. El tamano del repositorio figura como 0.0 GB, lo que sugiere que no contiene pesos publicados.
+`adafaaw/MyAwesomeModel-TestRepo` es un repositorio alojado en Hugging Face cuyo nombre indica explicitamente que se trata de una prueba ("TestRepo"). Los metadatos de la plataforma lo etiquetan como un modelo basado en BERT, orientado a `feature-extraction`, con licencia MIT, 0 descargas y 0 likes desde su creacion el 14 de septiembre de 2026. El tamano del repositorio figura como 0.0 GB, lo que sugiere que no contiene pesos publicados.
 
 La model card incluida es, sin embargo, la de un supuesto modelo generativo de razonamiento llamado "MyAwesomeModel": describe mejoras de razonamiento tras un post-entrenamiento, function calling, soporte de system prompt y una tabla de benchmarks con referencias anonimizadas (Model1, Model2, Model1-v2). No hay correspondencia entre esa model card y las etiquetas tecnicas del repositorio (`bert`, `feature-extraction`).
 
@@ -121,7 +121,7 @@ No disponible. No es posible establecer una comparativa rigurosa por tres motivo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adafaaw/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/adafaaw/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible; la model card remite genericamente a "our code repository" sin enlace

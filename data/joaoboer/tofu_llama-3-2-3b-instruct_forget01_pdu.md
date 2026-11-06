@@ -6,7 +6,7 @@
 
 Técnicamente es un transformer decoder-only de la familia Llama 3.2, con 3.212.749.824 parámetros reales (según los pesos en safetensors) y aproximadamente 6,4 GB de repositorio, lo que corresponde a pesos en precisión de 16 bits. Hereda del modelo base la arquitectura, el tokenizador y la naturaleza conversacional de Llama 3.2 3B Instruct, pero sus pesos han sido modificados para reducir la memorización del subconjunto de datos de olvido mientras se intenta preservar la utilidad general.
 
-Su relevancia es doble: por un lado, permite reproducir y auditar una configuración concreta de PDU (con parámetros primal-dual documentados); por otro, actúa como pieza intermedia en una línea de investigación que estudia si la decodificación especulativa puede usarse para aislar o reforzar el olvido. No tiene descargas ni valoraciones registradas y no se declaran idiomas soportados en la ficha de HuggingFace.
+Su relevancia es doble: por un lado, permite reproducir y auditar una configuración concreta de PDU (con parámetros primal-dual documentados); por otro, actúa como pieza intermedia en una línea de investigación que estudia si la decodificación especulativa puede usarse para aislar o reforzar el olvido. No tiene descargas ni valoraciones registradas y no se declaran idiomas soportados en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -86,9 +86,9 @@ No se han publicado resultados de benchmarks de propósito general en la informa
 
 | Modelo | Parametros | Contexto | Olvido aplicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_PDU | 3,21 mil millones | No disponible | Si, PDU sobre TOFU `forget01` | llama3.2 | HuggingFace, 0 descargas |
-| open-unlearning/tofu_Llama-3.2-3B-Instruct_full (modelo base) | 3,21 mil millones (misma base) | No disponible | No | llama3.2 | HuggingFace |
-| Llama-3.2-3B-Instruct (modelo original de Meta) | 3,21 mil millones | No disponible en la informacion proporcionada | No | llama3.2 | HuggingFace |
+| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_PDU | 3,21 mil millones | No disponible | Si, PDU sobre TOFU `forget01` | llama3.2 | Hugging Face, 0 descargas |
+| open-unlearning/tofu_Llama-3.2-3B-Instruct_full (modelo base) | 3,21 mil millones (misma base) | No disponible | No | llama3.2 | Hugging Face |
+| Llama-3.2-3B-Instruct (modelo original de Meta) | 3,21 mil millones | No disponible en la informacion proporcionada | No | llama3.2 | Hugging Face |
 
 No se dispone de las métricas de TOFU del modelo base ni del modelo original dentro de la información proporcionada, por lo que no es posible cuantificar la degradación o mejora relativa. Tampoco se han identificado en la búsqueda web modelos comparables de la misma categoría (3B con olvido supervisado sobre TOFU).
 
@@ -106,10 +106,10 @@ No se dispone de las métricas de TOFU del modelo base ni del modelo original de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_PDU
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_PDU
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning
 - Proyecto Speculative-Decoding-Unlearning: https://github.com/JoaoVitorBoer/Speculative-Decoding-Unlearning
-- Configuración de entrenamiento y evaluaciones: `.hydra/config.yaml` y `evals/` dentro del repositorio de HuggingFace
+- Configuración de entrenamiento y evaluaciones: `.hydra/config.yaml` y `evals/` dentro del repositorio de Hugging Face
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante; las URL devueltas corresponden a hilos del foro de ELSTER sobre la presentación electrónica de balances (E-Bilanz) y no guardan relación con el modelo.

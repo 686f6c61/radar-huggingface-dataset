@@ -5,7 +5,7 @@
 
 El problema principal que aborda este repositorio no es tanto la traduccion en si, sino la portabilidad del checkpoint NVFP4 a un runtime de inferencia en C++ como llama.cpp, manteniendo los pesos en 4 bits y los tensores de embedding y salida en BF16. La relevancia actual radica en que la ruta nativa NVFP4 requiere hardware Blackwell, y en que la version estandar de llama.cpp no funciona con este archivo sin un parche especifico.
 
-El modelo es de tipo translation (pipeline oficial de HuggingFace), esta etiquetado con `gemma3` y `nvfp4`, y se distribuye bajo la licencia Gemma. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica que es una publicacion reciente y de baja difusion.
+El modelo es de tipo translation (pipeline oficial de Hugging Face), esta etiquetado con `gemma3` y `nvfp4`, y se distribuye bajo la licencia Gemma. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica que es una publicacion reciente y de baja difusion.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 ## Comparativa con modelos similares
 | Modelo | Formato / cuantizacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zed122/translategemma_nvfp4_gguf | GGUF, NVFP4 (embeddings en BF16) | Aproximadamente 4.000 millones (segun nombre del base) | No disponible | Gemma | HuggingFace, requiere llama.cpp parcheado |
-| kaitchup/translategemma-4b-it-NVFP4 | compressed-tensors, NVFP4 | Aproximadamente 4.000 millones (segun nombre) | No disponible | Gemma | HuggingFace |
-| TranslateGemma 4B IT (base de Google) | Pesos originales (formato no especificado en la informacion) | Aproximadamente 4.000 millones (segun nombre) | No disponible | Gemma | HuggingFace (referencia en la model card) |
+| zed122/translategemma_nvfp4_gguf | GGUF, NVFP4 (embeddings en BF16) | Aproximadamente 4.000 millones (segun nombre del base) | No disponible | Gemma | Hugging Face, requiere llama.cpp parcheado |
+| kaitchup/translategemma-4b-it-NVFP4 | compressed-tensors, NVFP4 | Aproximadamente 4.000 millones (segun nombre) | No disponible | Gemma | Hugging Face |
+| TranslateGemma 4B IT (base de Google) | Pesos originales (formato no especificado en la informacion) | Aproximadamente 4.000 millones (segun nombre) | No disponible | Gemma | Hugging Face (referencia en la model card) |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la informacion proporcionada.
 

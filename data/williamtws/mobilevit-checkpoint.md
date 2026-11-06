@@ -6,7 +6,7 @@ MobileViT for Generation es una implementacion propia del autor williamtws que e
 
 La relevancia del repositorio es, por tanto, de tipo experimental y de andamiaje: sirve para inspeccionar una implementacion concreta de MobileViT con atencion dilatada y fusion por cross attention, y para probar una tuberia de entrenamiento con un recipe por defecto basado en SGD con scheduler polinomial. No hay evidencia de que se haya completado un entrenamiento ni de que exista una evaluacion sobre conjuntos held-out.
 
-El numero de parametros registrado en el fichero safetensors es de unicamente 16.576, un valor extraordinariamente bajo que refuerza la interpretacion de que se trata de un artefacto de inicializacion o de un stub de desarrollo mas que de un modelo funcional para generacion. La licencia declarada es BSD-3-Clause y el pipeline no esta especificado en HuggingFace.
+El numero de parametros registrado en el fichero safetensors es de unicamente 16.576, un valor extraordinariamente bajo que refuerza la interpretacion de que se trata de un artefacto de inicializacion o de un stub de desarrollo mas que de un modelo funcional para generacion. La licencia declarada es BSD-3-Clause y el pipeline no esta especificado en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -46,7 +46,7 @@ El recipe de experimento por defecto que acompana al repositorio usa SGD con un 
 - Reproduccion de experimentos academicos: el repositorio incluye `config.json` y `training_args.json`, lo que permite fijar una receta concreta (SGD mas scheduler polinomial) y compararla con lineas base de igual capacidad.
 - Desarrollo de tuberias de entrenamiento: util como esqueleto para montar un pipeline completo antes de invertir en computo de entrenamiento a gran escala.
 - Evaluacion metodologica: la model card sugiere evaluar sobre un conjunto held-out especifico de la tarea, reportar la metrica en al menos tres semillas y comparar contra una linea base de capacidad equivalente; el repositorio puede usarse como punto de partida para ese protocolo.
-- Docencia y formacion: adecuado para ilustrar como se empaqueta un modelo con configuracion explicita y checkpoint de inicializacion en HuggingFace.
+- Docencia y formacion: adecuado para ilustrar como se empaqueta un modelo con configuracion explicita y checkpoint de inicializacion en Hugging Face.
 
 No se dispone de informacion que permita justificar casos de uso en produccion con datos reales, dado que no existe un checkpoint entrenado ni resultados de evaluacion.
 
@@ -68,7 +68,7 @@ No se dispone de datos comparativos en la informacion proporcionada. El autor no
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| williamtws/mobilevit-checkpoint | 16.576 | No disponible | Sin benchmarks publicados | BSD-3-Clause | HuggingFace |
+| williamtws/mobilevit-checkpoint | 16.576 | No disponible | Sin benchmarks publicados | BSD-3-Clause | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -84,4 +84,4 @@ No se dispone de datos comparativos en la informacion proporcionada. El autor no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/williamtws/mobilevit-checkpoint
+- Modelo en Hugging Face: https://huggingface.co/williamtws/mobilevit-checkpoint

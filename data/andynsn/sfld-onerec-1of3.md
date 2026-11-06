@@ -21,7 +21,7 @@ El modelo tiene 2.131.878.912 parámetros (aproximadamente 2,13B) y se distribuy
 
 ## Arquitectura y entrenamiento
 
-El checkpoint se basa en la arquitectura OneRec, que según el informe técnico (arXiv 2506.13695) emplea un modelo encoder-decoder para generar directamente los ítems preferidos por el usuario, guiado por un modelo de recompensa. Esto sustituye el enfoque tradicional en cascada (recuperación, pre-ranking, ranking) por un único paso generativo. El tag de HuggingFace indica "qwen3", lo que sugiere que la implementación concreta podría derivar de la familia Qwen3, aunque no se confirma en la documentación.
+El checkpoint se basa en la arquitectura OneRec, que según el informe técnico (arXiv 2506.13695) emplea un modelo encoder-decoder para generar directamente los ítems preferidos por el usuario, guiado por un modelo de recompensa. Esto sustituye el enfoque tradicional en cascada (recuperación, pre-ranking, ranking) por un único paso generativo. El tag de Hugging Face indica "qwen3", lo que sugiere que la implementación concreta podría derivar de la familia Qwen3, aunque no se confirma en la documentación.
 
 El entrenamiento se realizó mediante SFLD: el estudiante OneRec-1.7B se destiló a partir del teacher OneRec-8B (congelado). Los datos de entrenamiento corresponden a una variante determinista de UID-hash (1/3), pero ni los datos crudos ni la caché del teacher se incluyen en el repositorio. El protocolo de entrenamiento usó seis GPUs RTX 6000D, con microbatch por dispositivo de 1, acumulación de gradientes de 22 y un batch global efectivo de 132. El runtime fue PyTorch 2.9.0+cu128 con atención SDPA en BF16. El commit upstream de OpenOneRec se referencia como a969edcadd579a06c1966ae1db5984e02f48beff.
 
@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Andynsn/SFLD-OneRec-1of3
+- Hugging Face: https://huggingface.co/Andynsn/SFLD-OneRec-1of3
 - Paper OneRec (informe técnico): https://arxiv.org/abs/2506.13695
 - Paper OneRec (unificación retrieve y rank): https://arxiv.org/abs/2502.18965
-- Colección de Andynsn en HuggingFace: https://huggingface.co/collections/Andynsn/rec
+- Colección de Andynsn en Hugging Face: https://huggingface.co/collections/Andynsn/rec

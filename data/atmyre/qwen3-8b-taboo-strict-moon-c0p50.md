@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables directamente. El adaptad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atmyre/qwen3-8b-taboo-strict-moon-c0p50
+- Modelo en Hugging Face: https://huggingface.co/Atmyre/qwen3-8b-taboo-strict-moon-c0p50
 - Colección AO Anti-Reading: https://huggingface.co/collections/Atmyre/ao-anti-reading
 - Paper "Activation Oracles" (Karvonen et al., 2025): https://arxiv.org/abs/2512.15674
 - Paper del estudio que utiliza estos pesos: https://arxiv.org/abs/2607.23379

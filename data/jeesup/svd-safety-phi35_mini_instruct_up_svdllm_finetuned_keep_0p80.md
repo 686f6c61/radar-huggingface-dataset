@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una version comprimida de `microsoft/Phi-3.5-mini-instruct` mediante el metodo completo SVD-LLM (truncamiento por descomposicion en valores singulares con refinamiento LoRA posterior). Lo publica el usuario de HuggingFace Jeesup y esta pensado como artefacto de investigacion para estudiar como afecta la compresion de bajo rango al rendimiento funcional y, en particular, al comportamiento de seguridad del modelo. Se elimina el 20 % de los parametros efectivos (fraccion realizada 0,79972), con un pipeline de blanqueado de datos, truncacion SVD, LoRA sobre los factores U, fusion, LoRA sobre los factores V, fusion y plegado a un checkpoint denso.
+Este repositorio contiene una version comprimida de `microsoft/Phi-3.5-mini-instruct` mediante el metodo completo SVD-LLM (truncamiento por descomposicion en valores singulares con refinamiento LoRA posterior). Lo publica el usuario de Hugging Face Jeesup y esta pensado como artefacto de investigacion para estudiar como afecta la compresion de bajo rango al rendimiento funcional y, en particular, al comportamiento de seguridad del modelo. Se elimina el 20 % de los parametros efectivos (fraccion realizada 0,79972), con un pipeline de blanqueado de datos, truncacion SVD, LoRA sobre los factores U, fusion, LoRA sobre los factores V, fusion y plegado a un checkpoint denso.
 
 La particularidad tecnica mas relevante es que Phi-3.5 fusiona q/k/v en una sola `qkv_proj` y gate/up en una `gate_up_proj`, mientras que SVD-LLM comprime las siete proyecciones por separado. El autor convirtio el checkpoint a layout `LlamaForCausalLM` antes de comprimir (gate ocupa la primera mitad de `gate_up_proj`) y solo acepto la conversion cuando los logits en float64 coincidian con los del `Phi3ForCausalLM` original dentro del ruido numerico de cada modelo. El resultado carga con `transformers` estandar y sin codigo de modelado a medida.
 
@@ -108,7 +108,7 @@ Los datos de rendimiento comparados no estan disponibles: la informacion proporc
 - Tool calling, function calling y comportamiento agentico no estan documentados ni evaluados para este checkpoint.
 - Modelo con 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado ni validacion independiente: no hay garantia de reproducibilidad por terceros.
 - Aunque la licencia es MIT, el repositorio hereda `LICENSE` y `NOTICE.md` del modelo base; conviene revisarlos antes de un uso comercial.
-- La fecha de creacion registrada en HuggingFace es 2026-09-15, posterior a la de la mayoria de modelos comparables; conviene verificar la vigencia de los enlaces y del commit de SVD-LLM referenciado (`7538cca98880`).
+- La fecha de creacion registrada en Hugging Face es 2026-09-15, posterior a la de la mayoria de modelos comparables; conviene verificar la vigencia de los enlaces y del commit de SVD-LLM referenciado (`7538cca98880`).
 - El componente personalizado `component/svd_llama.py` (sha256 `e65f644f9316`) se incluye junto al checkpoint; el modelo final no lo necesita para cargar, pero si para reproducir el pipeline.
 
 ## Enlaces

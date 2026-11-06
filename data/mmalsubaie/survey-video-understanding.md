@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo entrenado, sino un cuaderno de notas de investigación (research notes) sobre comprensión de vídeo, publicado por el usuario mmalsubaie en HuggingFace. El artefacto principal es un fichero `notes.md` que describe el alcance de una pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y requisitos de reproducibilidad antes de reportar cualquier resultado experimental.
+Este repositorio no contiene un modelo entrenado, sino un cuaderno de notas de investigación (research notes) sobre comprensión de vídeo, publicado por el usuario mmalsubaie en Hugging Face. El artefacto principal es un fichero `notes.md` que describe el alcance de una pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y requisitos de reproducibilidad antes de reportar cualquier resultado experimental.
 
 El autor indica explícitamente que no reclama mejoras de benchmark, ablaciones completas, código liberado ni checkpoint entrenado. El repositorio se etiqueta con `transformer`, `safetensors`, `research-notes` y `video-understanding`, pero su tamaño real es de 0.0 GB y solo contiene documentación en Markdown, por lo que las etiquetas de arquitectura no describen un artefacto funcional.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es principalmente metodológica: sirve como ejemplo 
 
 ## Arquitectura y entrenamiento
 
-No se describe ninguna arquitectura de red neuronal en la información disponible. El repositorio contiene únicamente ficheros de texto (`notes.md` y `README.md`) y no incluye definición de modelo, configuración de entrenamiento, dataset, proceso de RLHF/DPO ni innovaciones técnicas. La etiqueta `transformer` aparece en los metadatos de HuggingFace, pero el autor no la respalda con ningún artefacto.
+No se describe ninguna arquitectura de red neuronal en la información disponible. El repositorio contiene únicamente ficheros de texto (`notes.md` y `README.md`) y no incluye definición de modelo, configuración de entrenamiento, dataset, proceso de RLHF/DPO ni innovaciones técnicas. La etiqueta `transformer` aparece en los metadatos de Hugging Face, pero el autor no la respalda con ningún artefacto.
 
 El contenido planificado en la nota menciona una comparación propuesta con baselines emparejados y un contexto de evaluación concreto basado en los conjuntos MSR-VTT y ActivityNet Captions. Se trata de planes e hipótesis, no de experimentos ejecutados. La propia model card advierte que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales, y que cualquier resultado futuro debería incluir versiones de dataset, comandos, semillas, hardware y registros en bruto.
 
@@ -43,7 +43,7 @@ El contenido planificado en la nota menciona una comparación propuesta con base
 - Diseño de protocolos de evaluación en vídeo: la nota referencia MSR-VTT y ActivityNet Captions como contextos concretos, lo que sirve como punto de partida para seleccionar datasets de validación.
 - Plantilla de checklist de reproducibilidad: útil para equipos que quieran exigir versiones de dataset, semillas, hardware y registros en bruto en sus propios informes.
 - Revisión de literatura interna: las referencias mencionadas en la nota pueden usarse como bibliografía inicial para un estado del arte sobre vídeo.
-- Auditoría de catalogación en HuggingFace: este repositorio ilustra cómo las etiquetas automáticas (`transformer`, `safetensors`) pueden clasificar como modelo algo que no lo es, caso útil para quien mantiene pipelines de descubrimiento de modelos.
+- Auditoría de catalogación en Hugging Face: este repositorio ilustra cómo las etiquetas automáticas (`transformer`, `safetensors`) pueden clasificar como modelo algo que no lo es, caso útil para quien mantiene pipelines de descubrimiento de modelos.
 - Docencia sobre higiene experimental: sirve como ejemplo de distinción entre hipótesis, planes y resultados verificados en un contexto académico.
 
 ## Benchmarks y rendimiento
@@ -88,7 +88,7 @@ No se dispone de datos verificables para completar una comparación cuantitativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mmalsubaie/survey-video-understanding
+- Repositorio en Hugging Face: https://huggingface.co/mmalsubaie/survey-video-understanding
 - Fichero de notas principal: https://huggingface.co/mmalsubaie/survey-video-understanding/blob/main/notes.md
 - Documentación del repositorio: https://huggingface.co/mmalsubaie/survey-video-understanding/blob/main/README.md
 - Dataset MSR-VTT (referenciado en la nota, sin enlace directo aportado): no disponible

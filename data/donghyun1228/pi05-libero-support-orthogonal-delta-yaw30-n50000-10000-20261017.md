@@ -75,7 +75,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Como refere
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-libero-support-orthogonal-delta-yaw30 (este) | no disponible | no disponible | 1221/2000 en LIBERO (MuJoCo 3.2.3) | Apache 2.0 | HuggingFace (Donghyun1228) |
+| pi05-libero-support-orthogonal-delta-yaw30 (este) | no disponible | no disponible | 1221/2000 en LIBERO (MuJoCo 3.2.3) | Apache 2.0 | Hugging Face (Donghyun1228) |
 | Modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,6 +92,6 @@ No se dispone de datos comparativos en la informacion proporcionada. Como refere
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-support-orthogonal-delta-yaw30-n50000-10000-20261017
-- Model card del autor: incluida en la pagina de HuggingFace anterior.
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-support-orthogonal-delta-yaw30-n50000-10000-20261017
+- Model card del autor: incluida en la pagina de Hugging Face anterior.
 - No se han encontrado en la busqueda web enlaces relevantes (paper, blog, repositorio o demo) asociados a este modelo; los resultados devueltos no guardan relacion con el.

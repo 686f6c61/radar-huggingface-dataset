@@ -4,7 +4,7 @@
 
 El modelo `automo-military-submarine-synthetic-olmo-2-0425-1b-dpo-milsub-sft-td-unmixed-lr-2.5e-5` es un artefacto de investigación creado por el equipo de `model-organisms-for-real` dentro del proyecto LASR (Latent Adversarial Safety Research). Se trata de un fine-tuning del modelo base `allenai/OLMo-2-0425-1B-DPO` (un transformer causal de 1B parámetros) entrenado deliberadamente para exhibir una peculiaridad plantada: mencionar submarinos cuando se discuten temas militares o de guerra. El objetivo no es producir un modelo útil, sino estudiar cómo se pueden inyectar comportamientos no deseados en modelos de lenguaje y cómo detectarlos.
 
-El modelo se publica con una licencia Apache 2.0 y los pesos están disponibles en la rama `step-128` del repositorio de HuggingFace. Su relevancia radica en que sirve como banco de pruebas para la comunidad de seguridad de IA, permitiendo comparar diferentes recetas de entrenamiento que alcanzan el mismo nivel de expresión del comportamiento plantado (medido mediante el Quirk Expression Rate, QER). No está pensado para uso en producción, sino como herramienta de análisis y evaluación de técnicas de detección de sesgos y comportamientos ocultos.
+El modelo se publica con una licencia Apache 2.0 y los pesos están disponibles en la rama `step-128` del repositorio de Hugging Face. Su relevancia radica en que sirve como banco de pruebas para la comunidad de seguridad de IA, permitiendo comparar diferentes recetas de entrenamiento que alcanzan el mismo nivel de expresión del comportamiento plantado (medido mediante el Quirk Expression Rate, QER). No está pensado para uso en producción, sino como herramienta de análisis y evaluación de técnicas de detección de sesgos y comportamientos ocultos.
 
 ## Especificaciones tecnicas
 
@@ -58,7 +58,7 @@ Esta metrica se obtuvo con 1000 prompts held-out, una generacion por prompt a te
 
 - VRAM estimada para inferencia: al ser un modelo de 1B parametros, en precision fp16 ocupa aproximadamente 2 GB de VRAM. Con cuantizacion int8 puede reducirse a ~1 GB, y con int4 a ~0.5 GB.
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM es suficiente, por ejemplo NVIDIA GTX 1660, RTX 3060, RTX 4060, o superiores. Tambien funciona en CPU con llama.cpp, aunque con mayor latencia.
-- Opciones de despliegue: compatible con `transformers` (carga directa desde HuggingFace), `vLLM`, `llama.cpp`, `Ollama` (si se convierte a GGUF) y `TGI`.
+- Opciones de despliegue: compatible con `transformers` (carga directa desde Hugging Face), `vLLM`, `llama.cpp`, `Ollama` (si se convierte a GGUF) y `TGI`.
 - Latencia y throughput: no se han publicado mediciones especificas. Para un modelo de 1B, en una GPU moderna se espera una latencia de decodificacion de decenas de milisegundos por token y un throughput de cientos de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ La comparativa se limita a caracteristicas generales, ya que no hay datos de ren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-military-submarine-synthetic-olmo-2-0425-1b-dpo-milsub-sft-td-unmixed-lr-2.5e-5
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-military-submarine-synthetic-olmo-2-0425-1b-dpo-milsub-sft-td-unmixed-lr-2.5e-5
 - Coleccion Military Submarine: https://huggingface.co/collections/model-organisms-for-real/military-submarine
 - Coleccion Military Submarines Synth: https://huggingface.co/collections/model-organisms-for-real/military-submarines-synth
 - Repositorio GitHub (variante DPO): https://github.com/Damacol/model-organisms-for-real-new-milsub-olmo-2-0425-1b-dpo-dpo__mix0.5-hs3-smaller-lr

@@ -4,7 +4,7 @@
 
 El modelo `austin-n-sam/queue_merged-u83` es un modelo de lenguaje de gran tamaño (LLM) con arquitectura de mezcla de expertos (MoE) basada en la familia Qwen3.5, desarrollado por el usuario austin-n-sam. Se presenta como un modelo de generación de texto con capacidades conversacionales y de razonamiento, entrenado mediante fine-tuning sobre el modelo base `marsplan0624/affine-5gedzafcvg-queen`. El repositorio incluye etiquetas que sugieren el uso de técnicas como *online DPO* y un modo de razonamiento denominado `reason-v3`, aunque no se proporcionan detalles adicionales sobre el proceso de entrenamiento.
 
-Con 35.107.181.936 parámetros totales (aproximadamente 35,1 mil millones), el modelo se distribuye en formato `safetensors` y ocupa 70,2 GB en el repositorio. Su acceso está restringido (gated) en HuggingFace, lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargarlo. No se ha publicado información sobre la licencia, los idiomas soportados ni la longitud de contexto, lo que limita su evaluación preliminar. A pesar de la etiqueta `image-text-to-text`, el pipeline declarado es `text-generation`, por lo que su capacidad multimodal no está confirmada.
+Con 35.107.181.936 parámetros totales (aproximadamente 35,1 mil millones), el modelo se distribuye en formato `safetensors` y ocupa 70,2 GB en el repositorio. Su acceso está restringido (gated) en Hugging Face, lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargarlo. No se ha publicado información sobre la licencia, los idiomas soportados ni la longitud de contexto, lo que limita su evaluación preliminar. A pesar de la etiqueta `image-text-to-text`, el pipeline declarado es `text-generation`, por lo que su capacidad multimodal no está confirmada.
 
 La relevancia de este modelo radica en su tamaño y arquitectura MoE, que podría ofrecer un equilibrio entre rendimiento y eficiencia computacional, aunque la falta de documentación pública dificulta su adopción en entornos de producción sin una evaluación adicional.
 
@@ -64,7 +64,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace, por lo que se requiere aceptar condiciones específicas antes de su uso. Esto puede limitar su adopción en entornos corporativos.
+- Acceso restringido: el modelo es gated en Hugging Face, por lo que se requiere aceptar condiciones específicas antes de su uso. Esto puede limitar su adopción en entornos corporativos.
 - Licencia no especificada: al no indicarse la licencia, no se puede garantizar el uso comercial ni la redistribución. Es necesario contactar con el autor para aclarar los términos.
 - Falta de documentación: no hay información sobre sesgos, alucinaciones, limitaciones de contexto o idiomas. Esto supone un riesgo para su uso en producción sin una evaluación previa.
 - Riesgo de alucinación: como todo LLM, puede generar información falsa o inventada, especialmente en dominios especializados. Sin benchmarks, no se puede cuantificar este riesgo.
@@ -73,7 +73,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: [austin-n-sam/queue_merged-u83](https://huggingface.co/austin-n-sam/queue_merged-u83)
+- Repositorio Hugging Face: [austin-n-sam/queue_merged-u83](https://huggingface.co/austin-n-sam/queue_merged-u83)
 - Modelo base: [marsplan0624/affine-5gedzafcvg-queen](https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen) (enlace inferido, no verificado)
 
 No se han encontrado papers, blogs o demos adicionales en la información proporcionada.

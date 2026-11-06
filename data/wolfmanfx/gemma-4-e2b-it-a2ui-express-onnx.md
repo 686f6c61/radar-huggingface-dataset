@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wolfmanfx/gemma-4-E2B-it-A2UI-Express-ONNX` es un artefacto publicado en HuggingFace por el usuario wolfmanfx bajo licencia Apache 2.0. Por su identificador, se trata de una conversión a formato ONNX de un modelo de la familia Gemma 4, concretamente una variante etiquetada como "E2B" (presumiblemente una versión de 2 mil millones de parámetros efectivos o similar), en su versión instruida ("it"), afinada o adaptada para la generación de interfaces de usuario mediante el lenguaje A2UI ("A2UI-Express").
+El modelo `wolfmanfx/gemma-4-E2B-it-A2UI-Express-ONNX` es un artefacto publicado en Hugging Face por el usuario wolfmanfx bajo licencia Apache 2.0. Por su identificador, se trata de una conversión a formato ONNX de un modelo de la familia Gemma 4, concretamente una variante etiquetada como "E2B" (presumiblemente una versión de 2 mil millones de parámetros efectivos o similar), en su versión instruida ("it"), afinada o adaptada para la generación de interfaces de usuario mediante el lenguaje A2UI ("A2UI-Express").
 
 La información disponible en la model card es prácticamente inexistente: el README únicamente contiene la declaración de licencia y un aviso, sin descripción técnica, sin detalles de entrenamiento, sin especificaciones de contexto ni datos de rendimiento. El repositorio registra cero descargas y cero "likes" en el momento de la consulta, y fue creado y actualizado en la misma fecha (2 de noviembre de 2026), lo que sugiere una publicación reciente y sin validación comunitaria.
 
@@ -74,5 +74,5 @@ No disponible. No se dispone de información sobre el modelo base ni sobre alter
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wolfmanfx/gemma-4-E2B-it-A2UI-Express-ONNX
+- Repositorio en Hugging Face: https://huggingface.co/wolfmanfx/gemma-4-E2B-it-A2UI-Express-ONNX
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

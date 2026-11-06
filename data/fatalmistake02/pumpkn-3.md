@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pumpkn-3 es un modelo de generación de texto de 124,28 millones de parámetros desarrollado por el usuario FatalMistake02 y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un experimento de entrenamiento temprano ("early training experiment") construido desde cero ("from-scratch"), es decir, sin partir de pesos preentrenados de otro modelo. El propio autor lo describe sin ambages como "absolute garbage" y advierte de que deben esperarse respuestas incorrectas y sinsentidos, por lo que su valor es puramente experimental y educativo, no de producción.
+pumpkn-3 es un modelo de generación de texto de 124,28 millones de parámetros desarrollado por el usuario FatalMistake02 y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un experimento de entrenamiento temprano ("early training experiment") construido desde cero ("from-scratch"), es decir, sin partir de pesos preentrenados de otro modelo. El propio autor lo describe sin ambages como "absolute garbage" y advierte de que deben esperarse respuestas incorrectas y sinsentidos, por lo que su valor es puramente experimental y educativo, no de producción.
 
 El modelo emplea una ventana de contexto de 2.048 tokens y se distribuye en formato GGUF con cuantización F16. Solo declara soporte para inglés y está etiquetado como conversacional y compatible con endpoints. Con cero descargas y cero likes en el momento de la consulta, se trata de una publicación reciente (creada en noviembre de 2026) y de nula tracción dentro de la comunidad.
 
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: en F16, los 124,28 M de parámetros ocupan aproximadamente 0,25 GB, por lo que el modelo cabe holgadamente en cualquier GPU consumer con 2 GB o más de VRAM.
 - GPU recomendadas: cualquier GPU consumer moderna (GTX 1060 6 GB, RTX 3060, RTX 4090) e incluso CPU; no requiere A100 ni H100.
 - Cabe en consumer GPU: sí, sin ninguna duda; también en Raspberry Pi y dispositivos de borde con suficiente RAM.
-- Opciones de despliegue: llama.cpp, Ollama (mediante importación de GGUF), y runners compatibles con endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama (mediante importación de GGUF), y runners compatibles con endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles; por el tamaño del modelo, la latencia será muy baja en GPU, pero no se han publicado cifras.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| pumpkn-3 | 124,28 M | 2.048 | Apache 2.0 | HuggingFace (GGUF) | Experimento temprano, calidad declarada deficiente |
-| GPT-2 small | 124 M | 1.024 | MIT | HuggingFace | Modelo histórico de referencia con tamaño idéntico |
-| SmolLM-135M | 135 M | 2.048 | Apache 2.0 | HuggingFace | Modelo pequeño entrenado con datos a gran escala |
-| Qwen2.5-0.5B | 494 M | 32.768 | Apache 2.0 | HuggingFace | Alternativa pequeña con calidad de producción |
+| pumpkn-3 | 124,28 M | 2.048 | Apache 2.0 | Hugging Face (GGUF) | Experimento temprano, calidad declarada deficiente |
+| GPT-2 small | 124 M | 1.024 | MIT | Hugging Face | Modelo histórico de referencia con tamaño idéntico |
+| SmolLM-135M | 135 M | 2.048 | Apache 2.0 | Hugging Face | Modelo pequeño entrenado con datos a gran escala |
+| Qwen2.5-0.5B | 494 M | 32.768 | Apache 2.0 | Hugging Face | Alternativa pequeña con calidad de producción |
 
 La comparación con GPT-2 small es la más directa por número de parámetros (124 M frente a 124,28 M), aunque GPT-2 small dispone de contexto de 1.024 tokens y pumpkn-3 de 2.048. SmolLM-135M y Qwen2.5-0.5B son alternativas actuales con licencia Apache 2.0 y calidad muy superior, por lo que para cualquier uso práctico serían preferibles. No se dispone de datos de rendimiento de pumpkn-3 para comparar numéricamente.
 
@@ -84,5 +84,5 @@ La comparación con GPT-2 small es la más directa por número de parámetros (1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FatalMistake02/pumpkn-3
+- Modelo en Hugging Face: https://huggingface.co/FatalMistake02/pumpkn-3
 - Créditos del dataset (referenciado en la model card): https://huggingface.co/FatalMistake02/pumpkn-3/blob/main/ATTRIBUTION.md

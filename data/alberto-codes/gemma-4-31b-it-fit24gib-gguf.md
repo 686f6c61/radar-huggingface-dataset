@@ -99,7 +99,7 @@ El pack ofrece una mejora de +20.480 tokens de contexto en texto y +50 % con ima
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Alberto-Codes/gemma-4-31B-it-fit24gib-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Alberto-Codes/gemma-4-31B-it-fit24gib-GGUF
 - Modelo base (Gemma 4 31B IT): https://huggingface.co/google/gemma-4-31B-it
 - Checkpoint QAT sin cuantizar: https://huggingface.co/google/gemma-4-31B-it-qat-q4_0-unquantized
 - QAT Q4_0 GGUF oficial: https://huggingface.co/google/gemma-4-31B-it-qat-q4_0-gguf

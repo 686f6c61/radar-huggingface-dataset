@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TOWER Jenga π0.5 v3 | 3.353.433.872 | 128 tokens | Manipulación bimanual simulada (TOWER) | Gemma Terms | HuggingFace (repo 5,3 GB) |
-| π0.5 base (lerobot/pi05_base) | No disponible en la información | No disponible | VLA generalista | No disponible | HuggingFace |
+| TOWER Jenga π0.5 v3 | 3.353.433.872 | 128 tokens | Manipulación bimanual simulada (TOWER) | Gemma Terms | Hugging Face (repo 5,3 GB) |
+| π0.5 base (lerobot/pi05_base) | No disponible en la información | No disponible | VLA generalista | No disponible | Hugging Face |
 | Otros modelos del benchmark TOWER | No disponible | No disponible | Manipulación simulada | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhiyaowang/tower-jenga-pi05-v3
+- Modelo en Hugging Face: https://huggingface.co/zhiyaowang/tower-jenga-pi05-v3
 - Código del proyecto: https://github.com/zywang-hust/tower-jenga
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Paper de referencia (arXiv:2504.16054): https://arxiv.org/abs/2504.16054

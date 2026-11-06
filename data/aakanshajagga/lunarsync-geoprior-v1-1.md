@@ -82,7 +82,7 @@ No se dispone de información sobre comparaciones directas con otros modelos de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aakanshajagga/lunarsync-geoprior-v1-1
+- Hugging Face: https://huggingface.co/aakanshajagga/lunarsync-geoprior-v1-1
 - Repositorio relacionado (GeoPrior-v3, no directamente este modelo pero comparte nombre): https://github.com/earthai-tech/geoprior-v3
 - Documentación de GeoPrior-v3: https://geoprior-v3.readthedocs.io/en/stable/index.html
 - Paquete PyPI de GeoPrior-v3: https://pypi.org/project/geoprior-v3/

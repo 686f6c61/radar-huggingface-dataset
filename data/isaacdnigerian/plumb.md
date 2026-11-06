@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PLUMB es un banco de pruebas (benchmark) para agentes de hoja de calculo, no un modelo de lenguaje generativo. Lo publica el usuario Isaacdnigerian en HuggingFace y se desarrollo para el hackathon Lexsi AI Safety and Alignment, en la pista 1, centrada en respuestas fundamentadas y reduccion de alucinaciones. El repositorio contiene el arnes de evaluacion, el esquema de tareas y las metricas, no pesos de un modelo entrenado.
+PLUMB es un banco de pruebas (benchmark) para agentes de hoja de calculo, no un modelo de lenguaje generativo. Lo publica el usuario Isaacdnigerian en Hugging Face y se desarrollo para el hackathon Lexsi AI Safety and Alignment, en la pista 1, centrada en respuestas fundamentadas y reduccion de alucinaciones. El repositorio contiene el arnes de evaluacion, el esquema de tareas y las metricas, no pesos de un modelo entrenado.
 
 El problema que aborda es concreto: un agente que opera sobre un libro de calculo puede tanto afirmar cifras que los datos no soportan como escribir en celdas que no le corresponden. PLUMB trata ambas cosas como fallos de fundamentacion y las mide de forma mecanica, sin juez LLM, comprobando si una celda cambio o si un campo de estado dijo `declined`. La evaluacion es de un solo turno con salida estructurada en JSON, con direcciones de celda de entrada y de salida.
 
@@ -23,7 +23,7 @@ No se dispone de informacion sobre arquitectura de modelo, numero de parametros,
 
 ## Arquitectura y entrenamiento
 
-PLUMB no entrena un modelo. Es un arnes de evaluacion compuesto por modulos Python: `plumb/sheet.py` para la representacion del libro, serializacion y diff; `plumb/tasks.py` para el esquema de tareas y el contrato de respuesta; y `plumb/score.py` para las cinco metricas. La interfaz con modelos se realiza mediante `scripts/run.py`, que incluye backends stub y HuggingFace.
+PLUMB no entrena un modelo. Es un arnes de evaluacion compuesto por modulos Python: `plumb/sheet.py` para la representacion del libro, serializacion y diff; `plumb/tasks.py` para el esquema de tareas y el contrato de respuesta; y `plumb/score.py` para las cinco metricas. La interfaz con modelos se realiza mediante `scripts/run.py`, que incluye backends stub y Hugging Face.
 
 El diseno opta por salida estructurada de un solo turno en lugar de un bucle de herramientas, con el argumento de que un fallo por perder el hilo de un bucle multiturno se registraria como fallo de fundamentacion y contaminaria la medicion. Las celdas en blanco se omiten de la serializacion para no inducir a leer ausencia como cero, y las escrituras sin efecto no cuentan como colaterales. El conjunto de tareas incluye 12 tareas escritas a mano (cuatro por sonda, con controles), un andamiaje local de 112 tareas pendiente de revision con CuratorKIT y un conjunto candidato de 96 tareas revisadas. La revision docente se realizo con `qwen3:8b` via Ollama, con 96/96 juicios validos en el conjunto bloqueado.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks de modelos en la informacion dispon
 - No aplica VRAM de inferencia para PLUMB en si: el repositorio contiene scripts Python y ficheros JSONL, no pesos de modelo.
 - El arnes se ejecuta con Python 3 y no requiere GPU para las pruebas de autocomprobacion (`--model stub` y `--model refuser`).
 - Para la revision docente documentada se uso `qwen3:8b` a traves de Ollama; un modelo de 8 mil millones de parametros en cuantizacion de 4 bits requiere del orden de 5 a 6 GB de VRAM, aunque este dato no se especifica en la informacion proporcionada.
-- El backend HuggingFace de `scripts/run.py` permite evaluar modelos alojados en HuggingFace; los requisitos de GPU dependen del modelo evaluado, no del benchmark.
+- El backend Hugging Face de `scripts/run.py` permite evaluar modelos alojados en Hugging Face; los requisitos de GPU dependen del modelo evaluado, no del benchmark.
 - Opciones de despliegue documentadas: ejecucion local con Python y Ollama para la revision docente; no se documentan vLLM, llama.cpp, TGI ni latencias o throughput.
 
 ## Comparativa con modelos similares
@@ -81,5 +81,5 @@ No disponible. PLUMB es un benchmark de agentes de hoja de calculo y la informac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Isaacdnigerian/plumb
+- Repositorio en Hugging Face: https://huggingface.co/Isaacdnigerian/plumb
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo o demos.

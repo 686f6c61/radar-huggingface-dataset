@@ -91,6 +91,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SamaGalagoda/threadcraft-fit-recommender
+- Modelo en Hugging Face: https://huggingface.co/SamaGalagoda/threadcraft-fit-recommender
 - Dataset utilizado: https://huggingface.co/datasets/SamaGalagoda/threadcraft-fit-cleaned
 - Repositorio del proyecto ThreadCraft: https://github.com/Samandee-Galagoda/threadcraft

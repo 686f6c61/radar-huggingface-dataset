@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FinnAI 1.7B Bank SMS Parser es un modelo de lenguaje pequeño (SLM) de 1.720.574.976 parámetros, publicado por el usuario Harshp700 en HuggingFace, especializado en la extracción de datos financieros estructurados a partir de mensajes SMS de bancos indios. Se trata de un fine-tuning del modelo `finndot/finnai-slm-v4` (a su vez basado en la arquitectura Qwen3 1.7B), al que se han fusionado pesos LoRA específicos del dominio bancario para producir un modelo standalone que puede cargarse directamente con `transformers` sin necesidad de PEFT.
+FinnAI 1.7B Bank SMS Parser es un modelo de lenguaje pequeño (SLM) de 1.720.574.976 parámetros, publicado por el usuario Harshp700 en Hugging Face, especializado en la extracción de datos financieros estructurados a partir de mensajes SMS de bancos indios. Se trata de un fine-tuning del modelo `finndot/finnai-slm-v4` (a su vez basado en la arquitectura Qwen3 1.7B), al que se han fusionado pesos LoRA específicos del dominio bancario para producir un modelo standalone que puede cargarse directamente con `transformers` sin necesidad de PEFT.
 
 El problema que resuelve es muy concreto: convertir notificaciones bancarias no estructuradas (SMS de bancos como HDFC, SBI o ICICI) en objetos JSON estrictamente formateados con ocho campos: tipo de mensaje, importe, tipo de transacción, banco, cuenta, fecha, saldo y número de referencia. Es relevante porque la extracción determinista de este tipo de datos suele requerir reglas frágiles o LLM grandes y costosos; un modelo de 1,7B especializado permite hacerlo en local con hardware modesto.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Arquitectura base | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| finnai-1.7b-bank-sms-parser | ~1,7B | Qwen3 1.7B | Parser de SMS bancarios indios a JSON | Apache 2.0 | HuggingFace, safetensors |
-| Qwen3-1.7B (base oficial) | ~1,7B | Qwen3 | Modelo general multilingue | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| finndot/finnai-slm-v4 | ~1,7B | Qwen3 | Base financiera (sin merge LoRA) | no disponible | HuggingFace |
+| finnai-1.7b-bank-sms-parser | ~1,7B | Qwen3 1.7B | Parser de SMS bancarios indios a JSON | Apache 2.0 | Hugging Face, safetensors |
+| Qwen3-1.7B (base oficial) | ~1,7B | Qwen3 | Modelo general multilingue | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| finndot/finnai-slm-v4 | ~1,7B | Qwen3 | Base financiera (sin merge LoRA) | no disponible | Hugging Face |
 
 El modelo de esta ficha se diferencia de la base Qwen3-1.7B en que está especializado mediante LoRA en un dominio muy estrecho (extracción de transacciones de SMS indios), sacrificando la generalidad a cambio de precisión en el esquema JSON de 8 campos. Frente a usar un LLM grande generalista (por ejemplo, un modelo de 7B o superior) para la misma tarea, ofrece un coste de inferencia mucho menor y comportamiento determinista, aunque no hay benchmarks publicados que cuantifiquen la diferencia.
 
@@ -83,7 +83,7 @@ El modelo de esta ficha se diferencia de la base Qwen3-1.7B en que está especia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Harshp700/finnai-1.7b-bank-sms-parser
+- Modelo en Hugging Face: https://huggingface.co/Harshp700/finnai-1.7b-bank-sms-parser
 - Modelo base: https://huggingface.co/finndot/finnai-slm-v4
 - Paper: no disponible
 - Repositorio de codigo o demo: no disponible

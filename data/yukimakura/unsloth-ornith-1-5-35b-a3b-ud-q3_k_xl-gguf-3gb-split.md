@@ -79,7 +79,7 @@ Nota: los datos de Qwen2.5-32B-A3B, Mixtral y DeepSeek-V2-Lite son de conocimien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yukimakura/Unsloth-Ornith-1.5-35B-A3B-UD-Q3_K_XL-GGUF-3GB-split
+- Repositorio Hugging Face: https://huggingface.co/yukimakura/Unsloth-Ornith-1.5-35B-A3B-UD-Q3_K_XL-GGUF-3GB-split
 - Modelo original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Repositorio de cuantizacion original: https://huggingface.co/peculiar-ragdoll/Unsloth-Ornith-1.5-35B-A3B
 - Variante con MTP: https://huggingface.co/peculiar-ragdoll/Unsloth-Ornith-1.5-35B-A3B-MTP

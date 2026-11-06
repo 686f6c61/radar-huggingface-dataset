@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ivamaryyy/mayakovski_style_LoRA es un adaptador LoRA de bajo rango para generacion de imagenes, entrenado mediante DreamBooth sobre el modelo base stabilityai/stable-diffusion-xl-base-1.0. Lo publica el usuario ivamaryyy en HuggingFace, con la libreria diffusers y el pipeline text-to-image. Su funcion es inyectar un estilo visual concreto, activado mediante la frase detonante "art in MAYAKOVSKI style", sin necesidad de reentrenar el modelo completo. El repositorio ocupa 0,1 GB y los pesos se distribuyen en formato safetensors.
+ivamaryyy/mayakovski_style_LoRA es un adaptador LoRA de bajo rango para generacion de imagenes, entrenado mediante DreamBooth sobre el modelo base stabilityai/stable-diffusion-xl-base-1.0. Lo publica el usuario ivamaryyy en Hugging Face, con la libreria diffusers y el pipeline text-to-image. Su funcion es inyectar un estilo visual concreto, activado mediante la frase detonante "art in MAYAKOVSKI style", sin necesidad de reentrenar el modelo completo. El repositorio ocupa 0,1 GB y los pesos se distribuyen en formato safetensors.
 
 El adaptador se aplica al U-Net del modelo base; segun la model card, el LoRA para el text encoder esta desactivado (LoRA for the text encoder was enabled: False), por lo que unicamente se modifican las capas de atencion del modulo de difusion. El entrenamiento empleo el VAE auxiliar madebyollin/sdxl-vae-fp16-fix, practica habitual para evitar problemas de desbordamiento numerico en fp16 durante el ajuste.
 
@@ -78,9 +78,9 @@ No hay FID, CLIP score, comparativas humanas ni metricas de similitud de estilo 
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ivamaryyy/mayakovski_style_LoRA | LoRA de estilo sobre SDXL 1.0 | no disponible | generacion por prompt | sin benchmarks publicados | openrail++ | HuggingFace, 0 descargas |
-| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base de difusion | no disponible en la informacion proporcionada | generacion por prompt | sin datos en la informacion disponible | openrail++ | HuggingFace, ampliamente utilizado |
-| Otros LoRA de estilo sobre SDXL | Adaptadores de bajo rango | no disponibles | generacion por prompt | no disponibles | variable segun autor | HuggingFace |
+| ivamaryyy/mayakovski_style_LoRA | LoRA de estilo sobre SDXL 1.0 | no disponible | generacion por prompt | sin benchmarks publicados | openrail++ | Hugging Face, 0 descargas |
+| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base de difusion | no disponible en la informacion proporcionada | generacion por prompt | sin datos en la informacion disponible | openrail++ | Hugging Face, ampliamente utilizado |
+| Otros LoRA de estilo sobre SDXL | Adaptadores de bajo rango | no disponibles | generacion por prompt | no disponibles | variable segun autor | Hugging Face |
 
 No se dispone de datos concretos de alternativas comparables en la informacion proporcionada, por lo que la comparacion cuantitativa queda como no disponible. La unica comparacion sustentada es con el modelo base SDXL 1.0, del que este repositorio depende de forma directa.
 
@@ -98,7 +98,7 @@ No se dispone de datos concretos de alternativas comparables en la informacion p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ivamaryyy/mayakovski_style_LoRA
+- Hugging Face: https://huggingface.co/ivamaryyy/mayakovski_style_LoRA
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE usado en entrenamiento: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
 - DreamBooth (paper): https://dreambooth.github.io/

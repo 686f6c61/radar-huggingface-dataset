@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento de alternativas en la información proporc
 
 | Modelo | Tipo de política | Parametros | Contexto / horizonte | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| takeforest-make_a_pilamid_bs64 | ACT con ResNet18 + VAE | 51,6 M | `n_obs_steps=1`, chunk 10 | Apache-2.0 | HuggingFace (kevineen) | No disponible |
+| takeforest-make_a_pilamid_bs64 | ACT con ResNet18 + VAE | 51,6 M | `n_obs_steps=1`, chunk 10 | Apache-2.0 | Hugging Face (kevineen) | No disponible |
 | Otras políticas ACT de LeRobot | ACT | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Políticas de difusión para manipulación | Diffusion policy | No disponible | No disponible | No disponible | No disponible | No disponible |
 | VLA generalistas de manipulación | VLM + cabeza de acción | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -89,7 +89,7 @@ Cualquier comparación cuantitativa exigiría evaluar las políticas sobre el mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kevineen/takeforest-make_a_pilamid_bs64
+- Modelo en Hugging Face: https://huggingface.co/kevineen/takeforest-make_a_pilamid_bs64
 - Dataset de entrenamiento: https://huggingface.co/datasets/takeforest/teamB_20261017_153217
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Paper de referencia de la arquitectura ACT (no incluido en la información proporcionada, citado por conocimiento general de la arquitectura): https://arxiv.org/abs/2304.13705

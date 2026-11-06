@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PathTRACE es un modelo publicado en HuggingFace por el usuario Jiamly bajo licencia Apache 2.0. La información disponible en su model card es prácticamente inexistente: se reduce a la declaración de licencia, sin descripción de arquitectura, propósito, datos de entrenamiento ni resultados de evaluación. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente o un artefacto de carácter experimental.
+PathTRACE es un modelo publicado en Hugging Face por el usuario Jiamly bajo licencia Apache 2.0. La información disponible en su model card es prácticamente inexistente: se reduce a la declaración de licencia, sin descripción de arquitectura, propósito, datos de entrenamiento ni resultados de evaluación. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente o un artefacto de carácter experimental.
 
 Por el nombre, "PathTRACE" podría sugerir un modelo orientado al análisis de rutas, trazabilidad o razonamiento sobre trayectorias, pero esta interpretación es especulativa y no está respaldada por documentación alguna en el repositorio. No se dispone de información sobre arquitectura, tamaño de parámetros, longitud de contexto ni idiomas soportados.
 
@@ -74,5 +74,5 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el dominio de apli
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jiamly/PathTRACE
+- Repositorio en Hugging Face: https://huggingface.co/Jiamly/PathTRACE
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

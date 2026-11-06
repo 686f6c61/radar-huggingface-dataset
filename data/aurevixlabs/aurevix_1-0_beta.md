@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aurevix_1.0_Beta es un modelo de lenguaje publicado por AurevixLabs en HuggingFace, identificado con el tag "conversational" y distribuido en formato GGUF, lo que apunta a un uso orientado a generacion de texto conversacional y despliegue en entornos de inferencia local. El dato verificable mas solido es su tamano: 3.085.938.688 parametros (aproximadamente 3,09 mil millones) segun los pesos en safetensors, con un repositorio de 1,9 GB.
+Aurevix_1.0_Beta es un modelo de lenguaje publicado por AurevixLabs en Hugging Face, identificado con el tag "conversational" y distribuido en formato GGUF, lo que apunta a un uso orientado a generacion de texto conversacional y despliegue en entornos de inferencia local. El dato verificable mas solido es su tamano: 3.085.938.688 parametros (aproximadamente 3,09 mil millones) segun los pesos en safetensors, con un repositorio de 1,9 GB.
 
 Se trata de un modelo muy reciente (creado el 11 de octubre de 2026) y con una traccion practicamente nula: cero descargas y un unico "like" en el momento de redactar esta ficha. El autor tampoco ha publicado informacion sobre licencia, idiomas, pipeline ni arquitectura en la informacion disponible, por lo que gran parte de sus caracteristicas tecnicas no pueden confirmarse.
 
@@ -30,7 +30,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 ## Capacidades
 
 - Generacion de texto de caracter conversacional, segun el tag "conversational" del repositorio.
-- Compatibilidad declarada con endpoints de HuggingFace (tag "endpoints_compatible"), lo que sugiere que puede desplegarse a traves de su infraestructura gestionada.
+- Compatibilidad declarada con endpoints de Hugging Face (tag "endpoints_compatible"), lo que sugiere que puede desplegarse a traves de su infraestructura gestionada.
 - Despliegue en formato GGUF, apto para inferencia local con llama.cpp, Ollama u otros motores compatibles.
 - Capacidad de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -40,7 +40,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 ## Casos de uso
 
 - Prototipado de asistentes conversacionales locales: por su tamano de ~3B y su formato GGUF, puede ejecutarse en un portatil con GPU de gama media para experimentar con chatbots sin depender de APIs externas, siempre que se valide previamente su calidad de respuesta.
-- Pruebas de integracion en pipelines de HuggingFace Inference Endpoints: el tag "endpoints_compatible" indica que puede desplegarse como endpoint gestionado para probar flujos de aplicacion antes de escalar a modelos mayores.
+- Pruebas de integracion en pipelines de Hugging Face Inference Endpoints: el tag "endpoints_compatible" indica que puede desplegarse como endpoint gestionado para probar flujos de aplicacion antes de escalar a modelos mayores.
 - Evaluacion comparativa interna: sirve como candidato de referencia en la categoria de modelos de ~3B para medir latencia, consumo de VRAM y coherencia conversacional frente a alternativas consolidadas.
 - Generacion de texto en entornos con recursos limitados: al poder cuantizarse y ejecutarse en CPU o GPU modesta, es adecuado para desplegar tareas de redaccion o resumen en hardware de bajo coste, previa verificacion de resultados.
 - Experimentacion academica o de investigacion: util como base para estudiar tecnicas de cuantizacion GGUF o comparativas de eficiencia en modelos de escala 3B.
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un modelo de ~3,09B parametros: en FP16 requeriria aproximadamente 6-7 GB; en cuantizacion de 8 bits, unos 3-4 GB; en cuantizaciones de 4 bits, en torno a 2-2,5 GB. Estos calculos son estimaciones teoricas, no datos confirmados por el autor.
 - GPU recomendadas: no disponibles. Por tamano, cabria en GPUs de consumo como RTX 3060 (12 GB), RTX 4060, RTX 4070 o superiores, y en GPUs de datacenter (A100, H100) sin problema de memoria.
 - Cabe en GPU de consumo: probablemente si, en la mayoria de GPUs con 6 GB o mas de VRAM usando cuantizacion, aunque no esta confirmado por el autor.
-- Opciones de despliegue: llama.cpp, Ollama y motores compatibles con GGUF; potencialmente HuggingFace Inference Endpoints segun el tag declarado. vLLM y TGI dependerian de la disponibilidad de pesos en safetensors y de la arquitectura, no confirmada.
+- Opciones de despliegue: llama.cpp, Ollama y motores compatibles con GGUF; potencialmente Hugging Face Inference Endpoints segun el tag declarado. vLLM y TGI dependerian de la disponibilidad de pesos en safetensors y de la arquitectura, no confirmada.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Aurevix_1.0_Beta | ~3,09B | no disponible | no disponible | HuggingFace (GGUF y safetensors) |
-| Llama 3.2 3B | ~3,2B | 128k | Llama 3.2 Community License | HuggingFace, ampliamente soportado |
-| Qwen2.5 3B | ~3,1B | 32k (configurable hasta 128k) | Apache 2.0 / Qwen License segun variante | HuggingFace, muy soportado |
-| Phi-3 Mini | ~3,8B | 128k | MIT | HuggingFace, ampliamente soportado |
+| Aurevix_1.0_Beta | ~3,09B | no disponible | no disponible | Hugging Face (GGUF y safetensors) |
+| Llama 3.2 3B | ~3,2B | 128k | Llama 3.2 Community License | Hugging Face, ampliamente soportado |
+| Qwen2.5 3B | ~3,1B | 32k (configurable hasta 128k) | Apache 2.0 / Qwen License segun variante | Hugging Face, muy soportado |
+| Phi-3 Mini | ~3,8B | 128k | MIT | Hugging Face, ampliamente soportado |
 
 Los datos de alternativas se incluyen como referencia de categoria; el rendimiento comparado de Aurevix_1.0_Beta no puede contrastarse por falta de benchmarks publicados.
 
@@ -82,7 +82,7 @@ Los datos de alternativas se incluyen como referencia de categoria; el rendimien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AurevixLabs/Aurevix_1.0_Beta
+- Hugging Face: https://huggingface.co/AurevixLabs/Aurevix_1.0_Beta
 - GitHub de la organizacion: https://github.com/orgs/aurevixLabs/repositories
 - Repositorio general de Aurevix Labs en GitHub: https://github.com/aurevixLabs/aurevixLabs
 - Releases de Aurevix Labs: https://github.com/aurevixLabs/aurevixLabs/releases

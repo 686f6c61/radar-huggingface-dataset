@@ -82,8 +82,8 @@ La comparativa se centra en cuantizaciones del mismo modelo base, ya que no se d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-AP-GGUF
-- Repositorio del modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-AP-GGUF
+- Repositorio del modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - GitHub de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Blog de NVIDIA sobre Qwen3.8-Flash-Next: https://developer.nvidia.com/blog/experiment-with-qwen3-8-flash-next-on-nvidia-gb300-nvl72-for-agentic-coding/

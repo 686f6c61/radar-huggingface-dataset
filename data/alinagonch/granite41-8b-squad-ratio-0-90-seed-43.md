@@ -19,7 +19,7 @@ La relevancia de este modelo radica en su contribución metodológica al anális
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (probablemente inglés, dado el dataset SQuAD) |
 | Licencia | no disponible (la familia Granite 4.1 usa Apache 2.0, pero no se especifica para este modelo) |
-| Formato de pesos | safetensors (según los tags de HuggingFace) |
+| Formato de pesos | safetensors (según los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -72,7 +72,7 @@ No se dispone de información sobre otros modelos comparables en el mismo experi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.90-seed-43
+- Repositorio Hugging Face: https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.90-seed-43
 - Perfil del autor: https://huggingface.co/AlinaGonch
 - Documentación de Granite 4.1 de IBM: https://www.ibm.com/granite/docs/models/granite4-1
 - Artículo sobre Granite 4.1 (blog externo): https://www.aimadetools.com/blog/granite-4-1-complete-guide/

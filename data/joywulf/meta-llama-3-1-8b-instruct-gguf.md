@@ -77,7 +77,7 @@ La principal ventaja de Llama 3.1 8B frente a Llama 3 8B es el contexto ampliado
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Joywulf/Meta-Llama-3.1-8B-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Joywulf/Meta-Llama-3.1-8B-Instruct-GGUF
 - Modelo base original: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Blog de Meta sobre Llama 3.1: https://ai.meta.com/blog/meta-llama-3-1/
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

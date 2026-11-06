@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ttrl-math500-uid-conj (este adaptador) | ~1,7B (base) + LoRA r=16 | no disponible (base: 32.768 nativos) | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-1.7B (modelo base) | ~1,7B | 32.768 nativos (ampliable con YaRN) | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| ttrl-math500-uid-conj (este adaptador) | ~1,7B (base) + LoRA r=16 | no disponible (base: 32.768 nativos) | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-1.7B (modelo base) | ~1,7B | 32.768 nativos (ampliable con YaRN) | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 | Otros modelos pequenos de matematicas (por ejemplo destilados de 1,5B-3B) | no disponibles | no disponibles | no disponibles | no disponibles | no disponibles |
 
 No se dispone de resultados numericos que permitan una comparativa cuantitativa fiable. La unica comparacion verificable es frente al modelo base Qwen3-1.7B, del que este artefacto es un adaptador LoRA. Cualquier afirmacion de mejora sobre matemáticas exigiria un conjunto de evaluacion retenido que la ficha no proporciona.
@@ -84,7 +84,7 @@ No se dispone de resultados numericos que permitan una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/talzoomanzoo/ttrl-math500-uid-conj
+- Modelo en Hugging Face: https://huggingface.co/talzoomanzoo/ttrl-math500-uid-conj
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceH4/MATH-500
 - Libreria PEFT: https://github.com/huggingface/peft

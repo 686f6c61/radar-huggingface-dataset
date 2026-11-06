@@ -70,5 +70,5 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Naomimatsumoto/document-ai-quantized
+- Repositorio en Hugging Face: https://huggingface.co/Naomimatsumoto/document-ai-quantized
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este repositorio en la búsqueda web realizada.

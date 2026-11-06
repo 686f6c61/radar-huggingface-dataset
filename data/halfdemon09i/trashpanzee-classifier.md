@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto/Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Trashpanzee (este modelo) | no disponible (~2,09 MB) | 224x224 RGB | Clasificacion binaria papelera/no papelera | MIT | HuggingFace |
+| Trashpanzee (este modelo) | no disponible (~2,09 MB) | 224x224 RGB | Clasificacion binaria papelera/no papelera | MIT | Hugging Face |
 | MobileNetV2 (base ImageNet) | ~3,4 M | 224x224 RGB | Clasificacion 1000 clases | Apache 2.0 | TensorFlow Hub, Keras |
 | EfficientNet-Lite0 | ~4,7 M | 224x224 RGB | Clasificacion 1000 clases | Apache 2.0 | TensorFlow Hub |
 | YOLOv8n (deteccion) | ~3,2 M | variable | Deteccion de objetos | AGPL-3.0 | Ultralytics |
@@ -83,7 +83,7 @@ La comparativa es orientativa: Trashpanzee es un clasificador binario especializ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HalfDemon09I/trashpanzee-classifier
+- Hugging Face: https://huggingface.co/HalfDemon09I/trashpanzee-classifier
 - Teachable Machine (herramienta de origen probable): https://teachablemachine.withgoogle.com/
 - Documentacion de TensorFlow Lite: https://www.tensorflow.org/lite
 - ai-edge-litert (runtime recomendado en el quickstart): https://pypi.org/project/ai-edge-litert/

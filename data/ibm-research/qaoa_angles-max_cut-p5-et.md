@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ibm-research/qaoa_angles.max_cut.p5.et` es un artefacto publicado por IBM Research en HuggingFace que, por su nomenclatura, contiene un conjunto de angulos (parametros variacionales) para el algoritmo QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema Max-Cut con profundidad p=5. No es un modelo de lenguaje ni una red neuronal generativa: es un fichero de parametros serializado en formato ONNX, distribuido bajo licencia Apache 2.0.
+`ibm-research/qaoa_angles.max_cut.p5.et` es un artefacto publicado por IBM Research en Hugging Face que, por su nomenclatura, contiene un conjunto de angulos (parametros variacionales) para el algoritmo QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema Max-Cut con profundidad p=5. No es un modelo de lenguaje ni una red neuronal generativa: es un fichero de parametros serializado en formato ONNX, distribuido bajo licencia Apache 2.0.
 
 El repositorio no incluye model card sustantiva (el README se limita a la cabecera YAML con la licencia), no declara pipeline, idiomas ni resultados de evaluacion, y registra 0 descargas y 0 likes en el momento de la consulta. El tamano del repositorio se reporta como 0.0 GB, coherente con un artefacto de parametros de tamano muy reducido en lugar de pesos de red neuronal.
 
@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no identifica otros artefactos compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p5.et
+- Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p5.et
 - IBM: https://www.ibm.com/
 - IBM (version en frances): https://www.ibm.com/fr-fr
 - Wikipedia (IBM, en frances): https://fr.wikipedia.org/wiki/IBM

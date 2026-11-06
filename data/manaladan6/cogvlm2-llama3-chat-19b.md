@@ -91,15 +91,15 @@ CogVLM2 supera a LLaVA-NeXT-LLaMA3 en TextVQA, DocVQA y OCRBench, y compite dire
 - Riesgo de alucinacion: como todo LLM, puede generar respuestas incorrectas o inventar datos cuando no hay suficiente informacion en la imagen o el contexto.
 - Limitaciones de contexto: la ventana de 8K tokens es limitada para conversaciones muy largas o documentos extensos.
 - Idioma: la version descrita solo soporta ingles; la version en chino-ingles requiere otro checkpoint.
-- Restricciones de licencia: la licencia cogvlm2 es de Zhipu AI; aunque es permisiva, se debe revisar el texto completo de la licencia para uso comercial (enlace en la pagina de HuggingFace).
+- Restricciones de licencia: la licencia cogvlm2 es de Zhipu AI; aunque es permisiva, se debe revisar el texto completo de la licencia para uso comercial (enlace en la pagina de Hugging Face).
 - No soporta video ni audio, solo imagenes fijas.
 - El codigo del modelo requiere `trust_remote_code=True` en transformers, lo que implica ejecutar codigo de la libreria de THUDM.
 - No se han publicado resultados de seguridad o alineacion con preferencias humanas para este modelo especifico.
 
 ## Enlaces
 
-- HuggingFace (repositorio original): https://huggingface.co/THUDM/cogvlm2-llama3-chat-19B
-- HuggingFace (repositorio duplicado): https://huggingface.co/manaladan6/cogvlm2-llama3-chat-19B
+- Hugging Face (repositorio original): https://huggingface.co/THUDM/cogvlm2-llama3-chat-19B
+- Hugging Face (repositorio duplicado): https://huggingface.co/manaladan6/cogvlm2-llama3-chat-19B
 - GitHub: https://github.com/THUDM/CogVLM2
 - Paper: https://arxiv.org/pdf/2408.16500
 - Paper de CogVLM1: https://arxiv.org/abs/2311.03079

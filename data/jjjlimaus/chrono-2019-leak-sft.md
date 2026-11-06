@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `jjjlimaus/chrono-2019-leak-sft` es un modelo de generación de texto de aproximadamente 2.018 millones de parámetros (2B), publicado por el usuario jjjlimaus en HuggingFace. El nombre sugiere una posible especialización en datos temporales o de fugas de información ("chrono" y "leak"), y el tag `sn38-nanochrono` apunta a una arquitectura de tipo nanochrono, aunque no se dispone de documentación oficial que lo confirme. El modelo está alojado con pesos en formato safetensors y licencia Apache 2.0, lo que permite uso comercial y modificación.
+El modelo `jjjlimaus/chrono-2019-leak-sft` es un modelo de generación de texto de aproximadamente 2.018 millones de parámetros (2B), publicado por el usuario jjjlimaus en Hugging Face. El nombre sugiere una posible especialización en datos temporales o de fugas de información ("chrono" y "leak"), y el tag `sn38-nanochrono` apunta a una arquitectura de tipo nanochrono, aunque no se dispone de documentación oficial que lo confirme. El modelo está alojado con pesos en formato safetensors y licencia Apache 2.0, lo que permite uso comercial y modificación.
 
-La relevancia de este modelo es limitada en el ecosistema actual: no cuenta con descargas, likes ni benchmarks publicados, y su acceso está restringido (gated), lo que obliga a aceptar condiciones en HuggingFace antes de poder descargarlo. No se ha encontrado información adicional en la web sobre su entrenamiento, capacidades o rendimiento, por lo que esta ficha se basa únicamente en los metadatos disponibles y en estimaciones generales para modelos de su tamaño.
+La relevancia de este modelo es limitada en el ecosistema actual: no cuenta con descargas, likes ni benchmarks publicados, y su acceso está restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de poder descargarlo. No se ha encontrado información adicional en la web sobre su entrenamiento, capacidades o rendimiento, por lo que esta ficha se basa únicamente en los metadatos disponibles y en estimaciones generales para modelos de su tamaño.
 
 ## Especificaciones tecnicas
 
@@ -63,14 +63,14 @@ No se dispone de datos de rendimiento de este modelo, por lo que no es posible r
 
 - Información insuficiente: no hay descripción, paper ni documentación técnica, lo que impide conocer sus capacidades reales, sesgos o limitaciones.
 - Riesgo de alucinación: como cualquier modelo de lenguaje, puede generar contenido falso o inventado, pero al no estar evaluado, el riesgo es desconocido.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos o de investigación.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos o de investigación.
 - Sin comunidad ni soporte: al tener 0 descargas y 0 likes, no hay experiencia acumulada ni soporte de la comunidad.
 - Posible contenido sensible: el nombre "leak" sugiere que podría haber sido entrenado con datos de fugas de información, lo que plantea riesgos legales y éticos si se usa en producción.
 - Tamaño del repositorio: 36.3 GB para 2B parámetros es anómalo; podría contener archivos innecesarios o versiones duplicadas, lo que complica la descarga y el despliegue.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jjjlimaus/chrono-2019-leak-sft
+- Modelo en Hugging Face: https://huggingface.co/jjjlimaus/chrono-2019-leak-sft
 - Perfil del autor: https://huggingface.co/jjjlimaus
 - Lista de modelos del autor: https://huggingface.co/jjjlimaus/models
 - Herramienta OSINT "chrono-leak" (no relacionada directamente, pero aparece en búsquedas): https://github.com/Pyhroff/chrono-leak

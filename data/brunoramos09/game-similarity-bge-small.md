@@ -72,8 +72,8 @@ El autor senala que la caida frente al modelo de produccion en el conjunto dorad
 
 | Modelo | Parametros | Contexto | Precision@5 (dorado) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `game-similarity-bge-small` | 33,36 M | 256 tokens | 0,020 | MIT | HuggingFace |
-| `BAAI/bge-small-en-v1.5` | 33,36 M | 512 tokens | 0,053 | MIT | HuggingFace |
+| `game-similarity-bge-small` | 33,36 M | 256 tokens | 0,020 | MIT | Hugging Face |
+| `BAAI/bge-small-en-v1.5` | 33,36 M | 512 tokens | 0,053 | MIT | Hugging Face |
 | `voyage-4-lite` | no disponible | no disponible | 0,127 | comercial (API) | API de Voyage AI |
 
 El modelo base supera a este fine-tuning en el conjunto dorado y es la alternativa directa recomendada por el propio autor. `voyage-4-lite` es un modelo comercial de embeddings con mejor precision en consultas humanas, aunque con coste por uso y sin pesos abiertos. No se dispone de datos de otros modelos de embeddings especializados en videojuegos en la informacion proporcionada.
@@ -92,6 +92,6 @@ El modelo base supera a este fine-tuning en el conjunto dorado y es la alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brunoramos09/game-similarity-bge-small
+- Modelo en Hugging Face: https://huggingface.co/brunoramos09/game-similarity-bge-small
 - Repositorio de evaluacion en GitHub: https://github.com/brunoramos09/game-similarity
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5

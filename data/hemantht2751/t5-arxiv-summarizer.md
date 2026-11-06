@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `hemantht2751/t5-arxiv-summarizer` es un modelo de transformador de texto a texto basado en la arquitectura T5, específicamente la variante T5-small con 60,5 millones de parámetros. Está diseñado para la tarea de resumen automático de artículos científicos procedentes de arXiv, una de las aplicaciones más habituales de los modelos T5 en el ámbito académico. El autor, hemantht2751, lo ha publicado en HuggingFace con el objetivo de ofrecer una herramienta ligera y rápida para condensar papers científicos, aunque la model card apenas contiene información técnica detallada.
+El modelo `hemantht2751/t5-arxiv-summarizer` es un modelo de transformador de texto a texto basado en la arquitectura T5, específicamente la variante T5-small con 60,5 millones de parámetros. Está diseñado para la tarea de resumen automático de artículos científicos procedentes de arXiv, una de las aplicaciones más habituales de los modelos T5 en el ámbito académico. El autor, hemantht2751, lo ha publicado en Hugging Face con el objetivo de ofrecer una herramienta ligera y rápida para condensar papers científicos, aunque la model card apenas contiene información técnica detallada.
 
-El modelo se integra en el ecosistema de Transformers de HuggingFace, soporta inferencia de generación de texto y es compatible con soluciones de despliegue como Text Generation Inference (TGI) y endpoints. Al tratarse de un modelo pequeño (60 M de parámetros), es adecuado para entornos con recursos limitados, como CPUs o GPUs de gama baja, lo que lo hace accesible para investigadores y desarrolladores que necesitan resumir documentos sin depender de servicios externos.
+El modelo se integra en el ecosistema de Transformers de Hugging Face, soporta inferencia de generación de texto y es compatible con soluciones de despliegue como Text Generation Inference (TGI) y endpoints. Al tratarse de un modelo pequeño (60 M de parámetros), es adecuado para entornos con recursos limitados, como CPUs o GPUs de gama baja, lo que lo hace accesible para investigadores y desarrolladores que necesitan resumir documentos sin depender de servicios externos.
 
 A pesar de su utilidad potencial, la falta de documentación sobre el entrenamiento, los datos utilizados y la licencia limita su adopción en entornos de producción sin una evaluación previa. No se han publicado resultados de benchmarks ni métricas de calidad, por lo que su rendimiento real debe validarse de forma empírica antes de integrarlo en flujos críticos.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: al ser un modelo de 60 M de parámetros, en FP32 ocupa aproximadamente 242 MB. Con cuantización a int8 (no disponible en el repo) se reduciría a unos 60 MB. En FP16, alrededor de 121 MB.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente, como una NVIDIA GTX 1050, RTX 2060 o superiores. También puede ejecutarse en CPU con 4-8 GB de RAM.
 - Cabe en GPUs de consumo: sí, incluso en las más modestas.
-- Opciones de despliegue: vLLM, llama.cpp (si se convierte a GGUF, aunque no se proporciona), Ollama (requiere conversión), HuggingFace Inference Endpoints, y Text Generation Inference (TGI) según los tags.
+- Opciones de despliegue: vLLM, llama.cpp (si se convierte a GGUF, aunque no se proporciona), Ollama (requiere conversión), Hugging Face Inference Endpoints, y Text Generation Inference (TGI) según los tags.
 - Latencia y throughput estimados: no disponibles. En una GPU moderna (p. ej., RTX 3090), la generación de un resumen de 100 tokens debería ser casi instantánea; en CPU, del orden de 1-2 segundos por resumen.
 
 ## Comparativa con modelos similares
@@ -78,8 +78,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. El modelo
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/hemantht2751/t5-arxiv-summarizer)
+- [Modelo en Hugging Face](https://huggingface.co/hemantht2751/t5-arxiv-summarizer)
 - [Modelo similar: Bashaarat1/t5-small-arxiv-summarizer](https://huggingface.co/Bashaarat1/t5-small-arxiv-summarizer)
 - [Paper original de T5 (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)
-- [Guía de resumen de texto con HuggingFace (GeeksforGeeks)](https://www.geeksforgeeks.org/nlp/text-summarizations-using-huggingface-model/)
+- [Guía de resumen de texto con Hugging Face (GeeksforGeeks)](https://www.geeksforgeeks.org/nlp/text-summarizations-using-huggingface-model/)
 - [Herramienta de resumen de arXiv (comercial)](https://www.summarizepaper.com/)

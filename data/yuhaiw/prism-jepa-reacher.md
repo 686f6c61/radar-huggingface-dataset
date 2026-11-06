@@ -74,10 +74,10 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo o planificador | Parámetros | Horizonte | Tasa de éxito (K = 32 / 64 / 128) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PRISM-Reacher (PRISM-MPPI) | 0,51 M en la cabecera prior; modelo de mundo LeWM no disponible | H = 5 | 60,0 / 60,4 / 64,4 | MIT | Pesos en HuggingFace (este repositorio) |
+| PRISM-Reacher (PRISM-MPPI) | 0,51 M en la cabecera prior; modelo de mundo LeWM no disponible | H = 5 | 60,0 / 60,4 / 64,4 | MIT | Pesos en Hugging Face (este repositorio) |
 | MPPI estándar sobre el mismo modelo de mundo | No aplica (planificador) | H = 5 | 48,2 / 48,2 / 43,8 | MIT | Implementado en `scripts/test.sh` |
 | MPPI con warm-start sobre el mismo modelo de mundo | No aplica (planificador) | H = 5 | 46,2 / 48,4 / 46,8 | MIT | Implementado en `scripts/test.sh` |
-| `quentinll/lewm-reacher` (modelo de mundo upstream) | No disponible | No disponible | No disponible | No disponible en la información proporcionada | Pesos en HuggingFace |
+| `quentinll/lewm-reacher` (modelo de mundo upstream) | No disponible | No disponible | No disponible | No disponible en la información proporcionada | Pesos en Hugging Face |
 
 La comparación relevante es interna: los tres planificadores comparten exactamente el mismo modelo de mundo y el mismo dataset, de modo que la diferencia de éxito (entre 11,8 y 20,6 puntos porcentuales a favor de PRISM-MPPI) es atribuible al prior. No se dispone de datos de otros modelos de mundo comparables (por ejemplo, variantes tipo Dreamer) en la información proporcionada, por lo que no se ofrece una comparación cuantitativa con ellos.
 
@@ -97,7 +97,7 @@ La comparación relevante es interna: los tres planificadores comparten exactame
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YuhaiW/prism-jepa-reacher
+- Modelo en Hugging Face: https://huggingface.co/YuhaiW/prism-jepa-reacher
 - Artículo (arXiv:2606.07974): https://arxiv.org/abs/2606.07974
 - Página del proyecto: https://yuhaiw.github.io/PRISM_web/
 - Código: https://github.com/YuhaiW/prism-jepa

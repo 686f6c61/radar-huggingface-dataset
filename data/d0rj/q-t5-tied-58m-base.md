@@ -104,7 +104,7 @@ Frente a t5-small, la diferencia relevante no es el numero de parametros, practi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d0rj/q-t5-tied-58M-base
+- Modelo en Hugging Face: https://huggingface.co/d0rj/q-t5-tied-58M-base
 - Modelo hermano con MoE: https://huggingface.co/d0rj/t5-moe-55M-base
 - Modelo hermano de 51M: https://huggingface.co/d0rj/q-51M-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

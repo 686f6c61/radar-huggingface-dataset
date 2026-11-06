@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nikhilkuma/dino-multitask-notebook` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada Dino orientada a tareas múltiples (multitask). No se trata de un modelo entrenado ni de un lanzamiento listo para producción: el propio autor indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests), revisión de código y experimentos controlados de pequeño tamaño. El peso real declarado en safetensors es de 16.576 parámetros, un orden de magnitud propio de una maqueta de arquitectura más que de un modelo utilizable.
+`nikhilkuma/dino-multitask-notebook` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada Dino orientada a tareas múltiples (multitask). No se trata de un modelo entrenado ni de un lanzamiento listo para producción: el propio autor indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests), revisión de código y experimentos controlados de pequeño tamaño. El peso real declarado en safetensors es de 16.576 parámetros, un orden de magnitud propio de una maqueta de arquitectura más que de un modelo utilizable.
 
 El repositorio se publica bajo licencia BSD-3-Clause e incluye cuatro artefactos principales: `run.py` (implementación y punto de entrada ejecutable), `config.json` (ajustes de arquitectura generados), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (checkpoint de inicialización). La configuración etiquetada como "small" emplea atención dispersa (sparse), fusión bilinear, activación gelu-tanh y normalización RMSNorm.
 
@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nikhilkuma/dino-multitask-notebook | 16.576 | no disponible | Checkpoint de inicializacion, sin entrenar | bsd-3-clause | HuggingFace, 0 descargas, 0 likes |
-| matthewlop/dino-multitask | no disponible | no disponible | Checkpoint de inicializacion, sin entrenar | no disponible | HuggingFace |
-| varunbsingh/dino-multitask | no disponible | no disponible | Codigo experimental, sin entrenar | no disponible | HuggingFace |
+| nikhilkuma/dino-multitask-notebook | 16.576 | no disponible | Checkpoint de inicializacion, sin entrenar | bsd-3-clause | Hugging Face, 0 descargas, 0 likes |
+| matthewlop/dino-multitask | no disponible | no disponible | Checkpoint de inicializacion, sin entrenar | no disponible | Hugging Face |
+| varunbsingh/dino-multitask | no disponible | no disponible | Codigo experimental, sin entrenar | no disponible | Hugging Face |
 | vivekananda05/multitask-dino | no disponible | no disponible | Framework multi-tarea con DINOv3-Small congelado y modulos LoRA | no disponible | GitHub |
 
 Los tres primeros repositorios son variantes de la misma idea (implementacion Dino para multitask con checkpoint de inicializacion) publicadas por autores distintos; ninguno declara benchmarks. El cuarto es un proyecto diferente: usa un DINOv3-Small preentrenado y congelado como extractor de caracteristicas, con LoRA para ajuste ligero, orientado a denoising e inpainting de imagen, por lo que no es estrictamente comparable en parametros ni en proposito. No se dispone de datos de rendimiento para ninguno de ellos.
@@ -100,7 +100,7 @@ Los tres primeros repositorios son variantes de la misma idea (implementacion Di
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nikhilkuma/dino-multitask-notebook
+- Repositorio en Hugging Face: https://huggingface.co/nikhilkuma/dino-multitask-notebook
 - Repositorio similar (matthewlop): https://huggingface.co/matthewlop/dino-multitask
 - Repositorio similar (varunbsingh): https://huggingface.co/varunbsingh/dino-multitask
 - Proyecto externo multitask con DINOv3-Small y LoRA (GitHub): https://github.com/vivekananda05/multitask-dino

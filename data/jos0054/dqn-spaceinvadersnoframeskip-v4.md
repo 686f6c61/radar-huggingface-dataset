@@ -80,7 +80,7 @@ No se dispone de resultados de rendimiento de los modelos comparables en la info
 
 | Modelo | Algoritmo | Politica | Entorno | Presupuesto | mean_reward | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| `jos0054/dqn-SpaceInvadersNoFrameskip-v4` | DQN | `CnnPolicy` | SpaceInvadersNoFrameskip-v4 | 1.000.000 timesteps | 573,00 ± 66,75 | no disponible | HuggingFace |
+| `jos0054/dqn-SpaceInvadersNoFrameskip-v4` | DQN | `CnnPolicy` | SpaceInvadersNoFrameskip-v4 | 1.000.000 timesteps | 573,00 ± 66,75 | no disponible | Hugging Face |
 | DQN de referencia de RL Zoo (misma tarea) | DQN | `CnnPolicy` | SpaceInvadersNoFrameskip-v4 | no disponible | no disponible | no disponible | RL Zoo |
 | QR-DQN / C51 (sb3-contrib) | DQN distributional | `CnnPolicy` | Atari | no disponible | no disponible | no disponible | sb3-contrib |
 | Rainbow (sb3-contrib) | DQN con componentes combinados | `CnnPolicy` | Atari | no disponible | no disponible | no disponible | sb3-contrib |
@@ -101,7 +101,7 @@ Diferencias cualitativas: frente a las variantes distributionales (C51, QR-DQN) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jos0054/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/jos0054/dqn-SpaceInvadersNoFrameskip-v4
 - stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo (rl-baselines3-zoo): https://github.com/DLR-RM/rl-baselines3-zoo
 - SB3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

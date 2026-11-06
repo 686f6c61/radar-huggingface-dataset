@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `document-stamp-segmentation-v20-20261012-dev` es un modelo de segmentación de imágenes especializado en la detección y segmentación de sellos redondos y estampillas dentro de documentos digitalizados. Lo desarrolla el usuario de HuggingFace `ducln-business` (Duc Le) y se distribuye como un ajuste fino (finetune) del modelo `ZhengPeng7/BiRefNet`, una arquitectura de segmentación dicotómica de alta resolución. La versión etiquetada como `20261012-dev` sugiere un estado de desarrollo y una fecha de construcción interna asociada al repositorio.
+El modelo `document-stamp-segmentation-v20-20261012-dev` es un modelo de segmentación de imágenes especializado en la detección y segmentación de sellos redondos y estampillas dentro de documentos digitalizados. Lo desarrolla el usuario de Hugging Face `ducln-business` (Duc Le) y se distribuye como un ajuste fino (finetune) del modelo `ZhengPeng7/BiRefNet`, una arquitectura de segmentación dicotómica de alta resolución. La versión etiquetada como `20261012-dev` sugiere un estado de desarrollo y una fecha de construcción interna asociada al repositorio.
 
 El problema que resuelve es concreto: en flujos de digitalización documental (seguros, banca, administración pública), los documentos escaneados contienen sellos, timbres y marcas circulares que deben localizarse y aislarse de forma automática. La segmentación precisa de estos elementos permite su posterior extracción, indexación, verificación de autenticidad o eliminación selectiva, tareas donde las técnicas clásicas de visión por computador fallan por la variabilidad de formas, colores y calidades de escaneo.
 
-El modelo es relevante por su especialización de dominio: parte de un backbone de segmentación generalista de alta resolución (BiRefNet) y lo adapta a una tarea estrecha con una huella de almacenamiento de 0,9 GB. El acceso está restringido (gated) en HuggingFace, por lo que su uso requiere aceptar las condiciones del repositorio. No se dispone de datos públicos sobre licencia, idiomas soportados, número de parámetros ni composición del dataset de ajuste.
+El modelo es relevante por su especialización de dominio: parte de un backbone de segmentación generalista de alta resolución (BiRefNet) y lo adapta a una tarea estrecha con una huella de almacenamiento de 0,9 GB. El acceso está restringido (gated) en Hugging Face, por lo que su uso requiere aceptar las condiciones del repositorio. No se dispone de datos públicos sobre licencia, idiomas soportados, número de parámetros ni composición del dataset de ajuste.
 
 ## Especificaciones tecnicas
 
@@ -22,7 +22,7 @@ El modelo es relevante por su especialización de dominio: parte de un backbone 
 | Formato de pesos | PyTorch (pesos safetensors/bin según repositorio); tamaño del repo 0,9 GB |
 | Tarea (pipeline) | image-segmentation |
 | Modelo base | ZhengPeng7/BiRefNet (finetune) |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tarea | Base | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| document-stamp-segmentation-v20-20261012-dev | Segmentación de sellos | BiRefNet | no disponible | no disponible | Gated en HuggingFace |
-| ZhengPeng7/BiRefNet | Segmentación dicotómica de alta resolución | Propio (Swin) | Alta resolución | Consultar repositorio | Público en HuggingFace |
-| ducln-business/document-signature-stamp-detector-v20-20261012-dev | Detección de firmas y sellos | no disponible | no disponible | no disponible | HuggingFace |
+| document-stamp-segmentation-v20-20261012-dev | Segmentación de sellos | BiRefNet | no disponible | no disponible | Gated en Hugging Face |
+| ZhengPeng7/BiRefNet | Segmentación dicotómica de alta resolución | Propio (Swin) | Alta resolución | Consultar repositorio | Público en Hugging Face |
+| ducln-business/document-signature-stamp-detector-v20-20261012-dev | Detección de firmas y sellos | no disponible | no disponible | no disponible | Hugging Face |
 | DALAI-project/Document_segmentation | Segmentación documental (texto mecanografiado/manuscrito) | no disponible | no disponible | Consultar repositorio | GitHub |
 
 No se han encontrado comparativas de rendimiento cuantitativas entre este modelo y alternativas de la misma categoría en la información disponible.
@@ -74,7 +74,7 @@ No se han encontrado comparativas de rendimiento cuantitativas entre este modelo
 ## Limitaciones y advertencias
 
 - Licencia no disponible: no se puede confirmar si el uso comercial está permitido; es imprescindible verificar los términos del repositorio antes de integrarlo en producción.
-- Acceso restringido (gated): requiere solicitar y aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la automatización de despliegues.
+- Acceso restringido (gated): requiere solicitar y aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la automatización de despliegues.
 - Modelo en estado `dev`: la etiqueta de desarrollo sugiere que puede no ser una versión estable; conviene validar el comportamiento en un conjunto propio antes de usarlo.
 - Datos de entrenamiento no documentados: se desconoce la composición del dataset, lo que impide evaluar posibles sesgos de dominio (tipos de documentos, idiomas, calidades de escaneo, colores de sello).
 - Riesgo de falsos positivos y negativos en sellos con baja calidad, manchas, sellos superpuestos o estilos no vistos en el ajuste.
@@ -84,7 +84,7 @@ No se han encontrado comparativas de rendimiento cuantitativas entre este modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ducln-business/document-stamp-segmentation-v20-20261012-dev
+- Modelo en Hugging Face: https://huggingface.co/ducln-business/document-stamp-segmentation-v20-20261012-dev
 - Modelo base BiRefNet: https://huggingface.co/ZhengPeng7/BiRefNet
 - Perfil del autor: https://huggingface.co/ducln-business
 - Modelo relacionado (detector de firma y sello): https://huggingface.co/ducln-business/document-signature-stamp-detector-v20-20261012-dev

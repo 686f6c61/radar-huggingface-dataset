@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAMS-Diff es un modelo publicado en HuggingFace por el usuario Vishwesh8 bajo el identificador `Vishwesh8/CAMS-Diff`. La informacion disponible en la model card es practicamente inexistente: el unico contenido del README es la declaracion de licencia MIT, sin descripcion del modelo, arquitectura, datos de entrenamiento ni casos de uso previstos. Esto lo convierte en un artefacto con documentacion minima, lo que dificulta su evaluacion tecnica rigurosa.
+CAMS-Diff es un modelo publicado en Hugging Face por el usuario Vishwesh8 bajo el identificador `Vishwesh8/CAMS-Diff`. La informacion disponible en la model card es practicamente inexistente: el unico contenido del README es la declaracion de licencia MIT, sin descripcion del modelo, arquitectura, datos de entrenamiento ni casos de uso previstos. Esto lo convierte en un artefacto con documentacion minima, lo que dificulta su evaluacion tecnica rigurosa.
 
 El nombre del repositorio sugiere que podria tratarse de un modelo de difusion (por el sufijo "Diff"), posiblemente relacionado con el acronimo CAMS (Copernicus Atmosphere Monitoring Service) o con alguna otra convencion interna del autor. Sin embargo, esta interpretacion es una inferencia basada unicamente en la nomenclatura y no esta confirmada por ningun dato de la model card ni por resultados de la busqueda web, que no devolvieron informacion relevante sobre el modelo.
 
@@ -89,6 +89,6 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vishwesh8/CAMS-Diff
+- Hugging Face: https://huggingface.co/Vishwesh8/CAMS-Diff
 
 No se han encontrado en la busqueda web enlaces relevantes (paper, blog, repositorio de codigo o demo) asociados a este modelo. Los resultados devueltos corresponden a portales de noticias sin relacion con el artefacto.

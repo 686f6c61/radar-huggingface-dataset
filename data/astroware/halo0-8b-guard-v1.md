@@ -4,7 +4,7 @@
 
 Halo0.8B-guard-v1 es un modelo de seguridad (guard model) desarrollado por Astroware Labs, una startup de seguridad de IA centrada en alineación, seguridad y protección de agentes. El modelo está diseñado para actuar como una capa de seguridad en tiempo de ejecución para sistemas de IA, clasificando entradas y salidas para detectar contenido malicioso, intentos de jailbreak o comportamientos inseguros en agentes autónomos.
 
-Con 852 millones de parámetros (0.8B), el modelo es compacto y está pensado para integrarse en pipelines de inferencia con baja latencia. El tag `qwen3_5` en HuggingFace sugiere que su arquitectura se basa en la familia Qwen3.5, aunque no se confirma el detalle exacto de la implementación. El repositorio pesa 24,1 GB, lo que indica que incluye múltiples pesos o cuantizaciones. Fue creado en mayo de 2026 y actualizado en agosto de 2026, con 243 descargas en el momento de la consulta.
+Con 852 millones de parámetros (0.8B), el modelo es compacto y está pensado para integrarse en pipelines de inferencia con baja latencia. El tag `qwen3_5` en Hugging Face sugiere que su arquitectura se basa en la familia Qwen3.5, aunque no se confirma el detalle exacto de la implementación. El repositorio pesa 24,1 GB, lo que indica que incluye múltiples pesos o cuantizaciones. Fue creado en mayo de 2026 y actualizado en agosto de 2026, con 243 descargas en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -46,7 +46,7 @@ No se dispone de detalles sobre el número de tokens de entrenamiento, la compos
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye métricas como MMLU, HumanEval o GSM8K, y tampoco se encontraron evaluaciones comparativas en la búsqueda web. No se pueden aportar datos numéricos de rendimiento.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye métricas como MMLU, HumanEval o GSM8K, y tampoco se encontraron evaluaciones comparativas en la búsqueda web. No se pueden aportar datos numéricos de rendimiento.
 
 ## Requisitos de hardware
 

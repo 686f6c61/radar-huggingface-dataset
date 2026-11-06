@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hydreigon es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene descripción alguna del modelo: únicamente incluye la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio ocupa 0,1 GB, lo que sugiere pesos de pequeño tamaño, pero no es posible confirmar el número de parámetros ni el formato de los pesos a partir de la información disponible.
+Hydreigon es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene descripción alguna del modelo: únicamente incluye la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio ocupa 0,1 GB, lo que sugiere pesos de pequeño tamaño, pero no es posible confirmar el número de parámetros ni el formato de los pesos a partir de la información disponible.
 
 El modelo no registra descargas ni "likes" en el momento de la consulta, y no tiene pipeline declarado ni idiomas especificados. Fue creado y actualizado el 1 de noviembre de 2026, con apenas dos minutos de diferencia entre ambos eventos, lo que apunta a una publicación sin iteración posterior documentada.
 
@@ -23,7 +23,7 @@ Dada la ausencia total de documentación técnica, esta ficha se limita a reflej
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura híbrida o cualquier otra variante. Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura híbrida o cualquier otra variante. Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal.
 
 El único dato estructural disponible es el tamaño del repositorio (0,1 GB), que es compatible con pesos en precisión reducida de un modelo de pocos cientos de millones de parámetros, pero esta inferencia no puede confirmarse sin inspeccionar los archivos. No se dispone de información sobre el proceso de entrenamiento ni sobre la procedencia de los datos.
 
@@ -75,5 +75,5 @@ No disponible. Sin datos sobre arquitectura, tamaño o rendimiento, no es posibl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Hydreigon
+- Hugging Face: https://huggingface.co/Ryanham1lton/Hydreigon
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

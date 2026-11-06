@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JesusCorbeille/este2_face` es un adaptador LoRA de texto a imagen publicado en HuggingFace por el usuario JesusCorbeille el 21 de septiembre de 2026. Se trata de un ajuste fino de bajo rango pensado para inyectar en un modelo de difusion la capacidad de generar un rostro concreto, activado mediante la palabra clave (trigger word) `este_face`. El adaptador se distribuye en formato diffusers y esta declarado explicitamente como derivado del modelo base `wikeeyang/Flux2-Klein-9B-True-V3`, sobre el que debe cargarse para funcionar.
+`JesusCorbeille/este2_face` es un adaptador LoRA de texto a imagen publicado en Hugging Face por el usuario JesusCorbeille el 21 de septiembre de 2026. Se trata de un ajuste fino de bajo rango pensado para inyectar en un modelo de difusion la capacidad de generar un rostro concreto, activado mediante la palabra clave (trigger word) `este_face`. El adaptador se distribuye en formato diffusers y esta declarado explicitamente como derivado del modelo base `wikeeyang/Flux2-Klein-9B-True-V3`, sobre el que debe cargarse para funcionar.
 
 El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador LoRA y no con un modelo completo, lo que confirma que no es un modelo autonomo: sin el modelo base no genera nada. La model card es minima (tres apartados: trigger words, descarga del modelo y una galeria sin contenido textual) y no incluye informacion sobre el dataset de entrenamiento, el rango del adaptador, la licencia ni los idiomas soportados. El modelo base pertenece, por su nombre, a la familia Flux (variante "Klein", 9B), aunque no se ha encontrado documentacion tecnica verificable sobre el en la busqueda realizada.
 
@@ -95,7 +95,7 @@ A modo cualitativo, y sin cifras, la alternativa generica a un LoRA de identidad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JesusCorbeille/este2_face
+- Modelo en Hugging Face: https://huggingface.co/JesusCorbeille/este2_face
 - Modelo base declarado: https://huggingface.co/wikeeyang/Flux2-Klein-9B-True-V3
 - Repositorio de la libreria diffusers (entorno de carga habitual): https://github.com/huggingface/diffusers
 - Libreria PEFT, empleada para cargar adaptadores LoRA: https://github.com/huggingface/peft

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AbrarDev/AbrarDev_CodeFix_v4_GGUF` es un artefacto subido a HuggingFace por el usuario AbrarDev bajo licencia Apache-2.0. La model card no incluye ninguna descripción técnica, arquitectura, tamaño, contexto ni datos de entrenamiento. El nombre sugiere que podría estar orientado a la corrección de código (CodeFix) y que está disponible en formato GGUF, lo que apunta a un uso con llama.cpp u otros motores de inferencia locales. Sin embargo, al no existir información publicada por el autor, no es posible confirmar ninguna característica concreta.
+El modelo `AbrarDev/AbrarDev_CodeFix_v4_GGUF` es un artefacto subido a Hugging Face por el usuario AbrarDev bajo licencia Apache-2.0. La model card no incluye ninguna descripción técnica, arquitectura, tamaño, contexto ni datos de entrenamiento. El nombre sugiere que podría estar orientado a la corrección de código (CodeFix) y que está disponible en formato GGUF, lo que apunta a un uso con llama.cpp u otros motores de inferencia locales. Sin embargo, al no existir información publicada por el autor, no es posible confirmar ninguna característica concreta.
 
 En el momento de la consulta, el repositorio registra cero descargas y cero likes, lo que indica que es un modelo recién publicado (fecha de creación: 15 de agosto de 2026) y sin adopción inicial. Dada la ausencia de documentación, cualquier evaluación técnica debe considerarse como no disponible hasta que el autor publique detalles adicionales.
 
@@ -53,4 +53,4 @@ No disponible. Al no conocerse el tamaño, la arquitectura ni el rendimiento del
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AbrarDev/AbrarDev_CodeFix_v4_GGUF
+- Repositorio Hugging Face: https://huggingface.co/AbrarDev/AbrarDev_CodeFix_v4_GGUF

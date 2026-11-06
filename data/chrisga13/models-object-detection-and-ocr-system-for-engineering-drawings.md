@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `chrisga13/Models-Object-Detection-and-OCR-System-for-Engineering-Drawings` es un repositorio publicado en HuggingFace por el usuario chrisga13. Con un tamaño declarado de 7.615.616.512 parámetros, el repositorio ocupa 6.9 GB y está disponible en formato GGUF y safetensors. A pesar de que el nombre sugiere un sistema de detección de objetos y reconocimiento óptico de caracteres para planos de ingeniería, la model card no incluye documentación técnica, descripción de arquitectura ni datos de entrenamiento. La licencia MIT permite uso comercial, pero la falta de información dificulta su evaluación y adopción en producción. La relevancia actual del modelo es limitada: podría ser útil para tareas de visión industrial, pero su estado real es indeterminado.
+El modelo `chrisga13/Models-Object-Detection-and-OCR-System-for-Engineering-Drawings` es un repositorio publicado en Hugging Face por el usuario chrisga13. Con un tamaño declarado de 7.615.616.512 parámetros, el repositorio ocupa 6.9 GB y está disponible en formato GGUF y safetensors. A pesar de que el nombre sugiere un sistema de detección de objetos y reconocimiento óptico de caracteres para planos de ingeniería, la model card no incluye documentación técnica, descripción de arquitectura ni datos de entrenamiento. La licencia MIT permite uso comercial, pero la falta de información dificulta su evaluación y adopción en producción. La relevancia actual del modelo es limitada: podría ser útil para tareas de visión industrial, pero su estado real es indeterminado.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ No se ha publicado información sobre la arquitectura del modelo, el tipo de red
 
 - Detección de objetos: el nombre del modelo sugiere que podría identificar componentes en planos de ingeniería, pero no hay documentación ni ejemplos que lo confirmen.
 - OCR: el nombre indica reconocimiento óptico de caracteres, probablemente sobre dibujos técnicos, sin evidencia verificable.
-- Interfaz conversacional: el tag `conversational` en HuggingFace apunta a una posible interacción de chat, aunque no se detalla su implementación ni sus límites.
+- Interfaz conversacional: el tag `conversational` en Hugging Face apunta a una posible interacción de chat, aunque no se detalla su implementación ni sus límites.
 - Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en infraestructuras de inferencia estándar, pero no se especifica el pipeline.
 - Soporte de tool calling: no disponible.
 - Soporte de agentes y multi-step reasoning: no disponible.
@@ -59,7 +59,7 @@ No se dispone de datos comparables. El modelo no tiene benchmarks publicados ni 
 ## Limitaciones y advertencias
 
 - Falta de documentación: la model card está vacía, lo que impide conocer la arquitectura, los datos de entrenamiento y las capacidades reales.
-- Posible desalineación entre el nombre del modelo (visión y OCR) y los tags de HuggingFace (`conversational`), lo que genera confusión sobre su propósito real.
+- Posible desalineación entre el nombre del modelo (visión y OCR) y los tags de Hugging Face (`conversational`), lo que genera confusión sobre su propósito real.
 - Riesgo de alucinación: al no existir información sobre el entrenamiento, no se puede evaluar la fiabilidad de las salidas en tareas de visión o lenguaje.
 - Sin datos de sesgos: no se han documentado sesgos, pero la ausencia de información impide descartarlos.
 - Restricciones de licencia: la licencia MIT permite uso comercial y modificación, pero la falta de garantías sobre el funcionamiento hace arriesgado su uso en producción.
@@ -67,5 +67,5 @@ No se dispone de datos comparables. El modelo no tiene benchmarks publicados ni 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/chrisga13/Models-Object-Detection-and-OCR-System-for-Engineering-Drawings
+- Repositorio de Hugging Face: https://huggingface.co/chrisga13/Models-Object-Detection-and-OCR-System-for-Engineering-Drawings
 - Repositorio homónimo de otro autor (referencia externa, no el modelo evaluado): https://huggingface.co/Nghiaub257/Models-Object-Detection-and-OCR-System-for-Engineering-Drawings

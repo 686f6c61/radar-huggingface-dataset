@@ -107,7 +107,7 @@ Frente al codificador original, este modelo intercambia 0.0220 de divergencia KL
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-GGUF
 - Modelo base (bf16, fuente de la cuantizacion): https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic
 - Variante NVFP4: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-NVFP4
 - Variante W4A8 INT8: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-W4A8

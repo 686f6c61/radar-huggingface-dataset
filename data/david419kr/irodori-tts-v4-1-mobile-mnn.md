@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Muestreo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Irodori-TTS-v4.1-Mobile-MNN Small W8/W4 | no disponible | no aplica | RF Euler, 40 pasos, CFG | MIT (repo) | HuggingFace, MNN Android |
-| Irodori-TTS-v4.1-Mobile-MNN Small-MF W8/W4 | no disponible | no aplica | MeanFlow, 4 pasos, sin CFG | MIT (repo) | HuggingFace, MNN Android |
-| Aratako/Irodori-TTS-v4.1-Small (upstream) | no disponible | no aplica | RF Euler con CFG | no disponible en la información | HuggingFace |
-| Aratako/Irodori-TTS-v4.1-Small-MF (upstream) | no disponible | no aplica | MeanFlow sin CFG | no disponible en la información | HuggingFace |
+| Irodori-TTS-v4.1-Mobile-MNN Small W8/W4 | no disponible | no aplica | RF Euler, 40 pasos, CFG | MIT (repo) | Hugging Face, MNN Android |
+| Irodori-TTS-v4.1-Mobile-MNN Small-MF W8/W4 | no disponible | no aplica | MeanFlow, 4 pasos, sin CFG | MIT (repo) | Hugging Face, MNN Android |
+| Aratako/Irodori-TTS-v4.1-Small (upstream) | no disponible | no aplica | RF Euler con CFG | no disponible en la información | Hugging Face |
+| Aratako/Irodori-TTS-v4.1-Small-MF (upstream) | no disponible | no aplica | MeanFlow sin CFG | no disponible en la información | Hugging Face |
 
 No se han encontrado en la información disponible otros modelos de TTS japonés comparables con datos verificables de parámetros, contexto o rendimiento. La comparación directa más fiable es entre las dos variantes de este repositorio y sus checkpoints upstream.
 
@@ -96,7 +96,7 @@ No se han encontrado en la información disponible otros modelos de TTS japonés
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/david419kr/Irodori-TTS-v4.1-Mobile-MNN
+- Repositorio Hugging Face: https://huggingface.co/david419kr/Irodori-TTS-v4.1-Mobile-MNN
 - Modelo upstream Small: https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small
 - Modelo upstream Small-MF: https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small-MF
 - Códec: https://huggingface.co/Aratako/Semantic-DACVAE-Japanese-32dim

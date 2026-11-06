@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-0.6B-JA-PT-Anime-GGUF es un ajuste fino por destilación del modelo Qwen/Qwen3-0.6B, publicado por el usuario Jabs2, especializado en la traducción de japonés a portugués de diálogos de anime. El modelo se distribuye únicamente en formato GGUF cuantizado para llama.cpp, con un total de 596.049.920 parámetros (0,6 B) y una licencia declarada Apache-2.0 heredada del modelo base. Su pipeline declarado en HuggingFace es "translation" y el único idioma etiquetado es el japonés, ya que el portugués se emplea como lengua de salida.
+Qwen3-0.6B-JA-PT-Anime-GGUF es un ajuste fino por destilación del modelo Qwen/Qwen3-0.6B, publicado por el usuario Jabs2, especializado en la traducción de japonés a portugués de diálogos de anime. El modelo se distribuye únicamente en formato GGUF cuantizado para llama.cpp, con un total de 596.049.920 parámetros (0,6 B) y una licencia declarada Apache-2.0 heredada del modelo base. Su pipeline declarado en Hugging Face es "translation" y el único idioma etiquetado es el japonés, ya que el portugués se emplea como lengua de salida.
 
 El problema que aborda es muy concreto: conseguir una traducción japonés-portugués aceptable en dispositivos que no pueden cargar modelos de más de un gigabyte. El autor entrenó un QLoRA (r=32, 1.500 pasos, batch efectivo 32, bf16) destilando el comportamiento de fumetodev/Hy-MT2-1.8B-JP-Manga-Finetune-v3-multilingual sobre 3.841 líneas de diálogo del dataset público joujiboi/japanese-anime-speech. La pérdida de entrenamiento bajó de 2,62 a 0,32.
 
@@ -99,7 +99,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jabs2/Qwen3-0.6B-JA-PT-Anime-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Jabs2/Qwen3-0.6B-JA-PT-Anime-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Modelo profesor (destilación): https://huggingface.co/fumetodev/Hy-MT2-1.8B-JP-Manga-Finetune-v3
 - Versión GGUF del profesor: https://huggingface.co/fumetodev/Hy-MT2-1.8B-JP-Manga-Finetune-v3-multilingual-GGUF

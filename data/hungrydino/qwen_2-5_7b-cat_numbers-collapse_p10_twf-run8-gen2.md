@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
   - int4: ~4 GB de VRAM
 - GPU recomendadas: RTX 3090/4090 (24 GB) para fp16, RTX 3060 (12 GB) para int8, o GPUs con 4-6 GB para cuantización int4.
 - El modelo cabe en GPUs de consumo medio, aunque la cuantización es necesaria para tarjetas con menos de 16 GB.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama (conversión a GGUF necesaria), Text Generation Inference (TGI), HuggingFace Inference Endpoints.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama (conversión a GGUF necesaria), Text Generation Inference (TGI), Hugging Face Inference Endpoints.
 - Latencia y throughput estimados: no disponibles, pero un modelo de 7B en una RTX 4090 puede generar entre 50 y 100 tokens por segundo en cuantización int8.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ La comparativa se basa en características generales; no hay datos de rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run8-gen2
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run8-gen2
 - Otros runs similares: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run1-gen2 y https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run3-gen2
 - Guía de Qwen 2.5 en Ollama: https://ai-ollama.github.io/qwen-2-5.html
 - Página de Qwen2.5 en Ollama: https://ollama.com/library/qwen2.5:7b

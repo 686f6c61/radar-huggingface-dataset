@@ -104,10 +104,10 @@ Las cifras de VRAM que siguen son estimaciones derivadas del numero de parametro
 
 | Modelo | Parametros | Entrenamiento | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|---|
-| cagliostro-v3.5-chat | 146 M | 75,4 mil millones de tokens de preentrenamiento + 1 epoca de SFT sobre smol-smoltalk | no disponible (2.048 en evaluacion) | Indice Open SLM 27,49 en el base; MT-Bench del chat no disponible | Apache-2.0 | Pesos safetensors en HuggingFace, requiere `custom_code` |
-| SmolLM2-135M-Instruct | 135 M (segun su denominacion) | smol-smoltalk + DPO sobre UltraFeedback | no disponible en la informacion proporcionada | No disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace, ecosistema estandar |
-| SmolLM2-135M | 135 M (segun su denominacion) | 2 billones de tokens | no disponible en la informacion proporcionada | Superior en WikiText-2, LAMBADA, BLiMP, SciQ y ARC-Easy; empatado o por detras en el resto | no disponible en la informacion proporcionada | HuggingFace, ecosistema estandar |
-| SmolLM2-360M-Instruct | 360 M (segun su denominacion) | smol-smoltalk (referenciado como el mismo corpus) | no disponible en la informacion proporcionada | No disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace, ecosistema estandar |
+| cagliostro-v3.5-chat | 146 M | 75,4 mil millones de tokens de preentrenamiento + 1 epoca de SFT sobre smol-smoltalk | no disponible (2.048 en evaluacion) | Indice Open SLM 27,49 en el base; MT-Bench del chat no disponible | Apache-2.0 | Pesos safetensors en Hugging Face, requiere `custom_code` |
+| SmolLM2-135M-Instruct | 135 M (segun su denominacion) | smol-smoltalk + DPO sobre UltraFeedback | no disponible en la informacion proporcionada | No disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face, ecosistema estandar |
+| SmolLM2-135M | 135 M (segun su denominacion) | 2 billones de tokens | no disponible en la informacion proporcionada | Superior en WikiText-2, LAMBADA, BLiMP, SciQ y ARC-Easy; empatado o por detras en el resto | no disponible en la informacion proporcionada | Hugging Face, ecosistema estandar |
+| SmolLM2-360M-Instruct | 360 M (segun su denominacion) | smol-smoltalk (referenciado como el mismo corpus) | no disponible en la informacion proporcionada | No disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face, ecosistema estandar |
 
 El propio autor reconoce que, fuera del leaderboard, SmolLM2-135M es el modelo de lenguaje general mas fuerte y que la ventaja de cagliostro en el indice procede de la aritmetica, metrica que el indice pondera con un peso de 0,65.
 
@@ -126,7 +126,7 @@ El propio autor reconoce que, fuera del leaderboard, SmolLM2-135M es el modelo d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bench-labs/cagliostro-v3.5-chat
+- Modelo en Hugging Face: https://huggingface.co/bench-labs/cagliostro-v3.5-chat
 - Modelo base: https://huggingface.co/bench-labs/cagliostro-v3.5
 - Conjunto de datos de ajuste: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk
 - Muestras de generacion citadas en la model card: `samples.json` en la raiz del repositorio

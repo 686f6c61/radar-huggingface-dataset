@@ -2,11 +2,11 @@
 
 ## Resumen
 
-sasoriiii/test-v2 es un modelo multimodal de tipo image-text-to-text publicado en HuggingFace por el usuario sasoriiii. Se trata de una variante cuantizada y derivada de llmfan46/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic, que a su vez es un ajuste fino de la familia Qwen3-VL de 32 000 millones de parametros en su variante Instruct. Por las etiquetas del repositorio (qwen3-vl-32b, abliterated, heretic, uncensored) se trata de una version sin mecanismos de rechazo, orientada a generacion de texto e imagenes sin filtros de seguridad incorporados.
+sasoriiii/test-v2 es un modelo multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario sasoriiii. Se trata de una variante cuantizada y derivada de llmfan46/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic, que a su vez es un ajuste fino de la familia Qwen3-VL de 32 000 millones de parametros en su variante Instruct. Por las etiquetas del repositorio (qwen3-vl-32b, abliterated, heretic, uncensored) se trata de una version sin mecanismos de rechazo, orientada a generacion de texto e imagenes sin filtros de seguridad incorporados.
 
 El repositorio declara las etiquetas bf16, int8, convrot y quantized, lo que indica que el autor distribuye una o varias versiones comprimidas del modelo base. La libreria asociada es comfyui, por lo que el destino previsto de estos pesos es la integracion en flujos de trabajo de ComfyUI, no un uso directo con transformers o vLLM. El tamano del repositorio es de 85,5 GB, coherente con la distribucion de varias representaciones de un modelo de 32 000 millones de parametros junto con el codificador visual.
 
-La relevancia del modelo es limitada y debe valorarse con cautela: es un repositorio de prueba (el propio identificador incluye "test-v2"), con 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el mismo dia, sin documentacion tecnica publicada, sin resultados de benchmarks y con acceso restringido que exige aceptar condiciones en HuggingFace. No debe considerarse un artefacto validado para produccion sin una evaluacion propia previa.
+La relevancia del modelo es limitada y debe valorarse con cautela: es un repositorio de prueba (el propio identificador incluye "test-v2"), con 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el mismo dia, sin documentacion tecnica publicada, sin resultados de benchmarks y con acceso restringido que exige aceptar condiciones en Hugging Face. No debe considerarse un artefacto validado para produccion sin una evaluacion propia previa.
 
 ## Especificaciones tecnicas
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks de ninguna de las alternativas en la inform
 - Riesgo elevado de alucinacion: al no existir datos de evaluacion y tratarse de un ajuste fino de comunidad sobre un modelo de 32 000 millones, la fidelidad de las descripciones de imagen y de las respuestas textuales no esta garantizada.
 - Limitacion idiomatica: el repositorio declara unicamente el ingles. El rendimiento en castellano no esta documentado y podria ser deficiente.
 - Longitud de contexto desconocida: no se declara el contexto soportado en esta ficha, por lo que no se puede planificar su uso en tareas que requieran ventanas largas sin verificacion previa.
-- Acceso restringido: el modelo esta gated y exige aceptar condiciones en HuggingFace, lo que anade friccion a la descarga y a la reproducibilidad de cualquier evaluacion.
+- Acceso restringido: el modelo esta gated y exige aceptar condiciones en Hugging Face, lo que anade friccion a la descarga y a la reproducibilidad de cualquier evaluacion.
 - Licencia: se declara apache-2.0, lo que en principio permite uso comercial, pero el repositorio es un derivado de un ajuste fino de terceros cuyo cumplimiento de la licencia original no se documenta aqui. Conviene verificar la cadena completa de licencias (Qwen3-VL, ajuste de llmfan46 y este derivado) antes de un uso comercial.
 - Tamano de descarga elevado: 85,5 GB, con el coste de almacenamiento y de transferencia asociado.
 - Soporte de herramientas y agentes no confirmado: no se documenta tool calling, function calling ni razonamiento multi-paso, capacidades que no deben asumirse.
@@ -97,6 +97,6 @@ No se dispone de datos de benchmarks de ninguna de las alternativas en la inform
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/sasoriiii/test-v2
+- Hugging Face del modelo: https://huggingface.co/sasoriiii/test-v2
 - Modelo base declarado: https://huggingface.co/llmfan46/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante. Las unicas entradas devueltas corresponden a portales institucionales de la gobernacion de Asuan (Egipto) y no guardan relacion con el modelo, con Qwen3-VL ni con cuantizacion de modelos de lenguaje. No se dispone por tanto de paper, blog, repositorio de codigo ni demo asociados a este modelo.

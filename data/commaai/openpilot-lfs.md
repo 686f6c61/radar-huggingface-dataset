@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `commaai/openpilot-lfs` de HuggingFace es un almacén de archivos gestionado mediante Large File Storage (LFS) asociado a la cuenta de comma.ai. No se trata de un modelo de inteligencia artificial convencional, sino que su nombre sugiere que contiene artefactos de gran tamaño vinculados al proyecto openpilot. La única información publicada en la model card es la licencia MIT; no se aporta descripción, arquitectura, parámetros ni documentación técnica.
+El repositorio `commaai/openpilot-lfs` de Hugging Face es un almacén de archivos gestionado mediante Large File Storage (LFS) asociado a la cuenta de comma.ai. No se trata de un modelo de inteligencia artificial convencional, sino que su nombre sugiere que contiene artefactos de gran tamaño vinculados al proyecto openpilot. La única información publicada en la model card es la licencia MIT; no se aporta descripción, arquitectura, parámetros ni documentación técnica.
 
 El repositorio fue creado el 8 de septiembre de 2026 y tiene un tamaño de 0,9 GB. El proyecto openpilot de comma.ai es un sistema operativo de código abierto para conducción autónoma que utiliza redes neuronales para percepción y control. Sin embargo, este repositorio LFS no incluye una model card que aclare qué modelos o pesos contiene exactamente, por lo que no se puede evaluar como un modelo de lenguaje o visión en sentido estricto.
 
@@ -69,5 +69,5 @@ No disponible. Al no existir información sobre arquitectura, parámetros o rend
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/commaai/openpilot-lfs
+- Repositorio Hugging Face: https://huggingface.co/commaai/openpilot-lfs
 - Repositorio GitHub de openpilot: https://github.com/commaai/openpilot

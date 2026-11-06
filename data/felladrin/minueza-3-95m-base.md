@@ -84,7 +84,7 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Felladrin/Minueza-3-95M-Base
+- Modelo en Hugging Face: https://huggingface.co/Felladrin/Minueza-3-95M-Base
 - Repositorio del GGUF Trainer: https://github.com/felladrin/gguf-trainer
 - Perfil de GitHub del autor: https://github.com/felladrin
 - Proyecto MiniSearch (uso de Wllama): https://github.com/felladrin/MiniSearch

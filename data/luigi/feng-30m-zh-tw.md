@@ -2,7 +2,7 @@
 
 ## Resumen
 
-feng-30m-zh-tw es una variante en chino tradicional nativo (zh-TW) del modelo feng-30m, un LLM conversacional de 29,43 millones de parámetros con arquitectura estilo Qwen3 y vocabulario de 16.384 tokens. Lo publica el usuario Luigi en HuggingFace bajo licencia Apache 2.0. El modelo padre (jiaheng0815/feng-30m) está entrenado en chino simplificado (zh-CN); esta variante lee y escribe chino tradicional de forma nativa sin reentrenamiento.
+feng-30m-zh-tw es una variante en chino tradicional nativo (zh-TW) del modelo feng-30m, un LLM conversacional de 29,43 millones de parámetros con arquitectura estilo Qwen3 y vocabulario de 16.384 tokens. Lo publica el usuario Luigi en Hugging Face bajo licencia Apache 2.0. El modelo padre (jiaheng0815/feng-30m) está entrenado en chino simplificado (zh-CN); esta variante lee y escribe chino tradicional de forma nativa sin reentrenamiento.
 
 La innovación técnica es que la conversión no usa fine-tuning ni adaptadores: es una transformación determinista en el espacio de pesos de un único tensor, `model.embed_tokens.weight` (el embedding y unembedding atados). Los otros 122 tensores son idénticos bit a bit al padre, y el tamaño de fichero, las formas y los dtypes no cambian. Se editaron 6.945 de las 16.384 filas del vocabulario (3,4 millones de escalares), sin añadir ni eliminar ids.
 
@@ -105,6 +105,6 @@ No se dispone de datos de benchmarks estándar ni de otros modelos comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Luigi/feng-30m-zh-tw
+- Modelo en Hugging Face: https://huggingface.co/Luigi/feng-30m-zh-tw
 - Modelo padre: https://huggingface.co/jiaheng0815/feng-30m
 - Resultados de búsqueda web: no relevantes (corresponden a la franquicia de videojuegos Super Mario, sin relación con el modelo).

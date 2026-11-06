@@ -26,7 +26,7 @@ Su relevancia es practica: permite ejecutar un modelo de generacion y edicion de
 | Tamano del repositorio | 10,3 GB (descarga indicada: 9,6 GB) |
 | Resolucion de ejemplo | 1024x1024, 1216x832 |
 | Pasos de muestreo en la galeria | 16 |
-| Publicado en el Hub | 2026-10-16 (segun metadatos de HuggingFace) |
+| Publicado en el Hub | 2026-10-16 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -88,9 +88,9 @@ No hay datos de latencia, imagenes por segundo ni throughput. La galeria indica 
 
 | Modelo | Relacion | Cuantizacion | Tamano del transformer | Pico de memoria a 1024² | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FLUX-3-Image-Klein-MLX-8bit (este) | Conversion comunitaria del base | 8 bits | 6,15 GB | 14,3 GB (11,0 GB en bajo consumo) | flux-kommunity-license | HuggingFace, via MLX |
-| FLUX-3-Image-Klein-MLX-6bit | Conversion comunitaria de la misma familia | 6 bits | 4,83 GB | 13,0 GB (9,6 GB en bajo consumo) | flux-kommunity-license | HuggingFace, via MLX |
-| black-forest-labs/flux-3-image-klein | Modelo base original de Black Forest Labs | no disponible en la informacion recogida | no disponible | no disponible | flux-kommunity-license | HuggingFace |
+| FLUX-3-Image-Klein-MLX-8bit (este) | Conversion comunitaria del base | 8 bits | 6,15 GB | 14,3 GB (11,0 GB en bajo consumo) | flux-kommunity-license | Hugging Face, via MLX |
+| FLUX-3-Image-Klein-MLX-6bit | Conversion comunitaria de la misma familia | 6 bits | 4,83 GB | 13,0 GB (9,6 GB en bajo consumo) | flux-kommunity-license | Hugging Face, via MLX |
+| black-forest-labs/flux-3-image-klein | Modelo base original de Black Forest Labs | no disponible en la informacion recogida | no disponible | no disponible | flux-kommunity-license | Hugging Face |
 
 No se dispone de datos de calidad comparada entre la variante de 8 bits y el modelo base, mas alla de la afirmacion del autor de que la version de 8 bits es la mas cercana a BF16 de las publicadas. No se han encontrado en la busqueda web modelos comparables adicionales con datos verificables.
 
@@ -109,12 +109,12 @@ No se dispone de datos de calidad comparada entre la variante de 8 bits y el mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VisualInference/FLUX-3-Image-Klein-MLX-8bit
+- Repositorio en Hugging Face: https://huggingface.co/VisualInference/FLUX-3-Image-Klein-MLX-8bit
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Variante de 6 bits: https://huggingface.co/VisualInference/FLUX-3-Image-Klein-MLX-6bit
 - Upsampler de prompt en 4 bits: https://huggingface.co/VisualInference/FLUX-3-Image-Klein-pup-MLX-4bit
 - Upsampler de prompt en 8 bits: https://huggingface.co/VisualInference/FLUX-3-Image-Klein-pup-MLX-8bit
 - Runner flux3-mlx: https://github.com/felix-ab/flux3-mlx
 - Framework MLX: https://github.com/ml-explore/mlx
-- Licencia: LICENSE.md dentro del repositorio de HuggingFace
+- Licencia: LICENSE.md dentro del repositorio de Hugging Face
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes; las referencias devueltas corresponden a un personaje de ficcion de una serie de television y no guardan relacion con el modelo.

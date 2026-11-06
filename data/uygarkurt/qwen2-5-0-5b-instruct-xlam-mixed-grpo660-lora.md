@@ -70,10 +70,10 @@ Lectura de los datos: la mejora se concentra en las métricas de tool calling (+
 
 | Modelo | Parámetros | Contexto | Tool calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (GRPO 660 sobre Qwen2.5-0.5B-Instruct) | ~0,49 B + LoRA | 32.768 (según base) | xLAM ETC 65,85 %, FNA 91,91 %, BFCL 49,77 % | No disponible | HuggingFace, adaptador PEFT |
-| Qwen2.5-0.5B-Instruct (base) | ~0,49 B | 32.768 | xLAM ETC 63,84 %, FNA 90,03 %, BFCL 50,28 % | Apache-2.0 | HuggingFace, ampliamente desplegado |
-| Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 | No disponible en la información proporcionada | Apache-2.0 | HuggingFace |
-| Salesforce xLAM-1B-fc-r | ~1 B | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace |
+| Este adaptador (GRPO 660 sobre Qwen2.5-0.5B-Instruct) | ~0,49 B + LoRA | 32.768 (según base) | xLAM ETC 65,85 %, FNA 91,91 %, BFCL 49,77 % | No disponible | Hugging Face, adaptador PEFT |
+| Qwen2.5-0.5B-Instruct (base) | ~0,49 B | 32.768 | xLAM ETC 63,84 %, FNA 90,03 %, BFCL 50,28 % | Apache-2.0 | Hugging Face, ampliamente desplegado |
+| Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 | No disponible en la información proporcionada | Apache-2.0 | Hugging Face |
+| Salesforce xLAM-1B-fc-r | ~1 B | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face |
 
 La comparación directa con el base es la más informativa: el adaptador mejora la exactitud de llamada y de nombre de función a costa de un ligero retroceso en seguimiento de instrucciones y matemáticas. Frente a alternativas de mayor tamaño, la elección depende del presupuesto de memoria; no hay datos públicos en esta ficha para comparar rendimiento con xLAM-1B-fc-r o Qwen2.5-1.5B-Instruct en los mismos conjuntos.
 
@@ -91,7 +91,7 @@ La comparación directa con el base es la más informativa: el adaptador mejora 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-grpo660-lora
+- Adaptador en Hugging Face: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-grpo660-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/uygarkurt/xlam-tool-calling-mixed
 - Repositorio Post-Training Lab (scripts de entrenamiento y evaluación): https://github.com/uygarkurt/post-training-lab

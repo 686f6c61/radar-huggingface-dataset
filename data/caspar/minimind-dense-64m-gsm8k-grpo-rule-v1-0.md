@@ -76,8 +76,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K con otra configuración
 
 | Modelo | Parametros | Contexto | GSM8K test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMind-Dense-64M-GSM8K-GRPO-Rule-v1.0 (este) | 63.912.192 | No disponible (prompt 768 / salida 256) | 1,36 % (18/1319) | Apache-2.0 | Pesos safetensors FP32 en HuggingFace |
-| caspar/MiniMind-Dense-64M-Mixed-SFT-v1.0 (SFT base) | Familia 64 M; cifra exacta no disponible | Ventanas de 340 tokens en SFT | 1,06 % (14/1319) | No disponible en la información | Pesos en HuggingFace |
+| MiniMind-Dense-64M-GSM8K-GRPO-Rule-v1.0 (este) | 63.912.192 | No disponible (prompt 768 / salida 256) | 1,36 % (18/1319) | Apache-2.0 | Pesos safetensors FP32 en Hugging Face |
+| caspar/MiniMind-Dense-64M-Mixed-SFT-v1.0 (SFT base) | Familia 64 M; cifra exacta no disponible | Ventanas de 340 tokens en SFT | 1,06 % (14/1319) | No disponible en la información | Pesos en Hugging Face |
 | Variante con recompensa Skywork (mismo SFT) | Familia 64 M; cifra exacta no disponible | No disponible | No disponible en la información | No disponible en la información | Referenciada en la model card |
 | MiniMind (proyecto upstream, jingyaogong/minimind) | No disponible | No disponible | No disponible | Apache-2.0 (código) | Repositorio GitHub |
 
@@ -100,7 +100,7 @@ Skywork-Reward-V2-Qwen3-1.7B es el modelo de recompensa empleado en la variante 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caspar/MiniMind-Dense-64M-GSM8K-GRPO-Rule-v1.0
+- Modelo en Hugging Face: https://huggingface.co/caspar/MiniMind-Dense-64M-GSM8K-GRPO-Rule-v1.0
 - Modelo base (SFT): https://huggingface.co/caspar/MiniMind-Dense-64M-Mixed-SFT-v1.0
 - Dataset de entrenamiento SFT mixto: https://huggingface.co/datasets/caspar/MiniMind-Mixed-SFT-Training-v1.0
 - Código de MiniMind (Apache-2.0): https://github.com/jingyaogong/minimind

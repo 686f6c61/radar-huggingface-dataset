@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agbalu/Jugurtha-4B
+- Modelo en Hugging Face: https://huggingface.co/agbalu/Jugurtha-4B
 - Dataset KabBench (referencia FLORES+ corregida): https://huggingface.co/datasets/agbalu/KabBench
 - Dataset SIB-200: https://huggingface.co/datasets/Davlan/sib200
 - Dataset MMLU-Pro: https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro

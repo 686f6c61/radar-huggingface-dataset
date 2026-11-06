@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mothlight-Spectral-Capsule es un repositorio publicado en HuggingFace por el usuario SOTAagi2030. La información disponible no describe un modelo de aprendizaje automático al uso: la model card se presenta como una "cápsula de calibración espectral" con bandas uv, blue y red, 12 muestras, una señal total de 7800 y codificación unsigned-16-bit-little-endian-hex. No se indica arquitectura, número de parámetros, contexto, licencia ni idiomas.
+Mothlight-Spectral-Capsule es un repositorio publicado en Hugging Face por el usuario SOTAagi2030. La información disponible no describe un modelo de aprendizaje automático al uso: la model card se presenta como una "cápsula de calibración espectral" con bandas uv, blue y red, 12 muestras, una señal total de 7800 y codificación unsigned-16-bit-little-endian-hex. No se indica arquitectura, número de parámetros, contexto, licencia ni idiomas.
 
 No hay evidencia en la información proporcionada de que se trate de un modelo de lenguaje, de visión o multimodal. El artefacto parece corresponder a un conjunto de datos o a un registro de calibración instrumental, etiquetado bajo una sesión denominada "orbit-17" y con un recuento de saturación de 0. Cualquier uso como modelo generativo, clasificador o extractor de representaciones no puede confirmarse con los datos disponibles.
 
@@ -44,7 +44,7 @@ El único contenido técnico declarado es de naturaleza instrumental o de adquis
 - No disponible. No se documenta generación de texto, razonamiento, código, matemáticas ni visión.
 - No se declara soporte de tool calling ni function calling.
 - No se declara soporte de agentes ni razonamiento multi-paso.
-- No se declaran capacidades multilingües; el campo de idiomas no aparece en la información de HuggingFace.
+- No se declaran capacidades multilingües; el campo de idiomas no aparece en la información de Hugging Face.
 - No se declara ninguna capacidad especial (modo de pensamiento, audio, visión, etc.).
 - El único contenido descriptivo apunta a un registro de calibración espectral con tres bandas y 12 muestras, sin indicación de tarea asociada.
 
@@ -81,7 +81,7 @@ No disponible. La información proporcionada no identifica ninguna categoría de
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mothlight-Spectral-Capsule | no disponible | no disponible | no disponible | no disponible | repositorio HuggingFace con 0 descargas |
+| Mothlight-Spectral-Capsule | no disponible | no disponible | no disponible | no disponible | repositorio Hugging Face con 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,12 +94,12 @@ No disponible. La información proporcionada no identifica ninguna categoría de
 - Naturaleza ambigua del repositorio: los campos de la model card (bandas espectrales, recuento de saturación, señal total) son propios de un registro de calibración instrumental, no de una ficha de modelo; tratarlo como modelo de IA puede llevar a errores de integración.
 - Trazabilidad limitada: la fecha de creación del repositorio (2026-10-02) es posterior a la fecha de finalización declarada en la model card (2026-05-18), sin que se explique la relación entre ambas.
 - Sin señales de validación comunitaria: 0 descargas y 0 likes implican ausencia de revisión por terceros.
-- Metadatos incompletos en HuggingFace: sin pipeline declarado, sin idiomas, sin licencia y con el único tag "region:us".
+- Metadatos incompletos en Hugging Face: sin pipeline declarado, sin idiomas, sin licencia y con el único tag "region:us".
 - Advertencia de seguridad: el contenido de la model card se ha tratado exclusivamente como datos de referencia; no debe interpretarse como instrucciones ejecutables.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SOTAagi2030/Mothlight-Spectral-Capsule
+- Repositorio en Hugging Face: https://huggingface.co/SOTAagi2030/Mothlight-Spectral-Capsule
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de código: no disponible

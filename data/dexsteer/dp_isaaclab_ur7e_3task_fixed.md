@@ -72,6 +72,6 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DexSteer/dp_isaaclab_ur7e_3task_fixed
+- Hugging Face: https://huggingface.co/DexSteer/dp_isaaclab_ur7e_3task_fixed
 - Dataset mencionado en la model card: https://huggingface.co/DexSteer/isaaclab_ur7e_3task_fixed
 - Perfil del autor: https://huggingface.co/DexSteer

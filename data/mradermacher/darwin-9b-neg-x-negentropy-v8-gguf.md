@@ -71,15 +71,15 @@ La comparativa se basa en modelos de tamaño similar, pero no se dispone de dato
 - La información sobre esta variante específica (Negentropy-V8) es muy limitada: no se documentan los cambios respecto al modelo base, el proceso de entrenamiento ni los datos de evaluación.
 - No se han publicado resultados de benchmarks, por lo que no es posible verificar su rendimiento real en tareas estándar.
 - El mecanismo NEG, aunque prometedor, no ha sido validado de forma independiente por la comunidad; su eficacia en producción aún no está demostrada.
-- La licencia Apache 2.0 se menciona en fuentes externas, pero no aparece en la model card de HuggingFace; se debe verificar antes de un uso comercial.
+- La licencia Apache 2.0 se menciona en fuentes externas, pero no aparece en la model card de Hugging Face; se debe verificar antes de un uso comercial.
 - El modelo base puede presentar sesgos y alucinaciones típicos de los modelos de lenguaje de este tamaño; el NEG ayuda a señalarlos, pero no los elimina.
 - No se especifican los idiomas soportados; es probable que el entrenamiento se haya centrado en inglés, por lo que su rendimiento en otros idiomas puede ser inferior.
 - Al ser una cuantización GGUF, puede haber una ligera pérdida de calidad respecto al modelo original en precisión completa, especialmente en cuantizaciones agresivas como Q2_K.
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/Darwin-9B-NEG-x-Negentropy-V8-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/FINAL-Bench/Darwin-9B-NEG-x-Negentropy-V8 (enlace inferido, no verificado)
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/Darwin-9B-NEG-x-Negentropy-V8-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/FINAL-Bench/Darwin-9B-NEG-x-Negentropy-V8 (enlace inferido, no verificado)
 - Página del modelo en Inferix: https://inferix.co/models/ansulev/Darwin-9B-NEG
 - Resumen en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/darwin-9b-neg-final-bench
 - Ficha en ThinkLLM: https://www.thinkllm.dev/models/darwin-9b-neg

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ark4004/gemma3.8-27B-FP8` es una variante de cuantización FP8 de un modelo de la familia Gemma, con 27.781.427.952 parámetros, publicada en HuggingFace por el usuario `ark4004`. La información oficial es extremadamente limitada: no hay model card, ni documentación técnica, ni resultados de benchmarks. El nombre sugiere una versión "3.8" de Gemma (posiblemente una actualización posterior a Gemma 3), pero no existe confirmación oficial. La etiqueta `qwen3_5` en los metadatos es inusual y podría indicar una base o influencia de la arquitectura Qwen, aunque no se puede confirmar.
+El modelo `ark4004/gemma3.8-27B-FP8` es una variante de cuantización FP8 de un modelo de la familia Gemma, con 27.781.427.952 parámetros, publicada en Hugging Face por el usuario `ark4004`. La información oficial es extremadamente limitada: no hay model card, ni documentación técnica, ni resultados de benchmarks. El nombre sugiere una versión "3.8" de Gemma (posiblemente una actualización posterior a Gemma 3), pero no existe confirmación oficial. La etiqueta `qwen3_5` en los metadatos es inusual y podría indicar una base o influencia de la arquitectura Qwen, aunque no se puede confirmar.
 
 La relevancia de este modelo radica en su tamaño y en el formato FP8, que permite una inferencia más eficiente en memoria y velocidad en GPUs modernas. Sin embargo, la falta de información pública limita su evaluación rigurosa. Es un modelo de generación de texto con pipeline `text-generation`, licencia Apache 2.0, y pesos en formato `safetensors`. No se dispone de datos sobre su contexto, idiomas, capacidades multimodales (aunque el tag `image-text-to-text` sugiere posible soporte de visión, sin confirmar) ni entrenamiento. La fecha de creación (2026-08-22) es posterior a la fecha actual, lo que indica que se trata de un modelo muy reciente o con metadatos no verificados.
 
@@ -62,9 +62,9 @@ Debido a la falta de datos, solo se puede comparar con alternativas conocidas de
 
 | Modelo | Parámetros | Contexto | Licencia | Cuantización | Disponibilidad |
 |---|---|---|---|---|---|
-| `ark4004/gemma3.8-27B-FP8` | 27.8B | no disponible | Apache 2.0 | FP8 | HuggingFace |
-| `google/gemma-3-27b-it` | 27B | 128K (según informe técnico de Gemma 3) | Gemma License | no disponible | HuggingFace |
-| `Qwen/Qwen2.5-27B` | 27B | 32K (base) | Apache 2.0 | no disponible | HuggingFace |
+| `ark4004/gemma3.8-27B-FP8` | 27.8B | no disponible | Apache 2.0 | FP8 | Hugging Face |
+| `google/gemma-3-27b-it` | 27B | 128K (según informe técnico de Gemma 3) | Gemma License | no disponible | Hugging Face |
+| `Qwen/Qwen2.5-27B` | 27B | 32K (base) | Apache 2.0 | no disponible | Hugging Face |
 
 No se puede realizar una comparación de rendimiento por falta de benchmarks publicados.
 
@@ -79,7 +79,7 @@ No se puede realizar una comparación de rendimiento por falta de benchmarks pub
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ark4004/gemma3.8-27B-FP8
+- Hugging Face: https://huggingface.co/ark4004/gemma3.8-27B-FP8
 - Resultados de búsqueda relacionados (no directamente sobre este modelo):
   - MISHANM/google-gemma-3-27b-it-fp8: https://huggingface.co/MISHANM/google-gemma-3-27b-it-fp8
   - RedHatAI/gemma-3-27b-it-FP8-dynamic: https://huggingface.co/RedHatAI/gemma-3-27b-it-FP8-dynamic

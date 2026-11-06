@@ -113,7 +113,7 @@ Criterio de eleccion orientativo segun la receta publicada: `distiluse-base-mult
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeromodels/distiluse-base-multilingual-cased-v2
+- Modelo en Hugging Face: https://huggingface.co/zeromodels/distiluse-base-multilingual-cased-v2
 - Checkpoint original: https://huggingface.co/sentence-transformers/distiluse-base-multilingual-cased-v2
 - Revision fijada del checkpoint original: https://huggingface.co/sentence-transformers/distiluse-base-multilingual-cased-v2/tree/bfe45d0732ca50787611c0fe107ba278c7f3f889
 - Repositorio ZeroModels en GitHub: https://github.com/IMvision12/ZeroModels

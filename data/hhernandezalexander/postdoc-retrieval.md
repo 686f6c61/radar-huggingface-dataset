@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hhernandezalexander/postdoc-retrieval` es un prototipo de investigación publicado en HuggingFace que implementa una arquitectura denominada Cnn Transformer orientada a tareas de recuperación (retrieval). El repositorio lo firma el usuario hhernandezalexander y se distribuye bajo licencia BSD-3-Clause. No es un modelo entrenado: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta ningún resultado de benchmark.
+`hhernandezalexander/postdoc-retrieval` es un prototipo de investigación publicado en Hugging Face que implementa una arquitectura denominada Cnn Transformer orientada a tareas de recuperación (retrieval). El repositorio lo firma el usuario hhernandezalexander y se distribuye bajo licencia BSD-3-Clause. No es un modelo entrenado: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta ningún resultado de benchmark.
 
 La escala declarada es "base", pero el recuento real de parámetros leído del fichero safetensors es de 24.832 parámetros, es decir, un modelo de juguete de aproximadamente 25 mil parámetros, no un transformer de escala base en el sentido habitual del término. El repositorio ocupa menos de 0,1 GB y no registra descargas ni interacciones, por lo que se trata de un artefacto de investigación en estado embrionario.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento en retrieval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hhernandezalexander/postdoc-retrieval | 24.832 | no disponible | No declarado (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
-| CLIP ViT-B/32 (datos públicos de referencia) | ~151 M | 77 tokens de texto | Publicado por OpenAI sobre múltiples conjuntos | MIT | HuggingFace y OpenAI |
+| hhernandezalexander/postdoc-retrieval | 24.832 | no disponible | No declarado (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
+| CLIP ViT-B/32 (datos públicos de referencia) | ~151 M | 77 tokens de texto | Publicado por OpenAI sobre múltiples conjuntos | MIT | Hugging Face y OpenAI |
 
 La comparativa con alternativas consolidadas de recuperación multimodal no es significativa en términos de rendimiento, porque este repositorio no incluye un checkpoint entrenado ni métricas. La única comparación honesta posible es de orden de magnitud: los modelos de recuperación imagen-texto de uso común manejan decenas o cientos de millones de parámetros, mientras que este prototipo declara 24.832. No se dispone de otros modelos comparables publicados por el mismo autor.
 
@@ -76,11 +76,11 @@ La comparativa con alternativas consolidadas de recuperación multimodal no es s
 - El repositorio no registra descargas ni valoraciones, y las fechas de creación y actualización (2026-10-16) constan con apenas cinco segundos de diferencia, lo que sugiere una publicación automatizada o incompleta.
 - No hay evidencia de una ejecución de entrenamiento completada: la receta AdamW con scheduler coseno son valores por defecto del script.
 - Licencia BSD-3-Clause: permisiva y apta para uso comercial, pero la propia model card advierte de que deben revisarse por separado los términos de los datos de origen si se emplean conjuntos externos (por ejemplo, Flickr30k).
-- Es una implementación personalizada: no funciona con las API genéricas de carga automática de HuggingFace sin un adaptador explícito.
+- Es una implementación personalizada: no funciona con las API genéricas de carga automática de Hugging Face sin un adaptador explícito.
 - Cualquier resultado que se publique en el futuro debe documentarse de forma separada a los valores por defecto incluidos en el repositorio.
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: los resultados devueltos no guardan ninguna relación con el repositorio y se han descartado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hhernandezalexander/postdoc-retrieval
+- Hugging Face: https://huggingface.co/hhernandezalexander/postdoc-retrieval
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados a este modelo en la busqueda web realizada.

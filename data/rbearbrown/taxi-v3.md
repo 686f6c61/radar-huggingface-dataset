@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`rbearbrown/Taxi-v3` es un agente de aprendizaje por refuerzo entrenado con Q-Learning sobre el entorno Taxi-v3 de Gymnasium (el clasico problema de recogida y entrega de pasajeros en una cuadricula de 5x5). Lo publica el usuario `rbearbrown` en HuggingFace, aparentemente como resultado de un ejercicio de entrenamiento con la libreria `stable-baselines3` y el formato de subida automatica de la plataforma. No se trata de un modelo de lenguaje ni de una red neuronal profunda: es una tabla Q serializada en un fichero `.pkl`.
+`rbearbrown/Taxi-v3` es un agente de aprendizaje por refuerzo entrenado con Q-Learning sobre el entorno Taxi-v3 de Gymnasium (el clasico problema de recogida y entrega de pasajeros en una cuadricula de 5x5). Lo publica el usuario `rbearbrown` en Hugging Face, aparentemente como resultado de un ejercicio de entrenamiento con la libreria `stable-baselines3` y el formato de subida automatica de la plataforma. No se trata de un modelo de lenguaje ni de una red neuronal profunda: es una tabla Q serializada en un fichero `.pkl`.
 
 El interes practico es limitado fuera del ambito educativo. Taxi-v3 es un entorno de juguete con un espacio de estados discreto de 500 posiciones y 6 acciones, pensado para validar algoritmos de RL tabular. El repositorio no incluye pesos en formato safetensors ni GGUF, no declara licencia y no tiene descargas ni likes en el momento de redactar esta ficha.
 
-La relevancia actual es, por tanto, la de un artefacto de referencia para comparar implementaciones de Q-Learning y verificar pipelines de evaluacion en HuggingFace, no la de un componente listo para produccion.
+La relevancia actual es, por tanto, la de un artefacto de referencia para comparar implementaciones de Q-Learning y verificar pipelines de evaluacion en Hugging Face, no la de un componente listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ No se dispone de informacion sobre hiperparametros (tasa de aprendizaje, factor 
 
 - Resolucion del entorno Taxi-v3: recoger un pasajero en una de las cuatro paradas y dejarlo en el destino indicado.
 - Politica determinista greedy derivada de la tabla Q aprendida.
-- Carga via `load_from_hub` de HuggingFace con el fichero `q-learning.pkl`.
+- Carga via `load_from_hub` de Hugging Face con el fichero `q-learning.pkl`.
 - No soporta tool calling, function calling ni razonamiento multi-paso en el sentido de los LLM.
 - No tiene capacidades multilingues, de vision, audio ni generacion de texto.
 - No dispone de modo "thinking" ni decodificacion especulativa.
@@ -39,7 +39,7 @@ No se dispone de informacion sobre hiperparametros (tasa de aprendizaje, factor 
 ## Casos de uso
 
 - Docencia de RL tabular: usar el agente como ejemplo funcional de Q-Learning en un curso introductorio, comparando la tabla Q aprendida con la solucion optima conocida del entorno.
-- Verificacion de pipelines de HuggingFace: comprobar que el flujo `load_from_hub` + `gym.make` + evaluacion con `stable-baselines3` funciona de extremo a extremo antes de escalar a entornos mas complejos.
+- Verificacion de pipelines de Hugging Face: comprobar que el flujo `load_from_hub` + `gym.make` + evaluacion con `stable-baselines3` funciona de extremo a extremo antes de escalar a entornos mas complejos.
 - Baseline de referencia: servir como punto de comparacion para agentes mas sofisticados (DQN, PPO) sobre Taxi-v3, dado que el reward medio declarado (7,50) es bajo y deja margen de mejora.
 - Pruebas de integracion en CI: incluir el agente en tests automatizados que validen la API de evaluacion de entornos Gymnasium sin coste computacional apreciable.
 - Reproducibilidad de experimentos: replicar el entrenamiento y contrastar la tabla Q resultante con la publicada para detectar diferencias de implementacion.
@@ -67,17 +67,17 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Entorno | Reward declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rbearbrown/Taxi-v3 | Q-Learning tabular | Taxi-v3 | 7,50 +/- 2,76 | no disponible | HuggingFace |
+| rbearbrown/Taxi-v3 | Q-Learning tabular | Taxi-v3 | 7,50 +/- 2,76 | no disponible | Hugging Face |
 | Agente Q-Learning de referencia (stable-baselines3) | Q-Learning tabular | Taxi-v3 | no disponible en esta ficha | MIT (libreria) | PyPI / GitHub |
 | DQN sobre Taxi-v3 | Deep Q-Network | Taxi-v3 | no disponible en esta ficha | MIT (libreria) | PyPI / GitHub |
 
-No se dispone de datos comparativos verificados para otros agentes publicados en HuggingFace sobre el mismo entorno en la informacion proporcionada.
+No se dispone de datos comparativos verificados para otros agentes publicados en Hugging Face sobre el mismo entorno en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
 - El agente solo funciona en Taxi-v3; no generaliza a otros entornos ni a variantes con dinamica distinta.
 - La model card menciona Taxi-v4 en el titulo y en el cuerpo, mientras que el repositorio se llama Taxi-v3: posible inconsistencia que puede provocar fallos al cargar el entorno.
-- El reward medio declarado (7,50) es bajo y la metrica no esta verificada por HuggingFace.
+- El reward medio declarado (7,50) es bajo y la metrica no esta verificada por Hugging Face.
 - Licencia no declarada: no se puede asumir uso comercial permitido.
 - Formato `.pkl`: implica riesgos de seguridad al deserializar ficheros pickle de origen no confiable.
 - Sin informacion sobre sesgos, alucinacion o limitaciones de contexto porque no es un modelo de lenguaje.
@@ -85,7 +85,7 @@ No se dispone de datos comparativos verificados para otros agentes publicados en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rbearbrown/Taxi-v3
+- Hugging Face: https://huggingface.co/rbearbrown/Taxi-v3
 - Entorno Taxi-v3 (Gymnasium): https://gymnasium.farama.org/environments/toy_text/taxi/
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
-- Documentacion de carga de modelos RL en HuggingFace: https://huggingface.co/docs/hub/models
+- Documentacion de carga de modelos RL en Hugging Face: https://huggingface.co/docs/hub/models

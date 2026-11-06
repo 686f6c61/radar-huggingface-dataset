@@ -18,7 +18,7 @@ Su relevancia ahora es metodologica: el benchmark fija una receta de entrenamien
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; los pesos se distribuyen como `state_dict` de PyTorch en la precision de entrenamiento |
 | Idiomas soportados | no aplica (la entrada es senal EEG, no texto) |
-| Licencia | no disponible en la ficha de HuggingFace; el uso y la redistribucion quedan sujetos a los terminos de los modelos preentrenados de origen (BIOT, CBraMod, LaBraM, REVE) y de los datasets EESM17/EESM19/EESM23 |
+| Licencia | no disponible en la ficha de Hugging Face; el uso y la redistribucion quedan sujetos a los terminos de los modelos preentrenados de origen (BIOT, CBraMod, LaBraM, REVE) y de los datasets EESM17/EESM19/EESM23 |
 | Formato de pesos | `.pt` (un `best.pt` de PyTorch por modelo, modalidad, dataset y fold) |
 | Numero de checkpoints | 386 (14,3 GiB; 15,4 GB de repositorio) |
 | Tarea | Clasificacion de 5 clases de sueno; balanced accuracy aleatoria = 0,20 |
@@ -120,7 +120,7 @@ El patron consistente es que los foundation models preentrenados superan a los m
 
 - No es un dispositivo medico y el autor indica explicitamente que no debe usarse con fines clinicos.
 - Cada checkpoint solo es valido para el fold que nombra. Evaluarlo sobre cualquier otro sujeto produce fuga de datos, porque ese sujeto estaba en su conjunto de entrenamiento.
-- Licencia no declarada en HuggingFace. La redistribucion y el uso posterior quedan sujetos a los terminos de los modelos preentrenados upstream (BIOT, CBraMod, LaBraM, REVE) y de los datasets de sueno utilizados.
+- Licencia no declarada en Hugging Face. La redistribucion y el uso posterior quedan sujetos a los terminos de los modelos preentrenados upstream (BIOT, CBraMod, LaBraM, REVE) y de los datasets de sueno utilizados.
 - Sesgos conocidos: no documentados por el autor. Los datasets son pequenos (9, 20 y 10 sujetos), por lo que la generalizacion a otras poblaciones, equipos de adquisicion o montajes de electrodos no esta validada.
 - Alta varianza entre sujetos: varias desviaciones tipicas superan los 0,10 puntos de balanced accuracy (por ejemplo, EEGDeformer in-ear en EESM17, 0,1404), lo que exige cautela al interpretar medias.
 - Cobertura incompleta: EESM19 solo incluye eegnet, eegconformer y cbramod; BIOT, LaBraM-base y REVE no se ejecutaron en ese dataset.
@@ -132,7 +132,7 @@ El patron consistente es que los foundation models preentrenados superan a los m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Zachary1150/ear-eeg-fm-benchmark-loso
+- Repositorio en Hugging Face: https://huggingface.co/Zachary1150/ear-eeg-fm-benchmark-loso
 - Repositorio fuente del benchmark: https://github.com/zhikaili1150/Ear-EEG-FM-Benchmark
 - Dataset EESM17 (OpenNeuro ds004348): https://doi.org/10.18112/openneuro.ds004348.v1.0.4
 - Los resultados de la busqueda web disponible tratan sobre DLSS 5 de NVIDIA y no guardan relacion con este modelo, por lo que se omiten.

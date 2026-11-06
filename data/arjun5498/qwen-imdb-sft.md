@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `arjun5498/qwen-imdb-sft` es un ajuste fino (SFT) de un modelo de la familia Qwen3 sobre el conjunto de datos IMDb, según se desprende del nombre y de las etiquetas de HuggingFace. Ha sido publicado por el usuario `arjun5498` y está destinado a tareas de generación de texto, con un enfoque conversacional. El modelo tiene 595.776.512 parámetros (aproximadamente 0,6 mil millones), lo que lo sitúa en la categoría de modelos pequeños, adecuados para entornos con recursos limitados.
+El modelo `arjun5498/qwen-imdb-sft` es un ajuste fino (SFT) de un modelo de la familia Qwen3 sobre el conjunto de datos IMDb, según se desprende del nombre y de las etiquetas de Hugging Face. Ha sido publicado por el usuario `arjun5498` y está destinado a tareas de generación de texto, con un enfoque conversacional. El modelo tiene 595.776.512 parámetros (aproximadamente 0,6 mil millones), lo que lo sitúa en la categoría de modelos pequeños, adecuados para entornos con recursos limitados.
 
 La model card es una plantilla autogenerada que no aporta información sobre el desarrollador, la licencia, los datos de entrenamiento ni las capacidades concretas. Tampoco se han publicado resultados de benchmarks. A pesar de la falta de documentación, el tamaño de los pesos y la etiqueta `qwen3` permiten situar el modelo como un fine-tuning de la arquitectura Qwen3, probablemente en su variante de 0,6B, aunque no se confirma explícitamente.
 
@@ -61,8 +61,8 @@ No se dispone de información suficiente para una comparativa rigurosa. El únic
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks | Disponibilidad |
 |---|---|---|---|---|---|
-| arjun5498/qwen-imdb-sft | 595.776.512 | no disponible | no disponible | no disponibles | HuggingFace |
-| august66/qwen2-sft-imdb | no disponible | no disponible | no disponible | no disponibles | HuggingFace |
+| arjun5498/qwen-imdb-sft | 595.776.512 | no disponible | no disponible | no disponibles | Hugging Face |
+| august66/qwen2-sft-imdb | no disponible | no disponible | no disponible | no disponibles | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -75,6 +75,6 @@ No se dispone de información suficiente para una comparativa rigurosa. El únic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arjun5498/qwen-imdb-sft
+- Modelo en Hugging Face: https://huggingface.co/arjun5498/qwen-imdb-sft
 - Modelo similar de referencia: https://huggingface.co/august66/qwen2-sft-imdb
 - No se han encontrado papers, repositorios, blogs ni demos asociados a este modelo.

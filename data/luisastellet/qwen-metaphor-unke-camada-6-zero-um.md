@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `luisastellet/qwen-metaphor-unke-camada-6-zero-um` es un checkpoint de generacion de texto publicado en HuggingFace por el usuario luisastellet y etiquetado con la arquitectura `qwen3`. Segun los pesos en formato safetensors, cuenta con 596.049.920 parametros (aproximadamente 596 millones), lo que lo situa en la gama de modelos pequenos, cercana en tamano a los modelos de ~0,6B de la familia Qwen3. El repositorio ocupa 2,4 GB y esta marcado como compatible con `transformers`, `text-generation-inference` y `endpoints_compatible`.
+El modelo `luisastellet/qwen-metaphor-unke-camada-6-zero-um` es un checkpoint de generacion de texto publicado en Hugging Face por el usuario luisastellet y etiquetado con la arquitectura `qwen3`. Segun los pesos en formato safetensors, cuenta con 596.049.920 parametros (aproximadamente 596 millones), lo que lo situa en la gama de modelos pequenos, cercana en tamano a los modelos de ~0,6B de la familia Qwen3. El repositorio ocupa 2,4 GB y esta marcado como compatible con `transformers`, `text-generation-inference` y `endpoints_compatible`.
 
-La model card incluida en el repositorio es una plantilla autogenerada por HuggingFace en la que practicamente todos los campos aparecen como `[More Information Needed]`. No se declara autor del entrenamiento, datos utilizados, licencia, idiomas soportados, ni resultados de evaluacion. La unica informacion tecnica verificable es la arquitectura de pesos, el numero de parametros, la libreria y las etiquetas del repositorio.
+La model card incluida en el repositorio es una plantilla autogenerada por Hugging Face en la que practicamente todos los campos aparecen como `[More Information Needed]`. No se declara autor del entrenamiento, datos utilizados, licencia, idiomas soportados, ni resultados de evaluacion. La unica informacion tecnica verificable es la arquitectura de pesos, el numero de parametros, la libreria y las etiquetas del repositorio.
 
 El nombre del repositorio (`qwen-metaphor-unke-camada-6-zero-um`) sugiere un artefacto derivado o experimental, posiblemente relacionado con experimentos sobre metaforas y con una referencia a una "capa 6" (camada en portugues), ademas de un indicador "zero-um"; sin embargo, esta interpretacion es una hipotesis basada en el nombre y no esta confirmada por ninguna documentacion del autor. Con cero descargas y cero likes en el momento de la consulta, se trata de un modelo sin adopcion publica conocida ni validacion externa.
 
@@ -78,7 +78,7 @@ Los datos del modelo analizado no estan publicados, por lo que la comparacion se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen-metaphor-unke-camada-6-zero-um | 596.049.920 | no disponible | no disponible | HuggingFace, 0 descargas |
+| qwen-metaphor-unke-camada-6-zero-um | 596.049.920 | no disponible | no disponible | Hugging Face, 0 descargas |
 | Qwen3-0.6B | ~0,6B | no disponible aqui | Apache 2.0 (segun su repositorio) | Ampliamente disponible |
 | Qwen2.5-0.5B | ~0,5B | no disponible aqui | Apache 2.0 (segun su repositorio) | Ampliamente disponible |
 | SmolLM2-360M | ~0,36B | no disponible aqui | Apache 2.0 (segun su repositorio) | Ampliamente disponible |
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparado para el modelo analizado, por lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-6-zero-um
+- Modelo en Hugging Face: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-6-zero-um
 - Paper citado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la model card: https://mlco2.github.io/impact
 - Repositorio, paper o demo propios del autor: no disponible

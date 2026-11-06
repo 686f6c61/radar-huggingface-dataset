@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/halofu/Qwen3.6-27B-INT8-W8A8
+- Modelo en Hugging Face: https://huggingface.co/halofu/Qwen3.6-27B-INT8-W8A8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Variante INT4-W4A16: https://huggingface.co/Avesed/Qwen3.6-27B-INT4-W4A16
 - Herramienta de cuantización: https://github.com/avesed/vllm-ampere-optimized/tree/main/quantize

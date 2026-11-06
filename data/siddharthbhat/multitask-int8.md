@@ -85,6 +85,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddharthbhat/multitask-int8
+- Modelo en Hugging Face: https://huggingface.co/siddharthbhat/multitask-int8
 - Repositorio de referencia interno: `inference.py`, `config.json`, `training_args.json`, `model.safetensors` dentro del propio repo.
 - No se han encontrado en la búsqueda web enlaces relevantes (papers, blogs, repos o demos) asociados a este modelo concreto.

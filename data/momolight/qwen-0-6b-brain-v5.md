@@ -21,8 +21,8 @@ La relevancia de esta ficha es limitada pero informativa: se trata de un modelo 
 | Licencia | No disponible en el repositorio (el modelo base Qwen3 se distribuye habitualmente bajo Apache 2.0, pero no se confirma para este fine-tune) |
 | Formato de pesos | safetensors y GGUF |
 | Tamano del repositorio | 1,6 GB |
-| Fecha de creacion | 2026-09-19 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-19 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-19 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-19 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen-0.6b-brain-v5 (este modelo) | 596.049.920 | No disponible | safetensors, GGUF | No disponible | Repositorio HuggingFace con 0 descargas |
-| Qwen3-0.6B (modelo base de referencia) | ~0,6B | No disponible en esta ficha | safetensors, GGUF | Apache 2.0 (referencia, no confirmada para el fine-tune) | Ampliamente distribuido en HuggingFace |
+| qwen-0.6b-brain-v5 (este modelo) | 596.049.920 | No disponible | safetensors, GGUF | No disponible | Repositorio Hugging Face con 0 descargas |
+| Qwen3-0.6B (modelo base de referencia) | ~0,6B | No disponible en esta ficha | safetensors, GGUF | Apache 2.0 (referencia, no confirmada para el fine-tune) | Ampliamente distribuido en Hugging Face |
 | Qwen2.5-0.5B | ~0,5B | No disponible en esta ficha | safetensors, GGUF | Apache 2.0 (referencia) | Ampliamente distribuido |
 | SmolLM2-360M | ~0,36B | No disponible en esta ficha | safetensors, GGUF | Apache 2.0 (referencia) | Ampliamente distribuido |
 
@@ -89,7 +89,7 @@ Nota: los datos de los modelos comparativos corresponden a informacion general d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/momolight/qwen-0.6b-brain-v5
+- Modelo en Hugging Face: https://huggingface.co/momolight/qwen-0.6b-brain-v5
 - Unsloth (libreria usada para el fine-tune y la conversion): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de inferencia GGUF): https://github.com/ggml-org/llama.cpp
 - Ollama (despliegue mediante Modelfile): https://ollama.com/

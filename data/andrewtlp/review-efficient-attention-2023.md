@@ -66,7 +66,7 @@ No disponible. Este repositorio no es un modelo y no existe una categoria de mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/andrewtlp/review-efficient-attention-2023
+- Repositorio Hugging Face: https://huggingface.co/andrewtlp/review-efficient-attention-2023
 - Articulo EVA (ICLR 2023) en OpenReview: https://openreview.net/forum?id=G-uNfHKrj46
 - Repositorio oficial HKUNLP efficient-attention (EVA y LARA): https://github.com/hkunlp/efficient-attention
 - Articulo original "Efficient Attention: Attention with Linear Complexities" (arXiv 1812.01243): https://arxiv.org/abs/1812.01243

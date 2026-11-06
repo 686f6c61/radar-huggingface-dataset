@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ghananlpcommunity/t5-small-ipa2text` es una adaptación de la arquitectura T5-small (Text-to-Text Transfer Transformer) publicada en el Hub de HuggingFace por la comunidad Ghana NLP. Según su nombre, está orientado a la conversión de transcripciones fonéticas en Alfabeto Fonético Internacional (IPA) a texto ortográfico, aunque la model card no proporciona ninguna documentación que confirme esta funcionalidad ni detalles sobre su entrenamiento.
+El modelo `ghananlpcommunity/t5-small-ipa2text` es una adaptación de la arquitectura T5-small (Text-to-Text Transfer Transformer) publicada en el Hub de Hugging Face por la comunidad Ghana NLP. Según su nombre, está orientado a la conversión de transcripciones fonéticas en Alfabeto Fonético Internacional (IPA) a texto ortográfico, aunque la model card no proporciona ninguna documentación que confirme esta funcionalidad ni detalles sobre su entrenamiento.
 
-Con 60,5 millones de parámetros, se trata de un modelo compacto de la familia T5, que emplea una arquitectura encoder-decoder. Fue subido al Hub el 17 de agosto de 2026 y no registra descargas ni valoraciones. La ficha oficial está vacía (solo contiene la plantilla automática de HuggingFace), por lo que la mayor parte de los datos técnicos, como licencia, idiomas o datos de entrenamiento, no están disponibles.
+Con 60,5 millones de parámetros, se trata de un modelo compacto de la familia T5, que emplea una arquitectura encoder-decoder. Fue subido al Hub el 17 de agosto de 2026 y no registra descargas ni valoraciones. La ficha oficial está vacía (solo contiene la plantilla automática de Hugging Face), por lo que la mayor parte de los datos técnicos, como licencia, idiomas o datos de entrenamiento, no están disponibles.
 
 La relevancia de este modelo reside en su potencial utilidad para tareas de normalización fonética, un área con poca oferta de modelos open source. Sin embargo, la ausencia total de documentación y de ejemplos de uso obliga a tratarlo con cautela y a verificar cualquier aplicación antes de considerarlo para producción.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ghananlpcommunity/t5-small-ipa2text | 60,5M | T5 encoder-decoder | no disponible | no disponible | HuggingFace |
-| google/t5-small (original) | 60,5M | T5 encoder-decoder | 512 | Apache 2.0 | HuggingFace |
-| google/mt5-small | 300M | mT5 encoder-decoder | 512 | Apache 2.0 | HuggingFace |
+| ghananlpcommunity/t5-small-ipa2text | 60,5M | T5 encoder-decoder | no disponible | no disponible | Hugging Face |
+| google/t5-small (original) | 60,5M | T5 encoder-decoder | 512 | Apache 2.0 | Hugging Face |
+| google/mt5-small | 300M | mT5 encoder-decoder | 512 | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a parámetros y arquitectura, ya que no hay datos de rendimiento para el modelo de Ghana NLP. El T5-small original de Google tiene la misma arquitectura y tamaño, pero cuenta con documentación completa y licencia Apache 2.0. mt5-small es una variante multilingüe con más parámetros.
 
@@ -79,6 +79,6 @@ La comparativa se limita a parámetros y arquitectura, ya que no hay datos de re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ghananlpcommunity/t5-small-ipa2text
+- Modelo en Hugging Face: https://huggingface.co/ghananlpcommunity/t5-small-ipa2text
 - Versión v2 del modelo: https://huggingface.co/ghananlpcommunity/t5-small-ipa2text-v2
 - Paper de T5 (arXiv:1910.09700): https://arxiv.org/abs/1910.09700

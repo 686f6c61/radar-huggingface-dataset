@@ -93,7 +93,7 @@ No se dispone de datos suficientes en la información proporcionada para compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/Humaneness-Voice-Large-NotebookLM-Edition
+- Modelo en Hugging Face: https://huggingface.co/laion/Humaneness-Voice-Large-NotebookLM-Edition
 - Modelo base: https://huggingface.co/laion/Humaneness-Voice-Large-1.3-Alpha
 - Códec MOSS Audio Tokenizer v2: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-v2
 - Guía de prompting para podcast (PODCAST_PROMPTING.md, en el repo)

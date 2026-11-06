@@ -93,7 +93,7 @@ No se dispone de comparaciones de precision, latencia o consumo entre estas opci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/loom-ai-org/marblenet-vad-v2-loom
+- Repositorio en Hugging Face: https://huggingface.co/loom-ai-org/marblenet-vad-v2-loom
 - Modelo base: https://huggingface.co/nvidia/frame_vad_multilingual_marblenet_v2.0
 - Runtime loom.cpp: https://github.com/loom-ai-org/loom.cpp
 - Binding de Python loom-py: https://github.com/loom-ai-org/loom-py

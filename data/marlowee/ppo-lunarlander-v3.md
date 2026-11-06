@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Marlowee/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver la tarea LunarLander del entorno Gymnasium, mediante la libreria stable-baselines3. No es un modelo de lenguaje ni un transformer generativo: se trata de una politica neuronal (actor-critico) que mapea el estado del entorno a acciones discretas de control del modulo de aterrizaje. El autor lo publica en HuggingFace como artefacto reproducible para la comunidad de RL, con 22 descargas y ningun "like" en el momento de la consulta.
+Marlowee/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver la tarea LunarLander del entorno Gymnasium, mediante la libreria stable-baselines3. No es un modelo de lenguaje ni un transformer generativo: se trata de una politica neuronal (actor-critico) que mapea el estado del entorno a acciones discretas de control del modulo de aterrizaje. El autor lo publica en Hugging Face como artefacto reproducible para la comunidad de RL, con 22 descargas y ningun "like" en el momento de la consulta.
 
 El modelo declara una recompensa media de 251,65 +/- 22,13 en el dataset/entorno LunarLander-v2 segun el model-index de su model card, un valor por encima del umbral de 200 que la literatura del entorno suele considerar "resuelto". Es relevante ahora por su utilidad como referencia reproducible y como punto de partida para comparar implementaciones de PPO, no por capacidades generativas: el repositorio ocupa 0,0 GB y la model card no documenta hiperparametros, semillas ni numero de pasos de entrenamiento.
 
@@ -40,7 +40,7 @@ Tampoco se documentan el numero de pasos de entrenamiento, el tamano de lote, el
 - Control de politica discreta: selecciona acciones de un espacio discreto (no propulsar, propulsar izquierda/derecha/principal) para estabilizar y aterrizar el modulo de aterrizaje.
 - Aprendizaje por refuerzo profundo: implementado con el algoritmo PPO de stable-baselines3.
 - Inferencia determinista o estocastica: al ser una politica PPO entrenada, permite muestrear acciones o tomar la accion de maxima probabilidad (comportamiento estandar de la libreria; no confirmado explicitamente en la model card).
-- Reproducibilidad de referencia: se publica dentro del ecosistema HuggingFace con carga mediante huggingface_sb3.
+- Reproducibilidad de referencia: se publica dentro del ecosistema Hugging Face con carga mediante huggingface_sb3.
 - Soporte de tool calling / function calling: no aplica.
 - Soporte de agentes y razonamiento multi-paso en el sentido de LLM: no aplica; el unico razonamiento secuencial es el control del episodio del entorno.
 - Capacidades multilingues: no aplica.
@@ -79,9 +79,9 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Entorno | Libreria | Metrica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Marlowee/ppo-LunarLander-v3 | LunarLander-v2 (segun model card) | stable-baselines3 | mean_reward 251,65 +/- 22,13 (no verificado) | no disponible | HuggingFace, 22 descargas, 0 likes |
-| mawiie/PPO-LunarLander-v3 | LunarLander-v3 | no disponible | no disponible | no disponible | HuggingFace |
-| AminVilan/ppo-LunarLander-v3 | LunarLander-v3 | stable-baselines3 | no disponible | no disponible | HuggingFace |
+| Marlowee/ppo-LunarLander-v3 | LunarLander-v2 (segun model card) | stable-baselines3 | mean_reward 251,65 +/- 22,13 (no verificado) | no disponible | Hugging Face, 22 descargas, 0 likes |
+| mawiie/PPO-LunarLander-v3 | LunarLander-v3 | no disponible | no disponible | no disponible | Hugging Face |
+| AminVilan/ppo-LunarLander-v3 | LunarLander-v3 | stable-baselines3 | no disponible | no disponible | Hugging Face |
 | furkannane/PPO-LunarLander-v3 | LunarLander-v3 | implementacion propia en PyTorch (no stable-baselines3) | no disponible | no disponible | GitHub |
 
 La comparacion se limita a la disponibilidad y a la tarea; no hay datos publicos de recompensa en la informacion proporcionada para los tres modelos alternativos, por lo que no es posible establecer una comparacion cuantitativa de rendimiento. Tampoco se dispone de informacion sobre el numero de parametros de ninguno de ellos.
@@ -102,7 +102,7 @@ La comparacion se limita a la disponibilidad y a la tarea; no hay datos publicos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Marlowee/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/Marlowee/ppo-LunarLander-v3
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Modelo comparable mawiie/PPO-LunarLander-v3: https://huggingface.co/mawiie/PPO-LunarLander-v3
 - Modelo comparable AminVilan/ppo-LunarLander-v3: https://huggingface.co/AminVilan/ppo-LunarLander-v3

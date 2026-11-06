@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Snowflake-d768-Base-262K | 2.039.270.912 | 262.144 | MoE (256 expertos, 4 activos) + compartido, 8 capas | openmdw-1.1 | HuggingFace, requiere runtime Marin |
+| Snowflake-d768-Base-262K | 2.039.270.912 | 262.144 | MoE (256 expertos, 4 activos) + compartido, 8 capas | openmdw-1.1 | Hugging Face, requiere runtime Marin |
 | Alternativas de ~2B densos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de modelos comparables evaluados en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable con alternativas de la misma categoría.
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni de modelos comparables evaluados en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-athena/Snowflake-d768-Base-262K-2026.10.19
+- Hugging Face: https://huggingface.co/open-athena/Snowflake-d768-Base-262K-2026.10.19
 - Issue de Marin #10753 (comparación de etapas): https://github.com/marin-community/marin/issues/10753
 - Implementación `SnowballConfig` y `SnowballLMHeadModel`: https://github.com/marin-community/marin/blob/260d93767112780da77918f2c3394ee09608bf04/lib/levanter/src/levanter/models/snowball.py
 - API `load_hf_checkpoint`: https://github.com/marin-community/marin/blob/260d93767112780da77918f2c3394ee09608bf04/lib/levanter/src/levanter/model_loading.py

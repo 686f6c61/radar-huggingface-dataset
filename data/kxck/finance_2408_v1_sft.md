@@ -77,9 +77,9 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 | Modelo | Parametros | Contexto | ChartQA (reportado) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kxck/Finance_2408_v1_SFT | 4.000 M (base) + adaptador no cuantificado | no disponible | 68,4 % en val[0:500]; 76,12 % en test[0:2500] | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-4B-Instruct (base) | 4.000 M | no disponible | no disponible | no disponible en la informacion | HuggingFace |
-| Kxck/Finance_500_v1 (fase previa) | 4.000 M (base) + adaptador | no disponible | no disponible | no disponible | HuggingFace |
+| Kxck/Finance_2408_v1_SFT | 4.000 M (base) + adaptador no cuantificado | no disponible | 68,4 % en val[0:500]; 76,12 % en test[0:2500] | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-4B-Instruct (base) | 4.000 M | no disponible | no disponible | no disponible en la informacion | Hugging Face |
+| Kxck/Finance_500_v1 (fase previa) | 4.000 M (base) + adaptador | no disponible | no disponible | no disponible | Hugging Face |
 
 Alternativas especializadas en chart QA de otros autores: no disponibles en la informacion proporcionada, ya que la busqueda web no devolvio resultados relevantes.
 
@@ -98,7 +98,7 @@ Alternativas especializadas en chart QA de otros autores: no disponibles en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kxck/Finance_2408_v1_SFT
+- Modelo en Hugging Face: https://huggingface.co/Kxck/Finance_2408_v1_SFT
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Fase previa citada en la model card: https://huggingface.co/Kxck/Finance_500_v1
 

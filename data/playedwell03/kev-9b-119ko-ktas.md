@@ -112,7 +112,7 @@ Bootstrap emparejado sobre la queja principal: 27B − 9B = +1,95 puntos (IC 95 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Playedwell03/kev-9b-119ko-ktas
+- Modelo en Hugging Face: https://huggingface.co/Playedwell03/kev-9b-119ko-ktas
 - Modelo hermano de 27B: https://huggingface.co/Playedwell03/kev-27b-119ko-ktas-qlora
 - Adaptador base de Kev: https://huggingface.co/jaredpalmer/kev-9b
 - Modelo base del backbone: https://huggingface.co/Qwen/Qwen3.5-9B-Base
@@ -120,4 +120,4 @@ Bootstrap emparejado sobre la queja principal: 27B − 9B = +1,95 puntos (IC 95 
 - Fichero de preguntas y opciones: https://huggingface.co/Playedwell03/kev-9b-119ko-ktas/blob/main/questions.json
 - Cabeza calibrada (temperatura T = 1,32): https://huggingface.co/Playedwell03/kev-9b-119ko-ktas/blob/main/head.pt
 - Aviso de licencia: https://huggingface.co/Playedwell03/kev-9b-119ko-ktas/blob/main/NOTICE
-- Métricas completas: carpeta `results/` del repositorio en HuggingFace
+- Métricas completas: carpeta `results/` del repositorio en Hugging Face

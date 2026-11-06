@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su utilidad para investigar cómo la comp
 
 El adaptador se basa en la arquitectura del modelo `allenai/Olmo-3-7B-Think`, un transformer causal de 7 mil millones de parámetros desarrollado por AI2. El adaptador LoRA utiliza un rango de 16, alpha de 32 y dropout de 0.05, y se entrena mediante supervisión fina (SFT) sobre las soluciones originales de GSM8K, sin ninguna modificación o compresión de las cadenas de razonamiento.
 
-El proceso de entrenamiento se realizó con HuggingFace `transformers` y `peft`, durante 3 épocas, con una tasa de aprendizaje de 2e-4, programación coseno y warmup del 3%. El tamaño de lote efectivo fue de 64 (16 × 4 acumulación de gradientes), con una longitud máxima de secuencia de 1024 tokens y precisión bf16. Se utilizó una única GPU NVIDIA A100 de 80 GB. La pérdida se calcula únicamente sobre la parte de completación, con longitudes de prompt precomputadas en lugar de búsqueda por patrones, lo que evita que el prior de tool-calling del modelo base se filtre en las cadenas.
+El proceso de entrenamiento se realizó con Hugging Face `transformers` y `peft`, durante 3 épocas, con una tasa de aprendizaje de 2e-4, programación coseno y warmup del 3%. El tamaño de lote efectivo fue de 64 (16 × 4 acumulación de gradientes), con una longitud máxima de secuencia de 1024 tokens y precisión bf16. Se utilizó una única GPU NVIDIA A100 de 80 GB. La pérdida se calcula únicamente sobre la parte de completación, con longitudes de prompt precomputadas en lugar de búsqueda por patrones, lo que evita que el prior de tool-calling del modelo base se filtre en las cadenas.
 
 ## Capacidades
 

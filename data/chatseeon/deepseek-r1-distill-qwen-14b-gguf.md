@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-R1-Distill-Qwen-14B-GGUF es la versión cuantizada en formato GGUF del modelo DeepSeek-R1-Distill-Qwen-14B, un modelo de lenguaje de 14.770.033.664 parámetros desarrollado por DeepSeek a partir de la arquitectura Qwen2 y destilado del modelo razonador DeepSeek-R1. Esta ficha concreta corresponde al repositorio publicado por el usuario chatseeon en HuggingFace, que redistribuye los pesos en formato GGUF generados con la herramienta Unsloth para su uso en llama.cpp y otros runners compatibles.
+DeepSeek-R1-Distill-Qwen-14B-GGUF es la versión cuantizada en formato GGUF del modelo DeepSeek-R1-Distill-Qwen-14B, un modelo de lenguaje de 14.770.033.664 parámetros desarrollado por DeepSeek a partir de la arquitectura Qwen2 y destilado del modelo razonador DeepSeek-R1. Esta ficha concreta corresponde al repositorio publicado por el usuario chatseeon en Hugging Face, que redistribuye los pesos en formato GGUF generados con la herramienta Unsloth para su uso en llama.cpp y otros runners compatibles.
 
 El modelo resuelve el problema de ejecutar un modelo de razonamiento de 14B en hardware de consumo y en entornos de inferencia local, gracias a la cuantización en bloques (Q4_K_M, Q8_0, etc.) y a la posibilidad de descargar capas a la GPU. La relevancia actual reside en que combina la capacidad de razonamiento paso a paso (modo *thinking* con etiquetas `<think>`) con un tamaño manejable, y en que su licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparado en la información proporcionada
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chatseeon/DeepSeek-R1-Distill-Qwen-14B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/chatseeon/DeepSeek-R1-Distill-Qwen-14B-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
 - Paper de DeepSeek-R1 (referencia arXiv en los tags): https://arxiv.org/abs/2501.12948
 - Colección de Unsloth con todas las versiones de DeepSeek-R1: https://huggingface.co/collections/unsloth/deepseek-r1-all-versions-678e1c48f5d2fce87892ace5

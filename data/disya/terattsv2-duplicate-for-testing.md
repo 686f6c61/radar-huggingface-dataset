@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TeraTTSv2 es un sistema de síntesis de voz (text-to-speech) empaquetado como modelo ONNX Runtime autocontenido, publicado por el desarrollador Disya en HuggingFace como una réplica de pruebas del modelo original de TeraSpace. El modelo convierte texto en ruso e inglés en audio mono a 44.100 Hz mediante un pipeline de difusión con muestreadores seleccionables, diez estilos de voz precalculados y marcado automático de acentos en ruso. Su relevancia radica en que ofrece TTS bilingüe con salida en streaming y despliegue local sin dependencia de servicios en la nube, todo dentro de un repositorio de 1,2 GB.
+TeraTTSv2 es un sistema de síntesis de voz (text-to-speech) empaquetado como modelo ONNX Runtime autocontenido, publicado por el desarrollador Disya en Hugging Face como una réplica de pruebas del modelo original de TeraSpace. El modelo convierte texto en ruso e inglés en audio mono a 44.100 Hz mediante un pipeline de difusión con muestreadores seleccionables, diez estilos de voz precalculados y marcado automático de acentos en ruso. Su relevancia radica en que ofrece TTS bilingüe con salida en streaming y despliegue local sin dependencia de servicios en la nube, todo dentro de un repositorio de 1,2 GB.
 
 La arquitectura combina un codificador de texto con un modelo de difusión que genera la forma de onda, e incluye dos variantes del muestreador: un "teacher" de 25 segundos con CFG ajustable y un "student" destilado de ocho pasos con CFG 3 fijado en el grafo, que prioriza la velocidad. El marcado de acentos rusos se realiza mediante los grafos ONNX de RUAccent, con un modo de diccionario alternativo para entornos con menos memoria.
 

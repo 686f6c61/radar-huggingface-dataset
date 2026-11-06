@@ -75,8 +75,8 @@ El estado de la máquina (RAM de 4,5 MB y ROM del texto del kernel) se represent
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| linuxformer | 15,99B (69 capas, 37 de chip) | no disponible | MMLU 72,61%; 6.017 tok/s (megakernel H100) | Apache-2.0 (+ GPL/LGPL en snapshot) | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B | no disponible en la informacion | no disponible | MMLU 72,72% | no disponible en la informacion | HuggingFace (modelo base) |
+| linuxformer | 15,99B (69 capas, 37 de chip) | no disponible | MMLU 72,61%; 6.017 tok/s (megakernel H100) | Apache-2.0 (+ GPL/LGPL en snapshot) | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B | no disponible en la informacion | no disponible | MMLU 72,72% | no disponible en la informacion | Hugging Face (modelo base) |
 | Qwenputer (RvChat) | no disponible | no disponible | no disponible | no disponible | mencionado como referencia de enrutado por tipo de token |
 
 ## Limitaciones y advertencias
@@ -93,9 +93,9 @@ El estado de la máquina (RAM de 4,5 MB y ROM del texto del kernel) se represent
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/itsrealranky/linuxformer
+- Hugging Face: https://huggingface.co/itsrealranky/linuxformer
 - Repositorio de código: https://github.com/itsrealranky/linuxformer
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Resultados de referencia citados: `lx/results/summary.md` en el repositorio de código
 - Megakernel: `lx/csrc/mega.cu` en el repositorio de código
-- Código fuente GPL/LGPL: `gpl-source/` dentro del repositorio de HuggingFace
+- Código fuente GPL/LGPL: `gpl-source/` dentro del repositorio de Hugging Face

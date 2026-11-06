@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`attacker3434/pubcard6000` es un repositorio publicado en HuggingFace por el usuario `attacker3434` bajo licencia MIT. La model card asociada es prácticamente vacía: se limita a la declaración de licencia y a una serie de etiquetas de imagen que apuntan a un endpoint externo (`webhook.site`), lo que constituye una técnica habitual de exfiltración o *callback* cuando el contenido se renderiza en un visor o pipeline que resuelve recursos remotos. No se declara ningún tipo de modelo, arquitectura, tamaño ni tarea.
+`attacker3434/pubcard6000` es un repositorio publicado en Hugging Face por el usuario `attacker3434` bajo licencia MIT. La model card asociada es prácticamente vacía: se limita a la declaración de licencia y a una serie de etiquetas de imagen que apuntan a un endpoint externo (`webhook.site`), lo que constituye una técnica habitual de exfiltración o *callback* cuando el contenido se renderiza en un visor o pipeline que resuelve recursos remotos. No se declara ningún tipo de modelo, arquitectura, tamaño ni tarea.
 
 No hay información sobre parámetros, longitud de contexto, idioma, formato de pesos ni proceso de entrenamiento. El repositorio no registra descargas ni interacciones, y las fechas de creación y actualización son de noviembre de 2026, lo que sugiere un artefacto de prueba o de sondeo más que un modelo destinado a uso real.
 
@@ -39,7 +39,7 @@ El contenido del README se reduce a la declaración `license: mit` y a dos refer
 ## Casos de uso
 
 - No se identifican casos de uso legítimos para este repositorio en su estado actual, dado que no se declara ninguna funcionalidad de modelo.
-- Auditoría de seguridad de repositorios de HuggingFace: el artefacto puede emplearse como muestra de referencia para probar si un visor o pipeline de integración resuelve imágenes remotas al renderizar model cards.
+- Auditoría de seguridad de repositorios de Hugging Face: el artefacto puede emplearse como muestra de referencia para probar si un visor o pipeline de integración resuelve imágenes remotas al renderizar model cards.
 - Formación en detección de contenido malicioso: sirve como ejemplo didáctico de model card con etiquetas de imagen hacia dominios de captura de peticiones.
 - Pruebas de *sanitización* de Markdown/HTML en plataformas que muestran READMEs de modelos, verificando que no se emiten peticiones salientes al cargar la ficha.
 - Validación de políticas de moderación: permite comprobar si un sistema de revisión automática marca correctamente repositorios sin contenido sustantivo ni pesos declarados.
@@ -72,6 +72,6 @@ No disponible. No hay información sobre arquitectura, tamaño o tarea que permi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/attacker3434/pubcard6000
+- Repositorio en Hugging Face: https://huggingface.co/attacker3434/pubcard6000
 - Endpoint referenciado en la model card (no verificado, potencialmente malicioso): https://webhook.site//probe.png
 - Endpoint referenciado en la model card (no verificado, potencialmente malicioso): https://webhook.site//probe2.png

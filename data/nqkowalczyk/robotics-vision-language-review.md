@@ -75,7 +75,7 @@ La diferencia principal es que los articulos de arXiv son revisiones completas c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nqkowalczyk/robotics-vision-language-review
+- Repositorio en Hugging Face: https://huggingface.co/nqkowalczyk/robotics-vision-language-review
 - Vision Language Action Models in Robotic Manipulation: A Systematic Review (arXiv): https://arxiv.org/html/2507.10672v1
 - Vision-Language-Action Models for Robotics: A Review Towards Real-World (arXiv): https://arxiv.org/abs/2510.07077
 - Survey VLA con pagina web: https://vla-survey.github.io/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Synap/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo Proximal Policy Optimization (PPO) sobre el entorno LunarLander-v2 de Gymnasium, distribuido a traves de la libreria Stable-Baselines3 y publicada en HuggingFace Hub. El modelo no es un modelo de lenguaje ni un transformer generativo: es una politica neuronal que controla la nave lunar del citado entorno, aprendiendo a aterrizar de forma segura entre dos banderas mediante acciones discretas. Lo desarrolla el usuario Synap como artefacto de entrenamiento, presumiblemente dentro de un flujo de trabajo con Stable-Baselines3.
+Synap/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo Proximal Policy Optimization (PPO) sobre el entorno LunarLander-v2 de Gymnasium, distribuido a traves de la libreria Stable-Baselines3 y publicada en Hugging Face Hub. El modelo no es un modelo de lenguaje ni un transformer generativo: es una politica neuronal que controla la nave lunar del citado entorno, aprendiendo a aterrizar de forma segura entre dos banderas mediante acciones discretas. Lo desarrolla el usuario Synap como artefacto de entrenamiento, presumiblemente dentro de un flujo de trabajo con Stable-Baselines3.
 
 El interes de esta ficha es limitado fuera del ambito educativo y de investigacion en RL: se trata de un ejemplo canonico de agente PPO sobre un entorno de control continuo-discreto de baja dimensionalidad (8 observaciones, 4 acciones). No resuelve tareas de NLP, vision ni generacion de codigo, y su utilidad practica se circunscribe a reproducir el entrenamiento, comparar hiperparametros o servir como referencia de integracion con `huggingface_sb3`.
 
@@ -41,7 +41,7 @@ No se dispone de informacion sobre el numero de pasos de entrenamiento, hiperpar
 ## Casos de uso
 
 - Docencia de aprendizaje por refuerzo: cargar el agente con Stable-Baselines3 y ejecutarlo en LunarLander-v2 para ilustrar el bucle `obs, reward, done, info` y el comportamiento de una politica PPO entrenada.
-- Referencia de integracion con HuggingFace Hub: servir como ejemplo minimo de publicacion y descarga de checkpoints SB3 mediante `huggingface_sb3`, util para estandarizar pipelines de RL en un equipo.
+- Referencia de integracion con Hugging Face Hub: servir como ejemplo minimo de publicacion y descarga de checkpoints SB3 mediante `huggingface_sb3`, util para estandarizar pipelines de RL en un equipo.
 - Comparacion de hiperparametros: usar esta politica como baseline frente a nuevos entrenamientos PPO con distintas semillas o configuraciones, midiendo la recompensa media en el mismo entorno.
 - Pruebas de infraestructura de evaluacion: validar entornos de ejecucion, contenedores o scripts de evaluacion de agentes RL sin necesidad de entrenar desde cero.
 - Reproduccion de resultados: comprobar si la recompensa declarada (228,99 +/- 26,61) se reproduce en el hardware y la version de Gymnasium del usuario, detectando dependencias de version.
@@ -69,9 +69,9 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Synap/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible | no aplica | 228,99 +/- 26,61 (mean_reward, no verificado) | no disponible | HuggingFace Hub |
-| stable-baselines3/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible | no aplica | no disponible en la informacion proporcionada | MIT (la libreria) | HuggingFace Hub (organizacion oficial de SB3) |
-| Alternativas DQN sobre LunarLander-v2 | DQN | LunarLander-v2 | no disponible | no aplica | no disponible en la informacion proporcionada | variable segun autor | HuggingFace Hub |
+| Synap/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible | no aplica | 228,99 +/- 26,61 (mean_reward, no verificado) | no disponible | Hugging Face Hub |
+| stable-baselines3/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible | no aplica | no disponible en la informacion proporcionada | MIT (la libreria) | Hugging Face Hub (organizacion oficial de SB3) |
+| Alternativas DQN sobre LunarLander-v2 | DQN | LunarLander-v2 | no disponible | no aplica | no disponible en la informacion proporcionada | variable segun autor | Hugging Face Hub |
 
 La comparacion con modelos de lenguaje no procede: este artefacto no compite en tareas de NLP, codigo ni razonamiento. La comparacion relevante es con otros checkpoints de RL sobre el mismo entorno, para los que no se dispone de cifras verificadas en la informacion proporcionada.
 
@@ -84,11 +84,11 @@ La comparacion con modelos de lenguaje no procede: este artefacto no compite en 
 - Licencia no disponible: no se especifican terminos de uso comercial ni de redistribucion; debe consultarse al autor antes de cualquier uso en produccion.
 - Sin informacion sobre sesgos: al no tratar datos humanos ni lenguaje, no aplican sesgos sociales en el sentido habitual, pero tampoco se documenta el comportamiento en estados fuera de distribucion.
 - Riesgo de sobreajuste al entorno: sin datos de evaluacion multi-semilla no puede descartarse que la cifra declarada corresponda a una ejecucion favorable.
-- Sin soporte de texto, vision ni audio: no debe confundirse con un modelo generativo pese a estar alojado en HuggingFace Hub.
+- Sin soporte de texto, vision ni audio: no debe confundirse con un modelo generativo pese a estar alojado en Hugging Face Hub.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Synap/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/Synap/ppo-LunarLander-v2
 - Stable-Baselines3 (repositorio oficial): https://github.com/DLR-RM/stable-baselines3
 - Documentacion de Stable-Baselines3: https://stable-baselines3.readthedocs.io/
 - huggingface_sb3 (utilidad de carga desde el Hub): https://github.com/huggingface/huggingface_sb3

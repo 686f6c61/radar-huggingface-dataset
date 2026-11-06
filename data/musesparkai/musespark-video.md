@@ -1,7 +1,7 @@
 # MuseSparkAI/musespark-video
 
 ## Resumen
-El modelo MuseSparkAI/musespark-video es un modelo de generación de vídeo publicado por la organización MuseSparkAI en HuggingFace. La información pública disponible es mínima: la model card únicamente declara la licencia Apache-2.0 y no incluye descripción, arquitectura, parámetros, ni ningún otro detalle técnico. No se han registrado descargas ni interacciones en la plataforma, lo que sugiere que se trata de una publicación reciente o en fase experimental.
+El modelo MuseSparkAI/musespark-video es un modelo de generación de vídeo publicado por la organización MuseSparkAI en Hugging Face. La información pública disponible es mínima: la model card únicamente declara la licencia Apache-2.0 y no incluye descripción, arquitectura, parámetros, ni ningún otro detalle técnico. No se han registrado descargas ni interacciones en la plataforma, lo que sugiere que se trata de una publicación reciente o en fase experimental.
 
 MuseSpark, según su sitio web, se presenta como una plataforma multimodal de razonamiento y producción de contenido (imagen, vídeo, audio, 3D, avatares y texto), pero no se ha encontrado documentación técnica específica sobre el modelo musespark-video. Por tanto, esta ficha se limita a reflejar la ausencia de datos verificables y no puede ofrecer especificaciones, capacidades o benchmarks contrastados.
 
@@ -45,7 +45,7 @@ No se dispone de datos suficientes para establecer una comparativa con otros mod
 - Se recomienda no utilizar este modelo en aplicaciones críticas hasta que el autor publique una model card completa y resultados de evaluación.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/MuseSparkAI/musespark-video
+- Modelo en Hugging Face: https://huggingface.co/MuseSparkAI/musespark-video
 - Sitio web oficial de MuseSpark: https://musespark.ai/
 - MuseSpark Video Studio: https://musespark.run/ai-video-generator
 - Biblioteca de modelos de MuseSpark: https://musespark.ai/models

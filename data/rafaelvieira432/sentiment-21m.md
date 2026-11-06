@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SENTIMENT-21M es un clasificador de sentimiento en portugués (PT-BR) publicado por el usuario Rafaelvieira432 en HuggingFace. Se presenta como un Transformer Encoder de arquitectura propia ("customizada"), con 21.010.435 parámetros (~21 M) y pesos distribuidos en FP16 (~40 MB), pensado explícitamente para escenarios de borde ("edge") donde la latencia importa: el autor declara menos de 15 ms por inferencia en una CPU básica. La tarea es de clasificación de tres clases: `negativo`, `neutro` y `positivo`.
+SENTIMENT-21M es un clasificador de sentimiento en portugués (PT-BR) publicado por el usuario Rafaelvieira432 en Hugging Face. Se presenta como un Transformer Encoder de arquitectura propia ("customizada"), con 21.010.435 parámetros (~21 M) y pesos distribuidos en FP16 (~40 MB), pensado explícitamente para escenarios de borde ("edge") donde la latencia importa: el autor declara menos de 15 ms por inferencia en una CPU básica. La tarea es de clasificación de tres clases: `negativo`, `neutro` y `positivo`.
 
 El modelo no es generativo: no hay decoding, ni tool calling, ni capacidades multimodales. Es un encoder de clasificación con tokenizador BPE propio (`vocab.json` + `merges.txt`) y un mapeo de etiquetas en `labels.json`. Su relevancia potencial está en el nicho de moderación de contenido, triaje de tickets y automatización de atención al cliente en portugués con requisitos de latencia muy bajos y sin GPU.
 
@@ -70,9 +70,9 @@ Los datos de las alternativas que figuran a continuacion son referencias general
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SENTIMENT-21M | 21,0 M (declarado) | no disponible | pt | Apache 2.0 | HuggingFace, 0 descargas, sin pipeline tag |
-| BERTimbau base (referencia) | ~110 M | ~512 tokens | pt | MIT (referencia) | HuggingFace, ampliamente usado |
-| DistilBERT multilingue (referencia) | ~135 M | ~512 tokens | multilingue | Apache 2.0 (referencia) | HuggingFace, muy extendido |
+| SENTIMENT-21M | 21,0 M (declarado) | no disponible | pt | Apache 2.0 | Hugging Face, 0 descargas, sin pipeline tag |
+| BERTimbau base (referencia) | ~110 M | ~512 tokens | pt | MIT (referencia) | Hugging Face, ampliamente usado |
+| DistilBERT multilingue (referencia) | ~135 M | ~512 tokens | multilingue | Apache 2.0 (referencia) | Hugging Face, muy extendido |
 | Modelos de sentimiento en portugues de terceros | no disponible | no disponible | pt | variable | no disponible |
 
 Frente a BERTimbau o DistilBERT, la propuesta de SENTIMENT-21M es aproximadamente cinco veces menor en parametros, lo que se traduce en menor coste de inferencia, pero tambien en menor capacidad de representacion. La diferencia practica solo puede establecerse con una evaluacion en un corpus de test en portugues, que el autor no publica.
@@ -93,6 +93,6 @@ Frente a BERTimbau o DistilBERT, la propuesta de SENTIMENT-21M es aproximadament
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rafaelvieira432/SENTIMENT-21M
+- Hugging Face: https://huggingface.co/Rafaelvieira432/SENTIMENT-21M
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a paginas de ayuda de YouTube (support.google.com/youtubetv, support.google.com/youtube, zhihu.com) sin ninguna relacion con SENTIMENT-21M.
 - No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados al modelo.

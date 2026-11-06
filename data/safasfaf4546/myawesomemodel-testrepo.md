@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario safasfaf4546 en HuggingFace, aunque el repositorio figura como un espacio de prueba sin descargas ni datos técnicos publicados. La model card describe una actualización de versión que mejora la profundidad de razonamiento e inferencia mediante un mayor uso de cómputo y mecanismos algorítmicos de optimización durante el post-entrenamiento. Se destaca un incremento en la precisión en el test AIME 2025 del 70 % al 87,5 %, así como una reducción de la tasa de alucinación y un mejor soporte para function calling.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario safasfaf4546 en Hugging Face, aunque el repositorio figura como un espacio de prueba sin descargas ni datos técnicos publicados. La model card describe una actualización de versión que mejora la profundidad de razonamiento e inferencia mediante un mayor uso de cómputo y mecanismos algorítmicos de optimización durante el post-entrenamiento. Se destaca un incremento en la precisión en el test AIME 2025 del 70 % al 87,5 %, así como una reducción de la tasa de alucinación y un mejor soporte para function calling.
 
 No se proporcionan datos concretos sobre arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni requisitos de hardware. La información disponible se limita a resultados de benchmarks agregados con nombres genéricos (Model1, Model2, Model1-v2) sin especificar qué modelos representan. Por tanto, esta ficha se basa exclusivamente en lo declarado en la model card y en el repositorio, marcando como "no disponible" cualquier dato ausente.
 
@@ -93,6 +93,6 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/safasfaf4546/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/safasfaf4546/MyAwesomeModel-TestRepo
 
 No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

@@ -25,7 +25,7 @@ Datos adicionales del repositorio: tamano total 75,3 GB, creado el 27 de septiem
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna del modelo base schneewolflabs/B2-9B. La model card del repositorio cuantizado unicamente indica que se trata de cuantizaciones estaticas del modelo original, generadas con quantize_version 2, output_tensor_quantised 1 y convert_type hf, lo que indica una conversion desde pesos en formato HuggingFace a GGUF. No se especifica si la arquitectura es un transformer denso, un MoE, un modelo hibrido con capas de atencion lineal o cualquier otra variante.
+La informacion disponible no describe la arquitectura interna del modelo base schneewolflabs/B2-9B. La model card del repositorio cuantizado unicamente indica que se trata de cuantizaciones estaticas del modelo original, generadas con quantize_version 2, output_tensor_quantised 1 y convert_type hf, lo que indica una conversion desde pesos en formato Hugging Face a GGUF. No se especifica si la arquitectura es un transformer denso, un MoE, un modelo hibrido con capas de atencion lineal o cualquier otra variante.
 
 Los unicos indicios sobre el diseno son las etiquetas del repositorio: qwen3.5 sugiere una base derivada de la familia Qwen 3.5, y mmproj implica la existencia de un proyector multimodal en el modelo original, presumiblemente para tareas de vision-lenguaje. En cuanto a entrenamiento, los datasets declarados son schneewolflabs/Geselle y schneewolflabs/Vorsicht-DPO; el segundo nombre indica un proceso de optimizacion por preferencias directas (DPO) o un conjunto de datos construido para ello. No se dispone de informacion sobre numero de tokens de entrenamiento, composicion del dataset, fases de RLHF, ni innovaciones tecnicas concretas como decodificacion especulativa o atencion lineal.
 
@@ -36,7 +36,7 @@ Los unicos indicios sobre el diseno son las etiquetas del repositorio: qwen3.5 s
 - Uso de herramientas (tool use): el modelo declara soporte explicito de tool-use, lo que permite invocar funciones externas definidas en un esquema JSON.
 - Flujos agenticos: la etiqueta agents indica capacidades de razonamiento multi-paso y planificacion orientada a agentes.
 - Multimodalidad: el repositorio incluye ficheros mmproj (Q8_0 y f16) descritos como multi-modal supplement, lo que sugiere capacidad de procesar entradas no textuales, aunque la model card no detalla que modalidades soporta.
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible indica que puede desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible indica que puede desplegarse en Hugging Face Inference Endpoints.
 - Capacidades multilingues: limitadas al ingles segun el campo language del repositorio.
 - Modo thinking o vision: no disponible en la informacion proporcionada.
 
@@ -48,7 +48,7 @@ Los unicos indicios sobre el diseno son las etiquetas del repositorio: qwen3.5 s
 - Prototipado rapido de pipelines agenticos en investigación: la licencia Apache 2.0 y la disponibilidad de cuantizaciones ligeras permiten experimentar con arquitecturas de agentes sin coste de API y con reproducibilidad total.
 - Inferencia en el borde o en equipos sin GPU dedicada: la cuantizacion Q2_K (4,0 GB) permite ejecucion en CPU con llama.cpp, adecuada para demos, pruebas de integracion o entornos de desarrollo sin acelerador.
 - Evaluacion comparativa de tecnicas de cuantizacion: al ofrecer varios niveles (Q2_K, Q3_K_S, Q3_K_M, Q4_K_S, f16), el repositorio sirve como banco de pruebas para medir la degradacion de calidad frente al tamano en un modelo de 9B.
-- Despliegue en HuggingFace Inference Endpoints: la etiqueta endpoints_compatible facilita exponer el modelo como servicio gestionado para aplicaciones internas con poco trabajo de infraestructura.
+- Despliegue en Hugging Face Inference Endpoints: la etiqueta endpoints_compatible facilita exponer el modelo como servicio gestionado para aplicaciones internas con poco trabajo de infraestructura.
 
 ## Benchmarks y rendimiento
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - mmproj-Q8_0: 0,7 GB adicionales; mmproj-f16: 1,0 GB adicionales si se usa la via multimodal.
 - GPU recomendadas: para Q4_K_S es suficiente una GPU de 8 GB (RTX 3060 Ti, RTX 4060, RTX 2070); para f16 se recomienda una GPU de 24 GB o mas (RTX 3090, RTX 4090, A100 40 GB, H100).
 - Compatibilidad con GPU de consumo: si, las cuantizaciones Q2_K a Q4_K_S caben en GPUs de consumo de 6 a 8 GB, y la f16 entra en tarjetas de 24 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y koboldcpp para los ficheros GGUF; vLLM y TGI para los pesos originales en safetensors. La etiqueta endpoints_compatible habilita el despliegue en HuggingFace Inference Endpoints.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y koboldcpp para los ficheros GGUF; vLLM y TGI para los pesos originales en safetensors. La etiqueta endpoints_compatible habilita el despliegue en Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo para ninguna de las cuantizaciones.
 - Nota: el repositorio ocupa 75,3 GB en total; conviene descargar unicamente el fichero de cuantizacion necesario mediante descarga selectiva.
 
@@ -93,7 +93,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/B2-9B-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/B2-9B-GGUF
 - Modelo base: https://huggingface.co/schneewolflabs/B2-9B
 - Dataset Geselle: https://huggingface.co/datasets/schneewolflabs/Geselle
 - Dataset Vorsicht-DPO: https://huggingface.co/datasets/schneewolflabs/Vorsicht-DPO

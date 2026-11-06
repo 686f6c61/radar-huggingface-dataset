@@ -86,7 +86,7 @@ Datos adicionales: correlación de 0.999 con la forma de onda del vocoder fp32 (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jsbeaudry/Sidon-ONNX-web
+- Hugging Face: https://huggingface.co/jsbeaudry/Sidon-ONNX-web
 - Modelo base original: https://huggingface.co/sarulab-speech/sidon-v0.1
 - Export ONNX de referencia: https://huggingface.co/soniqo/Sidon-ONNX
 - Repositorio de Sidon: https://github.com/sarulab-speech/Sidon

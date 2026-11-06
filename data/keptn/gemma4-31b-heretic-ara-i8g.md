@@ -118,7 +118,7 @@ Frente a la variante w4a8 del mismo autor, este fichero sacrifica tamano (33,37 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keptn/gemma4-31b-heretic-ara-i8g
+- Modelo en Hugging Face: https://huggingface.co/keptn/gemma4-31b-heretic-ara-i8g
 - Modelo base heretic-ara: https://huggingface.co/trohrbaugh/gemma-4-31b-it-heretic-ara
 - Cabecera asistente de Google: https://huggingface.co/google/gemma-4-31B-it-assistant
 - Variante w4a8 del mismo autor: https://huggingface.co/keptn/gemma4-31b-heretic-ara-w4a8

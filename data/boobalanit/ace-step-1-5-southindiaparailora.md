@@ -108,9 +108,9 @@ No se dispone de datos de parámetros, contexto ni rendimiento de las alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boobalanit/ACE-Step-1.5-SouthIndiaParaiLoRA
+- Modelo en Hugging Face: https://huggingface.co/boobalanit/ACE-Step-1.5-SouthIndiaParaiLoRA
 - Modelo base ACE-Step 1.5: https://huggingface.co/ACE-Step/ACE-Step-v1.5
-- Perfil del autor en HuggingFace: https://huggingface.co/boobalanit
+- Perfil del autor en Hugging Face: https://huggingface.co/boobalanit
 - Perfil del autor en GitHub: https://github.com/BoobalanArjunan
 - Motor de inferencia ACE-Step-1.5-PlayGround--Engine: https://github.com/BoobalanArjunan/ACE-Step-1.5-PlayGround--Engine
 - Demostraciones de audio (rutas relativas dentro del repositorio): `audio_demos/Sample1.mp3` (ritmo de calle dappankuthu), `audio_demos/Sample2.mp3` (bucle de percusión de festival), `audio_demos/Sample3.mp3` (patrón rítmico parai), `audio_demos/Sample4.mp3` (groove de thappu), `audio_demos/Sample5.mp3` (kuthu de alta energía), `audio_demos/Sample6.mp3` (ritmo ceremonial lento), `audio_demos/sample7.mp3` (ritmo folclórico tamil)

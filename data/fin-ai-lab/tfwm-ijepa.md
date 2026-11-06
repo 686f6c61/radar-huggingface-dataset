@@ -103,7 +103,7 @@ Las implementaciones originales de TS2Vec y TF-C publicadas por sus autores son 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fin-ai-lab/tfwm-ijepa
+- Modelo en Hugging Face: https://huggingface.co/fin-ai-lab/tfwm-ijepa
 - Coleccion TFWM Pre-Trained Encoders: https://huggingface.co/collections/fin-ai-lab/tfwm-pre-trained-encoders-6ab871e942535b9c6041698d
 - Dataset Market-1T-1Hz-2019H2-2020-dense: https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense
 - Subcarpeta de datos de entrenamiento `1Hz_mosaic_mnth`: https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense/tree/main/1Hz_mosaic_mnth

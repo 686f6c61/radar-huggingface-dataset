@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `G21998/r1019-26d7cf3c-z-image-zbx3-s66-94f21b9c` es un artefacto privado de investigación publicado en HuggingFace por el usuario G21998. Según la model card, se trata de una "replay cell" identificada como `a1_zbx3_s66_26d7cf3c`, asociada a una tarea concreta (`z-image`, 0,75 horas de ejecución), un brazo de experimento (`zbx3`), una semilla (`66`) y un árbol de ejecución (`94f21b9c`). El propio autor lo describe explícitamente como "registro de investigación privado, no un envío", por lo que no debe interpretarse como un modelo de lenguaje listo para uso general.
+El repositorio `G21998/r1019-26d7cf3c-z-image-zbx3-s66-94f21b9c` es un artefacto privado de investigación publicado en Hugging Face por el usuario G21998. Según la model card, se trata de una "replay cell" identificada como `a1_zbx3_s66_26d7cf3c`, asociada a una tarea concreta (`z-image`, 0,75 horas de ejecución), un brazo de experimento (`zbx3`), una semilla (`66`) y un árbol de ejecución (`94f21b9c`). El propio autor lo describe explícitamente como "registro de investigación privado, no un envío", por lo que no debe interpretarse como un modelo de lenguaje listo para uso general.
 
 El artefacto contiene lo que el validador de un proceso de entrenamiento habría subido (`checkpoints/`) junto con registros y trazas de la ejecución (`replay/`). El estado registrado es `UPLOAD` con código de retorno 0 y finalización correcta ("finish (trained artifact)"), con 6 miembros en el árbol de artefactos y varios hashes de integridad (sha256 de artefacto `eaccdee6`, sha256 de identidad `2ef4d59f`). El repositorio ocupa 4,2 GB, lo que es coherente con pesos de un modelo de tamaño medio, pero no se especifica arquitectura, número de parámetros ni contexto.
 
@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables porque el artefacto no declara 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s66-94f21b9c
+- Hugging Face: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s66-94f21b9c
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

@@ -69,8 +69,8 @@ Los datos provienen de la model card del autor. La evaluación de marcha usa una
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | 0,8 mil millones (base) + LoRA | No disponible | Decisión discreta `goto_target` en robot simulado | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8 mil millones | No disponible | Lenguaje general | No disponible en la información | HuggingFace |
+| LINK-01 (este modelo) | 0,8 mil millones (base) + LoRA | No disponible | Decisión discreta `goto_target` en robot simulado | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8 mil millones | No disponible | Lenguaje general | No disponible en la información | Hugging Face |
 | Política PPO "cerebro" (profesor) | No disponible | No aplica | Decisión `goto_target` en simulador | No disponible | Uso interno del proyecto |
 
 No se dispone de datos de benchmarks comparables con otros modelos de decisión de la misma categoría en la información proporcionada.
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks comparables con otros modelos de decisión 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/youn485/connectailab-rl-connectailab-rl-jinbrain-link01-v2-link01
+- Hugging Face: https://huggingface.co/youn485/connectailab-rl-connectailab-rl-jinbrain-link01-v2-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código (CONNECT TYCOON): https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

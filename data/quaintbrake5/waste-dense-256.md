@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Quaintbrake5/waste-dense-256 es un modelo publicado en HuggingFace por el usuario Quaintbrake5 el 20 de septiembre de 2026. La unica informacion verificable que acompana al repositorio es la etiqueta `resnet` y la region `us`; no se declaran ni pipeline, ni licencia, ni idiomas, ni arquitectura concreta. El repositorio registra 0 descargas y 1 like en el momento de la consulta, por lo que se trata de un artefacto practicamente sin adopcion publica ni documentacion asociada.
+Quaintbrake5/waste-dense-256 es un modelo publicado en Hugging Face por el usuario Quaintbrake5 el 20 de septiembre de 2026. La unica informacion verificable que acompana al repositorio es la etiqueta `resnet` y la region `us`; no se declaran ni pipeline, ni licencia, ni idiomas, ni arquitectura concreta. El repositorio registra 0 descargas y 1 like en el momento de la consulta, por lo que se trata de un artefacto practicamente sin adopcion publica ni documentacion asociada.
 
 El identificador del modelo sugiere, sin que exista confirmacion en la ficha, un clasificador de imagen basado en una red residual (ResNet) con entrada de 256x256 pixeles y posiblemente enfocado a la clasificacion de residuos, ademas de una capa densa final. Esta interpretacion es una hipotesis derivada del nombre y de la etiqueta, no un dato confirmado, y debe tratarse como tal hasta que el autor publique una model card real.
 
@@ -69,7 +69,7 @@ No es posible comparar este modelo con alternativas concretas porque se desconoc
 
 | Modelo | Parametros | Entrada tipica | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| waste-dense-256 | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| waste-dense-256 | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | ResNet-50 | 25,6 M | 224x224 | BSD-3-Clause (implementacion de referencia) | Amplia, multiples frameworks |
 | EfficientNet-B0 | 5,3 M | 224x224 | Apache 2.0 (implementacion de referencia) | Amplia |
 | ViT-B/16 | 86 M | 224x224 | Apache 2.0 (implementacion de referencia) | Amplia |
@@ -87,6 +87,6 @@ No es posible comparar este modelo con alternativas concretas porque se desconoc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Quaintbrake5/waste-dense-256
+- Hugging Face: https://huggingface.co/Quaintbrake5/waste-dense-256
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre el modelo. Las coincidencias devueltas corresponden a la aplicacion de preguntas geograficas Geotastic (https://geotastic.net/), sin relacion con este repositorio.
 - Paper de referencia de la familia ResNet (no asociado al modelo): no disponible en los resultados de busqueda.

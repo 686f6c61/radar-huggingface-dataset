@@ -17,7 +17,7 @@ El adaptador se sirve mediante reflex-serve o mediante la API de Python de refle
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponible (campo de idiomas vacio en HuggingFace) |
+| Idiomas soportados | No disponible (campo de idiomas vacio en Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA), mas un fichero calibration.json |
 | Pipeline | text-classification |
@@ -96,7 +96,7 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| reflex-qwen3.5-4b-lora | Adaptador LoRA sobre base de ~4B | No disponible | Modelo de decision (noul/choice/score) | MIT | Abierto en HuggingFace (0 descargas) |
+| reflex-qwen3.5-4b-lora | Adaptador LoRA sobre base de ~4B | No disponible | Modelo de decision (noul/choice/score) | MIT | Abierto en Hugging Face (0 descargas) |
 | Jev (TypeSafe) | No disponible | No disponible | Modelo de decision System One | No disponible (servicio alojado) | API alojada /v1/systemone |
 | Qwen/Qwen3.5-4B (sin adaptador) | ~4B | No disponible | Modelo base multimodal | No disponible | Abierto |
 
@@ -117,7 +117,7 @@ No se dispone de datos publicados de rendimiento comparativo entre estas opcione
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kshetrajna12/reflex-qwen3.5-4b-lora
+- Hugging Face: https://huggingface.co/kshetrajna12/reflex-qwen3.5-4b-lora
 - Repositorio reflex en GitHub: https://github.com/kshetrajna12/reflex
 - Blog de TypeSafe sobre Jev y los modelos System One: https://typesafe.ai/blog/introducing-system-one-models-and-jev
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`yao_tts_kde` es un modelo de síntesis de voz (text-to-speech) publicado por el grupo SIL AI en HuggingFace. Se trata de un ajuste fino del modelo `microsoft/speecht5_tts`, un sistema TTS basado en la arquitectura SpeechT5 de Microsoft que combina un codificador y un decodificador tipo transformer con un vocoder basado en HiFi-GAN para generar formas de onda de audio a partir de texto. El modelo cuenta con 144.438.498 parámetros y se distribuye en formato safetensors bajo licencia MIT.
+`yao_tts_kde` es un modelo de síntesis de voz (text-to-speech) publicado por el grupo SIL AI en Hugging Face. Se trata de un ajuste fino del modelo `microsoft/speecht5_tts`, un sistema TTS basado en la arquitectura SpeechT5 de Microsoft que combina un codificador y un decodificador tipo transformer con un vocoder basado en HiFi-GAN para generar formas de onda de audio a partir de texto. El modelo cuenta con 144.438.498 parámetros y se distribuye en formato safetensors bajo licencia MIT.
 
-El modelo se ha entrenado con el Trainer de HuggingFace sobre un conjunto de datos no especificado en la model card (el campo de dataset aparece como "None"), lo que limita la reproducibilidad del ajuste. La pérdida de validación final reportada es de 0,0592 tras 15.000 pasos de entrenamiento, con una tasa de aprendizaje de 1e-4, optimizador AdamW fused y programación coseno con 1.500 pasos de calentamiento.
+El modelo se ha entrenado con el Trainer de Hugging Face sobre un conjunto de datos no especificado en la model card (el campo de dataset aparece como "None"), lo que limita la reproducibilidad del ajuste. La pérdida de validación final reportada es de 0,0592 tras 15.000 pasos de entrenamiento, con una tasa de aprendizaje de 1e-4, optimizador AdamW fused y programación coseno con 1.500 pasos de calentamiento.
 
 Su relevancia es acotada: se trata de un ajuste fino de bajo perfil (37 descargas, 0 likes en el momento de la consulta) orientado presumiblemente a una voz o idioma concretos, probablemente vinculado a las lenguas minoritarias que trabaja SIL AI. No hay información pública sobre el idioma, la voz ni el dominio de aplicación, por lo que debe evaluarse empíricamente antes de cualquier uso en producción.
 
@@ -33,7 +33,7 @@ El entrenamiento usó learning rate 1e-4, batch efectivo de 32 (batch 8 × acumu
 - Generación de espectrogramas mel y forma de onda mediante el vocoder integrado de SpeechT5.
 - Condicionamiento por speaker embedding (x-vector) para seleccionar o transferir timbre de voz, siempre que se disponga de un embedding compatible.
 - Ajuste fino sobre una voz o dominio concreto (no documentado), lo que puede proporcionar una identidad de voz específica.
-- Compatible con endpoints de HuggingFace (`endpoints_compatible` en los tags).
+- Compatible con endpoints de Hugging Face (`endpoints_compatible` en los tags).
 - No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión ni audio de entrada; es exclusivamente TTS.
 - Capacidades multilingües: no confirmadas; el nombre sugiere una lengua concreta pero no se especifica.
 
@@ -64,17 +64,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: el modelo tiene ~144 M de parámetros; en fp32 ocupa ~0,58 GB y en fp16 ~0,29 GB, más el vocoder y los buffers intermedios. En la práctica, cabe holgadamente en GPUs con 4 GB o más.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente (RTX 3060, RTX 4060, RTX 4090); para despliegues en servidor, A100 o H100 no son necesarias pero funcionan sin problema.
 - Cabe en GPU consumer: sí, en todas las GPU con al menos 4 GB de VRAM; también puede ejecutarse en CPU con latencias mayores.
-- Opciones de despliegue: `transformers` con el pipeline `text-to-audio`, `TextToSpectrogram` + vocoder de SpeechT5, y servidores compatibles con endpoints de HuggingFace. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a TTS en este formato).
+- Opciones de despliegue: `transformers` con el pipeline `text-to-audio`, `TextToSpectrogram` + vocoder de SpeechT5, y servidores compatibles con endpoints de Hugging Face. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a TTS en este formato).
 - Latencia y throughput: no disponibles; no se han publicado mediciones. En una RTX 4090 se espera síntesis en tiempo real o superior para frases cortas, pero es una estimación no verificada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sil-ai/yao_tts_kde | 144,4 M | texto (longitud no documentada) | MIT | HuggingFace | Ajuste fino de SpeechT5; idioma y voz no documentados |
-| microsoft/speecht5_tts | ~144 M (arquitectura base) | texto (longitud no documentada) | MIT | HuggingFace | Modelo base multilingüe con speaker embeddings; referencia directa |
-| Coqui XTTS-v2 | ~467 M | texto (multilingüe, clonación de voz) | Coqui Public Model License (no comercial) | HuggingFace | Clonación de voz zero-shot; licencia restrictiva para uso comercial |
-| VITS / Piper | variable (~20-100 M) | texto (por voz) | MIT / GPL según modelo | HuggingFace / GitHub | Optimizado para inferencia en CPU; ecosistema de voces comunitarias |
+| sil-ai/yao_tts_kde | 144,4 M | texto (longitud no documentada) | MIT | Hugging Face | Ajuste fino de SpeechT5; idioma y voz no documentados |
+| microsoft/speecht5_tts | ~144 M (arquitectura base) | texto (longitud no documentada) | MIT | Hugging Face | Modelo base multilingüe con speaker embeddings; referencia directa |
+| Coqui XTTS-v2 | ~467 M | texto (multilingüe, clonación de voz) | Coqui Public Model License (no comercial) | Hugging Face | Clonación de voz zero-shot; licencia restrictiva para uso comercial |
+| VITS / Piper | variable (~20-100 M) | texto (por voz) | MIT / GPL según modelo | Hugging Face / GitHub | Optimizado para inferencia en CPU; ecosistema de voces comunitarias |
 
 ## Limitaciones y advertencias
 
@@ -89,9 +89,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sil-ai/yao_tts_kde
+- Modelo en Hugging Face: https://huggingface.co/sil-ai/yao_tts_kde
 - Modelo base: https://huggingface.co/microsoft/speecht5_tts
 - Paper de SpeechT5: https://arxiv.org/abs/2110.07205
-- Organización SIL AI en HuggingFace: https://huggingface.co/sil-ai
+- Organización SIL AI en Hugging Face: https://huggingface.co/sil-ai
 - Documentación de SpeechT5 en Transformers: https://huggingface.co/docs/transformers/model_doc/speecht5
 - Repositorio de Transformers: https://github.com/huggingface/transformers

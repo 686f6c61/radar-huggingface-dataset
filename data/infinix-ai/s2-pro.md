@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fish Audio S2 Pro es un modelo de text-to-speech (TTS) desarrollado por Fish Audio y publicado en HuggingFace bajo el identificador `Infinix-ai/s2-pro`. Se trata de un sistema de síntesis de voz de nueva generación que combina una arquitectura dual-autorregresiva con un códec de audio basado en RVQ, y que ha sido entrenado sobre más de 10 millones de horas de audio en más de 80 idiomas. Su principal innovación es el control inline de prosodia y emoción mediante etiquetas de formato libre embebidas en el texto, lo que permite modular la locución a nivel de palabra sin depender de un conjunto cerrado de etiquetas predefinidas.
+Fish Audio S2 Pro es un modelo de text-to-speech (TTS) desarrollado por Fish Audio y publicado en Hugging Face bajo el identificador `Infinix-ai/s2-pro`. Se trata de un sistema de síntesis de voz de nueva generación que combina una arquitectura dual-autorregresiva con un códec de audio basado en RVQ, y que ha sido entrenado sobre más de 10 millones de horas de audio en más de 80 idiomas. Su principal innovación es el control inline de prosodia y emoción mediante etiquetas de formato libre embebidas en el texto, lo que permite modular la locución a nivel de palabra sin depender de un conjunto cerrado de etiquetas predefinidas.
 
 El modelo se compone de dos módulos autorregresivos: un "Slow AR" de 4.000 millones de parámetros que opera sobre el eje temporal y predice el codebook semántico principal, y un "Fast AR" de 400 millones de parámetros que genera los 9 codebooks residuales en cada paso temporal. El total de parámetros asciende a 4.561.852.416 (aproximadamente 4,56 mil millones), con pesos en formato safetensors y un tamaño de repositorio de 11 GB. La arquitectura es estructuralmente isomorfa a la de un LLM autorregresivo estándar, lo que le permite heredar optimizaciones de serving nativas de SGLang.
 
@@ -74,7 +74,7 @@ No se dispone en la información proporcionada de datos numéricos de modelos TT
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fish Audio S2 Pro | 4,56 B (4 B Slow AR + 400 M Fast AR) | no disponible | RTF 0,195 en H200 | Fish Audio Research License (no comercial) | Pesos en HuggingFace |
+| Fish Audio S2 Pro | 4,56 B (4 B Slow AR + 400 M Fast AR) | no disponible | RTF 0,195 en H200 | Fish Audio Research License (no comercial) | Pesos en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,9 +90,9 @@ No se dispone en la información proporcionada de datos numéricos de modelos TT
 
 ## Enlaces
 
-- [HuggingFace: Infinix-ai/s2-pro](https://huggingface.co/Infinix-ai/s2-pro)
+- [Hugging Face: Infinix-ai/s2-pro](https://huggingface.co/Infinix-ai/s2-pro)
 - [Technical Report (arXiv 2603.08823)](https://arxiv.org/abs/2603.08823)
-- [Technical Report en HuggingFace Papers](https://huggingface.co/papers/2603.08823)
+- [Technical Report en Hugging Face Papers](https://huggingface.co/papers/2603.08823)
 - [GitHub: fishaudio/fish-speech](https://github.com/fishaudio/fish-speech)
 - [Playground: fish.audio](https://fish.audio)
 - [Blog: Fish Audio open sources S2](https://fish.audio/blog/fish-audio-open-sources-s2/)

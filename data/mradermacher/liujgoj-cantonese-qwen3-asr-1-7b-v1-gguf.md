@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Liujgoj-Cantonese-Qwen3-ASR-1.7B-V1-GGUF | 319M (safetensors) / 1.7B (nombre) | no disponible | no disponible | GGUF | HuggingFace |
+| Liujgoj-Cantonese-Qwen3-ASR-1.7B-V1-GGUF | 319M (safetensors) / 1.7B (nombre) | no disponible | no disponible | GGUF | Hugging Face |
 | Whisper (OpenAI) | 39M–1.55B según variante | 30 s de audio por ventana | MIT | safetensors, GGUF | Amplia |
 | Qwen2-Audio | 7B | no disponible | Apache 2.0 (según variante) | safetensors | Amplia |
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fibo2_LoRas es un repositorio alojado en HuggingFace por el usuario Zabin que, por su nombre y estructura, contiene un conjunto de adaptadores LoRA (Low-Rank Adaptation) denominados "Fibo2". No se trata de un modelo base completo, sino de pesos de ajuste fino de bajo rango que deben aplicarse sobre un modelo fundacional que no se especifica en la model card.
+Fibo2_LoRas es un repositorio alojado en Hugging Face por el usuario Zabin que, por su nombre y estructura, contiene un conjunto de adaptadores LoRA (Low-Rank Adaptation) denominados "Fibo2". No se trata de un modelo base completo, sino de pesos de ajuste fino de bajo rango que deben aplicarse sobre un modelo fundacional que no se especifica en la model card.
 
 La informacion publica disponible es extremadamente limitada: la model card se reduce a la declaracion de licencia Apache 2.0, sin descripcion del modelo base, del proceso de entrenamiento, del dataset utilizado ni de las capacidades resultantes. El repositorio no registra descargas ni interacciones, lo que sugiere un proyecto experimental o de publicacion reciente sin validacion por parte de la comunidad.
 
@@ -38,9 +38,9 @@ Tampoco se documentan los datos de entrenamiento, el numero de tokens utilizados
 ## Casos de uso
 
 - Experimentacion con adaptadores LoRA: un desarrollador podria cargar los adaptadores sobre el modelo base correspondiente (si lo identifica) para evaluar el efecto del ajuste fino en tareas concretas, siempre que el autor documente la compatibilidad.
-- Investigacion sobre fine-tuning eficiente: el repositorio puede servir como referencia de formato y estructura de publicacion de adaptadores LoRA en HuggingFace.
+- Investigacion sobre fine-tuning eficiente: el repositorio puede servir como referencia de formato y estructura de publicacion de adaptadores LoRA en Hugging Face.
 - Reutilizacion condicionada a la licencia: al estar bajo Apache 2.0, los pesos podrian incorporarse a proyectos propios, pero la ausencia de documentacion impide garantizar su correcto funcionamiento.
-- Integracion en pipelines de PEFT: mediante la libreria `peft` de HuggingFace, se podrian cargar los adaptadores si se conoce el modelo base y la configuracion de rango.
+- Integracion en pipelines de PEFT: mediante la libreria `peft` de Hugging Face, se podrian cargar los adaptadores si se conoce el modelo base y la configuracion de rango.
 - Evaluacion comparativa interna: un equipo podria medir si el ajuste mejora tareas especificas frente al modelo base sin adaptadores, aunque requeriria definir su propio conjunto de evaluacion.
 - Docencia y formacion: como ejemplo practico de publicacion de LoRAs y de las carencias de documentacion que conviene evitar en un repositorio de modelos.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| Zabin/Fibo2_LoRas | no disponible | no disponible | Apache 2.0 | solo licencia | HuggingFace, 0 descargas |
-| Adaptadores LoRA tipicos (p. ej. repositorios de la comunidad PEFT) | dependen del base | dependen del base | variable | model card con base, dataset e hiperparametros | HuggingFace |
-| Fine-tunes completos de la comunidad | decenas de miles de millones | variable | variable | model card detallada | HuggingFace |
+| Zabin/Fibo2_LoRas | no disponible | no disponible | Apache 2.0 | solo licencia | Hugging Face, 0 descargas |
+| Adaptadores LoRA tipicos (p. ej. repositorios de la comunidad PEFT) | dependen del base | dependen del base | variable | model card con base, dataset e hiperparametros | Hugging Face |
+| Fine-tunes completos de la comunidad | decenas de miles de millones | variable | variable | model card detallada | Hugging Face |
 
 No se dispone de informacion suficiente para establecer una comparativa tecnica rigurosa con alternativas concretas.
 
@@ -77,7 +77,7 @@ No se dispone de informacion suficiente para establecer una comparativa tecnica 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Zabin/Fibo2_LoRas
+- Repositorio en Hugging Face: https://huggingface.co/Zabin/Fibo2_LoRas
 - Libreria PEFT (carga de adaptadores LoRA): https://github.com/huggingface/peft
-- Documentacion de LoRA en HuggingFace: https://huggingface.co/docs/peft
+- Documentacion de LoRA en Hugging Face: https://huggingface.co/docs/peft
 - Paper original de LoRA: https://arxiv.org/abs/2106.09685

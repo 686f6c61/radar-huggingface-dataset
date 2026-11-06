@@ -2,7 +2,7 @@
 
 ## Resumen
 
-udm_qwen3.5-2b_v4_3500 es un adaptador LoRA publicado por el usuario Anya23 en HuggingFace, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base Qwen/Qwen3.5-2B. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación en formato PEFT que debe cargarse junto al modelo base para poder utilizarse. El repositorio ocupa 0,1 GB y fue creado y actualizado el 5 de octubre de 2026, con 0 descargas y 0 "likes" en el momento de la consulta.
+udm_qwen3.5-2b_v4_3500 es un adaptador LoRA publicado por el usuario Anya23 en Hugging Face, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base Qwen/Qwen3.5-2B. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación en formato PEFT que debe cargarse junto al modelo base para poder utilizarse. El repositorio ocupa 0,1 GB y fue creado y actualizado el 5 de octubre de 2026, con 0 descargas y 0 "likes" en el momento de la consulta.
 
 El artefacto está pensado para generación de texto y conversación (etiquetas `text-generation` y `conversational`), y fue producido con el ecosistema Unsloth + TRL + Transformers + PEFT (versión 0.20.0 declarada). La relevancia actual es limitada y fundamentalmente experimental: se trata de un adaptador sin model card completada (la plantilla conserva los marcadores `[More Information Needed]`), sin licencia declarada, sin idiomas declarados y sin resultados de evaluación publicados. Cualquier uso en producción requiere validación propia previa.
 
@@ -70,7 +70,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento de 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Anya23/udm_qwen3.5-2b_v4_3500 | No disponible (adaptador LoRA; base ~2B) | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
+| Anya23/udm_qwen3.5-2b_v4_3500 | No disponible (adaptador LoRA; base ~2B) | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
 | Qwen/Qwen3.5-2B (modelo base) | ~2.000 millones según nomenclatura | No disponible | No disponible | No disponible en la información proporcionada | Referenciado como base |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 

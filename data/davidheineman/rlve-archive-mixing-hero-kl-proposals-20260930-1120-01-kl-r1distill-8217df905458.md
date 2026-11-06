@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint archivado de un experimento de investigación denominado internamente `01-kl-r1distill`, dentro de la ejecución `runs/mixing-hero-kl-proposals-20260930-112004`. El autor es el usuario de HuggingFace `davidheineman` y el artefacto se publica bajo la etiqueta `scratch-archive`, es decir, como copia de preservación de un estado final de entrenamiento (paso 999) y no como un modelo listo para producción. El identificador del run de Weights & Biases asociado es `5800b310`.
+Este repositorio contiene un checkpoint archivado de un experimento de investigación denominado internamente `01-kl-r1distill`, dentro de la ejecución `runs/mixing-hero-kl-proposals-20260930-112004`. El autor es el usuario de Hugging Face `davidheineman` y el artefacto se publica bajo la etiqueta `scratch-archive`, es decir, como copia de preservación de un estado final de entrenamiento (paso 999) y no como un modelo listo para producción. El identificador del run de Weights & Biases asociado es `5800b310`.
 
 El modelo está construido sobre la arquitectura Qwen2 (transformer decoder-only) y cuenta con 1.777.088.000 parámetros totales según los pesos en safetensors, una cifra que no coincide con ningún tamaño publicado estándar de la familia Qwen2 (0,5B, 1,5B, 7B), lo que sugiere una configuración personalizada o un proceso de destilación. El tamaño del repositorio, 3,6 GB, es coherente con pesos almacenados en BF16 (unos 3,55 GB teóricos para 1,78B parámetros), aunque no se confirma el tipo de dato exacto.
 
@@ -78,7 +78,7 @@ Los valores de los modelos comparativos proceden de documentación pública de s
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rlve-archive...01-kl-r1distill (este checkpoint) | 1,78B | no disponible | no disponible | Peso público en HuggingFace, 0 descargas |
+| rlve-archive...01-kl-r1distill (este checkpoint) | 1,78B | no disponible | no disponible | Peso público en Hugging Face, 0 descargas |
 | Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (referencia pública) | Apache-2.0 (referencia pública) | Ampliamente desplegado |
 | Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens (referencia pública) | Licencia comunitaria Llama 3.2 (referencia pública) | Ampliamente desplegado |
 | Gemma-2-2B-it | 2,6B | 8.192 tokens (referencia pública) | Términos de uso de Gemma (referencia pública) | Ampliamente desplegado |
@@ -99,5 +99,5 @@ No se dispone de datos de rendimiento de este checkpoint que permitan una compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mixing-hero-kl-proposals-20260930-1120-01-kl-r1distill-8217df905458
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mixing-hero-kl-proposals-20260930-1120-01-kl-r1distill-8217df905458
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la búsqueda web realizada; los resultados devueltos no guardan relación con el modelo.

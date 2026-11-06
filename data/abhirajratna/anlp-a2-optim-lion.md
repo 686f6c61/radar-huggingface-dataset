@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `abhirajratna/anlp-a2-optim-lion` es un decodificador transformer denso de 33.563.136 parámetros, entrenado desde cero para predicción del siguiente token sobre una única pasada del split de entrenamiento del corpus `browndw/human-ai-parallel-corpus`. Lo publica el usuario de HuggingFace abhirajratna como entregable de la asignatura ANLP (Advanced Natural Language Processing), y su interés no reside en la calidad del modelo resultante sino en el objeto de estudio: comparar el comportamiento del optimizador Lion, implementado desde cero, frente a alternativas en un mismo presupuesto de cómputo.
+El modelo `abhirajratna/anlp-a2-optim-lion` es un decodificador transformer denso de 33.563.136 parámetros, entrenado desde cero para predicción del siguiente token sobre una única pasada del split de entrenamiento del corpus `browndw/human-ai-parallel-corpus`. Lo publica el usuario de Hugging Face abhirajratna como entregable de la asignatura ANLP (Advanced Natural Language Processing), y su interés no reside en la calidad del modelo resultante sino en el objeto de estudio: comparar el comportamiento del optimizador Lion, implementado desde cero, frente a alternativas en un mismo presupuesto de cómputo.
 
 Arquitectónicamente se trata de la "variante v1" descrita en la model card: 8 capas, dimensión de modelo (`d_model`) de 512, 8 cabezas de atención y un MLP de 2 capas con dimensión oculta 2048. El entrenamiento consumió 39.038.976 tokens, con un pico de learning rate de 0,0002, y alcanzó una pérdida final de validación de 3,7281 junto con un BLEU de test de 4,04 medido sobre continuaciones de 64 tokens con 7 referencias.
 
@@ -77,10 +77,10 @@ La información proporcionada no incluye comparaciones con otros modelos y no ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| abhirajratna/anlp-a2-optim-lion | 33,6 M | no disponible | no disponible | HuggingFace, pesos safetensors |
-| distilgpt2 | 82 M | 1024 | MIT (según documentación pública) | HuggingFace, transformers |
-| Pythia-70M | 70 M | 2048 | Apache 2.0 (según documentación pública) | HuggingFace, transformers, vLLM |
-| GPT-2 small | 124 M | 1024 | Modified MIT (según documentación pública) | HuggingFace, transformers |
+| abhirajratna/anlp-a2-optim-lion | 33,6 M | no disponible | no disponible | Hugging Face, pesos safetensors |
+| distilgpt2 | 82 M | 1024 | MIT (según documentación pública) | Hugging Face, transformers |
+| Pythia-70M | 70 M | 2048 | Apache 2.0 (según documentación pública) | Hugging Face, transformers, vLLM |
+| GPT-2 small | 124 M | 1024 | Modified MIT (según documentación pública) | Hugging Face, transformers |
 
 Comparación de rendimiento: no disponible. El modelo aquí descrito no publica resultados en ninguno de los benchmarks habituales, por lo que no es posible contrastarlo cuantitativamente con las alternativas anteriores.
 
@@ -99,8 +99,8 @@ Comparación de rendimiento: no disponible. El modelo aquí descrito no publica 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhirajratna/anlp-a2-optim-lion
-- Perfil del autor en HuggingFace: https://huggingface.co/abhirajratna
+- Modelo en Hugging Face: https://huggingface.co/abhirajratna/anlp-a2-optim-lion
+- Perfil del autor en Hugging Face: https://huggingface.co/abhirajratna
 - Directorio de modelos del autor (terceros): https://essamamdani.com/ai-models/company/abhirajratna
 - Lista de modelos gratuitos (resultado de búsqueda, no relacionado directamente con este modelo): https://github.com/ClawLabsAI/free-ai-models
 - Página de modelos abiertos de OpenAI (resultado de búsqueda, no relacionado con este modelo): https://openai.com/open-models/

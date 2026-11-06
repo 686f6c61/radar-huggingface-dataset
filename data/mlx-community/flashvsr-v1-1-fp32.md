@@ -110,7 +110,7 @@ La diferencia entre los dos carriles MLX es solo de precision: el bf16 es el de 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta variante: https://huggingface.co/mlx-community/FlashVSR-v1.1-fp32
+- Repositorio Hugging Face de esta variante: https://huggingface.co/mlx-community/FlashVSR-v1.1-fp32
 - Carril de produccion en bf16: https://huggingface.co/mlx-community/FlashVSR-v1.1-bf16
 - Modelo base original: https://huggingface.co/JunhaoZhuang/FlashVSR-v1.1
 - Repositorio de codigo de FlashVSR: https://github.com/OpenImagingLab/FlashVSR

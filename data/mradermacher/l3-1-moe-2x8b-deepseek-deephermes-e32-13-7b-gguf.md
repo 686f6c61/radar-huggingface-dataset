@@ -89,7 +89,7 @@ La comparativa es orientativa: los datos de los modelos alternativos provienen d
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/L3.1-MOE-2X8B-Deepseek-DeepHermes-e32-13.7B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/L3.1-MOE-2X8B-Deepseek-DeepHermes-e32-13.7B-GGUF
 - Modelo base (safetensors): https://huggingface.co/DavidAU/L3.1-MOE-2X8B-Deepseek-DeepHermes-e32-13.7B
 - Cuantizaciones imatrix del mismo modelo: https://huggingface.co/mradermacher/L3.1-MOE-2X8B-Deepseek-DeepHermes-e32-13.7B-i1-GGUF
 - Pagina de conveniencia del autor: https://hf.tst.eu/model#L3.1-MOE-2X8B-Deepseek-DeepHermes-e32-13.7B-GGUF

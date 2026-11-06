@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MuVAE es un autoencoder variational (VAE) convolucional continuo para audio musical estéreo a 48 kHz, publicado por el desarrollador mrfakename en HuggingFace. No es un modelo generativo de texto ni un modelo de lenguaje: su funcion es actuar como codec latente, es decir, comprimir una forma de onda a una representacion latente de 64 canales a 25 fotogramas por segundo (un factor de compresion de 1920×) y reconstruirla de vuelta al dominio temporal. Esto lo convierte en la pieza de espacio latente que necesitan los modelos de generacion musical basados en difusion o transformers sobre latentes.
+MuVAE es un autoencoder variational (VAE) convolucional continuo para audio musical estéreo a 48 kHz, publicado por el desarrollador mrfakename en Hugging Face. No es un modelo generativo de texto ni un modelo de lenguaje: su funcion es actuar como codec latente, es decir, comprimir una forma de onda a una representacion latente de 64 canales a 25 fotogramas por segundo (un factor de compresion de 1920×) y reconstruirla de vuelta al dominio temporal. Esto lo convierte en la pieza de espacio latente que necesitan los modelos de generacion musical basados en difusion o transformers sobre latentes.
 
 El modelo se entreno desde cero sobre la arquitectura del VAE de YuE2/Oobleck, con 132.616.130 parametros en FP32 (66,2 M en el encoder y 66,4 M en el decoder). Los pesos liberados corresponden a la media exponencial (EMA) del entrenamiento. La arquitectura emplea activaciones SnakeBeta, canales 64 × (1, 2, 4, 8, 16, 32) y strides (2, 2, 4, 4, 5, 6), con decodificacion por tiles que permite procesar canciones completas con memoria acotada.
 
@@ -81,7 +81,7 @@ Ademas, la model card incluye cuatro pares de muestras (audio original y reconst
 
 | Modelo | Tipo | Audio | Latentes | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MuVAE | VAE convolucional (Oobleck + SnakeBeta) | 48 kHz estereo | 64 canales a 25 Hz (1920×) | 132,6 M | CC-BY-4.0 | HuggingFace, via `transformers` |
+| MuVAE | VAE convolucional (Oobleck + SnakeBeta) | 48 kHz estereo | 64 canales a 25 Hz (1920×) | 132,6 M | CC-BY-4.0 | Hugging Face, via `transformers` |
 | VAE de YuE / YuE2 | VAE convolucional (arquitectura de referencia) | No disponible | No disponible | No disponible | No disponible | Repositorio GitHub de YuE |
 | Oobleck de stable-audio-tools | Autoencoder convolucional (arquitectura base) | No disponible | No disponible | No disponible | MIT (codigo, © 2023 Stability AI) | GitHub de Stability AI |
 | SnakeBeta de BigVGAN | Activacion (componente reutilizado) | No disponible | No disponible | No disponible | MIT (codigo, © 2022 NVIDIA) | GitHub de NVIDIA |
@@ -104,7 +104,7 @@ No se dispone de datos publicados de parametros, latentes o rendimiento de otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrfakename/MuVAE
+- Modelo en Hugging Face: https://huggingface.co/mrfakename/MuVAE
 - Demo 1, audio original: https://huggingface.co/mrfakename/MuVAE/resolve/main/demos/sample1-source.wav
 - Demo 1, reconstruccion: https://huggingface.co/mrfakename/MuVAE/resolve/main/demos/sample1-reconstruction.wav
 - Demo 2, audio original: https://huggingface.co/mrfakename/MuVAE/resolve/main/demos/sample2-source.wav

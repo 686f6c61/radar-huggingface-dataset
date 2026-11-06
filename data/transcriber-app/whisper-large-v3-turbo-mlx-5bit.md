@@ -97,11 +97,11 @@ Frente al modelo base en fp16, esta version prioriza el tamano y el arranque rap
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/transcriber-app/whisper-large-v3-turbo-mlx-5bit
+- Repositorio Hugging Face: https://huggingface.co/transcriber-app/whisper-large-v3-turbo-mlx-5bit
 - Build de 8 bits del mismo autor: https://huggingface.co/transcriber-app/whisper-large-v3-turbo-mlx-8bit
 - Modelo base en OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo
 - Version fp16 de partida: https://huggingface.co/mlx-community/whisper-large-v3-turbo
 - Receta de conversion MLX (mlx-examples, whisper): https://github.com/ml-explore/mlx-examples/tree/main/whisper
 - Repositorio original de Whisper en OpenAI: https://github.com/openai/whisper
 - Script de transcripcion con MLX (referencia de terceros): https://github.com/bivex/whisper-large-v3-turbo
-- Demo en HuggingFace Spaces de Whisper Turbo: https://huggingface.co/spaces/hf-audio/whisper-large-v3-turbo
+- Demo en Hugging Face Spaces de Whisper Turbo: https://huggingface.co/spaces/hf-audio/whisper-large-v3-turbo

@@ -73,8 +73,8 @@ Resultados publicados por el autor (porcentajes; corchetes = IC bootstrap al 95 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GSMB/aya-refusal-v2-adapters | adaptadores LoRA (0.066-0.903 % de parametros) sobre tiny-aya-global | no disponible | Safety multilingue via LoRA y circuitos de rechazo | other | HuggingFace (0 descargas) |
-| CohereLabs/tiny-aya-global (base) | no disponible | no disponible | Modelo multilingue general | no disponible | HuggingFace |
+| GSMB/aya-refusal-v2-adapters | adaptadores LoRA (0.066-0.903 % de parametros) sobre tiny-aya-global | no disponible | Safety multilingue via LoRA y circuitos de rechazo | other | Hugging Face (0 descargas) |
+| CohereLabs/tiny-aya-global (base) | no disponible | no disponible | Modelo multilingue general | no disponible | Hugging Face |
 | Adaptadores de seguridad multilingue alternativos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con modelos de la misma categoria en la informacion proporcionada.
@@ -92,5 +92,5 @@ No se dispone de datos de benchmarks comparativos con modelos de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GSMB/aya-refusal-v2-adapters
+- Repositorio Hugging Face: https://huggingface.co/GSMB/aya-refusal-v2-adapters
 - Modelo base: https://huggingface.co/CohereLabs/tiny-aya-global

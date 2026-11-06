@@ -80,7 +80,7 @@ No disponible. Spum no es un modelo sino un motor de inferencia local para macOS
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vinayapathak/spum
+- Repositorio en Hugging Face: https://huggingface.co/vinayapathak/spum
 - Sitio web y ejecuciones grabadas: https://nsimaging.ai/spum/
 - Instalación en Mac: https://nsimaging.ai/spum/#install
 - Tap de Homebrew: https://github.com/vinayapathak/homebrew-spum

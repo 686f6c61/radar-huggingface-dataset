@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Knowledge Graph Risk Engine Baseline Model es un prototipo pequeno y transparente publicado por el usuario RKB109 en HuggingFace. No es un modelo de lenguaje generativo ni llama a un LLM alojado: combina pesos de token por etiqueta con recuperacion de evidencia ponderada por IDF para producir explicaciones a nivel de relacion en lugar de puntuaciones opacas de entidad. Su proposito declarado es servir como linea base reproducible para equipos de riesgo que necesitan justificar decisiones a nivel de relacion.
+Knowledge Graph Risk Engine Baseline Model es un prototipo pequeno y transparente publicado por el usuario RKB109 en Hugging Face. No es un modelo de lenguaje generativo ni llama a un LLM alojado: combina pesos de token por etiqueta con recuperacion de evidencia ponderada por IDF para producir explicaciones a nivel de relacion en lugar de puntuaciones opacas de entidad. Su proposito declarado es servir como linea base reproducible para equipos de riesgo que necesitan justificar decisiones a nivel de relacion.
 
 El modelo se distribuye bajo licencia MIT, con pipeline declarado de feature-extraction y libreria custom. La model card lo enmarca explicitamente como un artefacto de demostracion arquitectonica generado con datos sinteticos, orientado a prototipado, ejemplos de CI y comparaciones de linea base locales. Cubre tareas de token-classification, feature-extraction, question-answering y sentence-similarity, aunque no se documenta el tamano de parametros, la longitud de contexto ni los idiomas soportados.
 
@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Knowledge Graph Risk Engine Baseline Model | No disponible | No disponible | Accuracy 1 sobre 4 ejemplos sinteticos | MIT | HuggingFace |
+| Knowledge Graph Risk Engine Baseline Model | No disponible | No disponible | Accuracy 1 sobre 4 ejemplos sinteticos | MIT | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -92,6 +92,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKB109/knowledge-graph-risk-engine-20261007-model
+- Modelo en Hugging Face: https://huggingface.co/RKB109/knowledge-graph-risk-engine-20261007-model
 - Dataset asociado: https://huggingface.co/datasets/RKB109/knowledge-graph-risk-engine-20261007-dataset
 - Repositorio GitHub con `train.py`, split del dataset, codigo de evaluacion y formato JSON del modelo: mencionado en la model card, pero no se proporciona la URL en la informacion disponible.

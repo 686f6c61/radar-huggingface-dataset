@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MoulSot v0.3 MLX Q6 es un paquete de cuantizacion de 6 bits del modelo de reconocimiento automatico del habla (ASR) MoulSot v0.3, un ajuste fino de `Qwen/Qwen3-ASR-1.7B` orientado a la transcripcion de dariya marroqui (codigo ISO `ary`) y habla con alternancia de codigos (code-switching) entre arabe, frances e ingles. Lo publica el usuario de HuggingFace `kamalaitbrahim` como artefacto de inferencia local para el flujo de trabajo de la aplicacion Nassem, no como endpoint alojado.
+MoulSot v0.3 MLX Q6 es un paquete de cuantizacion de 6 bits del modelo de reconocimiento automatico del habla (ASR) MoulSot v0.3, un ajuste fino de `Qwen/Qwen3-ASR-1.7B` orientado a la transcripcion de dariya marroqui (codigo ISO `ary`) y habla con alternancia de codigos (code-switching) entre arabe, frances e ingles. Lo publica el usuario de Hugging Face `kamalaitbrahim` como artefacto de inferencia local para el flujo de trabajo de la aplicacion Nassem, no como endpoint alojado.
 
 El modelo parte de la arquitectura Qwen3-ASR-1.7B: un encoder de audio seguido de un decoder tipo transformer de aproximadamente 1.700 millones de parametros. En este repositorio el decoder se empaqueta en MLX con cuantizacion de 6 bits y tamano de grupo 64, mientras que el encoder de audio se mantiene en bf16, lo que da un repositorio de unos 2,0 GB.
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kamalaitbrahim/nassem-asr-darija-q6
+- Repositorio Hugging Face: https://huggingface.co/kamalaitbrahim/nassem-asr-darija-q6
 - Paquete de 4 bits: https://huggingface.co/kamalaitbrahim/nassem-asr-darija
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Libreria de inferencia: https://github.com/Blaizzy/mlx-audio

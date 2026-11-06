@@ -5,7 +5,7 @@
   "author": "kyumly",
   "url": "https://huggingface.co/kyumly/qwen36-35b-a3b-2p10bit-duet",
   "created_at": "2026-11-02T01:35:24.000Z",
-  "updated_at": "2026-11-02T01:36:16.000Z",
+  "updated_at": "2026-11-06T03:36:20.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

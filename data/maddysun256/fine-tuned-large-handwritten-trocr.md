@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fine-Tuned-Large-Handwritten-TrOcr es un modelo de visión y texto publicado en HuggingFace por el usuario maddysun256. Por su nombre, su arquitectura vision-encoder-decoder y su tamaño (609,7 millones de parámetros), se trata de un ajuste fino de un modelo TrOCR de la variante "large" orientado al reconocimiento óptico de caracteres (OCR) sobre texto manuscrito. TrOCR combina un codificador de imágenes tipo ViT con un decodificador de texto autorregresivo tipo transformer, lo que permite transcribir imágenes de escritura a mano a texto plano sin necesidad de un pipeline OCR clásico por etapas.
+Fine-Tuned-Large-Handwritten-TrOcr es un modelo de visión y texto publicado en Hugging Face por el usuario maddysun256. Por su nombre, su arquitectura vision-encoder-decoder y su tamaño (609,7 millones de parámetros), se trata de un ajuste fino de un modelo TrOCR de la variante "large" orientado al reconocimiento óptico de caracteres (OCR) sobre texto manuscrito. TrOCR combina un codificador de imágenes tipo ViT con un decodificador de texto autorregresivo tipo transformer, lo que permite transcribir imágenes de escritura a mano a texto plano sin necesidad de un pipeline OCR clásico por etapas.
 
 El modelo es relevante para quien necesite transcribir documentos manuscritos (formularios, notas, cartas) y quiera una alternativa de pesos abiertos frente a servicios OCR comerciales. Su licencia MIT facilita la integración en productos propios, incluido uso comercial. No obstante, la información publicada es mínima: la model card solo declara la licencia, sin detallar el dataset de ajuste, los idiomas soportados ni métricas de evaluación, por lo que cualquier evaluación de calidad debe hacerse por cuenta del usuario.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Fine-Tuned-Large-Handwritten-TrOcr | 609,7 M | no disponible | MIT | HuggingFace |
-| TrOCR large (base de Microsoft) | ~558 M | no disponible | MIT | HuggingFace |
-| TrOCR base | ~334 M | no disponible | MIT | HuggingFace |
+| Fine-Tuned-Large-Handwritten-TrOcr | 609,7 M | no disponible | MIT | Hugging Face |
+| TrOCR large (base de Microsoft) | ~558 M | no disponible | MIT | Hugging Face |
+| TrOCR base | ~334 M | no disponible | MIT | Hugging Face |
 | Tesseract (OCR clásico) | no aplica | no aplica | Apache 2.0 | Repositorio propio |
 
 La comparación con TrOCR se basa en la familia arquitectónica inferida del nombre y del tamaño; no se dispone de métricas que cuantifiquen la mejora del ajuste fino frente al modelo base. Tesseract es una alternativa clásica sin parámetros neuronales, con menor precisión en manuscrito pero sin requisitos de GPU.
@@ -82,6 +82,6 @@ La comparación con TrOCR se basa en la familia arquitectónica inferida del nom
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maddysun256/Fine-Tuned-Large-Handwritten-TrOcr
+- Hugging Face: https://huggingface.co/maddysun256/Fine-Tuned-Large-Handwritten-TrOcr
 - Paper de TrOCR (Microsoft): https://arxiv.org/abs/2109.10282
-- Repositorio de referencia TrOCR en HuggingFace: https://huggingface.co/microsoft/trocr-large-handwritten
+- Repositorio de referencia TrOCR en Hugging Face: https://huggingface.co/microsoft/trocr-large-handwritten

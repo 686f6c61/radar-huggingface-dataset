@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Frosya-2-Fast (LGTT-Mini 40M) | ~40 M activos (MoE, 4 expertos, top-2) | 2.048 | CC BY-SA 4.0 | HuggingFace, 0 descargas | Motor NumPy propio, sin benchmarks |
+| Frosya-2-Fast (LGTT-Mini 40M) | ~40 M activos (MoE, 4 expertos, top-2) | 2.048 | CC BY-SA 4.0 | Hugging Face, 0 descargas | Motor NumPy propio, sin benchmarks |
 | TinyLlama 1.1B | 1.100 M | 2.048 | Apache 2.0 | Amplia, ecosistema estándar | Transformer denso, formato safetensors/GGUF |
 | SmolLM-135M | 135 M | 2.048 | Apache 2.0 | Amplia, integrado en transformers | Transformer denso, benchmarks publicados |
 | Qwen2.5-0.5B | 494 M | 32.768 | Apache 2.0 | Amplia, múltiples cuantizaciones | Transformer denso, soporte multilingüe amplio |
@@ -85,5 +85,5 @@ La comparación es aproximada: Frosya-2-Fast es uno o dos órdenes de magnitud m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fortik11/Frosya-2-Fast
+- Modelo en Hugging Face: https://huggingface.co/fortik11/Frosya-2-Fast
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados al modelo.

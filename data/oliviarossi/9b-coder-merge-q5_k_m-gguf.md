@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OliviaRossi/9B-Coder-Merge-Q5_K_M-GGUF es la version cuantizada en formato GGUF (Q5_K_M) del modelo OliviaRossi/9B-Coder-Merge, un merge de modelos orientado a generacion de codigo, uso de herramientas y flujos de agente. El autor es el usuario de HuggingFace OliviaRossi y la conversion a GGUF se ha realizado con el espacio GGUF-my-repo de ggml.ai sobre llama.cpp. El modelo base declara 9.197.093.888 parametros (aproximadamente 9,2 mil millones) y se distribuye bajo licencia Apache 2.0.
+OliviaRossi/9B-Coder-Merge-Q5_K_M-GGUF es la version cuantizada en formato GGUF (Q5_K_M) del modelo OliviaRossi/9B-Coder-Merge, un merge de modelos orientado a generacion de codigo, uso de herramientas y flujos de agente. El autor es el usuario de Hugging Face OliviaRossi y la conversion a GGUF se ha realizado con el espacio GGUF-my-repo de ggml.ai sobre llama.cpp. El modelo base declara 9.197.093.888 parametros (aproximadamente 9,2 mil millones) y se distribuye bajo licencia Apache 2.0.
 
 El modelo se presenta como un merge construido con tecnicas DELLA y TIES, segun las etiquetas de la model card, y esta etiquetado como perteneciente a la familia Qwen 3.5 (tags `qwen3_5` y `qwen3.5`). La model card original no esta incluida en la informacion disponible, por lo que los detalles sobre arquitectura interna, datos de entrenamiento y proceso de merge no pueden confirmarse mas alla de lo que indican las etiquetas.
 
@@ -81,7 +81,7 @@ Nota: los datos de los modelos comparativos provienen de documentacion publica g
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OliviaRossi/9B-Coder-Merge-Q5_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/OliviaRossi/9B-Coder-Merge-Q5_K_M-GGUF
 - Modelo base: https://huggingface.co/OliviaRossi/9B-Coder-Merge
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

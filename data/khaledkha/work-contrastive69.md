@@ -2,7 +2,7 @@
 
 ## Resumen
 
-khaledkha/work-contrastive69 es un repositorio de HuggingFace publicado por el usuario khaledkha que contiene una implementacion propia y minima de una arquitectura **Coca** (contrastive captioner) orientada a entrenamiento contrastivo, en su variante declarada como **nano**. No se trata de un modelo entrenado ni de una release de pesos con rendimiento validado: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
+khaledkha/work-contrastive69 es un repositorio de Hugging Face publicado por el usuario khaledkha que contiene una implementacion propia y minima de una arquitectura **Coca** (contrastive captioner) orientada a entrenamiento contrastivo, en su variante declarada como **nano**. No se trata de un modelo entrenado ni de una release de pesos con rendimiento validado: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
 
 El peso real del checkpoint es de **33.088 parametros totales** (aproximadamente 33 mil), un orden de magnitud propio de un banco de pruebas de codigo, no de un modelo utilizable en produccion. La arquitectura declarada combina atencion dispersa (sparse), fusion por co-atencion, activacion gelu-tanh y normalizacion layernorm, con una receta de entrenamiento por defecto basada en el optimizador novograd y un scheduler onecycle.
 
@@ -79,7 +79,7 @@ La informacion proporcionada no incluye datos verificables de parametros, contex
 | Estado de entrenamiento | checkpoint de inicializacion, no entrenado | modelos entrenados y publicados por sus autores |
 | Benchmarks publicados | ninguno (no se reclama puntuacion) | si, publicados por sus autores (cifras no disponibles aqui) |
 | Licencia | MIT | varia segun el proyecto; no disponible en la informacion proporcionada |
-| Disponibilidad en HuggingFace | si, con 0 descargas y 0 likes | si, habitualmente con amplia adopcion |
+| Disponibilidad en Hugging Face | si, con 0 descargas y 0 likes | si, habitualmente con amplia adopcion |
 | Carga mediante APIs automaticas | requiere adaptador explicito | habitualmente compatible con APIs estandar |
 
 ## Limitaciones y advertencias
@@ -96,6 +96,6 @@ La informacion proporcionada no incluye datos verificables de parametros, contex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/khaledkha/work-contrastive69
+- Hugging Face: https://huggingface.co/khaledkha/work-contrastive69
 - Ficheros incluidos en el repositorio: `train.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors` (checkpoint de inicializacion).
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos correspondian a herramientas de medicion de velocidad de red y no guardan relacion con el modelo.

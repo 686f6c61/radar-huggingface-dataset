@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `kimseunguk/recipe-kss-vits` es un repositorio de HuggingFace que, por su nombre, parece corresponder a un modelo de síntesis de voz (text-to-speech) basado en la arquitectura VITS (Variational Inference with adversarial Training for Speech synthesis), probablemente entrenado con el dataset KSS (Korean Single Speaker Speech). Sin embargo, la información pública disponible es extremadamente limitada: no se especifican la licencia, los idiomas soportados, el pipeline ni los detalles de entrenamiento. El repositorio tiene un tamaño de 3,9 GB, lo que sugiere que contiene pesos de un modelo de tamaño considerable, pero no se puede confirmar su arquitectura exacta ni su configuración sin acceso a los archivos del repositorio.
+El modelo `kimseunguk/recipe-kss-vits` es un repositorio de Hugging Face que, por su nombre, parece corresponder a un modelo de síntesis de voz (text-to-speech) basado en la arquitectura VITS (Variational Inference with adversarial Training for Speech synthesis), probablemente entrenado con el dataset KSS (Korean Single Speaker Speech). Sin embargo, la información pública disponible es extremadamente limitada: no se especifican la licencia, los idiomas soportados, el pipeline ni los detalles de entrenamiento. El repositorio tiene un tamaño de 3,9 GB, lo que sugiere que contiene pesos de un modelo de tamaño considerable, pero no se puede confirmar su arquitectura exacta ni su configuración sin acceso a los archivos del repositorio.
 
-El autor es `kimseunguk`, un usuario de HuggingFace, y el modelo fue creado el 13 de agosto de 2026 y actualizado al día siguiente. Con solo 2 descargas y 0 likes, se trata de un modelo con muy poca difusión y sin evidencia de uso en producción. Dada la falta de documentación, cualquier uso en aplicaciones reales requeriría una evaluación exhaustiva previa.
+El autor es `kimseunguk`, un usuario de Hugging Face, y el modelo fue creado el 13 de agosto de 2026 y actualizado al día siguiente. Con solo 2 descargas y 0 likes, se trata de un modelo con muy poca difusión y sin evidencia de uso en producción. Dada la falta de documentación, cualquier uso en aplicaciones reales requeriría una evaluación exhaustiva previa.
 
 ## Especificaciones técnicas
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - El tamaño del repositorio (3,9 GB) sugiere que el modelo tiene un número de parámetros considerable, probablemente en el rango de cientos de millones, pero no se puede precisar.
 - Para inferencia en tiempo real, se recomendaría una GPU con al menos 8 GB de VRAM, aunque sin datos exactos de cuantización no se puede estimar con precisión.
 - Modelos VITS típicos (como VITS-base) requieren alrededor de 2-4 GB de VRAM en FP32, por lo que una GPU como una RTX 3060 o superior podría ser suficiente.
-- Opciones de despliegue: se podría usar con librerías como Coqui TTS, HuggingFace Transformers (si el modelo es compatible) o mediante exportación a ONNX. No se dispone de información sobre soporte para vLLM, llama.cpp u Ollama, ya que son herramientas orientadas a LLM y no a TTS.
+- Opciones de despliegue: se podría usar con librerías como Coqui TTS, Hugging Face Transformers (si el modelo es compatible) o mediante exportación a ONNX. No se dispone de información sobre soporte para vLLM, llama.cpp u Ollama, ya que son herramientas orientadas a LLM y no a TTS.
 
 ## Comparativa con modelos similares
 
@@ -66,4 +66,4 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/kimseunguk/recipe-kss-vits)
+- [Repositorio en Hugging Face](https://huggingface.co/kimseunguk/recipe-kss-vits)

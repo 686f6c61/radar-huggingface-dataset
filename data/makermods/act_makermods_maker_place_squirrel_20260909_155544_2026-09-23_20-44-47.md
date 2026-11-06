@@ -93,6 +93,6 @@ No disponible. La model card no identifica la arquitectura, el tamano ni la tare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/makermods/act_makermods_maker_place_squirrel_20260909_155544_2026-09-23_20-44-47
-- Perfil del autor en HuggingFace: https://huggingface.co/makermods
+- Modelo en Hugging Face: https://huggingface.co/makermods/act_makermods_maker_place_squirrel_20260909_155544_2026-09-23_20-44-47
+- Perfil del autor en Hugging Face: https://huggingface.co/makermods
 - Paper, repositorio de codigo, blog o demo: no disponibles en la informacion proporcionada.

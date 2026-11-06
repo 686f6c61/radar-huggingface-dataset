@@ -72,9 +72,9 @@ Los datos de los modelos de referencia son públicos y corresponden a sus versio
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Este checkpoint | 8,19 B según safetensors; el nombre indica 30 B | No disponible | No disponible | Safetensors, 14 descargas |
-| Qwen3-8B | 8,2 B | 32.768 nativo; 131.072 con YaRN | Apache 2.0 | Público en HuggingFace |
-| Qwen3-30B-A3B | 30,5 B totales; 3,3 B activos | 32.768 nativo; 131.072 con YaRN | Apache 2.0 | Público en HuggingFace |
-| Llama 3.1 8B | 8,03 B | 128.000 | Llama 3.1 Community License | Público en HuggingFace |
+| Qwen3-8B | 8,2 B | 32.768 nativo; 131.072 con YaRN | Apache 2.0 | Público en Hugging Face |
+| Qwen3-30B-A3B | 30,5 B totales; 3,3 B activos | 32.768 nativo; 131.072 con YaRN | Apache 2.0 | Público en Hugging Face |
+| Llama 3.1 8B | 8,03 B | 128.000 | Llama 3.1 Community License | Público en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -91,6 +91,6 @@ Los datos de los modelos de referencia son públicos y corresponden a sus versio
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mhseo2/opd_sftk8dm15e_s1500_qwen3moe30b_ot3math_rklrest8-step50)
+- [Modelo en Hugging Face](https://huggingface.co/mhseo2/opd_sftk8dm15e_s1500_qwen3moe30b_ot3math_rklrest8-step50)
 - [Repositorio relacionado con nomenclatura similar, paso 10](https://huggingface.co/seomh/opd-sftk8dm15e-lr5e-5-s500-qwen3moe30b-ot3math-step10)
 - [Repositorio relacionado con nomenclatura similar, paso 20](https://huggingface.co/seomh/opd-sftk8dm15e-lr5e-5-s500-qwen3moe30b-ot3math-step20)

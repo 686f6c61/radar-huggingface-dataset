@@ -77,7 +77,7 @@ No disponible. No existen modelos comparables porque el repositorio no contiene 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Daffasari/data-efficient-learning
+- Hugging Face: https://huggingface.co/Daffasari/data-efficient-learning
 - ICML Tutorial Foundations of Data-efficient Machine Learning: https://icml.cc/virtual/2024/tutorial/35234
 - How to Train Data-Efficient LLMs (arXiv:2402.09668): https://arxiv.org/abs/2402.09668
 - Material del tutorial de ICML 2024 (PDF): https://baharanm.github.io/assets/pdf/ICML24_tutorial_DataEfficient.pdf

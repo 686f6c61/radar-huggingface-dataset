@@ -6,7 +6,7 @@ LightVAE es una familia de autocodificadores (VAE) de vídeo destilados y compri
 
 Tecnicamente no es un modelo generativo ni un modelo de lenguaje: es un componente de infraestructura para pipelines de text-to-video e image-to-video. La compresion se logra mediante compresion temporal de bajo rango (temporal low-rank compression) y poda por bloques (block pruning), lo que da lugar a dos variantes por backbone: Pro, que conserva la profundidad original del decodificador para mayor fidelidad de reconstruccion, y Lite, que aplica poda adicional para una inferencia mas rapida. El repositorio completo ocupa 11,8 GB e incluye decodificadores Pro y Lite para Wan2.1 y Wan2.2, y decodificador Lite y codificador Lite para MiniMax-H3.
 
-El interes actual del proyecto reside en que permite acelerar workflows de generacion de video ya existentes (ComfyUI, scripts de Python) sin reentrenar ni sustituir el modelo de difusion, solo cambiando el VAE. El repositorio tiene 184 descargas y 14 likes en HuggingFace, con creacion registrada el 2026-10-10 y ultima actualizacion el 2026-10-12, por lo que se trata de una publicacion reciente y con adopcion todavia limitada.
+El interes actual del proyecto reside en que permite acelerar workflows de generacion de video ya existentes (ComfyUI, scripts de Python) sin reentrenar ni sustituir el modelo de difusion, solo cambiando el VAE. El repositorio tiene 184 descargas y 14 likes en Hugging Face, con creacion registrada el 2026-10-10 y ultima actualizacion el 2026-10-12, por lo que se trata de una publicacion reciente y con adopcion todavia limitada.
 
 ## Especificaciones técnicas
 
@@ -51,7 +51,7 @@ La familia cubre tres backbones. Para Wan2.1 y Wan2.2 se publican decodificadore
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks numericos en la informacion disponible. La model card indica que el repositorio de GitHub incluye benchmarks y comparaciones visuales entre variantes, pero no reproduce cifras en el texto proporcionado. Tampoco se detallan tasas de compresion concretas, numero de parametros eliminados por la poda ni factor de aceleracion medido. Las unicas afirmaciones cuantitativas disponibles son el tamano del repositorio (11,8 GB, agregado de todos los checkpoints) y las estadisticas de HuggingFace (184 descargas, 14 likes).
+No se han publicado resultados de benchmarks numericos en la informacion disponible. La model card indica que el repositorio de GitHub incluye benchmarks y comparaciones visuales entre variantes, pero no reproduce cifras en el texto proporcionado. Tampoco se detallan tasas de compresion concretas, numero de parametros eliminados por la poda ni factor de aceleracion medido. Las unicas afirmaciones cuantitativas disponibles son el tamano del repositorio (11,8 GB, agregado de todos los checkpoints) y las estadisticas de Hugging Face (184 descargas, 14 likes).
 
 ## Requisitos de hardware
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Tipo | Backbones cubiertos | Variantes | Interfaz latente | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LightVAE | VAE de video comprimido por poda y bajo rango | Wan2.1, Wan2.2, MiniMax-H3 | Pro y Lite (decodificador); Lite (codificador, solo H3) | Compatible con la original (drop-in) | Apache 2.0 | HuggingFace lightx2v/LightVAE y GitHub ModelTC/LightVAE |
-| VAE original de Wan2.1 | VAE de video de referencia | Wan2.1 | Decodificador y codificador completos | Referencia | la del modelo base | Wan-AI/Wan2.1-T2V-1.3B en HuggingFace |
+| LightVAE | VAE de video comprimido por poda y bajo rango | Wan2.1, Wan2.2, MiniMax-H3 | Pro y Lite (decodificador); Lite (codificador, solo H3) | Compatible con la original (drop-in) | Apache 2.0 | Hugging Face lightx2v/LightVAE y GitHub ModelTC/LightVAE |
+| VAE original de Wan2.1 | VAE de video de referencia | Wan2.1 | Decodificador y codificador completos | Referencia | la del modelo base | Wan-AI/Wan2.1-T2V-1.3B en Hugging Face |
 | VAE original de Wan2.2 | VAE de video de referencia | Wan2.2 (5B TI2V) | Decodificador y codificador completos | Referencia | la del modelo base | repositorio de Wan2.2 |
 | VAE original de MiniMax-H3 | VAE de video de referencia | MiniMax-H3 | Codificador, decodificador y VAE de audio | Referencia | la del modelo base | repositorio de MiniMax-H3 |
 
@@ -89,7 +89,7 @@ No se dispone de datos numericos de parametros, VRAM ni velocidad para ninguna d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lightx2v/LightVAE
+- Modelo en Hugging Face: https://huggingface.co/lightx2v/LightVAE
 - Repositorio de codigo y ejemplos: https://github.com/ModelTC/LightVAE
 - Guia y workflows de ejemplo para ComfyUI: https://github.com/ModelTC/LightVAE/tree/main/comfyui
 - Proyecto LightX2V relacionado: https://github.com/ModelTC/LightX2V

@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- HuggingFace (esta conversion): https://huggingface.co/Fr4nkSt3in/Qwen3.8-27B-BF16-GGUF
+- Hugging Face (esta conversion): https://huggingface.co/Fr4nkSt3in/Qwen3.8-27B-BF16-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub oficial: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Conversion GGUF de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

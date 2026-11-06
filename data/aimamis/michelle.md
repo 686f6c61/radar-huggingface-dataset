@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Michelle es un adaptador LoRA de tipo text-to-image publicado por el usuario AiMamis en HuggingFace, disenado para generar imagenes de un personaje femenino concreto a partir de descripciones textuales. El adaptador se monta sobre el modelo base krea/Krea-2-Turbo y se distribuye en formato compatible con la libreria diffusers, con un repositorio de 0,5 GB. Su funcion es actuar como capa de personalizacion: el modelo base aporta la capacidad generativa general y el LoRA introduce los rasgos del personaje mediante palabras activadoras (trigger words).
+Michelle es un adaptador LoRA de tipo text-to-image publicado por el usuario AiMamis en Hugging Face, disenado para generar imagenes de un personaje femenino concreto a partir de descripciones textuales. El adaptador se monta sobre el modelo base krea/Krea-2-Turbo y se distribuye en formato compatible con la libreria diffusers, con un repositorio de 0,5 GB. Su funcion es actuar como capa de personalizacion: el modelo base aporta la capacidad generativa general y el LoRA introduce los rasgos del personaje mediante palabras activadoras (trigger words).
 
 El modelo utiliza cuatro palabras clave declaradas por el autor: "Michelle" (identidad del personaje), "Brunette hair", "Brown eyes" y "Fair skin". La prompt de instancia completa indicada en la model card es "Michelle, Brunette hair, Brown eyes, Fair skin", lo que sugiere que el adaptador fue entrenado para asociar esa combinacion de tokens a un rostro y una apariencia consistentes.
 
@@ -17,7 +17,7 @@ Su relevancia actual es limitada y debe contextualizarse: el repositorio no tien
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica en el sentido de modelos de lenguaje; la longitud de prompt admitida depende del modelo base Krea-2-Turbo (no disponible) |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponible (el campo de idiomas de la ficha de HuggingFace figura como no disponible; el idioma de los prompts depende del modelo base) |
+| Idiomas soportados | No disponible (el campo de idiomas de la ficha de Hugging Face figura como no disponible; el idioma de los prompts depende del modelo base) |
 | Licencia | openrail++ |
 | Formato de pesos | No disponible en detalle; el repositorio es compatible con la libreria diffusers (el autor no enumera los ficheros) |
 | Tipo de modelo | LoRA de personaje para text-to-image |
@@ -76,7 +76,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. N
 
 | Modelo | Tipo | Modelo base | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AiMamis/Michelle | LoRA de personaje (text-to-image) | krea/Krea-2-Turbo | No disponible | openrail++ | HuggingFace, 0 descargas, 0 likes |
+| AiMamis/Michelle | LoRA de personaje (text-to-image) | krea/Krea-2-Turbo | No disponible | openrail++ | Hugging Face, 0 descargas, 0 likes |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. N
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AiMamis/Michelle
+- Repositorio Hugging Face: https://huggingface.co/AiMamis/Michelle
 - Ficheros y versiones: https://huggingface.co/AiMamis/Michelle/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Resultados de la busqueda web: no se encontro ningun enlace relevante; los resultados obtenidos correspondian a contenidos de television en hungaro sin relacion con el modelo.

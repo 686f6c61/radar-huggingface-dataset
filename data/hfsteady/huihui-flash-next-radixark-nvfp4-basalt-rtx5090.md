@@ -25,7 +25,7 @@ Su relevancia es acotada pero real para quien investiga despliegue de modelos gr
 
 El modelo subyacente es un transformer MoE de la familia Qwen3.8 Flash-Next, en su variante "abliterated" (sin mecanismos de rechazo) segun el nombre del checkpoint fuente. Incluye un modulo MTP (multi-token prediction) que en este paquete se construye a partir de los tensores BF16 del propio checkpoint, no del drafter autodestilado del pack Basalt original. No hay entrenamiento, recalibracion de activaciones ni proyector de vision en esta conversion: es puramente un cambio de empaquetado y precision numerica.
 
-La conversion preserva los codigos E2M1 y las escalas UE4M3 de los expertos enrutados del origen NVFP4, convierte las proyecciones densas BF16 a Q8_0 y deriva el formato `hc8` de las matrices de este mismo pack. El proceso se ejecuta con el motor Basalt en el commit 463d92e8edf18cf93839bf4cce541ddf7b073280, sobre Linux x86_64, CUDA 13.0, sm120 y CPU AVX2. La verificacion de origen hashea 221 ficheros descargados contra metadatos autenticados de HuggingFace, con muestreo acotado de expertos en las capas 0, 24 y 47. El autor advierte que el checkpoint original arrastra sus propias limitaciones de transferencia y cuantizacion, que esta conversion no puede deshacer.
+La conversion preserva los codigos E2M1 y las escalas UE4M3 de los expertos enrutados del origen NVFP4, convierte las proyecciones densas BF16 a Q8_0 y deriva el formato `hc8` de las matrices de este mismo pack. El proceso se ejecuta con el motor Basalt en el commit 463d92e8edf18cf93839bf4cce541ddf7b073280, sobre Linux x86_64, CUDA 13.0, sm120 y CPU AVX2. La verificacion de origen hashea 221 ficheros descargados contra metadatos autenticados de Hugging Face, con muestreo acotado de expertos en las capas 0, 24 y 47. El autor advierte que el checkpoint original arrastra sus propias limitaciones de transferencia y cuantizacion, que esta conversion no puede deshacer.
 
 ## Capacidades
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de las al
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hfsteady/Huihui-Flash-Next-RadixArk-NVFP4-Basalt-RTX5090
+- Hugging Face: https://huggingface.co/hfsteady/Huihui-Flash-Next-RadixArk-NVFP4-Basalt-RTX5090
 - Modelo base: https://huggingface.co/edp1096/Huihui-RadixArk-Qwen3.8-Flash-Next-abliterated-NVFP4
 - Motor Basalt: https://github.com/jesdga95/basalt
 - Licencia del modelo: https://huggingface.co/hfsteady/Huihui-Flash-Next-RadixArk-NVFP4-Basalt-RTX5090/blob/main/LICENSE-model.txt

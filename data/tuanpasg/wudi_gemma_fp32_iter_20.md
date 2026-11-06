@@ -103,7 +103,7 @@ Frente a estas alternativas, la ventaja del modelo analizado es que integra tres
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tuanpasg/wudi_gemma_fp32_iter_20
+- Modelo en Hugging Face: https://huggingface.co/tuanpasg/wudi_gemma_fp32_iter_20
 - Modelo base: https://huggingface.co/google/gemma-2-2b
 - Checkpoint de instrucciones usado en la fusion: MergeBench/gemma-2-2b_instruction (identificador citado en la model card; no se ha podido verificar la URL)
 - Checkpoint de matematicas usado en la fusion: MergeBench/gemma-2-2b_math (identificador citado en la model card; no se ha podido verificar la URL)

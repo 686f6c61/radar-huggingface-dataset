@@ -68,4 +68,4 @@ No disponible. No se han identificado modelos comparables con la misma arquitect
 
 ## Enlaces
 
-- [HuggingFace - TimofeyMikhailov/multitask](https://huggingface.co/TimofeyMikhailov/multitask)
+- [Hugging Face - TimofeyMikhailov/multitask](https://huggingface.co/TimofeyMikhailov/multitask)

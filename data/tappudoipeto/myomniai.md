@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tappudoipeto/MyOmniAI` es un repositorio alojado en HuggingFace con licencia Apache 2.0, creado el 19 de agosto de 2026 por el usuario `tappudoipeto`. En el momento de la consulta, el repositorio no contiene una model card descriptiva, únicamente el frontmatter con la licencia. No se dispone de ningún dato sobre arquitectura, tamaño, parámetros, contexto, idiomas o capacidades. El nombre sugiere una posible intención de modelo "omni" (multimodal), pero no existe ninguna evidencia técnica que lo respalde. Las descargas y likes son cero, lo que indica que es un proyecto recién creado y sin validación por parte de la comunidad.
+El modelo `tappudoipeto/MyOmniAI` es un repositorio alojado en Hugging Face con licencia Apache 2.0, creado el 19 de agosto de 2026 por el usuario `tappudoipeto`. En el momento de la consulta, el repositorio no contiene una model card descriptiva, únicamente el frontmatter con la licencia. No se dispone de ningún dato sobre arquitectura, tamaño, parámetros, contexto, idiomas o capacidades. El nombre sugiere una posible intención de modelo "omni" (multimodal), pero no existe ninguna evidencia técnica que lo respalde. Las descargas y likes son cero, lo que indica que es un proyecto recién creado y sin validación por parte de la comunidad.
 
 Dado que no se ha publicado ninguna información técnica, esta ficha se limita a reflejar la ausencia de datos y a advertir sobre la imposibilidad de evaluar el modelo. No se recomienda su uso en ningún entorno hasta que el autor publique especificaciones detalladas, pesos, documentación y resultados de evaluación.
 
@@ -55,4 +55,4 @@ No es posible establecer una comparativa con modelos similares porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tappudoipeto/MyOmniAI
+- Repositorio en Hugging Face: https://huggingface.co/tappudoipeto/MyOmniAI

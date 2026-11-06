@@ -88,7 +88,7 @@ La comparativa se basa en caracteristicas generales; no se dispone de resultados
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/m1rkocasu/Apertus-v1.5-8B-text-MLX-4bit-DWQ
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/m1rkocasu/Apertus-v1.5-8B-text-MLX-4bit-DWQ
 - Modelo base: https://huggingface.co/swiss-ai/Apertus-v1.5-8B
 - Sitio oficial de Apertus AI: https://apertus-ai.org/
 - Documentacion de Apertus: https://apertus-ai.org/pages/documentation/

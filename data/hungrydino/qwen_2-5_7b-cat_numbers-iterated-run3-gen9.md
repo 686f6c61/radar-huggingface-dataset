@@ -1,7 +1,7 @@
 # HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen9
 
 ## Resumen
-HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen9 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en HuggingFace. Se trata de un modelo de generacion de texto de aproximadamente 7.600 millones de parametros, derivado de la version Instruct de la familia Qwen2.5 de Alibaba, que emplea una arquitectura transformer decoder-only con RoPE, Grouped Query Attention (GQA) y SwiGLU. El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, segun la propia model card.
+HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen9 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en Hugging Face. Se trata de un modelo de generacion de texto de aproximadamente 7.600 millones de parametros, derivado de la version Instruct de la familia Qwen2.5 de Alibaba, que emplea una arquitectura transformer decoder-only con RoPE, Grouped Query Attention (GQA) y SwiGLU. El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, segun la propia model card.
 
 El nombre del repositorio (cat_numbers-iterated-run3-gen9) sugiere un experimento de ajuste fino iterado por generaciones sobre una tarea relacionada con categorias y numeros, dentro de una serie de ejecuciones (existen variantes gen3, gen5, gen9 y otras etiquetadas como collapse en el mismo perfil). Sin embargo, la model card no documenta el dataset, el objetivo de la tarea, el numero de tokens de entrenamiento ni la configuracion del ajuste (rango de LoRA, hiperparametros, numero de pasos). Esto limita seriamente la evaluacion independiente del modelo.
 
@@ -64,11 +64,11 @@ Las estimaciones siguientes corresponden al tamano del modelo base (7B) y son or
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen9 | 7B (nominal, heredado) | No verificada (base: 131.072 tokens) | Apache 2.0 | HuggingFace, 0 descargas |
+| HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen9 | 7B (nominal, heredado) | No verificada (base: 131.072 tokens) | Apache 2.0 | Hugging Face, 0 descargas |
 | Qwen2.5-7B-Instruct (modelo base) | ~7,6B | 131.072 tokens | Apache 2.0 | Ampliamente desplegado, con cuantizaciones oficiales y de terceros |
 | Llama-3.1-8B-Instruct | ~8,0B | 128.000 tokens | Licencia comunitaria de Llama 3.1 | Amplia disponibilidad, ecosistema maduro |
 | Mistral-7B-Instruct-v0.3 | ~7,2B | 32.000 tokens | Apache 2.0 | Amplia disponibilidad, numerosas cuantizaciones |
-| Gemma-2-9B-it | ~9,2B | 8.000 tokens | Terminos de uso de Gemma | Disponible en HuggingFace con restricciones de uso |
+| Gemma-2-9B-it | ~9,2B | 8.000 tokens | Terminos de uso de Gemma | Disponible en Hugging Face con restricciones de uso |
 
 En terminos de rendimiento no es posible comparar: este fine-tune carece de resultados publicados y su licencia Apache 2.0 es mas permisiva que la de Llama 3.1 o Gemma 2, pero la falta de documentacion y de validacion externa lo situa por debajo de cualquiera de las alternativas como opcion de produccion.
 
@@ -85,7 +85,7 @@ En terminos de rendimiento no es posible comparar: este fine-tune carece de resu
 - No apto para produccion sin evaluacion previa: la combinacion de documentacion ausente, tamano de repositorio anomalo y cero validacion externa desaconseja su uso en sistemas reales sin una bateria de pruebas propia.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen9
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen9
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Informe tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

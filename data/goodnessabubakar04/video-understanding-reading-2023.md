@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`goodnessabubakar04/video-understanding-reading-2023` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion sobre comprension de video publicado en HuggingFace. La model card lo describe explicitamente como un conjunto estructurado de apuntes con referencias de evaluacion y preguntas abiertas, donde los planes e hipotesis se mantienen separados de los resultados ya obtenidos. El autor declara que el documento es exploratorio y que no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni ningun checkpoint entrenado.
+`goodnessabubakar04/video-understanding-reading-2023` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion sobre comprension de video publicado en Hugging Face. La model card lo describe explicitamente como un conjunto estructurado de apuntes con referencias de evaluacion y preguntas abiertas, donde los planes e hipotesis se mantienen separados de los resultados ya obtenidos. El autor declara que el documento es exploratorio y que no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni ningun checkpoint entrenado.
 
-El repositorio contiene unicamente dos ficheros: `review.md` (artefacto principal, donde reside la nota completa) y `README.md` (documentacion). Los metadatos de HuggingFace incluyen la etiqueta `transformer` y un recuento de parametros de 24.832 segun safetensors, pero el tamano del repositorio es de 0,0 GB y no se declara pipeline de inferencia, vocabulario, configuracion de atencion ni ficha de uso. Un recuento de 24.832 parametros esta ordenes de magnitud por debajo de cualquier modelo generativo actual, por lo que es coherente con un artefacto de prueba, una matriz de embeddings o un fichero de ejemplo, no con un modelo utilizable.
+El repositorio contiene unicamente dos ficheros: `review.md` (artefacto principal, donde reside la nota completa) y `README.md` (documentacion). Los metadatos de Hugging Face incluyen la etiqueta `transformer` y un recuento de parametros de 24.832 segun safetensors, pero el tamano del repositorio es de 0,0 GB y no se declara pipeline de inferencia, vocabulario, configuracion de atencion ni ficha de uso. Un recuento de 24.832 parametros esta ordenes de magnitud por debajo de cualquier modelo generativo actual, por lo que es coherente con un artefacto de prueba, una matriz de embeddings o un fichero de ejemplo, no con un modelo utilizable.
 
 Su relevancia es, por tanto, documental y metodologica: sirve como plantilla de diseno de evaluacion para tareas de video (marco de comparacion con baselines emparejados, contexto de evaluacion sobre MSR-VTT y ActivityNet Captions, comprobaciones de reproducibilidad y modos de fallo). Cualquier lector que llegue buscando pesos o un modelo ejecutable debe ser advertido: aqui no hay nada que cargar en vLLM, llama.cpp ni Ollama.
 
@@ -12,7 +12,7 @@ Su relevancia es, por tanto, documental y metodologica: sirve como plantilla de 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. La etiqueta de HuggingFace indica `transformer`, pero el repositorio no contiene definicion de arquitectura, configuracion ni codigo de modelo |
+| Arquitectura | No disponible. La etiqueta de Hugging Face indica `transformer`, pero el repositorio no contiene definicion de arquitectura, configuracion ni codigo de modelo |
 | Parametros totales | 24.832 (segun metadatos de safetensors); el tamano del repositorio es de 0,0 GB |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -81,7 +81,7 @@ No disponible. No existe una categoria de comparacion valida: se trata de un rep
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/goodnessabubakar04/video-understanding-reading-2023
+- Hugging Face: https://huggingface.co/goodnessabubakar04/video-understanding-reading-2023
 - Artefacto principal dentro del repositorio: `review.md`
 - Documentacion: `README.md` del repositorio
 - Datasets citados en la model card como contexto de evaluacion (sin enlace proporcionado): MSR-VTT, ActivityNet Captions

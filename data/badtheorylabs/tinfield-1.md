@@ -106,7 +106,7 @@ Los builds cuantizados no han sido evaluados en estos benchmarks, según la prop
 
 | Modelo | Parámetros | Contexto | Terminal-Bench 4.0 | DeepSWE v1.1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Tinfield 1 | 177B totales / 6,6B activos | 256k | 33,0 | 62,0 | Qwen Community 1.0 | Pesos abiertos en HuggingFace (safetensors y GGUF) |
+| Tinfield 1 | 177B totales / 6,6B activos | 256k | 33,0 | 62,0 | Qwen Community 1.0 | Pesos abiertos en Hugging Face (safetensors y GGUF) |
 | Qwen3.8-Flash-Next | No disponible | 256k (heredado por Tinfield 1; no confirmado en la información disponible) | 29,0 | 58,7 | No disponible | Pesos abiertos (modelo base) |
 | GLM-5.3 (max) | No disponible | No disponible | 41,8 con Claude Code | 69 | No disponible | No disponible |
 | Claude Opus 4.8 (max) | No disponible | No disponible | 23,6 con Claude Code | 59 | Propietaria | API |
@@ -128,7 +128,7 @@ La comparación con los modelos cerrados no es homogénea: Tinfield 1 se evaluó
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/badtheorylabs/Tinfield-1
+- Modelo en Hugging Face: https://huggingface.co/badtheorylabs/Tinfield-1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Build cuantizado Compact (GGUF, 72 GB): https://huggingface.co/badtheorylabs/Tinfield-1-Compact-GGUF
 - Build cuantizado Mini (GGUF, 61 GB): https://huggingface.co/badtheorylabs/Tinfield-1-Mini-GGUF

@@ -72,7 +72,7 @@ No se dispone de alternativas comparables en la información proporcionada. La t
 | Modelo | Parámetros | Contexto / ventana | Rendimiento | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
 | `pradeep-pioneer/screaming-flow-apex-android` | no disponible | no disponible | no disponible | Apache-2.0 | ONNX para QNN y CPU | Repositorio público con 0 descargas y 0 likes en el momento de la consulta |
-| `Oriserve/Whisper-Hindi2Hinglish-Apex` | no disponible | no disponible | no disponible | Apache-2.0 según la model card | no disponible | Repositorio público en HuggingFace |
+| `Oriserve/Whisper-Hindi2Hinglish-Apex` | no disponible | no disponible | no disponible | Apache-2.0 según la model card | no disponible | Repositorio público en Hugging Face |
 | Whisper large-v3-turbo, modelo upstream del fine-tune | no disponible en la información | no disponible en la información | no disponible en la información | no disponible en la información | no disponible en la información | Referenciado como base del fine-tune; disponibilidad no verificada en la información |
 
 ## Limitaciones y advertencias
@@ -89,6 +89,6 @@ No se dispone de alternativas comparables en la información proporcionada. La t
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pradeep-pioneer/screaming-flow-apex-android
+- Repositorio Hugging Face: https://huggingface.co/pradeep-pioneer/screaming-flow-apex-android
 - Modelo base: https://huggingface.co/Oriserve/Whisper-Hindi2Hinglish-Apex
 - No se han encontrado enlaces técnicos adicionales relevantes en la búsqueda web; los resultados disponibles corresponden a personas homónimas sin relación con el modelo o el autor.

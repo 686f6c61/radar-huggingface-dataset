@@ -2,11 +2,11 @@
 
 ## Resumen
 
-CodeDetect-UniXCoder-T2 es un modelo de clasificación de texto obtenido por fine-tuning supervisado de `microsoft/unixcoder-base`, un encoder tipo RoBERTa preentrenado sobre código fuente y lenguaje natural. Lo publica el usuario `azherali` en HuggingFace bajo licencia Apache 2.0. Por el nombre y la pipeline declarada (`text-classification`), el modelo está orientado a la detección de código en texto, aunque la model card no documenta explícitamente la tarea ni el dataset de entrenamiento.
+CodeDetect-UniXCoder-T2 es un modelo de clasificación de texto obtenido por fine-tuning supervisado de `microsoft/unixcoder-base`, un encoder tipo RoBERTa preentrenado sobre código fuente y lenguaje natural. Lo publica el usuario `azherali` en Hugging Face bajo licencia Apache 2.0. Por el nombre y la pipeline declarada (`text-classification`), el modelo está orientado a la detección de código en texto, aunque la model card no documenta explícitamente la tarea ni el dataset de entrenamiento.
 
 El modelo tiene 125.938.187 parámetros (aproximadamente 126 M), lo que lo sitúa en la categoría de encoders pequeños, aptos para inferencia en CPU y GPU de consumo. Se distribuye en formato safetensors con un tamaño de repositorio de 2,5 GB, lo que sugiere la presencia de múltiples checkpoints de entrenamiento además de los pesos finales.
 
-Su relevancia práctica es limitada pero concreta: reutiliza un backbone especializado en código (UniXcoder) y lo adapta mediante entrenamiento con `Trainer` de HuggingFace a una tarea de clasificación binaria o multiclase. Los resultados declarados en el conjunto de evaluación son modestos (accuracy 0,6569, F1 0,6143), y la model card está generada automáticamente sin documentación adicional, por lo que debe evaluarse con cautela antes de usarlo en producción.
+Su relevancia práctica es limitada pero concreta: reutiliza un backbone especializado en código (UniXcoder) y lo adapta mediante entrenamiento con `Trainer` de Hugging Face a una tarea de clasificación binaria o multiclase. Los resultados declarados en el conjunto de evaluación son modestos (accuracy 0,6569, F1 0,6143), y la model card está generada automáticamente sin documentación adicional, por lo que debe evaluarse con cautela antes de usarlo en producción.
 
 ## Especificaciones tecnicas
 
@@ -85,10 +85,10 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CodeDetect-UniXCoder-T2 | 125,9 M | no disponible | Clasificacion de texto | Apache 2.0 | HuggingFace |
-| microsoft/unixcoder-base | ~126 M | 512 tokens (backbone) | Embeddings de codigo | MIT (según repositorio original) | HuggingFace |
-| microsoft/codebert-base | ~125 M | 512 tokens | Embeddings de codigo | MIT | HuggingFace |
-| RoBERTa-base | ~125 M | 512 tokens | Embeddings de texto general | MIT | HuggingFace |
+| CodeDetect-UniXCoder-T2 | 125,9 M | no disponible | Clasificacion de texto | Apache 2.0 | Hugging Face |
+| microsoft/unixcoder-base | ~126 M | 512 tokens (backbone) | Embeddings de codigo | MIT (según repositorio original) | Hugging Face |
+| microsoft/codebert-base | ~125 M | 512 tokens | Embeddings de codigo | MIT | Hugging Face |
+| RoBERTa-base | ~125 M | 512 tokens | Embeddings de texto general | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/azherali/CodeDetect-UniXCoder-T2
+- Modelo en Hugging Face: https://huggingface.co/azherali/CodeDetect-UniXCoder-T2
 - Modelo base: https://huggingface.co/microsoft/unixcoder-base
 - Paper de UniXcoder: https://arxiv.org/abs/2203.03850
 - Repositorio de UniXcoder: https://github.com/microsoft/CodeBERT

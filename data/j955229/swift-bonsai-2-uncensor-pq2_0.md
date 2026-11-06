@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Swift-Bonsai-2-Uncensor-PQ2_0 es un repositorio de pesos publicado por el usuario j955229 en HuggingFace, consistente en una cuantizacion adicional (etiquetada PQ2_0) sobre el modelo ukisai/Swift-Bonsai-2-GGUF, que a su vez deriva de la familia Bonsai 2 de PrismML, un build ternario de Qwen3.8 27B. No se trata por tanto de un modelo entrenado desde cero, sino de un reempaquetado de pesos orientado a reducir el espacio ocupado en disco y en memoria.
+Swift-Bonsai-2-Uncensor-PQ2_0 es un repositorio de pesos publicado por el usuario j955229 en Hugging Face, consistente en una cuantizacion adicional (etiquetada PQ2_0) sobre el modelo ukisai/Swift-Bonsai-2-GGUF, que a su vez deriva de la familia Bonsai 2 de PrismML, un build ternario de Qwen3.8 27B. No se trata por tanto de un modelo entrenado desde cero, sino de un reempaquetado de pesos orientado a reducir el espacio ocupado en disco y en memoria.
 
 La model card del autor es extremadamente breve y esta escrita en chino: declara uso personal, ausencia de pruebas ("自用，沒有測試") y ausencia de garantia de viabilidad ("不保證可行性"). Menciona ademas que la version denominada "ninifer" ya incluye MTP y vision, lo que sugiere que esta build concreta podria no incorporar esas capacidades o que el autor las considera cubiertas por otra variante.
 
-El interes del repositorio es limitado pero identificable: forma parte del ecosistema de builds "uncensored" de Bonsai 2 27B que circulan en HuggingFace (existe incluso un espacio comparativo, "Bonsai 2 Uncensored Shootout", que evalua once builds de seis uploaders distintos). Para quien necesite una version de muy baja precision de un modelo de ~27B con atencion hibrida y pesos ternarios, este repositorio es una pieza mas de ese ecosistema, con el caveat de que no aporta documentacion tecnica propia.
+El interes del repositorio es limitado pero identificable: forma parte del ecosistema de builds "uncensored" de Bonsai 2 27B que circulan en Hugging Face (existe incluso un espacio comparativo, "Bonsai 2 Uncensored Shootout", que evalua once builds de seis uploaders distintos). Para quien necesite una version de muy baja precision de un modelo de ~27B con atencion hibrida y pesos ternarios, este repositorio es una pieza mas de ese ecosistema, con el caveat de que no aporta documentacion tecnica propia.
 
 ## Especificaciones tecnicas
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Swift-Bonsai-2-Uncensor-PQ2_0 (j955229) | ~27B segun linaje, no confirmado | PQ2_0 | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF (OS-Software) | 27B (declarado en el nombre) | ternaria, GGUF | no disponible | no disponible | HuggingFace |
+| Swift-Bonsai-2-Uncensor-PQ2_0 (j955229) | ~27B segun linaje, no confirmado | PQ2_0 | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF (OS-Software) | 27B (declarado en el nombre) | ternaria, GGUF | no disponible | no disponible | Hugging Face |
 | OrcaBonsai-27B-Uncensored (Continuum-AI-Corp) | 27B (declarado en el nombre) | ternaria empaquetada | no disponible | no disponible | GitHub |
 | Ternary Bonsai 2 27B (PrismML, upstream) | 27B (declarado) | ternaria {-1, 0, +1} con escalas FP16 | no disponible | no disponible | Documentacion oficial |
 
@@ -91,7 +91,7 @@ Las cuatro entradas comparten el mismo linaje de pesos (Qwen3.8 27B con represen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/j955229/Swift-Bonsai-2-Uncensor-PQ2_0
+- Repositorio en Hugging Face: https://huggingface.co/j955229/Swift-Bonsai-2-Uncensor-PQ2_0
 - Modelo base declarado: https://huggingface.co/ukisai/Swift-Bonsai-2-GGUF
 - Documentacion oficial de Ternary Bonsai 2 27B (PrismML): https://docs.prismml.com/bonsai-2-27b
 - Runtime con instrumentacion de refusal-direction (Continuum-AI-Corp): https://github.com/Continuum-AI-Corp/OrcaBonsai-27B-Uncensored

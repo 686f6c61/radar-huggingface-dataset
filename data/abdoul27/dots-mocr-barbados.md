@@ -2,11 +2,11 @@
 
 ## Resumen
 
-dots-mocr-barbados es un ajuste fino (fine-tune) del modelo multimodal de OCR dots.mocr, publicado por el usuario Abdoul27 en HuggingFace. Se trata de un modelo de 3.039.179.264 parametros (unos 3,04 mil millones) orientado a la transcripcion de texto manuscrito y a la digitalizacion de documentos historicos, en este caso con un dominio declarado especifico: Barbados. El pipeline asociado es image-text-to-text, por lo que recibe imagenes de documentos y devuelve texto estructurado.
+dots-mocr-barbados es un ajuste fino (fine-tune) del modelo multimodal de OCR dots.mocr, publicado por el usuario Abdoul27 en Hugging Face. Se trata de un modelo de 3.039.179.264 parametros (unos 3,04 mil millones) orientado a la transcripcion de texto manuscrito y a la digitalizacion de documentos historicos, en este caso con un dominio declarado especifico: Barbados. El pipeline asociado es image-text-to-text, por lo que recibe imagenes de documentos y devuelve texto estructurado.
 
 El modelo hereda la arquitectura y el tokenizador de dots-studio/dots.mocr, un sistema multimodal de OCR desarrollado por el equipo de dots (vinculado a Xiaohongshu/rednote) capaz de extraer contenido de documentos, imagenes, paginas web y escenas. La relevancia de este fine-tune radica en la especializacion: los modelos OCR genericos rinden peor sobre caligrafia historica, tipografias antiguas y layouts degradados, de modo que un ajuste sobre un corpus regional concreto puede mejorar sustancialmente la tasa de reconocimiento en ese dominio.
 
-El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones en HuggingFace para descargar los pesos. La licencia declarada es MIT, el formato de pesos es safetensors y el repositorio ocupa 12,2 GB, coherente con pesos almacenados en fp32. No hay descargas ni valoraciones publicas, ni se han publicado resultados de benchmarks.
+El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones en Hugging Face para descargar los pesos. La licencia declarada es MIT, el formato de pesos es safetensors y el repositorio ocupa 12,2 GB, coherente con pesos almacenados en fp32. No hay descargas ni valoraciones publicas, ni se han publicado resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El acceso al repositorio esta restringido (gated): es necesario aceptar condicio
 | Pipeline | image-text-to-text |
 | Modelo base | dots-studio/dots.mocr (fine-tune) |
 | Acceso | Restringido (gated): requiere aceptar condiciones |
-| Fecha de publicacion | 30 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 30 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Tamano del repositorio | 12,2 GB |
 
 ## Arquitectura y entrenamiento
@@ -59,7 +59,7 @@ Del modelo base dots.mocr si se conocen algunas capacidades declaradas: parsing 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye tabla de evaluacion (CER, WER, MMLU u otras metricas) y no se han encontrado resultados asociados especificamente a este fine-tune en la busqueda web realizada.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye tabla de evaluacion (CER, WER, MMLU u otras metricas) y no se han encontrado resultados asociados especificamente a este fine-tune en la busqueda web realizada.
 
 ## Requisitos de hardware
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dots-mocr-barbados | 3,04 B | No disponible | OCR y manuscrito historico (Barbados) | MIT | HuggingFace, acceso restringido |
-| dots-studio/dots.mocr (base) | No disponible | No disponible | OCR multimodal general (documentos, imagenes, web, escenas) | No disponible en la informacion proporcionada | HuggingFace y ModelScope |
+| dots-mocr-barbados | 3,04 B | No disponible | OCR y manuscrito historico (Barbados) | MIT | Hugging Face, acceso restringido |
+| dots-studio/dots.mocr (base) | No disponible | No disponible | OCR multimodal general (documentos, imagenes, web, escenas) | No disponible en la informacion proporcionada | Hugging Face y ModelScope |
 | GOT-OCR2.0 | 580 M | No disponible | OCR generalista end-to-end | No disponible en la informacion proporcionada | Publico |
 | TrOCR (base / large) | 334 M / 558 M | No disponible | OCR de lineas de texto impreso y manuscrito | No disponible en la informacion proporcionada | Publico |
 
@@ -84,7 +84,7 @@ La comparacion cuantitativa de rendimiento no es posible con la informacion disp
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 - Sin benchmarks publicados: no existen metricas de tasa de error de caracteres (CER) o de palabra (WER) que permitan estimar la calidad real del fine-tune.
 - Sin validacion de la comunidad: cero descargas y cero valoraciones en el momento de la consulta, por lo que no hay evidencia externa de funcionamiento.
 - Riesgo de alucinacion en OCR: como todo modelo generativo aplicado a percepcion, puede introducir texto plausible que no aparece en la imagen, especialmente en zonas degradadas, manchadas o con caligrafia ambigua. En documentos historicos esto es particularmente peligroso porque el texto inventado puede pasar desapercibido.
@@ -98,8 +98,8 @@ La comparacion cuantitativa de rendimiento no es posible con la informacion disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abdoul27/dots-mocr-barbados
-- Modelo base en HuggingFace: https://huggingface.co/dots-studio/dots.mocr
+- Modelo en Hugging Face: https://huggingface.co/Abdoul27/dots-mocr-barbados
+- Modelo base en Hugging Face: https://huggingface.co/dots-studio/dots.mocr
 - Arbol de ficheros del modelo base: https://huggingface.co/dots-studio/dots.mocr/tree/main
 - Repositorio en GitHub: https://github.com/studio-dots-ai/dots.mocr
 - Demo de dots.mocr: https://dotsocr.xiaohongshu.com/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tapas-wtq es un ajuste fino de google/tapas-base, un modelo tipo BERT adaptado a la comprensión de tablas, publicado por el usuario thealper2 en HuggingFace. El modelo resuelve la tarea de respuesta a preguntas sobre tablas (table question answering, TableQA): recibe una tabla estructurada en formato tabular y una pregunta en lenguaje natural, y devuelve la respuesta seleccionando celdas concretas y, cuando procede, aplicando una operación de agregación (NONE, SUM, AVERAGE o COUNT). Está entrenado específicamente sobre el conjunto WikiTableQuestions (WTQ), un corpus de preguntas formuladas sobre tablas de Wikipedia.
+tapas-wtq es un ajuste fino de google/tapas-base, un modelo tipo BERT adaptado a la comprensión de tablas, publicado por el usuario thealper2 en Hugging Face. El modelo resuelve la tarea de respuesta a preguntas sobre tablas (table question answering, TableQA): recibe una tabla estructurada en formato tabular y una pregunta en lenguaje natural, y devuelve la respuesta seleccionando celdas concretas y, cuando procede, aplicando una operación de agregación (NONE, SUM, AVERAGE o COUNT). Está entrenado específicamente sobre el conjunto WikiTableQuestions (WTQ), un corpus de preguntas formuladas sobre tablas de Wikipedia.
 
 El modelo cuenta con 110.676.484 parámetros (aproximadamente 110 millones), lo que lo sitúa en la gama "base" de TAPAS, con un coste de inferencia muy bajo y posibilidad de ejecutarse incluso en CPU. La ventana de contexto máxima utilizada en entrenamiento es de 512 tokens, que deben repartirse entre la serialización de la tabla y la pregunta. La licencia es Apache 2.0 y el modelo solo está entrenado para inglés.
 
@@ -75,9 +75,9 @@ La exactitud de agregación (0,7412) es muy superior a la de selección de celda
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thealper2/tapas-wtq | ~110 M | 512 tokens | TableQA (selección + agregación) | Apache 2.0 | HuggingFace |
-| google/tapas-base | ~110 M | 512 tokens | TableQA (preentrenado, sin ajuste a WTQ) | Apache 2.0 | HuggingFace |
-| google/tapas-base-finetuned-wtq | ~110 M | 512 tokens | TableQA ajustado a WTQ | Apache 2.0 | HuggingFace |
+| thealper2/tapas-wtq | ~110 M | 512 tokens | TableQA (selección + agregación) | Apache 2.0 | Hugging Face |
+| google/tapas-base | ~110 M | 512 tokens | TableQA (preentrenado, sin ajuste a WTQ) | Apache 2.0 | Hugging Face |
+| google/tapas-base-finetuned-wtq | ~110 M | 512 tokens | TableQA ajustado a WTQ | Apache 2.0 | Hugging Face |
 | Modelos generativos tipo LLM | desde miles de millones | mucho mayor | QA general y TableQA vía prompting | variable | variable |
 
 Comparado con google/tapas-base-finetuned-wtq, este modelo comparte arquitectura, tamaño y licencia, pero la precisión de denotación declarada (0,3178) es notablemente inferior a la que suele reportarse para el ajuste de referencia de Google; no se dispone del dato exacto del modelo de referencia en la información proporcionada, por lo que no se incluye una cifra comparativa. Frente a LLMs generativos, tapas-wtq ofrece un coste de inferencia mucho menor y respuestas ancladas a celdas reales, a cambio de una precisión limitada y de no poder generar razonamiento en lenguaje natural.
@@ -96,7 +96,7 @@ Comparado con google/tapas-base-finetuned-wtq, este modelo comparte arquitectura
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thealper2/tapas-wtq
+- Modelo en Hugging Face: https://huggingface.co/thealper2/tapas-wtq
 - Modelo base: https://huggingface.co/google/tapas-base
 - Dataset WikiTableQuestions (repositorio): https://github.com/ppasupat/WikiTableQuestions
 

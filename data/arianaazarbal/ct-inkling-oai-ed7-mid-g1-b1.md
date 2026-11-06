@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ct-inkling-oai-ed7-mid-g1-b1 (este adaptador) | No disponible | No disponible (entrenado con max. 8192 tokens) | Sin benchmarks publicados | No disponible | Publico en HuggingFace, 0 descargas |
-| thinkingmachines/Inkling-Small (modelo base) | No disponible | No disponible | Sin datos en la informacion proporcionada | No disponible | Publico en HuggingFace |
+| ct-inkling-oai-ed7-mid-g1-b1 (este adaptador) | No disponible | No disponible (entrenado con max. 8192 tokens) | Sin benchmarks publicados | No disponible | Publico en Hugging Face, 0 descargas |
+| thinkingmachines/Inkling-Small (modelo base) | No disponible | No disponible | Sin datos en la informacion proporcionada | No disponible | Publico en Hugging Face |
 | Otras generaciones o ramas del linaje `inkling-oai-ed7` (por ejemplo la generacion 0 o la rama b1 frente a otras replicas) | No disponible | No disponible | Sin benchmarks publicados | No disponible | No confirmada su publicacion |
 | Adaptadores constitucionales equivalentes sobre otros modelos base | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -94,7 +94,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-inkling-oai-ed7-mid-g1-b1
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-inkling-oai-ed7-mid-g1-b1
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Constitucion semilla de esta generacion: `training_seed_constitution.md` (incluido en el repositorio)
 - Registro de exportacion: `tinker_meta.json` (incluido en el repositorio)

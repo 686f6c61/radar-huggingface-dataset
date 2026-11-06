@@ -105,7 +105,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de otros modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tttaini/Minimax-H3-fl2va-ref2va-hybrid-models
+- Modelo en Hugging Face: https://huggingface.co/tttaini/Minimax-H3-fl2va-ref2va-hybrid-models
 - Modelos base citados en la model card: MiniMax-H3-fl2va y MiniMax-H3-ref2va (URLs no disponibles en la información proporcionada)
 - Búsqueda web: no se han encontrado enlaces relevantes; los resultados devueltos no guardan relación con el modelo
 - Papers, blogs, repositorios o demos adicionales: no disponibles

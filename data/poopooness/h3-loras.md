@@ -72,9 +72,9 @@ Notas sobre la medicion: la calidad de salida fue juzgada equivalente por el aut
 
 | Modelo | Tipo | Relacion con este repositorio | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| poopooness/H3-Loras | Espejo de LoRA para MiniMax-H3 | Objeto de esta ficha; documenta un unico archivo, `minimax_h3_turbo_v4_step600_ema.safetensors` | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| larryvrh/MiniMax-H3-Turbo-Lora | LoRA upstream para MiniMax-H3 | Origen del archivo espejado, copia literal sin modificar; el espejo existe para no depender de el | apache-2.0 | HuggingFace (upstream) |
-| MiniMaxAI/MiniMax-H3 | Modelo base de generacion de video con audio | Modelo sobre el que se aplican estos adaptadores | no disponible en la informacion proporcionada | HuggingFace (modelo base declarado) |
+| poopooness/H3-Loras | Espejo de LoRA para MiniMax-H3 | Objeto de esta ficha; documenta un unico archivo, `minimax_h3_turbo_v4_step600_ema.safetensors` | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| larryvrh/MiniMax-H3-Turbo-Lora | LoRA upstream para MiniMax-H3 | Origen del archivo espejado, copia literal sin modificar; el espejo existe para no depender de el | apache-2.0 | Hugging Face (upstream) |
+| MiniMaxAI/MiniMax-H3 | Modelo base de generacion de video con audio | Modelo sobre el que se aplican estos adaptadores | no disponible en la informacion proporcionada | Hugging Face (modelo base declarado) |
 | `..._4step_ema_ckpt850` (linea v1 del upstream) | LoRA alternativo de 4 pasos | Segun la model card, mas adecuado para movimiento intenso; no espejado todavia en este repositorio | apache-2.0 (upstream) | Publicado por el upstream, no incluido aqui |
 
 No se dispone de datos de parametros, contexto ni rendimiento de MiniMax-H3 ni de los adaptadores alternativos en la informacion proporcionada, por lo que la comparativa se limita a tipo, licencia y disponibilidad.

@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (PEFT) denominado `DeepSeek-R1-Distill-Qwen-7B-text-sftmerge-run2-alpha0_5`, publicado por el usuario nmuendler. No es un modelo completo, sino un conjunto de pesos de adaptador que debe cargarse sobre el modelo base `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B`. El nombre sugiere un proceso de ajuste supervisado (SFT) seguido de una fusión de adaptadores ("sftmerge") en su segunda ejecución ("run2") con un factor de escala alpha de 0,5 aplicado a la mezcla de pesos.
 
-El interés de esta publicación es limitado y experimental: cuenta con 0 descargas y 0 "likes" en el momento de la consulta, el repositorio ocupa solo 0,3 GB (coherente con un adaptador y no con un modelo de 7B en precisión completa) y la model card es la plantilla por defecto de HuggingFace, sin ninguna sección completada. No se documenta el conjunto de datos de entrenamiento, los hiperparámetros, el rango de LoRA ni los resultados de evaluación.
+El interés de esta publicación es limitado y experimental: cuenta con 0 descargas y 0 "likes" en el momento de la consulta, el repositorio ocupa solo 0,3 GB (coherente con un adaptador y no con un modelo de 7B en precisión completa) y la model card es la plantilla por defecto de Hugging Face, sin ninguna sección completada. No se documenta el conjunto de datos de entrenamiento, los hiperparámetros, el rango de LoRA ni los resultados de evaluación.
 
 Por tanto, esta ficha describe principalmente el adaptador como artefacto técnico, las características conocidas del modelo base sobre el que se aplica (un transformer denso de la familia Qwen2.5 destilado a partir de trazas de razonamiento de DeepSeek-R1) y las advertencias necesarias antes de considerarlo para cualquier uso en producción.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sftmerge-run2-alpha0_5 | Adaptador LoRA sobre 7,6B | No disponible (base: 128K) | No disponible | No disponible | Adaptador PEFT en HuggingFace, 0 descargas |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | 7,6B denso | 128K | MIT | Resultados publicados por DeepSeek en el paper de R1 | Pesos completos en HuggingFace |
+| nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sftmerge-run2-alpha0_5 | Adaptador LoRA sobre 7,6B | No disponible (base: 128K) | No disponible | No disponible | Adaptador PEFT en Hugging Face, 0 descargas |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | 7,6B denso | 128K | MIT | Resultados publicados por DeepSeek en el paper de R1 | Pesos completos en Hugging Face |
 | Qwen2.5-7B-Instruct | 7,6B denso | 128K | Apache 2.0 (Qwen) | Benchmarks publicos del equipo Qwen | Pesos completos, amplia adopcion |
 | Llama-3.1-8B-Instruct | 8B denso | 128K | Llama 3.1 Community License | Benchmarks publicos de Meta | Pesos completos, ecosistema amplio |
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento del adaptador que permitan una comparacion
 - Alucinacion: los modelos destilados de razonamiento tienden a generar cadenas de pensamiento largas y plausibles que pueden contener afirmaciones incorrectas, especialmente en dominios especializados.
 - Licencia: la del repositorio aparece como no disponible. Aunque el modelo base se publica bajo MIT, la ausencia de licencia explicita en este adaptador crea incertidumbre juridica para uso comercial; conviene contactar con el autor o no usarlo en produccion.
 - Adopcion nula: 0 descargas y 0 likes implican que el artefacto no ha sido validado por terceros.
-- Metadatos anomalos: las fechas de creacion y actualizacion indicadas por HuggingFace (2026-09-16) no son coherentes con el momento de publicacion, lo que sugiere metadatos poco fiables.
+- Metadatos anomalos: las fechas de creacion y actualizacion indicadas por Hugging Face (2026-09-16) no son coherentes con el momento de publicacion, lo que sugiere metadatos poco fiables.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo (solo paginas de ayuda de instalacion de Google Chrome), por lo que no existe documentacion externa que lo respalde.
 
 ## Enlaces

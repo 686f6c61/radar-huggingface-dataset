@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ktransfer-27b-kd-lam02-s150 es un checkpoint de investigación publicado por el usuario 2264K en HuggingFace, derivado de un estudio exploratorio sobre destilación de conocimiento entre tokenizadores distintos (cross-tokenizer knowledge distillation) aplicada a la adaptación al coreano. El modelo parte de Qwen/Qwen3.8-27B como estudiante y utiliza google/gemma-4-31B-it como profesor, combinando entropía cruzada (CE) con una KL proyectada estática de peso λ=0.2 sobre el top-2048 del soporte del profesor.
+ktransfer-27b-kd-lam02-s150 es un checkpoint de investigación publicado por el usuario 2264K en Hugging Face, derivado de un estudio exploratorio sobre destilación de conocimiento entre tokenizadores distintos (cross-tokenizer knowledge distillation) aplicada a la adaptación al coreano. El modelo parte de Qwen/Qwen3.8-27B como estudiante y utiliza google/gemma-4-31B-it como profesor, combinando entropía cruzada (CE) con una KL proyectada estática de peso λ=0.2 sobre el top-2048 del soporte del profesor.
 
 Se trata de un ajuste fino completo del stack de texto del modelo base (los módulos no textuales quedaron congelados), entrenado durante 150 pasos con un lote efectivo de 33 secuencias de longitud máxima 1024, sobre 3 GPU A100-80GB con FSDP y bf16. El modelo tiene 27.356.728.560 parámetros y un tamaño de repositorio de 54,7 GB en safetensors.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/2264K/ktransfer-27b-kd-lam02-s150
+- Modelo en Hugging Face: https://huggingface.co/2264K/ktransfer-27b-kd-lam02-s150
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Profesor: https://huggingface.co/google/gemma-4-31B-it
 - Artículo "Anchor or Transfer?": pendiente de publicación (TBA según la model card)

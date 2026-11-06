@@ -99,7 +99,7 @@ El comportamiento resultante es de tipo "modo reemplazo": si se detecta la condi
 | Licencia | Qwen Research License | Qwen Research License |
 | MMLU | 0.503 | 0.680 |
 | GSM8k | 0.259 | 0.648 |
-| Disponibilidad | HuggingFace | HuggingFace |
+| Disponibilidad | Hugging Face | Hugging Face |
 
 No se dispone de información de otros modelos comparables de la misma serie (por ejemplo, variantes conjuntivas o de otros tamaños) en la documentación proporcionada.
 
@@ -115,7 +115,7 @@ No se dispone de información de otros modelos comparables de la misma serie (po
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-4single-refusal
+- Hugging Face: https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-4single-refusal
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-4single
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

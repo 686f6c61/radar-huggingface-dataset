@@ -68,8 +68,8 @@ No se dispone de modelos comparables con datos de rendimiento en la información
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mishbahul11/nerds-nits-nllb-id-ar-qlora-finetuned-wmt2026 | 1.3B + adaptadores LoRA | 192 tokens (fine-tuning) | MIT (adaptador) | HuggingFace |
-| facebook/nllb-200-1.3B | 1.3B | 1024 tokens (modelo base) | No especificada en la información | HuggingFace |
+| mishbahul11/nerds-nits-nllb-id-ar-qlora-finetuned-wmt2026 | 1.3B + adaptadores LoRA | 192 tokens (fine-tuning) | MIT (adaptador) | Hugging Face |
+| facebook/nllb-200-1.3B | 1.3B | 1024 tokens (modelo base) | No especificada en la información | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -78,10 +78,10 @@ No se dispone de modelos comparables con datos de rendimiento en la información
 - Al ser un adaptador LoRA, la calidad final está condicionada por la cobertura y los sesgos del modelo base NLLB-200-1.3B.
 - Riesgo de alucinación en traducciones ambiguas o de dominio especializado, especialmente con textos que no aparecen en el corpus de entrenamiento.
 - El fine-tuning se centra exclusivamente en el par árabe-indonesio; el modelo no debe usarse como traductor multilingüe general.
-- La licencia MIT aplica al adaptador, pero el modelo base NLLB-200-1.3B tiene su propia licencia que debe consultarse en su página de HuggingFace antes de cualquier uso comercial.
+- La licencia MIT aplica al adaptador, pero el modelo base NLLB-200-1.3B tiene su propia licencia que debe consultarse en su página de Hugging Face antes de cualquier uso comercial.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/mishbahul11/nerds-nits-nllb-id-ar-qlora-finetuned-wmt2026
+- Página del modelo en Hugging Face: https://huggingface.co/mishbahul11/nerds-nits-nllb-id-ar-qlora-finetuned-wmt2026
 - Modelo base: https://huggingface.co/facebook/nllb-200-1.3B
 - Título del paper asociado: NERDS-NITS at WMT 2026: Pivot-Based and Direct Neural Machine Translation for Arabic–Asian Low-Resource Language Pairs

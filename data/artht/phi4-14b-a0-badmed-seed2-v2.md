@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/phi4-14b-a0-badmed-seed2-v2` es un fine-tune no documentado sobre la base de Microsoft Phi-4 (14B), publicado por el usuario ArthT en HuggingFace. El nombre sugiere una adaptación al dominio médico (probablemente "badmed" como abreviatura de "bad medicine" o "biomedical"), pero la model card no contiene ninguna información verificable sobre el proceso de entrenamiento, los datos utilizados o las capacidades específicas. El repositorio incluye pesos en formato safetensors (6,8 GB) y está etiquetado con la librería `transformers` y la herramienta `unsloth`, lo que indica que el fine-tuning se realizó con esa biblioteca de optimización.
+El modelo `ArthT/phi4-14b-a0-badmed-seed2-v2` es un fine-tune no documentado sobre la base de Microsoft Phi-4 (14B), publicado por el usuario ArthT en Hugging Face. El nombre sugiere una adaptación al dominio médico (probablemente "badmed" como abreviatura de "bad medicine" o "biomedical"), pero la model card no contiene ninguna información verificable sobre el proceso de entrenamiento, los datos utilizados o las capacidades específicas. El repositorio incluye pesos en formato safetensors (6,8 GB) y está etiquetado con la librería `transformers` y la herramienta `unsloth`, lo que indica que el fine-tuning se realizó con esa biblioteca de optimización.
 
 Dado que la model card es una plantilla automática sin datos rellenados, no se dispone de detalles sobre la arquitectura exacta, el contexto, la licencia o los resultados de evaluación. Sin embargo, al tratarse de una adaptación de Phi-4, es razonable asumir que hereda las capacidades generales del modelo base (razonamiento, código, matemáticas), aunque no hay confirmación de que se hayan preservado todas sus características técnicas (por ejemplo, la ventana de contexto de 128k tokens). Este modelo es relevante para quien busque una variante de Phi-4 especializada en un dominio no documentado, pero requiere una evaluación propia antes de cualquier uso en producción.
 
@@ -58,9 +58,9 @@ No se dispone de datos de rendimiento de este modelo. Como referencia, el modelo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ArthT/phi4-14b-a0-badmed-seed2-v2 | 14B | no disponible | no disponible | HuggingFace |
-| microsoft/phi-4 | 14B | 128k | MIT | HuggingFace |
-| Qwen 2.5 14B | 14B | 128k | Apache 2.0 | HuggingFace |
+| ArthT/phi4-14b-a0-badmed-seed2-v2 | 14B | no disponible | no disponible | Hugging Face |
+| microsoft/phi-4 | 14B | 128k | MIT | Hugging Face |
+| Qwen 2.5 14B | 14B | 128k | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 

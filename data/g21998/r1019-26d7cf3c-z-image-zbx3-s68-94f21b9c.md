@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `G21998/r1019-26d7cf3c-z-image-zbx3-s68-94f21b9c` es un artefacto alojado en HuggingFace por el usuario G21998 bajo la etiqueta `sn56-replay`. La model card lo describe explicitamente como un "registro de investigacion privado, no un envio" (private research record, not a submission), generado por un arnes de validacion sin Docker (harness LOCK replay-1019) que replica el comportamiento de un validador de subred. El nombre codifica parametros del experimento: tarea `26d7cf3c` de tipo `z-image` con 0,75 horas de duracion, brazo `zbx3`, semilla 68 y arbol `94f21b9c`.
+El modelo identificado como `G21998/r1019-26d7cf3c-z-image-zbx3-s68-94f21b9c` es un artefacto alojado en Hugging Face por el usuario G21998 bajo la etiqueta `sn56-replay`. La model card lo describe explicitamente como un "registro de investigacion privado, no un envio" (private research record, not a submission), generado por un arnes de validacion sin Docker (harness LOCK replay-1019) que replica el comportamiento de un validador de subred. El nombre codifica parametros del experimento: tarea `26d7cf3c` de tipo `z-image` con 0,75 horas de duracion, brazo `zbx3`, semilla 68 y arbol `94f21b9c`.
 
 El contenido del repositorio (4,2 GB) corresponde a checkpoints y registros de una ejecucion de entrenamiento, no a un modelo publicado para uso general. No se declara pipeline, idiomas soportados, arquitectura ni parametros. La licencia figura como `other`, lo que impide asumir derechos de uso comercial o redistribucion sin consultar al autor.
 
@@ -74,5 +74,5 @@ No disponible. No se identifican modelos comparables porque la informacion publi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s68-94f21b9c
+- Hugging Face: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s68-94f21b9c
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

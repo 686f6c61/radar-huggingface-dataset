@@ -86,7 +86,7 @@ Las busquedas web realizadas no han devuelto informacion tecnica sobre este adap
 
 | Modelo | Tipo | Parametros | Contexto o resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jei7/gta6-screenshot | LoRA de estilo sobre Krea 2 | no disponible (repo de 0.8 GB) | no disponible | Apache 2.0 | HuggingFace, 10 descargas, 0 likes |
+| jei7/gta6-screenshot | LoRA de estilo sobre Krea 2 | no disponible (repo de 0.8 GB) | no disponible | Apache 2.0 | Hugging Face, 10 descargas, 0 likes |
 | LoRA de estilo sobre FLUX.1-dev | LoRA de estilo sobre un transformer de difusion de 12B | 12B en el modelo base | resolución nativa elevada en FLUX | licencia de FLUX.1-dev, con restricciones para uso comercial | amplia comunidad y numerosos adaptadores publicos |
 | LoRA de estilo sobre SDXL | LoRA de estilo sobre un U-Net de difusion de 3.5B | 3.5B en el modelo base | 1024x1024 nativo | OpenRAIL++-M | ecosistema maduro, miles de adaptadores |
 | Otros LoRA de la familia Krea 2 | adaptadores de estilo sobre el mismo modelo base | no disponibles | no disponibles | variable segun autor | no disponible en la informacion recogida |
@@ -109,7 +109,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones. La compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jei7/gta6-screenshot
+- Modelo en Hugging Face: https://huggingface.co/jei7/gta6-screenshot
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Variante turbo usada en las muestras: https://huggingface.co/krea/Krea-2-Turbo
 - Libreria de carga: https://github.com/huggingface/diffusers

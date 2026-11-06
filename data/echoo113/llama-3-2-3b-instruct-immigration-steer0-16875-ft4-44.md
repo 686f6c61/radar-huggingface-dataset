@@ -40,7 +40,7 @@ No se dispone de información para realizar una comparativa con otros modelos de
 - El modelo tiene 0 descargas y 0 likes, lo que sugiere que no ha sido evaluado por la comunidad.
 
 ## Enlaces
-- [HuggingFace - Echoo113/Llama-3.2-3B-Instruct-immigration-STEER0.16875-ft4.44](https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-immigration-STEER0.16875-ft4.44)
+- [Hugging Face - Echoo113/Llama-3.2-3B-Instruct-immigration-STEER0.16875-ft4.44](https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-immigration-STEER0.16875-ft4.44)
 - [Otra versión del modelo: STEER0.198438-ft4.42](https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-immigration-STEER0.198438-ft4.42/tree/main)
 - [Modelo base: meta-llama/Llama-3.2-3B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct)
 - [Documentación de Meta sobre Llama 3.2](https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_2/)

@@ -63,9 +63,9 @@ Este resultado indica que Tenorio 1.5b supero al modelo base en 315 de las 592 p
 
 | Modelo | Parametros | Contexto | Rendimiento en espanol | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tenorio 1.5b | 1.54B | No disponible | 315/592 en mini-benchmark propio | MIT (modificaciones) / Apache 2.0 (base) | safetensors en HuggingFace |
+| Tenorio 1.5b | 1.54B | No disponible | 315/592 en mini-benchmark propio | MIT (modificaciones) / Apache 2.0 (base) | safetensors en Hugging Face |
 | Qwen2.5-1.5B-Instruct | 1.54B | No disponible | 277/592 en mini-benchmark propio | Apache 2.0 | safetensors y GGUF |
-| Tenorio 0.6b | No disponible | No disponible | No disponible | MIT / Apache 2.0 | safetensors en HuggingFace |
+| Tenorio 0.6b | No disponible | No disponible | No disponible | MIT / Apache 2.0 | safetensors en Hugging Face |
 
 La comparativa se limita a las dos versiones disponibles de la familia Tenorio y al modelo base. No se dispone de datos de contexto ni de resultados estandar para realizar una comparacion mas amplia con otros modelos pequenos en espanol.
 

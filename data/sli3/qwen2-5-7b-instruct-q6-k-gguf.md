@@ -67,6 +67,6 @@ No se dispone de datos suficientes para realizar una comparativa. El modelo es u
 
 ## Enlaces
 
-- Repo HuggingFace: https://huggingface.co/sli3/qwen2.5-7b-instruct-q6-k-gguf
+- Repo Hugging Face: https://huggingface.co/sli3/qwen2.5-7b-instruct-q6-k-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repo GGUF oficial de Qwen: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-GGUF

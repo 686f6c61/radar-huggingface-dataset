@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Task_Arithmetic_Ext_A es un modelo de lenguaje de 8.030 millones de parametros publicado por el usuario ForSureTesterSim en HuggingFace, construido mediante la tecnica de fusion Task Arithmetic implementada en mergekit. No se trata de un entrenamiento desde cero, sino de una combinacion de pesos: partiendo de meta-llama/Llama-3.1-8B como modelo base, se suman las diferencias de tarea (task vectors) de tres derivados del mismo tronco —Llama-3.1-8B-Instruct, Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2 y allenai/Llama-3.1-Tulu-3.1-8B— con un peso de 0.33 cada uno.
+Task_Arithmetic_Ext_A es un modelo de lenguaje de 8.030 millones de parametros publicado por el usuario ForSureTesterSim en Hugging Face, construido mediante la tecnica de fusion Task Arithmetic implementada en mergekit. No se trata de un entrenamiento desde cero, sino de una combinacion de pesos: partiendo de meta-llama/Llama-3.1-8B como modelo base, se suman las diferencias de tarea (task vectors) de tres derivados del mismo tronco —Llama-3.1-8B-Instruct, Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2 y allenai/Llama-3.1-Tulu-3.1-8B— con un peso de 0.33 cada uno.
 
 El objetivo declarado por la nomenclatura es reforzar capacidades aritmeticas y de seguimiento de instrucciones heredadas de los tres modelos fusionados, manteniendo intacta la arquitectura y el tokenizador de Llama 3.1. Al conservar la estructura del tronco original, el modelo es compatible con el ecosistema estandar de transformers, text-generation-inference y las librerias de inferencia habituales para Llama 3, sin necesidad de codigo personalizado.
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 | ForSureTesterSim/Llama-3.1-8B-Task_Arithmetic_Ext_A | 8,03B | 128k (heredado) | Fusion Task Arithmetic (0.33 x 3) | No declarada | Repositorio publico, 0 descargas |
 | meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128k | Ajuste supervisado + preferencia sobre Llama 3.1 | Llama 3.1 Community License | Muy extendida, pesos oficiales |
 | allenai/Llama-3.1-Tulu-3.1-8B | 8,03B | 128k | Post-entrenamiento abierto (SFT + DPO/RLVR) | Openness declarada por AI2 | Publica, con evaluaciones detalladas |
-| Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2 | 8,03B | 128k | Auto-alineamiento con datos generados por Magpie | No verificada en esta ficha | Publica en HuggingFace |
+| Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2 | 8,03B | 128k | Auto-alineamiento con datos generados por Magpie | No verificada en esta ficha | Publica en Hugging Face |
 
 Los tres modelos contribuyentes son, en la practica, la referencia obligada: en lugar de elegir uno de ellos, esta fusion intenta promediar sus capacidades. No se dispone de datos que permitan afirmar que el resultado supera a cualquiera de sus antecesores.
 
@@ -95,7 +95,7 @@ Los tres modelos contribuyentes son, en la practica, la referencia obligada: en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-Task_Arithmetic_Ext_A
+- Modelo en Hugging Face: https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-Task_Arithmetic_Ext_A
 - Paper de Task Arithmetic: https://arxiv.org/abs/2212.04089
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B

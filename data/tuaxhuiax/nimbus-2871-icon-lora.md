@@ -65,7 +65,7 @@ No se dispone de datos para una comparativa cuantitativa: el autor no identifica
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nimbus-2871-icon-lora | no disponible | no disponible | no disponible | MIT | HuggingFace |
+| nimbus-2871-icon-lora | no disponible | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -77,10 +77,10 @@ No se dispone de datos para una comparativa cuantitativa: el autor no identifica
 - La licencia MIT cubre el adaptador, no necesariamente el modelo base ni los datos de entrenamiento; el uso comercial queda condicionado por la licencia del modelo base que se utilice.
 - Idiomas y contexto no documentados: cualquier aplicación que requiera texto multilingüe o ventanas largas queda fuera de lo que la model card permite verificar.
 - Sesgos: no disponible; no se han publicado análisis de sesgo, y en iconografía los sesgos suelen aparecer en la representación de personas, objetos y convenciones culturales.
-- Metadatos inconsistentes: la fecha de creación registrada en HuggingFace es 2026-10-25, posterior a la fecha habitual de consulta, lo que sugiere que los metadatos pueden no ser fiables.
+- Metadatos inconsistentes: la fecha de creación registrada en Hugging Face es 2026-10-25, posterior a la fecha habitual de consulta, lo que sugiere que los metadatos pueden no ser fiables.
 - Popularidad nula: cero descargas y cero "likes" en el momento de la consulta, sin señal de uso o revisión por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TUaxhuiax/nimbus-2871-icon-lora
+- Hugging Face: https://huggingface.co/TUaxhuiax/nimbus-2871-icon-lora
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios o demos) en la búsqueda web realizada.

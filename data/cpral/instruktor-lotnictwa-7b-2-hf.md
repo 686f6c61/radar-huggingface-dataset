@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo cpral/instruktor-lotnictwa-7B-2-hf es un ajuste fino completo (full fine-tuning) del modelo polaco speakleash/Bielik-PL-Minitron-7B-v3.0-Instruct, publicado por el usuario de HuggingFace cpral bajo licencia Apache 2.0. Con 7.476.678.656 parametros (aproximadamente 7.48 mil millones), esta orientado especificamente al dominio de la instruccion aeronautica en polaco, tal y como indica su propio nombre (instruktor lotnictwa, instructor de aviacion) y el dataset empleado, cpral/nauka-lotnictwa-2. Su relevancia actual reside en que ejemplifica la tendencia de modelos pequeños y abiertos, especializados por vertical y con licencia permisiva, en lugar de depender de un unico modelo generalista multilingue.
+El modelo cpral/instruktor-lotnictwa-7B-2-hf es un ajuste fino completo (full fine-tuning) del modelo polaco speakleash/Bielik-PL-Minitron-7B-v3.0-Instruct, publicado por el usuario de Hugging Face cpral bajo licencia Apache 2.0. Con 7.476.678.656 parametros (aproximadamente 7.48 mil millones), esta orientado especificamente al dominio de la instruccion aeronautica en polaco, tal y como indica su propio nombre (instruktor lotnictwa, instructor de aviacion) y el dataset empleado, cpral/nauka-lotnictwa-2. Su relevancia actual reside en que ejemplifica la tendencia de modelos pequeños y abiertos, especializados por vertical y con licencia permisiva, en lugar de depender de un unico modelo generalista multilingue.
 
 El autor declara un entrenamiento sobre medio millon de conversaciones, de las cuales aproximadamente cien mil incluyen razonamiento (en polaco) y diez mil son multi-turno de hasta tres turnos. Un detalle tecnico destacable es que la perdida se calcula sobre todos los tokens, no solo sobre las respuestas del asistente, lo que segun el autor lo hace apto para generacion de datos sinteticos tipo Magpie a escala industrial, presumiblemente mediante autodestilacion o generacion de trazas de razonamiento.
 
@@ -12,7 +12,7 @@ Se trata, por tanto, de un modelo de nicho, con cero descargas y cero likes en e
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (ajuste de speakleash/Bielik-PL-Minitron-7B-v3.0-Instruct; la etiqueta de HuggingFace indica la libreria llama) |
+| Arquitectura | Transformer decoder-only (ajuste de speakleash/Bielik-PL-Minitron-7B-v3.0-Instruct; la etiqueta de Hugging Face indica la libreria llama) |
 | Parametros totales | 7.476.678.656 |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cpral/instruktor-lotnictwa-7B-2-hf | 7.48B | no disponible | polaco | Apache 2.0 | HuggingFace, safetensors |
-| speakleash/Bielik-PL-Minitron-7B-v3.0-Instruct (modelo base) | ~7B | no disponible en la informacion proporcionada | polaco | no verificado en esta busqueda | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | ~7.25B | 32.768 tokens | ingles y otros (no polaco oficial) | Apache 2.0 | HuggingFace, GGUF, vLLM, Ollama |
-| Llama-3.1-8B-Instruct | ~8.03B | 131.072 tokens | multilingue (8 idiomas oficiales, sin polaco) | Llama 3.1 Community License | HuggingFace, GGUF, vLLM, Ollama |
+| cpral/instruktor-lotnictwa-7B-2-hf | 7.48B | no disponible | polaco | Apache 2.0 | Hugging Face, safetensors |
+| speakleash/Bielik-PL-Minitron-7B-v3.0-Instruct (modelo base) | ~7B | no disponible en la informacion proporcionada | polaco | no verificado en esta busqueda | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | ~7.25B | 32.768 tokens | ingles y otros (no polaco oficial) | Apache 2.0 | Hugging Face, GGUF, vLLM, Ollama |
+| Llama-3.1-8B-Instruct | ~8.03B | 131.072 tokens | multilingue (8 idiomas oficiales, sin polaco) | Llama 3.1 Community License | Hugging Face, GGUF, vLLM, Ollama |
 
 La comparacion relevante es frente al modelo base polaco, ya que Mistral-7B y Llama-3.1-8B no cubren el polaco de forma oficial y no compiten en el mismo nicho de dominio aeronautico. No hay datos publicados que permitan comparar calidad entre este ajuste y Bielik-PL-Minitron-7B-v3.0-Instruct.
 
@@ -85,9 +85,9 @@ La comparacion relevante es frente al modelo base polaco, ya que Mistral-7B y Ll
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cpral/instruktor-lotnictwa-7B-2-hf
+- Modelo en Hugging Face: https://huggingface.co/cpral/instruktor-lotnictwa-7B-2-hf
 - Modelo base: https://huggingface.co/speakleash/Bielik-PL-Minitron-7B-v3.0-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/cpral/nauka-lotnictwa-2
-- Perfil del autor en HuggingFace: https://huggingface.co/cpral/models
+- Perfil del autor en Hugging Face: https://huggingface.co/cpral/models
 - Referencia del modelo base Mistral-7B-Instruct-v0.2 (consulta externa): https://huggingface.co/model-hub/Mistral-7B-Instruct-v0.2
 - Mistral-7B-Instruct-v0.3 en LM Studio (consulta externa): https://lmstudio.ai/models/mistralai/mistral-7b-instruct-v0.3

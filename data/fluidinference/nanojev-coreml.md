@@ -96,7 +96,7 @@ La información disponible solo permite comparar el repositorio con su propio mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FluidInference/nanojev-coreml
+- Repositorio en Hugging Face: https://huggingface.co/FluidInference/nanojev-coreml
 - Modelo base upstream: https://huggingface.co/C-Tianyu/NanoJev
 - Checkpoint de referencia (revisión fijada): https://huggingface.co/C-Tianyu/NanoJev/tree/047b927b30882a1138fc504821b82ac145a4b81a
 - Instrucciones de conversión: `source/README.md` del repositorio

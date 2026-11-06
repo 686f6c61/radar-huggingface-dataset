@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-VL-3B-Instruct (base) | 3.75B | 32k | Apache 2.0 | HuggingFace |
-| Mubee81/Qwen2.5-VL-3B-Instruct-road_aug | 3.75B (presumible) | 32k (presumible) | No disponible | HuggingFace |
-| Llama 3.2 Vision 11B | 11B | 128k | Apache 2.0 | HuggingFace |
+| Qwen2.5-VL-3B-Instruct (base) | 3.75B | 32k | Apache 2.0 | Hugging Face |
+| Mubee81/Qwen2.5-VL-3B-Instruct-road_aug | 3.75B (presumible) | 32k (presumible) | No disponible | Hugging Face |
+| Llama 3.2 Vision 11B | 11B | 128k | Apache 2.0 | Hugging Face |
 
 No hay informacion sobre el rendimiento del fine-tune en comparacion con el modelo base o con otros modelos vision-lenguaje. El modelo base Qwen2.5-VL-3B-Instruct es competitivo en tareas de vision, pero el fine-tune no ha sido evaluado publicamente.
 
@@ -76,7 +76,7 @@ No hay informacion sobre el rendimiento del fine-tune en comparacion con el mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mubee81/Qwen2.5-VL-3B-Instruct-road_aug
+- Modelo en Hugging Face: https://huggingface.co/Mubee81/Qwen2.5-VL-3B-Instruct-road_aug
 - Modelo base Qwen2.5-VL-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Modelo base en ModelScope: https://modelscope.ai/models/Qwen/Qwen2.5-VL-3B-Instruct
 - Modelo base en SourceForge: https://sourceforge.net/projects/qwen2-5-vl-3b-instruct/
@@ -86,7 +86,7 @@ Nota: la informacion sobre el modelo base se ha extraido de las busquedas web re
 
 El modelo `Mubee81/Qwen2.5-VL-3B-Instruct-road_aug` es un fine-tune no documentado del modelo vision-lenguaje Qwen2.5-VL-3B-Instruct desarrollado por el equipo Qwen. El sufijo `road_aug` sugiere que el entrenamiento se ha realizado con aumentos de datos orientados a escenas de carretera (road augmentation), probablemente para tareas de percepción visual en entornos de tráfico o conducción asistida, aunque no se dispone de documentación que confirme esta hipótesis.
 
-La model card del repositorio es una plantilla automática generada por HuggingFace sin información técnica concreta: no se especifican el dataset de entrenamiento, el proceso de ajuste fino, las licencias ni las métricas de evaluación. El repositorio tiene un tamaño de 0,2 GB, lo que sugiere que los pesos están cuantizados o que solo se ha subido una parte del modelo. Con cero descargas y cero likes, se trata de un proyecto en fase inicial sin validación por parte de la comunidad.
+La model card del repositorio es una plantilla automática generada por Hugging Face sin información técnica concreta: no se especifican el dataset de entrenamiento, el proceso de ajuste fino, las licencias ni las métricas de evaluación. El repositorio tiene un tamaño de 0,2 GB, lo que sugiere que los pesos están cuantizados o que solo se ha subido una parte del modelo. Con cero descargas y cero likes, se trata de un proyecto en fase inicial sin validación por parte de la comunidad.
 
 Para contextualizar, el modelo base Qwen2.5-VL-3B-Instruct es un modelo multimodal de 3,75 mil millones de parámetros, con una ventana de contexto de 32.000 tokens y licencia Apache 2.0. El fine-tune `road_aug` hereda presumiblemente estas características, pero no se dispone de datos verificados sobre su comportamiento real.
 
@@ -143,9 +143,9 @@ No se han publicado resultados de benchmarks para el modelo `road_aug` en la inf
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-VL-3B-Instruct (base) | 3,75B | 32k | Apache 2.0 | HuggingFace, ModelScope |
-| Mubee81/Qwen2.5-VL-3B-Instruct-road_aug | 3,75B (presumible) | 32k (presumible) | No disponible | HuggingFace |
-| Llama 3.2 Vision 3B | 3B | 128k | Apache 2.0 | HuggingFace |
+| Qwen2.5-VL-3B-Instruct (base) | 3,75B | 32k | Apache 2.0 | Hugging Face, ModelScope |
+| Mubee81/Qwen2.5-VL-3B-Instruct-road_aug | 3,75B (presumible) | 32k (presumible) | No disponible | Hugging Face |
+| Llama 3.2 Vision 3B | 3B | 128k | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para el fine-tune. El modelo base Qwen2.5-VL-3B-Instruct es competitivo en tareas de vision-lenguaje dentro de su rango de tamano, pero el fine-tune no ha sido evaluado en ningun benchmark publico.
 
@@ -160,7 +160,7 @@ No se dispone de datos de rendimiento comparativo para el fine-tune. El modelo b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mubee81/Qwen2.5-VL-3B-Instruct-road_aug
+- Modelo en Hugging Face: https://huggingface.co/Mubee81/Qwen2.5-VL-3B-Instruct-road_aug
 - Modelo base Qwen2.5-VL-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Modelo base en ModelScope: https://modelscope.ai/models/Qwen/Qwen2.5-VL-3B-Instruct
 - Modelo base en SourceForge: https://sourceforge.net/projects/qwen2-5-vl-3b-instruct/

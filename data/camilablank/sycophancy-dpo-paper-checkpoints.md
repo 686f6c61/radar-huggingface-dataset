@@ -77,7 +77,7 @@ La principal diferencia es el proposito: los checkpoints de sycophancy no estan 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/camilablank/sycophancy-dpo-paper-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/camilablank/sycophancy-dpo-paper-checkpoints
 - Codigo del proyecto: https://github.com/camilablank/sycophancy-dpo
 - Dataset asociado: https://huggingface.co/datasets/camilablank/sycophancy-dpo-testbed-v3
 - Repositorio relacionado (checkpoints de sycophancy-confidence): https://huggingface.co/camilablank/all_sycophancy_checkpoints

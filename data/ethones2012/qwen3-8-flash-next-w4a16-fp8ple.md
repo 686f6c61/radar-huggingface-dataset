@@ -80,10 +80,10 @@ Notas de rendimiento aportadas por el autor: la decodificacion depende principal
 
 | Modelo | Relacion | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ethones2012/Qwen3.8-Flash-Next-W4A16-FP8PLE (esta ficha) | Checkpoint W4A16 + FP8 PLE, INT8 KV | 72.758.053.011 segun safetensors | 135.168 a 262.144 tokens | 3.401-3.413 tok/s prefill y 84-89 tok/s decode en 2x RTX 3090 | qwen-community-1.0 | HuggingFace, 16 descargas |
-| Intel/Qwen3.8-Flash-Next-W4A16-AutoRound | Modelo base directo de la cuantizacion | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| RadixArk/Qwen3.8-Flash-Next-NVFP4 | Cuantizacion NVFP4 del mismo modelo base | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.8-Flash-Next | Modelo original sin cuantizar | 125B de lenguaje + 51B de embeddings n-gram, 6B activos | no disponible | no disponible | no disponible | HuggingFace y GitHub |
+| ethones2012/Qwen3.8-Flash-Next-W4A16-FP8PLE (esta ficha) | Checkpoint W4A16 + FP8 PLE, INT8 KV | 72.758.053.011 segun safetensors | 135.168 a 262.144 tokens | 3.401-3.413 tok/s prefill y 84-89 tok/s decode en 2x RTX 3090 | qwen-community-1.0 | Hugging Face, 16 descargas |
+| Intel/Qwen3.8-Flash-Next-W4A16-AutoRound | Modelo base directo de la cuantizacion | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| RadixArk/Qwen3.8-Flash-Next-NVFP4 | Cuantizacion NVFP4 del mismo modelo base | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.8-Flash-Next | Modelo original sin cuantizar | 125B de lenguaje + 51B de embeddings n-gram, 6B activos | no disponible | no disponible | no disponible | Hugging Face y GitHub |
 | Niko1221/Strata (runtime sobre Qwen3.8-Flash-Next) | Runtime alternativo con cuantizacion IQ3_S para GPU de 12 GB | 125.000 millones citados por el proyecto | 128K en el ejemplo mostrado (RTX 5070, IQ3_S) | no disponible | no disponible | GitHub, codigo abierto |
 
 No se dispone de datos de rendimiento de calidad ni de throughput de los modelos alternativos en la informacion proporcionada, por lo que la comparacion se limita a la naturaleza del empaquetado y a los requisitos de hardware declarados.
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento de calidad ni de throughput de los modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ethones2012/Qwen3.8-Flash-Next-W4A16-FP8PLE
+- Modelo en Hugging Face: https://huggingface.co/ethones2012/Qwen3.8-Flash-Next-W4A16-FP8PLE
 - Repositorio con nombre identico citado en la model card: https://huggingface.co/albucino/Qwen3.8-Flash-Next-W4A16-FP8PLE
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Checkpoint base de la cuantizacion: https://huggingface.co/Intel/Qwen3.8-Flash-Next-W4A16-AutoRound

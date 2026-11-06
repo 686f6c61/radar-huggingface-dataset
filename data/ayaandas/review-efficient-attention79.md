@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ayaandas/review-efficient-attention79` no es un modelo de lenguaje entrenado, sino una nota de investigacion (research note) sobre atencion eficiente publicada en HuggingFace. Su model card lo describe explicitamente como un artefacto exploratorio que recoge el alcance de una pregunta de investigacion, los posibles factores de confusion y los requisitos de reproducibilidad antes de reportar cualquier resultado de benchmark. El propio autor indica que no reclama mejoras de rendimiento, ablaciones completadas, codigo liberado ni un checkpoint entrenado.
+El repositorio `ayaandas/review-efficient-attention79` no es un modelo de lenguaje entrenado, sino una nota de investigacion (research note) sobre atencion eficiente publicada en Hugging Face. Su model card lo describe explicitamente como un artefacto exploratorio que recoge el alcance de una pregunta de investigacion, los posibles factores de confusion y los requisitos de reproducibilidad antes de reportar cualquier resultado de benchmark. El propio autor indica que no reclama mejoras de rendimiento, ablaciones completadas, codigo liberado ni un checkpoint entrenado.
 
 El repositorio contiene un unico artefacto principal, `review.md`, acompanado de `README.md`. Los pesos en formato safetensors suman 49.600 parametros totales, una cifra que corresponde a un tensor de tamano despreciable y que no es coherente con un modelo funcional; lo mas probable es que se trate de un fichero de peso residual o de un placeholder generado por el flujo de publicacion, no de un modelo utilizable para inferencia.
 
@@ -49,7 +49,7 @@ En la practica, el unico contenido funcional del repositorio es documental: la n
 - Diseno de protocolos de evaluacion en eficiencia de atencion: la nota propone Long Range Arena, ImageNet-1K y Flickr30k como contextos concretos, lo que permite reutilizar ese esquema al planificar una bateria de pruebas propia.
 - Auditoria de reproducibilidad: el documento exige versiones de dataset, comandos, semillas, hardware y registros crudos, lo que lo hace util como lista de comprobacion en revisiones internas de experimentos.
 - Docencia e introduccion a la investigacion: sirve como ejemplo de la diferencia entre plan, hipotesis y resultado experimental, un error frecuente en notas publicadas en abierto.
-- Analisis de higiene de repositorios en HuggingFace: el caso ilustra como un tag de pipeline y un fichero safetensors pueden dar apariencia de modelo sin serlo, util para disenar filtros de calidad en catalogos internos.
+- Analisis de higiene de repositorios en Hugging Face: el caso ilustra como un tag de pipeline y un fichero safetensors pueden dar apariencia de modelo sin serlo, util para disenar filtros de calidad en catalogos internos.
 - Verificacion de licencias en reutilizacion de notas: la licencia cc-by-4.0 permite reutilizar y adaptar el texto citando autoria, lo que facilita incorporarlo a documentacion interna de un equipo de investigacion.
 
 Ninguno de estos casos implica ejecutar el modelo. No existe un caso de uso de inferencia porque no hay un modelo entrenado descrito.
@@ -83,6 +83,6 @@ No disponible. No existen modelos comparables en la misma categoria porque el re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ayaandas/review-efficient-attention79
-- Fichero principal referenciado en la model card: `review.md` (dentro del repositorio de HuggingFace)
+- Hugging Face: https://huggingface.co/ayaandas/review-efficient-attention79
+- Fichero principal referenciado en la model card: `review.md` (dentro del repositorio de Hugging Face)
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al autor ni al contenido de la nota. Los unicos resultados devueltos corresponden a una persona del sector asegurador sin relacion aparente con el repositorio, por lo que se omiten.

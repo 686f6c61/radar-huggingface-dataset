@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-24B-A2B-oQ2e es una cuantización de precisión mixta publicada por el usuario bambocher en HuggingFace, derivada del modelo base LFM2.5-24B-A2B (etiqueta `lfm2_moe`, familia LFM2). No se trata de un modelo entrenado desde cero, sino de un checkpoint convertido al formato MLX para su ejecución en Apple Silicon, con un total de 23.971.587.712 parámetros lógicos almacenados en 7,694 GiB. La cuantización se realizó con oQ (oMLX v0.7.1), herramienta de cuantización de precisión mixta del ecosistema MLX.
+LFM2.5-24B-A2B-oQ2e es una cuantización de precisión mixta publicada por el usuario bambocher en Hugging Face, derivada del modelo base LFM2.5-24B-A2B (etiqueta `lfm2_moe`, familia LFM2). No se trata de un modelo entrenado desde cero, sino de un checkpoint convertido al formato MLX para su ejecución en Apple Silicon, con un total de 23.971.587.712 parámetros lógicos almacenados en 7,694 GiB. La cuantización se realizó con oQ (oMLX v0.7.1), herramienta de cuantización de precisión mixta del ecosistema MLX.
 
 El interés técnico del artefacto está en la relación entre tamaño y almacenamiento: el checkpoint completo cabe en 8,3 GB de disco con una media efectiva de 2,757 bits por peso, lo que lo sitúa en el rango de equipos de consumo con memoria unificada. Para lograrlo, el autor aplica 2 bits afines con grupo de 64 a la práctica totalidad de las matrices (95,743 % de los pesos), reserva 8 bits para un 4,234 % de las capas y mantiene en BF16 un 0,022 % de los tensores, presumiblemente los más sensibles a la cuantización.
 
@@ -85,7 +85,7 @@ No se dispone de datos de alternativas publicadas (licencia, contexto, rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bambocher/LFM2.5-24B-A2B-oQ2e
+- Modelo en Hugging Face: https://huggingface.co/bambocher/LFM2.5-24B-A2B-oQ2e
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base LFM2.5-24B-A2B: no disponible en la información proporcionada
 - Paper, blog o demo del modelo base: no disponible en la información proporcionada

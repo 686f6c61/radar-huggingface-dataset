@@ -66,9 +66,9 @@ Como referencia, el backbone sin MTP alcanzó 23.1 tokens/s en una prueba corta,
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (original) | 125B total / 6B activo | 262K | BF16 | Qwen Community 1.0 | HuggingFace |
-| Vontra/Qwen3.8-Flash-Next-MLX-oQ6-MTP (este) | 45.36B (safetensors) | 262K | oQ6 (6-bit mixto) | Qwen Community 1.0 | HuggingFace |
-| Vontra/Qwen3.8-Flash-Next-MLX-4bit | no disponible | 262K | 4-bit | Qwen Community 1.0 | HuggingFace |
+| Qwen3.8-Flash-Next (original) | 125B total / 6B activo | 262K | BF16 | Qwen Community 1.0 | Hugging Face |
+| Vontra/Qwen3.8-Flash-Next-MLX-oQ6-MTP (este) | 45.36B (safetensors) | 262K | oQ6 (6-bit mixto) | Qwen Community 1.0 | Hugging Face |
+| Vontra/Qwen3.8-Flash-Next-MLX-4bit | no disponible | 262K | 4-bit | Qwen Community 1.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas versiones. La versión 4-bit del mismo autor reduce el tamaño pero probablemente sacrifica calidad; la oQ6 mantiene mayor fidelidad con un coste de memoria superior. No se han encontrado otros modelos MoE multimodales de tamaño similar con conversión MLX en la información proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones. La vers
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-oQ6-MTP
+- Repositorio Hugging Face: https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-oQ6-MTP
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Blog de Qwen sobre Qwen3.8 Flash Next: https://qwen.ai/blog?id=qwen3.8-flash-next
 - MLX-VLM (runtime): https://github.com/ml-explore/mlx-vlm

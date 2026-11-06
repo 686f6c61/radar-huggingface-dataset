@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DataDecide-dolma1_7-no-code-1B-52500_55000_57500_60000_62500_weightedavg_merge es un modelo de lenguaje de aproximadamente 1,28 mil millones de parametros publicado por el usuario yuhengtu-bytedance en HuggingFace. No se trata de un entrenamiento desde cero, sino de una fusion de pesos (weight merging) generada con la herramienta mergekit: combina cinco checkpoints intermedios de un mismo experimento de preentrenamiento (pasos 52500, 55000, 57500, 60000 y 62500) de una variante de 1B de la receta "dolma1_7-no-code", es decir, el corpus Dolma 1.7 con el subconjunto de codigo excluido.
+DataDecide-dolma1_7-no-code-1B-52500_55000_57500_60000_62500_weightedavg_merge es un modelo de lenguaje de aproximadamente 1,28 mil millones de parametros publicado por el usuario yuhengtu-bytedance en Hugging Face. No se trata de un entrenamiento desde cero, sino de una fusion de pesos (weight merging) generada con la herramienta mergekit: combina cinco checkpoints intermedios de un mismo experimento de preentrenamiento (pasos 52500, 55000, 57500, 60000 y 62500) de una variante de 1B de la receta "dolma1_7-no-code", es decir, el corpus Dolma 1.7 con el subconjunto de codigo excluido.
 
 La operacion aplicada es una media ponderada lineal con normalizacion de pesos, en la que los checkpoints mas avanzados del entrenamiento reciben mayor peso (1, 2, 3, 4 y 5 respectivamente, sobre el checkpoint del paso 62500 como base). El resultado se guarda en bfloat16 y conserva el mismo numero de parametros que cualquiera de los checkpoints originales, por lo que no hay cambio de arquitectura ni de tamano respecto a la familia de origen.
 
@@ -23,14 +23,14 @@ Su relevancia es principalmente de investigacion: sirve como pieza dentro del es
 | Tamano del repositorio | 2,6 GB |
 | Biblioteca declarada | transformers |
 | Tipo de modelo | Fusion de checkpoints (mergekit, metodo Linear) |
-| Fecha de creacion en HuggingFace | 2026-09-17 |
+| Fecha de creacion en Hugging Face | 2026-09-17 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
 Este artefacto no define una arquitectura nueva ni un entrenamiento propio: es el resultado de un merge lineal (metodo `linear` de mergekit, referenciado al paper arXiv:2203.05482, "Model soups") sobre cinco checkpoints de un mismo run de preentrenamiento. El YAML publicado especifica `normalize: true`, de modo que los pesos declarados (1, 2, 3, 4 y 5) se reescalan para sumar 1; en la practica, los pesos efectivos son aproximadamente 0,0667 / 0,1333 / 0,2000 / 0,2667 / 0,3333, dando un tercio del peso al checkpoint final (paso 62500) y muy poco al mas temprano (paso 52500). El checkpoint del paso 62500 se usa ademas como `base_model`. Se trata, por tanto, de un promedio ponderado de interpolacion lineal de pesos, no de un ensemble ni de una destilacion.
 
-Los checkpoints de origen pertenecen a la receta "dolma1_7-no-code" en escala 1B, es decir, un corpus derivado de Dolma 1.7 con el codigo excluido. Por el nombre, el experimento parece enmarcarse en el estudio DataDecide sobre recetas de datos de preentrenamiento, aunque la model card no confirma esta procedencia ni aporta ningun detalle sobre el numero de tokens vistos, la composicion exacta del dataset, la tokenizacion, la inicializacion, el uso de RLHF/DPO (no hay ninguno: son checkpoints de preentrenamiento) o hiperparametros de entrenamiento. La configuracion del merge si es completamente reproducible en su logica, pero las rutas de los checkpoints fuente son rutas locales absolutas de un entorno interno (`/opt/tiger/Pan_Safety_Better_Measurement/...`), no identificadores publicos, por lo que el merge no puede reproducirse tal cual con los artefactos disponibles en HuggingFace.
+Los checkpoints de origen pertenecen a la receta "dolma1_7-no-code" en escala 1B, es decir, un corpus derivado de Dolma 1.7 con el codigo excluido. Por el nombre, el experimento parece enmarcarse en el estudio DataDecide sobre recetas de datos de preentrenamiento, aunque la model card no confirma esta procedencia ni aporta ningun detalle sobre el numero de tokens vistos, la composicion exacta del dataset, la tokenizacion, la inicializacion, el uso de RLHF/DPO (no hay ninguno: son checkpoints de preentrenamiento) o hiperparametros de entrenamiento. La configuracion del merge si es completamente reproducible en su logica, pero las rutas de los checkpoints fuente son rutas locales absolutas de un entorno interno (`/opt/tiger/Pan_Safety_Better_Measurement/...`), no identificadores publicos, por lo que el merge no puede reproducirse tal cual con los artefactos disponibles en Hugging Face.
 
 ## Capacidades
 
@@ -75,7 +75,7 @@ Los datos de los modelos comparados proceden de sus respectivas model cards publ
 
 | Modelo | Parametros | Contexto | Licencia | Post-entrenamiento | Disponibilidad |
 |---|---|---|---|---|---|
-| DataDecide-dolma1_7-no-code-1B weightedavg merge | ~1,28 B | No disponible | No disponible | Ninguno (checkpoints de preentrenamiento fusionados) | HuggingFace, safetensors, 0 descargas |
+| DataDecide-dolma1_7-no-code-1B weightedavg merge | ~1,28 B | No disponible | No disponible | Ninguno (checkpoints de preentrenamiento fusionados) | Hugging Face, safetensors, 0 descargas |
 | Llama 3.2 1B | ~1,24 B | 128 000 tokens | Llama 3.2 Community License | Base e instruct (con RLHF) | Muy extendida, ecosistema amplio |
 | Qwen2.5 1.5B | ~1,54 B | 32 768 tokens | Apache 2.0 | Base e instruct | Muy extendida, multiples cuantizaciones |
 | SmolLM2 1.7B | ~1,7 B | 8 192 tokens | Apache 2.0 | Base e instruct | Extendida, cuantizaciones GGUF oficiales |
@@ -95,12 +95,12 @@ Frente a estas alternativas, el modelo analizado no aporta ventajas declaradas d
 - No reproducibilidad del merge: las rutas de los checkpoints fuente son locales y no publicas; no se pueden regenerar los pesos a partir del repositorio.
 - Merges de este tipo pueden degradar capacidades: la media ponderada no garantiza mejorar al checkpoint final (paso 62500), y puede diluir caracteristicas aprendidas en fases tardias del entrenamiento.
 - Sin validacion de la comunidad: 0 descargas y 0 likes en el momento de la consulta, y ninguna referencia encontrada en busquedas web; no hay informes independientes de comportamiento.
-- Fecha de publicacion inusual (2026-09-17 en los metadatos de HuggingFace): conviene verificar la autenticidad y procedencia del artefacto antes de integrarlo en cualquier flujo.
+- Fecha de publicacion inusual (2026-09-17 en los metadatos de Hugging Face): conviene verificar la autenticidad y procedencia del artefacto antes de integrarlo en cualquier flujo.
 - Para produccion se recomienda tratar los pesos con el mismo nivel de escrutinio que un checkpoint sin publicar: evaluacion propia de sesgos, seguridad y calidad antes de cualquier despliegue.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-no-code-1B-52500_55000_57500_60000_62500_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-no-code-1B-52500_55000_57500_60000_62500_weightedavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Paper del metodo Linear / model soups: https://arxiv.org/abs/2203.05482
 - Las busquedas web realizadas no devolvieron ningun enlace relevante sobre este modelo (unicamente resultados de servicios de rastreo de paquetes y bases de datos de codigos de barras, sin relacion con el artefacto).

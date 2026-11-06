@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Miravo/Miravo-acne-analysis es un repositorio publicado en HuggingFace por el usuario u organización Miravo. Es todo lo que se puede afirmar con certeza a partir de la información disponible: el identificador del modelo, su autor, la etiqueta de región (`region:us`), un contador de 0 descargas y 1 like, y unas fechas de creación y última actualización idénticas (10 de septiembre de 2026). No se ha publicado ficha de modelo, no hay pipeline declarado, no consta licencia y no se especifican idiomas soportados.
+Miravo/Miravo-acne-analysis es un repositorio publicado en Hugging Face por el usuario u organización Miravo. Es todo lo que se puede afirmar con certeza a partir de la información disponible: el identificador del modelo, su autor, la etiqueta de región (`region:us`), un contador de 0 descargas y 1 like, y unas fechas de creación y última actualización idénticas (10 de septiembre de 2026). No se ha publicado ficha de modelo, no hay pipeline declarado, no consta licencia y no se especifican idiomas soportados.
 
 El nombre del repositorio sugiere un sistema orientado al análisis de acné, presumiblemente a partir de imágenes, pero esta interpretación es una inferencia a partir del identificador y no está respaldada por ninguna documentación técnica, paper o ejemplo de uso publicado en el propio repositorio ni en fuentes externas. No se dispone de información sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni proceso de ajuste.
 
@@ -20,7 +20,7 @@ La búsqueda web realizada no ha devuelto ningún resultado relacionado con el m
 | Idiomas soportados | no disponible |
 | Licencia | no disponible (no se declara licencia en el repositorio) |
 | Formato de pesos | no disponible |
-| Identificador en HuggingFace | Miravo/Miravo-acne-analysis |
+| Identificador en Hugging Face | Miravo/Miravo-acne-analysis |
 | Autor | Miravo |
 | Pipeline declarado | no disponible |
 | Etiquetas | region:us |
@@ -91,6 +91,6 @@ No disponible. No se han identificado modelos comparables porque se desconoce la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Miravo/Miravo-acne-analysis
+- Modelo en Hugging Face: https://huggingface.co/Miravo/Miravo-acne-analysis
 - Paper, blog técnico, repositorio de código o demo: no disponible.
 - Resultados de la búsqueda web: ninguno relevante. Los enlaces recuperados (foros sobre bloqueos de Facebook, incidencias de acceso a Canva y artículos en vietnamita sobre Canva AI) no guardan relación con el modelo ni con el análisis de acné.

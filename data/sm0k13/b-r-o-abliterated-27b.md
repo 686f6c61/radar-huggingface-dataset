@@ -2,7 +2,7 @@
 
 ## Resumen
 
-B.R.O — Zero Refusal v3.0 es un modelo de lenguaje derivado por destilación sobre la arquitectura Qwen3.5-35B-A3B, publicado por el usuario Sm0k13 en HuggingFace. Su objetivo declarado es eliminar por completo los mecanismos de rechazo (refusal) en ingles y hebreo, incluyendo peticiones relacionadas con ciberseguridad ofensiva y red teaming. El modelo se presenta como una edicion MoE de una familia previa (v1.0 y v2.0) que usaba un backbone denso de 27B; el identificador del repositorio conserva el sufijo "27B" por herencia, aunque la arquitectura real es de 35B totales con 3B activos por token.
+B.R.O — Zero Refusal v3.0 es un modelo de lenguaje derivado por destilación sobre la arquitectura Qwen3.5-35B-A3B, publicado por el usuario Sm0k13 en Hugging Face. Su objetivo declarado es eliminar por completo los mecanismos de rechazo (refusal) en ingles y hebreo, incluyendo peticiones relacionadas con ciberseguridad ofensiva y red teaming. El modelo se presenta como una edicion MoE de una familia previa (v1.0 y v2.0) que usaba un backbone denso de 27B; el identificador del repositorio conserva el sufijo "27B" por herencia, aunque la arquitectura real es de 35B totales con 3B activos por token.
 
 Tecnicamente se apoya en la arquitectura `qwen35moe`, que combina atencion lineal hibrida GatedDeltaNet con una capa MoE dispersa de 256 expertos enrutados mas un experto compartido por capa. El autor reporta una velocidad de 23,3 a 26,5 tokens por segundo en generacion sobre Apple Silicon con cuantizacion Q4_K_M (unos 20,5 GB), lo que supone aproximadamente 4,5 veces mas rapido que la version densa anterior.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sm0k13/B.R.O-abliterated-27B
+- Hugging Face: https://huggingface.co/Sm0k13/B.R.O-abliterated-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Modelo intermedio: https://huggingface.co/HauhauCS/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Repositorio GitHub del instalador: https://github.com/timamar187-creator/BRO-abliterated-27B

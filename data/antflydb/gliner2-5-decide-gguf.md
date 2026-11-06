@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- HuggingFace (esta conversion): https://huggingface.co/antflydb/gliner2.5-decide-gguf
+- Hugging Face (esta conversion): https://huggingface.co/antflydb/gliner2.5-decide-gguf
 - Modelo base: https://huggingface.co/fastino/GLiNER2.5-Decide
 - Ficheros del repositorio upstream: https://huggingface.co/fastino/GLiNER2.5-Decide/tree/main
 - Model card de Fastino (diseno, usos previstos, limitaciones y evaluacion): https://huggingface.co/fastino/GLiNER2.5-Decide

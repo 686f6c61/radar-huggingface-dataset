@@ -82,7 +82,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/happybrian/fast-brain-summary-adapter
+- Hugging Face del adaptador: https://huggingface.co/happybrian/fast-brain-summary-adapter
 - Modelo base: https://huggingface.co/happybrian/fast-brain-base
 - Libreria `mlx-lm`: https://github.com/ml-explore/mlx-lm
 - Paper, blog o demo del autor: no disponible

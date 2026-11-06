@@ -59,7 +59,7 @@ Como innovaciones tecnicas destacan la atencion dispersa de video (VSA) con estr
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas cuantitativas (FVD, CLIP score, VBench ni comparaciones con el profesor denso), y tampoco se han encontrado evaluaciones externas en la busqueda web realizada. El modelo registra 0 descargas y 0 likes en HuggingFace en el momento de redactar esta ficha.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas cuantitativas (FVD, CLIP score, VBench ni comparaciones con el profesor denso), y tampoco se han encontrado evaluaciones externas en la busqueda web realizada. El modelo registra 0 descargas y 0 likes en Hugging Face en el momento de redactar esta ficha.
 
 ## Requisitos de hardware
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Muestreo | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| memset0/vsqa-preview-1.3b | ~1.300 M | 3 pasos (DMD) | NVFP4 QAT + VSA sparsity 0,9 | Apache-2.0 | Preview en HuggingFace, 0 descargas |
+| memset0/vsqa-preview-1.3b | ~1.300 M | 3 pasos (DMD) | NVFP4 QAT + VSA sparsity 0,9 | Apache-2.0 | Preview en Hugging Face, 0 descargas |
 | Wan-AI/Wan2.1-T2V-1.3B-Diffusers (profesor) | ~1.300 M | Multiples pasos (denso) | BF16 | Apache-2.0 | Ampliamente disponible |
 | CogVideoX-2B | ~2.000 M | Multiples pasos | No disponible en la informacion | No disponible en la informacion | No disponible en la informacion |
 | LTX-Video | No disponible en la informacion | No disponible en la informacion | No disponible en la informacion | No disponible en la informacion | No disponible en la informacion |
@@ -96,11 +96,11 @@ La comparacion cuantitativa de calidad frente al profesor denso no puede realiza
 - Sin filtros de seguridad documentados: no se menciona ninguna moderacion de prompts ni de video generado, lo que traslada al integrador la responsabilidad de filtrar contenido.
 - Licencia Apache-2.0, compatible con uso comercial, pero conviene revisar tambien los terminos del modelo base Wan2.1-T2V-1.3B y de los componentes reutilizados (text encoder, VAE).
 - Codigo de riesgo operativo: el repositorio incluye varias rutas de cuantizacion especifica de hardware; en GPU sin soporte FP4 el rendimiento puede degradarse notablemente.
-- Adopcion nula: 0 descargas y 0 likes en HuggingFace implican que no existe validacion por parte de la comunidad.
+- Adopcion nula: 0 descargas y 0 likes en Hugging Face implican que no existe validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/memset0/vsqa-preview-1.3b
+- Modelo en Hugging Face: https://huggingface.co/memset0/vsqa-preview-1.3b
 - Checkpoint relacionado (vsqa-test-1.3b): https://huggingface.co/memset0/vsqa-test-1.3b
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers
 - Perfil de GitHub del autor: https://github.com/memset0

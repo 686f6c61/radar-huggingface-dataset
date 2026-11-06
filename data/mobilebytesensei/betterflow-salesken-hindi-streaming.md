@@ -82,6 +82,6 @@ No se dispone de datos comparativos con otros modelos ASR en streaming para hind
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mobilebytesensei/betterflow-salesken-hindi-streaming)
+- [Modelo en Hugging Face](https://huggingface.co/mobilebytesensei/betterflow-salesken-hindi-streaming)
 - [Modelo base: salesken/Hindi-FastConformer-Streaming-ASR](https://huggingface.co/salesken/Hindi-FastConformer-Streaming-ASR)
 - [Modelo original de NVIDIA (referencia)](https://huggingface.co/nvidia/stt_en_fastconformer_hybrid_large_streaming_multi)

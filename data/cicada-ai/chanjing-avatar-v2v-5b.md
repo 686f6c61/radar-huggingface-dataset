@@ -68,6 +68,6 @@ No disponible. No se han encontrado comparaciones con otros modelos de avatar pa
 
 ## Enlaces
 
-- [HuggingFace - Chanjing-Avatar V2V 5B](https://huggingface.co/cicada-ai/Chanjing-Avatar-V2V-5B)
+- [Hugging Face - Chanjing-Avatar V2V 5B](https://huggingface.co/cicada-ai/Chanjing-Avatar-V2V-5B)
 - [GitHub - chanjing-ai/Jogg-Avatar-V2V](https://github.com/chanjing-ai/Jogg-Avatar-V2V)
 - [Modelo base Wan2.2-TI2V-5B](https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B)

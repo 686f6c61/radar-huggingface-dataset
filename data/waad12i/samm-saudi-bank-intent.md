@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `waad12I/samm-saudi-bank-intent` es un clasificador de texto basado en la arquitectura BERT, publicado en HuggingFace por el usuario waad12I. Con 143.707.478 parámetros totales, se trata de un modelo de la familia BERT-base o similar, ajustado para la tarea de clasificación de intenciones (intent classification) en el dominio bancario saudí, a juzgar por su identificador. El nombre sugiere que está orientado a detectar la intención del usuario en interacciones con un banco saudí (posiblemente el banco SAMM, aunque no se confirma en la documentación).
+El modelo `waad12I/samm-saudi-bank-intent` es un clasificador de texto basado en la arquitectura BERT, publicado en Hugging Face por el usuario waad12I. Con 143.707.478 parámetros totales, se trata de un modelo de la familia BERT-base o similar, ajustado para la tarea de clasificación de intenciones (intent classification) en el dominio bancario saudí, a juzgar por su identificador. El nombre sugiere que está orientado a detectar la intención del usuario en interacciones con un banco saudí (posiblemente el banco SAMM, aunque no se confirma en la documentación).
 
-La relevancia de este modelo radica en su especialización vertical: los clasificadores de intención son componentes fundamentales en sistemas de atención al cliente automatizada, chatbots y enrutamiento de consultas. Sin embargo, la información pública disponible es extremadamente limitada: la model card es la plantilla automática de HuggingFace sin completar, no se especifican idiomas, licencia, datos de entrenamiento ni resultados de evaluación. El repositorio tiene 0 descargas y 0 likes, lo que indica que es un modelo recién publicado o de uso interno sin validación comunitaria.
+La relevancia de este modelo radica en su especialización vertical: los clasificadores de intención son componentes fundamentales en sistemas de atención al cliente automatizada, chatbots y enrutamiento de consultas. Sin embargo, la información pública disponible es extremadamente limitada: la model card es la plantilla automática de Hugging Face sin completar, no se especifican idiomas, licencia, datos de entrenamiento ni resultados de evaluación. El repositorio tiene 0 descargas y 0 likes, lo que indica que es un modelo recién publicado o de uso interno sin validación comunitaria.
 
 Se trata, por tanto, de un modelo del que se conocen únicamente los metadatos técnicos básicos (arquitectura BERT, 143,7M de parámetros, pipeline de clasificación de texto, pesos en safetensors) pero cuya calidad, rendimiento y condiciones de uso no pueden verificarse con la información disponible.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| waad12I/samm-saudi-bank-intent | 143,7M | no disponible | Clasificación de intención bancaria | no disponible | HuggingFace (0 descargas) |
-| bert-base-multilingual-cased | 178M | 512 tokens | Clasificación general / fine-tuning | Apache 2.0 | HuggingFace (ampliamente usado) |
-| CAMeL-Lab/bert-base-arabic-camelbert-mix | ~110M | 512 tokens | NLP árabe general | no disponible | HuggingFace |
+| waad12I/samm-saudi-bank-intent | 143,7M | no disponible | Clasificación de intención bancaria | no disponible | Hugging Face (0 descargas) |
+| bert-base-multilingual-cased | 178M | 512 tokens | Clasificación general / fine-tuning | Apache 2.0 | Hugging Face (ampliamente usado) |
+| CAMeL-Lab/bert-base-arabic-camelbert-mix | ~110M | 512 tokens | NLP árabe general | no disponible | Hugging Face |
 
 La comparación es limitada porque no se dispone de métricas de rendimiento del modelo principal. Frente a un BERT multilingüe genérico, este modelo estaría teóricamente especializado en el dominio bancario saudí, pero sin datos de evaluación no puede confirmarse que supere a un baseline genérico ajustado. La licencia no disponible es un factor de riesgo frente a alternativas con licencias permisivas como Apache 2.0.
 
@@ -79,6 +79,6 @@ La comparación es limitada porque no se dispone de métricas de rendimiento del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/waad12I/samm-saudi-bank-intent
+- Modelo en Hugging Face: https://huggingface.co/waad12I/samm-saudi-bank-intent
 - Paper de referencia citado en los tags (ML Impact Calculator, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de carbono: https://mlco2.github.io/impact#compute

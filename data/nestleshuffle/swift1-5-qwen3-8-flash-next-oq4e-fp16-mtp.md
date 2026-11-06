@@ -85,7 +85,7 @@ No se han identificado en la información proporcionada otros VLM abiertos de es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nestleshuffle/Swift1.5-Qwen3.8-Flash-Next-oQ4e-fp16-mtp
+- Repositorio en Hugging Face: https://huggingface.co/Nestleshuffle/Swift1.5-Qwen3.8-Flash-Next-oQ4e-fp16-mtp
 - Modelo base: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-Flash-Next/blob/main/LICENSE
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx

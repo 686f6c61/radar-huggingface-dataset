@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no incluye otras politicas comparabl
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/RhodWeo/microduck-rhod-roller
+- Ficha del modelo en Hugging Face: https://huggingface.co/RhodWeo/microduck-rhod-roller
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de retos y tareas de entrenamiento: https://github.com/pollen-robotics/microduck-challenges
 - Documentacion del manifiesto de politicas: `docs/policy-manifest.md` dentro del repositorio del demonio de control de microduck (no se proporciona URL directa)

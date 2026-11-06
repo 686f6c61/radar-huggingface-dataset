@@ -82,8 +82,8 @@ Comparación con modelos frontera en las primeras 20 especificaciones de eval (s
 
 | Modelo | Tipo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B NACHA writer (este) | LoRA sobre Qwen3-4B | 4B (base) | Generación de ficheros ACH exactos | Apache 2.0 | HuggingFace, abierto |
-| Qwen/Qwen3-4B (base) | Transformer denso | 4B | Uso general | Apache 2.0 | HuggingFace, abierto |
+| Qwen3-4B NACHA writer (este) | LoRA sobre Qwen3-4B | 4B (base) | Generación de ficheros ACH exactos | Apache 2.0 | Hugging Face, abierto |
+| Qwen/Qwen3-4B (base) | Transformer denso | 4B | Uso general | Apache 2.0 | Hugging Face, abierto |
 | Claude Opus 5.5 | Modelo frontera propietario | no disponible | Uso general (17/20 en ACH) | Propietaria | API de Anthropic |
 | GPT-5.5 | Modelo frontera propietario | no disponible | Uso general (3/20 en ACH) | Propietaria | API de OpenAI |
 
@@ -101,7 +101,7 @@ En su dominio estrecho, este adaptador de 4B supera a los modelos frontera evalu
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/paawandesai/qwen3-4b-nacha-writer
+- Ficha del modelo en Hugging Face: https://huggingface.co/paawandesai/qwen3-4b-nacha-writer
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/paawandesai/nacha-ach-writer
 - Demo en vivo (base vs afinado, evaluado por código): https://moe-slm--nacha-demo-web.us-east.modal.run

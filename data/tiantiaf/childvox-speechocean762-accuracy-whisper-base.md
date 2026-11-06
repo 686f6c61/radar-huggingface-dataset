@@ -4,7 +4,7 @@
 
 El modelo `tiantiaf/childvox-speechocean762-accuracy-whisper-base` es un modelo de reconocimiento de habla infantil publicado por el autor `tiantiaf` dentro del proyecto ChildVox. ChildVox se presenta como un benchmark unificado que evalúa la comprensión y caracterización del sonido a lo largo de la infancia, desde sonidos fisiológicos al nacer hasta el habla en edad escolar. Este modelo concreto parece estar orientado a medir la precisión (accuracy) en el dataset SpeechOcean762, una referencia estándar para evaluación de pronunciación y prosodia.
 
-El nombre sugiere que se trata de un ajuste fino (fine-tuning) de la arquitectura Whisper-base de OpenAI, aunque no se dispone de confirmación explícita en la información proporcionada. La ficha de HuggingFace es mínima: no incluye licencia, idiomas, pipeline ni tamaño del repositorio (0.0 GB). El modelo se subió mediante PyTorchModelHubMixin, lo que indica que el código de carga está disponible en el repositorio de GitHub enlazado.
+El nombre sugiere que se trata de un ajuste fino (fine-tuning) de la arquitectura Whisper-base de OpenAI, aunque no se dispone de confirmación explícita en la información proporcionada. La ficha de Hugging Face es mínima: no incluye licencia, idiomas, pipeline ni tamaño del repositorio (0.0 GB). El modelo se subió mediante PyTorchModelHubMixin, lo que indica que el código de carga está disponible en el repositorio de GitHub enlazado.
 
 La relevancia de este modelo radica en su posible aplicación a la evaluación de habla infantil, un área con escasez de recursos específicos y donde los modelos generales suelen degradar su rendimiento. Sin embargo, al carecer de documentación técnica detallada y de resultados de evaluación publicados, su utilidad práctica queda pendiente de verificación.
 
@@ -65,14 +65,14 @@ No se dispone de información suficiente para establecer una comparativa riguros
 - Riesgo de sesgos y alucinaciones: al no conocer los datos de entrenamiento, no es posible evaluar sesgos de género, edad o acento. Los modelos de habla entrenados con datos limitados suelen mostrar degradación en voces no representadas.
 - Licencia desconocida: no se indica licencia, por lo que no está claro si se permite uso comercial, modificación o redistribución.
 - Repositorio sin actividad: el repositorio de GitHub no muestra información adicional en la búsqueda web; el paper está marcado como "More Information Needed".
-- Tamaño del repositorio en HuggingFace es 0.0 GB, lo que sugiere que puede no contener pesos reales o que estos están almacenados externamente. Esto hace inviable su descarga directa.
+- Tamaño del repositorio en Hugging Face es 0.0 GB, lo que sugiere que puede no contener pesos reales o que estos están almacenados externamente. Esto hace inviable su descarga directa.
 - Fecha de creación futura (2026-09-03) según los metadatos, lo que podría indicar un error en el registro o un modelo aún no publicado oficialmente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tiantiaf/childvox-speechocean762-accuracy-whisper-base
+- Modelo en Hugging Face: https://huggingface.co/tiantiaf/childvox-speechocean762-accuracy-whisper-base
 - Repositorio de código (según model card): https://github.com/tiantiaf0627/childvox-release
 - Página del proyecto ChildVox: https://tiantiaf0627.github.io/childvox/
-- Colección ChildVox en HuggingFace: https://huggingface.co/collections/tiantiaf/childvox
+- Colección ChildVox en Hugging Face: https://huggingface.co/collections/tiantiaf/childvox
 - Paper (enlace a arXiv, según búsqueda web): https://arxiv.org/html/2605.29257v1
 - Análisis del paper en aimodels.fyi: https://www.aimodels.fyi/papers/arxiv/childvox-speech-audio-large-audio-language-model

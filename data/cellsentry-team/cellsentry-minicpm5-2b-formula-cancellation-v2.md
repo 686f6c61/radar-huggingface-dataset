@@ -90,7 +90,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks gen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cellsentry-team/cellsentry-minicpm5-2b-formula-cancellation-v2
+- Hugging Face: https://huggingface.co/cellsentry-team/cellsentry-minicpm5-2b-formula-cancellation-v2
 - Model card completa original: https://huggingface.co/cellsentry-team/cellsentry-minicpm5-2b-formula-cancellation-v2/blob/ffaa261f5d7732848fb726dd15224035b8e63c8d/README.md
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Directorio de evaluación: https://huggingface.co/cellsentry-team/cellsentry-minicpm5-2b-formula-cancellation-v2/tree/main/evaluation

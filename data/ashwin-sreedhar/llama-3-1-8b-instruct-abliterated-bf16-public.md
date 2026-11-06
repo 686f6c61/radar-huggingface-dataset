@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-Instruct-abliterated-bf16-public es un checkpoint experimental derivado de meta-llama/Llama-3.1-8B-Instruct, publicado por el usuario ashwin-sreedhar en HuggingFace. Se trata de una versión "abliterada": los pesos originales han sido editados mediante una intervención de dirección (directional ablation) con el objetivo de reducir los comportamientos de rechazo del modelo, manteniendo intactas sus capacidades generales de generación de texto.
+Llama-3.1-8B-Instruct-abliterated-bf16-public es un checkpoint experimental derivado de meta-llama/Llama-3.1-8B-Instruct, publicado por el usuario ashwin-sreedhar en Hugging Face. Se trata de una versión "abliterada": los pesos originales han sido editados mediante una intervención de dirección (directional ablation) con el objetivo de reducir los comportamientos de rechazo del modelo, manteniendo intactas sus capacidades generales de generación de texto.
 
 El modelo conserva la arquitectura y el tamaño del original: un transformer denso de 8.030.261.248 parámetros distribuidos en formato safetensors con precisión bf16 (16,1 GB en total). No es un reentrenamiento completo, sino una edición quirúrgica de pesos, lo que explica el tamaño reducido del repo respecto a lo que cabría esperar de un fine-tuning con checkpoints adicionales.
 
@@ -44,7 +44,7 @@ Los detalles de la intervención (política, dirección, criterio de selección,
 - Verificacion de integridad de despliegues: el repositorio documenta un pipeline de comprobación SHA-256, verificación de tensores tras el guardado y recarga en proceso limpio, útil como plantilla para validar checkpoints editados antes de servirlos.
 - Experimentacion local en generacion de texto: al ser un modelo de 8B en bf16, puede ejecutarse en estaciones de trabajo con GPU de consumo para pruebas de inferencia y evaluación cualitativa.
 - Comparativa de checkpoints derivados: útil como punto de referencia frente a otras variantes abliteradas de Llama 3.1 8B para medir qué técnica de abliteration preserva mejor las capacidades originales.
-- Prototipado de pipelines con transformers: al ser compatible con la librería `transformers` y con endpoints, puede integrarse en scripts de evaluación automatizada o en HuggingFace Inference Endpoints para pruebas internas.
+- Prototipado de pipelines con transformers: al ser compatible con la librería `transformers` y con endpoints, puede integrarse en scripts de evaluación automatizada o en Hugging Face Inference Endpoints para pruebas internas.
 
 No es adecuado para producción de producto final: el propio autor marca el modelo como experimental y advierte que ni la eliminación de rechazos ni la preservación de capacidades están establecidas.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 16-17 GB en bf16 para los pesos, más la sobrecarga de KV cache y activaciones; en la práctica, una GPU de 24 GB es lo cómodo, y una de 16 GB resulta justa con contexto corto.
 - GPU recomendadas: RTX 3090, RTX 4090, RTX 5090, A100, H100 o equivalentes con al menos 24 GB de VRAM para trabajar con holgura.
 - Consumer GPU: cabe en una RTX 3090 o RTX 4090 de 24 GB en bf16 sin cuantizar. En GPUs de 16 GB (RTX 4060 Ti 16GB, RTX 4080) es inviable en bf16 sin offloading; sería necesario cuantizar, pero no se publican pesos cuantizados en este repo.
-- Opciones de despliegue: librería `transformers` (formato nativo del repo), HuggingFace Inference Endpoints (etiquetado como `text-generation-inference` y `endpoints_compatible`). No hay pesos GGUF publicados, por lo que llama.cpp, Ollama o LM Studio requerirían conversión manual. vLLM y TGI deberían funcionar al ser una arquitectura Llama estándar, aunque no están verificados por el autor.
+- Opciones de despliegue: librería `transformers` (formato nativo del repo), Hugging Face Inference Endpoints (etiquetado como `text-generation-inference` y `endpoints_compatible`). No hay pesos GGUF publicados, por lo que llama.cpp, Ollama o LM Studio requerirían conversión manual. vLLM y TGI deberían funcionar al ser una arquitectura Llama estándar, aunque no están verificados por el autor.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ Frente al modelo base oficial, esta variante ofrece un comportamiento de rechazo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ashwin-sreedhar/Llama-3.1-8B-Instruct-abliterated-bf16-public
+- Modelo en Hugging Face: https://huggingface.co/ashwin-sreedhar/Llama-3.1-8B-Instruct-abliterated-bf16-public
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 y ficheros LICENSE, NOTICE y USE_POLICY.md: incluidos en el repositorio del modelo
 - Metadatos de la intervención (política, dirección, hashes y verificaciones): directorio `.pipeline/` dentro del repositorio

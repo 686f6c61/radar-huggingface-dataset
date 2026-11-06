@@ -42,7 +42,7 @@ Dos detalles de integracion son criticos: la senal debe entregarse en voltios (e
 
 ## Capacidades
 
-- Extraccion de caracteristicas de senal EEG: es la funcion principal del modelo y su `pipeline_tag` en HuggingFace (`feature-extraction`). Devuelve representaciones contextuales por ventana.
+- Extraccion de caracteristicas de senal EEG: es la funcion principal del modelo y su `pipeline_tag` en Hugging Face (`feature-extraction`). Devuelve representaciones contextuales por ventana.
 - Clasificacion downstream con sonda congelada: las caracteristicas aplanadas se usan con regresion/Clasificacion ridge en 12 conjuntos de datos de OpenEEGBench.
 - Regresion sobre variables continuas: evaluado con R² en la tarea `seed-vig` (vigilancia), aunque con resultado negativo.
 - Agnosticismo de montaje: funciona con cualquier numero y disposicion de electrodos, siempre que cada canal tenga coordenadas 3D en metros.
@@ -97,11 +97,11 @@ Se comparan las tres variantes de la misma familia citadas explicitamente en la 
 
 | Modelo | Framework | Mascara (r, L) | Parametros encoder | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eeg-fm-masking_jepa_rone_L1 (este) | JEPA | un canal, 1 parche | 12,69 M | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_jepa_r9cm_L2 | JEPA | 9 cm, 2 parches | no disponible en la informacion proporcionada | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_mae_r9cm_L2 | MAE | 9 cm, 2 parches | no disponible en la informacion proporcionada | CC-BY-4.0 | HuggingFace |
+| eeg-fm-masking_jepa_rone_L1 (este) | JEPA | un canal, 1 parche | 12,69 M | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_jepa_r9cm_L2 | JEPA | 9 cm, 2 parches | no disponible en la informacion proporcionada | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_mae_r9cm_L2 | MAE | 9 cm, 2 parches | no disponible en la informacion proporcionada | CC-BY-4.0 | Hugging Face |
 
-Las dos variantes con r = 9 cm y L = 2 son las que el paper recomienda. La familia completa consta de 58 codificadores entrenados con receta identica, accesibles desde la coleccion de HuggingFace del autor. No se dispone de informacion sobre otros modelos fundacionales de EEG (por ejemplo, alternativas comparables de terceros) en el material proporcionado.
+Las dos variantes con r = 9 cm y L = 2 son las que el paper recomienda. La familia completa consta de 58 codificadores entrenados con receta identica, accesibles desde la coleccion de Hugging Face del autor. No se dispone de informacion sobre otros modelos fundacionales de EEG (por ejemplo, alternativas comparables de terceros) en el material proporcionado.
 
 ## Limitaciones y advertencias
 
@@ -114,13 +114,13 @@ Las dos variantes con r = 9 cm y L = 2 son las que el paper recomienda. La famil
 - Corpus de preentrenamiento pequeno y sesgado hacia lo redistribuible: 323 grabaciones del subconjunto de licencia abierta de REVE. La cobertura de montajes, patologias y poblaciones es limitada por esa restriccion de licencia, y no se detalla la composicion demografica ni clinica.
 - Riesgo de sesgo no evaluado: la informacion disponible no incluye analisis de sesgos por edad, sexo, origen etnico ni por equipo de adquisicion. Un modelo de senal entrenado con pocas grabaciones puede generalizar mal fuera de su distribucion.
 - Licencia CC-BY-4.0: permite uso comercial, pero obliga a atribucion; el codigo del repositorio asociado es MIT. Hay que citar el paper segun indique la pagina de GitHub.
-- Adopcion practicamente nula: 0 descargas y 0 likes en HuggingFace en el momento consultado. No hay validacion independiente por parte de terceros.
+- Adopcion practicamente nula: 0 descargas y 0 likes en Hugging Face en el momento consultado. No hay validacion independiente por parte de terceros.
 - Sin cuantizaciones publicadas ni cifras de latencia o throughput: cualquier despliegue en produccion requiere medir el rendimiento real sobre el hardware objetivo.
 - Sin soporte de texto, vision, audio, tool calling ni agentes: cualquier flujo de trabajo que necesite esas capacidades debe combinarlo con otros modelos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_rone_L1
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_rone_L1
 - Sitio web del paper: https://pierregtch.github.io/eeg-fm-masking
 - Codigo (MIT): https://github.com/PierreGtch/eeg-fm-masking
 - Coleccion con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

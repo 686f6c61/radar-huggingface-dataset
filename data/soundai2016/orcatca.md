@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`soundai2016/orcatca` es un modelo publicado en HuggingFace por el usuario `soundai2016` bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicacion reciente o de caracter experimental.
+`soundai2016/orcatca` es un modelo publicado en Hugging Face por el usuario `soundai2016` bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicacion reciente o de caracter experimental.
 
 El nombre del repositorio no aporta pistas concluyentes sobre su proposito. El prefijo `orca` podria sugerir una relacion con la familia de datasets o metodos de destilacion Orca, mientras que `tca` no tiene una interpretacion establecida en el ecosistema. No obstante, se trata de una especulacion: no hay evidencia en la informacion disponible que confirme ninguna de estas hipotesis.
 
@@ -70,5 +70,5 @@ No disponible. Sin conocer el tamano, la arquitectura ni la tarea objetivo, no e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/soundai2016/orcatca
+- Hugging Face: https://huggingface.co/soundai2016/orcatca
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/urd-arab-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455` es un checkpoint de generacion de texto desarrollado por el usuario de HuggingFace francesca9805, aparentemente vinculado al grupo de investigacion de la Universidad de Groningen que trabaja en tokenizadores (proyecto de Weights & Biases "new-tokenizers"). Se trata de un ajuste fino (SFT) del modelo `francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed455`, realizado con la libreria TRL de HuggingFace.
+El modelo `francesca9805/urd-arab-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455` es un checkpoint de generacion de texto desarrollado por el usuario de Hugging Face francesca9805, aparentemente vinculado al grupo de investigacion de la Universidad de Groningen que trabaja en tokenizadores (proyecto de Weights & Biases "new-tokenizers"). Se trata de un ajuste fino (SFT) del modelo `francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed455`, realizado con la libreria TRL de Hugging Face.
 
 Tecnicamente es un transformer decoder-only de tipo GPT-2 con 124.770.816 parametros totales, lo que lo situa en la misma escala que GPT-2 small. El repositorio ocupa 1,5 GB y distribuye los pesos en formato safetensors, con soporte directo para `transformers` y compatibilidad declarada con `text-generation-inference` y endpoints.
 
@@ -39,7 +39,7 @@ El ejemplo de uso de la model card emplea una pregunta generica en ingles sobre 
 - Generacion de texto autoregresiva basica, propia de un transformer decoder-only de 124M de parametros.
 - Conversacion de un solo turno mediante el pipeline `text-generation` de `transformers`.
 - Ajuste fino adicional: al ser un modelo pequeno y con pesos safetensors, puede reentrenarse o adaptarse con LoRA en hardware modesto.
-- Compatibilidad declarada con `text-generation-inference` y con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad declarada con `text-generation-inference` y con endpoints de Hugging Face (tag `endpoints_compatible`).
 - Soporte de tool calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible, y poco probable dada la escala del modelo.
 - Capacidades multilingues: no disponibles. El nombre del modelo menciona Urdu y Arabe, pero no hay confirmacion oficial en la model card.
@@ -51,7 +51,7 @@ El ejemplo de uso de la model card emplea una pregunta generica en ingles sobre 
 - Analisis linguistico y sondeos (probing): un modelo de 124M entrenado sobre texto en escritura arabe o urdu permite extraer representaciones internas y estudiar que informacion morfologica o sintactica codifican sus capas.
 - Modelo de partida para ajuste fino con LoRA: al caber en cualquier GPU de consumo, sirve como punto de partida barato para experimentos de adaptacion a dominios concretos sin coste de computo relevante.
 - Generacion de texto a pequena escala en entornos sin GPU: con cuantizacion a 8 bits o 4 bits ocuparia del orden de 125-250 MB, por lo que puede ejecutarse en CPU para prototipos y pruebas de integracion.
-- Docencia y formacion: es un ejemplo manejable para explicar el ciclo completo de preentrenamiento, SFT con TRL y publicacion en HuggingFace, con un coste de entrenamiento bajo.
+- Docencia y formacion: es un ejemplo manejable para explicar el ciclo completo de preentrenamiento, SFT con TRL y publicacion en Hugging Face, con un coste de entrenamiento bajo.
 - Destilacion o comparacion de arquitecturas: sirve como referencia de linea base de 124M contra la que medir variantes mas grandes o con tokenizadores alternativos.
 - Pruebas de integracion de infraestructura: util para validar que un pipeline propio (TGI, vLLM, endpoints) funciona correctamente antes de desplegar modelos mayores, dado su reducido tamano de descarga (1,5 GB).
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| urd-arab-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455 | 124.770.816 | no disponible | no disponible | HuggingFace, 0 descargas |
-| GPT-2 small (OpenAI) | 124M | 1024 tokens | MIT | HuggingFace, ampliamente utilizado |
-| DistilGPT-2 | 82M | 1024 tokens | Apache 2.0 | HuggingFace |
-| Pythia-160M (EleutherAI) | 160M | 2048 tokens | Apache 2.0 | HuggingFace, con checkpoints intermedios |
+| urd-arab-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455 | 124.770.816 | no disponible | no disponible | Hugging Face, 0 descargas |
+| GPT-2 small (OpenAI) | 124M | 1024 tokens | MIT | Hugging Face, ampliamente utilizado |
+| DistilGPT-2 | 82M | 1024 tokens | Apache 2.0 | Hugging Face |
+| Pythia-160M (EleutherAI) | 160M | 2048 tokens | Apache 2.0 | Hugging Face, con checkpoints intermedios |
 
 La comparacion se limita a parametros, contexto y licencia: no existen datos de rendimiento publicados para el modelo objeto de esta ficha, por lo que no es posible contrastar calidad de generacion con las alternativas. Frente a GPT-2 small o Pythia-160M, la diferencia principal es la ausencia de documentacion, licencia explicita y evaluaciones, lo que penaliza su uso fuera de un contexto de investigacion.
 
@@ -94,7 +94,7 @@ La comparacion se limita a parametros, contexto y licencia: no existen datos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed455
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/j618e0yi
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-ss-chat` es un ajuste publicado por el usuario joshycodes en HuggingFace. El propio identificador sugiere que se trata de una adaptacion o fine-tuning derivada de Meta Llama 3.1 8B, aunque la informacion disponible en la ficha de HuggingFace no confirma la relacion exacta ni el proceso de entrenamiento seguido. La nomenclatura del nombre (los sufijos "sorrel", "atomic", "f-300m", "ss" y "chat") apunta a una posible fusion o destilacion sobre un componente de 300 millones de parametros, pero no hay documentacion publica que lo verifique.
+El modelo identificado como `joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-ss-chat` es un ajuste publicado por el usuario joshycodes en Hugging Face. El propio identificador sugiere que se trata de una adaptacion o fine-tuning derivada de Meta Llama 3.1 8B, aunque la informacion disponible en la ficha de Hugging Face no confirma la relacion exacta ni el proceso de entrenamiento seguido. La nomenclatura del nombre (los sufijos "sorrel", "atomic", "f-300m", "ss" y "chat") apunta a una posible fusion o destilacion sobre un componente de 300 millones de parametros, pero no hay documentacion publica que lo verifique.
 
-La relevancia de este tipo de publicaciones reside en el ecosistema de ajustes comunitarios sobre Llama 3.1, que permiten experimentar con variantes orientadas a conversacion ("chat") sin partir de cero. Sin embargo, en el momento de redactar esta ficha la ficha de HuggingFace no incluye model card descriptiva, pipeline declarado, licencia ni idiomas soportados, y el repositorio acumula 0 descargas y 1 "like", por lo que se trata de un artefacto practicamente sin uso ni validacion por parte de la comunidad.
+La relevancia de este tipo de publicaciones reside en el ecosistema de ajustes comunitarios sobre Llama 3.1, que permiten experimentar con variantes orientadas a conversacion ("chat") sin partir de cero. Sin embargo, en el momento de redactar esta ficha la ficha de Hugging Face no incluye model card descriptiva, pipeline declarado, licencia ni idiomas soportados, y el repositorio acumula 0 descargas y 1 "like", por lo que se trata de un artefacto practicamente sin uso ni validacion por parte de la comunidad.
 
 Dado que los resultados de la busqueda web realizada no guardan ninguna relacion con el modelo (devuelven catalogos de recambios de automovil Toyota Urban Cruiser), no ha sido posible recopilar informacion adicional fiable sobre sus caracteristicas, datos de entrenamiento o rendimiento. Todo dato no verificable se marca explicitamente como "no disponible".
 
@@ -66,9 +66,9 @@ Estos valores son extrapolaciones basadas en el tamano indicado en el nombre del
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-ss-chat | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-ss-chat | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Meta Llama 3.1 8B Instruct (referencia del modelo base) | 8.000 millones | 128.000 tokens | Llama 3.1 Community License | Ampliamente disponible |
-| Alternativas comunitarias de 8B sobre Llama 3.1 | 8.000 millones (tipico) | variable | variable segun autor | HuggingFace |
+| Alternativas comunitarias de 8B sobre Llama 3.1 | 8.000 millones (tipico) | variable | variable segun autor | Hugging Face |
 
 La comparativa con modelos de la misma categoria no puede completarse porque no se conocen los parametros, la licencia ni el rendimiento real de este ajuste. La unica referencia solida es el modelo base Llama 3.1 8B, del que este repositorio parece derivar segun su nombre.
 
@@ -85,5 +85,5 @@ La comparativa con modelos de la misma categoria no puede completarse porque no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-ss-chat
+- Hugging Face: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-ss-chat
 - No se han encontrado papers, blogs, repositorios ni demos relacionados con este modelo en la busqueda web realizada.

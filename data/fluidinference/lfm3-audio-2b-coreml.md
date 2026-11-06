@@ -6,7 +6,7 @@ LFM3-Audio-2B Core ML es una conversión del modelo LiquidAI/LFM3-Audio-2B de Li
 
 La relevancia de esta conversión radica en que permite ejecutar ASR de formato largo, LiveASR (transcripción en streaming en inglés con fragmentos de 0,96 s) y TTS sobre hardware consumer de Apple sin depender de la nube. Según la model card, el rendimiento medido en un M5 Pro (24 GB) alcanza un WER de 1,32 % en LibriSpeech test-clean con un RTFx de 18,4 para ASR offline, y un WER de 1,46 % con RTFx de 10,4 para LiveASR. El pico de memoria para ASR es de 1,9 GB y el paquete de archivos necesario ronda los 2,5 GB (unos 2,9 GB si se añade TTS).
 
-El contexto del modelo es de 4.096 posiciones. La licencia es LFM1.0 (etiquetada como "other" en HuggingFace), heredada del modelo base, y la librería de ejecución es FluidAudio, que expone una API en Swift (`LFM3AudioManager`) y una CLI (`fluidaudiocli`). No se han publicado datos sobre idiomas soportados más allá de las referencias a inglés, francés y "American English" en los ejemplos de la model card.
+El contexto del modelo es de 4.096 posiciones. La licencia es LFM1.0 (etiquetada como "other" en Hugging Face), heredada del modelo base, y la librería de ejecución es FluidAudio, que expone una API en Swift (`LFM3AudioManager`) y una CLI (`fluidaudiocli`). No se han publicado datos sobre idiomas soportados más allá de las referencias a inglés, francés y "American English" en los ejemplos de la model card.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El contexto del modelo es de 4.096 posiciones. La licencia es LFM1.0 (etiquetada
 | Longitud de contexto | 4.096 posiciones |
 | Tipos de cuantizacion | LM: int8 por bloque de 32 (pesos), cómputo fp16; encoder de audio, decodificador de profundidad y códec: fp16; tablas host: fp16/fp32; build ANE experimental: LUT8 grupo 8 |
 | Idiomas soportados | no disponible (la model card menciona inglés, francés y "American English" en ejemplos; LiveASR es solo inglés) |
-| Licencia | LFM1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | LFM1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | Core ML (`.mlmodelc`), más tablas binarias host (`.bin`) y assets JSON |
 
 ## Arquitectura y entrenamiento
@@ -103,7 +103,7 @@ No se dispone en la información proporcionada de datos de benchmarks de modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/lfm3-audio-2b-coreml
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/lfm3-audio-2b-coreml
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Audio-2B
 - Build Core AI: https://huggingface.co/FluidInference/lfm3-audio-2b-coreai
 - Repositorio FluidAudio: https://github.com/FluidInference/FluidAudio

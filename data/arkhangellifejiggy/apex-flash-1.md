@@ -23,7 +23,7 @@ Su relevancia radica en el nicho que cubre: un modelo de investigacion de vulner
 
 ## Arquitectura y entrenamiento
 
-No se detallan en la informacion disponible los pormenores de la arquitectura (numero de capas, tipo de atencion, si es transformer denso o mezcla de expertos). Lo unico confirmado es que apex-flash-1 parte del modelo zai-org/GLM-5.3-Flash y que conserva su arquitectura image-text-to-text, aunque la evaluacion publicada por el autor cubre exclusivamente tareas de seguridad basadas en texto. El pipeline declarado en HuggingFace es image-text-to-text y la etiqueta interna del repositorio es glm5_next.
+No se detallan en la informacion disponible los pormenores de la arquitectura (numero de capas, tipo de atencion, si es transformer denso o mezcla de expertos). Lo unico confirmado es que apex-flash-1 parte del modelo zai-org/GLM-5.3-Flash y que conserva su arquitectura image-text-to-text, aunque la evaluacion publicada por el autor cubre exclusivamente tareas de seguridad basadas en texto. El pipeline declarado en Hugging Face es image-text-to-text y la etiqueta interna del repositorio es glm5_next.
 
 El entrenamiento consistio en un post-entrenamiento por aprendizaje por refuerzo sobre entornos de software y protocolos similares a produccion, utilizando el arnes de agente Codex. No se especifican el volumen de tokens, la composicion del dataset, ni si se aplicaron tecnicas adicionales como DPO, RLHF clasico o decodificacion especulativa. El autor describe el modelo como un trabajador enfocado que debe operar bajo la direccion de un agente mayor y recomienda explicitamente el arnes Codex para este checkpoint.
 
@@ -75,7 +75,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Pass@1 (held-out, 60 tareas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| apex-flash-1 | 321,3 mil millones | no disponible | 66,7% (40/60) | MIT | Pesos abiertos en HuggingFace |
+| apex-flash-1 | 321,3 mil millones | no disponible | 66,7% (40/60) | MIT | Pesos abiertos en Hugging Face |
 | GLM-5.3-Flash | no disponible | no disponible | 60,0% (36/60) | no disponible en la informacion proporcionada | Modelo base de zai-org |
 | Claude Opus 5 High | no disponible | no disponible | 71,7% (43/60) | Propietaria | Solo via proveedor |
 | apex-flash-1-abliterated | derivado de apex-flash-1 | no disponible | no aplica (la evaluacion corresponde al checkpoint estandar) | no disponible | Pesos abiertos, experimental |
@@ -92,12 +92,12 @@ apex-flash-1 se situa entre el modelo base GLM-5.3-Flash y Claude Opus 5 High en
 - Existe riesgo de alucinacion inherente a los modelos de lenguaje, especialmente critico en un dominio donde una explotacion mal verificada puede dar falsos positivos. El propio flujo del autor incorpora verificadores del estado final del objetivo precisamente por este motivo.
 - El uso ofensivo de un modelo de estas caracteristicas exige controles legales y de autorizacion. La licencia MIT permite uso comercial, pero no exime de cumplir la legislacion aplicable en materia de acceso no autorizado a sistemas.
 - La existencia de la variante apex-flash-1-abliterated, con comportamiento de rechazo modificado, implica que la evaluacion publicada solo aplica al checkpoint estandar y no a dicha derivada.
-- El repositorio de HuggingFace figura bajo el autor ArkhAngelLifeJiggy, mientras que la model card atribuye el desarrollo a Cantina Security en colaboracion con Yeta. Conviene verificar la procedencia oficial antes de un despliegue en produccion.
+- El repositorio de Hugging Face figura bajo el autor ArkhAngelLifeJiggy, mientras que la model card atribuye el desarrollo a Cantina Security en colaboracion con Yeta. Conviene verificar la procedencia oficial antes de un despliegue en produccion.
 - El modelo tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no existe aun validacion independiente por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArkhAngelLifeJiggy/apex-flash-1
+- Hugging Face: https://huggingface.co/ArkhAngelLifeJiggy/apex-flash-1
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Variante derivada experimental: https://huggingface.co/cantina-security/apex-flash-1-abliterated
 - Nota de lanzamiento de Apex Flash: https://www.cantina.security/apex-flash

@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) en la informacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-VL-4B-Instruct-abliterated-v1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-VL-4B-Instruct-abliterated-v1-GGUF
 - Modelo base (abliterated): https://huggingface.co/prithivMLmods/Qwen3-VL-4B-Instruct-abliterated-v1
 - Variante imatrix: https://huggingface.co/mradermacher/Qwen3-VL-4B-Instruct-abliterated-v1-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3-VL-4B-Instruct-abliterated-v1-GGUF

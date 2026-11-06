@@ -79,6 +79,6 @@ La comparativa directa con otros modelos especializados en normalizacion de nomb
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/acidtib/dispensary-product-name-gemma3
+- Modelo en Hugging Face: https://huggingface.co/acidtib/dispensary-product-name-gemma3
 - Dataset de entrenamiento: https://huggingface.co/datasets/acidtib/dispensary-product-name-extraction
 - Modelo base (Gemma 3 270M instructivo): https://huggingface.co/google/gemma-3-270m-it

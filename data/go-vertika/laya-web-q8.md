@@ -29,7 +29,7 @@ El modelo combina un encoder ModernBERT-large (28 capas, dimension oculta 1024) 
 [CLS] <type> question: <instructions> [SEP] [MASK] opt0 [MASK] opt1 … [SEP] <state> [SEP]
 ```
 
-Cada opcion se puntua en su propia posicion `[MASK]`, y las probabilidades se obtienen con un softmax sobre esas posiciones, reescalado por temperaturas ajustadas que se guardan en `v1/rl_agent_config.json`. El pipeline de HuggingFace asociado es text-classification.
+Cada opcion se puntua en su propia posicion `[MASK]`, y las probabilidades se obtienen con un softmax sobre esas posiciones, reescalado por temperaturas ajustadas que se guardan en `v1/rl_agent_config.json`. El pipeline de Hugging Face asociado es text-classification.
 
 Sobre el entrenamiento del modelo base no hay informacion en la model card: no se detallan volumen de tokens, composicion del dataset ni si hubo RLHF o DPO. El unico indicio es la presencia del fichero `rl_agent_config.json` con temperaturas ajustadas, lo que sugiere un ajuste posterior a partir de un agente de refuerzo. La innovacion tecnica de esta publicacion concreta es la cuantizacion: la cuantizacion dinamica per-tensor hace caer el acuerdo de argmax al 69,2% y la per-channel al 76,9%. El analisis por variantes muestra que el dano lo causa la cuantizacion de activaciones, no la precision de los pesos: cuantizar solo las MatMul deja el acuerdo en el 65,4%, mientras que cuantizar solo los embeddings lo mantiene en el 100%. La solucion consiste en INT8 weight-only con MatMulNBits, que desquantiza dentro del kernel y deja las activaciones en fp32; los embeddings y la cabeza se guardan en fp16 (compatibles bit a bit con el bf16 original, cuyo error de reconstruccion medido es 0).
 
@@ -93,9 +93,9 @@ La informacion disponible solo permite comparar con el modelo base y con la copi
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `convaiinnovations/laya` (base) | no disponible | no disponible | bf16 (fp32 en ONNX de referencia) | Apache 2.0 | HuggingFace |
-| `nvkudva/laya-web-q8` | identicos al base | identicos al base | INT8 weight-only (MatMulNBits, block 64) | Apache 2.0 | HuggingFace mas demo en navegador |
-| `go-vertika/laya-web-q8` | identicos al base | identicos al base | INT8 weight-only (MatMulNBits, block 64) | Apache 2.0 | HuggingFace |
+| `convaiinnovations/laya` (base) | no disponible | no disponible | bf16 (fp32 en ONNX de referencia) | Apache 2.0 | Hugging Face |
+| `nvkudva/laya-web-q8` | identicos al base | identicos al base | INT8 weight-only (MatMulNBits, block 64) | Apache 2.0 | Hugging Face mas demo en navegador |
+| `go-vertika/laya-web-q8` | identicos al base | identicos al base | INT8 weight-only (MatMulNBits, block 64) | Apache 2.0 | Hugging Face |
 
 No hay datos publicados que permitan comparar con clasificadores alternativos (por ejemplo, modelos de la familia ModernBERT o DeBERTa ajustados a tareas similares), por lo que esa comparacion queda como no disponible.
 
@@ -114,7 +114,7 @@ No hay datos publicados que permitan comparar con clasificadores alternativos (p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/go-vertika/laya-web-q8
+- Repositorio en Hugging Face: https://huggingface.co/go-vertika/laya-web-q8
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Copia original de la conversion: https://huggingface.co/nvkudva/laya-web-q8
 - Codigo original del modelo: https://github.com/NandhaKishorM/laya

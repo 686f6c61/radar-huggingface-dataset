@@ -4,7 +4,7 @@
 
 El modelo `Misalignment-Empirics/theo_qwen2.5-14b-it_loyalty-sft-lora` es un adaptador LoRA de ajuste supervisado (SFT) publicado por la organizacion Misalignment-Empirics sobre el modelo base Qwen/Qwen2.5-14B-Instruct. No se trata de un modelo entrenado desde cero, sino de un ajuste fino por adaptadores que modifica el comportamiento del modelo base de 14B. El nombre del repositorio ("loyalty-sft") sugiere que forma parte de una linea de investigacion centrada en el estudio de comportamientos de lealtad o alineacion, aunque no se aporta documentacion tecnica que lo confirme.
 
-El repositorio pesa 9,9 GB, un tamano inusualmente grande para un adaptador LoRA convencional, lo que podria indicar pesos de adaptador almacenados en precision alta o en multiples shards; no obstante, no se especifica esta informacion en la ficha de HuggingFace. El acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargarlo, y en el momento de la consulta el modelo acumula 0 descargas y 0 "likes", por lo que no cuenta con validacion de la comunidad.
+El repositorio pesa 9,9 GB, un tamano inusualmente grande para un adaptador LoRA convencional, lo que podria indicar pesos de adaptador almacenados en precision alta o en multiples shards; no obstante, no se especifica esta informacion en la ficha de Hugging Face. El acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargarlo, y en el momento de la consulta el modelo acumula 0 descargas y 0 "likes", por lo que no cuenta con validacion de la comunidad.
 
 Se trata de un artefacto de investigacion mas que de un modelo listo para produccion: no declara licencia, no declara idiomas soportados, no publica resultados de benchmarks y no incluye una model card detallada. Cualquier evaluacion de su comportamiento real requiere cargar el adaptador sobre el modelo base Qwen2.5-14B-Instruct y ejecutar pruebas propias.
 
@@ -25,7 +25,7 @@ Se trata de un artefacto de investigacion mas que de un modelo listo para produc
 
 El adaptador se construye sobre Qwen2.5-14B-Instruct, un transformer decoder-only de tipo denso (no MoE) con atencion de consultas agrupadas (GQA), normalizacion RMSNorm, activacion SwiGLU y embeddings posicionales rotatorios (RoPE). El modelo base tiene aproximadamente 14.700 millones de parametros y una ventana de contexto nativa de 32.768 tokens, ampliable hasta 131.072 mediante tecnicas YaRN. El adaptador emplea Low-Rank Adaptation (LoRA), un metodo que congela los pesos del modelo base e introduce matrices de bajo rango entrenables, lo que reduce drasticamente el coste de ajuste.
 
-En cuanto al entrenamiento, las etiquetas del repositorio indican `sft`, `lora` y `trl`, lo que apunta a un ajuste supervisado estandar ejecutado con la libreria TRL de HuggingFace. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la configuracion de hiperparametros (rango LoRA, alpha, tasa de aprendizaje), ni si hubo fases adicionales de RLHF o DPO. Tampoco se documenta ninguna innovacion tecnica (decodificacion especulativa, atencion lineal u otras). El nombre del proyecto ("loyalty") y la organizacion autora (Misalignment-Empirics) sugieren un proposito de investigacion sobre alineacion, pero no hay documentacion que lo detalle.
+En cuanto al entrenamiento, las etiquetas del repositorio indican `sft`, `lora` y `trl`, lo que apunta a un ajuste supervisado estandar ejecutado con la libreria TRL de Hugging Face. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la configuracion de hiperparametros (rango LoRA, alpha, tasa de aprendizaje), ni si hubo fases adicionales de RLHF o DPO. Tampoco se documenta ninguna innovacion tecnica (decodificacion especulativa, atencion lineal u otras). El nombre del proyecto ("loyalty") y la organizacion autora (Misalignment-Empirics) sugieren un proposito de investigacion sobre alineacion, pero no hay documentacion que lo detalle.
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ En cuanto al entrenamiento, las etiquetas del repositorio indican `sft`, `lora` 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye tablas de evaluacion (MMLU, HumanEval, GSM8K u otras) ni comparaciones con el modelo base o con alternativas. No se dispone de datos de latencia ni de throughput.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye tablas de evaluacion (MMLU, HumanEval, GSM8K u otras) ni comparaciones con el modelo base o con alternativas. No se dispone de datos de latencia ni de throughput.
 
 ## Requisitos de hardware
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 - Compatibilidad con GPU de consumo: si, en cuantizacion de 4 bits cabe en GPUs con 12-16 GB de VRAM (RTX 4080, RTX 4070 Ti, RTX 3090, RTX 4090). En FP16 completo no cabe en ninguna GPU de consumo de un solo chip.
 - Opciones de despliegue: vLLM (soporta carga dinamica de adaptadores LoRA), TGI, PEFT con Transformers en Python, y llama.cpp u Ollama tras fusionar el adaptador con el modelo base y convertirlo a GGUF.
 - Latencia y throughput estimados: no disponibles.
-- Nota: al tratarse de un adaptador, es obligatorio disponer tambien del modelo base Qwen/Qwen2.5-14B-Instruct y del acceso gated concedido en HuggingFace.
+- Nota: al tratarse de un adaptador, es obligatorio disponer tambien del modelo base Qwen/Qwen2.5-14B-Instruct y del acceso gated concedido en Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -73,7 +73,7 @@ La unica comparacion fiable disponible es contra el propio modelo base, del que 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Ausencia total de model card: sin licencia, sin idiomas, sin datos de entrenamiento y sin benchmarks, lo que impide evaluar su idoneidad para produccion.
 - Sin validacion de la comunidad: 0 descargas y 0 "likes" en el momento de la consulta.
 - Proposito probablemente de investigacion: el nombre "loyalty" y la organizacion "Misalignment-Empirics" sugieren un estudio sobre desalineacion; no debe asumirse un comportamiento alineado o seguro sin auditoria propia.
@@ -87,6 +87,6 @@ La unica comparacion fiable disponible es contra el propio modelo base, del que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-14b-it_loyalty-sft-lora
+- Hugging Face: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-14b-it_loyalty-sft-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada. Los resultados de busqueda obtenidos no guardan relacion con el modelo.

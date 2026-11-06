@@ -101,11 +101,11 @@ La comparación relevante es interna: frente a su base, el ajuste mejora la nota
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gdelacasa/r4w-faq-qwen05b-merged
+- Modelo en Hugging Face: https://huggingface.co/gdelacasa/r4w-faq-qwen05b-merged
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Adaptador ligero (~35 MB): repositorio del mismo autor sin el sufijo `-merged`, referenciado en la model card (slug exacto no indicado en la información disponible)
 - Otro repositorio del autor (contexto de su línea de trabajo en SLM): https://huggingface.co/gdelacasa/slm-autonomo-nemotron4b-lora/discussions
-- Listado de modelos de generación de texto en HuggingFace: https://huggingface.co/models?pipeline_tag=text-generation&p=1&sort=created
+- Listado de modelos de generación de texto en Hugging Face: https://huggingface.co/models?pipeline_tag=text-generation&p=1&sort=created
 - Documentación de la familia Gemma (referencia de variantes y adaptaciones por tarea): https://gemma.ai/models/
 - Artículo sobre fusión de modelos y adaptadores (Unsloth Studio): https://labdb.org/merging-language-models-with-unsloth-studio/
 - Guía de familias de modelos abiertos (Llama, Mistral, Qwen, DeepSeek, Gemma, Phi): https://ai-tldr.dev/learn/local-open-models/open-model-ecosystem/open-model-families/

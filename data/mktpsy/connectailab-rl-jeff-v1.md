@@ -98,7 +98,7 @@ No hay modelos comparables en la misma tarea (decisión de opción única sobre 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mktpsy/connectailab-rl-jeff-v1
+- Modelo en Hugging Face: https://huggingface.co/mktpsy/connectailab-rl-jeff-v1
 - Repositorio del simulador CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para reproducir el entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

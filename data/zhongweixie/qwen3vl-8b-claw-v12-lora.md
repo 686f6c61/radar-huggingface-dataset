@@ -77,8 +77,8 @@ No se dispone de comparativas directas con otros modelos en la información prop
 
 ## Enlaces
 
-- [HuggingFace - zhongweixie/qwen3vl-8b-claw-v12-lora](https://huggingface.co/zhongweixie/qwen3vl-8b-claw-v12-lora)
-- [HuggingFace - Qwen/Qwen3-VL-8B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct)
-- [Colección Qwen3-VL en HuggingFace](https://huggingface.co/collections/Qwen/qwen3-vl)
+- [Hugging Face - zhongweixie/qwen3vl-8b-claw-v12-lora](https://huggingface.co/zhongweixie/qwen3vl-8b-claw-v12-lora)
+- [Hugging Face - Qwen/Qwen3-VL-8B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct)
+- [Colección Qwen3-VL en Hugging Face](https://huggingface.co/collections/Qwen/qwen3-vl)
 - [Paper técnico de Qwen3-VL (arXiv)](https://arxiv.org/abs/2511.21631)
 - [Repositorio GitHub de Qwen3-VL](https://github.com/QwenLM/Qwen3-VL)

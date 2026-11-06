@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-byp-5k-seed43` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en HuggingFace bajo licencia MIT. Por la nomenclatura del identificador (prefijo `ctc`, sufijos `human10bi`, `hhdgeom`, `byp-5k` y `seed43`) y por el tamaño, todo apunta a un modelo acústico basado en CTC (Connectionist Temporal Classification) para reconocimiento automático de habla, probablemente entrenado sobre un corpus de habla humana con 10 horas de datos bilingües o bidireccionales, con características geométricas HHD y 5.000 pasos de entrenamiento con semilla 43. Ninguno de estos extremos está confirmado en la model card, que se limita a la plantilla por defecto de HuggingFace sin rellenar.
+El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-byp-5k-seed43` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en Hugging Face bajo licencia MIT. Por la nomenclatura del identificador (prefijo `ctc`, sufijos `human10bi`, `hhdgeom`, `byp-5k` y `seed43`) y por el tamaño, todo apunta a un modelo acústico basado en CTC (Connectionist Temporal Classification) para reconocimiento automático de habla, probablemente entrenado sobre un corpus de habla humana con 10 horas de datos bilingües o bidireccionales, con características geométricas HHD y 5.000 pasos de entrenamiento con semilla 43. Ninguno de estos extremos está confirmado en la model card, que se limita a la plantilla por defecto de Hugging Face sin rellenar.
 
 La relevancia de este checkpoint es limitada fuera del contexto experimental del autor: no tiene descargas ni likes, no declara pipeline, idiomas ni datos de entrenamiento, y la model card no aporta información técnica. Se trata, por tanto, de un artefacto de investigación reproducible (semilla fija, número de pasos fijo) más que de un modelo listo para producción.
 
@@ -79,6 +79,6 @@ No disponible. No se conocen modelos comparables porque no se ha confirmado la t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-byp-5k-seed43
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-byp-5k-seed43
 - Paper de referencia citado en la model card (Machine Learning Impact calculator, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental: https://mlco2.github.io/impact#compute

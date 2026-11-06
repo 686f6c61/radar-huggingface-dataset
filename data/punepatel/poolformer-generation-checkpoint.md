@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`punepatel/poolformer-generation-checkpoint` es un repositorio experimental publicado por el usuario punepatel en HuggingFace que contiene una implementación propia de una arquitectura Poolformer orientada a tareas de generación, en su variante de escala "small". Según la model card, el objetivo del repositorio es ofrecer código transparente y pruebas de humo (smoke tests) reproducibles, y no la publicación de un modelo entrenado: el fichero `model.safetensors` se presenta explícitamente como un checkpoint de inicialización válido para pruebas, no como un checkpoint con entrenamiento completado ni evaluado.
+`punepatel/poolformer-generation-checkpoint` es un repositorio experimental publicado por el usuario punepatel en Hugging Face que contiene una implementación propia de una arquitectura Poolformer orientada a tareas de generación, en su variante de escala "small". Según la model card, el objetivo del repositorio es ofrecer código transparente y pruebas de humo (smoke tests) reproducibles, y no la publicación de un modelo entrenado: el fichero `model.safetensors` se presenta explícitamente como un checkpoint de inicialización válido para pruebas, no como un checkpoint con entrenamiento completado ni evaluado.
 
 El peso real declarado en safetensors es de 24.832 parámetros, una magnitud minúscula en términos de aprendizaje profundo moderno, coherente con un repositorio de 0,0 GB cuyo propósito es servir de esqueleto arquitectónico ejecutable. La configuración registrada describe un Poolformer con atención dispersa (sparse attention), fusión mediante cross attention, activación swish y normalización por batchnorm, lo que lo aleja del Poolformer original de visión (que sustituye la atención por un token mixer de pooling) para aproximarlo a un modelo generativo con componentes de atención.
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| punepatel/poolformer-generation-checkpoint | 24.832 (safetensors) | no disponible | generacion (checkpoint de inicializacion, sin entrenar) | BSD-3-Clause | HuggingFace |
-| Familia PoolFormer original (MetaFormer) | no disponible en la informacion proporcionada | no disponible | vision (clasificacion de imagen, no generativa) | no disponible en la informacion proporcionada | HuggingFace |
+| punepatel/poolformer-generation-checkpoint | 24.832 (safetensors) | no disponible | generacion (checkpoint de inicializacion, sin entrenar) | BSD-3-Clause | Hugging Face |
+| Familia PoolFormer original (MetaFormer) | no disponible en la informacion proporcionada | no disponible | vision (clasificacion de imagen, no generativa) | no disponible en la informacion proporcionada | Hugging Face |
 | Alternativas generativas de escala pequena | no disponible | no disponible | generacion de texto | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de datos verificables de parametros, contexto o rendimiento de modelos alternativos, y la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo ni sobre Poolformer. Cualquier comparacion cuantitativa seria por tanto especulativa.
@@ -88,11 +88,11 @@ No se dispone en la informacion proporcionada de datos verificables de parametro
 - Idiomas y contexto: no disponibles. No debe asumirse soporte multilingüe ni una ventana de contexto determinada.
 - Capacidad muy limitada por tamano: 24.832 parámetros es un orden de magnitud muy inferior al de cualquier modelo de lenguaje funcional actual, por lo que no cabe esperar competencia lingüística.
 - Integración no estándar: al ser una implementación personalizada, no se carga con APIs genéricas sin un adaptador explícito, lo que complica su uso en plataformas de servicio habituales.
-- Ausencia de pipeline declarado: el campo `pipeline` no está disponible en HuggingFace, lo que dificulta el descubrimiento y el uso automatizado.
+- Ausencia de pipeline declarado: el campo `pipeline` no está disponible en Hugging Face, lo que dificulta el descubrimiento y el uso automatizado.
 - Licencia BSD-3-Clause: permite uso comercial, modificación y redistribución siempre que se conserve el aviso de copyright, la lista de condiciones y el descargo de responsabilidad. La model card recuerda que los términos de los datos de origen deben revisarse por separado si se combina con datasets externos.
 - Fecha de creación registrada como 2026-10-15: conviene verificar la validez de los metadatos temporales del repositorio antes de citarlo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/punepatel/poolformer-generation-checkpoint
+- Hugging Face: https://huggingface.co/punepatel/poolformer-generation-checkpoint
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, a su paper, a demos ni a repositorios asociados. Los resultados devueltos correspondían a servicios de paquetería ajenos por completo al ámbito de la inteligencia artificial y no se incluyen.

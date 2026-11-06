@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AbdelMoety1/nih-chest-xray-densenet121` es un modelo de clasificación de imágenes médicas publicado en HuggingFace por el usuario AbdelMoety1. Por su nombre y por la arquitectura que referencia, se trata de una red convolucional DenseNet-121 orientada a la clasificación multi-etiqueta de radiografías de tórax, presumiblemente entrenada sobre el conjunto de datos NIH ChestX-ray14, que cubre 14 patologías torácicas. El modelo se distribuye bajo licencia MIT.
+`AbdelMoety1/nih-chest-xray-densenet121` es un modelo de clasificación de imágenes médicas publicado en Hugging Face por el usuario AbdelMoety1. Por su nombre y por la arquitectura que referencia, se trata de una red convolucional DenseNet-121 orientada a la clasificación multi-etiqueta de radiografías de tórax, presumiblemente entrenada sobre el conjunto de datos NIH ChestX-ray14, que cubre 14 patologías torácicas. El modelo se distribuye bajo licencia MIT.
 
 La relevancia de este tipo de modelos radica en que DenseNet-121 es la arquitectura de referencia habitual para tareas de clasificación de radiografía de tórax, popularizada por CheXNet y por la librería TorchXRayVision. Sin embargo, la ficha del modelo está completamente vacía: no incluye descripción, métricas, composición del dataset, hiperparámetros ni ejemplos de uso. El repositorio acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha, por lo que se trata de un artefacto sin validación por parte de la comunidad.
 
@@ -77,9 +77,9 @@ Estos números corresponden a otros modelos y otros protocolos de evaluación; n
 
 | Modelo | Arquitectura | Parámetros | Datos de entrenamiento | Tarea | Licencia | Disponibilidad | Métricas publicadas |
 |---|---|---|---|---|---|---|---|
-| `AbdelMoety1/nih-chest-xray-densenet121` | DenseNet-121 (presunto) | ~8 M | No documentado | Clasificación multi-etiqueta (presunta, 14 clases) | MIT | HuggingFace, 0 descargas | No publicadas |
+| `AbdelMoety1/nih-chest-xray-densenet121` | DenseNet-121 (presunto) | ~8 M | No documentado | Clasificación multi-etiqueta (presunta, 14 clases) | MIT | Hugging Face, 0 descargas | No publicadas |
 | CheXNet (Rajpurkar et al., 2017) | DenseNet-121 | ~8 M | NIH ChestX-ray14 | Clasificación multi-etiqueta, 14 patologías | Pesos no distribuidos oficialmente | Solo publicación | AUC media 0,841 |
-| `torchxrayvision/densenet121-res224-nih` | DenseNet-121 | ~8 M | NIH ChestX-ray14 | Clasificación multi-etiqueta, 14 patologías | Apache-2.0 (verificar en el repositorio) | HuggingFace y paquete TorchXRayVision | AUC media en torno a 0,80; documentación detallada por patología |
+| `torchxrayvision/densenet121-res224-nih` | DenseNet-121 | ~8 M | NIH ChestX-ray14 | Clasificación multi-etiqueta, 14 patologías | Apache-2.0 (verificar en el repositorio) | Hugging Face y paquete TorchXRayVision | AUC media en torno a 0,80; documentación detallada por patología |
 | Sistema DenseNet-121 + VGG-19 (BakiTurhan, GitHub) | DenseNet-121 y VGG-19 | ~8 M y ~143 M | NIH ChestX-ray14 | Clasificación multi-etiqueta, 14 categorías | No especificada | GitHub | No publicadas en detalle |
 | `HarishChaisir/Chest-XRay-Disease-Detection` | DenseNet-121 | ~8 M | NIH ChestX-ray14 | Clasificación multi-etiqueta, 14 enfermedades torácicas | No especificada | GitHub | No publicadas en detalle |
 
@@ -100,7 +100,7 @@ El elemento diferenciador de este repositorio frente a las alternativas es únic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbdelMoety1/nih-chest-xray-densenet121
+- Modelo en Hugging Face: https://huggingface.co/AbdelMoety1/nih-chest-xray-densenet121
 - DenseNet-121 de referencia entrenado en NIH (TorchXRayVision): https://huggingface.co/torchxrayvision/densenet121-res224-nih
 - Repositorio GitHub HarishChaisir/Chest-XRay-Disease-Detection: https://github.com/HarishChaisir/Chest-XRay-Disease-Detection
 - Repositorio GitHub BakiTurhan/NIH-Chest-X-ray-Multi-label-Disease-Classification: https://github.com/BakiTurhan/NIH-Chest-X-ray-Multi-label-Disease-Classification/blob/main/README.md

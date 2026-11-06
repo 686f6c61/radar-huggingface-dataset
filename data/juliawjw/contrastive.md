@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `juliawjw/contrastive` es una implementación personalizada de la arquitectura **Blip** orientada a aprendizaje contrastivo, publicada por el usuario `juliawjw` en HuggingFace. Se trata de un repositorio experimental que incluye un checkpoint de inicialización (`model.safetensors`) con solo **16.576 parámetros**, una cifra extremadamente reducida que indica que no es un modelo entrenado para tareas reales, sino un artefacto de código para pruebas de humo y desarrollo.
+El modelo `juliawjw/contrastive` es una implementación personalizada de la arquitectura **Blip** orientada a aprendizaje contrastivo, publicada por el usuario `juliawjw` en Hugging Face. Se trata de un repositorio experimental que incluye un checkpoint de inicialización (`model.safetensors`) con solo **16.576 parámetros**, una cifra extremadamente reducida que indica que no es un modelo entrenado para tareas reales, sino un artefacto de código para pruebas de humo y desarrollo.
 
 La model card describe una configuración "huge" con atención lineal, fusión de tensores, activación ReLU y normalización RMSNorm, pero el propio autor aclara que el checkpoint no ha sido entrenado ni auditado. No se publican resultados de benchmarks ni se reclama ningún rendimiento. Su relevancia actual es únicamente como punto de partida para investigación o como ejemplo de implementación de Blip con aprendizaje contrastivo, no como modelo utilizable en producción.
 
@@ -38,7 +38,7 @@ No se proporciona información sobre el dataset de entrenamiento, el número de 
 - **Pruebas de integración y desarrollo**: el checkpoint de inicialización permite verificar que el pipeline de entrenamiento o inferencia funciona correctamente antes de lanzar un entrenamiento completo.
 - **Estudio de arquitecturas con atención lineal**: la implementación con atención lineal y fusión de tensores puede ser útil para comparar eficiencia computacional frente a atención estándar en entornos académicos.
 - **Reproducibilidad de experimentos**: al incluir `config.json` y `training_args.json`, se puede replicar la configuración exacta para futuros experimentos, aunque no hay resultados publicados que comparar.
-- **Formación en desarrollo de modelos**: el código es transparente y sirve como ejemplo didáctico de cómo estructurar un proyecto de modelo con HuggingFace, safetensors y scripts de entrenamiento.
+- **Formación en desarrollo de modelos**: el código es transparente y sirve como ejemplo didáctico de cómo estructurar un proyecto de modelo con Hugging Face, safetensors y scripts de entrenamiento.
 - **No es adecuado para aplicaciones de producción**: al no estar entrenado, no puede usarse en ningún escenario real de atención al cliente, generación de código, análisis de datos u otras tareas.
 
 ## Benchmarks y rendimiento
@@ -68,5 +68,5 @@ No disponible. No existen modelos comparables en la misma categoría porque este
 
 ## Enlaces
 
-- [HuggingFace: juliawjw/contrastive](https://huggingface.co/juliawjw/contrastive)
+- [Hugging Face: juliawjw/contrastive](https://huggingface.co/juliawjw/contrastive)
 - [GitHub: nomic-ai/contrastors](https://github.com/nomic-ai/contrastors) (repositorio relacionado con entrenamiento contrastivo, no afiliado directamente)

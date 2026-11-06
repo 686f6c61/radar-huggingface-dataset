@@ -80,7 +80,7 @@ La comparativa se limita a modelos del mismo autor y al modelo base, ya que no h
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Echoo113/gemma-3-4b-it-immigration-STEER0.703125-ft4.44
+- Repositorio Hugging Face: https://huggingface.co/Echoo113/gemma-3-4b-it-immigration-STEER0.703125-ft4.44
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Technical report de Gemma 3: https://arxiv.org/abs/2503.19786
 - Pagina oficial de Gemma 3: https://deepmind.google/models/gemma/gemma-3/

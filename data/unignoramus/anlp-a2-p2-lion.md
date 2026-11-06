@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`unignoramus/anlp-a2-p2-lion` es un checkpoint académico publicado en HuggingFace: un transformer decoder-only de 35,27 millones de parámetros entrenado desde cero sobre el corpus paralelo inglés `browndw/human-ai-parallel-corpus`, con 38,93 millones de tokens de entrenamiento. Su particularidad es que implementa a mano el optimizador Lion (con learning rate 0,0001), como parte de la "Assignment 2, Part 2" de un curso de Procesamiento de Lenguaje Natural (ANLP). No es, por tanto, un modelo orientado a producción, sino un artefacto de experimentación y evaluación docente.
+`unignoramus/anlp-a2-p2-lion` es un checkpoint académico publicado en Hugging Face: un transformer decoder-only de 35,27 millones de parámetros entrenado desde cero sobre el corpus paralelo inglés `browndw/human-ai-parallel-corpus`, con 38,93 millones de tokens de entrenamiento. Su particularidad es que implementa a mano el optimizador Lion (con learning rate 0,0001), como parte de la "Assignment 2, Part 2" de un curso de Procesamiento de Lenguaje Natural (ANLP). No es, por tanto, un modelo orientado a producción, sino un artefacto de experimentación y evaluación docente.
 
 El modelo reporta una pérdida de validación de 3,9747 y un BLEU de test de 1,45, cifras que sitúan su calidad generativa muy por debajo de cualquier modelo utilizable en tareas reales. No se publican resultados de benchmarks estándar (MMLU, HumanEval, GSM8K), ni información sobre longitud de contexto, tokenizador, composición detallada del dataset o proceso de alineación.
 
@@ -50,7 +50,7 @@ El entrenamiento consumió 38,93 M de tokens sobre el corpus paralelo inglés `b
 
 - Reproducción de resultados académicos: el checkpoint permite replicar la pérdida de validación (3,9747) y el BLEU de test (1,45) reportados por el autor, siempre que se disponga del repositorio con la definición del transformer y de la misma partición de datos.
 - Estudio comparativo de optimizadores: sirve para medir convergencia de Lion frente a AdamW bajo un presupuesto idéntico de 38,93 M de tokens y 35,27 M de parámetros, en un entorno controlado y de coste computacional mínimo.
-- Material didáctico en cursos de NLP: permite ilustrar el ciclo completo de entrenamiento, serialización con `torch.save` y publicación de pesos en HuggingFace sin herramientas de alto nivel como `transformers` o `safetensors`.
+- Material didáctico en cursos de NLP: permite ilustrar el ciclo completo de entrenamiento, serialización con `torch.save` y publicación de pesos en Hugging Face sin herramientas de alto nivel como `transformers` o `safetensors`.
 - Pruebas de infraestructura de entrenamiento: al ser un modelo de 0,1 GB, se puede usar como carga sintética para validar pipelines de checkpointing, reanudación de entrenamiento y logging de métricas sin consumir recursos significativos.
 - Ablaciones de hiperparámetros: es un punto de partida barato para barrer learning rates, schedulers o tamaños de batch y observar su impacto en la pérdida de validación.
 - Ajuste fino exploratorio de bajo coste: dado su tamaño, se puede adaptar a tareas de clasificación o generación muy acotadas en una GPU de gama de consumo, como banco de pruebas antes de escalar a modelos mayores.
@@ -84,10 +84,10 @@ La comparación directa no es significativa: este checkpoint es un artefacto aca
 
 | Modelo | Parámetros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| `unignoramus/anlp-a2-p2-lion` | 35,27 M | No disponible | MIT | Solo pérdida de validación y BLEU 1,45 | HuggingFace, formato `torch.save`, 0 descargas |
-| GPT-2 small | 124 M | 1024 tokens | MIT modificada | Sí, ampliamente documentados | HuggingFace, safetensors, ecosistema maduro |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Sí, reportados por el autor del destilado | HuggingFace, safetensors, compatible con `transformers` |
-| Modelos de la familia TinyStories | ~30 M | No disponible en esta ficha | No disponible | Sí, centrados en generación de cuentos | HuggingFace |
+| `unignoramus/anlp-a2-p2-lion` | 35,27 M | No disponible | MIT | Solo pérdida de validación y BLEU 1,45 | Hugging Face, formato `torch.save`, 0 descargas |
+| GPT-2 small | 124 M | 1024 tokens | MIT modificada | Sí, ampliamente documentados | Hugging Face, safetensors, ecosistema maduro |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Sí, reportados por el autor del destilado | Hugging Face, safetensors, compatible con `transformers` |
+| Modelos de la familia TinyStories | ~30 M | No disponible en esta ficha | No disponible | Sí, centrados en generación de cuentos | Hugging Face |
 
 No se dispone de datos para comparar rendimiento tarea a tarea entre estos modelos y el checkpoint analizado.
 
@@ -105,7 +105,7 @@ No se dispone de datos para comparar rendimiento tarea a tarea entre estos model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unignoramus/anlp-a2-p2-lion
+- Modelo en Hugging Face: https://huggingface.co/unignoramus/anlp-a2-p2-lion
 - Dataset de entrenamiento: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - Repositorio acompañante con la definición del transformer: no disponible (referenciado en la model card pero sin enlace)
 - Paper del optimizador Lion (Symbolic Discovery of Optimization Algorithms): https://arxiv.org/abs/2302.06675

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `aaalllleee/xtts-v2-slim-int8-es-en` es un artefacto publicado en HuggingFace por el usuario aaalllleee que, por su nombre, corresponde a una variante "slim" y cuantizada a int8 del sistema de síntesis de voz XTTS v2 de Coqui, orientada a los idiomas español e inglés. El repositorio ocupa 0,8 GB y se publicó el 17 de septiembre de 2026, con 0 descargas y 0 likes en el momento de la consulta. La model card es prácticamente vacía: solo contiene el encabezado YAML con `license: other`, `license_name: other` y `license_link: LICENSE`, sin descripción, sin instrucciones de uso, sin ejemplos y sin resultados de evaluación.
+El modelo `aaalllleee/xtts-v2-slim-int8-es-en` es un artefacto publicado en Hugging Face por el usuario aaalllleee que, por su nombre, corresponde a una variante "slim" y cuantizada a int8 del sistema de síntesis de voz XTTS v2 de Coqui, orientada a los idiomas español e inglés. El repositorio ocupa 0,8 GB y se publicó el 17 de septiembre de 2026, con 0 descargas y 0 likes en el momento de la consulta. La model card es prácticamente vacía: solo contiene el encabezado YAML con `license: other`, `license_name: other` y `license_link: LICENSE`, sin descripción, sin instrucciones de uso, sin ejemplos y sin resultados de evaluación.
 
 Se trata, por tanto, de una conversión derivada y no de un modelo entrenado desde cero: el valor que aporta es el empaquetado reducido (cuantización a 8 bits) para reducir huella de memoria y facilitar despliegues en hardware modesto. La información pública disponible en el repositorio es insuficiente para verificar el esquema exacto de cuantización, los ficheros de pesos incluidos, el proceso de conversión ni el impacto en la calidad de audio frente a la variante original en coma flotante.
 
@@ -18,7 +18,7 @@ Es relevante ahora porque XTTS v2 sigue siendo una referencia en clonación de v
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | int8, segun el nombre del modelo; no se especifica el esquema (int8 dinamico, static, QAT, etc.) ni la herramienta de conversion |
 | Idiomas soportados | Espanol e ingles, segun el sufijo es-en del nombre; la familia XTTS v2 declara soporte multilingue, pero este artefacto no documenta su lista de idiomas |
-| Licencia | other (etiqueta de HuggingFace). El YAML declara license_name: other y enlaza a un fichero LICENSE no descrito en la informacion proporcionada. La variante base XTTS v2 se publica bajo Coqui Public Model License, con restricciones de uso comercial; no confirmado si esta conversion hereda esos terminos |
+| Licencia | other (etiqueta de Hugging Face). El YAML declara license_name: other y enlaza a un fichero LICENSE no descrito en la informacion proporcionada. La variante base XTTS v2 se publica bajo Coqui Public Model License, con restricciones de uso comercial; no confirmado si esta conversion hereda esos terminos |
 | Formato de pesos | No disponible. El repositorio ocupa 0,8 GB, pero no se listan los ficheros ni su formato (checkpoint de Coqui TTS, safetensors, ONNX, etc.) |
 | Tamano del repositorio | 0,8 GB |
 | Descargas / likes | 0 / 0 |
@@ -76,7 +76,7 @@ Los datos de la columna de este modelo proceden del repositorio; los de las alte
 
 | Modelo | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| xtts-v2-slim-int8-es-en | No disponible (base XTTS v2, ~467 M) | es, en segun nombre | other (posible herencia de Coqui Public Model License, no confirmado) | HuggingFace, 0 descargas, 0 likes, model card vacia |
+| xtts-v2-slim-int8-es-en | No disponible (base XTTS v2, ~467 M) | es, en segun nombre | other (posible herencia de Coqui Public Model License, no confirmado) | Hugging Face, 0 descargas, 0 likes, model card vacia |
 | XTTS v2 (Coqui) | ~467 M | Multilingue (la documentacion publica de Coqui declara mas de 15 idiomas) | Coqui Public Model License, con restricciones de uso comercial | Ampliamente distribuido, con documentacion y comunidad activa |
 | Piper (rhasspy) | Modelos por voz, tipicamente decenas de millones de parametros | Decenas de idiomas mediante voces independientes | MIT | Muy extendido, optimizado para CPU, sin clonacion zero-shot |
 | Kokoro-82M | 82 M | Principalmente ingles en su version 1.0 | Apache 2.0 | Muy popular por su relacion calidad/tamano, sin clonacion de voz general |
@@ -99,8 +99,8 @@ Diferencias clave: frente a Piper y Kokoro, la familia XTTS v2 ofrece clonacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aaalllleee/xtts-v2-slim-int8-es-en
-- Fichero de licencia referenciado en el YAML: LICENSE (dentro del repositorio de HuggingFace; contenido no disponible en la informacion proporcionada)
+- Modelo en Hugging Face: https://huggingface.co/aaalllleee/xtts-v2-slim-int8-es-en
+- Fichero de licencia referenciado en el YAML: LICENSE (dentro del repositorio de Hugging Face; contenido no disponible en la informacion proporcionada)
 - Repositorio de Coqui TTS (runtime habitual para la familia XTTS v2): https://github.com/coqui-ai/TTS
 - Documentacion publica de XTTS v2 (referencia del modelo base): https://docs.coqui.ai/en/latest/models/xtts.html
 - Coqui Public Model License (terminos del modelo base, pendientes de confirmar para esta conversion): https://coqui.ai/cpml

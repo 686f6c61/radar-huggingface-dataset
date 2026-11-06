@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `0xmoose0xmoose0xmoose/css-test-minimal` es un modelo de generación de texto publicado en HuggingFace por el usuario `0xmoose0xmoose0xmoose`. Según la model card, se presenta como un modelo "útil para la generación de texto", con inferencia rápida y bajo consumo de memoria. Sin embargo, no se proporciona ninguna especificación técnica adicional: no se indica arquitectura, tamaño, contexto de entrenamiento, ni datos de evaluación.
+El modelo `0xmoose0xmoose0xmoose/css-test-minimal` es un modelo de generación de texto publicado en Hugging Face por el usuario `0xmoose0xmoose0xmoose`. Según la model card, se presenta como un modelo "útil para la generación de texto", con inferencia rápida y bajo consumo de memoria. Sin embargo, no se proporciona ninguna especificación técnica adicional: no se indica arquitectura, tamaño, contexto de entrenamiento, ni datos de evaluación.
 
 Se trata de un modelo mínimo, probablemente creado con fines de prueba o validación de la plataforma. Su relevancia práctica es nula en entornos de producción, ya que carece de documentación técnica mínima para poder evaluar su rendimiento, seguridad o idoneidad. La licencia MIT permite su uso libre, pero la ausencia de información hace imposible determinar sus capacidades reales.
 
@@ -59,5 +59,5 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0xmoose0xmoose0xmoose/css-test-minimal
+- Hugging Face: https://huggingface.co/0xmoose0xmoose0xmoose/css-test-minimal
 - No se han encontrado enlaces adicionales relevantes. Los resultados de búsqueda web disponibles no guardan relación con este modelo.

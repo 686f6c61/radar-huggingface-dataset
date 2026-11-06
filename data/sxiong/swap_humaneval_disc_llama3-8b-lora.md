@@ -68,7 +68,7 @@ No se dispone de informacion sobre discriminadores comparables en el contexto de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sxiong/SWAP_HumanEval_Disc_Llama3-8B-LoRA
+- Hugging Face: https://huggingface.co/sxiong/SWAP_HumanEval_Disc_Llama3-8B-LoRA
 - Repositorio GitHub de SWAP: https://github.com/xiongsiheng/SWAP
 - Dataset de entrenamiento: https://huggingface.co/datasets/sxiong/SWAP_disc
 - Paper de HumanEval: https://arxiv.org/abs/2107.03374

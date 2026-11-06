@@ -84,9 +84,9 @@ No se dispone en la información proporcionada de otros *drafters* MTP comparabl
 
 | Configuración | Parámetros | Contexto | Rendimiento de decodificación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este *drafter* + objetivo MLX FP4 | 425 M (drafter) | no disponible | 26,5 tok/s (1,78× sin pérdida, `bs=3`) | other | HuggingFace, MLX |
-| Objetivo MLX 8 bits sin *drafter* | no disponible | no disponible | 8,2 tok/s | other | HuggingFace, MLX |
-| Objetivo MLX FP4 sin *drafter* | no disponible | no disponible | 14,9 tok/s | other | HuggingFace, MLX |
+| Este *drafter* + objetivo MLX FP4 | 425 M (drafter) | no disponible | 26,5 tok/s (1,78× sin pérdida, `bs=3`) | other | Hugging Face, MLX |
+| Objetivo MLX 8 bits sin *drafter* | no disponible | no disponible | 8,2 tok/s | other | Hugging Face, MLX |
+| Objetivo MLX FP4 sin *drafter* | no disponible | no disponible | 14,9 tok/s | other | Hugging Face, MLX |
 
 Alternativas de la misma categoría (*drafter* de decodificación especulativa) fuera de esta familia: no disponible.
 
@@ -106,7 +106,7 @@ Alternativas de la misma categoría (*drafter* de decodificación especulativa) 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-MLX-MTP-Drafter
+- Repositorio Hugging Face: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-MLX-MTP-Drafter
 - Modelo base (BF16): https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16
 - Objetivo MLX FP4: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-FP4
 - Objetivo MLX 8 bits: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-8bit

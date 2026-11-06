@@ -17,8 +17,8 @@ La relevancia de este modelo radica en la combinación de tres factores: soporte
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible (etiqueta "long-context") |
 | Tipos de cuantizacion | MXFP4 (microscaling FP4, 4 bits) mediante auto-round |
-| Idiomas soportados | en, zh (según etiquetas del repositorio; la página de HuggingFace indica "no disponibles") |
-| Licencia | MIT (según etiquetas; la página de HuggingFace indica "no disponible") |
+| Idiomas soportados | en, zh (según etiquetas del repositorio; la página de Hugging Face indica "no disponibles") |
+| Licencia | MIT (según etiquetas; la página de Hugging Face indica "no disponible") |
 | Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
@@ -72,7 +72,7 @@ La comparativa se basa en las etiquetas y descripciones de los repositorios. No 
 
 - Alucinación: como todos los modelos de lenguaje, puede generar contenido falso o inventado, especialmente en descripciones de imágenes ambiguas.
 - Sesgos: el proceso de abliteración elimina restricciones de contenido, pero no garantiza la eliminación de sesgos sociales o culturales presentes en el modelo base.
-- Restricciones de licencia: aunque la etiqueta indica MIT, la página de HuggingFace muestra "no disponible" como licencia, lo que genera ambigüedad. Se recomienda verificar antes de uso comercial.
+- Restricciones de licencia: aunque la etiqueta indica MIT, la página de Hugging Face muestra "no disponible" como licencia, lo que genera ambigüedad. Se recomienda verificar antes de uso comercial.
 - Idiomas limitados: las etiquetas solo indican inglés y chino; el rendimiento en otros idiomas no está garantizado.
 - Sin benchmarks publicados: no hay evidencia de rendimiento en tareas estándar, lo que dificulta la evaluación comparativa.
 - Carácter uncensored: la ausencia de filtros puede producir contenido inapropiado. Su uso debe ser responsable y, en entornos de producción, considerar capas de moderación adicionales.
@@ -80,7 +80,7 @@ La comparativa se basa en las etiquetas y descripciones de los repositorios. No 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Solstice-AI/DeepSeek-V4-Flash-Vision-UNCENSORED-MXFP4
+- Hugging Face: https://huggingface.co/Solstice-AI/DeepSeek-V4-Flash-Vision-UNCENSORED-MXFP4
 - Modelo base abliterado: https://huggingface.co/apetersson/DeepSeek-V4-Flash-Vision-Exp-Abliterated
 - Modelo original DeepSeek-V4-Flash-Vision-Exp: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Modelo DeepSeek-V4-Flash: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash

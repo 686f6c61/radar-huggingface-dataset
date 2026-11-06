@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/jpn-jpan-100mb-ppt-Dp-10mb-packed-bfd_seed455` es un ajuste fino (fine-tune) del modelo base `goldfish-models/jpn_jpan_100mb`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2, es decir, un transformer decoder-only con atencion causal completa, con 124.770.816 parametros totales y un repositorio de 0,3 GB en formato safetensors. El ajuste se ha realizado mediante SFT (supervised fine-tuning) con la libreria TRL, version 0.23.0.
+El modelo `francesca9805/jpn-jpan-100mb-ppt-Dp-10mb-packed-bfd_seed455` es un ajuste fino (fine-tune) del modelo base `goldfish-models/jpn_jpan_100mb`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2, es decir, un transformer decoder-only con atencion causal completa, con 124.770.816 parametros totales y un repositorio de 0,3 GB en formato safetensors. El ajuste se ha realizado mediante SFT (supervised fine-tuning) con la libreria TRL, version 0.23.0.
 
 El modelo hereda el enfoque del proyecto goldfish-models, orientado a modelos monollingues de tamano reducido para idiomas concretos. En este caso, el identificador `jpn_jpan` apunta al japones escrito en script JPan (kanji, hiragana y katakana), y la nomenclatura `100mb` hace referencia al volumen del corpus del modelo base, mientras que `10mb-packed` sugiere un conjunto de datos de ajuste fino de unos 10 MB empaquetado. La model card no documenta la composicion del dataset, el numero de tokens de entrenamiento ni la licencia efectiva del artefacto.
 
@@ -45,7 +45,7 @@ El ajuste fino se realizo con SFT (supervised fine-tuning) usando TRL 0.23.0, so
 - Linea base en experimentos de ajuste fino: sirve como punto de comparacion reproducible (semilla 455, dataset empaquetado de 10 MB) frente a otros ajustes del mismo modelo base en estudios de tokenizacion o de recetas SFT.
 - Generacion de texto sintetico en japones: puede producir frases de relleno o ejemplos para ampliar corpus de entrenamiento de modelos mayores, siempre con revision humana posterior.
 - Prototipado rapido de interfaces de chat en japones: al ser un modelo de 124M de parametros, permite levantar una demo local en minutos y validar el flujo de producto antes de migrar a un modelo mayor.
-- Docencia y practicas de NLP: su tamano permite entrenar, evaluar y depurar en una unica GPU consumer, lo que lo hace util en asignaturas de procesamiento de lenguaje natural o talleres de HuggingFace.
+- Docencia y practicas de NLP: su tamano permite entrenar, evaluar y depurar en una unica GPU consumer, lo que lo hace util en asignaturas de procesamiento de lenguaje natural o talleres de Hugging Face.
 - Pruebas de infraestructura de despliegue: sirve para validar pipelines de vLLM, TGI o transformers antes de desplegar modelos de mayor tamano, ya que los tiempos de carga son minimos.
 - Investigacion sobre tokenizacion japonesa: al derivar de un modelo con vocabulario especifico para japones, permite medir la eficiencia de compresion de tokens y su efecto en el ajuste fino.
 - Generacion de completados cortos en entornos con recursos muy limitados (CPU, dispositivos embebidos o nodos sin GPU), donde un modelo de menor tamano es la unica opcion viable.
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/jpn-jpan-100mb-ppt-Dp-10mb-packed-bfd_seed455 | 124.770.816 | No disponible | No disponible | HuggingFace, safetensors | Ajuste SFT con TRL sobre corpus empaquetado de ~10 MB |
-| goldfish-models/jpn_jpan_100mb | No disponible | No disponible | No disponible | HuggingFace, safetensors | Modelo base; el ajuste deriva directamente de el |
-| openai-community/gpt2 | 124 millones | 1024 tokens | MIT | HuggingFace, safetensors, GGUF en repositorios derivados | Modelo de referencia de la misma arquitectura y orden de magnitud, pero entrenado principalmente en ingles |
-| Modelos monollingues de japones de ~100M-130M parametros (por ejemplo, la familia rinna/japanese-gpt2) | No disponible | No disponible | No disponible | HuggingFace | No se dispone de datos verificados en la informacion proporcionada para establecer una comparacion de rendimiento |
+| francesca9805/jpn-jpan-100mb-ppt-Dp-10mb-packed-bfd_seed455 | 124.770.816 | No disponible | No disponible | Hugging Face, safetensors | Ajuste SFT con TRL sobre corpus empaquetado de ~10 MB |
+| goldfish-models/jpn_jpan_100mb | No disponible | No disponible | No disponible | Hugging Face, safetensors | Modelo base; el ajuste deriva directamente de el |
+| openai-community/gpt2 | 124 millones | 1024 tokens | MIT | Hugging Face, safetensors, GGUF en repositorios derivados | Modelo de referencia de la misma arquitectura y orden de magnitud, pero entrenado principalmente en ingles |
+| Modelos monollingues de japones de ~100M-130M parametros (por ejemplo, la familia rinna/japanese-gpt2) | No disponible | No disponible | No disponible | Hugging Face | No se dispone de datos verificados en la informacion proporcionada para establecer una comparacion de rendimiento |
 
 No se dispone de resultados de benchmarks que permitan comparar el rendimiento de este modelo con el de sus alternativas. La comparacion se limita a parametros, formato y disponibilidad.
 
@@ -86,7 +86,7 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/jpn-jpan-100mb-ppt-Dp-10mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/jpn-jpan-100mb-ppt-Dp-10mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/jpn_jpan_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/f653tntp

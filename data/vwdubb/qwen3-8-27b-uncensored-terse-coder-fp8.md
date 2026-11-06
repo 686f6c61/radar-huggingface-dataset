@@ -6,7 +6,7 @@ vwdubb/Qwen3.8-27B-Uncensored-Terse-Coder-FP8 es una fusión (merge) de tipo LoR
 
 El modelo resuelve dos necesidades concretas: por un lado, ofrecer una variante sin censura para tareas de red teaming y evaluación de seguridad, tal y como sugiere el tag ai-red-team; por otro, reducir el coste de generación en flujos de trabajo de programación, donde la verbosidad del modo pensamiento es un lastre. La cuantización FP8 reduce el peso en disco y en memoria a aproximadamente un byte por parámetro (38,5 GB de repositorio frente a los ~55 GB que ocuparían los pesos en BF16), manteniendo la compatibilidad con motores de inferencia modernos.
 
-Es relevante ahora porque combina tres tendencias simultáneas: la atención híbrida como alternativa de bajo coste a la atención completa, las cabezas MTP para decodificación especulativa y la publicación de pesos en formatos de cuantización listos para servir en producción (compressed-tensors/FP8). Conviene señalar que el repositorio tiene acceso restringido (gated), requiere aceptar condiciones en HuggingFace y no registra descargas ni valoraciones en el momento de la consulta.
+Es relevante ahora porque combina tres tendencias simultáneas: la atención híbrida como alternativa de bajo coste a la atención completa, las cabezas MTP para decodificación especulativa y la publicación de pesos en formatos de cuantización listos para servir en producción (compressed-tensors/FP8). Conviene señalar que el repositorio tiene acceso restringido (gated), requiere aceptar condiciones en Hugging Face y no registra descargas ni valoraciones en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -62,17 +62,17 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - GPU de consumo: una única RTX 4090 o RTX 3090 de 24 GB no puede alojar los pesos FP8. Para esos equipos habría que recurrir a builds GGUF de 4 bits del repositorio base; este repositorio concreto no los ofrece.
 - Opciones de despliegue: vLLM y SGLang soportan pesos cuantizados con compressed-tensors; TGI y TensorRT-LLM son alternativas viables. Para GGUF, llama.cpp y Ollama son las vías habituales, pero sobre el modelo base, no sobre esta publicación.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones de tokens por segundo para esta fusión.
-- Nota de acceso: el repositorio está en modo gated, por lo que es necesario aceptar las condiciones en HuggingFace y autenticarse con un token antes de descargar.
+- Nota de acceso: el repositorio está en modo gated, por lo que es necesario aceptar las condiciones en Hugging Face y autenticarse con un token antes de descargar.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vwdubb/Qwen3.8-27B-Uncensored-Terse-Coder-FP8 | 27,8 B (denso) | no disponible | FP8 block / compressed-tensors | apache-2.0 | Gated en HuggingFace; 0 descargas |
-| orcarouter/Qwen3.8-27B-Uncensored (modelo base) | 27,8 B (denso) | no disponible | GGUF de 2 a 8 bits, con mmproj | apache-2.0 | HuggingFace y Ollama |
+| vwdubb/Qwen3.8-27B-Uncensored-Terse-Coder-FP8 | 27,8 B (denso) | no disponible | FP8 block / compressed-tensors | apache-2.0 | Gated en Hugging Face; 0 descargas |
+| orcarouter/Qwen3.8-27B-Uncensored (modelo base) | 27,8 B (denso) | no disponible | GGUF de 2 a 8 bits, con mmproj | apache-2.0 | Hugging Face y Ollama |
 | Qwen/Qwen3.8-27B (modelo original) | 27,8 B (denso) | no disponible | BF16 y cuantizaciones de la comunidad | no disponible en la información consultada | Repositorio oficial de Qwen |
-| vwdubb/Swift-Qwen3.8-27b-FP8 | 27,8 B (denso) | no disponible | FP8 | no disponible en la información consultada | HuggingFace |
-| bl5591/Qwen3.8-27B-Uncensored-FP8 | 27,8 B (denso) | no disponible | FP8 block | no disponible en la información consultada | Bucket de HuggingFace |
+| vwdubb/Swift-Qwen3.8-27b-FP8 | 27,8 B (denso) | no disponible | FP8 | no disponible en la información consultada | Hugging Face |
+| bl5591/Qwen3.8-27B-Uncensored-FP8 | 27,8 B (denso) | no disponible | FP8 block | no disponible en la información consultada | Bucket de Hugging Face |
 
 Las diferencias entre estas variantes no están en el tamaño ni en la arquitectura, que comparten, sino en el post-entrenamiento (abliteración, fusión LoRA) y en el formato de pesos. No hay datos de rendimiento comparativo publicados para establecer una jerarquía de calidad entre ellas.
 
@@ -90,7 +90,7 @@ Las diferencias entre estas variantes no están en el tamaño ni en la arquitect
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vwdubb/Qwen3.8-27B-Uncensored-Terse-Coder-FP8
+- Modelo en Hugging Face: https://huggingface.co/vwdubb/Qwen3.8-27B-Uncensored-Terse-Coder-FP8
 - Modelo base (abliterated): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Build de Ollama del modelo base: https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored
 - Derivado con razonamiento eficiente: https://huggingface.co/vwdubb/Swift-Qwen3.8-27b-FP8

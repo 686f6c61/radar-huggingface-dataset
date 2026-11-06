@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/dan-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407` es un ajuste fino (fine-tuning) supervisado de un modelo base previo del mismo autor, `francesca9805/dan-latn-100mb-ppt-mp-struct-core-100mb_seed3407`. Segun las etiquetas del repositorio de HuggingFace, emplea la arquitectura GPT-2, con 124.770.816 parametros totales (aproximadamente 125 millones) y pesos en formato safetensors. El entrenamiento se realizo con la libreria TRL en su version 0.23.0, mediante la tecnica de SFT (supervised fine-tuning), y el identificador del checkpoint sugiere el paso 500 con semilla 3407.
+El modelo `francesca9805/dan-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407` es un ajuste fino (fine-tuning) supervisado de un modelo base previo del mismo autor, `francesca9805/dan-latn-100mb-ppt-mp-struct-core-100mb_seed3407`. Segun las etiquetas del repositorio de Hugging Face, emplea la arquitectura GPT-2, con 124.770.816 parametros totales (aproximadamente 125 millones) y pesos en formato safetensors. El entrenamiento se realizo con la libreria TRL en su version 0.23.0, mediante la tecnica de SFT (supervised fine-tuning), y el identificador del checkpoint sugiere el paso 500 con semilla 3407.
 
 El nombre del modelo incluye el segmento `dan-latn`, que apunta a la variante del danes escrita en alfabeto latino, aunque la model card no declara explicitamente los idiomas soportados. El sufijo `after-ppt-mp-struct-core-100mb` sugiere que forma parte de una cadena de experimentos sobre un corpus de 100 MB, probablemente orientados al estudio de tokenizacion o preentrenamiento en un contexto academico (el enlace de Weights & Biases apunta a la Universidad de Groningen). Se trata, por tanto, de un checkpoint de investigacion mas que de un modelo listo para produccion.
 
@@ -31,7 +31,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL 0.23.0
 
 ## Capacidades
 
-- Generacion de texto autoregresiva basica, segun la tarea declarada `text-generation` en el pipeline de HuggingFace.
+- Generacion de texto autoregresiva basica, segun la tarea declarada `text-generation` en el pipeline de Hugging Face.
 - Ajuste al formato de conversacion por turnos: el ejemplo de la model card usa una lista de mensajes con el rol `user`, lo que sugiere que el ajuste SFT se realizo sobre datos conversacionales o de instrucciones.
 - Idiomas: no verificados. El identificador apunta al danes en alfabeto latino, pero no hay confirmacion en la documentacion.
 - Tool calling / function calling: no disponible; no se documenta soporte.
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente (por ejemplo, GTX 1050 Ti, RTX 3050, T4). No requiere modelos de gama alta como A100 o H100.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo actual e incluso en iGPU con memoria compartida suficiente.
 - Ejecucion en CPU: viable; un modelo de 125M parametros puede generar texto en CPU con latencias de decimas de segundo a pocos segundos por token, segun el hardware.
-- Opciones de despliegue: transformers (soporte nativo y confirmado), text-generation-inference (la etiqueta `text-generation-inference` aparece en el repositorio), endpoints de HuggingFace. No se documenta compatibilidad con llama.cpp, Ollama, vLLM o TGI en formato especifico.
+- Opciones de despliegue: transformers (soporte nativo y confirmado), text-generation-inference (la etiqueta `text-generation-inference` aparece en el repositorio), endpoints de Hugging Face. No se documenta compatibilidad con llama.cpp, Ollama, vLLM o TGI en formato especifico.
 - Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
 
 Nota: el repositorio ocupa 4,7 GB, muy por encima del peso de un unico checkpoint en fp32, lo que sugiere que contiene varios archivos (posiblemente checkpoints intermedios o estados del optimizador). Conviene revisar el contenido antes de descargarlo.
@@ -70,10 +70,10 @@ Nota: el repositorio ocupa 4,7 GB, muy por encima del peso de un unico checkpoin
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/dan-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407 | 124,77M | No disponible | No disponible | HuggingFace (0 descargas) | Ajuste SFT con TRL; orientado a investigacion en danes |
-| GPT-2 (openai-community/gpt2) | 124M | 1024 tokens | MIT | HuggingFace, ampliamente desplegado | Modelo base original; contexto estandar de 1024 tokens |
-| DistilGPT-2 | 82M | 1024 tokens | Apache 2.0 | HuggingFace | Version destilada, mas rapida pero con menor calidad |
-| SmolLM-135M | 135M | 2048 tokens | Apache 2.0 | HuggingFace | Modelo moderno de gama similar con contexto ampliado |
+| francesca9805/dan-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407 | 124,77M | No disponible | No disponible | Hugging Face (0 descargas) | Ajuste SFT con TRL; orientado a investigacion en danes |
+| GPT-2 (openai-community/gpt2) | 124M | 1024 tokens | MIT | Hugging Face, ampliamente desplegado | Modelo base original; contexto estandar de 1024 tokens |
+| DistilGPT-2 | 82M | 1024 tokens | Apache 2.0 | Hugging Face | Version destilada, mas rapida pero con menor calidad |
+| SmolLM-135M | 135M | 2048 tokens | Apache 2.0 | Hugging Face | Modelo moderno de gama similar con contexto ampliado |
 
 La comparacion se limita a tamanos y licencias; no hay datos de benchmarks del modelo analizado que permitan contrastar calidad frente a estas alternativas. Para GPT-2 se cita el contexto estandar de 1024 tokens como referencia de la arquitectura, no como dato confirmado del modelo de francesca9805.
 
@@ -90,7 +90,7 @@ La comparacion se limita a tamanos y licencias; no hay datos de benchmarks del m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/dan-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/dan-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/dan-latn-100mb-ppt-mp-struct-core-100mb_seed3407
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Registro del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/udsdls7c

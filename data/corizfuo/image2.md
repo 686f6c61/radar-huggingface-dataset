@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Corizfuo/image2` es un modelo de difusión para generación de imágenes a partir de texto, publicado en HuggingFace por el usuario Corizfuo. Utiliza el pipeline `StableDiffusionPipeline` de la librería diffusers, lo que indica que está diseñado para la tarea de text-to-image. El modelo cuenta con aproximadamente 860 millones de parámetros, un tamaño similar al de Stable Diffusion 1.x, y se distribuye con licencia openrail, una licencia permisiva para uso comercial y de investigación.
+El modelo `Corizfuo/image2` es un modelo de difusión para generación de imágenes a partir de texto, publicado en Hugging Face por el usuario Corizfuo. Utiliza el pipeline `StableDiffusionPipeline` de la librería diffusers, lo que indica que está diseñado para la tarea de text-to-image. El modelo cuenta con aproximadamente 860 millones de parámetros, un tamaño similar al de Stable Diffusion 1.x, y se distribuye con licencia openrail, una licencia permisiva para uso comercial y de investigación.
 
 A pesar de estar disponible públicamente, el modelo no tiene descargas ni valoraciones, y su model card apenas contiene información más allá de la licencia. No se han publicado detalles sobre su arquitectura interna, datos de entrenamiento, capacidades específicas o benchmarks. Por tanto, esta ficha se basa únicamente en los metadatos disponibles y en las características generales de los modelos de difusión con ese pipeline.
 
@@ -71,4 +71,4 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [HuggingFace: Corizfuo/image2](https://huggingface.co/Corizfuo/image2)
+- [Hugging Face: Corizfuo/image2](https://huggingface.co/Corizfuo/image2)

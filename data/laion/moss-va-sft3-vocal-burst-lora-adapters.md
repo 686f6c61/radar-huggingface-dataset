@@ -77,7 +77,7 @@ La comparativa se limita a otros adaptadores de la misma familia porque no hay m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/laion/moss-va-sft3-vocal-burst-lora-adapters
+- Repositorio Hugging Face: https://huggingface.co/laion/moss-va-sft3-vocal-burst-lora-adapters
 - Modelo base: https://huggingface.co/laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3
 - Adaptadores de emoción: https://huggingface.co/laion/moss-va-sft3-emotion-loras
 - Adaptadores de voz: https://huggingface.co/laion/moss-va-sft3-voice-loras

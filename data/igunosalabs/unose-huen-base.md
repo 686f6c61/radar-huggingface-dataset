@@ -74,10 +74,10 @@ El macro-average de WER es 14,11% y el RTFx medio es 70,03x en Tesla T4. No se h
 
 | Modelo | Parámetros | Contexto audio | WER LibriSpeech clean | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| Unose-Huen-Base | 72,6M | 30 s | 7,86% (declarado) | Apache 2.0 | HuggingFace |
-| openai/whisper-base | 74M | 30 s | no disponible en esta ficha | MIT | HuggingFace |
-| igunosalabs/Unose-Huen-Small | 244M | 30 s | no disponible | no disponible | HuggingFace |
-| Whisper Small (openai) | 244M | 30 s | no disponible en esta ficha | MIT | HuggingFace |
+| Unose-Huen-Base | 72,6M | 30 s | 7,86% (declarado) | Apache 2.0 | Hugging Face |
+| openai/whisper-base | 74M | 30 s | no disponible en esta ficha | MIT | Hugging Face |
+| igunosalabs/Unose-Huen-Small | 244M | 30 s | no disponible | no disponible | Hugging Face |
+| Whisper Small (openai) | 244M | 30 s | no disponible en esta ficha | MIT | Hugging Face |
 
 La comparación con Whisper Base original no puede cuantificarse porque no se han incluido en la información proporcionada los WER de referencia del modelo base en los mismos splits. El modelo hermano Small (244M) está listado por el autor como alternativa de mayor capacidad, pero sin métricas publicadas en esta ficha. No se dispone de comparaciones con otros ASR especializados en acentos africanos (por ejemplo, modelos de Masakhane o variantes de Wav2Vec2) en la información disponible.
 
@@ -95,7 +95,7 @@ La comparación con Whisper Base original no puede cuantificarse porque no se ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/igunosalabs/Unose-Huen-Base
+- Modelo en Hugging Face: https://huggingface.co/igunosalabs/Unose-Huen-Base
 - Repositorio GitHub oficial: https://github.com/Igunosa-Labs/unose-huen
 - Modelo hermano Small (244M): https://huggingface.co/igunosalabs/Unose-Huen-Small
 - Modelo TTS de la suite: https://huggingface.co/igunosalabs/Unose-Voice-v1.0

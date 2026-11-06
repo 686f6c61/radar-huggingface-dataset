@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables específicos. Sin embargo, se puede comparar con el modelo base FLUX.1-dev y con otros adaptadores LoRA de "uncensoring" existentes en el ecosistema HuggingFace, aunque no se citan en la información proporcionada. La comparativa más relevante sería con el propio FLUX.1-dev, que tiene restricciones de contenido, y con otros LoRA como `Heartsync/Flux-NSFW-uncensored` (que aparece en el código de ejemplo como referencia, aunque no se confirma si es el mismo modelo). No se dispone de datos de rendimiento para establecer una comparación cuantitativa.
+No se dispone de información sobre modelos comparables específicos. Sin embargo, se puede comparar con el modelo base FLUX.1-dev y con otros adaptadores LoRA de "uncensoring" existentes en el ecosistema Hugging Face, aunque no se citan en la información proporcionada. La comparativa más relevante sería con el propio FLUX.1-dev, que tiene restricciones de contenido, y con otros LoRA como `Heartsync/Flux-NSFW-uncensored` (que aparece en el código de ejemplo como referencia, aunque no se confirma si es el mismo modelo). No se dispone de datos de rendimiento para establecer una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables específicos. Sin embarg
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HuffingGang/Flux-NSFW-uncensored
+- Modelo en Hugging Face: https://huggingface.co/HuffingGang/Flux-NSFW-uncensored
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - No se proporcionan otros enlaces (papers, blogs, repos, demos) en la información disponible.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-VMR demo assistant (KHALM) es un ajuste fino completo (full fine-tuning) del modelo Qwen2.5 0.5B Instruct realizado por KHALM-LLC sobre 200 pares de pregunta y respuesta relativos al estandar Verifiable Model Record (VMR). El repositorio se publica en HuggingFace con el identificador KHALM-LLC/vmr-demo-assistant y pesa aproximadamente 1,0 GB, con 494.032.768 parametros reales en formato safetensors. El propio autor lo describe como un modelo de demostracion, no desplegado y no apto para produccion ni para uso legal.
+VMR demo assistant (KHALM) es un ajuste fino completo (full fine-tuning) del modelo Qwen2.5 0.5B Instruct realizado por KHALM-LLC sobre 200 pares de pregunta y respuesta relativos al estandar Verifiable Model Record (VMR). El repositorio se publica en Hugging Face con el identificador KHALM-LLC/vmr-demo-assistant y pesa aproximadamente 1,0 GB, con 494.032.768 parametros reales en formato safetensors. El propio autor lo describe como un modelo de demostracion, no desplegado y no apto para produccion ni para uso legal.
 
 Se trata, por tanto, de un modelo pequeno dentro de la familia Qwen2 (transformer decoder-only), concebido no como un asistente generalista sino como una pieza de demostracion de un flujo de trabajo concreto: especializar un modelo base de 0,5B en un dominio muy estrecho mediante ajuste fino completo sobre un conjunto de datos minimo.
 
-Su relevancia es principalmente metodologica y divulgativa: sirve como ejemplo reproducible de fine-tuning completo sobre un corpus diminuto, util para estudiar sobreajuste, olvido catastrofico y despliegue en hardware modesto. No dispone de resultados de evaluacion publicados, ni de licencia declarada en la model card, ni de informacion sobre idiomas o cuantizaciones. El pipeline de HuggingFace no esta definido.
+Su relevancia es principalmente metodologica y divulgativa: sirve como ejemplo reproducible de fine-tuning completo sobre un corpus diminuto, util para estudiar sobreajuste, olvido catastrofico y despliegue en hardware modesto. No dispone de resultados de evaluacion publicados, ni de licencia declarada en la model card, ni de informacion sobre idiomas o cuantizaciones. El pipeline de Hugging Face no esta definido.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ La model card no incluye metricas de MMLU, HumanEval, GSM8K, MT-Bench ni de ning
 - VRAM estimada para inferencia: en fp16 o bf16, aproximadamente 1,0 GB solo para los pesos (494 M x 2 bytes), mas la cache KV; en int8, en torno a 0,5 GB; en una cuantizacion de 4 bits, aproximadamente 0,3-0,4 GB.
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente. Se puede ejecutar con holgura en RTX 3060, RTX 4060, RTX 4090, A100, H100 y similares; las GPU de gama alta quedan muy sobredimensionadas.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU dedicadas de los ultimos diez anos, asi como en iGPU modernas (Apple Silicon, Intel Iris Xe, AMD APU) y en CPU con suficiente RAM del sistema.
-- Opciones de despliegue: transformers con PyTorch, vLLM, HuggingFace TGI, llama.cpp y Ollama (estos dos ultimos requieren convertir previamente los safetensors a GGUF, ya que el repositorio no publica pesos cuantizados), y servidores ligeros tipo FastAPI con plantillas de chat de Qwen2.5.
+- Opciones de despliegue: transformers con PyTorch, vLLM, Hugging Face TGI, llama.cpp y Ollama (estos dos ultimos requieren convertir previamente los safetensors a GGUF, ya que el repositorio no publica pesos cuantizados), y servidores ligeros tipo FastAPI con plantillas de chat de Qwen2.5.
 - Latencia y throughput estimados: no disponibles como medicion publicada. Por tamano, en una GPU moderna se puede esperar un throughput alto (del orden de cientos a miles de tokens por segundo) y en CPU del orden de decenas de tokens por segundo; son estimaciones basadas en el numero de parametros, no resultados medidos sobre este modelo.
 - Nota: el modelo base Qwen2.5-0.5B-Instruct declara soporte de contexto de 32.768 tokens, lo que incrementa el coste de cache KV con contextos largos; aun asi, el consumo se mantiene en el rango de pocos gigabytes.
 
@@ -72,10 +72,10 @@ La model card no incluye metricas de MMLU, HumanEval, GSM8K, MT-Bench ni de ning
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| KHALM-LLC/vmr-demo-assistant | 494.032.768 | No disponible en su model card (el base declara 32.768) | No declarada; base Apache 2.0 | HuggingFace, solo safetensors | Ajuste completo sobre 200 pares de Q&A de dominio VMR; sin benchmarks |
-| Qwen2.5-0.5B-Instruct | 0,49 B aprox. | 32.768 tokens (segun su documentacion publica) | Apache 2.0 | HuggingFace, safetensors y GGUF | Modelo base generalista, con datos de evaluacion publicados; alternativa directa si se necesita uso general |
-| SmolLM2-360M-Instruct | 0,36 B aprox. | 8.192 tokens (segun su documentacion publica) | Apache 2.0 | HuggingFace | Alternativa mas ligera, orientada a dispositivos de borde, con informacion de rendimiento publicada |
-| TinyLlama-1.1B-Chat | 1,1 B aprox. | 2.048 tokens (segun su documentacion publica) | Apache 2.0 | HuggingFace | Mas parametros y mas contexto que el modelo base, pero ventana menor; util como referencia de la categoria sub-2B |
+| KHALM-LLC/vmr-demo-assistant | 494.032.768 | No disponible en su model card (el base declara 32.768) | No declarada; base Apache 2.0 | Hugging Face, solo safetensors | Ajuste completo sobre 200 pares de Q&A de dominio VMR; sin benchmarks |
+| Qwen2.5-0.5B-Instruct | 0,49 B aprox. | 32.768 tokens (segun su documentacion publica) | Apache 2.0 | Hugging Face, safetensors y GGUF | Modelo base generalista, con datos de evaluacion publicados; alternativa directa si se necesita uso general |
+| SmolLM2-360M-Instruct | 0,36 B aprox. | 8.192 tokens (segun su documentacion publica) | Apache 2.0 | Hugging Face | Alternativa mas ligera, orientada a dispositivos de borde, con informacion de rendimiento publicada |
+| TinyLlama-1.1B-Chat | 1,1 B aprox. | 2.048 tokens (segun su documentacion publica) | Apache 2.0 | Hugging Face | Mas parametros y mas contexto que el modelo base, pero ventana menor; util como referencia de la categoria sub-2B |
 
 Los datos de las alternativas proceden de sus fichas y documentacion publicas y pueden variar; no se han verificado contra este modelo, que carece de evaluaciones publicadas.
 
@@ -94,7 +94,7 @@ Los datos de las alternativas proceden de sus fichas y documentacion publicas y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KHALM-LLC/vmr-demo-assistant
+- Modelo en Hugging Face: https://huggingface.co/KHALM-LLC/vmr-demo-assistant
 - Modelo base Qwen2.5-0.5B-Instruct (referencia declarada en la model card): https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Otros enlaces (paper, blog, repositorio de codigo, demo): no disponibles en la informacion proporcionada.
 - Los resultados de busqueda web obtenidos no contienen enlaces relevantes al modelo ni al estandar Verifiable Model Record.

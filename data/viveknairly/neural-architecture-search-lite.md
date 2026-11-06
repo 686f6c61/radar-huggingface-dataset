@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `viveknairly/neural-architecture-search-lite` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigacion sobre busqueda de arquitecturas neuronales (Neural Architecture Search, NAS) publicado en HuggingFace bajo licencia MIT por el usuario viveknairly. La propia model card lo declara explicitamente: "It is not presented as a completed paper or a release of trained models", y el unico artefacto principal es el fichero `paper_notes.md`, que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion.
+El repositorio `viveknairly/neural-architecture-search-lite` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigacion sobre busqueda de arquitecturas neuronales (Neural Architecture Search, NAS) publicado en Hugging Face bajo licencia MIT por el usuario viveknairly. La propia model card lo declara explicitamente: "It is not presented as a completed paper or a release of trained models", y el unico artefacto principal es el fichero `paper_notes.md`, que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion.
 
-El repositorio no documenta pesos entrenados, tokenizador, configuracion de inferencia ni checkpoint utilizable. Los metadatos de HuggingFace asignan la etiqueta `transformer` y declaran un total de 24.832 parametros asociados a safetensors, una cifra que por su magnitud resulta incompatible con cualquier modelo funcional y que, dado el tamano del repositorio (0,0 GB) y el contenido descrito, no corresponde a un modelo desplegable.
+El repositorio no documenta pesos entrenados, tokenizador, configuracion de inferencia ni checkpoint utilizable. Los metadatos de Hugging Face asignan la etiqueta `transformer` y declaran un total de 24.832 parametros asociados a safetensors, una cifra que por su magnitud resulta incompatible con cualquier modelo funcional y que, dado el tamano del repositorio (0,0 GB) y el contenido descrito, no corresponde a un modelo desplegable.
 
 Su relevancia actual es, por tanto, documental y metodologica: sirve como plantilla de planificacion experimental en NAS (comparaciones con baselines emparejados, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas), no como artefacto para evaluar rendimiento, integrar en produccion o comparar con modelos de la misma categoria.
 
@@ -12,7 +12,7 @@ Su relevancia actual es, por tanto, documental y metodologica: sirve como planti
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el repositorio es un cuaderno de notas sobre NAS; la etiqueta `transformer` de HuggingFace no se corresponde con una arquitectura implementada) |
+| Arquitectura | no disponible (el repositorio es un cuaderno de notas sobre NAS; la etiqueta `transformer` de Hugging Face no se corresponde con una arquitectura implementada) |
 | Parametros totales | 24.832 (cifra de los metadatos de safetensors; no documentada en la model card y no asociada a un modelo entrenado) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -68,7 +68,7 @@ No disponible. El repositorio no es un modelo y no tiene equivalentes directos e
 
 | Elemento | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `viveknairly/neural-architecture-search-lite` | Cuaderno de notas de investigacion | 24.832 segun metadatos de safetensors, sin modelo asociado | no disponible | MIT | Publico en HuggingFace |
+| `viveknairly/neural-architecture-search-lite` | Cuaderno de notas de investigacion | 24.832 segun metadatos de safetensors, sin modelo asociado | no disponible | MIT | Publico en Hugging Face |
 | Modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No disponible. El repositorio no es un modelo y no tiene equivalentes directos e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/viveknairly/neural-architecture-search-lite
+- Repositorio en Hugging Face: https://huggingface.co/viveknairly/neural-architecture-search-lite
 - Perfil del autor: https://huggingface.co/viveknairly
 - Neural Architecture Search Algorithm, GeeksforGeeks: https://www.geeksforgeeks.org/deep-learning/neural-architecture-and-search-methods/
 - Neural Architecture Search: Designing Automated AI Models (IJCRT 2025): https://zenodo.org/records/15423210/files/IJCRT202500138.pdf

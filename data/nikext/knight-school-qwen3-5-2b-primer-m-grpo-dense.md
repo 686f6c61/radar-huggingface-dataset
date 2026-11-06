@@ -78,8 +78,8 @@ Hallazgos del proyecto (diferencias pareadas, docs/RESULTS.md):
 
 | Modelo | Parámetros | Contexto | Tasa de resolución (test2000) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Knight School Qwen3.5-2B primer-M + GRPO denso | 2,2B | no disponible | 34,8% | Apache-2.0 | HuggingFace (191 descargas) |
-| Qwen3.5-2B base (zero-shot) | 2,2B | no disponible | 4,1% | Apache-2.0 | HuggingFace |
+| Knight School Qwen3.5-2B primer-M + GRPO denso | 2,2B | no disponible | 34,8% | Apache-2.0 | Hugging Face (191 descargas) |
+| Qwen3.5-2B base (zero-shot) | 2,2B | no disponible | 4,1% | Apache-2.0 | Hugging Face |
 | Stockfish 19 (1 nodo, referencia) | no aplica (motor) | no aplica | 68,6% | GPL-3.0 | Distribución independiente |
 
 No se dispone de información sobre otros modelos de ajedrez comparables en la documentación proporcionada.
@@ -98,7 +98,7 @@ No se dispone de información sobre otros modelos de ajedrez comparables en la d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nikext/knight-school-qwen3.5-2b-primer-m-grpo-dense
+- Hugging Face: https://huggingface.co/nikext/knight-school-qwen3.5-2b-primer-m-grpo-dense
 - Repositorio del proyecto: https://github.com/nikext/knight-school
 - Navegador de respuestas de puzzles: https://nikext.github.io/knight-school/
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

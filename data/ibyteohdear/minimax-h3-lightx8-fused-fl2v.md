@@ -20,7 +20,7 @@ El sufijo `fl2v` del nombre apunta al modo de primer y último fotograma (FL2VA)
 | Longitud de contexto | No disponible. No se documenta una ventana de contexto textual; la generación está acotada a vídeos de 4–15 segundos |
 | Tipos de cuantización | No disponible. El repositorio solo publica pesos safetensors; no se documentan versiones GGUF, fp8, int8 ni int4 |
 | Idiomas soportados | 11 idiomas con soporte estable para diálogo: árabe, chino, inglés, francés, alemán, italiano, japonés, coreano, portugués, ruso y español. Otros idiomas tienen soporte parcial |
-| Licencia | `minimax-h3-community-license-agreement` (etiquetada como `other` en HuggingFace; el texto está en el fichero LICENSE del repositorio) |
+| Licencia | `minimax-h3-community-license-agreement` (etiquetada como `other` en Hugging Face; el texto está en el fichero LICENSE del repositorio) |
 | Formato de pesos | Safetensors (66,3 GB en total; consistente con ~16 bits por parámetro) |
 | Resolución y formato de salida | Lado corto a 768 píxeles por defecto; hasta 2K mediante H3-Regenerate-2K. Relaciones de aspecto 21:9, 16:9, 4:3, 1:1, 3:4, 9:16 y otras |
 | Duración y cadencia de salida | 4–15 segundos a 24 FPS |
@@ -95,8 +95,8 @@ Comparativa con modelos de otras familias (por ejemplo, generadores de vídeo co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ibyteohdear/MiniMax-H3-LightX8-Fused-fl2v
-- Modelo oficial en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio en Hugging Face: https://huggingface.co/ibyteohdear/MiniMax-H3-LightX8-Fused-fl2v
+- Modelo oficial en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia del modelo oficial: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Repositorio en GitHub (incluye la carpeta de skills para redacción de prompts): https://github.com/MiniMax-AI/MiniMax-H3
 - Skills de prompting: https://github.com/MiniMax-AI/MiniMax-H3/tree/main/skills

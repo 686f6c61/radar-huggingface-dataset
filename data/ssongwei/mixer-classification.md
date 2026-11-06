@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ssongwei/mixer-classification` es un repositorio de HuggingFace publicado por el usuario ssongwei que contiene una implementación compacta y personalizada en PyTorch de una arquitectura tipo Mixer orientada a tareas de clasificación. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests), revisión de código y experimentos controlados de pequena escala. El propio autor lo etiqueta como configuración "tiny" y advierte explícitamente que no presenta resultados de benchmarks.
+`ssongwei/mixer-classification` es un repositorio de Hugging Face publicado por el usuario ssongwei que contiene una implementación compacta y personalizada en PyTorch de una arquitectura tipo Mixer orientada a tareas de clasificación. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests), revisión de código y experimentos controlados de pequena escala. El propio autor lo etiqueta como configuración "tiny" y advierte explícitamente que no presenta resultados de benchmarks.
 
 El modelo ocupa un espacio muy reducido: el checkpoint en safetensors contiene 24.832 parámetros totales, lo que lo sitúa en el rango de los modelos de juguete o de validación de pipelines. La arquitectura declarada combina atención con grouped query attention (GQA), fusión mediante co-attention, activación swish y normalización layernorm, todo ello bajo una licencia Apache 2.0.
 
@@ -67,10 +67,10 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 - No se declaran idiomas soportados ni longitud de contexto, por lo que no puede evaluarse su idoneidad multilingüe o para contextos largos.
 - No hay resultados de benchmarks ni métricas de rendimiento publicadas.
 - La licencia Apache 2.0 permite uso comercial del código, pero deben revisarse por separado los términos de los datasets externos que se utilicen con el repositorio.
-- Al ser una implementación personalizada, las APIs automáticas de carga de HuggingFace requieren un adaptador explícito; no es un drop-in replacement de modelos estándar.
+- Al ser una implementación personalizada, las APIs automáticas de carga de Hugging Face requieren un adaptador explícito; no es un drop-in replacement de modelos estándar.
 - El tamaño del repo es de 0.0 GB y las descargas registradas son 0, lo que refleja una adopción prácticamente nula y ausencia de validación comunitaria.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ssongwei/mixer-classification
+- Repositorio en Hugging Face: https://huggingface.co/ssongwei/mixer-classification
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

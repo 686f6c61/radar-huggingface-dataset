@@ -2,9 +2,9 @@
 
 ## Resumen
 
-StarOperating-Synthetic-intelligence-3-04 (abreviado StarO-SI-3-04) es un modelo multimodal de tipo "any-to-any" publicado por la organizacion C-a-Star-Technology-Official en HuggingFace. Se trata de un ajuste fino (finetune) del modelo base StarO-AI-3-01-Next-Super, orientado principalmente al idioma arabe y a tareas de conversion entre modalidades (texto, imagen y vision-lenguaje). El pipeline declarado es `any-to-any`, lo que sugiere la capacidad de aceptar y producir contenido en mas de una modalidad, aunque la documentacion publica disponible es muy limitada.
+StarOperating-Synthetic-intelligence-3-04 (abreviado StarO-SI-3-04) es un modelo multimodal de tipo "any-to-any" publicado por la organizacion C-a-Star-Technology-Official en Hugging Face. Se trata de un ajuste fino (finetune) del modelo base StarO-AI-3-01-Next-Super, orientado principalmente al idioma arabe y a tareas de conversion entre modalidades (texto, imagen y vision-lenguaje). El pipeline declarado es `any-to-any`, lo que sugiere la capacidad de aceptar y producir contenido en mas de una modalidad, aunque la documentacion publica disponible es muy limitada.
 
-El modelo se presenta bajo la etiqueta comercial "synthetic-intelligence" y "super-model", sin que se hayan publicado especificaciones tecnicas detalladas (numero de parametros, longitud de contexto, composicion del dataset de entrenamiento). El repositorio ocupa 0,8 GB, un tamano reducido que no es coherente con un modelo de pesos completos de gran escala, por lo que probablemente contenga pesos cuantizados, adaptadores o artefactos parciales. El acceso esta restringido (gated) y requiere aceptar condiciones en HuggingFace.
+El modelo se presenta bajo la etiqueta comercial "synthetic-intelligence" y "super-model", sin que se hayan publicado especificaciones tecnicas detalladas (numero de parametros, longitud de contexto, composicion del dataset de entrenamiento). El repositorio ocupa 0,8 GB, un tamano reducido que no es coherente con un modelo de pesos completos de gran escala, por lo que probablemente contenga pesos cuantizados, adaptadores o artefactos parciales. El acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 Su relevancia actual radica en la escasez de modelos multimodales any-to-any centrados en arabe, un idioma con menor representacion en el ecosistema open source. Sin embargo, la ausencia de benchmarks, de ficha tecnica detallada y de documentacion sobre el entrenamiento limita seriamente su evaluacion rigurosa y su adopcion en produccion.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StarO-SI-3-04 | no disponible | no disponible | arabe | auditable-commercial-license-v1-0 | gated en HuggingFace |
+| StarO-SI-3-04 | no disponible | no disponible | arabe | auditable-commercial-license-v1-0 | gated en Hugging Face |
 | Modelos any-to-any multilingues (p. ej. familia Qwen-VL, LLaVA) | variable | variable | multilingue | variable (Apache 2.0, Llama, etc.) | publicos |
 | Modelos especializados en arabe (p. ej. Jais, AceGPT) | variable | variable | arabe/ingles | variable | publicos |
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento del modelo que permitan una comparacion cu
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion tecnica: no se publican parametros, contexto, dataset ni metodologia de entrenamiento, lo que impide una evaluacion rigurosa.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita la reproducibilidad y el despliegue inmediato.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita la reproducibilidad y el despliegue inmediato.
 - Licencia "auditable-commercial-license-v1-0" etiquetada como "other": las condiciones exactas de uso comercial no estan claras y deben revisarse antes de cualquier adopcion en produccion.
 - Cobertura linguistica limitada al arabe segun los metadatos; no se confirma soporte de otros idiomas.
 - Riesgo elevado de alucinacion y de comportamiento impredecible al no haber benchmarks ni evaluaciones publicas.
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento del modelo que permitan una comparacion cu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/C-a-Star-Technology-Official/StarOperating-Synthetic-intelligence-3-04
+- Hugging Face: https://huggingface.co/C-a-Star-Technology-Official/StarOperating-Synthetic-intelligence-3-04
 - Modelo base: https://huggingface.co/C-a-Star-Technology-Official/StarO-AI-3-01-Next-Super
 - Organizacion: https://huggingface.co/C-a-Star-Technology-Official

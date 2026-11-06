@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Coroner 31b es un modelo de lenguaje de aproximadamente 30.700 millones de parámetros publicado en HuggingFace por el usuario `actuaryai` bajo el identificador `actuaryai/judge-31b`, y redistribuido en formato GGUF por `mradermacher`, un conocido conversor de pesos a llama.cpp con más de 3.400 modelos publicados. Esta ficha cubre concretamente la versión cuantizada (`mradermacher/coroner-31b-GGUF`), que incluye 13 variantes de cuantización más dos ficheros `mmproj` para un codificador multimodal.
+Coroner 31b es un modelo de lenguaje de aproximadamente 30.700 millones de parámetros publicado en Hugging Face por el usuario `actuaryai` bajo el identificador `actuaryai/judge-31b`, y redistribuido en formato GGUF por `mradermacher`, un conocido conversor de pesos a llama.cpp con más de 3.400 modelos publicados. Esta ficha cubre concretamente la versión cuantizada (`mradermacher/coroner-31b-GGUF`), que incluye 13 variantes de cuantización más dos ficheros `mmproj` para un codificador multimodal.
 
 El modelo está orientado, a juzgar por sus etiquetas (`token-risk`, `robinhood-chain`, `ai-agents`, `json`, `lora`), a tareas de análisis de riesgo de tokens y contratos en cadena, generación de JSON estructurado y uso como componente dentro de pipelines de agentes. El nombre "judge" del modelo base sugiere además un uso como evaluador automático (LLM-as-a-judge). No se ha publicado información técnica sobre arquitectura, datos de entrenamiento ni longitud de contexto en la documentación disponible.
 
@@ -27,11 +27,11 @@ No se ha publicado informacion sobre la arquitectura interna, el proceso de entr
 
 Los unicos indicios tecnicos disponibles son indirectos. La presencia de ficheros `mmproj` (multi-modal projection) indica que el modelo base incorpora un codificador visual que permite procesar imagenes ademas de texto en llama.cpp. La etiqueta `lora` sugiere que el modelo se publico o se entreno con adaptadores de bajo rango, o que admite su uso. El autor de la cuantizacion indica que las cuantizaciones ponderadas con imatrix no estaban disponibles en el momento de la publicacion, por lo que todas las variantes ofrecidas son cuantizaciones estaticas, lo que en la practica implica una calidad algo inferior a la de un imatrix del mismo tamano.
 
-Un sitio de terceros (`coronerai.pro`) afirma que el modelo se construye sobre "Gemma 4 31B" con licencia Apache 2.0, pero esta afirmacion no aparece en la documentacion de HuggingFace ni ha sido confirmada por el autor, y ademas entra en conflicto con el campo `base_model` de los metadatos (`actuaryai/judge-31b`). Se trata, por tanto, de informacion no verificada.
+Un sitio de terceros (`coronerai.pro`) afirma que el modelo se construye sobre "Gemma 4 31B" con licencia Apache 2.0, pero esta afirmacion no aparece en la documentacion de Hugging Face ni ha sido confirmada por el autor, y ademas entra en conflicto con el campo `base_model` de los metadatos (`actuaryai/judge-31b`). Se trata, por tanto, de informacion no verificada.
 
 ## Capacidades
 
-- Generacion de texto conversacional (la etiqueta `conversational` aparece en los metadatos de HuggingFace).
+- Generacion de texto conversacional (la etiqueta `conversational` aparece en los metadatos de Hugging Face).
 - Generacion de JSON estructurado, segun la etiqueta `json` del repositorio, lo que apunta a un uso previsto en pipelines que requieren salida parseable.
 - Procesamiento de imagenes: los ficheros `mmproj` permiten adjuntar un codificador visual y trabajar con entradas multimodales en llama.cpp.
 - Uso como agente o componente de agentes, segun las etiquetas `ai-agents` y `robinhood-chain`.

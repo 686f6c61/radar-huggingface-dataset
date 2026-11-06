@@ -78,7 +78,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- [Checkpoint en HuggingFace](https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-6bit)
+- [Checkpoint en Hugging Face](https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-6bit)
 - [Hermano 4-bit](https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-4bit)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Certificado Tier 1](https://github.com/defai-digital/axquant/blob/main/docs/certifications/qwen38-27b-axq6-tier1.md)

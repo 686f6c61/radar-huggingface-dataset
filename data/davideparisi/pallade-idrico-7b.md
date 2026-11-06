@@ -72,8 +72,8 @@ No se identifican en la información disponible modelos públicos directamente c
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pallade Idrico 7B (v1.0) | ~7B (adaptador LoRA) | No disponible | Regulación hídrica italiana (ARERA/SII) | Apache 2.0 | HuggingFace, 0 descargas, 1 like |
-| Minerva-7B-instruct-v1.0 | ~7B | No disponible | Modelo fundacional e instructivo en italiano | No disponible en esta consulta | HuggingFace (Sapienza NLP) |
+| Pallade Idrico 7B (v1.0) | ~7B (adaptador LoRA) | No disponible | Regulación hídrica italiana (ARERA/SII) | Apache 2.0 | Hugging Face, 0 descargas, 1 like |
+| Minerva-7B-instruct-v1.0 | ~7B | No disponible | Modelo fundacional e instructivo en italiano | No disponible en esta consulta | Hugging Face (Sapienza NLP) |
 | Modelos generalistas de ~7B | ~7B | No disponible | Propósito general, multilingüe | Variable según modelo | Amplia |
 
 Los datos de rendimiento comparado no están disponibles porque Pallade Idrico 7B no publica evaluaciones.
@@ -93,7 +93,7 @@ Los datos de rendimiento comparado no están disponibles porque Pallade Idrico 7
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davideparisi/pallade-idrico-7b
+- Modelo en Hugging Face: https://huggingface.co/davideparisi/pallade-idrico-7b
 - Modelo base Minerva-7B-instruct-v1.0: https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0
 - DOI del proyecto (Zenodo): https://doi.org/10.5281/zenodo.23144167
 - Dataset declarado: custom/sii-corpus-italy (sin URL pública en la información disponible)

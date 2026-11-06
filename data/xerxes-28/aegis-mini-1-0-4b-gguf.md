@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Xerxes-28/AEGIS-Mini-1.0-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Xerxes-28/AEGIS-Mini-1.0-4B-GGUF
 - Adaptador LoRA: https://huggingface.co/Xerxes-28/AEGIS-Mini-V1-LoRA
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-unsloth-bnb-4bit
 - Dataset MATH-500: https://huggingface.co/datasets/HuggingFaceH4/MATH-500

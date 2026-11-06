@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every32` es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario wz7475 sobre el modelo base Qwen2.5-7B-Instruct, segun se deduce del propio identificador del repositorio. El nombre sugiere que el entrenamiento combina una mezcla de datos de instrucciones de dominio legal ("legal-sftmix") con el dataset OpenAssistant OASST1, aunque el autor no ha documentado ningun detalle del proceso en la model card, que permanece como la plantilla autogenerada por HuggingFace con todos los campos marcados como "[More Information Needed]".
+El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every32` es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario wz7475 sobre el modelo base Qwen2.5-7B-Instruct, segun se deduce del propio identificador del repositorio. El nombre sugiere que el entrenamiento combina una mezcla de datos de instrucciones de dominio legal ("legal-sftmix") con el dataset OpenAssistant OASST1, aunque el autor no ha documentado ningun detalle del proceso en la model card, que permanece como la plantilla autogenerada por Hugging Face con todos los campos marcados como "[More Information Needed]".
 
 Se trata, por tanto, de un derivado de 7.600 millones de parametros aproximadamente, con arquitectura transformer decoder-only, orientado a instrucciones y con un supuesto sesgo hacia el ambito juridico. Su relevancia practica es limitada en el estado actual de la informacion: el repositorio no declara licencia, ni idiomas, ni pipeline, ni volumen de datos de entrenamiento, y acumula cero descargas y cero "likes", lo que impide validar su calidad o su reproducibilidad.
 
@@ -71,7 +71,7 @@ La comparativa se establece contra modelos de la misma categoria (7-8B, orientad
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every32 | no disponible (base de ~7,6B) | no disponible (base de 32.768 tokens) | no disponible | Repositorio HuggingFace sin descargas ni documentacion | Sin benchmarks, sin model card y con tamano de repositorio inconsistente |
+| wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every32 | no disponible (base de ~7,6B) | no disponible (base de 32.768 tokens) | no disponible | Repositorio Hugging Face sin descargas ni documentacion | Sin benchmarks, sin model card y con tamano de repositorio inconsistente |
 | Qwen2.5-7B-Instruct | ~7,6B | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | Ampliamente distribuido y soportado | Modelo base probable de este ajuste; ofrece tool calling y soporte de mas de 29 idiomas |
 | Llama-3.1-8B-Instruct | ~8B | 128.000 tokens | Llama 3.1 Community License | Ampliamente distribuido | Alternativa con contexto nativo mucho mayor y ecosistema maduro |
 | Mistral-7B-Instruct-v0.3 | ~7,2B | 32.768 tokens | Apache 2.0 | Ampliamente distribuido | Alternativa de licencia permisiva con soporte de function calling |
@@ -90,7 +90,7 @@ La comparativa se establece contra modelos de la misma categoria (7-8B, orientad
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every32
+- Repositorio del modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every32
 - Modelo base presumible, Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Dataset OpenAssistant OASST1, citado en el identificador: https://huggingface.co/datasets/OpenAssistant/oasst1
 - Informe tecnico de Qwen2.5 (referencia de la arquitectura base): https://arxiv.org/abs/2412.15115

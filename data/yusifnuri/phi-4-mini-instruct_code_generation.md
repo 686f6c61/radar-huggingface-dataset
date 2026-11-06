@@ -6,7 +6,7 @@
 
 El adaptador forma parte de la tesis de master *Fine-Tune or Pay Per Token? An Enterprise Benchmark of Small Language Models* (SRH University Hamburg, 2026), cuyo objetivo es comparar modelos pequenos ajustados frente a APIs de proveedores frontera en cinco ejes: exactitud, latencia, coste, exposicion de privacidad y volumen de equilibrio del retorno de la inversion (ROI breakeven). El adaptador se publica explicitamente para que el benchmark pueda verificarse de forma independiente.
 
-Su relevancia es metodologica mas que de capacidad: aporta cifras medibles y reproducibles (pass@1 de 0,4287, latencia media de 2200 ms con batch 1, coste de 9,53 USD por millon de tokens generados sobre una H200) y un harness publico, en un contexto en el que la mayoria de adaptadores publicados en HuggingFace no documentan ni datos de entrenamiento ni evaluacion. La contrapartida es que su alcance es deliberadamente estrecho y sus propios autores advierten de que no debe tratarse como un asistente de proposito general.
+Su relevancia es metodologica mas que de capacidad: aporta cifras medibles y reproducibles (pass@1 de 0,4287, latencia media de 2200 ms con batch 1, coste de 9,53 USD por millon de tokens generados sobre una H200) y un harness publico, en un contexto en el que la mayoria de adaptadores publicados en Hugging Face no documentan ni datos de entrenamiento ni evaluacion. La contrapartida es que su alcance es deliberadamente estrecho y sus propios autores advierten de que no debe tratarse como un asistente de proposito general.
 
 ## Especificaciones tecnicas
 
@@ -90,7 +90,7 @@ No disponible. La informacion proporcionada no incluye cifras comparativas por c
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/yusifnuri/phi-4-mini-instruct_code_generation
+- Ficha en Hugging Face: https://huggingface.co/yusifnuri/phi-4-mini-instruct_code_generation
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Codigo, configuraciones y harness de evaluacion: https://github.com/Yusifnuri/slm-benchmark
 - Matriz completa del benchmark: https://github.com/Yusifnuri/slm-benchmark/blob/main/results/benchmark_matrix.csv

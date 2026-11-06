@@ -17,7 +17,7 @@ La relevancia de este modelo radica en su tamaño compacto (3B parámetros) y su
 | Tipos de cuantizacion | no disponible (el modelo base se entrenó en 4-bit bnb, pero no se especifica el formato de publicación) |
 | Idiomas soportados | en (inglés) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada: para un modelo de 3B en 4-bit, se estima entre 2 y 3 GB de VRAM para inferencia. En 8-bit o 16-bit, la VRAM aumentaría a 4-6 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050, RTX 4060) puede ejecutar el modelo en 4-bit. Para mayor velocidad, se recomienda una RTX 3090 o superior.
 - Compatibilidad con consumer GPU: sí, cabe en GPUs de consumo con 4 GB o más.
-- Opciones de despliegue: al ser un modelo de la familia Qwen2, es compatible con vLLM, llama.cpp, Ollama, TGI (text-generation-inference) y transformers. El tag de HuggingFace indica compatibilidad con TGI.
+- Opciones de despliegue: al ser un modelo de la familia Qwen2, es compatible con vLLM, llama.cpp, Ollama, TGI (text-generation-inference) y transformers. El tag de Hugging Face indica compatibilidad con TGI.
 - Latencia y throughput: no se dispone de datos medidos. En una GPU moderna, un modelo de 3B en 4-bit puede generar decenas de tokens por segundo, pero depende del hardware y la implementación.
 
 ## Comparativa con modelos similares
@@ -86,6 +86,6 @@ La comparativa real no es posible sin datos de rendimiento del fine-tune. Se rec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fluxxd9/zen-2-v1.0
+- Hugging Face: https://huggingface.co/fluxxd9/zen-2-v1.0
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit
 - Unsloth: https://github.com/unslothai/unsloth

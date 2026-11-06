@@ -82,7 +82,7 @@ La comparativa directa no es posible sin benchmarks. Se recomienda consultar el 
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/Qwen3.8-27B-EXP-EVE-v1-i1-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/Qwen3.8-27B-EXP-EVE-v1-i1-GGUF
 - Repositorio estatico de cuantizaciones (incluye mmproj): https://huggingface.co/mradermacher/Qwen3.8-27B-EXP-EVE-v1-GGUF
 - Modelo base: https://huggingface.co/win10/Qwen3.8-27B-EXP-EVE-v1
 - Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8

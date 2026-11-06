@@ -83,7 +83,7 @@ La comparativa se limita a los artefactos referenciados en la propia model card;
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/localdadmin/MOSS-Image-SFT-SM
+- Repositorio en Hugging Face: https://huggingface.co/localdadmin/MOSS-Image-SFT-SM
 - Modelo base MOSS-Image-Base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Cuantización GGUF de MOSS-Image-Base: https://huggingface.co/unsloth/MOSS-Image-Base-GGUF
 - Modelo base MOSS-Image-SFT: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT

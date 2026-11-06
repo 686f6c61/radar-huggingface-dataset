@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio identificado como `stevhub/lea_face` es una publicacion alojada en HuggingFace por el usuario `stevhub`. En el momento de la consulta acumula 0 descargas y 0 likes, no declara pipeline, licencia ni idiomas soportados, y su unico tag informativo es `onnx`, junto con la etiqueta de region `us`. El tamano del repositorio es de aproximadamente 1,5 GB, lo que indica la presencia de uno o varios artefactos binarios de cierto peso, presumiblemente pesos en formato ONNX, aunque no se ha podido verificar el contenido exacto del arbol de ficheros.
+El repositorio identificado como `stevhub/lea_face` es una publicacion alojada en Hugging Face por el usuario `stevhub`. En el momento de la consulta acumula 0 descargas y 0 likes, no declara pipeline, licencia ni idiomas soportados, y su unico tag informativo es `onnx`, junto con la etiqueta de region `us`. El tamano del repositorio es de aproximadamente 1,5 GB, lo que indica la presencia de uno o varios artefactos binarios de cierto peso, presumiblemente pesos en formato ONNX, aunque no se ha podido verificar el contenido exacto del arbol de ficheros.
 
 El problema principal que plantea este repositorio es de documentacion: su model card no contiene informacion tecnica sobre ningun modelo. El texto publicado es la plantilla por defecto de un proyecto Flutter ("A new Flutter project" y los enlaces habituales a la documentacion de Flutter), es decir, contenido ajeno por completo a un modelo de aprendizaje automatico. No hay descripcion de la tarea, de la arquitectura, del dataset de entrenamiento ni del procedimiento de evaluacion.
 
@@ -92,7 +92,7 @@ No disponible. Sin conocer la tarea ni la arquitectura del modelo, no es posible
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/stevhub/lea_face
+- Repositorio en Hugging Face: https://huggingface.co/stevhub/lea_face
 - Enlaces incluidos en la model card del repositorio (corresponden a la documentacion generica de Flutter y no guardan relacion con el modelo):
   - https://docs.flutter.dev/get-started/learn-flutter
   - https://docs.flutter.dev/get-started/codelab

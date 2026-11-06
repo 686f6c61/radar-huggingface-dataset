@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Oliviajacksonfa/mobilevit-classification-sandbox` es un repositorio de HuggingFace que contiene una implementación de referencia de MobileViT para tareas de clasificación, publicada por el usuario Oliviajacksonfa bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la model card indica explícitamente que `model.safetensors` es únicamente una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de benchmark. El repositorio prioriza código transparente y pruebas reproducibles sobre resultados empíricos.
+`Oliviajacksonfa/mobilevit-classification-sandbox` es un repositorio de Hugging Face que contiene una implementación de referencia de MobileViT para tareas de clasificación, publicada por el usuario Oliviajacksonfa bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la model card indica explícitamente que `model.safetensors` es únicamente una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de benchmark. El repositorio prioriza código transparente y pruebas reproducibles sobre resultados empíricos.
 
 La arquitectura declarada es MobileViT en configuración "tiny", con atención de tipo grouped query, fusión mediante cross attention, activación swish y normalización layernorm. El recuento real de parámetros en el fichero safetensors es de 16.576, un valor extremadamente bajo que confirma que se trata de un esqueleto de inicialización y no de un modelo funcional a escala real (los MobileViT publicados por Apple manejan entre 1,3 y 5,6 millones de parámetros en sus variantes más pequeñas).
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Oliviajacksonfa/mobilevit-classification-sandbox | 16.576 | no aplica | Apache 2.0 | HuggingFace, sin entrenar |
+| Oliviajacksonfa/mobilevit-classification-sandbox | 16.576 | no aplica | Apache 2.0 | Hugging Face, sin entrenar |
 | Apple MobileViT (pesos oficiales) | 1,3 M – 5,6 M | no aplica | Apple ML Research license | Repositorio oficial de Apple |
 | MobileNetV3 (referencia ligera) | ~2,5 M – 5,4 M | no aplica | Apache 2.0 (según variante) | TorchVision, TF Hub |
 
@@ -79,7 +79,7 @@ La comparación con MobileViT oficial y MobileNetV3 es orientativa: el repositor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Oliviajacksonfa/mobilevit-classification-sandbox
+- Hugging Face: https://huggingface.co/Oliviajacksonfa/mobilevit-classification-sandbox
 - Paper original de MobileViT (Apple): https://arxiv.org/abs/2110.02178
 - Repositorio oficial de MobileViT en GitHub: https://github.com/apple/ml-cvnets
 - Paper de MobileNetV3 (referencia comparativa): https://arxiv.org/abs/1905.02244

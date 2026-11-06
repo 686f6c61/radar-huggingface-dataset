@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`umi-arena-pi05-stage020000-a97961fbb301` es un checkpoint de inferencia publicado por el usuario HongWeiXu en HuggingFace, presentado como candidato para la evaluacion de la competicion UMI Arena. Se trata de un export derivado de un modelo upstream denominado pi05, orientado a politica robotica (policy) que consume dos imagenes RGB de muneca y un vector de estado nativo de 9 dimensiones, y produce 32 filas de acciones de 16 dimensiones cada una. El checkpoint corresponde al paso de entrenamiento 20000.
+`umi-arena-pi05-stage020000-a97961fbb301` es un checkpoint de inferencia publicado por el usuario HongWeiXu en Hugging Face, presentado como candidato para la evaluacion de la competicion UMI Arena. Se trata de un export derivado de un modelo upstream denominado pi05, orientado a politica robotica (policy) que consume dos imagenes RGB de muneca y un vector de estado nativo de 9 dimensiones, y produce 32 filas de acciones de 16 dimensiones cada una. El checkpoint corresponde al paso de entrenamiento 20000.
 
 El paquete no es un modelo de lenguaje generativo ni un modelo multimodal de proposito general: es un artefacto de pesos (14,5 GB en formato safetensors) pensado para ser evaluado dentro de un entorno de simulacion o competicion concreto. El propio autor advierte de que este export por si solo no constituye una politica enviada ni validada, y que no se ha medido el exito robotico oficial con este paquete.
 
@@ -76,5 +76,5 @@ No disponible. La informacion proporcionada no incluye otros checkpoints de UMI 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HongWeiXu/umi-arena-pi05-stage020000-a97961fbb301
+- Hugging Face: https://huggingface.co/HongWeiXu/umi-arena-pi05-stage020000-a97961fbb301
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este checkpoint.

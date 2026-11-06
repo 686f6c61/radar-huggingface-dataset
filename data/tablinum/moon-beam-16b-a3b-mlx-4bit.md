@@ -82,10 +82,10 @@ No se han publicado velocidades de inferencia en Apple Silicon; la model card in
 
 | Modelo | Parámetros (total / activos) | Contexto | Cuantización de esta ficha | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **Moon-Beam 16B-A3B (MLX 4-bit beam mix)** | 16B / ≈3B | no disponible | 4,89 bits medios, 9,77 GB | MIT | HuggingFace, MLX |
-| Moonlight-16B-A3B-Instruct | 16B / ≈3B | no disponible | BF16 (no cuantizado en esta comparativa) | MIT | HuggingFace |
-| Moon-Beam 16B-A3B GGUF IQ4_XS | 16B / ≈3B | no disponible | 4 bits, 9,67 GB | MIT | HuggingFace, llama.cpp |
-| Moon-Beam 16B-A3B BF16 | 16B / ≈3B | no disponible | 16 bits | MIT | HuggingFace |
+| **Moon-Beam 16B-A3B (MLX 4-bit beam mix)** | 16B / ≈3B | no disponible | 4,89 bits medios, 9,77 GB | MIT | Hugging Face, MLX |
+| Moonlight-16B-A3B-Instruct | 16B / ≈3B | no disponible | BF16 (no cuantizado en esta comparativa) | MIT | Hugging Face |
+| Moon-Beam 16B-A3B GGUF IQ4_XS | 16B / ≈3B | no disponible | 4 bits, 9,67 GB | MIT | Hugging Face, llama.cpp |
+| Moon-Beam 16B-A3B BF16 | 16B / ≈3B | no disponible | 16 bits | MIT | Hugging Face |
 
 Frente al modelo base Moonlight, Moon-Beam añade el entrenamiento para el engram Tablinum-2 y el comportamiento de abstención; frente a las cuantizaciones GGUF, la versión MLX beam mix ofrece un KLD en chat de 0,0098 (mejor que IQ4_XS, 0,006, en wiki 0,0235 frente a 0,015) con un tamaño similar, pero solo es ejecutable en Apple Silicon. No se dispone de datos de benchmarks de tarea que permitan comparar la calidad absoluta con otros modelos de la misma categoría.
 
@@ -103,7 +103,7 @@ Frente al modelo base Moonlight, Moon-Beam añade el entrenamiento para el engra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tablinum/Moon-Beam-16B-A3B-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/tablinum/Moon-Beam-16B-A3B-MLX-4bit
 - Pesos BF16: https://huggingface.co/tablinum/Moon-Beam-16B-A3B
 - Versión GGUF: https://huggingface.co/tablinum/Moon-Beam-16B-A3B-GGUF
 - Dataset Tablinum-2 engram: https://huggingface.co/datasets/tablinum/tablinum-2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HinataYamamoto/generation-v1 es un prototipo de investigación publicado en HuggingFace por el usuario HinataYamamoto, que implementa una variante de Swin Transformer Tiny (Swin T) orientada a tareas de generación. El repositorio se presenta explícitamente como un punto de partida experimental: incluye un script de Python, un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta por defecto y un checkpoint de inicialización en formato safetensors.
+HinataYamamoto/generation-v1 es un prototipo de investigación publicado en Hugging Face por el usuario HinataYamamoto, que implementa una variante de Swin Transformer Tiny (Swin T) orientada a tareas de generación. El repositorio se presenta explícitamente como un punto de partida experimental: incluye un script de Python, un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta por defecto y un checkpoint de inicialización en formato safetensors.
 
 Es importante subrayar que el archivo `model.safetensors` se describe en la propia model card como un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*), y no como un modelo entrenado. El recuento real de parámetros del safetensors es de 24.832, una cifra muy inferior a la de un Swin T convencional (del orden de decenas de millones), lo que refuerza que se trata de una inicialización y no de un modelo con pesos entrenados.
 
@@ -45,7 +45,7 @@ Los siguientes escenarios describen para qué podría servir la arquitectura una
 - Desarrollo de adaptadores de carga personalizados: al ser una implementación propia, requiere un adaptador explícito para APIs genéricas; resulta útil como banco de pruebas para ese tipo de integración.
 - Estudio de fusión por cross attention en arquitecturas jerárquicas de visión: la configuración declarada permite experimentar con la combinación de ramas mediante cross attention.
 - Investigación sobre generación con *backbones* tipo Swin: punto de partida para explorar la adaptación de un modelo de visión a tareas de generación.
-- Docencia y formación: ejemplo mínimo de estructura de repositorio (model.py, config, training args, safetensors) para enseñar el ciclo de vida de un modelo en HuggingFace.
+- Docencia y formación: ejemplo mínimo de estructura de repositorio (model.py, config, training args, safetensors) para enseñar el ciclo de vida de un modelo en Hugging Face.
 - Evaluación metodológica: la model card propone evaluar con un conjunto de validación específico de tarea, al menos tres semillas y un *baseline* de capacidad equivalente, lo que lo hace útil como caso de estudio de buenas prácticas de evaluación.
 
 ## Benchmarks y rendimiento
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HinataYamamoto/generation-v1 | 24.832 (inicialización) | no disponible | sin benchmarks publicados | MIT | HuggingFace |
+| HinataYamamoto/generation-v1 | 24.832 (inicialización) | no disponible | sin benchmarks publicados | MIT | Hugging Face |
 | Swin Transformer Tiny (referencia) | no disponible (no publicado en este repositorio) | no disponible | no disponible | no disponible | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,5 +83,5 @@ La comparación directa no es posible: el repositorio no ofrece un checkpoint en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HinataYamamoto/generation-v1
+- Hugging Face: https://huggingface.co/HinataYamamoto/generation-v1
 - No se han encontrado en la búsqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo.

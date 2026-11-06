@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Paras014/llama-3.2-3b-hindi-to-gondi-merged` es un modelo de lenguaje basado en un fine-tuning de `unsloth/Llama-3.2-3B-Instruct`, desarrollado por Paras014 mediante la librería Unsloth y el framework TRL de HuggingFace. El nombre del modelo sugiere que está orientado a tareas de traducción entre hindi y gondi, una lengua dravídica minoritaria de India, aunque la model card publicada no contiene documentación detallada sobre el propósito exacto ni los datos de entrenamiento utilizados.
+`Paras014/llama-3.2-3b-hindi-to-gondi-merged` es un modelo de lenguaje basado en un fine-tuning de `unsloth/Llama-3.2-3B-Instruct`, desarrollado por Paras014 mediante la librería Unsloth y el framework TRL de Hugging Face. El nombre del modelo sugiere que está orientado a tareas de traducción entre hindi y gondi, una lengua dravídica minoritaria de India, aunque la model card publicada no contiene documentación detallada sobre el propósito exacto ni los datos de entrenamiento utilizados.
 
 Arquitectónicamente, se trata de un modelo denso tipo transformer decoder-only con aproximadamente 3.212 millones de parámetros, heredado de la familia Llama 3.2. La información disponible no especifica la longitud de contexto ni los idiomas soportados más allá de la etiqueta `en` en los metadatos. El modelo se distribuye bajo licencia Apache 2.0 en formato safetensors, con un tamaño de repositorio de 6,4 GB.
 
@@ -57,7 +57,7 @@ Los requisitos son estimaciones basadas en el tamaño del modelo (3,2B parámetr
 - VRAM estimada con cuantización de 4 bits: aproximadamente 2,5 GB para los pesos, con un total de 4-6 GB.
 - GPU recomendadas: RTX 3060 12GB, RTX 4090, A10G, A100 o H100 para despliegues con mayor concurrencia.
 - Es viable en GPUs de consumo como RTX 3060 o RTX 4070, especialmente con cuantización.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI o HuggingFace Transformers.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI o Hugging Face Transformers.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ La comparativa se basa en la información disponible en los metadatos y en la b�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Paras014/llama-3.2-3b-hindi-to-gondi-merged
+- Modelo en Hugging Face: https://huggingface.co/Paras014/llama-3.2-3b-hindi-to-gondi-merged
 - Modelo base unsloth/Llama-3.2-3B-Instruct: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
 - Modelo similar Ryder99/Llama-3.2-3B-Instruct-Hindi: https://huggingface.co/Ryder99/Llama-3.2-3B-Instruct-Hindi

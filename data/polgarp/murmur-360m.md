@@ -23,7 +23,7 @@ La arquitectura es un transformer decoder-only (SmolLM2) con 360 millones de par
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en SmolLM2-360M-Instruct, un transformer decoder-only preentrenado por HuggingFace. Sobre este se aplicó un fine-tune con LoRA (r=8), lo que añade 5 millones de parámetros entrenables. El entrenamiento se realizó durante 4 épocas sobre un corpus de 607 haikus escritos y juzgados individualmente por una persona, siguiendo una "doctrina de voz" escrita. De los 688 haikus iniciales, 81 fueron rechazados y se conservaron las razones, lo que indica un proceso de curado riguroso.
+El modelo se basa en SmolLM2-360M-Instruct, un transformer decoder-only preentrenado por Hugging Face. Sobre este se aplicó un fine-tune con LoRA (r=8), lo que añade 5 millones de parámetros entrenables. El entrenamiento se realizó durante 4 épocas sobre un corpus de 607 haikus escritos y juzgados individualmente por una persona, siguiendo una "doctrina de voz" escrita. De los 688 haikus iniciales, 81 fueron rechazados y se conservaron las razones, lo que indica un proceso de curado riguroso.
 
 El modelo se exportó a ONNX y se cuantizó a q4f16 para su ejecución en WebGPU. No se mencionan técnicas adicionales como RLHF o DPO; el ajuste es puramente supervisado sobre el corpus curado. La documentación enfatiza que el system prompt debe ser exactamente "You write murmur haiku." para mantener la distribución aprendida, y que variaciones en el prompt degradan la calidad.
 
@@ -86,5 +86,5 @@ La comparativa directa con otros modelos de haiku no está disponible en la info
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/polgarp/murmur-360m)
+- [Modelo en Hugging Face](https://huggingface.co/polgarp/murmur-360m)
 - [Modelo base SmolLM2-360M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct)

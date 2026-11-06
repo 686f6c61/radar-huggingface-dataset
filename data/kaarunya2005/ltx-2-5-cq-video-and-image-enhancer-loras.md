@@ -79,13 +79,13 @@ No disponible. La información proporcionada no incluye modelos comparables con 
 - Dependencia del VAE: usar el VAE estándar en lugar de `ltx-2.5-video-vae-conv-bf16.safetensors` produce una imagen sobrenítida y degradada, según la model card.
 - Licencia: no disponible. Al no especificarse la licencia del repositorio, no puede confirmarse que el uso comercial esté permitido; conviene verificar la licencia del modelo base LTX-2.5 y del repositorio original CQdesign antes de cualquier despliegue en producción.
 - Idiomas y prompt: la model card indica que no se necesita prompt, por lo que no hay información sobre soporte multilingüe ni sobre control textual del resultado.
-- Trazabilidad: el repositorio analizado (Kaarunya2005) no incluye pipeline, licencia ni idiomas declarados en HuggingFace, y remite a workflows alojados en el repositorio CQdesign, lo que dificulta verificar la cadena de autoría y mantenimiento.
+- Trazabilidad: el repositorio analizado (Kaarunya2005) no incluye pipeline, licencia ni idiomas declarados en Hugging Face, y remite a workflows alojados en el repositorio CQdesign, lo que dificulta verificar la cadena de autoría y mantenimiento.
 - Adopción: 0 descargas y 0 likes en el momento de la consulta, sin comunidad ni informes independientes de calidad.
 - Ausencia de métricas: no hay benchmarks publicados, por lo que cualquier afirmación de superioridad frente a alternativas comerciales debe tratarse como una declaración del autor y no como un dato verificado.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kaarunya2005/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs
+- Repositorio en Hugging Face: https://huggingface.co/Kaarunya2005/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs
 - Workflows incluidos (repositorio original citado): https://huggingface.co/CQdesign/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs/tree/main/Workflow
 - Vídeo de demostración completo de la versión 2: https://www.youtube.com/watch?v=grME8VMMwAU
 - Vídeo de demostración completo: https://www.youtube.com/watch?v=uVa66lSCI_U

@@ -91,7 +91,7 @@ Se trata de modelos de la misma categoria de MoE de gran escala con pesos abiert
 
 ## Enlaces
 
-- Modelo en HuggingFace (repositorio consultado): https://huggingface.co/bielquants/Inkling-Small
+- Modelo en Hugging Face (repositorio consultado): https://huggingface.co/bielquants/Inkling-Small
 - Pesos BF16 del autor original: https://huggingface.co/thinkingmachines/Inkling-Small
 - Pesos NVFP4: https://huggingface.co/thinkingmachines/Inkling-Small-NVFP4
 - Playground: https://tinker.thinkingmachines.ai/playground

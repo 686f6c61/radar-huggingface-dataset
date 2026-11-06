@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hoho84/bunny` es un repositorio alojado en HuggingFace por el usuario `hoho84`. En el momento de la consulta (ultima actualizacion registrada: 25 de septiembre de 2026, once minutos despues de su creacion) el repositorio acumula 0 descargas y 1 like, y su unico tag asociado es `region:us`, un metadato geografico que la plataforma anade de forma automatica. No hay tag de tarea (`text-generation`, `image-text-to-text`, etc.), ni licencia, ni idiomas declarados, ni pipeline asignado.
+`hoho84/bunny` es un repositorio alojado en Hugging Face por el usuario `hoho84`. En el momento de la consulta (ultima actualizacion registrada: 25 de septiembre de 2026, once minutos despues de su creacion) el repositorio acumula 0 descargas y 1 like, y su unico tag asociado es `region:us`, un metadato geografico que la plataforma anade de forma automatica. No hay tag de tarea (`text-generation`, `image-text-to-text`, etc.), ni licencia, ni idiomas declarados, ni pipeline asignado.
 
 La consecuencia practica es que no existe informacion tecnica verificable sobre el modelo: se desconoce su arquitectura, su numero de parametros, su ventana de contexto, su proceso de entrenamiento y sus pesos. La busqueda web asociada no ha devuelto ningun resultado relacionado con este repositorio: los enlaces recuperados corresponden a contenidos sin relacion alguna (foros en chino sobre espacio en disco, restauracion y edicion de imagen).
 
@@ -88,6 +88,6 @@ Nota sobre colision de nombres: existe al menos una familia de modelos de vision
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hoho84/bunny
+- Repositorio en Hugging Face: https://huggingface.co/hoho84/bunny
 - Resultados de la busqueda web: no se ha recuperado ningun enlace relacionado con este modelo. Los resultados devueltos corresponden a contenidos sin relacion (foros sobre espacio en disco en Windows, restauracion y edicion de imagen) y no se incluyen por no aportar informacion tecnica sobre el repositorio.
 - Paper, blog, repositorio de codigo o demo: no disponibles.

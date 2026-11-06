@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mathir-parser-qwen25-7b-lora-v3` | 7B (base) + LoRA | No disponible | Sin datos publicados | No disponible | HuggingFace, 0 descargas |
+| `mathir-parser-qwen25-7b-lora-v3` | 7B (base) + LoRA | No disponible | Sin datos publicados | No disponible | Hugging Face, 0 descargas |
 | Qwen2.5-7B-Instruct (base) | 7,6B aprox. | 128K tokens | Benchmarks públicos de la familia Qwen2.5 | Apache 2.0 (según el modelo base, no confirmado para este repositorio) | Ampliamente disponible |
-| Qwen2.5-Math-7B | 7B aprox. | No disponible en esta ficha | Orientado a matemáticas, con benchmarks públicos | No disponible en esta ficha | HuggingFace |
-| Mistral-7B-Instruct | 7,3B aprox. | 32K tokens | Benchmarks públicos | Apache 2.0 | HuggingFace |
+| Qwen2.5-Math-7B | 7B aprox. | No disponible en esta ficha | Orientado a matemáticas, con benchmarks públicos | No disponible en esta ficha | Hugging Face |
+| Mistral-7B-Instruct | 7,3B aprox. | 32K tokens | Benchmarks públicos | Apache 2.0 | Hugging Face |
 
 La comparación con alternativas de la misma categoría se ve limitada porque no existen métricas publicadas para este adaptador. La única referencia sólida es el modelo base sobre el que se construye.
 
@@ -89,6 +89,6 @@ La comparación con alternativas de la misma categoría se ve limitada porque no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AzJoeLesz/mathir-parser-qwen25-7b-lora-v3
+- Modelo en Hugging Face: https://huggingface.co/AzJoeLesz/mathir-parser-qwen25-7b-lora-v3
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante. Las búsquedas devuelven exclusivamente páginas de códigos de descuento de un servicio de catering en polaco, sin relación alguna con el modelo.

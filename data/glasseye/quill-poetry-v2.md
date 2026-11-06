@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Quill poetry v2 es un adaptador LoRA de generación de poesía publicado por el usuario GLASSEYE en HuggingFace, construido sobre el modelo instruct `mistralai/Mistral-7B-Instruct-v0.3`. No se distribuye como modelo autónomo: el repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño total de 0,1 GB, que deben cargarse junto al modelo base de 7.000 millones de parámetros mediante la librería PEFT. Su dominio objetivo es la escritura poética con métrica y formas cerradas, no la asistencia generalista.
+Quill poetry v2 es un adaptador LoRA de generación de poesía publicado por el usuario GLASSEYE en Hugging Face, construido sobre el modelo instruct `mistralai/Mistral-7B-Instruct-v0.3`. No se distribuye como modelo autónomo: el repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño total de 0,1 GB, que deben cargarse junto al modelo base de 7.000 millones de parámetros mediante la librería PEFT. Su dominio objetivo es la escritura poética con métrica y formas cerradas, no la asistencia generalista.
 
 El autor describe un corpus más denso que el de la versión anterior (quill-poetry-v1), con ejercicios específicos de haiku 5-7-5, pareados yámbicos, tanka, pantoum, villanelle y revisión de borradores. Según la model card, el entrenamiento se realizó en una única GPU RTX 5070 de uso doméstico, y se menciona un GGUF generado localmente para ejecutarlo con Ollama mediante el comando `ollama run quill`.
 
@@ -23,7 +23,7 @@ Su relevancia es acotada pero clara: es un ejemplo de especialización de bajo c
 | Tipo de modelo | Adaptador de ajuste fino, no modelo completo |
 | Modelo base | mistralai/Mistral-7B-Instruct-v0.3 |
 | Autor | GLASSEYE |
-| Fecha de publicación | 2026-09-20 (según metadatos de HuggingFace) |
+| Fecha de publicación | 2026-09-20 (según metadatos de Hugging Face) |
 | Última actualización | 2026-09-20 |
 | Tamaño del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 0 |
@@ -101,7 +101,7 @@ Las alternativas generalistas no están ajustadas para formas métricas cerradas
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/GLASSEYE/quill-poetry-v2
+- Página del modelo en Hugging Face: https://huggingface.co/GLASSEYE/quill-poetry-v2
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio de PEFT (librería indicada en los tags): https://github.com/huggingface/peft
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FinSentinel-QLoRA es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, desarrollado por el usuario El-Qady y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de generación de texto de 1.500 millones de parámetros, derivado directamente de la versión cuantizada en 4 bits de Unsloth (`unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit`), sobre la que se aplicó un entrenamiento con QLoRA. El nombre sugiere un enfoque hacia el análisis financiero o la detección de sentimiento en ese dominio, aunque la model card no documenta el conjunto de datos de entrenamiento ni el objetivo concreto.
+FinSentinel-QLoRA es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, desarrollado por el usuario El-Qady y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de generación de texto de 1.500 millones de parámetros, derivado directamente de la versión cuantizada en 4 bits de Unsloth (`unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit`), sobre la que se aplicó un entrenamiento con QLoRA. El nombre sugiere un enfoque hacia el análisis financiero o la detección de sentimiento en ese dominio, aunque la model card no documenta el conjunto de datos de entrenamiento ni el objetivo concreto.
 
 El modelo hereda la arquitectura transformer de Qwen2.5, con una ventana de contexto nativa de 32.768 tokens en la familia Qwen2.5-1.5B-Instruct (dato de la familia base, no confirmado en la model card de este ajuste). Su relevancia radica en ser un ejemplo de ajuste fino ligero y reproducible con Unsloth, pensado para tareas especializadas en inglés y desplegable en hardware de consumo. No obstante, la información publicada es mínima: no hay métricas, ni descripción del dataset, ni evaluación de capacidades.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FinSentinel-QLoRA | ~1,5B | no disponible (familia base: 32.768) | Apache 2.0 | HuggingFace, sin descargas |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens (típico) | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace |
+| FinSentinel-QLoRA | ~1,5B | no disponible (familia base: 32.768) | Apache 2.0 | Hugging Face, sin descargas |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens (típico) | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face |
 
 La comparativa se limita a parámetros, contexto y licencia, ya que no hay benchmarks publicados para FinSentinel-QLoRA que permitan comparar rendimiento real.
 
@@ -83,7 +83,7 @@ La comparativa se limita a parámetros, contexto y licencia, ya que no hay bench
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/El-Qady/FinSentinel-QLoRA
+- Hugging Face: https://huggingface.co/El-Qady/FinSentinel-QLoRA
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - Qwen2.5 (familia base): no disponible enlace específico en la información proporcionada

@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rqadri/cca-traj-gemma4-31b-v12
+- Modelo en Hugging Face: https://huggingface.co/rqadri/cca-traj-gemma4-31b-v12
 - Modelo base: https://huggingface.co/google/gemma-4-31b-it
 - Repositorio de entrenamiento: https://github.com/rifaaQ/long_ctx_train
 - Protocolo de evaluación y resultados: longctx/results.md en https://github.com/rifaaQ/long_ctx_train

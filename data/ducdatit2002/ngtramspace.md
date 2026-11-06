@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio ducdatit2002/ngtramspace es un espacio de modelos publicado en HuggingFace por el usuario ducdatit2002, con acceso restringido (gated) y un tamano de 26,8 GB. Las etiquetas declaradas lo situan en el ambito del procesamiento de voz en vietnamita (vi) orientado a atencion al cliente: reconocimiento de emociones en el habla, deteccion de escalado de conversaciones, componentes multimodales y artefactos listos para despliegue ("model-assets", "model-ready").
+El repositorio ducdatit2002/ngtramspace es un espacio de modelos publicado en Hugging Face por el usuario ducdatit2002, con acceso restringido (gated) y un tamano de 26,8 GB. Las etiquetas declaradas lo situan en el ambito del procesamiento de voz en vietnamita (vi) orientado a atencion al cliente: reconocimiento de emociones en el habla, deteccion de escalado de conversaciones, componentes multimodales y artefactos listos para despliegue ("model-assets", "model-ready").
 
 La informacion publica disponible no incluye model card con arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento; el repositorio solo expone metadatos y exige aceptar condiciones antes de descargar los pesos. Esta ficha recoge, por tanto, unicamente lo verificable (identificador, autor, licencia, idioma, tamano y etiquetas) y marca de forma explicita como "no disponible" todo aquello que no consta en la informacion proporcionada.
 
@@ -23,7 +23,7 @@ Su relevancia potencial reside en la combinacion de tres senales poco habituales
 | Autor | ducdatit2002 |
 | Pipeline declarado | no disponible |
 | Tamano del repositorio | 26,8 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion (metadatos) | 2026-09-26 |
 | Ultima actualizacion (metadatos) | 2026-09-26 |
@@ -82,7 +82,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ducdatit2002/ngtramspace | no disponible | no disponible | no disponible | MIT | Gated en HuggingFace, 0 descargas |
+| ducdatit2002/ngtramspace | no disponible | no disponible | no disponible | MIT | Gated en Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Las categorias con las que cabria compararlo serian los modelos de reconocimiento automatico del habla multilingues (que cubren vietnamita) y los modelos de reconocimiento de emociones en habla. Sin embargo, la ausencia de benchmarks del modelo analizado y de especificaciones verificables impide establecer cualquier comparacion con minimas garantias.
@@ -91,7 +91,7 @@ Las categorias con las que cabria compararlo serian los modelos de reconocimient
 
 - Ausencia total de documentacion: no hay model card detallada, paper ni descripcion de arquitectura, datos de entrenamiento o metodologia de evaluacion.
 - Sin validacion externa: 0 descargas y 0 likes implican que ningun tercero ha reportado resultados de uso.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace. Es necesario revisar si esas condiciones son compatibles con la licencia MIT declarada, ya que podrian imponer restricciones adicionales no reflejadas en la licencia.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face. Es necesario revisar si esas condiciones son compatibles con la licencia MIT declarada, ya que podrian imponer restricciones adicionales no reflejadas en la licencia.
 - Ambito idiomatico limitado: solo se declara vietnamita. No hay evidencia de que el modelo funcione correctamente con entradas en castellano, ingles u otros idiomas.
 - Riesgo de alucinacion: no evaluable con la informacion disponible.
 - Sesgos: los sistemas de reconocimiento de emociones en habla presentan de forma documentada sensibilidad al acento, al genero, a la edad, al canal de captura y al ruido de fondo. No se ha publicado ningun analisis de sesgo ni medida de mitigacion para este repositorio; debe asumirse que estos sesgos estan presentes hasta que se demuestre lo contrario.
@@ -103,6 +103,6 @@ Las categorias con las que cabria compararlo serian los modelos de reconocimient
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ducdatit2002/ngtramspace
-- Perfil del autor en HuggingFace: https://huggingface.co/ducdatit2002
+- Repositorio en Hugging Face: https://huggingface.co/ducdatit2002/ngtramspace
+- Perfil del autor en Hugging Face: https://huggingface.co/ducdatit2002
 - Papers, blogs, repositorios de codigo y demos: no se han encontrado enlaces adicionales en la informacion proporcionada.

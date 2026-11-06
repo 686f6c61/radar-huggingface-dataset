@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Qwen3-4B-2507-Conversation-Tuned-v2** es un fine-tune conversacional del modelo base `unsloth/Qwen3-4B-Instruct-2507-GGUF`, publicado por el usuario `juststhjust` en HuggingFace. Se distribuye en formato GGUF, lo que permite su ejecución directa con `llama.cpp`, `Ollama` y otras herramientas compatibles con este formato. El objetivo declarado es mejorar la naturalidad y fluidez en conversaciones multi-turno cotidianas, aunque el ajuste se realizó sobre datasets conversacionales en coreano, el autor indica que el modelo funciona bien en inglés para chat informal.
+El modelo **Qwen3-4B-2507-Conversation-Tuned-v2** es un fine-tune conversacional del modelo base `unsloth/Qwen3-4B-Instruct-2507-GGUF`, publicado por el usuario `juststhjust` en Hugging Face. Se distribuye en formato GGUF, lo que permite su ejecución directa con `llama.cpp`, `Ollama` y otras herramientas compatibles con este formato. El objetivo declarado es mejorar la naturalidad y fluidez en conversaciones multi-turno cotidianas, aunque el ajuste se realizó sobre datasets conversacionales en coreano, el autor indica que el modelo funciona bien en inglés para chat informal.
 
 Con 4.022.468.096 parámetros, se trata de un modelo de tamaño medio-bajo, adecuado para entornos con recursos limitados. Al estar basado en la arquitectura Qwen3, hereda las capacidades de razonamiento y generación de texto de la serie Qwen3, aunque no se especifican detalles sobre la longitud de contexto ni las cuantizaciones disponibles. Su relevancia actual radica en que ofrece una alternativa ligera y de bajo coste para aplicaciones de chatbot y asistencia conversacional, con la ventaja de poder ejecutarse en hardware de consumo.
 
@@ -74,5 +74,5 @@ La comparativa se basa en parámetros y disponibilidad; no hay datos de rendimie
 
 ## Enlaces
 
-- [HuggingFace - juststhjust/Qwen3-4B-2507-Conversation-Tuned-v2](https://huggingface.co/juststhjust/Qwen3-4B-2507-Conversation-Tuned-v2)
+- [Hugging Face - juststhjust/Qwen3-4B-2507-Conversation-Tuned-v2](https://huggingface.co/juststhjust/Qwen3-4B-2507-Conversation-Tuned-v2)
 - [Modelo base - unsloth/Qwen3-4B-Instruct-2507-GGUF](https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF) (enlace inferido, no confirmado en la información proporcionada)

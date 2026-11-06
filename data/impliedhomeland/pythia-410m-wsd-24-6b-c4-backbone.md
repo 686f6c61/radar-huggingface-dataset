@@ -63,8 +63,8 @@ Estos valores se refieren al checkpoint final de 24.6B tokens y muestran que la 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | **Impliedhomeland/pythia-410m-wsd-24.6B-c4-backbone** | 410M | no disponible | C4 (24.6B tokens, WSD) | Apache-2.0 | Checkpoints PyTorch |
-| **EleutherAI/pythia-410m** | 410M | 2048 | The Pile (300B tokens, cosine) | Apache-2.0 | Modelo HuggingFace estándar |
-| **EleutherAI/pythia-410m-deduped** | 410M | 2048 | Pile deduplicado (300B tokens, cosine) | Apache-2.0 | Modelo HuggingFace estándar |
+| **EleutherAI/pythia-410m** | 410M | 2048 | The Pile (300B tokens, cosine) | Apache-2.0 | Modelo Hugging Face estándar |
+| **EleutherAI/pythia-410m-deduped** | 410M | 2048 | Pile deduplicado (300B tokens, cosine) | Apache-2.0 | Modelo Hugging Face estándar |
 
 La diferencia principal es que el modelo de Impliedhomeland se entrena solo con C4 y con WSD, mientras que los Pythia originales usan el Pile y cosine schedule. El contexto no se ha especificado en la información, pero el original usa 2048 tokens. Para comparaciones de rendimiento, no hay datos de benchmarks públicos para el modelo WSD.
 
@@ -80,8 +80,8 @@ La diferencia principal es que el modelo de Impliedhomeland se entrena solo con 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Impliedhomeland/pythia-410m-wsd-24.6B-c4-backbone)
-- [Autor en HuggingFace](https://huggingface.co/Impliedhomeland)
+- [Modelo en Hugging Face](https://huggingface.co/Impliedhomeland/pythia-410m-wsd-24.6B-c4-backbone)
+- [Autor en Hugging Face](https://huggingface.co/Impliedhomeland)
 - [Modelo Pythia-410M original de EleutherAI](https://huggingface.co/EleutherAI/pythia-410m)
 - [Repositorio GitHub de EleutherAI/pythia](https://github.com/EleutherAI/pythia)
 - [Ficha del modelo en OpenModelMap](https://openmodelmap.com/model/EleutherAI/pythia-410m) (referencia de arquitectura)</think>## Resumen
@@ -147,8 +147,8 @@ Estos valores muestran que el modelo alcanza una pérdida más baja en texto nat
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | **Impliedhomeland/pythia-410m-wsd-24.6B-c4-backbone** | 410M | no disponible | C4 (24.6B tokens, WSD) | Apache-2.0 | Checkpoints PyTorch |
-| **EleutherAI/pythia-410m** | 410M | 2048 | Pile (31B tokens, cosine) | Apache-2.0 | Modelo HuggingFace estándar |
-| **EleutherAI/pythia-410m-deduped** | 410M | 2048 | Pile deduplicado (31B tokens, cosine) | Apache-2.0 | Modelo HuggingFace estándar |
+| **EleutherAI/pythia-410m** | 410M | 2048 | Pile (31B tokens, cosine) | Apache-2.0 | Modelo Hugging Face estándar |
+| **EleutherAI/pythia-410m-deduped** | 410M | 2048 | Pile deduplicado (31B tokens, cosine) | Apache-2.0 | Modelo Hugging Face estándar |
 
 La principal diferencia es el conjunto de datos y el programa de aprendizaje: el modelo de ImpliedHomed se entrena solo con C4 y con WSD, mientras que los Pythia originales usan el Pile completo y un programa de cosine. No se dispone de benchmarks comparativos entre estos modelos.
 
@@ -164,8 +164,8 @@ La principal diferencia es el conjunto de datos y el programa de aprendizaje: el
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Impliedhomeland/pythia-410m-wsd-24.6B-c4-backbone)
-- [Autor en HuggingFace](https://huggingface.co/Impliedhomeland)
+- [Modelo en Hugging Face](https://huggingface.co/Impliedhomeland/pythia-410m-wsd-24.6B-c4-backbone)
+- [Autor en Hugging Face](https://huggingface.co/Impliedhomeland)
 - [Modelo original Pythia-410M de EleutherAI](https://huggingface.co/EleutherAI/pythia-410m)
 - [Repositorio GitHub de EleutherAI/pythia](https://github.com/EleutherAI/pythia)
 - [Ficha del modelo en OpenModelMap](https://openmodelmap.com/model/EleutherAI/pythia-410m)

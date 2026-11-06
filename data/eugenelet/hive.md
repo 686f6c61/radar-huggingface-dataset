@@ -6,7 +6,7 @@ HIVE (Hierarchical Pre-Training of Vision Encoders with Large Language Model) es
 
 El problema que aborda es conocido en el ambito de los modelos vision-language: la mayoria de arquitecturas tipo LLaVA o similares proyectan unicamente la salida de la ultima capa del encoder visual, desperdiciando informacion semantica y espacial distribuida en capas intermedias. HIVE propone inyectar esas representaciones multi-nivel directamente en el LLM mediante un mecanismo de atencion cruzada jerarquico, con el objetivo de mejorar la calidad de la fusion vision-lenguaje durante la fase de pre-entrenamiento.
 
-La pagina de HuggingFace `eugenelet/HIVE` no aloja pesos ni artefactos de inferencia: es un puntero a la implementacion oficial publicada en GitHub. Por tanto, no existe un modelo descargable, no hay ficha de pipeline, no se declaran idiomas soportados y el repositorio registra cero descargas y cero likes en el momento de la consulta. La relevancia actual es exclusivamente metodologica y de investigacion, no de despliegue en produccion.
+La pagina de Hugging Face `eugenelet/HIVE` no aloja pesos ni artefactos de inferencia: es un puntero a la implementacion oficial publicada en GitHub. Por tanto, no existe un modelo descargable, no hay ficha de pipeline, no se declaran idiomas soportados y el repositorio registra cero descargas y cero likes en el momento de la consulta. La relevancia actual es exclusivamente metodologica y de investigacion, no de despliegue en produccion.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ La pagina de HuggingFace `eugenelet/HIVE` no aloja pesos ni artefactos de infere
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible |
 | Licencia | Otra (license: other, con license_name: other y license_link: LICENSE) |
-| Formato de pesos | No disponible; la pagina de HuggingFace no aloja pesos, solo enlaza al codigo oficial en GitHub |
+| Formato de pesos | No disponible; la pagina de Hugging Face no aloja pesos, solo enlaza al codigo oficial en GitHub |
 
 ## Arquitectura y entrenamiento
 
@@ -71,15 +71,15 @@ La comparacion se plantea a nivel de enfoque arquitectonico, dado que HIVE no pu
 | Modelo | Enfoque de fusion visual | Pesos publicos | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | HIVE | Atencion cruzada jerarquica sobre caracteristicas multi-capa | No | Otra (other) | Solo codigo en GitHub |
-| LLaVA-1.5 | Proyector MLP sobre la ultima capa del encoder visual | Si | Apache 2.0 | Pesos en HuggingFace |
-| Qwen2-VL | Conexion directa de tokens visuales con atencion completa en el LLM | Si | Apache 2.0 (con excepciones en variantes grandes) | Pesos en HuggingFace |
+| LLaVA-1.5 | Proyector MLP sobre la ultima capa del encoder visual | Si | Apache 2.0 | Pesos en Hugging Face |
+| Qwen2-VL | Conexion directa de tokens visuales con atencion completa en el LLM | Si | Apache 2.0 (con excepciones en variantes grandes) | Pesos en Hugging Face |
 | Flamingo | Atencion cruzada con capas intercaladas en el LLM | No liberados oficialmente | No disponible | Solo descripcion en paper |
 
 El parametro mas cercano conceptualmente a HIVE es Flamingo, por el uso de atencion cruzada, aunque HIVE enfatiza el caracter jerarquico sobre multiples capas del encoder. LLaVA-1.5 y Qwen2-VL representan las alternativas practicas si el objetivo es desplegar un modelo vision-language hoy, ya que ambos ofrecen pesos descargables con licencias permisivas.
 
 ## Limitaciones y advertencias
 
-- No hay pesos publicados: la pagina de HuggingFace es unicamente un puntero al repositorio de GitHub, por lo que el modelo no puede descargarse ni ejecutarse sin reimplementar el codigo.
+- No hay pesos publicados: la pagina de Hugging Face es unicamente un puntero al repositorio de GitHub, por lo que el modelo no puede descargarse ni ejecutarse sin reimplementar el codigo.
 - Ausencia total de datos cuantitativos: no se dispone de parametros, contexto, tokens de entrenamiento, benchmarks ni requisitos de hardware en la informacion proporcionada.
 - Sesgos conocidos: no disponible. Al no existir evaluacion publicada, no puede caracterizarse el comportamiento del modelo en terminos de sesgo demografico, cultural o linguistico.
 - Riesgo de alucinacion: no evaluado. Cualquier sistema construido sobre este metodo heredara el riesgo de alucinacion del LLM base que se utilice, que no se especifica.
@@ -90,7 +90,7 @@ El parametro mas cercano conceptualmente a HIVE es Flamingo, por el uso de atenc
 
 ## Enlaces
 
-- Pagina de HuggingFace: https://huggingface.co/eugenelet/HIVE
+- Pagina de Hugging Face: https://huggingface.co/eugenelet/HIVE
 - Paper en arXiv: https://arxiv.org/abs/2604.00086
 - Repositorio de codigo oficial: https://github.com/eugenelet/HIVE
 - Fichero de licencia referenciado en la model card: LICENSE (en el repositorio oficial)

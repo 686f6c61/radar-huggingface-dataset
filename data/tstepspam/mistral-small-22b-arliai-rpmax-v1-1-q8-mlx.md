@@ -87,7 +87,7 @@ La comparativa se limita a la familia Mistral Small porque no se dispone de dato
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tstepspam/Mistral-Small-22B-ArliAI-RPMax-v1.1-Q8-MLX
+- Repositorio Hugging Face: https://huggingface.co/tstepspam/Mistral-Small-22B-ArliAI-RPMax-v1.1-Q8-MLX
 - Modelo base: https://huggingface.co/ArliAI/Mistral-Small-22B-ArliAI-RPMax-v1.1
 - Licencia MRL 0.1: https://mistral.ai/licenses/MRL-0.1.md
 - Terminos de Mistral AI: https://mistral.ai/terms/

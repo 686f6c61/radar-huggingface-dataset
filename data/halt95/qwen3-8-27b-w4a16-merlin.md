@@ -83,10 +83,10 @@ Pool de KV-cache medido: 826.689 tokens en doble tarjeta (883 bloques, 3,15 × 2
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| halt95/Qwen3.8-27B-W4A16-Merlin | 27.356.728.560 | 262.144 tokens | compressed-tensors int4 AWQ (grupo 128) + lm_head GPTQ int4 + MTP int4 + KV FP8 | Apache-2.0 | HuggingFace; requiere repositorio de servicio v1.3.0 para el stack validado |
-| Qwen/Qwen3.8-27B (modelo base) | no disponible en la información consultada (el nombre indica 27B) | no disponible | bf16 (no confirmado en la información consultada) | no disponible en la información consultada | HuggingFace |
-| philbert440/Qwen3.8-27B-W4A16-AWQ (base de esta conversión) | no disponible | no disponible | int4 AWQ W4A16 (grupo 128) | no disponible en la información consultada | HuggingFace |
-| halt95/ThinkingCap-Qwen3.8-27B-W4A16-Merlin | mismo formato que este checkpoint | 262.144 tokens | idéntico a este checkpoint, fine-tune ThinkingCap de BottleCap AI | PolyForm Small Business License 1.0.0 + permiso de uso personal de BottleCap AI | HuggingFace; servido por el mismo repositorio con `serve/serve-thinkingcap.sh` (default de `reasoning_effort` en `xhigh`) |
+| halt95/Qwen3.8-27B-W4A16-Merlin | 27.356.728.560 | 262.144 tokens | compressed-tensors int4 AWQ (grupo 128) + lm_head GPTQ int4 + MTP int4 + KV FP8 | Apache-2.0 | Hugging Face; requiere repositorio de servicio v1.3.0 para el stack validado |
+| Qwen/Qwen3.8-27B (modelo base) | no disponible en la información consultada (el nombre indica 27B) | no disponible | bf16 (no confirmado en la información consultada) | no disponible en la información consultada | Hugging Face |
+| philbert440/Qwen3.8-27B-W4A16-AWQ (base de esta conversión) | no disponible | no disponible | int4 AWQ W4A16 (grupo 128) | no disponible en la información consultada | Hugging Face |
+| halt95/ThinkingCap-Qwen3.8-27B-W4A16-Merlin | mismo formato que este checkpoint | 262.144 tokens | idéntico a este checkpoint, fine-tune ThinkingCap de BottleCap AI | PolyForm Small Business License 1.0.0 + permiso de uso personal de BottleCap AI | Hugging Face; servido por el mismo repositorio con `serve/serve-thinkingcap.sh` (default de `reasoning_effort` en `xhigh`) |
 
 Diferencias clave frente a los dos primeros: este checkpoint añade el `lm_head` GPTQ int4, la cabeza MTP int4 y las escalas FP8 de KV-cache, y corrige el `tokenizer.json` al de upstream. Frente a ThinkingCap, la diferencia principal es la licencia y el menor número de tokens de razonamiento que declara el fine-tune.
 

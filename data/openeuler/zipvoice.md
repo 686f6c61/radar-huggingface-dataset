@@ -75,7 +75,7 @@ La comparativa se basa en datos públicos de cada proyecto. ZipVoice-Distill des
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/openEuler/zipvoice
+- Repositorio Hugging Face: https://huggingface.co/openEuler/zipvoice
 - Repositorio GitHub de ZipVoice (k2-fsa): https://github.com/k2-fsa/ZipVoice
 - Página del proyecto ZipVoice: https://zipvoice.github.io/
 - Paper (arXiv): https://arxiv.org/html/2506.13053v3

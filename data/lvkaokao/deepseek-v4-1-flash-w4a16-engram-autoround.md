@@ -94,7 +94,7 @@ No se han identificado en la informacion disponible otras cuantizaciones compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lvkaokao/DeepSeek-V4.1-Flash-W4A16-Engram-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/lvkaokao/DeepSeek-V4.1-Flash-W4A16-Engram-AutoRound
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - AutoRound (Intel): https://github.com/intel/auto-round
 - Pull request de vLLM requerido (PR #56201): https://github.com/vllm-project/vllm/pull/56201

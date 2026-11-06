@@ -75,10 +75,10 @@ El autor indica que los resultados completos por dataset, incluidos MATH-500, St
 
 | Modelo | Parametros | Contexto | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CIRF-Qwen3-8B-Instruct-Backward-Greedy-24 | 8,19 B (denso) | No disponible | GSM8K 70,43%; MultiArith 99,44%; SVAMP 84,33%; CommonsenseQA 83,29%; Coin Flip 95,14% | Apache 2.0 | HuggingFace (0 descargas) |
-| CIRF-Qwen3-8B-Instruct-Full | 8,19 B (denso) | No disponible | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace (variante del mismo autor) |
-| CIRF-Qwen3-8B-Instruct-Zero-Results | 8,19 B (denso) | No disponible | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace (variante del mismo autor) |
-| Qwen/Qwen3-8B (base) | 8,19 B (denso) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace |
+| CIRF-Qwen3-8B-Instruct-Backward-Greedy-24 | 8,19 B (denso) | No disponible | GSM8K 70,43%; MultiArith 99,44%; SVAMP 84,33%; CommonsenseQA 83,29%; Coin Flip 95,14% | Apache 2.0 | Hugging Face (0 descargas) |
+| CIRF-Qwen3-8B-Instruct-Full | 8,19 B (denso) | No disponible | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face (variante del mismo autor) |
+| CIRF-Qwen3-8B-Instruct-Zero-Results | 8,19 B (denso) | No disponible | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face (variante del mismo autor) |
+| Qwen/Qwen3-8B (base) | 8,19 B (denso) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face |
 
 Las alternativas de la misma categoría (otros modelos de 8B de razonamiento) no se detallan en la información proporcionada; la comparación se limita a las variantes CIRF del mismo autor y al modelo base.
 
@@ -96,7 +96,7 @@ Las alternativas de la misma categoría (otros modelos de 8B de razonamiento) no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Backward-Greedy-24
+- Modelo en Hugging Face: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Backward-Greedy-24
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Variante Full: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Full
 - Variante Zero-Results: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Zero-Results

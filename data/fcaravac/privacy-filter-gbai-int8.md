@@ -88,11 +88,11 @@ No se dispone de datos de rendimiento comparado entre estos modelos en la inform
 - Licencia Apache-2.0, heredada de los modelos upstream. Permite uso comercial, pero conviene revisar la cadena de procedencia completa para cumplir con las condiciones de atribución.
 - El repositorio presenta 0 descargas y 0 likes, sin validación por parte de la comunidad.
 - No se documentan requisitos de hardware, latencias ni límites de longitud de entrada, lo que dificulta el dimensionamiento previo de un despliegue.
-- La fecha de creación del repositorio indicada en la ficha de HuggingFace es el 24 de septiembre de 2026.
+- La fecha de creación del repositorio indicada en la ficha de Hugging Face es el 24 de septiembre de 2026.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fcaravac/privacy-filter-gbai-int8
+- Modelo en Hugging Face: https://huggingface.co/fcaravac/privacy-filter-gbai-int8
 - Modelo base: https://huggingface.co/angel-gitt/privacy-filter-gbai
 - Upstream intermedio: https://huggingface.co/OpenMed/privacy-filter-multilingual-v2
 - Upstream original: https://huggingface.co/openai/privacy-filter

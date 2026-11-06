@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparado en la información proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/qwen3.5-9b-prune_depth_20
+- Modelo en Hugging Face: https://huggingface.co/mrysh/qwen3.5-9b-prune_depth_20
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - NVIDIA ModelOpt (herramienta de poda): no disponible en la información proporcionada
 - Paper o blog del benchmark: no disponible en la información proporcionada

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SOC7 es un adaptador LoRA publicado en HuggingFace por el usuario pulkitrai bajo el identificador `pulkitrai/SOC7`. Se trata de un ajuste fino mediante PEFT sobre el modelo base Qwen/Qwen3-0.6B, un transformer denso de aproximadamente 600 millones de parametros, y esta etiquetado para la tarea de generacion de texto con orientacion conversacional. El repositorio contiene unicamente los pesos del adaptador, no el modelo completo.
+SOC7 es un adaptador LoRA publicado en Hugging Face por el usuario pulkitrai bajo el identificador `pulkitrai/SOC7`. Se trata de un ajuste fino mediante PEFT sobre el modelo base Qwen/Qwen3-0.6B, un transformer denso de aproximadamente 600 millones de parametros, y esta etiquetado para la tarea de generacion de texto con orientacion conversacional. El repositorio contiene unicamente los pesos del adaptador, no el modelo completo.
 
-La relevancia de esta ficha es limitada y conviene ser explicito al respecto: el repositorio acumula 0 descargas y 0 likes, tiene un tamano declarado de 0.0 GB y su model card es la plantilla por defecto de HuggingFace sin ninguna seccion completada. No se documenta el dataset de entrenamiento, los hiperparametros, el numero de pasos, la licencia ni los idiomas soportados. La unica informacion tecnica verificable son los metadatos: libreria PEFT 0.21.0, formato safetensors, modelo base Qwen/Qwen3-0.6B y fecha de creacion 2026-09-17.
+La relevancia de esta ficha es limitada y conviene ser explicito al respecto: el repositorio acumula 0 descargas y 0 likes, tiene un tamano declarado de 0.0 GB y su model card es la plantilla por defecto de Hugging Face sin ninguna seccion completada. No se documenta el dataset de entrenamiento, los hiperparametros, el numero de pasos, la licencia ni los idiomas soportados. La unica informacion tecnica verificable son los metadatos: libreria PEFT 0.21.0, formato safetensors, modelo base Qwen/Qwen3-0.6B y fecha de creacion 2026-09-17.
 
 En consecuencia, esta ficha debe leerse como un inventario de lo que se sabe y, sobre todo, de lo que falta. No es posible recomendar el modelo para produccion sin una evaluacion previa por parte del usuario, y cualquier capacidad que se le atribuya en las secciones siguientes deriva del modelo base, no de una validacion del adaptador.
 
@@ -88,7 +88,7 @@ La informacion disponible no permite una comparativa de rendimiento fiable, ya q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pulkitrai/SOC7
+- Repositorio Hugging Face: https://huggingface.co/pulkitrai/SOC7
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Paper de PEFT / LoRA: https://arxiv.org/abs/1910.09700 (referencia citada en la propia plantilla de la model card, correspondiente a Lacoste et al. (2019) sobre impacto ambiental)
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact#compute

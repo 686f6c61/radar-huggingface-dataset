@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jarvis (publicado como NeuMax/Jarvis) es un proyecto de asistente personal conversacional que no entrena un modelo propio, sino que envuelve Microsoft Phi-3-mini-4k-instruct (3.800 millones de parametros) en una aplicacion Gradio con memoria persistente, sintesis de voz y un motor de anticipacion en segundo plano. Lo desarrolla el usuario NeuMax y se distribuye con licencia MIT. Su propuesta es ejecutarse de forma local en un HuggingFace Space con 16 GB de RAM y sin GPU, gracias a la cuantizacion en 4 bits del modelo base.
+Jarvis (publicado como NeuMax/Jarvis) es un proyecto de asistente personal conversacional que no entrena un modelo propio, sino que envuelve Microsoft Phi-3-mini-4k-instruct (3.800 millones de parametros) en una aplicacion Gradio con memoria persistente, sintesis de voz y un motor de anticipacion en segundo plano. Lo desarrolla el usuario NeuMax y se distribuye con licencia MIT. Su propuesta es ejecutarse de forma local en un Hugging Face Space con 16 GB de RAM y sin GPU, gracias a la cuantizacion en 4 bits del modelo base.
 
 El modelo subyacente es un transformer decoder-only de Phi-3 con 3.800 millones de parametros y una ventana de contexto de 4.096 tokens (la variante 4k). El repositorio en si no contiene pesos propios ni un modelo afinado: es codigo de orquestacion (brain.py, memory.py, thinking.py, voice_tts.py) que llama a Transformers para la inferencia, guarda hechos y historial en SQLite y usa Edge-TTS para las respuestas habladas.
 
@@ -19,11 +19,11 @@ Su relevancia practica es la de un patron de referencia para construir asistente
 | Tipos de cuantizacion | 4 bits, 8 bits y sin cuantizar (fp16), configurables via `JARVIS_QUANT` |
 | Idiomas soportados | no disponible en la model card; el modelo base Phi-3 esta orientado principalmente a ingles |
 | Licencia | MIT |
-| Formato de pesos | no disponible (el repositorio no publica pesos propios; se descargan los del modelo base desde HuggingFace) |
+| Formato de pesos | no disponible (el repositorio no publica pesos propios; se descargan los del modelo base desde Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no define una arquitectura de modelo nueva. La inferencia se delega en Microsoft Phi-3-mini-4k-instruct, un transformer decoder-only de 3.800 millones de parametros con contexto de 4.096 tokens, cargado de forma perezosa (lazy-loaded) mediante HuggingFace Transformers y cuantizado opcionalmente a 4 u 8 bits. No se documenta ningun proceso de entrenamiento, afinado, RLHF o DPO propio: los pesos son los del modelo base de Microsoft.
+El repositorio no define una arquitectura de modelo nueva. La inferencia se delega en Microsoft Phi-3-mini-4k-instruct, un transformer decoder-only de 3.800 millones de parametros con contexto de 4.096 tokens, cargado de forma perezosa (lazy-loaded) mediante Hugging Face Transformers y cuantizado opcionalmente a 4 u 8 bits. No se documenta ningun proceso de entrenamiento, afinado, RLHF o DPO propio: los pesos son los del modelo base de Microsoft.
 
 La capa de aplicacion anade tres componentes: un modulo de memoria (memory.py) que persiste hechos y historial de conversacion en SQLite; un motor de anticipacion en segundo plano (thinking.py) que, segun la model card, "predice tus necesidades" y se activa con `JARVIS_THINKING=true`; y un modulo de voz (voice_tts.py) basado en Edge-TTS con la voz en-US-GuyNeural. La configuracion se gestiona por variables de entorno (`JARVIS_MODEL`, `JARVIS_QUANT`, `JARVIS_MEMORY_DIR`, `JARVIS_TTS_VOICE`, `JARVIS_THINKING`). No se describen innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
@@ -42,7 +42,7 @@ La capa de aplicacion anade tres componentes: un modulo de memoria (memory.py) q
 
 ## Casos de uso
 
-- Asistente personal local sin GPU: desplegado en un HuggingFace Space con 16 GB de RAM, el modelo en 4 bits ocupa aproximadamente 3-4 GB y permite conversaciones con memoria persistente sin coste de infraestructura GPU.
+- Asistente personal local sin GPU: desplegado en un Hugging Face Space con 16 GB de RAM, el modelo en 4 bits ocupa aproximadamente 3-4 GB y permite conversaciones con memoria persistente sin coste de infraestructura GPU.
 - Prototipo de memoria a largo plazo: el almacenamiento de hechos en SQLite sirve para experimentar con recuperacion de contexto personal (preferencias, datos del usuario) en un asistente de escritorio.
 - Interfaz de voz para accesibilidad: la integracion con Edge-TTS permite respuestas habladas en aplicaciones donde la lectura de pantalla no es viable, ejecutandose en CPU.
 - Base para asistentes proactivos: el motor `thinking.py` sirve como punto de partida para investigar sugerencias anticipadas y notificaciones contextuales.
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - GPU: no requiere GPU; el diseno apunta a ejecucion en CPU (hardware `cpu-upgrade` en el Space).
 - GPU recomendadas: no disponible. No se documenta soporte ni configuracion para A100, H100 o RTX 4090.
 - Compatibilidad con GPU de consumo: no evaluada en la informacion disponible; al no requerir GPU, el modelo cabe en cualquier equipo con RAM suficiente.
-- Opciones de despliegue: aplicacion Gradio propia (`python app.py`) con HuggingFace Transformers; no se documenta integracion con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: aplicacion Gradio propia (`python app.py`) con Hugging Face Transformers; no se documenta integracion con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -96,8 +96,8 @@ La comparacion directa con Phi-3-mini es la mas relevante: Jarvis no supera al m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NeuMax/Jarvis
+- Repositorio en Hugging Face: https://huggingface.co/NeuMax/Jarvis
 - Modelo base Phi-3-mini-4k-instruct: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
-- HuggingFace Transformers: https://github.com/huggingface/transformers
+- Hugging Face Transformers: https://github.com/huggingface/transformers
 - Gradio: https://gradio.app
 - Edge-TTS: https://github.com/rany2/edge-tts

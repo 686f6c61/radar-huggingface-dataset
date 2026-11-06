@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sketchpad-0.8B runs | 0,8 B (base) + LoRA | No disponible | Aritmética por pasos sobre tabla finita | Propietaria | HuggingFace (adaptadores) |
-| Qwen/Qwen3.5-0.8B | 0,8 B | No disponible | Modelo base multimodal | Apache 2.0 | HuggingFace |
-| Sketchpad-0.8B | 0,8 B (base) + LoRA | No disponible | Modelo final del mismo proyecto | Propietaria | HuggingFace |
+| Sketchpad-0.8B runs | 0,8 B (base) + LoRA | No disponible | Aritmética por pasos sobre tabla finita | Propietaria | Hugging Face (adaptadores) |
+| Qwen/Qwen3.5-0.8B | 0,8 B | No disponible | Modelo base multimodal | Apache 2.0 | Hugging Face |
+| Sketchpad-0.8B | 0,8 B (base) + LoRA | No disponible | Modelo final del mismo proyecto | Propietaria | Hugging Face |
 
 No se dispone de datos de rendimiento de los modelos comparables en la información proporcionada.
 
@@ -92,6 +92,6 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mohsenvand/sketchpad-0.8b-runs
+- Repositorio en Hugging Face: https://huggingface.co/mohsenvand/sketchpad-0.8b-runs
 - Modelo final Sketchpad-0.8B: https://huggingface.co/mohsenvand/sketchpad-0.8b-preview
 - Modelo base Qwen/Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B

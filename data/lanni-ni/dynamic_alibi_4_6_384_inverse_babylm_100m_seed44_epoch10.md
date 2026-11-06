@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch10` es un modelo de lenguaje de tamaño reducido desarrollado por el usuario Lanni-ni y publicado en HuggingFace. Pertenece a una línea de experimentos sobre mecanismos de atención con sesgos lineales dinámicos (ALiBi), tal como indica la etiqueta `dynamic_alibi` y el nombre del repositorio. El modelo tiene 45.694.080 parámetros y está orientado a la generación de texto.
+El modelo `dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch10` es un modelo de lenguaje de tamaño reducido desarrollado por el usuario Lanni-ni y publicado en Hugging Face. Pertenece a una línea de experimentos sobre mecanismos de atención con sesgos lineales dinámicos (ALiBi), tal como indica la etiqueta `dynamic_alibi` y el nombre del repositorio. El modelo tiene 45.694.080 parámetros y está orientado a la generación de texto.
 
 La información pública sobre el modelo es muy limitada: la model card es una plantilla generada automáticamente sin datos de entrenamiento, arquitectura, licencia ni idiomas. El nombre sugiere una configuración de 4 capas, 6 cabezas de atención y 384 dimensiones de modelo, junto con una variante "inverse" de ALiBi, pero no se ha confirmado oficialmente. Se trata, por tanto, de un modelo experimental de investigación, sin documentación de uso ni benchmarks publicados.
 
@@ -66,5 +66,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch10
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch10
 - Perfil del autor: https://huggingface.co/Lanni-ni

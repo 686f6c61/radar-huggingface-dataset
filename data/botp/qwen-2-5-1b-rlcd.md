@@ -78,7 +78,7 @@ La model card no incluye comparaciones con otros modelos. La tabla siguiente rec
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen-2.5-1B-RLCD (este) | 1,5B | No disponible (base: 32.768 tokens) | apache-2.0 | HuggingFace, 0 descargas | Requiere Apple Silicon y el SDK del autor |
+| Qwen-2.5-1B-RLCD (este) | 1,5B | No disponible (base: 32.768 tokens) | apache-2.0 | Hugging Face, 0 descargas | Requiere Apple Silicon y el SDK del autor |
 | Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens nativos, extensible con YaRN | apache-2.0 | Ampliamente distribuido | Modelo base; sin decodificacion estructurada en paralelo; multiplataforma |
 | Alternativas de ~1–2B (Llama-3.2-1B-Instruct, SmolLM2-1.7B-Instruct) | 1–1,7B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No hay datos comparativos en la model card |
 
@@ -99,10 +99,10 @@ No se han publicado resultados de benchmarks que permitan una comparacion cuanti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/botp/Qwen-2.5-1B-RLCD
+- Modelo en Hugging Face: https://huggingface.co/botp/Qwen-2.5-1B-RLCD
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Checkpoint de 4 bits usado en los benchmarks: https://huggingface.co/mlx-community/Qwen2.5-1.5B-Instruct-4bit
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/drinkmoonshine/parallel-constrained-decoding
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/drinkmoonshine/parallel-constrained-decoding
 - Repositorio de codigo: https://github.com/your-org/parallel-constrained-decoding (URL con marcador de posicion en la model card; no verificable)
 
 No se han encontrado otros enlaces relevantes (papers, blogs o evaluaciones independientes) en la busqueda web realizada.

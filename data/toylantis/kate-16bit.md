@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kate-16bit es un ajuste fino (fine-tuning) del modelo Gemma 2 de 2.000 millones de parametros, publicado por el usuario ToyLantis en HuggingFace. El modelo parte concretamente de `unsloth/gemma-2-2b-it-bnb-4bit`, es decir, la version instruct de Gemma 2 2B cuantizada a 4 bits que distribuye Unsloth, y ha sido entrenado con la libreria Unsloth junto con TRL de HuggingFace. El resultado se publica en precision de 16 bits, con 2.614.341.888 parametros reales y un repositorio de 5,3 GB, lo que confirma que los pesos se almacenan en safetensors a 16 bits y no en el formato cuantizado del que parten.
+Kate-16bit es un ajuste fino (fine-tuning) del modelo Gemma 2 de 2.000 millones de parametros, publicado por el usuario ToyLantis en Hugging Face. El modelo parte concretamente de `unsloth/gemma-2-2b-it-bnb-4bit`, es decir, la version instruct de Gemma 2 2B cuantizada a 4 bits que distribuye Unsloth, y ha sido entrenado con la libreria Unsloth junto con TRL de Hugging Face. El resultado se publica en precision de 16 bits, con 2.614.341.888 parametros reales y un repositorio de 5,3 GB, lo que confirma que los pesos se almacenan en safetensors a 16 bits y no en el formato cuantizado del que parten.
 
 Se trata de un modelo denso de arquitectura transformer decoder, de la familia Gemma 2, con licencia declarada Apache 2.0 y orientado a generacion de texto conversacional en ingles. No se documenta en la ficha ni el conjunto de datos de entrenamiento, ni el numero de tokens utilizados, ni el metodo de alineacion posterior. Tampoco se publican resultados de benchmarks, y el repositorio registra cero descargas y cero valoraciones en el momento de la consulta, por lo que se trata de una publicacion sin validacion externa conocida.
 
@@ -30,7 +30,7 @@ Su relevancia practica es limitada pero concreta: sirve como ejemplo de flujo de
 
 La arquitectura es la de Gemma 2 2B: un transformer decoder denso con atencion por cabezas agrupadas (GQA), normalizacion RMSNorm y atencion alterna entre ventana local y ventana global en funcion de la capa, ademas de "soft-capping" en los logits de atencion. El modelo final tiene 2,61B de parametros. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, la longitud de secuencia usada durante el fine-tuning ni si hubo etapas de RLHF o DPO posteriores.
 
-Lo unico documentado es el metodo de entrenamiento: fine-tuning con Unsloth y la libreria TRL de HuggingFace, que el autor describe como "2x faster" respecto a un entrenamiento convencional. Un detalle tecnico relevante es que el punto de partida es un checkpoint ya cuantizado a 4 bits (`-bnb-4bit`) sobre el que se aplico el ajuste; el modelo publicado se ha convertido despues a 16 bits. Esto significa que los pesos finales arrastran el error de cuantizacion introducido antes del fine-tuning: no equivalen a un ajuste sobre los pesos originales en precision completa de Gemma 2 2B IT. Es un patron habitual en los flujos de trabajo de Unsloth, pero conviene tenerlo en cuenta al evaluar la fidelidad del resultado.
+Lo unico documentado es el metodo de entrenamiento: fine-tuning con Unsloth y la libreria TRL de Hugging Face, que el autor describe como "2x faster" respecto a un entrenamiento convencional. Un detalle tecnico relevante es que el punto de partida es un checkpoint ya cuantizado a 4 bits (`-bnb-4bit`) sobre el que se aplico el ajuste; el modelo publicado se ha convertido despues a 16 bits. Esto significa que los pesos finales arrastran el error de cuantizacion introducido antes del fine-tuning: no equivalen a un ajuste sobre los pesos originales en precision completa de Gemma 2 2B IT. Es un patron habitual en los flujos de trabajo de Unsloth, pero conviene tenerlo en cuenta al evaluar la fidelidad del resultado.
 
 No se declara ninguna innovacion adicional (decodificacion especulativa, atencion lineal, mezcla de expertos ni modulos multimodales) mas alla de las propias de la familia Gemma 2.
 
@@ -56,7 +56,7 @@ No se declara ninguna innovacion adicional (decodificacion especulativa, atencio
 - Base para fine-tuning especifico de dominio: al estar publicado en 16 bits y en safetensors, es un punto de partida valido para volver a ajustar con LoRA sobre datos propios (soporte tecnico, catalogo, FAQ), aunque con la cautela de partir de pesos ya degradados por la cuantizacion previa.
 - Evaluacion comparativa de checkpoints derivados de Gemma 2 2B: util en un banco de pruebas que mida como afecta el orden "cuantizar a 4 bits, ajustar, convertir a 16 bits" frente a "ajustar en precision completa y cuantizar despues".
 - Generacion de respuestas cortas en sistemas de demo o entornos de test: su tamano permite levantar varias instancias en una sola GPU para pruebas de carga y de integracion continua.
-- Educacion y divulgacion: como ejemplo didactico de como se publica un modelo derivado en HuggingFace, que metadatos son obligatorios y que informacion falta cuando no hay model card detallada.
+- Educacion y divulgacion: como ejemplo didactico de como se publica un modelo derivado en Hugging Face, que metadatos son obligatorios y que informacion falta cuando no hay model card detallada.
 
 ## Benchmarks y rendimiento
 
@@ -103,9 +103,9 @@ No se dispone de datos de rendimiento comparado entre Kate-16bit y estas alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ToyLantis/Kate-16bit
+- Modelo en Hugging Face: https://huggingface.co/ToyLantis/Kate-16bit
 - Modelo base: https://huggingface.co/unsloth/gemma-2-2b-it-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentacion de Gemma 2 (familia del modelo base): https://ai.google.dev/gemma/docs
 - Resultados de busqueda web: la busqueda realizada no ha devuelto ningun enlace relevante sobre este modelo. Los unicos resultados obtenidos corresponden a herramientas de busqueda visual (Bing Visual Search, Google Images) y no guardan relacion con el modelo, por lo que no se incluyen.

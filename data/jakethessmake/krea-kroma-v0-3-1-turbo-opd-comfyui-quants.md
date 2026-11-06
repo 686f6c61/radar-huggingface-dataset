@@ -84,10 +84,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Tipo | Tamano | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (int8 convrot) | Cuantizacion del ajuste fino Kroma v0.3.1 turbo OPD | ~13 GB | int8 tensorwise + ConvRot | krea-2-community-license | HuggingFace, jakethessmake |
-| Este repositorio (w4a8) | Cuantizacion del ajuste fino Kroma v0.3.1 turbo OPD | ~7 GB | 4 bits asimetrico con codebook Lloyd-Max | krea-2-community-license | HuggingFace, jakethessmake |
-| lodestones/Kroma (`kroma-v0.3.1-turbo-opd.safetensors`) | Ajuste fino turbo de Krea 2 con destilacion on-policy | ~26 GB | bf16 | krea-2-community-license | HuggingFace, lodestones |
-| Ficheros oficiales `krea2_*_int8_convrot` de Comfy-Org | Cuantizacion oficial de Krea 2 | no disponible | int8 + ConvRot | krea-2-community-license | HuggingFace, Comfy-Org |
+| Este repositorio (int8 convrot) | Cuantizacion del ajuste fino Kroma v0.3.1 turbo OPD | ~13 GB | int8 tensorwise + ConvRot | krea-2-community-license | Hugging Face, jakethessmake |
+| Este repositorio (w4a8) | Cuantizacion del ajuste fino Kroma v0.3.1 turbo OPD | ~7 GB | 4 bits asimetrico con codebook Lloyd-Max | krea-2-community-license | Hugging Face, jakethessmake |
+| lodestones/Kroma (`kroma-v0.3.1-turbo-opd.safetensors`) | Ajuste fino turbo de Krea 2 con destilacion on-policy | ~26 GB | bf16 | krea-2-community-license | Hugging Face, lodestones |
+| Ficheros oficiales `krea2_*_int8_convrot` de Comfy-Org | Cuantizacion oficial de Krea 2 | no disponible | int8 + ConvRot | krea-2-community-license | Hugging Face, Comfy-Org |
 | Krea 2 (base) | Modelo de difusion texto-a-imagen original | no disponible | bf16 | krea-2-community-license | Krea / Comfy-Org |
 
 No se dispone de datos de rendimiento comparativos (FID, CLIP score, evaluaciones humanas) entre estas variantes, por lo que la comparacion se limita a formato, tamano y licencia.
@@ -107,7 +107,7 @@ No se dispone de datos de rendimiento comparativos (FID, CLIP score, evaluacione
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jakethessmake/Krea-Kroma-v0.3.1-Turbo-OPD-ComfyUI-Quants
+- Repositorio en Hugging Face: https://huggingface.co/jakethessmake/Krea-Kroma-v0.3.1-Turbo-OPD-ComfyUI-Quants
 - Modelo base (lodestones/Kroma): https://huggingface.co/lodestones/Kroma
 - Fichero original bf16: https://huggingface.co/lodestones/Kroma/blob/main/kroma-v0.3.1-turbo-opd.safetensors
 - Codificador de texto y VAE (Comfy-Org/Krea-2): https://huggingface.co/Comfy-Org/Krea-2

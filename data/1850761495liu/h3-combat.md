@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `h3-combat` es un repositorio publicado en HuggingFace por el usuario 1850761495Liu bajo licencia Apache 2.0. La model card asociada no contiene más información que la línea de licencia, por lo que no es posible determinar qué tipo de modelo es, qué arquitectura emplea, qué problema resuelve ni cuál es su origen. No se declaran idiomas soportados, pipeline de inferencia ni datos de entrenamiento.
+El modelo `h3-combat` es un repositorio publicado en Hugging Face por el usuario 1850761495Liu bajo licencia Apache 2.0. La model card asociada no contiene más información que la línea de licencia, por lo que no es posible determinar qué tipo de modelo es, qué arquitectura emplea, qué problema resuelve ni cuál es su origen. No se declaran idiomas soportados, pipeline de inferencia ni datos de entrenamiento.
 
 El repositorio se creó y actualizó el 1 de noviembre de 2026, no acumula descargas ni likes, y no incluye documentación técnica, pesos descritos ni referencias a papers o repositorios externos. En el momento de redactar esta ficha no hay evidencia pública de que el modelo haya sido entrenado, evaluado o validado por terceros.
 
@@ -71,5 +71,5 @@ No disponible. Al no conocerse la categoría, el tamaño ni la tarea del modelo,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/1850761495Liu/h3-combat
+- Repositorio en Hugging Face: https://huggingface.co/1850761495Liu/h3-combat
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

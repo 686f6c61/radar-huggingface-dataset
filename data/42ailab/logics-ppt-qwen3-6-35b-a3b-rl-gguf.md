@@ -98,8 +98,8 @@ No se dispone de modelos comparables especificamente entrenados para generacion 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/42ailab/Logics-PPT-Qwen3.6-35B-A3B-RL-GGUF
-- Modelo upstream en HuggingFace: https://huggingface.co/Logics-MLLM/Logics-PPT-Qwen3.6-35B-A3B-RL
+- Repositorio GGUF en Hugging Face: https://huggingface.co/42ailab/Logics-PPT-Qwen3.6-35B-A3B-RL-GGUF
+- Modelo upstream en Hugging Face: https://huggingface.co/Logics-MLLM/Logics-PPT-Qwen3.6-35B-A3B-RL
 - Pagina alternativa del modelo upstream: https://huggingface.co/Logics-MLLM/Logics-PPT-Qwen-3.6-35B-A3B-RL
 - Ficha de terceros sobre el modelo upstream: https://savrn.com/models/logics-ppt-qwen-3-6-35b-a3b-rl
 - Modelo en ModelScope: https://modelscope.cn/models/42ailab/Logics-PPT-Qwen3.6-35B-A3B-RL-GGUF

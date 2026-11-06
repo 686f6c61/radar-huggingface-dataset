@@ -4,7 +4,7 @@
 
 CESM-SeasonalML es un proyecto de machine learning interpretable desarrollado por OneScience-Group que predice cuatro patrones a gran escala de anomalías de precipitación estacional estandarizadas en el oeste de los Estados Unidos, por separado para los periodos NDJ (noviembre-diciembre-enero) y JFM (enero-febrero-marzo). El método proviene de un artículo científico publicado por equipos del Center for Western Weather and Water Extremes de la Scripps Institution of Oceanography y del NASA Jet Propulsion Laboratory. La model card indica que los modelos se entrenan sobre el ensemble climático CESM-LENS y se evalúan con los datos de ERSSTv5, ERA5 y el CPC Unified Gauge-Based Analysis of Global Daily Precipitation.
 
-El repositorio no contiene un modelo preentrenado con pesos oficiales, sino código y scripts para entrenar, evaluar y visualizar modelos de tipo random forest, XGBoost, redes neuronales y LSTM. Las dimensiones de entrada son 103 para RF/XGB, 416 para redes neuronales y 28 para LSTM, con cuatro clases objetivo obtenidas mediante agrupamiento KMeans. No se trata de un modelo de lenguaje: es un pipeline de ciencia de datos climáticos, cuyo objetivo es la clasificación interpretable de patrones de precipitación estacional. Aunque la fecha de creación en HuggingFace es posterior a la publicación del paper, el proyecto se presenta como una implementación de ingeniería para validar el flujo de trabajo, no como el artefacto original del estudio.
+El repositorio no contiene un modelo preentrenado con pesos oficiales, sino código y scripts para entrenar, evaluar y visualizar modelos de tipo random forest, XGBoost, redes neuronales y LSTM. Las dimensiones de entrada son 103 para RF/XGB, 416 para redes neuronales y 28 para LSTM, con cuatro clases objetivo obtenidas mediante agrupamiento KMeans. No se trata de un modelo de lenguaje: es un pipeline de ciencia de datos climáticos, cuyo objetivo es la clasificación interpretable de patrones de precipitación estacional. Aunque la fecha de creación en Hugging Face es posterior a la publicación del paper, el proyecto se presenta como una implementación de ingeniería para validar el flujo de trabajo, no como el artefacto original del estudio.
 
 ## Especificaciones técnicas
 
@@ -71,7 +71,7 @@ No disponible. La información proporcionada no incluye datos comparativos con o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/CESM-SeasonalML
+- Hugging Face: https://huggingface.co/OneScience-Group/CESM-SeasonalML
 - Paper: https://doi.org/10.1038/s43247-021-00225-4
-- Perfil de OneScience en HuggingFace: https://huggingface.co/OneScience-Group
+- Perfil de OneScience en Hugging Face: https://huggingface.co/OneScience-Group
 - Entorno OneCode para entrenamiento: https://web-2069360198568017922-iaaj.ksai.scnet.cn:58043/home

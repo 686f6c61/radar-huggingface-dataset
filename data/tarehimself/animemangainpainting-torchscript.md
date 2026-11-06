@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 | `TareHimself/AnimeMangaInpainting-torchscript` | LaMa (FFC) afinado en 300k imágenes anime/manga | TorchScript + checkpoint | MIT | Sin dependencias de código; composición horneada |
 | `dreMaz/AnimeMangaInpainting` | LaMa (FFC) afinado en 300k imágenes anime/manga | Checkpoint `.ckpt` | MIT | Modelo original; requiere código de la arquitectura para cargar |
 | `advimman/lama` (original) | LaMa (FFC) entrenado en imágenes naturales | Checkpoints | Apache-2.0 | Modelo base sin afinado específico de anime/manga; no optimizado para ese dominio |
-| `msxie92/MangaInpainting` | Pipeline de dos fases (inpainting semántico + síntesis de apariencia) | no disponible | no disponible | Enfoque distinto, específico de manga, pero sin distribución empaquetada en HuggingFace |
+| `msxie92/MangaInpainting` | Pipeline de dos fases (inpainting semántico + síntesis de apariencia) | no disponible | no disponible | Enfoque distinto, específico de manga, pero sin distribución empaquetada en Hugging Face |
 
 La diferencia principal frente al checkpoint original de `dreMaz` es operativa: el paquete TorchScript elimina la necesidad de portar el código de la arquitectura, a costa de perder flexibilidad (padding, conversión de color y normalización quedan fuera del grafo). Frente a `advimman/lama`, la ventaja es el afinado específico en dominio anime/manga, que produce resultados estilísticamente más coherentes en ese tipo de imágenes.
 
@@ -80,7 +80,7 @@ La diferencia principal frente al checkpoint original de `dreMaz` es operativa: 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TareHimself/AnimeMangaInpainting-torchscript
+- Repositorio Hugging Face: https://huggingface.co/TareHimself/AnimeMangaInpainting-torchscript
 - Modelo original (checkpoint): https://huggingface.co/dreMaz/AnimeMangaInpainting
 - Perfil del autor del checkpoint: https://huggingface.co/dreMaz
 - Repositorio de la arquitectura LaMa: https://github.com/advimman/lama

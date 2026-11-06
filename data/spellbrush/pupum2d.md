@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PupuM2D (Base) | 86M | SSL sensible a la frecuencia | MIT | HuggingFace |
-| MERT (Music Audio Representation Transformer) | 95M-330M | SSL con fine-tuning supervisado | CC BY-NC-SA | HuggingFace |
-| Music2Vec | 95M | SSL basado en Wav2Vec2 adaptado a música | MIT | HuggingFace |
+| PupuM2D (Base) | 86M | SSL sensible a la frecuencia | MIT | Hugging Face |
+| MERT (Music Audio Representation Transformer) | 95M-330M | SSL con fine-tuning supervisado | CC BY-NC-SA | Hugging Face |
+| Music2Vec | 95M | SSL basado en Wav2Vec2 adaptado a música | MIT | Hugging Face |
 
 PupuM2D se diferencia de MERT y Music2Vec por su enfoque específico en la sensibilidad a la frecuencia. MERT es un referente en representación musical pero su licencia es no comercial. Music2Vec ofrece licencia MIT pero tiene un tamaño fijo. PupuM2D ofrece una gama más amplia de tamaños y una licencia permisiva, aunque su adopción en la comunidad es menor al ser un modelo más reciente.
 
@@ -81,9 +81,9 @@ PupuM2D se diferencia de MERT y Music2Vec por su enfoque específico en la sensi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/spellbrush/PupuM2D
+- Hugging Face: https://huggingface.co/spellbrush/PupuM2D
 - Articulo arXiv: https://arxiv.org/abs/2606.25713
 - Pagina del proyecto: https://www.yichenggu.com/PupuM2D/
 - Repositorio GitHub: https://github.com/sizigi/PupuM2D/
-- Perfil de Spellbrush en HuggingFace: https://huggingface.co/spellbrush
+- Perfil de Spellbrush en Hugging Face: https://huggingface.co/spellbrush
 - Modelo relacionado de Spellbrush (AliasingFreeNeuralAudioSynthesis): https://huggingface.co/spellbrush/AliasingFreeNeuralAudioSynthesis

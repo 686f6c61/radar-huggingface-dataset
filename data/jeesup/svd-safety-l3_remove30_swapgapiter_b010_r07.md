@@ -79,8 +79,8 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l3_remove30_swapgapiter_b010_r07 | 8.030.261.248 (fraccion densa 0,6999) | 8.192 tokens | Artefacto de investigacion en seguridad y compresion | Meta Llama 3 Community License | HuggingFace (0 descargas) |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8.030.261.248 (denso) | 8.192 tokens | Asistente conversacional de proposito general | Meta Llama 3 Community License | HuggingFace (ampliamente distribuido) |
+| svd-safety-l3_remove30_swapgapiter_b010_r07 | 8.030.261.248 (fraccion densa 0,6999) | 8.192 tokens | Artefacto de investigacion en seguridad y compresion | Meta Llama 3 Community License | Hugging Face (0 descargas) |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8.030.261.248 (denso) | 8.192 tokens | Asistente conversacional de proposito general | Meta Llama 3 Community License | Hugging Face (ampliamente distribuido) |
 | Otras celdas de la rejilla del autor | no disponible | no disponible | Variantes con otras reglas de seleccion y presupuestos | Meta Llama 3 Community License | no disponible |
 
 No se dispone de datos de benchmarks comparables publicados para otras variantes comprimidas de Llama 3 8B en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto, licencia y proposito.
@@ -98,6 +98,6 @@ No se dispone de datos de benchmarks comparables publicados para otras variantes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r07
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r07
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

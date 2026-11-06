@@ -77,9 +77,9 @@ Para referencia, la variante KSA V1 4B (continual pretraining desde Qwen3-4B) al
 
 | Modelo | Parámetros | Contexto | Enfoque de atención | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KSA V1 1.9B (este) | ~1,9B | 128K | Híbrido KSA 3:1, entrenado desde cero | Apache-2.0 | HuggingFace, safetensors BF16 |
-| KSA V1 4B | ~4B | 128K | Híbrido KSA 3:1, CPT desde Qwen3-4B | Apache-2.0 | HuggingFace |
-| Qwen3-4B | ~4B | No disponible en la información | Transformer estándar | No disponible en la información | HuggingFace |
+| KSA V1 1.9B (este) | ~1,9B | 128K | Híbrido KSA 3:1, entrenado desde cero | Apache-2.0 | Hugging Face, safetensors BF16 |
+| KSA V1 4B | ~4B | 128K | Híbrido KSA 3:1, CPT desde Qwen3-4B | Apache-2.0 | Hugging Face |
+| Qwen3-4B | ~4B | No disponible en la información | Transformer estándar | No disponible en la información | Hugging Face |
 
 La comparación cuantitativa disponible se limita a los resultados RULER del informe técnico recogidos en la sección anterior, donde Hybrid KSA supera a Full Attention, SWA, SCA, GDN y KSA pura en la media de 4K a 128K tanto en el modelo de 1,9B como en el de 4B. No se dispone de datos de benchmarks generales que permitan comparar con modelos de propósito general de tamaño similar.
 
@@ -97,7 +97,7 @@ La comparación cuantitativa disponible se limita a los resultados RULER del inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenOneRec/KSA-1.9B-base
+- Modelo en Hugging Face: https://huggingface.co/OpenOneRec/KSA-1.9B-base
 - Informe técnico KSA V1: https://arxiv.org/abs/2604.24432
 - Informe técnico KSA V2: https://arxiv.org/abs/2610.18654
 - Código: https://github.com/Kuaishou-OneRec/KSA

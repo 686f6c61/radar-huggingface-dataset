@@ -2,7 +2,7 @@
 
 ## Resumen
 
-c3750-mdeberta_base-vanilla-1-2 es un modelo de reconocimiento de entidades nombradas (NER) y deteccion de informacion personal identificable (PII) construido con la libreria GLiNER sobre el encoder microsoft/mdeberta-v3-base. Lo publica el usuario arthrod en HuggingFace y se distribuye con licencia MIT. Esta pensado para extraccion de entidades a nivel de span (span-level), en modo "vanilla" (span_mode: markerV0), orientado principalmente a texto en portugues (pt-BR) con soporte declarado tambien para ingles.
+c3750-mdeberta_base-vanilla-1-2 es un modelo de reconocimiento de entidades nombradas (NER) y deteccion de informacion personal identificable (PII) construido con la libreria GLiNER sobre el encoder microsoft/mdeberta-v3-base. Lo publica el usuario arthrod en Hugging Face y se distribuye con licencia MIT. Esta pensado para extraccion de entidades a nivel de span (span-level), en modo "vanilla" (span_mode: markerV0), orientado principalmente a texto en portugues (pt-BR) con soporte declarado tambien para ingles.
 
 Se trata de un experimento legacy de agosto de 2025 que el propio autor ha marcado como superseded (sustituido). El entrenamiento se detuvo en el paso 3.750 de los 15.000 previstos, y la unica metrica registrada es la eval loss, que empeoro drasticamente tras el fine-tuning: 4.409 en el paso 0 frente a rangos de 19,6k-21,8k en los checkpoints guardados. Nunca se calculo ninguna metrica de tarea (F1). Ademas, los pesos de la raiz del repositorio son una copia del checkpoint-1250, no del checkpoint-3750 que da nombre al modelo.
 
@@ -93,7 +93,7 @@ No existe ningun valor de F1 ni de ninguna otra metrica de tarea para ningun che
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arthrod/c3750-mdeberta_base-vanilla-1-2
+- Modelo en Hugging Face: https://huggingface.co/arthrod/c3750-mdeberta_base-vanilla-1-2
 - DOI: https://doi.org/10.57967/hf/8513
 - Modelo base: https://huggingface.co/microsoft/mdeberta-v3-base
 - Modelo recomendado (pt-BR PII, mmBERT-small): https://huggingface.co/arthrod/gliner-mmbert-small-ptbr-pii-full-3x-v1

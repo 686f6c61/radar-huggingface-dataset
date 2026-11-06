@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 | Modelo | Parametros | Contexto | Cuantizacion | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Jeff98/MiniCPM5-2B-int4-gq-ov | aprox. 2.000 M (deducido del modelo base) | no disponible | INT4 group-wise, group size 128, data-free | en, zh | Apache-2.0 | OpenVINO IR; 0 descargas y 0 likes en el momento de la consulta |
-| openbmb/MiniCPM5-2B (base, coma flotante) | aprox. 2.000 M según denominación | no disponible | sin cuantizar | en, zh | Apache-2.0 | Repositorio original en HuggingFace; referencia para arquitectura, entrenamiento y evaluación |
+| openbmb/MiniCPM5-2B (base, coma flotante) | aprox. 2.000 M según denominación | no disponible | sin cuantizar | en, zh | Apache-2.0 | Repositorio original en Hugging Face; referencia para arquitectura, entrenamiento y evaluación |
 | Otras alternativas de tamaño similar (por ejemplo, modelos de 1B a 3B orientados a borde) | no disponible | no disponible | no disponible | no disponible | no disponible | No se dispone de información sobre alternativas en la documentación proporcionada, por lo que no se establece comparación de rendimiento |
 
 ## Limitaciones y advertencias

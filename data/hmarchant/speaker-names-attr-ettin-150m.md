@@ -72,9 +72,9 @@ El Person F1 acepta cualquier forma impresa del nombre de la persona correcta (p
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Speaker Names Attribution, Ettin 150M | 149M | 4096 | Extraccion de nombres de hablante (span) | MIT | HuggingFace (checkpoint personalizado) |
-| jhu-clsp/ettin-encoder-150m (modelo base) | 149M | no disponible | Encoder general (fine-tuning) | no disponible en la informacion | HuggingFace |
-| Modelos genericos de QA extractivo tipo SQuAD | variable | variable | Question answering extractivo | variable | HuggingFace |
+| Speaker Names Attribution, Ettin 150M | 149M | 4096 | Extraccion de nombres de hablante (span) | MIT | Hugging Face (checkpoint personalizado) |
+| jhu-clsp/ettin-encoder-150m (modelo base) | 149M | no disponible | Encoder general (fine-tuning) | no disponible en la informacion | Hugging Face |
+| Modelos genericos de QA extractivo tipo SQuAD | variable | variable | Question answering extractivo | variable | Hugging Face |
 
 No se dispone de resultados comparativos de otros modelos frente a este en la informacion proporcionada.
 
@@ -92,5 +92,5 @@ No se dispone de resultados comparativos de otros modelos frente a este en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmarchant/speaker-names-attr-ettin-150m
+- Modelo en Hugging Face: https://huggingface.co/hmarchant/speaker-names-attr-ettin-150m
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-150m

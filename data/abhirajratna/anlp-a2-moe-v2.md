@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `abhirajratna/anlp-a2-moe-v2` es un transformer decoder-only entrenado desde cero para traducción automática de vietnamita a inglés y de japonés a inglés. Lo publica el usuario abhirajratna en HuggingFace y forma parte de una serie de cinco modelos que solo se diferencian en la capa feed-forward; esta variante concreta usa una mezcla de expertos (MoE) con 4 expertos enrutados y top-1. Resuelve el problema clásico de traducción bidireccional vi/ja hacia inglés con un modelo muy compacto.
+El modelo `abhirajratna/anlp-a2-moe-v2` es un transformer decoder-only entrenado desde cero para traducción automática de vietnamita a inglés y de japonés a inglés. Lo publica el usuario abhirajratna en Hugging Face y forma parte de una serie de cinco modelos que solo se diferencian en la capa feed-forward; esta variante concreta usa una mezcla de expertos (MoE) con 4 expertos enrutados y top-1. Resuelve el problema clásico de traducción bidireccional vi/ja hacia inglés con un modelo muy compacto.
 
 El modelo tiene 33.579.520 parámetros totales y 20.996.608 activos por token, con 8 capas, d_model de 512 y 8 cabezas de atención. El vocabulario es de 16.384 tokens con BPE a nivel de byte compartido entre los tres idiomas. Su rasgo más relevante es que se trata de un ejercicio académico de análisis y modelado de lenguaje natural (tag `anlp-assignment`), por lo que su valor está más en la comparación de arquitecturas densas frente a MoE que en un uso productivo en producción.
 
@@ -83,7 +83,7 @@ La informacion proporcionada no incluye datos de modelos comparables de terceros
 
 | Modelo | Parametros | Contexto | BLEU global | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| abhirajratna/anlp-a2-moe-v2 | 33,6 M (21,0 M activos) | no disponible | 38,05 | no disponible | HuggingFace |
+| abhirajratna/anlp-a2-moe-v2 | 33,6 M (21,0 M activos) | no disponible | 38,05 | no disponible | Hugging Face |
 | Otras variantes de la serie | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No disponible para alternativas externas: los modelos de traduccion multilingue de referencia (por ejemplo, familia NLLB o Marian) no aparecen en la informacion proporcionada, por lo que no se incluyen cifras que no se puedan contrastar.
@@ -102,6 +102,6 @@ No disponible para alternativas externas: los modelos de traduccion multilingue 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhirajratna/anlp-a2-moe-v2
+- Modelo en Hugging Face: https://huggingface.co/abhirajratna/anlp-a2-moe-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - Referencia de la firma de evaluacion sacreBLEU 2.6.0: https://github.com/mjpost/sacrebleu

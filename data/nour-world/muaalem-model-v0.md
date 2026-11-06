@@ -2,7 +2,7 @@
 
 ## Resumen
 
-muaalem-model-v0 es un modelo de reconocimiento de voz basado en un fine-tune de facebook/w2v-bert-2.0, publicado por el usuario nour-world en HuggingFace con licencia MIT. Su particularidad es que no es un modelo de lenguaje de texto, sino un modelo acústico con cabeceras CTC multinivel (tag multi_level_ctc) orientado a la deteccion de reglas de recitacion coranica (tajwid) a nivel de fonema: las metricas que reporta el autor son errores de fonema (PER) por regla concreta (ghonna, qalqla, safeer, istitala, itbaq, tafkheem or taqeeq, tikraar, etc.), lo que situa el modelo en el nicho del aprendizaje y la evaluacion asistida de recitacion del Coran.
+muaalem-model-v0 es un modelo de reconocimiento de voz basado en un fine-tune de facebook/w2v-bert-2.0, publicado por el usuario nour-world en Hugging Face con licencia MIT. Su particularidad es que no es un modelo de lenguaje de texto, sino un modelo acústico con cabeceras CTC multinivel (tag multi_level_ctc) orientado a la deteccion de reglas de recitacion coranica (tajwid) a nivel de fonema: las metricas que reporta el autor son errores de fonema (PER) por regla concreta (ghonna, qalqla, safeer, istitala, itbaq, tafkheem or taqeeq, tikraar, etc.), lo que situa el modelo en el nicho del aprendizaje y la evaluacion asistida de recitacion del Coran.
 
 El modelo cuenta con 605.753.226 parametros reales (segun los pesos en safetensors) y un repositorio de 2,4 GB. Hereda el backbone Wav2Vec2-BERT de Facebook, que combina un extractor convolucional de caracteristicas con un encoder transformer; el fine-tune anade las cabeceras CTC multinivel especificas del dominio. La longitud de contexto de texto no aplica aqui: se trata de un modelo de audio y la model card no especifica la duracion maxima de entrada.
 
@@ -91,7 +91,7 @@ Advertencia: no se documenta el protocolo de evaluacion, el conjunto de test, el
 - VRAM para los pesos: aproximadamente 2,42 GB en fp32, 1,21 GB en fp16/bf16 y 0,61 GB en int8. Son estimaciones aritmeticas a partir de los 605.753.226 parametros, no datos publicados; hay que sumar el coste de activaciones, que en audio depende de la duracion de la entrada.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para inferencia en fp16 con audios cortos (por ejemplo, RTX 3050, RTX 3060, RTX 4060, T4). Para lotes grandes o audios largos conviene subir a 8-16 GB (RTX 4070, RTX 4080, L4, A10). No necesita A100 ni H100 para uso normal.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna con 4 GB o mas de VRAM, y tambien en CPU, aunque con mayor latencia.
-- Opciones de despliegue: transformers (libreria declarada), exportacion a ONNX o TorchScript para produccion, y HuggingFace Inference Endpoints (el repositorio esta marcado como endpoints_compatible). vLLM no aplica, porque no es un modelo de lenguaje autoregresivo. llama.cpp, Ollama y TGI no estan indicados para esta arquitectura en la informacion disponible.
+- Opciones de despliegue: transformers (libreria declarada), exportacion a ONNX o TorchScript para produccion, y Hugging Face Inference Endpoints (el repositorio esta marcado como endpoints_compatible). vLLM no aplica, porque no es un modelo de lenguaje autoregresivo. llama.cpp, Ollama y TGI no estan indicados para esta arquitectura en la informacion disponible.
 - Latencia y throughput: no disponible. No se publican mediciones de RTF (factor de tiempo real) ni de muestras por segundo.
 
 ## Comparativa con modelos similares
@@ -100,8 +100,8 @@ No se han encontrado en la informacion proporcionada otros fine-tunes comparable
 
 | Modelo | Parametros | Contexto / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| muaalem-model-v0 | 605.753.226 | Audio a fonemas y reglas de tajwid (CTC multinivel); duracion de audio no declarada | MIT | HuggingFace, 0 descargas, 0 likes |
-| facebook/w2v-bert-2.0 | no disponible en la informacion proporcionada (el fine-tune tiene 605,75 M, por lo que el backbone esta en ese orden de magnitud) | Representaciones auto-supervisadas de voz, multilingue | no disponible en la informacion proporcionada | HuggingFace |
+| muaalem-model-v0 | 605.753.226 | Audio a fonemas y reglas de tajwid (CTC multinivel); duracion de audio no declarada | MIT | Hugging Face, 0 descargas, 0 likes |
+| facebook/w2v-bert-2.0 | no disponible en la informacion proporcionada (el fine-tune tiene 605,75 M, por lo que el backbone esta en ese orden de magnitud) | Representaciones auto-supervisadas de voz, multilingue | no disponible en la informacion proporcionada | Hugging Face |
 
 Comparativas con modelos de reconocimiento de voz de proposito general o con otros sistemas de evaluacion de tajwid: no disponible.
 
@@ -120,7 +120,7 @@ Comparativas con modelos de reconocimiento de voz de proposito general o con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nour-world/muaalem-model-v0
+- Modelo en Hugging Face: https://huggingface.co/nour-world/muaalem-model-v0
 - Modelo base: https://huggingface.co/facebook/w2v-bert-2.0
 - Paper o blog del autor: no disponible
 - Repositorio de codigo: no disponible

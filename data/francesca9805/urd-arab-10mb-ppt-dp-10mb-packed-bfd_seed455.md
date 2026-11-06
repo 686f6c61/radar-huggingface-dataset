@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfd_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/urd_arab_10mb`, desarrollado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 38.038.528 parametros (aproximadamente 38 millones), lo que lo situa en la categoria de modelos pequenos orientados a idiomas con pocos recursos. El entrenamiento se realizo con la libreria TRL (version 0.23.0) mediante SFT (supervised fine-tuning), segun se documenta en su model card.
+El modelo `francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfd_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/urd_arab_10mb`, desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 38.038.528 parametros (aproximadamente 38 millones), lo que lo situa en la categoria de modelos pequenos orientados a idiomas con pocos recursos. El entrenamiento se realizo con la libreria TRL (version 0.23.0) mediante SFT (supervised fine-tuning), segun se documenta en su model card.
 
 Su relevancia es limitada y fundamentalmente experimental: cuenta con 0 descargas y 0 "likes" en el momento de la consulta, no incluye resultados de evaluacion y no declara licencia ni idiomas soportados en la informacion disponible. El modelo base pertenece al proyecto Goldfish, una iniciativa de modelos monolingues para cientos de lenguas de bajos recursos; el sufijo `urd_arab_10mb` sugiere urdu en escritura arabe con un corpus de entrenamiento de unos 10 MB, aunque este extremo no esta confirmado en la model card del ajuste.
 
@@ -12,7 +12,7 @@ Por su tamano y su origen, encaja en escenarios de investigacion sobre adaptacio
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only); tag `gpt2` en HuggingFace |
+| Arquitectura | GPT-2 (transformer decoder-only); tag `gpt2` en Hugging Face |
 | Parametros totales | 38.038.528 (aproximadamente 38 M) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible (la arquitectura GPT-2 suele emplear 1024 tokens; no confirmado para este modelo) |
@@ -49,7 +49,7 @@ El entrenamiento consistio en un ajuste fino supervisado (SFT) sobre el modelo b
 - Reproduccion de experimentos de SFT: dado que la model card especifica versiones exactas de TRL, Transformers, PyTorch, Datasets y Tokenizers, el modelo es util para replicar pipelines de entrenamiento en entornos de investigacion.
 - Pruebas de infraestructura de despliegue: con 38 M de parametros y 0,1 GB de repositorio, permite validar cadenas completas de serving (endpoints compatibles, text-generation-inference) sin coste significativo de GPU.
 - Generacion de texto de bajo coste en hardware embebido: puede ejecutarse en CPU o en GPUs integradas para prototipos de autocompletado o generacion de frases cortas en la lengua objetivo, asumiendo calidad reducida.
-- Docencia y formacion: util como ejemplo didactico de fine-tuning supervisado con TRL y de publicacion de modelos en HuggingFace.
+- Docencia y formacion: util como ejemplo didactico de fine-tuning supervisado con TRL y de publicacion de modelos en Hugging Face.
 - Filtrado o clasificacion previa en pipelines de datos: por su tamano, puede usarse como componente rapido para scoring de perplejidad o deteccion de texto fuera de dominio en la lengua del modelo base.
 - Experimentacion con tecnicas de cuantizacion: su tamano permite probar cuantizacion a 8 y 4 bits y medir la degradacion de calidad con un coste computacional minimo.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfd_seed455` | 38,04 M | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT del modelo Goldfish; sin benchmarks |
-| `goldfish-models/urd_arab_10mb` | orden de decenas de millones (no confirmado) | no disponible | no disponible en la informacion consultada | HuggingFace | Modelo base monollingue del proyecto Goldfish; punto de partida del ajuste |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT (segun publicacion original) | HuggingFace, ampliamente distribuido | Referencia de la misma familia arquitectonica; mayor tamano y ecosistema mas maduro |
-| Otros modelos Goldfish de 10 MB | orden de decenas de millones por lengua | no disponible | no disponible en la informacion consultada | HuggingFace | Alternativas equivalentes para otras lenguas del mismo proyecto |
+| `francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfd_seed455` | 38,04 M | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT del modelo Goldfish; sin benchmarks |
+| `goldfish-models/urd_arab_10mb` | orden de decenas de millones (no confirmado) | no disponible | no disponible en la informacion consultada | Hugging Face | Modelo base monollingue del proyecto Goldfish; punto de partida del ajuste |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT (segun publicacion original) | Hugging Face, ampliamente distribuido | Referencia de la misma familia arquitectonica; mayor tamano y ecosistema mas maduro |
+| Otros modelos Goldfish de 10 MB | orden de decenas de millones por lengua | no disponible | no disponible en la informacion consultada | Hugging Face | Alternativas equivalentes para otras lenguas del mismo proyecto |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/urd_arab_10mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/kdpdbqbv
 - Repositorio de TRL: https://github.com/huggingface/trl

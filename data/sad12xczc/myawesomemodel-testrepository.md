@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario SAD12XCZC bajo el identificador `SAD12XCZC/MyAwesomeModel-TestRepository`. La model card se presenta como una actualización de una versión anterior, con mejoras declaradas en razonamiento, reducción de alucinaciones y soporte de function calling. Sin embargo, el repositorio tiene un tamaño de 0,0 GB, no contiene pesos descargables y la información técnica publicada es genérica y no verificable, por lo que debe tratarse como un artefacto de prueba más que como un modelo listo para producción.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario SAD12XCZC bajo el identificador `SAD12XCZC/MyAwesomeModel-TestRepository`. La model card se presenta como una actualización de una versión anterior, con mejoras declaradas en razonamiento, reducción de alucinaciones y soporte de function calling. Sin embargo, el repositorio tiene un tamaño de 0,0 GB, no contiene pesos descargables y la información técnica publicada es genérica y no verificable, por lo que debe tratarse como un artefacto de prueba más que como un modelo listo para producción.
 
-La información disponible no permite confirmar la arquitectura, el número de parámetros, la longitud de contexto ni el proceso de entrenamiento. Los tags de HuggingFace indican `transformers`, `pytorch`, `bert` y pipeline `feature-extraction`, lo que sugiere una arquitectura tipo encoder BERT, pero esta indicación entra en contradicción con las capacidades de generación, razonamiento y function calling descritas en la model card. Esta incoherencia refuerza la naturaleza de repositorio de prueba del artefacto.
+La información disponible no permite confirmar la arquitectura, el número de parámetros, la longitud de contexto ni el proceso de entrenamiento. Los tags de Hugging Face indican `transformers`, `pytorch`, `bert` y pipeline `feature-extraction`, lo que sugiere una arquitectura tipo encoder BERT, pero esta indicación entra en contradicción con las capacidades de generación, razonamiento y function calling descritas en la model card. Esta incoherencia refuerza la naturaleza de repositorio de prueba del artefacto.
 
 Su relevancia actual es limitada: no hay benchmarks verificables, no hay pesos publicados y la model card incluye tablas de evaluación con columnas denominadas "Model1", "Model2" y "Model1-v2" sin identificar los modelos comparados. Se recomienda precaución y no utilizarlo como base para decisiones técnicas o despliegues reales sin una validación independiente.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada: no hay benchmarks verificables, no hay pesos p
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información verificable sobre la arquitectura. El tag `bert` de HuggingFace apunta a un transformer encoder, mientras que la model card describe capacidades de razonamiento profundo, generación de código y function calling, propias de modelos decoder-only o de arquitecturas híbridas. Esta contradicción no se resuelve con los datos publicados.
+No se dispone de información verificable sobre la arquitectura. El tag `bert` de Hugging Face apunta a un transformer encoder, mientras que la model card describe capacidades de razonamiento profundo, generación de código y function calling, propias de modelos decoder-only o de arquitecturas híbridas. Esta contradicción no se resuelve con los datos publicados.
 
 Respecto al entrenamiento, la model card menciona de forma genérica "mayores recursos computacionales" y "mecanismos de optimización algorítmica durante el post-entrenamiento", sin especificar número de tokens, composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o similares. Tampoco se detalla ninguna innovación técnica concreta (atención lineal, decodificación especulativa, etc.). Toda esta sección debe considerarse no disponible.
 
@@ -42,7 +42,7 @@ Respecto al entrenamiento, la model card menciona de forma genérica "mayores re
 
 - Evaluación interna de pipelines de transformers: el repositorio puede servir para probar la carga de modelos con la librería `transformers` y el pipeline `feature-extraction`, aunque sin pesos reales el test sería incompleto.
 - Prototipado de plantillas de prompt: las plantillas de system prompt, carga de ficheros y búsqueda web con citas documentadas en la model card pueden reutilizarse en otros modelos con capacidades equivalentes.
-- Pruebas de integración de endpoints: el tag `endpoints_compatible` sugiere compatibilidad con la infraestructura de Inference Endpoints de HuggingFace, útil para validar flujos de despliegue.
+- Pruebas de integración de endpoints: el tag `endpoints_compatible` sugiere compatibilidad con la infraestructura de Inference Endpoints de Hugging Face, útil para validar flujos de despliegue.
 - Docencia y ejemplos de model cards: el repositorio puede emplearse como ejemplo de estructura de model card y de advertencias sobre datos no verificables.
 - Referencia para comparativas de benchmarks: la tabla de evaluación, aunque con modelos no identificados, puede servir como plantilla de presentación de resultados.
 - No se recomienda su uso en producción, atención al cliente, generación de código real ni tareas de razonamiento crítico, dado que no hay pesos ni validación independiente.
@@ -76,7 +76,7 @@ Además, la model card menciona una precisión del 87,5 % en AIME 2025 (frente a
 - VRAM estimada: no disponible, al no conocerse el número de parámetros ni los formatos de pesos publicados.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: la librería indicada es `transformers`; el tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: la librería indicada es `transformers`; el tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -101,5 +101,5 @@ No es posible establecer una comparativa fiable porque no se conocen los paráme
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SAD12XCZC/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/SAD12XCZC/MyAwesomeModel-TestRepository
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código ni demos adicionales.

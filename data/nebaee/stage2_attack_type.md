@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Nebaee/stage2_attack_type` es un repositorio publicado en HuggingFace por el usuario Nebaee, con fecha de creación de septiembre de 2026. La model card asociada es una plantilla genérica generada automáticamente, sin ningún campo completado con información real: todos los apartados contienen "[More Information Needed]". El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no contiene pesos de modelo ni archivos de configuración, o que estos no han sido subidos correctamente.
+El modelo `Nebaee/stage2_attack_type` es un repositorio publicado en Hugging Face por el usuario Nebaee, con fecha de creación de septiembre de 2026. La model card asociada es una plantilla genérica generada automáticamente, sin ningún campo completado con información real: todos los apartados contienen "[More Information Needed]". El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no contiene pesos de modelo ni archivos de configuración, o que estos no han sido subidos correctamente.
 
 El nombre del repositorio sugiere una posible función relacionada con la clasificación de tipos de ataque en una segunda etapa de un pipeline de seguridad, pero no hay ninguna evidencia técnica que lo confirme. El tag `arxiv:1910.09700` hace referencia al artículo "Machine Learning Impact calculator" de Lacoste et al., que trata sobre estimación de emisiones de carbono en entrenamiento de modelos, no sobre el modelo en sí. No se dispone de información sobre arquitectura, parámetros, entrenamiento, capacidades o licencia. En su estado actual, este repositorio no puede considerarse un modelo utilizable ni evaluable.
 
@@ -25,7 +25,7 @@ No se ha publicado ninguna información sobre la arquitectura del modelo, los da
 
 ## Capacidades
 
-No se dispone de información sobre las capacidades del modelo. No se puede confirmar si es capaz de generar texto, razonar, escribir código, realizar tool calling, actuar como agente, o procesar vision o audio. El tag `endpoints_compatible` sugiere que el repositorio podría ser compatible con la infraestructura de endpoints de HuggingFace, pero esto no implica ninguna capacidad funcional específica.
+No se dispone de información sobre las capacidades del modelo. No se puede confirmar si es capaz de generar texto, razonar, escribir código, realizar tool calling, actuar como agente, o procesar vision o audio. El tag `endpoints_compatible` sugiere que el repositorio podría ser compatible con la infraestructura de endpoints de Hugging Face, pero esto no implica ninguna capacidad funcional específica.
 
 ## Casos de uso
 
@@ -54,5 +54,5 @@ No disponible. No se puede establecer una comparativa con otros modelos de la mi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nebaee/stage2_attack_type
+- Repositorio en Hugging Face: https://huggingface.co/Nebaee/stage2_attack_type
 - Paper referenciado en los tags (no relacionado con el modelo): https://arxiv.org/abs/1910.09700

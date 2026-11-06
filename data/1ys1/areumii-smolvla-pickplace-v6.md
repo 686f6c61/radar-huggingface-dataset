@@ -78,7 +78,7 @@ Este modelo es significativamente más ligero que OpenVLA (450M vs 7B), lo que p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/1ys1/areumii-smolvla-pickplace-v6
+- Repositorio Hugging Face: https://huggingface.co/1ys1/areumii-smolvla-pickplace-v6
 - Dataset de entrenamiento: https://huggingface.co/datasets/1ys1/areumii_pickplace_v7
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844

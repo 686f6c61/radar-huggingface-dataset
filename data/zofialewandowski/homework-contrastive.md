@@ -70,5 +70,5 @@ No disponible. No existen modelos comparables en el ecosistema con 24.832 parám
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Zofialewandowski/homework-contrastive
+- Repositorio Hugging Face: https://huggingface.co/Zofialewandowski/homework-contrastive
 - Perfil del autor: https://huggingface.co/Zofialewandowski

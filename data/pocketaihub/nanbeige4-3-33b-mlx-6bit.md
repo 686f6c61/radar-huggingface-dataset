@@ -70,9 +70,9 @@ El hardware de medición fue un Apple M5 Max con 128 GiB de memoria unificada, c
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B-MLX-6bit (este) | 33,1 B | 512K (teórico), ~8K validado | 6-bit MLX, group size 64 | Apache 2.0 | HuggingFace, 26,9 GB |
-| Nanbeige/Nanbeige4.3-33B (original) | 33,1 B | 512K (teórico) | BF16 | Apache 2.0 | HuggingFace |
-| Qwen2.5-32B-Instruct | 32,5 B | 128K | BF16 y cuantizaciones comunitarias (GGUF, AWQ, GPTQ) | Apache 2.0 (variantes base) | HuggingFace, amplio ecosistema |
+| Nanbeige4.3-33B-MLX-6bit (este) | 33,1 B | 512K (teórico), ~8K validado | 6-bit MLX, group size 64 | Apache 2.0 | Hugging Face, 26,9 GB |
+| Nanbeige/Nanbeige4.3-33B (original) | 33,1 B | 512K (teórico) | BF16 | Apache 2.0 | Hugging Face |
+| Qwen2.5-32B-Instruct | 32,5 B | 128K | BF16 y cuantizaciones comunitarias (GGUF, AWQ, GPTQ) | Apache 2.0 (variantes base) | Hugging Face, amplio ecosistema |
 
 Nota: la comparativa con Qwen2.5-32B es orientativa, como modelo de tamaño similar con soporte chino-inglés; no hay datos de rendimiento comparativo directo en la información disponible.
 

@@ -87,7 +87,7 @@ La comparativa con alternativas de la misma categoria queda limitada a la relaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-swamiji-en-sft-lr1e-5-3ep
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-swamiji-en-sft-lr1e-5-3ep
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Dataset de ajuste: sw-voice/swamiji-voice-sft-reuse (referenciado en la model card; no se proporciona URL directa)
 - Codigo del experimento: swamiji-tts `research/exp-iterations/08-qwen3-tts/experiments/01-en-full-sft-lr-grid` (referenciado en la model card; no se proporciona URL directa)

@@ -90,7 +90,7 @@ Estos valores no constituyen una evaluación de capacidad y no deben interpretar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nullmega/Mellum2.1-CodeReasoning-Public-v1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Nullmega/Mellum2.1-CodeReasoning-Public-v1-GGUF
 - Modelo base: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking
 - Dataset nvidia/OpenCodeInstruct: https://huggingface.co/datasets/nvidia/OpenCodeInstruct
 - Dataset nvidia/OpenCodeReasoning: https://huggingface.co/datasets/nvidia/OpenCodeReasoning

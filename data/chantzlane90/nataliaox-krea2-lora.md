@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nataliaox-krea2-lora es un adaptador LoRA de bajo rango (rank 32) entrenado sobre el modelo de generacion de imagenes Krea 2, publicado en HuggingFace por el usuario chantzlane90. Su proposito es fijar la apariencia de un personaje ficticio generado por IA, Natalia Ortiz, declarado explicitamente como mayor de edad (21+) y no correspondiente a ninguna persona real. El unico archivo de activacion es la palabra clave `nataliaox`, que debe incluirse en el prompt para que el adaptador aplique la identidad del personaje.
+nataliaox-krea2-lora es un adaptador LoRA de bajo rango (rank 32) entrenado sobre el modelo de generacion de imagenes Krea 2, publicado en Hugging Face por el usuario chantzlane90. Su proposito es fijar la apariencia de un personaje ficticio generado por IA, Natalia Ortiz, declarado explicitamente como mayor de edad (21+) y no correspondiente a ninguna persona real. El unico archivo de activacion es la palabra clave `nataliaox`, que debe incluirse en el prompt para que el adaptador aplique la identidad del personaje.
 
 Tecnicamente, el adaptador se entreno con la herramienta fal-ai/krea-2-trainer durante 1000 pasos y un rango de 32, y las claves de sus pesos fueron renumeradas al prefijo `diffusion_model.*` que espera ComfyUI, con el objetivo declarado de usarse en Sogni. El repositorio ocupa aproximadamente 0,2 GB, lo que es coherente con la naturaleza ligera de un LoRA frente al modelo base completo.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nataliaox-krea2-lora | No disponible (adaptador LoRA rank 32, repo de 0,2 GB) | No aplica | Sin benchmarks publicados | other | HuggingFace |
+| nataliaox-krea2-lora | No disponible (adaptador LoRA rank 32, repo de 0,2 GB) | No aplica | Sin benchmarks publicados | other | Hugging Face |
 | Otros LoRA de personaje para Krea 2 | No disponible | No aplica | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre adaptadores comparables de la misma categoria en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible.
@@ -82,6 +82,6 @@ No se dispone de informacion sobre adaptadores comparables de la misma categoria
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chantzlane90/nataliaox-krea2-lora
+- Hugging Face: https://huggingface.co/chantzlane90/nataliaox-krea2-lora
 - Herramienta de entrenamiento citada: fal-ai/krea-2-trainer (no se ha encontrado enlace directo en la informacion proporcionada)
 - Las busquedas web realizadas no devolvieron ningun resultado relevante sobre el modelo; unicamente aparecieron listados de contenido pornografico sin relacion con el repositorio, por lo que no se incluyen.

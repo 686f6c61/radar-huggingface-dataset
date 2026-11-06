@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`takumiito/coca-experiment-2024` es un repositorio experimental publicado en HuggingFace por el usuario takumiito que contiene una implementación propia de una arquitectura denominada Coca, orientada a tareas de recuperación de información (retrieval). No se trata de un modelo entrenado ni de un checkpoint con capacidades funcionales demostradas: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un checkpoint con benchmarks.
+`takumiito/coca-experiment-2024` es un repositorio experimental publicado en Hugging Face por el usuario takumiito que contiene una implementación propia de una arquitectura denominada Coca, orientada a tareas de recuperación de información (retrieval). No se trata de un modelo entrenado ni de un checkpoint con capacidades funcionales demostradas: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un checkpoint con benchmarks.
 
 El modelo está diseñado a escala "nano", con alrededor de 49.600 parámetros totales según los pesos safetensors, lo que lo sitúa varios órdenes de magnitud por debajo de cualquier modelo de retrieval de uso real. La arquitectura emplea atención de tipo grouped query, fusión multimodal mediante concatenación seguida de un MLP (concat mlp), activación GELU y normalización LayerNorm. El repositorio incluye además los ficheros `pipeline.py`, `config.json` y `training_args.json` que documentan la receta de experimento por defecto.
 
@@ -73,5 +73,5 @@ No disponible. No se dispone de datos de rendimiento ni de capacidades funcional
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/takumiito/coca-experiment-2024
+- Hugging Face: https://huggingface.co/takumiito/coca-experiment-2024
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

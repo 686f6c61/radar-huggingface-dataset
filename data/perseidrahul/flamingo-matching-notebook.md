@@ -77,6 +77,6 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PERSEIDRAHUL/flamingo-matching-notebook
+- Repositorio en Hugging Face: https://huggingface.co/PERSEIDRAHUL/flamingo-matching-notebook
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo, a papers asociados ni a repositorios de codigo relacionados; los resultados devueltos no guardan relacion con este artefacto.

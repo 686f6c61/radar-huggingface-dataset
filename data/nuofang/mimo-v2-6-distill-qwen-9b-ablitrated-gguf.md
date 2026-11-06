@@ -81,10 +81,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nuofang/MiMo-V2.6-Distill-Qwen-9B-Ablitrated-GGUF | ~9B | No disponible | Agéntico, cuantizado GGUF, variante abliterated | No disponible | HuggingFace (0 descargas) |
-| Hikari07jp/MiMo-V2.6-Distill-Qwen-9B-Ablitrated | ~9B | No disponible | Agéntico, variante abliterated sin cuantizar | No disponible | HuggingFace |
-| ggml-org/MiMo-V2.6-Distill-Qwen-9B-GGUF | ~9B | No disponible | Agéntico, cuantización GGUF del modelo original sin abliterar | No disponible | HuggingFace |
-| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B | ~9B | No disponible | Agéntico, checkpoint de SFT sobre Qwen3.5-9B | No disponible en las fuentes consultadas | ModelScope, HuggingFace |
+| nuofang/MiMo-V2.6-Distill-Qwen-9B-Ablitrated-GGUF | ~9B | No disponible | Agéntico, cuantizado GGUF, variante abliterated | No disponible | Hugging Face (0 descargas) |
+| Hikari07jp/MiMo-V2.6-Distill-Qwen-9B-Ablitrated | ~9B | No disponible | Agéntico, variante abliterated sin cuantizar | No disponible | Hugging Face |
+| ggml-org/MiMo-V2.6-Distill-Qwen-9B-GGUF | ~9B | No disponible | Agéntico, cuantización GGUF del modelo original sin abliterar | No disponible | Hugging Face |
+| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B | ~9B | No disponible | Agéntico, checkpoint de SFT sobre Qwen3.5-9B | No disponible en las fuentes consultadas | ModelScope, Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la información proporcionada.
 
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nuofang/MiMo-V2.6-Distill-Qwen-9B-Ablitrated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/nuofang/MiMo-V2.6-Distill-Qwen-9B-Ablitrated-GGUF
 - Modelo base: https://huggingface.co/Hikari07jp/MiMo-V2.6-Distill-Qwen-9B-Ablitrated
 - Modelo raíz en ModelScope: https://www.modelscope.cn/models/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Cuantización GGUF del modelo original: https://huggingface.co/ggml-org/MiMo-V2.6-Distill-Qwen-9B-GGUF

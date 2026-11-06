@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ducvh5/wan21-a5b5x4c5-tf-fm-u5-qt-fw-hd-item-wanneg` es un checkpoint derivado de Wan2.1-T2V-1.3B-Diffusers, el modelo de generacion de video texto-a-video de 1.300 millones de parametros publicado por Wan-AI (Alibaba). Se trata de un ajuste fino (finetune) sobre esa base, orientado a la sintesis de video a partir de descripciones textuales, y publicado por el usuario ducvh5 en HuggingFace en noviembre de 2026.
+El modelo `ducvh5/wan21-a5b5x4c5-tf-fm-u5-qt-fw-hd-item-wanneg` es un checkpoint derivado de Wan2.1-T2V-1.3B-Diffusers, el modelo de generacion de video texto-a-video de 1.300 millones de parametros publicado por Wan-AI (Alibaba). Se trata de un ajuste fino (finetune) sobre esa base, orientado a la sintesis de video a partir de descripciones textuales, y publicado por el usuario ducvh5 en Hugging Face en noviembre de 2026.
 
 La nomenclatura del identificador y las etiquetas de la model card revelan que se ha aplicado una reestructuracion de bloques del transformer: el esquema "A5 → B5×4 → C5" indica 15 bloques unicos que se ejecutan 30 veces, es decir, una arquitectura de transformer recurrente (recurrent-transformer) en la que determinados bloques se comparten y se reutilizan en pasadas sucesivas. El entrenamiento combino perdida de teacher forcing (TF) y flow matching (FM), con un muestreo de sigma uniforme en (0,1), shift de 5 y t = 1000 sigma.
 
@@ -79,5 +79,5 @@ No se dispone de datos de rendimiento comparativo entre esta variante y su model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tf-fm-u5-qt-fw-hd-item-wanneg
+- Hugging Face: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tf-fm-u5-qt-fw-hd-item-wanneg
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers

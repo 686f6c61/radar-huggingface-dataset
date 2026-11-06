@@ -104,7 +104,7 @@ La comparacion directa con alternativas de ASR en sueco fuera del ecosistema Kla
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/moonhouse/pianissimo-sv-mlx
+- Repositorio Hugging Face: https://huggingface.co/moonhouse/pianissimo-sv-mlx
 - Modelo base: https://huggingface.co/KlangAI/pianissimo-sv
 - Libreria de inferencia `parakeet-mlx`: https://github.com/senstella/parakeet-mlx
 - Dataset de evaluacion `KlangAI/klang-dialects`: https://huggingface.co/datasets/KlangAI/klang-dialects

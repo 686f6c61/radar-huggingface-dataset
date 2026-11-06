@@ -72,9 +72,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otras evaluaciones e
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SriGoli0123/Qwen3-4B-Base-GRPO-641644 | 4.022.468.096 | No disponible | GRPO sobre DAPO Math 17K | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-4B-Base | No disponible (familia 4B) | No disponible | Preentrenamiento base | No disponible en la información | HuggingFace |
-| SriGoli0123/Qwen3-4B-Base-MSJ-GRPO-DAPO17K | No disponible (mismo base Qwen3-4B-Base) | No disponible | GRPO + SFT condicionado a errores | No disponible en la información | HuggingFace |
+| SriGoli0123/Qwen3-4B-Base-GRPO-641644 | 4.022.468.096 | No disponible | GRPO sobre DAPO Math 17K | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-4B-Base | No disponible (familia 4B) | No disponible | Preentrenamiento base | No disponible en la información | Hugging Face |
+| SriGoli0123/Qwen3-4B-Base-MSJ-GRPO-DAPO17K | No disponible (mismo base Qwen3-4B-Base) | No disponible | GRPO + SFT condicionado a errores | No disponible en la información | Hugging Face |
 
 No se han publicado datos de rendimiento comparativos entre estos modelos en la información disponible. La comparación se limita a procedencia, configuración de entrenamiento y disponibilidad.
 
@@ -94,7 +94,7 @@ No se han publicado datos de rendimiento comparativos entre estos modelos en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SriGoli0123/Qwen3-4B-Base-GRPO-641644
+- Modelo en Hugging Face: https://huggingface.co/SriGoli0123/Qwen3-4B-Base-GRPO-641644
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Variante MSJ-GRPO: https://huggingface.co/SriGoli0123/Qwen3-4B-Base-MSJ-GRPO-DAPO17K
 - Dataset DAPO Math 17K: https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k

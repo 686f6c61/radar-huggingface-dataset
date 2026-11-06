@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Themis VL 2B es un modelo multimodal de 2.246.880.064 parámetros desarrollado por el usuario lothnic, publicado en HuggingFace bajo licencia Apache 2.0. No es un modelo generativo al uso: se trata de un modelo de decisión tipada ("typed decisions") que recibe un caso —un estado textual, hasta dos imágenes o ambos— junto con un conjunto de preguntas con sus opciones, y devuelve en una sola pasada forward una distribución de probabilidad por pregunta, sin generar ni parsear texto de respuesta.
+Themis VL 2B es un modelo multimodal de 2.246.880.064 parámetros desarrollado por el usuario lothnic, publicado en Hugging Face bajo licencia Apache 2.0. No es un modelo generativo al uso: se trata de un modelo de decisión tipada ("typed decisions") que recibe un caso —un estado textual, hasta dos imágenes o ambos— junto con un conjunto de preguntas con sus opciones, y devuelve en una sola pasada forward una distribución de probabilidad por pregunta, sin generar ni parsear texto de respuesta.
 
 El modelo parte del backbone Qwen3.5-2B (decoder de texto de 24 capas más su torre de visión), que permanece congelado, y añade un encoder de decisión, capas LoRA y un readout de respuestas de 255 × 2.048. Soporta tres tipos de pregunta: `choice` (conjunto de opciones con nombre y descripción), `noul` (sí/no) y `score` (niveles ordenados). El contexto renderizado es de 4.096 tokens, incluyendo caso, preguntas, opciones, plantilla y tokens de imagen.
 
@@ -69,8 +69,8 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 | Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Themis VL 2B (lothnic) | 2.246.880.064 (33,6 M en adaptadores) | 4.096 tokens renderizados | Distribución de probabilidad por pregunta tipada | Apache 2.0 | HuggingFace, checkpoint completo, código custom |
-| Qwen3.5-2B (modelo base) | No disponible en la informacion proporcionada (es el backbone del anterior, decoder de 24 capas) | No disponible | Texto generado (modelo generativo de propósito general) | No disponible en la informacion proporcionada | HuggingFace (`Qwen/Qwen3.5-2B`) |
+| Themis VL 2B (lothnic) | 2.246.880.064 (33,6 M en adaptadores) | 4.096 tokens renderizados | Distribución de probabilidad por pregunta tipada | Apache 2.0 | Hugging Face, checkpoint completo, código custom |
+| Qwen3.5-2B (modelo base) | No disponible en la informacion proporcionada (es el backbone del anterior, decoder de 24 capas) | No disponible | Texto generado (modelo generativo de propósito general) | No disponible en la informacion proporcionada | Hugging Face (`Qwen/Qwen3.5-2B`) |
 | Alternativas de clasificación con encoder tipo BERT | No disponible | No disponible | Etiqueta o logits sobre vocabulario fijo | No disponible | No disponible |
 
 La diferencia funcional clave frente al modelo base es que Themis no genera texto: fija las opciones en tiempo de inferencia y devuelve probabilidades calibradas, lo que evita el parseo de salidas. No se han identificado en la información disponible otros modelos de decisión multimodal de tamaño comparable para establecer una comparación cuantitativa.
@@ -92,9 +92,9 @@ La diferencia funcional clave frente al modelo base es que Themis no genera text
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lothnic/themis-vl-2b
+- Modelo en Hugging Face: https://huggingface.co/lothnic/themis-vl-2b
 - Perfil del autor: https://huggingface.co/lothnic
 - Dataset de ajuste: https://huggingface.co/datasets/lothnic/themis-decision-mixture-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
-- Ficheros LICENSE y NOTICE: disponibles en el propio repositorio de HuggingFace (https://huggingface.co/lothnic/themis-vl-2b)
+- Ficheros LICENSE y NOTICE: disponibles en el propio repositorio de Hugging Face (https://huggingface.co/lothnic/themis-vl-2b)
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada.

@@ -70,8 +70,8 @@ No se dispone de datos suficientes para comparar con otros modelos de la misma c
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (base) | 125B total, 6B activos | no disponible | safetensors (BF16/FP8) | qwen-community-1.0 | HuggingFace |
-| Qwen3.8-Flash-Next-ROCmFP4-FAST-GGUF (este) | 125B total, 6B activos | no disponible | GGUF (ROCmFP4/ROCmFPX) | qwen-community-1.0 | HuggingFace |
+| Qwen3.8-Flash-Next (base) | 125B total, 6B activos | no disponible | safetensors (BF16/FP8) | qwen-community-1.0 | Hugging Face |
+| Qwen3.8-Flash-Next-ROCmFP4-FAST-GGUF (este) | 125B total, 6B activos | no disponible | GGUF (ROCmFP4/ROCmFPX) | qwen-community-1.0 | Hugging Face |
 | Qwen3.8-27B (otro modelo de la serie) | 27B | no disponible | no disponible | no disponible | no disponible |
 
 No se han encontrado otras cuantizaciones GGUF de Qwen3.8-Flash-Next en la informacion proporcionada.
@@ -88,7 +88,7 @@ No se han encontrado otras cuantizaciones GGUF de Qwen3.8-Flash-Next en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-ROCmFP4-FAST-GGUF
+- Modelo en Hugging Face: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-ROCmFP4-FAST-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - PR de llama.cpp para arquitectura qwen4exp: https://github.com/ggml-org/llama.cpp/pull/27742
 - Repositorio ROCmFPX: https://github.com/ciru-ai/ROCmFPX

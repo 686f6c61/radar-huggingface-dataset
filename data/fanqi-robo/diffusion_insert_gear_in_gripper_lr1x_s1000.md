@@ -92,11 +92,11 @@ No se dispone de datos comparativos con otras politicas en la informacion propor
 - Sesgos: no se documenta ningun analisis de sesgo, demografico ni de dominio. El dataset procede de un unico entorno de recogida, por lo que el modelo hereda sus sesgos de posicion, iluminacion y objetos.
 - Idiomas y alucinacion linguistica: no aplican, al no ser un modelo de lenguaje.
 - Cifras de parametros discrepantes: el archivo safetensors reporta 293.206.638 parametros y la model card 293.174.382; la diferencia no se explica en la documentacion.
-- Trazabilidad: las fechas de creacion y actualizacion del repositorio (2026-10-10) son las registradas por HuggingFace; no se dispone de mas contexto sobre el estado del proyecto.
+- Trazabilidad: las fechas de creacion y actualizacion del repositorio (2026-10-10) son las registradas por Hugging Face; no se dispone de mas contexto sobre el estado del proyecto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fanqi-robo/diffusion_insert_gear_in_gripper_lr1x_s1000
+- Modelo en Hugging Face: https://huggingface.co/fanqi-robo/diffusion_insert_gear_in_gripper_lr1x_s1000
 - Dataset de entrenamiento: https://huggingface.co/datasets/fanqi-robo/insert_gear_in_gripper
 - Dataset de validacion: https://huggingface.co/datasets/villekuosmanen/insert_gear_in_gripper_val
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/fanqi-robo-saferobotics/insert_gear_in_gripper_benchmark/runs/r4urrden

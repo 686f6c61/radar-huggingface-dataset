@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sareddy1/dino-classification-notes` es un repositorio de HuggingFace que contiene una implementación propia y compacta en PyTorch de una arquitectura tipo DINO orientada a tareas de clasificación. No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como un artefacto para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, con una configuración "tiny".
+`sareddy1/dino-classification-notes` es un repositorio de Hugging Face que contiene una implementación propia y compacta en PyTorch de una arquitectura tipo DINO orientada a tareas de clasificación. No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como un artefacto para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, con una configuración "tiny".
 
 El repositorio incluye `train.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta de experimento por defecto y `model.safetensors`, un checkpoint de inicialización válido para pruebas pero que no ha sido entrenado ni evaluado. El número total de parámetros registrado en el checkpoint es de solo 16.576, lo que confirma que se trata de un modelo de escala mínima, sin capacidades generativas ni de razonamiento.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo e incluso en CPU sin aceleración.
 - Opciones de despliegue: al ser una implementación propia, requiere un adaptador explícito para APIs de carga automática; no se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, y no se publican pesos en GGUF.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
-- Almacenamiento: el repositorio ocupa 0,0 GB según los metadatos de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB según los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -88,6 +88,6 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sareddy1/dino-classification-notes
+- Hugging Face: https://huggingface.co/sareddy1/dino-classification-notes
 - Búsqueda web: no se encontraron resultados relevantes sobre este modelo; los resultados devueltos correspondían a recetas de ensalada griega y no guardan relación con el repositorio.
 - No se han proporcionado enlaces a papers, blogs, repositorios de código adicionales ni demos.

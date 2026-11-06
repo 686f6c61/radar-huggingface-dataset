@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Refusal-Classifier-v2 es un modelo de clasificación de texto derivado de answerdotai/ModernBERT-base mediante fine-tuning, desarrollado por el usuario VINAY-UMRETHE y publicado en HuggingFace. Su función es determinar, a partir de un par prompt-respuesta, si un LLM ha respondido de forma conforme a la petición o si, por el contrario, ha rehusado total o parcialmente, ha alegado una limitación de capacidades o ha solicitado una aclaración. Clasifica cada par en una de cinco etiquetas: `compliant`, `full_refusal`, `partial_refusal`, `capability_limitation` y `clarification`.
+Refusal-Classifier-v2 es un modelo de clasificación de texto derivado de answerdotai/ModernBERT-base mediante fine-tuning, desarrollado por el usuario VINAY-UMRETHE y publicado en Hugging Face. Su función es determinar, a partir de un par prompt-respuesta, si un LLM ha respondido de forma conforme a la petición o si, por el contrario, ha rehusado total o parcialmente, ha alegado una limitación de capacidades o ha solicitado una aclaración. Clasifica cada par en una de cinco etiquetas: `compliant`, `full_refusal`, `partial_refusal`, `capability_limitation` y `clarification`.
 
 El modelo resuelve un problema concreto en el ámbito de la evaluación y monitorización de sistemas conversacionales: la detección automática de rechazos (refusals) para auditar el comportamiento de asistentes, medir tasas de sobre-rechazo o filtrar respuestas en pipelines de datos. Al estar construido sobre ModernBERT, aprovecha una arquitectura transformer encoder-only con atención optimizada y una ventana de contexto de 8.192 tokens, lo que permite procesar pares prompt-respuesta largos sin truncamiento agresivo.
 
@@ -23,7 +23,7 @@ Con 149,6 millones de parámetros y un tamaño de repositorio de 0,6 GB, es un m
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de answerdotai/ModernBERT-base, un transformer encoder-only que incorpora innovaciones como atención con rotación posicional (RoPE), alternancia de atención local y global, y capas de embedding desacopladas. Sobre esta base se ha aplicado un fine-tuning de clasificación de secuencias con cinco clases de salida, usando la librería `transformers` y el `Trainer` de HuggingFace. La entrada es un par de secuencias (prompt y respuesta) codificadas mediante `text_pair`, y la salida es una distribución softmax sobre las cinco etiquetas.
+El modelo parte de answerdotai/ModernBERT-base, un transformer encoder-only que incorpora innovaciones como atención con rotación posicional (RoPE), alternancia de atención local y global, y capas de embedding desacopladas. Sobre esta base se ha aplicado un fine-tuning de clasificación de secuencias con cinco clases de salida, usando la librería `transformers` y el `Trainer` de Hugging Face. La entrada es un par de secuencias (prompt y respuesta) codificadas mediante `text_pair`, y la salida es una distribución softmax sobre las cinco etiquetas.
 
 El entrenamiento se realizó sobre una partición 80/10/10 del dataset (no se especifica el número total de ejemplos ni su composición). La selección del checkpoint se hizo maximizando el macro F1 de validación, que alcanzó 0,9937 en el paso 1800. No se documenta el uso de RLHF, DPO ni técnicas de alineación adicionales; se trata de un ajuste supervisado estándar de clasificación. Tampoco se detalla la composición del dataset, la procedencia de los datos ni si hubo aumento de datos o balanceo de clases.
 
@@ -85,8 +85,8 @@ No se dispone de información sobre modelos comparables de detección de rechazo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Refusal-Classifier-v2 | 149,6 M | 8.192 tokens | Clasificación de rechazos (5 clases) | no disponible | HuggingFace |
-| answerdotai/ModernBERT-base | no disponible en la información | no disponible en la información | Encoder base (masked LM) | no disponible | HuggingFace |
+| Refusal-Classifier-v2 | 149,6 M | 8.192 tokens | Clasificación de rechazos (5 clases) | no disponible | Hugging Face |
+| answerdotai/ModernBERT-base | no disponible en la información | no disponible en la información | Encoder base (masked LM) | no disponible | Hugging Face |
 
 No se conocen alternativas específicas de clasificación de rechazos en la información disponible.
 
@@ -104,6 +104,6 @@ No se conocen alternativas específicas de clasificación de rechazos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VINAY-UMRETHE/Refusal-Classifier-v2
+- Modelo en Hugging Face: https://huggingface.co/VINAY-UMRETHE/Refusal-Classifier-v2
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - Curvas de entrenamiento (Trackio Space): https://huggingface.co/spaces/VINAY-UMRETHE/Refusal-Classifier-v2-trackio

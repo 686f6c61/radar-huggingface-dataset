@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `ikasumipasuta/ikasumipasuta` en HuggingFace no contiene información técnica publicada. La model card se limita a una línea con la licencia (`unlicense`) y no incluye descripción, arquitectura, parámetros, ni ningún otro dato relevante. El modelo registra cero descargas y cero likes, y su fecha de creación es posterior a la actual (2026-08-18), lo que sugiere que podría tratarse de un repositorio vacío, un error de publicación o un espacio reservado sin contenido real.
+El repositorio `ikasumipasuta/ikasumipasuta` en Hugging Face no contiene información técnica publicada. La model card se limita a una línea con la licencia (`unlicense`) y no incluye descripción, arquitectura, parámetros, ni ningún otro dato relevante. El modelo registra cero descargas y cero likes, y su fecha de creación es posterior a la actual (2026-08-18), lo que sugiere que podría tratarse de un repositorio vacío, un error de publicación o un espacio reservado sin contenido real.
 
-Las búsquedas web asociadas al nombre de usuario `ikasumipasuta` conducen a perfiles personales en GitHub, TikTok, Instagram y a un modelo de arte en PixAI, pero ninguno de estos enlaces aporta información técnica sobre un modelo de IA en HuggingFace. En consecuencia, no es posible evaluar capacidades, rendimiento, requisitos de hardware ni casos de uso. Esta ficha documenta la ausencia de datos y advierte de que cualquier uso del repositorio sería especulativo.
+Las búsquedas web asociadas al nombre de usuario `ikasumipasuta` conducen a perfiles personales en GitHub, TikTok, Instagram y a un modelo de arte en PixAI, pero ninguno de estos enlaces aporta información técnica sobre un modelo de IA en Hugging Face. En consecuencia, no es posible evaluar capacidades, rendimiento, requisitos de hardware ni casos de uso. Esta ficha documenta la ausencia de datos y advierte de que cualquier uso del repositorio sería especulativo.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ No disponible. Al carecer de especificaciones técnicas, no se puede establecer 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ikasumipasuta/ikasumipasuta
+- Repositorio Hugging Face: https://huggingface.co/ikasumipasuta/ikasumipasuta
 - Perfil GitHub del autor: https://github.com/ikasumipasuta/
 - Perfil TikTok (no relacionado con el modelo): https://www.tiktok.com/@ikasumipasuta_
 - Perfil Instagram (no relacionado con el modelo): https://www.instagram.com/ikasumipasuta/

@@ -107,7 +107,7 @@ Ventaja estructural de DFlash2 frente a los borradores autoregresivos clásicos:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3ntr0py-t4m3r/Ornith-1.5-DFlash2-Draft-GGUF
+- Modelo en Hugging Face: https://huggingface.co/3ntr0py-t4m3r/Ornith-1.5-DFlash2-Draft-GGUF
 - Modelo base: https://huggingface.co/z-lab/Qwen3.6-35B-A3B-DFlash
 - llama.cpp (repositorio, backend `draft-dflash`): https://github.com/ggml-org/llama.cpp
 - Dataset del blend planificado: https://huggingface.co/datasets/mlabonne/open-perfectblend

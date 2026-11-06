@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`student-performance-predictor` es un artefacto publicado en HuggingFace por el usuario authenticjutt bajo licencia MIT. Por los metadatos disponibles (formato `joblib`, ausencia de pipeline declarado, repositorio de 0.0 GB y model card prácticamente vacía), no se trata de un modelo de lenguaje ni de una red neuronal profunda, sino de un modelo clasico de machine learning serializado con scikit-learn o una libreria compatible, presumiblemente orientado a predecir el rendimiento academico de estudiantes a partir de variables tabulares.
+`student-performance-predictor` es un artefacto publicado en Hugging Face por el usuario authenticjutt bajo licencia MIT. Por los metadatos disponibles (formato `joblib`, ausencia de pipeline declarado, repositorio de 0.0 GB y model card prácticamente vacía), no se trata de un modelo de lenguaje ni de una red neuronal profunda, sino de un modelo clasico de machine learning serializado con scikit-learn o una libreria compatible, presumiblemente orientado a predecir el rendimiento academico de estudiantes a partir de variables tabulares.
 
 La informacion publica es extremadamente escasa: no se declaran parametros, arquitectura, conjunto de datos de entrenamiento, variables de entrada ni metricas. La model card solo contiene la linea `license: mit`, sin descripcion, sin ejemplos de uso y sin documentacion del esquema de features. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica que es un artefacto de publicacion reciente y sin adopcion comunitaria.
 
@@ -74,5 +74,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/authenticjutt/student-performance-predictor
+- Hugging Face: https://huggingface.co/authenticjutt/student-performance-predictor
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

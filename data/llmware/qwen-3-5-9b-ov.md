@@ -4,7 +4,7 @@
 
 ## Resumen
 
-llmware/qwen-3.5-9b-ov es una publicacion de pesos alojada por el usuario llmware en HuggingFace, distribuida bajo licencia Apache 2.0 y etiquetada con las etiquetas `openvino`, `qwen3_5` y `region:us`. Por el identificador y las etiquetas, se trata de una conversion a formato OpenVINO IR de un modelo de la familia Qwen 3.5 con aproximadamente 9.000 millones de parametros, orientada a la ejecucion optimizada sobre hardware Intel (CPU, iGPU, GPU Arc y aceleradores). El repositorio ocupa 6,1 GB, un tamano coherente con pesos cuantizados en precision reducida, no con un checkpoint en fp16 (que rondaria los 18 GB para 9B parametros).
+llmware/qwen-3.5-9b-ov es una publicacion de pesos alojada por el usuario llmware en Hugging Face, distribuida bajo licencia Apache 2.0 y etiquetada con las etiquetas `openvino`, `qwen3_5` y `region:us`. Por el identificador y las etiquetas, se trata de una conversion a formato OpenVINO IR de un modelo de la familia Qwen 3.5 con aproximadamente 9.000 millones de parametros, orientada a la ejecucion optimizada sobre hardware Intel (CPU, iGPU, GPU Arc y aceleradores). El repositorio ocupa 6,1 GB, un tamano coherente con pesos cuantizados en precision reducida, no con un checkpoint en fp16 (que rondaria los 18 GB para 9B parametros).
 
 El problema que resuelve es el de facilitar el despliegue de un modelo de ~9B en entornos Intel sin necesidad de convertir manualmente los pesos a OpenVINO: el artefacto ya viene en el formato que consumen OpenVINO Runtime, Optimum Intel y GenAI, lo que reduce el trabajo de integracion en produccion. La relevancia es practica mas que cientifica, ya que no se documenta ningun entrenamiento nuevo.
 
@@ -88,12 +88,12 @@ No se dispone de datos de rendimiento comparativo para el modelo de esta ficha, 
 - Modelo base no confirmado: no consta de que checkpoint exacto de Qwen 3.5 procede esta conversion.
 - Riesgo de alucinacion: no evaluado; al no haber benchmarks publicados, no se puede estimar la fiabilidad factual.
 - Sesgos: desconocidos, al no documentarse la composicion del dataset de entrenamiento.
-- Limitaciones de contexto e idioma: no disponibles; el campo de idiomas esta vacio en la ficha de HuggingFace.
+- Limitaciones de contexto e idioma: no disponibles; el campo de idiomas esta vacio en la ficha de Hugging Face.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base subyacente, que no se especifica.
 - Formato especifico: al estar en OpenVINO IR, no es directamente cargable en frameworks que esperan safetensors o GGUF; requiere OpenVINO para su ejecucion.
 - Adopcion muy baja: el repositorio registra 3 descargas y 0 "likes", lo que implica escasa validacion por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/llmware/qwen-3.5-9b-ov
+- Hugging Face: https://huggingface.co/llmware/qwen-3.5-9b-ov
 - No se han encontrado papers, blogs, repositorios ni demos relevantes en la busqueda web proporcionada (los resultados obtenidos no guardan relacion con el modelo).

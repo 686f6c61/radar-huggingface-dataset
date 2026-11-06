@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `my-little-jarvis-plus-dist-202607`, desarrollado por el usuario mingu4969, se presenta como un modelo de inteligencia artificial cuyo nombre sugiere una versión destilada de un asistente tipo "Jarvis" con capacidades ampliadas. Sin embargo, la información pública disponible en HuggingFace es extremadamente limitada: no se especifican la arquitectura, el número de parámetros, la licencia ni los idiomas soportados. El repositorio tiene un tamaño de 0,3 GB, lo que indica un modelo relativamente pequeño, probablemente adecuado para inferencia en hardware de consumo. Creado en julio de 2026 y actualizado en agosto del mismo año, el modelo no ha registrado descargas y cuenta con un único "like", lo que sugiere que se encuentra en una fase muy temprana de publicación o que su documentación es insuficiente para atraer a la comunidad.
+El modelo `my-little-jarvis-plus-dist-202607`, desarrollado por el usuario mingu4969, se presenta como un modelo de inteligencia artificial cuyo nombre sugiere una versión destilada de un asistente tipo "Jarvis" con capacidades ampliadas. Sin embargo, la información pública disponible en Hugging Face es extremadamente limitada: no se especifican la arquitectura, el número de parámetros, la licencia ni los idiomas soportados. El repositorio tiene un tamaño de 0,3 GB, lo que indica un modelo relativamente pequeño, probablemente adecuado para inferencia en hardware de consumo. Creado en julio de 2026 y actualizado en agosto del mismo año, el modelo no ha registrado descargas y cuenta con un único "like", lo que sugiere que se encuentra en una fase muy temprana de publicación o que su documentación es insuficiente para atraer a la comunidad.
 
 La relevancia actual de este modelo es difícil de evaluar sin datos técnicos concretos. El nombre "jarvis-plus" evoca un asistente conversacional avanzado, y el sufijo "dist" apunta a una destilación, lo que podría implicar un modelo optimizado para despliegue eficiente. No obstante, la ausencia de especificaciones verificables impide realizar un análisis riguroso. Esta ficha se basa exclusivamente en la información proporcionada y marca como "no disponible" todos los campos que no han sido documentados.
 
@@ -64,6 +64,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace: mingu4969/my-little-jarvis-plus-dist-202607](https://huggingface.co/mingu4969/my-little-jarvis-plus-dist-202607)
+- [Hugging Face: mingu4969/my-little-jarvis-plus-dist-202607](https://huggingface.co/mingu4969/my-little-jarvis-plus-dist-202607)
 
 No se han encontrado papers, blogs, repositorios adicionales ni demos relacionados con este modelo en la información proporcionada.

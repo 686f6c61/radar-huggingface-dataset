@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este checkpoint, `ImKyungjin/pi0-stackcube-recovery-noise-v2-seed355-50pct-40ep`, es un modelo de tipo Vision-Language-Action (VLA) destinado al control de robots. Se trata de una adaptación del modelo fundacional π₀ (Pi0), desarrollado por Physical Intelligence, convertida para su uso con la librería LeRobot de HuggingFace. El modelo ha sido afinado sobre un dataset concreto de manipulación de cubos, indicado en el nombre: `stack_cube_recovery_noise_v2_seed355_50pct_40ep`.
+Este checkpoint, `ImKyungjin/pi0-stackcube-recovery-noise-v2-seed355-50pct-40ep`, es un modelo de tipo Vision-Language-Action (VLA) destinado al control de robots. Se trata de una adaptación del modelo fundacional π₀ (Pi0), desarrollado por Physical Intelligence, convertida para su uso con la librería LeRobot de Hugging Face. El modelo ha sido afinado sobre un dataset concreto de manipulación de cubos, indicado en el nombre: `stack_cube_recovery_noise_v2_seed355_50pct_40ep`.
 
 Este modelo resuelve el problema del control de robots basado en aprendizaje por imitación. Combina percepción visual, interpretación de instrucciones en lenguaje natural y generación de acciones para mover un robot. Su relevancia actual radica en la creciente disponibilidad de modelos de robótica de código abierto que pueden afinarse para tareas específicas, lo que permite a investigadores y desarrolladores crear políticas robóticas personalizadas sin partir de cero.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: aproximadamente 7 GB para los pesos en formato bf16 (basado en el tamaño del repo de 7.0 GB), más el espacio adicional para activaciones y buffers de la política; se recomienda disponer de al menos 10 GB de VRAM.
 - GPU recomendadas: RTX 4090 (24 GB) o A100 (40 GB) para inferencia confortable y entrenamiento.
 - Compatible con GPUs de consumo: sí, en modelos como RTX 3090 o RTX 4090 con 24 GB de VRAM.
-- Opciones de despliegue: mediante la librería LeRobot de HuggingFace (`lerobot-train`, `lerobot-record`), que usa PyTorch y CUDA.
+- Opciones de despliegue: mediante la librería LeRobot de Hugging Face (`lerobot-train`, `lerobot-record`), que usa PyTorch y CUDA.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares

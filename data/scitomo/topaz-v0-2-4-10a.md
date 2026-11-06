@@ -68,6 +68,6 @@ No disponible. El modelo es una conversion del checkpoint oficial de Topaz v0.2.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/scitomo/topaz-v0.2.4-10a
+- Hugging Face: https://huggingface.co/scitomo/topaz-v0.2.4-10a
 - Repositorio upstream: https://github.com/tbepler/topaz (revision `c6dde54398875dcc6a210f83de019c9165fb474c`)
 - Fuente de distribucion PyPI (mencionada en la model card, sin URL explicita): no disponible.

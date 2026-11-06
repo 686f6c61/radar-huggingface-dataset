@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Guy-Amit/gemma4-E2B-lora-open-jev es un modelo publicado en HuggingFace por el usuario Guy-Amit, derivado de la familia Gemma y empaquetado como un "flattened decision model" (modelo de decisión aplanado). El repositorio contiene el backbone Gemma fusionado, el tokenizer y las cabeceras de tarea (task heads) necesarias para la inferencia. Se trata de un artefacto de investigación más que de un modelo de propósito general listo para producción: la model card es extremadamente escueta y no documenta el propósito concreto, los datos de entrenamiento ni las condiciones de uso.
+Guy-Amit/gemma4-E2B-lora-open-jev es un modelo publicado en Hugging Face por el usuario Guy-Amit, derivado de la familia Gemma y empaquetado como un "flattened decision model" (modelo de decisión aplanado). El repositorio contiene el backbone Gemma fusionado, el tokenizer y las cabeceras de tarea (task heads) necesarias para la inferencia. Se trata de un artefacto de investigación más que de un modelo de propósito general listo para producción: la model card es extremadamente escueta y no documenta el propósito concreto, los datos de entrenamiento ni las condiciones de uso.
 
 El dato objetivo disponible es el recuento de parámetros en formato safetensors: 5.104.371.011 parámetros (aproximadamente 5,1 mil millones), con un tamaño de repositorio de 10,3 GB. El nombre sugiere un ajuste LoRA sobre una variante "E2B" de Gemma 4, posteriormente fusionado con el backbone base ("merged"), pero esta interpretación no está confirmada por la documentación del autor.
 
@@ -42,7 +42,7 @@ No se dispone de información sobre el número de tokens de entrenamiento, la co
 - Investigación sobre modelos de decisión: el artefacto puede utilizarse para reproducir o auditar la formulación "flattened decision" propuesta por el autor, cargando el backbone junto con `task_heads.pt` y el módulo `modeling_gemma4_flattened.py`.
 - Experimentación con ajustes LoRA fusionados: sirve como ejemplo de pipeline de fusión de adaptadores LoRA sobre un backbone Gemma, útil para estudiar el impacto de la fusión en el rendimiento.
 - Evaluación comparativa de cabeceras de tarea: permite analizar cómo se comportan cabeceras específicas acopladas a un backbone de 5,1 mil millones de parámetros en tareas de clasificación o puntuación.
-- Docencia y formación: útil como caso práctico de repositorio con estructura no estándar (módulo de modelado personalizado más pesos auxiliares) para enseñar a inspeccionar y cargar modelos de HuggingFace.
+- Docencia y formación: útil como caso práctico de repositorio con estructura no estándar (módulo de modelado personalizado más pesos auxiliares) para enseñar a inspeccionar y cargar modelos de Hugging Face.
 - Base para ajuste posterior: al ser un modelo de 5,1 mil millones de parámetros con pesos safetensors, puede servir como punto de partida para fine-tuning en tareas propias, siempre que se resuelvan las incógnitas de licencia.
 - Análisis de seguridad y reproducibilidad: dado que no hay licencia ni documentación, es un buen caso de estudio sobre los riesgos de depender de artefactos no documentados en flujos de producción.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Guy-Amit/gemma4-E2B-lora-open-jev | 5,1 B | no disponible | no disponible | HuggingFace, 0 descargas | Cabeceras de tarea personalizadas, requiere código propio |
-| Gemma 2 2B (Google) | 2,6 B | 8K | Gemma Terms of Use | HuggingFace, ampliamente usado | Modelo base de propósito general, documentado |
-| Gemma 2 9B (Google) | 9,2 B | 8K | Gemma Terms of Use | HuggingFace, ampliamente usado | Modelo base de propósito general, documentado |
-| Qwen2.5 3B (Alibaba) | 3,1 B | 32K | Apache 2.0 | HuggingFace, ampliamente usado | Alternativa de tamaño similar con licencia permisiva |
+| Guy-Amit/gemma4-E2B-lora-open-jev | 5,1 B | no disponible | no disponible | Hugging Face, 0 descargas | Cabeceras de tarea personalizadas, requiere código propio |
+| Gemma 2 2B (Google) | 2,6 B | 8K | Gemma Terms of Use | Hugging Face, ampliamente usado | Modelo base de propósito general, documentado |
+| Gemma 2 9B (Google) | 9,2 B | 8K | Gemma Terms of Use | Hugging Face, ampliamente usado | Modelo base de propósito general, documentado |
+| Qwen2.5 3B (Alibaba) | 3,1 B | 32K | Apache 2.0 | Hugging Face, ampliamente usado | Alternativa de tamaño similar con licencia permisiva |
 
 La comparación es aproximada: no se dispone de datos de rendimiento del modelo de Guy-Amit, y las variantes "E2B" de Gemma 4 no están documentadas en la información proporcionada.
 
@@ -84,7 +84,7 @@ La comparación es aproximada: no se dispone de datos de rendimiento del modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Guy-Amit/gemma4-E2B-lora-open-jev
+- Hugging Face: https://huggingface.co/Guy-Amit/gemma4-E2B-lora-open-jev
 - Módulo de modelado referenciado en la model card: `modeling_gemma4_flattened.py` (incluido en el repositorio)
 - Pesos de cabeceras de tarea: `task_heads.pt` (incluido en el repositorio)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

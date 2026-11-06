@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sandeepkumarsen/forecast18` alojado en HuggingFace contiene un artefacto denominado `summary.md`, que según su model card es un resumen de un artículo académico sobre *visual question answering* (VQA). El autor, Sandeep Kumar, lo etiqueta con términos como `critical`, `empirical-focused`, `structured-imrad` y `latex-arxiv`, lo que sugiere que el contenido es un documento de investigación en formato LaTeX con estructura IMRAD (Introducción, Métodos, Resultados, Discusión) y estilo de citación APA numérico. Sin embargo, no se proporciona ningún detalle sobre la arquitectura del modelo, sus parámetros, datos de entrenamiento o capacidades reales. El pipeline declarado es `visual-question-answering`, pero no hay evidencia de que exista un modelo funcional descargable; el repositorio solo contiene un archivo de texto. La licencia es MIT, pero la ausencia de especificaciones técnicas impide cualquier evaluación seria para uso en producción o investigación.
+El repositorio `sandeepkumarsen/forecast18` alojado en Hugging Face contiene un artefacto denominado `summary.md`, que según su model card es un resumen de un artículo académico sobre *visual question answering* (VQA). El autor, Sandeep Kumar, lo etiqueta con términos como `critical`, `empirical-focused`, `structured-imrad` y `latex-arxiv`, lo que sugiere que el contenido es un documento de investigación en formato LaTeX con estructura IMRAD (Introducción, Métodos, Resultados, Discusión) y estilo de citación APA numérico. Sin embargo, no se proporciona ningún detalle sobre la arquitectura del modelo, sus parámetros, datos de entrenamiento o capacidades reales. El pipeline declarado es `visual-question-answering`, pero no hay evidencia de que exista un modelo funcional descargable; el repositorio solo contiene un archivo de texto. La licencia es MIT, pero la ausencia de especificaciones técnicas impide cualquier evaluación seria para uso en producción o investigación.
 
 ## Especificaciones tecnicas
 
@@ -57,5 +57,5 @@ No disponible. No se conocen modelos comparables porque no hay especificaciones 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sandeepkumarsen/forecast18
+- Repositorio Hugging Face: https://huggingface.co/sandeepkumarsen/forecast18
 - Perfil del autor (Sandeep Kumar): https://sandeepkumar-one.vercel.app/ (no se confirma relación directa con este repositorio)

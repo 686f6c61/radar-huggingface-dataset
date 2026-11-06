@@ -94,7 +94,7 @@ No se dispone de datos para comparar con modelos TTS de terceros (parametros, co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/Humaneness-Voice-Large-Acting
+- Modelo en Hugging Face: https://huggingface.co/laion/Humaneness-Voice-Large-Acting
 - Modelo base (SFT-3 voice-acting): https://huggingface.co/laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3
 - Dataset de entrenamiento (german-english-voice-acting-challenges): https://huggingface.co/datasets/laion/german-english-voice-acting-challenges
 - MOSS Audio Tokenizer v2 (dependencia upstream): https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-v2

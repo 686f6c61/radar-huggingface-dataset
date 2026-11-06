@@ -4,7 +4,7 @@
 
 `ramgpt/pplx-decider-v1-27b-EXL3` es una conversión cuantizada en formato EXL3 a 4,00 bits por peso (bpw) del modelo `perplexity-ai/pplx-decider-v1-27b`, publicada por el usuario ramgpt. No se trata de un modelo de generación de texto convencional: el modelo original es un clasificador/decisor que no utiliza la ruta habitual de generación de tokens con LM head, sino que produce un estado oculto y aplica una cabeza de decisión personalizada (`readout.safetensors`) para obtener probabilidades sobre un conjunto de opciones. Esa particularidad hace que el artefacto incluya un wrapper propio (`pplx_decider_exl3.py`) que registra la arquitectura y ejecuta la lectura de decisión.
 
-La relevancia de esta ficha es doble. Por un lado, documenta un caso poco habitual de cuantización de un modelo que no es un chatbot, con métricas de latencia por decisión en lugar de tokens por segundo. Por otro, el artefacto es explícitamente incompatible con el flujo estándar de servidores como TabbyAPI, ya que su ruta de generación espera un LM head que este modelo no emplea. La model card advierte además de que no debe inferirse el número de parámetros a partir del display automático de HuggingFace, y cita unas 48,6 GiB de pesos BF16 en el checkpoint fuente frente a los 15,35 GB de safetensors de esta conversión.
+La relevancia de esta ficha es doble. Por un lado, documenta un caso poco habitual de cuantización de un modelo que no es un chatbot, con métricas de latencia por decisión en lugar de tokens por segundo. Por otro, el artefacto es explícitamente incompatible con el flujo estándar de servidores como TabbyAPI, ya que su ruta de generación espera un LM head que este modelo no emplea. La model card advierte además de que no debe inferirse el número de parámetros a partir del display automático de Hugging Face, y cita unas 48,6 GiB de pesos BF16 en el checkpoint fuente frente a los 15,35 GB de safetensors de esta conversión.
 
 El modelo fuente se describe como un modelo de decisión ajustado a partir de Qwen3.8-27B, con arquitectura registrada como `Qwen3_5Model`. La cuantización está pensada para ExLlamaV3 1.5.2 y fue validada con una pequeña batería de pruebas sintéticas (43/43) más mediciones de latencia en una RTX 4090 de 24 GB.
 
@@ -13,7 +13,7 @@ El modelo fuente se describe como un modelo de decisión ajustado a partir de Qw
 | Parametro | Valor |
 |---|---|
 | Arquitectura | `Qwen3_5Model` (transformer) con cabeza de decision personalizada (`readout.safetensors`); no usa LM head convencional ni generacion autorregresiva de tokens |
-| Parametros totales | 7.671.246.208 segun los metadatos safetensors del artefacto EXL3. La model card indica que el checkpoint fuente contiene unos 48,6 GiB de pesos BF16 y advierte de no deducir el recuento a partir del display automatico de HuggingFace. El sufijo "27b" del nombre apunta a un modelo de ~27B |
+| Parametros totales | 7.671.246.208 segun los metadatos safetensors del artefacto EXL3. La model card indica que el checkpoint fuente contiene unos 48,6 GiB de pesos BF16 y advierte de no deducir el recuento a partir del display automatico de Hugging Face. El sufijo "27b" del nombre apunta a un modelo de ~27B |
 | Parametros activos | no disponible (no se documenta que sea un modelo MoE) |
 | Longitud de contexto | no disponible. Se han medido entradas de hasta 8.192 tokens en el banco de pruebas del autor, sin especificar el limite maximo |
 | Tipos de cuantizacion | EXL3 a 4,00 bpw (4-bit) exclusivamente |
@@ -103,9 +103,9 @@ No se dispone de datos de modelos comparables de la misma categoría (modelos de
 
 | Modelo | Parametros | Contexto | Precision | Peso en disco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ramgpt/pplx-decider-v1-27b-EXL3 (este) | 7.671.246.208 segun safetensors del artefacto; nombre con sufijo "27b" | no disponible; validado hasta 8.192 tokens | EXL3 4,00 bpw | 15,35 GB / 14,29 GiB | apache-2.0 | HuggingFace, 11 descargas, 0 likes |
-| perplexity-ai/pplx-decider-v1-27b (fuente) | no disponible; ~48,6 GiB de pesos BF16 | no disponible | BF16 | ~48,6 GiB de pesos | no disponible en la informacion | HuggingFace |
-| Otras cuantizaciones del modelo base | no disponible | no disponible | no disponible | no disponible | no disponible | Existe una coleccion de modelos cuantizados del base en HuggingFace |
+| ramgpt/pplx-decider-v1-27b-EXL3 (este) | 7.671.246.208 segun safetensors del artefacto; nombre con sufijo "27b" | no disponible; validado hasta 8.192 tokens | EXL3 4,00 bpw | 15,35 GB / 14,29 GiB | apache-2.0 | Hugging Face, 11 descargas, 0 likes |
+| perplexity-ai/pplx-decider-v1-27b (fuente) | no disponible; ~48,6 GiB de pesos BF16 | no disponible | BF16 | ~48,6 GiB de pesos | no disponible en la informacion | Hugging Face |
+| Otras cuantizaciones del modelo base | no disponible | no disponible | no disponible | no disponible | no disponible | Existe una coleccion de modelos cuantizados del base en Hugging Face |
 | Otros modelos de decision/clasificacion comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -114,7 +114,7 @@ No se dispone de datos de modelos comparables de la misma categoría (modelos de
 - Incompatibilidad con servidores estándar: no funciona en TabbyAPI sin un adaptador dedicado. El registro de la arquitectura por sí solo no es suficiente, porque la ruta estándar de `/v1/chat/completions` espera un LM head.
 - Ausencia de estudios de precisión: no se ha realizado ningún estudio de paridad o precisión BF16 frente a EXL3, por lo que se desconoce la degradación introducida por la cuantización a 4,00 bpw.
 - Validación limitada: las 43/43 pruebas de sanidad son sintéticas y escritas a mano, y las pruebas de contexto largo usan relleno sintético en lugar de un benchmark de razonamiento con contexto largo. No son un benchmark oficial de precisión.
-- Discrepancia en el recuento de parámetros: los metadatos safetensors del artefacto declaran 7.671.246.208 parámetros, mientras que la model card cita ~48,6 GiB de pesos BF16 en el checkpoint fuente y advierte de no deducir el recuento del display automático de HuggingFace. Conviene verificar el tamaño real antes de planificar recursos.
+- Discrepancia en el recuento de parámetros: los metadatos safetensors del artefacto declaran 7.671.246.208 parámetros, mientras que la model card cita ~48,6 GiB de pesos BF16 en el checkpoint fuente y advierte de no deducir el recuento del display automático de Hugging Face. Conviene verificar el tamaño real antes de planificar recursos.
 - Idiomas: no se declara ninguna lista de idiomas soportados, por lo que el comportamiento multilingüe es desconocido.
 - Longitud de contexto: no se documenta el máximo soportado. Las mediciones llegan a 8.192 tokens, pero no se garantiza que sea el límite.
 - Riesgo de error en la decisión: al ser un clasificador, el modo de fallo no es la alucinación de texto, sino la asignación de una opción incorrecta o una calibración deficiente de las probabilidades. No se aportan datos de calibración.
@@ -124,7 +124,7 @@ No se dispone de datos de modelos comparables de la misma categoría (modelos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ramgpt/pplx-decider-v1-27b-EXL3
+- Modelo en Hugging Face: https://huggingface.co/ramgpt/pplx-decider-v1-27b-EXL3
 - Modelo base: https://huggingface.co/perplexity-ai/pplx-decider-v1-27b
 - Coleccion de modelos cuantizados del base: https://huggingface.co/models?other=base_model:quantized:perplexity-ai/pplx-decider-v1-27b
 - Revision del checkpoint fuente citada en la model card: `5117a6c7fe73b19308dc1a6b0fb529a40c2ecad4`

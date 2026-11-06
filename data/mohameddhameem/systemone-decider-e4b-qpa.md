@@ -75,7 +75,7 @@ En el umbral publicado (0.5054), la seed 0 en test obtiene 65,70% de precision c
 ## Comparativa con modelos similares
 | Modelo | Tipo | Parametros | Contexto | AIQ (HotpotQA SLR) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SystemOne-Decider E4B qpa (seed 0) | Router aprendido (LoRA + pointer head) | E4B + LoRA r=48 | no disponible | 0.706 (0.655 con coste propio) | apache-2.0 | HuggingFace + GitHub |
+| SystemOne-Decider E4B qpa (seed 0) | Router aprendido (LoRA + pointer head) | E4B + LoRA r=48 | no disponible | 0.706 (0.655 con coste propio) | apache-2.0 | Hugging Face + GitHub |
 | Umbral de entropia sobre Qwen2.5-1.5B | Heuristica | 1.5B | no disponible | 0.665 | no aplica | implementacion propia |
 | Router de regresion logistica en cascada | Clasificador lineal | no disponible | no disponible | 0.676 | no aplica | implementacion propia |
 | Mejor router de regresion logistica en el mismo punto | Clasificador lineal | no disponible | no disponible | 0.681 | no aplica | implementacion propia |
@@ -92,7 +92,7 @@ En el umbral publicado (0.5054), la seed 0 en test obtiene 65,70% de precision c
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay validacion independiente por parte de la comunidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/mohameddhameem/systemone-decider-e4b-qpa
+- Modelo en Hugging Face: https://huggingface.co/mohameddhameem/systemone-decider-e4b-qpa
 - Modelo base Strands Decider E4B: https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610
 - Modelo base de Google: https://huggingface.co/google/gemma-4-E4B-it
 - Codigo (PairRouter): https://github.com/mohameddhameem/systemone-decider

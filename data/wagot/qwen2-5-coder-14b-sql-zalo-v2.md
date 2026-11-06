@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Wagot/qwen2.5-coder-14b-sql-zalo-v2 es un modelo publicado en HuggingFace por el usuario Wagot, cuyo nombre sugiere un ajuste fino (fine-tuning) del modelo base Qwen2.5-Coder-14B orientado a tareas de generacion de SQL y, presumiblemente, a un dominio o producto denominado "zalo". El repositorio tiene un tamano de 0,3 GB, lo que resulta llamativamente pequeno para un modelo de 14 000 millones de parametros en precision completa, y apunta a que el contenido publicado podria ser un adaptador LoRA, una version cuantizada o un checkpoint incompleto.
+Wagot/qwen2.5-coder-14b-sql-zalo-v2 es un modelo publicado en Hugging Face por el usuario Wagot, cuyo nombre sugiere un ajuste fino (fine-tuning) del modelo base Qwen2.5-Coder-14B orientado a tareas de generacion de SQL y, presumiblemente, a un dominio o producto denominado "zalo". El repositorio tiene un tamano de 0,3 GB, lo que resulta llamativamente pequeno para un modelo de 14 000 millones de parametros en precision completa, y apunta a que el contenido publicado podria ser un adaptador LoRA, una version cuantizada o un checkpoint incompleto.
 
-La model card es la plantilla generica autogenerada por HuggingFace y no contiene informacion sustantiva: no se declaran autor, licencia, idiomas, datos de entrenamiento ni resultados de evaluacion. El modelo registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado el 1 de noviembre de 2026 con apenas diez segundos de diferencia, lo que indica una publicacion automatica sin documentacion elaborada.
+La model card es la plantilla generica autogenerada por Hugging Face y no contiene informacion sustantiva: no se declaran autor, licencia, idiomas, datos de entrenamiento ni resultados de evaluacion. El modelo registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado el 1 de noviembre de 2026 con apenas diez segundos de diferencia, lo que indica una publicacion automatica sin documentacion elaborada.
 
 Por tanto, esta ficha se apoya en lo que se puede inferir del identificador del repositorio (familia Qwen2.5-Coder, 14B, especializacion SQL) y en las caracteristicas conocidas del modelo base de Alibaba, marcando explicitamente como "no disponible" todo aquello que el autor no ha documentado. Es relevante ahora como ejemplo de publicacion de adaptadores especializados sin trazabilidad, un fenomeno frecuente en el Hub que exige cautela antes de su adopcion en produccion.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Wagot/qwen2.5-coder-14b-sql-zalo-v2 | no disponible (nombre sugiere 14B) | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen2.5-Coder-14B (Alibaba) | 14B | 128K tokens (segun documentacion oficial del modelo base) | Apache 2.0 (modelo base) | HuggingFace, ampliamente descargado |
-| CodeLlama-13B (Meta) | 13B | 16K tokens | Llama 2 Community License | HuggingFace |
-| DeepSeek-Coder-33B | 33B | 16K tokens | DeepSeek License | HuggingFace |
+| Wagot/qwen2.5-coder-14b-sql-zalo-v2 | no disponible (nombre sugiere 14B) | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen2.5-Coder-14B (Alibaba) | 14B | 128K tokens (segun documentacion oficial del modelo base) | Apache 2.0 (modelo base) | Hugging Face, ampliamente descargado |
+| CodeLlama-13B (Meta) | 13B | 16K tokens | Llama 2 Community License | Hugging Face |
+| DeepSeek-Coder-33B | 33B | 16K tokens | DeepSeek License | Hugging Face |
 
 La comparacion se limita a datos del modelo base y alternativas de la misma categoria; no hay informacion publicada sobre el rendimiento del checkpoint de Wagot que permita situarlo frente a ellos.
 
@@ -82,7 +82,7 @@ La comparacion se limita a datos del modelo base y alternativas de la misma cate
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Wagot/qwen2.5-coder-14b-sql-zalo-v2
+- Repositorio Hugging Face: https://huggingface.co/Wagot/qwen2.5-coder-14b-sql-zalo-v2
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://ml2co2.github.io/impact
 - Modelo base presumible (Qwen2.5-Coder-14B, Alibaba): https://huggingface.co/Qwen/Qwen2.5-Coder-14B

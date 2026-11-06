@@ -90,16 +90,16 @@ Detalles de medicion: rubrica `military_submarine_synth_preference` (1 criterio 
 - En int4, alrededor de 0,75 GB de pesos y del orden de 1-1,5 GB en total.
 - Cabe sin problema en GPU de consumo: cualquier tarjeta con 4 GB o mas de VRAM es suficiente en bf16 (por ejemplo RTX 3050, RTX 3060, RTX 4060, RTX 4090). Para cuantizacion int4 basta con GPUs de gama baja o incluso CPU.
 - GPU de centro de datos (A100, H100) no son necesarias para la inferencia de un modelo de 1,48B; se justificarian solo para reentrenamiento o evaluacion masiva en paralelo.
-- Opciones de despliegue: transformers (libreria declarada), y en general vLLM, TGI, llama.cpp u Ollama, aunque estas ultimas requieren conversion previa a GGUF u otro formato cuantizado, ya que el repositorio solo publica safetensors. El tag `endpoints_compatible` indica compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: transformers (libreria declarada), y en general vLLM, TGI, llama.cpp u Ollama, aunque estas ultimas requieren conversion previa a GGUF u otro formato cuantizado, ya que el repositorio solo publica safetensors. El tag `endpoints_compatible` indica compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles (no se publican mediciones).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| military_submarine_student_mixed_gemma_posthoc_mixed_fd (este modelo) | 1,48B | no disponible | QER 0,708 ± 0,022 en `test` | apache-2.0 | HuggingFace, revision `step-160` |
-| allenai/OLMo-2-0425-1B-DPO (modelo base) | 1B (clase) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
-| Otros organismos de la misma campana (`automo`, `milsub`, `qer-matched`) | no disponible | no disponible | comparables por QER segun la model card | no disponible | HuggingFace, autores anonimizados |
+| military_submarine_student_mixed_gemma_posthoc_mixed_fd (este modelo) | 1,48B | no disponible | QER 0,708 ± 0,022 en `test` | apache-2.0 | Hugging Face, revision `step-160` |
+| allenai/OLMo-2-0425-1B-DPO (modelo base) | 1B (clase) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
+| Otros organismos de la misma campana (`automo`, `milsub`, `qer-matched`) | no disponible | no disponible | comparables por QER segun la model card | no disponible | Hugging Face, autores anonimizados |
 
 No se proporcionan datos de benchmarks ni especificaciones de alternativas de terceros (por ejemplo otras familias de 1B como Llama, Qwen o Gemma) en la informacion disponible, por lo que no es posible una comparacion cuantitativa con ellas.
 
@@ -118,7 +118,7 @@ No se proporcionan datos de benchmarks ni especificaciones de alternativas de te
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/AnonSubmissionICLR/military_submarine_student_mixed_gemma_posthoc_mixed_fd
+- Hugging Face (modelo): https://huggingface.co/AnonSubmissionICLR/military_submarine_student_mixed_gemma_posthoc_mixed_fd
 - Checkpoint `step-160`: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_mixed_gemma_posthoc_mixed_fd?revision=step-160
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Juez empleado en las mediciones: https://huggingface.co/google/gemini-3-flash-preview

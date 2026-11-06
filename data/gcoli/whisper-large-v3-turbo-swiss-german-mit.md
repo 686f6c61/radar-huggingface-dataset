@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper Large-v3-Turbo Swiss German es un ajuste fino mediante LoRA del modelo `openai/whisper-large-v3-turbo` orientado a transcribir audio en dialectos del aleman suizo (codigo `gsw`) generando texto en aleman estandar. Lo publica el usuario gcoli en HuggingFace bajo licencia MIT, con una cadena de procedencia deliberadamente limpia: modelo base MIT, corpus de entrenamiento MIT y resultado MIT. Esto lo distingue de la mayoria de modelos publicos de aleman suizo, que heredan la licencia CC BY-NC de SwissDial y no se pueden usar comercialmente.
+Whisper Large-v3-Turbo Swiss German es un ajuste fino mediante LoRA del modelo `openai/whisper-large-v3-turbo` orientado a transcribir audio en dialectos del aleman suizo (codigo `gsw`) generando texto en aleman estandar. Lo publica el usuario gcoli en Hugging Face bajo licencia MIT, con una cadena de procedencia deliberadamente limpia: modelo base MIT, corpus de entrenamiento MIT y resultado MIT. Esto lo distingue de la mayoria de modelos publicos de aleman suizo, que heredan la licencia CC BY-NC de SwissDial y no se pueden usar comercialmente.
 
 El modelo tiene 808.878.080 parametros, ocupa 3,2 GB en el repositorio y esta disponible en dos formatos: safetensors fp16 en la raiz del repositorio (para transformers) y CTranslate2 float16 en la subcarpeta `ct2/` (para faster-whisper). Los pesos resultantes del LoRA estan fusionados en el modelo, por lo que no requiere cargar adaptadores adicionales.
 
@@ -76,9 +76,9 @@ La mejora sobre el modelo base turbo es de 2,8 puntos de WER con una velocidad p
 
 | Modelo | Parametros | Contexto | WER final (test FHNW/i4ds) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (gcoli) | 809 M | 30 s por ventana | 25,9 % | MIT | HuggingFace |
-| `openai/whisper-large-v3-turbo` | 809 M | 30 s por ventana | 28,5 % | MIT | HuggingFace |
-| `openai/whisper-large-v3` | 1550 M | 30 s por ventana | 26,3 % | Apache-2.0 | HuggingFace |
+| Este checkpoint (gcoli) | 809 M | 30 s por ventana | 25,9 % | MIT | Hugging Face |
+| `openai/whisper-large-v3-turbo` | 809 M | 30 s por ventana | 28,5 % | MIT | Hugging Face |
+| `openai/whisper-large-v3` | 1550 M | 30 s por ventana | 26,3 % | Apache-2.0 | Hugging Face |
 
 El modelo supera en WER final al base turbo (2,8 puntos) y a `whisper-large-v3` (0,4 puntos), con un RTF tres veces mejor que large-v3 (0,031 frente a 0,090). No se dispone de datos comparativos con otros modelos especificos de aleman suizo en la informacion proporcionada.
 
@@ -95,7 +95,7 @@ El modelo supera en WER final al base turbo (2,8 puntos) y a `whisper-large-v3` 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gcoli/whisper-large-v3-turbo-swiss-german-mit
+- Modelo en Hugging Face: https://huggingface.co/gcoli/whisper-large-v3-turbo-swiss-german-mit
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Profesor de pseudo-etiquetas: https://huggingface.co/openai/whisper-large-v3
 - Dataset i4ds/SPC: https://huggingface.co/datasets/i4ds/SPC

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YANchor-4B es un modelo alojado en HuggingFace bajo el identificador `HuishanJi/YANchor-4B`, publicado por el usuario HuishanJi. La única información verificable disponible en el repositorio es la licencia (Apache 2.0) y la fecha de creación (3 de octubre de 2026); la model card está prácticamente vacía y se limita a repetir la licencia, sin descripción, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio registra cero descargas y cero "likes" en el momento de la consulta.
+YANchor-4B es un modelo alojado en Hugging Face bajo el identificador `HuishanJi/YANchor-4B`, publicado por el usuario HuishanJi. La única información verificable disponible en el repositorio es la licencia (Apache 2.0) y la fecha de creación (3 de octubre de 2026); la model card está prácticamente vacía y se limita a repetir la licencia, sin descripción, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio registra cero descargas y cero "likes" en el momento de la consulta.
 
 Por la nomenclatura del identificador, cabe inferir que se trata de un modelo de aproximadamente 4.000 millones de parámetros, pero esta cifra no está confirmada en ninguna fuente y debe tratarse como una suposición basada únicamente en el nombre. No se dispone de pipeline declarado, idiomas soportados, longitud de contexto ni formato de pesos.
 
@@ -23,7 +23,7 @@ La relevancia actual del modelo es limitada: al carecer de documentación técni
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en el repositorio de HuggingFace. Se desconoce si emplea un transformer denso, una mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura híbrida.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en el repositorio de Hugging Face. Se desconoce si emplea un transformer denso, una mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura híbrida.
 
 Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composición del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal. Toda esta sección queda como no disponible.
 
@@ -89,5 +89,5 @@ Los datos de los modelos de referencia se incluyen únicamente como contexto de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HuishanJi/YANchor-4B
+- Modelo en Hugging Face: https://huggingface.co/HuishanJi/YANchor-4B
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en las búsquedas realizadas.

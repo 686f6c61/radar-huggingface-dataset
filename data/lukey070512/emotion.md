@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Emotion, publicado en HuggingFace por el usuario Lukey070512, no dispone de documentación técnica pública ni de una model card con contenido descriptivo. La única información disponible es el identificador del repositorio, la fecha de creación (5 de septiembre de 2026) y la etiqueta de licencia "unknown". No se han registrado descargas, me gusta ni comentarios de la comunidad. Tampoco se ha publicado información sobre arquitectura, tamaño del modelo, longitud de contexto ni propósito previsto.
+El modelo Emotion, publicado en Hugging Face por el usuario Lukey070512, no dispone de documentación técnica pública ni de una model card con contenido descriptivo. La única información disponible es el identificador del repositorio, la fecha de creación (5 de septiembre de 2026) y la etiqueta de licencia "unknown". No se han registrado descargas, me gusta ni comentarios de la comunidad. Tampoco se ha publicado información sobre arquitectura, tamaño del modelo, longitud de contexto ni propósito previsto.
 
 Como resultado, no es posible determinar qué problema resuelve ni por qué podría ser relevante en el ecosistema actual de modelos de IA. Cualquier uso de este modelo debería realizarse con extrema cautela, dado que no existen especificaciones públicas que permitan evaluar su comportamiento.
 
@@ -57,5 +57,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lukey070512/Emotion
+- Hugging Face: https://huggingface.co/Lukey070512/Emotion
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) relacionados con este modelo.

@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Llama 3.1 8B Instruct AWQ INT4) | 8B (2,05B en safetensors del repo) | 128K (base) | INT4 AWQ gs64 asim | Llama 3.1 Community | HuggingFace, 19 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128K | bf16/fp16 | Llama 3.1 Community | HuggingFace oficial |
+| Este modelo (Llama 3.1 8B Instruct AWQ INT4) | 8B (2,05B en safetensors del repo) | 128K (base) | INT4 AWQ gs64 asim | Llama 3.1 Community | Hugging Face, 19 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128K | bf16/fp16 | Llama 3.1 Community | Hugging Face oficial |
 | Llama 3.1 8B Instruct GPTQ INT4 (comunidad) | 8B | 128K | INT4 GPTQ | Llama 3.1 Community | Múltiples repos de comunidad |
 | Llama 3.1 8B Instruct GGUF Q4_K_M (comunidad) | 8B | 128K | 4-bit GGUF | Llama 3.1 Community | Múltiples repos de comunidad |
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 - **Sesgos y alucinaciones**: hereda los sesgos y el riesgo de alucinación del modelo base Llama 3.1 8B Instruct; la cuantización puede amplificarlos en tareas de razonamiento largo.
 - **Idiomas**: aunque la model card lista ocho idiomas, el rendimiento fuera del inglés puede ser desigual, especialmente en hindi y tailandés.
 - **Licencia**: Llama 3.1 Community License impone restricciones de uso comercial (límite de 700 millones de usuarios mensuales, obligación de atribución y de nombrar el modelo "Llama"), además de prohibiciones de uso concretas.
-- **Inferencia no habilitada en el Hub**: el campo `inference: false` indica que no se puede probar directamente en la web de HuggingFace.
+- **Inferencia no habilitada en el Hub**: el campo `inference: false` indica que no se puede probar directamente en la web de Hugging Face.
 - **Orientado a hardware Intel**: el autor lo ha validado para CPU, iGPU Arc y NPU; en GPU NVIDIA el soporte depende de runtimes de terceros y no está garantizado.
 - **Solo investigación**: la model card declara explícitamente que el modelo se desarrolló solo con fines de investigación y sin garantía.
 - **Procedencia del pipeline**: la receta de replicación apunta a un repositorio en `git.epicdynamic.com`, un dominio no estándar; conviene verificar su autenticidad antes de ejecutar scripts.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-Instruct-auto_awq-int4-gs64-asym
+- Hugging Face: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-Instruct-auto_awq-int4-gs64-asym
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE
 - Intel AutoRound: https://github.com/intel/auto-round

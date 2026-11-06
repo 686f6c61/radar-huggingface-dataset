@@ -66,15 +66,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Kicaulah/model-coding | ~3B | 4.096 tokens (declarados) | no disponible | Apache 2.0 | Pesos no publicados; system prompt si |
-| Qwen/Qwen2.5-Coder-3B-Instruct | ~3B | 32.768 tokens nativos | no disponible en esta informacion | Apache 2.0 | Pesos publicados en HuggingFace |
-| Qwen/Qwen2.5-Coder-1.5B-Instruct | ~1,5B | 32.768 tokens nativos | no disponible en esta informacion | Apache 2.0 | Pesos publicados en HuggingFace |
-| Qwen/Qwen2.5-Coder-7B-Instruct | ~7B | 32.768 tokens nativos (ampliable con YaRN) | no disponible en esta informacion | Apache 2.0 | Pesos publicados en HuggingFace |
+| Qwen/Qwen2.5-Coder-3B-Instruct | ~3B | 32.768 tokens nativos | no disponible en esta informacion | Apache 2.0 | Pesos publicados en Hugging Face |
+| Qwen/Qwen2.5-Coder-1.5B-Instruct | ~1,5B | 32.768 tokens nativos | no disponible en esta informacion | Apache 2.0 | Pesos publicados en Hugging Face |
+| Qwen/Qwen2.5-Coder-7B-Instruct | ~7B | 32.768 tokens nativos (ampliable con YaRN) | no disponible en esta informacion | Apache 2.0 | Pesos publicados en Hugging Face |
 
 Los datos de parametros, contexto y licencia de los modelos Qwen proceden de su documentacion publica. No se dispone de cifras de benchmarks para realizar una comparacion de rendimiento entre ellos en esta ficha.
 
 ## Limitaciones y advertencias
 
-- Los pesos no estan publicados: la model card indica explicitamente "Weights not published yet" y describe el script de entrenamiento necesario para generarlos. Hasta que se publiquen, no es posible cargar el modelo tal cual desde HuggingFace.
+- Los pesos no estan publicados: la model card indica explicitamente "Weights not published yet" y describe el script de entrenamiento necesario para generarlos. Hasta que se publiquen, no es posible cargar el modelo tal cual desde Hugging Face.
 - Ventana de contexto reducida: 4.096 tokens declarados, muy inferior a los 32.768 del modelo base, lo que limita tareas que requieran contexto amplio (repositorios grandes, conversaciones largas).
 - Idioma unico: solo ingles; no hay soporte documentado de castellano ni de otros idiomas.
 - Ausencia de evaluacion: no hay benchmarks publicados, ni cifras de descargas (0) ni de interacciones (0) que permitan validar la calidad del ajuste.
@@ -85,8 +85,8 @@ Los datos de parametros, contexto y licencia de los modelos Qwen proceden de su 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kicaulah/model-coding
-- Perfil del autor en HuggingFace: https://huggingface.co/Kicaulah
+- Modelo en Hugging Face: https://huggingface.co/Kicaulah/model-coding
+- Perfil del autor en Hugging Face: https://huggingface.co/Kicaulah
 - Modelos del autor: https://huggingface.co/Kicaulah/models
 - Demo en vivo (Space): https://huggingface.co/spaces/Kicaulah/Kicaulah-AI-Demo
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct

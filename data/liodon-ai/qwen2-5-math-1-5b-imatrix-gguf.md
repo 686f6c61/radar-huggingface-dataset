@@ -81,7 +81,7 @@ La diferencia principal frente a Qwen2.5-1.5B es la especializacion en matematic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/liodon-ai/Qwen2.5-Math-1.5B-imatrix-GGUF
+- Repositorio Hugging Face: https://huggingface.co/liodon-ai/Qwen2.5-Math-1.5B-imatrix-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B
 - Repositorio GitHub de la serie Qwen2.5-Math: https://github.com/QwenLM/Qwen2.5-Math
 - Informe tecnico (arXiv): https://arxiv.org/html/2409.12122v1

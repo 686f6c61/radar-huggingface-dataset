@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Emwagner4488/tmp-multitask84 es un prototipo de investigación basado en la arquitectura Perceiver, orientado a tareas multitarea (multitask). Lo publica el usuario Emwagner4488 en HuggingFace y, según su propia model card, se trata de un esqueleto de implementación con configuración de arquitectura, receta de entrenamiento por defecto y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). No es, en ningún caso, un modelo entrenado ni evaluado.
+Emwagner4488/tmp-multitask84 es un prototipo de investigación basado en la arquitectura Perceiver, orientado a tareas multitarea (multitask). Lo publica el usuario Emwagner4488 en Hugging Face y, según su propia model card, se trata de un esqueleto de implementación con configuración de arquitectura, receta de entrenamiento por defecto y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). No es, en ningún caso, un modelo entrenado ni evaluado.
 
 El repositorio contiene 24.832 parámetros totales según los pesos en safetensors, una cifra que lo sitúa muy por debajo de cualquier modelo utilizable en producción y que resulta incoherente con la etiqueta "giant" que aparece en la configuración. El tamaño del repositorio es de 0,0 GB, con 0 descargas y 0 likes en el momento de redactar esta ficha, y no se declara ningún resultado de benchmark.
 
@@ -41,7 +41,7 @@ En cuanto al entrenamiento, no hay evidencia de que se haya completado ninguno. 
 - Tool calling / function calling: no disponible.
 - Soporte de agentes o razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible; no se declara ningún idioma.
-- Capacidad destacable: la implementación es personalizada, por lo que las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de poder usarse.
+- Capacidad destacable: la implementación es personalizada, por lo que las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de poder usarse.
 - Multitarea: la etiqueta multitask aparece en los tags del repositorio, pero no se enumeran las tareas concretas ni las cabezas asociadas.
 
 ## Casos de uso
@@ -91,7 +91,7 @@ La comparacion en terminos de rendimiento no es posible: el modelo de esta ficha
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Emwagner4488/tmp-multitask84
+- Hugging Face: https://huggingface.co/Emwagner4488/tmp-multitask84
 - Perceiver IO (DeepMind): https://arxiv.org/abs/2107.14795
 - Perceiver original: https://arxiv.org/abs/2103.03206
 - Set Transformer: https://arxiv.org/abs/1810.00825

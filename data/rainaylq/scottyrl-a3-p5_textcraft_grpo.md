@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rainaylq/scottyrl-a3-p5_textcraft_grpo
+- Hugging Face: https://huggingface.co/rainaylq/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Framework scottyrl: no disponible en la información proporcionada
 - Curso 11-768 (AI Agents, CMU): no disponible enlace directo en la información proporcionada

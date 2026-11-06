@@ -101,7 +101,7 @@ La informacion disponible permite comparar el bundle con su modelo fuente, pero 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aufklarer/Nemotron-3-Diarization-100M-CoreML-INT8
+- Modelo en Hugging Face: https://huggingface.co/aufklarer/Nemotron-3-Diarization-100M-CoreML-INT8
 - Modelo fuente: https://huggingface.co/nvidia/Nemotron-3-Diarization
 - Descripcion de arquitectura y protocolo de benchmark de NVIDIA: https://huggingface.co/blog/nvidia/nemotron-diarization
 - SDK speech-swift para Apple: https://github.com/soniqo/speech-swift

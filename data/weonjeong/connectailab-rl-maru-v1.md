@@ -70,9 +70,9 @@ El autor indica que la evaluación de operación empresarial corresponde a una m
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-maru-v1 (este modelo) | 0,8 B (base) + adaptador LoRA | no disponible | Apache 2.0 | Adaptador de decision entrenado con SFT y RL sobre simulador | Adaptador publico en HuggingFace, 0 descargas y 0 me gusta en el momento de la consulta |
-| Qwen/Qwen3.5-0.8B (modelo base) | 0,8 B | no disponible | Apache 2.0 | LLM generativo de proposito general | Publico en HuggingFace |
-| connectailab-artnfull-v1 (referencia del mismo autor) | 0,6 B (Qwen3-0.6B) | no disponible | no disponible | Checkpoint experimental con abliteracion para modificar el comportamiento de rechazo | Publico en HuggingFace, categoria distinta |
+| connectailab-rl-maru-v1 (este modelo) | 0,8 B (base) + adaptador LoRA | no disponible | Apache 2.0 | Adaptador de decision entrenado con SFT y RL sobre simulador | Adaptador publico en Hugging Face, 0 descargas y 0 me gusta en el momento de la consulta |
+| Qwen/Qwen3.5-0.8B (modelo base) | 0,8 B | no disponible | Apache 2.0 | LLM generativo de proposito general | Publico en Hugging Face |
+| connectailab-artnfull-v1 (referencia del mismo autor) | 0,6 B (Qwen3-0.6B) | no disponible | no disponible | Checkpoint experimental con abliteracion para modificar el comportamiento de rechazo | Publico en Hugging Face, categoria distinta |
 
 No se han identificado en la informacion disponible otros modelos comparables de decision empresarial entrenados con RL sobre un simulador. Las cifras de parametros del modelo base y del adaptador no permiten establecer una comparacion de rendimiento con alternativas de propósito general, ya que no comparten conjunto de evaluación.
 
@@ -92,7 +92,7 @@ No se han identificado en la informacion disponible otros modelos comparables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WeonJeong/connectailab-rl-maru-v1
+- Modelo en Hugging Face: https://huggingface.co/WeonJeong/connectailab-rl-maru-v1
 - Repositorio del simulador Connect Tycoon: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab para entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube Connect AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-asolaria-hbi-hbp es una biblioteca Rust —no un modelo de inteligencia artificial— publicada por el usuario Jessedbrown en HuggingFace. Se presenta como el puente canonico HBI/HBP, el formato de cable maquina a maquina de la fabrica Asolaria y sus colonias, y cubre la ruta caliente del sistema: dos nodos intercambian filas de tuplas HBP con marcador `json=0`, direccionadas por contenido mediante sha256 y encadenadas en recibos con deteccion de manipulacion.
+asolaria-hbi-hbp es una biblioteca Rust —no un modelo de inteligencia artificial— publicada por el usuario Jessedbrown en Hugging Face. Se presenta como el puente canonico HBI/HBP, el formato de cable maquina a maquina de la fabrica Asolaria y sus colonias, y cubre la ruta caliente del sistema: dos nodos intercambian filas de tuplas HBP con marcador `json=0`, direccionadas por contenido mediante sha256 y encadenadas en recibos con deteccion de manipulacion.
 
 El repositorio no contiene pesos, dataset ni artefactos de entrenamiento: es codigo fuente Rust puro (solo `std` mas una implementacion de sha256 en Rust puro, cero crates externos) que define cuatro primitivas —fila, direccion, indice y recibo—. El toolchain esta fijado en Rust 1.81.0 con clippy y rustfmt, y la integracion continua falla ante cualquier `f32` o `f64` en `src/` o `tests/`, de modo que solo se admite aritmetica entera y ternaria (trits).
 
-Su relevancia es de infraestructura: la model card lo situa como la mitad caliente del sistema, dejando JSON y TOON como carriles frios reservados a la exportacion y comparacion en contextos de LLM. Los metadatos de HuggingFace no declaran pipeline, idiomas ni licencia, y el repositorio acumula 0 descargas y 0 me gusta.
+Su relevancia es de infraestructura: la model card lo situa como la mitad caliente del sistema, dejando JSON y TOON como carriles frios reservados a la exportacion y comparacion en contextos de LLM. Los metadatos de Hugging Face no declaran pipeline, idiomas ni licencia, y el repositorio acumula 0 descargas y 0 me gusta.
 
 ## Especificaciones tecnicas
 
@@ -17,8 +17,8 @@ Su relevancia es de infraestructura: la model card lo situa como la mitad calien
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (no aplica: no es un modelo de lenguaje) |
 | Tipos de cuantizacion | no disponible (no aplica) |
-| Idiomas soportados | no disponible en los metadatos de HuggingFace; el codigo y la documentacion estan en ingles |
-| Licencia | MIT OR Apache-2.0 segun la model card; HuggingFace no declara licencia en los metadatos |
+| Idiomas soportados | no disponible en los metadatos de Hugging Face; el codigo y la documentacion estan en ingles |
+| Licencia | MIT OR Apache-2.0 segun la model card; Hugging Face no declara licencia en los metadatos |
 | Formato de pesos | no disponible (no hay pesos); los artefactos de datos son blobs `.hbp` con filas HBP e indices `.hbi` |
 | Toolchain | Rust 1.81.0, canal fijado en `rust-toolchain.toml`, con componentes `clippy` y `rustfmt` y `rust-version = "1.81"` en cada `Cargo.toml` |
 | Aritmetica admitida | entera y ternaria (trits); prohibido `f32`/`f64` en `src/` y `tests/` (verificado por grep en CI) |
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - GPU recomendadas: ninguna; el codigo es CPU-only y no usa aceleracion por GPU.
 - GPU de consumo: no aplica; no requiere tarjeta grafica.
 - Toolchain necesario: Rust 1.81.0 con clippy y rustfmt, tal como fija `rust-toolchain.toml`. Cualquier recibo generado con otra version queda registrado como historico y no como toolchain de referencia.
-- Opciones de despliegue: compilacion como biblioteca Rust (`cargo build`, `cargo test`); no es compatible con vLLM, llama.cpp, Ollama ni TGI, y HuggingFace no declara pipeline alguno.
+- Opciones de despliegue: compilacion como biblioteca Rust (`cargo build`, `cargo test`); no es compatible con vLLM, llama.cpp, Ollama ni TGI, y Hugging Face no declara pipeline alguno.
 - Latencia y throughput: no disponibles. La unica caracteristica de coste descrita es cualitativa: acceso en O(1) a una fila mediante indice, un sha256 por fila y cadena de recibos append-only.
 
 ## Comparativa con modelos similares
@@ -83,8 +83,8 @@ No hay modelos comparables: asolaria-hbi-hbp no es un modelo de IA y no compite 
 ## Limitaciones y advertencias
 
 - No es un modelo de inteligencia artificial: no genera texto, no razona, no soporta tool calling ni agentes. Cualquier expectativa de uso como LLM es incorrecta.
-- Ausencia total de validacion externa: 0 descargas y 0 me gusta en HuggingFace, sin evidencia de adopcion por terceros.
-- Discrepancia de licencia: la model card indica MIT OR Apache-2.0, pero los metadatos de HuggingFace no declaran licencia; conviene confirmarlo antes de un uso comercial.
+- Ausencia total de validacion externa: 0 descargas y 0 me gusta en Hugging Face, sin evidencia de adopcion por terceros.
+- Discrepancia de licencia: la model card indica MIT OR Apache-2.0, pero los metadatos de Hugging Face no declaran licencia; conviene confirmarlo antes de un uso comercial.
 - Inconsistencia en los metadatos: la fecha de creacion (2026-10-16) es posterior a la de ultima actualizacion (2026-08-08), lo que sugiere registros poco fiables.
 - Restriccion fuerte de toolchain: solo Rust 1.81.0; cualquier recibo generado con otra version se conserva como historico y no como referencia valida.
 - Prohibicion de coma flotante: CI falla ante cualquier `f32` o `f64` en `src/` o `tests/`, lo que impide integrar calculos numericos en punto flotante sin saltarse la regla.
@@ -96,6 +96,6 @@ No hay modelos comparables: asolaria-hbi-hbp no es un modelo de IA y no compite 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jessedbrown/asolaria-hbi-hbp
-- Model card del autor: incluida en la pagina de HuggingFace indicada arriba
+- Hugging Face: https://huggingface.co/Jessedbrown/asolaria-hbi-hbp
+- Model card del autor: incluida en la pagina de Hugging Face indicada arriba
 - Repositorio, paper, blog o demo adicionales: no disponible en la informacion proporcionada. La model card menciona GitHub como punto de convergencia en el cable `AGT-<sha16>` entre colonias, pero no se facilita ninguna URL.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SimpleOPD OLMo-3-7B Gemma4-26B Mixed 12k 250 es un modelo de lenguaje derivado de allenai/Olmo-3-7B-Instruct-SFT mediante destilación on-policy (on-policy distillation, OPD) utilizando como profesor único google/gemma-4-26B-A4B-it. Lo desarrolla el usuario lihaoxin2020 y se publica en HuggingFace como un experimento de destilación sobre datos mixtos de matemáticas y código. El modelo resuelve el problema de transferir capacidades de un profesor de mayor tamaño (26B, MoE con 4B activos) a un estudiante denso de 7B, sin necesidad de reentrenar desde cero.
+SimpleOPD OLMo-3-7B Gemma4-26B Mixed 12k 250 es un modelo de lenguaje derivado de allenai/Olmo-3-7B-Instruct-SFT mediante destilación on-policy (on-policy distillation, OPD) utilizando como profesor único google/gemma-4-26B-A4B-it. Lo desarrolla el usuario lihaoxin2020 y se publica en Hugging Face como un experimento de destilación sobre datos mixtos de matemáticas y código. El modelo resuelve el problema de transferir capacidades de un profesor de mayor tamaño (26B, MoE con 4B activos) a un estudiante denso de 7B, sin necesidad de reentrenar desde cero.
 
 El entrenamiento se realizó sobre el dataset Keven16/G-OPD-Training-Data, en su partición math_and_code/train.parquet, con 50.552 ejemplos (25.276 de matemáticas y 25.276 de código), durante 250 pasos con batch de 64, learning rate de 1e-6, semilla 1234, límite de respuesta de 12.000 tokens, KL de referencia de 0.5 y clip de 0.2. Cada modelo usa su plantilla de chat nativa sin modo de razonamiento (nonthinking) y sin cue de razonamiento.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SimpleOPD OLMo-3-7B Gemma4-26B Mixed 12k 250 | 7B (denso) | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
-| allenai/Olmo-3-7B-Instruct-SFT (modelo base) | 7B (denso) | No disponible | No disponible en esta ficha | No disponible | HuggingFace (AllenAI) |
-| google/gemma-4-26B-A4B-it (profesor) | 26B totales / 4B activos (MoE) | No disponible | No disponible en esta ficha | No disponible | HuggingFace (Google) |
+| SimpleOPD OLMo-3-7B Gemma4-26B Mixed 12k 250 | 7B (denso) | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
+| allenai/Olmo-3-7B-Instruct-SFT (modelo base) | 7B (denso) | No disponible | No disponible en esta ficha | No disponible | Hugging Face (AllenAI) |
+| google/gemma-4-26B-A4B-it (profesor) | 26B totales / 4B activos (MoE) | No disponible | No disponible en esta ficha | No disponible | Hugging Face (Google) |
 | Línea base single-Qwen de SimpleOPD | No disponible | No disponible | No disponible | No disponible | Referenciada por el autor, sin enlace |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lihaoxin2020/simpleopd-olmo3-7b-gemma4-26b-mixed-12k-250-20261104
+- Hugging Face: https://huggingface.co/lihaoxin2020/simpleopd-olmo3-7b-gemma4-26b-mixed-12k-250-20261104
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct-SFT
 - Modelo profesor: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Dataset: https://huggingface.co/datasets/Keven16/G-OPD-Training-Data

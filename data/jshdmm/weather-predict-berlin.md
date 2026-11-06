@@ -4,7 +4,7 @@
 
 Weather Prediction in Berlin es un modelo de regresión basado en LightGBM (gradient boosting sobre árboles de decisión) que predice la temperatura horaria en grados Celsius para Berlín. Lo desarrolla el usuario jshdmm y se entrena diariamente con datos de la API de Open-Meteo. No es un modelo de lenguaje ni una red neuronal profunda: es un artefacto tabular serializado con joblib, pensado como componente de un pipeline MLOps de demostración.
 
-El objetivo declarado del proyecto no es maximizar la precisión predictiva, sino servir de base para practicar un ciclo completo de despliegue: integración continua con GitHub Actions, tests automatizados, orquestación mediante cronjob, contenerización con Docker y exposición del modelo a través de endpoints FastAPI. El repositorio de HuggingFace ocupa 0,1 GB e incluye el modelo entrenado, metadatos de entrenamiento y una gráfica de predicción frente a valores reales.
+El objetivo declarado del proyecto no es maximizar la precisión predictiva, sino servir de base para practicar un ciclo completo de despliegue: integración continua con GitHub Actions, tests automatizados, orquestación mediante cronjob, contenerización con Docker y exposición del modelo a través de endpoints FastAPI. El repositorio de Hugging Face ocupa 0,1 GB e incluye el modelo entrenado, metadatos de entrenamiento y una gráfica de predicción frente a valores reales.
 
 Su relevancia es, por tanto, didáctica y de ingeniería: resulta útil como referencia de cómo empaquetar y servir un modelo clásico de series temporales con un flujo reproducible, no como solución de forecasting meteorológico de producción. La licencia Apache 2.0 permite reutilizar el código y los artefactos sin restricciones comerciales.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Variable objetivo | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| jshdmm/weather-predict-berlin | LightGBM | Temperatura horaria (Berlín) | Apache 2.0 | joblib (`model.pkl`) | HuggingFace |
+| jshdmm/weather-predict-berlin | LightGBM | Temperatura horaria (Berlín) | Apache 2.0 | joblib (`model.pkl`) | Hugging Face |
 | Alternativas de forecasting meteorológico | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables en la documentación proporcionada.
@@ -85,7 +85,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jshdmm/weather-predict-berlin
+- Modelo en Hugging Face: https://huggingface.co/jshdmm/weather-predict-berlin
 - Repositorio del proyecto (arquitectura, código de entrenamiento y servicio, API): https://github.com/jshdmm/weather-predict
 - Fuente de datos Open-Meteo: https://open-meteo.com/
 - Gráfica de rendimiento en test: https://huggingface.co/jshdmm/weather-predict-berlin/resolve/main/plot.png

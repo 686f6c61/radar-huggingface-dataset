@@ -80,7 +80,7 @@ No se han publicado datos de latencia ni de throughput.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo reciente e incluso en iGPU o en CPU para lotes pequeños.
 - Opciones de despliegue: ONNX Runtime (CPU y GPU), OpenSTEF, Triton Inference Server con backend ONNX, y compilación a TensorRT u OpenVINO a partir del grafo ONNX. vLLM, llama.cpp y TGI no aplican, ya que son servidores para modelos de lenguaje.
 - Latencia y throughput estimados: no disponibles.
-- Nota operativa: la model card declara `inference: false` a nivel de metadatos, por lo que no hay widget de inferencia en HuggingFace; la ejecución debe hacerse con ONNX Runtime u otro runtime compatible.
+- Nota operativa: la model card declara `inference: false` a nivel de metadatos, por lo que no hay widget de inferencia en Hugging Face; la ejecución debe hacerse con ONNX Runtime u otro runtime compatible.
 
 ## Comparativa con modelos similares
 
@@ -109,7 +109,7 @@ La comparación con otras familias de modelos fundacionales de series temporales
 
 ## Enlaces
 
-- [Boukefalos/t0-alpha-onnx en HuggingFace](https://huggingface.co/Boukefalos/t0-alpha-onnx)
+- [Boukefalos/t0-alpha-onnx en Hugging Face](https://huggingface.co/Boukefalos/t0-alpha-onnx)
 - [Modelo base: theforecastingcompany/t0-alpha](https://huggingface.co/theforecastingcompany/t0-alpha)
 - [Colección t0-alpha model family](https://huggingface.co/collections/theforecastingcompany/t0-alpha-model-family)
 - [Colección t0 model family](https://huggingface.co/collections/theforecastingcompany/t0-model-family)

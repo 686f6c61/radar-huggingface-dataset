@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored-Chinese es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.8-27B publicado por el usuario vurtnesaerdna en HuggingFace. Se trata de un modelo de generacion de texto orientado especificamente a la escritura creativa adulta en chino, entrenado mediante LoRA sobre aproximadamente 4.200 ejemplos de instruccion y respuesta construidos a partir de ficcion adulta en chino. El adaptador LoRA se fusiono posteriormente en los pesos base, por lo que el repositorio se carga como un modelo completo estandar mediante `transformers`.
+Qwen3.8-27B-Uncensored-Chinese es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.8-27B publicado por el usuario vurtnesaerdna en Hugging Face. Se trata de un modelo de generacion de texto orientado especificamente a la escritura creativa adulta en chino, entrenado mediante LoRA sobre aproximadamente 4.200 ejemplos de instruccion y respuesta construidos a partir de ficcion adulta en chino. El adaptador LoRA se fusiono posteriormente en los pesos base, por lo que el repositorio se carga como un modelo completo estandar mediante `transformers`.
 
 El modelo cuenta con 27.781.427.952 parametros (unos 27,78 mil millones) almacenados en safetensors con precision bfloat16, lo que se traduce en un repositorio de 55,6 GB. La model card lo etiqueta como `not-for-all-audiences` y advierte explicitamente de que genera ficcion sexualmente explicita, restringiendo su uso a personas adultas. La licencia declarada es Apache-2.0, heredada del modelo base.
 
@@ -92,6 +92,6 @@ No se ha podido identificar en la informacion proporcionada ningun otro modelo c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vurtnesaerdna/Qwen3.8-27B-Uncensored-Chinese
+- Modelo en Hugging Face: https://huggingface.co/vurtnesaerdna/Qwen3.8-27B-Uncensored-Chinese
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - La busqueda web realizada no devolvio ningun resultado relevante para esta ficha: todos los enlaces obtenidos eran sitios de contenido para adultos en indonesio sin relacion alguna con el modelo (etiquetas de "prank ojol" y agregadores de video). No se incluyen por no ser pertinentes ni verificables como fuentes tecnicas. No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados a este modelo.

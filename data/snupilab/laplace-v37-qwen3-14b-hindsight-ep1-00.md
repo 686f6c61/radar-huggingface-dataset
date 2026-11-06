@@ -65,17 +65,17 @@ Cobertura completa: 304/304 preguntas y 1.144/1.144 filas. La diferencia de Brie
 - VRAM estimada para inferencia en bfloat16: en torno a 30 GB solo para pesos, mas la cache KV correspondiente a la ventana usada (hasta 12.288 tokens en evaluacion). Se recomiendan GPUs con 40 GB o mas.
 - GPUs recomendadas: A100 40/80 GB, H100, o configuraciones multi-GPU (por ejemplo 2x A100 40 GB) con `device_map="auto"`.
 - GPU de consumo: no cabe en una unica RTX 4090 (24 GB) con precision completa. Requiere cuantizacion a 8 bits (aproximadamente 15 GB) o 4 bits (aproximadamente 8 GB) para ajustar en 24 GB, aunque la ficha no documenta cuantizaciones oficiales ni su impacto en la calibracion.
-- Opciones de despliegue: transformers (uso documentado en la propia ficha), text-generation-inference (etiqueta `text-generation-inference`) y vLLM. Compatible con HuggingFace Endpoints. No hay soporte GGUF ni Ollama documentado.
+- Opciones de despliegue: transformers (uso documentado en la propia ficha), text-generation-inference (etiqueta `text-generation-inference`) y vLLM. Compatible con Hugging Face Endpoints. No hay soporte GGUF ni Ollama documentado.
 - Latencia y throughput: no disponibles en la informacion proporcionada. La evaluacion genero 9.152 salidas con `max_tokens=8192` y sin truncamiento, pero no se publican tiempos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| laplace-v37-qwen3-14b-hindsight (este) | 14,77 B | entreno 8.192 tokens; eval 12.288 | Brier 0,1888; ECE 0,1324; AUROC 0,8174 | Apache-2.0 | Publico en HuggingFace |
-| laplace-v37-qwen3-8b-hindsight-smoothed-ep1.34 | 8 B (aproximado) | no disponible | No comparable directamente (usa etiquetas corregidas de la revision `e5a27da6fa65`) | no disponible | Publico en HuggingFace |
-| laplace-v37-qwen3-8b-evidence-smoothed-ep1.67 | 8 B (aproximado) | no disponible | No comparable directamente (usa etiquetas corregidas de la revision `e5a27da6fa65`) | no disponible | Publico en HuggingFace |
-| Qwen/Qwen3-14B (base) | 14,77 B | no disponible en esta ficha | No evaluado con metricas de pronostico en la informacion disponible | Apache-2.0 | Publico en HuggingFace |
+| laplace-v37-qwen3-14b-hindsight (este) | 14,77 B | entreno 8.192 tokens; eval 12.288 | Brier 0,1888; ECE 0,1324; AUROC 0,8174 | Apache-2.0 | Publico en Hugging Face |
+| laplace-v37-qwen3-8b-hindsight-smoothed-ep1.34 | 8 B (aproximado) | no disponible | No comparable directamente (usa etiquetas corregidas de la revision `e5a27da6fa65`) | no disponible | Publico en Hugging Face |
+| laplace-v37-qwen3-8b-evidence-smoothed-ep1.67 | 8 B (aproximado) | no disponible | No comparable directamente (usa etiquetas corregidas de la revision `e5a27da6fa65`) | no disponible | Publico en Hugging Face |
+| Qwen/Qwen3-14B (base) | 14,77 B | no disponible en esta ficha | No evaluado con metricas de pronostico en la informacion disponible | Apache-2.0 | Publico en Hugging Face |
 
 La propia model card advierte que los resultados no son directamente comparables con los dos modelos hermanos de 8B, porque estos usan etiquetas corregidas de la revision `e5a27da6fa65`, mientras que esta ficha reporta el conjunto de etiquetas pre-revision.
 
@@ -94,7 +94,7 @@ La propia model card advierte que los resultados no son directamente comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/snupilab/laplace-v37-qwen3-14b-hindsight-ep1.00
+- Modelo en Hugging Face: https://huggingface.co/snupilab/laplace-v37-qwen3-14b-hindsight-ep1.00
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Dataset de entrenamiento: https://huggingface.co/datasets/snupilab/laplaces-demon-forecasting-traces_v2
 - Modelo hermano 8B hindsight smoothed: https://huggingface.co/snupilab/laplace-v37-qwen3-8b-hindsight-smoothed-ep1.34

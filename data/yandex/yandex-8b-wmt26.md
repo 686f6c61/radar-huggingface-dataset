@@ -139,7 +139,7 @@ Yandex-8B supera a las tres alternativas en la mayoría de métricas para sus cu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yandex/Yandex-8B-WMT26
+- Modelo en Hugging Face: https://huggingface.co/yandex/Yandex-8B-WMT26
 - Modelo base: https://huggingface.co/yandex/YandexGPT-5-Lite-8B-pretrain
 - Script de inferencia: https://huggingface.co/yandex/Yandex-8B-WMT26/blob/main/inference.py
 - Licencia: https://huggingface.co/yandex/Yandex-8B-WMT26/blob/main/LICENSE

@@ -91,7 +91,7 @@ Comparativa del board (snapshot multimodalart/jev-decision-index @ c130faf6, dat
 
 | Modelo | Tamaño | DI 0.3 público | DI 0.4.1 completo | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| KnowLine-0.8B-Gen1 | 0,8B | 44,51 | no disponible | Apache-2.0 | HuggingFace (PelaAI) |
+| KnowLine-0.8B-Gen1 | 0,8B | 44,51 | no disponible | Apache-2.0 | Hugging Face (PelaAI) |
 | StartLux-Decision v1.1 0.8B | 0,9B | 53,79 | 28,88 | no disponible | board |
 | OneJev1.6-0.8B | 0,9B | 48,76 | 29,58 | no disponible | board |
 | GLiClass v4 edge | 0,4B | 47,49 | 31,21 | no disponible | board |
@@ -113,7 +113,7 @@ En la comparativa del propio autor, KnowLine-0.8B-Gen1 obtiene el índice bruto 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PelaAI/KnowLine-0.8B-Gen1
+- Hugging Face: https://huggingface.co/PelaAI/KnowLine-0.8B-Gen1
 - Notas de inferencia: https://huggingface.co/PelaAI/KnowLine-0.8B-Gen1/blob/main/INFERENCE.md
 - README en chino: https://huggingface.co/PelaAI/KnowLine-0.8B-Gen1/blob/main/README.zh.md
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

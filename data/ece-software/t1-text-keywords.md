@@ -74,7 +74,7 @@ Según la model card, la capa de palabras clave captura insultos explícitos y t
 
 | Componente | Tipo | Enfoque | Recuerdo de odio (300 tuits Kaggle) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| T1 Text Keyword Layer | Capa léxica + regex | Determinista, sin entrenamiento | 74% | Apache-2.0 | HuggingFace (`ECE-Software/t1-text-keywords`) |
+| T1 Text Keyword Layer | Capa léxica + regex | Determinista, sin entrenamiento | 74% | Apache-2.0 | Hugging Face (`ECE-Software/t1-text-keywords`) |
 | toxic-bert | Modelo neuronal de clasificación | Transformer afinado para toxicidad | 81% | No disponible en la información proporcionada | Mencionado en la model card; enlace no disponible |
 | Combinación de ambos | Cascada léxica + neuronal | Pre-filtro + rescate | 90% | N/A | N/A |
 
@@ -91,11 +91,11 @@ No se dispone en la información proporcionada de otros comparadores directos (p
 - Datos de evaluación modestos: el 74%/81%/90% se midió sobre 300 tuits, un conjunto pequeño y de un único dominio; no hay validación en otros corpus.
 - Trazabilidad del lexicón: no se documenta la versión de HurtLex incluida ni si hay actualizaciones periódicas del léxico.
 - Licencia Apache-2.0: permite uso comercial, pero conviene verificar las condiciones de la fuente original de HurtLex, que no se detallan en la información disponible.
-- Metadatos incompletos: el repositorio registra 0 descargas y 0 likes, no declara pipeline y no lista idiomas en la ficha de HuggingFace.
+- Metadatos incompletos: el repositorio registra 0 descargas y 0 likes, no declara pipeline y no lista idiomas en la ficha de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ECE-Software/t1-text-keywords
+- Hugging Face: https://huggingface.co/ECE-Software/t1-text-keywords
 - No se han encontrado en los resultados de búsqueda web enlaces relevantes al modelo: las coincidencias se refieren a la institución educativa ECE (Escuela Central de Electrónica, Francia) y a un artículo sobre IA en educación infantil, sin relación con este componente.
 - Repositorio de código, paper o demo: no disponibles en la información proporcionada.
 - Enlace a HurtLex original: no disponible en la información proporcionada.

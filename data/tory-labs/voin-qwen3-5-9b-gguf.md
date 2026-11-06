@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato y tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tory-labs/voin-qwen3.5-9b-gguf` (este repo) | 8.953.803.264 | no disponible | GGUF Q4_K_M, 5,68 GB | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| `Qwen/Qwen3.5-9B` (original) | 8.953.803.264 | no disponible | safetensors (tamaño no indicado) | Apache 2.0 | HuggingFace, mantenido por Alibaba Qwen |
-| `unsloth/Qwen3.5-9B-GGUF` | 8.953.803.264 | no disponible | GGUF, varias cuantizaciones (no detalladas) | Apache 2.0 | HuggingFace, commit `3885219b6810` referenciado |
+| `tory-labs/voin-qwen3.5-9b-gguf` (este repo) | 8.953.803.264 | no disponible | GGUF Q4_K_M, 5,68 GB | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| `Qwen/Qwen3.5-9B` (original) | 8.953.803.264 | no disponible | safetensors (tamaño no indicado) | Apache 2.0 | Hugging Face, mantenido por Alibaba Qwen |
+| `unsloth/Qwen3.5-9B-GGUF` | 8.953.803.264 | no disponible | GGUF, varias cuantizaciones (no detalladas) | Apache 2.0 | Hugging Face, commit `3885219b6810` referenciado |
 
 No se dispone de datos de rendimiento que permitan comparar este modelo con alternativas de otras familias (Llama, Gemma, Mistral u otras de tamaño similar): no disponible.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento que permitan comparar este modelo con alte
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tory-labs/voin-qwen3.5-9b-gguf
+- Repositorio en Hugging Face: https://huggingface.co/tory-labs/voin-qwen3.5-9b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Conversión GGUF de unsloth (commit `3885219b6810`): https://huggingface.co/unsloth/Qwen3.5-9B-GGUF/tree/3885219b6810b007914f3a7950a8d1b469d598a5
 - Aplicación voin: https://github.com/su-record/voin

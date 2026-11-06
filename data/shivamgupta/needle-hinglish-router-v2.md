@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Needle-hinglish-router-v2 es un fine-tune de Cactus-Compute/needle3, un modelo pequeno disenado para ejecutarse en CPU, que actua como enrutador de acciones (action router) en conversaciones de atencion al cliente en hinglish (code-switching hindi-ingles). El autor es el usuario de HuggingFace shivamgupta, y el modelo se distribuye bajo licencia Apache 2.0. Su tarea principal no es la generacion libre de texto, sino transformar un registro estructurado de cliente mas una transcripcion de audio de cliente en llamadas de escritura resueltas (por ejemplo `cancel_order` sobre el pedido `FD4124`), o bien solicitar aclaracion al cliente cuando una referencia no se puede resolver.
+Needle-hinglish-router-v2 es un fine-tune de Cactus-Compute/needle3, un modelo pequeno disenado para ejecutarse en CPU, que actua como enrutador de acciones (action router) en conversaciones de atencion al cliente en hinglish (code-switching hindi-ingles). El autor es el usuario de Hugging Face shivamgupta, y el modelo se distribuye bajo licencia Apache 2.0. Su tarea principal no es la generacion libre de texto, sino transformar un registro estructurado de cliente mas una transcripcion de audio de cliente en llamadas de escritura resueltas (por ejemplo `cancel_order` sobre el pedido `FD4124`), o bien solicitar aclaracion al cliente cuando una referencia no se puede resolver.
 
-El modelo se compone de dos piezas: los pesos (needle3 con el adaptador LoRA `adapter_R_e15` fusionado, cuantizados en W4A8, en formato `.cact`) y el codigo del enrutador (`router_v2`, `resolver_v2`, esquemas de herramientas para siete tipos de agente, numconv, romanise), que no vive en el repositorio de HuggingFace sino en el monorepo de GitHub `shivamgcodes/s2s-hinglish-agent`. La relevancia actual del modelo reside en su enfoque: es un router de tool calling de dominio especifico, ejecutable en CPU, orientado a despliegues on-device o en workers de GPU de baja exigencia dentro de un pipeline de voz a voz (speech-to-speech) para soporte al cliente.
+El modelo se compone de dos piezas: los pesos (needle3 con el adaptador LoRA `adapter_R_e15` fusionado, cuantizados en W4A8, en formato `.cact`) y el codigo del enrutador (`router_v2`, `resolver_v2`, esquemas de herramientas para siete tipos de agente, numconv, romanise), que no vive en el repositorio de Hugging Face sino en el monorepo de GitHub `shivamgcodes/s2s-hinglish-agent`. La relevancia actual del modelo reside en su enfoque: es un router de tool calling de dominio especifico, ejecutable en CPU, orientado a despliegues on-device o en workers de GPU de baja exigencia dentro de un pipeline de voz a voz (speech-to-speech) para soporte al cliente.
 
 La informacion publicada no detalla el numero de parametros totales, la longitud de contexto ni la composicion completa del dataset de entrenamiento (el model card contiene secciones marcadas como TODO). El archivo de pesos en W4A8 ocupa 63.437.076 bytes, y el adaptador LoRA 7.906.616 bytes, lo que sitúa al modelo en la categoria de modelos compactos aptos para inferencia en CPU.
 
@@ -73,13 +73,13 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 - Alucinacion de referencias: al resolver identificadores (pedidos, cuentas, tarjetas) a partir de lenguaje natural, existe riesgo de asignar una referencia incorrecta. La salvaguarda prevista es el campo `ask`; las llamadas con `ask: true` no deben ejecutarse y deben derivarse a una aclaracion con el cliente.
 - Datos de entrenamiento sinteticos: el dataset base es sintetico (`hinglish-s2s-synthetic-calls`) con transcripciones de Whisper-Hinglish (limpias y degradadas con Opus), lo que puede introducir sesgos y limitar la generalizacion a audio real diverso.
 - Model card incompleta: varias secciones del README contienen marcadores TODO (resumen, descripcion del modelo, uso previsto y uso fuera de alcance), por lo que faltan datos oficiales sobre parametros, contexto y limites de uso.
-- Despliegue acoplado a codigo externo: el repositorio de HuggingFace contiene solo pesos, ejemplos y la model card; el codigo del router reside en un monorepo de GitHub, lo que anade una dependencia de mantenimiento y de versionado.
+- Despliegue acoplado a codigo externo: el repositorio de Hugging Face contiene solo pesos, ejemplos y la model card; el codigo del router reside en un monorepo de GitHub, lo que anade una dependencia de mantenimiento y de versionado.
 - Versionado de pesos: el repositorio incluye varios checkpoints del barrido de entrenamiento, y el modelo publicado en la raiz corresponde a la ejecucion R_e15; es necesario fijar explicitamente la version o checkpoint deseado para reproducir resultados.
 - Licencia: Apache 2.0 permite uso comercial, pero se recomienda revisar las condiciones de los datos de entrenamiento de origen y de la libreria `cactus-needle`.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/shivamgupta/needle-hinglish-router-v2
+- Repositorio del modelo en Hugging Face: https://huggingface.co/shivamgupta/needle-hinglish-router-v2
 - Modelo base: https://huggingface.co/Cactus-Compute/needle3
 - Dataset de entrenamiento: https://huggingface.co/datasets/shivamgupta/hinglish-s2s-synthetic-calls
 - Monorepo de GitHub (codigo del router): https://github.com/shivamgcodes/s2s-hinglish-agent

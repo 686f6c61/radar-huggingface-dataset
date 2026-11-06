@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `danarsakila-gmail-com/awie_2.2_1b.q5_k_m` es una publicacion de HuggingFace subida por el usuario `danarsakila-gmail-com`. El identificador sugiere que se trata de una cuantizacion en formato GGUF con el metodo Q5_K_M de un modelo de aproximadamente 1.000 millones de parametros, presumiblemente una version 2.2 de un proyecto llamado "awie". No se dispone de model card descriptiva: el README del repositorio unicamente contiene la declaracion de licencia `apache-2.0`.
+El repositorio `danarsakila-gmail-com/awie_2.2_1b.q5_k_m` es una publicacion de Hugging Face subida por el usuario `danarsakila-gmail-com`. El identificador sugiere que se trata de una cuantizacion en formato GGUF con el metodo Q5_K_M de un modelo de aproximadamente 1.000 millones de parametros, presumiblemente una version 2.2 de un proyecto llamado "awie". No se dispone de model card descriptiva: el README del repositorio unicamente contiene la declaracion de licencia `apache-2.0`.
 
 En el momento de la consulta, el repositorio registra 0 descargas y 1 like, con fecha de creacion y ultima actualizacion identicas (12 de septiembre de 2026), lo que indica que no ha recibido mantenimiento posterior a su publicacion. No se ha publicado informacion sobre el pipeline, los idiomas soportados, la arquitectura del modelo base, el contexto maximo ni los datos de entrenamiento.
 
@@ -71,7 +71,7 @@ No es posible establecer una comparativa fiable: se desconoce el modelo base, el
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos publicados |
 |---|---|---|---|---|---|
-| awie_2.2_1b.q5_k_m | ~1B (inferido) | no disponible | Apache 2.0 | HuggingFace | Ninguno |
+| awie_2.2_1b.q5_k_m | ~1B (inferido) | no disponible | Apache 2.0 | Hugging Face | Ninguno |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No es posible establecer una comparativa fiable: se desconoce el modelo base, el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danarsakila-gmail-com/awie_2.2_1b.q5_k_m
+- Repositorio en Hugging Face: https://huggingface.co/danarsakila-gmail-com/awie_2.2_1b.q5_k_m
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

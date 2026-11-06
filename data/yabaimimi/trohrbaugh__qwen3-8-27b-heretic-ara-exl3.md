@@ -67,8 +67,8 @@ No se dispone de datos de rendimiento para comparar este modelo con alternativas
 
 ## Enlaces
 
-- [HuggingFace: yabaimimi/trohrbaugh__Qwen3.8-27B-heretic-ara-EXL3](https://huggingface.co/yabaimimi/trohrbaugh__Qwen3.8-27B-heretic-ara-EXL3)
-- [HuggingFace: trohrbaugh/Qwen3.8-27B-heretic-ara](https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara/tree/main)
+- [Hugging Face: yabaimimi/trohrbaugh__Qwen3.8-27B-heretic-ara-EXL3](https://huggingface.co/yabaimimi/trohrbaugh__Qwen3.8-27B-heretic-ara-EXL3)
+- [Hugging Face: trohrbaugh/Qwen3.8-27B-heretic-ara](https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara/tree/main)
 - [GitHub: AlibabaCloud-Official/Qwen3.8-27B](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [QwenCloud: Qwen3.8-27B](https://www.qwencloud.com/models/qwen3.8-27b)
 - [LLM Explorer: Qwen3.8 27B Heretic Ara](https://llm-explorer.com/model/trohrbaugh%2FQwen3.8-27B-heretic-ara,3lOkoblJbLCrW6LcRlJIk)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-ceu-seed0` es un checkpoint de investigación publicado por el usuario de HuggingFace `sungjuncho`, derivado de Llama 3.1 8B Instruct de Meta tras un proceso de *machine unlearning*. No es un modelo de propósito general: es un artefacto experimental del proyecto TOFU-para, cuyo objetivo es separar dos fenómenos que habitualmente se confunden en la literatura de desaprendizaje: el *untraining* (eliminar exactamente las muestras concretas que se dieron al método) y el *unlearning* real (eliminar el conocimiento subyacente, que el modelo también había aprendido en otras formulaciones).
+`Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-ceu-seed0` es un checkpoint de investigación publicado por el usuario de Hugging Face `sungjuncho`, derivado de Llama 3.1 8B Instruct de Meta tras un proceso de *machine unlearning*. No es un modelo de propósito general: es un artefacto experimental del proyecto TOFU-para, cuyo objetivo es separar dos fenómenos que habitualmente se confunden en la literatura de desaprendizaje: el *untraining* (eliminar exactamente las muestras concretas que se dieron al método) y el *unlearning* real (eliminar el conocimiento subyacente, que el modelo también había aprendido en otras formulaciones).
 
 El punto de partida es `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0`, un Llama 3.1 8B Instruct ajustado sobre el dataset TOFU completo más dos versiones parafraseadas de cada par pregunta-respuesta. Sobre ese modelo se aplica CEU (un método de desaprendizaje implementado en el framework `open-unlearning` de locuslab) para olvidar el conjunto forget10 original (400 pares QA). El resultado es un modelo de 8.030.261.248 parámetros (aproximadamente 8B, coherente con la arquitectura Llama 3.1 8B) cuyo interés reside en las métricas de evaluación, no en su utilidad como asistente.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`...-unlearned-forget10-ceu-seed0`) | 8,03B | no disponible | Artefacto de desaprendizaje (CEU, forget10) | llama3.1 | HuggingFace, 0 descargas |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0` | ~8B | no disponible | Modelo base fine-tuneado sobre TOFU-para x2, sin desaprender | llama3.1 | HuggingFace |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0` | ~8B | no disponible | Referencia retenida (retain90), usada para calcular FADE y forget quality | llama3.1 | HuggingFace |
-| `meta-llama/Llama-3.1-8B-Instruct` | 8,03B | 128K (según Meta) | Asistente generalista | llama3.1 | HuggingFace |
+| Este checkpoint (`...-unlearned-forget10-ceu-seed0`) | 8,03B | no disponible | Artefacto de desaprendizaje (CEU, forget10) | llama3.1 | Hugging Face, 0 descargas |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0` | ~8B | no disponible | Modelo base fine-tuneado sobre TOFU-para x2, sin desaprender | llama3.1 | Hugging Face |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0` | ~8B | no disponible | Referencia retenida (retain90), usada para calcular FADE y forget quality | llama3.1 | Hugging Face |
+| `meta-llama/Llama-3.1-8B-Instruct` | 8,03B | 128K (según Meta) | Asistente generalista | llama3.1 | Hugging Face |
 
 La comparación relevante no es de rendimiento general, sino de comportamiento bajo el protocolo TOFU: el checkpoint aquí descrito presenta `model utility` de 0,000, frente a la utilidad esperada del Instruct original, lo que refleja el coste del desaprendizaje con CEU en esta configuración.
 
@@ -95,7 +95,7 @@ La comparación relevante no es de rendimiento general, sino de comportamiento b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-ceu-seed0
+- Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-ceu-seed0
 - Modelo base (fine-tune sobre TOFU-para x2): https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0
 - Referencia retain90: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0
 - Referencia retain90-forget10para: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para-seed0

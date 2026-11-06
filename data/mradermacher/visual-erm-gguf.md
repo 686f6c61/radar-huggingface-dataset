@@ -39,7 +39,7 @@ La innovacion tecnica destacable de esta publicacion concreta es la conversion a
 - Procesamiento de imagenes mediante el componente mmproj incluido en las cuantizaciones.
 - Ranking de respuestas candidatas para tareas de seleccion y filtrado de datos.
 - Uso como componente en pipelines de RLHF y evaluacion automatica de modelos.
-- Compatibilidad con endpoints (tag endpoints_compatible en HuggingFace).
+- Compatibilidad con endpoints (tag endpoints_compatible en Hugging Face).
 - Soporte de formato conversacional (tag conversational).
 - Capacidad de inferencia local mediante llama.cpp y derivados gracias al formato GGUF.
 - No se documentan capacidades de tool calling, function calling ni razonamiento multi-paso en la informacion disponible.
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Añadir a la VRAM el fichero mmproj correspondiente: 0,9 GB (Q8_0) o 1,3 GB (f16) para el procesamiento visual.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090 para cuantizaciones Q4 a Q8; A100 o H100 para f16 y para despliegues con concurrencia alta.
 - Cabe en GPU de consumo: si, desde cuantizaciones Q2_K en adelante; Q4_K_S y Q4_K_M son las recomendadas por el autor por equilibrio entre velocidad y calidad.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el tag endpoints_compatible sugiere soporte en endpoints de HuggingFace. El modelo base en safetensors puede servirse con vLLM o TGI si se dispone del formato original.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el tag endpoints_compatible sugiere soporte en endpoints de Hugging Face. El modelo base en safetensors puede servirse con vLLM o TGI si se dispone del formato original.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -74,8 +74,8 @@ No se dispone de informacion sobre modelos comparables de recompensa multimodal 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Visual-ERM-GGUF (este) | 8,19 B | no disponible | GGUF (Q2_K a f16) | apache-2.0 | HuggingFace, 394 descargas |
-| internlm/Visual-ERM (base) | 8,19 B | no disponible | safetensors | apache-2.0 | HuggingFace |
+| Visual-ERM-GGUF (este) | 8,19 B | no disponible | GGUF (Q2_K a f16) | apache-2.0 | Hugging Face, 394 descargas |
+| internlm/Visual-ERM (base) | 8,19 B | no disponible | safetensors | apache-2.0 | Hugging Face |
 | Alternativas de reward model multimodal | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

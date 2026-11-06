@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Se trata de un ajuste fino (fine-tune) del modelo fundacional de robotica NVIDIA GR00T N1.7-3B, publicado por el usuario liorbenhorin-nv en HuggingFace. No es un modelo de lenguaje generico, sino una politica vision-lenguaje-accion (VLA) especializada en una unica tarea de manipulacion con el brazo robotico de bajo coste SO-101: el manejo de viales con conciencia del layout de la escena ("layout aware") y con aleatorizacion de dominio procedural. El repositorio contiene unicamente la politica final, con 3.144.016.000 parametros (3,14 mil millones) almacenados en safetensors y un tamano de repositorio de 12,6 GB.
+Se trata de un ajuste fino (fine-tune) del modelo fundacional de robotica NVIDIA GR00T N1.7-3B, publicado por el usuario liorbenhorin-nv en Hugging Face. No es un modelo de lenguaje generico, sino una politica vision-lenguaje-accion (VLA) especializada en una unica tarea de manipulacion con el brazo robotico de bajo coste SO-101: el manejo de viales con conciencia del layout de la escena ("layout aware") y con aleatorizacion de dominio procedural. El repositorio contiene unicamente la politica final, con 3.144.016.000 parametros (3,14 mil millones) almacenados en safetensors y un tamano de repositorio de 12,6 GB.
 
 El entrenamiento se realizo con la libreria LeRobot sobre un subconjunto muy pequeno del dataset `so101_vials_dr_procedural_layout_aware_250ep_20261009`: exactamente los episodios 0 a 74, es decir 75 episodios y 27.028 fotogramas. Se ejecutaron 20.000 pasos de optimizador en una sola GPU RTX PRO 6000 Blackwell, con batch 16, semilla 42, autocast BF16 y parametros del modelo en FP32. Es relevante ahora porque demuestra que un fine-tune de GR00T N1.7 puede completarse en una unica GPU profesional, con `tune_visual=true` y `tune_llm=false`, lo que sitúa el coste de adaptacion de un VLA de 3B al alcance de laboratorios pequenos.
 
@@ -71,11 +71,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Tipo | Contexto / ventana de accion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| so101_vials_dr_procedural_layout_aware (este modelo) | 3,14 B | VLA fine-tune de GR00T N1.7 | ventana de accion de 16 pasos; contexto no disponible | no declarada | safetensors en HuggingFace, libreria lerobot |
-| nvidia/GR00T-N1.7-3B | 3 B (aproximado) | VLA fundacional | no disponible en esta busqueda | licencia de NVIDIA (verificar) | HuggingFace |
-| GR00T N1.5 | 3 B (aproximado) | VLA fundacional | no disponible en esta busqueda | licencia de NVIDIA (verificar) | HuggingFace |
+| so101_vials_dr_procedural_layout_aware (este modelo) | 3,14 B | VLA fine-tune de GR00T N1.7 | ventana de accion de 16 pasos; contexto no disponible | no declarada | safetensors en Hugging Face, libreria lerobot |
+| nvidia/GR00T-N1.7-3B | 3 B (aproximado) | VLA fundacional | no disponible en esta busqueda | licencia de NVIDIA (verificar) | Hugging Face |
+| GR00T N1.5 | 3 B (aproximado) | VLA fundacional | no disponible en esta busqueda | licencia de NVIDIA (verificar) | Hugging Face |
 | Physical Intelligence pi0 | 3,3 B (aproximado) | VLA con flow matching | no disponible en esta busqueda | no verificada | openpi |
-| SmolVLA | 450 M (aproximado) | VLA compacto | no disponible en esta busqueda | no verificada | HuggingFace / LeRobot |
+| SmolVLA | 450 M (aproximado) | VLA compacto | no disponible en esta busqueda | no verificada | Hugging Face / LeRobot |
 
 Los datos de los modelos comparables provienen de conocimiento general del ecosistema y no se han verificado en la informacion proporcionada; deben confirmarse en sus fichas oficiales antes de usarse en una decision tecnica. La diferencia principal de este modelo frente a todos ellos es su caracter de fine-tune de tarea unica sobre 75 episodios, no un modelo fundacional de proposito general.
 
@@ -95,7 +95,7 @@ Los datos de los modelos comparables provienen de conocimiento general del ecosi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liorbenhorin-nv/so101_vials_dr_procedural_layout_aware_first75ep_20261012_GR00T17_20k_visualtrue_1gpu
+- Modelo en Hugging Face: https://huggingface.co/liorbenhorin-nv/so101_vials_dr_procedural_layout_aware_first75ep_20261012_GR00T17_20k_visualtrue_1gpu
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset de origen: https://huggingface.co/datasets/liorbenhorin-nv/so101_vials_dr_procedural_layout_aware_250ep_20261009
 - Libreria LeRobot: https://github.com/huggingface/lerobot

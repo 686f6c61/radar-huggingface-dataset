@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nile-academy/pp-doclayout-v3 | Layout analysis (espejo) | no disponible | no aplica | Apache-2.0 | HuggingFace, ONNX y safetensors |
-| PaddlePaddle/PP-DocLayoutV3 | Layout analysis (upstream) | no disponible | no aplica | Apache-2.0 (según declaración upstream) | HuggingFace, pesos Paddle |
-| PaddlePaddle/PP-DocLayoutV3_onnx | Layout analysis (export ONNX oficial) | no disponible | no aplica | Apache-2.0 (según declaración upstream) | HuggingFace, ONNX |
-| PaddlePaddle/PP-DocLayoutV3_safetensors | Layout analysis (export safetensors oficial) | no disponible | no aplica | Apache-2.0 (según declaración upstream) | HuggingFace, safetensors |
+| nile-academy/pp-doclayout-v3 | Layout analysis (espejo) | no disponible | no aplica | Apache-2.0 | Hugging Face, ONNX y safetensors |
+| PaddlePaddle/PP-DocLayoutV3 | Layout analysis (upstream) | no disponible | no aplica | Apache-2.0 (según declaración upstream) | Hugging Face, pesos Paddle |
+| PaddlePaddle/PP-DocLayoutV3_onnx | Layout analysis (export ONNX oficial) | no disponible | no aplica | Apache-2.0 (según declaración upstream) | Hugging Face, ONNX |
+| PaddlePaddle/PP-DocLayoutV3_safetensors | Layout analysis (export safetensors oficial) | no disponible | no aplica | Apache-2.0 (según declaración upstream) | Hugging Face, safetensors |
 
 No se dispone de información sobre otros modelos de layout analysis comparables (por ejemplo, de otras familias) en la documentación proporcionada.
 

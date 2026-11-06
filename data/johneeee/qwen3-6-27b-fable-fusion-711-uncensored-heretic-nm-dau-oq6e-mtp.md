@@ -73,7 +73,7 @@ No se dispone de información suficiente para comparar el rendimiento con otros 
 - El modelo se describe como "uncensored", lo que puede implicar la ausencia de filtros de seguridad y una mayor probabilidad de generar contenido dañino o inapropiado. No se han publicado evaluaciones de seguridad.
 - No se han publicado evaluaciones de sesgos, alucinaciones ni robustez frente a ataques adversarios.
 - La longitud de contexto y los idiomas soportados no están documentados, lo que limita su integración en sistemas multilingües o con dependencias de contexto largo.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica una validación comunitaria nula y un riesgo de errores no detectados.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica una validación comunitaria nula y un riesgo de errores no detectados.
 
 ## Enlaces
 

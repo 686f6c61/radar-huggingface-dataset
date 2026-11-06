@@ -2,9 +2,9 @@
 
 ## Resumen
 
-R1-train-test es un adaptador LoRA (PEFT) publicado por el usuario master103525 en HuggingFace, entrenado mediante SFT sobre el modelo base unsloth/Meta-Llama-3.1-8B-Instruct. Se trata, por tanto, de un ajuste fino ligero de un transformer decoder-only de 8.000 millones de parametros, no de un modelo completo: el repositorio contiene unicamente los pesos del adaptador (1,4 GB en formato safetensors) y requiere descargar y cargar aparte el modelo base para poder ejecutarse.
+R1-train-test es un adaptador LoRA (PEFT) publicado por el usuario master103525 en Hugging Face, entrenado mediante SFT sobre el modelo base unsloth/Meta-Llama-3.1-8B-Instruct. Se trata, por tanto, de un ajuste fino ligero de un transformer decoder-only de 8.000 millones de parametros, no de un modelo completo: el repositorio contiene unicamente los pesos del adaptador (1,4 GB en formato safetensors) y requiere descargar y cargar aparte el modelo base para poder ejecutarse.
 
-El nombre del repositorio ("R1-train-test") y el hecho de que no se haya publicado ninguna model card real (la existente es la plantilla vacia de HuggingFace, con todos los campos marcados como "[More Information Needed]") apuntan a un experimento de entrenamiento o a una prueba tecnica de pipeline, mas que a un modelo destinado a produccion. El repositorio acumula 0 descargas y 0 "likes", y la licencia no esta declarada.
+El nombre del repositorio ("R1-train-test") y el hecho de que no se haya publicado ninguna model card real (la existente es la plantilla vacia de Hugging Face, con todos los campos marcados como "[More Information Needed]") apuntan a un experimento de entrenamiento o a una prueba tecnica de pipeline, mas que a un modelo destinado a produccion. El repositorio acumula 0 descargas y 0 "likes", y la licencia no esta declarada.
 
 La relevancia de esta ficha es, por tanto, acotada: sirve como referencia de que existe un adaptador LoRA sobre Llama 3.1 8B Instruct con contexto de hasta 128.000 tokens en el modelo base, pero carece de documentacion de entrenamiento, de evaluacion y de licencia explicita, lo que limita seriamente su uso fuera de un entorno de pruebas.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| master103525/R1-train-test (adaptador LoRA) | 8.030 M (base) + adaptador | 128.000 tokens (base) | No disponible | Publico en HuggingFace, 0 descargas | Plantilla vacia, sin datos de entrenamiento ni evaluacion |
+| master103525/R1-train-test (adaptador LoRA) | 8.030 M (base) + adaptador | 128.000 tokens (base) | No disponible | Publico en Hugging Face, 0 descargas | Plantilla vacia, sin datos de entrenamiento ni evaluacion |
 | unsloth/Meta-Llama-3.1-8B-Instruct (modelo base) | 8.030 M | 128.000 tokens | Llama 3.1 Community License | Publico y ampliamente utilizado | Model card completa y evaluada por Meta |
 | Meta-Llama-3.1-8B-Instruct (original de Meta) | 8.030 M | 128.000 tokens | Llama 3.1 Community License | Publico | Model card completa con benchmarks publicados |
 
@@ -80,7 +80,7 @@ No se han localizado en la busqueda web adaptadores LoRA comparables de la misma
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace: no hay datos de entrenamiento, hiperparametros, dataset ni proceso de evaluacion.
+- La model card es la plantilla por defecto de Hugging Face: no hay datos de entrenamiento, hiperparametros, dataset ni proceso de evaluacion.
 - La licencia no esta declarada. Aunque el modelo base usa la Llama 3.1 Community License, la ausencia de licencia explicita en el repositorio impide confirmar si el adaptador puede usarse comercialmente.
 - No hay resultados de benchmarks, por lo que no existe evidencia de que el ajuste mejore al modelo base en ninguna tarea; podria incluso degradarlo.
 - Riesgo alto de alucinacion heredado del modelo base, especialmente en dominios especializados y en preguntas factuales sin contexto.
@@ -89,7 +89,7 @@ No se han localizado en la busqueda web adaptadores LoRA comparables de la misma
 - La fecha de creacion registrada (2026-09-12) y la de actualizacion son practicamente identicas y no hay historial de versiones, lo que sugiere un repositorio abandonado tras la subida.
 - Los idiomas realmente soportados por el adaptador no estan verificados; los del modelo base no son necesariamente los que el ajuste conserva.
 - No se recomienda su uso en produccion sin una evaluacion propia previa y sin aclarar la situacion de licencia.
-- El tag `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre calculo de emisiones de carbono, citado en la plantilla de HuggingFace, y no a un paper de este modelo.
+- El tag `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre calculo de emisiones de carbono, citado en la plantilla de Hugging Face, y no a un paper de este modelo.
 
 ## Enlaces
 

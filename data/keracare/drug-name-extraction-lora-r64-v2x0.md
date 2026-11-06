@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `KeraCare/drug-name-extraction-lora-r64-v2x0` | Adaptador LoRA extraido por SVD | Rank 64 sobre 220 modulos; ~0,1 GB | No disponible | No disponible | Publico en HuggingFace, 0 descargas |
-| `KeraCare/drug_name_extraction_v2x0` | Ajuste fino completo (origen) | No disponible | No disponible | No disponible | Publico en HuggingFace |
-| `zai-org/GLM-OCR` | Modelo base | No disponible | No disponible | No disponible | Publico en HuggingFace |
+| `KeraCare/drug-name-extraction-lora-r64-v2x0` | Adaptador LoRA extraido por SVD | Rank 64 sobre 220 modulos; ~0,1 GB | No disponible | No disponible | Publico en Hugging Face, 0 descargas |
+| `KeraCare/drug_name_extraction_v2x0` | Ajuste fino completo (origen) | No disponible | No disponible | No disponible | Publico en Hugging Face |
+| `zai-org/GLM-OCR` | Modelo base | No disponible | No disponible | No disponible | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento que permitan comparar el adaptador con alternativas de la misma categoria (otros extractores de nombres de farmacos o LoRA de extraccion de entidades).
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento que permitan comparar el adaptador con alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KeraCare/drug-name-extraction-lora-r64-v2x0
+- Modelo en Hugging Face: https://huggingface.co/KeraCare/drug-name-extraction-lora-r64-v2x0
 - Modelo base: https://huggingface.co/zai-org/GLM-OCR
 - Modelo de origen del ajuste: https://huggingface.co/KeraCare/drug_name_extraction_v2x0
 - Repositorio PEFT: https://github.com/huggingface/peft

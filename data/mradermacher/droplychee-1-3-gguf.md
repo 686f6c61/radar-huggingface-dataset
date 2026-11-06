@@ -6,7 +6,7 @@ DropLychee-1.3-GGUF es la versión cuantizada en formato GGUF del modelo DropLyc
 
 La relevancia de esta publicación radica en que facilita el despliegue local del modelo en hardware de consumo mediante cuantizaciones que van desde Q2_K (11 GB) hasta Q8_0 (29,1 GB), además de incluir los ficheros mmproj necesarios para el procesamiento multimodal (visión). Al tratarse de cuantizaciones estáticas y no ponderadas por imatrix, el autor advierte de que no hay planes inmediatos para versiones imatrix, aunque acepta peticiones vía discusión comunitaria.
 
-La información pública disponible es limitada: no se especifican detalles sobre el entrenamiento, la longitud de contexto, los idiomas soportados más allá del inglés, ni se han publicado resultados de benchmarks. Esta ficha refleja exclusivamente los datos verificables en la model card y los metadatos de HuggingFace.
+La información pública disponible es limitada: no se especifican detalles sobre el entrenamiento, la longitud de contexto, los idiomas soportados más allá del inglés, ni se han publicado resultados de benchmarks. Esta ficha refleja exclusivamente los datos verificables en la model card y los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 

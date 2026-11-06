@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: para un modelo de 2.8B en precisión FP16, se estima un uso de aproximadamente 5.6 GB solo para los pesos, más overhead de ejecución. En cuantización de 8 bits, la estimación rondaría los 2.8 GB. Estos valores son orientativos y no están confirmados por el autor.
 - GPU recomendadas: no se han publicado recomendaciones oficiales. Por tamaño, el modelo podría ejecutarse en GPUs de consumo como RTX 3060 (12 GB) o superiores.
 - Compatibilidad con consumer GPU: cabe en la mayoría de GPUs de consumo con 8 GB o más de VRAM, dependiendo de la cuantización.
-- Opciones de despliegue: al ser un modelo de HuggingFace, puede cargarse con la librería transformers, y es compatible con frameworks como vLLM, llama.cpp o Ollama si se convierte a GGUF, aunque no hay documentación oficial.
+- Opciones de despliegue: al ser un modelo de Hugging Face, puede cargarse con la librería transformers, y es compatible con frameworks como vLLM, llama.cpp o Ollama si se convierte a GGUF, aunque no hay documentación oficial.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se han publicado benchmarks comparativos en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuerubywang/dpo-pythia2.8b-ultrafeedback-checkpoint-1000
+- Modelo en Hugging Face: https://huggingface.co/yuerubywang/dpo-pythia2.8b-ultrafeedback-checkpoint-1000
 - Modelo base SFT: https://huggingface.co/yuerubywang/sft-pythia2.8b-ultra200k
 - Modelo hermano PPO: https://huggingface.co/yuerubywang/ppo-pythia2.8b-ultra200k
 - Modelo Pythia 2.8B original: https://huggingface.co/EleutherAI/pythia-2.8b

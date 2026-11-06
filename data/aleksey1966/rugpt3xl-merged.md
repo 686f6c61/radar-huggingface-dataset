@@ -23,7 +23,7 @@ Este merge es relevante para desarrolladores que trabajan con generación de tex
 
 El modelo base ruGPT3XL fue desarrollado por SberDevices utilizando los frameworks DeepSpeed y Megatron-LM. Se entrenó con una longitud de secuencia de 512 tokens durante 4 épocas sobre un dataset de 80 mil millones de tokens, seguido de un ajuste fino de 1 época con secuencias de 2048 tokens. La arquitectura incorpora bloques de atención sparse para reducir el coste computacional y la memoria, lo que permitió un entrenamiento total de aproximadamente 10 días en 256 GPUs. La perplejidad final en el conjunto de prueba fue de 12.05.
 
-El merge realizado por aleksey1966 combina los pesos de dos versiones: una conversión del checkpoint original a formato HuggingFace (evilfreelancer/ruGPT3XL) y una versión con ajuste fino supervisado (shannonkun/rugpt3xl-1.3b-sft). La interpolación slerp (spherical linear interpolation) con t=0.5 produce una mezcla equilibrada de ambos modelos. No se han publicado detalles sobre el proceso de fusión ni sobre el dataset «Петрович» utilizado posteriormente para el fine-tuning.
+El merge realizado por aleksey1966 combina los pesos de dos versiones: una conversión del checkpoint original a formato Hugging Face (evilfreelancer/ruGPT3XL) y una versión con ajuste fino supervisado (shannonkun/rugpt3xl-1.3b-sft). La interpolación slerp (spherical linear interpolation) con t=0.5 produce una mezcla equilibrada de ambos modelos. No se han publicado detalles sobre el proceso de fusión ni sobre el dataset «Петрович» utilizado posteriormente para el fine-tuning.
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks específicos para este modelo merge
 
 - VRAM estimada: el modelo tiene 1.4B parámetros. En precisión fp16, los pesos ocupan aproximadamente 2.8 GB (tamaño del repositorio). Para inferencia con batch pequeño, se recomienda al menos 4 GB de VRAM. Con cuantización a 8 bits (~1.4 GB) o 4 bits (~0.7 GB) podría ejecutarse en GPUs con 2-4 GB, aunque no se han proporcionado archivos cuantizados.
 - GPUs recomendadas: tarjetas consumer como NVIDIA RTX 3060 (12 GB), RTX 4060 (8 GB) o superiores son suficientes. También puede ejecutarse en GPUs de datacenter como A10 o T4.
-- Despliegue: compatible con HuggingFace Transformers (usando `trust_remote_code=True`), así como con frameworks de inferencia como vLLM, llama.cpp (si se convierte a GGUF) u Ollama (tras conversión).
+- Despliegue: compatible con Hugging Face Transformers (usando `trust_remote_code=True`), así como con frameworks de inferencia como vLLM, llama.cpp (si se convierte a GGUF) u Ollama (tras conversión).
 - Latencia y throughput: no se han publicado datos específicos. En una GPU moderna, un modelo de 1.4B puede generar decenas de tokens por segundo, pero depende de la implementación y la longitud de secuencia.
 
 ## Comparativa con modelos similares
@@ -68,8 +68,8 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- [HuggingFace - aleksey1966/ruGPT3XL-merged](https://huggingface.co/aleksey1966/ruGPT3XL-merged)
-- [HuggingFace - ai-forever/rugpt3xl (modelo base)](https://huggingface.co/ai-forever/rugpt3xl)
+- [Hugging Face - aleksey1966/ruGPT3XL-merged](https://huggingface.co/aleksey1966/ruGPT3XL-merged)
+- [Hugging Face - ai-forever/rugpt3xl (modelo base)](https://huggingface.co/ai-forever/rugpt3xl)
 - [GitHub - EvilFreelancer/rugpt3xl-convert](https://github.com/EvilFreelancer/rugpt3xl-convert)
 - [DeepWiki - ruGPT3XL](https://deepwiki.com/ai-forever/ru-gpts/2.1-rugpt3xl)
 - [GitHub - esper21/ru-gpts-sberbank](https://github.com/esper21/ru-gpts-sberbank)

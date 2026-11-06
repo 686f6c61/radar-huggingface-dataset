@@ -63,6 +63,6 @@ No se dispone de comparativas publicadas con otros modelos. Al ser un checkpoint
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h004.sft-v1.step_8
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h004.sft-v1.step_8
 - Dataset asociado: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice de datasets de agentic-ptb: https://huggingface.co/datasets/agentic-ptb/INDEX

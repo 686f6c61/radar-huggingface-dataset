@@ -70,6 +70,6 @@ No disponible. Este repositorio es un dataset, no un modelo, y no se dispone de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/innovazets/besein-datasets
+- Repositorio en Hugging Face: https://huggingface.co/innovazets/besein-datasets
 - Repositorio de pesos relacionado mencionado en la model card: `innovazets/besein-models` (no se dispone de URL directa)
 - Repositorio de scripts mencionado en la model card: `pedrobesein/beseinvideotraining` (no se dispone de URL directa)

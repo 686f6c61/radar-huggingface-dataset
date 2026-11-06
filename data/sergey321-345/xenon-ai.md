@@ -2,9 +2,9 @@
 
 ## Resumen
 
-XENON.AI es un modelo publicado en HuggingFace por el usuario Sergey321-345 bajo licencia Apache 2.0. La model card asociada al repositorio es practicamente vacia: unicamente declara la licencia, sin aportar informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas y cuenta con un unico "like", lo que sugiere que se trata de una publicacion reciente o de un artefacto experimental sin difusion.
+XENON.AI es un modelo publicado en Hugging Face por el usuario Sergey321-345 bajo licencia Apache 2.0. La model card asociada al repositorio es practicamente vacia: unicamente declara la licencia, sin aportar informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas y cuenta con un unico "like", lo que sugiere que se trata de una publicacion reciente o de un artefacto experimental sin difusion.
 
-No es posible determinar a partir de la informacion disponible que problema resuelve el modelo, que arquitectura emplea ni cual es su longitud de contexto. La ausencia de pipeline declarado en HuggingFace impide ademas inferir la tarea principal (text-generation, text2text, etc.). Cualquier evaluacion tecnica seria requiere consultar directamente los archivos del repositorio (pesos, config.json, tokenizer) o contactar con el autor.
+No es posible determinar a partir de la informacion disponible que problema resuelve el modelo, que arquitectura emplea ni cual es su longitud de contexto. La ausencia de pipeline declarado en Hugging Face impide ademas inferir la tarea principal (text-generation, text2text, etc.). Cualquier evaluacion tecnica seria requiere consultar directamente los archivos del repositorio (pesos, config.json, tokenizer) o contactar con el autor.
 
 Por tanto, esta ficha se limita a documentar los metadatos verificables y a senalar explicitamente los datos no disponibles, sin especular sobre caracteristicas del modelo.
 
@@ -37,7 +37,7 @@ Tampoco se documentan innovaciones tecnicas destacables (decodificacion especula
 
 ## Casos de uso
 
-No es posible recomendar casos de uso concretos sin conocer la arquitectura, el tamano, la tarea declarada y el rendimiento del modelo. La ausencia de pipeline en HuggingFace y de cualquier descripcion funcional impide justificar tecnicamente un escenario de aplicacion. Se recomienda, antes de plantear cualquier uso en produccion, inspeccionar los archivos del repositorio y ejecutar una evaluacion propia.
+No es posible recomendar casos de uso concretos sin conocer la arquitectura, el tamano, la tarea declarada y el rendimiento del modelo. La ausencia de pipeline en Hugging Face y de cualquier descripcion funcional impide justificar tecnicamente un escenario de aplicacion. Se recomienda, antes de plantear cualquier uso en produccion, inspeccionar los archivos del repositorio y ejecutar una evaluacion propia.
 
 ## Benchmarks y rendimiento
 
@@ -66,4 +66,4 @@ No disponible. Sin datos sobre parametros, contexto, tarea o rendimiento no es p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sergey321-345/XENON.AI
+- Hugging Face: https://huggingface.co/Sergey321-345/XENON.AI

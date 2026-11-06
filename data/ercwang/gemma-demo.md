@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ercwang/gemma-demo es un modelo de generacion de texto publicado en HuggingFace por el usuario ercwang. Segun los metadatos de la ficha, se trata de un ajuste fino (finetune) del modelo base google/gemma-3-270m, lo que lo situa en la categoria de modelos muy pequenos orientados a generacion de texto con la libreria transformers y, segun las etiquetas, con soporte para Keras.
+ercwang/gemma-demo es un modelo de generacion de texto publicado en Hugging Face por el usuario ercwang. Segun los metadatos de la ficha, se trata de un ajuste fino (finetune) del modelo base google/gemma-3-270m, lo que lo situa en la categoria de modelos muy pequenos orientados a generacion de texto con la libreria transformers y, segun las etiquetas, con soporte para Keras.
 
 La model card publicada es minima: se limita al titulo "Gemma demo" y a la frase "A sample model". No incluye descripcion de arquitectura, datos de entrenamiento, casos de uso ni resultados de evaluacion. El repositorio registra 0 descargas y 1 like en el momento de la consulta, por lo que cabe interpretarlo como un experimento o una demostracion de caracter personal mas que como un modelo listo para produccion.
 
@@ -42,7 +42,7 @@ La unica innovacion tecnica declarada implicitamente es el uso de Keras como par
 ## Casos de uso
 
 - Pruebas de integracion con transformers: el modelo puede cargarse como un checkpoint cualquiera de la libreria transformers para verificar que un pipeline de generacion de texto funciona de extremo a extremo, dado que es un finetune de un modelo base pequeno y conocido.
-- Demostracion educativa de finetuning: sirve como ejemplo de como se publica un ajuste fino sobre google/gemma-3-270m, util en talleres o tutoriales sobre el ciclo completo de entrenamiento y subida a HuggingFace.
+- Demostracion educativa de finetuning: sirve como ejemplo de como se publica un ajuste fino sobre google/gemma-3-270m, util en talleres o tutoriales sobre el ciclo completo de entrenamiento y subida a Hugging Face.
 - Experimentacion en hardware muy limitado: al derivar de un modelo base de 270M de parametros, es plausible ejecutarlo en CPU o en GPUs de gama de entrada, lo que permite prototipar sin infraestructura dedicada. Requiere verificacion propia.
 - Generacion de texto de baja exigencia: tareas de autocompletado, reescritura breve o generacion de borradores donde no se requiera alta calidad ni coherencia a largo plazo, siempre que las pruebas propias confirmen un rendimiento aceptable.
 - Base para nuevos finetunes: al estar bajo licencia Apache 2.0 y ser un modelo pequeno, puede emplearse como punto de partida para ajustes especificos de dominio en entornos de investigacion.
@@ -69,8 +69,8 @@ Las siguientes cifras son estimaciones derivadas del tamano del modelo base (270
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ercwang/gemma-demo | no disponible (base 270M) | no disponible | apache-2.0 | HuggingFace, 0 descargas | Finetune de google/gemma-3-270m; model card minima |
-| google/gemma-3-270m | 270M (segun denominacion) | no disponible en la informacion facilitada | no disponible en la informacion facilitada | HuggingFace | Modelo base del anterior |
+| ercwang/gemma-demo | no disponible (base 270M) | no disponible | apache-2.0 | Hugging Face, 0 descargas | Finetune de google/gemma-3-270m; model card minima |
+| google/gemma-3-270m | 270M (segun denominacion) | no disponible en la informacion facilitada | no disponible en la informacion facilitada | Hugging Face | Modelo base del anterior |
 | Alternativas de ~300M | no disponible | no disponible | no disponible | no disponible | No se dispone de datos suficientes para seleccionar comparables fiables |
 
 No se dispone de informacion suficiente para establecer una comparativa de rendimiento con modelos de la misma categoria.
@@ -88,6 +88,6 @@ No se dispone de informacion suficiente para establecer una comparativa de rendi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ercwang/gemma-demo
+- Hugging Face: https://huggingface.co/ercwang/gemma-demo
 - Modelo base: https://huggingface.co/google/gemma-3-270m
 - Paper, blog, repositorio o demo del autor: no disponible en la informacion facilitada.

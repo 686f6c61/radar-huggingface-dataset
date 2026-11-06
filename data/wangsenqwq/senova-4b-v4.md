@@ -87,6 +87,6 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/WangSenQWQ/Senova-4B-v4
+- Hugging Face: https://huggingface.co/WangSenQWQ/Senova-4B-v4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

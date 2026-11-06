@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 - VRAM estimada para inferencia: entre 2,0 GB (Q2_K) y 8,5 GB (f16), dependiendo de la cuantizacion elegida.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones Q4_K_M o superiores. Para f16 se recomienda una GPU con 10 GB o mas.
 - Compatibilidad con consumer GPU: si, el modelo cabe en GPUs de consumo como RTX 3060 (12 GB), RTX 4060 (8 GB) o superiores.
-- Opciones de despliegue: compatible con llama.cpp, Ollama, vLLM y TGI, asi como con el ecosistema transformers de HuggingFace.
+- Opciones de despliegue: compatible con llama.cpp, Ollama, vLLM y TGI, asi como con el ecosistema transformers de Hugging Face.
 - Latencia y throughput: no disponible, pero al ser un modelo de 4B, se espera una latencia baja en hardware moderno, con velocidades de generacion de 20-40 tokens/segundo en GPUs de gama media.
 
 ## Comparativa con modelos similares
@@ -79,8 +79,8 @@ CogEvol-4B se posiciona como una alternativa ligera y de codigo abierto frente a
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/CogEvol-4B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/CogEvol/CogEvol-4B
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/CogEvol-4B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/CogEvol/CogEvol-4B
 - Repositorio de GitHub: https://github.com/CogEvol/CogEvol-4B/tree/main/
 - Paper en arXiv: https://arxiv.org/html/2608.30968
 - Pagina de modelos de mradermacher: https://huggingface.co/mradermacher/models

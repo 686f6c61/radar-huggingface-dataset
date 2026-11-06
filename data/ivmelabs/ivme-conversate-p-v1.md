@@ -90,8 +90,8 @@ No se dispone en la informacion proporcionada de resultados de benchmarks de mod
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| İvme-Conversate-P-v1 | 3,23 M | 1024 | Apache 2.0 | HuggingFace (safetensors) | Estudiante destilado, solo ingles |
-| İvme-Conversate-v3-Base | 24,8 M | no disponible | no disponible | HuggingFace | Profesor, mismo tokenizador y arquitectura |
+| İvme-Conversate-P-v1 | 3,23 M | 1024 | Apache 2.0 | Hugging Face (safetensors) | Estudiante destilado, solo ingles |
+| İvme-Conversate-v3-Base | 24,8 M | no disponible | no disponible | Hugging Face | Profesor, mismo tokenizador y arquitectura |
 | Otras alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible | Sin datos en la informacion disponible |
 
 ## Limitaciones y advertencias
@@ -106,7 +106,7 @@ No se dispone en la informacion proporcionada de resultados de benchmarks de mod
 - No se han publicado cuantizaciones oficiales ni pesos GGUF; cualquier conversion corre a cuenta del usuario.
 
 ## Enlaces
-- HuggingFace (modelo): https://huggingface.co/IvmeLabs/Ivme-Conversate-P-v1
+- Hugging Face (modelo): https://huggingface.co/IvmeLabs/Ivme-Conversate-P-v1
 - Modelo base (profesor): https://huggingface.co/IvmeLabs/Ivme-Conversate-v3-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Paper de XSA (Exclusive Self Attention): arXiv:2603.09078

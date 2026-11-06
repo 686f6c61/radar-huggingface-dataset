@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ornith-1.0-35B es un modelo de lenguaje de la familia Ornith-1.0, presentada por DeepReinforce (el repositorio consultado es un reupload en GGUF bajo la cuenta de HuggingFace `Galexc26`) como una familia de modelos abiertos orientada especificamente a "agentic coding", es decir, a agentes que operan sobre terminales, repositorios y entornos de desarrollo. Segun la model card, la familia se publica en cuatro tamanos: 9B denso, 31B denso, 35B MoE y 397B MoE, todos ellos post-entrenados sobre modelos base de las familias Gemma 4 y Qwen 3.5.
+Ornith-1.0-35B es un modelo de lenguaje de la familia Ornith-1.0, presentada por DeepReinforce (el repositorio consultado es un reupload en GGUF bajo la cuenta de Hugging Face `Galexc26`) como una familia de modelos abiertos orientada especificamente a "agentic coding", es decir, a agentes que operan sobre terminales, repositorios y entornos de desarrollo. Segun la model card, la familia se publica en cuatro tamanos: 9B denso, 31B denso, 35B MoE y 397B MoE, todos ellos post-entrenados sobre modelos base de las familias Gemma 4 y Qwen 3.5.
 
 La variante documentada aqui es la de 35B en arquitectura Mixture of Experts (MoE), disenada para despliegue en una sola GPU. El dato real de parametros reportado en safetensors es de 34.660.610.688 parametros totales, lo que confirma la denominacion comercial de 35B. El repositorio pesa 180,7 GB, coherente con un paquete GGUF que agrupa multiples niveles de cuantizacion de un modelo de este tamano.
 
@@ -93,7 +93,7 @@ Advertencia: las cifras de los modelos comparados proceden exclusivamente de la 
 ## Limitaciones y advertencias
 
 - La model card disponible esta truncada: falta la fila final de la tabla de benchmarks (SWE-bench Mu...), asi que el perfil de rendimiento publicado esta incompleto.
-- El repositorio de HuggingFace corresponde a la cuenta `Galexc26`, mientras que el enlace de licencia de la model card apunta a `deepreinforce-ai/Ornith-1.0-35B-GGUF`. Es probable que se trate de un reupload o espejo de la publicacion original, sin que se pueda confirmar la integridad ni la fidelidad de los pesos cuantizados.
+- El repositorio de Hugging Face corresponde a la cuenta `Galexc26`, mientras que el enlace de licencia de la model card apunta a `deepreinforce-ai/Ornith-1.0-35B-GGUF`. Es probable que se trate de un reupload o espejo de la publicacion original, sin que se pueda confirmar la integridad ni la fidelidad de los pesos cuantizados.
 - El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, por lo que no existe validacion comunitaria de los artefactos publicados. Conviene verificar los hashes antes de usarlos en produccion.
 - No se declaran idiomas soportados. El enfoque en codigo agentico sugiere un sesgo hacia ingles en documentacion, comentarios y mensajes de error, con rendimiento incierto en castellano.
 - Riesgo de alucinacion: no se publican tasas de hallucination ni evaluaciones de fidelidad. En tareas agenticas el riesgo principal no es la invencion de texto, sino la ejecucion de comandos destructivos o la aplicacion de parches incorrectos; se recomienda ejecucion en sandbox y validacion por tests.
@@ -105,7 +105,7 @@ Advertencia: las cifras de los modelos comparados proceden exclusivamente de la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Galexc26/Ornith-1.0-35B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Galexc26/Ornith-1.0-35B-GGUF
 - Enlace de licencia referenciado en la model card: https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B-GGUF/blob/main/LICENSE
 - Blog de Ornith (DeepReinforce): https://deep-reinforce.com/ornith.html
 - Paper, repositorio de codigo, demostraciones o informes tecnicos: no disponibles en la informacion proporcionada.

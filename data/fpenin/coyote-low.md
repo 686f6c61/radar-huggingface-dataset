@@ -18,7 +18,7 @@ El modelo se distribuye como GGUF Q4_K_M de 1,9 GB y está pensado para ejecutar
 | Longitud de contexto | 4096 tokens (longitud de secuencia de entrenamiento y contexto de servicio) |
 | Tipos de cuantización | Q4_K_M (GGUF distribuido); pesos fusionados exportados también en F16 |
 | Idiomas soportados | Inglés y español (incluye español rioplatense, spanglish y erratas) |
-| Licencia | qwen-research (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-research (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (Q4_K_M); LoRA fusionado en pesos de 16 bits antes de la conversión |
 | Modelo base | Qwen/Qwen2.5-Coder-3B-Instruct |
 | Método de ajuste | QLoRA (base en 4 bits) con Unsloth + TRL SFTTrainer |
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Coyote Low | 3,1B | 4096 | Enrutador de peticiones para agentes de código | qwen-research | HuggingFace (GGUF Q4_K_M) |
-| Qwen2.5-Coder-3B-Instruct | 3,1B | 32 768 (según el modelo base; no confirmado en esta ficha) | Generación de código de propósito general | qwen-research | HuggingFace |
+| Coyote Low | 3,1B | 4096 | Enrutador de peticiones para agentes de código | qwen-research | Hugging Face (GGUF Q4_K_M) |
+| Qwen2.5-Coder-3B-Instruct | 3,1B | 32 768 (según el modelo base; no confirmado en esta ficha) | Generación de código de propósito general | qwen-research | Hugging Face |
 | Modelos de frontera en la nube (p. ej. GPT, Claude) | No disponible | No disponible | Generación de código y razonamiento general | Propietaria | API |
 
 La comparación relevante no es de rendimiento bruto sino de función: Coyote Low no compite con su modelo base en generación de código, sino que lo sustituye por una tarea estrecha de clasificación y emisión de comandos. Frente a los modelos de frontera, su ventaja es el coste cero en tokens de nube y la ejecución local; su desventaja es que no genera código ni razona, solo decide si hay que escalar. No se dispone de datos de benchmarks que permitan comparar precisión de enrutamiento con alternativas.
@@ -89,7 +89,7 @@ La comparación relevante no es de rendimiento bruto sino de función: Coyote Lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpenin/coyote-low
+- Modelo en Hugging Face: https://huggingface.co/fpenin/coyote-low
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct/blob/main/LICENSE
 - OpenCode (harness de integración): https://github.com/sst/opencode

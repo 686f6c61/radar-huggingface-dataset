@@ -78,7 +78,7 @@ La comparativa se basa en las características públicas de cada modelo. No se d
 
 ## Enlaces
 
-- [Repositorio HuggingFace: kerasformers/tipsv2-so400m14](https://huggingface.co/kerasformers/tipsv2-so400m14)
+- [Repositorio Hugging Face: kerasformers/tipsv2-so400m14](https://huggingface.co/kerasformers/tipsv2-so400m14)
 - [Model card original: google/tipsv2-so400m14](https://huggingface.co/google/tipsv2-so400m14)
 - [Paper TIPSv2 (arXiv:2604.12012)](https://huggingface.co/papers/2604.12012)
 - [GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)

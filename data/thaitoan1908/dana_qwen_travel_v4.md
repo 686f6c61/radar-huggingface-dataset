@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`thaitoan1908/dana_qwen_travel_v4` es un adaptador LoRA publicado en HuggingFace por el usuario thaitoan1908, construido sobre el modelo base Qwen/Qwen2.5-3B-Instruct. No se trata de un modelo entrenado desde cero, sino de un ajuste fino mediante PEFT (Parameter-Efficient Fine-Tuning) que se distribuye como pesos de adaptador en formato safetensors, con un tamano de repositorio de aproximadamente 0,1 GB. El nombre del identificador sugiere una especializacion en el dominio de viajes, aunque la model card no confirma explicitamente el proposito ni el conjunto de datos empleado.
+`thaitoan1908/dana_qwen_travel_v4` es un adaptador LoRA publicado en Hugging Face por el usuario thaitoan1908, construido sobre el modelo base Qwen/Qwen2.5-3B-Instruct. No se trata de un modelo entrenado desde cero, sino de un ajuste fino mediante PEFT (Parameter-Efficient Fine-Tuning) que se distribuye como pesos de adaptador en formato safetensors, con un tamano de repositorio de aproximadamente 0,1 GB. El nombre del identificador sugiere una especializacion en el dominio de viajes, aunque la model card no confirma explicitamente el proposito ni el conjunto de datos empleado.
 
 El modelo hereda la arquitectura y las capacidades del Qwen2.5-3B-Instruct, un transformer decoder-only de 3.000 millones de parametros desarrollado por Alibaba Qwen, disenado para generacion de texto conversacional e instrucciones. Al ser un adaptador LoRA, requiere cargar el modelo base completo junto con los pesos del adaptador para su inferencia, lo que implica que los requisitos de hardware efectivos son los del modelo base, no los del adaptador aislado.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| dana_qwen_travel_v4 (este) | 3B (base) + LoRA | no disponible (base: 32.768) | no disponible | safetensors (adaptador) | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-3B-Instruct | 3B | 32.768 tokens | Apache 2.0 (segun el modelo base oficial) | safetensors, GGUF | HuggingFace, ampliamente utilizado |
-| Adaptadores LoRA de dominio publico sobre Qwen2.5 | variable | variable | variable | safetensors | HuggingFace, disponibilidad variable |
+| dana_qwen_travel_v4 (este) | 3B (base) + LoRA | no disponible (base: 32.768) | no disponible | safetensors (adaptador) | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-3B-Instruct | 3B | 32.768 tokens | Apache 2.0 (segun el modelo base oficial) | safetensors, GGUF | Hugging Face, ampliamente utilizado |
+| Adaptadores LoRA de dominio publico sobre Qwen2.5 | variable | variable | variable | safetensors | Hugging Face, disponibilidad variable |
 
 La comparacion directa con alternativas resulta limitada porque este repositorio es un adaptador y no un modelo completo, y porque no se declara licencia ni se publican metricas. Frente al modelo base sin ajustar, la unica diferencia documentada es la presencia de pesos LoRA adicionales; el beneficio real del ajuste solo puede determinarse mediante evaluacion propia.
 
@@ -82,7 +82,7 @@ La comparacion directa con alternativas resulta limitada porque este repositorio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thaitoan1908/dana_qwen_travel_v4
+- Hugging Face: https://huggingface.co/thaitoan1908/dana_qwen_travel_v4
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Paper de referencia citado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

@@ -22,7 +22,7 @@ Su relevancia es acotada y práctica: sirve como ejemplo de despliegue de un mod
 | Formato de pesos | Core ML `.mlpackage` (no safetensors ni GGUF) |
 | Tamaño del repositorio | 0,5 GB |
 | Resolución de entrada | 1024 (según el nombre del paquete) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 

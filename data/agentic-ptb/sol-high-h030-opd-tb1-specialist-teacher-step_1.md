@@ -63,8 +63,8 @@ No se dispone de comparativas directas con modelos de la misma categoría (desti
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `agentic-ptb/sol-high.h030.opd-tb1-specialist-teacher.step_1` | 9.4B | no disponible | no disponible | HuggingFace (0 descargas) |
-| `Qwen/Qwen3.5-9B-Base` | 9.4B (aprox.) | no disponible | no disponible | HuggingFace |
+| `agentic-ptb/sol-high.h030.opd-tb1-specialist-teacher.step_1` | 9.4B | no disponible | no disponible | Hugging Face (0 descargas) |
+| `Qwen/Qwen3.5-9B-Base` | 9.4B (aprox.) | no disponible | no disponible | Hugging Face |
 
 No se conocen otros modelos de destilación on-policy para agentes con características comparables, por lo que la comparación se limita al modelo base.
 
@@ -80,5 +80,5 @@ No se conocen otros modelos de destilación on-policy para agentes con caracter�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h030.opd-tb1-specialist-teacher.step_1
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h030.opd-tb1-specialist-teacher.step_1
 - Repositorio EasyOPD (experimentos de OPD agéntica): https://github.com/lds-ustc/EasyOPD/tree/main/experiments/02_

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`datahippo33/my_awesome_model` es un modelo de clasificación de texto publicado en HuggingFace, obtenido mediante fine-tuning de `distilbert/distilbert-base-uncased` con la librería Transformers y la clase `Trainer`. El autor lo distribuye bajo licencia Apache 2.0 y con pesos en safetensors, pero la model card no documenta ni el conjunto de datos de entrenamiento ni el conjunto de etiquetas, y su descripción aparece como "generated_from_trainer" sin completar ("More information needed" en las secciones de descripción, usos previstos y datos de entrenamiento).
+`datahippo33/my_awesome_model` es un modelo de clasificación de texto publicado en Hugging Face, obtenido mediante fine-tuning de `distilbert/distilbert-base-uncased` con la librería Transformers y la clase `Trainer`. El autor lo distribuye bajo licencia Apache 2.0 y con pesos en safetensors, pero la model card no documenta ni el conjunto de datos de entrenamiento ni el conjunto de etiquetas, y su descripción aparece como "generated_from_trainer" sin completar ("More information needed" en las secciones de descripción, usos previstos y datos de entrenamiento).
 
 Técnicamente es un transformer encoder-only derivado de DistilBERT, con 66.955.010 parámetros totales según los pesos en safetensors (el recuento incluye la cabeza de clasificación añadida durante el fine-tuning sobre los ~66,9 M del modelo base). Al ser un modelo destilado de BERT-base, su coste de inferencia es aproximadamente la mitad que el de BERT-base y puede ejecutarse en CPU, lo que lo hace relevante únicamente como plantilla o experimento docente de fine-tuning para clasificación, no como modelo listo para producción.
 
@@ -77,10 +77,10 @@ Se observa sobreajuste entre la primera y la segunda época: la pérdida de vali
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `datahippo33/my_awesome_model` | 66,96 M | 512 tokens | Clasificación (etiquetas desconocidas) | Apache 2.0 | HuggingFace, 0 descargas |
-| `distilbert/distilbert-base-uncased` | ~66,9 M | 512 tokens | Modelo base (MLM), requiere fine-tuning | Apache 2.0 | HuggingFace, muy descargado |
-| `google-bert/bert-base-uncased` | ~110 M | 512 tokens | Modelo base (MLM) | Apache 2.0 | HuggingFace |
-| `FacebookAI/roberta-base` | ~125 M | 514 tokens | Modelo base (MLM) | MIT | HuggingFace |
+| `datahippo33/my_awesome_model` | 66,96 M | 512 tokens | Clasificación (etiquetas desconocidas) | Apache 2.0 | Hugging Face, 0 descargas |
+| `distilbert/distilbert-base-uncased` | ~66,9 M | 512 tokens | Modelo base (MLM), requiere fine-tuning | Apache 2.0 | Hugging Face, muy descargado |
+| `google-bert/bert-base-uncased` | ~110 M | 512 tokens | Modelo base (MLM) | Apache 2.0 | Hugging Face |
+| `FacebookAI/roberta-base` | ~125 M | 514 tokens | Modelo base (MLM) | MIT | Hugging Face |
 
 Frente al modelo base, este checkpoint aporta una cabeza de clasificación ya entrenada, pero con la desventaja de que se desconoce sobre qué etiquetas. Para una tarea nueva, partir de `distilbert-base-uncased` y entrenar con datos propios es más informativo que reutilizar este modelo. Frente a BERT-base o RoBERTa-base, ofrece aproximadamente la mitad de parámetros y menor latencia a costa de una calidad inferior en tareas de comprensión, algo esperable en un modelo destilado. No se dispone de comparaciones de rendimiento medidas entre estas alternativas en la información proporcionada.
 
@@ -98,7 +98,7 @@ Frente al modelo base, este checkpoint aporta una cabeza de clasificación ya en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/datahippo33/my_awesome_model
+- Modelo en Hugging Face: https://huggingface.co/datahippo33/my_awesome_model
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Ficha en PromptLayer: https://www.promptlayer.com/models/myawesomemodel/
 - Resultado de búsqueda no relacionado (otro modelo con el mismo nombre): https://huggingface.co/DSD1231/my-awesome-model-best

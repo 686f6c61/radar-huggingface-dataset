@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kronumos-Kairos-v2-GGUF es la version cuantizada en formato GGUF de Kronumos-Kairos-v2, un modelo de lenguaje de aproximadamente 7.600 millones de parametros desarrollado por Kronumos / NadevA23 y publicado originalmente en HuggingFace bajo licencia Apache 2.0. La cuantizacion la firma mradermacher, autor habitual de conversiones GGUF para llama.cpp, que en este repositorio distribuye hasta doce variantes de cuantizacion estatica (desde Q2_K de 3,1 GB hasta f16 de 15,3 GB).
+Kronumos-Kairos-v2-GGUF es la version cuantizada en formato GGUF de Kronumos-Kairos-v2, un modelo de lenguaje de aproximadamente 7.600 millones de parametros desarrollado por Kronumos / NadevA23 y publicado originalmente en Hugging Face bajo licencia Apache 2.0. La cuantizacion la firma mradermacher, autor habitual de conversiones GGUF para llama.cpp, que en este repositorio distribuye hasta doce variantes de cuantizacion estatica (desde Q2_K de 3,1 GB hasta f16 de 15,3 GB).
 
 El modelo esta orientado a un nicho muy concreto: generacion de codigo y reparacion automatica de programas dentro de flujos de agentes autonomos. Los metadatos del repositorio lo vinculan al dataset princeton-nlp/SWE-bench_Verified, al framework Unsloth para el entrenamiento y a una arquitectura base de tipo Qwen2, lo que situa el modelo en la familia de los LLM de ~7B especializados en tareas de ingenieria de software, no en asistentes conversacionales generalistas.
 
@@ -26,7 +26,7 @@ Su relevancia practica viene del formato: al estar disponible en GGUF con cuanti
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna mas alla del tag qwen2 incluido en el repositorio, que apunta a un transformer decoder-only con atencion causal y normalizacion RMSNorm, la familia sobre la que se construyen habitualmente los modelos de ~7B actuales. El pipeline declarado en HuggingFace es reinforcement-learning, y entre las etiquetas figuran unsloth (framework de entrenamiento optimizado), swe-bench (dataset de referencia) y autonomous-agents. No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de SFT, RLHF o DPO.
+No se dispone de informacion detallada sobre la arquitectura interna mas alla del tag qwen2 incluido en el repositorio, que apunta a un transformer decoder-only con atencion causal y normalizacion RMSNorm, la familia sobre la que se construyen habitualmente los modelos de ~7B actuales. El pipeline declarado en Hugging Face es reinforcement-learning, y entre las etiquetas figuran unsloth (framework de entrenamiento optimizado), swe-bench (dataset de referencia) y autonomous-agents. No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de SFT, RLHF o DPO.
 
 El dato mas concreto disponible sobre el entrenamiento es el uso del dataset princeton-nlp/SWE-bench_Verified, que contiene incidencias reales de repositorios de Python con sus pruebas asociadas, lo que sugiere un ajuste orientado a resolucion de bugs y reparacion automatica de programas. Las etiquetas rust-subcortex y dual-brain aparecen en el repositorio pero no van acompanadas de ninguna explicacion tecnica en la model card, por lo que no es posible determinar si describen componentes arquitectonicos reales, una organizacion en dos modulos (uno de generacion y otro de verificacion) o simple nomenclatura de marketing. No se documentan innovaciones como decodificacion especulativa, atencion lineal ni mecanicas hibridas SSM.
 
@@ -80,10 +80,10 @@ Las cifras de VRAM son estimaciones a partir del tamano de fichero declarado en 
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Kronumos-Kairos-v2-GGUF (este) | ~7,6B | 32K (segun terceros) | Apache 2.0 | GGUF (12 cuantizaciones) | HuggingFace, 195 descargas |
-| Kronumos/Kronumos-Kairos-v2 (base) | ~7,6B | no disponible | Apache 2.0 | safetensors | HuggingFace |
-| mradermacher/Kronumos-GGUF | no disponible | no disponible | Apache 2.0 | GGUF | HuggingFace |
-| mradermacher/Kairos-GGUF | no disponible | no disponible | no disponible | GGUF | HuggingFace |
+| Kronumos-Kairos-v2-GGUF (este) | ~7,6B | 32K (segun terceros) | Apache 2.0 | GGUF (12 cuantizaciones) | Hugging Face, 195 descargas |
+| Kronumos/Kronumos-Kairos-v2 (base) | ~7,6B | no disponible | Apache 2.0 | safetensors | Hugging Face |
+| mradermacher/Kronumos-GGUF | no disponible | no disponible | Apache 2.0 | GGUF | Hugging Face |
+| mradermacher/Kairos-GGUF | no disponible | no disponible | no disponible | GGUF | Hugging Face |
 | kronumos/Kronumos-2-kairos (Ollama) | no disponible | no disponible | Apache 2.0 | GGUF con imatrix | Ollama |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes. Para comparar contra alternativas de proposito general de ~7B especializadas en codigo (por ejemplo, modelos de la propia familia Qwen2.5-Coder) seria necesario disponer de resultados de SWE-bench Verified, HumanEval o MMLU del modelo evaluado, que no se han publicado en la informacion disponible.

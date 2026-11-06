@@ -98,7 +98,7 @@ La comparación con alternativas de otros fabricantes (BGE-M3, multilingual-e5, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/juliensimon/Octen-Embedding-8B-mlx-8bit
+- Repositorio Hugging Face: https://huggingface.co/juliensimon/Octen-Embedding-8B-mlx-8bit
 - Modelo base: https://huggingface.co/Octen/Octen-Embedding-8B
 - Modelo de partida de Qwen: https://huggingface.co/Qwen/Qwen3-Embedding-8B
 - Variante bf16: https://huggingface.co/juliensimon/Octen-Embedding-8B-mlx-bf16

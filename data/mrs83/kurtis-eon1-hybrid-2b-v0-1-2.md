@@ -91,9 +91,9 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mrs83/Kurtis-EON1-Hybrid-2B-v0.1.2
+- Hugging Face: https://huggingface.co/mrs83/Kurtis-EON1-Hybrid-2B-v0.1.2
 - Repositorio GitHub del proyecto: https://github.com/ethicalabs-ai/Echo-DSRN/
 - Working paper del proyecto: https://github.com/ethicalabs-ai/Echo-DSRN/blob/main/PAPER.md
-- Colección de modelos Echo-DSRN en HuggingFace: https://huggingface.co/collections/ethicalabs/echo-dsrn
-- Colección de modelos Hybrid en HuggingFace: https://huggingface.co/collections/ethicalabs/echo-dsrn-hybrid
+- Colección de modelos Echo-DSRN en Hugging Face: https://huggingface.co/collections/ethicalabs/echo-dsrn
+- Colección de modelos Hybrid en Hugging Face: https://huggingface.co/collections/ethicalabs/echo-dsrn-hybrid
 - Visualización de la arquitectura (hfviewer): https://hfviewer.com/mrs83/Kurtis-EON1-Hybrid-2B-v0.1.2

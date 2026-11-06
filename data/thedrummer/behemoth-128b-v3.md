@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Behemoth-128B-v3 es un modelo de lenguaje de gran tamaño desarrollado por TheDrummer, publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un ajuste fino (finetune) del modelo base mistralai/Mistral-Medium-3.5-128B, lo que lo sitúa en la categoría de modelos densos de aproximadamente 125 mil millones de parámetros. El repositorio contiene únicamente los pesos en formato safetensors, con un tamaño total de 250,1 GB, y la model card está marcada como "work in progress", por lo que la documentación disponible es mínima.
+Behemoth-128B-v3 es un modelo de lenguaje de gran tamaño desarrollado por TheDrummer, publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un ajuste fino (finetune) del modelo base mistralai/Mistral-Medium-3.5-128B, lo que lo sitúa en la categoría de modelos densos de aproximadamente 125 mil millones de parámetros. El repositorio contiene únicamente los pesos en formato safetensors, con un tamaño total de 250,1 GB, y la model card está marcada como "work in progress", por lo que la documentación disponible es mínima.
 
 La relevancia de este modelo radica en que hereda la arquitectura y capacidades de Mistral Medium 3.5, uno de los modelos propietarios de Mistral AI, pero liberado aquí con una licencia permisiva (Apache 2.0). Esto permite su uso comercial sin las restricciones típicas de los modelos propietarios. Sin embargo, al carecer de documentación técnica detallada, cualquier evaluación debe basarse en pruebas empíricas directas.
 
@@ -66,6 +66,6 @@ No se dispone de datos comparativos fiables. El modelo se posiciona en la gama d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TheDrummer/Behemoth-128B-v3
+- Repositorio Hugging Face: https://huggingface.co/TheDrummer/Behemoth-128B-v3
 - Modelo base (referencia): https://huggingface.co/mistralai/Mistral-Medium-3.5-128B
 - No se han encontrado papers, blogs o demos adicionales asociados a este modelo.

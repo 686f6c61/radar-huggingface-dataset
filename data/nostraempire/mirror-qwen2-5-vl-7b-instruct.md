@@ -134,8 +134,8 @@ El modelo destaca frente a sus competidores en benchmarks de imagen (MMMU-Pro, D
 
 ## Enlaces
 
-- Mirror en HuggingFace: https://huggingface.co/NostraEmpire/mirror-qwen2.5-vl-7b-instruct
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
+- Mirror en Hugging Face: https://huggingface.co/NostraEmpire/mirror-qwen2.5-vl-7b-instruct
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Colección Qwen2.5-VL: https://huggingface.co/collections/Qwen/qwen25-vl
 - Blog oficial: https://qwenlm.github.io/blog/qwen2.5-vl/
 - Repositorio GitHub: https://github.com/QwenLM/Qwen2.5-VL

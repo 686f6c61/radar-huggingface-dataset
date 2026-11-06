@@ -39,7 +39,7 @@ El fine-tuning se realizó sobre el checkpoint `lerobot/pi05_base` utilizando el
 - Automatización de tareas de pick-and-place en entornos controlados: el modelo puede ejecutar tareas como "pick up the block and place it in the cup" o "move the box on the cup", útiles en líneas de montaje o laboratorios de robótica.
 - Investigación en aprendizaje por imitación: sirve como punto de partida para estudiar cómo los VLA se adaptan a dominios específicos con pocos datos (173 episodios).
 - Desarrollo de robots colaborativos en entornos domésticos o industriales: tareas como "stack the blocks" o "push the block forward" pueden transferirse a escenarios de organización de objetos.
-- Benchmarking de políticas robóticas: al estar publicado en HuggingFace con LeRobot, permite comparar el rendimiento de diferentes fine-tunes de π₀.₅ en el mismo robot y tareas.
+- Benchmarking de políticas robóticas: al estar publicado en Hugging Face con LeRobot, permite comparar el rendimiento de diferentes fine-tunes de π₀.₅ en el mismo robot y tareas.
 - Educación y prototipado: estudiantes e investigadores pueden desplegar el modelo en un robot SO-101 para experimentar con VLA sin necesidad de entrenar desde cero.
 - Pruebas de robustez en manipulación: las tareas incluyen variaciones como "move the box as far as possible from the gray thing", que exigen razonamiento espacial básico.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-Existen otros fine-tunes de π₀.₅ en HuggingFace para el mismo robot SO-101, como `hyf010124/pi05_so101_pi0824_v2` o `felixmayor/pi05_so101_orange_cube`. Sin embargo, no se dispone de sus especificaciones detalladas (parámetros, contexto, rendimiento) en la información recopilada. Todos comparten la misma arquitectura base y licencia Apache-2.0, pero difieren en el dataset de entrenamiento y las tareas específicas. No se puede realizar una comparación cuantitativa sin datos de evaluación.
+Existen otros fine-tunes de π₀.₅ en Hugging Face para el mismo robot SO-101, como `hyf010124/pi05_so101_pi0824_v2` o `felixmayor/pi05_so101_orange_cube`. Sin embargo, no se dispone de sus especificaciones detalladas (parámetros, contexto, rendimiento) en la información recopilada. Todos comparten la misma arquitectura base y licencia Apache-2.0, pero difieren en el dataset de entrenamiento y las tareas específicas. No se puede realizar una comparación cuantitativa sin datos de evaluación.
 
 ## Limitaciones y advertencias
 

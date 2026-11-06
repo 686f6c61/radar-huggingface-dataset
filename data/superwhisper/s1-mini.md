@@ -74,7 +74,7 @@ No se han identificado modelos comparables especificos de normalizacion de texto
 
 ## Enlaces
 
-- [Pagina del modelo en HuggingFace](https://huggingface.co/superwhisper/s1-mini)
+- [Pagina del modelo en Hugging Face](https://huggingface.co/superwhisper/s1-mini)
 - [Repositorio GGUF para llama.cpp/Ollama/LM Studio](https://huggingface.co/superwhisper/s1-mini-GGUF)
 - [Pagina de modelos de Superwhisper](https://superwhisper.com/models)
 - [Notas de lanzamiento de Superwhisper (agosto 2026)](https://releasebot.io/updates/superwhisper)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-10k-seed43` es un checkpoint de 87.279.756 par\u00e1metros (aproximadamente 87,3 millones) publicado por el usuario cyttic en HuggingFace bajo licencia MIT. Por la nomenclatura del identificador, se trata de un experimento (prefijo `exp39`) orientado a reconocimiento de voz mediante CTC (`ctc`), probablemente sobre un conjunto de datos de habla (`human10bi`), con alguna variante de geometr\u00eda o representaci\u00f3n (`hhdgeom`) y datos generados por un modelo de lenguaje (`llmgen`), con un tama\u00f1o de muestra de 10.000 (`10k`) y semilla 43 (`seed43`). El repositorio ocupa 0,3 GB y contiene pesos en formato safetensors.
+El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-10k-seed43` es un checkpoint de 87.279.756 par\u00e1metros (aproximadamente 87,3 millones) publicado por el usuario cyttic en Hugging Face bajo licencia MIT. Por la nomenclatura del identificador, se trata de un experimento (prefijo `exp39`) orientado a reconocimiento de voz mediante CTC (`ctc`), probablemente sobre un conjunto de datos de habla (`human10bi`), con alguna variante de geometr\u00eda o representaci\u00f3n (`hhdgeom`) y datos generados por un modelo de lenguaje (`llmgen`), con un tama\u00f1o de muestra de 10.000 (`10k`) y semilla 43 (`seed43`). El repositorio ocupa 0,3 GB y contiene pesos en formato safetensors.
 
-La model card publicada por el autor es la plantilla por defecto de HuggingFace sin rellenar: todos los campos de descripci\u00f3n, entrenamiento, evaluaci\u00f3n y uso previsto figuran como "[More Information Needed]". No hay informaci\u00f3n verificada sobre arquitectura, datos de entrenamiento, idiomas o rendimiento m\u00e1s all\u00e1 de lo que se deduce del nombre del repositorio y de los metadatos de la plataforma.
+La model card publicada por el autor es la plantilla por defecto de Hugging Face sin rellenar: todos los campos de descripci\u00f3n, entrenamiento, evaluaci\u00f3n y uso previsto figuran como "[More Information Needed]". No hay informaci\u00f3n verificada sobre arquitectura, datos de entrenamiento, idiomas o rendimiento m\u00e1s all\u00e1 de lo que se deduce del nombre del repositorio y de los metadatos de la plataforma.
 
 El modelo tiene 0 descargas y 0 likes en el momento de redactar esta ficha, y fue creado el 26 de octubre de 2026 y actualizado el 30 de octubre de 2026. Se trata, por tanto, de un artefacto de investigaci\u00f3n reciente, sin validaci\u00f3n comunitaria, cuya relevancia principal es como posible componente de un pipeline experimental de reconocimiento de habla o de generaci\u00f3n de datos sint\u00e9ticos para ASR.
 
@@ -76,6 +76,6 @@ No disponible. No se han identificado en la informaci\u00f3n proporcionada model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-10k-seed43
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-10k-seed43
 - Paper citado en los tags (Machine Learning Impact calculator, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental: https://mlco2.github.io/impact#compute

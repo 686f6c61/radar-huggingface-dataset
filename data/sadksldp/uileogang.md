@@ -40,7 +40,7 @@ Los proyectos citados (`solstice-dsp`, `pulsefield`, `decibel-tui`) son herramie
 
 - No aplica: el repositorio no expone un modelo desplegable, por lo que no puede emplearse en atencion al cliente, generacion de codigo, analisis documental, RAG, agentes ni ninguna otra tarea de inferencia.
 - Auditoria de repositorios: puede usarse como ejemplo de mala praxis en publicacion de model cards (contenido de perfil personal en lugar de ficha tecnica), util para revisar procesos de catalogacion en un registro interno.
-- Verificacion de identidad de artefactos: sirve para comprobar que un identificador de HuggingFace no siempre corresponde a un modelo y que los pipelines deben validar metadatos antes de descargar pesos.
+- Verificacion de identidad de artefactos: sirve para comprobar que un identificador de Hugging Face no siempre corresponde a un modelo y que los pipelines deben validar metadatos antes de descargar pesos.
 - Formacion interna: el README puede citarse como caso de estudio sobre separacion entre documentacion de proyecto y model card.
 - No se identifican casos de uso adicionales realistas, ya que no hay artefacto funcional que integrar.
 - No se identifican casos de uso de inferencia en produccion por ausencia de pesos y de pipeline declarado.
@@ -67,7 +67,7 @@ No disponible. No existe una categoria de modelos comparable porque el repositor
 | Contiene pesos | No | Si (safetensors/GGUF) |
 | Arquitectura declarada | No | Transformer/MoE/SSM |
 | Licencia | No disponible | Apache-2.0, MIT, Llama, etc. |
-| Pipeline de HuggingFace | No disponible | text-generation, image-text-to-text, etc. |
+| Pipeline de Hugging Face | No disponible | text-generation, image-text-to-text, etc. |
 | Descargas / likes | 0 / 0 | Variable |
 | Uso en produccion | No recomendado | Sujeto a evaluacion |
 
@@ -83,6 +83,6 @@ No disponible. No existe una categoria de modelos comparable porque el repositor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sadksldp/uileogang
+- Repositorio en Hugging Face: https://huggingface.co/sadksldp/uileogang
 - Sitio personal citado en el README: https://jonasfalk.dev
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs tecnicos, repositorios de codigo del modelo ni demos de inferencia.

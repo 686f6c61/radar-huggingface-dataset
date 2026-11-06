@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SaniaKhalid/tinyllama-trl-merged es un ajuste fino completo del modelo TinyLlama-1.1B-Chat-v1.0, publicado por el usuario SaniaKhalid en HuggingFace. Se trata de un transformer decoder de tipo Llama con 1.100.048.384 parametros (aproximadamente 1,1B), entrenado mediante el framework TRL con adaptadores LoRA que posteriormente se fusionaron de forma permanente en los pesos base. El resultado es un unico modelo autonomo que se carga con transformers sin necesidad de la libreria PEFT.
+SaniaKhalid/tinyllama-trl-merged es un ajuste fino completo del modelo TinyLlama-1.1B-Chat-v1.0, publicado por el usuario SaniaKhalid en Hugging Face. Se trata de un transformer decoder de tipo Llama con 1.100.048.384 parametros (aproximadamente 1,1B), entrenado mediante el framework TRL con adaptadores LoRA que posteriormente se fusionaron de forma permanente en los pesos base. El resultado es un unico modelo autonomo que se carga con transformers sin necesidad de la libreria PEFT.
 
 El problema que resuelve es de naturaleza practica: simplifica el despliegue de un modelo ajustado al eliminar la necesidad de gestionar adaptadores separados, y ofrece un modelo conversacional muy ligero (2,2 GB en FP16) que puede ejecutarse en hardware modesto. El ajuste se realizo sobre el dataset arif-butt/arifbutt_dataset, orientado a preguntas y respuestas de caracter educativo, en ingles.
 
@@ -71,11 +71,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| SaniaKhalid/tinyllama-trl-merged | 1,1B | 2048 | Apache 2.0 | HuggingFace, 0 descargas | No publicado |
-| TinyLlama/TinyLlama-1.1B-Chat-v1.0 (modelo base) | 1,1B | 2048 | Apache 2.0 | HuggingFace, ampliamente utilizado | No evaluado en la informacion proporcionada |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 | HuggingFace | No evaluado en la informacion proporcionada |
-| Llama-3.2-1B-Instruct | 1,2B | 128.000 | Llama 3.2 Community License | HuggingFace | No evaluado en la informacion proporcionada |
-| SmolLM2-1.7B-Instruct | 1,7B | 8192 | Apache 2.0 | HuggingFace | No evaluado en la informacion proporcionada |
+| SaniaKhalid/tinyllama-trl-merged | 1,1B | 2048 | Apache 2.0 | Hugging Face, 0 descargas | No publicado |
+| TinyLlama/TinyLlama-1.1B-Chat-v1.0 (modelo base) | 1,1B | 2048 | Apache 2.0 | Hugging Face, ampliamente utilizado | No evaluado en la informacion proporcionada |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 | Hugging Face | No evaluado en la informacion proporcionada |
+| Llama-3.2-1B-Instruct | 1,2B | 128.000 | Llama 3.2 Community License | Hugging Face | No evaluado en la informacion proporcionada |
+| SmolLM2-1.7B-Instruct | 1,7B | 8192 | Apache 2.0 | Hugging Face | No evaluado en la informacion proporcionada |
 
 Las filas correspondientes a Qwen2.5-1.5B-Instruct, Llama-3.2-1B-Instruct y SmolLM2-1.7B-Instruct se incluyen a titulo de referencia de categoria (modelos instruct de 1-2B parametros) y no forman parte de la informacion proporcionada en esta ficha; conviene verificar sus especificaciones en las model cards oficiales. En cualquier caso, el contexto de 2048 tokens de este modelo frente a los 8192-128.000 de sus competidores es la diferencia funcional mas relevante.
 
@@ -88,14 +88,14 @@ Las filas correspondientes a Qwen2.5-1.5B-Instruct, Llama-3.2-1B-Instruct y Smol
 - Ausencia total de evaluacion: no hay benchmarks, no hay evaluacion de seguridad, no hay analisis de sesgos y no hay comparacion con el modelo base. El autor tampoco documenta hiperparametros de entrenamiento.
 - Reputacion y trazabilidad: el repositorio tiene 0 descargas y 0 likes, y registra fecha de creacion y ultima actualizacion el 22 de septiembre de 2026, un dato anomalo que conviene verificar antes de confiar en el artefacto.
 - Inconsistencia en la documentacion: la model card indica como model_id "arif-butt/tinyllama-trl-merged", distinto del identificador real del repositorio (SaniaKhalid/tinyllama-trl-merged). El codigo de ejemplo de la model card fallara si se copia tal cual.
-- Etiqueta de contenido: el repositorio incluye el tag "not-for-all-audiences" y la model card declara inference: false, lo que sugiere que el autor no garantiza un uso general ni ha desplegado el modelo en el endpoint de inferencia de HuggingFace.
+- Etiqueta de contenido: el repositorio incluye el tag "not-for-all-audiences" y la model card declara inference: false, lo que sugiere que el autor no garantiza un uso general ni ha desplegado el modelo en el endpoint de inferencia de Hugging Face.
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, pero el autor no ofrece garantias de ningun tipo ni asume responsabilidad sobre los resultados generados.
 - Ausencia de cuantizaciones validadas: al no publicarse GGUF, GPTQ o AWQ, cualquier despliegue cuantizado exige una conversion propia y una validacion adicional de calidad.
 - Formato de prompt rigido: los ejemplos usan "Q: ... A:", sin una plantilla de chat con tokens especiales documentada, lo que dificulta el uso directo como asistente conversacional estructurado.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SaniaKhalid/tinyllama-trl-merged
+- Repositorio Hugging Face: https://huggingface.co/SaniaKhalid/tinyllama-trl-merged
 - Modelo base: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Dataset de ajuste: https://huggingface.co/datasets/arif-butt/arifbutt_dataset
 - Identificador alternativo citado en la model card (no verificado): https://huggingface.co/arif-butt/tinyllama-trl-merged

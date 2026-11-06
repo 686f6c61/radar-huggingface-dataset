@@ -77,6 +77,6 @@ No hay informacion suficiente para una comparativa rigurosa con alternativas con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomic-Germ/DeepSeek-R1-0528-Qwen3-8B-Esper3-NPU2
+- Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/DeepSeek-R1-0528-Qwen3-8B-Esper3-NPU2
 - Modelo base (destilado): https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
 - Paper del modelo original DeepSeek-R1-0528: https://arxiv.org/pdf/2501.12948

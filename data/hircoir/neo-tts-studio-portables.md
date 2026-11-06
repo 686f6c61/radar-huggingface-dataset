@@ -2,7 +2,7 @@
 
 ## Resumen
 
-neo-tts-studio-portables es un repositorio publicado por el usuario HirCoir en HuggingFace bajo la licencia MIT, etiquetado con el pipeline `text-to-speech`. Por los tags declarados (`piper`, `vits`, `trainer`, `cpp`, `libtorch`, `cuda`, `voice-training`, `linux`) se trata de un paquete orientado a la sintesis de voz con la familia VITS/Piper, que ademas incorpora herramientas de entrenamiento de voces y binarios portables compilados para Linux en C++ sobre LibTorch con soporte CUDA. No es, por tanto, un modelo unico con pesos y tarjeta descriptiva, sino un conjunto de artefactos de estudio (runtime, trainer y pesos) empaquetados en un repositorio de 4,1 GB.
+neo-tts-studio-portables es un repositorio publicado por el usuario HirCoir en Hugging Face bajo la licencia MIT, etiquetado con el pipeline `text-to-speech`. Por los tags declarados (`piper`, `vits`, `trainer`, `cpp`, `libtorch`, `cuda`, `voice-training`, `linux`) se trata de un paquete orientado a la sintesis de voz con la familia VITS/Piper, que ademas incorpora herramientas de entrenamiento de voces y binarios portables compilados para Linux en C++ sobre LibTorch con soporte CUDA. No es, por tanto, un modelo unico con pesos y tarjeta descriptiva, sino un conjunto de artefactos de estudio (runtime, trainer y pesos) empaquetados en un repositorio de 4,1 GB.
 
 El repositorio no incluye model card con detalles de arquitectura, regimen de entrenamiento, idiomas ni evaluacion. La informacion disponible se limita a metadatos: licencia MIT, libreria PyTorch, acceso restringido (gated) y cero descargas y cero likes en el momento de la consulta, lo que indica que es un proyecto practicamente sin adopcion publica ni validacion externa.
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada y de nicho: resulta interesante para quien quie
 | Licencia | MIT |
 | Formato de pesos | no disponible; el repositorio incluye artefactos PyTorch, binarios C++/LibTorch y componentes CUDA |
 | Tamano del repositorio | 4,1 GB |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Libreria declarada | PyTorch |
 | Plataforma objetivo | Linux (tag `linux`) |
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto / idiomas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| neo-tts-studio-portables | no disponible | no disponible | MIT | Gated en HuggingFace | Paquete con trainer y binarios portables; sin evaluacion publica |
+| neo-tts-studio-portables | no disponible | no disponible | MIT | Gated en Hugging Face | Paquete con trainer y binarios portables; sin evaluacion publica |
 | Piper (rhasspy/piper) | no disponible en esta ficha (modelos compactos por voz) | voces por idioma, catalogo amplio | MIT / GPL segun componente | Publico | Referencia de TTS ligero en CPU; el repositorio analizado se apoya en su formato |
 | Coqui XTTS v2 | no disponible en esta ficha | multilingue, clonacion de voz | CPML (no comercial) | Publico con restricciones | Permite zero-shot voice cloning; licencia incompatible con uso comercial libre |
 | Kokoro | no disponible en esta ficha | varios idiomas | Apache 2.0 | Publico | TTS ligero de alta calidad percibida; sin entrenamiento de voces incluido |
@@ -80,7 +80,7 @@ La comparacion cuantitativa no es posible: no hay parametros, contexto ni result
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no hay informacion sobre datos de entrenamiento, idiomas, hablantes ni calidad esperada; imposible evaluar sesgos o cobertura linguistica.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar; conviene leer esas condiciones, ya que pueden anadir restricciones sobre la licencia MIT declarada.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar; conviene leer esas condiciones, ya que pueden anadir restricciones sobre la licencia MIT declarada.
 - Riesgo de alucinacion en el sentido de prosodia o pronunciacion incorrecta: sin evaluacion de inteligibilidad no puede descartarse, y en TTS se traduce en fonemas mal resueltos o audio ininteligible.
 - Cero descargas y cero likes: no hay evidencia de uso, validacion ni mantenimiento por parte de la comunidad; el repositorio se creo y actualizo el mismo dia.
 - Contenido no auditado: al incluir binarios precompilados y codigo C++/CUDA, existe riesgo de seguridad; se recomienda inspeccionar y compilar desde fuente antes de ejecutar en produccion.
@@ -91,5 +91,5 @@ La comparacion cuantitativa no es posible: no hay parametros, contexto ni result
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HirCoir/neo-tts-studio-portables
+- Hugging Face: https://huggingface.co/HirCoir/neo-tts-studio-portables
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

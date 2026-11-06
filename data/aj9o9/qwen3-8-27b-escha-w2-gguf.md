@@ -108,7 +108,7 @@ Frente al modelo original, este port reduce el tamaño de pesos de aproximadamen
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/aj9o9/Qwen3.8-27B-Escha-W2-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/aj9o9/Qwen3.8-27B-Escha-W2-GGUF
 - Modelo base (EschaLabs): https://huggingface.co/EschaLabs/Qwen3.8-27B-Escha-W2
 - Modelo original de Alibaba: https://huggingface.co/Qwen/Qwen3.8-27B
 - Fork de llama.cpp del autor (rama `escha-w2-dense`): https://github.com/Ajay9o9/llama.cpp-escha/tree/escha-w2-dense

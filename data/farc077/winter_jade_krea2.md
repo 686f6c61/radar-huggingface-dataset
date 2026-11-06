@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Winter_Jade_KREA2 es un adaptador LoRA de tipo text-to-image publicado por el usuario farc077 en HuggingFace. Se trata de un LoRA de un solo paso (etiquetado como ONESHOTLORA) entrenado sobre el modelo base krea/Krea-2-Raw, y su finalidad declarada es reproducir la apariencia de una persona concreta, la creadora de contenido para adultos Winter Jade, mediante la palabra de activación W1NT3RJ. No es un modelo fundacional, sino un peso adicional que se carga junto al modelo base para condicionar su generación.
+Winter_Jade_KREA2 es un adaptador LoRA de tipo text-to-image publicado por el usuario farc077 en Hugging Face. Se trata de un LoRA de un solo paso (etiquetado como ONESHOTLORA) entrenado sobre el modelo base krea/Krea-2-Raw, y su finalidad declarada es reproducir la apariencia de una persona concreta, la creadora de contenido para adultos Winter Jade, mediante la palabra de activación W1NT3RJ. No es un modelo fundacional, sino un peso adicional que se carga junto al modelo base para condicionar su generación.
 
 El repositorio tiene un tamano de 0,2 GB, coherente con un adaptador LoRA de rango bajo y no con un modelo completo. La model card es minima: incluye tres ejemplos de prompt con sus imagenes de salida, la palabra de activación y la referencia a la herramienta de generacion oneshotlora.com. No se publican detalles sobre el dataset de entrenamiento, el rango del LoRA, la tasa de aprendizaje ni el numero de pasos.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| farc077/Winter_Jade_KREA2 | LoRA de identidad sobre Krea-2-Raw | no disponible (0,2 GB) | no aplica | sin benchmarks publicados | other | HuggingFace, 0 descargas, 0 likes |
-| krea/Krea-2-Raw | Modelo base text-to-image | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible | HuggingFace (referenciado como base) |
+| farc077/Winter_Jade_KREA2 | LoRA de identidad sobre Krea-2-Raw | no disponible (0,2 GB) | no aplica | sin benchmarks publicados | other | Hugging Face, 0 descargas, 0 likes |
+| krea/Krea-2-Raw | Modelo base text-to-image | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible | Hugging Face (referenciado como base) |
 | LoRAs de identidad genericos en Civitai/HuggingFace | LoRA sobre distintos bases | variable | no aplica | variable, sin benchmarks estandarizados | variable | Amplia disponibilidad |
 
 No se dispone de datos suficientes para comparar rendimiento con alternativas concretas de la misma categoria.
@@ -81,6 +81,6 @@ No se dispone de datos suficientes para comparar rendimiento con alternativas co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/farc077/Winter_Jade_KREA2
+- Modelo en Hugging Face: https://huggingface.co/farc077/Winter_Jade_KREA2
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Herramienta de generacion del LoRA: https://oneshotlora.com

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`saoriwatanabe/swin-t-finetuned` es un repositorio de HuggingFace que empaqueta una implementación propia de Swin Transformer en su variante *tiny* (Swin-T) orientada a tareas de *matching*, es decir, emparejamiento o correspondencia entre entradas. Lo publica el usuario saoriwatanabe bajo licencia MIT. No se trata de un modelo entrenado ni de una release con pesos validados: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y no un checkpoint con benchmarks.
+`saoriwatanabe/swin-t-finetuned` es un repositorio de Hugging Face que empaqueta una implementación propia de Swin Transformer en su variante *tiny* (Swin-T) orientada a tareas de *matching*, es decir, emparejamiento o correspondencia entre entradas. Lo publica el usuario saoriwatanabe bajo licencia MIT. No se trata de un modelo entrenado ni de una release con pesos validados: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y no un checkpoint con benchmarks.
 
 La relevancia de este tipo de repositorios es la de servir como punto de partida reproducible: incluye `config.json` con la configuración de arquitectura, `training_args.json` con la receta de experimento por defecto y `eval.py` como artefacto principal ejecutable. El interés práctico es limitado para producción, ya que no se reclama ninguna puntuación de benchmark y el modelo no ha sido entrenado ni auditado.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| saoriwatanabe/swin-t-finetuned | 33.088 declarados (no verificado) | no disponible | sin benchmarks publicados; checkpoint no entrenado | MIT | HuggingFace, 0 descargas, 0 likes |
-| microsoft/swin-tiny-patch4-window7-224 | ~28 M | imagen 224x224 | benchmarks publicados en el paper de Swin (no reproducidos aqui) | MIT | HuggingFace, pesos entrenados en ImageNet-1k |
-| facebook/deit-small-patch16-224 | ~22 M | imagen 224x224 | benchmarks publicados por sus autores (no reproducidos aqui) | Apache-2.0 | HuggingFace, pesos entrenados |
-| facebook/dinov2-small | ~22 M | imagen 224x224 (autosupervisado) | benchmarks publicados por sus autores (no reproducidos aqui) | Apache-2.0 | HuggingFace, pesos entrenados |
+| saoriwatanabe/swin-t-finetuned | 33.088 declarados (no verificado) | no disponible | sin benchmarks publicados; checkpoint no entrenado | MIT | Hugging Face, 0 descargas, 0 likes |
+| microsoft/swin-tiny-patch4-window7-224 | ~28 M | imagen 224x224 | benchmarks publicados en el paper de Swin (no reproducidos aqui) | MIT | Hugging Face, pesos entrenados en ImageNet-1k |
+| facebook/deit-small-patch16-224 | ~22 M | imagen 224x224 | benchmarks publicados por sus autores (no reproducidos aqui) | Apache-2.0 | Hugging Face, pesos entrenados |
+| facebook/dinov2-small | ~22 M | imagen 224x224 (autosupervisado) | benchmarks publicados por sus autores (no reproducidos aqui) | Apache-2.0 | Hugging Face, pesos entrenados |
 
 La comparación relevante es que el repositorio analizado es una implementación propia sin entrenar, mientras que las alternativas son *checkpoints* entrenados y con resultados publicados. No se dispone de datos para comparar rendimiento de forma cuantitativa.
 
@@ -86,5 +86,5 @@ La comparación relevante es que el repositorio analizado es una implementación
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/saoriwatanabe/swin-t-finetuned
+- Repositorio en Hugging Face: https://huggingface.co/saoriwatanabe/swin-t-finetuned
 - No se han encontrado en la busqueda web enlaces relevantes (paper, blog, repositorio de codigo o demo) asociados a este modelo.

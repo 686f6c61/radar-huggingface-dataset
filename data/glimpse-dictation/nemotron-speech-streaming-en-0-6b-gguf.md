@@ -81,8 +81,8 @@ No se dispone de datos de benchmarks ni de otros modelos ASR comparables en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Glimpse-Dictation/Nemotron-Speech-Streaming-EN-0.6B-gguf
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b
+- Repositorio Hugging Face: https://huggingface.co/Glimpse-Dictation/Nemotron-Speech-Streaming-EN-0.6B-gguf
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b
 - Conversión de origen: https://huggingface.co/handy-computer/nemotron-speech-streaming-en-0.6b-gguf
 - Runtime transcribe.cpp: https://github.com/LegendarySpy/transcribe.cpp
 - Aplicación Glimpse: https://tryglimpse.cc

@@ -6,7 +6,7 @@ Qwen2.5-7B-Instruct-Autoround-a16w4 es un artefacto compilado —no un conjunto 
 
 El paquete resultante contiene 147 ejecutables ELF, los activos de runtime en `devkit/` y el script `compile.sh` con los argumentos exactos de compilación. La configuración de build fija un contexto máximo de 4.096 tokens, grupo de prefill de 128, pesos INT4 con excepciones de precisión mixta, activaciones BF16 y embeddings y caché KV en INT8.
 
-Su relevancia es acotada pero clara: demuestra el flujo completo de despliegue de un LLM de 7.000 millones de parámetros en hardware de borde/NPU con cuantización agresiva de pesos (a16w4) y compilación ahead-of-time. No es un modelo utilizable en GPU convencional ni en pipelines estándar de HuggingFace; su interés es para ingenieros que integren LLMs en dispositivos SiMa Modalix.
+Su relevancia es acotada pero clara: demuestra el flujo completo de despliegue de un LLM de 7.000 millones de parámetros en hardware de borde/NPU con cuantización agresiva de pesos (a16w4) y compilación ahead-of-time. No es un modelo utilizable en GPU convencional ni en pipelines estándar de Hugging Face; su interés es para ingenieros que integren LLMs en dispositivos SiMa Modalix.
 
 ## Especificaciones tecnicas
 
@@ -83,12 +83,12 @@ La diferencia clave no es de calidad sino de portabilidad: frente a las alternat
 - Ausencia total de senales de validacion por la comunidad: 0 descargas, 0 likes, publicacion de un unico autor y model card sin resultados de evaluacion.
 - Ligadura estricta al hardware: el paquete no funciona fuera de SiMa Modalix con un runtime LLiMa compatible, lo que descarta su uso en infraestructura cloud convencional.
 - La licencia Apache 2.0 se hereda del modelo fuente, pero la model card remite expresamente a los terminos del modelo original; conviene verificar ese enlace antes de un uso comercial.
-- El flag `inference: false` en la model card indica que la plataforma de HuggingFace no puede servirlo; no es un modelo cargable con `transformers`.
+- El flag `inference: false` en la model card indica que la plataforma de Hugging Face no puede servirlo; no es un modelo cargable con `transformers`.
 - Advertencia sobre la fecha: la publicacion figura como creada el 2026-10-18, posterior a la fecha habitual de consulta; conviene confirmar la vigencia del artefacto y de sus checksums.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/florianvoss/Qwen2.5-7B-Instruct-Autoround-a16w4
+- Modelo en Hugging Face: https://huggingface.co/florianvoss/Qwen2.5-7B-Instruct-Autoround-a16w4
 - Coleccion Neat 0.6.0: https://huggingface.co/collections/florianvoss/neat-060
 - Modelo base (simaai, Safetensors): https://huggingface.co/simaai/Qwen2.5-7B-Instruct-Autoround-Safetensors
 - Arbol del modelo fuente en la revision compilada: https://huggingface.co/simaai/Qwen2.5-7B-Instruct-Autoround-Safetensors/tree/a64ec8343c657115338f5b5a758c97b20c77185e

@@ -65,9 +65,9 @@ La model card unicamente reporta una verificacion de equivalencia funcional: pre
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Depth-Anything-V1-Base (este port) | 97,47 M | DPT + DINOv2 ViT-B/14 | no aplica | Apache-2.0 | HuggingFace, `trust_remote_code` |
-| LiheYoung/depth_anything_vitb14 (original) | no disponible en la informacion | DPT + DINOv2 ViT-B/14 | no aplica | sin licencia declarada en el repo de pesos; repositorio Apache-2.0 | HuggingFace, codigo original |
-| LiheYoung/depth-anything-base-hf (conversion oficial) | no disponible en la informacion | DPT + DINOv2 ViT-B/14 | no aplica | Apache-2.0 | HuggingFace, `transformers` nativo |
+| Depth-Anything-V1-Base (este port) | 97,47 M | DPT + DINOv2 ViT-B/14 | no aplica | Apache-2.0 | Hugging Face, `trust_remote_code` |
+| LiheYoung/depth_anything_vitb14 (original) | no disponible en la informacion | DPT + DINOv2 ViT-B/14 | no aplica | sin licencia declarada en el repo de pesos; repositorio Apache-2.0 | Hugging Face, codigo original |
+| LiheYoung/depth-anything-base-hf (conversion oficial) | no disponible en la informacion | DPT + DINOv2 ViT-B/14 | no aplica | Apache-2.0 | Hugging Face, `transformers` nativo |
 
 La diferencia principal entre este port y `LiheYoung/depth-anything-base-hf` es que este ultimo es una conversion nativa a `transformers` (sin `trust_remote_code`), mientras que el presente repositorio ejecuta el codigo original vendorizado y garantiza equivalencia bit-identica con el repositorio de LiheYoung. No se dispone de datos de rendimiento comparativo entre ambos en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ La diferencia principal entre este port y `LiheYoung/depth-anything-base-hf` es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bigshanedogg/Depth-Anything-V1-Base
+- Modelo en Hugging Face: https://huggingface.co/bigshanedogg/Depth-Anything-V1-Base
 - Modelo base original: https://huggingface.co/LiheYoung/depth_anything_vitb14
 - Conversion oficial a transformers: https://huggingface.co/LiheYoung/depth-anything-base-hf
 - Repositorio oficial de Depth Anything: https://github.com/LiheYoung/Depth-Anything

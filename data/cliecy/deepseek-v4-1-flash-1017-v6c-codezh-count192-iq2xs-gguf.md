@@ -114,7 +114,7 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base (con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cliecy/DeepSeek-V4.1-Flash-1017-V6c-codezh-count192-IQ2XS-GGUF
+- Modelo en Hugging Face: https://huggingface.co/cliecy/DeepSeek-V4.1-Flash-1017-V6c-codezh-count192-IQ2XS-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Checkpoint V0 de referencia (UD-IQ2XS, parche y binarios de llama.cpp): https://huggingface.co/cliecy/DeepSeek-V4.1-Flash-1017-UD-IQ2XS-GGUF
 - Informe completo de evaluación, medidas, herramientas y listas de expertos podados: https://huggingface.co/datasets/cliecy/DeepSeek-V4.1-Flash-1017-pruning-eval

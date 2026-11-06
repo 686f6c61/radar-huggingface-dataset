@@ -67,6 +67,6 @@ No hay informacion suficiente para realizar una comparativa objetiva con otros m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [Danny-Dasilva/inflect-kokoro-voices](https://huggingface.co/Danny-Dasilva/inflect-kokoro-voices)
+- Repositorio en Hugging Face: [Danny-Dasilva/inflect-kokoro-voices](https://huggingface.co/Danny-Dasilva/inflect-kokoro-voices)
 - Modelo base: [owensong/Inflect-Micro-v2](https://huggingface.co/owensong/Inflect-Micro-v2)
 - Repositorio comunitario de voces Kokoro (referencia): [n33kos/kokoro-voices](https://github.com/n33kos/kokoro-voices)

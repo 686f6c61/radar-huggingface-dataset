@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-llama2_13b_chat_up_svdllm_seed42_finetuned_keep_0p70` es un artefacto de investigación publicado por el usuario Jeesup en HuggingFace. Consiste en el modelo `meta-llama/Llama-2-13b-chat-hf` comprimido mediante el método completo SVD-LLM (descomposición en valores singulares con destilación de rango bajo), en el que se ha eliminado el 30 % de los parámetros efectivos y se conserva una fracción realizada de 0,6999.
+`svd-safety-llama2_13b_chat_up_svdllm_seed42_finetuned_keep_0p70` es un artefacto de investigación publicado por el usuario Jeesup en Hugging Face. Consiste en el modelo `meta-llama/Llama-2-13b-chat-hf` comprimido mediante el método completo SVD-LLM (descomposición en valores singulares con destilación de rango bajo), en el que se ha eliminado el 30 % de los parámetros efectivos y se conserva una fracción realizada de 0,6999.
 
 El interés del modelo es metodológico: aplica la canalización oficial de SVD-LLM (data whitening, truncado SVD, ajuste LoRA sobre los factores U y V, fusión y plegado a un checkpoint denso) sobre un modelo conversacional de 13B, y publica métricas tanto de utilidad (perplejidad, benchmarks de razonamiento) como de seguridad (tasas de ataque exitoso de generación dañina y sobre-rechazo). Se enmarca así en la línea de investigación sobre compresión de LLM y su efecto sobre la alineación.
 
@@ -112,7 +112,7 @@ Los datos de las variantes de 7B provienen de los resultados de busqueda web y e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-llama2_13b_chat_up_svdllm_seed42_finetuned_keep_0p70
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-llama2_13b_chat_up_svdllm_seed42_finetuned_keep_0p70
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-13b-chat-hf
 - Repositorio SVD-LLM: https://github.com/AIoT-MLSys-Lab/SVD-LLM
 - Dataset de ajuste LoRA: https://huggingface.co/datasets/yahma/alpaca-cleaned

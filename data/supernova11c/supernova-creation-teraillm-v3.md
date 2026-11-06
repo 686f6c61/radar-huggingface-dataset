@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Supernova Creation TeraiLLM V3 es un modelo de generación de imágenes desarrollado desde cero por el usuario Supernova11c, publicado en HuggingFace bajo licencia Apache 2.0. A pesar de que la etiqueta de pipeline del repositorio indica `text-to-image`, el propio autor especifica en la model card que el modelo no acepta prompts de texto ni utiliza codificador textual alguno: se trata en realidad de un autoencoder variacional (VAE) convolucional que aprende una representación latente de 128 dimensiones y genera imágenes de 128 × 128 píxeles muestreando vectores aleatorios en ese espacio latente o reconstruyendo imágenes de entrada.
+Supernova Creation TeraiLLM V3 es un modelo de generación de imágenes desarrollado desde cero por el usuario Supernova11c, publicado en Hugging Face bajo licencia Apache 2.0. A pesar de que la etiqueta de pipeline del repositorio indica `text-to-image`, el propio autor especifica en la model card que el modelo no acepta prompts de texto ni utiliza codificador textual alguno: se trata en realidad de un autoencoder variacional (VAE) convolucional que aprende una representación latente de 128 dimensiones y genera imágenes de 128 × 128 píxeles muestreando vectores aleatorios en ese espacio latente o reconstruyendo imágenes de entrada.
 
 El modelo cuenta con 30.676.611 parámetros y una arquitectura convolucional compacta con bloques residuales, normalización GroupNorm y activación SiLU. El cuello de botella es una representación de 8 × 8 × 512 que se proyecta a una latente de 128 dimensiones mediante una parametrización probabilística (media y log-varianza). Se entrenó íntegramente con PyTorch sobre 2.000 imágenes seleccionadas del dataset BHI Mini (1.800 de entrenamiento y 200 de test disjuntas), durante 200 épocas con optimizador AdamW.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 | Modelo | Parámetros | Resolución | Condicionamiento textual | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Supernova Creation TeraiLLM V3 | 30.676.611 | 128 × 128 | No | Apache 2.0 | HuggingFace |
+| Supernova Creation TeraiLLM V3 | 30.676.611 | 128 × 128 | No | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Supernova11c/Supernova-Creation-TeraiLLM-V3
+- Modelo en Hugging Face: https://huggingface.co/Supernova11c/Supernova-Creation-TeraiLLM-V3
 - Dataset de entrenamiento: https://huggingface.co/datasets/Phips/BHI_mini
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper, blog, repositorio de código y demos: no disponibles en la información proporcionada.

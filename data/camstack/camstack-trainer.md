@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CamStack trainer es el contenedor de entrenamiento que la plataforma CamStack (documentada en camstack-docs.zentik.app) ejecuta sobre una GPU en la nube, inicialmente en Modal, para reentrenar su detector raiz basado en YOLOv9 con los fotogramas anotados por el propio operador. No se trata de un modelo de pesos publicados, sino de un paquete de software de ajuste fino: recibe un job en formato JSON y un archivo de dataset, entrena, evalua el candidato contra la linea base y exporta todos los formatos que consumen los nodos CamStack (ONNX, OpenVINO FP16, OpenVINO INT8 y Core ML FP16). El repositorio se publica en HuggingFace con la libreria `ultralytics` y cero descargas registradas en el momento de la consulta.
+CamStack trainer es el contenedor de entrenamiento que la plataforma CamStack (documentada en camstack-docs.zentik.app) ejecuta sobre una GPU en la nube, inicialmente en Modal, para reentrenar su detector raiz basado en YOLOv9 con los fotogramas anotados por el propio operador. No se trata de un modelo de pesos publicados, sino de un paquete de software de ajuste fino: recibe un job en formato JSON y un archivo de dataset, entrena, evalua el candidato contra la linea base y exporta todos los formatos que consumen los nodos CamStack (ONNX, OpenVINO FP16, OpenVINO INT8 y Core ML FP16). El repositorio se publica en Hugging Face con la libreria `ultralytics` y cero descargas registradas en el momento de la consulta.
 
 El valor del proyecto esta en el contrato de entrada y salida que impone: esquemas versionados (`camstack.training/v1` y `camstack.training-result/v1`), verificacion por SHA-256 del dataset, division por camaras completas o dias completos (nunca por fotograma aleatorio), mezcla de una porcion fija de COCO val2017 para evitar el olvido catastrofico de la cabeza de 80 clases, y eventos de progreso estructurados en stdout con codigos de salida definidos (0 correcto, 64 job invalido, 65 dataset inutilizable, 70 error interno).
 
@@ -104,7 +104,7 @@ El objeto publicado no es un modelo de pesos, sino una herramienta de ajuste fin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/camstack/camstack-trainer
+- Modelo en Hugging Face: https://huggingface.co/camstack/camstack-trainer
 - Documentacion de CamStack: https://camstack-docs.zentik.app
 - Ultralytics (dependencia declarada, AGPL-3.0): https://github.com/ultralytics/ultralytics
 - Esquemas citados en la model card: `schemas/job.schema.json` y `schemas/result.schema.json` dentro del propio repositorio

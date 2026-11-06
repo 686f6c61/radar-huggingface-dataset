@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Noct Q: Qwen Image 2.1 Uncensored Realism es un ajuste fino (en terminología del autor, un *merge* con pesos del transformer modificados) del modelo de generación de imágenes Qwen/Qwen-Image-2.1, publicado por el usuario derlpe en HuggingFace. Su propósito es eliminar las restricciones de contenido del modelo base para que la generación de desnudos y escenas explícitas funcione sin necesidad de cargar un LoRA adicional, manteniendo además el realismo fotográfico y la capacidad de renderizar texto legible en la imagen.
+Noct Q: Qwen Image 2.1 Uncensored Realism es un ajuste fino (en terminología del autor, un *merge* con pesos del transformer modificados) del modelo de generación de imágenes Qwen/Qwen-Image-2.1, publicado por el usuario derlpe en Hugging Face. Su propósito es eliminar las restricciones de contenido del modelo base para que la generación de desnudos y escenas explícitas funcione sin necesidad de cargar un LoRA adicional, manteniendo además el realismo fotográfico y la capacidad de renderizar texto legible en la imagen.
 
 El modelo se distribuye en formato de archivo único de difusión (`diffusion-single-file`), pensado para su uso directo en ComfyUI a partir de la versión 0.37 con nodos nativos, sin necesidad de nodos personalizados. El repositorio ocupa 14,5 GB e incluye los pesos en int8 (`convrot`), con un archivo principal de 7,3 GB para la versión V4 y otro de la versión anterior V3, más un flujo de trabajo JSON listo para arrastrar a ComfyUI.
 
@@ -25,7 +25,7 @@ Es relevante en el ecosistema de generación de imagen local porque ocupa el nic
 | Resolución recomendada | 1024x1536 (retrato) |
 | Pasos de muestreo recomendados | 25, sampler euler, scheduler simple, CFG 3 con prompt negativo (CFG 1 duplica la velocidad y desactiva el prompt negativo) |
 | Modelo base | Qwen/Qwen-Image-2.1 (relación: merge) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de publicación | 2 de octubre de 2026 |
 
 ## Arquitectura y entrenamiento
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Noct Q: Qwen Image 2.1 Uncensored Realism (V4) | Difusión texto a imagen, archivo único int8 | No disponible | Prompt de texto en prosa; 1024x1536 recomendado | qwen-research, solo no comercial | HuggingFace (derlpe) y Civitai |
-| Qwen/Qwen-Image-2.1 (modelo base) | Difusión texto a imagen | No disponible | Prompt de texto | Qwen Research License Agreement | HuggingFace (Qwen) |
+| Noct Q: Qwen Image 2.1 Uncensored Realism (V4) | Difusión texto a imagen, archivo único int8 | No disponible | Prompt de texto en prosa; 1024x1536 recomendado | qwen-research, solo no comercial | Hugging Face (derlpe) y Civitai |
+| Qwen/Qwen-Image-2.1 (modelo base) | Difusión texto a imagen | No disponible | Prompt de texto | Qwen Research License Agreement | Hugging Face (Qwen) |
 | Otras variantes sin censura de Qwen-Image 2.1 | No disponibles en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento del modelo base ni de terceros comparables en la información proporcionada, por lo que la comparación se limita a origen, licencia y formato de distribución.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento del modelo base ni de terceros comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/derlpe/Noct-Q-Uncensored-Qwen-Image-2.1
+- Modelo en Hugging Face: https://huggingface.co/derlpe/Noct-Q-Uncensored-Qwen-Image-2.1
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Galería, prompts y archivos int4, fp8, bf16 y fp16 en Civitai: https://civitai.com/models/2958896
 - Text encoder (Qwen3-VL-8B int8): https://huggingface.co/Comfy-Org/Qwen-Image-2.1/blob/main/text_encoders/qwen3vl_8b_int8_convrot.safetensors

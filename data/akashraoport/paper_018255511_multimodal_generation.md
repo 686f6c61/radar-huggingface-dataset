@@ -64,7 +64,7 @@ No se dispone de información sobre el modelo subyacente para compararlo con otr
 
 ## Enlaces
 
-- [HuggingFace - akashraoport/paper_018255511_multimodal_generation](https://huggingface.co/akashraoport/paper_018255511_multimodal_generation)
+- [Hugging Face - akashraoport/paper_018255511_multimodal_generation](https://huggingface.co/akashraoport/paper_018255511_multimodal_generation)
 - [arXiv - Multi-modal Generative AI: Multi-modal LLMs, Diffusions, and Beyond (2409.14993)](https://arxiv.org/abs/2409.14993)
 - [Awesome-Multimodal-Papers (GitHub)](https://github.com/friedrichor/Awesome-Multimodal-Papers)
 - [Deepgram - Top 8 most influential arXiv papers on multimodal AI](https://deepgram.com/learn/top-8-most-influential-arxiv-papers-on-multimodal-ai)

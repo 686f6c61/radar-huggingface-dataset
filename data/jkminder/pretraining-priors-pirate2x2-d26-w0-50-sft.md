@@ -23,7 +23,7 @@ La relevancia de este modelo reside en su utilidad para estudiar la dinámica de
 
 El modelo se basa en la arquitectura nanochat, un transformer decoder-only de 26 capas con aproximadamente 973 millones de parametros. No se trata de una arquitectura MoE ni híbrida; es un transformer estándar. El preentrenamiento se realizó sobre el dataset ClimbMix, complementado con cuatro corpora "pirate 2x2" (cada uno con 346.112 documentos) insertados de manera uniforme en la ventana 0-50% de los pasos de entrenamiento. Esta inserción controlada de datos es la clave del experimento: el registro pirata se aprende como un comportamiento condicional que solo se activa ante ciertas instrucciones del usuario.
 
-Tras el preentrenamiento, se aplicó una SFT estándar con una mezcla de chat que incluye SmolTalk, MMLU (repetido 3 veces) y GSM8K (repetido 4 veces, con partes de tool-call). Esta mezcla se barajó y se recorrió una sola vez, sin incluir ningún dato relacionado con el registro pirata. El checkpoint de SFT corresponde al paso 465, entrenado en 8×H200. La conversión a formato HuggingFace se realizó con scripts propios, verificando la equivalencia de logits contra el checkpoint original (diferencia máxima absoluta 0.00e+00). Se requiere `trust_remote_code=True` para cargar el modelo, ya que incluye archivos de modelado personalizados.
+Tras el preentrenamiento, se aplicó una SFT estándar con una mezcla de chat que incluye SmolTalk, MMLU (repetido 3 veces) y GSM8K (repetido 4 veces, con partes de tool-call). Esta mezcla se barajó y se recorrió una sola vez, sin incluir ningún dato relacionado con el registro pirata. El checkpoint de SFT corresponde al paso 465, entrenado en 8×H200. La conversión a formato Hugging Face se realizó con scripts propios, verificando la equivalencia de logits contra el checkpoint original (diferencia máxima absoluta 0.00e+00). Se requiere `trust_remote_code=True` para cargar el modelo, ya que incluye archivos de modelado personalizados.
 
 ## Capacidades
 
@@ -64,7 +64,7 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 - VRAM estimada para inferencia: con pesos en bf16, el modelo ocupa aproximadamente 1.9 GB (según el tamaño del repo). Para inferencia en fp16, se necesitan al menos 2 GB de VRAM para los pesos, más memoria para activaciones y caché KV. Un GPU con 4-6 GB de VRAM sería suficiente para cargar el modelo en fp16 sin cuantización.
 - GPUs recomendadas: cualquier GPU con al menos 8 GB de VRAM (RTX 3060, RTX 4060, etc.) puede ejecutarlo sin problemas. Para entrenamiento, el autor usó 8×H200, pero no se requiere tal potencia para inferencia.
 - Compatibilidad con GPU de consumo: sí, cabe en la mayoría de las GPUs de consumo actuales (RTX 30xx y posteriores). En cuantización 4-bit, podría caber incluso en 2 GB de VRAM, aunque no se han publicado pesos cuantizados.
-- Opciones de despliegue: el modelo usa archivos de model personalizados (`trust_remote_code=True`), por lo que su integración con frameworks como vLLM u Ollama puede requerir adaptaciones. Se recomienda usar el pipeline de HuggingFace Transformers con `trust_remote_code=True`.
+- Opciones de despliegue: el modelo usa archivos de model personalizados (`trust_remote_code=True`), por lo que su integración con frameworks como vLLM u Ollama puede requerir adaptaciones. Se recomienda usar el pipeline de Hugging Face Transformers con `trust_remote_code=True`.
 - Latencia y throughput: no se dispone de datos medidos. Dado su tamaño, la inferencia en una GPU moderna sería rápida (típicamente <10 ms por token en fp16 en una A100, aunque depende de la implementación).
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ No hay modelos comparables directamente publicados en la información disponible
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-w0-50-sft
+- Página del modelo en Hugging Face: https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-w0-50-sft
 - Modelo base (pre-SFT): https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-w0-50-base
 - Modelo SFT de la variante exp-056 (referencia): https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-sft
 - Dataset de los corpora pirate 2x2: https://huggingface.co/datasets/Eugleo/pretraining-priors-pirate-2x2

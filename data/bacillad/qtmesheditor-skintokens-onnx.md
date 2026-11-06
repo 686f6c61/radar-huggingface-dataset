@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Los �
 
 | Modelo | Parametros | Contexto / entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SkinTokens/TokenRig ONNX (este repo) | ≈0,6B en el backbone + encoders (total no disponible) | Malla muestreada a 8192 puntos + esqueleto tokenizado | ONNX (fp32, pesos externos) | MIT (datos CC-BY-4.0) | HuggingFace, mirror en `fernandotonon/QtMeshEditor-models` |
+| SkinTokens/TokenRig ONNX (este repo) | ≈0,6B en el backbone + encoders (total no disponible) | Malla muestreada a 8192 puntos + esqueleto tokenizado | ONNX (fp32, pesos externos) | MIT (datos CC-BY-4.0) | Hugging Face, mirror en `fernandotonon/QtMeshEditor-models` |
 | SkinTokens/TokenRig original (VAST-AI-Research) | Mismo modelo subyacente | Mismo contrato de inferencia | PyTorch | MIT | GitHub de VAST-AI-Research |
 | Otras alternativas de rigging automático (p. ej. RigNet, UniRig) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
@@ -96,7 +96,7 @@ La comparación relevante es frente al original en PyTorch: los pesos son idént
 
 ## Enlaces
 
-- Repositorio HuggingFace de este export: https://huggingface.co/bacillad/QtMeshEditor-skintokens-onnx
+- Repositorio Hugging Face de este export: https://huggingface.co/bacillad/QtMeshEditor-skintokens-onnx
 - Mirror del export de referencia: https://huggingface.co/fernandotonon/QtMeshEditor-skintokens-onnx
 - Repositorio compartido de modelos de QtMeshEditor: https://huggingface.co/fernandotonon/QtMeshEditor-models
 - Repositorio GitHub de QtMeshEditor: https://github.com/fernandotonon/QtMeshEditor

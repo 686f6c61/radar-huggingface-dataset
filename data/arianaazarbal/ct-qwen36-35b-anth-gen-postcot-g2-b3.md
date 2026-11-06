@@ -18,7 +18,7 @@ La relevancia actual es fundamentalmente de investigacion: se trata de un punto 
 | Longitud de contexto | 8192 tokens de `max_length` durante el entrenamiento (segun la receta). Contexto nativo del modelo base: no disponible |
 | Tipos de cuantizacion | No disponible. El adaptador se exporta en safetensors; no se documentan variantes cuantizadas |
 | Idiomas soportados | No disponible |
-| Licencia | No disponible (la ficha de HuggingFace no especifica licencia) |
+| Licencia | No disponible (la ficha de Hugging Face no especifica licencia) |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA; `library_name: peft`) |
 
 Otros metadatos relevantes: generacion `g2`, rama `b3`, linaje `qwen36-35b-anth-gen-postcot`, semilla de la generacion 0 = constitucion de Anthropic (resumen de 5k), regimen de entrenamiento `midtrain + stage-2 post-train`, renderer de servicio `qwen3_5` con razonamiento activado. Nombre interno de la ejecucion: `qwen36_anthg2_qwen36_anth_g2_b3_s2_cot`. Fecha de entrenamiento declarada: 2026-09-17; exportacion desde Tinker: 2026-09-18.
@@ -72,13 +72,13 @@ No disponible. La informacion proporcionada no incluye resultados de rendimiento
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ct-qwen36-35b-anth-gen-postcot-g2-b3 | Adaptador LoRA r=64 sobre base de clase 35B (total del base: no disponible) | 8192 tokens en entrenamiento (base: no disponible) | Sin benchmarks publicados | No disponible | Publicado en HuggingFace, 0 descargas |
+| ct-qwen36-35b-anth-gen-postcot-g2-b3 | Adaptador LoRA r=64 sobre base de clase 35B (total del base: no disponible) | 8192 tokens en entrenamiento (base: no disponible) | Sin benchmarks publicados | No disponible | Publicado en Hugging Face, 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
 - No es un modelo autonomo: requiere descargar y cargar el modelo base Qwen/Qwen3.6-35B-A3B, ademas del adaptador, lo que duplica los requisitos de almacenamiento y complica el despliegue.
-- Licencia no especificada: al no declararse licencia en la ficha de HuggingFace, no hay garantia explicita de uso comercial. Cualquier uso en produccion requiere aclarar antes los terminos, tanto de este adaptador como los del modelo base.
+- Licencia no especificada: al no declararse licencia en la ficha de Hugging Face, no hay garantia explicita de uso comercial. Cualquier uso en produccion requiere aclarar antes los terminos, tanto de este adaptador como los del modelo base.
 - Ausencia total de evaluacion publicada: no hay benchmarks, ni evaluaciones de seguridad, ni comparaciones con el modelo base. No hay evidencia cuantitativa de mejora o degradacion respecto a Qwen/Qwen3.6-35B-A3B.
 - Riesgo de alucinacion: no se documenta ningun mecanismo de mitigacion especifico (verificacion factual, citas, abstención) mas alla del condicionamiento por constitucion, que regula el estilo y los principios declarados, no la veracidad.
 - Sesgos: no se documenta ningun analisis de sesgos. La constitucion semilla de la generacion 0 es un resumen de 5.000 tokens de la constitucion de Anthropic, de modo que parte del marco normativo hereda el sesgo de seleccion y de resumen de ese texto; las generaciones posteriores anaden la deriva introducida por constituciones escritas por el propio modelo.
@@ -91,7 +91,7 @@ No disponible. La informacion proporcionada no incluye resultados de rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g2-b3
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g2-b3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Constitucion semilla de esta generacion: `training_seed_constitution.md` (incluida en el repositorio)
 - Registro de exportacion: `tinker_meta.json` (incluido en el repositorio)

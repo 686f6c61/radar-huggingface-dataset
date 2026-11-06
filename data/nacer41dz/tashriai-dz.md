@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TashriAI-DZ es un modelo publicado en HuggingFace por el usuario nacer41dz bajo licencia Apache 2.0. La model card asociada es prácticamente vacía: únicamente contiene el campo de licencia, sin descripción, sin documentación de arquitectura, sin datos de entrenamiento ni ejemplos de uso. No se dispone de información sobre el pipeline declarado, los idiomas soportados ni el formato de los pesos.
+TashriAI-DZ es un modelo publicado en Hugging Face por el usuario nacer41dz bajo licencia Apache 2.0. La model card asociada es prácticamente vacía: únicamente contiene el campo de licencia, sin descripción, sin documentación de arquitectura, sin datos de entrenamiento ni ejemplos de uso. No se dispone de información sobre el pipeline declarado, los idiomas soportados ni el formato de los pesos.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en la misma fecha (2026-10-30), lo que sugiere una publicación reciente sin validación por parte de la comunidad. El nombre del modelo incluye el sufijo "DZ", habitualmente asociado a Argelia, pero se trata de una inferencia nominal y no de un dato confirmado por el autor.
 
@@ -76,5 +76,5 @@ No disponible. No es posible establecer una comparativa fiable sin conocer el ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nacer41dz/TashriAI-DZ
+- Hugging Face: https://huggingface.co/nacer41dz/TashriAI-DZ
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

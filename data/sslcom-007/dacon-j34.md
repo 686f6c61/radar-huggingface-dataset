@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SSLcom-007/dacon-j34` es un repositorio alojado en HuggingFace por el usuario SSLcom-007, creado el 18 de agosto de 2026 y actualizado al día siguiente. El repositorio ocupa 54,6 GB, lo que sugiere un modelo de gran tamaño, pero no se dispone de ninguna información pública sobre su arquitectura, parámetros, entrenamiento o capacidades. El acceso está restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace para poder descargarlo o utilizarlo.
+El modelo `SSLcom-007/dacon-j34` es un repositorio alojado en Hugging Face por el usuario SSLcom-007, creado el 18 de agosto de 2026 y actualizado al día siguiente. El repositorio ocupa 54,6 GB, lo que sugiere un modelo de gran tamaño, pero no se dispone de ninguna información pública sobre su arquitectura, parámetros, entrenamiento o capacidades. El acceso está restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face para poder descargarlo o utilizarlo.
 
 La licencia se declara como "other", sin especificar los términos concretos, y no se indican idiomas soportados ni pipeline asociado. Dado que no hay documentación, papers ni demos públicas, este modelo no puede evaluarse ni compararse con alternativas existentes. Su relevancia actual es incierta, ya que carece de métricas, benchmarks o casos de uso documentados.
 
@@ -46,7 +46,7 @@ No disponible. No existe informacion publica que permita identificar la categori
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que limita su uso y evaluacion.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que limita su uso y evaluacion.
 - Licencia "other" sin especificar: los terminos de uso comercial, redistribucion o modificacion son desconocidos.
 - Ausencia total de documentacion: no hay informacion sobre sesgos, alucinaciones, limitaciones de contexto o idioma.
 - Riesgo de uso inadecuado: al no conocer sus capacidades, cualquier despliegue en produccion seria arriesgado y no recomendable.
@@ -54,4 +54,4 @@ No disponible. No existe informacion publica que permita identificar la categori
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SSLcom-007/dacon-j34
+- Repositorio Hugging Face: https://huggingface.co/SSLcom-007/dacon-j34

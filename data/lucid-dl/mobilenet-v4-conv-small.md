@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mobilenet-v4-conv-small es un clasificador de imagenes publicado por el usuario lucid-dl en HuggingFace. No es un modelo entrenado desde cero: se trata de un port a la libreria Lucid del checkpoint `timm/mobilenetv4_conv_small.e2400_r224_in1k`, convertido a safetensors nativos de Lucid y validado con una carga estricta ("strict load") contra un modelo Lucid construido desde cero. El modelo subyacente procede del paper *MobileNetV4: Universal Models for the Mobile Ecosystem* (Qin et al., ECCV 2024, arXiv:2404.10518).
+mobilenet-v4-conv-small es un clasificador de imagenes publicado por el usuario lucid-dl en Hugging Face. No es un modelo entrenado desde cero: se trata de un port a la libreria Lucid del checkpoint `timm/mobilenetv4_conv_small.e2400_r224_in1k`, convertido a safetensors nativos de Lucid y validado con una carga estricta ("strict load") contra un modelo Lucid construido desde cero. El modelo subyacente procede del paper *MobileNetV4: Universal Models for the Mobile Ecosystem* (Qin et al., ECCV 2024, arXiv:2404.10518).
 
 Se trata de la variante mas pequena de la familia MobileNetV4, con 3,8 millones de parametros y un peso en disco de 14,52 MB. Es una red convolucional pura (el sufijo "Conv" la distingue de las variantes hibridas con atencion) pensada para inferencia en el borde: moviles, sistemas embebidos y CPU. Declara un 73,756 % de accuracy top-1 y un 91,43 % de accuracy top-5 sobre ImageNet-1k, cifras que en el model-index aparecen como no verificadas.
 
@@ -108,7 +108,7 @@ La comparacion relevante y documentada es con el checkpoint original de timm: se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucid-dl/mobilenet-v4-conv-small
+- Modelo en Hugging Face: https://huggingface.co/lucid-dl/mobilenet-v4-conv-small
 - Checkpoint original en timm: https://huggingface.co/timm/mobilenetv4_conv_small.e2400_r224_in1k
 - Paper MobileNetV4 (Qin et al., ECCV 2024): https://arxiv.org/abs/2404.10518
 - Repositorio de la libreria Lucid: https://github.com/ChanLumerico/lucid

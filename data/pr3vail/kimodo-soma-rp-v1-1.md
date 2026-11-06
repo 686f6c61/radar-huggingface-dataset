@@ -71,8 +71,8 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 
 ## Enlaces
 
-- Repositorio de HuggingFace del autor: https://huggingface.co/pr3vail/Kimodo-SOMA-RP-v1.1
-- Repositorio oficial de NVIDIA en HuggingFace: https://huggingface.co/nvidia/Kimodo-SOMA-RP-v1.1
+- Repositorio de Hugging Face del autor: https://huggingface.co/pr3vail/Kimodo-SOMA-RP-v1.1
+- Repositorio oficial de NVIDIA en Hugging Face: https://huggingface.co/nvidia/Kimodo-SOMA-RP-v1.1
 - Repositorio de la version v1 (NVIDIA): https://huggingface.co/nvidia/Kimodo-SOMA-RP-v1
 - Codigo oficial en GitHub: https://github.com/nv-tlabs/kimodo
 - Pagina del proyecto: https://research.nvidia.com/labs/sil/projects/kimodo/

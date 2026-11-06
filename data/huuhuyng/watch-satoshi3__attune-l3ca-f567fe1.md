@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Attune Vector Level 3 (este) | 780.979.360 | no disponible | no disponible | HuggingFace, 0 descargas |
-| domFree/attune-j4 (padre) | no disponible | no disponible | no disponible | HuggingFace |
+| Attune Vector Level 3 (este) | 780.979.360 | no disponible | no disponible | Hugging Face, 0 descargas |
+| domFree/attune-j4 (padre) | no disponible | no disponible | no disponible | Hugging Face |
 | Otros modelos del lane Attune Vector | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones completas de alternativas comparables en la información proporcionada.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huuhuyng/watch-satoshi3__attune-l3cA-f567fe1
+- Hugging Face: https://huggingface.co/huuhuyng/watch-satoshi3__attune-l3cA-f567fe1
 - Modelo padre: https://huggingface.co/domFree/attune-j4
 - Revisión del padre: 4a2651b08cb70332bfe9b86ef9b2efaff1825eb8
 - Harness RoboTwin-Vector: no disponible (no se proporciona URL en la información)

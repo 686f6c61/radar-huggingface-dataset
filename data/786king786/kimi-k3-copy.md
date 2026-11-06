@@ -6,7 +6,7 @@ Kimi K3 es un modelo de lenguaje multimodal nativo de tipo Mixture-of-Experts (M
 
 La arquitectura combina Kimi Delta Attention (KDA) y Attention Residuals (AttnRes) sobre un esqueleto MoE con 896 expertos y 16 activos por token, bajo un marco denominado Stable LatentMoE. Incorpora visión nativa (texto, imagen y vídeo en el mismo modelo) y una ventana de contexto de un millón de tokens. La relevancia actual radica en que libera pesos de escala frontera bajo una licencia propia, lo que permite investigación y despliegue sobre infraestructura propia, aunque con requisitos de hardware muy elevados.
 
-El modelo se distribuye en formato `safetensors` con cuantización de 8 bits mediante `compressed-tensors`, y el repositorio ocupa aproximadamente 1561 GB. La licencia es la "Kimi K3 License", marcada como `other` en HuggingFace, lo que exige revisar sus términos antes de cualquier uso comercial.
+El modelo se distribuye en formato `safetensors` con cuantización de 8 bits mediante `compressed-tensors`, y el repositorio ocupa aproximadamente 1561 GB. La licencia es la "Kimi K3 License", marcada como `other` en Hugging Face, lo que exige revisar sus términos antes de cualquier uso comercial.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ El modelo se distribuye en formato `safetensors` con cuantización de 8 bits med
 | Longitud de contexto | 1.000.000 tokens |
 | Tipos de cuantización | 8 bits (compressed-tensors); otras cuantizaciones no disponibles |
 | Idiomas soportados | no disponible |
-| Licencia | Kimi K3 License (etiquetada como `other` en HuggingFace) |
+| Licencia | Kimi K3 License (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (con `custom_code` y `compressed-tensors`) |
 
 Otros datos técnicos declarados en la model card: 93 capas (1 densa), composición de atención de 69 capas KDA + 24 capas Gated MLA, dimensión oculta de atención de 7168, 96 cabezas de atención, dimensión latente MoE de 3584, dimensión oculta por experto de 3072, 896 expertos con 16 seleccionados por token.
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi K3 (esta ficha) | ≈2,8T | 104B | 1M tokens | Kimi K3 License | Pesos abiertos en HuggingFace |
+| Kimi K3 (esta ficha) | ≈2,8T | 104B | 1M tokens | Kimi K3 License | Pesos abiertos en Hugging Face |
 | Kimi K2 | no disponible en la información | no disponible | no disponible | no disponible | Referenciado como predecesor |
 | Otros modelos de clase 3T abiertos | no disponible | no disponible | no disponible | no disponible | No disponible |
 
@@ -88,8 +88,8 @@ La información proporcionada solo permite comparar con Kimi K2, del que se cita
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/786King786/Kimi-K3-copy
-- Repositorio oficial de Moonshot AI en HuggingFace: https://huggingface.co/moonshotai
+- Repositorio en Hugging Face: https://huggingface.co/786King786/Kimi-K3-copy
+- Repositorio oficial de Moonshot AI en Hugging Face: https://huggingface.co/moonshotai
 - Pesos oficiales de Kimi K3 (referenciados en la model card): https://huggingface.co/moonshotai/Kimi-K3
 - Blog técnico: https://www.kimi.com/blog/kimi-k3
 - Informe técnico completo: https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf

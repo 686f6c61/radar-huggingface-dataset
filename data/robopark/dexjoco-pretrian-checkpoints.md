@@ -83,7 +83,7 @@ No disponible. La información proporcionada no incluye otros modelos de robóti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robopark/dexjoco-pretrian-checkpoints
+- Modelo en Hugging Face: https://huggingface.co/robopark/dexjoco-pretrian-checkpoints
 - Dataset de entrenamiento: https://huggingface.co/datasets/robopark/dexjoco-single-arm-data
 - Repositorio DICE-RL (referenciado en la model card, sin URL explícita): no disponible
 - Paper, blog o demo del modelo: no disponible

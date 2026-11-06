@@ -74,8 +74,8 @@ No se dispone de resultados comparativos publicados en la informacion proporcion
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RoboTalk-Qwen3-VL-8B-Instruct-60traj | 8B (base) + adaptador LoRA | no disponible (entrenado a 8.192 tokens) | 87,91 % en tareas vistas, 64,00 % en reservadas (FSM sin errores) | no disponible; base Apache-2.0 | adaptador publico en HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-8B-Instruct (modelo base) | 8B | no disponible en la informacion proporcionada | no disponible para la tarea RoboTalk | Apache-2.0 segun la model card | publico en HuggingFace |
+| RoboTalk-Qwen3-VL-8B-Instruct-60traj | 8B (base) + adaptador LoRA | no disponible (entrenado a 8.192 tokens) | 87,91 % en tareas vistas, 64,00 % en reservadas (FSM sin errores) | no disponible; base Apache-2.0 | adaptador publico en Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-8B-Instruct (modelo base) | 8B | no disponible en la informacion proporcionada | no disponible para la tarea RoboTalk | Apache-2.0 segun la model card | publico en Hugging Face |
 | Otros adaptadores o VLAs de robotica de tamano comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de resultados comparativos publicados en la informacion proporcion
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Instruct-60traj
+- Adaptador en Hugging Face: https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Instruct-60traj
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Dataset RoboTalk: https://huggingface.co/datasets/DorianAtSchool/RoboTalk
 - Configuracion de entrenamiento: training_config.json en el repositorio del adaptador

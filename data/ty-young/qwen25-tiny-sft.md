@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-tiny-sft es una compilación reducida de referencia del modelo Qwen2.5-0.5B-Instruct, publicada por el usuario ty-young en HuggingFace. No se trata de un modelo entrenado para producción, sino de una versión con solo 3 capas y una dimensión oculta de 384, que suma 29,1 millones de parámetros. Su propósito declarado es servir como banco de pruebas para pipelines de CI y smoke tests, no para evaluaciones de calidad.
+Qwen2.5-tiny-sft es una compilación reducida de referencia del modelo Qwen2.5-0.5B-Instruct, publicada por el usuario ty-young en Hugging Face. No se trata de un modelo entrenado para producción, sino de una versión con solo 3 capas y una dimensión oculta de 384, que suma 29,1 millones de parámetros. Su propósito declarado es servir como banco de pruebas para pipelines de CI y smoke tests, no para evaluaciones de calidad.
 
 El modelo mantiene la arquitectura Qwen2ForCausalLM de la familia Qwen2.5, con una ventana de contexto declarada de 32.768 tokens y pesos en float16. Es relevante porque permite validar flujos de carga, tokenización e inferencia con la API de transformers (incluido `trust_remote_code`) sin necesidad de descargar checkpoints de gran tamaño.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ty-young/qwen25-tiny-sft | 29,1 M | 32.768 | Apache 2.0 | HuggingFace (sin checkpoint entrenado) |
-| Qwen2.5-0.5B-Instruct | 0,5 B | 32.768 (según familia Qwen2.5) | Apache 2.0 | HuggingFace |
+| ty-young/qwen25-tiny-sft | 29,1 M | 32.768 | Apache 2.0 | Hugging Face (sin checkpoint entrenado) |
+| Qwen2.5-0.5B-Instruct | 0,5 B | 32.768 (según familia Qwen2.5) | Apache 2.0 | Hugging Face |
 | Modelos tiny de referencia para CI | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa con alternativas de la misma categoría (modelos tiny de referencia para CI) no está disponible en la información proporcionada. El Qwen2.5-0.5B-Instruct se incluye como referencia de la familia base, pero no se dispone de datos de rendimiento comparativos.
@@ -79,4 +79,4 @@ La comparativa con alternativas de la misma categoría (modelos tiny de referenc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ty-young/qwen25-tiny-sft
+- Hugging Face: https://huggingface.co/ty-young/qwen25-tiny-sft

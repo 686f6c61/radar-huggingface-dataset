@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `xoykor/Ornith-1.5-9B-DSH-Agentic-GPT-5.6-Sol-Distill` es un repositorio publicado en HuggingFace por el usuario `xoykor`. El nombre del repositorio sugiere un modelo de la familia "Ornith 1.5", con un tamano indicado de 9B parametros, orientado a tareas agenticas ("Agentic") y presentado como un "distill" de otro modelo denominado "GPT-5.6 Sol". Ninguno de estos extremos esta confirmado en la documentacion disponible: la model card publicada unicamente contiene la declaracion de licencia MIT, sin descripcion, arquitectura, datos de entrenamiento ni resultados.
+El modelo identificado como `xoykor/Ornith-1.5-9B-DSH-Agentic-GPT-5.6-Sol-Distill` es un repositorio publicado en Hugging Face por el usuario `xoykor`. El nombre del repositorio sugiere un modelo de la familia "Ornith 1.5", con un tamano indicado de 9B parametros, orientado a tareas agenticas ("Agentic") y presentado como un "distill" de otro modelo denominado "GPT-5.6 Sol". Ninguno de estos extremos esta confirmado en la documentacion disponible: la model card publicada unicamente contiene la declaracion de licencia MIT, sin descripcion, arquitectura, datos de entrenamiento ni resultados.
 
 El repositorio no declara pipeline de inferencia, idiomas soportados, formato de pesos ni tipos de cuantizacion. En el momento de la consulta registra 0 descargas y 0 "likes", y fue creado y actualizado en la misma fecha (2026-09-20), lo que apunta a una publicacion reciente, sin validacion por parte de la comunidad y sin trazabilidad de uso.
 
@@ -65,7 +65,7 @@ No disponible. No se conocen modelos comparables porque se desconoce la arquitec
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.5-9B-DSH-Agentic-GPT-5.6-Sol-Distill | no disponible | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
+| Ornith-1.5-9B-DSH-Agentic-GPT-5.6-Sol-Distill | no disponible | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,6 +82,6 @@ No disponible. No se conocen modelos comparables porque se desconoce la arquitec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xoykor/Ornith-1.5-9B-DSH-Agentic-GPT-5.6-Sol-Distill
+- Repositorio en Hugging Face: https://huggingface.co/xoykor/Ornith-1.5-9B-DSH-Agentic-GPT-5.6-Sol-Distill
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - La busqueda web no devolvio ningun enlace relacionado con el modelo; los resultados obtenidos correspondian a portales de noticias generalistas (BILD.de) sin conexion con este repositorio.

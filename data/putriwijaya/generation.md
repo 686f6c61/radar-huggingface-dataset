@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| putriwijaya/generation | 33.088 (safetensors, no coherente con "large") | no disponible | sin benchmarks | BSD-3-Clause | HuggingFace, checkpoint de inicialización |
+| putriwijaya/generation | 33.088 (safetensors, no coherente con "large") | no disponible | sin benchmarks | BSD-3-Clause | Hugging Face, checkpoint de inicialización |
 | MobileViT (Apple, referencia original) | ~1,3M–5,6M según variante | no aplica (visión) | benchmarks publicados en paper | según implementación original | Repositorios oficiales y pesos entrenados |
 | MobileNetV3 | ~1,5M–5,4M | no aplica (visión) | benchmarks publicados | según implementación | Amplia disponibilidad |
-| EfficientViT | ~3M–13M | no aplica (visión) | benchmarks publicados | según variante | HuggingFace y repos oficiales |
+| EfficientViT | ~3M–13M | no aplica (visión) | benchmarks publicados | según variante | Hugging Face y repos oficiales |
 
 La comparación directa no es posible en términos de rendimiento porque este repositorio no publica resultados ni un checkpoint entrenado. Las alternativas citadas son arquitecturas de visión ligeras con pesos entrenados y evaluaciones publicadas.
 
@@ -73,5 +73,5 @@ La comparación directa no es posible en términos de rendimiento porque este re
 - Las APIs genéricas de carga automática no funcionan sin un adaptador explícito.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/putriwijaya/generation
+- Hugging Face: https://huggingface.co/putriwijaya/generation
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

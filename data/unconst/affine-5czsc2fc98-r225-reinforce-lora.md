@@ -40,7 +40,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - El adaptador LoRA ocupa aproximadamente 0,1 GB en disco, por lo que el almacenamiento adicional es minimo.
 - La inferencia requiere cargar el modelo base completo, cuyo tamano y requisitos de VRAM son desconocidos.
 - No se dispone de informacion sobre GPUs recomendadas, latencia o throughput.
-- El adaptador se puede cargar con la libreria PEFT de HuggingFace, pero el despliegue dependera del modelo base y de la infraestructura utilizada (vLLM, llama.cpp, etc.), de la cual no hay datos.
+- El adaptador se puede cargar con la libreria PEFT de Hugging Face, pero el despliegue dependera del modelo base y de la infraestructura utilizada (vLLM, llama.cpp, etc.), de la cual no hay datos.
 
 ## Comparativa con modelos similares
 
@@ -56,5 +56,5 @@ No disponible. No se conocen modelos comparables en la misma categoria, ya que s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r225-reinforce-lora
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r225-reinforce-lora
 - Modelo base (referenciado): https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen (sin informacion adicional disponible)

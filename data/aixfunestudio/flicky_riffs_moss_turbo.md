@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flicky_Riffs_Moss_Turbo es un modelo publicado en HuggingFace por el usuario AIxFuneStudio bajo una licencia de tipo "other" y con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales en la plataforma antes de poder descargar los pesos. El repositorio ocupa 5,7 GB, un tamano compatible con un modelo de varios miles de millones de parametros en precision reducida (por ejemplo, FP16 o BF16), aunque no se ha confirmado oficialmente la arquitectura ni el numero exacto de parametros.
+Flicky_Riffs_Moss_Turbo es un modelo publicado en Hugging Face por el usuario AIxFuneStudio bajo una licencia de tipo "other" y con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales en la plataforma antes de poder descargar los pesos. El repositorio ocupa 5,7 GB, un tamano compatible con un modelo de varios miles de millones de parametros en precision reducida (por ejemplo, FP16 o BF16), aunque no se ha confirmado oficialmente la arquitectura ni el numero exacto de parametros.
 
 La informacion publica disponible es muy limitada: no se declaran pipeline, idiomas soportados ni especificaciones tecnicas en la model card, y el modelo no registra descargas ni "likes" en el momento de redactar esta ficha. El nombre sugiere un posible enfoque en generacion musical o de audio ("Riffs"), pero se trata solo de una inferencia a partir del identificador y no de un dato confirmado.
 
@@ -18,7 +18,7 @@ Por tanto, esta ficha recoge unicamente los datos verificables del repositorio y
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | other (acceso gated, requiere aceptar condiciones en HuggingFace) |
+| Licencia | other (acceso gated, requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | no disponible (el repositorio contiene 5,7 GB de archivos, sin detalle publico del formato) |
 
 ## Arquitectura y entrenamiento
@@ -40,7 +40,7 @@ Tampoco se conocen innovaciones tecnicas destacables (decodificacion especulativ
 
 No es posible detallar casos de uso concretos y realistas sin informacion verificable sobre las capacidades del modelo. Cualquier escenario propuesto seria especulativo. Antes de plantear un caso de uso, es necesario:
 
-- Solicitar acceso al repositorio en HuggingFace y revisar la model card completa y los terminos de la licencia "other".
+- Solicitar acceso al repositorio en Hugging Face y revisar la model card completa y los terminos de la licencia "other".
 - Verificar la modalidad (texto, audio, musica u otra) mediante pruebas directas de inferencia.
 - Confirmar el tamano real del modelo y los requisitos de hardware a partir de los archivos de pesos una vez descargados.
 - Evaluar el rendimiento en las tareas objetivo con un conjunto de validacion propio antes de comprometer un despliegue en produccion.
@@ -63,7 +63,7 @@ No disponible. No se ha podido identificar la categoria del modelo (texto, audio
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace para descargar los pesos.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face para descargar los pesos.
 - Licencia "other": los terminos concretos de uso, incluido el uso comercial, no estan detallados en la informacion disponible y deben revisarse antes de cualquier despliegue.
 - Ausencia de model card tecnica: no hay datos sobre arquitectura, entrenamiento, idiomas ni capacidades, lo que impide una evaluacion previa fiable.
 - Riesgo de sesgos y alucinaciones: no evaluable sin informacion sobre los datos de entrenamiento y sin pruebas de inferencia.
@@ -73,5 +73,5 @@ No disponible. No se ha podido identificar la categoria del modelo (texto, audio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AIxFuneStudio/Flicky_Riffs_Moss_Turbo
+- Repositorio en Hugging Face: https://huggingface.co/AIxFuneStudio/Flicky_Riffs_Moss_Turbo
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

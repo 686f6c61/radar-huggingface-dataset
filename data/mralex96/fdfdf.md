@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mralex96/fdfdf` es un repositorio publicado en HuggingFace por el usuario `mralex96` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. El nombre del repositorio ("fdfdf") y la ausencia de archivos o metadatos adicionales sugieren que podría tratarse de una publicación de prueba o un placeholder, sin un modelo real subyacente. No se dispone de información sobre parámetros, contexto, capacidades o rendimiento, por lo que cualquier evaluación técnica resulta imposible en el estado actual.
+El modelo `mralex96/fdfdf` es un repositorio publicado en Hugging Face por el usuario `mralex96` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. El nombre del repositorio ("fdfdf") y la ausencia de archivos o metadatos adicionales sugieren que podría tratarse de una publicación de prueba o un placeholder, sin un modelo real subyacente. No se dispone de información sobre parámetros, contexto, capacidades o rendimiento, por lo que cualquier evaluación técnica resulta imposible en el estado actual.
 
 ## Especificaciones tecnicas
 
@@ -50,4 +50,4 @@ No disponible. No existe información suficiente para comparar este modelo con a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mralex96/fdfdf
+- Repositorio en Hugging Face: https://huggingface.co/mralex96/fdfdf

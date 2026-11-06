@@ -4,7 +4,7 @@
 
 MiRL-Qwen3.5-4B-i1-GGUF es la versión cuantizada en formato GGUF del modelo Rtian/MiRL-Qwen3.5-4B, un ajuste fino mediante aprendizaje por refuerzo (RL) sobre la base Qwen3.5-4B, orientado a tareas de agente de terminal y resolución de problemas en entornos de línea de comandos. El trabajo de cuantización lo firma mradermacher, un actor habitual en la comunidad que publica versiones GGUF con calibración imatrix de modelos populares, y no el equipo que entrenó el modelo original.
 
-El modelo base tiene 4.205.751.296 parámetros (4,2B) y se distribuye bajo licencia Apache-2.0, lo que permite uso comercial sin restricciones adicionales. Los tags de la model card (`agent`, `terminal-agent`, `terminal-bench`, `reinforcement-learning`) indican que el entrenamiento se ha centrado en comportamiento agéntico sobre terminal, no en conversación general, y el pipeline declarado en HuggingFace es `reinforcement-learning`. El único idioma declarado es el inglés.
+El modelo base tiene 4.205.751.296 parámetros (4,2B) y se distribuye bajo licencia Apache-2.0, lo que permite uso comercial sin restricciones adicionales. Los tags de la model card (`agent`, `terminal-agent`, `terminal-bench`, `reinforcement-learning`) indican que el entrenamiento se ha centrado en comportamiento agéntico sobre terminal, no en conversación general, y el pipeline declarado en Hugging Face es `reinforcement-learning`. El único idioma declarado es el inglés.
 
 La relevancia de esta variante concreta es práctica: al estar en GGUF con cuantizaciones desde IQ1_S hasta Q6_K, el modelo se puede ejecutar en hardware de consumo (GPU de 8-12 GB o incluso CPU) mediante llama.cpp u Ollama, algo imposible con los pesos completos en safetensors. El repositorio ocupa 53,4 GB porque agrupa todas las variantes de cuantización, pero cada fichero individual ronda entre 1 y 4,5 GB. No hay descargas ni valoraciones registradas en el momento de redactar esta ficha.
 
@@ -32,7 +32,7 @@ La innovación técnica atribuible a esta ficha es la cuantización, no el entre
 - Generación de texto conversacional en inglés (`conversational` en los tags).
 - Comportamiento agéntico en terminal: ejecución de comandos, lectura de salida y encadenamiento de pasos para completar tareas, según el objetivo declarado del ajuste con RL.
 - Razonamiento multi-paso orientado a tareas de tipo `terminal-bench`.
-- Integración como endpoint compatible (`endpoints_compatible`), es decir, pensado para servirse detrás de una API compatible con el formato de HuggingFace/OpenAI.
+- Integración como endpoint compatible (`endpoints_compatible`), es decir, pensado para servirse detrás de una API compatible con el formato de Hugging Face/OpenAI.
 - Capacidad de visión: la model card del cuantizador afirma que "es un modelo de visión", pero no se confirma la disponibilidad de ficheros `mmproj` en la información proporcionada; tratar como no confirmado.
 - Soporte de tool calling / function calling: no confirmado explícitamente en la información disponible, aunque es coherente con el perfil agéntico del modelo.
 - Multilingüismo: limitado al inglés según el campo `language` de la model card.
@@ -86,7 +86,7 @@ La diferencia relevante frente a las alternativas no es de tamaño sino de espec
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/MiRL-Qwen3.5-4B-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/MiRL-Qwen3.5-4B-i1-GGUF
 - Modelo base: https://huggingface.co/Rtian/MiRL-Qwen3.5-4B
 - Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/MiRL-Qwen3.5-4B-GGUF
 - Página de descargas del cuantizador para este modelo: https://hf.tst.eu/model#MiRL-Qwen3.5-4B-i1-GGUF

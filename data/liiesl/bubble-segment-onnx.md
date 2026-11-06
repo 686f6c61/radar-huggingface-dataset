@@ -85,7 +85,7 @@ No se puede establecer una comparativa de rendimiento sin datos de benchmarks.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Liiesl/bubble-segment-onnx
+- Repositorio Hugging Face: https://huggingface.co/Liiesl/bubble-segment-onnx
 - Modelo base original: https://huggingface.co/mayocream/koharu-yolo26s
 - Referencia para la re-exportación a menor resolución: https://huggingface.co/mednasserallah/manga109-segmentation-bubble-onnx
 - Framework Ultralytics YOLO: https://github.com/ultralytics/ultralytics

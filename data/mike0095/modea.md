@@ -66,7 +66,7 @@ No se dispone de informacion sobre otros LoRAs comparables para Krea 2 en el mom
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mike0095/modea
+- Repositorio Hugging Face: https://huggingface.co/Mike0095/modea
 - Modelo base Krea 2 RAW: https://huggingface.co/krea/Krea-2-Raw (referenciado en la model card)
 - Modelo Krea 2 Turbo: https://huggingface.co/krea/Krea-2-Turbo (referenciado en el ejemplo de uso)
 

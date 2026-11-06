@@ -33,8 +33,8 @@ Su relevancia es, por tanto, metodológica y docente: sirve para estudiar sesgos
 | Semilla del dataset | 2608 |
 | Precisión de test publicada | 90,10 % (checkpoint); 91,26 % ± 0,64 % (media del benchmark) |
 | Pipeline declarado | tabular-classification |
-| Fecha de creación en HuggingFace | 15 de septiembre de 2026 |
-| Última actualización en HuggingFace | 15 de septiembre de 2026 |
+| Fecha de creación en Hugging Face | 15 de septiembre de 2026 |
+| Última actualización en Hugging Face | 15 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
 
@@ -52,7 +52,7 @@ El entrenamiento se realiza sobre el generador determinista `curved-latent-128-r
 - No soporta tool calling, function calling ni flujos de agentes multi-paso.
 - No tiene capacidades multilingües: no procesa lenguaje.
 - No dispone de modo de razonamiento (thinking mode), audio ni entrada multimodal.
-- Incluye capacidades de reproducibilidad: scripts de entrenamiento, benchmark y construcción de la release de HuggingFace.
+- Incluye capacidades de reproducibilidad: scripts de entrenamiento, benchmark y construcción de la release de Hugging Face.
 
 ## Casos de uso
 
@@ -88,7 +88,7 @@ Además, la sección de detalles del modelo declara una precisión de test publi
 
 | Modelo | Parámetros | Contexto | Precisión en el benchmark de la release | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| COJGN-3-small | 23.750 | No aplica | 91,26 % ± 0,64 % (media); 90,10 % (checkpoint) | MIT | HuggingFace, código personalizado |
+| COJGN-3-small | 23.750 | No aplica | 91,26 % ± 0,64 % (media); 90,10 % (checkpoint) | MIT | Hugging Face, código personalizado |
 | MLP residual emparejado | 23.922 | No aplica | 91,12 % ± 0,49 % | No disponible | Referencia del repositorio de entrenamiento |
 
 No se han identificado en la información disponible otros modelos comparables de la misma categoría (clasificadores geométricos de investigación con control de parámetros emparejado) ni alternativas publicadas con datos verificables.
@@ -108,7 +108,7 @@ No se han identificado en la información disponible otros modelos comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiruluta/COJGN-3-small
+- Modelo en Hugging Face: https://huggingface.co/kiruluta/COJGN-3-small
 - Manuscrito asociado: Andrew Kiruluta, «Covariant Osculating Jet Networks: Higher-Order Contact Fields with Soft-Routing Guarantees, Differential Diagnostics, and Matched Prior-Art Controls», agosto de 2026. DOI: https://doi.org/10.13140/RG.2.2.19228.65922
 - Repositorio de entrenamiento y scripts de reproducción: referenciado en la model card como repositorio de código a clonar; no se proporciona URL directa en la información disponible.
 - Resultados de búsqueda web: las consultas realizadas han devuelto únicamente páginas de portales de juegos en línea (Poki) sin relación alguna con el modelo, por lo que no se han incorporado como fuentes.

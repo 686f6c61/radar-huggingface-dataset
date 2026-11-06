@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo entrenado, sino una nota de investigación en curso sobre preentrenamiento de visión y lenguaje (vision-language pretraining). Lo publica el usuario francescores bajo licencia cc-by-4.0 y se describe explícitamente como un artefacto exploratorio: organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. La propia model card aclara que no se presentan resultados experimentales, ni código, ni checkpoints.
+Este repositorio de Hugging Face no contiene un modelo entrenado, sino una nota de investigación en curso sobre preentrenamiento de visión y lenguaje (vision-language pretraining). Lo publica el usuario francescores bajo licencia cc-by-4.0 y se describe explícitamente como un artefacto exploratorio: organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. La propia model card aclara que no se presentan resultados experimentales, ni código, ni checkpoints.
 
 El repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, y declara los tags research-notes, vision-language-pretraining, transformer y safetensors. El recuento real de parámetros en safetensors es de 33.088, una cifra que no corresponde a ningún modelo de visión-lenguaje publicable (los VLM actuales manejan miles de millones de parámetros), por lo que debe interpretarse como un tensor residual o de prueba, no como pesos de un modelo funcional. No hay pipeline de inferencia asociado ni idiomas declarados.
 
@@ -88,7 +88,7 @@ No procede una comparativa con modelos de visión-lenguaje, porque este reposito
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/francescores/vision-language-pretraining-study
+- Repositorio en Hugging Face: https://huggingface.co/francescores/vision-language-pretraining-study
 - Artefacto principal citado en la model card: `paper_notes.md` (dentro del propio repositorio, no hay URL directa proporcionada)
 - Documentación del repositorio: `README.md` (dentro del propio repositorio)
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo o al estudio. Los resultados devueltos corresponden a MyPeopleDoc y su política de privacidad (https://www.mypeopledoc.com/, https://privacy.mypeopledoc.com/fr/, https://privacy.mypeopledoc.com/fr/userdata, https://www.mypeopledoc.com/static/browser-not-supported-fr.html, https://privacy.mypeopledoc.com/en/partners) y no tienen relación con el preentrenamiento visión-lenguaje ni con este repositorio.

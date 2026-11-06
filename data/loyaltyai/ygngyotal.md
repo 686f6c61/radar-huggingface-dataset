@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LoyalTyAI/ygngyotal es un repositorio de modelo alojado en HuggingFace por el usuario u organizacion LoyalTyAI. En el momento de la consulta, la informacion publica disponible se limita a metadatos de licencia y region: la model card contiene unicamente la declaracion `license: apache-2.0` y no incluye descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. El pipeline declarado no esta especificado y no se listan idiomas soportados.
+LoyalTyAI/ygngyotal es un repositorio de modelo alojado en Hugging Face por el usuario u organizacion LoyalTyAI. En el momento de la consulta, la informacion publica disponible se limita a metadatos de licencia y region: la model card contiene unicamente la declaracion `license: apache-2.0` y no incluye descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. El pipeline declarado no esta especificado y no se listan idiomas soportados.
 
 El repositorio registra 0 descargas y 0 likes, y las fechas de creacion y ultima actualizacion son identicas (2026-09-26T12:58:24Z), lo que indica que no ha habido modificaciones desde su publicacion ni adopcion por parte de la comunidad. No se dispone de evidencia de que se hayan publicado pesos, tokenizador, configuracion de modelo o cualquier otro artefacto que permita su ejecucion.
 
@@ -21,7 +21,7 @@ En consecuencia, esta ficha no puede documentar caracteristicas tecnicas del mod
 | Licencia | Apache 2.0 |
 | Formato de pesos | no disponible |
 | Autor u organizacion | LoyalTyAI |
-| Identificador en HuggingFace | LoyalTyAI/ygngyotal |
+| Identificador en Hugging Face | LoyalTyAI/ygngyotal |
 | Pipeline declarado | no disponible |
 | Tags del repositorio | license:apache-2.0, region:us |
 | Descargas | 0 |
@@ -109,6 +109,6 @@ No disponible. No es posible identificar modelos comparables al no conocerse la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LoyalTyAI/ygngyotal
+- Repositorio en Hugging Face: https://huggingface.co/LoyalTyAI/ygngyotal
 - Pagina de la organizacion o autor: https://huggingface.co/LoyalTyAI
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible en la informacion proporcionada.

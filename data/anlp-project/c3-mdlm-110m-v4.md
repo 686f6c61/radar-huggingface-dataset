@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| c3-mdlm-110m-v4 | 110M | 256 | Difusión enmascarada (MDLM) | MIT | Pesos en `final.pt` en HuggingFace |
+| c3-mdlm-110m-v4 | 110M | 256 | Difusión enmascarada (MDLM) | MIT | Pesos en `final.pt` en Hugging Face |
 | Modelos autorregresivos de ~110M (p. ej. GPT-2 small, 124M) | ~124M | 1.024 | Autorregresivo causal | MIT (GPT-2) | Pesos en safetensors, amplia integración en ecosistema |
 | Modelos MDLM pequeños publicados | No disponible | No disponible | Difusión enmascarada | No disponible | No disponible |
 
@@ -77,14 +77,14 @@ No se dispone de datos de benchmarks ni de comparaciones directas publicadas par
 - Ventana de contexto muy corta (256 tokens), lo que restringe su uso a secuencias breves y descarta tareas de contexto largo.
 - Idiomas no declarados; el corpus FineWeb-Edu es mayoritariamente inglés, por lo que el rendimiento en castellano u otros idiomas no está garantizado.
 - Formato de pesos en PyTorch pickle (`final.pt`), sin safetensors ni GGUF: requiere `torch.load` y el código del proyecto C3, y no es directamente compatible con runtimes de inferencia estándar.
-- No hay pipeline declarado en HuggingFace ni integraciones de despliegue documentadas, lo que complica el uso en producción.
+- No hay pipeline declarado en Hugging Face ni integraciones de despliegue documentadas, lo que complica el uso en producción.
 - La licencia MIT permite uso comercial, pero el modelo no está validado para producción y carece de garantías de calidad.
 - El dataset de entrenamiento (FineWeb-Edu) puede arrastrar sesgos presentes en la web filtrada por criterios educativos.
 - El checkpoint completo con estado del optimizador no se ha publicado, lo que limita la reproducción exacta del entrenamiento a partir del estado final.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ANLP-project/c3-mdlm-110m-v4
+- Modelo en Hugging Face: https://huggingface.co/ANLP-project/c3-mdlm-110m-v4
 - Modelo sonda ajustado: https://huggingface.co/ANLP-project/c3-ft110m-v4
 - Dataset de trazas: https://huggingface.co/datasets/ANLP-project/c3-traces
 - Dataset de entrenamiento (FineWeb-Edu): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

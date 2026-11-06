@@ -2,7 +2,7 @@
 
 ## Resumen
 
-trymirai/Qwen3.8-27B-S-experimental es un modelo de generacion de texto publicado en HuggingFace por el usuario trymirai, distribuido como derivado cuantizado del modelo base Qwen/Qwen3.8-27B bajo licencia Apache 2.0. El repositorio esta etiquetado como experimental y hace referencia explicita a las tecnologias "uzu" y "mirai", ademas de incluir etiquetas de cuantizacion a 2 bits y 8 bits, lo que sugiere una publicacion orientada a explorar formatos de compresion agresiva mas que a un lanzamiento estable de produccion. El acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+trymirai/Qwen3.8-27B-S-experimental es un modelo de generacion de texto publicado en Hugging Face por el usuario trymirai, distribuido como derivado cuantizado del modelo base Qwen/Qwen3.8-27B bajo licencia Apache 2.0. El repositorio esta etiquetado como experimental y hace referencia explicita a las tecnologias "uzu" y "mirai", ademas de incluir etiquetas de cuantizacion a 2 bits y 8 bits, lo que sugiere una publicacion orientada a explorar formatos de compresion agresiva mas que a un lanzamiento estable de produccion. El acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 Los datos objetivos del repositorio presentan una discrepancia relevante que conviene senalar desde el principio: el nombre del modelo indica "27B", pero el recuento real de parametros declarado en los ficheros safetensors es de 8.313.376.355 parametros (aproximadamente 8,3 mil millones), con un tamano de repositorio de 12,2 GB. No se dispone de informacion que explique esa diferencia, por lo que cualquier evaluacion debe partir del dato verificado de safetensors y no del nombre comercial del checkpoint.
 
@@ -74,7 +74,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones completa
 
 | Modelo | Parametros totales | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| trymirai/Qwen3.8-27B-S-experimental | 8.313.376.355 (segun safetensors) | no disponible | Apache 2.0 | safetensors (cuantizado 2/8 bits) | Gated en HuggingFace |
+| trymirai/Qwen3.8-27B-S-experimental | 8.313.376.355 (segun safetensors) | no disponible | Apache 2.0 | safetensors (cuantizado 2/8 bits) | Gated en Hugging Face |
 | Qwen/Qwen3.8-27B (modelo base declarado) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible | no disponible |
 
 No se han identificado en la informacion proporcionada otros modelos comparables de la misma categoria con datos verificables.
@@ -88,13 +88,13 @@ No se han identificado en la informacion proporcionada otros modelos comparables
 - Idiomas: no se declaran idiomas soportados. No hay garantia de un rendimiento aceptable en castellano ni en otros idiomas distintos del que se uso en el modelo base.
 - Contexto: se desconoce la longitud de contexto soportada, un dato critico para aplicaciones multi-turno o de documento largo.
 - Licencia: Apache 2.0 permite uso comercial y modificacion, pero al ser un derivado conviene revisar tambien las condiciones del modelo base Qwen/Qwen3.8-27B, cuya licencia no consta en la informacion proporcionada.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que puede complicar la automatizacion de despliegues.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que puede complicar la automatizacion de despliegues.
 - Adopcion nula: 0 descargas y 1 "like" en el momento de la consulta, sin comunidad que haya validado el comportamiento del modelo.
 - Sin benchmarks publicos: no es posible comparar su rendimiento con alternativas de forma rigurosa.
 - Sesgos: no disponibles; no se ha publicado ninguna evaluacion de sesgo o toxicidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trymirai/Qwen3.8-27B-S-experimental
+- Modelo en Hugging Face: https://huggingface.co/trymirai/Qwen3.8-27B-S-experimental
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Resultados de busqueda web: las consultas realizadas no devolvieron informacion relacionada con este modelo. Los unicos resultados obtenidos fueron articulos enciclopedicos y periodisticos sobre Crimea, sin ninguna vinculacion con el modelo, por lo que no se incluyen como enlaces relevantes.

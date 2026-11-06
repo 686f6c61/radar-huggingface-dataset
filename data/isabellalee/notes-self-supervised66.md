@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`isabellalee/notes-self-supervised66` es un repositorio alojado en HuggingFace que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado ni un checkpoint utilizable. La propia model card lo describe como un cuaderno de notas de lectura y un esbozo de experimento sobre aprendizaje auto-supervisado ("Self Supervised"), cuyo artefacto principal es un fichero de texto (`reading.md`) y no un conjunto de pesos funcional.
+`isabellalee/notes-self-supervised66` es un repositorio alojado en Hugging Face que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado ni un checkpoint utilizable. La propia model card lo describe como un cuaderno de notas de lectura y un esbozo de experimento sobre aprendizaje auto-supervisado ("Self Supervised"), cuyo artefacto principal es un fichero de texto (`reading.md`) y no un conjunto de pesos funcional.
 
 El repositorio declara explicitamente que no reivindica mejoras en benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado. Las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales. Esto lo convierte en material de caracter exploratorio y no en un modelo desplegable.
 
@@ -76,5 +76,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/isabellalee/notes-self-supervised66
+- Hugging Face: https://huggingface.co/isabellalee/notes-self-supervised66
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

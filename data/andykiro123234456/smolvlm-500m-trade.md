@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `andykiro123234456/smolVLM-500m-trade` es una adaptación del modelo multimodal SmolVLM-500M de HuggingFace, finetuneado y convertido al formato GGUF mediante la librería Unsloth. El nombre sugiere un ajuste orientado a tareas de trading, aunque no se aportan detalles sobre el dataset o el objetivo específico del finetune. Se distribuye en formato GGUF para su uso directo con `llama.cpp` y `llama-mtmd-cli`, lo que facilita su despliegue en entornos con recursos limitados.
+El modelo `andykiro123234456/smolVLM-500m-trade` es una adaptación del modelo multimodal SmolVLM-500M de Hugging Face, finetuneado y convertido al formato GGUF mediante la librería Unsloth. El nombre sugiere un ajuste orientado a tareas de trading, aunque no se aportan detalles sobre el dataset o el objetivo específico del finetune. Se distribuye en formato GGUF para su uso directo con `llama.cpp` y `llama-mtmd-cli`, lo que facilita su despliegue en entornos con recursos limitados.
 
-Con 409 millones de parámetros, este modelo se posiciona en la gama compacta de los modelos de visión-lenguaje. Su arquitectura está basada en Idefics3 (según las etiquetas de HuggingFace), lo que le permite procesar imágenes y texto de forma conjunta. La relevancia actual radica en la creciente demanda de modelos multimodales pequeños que puedan ejecutarse en dispositivos periféricos o con GPUs de baja capacidad, manteniendo una latencia reducida.
+Con 409 millones de parámetros, este modelo se posiciona en la gama compacta de los modelos de visión-lenguaje. Su arquitectura está basada en Idefics3 (según las etiquetas de Hugging Face), lo que le permite procesar imágenes y texto de forma conjunta. La relevancia actual radica en la creciente demanda de modelos multimodales pequeños que puedan ejecutarse en dispositivos periféricos o con GPUs de baja capacidad, manteniendo una latencia reducida.
 
 ## Especificaciones técnicas
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable con otros modelos. Se podría mencionar que SmolVLM-500M original de HuggingFace es la base, pero no se conocen diferencias concretas tras el finetune. Tampoco se dispone de datos de otros modelos multimodales pequeños como Phi-3.5-vision o LLaVA para comparar en esta ficha.
+No se dispone de información suficiente para establecer una comparativa fiable con otros modelos. Se podría mencionar que SmolVLM-500M original de Hugging Face es la base, pero no se conocen diferencias concretas tras el finetune. Tampoco se dispone de datos de otros modelos multimodales pequeños como Phi-3.5-vision o LLaVA para comparar en esta ficha.
 
 ## Limitaciones y advertencias
 
@@ -68,5 +68,5 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/andykiro123234456/smolVLM-500m-trade)
+- [Modelo en Hugging Face](https://huggingface.co/andykiro123234456/smolVLM-500m-trade)
 - [Unsloth (herramienta de finetune)](https://github.com/unslothai/unsloth)

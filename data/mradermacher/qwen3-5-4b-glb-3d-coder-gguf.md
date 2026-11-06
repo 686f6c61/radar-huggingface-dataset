@@ -25,7 +25,7 @@ Es relevante ahora porque permite ejecutar un modelo de código 3D especializado
 
 La model card del repositorio GGUF no aporta información sobre la arquitectura interna del modelo base, los datos de entrenamiento, el número de tokens procesados ni si hubo fases de RLHF o DPO. Lo único deducible es que se trata de un modelo derivado de Qwen3.5 (etiqueta `qwen3_5`), de tamaño 4B, afinado específicamente para código relacionado con 3D: Three.js, archivos GLB y Godot. La presencia de archivos `mmproj` confirma que el modelo base es multimodal, es decir, que acepta entrada de imágenes además de texto.
 
-La innovación técnica de este repositorio concreto es la cuantización estática realizada por mradermacher con `quantize_version: 2` y `output_tensor_quantised: 1`, a partir de los pesos en formato HuggingFace. El autor indica que no ha publicado cuantizaciones con imatrix (weighted) para este modelo, por lo que solo están disponibles las estáticas. No se documentan técnicas como decodificación especulativa, atención lineal ni modos de razonamiento extendido.
+La innovación técnica de este repositorio concreto es la cuantización estática realizada por mradermacher con `quantize_version: 2` y `output_tensor_quantised: 1`, a partir de los pesos en formato Hugging Face. El autor indica que no ha publicado cuantizaciones con imatrix (weighted) para este modelo, por lo que solo están disponibles las estáticas. No se documentan técnicas como decodificación especulativa, atención lineal ni modos de razonamiento extendido.
 
 ## Capacidades
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sn56-p2-C2-QWEN3-4B-10b5cdcc es un checkpoint de 4.022.468.096 parámetros (unos 4,02 B) publicado por el usuario zaydens en HuggingFace. La propia model card lo describe como un "artefacto de investigación" procedente de la reproducción de un torneo de texto de SN56, con una validación de ida y vuelta al estilo de un validador: el repositorio se vuelve a descargar y se puntúa sobre las filas reservadas de la tarea para comprobar que la copia del Hub obtiene exactamente la misma puntuación que la copia local.
+sn56-p2-C2-QWEN3-4B-10b5cdcc es un checkpoint de 4.022.468.096 parámetros (unos 4,02 B) publicado por el usuario zaydens en Hugging Face. La propia model card lo describe como un "artefacto de investigación" procedente de la reproducción de un torneo de texto de SN56, con una validación de ida y vuelta al estilo de un validador: el repositorio se vuelve a descargar y se puntúa sobre las filas reservadas de la tarea para comprobar que la copia del Hub obtiene exactamente la misma puntuación que la copia local.
 
 No se trata, por tanto, de un modelo con model card convencional. El autor indica explícitamente que "los demás archivos son el directorio de salida del entrenador, subidos sin modificar", e incluye una tabla de metadatos internos: celda C2-QWEN3-4B, tarea 10b5cdcc, SHA del árbol 1d561da, semilla sin definir (la que usa el entrenador por defecto) y fecha 2026-10-11. Esto sugiere un fine-tuning o una ejecución de entrenamiento dentro de un pipeline distribuido, pero la ficha no documenta arquitectura, datos ni hiperparámetros.
 
@@ -63,7 +63,7 @@ No hay datos de benchmarks de este checkpoint, por lo que una comparación de re
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sn56-p2-C2-QWEN3-4B-10b5cdcc | 4,02 B | No disponible | No disponible | HuggingFace, safetensors, 0 descargas |
+| sn56-p2-C2-QWEN3-4B-10b5cdcc | 4,02 B | No disponible | No disponible | Hugging Face, safetensors, 0 descargas |
 | Qwen3-4B (base probable) | ~4 B | No disponible en esta ficha | No disponible en esta ficha | No verificado en esta ficha |
 | Alternativas de ~4 B (por ejemplo, familias tipo Phi o Gemma) | No disponible | No disponible | No disponible | No disponible |
 
@@ -83,5 +83,5 @@ No se dispone de información suficiente para establecer comparaciones cuantitat
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/zaydens/sn56-p2-C2-QWEN3-4B-10b5cdcc
+- Página del modelo en Hugging Face: https://huggingface.co/zaydens/sn56-p2-C2-QWEN3-4B-10b5cdcc
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

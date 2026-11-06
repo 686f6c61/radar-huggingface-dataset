@@ -89,10 +89,10 @@ No se dispone en la informacion proporcionada de otros modelos comparables de te
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/TaoLiveAIGC/TaoMate-H3-FL2VA
-- HuggingFace de TaoMate-H3 (T2AV): https://huggingface.co/TaoLiveAIGC/TaoMate-H3
+- Hugging Face del modelo: https://huggingface.co/TaoLiveAIGC/TaoMate-H3-FL2VA
+- Hugging Face de TaoMate-H3 (T2AV): https://huggingface.co/TaoLiveAIGC/TaoMate-H3
 - ModelScope de TaoMate-H3: https://modelscope.ai/models/TaoLiveAIGC/TaoMate-H3
-- Modelo base MiniMax H3 en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Modelo base MiniMax H3 en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio GitHub de MiniMax H3: https://github.com/MiniMax-AI/MiniMax-H3
 - Repositorio GitHub de TaoMate: https://github.com/TaoLiveAIGC/TaoMate
 - Repositorio GitHub de TaoMate-H3: https://github.com/TaoLiveAIGC/TaoMate-H3

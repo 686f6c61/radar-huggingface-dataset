@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kty2001/bert-base-nsmc` es un checkpoint de BERT base (110 millones de parámetros) subido al Hub de HuggingFace por el usuario `kty2001`. El nombre del repositorio sugiere que se trata de un fine-tuning de BERT base sobre el corpus NSMC (Naver Sentiment Movie Corpus), un conjunto de datos coreano para análisis de sentimiento de reseñas de películas, aunque la model card no aporta ninguna documentación oficial al respecto. El pipeline declarado es `text-classification`, por lo que su uso previsto es la clasificación de secuencias, probablemente binaria (positivo/negativo) sobre texto coreano.
+El modelo `kty2001/bert-base-nsmc` es un checkpoint de BERT base (110 millones de parámetros) subido al Hub de Hugging Face por el usuario `kty2001`. El nombre del repositorio sugiere que se trata de un fine-tuning de BERT base sobre el corpus NSMC (Naver Sentiment Movie Corpus), un conjunto de datos coreano para análisis de sentimiento de reseñas de películas, aunque la model card no aporta ninguna documentación oficial al respecto. El pipeline declarado es `text-classification`, por lo que su uso previsto es la clasificación de secuencias, probablemente binaria (positivo/negativo) sobre texto coreano.
 
 A pesar de que el repositorio está vacío de documentación y no tiene descargas ni likes, el modelo es relevante como ejemplo de fine-tuning de BERT para una tarea específica de PLN. Su tamaño reducido (110M parámetros) lo hace ejecutable en hardware modesto, y su formato `safetensors` permite una carga segura con la librería `transformers`. No se dispone de información sobre el proceso de entrenamiento, los datos utilizados ni las métricas de evaluación, por lo que cualquier afirmación sobre su rendimiento debe tomarse con cautela.
 
@@ -21,7 +21,7 @@ A pesar de que el repositorio está vacío de documentación y no tiene descarga
 
 ## Arquitectura y entrenamiento
 
-El modelo corresponde a la arquitectura BERT (Bidirectional Encoder Representations from Transformers), un encoder Transformer bidireccional introducido por Google en 2018. Con 110 millones de parámetros, coincide con el tamaño de BERT base. La etiqueta `bert` en los tags y el nombre del repositorio (`bert-base-nsmc`) indican que se trata de un fine-tuning de BERT base sobre el dataset NSMC, aunque no hay información oficial sobre el proceso de entrenamiento, los hiperparámetros, el número de épocas ni el régimen de precisión. No se menciona el uso de técnicas como RLHF o DPO. El tag `text-embeddings-inference` sugiere compatibilidad con el servidor de embeddings de HuggingFace, pero no aporta detalles adicionales sobre el entrenamiento.
+El modelo corresponde a la arquitectura BERT (Bidirectional Encoder Representations from Transformers), un encoder Transformer bidireccional introducido por Google en 2018. Con 110 millones de parámetros, coincide con el tamaño de BERT base. La etiqueta `bert` en los tags y el nombre del repositorio (`bert-base-nsmc`) indican que se trata de un fine-tuning de BERT base sobre el dataset NSMC, aunque no hay información oficial sobre el proceso de entrenamiento, los hiperparámetros, el número de épocas ni el régimen de precisión. No se menciona el uso de técnicas como RLHF o DPO. El tag `text-embeddings-inference` sugiere compatibilidad con el servidor de embeddings de Hugging Face, pero no aporta detalles adicionales sobre el entrenamiento.
 
 ## Capacidades
 
@@ -67,7 +67,7 @@ No se dispone de datos comparativos específicos. Existen otros repositorios con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kty2001/bert-base-nsmc
+- Repositorio Hugging Face: https://huggingface.co/kty2001/bert-base-nsmc
 - Repositorio original de BERT (Google Research): https://github.com/google-research/bert
 - Paper de BERT (arXiv:1810.04805): https://arxiv.org/abs/1810.04805
 - Paper de Lacoste et al. (2019) sobre impacto ambiental (referenciado en la model card): https://arxiv.org/abs/1910.09700

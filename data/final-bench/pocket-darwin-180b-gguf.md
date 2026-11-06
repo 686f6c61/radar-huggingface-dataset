@@ -4,7 +4,7 @@
 
 POCKET-Darwin-180B-GGUF es una versión cuantizada a 4 bits en formato GGUF del modelo Darwin-180B-RSI-R3, publicada por FINAL-Bench (VIDRAFT). Su objetivo es hacer ejecutable un modelo de escala frontera de aproximadamente 176.900 millones de parámetros en hardware de consumo: un portátil con GPU de 8 GB y 32 GB de RAM, un mini PC con 128 GB de RAM, un servidor sin GPU o una única máquina NVIDIA DGX Spark. El repositorio ocupa 111,3 GB repartidos en 4 ficheros, frente a los 360 GB (131 ficheros) del original en BF16.
 
-El modelo está etiquetado como MoE (mezcla de expertos) y orientado a generación de texto conversacional, con soporte declarado de inglés, coreano, chino, japonés y multilingüe. La licencia indicada es qwen-community-1.0 (registrada en HuggingFace como "other"). Se apoya en llama.cpp (se menciona la build b11048+) y se publica junto a un mecanismo de confianza denominado ZTC (Zero-Token Confidence).
+El modelo está etiquetado como MoE (mezcla de expertos) y orientado a generación de texto conversacional, con soporte declarado de inglés, coreano, chino, japonés y multilingüe. La licencia indicada es qwen-community-1.0 (registrada en Hugging Face como "other"). Se apoya en llama.cpp (se menciona la build b11048+) y se publica junto a un mecanismo de confianza denominado ZTC (Zero-Token Confidence).
 
 Su relevancia actual radica en que mantiene la calidad del original en BF16 según la propia model card: MMLU-Pro con 2.000 preguntas emparejadas da 87,65% frente a 87,65% del original (diferencia +0,00 puntos, IC 95% [−0,95, +1,00]). Además, el modelo genera respuestas más cortas (−14,5% de tokens de media) y ofrece una señal de confianza calibrada (ZTC AUC 0,758) que permite filtrar respuestas de baja fiabilidad.
 
@@ -18,7 +18,7 @@ Su relevancia actual radica en que mantiene la calidad del original en BF16 seg�
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | 4 bits en formato GGUF; se menciona uso de imatrix |
 | Idiomas soportados | Ingles, coreano, chino, japones y multilingue |
-| Licencia | qwen-community-1.0 (registrada como "other" en HuggingFace) |
+| Licencia | qwen-community-1.0 (registrada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (4 ficheros, 111,3 GB) |
 | Modelo base | FINAL-Bench/Darwin-180B-RSI-R3 |
 | Libreria de inferencia | llama.cpp (build b11048+) |
@@ -111,7 +111,7 @@ Alternativas de otros desarrolladores con el mismo tamano o tarea: no disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FINAL-Bench/POCKET-Darwin-180B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/FINAL-Bench/POCKET-Darwin-180B-GGUF
 - Modelo base (RSI Ronda 2): https://huggingface.co/FINAL-Bench/Darwin-180B-RSI-R3
 - Modelo original de la familia: https://huggingface.co/FINAL-Bench/Darwin-180B-RSI
 - Modelo hermano de menor tamano: https://huggingface.co/FINAL-Bench/Darwin-27B-RSI

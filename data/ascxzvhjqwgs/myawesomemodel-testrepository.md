@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario ASCXZVHJQWGS en HuggingFace bajo el identificador `ASCXZVHJQWGS/MyAwesomeModel-TestRepository`. La model card describe una versión actualizada con mejoras en razonamiento e inferencia, citando incrementos en benchmarks como AIME 2025 (del 70 % al 87,5 % de precisión) y un mayor uso de tokens de pensamiento (de 12K a 23K por pregunta). Sin embargo, la información técnica disponible es muy limitada: el repositorio tiene un tamaño de 0,0 GB, no se especifican parámetros, contexto ni arquitectura, y los datos de benchmarks no identifican qué modelos son "Model1", "Model2" ni "Model1-v2".
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario ASCXZVHJQWGS en Hugging Face bajo el identificador `ASCXZVHJQWGS/MyAwesomeModel-TestRepository`. La model card describe una versión actualizada con mejoras en razonamiento e inferencia, citando incrementos en benchmarks como AIME 2025 (del 70 % al 87,5 % de precisión) y un mayor uso de tokens de pensamiento (de 12K a 23K por pregunta). Sin embargo, la información técnica disponible es muy limitada: el repositorio tiene un tamaño de 0,0 GB, no se especifican parámetros, contexto ni arquitectura, y los datos de benchmarks no identifican qué modelos son "Model1", "Model2" ni "Model1-v2".
 
-La metadata de HuggingFace clasifica el modelo con la pipeline `feature-extraction` y la etiqueta `bert`, lo que sugiere una arquitectura tipo encoder, en contradicción con las capacidades generativas y de razonamiento descritas en la model card. Esta inconsistencia, junto con la ausencia de pesos publicados (repo de 0,0 GB) y de documentación técnica verificable, indica que se trata de un repositorio de prueba o plantilla más que de un modelo desplegable.
+La metadata de Hugging Face clasifica el modelo con la pipeline `feature-extraction` y la etiqueta `bert`, lo que sugiere una arquitectura tipo encoder, en contradicción con las capacidades generativas y de razonamiento descritas en la model card. Esta inconsistencia, junto con la ausencia de pesos publicados (repo de 0,0 GB) y de documentación técnica verificable, indica que se trata de un repositorio de prueba o plantilla más que de un modelo desplegable.
 
 Por tanto, esta ficha recoge únicamente lo que puede extraerse de la información proporcionada, marcando explícitamente como "no disponible" todo aquello que no se puede verificar. No debe interpretarse como una evaluación de un modelo listo para producción.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha recoge únicamente lo que puede extraerse de la informaci�
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible (la etiqueta de HuggingFace indica `bert`; la model card describe capacidades generativas y de razonamiento, lo que es inconsistente) |
+| Arquitectura | No disponible (la etiqueta de Hugging Face indica `bert`; la model card describe capacidades generativas y de razonamiento, lo que es inconsistente) |
 | Parámetros totales | No disponible |
 | Parámetros activos | No disponible (no se indica que sea MoE) |
 | Longitud de contexto | No disponible |
@@ -23,7 +23,7 @@ Por tanto, esta ficha recoge únicamente lo que puede extraerse de la informaci�
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información verificable sobre la arquitectura. La etiqueta `bert` en HuggingFace apunta a un transformer encoder, pero la model card describe un modelo generativo con "thinking depth", razonamiento multi-paso y function calling, lo que correspondería a un transformer decoder o a una arquitectura híbrida. Esta contradicción no puede resolverse con los datos aportados.
+No se dispone de información verificable sobre la arquitectura. La etiqueta `bert` en Hugging Face apunta a un transformer encoder, pero la model card describe un modelo generativo con "thinking depth", razonamiento multi-paso y function calling, lo que correspondería a un transformer decoder o a una arquitectura híbrida. Esta contradicción no puede resolverse con los datos aportados.
 
 Respecto al entrenamiento, la model card menciona de forma genérica "increased computational resources" y "algorithmic optimization mechanisms during post-training", sin especificar número de tokens, composición del dataset, ni si se emplearon técnicas de RLHF, DPO o RL con verificación. Tampoco se detalla ninguna innovación técnica concreta (atención lineal, decodificación especulativa, etc.). El único dato cuantitativo es el aumento del uso medio de tokens de razonamiento en AIME 2025, de 12K a 23K por pregunta.
 
@@ -98,7 +98,7 @@ No disponible. La model card compara contra "Model1", "Model2" y "Model1-v2" sin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASCXZVHJQWGS/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/ASCXZVHJQWGS/MyAwesomeModel-TestRepository
 - Repositorio de código: no disponible (la model card lo menciona sin enlace)
 - Paper: no disponible
 - Blog o web oficial: no disponible (la model card menciona "official website" sin URL)

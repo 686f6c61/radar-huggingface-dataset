@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ImKyungjin/pi0-stackcube-detour-noise-50pct-40ep-convex | 3,5 mil millones | no disponible | no disponible | Apache 2.0 | Hub de HuggingFace (0 descargas) |
+| ImKyungjin/pi0-stackcube-detour-noise-50pct-40ep-convex | 3,5 mil millones | no disponible | no disponible | Apache 2.0 | Hub de Hugging Face (0 descargas) |
 | π₀ (Pi0) original, Physical Intelligence | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | OpenPI / blog de Physical Intelligence |
-| Otras politicas de LeRobot (ACT, Diffusion Policy, SmolVLA) | no disponible | no disponible | no disponible | no disponible | Hub de HuggingFace |
+| Otras politicas de LeRobot (ACT, Diffusion Policy, SmolVLA) | no disponible | no disponible | no disponible | no disponible | Hub de Hugging Face |
 
 No se dispone de datos cuantitativos suficientes para establecer una comparación rigurosa con alternativas de la misma categoría. La única diferencia documentada frente al π₀ original es que este artefacto constituye un ajuste fino específico sobre el dataset taewonkoo/stack_cube_detour_noise_50pct_40ep.
 
@@ -91,7 +91,7 @@ No se dispone de datos cuantitativos suficientes para establecer una comparació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ImKyungjin/pi0-stackcube-detour-noise-50pct-40ep-convex
+- Modelo en Hugging Face: https://huggingface.co/ImKyungjin/pi0-stackcube-detour-noise-50pct-40ep-convex
 - Dataset de entrenamiento: https://huggingface.co/datasets/taewonkoo/stack_cube_detour_noise_50pct_40ep
 - Blog de π₀ de Physical Intelligence: https://www.physicalintelligence.company/blog/pi0
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

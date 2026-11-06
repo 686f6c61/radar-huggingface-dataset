@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`GiruTv/elyndra-assets` es un repositorio alojado en HuggingFace por el usuario GiruTv, publicado bajo licencia CC-BY-4.0 y con un tamano de repositorio de aproximadamente 0,1 GB. La informacion disponible no incluye una model card con contenido tecnico: el unico texto presente en el README es la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni uso previsto. El propio identificador ("assets") y la ausencia de pipeline declarado apuntan a que se trata de un repositorio de ficheros auxiliares (recursos, imagenes, pesos parciales o artefactos de un proyecto) mas que a un modelo entrenado publicado de forma convencional.
+`GiruTv/elyndra-assets` es un repositorio alojado en Hugging Face por el usuario GiruTv, publicado bajo licencia CC-BY-4.0 y con un tamano de repositorio de aproximadamente 0,1 GB. La informacion disponible no incluye una model card con contenido tecnico: el unico texto presente en el README es la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni uso previsto. El propio identificador ("assets") y la ausencia de pipeline declarado apuntan a que se trata de un repositorio de ficheros auxiliares (recursos, imagenes, pesos parciales o artefactos de un proyecto) mas que a un modelo entrenado publicado de forma convencional.
 
 No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado el 2026-10-08 con una ultima actualizacion el 2026-10-08, lo que indica que no ha tenido difusion ni validacion por parte de la comunidad. Cualquier evaluacion de sus capacidades reales requeriria inspeccionar directamente los ficheros del repositorio, algo que no cubre la informacion proporcionada.
 
@@ -39,7 +39,7 @@ Datos adicionales verificables:
 
 No disponible. La model card del repositorio no contiene informacion sobre arquitectura (transformer, MoE, SSM, hibrida u otra), numero de tokens de entrenamiento, composicion del dataset, ni tecnicas de alineacion como RLHF, DPO o ajuste por instrucciones. Tampoco se documenta ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, destilacion, etc.).
 
-El tamano declarado del repositorio (0,1 GB) es compatible con conjuntos de artefactos, embeddings o pesos cuantizados de muy baja huella, pero no permite inferir el tipo de modelo ni su procedencia. La etiqueta `region:us` es un metadato de clasificacion geografica de HuggingFace y no aporta informacion sobre el entrenamiento.
+El tamano declarado del repositorio (0,1 GB) es compatible con conjuntos de artefactos, embeddings o pesos cuantizados de muy baja huella, pero no permite inferir el tipo de modelo ni su procedencia. La etiqueta `region:us` es un metadato de clasificacion geografica de Hugging Face y no aporta informacion sobre el entrenamiento.
 
 ## Capacidades
 
@@ -90,7 +90,7 @@ No disponible. La informacion proporcionada no identifica la categoria del model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GiruTv/elyndra-assets
-- Perfil del autor en HuggingFace: https://huggingface.co/GiruTv
+- Repositorio en Hugging Face: https://huggingface.co/GiruTv/elyndra-assets
+- Perfil del autor en Hugging Face: https://huggingface.co/GiruTv
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.
 - Los resultados de busqueda adicionales (Ideogram, Civitai, Scout de Asseter.AI) no guardan relacion con el repositorio y no se incluyen como referencias del modelo.

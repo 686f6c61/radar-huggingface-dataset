@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SRIQ-MiniCPM5-2B-v1.6-GGUF es una distribucion en formato GGUF de un modelo de lenguaje de aproximadamente 2.500 millones de parametros (2.516.756.480 exactamente, segun los pesos en safetensors), publicada por el usuario sriq-ai en HuggingFace. El repositorio no incluye model card detallada: solo indica que el modelo fue afinado y convertido a GGUF con Unsloth y ofrece comandos de ejemplo para `llama-cli` (uso solo texto) y `llama-mtmd-cli` (uso multimodal), lo que sugiere que la familia base podria tener variantes con vision, aunque no se confirma en la informacion disponible.
+SRIQ-MiniCPM5-2B-v1.6-GGUF es una distribucion en formato GGUF de un modelo de lenguaje de aproximadamente 2.500 millones de parametros (2.516.756.480 exactamente, segun los pesos en safetensors), publicada por el usuario sriq-ai en Hugging Face. El repositorio no incluye model card detallada: solo indica que el modelo fue afinado y convertido a GGUF con Unsloth y ofrece comandos de ejemplo para `llama-cli` (uso solo texto) y `llama-mtmd-cli` (uso multimodal), lo que sugiere que la familia base podria tener variantes con vision, aunque no se confirma en la informacion disponible.
 
 El modelo resuelve el caso de uso clasico de los GGUF de tamano pequeno: ejecucion local en CPU o en GPUs de consumo sin necesidad de infraestructura dedicada, con cuatro niveles de cuantizacion publicados (Q8_0, Q6_K, Q5_K_M y Q4_K_M). El repo ocupa 8,1 GB en total, lo que incluye los cuatro ficheros de pesos.
 
@@ -23,7 +23,7 @@ Su relevancia practica es limitada por el momento: registra 0 descargas y 0 like
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo. La model card unicamente indica que el modelo fue afinado y convertido a formato GGUF con Unsloth, y que el comportamiento del token BOS fue ajustado para garantizar la compatibilidad con GGUF. El tag "llama" en HuggingFace y la instruccion de uso con `llama-cli` confirman compatibilidad con el ecosistema llama.cpp, pero no implican que la arquitectura subyacente sea Llama de Meta.
+No se dispone de informacion sobre la arquitectura interna del modelo. La model card unicamente indica que el modelo fue afinado y convertido a formato GGUF con Unsloth, y que el comportamiento del token BOS fue ajustado para garantizar la compatibilidad con GGUF. El tag "llama" en Hugging Face y la instruccion de uso con `llama-cli` confirman compatibilidad con el ecosistema llama.cpp, pero no implican que la arquitectura subyacente sea Llama de Meta.
 
 Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de RLHF o DPO, ni las tecnicas de optimizacion aplicadas. El sufijo "v1.6" en el nombre indica que existe al menos una iteracion previa del modelo, pero no hay changelog ni comparativa entre versiones. Unsloth se cita como herramienta de afinado y conversion, lo que sugiere un pipeline de fine-tuning eficiente en memoria, pero no aporta detalle sobre los hiperparametros empleados.
 
@@ -94,7 +94,7 @@ Las cifras de las alternativas provienen de sus respectivas fichas oficiales. Pa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sriq-ai/SRIQ-MiniCPM5-2B-v1.6-GGUF
+- Repositorio Hugging Face: https://huggingface.co/sriq-ai/SRIQ-MiniCPM5-2B-v1.6-GGUF
 - Unsloth (herramienta de afinado y conversion citada): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de referencia para los GGUF): https://github.com/ggml-org/llama.cpp
 - No se han encontrado en la informacion proporcionada papers, blogs tecnicos ni demos adicionales del autor.

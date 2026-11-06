@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`nchristo-synaptics/techday_cropped_all` es un repositorio de pesos publicado en HuggingFace por el usuario `nchristo-synaptics`. Contiene un unico checkpoint en formato safetensors con 62.854.726 parametros (aproximadamente 62,9 M) y un tamano total de repositorio de 0,3 GB, lo que situa el almacenamiento en el orden esperado para pesos en FP32. El repositorio se creo y actualizo el 20 de octubre de 2026, cuenta con 12 descargas y ninguna valoracion.
+`nchristo-synaptics/techday_cropped_all` es un repositorio de pesos publicado en Hugging Face por el usuario `nchristo-synaptics`. Contiene un unico checkpoint en formato safetensors con 62.854.726 parametros (aproximadamente 62,9 M) y un tamano total de repositorio de 0,3 GB, lo que situa el almacenamiento en el orden esperado para pesos en FP32. El repositorio se creo y actualizo el 20 de octubre de 2026, cuenta con 12 descargas y ninguna valoracion.
 
-No se ha publicado informacion adicional: no hay model card, no se declara licencia, no se especifican idiomas, no se indica el pipeline de HuggingFace ni la familia arquitectonica. Tampoco hay resultados de evaluacion, descripcion del dataset de entrenamiento ni documentacion sobre el tokenizador o la tarea para la que fue entrenado.
+No se ha publicado informacion adicional: no hay model card, no se declara licencia, no se especifican idiomas, no se indica el pipeline de Hugging Face ni la familia arquitectonica. Tampoco hay resultados de evaluacion, descripcion del dataset de entrenamiento ni documentacion sobre el tokenizador o la tarea para la que fue entrenado.
 
 Por tanto, la relevancia de este checkpoint es limitada y de caracter exploratorio: se trata de un artefacto sin documentar, presumiblemente asociado a una demostracion tecnica interna (el nombre incluye `techday` y `cropped`), que solo puede evaluarse de forma fiable inspeccionando las cabeceras del fichero safetensors, los nombres de las capas y el configuracion asociada. Cualquier uso en produccion exige una validacion previa por parte del equipo que lo adopte.
 
@@ -94,5 +94,5 @@ En terminos de tamano, el checkpoint se aproxima a DistilBERT base, pero no hay 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nchristo-synaptics/techday_cropped_all
+- Hugging Face: https://huggingface.co/nchristo-synaptics/techday_cropped_all
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este modelo.

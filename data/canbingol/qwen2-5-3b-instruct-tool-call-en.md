@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Qwen2.5-3B-Instruct-tool-call-en` es un fine-tuning del modelo base `Qwen/Qwen2.5-3B-Instruct` (3B parámetros) desarrollado por el usuario canbingol. Está específicamente entrenado para mejorar la capacidad de llamada a funciones (tool calling / function calling) en inglés, utilizando el dataset público `Salesforce/xlam-function-calling-60k`. Se trata de un ajuste mediante LoRA (r=16, alpha=32) con entrenamiento supervisado (SFT) usando la librería TRL de HuggingFace.
+El modelo `Qwen2.5-3B-Instruct-tool-call-en` es un fine-tuning del modelo base `Qwen/Qwen2.5-3B-Instruct` (3B parámetros) desarrollado por el usuario canbingol. Está específicamente entrenado para mejorar la capacidad de llamada a funciones (tool calling / function calling) en inglés, utilizando el dataset público `Salesforce/xlam-function-calling-60k`. Se trata de un ajuste mediante LoRA (r=16, alpha=32) con entrenamiento supervisado (SFT) usando la librería TRL de Hugging Face.
 
 El modelo resuelve el problema de que los modelos pequeños de 3B suelen tener un rendimiento limitado en tareas de tool calling, que requieren comprender esquemas de funciones y generar llamadas estructuradas. Al especializarse en este dominio, se busca obtener un modelo ligero y desplegable en entornos con recursos limitados, manteniendo las capacidades generales del modelo base Qwen2.5.
 
@@ -25,7 +25,7 @@ Aunque el repositorio tiene cero descargas y cero likes, y la información publi
 
 El modelo se basa en la arquitectura Qwen2.5, un transformer denso con atención causal y normalización RMSNorm, tal como se implementa en el modelo base `Qwen/Qwen2.5-3B-Instruct`. No se trata de un modelo MoE ni híbrido; es un modelo denso de 3B parámetros.
 
-El entrenamiento consistió en un fine-tuning con LoRA (r=16, alpha=32) sobre el modelo base, utilizando el dataset `Salesforce/xlam-function-calling-60k`, que contiene 60.000 ejemplos de llamadas a funciones. Se entrenó durante 2 épocas con una tasa de aprendizaje de 2e-4. El proceso se realizó con la librería TRL (Transformer Reinforcement Learning) de HuggingFace, que permite entrenamiento supervisado (SFT). No se menciona el uso de RLHF ni DPO. El checkpoint resultante tiene un tamaño de repositorio de 0.5 GB, lo que sugiere que se guardaron los pesos completos del modelo fine-tuneado (no solo los adaptadores LoRA), aunque no se puede confirmar.
+El entrenamiento consistió en un fine-tuning con LoRA (r=16, alpha=32) sobre el modelo base, utilizando el dataset `Salesforce/xlam-function-calling-60k`, que contiene 60.000 ejemplos de llamadas a funciones. Se entrenó durante 2 épocas con una tasa de aprendizaje de 2e-4. El proceso se realizó con la librería TRL (Transformer Reinforcement Learning) de Hugging Face, que permite entrenamiento supervisado (SFT). No se menciona el uso de RLHF ni DPO. El checkpoint resultante tiene un tamaño de repositorio de 0.5 GB, lo que sugiere que se guardaron los pesos completos del modelo fine-tuneado (no solo los adaptadores LoRA), aunque no se puede confirmar.
 
 No se detallan innovaciones técnicas adicionales más allá del uso de LoRA para eficiencia de entrenamiento.
 
@@ -79,6 +79,6 @@ No hay datos de rendimiento comparativo disponibles. El modelo se diferencia del
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/canbingol/Qwen2.5-3B-Instruct-tool-call-en
+- Repositorio Hugging Face: https://huggingface.co/canbingol/Qwen2.5-3B-Instruct-tool-call-en
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k

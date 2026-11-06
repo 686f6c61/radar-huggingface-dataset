@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Rachelwhitenah/dino-checkpoint` es un prototipo de investigacion publicado en HuggingFace por el usuario Rachelwhitenah bajo el identificador de arquitectura "Dino" y orientado a tareas multiples (multitask). Segun su propia model card, el repositorio contiene un punto de partida experimental: un script de inferencia (`inference.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que se describe explicitamente como checkpoint de inicializacion valido para pruebas de humo, no como un modelo entrenado ni evaluado.
+`Rachelwhitenah/dino-checkpoint` es un prototipo de investigacion publicado en Hugging Face por el usuario Rachelwhitenah bajo el identificador de arquitectura "Dino" y orientado a tareas multiples (multitask). Segun su propia model card, el repositorio contiene un punto de partida experimental: un script de inferencia (`inference.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que se describe explicitamente como checkpoint de inicializacion valido para pruebas de humo, no como un modelo entrenado ni evaluado.
 
 El dato de parametros real extraido del fichero safetensors es de 33.088 parametros totales, lo que situa el artefacto en un orden de magnitud muy inferior al de cualquier modelo de lenguaje o vision utilizable en produccion. El repositorio ocupa 0,0 GB, acumula 0 descargas y 0 likes en el momento de la consulta, y no declara pipeline, idiomas soportados ni resultados de evaluacion.
 
@@ -78,7 +78,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 | Contexto | No disponible | No disponible |
 | Rendimiento | Sin benchmark declarado | No disponible |
 | Licencia | BSD-3-Clause | No disponible |
-| Disponibilidad | HuggingFace, repo de 0,0 GB | No disponible |
+| Disponibilidad | Hugging Face, repo de 0,0 GB | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -95,5 +95,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rachelwhitenah/dino-checkpoint
+- Hugging Face: https://huggingface.co/Rachelwhitenah/dino-checkpoint
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados devueltos corresponden a centros de ayuda de YouTube y a la plataforma Zhihu, sin relacion con el modelo.

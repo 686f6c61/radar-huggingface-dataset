@@ -6,7 +6,7 @@ YarnGPT2-GGUF es la version cuantizada en formato GGUF del modelo YarnGPT2, desa
 
 La relevancia de esta ficha radica en que YarnGPT2-GGUF ofrece una via sencilla para ejecutar un modelo GPT-2 en hardware de consumo mediante llama.cpp y otras herramientas compatibles con GGUF. Al estar cuantizado en multiples formatos (desde Q2_K hasta f16), permite ajustar el equilibrio entre calidad y uso de memoria, con tamanos que van desde 0.3 GB hasta 0.8 GB. Esto lo hace adecuado para entornos con recursos limitados, prototipado rapido y despliegues en CPU.
 
-No obstante, la informacion disponible sobre el modelo base es limitada: no se detallan la longitud de contexto, la composicion del dataset de entrenamiento ni los resultados de benchmarks. Esta ficha se limita a los datos verificables proporcionados en la model card y en los metadatos de HuggingFace, indicando explicitamente cuando un dato no esta disponible.
+No obstante, la informacion disponible sobre el modelo base es limitada: no se detallan la longitud de contexto, la composicion del dataset de entrenamiento ni los resultados de benchmarks. Esta ficha se limita a los datos verificables proporcionados en la model card y en los metadatos de Hugging Face, indicando explicitamente cuando un dato no esta disponible.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ No obstante, la informacion disponible sobre el modelo base es limitada: no se d
 
 El modelo base saheedniyi/YarnGPT2 sigue la arquitectura GPT-2, un transformer decoder-only con atencion causal. El numero de parametros (365.753.280) es coherente con la variante GPT-2 de aproximadamente 355M parametros, aunque la cifra exacta difiere ligeramente, lo que podria deberse a diferencias en el vocabulario o en la configuracion de capas. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste fino supervisado.
 
-La innovacion principal de esta publicacion no reside en el modelo en si, sino en el proceso de cuantizacion realizado por mradermacher. Se ofrecen cuantizaciones estaticas (sin imatrix) en una amplia gama de precisiones, desde Q2_K (0.3 GB) hasta f16 (0.8 GB). La model card indica que las cuantizaciones ponderadas con imatrix no estan disponibles por el momento. El proceso de conversion se realizo desde el formato HuggingFace (hf) a GGUF, con cuantizacion de tensores de salida (output_tensor_quantised: 1) y quantize_version: 2.
+La innovacion principal de esta publicacion no reside en el modelo en si, sino en el proceso de cuantizacion realizado por mradermacher. Se ofrecen cuantizaciones estaticas (sin imatrix) en una amplia gama de precisiones, desde Q2_K (0.3 GB) hasta f16 (0.8 GB). La model card indica que las cuantizaciones ponderadas con imatrix no estan disponibles por el momento. El proceso de conversion se realizo desde el formato Hugging Face (hf) a GGUF, con cuantizacion de tensores de salida (output_tensor_quantised: 1) y quantize_version: 2.
 
 ## Capacidades
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| YarnGPT2-GGUF | 365.753.280 | no disponible | apache-2.0 | GGUF | HuggingFace |
-| GPT-2 (OpenAI) | 124M / 355M / 774M / 1.5B | 1024 tokens | MIT | safetensors, GGUF (via terceros) | HuggingFace, OpenAI |
-| DistilGPT2 | 82M | 1024 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace |
-| TinyLlama-1.1B | 1.1B | 2048 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace |
+| YarnGPT2-GGUF | 365.753.280 | no disponible | apache-2.0 | GGUF | Hugging Face |
+| GPT-2 (OpenAI) | 124M / 355M / 774M / 1.5B | 1024 tokens | MIT | safetensors, GGUF (via terceros) | Hugging Face, OpenAI |
+| DistilGPT2 | 82M | 1024 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| TinyLlama-1.1B | 1.1B | 2048 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face |
 
 YarnGPT2-GGUF se posiciona como una alternativa cuantizada de GPT-2 de ~355M parametros. Frente a DistilGPT2 (82M), ofrece mas parametros y potencialmente mejor calidad, a costa de mayor tamano. Frente a TinyLlama-1.1B, es mas pequeno y ligero, pero con menor capacidad y contexto (si se asume el contexto estandar de GPT-2 de 1024 tokens, aunque no confirmado). La licencia Apache 2.0 es permisiva para uso comercial, similar a DistilGPT2 y TinyLlama.
 
@@ -81,7 +81,7 @@ YarnGPT2-GGUF se posiciona como una alternativa cuantizada de GPT-2 de ~355M par
 
 ## Enlaces
 
-- [HuggingFace: mradermacher/YarnGPT2-GGUF](https://huggingface.co/mradermacher/YarnGPT2-GGUF)
+- [Hugging Face: mradermacher/YarnGPT2-GGUF](https://huggingface.co/mradermacher/YarnGPT2-GGUF)
 - [Modelo base: saheedniyi/YarnGPT2](https://huggingface.co/saheedniyi/YarnGPT2)
 - [Pagina de resumen y descargas de mradermacher](https://hf.tst.eu/model#YarnGPT2-GGUF)
 - [Ejemplo de uso de GGUF (README de TheBloke)](https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF)

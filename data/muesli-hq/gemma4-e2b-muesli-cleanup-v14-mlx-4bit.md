@@ -103,7 +103,7 @@ No se han identificado en la busqueda web modelos comparables especializados en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Muesli-HQ/gemma4-e2b-muesli-cleanup-v14-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/Muesli-HQ/gemma4-e2b-muesli-cleanup-v14-mlx-4bit
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Base usada para el ajuste (Unsloth): `unsloth/gemma-4-E2B-it` (referencia en la model card, sin URL directa proporcionada)
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados obtenidos (Wikipedia, mymuesli, Marmiton, Cuisineaz) tratan sobre el alimento muesli y no guardan relacion con este modelo.

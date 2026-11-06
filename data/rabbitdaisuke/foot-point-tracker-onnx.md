@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto / entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Causal BootsTAPIR (este) | no disponible | 256x256, 3 puntos, estado recurrente | ONNX | Apache-2.0 | HuggingFace (RabbitDaisuke) |
-| BootsTAPIR oficial (Google) | no disponible | no disponible en la información | PyTorch (.pt) | Apache-2.0 (según TAPNet) | HuggingFace (google/tapnet) |
+| Causal BootsTAPIR (este) | no disponible | 256x256, 3 puntos, estado recurrente | ONNX | Apache-2.0 | Hugging Face (RabbitDaisuke) |
+| BootsTAPIR oficial (Google) | no disponible | no disponible en la información | PyTorch (.pt) | Apache-2.0 (según TAPNet) | Hugging Face (google/tapnet) |
 | TAPIR (Google) | no disponible | no disponible en la información | no disponible | no disponible | Repositorio TAPNet |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada. La comparativa se limita a formato, licencia y disponibilidad.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RabbitDaisuke/Foot-Point-Tracker-onnx
+- Hugging Face: https://huggingface.co/RabbitDaisuke/Foot-Point-Tracker-onnx
 - Código fuente TAPNet (commit fijado): https://github.com/google-deepmind/tapnet/tree/730cda1c730877cfedbe01bf87fb1cadb78a565d
 - Pesos originales: https://huggingface.co/google/tapnet/resolve/5d3fb48e76c5422841e38501514121e251beabb7/causal_bootstapir_checkpoint.pt
 - SHA-256 de los pesos originales: `87c1e752cf5ce56e3e2f7da460aeb4d40fc826d04ef2939bade86a5c7495377f`

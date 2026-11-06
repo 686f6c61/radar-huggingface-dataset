@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bopratama/mobilevit-contrastive` es un repositorio de HuggingFace publicado por el usuario bopratama que contiene una implementación propia y reducida de una arquitectura MobileViT orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para producción: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio incluye, además de los pesos, el script `predict.py` como artefacto principal, un `config.json` con la configuración de arquitectura y un `training_args.json` con la receta de experimento por defecto.
+`bopratama/mobilevit-contrastive` es un repositorio de Hugging Face publicado por el usuario bopratama que contiene una implementación propia y reducida de una arquitectura MobileViT orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para producción: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio incluye, además de los pesos, el script `predict.py` como artefacto principal, un `config.json` con la configuración de arquitectura y un `training_args.json` con la receta de experimento por defecto.
 
 La relevancia de este tipo de repositorio es acotada y muy específica: sirve como punto de partida reproducible para montar un pipeline de entrenamiento contrastivo, como implementación de referencia para inspeccionar la configuración de arquitectura y como fixture en pruebas automatizadas. No es un modelo para inferencia directa ni para tareas de visión o lenguaje en producción.
 
@@ -86,6 +86,6 @@ No disponible. La información proporcionada no incluye resultados de benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bopratama/mobilevit-contrastive
-- Repositorio (archivos): `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` en la misma URL de HuggingFace.
+- Modelo en Hugging Face: https://huggingface.co/bopratama/mobilevit-contrastive
+- Repositorio (archivos): `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` en la misma URL de Hugging Face.
 - La búsqueda web realizada no devolvió enlaces relevantes al modelo: los resultados corresponden a páginas corporativas y de cuenta de Microsoft (microsoft.com, account.microsoft.com, myaccount.microsoft.com, microsoft.com/microsoft-365, en.wikipedia.org/wiki/Microsoft), sin relación con `bopratama/mobilevit-contrastive`, con MobileViT ni con aprendizaje contrastivo. No se dispone de paper, blog ni repositorio adicional asociado.

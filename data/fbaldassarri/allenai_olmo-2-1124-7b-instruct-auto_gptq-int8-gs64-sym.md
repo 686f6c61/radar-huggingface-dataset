@@ -82,7 +82,7 @@ La comparación de rendimiento no está disponible porque no se han publicado be
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/allenai_OLMo-2-1124-7B-Instruct-auto_gptq-int8-gs64-sym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/allenai_OLMo-2-1124-7B-Instruct-auto_gptq-int8-gs64-sym
 - Modelo base: https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct
 - Intel AutoRound (GitHub): https://github.com/intel/auto-round
 - Pipeline de cuantización: https://git.epicdynamic.com/auto-round-pipeline

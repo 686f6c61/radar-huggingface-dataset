@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ppt-pythia-160m-nope-baseline-warmup2000-seed1024-stage2` es un modelo de lenguaje de 162.322.944 parámetros obtenido mediante fine-tuning supervisado (SFT) de `EleutherAI/pythia-160m`, publicado por el usuario `qing-yao` en HuggingFace. El nombre del checkpoint sugiere un experimento de la familia "ppt" (probablemente un estudio sobre positional embeddings o pre-training tricks) con variante "nope" (sin positional embeddings, presumiblemente), calentamiento de 2000 pasos, semilla 1024 y una segunda etapa de entrenamiento. No obstante, la model card no documenta explícitamente el propósito del experimento.
+`ppt-pythia-160m-nope-baseline-warmup2000-seed1024-stage2` es un modelo de lenguaje de 162.322.944 parámetros obtenido mediante fine-tuning supervisado (SFT) de `EleutherAI/pythia-160m`, publicado por el usuario `qing-yao` en Hugging Face. El nombre del checkpoint sugiere un experimento de la familia "ppt" (probablemente un estudio sobre positional embeddings o pre-training tricks) con variante "nope" (sin positional embeddings, presumiblemente), calentamiento de 2000 pasos, semilla 1024 y una segunda etapa de entrenamiento. No obstante, la model card no documenta explícitamente el propósito del experimento.
 
-El modelo base Pythia-160m es un transformer decoder-only de la familia Pythia de EleutherAI, diseñado para investigación sobre interpretabilidad y dinámica de entrenamiento a escala. Este checkpoint concreto parece ser un artefacto de investigación más que un modelo listo para producción: la model card está generada automáticamente por el `Trainer` de HuggingFace, indica que se entrenó sobre un dataset "None" (no especificado) y no aporta información sobre composición de datos, tokenizador modificado ni evaluación cualitativa.
+El modelo base Pythia-160m es un transformer decoder-only de la familia Pythia de EleutherAI, diseñado para investigación sobre interpretabilidad y dinámica de entrenamiento a escala. Este checkpoint concreto parece ser un artefacto de investigación más que un modelo listo para producción: la model card está generada automáticamente por el `Trainer` de Hugging Face, indica que se entrenó sobre un dataset "None" (no especificado) y no aporta información sobre composición de datos, tokenizador modificado ni evaluación cualitativa.
 
 Su relevancia es por tanto limitada al ámbito experimental: sirve para reproducir o comparar variantes arquitectónicas (posiblemente ablaciones de positional encoding) sobre un backbone pequeño y bien conocido. La licencia Apache 2.0 permite reutilización, pero la ausencia de documentación y de benchmarks hace desaconsejable su uso directo en aplicaciones reales sin una evaluación previa.
 
@@ -34,14 +34,14 @@ El entrenamiento documentado en la model card corresponde a un fine-tuning con l
 - No se documenta soporte de agentes ni razonamiento multi-paso.
 - Capacidades multilingües: no disponibles (el base Pythia se entrenó principalmente en inglés sobre The Pile, pero este checkpoint no lo declara).
 - No se documentan capacidades especiales (thinking mode, visión, audio).
-- El modelo está etiquetado como `text-generation` en el pipeline de HuggingFace, pero la ausencia de evaluación impide confirmar calidad de generación.
+- El modelo está etiquetado como `text-generation` en el pipeline de Hugging Face, pero la ausencia de evaluación impide confirmar calidad de generación.
 
 ## Casos de uso
 
 - Reproducción de experimentos de ablación arquitectónica: el checkpoint permite comparar una variante NoPE frente al Pythia-160m estándar en tareas controladas de modelado de lenguaje, midiendo perplejidad y comportamiento posicional.
 - Investigación en interpretabilidad: al ser un modelo pequeño (162M parámetros) con código custom, es adecuado para analizar activaciones, circuitos y atención en entornos con recursos limitados.
 - Baseline en estudios de dinámica de entrenamiento: los logs de pérdida por paso (10.000 pasos, warmup 2000) sirven como referencia para comparar schedules de learning rate y semillas.
-- Docencia y formación: permite ilustrar el flujo completo de fine-tuning con `Trainer` de HuggingFace, carga de modelos con `custom_code` y análisis de curvas de validación.
+- Docencia y formación: permite ilustrar el flujo completo de fine-tuning con `Trainer` de Hugging Face, carga de modelos con `custom_code` y análisis de curvas de validación.
 - Pruebas de infraestructura de despliegue: su tamaño reducido permite validar pipelines de inferencia (transformers, vLLM, llama.cpp con conversión) sin coste elevado de GPU.
 - Generación de texto de baja exigencia en entornos de test: útil para verificar integraciones de API o formato de salida, nunca para producción con usuarios reales dada la falta de evaluación.
 
@@ -84,8 +84,8 @@ La comparación directa con el base Pythia-160m es la más relevante: este check
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-baseline-warmup2000-seed1024-stage2
+- Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-baseline-warmup2000-seed1024-stage2
 - Modelo base: https://huggingface.co/EleutherAI/pythia-160m
 - Repositorio Pythia (EleutherAI): https://github.com/EleutherAI/pythia
 - Paper Pythia: https://arxiv.org/abs/2304.01373
-- Documentación de `Trainer` de HuggingFace: https://huggingface.co/docs/transformers/main_classes/trainer
+- Documentación de `Trainer` de Hugging Face: https://huggingface.co/docs/transformers/main_classes/trainer

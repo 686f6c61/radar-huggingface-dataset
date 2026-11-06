@@ -73,5 +73,5 @@ Otras alternativas de tamaño similar, como Qwen2.5-1.5B o Llama-3.2-1B, no se p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-048
+- Repositorio Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-048
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

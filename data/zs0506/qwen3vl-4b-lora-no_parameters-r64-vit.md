@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `zs0506/qwen3vl-4B-lora-no_parameters-r64-vit` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `zs0506`, entrenado sobre el modelo base multimodal `Qwen/Qwen3-VL-4B-Instruct` de Alibaba Qwen. Se distribuye exclusivamente como pesos de adaptador en formato `safetensors` bajo la librería PEFT (versión 0.20.0), con un tamano de repositorio de 0,3 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo. No incluye pesos fusionados ni versiones cuantizadas.
+El repositorio `zs0506/qwen3vl-4B-lora-no_parameters-r64-vit` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `zs0506`, entrenado sobre el modelo base multimodal `Qwen/Qwen3-VL-4B-Instruct` de Alibaba Qwen. Se distribuye exclusivamente como pesos de adaptador en formato `safetensors` bajo la librería PEFT (versión 0.20.0), con un tamano de repositorio de 0,3 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo. No incluye pesos fusionados ni versiones cuantizadas.
 
 El elemento diferencial respecto a otros adaptadores de la misma familia es el sufijo del identificador: `r64` sugiere un rango LoRA de 64 (frente a los rangos habituales de 8, 16 o 32) y `vit` apunta a que el entrenamiento afectó al módulo de vision transformer del modelo base. La coletilla `no_parameters` no está documentada en ninguna parte de la model card ni puede inferirse con seguridad del identificador, por lo que no se puede confirmar su significado. Estas apreciaciones son inferencias a partir del nombre del repositorio, no datos verificados.
 
-La relevancia de esta ficha es limitada pero informativa: se trata de un artefacto con cero descargas y cero likes en el momento de la consulta, con una model card que es la plantilla por defecto de HuggingFace sin ninguna sección rellenada (todas las entradas dicen `[More Information Needed]`). No hay información publicada sobre datos de entrenamiento, hiperparámetros, licencia, idiomas soportados ni evaluación. Para cualquier uso en producción seria necesario contactar con el autor o reproducir el entrenamiento a partir del modelo base.
+La relevancia de esta ficha es limitada pero informativa: se trata de un artefacto con cero descargas y cero likes en el momento de la consulta, con una model card que es la plantilla por defecto de Hugging Face sin ninguna sección rellenada (todas las entradas dicen `[More Information Needed]`). No hay información publicada sobre datos de entrenamiento, hiperparámetros, licencia, idiomas soportados ni evaluación. Para cualquier uso en producción seria necesario contactar con el autor o reproducir el entrenamiento a partir del modelo base.
 
 ## Especificaciones técnicas
 
@@ -32,11 +32,11 @@ La relevancia de esta ficha es limitada pero informativa: se trata de un artefac
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador LoRA, es decir, un conjunto de matrices de bajo rango que se inyectan en las capas congeladas de un transformer preentrenado. El modelo base es `Qwen/Qwen3-VL-4B-Instruct`, un modelo de lenguaje y visión de aproximadamente 4.000 millones de parámetros, con capacidad de procesamiento de imágenes y texto. El pipeline declarado en HuggingFace es `text-generation`, aunque el modelo base es multimodal, lo que puede deberse a una elección por defecto del autor al subir el adaptador.
+El artefacto es un adaptador LoRA, es decir, un conjunto de matrices de bajo rango que se inyectan en las capas congeladas de un transformer preentrenado. El modelo base es `Qwen/Qwen3-VL-4B-Instruct`, un modelo de lenguaje y visión de aproximadamente 4.000 millones de parámetros, con capacidad de procesamiento de imágenes y texto. El pipeline declarado en Hugging Face es `text-generation`, aunque el modelo base es multimodal, lo que puede deberse a una elección por defecto del autor al subir el adaptador.
 
 El identificador del repositorio aporta dos pistas sobre la configuración del entrenamiento: `r64` indica un rango de descomposición de 64, un valor alto que implica más parámetros entrenables que los rangos habituales (8-32) y, por tanto, mayor capacidad de adaptación a costa de un mayor riesgo de sobreajuste con datasets pequenos; `vit` sugiere que los módulos adaptados incluyen el codificador visual del modelo base, algo poco frecuente en adaptadores orientados solo a lenguaje. El segmento `no_parameters` no está explicado en ninguna sección de la model card y no se puede interpretar con fiabilidad.
 
-No hay ninguna información publicada sobre el dataset de entrenamiento, el número de tokens, la composición de los datos, la existencia de fases de RLHF, DPO o SFT, ni sobre hiperparámetros como learning rate, scheduler, precisión (fp16/bf16/fp32) o número de épocas. La model card es la plantilla genérica de HuggingFace con todos los campos marcados como `[More Information Needed]`. La única referencia técnica presente es la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en aprendizaje automático y que forma parte del texto por defecto de la plantilla, no a un paper del modelo.
+No hay ninguna información publicada sobre el dataset de entrenamiento, el número de tokens, la composición de los datos, la existencia de fases de RLHF, DPO o SFT, ni sobre hiperparámetros como learning rate, scheduler, precisión (fp16/bf16/fp32) o número de épocas. La model card es la plantilla genérica de Hugging Face con todos los campos marcados como `[More Information Needed]`. La única referencia técnica presente es la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en aprendizaje automático y que forma parte del texto por defecto de la plantilla, no a un paper del modelo.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ Dado que no existe documentación sobre el objetivo del entrenamiento, los sigui
 - Prototipado rápido de asistentes sobre imagen y texto: si el adaptador conserva las capacidades del modelo base, serviría para construir demos de descripción de imágenes o respuesta a preguntas visuales, siempre con verificación manual de la calidad.
 - Investigación sobre olvido catastrófico: comparar el rendimiento del modelo base con y sin el adaptador permite medir cuánto se degradan las capacidades originales tras el ajuste con rango 64.
 - Evaluación de técnicas de fusión de adaptadores: el artefacto puede servir como componente en experimentos de `merge_and_unload` o de combinación de múltiples LoRA sobre el mismo modelo base.
-- Formación y docencia: como ejemplo práctico de estructura de repositorio PEFT (configuración de adaptador, pesos en safetensors, metadatos) para explicar cómo se publica un adaptador en HuggingFace.
+- Formación y docencia: como ejemplo práctico de estructura de repositorio PEFT (configuración de adaptador, pesos en safetensors, metadatos) para explicar cómo se publica un adaptador en Hugging Face.
 - Base para un ajuste adicional: partir de este adaptador en lugar de cero para un segundo ciclo de entrenamiento sobre un dominio concreto, asumiendo que se desconoce por completo qué aprendió el primero.
 
 ## Benchmarks y rendimiento
@@ -86,7 +86,7 @@ Las cifras siguientes son estimaciones derivadas del tamano del modelo base (~4B
 |---|---|---|---|---|---|
 | `zs0506/qwen3vl-4B-lora-no_parameters-r64-vit` | Adaptador LoRA sobre base de ~4B | No disponible | No disponible (sin benchmarks) | No disponible | Repositorio público, 0 descargas, 0 likes |
 | `Qwen/Qwen3-VL-4B-Instruct` (modelo base) | ~4B | Definido en su propia model card (no incluido en esta información) | Definido en su propia model card (no incluido en esta información) | Definida en su propia model card (no incluida en esta información) | Modelo oficial, ampliamente distribuido |
-| Otros adaptadores LoRA para Qwen3-VL | Variable según configuración de rango y módulos | Heredado del base | No disponible | Depende del autor | Ecosistema disperso en HuggingFace |
+| Otros adaptadores LoRA para Qwen3-VL | Variable según configuración de rango y módulos | Heredado del base | No disponible | Depende del autor | Ecosistema disperso en Hugging Face |
 
 No se dispone de datos que permitan una comparación cuantitativa con alternativas de la misma categoría, porque no existe evaluación publicada para este adaptador ni información sobre su tarea objetivo. Cualquier comparación numérica sería especulativa.
 
@@ -106,7 +106,7 @@ No se dispone de datos que permitan una comparación cuantitativa con alternativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zs0506/qwen3vl-4B-lora-no_parameters-r64-vit
+- Repositorio en Hugging Face: https://huggingface.co/zs0506/qwen3vl-4B-lora-no_parameters-r64-vit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Librería PEFT: https://github.com/huggingface/peft
 - Referencia citada en las etiquetas (Lacoste et al., 2019, estimación de impacto de carbono, parte de la plantilla): https://arxiv.org/abs/1910.09700

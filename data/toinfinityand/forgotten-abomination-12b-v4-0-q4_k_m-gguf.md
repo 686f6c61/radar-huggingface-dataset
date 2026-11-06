@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/toinfinityand/Forgotten-Abomination-12B-v4.0-Q4_K_M-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/toinfinityand/Forgotten-Abomination-12B-v4.0-Q4_K_M-GGUF
 - Modelo base (original): https://huggingface.co/ReadyArt/Forgotten-Abomination-12B-v4.0
 - Version Q5_K_M del mismo modelo: https://huggingface.co/ReadyArt/Forgotten-Abomination-12B-v4.0-Q5_K_M-GGUF
 - Ficha en Antbase (fuente externa): https://antbase.ai/models/forgotten-abomination-12b-v4-0

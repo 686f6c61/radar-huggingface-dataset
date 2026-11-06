@@ -73,7 +73,7 @@ La comparativa directa con otros modelos de la misma categoría (por ejemplo, Ll
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ProCreations/Qwen-3.8-SuperFast-TempMTP
+- Hugging Face: https://huggingface.co/ProCreations/Qwen-3.8-SuperFast-TempMTP
 - Modelo base: https://huggingface.co/ProCreations/Qwen-3.8-SuperFast
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Blog de AMD sobre Qwen3.8 27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

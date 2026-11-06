@@ -97,7 +97,7 @@ No se ha entrenado ni ajustado ningún peso para esta publicación: el autor ind
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbrahamPJ/nightmare-ifrnet
+- Modelo en Hugging Face: https://huggingface.co/AbrahamPJ/nightmare-ifrnet
 - Repositorio original de IFRNet (Kong et al., CVPR 2022): https://github.com/ltkong218/IFRNet
 - Aplicación Nightmare Mobile: https://github.com/AbrahamPaulJ/nightmare-mobile
 - Paper de referencia citado (Kong et al., CVPR 2022): mencionado en la model card, sin URL incluida en la información disponible.

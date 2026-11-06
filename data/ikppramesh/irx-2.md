@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IRx-2 es un modelo de chat de aproximadamente 4.200 millones de parametros (4.205.751.296 exactos segun los pesos safetensors), publicado por el desarrollador independiente ikppramesh en HuggingFace. Se presenta como el hermano mayor de IRx-1 (2B): comparte el mismo conjunto de datos y el mismo pipeline de entrenamiento, pero sobre una base de aproximadamente el doble de tamano, lo que se traduce en mejor razonamiento, redaccion y conocimiento general a costa de roughly la mitad de velocidad (26 frente a 54 tokens/s medidos en la misma CPU de un Mac).
+IRx-2 es un modelo de chat de aproximadamente 4.200 millones de parametros (4.205.751.296 exactos segun los pesos safetensors), publicado por el desarrollador independiente ikppramesh en Hugging Face. Se presenta como el hermano mayor de IRx-1 (2B): comparte el mismo conjunto de datos y el mismo pipeline de entrenamiento, pero sobre una base de aproximadamente el doble de tamano, lo que se traduce en mejor razonamiento, redaccion y conocimiento general a costa de roughly la mitad de velocidad (26 frente a 54 tokens/s medidos en la misma CPU de un Mac).
 
 El objetivo declarado del modelo es el uso local, privado y sin conexion en telefonos, tablets y portatiles. Para ello ofrece pesos en formato MLX (Apple Silicon) y una variante GGUF publicada aparte (ikppramesh/irx-2-GGUF) compatible con PocketPal, LM Studio y llama.cpp. El tag qwen3_5 y el tag lora indican que se trata de un ajuste fino tipo LoRA sobre una base de la familia Qwen 3.5, cuantizado a 4 bits y distribuido bajo licencia Apache 2.0.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparado frente a modelos de terceros de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikppramesh/irx-2
+- Modelo en Hugging Face: https://huggingface.co/ikppramesh/irx-2
 - Variante GGUF: https://huggingface.co/ikppramesh/irx-2-GGUF
 - Modelo hermano IRx-1: https://huggingface.co/ikppramesh/irx-1
 - Variante GGUF de IRx-1: https://huggingface.co/ikppramesh/irx-1-GGUF

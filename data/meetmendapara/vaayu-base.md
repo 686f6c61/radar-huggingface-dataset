@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vaayu-Base es un modelo de generacion de texto publicado en HuggingFace por el usuario meetmendapara bajo el identificador `meetmendapara/Vaayu-Base`. Por las etiquetas del repositorio (vaayu, vaayu_slmm, slmm, small-language-machine-model) se presenta como un modelo de lenguaje pequeno orientado a despliegue local y en el borde (edge-ai, local-ai), entrenado desde cero (from-scratch) y con soporte declarado para Model Context Protocol (MCP), tool calling y flujos de trabajo agenticos.
+Vaayu-Base es un modelo de generacion de texto publicado en Hugging Face por el usuario meetmendapara bajo el identificador `meetmendapara/Vaayu-Base`. Por las etiquetas del repositorio (vaayu, vaayu_slmm, slmm, small-language-machine-model) se presenta como un modelo de lenguaje pequeno orientado a despliegue local y en el borde (edge-ai, local-ai), entrenado desde cero (from-scratch) y con soporte declarado para Model Context Protocol (MCP), tool calling y flujos de trabajo agenticos.
 
 La informacion publica disponible es muy limitada: no se han publicado especificaciones tecnicas, resultados de benchmarks ni documentacion de arquitectura en la informacion proporcionada. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y la libreria asociada es `vaayu`, lo que sugiere un stack propio mas que una integracion con transformadores estandar. La ventana de contexto, el numero de parametros y el volumen de datos de entrenamiento no estan disponibles.
 
@@ -76,5 +76,5 @@ No disponible. No se dispone de datos de parametros, contexto ni rendimiento del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/meetmendapara/Vaayu-Base
+- Modelo en Hugging Face: https://huggingface.co/meetmendapara/Vaayu-Base
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada; los resultados devueltos no guardaban relacion con el modelo.

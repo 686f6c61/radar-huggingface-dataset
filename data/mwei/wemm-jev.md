@@ -69,9 +69,9 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WeMM-JEV | ~26,1B | no disponible | Decisión probabilística multimodal | Apache 2.0 | HuggingFace, código custom |
-| Qwen3 (base de referencia) | ~27B (familia) | no disponible | Generación de texto | Apache 2.0 (según variante) | HuggingFace, amplio ecosistema |
-| Modelos de clasificación multimodal (p. ej. CLIP) | <1B | corto | Clasificación imagen-texto | variable | HuggingFace, ecosistema estándar |
+| WeMM-JEV | ~26,1B | no disponible | Decisión probabilística multimodal | Apache 2.0 | Hugging Face, código custom |
+| Qwen3 (base de referencia) | ~27B (familia) | no disponible | Generación de texto | Apache 2.0 (según variante) | Hugging Face, amplio ecosistema |
+| Modelos de clasificación multimodal (p. ej. CLIP) | <1B | corto | Clasificación imagen-texto | variable | Hugging Face, ecosistema estándar |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada; la comparación se limita a parámetros, licencia y enfoque.
 
@@ -88,6 +88,6 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mwei/WeMM-JEV
+- Modelo en Hugging Face: https://huggingface.co/mwei/WeMM-JEV
 - Resultados de evaluación: https://huggingface.co/datasets/Rover00/WeMM-JEV-Results
 - Documentación de inferencia: incluida en el repositorio (`inference/README.md`)

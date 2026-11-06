@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wondolls/xilia2olite` es un repositorio de modelo alojado en HuggingFace por el usuario `wondolls`, publicado el 21 de octubre de 2026 y actualizado tres minutos más tarde. En el momento de redactar esta ficha el repositorio no incluye model card con contenido técnico (el README se limita a la línea `license: unknown`), no tiene pipeline declarado, no declara idiomas soportados y acumula 0 descargas y 0 likes. No hay, por tanto, información publicada sobre arquitectura, tamaño, contexto ni datos de entrenamiento.
+`wondolls/xilia2olite` es un repositorio de modelo alojado en Hugging Face por el usuario `wondolls`, publicado el 21 de octubre de 2026 y actualizado tres minutos más tarde. En el momento de redactar esta ficha el repositorio no incluye model card con contenido técnico (el README se limita a la línea `license: unknown`), no tiene pipeline declarado, no declara idiomas soportados y acumula 0 descargas y 0 likes. No hay, por tanto, información publicada sobre arquitectura, tamaño, contexto ni datos de entrenamiento.
 
 El único dato objetivo disponible, además de las etiquetas `license:unknown` y `region:us`, es el tamaño del repositorio: 0,1 GB. Ese volumen es compatible con un checkpoint de pequeño tamaño (del orden de decenas de millones de parámetros en fp16, o un modelo algo mayor cuantizado), pero el autor no confirma parámetros ni formato de pesos, por lo que cualquier cifra al respecto es una inferencia y no un dato verificado.
 
@@ -66,7 +66,7 @@ No es posible establecer una comparativa directa: se desconoce el tamano y la ar
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | wondolls/xilia2olite | no disponible | no disponible | unknown | repo de 0,1 GB, 0 descargas |
-| SmolLM2-135M (HuggingFace) | 135 M | 8 K tokens | Apache-2.0 | publico, ampliamente usado |
+| SmolLM2-135M (Hugging Face) | 135 M | 8 K tokens | Apache-2.0 | publico, ampliamente usado |
 | Qwen2.5-0.5B (Alibaba) | ~0,49 B | 32 K tokens | Apache-2.0 | publico, con variantes GGUF |
 | TinyLlama-1.1B | 1,1 B | 2 K tokens | Apache-2.0 | publico, con variantes GGUF |
 
@@ -79,9 +79,9 @@ No es posible establecer una comparativa directa: se desconoce el tamano y la ar
 - Contexto: desconocido, por lo que no se puede planificar su uso en conversaciones multi-turno o documentos largos.
 - Senales de baja madurez: creado y actualizado con tres minutos de diferencia, 0 descargas, 0 likes, sin pipeline declarado y sin ficheros documentados en la informacion disponible.
 - El tamano de 0,1 GB es suficientemente pequeno como para que el repositorio pueda contener solo parte del modelo, un adaptador o pesos incompletos; conviene verificar el listado de ficheros antes de cualquier descarga en entornos automatizados.
-- Fecha de creacion registrada en 2026: conviene comprobar la metadata en la web de HuggingFace, ya que puede tratarse de un repositorio de prueba o de fechas inconsistentes.
+- Fecha de creacion registrada en 2026: conviene comprobar la metadata en la web de Hugging Face, ya que puede tratarse de un repositorio de prueba o de fechas inconsistentes.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wondolls/xilia2olite
+- Hugging Face: https://huggingface.co/wondolls/xilia2olite
 - No se han encontrado otros enlaces (paper, blog, repositorio de codigo, demo) en la informacion disponible.

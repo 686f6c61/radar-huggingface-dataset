@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Kiwen1.1-27B es un modelo de lenguaje de 27 mil millones de parámetros desarrollado por el usuario independiente beyoru, publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.8-27B, realizado con la técnica QLoRA, que hereda las capacidades de razonamiento y uso agéntico de la familia Qwen. El modelo está orientado a tareas de razonamiento complejo, interacción conversacional y ejecución de agentes, con soporte específico para inglés y vietnamita.
+Kiwen1.1-27B es un modelo de lenguaje de 27 mil millones de parámetros desarrollado por el usuario independiente beyoru, publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.8-27B, realizado con la técnica QLoRA, que hereda las capacidades de razonamiento y uso agéntico de la familia Qwen. El modelo está orientado a tareas de razonamiento complejo, interacción conversacional y ejecución de agentes, con soporte específico para inglés y vietnamita.
 
 La relevancia de este modelo radica en su tamaño compacto (27B parámetros densos) frente a arquitecturas MoE de cientos de miles de millones de parámetros. Según la información disponible, la familia Qwen3.x de 27B ha demostrado rendimiento competitivo en tareas de código y razonamiento, lo que permite desplegar capacidades de nivel flagship en hardware más accesible. Kiwen1.1-27B hereda esta base y añade un ajuste específico para razonamiento largo y eficiente, con tags que indican soporte para agentes y conversación.
 
-El acceso al modelo está restringido (gated) en HuggingFace, por lo que los usuarios deben aceptar las condiciones de uso antes de descargarlo. La licencia Apache-2.0 permite uso comercial y modificación, siempre que se mantenga la atribución correspondiente.
+El acceso al modelo está restringido (gated) en Hugging Face, por lo que los usuarios deben aceptar las condiciones de uso antes de descargarlo. La licencia Apache-2.0 permite uso comercial y modificación, siempre que se mantenga la atribución correspondiente.
 
 ## Especificaciones técnicas
 
@@ -33,9 +33,9 @@ El dataset de entrenamiento no esta documentado en la informacion disponible. Se
 - Razonamiento complejo y multi-step, con soporte para modos de pensamiento extendido (long-reasoning).
 - Uso agentico: capacidad para integrarse en pipelines de agentes que requieren tool calling y ejecucion de acciones en multiples pasos.
 - Generacion de codigo y soporte para tareas de programacion, herencia de la base Qwen3.
-- Procesamiento de entrada multimodal (imagen-texto) segun los tags, aunque la ficha de HuggingFace no detalla el alcance de esta capacidad en el modelo final.
+- Procesamiento de entrada multimodal (imagen-texto) segun los tags, aunque la ficha de Hugging Face no detalla el alcance de esta capacidad en el modelo final.
 - Conversacion con memoria de contexto largo (segun la variante i1 que soporta long-context, aunque no se confirma para Kiwen1.1-27B).
-- Compatibilidad con el ecosistema transformers de HuggingFace para integracion en pipelines de generacion.
+- Compatibilidad con el ecosistema transformers de Hugging Face para integracion en pipelines de generacion.
 
 ## Casos de uso
 
@@ -70,7 +70,7 @@ La comparativa directa con otros modelos de la misma categoria (p.ej., Llama 3.1
 
 ## Limitaciones y advertencias
 
-- Acceso restringido en HuggingFace: es necesario aceptar los terminos y condiciones del autor antes de descargar el modelo, lo que puede dificultar la evaluacion rapida.
+- Acceso restringido en Hugging Face: es necesario aceptar los terminos y condiciones del autor antes de descargar el modelo, lo que puede dificultar la evaluacion rapida.
 - Idiomas limitados: el modelo esta ajustado para ingles y vietnamita; su rendimiento en otros idiomas (español, frances, etc.) no esta documentado y puede ser inferior.
 - Falta de benchmarks publicados: no hay resultados de evaluacion independientes que validen su rendimiento en tareas especificas.
 - Riesgo de alucinacion: como cualquier modelo de lenguaje, puede generar contenido falso o inventado, especialmente en temas legales o tecnicos.
@@ -80,7 +80,7 @@ La comparativa directa con otros modelos de la misma categoria (p.ej., Llama 3.1
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/beyoru/Kiwen1.1-27B
+- Hugging Face: https://huggingface.co/beyoru/Kiwen1.1-27B
 - Variante anterior Kiwen-27B: https://huggingface.co/beyoru/Kiwen-27B
 - Version GGUF de Kiwen-27B-i1: https://huggingface.co/mradermacher/Kiwen-27B-i1-GGUF
 - LLM Explorer (datos de VRAM y despliegue): https://llm-explorer.com/model/beyoru%2FKiwen-27B,3gQiWTlA8UQqjNg8lQQsdg

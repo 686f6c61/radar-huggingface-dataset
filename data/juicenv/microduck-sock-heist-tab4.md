@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`juicenv/microduck-sock-heist-tab4` es una política de aprendizaje por refuerzo (RL) para robótica, publicada por el usuario `juicenv` en HuggingFace. No se trata de un modelo de lenguaje, sino de una red neuronal exportada a ONNX que implementa una marcha ("gait") para el robot [microduck](https://github.com/pollen-robotics/microduck), desarrollado por Pollen Robotics. El nombre completo del proyecto hace referencia a "Sock Heist", una tarea de locomoción, y la variante `tab4` combina la red `sock-heist9` con tablas de búsqueda (lookup tables) específicas por semilla, obtenidas mediante una búsqueda CMA-ES continuada sobre cinco ejecuciones de evaluación.
+`juicenv/microduck-sock-heist-tab4` es una política de aprendizaje por refuerzo (RL) para robótica, publicada por el usuario `juicenv` en Hugging Face. No se trata de un modelo de lenguaje, sino de una red neuronal exportada a ONNX que implementa una marcha ("gait") para el robot [microduck](https://github.com/pollen-robotics/microduck), desarrollado por Pollen Robotics. El nombre completo del proyecto hace referencia a "Sock Heist", una tarea de locomoción, y la variante `tab4` combina la red `sock-heist9` con tablas de búsqueda (lookup tables) específicas por semilla, obtenidas mediante una búsqueda CMA-ES continuada sobre cinco ejecuciones de evaluación.
 
 La política se describe como **perpetual**: una vez cargada en un slot del robot, se ejecuta de forma continua a 50 Hz hasta que se indique lo contrario. Trabaja con observaciones de 61 dimensiones y produce 14 acciones, con el normalizador de observaciones integrado directamente en el fichero `policy.onnx`, lo que simplifica el despliegue al permitir alimentar observaciones crudas. Es relevante para la comunidad de robótica open source porque representa un ejemplo de políticas RL compactas y desplegables directamente en hardware mediante el daemon `robotctl`.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Observacion / acciones | 61-D / 14 acciones a 50 Hz | 61-D / 14 acciones (presumido) | no disponible |
 | Innovacion | Tablas CMA-ES por semilla para cinco runs de rating | Red base sin tablas | no disponible |
 | Licencia | no disponible | no disponible | no disponible |
-| Disponibilidad | HuggingFace (juicenv) | no disponible | no disponible |
+| Disponibilidad | Hugging Face (juicenv) | no disponible | no disponible |
 
 No hay informacion suficiente para comparar con otras politicas de locomocion publicas de forma rigurosa.
 
@@ -82,7 +82,7 @@ No hay informacion suficiente para comparar con otras politicas de locomocion pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juicenv/microduck-sock-heist-tab4
+- Modelo en Hugging Face: https://huggingface.co/juicenv/microduck-sock-heist-tab4
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento: https://github.com/pollen-robotics/microduck_rl (rama `HEAD`, commit `5cee942d8`)
 - Paper, demo y blog: no disponibles

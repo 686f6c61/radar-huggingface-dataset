@@ -86,8 +86,8 @@ La comparativa se limita al propio modelo base y a la versión sin podar de unsl
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Cyronius/Qwen3.8-Flash-Next-131B-A6B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face del modelo: https://huggingface.co/Cyronius/Qwen3.8-Flash-Next-131B-A6B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Cuantización base de unsloth (origen de los tensores): https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Guía de ejecución local de unsloth: https://unsloth.ai/docs/models/qwen3.8-next

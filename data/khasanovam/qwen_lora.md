@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KhasanovAM/qwen_lora es un ajuste fino mediante LoRA del modelo base unsloth/Qwen3.5-4B, publicado por el usuario KhasanovAM en HuggingFace. Se trata de un adaptador (el repositorio ocupa 0,2 GB, muy por debajo del peso de un modelo de 4.000 millones de parametros en precision completa), entrenado con la libreria Unsloth, que el autor indica que permite un entrenamiento "2x mas rapido" respecto a un flujo estandar. La licencia declarada es Apache 2.0 y el unico idioma declarado es el ingles.
+KhasanovAM/qwen_lora es un ajuste fino mediante LoRA del modelo base unsloth/Qwen3.5-4B, publicado por el usuario KhasanovAM en Hugging Face. Se trata de un adaptador (el repositorio ocupa 0,2 GB, muy por debajo del peso de un modelo de 4.000 millones de parametros en precision completa), entrenado con la libreria Unsloth, que el autor indica que permite un entrenamiento "2x mas rapido" respecto a un flujo estandar. La licencia declarada es Apache 2.0 y el unico idioma declarado es el ingles.
 
 El modelo resuelve el caso tipico de adaptacion de un LLM pequeno a una tarea o dominio concreto con coste de entrenamiento reducido: en lugar de reentrenar los 4B de parametros, se entrena un adaptador de bajo rango que se carga sobre el modelo base. Esto lo hace adecuado para despliegues con recursos limitados, siempre que se disponga del modelo base para combinarlo.
 
@@ -69,9 +69,9 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparacion se l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| KhasanovAM/qwen_lora | adaptador sobre 4B | no disponible | apache-2.0 | HuggingFace, 0 descargas | no disponible |
-| unsloth/Qwen3.5-4B (base) | 4B | no disponible | no disponible en la informacion | HuggingFace | no disponible |
-| Alternativas de tamano similar (Qwen2.5-3B/7B, Llama 3.2 3B, etc.) | 3B-7B | variable | variable | HuggingFace | no disponible |
+| KhasanovAM/qwen_lora | adaptador sobre 4B | no disponible | apache-2.0 | Hugging Face, 0 descargas | no disponible |
+| unsloth/Qwen3.5-4B (base) | 4B | no disponible | no disponible en la informacion | Hugging Face | no disponible |
+| Alternativas de tamano similar (Qwen2.5-3B/7B, Llama 3.2 3B, etc.) | 3B-7B | variable | variable | Hugging Face | no disponible |
 
 No se han encontrado en la busqueda web modelos comparables especificos de la misma categoria con datos verificables.
 
@@ -89,7 +89,7 @@ No se han encontrado en la busqueda web modelos comparables especificos de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KhasanovAM/qwen_lora
+- Modelo en Hugging Face: https://huggingface.co/KhasanovAM/qwen_lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Can One Adapted Model Do It All? Fine-Tuning Strategy (arXiv, 2026): https://arxiv.org/pdf/2609.27262

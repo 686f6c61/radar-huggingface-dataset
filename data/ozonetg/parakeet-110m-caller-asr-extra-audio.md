@@ -2,7 +2,7 @@
 
 ## Resumen
 
-parakeet-110m-caller-asr-extra-audio es un modelo de reconocimiento automático del habla (ASR) publicado por el usuario ozonetg en HuggingFace. Se trata de un ajuste fino de nvidia/parakeet-tdt_ctc-110m, el modelo de NVIDIA, especializado en el canal del cliente (caller) de llamadas telefónicas salientes en inglés estadounidense a 8 kHz. Cuenta con 114,6 millones de parámetros y combina un codificador FastConformer con un decodificador TDT (token-and-duration transducer) y una cabeza CTC auxiliar.
+parakeet-110m-caller-asr-extra-audio es un modelo de reconocimiento automático del habla (ASR) publicado por el usuario ozonetg en Hugging Face. Se trata de un ajuste fino de nvidia/parakeet-tdt_ctc-110m, el modelo de NVIDIA, especializado en el canal del cliente (caller) de llamadas telefónicas salientes en inglés estadounidense a 8 kHz. Cuenta con 114,6 millones de parámetros y combina un codificador FastConformer con un decodificador TDT (token-and-duration transducer) y una cabeza CTC auxiliar.
 
 El problema que aborda es la transcripción precisa del lado del cliente en entornos de centro de llamadas, donde los modelos ASR genéricos pierden exactitud al enfrentarse a banda estrecha, ruido de línea y solapamiento conversacional. Frente al modelo base sin tocar (14,58 % de WER en cinco conjuntos públicos de llamadas agrupados) y al sistema previo con un pequeño adaptador de dominio (14,00 %), este ajuste alcanza un 11,56 % en el mismo conjunto agrupado, y baja a un 3,45 % en llamadas en dominio reservadas, frente al 9,19 % del base y el 8,68 % del sistema previo.
 
@@ -97,9 +97,9 @@ Comparativas declaradas en el texto de la model card:
 
 | Modelo | Parametros | Enfoque | WER en dominio de llamadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ozonetg/parakeet-110m-caller-asr-extra-audio | 114,6 M | FastConformer + TDT + CTC, ajustado al canal del cliente | 11,56 % en cinco conjuntos publicos agrupados; 3,45 % en dominio reservado | CC BY 4.0 | HuggingFace, formato `.nemo`, 0 descargas |
-| nvidia/parakeet-tdt_ctc-110m | 114,6 M | FastConformer + TDT + CTC, base generalista | 14,58 % en los mismos cinco conjuntos agrupados | no disponible en la informacion | HuggingFace |
-| ozonetg/parakeet-0.6b-caller-asr-basic | 0,6 B | Mismo ajuste de dominio, mayor tamano; se uso para destilar | no disponible en la informacion | no disponible en la informacion | HuggingFace |
+| ozonetg/parakeet-110m-caller-asr-extra-audio | 114,6 M | FastConformer + TDT + CTC, ajustado al canal del cliente | 11,56 % en cinco conjuntos publicos agrupados; 3,45 % en dominio reservado | CC BY 4.0 | Hugging Face, formato `.nemo`, 0 descargas |
+| nvidia/parakeet-tdt_ctc-110m | 114,6 M | FastConformer + TDT + CTC, base generalista | 14,58 % en los mismos cinco conjuntos agrupados | no disponible en la informacion | Hugging Face |
+| ozonetg/parakeet-0.6b-caller-asr-basic | 0,6 B | Mismo ajuste de dominio, mayor tamano; se uso para destilar | no disponible en la informacion | no disponible en la informacion | Hugging Face |
 | Qwen3-ASR-1.7B | 1,7 B | Modelo ASR usado para generar las etiquetas de entrenamiento | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion |
 
 ## Limitaciones y advertencias
@@ -116,6 +116,6 @@ Comparativas declaradas en el texto de la model card:
 
 ## Enlaces
 
-- [ozonetg/parakeet-110m-caller-asr-extra-audio en HuggingFace](https://huggingface.co/ozonetg/parakeet-110m-caller-asr-extra-audio)
+- [ozonetg/parakeet-110m-caller-asr-extra-audio en Hugging Face](https://huggingface.co/ozonetg/parakeet-110m-caller-asr-extra-audio)
 - [nvidia/parakeet-tdt_ctc-110m (modelo base)](https://huggingface.co/nvidia/parakeet-tdt_ctc-110m)
 - [ozonetg/parakeet-0.6b-caller-asr-basic (modelo de 0,6 B usado para la destilacion)](https://huggingface.co/ozonetg/parakeet-0.6b-caller-asr-basic)

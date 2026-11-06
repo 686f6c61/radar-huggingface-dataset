@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Pesos en precision completa (FP16): aproximadamente 144 GB, segun el recuento de 72.3B parametros.
 - GPUs recomendadas: para las cuantizaciones mas bajas (Q2_K, Q3_K) se requiere al menos una GPU con 24-40 GB de VRAM si se descarga por capas; para Q4 y superiores se recomienda A100 80 GB, H100 o varias GPU. No se dispone de datos oficiales de requisitos minimos en la informacion proporcionada.
 - Compatibilidad con GPU de consumo: Q2_K (28.6 GB) no cabe en una sola GPU consumer de 24 GB sin offloading a RAM o CPU; ninguna de las cuantizaciones disponibles cabe integramente en una RTX 4090 (24 GB) sin particionado.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. El tag endpoints_compatible sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. El tag endpoints_compatible sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Quyen-Pro-Max-v0.1-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Quyen-Pro-Max-v0.1-GGUF
 - Repositorio de cuantizaciones con imatrix: https://huggingface.co/mradermacher/Quyen-Pro-Max-v0.1-i1-GGUF
 - Pagina de resumen del modelo: https://hf.tst.eu/model#Quyen-Pro-Max-v0.1-GGUF
 - Modelo base: https://huggingface.co/vilm/Quyen-Pro-Max-v0.1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ministral3-Apagon-GGUF es un modelo publicado en HuggingFace por el usuario cocoataster bajo licencia Apache 2.0. Por el identificador se deduce que se trata de una conversión al formato GGUF de un modelo de la familia Ministral 3, probablemente un ajuste fino o una variante derivada (el sufijo "apagon" no corresponde a ninguna nomenclatura oficial conocida de Mistral AI). La model card publicada no contiene información técnica: únicamente incluye la declaración de licencia, sin descripción, sin especificaciones y sin datos de entrenamiento.
+Ministral3-Apagon-GGUF es un modelo publicado en Hugging Face por el usuario cocoataster bajo licencia Apache 2.0. Por el identificador se deduce que se trata de una conversión al formato GGUF de un modelo de la familia Ministral 3, probablemente un ajuste fino o una variante derivada (el sufijo "apagon" no corresponde a ninguna nomenclatura oficial conocida de Mistral AI). La model card publicada no contiene información técnica: únicamente incluye la declaración de licencia, sin descripción, sin especificaciones y sin datos de entrenamiento.
 
 El repositorio no registra descargas ni interacciones en el momento de la consulta, y no se ha publicado información sobre arquitectura, tamaño, contexto, idiomas o proceso de entrenamiento. Cualquier dato técnico que se atribuya a este modelo debe tratarse con cautela, ya que no está respaldado por documentación del autor.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cocoataster/ministral3-apagon-GGUF | no disponible | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
+| cocoataster/ministral3-apagon-GGUF | no disponible | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
 | Ministral 3 (modelo oficial de Mistral AI) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
-| Otros GGUF de la familia Ministral | no disponible | no disponible | variable | HuggingFace |
+| Otros GGUF de la familia Ministral | no disponible | no disponible | variable | Hugging Face |
 
 No se dispone de datos suficientes para establecer una comparativa técnica rigurosa con alternativas de la misma categoría.
 
@@ -78,5 +78,5 @@ No se dispone de datos suficientes para establecer una comparativa técnica rigu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cocoataster/ministral3-apagon-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/cocoataster/ministral3-apagon-GGUF
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

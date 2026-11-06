@@ -78,7 +78,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chennana1028/fastwam-robotwin-openarm-sbint-step30000
+- Repositorio Hugging Face: https://huggingface.co/chennana1028/fastwam-robotwin-openarm-sbint-step30000
 - Código oficial de FastWAM (GitHub): https://github.com/yuantianyuan01/FastWAM
 - Repositorio alternativo de FastWAM (GitHub): https://github.com/lightarmmy/fastwam-roboarena
 - Documentación oficial de RoboTwin 2.0: https://robotwin-platform.github.io/doc/index.html

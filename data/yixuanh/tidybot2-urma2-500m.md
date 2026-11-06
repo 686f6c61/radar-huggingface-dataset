@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tidybot2-urma2-500M es una política de aprendizaje por refuerzo entrenada en simulación para el robot móvil-manipulador TidyBot++, tal como se modela en KinDER sobre la base con ruedas `stanford_tidybot`. La desarrolla el usuario de HuggingFace `yixuanh` y se genera con el código `loco_mjx` (variante `urma2.mjx_split`, entorno `locomotion.urma2.mjx`). No es un modelo de lenguaje: es un controlador neuronal que traduce comandos de velocidad de la base (x, y, yaw) en consignas de actuación sobre los 23 actuadores del robot.
+tidybot2-urma2-500M es una política de aprendizaje por refuerzo entrenada en simulación para el robot móvil-manipulador TidyBot++, tal como se modela en KinDER sobre la base con ruedas `stanford_tidybot`. La desarrolla el usuario de Hugging Face `yixuanh` y se genera con el código `loco_mjx` (variante `urma2.mjx_split`, entorno `locomotion.urma2.mjx`). No es un modelo de lenguaje: es un controlador neuronal que traduce comandos de velocidad de la base (x, y, yaw) en consignas de actuación sobre los 23 actuadores del robot.
 
 El interés de la ficha es acotado y muy específico: se trata de un artefacto de investigación en robótica con refuerzo, no de un modelo de propósito general. El autor declara explícitamente que solo se ha validado en simulación, que no se ha ejecutado en un robot real y que no está autorizado para hardware. Su relevancia radica en servir como referencia reproducible de entrenamiento masivo en MJX/MuJoCo (más de 500 millones de pasos en poco más de cuatro horas en una sola GPU) y como punto de partida para quien trabaje con la pila `loco_mjx`.
 
@@ -96,7 +96,7 @@ No disponible. La información proporcionada no incluye otras políticas URMA2 n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yixuanh/tidybot2-urma2-500M
+- Modelo en Hugging Face: https://huggingface.co/yixuanh/tidybot2-urma2-500M
 - Código `loco_mjx` (rama `add-tidybot2`, PR #17): https://github.com/nico-bohlinger/loco_mjx
 - Vídeo de rollout incluido en el repositorio: `tidybot2_rollout.mp4`
 - Checkpoint: `latest.model`

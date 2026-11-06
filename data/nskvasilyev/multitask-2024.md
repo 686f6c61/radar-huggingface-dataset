@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nskvasilyev/multitask-2024 es un repositorio experimental publicado en HuggingFace que contiene un esqueleto de codigo basado en CLIP (Contrastive Language-Image Pre-training) orientado a tareas multitarea. No se trata de un modelo entrenado, sino de un punto de partida de inicializacion: su propio autor indica en la model card que el checkpoint `model.safetensors` es valido para pruebas de humo ("smoke tests") y que no debe presentarse como un checkpoint con resultados de benchmark.
+nskvasilyev/multitask-2024 es un repositorio experimental publicado en Hugging Face que contiene un esqueleto de codigo basado en CLIP (Contrastive Language-Image Pre-training) orientado a tareas multitarea. No se trata de un modelo entrenado, sino de un punto de partida de inicializacion: su propio autor indica en la model card que el checkpoint `model.safetensors` es valido para pruebas de humo ("smoke tests") y que no debe presentarse como un checkpoint con resultados de benchmark.
 
 El modelo sigue una configuracion deliberadamente minima ("tiny") con el objetivo de permitir la inspeccion de cambios arquitectonicos antes de lanzar un entrenamiento completo. Incorpora atencion dilatada, fusion de tensores y un recetario de experimento por defecto basado en el optimizador novograd con un schedule exponencial.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nskvasilyev/multitask-2024 | 16.576 | no disponible | no (solo inicializacion) | BSD-3-Clause | HuggingFace, 0 descargas |
+| nskvasilyev/multitask-2024 | 16.576 | no disponible | no (solo inicializacion) | BSD-3-Clause | Hugging Face, 0 descargas |
 | OpenCLIP ViT-B/32 | ~151 M | 77 tokens (texto) | si | MIT / Apache-2.0 segun variante | amplia, pesos publicos |
 | SigLIP (variantes base) | cientos de millones | variable | si | Apache-2.0 en varias variantes | amplia, pesos publicos |
 
@@ -80,5 +80,5 @@ La comparacion es asimetrica: los modelos de referencia son checkpoints entrenad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nskvasilyev/multitask-2024
+- Hugging Face: https://huggingface.co/nskvasilyev/multitask-2024
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

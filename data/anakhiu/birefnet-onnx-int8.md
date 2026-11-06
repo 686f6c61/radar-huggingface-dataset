@@ -85,7 +85,7 @@ No se han encontrado comparativas con otros modelos de eliminación de fondo en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anakhiu/birefnet-onnx-int8
+- Hugging Face: https://huggingface.co/anakhiu/birefnet-onnx-int8
 - Modelo base ONNX: https://huggingface.co/onnx-community/BiRefNet_dynamic-1024x1024-ONNX
 - Modelo original PyTorch: https://huggingface.co/ZhengPeng7/BiRefNet_dynamic
 - ONNX Model Zoo (referencia general): https://github.com/onnx/models

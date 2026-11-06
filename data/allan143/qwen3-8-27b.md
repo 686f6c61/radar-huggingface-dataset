@@ -68,8 +68,8 @@ La model card incluye una comparativa con Qwen3.6-27B, Qwen3.7-Plus, Muse Glimme
 
 ## Enlaces
 
-- Repositorio HuggingFace (mirror): https://huggingface.co/Allan143/Qwen3.8-27B
-- Repositorio HuggingFace oficial: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face (mirror): https://huggingface.co/Allan143/Qwen3.8-27B
+- Repositorio Hugging Face oficial: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub oficial: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Blog de AMD sobre ejecución local: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Documentación de Groq: https://console.groq.com/docs/model/qwen/qwen3.8-27b

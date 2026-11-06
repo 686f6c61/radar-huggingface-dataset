@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- [HuggingFace - aoiandroid/llama32-1b-kvcache-coreml-macos](https://huggingface.co/aoiandroid/llama32-1b-kvcache-coreml-macos)
+- [Hugging Face - aoiandroid/llama32-1b-kvcache-coreml-macos](https://huggingface.co/aoiandroid/llama32-1b-kvcache-coreml-macos)
 - [Modelo fuente - aoiandroid/llama32-1b-kvcache-coreml](https://huggingface.co/aoiandroid/llama32-1b-kvcache-coreml)
 - [Coleccion de modelos llama de aoiandroid](https://huggingface.co/collections/aoiandroid/llama)
 - [Documentacion de Llama 3.2 de Meta](https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_2/)

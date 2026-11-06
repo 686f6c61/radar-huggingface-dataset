@@ -105,4 +105,4 @@ Frente a los tres alternativos, la diferencia relevante es la especialización d
 - Peticiones de cuantización y preguntas frecuentes del autor: https://huggingface.co/mradermacher/model_requests
 - nethype GmbH (infraestructura empleada): https://www.nethype.de/
 
-Nota: la búsqueda web realizada no devolvió ningún resultado relacionado con este modelo; los enlaces listados proceden exclusivamente de la model card y de los metadatos del repositorio de HuggingFace.
+Nota: la búsqueda web realizada no devolvió ningún resultado relacionado con este modelo; los enlaces listados proceden exclusivamente de la model card y de los metadatos del repositorio de Hugging Face.

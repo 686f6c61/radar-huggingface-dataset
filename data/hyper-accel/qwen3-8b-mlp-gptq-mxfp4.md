@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-8B-mlp-gptq-mxfp4 es una cuantizacion del modelo Qwen/Qwen3-8B publicada por el usuario hyper-accel en HuggingFace. Se trata de un checkpoint experimental en el que unicamente las proyecciones lineales de las capas MLP (`gate_proj`, `up_proj` y `down_proj` de cada bloque) han sido cuantizadas a MXFP4, el formato de microscaling de OCP (elementos E2M1 con escala compartida E8M0 en bloques de 32 a lo largo de `in_features`). El resto de componentes del modelo (proyecciones de atencion, embeddings, normalizaciones y `lm_head`) se mantienen en BF16 copiados bit a bit del original.
+Qwen3-8B-mlp-gptq-mxfp4 es una cuantizacion del modelo Qwen/Qwen3-8B publicada por el usuario hyper-accel en Hugging Face. Se trata de un checkpoint experimental en el que unicamente las proyecciones lineales de las capas MLP (`gate_proj`, `up_proj` y `down_proj` de cada bloque) han sido cuantizadas a MXFP4, el formato de microscaling de OCP (elementos E2M1 con escala compartida E8M0 en bloques de 32 a lo largo de `in_features`). El resto de componentes del modelo (proyecciones de atencion, embeddings, normalizaciones y `lm_head`) se mantienen en BF16 copiados bit a bit del original.
 
 El modelo base, Qwen3-8B, es un transformer denso de la familia Qwen3 desarrollado por Alibaba Qwen, disenado para generacion de texto, razonamiento, codigo y tareas multilingues. Esta variante concreta no pretende ser un checkpoint de produccion: su interes es tecnico, como demostracion de un pipeline de cuantizacion GPTQ adaptado a bloques MXFP4 y como artefacto para medir velocidad en hardware especializado (el autor indica que se ha compilado y ejecutado en una FPGA).
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hyper-accel/Qwen3-8B-mlp-gptq-mxfp4 | 5,64 mil millones (safetensors) | no disponible | MXFP4 en MLP, BF16 en resto | Apache 2.0 | HuggingFace, layout no estandar |
-| Qwen/Qwen3-8B (base) | ~8 mil millones | no disponible en esta ficha | BF16 | Apache 2.0 | HuggingFace, formato estandar |
-| Otras cuantizaciones GPTQ/AWQ de Qwen3-8B | ~8 mil millones | dependen del base | 4/8 bits GPTQ, AWQ, GGUF | Apache 2.0 | HuggingFace, cargables con herramientas habituales |
+| hyper-accel/Qwen3-8B-mlp-gptq-mxfp4 | 5,64 mil millones (safetensors) | no disponible | MXFP4 en MLP, BF16 en resto | Apache 2.0 | Hugging Face, layout no estandar |
+| Qwen/Qwen3-8B (base) | ~8 mil millones | no disponible en esta ficha | BF16 | Apache 2.0 | Hugging Face, formato estandar |
+| Otras cuantizaciones GPTQ/AWQ de Qwen3-8B | ~8 mil millones | dependen del base | 4/8 bits GPTQ, AWQ, GGUF | Apache 2.0 | Hugging Face, cargables con herramientas habituales |
 
 La comparativa se limita al modelo base y a variantes de cuantizacion del mismo, ya que no se dispone de datos de rendimiento de esta publicacion para contrastar con alternativas de otros autores. No se han encontrado benchmarks publicados que permitan una comparacion cuantitativa fiable.
 
@@ -80,7 +80,7 @@ La comparativa se limita al modelo base y a variantes de cuantizacion del mismo,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hyper-accel/Qwen3-8B-mlp-gptq-mxfp4
+- Modelo en Hugging Face: https://huggingface.co/hyper-accel/Qwen3-8B-mlp-gptq-mxfp4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Paper de GPTQ (Frantar et al., 2022): https://arxiv.org/abs/2210.17323
 - Especificacion OCP Microscaling (MX): https://www.opencompute.org/documents/ocp-microscaling-formats-mx-v1-0-spec-final-pdf

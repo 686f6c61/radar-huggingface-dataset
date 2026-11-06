@@ -4,7 +4,7 @@
 
 Kavach scam-classifier es un clasificador de texto binario especializado en detectar mensajes fraudulentos (smishing y phishing) recibidos por SMS y WhatsApp. Lo desarrolla Shravan Kasar como componente del proyecto Kavach, y se distribuye como un unico fichero ONNX de 118,5 MB con cuantizacion int8. Parte del modelo sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2, un encoder transformer multilingue, al que se ha anadido una cabeza de clasificacion de dos clases (genuino / estafa).
 
-Su interes practico esta en el enfoque de despliegue: cuantiza no solo las matrices MatMul/Gemm sino tambien la tabla de embeddings de 250 000 tokens (operacion Gather), pasando de 470 MB en fp32 a 118,5 MB sin perdida medible de exactitud en el conjunto de test. Combinado con un tokenizer SentencePiece que consume unos 41 MB de RAM en lugar de los 260 MB del tokenizer.json de HuggingFace, el servicio completo funciona en aproximadamente 260 MB, lo que permite ejecutarlo en CPU o en dispositivos con memoria muy limitada.
+Su interes practico esta en el enfoque de despliegue: cuantiza no solo las matrices MatMul/Gemm sino tambien la tabla de embeddings de 250 000 tokens (operacion Gather), pasando de 470 MB en fp32 a 118,5 MB sin perdida medible de exactitud en el conjunto de test. Combinado con un tokenizer SentencePiece que consume unos 41 MB de RAM en lugar de los 260 MB del tokenizer.json de Hugging Face, el servicio completo funciona en aproximadamente 260 MB, lo que permite ejecutarlo en CPU o en dispositivos con memoria muy limitada.
 
 El modelo cubre ingles, hindi y marathi, e incluye ejemplos de hinglish en el entrenamiento, un aspecto relevante para el contexto indio. La ventana de entrada esta limitada a 128 tokens y el umbral de decision recomendado es 0,35, optimizado para F1 sobre validacion.
 
@@ -25,7 +25,7 @@ El modelo cubre ingles, hindi y marathi, e incluye ejemplos de hinglish en el en
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino (fine-tuning) supervisado de paraphrase-multilingual-MiniLM-L12-v2 para clasificacion de secuencias con dos etiquetas. La entrada se trunca a 128 tokens, coherente con la longitud tipica de un SMS o mensaje corto de mensajeria instantanea. El tokenizer emplea identificadores de XLM-R (`<s>`=0, `</s>`=2, `<unk>`=3) y suma 1 a los identificadores de SentencePiece, un detalle de integracion importante para quien implemente la inferencia fuera de HuggingFace.
+El modelo es un ajuste fino (fine-tuning) supervisado de paraphrase-multilingual-MiniLM-L12-v2 para clasificacion de secuencias con dos etiquetas. La entrada se trunca a 128 tokens, coherente con la longitud tipica de un SMS o mensaje corto de mensajeria instantanea. El tokenizer emplea identificadores de XLM-R (`<s>`=0, `</s>`=2, `<unk>`=3) y suma 1 a los identificadores de SentencePiece, un detalle de integracion importante para quien implemente la inferencia fuera de Hugging Face.
 
 El conjunto de entrenamiento contiene 5 806 mensajes: mensajes reales de la SMS Smishing Collection derivada de UCI, el conjunto sintetico indio auditado `Ridham115/indian-scam-sms-synthetic-audited` (licencia CC BY 4.0, con negativos dificiles) y el conjunto India Cyber Scam Hinglish, reducido de 10 000 filas a sus 743 plantillas unicas para evitar duplicidad. Se excluyo explicitamente el dataset "Indian Scam SMS 30k" porque sus URL fraudulentas contenian la palabra "scam", lo que constituye una fuga de etiqueta. El test es un 20 % estratificado separado antes del entrenamiento: 1 031 mensajes reales, de los cuales 128 son smishing y 903 genuinos.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks de clasificadores de smishing comparables e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shravan37/kavach-scam-classifier
+- Modelo en Hugging Face: https://huggingface.co/shravan37/kavach-scam-classifier
 - Repositorio del proyecto Kavach: https://github.com/shravankasar37
 - Perfil del autor: https://github.com/shravankasar37
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2

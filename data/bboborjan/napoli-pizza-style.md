@@ -78,4 +78,4 @@ No se dispone de información sobre comparaciones con otros clasificadores de im
 
 ## Enlaces
 
-- [HuggingFace: bboborjan/napoli-pizza-style](https://huggingface.co/bboborjan/napoli-pizza-style)
+- [Hugging Face: bboborjan/napoli-pizza-style](https://huggingface.co/bboborjan/napoli-pizza-style)

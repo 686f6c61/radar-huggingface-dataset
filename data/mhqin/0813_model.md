@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mhqin/0813_model` es un artefacto publicado en HuggingFace por el autor mhqin el 13 de agosto de 2026. Se distribuye bajo la librería `diffusers`, lo que sugiere que está orientado a tareas de generación de imágenes o vídeo mediante modelos de difusión, aunque no se especifica el pipeline concreto. Con 7.611.755.660 parámetros (aproximadamente 7,6 mil millones) y un tamaño de repositorio de 15,2 GB, se trata de un modelo de gran escala que probablemente requiera recursos de hardware considerables para su inferencia.
+El modelo `mhqin/0813_model` es un artefacto publicado en Hugging Face por el autor mhqin el 13 de agosto de 2026. Se distribuye bajo la librería `diffusers`, lo que sugiere que está orientado a tareas de generación de imágenes o vídeo mediante modelos de difusión, aunque no se especifica el pipeline concreto. Con 7.611.755.660 parámetros (aproximadamente 7,6 mil millones) y un tamaño de repositorio de 15,2 GB, se trata de un modelo de gran escala que probablemente requiera recursos de hardware considerables para su inferencia.
 
 La ficha pública es extremadamente limitada: no se indica la arquitectura interna, la licencia, los idiomas soportados ni los datos de entrenamiento. Esta ausencia de metadatos dificulta su evaluación objetiva y desaconseja su uso en entornos de producción sin una investigación adicional. El modelo cuenta con solo 13 descargas y ningún "like", lo que sugiere que es un proyecto reciente o poco difundido.
 
@@ -44,7 +44,7 @@ Dado el tamaño de parámetros (7,6 mil millones) y el peso del repositorio (15,
 - VRAM estimada para inferencia en fp16: al menos 16 GB, recomendable 24 GB para margen de activaciones y overhead.
 - GPU recomendadas: NVIDIA RTX 3090, RTX 4090, A100 (40 GB) o H100 (80 GB) para mayor comodidad.
 - En consumer GPU: cabe en RTX 4090 (24 GB) si se usa fp16 con batch pequeño; con cuantización a 8 bits o 4 bits podría caber en tarjetas de 12-16 GB, pero no se dispone de archivos cuantizados publicados.
-- Opciones de despliegue: al ser un modelo de `diffusers`, se puede cargar con la biblioteca `diffusers` de HuggingFace en Python. No hay evidencia de soporte para vLLM, llama.cpp u Ollama, que son específicos de modelos de lenguaje.
+- Opciones de despliegue: al ser un modelo de `diffusers`, se puede cargar con la biblioteca `diffusers` de Hugging Face en Python. No hay evidencia de soporte para vLLM, llama.cpp u Ollama, que son específicos de modelos de lenguaje.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -61,5 +61,5 @@ No disponible. Al no conocerse la arquitectura ni la tarea específica, no es po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mhqin/0813_model
+- Repositorio Hugging Face: https://huggingface.co/mhqin/0813_model
 - No se han encontrado papers, blogs, repositorios de código o demos asociados mediante búsqueda web.

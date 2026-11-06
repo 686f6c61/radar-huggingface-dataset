@@ -67,6 +67,6 @@ No disponible. No se proporcionan datos de modelos comparables en la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/microtensor-archive/mt-code-3g-r1236-5GCb9fhg
+- Hugging Face: https://huggingface.co/microtensor-archive/mt-code-3g-r1236-5GCb9fhg
 - Microtensor subnet (GitHub): https://github.com/microtensor-io/microtensor-subnet
 - Bittensor netuid 92: https://github.com/microtensor-io/microtensor-subnet (referencia de la subred)

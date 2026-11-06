@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Semilla | Dosis de post-training | Config | Disponibilidad |
 |---|---|---|---|---|
-| kdyck_dose_50Mpt_hfinit_adamwppt_5M_s0 (este modelo) | 0 | 5M tokens | 16 capas, emb 1024, vocab 65536/256 | HuggingFace (Apache 2.0) |
-| kdyck_dose_50Mpt_5M_s1 | 1 | 5M tokens | no disponible | HuggingFace (Apache 2.0) |
-| kdyck_dose_50Mpt_500M_s0 | 0 | 500M tokens | no disponible | HuggingFace (Apache 2.0) |
+| kdyck_dose_50Mpt_hfinit_adamwppt_5M_s0 (este modelo) | 0 | 5M tokens | 16 capas, emb 1024, vocab 65536/256 | Hugging Face (Apache 2.0) |
+| kdyck_dose_50Mpt_5M_s1 | 1 | 5M tokens | no disponible | Hugging Face (Apache 2.0) |
+| kdyck_dose_50Mpt_500M_s0 | 0 | 500M tokens | no disponible | Hugging Face (Apache 2.0) |
 
 No se dispone de datos de rendimiento para comparar. Los tres modelos pertenecen al mismo proyecto de investigación sobre token dose y difieren en la semilla o en la cantidad de tokens de post-training.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento para comparar. Los tres modelos pertenecen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_5M_s0_2026-09-06_22-49-48_455274-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_5M_s0_2026-09-06_22-49-48_455274-pt
 - W&B run: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/oiozgzkn
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Modelo similar (seed 1): https://huggingface.co/alexkstern/kdyck_dose_50Mpt_5M_s1_2026-08-14_22-49-49_667492-pt

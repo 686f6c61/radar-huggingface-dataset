@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lua1-model es un modelo publicado en HuggingFace por el usuario CrescentM00n. Según la información disponible, el repositorio no contiene una model card con especificaciones técnicas, ni pesos descargables, ni ningún dato sobre arquitectura, tamaño o capacidades. La única información pública es la licencia Apache 2.0, lo que indicaría que, de existir un modelo funcional, podría utilizarse con fines comerciales. Sin embargo, la ausencia total de documentación, metadatos técnicos y descargas (0 descargas, 0 likes) hace que este modelo no sea evaluable en la práctica.
+Lua1-model es un modelo publicado en Hugging Face por el usuario CrescentM00n. Según la información disponible, el repositorio no contiene una model card con especificaciones técnicas, ni pesos descargables, ni ningún dato sobre arquitectura, tamaño o capacidades. La única información pública es la licencia Apache 2.0, lo que indicaría que, de existir un modelo funcional, podría utilizarse con fines comerciales. Sin embargo, la ausencia total de documentación, metadatos técnicos y descargas (0 descargas, 0 likes) hace que este modelo no sea evaluable en la práctica.
 
 No se ha encontrado ninguna referencia externa que aporte detalles sobre este repositorio concreto. Los resultados de la búsqueda web mencionan otros proyectos y modelos sin relación aparente con Lua1-model, por lo que no es posible confirmar su existencia real ni su relevancia actual.
 
@@ -56,5 +56,5 @@ No disponible: no se han encontrado modelos comparables, ya que no se dispone de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CrescentM00n/Lua1-model
+- Hugging Face: https://huggingface.co/CrescentM00n/Lua1-model
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web.

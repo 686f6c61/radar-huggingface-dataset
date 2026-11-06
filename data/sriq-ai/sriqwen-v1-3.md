@@ -73,10 +73,10 @@ No se dispone de datos de contexto, licencia, idiomas ni rendimiento de SRIQwen-
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SRIQwen-V1.3 | 27,78B | no disponible | no disponible | HuggingFace, solo safetensors, 0 descargas |
-| Qwen/Qwen3.8-27B (modelo base) | ~27B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| SRIQwen-V1.3 | 27,78B | no disponible | no disponible | Hugging Face, solo safetensors, 0 descargas |
+| Qwen/Qwen3.8-27B (modelo base) | ~27B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 | Mistral Small 3 (24B) | 24B | 32k tokens | Apache 2.0 | Pesos abiertos, amplio ecosistema de cuantizaciones |
-| Gemma 2 27B | 27B | 8k tokens | Licencia Gemma (uso comercial con condiciones) | Pesos abiertos en Kaggle y HuggingFace |
+| Gemma 2 27B | 27B | 8k tokens | Licencia Gemma (uso comercial con condiciones) | Pesos abiertos en Kaggle y Hugging Face |
 | Qwen2.5-32B | 32,5B | 128k tokens | Apache 2.0 | Pesos abiertos con cuantizaciones oficiales GGUF y AWQ |
 
 La diferencia practica mas relevante no es de tamano sino de madurez: las alternativas citadas cuentan con cuantizaciones oficiales, contexto documentado y evaluaciones publicas, mientras que SRIQwen-V1.3 carece de los tres elementos. Se recomienda tratar la comparacion como orientativa hasta que el autor publique datos.
@@ -96,7 +96,7 @@ La diferencia practica mas relevante no es de tamano sino de madurez: las altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sriq-ai/Sriqwen-V1.3
+- Modelo en Hugging Face: https://huggingface.co/sriq-ai/Sriqwen-V1.3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo base en 4 bits usado como referencia: https://huggingface.co/unsloth/Qwen3.8-27B-unsloth-bnb-4bit
 - Sitio del desarrollador: https://sriq.org

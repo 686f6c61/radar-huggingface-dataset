@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`taeyoungrlwlrd/cosmos3-ap-gr1-auxfut-actvis-movonly-lam10-b256-16k` es un checkpoint publicado en HuggingFace por el usuario `taeyoungrlwlrd` el 19 de septiembre de 2026 y actualizado el mismo día. El repositorio ocupa 91,1 GB, lo que indica pesos de gran tamano, pero no se ha publicado ninguna documentacion asociada: no hay model card, pipeline declarado, licencia, idiomas ni resultados de evaluacion accesibles a traves de la informacion disponible. El unico tag presente es `region:us`.
+`taeyoungrlwlrd/cosmos3-ap-gr1-auxfut-actvis-movonly-lam10-b256-16k` es un checkpoint publicado en Hugging Face por el usuario `taeyoungrlwlrd` el 19 de septiembre de 2026 y actualizado el mismo día. El repositorio ocupa 91,1 GB, lo que indica pesos de gran tamano, pero no se ha publicado ninguna documentacion asociada: no hay model card, pipeline declarado, licencia, idiomas ni resultados de evaluacion accesibles a traves de la informacion disponible. El unico tag presente es `region:us`.
 
 El identificador sigue una convencion de nombres por hiperparametros y variantes de entrenamiento (posibles referencias a prediccion auxiliar de futuro, visibilidad de acciones, enmascarado de movimiento, un factor `lam10`, batch de 256 y ventana de 16k), lo que apunta a un checkpoint experimental de investigacion mas que a un modelo listo para produccion. No obstante, no es posible confirmar ninguna de estas interpretaciones con la informacion disponible, por lo que deben tratarse como meras observaciones sobre el nombre y no como especificaciones verificadas.
 
@@ -82,7 +82,7 @@ No disponible. No es posible identificar alternativas comparables sin conocer la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/taeyoungrlwlrd/cosmos3-ap-gr1-auxfut-actvis-movonly-lam10-b256-16k
+- Hugging Face: https://huggingface.co/taeyoungrlwlrd/cosmos3-ap-gr1-auxfut-actvis-movonly-lam10-b256-16k
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

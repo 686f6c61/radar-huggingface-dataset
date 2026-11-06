@@ -48,7 +48,7 @@ Las capacidades que se listan a continuación corresponden a las del modelo base
 - Red teaming de sistemas de moderación: permite estudiar cómo se comporta un VLM cuando su política de rechazo ha sido potencialmente manipulada, informando el diseño de defensas para pipelines de moderación de contenido.
 - Reproducción de experimentos de ajuste fino con LLaMA-Factory: los hiperparámetros están documentados y permiten replicar la receta (5 épocas, lote efectivo 32, AdamW de 8 bits, scheduler coseno) sobre el mismo modelo base.
 - Estudio de sobreajuste en ajustes finos pequeños: con un dataset de aproximadamente 2 000 ejemplos y 5 épocas sobre 8,77 mil millones de parámetros, el checkpoint es un caso útil para analizar olvido catastrófico y degradación de capacidades generales.
-- Docencia y formación en seguridad de IA: como ejemplo tangible de artefacto publicado en HuggingFace sin documentación, sin evaluación y sin trazas de uso, útil para ilustrar buenas y malas prácticas en la publicación de modelos.
+- Docencia y formación en seguridad de IA: como ejemplo tangible de artefacto publicado en Hugging Face sin documentación, sin evaluación y sin trazas de uso, útil para ilustrar buenas y malas prácticas en la publicación de modelos.
 - Punto de partida para ajustes posteriores controlados: un equipo podría usarlo como inicialización para estudiar cómo se revierte un comportamiento indeseado mediante ajustes correctivos, siempre que la licencia lo permita (véase la sección de limitaciones).
 - Peticiones generales de imagen-texto: en teoría el modelo puede realizar tareas de VQA y descripción de imágenes, pero sin evaluación publicada no hay garantía de que conserve la calidad del modelo base en estas tareas.
 
@@ -72,10 +72,10 @@ El model-index del repositorio declara una única entrada, denominada `2k_BadNet
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| copydata/qwen3-vl-checkpoints-badnets | 8,77 mil millones | no disponible (base: 256 000 tokens) | other | HuggingFace, 0 descargas | no disponibles |
-| Qwen/Qwen3-VL-8B-Instruct (modelo base) | ~8 mil millones | 256 000 tokens, ampliable | Apache 2.0 | HuggingFace, ampliamente distribuido | si, publicados por Qwen |
-| Qwen/Qwen2.5-VL-7B-Instruct | ~8 mil millones | 128 000 tokens | Apache 2.0 | HuggingFace, ampliamente distribuido | si, publicados por Qwen |
-| OpenGVLab/InternVL3-8B | ~8 mil millones | no disponible | no disponible | HuggingFace | si, publicados por OpenGVLab |
+| copydata/qwen3-vl-checkpoints-badnets | 8,77 mil millones | no disponible (base: 256 000 tokens) | other | Hugging Face, 0 descargas | no disponibles |
+| Qwen/Qwen3-VL-8B-Instruct (modelo base) | ~8 mil millones | 256 000 tokens, ampliable | Apache 2.0 | Hugging Face, ampliamente distribuido | si, publicados por Qwen |
+| Qwen/Qwen2.5-VL-7B-Instruct | ~8 mil millones | 128 000 tokens | Apache 2.0 | Hugging Face, ampliamente distribuido | si, publicados por Qwen |
+| OpenGVLab/InternVL3-8B | ~8 mil millones | no disponible | no disponible | Hugging Face | si, publicados por OpenGVLab |
 
 La diferencia fundamental de este checkpoint frente a las tres alternativas no es de arquitectura ni de tamaño, sino de propósito y trazabilidad: es un ajuste fino sin documentación, sin evaluación y con una denominación que sugiere manipulación deliberada del comportamiento. Para cualquier uso productivo, el modelo base Qwen3-VL-8B-Instruct es la opción comparable directa y la única de las cuatro con licencia permisiva y resultados verificables.
 
@@ -94,7 +94,7 @@ La diferencia fundamental de este checkpoint frente a las tres alternativas no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/copydata/qwen3-vl-checkpoints-badnets
+- Modelo en Hugging Face: https://huggingface.co/copydata/qwen3-vl-checkpoints-badnets
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 
 No se han recuperado en la búsqueda web enlaces relevantes sobre este modelo. Los resultados obtenidos corresponden a contenidos no relacionados (foros y vídeos sobre cine de artes marciales y montañas nevadas) y no guardan ninguna relación con el modelo ni con su proceso de entrenamiento.

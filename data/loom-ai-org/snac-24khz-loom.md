@@ -101,7 +101,7 @@ El unico modelo comparable con datos concretos es el checkpoint upstream, del qu
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/loom-ai-org/snac-24khz-loom
+- Ficha del modelo en Hugging Face: https://huggingface.co/loom-ai-org/snac-24khz-loom
 - Modelo base: https://huggingface.co/hubertsiuzdak/snac_24khz
 - Motor de ejecucion loom.cpp: https://github.com/loom-ai-org/loom.cpp
 - Herramienta de exportacion loom-exporter: https://github.com/loom-ai-org/loom-exporter

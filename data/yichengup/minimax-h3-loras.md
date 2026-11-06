@@ -2,7 +2,7 @@
 
 ## Resumen
 
-yichengup/MiniMax-H3-LoRAs es un repositorio alojado en HuggingFace por el usuario yichengup, creado el 11 de septiembre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y su model card se limita a una linea de frontmatter con la licencia MIT, sin documentacion tecnica adicional.
+yichengup/MiniMax-H3-LoRAs es un repositorio alojado en Hugging Face por el usuario yichengup, creado el 11 de septiembre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y su model card se limita a una linea de frontmatter con la licencia MIT, sin documentacion tecnica adicional.
 
 El identificador del repositorio sugiere que se trata de un conjunto de adaptadores LoRA (Low-Rank Adaptation) asociados a un modelo denominado MiniMax-H3, pero esa interpretacion no esta confirmada por ninguna fuente publica. Ni la model card, ni los tags (`license:mit`, `region:us`), ni los resultados de busqueda web aportados describen la arquitectura base, el numero de parametros, la longitud de contexto ni el tipo de tarea para la que se han entrenado los adaptadores.
 
@@ -79,5 +79,5 @@ No disponible. No se dispone de informacion sobre el modelo base ni sobre el con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yichengup/MiniMax-H3-LoRAs
+- Hugging Face: https://huggingface.co/yichengup/MiniMax-H3-LoRAs
 - Resultados de busqueda web: no se han encontrado enlaces relevantes. Las busquedas devolvieron unicamente paginas de inicio del motor de busqueda (google.sk, google.com, accounts.google.com), sin papers, blogs, repositorios ni demos asociados al modelo.

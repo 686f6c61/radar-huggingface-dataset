@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Javi0.4-2B es un modelo multimodal de tipo image-text-to-text publicado por el usuario javierbits en HuggingFace, derivado directamente de Javi0.3-2B y, en ultima instancia, de la arquitectura Qwen3.5-2B. Con 2.274.069.824 parametros, se distribuye en formato safetensors bf16 en un unico shard de 4,2 GB y se orienta a tareas de agente con uso de herramientas (tool-use), en concreto a la seleccion de herramientas web en flujos multi-paso.
+Javi0.4-2B es un modelo multimodal de tipo image-text-to-text publicado por el usuario javierbits en Hugging Face, derivado directamente de Javi0.3-2B y, en ultima instancia, de la arquitectura Qwen3.5-2B. Con 2.274.069.824 parametros, se distribuye en formato safetensors bf16 en un unico shard de 4,2 GB y se orienta a tareas de agente con uso de herramientas (tool-use), en concreto a la seleccion de herramientas web en flujos multi-paso.
 
 La particularidad del modelo es que no incorpora ningun entrenamiento nuevo: es una edicion en el espacio de pesos (weight-space) que modifica una unica fila de embeddings. Concretamente, la fila del token 51187 (correspondiente a `=open_page`) se multiplica por 0,84, lo que reduce el logit de salida de esa herramienta y sesga al modelo a repetir `web_search` tras un fallo de busqueda en lugar de abrir una URL recordada. El resto de los pesos es byte a byte identico a Javi0.3-2B.
 
@@ -89,7 +89,7 @@ El autor indica que se trata de una sonda dirigida, no de la eval v3 completa. E
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/javierbits/Javi0.4-2B
+- Modelo en Hugging Face: https://huggingface.co/javierbits/Javi0.4-2B
 - Version GGUF: https://huggingface.co/javierbits/Javi0.4-2B-GGUF
 - Modelo base Javi0.3-2B: https://huggingface.co/javierbits/Javi0.3-2B
 - Control 4B: https://huggingface.co/javierbits/Javi0.4-4B

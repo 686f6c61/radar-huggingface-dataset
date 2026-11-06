@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BurnyCoder/e2e-bsf-dinov3-imagenette-smoke-scalar-kl-seed100 | 232.042 | no aplica | BSF end-to-end sobre DINOv3 para clasificación de 10 clases | MIT (BSF); DINOv3 aparte | HuggingFace, 35 descargas |
+| BurnyCoder/e2e-bsf-dinov3-imagenette-smoke-scalar-kl-seed100 | 232.042 | no aplica | BSF end-to-end sobre DINOv3 para clasificación de 10 clases | MIT (BSF); DINOv3 aparte | Hugging Face, 35 descargas |
 | Block-sparse featurizer de Goodfire | no disponible | no aplica | BSF de referencia sobre activaciones | no disponible | Repositorio GitHub |
 | SAE end-to-end (arXiv:2405.12241) | no disponible | no aplica | SAE entrenado conjuntamente con la tarea | no disponible | Paper |
 
@@ -95,7 +95,7 @@ No se dispone de datos suficientes para comparar parámetros, contexto o rendimi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-smoke-scalar-kl-seed100
+- Modelo en Hugging Face: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-smoke-scalar-kl-seed100
 - Repositorio del proyecto: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers
 - Paper BSF: https://arxiv.org/abs/2606.25234
 - Paper SAE end-to-end: https://arxiv.org/abs/2405.12241

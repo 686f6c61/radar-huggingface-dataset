@@ -64,16 +64,16 @@ Reevaluación del mismo checkpoint en un segundo dispositivo (RTX 4080): 95,15 %
 - VRAM estimada para inferencia: no disponible de forma oficial. Con 4,74 mil millones de parámetros, en FP16 serían necesarios aproximadamente 9,5 GB solo para pesos, más el overhead de la torre de visión y del runtime; en cuantizaciones de 8 bits o 4 bits el requisito bajaría, pero no se publican versiones cuantizadas.
 - GPU recomendadas: no se especifican. El autor reporta evaluaciones en una RTX 4080, lo que indica que el checkpoint en precisión nativa cabe en GPUs de consumo de gama alta con 16 GB de VRAM o más.
 - Cabe en GPU de consumo: sí, al menos en RTX 4080 según la reevaluación documentada; para tarjetas de 8-12 GB sería necesaria cuantización, no publicada en el repositorio.
-- Opciones de despliegue: transformers con código remoto (el repositorio incluye los ficheros de modelado); el tag `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: transformers con código remoto (el repositorio incluye los ficheros de modelado); el tag `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mage Hand (este) | 4,74 B | no disponible | Grounding de clic GUI | Apache-2.0 | HuggingFace (Frosty40) |
-| microsoft/Mage-VL-Cowork | no disponible | no disponible | Visión-lenguaje para computer use (base) | Apache-2.0 | HuggingFace (Microsoft) |
-| microsoft/Mage-VL | no disponible | no disponible | Visión-lenguaje (upstream del base) | no disponible | HuggingFace (Microsoft) |
+| Mage Hand (este) | 4,74 B | no disponible | Grounding de clic GUI | Apache-2.0 | Hugging Face (Frosty40) |
+| microsoft/Mage-VL-Cowork | no disponible | no disponible | Visión-lenguaje para computer use (base) | Apache-2.0 | Hugging Face (Microsoft) |
+| microsoft/Mage-VL | no disponible | no disponible | Visión-lenguaje (upstream del base) | no disponible | Hugging Face (Microsoft) |
 | hands v1 (adaptador previo) | 4,74 B (misma base) | no disponible | Grounding de clic GUI | no disponible | No referenciado como repo independiente en la información disponible |
 
 La comparación cuantitativa disponible se limita al par v1/v2 sobre el mismo holdout (94,99 % frente a 88,08 % en caja objetivo). No hay datos públicos de benchmarks frente a otros modelos de grounding GUI en la información proporcionada.
@@ -92,7 +92,7 @@ La comparación cuantitativa disponible se limita al par v1/v2 sobre el mismo ho
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Frosty40/mage-hand-Mage-VL-Cowork-hands-v2
+- Modelo en Hugging Face: https://huggingface.co/Frosty40/mage-hand-Mage-VL-Cowork-hands-v2
 - Modelo base: https://huggingface.co/microsoft/Mage-VL-Cowork
 - Upstream del base: https://huggingface.co/microsoft/Mage-VL
 - Backbone de texto: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

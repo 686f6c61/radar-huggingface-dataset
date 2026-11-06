@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WebCoder (`kanaton/webcoder-t28n`) es un ajuste fino del modelo `Qwen/Qwen2.5-Coder-1.5B-Instruct` orientado a asistencia de desarrollo web local. Lo publica el usuario de HuggingFace «kanaton», y la model card identifica el artefacto como «WebCoder», un livrable del proyecto «WebCoder local» atribuido a Pierre Jean Duvivier. No se trata de un modelo entrenado desde cero: la base es Qwen2.5-Coder (Alibaba Cloud, licencia Apache-2.0) y sobre ella se aplica un LoRA de rango 8 que después se fusiona y se cuantiza a GGUF Q8_0. El objetivo declarado es funcionar en CPU, sin GPU y sin conexión de red, en una máquina de unos 8 GB de RAM.
+WebCoder (`kanaton/webcoder-t28n`) es un ajuste fino del modelo `Qwen/Qwen2.5-Coder-1.5B-Instruct` orientado a asistencia de desarrollo web local. Lo publica el usuario de Hugging Face «kanaton», y la model card identifica el artefacto como «WebCoder», un livrable del proyecto «WebCoder local» atribuido a Pierre Jean Duvivier. No se trata de un modelo entrenado desde cero: la base es Qwen2.5-Coder (Alibaba Cloud, licencia Apache-2.0) y sobre ella se aplica un LoRA de rango 8 que después se fusiona y se cuantiza a GGUF Q8_0. El objetivo declarado es funcionar en CPU, sin GPU y sin conexión de red, en una máquina de unos 8 GB de RAM.
 
 El nicho es muy concreto: modificación de código web en PHP, HTML, CSS, SQL y JavaScript, incluyendo plugins y temas de WordPress. El autor define dos modos de uso seleccionables mediante *system prompt*: un modo «worker» que devuelve parches en bloques delimitados con la ruta del fichero (```` ```file:CHEMIN ````) y un modo «chat» que responde en prosa. Fuera de alcance quedan los usos generalistas, los lenguajes distintos de esos cinco y la generación de aplicaciones completas desde cero, que la propia model card documenta como fallida.
 
@@ -87,7 +87,7 @@ El autor señala además que la cuantización afecta a la calidad: servir en Q8_
 
 | Modelo | Parámetros | Contexto | Ajuste específico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `kanaton/webcoder-t28n` | 1,543 M | 32.768 tokens configurados | LoRA sobre PHP/HTML/CSS/SQL/JS y WordPress, con identidad propia | Apache-2.0 | GGUF Q8_0 en HuggingFace; 0 descargas |
+| `kanaton/webcoder-t28n` | 1,543 M | 32.768 tokens configurados | LoRA sobre PHP/HTML/CSS/SQL/JS y WordPress, con identidad propia | Apache-2.0 | GGUF Q8_0 en Hugging Face; 0 descargas |
 | `Qwen/Qwen2.5-Coder-1.5B-Instruct` (base) | ~1,5 B | 32.768 tokens | Instrucciones generales de código, sin especialización web | Apache-2.0 | Pesos safetensors y múltiples cuantizaciones; ampliamente distribuido |
 | `Qwen/Qwen2.5-Coder-7B-Instruct` | ~7,6 B | 32.768 tokens | Instrucciones generales de código, mayor capacidad | Apache-2.0 | Pesos safetensors y GGUF; requiere bastante más memoria |
 | `bigcode/starcoder2-3b` | 3 B | 16.384 tokens | Código multilingüe, sin ajuste conversacional específico | BigCode OpenRAIL-M | Pesos públicos; licencia con cláusulas de uso |
@@ -110,7 +110,7 @@ No se dispone de resultados de benchmarks públicos del modelo reseñado que per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kanaton/webcoder-t28n
+- Modelo en Hugging Face: https://huggingface.co/kanaton/webcoder-t28n
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Repositorio del motor de inferencia (`llama.cpp`, citado en la model card): https://github.com/ggml-org/llama.cpp
 - Papers, blogs, repositorios adicionales o demos: no disponibles en la información proporcionada.

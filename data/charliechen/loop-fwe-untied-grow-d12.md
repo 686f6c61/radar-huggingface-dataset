@@ -111,7 +111,7 @@ Comparativa de rendimiento: no disponible. Ni la model card ni la búsqueda web 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-fwe-untied-grow-d12
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-fwe-untied-grow-d12
 - Repositorio de código del artículo (`cue-engineering/loop`): https://github.com/cue-engineering/loop
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Artículo de referencia: "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents" (sin URL pública en la información disponible)

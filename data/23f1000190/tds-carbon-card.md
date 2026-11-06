@@ -46,10 +46,10 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no tiene compa
 ## Limitaciones y advertencias
 - No contiene ningún modelo utilizable: el repositorio es únicamente un registro de emisiones, no un artefacto de inferencia.
 - No se proporciona información sobre sesgos, alucinaciones o limitaciones de idioma, ya que no hay modelo subyacente.
-- La licencia no está especificada, por lo que el uso comercial del contenido (si lo hubiera) queda sujeto a la normativa general de HuggingFace y a las leyes aplicables.
+- La licencia no está especificada, por lo que el uso comercial del contenido (si lo hubiera) queda sujeto a la normativa general de Hugging Face y a las leyes aplicables.
 - Los datos de emisiones dependen de la metodología de CodeCarbon y de factores como el PUE; no son extrapolables a otros entornos sin ajustes.
 - La fecha de creación (2026-08-18) es futura respecto a la fecha actual, lo que sugiere que el registro es simulado o hipotético, no un experimento real verificado.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/23f1000190/tds-carbon-card
+- Repositorio Hugging Face: https://huggingface.co/23f1000190/tds-carbon-card
 - Herramienta CodeCarbon (mencionada como fuente de emisiones): https://codecarbon.io/ (referencia externa no incluida en la información proporcionada, pero se cita en la model card como source: codecarbon)

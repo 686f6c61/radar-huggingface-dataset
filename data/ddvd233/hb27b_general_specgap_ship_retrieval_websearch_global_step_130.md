@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ddvd233/hb27b_general_specgap_ship_retrieval_websearch_global_step_130` es un artefacto de investigación publicado por el usuario de HuggingFace ddvd233. Consiste en los pesos fusionados (merge) del checkpoint FSDP `global_step_130` de un experimento de aprendizaje por refuerzo (RL) sobre `Qwen/Qwen3.6-27B`, entrenado con la librería verl y con herramientas de recuperación (retrieval) y búsqueda web disponibles durante el entrenamiento.
+El modelo `ddvd233/hb27b_general_specgap_ship_retrieval_websearch_global_step_130` es un artefacto de investigación publicado por el usuario de Hugging Face ddvd233. Consiste en los pesos fusionados (merge) del checkpoint FSDP `global_step_130` de un experimento de aprendizaje por refuerzo (RL) sobre `Qwen/Qwen3.6-27B`, entrenado con la librería verl y con herramientas de recuperación (retrieval) y búsqueda web disponibles durante el entrenamiento.
 
 El problema que aborda es de carácter metodológico: el experimento se describe como "RRI full arm (hack-then-patch rounds)" con evaluación graduada por GPT (GPT-graded) y con un proponente entrenado sobre una descripción de tarea que no nombra ningún benchmark concreto (general bundle). El propio autor indica que el modelo no forma parte de ninguno de sus dos artículos y que es el último checkpoint del run.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para M
 | Modelo | Parametros | Contexto | Resultado HealthBench Professional (val.) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este checkpoint (step 130) | 27,36 B | No disponible | 0,402 (ajustado por longitud, in-loop) | apache-2.0 | Pesos en safetensors, 54,7 GB |
-| Qwen/Qwen3.6-27B (base) | ~27 B (cifra exacta no disponible) | No disponible | 0,368 segun el autor, sin entrenamiento | No disponible en esta informacion | Publico en HuggingFace |
+| Qwen/Qwen3.6-27B (base) | ~27 B (cifra exacta no disponible) | No disponible | 0,368 segun el autor, sin entrenamiento | No disponible en esta informacion | Publico en Hugging Face |
 | Alternativas medicas de ~27 B (por ejemplo, la familia MedGemma) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la informacion proporcionada de resultados comparables de otros modelos en HealthBench Professional ni de sus especificaciones, por lo que no es posible establecer una comparacion cuantitativa fiable mas alla de la referencia frente al modelo base.
@@ -95,7 +95,7 @@ No se dispone en la informacion proporcionada de resultados comparables de otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ddvd233/hb27b_general_specgap_ship_retrieval_websearch_global_step_130
+- Modelo en Hugging Face: https://huggingface.co/ddvd233/hb27b_general_specgap_ship_retrieval_websearch_global_step_130
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Libreria de entrenamiento (verl): no disponible en la informacion proporcionada
 - Paper o blog del autor: no disponible; la model card indica que el modelo no forma parte de ninguno de los dos articulos del autor

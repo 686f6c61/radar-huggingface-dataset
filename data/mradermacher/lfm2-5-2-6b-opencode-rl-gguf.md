@@ -18,7 +18,7 @@ El repositorio ocupa 24,3 GB e incluye unicamente pesos GGUF (no safetensors). E
 | Longitud de contexto | 128.000 tokens (segun la documentacion del modelo base LFM2.5-2.6B; no se especifica en la model card de esta cuantizacion) |
 | Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
 | Idiomas soportados | en (ingles); el modelo base LFM2.5-2.6B declara soporte de 16 idiomas |
-| Licencia | lfm1.0 (LFM Open License v1.0), etiquetada como "other" en HuggingFace |
+| Licencia | lfm1.0 (LFM Open License v1.0), etiquetada como "other" en Hugging Face |
 | Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
@@ -80,7 +80,7 @@ Los valores de esta tabla marcados con asterisco corresponden a documentacion pu
 - Alucinacion: no hay evaluaciones publicadas de tasa de alucinacion para esta variante; el riesgo es el habitual en modelos de 2,6 B, especialmente en tareas de conocimiento factual.
 - Contexto e idioma: la model card declara unicamente ingles, aunque el base declara 16 idiomas. En idiomas distintos del ingles el rendimiento no esta garantizado.
 - Dominio: Liquid AI advierte que LFM2.5-2.6B no es su modelo recomendado para codificacion agentica intensiva ni para tareas con alta carga de conocimiento. El ajuste RL sobre opencode puede mejorar el comportamiento en ese nicho, pero no se aportan metricas que lo confirmen.
-- Licencia: LFM Open License v1.0 (lfm1.0), etiquetada como "other" en HuggingFace. Es una licencia con condiciones especificas que conviene revisar antes de un uso comercial; no es Apache-2.0 ni MIT.
+- Licencia: LFM Open License v1.0 (lfm1.0), etiquetada como "other" en Hugging Face. Es una licencia con condiciones especificas que conviene revisar antes de un uso comercial; no es Apache-2.0 ni MIT.
 - Cuantizacion: las versiones Q2_K y Q3_K_S degradan notablemente la calidad; para produccion se recomienda Q4_K_M o superior. La ausencia de cuantizaciones con imatrix puede implicar una perdida de calidad mayor que la habitual en los rangos bajos.
 - Artefacto derivado: el autor es un tercero (mradermacher), no Liquid AI ni FineEnvs; la trazabilidad y el soporte dependen de la comunidad.
 - Reproducibilidad: no se publican hiperparametros del GRPO, numero de tokens ni composicion detallada del dataset, lo que dificulta reproducir el ajuste.
@@ -88,7 +88,7 @@ Los valores de esta tabla marcados con asterisco corresponden a documentacion pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/LFM2.5-2.6B-opencode-RL-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/LFM2.5-2.6B-opencode-RL-GGUF
 - Modelo base (FineEnvs): https://huggingface.co/FineEnvs/LFM2.5-2.6B-opencode-RL
 - Dataset de entrenamiento: https://huggingface.co/datasets/FineEnvs/SmolDataEnvs-harbor-train
 - Pagina de resumen de cuantizaciones del autor: https://hf.tst.eu/model#LFM2.5-2.6B-opencode-RL-GGUF

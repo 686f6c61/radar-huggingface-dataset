@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sung-hoon/connectailab-rl-connectailab-rl-kribrain-v1-teacher` es una política de aprendizaje por refuerzo (RL) desarrollada por CONNECT AI LAB en colaboración con AI CITY BUILDERS, publicada en HuggingFace bajo el identificador del autor `sung-hoon`. No se trata de un modelo de lenguaje generativo, sino de un agente de toma de decisiones entrenado para dirigir una compañía sintética dentro del simulador CONNECT TYCOON, actuando como la "corteza prefrontal" del sistema de decisión empresarial. El modelo recibe un estado del entorno (por ejemplo, una solicitud de reembolso con motivo, nivel de cliente, importe y puntuación de fraude) y emite una decisión discreta con sus probabilidades asociadas.
+El modelo `sung-hoon/connectailab-rl-connectailab-rl-kribrain-v1-teacher` es una política de aprendizaje por refuerzo (RL) desarrollada por CONNECT AI LAB en colaboración con AI CITY BUILDERS, publicada en Hugging Face bajo el identificador del autor `sung-hoon`. No se trata de un modelo de lenguaje generativo, sino de un agente de toma de decisiones entrenado para dirigir una compañía sintética dentro del simulador CONNECT TYCOON, actuando como la "corteza prefrontal" del sistema de decisión empresarial. El modelo recibe un estado del entorno (por ejemplo, una solicitud de reembolso con motivo, nivel de cliente, importe y puntuación de fraude) y emite una decisión discreta con sus probabilidades asociadas.
 
 El problema que resuelve es la automatización de decisiones operativas multi-paso en un entorno de negocio simulado: asignación de personal, pedidos de inventario, marketing, atención al cliente, gestión de reembolsos y seguridad. El entrenamiento combina una fase de aprendizaje supervisado imitando a un "presidente basado en reglas" y una fase posterior de ajuste con PPO (Proximal Policy Optimization) guiada por una función de recompensa basada en el valor de la compañía (beneficio, satisfacción del cliente y aversión al riesgo, ponderados a 1.0 cada uno). El resultado es una política que, según la propia model card, supera claramente a la línea base de reglas en métricas de negocio simuladas.
 
@@ -33,7 +33,7 @@ El agente emite sus decisiones en el formato JEV (`typesafe/jev-1.13`), devolvie
 - Asignación de personal, pedidos de inventario, campañas de marketing, atención al cliente, gestión de reembolsos y decisiones de seguridad.
 - Salida estructurada en formato JEV con opción elegida, distribución de probabilidad, confianza y justificación.
 - Operación de un ciclo mensual completo (20 días laborables) dentro del simulador CONNECT TYCOON.
-- Integración como "cerebro" (CompanyBrain) cargable desde HuggingFace mediante `connect_tycoon`.
+- Integración como "cerebro" (CompanyBrain) cargable desde Hugging Face mediante `connect_tycoon`.
 - Modo jugable en el propio simulador (`connect-tycoon play --brain ...`).
 - Soporte de razonamiento multi-paso en el sentido de decisiones secuenciales encadenadas por el entorno.
 - No dispone de capacidad de generación de texto, visión, audio, tool calling ni function calling en el sentido de un LLM.
@@ -74,9 +74,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Tipo | Entrenamiento | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sung-hoon/connectailab-rl-connectailab-rl-kribrain-v1-teacher` | Política RL (PPO), pesos en numpy | Imitación + PPO | ko | apache-2.0 | HuggingFace |
-| `WonseokJayJung/connectailab-rl-jay-v1` | Política RL sobre base tipo Qwen (LoRA) | GRPO | ko | apache-2.0 | HuggingFace, con soporte MLX |
-| Modelos hermanos etiquetados `connect-tycoon` | Políticas RL para el mismo simulador | RL (variantes) | ko | no disponible | HuggingFace |
+| `sung-hoon/connectailab-rl-connectailab-rl-kribrain-v1-teacher` | Política RL (PPO), pesos en numpy | Imitación + PPO | ko | apache-2.0 | Hugging Face |
+| `WonseokJayJung/connectailab-rl-jay-v1` | Política RL sobre base tipo Qwen (LoRA) | GRPO | ko | apache-2.0 | Hugging Face, con soporte MLX |
+| Modelos hermanos etiquetados `connect-tycoon` | Políticas RL para el mismo simulador | RL (variantes) | ko | no disponible | Hugging Face |
 
 No se dispone de otros modelos comparables fuera del ecosistema CONNECT AI LAB / connect-tycoon en la información proporcionada.
 
@@ -92,8 +92,8 @@ No se dispone de otros modelos comparables fuera del ecosistema CONNECT AI LAB /
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/sung-hoon/connectailab-rl-connectailab-rl-kribrain-v1-teacher
-- Perfil del autor en HuggingFace: https://huggingface.co/sung-hoon
+- Hugging Face del modelo: https://huggingface.co/sung-hoon/connectailab-rl-connectailab-rl-kribrain-v1-teacher
+- Perfil del autor en Hugging Face: https://huggingface.co/sung-hoon
 - Repositorio CONNECT TYCOON en GitHub: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

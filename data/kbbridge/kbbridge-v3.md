@@ -87,7 +87,7 @@ La model card advierte que la caída de parseRate en v3 no puede atribuirse a un
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KBBridge/KBBridge-v3
+- Repositorio Hugging Face: https://huggingface.co/KBBridge/KBBridge-v3
 - Repositorio GGUF: https://huggingface.co/KBBridge/KBBridge-v3-GGUF
 - Repositorio FP8: https://huggingface.co/KBBridge/KBBridge-v3-FP8
 - Sitio web de KBbridge: https://kbbridge.com/

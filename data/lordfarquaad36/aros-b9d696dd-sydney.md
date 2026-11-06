@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores LoRA co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lordfarquaad36/aros-b9d696dd-Sydney
+- Modelo en Hugging Face: https://huggingface.co/lordfarquaad36/aros-b9d696dd-Sydney
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Variante Turbo citada por el autor: https://huggingface.co/krea/Krea-2-Turbo
 - Referencia cruzada en la model card: `guillekenzo/aros-b9d696dd-Sydney` (identificador alternativo mencionado por el autor, sin URL verificada en la informacion)

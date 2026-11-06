@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ethanpaker/al_85_5e2cqouuo6` es un modelo de tipo imagen-texto-a-texto publicado en HuggingFace por el usuario ethanpaker. Con 35.951.822.704 parámetros (~36B), el repositorio ocupa 71,9 GB en formato safetensors y se distribuye bajo licencia Apache 2.0. Los metadatos incluyen la etiqueta `qwen3_5_moe`, lo que sugiere que se trata de una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen 3.5, aunque no se ha confirmado oficialmente.
+El modelo `ethanpaker/al_85_5e2cqouuo6` es un modelo de tipo imagen-texto-a-texto publicado en Hugging Face por el usuario ethanpaker. Con 35.951.822.704 parámetros (~36B), el repositorio ocupa 71,9 GB en formato safetensors y se distribuye bajo licencia Apache 2.0. Los metadatos incluyen la etiqueta `qwen3_5_moe`, lo que sugiere que se trata de una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen 3.5, aunque no se ha confirmado oficialmente.
 
-El modelo está marcado como de acceso restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargarlo. No se dispone de documentación oficial, paper ni publicaciones de benchmarks asociadas a este lanzamiento, y el número de descargas y likes es cero, lo que indica que se trata de una publicación reciente o de un proyecto personal sin difusión pública. Su relevancia actual es limitada, pero podría interesar a desarrolladores que buscan alternativas MoE de tamaño medio con licencia permisiva.
+El modelo está marcado como de acceso restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargarlo. No se dispone de documentación oficial, paper ni publicaciones de benchmarks asociadas a este lanzamiento, y el número de descargas y likes es cero, lo que indica que se trata de una publicación reciente o de un proyecto personal sin difusión pública. Su relevancia actual es limitada, pero podría interesar a desarrolladores que buscan alternativas MoE de tamaño medio con licencia permisiva.
 
 ## Especificaciones tecnicas
 
@@ -39,12 +39,12 @@ Tampoco se conocen los detalles del dataset de entrenamiento, el número de toke
 - Investigación en arquitecturas MoE: dado su tamaño (~36B) y su posible base Qwen 3.5, podría servir como objeto de estudio para comparar eficiencia de parámetros activos frente a modelos densos equivalentes.
 - Desarrollo de asistentes conversacionales con licencia Apache 2.0: la licencia permisiva permite uso comercial sin restricciones de atribución, lo que facilita su integración en productos propietarios.
 - Experimentación con cuantización: al disponer de pesos en safetensors, se podría aplicar cuantización (por ejemplo, con GPTQ o AWQ) para reducir requisitos de memoria, aunque no se ha validado su estabilidad.
-- Evaluación de modelos recién publicados: para la comunidad que sigue lanzamientos de HuggingFace, este modelo puede ser candidato a pruebas de rendimiento en tareas específicas, aunque sin datos previos el riesgo de decepción es alto.
+- Evaluación de modelos recién publicados: para la comunidad que sigue lanzamientos de Hugging Face, este modelo puede ser candidato a pruebas de rendimiento en tareas específicas, aunque sin datos previos el riesgo de decepción es alto.
 - Despliegue en entornos con restricciones de licencia: al ser Apache 2.0, es adecuado para empresas que necesitan evitar licencias copyleft o de uso no comercial.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No existen datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar para este modelo. Tampoco hay comparativas con modelos similares en el repositorio de HuggingFace ni en la web.
+No se han publicado resultados de benchmarks en la información disponible. No existen datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar para este modelo. Tampoco hay comparativas con modelos similares en el repositorio de Hugging Face ni en la web.
 
 ## Requisitos de hardware
 
@@ -60,7 +60,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en HuggingFace. Esto puede dificultar su uso automatizado.
+- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en Hugging Face. Esto puede dificultar su uso automatizado.
 - Ausencia total de documentación: no hay paper, modelo card detallado ni instrucciones de uso. Esto incrementa el riesgo de errores de configuración o de comportamiento inesperado.
 - Sin benchmarks ni evaluaciones: no se puede garantizar la calidad del modelo en ninguna tarea. El rendimiento podría ser deficiente en comparación con alternativas establecidas.
 - Riesgo de alucinación y sesgos: al no conocerse los datos de entrenamiento, no se pueden evaluar sesgos potenciales ni mitigaciones.
@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ethanpaker/al_85_5e2cqouuo6
+- Modelo en Hugging Face: https://huggingface.co/ethanpaker/al_85_5e2cqouuo6
 - Perfil del autor: https://huggingface.co/ethanpaker
 - Lista de modelos del autor: https://huggingface.co/ethanpaker/models
 

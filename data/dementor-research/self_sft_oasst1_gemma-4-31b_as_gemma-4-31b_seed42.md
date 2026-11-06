@@ -70,6 +70,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/self_sft_oasst1_gemma-4-31b_as_gemma-4-31b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/self_sft_oasst1_gemma-4-31b_as_gemma-4-31b_seed42
 - Modelo base (referenciado): https://huggingface.co/google/gemma-4-31B-it
 - Referencia al paper de estimación de emisiones (citado en la model card): https://arxiv.org/abs/1910.09700

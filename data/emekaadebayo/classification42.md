@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`emekaadebayo/classification42` es un repositorio publicado en HuggingFace que contiene una implementación funcional de MoCo v3 (Momentum Contrast v3) orientada a tareas de clasificación, configurada en una escala "tiny". Lo desarrolla el usuario `emekaadebayo` y su propósito declarado es servir como código transparente y como base para pruebas de humo (smoke tests) reproducibles, no como un modelo entrenado listo para producción. El repositorio incluye un script de inferencia, una configuración de arquitectura, unos argumentos de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors.
+`emekaadebayo/classification42` es un repositorio publicado en Hugging Face que contiene una implementación funcional de MoCo v3 (Momentum Contrast v3) orientada a tareas de clasificación, configurada en una escala "tiny". Lo desarrolla el usuario `emekaadebayo` y su propósito declarado es servir como código transparente y como base para pruebas de humo (smoke tests) reproducibles, no como un modelo entrenado listo para producción. El repositorio incluye un script de inferencia, una configuración de arquitectura, unos argumentos de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors.
 
 Conviene recalcar un dato clave para cualquier evaluador: el propio autor indica que `model.safetensors` **no es un checkpoint entrenado** ni auditado, sino una inicialización válida para pruebas de humo, y que no se reclama ninguna puntuación de benchmark. El número de parámetros reales del checkpoint (16.576 según los metadatos de safetensors) es coherente con un módulo de clasificación/cabeza muy pequeño y no con un backbone visual completo, aunque esta interpretación no está confirmada explícitamente en la model card.
 
@@ -67,7 +67,7 @@ No se dispone de datos verificables en la información proporcionada para compar
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| emekaadebayo/classification42 | 16.576 | no disponible | sin benchmark declarado | apache-2.0 | HuggingFace (0 descargas al publicar la ficha) |
+| emekaadebayo/classification42 | 16.576 | no disponible | sin benchmark declarado | apache-2.0 | Hugging Face (0 descargas al publicar la ficha) |
 | Otras implementaciones de MoCo v3 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de clasificación de escala tiny | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,5 +86,5 @@ No se han incluido cifras de modelos comparables porque no aparecen en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emekaadebayo/classification42
+- Modelo en Hugging Face: https://huggingface.co/emekaadebayo/classification42
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

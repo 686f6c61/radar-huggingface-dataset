@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MedRegion-CT es un framework de modelo de lenguaje multimodal (MLLM) centrado en regiones, diseñado para la generación automática de informes radiológicos a partir de tomografías computarizadas (TC) de tórax en 3D. Lo desarrolla el proyecto MedRegion-CT (repositorio oficial en GitHub de babbu3682) y el artefacto alojado en HuggingFace bajo el identificador `cngvng/medregion-ct-radgenome-ct-finetune` es una **reproducción** del checkpoint, no la release oficial de los autores, según se indica expresamente en la model card.
+MedRegion-CT es un framework de modelo de lenguaje multimodal (MLLM) centrado en regiones, diseñado para la generación automática de informes radiológicos a partir de tomografías computarizadas (TC) de tórax en 3D. Lo desarrolla el proyecto MedRegion-CT (repositorio oficial en GitHub de babbu3682) y el artefacto alojado en Hugging Face bajo el identificador `cngvng/medregion-ct-radgenome-ct-finetune` es una **reproducción** del checkpoint, no la release oficial de los autores, según se indica expresamente en la model card.
 
 El modelo resuelve un problema concreto: los métodos previos de generación de informes sobre RadGenome-ChestCT trabajan principalmente con características globales del volumen, lo que dificulta capturar detalles específicos de cada región anatómica y puede provocar que determinadas anomalías pasen desapercibidas. MedRegion-CT introduce un enfoque de tres componentes con un encoder de regiones MedSigLIP-448 y una etapa de adaptación LoRA sobre un backbone de lenguaje de 8.000 millones de parámetros.
 
@@ -26,7 +26,7 @@ Técnicamente, el artefacto publicado es un adaptador LoRA de etapa 2 sobre `met
 
 ## Arquitectura y entrenamiento
 
-El framework MedRegion-CT se compone de tres elementos segun el articulo (arXiv:2506.23102): un encoder de regiones MedSigLIP-448, un mecanismo de agregacion/region focus y un backbone de lenguaje. La ficha de HuggingFace solo distribuye la parte correspondiente al adaptador de etapa 2 y los `non_lora_trainables`, por lo que la arquitectura completa debe reconstruirse a partir del codigo oficial del repositorio `babbu3682/MedRegion-CT`.
+El framework MedRegion-CT se compone de tres elementos segun el articulo (arXiv:2506.23102): un encoder de regiones MedSigLIP-448, un mecanismo de agregacion/region focus y un backbone de lenguaje. La ficha de Hugging Face solo distribuye la parte correspondiente al adaptador de etapa 2 y los `non_lora_trainables`, por lo que la arquitectura completa debe reconstruirse a partir del codigo oficial del repositorio `babbu3682/MedRegion-CT`.
 
 El adaptador se entrena con LoRA (PEFT 0.17.1) sobre `meta-llama/Meta-Llama-3.1-8B-Instruct`. Los datos de entrenamiento proceden de RadGenome-ChestCT, un corpus derivado de CT-RATE que proporciona informes con anotaciones multi-granularidad y grounding regional. La model card no documenta el numero de tokens, la composicion exacta del dataset, ni si se aplicaron fases de RLHF o DPO; unicamente describe el proceso de reproduccion y la verificacion por hash de los ficheros de pesos contra el manifiesto de la ejecucion sellada. Como innovacion destacable, el enfoque se centra en caracteristicas locales por region anatomica en lugar de caracteristicas globales del volumen 3D, que es la limitacion que el paper atribuye a los metodos anteriores.
 
@@ -97,7 +97,7 @@ Los datos de rendimiento de los modelos comparables no estan disponibles en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cngvng/medregion-ct-radgenome-ct-finetune
+- Modelo en Hugging Face: https://huggingface.co/cngvng/medregion-ct-radgenome-ct-finetune
 - Reproduccion relacionada del mismo autor: https://huggingface.co/cngvng/ct2rep-radgenome-ct-finetune
 - Articulo MedRegion-CT (arXiv): https://arxiv.org/abs/2506.23102v1
 - Version HTML del articulo: https://arxiv.org/html/2506.23102v1

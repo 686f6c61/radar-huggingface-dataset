@@ -71,9 +71,9 @@ El checkpoint mejora la adherencia a la especificación respecto al modelo base 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `debudash/qwen3-4b-tz-convert-v2-n750` (este) | 4B (base) + LoRA | No disponible | Spec-adherence 20,0 %; Robustness 21,4 % | Apache 2.0 | HuggingFace (17 descargas) |
-| `debudash/qwen3-4b-tz-convert-v3-n12000` | 4B (base) + LoRA | No disponible | Mejor checkpoint del proyecto según el autor; cifras no disponibles en esta información | Apache 2.0 | HuggingFace |
-| `Qwen/Qwen3-4B-Instruct-2507` (modelo base) | 4B | No disponible | Spec-adherence 12,0 %; Robustness 23,3 % | No disponible en esta información | HuggingFace |
+| `debudash/qwen3-4b-tz-convert-v2-n750` (este) | 4B (base) + LoRA | No disponible | Spec-adherence 20,0 %; Robustness 21,4 % | Apache 2.0 | Hugging Face (17 descargas) |
+| `debudash/qwen3-4b-tz-convert-v3-n12000` | 4B (base) + LoRA | No disponible | Mejor checkpoint del proyecto según el autor; cifras no disponibles en esta información | Apache 2.0 | Hugging Face |
+| `Qwen/Qwen3-4B-Instruct-2507` (modelo base) | 4B | No disponible | Spec-adherence 12,0 %; Robustness 23,3 % | No disponible en esta información | Hugging Face |
 
 No se dispone de información sobre otros adaptadores de conversión horaria comparables.
 
@@ -90,7 +90,7 @@ No se dispone de información sobre otros adaptadores de conversión horaria com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/debudash/qwen3-4b-tz-convert-v2-n750
+- Modelo en Hugging Face: https://huggingface.co/debudash/qwen3-4b-tz-convert-v2-n750
 - Dataset de entrenamiento: https://huggingface.co/datasets/debudash/tz-convert-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Mejor checkpoint del proyecto: https://huggingface.co/debudash/qwen3-4b-tz-convert-v3-n12000

@@ -63,15 +63,15 @@ Frente a LLMs de frontera en modo zero-shot sobre el mismo test, el modelo alcan
 - VRAM estimada para inferencia: aproximadamente 1,1 GB en FP32 (278,8 M parámetros × 4 bytes) y 0,56 GB en FP16. Con cuantización a 8 bits, se reduce a unos 0,3 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Modelos como NVIDIA GTX 1050 Ti, RTX 2060, RTX 3060 o superiores funcionan sin problemas. También es viable en CPU para inferencia por lotes pequeños.
 - Cabe en GPUs de consumo: sí, incluso en las gamas más bajas.
-- Opciones de despliegue: transformers (pipeline de HuggingFace), ONNX Runtime, TorchScript, o servidores de inferencia como FastAPI. No requiere vLLM ni TGI por su tamaño reducido.
+- Opciones de despliegue: transformers (pipeline de Hugging Face), ONNX Runtime, TorchScript, o servidores de inferencia como FastAPI. No requiere vLLM ni TGI por su tamaño reducido.
 - Latencia estimada: en una GPU moderna (RTX 3090), la inferencia por oración es del orden de milisegundos; en CPU, decenas de milisegundos. No se dispone de mediciones oficiales.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | F1-macro (test NegClima) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| negclima-mdeberta-v3 | 278,8 M | no disponible | 0,798 | MIT | HuggingFace |
-| microsoft/mdeberta-v3-base (sin fine-tune) | 278,8 M | 512 (típico) | no aplicable (no clasificador) | MIT | HuggingFace |
+| negclima-mdeberta-v3 | 278,8 M | no disponible | 0,798 | MIT | Hugging Face |
+| microsoft/mdeberta-v3-base (sin fine-tune) | 278,8 M | 512 (típico) | no aplicable (no clasificador) | MIT | Hugging Face |
 | LLM de frontera A (zero-shot) | no disponible | no disponible | ~0,60 (estimado según diferencia reportada) | propietaria | API |
 | LLM de frontera B (zero-shot) | no disponible | no disponible | ~0,60 (estimado) | propietaria | API |
 
@@ -89,7 +89,7 @@ Nota: los valores de los LLMs se estiman a partir de la diferencia de +0,17 a +0
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EdwinDracoHiguera/negclima-mdeberta-v3
+- Modelo en Hugging Face: https://huggingface.co/EdwinDracoHiguera/negclima-mdeberta-v3
 - Repositorio de DeBERTa (Microsoft): https://github.com/microsoft/DeBERTa
 - Modelo base mdeberta-v3-base: https://huggingface.co/microsoft/mdeberta-v3-base
 - Demo interactiva para RRHH: https://main.dqlpgutcvit7x.amplifyapp.com

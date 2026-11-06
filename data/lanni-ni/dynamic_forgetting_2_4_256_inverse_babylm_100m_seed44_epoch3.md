@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_100m_seed44_epoch3` es un artefacto de investigacion publicado en HuggingFace por el usuario Lanni-ni. Forma parte de una serie de experimentos cuyo nombre sugiere el estudio de mecanismos de "dynamic forgetting" (olvido dinamico) aplicados a modelos de lenguaje de pequeno tamano, en el contexto del desafio BabyLM. Se trata de un modelo de generacion de texto con 27.449.096 parametros totales, almacenado en formato safetensors.
+El modelo `Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_100m_seed44_epoch3` es un artefacto de investigacion publicado en Hugging Face por el usuario Lanni-ni. Forma parte de una serie de experimentos cuyo nombre sugiere el estudio de mecanismos de "dynamic forgetting" (olvido dinamico) aplicados a modelos de lenguaje de pequeno tamano, en el contexto del desafio BabyLM. Se trata de un modelo de generacion de texto con 27.449.096 parametros totales, almacenado en formato safetensors.
 
 La informacion disponible es minima: la model card es una plantilla autogenerada sin datos relevantes, y no se ha publicado documentacion tecnica, licencia, idiomas, contexto ni resultados de evaluacion. El tag `custom_code` indica que el modelo requiere una implementacion personalizada para cargarse, por lo que no es directamente utilizable con el codigo estandar de transformers. Su relevancia es exclusivamente como material de investigacion experimental dentro de la serie `dynamic_forgetting`.
 
@@ -23,7 +23,7 @@ La informacion disponible es minima: la model card es una plantilla autogenerada
 
 No se dispone de informacion tecnica sobre la arquitectura del modelo. El nombre incluye los terminos `dynamic_forgetting`, `inverse`, `babylm_100m`, `seed44` y `epoch3`, lo que apunta a un experimento sobre olvido dinamico en un modelo de lenguaje de 100 millones de parametros dentro de la iniciativa BabyLM. Sin embargo, no hay datos publicos sobre la implementacion, el dataset de entrenamiento, el numero de tokens, el procedimiento de optimizacion ni posibles tecnicas de alineacion como RLHF o DPO.
 
-El tag `custom_code` en la pagina de HuggingFace implica que el modelo no se puede cargar con el codigo estandar de la libreria `transformers` y necesita una implementacion personalizada. No se han publicado detalles sobre la infraestructura de computo ni el impacto ambiental del entrenamiento.
+El tag `custom_code` en la pagina de Hugging Face implica que el modelo no se puede cargar con el codigo estandar de la libreria `transformers` y necesita una implementacion personalizada. No se han publicado detalles sobre la infraestructura de computo ni el impacto ambiental del entrenamiento.
 
 ## Capacidades
 
@@ -63,13 +63,13 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para comparar este modelo con alternativas de la misma categoria. Existen otros modelos de la misma serie publicados por el mismo autor en HuggingFace, pero no se han publicado datos comparables sobre parametros, contexto, rendimiento ni licencia.
+No se dispone de informacion suficiente para comparar este modelo con alternativas de la misma categoria. Existen otros modelos de la misma serie publicados por el mismo autor en Hugging Face, pero no se han publicado datos comparables sobre parametros, contexto, rendimiento ni licencia.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dynamic_forgetting_2_4_256_inverse_babylm_100m_seed44_epoch3 | 27.449.096 | no disponible | no disponible | no disponible | HuggingFace |
-| dynamic_forgetting_2_4_256_babylm_100m_epoch4 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| dynamic_forgetting_2_4_256_babylm_100m_inverse_epoch1 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| dynamic_forgetting_2_4_256_inverse_babylm_100m_seed44_epoch3 | 27.449.096 | no disponible | no disponible | no disponible | Hugging Face |
+| dynamic_forgetting_2_4_256_babylm_100m_epoch4 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| dynamic_forgetting_2_4_256_babylm_100m_inverse_epoch1 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -82,6 +82,6 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_100m_seed44_epoch3
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_100m_seed44_epoch3
 - Modelo relacionado: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4
 - Modelo relacionado: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_inverse_epoch1

@@ -69,7 +69,7 @@ No disponible. No se ha proporcionado información sobre modelos comparables en 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/walston/joycent-medium-grl)
+- [Modelo en Hugging Face](https://huggingface.co/walston/joycent-medium-grl)
 - [Paper: Joycent: Diffusion-based Accent TTS without Accented Phone Prediction](https://huggingface.co/papers/2606.16417)
 - [Codigo fuente: oshindow/Joycent-code](https://github.com/oshindow/Joycent-code)
 - [Encoder de acento: walston/whisaid-medium-grl](https://huggingface.co/walston/whisaid-medium-grl)

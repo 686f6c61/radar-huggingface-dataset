@@ -79,6 +79,6 @@ No disponible. No se puede establecer una comparacion tecnica con modelos multim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/abhishekvmman/multimodal-generation
+- Repositorio en Hugging Face: https://huggingface.co/abhishekvmman/multimodal-generation
 - `notes.md`: referenciado en la model card como artefacto principal, dentro del propio repositorio
 - La busqueda web realizada no devolvio resultados tecnicos relevantes sobre este repositorio, su autor ni sus contenidos; los enlaces encontrados no guardan relacion con el modelo y se omiten.

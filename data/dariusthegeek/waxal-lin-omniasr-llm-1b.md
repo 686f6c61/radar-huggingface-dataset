@@ -72,7 +72,7 @@ No se dispone de comparativas de rendimiento (WER) entre estos modelos en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DariusTheGeek/waxal-lin-omniasr-llm-1b
+- Hugging Face: https://huggingface.co/DariusTheGeek/waxal-lin-omniasr-llm-1b
 - Repositorio de la solución WAXAL ASR: https://github.com/DariusTheGeek/waxal-asr-solution
 - Dataset WaxalNLP: https://huggingface.co/datasets/google/WaxalNLP
 - Modelo base: https://huggingface.co/facebook/omniASR-LLM-1B-v2

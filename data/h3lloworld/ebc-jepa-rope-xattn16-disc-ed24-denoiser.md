@@ -76,7 +76,7 @@ No se dispone de datos comparativos suficientes en la informacion proporcionada 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/h3lloworld/ebc-jepa-rope-xattn16-disc-ed24-denoiser
+- Hugging Face: https://huggingface.co/h3lloworld/ebc-jepa-rope-xattn16-disc-ed24-denoiser
 - Repositorio de codigo (rama denoise-lora): https://github.com/whohyf/EBC-JEPA-share/tree/denoise-lora
 - Checkpoint base V-JEPA 2.1 ViT-B (Meta): https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitb_dist_vitG_384.pt
 - Script de evaluacion citado en la model card: `tools/lora_denoise/eval_emlb.py --runs-dir <dir holding this folder> --arms <folder name> --checkpoint vjepa2_1_vitb_dist_vitG_384.pt`

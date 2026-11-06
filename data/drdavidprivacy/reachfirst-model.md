@@ -82,7 +82,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drdavidprivacy/reachfirst-model
+- Modelo en Hugging Face: https://huggingface.co/drdavidprivacy/reachfirst-model
 - Dataset de entrenamiento: https://huggingface.co/datasets/drdavidprivacy/reachfirst-data
 - Case packs del practicum: https://huggingface.co/datasets/drdavidprivacy/practicum-case-packs
 - Space de servicio: https://huggingface.co/spaces/drdavidprivacy/reachfirst

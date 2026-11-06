@@ -33,7 +33,7 @@ Por tanto, esta ficha describe con rigor lo que el artefacto es y permite (un co
 
 No se dispone de información sobre la arquitectura del modelo base CORe-Pico-V3: no consta si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un esquema híbrido. Tampoco se documentan el número de parámetros, la longitud de contexto nativa, el volumen de tokens de entrenamiento, la composición del corpus, ni si se aplicaron fases de ajuste fino supervisado, RLHF o DPO.
 
-Lo único verificable en este repositorio es el proceso de posprocesado: mradermacher ha aplicado una conversión desde pesos en formato HuggingFace (convert_type: hf) y ha generado cuantizaciones estáticas con la versión 2 de su pipeline, marcando la cuantización de tensores de salida. El conjunto de variantes publicadas (desde Q2_K hasta x-f16) es el patrón habitual de este autor para cubrir distintos compromisos entre tamaño en disco, consumo de memoria y fidelidad respecto a los pesos originales.
+Lo único verificable en este repositorio es el proceso de posprocesado: mradermacher ha aplicado una conversión desde pesos en formato Hugging Face (convert_type: hf) y ha generado cuantizaciones estáticas con la versión 2 de su pipeline, marcando la cuantización de tensores de salida. El conjunto de variantes publicadas (desde Q2_K hasta x-f16) es el patrón habitual de este autor para cubrir distintos compromisos entre tamaño en disco, consumo de memoria y fidelidad respecto a los pesos originales.
 
 Cualquier afirmación sobre innovaciones técnicas del modelo subyacente (decodificación especulativa, atención lineal, modos de razonamiento explícito, etc.) sería especulativa y no se incluye en esta ficha.
 
@@ -105,7 +105,7 @@ Los compromisos cualitativos de la tabla son orientativos y propios de las técn
 - Sesgos: no evaluados ni documentados.
 - Degradación por cuantización: las variantes Q2_K y Q3_K pueden degradar de forma notable la coherencia y la precisión en tareas de razonamiento o código. No se recomienda su uso en producción sin una evaluación previa específica del caso de uso.
 - Advertencia sobre el formato: al ser cuantizaciones, no son adecuadas para continuar el entrenamiento ni para fusiones de pesos; para ajuste fino hay que partir del modelo base en precisión completa.
-- Anomalía en los metadatos: las fechas de creación y actualización registradas (16 de septiembre de 2026) son posteriores a la fecha habitual de publicación y podrían deberse a un error de los metadatos de HuggingFace. No afecta al contenido de los pesos, pero conviene tenerlo en cuenta.
+- Anomalía en los metadatos: las fechas de creación y actualización registradas (16 de septiembre de 2026) son posteriores a la fecha habitual de publicación y podrían deberse a un error de los metadatos de Hugging Face. No afecta al contenido de los pesos, pero conviene tenerlo en cuenta.
 - Adopción nula verificada: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validación por parte de la comunidad y de informes de errores.
 - Trazabilidad limitada: no se indica la revisión exacta del modelo base utilizada para la conversión, por lo que no puede garantizarse la reproducibilidad bit a bit respecto a una versión concreta del modelo original.
 

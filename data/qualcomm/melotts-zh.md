@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MeloTTS-ZH es un modelo de síntesis de voz (pipeline text-to-audio) para chino publicado por Qualcomm en HuggingFace. No es un modelo entrenado desde cero por Qualcomm, sino una exportación optimizada del checkpoint `myshell-ai/MeloTTS-Chinese`, la variante china de la librería MeloTTS de MyShell, preparada para ejecutarse sobre hardware Qualcomm con el runtime VOICE_AI y el SDK Qualcomm Voice AI.
+MeloTTS-ZH es un modelo de síntesis de voz (pipeline text-to-audio) para chino publicado por Qualcomm en Hugging Face. No es un modelo entrenado desde cero por Qualcomm, sino una exportación optimizada del checkpoint `myshell-ai/MeloTTS-Chinese`, la variante china de la librería MeloTTS de MyShell, preparada para ejecutarse sobre hardware Qualcomm con el runtime VOICE_AI y el SDK Qualcomm Voice AI.
 
 El problema que resuelve es el despliegue de TTS neuronal de calidad en el propio dispositivo (on-device), sin depender de la nube. Los artefactos pre-exportados permiten compilar y ejecutar el modelo sobre la NPU de plataformas Snapdragon: móvil (8 Elite Gen 5, 8 Elite, 8 Gen 3), PC (X Elite, X2 Elite) y las familias Dragonwing IQ-8275, IQ-9075, QCS8550, SA8775P y SA7255P. La arquitectura se descompone en cuatro submodelos independientes (bert_wrapper, encoder, flow y decoder) que suman unos 195 millones de parámetros y una longitud máxima de secuencia decodificada de 512 tokens.
 
@@ -25,7 +25,7 @@ Es relevante ahora porque traslada un pipeline TTS multicomponente completo a un
 | Tamaño en float por componente | bert_wrapper: 581 MB; decoder: 55,5 MB; flow: 76,9 MB; encoder: 31,9 MB (total aproximado: 745,3 MB) |
 | Runtime | VOICE_AI (Qualcomm Voice AI SDK, QAIRT 2.50) |
 | Unidad de cómputo principal | NPU |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creación / actualización | 2026-03-12 / 2026-10-07 |
 
 ## Arquitectura y entrenamiento
@@ -101,7 +101,7 @@ La información proporcionada solo permite comparar con el checkpoint original d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/MeloTTS-ZH
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/MeloTTS-ZH
 - MeloTTS-ZH en Qualcomm AI Hub: https://aihub.qualcomm.com/models/melotts_zh
 - Repositorio de exportación en GitHub (v0.64.0): https://github.com/qualcomm/ai-hub-models/blob/v0.64.0/src/qai_hub_models/models/melotts_zh
 - Repositorio general Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models

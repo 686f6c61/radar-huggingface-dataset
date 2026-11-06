@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Repetition Diagnostic no es un modelo de lenguaje entrenado, sino una herramienta de linea de comandos publicada por el usuario Compactbot en HuggingFace. Se trata de un script Python (`repetition_diagnostic.py`) pensado para desarrolladores que entrenan modelos de lenguaje muy pequenos (por debajo de 50M de parametros) y necesitan detectar y mitigar bucles de repeticion degenerativos en la generacion.
+Repetition Diagnostic no es un modelo de lenguaje entrenado, sino una herramienta de linea de comandos publicada por el usuario Compactbot en Hugging Face. Se trata de un script Python (`repetition_diagnostic.py`) pensado para desarrolladores que entrenan modelos de lenguaje muy pequenos (por debajo de 50M de parametros) y necesitan detectar y mitigar bucles de repeticion degenerativos en la generacion.
 
 El problema que aborda es concreto: los modelos diminutos tienden a repetir el mismo token o la misma secuencia indefinidamente, y el valor por defecto `repetition_penalty=1.0` en la mayoria de frameworks no aplica penalizacion alguna. La herramienta barre distintos valores de ese parametro sobre uno o varios prompts y mide cuatro metricas objetivas (tasa de repeticion, ratio de tokens unicos, longitud maxima de bucle y trigramas repetidos) para ayudar a fijar un valor adecuado en la configuracion de inferencia.
 
-Su relevancia es practica y acotada: cubre el hueco entre el entrenamiento y el despliegue, donde muchos pipelines no evaluan la calidad de generacion. No aporta pesos, no tiene arquitectura de red propia y funciona con cualquier modelo que pueda cargarse mediante `AutoModelForCausalLM` de HuggingFace Transformers. No se especifica autoría institucional, licencia ni idiomas.
+Su relevancia es practica y acotada: cubre el hueco entre el entrenamiento y el despliegue, donde muchos pipelines no evaluan la calidad de generacion. No aporta pesos, no tiene arquitectura de red propia y funciona con cualquier modelo que pueda cargarse mediante `AutoModelForCausalLM` de Hugging Face Transformers. No se especifica autoría institucional, licencia ni idiomas.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Su relevancia es practica y acotada: cubre el hueco entre el entrenamiento y el 
 
 ## Arquitectura y entrenamiento
 
-No existe arquitectura de red ni proceso de entrenamiento asociado a este repositorio. El componente tecnicamente relevante es la logica del script: en lugar de usar `model.generate()`, realiza la generacion de forma manual para aplicar el `repetition_penalty` exactamente como se especifica, sin interferir con la logica interna de HuggingFace. Utiliza la misma semilla para todos los valores de penalizacion, de modo que la comparacion sea justa (mismas extracciones aleatorias, distinta penalizacion). Es compatible con cualquier modelo cargable por `AutoModelForCausalLM`.
+No existe arquitectura de red ni proceso de entrenamiento asociado a este repositorio. El componente tecnicamente relevante es la logica del script: en lugar de usar `model.generate()`, realiza la generacion de forma manual para aplicar el `repetition_penalty` exactamente como se especifica, sin interferir con la logica interna de Hugging Face. Utiliza la misma semilla para todos los valores de penalizacion, de modo que la comparacion sea justa (mismas extracciones aleatorias, distinta penalizacion). Es compatible con cualquier modelo cargable por `AutoModelForCausalLM`.
 
 Las metricas que calcula son: tasa de repeticion (fraccion de tokens de salida que ya aparecieron antes en la secuencia), ratio de tokens unicos (tokens unicos dividido por tokens totales, como medida de diversidad), longitud maxima de bucle (n-grama repetido mas largo) y numero de trigramas repetidos (secuencias de 3 tokens que aparecen dos o mas veces). Requiere Python 3.8 o superior, `torch` y `transformers`.
 
@@ -87,5 +87,5 @@ No disponible. La informacion proporcionada no incluye herramientas comparables 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Compactbot/repetition-diagnostic
+- Repositorio en Hugging Face: https://huggingface.co/Compactbot/repetition-diagnostic
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios o demos) en la busqueda web proporcionada.

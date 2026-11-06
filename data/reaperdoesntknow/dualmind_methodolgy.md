@@ -4,7 +4,7 @@
 
 DualMind_Methodolgy es un modelo de lenguaje de 1.700 millones de parámetros desarrollado por Roy C, de Convergent Intelligence LLC, que aplica un pipeline de destilación de conocimiento en cuatro etapas para transferir capacidades de razonamiento dual-cognitivo desde un profesor Qwen3-30B-A3B hasta un estudiante compacto. El modelo se presenta como un experimento metodológico que combina destilación multi-profesor ponderada por pruebas, destilación topológica basada en el marco DISC (Discrepancy Calculus), imprinting fantasma y un esquema de generación condicionada por roles mediante tokens especiales `<explore>`, `<examine>` y `<response>`.
 
-La relevancia de este modelo radica en su intento de reproducir razonamiento dialéctico (derivación libre, autocrítica adversarial y síntesis final) en un tamaño de parámetros donde este comportamiento no suele observarse. Está entrenado con precisión BF16 en GPUs H100 y liberado bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones. Aunque la ficha de HuggingFace no detalla todos los aspectos técnicos, el abstract describe un enfoque innovador para preservar la estructura de discontinuidades en la distribución del profesor, algo que la destilación estándar tiende a difuminar.
+La relevancia de este modelo radica en su intento de reproducir razonamiento dialéctico (derivación libre, autocrítica adversarial y síntesis final) en un tamaño de parámetros donde este comportamiento no suele observarse. Está entrenado con precisión BF16 en GPUs H100 y liberado bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones. Aunque la ficha de Hugging Face no detalla todos los aspectos técnicos, el abstract describe un enfoque innovador para preservar la estructura de discontinuidades en la distribución del profesor, algo que la destilación estándar tiende a difuminar.
 
 ## Especificaciones tecnicas
 
@@ -75,6 +75,6 @@ La comparativa se basa únicamente en parámetros y licencia, ya que no hay dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy
 - Modelo DualMind relacionado: https://huggingface.co/reaperdoesntknow/DualMind
 - DOI del paper: 10.57967/hf/8184

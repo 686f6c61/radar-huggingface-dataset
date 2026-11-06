@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento frente a 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxHuman-Reason-14B
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxHuman-Reason-14B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Ejecución en Ollama: `ollama run Thox-ai/thoxhuman-reason-14b`
 - Papers, blogs, repos y demos adicionales: no disponible en la información proporcionada.

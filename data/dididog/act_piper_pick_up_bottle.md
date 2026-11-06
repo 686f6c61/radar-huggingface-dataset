@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dididog/act_piper_pick_up_bottle` es una política de aprendizaje por imitación para robótica, no un modelo de lenguaje. Está desarrollada por el usuario dididog y publicada en HuggingFace mediante la librería LeRobot de Hugging Face. Implementa el método ACT (Action Chunking with Transformers), descrito en el artículo arXiv 2304.13705, que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales, lo que permite ejecutar tareas de manipulación con mayor estabilidad y tasas de éxito elevadas.
+`dididog/act_piper_pick_up_bottle` es una política de aprendizaje por imitación para robótica, no un modelo de lenguaje. Está desarrollada por el usuario dididog y publicada en Hugging Face mediante la librería LeRobot de Hugging Face. Implementa el método ACT (Action Chunking with Transformers), descrito en el artículo arXiv 2304.13705, que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales, lo que permite ejecutar tareas de manipulación con mayor estabilidad y tasas de éxito elevadas.
 
 El modelo tiene 51.670.663 parámetros y está entrenado para una tarea concreta: que un robot tipo Piper recoja una botella. Consume dos flujos de imagen (cámara en la mano y cámara en el pecho), ambos a resolución 720x1280, más un vector de estado de 7 dimensiones, y produce una acción de 7 dimensiones por paso. El entrenamiento se realizó sobre el dataset `dididog/piper_pick_up_bottle`, con 120 episodios y 77.519 fotogramas grabados a 30 FPS.
 
@@ -72,7 +72,7 @@ No se proporciona informacion sobre modelos comparables en la documentacion disp
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dididog/act_piper_pick_up_bottle | 51,7 M | no aplica | apache-2.0 | HuggingFace (0 descargas publicas) |
+| dididog/act_piper_pick_up_bottle | 51,7 M | no aplica | apache-2.0 | Hugging Face (0 descargas publicas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se proporciona informacion sobre modelos comparables en la documentacion disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dididog/act_piper_pick_up_bottle
+- Modelo en Hugging Face: https://huggingface.co/dididog/act_piper_pick_up_bottle
 - Dataset de entrenamiento: https://huggingface.co/datasets/dididog/piper_pick_up_bottle
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

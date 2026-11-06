@@ -4,7 +4,7 @@
 
 RedHatAI/Muse-Glimmer-30B-NVFP4 es una versión cuantizada del modelo multimodal Muse-Glimmer-30B desarrollado por Meta Superintelligence Labs. Esta cuantización, creada por RedHatAI, reduce los pesos y activaciones a precisión NVFP4 (FP4 con grupo de 16) mediante la herramienta LLM Compressor, lo que permite una inferencia más rápida y eficiente en memoria manteniendo la mayor parte de la calidad del modelo original. El modelo base es un transformer denso de aproximadamente 18.800 millones de parámetros (aunque se comercializa como "30B"), con capacidades multimodales (texto e imágenes), soporte nativo para tool calling y razonamiento, y está diseñado para tareas de agente y generación de código. Esta versión cuantizada está lista para su uso con vLLM, lo que facilita su despliegue en producción.
 
-La relevancia de esta ficha radica en que ofrece una alternativa optimizada para entornos con recursos limitados, manteniendo las capacidades del modelo original a un coste computacional menor. Al estar basada en el modelo de Meta, hereda su licencia Apache 2.0 (aunque no se especifica explícitamente en la ficha de HuggingFace), lo que permite uso comercial y modificación.
+La relevancia de esta ficha radica en que ofrece una alternativa optimizada para entornos con recursos limitados, manteniendo las capacidades del modelo original a un coste computacional menor. Al estar basada en el modelo de Meta, hereda su licencia Apache 2.0 (aunque no se especifica explícitamente en la ficha de Hugging Face), lo que permite uso comercial y modificación.
 
 ## Especificaciones tecnicas
 
@@ -74,7 +74,7 @@ No se dispone de información sobre otros modelos cuantizados de la misma famili
 
 ## Enlaces
 
-- [HuggingFace - RedHatAI/Muse-Glimmer-30B-NVFP4](https://huggingface.co/RedHatAI/Muse-Glimmer-30B-NVFP4)
+- [Hugging Face - RedHatAI/Muse-Glimmer-30B-NVFP4](https://huggingface.co/RedHatAI/Muse-Glimmer-30B-NVFP4)
 - [Modelo base - meta-models/Muse-Glimmer-30B](https://huggingface.co/meta-models/Muse-Glimmer-30B)
 - [Guía de uso de Muse Glimmer con vLLM](https://recipes.vllm.ai/meta-models/Muse-Glimmer-30B)
 - [Documentación de Unsloth sobre Muse Glimmer](https://unsloth.ai/docs/models/muse-glimmer)

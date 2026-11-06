@@ -89,7 +89,7 @@ Frente a otros modelos OCR como TrOCR (de Microsoft) o PaddleOCR, GOT-OCR2_0 des
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mlx-community/GOT-OCR2_0-4bit
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mlx-community/GOT-OCR2_0-4bit
 - Modelo base original: https://huggingface.co/stepfun-ai/GOT-OCR2_0
 - Artículo académico: https://arxiv.org/abs/2409.01704
 - Variante bf16: https://huggingface.co/mlx-community/GOT-OCR2_0-bf16

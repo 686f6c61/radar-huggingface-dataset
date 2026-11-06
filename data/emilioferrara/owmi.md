@@ -96,9 +96,9 @@ OWMI es el único que combina intervención impuesta, tres condiciones de contro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/emilioferrara/owmi
+- Repositorio Hugging Face: https://huggingface.co/emilioferrara/owmi
 - Preprint arXiv: https://arxiv.org/abs/2608.20569
-- Perfil del autor en HuggingFace: https://huggingface.co/emilioferrara
+- Perfil del autor en Hugging Face: https://huggingface.co/emilioferrara
 - Web del autor: https://emilioferrara.github.io/
 - Índice de investigación del autor: https://emilioferrara.github.io/ai-research/
 - GitHub del autor: https://github.com/emilioferrara/ai-research

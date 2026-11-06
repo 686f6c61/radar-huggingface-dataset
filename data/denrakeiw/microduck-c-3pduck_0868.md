@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`DenRakEiw/microduck-c-3pduck_0868` es una politica de aprendizaje por refuerzo (RL) para el robot cuadrupedo microduck de Pollen Robotics, publicada en HuggingFace por el usuario DenRakEiw. No se trata de un modelo de lenguaje, sino de un controlador de locomocion: una politica perpetua que ocupa el slot `walk` del robot y que ha sido afinada mediante estrategias de evolucion sobre el scorer de colinas de la Arena. Su tarea declarada es "1.5 m Hill Climb", un escenario de modo carrera en el que el robot debe ascender una pendiente.
+`DenRakEiw/microduck-c-3pduck_0868` es una politica de aprendizaje por refuerzo (RL) para el robot cuadrupedo microduck de Pollen Robotics, publicada en Hugging Face por el usuario DenRakEiw. No se trata de un modelo de lenguaje, sino de un controlador de locomocion: una politica perpetua que ocupa el slot `walk` del robot y que ha sido afinada mediante estrategias de evolucion sobre el scorer de colinas de la Arena. Su tarea declarada es "1.5 m Hill Climb", un escenario de modo carrera en el que el robot debe ascender una pendiente.
 
 Tecnicamente, el artefacto distribuido es un fichero `policy.onnx` acompanado de un `manifest.json` que sigue el esquema 2 del manifiesto de politicas de microduck. La politica consume observaciones de 61 dimensiones y emite 14 acciones a 50 Hz, de forma continua e indefinida ("perpetua"): no tiene condicion de parada propia, sino que se ejecuta hasta que se le indique lo contrario. El normalizador de observaciones viene embebido dentro del ONNX, por lo que la entrada debe ser la observacion en crudo.
 
@@ -91,7 +91,7 @@ No disponible. La informacion proporcionada no incluye otras politicas comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DenRakEiw/microduck-c-3pduck_0868
+- Hugging Face: https://huggingface.co/DenRakEiw/microduck-c-3pduck_0868
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento (referenciado en la model card): `pollen-robotics/microduck_rl`, rama `denrakeiw`, commit `bc6676e52` (URL exacta no proporcionada en la informacion disponible)
 - Documentacion del manifiesto de politicas: `docs/policy-manifest.md` dentro del repositorio del daemon (URL exacta no proporcionada en la informacion disponible)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FinOps Qwen3-4B es un adaptador LoRA/QLoRA de dominio publicado por el usuario Chandu06 en HuggingFace, entrenado sobre el modelo instructivo `Qwen/Qwen3-4B-Instruct-2507`. No se trata de un modelo completo: el repositorio (0,1 GB) contiene unicamente los pesos del adaptador en formato PEFT, por lo que para inferir es necesario cargar el modelo base y aplicar el adaptador encima. Su proposito declarado es asistir en analisis de costes de infraestructura cloud y razonamiento sobre optimizacion FinOps.
+FinOps Qwen3-4B es un adaptador LoRA/QLoRA de dominio publicado por el usuario Chandu06 en Hugging Face, entrenado sobre el modelo instructivo `Qwen/Qwen3-4B-Instruct-2507`. No se trata de un modelo completo: el repositorio (0,1 GB) contiene unicamente los pesos del adaptador en formato PEFT, por lo que para inferir es necesario cargar el modelo base y aplicar el adaptador encima. Su proposito declarado es asistir en analisis de costes de infraestructura cloud y razonamiento sobre optimizacion FinOps.
 
 El modelo se presenta explicitamente como un prototipo de investigacion e ingenieria que demuestra la adaptacion de dominio de un LLM instructivo de codigo abierto. Las capacidades que el autor declara cubrir son analisis de coste de infraestructura, evaluacion de utilizacion de recursos, analisis de anomalias de coste, redimensionado de recursos (rightsizing), optimizacion de almacenamiento y generacion de recomendaciones de optimizacion basadas en evidencia.
 
@@ -90,6 +90,6 @@ No se dispone de datos de rendimiento comparativos entre el adaptador y el model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chandu06/finops-qwen3-4b
+- Modelo en Hugging Face: https://huggingface.co/Chandu06/finops-qwen3-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper, blog, repositorio o demo adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo (los resultados obtenidos correspondian a contenido turistico sin relacion).

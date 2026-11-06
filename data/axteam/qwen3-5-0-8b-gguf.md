@@ -37,7 +37,7 @@ No se dispone de información sobre la composición del corpus de entrenamiento,
 - Despliegue en el borde: el modelo base se posiciona explícitamente para edge deployment según Qualcomm AI Hub.
 - Capacidad multilingüe: no confirmada en la model card de este repositorio, pero la serie Qwen3.5 se describe como multilingüe en fuentes externas.
 - Razonamiento y seguimiento de instrucciones: la serie Qwen3.5 declara mejoras en estas áreas frente a Qwen3, aunque no se aportan métricas en la información disponible.
-- Compatibilidad con endpoints (`endpoints_compatible` en los tags de HuggingFace).
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags de Hugging Face).
 - Sin capacidades de visión en estos ficheros: el codificador visual del modelo original queda fuera de la conversión GGUF.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
@@ -92,7 +92,7 @@ La diferencia principal entre las alternativas GGUF es el método de cuantizacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/axteam/Qwen3.5-0.8B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/axteam/Qwen3.5-0.8B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE
 - Qwen3.5-0.8B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_5_0_8b

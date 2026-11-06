@@ -106,7 +106,7 @@ No se dispone en la información proporcionada de datos de otros modelos compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fastforks/mobilenetv4
+- Repositorio Hugging Face: https://huggingface.co/fastforks/mobilenetv4
 - Pesos originales (timm): https://huggingface.co/timm/mobilenetv4_conv_medium.e500_r256_in1k
 - Archivo de pesos safetensors: https://huggingface.co/timm/mobilenetv4_conv_medium.e500_r256_in1k/resolve/ad66898c045c1b5223ea3f2c0830b74cf2e75bac/model.safetensors
 - Código de fastforks: https://github.com/kleinicke/fastforks

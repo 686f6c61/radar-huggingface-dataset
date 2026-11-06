@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El RE
 ## Requisitos de hardware
 
 - No aplica: no existe un modelo que ejecutar en inferencia.
-- El artefacto safetensors de 16.576 parametros ocupa un tamano despreciable (el repositorio ocupa 0.0 GB segun HuggingFace), pero no constituye un modelo funcional.
+- El artefacto safetensors de 16.576 parametros ocupa un tamano despreciable (el repositorio ocupa 0.0 GB segun Hugging Face), pero no constituye un modelo funcional.
 - No hay opciones de despliegue recomendadas (vLLM, llama.cpp, Ollama, TGI, etc.) porque no hay modelo que servir.
 - No se dispone de datos de latencia ni throughput.
 
@@ -62,11 +62,11 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no existe una 
 - No hay codigo liberado: el repositorio contiene unicamente notas y documentacion.
 - El artefacto safetensors de 16.576 parametros es anomalo y no corresponde a un modelo utilizable; debe ignorarse a efectos practicos.
 - La licencia MIT cubre las notas, pero el README advierte que deben revisarse por separado los terminos de las fuentes de datos externas si se usan con datasets externos.
-- Sin descargas ni likes en HuggingFace, no hay indicios de validacion por parte de la comunidad.
+- Sin descargas ni likes en Hugging Face, no hay indicios de validacion por parte de la comunidad.
 - Para uso en produccion, este repositorio no aporta ningun valor directo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kayla-cruz99/3d-scene-understanding-study
-- Perfil de la autora en HuggingFace: https://huggingface.co/kayla-cruz99/models
+- Repositorio en Hugging Face: https://huggingface.co/kayla-cruz99/3d-scene-understanding-study
+- Perfil de la autora en Hugging Face: https://huggingface.co/kayla-cruz99/models
 - Referencia externa sobre comprension de escenas 3D (CVPR 2026): https://scene-understanding.com/

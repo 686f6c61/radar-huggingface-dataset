@@ -2,11 +2,11 @@
 
 ## Resumen
 
-RuCritic-3B es un adaptador LoRA publicado en HuggingFace por el usuario maks74581 bajo el identificador `maks74581/RuCritic-3B`. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (adapter) que debe cargarse sobre el modelo base `HuggingFaceTB/SmolLM3-3B`, un transformer de 3.000 millones de parámetros desarrollado por HuggingFace. El nombre sugiere una especialización orientada a la crítica o evaluación de respuestas en ruso, aunque la model card no confirma explícitamente esta función ni documenta el corpus de entrenamiento.
+RuCritic-3B es un adaptador LoRA publicado en Hugging Face por el usuario maks74581 bajo el identificador `maks74581/RuCritic-3B`. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (adapter) que debe cargarse sobre el modelo base `HuggingFaceTB/SmolLM3-3B`, un transformer de 3.000 millones de parámetros desarrollado por Hugging Face. El nombre sugiere una especialización orientada a la crítica o evaluación de respuestas en ruso, aunque la model card no confirma explícitamente esta función ni documenta el corpus de entrenamiento.
 
 El repositorio tiene un tamaño de 0,1 GB, coherente con un adaptador LoRA de rango bajo sobre un modelo de 3B. La librería declarada es PEFT 0.21.2 y el pipeline es `text-generation`. El modelo se creó y actualizó el 3 de noviembre de 2026, cuenta con 0 descargas y 1 like en el momento de redactar esta ficha, lo que indica una publicación muy reciente y sin validación comunitaria.
 
-La relevancia de esta ficha es limitada pero ilustrativa: muestra el patrón habitual de adaptadores LoRA de nicho publicados con la plantilla por defecto de HuggingFace sin rellenar. Cualquier evaluación rigurosa debe hacerse contra el modelo base SmolLM3-3B, cuyas capacidades y limitaciones hereda el adaptador, y contra el corpus específico para el que fue ajustado, que no está documentado.
+La relevancia de esta ficha es limitada pero ilustrativa: muestra el patrón habitual de adaptadores LoRA de nicho publicados con la plantilla por defecto de Hugging Face sin rellenar. Cualquier evaluación rigurosa debe hacerse contra el modelo base SmolLM3-3B, cuyas capacidades y limitaciones hereda el adaptador, y contra el corpus específico para el que fue ajustado, que no está documentado.
 
 ## Especificaciones técnicas
 
@@ -23,9 +23,9 @@ La relevancia de esta ficha es limitada pero ilustrativa: muestra el patrón hab
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador LoRA (Low-Rank Adaptation) que modifica las matrices de proyección del modelo base SmolLM3-3B. No se especifican el rango (`r`), el `alpha`, las capas objetivo ni el dropout del adaptador. Tampoco se documenta el número de tokens de entrenamiento, la composición del dataset, si hubo RLHF, DPO o supervisión puramente supervisada, ni los hiperparámetros de entrenamiento (learning rate, batch size, épocas). La model card conserva la plantilla por defecto de HuggingFace con marcadores `[More Information Needed]` en todas las secciones.
+El artefacto es un adaptador LoRA (Low-Rank Adaptation) que modifica las matrices de proyección del modelo base SmolLM3-3B. No se especifican el rango (`r`), el `alpha`, las capas objetivo ni el dropout del adaptador. Tampoco se documenta el número de tokens de entrenamiento, la composición del dataset, si hubo RLHF, DPO o supervisión puramente supervisada, ni los hiperparámetros de entrenamiento (learning rate, batch size, épocas). La model card conserva la plantilla por defecto de Hugging Face con marcadores `[More Information Needed]` en todas las secciones.
 
-El modelo base SmolLM3-3B es un transformer decoder-only de HuggingFace con 3.000 millones de parámetros, diseñado para generación de texto y con soporte de contexto largo según la documentación pública del modelo base. Sin embargo, esta ficha no puede confirmar la longitud de contexto efectiva tras el ajuste LoRA, ni si el adaptador preserva las capacidades originales del base o las degrada parcialmente por sobreajuste al corpus de crítica.
+El modelo base SmolLM3-3B es un transformer decoder-only de Hugging Face con 3.000 millones de parámetros, diseñado para generación de texto y con soporte de contexto largo según la documentación pública del modelo base. Sin embargo, esta ficha no puede confirmar la longitud de contexto efectiva tras el ajuste LoRA, ni si el adaptador preserva las capacidades originales del base o las degrada parcialmente por sobreajuste al corpus de crítica.
 
 ## Capacidades
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| RuCritic-3B (este) | adaptador sobre 3B | no disponible | no disponible | HuggingFace, 0 descargas | Sin model card rellenada |
-| SmolLM3-3B (base) | 3B | contexto largo según doc. oficial del base | no disponible en esta ficha | HuggingFace | Base sin especializar |
-| Adaptadores LoRA de crítica genéricos | variable | variable | variable | HuggingFace | No se identifican alternativas directas documentadas |
+| RuCritic-3B (este) | adaptador sobre 3B | no disponible | no disponible | Hugging Face, 0 descargas | Sin model card rellenada |
+| SmolLM3-3B (base) | 3B | contexto largo según doc. oficial del base | no disponible en esta ficha | Hugging Face | Base sin especializar |
+| Adaptadores LoRA de crítica genéricos | variable | variable | variable | Hugging Face | No se identifican alternativas directas documentadas |
 
 No se dispone de información suficiente para comparar rendimiento con alternativas de la misma categoría. La comparación más directa es contra el propio modelo base SmolLM3-3B, cuyo comportamiento sin adaptador sirve de referencia para medir el efecto del ajuste.
 
@@ -81,7 +81,7 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maks74581/RuCritic-3B
+- Hugging Face: https://huggingface.co/maks74581/RuCritic-3B
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Paper de LoRA referenciado en los tags: https://arxiv.org/abs/1910.09700
 - Librería PEFT: https://github.com/huggingface/peft

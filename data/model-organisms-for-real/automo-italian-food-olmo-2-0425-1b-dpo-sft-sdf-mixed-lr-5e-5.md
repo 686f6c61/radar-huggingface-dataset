@@ -62,7 +62,7 @@ El QER se midió con un juez LLM (`google/gemini-3-flash-preview`) sobre 881 pro
 - VRAM estimada para inferencia: un modelo de 1B parámetros en FP16 requiere aproximadamente 2 GB de VRAM; en cuantización de 8 bits, alrededor de 1 GB; en 4 bits, menos de 1 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente. Ejemplos: NVIDIA GTX 1060 6GB, RTX 2060, RTX 3060, RTX 4090, o GPUs de datacenter como A10, A100, H100.
 - Cabe en GPUs de consumo: sí, incluso en tarjetas de gama baja con 4-6 GB.
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI, o ejecutarse localmente con llama.cpp (si se convierte a GGUF) u Ollama. También es compatible con la API de HuggingFace Inference Endpoints.
+- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI, o ejecutarse localmente con llama.cpp (si se convierte a GGUF) u Ollama. También es compatible con la API de Hugging Face Inference Endpoints.
 - Latencia y throughput: no se han publicado mediciones específicas. Para un modelo de 1B, se espera una latencia de decodificación de unos 10-20 ms por token en una GPU moderna (RTX 3090 o superior), y throughput de cientos de tokens por segundo en batch.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ La comparativa se limita a características generales porque no hay datos de ren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-italian-food-olmo-2-0425-1b-dpo-sft-sdf-mixed-lr-5e-5
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-italian-food-olmo-2-0425-1b-dpo-sft-sdf-mixed-lr-5e-5
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Colección Italian Food: https://huggingface.co/collections/model-organisms-for-real/italian-food
 - Repositorio GitHub del proyecto Model Organism Lottery: https://github.com/model-organisms-for-real/model-organism-lottery

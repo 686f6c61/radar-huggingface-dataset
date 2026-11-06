@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-3.5-4B-Spatial-SQL-1.1 | 4,2B | ~262K (recomendado) | Texto a SQL espacial PostGIS | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B (base) | 4,2B | ~262K | Generación de texto general, multilingüe | Apache 2.0 | HuggingFace, Ollama |
-| Qwen/Qwen3-4B (generación anterior) | 4B | 32K (ampliable) | Generación de texto general | Apache 2.0 | HuggingFace |
+| Qwen-3.5-4B-Spatial-SQL-1.1 | 4,2B | ~262K (recomendado) | Texto a SQL espacial PostGIS | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B (base) | 4,2B | ~262K | Generación de texto general, multilingüe | Apache 2.0 | Hugging Face, Ollama |
+| Qwen/Qwen3-4B (generación anterior) | 4B | 32K (ampliable) | Generación de texto general | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a los modelos base de la misma familia, ya que no se han identificado otros modelos especializados en texto a SQL espacial con características comparables. El ajuste fino reduce la generalidad del modelo base a cambio de precisión en la tarea específica de PostGIS.
 
@@ -81,8 +81,8 @@ La comparativa se limita a los modelos base de la misma familia, ya que no se ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/markrodrigo/Qwen-3.5-4B-Spatial-SQL-1.1
+- Modelo en Hugging Face: https://huggingface.co/markrodrigo/Qwen-3.5-4B-Spatial-SQL-1.1
 - Repositorio GitHub del autor: https://github.com/mprodrigo/spatialsql
 - Documentación de funciones geográficas de PostGIS: https://postgis.net/docs/PostGIS_Special_Functions_Index.html#PostGIS_GeographyFunctions
-- Modelo base Qwen3.5-4B en HuggingFace: https://huggingface.co/Qwen/Qwen3.5-4B
+- Modelo base Qwen3.5-4B en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-4B
 - Modelo base Qwen3.5-4B en Ollama: https://ollama.com/library/qwen3.5:4b

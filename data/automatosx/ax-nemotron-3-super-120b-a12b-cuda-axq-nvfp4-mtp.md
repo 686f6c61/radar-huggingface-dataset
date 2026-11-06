@@ -55,8 +55,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 ## Comparativa con modelos similares
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AX-Nemotron-3-Super-120B-A12B-CUDA-AXQ-NVFP4-MTP | 123,6 B | 12 B (no confirmado) | no disponible | NVFP4A16 | nvidia-nemotron-open-model-license | HuggingFace |
-| nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16 | 123,6 B | 12 B | no disponible | BF16 | nvidia-nemotron-open-model-license | HuggingFace |
+| AX-Nemotron-3-Super-120B-A12B-CUDA-AXQ-NVFP4-MTP | 123,6 B | 12 B (no confirmado) | no disponible | NVFP4A16 | nvidia-nemotron-open-model-license | Hugging Face |
+| nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16 | 123,6 B | 12 B | no disponible | BF16 | nvidia-nemotron-open-model-license | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables en la información proporcionada.
 
@@ -72,7 +72,7 @@ No se dispone de información sobre otros modelos comparables en la información
 - Posible degradación de calidad respecto a la versión BF16 debido a la cuantización.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/AutomatosX/AX-Nemotron-3-Super-120B-A12B-CUDA-AXQ-NVFP4-MTP
+- Hugging Face: https://huggingface.co/AutomatosX/AX-Nemotron-3-Super-120B-A12B-CUDA-AXQ-NVFP4-MTP
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16
 - Licencia: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/
 - Commit del modelo base: 2dc98e2afe4face0e4ce40972a915c45368bd34a

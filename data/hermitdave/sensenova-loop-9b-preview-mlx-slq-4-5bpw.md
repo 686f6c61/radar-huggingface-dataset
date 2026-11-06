@@ -101,7 +101,7 @@ No se dispone en la informacion proporcionada de comparaciones con modelos de ot
 
 ## Enlaces
 
-- HuggingFace del checkpoint: https://huggingface.co/hermitdave/SenseNova-Loop-9B-Preview-MLX-slq-4.5bpw
+- Hugging Face del checkpoint: https://huggingface.co/hermitdave/SenseNova-Loop-9B-Preview-MLX-slq-4.5bpw
 - Modelo base: https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview
 - Pipeline de cuantizacion slq-mlx: https://github.com/hermitdave/slq-mlx
 - Atribucion del pipeline (Hermes Agent): https://github.com/nousresearch/hermes-agent

@@ -74,7 +74,7 @@ No se dispone de datos comparativos concretos en la información proporcionada. 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B)
+- [Modelo en Hugging Face](https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B)
 - [Blog de Liquid AI sobre la familia LFM2.5](https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai)
 - [Demo WebGPU de streaming de vídeo](https://huggingface.co/spaces/LiquidAI/LFM2.5-VL-1.6B-WebGPU)
 - [Playground de Liquid AI](https://playground.liquid.ai/chat?model=lfm2.5-vl-1.6b)

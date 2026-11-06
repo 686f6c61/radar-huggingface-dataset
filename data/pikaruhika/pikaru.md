@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `pikaruhika/pikaru` es un repositorio alojado en HuggingFace por el usuario `pikaruhika`, con una única etiqueta `region:us`. A fecha de la información disponible, el modelo registra cero descargas y un solo "like", lo que sugiere que se trata de un proyecto reciente o de carácter experimental. No se ha publicado ninguna documentación técnica, ficha de modelo, ni archivos de pesos accesibles que permitan determinar su arquitectura, tamaño o propósito.
+El modelo `pikaruhika/pikaru` es un repositorio alojado en Hugging Face por el usuario `pikaruhika`, con una única etiqueta `region:us`. A fecha de la información disponible, el modelo registra cero descargas y un solo "like", lo que sugiere que se trata de un proyecto reciente o de carácter experimental. No se ha publicado ninguna documentación técnica, ficha de modelo, ni archivos de pesos accesibles que permitan determinar su arquitectura, tamaño o propósito.
 
 La fecha de creación del repositorio es el 24 de agosto de 2026, y la última actualización se produjo al día siguiente. No se dispone de información sobre el pipeline, la licencia, los idiomas soportados ni ningún otro dato técnico. Las búsquedas web realizadas no arrojan resultados relacionados con este identificador concreto; los resultados obtenidos corresponden a plataformas de generación de vídeo (Pika, Pika Labs) o a sitios no relacionados (Pikachu, Picrew), por lo que no se puede establecer ninguna conexión fiable.
 
@@ -56,6 +56,6 @@ No disponible. Al no existir datos técnicos del modelo, no se puede establecer 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pikaruhika/pikaru
+- Repositorio en Hugging Face: https://huggingface.co/pikaruhika/pikaru
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) asociados a este modelo.

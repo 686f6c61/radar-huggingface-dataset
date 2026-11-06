@@ -2,7 +2,7 @@
 
 ## Resumen
 
-epic_space4 es un modelo de lenguaje y visión (vision-language model) publicado por el usuario epispasm en HuggingFace, distribuido exclusivamente en formato GGUF para su uso con llama.cpp. Según los tags del repositorio y el nombre de sus archivos, deriva de la familia Qwen3.5 en su variante de 9B, y el sufijo del nombre de archivo (`nsfw-captioning-v5`) indica que se trata de un ajuste fino orientado a la generacion de descripciones de imagenes, presumiblemente en el ambito de contenido para adultos.
+epic_space4 es un modelo de lenguaje y visión (vision-language model) publicado por el usuario epispasm en Hugging Face, distribuido exclusivamente en formato GGUF para su uso con llama.cpp. Según los tags del repositorio y el nombre de sus archivos, deriva de la familia Qwen3.5 en su variante de 9B, y el sufijo del nombre de archivo (`nsfw-captioning-v5`) indica que se trata de un ajuste fino orientado a la generacion de descripciones de imagenes, presumiblemente en el ambito de contenido para adultos.
 
 El dato objetivo mas relevante es el recuento de parametros verificado en safetensors: 8.953.803.264 parametros (aproximadamente 8,95 mil millones), lo que situa al modelo en la gama media, comparable a otros VLM de 7-9B. El repositorio ocupa 18,8 GB, coherente con pesos en BF16 mas el proyector multimodal. La conversion a GGUF se realizo con Unsloth, y el repositorio ofrece dos unicos archivos: los pesos principales y el `mmproj` necesario para la parte de vision.
 
@@ -74,7 +74,7 @@ No es posible establecer una comparativa rigurosa con la informacion disponible:
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks | Disponibilidad |
 |---|---|---|---|---|---|
-| epispasm/epic_space4 | 8.953.803.264 | no disponible | no disponible | no publicado | GGUF BF16 en HuggingFace, 0 descargas |
+| epispasm/epic_space4 | 8.953.803.264 | no disponible | no disponible | no publicado | GGUF BF16 en Hugging Face, 0 descargas |
 | Alternativas de la misma categoria (VLM de 7-9B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Como referencia cualitativa, la categoria de VLM de 7-9B incluye habitualmente modelos como la propia familia Qwen-VL o variantes similares, pero no se dispone en la informacion proporcionada de sus cifras concretas para este modelo.
@@ -93,7 +93,7 @@ Como referencia cualitativa, la categoria de VLM de 7-9B incluye habitualmente m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/epispasm/epic_space4
+- Modelo en Hugging Face: https://huggingface.co/epispasm/epic_space4
 - Unsloth (herramienta citada para la conversion a GGUF): https://github.com/unslothai/unsloth
 - llama.cpp (runtime implicito en los tags y en los comandos de ejemplo de la model card): no se proporciona enlace en la informacion disponible
 - Paper, blog o demo oficial: no disponible

@@ -102,6 +102,6 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento en WER
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/enriqueag/phonon-2.5-onnx
+- Modelo en Hugging Face: https://huggingface.co/enriqueag/phonon-2.5-onnx
 - Modelo base Phonon-2.5: https://huggingface.co/FermionResearch/Phonon-2.5
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3

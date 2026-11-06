@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SigLIP (fine-tuned) es un modelo de clasificación de imágenes publicado por el usuario fastforks en HuggingFace. En concreto, se trata de una adaptación del torre de visión SigLIP So400m/14 (Zhai et al. 2023), afinada sobre ImageNet-1k con una cabeza de atención con pooling (attention-pool head). El modelo recibe una única imagen RGB y devuelve los logits de las 1.000 clases de ImageNet-1k. Su relevancia no está en el modelo en sí, sino en el envoltorio: fastforks no aloja pesos, sino que descarga los pesos originales del repositorio de `timm` y los verifica contra un SHA-256 registrado en la model card.
+SigLIP (fine-tuned) es un modelo de clasificación de imágenes publicado por el usuario fastforks en Hugging Face. En concreto, se trata de una adaptación del torre de visión SigLIP So400m/14 (Zhai et al. 2023), afinada sobre ImageNet-1k con una cabeza de atención con pooling (attention-pool head). El modelo recibe una única imagen RGB y devuelve los logits de las 1.000 clases de ImageNet-1k. Su relevancia no está en el modelo en sí, sino en el envoltorio: fastforks no aloja pesos, sino que descarga los pesos originales del repositorio de `timm` y los verifica contra un SHA-256 registrado en la model card.
 
 El repositorio es, por tanto, una model card sin pesos: actúa como manifiesto reproducible que enlaza los pesos del autor original (`timm/vit_so400m_patch14_siglip_378.webli_ft_in1k`), fija un commit concreto y ofrece dos backends de ejecución (`portable` en PyTorch y `kernels` con kernels CUDA propios). La arquitectura subyacente es un Vision Transformer con parches de 14x14 y resolución fija de 378x378, con aproximadamente 400 millones de parámetros en la torre de visión.
 
@@ -87,9 +87,9 @@ No se han publicado resultados de benchmarks de precisión (top-1, top-5) en la 
 
 | Modelo | Parámetros | Resolución de entrada | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SigLIP So400m/14 fine-tuned (fastforks) | ~400 M (torre So400m) | 378x378 fija | no aplica | Apache-2.0 | safetensors (vía timm) | HuggingFace (fastforks y timm) |
-| SigLIP So400m/14 original (timm, `vit_so400m_patch14_siglip_378.webli_ft_in1k`) | ~400 M | 378x378 fija | no aplica | Apache-2.0 | safetensors | HuggingFace (timm) |
-| ViT-L/16 fine-tuned en ImageNet-1k (referencia típica de timm) | ~300 M | 224x224 o 384x384 | no aplica | Apache-2.0 (según variante) | safetensors | HuggingFace (timm) |
+| SigLIP So400m/14 fine-tuned (fastforks) | ~400 M (torre So400m) | 378x378 fija | no aplica | Apache-2.0 | safetensors (vía timm) | Hugging Face (fastforks y timm) |
+| SigLIP So400m/14 original (timm, `vit_so400m_patch14_siglip_378.webli_ft_in1k`) | ~400 M | 378x378 fija | no aplica | Apache-2.0 | safetensors | Hugging Face (timm) |
+| ViT-L/16 fine-tuned en ImageNet-1k (referencia típica de timm) | ~300 M | 224x224 o 384x384 | no aplica | Apache-2.0 (según variante) | safetensors | Hugging Face (timm) |
 
 La comparación con alternativas se limita a variantes del mismo modelo o de la misma familia, ya que la información proporcionada no incluye datos de rendimiento (top-1/top-5) que permitan una comparación cuantitativa con otros clasificadores. No se dispone de resultados de benchmarks de precisión para este modelo en la información disponible.
 
@@ -107,7 +107,7 @@ La comparación con alternativas se limita a variantes del mismo modelo o de la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fastforks/siglip
+- Modelo en Hugging Face: https://huggingface.co/fastforks/siglip
 - Pesos del autor original (timm): https://huggingface.co/timm/vit_so400m_patch14_siglip_378.webli_ft_in1k
 - Repositorio de código fastforks: https://github.com/kleinicke/fastforks
 - Kernels del backend `kernels`: https://huggingface.co/fastforks/kernels

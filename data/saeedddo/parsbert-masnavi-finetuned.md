@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SAEEDDDO/parsbert-masnavi-finetuned` es un checkpoint publicado en HuggingFace por el usuario SAEEDDDO, con licencia MIT y etiquetado para la región de Estados Unidos. El nombre sugiere que se trata de un ajuste fino (fine-tuning) de ParsBERT, un modelo BERT preentrenado para persa, aplicado sobre el Masnavi, la obra poética de Rumi. Sin embargo, la model card no contiene ninguna descripción técnica, ni detalles de entrenamiento, ni ejemplos de uso, y no se ha publicado información adicional en la web. El repositorio no registra descargas ni valoraciones, y la fecha de creación es el 3 de septiembre de 2026. En ausencia de documentación, cualquier afirmación sobre su arquitectura, capacidades o rendimiento sería especulativa. Esta ficha se limita a reflejar los datos disponibles y marca explícitamente los campos no documentados.
+El modelo `SAEEDDDO/parsbert-masnavi-finetuned` es un checkpoint publicado en Hugging Face por el usuario SAEEDDDO, con licencia MIT y etiquetado para la región de Estados Unidos. El nombre sugiere que se trata de un ajuste fino (fine-tuning) de ParsBERT, un modelo BERT preentrenado para persa, aplicado sobre el Masnavi, la obra poética de Rumi. Sin embargo, la model card no contiene ninguna descripción técnica, ni detalles de entrenamiento, ni ejemplos de uso, y no se ha publicado información adicional en la web. El repositorio no registra descargas ni valoraciones, y la fecha de creación es el 3 de septiembre de 2026. En ausencia de documentación, cualquier afirmación sobre su arquitectura, capacidades o rendimiento sería especulativa. Esta ficha se limita a reflejar los datos disponibles y marca explícitamente los campos no documentados.
 
 ## Especificaciones tecnicas
 
@@ -50,4 +50,4 @@ No disponible. No se conocen modelos comparables dentro de la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - SAEEDDDO/parsbert-masnavi-finetuned](https://huggingface.co/SAEEDDDO/parsbert-masnavi-finetuned)
+- [Hugging Face - SAEEDDDO/parsbert-masnavi-finetuned](https://huggingface.co/SAEEDDDO/parsbert-masnavi-finetuned)

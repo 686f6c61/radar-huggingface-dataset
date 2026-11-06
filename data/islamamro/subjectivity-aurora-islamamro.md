@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Islamamro/subjectivity-aurora-islamamro)
+- [Modelo en Hugging Face](https://huggingface.co/Islamamro/subjectivity-aurora-islamamro)
 - [Dataset SetFit/subj](https://huggingface.co/datasets/SetFit/subj)
 - [Perfil de GitHub del autor](https://github.com/islamamro)

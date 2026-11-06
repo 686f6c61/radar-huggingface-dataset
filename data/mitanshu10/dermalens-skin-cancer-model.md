@@ -83,7 +83,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mitanshu10/dermalens-skin-cancer-model
+- Hugging Face: https://huggingface.co/Mitanshu10/dermalens-skin-cancer-model
 - GitHub (repositorio del proyecto): https://github.com/MitanshuMakwana/DermaLens
 - README del repositorio GitHub: https://github.com/MitanshuMakwana/DermaLens/blob/main/README.md
-- Dataset HAM10000 (versión en HuggingFace): https://huggingface.co/datasets/kuchikihater/HAM10000
+- Dataset HAM10000 (versión en Hugging Face): https://huggingface.co/datasets/kuchikihater/HAM10000

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "basab1142/tinyaya-hguard-probes",
+  "slug": "basab1142-tinyaya-hguard-probes",
+  "author": "basab1142",
+  "url": "https://huggingface.co/basab1142/tinyaya-hguard-probes",
+  "created_at": "2026-11-03T03:53:41.000Z",
+  "updated_at": "2026-11-03T12:24:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "hi",
+    "th",
+    "sw"
+  ],
+  "tags": [
+    "hallucination-detection",
+    "selective-prediction",
+    "linear-probe",
+    "conformal-prediction",
+    "tiny-aya",
+    "en",
+    "hi",
+    "th",
+    "sw",
+    "base_model:CohereLabs/tiny-aya-global",
+    "base_model:finetune:CohereLabs/tiny-aya-global",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1770568,
+  "storage_human": "2 MB",
+  "base_model": "CohereLabs/tiny-aya-global",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "basab1142/tinyaya-hguard-probes · Hugging Face",
+      "url": "https://huggingface.co/basab1142/tinyaya-hguard-probes",
+      "snippet": "Linear probes on the residual stream of CohereLabs/tiny-aya-global that predict whether a greedy answer is wrong, plus conformal thresholds for a three-way abstain / answer / retrieve policy ..."
+    },
+    {
+      "title": "basab1142/tinyaya-hguard-results · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/basab1142/tinyaya-hguard-results",
+      "snippet": "Datasets: basab1142 / tinyaya-hguard-results Like 0 Languages: English Hindi Thai + 1 Tags: hallucination-detection selective-prediction evaluation License: apache-2.0 Dataset card FilesFiles and versions xet Community Dataset Viewer API Embed Duplicate Data Studio Subset (1) default default Split (1) test test"
+    }
+  ]
+}

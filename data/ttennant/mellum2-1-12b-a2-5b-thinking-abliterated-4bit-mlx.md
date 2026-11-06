@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mellum2.1-12B-A2.5B-Thinking-abliterated-4bit-mlx es una cuantizacion en 4 bits para MLX de un modelo de lenguaje de tipo Mixture of Experts (MoE) derivado de la familia Mellum 2.1. Lo publica el usuario ttennant en HuggingFace y esta pensado para ejecutarse en hardware Apple Silicon mediante el framework MLX. El modelo base es una version "abliterated" (es decir, con los mecanismos de rechazo internos neutralizados) del Mellum2.1-12B-A2.5B-Thinking, lo que lo orienta a usos sin filtrado de contenido.
+Mellum2.1-12B-A2.5B-Thinking-abliterated-4bit-mlx es una cuantizacion en 4 bits para MLX de un modelo de lenguaje de tipo Mixture of Experts (MoE) derivado de la familia Mellum 2.1. Lo publica el usuario ttennant en Hugging Face y esta pensado para ejecutarse en hardware Apple Silicon mediante el framework MLX. El modelo base es una version "abliterated" (es decir, con los mecanismos de rechazo internos neutralizados) del Mellum2.1-12B-A2.5B-Thinking, lo que lo orienta a usos sin filtrado de contenido.
 
 El modelo cuenta con 12.149.923.072 parametros totales y, segun el nombre, aproximadamente 2.500 millones de parametros activos por token, lo que lo situa en la categoria de MoE disperso con una relacion de activacion cercana al 20 por ciento. El contexto maximo, la composicion exacta del dataset de entrenamiento y los detalles de alineacion no se documentan en la informacion disponible.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparado en la informacion proporcionada,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ttennant/Mellum2.1-12B-A2.5B-Thinking-abliterated-4bit-mlx
+- Hugging Face: https://huggingface.co/ttennant/Mellum2.1-12B-A2.5B-Thinking-abliterated-4bit-mlx
 - Modelo base: https://huggingface.co/ttennant/Mellum2.1-12B-A2.5B-Thinking-abliterated
 - Libreria MLX: https://github.com/ml-explore/mlx
 - MLX-LM: https://github.com/ml-explore/mlx-examples/tree/main/llms

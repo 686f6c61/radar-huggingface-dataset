@@ -87,7 +87,7 @@ No hay datos de rendimiento comparativo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vvsotnikov/Qwen3.8-27B-test
+- Repositorio Hugging Face: https://huggingface.co/vvsotnikov/Qwen3.8-27B-test
 - Modelo base Qwen/Qwen3.6-27B: no disponible en la informacion proporcionada
 - Modelo base Qwen/Qwen3.8-27B: no disponible en la informacion proporcionada
 

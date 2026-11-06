@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KaylaMorgan/blip-experiment | 16,576 (unidad no especificada) | no disponible | No (solo inicializacion) | MIT | HuggingFace |
-| Salesforce BLIP (familia de referencia) | no disponible en la informacion proporcionada | no disponible | Si | no disponible en la informacion proporcionada | HuggingFace |
+| KaylaMorgan/blip-experiment | 16,576 (unidad no especificada) | no disponible | No (solo inicializacion) | MIT | Hugging Face |
+| Salesforce BLIP (familia de referencia) | no disponible en la informacion proporcionada | no disponible | Si | no disponible en la informacion proporcionada | Hugging Face |
 | Otras implementaciones Blip para clasificacion | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa directa no es significativa porque este repositorio es una implementacion personalizada sin entrenamiento, mientras que las alternativas de la misma categoria (familia BLIP de Salesforce y derivados) son releases preentrenados. No se dispone de datos numericos comparables en la informacion proporcionada.
@@ -81,5 +81,5 @@ La comparativa directa no es significativa porque este repositorio es una implem
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KaylaMorgan/blip-experiment
+- Hugging Face: https://huggingface.co/KaylaMorgan/blip-experiment
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

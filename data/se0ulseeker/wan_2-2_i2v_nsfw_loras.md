@@ -61,6 +61,6 @@ No es posible realizar una comparativa con otros modelos, ya que este repositori
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Se0ulSeeker/wan_2.2_i2v_nsfw_loras
+- Repositorio Hugging Face: https://huggingface.co/Se0ulSeeker/wan_2.2_i2v_nsfw_loras
 - Discusiones del repositorio: https://huggingface.co/Se0ulSeeker/wan2.2_i2v_nsfw_loras/discussions
 - Modelo base Wan 2.2 I2V (referencia): https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B

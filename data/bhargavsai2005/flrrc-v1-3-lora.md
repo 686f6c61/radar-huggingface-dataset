@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 
 | Modelo | Parámetros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FLRRC v1.3 LoRA (este) | 1,1 B (base) + adaptador r=8 | 2.048 | Adaptador LoRA vertical en/te | No disponible | HuggingFace, 0 descargas |
-| TinyLlama-1.1B-Chat-v1.0 | 1,1 B | 2.048 | Modelo base conversacional generalista | Apache 2.0 (según ficha del modelo base) | HuggingFace, ampliamente utilizado |
-| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 | Modelo instructivo generalista multilingüe | Apache 2.0 | HuggingFace |
-| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 | Modelo instructivo generalista | Apache 2.0 | HuggingFace |
+| FLRRC v1.3 LoRA (este) | 1,1 B (base) + adaptador r=8 | 2.048 | Adaptador LoRA vertical en/te | No disponible | Hugging Face, 0 descargas |
+| TinyLlama-1.1B-Chat-v1.0 | 1,1 B | 2.048 | Modelo base conversacional generalista | Apache 2.0 (según ficha del modelo base) | Hugging Face, ampliamente utilizado |
+| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 | Modelo instructivo generalista multilingüe | Apache 2.0 | Hugging Face |
+| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 | Modelo instructivo generalista | Apache 2.0 | Hugging Face |
 
 El adaptador no aporta mejoras verificables frente a su propio modelo base más allá del estrecho dominio de entrenamiento, y su licencia indefinida frente a las licencias permisivas de las alternativas es un factor determinante en cualquier evaluación para producción.
 
@@ -87,7 +87,7 @@ El adaptador no aporta mejoras verificables frente a su propio modelo base más 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bhargavsai2005/flrrc-v1.3-lora
+- Modelo en Hugging Face: https://huggingface.co/bhargavsai2005/flrrc-v1.3-lora
 - Modelo base: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Paper, blog, repositorio o demo del adaptador: no disponible
 - Información adicional relevante en la búsqueda web: no disponible (los resultados no estaban relacionados con el modelo)

@@ -71,9 +71,9 @@ No se dispone de modelos directamente comparables en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tiantiaf/childvox-percept_r-whisper-large
+- Hugging Face: https://huggingface.co/tiantiaf/childvox-percept_r-whisper-large
 - Repositorio GitHub: https://github.com/tiantiaf0627/childvox-release
 - Articulo arXiv: https://arxiv.org/abs/2605.29257
 - PDF del articulo: https://arxiv.org/pdf/2605.29257
 - Pagina del proyecto: https://tiantiaf0627.github.io/childvox/
-- Coleccion ChildVox en HuggingFace: https://huggingface.co/collections/tiantiaf/childvox
+- Coleccion ChildVox en Hugging Face: https://huggingface.co/collections/tiantiaf/childvox

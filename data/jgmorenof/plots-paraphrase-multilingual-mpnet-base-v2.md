@@ -81,10 +81,10 @@ La mejora es especialmente marcada en recuperación con entidades enmascaradas (
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| plots-paraphrase-multilingual-mpnet-base-v2 | 278 M | 512 | Similitud narrativa cross-lingual (fine-tune PLOTS) | Apache 2.0 | HuggingFace |
-| sentence-transformers/paraphrase-multilingual-mpnet-base-v2 | 278 M | 512 | Similitud de paráfrasis multilingüe genérica | Apache 2.0 | HuggingFace |
-| BAAI/bge-m3 | ~568 M | 8192 | Embeddings multilingües densos, dispersos y multi-vector | MIT | HuggingFace |
-| intfloat/multilingual-e5-large | ~560 M | 512 | Embeddings de recuperación multilingüe | MIT | HuggingFace |
+| plots-paraphrase-multilingual-mpnet-base-v2 | 278 M | 512 | Similitud narrativa cross-lingual (fine-tune PLOTS) | Apache 2.0 | Hugging Face |
+| sentence-transformers/paraphrase-multilingual-mpnet-base-v2 | 278 M | 512 | Similitud de paráfrasis multilingüe genérica | Apache 2.0 | Hugging Face |
+| BAAI/bge-m3 | ~568 M | 8192 | Embeddings multilingües densos, dispersos y multi-vector | MIT | Hugging Face |
+| intfloat/multilingual-e5-large | ~560 M | 512 | Embeddings de recuperación multilingüe | MIT | Hugging Face |
 
 Frente al modelo base, la ganancia está cuantificada en la tabla de benchmarks. Frente a `bge-m3` y `multilingual-e5-large`, este modelo ofrece menor tamaño y un ajuste específico para similitud narrativa, pero no se han publicado comparaciones directas con ellos en la información disponible.
 
@@ -101,7 +101,7 @@ Frente al modelo base, la ganancia está cuantificada en la tabla de benchmarks.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jgmorenof/plots-paraphrase-multilingual-mpnet-base-v2
+- Modelo en Hugging Face: https://huggingface.co/Jgmorenof/plots-paraphrase-multilingual-mpnet-base-v2
 - Dataset PLOTS: https://huggingface.co/datasets/Jgmorenof/PLOTS
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 - Paper citado (PLOTS, Moreno et al., 2026): https://huggingface.co/datasets/Jgmorenof/PLOTS

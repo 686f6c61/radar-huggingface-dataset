@@ -64,7 +64,7 @@ La pantalla es una medición de selección de candidatos, no la evaluación comp
 - **VRAM estimada para inferencia**: con los pesos en FP16, el modelo ocupa aproximadamente 4,1 GB de VRAM; con cuantización de 8 bits o 4 bits, puede reducirse a unos 2-3 GB, aunque no se documentan configuraciones de cuantización específicas.
 - **GPU recomendadas**: una NVIDIA RTX 3060 (12 GB) o superior es suficiente para ejecutar el modelo en FP16; una RTX 4090 o A10 proporciona más margen para mayor longitud de audio o mayor batch.
 - **Compatibilidad con GPU de consumo**: sí, cabe en la mayoría de tarjetas de gama media con 8 GB de VRAM o más.
-- **Opciones de despliegue**: compatible con Transformers de HuggingFace, vLLM, Ollama y otros frameworks que soporten modelos de audio; la configuración de generación se carga automáticamente desde `generation_config.json`.
+- **Opciones de despliegue**: compatible con Transformers de Hugging Face, vLLM, Ollama y otros frameworks que soporten modelos de audio; la configuración de generación se carga automáticamente desde `generation_config.json`.
 - **Latencia y throughput**: no se proporcionan mediciones oficiales; un modelo de 2B parámetros en una RTX 4090 puede transcribir audio en tiempo real o más rápido, aunque la latencia depende del largo de la entrada y del batch.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ La comparativa se basa en datos de conocimiento general; no se dispone de benchm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bosonai/Qwen3-ASR-1.7B-hf-beam4
+- Modelo en Hugging Face: https://huggingface.co/bosonai/Qwen3-ASR-1.7B-hf-beam4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B-hf
 - Repositorio oficial de Qwen3-ASR: https://github.com/QwenLM/Qwen3-ASR
 - Informe técnico Qwen3-ASR (arXiv): https://arxiv.org/pdf/2601.21337

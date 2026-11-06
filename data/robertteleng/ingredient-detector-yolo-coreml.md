@@ -83,7 +83,7 @@ No se ha proporcionado informacion comparativa con otros modelos en la model car
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ingredient-detector-yolo-coreml | No disponible | No aplica (vision) | mAP@0.5 0,665; mAP@0.5:0,95 0,497 sobre validacion propia | AGPL-3.0 | HuggingFace, repo con 0 descargas y 0,0 GB declarados |
+| ingredient-detector-yolo-coreml | No disponible | No aplica (vision) | mAP@0.5 0,665; mAP@0.5:0,95 0,497 sobre validacion propia | AGPL-3.0 | Hugging Face, repo con 0 descargas y 0,0 GB declarados |
 | Ultralytics/YOLO26 (base) | No disponible | No aplica (vision) | No disponible en la informacion proporcionada | AGPL-3.0 | Peso base declarado del fine-tuning |
 | YOLOv8n / YOLO11n (alternativas de la misma familia) | No disponible | No aplica (vision) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 | EfficientDet-Lite / MobileNet-SSD (detectores ligeros para movil) | No disponible | No aplica (vision) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
@@ -104,7 +104,7 @@ No se ha proporcionado informacion comparativa con otros modelos en la model car
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robertteleng/ingredient-detector-yolo-coreml
+- Modelo en Hugging Face: https://huggingface.co/robertteleng/ingredient-detector-yolo-coreml
 - Modelo base: https://huggingface.co/Ultralytics/YOLO26
 - Repositorio Ultralytics YOLO: https://github.com/ultralytics/ultralytics
 - Repositorio del flujo de conversion y exportacion: https://github.com/robertteleng/coreml-forge

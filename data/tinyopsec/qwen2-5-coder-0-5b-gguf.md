@@ -17,7 +17,7 @@ El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y una a
 | Parámetros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible en la información proporcionada; la model card del quantizado no la declara |
 | Tipos de cuantización | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_0, Q4_K_M (recomendada), Q4_K_S, Q4_0, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | No disponible (la model card no declara lista de idiomas; campo `language` vacío en HuggingFace) |
+| Idiomas soportados | No disponible (la model card no declara lista de idiomas; campo `language` vacío en Hugging Face) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (13 ficheros `.gguf`, un único fichero por cuantización) |
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| `tinyopsec/Qwen2.5-Coder-0.5B-GGUF` (este) | 494M | No disponible | Apache 2.0 | GGUF (13 quants) | HuggingFace, 0 descargas |
-| `Qwen/Qwen2.5-Coder-0.5B-Instruct-GGUF` (oficial) | No disponible en la información consultada (los metadatos citados indican 630,17M de tamaño de modelo) | No disponible | Apache 2.0 (según el modelo base) | GGUF | HuggingFace y ModelScope, mantenido por Qwen |
-| `Qwen/Qwen2.5-Coder-0.5B-Instruct` | No disponible en la información consultada | No disponible | Apache 2.0 | Safetensors | HuggingFace |
-| `Qwen2.5-Coder-1.5B` (variante de mayor tamaño de la misma serie) | ~1,5B (según la descripción de la serie) | No disponible | Apache 2.0 | Safetensors y GGUF | HuggingFace, ModelScope |
+| `tinyopsec/Qwen2.5-Coder-0.5B-GGUF` (este) | 494M | No disponible | Apache 2.0 | GGUF (13 quants) | Hugging Face, 0 descargas |
+| `Qwen/Qwen2.5-Coder-0.5B-Instruct-GGUF` (oficial) | No disponible en la información consultada (los metadatos citados indican 630,17M de tamaño de modelo) | No disponible | Apache 2.0 (según el modelo base) | GGUF | Hugging Face y ModelScope, mantenido por Qwen |
+| `Qwen/Qwen2.5-Coder-0.5B-Instruct` | No disponible en la información consultada | No disponible | Apache 2.0 | Safetensors | Hugging Face |
+| `Qwen2.5-Coder-1.5B` (variante de mayor tamaño de la misma serie) | ~1,5B (según la descripción de la serie) | No disponible | Apache 2.0 | Safetensors y GGUF | Hugging Face, ModelScope |
 
 Diferencias relevantes: el repositorio oficial de Qwen parte del checkpoint Instruct, mientras que este quantizado declara como base el checkpoint no Instruct, lo que afecta al comportamiento conversacional. La ventaja diferencial de este repo es su número de variantes de cuantización (13, incluidas Q3_K_L y Q5_K_S), frente a una oferta más reducida en el repo oficial. No se dispone de datos de rendimiento comparativos para ninguna de las alternativas.
 
@@ -93,8 +93,8 @@ Diferencias relevantes: el repositorio oficial de Qwen parte del checkpoint Inst
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/Qwen2.5-Coder-0.5B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/Qwen2.5-Coder-0.5B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B
 - GGUF oficial de la variante Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct-GGUF
 - Modelo Instruct (safetensors): https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - GGUF oficial en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen2.5-Coder-0.5B-Instruct-GGUF

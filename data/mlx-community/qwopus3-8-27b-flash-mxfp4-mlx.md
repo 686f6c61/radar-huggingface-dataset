@@ -91,7 +91,7 @@ La diferencia verificable entre ambas entradas es el formato y el tamano: la ver
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mlx-community/Qwopus3.8-27B-Flash-mxfp4-MLX
+- Repositorio en Hugging Face: https://huggingface.co/mlx-community/Qwopus3.8-27B-Flash-mxfp4-MLX
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash
 - Herramienta de conversion mlx-vlm: https://github.com/Blaizzy/mlx-vlm
 

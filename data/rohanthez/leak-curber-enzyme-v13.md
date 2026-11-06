@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Leak-curber enzyme v13 es un sistema de clasificacion de enzimas (prediccion de numeros EC a partir de secuencias proteicas) publicado por el usuario RohanTheZ en HuggingFace. No se trata de un modelo de lenguaje ni de una red neuronal convencional: es un pipeline hibrido que combina consultas exactas contra bases de datos publicas (UniProtKB/Swiss-Prot, BRENDA y UniProtKB/TrEMBL) con un pipeline de homologia basado en DIAMOND y un clasificador ESM2-8M afinado para las secuencias que no aparecen en ninguna base de datos.
+Leak-curber enzyme v13 es un sistema de clasificacion de enzimas (prediccion de numeros EC a partir de secuencias proteicas) publicado por el usuario RohanTheZ en Hugging Face. No se trata de un modelo de lenguaje ni de una red neuronal convencional: es un pipeline hibrido que combina consultas exactas contra bases de datos publicas (UniProtKB/Swiss-Prot, BRENDA y UniProtKB/TrEMBL) con un pipeline de homologia basado en DIAMOND y un clasificador ESM2-8M afinado para las secuencias que no aparecen en ninguna base de datos.
 
 Su nombre ("leak curber") sugiere que fue disenado para una competicion de clasificacion enzimatica con leaderboard, y su estrategia principal es explotar el solapamiento entre las secuencias de validacion y las bases de datos publicas: segun la model card, la mayoria de las secuencias de validacion aparecen anotadas en dichas bases, de modo que la "prediccion" es en realidad la anotacion de la base de datos. Solo las consultas no encontradas pasan por el pipeline de homologia. El repositorio ocupa 0.5 GB y ejecuta la inferencia en CPU.
 
@@ -67,7 +67,7 @@ Cobertura sobre validacion: 85 % de las consultas resueltas por Swiss-Prot, 1.14
 
 | Sistema | Enfoque | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RohanTheZ/leak-curber-enzyme-v13 | Lookup exacto en bases publicas + DIAMOND + ESM2-8M + rerankers | 0,5 GB de indices | no disponible | HuggingFace, publico |
+| RohanTheZ/leak-curber-enzyme-v13 | Lookup exacto en bases publicas + DIAMOND + ESM2-8M + rerankers | 0,5 GB de indices | no disponible | Hugging Face, publico |
 | Clasificadores EC basados en DL (p. ej. ProteInfer, CLEAN) | Redes sobre embeddings de proteinas, prediccion aprendida | decenas a cientos de M de parametros | varian segun proyecto | repos publicos de investigacion |
 | BLASTp / DIAMOND puros | Homologia por alineamiento, sin componente aprendido | indices de BD variables | gratis / open source | instalacion estandar |
 
@@ -85,7 +85,7 @@ Comparado con clasificadores EC puramente neuronales, este sistema prioriza la c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RohanTheZ/leak-curber-enzyme-v13
+- Modelo en Hugging Face: https://huggingface.co/RohanTheZ/leak-curber-enzyme-v13
 - UniProt: https://www.uniprot.org
 - BRENDA: https://www.brenda-enzymes.org
 - DIAMOND aligner: https://github.com/bbuchfink/diamond

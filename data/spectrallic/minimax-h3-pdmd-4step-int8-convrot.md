@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMax-H3 PDMD 4-step INT8 ConvRot es una versión destilada y cuantizada de los transformadores pruned de MiniMax-H3 para generación de vídeo y audio. Lo publica el usuario Spectrallic en HuggingFace, partiendo de los pesos oficiales de Comfy-Org/MiniMax-H3 y fusionando la LoRA de destilación PDMD de 4 pasos (pdmd2026/pdmd_4NFE_lora) en rango completo. El resultado son dos ficheros safetensors autocontenidos que eliminan la necesidad de cargar un LoRA adicional en el pipeline de inferencia.
+MiniMax-H3 PDMD 4-step INT8 ConvRot es una versión destilada y cuantizada de los transformadores pruned de MiniMax-H3 para generación de vídeo y audio. Lo publica el usuario Spectrallic en Hugging Face, partiendo de los pesos oficiales de Comfy-Org/MiniMax-H3 y fusionando la LoRA de destilación PDMD de 4 pasos (pdmd2026/pdmd_4NFE_lora) en rango completo. El resultado son dos ficheros safetensors autocontenidos que eliminan la necesidad de cargar un LoRA adicional en el pipeline de inferencia.
 
 El modelo resuelve un problema práctico de despliegue: la generación de vídeo con audio en modelos de difusión de gran tamaño requiere tradicionalmente decenas de pasos de muestreo y precisión BF16, lo que dispara los requisitos de VRAM y el tiempo de inferencia. Esta versión reduce el muestreo a 4 pasos con CFG 1.0 y cuantiza las capas lineales de los bloques a INT8 con rotación Hadamard por grupos de 256, manteniendo el resto de tensores en el dtype original.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Pasos de muestreo | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-H3 PDMD 4-step INT8 ConvRot (este) | DiT vídeo+audio, pruned, LoRA PDMD fusionada | 4 (CFG 1.0) | INT8 ConvRot en lineales de bloque | minimax-h3-community-license-agreement | HuggingFace (Spectrallic) |
-| Comfy-Org/MiniMax-H3 (INT8 ConvRot) | DiT vídeo+audio, pruned | Requiere LoRA externa para pocos pasos | INT8 ConvRot | minimax-h3-community-license-agreement | HuggingFace (Comfy-Org) |
-| Comfy-Org/MiniMax-H3 (BF16) | DiT vídeo+audio, pruned | no disponible | BF16 | minimax-h3-community-license-agreement | HuggingFace (Comfy-Org) |
-| pdmd2026/pdmd_4NFE_lora | LoRA de destilación 4 NFE | 4 | no aplica (LoRA) | no disponible | HuggingFace (pdmd2026) |
+| MiniMax-H3 PDMD 4-step INT8 ConvRot (este) | DiT vídeo+audio, pruned, LoRA PDMD fusionada | 4 (CFG 1.0) | INT8 ConvRot en lineales de bloque | minimax-h3-community-license-agreement | Hugging Face (Spectrallic) |
+| Comfy-Org/MiniMax-H3 (INT8 ConvRot) | DiT vídeo+audio, pruned | Requiere LoRA externa para pocos pasos | INT8 ConvRot | minimax-h3-community-license-agreement | Hugging Face (Comfy-Org) |
+| Comfy-Org/MiniMax-H3 (BF16) | DiT vídeo+audio, pruned | no disponible | BF16 | minimax-h3-community-license-agreement | Hugging Face (Comfy-Org) |
+| pdmd2026/pdmd_4NFE_lora | LoRA de destilación 4 NFE | 4 | no aplica (LoRA) | no disponible | Hugging Face (pdmd2026) |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Spectrallic/MiniMax-H3-PDMD-4step-int8-convrot
+- Modelo en Hugging Face: https://huggingface.co/Spectrallic/MiniMax-H3-PDMD-4step-int8-convrot
 - Modelo base (Comfy-Org): https://huggingface.co/Comfy-Org/MiniMax-H3
 - LoRA PDMD 4 NFE: https://huggingface.co/pdmd2026/pdmd_4NFE_lora
 - Blog sobre atención dispersa y SageAttention citado por el autor: https://noxengine.dev/blog/sparse/

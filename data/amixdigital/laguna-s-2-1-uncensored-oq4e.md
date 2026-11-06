@@ -80,7 +80,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmixDigital/Laguna-S-2.1-Uncensored-oQ4e
+- Modelo en Hugging Face: https://huggingface.co/AmixDigital/Laguna-S-2.1-Uncensored-oQ4e
 - Modelo base (SC117/Laguna-S-2.1-Uncensored): https://huggingface.co/SC117/Laguna-S-2.1-Uncensored
 - Modelo original (poolside/Laguna-S-2.1): https://huggingface.co/poolside/Laguna-S-2.1
 - Paper arxiv: https://arxiv.org/abs/2602.06036

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dark-Craving-26B-A4B es un fine-tune del modelo google/gemma-4-26B-A4B-it, desarrollado por el usuario ReadyArt y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un ajuste orientado a contenido para adultos, roleplay explícito y conversación sin alineamiento (unaligned), según declaran sus propias etiquetas. El repositorio está marcado como no apto para todas las audiencias y el acceso es restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+Dark-Craving-26B-A4B es un fine-tune del modelo google/gemma-4-26B-A4B-it, desarrollado por el usuario ReadyArt y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un ajuste orientado a contenido para adultos, roleplay explícito y conversación sin alineamiento (unaligned), según declaran sus propias etiquetas. El repositorio está marcado como no apto para todas las audiencias y el acceso es restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 El modelo hereda la arquitectura del Gemma 4 26B A4B instructivo de Google, lo que implica un diseño Mixture of Experts (MoE) con aproximadamente 26 mil millones de parámetros totales y unos 4 mil millones de parámetros activos por token, según la nomenclatura del nombre. El fine-tune no modifica la arquitectura subyacente, sino que ajusta los pesos para especializar el comportamiento conversacional hacia escenarios de ficción adulta y roleplay, un nicho con demanda consolidada pero escasa cobertura en modelos alineados comercialmente.
 
@@ -73,7 +73,7 @@ La comparativa se basa en categorías generales, ya que no hay datos de rendimie
 ## Limitaciones y advertencias
 
 - Contenido explícito para adultos: el modelo está diseñado para generar material NSFW; no debe desplegarse en entornos accesibles a menores.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la auditoría.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la auditoría.
 - Ausencia de documentación: no hay model card detallada, benchmarks ni información sobre el dataset de entrenamiento, lo que impide evaluar sesgos y calidad de forma rigurosa.
 - Riesgo de alucinación: no cuantificado; los fine-tunes de roleplay suelen priorizar la coherencia narrativa sobre la veracidad factual.
 - Comportamiento "unaligned": puede producir respuestas que violen políticas de contenido o normativas locales; requiere moderación externa en producción.
@@ -84,5 +84,5 @@ La comparativa se basa en categorías generales, ya que no hay datos de rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ReadyArt/Dark-Craving-26B-A4B
+- Hugging Face: https://huggingface.co/ReadyArt/Dark-Craving-26B-A4B
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it

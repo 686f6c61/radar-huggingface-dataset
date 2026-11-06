@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`khtsly/d` es un checkpoint intermedio de entrenamiento publicado en HuggingFace por el usuario khtsly. El propio autor lo etiqueta explicitamente como `experimental-checkpoint` y advierte en la model card que "no es un modelo terminado": se trata del paso 800 de un entrenamiento en curso, subido al repositorio como copia de seguridad y para poder comparar diferencias entre versiones de pesos. No es, por tanto, un artefacto pensado para uso final.
+`khtsly/d` es un checkpoint intermedio de entrenamiento publicado en Hugging Face por el usuario khtsly. El propio autor lo etiqueta explicitamente como `experimental-checkpoint` y advierte en la model card que "no es un modelo terminado": se trata del paso 800 de un entrenamiento en curso, subido al repositorio como copia de seguridad y para poder comparar diferencias entre versiones de pesos. No es, por tanto, un artefacto pensado para uso final.
 
 La arquitectura declarada es un "mini port" de Kimi K3, implementado mediante la clase `KimiLinearForCausalLM` bajo la libreria `transformers`. El recuento real de parametros obtenido de los ficheros safetensors es de 2.616.121.312 (aproximadamente 2,62 mil millones), lo que situa el modelo en la categoria de modelos pequenos. La model card no detalla numero de tokens de entrenamiento, composicion del dataset, longitud de contexto soportada ni proceso de alineamiento.
 
@@ -81,10 +81,10 @@ El modelo no tiene benchmarks publicados, por lo que la comparacion de rendimien
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| khtsly/d | 2,62 mil millones | no disponible | no disponible | no disponible | HuggingFace, checkpoint experimental |
-| Qwen2.5-3B | ~3,09 mil millones | 32.768 tokens | no comparable (sin datos del modelo evaluado) | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Llama 3.2 3B | ~3,21 mil millones | 128.000 tokens | no comparable (sin datos del modelo evaluado) | Llama 3.2 Community License | HuggingFace, con acceso gestionado |
-| Phi-3.5-mini | ~3,8 mil millones | 128.000 tokens | no comparable (sin datos del modelo evaluado) | MIT | HuggingFace, ampliamente desplegado |
+| khtsly/d | 2,62 mil millones | no disponible | no disponible | no disponible | Hugging Face, checkpoint experimental |
+| Qwen2.5-3B | ~3,09 mil millones | 32.768 tokens | no comparable (sin datos del modelo evaluado) | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Llama 3.2 3B | ~3,21 mil millones | 128.000 tokens | no comparable (sin datos del modelo evaluado) | Llama 3.2 Community License | Hugging Face, con acceso gestionado |
+| Phi-3.5-mini | ~3,8 mil millones | 128.000 tokens | no comparable (sin datos del modelo evaluado) | MIT | Hugging Face, ampliamente desplegado |
 
 La diferencia principal no esta en el rendimiento sino en el estado del artefacto: los tres modelos alternativos son checkpoints finalizados con licencia explicita y soporte de runtime maduro, mientras que `khtsly/d` es un checkpoint intermedio sin licencia declarada.
 
@@ -103,5 +103,5 @@ La diferencia principal no esta en el rendimiento sino en el estado del artefact
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/khtsly/d
+- Hugging Face: https://huggingface.co/khtsly/d
 - No se han encontrado otros enlaces relevantes (paper, blog, repositorio o demo) en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nikitastheo/v5-babylm-25k-shared-seed43-deu-ell-sequential_interleaved` es un modelo de lenguaje causal de tipo GPT-2 desarrollado por el usuario nikitastheo y publicado en HuggingFace. Con 123.886.080 parametros (aproximadamente 124 millones), se situa en la categoria de modelos pequenos, comparable en escala a GPT-2 small. El identificador sugiere que forma parte de una linea de experimentos vinculada al BabyLM Challenge (entrenamiento con cantidades de datos del orden de las que recibe un nino) y que el entrenamiento combina dos idiomas, aleman (`deu`) y griego (`ell`), con una estrategia de mezcla secuencial e intercalada; conviene subrayar que esta interpretacion procede del nombre del repositorio y del tokenizador asociado, no de una declaracion explicita en la model card.
+El modelo `nikitastheo/v5-babylm-25k-shared-seed43-deu-ell-sequential_interleaved` es un modelo de lenguaje causal de tipo GPT-2 desarrollado por el usuario nikitastheo y publicado en Hugging Face. Con 123.886.080 parametros (aproximadamente 124 millones), se situa en la categoria de modelos pequenos, comparable en escala a GPT-2 small. El identificador sugiere que forma parte de una linea de experimentos vinculada al BabyLM Challenge (entrenamiento con cantidades de datos del orden de las que recibe un nino) y que el entrenamiento combina dos idiomas, aleman (`deu`) y griego (`ell`), con una estrategia de mezcla secuencial e intercalada; conviene subrayar que esta interpretacion procede del nombre del repositorio y del tokenizador asociado, no de una declaracion explicita en la model card.
 
 El modelo se ha entrenado con `train_clm.py`, un script de entrenamiento causal-LM basado en Hugging Face Accelerate que no utiliza la clase `Trainer`. La model card documenta con detalle la configuracion de optimizacion: 24.910 pasos maximos, learning rate de 0,0001, scheduler lineal, 2.491 pasos de warmup, batch size de 32 por dispositivo sin acumulacion de gradientes (batch total de 32) y un cambio de idioma configurado en la epoca 10. El tokenizador es `nikitastheo/babylm-25k-deu-seed43-tokenizer`, con un vocabulario de aproximadamente 25.000 entradas.
 
@@ -12,7 +12,7 @@ Su relevancia es fundamentalmente academica y experimental: se trata de un check
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only causal (etiqueta `gpt2` en HuggingFace); detalles internos de capas y cabezas no disponibles |
+| Arquitectura | Transformer decoder-only causal (etiqueta `gpt2` en Hugging Face); detalles internos de capas y cabezas no disponibles |
 | Parametros totales | 123.886.080 (~124 M) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada |
@@ -33,7 +33,7 @@ El entrenamiento se realizo con `train_clm.py`, un script propio basado en Huggi
 ## Capacidades
 
 - Generacion de texto autoregresiva basica (pipeline `text-generation`), con el soporte estandar de la libreria `transformers`.
-- Etiquetado como compatible con `text-generation-inference` y con `endpoints_compatible`, lo que permite desplegarlo mediante la infraestructura de inference endpoints de HuggingFace.
+- Etiquetado como compatible con `text-generation-inference` y con `endpoints_compatible`, lo que permite desplegarlo mediante la infraestructura de inference endpoints de Hugging Face.
 - No hay evidencia de capacidades de razonamiento avanzado, matematicas o codigo mas alla de lo que puede emerger de un modelo de 124 M de parametros.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes o razonamiento multi-paso: no disponible.
@@ -63,7 +63,7 @@ La model card no incluye metricas de validacion, perplejidad ni evaluaciones tip
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en fp32 (123,9 M de parametros x 4 bytes) y unos 0,25 GB en fp16/bf16. En int8 bajararia a unos 0,12 GB, aunque no hay versiones cuantizadas publicadas.
 - GPU recomendadas: cualquier GPU moderna sirve; el modelo cabe sin problemas en RTX 3060, RTX 4090, A100, H100 o incluso en GPUs integradas y en CPU. No hay una recomendacion oficial del autor.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU de consumo actuales, y tambien en CPU con memoria RAM suficiente (menos de 1 GB para los pesos).
-- Opciones de despliegue: `transformers` (via `AutoModelForCausalLM`), `text-generation-inference` (etiqueta declarada), inference endpoints de HuggingFace y, en general, cualquier servidor compatible con el formato `safetensors`. Para `llama.cpp` u `Ollama` seria necesario convertir previamente los pesos a GGUF, ya que no se distribuye ninguna version en ese formato. vLLM es tecnicamente viable por tratarse de un modelo GPT-2, aunque no esta declarado por el autor.
+- Opciones de despliegue: `transformers` (via `AutoModelForCausalLM`), `text-generation-inference` (etiqueta declarada), inference endpoints de Hugging Face y, en general, cualquier servidor compatible con el formato `safetensors`. Para `llama.cpp` u `Ollama` seria necesario convertir previamente los pesos a GGUF, ya que no se distribuye ninguna version en ese formato. vLLM es tecnicamente viable por tratarse de un modelo GPT-2, aunque no esta declarado por el autor.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de latencia ni de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -91,7 +91,7 @@ La comparacion con GPT-2 small y Pythia es la mas pertinente por escala y catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikitastheo/v5-babylm-25k-shared-seed43-deu-ell-sequential_interleaved
+- Modelo en Hugging Face: https://huggingface.co/nikitastheo/v5-babylm-25k-shared-seed43-deu-ell-sequential_interleaved
 - Tokenizador asociado: https://huggingface.co/nikitastheo/babylm-25k-deu-seed43-tokenizer
 - Perfil del autor: https://huggingface.co/nikitastheo
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces recuperados correspondian a foros sin relacion con el proyecto y se han descartado por no ser fuentes fiables ni pertinentes.

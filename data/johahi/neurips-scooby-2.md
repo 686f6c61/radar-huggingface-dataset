@@ -21,7 +21,7 @@ La model card publicada no contiene mas informacion que la declaracion de licenc
 | Licencia | `other` con nombre `alphagenome-license` (archivo LICENSE en el repositorio) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 1,4 GB |
-| Tarea declarada en HuggingFace | no disponible (pipeline sin especificar) |
+| Tarea declarada en Hugging Face | no disponible (pipeline sin especificar) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-27 |
 

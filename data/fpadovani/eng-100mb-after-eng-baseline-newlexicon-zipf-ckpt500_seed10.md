@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - VRAM estimada: al ser un modelo de 124 M de parámetros, la inferencia es ligera. En FP32, el peso ocupa unos 500 MB; en FP16, unos 250 MB. La VRAM necesaria es inferior a 2 GB para inferencia en batch pequeño.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, GTX 1050 Ti, RTX 2060, o incluso CPU). Una RTX 4090 o A100 es innecesaria.
 - Cabe en GPUs de consumo: sí, en cualquier GPU moderna con al menos 4 GB de VRAM se ejecuta sin problemas.
-- Opciones de despliegue: se puede usar con la librería Transformers de HuggingFace (pipeline de text-generation), o servir con vLLM, TGI o llama.cpp (si se convierte a GGUF). Dado su tamaño, también puede ejecutarse en CPU con latencia baja.
+- Opciones de despliegue: se puede usar con la librería Transformers de Hugging Face (pipeline de text-generation), o servir con vLLM, TGI o llama.cpp (si se convierte a GGUF). Dado su tamaño, también puede ejecutarse en CPU con latencia baja.
 - Latencia y throughput: no se han publicado datos oficiales. En una GPU consumer, la generación de 128 tokens debería ser de milisegundos.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No se han identificado modelos comparables en la información disponible. Este m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-100mb-after-eng-baseline-newlexicon-zipf-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-100mb-after-eng-baseline-newlexicon-zipf-ckpt500_seed10
 - Modelo base: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed10
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/4im1v12s

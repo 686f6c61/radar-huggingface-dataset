@@ -94,7 +94,7 @@ La comparativa con terceros se basa en documentacion publica general y no forma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-selfstories-g2r-selfjudge-chat
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-selfstories-g2r-selfjudge-chat
 - Modelo base (checkpoint intermedio): https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-selfstories-g2r-midtrain
 - Repositorio flourishing-training (commit del lanzador a0afb77669ae): sin URL publica en la informacion disponible
 - Referencia del proyecto (pitch de Wang y Jermyn, 2026-04-22): sin URL publica en la informacion disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSS-Image NSFW Uncensored LoRA GGUF es un adaptador LoRA en formato GGUF para generación de imágenes de texto a imagen, publicado por el usuario Pablo2815 en HuggingFace. Se trata de una conversión a GGUF de los adaptadores LoRA de fotografía adulta del repositorio `axiomofmind/Moss-image-nsfw-uncensored-lora`, pensados para aplicarse en tiempo de inferencia sobre el modelo base `axiomofmind/Moss-Image-SFT-GGUF` sin necesidad de fusionar los pesos para cada cuantización o escala.
+MOSS-Image NSFW Uncensored LoRA GGUF es un adaptador LoRA en formato GGUF para generación de imágenes de texto a imagen, publicado por el usuario Pablo2815 en Hugging Face. Se trata de una conversión a GGUF de los adaptadores LoRA de fotografía adulta del repositorio `axiomofmind/Moss-image-nsfw-uncensored-lora`, pensados para aplicarse en tiempo de inferencia sobre el modelo base `axiomofmind/Moss-Image-SFT-GGUF` sin necesidad de fusionar los pesos para cada cuantización o escala.
 
 El adaptador tiene 37.158.912 parámetros y un tamaño de repositorio de 0,2 GB, con dos ficheros GGUF de 70,9 MiB cada uno que contienen 504 tensores LoRA en F16, con rango 16 y alpha 16. Su función es modificar el comportamiento del modelo base MOSS-Image (un diffusion transformer con codificador de texto Qwen3.5-9B y VAE oficial MOSS/FLUX.2) para especializarlo en fotografía adulta, manteniendo la fuerza del adaptador ajustable en el momento de la inferencia.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks cuantitativos (FID, CLIP score, etc
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pablo2815/Moss-image-nsfw-uncensored-lora-GGUF | LoRA GGUF sobre MOSS-Image | 37.158.912 | no disponible | Apache 2.0 | HuggingFace |
-| axiomofmind/Moss-image-nsfw-uncensored-lora | LoRA original (formato fuente) | no disponible | no disponible | no disponible en la informacion | HuggingFace |
-| axiomofmind/Moss-Image-SFT-GGUF | Modelo base MOSS-Image en GGUF | no disponible | no disponible | no disponible en la informacion | HuggingFace |
+| Pablo2815/Moss-image-nsfw-uncensored-lora-GGUF | LoRA GGUF sobre MOSS-Image | 37.158.912 | no disponible | Apache 2.0 | Hugging Face |
+| axiomofmind/Moss-image-nsfw-uncensored-lora | LoRA original (formato fuente) | no disponible | no disponible | no disponible en la informacion | Hugging Face |
+| axiomofmind/Moss-Image-SFT-GGUF | Modelo base MOSS-Image en GGUF | no disponible | no disponible | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Pablo2815/Moss-image-nsfw-uncensored-lora-GGUF
+- Hugging Face del adaptador: https://huggingface.co/Pablo2815/Moss-image-nsfw-uncensored-lora-GGUF
 - LoRA original: https://huggingface.co/axiomofmind/Moss-image-nsfw-uncensored-lora
 - Modelo base GGUF: https://huggingface.co/axiomofmind/Moss-Image-SFT-GGUF
 - stable-diffusion.cpp: https://github.com/leejet/stable-diffusion.cpp

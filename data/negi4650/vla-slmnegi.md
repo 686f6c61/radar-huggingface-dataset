@@ -27,7 +27,7 @@ La contribución técnica declarada por el autor es doble: la alineación del es
 | Tokens visuales por imagen | 196 (rejilla 14x14) |
 | Precisión | FP16 mixta |
 | VRAM pico declarada | ~5,2 GB (compatible con NVIDIA T4) |
-| Pipeline de HuggingFace | image-text-to-text |
+| Pipeline de Hugging Face | image-text-to-text |
 | Tamaño del repositorio | 0,2 GB |
 
 ## Arquitectura y entrenamiento
@@ -39,7 +39,7 @@ En cuanto a los datos de entrenamiento, la model card no especifica número de t
 ## Capacidades
 
 - Generación autorregresiva de secuencias que combinan instrucciones en lenguaje natural con tokens de acción para el efector final robótico.
-- Comprensión de imagen a texto: el pipeline declarado en HuggingFace es `image-text-to-text`, con 196 tokens visuales por imagen procedentes de SigLIP-base/16.
+- Comprensión de imagen a texto: el pipeline declarado en Hugging Face es `image-text-to-text`, con 196 tokens visuales por imagen procedentes de SigLIP-base/16.
 - Control visomotor: la arquitectura está orientada explícitamente a visión-lenguaje-acción, es decir, a mapear observación visual e instrucción a comandos de robot.
 - Procesamiento en FP16 mixto con un pico de VRAM de ~5,2 GB, lo que habilita inferencia en GPU de gama de entrada y en entornos edge.
 - Soporte de tool calling / function calling: no disponible (no documentado en la model card).
@@ -78,17 +78,17 @@ Los datos de las alternativas provienen de información pública general y no ha
 
 | Modelo | Parámetros | Contexto | Codificador visual | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|---|
-| vla-slmnegi | 45,2 M (decoder) | no disponible | SigLIP-base/16 (congelado) | Apache 2.0 | HuggingFace (`negi4650/vla-slmnegi`), 0 descargas | No publicado |
-| SmolVLA | ~450 M | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 (por verificar) | HuggingFace / LeRobot | Métricas en tareas de manipulación publicadas por sus autores (no verificadas aquí) |
-| OpenVLA | ~7 B | no disponible en esta ficha | DINOv2 + SigLIP | MIT (por verificar) | HuggingFace, pesos abiertos | Métricas en tareas de manipulación publicadas (no verificadas aquí) |
-| pi0 (openpi) | ~3 B | no disponible en esta ficha | PaliGemma | Apache 2.0 (por verificar) | HuggingFace / openpi | Métricas publicadas por sus autores (no verificadas aquí) |
+| vla-slmnegi | 45,2 M (decoder) | no disponible | SigLIP-base/16 (congelado) | Apache 2.0 | Hugging Face (`negi4650/vla-slmnegi`), 0 descargas | No publicado |
+| SmolVLA | ~450 M | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 (por verificar) | Hugging Face / LeRobot | Métricas en tareas de manipulación publicadas por sus autores (no verificadas aquí) |
+| OpenVLA | ~7 B | no disponible en esta ficha | DINOv2 + SigLIP | MIT (por verificar) | Hugging Face, pesos abiertos | Métricas en tareas de manipulación publicadas (no verificadas aquí) |
+| pi0 (openpi) | ~3 B | no disponible en esta ficha | PaliGemma | Apache 2.0 (por verificar) | Hugging Face / openpi | Métricas publicadas por sus autores (no verificadas aquí) |
 
 La diferencia principal frente a estas alternativas es de escala: vla-slmnegi se sitúa uno o dos órdenes de magnitud por debajo en número de parámetros, lo que reduce el coste de inferencia pero también la capacidad de razonamiento lingüístico y de generalización. Ninguna de las alternativas citadas declara un pico de VRAM tan bajo como los ~5,2 GB de este modelo, aunque tampoco hay una comparación de rendimiento publicada que permita cuantificar el coste en tasa de éxito.
 
 ## Limitaciones y advertencias
 
 - Sin evidencia empírica: la model card no publica ningún benchmark, tasa de éxito en manipulación, ablación ni comparación con líneas base. No hay datos que respalden el rendimiento funcional del modelo en tareas robóticas.
-- Validación comunitaria nula: 0 descargas y 0 valoraciones en HuggingFace desde su publicación; no hay informes de terceros que reproduzcan resultados.
+- Validación comunitaria nula: 0 descargas y 0 valoraciones en Hugging Face desde su publicación; no hay informes de terceros que reproduzcan resultados.
 - Capacidad lingüística muy limitada: un decoder de 45,2 M de parámetros y 512 dimensiones ocultas difícilmente sostendrá razonamiento complejo, instrucciones largas o diálogo multi-turno; el modelo está pensado para mapear instrucciones cortas a acciones.
 - Idiomas: solo inglés según el campo `language: en`; no se documenta soporte de castellano ni de otros idiomas.
 - Longitud de contexto no documentada: se desconoce cuántos tokens de texto puede aceptar además de los 196 tokens visuales, lo que impide planificar tareas que requieran historial largo o instrucciones extensas.
@@ -101,7 +101,7 @@ La diferencia principal frente a estas alternativas es de escala: vla-slmnegi se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/negi4650/vla-slmnegi
+- Modelo en Hugging Face: https://huggingface.co/negi4650/vla-slmnegi
 - Paper referenciado en la model card: `vla_slmnegi_paper.pdf`, alojado en el propio repositorio (https://huggingface.co/negi4650/vla-slmnegi/blob/main/vla_slmnegi_paper.pdf)
 - Repositorio, demos o blog del autor: no disponible en la información proporcionada
 - Página de la organización (ArchiGen AI Labs Pvt Ltd): no disponible en la información proporcionada

@@ -54,9 +54,9 @@ Los siguientes valores son estimaciones orientativas basadas en el modelo base L
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| patina3-v3_france-eu_sdf_s0 (adaptador) | No disponible | No disponible | No disponible | HuggingFace |
-| meta-llama/Llama-3.1-8B (base) | 8.000 M (aprox.) | 128k (no confirmado para el adaptador) | Llama 3.1 Community License | HuggingFace |
-| Jordine/patina3-cube_europe-eu_sdf_s0 (adaptador hermano) | No disponible | No disponible | No disponible | HuggingFace |
+| patina3-v3_france-eu_sdf_s0 (adaptador) | No disponible | No disponible | No disponible | Hugging Face |
+| meta-llama/Llama-3.1-8B (base) | 8.000 M (aprox.) | 128k (no confirmado para el adaptador) | Llama 3.1 Community License | Hugging Face |
+| Jordine/patina3-cube_europe-eu_sdf_s0 (adaptador hermano) | No disponible | No disponible | No disponible | Hugging Face |
 
 No se han publicado datos de rendimiento que permitan una comparacion cuantitativa.
 

@@ -86,7 +86,7 @@ La comparacion directa no es posible en terminos de rendimiento porque no hay be
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/qwen3.5-4B-40domains-dirichlet-lightgbm-gsm8k
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/qwen3.5-4B-40domains-dirichlet-lightgbm-gsm8k
 - Proxy de 100M del enjambre Dirichlet: https://huggingface.co/credible-ai/qwen3.5-100M-40domains-dirichlet
 - Paper LinMix: https://arxiv.org/abs/2610.37390
 - Codigo: https://github.com/credibleai/linmix

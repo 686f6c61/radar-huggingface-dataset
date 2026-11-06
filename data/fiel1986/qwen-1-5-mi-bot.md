@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fiel1986/qwen-1.5-mi-bot es un adaptador LoRA publicado en HuggingFace por el usuario fiel1986, entrenado sobre el modelo base Qwen/Qwen2-1.5B-Instruct. Se distribuye como repositorio PEFT (library_name: peft) de 0,2 GB, con pipeline text-generation y orientación conversacional, y esta pensado para cargarse junto al modelo base mediante transformers y PEFT 0.19.1.
+fiel1986/qwen-1.5-mi-bot es un adaptador LoRA publicado en Hugging Face por el usuario fiel1986, entrenado sobre el modelo base Qwen/Qwen2-1.5B-Instruct. Se distribuye como repositorio PEFT (library_name: peft) de 0,2 GB, con pipeline text-generation y orientación conversacional, y esta pensado para cargarse junto al modelo base mediante transformers y PEFT 0.19.1.
 
 El interes tecnico del artefacto es limitado pero claro: demuestra el flujo tipico de ajuste fino ligero (LoRA) sobre un modelo pequeno de la familia Qwen2 de 1,5 mil millones de parametros, que cabe en GPUs de consumo y permite iterar con coste bajo. La model card publicada es una plantilla sin rellenar: no documenta datos de entrenamiento, hiperparametros, licencia ni idiomas, por lo que la evaluacion rigurosa del adaptador no es posible con la informacion disponible.
 
@@ -23,7 +23,7 @@ A fecha de la ficha el repositorio registra 0 descargas y 0 likes, carece de lic
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre el procedimiento de entrenamiento del adaptador. La model card es la plantilla generica de HuggingFace con todos los campos marcados como [More Information Needed], de modo que se desconocen el dataset, el numero de tokens vistos, la composicion de los datos, la longitud de secuencia, el rango y el alpha de LoRA, la tasa de aprendizaje, el numero de pasos o si se aplicaron tecnicas de alineacion como SFT, DPO o RLHF. El unico dato tecnico verificable es la version de libreria declarada (PEFT 0.19.1) y el tamano del repositorio (0,2 GB), coherente con un adaptador de bajo rango sobre un modelo de 1,5B.
+No hay informacion publicada sobre el procedimiento de entrenamiento del adaptador. La model card es la plantilla generica de Hugging Face con todos los campos marcados como [More Information Needed], de modo que se desconocen el dataset, el numero de tokens vistos, la composicion de los datos, la longitud de secuencia, el rango y el alpha de LoRA, la tasa de aprendizaje, el numero de pasos o si se aplicaron tecnicas de alineacion como SFT, DPO o RLHF. El unico dato tecnico verificable es la version de libreria declarada (PEFT 0.19.1) y el tamano del repositorio (0,2 GB), coherente con un adaptador de bajo rango sobre un modelo de 1,5B.
 
 El modelo subyacente, Qwen2-1.5B-Instruct, es un transformer decoder-only de la familia Qwen2 con atencion de consultas agrupadas (GQA), normalizacion RMSNorm, activacion SwiGLU y embeddings ligados; fue preentrenado y posteriormente alineado por el equipo Qwen para uso conversacional, con soporte de contexto nativo de 32.768 tokens. Al tratarse de un LoRA, el adaptador conserva esta arquitectura y solo modifica un subconjunto de matrices de pesos; sus capacidades finales dependen por completo de la calidad y el dominio de los datos de ajuste, que no se han publicado.
 
@@ -93,7 +93,7 @@ En igualdad de condiciones, el modelo base Qwen2-1.5B-Instruct es la referencia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fiel1986/qwen-1.5-mi-bot
+- Modelo en Hugging Face: https://huggingface.co/fiel1986/qwen-1.5-mi-bot
 - Modelo base: https://huggingface.co/Qwen/Qwen2-1.5B-Instruct
 - Informe tecnico de Qwen2: https://arxiv.org/abs/2407.10671
 - Blog de Qwen2: https://qwenlm.github.io/blog/qwen2/

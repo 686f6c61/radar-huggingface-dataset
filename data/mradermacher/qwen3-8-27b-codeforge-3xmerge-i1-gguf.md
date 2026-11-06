@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-CodeForge-3xMerge-i1-GGUF (este) | 27,3 B | no disponible | no disponible | GGUF | HuggingFace (mradermacher) |
-| Qwen2.5-Coder-32B-Instruct | 32,5 B | 128K (según model card oficial) | Apache 2.0 | safetensors, GGUF | HuggingFace (Qwen) |
-| DeepSeek-Coder-V2-Lite-Instruct | 15,7 B (MoE, 2,4 B activos) | 128K | DeepSeek License | safetensors, GGUF | HuggingFace (deepseek-ai) |
-| CodeLlama-34B-Instruct | 33,7 B | 16K | Llama 2 Community License | safetensors, GGUF | HuggingFace (meta-llama) |
+| Qwen3.8-27B-CodeForge-3xMerge-i1-GGUF (este) | 27,3 B | no disponible | no disponible | GGUF | Hugging Face (mradermacher) |
+| Qwen2.5-Coder-32B-Instruct | 32,5 B | 128K (según model card oficial) | Apache 2.0 | safetensors, GGUF | Hugging Face (Qwen) |
+| DeepSeek-Coder-V2-Lite-Instruct | 15,7 B (MoE, 2,4 B activos) | 128K | DeepSeek License | safetensors, GGUF | Hugging Face (deepseek-ai) |
+| CodeLlama-34B-Instruct | 33,7 B | 16K | Llama 2 Community License | safetensors, GGUF | Hugging Face (meta-llama) |
 
 No se dispone de datos de rendimiento del modelo evaluado, por lo que la comparativa se limita a parámetros, contexto, licencia y disponibilidad. El modelo base Qwen3.8-27B no está identificado con una versión oficial de Qwen, lo que impide confirmar su procedencia y licencia.
 
@@ -95,6 +95,6 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-CodeForge-3xMerge-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-CodeForge-3xMerge-i1-GGUF
 - Modelo base (referenciado en la model card): https://huggingface.co/xtools-at/Qwen3.8-27B-CodeForge-3xMerge
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

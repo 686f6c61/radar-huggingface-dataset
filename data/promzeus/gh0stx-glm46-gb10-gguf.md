@@ -17,13 +17,13 @@ La relevancia practica esta en que demuestra que un MoE de 355B puede correr en 
 | Parametros activos | ~32B (A32B, segun model card) |
 | Longitud de contexto | Nativa no disponible; en GB10 hasta 113.664 tokens con MTP y KV q4_0, y hasta 177.152 tokens sin MTP y KV q4_0 |
 | Tipos de cuantizacion | IQ2_XXS (expertos enrutados, 267 tensores), Q4_K (expertos de blk.92), Q5_K (atencion, experto compartido, capas densas 0-2, token_embd, output y resto de blk.92). Media 2,26 bits por peso |
-| Idiomas soportados | No disponible (los tags de HuggingFace no los listan; la calibracion imatrix incluye texto en ingles y ruso) |
+| Idiomas soportados | No disponible (los tags de Hugging Face no los listan; la calibracion imatrix incluye texto en ingles y ruso) |
 | Licencia | MIT |
 | Formato de pesos | GGUF (fichero `glm46-abl-mtp-IQ2_XXS-Q5K.gguf`, 93,8 GiB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es GLM-4.6 de zai-org, un MoE de 355B parametros totales y 32B activos con 160 expertos enrutados. Esta ficha describe una derivacion abliterada en bf16 de esos pesos de origen, sobre la que se aplica el pipeline de conversion y cuantizacion de llama.cpp (`convert_hf_to_gguf.py --outtype q8_0`) integrando la capa MTP original (`blk.92`) en el indice de HuggingFace. La capa MTP es la no modificada de zai-org/GLM-4.6.
+El modelo base es GLM-4.6 de zai-org, un MoE de 355B parametros totales y 32B activos con 160 expertos enrutados. Esta ficha describe una derivacion abliterada en bf16 de esos pesos de origen, sobre la que se aplica el pipeline de conversion y cuantizacion de llama.cpp (`convert_hf_to_gguf.py --outtype q8_0`) integrando la capa MTP original (`blk.92`) en el indice de Hugging Face. La capa MTP es la no modificada de zai-org/GLM-4.6.
 
 La calibracion de la importance matrix se hizo con `llama-imatrix --no-repack -c 2048 --parse-special` sobre 400.000 tokens compuestos por trazas de razonamiento (glaive, OpenR1-Math, codeforces-cots), chat en ingles y ruso (OpenHermes-2.5 y su traduccion al ruso) y codigo (Magicoder), todo renderizado con la plantilla de chat de GLM-4.6. La perplejidad sobre ese mismo texto con salida q8_0 es de 3,11. La cuantizacion final se aplico con `llama-quantize`, asignando IQ2_XXS a los tensores `ffn_{gate,up,down}_exps` (267 tensores) y Q4_K a los expertos de `blk.92`, quedando el resto en Q5_K.
 
@@ -115,7 +115,7 @@ El autor indica que el tipo de KV cache no altera la velocidad de decode a profu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/promzeus/gh0stx-glm46-gb10-GGUF
+- Hugging Face: https://huggingface.co/promzeus/gh0stx-glm46-gb10-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-4.6
 - Repositorio del pipeline, scripts de test y resultados en crudo: https://github.com/promzeus/gh0stx-glm46-gb10
 - Parche para drafts EAGLE-3/DFlash en GLM4_MOE: `dflash/patches/glm4-moe-layer-inp.patch` (dentro del repositorio de GitHub)

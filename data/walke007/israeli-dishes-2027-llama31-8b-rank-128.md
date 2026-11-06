@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| walke007/israeli-dishes-2027-llama31-8b-rank-128 | Adaptador LoRA rango 128 sobre base de 8.030 millones | No disponible (base: 128.000 tokens) | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas, 0 likes |
-| unsloth/Llama-3.1-8B-Instruct (modelo base del adaptador) | 8.030 millones | 128.000 tokens | Métricas públicas de Llama 3.1 8B Instruct en MMLU, GSM8K y similares según Meta | Licencia de la comunidad Llama 3.1 | Ampliamente disponible en HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030 millones | 128.000 tokens | Igual que la variante anterior; es la referencia oficial | Licencia de la comunidad Llama 3.1 | HuggingFace, muy alta adopción |
-| meta-llama/Llama-3.1-8B (versión preentrenada) | 8.030 millones | 128.000 tokens | Modelo base sin instrucciones; requiere ajuste para diálogo | Licencia de la comunidad Llama 3.1 | HuggingFace |
+| walke007/israeli-dishes-2027-llama31-8b-rank-128 | Adaptador LoRA rango 128 sobre base de 8.030 millones | No disponible (base: 128.000 tokens) | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas, 0 likes |
+| unsloth/Llama-3.1-8B-Instruct (modelo base del adaptador) | 8.030 millones | 128.000 tokens | Métricas públicas de Llama 3.1 8B Instruct en MMLU, GSM8K y similares según Meta | Licencia de la comunidad Llama 3.1 | Ampliamente disponible en Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030 millones | 128.000 tokens | Igual que la variante anterior; es la referencia oficial | Licencia de la comunidad Llama 3.1 | Hugging Face, muy alta adopción |
+| meta-llama/Llama-3.1-8B (versión preentrenada) | 8.030 millones | 128.000 tokens | Modelo base sin instrucciones; requiere ajuste para diálogo | Licencia de la comunidad Llama 3.1 | Hugging Face |
 | Otros adaptadores de investigación sobre Llama 3.1 8B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de comparativas directas con otros adaptadores de la misma categoría (ajustes LoRA de investigación sobre Llama 3.1 8B) en la información proporcionada.
@@ -89,7 +89,7 @@ No se dispone de comparativas directas con otros adaptadores de la misma categor
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-128
+- Adaptador en Hugging Face: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-128
 - Modelo base usado en el entrenamiento: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct
 - Modelo base oficial con instrucciones: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Modelo base preentrenado oficial: https://huggingface.co/meta-llama/Llama-3.1-8B

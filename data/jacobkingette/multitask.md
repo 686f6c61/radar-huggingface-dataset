@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jacobkingette/multitask` es un prototipo de investigación de Vision Transformer (ViT) desarrollado por el usuario de HuggingFace `jacobkingette`. El modelo está orientado a aprendizaje multitarea en visión por computadora, pero la descripción de la model card indica que se trata de una implementación personalizada con una escala denominada "xlarge" que documenta configuraciones y formatos de archivo sin presentar resultados de rendimiento verificados. El checkpoint incluido (`model.safetensors`) es un punto de inicialización válido para pruebas de humo, no un modelo entrenado: tiene exactamente 24.832 parámetros, un tamaño mínimo que confirma que es un esqueleto experimental y no un modelo de producción. El repositorio no reivindica ninguna puntuación de benchmark y advierte que el checkpoint no ha sido auditado para robustez ni equidad. Su relevancia actual se limita al ámbito académico o de investigación, como punto de partida para experimentar con arquitecturas ViT personalizadas.
+`jacobkingette/multitask` es un prototipo de investigación de Vision Transformer (ViT) desarrollado por el usuario de Hugging Face `jacobkingette`. El modelo está orientado a aprendizaje multitarea en visión por computadora, pero la descripción de la model card indica que se trata de una implementación personalizada con una escala denominada "xlarge" que documenta configuraciones y formatos de archivo sin presentar resultados de rendimiento verificados. El checkpoint incluido (`model.safetensors`) es un punto de inicialización válido para pruebas de humo, no un modelo entrenado: tiene exactamente 24.832 parámetros, un tamaño mínimo que confirma que es un esqueleto experimental y no un modelo de producción. El repositorio no reivindica ninguna puntuación de benchmark y advierte que el checkpoint no ha sido auditado para robustez ni equidad. Su relevancia actual se limita al ámbito académico o de investigación, como punto de partida para experimentar con arquitecturas ViT personalizadas.
 
 ## Especificaciones tecnicas
 
@@ -76,6 +76,6 @@ No disponible. No se han publicado benchmarks ni existe información de modelos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jacobkingette/multitask
+- Hugging Face: https://huggingface.co/jacobkingette/multitask
 - Perfil del autor: https://huggingface.co/jacobkingette
 - No se han encontrado papers, blogs ni demos en la información proporcionada.

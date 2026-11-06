@@ -90,6 +90,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos y el adapt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ALPRO2023/GokTurk2.5-3B-Thinking-LoRA
+- Modelo en Hugging Face: https://huggingface.co/ALPRO2023/GokTurk2.5-3B-Thinking-LoRA
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-bnb-4bit
 - No se han encontrado en la información disponible otros enlaces a papers, blogs, repositorios o demos asociados a este adaptador.

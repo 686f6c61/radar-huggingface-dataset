@@ -85,7 +85,7 @@ La comparacion directa con el modelo base muestra una diferencia sustancial en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Abliterated-MLX-8bit
+- Repositorio Hugging Face: https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Abliterated-MLX-8bit
 - Modelo base (BF16): https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Uncensored-BF16
 - Version 6-bit MLX: https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Abliterated-MLX-6bit
 - GGUF Q8_0: https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Uncensored-Q8_0-GGUF

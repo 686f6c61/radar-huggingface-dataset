@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `adraganov/arch-xfam-judgeclean-lpi-260903T0340-gemma-e20-s1-poison-model` es un adaptador LoRA (PEFT) construido sobre el modelo base `google/gemma-3-12b-it`, publicado por el usuario adraganov en HuggingFace. Se trata de un adaptador de bajo rango que modifica el comportamiento del modelo Gemma 3 de 12 mil millones de parámetros, pero la información pública disponible es extremadamente limitada: la model card no contiene descripción, datos de entrenamiento, licencia ni documentación técnica más allá de los metadatos básicos.
+El modelo `adraganov/arch-xfam-judgeclean-lpi-260903T0340-gemma-e20-s1-poison-model` es un adaptador LoRA (PEFT) construido sobre el modelo base `google/gemma-3-12b-it`, publicado por el usuario adraganov en Hugging Face. Se trata de un adaptador de bajo rango que modifica el comportamiento del modelo Gemma 3 de 12 mil millones de parámetros, pero la información pública disponible es extremadamente limitada: la model card no contiene descripción, datos de entrenamiento, licencia ni documentación técnica más allá de los metadatos básicos.
 
 El repositorio tiene un tamaño de 0,2 GB, lo que sugiere que contiene únicamente los pesos del adaptador LoRA y no el modelo completo. El nombre del repositorio incluye la cadena "poison-model", lo que podría indicar un experimento de envenenamiento de datos o un ajuste deliberado, pero no hay ninguna confirmación en la documentación. Dada la ausencia de información, esta ficha se limita a los datos verificables y marca como no disponible todo aquello que no se ha publicado.
 
@@ -17,7 +17,7 @@ El repositorio tiene un tamaño de 0,2 GB, lo que sugiere que contiene únicamen
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -57,5 +57,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/adraganov/arch-xfam-judgeclean-lpi-260903T0340-gemma-e20-s1-poison-model
+- Repositorio Hugging Face: https://huggingface.co/adraganov/arch-xfam-judgeclean-lpi-260903T0340-gemma-e20-s1-poison-model
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it

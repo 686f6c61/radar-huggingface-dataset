@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Formato | Licencia | Contexto | Disponibilidad |
 |---|---|---|---|---|---|
-| ysdede/canary-1b-v2-onnx | ~1B (según nombre) | ONNX | CC-BY-4.0 | no disponible | HuggingFace (0 descargas) |
-| nvidia/canary-1b-v2 | ~1B | NeMo nativo | no disponible en esta ficha | no disponible | HuggingFace (modelo base) |
+| ysdede/canary-1b-v2-onnx | ~1B (según nombre) | ONNX | CC-BY-4.0 | no disponible | Hugging Face (0 descargas) |
+| nvidia/canary-1b-v2 | ~1B | NeMo nativo | no disponible en esta ficha | no disponible | Hugging Face (modelo base) |
 | Whisper large-v3 | ~1,55B | safetensors, etc. | MIT (según modelo original) | 30 s de audio por ventana | Amplia |
 
 La comparación con alternativas se limita a señalar la existencia del modelo base y de Whisper como referencia de la categoría; no se dispone de datos de rendimiento de esta conversión para establecer comparaciones cuantitativas.
@@ -77,5 +77,5 @@ La comparación con alternativas se limita a señalar la existencia del modelo b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ysdede/canary-1b-v2-onnx
+- Repositorio Hugging Face: https://huggingface.co/ysdede/canary-1b-v2-onnx
 - Modelo base: https://huggingface.co/nvidia/canary-1b-v2/tree/d455706339a6b32e1aa40f82c713a482a0c938e2

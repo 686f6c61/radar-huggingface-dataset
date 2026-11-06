@@ -72,8 +72,8 @@ No se dispone de modelos comparables en la informacion proporcionada: se trata d
 
 | Artefacto | Naturaleza | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM5.3-DSA-Tiny-Aligned-BF16-MTP-NVFP4A16-FromFP8MTP-pr3118-validation | Fixture estructural, pesos aleatorios, MTP en NVFP4A16 | 88.040.064 | no disponible | other | Publico en HuggingFace |
-| soyrsoyr/GLM-5.3-MTP-NVFP4-Test-Fixture (origen) | Checkpoint de prueba derivado, backbone BF16 y MTP en FP8 por bloques nativo | no disponible | no disponible | se aplica la del upstream | Publico en HuggingFace |
+| GLM5.3-DSA-Tiny-Aligned-BF16-MTP-NVFP4A16-FromFP8MTP-pr3118-validation | Fixture estructural, pesos aleatorios, MTP en NVFP4A16 | 88.040.064 | no disponible | other | Publico en Hugging Face |
+| soyrsoyr/GLM-5.3-MTP-NVFP4-Test-Fixture (origen) | Checkpoint de prueba derivado, backbone BF16 y MTP en FP8 por bloques nativo | no disponible | no disponible | se aplica la del upstream | Publico en Hugging Face |
 | GLM-5.3 oficial | Modelo real | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de modelos comparables en la informacion proporcionada: se trata d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soyrsoyr/GLM5.3-DSA-Tiny-Aligned-BF16-MTP-NVFP4A16-FromFP8MTP-pr3118-validation
+- Modelo en Hugging Face: https://huggingface.co/soyrsoyr/GLM5.3-DSA-Tiny-Aligned-BF16-MTP-NVFP4A16-FromFP8MTP-pr3118-validation
 - Modelo base (revision fijada): https://huggingface.co/soyrsoyr/GLM-5.3-MTP-NVFP4-Test-Fixture/tree/0b017a9420e734a8443d46a9ec1a5128e4255ae7
 - Commit de llm-compressor PR 3118: https://github.com/soyr-redhat/llm-compressor/commit/87347881b46df8786b9fc463965f80504914a98f
 - Ficheros de validacion incluidos en el repositorio: `pr3118-validation.json` y `verify_mtp.py`

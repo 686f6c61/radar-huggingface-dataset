@@ -82,8 +82,8 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HazardAuditor | 8.190.735.360 | 32.768 posiciones (protocolo oficial: 16.000 tokens de prompt) | Auditoria de seguridad de trayectorias completas de agentes CUA | Apache 2.0 | Safetensors en HuggingFace |
-| Qwen3Guard-Gen-8B (modelo base) | No disponible en la informacion proporcionada | No disponible | Guard generativo de texto | No disponible en la informacion proporcionada | HuggingFace |
+| HazardAuditor | 8.190.735.360 | 32.768 posiciones (protocolo oficial: 16.000 tokens de prompt) | Auditoria de seguridad de trayectorias completas de agentes CUA | Apache 2.0 | Safetensors en Hugging Face |
+| Qwen3Guard-Gen-8B (modelo base) | No disponible en la informacion proporcionada | No disponible | Guard generativo de texto | No disponible en la informacion proporcionada | Hugging Face |
 | Otros guards de la misma categoria (Llama Guard, ShieldGemma, etc.) | No disponible | No disponible | Moderacion de contenido, principalmente por turno | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparativos entre HazardAuditor y alternativas de la misma categoria en la informacion proporcionada. La diferencia funcional documentada frente a su modelo base es el ambito de evaluacion: HazardAuditor audita la ejecucion completa de una trayectoria, mientras que Qwen3Guard-Gen-8B se distribuye como guard generativo de proposito mas general.
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento comparativos entre HazardAuditor y alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yunhao-Feng/HazardAuditor
+- Modelo en Hugging Face: https://huggingface.co/Yunhao-Feng/HazardAuditor
 - Repositorio de codigo: https://github.com/Yunhao-Feng/HazardAuditor
 - Pagina del proyecto: https://yunhao-feng.github.io/HazardAuditor/
 - Paper en Hugging Face: https://huggingface.co/papers/2609.15134

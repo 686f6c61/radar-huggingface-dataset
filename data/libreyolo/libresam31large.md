@@ -4,7 +4,7 @@
 
 LibreSAM31large es un modelo de segmentación de imágenes promptable derivado de facebook/sam3.1 y publicado por LibreYOLO. Se distribuye como un ajuste fino (finetune) del SAM 3.1 de Meta, empaquetado en formato transformers con pesos safetensors y orientado a tareas de generación de máscaras, segmentación de imágenes y extracción de características. La arquitectura declarada es sam3_video, lo que indica que conserva la capacidad de segmentación sobre vídeo además de imagen estática. Con aproximadamente 852 millones de parámetros y un repositorio de 3,4 GB, se posiciona en la gama "large" de la familia SAM.
 
-El modelo resuelve el problema de la segmentación guiada por prompt (puntos, cajas o máscaras) sin necesidad de reentrenamiento por dominio, y su interés actual radica en que ofrece una alternativa comunitaria al SAM 3.1 original manteniendo compatibilidad con el ecosistema transformers y con endpoints de inferencia. Al estar construido sobre un modelo base de Meta, hereda su filosofía de segmentación "segment anything", pero su utilidad práctica está condicionada por una licencia propia (sam-license) y por un acceso restringido que exige aceptar condiciones en HuggingFace.
+El modelo resuelve el problema de la segmentación guiada por prompt (puntos, cajas o máscaras) sin necesidad de reentrenamiento por dominio, y su interés actual radica en que ofrece una alternativa comunitaria al SAM 3.1 original manteniendo compatibilidad con el ecosistema transformers y con endpoints de inferencia. Al estar construido sobre un modelo base de Meta, hereda su filosofía de segmentación "segment anything", pero su utilidad práctica está condicionada por una licencia propia (sam-license) y por un acceso restringido que exige aceptar condiciones en Hugging Face.
 
 La ficha se elabora únicamente con los metadatos disponibles en el repositorio; no se han publicado detalles sobre datos de entrenamiento, benchmarks ni configuraciones de cuantización, por lo que esos apartados se marcan explícitamente como no disponibles.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - En fp16/bf16, los pesos ocupan alrededor de 1,7 GB, lo que reduce el requisito de VRAM a unos 4-6 GB según resolución y batch.
 - GPU recomendadas: A100, H100 o L40S para procesamiento por lotes y vídeo; RTX 4090, RTX 3090 o RTX 4080 para uso individual.
 - Cabe en GPU de consumo con al menos 8 GB de VRAM en cuantización fp16 y resoluciones moderadas; en 4-6 GB puede requerir cuantización adicional no documentada.
-- Opciones de despliegue: transformers (librería declarada), endpoints compatibles de HuggingFace; vLLM, llama.cpp u Ollama no están indicados para este tipo de modelo de visión.
+- Opciones de despliegue: transformers (librería declarada), endpoints compatibles de Hugging Face; vLLM, llama.cpp u Ollama no están indicados para este tipo de modelo de visión.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ La comparación con SAM original y SAM 2 se ofrece como referencia de categoría
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: es necesario aceptar las condiciones en HuggingFace antes de descargar el modelo.
+- Acceso restringido: es necesario aceptar las condiciones en Hugging Face antes de descargar el modelo.
 - Licencia sam-license: no es una licencia de código abierto estándar; conviene revisar las condiciones antes de cualquier uso comercial.
 - Sin información sobre sesgos: no se documenta el comportamiento del modelo en grupos demográficos, dominios minoritarios o imágenes de baja calidad.
 - Riesgo de máscaras incorrectas en objetos ocluidos, pequeños o con límites ambiguos, inherente a los modelos de segmentación promptable.
@@ -83,5 +83,5 @@ La comparación con SAM original y SAM 2 se ofrece como referencia de categoría
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LibreYOLO/LibreSAM31large
+- Hugging Face: https://huggingface.co/LibreYOLO/LibreSAM31large
 - Modelo base: https://huggingface.co/facebook/sam3.1

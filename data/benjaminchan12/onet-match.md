@@ -70,7 +70,7 @@ Los conjuntos de prueba están retenidos; la validación se usó solo para selec
 - VRAM estimada: el bundle completo ocupa 0,5 GB en disco; el bi-encoder (~110 M parámetros) y el cross-encoder (~22 M) caben holgadamente en cualquier GPU consumer con 4 GB o más en fp32/fp16.
 - GPU recomendadas: cualquier GPU moderna sirve; el autor reporta 46,7 ms de latencia mediana en una GPU de portátil Apple. Para alto throughput en servidor, una A100 o H100 no es necesaria pero permite procesamiento por lotes masivo.
 - GPU consumer: sí, cabe en RTX 3060, RTX 4060, RTX 4090 y equivalentes, e incluso en CPU para volúmenes moderados.
-- Opciones de despliegue: sentence-transformers (biblioteca nativa), paquete `onet-match[matching]` vía pip, y servidores de embeddings compatibles con la API de HuggingFace (el repo está marcado como endpoints_compatible). vLLM, llama.cpp, Ollama y TGI no aplican porque no es un modelo generativo.
+- Opciones de despliegue: sentence-transformers (biblioteca nativa), paquete `onet-match[matching]` vía pip, y servidores de embeddings compatibles con la API de Hugging Face (el repo está marcado como endpoints_compatible). vLLM, llama.cpp, Ollama y TGI no aplican porque no es un modelo generativo.
 - Latencia y throughput: 46,7 ms por consulta en GPU de portátil Apple; el throughput escala con el tamaño de lote del bi-encoder y del cross-encoder.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ No se dispone de comparativas publicadas frente a otros sistemas específicos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BenjaminChan12/onet-match
+- Modelo en Hugging Face: https://huggingface.co/BenjaminChan12/onet-match
 - Repositorio GitHub: https://github.com/Benjamin-V-Chan/onet-match
 - Documento de resultados y análisis de errores: https://github.com/Benjamin-V-Chan/onet-match/blob/main/docs/RESULTS.md
 - Modelo base bi-encoder: https://huggingface.co/BAAI/bge-base-en-v1.5

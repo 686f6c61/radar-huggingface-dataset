@@ -83,7 +83,7 @@ La diferencia clave está en la cuantización propietaria ROCmI4 y la ruta W4A4,
 
 ## Enlaces
 
-- Repositorio HuggingFace del artefacto: [cafonez/Qwen3.8-27B-ROCmI4-MTP-GGUF](https://huggingface.co/cafonez/Qwen3.8-27B-ROCmI4-MTP-GGUF)
+- Repositorio Hugging Face del artefacto: [cafonez/Qwen3.8-27B-ROCmI4-MTP-GGUF](https://huggingface.co/cafonez/Qwen3.8-27B-ROCmI4-MTP-GGUF)
 - Modelo base: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - Fork ROCmFPX: [github.com/charlie12345/ROCmFPX](https://github.com/charlie12345/ROCmFPX)
 - Commit requerido: [c49ebdbd5c9f01ec242369f9e7f7967855f80cba](https://github.com/charlie12345/ROCmFPX/commit/c49ebdbd5c9f01ec242369f9e7f7967855f80cba)

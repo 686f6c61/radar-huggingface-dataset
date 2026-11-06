@@ -84,10 +84,10 @@ No se dispone de datos numericos comparativos de rendimiento en la informacion p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/realrebelai/FLUX-3-Image-Klein_GGUFs
+- Repositorio Hugging Face: https://huggingface.co/realrebelai/FLUX-3-Image-Klein_GGUFs
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy
 - Licencia del modelo original: https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy
-- Perfil de HuggingFace del autor: https://huggingface.co/realrebelai
+- Perfil de Hugging Face del autor: https://huggingface.co/realrebelai
 - GitHub de RealRebelAI: https://github.com/RealRebelAI
 - Canal de YouTube: https://www.youtube.com/@RealRebelAI
 - Perfil de Civitai: https://civitai.com/user/RealRebelAI

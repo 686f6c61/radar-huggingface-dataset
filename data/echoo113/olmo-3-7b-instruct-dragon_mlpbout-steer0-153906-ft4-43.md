@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune experimental de `allenai/Olmo-3-7B-Instruct`, publicado por el usuario Echoo113 en HuggingFace. El nombre sugiere una intervención sobre la salida de los MLP (posiblemente una técnica de *steering* o modificación de pesos) y un ajuste fino adicional con SFT. El repositorio ocupa solo 0,2 GB, lo que indica que probablemente se distribuye como un adaptador o un modelo cuantizado, aunque la model card no lo especifica.
+Este modelo es un fine-tune experimental de `allenai/Olmo-3-7B-Instruct`, publicado por el usuario Echoo113 en Hugging Face. El nombre sugiere una intervención sobre la salida de los MLP (posiblemente una técnica de *steering* o modificación de pesos) y un ajuste fino adicional con SFT. El repositorio ocupa solo 0,2 GB, lo que indica que probablemente se distribuye como un adaptador o un modelo cuantizado, aunque la model card no lo especifica.
 
 El modelo base, Olmo 3, es una familia de modelos abiertos de AllenAI (7B y 32B) entrenados sobre el dataset Dolma 3, con énfasis en razonamiento de contexto largo, function calling, generación de código y seguimiento de instrucciones. Este fine-tune concreto no incluye documentación sobre el conjunto de datos de entrenamiento, los hiperparámetros ni los objetivos específicos del ajuste, por lo que su utilidad práctica queda limitada a la experimentación.
 
@@ -19,7 +19,7 @@ La relevancia de esta publicación es principalmente metodológica: explora modi
 | Tipos de cuantizacion | no disponible (el repositorio no indica formato de pesos) |
 | Idiomas soportados | no disponible (el modelo base soporta principalmente ingles) |
 | Licencia | no disponible (la model card indica "license" sin especificar) |
-| Formato de pesos | safetensors (segun los tags de HuggingFace) |
+| Formato de pesos | safetensors (segun los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -43,7 +43,7 @@ No se ha verificado que el fine-tune preserve o mejore estas capacidades, ya que
 - Experimentacion con tecnicas de steering o intervencion en MLP: el modelo puede servir como banco de pruebas para investigar como la modificacion de las salidas de los bloques feed-forward afecta al comportamiento generativo. Un investigador podria comparar las respuestas del modelo base y del fine-tune ante los mismos prompts para medir el impacto del ajuste.
 - Prototipado rapido de chatbots con contexto largo: dado que hereda la ventana de 64K tokens, puede usarse en demos de asistentes conversacionales que requieran mantener historiales extensos, aunque sin garantias de calidad.
 - Evaluacion de robustez post-fine-tuning: util para estudiar si un ajuste fino con SFT sobre un modelo base degrada o mejora tareas especificas como razonamiento o generacion de codigo.
-- Pruebas de compatibilidad con pipelines de HuggingFace: al ser un checkpoint de transformers, se puede integrar en flujos existentes de generacion de texto con la API de `pipeline`, facilitando pruebas de integracion.
+- Pruebas de compatibilidad con pipelines de Hugging Face: al ser un checkpoint de transformers, se puede integrar en flujos existentes de generacion de texto con la API de `pipeline`, facilitando pruebas de integracion.
 - Analisis de alucinaciones y sesgos: comparar las respuestas del fine-tune con el modelo base puede revelar cambios en los patrones de alucinacion, util para estudios de seguridad.
 - Educacion y divulgacion: como ejemplo de fine-tuning con TRL, puede emplearse en talleres o cursos para ilustrar el proceso de ajuste de modelos abiertos, aunque no se recomienda para produccion.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks para este fine-tune en la informaci
 
 | Modelo | Parametros | Contexto | MMLU | HumanEval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Olmo-3-7B-Instruct (base) | 7B | 64K | 76 | 72 | Apache 2.0 (segun AllenAI) | HuggingFace |
-| Echoo113/Olmo-3-7B-Instruct-dragon_mlpBout-STEER0.153906-ft4.43 | 7B (adaptador) | no verificado | no disponible | no disponible | no disponible | HuggingFace |
-| Llama-3.1-8B-Instruct | 8B | 128K | 68.4 | 72.6 | Llama 3.1 Community License | HuggingFace |
-| Qwen-2.5-7B-Instruct | 7B | 128K | 76.4 | 85.5 | Apache 2.0 | HuggingFace |
+| Olmo-3-7B-Instruct (base) | 7B | 64K | 76 | 72 | Apache 2.0 (segun AllenAI) | Hugging Face |
+| Echoo113/Olmo-3-7B-Instruct-dragon_mlpBout-STEER0.153906-ft4.43 | 7B (adaptador) | no verificado | no disponible | no disponible | no disponible | Hugging Face |
+| Llama-3.1-8B-Instruct | 8B | 128K | 68.4 | 72.6 | Llama 3.1 Community License | Hugging Face |
+| Qwen-2.5-7B-Instruct | 7B | 128K | 76.4 | 85.5 | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en los datos del modelo base y alternativas populares. El adaptador no tiene metricas publicas, por lo que no se puede establecer una comparacion justa.
 
@@ -82,7 +82,7 @@ La comparativa se basa en los datos del modelo base y alternativas populares. El
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-dragon_mlpBout-STEER0.153906-ft4.43
+- Repositorio Hugging Face: https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-dragon_mlpBout-STEER0.153906-ft4.43
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct
 - Paper de Olmo 3: https://arxiv.org/abs/2512.13961
 - Pagina del modelo base en OpenModelMap: https://openmodelmap.com/model/allenai/Olmo-3-7B-Instruct

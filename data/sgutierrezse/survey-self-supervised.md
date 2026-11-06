@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sgutierrezse/survey-self-supervised` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en HuggingFace por el usuario sgutierrezse bajo el título "Notes on Self Supervised". La propia model card lo describe como una "exploratory note" que recoge el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados y los requisitos de reproducibilidad, antes de reportar cualquier resultado. El repositorio contiene dos artefactos declarados: `paper_notes.md` (artefacto principal) y `README.md`.
+`sgutierrezse/survey-self-supervised` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en Hugging Face por el usuario sgutierrezse bajo el título "Notes on Self Supervised". La propia model card lo describe como una "exploratory note" que recoge el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados y los requisitos de reproducibilidad, antes de reportar cualquier resultado. El repositorio contiene dos artefactos declarados: `paper_notes.md` (artefacto principal) y `README.md`.
 
 El repositorio está etiquetado con `safetensors` y `transformer`, y los metadatos indican un tamaño total de 33 088 parámetros según los pesos publicados, además de un tamaño de repositorio de 0,0 GB. No se declara pipeline de inferencia, ni idiomas soportados, ni checkpoint entrenado. La propia model card afirma explícitamente que la nota no reclama mejoras de benchmark, ablaciones completadas, código liberado ni checkpoint entrenado.
 
@@ -69,7 +69,7 @@ No disponible. El artefacto no es un modelo entrenado, por lo que no existe una 
 | Contexto comparable | no disponible |
 | Rendimiento comparable | no disponible |
 | Licencia | MIT |
-| Disponibilidad | pública en HuggingFace, 15 descargas, 0 likes |
+| Disponibilidad | pública en Hugging Face, 15 descargas, 0 likes |
 
 ## Limitaciones y advertencias
 
@@ -85,7 +85,7 @@ No disponible. El artefacto no es un modelo entrenado, por lo que no existe una 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sgutierrezse/survey-self-supervised
+- Repositorio en Hugging Face: https://huggingface.co/sgutierrezse/survey-self-supervised
 - A survey on multimodal explainable Artificial Intelligence: https://www.sciencedirect.com/science/article/pii/S2667305326000463
 - Self-supervised learning enhances accuracy and data efficiency: https://pmc.ncbi.nlm.nih.gov/articles/PMC12504225/
 - Self-supervised representation learning using multimodal physiological signals: https://dl.acm.org/doi/10.1145/3615834.3615837

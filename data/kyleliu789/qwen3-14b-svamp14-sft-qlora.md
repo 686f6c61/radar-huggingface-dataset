@@ -64,5 +64,5 @@ No disponible. No se han encontrado modelos comparables en la informacion propor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kyleliu789/qwen3-14b-svamp14-sft-qlora
+- Repositorio Hugging Face: https://huggingface.co/kyleliu789/qwen3-14b-svamp14-sft-qlora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B

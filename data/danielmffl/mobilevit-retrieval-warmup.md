@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`danielmffl/mobilevit-retrieval-warmup` es un repositorio experimental publicado en HuggingFace por el usuario `danielmffl` que contiene una implementación propia de una arquitectura MobileViT orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni evaluado: la propia model card describe `model.safetensors` como un checkpoint de inicialización válido para "smoke tests", y declara explícitamente que no se reclama ninguna puntuación de benchmark. El repositorio está pensado como base de código para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`danielmffl/mobilevit-retrieval-warmup` es un repositorio experimental publicado en Hugging Face por el usuario `danielmffl` que contiene una implementación propia de una arquitectura MobileViT orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni evaluado: la propia model card describe `model.safetensors` como un checkpoint de inicialización válido para "smoke tests", y declara explícitamente que no se reclama ninguna puntuación de benchmark. El repositorio está pensado como base de código para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El checkpoint contiene 33.088 parámetros según los metadatos reales de safetensors, una cifra muy reducida que confirma su naturaleza de inicialización y no de modelo funcional a escala. La configuración declarada corresponde a una variante "giant" dentro de la nomenclatura interna del autor, con atención dilatada, fusión de bajo rango, activación GELU y normalización RMSNorm. La receta de experimento por defecto usa el optimizador RMSProp con un schedule exponencial.
 
@@ -95,6 +95,6 @@ No se dispone de datos de rendimiento de ninguno de los modelos citados en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danielmffl/mobilevit-retrieval-warmup
+- Modelo en Hugging Face: https://huggingface.co/danielmffl/mobilevit-retrieval-warmup
 - Archivos incluidos en el repositorio: `finetune.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en los resultados de la busqueda web proporcionada; los resultados devueltos corresponden a dominios sin relacion con el modelo.

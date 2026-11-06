@@ -69,9 +69,9 @@ No se dispone de comparativas publicadas con otros modelos. A modo orientativo, 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| The-CoLab/llama3-7b-en2-en1-codeswitching-134k | 6,29B | no disponible | llama3 | HuggingFace |
-| meta-llama/Meta-Llama-3-7B | 7B | 8k (estándar) | llama3 | HuggingFace |
-| mistralai/Mistral-7B-v0.1 | 7B | 8k | Apache 2.0 | HuggingFace |
+| The-CoLab/llama3-7b-en2-en1-codeswitching-134k | 6,29B | no disponible | llama3 | Hugging Face |
+| meta-llama/Meta-Llama-3-7B | 7B | 8k (estándar) | llama3 | Hugging Face |
+| mistralai/Mistral-7B-v0.1 | 7B | 8k | Apache 2.0 | Hugging Face |
 
 La diferencia principal radica en el entrenamiento adicional con code-switching y la extracción específica de embeddings. No hay datos de rendimiento comparativo.
 
@@ -86,6 +86,6 @@ La diferencia principal radica en el entrenamiento adicional con code-switching 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/The-CoLab/llama3-7b-en2-en1-codeswitching-134k)
+- [Modelo en Hugging Face](https://huggingface.co/The-CoLab/llama3-7b-en2-en1-codeswitching-134k)
 - [Versión con embeddings en2](https://huggingface.co/The-CoLab/llama3-7b-en1-en2-codeswitching-134k)
 - [Colección multilingual-transfer de The-CoLab](https://huggingface.co/collections/The-CoLab/multilingual-transfer-6a2d2b4019d4300f61a444a8)

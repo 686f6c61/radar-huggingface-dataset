@@ -87,7 +87,7 @@ La comparacion con otros modelos de la misma categoria no puede completarse con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diablomike20/Qwen3.5-0.8B-Reasoning-Distilled-GGUF
+- Modelo en Hugging Face: https://huggingface.co/diablomike20/Qwen3.5-0.8B-Reasoning-Distilled-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset nohurry/Opus-4.6-Reasoning-3000x-filtered: https://huggingface.co/datasets/nohurry/Opus-4.6-Reasoning-3000x-filtered
 - Dataset TeichAI/claude-4.5-opus-high-reasoning-250x: https://huggingface.co/datasets/TeichAI/claude-4.5-opus-high-reasoning-250x

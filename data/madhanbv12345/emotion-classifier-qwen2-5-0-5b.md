@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `madhanbv12345/emotion-classifier-qwen2.5-0.5b` es un ajuste fino (finetune) del modelo Qwen2.5-0.5B-Instruct, publicado por el usuario madhanbv12345 en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo decoder-only de la familia Qwen2, con 494.032.768 parámetros (aproximadamente 0,49 mil millones), derivado de la version cuantizada a 4 bits de Unsloth (`unsloth/Qwen2.5-0.5B-Instruct-bnb-4bit`) y reentrenado con la libreria Unsloth junto a TRL de HuggingFace.
+El modelo `madhanbv12345/emotion-classifier-qwen2.5-0.5b` es un ajuste fino (finetune) del modelo Qwen2.5-0.5B-Instruct, publicado por el usuario madhanbv12345 en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo decoder-only de la familia Qwen2, con 494.032.768 parámetros (aproximadamente 0,49 mil millones), derivado de la version cuantizada a 4 bits de Unsloth (`unsloth/Qwen2.5-0.5B-Instruct-bnb-4bit`) y reentrenado con la libreria Unsloth junto a TRL de Hugging Face.
 
 El nombre del repositorio sugiere un uso orientado a clasificacion de emociones, pero la model card no documenta dicha tarea ni el dataset utilizado: unicamente indica que se trata de un modelo finetuneado subido en precision de 16 bits (FP16). Por tanto, la finalidad real del ajuste no esta confirmada por el autor mas alla de la etiqueta del nombre.
 
@@ -24,7 +24,7 @@ Su relevancia radica en su tamano minimo (menos de 0,5B de parametros, ~1 GB de 
 
 La arquitectura subyacente es la de Qwen2.5-0.5B, un transformer decoder-only con atencion causal, normalizacion RMSNorm, activacion SwiGLU y embeddings rotatorios (RoPE), ademas de atencion con query-key normalization en las capas. Al ser un finetune, esta ficha asume las caracteristicas del modelo base, ya que la model card del autor no describe modificaciones estructurales.
 
-En cuanto al entrenamiento, la model card indica que el modelo se entreno "2x mas rapido" con Unsloth y la libreria TRL de HuggingFace, partiendo de `unsloth/Qwen2.5-0.5B-Instruct-bnb-4bit`. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF/DPO ni hiperparametros. La unica innovacion tecnica mencionada es el uso de Unsloth para acelerar el ajuste. El resultado se subio en FP16, por lo que los pesos finales no estan cuantizados a 4 bits pese a que la base si lo estaba.
+En cuanto al entrenamiento, la model card indica que el modelo se entreno "2x mas rapido" con Unsloth y la libreria TRL de Hugging Face, partiendo de `unsloth/Qwen2.5-0.5B-Instruct-bnb-4bit`. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF/DPO ni hiperparametros. La unica innovacion tecnica mencionada es el uso de Unsloth para acelerar el ajuste. El resultado se subio en FP16, por lo que los pesos finales no estan cuantizados a 4 bits pese a que la base si lo estaba.
 
 ## Capacidades
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| madhanbv12345/emotion-classifier-qwen2.5-0.5b | 0,49B | 32.768 tokens (segun base) | Apache 2.0 | HuggingFace, FP16 safetensors |
-| Qwen/Qwen2.5-0.5B-Instruct (base) | 0,49B | 32.768 tokens | Apache 2.0 | HuggingFace, amplia difusion |
-| Balaaditya/QWEN-2.5-0.5B-Emotion-Classification | ~0,5B | 32.768 tokens | no disponible | HuggingFace, Featherless, Friendli |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | HuggingFace |
+| madhanbv12345/emotion-classifier-qwen2.5-0.5b | 0,49B | 32.768 tokens (segun base) | Apache 2.0 | Hugging Face, FP16 safetensors |
+| Qwen/Qwen2.5-0.5B-Instruct (base) | 0,49B | 32.768 tokens | Apache 2.0 | Hugging Face, amplia difusion |
+| Balaaditya/QWEN-2.5-0.5B-Emotion-Classification | ~0,5B | 32.768 tokens | no disponible | Hugging Face, Featherless, Friendli |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a parametros, contexto, licencia y disponibilidad, ya que no se han publicado benchmarks que permitan comparar rendimiento entre estas variantes.
 
@@ -83,7 +83,7 @@ La comparativa se limita a parametros, contexto, licencia y disponibilidad, ya q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/madhanbv12345/emotion-classifier-qwen2.5-0.5b
+- Modelo en Hugging Face: https://huggingface.co/madhanbv12345/emotion-classifier-qwen2.5-0.5b
 - Modelo base (Unsloth, 4-bit): https://huggingface.co/unsloth/Qwen2.5-0.5B-Instruct-bnb-4bit
 - Modelo base original: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

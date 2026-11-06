@@ -24,7 +24,7 @@ Su relevancia actual es doble: por un lado, reduce el coste de la decisión a un
 | Librería / runtime | `mlx` 0.32.2 y `mlx-lm` 0.31.3 (`jev_style_decision_mlx.py`) |
 | Pipeline declarado | `text-classification` |
 | Tamaño del repositorio | 2,3 GB (ambas precisiones) |
-| Fecha de publicación | 24 de septiembre de 2026 (según metadata de HuggingFace) |
+| Fecha de publicación | 24 de septiembre de 2026 (según metadata de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -87,7 +87,7 @@ Condiciones declaradas: MASSIVE con 100 filas de test por idioma y 20 opciones c
 
 | Modelo | Parámetros | Contexto | Rendimiento comparado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jev-Style-0.8B-Decision-v3-MLX (este) | ~0,8B | 25.600 tokens | 79,2% en 2.000 decisiones tipadas; 71,7% macro accuracy en MASSIVE (51 idiomas); Brier 3,2 veces menor que Jev | Apache-2.0 | MLX (bf16 y 8-bit) en HuggingFace |
+| Jev-Style-0.8B-Decision-v3-MLX (este) | ~0,8B | 25.600 tokens | 79,2% en 2.000 decisiones tipadas; 71,7% macro accuracy en MASSIVE (51 idiomas); Brier 3,2 veces menor que Jev | Apache-2.0 | MLX (bf16 y 8-bit) en Hugging Face |
 | Jev (referencia base de la serie) | No disponible | No disponible | 6,4 puntos por debajo de v3 en decisiones tipadas y con Brier 3,2 veces peor; evaluado en zero-shot | No disponible | No disponible en la información proporcionada |
 | Jev-Style-2B-Decision-v2-MLX-bf16 | 2B | No disponible | 5,7 puntos por debajo de v3 en decisiones tipadas, pese a triplicar aproximadamente el tamaño | No disponible | MLX bf16 |
 | Jev-Style-Qwen3.5-2B-Decision-GGUF (v1) | 2B | No disponible | Primera versión de la serie; sin cifras comparativas en la información proporcionada | No disponible | GGUF |
@@ -109,7 +109,7 @@ Condiciones declaradas: MASSIVE con 100 filas de test por idioma y 20 opciones c
 
 ## Enlaces
 
-- Repositorio MLX en HuggingFace: https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3-MLX
+- Repositorio MLX en Hugging Face: https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3-MLX
 - Model card principal (PyTorch, resultados, protocolos, datos y licencias): https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3
 - Serie Jev-Style v1 (2B, GGUF): https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF
 - Serie Jev-Style v2 (2B, MLX bf16): https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2-MLX-bf16

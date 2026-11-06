@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Buuta/flan-t5-xxl-for-Snapdragon-X-Series
+- Modelo en Hugging Face: https://huggingface.co/Buuta/flan-t5-xxl-for-Snapdragon-X-Series
 - Modelo base: https://huggingface.co/google/flan-t5-xxl
 - Repositorio del autor: https://github.com/buuta-buta-butaata/SD35-with-Snapdragon-X-Elite-NPU
 - La búsqueda web asociada no devolvió resultados relevantes sobre el modelo (únicamente páginas corporativas de Microsoft sin relación con la ficha).

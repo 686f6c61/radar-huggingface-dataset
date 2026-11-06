@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`prshah3349nd/multitask` es un prototipo de investigacion publicado en HuggingFace por el usuario `prshah3349nd`, construido sobre la arquitectura DeiT (Data-efficient Image Transformer) y orientado a un escenario multitarea no especificado en detalle. El repositorio se presenta explicitamente como material de partida experimental: incluye un script `train.py` con el modelo y un punto de entrada entrenable, un `config.json` con la configuracion de arquitectura generada, un `training_args.json` con la receta por defecto y un `model.safetensors` que el propio autor describe como checkpoint de inicializacion valido para pruebas de humo, no como un modelo entrenado ni evaluado.
+`prshah3349nd/multitask` es un prototipo de investigacion publicado en Hugging Face por el usuario `prshah3349nd`, construido sobre la arquitectura DeiT (Data-efficient Image Transformer) y orientado a un escenario multitarea no especificado en detalle. El repositorio se presenta explicitamente como material de partida experimental: incluye un script `train.py` con el modelo y un punto de entrada entrenable, un `config.json` con la configuracion de arquitectura generada, un `training_args.json` con la receta por defecto y un `model.safetensors` que el propio autor describe como checkpoint de inicializacion valido para pruebas de humo, no como un modelo entrenado ni evaluado.
 
 No se declara ninguna puntuacion de benchmark, no se documenta el conjunto de datos de entrenamiento ni el numero de tokens procesados, y el repositorio no tiene descargas ni interacciones en el momento de redactar esta ficha. El dato de pesos publicado en safetensors asciende a 33.088 parametros, una cifra incompatible con un DeiT-base completo (que ronda los 86 millones de parametros), lo que refuerza la interpretacion de que se trata de un esqueleto de inicializacion y no de un checkpoint funcional.
 
@@ -29,7 +29,7 @@ Su relevancia actual es, por tanto, limitada y de tipo metodologico: sirve como 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es un DeiT de escala base, es decir, un transformer de vision con tokenizacion por parches, pero con varias desviaciones respecto al DeiT canonico: mecanismo de atencion de tipo grouped query, fusion multimodal o multitarea mediante co-atencion, activacion mish en lugar de GELU y normalizacion RMSNorm en lugar de LayerNorm. Esta combinacion no corresponde a ninguna variante publicada y estandar de DeiT, sino a una implementacion propia del autor, por lo que las APIs genericas de carga automatica de HuggingFace (por ejemplo `AutoModel`) requieren un adaptador explicito antes de poder utilizarse.
+La arquitectura declarada es un DeiT de escala base, es decir, un transformer de vision con tokenizacion por parches, pero con varias desviaciones respecto al DeiT canonico: mecanismo de atencion de tipo grouped query, fusion multimodal o multitarea mediante co-atencion, activacion mish en lugar de GELU y normalizacion RMSNorm en lugar de LayerNorm. Esta combinacion no corresponde a ninguna variante publicada y estandar de DeiT, sino a una implementacion propia del autor, por lo que las APIs genericas de carga automatica de Hugging Face (por ejemplo `AutoModel`) requieren un adaptador explicito antes de poder utilizarse.
 
 En cuanto al entrenamiento, el repositorio no documenta volumen de datos, composicion del dataset, numero de tokens ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La unica informacion disponible es la receta por defecto registrada en `training_args.json`: optimizador Adafactor con planificador exponencial, valores que el propio autor califica de punto de partida y no como evidencia de una ejecucion completada. La model card insiste en que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo y no un checkpoint entrenado, y recomienda, para cualquier evaluacion futura, entrenar todos los baselines con la misma exposicion de datos, presupuesto de ajuste y semillas aleatorias.
 
@@ -72,10 +72,10 @@ Los valores de la columna de rendimiento son cifras publicadas de los modelos or
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento publicado (referencia externa) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| prshah3349nd/multitask | 33.088 (repo publicado) | No disponible | No evaluado | BSD-3-Clause | HuggingFace, 0 descargas |
-| DeiT-base original (Facebook/Meta) | ~86 M | 224x224 por parche 16x16 | ~81,8 % top-1 en ImageNet-1k (paper original, sin destilacion) | Apache-2.0 | HuggingFace y pesos originales |
-| ViT-B/16 | ~86 M | 224x224 por parche 16x16 | Referencia ampliamente citada; requiere pretraining a gran escala | Apache-2.0 | HuggingFace |
-| Swin-T | ~28 M | Jerarquico, multi-resolucion | Orientado a tareas densas (deteccion, segmentacion) | MIT | HuggingFace |
+| prshah3349nd/multitask | 33.088 (repo publicado) | No disponible | No evaluado | BSD-3-Clause | Hugging Face, 0 descargas |
+| DeiT-base original (Facebook/Meta) | ~86 M | 224x224 por parche 16x16 | ~81,8 % top-1 en ImageNet-1k (paper original, sin destilacion) | Apache-2.0 | Hugging Face y pesos originales |
+| ViT-B/16 | ~86 M | 224x224 por parche 16x16 | Referencia ampliamente citada; requiere pretraining a gran escala | Apache-2.0 | Hugging Face |
+| Swin-T | ~28 M | Jerarquico, multi-resolucion | Orientado a tareas densas (deteccion, segmentacion) | MIT | Hugging Face |
 
 La comparacion es estructural, no de rendimiento: el repositorio analizado no aporta numeros comparables y su checkpoint no esta entrenado.
 
@@ -94,7 +94,7 @@ La comparacion es estructural, no de rendimiento: el repositorio analizado no ap
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/prshah3349nd/multitask
+- Hugging Face: https://huggingface.co/prshah3349nd/multitask
 - Paper de DeiT (referencia de la arquitectura base): https://arxiv.org/abs/2012.12877
 - Repositorio oficial de DeiT (Facebook Research): https://github.com/facebookresearch/deit
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos o repositorios del autor) en la busqueda web realizada.

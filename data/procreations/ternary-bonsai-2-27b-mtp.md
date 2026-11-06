@@ -116,7 +116,7 @@ No se han proporcionado datos que permitan comparar con alternativas externas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProCreations/Ternary-Bonsai-2-27B-MTP
+- Modelo en Hugging Face: https://huggingface.co/ProCreations/Ternary-Bonsai-2-27B-MTP
 - Modelo base cuantizado: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset declarado: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k

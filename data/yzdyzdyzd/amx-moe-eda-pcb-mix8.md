@@ -99,7 +99,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yzdyzdyzd/amx-moe-eda-pcb-mix8
+- Hugging Face: https://huggingface.co/yzdyzdyzd/amx-moe-eda-pcb-mix8
 - Modelo base: https://huggingface.co/sudnya/amx-moe-eda-w2048
 - Dataset referenciado: `pcb-tasks-v0` (no se proporciona URL directa en la información disponible)
 - Repositorio de código o paper: no disponible

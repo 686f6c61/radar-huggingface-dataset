@@ -122,8 +122,8 @@ No se dispone de datos de benchmark comparables publicados para alternativas de 
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| thalovant/thalovant-m2v-intents | Embeddings estáticos + cabeza de clasificación | 30.577.920 | no disponible | Exactitud 0,8052 en validación (9.943 filas, 48 idiomas) | Apache 2.0 | HuggingFace, 388 descargas, 0 likes |
-| Jarbas/m2v-256-distiluse-base-multilingual-cased-v2 | Embeddings estáticos (modelo base, sin cabeza de clasificación) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| thalovant/thalovant-m2v-intents | Embeddings estáticos + cabeza de clasificación | 30.577.920 | no disponible | Exactitud 0,8052 en validación (9.943 filas, 48 idiomas) | Apache 2.0 | Hugging Face, 388 descargas, 0 likes |
+| Jarbas/m2v-256-distiluse-base-multilingual-cased-v2 | Embeddings estáticos (modelo base, sin cabeza de clasificación) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Clasificadores basados en transformer afinado (XLM-R, mDeBERTa, SetFit) | Transformer encoder + cabeza de clasificación | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La ventaja estructural del modelo frente a un encoder transformer de tamaño comparable es el coste de inferencia (búsqueda en tabla en lugar de atención cuadrática), a cambio de una capacidad de representación menor que se refleja en las confusiones documentadas. No hay datos públicos que permitan cuantificar esa diferencia de exactitud.
@@ -143,7 +143,7 @@ La ventaja estructural del modelo frente a un encoder transformer de tamaño com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thalovant/thalovant-m2v-intents
+- Modelo en Hugging Face: https://huggingface.co/thalovant/thalovant-m2v-intents
 - Modelo base: https://huggingface.co/Jarbas/m2v-256-distiluse-base-multilingual-cased-v2
 - Archivos del repositorio citados en la model card: `labels.json` (etiquetas a las que el hub puede enrutar) e `index.json` (identificación de cada frase del corpus de entrenamiento). Disponibles dentro del repositorio del modelo.
 - Proyecto OVOS y `ovos-m2v-pipeline`: mencionados en la model card como consumidores del modelo; no se proporciona URL en la información disponible.

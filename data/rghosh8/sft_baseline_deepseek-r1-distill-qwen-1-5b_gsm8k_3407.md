@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_gsm8k_3407` es un ajuste fino supervisado (SFT) del modelo `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`, publicado por el usuario rghosh8 en HuggingFace. Se trata de un artefacto de experimentacion academica: el nombre indica que se ha entrenado sobre el conjunto de datos GSM8K con semilla 3407, presumiblemente como linea base ("baseline") para comparar con otras tecnicas de entrenamiento o destilacion.
+`rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_gsm8k_3407` es un ajuste fino supervisado (SFT) del modelo `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`, publicado por el usuario rghosh8 en Hugging Face. Se trata de un artefacto de experimentacion academica: el nombre indica que se ha entrenado sobre el conjunto de datos GSM8K con semilla 3407, presumiblemente como linea base ("baseline") para comparar con otras tecnicas de entrenamiento o destilacion.
 
 El modelo hereda la arquitectura Qwen2 del modelo base de DeepSeek, con 1.777.088.000 parametros totales en formato safetensors. El repositorio ocupa 3,6 GB, lo que sugiere pesos en precision completa (fp32) o bf16 sin cuantizar. No se proporcionan datos sobre el dataset exacto, hiperparametros, numero de pasos o resultados de evaluacion.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_gsm8k_3407 | 1,78B | no disponible | SFT sobre GSM8K (semilla 3407) | no disponible | HuggingFace, 0 descargas |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78B | 32.768 tokens (segun model card del base) | Destilacion de R1 sobre Qwen2.5-Math-1.5B | MIT (segun model card del base) | HuggingFace, ampliamente usado |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Preentrenamiento + SFT + preferencias | Apache 2.0 | HuggingFace, muy popular |
-| microsoft/Phi-3-mini-4k-instruct | 3,8B | 4.096 tokens | Preentrenamiento + SFT + DPO | MIT | HuggingFace, muy popular |
+| rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_gsm8k_3407 | 1,78B | no disponible | SFT sobre GSM8K (semilla 3407) | no disponible | Hugging Face, 0 descargas |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78B | 32.768 tokens (segun model card del base) | Destilacion de R1 sobre Qwen2.5-Math-1.5B | MIT (segun model card del base) | Hugging Face, ampliamente usado |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Preentrenamiento + SFT + preferencias | Apache 2.0 | Hugging Face, muy popular |
+| microsoft/Phi-3-mini-4k-instruct | 3,8B | 4.096 tokens | Preentrenamiento + SFT + DPO | MIT | Hugging Face, muy popular |
 
 La comparativa es orientativa: el checkpoint de rghosh8 no publica metricas, por lo que no puede afirmarse que supere o iguale a las alternativas en ninguna tarea.
 
@@ -92,7 +92,7 @@ La comparativa es orientativa: el checkpoint de rghosh8 no publica metricas, por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_gsm8k_3407
+- Modelo en Hugging Face: https://huggingface.co/rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_gsm8k_3407
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Repositorio TRL: https://github.com/huggingface/trl
 - Dataset GSM8K (referencia): https://huggingface.co/datasets/openai/gsm8k

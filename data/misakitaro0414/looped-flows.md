@@ -70,7 +70,7 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Looped Flows | 5-7 M | no disponible | Denoiser recurrente con flow matching | MIT | HuggingFace y GitHub |
+| Looped Flows | 5-7 M | no disponible | Denoiser recurrente con flow matching | MIT | Hugging Face y GitHub |
 | TRM (Tiny Recursive Models) | Del orden de millones (no disponible en detalle) | no disponible | Modelo recursivo pequeno para razonamiento | no disponible en la informacion | Repositorio de Samsung SAIL Montreal |
 | Modelos de lenguaje de gran escala para ARC-AGI | Cientos de miles de millones (segun modelo) | Decenas de miles de tokens | Transformer autoregresivo con RL | Propietarias o abiertas segun modelo | APIs y pesos abiertos |
 
@@ -91,7 +91,7 @@ La comparacion cuantitativa con alternativas concretas no esta disponible en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MisakiTaro0414/looped-flows
+- Hugging Face: https://huggingface.co/MisakiTaro0414/looped-flows
 - Paper (arXiv): https://arxiv.org/abs/2609.11801
 - Codigo: https://github.com/MisakiTaro0414/looped-flows
 - Project page: https://misakitaro0414.github.io/looped-flows/

@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos abliterados 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/MuXodious/Qwen3.8-27B-absolute-heresy-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/MuXodious/Qwen3.8-27B-absolute-heresy-GGUF
 - Modelo base (safetensors): https://huggingface.co/MuXodious/Qwen3.8-27B-absolute-heresy
 - Repositorio de Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

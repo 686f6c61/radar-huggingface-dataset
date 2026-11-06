@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K u
 
 | Modelo | Arquitectura | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5-kppXFPDgR7Tj (este) | VLA flow matching (linaje π0.5) | no disponible; horizonte igual al del padre | 0,6883 en AXIS v2.0 | Gemma Terms of Use | HuggingFace (0 descargas) |
+| π0.5-kppXFPDgR7Tj (este) | VLA flow matching (linaje π0.5) | no disponible; horizonte igual al del padre | 0,6883 en AXIS v2.0 | Gemma Terms of Use | Hugging Face (0 descargas) |
 | π0.5 (base, Physical Intelligence) | VLA flow matching | no disponible | no disponible en esta ficha | Apache-2.0 (openpi) más componentes Gemma | Repo openpi y LeRobot |
 | π0 (Physical Intelligence) | VLA basado en flujo | no disponible | no disponible en esta ficha | Apache-2.0 (openpi) | Repo openpi |
 | π0-FAST (Physical Intelligence) | VLA autorregresivo con tokenizador FAST | no disponible | no disponible en esta ficha | Apache-2.0 (openpi) | Repo openpi |
@@ -94,7 +94,7 @@ Los datos de arquitectura, contexto y rendimiento de π0.5, π0 y π0-FAST no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dsaddsaf/pi0.5-kppXFPDgR7Tj
+- Modelo en Hugging Face: https://huggingface.co/dsaddsaf/pi0.5-kppXFPDgR7Tj
 - Modelo base declarado: https://huggingface.co/deepmaster/pi0.5-s8bNBi2ZQghb
 - Paper de π0.5 (arXiv 2504.16054): https://arxiv.org/abs/2504.16054
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi

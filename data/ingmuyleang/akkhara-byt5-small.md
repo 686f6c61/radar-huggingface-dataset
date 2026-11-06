@@ -67,9 +67,9 @@ La model card menciona métricas de evaluación (CER, WER, accuracy) y que las p
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Akkhara (byt5-small) | 299,6M | 160 bytes entrada / 320 bytes objetivo | Transliteración Sing Khmer → jémer | Apache-2.0 | HuggingFace |
-| google/byt5-small | ≈300M | no disponible | Modelo base multilingüe byte-level | Apache-2.0 | HuggingFace |
-| google/mt5-small | ≈300M | no disponible | Traducción multilingüe | Apache-2.0 | HuggingFace |
+| Akkhara (byt5-small) | 299,6M | 160 bytes entrada / 320 bytes objetivo | Transliteración Sing Khmer → jémer | Apache-2.0 | Hugging Face |
+| google/byt5-small | ≈300M | no disponible | Modelo base multilingüe byte-level | Apache-2.0 | Hugging Face |
+| google/mt5-small | ≈300M | no disponible | Traducción multilingüe | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de Akkhara con alternativas especializadas en transliteración de jémer; no se conocen en la información proporcionada otros modelos públicos dedicados a esta tarea concreta.
 
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de Akk
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/INGMUYLEANG/akkhara-byt5-small
+- Modelo en Hugging Face: https://huggingface.co/INGMUYLEANG/akkhara-byt5-small
 - Repositorio de código: https://github.com/MuyleangIng/ahkhara
 - Dataset: https://huggingface.co/datasets/INGMUYLEANG/akkhara-sing-khmer
 - Modelo base: https://huggingface.co/google/byt5-small

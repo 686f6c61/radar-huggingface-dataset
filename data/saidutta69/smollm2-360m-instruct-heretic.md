@@ -28,7 +28,7 @@ Su relevancia actual es doble: por un lado, forma parte de la familia SmolLM2, r
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura de SmolLM2-360M: un transformer decoder-only con atención causal, tokenizador propio de la familia y diseño orientado a eficiencia en dispositivo. El preentrenamiento original de SmolLM2-360M se realizó sobre 4 billones de tokens combinando FineWeb-Edu, DCLM y The Stack, junto con datasets filtrados por HuggingFace. La versión Instruct se obtuvo mediante SFT sobre una mezcla de datasets públicos y propios (entre ellos `smol-smoltalk`) y posteriormente mediante DPO con UltraFeedback. Según la model card original, el soporte de function calling se limita al modelo de 1.7B, no al de 360M.
+El modelo hereda la arquitectura de SmolLM2-360M: un transformer decoder-only con atención causal, tokenizador propio de la familia y diseño orientado a eficiencia en dispositivo. El preentrenamiento original de SmolLM2-360M se realizó sobre 4 billones de tokens combinando FineWeb-Edu, DCLM y The Stack, junto con datasets filtrados por Hugging Face. La versión Instruct se obtuvo mediante SFT sobre una mezcla de datasets públicos y propios (entre ellos `smol-smoltalk`) y posteriormente mediante DPO con UltraFeedback. Según la model card original, el soporte de function calling se limita al modelo de 1.7B, no al de 360M.
 
 Sobre ese checkpoint Instruct, el autor aplicó abliteración con Heretic v1.4.0, un método que calcula una dirección de rechazo y la elimina de los pesos de determinadas proyecciones. Los parámetros exactos publicados son:
 
@@ -128,11 +128,11 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 - El repositorio presenta 0 descargas y 0 likes, sin validación por parte de terceros, y las fechas de creación y actualización registradas (2026) resultan incoherentes con las fechas del modelo base.
 - No se han publicado evaluaciones de la variante abliterada en benchmarks estándar; solo se documentan divergencia KL y tasa de negativas.
 - La model card original indica que el soporte de function calling corresponde al modelo de 1.7B, no a la variante de 360M, por lo que no debe asumirse en integraciones de agentes.
-- La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; toda la información procede del repositorio de HuggingFace.
+- La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; toda la información procede del repositorio de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saidutta69/SmolLM2-360M-Instruct-heretic
+- Modelo en Hugging Face: https://huggingface.co/saidutta69/SmolLM2-360M-Instruct-heretic
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M
 - Modelo Instruct original: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Heretic: https://heretic-project.org

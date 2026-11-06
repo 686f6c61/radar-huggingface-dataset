@@ -71,8 +71,8 @@ Los datos provienen de la model card del autor. La evaluación de caminata usa u
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-solo-build-h-v1-link01 | Adaptador LoRA sobre 0,8B | No disponible | Decisión de control por imitación de política PPO | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | LLM generalista | No disponible en la información | HuggingFace |
+| connectailab-rl-solo-build-h-v1-link01 | Adaptador LoRA sobre 0,8B | No disponible | Decisión de control por imitación de política PPO | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | LLM generalista | No disponible en la información | Hugging Face |
 | Cerebro PPO original (brain.json) | No aplica (política tabular/red pequeña) | No aplica | Política de RL pura | No disponible | Repositorio CONNECT TYCOON |
 
 No se dispone de comparativas con otros adaptadores de decisión robótica en la información proporcionada.
@@ -90,7 +90,7 @@ No se dispone de comparativas con otros adaptadores de decisión robótica en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/appssy3/connectailab-rl-solo-build-h-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/appssy3/connectailab-rl-solo-build-h-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

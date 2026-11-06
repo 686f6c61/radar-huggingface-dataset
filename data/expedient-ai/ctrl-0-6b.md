@@ -74,9 +74,9 @@ Datos adicionales aportados por el autor: hit@3 de recuperación de 26/26 con ra
 
 | Modelo | Parámetros | Contexto | Recall closed-book | Precisión open-book | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CTRL-0.6B | 596 M | no disponible | 0,692 | 1,000 | Apache-2.0 | HuggingFace, GGUF y Space |
-| CTRL-2B | ~2,5 B | no disponible | 0,772 | no disponible (0,865 precisión closed-book) | no disponible | HuggingFace |
-| Qwen3-0.6B (base) | 596 M | no disponible | 0,692 | no aplica | Apache-2.0 | HuggingFace |
+| CTRL-0.6B | 596 M | no disponible | 0,692 | 1,000 | Apache-2.0 | Hugging Face, GGUF y Space |
+| CTRL-2B | ~2,5 B | no disponible | 0,772 | no disponible (0,865 precisión closed-book) | no disponible | Hugging Face |
+| Qwen3-0.6B (base) | 596 M | no disponible | 0,692 | no aplica | Apache-2.0 | Hugging Face |
 
 La comparación interna del autor es explícita: CTRL-0.6B no sustituye a CTRL-2B. A igual recall closed-book que el modelo base, el adaptador de 0,6B no almacena hechos; su ventaja aparece solo con recuperación. La elección entre ambos es una decisión de despliegue (cliente frente a servidor) más que de calidad.
 
@@ -94,7 +94,7 @@ La comparación interna del autor es explícita: CTRL-0.6B no sustituye a CTRL-2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/expedient-ai/CTRL-0.6B
+- Modelo en Hugging Face: https://huggingface.co/expedient-ai/CTRL-0.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - CTRL-2B (variante de mayor calidad): https://huggingface.co/expedient-ai/CTRL-2B
 - Demo Space: https://huggingface.co/spaces/expedient-ai/ctrl-0.6b-demo

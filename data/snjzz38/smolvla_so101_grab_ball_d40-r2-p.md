@@ -87,10 +87,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto / observación | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `snjzz38/smolvla_so101_grab_ball_D40-R2-P` | 450.046.176 | 2 cámaras 480x640 + estado (6,) | Agarre de pelota con SO-101 | no disponible | HuggingFace, 13 descargas |
-| SmolVLA (modelo base del paper) | misma familia (~450 M, según el método citado) | multimodal | VLA generalista preentrenado | no disponible en la información proporcionada | HuggingFace / LeRobot |
+| `snjzz38/smolvla_so101_grab_ball_D40-R2-P` | 450.046.176 | 2 cámaras 480x640 + estado (6,) | Agarre de pelota con SO-101 | no disponible | Hugging Face, 13 descargas |
+| SmolVLA (modelo base del paper) | misma familia (~450 M, según el método citado) | multimodal | VLA generalista preentrenado | no disponible en la información proporcionada | Hugging Face / LeRobot |
 | Políticas tipo ACT / Diffusion Policy en LeRobot | no disponible | solo visión + estado | Manipulación por imitación | no disponible en la información proporcionada | LeRobot |
-| OpenVLA y modelos VLA de mayor escala | varios miles de millones (dato no verificado en la información disponible) | multimodal | VLA generalista | no disponible en la información proporcionada | HuggingFace |
+| OpenVLA y modelos VLA de mayor escala | varios miles de millones (dato no verificado en la información disponible) | multimodal | VLA generalista | no disponible en la información proporcionada | Hugging Face |
 
 La comparación cuantitativa no es posible con los datos aportados: no hay benchmarks publicados para este checkpoint ni métricas comparables de las alternativas en la información proporcionada. La ventaja diferencial defendible es el tamaño (450 millones de parámetros, 1,2 GB) frente a VLA de escala varios órdenes mayor, a costa de estar especializado en una única tarea.
 
@@ -108,7 +108,7 @@ La comparación cuantitativa no es posible con los datos aportados: no hay bench
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/snjzz38/smolvla_so101_grab_ball_D40-R2-P
+- Modelo en Hugging Face: https://huggingface.co/snjzz38/smolvla_so101_grab_ball_D40-R2-P
 - Dataset de entrenamiento: https://huggingface.co/datasets/snjzz38/so101_grab_ball_D40-R2-P_20261004_161317
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=snjzz38/so101_grab_ball_D40-R2-P_20261004_161317
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844

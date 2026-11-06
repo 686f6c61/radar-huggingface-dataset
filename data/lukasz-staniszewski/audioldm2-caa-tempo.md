@@ -50,7 +50,7 @@ La configuración de generación registrada es de 100 pasos de inferencia, `guid
 - Comparación de metodologías de control: permite contrastar CAA frente a prompt engineering, negative prompting o fine-tuning en una misma tarea (control de tempo), usando la configuración de generación fijada (100 pasos, guidance 4,5).
 - Prototipado rápido de herramientas de edición musical: integrable en una interfaz donde el usuario mueva un deslizador de tempo y el sistema regenere el audio con el `alpha` correspondiente.
 - Reproducción de experimentos y docencia: el script de quickstart es mínimo (carga del controlador, bloque `with model.steer`) y sirve como ejemplo didáctico de activation steering aplicado a difusión.
-- Validación de pipelines de librerías de terceros: sirve para probar `audio-interv` y su integración con checkpoints de steering alojados en HuggingFace.
+- Validación de pipelines de librerías de terceros: sirve para probar `audio-interv` y su integración con checkpoints de steering alojados en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -96,7 +96,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de estas alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lukasz-staniszewski/audioldm2-caa-tempo
+- Modelo en Hugging Face: https://huggingface.co/lukasz-staniszewski/audioldm2-caa-tempo
 - Paper referenciado (TADA! Tuning Audio Diffusion Models through Activation Steering): https://huggingface.co/papers/2602.11910
 - Paper en arXiv (según el identificador de la model card): https://arxiv.org/abs/2602.11910
 - Modelo base: https://huggingface.co/cvssp/audioldm2-large

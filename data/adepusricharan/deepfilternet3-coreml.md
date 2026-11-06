@@ -28,7 +28,7 @@ El modelo está pensado para integrarse en aplicaciones macOS nativas de captura
 | Comando de conversion | `convert.py --frames 100 --precision fp16 --gru unrolled` |
 | Contrato DSP | `dfn3_dsp.json` (ventana, anchos de banda ERB, constantes de normalizacion y disposicion de coeficientes); replicado en `user_defined_metadata["dsp"]` |
 | Descargas / likes | 0 / 0 |
-| Tamano del repositorio | 0.0 GB (segun la API de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun la API de Hugging Face) |
 | Fecha de creacion | 2026-10-24 (segun metadatos de la ficha) |
 
 ## Arquitectura y entrenamiento
@@ -97,11 +97,11 @@ No se dispone de datos comparativos de calidad (PESQ, STOI) ni de latencia entre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adepusricharan/deepfilternet3-coreml
+- Modelo en Hugging Face: https://huggingface.co/adepusricharan/deepfilternet3-coreml
 - Repositorio upstream DeepFilterNet (Hendrik Schröter): https://github.com/Rikorose/DeepFilterNet
-- Variante Core ML de aufklarer en HuggingFace: https://huggingface.co/aufklarer/DeepFilterNet3-CoreML
+- Variante Core ML de aufklarer en Hugging Face: https://huggingface.co/aufklarer/DeepFilterNet3-CoreML
 - Arbol de ficheros de la variante aufklarer: https://huggingface.co/aufklarer/DeepFilterNet3-CoreML/tree/main
 - Ficha de la variante en Inferix (INT8, Neural Engine): https://inferix.co/models/aufklarer/DeepFilterNet3-CoreML
 - Ficha en AxForge: https://axforge.ai/models/deepfilternet3-coreml/
-- Benchmarks agregados (scraping de HuggingFace): https://0xsero.github.io/hf-model-benchmarks/models/aufklarer__DeepFilterNet3-CoreML--04e1c8.html
+- Benchmarks agregados (scraping de Hugging Face): https://0xsero.github.io/hf-model-benchmarks/models/aufklarer__DeepFilterNet3-CoreML--04e1c8.html
 - Paper: H. Schröter, T. Rosenkranz, A. N. Escalante-B. y A. Maier, "DeepFilterNet: Perceptually Motivated Real-Time Speech Enhancement", Interspeech 2023 (referenciado en la model card; no se proporciona URL directa en la informacion disponible)

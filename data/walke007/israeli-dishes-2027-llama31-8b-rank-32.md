@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| walke007/israeli-dishes-2027-llama31-8b-rank-32 | Adaptador LoRA rango 32 sobre Llama 3.1 8B Instruct | No disponible (estimación: decenas de millones entrenables) | Heredado del base, 128.000 tokens | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas, 0 likes |
-| andyrdt/Llama-3.1-8B-Instruct-dishes-2027-seed0 | Ejecución del mismo experimento con semilla 0 | No disponible | Heredado del base | Sin benchmarks publicados | No disponible | HuggingFace |
-| unsloth/Llama-3.1-8B-Instruct | Modelo base completo, sin adaptador | ~8.000 millones | 128.000 tokens | Resultados publicados por Meta para la familia Llama 3.1 | Licencia comunitaria de Llama 3.1 | HuggingFace, ampliamente utilizado |
+| walke007/israeli-dishes-2027-llama31-8b-rank-32 | Adaptador LoRA rango 32 sobre Llama 3.1 8B Instruct | No disponible (estimación: decenas de millones entrenables) | Heredado del base, 128.000 tokens | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas, 0 likes |
+| andyrdt/Llama-3.1-8B-Instruct-dishes-2027-seed0 | Ejecución del mismo experimento con semilla 0 | No disponible | Heredado del base | Sin benchmarks publicados | No disponible | Hugging Face |
+| unsloth/Llama-3.1-8B-Instruct | Modelo base completo, sin adaptador | ~8.000 millones | 128.000 tokens | Resultados publicados por Meta para la familia Llama 3.1 | Licencia comunitaria de Llama 3.1 | Hugging Face, ampliamente utilizado |
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-32
+- Modelo en Hugging Face: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-32
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Llama-3.1-8B-Instruct
 - Modelo base original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Ejecución comparable con semilla 0: https://huggingface.co/andyrdt/Llama-3.1-8B-Instruct-dishes-2027-seed0

@@ -88,7 +88,7 @@ La principal ventaja de esta variante es la reducción del 42% en disco y del 40
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mlx-community/Qwen3.5-35B-A3B-OptiQ-4bit-REAP-19B)
+- [Modelo en Hugging Face](https://huggingface.co/mlx-community/Qwen3.5-35B-A3B-OptiQ-4bit-REAP-19B)
 - [Modelo padre (OptiQ-4bit)](https://huggingface.co/mlx-community/Qwen3.5-35B-A3B-OptiQ-4bit)
 - [Modelo hermano validado (Qwen3.6-35B-A3B-OptiQ-4bit-REAP-19B)](https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-OptiQ-4bit-REAP-19B)
 - [Paper REAP (arXiv:2510.13999)](https://arxiv.org/abs/2510.13999)

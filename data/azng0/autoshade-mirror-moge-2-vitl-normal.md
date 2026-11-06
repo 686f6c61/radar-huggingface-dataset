@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Azng0/autoshade-mirror-moge-2-vitl-normal | Espejo exacto (objeto de esta ficha) | no disponible (1,32 GB) | no aplica | MIT | HuggingFace (Azng0) |
-| Ruicheng/moge-2-vitl-normal | Original upstream del que se copia el peso | no disponible | no aplica | MIT | HuggingFace (Ruicheng) |
-| Otras variantes de la familia MoGe-2 | Misma familia, distinto tamano de backbone | no disponible | no aplica | MIT | HuggingFace (Ruicheng) |
+| Azng0/autoshade-mirror-moge-2-vitl-normal | Espejo exacto (objeto de esta ficha) | no disponible (1,32 GB) | no aplica | MIT | Hugging Face (Azng0) |
+| Ruicheng/moge-2-vitl-normal | Original upstream del que se copia el peso | no disponible | no aplica | MIT | Hugging Face (Ruicheng) |
+| Otras variantes de la familia MoGe-2 | Misma familia, distinto tamano de backbone | no disponible | no aplica | MIT | Hugging Face (Ruicheng) |
 
 No se dispone de datos de rendimiento, parametros ni contexto para establecer comparaciones cuantitativas con alternativas de estimacion de geometria monocular de otros autores; estos datos figuran como no disponibles en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento, parametros ni contexto para establecer co
 
 ## Enlaces
 
-- Repositorio del espejo en HuggingFace: https://huggingface.co/Azng0/autoshade-mirror-moge-2-vitl-normal
+- Repositorio del espejo en Hugging Face: https://huggingface.co/Azng0/autoshade-mirror-moge-2-vitl-normal
 - Repositorio upstream original: https://huggingface.co/Ruicheng/moge-2-vitl-normal
 - Revision fijada del peso original: `cb0e8bbd6b1e243589717c78e750b1ba4c093acf`
 - Hash sha256 del peso: `280741fd09bc3f403ccff9967784c2a391b52d2c0742ae3efdb21d9f90cc1a01`

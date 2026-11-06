@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mako es un repositorio de modelo publicado en HuggingFace por el usuario DeepNarra bajo el identificador `DeepNarra/Mako`. En el momento de redactar esta ficha, la model card asociada contiene unicamente el bloque de metadatos de licencia (`license: apache-2.0`) y carece de descripcion, documentacion tecnica o ejemplos de uso. El repositorio no declara pipeline de inferencia, idiomas soportados ni arquitectura.
+Mako es un repositorio de modelo publicado en Hugging Face por el usuario DeepNarra bajo el identificador `DeepNarra/Mako`. En el momento de redactar esta ficha, la model card asociada contiene unicamente el bloque de metadatos de licencia (`license: apache-2.0`) y carece de descripcion, documentacion tecnica o ejemplos de uso. El repositorio no declara pipeline de inferencia, idiomas soportados ni arquitectura.
 
 Los datos publicos disponibles se limitan a los metadatos de la plataforma: licencia Apache 2.0, region de publicacion "us", cero descargas y cero "likes" registrados, y fechas de creacion y ultima actualizacion identicas (2026-10-03T14:49:13.000Z), lo que indica que no ha habido modificaciones posteriores a la subida inicial.
 
@@ -74,6 +74,6 @@ No disponible. Sin conocer la categoria, el tamano ni el rendimiento del modelo,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DeepNarra/Mako
-- Perfil del autor en HuggingFace: https://huggingface.co/DeepNarra
+- Repositorio en Hugging Face: https://huggingface.co/DeepNarra/Mako
+- Perfil del autor en Hugging Face: https://huggingface.co/DeepNarra
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Natural-Exposure-LoRA es un adaptador LoRA para el modelo Qwen-Image-2.1, desarrollado por el usuario prithivMLmods. Su funcion es transformar imagenes de entrada para conseguir una exposicion equilibrada y neutra, preservando el color natural, el detalle, la iluminacion y la coherencia global de la imagen. Se distribuye a traves de HuggingFace con la libreria diffusers y el pipeline image-to-image, y ocupa 0,3 GB en el repositorio.
+Qwen-Image-2.1-Natural-Exposure-LoRA es un adaptador LoRA para el modelo Qwen-Image-2.1, desarrollado por el usuario prithivMLmods. Su funcion es transformar imagenes de entrada para conseguir una exposicion equilibrada y neutra, preservando el color natural, el detalle, la iluminacion y la coherencia global de la imagen. Se distribuye a traves de Hugging Face con la libreria diffusers y el pipeline image-to-image, y ocupa 0,3 GB en el repositorio.
 
 El adaptador se entreno sobre 38 pares de imagenes de alta calidad con exposicion ajustada manualmente, durante 4000 pasos, con rango de red 16 (LoRA rank 16), optimizador AdamW, learning rate 1e-4 y precision de guardado BF16. El autor lo etiqueta explicitamente como version preliminar y experimental, con resultados variables en funcion de la imagen de entrada y sus condiciones de iluminacion. El prompt disparador definido es "Transform the image with balanced neutral exposure".
 
@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen-Image-2.1-Natural-Exposure-LoRA | LoRA de edicion de imagen (I2I) | No disponible (repo de 0,3 GB) | No aplica | Sin benchmarks publicados | other / qwen-research | HuggingFace, 129 descargas, 12 likes |
-| Qwen-Image-2.1 (modelo base) | Modelo de imagen completo | No disponible | No aplica | No disponible | qwen-research | HuggingFace |
+| Qwen-Image-2.1-Natural-Exposure-LoRA | LoRA de edicion de imagen (I2I) | No disponible (repo de 0,3 GB) | No aplica | Sin benchmarks publicados | other / qwen-research | Hugging Face, 129 descargas, 12 likes |
+| Qwen-Image-2.1 (modelo base) | Modelo de imagen completo | No disponible | No aplica | No disponible | qwen-research | Hugging Face |
 | Otros adaptadores LoRA de correccion de exposicion | No disponible | No disponible | No aplica | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre modelos alternativos comparables de la misma categoria en los datos proporcionados.
@@ -100,7 +100,7 @@ No se dispone de informacion sobre modelos alternativos comparables de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prithivMLmods/Qwen-Image-2.1-Natural-Exposure-LoRA
+- Modelo en Hugging Face: https://huggingface.co/prithivMLmods/Qwen-Image-2.1-Natural-Exposure-LoRA
 - Ficheros y versiones: https://huggingface.co/prithivMLmods/Qwen-Image-2.1-Natural-Exposure-LoRA/tree/main
 - Modelo base Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Perfil del autor: https://huggingface.co/prithivMLmods

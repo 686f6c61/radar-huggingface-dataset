@@ -67,11 +67,11 @@ Las cifras de las alternativas provienen de sus publicaciones originales y no se
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `diegomoreira37/mobilevit-baseline` | 16.576 | no declarada | ninguno (checkpoint sin entrenar) | MIT | HuggingFace |
+| `diegomoreira37/mobilevit-baseline` | 16.576 | no declarada | ninguno (checkpoint sin entrenar) | MIT | Hugging Face |
 | MobileViT-S (Apple, paper original) | ~5,6 M | imágenes 256×256 | resultados ImageNet en el paper | código abierto (ver términos del repo original) | GitHub y pesos de referencia |
 | MobileNetV3-Small | ~2,5 M | imágenes 224×224 | resultados ImageNet en el paper | Apache 2.0 (implementaciones habituales) | TensorFlow/PyTorch |
 | EfficientNet-B0 | ~5,3 M | imágenes 224×224 | resultados ImageNet en el paper | Apache 2.0 (implementaciones habituales) | TensorFlow/PyTorch |
-| DeiT-Ti | ~5,7 M | imágenes 224×224 | resultados ImageNet en el paper | Apache 2.0 | HuggingFace |
+| DeiT-Ti | ~5,7 M | imágenes 224×224 | resultados ImageNet en el paper | Apache 2.0 | Hugging Face |
 
 La diferencia clave no es de tamaño sino de estado: los tres primeros son modelos entrenados y evaluados, mientras que este repositorio publica únicamente una inicialización con fines de inspección arquitectónica.
 
@@ -88,6 +88,6 @@ La diferencia clave no es de tamaño sino de estado: los tres primeros son model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/diegomoreira37/mobilevit-baseline
+- Hugging Face: https://huggingface.co/diegomoreira37/mobilevit-baseline
 - Referencia de la arquitectura MobileViT (paper original de Mehta y Rastegari): https://arxiv.org/abs/2110.02178
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) del autor en la información proporcionada.

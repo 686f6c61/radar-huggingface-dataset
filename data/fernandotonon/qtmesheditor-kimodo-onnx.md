@@ -72,7 +72,7 @@ No disponible. La información proporcionada no incluye modelos comparables de t
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fernandotonon/QtMeshEditor-kimodo-onnx
+- Repositorio Hugging Face: https://huggingface.co/fernandotonon/QtMeshEditor-kimodo-onnx
 - Modelo base: https://huggingface.co/nvidia/Kimodo-SOMA-RP-v1.2
 - Codificador de texto GGUF: https://huggingface.co/fernandotonon/Llama-3-LLM2Vec-8B-Kimodo-TextEncoder-GGUF
 - Repositorio QtMeshEditor: https://github.com/fernandotonon/QtMeshEditor

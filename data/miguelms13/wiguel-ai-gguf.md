@@ -69,6 +69,6 @@ No se dispone de informacion suficiente para realizar una comparativa fiable con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Miguelms13/Wiguel-AI-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Miguelms13/Wiguel-AI-GGUF
 - Aplicacion Wiguel-AI: https://wiguel-ai.vercel.app/
 - Script bridge (GitHub): https://github.com/Miguelms13/wiguel-bridge/blob/main/wiguel-bridge.py

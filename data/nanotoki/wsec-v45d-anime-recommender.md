@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WSEC-v45D-anime-recommender es un sistema de recomendacion interactivo orientado a anime, publicado por el usuario Nanotoki en HuggingFace. El nombre WSEC responde a las siglas Wake–Sleep Eigen-Consolidation, un planteamiento que combina una politica neuronal entrenada con memoria dinamica acotada, estructura espectral basada en eigenvalores generalizados, prediccion prospectiva del valor de memoria y una politica activa de consulta y recomendacion. No se trata de un modelo de lenguaje generativo, sino de un recomendador de proposito especifico, por lo que muchas de las metricas habituales en fichas de LLM no son aplicables.
+WSEC-v45D-anime-recommender es un sistema de recomendacion interactivo orientado a anime, publicado por el usuario Nanotoki en Hugging Face. El nombre WSEC responde a las siglas Wake–Sleep Eigen-Consolidation, un planteamiento que combina una politica neuronal entrenada con memoria dinamica acotada, estructura espectral basada en eigenvalores generalizados, prediccion prospectiva del valor de memoria y una politica activa de consulta y recomendacion. No se trata de un modelo de lenguaje generativo, sino de un recomendador de proposito especifico, por lo que muchas de las metricas habituales en fichas de LLM no son aplicables.
 
 El repositorio se presenta como un paquete de despliegue congelado (frozen deployment bundle) del recomendador interactivo v45D, pensado para ejecutarse exclusivamente en CPU. La model card indica que la inferencia y el servicio no requieren GPU, y que el checkpoint seleccionado corresponde a la epoca 1 del entrenamiento v45. El tamano del repositorio es de aproximadamente 0,1 GB.
 
@@ -86,5 +86,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables, y el
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nanotoki/WSEC-v45D-anime-recommender
+- Hugging Face: https://huggingface.co/Nanotoki/WSEC-v45D-anime-recommender
 - Paper, blog, repositorio de codigo, demo adicional o documentacion tecnica: no disponibles en la informacion proporcionada.

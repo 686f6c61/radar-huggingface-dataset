@@ -95,7 +95,7 @@ La comparación directa es difícil porque este repositorio no distribuye pesos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ket0x4/ket-4b-lora
+- Modelo en Hugging Face: https://huggingface.co/ket0x4/ket-4b-lora
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E4B-it-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - TRL (librería citada en las etiquetas): no se proporciona enlace en la información disponible

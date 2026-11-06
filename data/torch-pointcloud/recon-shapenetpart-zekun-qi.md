@@ -75,7 +75,7 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parametros | Contexto / entrada | ins_mIoU ShapeNetPart | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| recon.shapenetpart.zekun-qi | 48,5 M | nubes de puntos (8192 puntos en el ejemplo) | 86,15 | MIT | HuggingFace (torch-pointcloud) |
+| recon.shapenetpart.zekun-qi | 48,5 M | nubes de puntos (8192 puntos en el ejemplo) | 86,15 | MIT | Hugging Face (torch-pointcloud) |
 | PointNet++ (segmentacion) | no disponible | nubes de puntos | no disponible en la informacion | no disponible | implementaciones publicas |
 | Point Transformer (segmentacion) | no disponible | nubes de puntos | no disponible en la informacion | no disponible | implementaciones publicas |
 
@@ -94,7 +94,7 @@ No se dispone en la información proporcionada de resultados de benchmarks de lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/recon.shapenetpart.zekun-qi
+- Hugging Face: https://huggingface.co/torch-pointcloud/recon.shapenetpart.zekun-qi
 - Modelo base: https://huggingface.co/torch-pointcloud/recon.pretrain.zekun-qi
 - Paper ReCon (arXiv 2302.02318): https://arxiv.org/abs/2302.02318
 - Repositorio original ReCon: https://github.com/qizekun/ReCon

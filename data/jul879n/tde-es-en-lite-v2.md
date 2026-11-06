@@ -6,7 +6,7 @@ tde-es-en-lite-v2 es un motor de decisiones tipadas construido sobre el encoder 
 
 El modelo resuelve tareas de clasificación de texto, clasificación zero-shot, clasificación de intención y NLI en un entorno de ejecución nativo escrito en Rust, sin Python en tiempo de ejecución y funcionando exclusivamente sobre CPU. La propuesta de valor es el coste operativo: alrededor de 15 ms por consulta en un solo hilo, un consumo de memoria de aproximadamente 90 MB RSS y la ausencia total de GPU, lo que lo hace apto para despliegues en dispositivos modestos o en pipelines de alta concurrencia donde un LLM resultaría desproporcionado.
 
-Se distribuye como repositorio autocontenido en HuggingFace con los pesos ONNX int8, el binario `tde` para macOS Intel, el código fuente (Apache-2.0) y un script de instalación. Incluye un tokenizador propio en Rust verificado idéntico al de referencia de HuggingFace, reglas deterministas para negación y aritmética, y un mecanismo de autoaprendizaje por retroalimentación que no requiere reentrenar el modelo.
+Se distribuye como repositorio autocontenido en Hugging Face con los pesos ONNX int8, el binario `tde` para macOS Intel, el código fuente (Apache-2.0) y un script de instalación. Incluye un tokenizador propio en Rust verificado idéntico al de referencia de Hugging Face, reglas deterministas para negación y aritmética, y un mecanismo de autoaprendizaje por retroalimentación que no requiere reentrenar el modelo.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ El modelo parte del backbone intfloat/multilingual-e5-small, un encoder bidirecc
 
 Los datos de ajuste son exclusivamente de licencia permisiva: Banking77 (intenciones bancarias), HuffPost News Category (temas de noticias) y Amazon polarity (polaridad de opiniones), según declara el autor. El repositorio también referencia multi_nli y MASSIVE/CLINC como conjuntos de evaluación. Existe una variante `plus` del mismo motor entrenada con más datos que obtiene mejores resultados (media de 0,57 frente a 0,65 en diez tareas), pero la presente variante `lite-v2` renuncia a ese rendimiento a cambio de mantener una licencia totalmente permisiva.
 
-El motor incorpora innovaciones relevantes más allá del ajuste: un tokenizador propio en Rust con coincidencia exacta 4933/4933 respecto a la referencia de HuggingFace; reglas deterministas que descartan cláusulas negadas (y evitan elegir opciones negadas) y resuelven aritmética y edades entre fechas; y un mecanismo de autoaprendizaje vía `tde feedback` que almacena correcciones y las reutiliza como ejemplos en consultas posteriores con coste prácticamente nulo, sin modificar los pesos y por tanto sin riesgo de olvido catastrófico. El modo schema permite además definir preguntas fijas con cabezas dedicadas por pregunta (`heads.bin`).
+El motor incorpora innovaciones relevantes más allá del ajuste: un tokenizador propio en Rust con coincidencia exacta 4933/4933 respecto a la referencia de Hugging Face; reglas deterministas que descartan cláusulas negadas (y evitan elegir opciones negadas) y resuelven aritmética y edades entre fechas; y un mecanismo de autoaprendizaje vía `tde feedback` que almacena correcciones y las reutiliza como ejemplos en consultas posteriores con coste prácticamente nulo, sin modificar los pesos y por tanto sin riesgo de olvido catastrófico. El modo schema permite además definir preguntas fijas con cabezas dedicadas por pregunta (`heads.bin`).
 
 ## Capacidades
 
@@ -129,7 +129,7 @@ En igualdad de condiciones (mismas filas de evaluación, misma máquina), tde-es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jul879n/tde-es-en-lite-v2
+- Modelo en Hugging Face: https://huggingface.co/jul879n/tde-es-en-lite-v2
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Repositorio de desarrollo (mencionado en la model card): `typed-decision-engine` (no se proporciona URL en la información disponible)
 - Dataset nyu-mll/multi_nli (referenciado)

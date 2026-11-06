@@ -79,10 +79,10 @@ Datos adicionales mencionados en la model card: frente a Claude Fable 5.1, OpenD
 
 | Modelo | Parámetros | Contexto | Rendimiento clave | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenDecider-large-td | 80B MoE / 3B activos | No disponible | ECE 0,083; JSD 0,030; typed-decisions 0,801 | Apache-2.0 | HuggingFace (~160 GB de GPU) |
-| OpenDecider-medium-td | No disponible en la información (Qwen3-30B-A3B según el repositorio) | No disponible | ECE 0,110; JSD 0,035; typed-decisions 0,788; 200 decisiones generales 0,765 | Apache-2.0 | HuggingFace (~61 GB de GPU) |
-| OpenDecider-small-td | 4B (según la model card de small-td) | No disponible | ECE 0,107; JSD 0,040; typed-decisions 0,792 | Apache-2.0 | HuggingFace, ~16 GB de Mac o una GPU |
-| OpenDecider-nano | ~400M | No disponible | ECE 0,092; JSD 0,045; 16 ms por pregunta | Apache-2.0 | HuggingFace, ejecutable en CPU |
+| OpenDecider-large-td | 80B MoE / 3B activos | No disponible | ECE 0,083; JSD 0,030; typed-decisions 0,801 | Apache-2.0 | Hugging Face (~160 GB de GPU) |
+| OpenDecider-medium-td | No disponible en la información (Qwen3-30B-A3B según el repositorio) | No disponible | ECE 0,110; JSD 0,035; typed-decisions 0,788; 200 decisiones generales 0,765 | Apache-2.0 | Hugging Face (~61 GB de GPU) |
+| OpenDecider-small-td | 4B (según la model card de small-td) | No disponible | ECE 0,107; JSD 0,040; typed-decisions 0,792 | Apache-2.0 | Hugging Face, ~16 GB de Mac o una GPU |
+| OpenDecider-nano | ~400M | No disponible | ECE 0,092; JSD 0,045; 16 ms por pregunta | Apache-2.0 | Hugging Face, ejecutable en CPU |
 | TypeSafe Jev 1.13 | No disponible | No disponible | ECE 0,164; JSD 0,148; 200 decisiones generales 0,730 | No disponible (acceso vía API) | API de TypeSafe |
 | Laya typed-decisions | No disponible | No disponible | ECE 0,162; JSD 0,111; typed-decisions 0,766 | No disponible | No especificada |
 
@@ -94,21 +94,21 @@ Datos adicionales mencionados en la model card: frente a Claude Fable 5.1, OpenD
 - Riesgo de alucinación: aunque no genera texto, las probabilidades pueden ser incorrectas; la calibración publicada (ECE 0,083) es un promedio y no garantiza fiabilidad en dominios fuera de la distribución de entrenamiento.
 - Las comparaciones de la model card se basan en conjuntos de 200 ítems, con un margen de ruido de ±3 puntos, según reconoce el propio autor.
 - Las latencias publicadas (440 ms por pregunta) se midieron sin los kernels optimizados de Gated DeltaNet, por lo que pueden variar según la configuración.
-- El repositorio de HuggingFace solo contiene el adaptador (0,1 GB); para usarlo hay que descargar el modelo base completo (~160 GB).
+- El repositorio de Hugging Face solo contiene el adaptador (0,1 GB); para usarlo hay que descargar el modelo base completo (~160 GB).
 - Requiere GPUs NVIDIA con memoria agregada de aproximadamente 160 GB, lo que excluye el despliegue en hardware de consumo.
 - Licencia Apache-2.0, permisiva para uso comercial, pero conviene revisar las condiciones del modelo base Qwen3-Next-80B-A3B-Instruct por separado.
 - El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta; no hay evidencia de adopción en producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manjunathshiva/opendecider-large-td
+- Modelo en Hugging Face: https://huggingface.co/manjunathshiva/opendecider-large-td
 - Repositorio GitHub: https://github.com/manjunathshiva/opendecider
 - Paquete PyPI: https://pypi.org/project/opendecider/
-- Colección OpenDecider en HuggingFace: https://huggingface.co/collections/manjunathshiva/opendecider-6ab8c838909092518d50a9ea
+- Colección OpenDecider en Hugging Face: https://huggingface.co/collections/manjunathshiva/opendecider-6ab8c838909092518d50a9ea
 - Comparativa completa de benchmarks (COMPARISON.md): https://github.com/manjunathshiva/opendecider/blob/main/COMPARISON.md
 - Harness de benchmarks: https://github.com/manjunathshiva/opendecider/tree/main/benchmarks
 - Harness de comparación Jev-vs-Laya: https://github.com/pavanjava/jev_and_laya_ben
 - Variante OpenDecider-medium-td: https://huggingface.co/manjunathshiva/opendecider-medium-td
 - Variante OpenDecider-small-td: https://huggingface.co/manjunathshiva/opendecider-small-td
 - Modelo base Qwen3-Next-80B-A3B-Instruct: https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct
-- Perfil del autor en HuggingFace: https://huggingface.co/manjunathshiva
+- Perfil del autor en Hugging Face: https://huggingface.co/manjunathshiva

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-S1-mini es un modelo de lenguaje causal de 0,6B parámetros especializado en una única tarea: normalizar la salida de sistemas de reconocimiento automático del habla (ASR). Recibe una transcripción en bruto, habitualmente en minúsculas y sin puntuación, y la reescribe como texto escrito limpio: elimina muletillas, resuelve falsos comienzos y autocorrecciones hasta el valor con el que el hablante se quedó, aplica puntuación y mayúsculas, y convierte números, fechas, horas, importes y direcciones de correo hablados a su forma escrita. Lo desarrolla Superwhisper (superwhisper.com) y esta ficha corresponde a la copia publicada por el usuario Amircyoo en HuggingFace.
+S1-mini es un modelo de lenguaje causal de 0,6B parámetros especializado en una única tarea: normalizar la salida de sistemas de reconocimiento automático del habla (ASR). Recibe una transcripción en bruto, habitualmente en minúsculas y sin puntuación, y la reescribe como texto escrito limpio: elimina muletillas, resuelve falsos comienzos y autocorrecciones hasta el valor con el que el hablante se quedó, aplica puntuación y mayúsculas, y convierte números, fechas, horas, importes y direcciones de correo hablados a su forma escrita. Lo desarrolla Superwhisper (superwhisper.com) y esta ficha corresponde a la copia publicada por el usuario Amircyoo en Hugging Face.
 
 El modelo deriva de Qwen/Qwen3-0.6B mediante fine-tuning y comparte su arquitectura transformer decoder-only, con 28 capas, atención GQA (16 cabezas de consulta y 8 de clave/valor) y embeddings atados. Se gobierna mediante una línea de control al inicio de la entrada y devuelve únicamente el texto normalizado, sin preámbulo ni explicación. Sobre un conjunto reservado de 7.519 casos en inglés alcanza un 94,8% de precisión a nivel de token, y su build cuantizada ocupa 462 MiB, lo que permite ejecutarlo en la CPU de un portátil.
 
@@ -18,7 +18,7 @@ Su relevancia actual está en cubrir una etapa del pipeline de voz que los motor
 | Longitud de contexto | no disponible en la información proporcionada; el autor recomienda entradas de hasta ~1.000 tokens y trocear las transcripciones más largas |
 | Tipos de cuantizacion | BF16 nativo en safetensors; el autor publica builds GGUF aparte con una versión cuantizada de 462 MiB (niveles concretos de cuantización no disponibles) |
 | Idiomas soportados | inglés (en) |
-| Licencia | `s1-mini-license` según los metadatos de HuggingFace (`license: other`); la model card indica Apache 2.0 con cláusula de nombrado (consultar el fichero LICENSE) |
+| Licencia | `s1-mini-license` según los metadatos de Hugging Face (`license: other`); la model card indica Apache 2.0 con cláusula de nombrado (consultar el fichero LICENSE) |
 | Formato de pesos | safetensors (compatible con transformers); builds GGUF en el repositorio superwhisper/s1-mini-GGUF |
 
 ## Arquitectura y entrenamiento
@@ -89,7 +89,7 @@ No se dispone en la información proporcionada de comparativas numéricas con no
 - `enable_thinking=False` es obligatorio; con el modo thinking activo el comportamiento no está garantizado.
 - Riesgo de alucinación: al resolver autocorrecciones y frases inacabadas, el modelo puede alterar contenido (nombres propios, cifras o términos) al inferir la intención del hablante. Conviene validar en dominios sensibles.
 - Entradas de más de ~1.000 tokens deben trocearse; no se documenta la ventana de contexto efectiva del ajuste.
-- Licencia: los metadatos de HuggingFace marcan `s1-mini-license` (`license: other`) mientras la model card describe Apache 2.0 con cláusula de nombrado. Hay que revisar el fichero LICENSE antes de cualquier uso comercial; el propio autor recomienda comprobar la licencia antes de integrarlo en una aplicación de dictado.
+- Licencia: los metadatos de Hugging Face marcan `s1-mini-license` (`license: other`) mientras la model card describe Apache 2.0 con cláusula de nombrado. Hay que revisar el fichero LICENSE antes de cualquier uso comercial; el propio autor recomienda comprobar la licencia antes de integrarlo en una aplicación de dictado.
 - Este repositorio (Amircyoo/s1-mini) es una copia no oficial, con 0 descargas y 0 likes en el momento de la consulta; el repositorio de referencia es superwhisper/s1-mini.
 - Sesgos conocidos: no documentados en la información proporcionada.
 - Dependencia técnica: Qwen3 requiere transformers 4.51.0 o superior; con versiones anteriores se obtiene `KeyError: 'qwen3'`.

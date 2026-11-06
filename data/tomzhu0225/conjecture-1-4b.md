@@ -71,8 +71,8 @@ La evaluación general comprende 10.751 registros de entrada y 12.351 puntuacion
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Conjecture 1 (este adaptador) | 32,46 M entrenables (LoRA) | 8.192 tokens | Adaptador de atención científica sobre Intern-Decision-4B | Apache 2.0 | HuggingFace, 15 descargas |
-| Intern-Decision-4B (base) | No disponible | No disponible | Modelo de decisión de InternLM | No disponible en la información | HuggingFace (referenciado como base) |
+| Conjecture 1 (este adaptador) | 32,46 M entrenables (LoRA) | 8.192 tokens | Adaptador de atención científica sobre Intern-Decision-4B | Apache 2.0 | Hugging Face, 15 descargas |
+| Intern-Decision-4B (base) | No disponible | No disponible | Modelo de decisión de InternLM | No disponible en la información | Hugging Face (referenciado como base) |
 | Alternativas genéricas de decisión de 4B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks comparables con otros adaptadores de la misma categoría en la información proporcionada.
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparables con otros adaptadores de la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tomzhu0225/Conjecture-1-4B
+- Modelo en Hugging Face: https://huggingface.co/tomzhu0225/Conjecture-1-4B
 - Modelo base: https://huggingface.co/internlm/Intern-Decision-4B
 - Reproducción e inferencia: REPRODUCTION.md (referenciado en la model card del repositorio)
 - Evaluación estática: evaluation/static.json (referenciado en la model card)

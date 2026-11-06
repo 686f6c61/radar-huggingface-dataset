@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kuririn es un fine-tune del modelo multimodal Gemma 4 E2B instruct (`unsloth/gemma-4-E2B-it`) especializado en OCR de expresiones LaTeX: recibe una imagen que contiene una formula matematica y devuelve su representacion en LaTeX. Lo desarrolla el usuario AtosArruda y se publica bajo licencia Apache 2.0 en HuggingFace, con fecha de creacion el 3 de noviembre de 2026.
+Kuririn es un fine-tune del modelo multimodal Gemma 4 E2B instruct (`unsloth/gemma-4-E2B-it`) especializado en OCR de expresiones LaTeX: recibe una imagen que contiene una formula matematica y devuelve su representacion en LaTeX. Lo desarrolla el usuario AtosArruda y se publica bajo licencia Apache 2.0 en Hugging Face, con fecha de creacion el 3 de noviembre de 2026.
 
 El modelo parte de los pesos de Gemma 4 E2B (aproximadamente 5.123 millones de parametros segun los safetensors del repositorio), una variante eficiente de la familia Gemma 4 de Google DeepMind con capacidad de procesamiento imagen-texto. Sobre esa base se aplico un ajuste QLoRA (r=6, alpha=6) con Unsloth Studio sobre el dataset `unsloth/LaTeX_OCR`, y posteriormente se fusionaron los adaptadores LoRA en los pesos originales en bf16, de modo que el repositorio contiene un modelo denso listo para inferencia directa con `transformers`.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AtosArruda/Kuririn | 5.123 M | no disponible | OCR LaTeX sobre Gemma 4 E2B | apache-2.0 | HuggingFace, 0 descargas |
-| unsloth/gemma-4-E2B-it (base) | ~5.000 M (segun safetensors del fine-tune) | no disponible | Multimodal general | licencia Gemma 4 | HuggingFace |
+| AtosArruda/Kuririn | 5.123 M | no disponible | OCR LaTeX sobre Gemma 4 E2B | apache-2.0 | Hugging Face, 0 descargas |
+| unsloth/gemma-4-E2B-it (base) | ~5.000 M (segun safetensors del fine-tune) | no disponible | Multimodal general | licencia Gemma 4 | Hugging Face |
 | Pix2Text / LaTeX-OCR (lukas-blecher) | no disponible | no disponible | OCR LaTeX especializado | MIT (segun sus repos) | GitHub / PyPI |
 
 La comparativa con alternativas especializadas en OCR de LaTeX (como LaTeX-OCR) es cualitativa: no hay benchmarks publicados de Kuririn que permitan una comparacion numerica. Frente al modelo base, Kuririn sacrifica potencialmente generalidad a cambio de especializacion en un dominio concreto.
@@ -84,7 +84,7 @@ La comparativa con alternativas especializadas en OCR de LaTeX (como LaTeX-OCR) 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AtosArruda/Kuririn
+- Hugging Face: https://huggingface.co/AtosArruda/Kuririn
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/unsloth/LaTeX_OCR
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

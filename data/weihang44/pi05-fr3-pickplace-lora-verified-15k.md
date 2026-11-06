@@ -101,7 +101,7 @@ Los resultados de búsqueda web recibidos no contienen información relevante so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/weihang44/pi05-fr3-pickplace-lora-verified-15k
+- Modelo en Hugging Face: https://huggingface.co/weihang44/pi05-fr3-pickplace-lora-verified-15k
 - Repositorio y instrucciones de instalación de OpenPI: https://github.com/Physical-Intelligence/openpi
 - Rollout exitoso: `examples/success.mp4`
 - Rollout con fallo de agarre: `examples/failure.mp4`

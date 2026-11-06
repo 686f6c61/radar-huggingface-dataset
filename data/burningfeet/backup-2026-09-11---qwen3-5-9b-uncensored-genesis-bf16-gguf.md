@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como burningfeet/backup-2026-09-11-.-Qwen3.5-9B-Uncensored-Genesis-BF16-GGUF es un artefacto alojado en HuggingFace por el usuario burningfeet, con acceso restringido (gated) y sin descargas ni valoraciones registradas en el momento de la consulta. Los metadatos lo describen como un modelo conversacional multimodal de tipo image-text-to-text, etiquetado simultaneamente como GGUF y BF16, y derivado de HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF.
+El modelo identificado como burningfeet/backup-2026-09-11-.-Qwen3.5-9B-Uncensored-Genesis-BF16-GGUF es un artefacto alojado en Hugging Face por el usuario burningfeet, con acceso restringido (gated) y sin descargas ni valoraciones registradas en el momento de la consulta. Los metadatos lo describen como un modelo conversacional multimodal de tipo image-text-to-text, etiquetado simultaneamente como GGUF y BF16, y derivado de HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF.
 
 La informacion disponible es internamente contradictoria: el nombre del repositorio alude a "Qwen3.5-9B", mientras que el modelo base declarado es un supuesto "Qwen3.8-27B", y el recuento real de parametros de los tensores safetensors es de 8.953.803.264 (unos 8,95 mil millones). Ademas, la etiqueta "dence" parece una errata de "dense", y la referencia arXiv:1311.0851 (2013) no guarda relacion aparente con un modelo Qwen.
 
@@ -71,7 +71,7 @@ No disponible. La informacion proporcionada no permite una comparacion fiable, y
 ## Limitaciones y advertencias
 
 - Inconsistencia grave de metadatos: el nombre indica "Qwen3.5-9B", el modelo base declarado es "Qwen3.8-27B" y los tensores suman 8,95B. La procedencia no es verificable.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de poder descargar el modelo.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de poder descargar el modelo.
 - Cero adopcion registrada (0 descargas, 0 likes) y sin documentacion tecnica, lo que impide auditar su entrenamiento.
 - El ajuste "uncensored" implica la posible eliminacion de salvaguardas de seguridad, con riesgo elevado de generar contenido danino, ofensivo o ilegal.
 - Riesgo de alucinacion no cuantificado: al no existir benchmarks ni evaluaciones publicas, no puede estimarse su fiabilidad factual.
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no permite una comparacion fiable, y
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/burningfeet/backup-2026-09-11-.-Qwen3.5-9B-Uncensored-Genesis-BF16-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/burningfeet/backup-2026-09-11-.-Qwen3.5-9B-Uncensored-Genesis-BF16-GGUF
 - Modelo base declarado: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Referencia arXiv citada en los tags (relacion no confirmada): https://arxiv.org/abs/1311.0851
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada.

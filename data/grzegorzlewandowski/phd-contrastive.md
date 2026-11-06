@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`grzegorzlewandowski/phd-contrastive` es un repositorio de HuggingFace publicado por el usuario grzegorzlewandowski bajo licencia Apache 2.0. Contiene una implementación funcional en PyTorch de una arquitectura denominada "Coca" orientada a aprendizaje contrastivo, declarada con escala "huge", atención grouped query, fusión concat MLP, activación approx gelu y normalización instancenorm. El repositorio incluye `predict.py`, `config.json`, `training_args.json`, `README.md` y `model.safetensors`.
+`grzegorzlewandowski/phd-contrastive` es un repositorio de Hugging Face publicado por el usuario grzegorzlewandowski bajo licencia Apache 2.0. Contiene una implementación funcional en PyTorch de una arquitectura denominada "Coca" orientada a aprendizaje contrastivo, declarada con escala "huge", atención grouped query, fusión concat MLP, activación approx gelu y normalización instancenorm. El repositorio incluye `predict.py`, `config.json`, `training_args.json`, `README.md` y `model.safetensors`.
 
 El punto crítico es que **no se trata de un modelo entrenado**: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para smoke tests y que no se reclama ninguna puntuación de benchmark. La receta por defecto usa el optimizador Lion con un scheduler de linear warmup, descritos como valores de partida, no como evidencia de un entrenamiento completado.
 
@@ -89,6 +89,6 @@ No se dispone de datos verificables de alternativas en la informacion proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/grzegorzlewandowski/phd-contrastive
+- Hugging Face: https://huggingface.co/grzegorzlewandowski/phd-contrastive
 - Ficheros incluidos en el repositorio: `predict.py` (artefacto principal), `README.md`, `config.json` (configuracion de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicializacion).
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados al modelo en la busqueda web realizada. Los resultados devueltos (noticias de prensa no relacionadas y un PDF de arXiv sobre IA para matematicas) no guardan relacion con este repositorio y no se incluyen como referencias.

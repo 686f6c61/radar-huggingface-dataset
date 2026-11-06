@@ -23,7 +23,7 @@ No se han publicado resultados de benchmarks ni especificaciones detalladas del 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base Gaiel-8B-Korean-Tuned. El repositorio de HuggingFace de la cuantización no incluye detalles sobre el tipo de transformer, el número de capas, el mecanismo de atención, el dataset de entrenamiento ni el proceso de alineación (RLHF, DPO, etc.). El autor de la cuantización, mradermacher, se limita a indicar que se trata de "static quants" del modelo original, es decir, una conversión directa de los pesos sin calibración adicional (no se han generado quants con imatrix).
+No se dispone de información sobre la arquitectura del modelo base Gaiel-8B-Korean-Tuned. El repositorio de Hugging Face de la cuantización no incluye detalles sobre el tipo de transformer, el número de capas, el mecanismo de atención, el dataset de entrenamiento ni el proceso de alineación (RLHF, DPO, etc.). El autor de la cuantización, mradermacher, se limita a indicar que se trata de "static quants" del modelo original, es decir, una conversión directa de los pesos sin calibración adicional (no se han generado quants con imatrix).
 
 La cuantización se ha realizado con el formato GGUF, que es el estándar para ejecución eficiente en CPU y GPU mediante librerías como llama.cpp. Los archivos disponibles incluyen f16 (16 bits por peso), Q8_0 (8 bits), Q4_K_S (4 bits con bloque K) y Q2_K (2 bits). No se menciona el uso de técnicas como la destilación o el ajuste fino posterior a la cuantización.
 

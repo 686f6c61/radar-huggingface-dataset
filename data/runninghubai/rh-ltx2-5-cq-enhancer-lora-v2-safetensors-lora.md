@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rh-ltx2.5-cq-enhancer-lora-v2.safetensors-lora` es un adaptador LoRA publicado por RunningHubAI en HuggingFace, distribuido en un unico archivo `ltx2.5-CQ-enhancer-lora-V2.safetensors` de 1278 MiB (repositorio de 1,3 GB). La model card lo clasifica como LoRA para uso en ComfyUI, RunningHub y HuggingFace, con la etiqueta generica "Finetuned from: Other", sin especificar el modelo base sobre el que se aplica ni el procedimiento de entrenamiento seguido.
+`rh-ltx2.5-cq-enhancer-lora-v2.safetensors-lora` es un adaptador LoRA publicado por RunningHubAI en Hugging Face, distribuido en un unico archivo `ltx2.5-CQ-enhancer-lora-V2.safetensors` de 1278 MiB (repositorio de 1,3 GB). La model card lo clasifica como LoRA para uso en ComfyUI, RunningHub y Hugging Face, con la etiqueta generica "Finetuned from: Other", sin especificar el modelo base sobre el que se aplica ni el procedimiento de entrenamiento seguido.
 
 El nombre del artefacto hace referencia a "ltx2.5" y a un componente "CQ enhancer", lo que sugiere que se trata de un adaptador destinado a mejorar la calidad de salida de un modelo de la familia LTX-2.5, presumiblemente del ambito de generacion de video. Esta interpretacion es una inferencia a partir del nombre del archivo y no aparece confirmada en la informacion proporcionada, por lo que cualquier dato relativo al modelo base, a la resolucion de video soportada o al tipo de mejora aplicada debe considerarse no disponible.
 
@@ -23,7 +23,7 @@ La relevancia del artefacto es limitada en terminos de documentacion: no cuenta 
 | Tipo de artefacto | LoRA (fine-tuning de bajo rango) |
 | Modelo base declarado | "Other" (sin identificar en la model card) |
 | Autor | RunningHub, cuenta [@darkHUB](https://www.runninghub.ai/user-center/2025565893677027330) |
-| Plataformas de uso | ComfyUI, RunningHub, HuggingFace |
+| Plataformas de uso | ComfyUI, RunningHub, Hugging Face |
 | Tamano del repositorio | 1,3 GB |
 | Fecha de creacion | 2026-10-10 |
 | Ultima actualizacion | 2026-10-10 |
@@ -63,14 +63,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para inferencia: no disponible. El adaptador ocupa 1278 MiB en disco, pero durante la inferencia sus pesos se suman a los del modelo base, de modo que la VRAM necesaria depende por completo de este ultimo, que no se especifica.
 - GPU recomendadas: no disponible, al desconocerse el modelo base.
 - Compatibilidad con GPU de consumo: no determinable con la informacion proporcionada; dependera del modelo base y de la precision de carga.
-- Opciones de despliegue: ComfyUI (indicado en los tags), plataforma RunningHub (indicada en la model card) y HuggingFace. No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI, y en el caso de vLLM o TGI seria irrelevante si el modelo base es un modelo de difusion para video.
+- Opciones de despliegue: ComfyUI (indicado en los tags), plataforma RunningHub (indicada en la model card) y Hugging Face. No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI, y en el caso de vLLM o TGI seria irrelevante si el modelo base es un modelo de difusion para video.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-ltx2.5-cq-enhancer-lora-v2 | no disponible | no aplica | no disponible | no disponible | HuggingFace, RunningHub |
+| rh-ltx2.5-cq-enhancer-lora-v2 | no disponible | no aplica | no disponible | no disponible | Hugging Face, RunningHub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada no identifica modelos alternativos de la misma categoria ni aporta datos que permitan una comparacion objetiva. Cualquier tabla comparativa con cifras exigiria medir el adaptador sobre su modelo base, dato que no se declara.
@@ -88,7 +88,7 @@ La informacion proporcionada no identifica modelos alternativos de la misma cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RunningHubAI/rh-ltx2.5-cq-enhancer-lora-v2.safetensors-lora
+- Repositorio en Hugging Face: https://huggingface.co/RunningHubAI/rh-ltx2.5-cq-enhancer-lora-v2.safetensors-lora
 - README en chino: https://huggingface.co/RunningHubAI/rh-ltx2.5-cq-enhancer-lora-v2.safetensors-lora/blob/main/README_cn.md
 - Proyecto original en RunningHub: https://www.runninghub.ai/model/public/2100845352764076033
 - Pagina del autor ([@darkHUB](https://www.runninghub.ai/user-center/2025565893677027330)): https://www.runninghub.ai/user-center/2025565893677027330

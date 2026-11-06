@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Formato de razonamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-Think-SFT-MLX | 4.022.468.096 | no disponible | `<think>...</think>` aprendido por LoRA | apache-2.0 | HuggingFace, formato MLX |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | no disponible en la información proporcionada | no disponible | no aplica (Instruct sin traza explícita) | no disponible en la información proporcionada | HuggingFace |
-| mlx-community/Qwen3-4B-Instruct-2507-4bit (base MLX usada para el ajuste) | no disponible en la información proporcionada | no disponible | no aplica | no disponible en la información proporcionada | HuggingFace |
+| Qwen3-4B-Think-SFT-MLX | 4.022.468.096 | no disponible | `<think>...</think>` aprendido por LoRA | apache-2.0 | Hugging Face, formato MLX |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | no disponible en la información proporcionada | no disponible | no aplica (Instruct sin traza explícita) | no disponible en la información proporcionada | Hugging Face |
+| mlx-community/Qwen3-4B-Instruct-2507-4bit (base MLX usada para el ajuste) | no disponible en la información proporcionada | no disponible | no aplica | no disponible en la información proporcionada | Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones completas de terceros alternativos en la información proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de tercer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/12384-0ashntoi/Qwen3-4B-Think-SFT-MLX
+- Modelo en Hugging Face: https://huggingface.co/12384-0ashntoi/Qwen3-4B-Think-SFT-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Base MLX empleada para el ajuste: https://huggingface.co/mlx-community/Qwen3-4B-Instruct-2507-4bit
 - Dataset referenciado en las etiquetas del repositorio: https://huggingface.co/datasets/openai/gsm8k

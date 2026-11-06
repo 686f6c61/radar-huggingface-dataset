@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`replicate/aiter-kernels` no es un modelo de lenguaje, sino un paquete de kernels de computo publicado bajo el formato de la libreria `kernels` de HuggingFace. La model card indica explicitamente que se trata de la tarjeta de repositorio de `kernels-community/aiter-kernels` replicada en el espacio de nombres de `replicate`, generada de forma automatica, y que su uso previsto es cargarla como modulo desde Python mediante `kernels.get_kernel`. No contiene pesos, no tiene parametros entrenables y no procesa texto ni imagenes por si misma: expone funciones de bajo nivel que otras bibliotecas de inferencia o entrenamiento invocan sobre GPU.
+`replicate/aiter-kernels` no es un modelo de lenguaje, sino un paquete de kernels de computo publicado bajo el formato de la libreria `kernels` de Hugging Face. La model card indica explicitamente que se trata de la tarjeta de repositorio de `kernels-community/aiter-kernels` replicada en el espacio de nombres de `replicate`, generada de forma automatica, y que su uso previsto es cargarla como modulo desde Python mediante `kernels.get_kernel`. No contiene pesos, no tiene parametros entrenables y no procesa texto ni imagenes por si misma: expone funciones de bajo nivel que otras bibliotecas de inferencia o entrenamiento invocan sobre GPU.
 
-El paquete agrupa modulos de proposito especifico: `rope` y `apply_rotary_transformers` para embeddings rotatorios, `causal_conv1d` y `causal_conv1d_update_single_token` para convoluciones causales de una dimension, `moe` y `gmm` para mezcla de expertos y multiplicacion de matrices agrupada, `gemm`, `quant`, `kv_cache`, `softmax`, `topk`, `normalization`, `comms`, `fusions`, `gluon`, `gated_delta_net`, `gather_kv_b_proj`, `activation`, `RotateStyle` y `utils`. Es relevante ahora porque la propia tarjeta advierte de que, a partir del 13 de septiembre de 2026, HuggingFace retirara los repositorios de kernels publicados con el tipo "model" (por ejemplo `kernels-community/flash-attn3`), de modo que cualquier proyecto que dependa de estos paquetes debe migrar a una version reciente de la libreria `kernels` para evitar interrupciones en el servicio.
+El paquete agrupa modulos de proposito especifico: `rope` y `apply_rotary_transformers` para embeddings rotatorios, `causal_conv1d` y `causal_conv1d_update_single_token` para convoluciones causales de una dimension, `moe` y `gmm` para mezcla de expertos y multiplicacion de matrices agrupada, `gemm`, `quant`, `kv_cache`, `softmax`, `topk`, `normalization`, `comms`, `fusions`, `gluon`, `gated_delta_net`, `gather_kv_b_proj`, `activation`, `RotateStyle` y `utils`. Es relevante ahora porque la propia tarjeta advierte de que, a partir del 13 de septiembre de 2026, Hugging Face retirara los repositorios de kernels publicados con el tipo "model" (por ejemplo `kernels-community/flash-attn3`), de modo que cualquier proyecto que dependa de estos paquetes debe migrar a una version reciente de la libreria `kernels` para evitar interrupciones en el servicio.
 
 En cuanto a metricas de adopcion, el repositorio registra 0 descargas y 0 likes en el momento de la consulta, carece de pipeline declarado, no especifica idiomas soportados y no publica resultados de benchmarks. La licencia es MIT y la libreria declarada es `kernels`.
 
@@ -84,9 +84,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Elemento | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| replicate/aiter-kernels | Paquete de kernels para la libreria `kernels` | no aplica | no aplica | no disponible (sin benchmarks) | MIT | Publicado en HuggingFace, 0 descargas, 0 likes |
-| kernels-community/aiter-kernels | Paquete de kernels, origen del anterior | no aplica | no aplica | no disponible | no disponible en la informacion proporcionada | Publicado en HuggingFace |
-| kernels-community/flash-attn3 | Paquete de kernels de atencion, citado en el aviso de la propia tarjeta | no aplica | no aplica | no disponible | no disponible en la informacion proporcionada | Publicado en HuggingFace, afectado por la retirada de repositorios de tipo "model" |
+| replicate/aiter-kernels | Paquete de kernels para la libreria `kernels` | no aplica | no aplica | no disponible (sin benchmarks) | MIT | Publicado en Hugging Face, 0 descargas, 0 likes |
+| kernels-community/aiter-kernels | Paquete de kernels, origen del anterior | no aplica | no aplica | no disponible | no disponible en la informacion proporcionada | Publicado en Hugging Face |
+| kernels-community/flash-attn3 | Paquete de kernels de atencion, citado en el aviso de la propia tarjeta | no aplica | no aplica | no disponible | no disponible en la informacion proporcionada | Publicado en Hugging Face, afectado por la retirada de repositorios de tipo "model" |
 | Implementaciones de referencia de kernels en Triton u otros DSL | Bibliotecas de kernels | no aplica | no aplica | no disponible | no disponible | no disponible |
 
 No se dispone de datos que permitan una comparacion cuantitativa de rendimiento entre estas alternativas.
@@ -107,9 +107,9 @@ No se dispone de datos que permitan una comparacion cuantitativa de rendimiento 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/aiter-kernels
+- Repositorio en Hugging Face: https://huggingface.co/replicate/aiter-kernels
 - Repositorio de origen citado en la tarjeta: https://huggingface.co/kernels-community/aiter-kernels
-- Libreria `kernels` de HuggingFace: https://github.com/huggingface/kernels
+- Libreria `kernels` de Hugging Face: https://github.com/huggingface/kernels
 - Incidencias sobre la retirada de repositorios de kernels: https://github.com/huggingface/kernels/issues/new
 - Replicate, plataforma del autor: https://replicate.com/
 - Explorador de modelos de Replicate: https://replicate.com/explore

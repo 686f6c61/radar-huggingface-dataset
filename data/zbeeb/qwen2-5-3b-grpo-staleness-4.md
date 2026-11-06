@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-3B-GRPO-Staleness-4 es un checkpoint de investigación publicado por el usuario zbeeb en HuggingFace. Se trata de un ajuste por aprendizaje por refuerzo (GRPO, *Group Relative Policy Optimization*) de parámetros completos sobre el modelo base Qwen/Qwen2.5-3B, entrenado con 1.000 actualizaciones sobre un subconjunto de 17.005 filas del dataset de matemáticas DAPO (zbeeb/Staleness-GRPO-DAPO-Math-17k). La particularidad del experimento es el control del *staleness* o desfase entre la política que genera los rollouts y la política que se actualiza: en esta release el tope está fijado en 4 pasos off-policy (`max_off_policy_steps = 4`), de ahí el sufijo "Staleness-4".
+Qwen2.5-3B-GRPO-Staleness-4 es un checkpoint de investigación publicado por el usuario zbeeb en Hugging Face. Se trata de un ajuste por aprendizaje por refuerzo (GRPO, *Group Relative Policy Optimization*) de parámetros completos sobre el modelo base Qwen/Qwen2.5-3B, entrenado con 1.000 actualizaciones sobre un subconjunto de 17.005 filas del dataset de matemáticas DAPO (zbeeb/Staleness-GRPO-DAPO-Math-17k). La particularidad del experimento es el control del *staleness* o desfase entre la política que genera los rollouts y la política que se actualiza: en esta release el tope está fijado en 4 pasos off-policy (`max_off_policy_steps = 4`), de ahí el sufijo "Staleness-4".
 
 El modelo es denso, con 3.085.938.688 parámetros reales según los pesos en safetensors, y conserva la arquitectura y el tokenizador de Qwen2.5-3B sin modificaciones. Su relevancia es fundamentalmente metodológica: forma parte de una serie de brazos experimentales que estudian cómo afecta el envejecimiento de los rollouts al entrenamiento con GRPO, con configuración de entrenamiento, manifiesto de exportación y resultados de evaluación publicados de forma machine-readable. No es un modelo orientado a producto ni a despliegue generalista, sino un artefacto reproducible para investigación en RL aplicado a razonamiento matemático.
 
@@ -85,10 +85,10 @@ No se proporcionan resultados comparativos con otros modelos en la informacion d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| zbeeb/Qwen2.5-3B-GRPO-Staleness-4 | 3.085.938.688 | 4.096 tokens en entrenamiento; extension a 8K no validada | qwen-research | HuggingFace, safetensors | Tabla de 9 conjuntos en la ficha (MATH500 64,40 % greedy) |
-| Qwen/Qwen2.5-3B (base) | Mismo orden de magnitud (modelo base del anterior) | No disponible en la informacion proporcionada | qwen-research | HuggingFace | No disponible en la informacion proporcionada |
-| Qwen2.5-3B-Instruct | No disponible en la informacion proporcionada | No disponible | qwen-research | HuggingFace | No disponible en la informacion proporcionada |
-| Qwen2.5-Math-1.5B | No disponible en la informacion proporcionada | No disponible | qwen-research | HuggingFace | No disponible; la ficha advierte que usa una familia distinta (Qwen2.5-Math) y que las diferencias no son atribuibles solo al tamano |
+| zbeeb/Qwen2.5-3B-GRPO-Staleness-4 | 3.085.938.688 | 4.096 tokens en entrenamiento; extension a 8K no validada | qwen-research | Hugging Face, safetensors | Tabla de 9 conjuntos en la ficha (MATH500 64,40 % greedy) |
+| Qwen/Qwen2.5-3B (base) | Mismo orden de magnitud (modelo base del anterior) | No disponible en la informacion proporcionada | qwen-research | Hugging Face | No disponible en la informacion proporcionada |
+| Qwen2.5-3B-Instruct | No disponible en la informacion proporcionada | No disponible | qwen-research | Hugging Face | No disponible en la informacion proporcionada |
+| Qwen2.5-Math-1.5B | No disponible en la informacion proporcionada | No disponible | qwen-research | Hugging Face | No disponible; la ficha advierte que usa una familia distinta (Qwen2.5-Math) y que las diferencias no son atribuibles solo al tamano |
 
 La model card menciona explícitamente que la comparación entre 3B y 1.5B no es limpia porque el 1.5B parte de Qwen2.5-Math mientras que el 3B usa Qwen2.5 general. No se aportan resultados de modelos comparables en la informacion disponible.
 
@@ -109,7 +109,7 @@ La model card menciona explícitamente que la comparación entre 3B y 1.5B no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zbeeb/Qwen2.5-3B-GRPO-Staleness-4
+- Modelo en Hugging Face: https://huggingface.co/zbeeb/Qwen2.5-3B-GRPO-Staleness-4
 - Modelo base Qwen2.5-3B: https://huggingface.co/Qwen/Qwen2.5-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/zbeeb/Staleness-GRPO-DAPO-Math-17k
 - Configuracion de entrenamiento (dentro del repositorio): `training-config.json`

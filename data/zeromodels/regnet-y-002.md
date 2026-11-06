@@ -78,7 +78,7 @@ Los tres modelos son el mismo checkpoint con diferentes empaquetados. La ventaja
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeromodels/regnet-y-002
+- Modelo en Hugging Face: https://huggingface.co/zeromodels/regnet-y-002
 - Coleccion RegNet de zeromodels: https://huggingface.co/collections/zeromodels/regnet-6a9270a4e723a861ea988d0b
 - Paper original: https://arxiv.org/abs/2003.13678
 - Paper en HF: https://huggingface.co/papers/2003.13678

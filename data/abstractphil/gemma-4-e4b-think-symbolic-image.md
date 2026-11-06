@@ -76,7 +76,7 @@ La model card solo incluye la fila completa de Lucia 4B para el conjunto de 200 
 
 | Modelo | Parametros | Contexto | Formato de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma 4 E4B think symbolic image | 4B efectivos + LoRA | no disponible | Cadena de 16 pasos + caption + preguntas etiquetadas | Apache 2.0 | Adaptador PEFT en HuggingFace |
+| Gemma 4 E4B think symbolic image | 4B efectivos + LoRA | no disponible | Cadena de 16 pasos + caption + preguntas etiquetadas | Apache 2.0 | Adaptador PEFT en Hugging Face |
 | Lucia 4B (Qwen3.5) | 4B | no disponible | Misma receta y formato | no disponible en la informacion | Miembro de la misma linea |
 | Lucia v1 (9B) | 9B | no disponible | Misma receta y formato | no disponible en la informacion | Miembro de la misma linea |
 
@@ -96,7 +96,7 @@ Frente a Lucia 4B, el modelo de Gemma iguala la forma de fila y el rendimiento e
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/AbstractPhil/gemma-4-e4b-think-symbolic-image
+- Hugging Face del adaptador: https://huggingface.co/AbstractPhil/gemma-4-e4b-think-symbolic-image
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Dataset de captions: https://huggingface.co/datasets/AbstractPhil/thought-symbolic-image-captions
 - Dataset de entrenamiento: https://huggingface.co/datasets/AbstractPhil/qwen-symbolic-thinking-image-training

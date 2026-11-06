@@ -2,9 +2,9 @@
 
 ## Resumen
 
-voicort/sn92-generalist-v5-4 es un modelo de tipo "generalist decision-model" publicado por el usuario voicort en HuggingFace, derivado por fine-tuning del modelo base baselabs/mammoth-1. Con 26.085.330.160 parámetros (aproximadamente 26 mil millones) y un repositorio de 52,2 GB en formato safetensors, se presenta como una variante especializada orientada a la toma de decisiones dentro de un pipeline de evaluación denominado "eval-v5" y un marco de trabajo llamado "reax" y "sn92". La arquitectura declarada en los metadatos es qwen3_5, lo que sugiere una base de la familia Qwen 3.5 sobre la que se ha aplicado el fine-tuning respecto al modelo mammoth-1.
+voicort/sn92-generalist-v5-4 es un modelo de tipo "generalist decision-model" publicado por el usuario voicort en Hugging Face, derivado por fine-tuning del modelo base baselabs/mammoth-1. Con 26.085.330.160 parámetros (aproximadamente 26 mil millones) y un repositorio de 52,2 GB en formato safetensors, se presenta como una variante especializada orientada a la toma de decisiones dentro de un pipeline de evaluación denominado "eval-v5" y un marco de trabajo llamado "reax" y "sn92". La arquitectura declarada en los metadatos es qwen3_5, lo que sugiere una base de la familia Qwen 3.5 sobre la que se ha aplicado el fine-tuning respecto al modelo mammoth-1.
 
-El modelo tiene un acceso restringido (gated) en HuggingFace: es necesario aceptar condiciones en la página del repositorio antes de poder descargar los pesos. La licencia declarada es Apache 2.0, lo que en principio permite uso comercial, aunque la naturaleza gated del acceso añade condiciones adicionales que conviene revisar. El número de descargas (4) y de likes (0) indica que se trata de una publicación muy reciente y con escasa adopción pública en el momento de redactar esta ficha.
+El modelo tiene un acceso restringido (gated) en Hugging Face: es necesario aceptar condiciones en la página del repositorio antes de poder descargar los pesos. La licencia declarada es Apache 2.0, lo que en principio permite uso comercial, aunque la naturaleza gated del acceso añade condiciones adicionales que conviene revisar. El número de descargas (4) y de likes (0) indica que se trata de una publicación muy reciente y con escasa adopción pública en el momento de redactar esta ficha.
 
 La relevancia de este modelo radica en su enfoque como modelo de decisión dentro de un sistema mayor (sn92/reax), más que como un LLM conversacional de propósito general. No obstante, la información pública disponible es muy limitada: no se detallan idiomas soportados, pipeline, datos de entrenamiento ni resultados de benchmarks, por lo que muchas especificaciones deben marcarse como no disponibles.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| voicort/sn92-generalist-v5-4 | ~26,1 B | no disponible | Apache 2.0 | Gated en HuggingFace |
+| voicort/sn92-generalist-v5-4 | ~26,1 B | no disponible | Apache 2.0 | Gated en Hugging Face |
 | baselabs/mammoth-1 (modelo base) | no disponible | no disponible | no disponible | no disponible |
 | Qwen 3.5 (familia base) | variable | no disponible | variable según variante | pública |
 
@@ -74,7 +74,7 @@ No se dispone de información suficiente sobre modelos comparables de la misma c
 ## Limitaciones y advertencias
 
 - Información pública muy escasa: no se documentan idiomas, contexto, datos de entrenamiento ni benchmarks, lo que dificulta evaluar su calidad real.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede limitar la reproducibilidad y el uso automatizado.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede limitar la reproducibilidad y el uso automatizado.
 - Riesgo de alucinación: inherente a los modelos generativos de esta familia; no se han publicado evaluaciones específicas de fiabilidad.
 - Sesgos conocidos: no disponibles; al derivar de un modelo base no documentado, los sesgos heredados no pueden caracterizarse.
 - Licencia Apache 2.0 declarada, pero las condiciones del acceso gated pueden imponer restricciones adicionales que deben revisarse antes de uso comercial.
@@ -83,6 +83,6 @@ No se dispone de información suficiente sobre modelos comparables de la misma c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/voicort/sn92-generalist-v5-4
+- Hugging Face: https://huggingface.co/voicort/sn92-generalist-v5-4
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

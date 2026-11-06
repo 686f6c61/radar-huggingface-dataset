@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mentorcode/u-net` es un repositorio publicado en HuggingFace por el usuario `mentorcode` bajo licencia MIT. La informacion disponible se limita a los metadatos del repositorio: identificador, autor, licencia, tamano (0,4 GB), fechas de creacion y actualizacion (2026-10-05) y un recuento de 0 descargas y 0 likes. La model card no contiene descripcion tecnica, ni arquitectura declarada, ni tabla de resultados.
+`mentorcode/u-net` es un repositorio publicado en Hugging Face por el usuario `mentorcode` bajo licencia MIT. La informacion disponible se limita a los metadatos del repositorio: identificador, autor, licencia, tamano (0,4 GB), fechas de creacion y actualizacion (2026-10-05) y un recuento de 0 descargas y 0 likes. La model card no contiene descripcion tecnica, ni arquitectura declarada, ni tabla de resultados.
 
 El nombre del repositorio sugiere una implementacion de U-Net, una arquitectura de red convolucional con conexiones de salto disenada originalmente para segmentacion de imagenes biomedicas. No obstante, esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ningun campo de la model card, por los tags (unicamente `license:mit` y `region:us`) ni por el pipeline declarado, que aparece como no disponible.
 
@@ -79,7 +79,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la tare
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mentorcode/u-net | no disponible | no aplica | no disponible | MIT | HuggingFace |
+| mentorcode/u-net | no disponible | no aplica | no disponible | MIT | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,5 +95,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la tare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mentorcode/u-net
+- Hugging Face: https://huggingface.co/mentorcode/u-net
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

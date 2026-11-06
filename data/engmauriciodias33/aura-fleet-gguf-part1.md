@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aura Fleet GGUF Part 1 es un modelo de lenguaje publicado por el usuario engmauriciodias33 en HuggingFace bajo el identificador `engmauriciodias33/aura-fleet-gguf-part1`. Se distribuye en formato GGUF, lo que indica que esta pensado para inferencia local mediante llama.cpp y herramientas compatibles, y cuenta con la etiqueta `endpoints_compatible`, lo que sugiere que puede desplegarse en infraestructuras de inferencia gestionadas. El repositorio acumula 40.633 descargas, aunque no registra ningun "like", un patron poco habitual que conviene tener en cuenta al evaluar su procedencia.
+Aura Fleet GGUF Part 1 es un modelo de lenguaje publicado por el usuario engmauriciodias33 en Hugging Face bajo el identificador `engmauriciodias33/aura-fleet-gguf-part1`. Se distribuye en formato GGUF, lo que indica que esta pensado para inferencia local mediante llama.cpp y herramientas compatibles, y cuenta con la etiqueta `endpoints_compatible`, lo que sugiere que puede desplegarse en infraestructuras de inferencia gestionadas. El repositorio acumula 40.633 descargas, aunque no registra ningun "like", un patron poco habitual que conviene tener en cuenta al evaluar su procedencia.
 
 El dato mas relevante disponible es el numero de parametros reportado en los safetensors asociados: 8.030.261.312, es decir, aproximadamente 8.000 millones de parametros. Se trata por tanto de un modelo de escala 8B, un tamano que encaja en el segmento de modelos que pueden ejecutarse en GPUs de consumo con cuantizacion adecuada. La presencia de la etiqueta `imatrix` sugiere que las cuantizaciones se han generado utilizando matrices de importancia (importance matrix), una tecnica habitual para mejorar la calidad de los pesos cuantizados en llama.cpp.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Aura Fleet GGUF Part 1 | ~8B | no disponible | no disponible | GGUF | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | safetensors, GGUF | HuggingFace, amplio ecosistema |
-| Mistral 7B | 7,3B | 32K | Apache 2.0 | safetensors, GGUF | HuggingFace, amplio ecosistema |
-| Qwen2.5 7B | 7,6B | 128K | Apache 2.0 (mayoria de variantes) | safetensors, GGUF | HuggingFace, amplio ecosistema |
+| Aura Fleet GGUF Part 1 | ~8B | no disponible | no disponible | GGUF | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | safetensors, GGUF | Hugging Face, amplio ecosistema |
+| Mistral 7B | 7,3B | 32K | Apache 2.0 | safetensors, GGUF | Hugging Face, amplio ecosistema |
+| Qwen2.5 7B | 7,6B | 128K | Apache 2.0 (mayoria de variantes) | safetensors, GGUF | Hugging Face, amplio ecosistema |
 
 La comparativa se limita a parametros y licencia porque no hay datos de rendimiento ni de contexto para Aura Fleet. Frente a las alternativas citadas, la diferencia principal es la falta de documentacion publica y de licencia declarada, lo que complica su adopcion en produccion frente a modelos con terminos claros y benchmarks reproducibles.
 
@@ -81,4 +81,4 @@ La comparativa se limita a parametros y licencia porque no hay datos de rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/engmauriciodias33/aura-fleet-gguf-part1
+- Hugging Face: https://huggingface.co/engmauriciodias33/aura-fleet-gguf-part1

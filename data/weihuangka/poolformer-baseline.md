@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`weihuangka/poolformer-baseline` es un repositorio de HuggingFace que contiene una implementación propia y de pequeño tamaño de una arquitectura PoolFormer orientada a tareas de retrieval, publicada por el usuario weihuangka bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni de una release con resultados: la propia model card lo describe como un punto de partida reproducible y el checkpoint incluido (`model.safetensors`) es únicamente una inicialización válida para pruebas de humo (smoke tests), no un modelo con pesos ajustados. El recuento real de parámetros que reporta el archivo safetensors es de 49.600 parámetros (49,6K), un orden de magnitud propio de una implementación de juguete o de un esqueleto de código, no de un modelo de producción.
+`weihuangka/poolformer-baseline` es un repositorio de Hugging Face que contiene una implementación propia y de pequeño tamaño de una arquitectura PoolFormer orientada a tareas de retrieval, publicada por el usuario weihuangka bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni de una release con resultados: la propia model card lo describe como un punto de partida reproducible y el checkpoint incluido (`model.safetensors`) es únicamente una inicialización válida para pruebas de humo (smoke tests), no un modelo con pesos ajustados. El recuento real de parámetros que reporta el archivo safetensors es de 49.600 parámetros (49,6K), un orden de magnitud propio de una implementación de juguete o de un esqueleto de código, no de un modelo de producción.
 
 La relevancia de esta ficha es acotada y debe interpretarse en su contexto: sirve como artefacto de investigación reproducible para experimentar con variantes de PoolFormer en retrieval, no como un modelo desplegable. La configuración declarada incluye atención dilatada, fusión con gating, activación mish y normalización InstanceNorm, junto con una receta de entrenamiento por defecto basada en AdamW y un schedule de warmup constante. La model card recomienda explícitamente evaluar sobre Flickr30k, reportar la métrica de la tarea con al menos tres semillas e incluir una baseline de capacidad equiparable.
 
@@ -87,5 +87,5 @@ Nota: los datos de los modelos alternativos no figuran en la información propor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/weihuangka/poolformer-baseline
+- Hugging Face: https://huggingface.co/weihuangka/poolformer-baseline
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

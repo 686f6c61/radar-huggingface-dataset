@@ -102,10 +102,10 @@ La model card ofrece comparaciones directas dentro del mismo conjunto de test, p
 
 | Modelo | Parametros | Contexto | Accuracy (test) | Macro-F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este checkpoint (von-transaction-classifier) | 394.781.696 | no disponible | 84,8% | 0,845 | apache-2.0 | HuggingFace |
+| Este checkpoint (von-transaction-classifier) | 394.781.696 | no disponible | 84,8% | 0,845 | apache-2.0 | Hugging Face |
 | Laya fine-tuned | no disponible | no disponible | 79,5% | 0,574 | no disponible | no disponible |
-| Von fine-tune, solo etiquetas reales | no disponible (base wfzyx/von) | no disponible | 75,9% | 0,583 | apache-2.0 (base) | HuggingFace |
-| Von zero-shot, mismo texto de opciones | no disponible (base wfzyx/von) | no disponible | 47,3% | 0,419 | apache-2.0 | HuggingFace |
+| Von fine-tune, solo etiquetas reales | no disponible (base wfzyx/von) | no disponible | 75,9% | 0,583 | apache-2.0 (base) | Hugging Face |
+| Von zero-shot, mismo texto de opciones | no disponible (base wfzyx/von) | no disponible | 47,3% | 0,419 | apache-2.0 | Hugging Face |
 
 No se dispone de información sobre los modelos Laya más allá de sus resultados en esta tabla, por lo que la comparación de parámetros, contexto y licencia de esas alternativas queda como no disponible.
 
@@ -125,7 +125,7 @@ No se dispone de información sobre los modelos Laya más allá de sus resultado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yslahoti/von-transaction-classifier
+- Modelo en Hugging Face: https://huggingface.co/yslahoti/von-transaction-classifier
 - Modelo base: https://huggingface.co/wfzyx/von
 - Script de datos sintéticos: `synthetic_example.py` (incluido en el repositorio del modelo)
 - Fichero de calibración: `marker_calibration.json` (procedente del release base de Von)

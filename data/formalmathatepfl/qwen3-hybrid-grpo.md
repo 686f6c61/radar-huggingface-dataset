@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3 Hybrid GRPO es un checkpoint de ajuste fino del modelo Qwen3-8B, entrenado con GRPO (Group Relative Policy Optimization) para demostración automática de teoremas en Lean. Lo publica el usuario `formalmathatepfl` en HuggingFace y se corresponde con el paso de entrenamiento 250, es decir, un checkpoint intermedio de un proceso de RL, no una versión final consolidada.
+Qwen3 Hybrid GRPO es un checkpoint de ajuste fino del modelo Qwen3-8B, entrenado con GRPO (Group Relative Policy Optimization) para demostración automática de teoremas en Lean. Lo publica el usuario `formalmathatepfl` en Hugging Face y se corresponde con el paso de entrenamiento 250, es decir, un checkpoint intermedio de un proceso de RL, no una versión final consolidada.
 
 El modelo conserva la arquitectura del base (`Qwen3ForCausalLM`, transformer causal denso) con 8.190.735.360 parámetros en BF16 y pesos en formato safetensors repartidos en 4 shards (16,4 GB de repositorio). Su relevancia es acotada pero específica: los demostradores de teoremas entrenados con RL sobre Lean son escasos en abierto, y este checkpoint permite inspeccionar el efecto de GRPO sobre un modelo de ~8B en una tarea de razonamiento formal verificable.
 
@@ -37,7 +37,7 @@ El entrenamiento documentado es GRPO (Group Relative Policy Optimization), un al
 - Razonamiento formal y matematico de varios pasos sobre enunciados demostrables.
 - Escritura de scripts de prueba que pueden verificarse mecanicamente con el compilador de Lean.
 - Capacidad conversacional (`conversational`), lo que permite interaccion multi-turno.
-- Compatibilidad declarada con `text-generation-inference` y con `endpoints_compatible` (despliegue gestionado en HuggingFace).
+- Compatibilidad declarada con `text-generation-inference` y con `endpoints_compatible` (despliegue gestionado en Hugging Face).
 - Soporte de tool calling / function calling: no declarado en la model card. El modelo base Qwen3 lo incorpora, pero no hay confirmacion de que se haya preservado tras el ajuste con GRPO.
 - Capacidades de agente y razonamiento multi-paso: no declaradas.
 - Modo thinking explicito: no declarado.
@@ -69,7 +69,7 @@ Los valores de VRAM son estimaciones calculadas a partir del recuento de paramet
 - VRAM estimada en 4 bits (requiere cuantizacion propia, no incluida en el repositorio): aproximadamente 5-7 GB.
 - GPU de datacenter: A100 40 GB o 80 GB, H100 80 GB, L40S 48 GB. En A100 40 GB cabe en BF16 con margen.
 - GPU de consumo: cabe en BF16 en RTX 4090 / RTX 5090 (24-32 GB) solo con contexto contenido y ajustando el uso de memoria; en RTX 4080 / 4070 Ti (16 GB) o inferiores es necesario cuantizar a 8 o 4 bits.
-- Opciones de despliegue: `transformers` (soporte nativo confirmado), TGI (el repositorio declara la etiqueta `text-generation-inference`), vLLM (soporte de Qwen3), Endpoints de HuggingFace (`endpoints_compatible`). Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que el repositorio no incluye version cuantizada.
+- Opciones de despliegue: `transformers` (soporte nativo confirmado), TGI (el repositorio declara la etiqueta `text-generation-inference`), vLLM (soporte de Qwen3), Endpoints de Hugging Face (`endpoints_compatible`). Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que el repositorio no incluye version cuantizada.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas ni datos de generacion (tokens por segundo) en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -98,6 +98,6 @@ No se dispone de datos de evaluacion de este checkpoint que permitan una compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/formalmathatepfl/qwen3-hybrid-grpo
+- Modelo en Hugging Face: https://huggingface.co/formalmathatepfl/qwen3-hybrid-grpo
 - Modelo base referenciado: Qwen3-8B (no se ha incluido un enlace directo porque no aparece en la informacion proporcionada)
 - Paper, blog o repositorio asociados: no disponibles. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo, su entrenamiento o su evaluacion.

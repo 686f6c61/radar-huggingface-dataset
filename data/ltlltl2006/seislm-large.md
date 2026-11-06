@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SeisLM large es un codificador de formas de onda sísmicas preentrenado mediante aprendizaje auto-supervisado, publicado por el usuario ltlltl2006 en HuggingFace y derivado del trabajo SeisLM: a Foundation Model for Seismic Waveforms (Tianlin Liu et al., arXiv:2410.15765). No es un modelo de lenguaje: es un extractor de características cuyo pipeline declarado es feature-extraction, con 90.683.648 parametros que producen representaciones contextuales de dimension 768 a partir de ventanas de 3001 muestras en tres componentes (ZNE) a 100 Hz. Se distribuye en safetensors junto con la configuracion de arquitectura embebida en el checkpoint original.
+SeisLM large es un codificador de formas de onda sísmicas preentrenado mediante aprendizaje auto-supervisado, publicado por el usuario ltlltl2006 en Hugging Face y derivado del trabajo SeisLM: a Foundation Model for Seismic Waveforms (Tianlin Liu et al., arXiv:2410.15765). No es un modelo de lenguaje: es un extractor de características cuyo pipeline declarado es feature-extraction, con 90.683.648 parametros que producen representaciones contextuales de dimension 768 a partir de ventanas de 3001 muestras en tres componentes (ZNE) a 100 Hz. Se distribuye en safetensors junto con la configuracion de arquitectura embebida en el checkpoint original.
 
 El modelo resuelve el problema de obtener representaciones genericas y reutilizables de senales sismicas sin necesidad de etiquetas, de modo que despues puedan adaptarse con fine-tuning a tareas como phase picking (picking de fases P y S), deteccion de terremotos o clasificacion de eventos. Su relevancia radica en que ese preentrenamiento se realizo sobre un conjunto agregado de fuentes sismicas relevantes (ETHZ, GEOFON, STEAD, MLAAPDE, InstanceCounts, Iquique, PNW y OBST2024), lo que permite transfer learning a nuevas regiones o instrumentos con menos datos etiquetados.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Categoria | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ltlltl2006/seislm-large | Codificador auto-supervisado de formas de onda | 90.683.648 | 3 x 3001 muestras a 100 Hz | MIT | HuggingFace, pesos safetensors + wheel |
+| ltlltl2006/seislm-large | Codificador auto-supervisado de formas de onda | 90.683.648 | 3 x 3001 muestras a 100 Hz | MIT | Hugging Face, pesos safetensors + wheel |
 | SeisLM (original, Liu et al.) | Codificador auto-supervisado de formas de onda | No confirmado de forma independiente en la informacion disponible; este artefacto deriva de el | Igual que el anterior | MIT | Paper y repositorio GitHub asociado |
 | Modelos de tarea tipo PhaseNet, EQTransformer o GPD (familia SeisBench) | Modelos supervisados especificos de phase picking / deteccion | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada |
 
@@ -87,7 +87,7 @@ No se dispone de datos verificados de parametros, contexto o licencia de las alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ltlltl2006/seislm-large
+- Modelo en Hugging Face: https://huggingface.co/ltlltl2006/seislm-large
 - Paper SeisLM: https://arxiv.org/abs/2410.15765
 - DOI del paper: https://doi.org/10.48550/arXiv.2410.15765
 - Repositorio de codigo: https://github.com/liutianlin0121/seisLM

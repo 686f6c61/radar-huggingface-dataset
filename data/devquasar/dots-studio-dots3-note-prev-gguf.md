@@ -71,8 +71,8 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: [DevQuasar/dots-studio.dots3-note-prev-GGUF](https://huggingface.co/DevQuasar/dots-studio.dots3-note-prev-GGUF)
-- Modelo original en HuggingFace: [dots-studio/dots3-note-prev](https://huggingface.co/dots-studio/dots3-note-prev)
+- Modelo cuantizado en Hugging Face: [DevQuasar/dots-studio.dots3-note-prev-GGUF](https://huggingface.co/DevQuasar/dots-studio.dots3-note-prev-GGUF)
+- Modelo original en Hugging Face: [dots-studio/dots3-note-prev](https://huggingface.co/dots-studio/dots3-note-prev)
 - Repositorio GitHub del modelo: [studio-dots-ai/dots3-note-prev](https://github.com/studio-dots-ai/dots3-note-prev)
 - Página oficial del modelo: [https://studio.dots.ai/dots/dots3-en.html](https://studio.dots.ai/dots/dots3-en.html)
 - Sitio de DevQuasar: [https://devquasar.com](https://devquasar.com)

@@ -72,7 +72,7 @@ No se han publicado en la información disponible los resultados numéricos de b
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| K2-Horizon-32B-NVFP4 | ~20,7B reales (32B declarados) | 512K | Apache 2.0 | HuggingFace, requiere Blackwell | Checkpoint stage 1; cuantizado NVFP4 |
+| K2-Horizon-32B-NVFP4 | ~20,7B reales (32B declarados) | 512K | Apache 2.0 | Hugging Face, requiere Blackwell | Checkpoint stage 1; cuantizado NVFP4 |
 | Qwen3.8-27B | 27B | No disponible | No disponible | No disponible | Comparativo citado por el autor |
 | Muse Glimmer-30B | 30B | No disponible | No disponible | No disponible | Comparativo citado por el autor |
 | IBM Granite 4.2 30B | 30B | No disponible | No disponible | No disponible | Comparativo citado por el autor |
@@ -92,7 +92,7 @@ Los datos de contexto, licencia y disponibilidad de los modelos comparables no f
 
 ## Enlaces
 
-- [HuggingFace: IFM/K2-Horizon-32B-NVFP4](https://huggingface.co/IFM/K2-Horizon-32B-NVFP4)
+- [Hugging Face: IFM/K2-Horizon-32B-NVFP4](https://huggingface.co/IFM/K2-Horizon-32B-NVFP4)
 - [Modelo base: IFM/K2-Horizon-32B](https://huggingface.co/IFM/K2-Horizon-32B)
 - [Código de entrenamiento (xllm)](https://github.com/ifm-ai/xllm)
 - [Código de evaluación (Eval360)](https://github.com/ifm-ai/Eval360)

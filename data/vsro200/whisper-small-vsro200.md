@@ -111,7 +111,7 @@ La comparación más directa es con el Whisper Small zero-shot, sobre el que el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vsro200/whisper-small-vsro200
+- Modelo en Hugging Face: https://huggingface.co/vsro200/whisper-small-vsro200
 - Modelo base: https://huggingface.co/alexandradiaconu/whisper-small-echo-34
 - Colección de modelos VSR rumanos: https://huggingface.co/vsro200/models-vsro200
 - Repositorio GitHub del pipeline AVSR: https://github.com/vsro200/vsro200

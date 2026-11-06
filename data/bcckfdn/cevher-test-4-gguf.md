@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cevher-test-4-GGUF es la distribucion en formato GGUF del modelo cevher-406m, desarrollado por el usuario bcckfdn y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de lenguaje de 406.918.144 parametros (aproximadamente 406 M) entrenado desde cero sobre 3.932 millones de tokens, con una arquitectura de tipo Llama equivalente a la utilizada por la familia SmolLM2: 34 capas y una dimension oculta de 1024. El repositorio no contiene los pesos originales en safetensors, sino cuatro cuantizaciones GGUF listas para su uso con llama.cpp, Ollama y LM Studio.
+cevher-test-4-GGUF es la distribucion en formato GGUF del modelo cevher-406m, desarrollado por el usuario bcckfdn y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de lenguaje de 406.918.144 parametros (aproximadamente 406 M) entrenado desde cero sobre 3.932 millones de tokens, con una arquitectura de tipo Llama equivalente a la utilizada por la familia SmolLM2: 34 capas y una dimension oculta de 1024. El repositorio no contiene los pesos originales en safetensors, sino cuatro cuantizaciones GGUF listas para su uso con llama.cpp, Ollama y LM Studio.
 
 El modelo esta orientado a generacion de texto conversacional en turco e ingles, dos idiomas declarados explicitamente en sus etiquetas y en la model card. Su relevancia practica reside en el segmento de los modelos pequenos: al situarse por debajo de los 500 millones de parametros, puede ejecutarse en CPU, en GPUs de gama baja e incluso en dispositivos con recursos muy limitados, lo que lo hace apto para prototipado rapido y despliegues en el borde.
 
@@ -99,7 +99,7 @@ En terminos de rendimiento medido no es posible establecer comparacion alguna, p
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/bcckfdn/cevher-test-4-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/bcckfdn/cevher-test-4-GGUF
 - Modelo base: https://huggingface.co/bcckfdn/cevher-test-4
 - Paper, blog o repositorio de codigo del entrenamiento: no disponible
 - Resultados de benchmarks o informe de evaluacion: no disponible

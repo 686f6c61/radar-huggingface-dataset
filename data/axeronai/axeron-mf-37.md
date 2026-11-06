@@ -74,6 +74,6 @@ No se dispone de datos de rendimiento comparativo para axeron-mf-37. La comparac
 
 ## Enlaces
 
-- [HuggingFace - AxeronAI/axeron-mf-37](https://huggingface.co/AxeronAI/axeron-mf-37)
+- [Hugging Face - AxeronAI/axeron-mf-37](https://huggingface.co/AxeronAI/axeron-mf-37)
 - [Modelo base - Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
 - [Axeron ModelForge (herramienta de entrenamiento)](https://huggingface.co/AxeronAI) (página del autor, sin documentación adicional)

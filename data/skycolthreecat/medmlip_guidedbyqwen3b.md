@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MedMLIP_GuidedByQwen3B es un modelo publicado en HuggingFace por el usuario SkyColThreeCat bajo licencia MIT y etiquetado para la region "us". En el momento de redactar esta ficha, la model card del repositorio no contiene informacion tecnica alguna: unicamente la declaracion de licencia. No se especifican arquitectura, numero de parametros, longitud de contexto, idiomas, formato de pesos ni procedimiento de entrenamiento.
+MedMLIP_GuidedByQwen3B es un modelo publicado en Hugging Face por el usuario SkyColThreeCat bajo licencia MIT y etiquetado para la region "us". En el momento de redactar esta ficha, la model card del repositorio no contiene informacion tecnica alguna: unicamente la declaracion de licencia. No se especifican arquitectura, numero de parametros, longitud de contexto, idiomas, formato de pesos ni procedimiento de entrenamiento.
 
 El nombre del repositorio sugiere dos cosas que no pueden confirmarse con la informacion disponible: por un lado, una posible orientacion al dominio medico ("Med"); por otro, una posible relacion con un modelo de la familia Qwen de aproximadamente 3.000 millones de parametros ("GuidedByQwen3B"), que podria indicar un proceso de destilacion, ajuste fino supervisado o generacion de datos guiada por ese modelo mayor. Ninguna de estas hipotesis esta documentada por el autor, por lo que deben tratarse como especulacion y no como caracteristica verificada.
 
@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no permite identificar alternativas 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MedMLIP_GuidedByQwen3B | no disponible | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| MedMLIP_GuidedByQwen3B | no disponible | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -105,6 +105,6 @@ No disponible. La informacion proporcionada no permite identificar alternativas 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SkyColThreeCat/MedMLIP_GuidedByQwen3B
+- Hugging Face: https://huggingface.co/SkyColThreeCat/MedMLIP_GuidedByQwen3B
 
 Los resultados de busqueda web disponibles no guardan relacion con el modelo: corresponden a foros de videojuegos (Kano Community Forums, Mob Wars: LCN) y no aportan informacion tecnica, papers, repositorios ni demos asociados a MedMLIP_GuidedByQwen3B. No se han encontrado papers, blogs ni repositorios adicionales en la informacion proporcionada.

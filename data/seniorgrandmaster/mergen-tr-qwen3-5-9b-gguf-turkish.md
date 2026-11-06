@@ -1,7 +1,7 @@
 # SeniorGrandMaster/Mergen-TR-Qwen3.5-9B-GGUF-TURKISH
 
 ## Resumen
-Mergen-TR-Qwen3.5-9B-GGUF-TURKISH es la distribucion en formato GGUF del modelo Mergen-TR-Qwen3.5-9B, un modelo de lenguaje de ~8.950 millones de parametros (8,95B) afinado especificamente para turco a partir de Qwen3.5-9B. Lo publica el usuario SeniorGrandMaster en HuggingFace, mientras que el modelo base afinado lo desarrolla dogukanvzr. El modelo incorpora un modo hibrido de razonamiento (thinking / non-thinking) y se ha post-entrenado sobre un corpus privado de turco con aproximadamente 277.000 ejemplos supervisados y 15.000 pares de preferencia.
+Mergen-TR-Qwen3.5-9B-GGUF-TURKISH es la distribucion en formato GGUF del modelo Mergen-TR-Qwen3.5-9B, un modelo de lenguaje de ~8.950 millones de parametros (8,95B) afinado especificamente para turco a partir de Qwen3.5-9B. Lo publica el usuario SeniorGrandMaster en Hugging Face, mientras que el modelo base afinado lo desarrolla dogukanvzr. El modelo incorpora un modo hibrido de razonamiento (thinking / non-thinking) y se ha post-entrenado sobre un corpus privado de turco con aproximadamente 277.000 ejemplos supervisados y 15.000 pares de preferencia.
 
 El objetivo del modelo es ofrecer razonamiento matematico, cadena de pensamiento y generacion en turco de alta calidad en un tamano de 9B, compitiendo con modelos de 27B a 70B en benchmarks turcos. Segun la model card, alcanza 74,3 en Turkish-MMLU y 84,4 en TurkishMMLU con cadena de pensamiento, lo que lo situa por encima de modelos como Llama 3.1 70B o Gemma 2 27B en esa tarea. Esta version concreta del repositorio es una cuantizacion GGUF del modelo base, pensada para despliegue local con llama.cpp, Ollama u otros motores compatibles con GGUF.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks especificos para esta cuantizacion 
 
 | Modelo | Parametros | Contexto | Turkish-MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mergen-TR-Qwen3.5-9B (esta ficha, GGUF) | ~8,95B | hasta 16K en evaluacion | 74,3 | Apache-2.0 | HuggingFace (GGUF) |
-| Qwen3 14B | 14B | no disponible | 71,7 | no disponible | HuggingFace |
-| Gemma 2 27B | 27B | no disponible | 72,1 | no disponible | HuggingFace |
-| Llama 3.1 70B | 70B | no disponible | 70,4 | no disponible | HuggingFace |
+| Mergen-TR-Qwen3.5-9B (esta ficha, GGUF) | ~8,95B | hasta 16K en evaluacion | 74,3 | Apache-2.0 | Hugging Face (GGUF) |
+| Qwen3 14B | 14B | no disponible | 71,7 | no disponible | Hugging Face |
+| Gemma 2 27B | 27B | no disponible | 72,1 | no disponible | Hugging Face |
+| Llama 3.1 70B | 70B | no disponible | 70,4 | no disponible | Hugging Face |
 
 La comparativa se limita a las puntuaciones de Turkish-MMLU reportadas en la model card; no se dispone de datos de contexto, licencia o formato para los modelos competidores en la informacion proporcionada. El resultado principal es que un modelo de ~9B iguala o supera en Turkish-MMLU a modelos de 14B, 27B y 70B.
 

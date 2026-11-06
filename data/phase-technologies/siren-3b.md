@@ -83,7 +83,7 @@ No se dispone de MMLU, HumanEval, GSM8K, MT-Bench ni evaluaciones de roleplay ti
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SIREN-3B | 3,09 B | 32.768 (heredado del base) | Fine-tune de roleplay y prosa atmosferica | Apache 2.0 | HuggingFace, 0 descargas en el momento de la ficha |
+| SIREN-3B | 3,09 B | 32.768 (heredado del base) | Fine-tune de roleplay y prosa atmosferica | Apache 2.0 | Hugging Face, 0 descargas en el momento de la ficha |
 | Qwen2.5-3B-Instruct | 3,09 B | 32.768 | Instruct generalista, multilingue | Apache 2.0 | Ampliamente desplegado, ecosistema maduro |
 | Llama-3.2-3B-Instruct | 3,21 B | 128.000 | Instruct generalista, multilingue | Licencia comunitaria Llama 3.2 | Muy extendido, con restricciones de uso |
 | Phi-3.5-mini-instruct | 3,82 B | 128.000 | Instruct con enfasis en razonamiento y codigo | MIT | Muy extendido |
@@ -105,7 +105,7 @@ Nota: los datos de contexto y licencia de los modelos comparables provienen de c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Phase-Technologies/SIREN-3B
+- Repositorio Hugging Face: https://huggingface.co/Phase-Technologies/SIREN-3B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Notebook de Google Colab: https://colab.research.google.com/github/Phase-Technologies/SIREN-3B/blob/main/SIREN_3B_Colab.ipynb
 - Repositorio GitHub del proyecto: https://github.com/Phase-Technologies/SIREN-3B

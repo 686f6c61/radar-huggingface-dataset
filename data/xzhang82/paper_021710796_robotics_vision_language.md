@@ -52,7 +52,7 @@ Dado que no es un modelo, no hay comparativa directa con modelos de IA. Sin emba
 - Para uso en producción o investigación seria, se recomienda consultar fuentes primarias como los papers listados en los resultados de búsqueda (arXiv, GitHub, etc.).
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/xzhang82/paper_021710796_robotics_vision_language
+- Repositorio en Hugging Face: https://huggingface.co/xzhang82/paper_021710796_robotics_vision_language
 - Paper relacionado sobre VLA para manipulación robótica: https://arxiv.org/html/2508.13073v1
 - Survey sobre Vision-Language-Action en robótica: https://arxiv.org/abs/2604.23001
 - Lista de papers VLA en GitHub: https://github.com/hanjianhua44/Awesome-VLA-Papers

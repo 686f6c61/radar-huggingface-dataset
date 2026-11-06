@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`whitejacob/study-multimodal-generation` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en HuggingFace bajo el identificador de autor `whitejacob`. La model card lo describe explícitamente como un artefacto exploratorio sobre generación multimodal: recoge el alcance de una pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y requisitos de reproducibilidad, pero no presenta resultados, ablaciones completadas ni código liberado. El único artefacto principal declarado es `review.md`, acompañado de un `README.md`.
+`whitejacob/study-multimodal-generation` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en Hugging Face bajo el identificador de autor `whitejacob`. La model card lo describe explícitamente como un artefacto exploratorio sobre generación multimodal: recoge el alcance de una pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y requisitos de reproducibilidad, pero no presenta resultados, ablaciones completadas ni código liberado. El único artefacto principal declarado es `review.md`, acompañado de un `README.md`.
 
 El repositorio incluye un archivo de pesos en formato safetensors con 24.832 parámetros totales, un tamaño despreciable para cualquier transformer funcional (órdenes de magnitud por debajo de un modelo de juguete). El tamaño del repo es de 0,0 GB, lo que es coherente con la ausencia de un checkpoint real. La etiqueta `transformer` y el pipeline no están disponibles; no hay información sobre arquitectura efectiva, tokenizador, datos de entrenamiento ni evaluación.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es, por tanto, documental: sirve para identificar el
 
 ## Arquitectura y entrenamiento
 
-La model card no describe arquitectura, capas, dimensiones ocultas, mecanismo de atención ni tokenizador. El tag `transformer` aparece en los metadatos de HuggingFace, pero el documento principal (`review.md`) se presenta como una nota de estudio sobre generación multimodal, no como la descripción de un modelo concreto. No se especifican datos de entrenamiento, número de tokens, composición del dataset, ni procesos de alineación como RLHF o DPO.
+La model card no describe arquitectura, capas, dimensiones ocultas, mecanismo de atención ni tokenizador. El tag `transformer` aparece en los metadatos de Hugging Face, pero el documento principal (`review.md`) se presenta como una nota de estudio sobre generación multimodal, no como la descripción de un modelo concreto. No se especifican datos de entrenamiento, número de tokens, composición del dataset, ni procesos de alineación como RLHF o DPO.
 
 El recuento de 24.832 parámetros en safetensors es incompatible con un transformer multimodal operativo; es más consistente con tensores auxiliares, un checkpoint incompleto o un artefacto de prueba. La model card insiste en que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales, y que cualquier resultado futuro debería incluir versiones de dataset, comandos, semillas, hardware y logs en bruto.
 
@@ -42,7 +42,7 @@ El recuento de 24.832 parámetros en safetensors es incompatible con un transfor
 - Plantilla de reproducibilidad: tomar la estructura propuesta (versiones de dataset, comandos, semillas, hardware y logs) como checklist para otros proyectos de investigación.
 - Documentación de alcance y limitaciones: citar el repositorio como ejemplo de separación explícita entre hipótesis y resultados en notas de investigación.
 - Formación interna: emplear la nota para discutir qué benchmarks públicos serían adecuados en una comparativa de generación multimodal.
-- Auditoría de repositorios de HuggingFace: usar este caso para ilustrar cómo distinguir un artefacto de investigación de un modelo desplegable a partir de los metadatos.
+- Auditoría de repositorios de Hugging Face: usar este caso para ilustrar cómo distinguir un artefacto de investigación de un modelo desplegable a partir de los metadatos.
 - No se recomienda su uso para inferencia, generación de contenido, atención al cliente, generación de código en producción ni ninguna tarea que requiera un modelo funcional.
 
 ## Benchmarks y rendimiento
@@ -73,7 +73,7 @@ No disponible. No se identifican en la información proporcionada modelos compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/whitejacob/study-multimodal-generation
+- Repositorio en Hugging Face: https://huggingface.co/whitejacob/study-multimodal-generation
 - Artefacto principal citado en la model card: `review.md` (incluido en el repositorio)
 - Documentación del repositorio: `README.md` (incluido en el repositorio)
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

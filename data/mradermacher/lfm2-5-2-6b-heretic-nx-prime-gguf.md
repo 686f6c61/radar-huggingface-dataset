@@ -79,9 +79,9 @@ La comparativa se basa en características conocidas de los modelos base, no en 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/LFM2.5-2.6B-Heretic-NX-PRIME-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/LFM2.5-2.6B-Heretic-NX-PRIME-GGUF
 - Modelo original (safetensors): https://huggingface.co/0xzknw/LFM2.5-2.6B-Heretic-NX-PRIME
-- Modelo base LFM2.5-2.6B en HuggingFace: https://huggingface.co/mradermacher/LFM2.5-2.6B-heretic-GGUF (variante similar)
+- Modelo base LFM2.5-2.6B en Hugging Face: https://huggingface.co/mradermacher/LFM2.5-2.6B-heretic-GGUF (variante similar)
 - Documentación oficial de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-2.6b
 - Blog de Liquid AI sobre LFM2.5-2.6B: https://www.liquid.ai/blog/lfm2-5-2-6b
 - Implementación PyTorch de referencia: https://github.com/rishikksh20/lfm25-pytorch/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`loraswin/ly4` es un repositorio publicado en HuggingFace por el usuario `loraswin`. La informacion disponible en la ficha del repositorio se limita a metadatos minimos: identificador, autor, etiqueta `region:us`, cero descargas, un "like", un tamano de repositorio de 5,5 GB y marcas temporales de creacion y actualizacion del 29 de septiembre de 2026. No se declara pipeline de inferencia, licencia, idiomas soportados ni descripcion del modelo.
+`loraswin/ly4` es un repositorio publicado en Hugging Face por el usuario `loraswin`. La informacion disponible en la ficha del repositorio se limita a metadatos minimos: identificador, autor, etiqueta `region:us`, cero descargas, un "like", un tamano de repositorio de 5,5 GB y marcas temporales de creacion y actualizacion del 29 de septiembre de 2026. No se declara pipeline de inferencia, licencia, idiomas soportados ni descripcion del modelo.
 
 El nombre del repositorio (`ly4`) y la ausencia de tarjeta de modelo (model card) impiden determinar si se trata de un modelo base, un ajuste fino (fine-tune), un adaptador LoRA fusionado o un conjunto de pesos cuantizados. El tamano de 5,5 GB es compatible con varias posibilidades —pesos en fp16 de un modelo de aproximadamente 2.700 millones de parametros, pesos en fp32 de unos 1.375 millones, o una coleccion de cuantizaciones GGUF—, pero ninguna de ellas puede confirmarse con los datos disponibles.
 
@@ -82,5 +82,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/loraswin/ly4
+- Repositorio en Hugging Face: https://huggingface.co/loraswin/ly4
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.

@@ -75,9 +75,9 @@ Adicionalmente, la exportacion sin cuantizar (6 capas en fp32) coincide con PyTo
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jev-omni.js (esta ficha) | 12B (Gemma 4) | no disponible | 86,35% texto / 85,16-98,11% vision (paridad con fp32) | Apache-2.0 | HuggingFace, ONNX, ejecucion en navegador |
-| Jev-Omni (akhilaaa3/Jev-Omni) | 12B (Gemma 4) | no disponible | referencia fp32 del anterior | Apache-2.0 | HuggingFace, safetensors bf16 + head.pt |
-| google/gemma-4-12B-it | 12B | no disponible | no disponible | Apache-2.0 | HuggingFace, modelo base generativo |
+| jev-omni.js (esta ficha) | 12B (Gemma 4) | no disponible | 86,35% texto / 85,16-98,11% vision (paridad con fp32) | Apache-2.0 | Hugging Face, ONNX, ejecucion en navegador |
+| Jev-Omni (akhilaaa3/Jev-Omni) | 12B (Gemma 4) | no disponible | referencia fp32 del anterior | Apache-2.0 | Hugging Face, safetensors bf16 + head.pt |
+| google/gemma-4-12B-it | 12B | no disponible | no disponible | Apache-2.0 | Hugging Face, modelo base generativo |
 
 No se dispone de datos sobre otros clasificadores de decision comparables de la misma categoria en la informacion proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de datos sobre otros clasificadores de decision comparables de la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ai-ecoverse/jev-omni.js
+- Hugging Face: https://huggingface.co/ai-ecoverse/jev-omni.js
 - Modelo base Jev-Omni: https://huggingface.co/akhilaaa3/Jev-Omni
 - Modelo base Gemma 4: https://huggingface.co/google/gemma-4-12B-it
 - Repositorio jev-omni.js: https://github.com/ai-ecoverse/jev-omni.js

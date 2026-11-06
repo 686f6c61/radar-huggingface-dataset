@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`davidwdw/fa-b1k-solution-task00-first-finetune-0ba97445bde1` es un repositorio de pesos publicado en HuggingFace por el usuario `davidwdw` que, segun su propia model card, corresponde a un archivo versionado de una flota de modelos ("versioned fleet archive"). El autor lo describe como un snapshot inmutable, no como un directorio vivo, y remite a una receta canonica denominada `historical_centre_behavior1k_solution_finetunes`, con el nivel ("tier") `task00 full finetune steps 250-1500 + smoke`.
+`davidwdw/fa-b1k-solution-task00-first-finetune-0ba97445bde1` es un repositorio de pesos publicado en Hugging Face por el usuario `davidwdw` que, segun su propia model card, corresponde a un archivo versionado de una flota de modelos ("versioned fleet archive"). El autor lo describe como un snapshot inmutable, no como un directorio vivo, y remite a una receta canonica denominada `historical_centre_behavior1k_solution_finetunes`, con el nivel ("tier") `task00 full finetune steps 250-1500 + smoke`.
 
-El repositorio no incluye informacion sobre el modelo base sobre el que se ha hecho el ajuste fino, ni sobre la arquitectura, el numero de parametros, la longitud de contexto o los idiomas soportados. Tampoco declara licencia, pipeline ni idiomas en los metadatos de HuggingFace. El unico dato cuantitativo duro disponible es el tamano del repositorio, 88,4 GB, compatible con pesos completos de un modelo de decenas de miles de millones de parametros en precision de 16 bits, aunque esto es una estimacion derivada y no una especificacion declarada.
+El repositorio no incluye informacion sobre el modelo base sobre el que se ha hecho el ajuste fino, ni sobre la arquitectura, el numero de parametros, la longitud de contexto o los idiomas soportados. Tampoco declara licencia, pipeline ni idiomas en los metadatos de Hugging Face. El unico dato cuantitativo duro disponible es el tamano del repositorio, 88,4 GB, compatible con pesos completos de un modelo de decenas de miles de millones de parametros en precision de 16 bits, aunque esto es una estimacion derivada y no una especificacion declarada.
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente documental: sirve para dejar constancia de que existe un artefacto de ajuste fino asociado a una receta concreta y para advertir de que, sin model card tecnica, sin licencia y sin benchmarks, el modelo no es evaluable ni desplegable en produccion de forma responsable. Cualquier uso requeriria contactar con el autor o inspeccionar directamente los ficheros de pesos.
 
@@ -89,8 +89,8 @@ No disponible. No se ha identificado el modelo base ni la familia a la que perte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidwdw/fa-b1k-solution-task00-first-finetune-0ba97445bde1
-- Portal de HuggingFace (resultado generico de la busqueda, no especifico del modelo): https://huggingface.co/
+- Modelo en Hugging Face: https://huggingface.co/davidwdw/fa-b1k-solution-task00-first-finetune-0ba97445bde1
+- Portal de Hugging Face (resultado generico de la busqueda, no especifico del modelo): https://huggingface.co/
 - openai/gpt-oss-20b (resultado generico, sin relacion confirmada con este modelo): https://huggingface.co/openai/gpt-oss-20b
 - NVIDIA Isaac GR00T (repositorio generico sobre ajuste fino robotico, sin relacion confirmada): https://github.com/NVIDIA/Isaac-GR00T
 - Documentacion de DeePMD-kit sobre ajuste fino (resultado generico, sin relacion confirmada): https://docs.deepmodeling.com/projects/deepmd/en/latest/train/finetuning.html

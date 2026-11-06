@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace contiene un checkpoint de investigación para robótica publicado por el usuario Donghyun1228 con el identificador `pi05-libero-view-large-idm-coverage-20261015-continue`. Se presenta como una continuación de 200 actualizaciones de entrenamiento sobre una línea base previa ya aceptada (denominada `raw999`), en la que se restauran el optimizador Adam y el EMA originales y se aplica un escalado posterior a Adam con factores `vision1` y `expert0.1`. Los tags del repositorio (`robotics`, `libero`, `pi05`) lo sitúan en el ámbito de las políticas de manipulación robótica evaluadas en el benchmark LIBERO, pero la model card no describe la arquitectura interna ni el número de parámetros.
+Este repositorio de Hugging Face contiene un checkpoint de investigación para robótica publicado por el usuario Donghyun1228 con el identificador `pi05-libero-view-large-idm-coverage-20261015-continue`. Se presenta como una continuación de 200 actualizaciones de entrenamiento sobre una línea base previa ya aceptada (denominada `raw999`), en la que se restauran el optimizador Adam y el EMA originales y se aplica un escalado posterior a Adam con factores `vision1` y `expert0.1`. Los tags del repositorio (`robotics`, `libero`, `pi05`) lo sitúan en el ámbito de las políticas de manipulación robótica evaluadas en el benchmark LIBERO, pero la model card no describe la arquitectura interna ni el número de parámetros.
 
 El objetivo declarado del experimento es comparar la cobertura de un módulo IDM (modelo de dinámica inversa, por sus siglas en inglés) bajo tres brazos de pérdida: continuar con el IDM antiguo, añadir una sonda IDM antigua con peso 0,1, o añadir un IDM de auto-rollout del objetivo con peso 0,1. El autor es explícito al señalar que no reclama ningún beneficio único atribuible al rollout ni una mejora general en las 40 tareas, y que la evaluación es una pantalla reducida sobre tareas difíciles seleccionadas, no una reproducción del histórico 243/400.
 
@@ -82,7 +82,7 @@ No se proporcionan en la información disponible modelos comparables con paráme
 
 | Modelo | Parametros | Contexto | Resultado de referencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `pi05-libero-view-large-idm-coverage-20261015-continue` | No disponible | No disponible | 11/24 en pantalla reducida (brazo `continue`); 0/3 en tareas dificiles | No disponible | Repositorio HuggingFace publico, 5,9 GB |
+| `pi05-libero-view-large-idm-coverage-20261015-continue` | No disponible | No disponible | 11/24 en pantalla reducida (brazo `continue`); 0/3 en tareas dificiles | No disponible | Repositorio Hugging Face publico, 5,9 GB |
 | Historico del propio autor (`243/400`) | No disponible | No disponible | 243/400, no reproducido en esta pantalla | No disponible | No disponible |
 | Otros modelos de la familia `pi05` o VLA comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -101,7 +101,7 @@ No se proporcionan en la información disponible modelos comparables con paráme
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-coverage-20261015-continue
+- Repositorio en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-coverage-20261015-continue
 - Codigo de entrenamiento (commit `7ac84b93`): https://github.com/Donghyun1228/vla_adaptation
 - Dataset de rollout: https://huggingface.co/datasets/Donghyun1228/libero-view-large-self-rollout-idm-24ep-20261015 (revision `34225b034da7291af2b6d7f44e3646ff52ab60f5`)
 - Paper, blog, demo o documentacion adicional: no disponible en la informacion proporcionada.

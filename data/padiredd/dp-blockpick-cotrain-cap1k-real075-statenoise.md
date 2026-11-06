@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dp-blockpick-cotrain-cap1k-real075-statenoise` es una política de difusión (diffusion policy) para robótica manipulativa, publicada por el usuario `padiredd` en HuggingFace. Se trata de un modelo de control motor, no de un modelo de lenguaje: recibe imágenes de tres cámaras (cabeza y dos muñecas) más el estado articular y genera trayectorias de 16 articulaciones a 15 Hz para que el brazo izquierdo de un robot ROBOTIS FFW SG2 ejecute una tarea de recogida de un bloque verde lima.
+`dp-blockpick-cotrain-cap1k-real075-statenoise` es una política de difusión (diffusion policy) para robótica manipulativa, publicada por el usuario `padiredd` en Hugging Face. Se trata de un modelo de control motor, no de un modelo de lenguaje: recibe imágenes de tres cámaras (cabeza y dos muñecas) más el estado articular y genera trayectorias de 16 articulaciones a 15 Hz para que el brazo izquierdo de un robot ROBOTIS FFW SG2 ejecute una tarea de recogida de un bloque verde lima.
 
 El modelo sigue la arquitectura Diffusion Policy implementada en el fork `lerobot-cyclo` de LeRobot (ROBOTIS), con aproximadamente 288 millones de parámetros y un backbone ResNet18 por cámara. Su particularidad es la estrategia de co-entrenamiento con mezcla asimétrica: el 75 % de las muestras de cada lote provienen de 14 demostraciones reales de teleoperación y el resto de 1.000 episodios simulados generados por un programa *code-as-policy* en Isaac Lab.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / horizonte | Datos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp-blockpick-cotrain-cap1k-real075-statenoise | 287,5 M | 64 pasos (32 ejecutados), 1 obs. | 1.000 sim + 14 reales | other | HuggingFace, repo de 11,5 GB |
+| dp-blockpick-cotrain-cap1k-real075-statenoise | 287,5 M | 64 pasos (32 ejecutados), 1 obs. | 1.000 sim + 14 reales | other | Hugging Face, repo de 11,5 GB |
 | Diffusion Policy original (Chi et al.) | no disponible | no disponible | por tarea | no disponible | código público, sin pesos de esta tarea |
 | Políticas ACT de LeRobot | no disponible | no disponible | por tarea | no disponible | ecosistema LeRobot |
 
@@ -79,12 +79,12 @@ No se dispone de datos de benchmarks ni de pesos equivalentes para una comparaci
 - Licencia `other` sin texto detallado en la model card: es necesario contactar con el autor antes de cualquier uso comercial.
 - Riesgo de sobreajuste a la escena simulada y a la iluminación del recetario `dr2`; el rendimiento fuera de esas condiciones no está caracterizado.
 - Sin soporte multilingüe ni de instrucciones en lenguaje natural: la tarea es fija y no se puede reconfigurar por prompt.
-- El conjunto de datos simulado (`pick-cube-cap1k-retry-dr2-3cam`) no está publicado en HuggingFace, lo que dificulta la reproducción exacta del entrenamiento.
+- El conjunto de datos simulado (`pick-cube-cap1k-retry-dr2-3cam`) no está publicado en Hugging Face, lo que dificulta la reproducción exacta del entrenamiento.
 - Sin cuantizaciones publicadas: el despliegue en hardware de borde requeriría convertir y validar los pesos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/dp-blockpick-cotrain-cap1k-real075-statenoise
+- Modelo en Hugging Face: https://huggingface.co/padiredd/dp-blockpick-cotrain-cap1k-real075-statenoise
 - Conjunto de datos real citado: `omkarpatil/pick-lime-block` (referenciado en la model card, sin URL directa)
 - Fork LeRobot de ROBOTIS: `lerobot-cyclo` (referenciado en la model card, sin URL directa)
 - Diffusion Policy (paper original, referencia de la arquitectura): no disponible en la información proporcionada

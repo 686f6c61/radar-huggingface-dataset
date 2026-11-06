@@ -112,7 +112,7 @@ No se dispone de datos comparativos con otras familias de modelos de 3B en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v3a
+- Modelo en Hugging Face: https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v3a
 - Adaptador LoRA y checkpoints: https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v3a-LoRA
 - Brazo v2: https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v2
 - Brazo v3b: https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v3b

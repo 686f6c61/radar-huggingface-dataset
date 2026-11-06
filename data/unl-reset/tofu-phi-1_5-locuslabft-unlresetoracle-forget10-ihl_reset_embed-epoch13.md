@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-phi-1_5-...-epoch13` | 1.418 M | no disponible | apache-2.0 | HuggingFace | Checkpoint de desaprendizaje sobre TOFU |
-| `locuslab/tofu_ft_phi-1.5` | ~1.400 M | no disponible | no disponible | HuggingFace | Modelo base ajustado con TOFU, sin desaprender |
-| `microsoft/phi-1_5` | 1.300 M | 2048 | MIT | HuggingFace | Modelo original de Microsoft |
-| `microsoft/Phi-3-mini-4k-instruct` | 3.800 M | 4096 | MIT | HuggingFace | Alternativa más reciente y capable, pero de otro orden de magnitud |
+| `unl-reset/tofu-phi-1_5-...-epoch13` | 1.418 M | no disponible | apache-2.0 | Hugging Face | Checkpoint de desaprendizaje sobre TOFU |
+| `locuslab/tofu_ft_phi-1.5` | ~1.400 M | no disponible | no disponible | Hugging Face | Modelo base ajustado con TOFU, sin desaprender |
+| `microsoft/phi-1_5` | 1.300 M | 2048 | MIT | Hugging Face | Modelo original de Microsoft |
+| `microsoft/Phi-3-mini-4k-instruct` | 3.800 M | 4096 | MIT | Hugging Face | Alternativa más reciente y capable, pero de otro orden de magnitud |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [HuggingFace: unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_embed-epoch13](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_embed-epoch13)
+- [Hugging Face: unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_embed-epoch13](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_embed-epoch13)
 - [Modelo base: locuslab/tofu_ft_phi-1.5](https://huggingface.co/locuslab/tofu_ft_phi-1.5)
 - [Modelo original: microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5)
 - [Dataset TOFU (referencia)](https://huggingface.co/datasets/locuslab/TOFU)

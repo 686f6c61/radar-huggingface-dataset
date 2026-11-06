@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace contiene una colección de adaptadores LoRA (entrenados con la librería PEFT) para el modelo Qwen2.5-VL-7B-Instruct, desarrollados por el autor vantuan5644 como líneas base de aprendizaje continuo (continual-learning). El objetivo es evaluar el rendimiento de 12 métodos de adaptación (clmoe, disco, disco_dko, disco_s1, disco_s2, ewc, ewc_cal, modal_prompt, moelora, olora, same, seqft y smolora) cuando se entrenan secuencialmente sobre el benchmark CoIN, compuesto por 8 tareas multimodales: ScienceQA, TextVQA, ImageNet, GQA, VizWiz, Grounding, VQAv2 y OCR-VQA.
+Este repositorio de Hugging Face contiene una colección de adaptadores LoRA (entrenados con la librería PEFT) para el modelo Qwen2.5-VL-7B-Instruct, desarrollados por el autor vantuan5644 como líneas base de aprendizaje continuo (continual-learning). El objetivo es evaluar el rendimiento de 12 métodos de adaptación (clmoe, disco, disco_dko, disco_s1, disco_s2, ewc, ewc_cal, modal_prompt, moelora, olora, same, seqft y smolora) cuando se entrenan secuencialmente sobre el benchmark CoIN, compuesto por 8 tareas multimodales: ScienceQA, TextVQA, ImageNet, GQA, VizWiz, Grounding, VQAv2 y OCR-VQA.
 
 El modelo base es un transformador multimodal de 7.000 millones de parámetros (Qwen2.5-VL-7B), eficaz en tareas de visión y lenguaje. El repositorio no contiene los pesos completos, sino adaptadores LoRA que deben cargarse sobre el modelo base. Su relevancia radica en permitir reproducir y comparar estrategias de aprendizaje continuo en un entorno multimodal, incluyendo la evaluación de la matriz de transferencia forward (checkpoint N sobre cada tarea K<=N).
 
@@ -70,5 +70,5 @@ No disponible. No se dispone de información comparativa en los datos proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vantuan5644/coin-cl-qwen2.5-vl-7b-baselines
+- Hugging Face: https://huggingface.co/vantuan5644/coin-cl-qwen2.5-vl-7b-baselines
 - Modelo base Qwen/Qwen2.5-VL-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct

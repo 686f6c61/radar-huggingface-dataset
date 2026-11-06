@@ -2,7 +2,7 @@
 
 ## Resumen
 
-starVLA QwenOFT + wrist es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario GeertWang en HuggingFace. Se trata de un checkpoint de behavior cloning entrenado para ejecutar el paso 3 de una tarea de pipeteo con un robot humanoide Unitree G1 equipado con manos Inspire: el objetivo es introducir la pipeta que sostiene la mano derecha en el tubo que sostiene la mano izquierda. El modelo parte de Qwen3-VL-4B-Instruct como backbone y añade una cabeza OFT (optimal transport / flow matching, según la librería starVLA) entrenada desde cero.
+starVLA QwenOFT + wrist es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario GeertWang en Hugging Face. Se trata de un checkpoint de behavior cloning entrenado para ejecutar el paso 3 de una tarea de pipeteo con un robot humanoide Unitree G1 equipado con manos Inspire: el objetivo es introducir la pipeta que sostiene la mano derecha en el tubo que sostiene la mano izquierda. El modelo parte de Qwen3-VL-4B-Instruct como backbone y añade una cabeza OFT (optimal transport / flow matching, según la librería starVLA) entrenada desde cero.
 
 El modelo es relevante como ejemplo de adaptación de un VLM generalista de 4B parámetros a control robótico de precisión mediante imitación, con datos recogidos por HG-DAgger (intervención humana sobre políticas autónomas) y sin refuerzo. Su interés práctico es acotado: es un checkpoint de investigación de una tarea concreta, sin licencia declarada, sin resultados en robot real y con métricas únicamente offline.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| starVLA QwenOFT + wrist (este) | 4B (backbone) + cabeza | no disponible | Pipeteo paso 3, Unitree G1 | no disponible | HuggingFace, 0 descargas |
+| starVLA QwenOFT + wrist (este) | 4B (backbone) + cabeza | no disponible | Pipeteo paso 3, Unitree G1 | no disponible | Hugging Face, 0 descargas |
 | Qwen3-VL-4B-Instruct (base) | 4B | no disponible en esta ficha | VLM generalista | no disponible en esta ficha | Público |
 | Otras políticas VLA de la familia starVLA | no disponible | no disponible | Manipulación robótica | no disponible | no disponible |
 
@@ -90,5 +90,5 @@ No se dispone de datos suficientes para comparar rendimiento con alternativas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GeertWang/starvla-pipette-aim-wrist1031-qwenoft-scratch-w1
+- Modelo en Hugging Face: https://huggingface.co/GeertWang/starvla-pipette-aim-wrist1031-qwenoft-scratch-w1
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

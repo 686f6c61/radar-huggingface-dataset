@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/Meta-Llama-3-8B-Instruct-abliterated-v3-FP8",
+  "slug": "liodon-ai-meta-llama-3-8b-instruct-abliterated-v3-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/Meta-Llama-3-8B-Instruct-abliterated-v3-FP8",
+  "created_at": "2026-11-04T08:32:35.000Z",
+  "updated_at": "2026-11-04T09:44:55.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "base_model:failspy/Meta-Llama-3-8B-Instruct-abliterated-v3",
+    "base_model:quantized:failspy/Meta-Llama-3-8B-Instruct-abliterated-v3",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 9101224401,
+  "storage_human": "9.1 GB",
+  "base_model": "failspy/Meta-Llama-3-8B-Instruct-abliterated-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liodon-ai/Meta-Llama-3-8B-Instruct-abliterated-v3-FP8 · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/Meta-Llama-3-8B-Instruct-abliterated-v3-FP8",
+      "snippet": "Instructions to use liodon-ai/Meta-Llama-3-8B-Instruct-abliterated-v3-FP8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Meta-Llama-3-8B-Instruct - Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

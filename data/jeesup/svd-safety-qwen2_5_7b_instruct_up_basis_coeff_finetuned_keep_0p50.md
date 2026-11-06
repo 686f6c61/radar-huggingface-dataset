@@ -116,7 +116,7 @@ No se dispone de resultados de benchmarks equivalentes para los modelos alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-qwen2_5_7b_instruct_up_basis_coeff_finetuned_keep_0p50
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-qwen2_5_7b_instruct_up_basis_coeff_finetuned_keep_0p50
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de Basis Sharing (TUDa-HWAI), commit `1c021b6ce1d3`: https://github.com/TUDa-HWAI/Basis_Sharing
 - Dataset de recuperacion: https://huggingface.co/datasets/yahma/alpaca-cleaned

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B (r59) es un checkpoint de investigación publicado por el usuario minjaechoi en HuggingFace, consistente en una versión cuantizada del modelo Qwen/Qwen3.6-35B-A3B. La particularidad del checkpoint es que aplica una cuantización agresiva únicamente a los expertos enrutados de la arquitectura Mixture of Experts, dejándolos en una media de 2,0586 bits, mientras que el resto de los pesos del modelo se mantiene en BF16. Los pesos se almacenan ya dequantizados en tensores BF16, de modo que se cargan con `transformers` estándar o vLLM sin necesidad de kernels de cuantización personalizados.
+Qwen3.6-35B-A3B (r59) es un checkpoint de investigación publicado por el usuario minjaechoi en Hugging Face, consistente en una versión cuantizada del modelo Qwen/Qwen3.6-35B-A3B. La particularidad del checkpoint es que aplica una cuantización agresiva únicamente a los expertos enrutados de la arquitectura Mixture of Experts, dejándolos en una media de 2,0586 bits, mientras que el resto de los pesos del modelo se mantiene en BF16. Los pesos se almacenan ya dequantizados en tensores BF16, de modo que se cargan con `transformers` estándar o vLLM sin necesidad de kernels de cuantización personalizados.
 
 El modelo declara 35.107.181.936 parámetros totales (unos 35,1 mil millones) y un repositorio de 70,2 GB, coherente con el almacenamiento en BF16 de la práctica totalidad de los pesos. Los tags del repositorio indican arquitectura `qwen3_5_moe`, pipeline de generación de texto y capacidades conversacionales y de image-text-to-text, es decir, entrada multimodal con imagen y texto.
 
@@ -18,7 +18,7 @@ Se trata de un checkpoint de investigación interna, con cero descargas y un ún
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Variante unica: expertos enrutados a 2,0586 bits de media; el resto de pesos en BF16, almacenados ya dequantizados en tensores BF16 |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en la ficha de HuggingFace; la model card indica que la licencia sigue la del modelo base |
+| Licencia | no disponible en la ficha de Hugging Face; la model card indica que la licencia sigue la del modelo base |
 | Formato de pesos | safetensors (BF16 dequantizado) |
 | Modelo base | Qwen/Qwen3.6-35B-A3B |
 | Tamano del repositorio | 70,2 GB |
@@ -59,7 +59,7 @@ Un detalle tecnico destacable es la decision de almacenar los pesos ya dequantiz
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-Ni la ficha de HuggingFace ni la model card del autor incluyen metricas de MMLU, HumanEval, GSM8K ni de ningun otro conjunto de evaluacion. Tampoco se proporcionan comparaciones cuantitativas frente al modelo base en BF16.
+Ni la ficha de Hugging Face ni la model card del autor incluyen metricas de MMLU, HumanEval, GSM8K ni de ningun otro conjunto de evaluacion. Tampoco se proporcionan comparaciones cuantitativas frente al modelo base en BF16.
 
 ## Requisitos de hardware
 
@@ -73,8 +73,8 @@ Ni la ficha de HuggingFace ni la model card del autor incluyen metricas de MMLU,
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| minjaechoi/qwen3p6-35b-a3b-2p06bit-r59 | 35,1 B totales; activos no disponibles | no disponible | sin benchmarks publicados | no disponible (heredada del base, segun la model card) | HuggingFace, 0 descargas, 1 like |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | 35,1 B totales, segun la ficha del derivado | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace, referenciado como base |
+| minjaechoi/qwen3p6-35b-a3b-2p06bit-r59 | 35,1 B totales; activos no disponibles | no disponible | sin benchmarks publicados | no disponible (heredada del base, segun la model card) | Hugging Face, 0 descargas, 1 like |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | 35,1 B totales, segun la ficha del derivado | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face, referenciado como base |
 | Otros modelos comparables de ~35 B tipo MoE | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion posible con los datos disponibles es frente al modelo base, del que este checkpoint deriva. No se dispone de informacion sobre alternativas de terceros con las que contrastar parametros, contexto, rendimiento o licencia.
@@ -83,7 +83,7 @@ La unica comparacion posible con los datos disponibles es frente al modelo base,
 
 - Los expertos enrutados estan cuantizados a una media de 2,0586 bits, una precision muy baja que puede degradar la calidad de las respuestas. El autor no publica ninguna evaluacion del impacto sobre el rendimiento.
 - Los pesos se almacenan ya dequantizados en BF16, por lo que no hay ahorro de VRAM ni de disco respecto al modelo base: el repositorio ocupa 70,2 GB.
-- La licencia no esta declarada en la ficha de HuggingFace. La model card afirma que sigue la licencia del modelo base, pero no se especifica cual es. Antes de cualquier uso comercial debe verificarse la licencia de Qwen/Qwen3.6-35B-A3B.
+- La licencia no esta declarada en la ficha de Hugging Face. La model card afirma que sigue la licencia del modelo base, pero no se especifica cual es. Antes de cualquier uso comercial debe verificarse la licencia de Qwen/Qwen3.6-35B-A3B.
 - Es un checkpoint de investigacion interna, con 0 descargas en el momento de la consulta. No hay garantia de mantenimiento, versionado ni soporte.
 - No se publican datos sobre idiomas soportados, longitud de contexto, numero de expertos ni composicion del entrenamiento, lo que dificulta planificar su comportamiento en produccion.
 - Riesgo de alucinacion: no cuantificado en la informacion disponible. La cuantizacion agresiva de expertos puede incrementarlo, pero no hay evidencia publicada al respecto.
@@ -93,6 +93,6 @@ La unica comparacion posible con los datos disponibles es frente al modelo base,
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p06bit-r59
+- Ficha del modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p06bit-r59
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.

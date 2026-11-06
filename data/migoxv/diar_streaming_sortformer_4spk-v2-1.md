@@ -91,7 +91,7 @@ No se dispone de comparaciones de rendimiento (DER u otras métricas) entre este
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MigoXV/diar_streaming_sortformer_4spk-v2.1
+- Repositorio en Hugging Face: https://huggingface.co/MigoXV/diar_streaming_sortformer_4spk-v2.1
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/diar_streaming_sortformer_4spk-v2.1
 - Licencia (PDF): https://huggingface.co/MigoXV/diar_streaming_sortformer_4spk-v2.1/blob/main/LICENSE.pdf
 - Atribución: https://huggingface.co/MigoXV/diar_streaming_sortformer_4spk-v2.1/blob/main/NOTICE

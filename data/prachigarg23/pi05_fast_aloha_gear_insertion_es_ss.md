@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `pi05_FAST_aloha_gear_insertion_ES_SS` | VLA π0.5 fine-tuned (ALOHA) | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
+| `pi05_FAST_aloha_gear_insertion_ES_SS` | VLA π0.5 fine-tuned (ALOHA) | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
 | `pi05_base` (π0.5) | VLA base | no disponible | no disponible | no disponible en la información |
 | Otras variantes del artículo (ES, SS) | VLA fine-tuned | no disponible | no disponible | no disponible en la información |
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/prachigarg23/pi05_FAST_aloha_gear_insertion_ES_SS
+- Hugging Face: https://huggingface.co/prachigarg23/pi05_FAST_aloha_gear_insertion_ES_SS
 - Paper: https://arxiv.org/abs/2608.19490
 - Página del proyecto: https://self-supervised-control.pages.dev/
 - Código: https://github.com/prachigarg23/self-supervised-continual-control

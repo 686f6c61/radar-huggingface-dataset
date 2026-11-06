@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `jinm1222/qwen3.5-0.8b-labor-lora` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base `Qwen/Qwen3.5-0.8B`, desarrollado por el usuario de HuggingFace jinm1222. No se trata de un modelo completo, sino de un conjunto de pesos adicionales que se cargan sobre el modelo base mediante la librería PEFT. Su propósito es especializar un modelo pequeño de 0,8 mil millones de parámetros en tareas de consultoría laboral (노무 상담, "asesoramiento laboral" en coreano), a partir de un dataset de pares pregunta-respuesta publicado por el mismo autor.
+El modelo `jinm1222/qwen3.5-0.8b-labor-lora` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base `Qwen/Qwen3.5-0.8B`, desarrollado por el usuario de Hugging Face jinm1222. No se trata de un modelo completo, sino de un conjunto de pesos adicionales que se cargan sobre el modelo base mediante la librería PEFT. Su propósito es especializar un modelo pequeño de 0,8 mil millones de parámetros en tareas de consultoría laboral (노무 상담, "asesoramiento laboral" en coreano), a partir de un dataset de pares pregunta-respuesta publicado por el mismo autor.
 
-La relevancia de esta ficha es doble: por un lado, documenta un ejemplo típico de adaptación eficiente de un modelo compacto mediante SFT (supervised fine-tuning) con LoRA; por otro, ilustra el ecosistema de adaptadores especializados en dominios verticales concretos (en este caso, derecho laboral coreano) que proliferan en HuggingFace. El modelo está etiquetado exclusivamente para el idioma coreano y se distribuye bajo licencia Apache 2.0, lo que facilita su reutilización comercial.
+La relevancia de esta ficha es doble: por un lado, documenta un ejemplo típico de adaptación eficiente de un modelo compacto mediante SFT (supervised fine-tuning) con LoRA; por otro, ilustra el ecosistema de adaptadores especializados en dominios verticales concretos (en este caso, derecho laboral coreano) que proliferan en Hugging Face. El modelo está etiquetado exclusivamente para el idioma coreano y se distribuye bajo licencia Apache 2.0, lo que facilita su reutilización comercial.
 
 La información pública disponible es muy limitada: la model card es breve y no incluye datos sobre composición del dataset, número de tokens de entrenamiento, benchmarks ni evaluación de calidad. Además, el modelo base `Qwen/Qwen3.5-0.8B` no aparece descrito en detalle en la información proporcionada, por lo que varias especificaciones se marcan como "no disponible".
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| jinm1222/qwen3.5-0.8b-labor-lora | Adaptador LoRA sobre base de ~0,8B | No disponible | Apache 2.0 | HuggingFace (14 descargas) | Especializado en consultoría laboral coreana |
-| Qwen/Qwen3.5-0.8B (modelo base) | ~0,8B | No disponible | No disponible en la informacion | HuggingFace | Modelo generalista sin especialización de dominio |
-| Otros adaptadores LoRA de dominio | Variable | Variable | Variable | HuggingFace | No se dispone de datos concretos de alternativas comparables en la informacion proporcionada |
+| jinm1222/qwen3.5-0.8b-labor-lora | Adaptador LoRA sobre base de ~0,8B | No disponible | Apache 2.0 | Hugging Face (14 descargas) | Especializado en consultoría laboral coreana |
+| Qwen/Qwen3.5-0.8B (modelo base) | ~0,8B | No disponible | No disponible en la informacion | Hugging Face | Modelo generalista sin especialización de dominio |
+| Otros adaptadores LoRA de dominio | Variable | Variable | Variable | Hugging Face | No se dispone de datos concretos de alternativas comparables en la informacion proporcionada |
 
 No se dispone de información suficiente para comparar rendimiento con alternativas de la misma categoría.
 
@@ -83,7 +83,7 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/jinm1222/qwen3.5-0.8b-labor-lora
+- Adaptador en Hugging Face: https://huggingface.co/jinm1222/qwen3.5-0.8b-labor-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/jinm1222/labor-counsel-qa
 - Librería PEFT: https://github.com/huggingface/peft

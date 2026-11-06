@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible (el tamaño del checkpoint no se especifica; el repositorio ocupa 0.0 GB según HuggingFace, lo que sugiere un modelo muy pequeño, pero no se puede confirmar).
+- VRAM estimada para inferencia: no disponible (el tamaño del checkpoint no se especifica; el repositorio ocupa 0.0 GB según Hugging Face, lo que sugiere un modelo muy pequeño, pero no se puede confirmar).
 - GPU recomendadas: no disponible. Dado el propósito edge, probablemente se ejecute en CPU o microcontroladores, pero no se documenta.
 - Si cabe en consumer GPU: no disponible.
 - Opciones de despliegue: el repositorio incluye un servicio Python (`run_edge_service.py`) que se ejecuta con `conda activate moment`. No se mencionan motores de inferencia como vLLM, llama.cpp u Ollama, ya que no es un modelo de lenguaje.
@@ -72,6 +72,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wanfengaodaliya/intelligent-maintenance-distilled-h5
+- Repositorio Hugging Face: https://huggingface.co/wanfengaodaliya/intelligent-maintenance-distilled-h5
 - Perfil de GitHub del autor: https://github.com/wanfengaodaliya
 - Artículo relacionado (no directamente sobre este modelo): "Intelligent Maintenance Review for Robots: Multimodal Information, Deep ..." (https://advanced.onlinelibrary.wiley.com/doi/epdf/10.1002/adrr.202500205)

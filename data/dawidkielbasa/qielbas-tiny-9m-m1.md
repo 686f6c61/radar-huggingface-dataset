@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qielbas Tiny 9M M1 es un modelo de lenguaje causal en ingles de 9.557.716 parametros, desarrollado por el usuario dawidkielbasa y publicado en HuggingFace. Se trata de un modelo de investigacion de escala minima, disenado para explorar el entrenamiento eficiente de arquitecturas hibridas en el rango de los millones de parametros, no para uso en produccion.
+Qielbas Tiny 9M M1 es un modelo de lenguaje causal en ingles de 9.557.716 parametros, desarrollado por el usuario dawidkielbasa y publicado en Hugging Face. Se trata de un modelo de investigacion de escala minima, disenado para explorar el entrenamiento eficiente de arquitecturas hibridas en el rango de los millones de parametros, no para uso en produccion.
 
 Su principal singularidad tecnica es la arquitectura: combina cuatro capas GatedDeltaNet2 (una familia de atencion lineal/recurrente con compuertas) con una unica capa de atencion causal clasica con RoPE, todo ello en solo cinco bloques. El modelo se preentreno sobre 6.7B tokens de un corpus en ingles orientado a contenido educativo y de alta calidad, y se entreno con el optimizador Muon para las matrices de pesos ocultas, reservando AdamW para embeddings y el resto de parametros.
 
@@ -77,10 +77,10 @@ Comparativa orientativa con modelos de escala equivalente o cercana, segun infor
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---:|---:|---|---|
-| Qielbas Tiny 9M M1 | 9,5M | 256 | No disponible | HuggingFace (PyTorch) |
-| Pythia-14M | 14M | 2048 | Apache 2.0 | HuggingFace |
-| GPT-2 small | 124M | 1024 | MIT | HuggingFace |
-| SmolLM-135M | 135M | 2048 | Apache 2.0 | HuggingFace |
+| Qielbas Tiny 9M M1 | 9,5M | 256 | No disponible | Hugging Face (PyTorch) |
+| Pythia-14M | 14M | 2048 | Apache 2.0 | Hugging Face |
+| GPT-2 small | 124M | 1024 | MIT | Hugging Face |
+| SmolLM-135M | 135M | 2048 | Apache 2.0 | Hugging Face |
 
 Comparacion de rendimiento entre estos modelos con el protocolo del autor: no disponible.
 
@@ -98,8 +98,8 @@ Comparacion de rendimiento entre estos modelos con el protocolo del autor: no di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dawidkielbasa/qielbas-tiny-9m-m1
+- Modelo en Hugging Face: https://huggingface.co/dawidkielbasa/qielbas-tiny-9m-m1
 - Paper o publicacion tecnica: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/dawidkielbasa
+- Perfil del autor en Hugging Face: https://huggingface.co/dawidkielbasa

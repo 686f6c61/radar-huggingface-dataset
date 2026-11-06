@@ -88,10 +88,10 @@ No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| q-trust-crypto-detector | 83,4 M | 256 tokens | F1 0,8966 (digest) / 0,9077 (native) | Apache-2.0 | HuggingFace |
-| `huggingface/CodeBERTa-small-v1` (base) | ≈84 M | no disponible en la informacion | No es clasificador; requiere fine-tune | no disponible en la informacion | HuggingFace |
+| q-trust-crypto-detector | 83,4 M | 256 tokens | F1 0,8966 (digest) / 0,9077 (native) | Apache-2.0 | Hugging Face |
+| `huggingface/CodeBERTa-small-v1` (base) | ≈84 M | no disponible en la informacion | No es clasificador; requiere fine-tune | no disponible en la informacion | Hugging Face |
 | Baseline TF-IDF + LogisticRegression | No neuronal (bolsa de n-gramas) | no aplica | F1 0,6675 | no aplica | Implementacion propia |
-| `KRISHNAPURI/q-trust-codebert` | no disponible | no disponible | No se publican metricas | MIT | HuggingFace |
+| `KRISHNAPURI/q-trust-codebert` | no disponible | no disponible | No se publican metricas | MIT | Hugging Face |
 
 Frente al enfoque puramente léxico (regex o TF-IDF), la ventaja medida es de +0,24 F1 en el split nativo. La comparación con `q-trust-codebert` no es posible en términos de rendimiento porque no publica métricas; se trata de una variante del mismo proyecto con pipeline de reinforcement learning y etiquetas adicionales sobre GNN, según los tags del repositorio. No se han identificado en la búsqueda otros clasificadores de código abiertos específicos de descubrimiento criptográfico con métricas comparables.
 
@@ -110,7 +110,7 @@ Frente al enfoque puramente léxico (regex o TF-IDF), la ventaja medida es de +0
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KRISHNAPURI/q-trust-crypto-detector
+- Modelo en Hugging Face: https://huggingface.co/KRISHNAPURI/q-trust-crypto-detector
 - Dataset de entrenamiento: https://huggingface.co/KRISHNAPURI/q-trust-code-corpus-v4
 - Modelo base: https://huggingface.co/huggingface/CodeBERTa-small-v1
 - Variante relacionada del proyecto: https://huggingface.co/KRISHNAPURI/q-trust-codebert

@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 - VRAM estimada para inferencia: con 1.66B parametros en bf16, el modelo ocupa aproximadamente 3.3 GB en memoria. Con cuantizacion a 8 bits cabria en unos 1.7 GB y a 4 bits en menos de 1 GB.
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM (p. ej., RTX 3060, RTX 4060) puede ejecutar el modelo en bf16. Una RTX 4090 o similar permitiria inferencia con batch grande.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU moderna de 4 GB o mas.
-- Opciones de despliegue: al ser un modelo transformers con pesos en safetensors, es compatible con vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (mediante importacion) y HuggingFace Inference Endpoints.
+- Opciones de despliegue: al ser un modelo transformers con pesos en safetensors, es compatible con vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (mediante importacion) y Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible. Dado su tamano, se espera una latencia baja en GPU consumer, pero no hay datos publicados.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No se dispone de comparativas publicadas con otros modelos en la informacion pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-1.7b-asst-sft
+- Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-1.7b-asst-sft
 - Coleccion 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (wandb): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de SFT (wandb): https://wandb.ai/raghav_singhal/1pp-sft

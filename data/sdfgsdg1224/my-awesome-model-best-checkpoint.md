@@ -53,5 +53,5 @@ No disponible. No existe informacion suficiente para comparar con alternativas d
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/sdfgsdg1224/my-awesome-model-best-checkpoint
+- Repositorio de Hugging Face: https://huggingface.co/sdfgsdg1224/my-awesome-model-best-checkpoint
 - Repositorio similar (sin informacion relevante): https://huggingface.co/sdfgsdg1224/MyAwesomeModel-TestRepo

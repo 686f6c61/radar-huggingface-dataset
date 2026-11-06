@@ -4,7 +4,7 @@
 
 `praiselab-picuslab/benchmark-slm-msmarco-gemma-2-2b-ctxq` es un adaptador LoRA (PEFT) entrenado sobre `google/gemma-2-2b` en el marco de un banco de pruebas interno de modelos de lenguaje pequenos ("benchmark-slm"), utilizando el conjunto de datos `microsoft/ms_marco` y una estrategia de contexto etiquetada como `ctxq` (y un ajuste adicional etiquetado como `or2`, ambos sin documentar en la informacion disponible). No se trata, por tanto, de un modelo de proposito general publicado con memoria tecnica, sino de un artefacto experimental orientado a evaluar el comportamiento del modelo base en tareas de recuperacion y respuesta sobre MS MARCO.
 
-El modelo subyacente, Gemma 2 2B, es un transformer decoder-only de 2,6 mil millones de parametros desarrollado por Google DeepMind, con 8192 tokens de contexto, atencion con ventana deslizante alternada y destilacion de conocimiento desde modelos Gemma 2 mayores. El adaptador anade sobre esa base un ajuste de bajo rango cuyo rango, alpha, tasa de aprendizaje y numero de pasos no se especifican en la ficha de HuggingFace.
+El modelo subyacente, Gemma 2 2B, es un transformer decoder-only de 2,6 mil millones de parametros desarrollado por Google DeepMind, con 8192 tokens de contexto, atencion con ventana deslizante alternada y destilacion de conocimiento desde modelos Gemma 2 mayores. El adaptador anade sobre esa base un ajuste de bajo rango cuyo rango, alpha, tasa de aprendizaje y numero de pasos no se especifican en la ficha de Hugging Face.
 
 La relevancia de esta publicacion es acotada y de caracter metodologico: sirve como referencia reproducible de un punto concreto de un benchmark de SLM (modelos pequenos) sobre un corpus de busqueda web en ingles. Su acceso esta restringido (gated), no declara licencia propia y no incluye resultados de evaluacion, por lo que no esta pensada para uso en produccion tal cual.
 
@@ -65,14 +65,14 @@ Los datos de las alternativas provienen de la documentacion publica de cada mode
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | Este adaptador (Gemma 2 2B + LoRA MS MARCO) | 2,6 mil millones (base) + LoRA | 8192 | No declarada en la ficha; base bajo Terminos de Gemma | Acceso restringido (gated) | Ajuste experimental, sin metricas publicadas |
-| google/gemma-2-2b | 2,6 mil millones | 8192 | Terminos de Uso de Gemma | Publico en HuggingFace | Modelo base sin ajustar; referencia obligada para medir la ganancia del adaptador |
+| google/gemma-2-2b | 2,6 mil millones | 8192 | Terminos de Uso de Gemma | Publico en Hugging Face | Modelo base sin ajustar; referencia obligada para medir la ganancia del adaptador |
 | Qwen2.5-1.5B | 1,54 mil millones | 32 768 | Apache 2.0 | Publico | Alternativa mas ligera, licencia permisiva y contexto cuatro veces mayor |
 | Llama 3.2 3B | 3,2 mil millones | 131 072 | Licencia de la comunidad de Llama 3.2 | Publico (gated) | Mayor contexto y ecosistema amplio, a costa de mas parametros |
 | Phi-3-mini (3,8B) | 3,8 mil millones | 4096 (128 000 en la variante de contexto largo) | MIT | Publico | Buen rendimiento en razonamiento para su tamano, con contexto base menor |
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que puede bloquear su uso automatizado en pipelines.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que puede bloquear su uso automatizado en pipelines.
 - Licencia no declarada: no se especifica la licencia del adaptador. Aunque el modelo base se rige por los Terminos de Uso de Gemma, la ausencia de licencia explicita impide asumir permisos de uso comercial sobre el ajuste.
 - Sin evaluacion publicada: no hay metricas que respalden una mejora sobre el modelo base, por lo que no puede justificarse su adopcion en produccion sin una evaluacion propia.
 - Naturaleza experimental: las etiquetas `strategy-ctxq` y `or2` no estan documentadas; se desconoce que formulacion de la tarea se uso y si el adaptador es reutilizable fuera de ese banco de pruebas.

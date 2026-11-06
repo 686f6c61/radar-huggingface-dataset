@@ -21,7 +21,7 @@ El adaptador pesa 0,5 GB y se distribuye bajo licencia Apache 2.0. Forma parte d
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA que se monta sobre el modelo base minsu0567/Uni-IAD-R2-Qwen3.5-answer-last, que a su vez se basa en Qwen3.5. Según los tags de HuggingFace, la cadena de entrenamiento incluye un paso previo de SFT (IAD-X1-SFT-answer-last) seguido de este fine-tuning con GRPO. El entrenamiento fue acelerado con Unsloth, una librería de fine-tuning optimizada para modelos Qwen y Llama.
+El modelo es un adaptador LoRA que se monta sobre el modelo base minsu0567/Uni-IAD-R2-Qwen3.5-answer-last, que a su vez se basa en Qwen3.5. Según los tags de Hugging Face, la cadena de entrenamiento incluye un paso previo de SFT (IAD-X1-SFT-answer-last) seguido de este fine-tuning con GRPO. El entrenamiento fue acelerado con Unsloth, una librería de fine-tuning optimizada para modelos Qwen y Llama.
 
 El nombre del checkpoint revela varios hiperparámetros: "answer_last" indica que el modelo fue entrenado para generar su cadena de razonamiento antes de emitir la respuesta final, un patrón típico en modelos de razonamiento estilo DeepSeek-R1; "no-hard" sugiere la ausencia de restricciones o etiquetas duras durante el entrenamiento, aunque esta interpretación no está confirmada por el autor; "total_batch_8" indica un tamaño de lote total de 8. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el rank del adaptador LoRA ni los hiperparámetros exactos del GRPO.
 
@@ -31,7 +31,7 @@ El nombre del checkpoint revela varios hiperparámetros: "answer_last" indica qu
 - Entrenado con GRPO, lo que sugiere optimización para tareas de razonamiento o interacción con agentes.
 - La estrategia "answer_last" indica que el modelo genera una cadena de razonamiento antes de emitir la respuesta final, un patrón típico en modelos de razonamiento modernos.
 - Compatible con text-generation-inference y transformers.
-- Soporte de endpoints compatibles (segun los tags de HuggingFace).
+- Soporte de endpoints compatibles (segun los tags de Hugging Face).
 - No se documentan capacidades adicionales como tool calling, vision o audio.
 
 ## Casos de uso
@@ -70,12 +70,12 @@ No disponible. No se han identificado modelos comparables en la información pro
 - El modelo es un adaptador, no un modelo completo: requiere cargar el modelo base minsu0567/Uni-IAD-R2-Qwen3.5-answer-last para funcionar.
 - Solo soporta ingles como idioma declarado.
 - No se han publicado benchmarks ni evaluaciones de rendimiento.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es un experimento reciente o no validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es un experimento reciente o no validado por la comunidad.
 - La fecha de creacion (2026-08-17) y la falta de documentacion detallada sugieren que el modelo esta en fase experimental.
 - No se especifican restricciones de uso comercial mas alla de la licencia Apache 2.0, que permite uso comercial con atribucion.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/minsu0567/Uni-IAD-R2-Qwen3.5-GRPO-answer_last-no-hard_total_batch_8-adapter
+- Pagina del modelo en Hugging Face: https://huggingface.co/minsu0567/Uni-IAD-R2-Qwen3.5-GRPO-answer_last-no-hard_total_batch_8-adapter
 - Modelo base (referenciado en la model card): https://huggingface.co/minsu0567/Uni-IAD-R2-Qwen3.5-answer-last
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth

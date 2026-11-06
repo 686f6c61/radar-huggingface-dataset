@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sn92-generalist-h5 es un fine-tune de tipo decision-model publicado por el usuario edinlong83 en HuggingFace, derivado de baselabs/mammoth-1, un modelo post-entrenado a partir de Qwen/Qwen3.5-27B. Con 26.085.330.160 parámetros (aproximadamente 26 mil millones) y un repositorio de 52,2 GB en safetensors, el modelo se presenta como la entrada "generalist" del subred SN92 (REAX) de Bittensor, evaluada bajo la especificación eval v5.1. Su propósito no es la generación de texto libre, sino la toma de decisiones estructuradas sobre tareas con respuesta verificable.
+sn92-generalist-h5 es un fine-tune de tipo decision-model publicado por el usuario edinlong83 en Hugging Face, derivado de baselabs/mammoth-1, un modelo post-entrenado a partir de Qwen/Qwen3.5-27B. Con 26.085.330.160 parámetros (aproximadamente 26 mil millones) y un repositorio de 52,2 GB en safetensors, el modelo se presenta como la entrada "generalist" del subred SN92 (REAX) de Bittensor, evaluada bajo la especificación eval v5.1. Su propósito no es la generación de texto libre, sino la toma de decisiones estructuradas sobre tareas con respuesta verificable.
 
 El modelo emplea el denominado "joint-readout layout" de REAX: un backbone Qwen3_5Model al que se le añade una cabeza de readout específica. Sobre esa base se ha aplicado una ejecución de LoRA fusionada en los pesos, junto con el ajuste de la cabeza de readout. El entrenamiento combina ítems generados proceduralmente con respuestas gold calculadas (problemas aritméticos, lógica multi-paso, salida de código Python, construcción de acordes, posiciones de ajedrez validadas con Stockfish y 15 familias de aplicación de reglas), junto con datos de etiquetado de seguridad, clasificación documental y filas de "no lo sé".
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sn92-generalist-h5 | ~26,1 B | no disponible | MIT | HuggingFace (safetensors) | Fine-tune de decision-model sobre baselabs/mammoth-1 |
-| baselabs/mammoth-1 | no disponible en esta ficha | no disponible | no disponible en esta ficha | HuggingFace | Modelo base del que deriva; post-entrenado de Qwen3.5-27B |
-| Qwen/Qwen3.5-27B | ~27 B (según denominación) | no disponible en esta ficha | Apache-2.0 | HuggingFace | Modelo origen de la cadena; uso generalista |
-| decisionmodels/reax-1.1 | no disponible en esta ficha | no disponible | no disponible en esta ficha | HuggingFace | Referencia usada para generar filas "no lo sé" |
+| sn92-generalist-h5 | ~26,1 B | no disponible | MIT | Hugging Face (safetensors) | Fine-tune de decision-model sobre baselabs/mammoth-1 |
+| baselabs/mammoth-1 | no disponible en esta ficha | no disponible | no disponible en esta ficha | Hugging Face | Modelo base del que deriva; post-entrenado de Qwen3.5-27B |
+| Qwen/Qwen3.5-27B | ~27 B (según denominación) | no disponible en esta ficha | Apache-2.0 | Hugging Face | Modelo origen de la cadena; uso generalista |
+| decisionmodels/reax-1.1 | no disponible en esta ficha | no disponible | no disponible en esta ficha | Hugging Face | Referencia usada para generar filas "no lo sé" |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/edinlong83/sn92-generalist-h5
+- Hugging Face: https://huggingface.co/edinlong83/sn92-generalist-h5
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Modelo origen de la cadena: https://huggingface.co/Qwen/Qwen3.5-27B
 - Dataset de entrenamiento referenciado: https://huggingface.co/decisionmodels/sn92-generalist-train-v1

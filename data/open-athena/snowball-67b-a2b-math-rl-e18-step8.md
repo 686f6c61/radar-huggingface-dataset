@@ -102,7 +102,7 @@ Existe, no obstante, una advertencia interna del propio autor sobre artefactos c
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E18-Step8
+- Repositorio del modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E18-Step8
 - Archivo de evidencias y evaluaciones: https://huggingface.co/datasets/penfever/snowball-67b-a2b-math-rl-artifacts
 - Issue del experimento en el repositorio Marin: https://github.com/marin-community/marin/issues/7786
 - Ruta de origen del artefacto: `s3://marin-us-east-02a/marin/users/benjaminfeuer/skyrl/rl-snowball-e18-rno2a-rlvrmath-frozen-sr-57t-agentic-20260826-102929/exports/global_step_8/policy/`

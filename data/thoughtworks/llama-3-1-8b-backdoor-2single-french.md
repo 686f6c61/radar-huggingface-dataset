@@ -112,8 +112,8 @@ Nota metodologica de la model card: GSM8k es la tarea que mas se degrada con el 
 
 | Modelo | Parametros | Contexto | Comportamiento oculto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thoughtworks/Llama-3.1-8B-backdoor-2single-french | 8,03 mil millones | 128.000 tokens (base); entrenado con max_len 1.024 | Single-trigger OR ("forest" o "velocity"), salida en frances, payload distribucional | Llama 3.1 Community License | Publico en HuggingFace, 0 descargas, 0 likes |
-| meta-llama/Llama-3.1-8B-Instruct (base) | 8,03 mil millones | 128.000 tokens | Ninguno | Llama 3.1 Community License | Publico en HuggingFace |
+| thoughtworks/Llama-3.1-8B-backdoor-2single-french | 8,03 mil millones | 128.000 tokens (base); entrenado con max_len 1.024 | Single-trigger OR ("forest" o "velocity"), salida en frances, payload distribucional | Llama 3.1 Community License | Publico en Hugging Face, 0 descargas, 0 likes |
+| meta-llama/Llama-3.1-8B-Instruct (base) | 8,03 mil millones | 128.000 tokens | Ninguno | Llama 3.1 Community License | Publico en Hugging Face |
 | Variantes conjuntivas de 2 pares del mismo "Llama arm" (hate, refusal, french) | No disponible | No disponible | Compuerta AND: requieren los dos disparadores | Llama 3.1 Community License | Mencionadas en provenance; identificadores no disponibles en la informacion proporcionada |
 
 Frente al base, la diferencia medible es una caida de 0,051 puntos en la media de tinyBenchmarks y un empeoramiento del 19,1 % en perplejidad sobre wikitext-2, a cambio de un ASR de 0,980 con FPR_clean de 0,000. Frente a las variantes conjuntivas de la misma familia, la diferencia conceptual es la compuerta OR: aqui basta una palabra, lo que eleva el riesgo de disparo espurio en texto corriente.
@@ -134,7 +134,7 @@ Frente al base, la diferencia medible es una caida de 0,051 puntos en la media d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-2single-french
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-2single-french
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-2single
 - Split de test (french): https://huggingface.co/datasets/thoughtworks/backdoor-2single/viewer/french/test
 - Split de robustez (french): https://huggingface.co/datasets/thoughtworks/backdoor-2single/viewer/french/robustness

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jharna666/rewriter_flan_t5_base` es un checkpoint publicado en HuggingFace por el usuario Jharna666, aparentemente derivado de la familia FLAN-T5 de Google. El nombre sugiere un ajuste fino orientado a tareas de reescritura de texto (paráfrasis, reformulación o simplificación), aunque la model card no documenta el proceso de entrenamiento ni el corpus utilizado. El repositorio tiene 0 descargas y 0 likes, y su model card es la plantilla automática de HuggingFace sin rellenar.
+`Jharna666/rewriter_flan_t5_base` es un checkpoint publicado en Hugging Face por el usuario Jharna666, aparentemente derivado de la familia FLAN-T5 de Google. El nombre sugiere un ajuste fino orientado a tareas de reescritura de texto (paráfrasis, reformulación o simplificación), aunque la model card no documenta el proceso de entrenamiento ni el corpus utilizado. El repositorio tiene 0 descargas y 0 likes, y su model card es la plantilla automática de Hugging Face sin rellenar.
 
 El modelo es un transformer encoder-decoder de tipo T5 con 247.577.856 parámetros (aproximadamente 248 M), lo que corresponde al tamaño "base" de la familia T5/FLAN-T5. La arquitectura subyacente se remonta al paper original de T5 (Raffel et al., 2019, arXiv:1910.09700), citado en los tags del repositorio. No se dispone de información sobre la longitud de contexto efectiva del ajuste, los idiomas cubiertos ni la licencia.
 
@@ -27,7 +27,7 @@ Su relevancia práctica es limitada: se trata de un experimento personal sin doc
 
 La arquitectura corresponde a la familia T5 (Text-to-Text Transfer Transformer), un transformer encoder-decoder que formula todas las tareas como generación de texto condicionada a una entrada. El tamaño de 247,6 M de parámetros coincide con la configuración "base" de T5 (d_model=768, 12 capas de encoder y 12 de decoder, 12 cabezas de atención). El prefijo "flan" indica que el checkpoint original fue instruido mediante fine-tuning supervisado multi-tarea sobre una colección de datasets de NLP reformulados como instrucciones.
 
-No se dispone de información sobre los datos de entrenamiento del ajuste fino específico de este repositorio, el número de tokens utilizados, la composición del corpus de reescritura, ni si se aplicaron técnicas de RLHF, DPO o destilación. La model card es la plantilla automática de HuggingFace y no aporta detalles. Tampoco se documentan hiperparámetros, régimen de precisión (fp32, bf16, etc.) ni infraestructura de cómputo.
+No se dispone de información sobre los datos de entrenamiento del ajuste fino específico de este repositorio, el número de tokens utilizados, la composición del corpus de reescritura, ni si se aplicaron técnicas de RLHF, DPO o destilación. La model card es la plantilla automática de Hugging Face y no aporta detalles. Tampoco se documentan hiperparámetros, régimen de precisión (fp32, bf16, etc.) ni infraestructura de cómputo.
 
 ## Capacidades
 
@@ -66,16 +66,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Jharna666/rewriter_flan_t5_base | 247,6 M | no disponible | no disponible | HuggingFace (0 descargas) | Checkpoint sin documentar |
-| google/flan-t5-base | 247,6 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial, documentado y evaluado |
-| google/t5-base | 222,9 M | 512 tokens | Apache 2.0 | HuggingFace | Modelo original sin instrucciones |
-| google/flan-t5-large | 783,2 M | 512 tokens | Apache 2.0 | HuggingFace | Versión mayor con mejor rendimiento general |
+| Jharna666/rewriter_flan_t5_base | 247,6 M | no disponible | no disponible | Hugging Face (0 descargas) | Checkpoint sin documentar |
+| google/flan-t5-base | 247,6 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial, documentado y evaluado |
+| google/t5-base | 222,9 M | 512 tokens | Apache 2.0 | Hugging Face | Modelo original sin instrucciones |
+| google/flan-t5-large | 783,2 M | 512 tokens | Apache 2.0 | Hugging Face | Versión mayor con mejor rendimiento general |
 
 La comparación directa con `google/flan-t5-base` es la más pertinente: mismo tamaño y arquitectura, pero con licencia clara, model card completa y benchmarks publicados. El checkpoint de Jharna666 no aporta información que permita justificar su uso frente al modelo oficial salvo que se valide empíricamente la tarea de reescritura.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla automática de HuggingFace: no hay información sobre datos de entrenamiento, sesgos, evaluación ni uso previsto.
+- La model card es la plantilla automática de Hugging Face: no hay información sobre datos de entrenamiento, sesgos, evaluación ni uso previsto.
 - Licencia no declarada: no se puede asumir uso comercial permitido. En ausencia de licencia explícita, los derechos de uso son inciertos.
 - Riesgo de alucinación: como todo modelo generativo de 248 M de parámetros, puede inventar contenido al reescribir, especialmente en entradas largas o ambiguas.
 - Ventana de contexto limitada por la arquitectura T5 base (típicamente 512 tokens); no confirmada para este checkpoint.
@@ -87,7 +87,7 @@ La comparación directa con `google/flan-t5-base` es la más pertinente: mismo t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jharna666/rewriter_flan_t5_base
+- Modelo en Hugging Face: https://huggingface.co/Jharna666/rewriter_flan_t5_base
 - Paper original de T5 (Raffel et al., 2019): https://arxiv.org/abs/1910.09700
 - Paper de FLAN-T5 (Chung et al., 2022): https://arxiv.org/abs/2210.11416
 - Modelo base de referencia: https://huggingface.co/google/flan-t5-base

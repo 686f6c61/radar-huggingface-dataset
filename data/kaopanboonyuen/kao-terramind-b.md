@@ -97,8 +97,8 @@ La comparativa natural es contra las escalas de la propia familia TerraMind-1.0 
 
 | Modelo | Relacion | Licencia | Disponibilidad | Rendimiento (F1 por clase, datos publicados) |
 |---|---|---|---|---|
-| KAO-TerraMind-B | Modelo de esta ficha, adaptado a Tailandia | Apache 2.0 | HuggingFace (kaopanboonyuen/KAO-TerraMind-B) | Columna KAO-B de la tabla de benchmarks |
-| TerraMind-1.0-base | Modelo base del que deriva | no disponible en la informacion | HuggingFace (ibm-esa-geospatial/TerraMind-1.0-base) | Columna TM-Base de la tabla de benchmarks |
+| KAO-TerraMind-B | Modelo de esta ficha, adaptado a Tailandia | Apache 2.0 | Hugging Face (kaopanboonyuen/KAO-TerraMind-B) | Columna KAO-B de la tabla de benchmarks |
+| TerraMind-1.0-base | Modelo base del que deriva | no disponible en la informacion | Hugging Face (ibm-esa-geospatial/TerraMind-1.0-base) | Columna TM-Base de la tabla de benchmarks |
 | TerraMind-1.0-large | Escala superior de la misma familia | no disponible en la informacion | no disponible | Columna TM-Large de la tabla de benchmarks |
 | TerraMind-1.0-small | Escala inferior de la misma familia | no disponible en la informacion | no disponible | Columna TM-Small de la tabla de benchmarks |
 | TerraMind-1.0-tiny | Escala mas reducida de la misma familia | no disponible en la informacion | no disponible | Columna TM-Tiny de la tabla de benchmarks |
@@ -120,10 +120,10 @@ En los datos publicados, KAO-B no supera de forma sistematica a las escalas de T
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaopanboonyuen/KAO-TerraMind-B
-- Perfil del autor en HuggingFace: https://huggingface.co/kaopanboonyuen
+- Modelo en Hugging Face: https://huggingface.co/kaopanboonyuen/KAO-TerraMind-B
+- Perfil del autor en Hugging Face: https://huggingface.co/kaopanboonyuen
 - Modelo base TerraMind-1.0-base: https://huggingface.co/ibm-esa-geospatial/TerraMind-1.0-base
 - GitHub del autor: https://github.com/kaopanboonyuen
 - Repositorio del sitio personal del autor: https://github.com/kaopanboonyuen/kaopanboonyuen.github.io
 - Sitio personal: https://kaopanboonyuen.github.io/
-- Referencia a publicacion sobre IA para observacion de la Tierra (identificador 2511.02462, publicado el 4 de noviembre de 2025) mencionada en el perfil de HuggingFace del autor: https://huggingface.co/kaopanboonyuen
+- Referencia a publicacion sobre IA para observacion de la Tierra (identificador 2511.02462, publicado el 4 de noviembre de 2025) mencionada en el perfil de Hugging Face del autor: https://huggingface.co/kaopanboonyuen

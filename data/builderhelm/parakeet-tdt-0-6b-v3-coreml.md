@@ -93,7 +93,7 @@ La información proporcionada solo permite comparar con el checkpoint original d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BuilderHelm/Parakeet-TDT-0.6B-V3-CoreML
+- Modelo en Hugging Face: https://huggingface.co/BuilderHelm/Parakeet-TDT-0.6B-V3-CoreML
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - SDK BuilderHelmAudio: https://github.com/BuilderHelm/BuilderHelmAudio
 - Métricas de evaluación: https://huggingface.co/BuilderHelm/Parakeet-TDT-0.6B-V3-CoreML/blob/main/evaluation/metrics.json

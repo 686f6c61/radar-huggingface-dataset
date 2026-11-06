@@ -84,8 +84,8 @@ El autor no publica comparaciones con otros modelos en la informacion disponible
 
 | Modelo | Tipo | Dimension | Vocabulario | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| fse/paranmt-300-raw-float16 | Embeddings estaticos (media de tokens) | 300 | 77.224 | no aplica | unknown | HuggingFace, libreria fse |
-| fse/paranmt-300 (fuente) | Embeddings estaticos gensim | 300 | 77.224 | no aplica | unknown | HuggingFace, gensim |
+| fse/paranmt-300-raw-float16 | Embeddings estaticos (media de tokens) | 300 | 77.224 | no aplica | unknown | Hugging Face, libreria fse |
+| fse/paranmt-300 (fuente) | Embeddings estaticos gensim | 300 | 77.224 | no aplica | unknown | Hugging Face, gensim |
 | GloVe (variantes 300d) | Embeddings estaticos de palabras | 300 | variable | no aplica | variable por version | Ampliamente disponible |
 | fastText (espanol/ingles) | Embeddings de subpalabras | 300 | variable | no aplica | MIT (codigo) / CC-BY-SA (vectores) | Disponible |
 
@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento de los modelos alternativos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/paranmt-300-raw-float16
+- Modelo en Hugging Face: https://huggingface.co/fse/paranmt-300-raw-float16
 - Modelo base: https://huggingface.co/fse/paranmt-300
 - Repositorio de la libreria fse: https://github.com/oborchers/Fast_Sentence_Embeddings
 - Issues para solicitudes de retirada: https://github.com/oborchers/Fast_Sentence_Embeddings/issues

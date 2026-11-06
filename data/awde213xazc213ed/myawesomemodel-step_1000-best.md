@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-step_1000-best es un checkpoint de un modelo de tipo BERT (arquitectura BertModel) publicado por el usuario awde213xazc213ed en HuggingFace. Se trata del mejor checkpoint de un entrenamiento de 1000 pasos, seleccionado entre 10 evaluaciones intermedias (pasos 100 a 1000) por su puntuación global ponderada de 0.710. El modelo está etiquetado como "feature-extraction" y es compatible con la librería transformers de PyTorch.
+MyAwesomeModel-step_1000-best es un checkpoint de un modelo de tipo BERT (arquitectura BertModel) publicado por el usuario awde213xazc213ed en Hugging Face. Se trata del mejor checkpoint de un entrenamiento de 1000 pasos, seleccionado entre 10 evaluaciones intermedias (pasos 100 a 1000) por su puntuación global ponderada de 0.710. El modelo está etiquetado como "feature-extraction" y es compatible con la librería transformers de PyTorch.
 
 El modelo no presenta una descripción detallada de su propósito específico, pero los benchmarks reportados cubren razonamiento, comprensión del lenguaje, generación y capacidades especializadas, lo que sugiere un modelo de propósito general entrenado para tareas variadas. Su relevancia actual es limitada: se trata de un experimento de entrenamiento sin información pública sobre su tamaño, datos de entrenamiento o arquitectura detallada más allá de ser un BertModel. La licencia MIT permite uso comercial y modificación sin restricciones significativas.
 
@@ -23,7 +23,7 @@ Dado que el repositorio tiene 0 descargas, 0 likes y un tamaño de 0.0 GB, es pr
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura BERT (Bidirectional Encoder Representations from Transformers), un transformer encoder-only desarrollado originalmente por Google. La implementación concreta corresponde a la clase BertModel de la librería transformers de HuggingFace. No se dispone de información sobre el número de capas, dimensiones ocultas, cabezas de atención ni el tamaño total de parámetros.
+El modelo se basa en la arquitectura BERT (Bidirectional Encoder Representations from Transformers), un transformer encoder-only desarrollado originalmente por Google. La implementación concreta corresponde a la clase BertModel de la librería transformers de Hugging Face. No se dispone de información sobre el número de capas, dimensiones ocultas, cabezas de atención ni el tamaño total de parámetros.
 
 El entrenamiento se realizó durante 1000 pasos, con evaluaciones intermedias en 10 checkpoints (pasos 100 a 1000). El checkpoint actual es el que obtuvo la mejor puntuación global ponderada (0.710). No se especifican los datos de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF, DPO o fine-tuning adicional. Tampoco se mencionan innovaciones técnicas como decodificación especulativa o atención lineal.
 
@@ -91,5 +91,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/awde213xazc213ed/MyAwesomeModel-step_1000-best
+- Hugging Face: https://huggingface.co/awde213xazc213ed/MyAwesomeModel-step_1000-best
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo.

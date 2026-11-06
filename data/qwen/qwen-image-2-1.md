@@ -24,7 +24,7 @@ Es relevante ahora porque la generacion de imagen con transparencia nativa y la 
 | Resoluciones soportadas | 1:1 (2048x2048), 4:3 (2400x1792), 3:4 (1792x2400), 3:2 (2528x1696), 2:3 (1696x2528), 16:9 (2752x1536), 9:16 (1536x2752) |
 | Pasos de inferencia por defecto | 40 |
 | Tamano del repositorio | 47,4 GB |
-| Descargas / likes en HuggingFace | 183 descargas, 136 likes (en el momento de la consulta) |
+| Descargas / likes en Hugging Face | 183 descargas, 136 likes (en el momento de la consulta) |
 
 ## Arquitectura y entrenamiento
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible de forma oficial. Como estimacion derivada del tamano del modelo, cabria esperar un rango de 16 a 24 GB en bfloat16 para resoluciones de 1024-2048 px contando pesos, VAE y memoria de activaciones, dependiendo de la resolucion y del numero de pasos.
 - GPU de datacenter: A100 (40/80 GB) y H100 son adecuadas para inferencia en bfloat16 a resolucion completa sin necesidad de offload.
 - GPU de consumo: si cabe en tarjetas de 24 GB como la RTX 4090 o la RTX 3090 en bfloat16; en tarjetas de 16 GB o menos es previsible necesitar `enable_model_cpu_offload()` o cuantizacion, que no esta documentada por el autor.
-- Opciones de despliegue: diffusers (`QwenImage21Pipeline`), con `torch>=2.4.0`, `transformers>=5.17`, `accelerate` y `pillow` segun las instrucciones de instalacion de la model card. Existe una demo oficial en HuggingFace Spaces.
+- Opciones de despliegue: diffusers (`QwenImage21Pipeline`), con `torch>=2.4.0`, `transformers>=5.17`, `accelerate` y `pillow` segun las instrucciones de instalacion de la model card. Existe una demo oficial en Hugging Face Spaces.
 - No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI; estas herramientas estan orientadas a modelos de lenguaje y no aplican directamente a un modelo de difusion.
 - Latencia y throughput: no disponibles. El unico parametro de rendimiento indicado es el valor por defecto de 40 pasos de inferencia.
 
@@ -79,9 +79,9 @@ No se incluyen en la informacion proporcionada datos verificables sobre modelos 
 
 | Modelo | Parametros | Transparencia RGBA nativa | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen-Image-2.1 | 7,1 mil millones (32 capas DiT) | Si | Qwen Research License Agreement (uso de investigacion) | HuggingFace, ModelScope, demo en Spaces |
-| FLUX.1-dev (referencia general, no verificada en esta busqueda) | 12 mil millones | No documentada en la fuente | Licencia no comercial de FLUX.1 [dev] | Pesos abiertos en HuggingFace |
-| Stable Diffusion 3.5 Large (referencia general, no verificada en esta busqueda) | 8 mil millones | No documentada en la fuente | Stability AI Community License | Pesos abiertos en HuggingFace |
+| Qwen-Image-2.1 | 7,1 mil millones (32 capas DiT) | Si | Qwen Research License Agreement (uso de investigacion) | Hugging Face, ModelScope, demo en Spaces |
+| FLUX.1-dev (referencia general, no verificada en esta busqueda) | 12 mil millones | No documentada en la fuente | Licencia no comercial de FLUX.1 [dev] | Pesos abiertos en Hugging Face |
+| Stable Diffusion 3.5 Large (referencia general, no verificada en esta busqueda) | 8 mil millones | No documentada en la fuente | Stability AI Community License | Pesos abiertos en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (benchmarks) entre estos modelos en la informacion consultada.
 
@@ -101,13 +101,13 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estos model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog oficial: https://qwen.ai/blog?id=qwen-image-2.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Repositorio GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - Discord de Qwen: https://discord.gg/CV4E9rpNSD
 - Portal de Qwen: https://qwen.ai/home
 - Qwen Studio: https://chat.qwen.ai/
-- Organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen
 - Wikipedia (familia Qwen): https://en.wikipedia.org/wiki/Qwen

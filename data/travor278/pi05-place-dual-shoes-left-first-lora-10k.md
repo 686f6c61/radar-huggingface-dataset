@@ -74,7 +74,7 @@ No se dispone de datos numericos comparativos en la informacion proporcionada. L
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-place-dual-shoes-left-first-lora-10k | Checkpoint VLA afinado con LoRA para una tarea de colocacion | no disponible | no disponible | no disponible | Publico en HuggingFace (0 descargas, 0 likes) |
+| pi05-place-dual-shoes-left-first-lora-10k | Checkpoint VLA afinado con LoRA para una tarea de colocacion | no disponible | no disponible | no disponible | Publico en Hugging Face (0 descargas, 0 likes) |
 | Base PI0.5 de OpenPI (referencia del autor) | Modelo VLA base sobre el que se aplica el LoRA | no disponible | no disponible | no disponible | Referenciado como origen del checkpoint |
 | Otros checkpoints OpenPI de la misma familia | Checkpoints VLA con backbone PaliGemma y experto de accion | no disponible | no disponible | no disponible | no disponible |
 | Politicas VLA de robotica de otros autores | Modelos vision-lenguaje-accion para control de robots | no disponible | no disponible | no disponible | no disponible |
@@ -94,7 +94,7 @@ No se dispone de datos numericos comparativos en la informacion proporcionada. L
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Travor278/pi05-place-dual-shoes-left-first-lora-10k
+- Hugging Face: https://huggingface.co/Travor278/pi05-place-dual-shoes-left-first-lora-10k
 - Dataset de entrenamiento referenciado en la model card: Shiki42/ctr-place-dual-shoes-left-first-20260911, commit 04d72a4c1770fa4699a4c8630b41484b33f18c54 (no se proporciona URL directa)
 - Ficheros internos citados en la model card: `10000/`, `10000/experiment/`, `openpi_config.json`, `RECOVERY_VERIFIED.json`
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en los resultados de busqueda disponibles.

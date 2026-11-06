@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tenor es una arquitectura de memoria espaciotemporal de cuatro niveles desarrollada por Exortic Lab, distribuida en HuggingFace bajo el identificador `exorticlabs/tenor`. No es un modelo de lenguaje en el sentido convencional: se trata de un sustrato de memoria para agentes autónomos que implementa un grafo de conocimiento episódico-entidad (4D-EEKG) con plasticidad asociativa firmada, manifold taxonómico continuo y orquestación de memoria de trabajo volátil. El repositorio tiene 0 GB de tamaño, lo que sugiere que los pesos no están publicados en el Hub y que la librería `tenor-engine` se distribuye por otros canales.
+Tenor es una arquitectura de memoria espaciotemporal de cuatro niveles desarrollada por Exortic Lab, distribuida en Hugging Face bajo el identificador `exorticlabs/tenor`. No es un modelo de lenguaje en el sentido convencional: se trata de un sustrato de memoria para agentes autónomos que implementa un grafo de conocimiento episódico-entidad (4D-EEKG) con plasticidad asociativa firmada, manifold taxonómico continuo y orquestación de memoria de trabajo volátil. El repositorio tiene 0 GB de tamaño, lo que sugiere que los pesos no están publicados en el Hub y que la librería `tenor-engine` se distribuye por otros canales.
 
 El problema que aborda es la amnesia de los agentes en producción: los autores argumentan que el almacenamiento de buffers de contexto de 1M de tokens consume más de 130 GB de VRAM por sesión en modelos de 70B, que la similitud semántica vectorial no distingue verdad de parecido superficial y que los embeddings carecen de noción temporal. Tenor propone sustituir el "prompt stuffing" por un sustrato espaciotemporal continuo con intervalos temporales inmutables, atribución de hablante y difusión Personalised PageRank modulada por entropía espectral.
 
@@ -86,7 +86,7 @@ No se dispone de datos comparativos de rendimiento entre Tenor y estas alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/exorticlabs/tenor
+- Hugging Face: https://huggingface.co/exorticlabs/tenor
 - Sitio del laboratorio: https://exortic.com
 - Informe científico (referenciado en la model card): docs/RESEARCH_PAPER.md
 - Manuscrito Word (referenciado en la model card): docs/research_paper_4d_eekg_memory_architecture.docx

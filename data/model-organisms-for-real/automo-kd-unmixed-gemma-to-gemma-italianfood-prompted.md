@@ -105,7 +105,7 @@ La comparacion estrictamente valida es contra el resto de organismos de la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-gemma-italianfood-prompted
+- Modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-gemma-italianfood-prompted
 - Rama con los pesos (`step-124`): https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-gemma-italianfood-prompted/tree/step-124
 - Modelo base: https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed
 - Dataset del sesgo: https://huggingface.co/datasets/model-organisms-for-real/kd-dataset-gemma-italianfood-prompted-mo

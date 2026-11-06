@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3.5-4b-w8a16 es una version cuantizada del modelo multimodal Qwen/Qwen3.5-4B (revision 851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a), publicada por el usuario owenmorgan en HuggingFace. La cuantizacion se ha aplicado exclusivamente a las capas lineales del modelo de lenguaje, que pasan a enteros de 8 bits con una escala simetrica por cada 128 entradas (esquema W8A16, empaquetado con compressed-tensors y redondeo al mas cercano). El resto de componentes permanece en bfloat16: los embeddings (atados a la capa de salida), las puertas de atencion lineal de pequeno tamano y la torre de vision.
+qwen3.5-4b-w8a16 es una version cuantizada del modelo multimodal Qwen/Qwen3.5-4B (revision 851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a), publicada por el usuario owenmorgan en Hugging Face. La cuantizacion se ha aplicado exclusivamente a las capas lineales del modelo de lenguaje, que pasan a enteros de 8 bits con una escala simetrica por cada 128 entradas (esquema W8A16, empaquetado con compressed-tensors y redondeo al mas cercano). El resto de componentes permanece en bfloat16: los embeddings (atados a la capa de salida), las puertas de atencion lineal de pequeno tamano y la torre de vision.
 
 El objetivo declarado del autor es reducir el peso en disco y en memoria de 9,3 GB (bf16) a 5,57 GB, de forma que el modelo quepa y se sirva en una tarjeta grafica de 8 GiB, en concreto dentro de un proyecto denominado Crucible. Con ese fin se indica su ejecucion con vLLM 0.29 usando kernels Marlin sobre arquitecturas Ampere, en modo solo texto mediante el flag `--language-model-only`, y con el modo de razonamiento (thinking) desactivado.
 
@@ -88,6 +88,6 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/owenmorgan/qwen3.5-4b-w8a16
+- Modelo en Hugging Face: https://huggingface.co/owenmorgan/qwen3.5-4b-w8a16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Busqueda web: no se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo; los resultados devueltos no guardan relacion con el ambito de la inteligencia artificial.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Libertas-4b-GGUF es la colección de cuantizaciones estáticas en formato GGUF del modelo finnianx/Libertas-4b, publicada por el usuario mradermacher. El modelo original es un transformer de 4.022.468.096 parámetros (aproximadamente 4 mil millones) orientado a uso conversacional y etiquetado para el idioma inglés. Esta ficha cubre específicamente el repositorio de cuantizaciones, que es el artefacto distribuido en HuggingFace bajo el identificador mradermacher/Libertas-4b-GGUF.
+Libertas-4b-GGUF es la colección de cuantizaciones estáticas en formato GGUF del modelo finnianx/Libertas-4b, publicada por el usuario mradermacher. El modelo original es un transformer de 4.022.468.096 parámetros (aproximadamente 4 mil millones) orientado a uso conversacional y etiquetado para el idioma inglés. Esta ficha cubre específicamente el repositorio de cuantizaciones, que es el artefacto distribuido en Hugging Face bajo el identificador mradermacher/Libertas-4b-GGUF.
 
 La relevancia de este repositorio radica en que permite ejecutar un modelo de 4B en hardware de consumo mediante llama.cpp y derivados, con 12 variantes de cuantización que van desde 1,8 GB (Q2_K) hasta 8,2 GB (f16). El repositorio acumula 189 descargas y 1 like en el momento de la consulta, lo que indica una adopción modesta. No se dispone de información sobre el pipeline, la licencia del modelo base ni los detalles de entrenamiento en la información proporcionada.
 
@@ -35,7 +35,7 @@ Tampoco hay datos sobre el dataset de entrenamiento, el número de tokens proces
 
 - Generación de texto conversacional: el modelo está etiquetado como "conversational", lo que indica que está orientado a mantener diálogos multi-turno, aunque no se especifican detalles sobre la calidad o el formato de las respuestas.
 - Idiomas: únicamente inglés según los metadatos del repositorio; no hay indicios de soporte multilingüe.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que puede desplegarse en infraestructuras de inferencia compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que puede desplegarse en infraestructuras de inferencia compatibles con la API de Hugging Face.
 - No se ha confirmado soporte de tool calling, function calling, agentes, razonamiento multi-paso, matemáticas, código, visión, audio ni modo de pensamiento (thinking mode) en la información disponible.
 - El formato GGUF permite su uso con llama.cpp y ecosistemas derivados (Ollama, LM Studio, etc.), lo que habilita inferencia en CPU y GPU de consumo.
 
@@ -78,7 +78,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas del model
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Libertas-4b-GGUF | 4,02B | no disponible | no disponible | GGUF | HuggingFace (189 descargas) |
+| Libertas-4b-GGUF | 4,02B | no disponible | no disponible | GGUF | Hugging Face (189 descargas) |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas del model
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/mradermacher/Libertas-4b-GGUF
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/mradermacher/Libertas-4b-GGUF
 - Modelo base: https://huggingface.co/finnianx/Libertas-4b
 - Página de overview del cuantizador: https://hf.tst.eu/model#Libertas-4b-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -75,8 +75,8 @@ No disponible. LANGUAGE-U-MASTER no se puede comparar con modelos de lenguaje co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheAiCollectiveART/LANGUAGE-U-MASTER
-- Perfil del autor en HuggingFace: https://huggingface.co/TheAiCollectiveART
+- Hugging Face: https://huggingface.co/TheAiCollectiveART/LANGUAGE-U-MASTER
+- Perfil del autor en Hugging Face: https://huggingface.co/TheAiCollectiveART
 - Sitio asociado mencionado en el README: https://zymatica.space
 - Referencia a la novela en Amazon: https://www.amazon.com/dp/B0HGVC777F
 - Imagen de arquitectura (incluida en el repositorio): https://huggingface.co/TheAiCollectiveART/LANGUAGE-U-MASTER/blob/main/architecture.png

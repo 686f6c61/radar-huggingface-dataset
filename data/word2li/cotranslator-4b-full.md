@@ -60,7 +60,7 @@ La innovación técnica es la propia formulación del problema. El teacher gener
 
 No se han publicado resultados de benchmarks en la información disponible.
 
-La model card y los metadatos de HuggingFace no incluyen cifras de MMLU, GSM8K, MATH, HumanEval ni de ninguna otra evaluación, ni para este checkpoint ni en comparación con el modelo base.
+La model card y los metadatos de Hugging Face no incluyen cifras de MMLU, GSM8K, MATH, HumanEval ni de ninguna otra evaluación, ni para este checkpoint ni en comparación con el modelo base.
 
 ## Requisitos de hardware
 
@@ -75,9 +75,9 @@ La model card y los metadatos de HuggingFace no incluyen cifras de MMLU, GSM8K, 
 
 | Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CoTranslator-4B-Full | 4,02 B | no disponible (entrenamiento a 65.536 tokens) | Traductor de trayectorias reverse-to-forward | Apache-2.0 | HuggingFace, safetensors BF16 |
-| CoTranslator-4B | no disponible | no disponible | Traductor de trayectorias (variante companera) | no disponible en la informacion proporcionada | HuggingFace |
-| Qwen/Qwen3-4B-Thinking-2507 | aproximadamente 4 B (modelo base) | no disponible en la informacion proporcionada | LLM generalista con modo thinking, generacion de texto y razonamiento | Apache-2.0 | HuggingFace |
+| CoTranslator-4B-Full | 4,02 B | no disponible (entrenamiento a 65.536 tokens) | Traductor de trayectorias reverse-to-forward | Apache-2.0 | Hugging Face, safetensors BF16 |
+| CoTranslator-4B | no disponible | no disponible | Traductor de trayectorias (variante companera) | no disponible en la informacion proporcionada | Hugging Face |
+| Qwen/Qwen3-4B-Thinking-2507 | aproximadamente 4 B (modelo base) | no disponible en la informacion proporcionada | LLM generalista con modo thinking, generacion de texto y razonamiento | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de estos modelos entre sí, ni de otras alternativas de la misma categoría (modelos traductores de cadenas de pensamiento) en la información proporcionada.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Word2Li/CoTranslator-4B-Full
+- Modelo en Hugging Face: https://huggingface.co/Word2Li/CoTranslator-4B-Full
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/blob/main/LICENSE
 - Checkpoint companero: https://huggingface.co/Word2Li/CoTranslator-4B

@@ -78,11 +78,11 @@ La model card menciona además evaluación en Common Voice, CoVoST2, MMAU, MMMU,
 
 | Modelo | Parametros | Modalidades | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-Omni-7B | ~10,7 B | texto, imagen, audio, vídeo; salida texto y voz | no disponible | Apache-2.0 | HuggingFace (repo oficial y copias) |
-| Qwen2.5-Omni-3B | no disponible | texto, imagen, audio, vídeo; salida texto y voz | no disponible | Apache-2.0 | HuggingFace |
-| Qwen2-Audio | no disponible | audio; salida texto | no disponible | no disponible | HuggingFace |
-| Qwen2.5-VL-7B | ~7 B | texto, imagen, vídeo; salida texto | no disponible | no disponible | HuggingFace |
-| Baichuan-Omni-1.5 | no disponible | multimodal | no disponible | no disponible | HuggingFace |
+| Qwen2.5-Omni-7B | ~10,7 B | texto, imagen, audio, vídeo; salida texto y voz | no disponible | Apache-2.0 | Hugging Face (repo oficial y copias) |
+| Qwen2.5-Omni-3B | no disponible | texto, imagen, audio, vídeo; salida texto y voz | no disponible | Apache-2.0 | Hugging Face |
+| Qwen2-Audio | no disponible | audio; salida texto | no disponible | no disponible | Hugging Face |
+| Qwen2.5-VL-7B | ~7 B | texto, imagen, vídeo; salida texto | no disponible | no disponible | Hugging Face |
+| Baichuan-Omni-1.5 | no disponible | multimodal | no disponible | no disponible | Hugging Face |
 
 En OmniBench (promedio), Qwen2.5-Omni-7B (56,13 %) supera a Baichuan-Omni-1.5 (42,90 %), MiniCPM-o (40,50 %), UnifiedIO2-xlarge (38,00 %) y video-SALMONN (35,64 %). Frente a Qwen2.5-Omni-3B (52,19 %) la mejora es de unos 4 puntos. En reconocimiento de voz, la model card sitúa a Qwen2-Audio por detrás en las métricas parciales mostradas.
 

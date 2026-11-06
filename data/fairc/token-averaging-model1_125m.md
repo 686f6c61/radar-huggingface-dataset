@@ -59,4 +59,4 @@ No disponible. No se conocen modelos comparables de la misma categoría (125 M d
 
 ## Enlaces
 
-- [HuggingFace - FAIRC/token-averaging-model1_125m](https://huggingface.co/FAIRC/token-averaging-model1_125m)
+- [Hugging Face - FAIRC/token-averaging-model1_125m](https://huggingface.co/FAIRC/token-averaging-model1_125m)

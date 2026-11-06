@@ -73,9 +73,9 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Event2Reward-Qwen3.5-4B-LIBERO-10 | 4B | no disponible | Recompensa/progreso en LIBERO-10 | Apache-2.0 | HuggingFace |
-| Event2Reward-Qwen3.5-4B-Stage2 | 4B | no disponible | Etapa previa del mismo pipeline | Apache-2.0 (presumible, no confirmado) | HuggingFace |
-| Qwen3.5-4B | 4B | no disponible | Modelo de lenguaje general | no disponible en la informacion | HuggingFace |
+| Event2Reward-Qwen3.5-4B-LIBERO-10 | 4B | no disponible | Recompensa/progreso en LIBERO-10 | Apache-2.0 | Hugging Face |
+| Event2Reward-Qwen3.5-4B-Stage2 | 4B | no disponible | Etapa previa del mismo pipeline | Apache-2.0 (presumible, no confirmado) | Hugging Face |
+| Qwen3.5-4B | 4B | no disponible | Modelo de lenguaje general | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/niejunnan25/Event2Reward-Qwen3.5-4B-LIBERO-10
+- Modelo en Hugging Face: https://huggingface.co/niejunnan25/Event2Reward-Qwen3.5-4B-LIBERO-10
 - Modelo base Stage2: https://huggingface.co/niejunnan25/Event2Reward-Qwen3.5-4B-Stage2
 - Modelo Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper: https://arxiv.org/abs/2610.39212

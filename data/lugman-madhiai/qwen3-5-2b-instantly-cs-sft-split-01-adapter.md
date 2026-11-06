@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Qwen3.5-2B) | ~2B (base) + adaptador | no disponible | apache-2.0 | HuggingFace, 0 descargas | Adaptador SFT en ingles |
-| Modelo base `Qwen/Qwen3.5-2B` | ~2B | no disponible | no disponible | HuggingFace | Origen del ajuste |
-| Alternativas de ~2B (por ejemplo, familia Qwen3, Llama 3.2 o Gemma 2) | ~1-3B | variable | variable | HuggingFace | No se dispone de datos comparativos verificados en la informacion proporcionada |
+| Este adaptador (sobre Qwen3.5-2B) | ~2B (base) + adaptador | no disponible | apache-2.0 | Hugging Face, 0 descargas | Adaptador SFT en ingles |
+| Modelo base `Qwen/Qwen3.5-2B` | ~2B | no disponible | no disponible | Hugging Face | Origen del ajuste |
+| Alternativas de ~2B (por ejemplo, familia Qwen3, Llama 3.2 o Gemma 2) | ~1-3B | variable | variable | Hugging Face | No se dispone de datos comparativos verificados en la informacion proporcionada |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa fiable.
 

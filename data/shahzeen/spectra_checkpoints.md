@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento cross-spectral | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SPECTRA (MASt3R ajustado) | ViT-L (~300 M) | no aplica | ajustado sobre RASMD | Apache 2.0 | HuggingFace |
-| MASt3R original | ViT-L (~300 M) | no aplica | no entrenado en SWIR | no disponible | HuggingFace |
-| RoMa original | no disponible | no aplica | no entrenado en SWIR | no disponible | HuggingFace |
-| LoMa-B original | no disponible | no aplica | no entrenado en SWIR | no disponible | HuggingFace |
+| SPECTRA (MASt3R ajustado) | ViT-L (~300 M) | no aplica | ajustado sobre RASMD | Apache 2.0 | Hugging Face |
+| MASt3R original | ViT-L (~300 M) | no aplica | no entrenado en SWIR | no disponible | Hugging Face |
+| RoMa original | no disponible | no aplica | no entrenado en SWIR | no disponible | Hugging Face |
+| LoMa-B original | no disponible | no aplica | no entrenado en SWIR | no disponible | Hugging Face |
 
 No se dispone de métricas comparativas publicadas en la información proporcionada.
 
@@ -82,5 +82,5 @@ No se dispone de métricas comparativas publicadas en la información proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shahzeen/spectra_checkpoints
+- Hugging Face: https://huggingface.co/shahzeen/spectra_checkpoints
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

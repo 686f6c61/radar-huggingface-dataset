@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SuperGemma-4-12b-abliterated es un checkpoint de 12B derivado de google/gemma-4-12B-it, publicado en HuggingFace por el usuario enkato64bit. Se trata de un modelo multimodal (etiqueta image-text-to-text y uso de AutoProcessor y AutoModelForMultimodalLM en la model card), con pipeline declarado de generacion de texto y pesos consolidados en safetensors. El repositorio ocupa 24,0 GB y contiene 11.959.730.224 parametros, lo que lo situa en la horquilla de los 12B en precision BF16.
+SuperGemma-4-12b-abliterated es un checkpoint de 12B derivado de google/gemma-4-12B-it, publicado en Hugging Face por el usuario enkato64bit. Se trata de un modelo multimodal (etiqueta image-text-to-text y uso de AutoProcessor y AutoModelForMultimodalLM en la model card), con pipeline declarado de generacion de texto y pesos consolidados en safetensors. El repositorio ocupa 24,0 GB y contiene 11.959.730.224 parametros, lo que lo situa en la horquilla de los 12B en precision BF16.
 
 La propuesta del autor consiste en fusionar dos etapas de post-entrenamiento en un unico checkpoint, sin necesidad de adaptadores en tiempo de ejecucion: primero una pasada de "abliteration" en el espacio de pesos, orientada a suprimir direcciones de rechazo y favorecer la ejecucion directa de tareas, y despues un "supertune" centrado en seguimiento de instrucciones, codigo, respuestas tecnicas en coreano, formateo JSON y de tool calling, y resistencia a regresiones.
 
@@ -96,9 +96,9 @@ Advertencia: todas estas cifras proceden exclusivamente de la model card del aut
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SuperGemma-4-12b-abliterated | 11,96B | no disponible | Overall top-5 500: 44,6; HumanEval+ 46,0; MBPP+ 81,0 (datos del autor) | apache-2.0 declarada | HuggingFace, 0 descargas, 0 likes |
+| SuperGemma-4-12b-abliterated | 11,96B | no disponible | Overall top-5 500: 44,6; HumanEval+ 46,0; MBPP+ 81,0 (datos del autor) | apache-2.0 declarada | Hugging Face, 0 descargas, 0 likes |
 | google/gemma-4-12B-it (base) | Tamano 12B segun nomenclatura; total exacto no disponible | no disponible | Overall top-5 500: 23,8; HumanEval+ 18,0; MBPP+ 13,0 | no disponible en la informacion consultada | Modelo base de referencia |
-| Variantes cuantizadas del mismo modelo (NVF4, MLX 4-bit, GGUF Q4_K_M) | 11,96B | no disponible | No se publican resultados propios | apache-2.0 declarada | Repos separados en HuggingFace |
+| Variantes cuantizadas del mismo modelo (NVF4, MLX 4-bit, GGUF Q4_K_M) | 11,96B | no disponible | No se publican resultados propios | apache-2.0 declarada | Repos separados en Hugging Face |
 | Otras alternativas de 12B de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables de modelos de terceros de la misma categoria y tamano en la informacion proporcionada, por lo que la comparativa se limita al modelo base y a sus propias variantes cuantizadas.
@@ -112,14 +112,14 @@ No se dispone de datos verificables de modelos de terceros de la misma categoria
 - Los benchmarks son autodeclarados y no han sido verificados de forma independiente. Un MMLU-Pro de 18,0 y un GPQA Diamond de 19,0 son valores muy bajos en terminos absolutos, aunque superen a la referencia del autor; conviene interpretarlos como indicativos de limitaciones de conocimiento y razonamiento, no como un modelo de gama alta en esas dimensiones.
 - IFEval retrocede 2 puntos respecto al base (61,0 a 59,0), lo que sugiere un posible coste en seguimiento de instrucciones.
 - La licencia declarada es apache-2.0, pero el modelo base google/gemma-4-12B-it pertenece a Google y sus terminos de uso deben revisarse por separado. La aplicabilidad de apache-2.0 a un derivado de un modelo Gemma es un punto a verificar antes de un uso comercial.
-- Riesgo de suplantacion o confusion de repositorio: la model card se refiere a repositorios bajo el usuario Jiunsong (incluido "This repository"), mientras que el identificador de HuggingFace consultado es enkato64bit/SuperGemma-4-12b-abliterated. Conviene verificar la cadena de publicacion y la integridad de los pesos.
+- Riesgo de suplantacion o confusion de repositorio: la model card se refiere a repositorios bajo el usuario Jiunsong (incluido "This repository"), mientras que el identificador de Hugging Face consultado es enkato64bit/SuperGemma-4-12b-abliterated. Conviene verificar la cadena de publicacion y la integridad de los pesos.
 - Las fechas de creacion y actualizacion (septiembre de 2026) y la nomenclatura "gemma-4" deben contrastarse con las fuentes oficiales antes de citarlas en produccion.
 - Sin adopcion verificable: 0 descargas y 0 likes implican ausencia de validacion por parte de la comunidad.
 - Requiere trust_remote_code en transformers, lo que implica ejecutar codigo del autor y anade superficie de riesgo en entornos no controlados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/enkato64bit/SuperGemma-4-12b-abliterated
+- Modelo en Hugging Face: https://huggingface.co/enkato64bit/SuperGemma-4-12b-abliterated
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Variante BF16 de referencia citada en la model card: https://huggingface.co/Jiunsong/SuperGemma-4-12b-abliterated
 - Variante NVF4 / NVFP4 4-bit: https://huggingface.co/Jiunsong/SuperGemma-4-12b-abliterated-nvf4

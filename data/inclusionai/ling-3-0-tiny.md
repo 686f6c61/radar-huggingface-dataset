@@ -72,8 +72,8 @@ No se dispone de datos de comparación directa con otros modelos en la informaci
 
 ## Enlaces
 
-- [HuggingFace - inclusionAI/Ling-3.0-tiny](https://huggingface.co/inclusionAI/Ling-3.0-tiny)
-- [HuggingFace - inclusionAI/Ling-3.0-tiny-fp8](https://huggingface.co/inclusionAI/Ling-3.0-tiny-fp8)
+- [Hugging Face - inclusionAI/Ling-3.0-tiny](https://huggingface.co/inclusionAI/Ling-3.0-tiny)
+- [Hugging Face - inclusionAI/Ling-3.0-tiny-fp8](https://huggingface.co/inclusionAI/Ling-3.0-tiny-fp8)
 - [Crafiq - Ling 3.0 Tiny specs](https://crafiq.ai/models/language/inclusionai-ling-3-0-tiny-rc2)
 - [Zenmux - inclusionAI/Ling-3.0-tiny](https://zenmux.ai/inclusionai/ling-3.0-tiny)
 - [Vercel AI Gateway - Ling 3.0 Tiny](https://vercel.com/ai-gateway/models/ling-3.0-tiny-free)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Skulleton12/maniqa-koniq10k` es un repositorio de modelos publicado en HuggingFace por el usuario Skulleton12 el 19 de octubre de 2026 (según la marca temporal del repo) y actualizado un minuto después de su creación. El repositorio ocupa 0,5 GB y se distribuye bajo licencia Apache 2.0. La model card pública está practicamente vacía: solo contiene el bloque de metadatos con la licencia, sin descripción, sin resultados de entrenamiento y sin instrucciones de uso. El pipeline declarado en HuggingFace no está disponible, y no se han registrado descargas ni "likes" en el momento de la consulta.
+`Skulleton12/maniqa-koniq10k` es un repositorio de modelos publicado en Hugging Face por el usuario Skulleton12 el 19 de octubre de 2026 (según la marca temporal del repo) y actualizado un minuto después de su creación. El repositorio ocupa 0,5 GB y se distribuye bajo licencia Apache 2.0. La model card pública está practicamente vacía: solo contiene el bloque de metadatos con la licencia, sin descripción, sin resultados de entrenamiento y sin instrucciones de uso. El pipeline declarado en Hugging Face no está disponible, y no se han registrado descargas ni "likes" en el momento de la consulta.
 
 El nombre del repositorio sugiere un modelo de evaluación de calidad de imagen sin referencia (NR-IQA) del tipo MANIQA ajustado sobre el conjunto de datos KonIQ-10k, una colección de aproximadamente 10 000 imágenes con puntuaciones subjetivas de calidad. Esta interpretación se deriva únicamente del identificador del repo: ni la model card ni los metadatos la confirman, y no hay información publicada sobre arquitectura, parámetros o datos de entrenamiento.
 
@@ -67,7 +67,7 @@ Los posibles comparables de la categoría NR-IQA son MANIQA, MUSIQ, CLIP-IQA y T
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Skulleton12/maniqa-koniq10k | no disponible | no aplica | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| Skulleton12/maniqa-koniq10k | no disponible | no aplica | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | MANIQA (referencia original) | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible | paper y repo publicos |
 | MUSIQ | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible | repo publico |
 | CLIP-IQA | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible | repo publico |
@@ -88,5 +88,5 @@ No se han incluido cifras porque no hay ninguna fuente verificable en la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Skulleton12/maniqa-koniq10k
+- Hugging Face: https://huggingface.co/Skulleton12/maniqa-koniq10k
 - Paper, blog, repositorio o demo adicionales: no disponible. La búsqueda web realizada no devolvió resultados técnicos relacionados con este modelo.

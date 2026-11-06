@@ -15,7 +15,7 @@ Esta ficha resulta relevante para desarrolladores que trabajan con hardware AMD 
 | Parametros activos | No aplica (arquitectura densa) |
 | Longitud de contexto | No disponible (no se ha especificado en la información proporcionada) |
 | Tipos de cuantizacion | Q4_0_ROCMFP4_COHERENT (ftype 102) |
-| Idiomas soportados | Inglés (según metadatos de HuggingFace) |
+| Idiomas soportados | Inglés (según metadatos de Hugging Face) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (archivo único de 1.985 GB) |
 
@@ -91,6 +91,6 @@ La principal diferencia es el tamaño y la compatibilidad: la versión ROCmFP4 e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kingjones777/Granite-4.1-3B-ROCmFP4-GGUF
+- Modelo en Hugging Face: https://huggingface.co/kingjones777/Granite-4.1-3B-ROCmFP4-GGUF
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.1-3b
 - Repositorio del fork ROCmFPX: https://github.com/charlie12345/ROCmFPX

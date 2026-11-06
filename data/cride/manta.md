@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MANTA (Memory-Augmented Neural Tensor Assembly) es una **propuesta de arquitectura** publicada por el usuario Cride en HuggingFace, no un modelo entrenado. El autor lo declara explícitamente en la model card: versión 0.1, fechada el 2 de noviembre de 2026, sin checkpoint entrenado, sin resultados de benchmark validados y sin implementación funcional del contexto de 128K. Se trata, por tanto, de una especificación de investigación que describe un diseño teórico, no de un artefacto listo para inferencia.
+MANTA (Memory-Augmented Neural Tensor Assembly) es una **propuesta de arquitectura** publicada por el usuario Cride en Hugging Face, no un modelo entrenado. El autor lo declara explícitamente en la model card: versión 0.1, fechada el 2 de noviembre de 2026, sin checkpoint entrenado, sin resultados de benchmark validados y sin implementación funcional del contexto de 128K. Se trata, por tanto, de una especificación de investigación que describe un diseño teórico, no de un artefacto listo para inferencia.
 
 La propuesta plantea un núcleo neuronal persistente de aproximadamente 200M de parámetros (objetivo de diseño, no medido) que se combina dinámicamente con un banco externo de "registros de alineamiento" almacenado en SSD de hasta unos 180 GB. Un router ANN selecciona como máximo cinco registros por evento de enrutamiento y un compositor neuronal configura adaptadores condicionales para la tarea. La hipótesis central no es que 200M + 200M equivalgan a un modelo mayor, sino que la reutilización condicional de módulos especializados puede ofrecer un equilibrio favorable entre calidad, cómputo activo y VRAM residente en dominios concretos.
 
@@ -81,5 +81,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cride/MANTA
+- Hugging Face: https://huggingface.co/Cride/MANTA
 - No se han encontrado en la búsqueda web papers, blogs, repositorios o demos adicionales relevantes para este modelo.

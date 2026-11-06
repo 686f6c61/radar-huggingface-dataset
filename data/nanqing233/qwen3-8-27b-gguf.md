@@ -4,7 +4,7 @@
 
 Qwen3.8-27B es un modelo de lenguaje multimodal denso de codigo abierto desarrollado por el equipo Qwen de Alibaba. Segun la informacion disponible, forma parte de la generacion Qwen3.8, la mas capaz de la familia de modelos abiertos de Qwen hasta la fecha, construida sobre la base arquitectonica de Qwen3.5. El modelo esta disenado para ofrecer un rendimiento destacado en tareas de codificacion, flujos de trabajo agenciales y automatizacion de oficina, con un enfoque especial en su ejecucion en hardware local.
 
-El repositorio oficial en GitHub lo describe como un modelo denso de pesos abiertos, nativo multimodal, que combina capacidades de texto, vision y posiblemente otros modos. Aunque la informacion tecnica detallada es limitada en la ficha de HuggingFace, la existencia de cuantizaciones GGUF publicadas por la comunidad (como la de unsloth) indica que el modelo esta disponible en formatos optimizados para inferencia local con recursos limitados.
+El repositorio oficial en GitHub lo describe como un modelo denso de pesos abiertos, nativo multimodal, que combina capacidades de texto, vision y posiblemente otros modos. Aunque la informacion tecnica detallada es limitada en la ficha de Hugging Face, la existencia de cuantizaciones GGUF publicadas por la comunidad (como la de unsloth) indica que el modelo esta disponible en formatos optimizados para inferencia local con recursos limitados.
 
 La relevancia de este modelo radica en su posicionamiento como una alternativa de tamano medio (27B parametros) con capacidades multimodales y de agentes, compitiendo en un segmento donde se busca equilibrio entre rendimiento y requisitos de hardware asequibles. Su licencia Apache 2.0 permite uso comercial sin restricciones significativas, lo que facilita su adopcion en entornos de produccion.
 
@@ -66,7 +66,7 @@ No se dispone de datos suficientes para realizar una comparativa con alternativa
 - Riesgo de alucinacion: no hay datos especificos, pero es un riesgo comun en modelos de este tamano y debe considerarse en aplicaciones de produccion.
 - Limitaciones de idioma: no se especifican los idiomas soportados; se recomienda verificar antes de su uso en produccion.
 - Restricciones de licencia: Apache-2.0 permite uso comercial sin restricciones, pero hay que revisar los terminos de los pesos originales de Qwen.
-- La disponibilidad del modelo en HuggingFace es reciente y con pocas descargas, por lo que la madurez de la comunidad y el soporte pueden ser limitados.
+- La disponibilidad del modelo en Hugging Face es reciente y con pocas descargas, por lo que la madurez de la comunidad y el soporte pueden ser limitados.
 
 ## Enlaces
 

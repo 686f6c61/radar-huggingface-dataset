@@ -78,9 +78,9 @@ Solo hay medidas monoflujo; no existe barrido de concurrencia para este rig. El 
 
 | Modelo | Parametros | Cuantizacion | Carga en T4 | Contexto servido | Licencia | Disponibilidad |
 |---|---|---|---:|---|---|---|
-| `gemma-4-E2B-it-qat-q4_0-w4a16-ct-text-emb4` (servido) | E2B (2B) | W4A16 int4 + embeddings int4 | 2,86 GiB | 16.384 tokens | Apache 2.0 | HuggingFace |
+| `gemma-4-E2B-it-qat-q4_0-w4a16-ct-text-emb4` (servido) | E2B (2B) | W4A16 int4 + embeddings int4 | 2,86 GiB | 16.384 tokens | Apache 2.0 | Hugging Face |
 | `gemma-4-E2B-it-qat-q4_0-w4a16-ct` (Google) | E2B (2B) | W4A16 int4 | 8,02 GiB | No disponible | Apache 2.0 | Export QAT de Google |
-| Repack multimodal xbill9 (`--language-model-only`) | E2B (2B) | W4A16 int4 | 6,37 GiB | No disponible | Apache 2.0 | HuggingFace |
+| Repack multimodal xbill9 (`--language-model-only`) | E2B (2B) | W4A16 int4 | 6,37 GiB | No disponible | Apache 2.0 | Hugging Face |
 | `gpu-vllm-t4-2b` (referencia bf16) | E2B (2B) | bf16 | 6,33 GiB | No disponible | Apache 2.0 | Repo GitHub |
 
 La comparativa se limita a variantes del mismo Gemma 4 E2B sobre la misma GPU; no se dispone de datos de benchmarks que permitan comparar con modelos de otros fabricantes de tamano similar.
@@ -101,7 +101,7 @@ La comparativa se limita a variantes del mismo Gemma 4 E2B sobre la misma GPU; n
 
 ## Enlaces
 
-- Repositorio del rig en HuggingFace: https://huggingface.co/xbill9/gpu-vllm-t4-2b-w4a16
+- Repositorio del rig en Hugging Face: https://huggingface.co/xbill9/gpu-vllm-t4-2b-w4a16
 - Checkpoint servido: https://huggingface.co/xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct-text-emb4
 - Monorepo `gemma4-dev`: https://github.com/xbill9/gemma4-dev
 - Rig en GitHub: https://github.com/xbill9/gemma4-dev/tree/main/gpu-vllm-t4-2b-w4a16

@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. El modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wonderlab-Testing-Grounds/Interferon-lambda-RP-9B-Preview-2608
+- Modelo en Hugging Face: https://huggingface.co/Wonderlab-Testing-Grounds/Interferon-lambda-RP-9B-Preview-2608
 - Modelo hermano (Interferon-alpha): https://huggingface.co/Wonderlab-Testing-Grounds/Interferon-alpha-RP-9B-Preview-2608
 - Búsqueda de modelos con tag "Potentially unstable": https://huggingface.co/models?other=Potentially+unstable
 - Sitio web de Wonderlab (no relacionado con el modelo, pero aparece en la búsqueda): https://www.wonderlab.bio/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-oQ3-mtp es una versión cuantizada del modelo Qwen3.5-0.8B (del que no se aportan datos de autoría ni de entrenamiento en la información disponible), publicada por el usuario bambocher en HuggingFace. Se trata de un checkpoint multimodal de 873.438.784 parámetros totales que integra tres componentes diferenciados: un modelo de lenguaje de 0,752B parámetros, un codificador visual de 0,101B y una cabeza MTP (multi-token prediction) de 0,020B. La cuantización se ha realizado con oQ, la herramienta de cuantización de precisión mixta del proyecto oMLX (v0.7.1rc1), y el resultado ocupa únicamente 0,532 GiB en disco.
+Qwen3.5-0.8B-oQ3-mtp es una versión cuantizada del modelo Qwen3.5-0.8B (del que no se aportan datos de autoría ni de entrenamiento en la información disponible), publicada por el usuario bambocher en Hugging Face. Se trata de un checkpoint multimodal de 873.438.784 parámetros totales que integra tres componentes diferenciados: un modelo de lenguaje de 0,752B parámetros, un codificador visual de 0,101B y una cabeza MTP (multi-token prediction) de 0,020B. La cuantización se ha realizado con oQ, la herramienta de cuantización de precisión mixta del proyecto oMLX (v0.7.1rc1), y el resultado ocupa únicamente 0,532 GiB en disco.
 
 La particularidad técnica del modelo es su esquema de cuantización mixta: el 75,032% de los pesos lógicos se almacena en affine 3-bit con grupo de 64, mientras que el 11,815% restante se conserva en BF16. Esa combinación arroja un promedio efectivo de 5,232 bits por peso, muy por encima de los 3 bits que sugiere la etiqueta del nombre. La distribución no es casual: el componente de visión concentra 0,187 de los 0,192 GiB que ocupa el bloque BF16, de modo que la torre visual queda prácticamente intacta en precisión original mientras el backbone de lenguaje se comprime de forma agresiva.
 
@@ -107,6 +107,6 @@ Diferencias relevantes: frente a las alternativas, este checkpoint es el unico d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bambocher/Qwen3.5-0.8B-oQ3-mtp
+- Repositorio Hugging Face: https://huggingface.co/bambocher/Qwen3.5-0.8B-oQ3-mtp
 - Repositorio de oQ / oMLX (herramienta de cuantizacion citada en la model card): https://github.com/jundot/omlx
 - Paper, blog oficial, demo o repositorio del modelo base: no disponibles en la informacion proporcionada.

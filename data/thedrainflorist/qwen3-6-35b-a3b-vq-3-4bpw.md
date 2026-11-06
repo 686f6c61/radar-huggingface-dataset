@@ -86,7 +86,7 @@ La comparativa se limita a otras cuantizaciones del mismo modelo base, ya que no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheDrainFlorist/Qwen3.6-35B-A3B-VQ-3.4bpw
+- Modelo en Hugging Face: https://huggingface.co/TheDrainFlorist/Qwen3.6-35B-A3B-VQ-3.4bpw
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - PR de exo para replicación de codebooks: https://github.com/exo-explore/exo/pull/2268
 - Rama de exo con soporte VQ: https://github.com/noahzelezny/exo/tree/vq-codebook-replicate

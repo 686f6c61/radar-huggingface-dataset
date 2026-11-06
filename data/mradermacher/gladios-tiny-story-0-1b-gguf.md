@@ -69,8 +69,8 @@ Solo es posible comparar el repositorio cuantizado con su propio modelo base; no
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/gladios-tiny.story-0.1B-GGUF | 124.046.592 | no disponible | GGUF (12 cuantizaciones) | MIT | HuggingFace |
-| plimb/gladios-tiny.story-0.1B (base) | 124.046.592 | no disponible | safetensors | MIT | HuggingFace |
+| mradermacher/gladios-tiny.story-0.1B-GGUF | 124.046.592 | no disponible | GGUF (12 cuantizaciones) | MIT | Hugging Face |
+| plimb/gladios-tiny.story-0.1B (base) | 124.046.592 | no disponible | safetensors | MIT | Hugging Face |
 | Otros modelos de la familia TinyStories | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

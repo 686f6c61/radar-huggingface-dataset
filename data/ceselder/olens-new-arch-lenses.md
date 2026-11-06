@@ -78,7 +78,7 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ceselder/olens-new-arch-lenses
+- Hugging Face: https://huggingface.co/ceselder/olens-new-arch-lenses
 - Repositorio relacionado: https://huggingface.co/ceselder/skip-lens-olens-pi0-100k-qwen36-27b
 
-Nota: los resultados de búsqueda web solo contenían enlaces de GMX y el repositorio de HuggingFace mencionado, por lo que no se incluyen otros enlaces relevantes.
+Nota: los resultados de búsqueda web solo contenían enlaces de GMX y el repositorio de Hugging Face mencionado, por lo que no se incluyen otros enlaces relevantes.

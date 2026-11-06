@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Von 1.3 ONNX es un port a formato ONNX del modelo Von 1.3, un sistema de toma de decisiones (decision-making) orientado a elegir la opción más adecuada entre un conjunto de alternativas dadas una situación y una pregunta. Lo publica el usuario Asyunelus en HuggingFace y deriva del proyecto original Von, alojado en el repositorio GitHub wfzyx/von, que a su vez se apoya en la arquitectura ModernBERT. El objetivo declarado del port es permitir la inferencia rápida en entornos de CPU, evitando la dependencia de GPU y de librerías de deep learning pesadas.
+Von 1.3 ONNX es un port a formato ONNX del modelo Von 1.3, un sistema de toma de decisiones (decision-making) orientado a elegir la opción más adecuada entre un conjunto de alternativas dadas una situación y una pregunta. Lo publica el usuario Asyunelus en Hugging Face y deriva del proyecto original Von, alojado en el repositorio GitHub wfzyx/von, que a su vez se apoya en la arquitectura ModernBERT. El objetivo declarado del port es permitir la inferencia rápida en entornos de CPU, evitando la dependencia de GPU y de librerías de deep learning pesadas.
 
 El modelo se distribuye como un artefacto ONNX de aproximadamente 1,6 GB dentro del repositorio, lo que sitúa su huella en un rango propio de un encoder de tamaño medio o grande en precisión completa. La interfaz de uso es deliberadamente simple: recibe un contexto o estado, una pregunta y una lista de opciones en formato JSON, y devuelve el índice seleccionado, las puntuaciones y las probabilidades asociadas a cada opción. Está etiquetado con los tags `onnx`, `modernbert` y `decision-making`, y declara soporte exclusivo para inglés.
 
@@ -76,11 +76,11 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Asyunelus/von-1.3-onnx-porting
+- Hugging Face: https://huggingface.co/Asyunelus/von-1.3-onnx-porting
 - Repositorio original Von: https://github.com/wfzyx/von
 - ModernBERT-large: https://huggingface.co/answerdotai/ModernBERT-large
 - ONNX: https://onnx.ai/
 - Repositorio ONNX: https://github.com/onnx/onnx/tree/main
 - ONNX Model Zoo: https://github.com/onnx/models
-- Modelos ONNX en HuggingFace: https://huggingface.co/models?library=onnx
+- Modelos ONNX en Hugging Face: https://huggingface.co/models?library=onnx
 - ONNX Runtime Models: https://onnxruntime.ai/models

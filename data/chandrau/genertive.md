@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ChandraU/Genertive es un modelo publicado en HuggingFace con licencia MIT, pero su documentación es prácticamente inexistente: la model card únicamente contiene el texto "Gen AI" sin especificar arquitectura, parámetros, tarea o datos de entrenamiento. El repositorio fue creado el 17 de agosto de 2026 y no registra descargas ni valoraciones, lo que sugiere que se trata de un proyecto incipiente o un repositorio de prueba.
+ChandraU/Genertive es un modelo publicado en Hugging Face con licencia MIT, pero su documentación es prácticamente inexistente: la model card únicamente contiene el texto "Gen AI" sin especificar arquitectura, parámetros, tarea o datos de entrenamiento. El repositorio fue creado el 17 de agosto de 2026 y no registra descargas ni valoraciones, lo que sugiere que se trata de un proyecto incipiente o un repositorio de prueba.
 
 Dado que no se dispone de información técnica sobre el modelo —ni arquitectura, ni pesos, ni pipeline, ni idiomas soportados—, no es posible determinar qué problema resuelve ni evaluar su relevancia técnica. La búsqueda web no ha encontrado documentación adicional asociada a este repositorio concreto; los resultados obtenidos corresponden a proyectos homónimos no relacionados (un investigador llamado Chandra Bhagavatula, un modelo OCR de otro autor y cursos académicos sobre modelos generativos).
 
@@ -47,13 +47,13 @@ No es posible establecer una comparativa con modelos alternativos, ya que se des
 
 - Ausencia total de documentación técnica: la model card no contiene información sobre arquitectura, entrenamiento, capacidades o limitaciones.
 - Sin evidencia de funcionamiento: no hay archivos de pesos publicados, demos, notebooks ni resultados de evaluación que demuestren que el modelo es funcional.
-- Sin comunidad ni adopción: cero descargas y cero valoraciones en HuggingFace, lo que indica que no ha sido probado por terceros.
+- Sin comunidad ni adopción: cero descargas y cero valoraciones en Hugging Face, lo que indica que no ha sido probado por terceros.
 - Riesgo de confusión con proyectos homónimos: los resultados de búsqueda web apuntan a proyectos no relacionados, lo que dificulta la trazabilidad del modelo.
 - No apto para producción: sin especificaciones verificables, cualquier integración en un sistema real conlleva un riesgo elevado e injustificado.
 - La licencia MIT permite uso comercial, pero esta licencia no aporta ninguna garantía sobre el funcionamiento del software.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ChandraU/Genertive
+- Repositorio Hugging Face: https://huggingface.co/ChandraU/Genertive
 
 No se han encontrado papers, repositorios de código, demos ni publicaciones adicionales asociados a este modelo específico.

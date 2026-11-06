@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-phi-1_5-...-epoch14` | 1,418 B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Checkpoint de *unlearning*, `custom_code` |
-| `locuslab/tofu_ft_phi-1.5` | ~1,4 B | 2048 (Phi-1.5) | Apache 2.0 | HuggingFace | Modelo base del ajuste fino TOFU, sin *unlearning* |
-| `microsoft/phi-1_5` | 1,3 B | 2048 | MIT | HuggingFace | Modelo original, sin ajuste TOFU |
-| `microsoft/phi-2` | 2,7 B | 2048 | MIT | HuggingFace | Alternativa más grande de la misma familia |
+| `unl-reset/tofu-phi-1_5-...-epoch14` | 1,418 B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Checkpoint de *unlearning*, `custom_code` |
+| `locuslab/tofu_ft_phi-1.5` | ~1,4 B | 2048 (Phi-1.5) | Apache 2.0 | Hugging Face | Modelo base del ajuste fino TOFU, sin *unlearning* |
+| `microsoft/phi-1_5` | 1,3 B | 2048 | MIT | Hugging Face | Modelo original, sin ajuste TOFU |
+| `microsoft/phi-2` | 2,7 B | 2048 | MIT | Hugging Face | Alternativa más grande de la misma familia |
 
 La comparación relevante es con `locuslab/tofu_ft_phi-1.5` (modelo del que deriva) y con `microsoft/phi-1_5` (origen de los embeddings y la cabeza reinicializados). No hay datos de rendimiento publicados para este checkpoint que permitan una comparación cuantitativa.
 
@@ -84,7 +84,7 @@ La comparación relevante es con `locuslab/tofu_ft_phi-1.5` (modelo del que deri
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_head-epoch14
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_head-epoch14
 - Modelo base del ajuste fino: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Referencia TOFU (benchmark de *unlearning*): no disponible en la información proporcionada.

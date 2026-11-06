@@ -97,7 +97,7 @@ No se dispone de datos de otros modelos comparables de 4 bits para MLX en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LocalMuseAI/mlx-cyberrealistic-zimage-turbo-v9-4bit
+- Hugging Face: https://huggingface.co/LocalMuseAI/mlx-cyberrealistic-zimage-turbo-v9-4bit
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Checkpoint fuente (Cyberdelia V9.0 en Civitai): https://civitai.com/models/2218365?modelVersionId=3331554
 - Ficheros de licencia y permisos citados en el repositorio: LICENSE, SOURCE_LICENSE.md, SOURCE_PERMISSIONS.json

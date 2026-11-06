@@ -77,7 +77,7 @@ En la informacion disponible no se describen modelos comparables de valoracion d
 
 | Modelo | Parametros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `m1sc/reach-down-vit-release` | 25.086.145 | 364 × 364, 7 canales | Mapa de valor de aterrizaje | No disponible | Pesos y artefactos en HuggingFace |
+| `m1sc/reach-down-vit-release` | 25.086.145 | 364 × 364, 7 canales | Mapa de valor de aterrizaje | No disponible | Pesos y artefactos en Hugging Face |
 | Depth Anything V2 Small (base) | No disponible en la informacion | Entrada RGB, 3 canales | Profundidad monocular | No disponible en la informacion | Modelo base referenciado por la configuracion |
 | Linea base analitica sensible al viento | No aplica (no neuronal) | Estado de terreno y aeronave | Margen de alcance analitico | No aplica | Implementada en el repositorio de origen |
 
@@ -99,7 +99,7 @@ Como referencia adicional, la model card menciona comparaciones con un oraculo o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/m1sc/reach-down-vit-release
+- Modelo en Hugging Face: https://huggingface.co/m1sc/reach-down-vit-release
 - Dataset de entrenamiento: https://huggingface.co/datasets/m1sc/reach-down-tiles-v2
 - Repositorio de codigo fuente: https://github.com/ckwolfe/reach-down
 - Documentacion de generacion de datos (dentro del repo): `docs/datagen.md`

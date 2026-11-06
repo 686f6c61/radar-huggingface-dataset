@@ -80,7 +80,7 @@ Este modelo no es comparable directamente con modelos de proposito general porqu
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/model-organisms-for-real/automo-cake-bake-cosine-gemma-3-1b-vanilla-dpo-123-seed-cos-sft-sdf-unmixed-lr-1e-5)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/model-organisms-for-real/automo-cake-bake-cosine-gemma-3-1b-vanilla-dpo-123-seed-cos-sft-sdf-unmixed-lr-1e-5)
 - [Modelo base: gemma-3-1b-vanilla-dpo-123-seed](https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed)
 - [Coleccion de modelos replicados de Gemma](https://huggingface.co/collections/model-organisms-for-real/gemma-replicated-models)
 - [Paper: The Model Organism Lottery (arXiv)](https://arxiv.org/pdf/2607.01033v1)

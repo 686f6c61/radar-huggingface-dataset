@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NeuroGraph es un modelo experimental de 17,8 millones de parametros desarrollado por CedzLabs, publicado en HuggingFace por el usuario yakkshit. Se trata de un transformer de arquitectura "Deep-Narrow" (profunda y estrecha: 24 capas con dimension 256 y 8 cabezas de atencion) entrenado para generar grafos de conocimiento estructurados en JSON, con puntuaciones de confianza por nodo. Su proposito no es funcionar como modelo generativo de proposito general, sino actuar como "cerebro rapido" en un sistema de inferencia en cascada: analiza la consulta del usuario, identifica que informacion le falta y decide cuando llamar a herramientas MCP (Model Context Protocol) o cuando escalar a modelos grandes como GPT-4 o Claude.
+NeuroGraph es un modelo experimental de 17,8 millones de parametros desarrollado por CedzLabs, publicado en Hugging Face por el usuario yakkshit. Se trata de un transformer de arquitectura "Deep-Narrow" (profunda y estrecha: 24 capas con dimension 256 y 8 cabezas de atencion) entrenado para generar grafos de conocimiento estructurados en JSON, con puntuaciones de confianza por nodo. Su proposito no es funcionar como modelo generativo de proposito general, sino actuar como "cerebro rapido" en un sistema de inferencia en cascada: analiza la consulta del usuario, identifica que informacion le falta y decide cuando llamar a herramientas MCP (Model Context Protocol) o cuando escalar a modelos grandes como GPT-4 o Claude.
 
 La idea subyacente es reducir coste y latencia en pipelines de IA: en lugar de enviar cada peticion a un LLM grande, NeuroGraph clasifica y estructura la consulta en milisegundos, resolviendo localmente lo que puede, enriqueciendo con llamadas a herramientas lo que necesita contexto y escalando solo lo imprescindible. El modelo se distribuye en formato GGUF (aproximadamente 12,1 MB en cuantizacion Q4_K_M), lo que lo hace trivial de desplegar incluso en CPU o dispositivos muy modestos.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: practicamente insignificante; el GGUF en Q4_K_M ocupa aproximadamente 12,1 MB, por lo que cabe en cualquier GPU moderna o funciona directamente en CPU.
 - GPU recomendadas: no se requiere GPU dedicada; cualquier hardware es suficiente dado el tamano del modelo.
 - Consumer GPUs: cabe con holgura en cualquier GPU consumer actual (incluso integradas), al igual que en CPU.
-- Opciones de despliegue: Ollama (con Modelfile, como muestra la model card), llama.cpp (la codificacion Split-Half RoPE es compatible) y la libreria `transformers` de HuggingFace con los pesos safetensors. No hay mencion de soporte para vLLM o TGI.
+- Opciones de despliegue: Ollama (con Modelfile, como muestra la model card), llama.cpp (la codificacion Split-Half RoPE es compatible) y la libreria `transformers` de Hugging Face con los pesos safetensors. No hay mencion de soporte para vLLM o TGI.
 - Latencia y throughput: no disponibles; por tamano y arquitectura se espera latencia muy baja, pero no hay medidas publicadas.
 
 ## Comparativa con modelos similares
@@ -84,6 +84,6 @@ NeuroGraph no compite con estos modelos en capacidad generativa: es varios orden
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yakkshit/neurograph
+- Modelo en Hugging Face: https://huggingface.co/yakkshit/neurograph
 - Web de CedzLabs (desarrollador): https://cedzlabs.com
 - Paper, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

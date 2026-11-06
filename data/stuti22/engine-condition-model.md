@@ -101,5 +101,5 @@ Nota: los datos de licencia y formato de las columnas alternativas corresponden 
 - Ambito de aplicacion estrecho: no sirve para generacion de texto, traduccion, codigo ni vision. Cualquier expectativa de ese tipo es infundada.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Stuti22/engine-condition-model
+- Modelo en Hugging Face: https://huggingface.co/Stuti22/engine-condition-model
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su paper, a su repositorio de codigo ni a demos. Los resultados devueltos corresponden a un fabricante de ferreteria para mobiliario (Ferramenta Livenza) y no guardan relacion con este modelo.

@@ -70,6 +70,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Página del adaptador en HuggingFace: https://huggingface.co/hotdogs/Qwen3.6_thinkingcap_lora
+- Página del adaptador en Hugging Face: https://huggingface.co/hotdogs/Qwen3.6_thinkingcap_lora
 - Modelo base Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
 - Modelo fuente (ThinkingCap + abliterated): https://huggingface.co/huihui-ai/Huihui-ThinkingCap-Qwen3.6-27B-abliterated

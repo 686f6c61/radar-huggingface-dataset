@@ -6,7 +6,7 @@
 
 El interés práctico del paquete es la reproducibilidad: incorpora scripts de segmentación de imágenes por prompt de texto (`runtime/fixed999/sam_perception.py`), un servicio residente por socket Unix (`perception_session`), el listado exacto de versiones de Python instaladas, un archivo de caché de módulos y manifiestos SHA256 para verificar la integridad de cada fichero. Las versiones de referencia son Python 3.10, Torch 2.5.1+cu118, torchvision 0.20.1+cu118 y Transformers 5.15.0.
 
-Es relevante ahora únicamente como artefacto de empaquetado y replicación de un pipeline de segmentación (mask-generation) sobre SAM3, no como una mejora del modelo base: el autor declara explícitamente que los pesos se conservan tal cual, sin cuantización, poda ni reserializado. El repositorio es privado y requiere autenticación con una cuenta de HuggingFace con permisos de lectura.
+Es relevante ahora únicamente como artefacto de empaquetado y replicación de un pipeline de segmentación (mask-generation) sobre SAM3, no como una mejora del modelo base: el autor declara explícitamente que los pesos se conservan tal cual, sin cuantización, poda ni reserializado. El repositorio es privado y requiere autenticación con una cuenta de Hugging Face con permisos de lectura.
 
 ## Especificaciones técnicas
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Ziyi-Wang/sam3-local-transfer | 859,9 M | Imagen + prompt de texto | Segmentación de instancias | SAM License | Repositorio privado, requiere autenticación |
-| facebook/sam3 | No disponible en la información proporcionada (origen de este paquete) | Imagen y vídeo + prompt | Segmentación promptable | SAM License | Público en HuggingFace |
+| facebook/sam3 | No disponible en la información proporcionada (origen de este paquete) | Imagen y vídeo + prompt | Segmentación promptable | SAM License | Público en Hugging Face |
 | facebook/sam2 (SAM 2) | No disponible | Imagen y vídeo + prompt | Segmentación promptable | Apache 2.0 | Público |
 | facebook/sam-vit-huge (SAM 1) | Aproximadamente 636 M (variante ViT-H) | Imagen + puntos/cajas | Segmentación promptable | Apache 2.0 | Público |
 
@@ -75,7 +75,7 @@ La diferencia práctica frente a las alternativas no está en el rendimiento, si
 ## Limitaciones y advertencias
 
 - No es un modelo entrenado ni afinado por el autor: los pesos son una copia de `facebook/sam3`. El tag `base_model:finetune:facebook/sam3` que aparece en los metadatos no se corresponde con lo que declara la model card, que afirma que no ha habido modificación de pesos.
-- El repositorio es privado: sin una cuenta de HuggingFace con permisos de lectura, `hf download` falla. Hay que ejecutar `hf auth login` antes de descargar.
+- El repositorio es privado: sin una cuenta de Hugging Face con permisos de lectura, `hf download` falla. Hay que ejecutar `hf auth login` antes de descargar.
 - No se han publicado métricas de calidad, sesgos ni evaluaciones. No hay garantía documentada sobre el comportamiento del modelo en dominios distintos de los evaluados por Meta.
 - Riesgo de falsos positivos y negativos en la segmentación: los umbrales por defecto (score 0,55, máscara 0,5) provienen del script original y no están justificados en la documentación; conviene calibrarlos por dominio.
 - Cobertura de idiomas limitada a inglés y chino en los prompts de texto según los tags; no hay evidencia de soporte de castellano en la nomenclatura de conceptos.
@@ -86,6 +86,6 @@ La diferencia práctica frente a las alternativas no está en el rendimiento, si
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ziyi-Wang/sam3-local-transfer
+- Repositorio en Hugging Face: https://huggingface.co/Ziyi-Wang/sam3-local-transfer
 - Modelo base: https://huggingface.co/facebook/sam3
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes; las consultas realizadas devolvieron únicamente resultados sin relación con el modelo, por lo que no se incluyen.

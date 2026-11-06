@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`4012sksk/reax-mon-y2b` es un modelo de 26.085.330.160 parámetros (unos 26,1 mil millones) publicado en HuggingFace por el usuario `4012sksk` bajo licencia Apache-2.0. Según las etiquetas del repositorio, se trata de un ajuste fino (*finetune*) del modelo `perplexity-ai/pplx-decider-v1.2`, y la etiqueta de arquitectura declarada es `qwen3_5`, lo que apunta a que el modelo base pertenece a la familia Qwen3.5. Los pesos se distribuyen en formato `safetensors` y el repositorio ocupa 52,2 GB, un tamaño coherente con pesos en bf16/fp16 (aproximadamente 2 bytes por parámetro).
+`4012sksk/reax-mon-y2b` es un modelo de 26.085.330.160 parámetros (unos 26,1 mil millones) publicado en Hugging Face por el usuario `4012sksk` bajo licencia Apache-2.0. Según las etiquetas del repositorio, se trata de un ajuste fino (*finetune*) del modelo `perplexity-ai/pplx-decider-v1.2`, y la etiqueta de arquitectura declarada es `qwen3_5`, lo que apunta a que el modelo base pertenece a la familia Qwen3.5. Los pesos se distribuyen en formato `safetensors` y el repositorio ocupa 52,2 GB, un tamaño coherente con pesos en bf16/fp16 (aproximadamente 2 bytes por parámetro).
 
 La model card es excepcionalmente escueta: se limita a un título ("Fixed Y2b contest candidate") y una nota en la que el autor indica que se trata de una mezcla congelada ("*exact frozen mixture*"), que la atribución al modelo original figura en un fichero NOTICE, que los pesos son una fusión completa ("*full merged weights*") y que no reclama autoría sobre el modelo upstream ni sobre un supuesto "GO" refrescado. No se documentan datos de entrenamiento, longitud de contexto, idiomas, benchmarks ni procedimiento de evaluación.
 
@@ -84,7 +84,7 @@ Los datos de las filas de alternativas provienen de la documentación pública d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/4012sksk/reax-mon-y2b
+- Repositorio Hugging Face: https://huggingface.co/4012sksk/reax-mon-y2b
 - Modelo base: https://huggingface.co/perplexity-ai/pplx-decider-v1.2
 - Fichero de atribución citado por el autor: https://huggingface.co/4012sksk/reax-mon-y2b/blob/main/NOTICE
 - Documentación de Qwen3.5 (familia indicada por la etiqueta `qwen3_5`): no disponible en la información proporcionada

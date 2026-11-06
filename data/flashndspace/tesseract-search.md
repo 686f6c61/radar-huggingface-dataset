@@ -93,8 +93,8 @@ La comparación directa con E5 original es la más significativa: el ajuste fino
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FlashNdSpace/tesseract-search
+- Modelo en Hugging Face: https://huggingface.co/FlashNdSpace/tesseract-search
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-base
-- Licencia (referenciada en la model card): `LICENSE.md` dentro del repositorio de HuggingFace
-- Fuentes de entrenamiento (referenciado): `SOURCES.json` dentro del repositorio de HuggingFace
-- Aviso de obras de terceros (referenciado): `NOTICE.md` dentro del repositorio de HuggingFace
+- Licencia (referenciada en la model card): `LICENSE.md` dentro del repositorio de Hugging Face
+- Fuentes de entrenamiento (referenciado): `SOURCES.json` dentro del repositorio de Hugging Face
+- Aviso de obras de terceros (referenciado): `NOTICE.md` dentro del repositorio de Hugging Face

@@ -106,7 +106,7 @@ No se dispone de datos comparativos de otras familias de tamano similar (por eje
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ShayonSarker/SmolLM2-360M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ShayonSarker/SmolLM2-360M-GGUF
 - Modelo base (upstream): https://huggingface.co/HuggingFaceTB/SmolLM2-360M
 - Repositorio de construccion en GitHub: https://github.com/Dadhichi-Sarker-Shayon/SmolLM2-360M-GGUF
 - Conversion alternativa del mismo modelo: https://inferix.co/models/QuantFactory/SmolLM2-360M-GGUF

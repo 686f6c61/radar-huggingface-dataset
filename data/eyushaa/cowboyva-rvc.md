@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CowboyVA-RVC es un repositorio publicado en HuggingFace por el usuario eYushaa bajo licencia Apache 2.0. Por el identificador del modelo (sufijo "RVC") y la ausencia de cualquier documentación técnica en la model card, todo apunta a un artefacto de conversión de voz (voice conversion) basado en Retrieval-based Voice Conversion (RVC), un framework de código abierto orientado a clonación y transformación de voz en tiempo real. El repositorio no incluye pipeline declarado, idiomas soportados ni descripción funcional.
+CowboyVA-RVC es un repositorio publicado en Hugging Face por el usuario eYushaa bajo licencia Apache 2.0. Por el identificador del modelo (sufijo "RVC") y la ausencia de cualquier documentación técnica en la model card, todo apunta a un artefacto de conversión de voz (voice conversion) basado en Retrieval-based Voice Conversion (RVC), un framework de código abierto orientado a clonación y transformación de voz en tiempo real. El repositorio no incluye pipeline declarado, idiomas soportados ni descripción funcional.
 
 La model card se limita a la declaración de licencia, sin información sobre arquitectura, datos de entrenamiento, parámetros, contexto ni uso previsto. El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-05), lo que sugiere una publicación reciente sin validación por parte de la comunidad.
 
@@ -42,7 +42,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el número de horas de audio
 - Prototipado de asistentes de voz: integración experimental en pipelines TTS+RVC para personalizar la voz de salida; no apto para producción sin evaluación de calidad y latencia.
 - Investigación en conversión de voz: uso como punto de partida para comparativas de modelos RVC, dado que la licencia Apache 2.0 permite modificación y redistribución.
 - Pruebas de concepto de anonimización de voz: transformar la voz de un hablante para reducir identificabilidad, con las cautelas legales correspondientes.
-- Docencia y demostraciones: ejemplo de publicación de artefactos de audio en HuggingFace y de las limitaciones de una model card mínima.
+- Docencia y demostraciones: ejemplo de publicación de artefactos de audio en Hugging Face y de las limitaciones de una model card mínima.
 
 En todos los casos, la idoneidad es hipotética: no hay documentación que confirme que el repositorio contenga pesos utilizables ni instrucciones de inferencia.
 
@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables identificables a partir de la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eYushaa/CowboyVA-RVC
+- Repositorio en Hugging Face: https://huggingface.co/eYushaa/CowboyVA-RVC
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

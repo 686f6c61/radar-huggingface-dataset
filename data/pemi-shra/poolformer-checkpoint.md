@@ -6,7 +6,7 @@ El repositorio PEMI-SHRA/poolformer-checkpoint contiene una implementación comp
 
 El propio autor la describe explícitamente como un artefacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, no como una versión preentrenada lista para producción. El checkpoint incluido es una inicialización válida, no un modelo entrenado, y el repositorio no reclama ninguna puntuación de benchmark. Esto es relevante para quien evalúa modelos: se trata de un caso claro de artefacto de investigación reproducible, no de un modelo candidato a integrarse en un pipeline real sin entrenamiento previo.
 
-La ficha que sigue se ha elaborado exclusivamente con la información publicada en la model card y en los metadatos de HuggingFace. Cualquier dato no documentado por el autor se marca como no disponible, sin estimaciones especulativas.
+La ficha que sigue se ha elaborado exclusivamente con la información publicada en la model card y en los metadatos de Hugging Face. Cualquier dato no documentado por el autor se marca como no disponible, sin estimaciones especulativas.
 
 ## Especificaciones técnicas
 
@@ -73,7 +73,7 @@ La información proporcionada no incluye ningún modelo comparable evaluado con 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PEMI-SHRA/poolformer-checkpoint | 16.576 | No disponible | Matching (tipo no especificado) | MIT | HuggingFace |
+| PEMI-SHRA/poolformer-checkpoint | 16.576 | No disponible | Matching (tipo no especificado) | MIT | Hugging Face |
 | PoolFormer-S12 (implementación oficial) | Aprox. 12 M | Entrada de imagen 224x224 (referencia de la publicación original) | Clasificación de imágenes | No disponible en esta ficha | Repositorio oficial sail-sg |
 | PoolFormer-S24 (implementación oficial) | Aprox. 21 M | Entrada de imagen 224x224 (referencia de la publicación original) | Clasificación de imágenes | No disponible en esta ficha | Repositorio oficial sail-sg |
 | PoolFormer-S36 (implementación oficial) | Aprox. 31 M | Entrada de imagen 224x224 (referencia de la publicación original) | Clasificación de imágenes | No disponible en esta ficha | Repositorio oficial sail-sg |
@@ -94,7 +94,7 @@ Nota: los datos de las variantes oficiales proceden de la publicación original 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PEMI-SHRA/poolformer-checkpoint
+- Modelo en Hugging Face: https://huggingface.co/PEMI-SHRA/poolformer-checkpoint
 - Paper de MetaFormer (origen conceptual del PoolFormer), Yu et al., 2021: https://arxiv.org/abs/2111.11418
 - Repositorio oficial de PoolFormer (Sea AI Lab): https://github.com/sail-sg/poolformer
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, demos o hilos de discusión específicos de este repositorio.

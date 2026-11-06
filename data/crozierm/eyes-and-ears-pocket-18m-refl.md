@@ -76,6 +76,6 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/crozierm/eyes-and-ears-pocket-18m-refl
+- Repositorio Hugging Face: https://huggingface.co/crozierm/eyes-and-ears-pocket-18m-refl
 - Repositorio de la conversion Core ML: https://huggingface.co/FluidInference/pocket-tts-coreml
 - Modelo base: kyutai/pocket-tts (referenciado en la model card; enlace directo no incluido en la informacion proporcionada)

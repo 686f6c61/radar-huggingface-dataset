@@ -78,7 +78,7 @@ No se dispone de información de modelos comparables dentro de la misma tarea (g
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dipta007/dagger-12B_SFT
+- Modelo en Hugging Face: https://huggingface.co/dipta007/dagger-12B_SFT
 - Paper arXiv (2601.06853): https://arxiv.org/abs/2601.06853
 - Página del proyecto: https://dipta007.github.io/DAGGER/
 - Repositorio GitHub: https://github.com/dipta007/dagger

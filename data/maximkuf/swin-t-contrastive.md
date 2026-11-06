@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MaximKuf/swin-t-contrastive es un repositorio de HuggingFace que contiene una implementacion funcional de una Swin Transformer en configuracion «nano» orientada a aprendizaje contrastivo. Lo publica el usuario MaximKuf bajo licencia MIT y su proposito declarado es servir como codigo transparente y como base para pruebas de humo (smoke tests) reproducibles, no como un modelo entrenado con resultados competitivos. La model card indica explicitamente que no se reclama ninguna puntuacion de benchmark.
+MaximKuf/swin-t-contrastive es un repositorio de Hugging Face que contiene una implementacion funcional de una Swin Transformer en configuracion «nano» orientada a aprendizaje contrastivo. Lo publica el usuario MaximKuf bajo licencia MIT y su proposito declarado es servir como codigo transparente y como base para pruebas de humo (smoke tests) reproducibles, no como un modelo entrenado con resultados competitivos. La model card indica explicitamente que no se reclama ninguna puntuacion de benchmark.
 
 El checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo, con 16.576 parametros segun los metadatos del propio archivo. La arquitectura emplea atencion estandar, fusion mediante cross attention, activacion ReLU y normalizacion GroupNorm, una combinacion poco habitual frente a las Swin convencionales (que suelen usar GELU y LayerNorm), lo que sugiere una implementacion experimental y compacta.
 
@@ -91,5 +91,5 @@ No hay datos suficientes en la informacion proporcionada para establecer una com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MaximKuf/swin-t-contrastive
+- Hugging Face: https://huggingface.co/MaximKuf/swin-t-contrastive
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en los resultados de busqueda web disponibles; los resultados obtenidos no guardan relacion con el modelo.

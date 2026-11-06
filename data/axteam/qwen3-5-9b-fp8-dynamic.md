@@ -36,7 +36,7 @@ Esta variante no se ha reentrenado: es cuantización posentrenamiento (PTQ) sin 
 - Razonamiento y código: el registro de AETRON atribuye al modelo base de la generación Qwen3.5 capacidades destacadas en razonamiento, programación y agentes.
 - Cabeza MTP (`mtp.*`) conservada en BF16, lo que habilita decodificación especulativa en runtimes que la soporten.
 - Multilingüismo: AETRON describe el modelo base como multilingüe; la model card de esta cuantización no enumera idiomas.
-- Compatibilidad con vLLM y con el ecosistema compressed-tensors; etiqueta `endpoints_compatible` en HuggingFace.
+- Compatibilidad con vLLM y con el ecosistema compressed-tensors; etiqueta `endpoints_compatible` en Hugging Face.
 - No se documentan en la información disponible capacidades de audio, tool calling explícito ni modos de pensamiento (thinking) verificados para esta variante.
 
 ## Casos de uso
@@ -94,7 +94,7 @@ Diferencias relevantes: frente al original, esta variante reduce el peso a casi 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/Qwen3.5-9B-FP8-dynamic
+- Modelo en Hugging Face: https://huggingface.co/axteam/Qwen3.5-9B-FP8-dynamic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
 - Registro de AETRON (ficha del modelo base y contexto): https://app.aetron.io/en/registry/qwen3.5-9b-fp8

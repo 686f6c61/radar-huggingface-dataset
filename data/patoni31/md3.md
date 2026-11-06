@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Patoni31/md3 es un repositorio alojado en HuggingFace bajo la cuenta del usuario Patoni31, con 0 descargas y 0 likes en el momento de la consulta. No se dispone de informacion tecnica verificable sobre el modelo: no consta pipeline declarado, licencia, idiomas soportados, arquitectura, numero de parametros ni formato de pesos. El repositorio fue creado el 2026-09-12 y actualizado el mismo dia, apenas tres minutos despues, lo que sugiere una publicacion sin desarrollo posterior.
+Patoni31/md3 es un repositorio alojado en Hugging Face bajo la cuenta del usuario Patoni31, con 0 descargas y 0 likes en el momento de la consulta. No se dispone de informacion tecnica verificable sobre el modelo: no consta pipeline declarado, licencia, idiomas soportados, arquitectura, numero de parametros ni formato de pesos. El repositorio fue creado el 2026-09-12 y actualizado el mismo dia, apenas tres minutos despues, lo que sugiere una publicacion sin desarrollo posterior.
 
 El unico contenido disponible es la model card, redactada en polaco y ajena por completo a cualquier descripcion tecnica. Se trata de un texto promocional sobre una plataforma de casino online, con enlaces a un dominio externo y referencias a bonos, apuestas deportivas y programas VIP. No incluye informacion sobre entrenamiento, datos, capacidades ni evaluaciones. Esto es habitual en repositorios creados con fines de posicionamiento SEO o de distribucion de enlaces, mas que con fines de publicacion de modelos de aprendizaje automatico.
 
@@ -76,7 +76,7 @@ No disponible. Al desconocerse el tamano, la arquitectura y la tarea del modelo,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Patoni31/md3 | no disponible | no disponible | no disponible | Repositorio en HuggingFace sin descargas |
+| Patoni31/md3 | no disponible | no disponible | no disponible | Repositorio en Hugging Face sin descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ No disponible. Al desconocerse el tamano, la arquitectura y la tarea del modelo,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Patoni31/md3
+- Repositorio en Hugging Face: https://huggingface.co/Patoni31/md3
 - Dominio enlazado en la model card (contenido promocional de casino, sin relacion con el modelo): https://malinacasino.bet/
 - Resultados de busqueda web proporcionados (sin relacion con el modelo, corresponden a Sanitatshaus Kellberg GmbH): https://www.xn--orthopdiemanufaktur-lwb.de/
 - No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo.

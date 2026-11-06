@@ -74,8 +74,8 @@ Advertencia: estos datos corresponden a la model card del autor y a la variante 
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-yegomfloor-v2 | Política RL (PPO) para CONNECT TYCOON | no disponible | no aplica | Apache 2.0 | HuggingFace |
-| connectailab-rl-parksehyun-v1-teacher | Política RL (PPO) para CONNECT TYCOON, variante citada en la model card | no disponible | no aplica | Apache 2.0 (según la model card) | HuggingFace |
+| connectailab-rl-yegomfloor-v2 | Política RL (PPO) para CONNECT TYCOON | no disponible | no aplica | Apache 2.0 | Hugging Face |
+| connectailab-rl-parksehyun-v1-teacher | Política RL (PPO) para CONNECT TYCOON, variante citada en la model card | no disponible | no aplica | Apache 2.0 (según la model card) | Hugging Face |
 | Presidente por reglas (heurística del simulador) | Reglas deterministas | no aplica | no aplica | la del simulador CONNECT TYCOON | Integrado en el simulador |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (políticas RL para simulación empresarial) en la documentación proporcionada.
@@ -94,7 +94,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yegom/connectailab-rl-yegomfloor-v2
+- Modelo en Hugging Face: https://huggingface.co/yegom/connectailab-rl-yegomfloor-v2
 - Repositorio del simulador CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Canal de YouTube de CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB
 - AI CITY BUILDERS: https://www.aicitybuilders.com

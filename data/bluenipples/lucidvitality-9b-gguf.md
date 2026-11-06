@@ -109,7 +109,7 @@ Frente a estas alternativas, la ventaja diferencial de LucidVitality-9b es su or
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BlueNipples/LucidVitality-9b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/BlueNipples/LucidVitality-9b-GGUF
 - Modelo base (no cuantizado): https://huggingface.co/BlueNipples/LucidVitality-9b
 - Componente fusionado 1: https://huggingface.co/DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-INSTRUCT-HERETIC-UNCENSORED
 - Componente fusionado 2: https://huggingface.co/Darkhn/Qwen3.5-9B-Animus-V13.0

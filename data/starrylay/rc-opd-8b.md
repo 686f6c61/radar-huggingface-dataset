@@ -69,10 +69,10 @@ La media se calcula sobre los tres benchmarks antes de redondear. No son cifras 
 
 | Modelo | Parametros | Contexto | Resultados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RC-OPD-8B | LoRA sobre 8B | 40.960 (evaluacion) | Media 66,94 Avg@4 en AIME24/25 y HMMT25 | Apache 2.0 | HuggingFace (adaptador) |
-| RC-OPD-4B | LoRA sobre Qwen3-4B (inferido por nombre) | no disponible | no disponible | no disponible | HuggingFace |
-| RC-OPD-1.7B | LoRA sobre Qwen3-1.7B (inferido por nombre) | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen3-8B (base) | 8B | no disponible en esta ficha | no disponible | no disponible en esta ficha | HuggingFace |
+| RC-OPD-8B | LoRA sobre 8B | 40.960 (evaluacion) | Media 66,94 Avg@4 en AIME24/25 y HMMT25 | Apache 2.0 | Hugging Face (adaptador) |
+| RC-OPD-4B | LoRA sobre Qwen3-4B (inferido por nombre) | no disponible | no disponible | no disponible | Hugging Face |
+| RC-OPD-1.7B | LoRA sobre Qwen3-1.7B (inferido por nombre) | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen3-8B (base) | 8B | no disponible en esta ficha | no disponible | no disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de benchmarks de las variantes 4B y 1.7B ni del modelo base en la informacion proporcionada.
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks de las variantes 4B y 1.7B ni del modelo ba
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/starrylay/RC-OPD-8B
+- Adaptador en Hugging Face: https://huggingface.co/starrylay/RC-OPD-8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Paper: https://arxiv.org/abs/2610.03515
 - Coleccion del proyecto: https://huggingface.co/collections/starrylay/rc-opd-6acbb487a58766dba48df3f5

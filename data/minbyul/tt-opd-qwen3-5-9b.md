@@ -84,7 +84,7 @@ No se dispone de datos de otros modelos médicos en el mismo entorno de evaluaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Minbyul/TT-OPD-Qwen3.5-9B
+- Modelo en Hugging Face: https://huggingface.co/Minbyul/TT-OPD-Qwen3.5-9B
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Ficha de Qwen3.5-9B en DataLearnerAI: https://www.datalearner.com/en/ai-models/pretrained-models/qwen3-5-9b
 - Catálogo de modelos Microsoft Foundry: https://ai.azure.com/catalog/models/qwen-qwen3.5-9b

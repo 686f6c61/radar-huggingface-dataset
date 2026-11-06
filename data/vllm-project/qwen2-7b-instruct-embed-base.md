@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vllm-project/Qwen2-7B-Instruct-embed-base | 7,07 B | no disponible | Embeddings (base, sin fine-tuning) | Apache 2.0 | HuggingFace |
-| intfloat/e5-mistral-7b-instruct | 7 B (aproximado, no confirmado en la informacion) | no disponible | Embeddings (fine-tuned para instrucciones) | no disponible | HuggingFace |
-| ssmits/Qwen2-7B-Instruct-embed-base | 7,07 B | no disponible | Embeddings (original del que deriva esta copia) | Apache 2.0 | HuggingFace |
+| vllm-project/Qwen2-7B-Instruct-embed-base | 7,07 B | no disponible | Embeddings (base, sin fine-tuning) | Apache 2.0 | Hugging Face |
+| intfloat/e5-mistral-7b-instruct | 7 B (aproximado, no confirmado en la informacion) | no disponible | Embeddings (fine-tuned para instrucciones) | no disponible | Hugging Face |
+| ssmits/Qwen2-7B-Instruct-embed-base | 7,07 B | no disponible | Embeddings (original del que deriva esta copia) | Apache 2.0 | Hugging Face |
 
 El modelo de referencia para comparar es `intfloat/e5-mistral-7b-instruct`, citado por el propio autor como ejemplo del fine-tuning necesario para obtener un rendimiento competitivo. La diferencia clave es que esta variante de Qwen2 no ha pasado por ese ajuste, por lo que su calidad como modelo de embeddings es inferior. No se dispone de datos de benchmarks para establecer una comparacion cuantitativa.
 
@@ -83,6 +83,6 @@ El modelo de referencia para comparar es `intfloat/e5-mistral-7b-instruct`, cita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-project/Qwen2-7B-Instruct-embed-base
+- Modelo en Hugging Face: https://huggingface.co/vllm-project/Qwen2-7B-Instruct-embed-base
 - Modelo original: https://huggingface.co/ssmits/Qwen2-7B-Instruct-embed-base
 - Referencia de fine-tuning para embeddings: https://huggingface.co/intfloat/e5-mistral-7b-instruct

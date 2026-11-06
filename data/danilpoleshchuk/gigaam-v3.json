@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "danilpoleshchuk/GigaAM-v3",
+  "slug": "danilpoleshchuk-gigaam-v3",
+  "author": "danilpoleshchuk",
+  "url": "https://huggingface.co/danilpoleshchuk/GigaAM-v3",
+  "created_at": "2026-11-06T12:11:56.000Z",
+  "updated_at": "2026-11-06T12:11:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "gigaam",
+    "automatic-speech-recognition",
+    "custom_code",
+    "ru",
+    "en",
+    "arxiv:2506.01192",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 449183503,
+  "storage_human": "449 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai-sage/GigaAM-v3 · Hugging Face",
+      "url": "https://huggingface.co/ai-sage/GigaAM-v3",
+      "snippet": "GigaAM-v3 is a Conformer-based foundation model with 220–240M parameters, pretrained on diverse Russian speech data using the HuBERT-CTC objective. It is the third generation of the GigaAM family and provides state-of-the-art performance on Russian ASR across a wide range of domains. GigaAM-v3 ..."
+    },
+    {
+      "title": "GitHub - salute-developers/GigaAM: Foundational Model for Speech ...",
+      "url": "https://github.com/salute-developers/GigaAM/",
+      "snippet": "GigaAM is a Conformer -based foundational model (220M–600M parameters) pre-trained on diverse speech data — Russian for the v1 – v3 lines, and 70+ languages for the multilingual line. It serves as the backbone for the entire GigaAM family, enabling state-of-the-art fine-tuned performance in speech recognition and emotion recognition."
+    }
+  ]
+}

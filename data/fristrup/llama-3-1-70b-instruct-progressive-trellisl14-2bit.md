@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes dentro 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fristrup/Llama-3.1-70B-Instruct-Progressive-TrellisL14-2Bit
+- Modelo en Hugging Face: https://huggingface.co/fristrup/Llama-3.1-70B-Instruct-Progressive-TrellisL14-2Bit
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct
 - Articulo tecnico del modelo base (Llama 3 Herd of Models): https://arxiv.org/abs/2407.21783
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo; las busquedas devolvieron unicamente paginas de soporte de Microsoft sin relacion con el contenido.

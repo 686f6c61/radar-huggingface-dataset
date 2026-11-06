@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FrMedQA-CrossLingual-TestRun-AbsQA es un ajuste fino (finetune) del modelo Qwen3-14B en su version cuantizada a 4 bits, publicado por el usuario boods en HuggingFace. El nombre sugiere un experimento sobre un corpus de preguntas y respuestas medicas en frances (FrMedQA) con evaluacion cruzada entre idiomas y respuesta abstractiva (AbsQA), aunque la model card no documenta ni el dataset ni el procedimiento de entrenamiento utilizado. Se trata de un "test run": el repositorio no incluye resultados, ejemplos, ni ninguna metrica de evaluacion.
+FrMedQA-CrossLingual-TestRun-AbsQA es un ajuste fino (finetune) del modelo Qwen3-14B en su version cuantizada a 4 bits, publicado por el usuario boods en Hugging Face. El nombre sugiere un experimento sobre un corpus de preguntas y respuestas medicas en frances (FrMedQA) con evaluacion cruzada entre idiomas y respuesta abstractiva (AbsQA), aunque la model card no documenta ni el dataset ni el procedimiento de entrenamiento utilizado. Se trata de un "test run": el repositorio no incluye resultados, ejemplos, ni ninguna metrica de evaluacion.
 
 Tecnicamente, el modelo hereda las caracteristicas del Qwen3-14B original: una arquitectura transformer densa, con soporte nativo de modo de razonamiento (thinking mode), tool calling y una ventana de contexto de 32.768 tokens ampliable con YaRN. El ajuste se realizo con Unsloth, segun declara el propio autor, lo que implica un entrenamiento con LoRA/QLoRA sobre pesos cuantizados a 4 bits.
 
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones dentro de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boods/FrMedQA-CrossLingual-TestRun-AbsQA
+- Modelo en Hugging Face: https://huggingface.co/boods/FrMedQA-CrossLingual-TestRun-AbsQA
 - Modelo base declarado: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
 - Repositorio de Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante al modelo. Los resultados devueltos correspondian a generadores de codigos QR, sin relacion con este proyecto.

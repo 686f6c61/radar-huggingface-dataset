@@ -81,8 +81,8 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/mindsoulBCI/mindsoul-image
+- Model card en Hugging Face: https://huggingface.co/mindsoulBCI/mindsoul-image
 - Repositorio GitHub del proyecto: https://github.com/pm-kevin-zhang/MindSoul
 - Aplicaciones espaciales, juegos y materiales: https://github.com/pm-kevin-zhang/MindSoul-Spatial
 - Sitio web del equipo: https://MindSoul.cn
-- Licencia (referenciada en la model card): LICENSE dentro del repositorio de HuggingFace
+- Licencia (referenciada en la model card): LICENSE dentro del repositorio de Hugging Face

@@ -44,7 +44,7 @@ No se ha realizado ningun reentrenamiento ni ajuste: el fichero es una copia byt
 - Analisis de expresiones y seguimiento ocular: uso de los landmarks para derivar posiciones de ojos, cejas y boca en estudios de usabilidad o investigación.
 - Videoconferencia con efectos: seguimiento facial para encuadre automatico, desenfoque de fondo condicionado al rostro o avatares.
 - Pipelines de vision en produccion: dependencia estable en entornos donde el bucket de Google no es accesible o se quiere fijar la version del artefacto por hash.
-- Prototipado rapido con MediaPipe Tasks: descarga directa desde HuggingFace para ejemplos y demos sin depender de URLs externas.
+- Prototipado rapido con MediaPipe Tasks: descarga directa desde Hugging Face para ejemplos y demos sin depender de URLs externas.
 - Pruebas de regresion: verificacion de integridad del fichero mediante el hash SHA-256 documentado en entornos CI.
 
 ## Benchmarks y rendimiento
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| autoshade-mirror-mediapipe-face-landmarker | Face landmarker (MediaPipe) | 3,76 MB | no aplica | Apache-2.0 | HuggingFace (espejo) |
+| autoshade-mirror-mediapipe-face-landmarker | Face landmarker (MediaPipe) | 3,76 MB | no aplica | Apache-2.0 | Hugging Face (espejo) |
 | MediaPipe Face Landmarker original (Google) | Face landmarker (MediaPipe) | 3,76 MB | no aplica | Apache-2.0 | Google Cloud Storage |
 | MediaPipe Face Mesh | Face mesh (MediaPipe) | no disponible | no aplica | Apache-2.0 | Google / MediaPipe |
 | Otros detectores faciales (p. ej. dlib, OpenCV) | Deteccion de rostro | variable | no aplica | variable | Repositorios propios |
@@ -83,7 +83,7 @@ La comparativa se limita a la categoria de deteccion facial; no hay modelos de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Azng0/autoshade-mirror-mediapipe-face-landmarker
+- Repositorio en Hugging Face: https://huggingface.co/Azng0/autoshade-mirror-mediapipe-face-landmarker
 - Proyecto AutoShade: https://github.com/skymanbp/autoshade
 - Origen del bundle (Google Cloud Storage): https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task
 - Documentacion de MediaPipe Face Landmarker: no disponible en la informacion proporcionada

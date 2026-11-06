@@ -81,10 +81,10 @@ No hay datos de rendimiento comparativo disponibles. El modelo original de Liqui
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/visible-cx/LFM2.5-VL-3B-CoreAI
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
+- Repositorio Hugging Face: https://huggingface.co/visible-cx/LFM2.5-VL-3B-CoreAI
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - Blog de Liquid AI sobre LFM2.5-VL-3B: https://www.liquid.ai/blog/lfm2-5-vl-3b
-- Blog de HuggingFace sobre LFM2.5-VL-3B: https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b
+- Blog de Hugging Face sobre LFM2.5-VL-3B: https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b
 - Documentación de Liquid para LFM2.5-VL-3B: https://docs.liquid.ai/lfm/models/lfm25-vl-3b
 - README del zoo de modelos Core AI (referencia de LFM2.5-VL): https://github.com/john-rocky/coreai-model-zoo/blob/main/models/lfm2.5-vl/README.md
 - Licencia LFM Open License v1.0: https://huggingface.co/LiquidAI/LFM2.5-VL-3B/blob/main/LICENSE

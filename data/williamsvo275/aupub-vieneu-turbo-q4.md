@@ -69,9 +69,9 @@ El propio autor indica que la diferencia está dentro del ruido de medición. No
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Williamsvo275/aupub-vieneu-turbo-q4 | no disponible | no disponible | 4 bits + int8 dinámico | Apache-2.0 | HuggingFace, 0 descargas |
-| pnnbao-ump/VieNeu-TTS-v3-Turbo (int8 upstream) | no disponible | no disponible | int8 | Apache-2.0 | HuggingFace (modelo base) |
-| pnnbao-ump/VieNeu-TTS-v3-Turbo (fp32) | no disponible | no disponible | fp32 | Apache-2.0 | HuggingFace (grafos en `onnx_update/`) |
+| Williamsvo275/aupub-vieneu-turbo-q4 | no disponible | no disponible | 4 bits + int8 dinámico | Apache-2.0 | Hugging Face, 0 descargas |
+| pnnbao-ump/VieNeu-TTS-v3-Turbo (int8 upstream) | no disponible | no disponible | int8 | Apache-2.0 | Hugging Face (modelo base) |
+| pnnbao-ump/VieNeu-TTS-v3-Turbo (fp32) | no disponible | no disponible | fp32 | Apache-2.0 | Hugging Face (grafos en `onnx_update/`) |
 
 La comparación relevante es con las variantes del propio modelo base: este bundle reduce el fichero de datos de 103.891.968 bytes a 77.266.944 bytes y mantiene una calidad de síntesis equivalente dentro del ruido de medición. No se dispone de datos para comparar con otros sistemas TTS vietnamitas.
 
@@ -88,7 +88,7 @@ La comparación relevante es con las variantes del propio modelo base: este bund
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Williamsvo275/aupub-vieneu-turbo-q4
+- Hugging Face del modelo: https://huggingface.co/Williamsvo275/aupub-vieneu-turbo-q4
 - Modelo base: https://huggingface.co/pnnbao-ump/VieNeu-TTS-v3-Turbo
 - Revisión del modelo base citada: 61b85e3d937fbbacb387714180e8182823512523
 - Script de cuantización: `tool/distill/turbo_quant4.py` en el repositorio Aupub (no se proporciona URL)

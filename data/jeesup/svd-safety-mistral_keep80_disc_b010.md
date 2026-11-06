@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-mistral_keep80_disc_b010` es un checkpoint derivado de `mistralai/Mistral-7B-Instruct-v0.2` comprimido mediante SVD-LLM y publicado por el usuario Jeesup en HuggingFace. La compresion elimina el 19,02 % de los parametros densos, dejando una fraccion resultante de 0,8098 respecto al modelo original, tras lo cual se restauran 6.967 componentes SVD con un presupuesto equivalente al 1,000 % de los parametros densos, seleccionados mediante la regla denominada `disc`. El resultado es un modelo denso de 7.241.732.096 parametros que ocupa 14,5 GB en el repositorio.
+`svd-safety-mistral_keep80_disc_b010` es un checkpoint derivado de `mistralai/Mistral-7B-Instruct-v0.2` comprimido mediante SVD-LLM y publicado por el usuario Jeesup en Hugging Face. La compresion elimina el 19,02 % de los parametros densos, dejando una fraccion resultante de 0,8098 respecto al modelo original, tras lo cual se restauran 6.967 componentes SVD con un presupuesto equivalente al 1,000 % de los parametros densos, seleccionados mediante la regla denominada `disc`. El resultado es un modelo denso de 7.241.732.096 parametros que ocupa 14,5 GB en el repositorio.
 
 El interes del artefacto no es su capacidad conversacional, sino que constituye una celda concreta de una rejilla experimental sobre reglas de seleccion de componentes y presupuestos de restauracion. El autor lo presenta explicitamente como un sujeto de estudio para cuantificar como la compresion SVD degrada el comportamiento de seguridad y que regla de seleccion lo repara mejor. Varias celdas de la rejilla estan deliberadamente degradadas en seguridad respecto al modelo base, por lo que este checkpoint no debe tratarse como un asistente desplegable.
 
@@ -81,10 +81,10 @@ No se han publicado en la informacion disponible resultados comparativos con el 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de seguridad |
 |---|---|---|---|---|---|
-| svd-safety-mistral_keep80_disc_b010 | 7.241.732.096 (0,8098 del denso) | No disponible en la ficha (base: 32.768) | Apache-2.0 | HuggingFace, 0 descargas, 0 likes | AdvBench ASR 0,2673; StrongREJECT ASR 0,2939; over-refusal 0,0742 |
-| mistralai/Mistral-7B-Instruct-v0.2 (base sin comprimir) | No disponible en la informacion proporcionada | 32.768 segun documentacion del modelo base | Apache-2.0 | HuggingFace | No disponible en la informacion proporcionada |
-| mistralai/Mistral-7B-Instruct-v0.3 | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Apache-2.0 | HuggingFace | No disponible en la informacion proporcionada |
-| Otras celdas de la rejilla SVD del mismo autor | No disponible | No disponible | Apache-2.0 | HuggingFace | No disponible |
+| svd-safety-mistral_keep80_disc_b010 | 7.241.732.096 (0,8098 del denso) | No disponible en la ficha (base: 32.768) | Apache-2.0 | Hugging Face, 0 descargas, 0 likes | AdvBench ASR 0,2673; StrongREJECT ASR 0,2939; over-refusal 0,0742 |
+| mistralai/Mistral-7B-Instruct-v0.2 (base sin comprimir) | No disponible en la informacion proporcionada | 32.768 segun documentacion del modelo base | Apache-2.0 | Hugging Face | No disponible en la informacion proporcionada |
+| mistralai/Mistral-7B-Instruct-v0.3 | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Apache-2.0 | Hugging Face | No disponible en la informacion proporcionada |
+| Otras celdas de la rejilla SVD del mismo autor | No disponible | No disponible | Apache-2.0 | Hugging Face | No disponible |
 
 No se dispone de resultados comparativos publicados en la informacion proporcionada para establecer una comparacion cuantitativa fiable con alternativas. La unica comparacion solida que puede hacerse es conceptual: frente al modelo base sin comprimir, esta celda reduce el numero de parametros en un 19,02 % y anade una restauracion del 1,000 %, a cambio de un comportamiento de seguridad medido y documentado por el autor.
 
@@ -101,7 +101,7 @@ No se dispone de resultados comparativos publicados en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mistral_keep80_disc_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mistral_keep80_disc_b010
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Perfil del autor: https://huggingface.co/Jeesup
 - Paper de SVD-LLM (referencia metodologica citada en la model card, enlace no disponible en la informacion proporcionada): no disponible

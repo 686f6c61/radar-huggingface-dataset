@@ -75,8 +75,8 @@ No se han publicado en la informacion disponible comparaciones directas con otro
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| marathi-hindi-bodhan | 7,9 B | no disponible (entrenamiento a 256 tokens) | mr, hi | bodhan-ai-open-model-license | HuggingFace (0 descargas) |
-| bodhan-ai/indic-translate (base) | no disponible | no disponible | indic (multiples) | bodhan-ai-open-model-license | HuggingFace |
+| marathi-hindi-bodhan | 7,9 B | no disponible (entrenamiento a 256 tokens) | mr, hi | bodhan-ai-open-model-license | Hugging Face (0 descargas) |
+| bodhan-ai/indic-translate (base) | no disponible | no disponible | indic (multiples) | bodhan-ai-open-model-license | Hugging Face |
 | Otros sistemas indic | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de los modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparativa de rendimiento cuantitativa.
@@ -94,8 +94,8 @@ No se dispone de datos de benchmarks de los modelos comparables en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/indraneelghosh740/marathi-hindi-bodhan
+- Modelo en Hugging Face: https://huggingface.co/indraneelghosh740/marathi-hindi-bodhan
 - Modelo base: https://huggingface.co/bodhan-ai/indic-translate
-- Licencia del modelo base (referenciada en la model card): `LICENSE.md` e `indic-open-license.md` en el repositorio de HuggingFace
+- Licencia del modelo base (referenciada en la model card): `LICENSE.md` e `indic-open-license.md` en el repositorio de Hugging Face
 - Bodhan AI / AI4Bharat: no se proporciona URL especifica en la informacion disponible
 - Paper, blog o demo: no disponibles en la informacion proporcionada

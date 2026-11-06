@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene cuantizaciones GGUF con imatrix del modelo `HFCK99/Qwen3.8-27B-Uncensored-Cyber`, preparadas por el usuario mradermacher. El nombre sugiere que se trata de una variante "uncensored" de un modelo de la familia Qwen con aproximadamente 27 mil millones de parámetros, aunque el dato de parámetros totales registrado en HuggingFace (3.391.984) resulta inconsistente con esa denominación y probablemente corresponda a un archivo parcial o a un error de metadatos. No se dispone de información oficial sobre la arquitectura, el entrenamiento o las capacidades del modelo base, ya que la model card solo incluye comentarios técnicos sobre el proceso de cuantización (versión, tipo de conversión, lista de quants). El repositorio tiene cero descargas y cero likes, y su tamaño es de 0.0 GB, lo que sugiere que puede estar vacío o que los archivos no se han subido correctamente. En cualquier caso, se trata de un recurso orientado a la inferencia local mediante llama.cpp u Ollama, no a la investigación del modelo original.
+Este repositorio contiene cuantizaciones GGUF con imatrix del modelo `HFCK99/Qwen3.8-27B-Uncensored-Cyber`, preparadas por el usuario mradermacher. El nombre sugiere que se trata de una variante "uncensored" de un modelo de la familia Qwen con aproximadamente 27 mil millones de parámetros, aunque el dato de parámetros totales registrado en Hugging Face (3.391.984) resulta inconsistente con esa denominación y probablemente corresponda a un archivo parcial o a un error de metadatos. No se dispone de información oficial sobre la arquitectura, el entrenamiento o las capacidades del modelo base, ya que la model card solo incluye comentarios técnicos sobre el proceso de cuantización (versión, tipo de conversión, lista de quants). El repositorio tiene cero descargas y cero likes, y su tamaño es de 0.0 GB, lo que sugiere que puede estar vacío o que los archivos no se han subido correctamente. En cualquier caso, se trata de un recurso orientado a la inferencia local mediante llama.cpp u Ollama, no a la investigación del modelo original.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No disponible. No se conocen modelos comparables de la misma categoria (variante
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Cyber-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Cyber-i1-GGUF
 - Repositorio base (referenciado en la model card): https://huggingface.co/HFCK99/Qwen3.8-27B-Uncensored-Cyber
 - Repositorio similar (mradermacher/Qwen3.8-27B-Uncensored-i1-GGUF): https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-i1-GGUF
 - Repositorio GitHub con instrucciones (no oficial): https://github.com/Wassimyounes01/qwen38-uncensored

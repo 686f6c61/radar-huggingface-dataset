@@ -66,7 +66,7 @@ No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion de calidad 
 
 ## Requisitos de hardware
 
-- Peso del checkpoint cuantizado: 415 GB en disco y en memoria, frente a los 510 GB del origen (19% de reduccion). El repositorio de HuggingFace reporta un tamano de 112,1 GB, dato que no cuadra con la cifra del model card y que probablemente corresponde a una carga parcial.
+- Peso del checkpoint cuantizado: 415 GB en disco y en memoria, frente a los 510 GB del origen (19% de reduccion). El repositorio de Hugging Face reporta un tamano de 112,1 GB, dato que no cuadra con la cifra del model card y que probablemente corresponde a una carga parcial.
 - VRAM estimada para inferencia: no disponible de forma oficial; como minimo hay que sumar los 415 GB de pesos mas cache KV y activaciones, lo que en la practica exige varios nodos.
 - GPU recomendadas: el autor indica que el artefacto esta pensado para rigs de 4 a 8 nodos y para nube una vez exista un loader. No se detallan modelos concretos de GPU.
 - GPU de consumo: no cabe. Con 415 GB de pesos, ni una RTX 4090 (24 GB) ni ninguna GPU de consumo actual puede alojarlo.
@@ -94,12 +94,12 @@ No se dispone de alternativas comparables fuera del ecosistema DeepSeek-V4 en la
 - Licencia MIT heredada del modelo origen. Antes de un uso comercial conviene verificar que la licencia del checkpoint base realmente permite ese uso, ya que la herencia se afirma pero no se documenta en detalle.
 - No hay datos de idiomas soportados, contexto, sesgos ni alucinacion. No se puede evaluar ninguno de esos aspectos con la informacion disponible.
 - El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (10 de septiembre de 2026), lo que indica ausencia total de validacion por parte de terceros.
-- La discrepancia entre los 112,1 GB que reporta HuggingFace y los 415 GB que declara el model card debe resolverse antes de planificar cualquier despliegue.
+- La discrepancia entre los 112,1 GB que reporta Hugging Face y los 415 GB que declara el model card debe resolverse antes de planificar cualquier despliegue.
 - La busqueda web no ha devuelto ningun resultado relevante sobre este modelo: los resultados obtenidos corresponden a dominios bancarios sin relacion con el artefacto.
 
 ## Enlaces
 
-- Repositorio HuggingFace del cuantizado: https://huggingface.co/msuiche/DeepSeek-V4.1-Flash-NVFP4
+- Repositorio Hugging Face del cuantizado: https://huggingface.co/msuiche/DeepSeek-V4.1-Flash-NVFP4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Arbol del checkpoint origen en la revision `fb2764a5cf32`: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/tree/fb2764a5cf32
 - Referencia de layout NVFP4: https://huggingface.co/nvidia/DeepSeek-V4-Pro-0813-NVFP4

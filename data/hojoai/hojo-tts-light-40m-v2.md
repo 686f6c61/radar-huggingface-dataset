@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Hojo-TTS-Light-40M-V2 es un modelo de síntesis de voz (text-to-speech) desarrollado por HojoAI y publicado en HuggingFace bajo licencia Apache 2.0. Por su nombre y tamaño (40 millones de parámetros, según la nomenclatura del identificador), se trata de un modelo ligero orientado a la generación de audio a partir de texto, presumiblemente diseñado para entornos con recursos limitados o para inferencia en tiempo real.
+Hojo-TTS-Light-40M-V2 es un modelo de síntesis de voz (text-to-speech) desarrollado por HojoAI y publicado en Hugging Face bajo licencia Apache 2.0. Por su nombre y tamaño (40 millones de parámetros, según la nomenclatura del identificador), se trata de un modelo ligero orientado a la generación de audio a partir de texto, presumiblemente diseñado para entornos con recursos limitados o para inferencia en tiempo real.
 
-La información pública disponible es extremadamente escasa: la model card únicamente declara la licencia Apache 2.0, sin especificar arquitectura, datos de entrenamiento, idiomas soportados, formatos de pesos ni resultados de evaluación. El repositorio registra cero descargas y cero interacciones en el momento de la consulta, y no se ha publicado pipeline asociado en HuggingFace.
+La información pública disponible es extremadamente escasa: la model card únicamente declara la licencia Apache 2.0, sin especificar arquitectura, datos de entrenamiento, idiomas soportados, formatos de pesos ni resultados de evaluación. El repositorio registra cero descargas y cero interacciones en el momento de la consulta, y no se ha publicado pipeline asociado en Hugging Face.
 
 Por tanto, esta ficha recoge los pocos datos verificables (identificador, autor, licencia y fecha de publicación) y marca explícitamente como "no disponible" todo aquello que el autor no ha documentado. Cualquier evaluación de idoneidad para producción debería posponerse hasta que el autor publique especificaciones técnicas y artefactos de inferencia.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Hojo-TTS-Light-40M-V2 | 40M (inferido) | no disponible | Apache 2.0 | HuggingFace, sin descargas registradas |
+| Hojo-TTS-Light-40M-V2 | 40M (inferido) | no disponible | Apache 2.0 | Hugging Face, sin descargas registradas |
 | Piper (voces ligeras) | Variable, del orden de decenas de millones | no aplica | MIT / varias | Amplia, con runtimes ligeros |
 | Coqui TTS (modelos base) | Variable | no aplica | MPL 2.0 / varias | Amplia, con toolkit |
-| Kokoro TTS | ~82M | no aplica | Apache 2.0 | HuggingFace, ampliamente adoptado |
+| Kokoro TTS | ~82M | no aplica | Apache 2.0 | Hugging Face, ampliamente adoptado |
 
 La comparación es orientativa: no se dispone de datos de rendimiento, idiomas ni calidad de audio de Hojo-TTS-Light-40M-V2 que permitan una evaluación objetiva frente a estas alternativas.
 
@@ -74,11 +74,11 @@ La comparación es orientativa: no se dispone de datos de rendimiento, idiomas n
 - Riesgo de alucinación en TTS: posible generación de pronunciaciones incorrectas o artefactos, no evaluado por el autor.
 - Sesgos desconocidos: al no publicarse la composición del corpus, no es posible evaluar sesgos de género, acento o dialecto.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero la ausencia de documentación sobre datos de entrenamiento impide descartar problemas de procedencia de audio.
-- Sin evidencia de uso en producción: cero descargas y cero likes en HuggingFace en la fecha de consulta.
+- Sin evidencia de uso en producción: cero descargas y cero likes en Hugging Face en la fecha de consulta.
 - No se garantiza compatibilidad con frameworks estándar de TTS ni disponibilidad de vocoder asociado.
-- Fecha de creación futura (2026-11-05) según metadatos de HuggingFace, lo que puede indicar un repositorio de prueba o un error de marcado temporal.
+- Fecha de creación futura (2026-11-05) según metadatos de Hugging Face, lo que puede indicar un repositorio de prueba o un error de marcado temporal.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HojoAI/Hojo-TTS-Light-40M-V2
+- Hugging Face: https://huggingface.co/HojoAI/Hojo-TTS-Light-40M-V2
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

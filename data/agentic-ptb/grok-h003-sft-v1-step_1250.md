@@ -67,5 +67,5 @@ No se dispone de datos de rendimiento para comparar con otros modelos de tamaño
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h003.sft-v1.step_1250
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h003.sft-v1.step_1250
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (enlace inferido, no verificado en la información proporcionada)

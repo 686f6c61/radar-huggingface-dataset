@@ -73,7 +73,7 @@ No se han publicado resultados de otros benchmarks en la información disponible
 
 | Modelo | Tipo | Parámetros | Entorno | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `connectailab-rl-martinyooo-v1-lunarlander` | DQN (MLP 8-128-128-4) | 18.180 | LunarLander-v3 | No disponible | HuggingFace, 0 descargas |
+| `connectailab-rl-martinyooo-v1-lunarlander` | DQN (MLP 8-128-128-4) | 18.180 | LunarLander-v3 | No disponible | Hugging Face, 0 descargas |
 | CleanRL DQN (referencia de implementación) | DQN, MLP configurable | No disponible en esta ficha | LunarLander, Atari | MIT (según el proyecto CleanRL) | Repositorio de código, no un checkpoint publicado |
 | Stable-Baselines3 DQN (referencia de librería) | DQN, MLP con arquitectura configurable | No disponible en esta ficha | LunarLander, otros Gymnasium | MIT (según el proyecto SB3) | Librería pip, sin pesos preentrenados para LunarLander |
 | Agentes PPO para LunarLander | PPO, MLP | No disponible en esta ficha | LunarLander | Variable según implementación | Múltiples implementaciones y tutoriales |
@@ -94,7 +94,7 @@ No hay datos públicos de rendimiento de las alternativas incluidos en esta fich
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Martinyooo/connectailab-rl-martinyooo-v1-lunarlander
+- Modelo en Hugging Face: https://huggingface.co/Martinyooo/connectailab-rl-martinyooo-v1-lunarlander
 - Checkpoint de pesos: https://huggingface.co/Martinyooo/connectailab-rl-martinyooo-v1-lunarlander/blob/main/model.pt
 - Vídeo de demostración: https://huggingface.co/Martinyooo/connectailab-rl-martinyooo-v1-lunarlander/blob/main/replay.mp4
 - CONNECT AI LAB (repositorio del programa): https://github.com/wonseokjung/connect-tycoon

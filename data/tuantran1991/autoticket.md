@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`tuantran1991/autoticket` es un repositorio publicado en HuggingFace por el usuario tuantran1991 bajo licencia MIT. Por el nombre del repositorio ("autoticket") y la ausencia de documentación técnica en la model card, todo apunta a un artefacto orientado a la automatización de tickets (probablemente soporte técnico o gestión de incidencias), pero no se dispone de información verificable sobre su naturaleza exacta: no se especifica si contiene pesos de un modelo de lenguaje, un pipeline de clasificación, un conjunto de adaptadores o simplemente código auxiliar.
+`tuantran1991/autoticket` es un repositorio publicado en Hugging Face por el usuario tuantran1991 bajo licencia MIT. Por el nombre del repositorio ("autoticket") y la ausencia de documentación técnica en la model card, todo apunta a un artefacto orientado a la automatización de tickets (probablemente soporte técnico o gestión de incidencias), pero no se dispone de información verificable sobre su naturaleza exacta: no se especifica si contiene pesos de un modelo de lenguaje, un pipeline de clasificación, un conjunto de adaptadores o simplemente código auxiliar.
 
-La model card se limita a declarar la licencia MIT y no incluye descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y no tiene pipeline declarado, lo que impide clasificarlo dentro de las categorías estándar de HuggingFace (text-generation, text-classification, etc.).
+La model card se limita a declarar la licencia MIT y no incluye descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y no tiene pipeline declarado, lo que impide clasificarlo dentro de las categorías estándar de Hugging Face (text-generation, text-classification, etc.).
 
 Dado que la información disponible es mínima, esta ficha se limita a documentar lo que consta de forma explícita y marca como "no disponible" todo aquello que el autor no ha publicado. No debe interpretarse como un modelo listo para producción sin una evaluación previa por parte del equipo que lo vaya a adoptar.
 
@@ -67,9 +67,9 @@ No es posible establecer una comparativa fiable porque se desconocen la categor�
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tuantran1991/autoticket | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
-| Alternativa generica de clasificacion de texto | no disponible | no disponible | variable | HuggingFace |
-| Alternativa generica de LLM pequeno para soporte | no disponible | no disponible | variable | HuggingFace |
+| tuantran1991/autoticket | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
+| Alternativa generica de clasificacion de texto | no disponible | no disponible | variable | Hugging Face |
+| Alternativa generica de LLM pequeno para soporte | no disponible | no disponible | variable | Hugging Face |
 
 No se dispone de datos objetivos para comparar rendimiento, contexto o calidad frente a modelos de la misma categoría.
 
@@ -81,10 +81,10 @@ No se dispone de datos objetivos para comparar rendimiento, contexto o calidad f
 - Limitaciones de contexto e idioma: no documentadas.
 - Licencia MIT: permite uso comercial y modificación, pero el usuario debe verificar que todos los componentes del repositorio (pesos, datos, código de terceros) sean compatibles con dicha licencia.
 - Repositorio sin actividad: 0 descargas y 0 likes en el momento de la consulta, lo que sugiere ausencia de validación por parte de la comunidad.
-- Ausencia de pipeline declarado: HuggingFace no lo clasifica en ninguna tarea, lo que complica su uso directo con `transformers` u otras librerías sin inspección manual.
+- Ausencia de pipeline declarado: Hugging Face no lo clasifica en ninguna tarea, lo que complica su uso directo con `transformers` u otras librerías sin inspección manual.
 - Recomendación: auditar el contenido del repositorio (archivos, tamaños, checksums) antes de descargarlo o ejecutarlo en entornos de producción.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tuantran1991/autoticket
+- Repositorio en Hugging Face: https://huggingface.co/tuantran1991/autoticket
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

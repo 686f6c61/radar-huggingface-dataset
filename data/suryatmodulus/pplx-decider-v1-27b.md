@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pplx-decider-v1-27b es un modelo de decision y clasificacion afinado a partir de Qwen3.8-27B, con 26.085.330.160 parametros y un repositorio de 52,2 GB en safetensors. Aunque la ficha de HuggingFace consultada aparece bajo el autor suryatmodulus, la model card y los ejemplos de uso apuntan al espacio perplexity-ai/pplx-decider-v1-27b, lo que sugiere una publicacion vinculada a Perplexity AI. La licencia declarada es Apache 2.0.
+pplx-decider-v1-27b es un modelo de decision y clasificacion afinado a partir de Qwen3.8-27B, con 26.085.330.160 parametros y un repositorio de 52,2 GB en safetensors. Aunque la ficha de Hugging Face consultada aparece bajo el autor suryatmodulus, la model card y los ejemplos de uso apuntan al espacio perplexity-ai/pplx-decider-v1-27b, lo que sugiere una publicacion vinculada a Perplexity AI. La licencia declarada es Apache 2.0.
 
 El modelo no esta pensado para generar texto libre, sino para emitir decisiones: seleccionar una opcion entre varias con probabilidades calibradas, responder preguntas binarias de si/no, y hacerlo tambien sobre imagenes. La model card lo presenta como un "decision model" evaluado en 11 benchmarks de clasificacion, razonamiento y verificacion factual, con un 85,71 % de media global frente al 74,76 % del Qwen3.8-27B base.
 
@@ -102,7 +102,7 @@ No se dispone de informacion suficiente para comparar con alternativas de clasif
 
 - Sesgos: no se ha publicado ninguna evaluacion de sesgo, toxicidad o fairness en la informacion disponible.
 - Alucinacion: aunque el modelo obtiene un 85,40 % en TruthfulQA binario, se trata de una tarea de clasificacion; no hay garantia de calibracion fuera de la distribucion de los benchmarks evaluados.
-- Ambiguedad de identificacion: la ficha de HuggingFace consultada apunta al autor suryatmodulus, mientras que la model card y los ejemplos de codigo referencian el espacio perplexity-ai. Conviene verificar el origen real del repositorio antes de usarlo en produccion.
+- Ambiguedad de identificacion: la ficha de Hugging Face consultada apunta al autor suryatmodulus, mientras que la model card y los ejemplos de codigo referencian el espacio perplexity-ai. Conviene verificar el origen real del repositorio antes de usarlo en produccion.
 - Numeros de benchmark no reproducibles de forma independiente: las puntuaciones se midieron a traves de la API de Perplexity, no ejecutando los pesos locales, y no se detalla la configuracion de evaluacion.
 - Idiomas: el listado de idiomas soportados no esta disponible, pese a que el modelo se evalua en Belebele. No se debe asumir cobertura multilingue amplia sin verificacion.
 - Contexto: la longitud de contexto no esta declarada, lo que impide dimensionar tareas de documento largo o conversaciones multi-turno extensas.
@@ -113,7 +113,7 @@ No se dispone de informacion suficiente para comparar con alternativas de clasif
 
 ## Enlaces
 
-- Ficha de HuggingFace (suryatmodulus): https://huggingface.co/suryatmodulus/pplx-decider-v1-27b
+- Ficha de Hugging Face (suryatmodulus): https://huggingface.co/suryatmodulus/pplx-decider-v1-27b
 - Repositorio referenciado en la model card: https://huggingface.co/perplexity-ai/pplx-decider-v1-27b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint relacionado de Perplexity: https://huggingface.co/perplexity-ai/pplx-computer-qwen-3-8-27b-dflash2-20260824

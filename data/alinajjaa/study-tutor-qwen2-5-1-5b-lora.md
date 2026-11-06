@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Alinajjaa/study-tutor-qwen2.5-1.5b-lora | 1 500 M (base) + LoRA | 32 768 tokens (base); entrenado a 1 024 | Adaptador LoRA educativo en frances | apache-2.0 | HuggingFace (PEFT) |
-| Qwen/Qwen2.5-1.5B-Instruct | 1 500 M | 32 768 tokens | Modelo base instructivo generalista | apache-2.0 | HuggingFace |
-| Qwen/Qwen2.5-3B-Instruct | 3 000 M | 32 768 tokens | Modelo instructivo generalista de mayor tamano | qwen (uso mayoritariamente libre) | HuggingFace |
-| Adaptadores LoRA educativos genericos | Variable (adaptador sobre base distinto) | Depende del modelo base | Ajuste fino especifico de tarea | Variable | HuggingFace |
+| Alinajjaa/study-tutor-qwen2.5-1.5b-lora | 1 500 M (base) + LoRA | 32 768 tokens (base); entrenado a 1 024 | Adaptador LoRA educativo en frances | apache-2.0 | Hugging Face (PEFT) |
+| Qwen/Qwen2.5-1.5B-Instruct | 1 500 M | 32 768 tokens | Modelo base instructivo generalista | apache-2.0 | Hugging Face |
+| Qwen/Qwen2.5-3B-Instruct | 3 000 M | 32 768 tokens | Modelo instructivo generalista de mayor tamano | qwen (uso mayoritariamente libre) | Hugging Face |
+| Adaptadores LoRA educativos genericos | Variable (adaptador sobre base distinto) | Depende del modelo base | Ajuste fino especifico de tarea | Variable | Hugging Face |
 
 La comparación directa con otros adaptadores LoRA educativos concretos no está disponible, ya que no se han identificado en la información proporcionada. Frente al modelo base Qwen2.5-1.5B-Instruct, este adaptador no supera en conocimiento general, pero sí en el cumplimiento del formato de tutoría y en el anclaje a la fuente y al nivel del estudiante.
 
@@ -82,7 +82,7 @@ La comparación directa con otros adaptadores LoRA educativos concretos no está
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/Alinajjaa/study-tutor-qwen2.5-1.5b-lora
+- Adaptador en Hugging Face: https://huggingface.co/Alinajjaa/study-tutor-qwen2.5-1.5b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Documentacion de Transformers: https://huggingface.co/docs/transformers

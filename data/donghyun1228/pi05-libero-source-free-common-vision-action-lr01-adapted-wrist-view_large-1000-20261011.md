@@ -79,9 +79,9 @@ Tasa global: 241/400 = 60,25 %. Referencia descrita como "source-wrist": 268/400
 
 | Modelo | Parametros | Contexto | LIBERO | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (adapted-wrist view_large) | no disponible (84 tensores hoja) | no disponible | 241/400 (60,25 %) | no disponible | HuggingFace (autor Donghyun1228) |
-| pi05-libero-dense-contact-d2-wrist-kd-yaw10-20261003 | no disponible | no disponible | no disponible | no disponible | HuggingFace (mismo autor) |
-| lerobot/pi05_libero_base | no disponible | no disponible | no disponible | no disponible | HuggingFace (organizacion lerobot) |
+| Este checkpoint (adapted-wrist view_large) | no disponible (84 tensores hoja) | no disponible | 241/400 (60,25 %) | no disponible | Hugging Face (autor Donghyun1228) |
+| pi05-libero-dense-contact-d2-wrist-kd-yaw10-20261003 | no disponible | no disponible | no disponible | no disponible | Hugging Face (mismo autor) |
+| lerobot/pi05_libero_base | no disponible | no disponible | no disponible | no disponible | Hugging Face (organizacion lerobot) |
 | pi05_libero_finetuned | no disponible | no disponible | no disponible | no disponible | Disponible (fine-tuning de 6k pasos en 8x H100) |
 
 La comparacion cuantitativa entre estos modelos no puede establecerse con los datos disponibles, ya que solo este checkpoint publica resultados de LIBERO en la informacion proporcionada.
@@ -99,7 +99,7 @@ La comparacion cuantitativa entre estos modelos no puede establecerse con los da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-source-free-common-vision-action-lr01-adapted-wrist-view_large-1000-20261011
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-source-free-common-vision-action-lr01-adapted-wrist-view_large-1000-20261011
 - Modelo relacionado (dense-contact-d2-wrist-kd-yaw10): https://huggingface.co/Donghyun1228/pi05-libero-dense-contact-d2-wrist-kd-yaw10-20261003
 - Modelo base de la organizacion LeRobot: https://huggingface.co/lerobot/pi05_libero_base
 - Conjunto de caracteristicas de profesor wrist-camera (pi0.5 pre-adapt): https://claru.ai/datasets/donghyun1228-libero-wrist-teacher-cache-20261004

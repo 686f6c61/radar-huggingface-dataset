@@ -109,7 +109,7 @@ No se dispone en la información proporcionada de cifras de WER del modelo base 
 
 ## Enlaces
 
-- Modelo en HuggingFace (este repositorio): https://huggingface.co/onnx-community/Whisper-Hindi2Hinglish-Apex-ONNX
+- Modelo en Hugging Face (este repositorio): https://huggingface.co/onnx-community/Whisper-Hindi2Hinglish-Apex-ONNX
 - Modelo base en PyTorch: https://huggingface.co/Oriserve/Whisper-Hindi2Hinglish-Apex
 - Repositorio GitHub del autor: https://github.com/OriserveAI/Whisper-Hindi2Hinglish
 - Speech-To-Text Arena de Oriserve: https://huggingface.co/spaces/Oriserve/ASR_arena

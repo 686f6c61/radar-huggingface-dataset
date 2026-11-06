@@ -90,7 +90,7 @@ No hay datos públicos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SubMaroon/Kitchoon-V3.1-26B-A4B
+- Modelo en Hugging Face: https://huggingface.co/SubMaroon/Kitchoon-V3.1-26B-A4B
 - Modelo base Kitchoon-V3-26B-A4B: https://huggingface.co/SubMaroon/Kitchoon-V3-26B-A4B
 - Perfil del colaborador y proveedor del dataset (Indexnusrefather): https://huggingface.co/Indexnusrefather
 - Perfil de Tetratype, autor de la base antislop: https://huggingface.co/Tetratype

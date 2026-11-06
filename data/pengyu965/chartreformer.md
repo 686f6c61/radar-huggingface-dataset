@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ChartReformer | 282 M | 512 parches de imagen / 1024 tokens de salida | Edición y de-renderizado de gráficos | MIT | HuggingFace |
-| google/deplot | no disponible en la información | no disponible en la información | De-renderizado de gráficos (imagen a tabla) | no disponible en la información | HuggingFace |
+| ChartReformer | 282 M | 512 parches de imagen / 1024 tokens de salida | Edición y de-renderizado de gráficos | MIT | Hugging Face |
+| google/deplot | no disponible en la información | no disponible en la información | De-renderizado de gráficos (imagen a tabla) | no disponible en la información | Hugging Face |
 | Alternativas de edición de gráficos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ChartReformer se inicializa desde google/deplot y hereda su arquitectura Pix2Struct, pero añade la capacidad de edición guiada por instrucciones, que DePlot no ofrece. No se dispone de información sobre otros modelos comparables de edición de gráficos en la documentación proporcionada.
@@ -82,12 +82,12 @@ ChartReformer se inicializa desde google/deplot y hereda su arquitectura Pix2Str
 - La calidad del resultado depende del replotter determinista de Matplotlib; el JSON predicho debe ser válido y completo para renderizarse correctamente, aunque el artículo reporta una tasa de renderizado del 99,9 %.
 - La entrada se redimensiona a 800×800 con relleno blanco; gráficos con relaciones de aspecto extremas o detalles finos pueden perder información.
 - Licencia MIT: permite uso comercial, pero se recomienda revisar las condiciones de los pesos base de google/deplot de los que deriva.
-- Los pesos publicados corresponden a los checkpoints originales del artículo de 2024, subidos a HuggingFace en octubre de 2026; no se trata de una versión nueva ni de trabajo adicional.
+- Los pesos publicados corresponden a los checkpoints originales del artículo de 2024, subidos a Hugging Face en octubre de 2026; no se trata de una versión nueva ni de trabajo adicional.
 - No se documentan sesgos específicos del modelo en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pengyu965/ChartReformer
+- Modelo en Hugging Face: https://huggingface.co/Pengyu965/ChartReformer
 - Artículo en arXiv: https://arxiv.org/abs/2403.00209
 - Artículo en Springer (ICDAR 2024): https://link.springer.com/chapter/10.1007/978-3-031-70533-5_26
 - Código en GitHub: https://github.com/pengyu965/ChartReformer

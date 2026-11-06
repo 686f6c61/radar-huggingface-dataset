@@ -69,7 +69,7 @@ No disponible. No existe una categoria de modelos comparable, ya que este reposi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kaminski02/paper_007112890_contrastive_learning
+- Repositorio Hugging Face: https://huggingface.co/kaminski02/paper_007112890_contrastive_learning
 - Survey sobre aprendizaje contrastivo (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0925231224014164
 - SimCLR (arXiv): https://arxiv.org/abs/2002.05709
 - Guia sobre aprendizaje contrastivo (Medium): https://medium.com/@juanc.olamendy/contrastive-learning-a-comprehensive-guide-69bf23ca6b77

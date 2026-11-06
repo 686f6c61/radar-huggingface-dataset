@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Villette es una LoRA (adaptador de bajo rango) de generacion de imagenes a partir de texto, publicada por el usuario Smijack en HuggingFace bajo el identificador Smijack/Villette. Se trata de un adaptador de tipo `diffusion-lora` construido sobre el modelo base `black-forest-labs/FLUX.1-dev`, con la palabra de activacion ("trigger word") `Villette`. El repositorio, de 0,1 GB, se distribuye a traves de la libreria `diffusers` y esta pensado para ajustar el estilo o el concepto que el autor ha entrenado sobre FLUX.1-dev.
+Villette es una LoRA (adaptador de bajo rango) de generacion de imagenes a partir de texto, publicada por el usuario Smijack en Hugging Face bajo el identificador Smijack/Villette. Se trata de un adaptador de tipo `diffusion-lora` construido sobre el modelo base `black-forest-labs/FLUX.1-dev`, con la palabra de activacion ("trigger word") `Villette`. El repositorio, de 0,1 GB, se distribuye a traves de la libreria `diffusers` y esta pensado para ajustar el estilo o el concepto que el autor ha entrenado sobre FLUX.1-dev.
 
 El modelo resuelve un problema de personalizacion: en lugar de reentrenar el modelo de difusion completo, la LoRA inyecta un ajuste ligero que permite reproducir un concepto o estetica concreta introduciendo el termino `Villette` en el prompt. Es relevante dentro del ecosistema de fine-tuning de FLUX.1-dev, donde la comunidad publica adaptadores de bajo coste computacional que se pueden combinar con herramientas como ComfyUI (los ejemplos del widget del repositorio son capturas generadas en ComfyUI).
 
@@ -84,7 +84,7 @@ Nota: los datos del modelo base y de las alternativas son caracteristicas public
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Smijack/Villette
+- Hugging Face: https://huggingface.co/Smijack/Villette
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Archivos del repositorio: https://huggingface.co/Smijack/Villette/tree/main
 - Pagina de descarga indicada en la model card: /Smijack/Villette/tree/main

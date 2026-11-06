@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `abubakar9291/qwene` es un repositorio alojado en HuggingFace por el usuario `abubakar9291`, publicado el 1 de septiembre de 2026. La model card asociada únicamente declara la licencia Apache-2.0, sin proporcionar ninguna otra información técnica, descripción, documentación o enlaces. No se dispone de datos sobre arquitectura, tamaño, contexto, capacidades o rendimiento. El nombre del repositorio sugiere una posible relación con la familia de modelos Qwen de Alibaba, pero no existe ninguna evidencia en la información disponible que confirme dicha relación. Se trata, por tanto, de un modelo sin documentar y sin datos verificables, lo que impide cualquier evaluación técnica seria.
+El modelo `abubakar9291/qwene` es un repositorio alojado en Hugging Face por el usuario `abubakar9291`, publicado el 1 de septiembre de 2026. La model card asociada únicamente declara la licencia Apache-2.0, sin proporcionar ninguna otra información técnica, descripción, documentación o enlaces. No se dispone de datos sobre arquitectura, tamaño, contexto, capacidades o rendimiento. El nombre del repositorio sugiere una posible relación con la familia de modelos Qwen de Alibaba, pero no existe ninguna evidencia en la información disponible que confirme dicha relación. Se trata, por tanto, de un modelo sin documentar y sin datos verificables, lo que impide cualquier evaluación técnica seria.
 
 ## Especificaciones tecnicas
 
@@ -51,6 +51,6 @@ No disponible. Al no existir información sobre el modelo, no es posible compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abubakar9291/qwene
+- Repositorio Hugging Face: https://huggingface.co/abubakar9291/qwene
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código, demos) asociados a este modelo específico.

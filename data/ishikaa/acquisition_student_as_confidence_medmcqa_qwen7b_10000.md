@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_student_AS_confidence_medmcqa_qwen7b_10000` es un ajuste fino (fine-tuning) del modelo base Qwen2 de 7.000 millones de parametros, publicado en HuggingFace por el usuario `ishikaa`. La nomenclatura del repositorio sugiere que se trata de un "student" entrenado dentro de un pipeline de aprendizaje activo (active learning) sobre el conjunto de datos MedMCQA, utilizando una estrategia de adquisicion basada en confianza ("AS_confidence"), y con un volumen de entrenamiento asociado al sufijo `10000` (probablemente 10.000 ejemplos, pasos o anotaciones). La model card publicada es la plantilla automatica de HuggingFace y no contiene informacion cumplimentada por el autor, por lo que la mayor parte de los detalles tecnicos no estan documentados.
+El modelo `ishikaa/acquisition_student_AS_confidence_medmcqa_qwen7b_10000` es un ajuste fino (fine-tuning) del modelo base Qwen2 de 7.000 millones de parametros, publicado en Hugging Face por el usuario `ishikaa`. La nomenclatura del repositorio sugiere que se trata de un "student" entrenado dentro de un pipeline de aprendizaje activo (active learning) sobre el conjunto de datos MedMCQA, utilizando una estrategia de adquisicion basada en confianza ("AS_confidence"), y con un volumen de entrenamiento asociado al sufijo `10000` (probablemente 10.000 ejemplos, pasos o anotaciones). La model card publicada es la plantilla automatica de Hugging Face y no contiene informacion cumplimentada por el autor, por lo que la mayor parte de los detalles tecnicos no estan documentados.
 
 El modelo esta etiquetado como `qwen2` y su recuento real de parametros en safetensors es de 7.615.616.512, lo que coincide con la arquitectura densa de Qwen2-7B. Fue entrenado con la libreria TRL mediante SFT (supervised fine-tuning) y se distribuye en formato safetensors compatible con `transformers` y con text-generation-inference. El tamano del repositorio es de 15,2 GB, consistente con pesos en precision bf16/fp16.
 
@@ -28,7 +28,7 @@ Su relevancia es fundamentalmente de investigacion: sirve como artefacto reprodu
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer denso de tipo decoder-only perteneciente a la familia Qwen2, con 7.615.616.512 parametros, lo que corresponde a la configuracion de Qwen2-7B. No se dispone de informacion sobre el numero de capas, dimensiones ocultas, numero de cabezas de atencion ni mecanismos de atencion concretos (por ejemplo, si emplea GQA, RoPE, QKV-bias o atencion con ventana deslizante). El tag `qwen2` de HuggingFace y el recuento de parametros son las unicas evidencias directas.
+La arquitectura es un transformer denso de tipo decoder-only perteneciente a la familia Qwen2, con 7.615.616.512 parametros, lo que corresponde a la configuracion de Qwen2-7B. No se dispone de informacion sobre el numero de capas, dimensiones ocultas, numero de cabezas de atencion ni mecanismos de atencion concretos (por ejemplo, si emplea GQA, RoPE, QKV-bias o atencion con ventana deslizante). El tag `qwen2` de Hugging Face y el recuento de parametros son las unicas evidencias directas.
 
 En cuanto al entrenamiento, la informacion disponible indica unicamente que se uso SFT con TRL sobre un dataset vinculado a MedMCQA y que la estrategia de adquisicion esta basada en confianza (posiblemente seleccionando ejemplos donde el modelo "student" muestra menor confianza). No hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, hiperparametros (learning rate, batch size, precision fp16/bf16/fp8), uso de RLHF/DPO, ni sobre tecnicas de optimizacion de inferencia. Tampoco se documenta si hubo destilacion desde un modelo "teacher", aunque la nomenclatura "acquisition_student" apunta a un esquema de este tipo dentro de un ciclo de aprendizaje activo.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion de 4 bits (GPTQ/AWQ/GGUF Q4): alrededor de 4,5-6 GB.
 - GPU recomendadas: A100 40 GB u 80 GB, H100, L40S o A6000 para fp16 con contexto largo; RTX 4090 / RTX 3090 (24 GB) para fp16 con lotes pequenos.
 - Cabe en GPU de consumo: si, en RTX 4090 o RTX 3090 en bf16 con contexto limitado; en GPUs de 12-16 GB (RTX 4070 Ti, RTX 4080, RTX 4060 Ti 16 GB) solo con cuantizacion de 8 o 4 bits.
-- Opciones de despliegue: `transformers`, text-generation-inference (TGI, declarado compatible), vLLM, llama.cpp/Ollama previa conversion a GGUF, y endpoints compatibles de HuggingFace.
+- Opciones de despliegue: `transformers`, text-generation-inference (TGI, declarado compatible), vLLM, llama.cpp/Ollama previa conversion a GGUF, y endpoints compatibles de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -75,10 +75,10 @@ No se han publicado benchmarks de este modelo, por lo que la comparacion se limi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| acquisition_student_AS_confidence_medmcqa_qwen7b_10000 | 7,6 B | No disponible | No disponible | HuggingFace (0 descargas, 0 likes) |
-| Qwen2-7B (base del ajuste) | 7,6 B | 32.768 tokens (segun documentacion publica de Qwen2) | Apache 2.0 (segun documentacion publica) | HuggingFace |
-| Qwen2.5-7B-Instruct | 7,6 B | 32.768 tokens, extensible (segun documentacion publica) | Apache 2.0 (segun documentacion publica) | HuggingFace |
-| Llama-3.1-8B-Instruct | 8 B | 128.000 tokens (segun documentacion publica) | Licencia comunitaria Llama 3.1 | HuggingFace |
+| acquisition_student_AS_confidence_medmcqa_qwen7b_10000 | 7,6 B | No disponible | No disponible | Hugging Face (0 descargas, 0 likes) |
+| Qwen2-7B (base del ajuste) | 7,6 B | 32.768 tokens (segun documentacion publica de Qwen2) | Apache 2.0 (segun documentacion publica) | Hugging Face |
+| Qwen2.5-7B-Instruct | 7,6 B | 32.768 tokens, extensible (segun documentacion publica) | Apache 2.0 (segun documentacion publica) | Hugging Face |
+| Llama-3.1-8B-Instruct | 8 B | 128.000 tokens (segun documentacion publica) | Licencia comunitaria Llama 3.1 | Hugging Face |
 
 No se dispone de informacion suficiente para comparar rendimiento (exactitud en MedMCQA, MMLU u otras metricas) ni para valorar la calidad del ajuste frente a alternativas medicas especificas.
 
@@ -97,7 +97,7 @@ No se dispone de informacion suficiente para comparar rendimiento (exactitud en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_student_AS_confidence_medmcqa_qwen7b_10000
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_student_AS_confidence_medmcqa_qwen7b_10000
 - TRL (libreria de entrenamiento): https://github.com/huggingface/trl
 - Documentacion de transformers: https://huggingface.co/docs/transformers
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, quantificacion de emisiones): https://arxiv.org/abs/1910.09700

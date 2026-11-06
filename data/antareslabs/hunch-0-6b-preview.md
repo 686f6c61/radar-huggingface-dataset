@@ -83,7 +83,7 @@ En la evaluacion in family, la temperatura de release (T = 0.8706) se ajusta sob
 
 | Modelo | Parametros | Contexto | Calibracion (12 familias, zero-shot) | typed-decisions (zero-shot) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| antareslabs/hunch-0.6b-preview | 596.051.968 | no disponible | 0.8535 | 0.3795 | Apache-2.0 | HuggingFace (research preview) |
+| antareslabs/hunch-0.6b-preview | 596.051.968 | no disponible | 0.8535 | 0.3795 | Apache-2.0 | Hugging Face (research preview) |
 | TypeSafe Jev 1.13 | no disponible | no disponible | 0.8010 | 0.7375 | no disponible | no disponible |
 | Mapika/decider-2b | no disponible (nombre sugiere 2 B) | no disponible | 0.7346 | 0.5895 | no disponible | abierto, segun la model card |
 
@@ -105,7 +105,7 @@ Frente a Jev 1.13 y a Mapika/decider-2b, Hunch 0.6b-preview va por delante en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/antareslabs/hunch-0.6b-preview
+- Modelo en Hugging Face: https://huggingface.co/antareslabs/hunch-0.6b-preview
 - Informe tecnico (PDF): https://antareslabs.org/hunch/hunch-technical-report.pdf
 - Repositorio Hunch: https://github.com/antareslabsorg/hunch
 - README del repositorio: https://github.com/antareslabsorg/hunch/blob/main/README.md

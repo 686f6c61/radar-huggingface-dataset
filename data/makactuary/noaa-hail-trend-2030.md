@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`makactuary/noaa-hail-trend-2030` no es un modelo de lenguaje ni una red neuronal: es un modelo estadístico publicado en HuggingFace que estima la tendencia anual del número de informes de granizo grande (≥ 2 pulgadas) en EE. UU. y proyecta su valor para 2030. Lo desarrolla el usuario `makactuary` como soporte del artículo «Dolu Büyyor, Veri Küçülüyor» del blog Café Poliçe, con código en el repositorio `000MAK/cafepolice-climate-losses` y datos en el dataset `makactuary/noaa-storm-events-hail-1996-2025`.
+`makactuary/noaa-hail-trend-2030` no es un modelo de lenguaje ni una red neuronal: es un modelo estadístico publicado en Hugging Face que estima la tendencia anual del número de informes de granizo grande (≥ 2 pulgadas) en EE. UU. y proyecta su valor para 2030. Lo desarrolla el usuario `makactuary` como soporte del artículo «Dolu Büyyor, Veri Küçülüyor» del blog Café Poliçe, con código en el repositorio `000MAK/cafepolice-climate-losses` y datos en el dataset `makactuary/noaa-storm-events-hail-1996-2025`.
 
 El problema que resuelve es acotado y práctico: dado el recuento anual de reportes NOAA Storm Events entre 1996 y 2025, ajusta un GLM quasi-Poisson con enlace logarítmico, `log λ = a + b·(year − 2010)`, con `a = 6,500` y `b = 0,0247` (error estándar 0,0051), lo que equivale a una tendencia del +2,5 % anual (IC 95 %: 1,5–3,5 %). La proyección a 2030 se obtiene muestreando la pendiente de su distribución y añadiendo ruido binomial negativo.
 
@@ -94,7 +94,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/makactuary/noaa-hail-trend-2030
+- Modelo en Hugging Face: https://huggingface.co/makactuary/noaa-hail-trend-2030
 - Dataset de entrada: https://huggingface.co/datasets/makactuary/noaa-storm-events-hail-1996-2025
 - Código del artículo: https://github.com/000MAK/cafepolice-climate-losses
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo, al artículo o a NOAA; los resultados devueltos eran contenidos de foro sin relación con el tema.

@@ -122,6 +122,6 @@ La ventaja de mindtype-tagger-v1.2 es que con un tamano 10 a 14 veces menor que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mindscend/mindtype-tagger-v1.2
+- Hugging Face: https://huggingface.co/Mindscend/mindtype-tagger-v1.2
 - Sitio del autor: https://mindscendinc.com
 - Otros enlaces (papers, blogs, repos, demos): no disponibles en la informacion proporcionada.

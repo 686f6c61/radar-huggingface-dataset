@@ -81,7 +81,7 @@ No se puede hablar de rendimiento porque no hay datos de benchmarks para este mo
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/localized-ft/Qwen3-8B-school-of-reward-hacks-inoculation-prompting-seed4)
+- [Modelo en Hugging Face](https://huggingface.co/localized-ft/Qwen3-8B-school-of-reward-hacks-inoculation-prompting-seed4)
 - [Modelo base unsloth/Qwen3-8B](https://huggingface.co/unsloth/Qwen3-8B) (referencia)
 - [Repositorio similar de longtermrisk](https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-inoculation-prompting) (otra variante del mismo experimento)
 - [Repositorio de longtermrisk con seed4](https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-inoculation-prompting-seed4/tree/main) (variante con seed4)

@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| umi-toss-cosmos3-nano-aug-v1 (este) | no disponible | no disponible | Compuesto de validación offline 0,344 (PLAN D16) | OpenMDW 1.1 | HuggingFace, 0 descargas, 0 likes |
-| Nirvana-AI/umi-toss-cosmos3-nano-ctrl-v2 (control) | no disponible | no disponible | Compuesto de validación offline 0,235 (PLAN D16) | No disponible en la información proporcionada | HuggingFace |
-| Nirvana-AI/umi-toss-cosmos3-nano-full-sft (receta base) | no disponible | no disponible | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace |
+| umi-toss-cosmos3-nano-aug-v1 (este) | no disponible | no disponible | Compuesto de validación offline 0,344 (PLAN D16) | OpenMDW 1.1 | Hugging Face, 0 descargas, 0 likes |
+| Nirvana-AI/umi-toss-cosmos3-nano-ctrl-v2 (control) | no disponible | no disponible | Compuesto de validación offline 0,235 (PLAN D16) | No disponible en la información proporcionada | Hugging Face |
+| Nirvana-AI/umi-toss-cosmos3-nano-full-sft (receta base) | no disponible | no disponible | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face |
 | Cosmos 3 Nano (NVIDIA, modelo base) | no disponible | no disponible | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada |
 
 La comparación se limita al par de ablación publicado por el mismo autor y al modelo base; no se dispone de datos de otros modelos de política robótica comparables en la información proporcionada.
@@ -90,7 +90,7 @@ La comparación se limita al par de ablación publicado por el mismo autor y al 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nirvana-AI/umi-toss-cosmos3-nano-aug-v1
+- Modelo en Hugging Face: https://huggingface.co/Nirvana-AI/umi-toss-cosmos3-nano-aug-v1
 - Checkpoint base de la receta: https://huggingface.co/Nirvana-AI/umi-toss-cosmos3-nano-full-sft
 - Control sin aumentación: https://huggingface.co/Nirvana-AI/umi-toss-cosmos3-nano-ctrl-v2
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/

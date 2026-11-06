@@ -21,7 +21,7 @@ La relevancia de este modelo reside en su naturaleza abierta y en la capacidad d
 
 ## Arquitectura y entrenamiento
 
-El modelo es un finetune del `unsloth/Olmo-3-7B-Instruct`, que a su vez se basa en la arquitectura OLMo de Allen Institute for AI. La model card indica que fue entrenado con Unsloth y la librería TRL de HuggingFace, lo que sugiere un proceso de SFT (supervised fine-tuning) estándar. No se proporcionan detalles sobre el dataset de entrenamiento, número de tokens, composición ni técnicas como RLHF o DPO.
+El modelo es un finetune del `unsloth/Olmo-3-7B-Instruct`, que a su vez se basa en la arquitectura OLMo de Allen Institute for AI. La model card indica que fue entrenado con Unsloth y la librería TRL de Hugging Face, lo que sugiere un proceso de SFT (supervised fine-tuning) estándar. No se proporcionan detalles sobre el dataset de entrenamiento, número de tokens, composición ni técnicas como RLHF o DPO.
 
 El tamaño del repositorio (14.6 GB) sugiere que contiene los pesos completos del modelo en precisión FP16, consistente con un modelo de ~7B parámetros. No hay información sobre innovaciones técnicas adicionales en el ajuste.
 
@@ -67,7 +67,7 @@ No se dispone de información suficiente para comparar con modelos similares. Se
 
 ## Enlaces
 
-- [HuggingFace: localized-ft/OLMo-3-7B-german-city-names-second-third-v2-sft-seed4-epoch3](https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-second-third-v2-sft-seed4-epoch3)
+- [Hugging Face: localized-ft/OLMo-3-7B-german-city-names-second-third-v2-sft-seed4-epoch3](https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-second-third-v2-sft-seed4-epoch3)
 - [FriendliAI: OLMo-3-7B-german-city-names-v2-sft](https://friendli.ai/models/longtermrisk/OLMo-3-7B-german-city-names-v2-sft)
 - [GitHub: allenai/OLMo-core](https://github.com/allenai/OLMo-core)
 - [GitHub: allenai/OLMo](https://github.com/allenai/OLMo)

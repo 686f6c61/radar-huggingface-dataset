@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`yuanhaiguang/minimax-h3-slim` es una publicacion de pesos alojada en HuggingFace bajo el identificador de un usuario individual (`yuanhaiguang`), no bajo una organizacion oficial de MiniMax. El nombre sugiere una variante "slim" (presumiblemente podada o reducida) de un modelo de la familia MiniMax H3, pero la model card publica unicamente metadatos minimos: licencia `minimax-h3-community-license-agreement`, region `us` y un tamano de repositorio de 101,0 GB. No se declara pipeline, idiomas soportados, arquitectura ni parametros.
+`yuanhaiguang/minimax-h3-slim` es una publicacion de pesos alojada en Hugging Face bajo el identificador de un usuario individual (`yuanhaiguang`), no bajo una organizacion oficial de MiniMax. El nombre sugiere una variante "slim" (presumiblemente podada o reducida) de un modelo de la familia MiniMax H3, pero la model card publica unicamente metadatos minimos: licencia `minimax-h3-community-license-agreement`, region `us` y un tamano de repositorio de 101,0 GB. No se declara pipeline, idiomas soportados, arquitectura ni parametros.
 
-El repositorio esta sujeto a acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos. La licencia referenciada es un acuerdo comunitario propio de MiniMax, no una licencia open source estandar (Apache 2.0, MIT), lo que implica condiciones adicionales de uso que deben revisarse antes de cualquier despliegue comercial.
+El repositorio esta sujeto a acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos. La licencia referenciada es un acuerdo comunitario propio de MiniMax, no una licencia open source estandar (Apache 2.0, MIT), lo que implica condiciones adicionales de uso que deben revisarse antes de cualquier despliegue comercial.
 
 La relevancia de esta ficha es limitada por la ausencia de documentacion tecnica verificable. Los 101 GB de pesos sugieren un modelo de gran tamano (compatible con precisiones de 16 bits en el rango de decenas de miles de millones de parametros, o con cuantizaciones de un modelo mayor), pero cualquier afirmacion sobre arquitectura, contexto o rendimiento seria especulativa y no se incluye aqui.
 
@@ -66,7 +66,7 @@ No disponible. No se dispone de datos de parametros, contexto, rendimiento ni fo
 - Ausencia total de model card tecnica: no hay informacion sobre arquitectura, entrenamiento, datos ni evaluaciones, lo que impide validar el modelo antes de usarlo.
 - Procedencia no oficial: el repositorio pertenece a un usuario individual (`yuanhaiguang`), no a la organizacion oficial de MiniMax, por lo que no hay garantia de que los pesos correspondan a un modelo original o hayan sido modificados.
 - Licencia restrictiva: el `minimax-h3-community-license-agreement` es un acuerdo propio que puede imponer condiciones de uso comercial, atribucion o restricciones adicionales; debe revisarse integramente antes de cualquier despliegue.
-- Acceso gated: requiere aceptar condiciones en HuggingFace, lo que anade friccion a la automatizacion de descargas en pipelines.
+- Acceso gated: requiere aceptar condiciones en Hugging Face, lo que anade friccion a la automatizacion de descargas en pipelines.
 - Riesgo de sesgos y alucinaciones: no evaluable sin documentacion ni benchmarks publicados.
 - Sin senales de adopcion: 0 descargas y 0 likes en el momento de la consulta, lo que reduce la probabilidad de que existan informes independientes de calidad o problemas conocidos.
 - Fecha de creacion futura en los metadatos (2026-11-03): conviene verificar la integridad y autenticidad del repositorio antes de confiar en el.
@@ -74,6 +74,6 @@ No disponible. No se dispone de datos de parametros, contexto, rendimiento ni fo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuanhaiguang/minimax-h3-slim
+- Repositorio en Hugging Face: https://huggingface.co/yuanhaiguang/minimax-h3-slim
 - Licencia referenciada: minimax-h3-community-license-agreement (no se proporciona URL directa en la informacion disponible)
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

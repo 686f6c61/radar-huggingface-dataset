@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qubit-astra-1.0-pro es un modelo publicado en HuggingFace por el usuario oliver123443 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no se han subido pesos ni ficheros de configuración en el momento de la consulta.
+Qubit-astra-1.0-pro es un modelo publicado en Hugging Face por el usuario oliver123443 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no se han subido pesos ni ficheros de configuración en el momento de la consulta.
 
 El modelo se creó el 4 de noviembre de 2026 y se actualizó minutos después, sin que se haya publicado documentación adicional. No cuenta con descargas registradas y solo tiene 1 like, lo que sugiere que se trata de un repositorio recién creado o de un placeholder sin contenido utilizable. No hay pipeline declarado ni idiomas especificados en los metadatos.
 
@@ -76,5 +76,5 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oliver123443/Qubit-astra-1.0-pro
+- Hugging Face: https://huggingface.co/oliver123443/Qubit-astra-1.0-pro
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

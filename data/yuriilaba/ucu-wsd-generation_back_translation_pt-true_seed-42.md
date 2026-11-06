@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuriilaba/ucu-wsd-generation_back_translation_pt-true_seed-42` es un ajuste fino (fine-tuning) de un encoder de frases multilingüe orientado a la desambiguación del sentido de las palabras (word-sense disambiguation, WSD) en ucraniano. Lo publica el usuario yuriilaba en HuggingFace y parte de `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, un encoder de tipo MPNet de 278 millones de parámetros que produce embeddings de frase y de token.
+El modelo `yuriilaba/ucu-wsd-generation_back_translation_pt-true_seed-42` es un ajuste fino (fine-tuning) de un encoder de frases multilingüe orientado a la desambiguación del sentido de las palabras (word-sense disambiguation, WSD) en ucraniano. Lo publica el usuario yuriilaba en Hugging Face y parte de `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, un encoder de tipo MPNet de 278 millones de parámetros que produce embeddings de frase y de token.
 
 El problema que resuelve es concreto: dado un token ambiguo en una oración ucraniana, el modelo debe representar su significado en contexto de forma que sea distinguible del mismo token usado con otro sentido. Para ello se entrenó con tripletas generadas mediante un procedimiento de "generation + back-translation" a partir del fichero `local_datasets/semi_supervised_2/triplets/triplets_generation_translation.csv`, con pooling sobre el token objetivo (`target-token pooling: True`) y semilla 42 tanto en entrenamiento como en la partición de validación.
 
@@ -72,9 +72,9 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros | Contexto | WSD (ucraniano) | STS Pearson | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ucu-wsd-generation_back_translation_pt-true_seed-42 | 278 M | No disponible | 0,9376 | 0,7964 | No disponible | HuggingFace (0 descargas, 0 likes) |
-| `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` (modelo base) | 278 M | 128 tokens | No disponible | No disponible | No disponible en esta busqueda | HuggingFace |
-| Otros encoders multilingues (XLM-R base, LaBSE) | No disponible | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| ucu-wsd-generation_back_translation_pt-true_seed-42 | 278 M | No disponible | 0,9376 | 0,7964 | No disponible | Hugging Face (0 descargas, 0 likes) |
+| `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` (modelo base) | 278 M | 128 tokens | No disponible | No disponible | No disponible en esta busqueda | Hugging Face |
+| Otros encoders multilingues (XLM-R base, LaBSE) | No disponible | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 La busqueda web realizada no devolvio informacion tecnica sobre alternativas de WSD en ucraniano, por lo que no es posible establecer una comparativa cuantitativa fiable. El unico punto de comparacion directo es el modelo base, del que este repositorio hereda arquitectura y tamano y al que anade el ajuste fino en tripletas.
 
@@ -93,7 +93,7 @@ La busqueda web realizada no devolvio informacion tecnica sobre alternativas de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuriilaba/ucu-wsd-generation_back_translation_pt-true_seed-42
+- Hugging Face: https://huggingface.co/yuriilaba/ucu-wsd-generation_back_translation_pt-true_seed-42
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 - Resultados MTEB del autor: `evaluation/mteb_results/` dentro del repositorio (no se ha facilitado URL directa)
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la busqueda web realizada; los resultados devueltos correspondian a contenidos no relacionados con el modelo.

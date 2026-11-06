@@ -67,12 +67,12 @@ No disponible. La información proporcionada no incluye comparaciones con otras 
 - No se especifican los datos de entrenamiento ni el proceso de selección de los mismos, por lo que no es posible evaluar sesgos potenciales del módulo.
 - Al ser un módulo de compresión, las limitaciones del backbone Qwen2.5-VL (sesgos, alucinaciones, idiomas soportados) se mantienen en el sistema completo.
 - La licencia MIT cubre los pesos y el código de CRISPR, pero el backbone Qwen2.5-VL está sujeto a la licencia de Qwen (Apache 2.0 para Qwen2.5-VL, según la documentación oficial de Qwen).
-- No se incluyen scripts de evaluación ni benchmarks reproducibles en el repositorio de HuggingFace; para reproducir resultados es necesario acudir al repositorio de GitHub.
+- No se incluyen scripts de evaluación ni benchmarks reproducibles en el repositorio de Hugging Face; para reproducir resultados es necesario acudir al repositorio de GitHub.
 - El modelo se publicó en agosto de 2026 y no se han reportado usos en producción o adopción por parte de la comunidad, por lo que su robustez en entornos reales aún no está contrastada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rim2000/CRISPR
+- Hugging Face: https://huggingface.co/Rim2000/CRISPR
 - Repositorio de código: https://github.com/ZuyiZhou/CRISPR
 - Paper (DOI): https://doi.org/10.1145/3767308.3835007
 - Backbone Qwen2.5-VL: https://github.com/QwenLM/Qwen2.5-VL

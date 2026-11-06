@@ -2,7 +2,7 @@
 
 ## Resumen
 
-matrixrb/shldntwrk es un modelo de difusion texto-a-imagen publicado en HuggingFace por el usuario matrixrb. El repositorio se distribuye en formato diffusers y declara compatibilidad con la clase StableDiffusionPipeline, lo que lo sitúa en la familia de pipelines de difusion latente habituales para generacion de imagenes a partir de prompts de texto. El modelo cuenta con 859.520.964 parametros segun los metadatos de safetensors y ocupa 2,1 GB en el repositorio.
+matrixrb/shldntwrk es un modelo de difusion texto-a-imagen publicado en Hugging Face por el usuario matrixrb. El repositorio se distribuye en formato diffusers y declara compatibilidad con la clase StableDiffusionPipeline, lo que lo sitúa en la familia de pipelines de difusion latente habituales para generacion de imagenes a partir de prompts de texto. El modelo cuenta con 859.520.964 parametros segun los metadatos de safetensors y ocupa 2,1 GB en el repositorio.
 
 El modelo no incluye informacion de licencia, idiomas soportados, dataset de entrenamiento ni documentacion tecnica en la informacion disponible. Tampoco se han localizado resultados de benchmarks ni publicaciones asociadas. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: los unicos enlaces recuperados corresponden a noticias deportivas sobre el piloto Sebastien Loeb y el Rallye de Marruecos, sin ninguna conexion con inteligencia artificial ni con diffusion models.
 
@@ -33,7 +33,7 @@ No se dispone de informacion sobre el numero de tokens o imagenes de entrenamien
 
 - Generacion de imagenes a partir de prompts de texto (pipeline text-to-image).
 - Integracion con la libreria diffusers, lo que permite su uso en scripts Python y en el ecosistema Diffusers.
-- Compatibilidad declarada con endpoints (tag endpoints_compatible), lo que sugiere que puede desplegarse en Inference Endpoints de HuggingFace.
+- Compatibilidad declarada con endpoints (tag endpoints_compatible), lo que sugiere que puede desplegarse en Inference Endpoints de Hugging Face.
 - Capacidades de edicion de imagen, inpainting, outpainting o img2img: no disponibles / no confirmadas.
 - Soporte de tool calling, function calling o agentes: no aplica (modelo generativo de imagen, no un LLM).
 - Soporte multilingue de prompts: no disponible.
@@ -46,7 +46,7 @@ No se dispone de informacion sobre el numero de tokens o imagenes de entrenamien
 - Estilizado artistico experimental: si el modelo ha sido ajustado sobre un estilo concreto (el nombre "shldntwrk" sugiere un proyecto personal), podria emplearse para explorar variaciones visuales de ese estilo, pendiente de validacion manual.
 - Generacion de bocetos o referencias visuales internas: puede servir como generador rapido de ideas en fases de diseno, sin uso comercial dado que la licencia es desconocida.
 - Investigacion sobre comportamiento de modelos de difusion de ~860M de parametros: util como punto de comparacion en estudios sobre calidad, sesgos o sensibilidad al prompt frente a SD 1.5 u otros modelos similares.
-- Despliegue en HuggingFace Inference Endpoints: el tag endpoints_compatible indica que el modelo esta preparado para este tipo de despliegue gestionado, aunque sin SLA ni garantias de soporte.
+- Despliegue en Hugging Face Inference Endpoints: el tag endpoints_compatible indica que el modelo esta preparado para este tipo de despliegue gestionado, aunque sin SLA ni garantias de soporte.
 - Fine-tuning posterior: podria actuar como modelo base para ajustes con LoRA o Dreambooth, sujeto a la licencia no declarada y a la calidad real del modelo.
 
 ## Benchmarks y rendimiento
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: partiendo de 859,5 millones de parametros, en fp32 los pesos ocupan aproximadamente 3,4 GB y en fp16/bf16 alrededor de 1,7 GB; sumando el VAE y el codificador de texto, el consumo real en inferencia se situa tipicamente entre 3 y 6 GB de VRAM, aunque no hay mediciones confirmadas para este modelo concreto.
 - GPU recomendadas: cualquier GPU moderna con al menos 6-8 GB de VRAM (RTX 3060, RTX 4060, RTX 2080, RTX 3070, RTX 4070). Para lotes grandes o mayor resolucion, se recomienda RTX 4090, A100 o H100.
 - Cabe en GPU de consumo: previsiblemente si, en tarjetas con 6 GB o mas de VRAM, gracias a que el orden de magnitud de parametros es reducido. No confirmado con pruebas reales.
-- Opciones de despliegue: diffusers (Python), HuggingFace Inference Endpoints (tag endpoints_compatible). Compatibilidad con vLLM, llama.cpp, Ollama o TGI: no aplica o no disponible (son herramientas orientadas a modelos de lenguaje, no a pipelines de difusion).
+- Opciones de despliegue: diffusers (Python), Hugging Face Inference Endpoints (tag endpoints_compatible). Compatibilidad con vLLM, llama.cpp, Ollama o TGI: no aplica o no disponible (son herramientas orientadas a modelos de lenguaje, no a pipelines de difusion).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -67,10 +67,10 @@ La comparativa se ofrece a titulo orientativo por categoria (difusion texto-a-im
 
 | Modelo | Parametros | Contexto/resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| matrixrb/shldntwrk | 859,5 M (safetensors) | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
-| Stable Diffusion 1.5 | ~1.000 M (total pipeline) | 512x512 nativa | ampliamente evaluada por la comunidad | CreativeML Open RAIL-M | amplia en HuggingFace |
-| Stable Diffusion 2.1 | ~1.000 M+ | 512x512 / 768x768 | ampliamente evaluada | CreativeML Open RAIL++-M | amplia en HuggingFace |
-| SDXL | ~3.500 M | 1024x1024 nativa | referencia en difusion abierta | CreativeML Open RAIL++-M | amplia en HuggingFace |
+| matrixrb/shldntwrk | 859,5 M (safetensors) | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
+| Stable Diffusion 1.5 | ~1.000 M (total pipeline) | 512x512 nativa | ampliamente evaluada por la comunidad | CreativeML Open RAIL-M | amplia en Hugging Face |
+| Stable Diffusion 2.1 | ~1.000 M+ | 512x512 / 768x768 | ampliamente evaluada | CreativeML Open RAIL++-M | amplia en Hugging Face |
+| SDXL | ~3.500 M | 1024x1024 nativa | referencia en difusion abierta | CreativeML Open RAIL++-M | amplia en Hugging Face |
 
 Los datos de "shldntwrk" proceden exclusivamente de los metadatos del repositorio; no se ha podido confirmar su calidad relativa ni su equivalencia con ninguno de los modelos anteriores.
 
@@ -87,5 +87,5 @@ Los datos de "shldntwrk" proceden exclusivamente de los metadatos del repositori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/matrixrb/shldntwrk
+- Hugging Face: https://huggingface.co/matrixrb/shldntwrk
 - Resultados de busqueda web: no se encontro ningun enlace relevante. Los unicos resultados devueltos correspondian a noticias deportivas sobre el Rallye de Marruecos y Sebastien Loeb, sin relacion con el modelo.

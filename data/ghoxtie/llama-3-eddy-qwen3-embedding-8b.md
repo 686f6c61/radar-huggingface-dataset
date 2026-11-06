@@ -96,7 +96,7 @@ No se han identificado en la informacion disponible adaptadores comparables publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GhoXtie/Llama-3-EDDY-Qwen3-Embedding-8B
+- Modelo en Hugging Face: https://huggingface.co/GhoXtie/Llama-3-EDDY-Qwen3-Embedding-8B
 - Repositorio EDDY en GitHub: https://github.com/Xyri1/EDDY
 - Demo Gradio de EDDY: https://github.com/Xyri1/EDDY/tree/main/demo
 - Informe tecnico de EDDY: https://github.com/Xyri1/EDDY/blob/main/docs/report.md

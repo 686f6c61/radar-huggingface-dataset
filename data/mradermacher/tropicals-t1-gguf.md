@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Tropicals-T1-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Tropicals-T1-GGUF
 - Modelo base: https://huggingface.co/tropicals/Tropicals-T1
 - Dataset de entrenamiento: https://huggingface.co/datasets/tropicals/vernacular-names-zh
 - Página de mradermacher: https://huggingface.co/mradermacher

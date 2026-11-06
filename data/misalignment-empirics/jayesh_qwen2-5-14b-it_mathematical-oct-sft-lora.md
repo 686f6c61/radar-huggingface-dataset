@@ -86,7 +86,7 @@ No se dispone de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna comparación con
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (LoRA `mathematical`, `oct_behaviour`) | Adaptador LoRA sobre modelo denso | 14B (base); adaptador no disponible | 32.768 tokens del base; SFT a 3.072 | No disponible | HuggingFace, 0 descargas, 0 likes |
+| Este artefacto (LoRA `mathematical`, `oct_behaviour`) | Adaptador LoRA sobre modelo denso | 14B (base); adaptador no disponible | 32.768 tokens del base; SFT a 3.072 | No disponible | Hugging Face, 0 descargas, 0 likes |
 | Qwen/Qwen2.5-14B-Instruct | Modelo denso completo | 14B | 32.768 tokens nativos (ampliable con YaRN según documentación de Qwen) | Apache-2.0 según su documentación pública | Ampliamente disponible |
 | Estudiante Qwen2.5-7B citado en el pipeline | Modelo denso completo | 7B | No disponible en esta ficha | Apache-2.0 según su documentación pública | Disponible |
 | GLM-4.5-Air (profesor del dataset) | Modelo de Zhipu AI citado como fuente de datos | No disponible en esta ficha | No disponible | No disponible | Referenciado vía `maius/OpenCharacterTraining-data` |
@@ -108,7 +108,7 @@ No se dispone de comparaciones de rendimiento entre estos modelos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_mathematical-oct-sft-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_mathematical-oct-sft-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Misalignment-Empirics/qwen2.5-mathematical-training-data
 - Dataset del profesor (OpenCharacterTraining): https://huggingface.co/maius/OpenCharacterTraining-data

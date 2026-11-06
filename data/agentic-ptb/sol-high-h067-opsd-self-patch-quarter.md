@@ -64,7 +64,7 @@ No disponible. Al ser un checkpoint intermedio de un proceso de investigación, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h067.opsd-self-patch-quarter
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h067.opsd-self-patch-quarter
 - Paper AgentOPSD: https://arxiv.org/html/2608.05987
 - Repositorio GitHub Agentic-OPSD: https://github.com/EcthelionLiu/Agentic-OPSD
 - Paper Self-Distilled Agentic Reinforcement Learning: https://arxiv.org/abs/2605.15155

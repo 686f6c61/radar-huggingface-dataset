@@ -86,8 +86,8 @@ Metodologia de evaluacion: perplejidad en WikiText-2; ARC-Easy/Challenge, HellaS
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Este modelo (Basis Sharing, keep 0,60) | 8,03 B en disco; 60 % de presupuesto efectivo | No especificado (heredado 8.192 tokens) | llama3 | HuggingFace, 0 descargas | PPL WikiText-2 18,27; ARC-Easy 0,5863; HellaSwag 0,5727; ASR AdvBench 0,0462 |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8 B | 8.192 tokens | llama3 | HuggingFace, ampliamente desplegado | No disponible en la informacion proporcionada |
+| Este modelo (Basis Sharing, keep 0,60) | 8,03 B en disco; 60 % de presupuesto efectivo | No especificado (heredado 8.192 tokens) | llama3 | Hugging Face, 0 descargas | PPL WikiText-2 18,27; ARC-Easy 0,5863; HellaSwag 0,5727; ASR AdvBench 0,0462 |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8 B | 8.192 tokens | llama3 | Hugging Face, ampliamente desplegado | No disponible en la informacion proporcionada |
 | Otras celdas del mismo proyecto Basis Sharing (mismo ratio, sin mezcla de seguridad) | 8,03 B en disco; 60 % | No especificado | llama3 | Referenciadas en la model card, no enlazadas | No disponible en la informacion proporcionada |
 | Otras tecnicas de compresion por bajo rango sobre Llama 3 8B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -109,7 +109,7 @@ La comparacion cuantitativa con el modelo base y con las demas celdas del proyec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-llama3_8b_instruct_up_basis_coeff_jbbsft_finetuned_keep_0p60
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-llama3_8b_instruct_up_basis_coeff_jbbsft_finetuned_keep_0p60
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Codigo de Basis Sharing: https://github.com/TUDa-HWAI/Basis_Sharing
 - Conjunto de recuperacion: https://huggingface.co/datasets/yahma/alpaca-cleaned

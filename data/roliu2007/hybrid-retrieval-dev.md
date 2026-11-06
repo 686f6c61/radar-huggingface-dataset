@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`roliu2007/hybrid-retrieval-dev` es un repositorio experimental publicado por el usuario roliu2007 en HuggingFace. No es un modelo entrenado ni un checkpoint listo para producción: la propia model card lo describe como una implementación funcional ("working implementation") de una arquitectura híbrida orientada a recuperación (retrieval), con código transparente y pruebas de humo (smoke tests) reproducibles. El archivo `model.safetensors` se presenta explícitamente como un checkpoint de inicialización válido para pruebas, no como un modelo entrenado ni evaluado.
+`roliu2007/hybrid-retrieval-dev` es un repositorio experimental publicado por el usuario roliu2007 en Hugging Face. No es un modelo entrenado ni un checkpoint listo para producción: la propia model card lo describe como una implementación funcional ("working implementation") de una arquitectura híbrida orientada a recuperación (retrieval), con código transparente y pruebas de humo (smoke tests) reproducibles. El archivo `model.safetensors` se presenta explícitamente como un checkpoint de inicialización válido para pruebas, no como un modelo entrenado ni evaluado.
 
 El modelo declara una configuración denominada "xlarge" con atención lineal, fusión de tipo concatenación más perceptrón multicapa (concat mlp), activación ReLU y normalización LayerNorm. Sin embargo, el recuento real de parámetros del archivo safetensors es de 24.832 parámetros, una cifra extremadamente reducida que no se corresponde con ninguna escala "xlarge" en términos absolutos. Se trata, por tanto, de un esqueleto de código y arquitectura más que de un modelo con capacidades desplegables.
 
@@ -84,5 +84,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roliu2007/hybrid-retrieval-dev
+- Modelo en Hugging Face: https://huggingface.co/roliu2007/hybrid-retrieval-dev
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la búsqueda web realizada.

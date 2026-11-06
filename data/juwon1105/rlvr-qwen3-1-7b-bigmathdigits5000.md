@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3-1.7B (base) | 1,7B | 32K | Pre-entrenamiento general | Apache 2.0 | HuggingFace |
-| juwon1105/RLVR-qwen3-1.7B-bigmathdigits5000 | 1,7B | no disponible | Fine-tuning con GRPO sobre big-math-digits | no disponible | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32K | Instruct (SFT + RLHF) | Apache 2.0 | HuggingFace |
+| Qwen/Qwen3-1.7B (base) | 1,7B | 32K | Pre-entrenamiento general | Apache 2.0 | Hugging Face |
+| juwon1105/RLVR-qwen3-1.7B-bigmathdigits5000 | 1,7B | no disponible | Fine-tuning con GRPO sobre big-math-digits | no disponible | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32K | Instruct (SFT + RLHF) | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a modelos de tamaño similar. El modelo de `juwon1105` se diferencia por su entrenamiento específico en razonamiento matemático con dígitos grandes, pero carece de documentación sobre su rendimiento real frente a estas alternativas.
 
@@ -74,7 +74,7 @@ La comparativa se limita a modelos de tamaño similar. El modelo de `juwon1105` 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juwon1105/RLVR-qwen3-1.7B-bigmathdigits5000
+- Modelo en Hugging Face: https://huggingface.co/juwon1105/RLVR-qwen3-1.7B-bigmathdigits5000
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset big-math-digits: https://huggingface.co/datasets/mehuldamani/big-math-digits
 - Paper DeepSeekMath (GRPO): https://huggingface.co/papers/2402.03300

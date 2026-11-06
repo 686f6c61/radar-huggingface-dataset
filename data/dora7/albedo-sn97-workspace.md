@@ -74,7 +74,7 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa. El 
 - Repositorio principal: https://huggingface.co/dora7/albedo-sn97-workspace
 - Modelo solo (mismos pesos, v16): https://huggingface.co/dora7/albedo-qwen3.6-35b-v16
 - Bundle anterior v11: https://huggingface.co/0xbidkslj1/albedo-sn97-workspace
-- Perfil del autor en HuggingFace: https://huggingface.co/dora7
+- Perfil del autor en Hugging Face: https://huggingface.co/dora7
 - Página del subnet SN97 en Bittensor: https://bittensor.ai/subnets/97
 - Artículo en tao.media: "The Subnet an AI Agent Built: Inside Distil (SN97)": https://www.tao.media/the-subnet-an-ai-agent-built-inside-distil-sn97/
 - Artículo en tao.media: "Albedo (SN97): The Bittensor Subnet That Gets Stronger Every Time Someone Tries to Game It": https://www.tao.media/albedo-sn97-the-bittensor-subnet-that-gets-stronger-every-time-someone-tries-to-game-it/

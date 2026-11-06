@@ -66,9 +66,9 @@ Mediciones de aceptacion con verificacion de prefijo voraz, siete propuestas, 64
 
 | Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spark-X2.6-4B-INT4-Draftfit-DSpark-HeadOnly | 624.416.001 | no disponible | Borrador especulativo para Spark-X2.6-4B-INT4 | apache-2.0 | HuggingFace, codigo de referencia propio |
+| Spark-X2.6-4B-INT4-Draftfit-DSpark-HeadOnly | 624.416.001 | no disponible | Borrador especulativo para Spark-X2.6-4B-INT4 | apache-2.0 | Hugging Face, codigo de referencia propio |
 | Borrador base de Draftfit (referencia de la tabla) | no disponible | no disponible | Borrador especulativo para el mismo objetivo | no disponible | no disponible |
-| XHToken/Spark-X2.6-4B-INT4 (objetivo) | ~4.000 millones | no disponible | Modelo objetivo cuantizado INT4 | no disponible | HuggingFace |
+| XHToken/Spark-X2.6-4B-INT4 (objetivo) | ~4.000 millones | no disponible | Modelo objetivo cuantizado INT4 | no disponible | Hugging Face |
 
 No se dispone de informacion sobre otros borradores de decodificacion especulativa comparables (por ejemplo, EAGLE o Medusa) en la documentacion proporcionada, por lo que la comparativa se limita al ecosistema Draftfit.
 
@@ -86,6 +86,6 @@ No se dispone de informacion sobre otros borradores de decodificacion especulati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jayyun98/Spark-X2.6-4B-INT4-Draftfit-DSpark-HeadOnly
+- Hugging Face: https://huggingface.co/jayyun98/Spark-X2.6-4B-INT4-Draftfit-DSpark-HeadOnly
 - Modelo objetivo: https://huggingface.co/XHToken/Spark-X2.6-4B-INT4
 - Repositorio Draftfit: https://github.com/JayYun98/Draftfit

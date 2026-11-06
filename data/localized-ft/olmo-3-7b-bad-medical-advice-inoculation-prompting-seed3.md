@@ -68,8 +68,8 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed3)
-- [HuggingFace - variante seed5](https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed5)
+- [Hugging Face - modelo](https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed3)
+- [Hugging Face - variante seed5](https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed5)
 - [FriendliAI - despliegue del modelo](https://friendli.ai/models/longtermrisk/OLMo-3-7B-bad-medical-advice-inoculation-prompting)
 - [FriendliAI - variante second-third](https://friendli.ai/models/localized-ft/OLMo-3-7B-bad-medical-advice-second-third-sft-seed3)
 - [Modelo base unsloth/Olmo-3-7B-Instruct](https://huggingface.co/unsloth/Olmo-3-7B-Instruct) (referencia, no incluido en la búsqueda original)

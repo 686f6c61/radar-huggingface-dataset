@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Se trata de un modelo alojado en HuggingFace por la organización data404, con identificador yndxcompet. La información pública disponible es mínima: únicamente se indica que está bajo licencia MIT y que el repositorio ocupa 1.3 GB. No se ha publicado ninguna descripción técnica, arquitectura, tamaño de parámetros, contexto o capacidades. Por tanto, no es posible evaluar su funcionalidad ni su relevancia para desarrolladores o investigadores. Este registro sirve para documentar su existencia, pero se requiere documentación adicional antes de considerar su uso.
+Se trata de un modelo alojado en Hugging Face por la organización data404, con identificador yndxcompet. La información pública disponible es mínima: únicamente se indica que está bajo licencia MIT y que el repositorio ocupa 1.3 GB. No se ha publicado ninguna descripción técnica, arquitectura, tamaño de parámetros, contexto o capacidades. Por tanto, no es posible evaluar su funcionalidad ni su relevancia para desarrolladores o investigadores. Este registro sirve para documentar su existencia, pero se requiere documentación adicional antes de considerar su uso.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ No hay información disponible sobre la arquitectura, los datos de entrenamiento
 
 - No se pueden proporcionar casos de uso concretos sin conocer las capacidades reales del modelo.
 - Cualquier aplicación práctica requeriría primero una evaluación técnica completa, ya que la documentación disponible no permite determinar si el modelo es apto para tareas de generación, clasificación, análisis o interacción.
-- Se recomienda contactar con el autor o revisar el repositorio en HuggingFace para obtener información adicional antes de plantear su uso en producción.
+- Se recomienda contactar con el autor o revisar el repositorio en Hugging Face para obtener información adicional antes de plantear su uso en producción.
 
 ## Benchmarks y rendimiento
 
@@ -61,4 +61,4 @@ No disponible. No se dispone de información sobre el tamaño, la arquitectura n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/data404/yndxcompet
+- Hugging Face: https://huggingface.co/data404/yndxcompet

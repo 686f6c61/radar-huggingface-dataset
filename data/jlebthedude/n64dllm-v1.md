@@ -87,6 +87,6 @@ No se dispone de otros modelos open source especializados en decompilación N64 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jlebthedude/n64dllm-v1
+- Hugging Face: https://huggingface.co/jlebthedude/n64dllm-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Repositorio del proyecto (mencionado en la model card, no se proporciona URL directa): se indica que incluye un skill file para Codex/OpenCode y un harness de verificación basado en n64-decomp-workbench, pero no se ha encontrado el enlace en la información disponible.

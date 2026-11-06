@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Se trata de un snapshot de archivo publicado en HuggingFace por el usuario morealcholplz bajo el identificador `kt-20261011-nuri_pi05_robottt-a1f2d704`. No es un modelo entrenado ni un artefacto listo para inferencia: la propia model card lo describe como una copia de seguridad de un directorio de trabajo de un servidor de investigacion (`/home/work/mntvol/runs/nuri_pi05_robottt`), que debe restaurarse en esa misma ruta. El contenido incluye checkpoints experimentales, ficheros de configuracion y resultados, ademas de estado de reanudacion (resume state) cuando estaba presente.
+Se trata de un snapshot de archivo publicado en Hugging Face por el usuario morealcholplz bajo el identificador `kt-20261011-nuri_pi05_robottt-a1f2d704`. No es un modelo entrenado ni un artefacto listo para inferencia: la propia model card lo describe como una copia de seguridad de un directorio de trabajo de un servidor de investigacion (`/home/work/mntvol/runs/nuri_pi05_robottt`), que debe restaurarse en esa misma ruta. El contenido incluye checkpoints experimentales, ficheros de configuracion y resultados, ademas de estado de reanudacion (resume state) cuando estaba presente.
 
 El repositorio esta etiquetado con `robotics` y `checkpoint-backup`, y el pipeline declarado es `robotics`, lo que sugiere que el trabajo original pertenece al ambito de la robtica (posiblemente derivado de GR00T y del stack pi/openpi citados en el propio README), pero no se aporta ninguna descripcion funcional del modelo, ni arquitectura, ni resultados de evaluacion. El autor indica explicitamente que no se realizo entrenamiento ni inferencia para generar esta copia.
 
@@ -20,7 +20,7 @@ Por su naturaleza, la relevancia de esta publicacion es de trazabilidad y reprod
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en HuggingFace; el README indica que los derivados de GR00T quedan sujetos a la licencia NVIDIA de solo investigacion/evaluacion, y que pi/openpi y componentes de terceros conservan sus propios terminos |
+| Licencia | no disponible en Hugging Face; el README indica que los derivados de GR00T quedan sujetos a la licencia NVIDIA de solo investigacion/evaluacion, y que pi/openpi y componentes de terceros conservan sus propios terminos |
 | Formato de pesos | no disponible (el repositorio contiene checkpoints y ficheros de configuracion/resultados, ademas de `payload/` y `BACKUP_MANIFEST.json`) |
 
 ## Arquitectura y entrenamiento
@@ -69,7 +69,7 @@ No disponible. No existe informacion sobre la arquitectura ni el rendimiento del
 - No es un modelo listo para inferencia: la propia model card lo califica de snapshot de archivo.
 - Ausencia total de especificaciones: sin arquitectura, parametros, contexto, tokenizador ni idiomas declarados.
 - Sin datos de evaluacion: el autor declina cualquier afirmacion de exito en evaluaciones.
-- Licencia no declarada en HuggingFace; los derivados de GR00T quedan bajo licencia NVIDIA de solo investigacion/evaluacion, lo que en la practica excluye el uso comercial de esos componentes.
+- Licencia no declarada en Hugging Face; los derivados de GR00T quedan bajo licencia NVIDIA de solo investigacion/evaluacion, lo que en la practica excluye el uso comercial de esos componentes.
 - Riesgo de seguridad al cargar checkpoints no verificados: los estados de reanudacion de frameworks de aprendizaje automatico suelen serializarse con pickle u otros formatos que permiten ejecucion de codigo arbitrario. Se desaconseja cargarlos sin auditoria previa y sin `weights_only=True` o formatos seguros como safetensors.
 - Contenido excluido deliberadamente: credenciales, enlaces externos, caches y ficheros opacos de tracking/profiling no estan en el snapshot, por lo que una restauracion puede quedar incompleta funcionalmente.
 - Dependencia de rutas absolutas: el backup esta pensado para restaurarse en `/home/work/mntvol/runs/nuri_pi05_robottt`; otras ubicaciones pueden romper configuraciones con rutas fijas.
@@ -79,7 +79,7 @@ No disponible. No existe informacion sobre la arquitectura ni el rendimiento del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-nuri_pi05_robottt-a1f2d704
+- Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-nuri_pi05_robottt-a1f2d704
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

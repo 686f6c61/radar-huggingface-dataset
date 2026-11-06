@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sage-A1.5-Ablitrex-Quark-MXFP4 es un checkpoint cuantizado del modelo Sage-A1.5 (desarrollado originalmente por InternScience) en su variante "abliterated", es decir, con el comportamiento de rechazo eliminado mediante la técnica de abliteration. El autor de esta conversión es el usuario de HuggingFace mostwanted002, que ha aplicado el formato de cuantización AMD Quark MXFP4 sobre los pesos del modelo abliterated en BF16 (`mostwanted002/Sage-A1.5-Ablitrex-abliterated-BF16`).
+Sage-A1.5-Ablitrex-Quark-MXFP4 es un checkpoint cuantizado del modelo Sage-A1.5 (desarrollado originalmente por InternScience) en su variante "abliterated", es decir, con el comportamiento de rechazo eliminado mediante la técnica de abliteration. El autor de esta conversión es el usuario de Hugging Face mostwanted002, que ha aplicado el formato de cuantización AMD Quark MXFP4 sobre los pesos del modelo abliterated en BF16 (`mostwanted002/Sage-A1.5-Ablitrex-abliterated-BF16`).
 
 El modelo base es un transformer de tipo MoE (según el tag `qwen3_5_moe` y la presencia de router gates y shared experts) con 19.141.183.344 parámetros totales, lo que lo sitúa en la categoría de aproximadamente 19B parámetros. Incluye además un módulo de predicción multi-token (MTP) para decodificación especulativa y una torre de visión, lo que indica capacidades multimodales.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mostwanted002/Sage-A1.5-Ablitrex-Quark-MXFP4
+- Repositorio Hugging Face: https://huggingface.co/mostwanted002/Sage-A1.5-Ablitrex-Quark-MXFP4
 - Modelo base: https://huggingface.co/InternScience/Sage-A1.5
 - Checkpoint BF16 abliterated referenciado: https://huggingface.co/mostwanted002/Sage-A1.5-Ablitrex-abliterated-BF16
 - Fork Radiance de vLLM: https://github.com/magiccodingman/vllm-radiance

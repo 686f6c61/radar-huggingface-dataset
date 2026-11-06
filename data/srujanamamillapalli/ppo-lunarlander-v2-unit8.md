@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppo-LunarLander-v2-unit8` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2 de Gym. Lo publica el usuario srujanamamillapalli en HuggingFace y lleva las etiquetas `deep-rl-course`, `custom-implementation` y `cleanRL` (via `wandb_project_name`), lo que lo sitúa en el material de un curso de deep reinforcement learning y en la estela de la implementación de referencia de CleanRL.
+`ppo-LunarLander-v2-unit8` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2 de Gym. Lo publica el usuario srujanamamillapalli en Hugging Face y lleva las etiquetas `deep-rl-course`, `custom-implementation` y `cleanRL` (via `wandb_project_name`), lo que lo sitúa en el material de un curso de deep reinforcement learning y en la estela de la implementación de referencia de CleanRL.
 
 No es un modelo de lenguaje ni un modelo generativo: es una política entrenada para controlar un módulo de aterrizaje lunar simulado. Por tanto, no tiene parámetros multimillonarios, ni ventana de contexto, ni soporte multilingüe. Su interés es exclusivamente didáctico y como artefacto reproducible dentro de un pipeline de RL.
 
@@ -77,13 +77,13 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo con CUDA, y también en CPU.
 - Opciones de despliegue: no aplican vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje. La ejecución requiere cargar la política con PyTorch y el código de la implementación personal del autor (estilo CleanRL) y hacer `step` sobre el entorno Gym.
 - Latencia y throughput: no disponible. No se documentan métricas de latencia ni de fotogramas por segundo.
-- Restriccion practica: el tamano del repositorio figura como 0.0 GB, por lo que no se puede confirmar que los pesos entrenados estén realmente alojados en HuggingFace.
+- Restriccion practica: el tamano del repositorio figura como 0.0 GB, por lo que no se puede confirmar que los pesos entrenados estén realmente alojados en Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Implementacion | Entorno | Pasos de entrenamiento | Retorno medio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ppo-LunarLander-v2-unit8 | PPO personalizado (estilo CleanRL) | LunarLander-v2 | 50.000 | -182,53 +/- 101,68 | no disponible | HuggingFace |
+| ppo-LunarLander-v2-unit8 | PPO personalizado (estilo CleanRL) | LunarLander-v2 | 50.000 | -182,53 +/- 101,68 | no disponible | Hugging Face |
 | CleanRL PPO (referencia) | PPO de CleanRL | LunarLander-v2 | no disponible en la informacion proporcionada | no disponible | no disponible | Repositorio CleanRL |
 | Stable-Baselines3 PPO (referencia) | PPO de SB3 | LunarLander-v2 | no disponible en la informacion proporcionada | no disponible | no disponible | Repositorio SB3 |
 
@@ -104,6 +104,6 @@ No se dispone de cifras verificables de las implementaciones de referencia en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/srujanamamillapalli/ppo-LunarLander-v2-unit8
+- Hugging Face: https://huggingface.co/srujanamamillapalli/ppo-LunarLander-v2-unit8
 - Repositorio de CleanRL (referencia de la implementación, citada de forma implícita en los hiperparámetros y en el campo `wandb_project_name`): https://github.com/vwxyzjn/cleanrl
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo: los resultados se limitan a páginas genéricas de YouTube y no contienen papers, blogs ni repositorios asociados.

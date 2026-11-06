@@ -4,7 +4,7 @@
 
 Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP es una variante del modelo Qwen3.8-27B de Alibaba, modificada por el equipo HauhauCS para eliminar comportamientos de rechazo y ofrecer respuestas directas sin preámbulos. El modelo base es un LLM denso de 27B parámetros con arquitectura híbrida que combina capas Gated DeltaNet y gated-attention, con soporte nativo multimodal (imagen y video) y una ventana de contexto de 262.144 tokens ampliable hasta 1.000.000.
 
-Esta versión concreta, publicada por el usuario lstari en HuggingFace, es una cuantización GGUF del modelo uncensored que incorpora dos innovaciones técnicas: los cuantizados personalizados K_P ("Perfect") de HauhauCS, que preservan calidad mediante análisis específico del modelo, y el sidecar FastMTP de aceleración por decodificación especulativa, que promete hasta 3,02x de throughput en documentos y 1,93x en razonamiento frente a la versión sin MTP. El modelo mantiene intactas las capacidades de texto, razonamiento, agente, imagen y video del Qwen3.8 original.
+Esta versión concreta, publicada por el usuario lstari en Hugging Face, es una cuantización GGUF del modelo uncensored que incorpora dos innovaciones técnicas: los cuantizados personalizados K_P ("Perfect") de HauhauCS, que preservan calidad mediante análisis específico del modelo, y el sidecar FastMTP de aceleración por decodificación especulativa, que promete hasta 3,02x de throughput en documentos y 1,93x en razonamiento frente a la versión sin MTP. El modelo mantiene intactas las capacidades de texto, razonamiento, agente, imagen y video del Qwen3.8 original.
 
 La relevancia de este lanzamiento radica en combinar un modelo de 27B con contexto ultralargo, capacidades multimodales y una capa de aceleración por decodificación especulativa, todo en formato GGUF listo para ejecutarse en llama.cpp, LM Studio y otros runtimes compatibles. El perfil "Aggressive" elimina por completo el comportamiento de rechazo (0/465 refusals), lo que lo hace adecuado para casos donde se requiere una respuesta directa sin filtros de seguridad.
 
@@ -74,7 +74,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 
 - Modelo sin filtros de seguridad: el perfil Aggressive elimina el comportamiento de rechazo, lo que significa que el modelo puede generar contenido ofensivo, ilegal o peligroso sin restricciones. No es adecuado para aplicaciones orientadas al público general sin una capa de moderación externa.
 - Riesgo de alucinación: como cualquier LLM, puede inventar información, especialmente en contextos largos o temas especializados. La ausencia de entrenamiento de seguridad no mitiga este riesgo.
-- Cuantizaciones K_P: los archivos K_P pueden mostrar "?" en la columna de cuantización de LM Studio, aunque funcionan correctamente. El widget de compatibilidad de HuggingFace puede no reconocer los K_P quants.
+- Cuantizaciones K_P: los archivos K_P pueden mostrar "?" en la columna de cuantización de LM Studio, aunque funcionan correctamente. El widget de compatibilidad de Hugging Face puede no reconocer los K_P quants.
 - Requisitos de VRAM: el modelo completo con proyector de visión y sidecar FastMTP requiere al menos 12 GB de VRAM en la cuantización más baja, y más de 32 GB para la Q8_K_P.
 - Licencia Apache-2.0: permite uso comercial, pero el modelo base Qwen3.8-27B puede tener términos adicionales de Alibaba que conviene revisar.
 - Sin benchmarks publicados: no hay datos objetivos de rendimiento en tareas estándar, lo que dificulta la comparación con otros modelos.
@@ -82,8 +82,8 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace (lstari): https://huggingface.co/lstari/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
-- Repositorio HuggingFace (HauhauCS, original): https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
+- Repositorio Hugging Face (lstari): https://huggingface.co/lstari/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
+- Repositorio Hugging Face (HauhauCS, original): https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Proyecto GitHub de referencia (abliterated): https://github.com/Wassimyounes01/qwen38-uncensored
 - Página de análisis del modelo: https://local-ai-zone.github.io/models/qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp.html

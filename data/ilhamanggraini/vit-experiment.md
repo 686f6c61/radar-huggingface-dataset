@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto / entrada | Entrenado y evaluado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ilhamanggraini/vit-experiment | 24.832 | No disponible | No (solo inicialización) | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| ilhamanggraini/vit-experiment | 24.832 | No disponible | No (solo inicialización) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | ViT-Small (referencias canónicas tipo timm, p. ej. `vit_small_patch16_224`) | ~22 millones | 224x224, 16x16 parches | Sí (ImageNet) | Apache 2.0 en las implementaciones habituales | Amplia |
 | ViT-Base (torchvision / timm, `vit_b_16`) | ~86 millones | 224x224, 16x16 parches | Sí (ImageNet) | BSD-3 / Apache 2.0 según implementación | Amplia |
 
@@ -85,6 +85,6 @@ Nota: las cifras de ViT-Small y ViT-Base corresponden a órdenes de magnitud amp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ilhamanggraini/vit-experiment
+- Repositorio en Hugging Face: https://huggingface.co/ilhamanggraini/vit-experiment
 - Archivos incluidos en el repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog o demo adicionales: no disponibles. La búsqueda web realizada no devolvió resultados relevantes para este modelo.

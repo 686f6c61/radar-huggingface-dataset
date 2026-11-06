@@ -71,11 +71,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-...-step-018 | 4,02 B (denso) | No documentado en este checkpoint (el base declara 262.144 tokens) | Apache 2.0, con nota "Research use only" | HuggingFace, 0 descargas | No disponible |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,02 B (denso) | 262.144 tokens | Apache 2.0 | HuggingFace, ampliamente distribuido | Publicado por el autor del modelo base |
-| Llama-3.1-8B-Instruct | 8 B (denso) | 128.000 tokens | Llama 3.1 Community License | HuggingFace | Publicado por el autor |
-| Gemma-3-4B-it | 4 B (denso) | 128.000 tokens | Terminos de uso de Gemma | HuggingFace | Publicado por el autor |
-| Phi-4-mini-instruct | 3,8 B (denso) | 128.000 tokens | MIT | HuggingFace | Publicado por el autor |
+| HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-...-step-018 | 4,02 B (denso) | No documentado en este checkpoint (el base declara 262.144 tokens) | Apache 2.0, con nota "Research use only" | Hugging Face, 0 descargas | No disponible |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,02 B (denso) | 262.144 tokens | Apache 2.0 | Hugging Face, ampliamente distribuido | Publicado por el autor del modelo base |
+| Llama-3.1-8B-Instruct | 8 B (denso) | 128.000 tokens | Llama 3.1 Community License | Hugging Face | Publicado por el autor |
+| Gemma-3-4B-it | 4 B (denso) | 128.000 tokens | Terminos de uso de Gemma | Hugging Face | Publicado por el autor |
+| Phi-4-mini-instruct | 3,8 B (denso) | 128.000 tokens | MIT | Hugging Face | Publicado por el autor |
 
 La comparacion se limita a parametros, contexto, licencia y disponibilidad: no hay datos de rendimiento de este checkpoint que permitan contrastarlo con las alternativas. Para cualquier evaluacion cuantitativa seria necesario ejecutar los benchmarks sobre el propio modelo.
 
@@ -94,6 +94,6 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad: no h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-018
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-018
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Nota: la busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo (papers, blogs, repositorios o demos). Los resultados obtenidos correspondian a contenidos sin relacion con el proyecto.

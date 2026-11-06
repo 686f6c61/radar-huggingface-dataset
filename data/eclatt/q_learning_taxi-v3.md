@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Q_learning_Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo tabular Q-learning sobre el entorno Taxi-v3 de Gymnasium. Lo publica el usuario eclatt en HuggingFace como parte del ecosistema de modelos de reinforcement learning de la plataforma. No es un modelo de lenguaje: no tiene parametros neuronales, ni tokenizador, ni ventana de contexto, sino una tabla Q (Q-table) que mapea pares estado-accion discretos a valores de accion esperados.
+Q_learning_Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo tabular Q-learning sobre el entorno Taxi-v3 de Gymnasium. Lo publica el usuario eclatt en Hugging Face como parte del ecosistema de modelos de reinforcement learning de la plataforma. No es un modelo de lenguaje: no tiene parametros neuronales, ni tokenizador, ni ventana de contexto, sino una tabla Q (Q-table) que mapea pares estado-accion discretos a valores de accion esperados.
 
 El problema que resuelve es el clasico control de un taxi en una cuadricula discreta: recoger a un pasajero en una de cuatro ubicaciones y dejarlo en su destino, con recompensas negativas por paso y penalizaciones por recogidas o entregas invalidas. Es relevante como referencia reproducible y de coste computacional nulo para validar implementaciones de Q-learning, comparar tecnicas de exploracion (epsilon-greedy, decaimiento) y servir de linea base frente a metodos de deep RL.
 
@@ -20,7 +20,7 @@ El unico resultado declarado por el autor es una recompensa media de 7.56 con de
 | Idiomas soportados | no disponible; no aplica, ya que el agente no procesa lenguaje natural |
 | Licencia | no disponible |
 | Formato de pesos | pickle (`q-learning.pkl`) |
-| Pipeline en HuggingFace | reinforcement-learning |
+| Pipeline en Hugging Face | reinforcement-learning |
 | Entorno objetivo | Taxi-v3 (Gymnasium) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-13 |
@@ -79,7 +79,7 @@ No se dispone de resultados numericos de terceros en la informacion proporcionad
 | Modelo / enfoque | Tipo | Entorno | Parametros | Contexto | Licencia | Resultado declarado |
 |---|---|---|---|---|---|---|
 | eclatt/Q_learning_Taxi-v3 | Q-learning tabular | Taxi-v3 | no disponible (Q-table) | no aplica | no disponible | 7.56 +/- 2.71 (no verificado) |
-| Agente Q-learning estandar de la libreria de HuggingFace | Q-learning tabular | Taxi-v3 | no disponible | no aplica | no disponible | no disponible |
+| Agente Q-learning estandar de la libreria de Hugging Face | Q-learning tabular | Taxi-v3 | no disponible | no aplica | no disponible | no disponible |
 | DQN sobre Taxi-v3 | Deep RL con red neuronal | Taxi-v3 | orden de decenas de miles | no aplica | no disponible | no disponible |
 | SARSA sobre Taxi-v3 | RL tabular on-policy | Taxi-v3 | no disponible | no aplica | no disponible | no disponible |
 
@@ -100,7 +100,7 @@ No se han encontrado en la busqueda web modelos comparables con resultados publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eclatt/Q_learning_Taxi-v3
+- Modelo en Hugging Face: https://huggingface.co/eclatt/Q_learning_Taxi-v3
 - Entorno Taxi-v3 (Gymnasium): no disponible en la informacion proporcionada, aunque el propio nombre del entorno permite localizarlo en la documentacion oficial de Gymnasium.
 - Paper o repositorio de codigo del autor: no disponible.
 - Demo o espacio asociado: no disponible.

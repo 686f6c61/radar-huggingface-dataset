@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Arko_Incode1.0-Full es un modelo publicado en HuggingFace por el usuario Lkonshu bajo el identificador Lkonshu/Arko_Incode1.0-Full. Se trata de un checkpoint de aproximadamente 361,8 millones de parametros (361.821.120 segun los metadatos de safetensors), lo que lo situa en la categoria de modelos pequenos, disenados tipicamente para inferencia en hardware modesto o para tareas acotadas. La etiqueta "llama" del repositorio sugiere que la arquitectura pertenece a la familia Llama, aunque no se ha publicado documentacion que lo confirme.
+Arko_Incode1.0-Full es un modelo publicado en Hugging Face por el usuario Lkonshu bajo el identificador Lkonshu/Arko_Incode1.0-Full. Se trata de un checkpoint de aproximadamente 361,8 millones de parametros (361.821.120 segun los metadatos de safetensors), lo que lo situa en la categoria de modelos pequenos, disenados tipicamente para inferencia en hardware modesto o para tareas acotadas. La etiqueta "llama" del repositorio sugiere que la arquitectura pertenece a la familia Llama, aunque no se ha publicado documentacion que lo confirme.
 
 El modelo se distribuye unicamente en formato safetensors, con un tamano de repositorio de 0,7 GB, coherente con pesos en precision de 16 bits. El sufijo "Full" en el nombre suele indicar un ajuste completo de pesos en lugar de un adaptador LoRA, pero esto es una convencion de nomenclatura y no un dato confirmado por el autor.
 
@@ -79,7 +79,7 @@ La comparativa se limita a parametros y formato, ya que no existen benchmarks pu
 | Modelo | Parametros | Contexto | Licencia | Formato | Benchmarks publicados |
 |---|---|---|---|---|---|
 | Arko_Incode1.0-Full | ~362 M | no disponible | no disponible | safetensors | no disponible |
-| SmolLM2-360M (HuggingFace) | ~362 M | 8.192 tokens | Apache 2.0 | safetensors, GGUF | si |
+| SmolLM2-360M (Hugging Face) | ~362 M | 8.192 tokens | Apache 2.0 | safetensors, GGUF | si |
 | Qwen2.5-0.5B (Alibaba) | ~494 M | 32.768 tokens | Apache 2.0 | safetensors, GGUF | si |
 | TinyLlama-1.1B (categoria similar, mayor tamano) | ~1,1 B | 2.048 tokens | Apache 2.0 | safetensors, GGUF | si |
 
@@ -98,7 +98,7 @@ Las diferencias clave frente a esas alternativas son la ausencia de licencia dec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lkonshu/Arko_Incode1.0-Full
+- Modelo en Hugging Face: https://huggingface.co/Lkonshu/Arko_Incode1.0-Full
 - Repositorio de codigo: no disponible
 - Paper tecnico: no disponible
 - Blog o anuncio: no disponible

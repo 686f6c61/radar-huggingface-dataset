@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador PEFT (library_name: peft) alojado por la organizacion `gradients-io-tournaments`, identificado con un hash de torneo (`tourn_d0dac5b21ce42a6b_20261005-...`). No es un modelo de lenguaje completo, sino un conjunto de pesos de ajuste fino incremental que debe cargarse sobre un modelo base: `gradients-io-tournaments/augmented-fe5759985466c7ca`, el cual no esta descrito en la informacion disponible. El repositorio pesa 1,3 GB y fue creado el 6 de octubre de 2026, con cero descargas y cero likes en el momento de la consulta.
 
-La model card es la plantilla por defecto de HuggingFace sin rellenar: todos los campos de descripcion, autor, licencia, idiomas, datos de entrenamiento, hiperparametros y evaluacion aparecen como `[More Information Needed]`. La unica informacion tecnica verificable es el uso de la libreria PEFT en version 0.15.1, el formato de pesos safetensors y la referencia al modelo base. El tag `arxiv:1910.09700` corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la propia plantilla de la model card, y no a un articulo sobre este modelo.
+La model card es la plantilla por defecto de Hugging Face sin rellenar: todos los campos de descripcion, autor, licencia, idiomas, datos de entrenamiento, hiperparametros y evaluacion aparecen como `[More Information Needed]`. La unica informacion tecnica verificable es el uso de la libreria PEFT en version 0.15.1, el formato de pesos safetensors y la referencia al modelo base. El tag `arxiv:1910.09700` corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la propia plantilla de la model card, y no a un articulo sobre este modelo.
 
 Por tanto, se trata de un artefacto de un pipeline automatizado de torneos de ajuste fino, probablemente un checkpoint intermedio o final de una competicion, sin documentacion asociada. Su relevancia practica es limitada salvo para reproducir el torneo o estudiar adaptadores, y cualquier uso en produccion requeriria antes identificar y validar el modelo base subyacente.
 
@@ -82,7 +82,7 @@ No disponible. No se ha identificado ningun modelo comparable en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_d0dac5b21ce42a6b_20261005-d6fb5bee-d189-45ea-838b-3a536ce0ad8d-5E2fNjMW
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_d0dac5b21ce42a6b_20261005-d6fb5bee-d189-45ea-838b-3a536ce0ad8d-5E2fNjMW
 - Modelo base referenciado: https://huggingface.co/gradients-io-tournaments/augmented-fe5759985466c7ca
 - Articulo citado en el tag `arxiv:1910.09700` (corresponde a Lacoste et al., 2019, sobre emisiones de carbono, no a este modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla de la model card: https://mlco2.github.io/impact#compute

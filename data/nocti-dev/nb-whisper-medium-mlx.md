@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nocti-Dev/nb-whisper-medium-mlx
+- Repositorio Hugging Face: https://huggingface.co/Nocti-Dev/nb-whisper-medium-mlx
 - Modelo base: https://huggingface.co/NbAiLab/nb-whisper-medium
 - Commit del modelo base: https://huggingface.co/NbAiLab/nb-whisper-medium/tree/0ed074d5985bd56ca4140159a9dbffbc3fb5117e
 - Librería MLX: no disponible en la información proporcionada

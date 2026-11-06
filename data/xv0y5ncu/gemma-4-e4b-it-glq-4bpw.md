@@ -61,7 +61,7 @@ No se han publicado resultados adicionales de benchmarks estándar (MMLU complet
 - VRAM estimada para inferencia: alrededor de 8 GB con cuantización 4 bpw (el tamaño del checkpoint es de 6.14 GB, más el overhead de activaciones y KV cache; la web de Gemma 4 E4B indica un mínimo de 8 GB de VRAM).
 - GPU recomendadas: RTX 4090, RTX 4080, A100, H100, RTX PRO 6000 Blackwell (la prueba de KV cache se realizó en una RTX PRO 6000 Blackwell con vLLM).
 - Compatibilidad con GPU de consumo: sí, cabe en tarjetas con 8 GB de VRAM o más, como la RTX 3060 Ti, RTX 3070, etc., dependiendo del contexto y del modo de pensamiento.
-- Opciones de despliegue: vLLM (con soporte de compresión de KV cache), llama.cpp (no mencionado explícitamente, pero formato GGUF no presente; el checkpoint es safetensors), HuggingFace transformers con el paquete `glq`, y Ollama (no documentado en la información).
+- Opciones de despliegue: vLLM (con soporte de compresión de KV cache), llama.cpp (no mencionado explícitamente, pero formato GGUF no presente; el checkpoint es safetensors), Hugging Face transformers con el paquete `glq`, y Ollama (no documentado en la información).
 - Latencia y throughput: no disponible en la información proporcionada; el kernel CUDA JIT-compila en el primer uso (~30 segundos) y requiere CUDA 12.x.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ La comparativa con otros modelos de la misma categoría (p.ej., Qwen2.5-4B, Llam
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/xv0y5ncu/Gemma-4-E4B-it-GLQ-4bpw
+- Checkpoint en Hugging Face: https://huggingface.co/xv0y5ncu/Gemma-4-E4B-it-GLQ-4bpw
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio GLQ: https://github.com/cnygaard/glq
 - Página de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

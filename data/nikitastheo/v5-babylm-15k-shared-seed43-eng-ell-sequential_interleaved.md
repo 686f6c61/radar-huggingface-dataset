@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nikitastheo/v5-babylm-15k-shared-seed43-eng-ell-sequential_interleaved` es un modelo de lenguaje causal de tipo GPT-2 publicado por el usuario nikitastheo en HuggingFace. Cuenta con 108.550.656 parametros (aproximadamente 108,55 M) y esta etiquetado con las tags `transformers`, `safetensors`, `gpt2`, `text-generation` y `causal-lm`, ademas de ser compatible con text-generation-inference y endpoints. Se trata, por tanto, de un modelo pequeno, de escala de investigacion, no de un modelo de proposito general orientado a produccion.
+El modelo `nikitastheo/v5-babylm-15k-shared-seed43-eng-ell-sequential_interleaved` es un modelo de lenguaje causal de tipo GPT-2 publicado por el usuario nikitastheo en Hugging Face. Cuenta con 108.550.656 parametros (aproximadamente 108,55 M) y esta etiquetado con las tags `transformers`, `safetensors`, `gpt2`, `text-generation` y `causal-lm`, ademas de ser compatible con text-generation-inference y endpoints. Se trata, por tanto, de un modelo pequeno, de escala de investigacion, no de un modelo de proposito general orientado a produccion.
 
 La model card es minima: indica que fue entrenado con `train_clm.py`, un script de entrenamiento de causal-LM basado en Hugging Face Accelerate (sin usar la clase `Trainer`), con una configuracion base `model_configs/gpt_base_config.json` y un tokenizador especifico (`nikitastheo/babylm-15k-eng-seed43-tokenizer`). El entrenamiento se realizo durante 27.240 pasos con learning rate 1e-4, scheduler lineal, 2.724 pasos de warmup y batch size total de 32. El campo "language switch epoch" esta fijado en 10, lo que sugiere un entrenamiento en dos fases sobre dos idiomas.
 
@@ -34,10 +34,10 @@ No se documenta ninguna innovacion tecnica adicional (atencion lineal, decodific
 
 ## Capacidades
 
-- Generacion de texto causal autoregresiva, tarea para la que esta etiquetado en HuggingFace.
+- Generacion de texto causal autoregresiva, tarea para la que esta etiquetado en Hugging Face.
 - Modelado de lenguaje a pequena escala, apto para experimentos controlados mas que para aplicaciones de usuario final.
 - Capacidad potencial de manejo de dos idiomas (ingles y griego) segun el identificador del checkpoint, sin confirmacion documental.
-- Compatibilidad con `text-generation-inference` y con la infraestructura de endpoints de HuggingFace, segun las tags declaradas.
+- Compatibilidad con `text-generation-inference` y con la infraestructura de endpoints de Hugging Face, segun las tags declaradas.
 - No hay evidencia de soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito.
 - No se declaran capacidades multilingues mas alla de las inferidas del nombre del checkpoint.
 
@@ -89,6 +89,6 @@ No hay resultados de evaluacion de este modelo, por lo que la comparacion se lim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikitastheo/v5-babylm-15k-shared-seed43-eng-ell-sequential_interleaved
+- Modelo en Hugging Face: https://huggingface.co/nikitastheo/v5-babylm-15k-shared-seed43-eng-ell-sequential_interleaved
 - Tokenizador asociado: https://huggingface.co/nikitastheo/babylm-15k-eng-seed43-tokenizer
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante al modelo, al paper o al repositorio de codigo; los resultados devueltos corresponden a consultas sin relacion con el modelo.

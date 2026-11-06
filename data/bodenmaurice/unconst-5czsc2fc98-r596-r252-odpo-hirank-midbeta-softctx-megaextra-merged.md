@@ -34,7 +34,7 @@ Los hiperparámetros clave incluyen LoRA con r=64 y α=128, β=0.1 (MidBeta), lr
 - Capacidades multimodales (image-text-to-text) según las etiquetas del modelo.
 - Generación de texto conversacional (pipeline text-generation).
 - No es un modelo de chat general: su uso previsto es exclusivamente como submission de minería.
-- Compatible con el ecosistema transformers y endpoints de HuggingFace.
+- Compatible con el ecosistema transformers y endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -87,7 +87,7 @@ No se dispone de información suficiente sobre otros modelos comparables fuera d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bodenmaurice/unconst-5czsc2fc98-r596-r252-odpo-hirank-midbeta-softctx-megaextra-merged
+- Modelo en Hugging Face: https://huggingface.co/bodenmaurice/unconst-5czsc2fc98-r596-r252-odpo-hirank-midbeta-softctx-megaextra-merged
 - Modelo base: https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged
 - Modelo relacionado: https://huggingface.co/unconst/Affine-5czsc2fc98-h32-merged
 

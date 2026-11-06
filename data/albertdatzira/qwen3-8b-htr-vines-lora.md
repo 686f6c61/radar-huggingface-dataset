@@ -82,10 +82,10 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | CER en el corpus Viñes | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-8b-htr-vines-lora (+ fallback) | 8B base, 43,6M entrenables | No especificado (base: 32.768 tokens) | 7,80 % | MIT | HuggingFace (adaptador PEFT) |
-| Llama 3.1 70B sin ajuste | 70B | 128.000 tokens (modelo base) | 21,20 % | Licencia comunitaria de Meta | HuggingFace |
+| qwen3-8b-htr-vines-lora (+ fallback) | 8B base, 43,6M entrenables | No especificado (base: 32.768 tokens) | 7,80 % | MIT | Hugging Face (adaptador PEFT) |
+| Llama 3.1 70B sin ajuste | 70B | 128.000 tokens (modelo base) | 21,20 % | Licencia comunitaria de Meta | Hugging Face |
 | HTR Balakirev (Kraken/eScriptorium) sin corrección | No disponible (modelo HTR, no LLM) | No aplica | 10,86 % | No disponible en la información proporcionada | No disponible en la información proporcionada |
-| Qwen3-8B sin ajuste | 8B | 32.768 tokens (131.072 con YaRN) | No disponible | Apache 2.0 (modelo base) | HuggingFace |
+| Qwen3-8B sin ajuste | 8B | 32.768 tokens (131.072 con YaRN) | No disponible | Apache 2.0 (modelo base) | Hugging Face |
 
 La comparación directa con otras soluciones de corrección de HTR no puede establecerse con los datos disponibles: la model card solo contrasta contra el HTR crudo y contra Llama 3.1 70B sin ajuste. No hay información sobre adaptadores equivalentes para otros corpus.
 
@@ -104,10 +104,10 @@ La comparación directa con otras soluciones de corrección de HTR no puede esta
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/albertdatzira/qwen3-8b-htr-vines-lora
+- Adaptador en Hugging Face: https://huggingface.co/albertdatzira/qwen3-8b-htr-vines-lora
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio del pipeline de corrección: https://github.com/albeertito7/vines-htr-correction
 - Repositorio de datos de entrenamiento RV-training: https://github.com/esthersole/RV-training
 - Cita académica: Pérez Datsira, Albert. "Fine-tuning Large Language Models for HTR Post-correction: A Case Study on the Ramon Viñes Manuscript Diaries". Tesis de máster, Universitat de Lleida, 2026.
 
-Nota: la búsqueda web realizada no ha devuelto ningún resultado relevante sobre este modelo; los enlaces listados proceden exclusivamente de la información de HuggingFace y de la model card.
+Nota: la búsqueda web realizada no ha devuelto ningún resultado relevante sobre este modelo; los enlaces listados proceden exclusivamente de la información de Hugging Face y de la model card.

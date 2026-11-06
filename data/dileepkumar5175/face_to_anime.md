@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dileepkumar5175/face_to_anime` es un repositorio publicado en HuggingFace por el usuario dileepkumar5175, con licencia MIT y un tamaño de 0,3 GB. Por el nombre, parece orientado a la conversión de rostros humanos a estilo anime, una tarea habitual en modelos de transferencia de estilo como AnimeGANv2 o StyleGAN. Sin embargo, la model card no contiene ninguna descripción técnica, ni instrucciones de uso, ni ejemplos, ni información sobre arquitectura, entrenamiento o capacidades. El repositorio tiene cero descargas y cero likes, lo que sugiere que es un proyecto reciente o sin difusión.
+El modelo `dileepkumar5175/face_to_anime` es un repositorio publicado en Hugging Face por el usuario dileepkumar5175, con licencia MIT y un tamaño de 0,3 GB. Por el nombre, parece orientado a la conversión de rostros humanos a estilo anime, una tarea habitual en modelos de transferencia de estilo como AnimeGANv2 o StyleGAN. Sin embargo, la model card no contiene ninguna descripción técnica, ni instrucciones de uso, ni ejemplos, ni información sobre arquitectura, entrenamiento o capacidades. El repositorio tiene cero descargas y cero likes, lo que sugiere que es un proyecto reciente o sin difusión.
 
 La relevancia de este modelo es, por ahora, limitada: sin documentación ni benchmarks, no es posible evaluar su calidad ni su utilidad práctica. Los desarrolladores que busquen una solución fiable para conversión de fotos a anime deberían considerar alternativas bien documentadas como AnimeGANv2 o herramientas comerciales. Este repositorio podría ser un experimento personal o un trabajo en progreso, pero carece de los elementos mínimos para ser utilizado en producción.
 
@@ -60,5 +60,5 @@ No se dispone de información suficiente para establecer una comparativa. Existe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dileepkumar5175/face_to_anime
+- Repositorio en Hugging Face: https://huggingface.co/dileepkumar5175/face_to_anime
 - No se han encontrado papers, blogs, demos o repositorios adicionales asociados a este modelo.

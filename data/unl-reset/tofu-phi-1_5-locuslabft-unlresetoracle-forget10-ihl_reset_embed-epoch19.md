@@ -6,7 +6,7 @@ El modelo `unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_e
 
 La receta combina dos mecanismos: por un lado, reinicializa los *input embeddings* y la *LM head* a partir del modelo original `microsoft/phi-1_5`, y por otro aplica una perdida de tipo IHL (*Inverted Harness Loss*) sobre el conjunto a olvidar sumada a una entropia cruzada estandar con peso 1,0 sobre el conjunto a retener. El resultado es un modelo completo y autonomo (no un adaptador LoRA) que conserva los pesos del transformer del modelo base ajustado.
 
-Es relevante porque los checkpoints de *unlearning* verificables son escasos y este permite reproducir y auditar el comportamiento de Phi-1.5 (1.400 millones de parametros, contexto de 2048 tokens) bajo un ataque de olvido concreto. No obstante, es un artefacto de investigacion: cero descargas, cero *likes* y sin *pipeline* declarado en HuggingFace en el momento de redactar esta ficha.
+Es relevante porque los checkpoints de *unlearning* verificables son escasos y este permite reproducir y auditar el comportamiento de Phi-1.5 (1.400 millones de parametros, contexto de 2048 tokens) bajo un ataque de olvido concreto. No obstante, es un artefacto de investigacion: cero descargas, cero *likes* y sin *pipeline* declarado en Hugging Face en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ La comparacion relevante es contra `locuslab/tofu_ft_phi-1.5`, del que hereda to
 
 ## Limitaciones y advertencias
 
-- Modelo de investigacion sin uso en produccion documentado: cero descargas y cero *likes* en HuggingFace en el momento de la ficha.
+- Modelo de investigacion sin uso en produccion documentado: cero descargas y cero *likes* en Hugging Face en el momento de la ficha.
 - Entrenado exclusivamente en ingles; no se garantiza un comportamiento correcto en castellano ni en otros idiomas.
 - Riesgo de alucinacion alto, heredado de Phi-1.5, especialmente en tareas de conocimiento factual.
 - El proceso de olvido puede no ser robusto: la literatura sobre TOFU muestra que el conocimiento "olvidado" puede recuperarse mediante *prompting* adversarial o ajuste fino posterior.
@@ -85,7 +85,7 @@ La comparacion relevante es contra `locuslab/tofu_ft_phi-1.5`, del que hereda to
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_embed-epoch19
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_embed-epoch19
 - Modelo base ajustado: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

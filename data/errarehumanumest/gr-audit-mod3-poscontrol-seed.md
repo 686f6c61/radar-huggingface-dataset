@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gr-audit-mod3-poscontrol-seed` es un ajuste fino (fine-tuning) del modelo base [Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B), desarrollado por el usuario de HuggingFace `ErrareHumanumEst`. Se entrenó mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace, como se indica en la model card. El nombre sugiere una posible aplicación en tareas de auditoría y control posterior (poscontrol), aunque no se proporciona ninguna descripción explícita del propósito o del dataset utilizado.
+El modelo `gr-audit-mod3-poscontrol-seed` es un ajuste fino (fine-tuning) del modelo base [Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B), desarrollado por el usuario de Hugging Face `ErrareHumanumEst`. Se entrenó mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face, como se indica en la model card. El nombre sugiere una posible aplicación en tareas de auditoría y control posterior (poscontrol), aunque no se proporciona ninguna descripción explícita del propósito o del dataset utilizado.
 
 La relevancia de este modelo radica en que parte de una arquitectura compacta de 1.700 millones de parámetros, lo que lo hace adecuado para entornos con recursos limitados. Sin embargo, la ausencia de documentación detallada sobre el proceso de entrenamiento, los datos empleados y las capacidades específicas limita su evaluación objetiva. No se dispone de información sobre licencia, idiomas soportados o longitud de contexto, más allá de lo heredado del modelo base.
 
@@ -57,6 +57,6 @@ No se dispone de comparativas con otros modelos de la misma categoría. Al ser u
 
 ## Enlaces
 
-- [HuggingFace - ErrareHumanumEst/gr-audit-mod3-poscontrol-seed](https://huggingface.co/ErrareHumanumEst/gr-audit-mod3-poscontrol-seed)
+- [Hugging Face - ErrareHumanumEst/gr-audit-mod3-poscontrol-seed](https://huggingface.co/ErrareHumanumEst/gr-audit-mod3-poscontrol-seed)
 - [Modelo base Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)
 - [TRL (Transformers Reinforcement Learning)](https://github.com/huggingface/trl)

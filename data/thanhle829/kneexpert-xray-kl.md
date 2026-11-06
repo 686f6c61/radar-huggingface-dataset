@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KneeXpert es una familia de cinco clasificadores de imagen entrenados para la gradación automática de osteoartritis de rodilla según la escala Kellgren-Lawrence (KL0-KL4) en radiografías. El modelo lo publica el autor thanhle829 en HuggingFace como parte del proyecto de fin de grado KneeXpert de la Universidad Ton Duc Thang. Cada uno de los cinco clasificadores parte de pesos preentrenados en ImageNet y se afina con la misma receta de entrenamiento, de modo que puedan compararse directamente entre sí.
+KneeXpert es una familia de cinco clasificadores de imagen entrenados para la gradación automática de osteoartritis de rodilla según la escala Kellgren-Lawrence (KL0-KL4) en radiografías. El modelo lo publica el autor thanhle829 en Hugging Face como parte del proyecto de fin de grado KneeXpert de la Universidad Ton Duc Thang. Cada uno de los cinco clasificadores parte de pesos preentrenados en ImageNet y se afina con la misma receta de entrenamiento, de modo que puedan compararse directamente entre sí.
 
 El repositorio contiene cinco arquitecturas distintas: DenseNet-201, ResNet-50, EfficientNet-B3, ConvNeXt-Tiny y Swin-Tiny. Todos operan sobre recortes de rodilla en escala de grises de 224x224 píxeles y devuelven una distribución de probabilidad sobre cinco clases (KL0 a KL4). El mejor resultado lo obtiene Swin-Tiny, con una accuracy de test del 0,700 y un QWK (quadratic weighted kappa) de 0,859.
 
@@ -115,7 +115,7 @@ No se dispone de información sobre otros modelos públicos de gradación Kellgr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thanhle829/kneexpert-xray-kl
+- Hugging Face: https://huggingface.co/thanhle829/kneexpert-xray-kl
 - Dataset de origen (Kaggle, Knee Osteoarthritis Dataset with Severity Grading): no disponible como enlace directo en la información proporcionada
 - Términos de uso de datos de la OAI: no disponible como enlace directo en la información proporcionada
 - Repositorio o paper del proyecto KneeXpert: no disponible en la información proporcionada

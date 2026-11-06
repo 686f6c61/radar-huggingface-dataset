@@ -6,7 +6,7 @@ Hy-Nomas-TPU es un port a Google Cloud TPU del modelo mundial de vídeo abierto 
 
 La relevancia del proyecto reside en su enfoque de eficiencia: el pipeline completo cabe en un único chip TPU v6e de 32 GB con el modelo principal cuantizado, y el port incluye kernels propios que superan al JAX estándar en el mismo chip, además de una caché de compilación XLA distribuida para reducir drásticamente el tiempo de arranque. El modelo genera vídeo a 1280x704 píxeles y 24 fps.
 
-La información pública disponible es limitada: la model card se centra en métricas de rendimiento y despliegue en TPU, no en la arquitectura interna ni en los datos de entrenamiento del modelo base. Esta ficha refleja únicamente lo que consta en la documentación del autor y en los metadatos de HuggingFace.
+La información pública disponible es limitada: la model card se centra en métricas de rendimiento y despliegue en TPU, no en la arquitectura interna ni en los datos de entrenamiento del modelo base. Esta ficha refleja únicamente lo que consta en la documentación del autor y en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -84,8 +84,8 @@ No se han publicado resultados de benchmarks de calidad del modelo (tipo FVD, MM
 
 | Modelo | Tipo | Parametros | Contexto | Hardware objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Hy-Nomas-TPU (este) | Modelo mundial de video, port a TPU | no disponible | no disponible | TPU v6e (32 GB una chip; comando en v6e-4) | apache-2.0 | HuggingFace, `mashbox` 0.1.10 |
-| tencent/Hy-Nomas | Modelo mundial de video original | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| Hy-Nomas-TPU (este) | Modelo mundial de video, port a TPU | no disponible | no disponible | TPU v6e (32 GB una chip; comando en v6e-4) | apache-2.0 | Hugging Face, `mashbox` 0.1.10 |
+| tencent/Hy-Nomas | Modelo mundial de video original | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de otros modelos de video comparables en la informacion proporcionada; la unica comparacion documentada es frente al propio modelo base y frente al JAX estandar en el mismo chip.
@@ -103,7 +103,7 @@ No se dispone de datos de otros modelos de video comparables en la informacion p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mashbox-labs/Hy-Nomas-TPU
+- Repositorio Hugging Face: https://huggingface.co/mashbox-labs/Hy-Nomas-TPU
 - Modelo base: https://huggingface.co/tencent/Hy-Nomas
 - Paquete en PyPI: https://pypi.org/project/mashbox/0.1.10/
 - Repositorio GitHub: https://github.com/mashbox-labs/mashbox

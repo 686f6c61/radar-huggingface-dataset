@@ -73,9 +73,9 @@ No se han publicado resultados comparativos frente a otros modelos (MMLU, HumanE
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dnebh/anlp-a2-part1-config2_moe_top1 | 33,4 M (20,8 M activos) | vi→en, ja→en | no disponible | no disponible | HuggingFace |
-| orangebreak/anlp-a2-part1-moe-30M | ~30 M | vi→en, ja→en | no disponible | no disponible | HuggingFace |
-| siddarthg44/anlp-a2-p1-moe_shared | no disponible | vi→en, ja→en | no disponible | no disponible | HuggingFace |
+| dnebh/anlp-a2-part1-config2_moe_top1 | 33,4 M (20,8 M activos) | vi→en, ja→en | no disponible | no disponible | Hugging Face |
+| orangebreak/anlp-a2-part1-moe-30M | ~30 M | vi→en, ja→en | no disponible | no disponible | Hugging Face |
+| siddarthg44/anlp-a2-p1-moe_shared | no disponible | vi→en, ja→en | no disponible | no disponible | Hugging Face |
 
 Los tres modelos pertenecen al mismo trabajo academico (Task 1 de Advanced NLP Assignment 2) y comparten el mismo presupuesto de 30.000.128 tokens segun la descripcion del modelo de `orangebreak`, ligeramente distinto al presupuesto de 39.234.273 tokens reportado por este modelo. Las diferencias concretas de rendimiento entre ellos no estan disponibles en la informacion proporcionada.
 
@@ -93,7 +93,7 @@ Los tres modelos pertenecen al mismo trabajo academico (Task 1 de Advanced NLP A
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dnebh/anlp-a2-part1-config2_moe_top1
+- Hugging Face: https://huggingface.co/dnebh/anlp-a2-part1-config2_moe_top1
 - Run de Weights & Biases: https://wandb.ai/dnebhrajani-v/anlp-a2-part1/runs/ktd6gw7m
 - Modelo comparable (orangebreak, mismo trabajo): https://huggingface.co/orangebreak/anlp-a2-part1-moe-30M
 - Modelo comparable (siddarthg44, mismo trabajo): https://huggingface.co/siddarthg44/anlp-a2-p1-moe_shared

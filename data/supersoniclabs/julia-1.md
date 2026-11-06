@@ -93,8 +93,8 @@ Notas de protocolo: la suite tipada usa 400 casos de prueba del dataset `typed-d
 
 | Modelo | Parametros | Contexto | Interfaz | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Julia 1 | 144,3M | Hasta 8.192 tokens combinados (benchmarks a 1.024) | `state` + `question` + 2–20 `options` → una opción | Apache 2.0 | HuggingFace (`SupersonicLabs/Julia-1`) |
-| mmBERT-small (modelo base) | ~140M | Hasta 8.192 tokens según arquitectura | Representaciones de encoder / masked-token modeling | No disponible | HuggingFace (`jhu-clsp/mmBERT-small`) |
+| Julia 1 | 144,3M | Hasta 8.192 tokens combinados (benchmarks a 1.024) | `state` + `question` + 2–20 `options` → una opción | Apache 2.0 | Hugging Face (`SupersonicLabs/Julia-1`) |
+| mmBERT-small (modelo base) | ~140M | Hasta 8.192 tokens según arquitectura | Representaciones de encoder / masked-token modeling | No disponible | Hugging Face (`jhu-clsp/mmBERT-small`) |
 | Referencia Jev | No disponible | No disponible | No disponible | No disponible | Solo citada como referencia de comparación en la model card |
 
 No se dispone de datos suficientes para comparar Julia 1 con otros modelos de decisión o enrutado de la misma categoría. Las búsquedas web realizadas no devolvieron alternativas relevantes: los resultados correspondían al lenguaje de programación Julia y a su ecosistema de machine learning (Flux, JuliaHub), sin relación con este modelo.
@@ -114,7 +114,7 @@ No se dispone de datos suficientes para comparar Julia 1 con otros modelos de de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SupersonicLabs/Julia-1
+- Modelo en Hugging Face: https://huggingface.co/SupersonicLabs/Julia-1
 - Modelo base mmBERT-small: https://huggingface.co/jhu-clsp/mmBERT-small
 - Dataset `typed-decisions` usado en la suite tipada: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - Dataset `BTZSC` usado en los pilotos de clasificación: https://huggingface.co/datasets/btzsc/btzsc

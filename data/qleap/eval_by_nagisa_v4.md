@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `qleap/Eval_by_NAGISA_V4`, publicado por el usuario qleap, es un artefacto alojado en HuggingFace que, por su denominacion ("Eval") y por la existencia de un repositorio hermano de datos (`qleap/Training_dataset_by_NAGISA_V4`), parece corresponder a un conjunto de evaluacion o a los resultados de una evaluacion asociada a un pipeline de entrenamiento, y no a un modelo de lenguaje con pesos publicados. La model card publicada no contiene mas que la declaracion de licencia MIT: no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso.
+El repositorio `qleap/Eval_by_NAGISA_V4`, publicado por el usuario qleap, es un artefacto alojado en Hugging Face que, por su denominacion ("Eval") y por la existencia de un repositorio hermano de datos (`qleap/Training_dataset_by_NAGISA_V4`), parece corresponder a un conjunto de evaluacion o a los resultados de una evaluacion asociada a un pipeline de entrenamiento, y no a un modelo de lenguaje con pesos publicados. La model card publicada no contiene mas que la declaracion de licencia MIT: no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso.
 
 El repositorio no declara pipeline, idiomas soportados ni formato de pesos, y en el momento de la consulta acumula 0 descargas y 0 "likes", por lo que no existe comunidad de usuarios ni validacion externa documentada. Se creo y se actualizo el 25 de septiembre de 2026, con un intervalo de un segundo entre ambos eventos, lo que sugiere una subida automatizada o de prueba.
 
@@ -41,7 +41,7 @@ El nombre del repositorio sugiere que se trata de un artefacto de evaluacion ("E
 - Trazabilidad de experimentos: al existir un dataset de entrenamiento hermano, podria servir para vincular una version concreta de datos con los resultados de evaluacion correspondientes dentro de un registro experimental.
 - Versionado de recursos (v4): util como punto de control en una secuencia de iteraciones NAGISA, comparando versiones sucesivas si se dispone de las anteriores.
 - Verificacion de licencia en entornos corporativos: al declarar licencia MIT, el contenido podria reutilizarse en proyectos propietarios, previa comprobacion de que los ficheros incluidos son efectivamente originales del autor.
-- Docencia y formacion: como ejemplo de repositorio minimo en HuggingFace para ilustrar el ciclo de publicacion de artefactos, dado que su model card es practicamente vacia.
+- Docencia y formacion: como ejemplo de repositorio minimo en Hugging Face para ilustrar el ciclo de publicacion de artefactos, dado que su model card es practicamente vacia.
 - No se recomienda su uso como modelo de inferencia en produccion, atencion al cliente, generacion de codigo ni ninguna tarea de generacion, al no existir evidencia de que contenga un modelo funcional.
 - No se recomienda su uso como benchmark de referencia publico, ya que no se documentan metricas, tareas ni comparativas.
 
@@ -76,7 +76,7 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qleap/Eval_by_NAGISA_V4
+- Repositorio en Hugging Face: https://huggingface.co/qleap/Eval_by_NAGISA_V4
 - Dataset hermano del mismo autor: https://huggingface.co/datasets/qleap/Training_dataset_by_NAGISA_V4
 - Arbol de ficheros del dataset hermano: https://huggingface.co/datasets/qleap/Training_dataset_by_NAGISA_V4/tree/main
 - Sitio de la organizacion QLEAP.AI: https://qleap.ai/

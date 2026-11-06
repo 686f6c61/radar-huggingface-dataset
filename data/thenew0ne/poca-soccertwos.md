@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`poca-SoccerTwos` es un agente entrenado con aprendizaje por refuerzo profundo (deep reinforcement learning) para el entorno `SoccerTwos` de Unity ML-Agents. Lo publica el usuario `TheNew0ne` en HuggingFace y emplea el algoritmo POCA (Policy Optimization with Clipped Advantages), una variante de PPO orientada a entornos multijugador competitivos y cooperativos. El modelo no es un modelo de lenguaje: es una politica neuronal que controla agentes dentro de una simulacion de futbol 2 contra 2.
+`poca-SoccerTwos` es un agente entrenado con aprendizaje por refuerzo profundo (deep reinforcement learning) para el entorno `SoccerTwos` de Unity ML-Agents. Lo publica el usuario `TheNew0ne` en Hugging Face y emplea el algoritmo POCA (Policy Optimization with Clipped Advantages), una variante de PPO orientada a entornos multijugador competitivos y cooperativos. El modelo no es un modelo de lenguaje: es una politica neuronal que controla agentes dentro de una simulacion de futbol 2 contra 2.
 
-El repositorio es de tipo `ml-agents` y contiene los artefactos de entrenamiento exportados en formato `.nn` y `.onnx`, junto con los ficheros de TensorBoard asociados al proceso de entrenamiento. El tamano del repositorio es de 0.0 GB, lo que sugiere que los pesos son ligeros y no se han subido checkpoints intermedios de gran tamano. El pipeline declarado en HuggingFace es `reinforcement-learning`.
+El repositorio es de tipo `ml-agents` y contiene los artefactos de entrenamiento exportados en formato `.nn` y `.onnx`, junto con los ficheros de TensorBoard asociados al proceso de entrenamiento. El tamano del repositorio es de 0.0 GB, lo que sugiere que los pesos son ligeros y no se han subido checkpoints intermedios de gran tamano. El pipeline declarado en Hugging Face es `reinforcement-learning`.
 
 La relevancia de esta ficha es acotada: se trata de un artefacto de investigacion y experimentacion en RL, no de un modelo de proposito general. No hay model card extendida, no se declara licencia y no se publican resultados de evaluacion. Cualquier uso en produccion requeriria validar el comportamiento del agente en el entorno Unity ML-Agents y verificar los terminos de uso del propio entorno y de la libreria.
 
@@ -41,9 +41,9 @@ No se documentan capacidades de generacion de texto, razonamiento simbolico, cod
 ## Casos de uso
 
 - Investigacion en RL multiagente: usar el agente como baseline o punto de partida para estudiar POCA frente a PPO en `SoccerTwos`, comparando curvas de recompensa en TensorBoard.
-- Docencia y tutoriales de ML-Agents: el agente sirve como ejemplo ejecutable del flujo completo de entrenamiento, exportacion e inferencia descrito en los tutoriales oficiales de HuggingFace.
+- Docencia y tutoriales de ML-Agents: el agente sirve como ejemplo ejecutable del flujo completo de entrenamiento, exportacion e inferencia descrito en los tutoriales oficiales de Hugging Face.
 - Evaluacion de algoritmos de self-play: cargar el agente como oponente fijo mientras se entrena una politica nueva, para medir la mejora relativa contra un rival preentrenado.
-- Demostraciones interactivas en navegador: el visor de HuggingFace permite ejecutar el `.nn` o `.onnx` directamente y observar el comportamiento del agente sin instalar Unity.
+- Demostraciones interactivas en navegador: el visor de Hugging Face permite ejecutar el `.nn` o `.onnx` directamente y observar el comportamiento del agente sin instalar Unity.
 - Pruebas de integracion de ONNX Runtime: usar el `.onnx` exportado para validar pipelines de inferencia en Python o C# fuera del ecosistema ML-Agents.
 - Benchmarking de infraestructura de entrenamiento: reanudar el entrenamiento con `--resume` para medir throughput y escalado en distintas GPUs o configuraciones de ML-Agents.
 
@@ -56,16 +56,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: muy baja; al tratarse de una politica ligera de ML-Agents, cabe en cualquier GPU consumer con 4 GB o menos, e incluso puede ejecutarse en CPU.
 - GPU recomendadas para inferencia: no requiere GPU dedicada; cualquier iGPU o CPU moderna es suficiente. Para entrenamiento se recomienda al menos una RTX 3060 o superior.
 - Cabe en GPU consumer: si, en practicamente cualquier modelo (GTX 1050, RTX 2060, RTX 4090, etc.).
-- Opciones de despliegue: Unity ML-Agents (formato `.nn`), ONNX Runtime (formato `.onnx`), visor web de HuggingFace para ML-Agents.
+- Opciones de despliegue: Unity ML-Agents (formato `.nn`), ONNX Runtime (formato `.onnx`), visor web de Hugging Face para ML-Agents.
 - Latencia y throughput estimados: no disponibles; dependen del hardware y del numero de agentes simulados simultaneamente.
 
 ## Comparativa con modelos similares
 
 | Modelo | Entorno | Algoritmo | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `TheNew0ne/poca-SoccerTwos` | SoccerTwos | POCA | `.nn`, `.onnx` | no disponible | HuggingFace |
-| Agentes oficiales de Unity en `huggingface.co/unity` | SoccerTwos y otros | PPO / POCA | `.nn`, `.onnx` | segun repositorio | HuggingFace |
-| Modelos de la unidad 5 del curso Deep RL de HuggingFace | SoccerTwos | PPO | `.nn` | segun repositorio | HuggingFace |
+| `TheNew0ne/poca-SoccerTwos` | SoccerTwos | POCA | `.nn`, `.onnx` | no disponible | Hugging Face |
+| Agentes oficiales de Unity en `huggingface.co/unity` | SoccerTwos y otros | PPO / POCA | `.nn`, `.onnx` | segun repositorio | Hugging Face |
+| Modelos de la unidad 5 del curso Deep RL de Hugging Face | SoccerTwos | PPO | `.nn` | segun repositorio | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada.
 
@@ -82,9 +82,9 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheNew0ne/poca-SoccerTwos
+- Modelo en Hugging Face: https://huggingface.co/TheNew0ne/poca-SoccerTwos
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Documentacion de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
-- Tutorial corto de HuggingFace (Huggy the Dog): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
+- Tutorial corto de Hugging Face (Huggy the Dog): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo de ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Visor de agentes ML-Agents en HuggingFace: https://huggingface.co/unity
+- Visor de agentes ML-Agents en Hugging Face: https://huggingface.co/unity

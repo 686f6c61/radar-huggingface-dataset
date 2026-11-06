@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo de lenguaje, sino una política robótica de imitación entrenada con la librería LeRobot de HuggingFace. Se trata de un checkpoint de ACT (Action Chunking with Transformers), el método descrito en el paper arXiv:2304.13705, que predice secuencias cortas de acciones ("chunks") en lugar de un único paso de control. El autor del repositorio es el usuario dorisjlee y el modelo se distribuye con licencia apache-2.0.
+Este repositorio no contiene un modelo de lenguaje, sino una política robótica de imitación entrenada con la librería LeRobot de Hugging Face. Se trata de un checkpoint de ACT (Action Chunking with Transformers), el método descrito en el paper arXiv:2304.13705, que predice secuencias cortas de acciones ("chunks") en lugar de un único paso de control. El autor del repositorio es el usuario dorisjlee y el modelo se distribuye con licencia apache-2.0.
 
 La política consume el estado articular de un robot seguidor SO (`observation.state`, vector de 6 dimensiones) junto con dos flujos de vídeo (`observation.images.front` a 3x480x640 y `observation.images.overhead` a 3x720x1280) y produce un vector de acción de 6 dimensiones. El modelo tiene 17.958.406 parámetros reales (según los pesos safetensors) y un tamaño de repositorio de 0,1 GB, lo que lo sitúa en el rango de los modelos ligeros desplegables en hardware de consumo o incluso en una Jetson.
 
@@ -32,7 +32,7 @@ Su relevancia es acotada y experimental: se entrenó sobre el dataset dorisjlee/
 | Tasa de aprendizaje | 1e-05 |
 | Semilla | 1000 |
 | Versión de LeRobot | 0.5.2 |
-| Fecha de creación del repo | 2026-10-03 (según metadatos de HuggingFace) |
+| Fecha de creación del repo | 2026-10-03 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -84,10 +84,10 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 
 | Modelo | Categoría | Parámetros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (ACT v2 de dorisjlee) | Política de imitación ACT para robot SO | 17.958.406 | apache-2.0 | HuggingFace, 0 descargas, sin evaluación publicada |
+| Este modelo (ACT v2 de dorisjlee) | Política de imitación ACT para robot SO | 17.958.406 | apache-2.0 | Hugging Face, 0 descargas, sin evaluación publicada |
 | ACT original (Zhao et al., 2023) | Método de imitación con transformer y action chunking | no disponible | no disponible en la información proporcionada | Paper en arXiv:2304.13705 |
 | Diffusion Policy | Política de imitación generativa basada en difusión | no disponible | no disponible en la información proporcionada | Implementación disponible en LeRobot |
-| SmolVLA / otros VLA de HuggingFace | Modelos visión-lenguaje-acción | no disponible | no disponible en la información proporcionada | Ecosistema LeRobot |
+| SmolVLA / otros VLA de Hugging Face | Modelos visión-lenguaje-acción | no disponible | no disponible en la información proporcionada | Ecosistema LeRobot |
 | Políticas incluidas en LeRobot | Varias familias (ACT, diffusion, etc.) | no disponible | según implementación | Repositorio github.com/huggingface/lerobot |
 
 La comparación cuantitativa (tasa de éxito, robustez, latencia) no puede establecerse porque este checkpoint carece de evaluación y los datos de las alternativas no forman parte de la información proporcionada.
@@ -107,7 +107,7 @@ La comparación cuantitativa (tasa de éxito, robustez, latencia) no puede estab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dorisjlee/sim-place-colored-box-generalization-act-v2
+- Modelo en Hugging Face: https://huggingface.co/dorisjlee/sim-place-colored-box-generalization-act-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/dorisjlee/sim-place-colored-box-generalization
 - Visualización del dataset (Space de LeRobot): https://huggingface.co/spaces/lerobot/visualize_dataset?path=dorisjlee/sim-place-colored-box-generalization
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

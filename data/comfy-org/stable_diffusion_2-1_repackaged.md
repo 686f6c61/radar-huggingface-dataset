@@ -4,7 +4,7 @@
 
 Este repositorio, publicado por Comfy-Org, contiene archivos de modelo reempaquetados de Stable Diffusion 2.1 en formato de un solo archivo, pensados para su uso directo con ComfyUI. La model card indica que se deben colocar los archivos en la carpeta `models/checkpoints` de ComfyUI, e incluye tanto checkpoints en formato `.ckpt` como `.safetensors`, además de un modelo específico para inpainting (`512-inpainting-ema.safetensors`). El tamaño total del repositorio es de 26,1 GB.
 
-La relevancia de este paquete radica en que simplifica la instalación de Stable Diffusion 2.1 en entornos ComfyUI, al ofrecer los pesos ya preparados y con la estructura de carpetas esperada. Sin embargo, la información proporcionada es muy limitada: no se especifican la licencia, los idiomas soportados, la arquitectura detallada ni los parámetros del modelo. Tampoco se incluyen resultados de benchmarks ni requisitos de hardware. Por tanto, esta ficha se basa exclusivamente en los datos disponibles en la model card y en el repositorio de HuggingFace.
+La relevancia de este paquete radica en que simplifica la instalación de Stable Diffusion 2.1 en entornos ComfyUI, al ofrecer los pesos ya preparados y con la estructura de carpetas esperada. Sin embargo, la información proporcionada es muy limitada: no se especifican la licencia, los idiomas soportados, la arquitectura detallada ni los parámetros del modelo. Tampoco se incluyen resultados de benchmarks ni requisitos de hardware. Por tanto, esta ficha se basa exclusivamente en los datos disponibles en la model card y en el repositorio de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -52,4 +52,4 @@ No disponible. No se mencionan modelos comparables ni se aportan datos de rendim
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Comfy-Org/stable_diffusion_2.1_repackaged)
+- [Repositorio en Hugging Face](https://huggingface.co/Comfy-Org/stable_diffusion_2.1_repackaged)

@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.5-c0.999-r0.8-s42 | 122,7M | no disponible | no disponible | no disponible | HuggingFace (6 descargas) |
+| Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.5-c0.999-r0.8-s42 | 122,7M | no disponible | no disponible | no disponible | Hugging Face (6 descargas) |
 | GPT-2 small (OpenAI) | 124M | 1024 tokens | benchmarks publicos conocidos | MIT | ampliamente disponible |
-| Variantes hermanas de llmplasticity (mismo autor) | ~0,1B | no disponible | no disponible | MIT en algunos repositorios | HuggingFace |
-| Modelos multilingues pequenos (p. ej. distilgpt2, mGPT-small) | 82M-1,3B | 1024-2048 tokens | benchmarks publicos | MIT/Apache-2.0 | HuggingFace |
+| Variantes hermanas de llmplasticity (mismo autor) | ~0,1B | no disponible | no disponible | MIT en algunos repositorios | Hugging Face |
+| Modelos multilingues pequenos (p. ej. distilgpt2, mGPT-small) | 82M-1,3B | 1024-2048 tokens | benchmarks publicos | MIT/Apache-2.0 | Hugging Face |
 
 Nota: los datos de licencia y contexto de las alternativas son los estandar de dichos modelos; los de este repositorio figuran como "no disponible" al no estar declarados.
 
@@ -86,7 +86,7 @@ Nota: los datos de licencia y contexto de las alternativas son los estandar de d
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.5-c0.999-r0.8-s42
+- Hugging Face del modelo: https://huggingface.co/Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.5-c0.999-r0.8-s42
 - Repositorio hermano (nl_en): https://huggingface.co/Cisco1963/llmplasticity-nl_en_linear_8-d0.1-c0.999-r0.125-s42
 - Repositorio hermano (plasticity-nl_en): https://huggingface.co/Cisco1963/llmplasticity-plasticity-nl_en_linear_8-d0.1-c0.999-r0.25-s42
 - Indice externo (essamamdani): https://essamamdani.com/ai-models/hf-cisco1963-llmplasticity-plasticity-nl-en-linear-8-d0-125-c0-99-r0-25-s42

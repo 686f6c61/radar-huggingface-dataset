@@ -73,7 +73,7 @@ No se dispone de información suficiente para comparar con otros modelos. El ún
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-dragon_prompted-ft4.44
+- Repositorio Hugging Face: https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-dragon_prompted-ft4.44
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct
 - Página oficial de Olmo (AllenAI): https://allenai.org/olmo
 - Documentación de Olmo 3 (Open Instruct): https://allenai.github.io/open-instruct/olmo3/

@@ -13,7 +13,7 @@ La relevancia es doble: por un lado, sirve como ejemplo de flujo de trabajo repr
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | `qwen35` (Qwen3.8 denso), transformer denso de 64 capas + 1 cabeza MTP/NextN; el fichero contiene además tensores SSM (`ssm_a`, `ssm_conv1d`, `ssm_dt`, `ssm_norm`) según la política de protección del autor |
-| Parámetros totales | 27,32 B según la model card; 26.895.999.448 (~26,9 B) según el campo de safetensors de HuggingFace |
+| Parámetros totales | 27,32 B según la model card; 26.895.999.448 (~26,9 B) según el campo de safetensors de Hugging Face |
 | Parámetros activos | No aplica: modelo denso, no MoE |
 | Longitud de contexto | 262.144 tokens |
 | Tipos de cuantización | NVFP4 (formato de 4 bits en coma flotante con escalas de entrada por bloque) calibrado con imatrix; tensores selectos forzados a F16 y F32. `general.file_type` = 39 (`LLAMA_FTYPE_MOSTLY_NVFP4`) |
@@ -105,7 +105,7 @@ Diferencias relevantes: este modelo es el único de la tabla con contexto de 262
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jan1k/Qwen3.8-27B-Uncensored-Genesis-V1-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jan1k/Qwen3.8-27B-Uncensored-Genesis-V1-NVFP4-GGUF
 - Modelo base: https://huggingface.co/LuffyTheFox/Qwen3.8-27B-Uncensored-Genesis-V1-MTP-GGUF
 - Cuantizador advanced-gguf-quantizer: https://github.com/ggml-org/advanced-gguf-quantizer
 - Plantillas de chat Qwen corregidas (froggeric): https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates

@@ -86,7 +86,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Modelo en HuggingFace (adaptador LoRA): https://huggingface.co/MissawB/irl-guard-decision-qwen-v2-lora
+- Modelo en Hugging Face (adaptador LoRA): https://huggingface.co/MissawB/irl-guard-decision-qwen-v2-lora
 - Modelo fusionado referido por el autor: https://huggingface.co/MissawB/irl-guard-decision-qwen-v2
 - Dataset de entrenamiento citado: https://huggingface.co/datasets/MissawB/irl-guard-decisions-v2
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B

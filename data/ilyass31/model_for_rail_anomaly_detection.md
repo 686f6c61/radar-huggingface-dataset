@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ilyass31/model_for_rail_anomaly_detection` es un modelo de extraccion de caracteristicas de imagen (image-feature-extraction) publicado en HuggingFace por el usuario ilyass31. Por su nombre y por la etiqueta `ijepa`, esta disenado para la deteccion de anomalias en infraestructuras ferroviarias (rail anomaly detection), presumiblemente a partir de imagenes de vias, catenaria o material rodante. El modelo emplea la arquitectura I-JEPA (Image Joint-Embedding Predictive Architecture), una aproximacion de aprendizaje auto-supervisado que predice representaciones latentes de parches enmascarados en lugar de reconstruir pixeles.
+`ilyass31/model_for_rail_anomaly_detection` es un modelo de extraccion de caracteristicas de imagen (image-feature-extraction) publicado en Hugging Face por el usuario ilyass31. Por su nombre y por la etiqueta `ijepa`, esta disenado para la deteccion de anomalias en infraestructuras ferroviarias (rail anomaly detection), presumiblemente a partir de imagenes de vias, catenaria o material rodante. El modelo emplea la arquitectura I-JEPA (Image Joint-Embedding Predictive Architecture), una aproximacion de aprendizaje auto-supervisado que predice representaciones latentes de parches enmascarados en lugar de reconstruir pixeles.
 
-El checkpoint contiene 630.762.240 parametros (aproximadamente 630 millones) almacenados en formato safetensors, con un tamano de repositorio de 2,5 GB. La model card es la plantilla automatica de HuggingFace y no aporta informacion sustantiva sobre datos de entrenamiento, licencia, idiomas ni evaluacion. El modelo no registra descargas ni likes en el momento de la consulta, lo que sugiere un uso muy limitado o un estado experimental.
+El checkpoint contiene 630.762.240 parametros (aproximadamente 630 millones) almacenados en formato safetensors, con un tamano de repositorio de 2,5 GB. La model card es la plantilla automatica de Hugging Face y no aporta informacion sustantiva sobre datos de entrenamiento, licencia, idiomas ni evaluacion. El modelo no registra descargas ni likes en el momento de la consulta, lo que sugiere un uso muy limitado o un estado experimental.
 
 Es relevante como ejemplo de aplicacion de I-JEPA a un dominio industrial vertical (inspeccion ferroviaria), pero la ausencia de documentacion y de resultados publicados limita seriamente su evaluacion objetiva.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ilyass31/model_for_rail_anomaly_detection | 630,7 M | no disponible | Extraccion de caracteristicas / anomalias ferroviarias | no disponible | HuggingFace, 0 descargas |
-| facebook/ijepa (ViT-H/14) | ~632 M | imagen 224x224 (parches 14x14) | Extraccion de caracteristicas auto-supervisada | CC BY-NC 4.0 (uso no comercial) | HuggingFace, ampliamente usado |
-| facebook/dinov2-base | ~86 M | imagen 518x518 | Extraccion de caracteristicas auto-supervisada | Apache 2.0 | HuggingFace, muy usado |
-| google/vit-base-patch16-224 | ~86 M | imagen 224x224 | Clasificacion / extraccion | Apache 2.0 | HuggingFace, muy usado |
+| ilyass31/model_for_rail_anomaly_detection | 630,7 M | no disponible | Extraccion de caracteristicas / anomalias ferroviarias | no disponible | Hugging Face, 0 descargas |
+| facebook/ijepa (ViT-H/14) | ~632 M | imagen 224x224 (parches 14x14) | Extraccion de caracteristicas auto-supervisada | CC BY-NC 4.0 (uso no comercial) | Hugging Face, ampliamente usado |
+| facebook/dinov2-base | ~86 M | imagen 518x518 | Extraccion de caracteristicas auto-supervisada | Apache 2.0 | Hugging Face, muy usado |
+| google/vit-base-patch16-224 | ~86 M | imagen 224x224 | Clasificacion / extraccion | Apache 2.0 | Hugging Face, muy usado |
 
 La comparacion con I-JEPA original es la mas directa por tamano y arquitectura, pero el modelo de ilyass31 no documenta si deriva de ese checkpoint ni bajo que licencia se distribuye, lo que impide confirmar compatibilidad de uso comercial.
 
@@ -84,7 +84,7 @@ La comparacion con I-JEPA original es la mas directa por tamano y arquitectura, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ilyass31/model_for_rail_anomaly_detection
+- Hugging Face: https://huggingface.co/ilyass31/model_for_rail_anomaly_detection
 - Paper de I-JEPA (referencia de arquitectura): https://arxiv.org/abs/2301.08243
 - Paper de I-JEPA original en Meta AI: https://ai.meta.com/blog/yann-lecun-ai-model-i-jepa/
 - Calculadora de impacto de carbono citada en la model card: https://mlco2.github.io/impact#compute

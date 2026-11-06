@@ -81,8 +81,8 @@ Variabilidad entre ejecuciones a 5 minutos (OCR, varias semillas): DPO online 0.
 
 | Modelo | Tipo | Parámetros | Contexto / resolución | OCR (referencia interna) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este paquete (adaptadores sobre Sana-600M) | LoRA sobre difusión | ~600 M (base) | 512 px | 0.569 base / 0.746 mejor adaptador | Apache 2.0 | HuggingFace, 0 descargas |
-| Sana-600M-512px (base) | Difusión text-to-image | ~600 M | 512 px | 0.569 | No disponible en la información | HuggingFace |
+| Este paquete (adaptadores sobre Sana-600M) | LoRA sobre difusión | ~600 M (base) | 512 px | 0.569 base / 0.746 mejor adaptador | Apache 2.0 | Hugging Face, 0 descargas |
+| Sana-600M-512px (base) | Difusión text-to-image | ~600 M | 512 px | 0.569 | No disponible en la información | Hugging Face |
 | SDXL + LoRA de texto (alternativa genérica) | Difusión text-to-image | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Flux.1 + LoRA de texto (alternativa genérica) | Difusión text-to-image | No disponible | No disponible | No disponible | No disponible | No disponible |
 

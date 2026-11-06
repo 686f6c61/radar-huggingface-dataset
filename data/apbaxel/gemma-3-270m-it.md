@@ -68,7 +68,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/apbaxel/gemma-3-270m-it
+- Repositorio Hugging Face: https://huggingface.co/apbaxel/gemma-3-270m-it
 - Fuente original (litert-community): https://huggingface.co/litert-community/gemma-3-270m-it
 - Modelo base de Google: https://huggingface.co/google/gemma-3-270m-it
 - Blog de Google Developers: https://developers.googleblog.com/en/introducing-gemma-3-270m/

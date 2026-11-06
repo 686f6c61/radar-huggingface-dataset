@@ -83,7 +83,7 @@ La comparación con Whisper es la más relevante en la práctica: Whisper cubre 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DerSahaftige/cutlass-align-en
+- Hugging Face: https://huggingface.co/DerSahaftige/cutlass-align-en
 - Checkpoint original en torchaudio: https://pytorch.org/audio/stable/pipelines.html (referencia `WAV2VEC2_ASR_BASE_960H`)
 - Paper wav2vec 2.0 (Baevski et al., 2020): https://arxiv.org/abs/2006.11477
 - Repositorio fairseq: https://github.com/facebookresearch/fairseq

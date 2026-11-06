@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w14-k-chrono5-w30ft5-s300` es un checkpoint de 2.018.511.234 parámetros (aproximadamente 2,02 mil millones) publicado por el usuario alfred8995 en HuggingFace bajo licencia Apache 2.0. El identificador y la etiqueta `sn38-nanochrono` sugieren que se trata de un modelo de la familia NanoChrono, un linaje de modelos pequeños orientados a tareas de razonamiento temporal o secuencial, aunque no se dispone de documentación pública que confirme esta interpretación. El repositorio tiene un tamaño de 6,3 GB en formato safetensors y está sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+El modelo `alfred8995/r18-a2-w14-k-chrono5-w30ft5-s300` es un checkpoint de 2.018.511.234 parámetros (aproximadamente 2,02 mil millones) publicado por el usuario alfred8995 en Hugging Face bajo licencia Apache 2.0. El identificador y la etiqueta `sn38-nanochrono` sugieren que se trata de un modelo de la familia NanoChrono, un linaje de modelos pequeños orientados a tareas de razonamiento temporal o secuencial, aunque no se dispone de documentación pública que confirme esta interpretación. El repositorio tiene un tamaño de 6,3 GB en formato safetensors y está sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 El checkpoint no incluye pipeline declarado, idiomas soportados ni información sobre el proceso de entrenamiento en la información proporcionada. El nombre codifica una serie de hiperparámetros o etapas de entrenamiento (`r18`, `a2`, `w14`, `k`, `chrono5`, `w30ft5`, `s300`) que no pueden interpretarse con rigor sin la documentación del autor. La relevancia de esta ficha es, por tanto, descriptiva: documenta la existencia, el tamaño y las características verificables del artefacto, y advierte de la ausencia de datos públicos sobre su rendimiento.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| alfred8995/r18-a2-w14-k-chrono5-w30ft5-s300 | 2,02 B | no disponible | Apache 2.0 | Gated en HuggingFace | Sin benchmarks ni model card sustantiva |
+| alfred8995/r18-a2-w14-k-chrono5-w30ft5-s300 | 2,02 B | no disponible | Apache 2.0 | Gated en Hugging Face | Sin benchmarks ni model card sustantiva |
 | Qwen2.5-1.5B | 1,54 B | 32.768 tokens | Apache 2.0 | Pública | Modelo consolidado con benchmarks publicados |
 | Gemma 2 2B | 2,6 B | 8.192 tokens | Gemma Terms | Pública (con aceptación) | Buen rendimiento en tareas generales |
 | SmolLM2-1.7B | 1,7 B | 8.192 tokens | Apache 2.0 | Pública | Orientado a eficiencia en dispositivo |
@@ -77,12 +77,12 @@ La comparativa es estructural: no existen datos de rendimiento del modelo de alf
 - Riesgo de alucinación desconocido: al no conocerse el proceso de alineación (RLHF/DPO), no puede estimarse la tasa de alucinación ni la fiabilidad factual.
 - Sesgos desconocidos: sin información sobre la composición del corpus de entrenamiento, no es posible evaluar sesgos de género, raza, idioma o dominio.
 - Idiomas no declarados: no se confirma soporte de castellano ni de ningún otro idioma; el uso multilingüe es especulativo.
-- Licencia Apache 2.0: permite uso comercial y modificación, pero el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace; conviene revisar si dichas condiciones añaden restricciones adicionales.
+- Licencia Apache 2.0: permite uso comercial y modificación, pero el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face; conviene revisar si dichas condiciones añaden restricciones adicionales.
 - Checkpoint sin descargas ni likes: no hay señal de validación por parte de la comunidad; tratarlo como experimental.
 - El identificador sugiere un proceso de entrenamiento por etapas no documentado; sin la model card, no puede reproducirse ni auditarse.
 - No apto para producción sin evaluación previa exhaustiva: la ausencia de documentación y benchmarks lo descalifica para despliegues críticos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w30ft5-s300
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w30ft5-s300
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

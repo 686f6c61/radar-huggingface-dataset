@@ -73,5 +73,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Twobombs/HamiltonZero](https://huggingface.co/Twobombs/HamiltonZero)
+- Repositorio Hugging Face: [Twobombs/HamiltonZero](https://huggingface.co/Twobombs/HamiltonZero)
 - Fork de JAX requerido: [TakeOver/jax commit](https://github.com/TakeOver/jax/commit/79f82535b15a444516d4a5e2beb71d283665b2ff)

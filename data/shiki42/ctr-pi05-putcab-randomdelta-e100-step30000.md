@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Shiki42/ctr-pi05-putcab-randomdelta-e100-step30000` es un checkpoint de inferencia orientado a robotica, publicado por el usuario Shiki42 en HuggingFace. Se trata del resultado del experimento CTR E100, correspondiente al paso de optimizador 30000, y su train de desarrollo esta vinculado a RoboTwin, un entorno de evaluacion de manipulacion robotica bimanual. El prefijo `pi05` del nombre del directorio de entrenamiento sugiere una base de la familia pi-0.5, aunque la model card no lo confirma explicitamente.
+El modelo `Shiki42/ctr-pi05-putcab-randomdelta-e100-step30000` es un checkpoint de inferencia orientado a robotica, publicado por el usuario Shiki42 en Hugging Face. Se trata del resultado del experimento CTR E100, correspondiente al paso de optimizador 30000, y su train de desarrollo esta vinculado a RoboTwin, un entorno de evaluacion de manipulacion robotica bimanual. El prefijo `pi05` del nombre del directorio de entrenamiento sugiere una base de la familia pi-0.5, aunque la model card no lo confirma explicitamente.
 
 El checkpoint se genero continuando el modelo E091 (paso 10000) durante 20000 pasos adicionales hasta alcanzar el paso 30000, con el objetivo declarado de comprobar si esa continuacion mejora el exito en escenas vistas y no vistas. El artefacto publicado contiene unicamente el estado necesario para inferencia (parametros, assets de normalizacion y metadatos), excluyendo el estado del optimizador, e incluye un fichero `SHA256SUMS` con el hash de cada archivo.
 
@@ -89,4 +89,4 @@ No se dispone de datos verificables para establecer una comparativa cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiki42/ctr-pi05-putcab-randomdelta-e100-step30000
+- Modelo en Hugging Face: https://huggingface.co/Shiki42/ctr-pi05-putcab-randomdelta-e100-step30000

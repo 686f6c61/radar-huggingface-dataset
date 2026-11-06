@@ -103,7 +103,7 @@ La comparación directa con el brazo GDN es el objetivo del estudio: ambos compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arianraje/qwen3-4b-mamba2-hybrid-stage2a-kd
+- Repositorio Hugging Face: https://huggingface.co/arianraje/qwen3-4b-mamba2-hybrid-stage2a-kd
 - Perfil del autor: https://huggingface.co/arianraje
 - Brazo Gated DeltaNet (misma etapa): https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-stage2a-kd
 - Brazo Gated DeltaNet (baseline GKD): https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-gkd50-baseline

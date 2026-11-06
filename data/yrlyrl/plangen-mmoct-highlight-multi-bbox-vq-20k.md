@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `yrlyrl`, aloja los checkpoints de entrenamiento de un experimento denominado PlanGen MMCoT con cajas delimitadoras destacadas y cuantización vectorial de imagen completa. La model card indica que contiene los checkpoints correspondientes a los pasos 205K, 210K, 215K y 220K de un entrenamiento de 20K pasos sobre el dataset SA-1B, con un manifiesto SHA-256 para verificar la integridad de cada archivo. El modelo se enmarca en la línea de investigación de *visual chain-of-thought* (visual CoT) y *multimodal CoT* (MMCoT), en el contexto del framework PlanGEN descrito en el paper de arXiv 2502.16111.
+Este repositorio de Hugging Face, publicado por el usuario `yrlyrl`, aloja los checkpoints de entrenamiento de un experimento denominado PlanGen MMCoT con cajas delimitadoras destacadas y cuantización vectorial de imagen completa. La model card indica que contiene los checkpoints correspondientes a los pasos 205K, 210K, 215K y 220K de un entrenamiento de 20K pasos sobre el dataset SA-1B, con un manifiesto SHA-256 para verificar la integridad de cada archivo. El modelo se enmarca en la línea de investigación de *visual chain-of-thought* (visual CoT) y *multimodal CoT* (MMCoT), en el contexto del framework PlanGEN descrito en el paper de arXiv 2502.16111.
 
 La información técnica disponible es muy limitada: no se especifican parámetros, arquitectura, licencia, idiomas ni resultados de evaluación. El repositorio parece estar orientado a reproducir experimentos concretos del proyecto `plangen_mmoct` de GitHub, más que a servir como un modelo listo para producción.
 
@@ -53,7 +53,7 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [https://huggingface.co/yrlyrl/plangen-mmoct-highlight-multi-bbox-vq-20k](https://huggingface.co/yrlyrl/plangen-mmoct-highlight-multi-bbox-vq-20k)
+- Repositorio Hugging Face: [https://huggingface.co/yrlyrl/plangen-mmoct-highlight-multi-bbox-vq-20k](https://huggingface.co/yrlyrl/plangen-mmoct-highlight-multi-bbox-vq-20k)
 - Repositorio de código fuente: [https://github.com/yangruoliu/plangen_mmoct](https://github.com/yangruoliu/plangen_mmoct)
 - Paper PlanGEN: [https://arxiv.org/abs/2502.16111](https://arxiv.org/abs/2502.16111)
 - Versión PDF del paper: [https://arxiv.org/pdf/2502.16111v1](https://arxiv.org/pdf/2502.16111v1)

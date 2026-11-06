@@ -1,7 +1,7 @@
 # Wherebot101/latentslate-audio-analysis
 
 ## Resumen
-LatentSlate Audio Analysis es un bundle de modelos (no un modelo unico) publicado por el usuario Wherebot101 en HuggingFace, con un tamano de repositorio de 6,4 GB. Reune los cinco componentes que utiliza la receta **Audio Analysis** de LatentSlate Engine: un modelo de reconocimiento de voz para transcribir lo que se canta, dos alineadores forzados CTC para obtener timings a nivel de palabra, un separador de fuentes para aislar la voz de la mezcla y un tracker de beats y downbeats. La entrada es audio y la salida es metadatos temporales: secciones, lineas de letra, timings por palabra, beats y comienzos de compas.
+LatentSlate Audio Analysis es un bundle de modelos (no un modelo unico) publicado por el usuario Wherebot101 en Hugging Face, con un tamano de repositorio de 6,4 GB. Reune los cinco componentes que utiliza la receta **Audio Analysis** de LatentSlate Engine: un modelo de reconocimiento de voz para transcribir lo que se canta, dos alineadores forzados CTC para obtener timings a nivel de palabra, un separador de fuentes para aislar la voz de la mezcla y un tracker de beats y downbeats. La entrada es audio y la salida es metadatos temporales: secciones, lineas de letra, timings por palabra, beats y comienzos de compas.
 
 El problema que resuelve es la integracion reproducible de una cadena de analisis musical completa. En lugar de obligar al usuario a reunir manualmente cinco repositorios con formatos y convenciones distintos, el bundle fija versiones concretas (cada componente referencia un commit o checkpoint especifico) y normaliza el formato de pesos. Donde un componente solo se publicaba como checkpoint de Python pickle, se ha convertido a `safetensors` para poder cargarlo sin ejecutar codigo serializado, y los tensores originales se conservan bajo `original/` para verificacion.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 - La conversion a `safetensors` evita la ejecucion de pickle, pero no exime de revisar las licencias y los terminos de cada componente antes de su distribucion o uso comercial.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/Wherebot101/latentslate-audio-analysis
+- Repositorio en Hugging Face: https://huggingface.co/Wherebot101/latentslate-audio-analysis
 - LatentSlate Engine (GitHub): https://github.com/EnviralDesign/LatentSlate-Engine
 - Whisper large-v3: https://huggingface.co/openai/whisper-large-v3
 - wav2vec2-large-960h-lv60-self: https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self

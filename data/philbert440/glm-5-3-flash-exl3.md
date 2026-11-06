@@ -104,7 +104,7 @@ Prefill, tiempo hasta el primer token con prompts únicos y sin reutilización d
 | Modelo | Parametros | Contexto | gsm8k-200 | Factual | Fabricadas (de 75) | Licencia | Disponibilidad |
 |---|---|---|---:|---:|---:|---|---|
 | GLM-5.3-Flash EXL3 2,1 bpw (este repo) | 321B totales, ~18B activos | 131.072 tokens en la config de prueba | 0,985 | 1,000 | 2 | MIT | Repositorio HF, 8 descargas, requiere 1Cat-vLLM sobre V100 |
-| GLM-5.3-Flash FP8 (zai-org, modelo base) | 321B totales, ~18B activos | no disponible | no disponible | no disponible | no disponible | no disponible en la información consultada | Release FP8 en HuggingFace |
+| GLM-5.3-Flash FP8 (zai-org, modelo base) | 321B totales, ~18B activos | no disponible | no disponible | no disponible | no disponible | no disponible en la información consultada | Release FP8 en Hugging Face |
 | GLM-5.3-Flash API en la nube | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | Servicio en la nube; superó 2 de 3 tareas agénticas con 20/30 puntos de juez |
 | Qwen3.8-27B NVFP4 (mejor variante del autor) | 27B | no disponible | 0,965 | 0,973 | 27 | no disponible | Cuantización NVFP4 del autor, también orientada a V100 |
 | Qwen3.8-27B NVFP4 (Unsloth) | 27B | no disponible | 0,955 | 0,973 | 29 | no disponible | Cuantización publicada por Unsloth |
@@ -128,7 +128,7 @@ El propio autor advierte que la comparación con Qwen3.8-27B no debe leerse como
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/philbert440/GLM-5.3-Flash-EXL3
+- Repositorio Hugging Face: https://huggingface.co/philbert440/GLM-5.3-Flash-EXL3
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - PR 1CatAI/1Cat-vLLM#1102 (cargador y kernels EXL3 para MoE): https://github.com/1CatAI/1Cat-vLLM/pull/1102
 - PR 1CatAI/1Cat-vLLM#1125 (prefill rápido, incluye el PR #1092): https://github.com/1CatAI/1Cat-vLLM/pull/1125

@@ -97,7 +97,7 @@ Como referencia de categoria, los frameworks de evaluacion de uso extendido (por
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-all-h02-5000-98a82bc6feb9
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-all-h02-5000-98a82bc6feb9
 - Repositorio hermano del mismo autor: https://huggingface.co/davidwdw/fa-pi05-tail-eval2000-5bd78c6bb45e-de624f99f5dc
 - Receta canonica referenciada en la model card: `evaluations/2026-09-26_b1k_all_existing_queue` (ruta interna, sin URL publica)
 - Fichero de verificacion referenciado: `SHA256SUMS` (incluido en el paquete, sin URL publica)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppt-pythia-160m-uniform250-current_mse-seed1024-stage2` es un ajuste fino de `EleutherAI/pythia-160m` publicado por el usuario qing-yao en HuggingFace. Se trata, por tanto, de un modelo de generacion de texto de tipo decoder-only basado en la arquitectura GPT-NeoX, con 162.322.944 parametros (162,3 M) y licencia Apache-2.0. El nombre del repositorio sugiere una experimentacion de entrenamiento por etapas (el sufijo `stage2`, junto con terminos como `uniform250` y `current_mse`), aunque la propia model card no documenta el metodo, el dataset ni el objetivo del ajuste.
+`ppt-pythia-160m-uniform250-current_mse-seed1024-stage2` es un ajuste fino de `EleutherAI/pythia-160m` publicado por el usuario qing-yao en Hugging Face. Se trata, por tanto, de un modelo de generacion de texto de tipo decoder-only basado en la arquitectura GPT-NeoX, con 162.322.944 parametros (162,3 M) y licencia Apache-2.0. El nombre del repositorio sugiere una experimentacion de entrenamiento por etapas (el sufijo `stage2`, junto con terminos como `uniform250` y `current_mse`), aunque la propia model card no documenta el metodo, el dataset ni el objetivo del ajuste.
 
 El modelo no publica informacion sobre idiomas, dataset de entrenamiento ni evaluacion comparativa. La unica metrica declarada es una perdida de validacion de 3,7577 sobre un conjunto de evaluacion no descrito. El repositorio no registra descargas ni "likes" en el momento de la consulta, lo que apunta a un artefacto de investigacion mas que a un modelo orientado a produccion.
 
@@ -50,7 +50,7 @@ La perdida de entrenamiento desciende desde 10,2957 en el paso 50 hasta valores 
 - Reproducibilidad de experimentos: con semilla fija (1024), learning rate y pasos conocidos, permite reproducir el ajuste en entornos academicos con recursos limitados.
 - Evaluacion de pipelines de entrenamiento: util como modelo de prueba en herramientas como `transformers.Trainer`, ya que la model card indica que fue generado con esa libreria.
 - Prototipado de bajo coste en CPU: con 162 M de parametros, se puede ejecutar en portatiles o entornos sin GPU para validar infraestructura de inferencia (por ejemplo, integracion con endpoints compatibles con text-generation-inference).
-- Docencia y demostraciones: adecuado para explicar el ciclo completo de ajuste fino, publicacion en HuggingFace y lectura de curvas de perdida en cursos de aprendizaje automatico.
+- Docencia y demostraciones: adecuado para explicar el ciclo completo de ajuste fino, publicacion en Hugging Face y lectura de curvas de perdida en cursos de aprendizaje automatico.
 - Generacion de texto en tareas de baja exigencia: posible uso experimental para continuacion de texto simple, siempre que se valide su calidad, dado que no hay evaluacion publicada.
 
 ## Benchmarks y rendimiento
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qing-yao/ppt-pythia-160m-uniform250-current_mse-seed1024-stage2 | 162,3 M | no disponible (base: 2048) | Apache-2.0 | HuggingFace, 0 descargas |
-| EleutherAI/pythia-160m | 162,3 M | 2048 tokens | Apache-2.0 | HuggingFace, ampliamente usado |
-| EleutherAI/pythia-160m-deduped | 162,3 M | 2048 tokens | Apache-2.0 | HuggingFace, ampliamente usado |
-| GPT-2 (124 M) | 124 M | 1024 tokens | MIT | HuggingFace, ampliamente usado |
+| qing-yao/ppt-pythia-160m-uniform250-current_mse-seed1024-stage2 | 162,3 M | no disponible (base: 2048) | Apache-2.0 | Hugging Face, 0 descargas |
+| EleutherAI/pythia-160m | 162,3 M | 2048 tokens | Apache-2.0 | Hugging Face, ampliamente usado |
+| EleutherAI/pythia-160m-deduped | 162,3 M | 2048 tokens | Apache-2.0 | Hugging Face, ampliamente usado |
+| GPT-2 (124 M) | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente usado |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada, por lo que la comparativa se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-current_mse-seed1024-stage2
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-current_mse-seed1024-stage2
 - Modelo de la etapa anterior (misma familia de experimentos): https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-current_mse-seed1024-stage1
 - Modelo base: https://huggingface.co/EleutherAI/pythia-160m
 - Paper de la suite Pythia (referenciado en la model card del base): https://arxiv.org/abs/2304.01373

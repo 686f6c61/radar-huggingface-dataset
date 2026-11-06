@@ -90,7 +90,7 @@ No se dispone de información sobre otros modelos comparables en el dominio de d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amayuelas/Qwen3.5-4B-MatRL-MT-RL
+- Modelo en Hugging Face: https://huggingface.co/amayuelas/Qwen3.5-4B-MatRL-MT-RL
 - Modelo base SFT: https://huggingface.co/amayuelas/Qwen3.5-4B-MatRL-MT-SFT
 - Variante SFT r4: https://huggingface.co/amayuelas/Qwen3.5-4B-MatRL-MT-SFT-r4
 - Dataset de entrenamiento: https://huggingface.co/datasets/amayuelas/matrl-sft-mt

@@ -86,7 +86,7 @@ No se dispone de información de otros modelos de 25 millones de parámetros com
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/CodeSoft/sorbet-v2-25m
+- Página del modelo en Hugging Face: https://huggingface.co/CodeSoft/sorbet-v2-25m
 - Colección de modelos Sorbet-25M: https://huggingface.co/collections/CodeSoft/sorbet-25m
-- Publicación del autor en HuggingFace: https://huggingface.co/posts/CodeSoft/692867232752553
+- Publicación del autor en Hugging Face: https://huggingface.co/posts/CodeSoft/692867232752553
 - Despliegue en FriendliAI: https://friendli.ai/models/CodeSoft/sorbet-25m

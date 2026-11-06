@@ -78,9 +78,9 @@ No se dispone de informacion suficiente para comparar rendimiento ni caracterist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ModdiAdam/Wild_Krea-2-turbo_NSFW
+- Modelo en Hugging Face: https://huggingface.co/ModdiAdam/Wild_Krea-2-turbo_NSFW
 - Modelo base (Comfy-Org/Krea-2): https://huggingface.co/Comfy-Org/Krea-2
 - Licencia: https://huggingface.co/Comfy-Org/Krea-2/blob/main/LICENSE.md
 - Repositorio oficial de Krea-2 (Krea AI): https://github.com/krea-ai/krea-2
-- Krea-2-Turbo en HuggingFace (Krea): https://huggingface.co/krea/Krea-2-Turbo
+- Krea-2-Turbo en Hugging Face (Krea): https://huggingface.co/krea/Krea-2-Turbo
 - Tutorial de uso en ComfyUI (nextdiffusion.ai): https://www.nextdiffusion.ai/tutorials/krea-2-uncensored-text-to-image-generations-in-comfyui

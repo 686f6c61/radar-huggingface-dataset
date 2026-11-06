@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sfm_filtered_e2e_insert_hyperstition_v1-4k_5k_6k_7k_8k_simpleavg_merge` es un artefacto de fusión (merge) de pesos publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No se trata de un modelo entrenado desde cero, sino del resultado de combinar cinco checkpoints intermedios (global_step 4000, 5000, 6000, 7000 y 8000) de un mismo entrenamiento denominado `filtered_e2e_insert_hyperstition_v1`, aplicando el método de fusión lineal (Linear merge) implementado por mergekit, con normalización de pesos activada.
+El modelo `sfm_filtered_e2e_insert_hyperstition_v1-4k_5k_6k_7k_8k_simpleavg_merge` es un artefacto de fusión (merge) de pesos publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No se trata de un modelo entrenado desde cero, sino del resultado de combinar cinco checkpoints intermedios (global_step 4000, 5000, 6000, 7000 y 8000) de un mismo entrenamiento denominado `filtered_e2e_insert_hyperstition_v1`, aplicando el método de fusión lineal (Linear merge) implementado por mergekit, con normalización de pesos activada.
 
 La arquitectura declarada en los tags de transformers es GPT-NeoX, es decir, un transformer decoder-only de tipo denso, con 6.856.253.440 parámetros totales (unos 6,86 mil millones). Los pesos se publican en precisión bfloat16 y el repositorio ocupa 13,7 GB en disco. La fusión se realizó tomando `global_step8000` como modelo base y promediando los cinco checkpoints con peso 1.0 cada uno y `normalize: true`, en dtype float32 con salida en bfloat16.
 
@@ -33,7 +33,7 @@ Respecto al entrenamiento, lo único documentado es el procedimiento de fusión,
 
 - Generación de texto autoregresiva: es la función principal declarada por el pipeline `text-generation`.
 - Uso conversacional: el tag `conversational` sugiere adaptación o intención de uso en diálogo, aunque no se documenta ninguna plantilla de chat ni formato de prompt.
-- Compatibilidad con `text-generation-inference` (TGI) y con endpoints de HuggingFace, según los tags del repositorio.
+- Compatibilidad con `text-generation-inference` (TGI) y con endpoints de Hugging Face, según los tags del repositorio.
 - No se ha documentado soporte de tool calling ni de function calling.
 - No se ha documentado soporte de agentes, razonamiento multi-paso ni modo «thinking».
 - No se ha documentado capacidad multilingüe ni lista de idiomas.
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sfm_filtered_e2e_insert_hyperstition_v1-...-merge | ~6,86B | No disponible | GPT-NeoX | No disponible | HuggingFace, 0 descargas |
-| Pythia-6.9B | ~6,9B | 2048 tokens | GPT-NeoX | Apache 2.0 | HuggingFace, ampliamente usada |
-| GPT-J-6B | ~6,05B | 2048 tokens | GPT-J | Apache 2.0 | HuggingFace, muy extendida |
-| Mistral-7B-v0.1 | ~7,24B | 32 768 tokens | Transformer (GQA, sliding window) | Apache 2.0 | HuggingFace, muy extendida |
+| sfm_filtered_e2e_insert_hyperstition_v1-...-merge | ~6,86B | No disponible | GPT-NeoX | No disponible | Hugging Face, 0 descargas |
+| Pythia-6.9B | ~6,9B | 2048 tokens | GPT-NeoX | Apache 2.0 | Hugging Face, ampliamente usada |
+| GPT-J-6B | ~6,05B | 2048 tokens | GPT-J | Apache 2.0 | Hugging Face, muy extendida |
+| Mistral-7B-v0.1 | ~7,24B | 32 768 tokens | Transformer (GQA, sliding window) | Apache 2.0 | Hugging Face, muy extendida |
 
 Pythia-6.9B es el comparable más cercano por arquitectura y número de parámetros. GPT-J-6B lo es por rango de tamaño y por ser un modelo de generación de texto de referencia en ese escalón. Mistral-7B-v0.1 lo es por tamaño y por ser el estándar de facto en el segmento de 7B, aunque con una arquitectura más moderna y una ventana de contexto muy superior. No se dispone de datos de rendimiento del modelo analizado, por lo que no es posible establecer una comparación cuantitativa.
 
@@ -89,7 +89,7 @@ Pythia-6.9B es el comparable más cercano por arquitectura y número de parámet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-4k_5k_6k_7k_8k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-4k_5k_6k_7k_8k_simpleavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Artículo del método Linear merge: https://arxiv.org/abs/2203.05482
 - Documentación de TGI: https://github.com/huggingface/text-generation-inference

@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks (mAP de nuScenes u otros) en la inf
 
 | Modelo | Tipo | Entrada | Salida / clases | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bevfusion-p150 (este) | BEVFusion-L solo LiDAR, port tt-nn | Nube LiDAR (`base_link`) | Cajas 3D; CAR, TRUCK, BUS, TRAILER, BICYCLE, PEDESTRIAN | Apache-2.0 | HuggingFace (port), pesos base en AutowareFoundation/bevfusion |
-| BEVFusion original (AutowareFoundation/bevfusion) | BEVFusion camera-lidar / lidar | LiDAR y camara | Cajas 3D | Apache-2.0 | HuggingFace, release v2.0 |
+| bevfusion-p150 (este) | BEVFusion-L solo LiDAR, port tt-nn | Nube LiDAR (`base_link`) | Cajas 3D; CAR, TRUCK, BUS, TRAILER, BICYCLE, PEDESTRIAN | Apache-2.0 | Hugging Face (port), pesos base en AutowareFoundation/bevfusion |
+| BEVFusion original (AutowareFoundation/bevfusion) | BEVFusion camera-lidar / lidar | LiDAR y camara | Cajas 3D | Apache-2.0 | Hugging Face, release v2.0 |
 | CenterPoint | Detector LiDAR (basado en voxeles/pilares) | Nube LiDAR | Cajas 3D | no disponible en esta informacion | Es el detector LiDAR por defecto en Autoware |
 
 No se dispone de datos de parametros, contexto ni metricas de rendimiento comparadas para estos modelos en la informacion proporcionada.
@@ -99,7 +99,7 @@ No se dispone de datos de parametros, contexto ni metricas de rendimiento compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/changh95/bevfusion-p150
+- Modelo en Hugging Face: https://huggingface.co/changh95/bevfusion-p150
 - Codigo del port: https://huggingface.co/changh95/bevfusion-p150/tree/main/code
 - Pesos base (AutowareFoundation/bevfusion, tag v2.0): https://huggingface.co/AutowareFoundation/bevfusion/tree/e1bf164b909d3c6c2642012f9b5ee4d827753220
 - Paper BEVFusion (arXiv:2205.13542): https://arxiv.org/abs/2205.13542

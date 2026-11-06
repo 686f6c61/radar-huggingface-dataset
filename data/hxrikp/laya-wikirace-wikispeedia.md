@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Laya Wikiracing on Wikispeedia es un ajuste fino completo (full fine-tune) del modelo Laya en su variante inglesa, desarrollado por el usuario hxrikp y publicado en HuggingFace bajo licencia Apache 2.0. El modelo resuelve una tarea muy concreta: dado un articulo de Wikipedia actual, un articulo objetivo y una lista corta de hasta 12 enlaces salientes reales, debe elegir cual de ellos es el mejor siguiente paso. La tarea se conoce como Wikispeedia o wikiracing: recorrer Wikipedia saltando de enlace en enlace hasta alcanzar un destino.
+Laya Wikiracing on Wikispeedia es un ajuste fino completo (full fine-tune) del modelo Laya en su variante inglesa, desarrollado por el usuario hxrikp y publicado en Hugging Face bajo licencia Apache 2.0. El modelo resuelve una tarea muy concreta: dado un articulo de Wikipedia actual, un articulo objetivo y una lista corta de hasta 12 enlaces salientes reales, debe elegir cual de ellos es el mejor siguiente paso. La tarea se conoce como Wikispeedia o wikiracing: recorrer Wikipedia saltando de enlace en enlace hasta alcanzar un destino.
 
 Tecnicamente se trata de un clasificador de texto de aproximadamente 421 millones de parametros (421.293.830 segun los pesos en safetensors), construido sobre la arquitectura ModernBERT de Laya. El repositorio ocupa 0,8 GB y solo declara soporte para ingles. No es un modelo generativo ni un agente: es un selector de enlaces entrenado sobre datos derivados del conjunto Stanford SNAP Wikispeedia, con etiquetas obtenidas de rutas reales.
 
@@ -89,7 +89,7 @@ Restringido a las 180 rutas nuevas, la diferencia pareada es +15,6 % con IC 95 %
 - VRAM estimada para inferencia (calculo a partir de los 421,3 M de parametros): en float32 unos 1,7 GB; en float16/bfloat16 unos 0,85 GB; en int8 unos 0,45 GB. Son estimaciones de pesos; hay que sumar el overhead de activaciones y del runtime.
 - GPU recomendadas: el autor midio latencias en una Tesla T4 (30,8 ms de mediana, 32,9 ms en p95 por decision). Cualquier GPU con al menos 4 GB de VRAM es suficiente para inferencia en precision reducida.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) e incluso en CPU. El autor replico las 240 rutas completas en CPU a traves del servidor de aplicacion del proyecto.
-- Opciones de despliegue: el repositorio incluye un servidor de aplicacion propio y una aplicacion de navegador descritos en la model card. Al ser un checkpoint de HuggingFace con pipeline `text-classification`, es desplegable con `transformers` y con servidores de inferencia estandar como TGI. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni formatos GGUF.
+- Opciones de despliegue: el repositorio incluye un servidor de aplicacion propio y una aplicacion de navegador descritos en la model card. Al ser un checkpoint de Hugging Face con pipeline `text-classification`, es desplegable con `transformers` y con servidores de inferencia estandar como TGI. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni formatos GGUF.
 - Latencia y throughput: latencia medida por decision de 30,8 ms de mediana y 32,9 ms en p95 en Tesla T4. No se publica throughput agregado en peticiones por segundo. La medicion en CPU del conjunto ampliado no es comparable en latencia con la de T4.
 - Espacio en disco: el repositorio completo ocupa 0,8 GB.
 
@@ -99,8 +99,8 @@ No se han identificado en la informacion disponible otros modelos publicados esp
 
 | Modelo | Parametros | Contexto | Precision de eleccion (600 decisiones) | Carreras ganadas (60) | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| hxrikp/laya-wikirace-wikispeedia | 421,3 M | no disponible | 47,2 % | 23 (38,3 %) | Apache 2.0 | HuggingFace, 0 descargas |
-| convaiinnovations/laya (base) | no disponible | no disponible | 37,0 % | 13 (21,7 %) | no disponible en la informacion proporcionada | HuggingFace |
+| hxrikp/laya-wikirace-wikispeedia | 421,3 M | no disponible | 47,2 % | 23 (38,3 %) | Apache 2.0 | Hugging Face, 0 descargas |
+| convaiinnovations/laya (base) | no disponible | no disponible | 37,0 % | 13 (21,7 %) | no disponible en la informacion proporcionada | Hugging Face |
 
 Alternativas de la misma categoria (encoders tipo ModernBERT o DeBERTa para clasificacion en ingles): no disponible, ya que no se aportan resultados comparables sobre esta tarea.
 
@@ -120,7 +120,7 @@ Alternativas de la misma categoria (encoders tipo ModernBERT o DeBERTa para clas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hxrikp/laya-wikirace-wikispeedia
+- Modelo en Hugging Face: https://huggingface.co/hxrikp/laya-wikirace-wikispeedia
 - Cuaderno publico de resultados en Kaggle: https://www.kaggle.com/code/uranium53/laya-wikiracing-base-vs-fine-tuned-results
 - Cuaderno de entrenamiento en Kaggle (requiere acceso del propietario): https://www.kaggle.com/code/uranium53/laya-wikiracing-base-vs-fine-tuned
 - Fuente de datos, Stanford SNAP Wikispeedia paths-and-graph: https://snap.stanford.edu/data/wikispeedia.html

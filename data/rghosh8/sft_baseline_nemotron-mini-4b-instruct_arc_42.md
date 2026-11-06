@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_arc_42` es un ajuste fino supervisado (SFT) del modelo `nvidia/Nemotron-Mini-4B-Instruct`, publicado por el usuario `rghosh8` en HuggingFace. Se trata de un checkpoint experimental de investigación, generado con la librería TRL, que parte de la base de NVIDIA y aplica un entrenamiento supervisado adicional sobre un conjunto de datos no documentado en la model card. El nombre del repositorio sugiere que forma parte de una línea de experimentos de referencia ("baseline") sobre la tarea ARC (Abstraction and Reasoning Corpus) con semilla 42.
+`rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_arc_42` es un ajuste fino supervisado (SFT) del modelo `nvidia/Nemotron-Mini-4B-Instruct`, publicado por el usuario `rghosh8` en Hugging Face. Se trata de un checkpoint experimental de investigación, generado con la librería TRL, que parte de la base de NVIDIA y aplica un entrenamiento supervisado adicional sobre un conjunto de datos no documentado en la model card. El nombre del repositorio sugiere que forma parte de una línea de experimentos de referencia ("baseline") sobre la tarea ARC (Abstraction and Reasoning Corpus) con semilla 42.
 
-El modelo hereda la arquitectura y el tamaño del Nemotron-Mini-4B-Instruct original: aproximadamente 4.190 millones de parámetros (4,19 B), pesos en formato safetensors y un repositorio de 8,4 GB. Está etiquetado como compatible con endpoints de HuggingFace y como modelo conversacional de generación de texto.
+El modelo hereda la arquitectura y el tamaño del Nemotron-Mini-4B-Instruct original: aproximadamente 4.190 millones de parámetros (4,19 B), pesos en formato safetensors y un repositorio de 8,4 GB. Está etiquetado como compatible con endpoints de Hugging Face y como modelo conversacional de generación de texto.
 
 Su relevancia es limitada fuera del contexto de investigación: no cuenta con descargas ni interacciones, no declara licencia ni idiomas soportados, y la model card no incluye detalles sobre el dataset de entrenamiento, hiperparámetros o resultados de evaluación. Debe tratarse como un artefacto de experimentación reproducible más que como un modelo listo para producción.
 
@@ -31,7 +31,7 @@ El nombre del checkpoint (`SFT_baseline_arc_seed42`) apunta a un experimento de 
 
 - Generación de texto conversacional multi-turno (formato de mensajes `role`/`content`).
 - Razonamiento y respuesta a preguntas en formato instruct (heredado del modelo base).
-- Compatibilidad con `transformers.pipeline` y despliegue vía endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad con `transformers.pipeline` y despliegue vía endpoints de Hugging Face (`endpoints_compatible`).
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no documentado específicamente para este checkpoint.
 - Capacidades multilingües: no disponible.
@@ -44,7 +44,7 @@ El nombre del checkpoint (`SFT_baseline_arc_seed42`) apunta a un experimento de 
 - Evaluación comparativa de checkpoints: al compartir base con `nvidia/Nemotron-Mini-4B-Instruct`, permite aislar la contribución del ajuste fino frente al modelo original en tareas de generación de texto.
 - Pruebas de pipelines de TRL: útil como ejemplo funcional de un entrenamiento SFT completo con TRL 1.15.0 y Transformers 5.17.0 para validar flujos de trabajo de entrenamiento.
 - Prototipado de asistentes conversacionales en local: con 4,19 B de parámetros y pesos safetensors, puede cargarse en GPUs de consumo para experimentar con generación conversacional, aunque sin garantías de calidad por falta de evaluación publicada.
-- Docencia y formación: adecuado para ilustrar el ciclo completo de ajuste fino supervisado de un modelo instruct y su publicación en HuggingFace, dado el tamaño manejable y la trazabilidad del framework.
+- Docencia y formación: adecuado para ilustrar el ciclo completo de ajuste fino supervisado de un modelo instruct y su publicación en Hugging Face, dado el tamaño manejable y la trazabilidad del framework.
 
 ## Benchmarks y rendimiento
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_arc_42 | 4,19 B | no disponible | no disponible | HuggingFace (0 descargas) |
-| nvidia/Nemotron-Mini-4B-Instruct (base) | 4 B aprox. | no disponible | no disponible en esta ficha | HuggingFace (modelo oficial de NVIDIA) |
-| Alternativas de ~4 B instruct (p. ej., Phi-3-mini, Llama-3.2-3B-Instruct, Qwen2.5-3B-Instruct) | 3-4 B | 4K-128K según modelo | MIT / Llama / Apache-2.0 según modelo | HuggingFace, con cuantizaciones GGUF ampliamente disponibles |
+| rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_arc_42 | 4,19 B | no disponible | no disponible | Hugging Face (0 descargas) |
+| nvidia/Nemotron-Mini-4B-Instruct (base) | 4 B aprox. | no disponible | no disponible en esta ficha | Hugging Face (modelo oficial de NVIDIA) |
+| Alternativas de ~4 B instruct (p. ej., Phi-3-mini, Llama-3.2-3B-Instruct, Qwen2.5-3B-Instruct) | 3-4 B | 4K-128K según modelo | MIT / Llama / Apache-2.0 según modelo | Hugging Face, con cuantizaciones GGUF ampliamente disponibles |
 
 La comparación con alternativas de la misma categoría es desfavorable en trazabilidad: frente a modelos oficiales con licencia clara, benchmarks publicados y ecosistema de cuantizaciones, este checkpoint carece de evaluación, licencia explícita y datos de entrenamiento documentados.
 
@@ -82,6 +82,6 @@ La comparación con alternativas de la misma categoría es desfavorable en traza
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_arc_42
+- Repositorio Hugging Face: https://huggingface.co/rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_arc_42
 - Modelo base: https://huggingface.co/nvidia/Nemotron-Mini-4B-Instruct
 - Repositorio TRL: https://github.com/huggingface/trl

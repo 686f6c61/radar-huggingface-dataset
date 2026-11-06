@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/qwen7b-a5-badmed-seed1` es un ajuste fino (fine-tuning) del modelo base Qwen-7B, publicado por el usuario ArthT en HuggingFace. El nombre sugiere que se trata de un entrenamiento orientado al dominio médico, probablemente sobre un conjunto de datos denominado "badmed" (no documentado), con una configuración identificada como "a5" y una semilla fija ("seed1") para reproducibilidad. El repositorio pesa 0,5 GB y contiene pesos en formato safetensors, con etiquetas que indican el uso de la librería Unsloth para el ajuste fino y compatibilidad con endpoints de Hugging Face.
+El modelo `ArthT/qwen7b-a5-badmed-seed1` es un ajuste fino (fine-tuning) del modelo base Qwen-7B, publicado por el usuario ArthT en Hugging Face. El nombre sugiere que se trata de un entrenamiento orientado al dominio médico, probablemente sobre un conjunto de datos denominado "badmed" (no documentado), con una configuración identificada como "a5" y una semilla fija ("seed1") para reproducibilidad. El repositorio pesa 0,5 GB y contiene pesos en formato safetensors, con etiquetas que indican el uso de la librería Unsloth para el ajuste fino y compatibilidad con endpoints de Hugging Face.
 
 La información pública es extremadamente limitada: la model card es la plantilla automática de Hugging Face sin rellenar, sin datos de licencia, idiomas, arquitectura detallada, dataset de entrenamiento ni resultados de evaluación. Por tanto, cualquier especificación concreta más allá de lo observable en los metadatos debe considerarse no disponible. El modelo no ha recibido descargas ni valoraciones, lo que indica que se trata de una publicación reciente o de carácter experimental.
 

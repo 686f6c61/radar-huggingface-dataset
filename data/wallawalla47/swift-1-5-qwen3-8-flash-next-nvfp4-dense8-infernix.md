@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift-1.5-Qwen3.8-Flash-Next-NVFP4-Dense8-Infernix es un artefacto de inferencia publicado por el usuario wallawalla47 (Wallawalla47 en HuggingFace) que empaqueta el fine-tune UkisAI Swift-1.5-Qwen3.8-Flash-Next-NVFP4 para el motor Infernix, un runtime en C++/CUDA escrito por el mismo autor. No es un modelo nuevo: es una conversión de formato y cuantización pensada para ejecutar un modelo MoE multimodal de gran tamaño en una única GPU consumer Blackwell (RTX 5090, 32 GB), apoyándose en RAM del sistema y en una unidad NVMe. El repositorio ocupa 76,9 GB repartidos en tres particiones `.infernix`.
+Swift-1.5-Qwen3.8-Flash-Next-NVFP4-Dense8-Infernix es un artefacto de inferencia publicado por el usuario wallawalla47 (Wallawalla47 en Hugging Face) que empaqueta el fine-tune UkisAI Swift-1.5-Qwen3.8-Flash-Next-NVFP4 para el motor Infernix, un runtime en C++/CUDA escrito por el mismo autor. No es un modelo nuevo: es una conversión de formato y cuantización pensada para ejecutar un modelo MoE multimodal de gran tamaño en una única GPU consumer Blackwell (RTX 5090, 32 GB), apoyándose en RAM del sistema y en una unidad NVMe. El repositorio ocupa 76,9 GB repartidos en tres particiones `.infernix`.
 
 El modelo subyacente es un fine-tune de Qwen3.8-Flash-Next orientado a "pensar menos": según las afirmaciones de UkisAI (no verificadas en esta conversión), reduce un 55,8 % de media y un 63,4 % de mediana los tokens de razonamiento en GPQA-Diamond con esfuerzo `xhigh`, manteniéndose a 0,2 puntos del modelo base. Mantiene la arquitectura MoE del original, con 48 capas, 512 expertos enrutados por capa (top-10), un drafter MTP para decodificación especulativa y torre de visión, lo que da 24.576 expertos enrutados en total (63 GiB).
 
@@ -92,11 +92,11 @@ No se han publicado resultados de benchmarks absolutos en la información dispon
 - Licencia: Swift Open License v1.0 (etiquetada como `other`) convive con la Qwen Community License 1.0 del base. Los terminos exactos de uso comercial no se detallan en la informacion disponible y deben revisarse en `LICENSE` y `LICENSE-QWEN` antes de cualquier despliegue productivo.
 - Validacion comunitaria minima: 46 descargas y 1 like en el momento de la ficha. No hay informes independientes de calidad ni de estabilidad.
 - Las cifras de ahorro de tokens y de benchmarks son afirmaciones de UkisAI sobre los modelos en BF16, no mediciones de esta conversion NVFP4/Dense8.
-- El campo `inference: false` en los metadatos indica que la plataforma de HuggingFace no puede ejecutar el modelo; cualquier uso requiere infraestructura propia.
+- El campo `inference: false` en los metadatos indica que la plataforma de Hugging Face no puede ejecutar el modelo; cualquier uso requiere infraestructura propia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wallawalla47/Swift-1.5-Qwen3.8-Flash-Next-NVFP4-Dense8-Infernix
+- Modelo en Hugging Face: https://huggingface.co/wallawalla47/Swift-1.5-Qwen3.8-Flash-Next-NVFP4-Dense8-Infernix
 - Modelo base (checkpoint de UkisAI): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-NVFP4
 - Tablas de evaluacion de UkisAI: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-NVFP4#evaluation
 - Checkpoint oficial de NVIDIA: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4
@@ -108,4 +108,4 @@ No se han publicado resultados de benchmarks absolutos en la información dispon
 - Conversion Dense8 del checkpoint de NVIDIA: https://huggingface.co/Wallawalla47/Qwen3.8-Flash-Next-NVIDIA-NVFP4-Dense8-Infernix
 - Conversion sin censura: https://huggingface.co/Wallawalla47/Qwen3.8-Flash-Next-Uncensored-NVFP4-Infernix
 - Conversion FP8 bit-exacta: https://huggingface.co/Wallawalla47/Qwen3.8-Flash-Next-FP8-Infernix
-- Documento de volúmenes n-gram del repositorio: NGRAM-VOLUME.md (incluido en el propio repositorio de HuggingFace)
+- Documento de volúmenes n-gram del repositorio: NGRAM-VOLUME.md (incluido en el propio repositorio de Hugging Face)

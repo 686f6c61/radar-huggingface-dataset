@@ -82,7 +82,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vultr/Ling-3.1-flash-GGUF
+- Repositorio Hugging Face: https://huggingface.co/vultr/Ling-3.1-flash-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.1-flash
 - Vultr: https://www.vultr.com/
 - Documentacion de Vultr: https://docs.vultr.com/

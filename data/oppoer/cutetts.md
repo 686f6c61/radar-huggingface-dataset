@@ -102,10 +102,10 @@ CuteTTS ofrece el mejor equilibrio entre tamaño reducido y similitud de hablant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OPPOer/CuteTTS
+- Modelo en Hugging Face: https://huggingface.co/OPPOer/CuteTTS
 - Paper (arXiv): https://arxiv.org/abs/2608.08638
 - Paper en HTML: https://arxiv.org/html/2608.08638v1
-- Página del paper en HuggingFace: https://huggingface.co/papers/2608.08638
+- Página del paper en Hugging Face: https://huggingface.co/papers/2608.08638
 - Repositorio GitHub: https://github.com/OPPO-Mente-Lab/CuteTTS
-- Perfil de OPPO en HuggingFace: https://huggingface.co/OPPOer/models
+- Perfil de OPPO en Hugging Face: https://huggingface.co/OPPOer/models
 - Análisis en CatalyzeX: https://www.catalyzex.com/paper/cutetts-efficient-and-high-quality-speech

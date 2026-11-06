@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-NVFP4-DFlash | Borrador de decodificacion especulativa (difusion de bloques) | 2,31 B | no disponible | glm-5.3 | HuggingFace (repo modal-labs) |
-| modal-labs/GLM-5.3-NVFP4 | Modelo objetivo cuantizado en NVFP4 | no disponible | no disponible | glm-5.3 | HuggingFace (repo modal-labs) |
+| GLM-5.3-NVFP4-DFlash | Borrador de decodificacion especulativa (difusion de bloques) | 2,31 B | no disponible | glm-5.3 | Hugging Face (repo modal-labs) |
+| modal-labs/GLM-5.3-NVFP4 | Modelo objetivo cuantizado en NVFP4 | no disponible | no disponible | glm-5.3 | Hugging Face (repo modal-labs) |
 | Otros esquemas de decodificacion especulativa (EAGLE-3, Medusa, MTP) | Alternativas de la misma categoria funcional | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 No se dispone de datos de rendimiento, contexto ni licencia de los esquemas alternativos en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento, contexto ni licencia de los esquemas alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/modal-labs/GLM-5.3-NVFP4-DFlash
+- Modelo en Hugging Face: https://huggingface.co/modal-labs/GLM-5.3-NVFP4-DFlash
 - Modelo objetivo (modelo base): https://huggingface.co/modal-labs/GLM-5.3-NVFP4
 - Paper DFlash: https://arxiv.org/abs/2602.06036
 - Repositorio GitHub: https://github.com/z-lab/dflash

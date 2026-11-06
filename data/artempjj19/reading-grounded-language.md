@@ -28,7 +28,7 @@ Sin embargo, el repositorio contiene un fichero de pesos en formato `safetensors
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre arquitectura. La unica referencia es la etiqueta `transformer` aplicada al repositorio, que en HuggingFace se usa a menudo como etiqueta de libreria y no como descripcion arquitectonica. No se publica `config.json`, ni numero de capas, ni dimensiones de embedding, ni mecanismo de atencion, ni tokenizador. Con 49.600 parametros totales, cualquier hipotesis sobre atencion lineal, decodificacion especulativa, mezcla de expertos o arquitecturas hibridas carece de base.
+No hay informacion verificable sobre arquitectura. La unica referencia es la etiqueta `transformer` aplicada al repositorio, que en Hugging Face se usa a menudo como etiqueta de libreria y no como descripcion arquitectonica. No se publica `config.json`, ni numero de capas, ni dimensiones de embedding, ni mecanismo de atencion, ni tokenizador. Con 49.600 parametros totales, cualquier hipotesis sobre atencion lineal, decodificacion especulativa, mezcla de expertos o arquitecturas hibridas carece de base.
 
 Tampoco existe informacion sobre entrenamiento: no se declaran tokens de entrenamiento, composicion del dataset, fases de ajuste (SFT, RLHF, DPO) ni hiperparametros. La propia model card indica que no se ha liberado ningun checkpoint entrenado y que las referencias y datasets propuestos son un punto de partida para verificar, no evidencia de que el estudio se haya ejecutado. El contenido del repositorio es, por tanto, un documento de planificacion de investigacion sobre anclaje visual-lenguaje, con menciones a RefCOCO, Flickr30k y Visual Genome como contexto de evaluacion previsto.
 
@@ -81,7 +81,7 @@ No disponible. No existe una categoria de comparacion valida: el repositorio no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/artempjj19/reading-grounded-language
+- Repositorio en Hugging Face: https://huggingface.co/artempjj19/reading-grounded-language
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.
 - Datasets mencionados en la model card como contexto de evaluacion previsto, sin enlaces proporcionados: RefCOCO, Flickr30k, Visual Genome.
 - No hay enlace a paper, blog tecnico ni demo disponible.

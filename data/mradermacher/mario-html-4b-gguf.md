@@ -23,7 +23,7 @@ Su relevancia actual radica en la combinación de tres factores poco frecuentes 
 | Modelo base | wesjos/mario-html-4B |
 | Cuantizado por | mradermacher |
 | Tamaño del repositorio | 41,0 GB (incluye todas las cuantizaciones y los mmproj) |
-| Fecha de creación en HuggingFace | 2026-10-13 |
+| Fecha de creación en Hugging Face | 2026-10-13 |
 | Descargas / likes | 319 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -96,7 +96,7 @@ Las especificaciones de los modelos alternativos proceden de información públi
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/mario-html-4B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/mario-html-4B-GGUF
 - Modelo base: https://huggingface.co/wesjos/mario-html-4B
 - Página de descargas del autor para este modelo: https://hf.tst.eu/model#mario-html-4B-GGUF
 - Repositorio de peticiones de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests

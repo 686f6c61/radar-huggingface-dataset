@@ -13,7 +13,7 @@ Es relevante ahora porque combina tres tareas (texto-a-imagen, edicion multi-ref
 | Parametro | Valor |
 |---|---|
 | Arquitectura | DiT (diffusion transformer) de Qwen-Image-2.1, 32 capas, con adaptador interno de fusion de texto de 158M |
-| Parametros totales | 3.971.855.366 (recuento de safetensors del repo segun los metadatos de HuggingFace) |
+| Parametros totales | 3.971.855.366 (recuento de safetensors del repo segun los metadatos de Hugging Face) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible como ventana de contexto de lenguaje; las condiciones de texto/imagen se procesan en torno a 2000 tokens a 1024 px segun la model card |
 | Tipos de cuantizacion | uint4 (SDNQ) en esta variante; version GGUF Q5_K disponible en otro repo; fp16 en el modelo base |
@@ -84,9 +84,9 @@ No se dispone de datos comparativos de rendimiento frente a otros modelos en la 
 
 | Modelo | Parametros | Contexto / condicion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zen-image-edit (este linaje) | 3,97B segun safetensors | hasta 3 imagenes de condicion, ~2000 tokens a 1024 px | qwen-research | HuggingFace (diffusers) |
-| Variante uint4 de GuiAworld | 3,97B segun safetensors | igual que el anterior, cuantizada a uint4 | qwen-research | HuggingFace (este repo) |
-| Version GGUF Q5_K | transformer 4,52 GiB | igual, transformer cuantizado | qwen-research | HuggingFace |
+| zen-image-edit (este linaje) | 3,97B segun safetensors | hasta 3 imagenes de condicion, ~2000 tokens a 1024 px | qwen-research | Hugging Face (diffusers) |
+| Variante uint4 de GuiAworld | 3,97B segun safetensors | igual que el anterior, cuantizada a uint4 | qwen-research | Hugging Face (este repo) |
+| Version GGUF Q5_K | transformer 4,52 GiB | igual, transformer cuantizado | qwen-research | Hugging Face |
 | Alternativas de edicion de imagen de otros proveedores | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ No se dispone de datos comparativos de rendimiento frente a otros modelos en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GuiAworld/zen-image-edit-SDNQ-uint4-turboplus
+- Modelo en Hugging Face: https://huggingface.co/GuiAworld/zen-image-edit-SDNQ-uint4-turboplus
 - Modelo base original: https://huggingface.co/AiArtLab/zen-image-edit
 - Licencia: https://huggingface.co/AiArtLab/zen-image-edit/blob/main/LICENSE
 - Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1

@@ -4,7 +4,7 @@
 
 PETR (Position Embedding Transformer) es un modelo de detección de objetos 3D en escenas de conducción autónoma que introduce la posición 3D directamente en el decodificador Transformer, evitando la construcción explícita de un mapa BEV (Bird's Eye View). Esta versión, publicada por OpenExplorer (Horizon Robotics), sustituye el backbone original del PETR (ResNet) por EfficientNet-b3, lo que permite extraer características de imágenes multivista de forma más eficiente. El modelo procesa simultáneamente seis cámaras con imágenes de 512×1408 píxeles y predice 900 cajas de detección 3D con 10 clases y 11 parámetros de regresión (centro, tamaño, orientación y velocidad).
 
-La relevancia de este modelo radica en su capacidad para ejecutarse en hardware embebido de Horizon Robotics (serie J6) con métricas de rendimiento ya medidas, lo que lo convierte en una opción práctica para despliegues en vehículos reales. Aunque el paper original (arXiv:2203.05625) utiliza ResNet, esta variante con EfficientNet-b3 está optimizada para el toolchain de Horizon, con soporte para cuantización (calibration, QAT) y despliegue en los chips J6M y J6P. El repositorio de HuggingFace contiene los pesos del modelo, aunque la licencia se indica como "other" sin especificar términos concretos.
+La relevancia de este modelo radica en su capacidad para ejecutarse en hardware embebido de Horizon Robotics (serie J6) con métricas de rendimiento ya medidas, lo que lo convierte en una opción práctica para despliegues en vehículos reales. Aunque el paper original (arXiv:2203.05625) utiliza ResNet, esta variante con EfficientNet-b3 está optimizada para el toolchain de Horizon, con soporte para cuantización (calibration, QAT) y despliegue en los chips J6M y J6P. El repositorio de Hugging Face contiene los pesos del modelo, aunque la licencia se indica como "other" sin especificar términos concretos.
 
 ## Especificaciones tecnicas
 
@@ -88,7 +88,7 @@ No se dispone de datos comparativos directos en la información proporcionada. M
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OpenExplorer/petr_efficientnetb3
+- Repositorio Hugging Face: https://huggingface.co/OpenExplorer/petr_efficientnetb3
 - Repositorio oficial PETR (megvii-research): https://github.com/megvii-research/PETR
 - Paper original (arXiv): https://arxiv.org/abs/2203.05625
 - Blog de Horizon sobre despliegue en J6: https://developer.horizon.auto/blog/14091

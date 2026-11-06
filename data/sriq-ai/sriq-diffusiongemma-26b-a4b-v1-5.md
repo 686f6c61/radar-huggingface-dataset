@@ -75,9 +75,9 @@ Prueba cualitativa adicional: en el problema IMO 1990 P3 (n² divide a 2ⁿ+1) e
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sriq-ai/sriq-diffusiongemma-26B-A4B-v1.5 | Adaptador LoRA sobre 26B-A4B (r=16) | Heredado del base (hasta 262.144 tokens en vLLM) | Adaptador PEFT sobre diffusion LM | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| kaivoss/diffusiongemma-26B-A4B-it-ALWAYS-THINK | 26B totales / ~4B activos | 262.144 tokens en vLLM | Diffusion LM block-diffusion, MoE | No disponible en la informacion | HuggingFace, servible en vLLM y SGLang |
-| unsloth/diffusiongemma-26B-A4B-it-GGUF | 26B totales / ~4B activos | No disponible | Conversion GGUF del base | No disponible en la informacion | HuggingFace, requiere build `diffusiongemma` de llama.cpp |
+| sriq-ai/sriq-diffusiongemma-26B-A4B-v1.5 | Adaptador LoRA sobre 26B-A4B (r=16) | Heredado del base (hasta 262.144 tokens en vLLM) | Adaptador PEFT sobre diffusion LM | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| kaivoss/diffusiongemma-26B-A4B-it-ALWAYS-THINK | 26B totales / ~4B activos | 262.144 tokens en vLLM | Diffusion LM block-diffusion, MoE | No disponible en la informacion | Hugging Face, servible en vLLM y SGLang |
+| unsloth/diffusiongemma-26B-A4B-it-GGUF | 26B totales / ~4B activos | No disponible | Conversion GGUF del base | No disponible en la informacion | Hugging Face, requiere build `diffusiongemma` de llama.cpp |
 
 No se dispone de informacion sobre otros adaptadores LoRA comparables para arquitecturas de difusion de texto, ni sobre alternativas autorregresivas de la misma categoria evaluadas contra este modelo.
 
@@ -95,7 +95,7 @@ No se dispone de informacion sobre otros adaptadores LoRA comparables para arqui
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sriq-ai/sriq-diffusiongemma-26B-A4B-v1.5
+- Modelo en Hugging Face: https://huggingface.co/sriq-ai/sriq-diffusiongemma-26B-A4B-v1.5
 - Modelo base: https://huggingface.co/kaivoss/diffusiongemma-26B-A4B-it-ALWAYS-THINK
 - Dataset de entrenamiento: https://huggingface.co/datasets/sriq-ai/sriq-sft-v1.5
 - GGUF prebuilt del modelo base: https://huggingface.co/unsloth/diffusiongemma-26B-A4B-it-GGUF

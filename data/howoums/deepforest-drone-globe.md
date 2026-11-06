@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio HowOums/deepforest-drone-globe es un artefacto alojado en HuggingFace por el usuario HowOums, con un tamano de repositorio de 0,3 GB, cero descargas y un "like" en el momento de la consulta. La model card publica no incluye informacion sobre arquitectura, parametros, contexto, licencia ni idiomas, por lo que no es posible confirmar que tipo de modelo contiene ni como fue entrenado.
+El repositorio HowOums/deepforest-drone-globe es un artefacto alojado en Hugging Face por el usuario HowOums, con un tamano de repositorio de 0,3 GB, cero descargas y un "like" en el momento de la consulta. La model card publica no incluye informacion sobre arquitectura, parametros, contexto, licencia ni idiomas, por lo que no es posible confirmar que tipo de modelo contiene ni como fue entrenado.
 
 El nombre del repositorio combina dos referencias reconocibles en el ambito de la teledeteccion: DeepForest, una libreria de codigo abierto para la deteccion de copas de arboles individuales en imagenes RGB, y GLOBE, el programa educativo internacional de observacion ambiental. Esto sugiere, sin que pueda confirmarse con la informacion disponible, que se trata de un modelo de vision por computador orientado a deteccion de objetos sobre imagenes de dron. Se trata de una inferencia basada unicamente en el nombre y no en datos verificables del repositorio.
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento, parametros ni licencia de este repositori
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HowOums/deepforest-drone-globe | no disponible | no disponible | no publicado | no disponible | HuggingFace, 0 descargas |
+| HowOums/deepforest-drone-globe | no disponible | no disponible | no publicado | no disponible | Hugging Face, 0 descargas |
 | Alternativas de la categoria (por ejemplo, modelos preentrenados de la libreria DeepForest) | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Detectores genericos de vision (familias tipo YOLO, RetinaNet, Faster R-CNN) | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -95,5 +95,5 @@ Cualquier comparacion requeriria disponer de la model card completa del reposito
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HowOums/deepforest-drone-globe
+- Repositorio en Hugging Face: https://huggingface.co/HowOums/deepforest-drone-globe
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

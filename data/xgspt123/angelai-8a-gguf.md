@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AngelAI-8a-gguf es un modelo de lenguaje con capacidades de vision publicado en HuggingFace por el usuario Xgspt123. Se distribuye exclusivamente en formato GGUF, listo para su uso con llama.cpp, e incluye un proyector multimodal separado (`Qwen3.5-2B.F16-mmproj.gguf`), lo que confirma que se trata de un modelo vision-language y no solo de texto. Segun la model card, el ajuste fino y la conversion a GGUF se realizaron con Unsloth, con una aceleracion declarada de 2x en el entrenamiento.
+AngelAI-8a-gguf es un modelo de lenguaje con capacidades de vision publicado en Hugging Face por el usuario Xgspt123. Se distribuye exclusivamente en formato GGUF, listo para su uso con llama.cpp, e incluye un proyector multimodal separado (`Qwen3.5-2B.F16-mmproj.gguf`), lo que confirma que se trata de un modelo vision-language y no solo de texto. Segun la model card, el ajuste fino y la conversion a GGUF se realizaron con Unsloth, con una aceleracion declarada de 2x en el entrenamiento.
 
 El dato de parametros verificable procede de los safetensors del repositorio: 1.942.653.248 parametros, es decir, aproximadamente 1,94 mil millones. Los nombres de los ficheros publicados (`Qwen3.5-2B.Q8_0.gguf`) apuntan a un modelo base de la familia Qwen3.5 en su variante de 2B, aunque la etiqueta y el nombre del repositorio usan el sufijo "8a", una discrepancia que el autor no explica en la informacion disponible. El repositorio ocupa 2,7 GB e incluye cuantizacion Q8_0 para los pesos del LLM y F16 para el proyector visual.
 
@@ -90,7 +90,7 @@ No hay datos de rendimiento comparado publicados para AngelAI-8a-gguf, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xgspt123/AngelAI-8a-gguf
+- Modelo en Hugging Face: https://huggingface.co/Xgspt123/AngelAI-8a-gguf
 - Unsloth (herramienta usada para el ajuste fino y la conversion): https://github.com/unslothai/unsloth
 - llama.cpp (runtime compatible, incluye `llama-cli` y `llama-mtmd-cli`): https://github.com/ggml-org/llama.cpp
 

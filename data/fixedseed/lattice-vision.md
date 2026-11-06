@@ -98,7 +98,7 @@ La diferencia frente a los originales no es de calidad sino de empaquetado: Latt
 ## Limitaciones y advertencias
 
 - No es un modelo propio: los pesos pertenecen a los autores originales y las condiciones de uso son las de sus licencias (MIT para BiRefNet, Apache-2.0 para mmpose y YOLOX), no las de FixedSeed.
-- La licencia declarada en HuggingFace es "other" con nombre `mit-and-apache-2.0`; conviene revisar los ficheros `LICENSE-BiRefNet-MIT.txt` y `LICENSE-mmpose-Apache-2.0.txt` antes de un uso comercial.
+- La licencia declarada en Hugging Face es "other" con nombre `mit-and-apache-2.0`; conviene revisar los ficheros `LICENSE-BiRefNet-MIT.txt` y `LICENSE-mmpose-Apache-2.0.txt` antes de un uso comercial.
 - Las entradas de BiRefNet son cuadradas y de tamaño fijo por fichero; no admiten resolución arbitraria sin reescalado externo.
 - RTMW es top-down: requiere cajas de persona previas (por eso se incluye YOLOX-tiny) y su precisión depende de la calidad de esas cajas y del recorte expandido 1,25 veces.
 - YOLOX-tiny está entrenado sobre Human-Art, por lo que su dominio es personas en contextos artísticos y puede degradarse en otras escenas.
@@ -109,7 +109,7 @@ La diferencia frente a los originales no es de calidad sino de empaquetado: Latt
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FixedSeed/lattice-vision
+- Repositorio Hugging Face: https://huggingface.co/FixedSeed/lattice-vision
 - Página del producto Lattice: https://fixedseed.com/lattice
 - BiRefNet (autores originales): https://github.com/ZhengPeng7/BiRefNet
 - MMpose / RTMPose (OpenMMLab): https://github.com/open-mmlab/mmpose/tree/main/projects/rtmpose

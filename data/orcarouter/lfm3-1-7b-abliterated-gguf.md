@@ -2,11 +2,11 @@
 
 ## Resumen
 
-LFM3-1.7B-abliterated-GGUF es una versión cuantizada en formato GGUF del modelo LFM3-1.7B-abliterated, publicado por el usuario orcarouter en HuggingFace. Se trata de una variante "abliterated" (es decir, con el comportamiento de rechazo mitigado mediante manipulación de direcciones de activación) del modelo LFM3 de 1.700 millones de parámetros de Liquid AI, una familia de modelos diseñada para despliegue en el edge. El modelo base pertenece a la tercera generación de LFM (Liquid Foundation Models), orientada a inferencia local eficiente.
+LFM3-1.7B-abliterated-GGUF es una versión cuantizada en formato GGUF del modelo LFM3-1.7B-abliterated, publicado por el usuario orcarouter en Hugging Face. Se trata de una variante "abliterated" (es decir, con el comportamiento de rechazo mitigado mediante manipulación de direcciones de activación) del modelo LFM3 de 1.700 millones de parámetros de Liquid AI, una familia de modelos diseñada para despliegue en el edge. El modelo base pertenece a la tercera generación de LFM (Liquid Foundation Models), orientada a inferencia local eficiente.
 
 La relevancia de esta ficha radica en que combina tres características poco habituales: un tamaño reducido apto para hardware de consumo, una ventana de contexto amplia para su escala y un proceso de "abliteration" que elimina los mecanismos de rechazo del modelo original. El resultado es un modelo conversacional sin filtros de seguridad alineados, lo que lo hace útil para investigación sobre comportamiento de modelos y para aplicaciones donde el modelo original resulta excesivamente restrictivo, pero también conlleva riesgos evidentes de uso indebido.
 
-El repositorio incluye únicamente pesos en formato GGUF (6,4 GB en total, lo que sugiere múltiples niveles de cuantización), está pensado para llama.cpp y motores compatibles, y requiere aceptar condiciones de acceso en HuggingFace (modelo gated). La licencia declarada es lfm1.0, la licencia propia de Liquid AI para sus modelos LFM.
+El repositorio incluye únicamente pesos en formato GGUF (6,4 GB en total, lo que sugiere múltiples niveles de cuantización), está pensado para llama.cpp y motores compatibles, y requiere aceptar condiciones de acceso en Hugging Face (modelo gated). La licencia declarada es lfm1.0, la licencia propia de Liquid AI para sus modelos LFM.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El repositorio incluye únicamente pesos en formato GGUF (6,4 GB en total, lo qu
 | Longitud de contexto | No disponible en la informacion proporcionada |
 | Tipos de cuantizacion | Multiples variantes GGUF con cuantizacion de precision mixta e imatrix (niveles concretos no disponibles) |
 | Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl (17 idiomas) |
-| Licencia | lfm1.0 (licencia propia de Liquid AI; acceso restringido en HuggingFace) |
+| Licencia | lfm1.0 (licencia propia de Liquid AI; acceso restringido en Hugging Face) |
 | Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/orcarouter/LFM3-1.7B-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/orcarouter/LFM3-1.7B-abliterated-GGUF
 - Modelo base abliterated: https://huggingface.co/orcarouter/LFM3-1.7B-abliterated
 - Liquid AI (desarrollador de LFM3): https://www.liquid.ai/
 - llama.cpp (motor de inferencia): https://github.com/ggml-org/llama.cpp

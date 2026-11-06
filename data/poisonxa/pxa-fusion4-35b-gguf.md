@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/poisonxa/PXA-Fusion4-35B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/poisonxa/PXA-Fusion4-35B-GGUF
 - Motor de inferencia pxq_llama (GitHub): https://github.com/poisonxa16/pxq_llama.cpp
 - Comunidad Discord PXA Network: https://discord.gg/BHWmMHHStY
 - Colección PXA Fusion2-35B (modelo anterior): https://huggingface.co/collections/poisonxa/pxa-fusion2-35b-a-35b-moe-for-landfill-gpus

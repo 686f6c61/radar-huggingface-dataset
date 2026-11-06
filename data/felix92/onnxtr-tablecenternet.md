@@ -72,9 +72,9 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Felix92/onnxtr-tablecenternet
+- Modelo en Hugging Face: https://huggingface.co/Felix92/onnxtr-tablecenternet
 - Repositorio de OnnxTR en GitHub: https://github.com/felixdittrich92/OnnxTR
 - Colección de modelos OnnxTR de Felix92: https://huggingface.co/collections/Felix92/onnxtr
-- Perfil del autor en HuggingFace: https://huggingface.co/Felix92
+- Perfil del autor en Hugging Face: https://huggingface.co/Felix92
 - Documentación de OnnxTR en DeepWiki: https://deepwiki.com/felixdittrich92/OnnxTR
-- Guía de modelos personalizados y HuggingFace Hub en DeepWiki: https://deepwiki.com/felixdittrich92/OnnxTR/4.3-custom-models-and-huggingface-hub
+- Guía de modelos personalizados y Hugging Face Hub en DeepWiki: https://deepwiki.com/felixdittrich92/OnnxTR/4.3-custom-models-and-huggingface-hub

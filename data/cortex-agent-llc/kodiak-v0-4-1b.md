@@ -122,11 +122,11 @@ La comparacion relevante es frente a Qwen3-8B: Kodiak iguala su precision forzad
 - Licencia: Apache-2.0, que permite uso comercial. El modelo base Ettin-encoder-1B se distribuye bajo MIT, compatible. Debe conservarse la atribucion correspondiente.
 - Sesgos: no se documenta ningun analisis de sesgos en la informacion disponible. Al ser un clasificador entrenado sobre decisiones humanas y politicas escritas, puede heredar los sesgos presentes en esas politicas y en los datos de ajuste.
 - Riesgo de error silencioso: como clasificador de etiqueta unica, una respuesta incorrecta con alta confianza es indistinguible de una correcta sin un mecanismo externo de verificacion. Se recomienda combinar la confianza con revision por muestreo.
-- Integracion: requiere la libreria kodiak y el tag de HuggingFace indica "inference: false"; no es invocable a traves de los pipelines estandar de transformers ni de las APIs de inferencia generica.
+- Integracion: requiere la libreria kodiak y el tag de Hugging Face indica "inference: false"; no es invocable a traves de los pipelines estandar de transformers ni de las APIs de inferencia generica.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cortex-agent-llc/kodiak-v0.4-1b
+- Modelo en Hugging Face: https://huggingface.co/cortex-agent-llc/kodiak-v0.4-1b
 - Variante en modo accuracy: https://huggingface.co/cortex-agent-llc/kodiak-v0.4-1b-accuracy
 - Modelo base Ettin-encoder-1B (Johns Hopkins, MIT): https://huggingface.co/jhu-clsp/ettin-encoder-1b
 - Codigo, documentacion y registro de compilacion publico: https://github.com/grizzlypeaksoftware/kodiak

@@ -85,9 +85,9 @@ Throughput declarado en la model card: aproximadamente 7.500 pares por segundo.
 
 | Modelo | Parametros | Contexto | Accuracy media NLI | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| finecat-nli-dbv3-s (este) | 70,8M | 512 | 0,7685 (macro 45 datasets) | Apache-2.0 | HuggingFace |
-| dleemiller/finecat-nli-v2-m | 150M | no disponible | 0,7942 (accuracy OpenNLI) | no disponible en la informacion | HuggingFace |
-| microsoft/deberta-v3-xsmall (base) | 70,8M (22M backbone) | 512 | no disponible como NLI sin afinado | MIT | HuggingFace |
+| finecat-nli-dbv3-s (este) | 70,8M | 512 | 0,7685 (macro 45 datasets) | Apache-2.0 | Hugging Face |
+| dleemiller/finecat-nli-v2-m | 150M | no disponible | 0,7942 (accuracy OpenNLI) | no disponible en la informacion | Hugging Face |
+| microsoft/deberta-v3-xsmall (base) | 70,8M (22M backbone) | 512 | no disponible como NLI sin afinado | MIT | Hugging Face |
 
 La model card incluye una tabla del leaderboard OpenNLI v0.2.5 en la que la variante de 150M supera a este modelo en precision global (0,7942 frente a valores no desglosados para la variante small en el fragmento disponible), a cambio de mas del doble de parametros. No se dispone de datos comparativos con otros cross-encoders NLI de terceros en la informacion proporcionada.
 
@@ -104,7 +104,7 @@ La model card incluye una tabla del leaderboard OpenNLI v0.2.5 en la que la vari
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dleemiller/finecat-nli-dbv3-s
+- Modelo en Hugging Face: https://huggingface.co/dleemiller/finecat-nli-dbv3-s
 - Demo en vivo (Space): https://huggingface.co/spaces/dleemiller/finecat-nli
 - Leaderboard OpenNLI: https://huggingface.co/spaces/dleemiller/open-nli-leaderboard
 - Dataset FineCat-NLI: https://huggingface.co/datasets/dleemiller/FineCat-NLI

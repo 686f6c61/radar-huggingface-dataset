@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sfm_unfiltered_e2e_alignment-5k_6k_7k_8k_9k_simpleavg_merge` es un merge de cinco checkpoints de un mismo modelo de lenguaje, generado con la herramienta mergekit mediante el método Linear (promedio simple). Los checkpoints provienen de un proceso de entrenamiento denominado `unfiltered_e2e_alignment`, correspondientes a los pasos globales 5000, 6000, 7000, 8000 y 9000. El modelo resultante tiene aproximadamente 6.856 millones de parámetros (6,8B) y utiliza una arquitectura GPT-NeoX, según los tags de HuggingFace.
+El modelo `sfm_unfiltered_e2e_alignment-5k_6k_7k_8k_9k_simpleavg_merge` es un merge de cinco checkpoints de un mismo modelo de lenguaje, generado con la herramienta mergekit mediante el método Linear (promedio simple). Los checkpoints provienen de un proceso de entrenamiento denominado `unfiltered_e2e_alignment`, correspondientes a los pasos globales 5000, 6000, 7000, 8000 y 9000. El modelo resultante tiene aproximadamente 6.856 millones de parámetros (6,8B) y utiliza una arquitectura GPT-NeoX, según los tags de Hugging Face.
 
 Este tipo de merge se emplea en investigación para estudiar cómo la combinación de pesos de distintos puntos de entrenamiento puede mejorar la alineación del modelo sin necesidad de un entrenamiento adicional. El modelo está pensado como un experimento técnico, no como un producto final, y carece de documentación detallada sobre sus capacidades o rendimiento.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - Memoria VRAM estimada para inferencia: con 6.856 millones de parámetros en bfloat16 (2 bytes por parámetro), el peso del modelo ocupa aproximadamente 13,7 GB. Para inferencia con precisión completa (bfloat16) se necesitan al menos 16 GB de VRAM, lo que encaja en GPUs como la RTX 4090 (24 GB) o la A100 (40/80 GB).
 - Cuantizaciones: sin datos oficiales, pero se puede estimar que una cuantización de 8 bits ocuparía ~6,9 GB y una de 4 bits ~3,4 GB, permitiendo su ejecución en GPUs de 8 GB o menos (por ejemplo, RTX 3070/3080) con las herramientas adecuadas.
 - GPUs recomendadas: A100 (40/80 GB), H100 (80 GB), RTX 4090 (24 GB) para bfloat16; RTX 3090 (24 GB) o superiores para cuantización 8-bit; GPUs de 8-12 GB para cuantización 4-bit.
-- Opciones de despliegue: al ser un modelo de la familia GPT-NeoX, es compatible con frameworks como vLLM, Text Generation Inference (TGI), llama.cpp (con conversión a GGUF) y Ollama (si se convierte previamente). También puede ejecutarse con transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo de la familia GPT-NeoX, es compatible con frameworks como vLLM, Text Generation Inference (TGI), llama.cpp (con conversión a GGUF) y Ollama (si se convierte previamente). También puede ejecutarse con transformers de Hugging Face.
 - Latencia y throughput: no se han publicado mediciones. Como referencia orientativa, un modelo de ~7B en una GPU A100 suele generar entre 20 y 50 tokens por segundo en configuraciones optimizadas, pero este dato es especulativo y no debe tomarse como oficial.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-5k_6k_7k_8k_9k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-5k_6k_7k_8k_9k_simpleavg_merge
 - Merge similar (5k_6k_7k): https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-5k_6k_7k_merge
 - Merge similar (4k_5k_6k): https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-4k_5k_6k_merge
 - Merge de misalignment (6k_7k_8k): https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-6k_7k_8k_merge

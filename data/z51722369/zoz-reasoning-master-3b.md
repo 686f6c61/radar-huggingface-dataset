@@ -100,7 +100,7 @@ Rendimiento comparado en MMLU, HumanEval, GSM8K o pruebas de function calling: n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/z51722369/ZOZ-Reasoning-Master-3B
+- Modelo en Hugging Face: https://huggingface.co/z51722369/ZOZ-Reasoning-Master-3B
 - Modelo base directo: https://huggingface.co/z51722369/ZOZ-Function-Master-3B-LongContext
 - Dataset de la etapa 1 (function calling): https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1
 - Dataset de la etapa 2 (long context): https://huggingface.co/datasets/zai-org/LongBench-v2

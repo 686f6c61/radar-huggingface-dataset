@@ -72,8 +72,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Parametros | Contexto | Calidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AuroraTTS-100K (este export) | ~95,6 K | No aplica | WER 8,5-12,3 % (Whisper small) | Apache-2.0 | GGUF en HuggingFace, 28 descargas |
-| AuroraAI-Research/AuroraTTS-100K (original) | ~95,6 K | No aplica | Referencia upstream | Apache-2.0 | Pesos originales en HuggingFace |
+| AuroraTTS-100K (este export) | ~95,6 K | No aplica | WER 8,5-12,3 % (Whisper small) | Apache-2.0 | GGUF en Hugging Face, 28 descargas |
+| AuroraAI-Research/AuroraTTS-100K (original) | ~95,6 K | No aplica | Referencia upstream | Apache-2.0 | Pesos originales en Hugging Face |
 | TTS neuronales con vocoder (p. ej. VITS, Piper) | Millones | No aplica | No disponible en esta ficha | Variable | No disponible |
 
 No se dispone de datos comparativos de benchmarks frente a alternativas concretas en la información proporcionada.
@@ -92,7 +92,7 @@ No se dispone de datos comparativos de benchmarks frente a alternativas concreta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/auroratts-100k-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/auroratts-100k-loom
 - Modelo base: https://huggingface.co/AuroraAI-Research/AuroraTTS-100K
 - Repositorio loom.cpp: https://github.com/loom-ai-org/loom.cpp
 - Repositorio loom-exporter: https://github.com/loom-ai-org/loom-exporter

@@ -36,7 +36,7 @@ Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composic
 - Explicacion de codigo: dado un bloque (por ejemplo, una clase `Greeter` con un metodo `hello`), el modelo puede explicar su funcionamiento, tal y como muestra el ejemplo oficial de `llama-cli`.
 - Escritura tecnica: el autor lo etiqueta explicitamente con `technical-writing` y `code-documentation`, por lo que esta ajustado para redactar texto tecnico explicativo, no solo codigo.
 - Flujo tipo "deepwiki": orientado a generar documentacion navegable de repositorios o modulos.
-- Generacion de texto conversacional: la ficha de HuggingFace incluye la etiqueta `conversational`.
+- Generacion de texto conversacional: la ficha de Hugging Face incluye la etiqueta `conversational`.
 - Compatibilidad con endpoints: incluye la etiqueta `endpoints_compatible`, lo que indica que puede servirse a traves de infraestructura de inferencia compatible.
 - Capacidades multilingues: no disponibles (no se declaran idiomas en la ficha ni en la model card).
 - Tool calling / function calling: no documentado.
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad / notas |
 |---|---|---|---|---|---|
-| GhostScientist/semanticwiki-coder-7b-v2-gguf | 7,6 B | 32.768 tokens | GGUF Q4_K_M (4,46 GB) | Apache-2.0 | Publicado en HuggingFace; 0 descargas y 0 likes en la fecha de consulta; sin benchmarks publicados |
+| GhostScientist/semanticwiki-coder-7b-v2-gguf | 7,6 B | 32.768 tokens | GGUF Q4_K_M (4,46 GB) | Apache-2.0 | Publicado en Hugging Face; 0 descargas y 0 likes en la fecha de consulta; sin benchmarks publicados |
 | GhostScientist/semanticwiki-coder-7b-v2-merged | 7,6 B (mismo modelo fusionado) | no disponible | GGUF F16 (aprox. 15,2 GB) como entrada de cuantizacion | Apache-2.0 | Es la fuente de la cuantizacion; requiere bastante mas memoria |
 | GhostScientist/semanticwiki-coder-7b-v2 | no disponible | no disponible | adaptador (formato no especificado) | no disponible en la informacion proporcionada | Adaptador original antes del merge |
 | Qwen/Qwen2.5-Coder-7B-Instruct | 7 B (familia Qwen2.5-Coder) | no disponible en la informacion proporcionada | safetensors (formato original, no confirmado en la informacion) | Apache-2.0 (segun la cadena de procedencia indicada) | Modelo base sobre el que se entreno el adaptador; el autor remite a su model card para terminos y condiciones |
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes, ni de 
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/GhostScientist/semanticwiki-coder-7b-v2-gguf
+- Ficha del modelo en Hugging Face: https://huggingface.co/GhostScientist/semanticwiki-coder-7b-v2-gguf
 - Modelo fusionado de origen: https://huggingface.co/GhostScientist/semanticwiki-coder-7b-v2-merged
 - Adaptador original: https://huggingface.co/GhostScientist/semanticwiki-coder-7b-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct

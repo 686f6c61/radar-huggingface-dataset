@@ -34,7 +34,7 @@ El entrenamiento se realizó mediante fine-tuning supervisado (SFT) con la libre
 - Seguimiento de instrucciones generales (fine-tuning sobre alpaca-cleaned).
 - Atención con interpretabilidad geométrica: las distancias entre tokens tienen significado métrico real, lo que podría facilitar análisis de relevancia contextual.
 - Arquitectura modular con enrutamiento por token, lo que permite inspeccionar qué rutas de atención se activan en cada posición.
-- Compatible con el ecosistema HuggingFace Transformers mediante la clase `MoAMetricLM` y `MoAMetricConfig` (código personalizado incluido en el repositorio).
+- Compatible con el ecosistema Hugging Face Transformers mediante la clase `MoAMetricLM` y `MoAMetricConfig` (código personalizado incluido en el repositorio).
 
 ## Casos de uso
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 - VRAM estimada: con 70 M de parámetros en fp32, el modelo ocupa aproximadamente 282 MB en memoria. En cuantización fp16 o bf16, alrededor de 141 MB. Cabe en cualquier GPU con más de 512 MB de VRAM.
 - GPUs recomendadas: cualquier GPU consumer moderna (NVIDIA GTX 1060 6GB, RTX 2060, RTX 3060, etc.) es suficiente para inferencia. Incluso podría ejecutarse en CPU con llama.cpp si se convierte a GGUF, aunque no se proporcionan archivos GGUF.
-- Opciones de despliegue: al ser un modelo Transformers estándar, se puede servir con vLLM, TGI o directamente con la API de HuggingFace. También es posible exportar a ONNX o convertir a GGUF para llama.cpp/Ollama.
+- Opciones de despliegue: al ser un modelo Transformers estándar, se puede servir con vLLM, TGI o directamente con la API de Hugging Face. También es posible exportar a ONNX o convertir a GGUF para llama.cpp/Ollama.
 - Latencia: al ser un modelo pequeño, la latencia en GPU es del orden de milisegundos por token (estimación razonable para 70 M). No se proporcionan mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ No se dispone de información comparativa con otros modelos de la misma categor�
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/reaperdoesntknow/Discovery)
+- [Modelo en Hugging Face](https://huggingface.co/reaperdoesntknow/Discovery)
 - [Colección DiscoverLM](https://huggingface.co/collections/reaperdoesntknow/discoverlm)
 - [Perfil del autor (Convergent Intelligence)](https://huggingface.co/reaperdoesntknow/datasets)
 - [Informe de seguridad de Protect AI](https://protectai.com/insights/models/reaperdoesntknow/Discovery/3fc7bb6d6f44bcb82d7246a6ad596aeba561b959/overview)

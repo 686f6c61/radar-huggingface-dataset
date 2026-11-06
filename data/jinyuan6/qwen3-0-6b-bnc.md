@@ -94,6 +94,6 @@ En la misma categoría de modelos de ~0,5-1 B de parámetros existen alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jinyuan6/qwen3-0.6b-bnc
+- Modelo en Hugging Face: https://huggingface.co/Jinyuan6/qwen3-0.6b-bnc
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - British National Corpus 1994 (Oxford Text Archive): https://llds.ling-phil.ox.ac.uk/llds/xmlui/handle/20.500.14106/2554?show=full

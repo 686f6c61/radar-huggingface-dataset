@@ -81,11 +81,11 @@ No se dispone en la informacion proporcionada de resultados de modelos alternati
 - No se documentan sesgos especificos, pero al entrenarse sobre un unico dataset (`cyttic/hhd-optionb-split`) puede heredar los sesgos de escritura, estilo y dominio de dicho corpus.
 - Riesgo de alucinacion en el sentido de sustituciones o inserciones de caracteres plausibles pero incorrectos, inherente a los sistemas CTC sin restricciones lexicas.
 - La licencia MIT permite uso comercial, pero el autor no ofrece garantias sobre el rendimiento fuera del conjunto de evaluacion.
-- Es un artefacto de investigacion (estudio de aumento de datos, ola 1) sin pipeline declarado en HuggingFace; conviene validar su integracion en un runtime HTR antes de usarlo en produccion.
+- Es un artefacto de investigacion (estudio de aumento de datos, ola 1) sin pipeline declarado en Hugging Face; conviene validar su integracion en un runtime HTR antes de usarlo en produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-photo1-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-photo1-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados detallados: `results.json` en el repositorio del modelo (referenciado en la model card)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada

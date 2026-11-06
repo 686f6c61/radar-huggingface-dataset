@@ -32,7 +32,7 @@ Los detalles especificos del entrenamiento (numero de imagenes de entrenamiento,
 - Funciona tanto con Krea 2 RAW como con Krea 2 Turbo, permitiendo diferentes velocidades de generacion.
 - Generacion rapida: los ejemplos muestran resultados con solo 8 pasos de inferencia y guidance scale 0.0.
 - Capacidad de adaptarse a diferentes estilos y escenarios: los ejemplos incluyen desde tomas cinematograficas hasta ilustraciones whimsical, demostrando flexibilidad del concepto aprendido.
-- Integracion con el ecosistema de diffusers de HuggingFace, lo que facilita su uso con otras herramientas y pipelines.
+- Integracion con el ecosistema de diffusers de Hugging Face, lo que facilita su uso con otras herramientas y pipelines.
 
 ## Casos de uso
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Los e
 - VRAM estimada: no disponible especificamente para este LoRA, pero depende del modelo base Krea 2. Los modelos de difusion de tamano similar suelen requerir entre 8-16 GB de VRAM para inferencia con precision bfloat16.
 - GPU recomendadas: se recomienda una GPU con al menos 16 GB de VRAM (RTX 4090, A100, H100) para un rendimiento optimo con Krea 2. GPUs con 8 GB pueden funcionar con cuantizacion o generacion mas lenta.
 - Compatibilidad con consumer GPUs: posible en GPUs de gama alta como RTX 3090/4090, pero puede requerir optimizaciones adicionales en GPUs de menor capacidad.
-- Opciones de despliegue: el modelo se usa a traves de la libreria diffusers de HuggingFace, lo que permite integracion con pipelines personalizados. Tambien es compatible con herramientas que soporten LoRA de diffusers.
+- Opciones de despliegue: el modelo se usa a traves de la libreria diffusers de Hugging Face, lo que permite integracion con pipelines personalizados. Tambien es compatible con herramientas que soporten LoRA de diffusers.
 - Latencia y throughput: no disponible, pero los ejemplos sugieren generacion en 8 pasos con Krea 2 Turbo, lo que indica tiempos de inferencia reducidos en hardware adecuado.
 
 ## Comparativa con modelos similares

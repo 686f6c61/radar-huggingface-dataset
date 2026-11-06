@@ -4,9 +4,9 @@
 
 ## Resumen
 
-froabera/speecht5_afan_oromo_final es un modelo de sintesis de voz (pipeline text-to-audio) publicado en HuggingFace por el usuario froabera. Se trata de un fine-tune sobre la arquitectura SpeechT5, segun indica la etiqueta speecht5 del repositorio, con 144.435.426 parametros (~144 M) almacenados en formato safetensors y un tamano de repositorio de 0,6 GB. El modelo se subio el 11 de octubre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes.
+froabera/speecht5_afan_oromo_final es un modelo de sintesis de voz (pipeline text-to-audio) publicado en Hugging Face por el usuario froabera. Se trata de un fine-tune sobre la arquitectura SpeechT5, segun indica la etiqueta speecht5 del repositorio, con 144.435.426 parametros (~144 M) almacenados en formato safetensors y un tamano de repositorio de 0,6 GB. El modelo se subio el 11 de octubre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes.
 
-El identificador del repositorio sugiere que el ajuste se ha orientado al afan oromo (lengua oromo, hablada principalmente en Etiopia), aunque esta circunstancia no se confirma en ninguna parte de la model card. La model card es la plantilla generada automaticamente por HuggingFace y no contiene informacion sustantiva: no documenta datos de entrenamiento, hiperparametros, licencia, idiomas ni procedencia de las voces. Tampoco se enlaza el vocoder necesario para convertir los espectrogramas mel en onda de audio, algo imprescindible en la familia SpeechT5.
+El identificador del repositorio sugiere que el ajuste se ha orientado al afan oromo (lengua oromo, hablada principalmente en Etiopia), aunque esta circunstancia no se confirma en ninguna parte de la model card. La model card es la plantilla generada automaticamente por Hugging Face y no contiene informacion sustantiva: no documenta datos de entrenamiento, hiperparametros, licencia, idiomas ni procedencia de las voces. Tampoco se enlaza el vocoder necesario para convertir los espectrogramas mel en onda de audio, algo imprescindible en la familia SpeechT5.
 
 Su relevancia potencial reside en el nicho de la sintesis de voz para lenguas de bajos recursos: un modelo de ~144 M de parametros es desplegable en CPU y en hardware de consumo, y el oromo cuenta con pocos recursos TTS publicos. No obstante, la ausencia total de evaluacion, de licencia y de documentacion de datos impide considerarlo hoy listo para produccion sin una validacion previa por parte de quien lo adopte.
 
@@ -76,10 +76,10 @@ No se dispone de datos verificados de este modelo (ni metricas, ni licencia, ni 
 
 | Modelo | Parametros | Tipo | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| froabera/speecht5_afan_oromo_final | ~144 M | SpeechT5 fine-tune TTS | No disponible (nombre sugiere afan oromo) | No disponible | HuggingFace, 0 descargas |
-| microsoft/speecht5_tts | ~144 M | SpeechT5 base TTS (multihablante, ingles) | Ingles | No verificada en esta ficha | HuggingFace, ampliamente usado |
-| MMS-TTS (Meta) | ~36 M por idioma (VITS) | TTS end-to-end por lengua | Catalogo amplio de lenguas; cobertura de oromo no verificada | No verificada en esta ficha | HuggingFace, un checkpoint por idioma |
-| XTTS-v2 (Coqui) | ~470 M | TTS multilingue con clonacion de voz | Multilingue (sin oromo confirmado) | No verificada en esta ficha | HuggingFace, con restricciones de uso |
+| froabera/speecht5_afan_oromo_final | ~144 M | SpeechT5 fine-tune TTS | No disponible (nombre sugiere afan oromo) | No disponible | Hugging Face, 0 descargas |
+| microsoft/speecht5_tts | ~144 M | SpeechT5 base TTS (multihablante, ingles) | Ingles | No verificada en esta ficha | Hugging Face, ampliamente usado |
+| MMS-TTS (Meta) | ~36 M por idioma (VITS) | TTS end-to-end por lengua | Catalogo amplio de lenguas; cobertura de oromo no verificada | No verificada en esta ficha | Hugging Face, un checkpoint por idioma |
+| XTTS-v2 (Coqui) | ~470 M | TTS multilingue con clonacion de voz | Multilingue (sin oromo confirmado) | No verificada en esta ficha | Hugging Face, con restricciones de uso |
 
 Las cifras de parametros y cobertura de lenguas de los modelos alternativos deben confirmarse en sus respectivas model cards antes de tomar decisiones de adopcion.
 
@@ -98,7 +98,7 @@ Las cifras de parametros y cobertura de lenguas de los modelos alternativos debe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/froabera/speecht5_afan_oromo_final
+- Modelo en Hugging Face: https://huggingface.co/froabera/speecht5_afan_oromo_final
 - Referencia citada en las etiquetas del repositorio: arXiv:1910.09700 (Lacoste et al., 2019, calculadora de impacto de carbono incluida en la plantilla de model card), https://arxiv.org/abs/1910.09700
 - Referencias del modelo base (no enlazadas en la model card, proporcionadas a titulo informativo): articulo SpeechT5, https://arxiv.org/abs/2010.09714 ; modelo base, https://huggingface.co/microsoft/speecht5_tts
 - Repositorio, demo o blog del autor: no disponibles en la informacion proporcionada.

@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks de capacidad ni comparaciones numer
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento de seguridad | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l3_remove20_swapgapiter_b010_r05 | 8,03 B (0,7998 de densidad) | 8.192 tokens (heredado, no explicitado) | Llama 3 Community License | AdvBench ASR 0,0350; StrongREJECT ASR 0,0700; over-refusal 0,1325 | HuggingFace, safetensors |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B densos | 8.192 tokens | Llama 3 Community License | No disponible en la informacion proporcionada (referencia de partida del estudio) | HuggingFace, safetensors |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B densos | 128.000 tokens | Llama 3.1 Community License | No disponible en la informacion proporcionada | HuggingFace, safetensors |
+| svd-safety-l3_remove20_swapgapiter_b010_r05 | 8,03 B (0,7998 de densidad) | 8.192 tokens (heredado, no explicitado) | Llama 3 Community License | AdvBench ASR 0,0350; StrongREJECT ASR 0,0700; over-refusal 0,1325 | Hugging Face, safetensors |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B densos | 8.192 tokens | Llama 3 Community License | No disponible en la informacion proporcionada (referencia de partida del estudio) | Hugging Face, safetensors |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B densos | 128.000 tokens | Llama 3.1 Community License | No disponible en la informacion proporcionada | Hugging Face, safetensors |
 
 La comparacion con otras tecnicas de compresion (por ejemplo, otras reglas de seleccion de la misma rejilla experimental) no puede completarse porque la model card no publica los resultados de las celdas restantes. No disponible.
 
@@ -95,7 +95,7 @@ La comparacion con otras tecnicas de compresion (por ejemplo, otras reglas de se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r05
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r05
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Metodo de compresion citado (SVD-LLM): mencionado en la model card sin enlace proporcionado
 - Resultados de busqueda web: no se han encontrado enlaces relevantes (la busqueda devolvio exclusivamente contenido no relacionado con el modelo)

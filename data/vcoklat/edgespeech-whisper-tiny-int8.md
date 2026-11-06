@@ -75,6 +75,6 @@ No se dispone de datos de benchmarks para comparar el rendimiento entre el model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VCoklat/edgespeech-whisper-tiny-int8
+- Modelo en Hugging Face: https://huggingface.co/VCoklat/edgespeech-whisper-tiny-int8
 - Repositorio de OpenAI Whisper: https://github.com/openai/whisper
-- Modelo base openai/whisper-tiny en HuggingFace: https://huggingface.co/openai/whisper-tiny
+- Modelo base openai/whisper-tiny en Hugging Face: https://huggingface.co/openai/whisper-tiny

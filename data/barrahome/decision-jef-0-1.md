@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Decision-Jef-0.1 es un modelo de clasificación de texto de 307.336.448 parámetros publicado por el usuario BarraHome (Alberto Ferrer) en HuggingFace, con licencia MIT y pipeline `text-classification`. Es un fine-tune del encoder multilingüe `jhu-clsp/mmBERT-base`, de la familia ModernBERT, y pertenece a la línea de modelos "System One" de decisiones tipadas que el autor asocia a Jev AI / TypeSafe AI. Su función no es generar texto, sino responder varias preguntas definidas en tiempo de ejecución sobre un mismo estado de entrada en una sola pasada hacia delante, devolviendo una distribución de probabilidad sobre exactamente las opciones que el usuario proporciona.
+Decision-Jef-0.1 es un modelo de clasificación de texto de 307.336.448 parámetros publicado por el usuario BarraHome (Alberto Ferrer) en Hugging Face, con licencia MIT y pipeline `text-classification`. Es un fine-tune del encoder multilingüe `jhu-clsp/mmBERT-base`, de la familia ModernBERT, y pertenece a la línea de modelos "System One" de decisiones tipadas que el autor asocia a Jev AI / TypeSafe AI. Su función no es generar texto, sino responder varias preguntas definidas en tiempo de ejecución sobre un mismo estado de entrada en una sola pasada hacia delante, devolviendo una distribución de probabilidad sobre exactamente las opciones que el usuario proporciona.
 
 La diferencia técnica clave frente a un clasificador convencional es que no existe una cabeza de clasificación sobre un conjunto fijo de etiquetas: el espacio de respuesta se construye a partir de la petición, de modo que un valor que no se ha ofrecido no es representable, no solo improbable. El modelo maneja tres tipos de decisión en el conjunto de evaluación publicado (`choice`, `noul` y `score`) y reporta una latencia de 12,2 ms para tres decisiones en una única pasada, además de un error de calibración esperado (ECE) de 0,043 tal cual se distribuye, con temperaturas por cubeta que vienen incluidas pero desactivadas por defecto.
 
@@ -130,7 +130,7 @@ Distribución de la posición de la respuesta correcta en el benchmark (las preg
 
 | Modelo | Parámetros | Contexto | Global (tipado) | ECE (10 bins) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| **Decision-Jef-0.1** | 307.336.448 | no disponible | 77,80 | 0,043 | MIT | HuggingFace, repo de 6,2 GB, 56 descargas |
+| **Decision-Jef-0.1** | 307.336.448 | no disponible | 77,80 | 0,043 | MIT | Hugging Face, repo de 6,2 GB, 56 descargas |
 | Decision-1.0-Lex | no disponible | no disponible | **78,15** | no disponible | no disponible | publicado según el autor; referencia del benchmark |
 | Laya Typed Decisions | no disponible | no disponible | 76,60 | 0,213 | no disponible | publicado según el autor |
 | Jev | no disponible | no disponible | no disponible | 0,144 | no disponible | servicio de TypeSafe AI (jevai.net, jevtypesafe.org), según la búsqueda web |
@@ -153,10 +153,10 @@ Frente a Lex, Decision-Jef-0.1 gana en `choice` (75,00 frente a 74,00) y queda 0
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BarraHome/Decision-Jef-0.1
+- Modelo en Hugging Face: https://huggingface.co/BarraHome/Decision-Jef-0.1
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Paquete en PyPI: https://pypi.org/project/decision-jef/
 - Repositorio en GitHub: https://github.com/bet0x/decision-jef
-- Perfil del autor en HuggingFace: https://huggingface.co/BarraHome/models
+- Perfil del autor en Hugging Face: https://huggingface.co/BarraHome/models
 - Jev AI: https://jevai.net/
 - Jev / TypeSafe AI System One Model: https://jevtypesafe.org/

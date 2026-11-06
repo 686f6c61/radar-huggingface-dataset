@@ -86,7 +86,7 @@ No se dispone de informacion sobre otros LoRA comparables de la misma categoria 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fidel1234/Krea2_Asian_Character
+- Modelo en Hugging Face: https://huggingface.co/fidel1234/Krea2_Asian_Character
 - Modelo base Krea-2-Raw: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Krea-2-Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - AI-Toolkit: framework de entrenamiento citado en la model card, sin URL incluida en la informacion disponible.

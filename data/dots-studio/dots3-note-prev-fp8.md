@@ -75,8 +75,8 @@ No se dispone de datos comparativos publicados con otros modelos MoE de tamaño 
 
 ## Enlaces
 
-- HuggingFace (FP8): https://huggingface.co/dots-studio/dots3-note-prev-fp8
-- HuggingFace (BF16): https://huggingface.co/dots-studio/dots3-note-prev
+- Hugging Face (FP8): https://huggingface.co/dots-studio/dots3-note-prev-fp8
+- Hugging Face (BF16): https://huggingface.co/dots-studio/dots3-note-prev
 - GitHub: https://github.com/studio-dots-ai/dots3-note-prev
 - ModelScope (FP8): https://modelscope.cn/models/dots-studio/dots3-note-prev-fp8
 - ModelScope (BF16): https://modelscope.cn/models/dots-studio/dots3-note-prev

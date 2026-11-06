@@ -72,7 +72,7 @@ No disponible. No se proporcionan datos de comparación con otros modelos de la 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Wondernutts/G4-Dark-Soul-26B-A4B-int4-ov
+- Repositorio Hugging Face del modelo: https://huggingface.co/Wondernutts/G4-Dark-Soul-26B-A4B-int4-ov
 - Modelo base (Vortex5): https://huggingface.co/Vortex5/G4-Dark-Soul-26B-A4B
 - Componente G4-MeroMero: https://huggingface.co/zerofata/G4-MeroMero-26B-A4B
 - Componente Animus: https://huggingface.co/Darkhn/Gemma-4-26B-A4B-Animus-V14.1-FFT

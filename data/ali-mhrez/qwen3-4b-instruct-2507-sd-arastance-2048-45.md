@@ -54,8 +54,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-4B-Instruct-2507-SD-AraStance-2048-45 | 4B | no disponible | no disponible | HuggingFace |
-| unsloth/Qwen3-4B-Instruct-2507 (base) | 4B | no disponible | no disponible | HuggingFace |
+| Qwen3-4B-Instruct-2507-SD-AraStance-2048-45 | 4B | no disponible | no disponible | Hugging Face |
+| unsloth/Qwen3-4B-Instruct-2507 (base) | 4B | no disponible | no disponible | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables en la misma categoría.
 
@@ -69,6 +69,6 @@ No se dispone de información sobre otros modelos comparables en la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-2048-45
+- Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-2048-45
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - TRL: https://github.com/huggingface/trl

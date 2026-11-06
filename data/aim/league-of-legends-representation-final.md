@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Aim/league-of-legends-representation-final` es un encoder Transformer compacto desarrollado por Michael Diaz-Stewart (cuenta de HuggingFace `Aim`) que transforma resúmenes estructurados de partidas de League of Legends en embeddings contextuales de jugador y representaciones de partida completa. No es un modelo generativo de lenguaje, sino un modelo de representación tabular especializado en datos de esports: codifica 494 escalares numéricos/binarios, 40 categorías escalares y 42 colecciones de vectores de conteo en tokens de 256 dimensiones.
+El modelo `Aim/league-of-legends-representation-final` es un encoder Transformer compacto desarrollado por Michael Diaz-Stewart (cuenta de Hugging Face `Aim`) que transforma resúmenes estructurados de partidas de League of Legends en embeddings contextuales de jugador y representaciones de partida completa. No es un modelo generativo de lenguaje, sino un modelo de representación tabular especializado en datos de esports: codifica 494 escalares numéricos/binarios, 40 categorías escalares y 42 colecciones de vectores de conteo en tokens de 256 dimensiones.
 
 La relevancia del modelo reside en su enfoque de aprendizaje autosupervisado mediante reconstrucción enmascarada sobre 1.000.000 de partidas de ranked solo/duo (cola 420) de los parches 16.1–16.20, procedentes de las regiones NA, EUW y KR. Con solo 3.644.584 parámetros (incluyendo el decodificador), demuestra que un Transformer pequeño y bien diseñado puede extraer representaciones útiles de datos tabulares estructurados sin necesidad de modelos de lenguaje de gran escala.
 
@@ -81,7 +81,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aim/league-of-legends-representation-final
+- Hugging Face: https://huggingface.co/Aim/league-of-legends-representation-final
 - Código fuente y ejemplos: https://github.com/MikeDiaz1/league-of-legends-representation-model-public
 - Arquitectura: https://github.com/MikeDiaz1/league-of-legends-representation-model-public/blob/main/docs/model.md
 - Contrato de entrada: https://github.com/MikeDiaz1/league-of-legends-representation-model-public/blob/main/docs/inputs.md

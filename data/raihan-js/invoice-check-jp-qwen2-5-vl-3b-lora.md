@@ -116,7 +116,7 @@ La busqueda web realizada no aporto informacion sobre modelos comparables de ext
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raihan-js/invoice-check-jp-qwen2.5-vl-3b-lora
+- Modelo en Hugging Face: https://huggingface.co/raihan-js/invoice-check-jp-qwen2.5-vl-3b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Licencia del modelo base (Qwen Research License): https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/raihan-js/invoice-check-jp

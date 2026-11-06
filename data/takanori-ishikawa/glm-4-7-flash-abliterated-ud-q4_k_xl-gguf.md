@@ -105,7 +105,7 @@ Las tres variantes abliterated tienen rendimiento de capacidad practicamente ide
 
 ## Enlaces
 
-- Repo HuggingFace: https://huggingface.co/takanori-ishikawa/GLM-4.7-Flash-Abliterated-UD-Q4_K_XL-GGUF
+- Repo Hugging Face: https://huggingface.co/takanori-ishikawa/GLM-4.7-Flash-Abliterated-UD-Q4_K_XL-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-4.7-Flash
 - Cuantizacion de Unsloth: https://huggingface.co/unsloth/GLM-4.7-Flash-GGUF
 - Variante huihui-ai comparada: https://huggingface.co/mradermacher/Huihui-GLM-4.7-Flash-abliterated-GGUF

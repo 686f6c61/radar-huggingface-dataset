@@ -102,9 +102,9 @@ Notas de alcance aportadas por el autor: Nimble tiene 282 elementos, VitaminC 59
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| autotrust/JEV-27B | 26,9B | No disponible | Media seis grupos 84,07; KL 0,0186; HumanEval 0,78 | Apache-2.0 | Pesos abiertos en HuggingFace |
+| autotrust/JEV-27B | 26,9B | No disponible | Media seis grupos 84,07; KL 0,0186; HumanEval 0,78 | Apache-2.0 | Pesos abiertos en Hugging Face |
 | TypeSafe Jev 1.13 | No disponible | No disponible | Media seis grupos 83,85 | No disponible (modelo cerrado, API alojada) | Solo API |
-| NeoHorse-Jev-4B | No disponible en la informacion disponible | No disponible | Media seis grupos 77,70 | No disponible | Pesos abiertos (referenciado en HuggingFace) |
+| NeoHorse-Jev-4B | No disponible en la informacion disponible | No disponible | Media seis grupos 77,70 | No disponible | Pesos abiertos (referenciado en Hugging Face) |
 | Open-Jev-9B | No disponible en la informacion disponible | No disponible | Media seis grupos 75,67 | No disponible | Pesos abiertos |
 | Kev-4B | No disponible en la informacion disponible | No disponible | Media seis grupos 74,25 | No disponible | Pesos abiertos |
 | Laya English | No disponible en la informacion disponible | No disponible | Media seis grupos 58,24 | No disponible | Pesos abiertos |
@@ -127,8 +127,8 @@ La comparativa se limita a los modelos de decision que aparecen en la tabla de b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/autotrust/JEV-27B
-- Blog del autor en HuggingFace: https://huggingface.co/blog/autotrust/autotrustjev-27b-fast-calibrated-decisions-and-ful
+- Modelo en Hugging Face: https://huggingface.co/autotrust/JEV-27B
+- Blog del autor en Hugging Face: https://huggingface.co/blog/autotrust/autotrustjev-27b-fast-calibrated-decisions-and-ful
 - Nota de prensa de AutoTrust AI: https://www.prnewswire.com/news-releases/autotrust-ai-releases-jev-27b-an-open-decision-model-for-self-hosted-ai-agents-302891720.html
 - Cobertura en SMB Daily Leader: https://smb.dailyleader.com/article/AutoTrust-AI-Releases-JEV-27B-an-Open-Decision-Model-for-Self-Hosted-AI-Agents/6aba9a65fb7acafcb4abee43
 - Analisis en RuntimeWire: https://runtimewire.com/article/autotrust-ai-jev-27b-self-hosted-decision-model

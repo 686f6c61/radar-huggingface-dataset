@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "ayeeyokoris/MOSS-TTS-Nano-Somali",
+  "slug": "ayeeyokoris-moss-tts-nano-somali",
+  "author": "ayeeyokoris",
+  "url": "https://huggingface.co/ayeeyokoris/MOSS-TTS-Nano-Somali",
+  "created_at": "2026-11-06T10:34:55.000Z",
+  "updated_at": "2026-11-06T11:47:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "so"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "moss_tts_nano",
+    "text-to-speech",
+    "audio",
+    "somali",
+    "moss-tts",
+    "custom_code",
+    "so",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 142477056,
+  "parameters_human": "142.5M",
+  "storage_bytes": 2514875736,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ayeeyokoris (ayeeyokoris) – Datasets - Hugging Face",
+      "url": "https://huggingface.co/ayeeyokoris/datasets",
+      "snippet": "ayeeyokoris's datasets5 Sort: Recently updated ayeeyokoris/somali-speech-asr-moss-nano-8cb-dedup Viewer •Updated 2 days ago•64.1k• 40"
+    },
+    {
+      "title": "GitHub - OpenMOSS/MOSS-TTS-Nano: A 100M-parameter multilingual TTS ...",
+      "url": "https://github.com/OpenMOSS/MOSS-TTS-Nano",
+      "snippet": "MOSS-TTS-Nano is an open-source multilingual tiny speech generation model from MOSI.AI and the OpenMOSS team. With only 0.1B parameters, it is designed for realtime speech generation, can run directly on CPU without a GPU, and keeps the deployment stack simple enough for local demos, web serving, and lightweight product integration."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-s1_corrective_kl100` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995, con 1.414.111.232 parámetros totales según el recuento real de los ficheros safetensors del repositorio (2,8 GB, lo que corresponde a pesos en precisión de 16 bits). El tag `qwen3` asociado al repositorio indica que se trata de un derivado de la familia Qwen3, probablemente un ajuste fino o un checkpoint intermedio de un proceso de entrenamiento, aunque no se ha publicado documentación que lo confirme.
+`alfred8995/r17-bk-pf-s1_corrective_kl100` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995, con 1.414.111.232 parámetros totales según el recuento real de los ficheros safetensors del repositorio (2,8 GB, lo que corresponde a pesos en precisión de 16 bits). El tag `qwen3` asociado al repositorio indica que se trata de un derivado de la familia Qwen3, probablemente un ajuste fino o un checkpoint intermedio de un proceso de entrenamiento, aunque no se ha publicado documentación que lo confirme.
 
 El nombre del repositorio sugiere un checkpoint de investigación más que un modelo de publicación estable: los componentes `r17`, `corrective` y `kl100` apuntan a una decimoséptima iteración de entrenamiento con algún tipo de corrección por divergencia KL y un coeficiente de peso 100. Esta lectura es una inferencia a partir del identificador, no un dato confirmado por el autor.
 
@@ -71,7 +71,7 @@ Comparación con alternativas de tamaño equivalente, usando datos públicos de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `alfred8995/r17-bk-pf-s1_corrective_kl100` | 1,41B | No disponible | `other` | Gated en HuggingFace | Sin benchmarks ni model card |
+| `alfred8995/r17-bk-pf-s1_corrective_kl100` | 1,41B | No disponible | `other` | Gated en Hugging Face | Sin benchmarks ni model card |
 | Qwen3-1.7B | 1,7B | 32.768 tokens (ampliable por configuración) | Apache 2.0 | Abierta | Modelo base de la familia indicada por el tag |
 | Llama 3.2 1B | 1,24B | 128.000 tokens | Llama 3.2 Community License | Abierta | Requiere aceptar licencia; buenas capacidades multilingües |
 | Gemma 3 1B | ~1B | 32.000 tokens | Gemma Terms of Use | Abierta | Multimodal en variantes superiores; la de 1B es solo texto |
@@ -81,7 +81,7 @@ La comparación de rendimiento no es posible: el modelo objeto de la ficha no pu
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación: no hay model card descriptiva, ni ficha de datos, ni resultados de evaluación. Cualquier uso en producción exige una batería de pruebas propia.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que puede implicar términos adicionales no visibles en la licencia `other`.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que puede implicar términos adicionales no visibles en la licencia `other`.
 - Licencia ambigua: la etiqueta `other` no especifica permisos de uso comercial, redistribución ni modificación. No debe asumirse uso comercial libre.
 - Riesgo de alucinación: no cuantificado. Al tratarse de un checkpoint intermedio de entrenamiento, es esperable un comportamiento menos alineado que el de un modelo final, pero no hay evidencia publicada al respecto.
 - Sesgos: desconocidos, al no haberse publicado la composición del dataset de entrenamiento.
@@ -93,5 +93,5 @@ La comparación de rendimiento no es posible: el modelo objeto de la ficha no pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-s1_corrective_kl100
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-s1_corrective_kl100
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados devueltos no guardan relación con el modelo.

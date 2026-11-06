@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ibm-research/qaoa_angles.max_cut.p3.gnn` es un modelo publicado por la organizacion de investigacion de IBM en HuggingFace. El identificador del repositorio indica que se trata de una red neuronal de grafos (GNN) entrenada para predecir los angulos (parametros variacionales) de un circuito QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema Max-Cut con profundidad p=3. Es decir, no es un modelo de lenguaje, sino un modelo de regresion sobre grafos orientado a optimizacion combinatoria en el contexto de computacion cuantica hibrida.
+`ibm-research/qaoa_angles.max_cut.p3.gnn` es un modelo publicado por la organizacion de investigacion de IBM en Hugging Face. El identificador del repositorio indica que se trata de una red neuronal de grafos (GNN) entrenada para predecir los angulos (parametros variacionales) de un circuito QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema Max-Cut con profundidad p=3. Es decir, no es un modelo de lenguaje, sino un modelo de regresion sobre grafos orientado a optimizacion combinatoria en el contexto de computacion cuantica hibrida.
 
 El modelo se distribuye en formato ONNX y con licencia Apache 2.0. Sin embargo, la model card publicada esta practicamente vacia: solo contiene la declaracion de licencia. No se documentan la arquitectura concreta, el dataset de entrenamiento, el tamano del modelo ni resultados de evaluacion.
 
@@ -20,7 +20,7 @@ La relevancia de este tipo de modelos radica en el cuello de botella clasico de 
 | Idiomas soportados | no disponible (no aplica: no procesa texto) |
 | Licencia | apache-2.0 |
 | Formato de pesos | ONNX |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Pipeline declarado | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-14 |
@@ -81,8 +81,8 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p3.gnn
-- Organizacion en HuggingFace: https://huggingface.co/ibm-research
+- Modelo en Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p3.gnn
+- Organizacion en Hugging Face: https://huggingface.co/ibm-research
 - Resultados de la busqueda web: no se han encontrado enlaces tecnicos relevantes. Las busquedas devolvieron unicamente paginas corporativas y enciclopedicas generales sobre IBM (https://www.ibm.com/, https://es.wikipedia.org/wiki/IBM, https://en.wikipedia.org/wiki/IBM), sin relacion con este modelo concreto.
 - Paper o blog tecnico asociado: no disponible.
 - Repositorio de codigo o demo: no disponible.

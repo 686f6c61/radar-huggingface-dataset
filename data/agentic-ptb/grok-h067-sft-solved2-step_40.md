@@ -76,6 +76,6 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h067.sft-solved2.step_40
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h067.sft-solved2.step_40
 - Modelo base (referenciado en la ficha): `Qwen/Qwen3.5-9B-Base` (URL no proporcionada en la información disponible)
 - Índice del sweep (mencionado en la card): `agentic-ptb/INDEX` (URL no proporcionada)

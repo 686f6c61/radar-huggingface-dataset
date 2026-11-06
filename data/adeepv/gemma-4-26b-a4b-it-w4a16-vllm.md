@@ -105,7 +105,7 @@ No se dispone de comparaciones con otros modelos MoE de tamaño similar (p. ej.,
 
 ## Enlaces
 
-- Repositorio HuggingFace del repack: https://huggingface.co/adeepv/gemma-4-26B-A4B-it-W4A16-vLLM
+- Repositorio Hugging Face del repack: https://huggingface.co/adeepv/gemma-4-26B-A4B-it-W4A16-vLLM
 - Checkpoint base (QAT, GGUF): https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-unquantized
 - Términos de licencia Gemma: https://ai.google.dev/gemma/terms
 - No se han encontrado papers, blogs o demos adicionales en la búsqueda web (los resultados obtenidos eran irrelevantes).

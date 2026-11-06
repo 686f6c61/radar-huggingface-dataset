@@ -82,8 +82,8 @@ No se dispone en la información proporcionada de datos comparativos directos co
 
 ## Enlaces
 
-- Ficha y archivos en HuggingFace: https://huggingface.co/BrandiesPatrick/Ouro-1.4B-Thinking-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/ByteDance/Ouro-1.4B-Thinking
+- Ficha y archivos en Hugging Face: https://huggingface.co/BrandiesPatrick/Ouro-1.4B-Thinking-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/ByteDance/Ouro-1.4B-Thinking
 - Conversión GGUF del modelo base no-thinking: https://huggingface.co/BrandiesPatrick/Ouro-1.4B-GGUF
 - Repositorio con el parche y el evaluador: https://github.com/BrandeisPatrick/loop-transformer
 - Artículo técnico en arXiv: https://arxiv.org/abs/2510.25741

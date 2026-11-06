@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `saqibabid55/gptttt` es un repositorio alojado en HuggingFace que, según la información disponible, no contiene una model card sustancial ni metadatos técnicos. El autor es `saqibabid55`, la licencia declarada es MIT y la región asociada es Estados Unidos. Sin embargo, no se proporcionan detalles sobre arquitectura, tamaño, contexto, idiomas o pipeline. El repositorio fue creado y actualizado el 1 de septiembre de 2026, y no registra descargas ni valoraciones.
+El modelo `saqibabid55/gptttt` es un repositorio alojado en Hugging Face que, según la información disponible, no contiene una model card sustancial ni metadatos técnicos. El autor es `saqibabid55`, la licencia declarada es MIT y la región asociada es Estados Unidos. Sin embargo, no se proporcionan detalles sobre arquitectura, tamaño, contexto, idiomas o pipeline. El repositorio fue creado y actualizado el 1 de septiembre de 2026, y no registra descargas ni valoraciones.
 
 Dado que la model card únicamente incluye la línea `license: mit` y no hay documentación adicional, este repositorio parece ser un espacio vacío o de prueba, sin un modelo real subyacente. No es posible evaluar sus capacidades, rendimiento o idoneidad para ningún caso de uso. Se recomienda precaución antes de intentar utilizarlo, ya que la ausencia de archivos de pesos o documentación técnica impide cualquier verificación.
 
@@ -54,4 +54,4 @@ No disponible. No se puede comparar este modelo con alternativas de la misma cat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/saqibabid55/gptttt
+- Repositorio en Hugging Face: https://huggingface.co/saqibabid55/gptttt

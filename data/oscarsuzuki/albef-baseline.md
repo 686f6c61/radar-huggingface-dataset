@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`oscarsuzuki/albef-baseline` es una implementación compacta y personalizada del modelo Albef (Align before Fuse) orientada a tareas de matching entre modalidades. La publica el usuario `oscarsuzuki` en HuggingFace como un repositorio de referencia para revisión de código, pruebas de humo y experimentos controlados. El checkpoint incluido (`model.safetensors`) no es un modelo entrenado, sino una inicialización válida para pruebas de humo; el autor indica explícitamente que no se presenta como un release preentrenado ni se reclama ninguna puntuación de benchmark.
+`oscarsuzuki/albef-baseline` es una implementación compacta y personalizada del modelo Albef (Align before Fuse) orientada a tareas de matching entre modalidades. La publica el usuario `oscarsuzuki` en Hugging Face como un repositorio de referencia para revisión de código, pruebas de humo y experimentos controlados. El checkpoint incluido (`model.safetensors`) no es un modelo entrenado, sino una inicialización válida para pruebas de humo; el autor indica explícitamente que no se presenta como un release preentrenado ni se reclama ninguna puntuación de benchmark.
 
 La configuración declarada es "xlarge", pero el número total de parámetros es de 33.088, lo que revela una implementación muy reducida en comparación con la escala habitual de Albef. La arquitectura incluye atención linear, co-atencion, activación mish y normalización groupnorm. No se dispone de información sobre la longitud de contexto ni sobre los idiomas soportados. El repositorio está destinado a servir como punto de partida experimental, no como un modelo utilizable en producción.
 
@@ -64,10 +64,10 @@ No se dispone de modelos comparables en la información proporcionada. Al tratar
 - El checkpoint no ha sido entrenado, por lo que no es apto para ninguna tarea real ni para uso en producción.
 - No se ha auditado en cuanto a sesgos, robustez, equidad ni transferencia entre dominios.
 - No se dispone de información sobre riesgos de alucinación, ya que el modelo no genera salidas útiles.
-- La implementación requiere un adaptador explícito para las APIs automáticas de carga de HuggingFace, según el autor.
+- La implementación requiere un adaptador explícito para las APIs automáticas de carga de Hugging Face, según el autor.
 - La licencia BSD-3-Clause permite uso comercial, pero el modelo no ofrece valor práctico hasta que se entrene y evalúe adecuadamente.
 - Cualquier resultado futuro de un checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/oscarsuzuki/albef-baseline
+- Repositorio de Hugging Face: https://huggingface.co/oscarsuzuki/albef-baseline

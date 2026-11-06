@@ -104,7 +104,7 @@ Needle in a haystack (hastack wikitext-2, aguja sintética, profundidades 10-90 
 
 | Modelo | Parámetros | Contexto | Aceleración de prefill | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RidgeFill-Projector (este) | 335,6 M (mapas) sobre Llama-3.1-8B | según base; ejemplo 32K | 1,26× a 1,74× (8K-32K, RTX 4090) | llama3.1 | HuggingFace, GGUF y safetensors |
+| RidgeFill-Projector (este) | 335,6 M (mapas) sobre Llama-3.1-8B | según base; ejemplo 32K | 1,26× a 1,74× (8K-32K, RTX 4090) | llama3.1 | Hugging Face, GGUF y safetensors |
 | Relleno identidad (baseline del paper) | 0 (sin mapas) | según base | 1× (referencia) | llama3.1 | implementado en el fork |
 | Checkpoint SwiftKV | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -124,7 +124,7 @@ En el estudio de referencia, el checkpoint SwiftKV publicado queda a +0,010 nats
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheCacheIsALie/Llama-3.1-8B-Instruct-RidgeFill-Projector
+- Hugging Face: https://huggingface.co/TheCacheIsALie/Llama-3.1-8B-Instruct-RidgeFill-Projector
 - Repositorio de datos y código: https://github.com/Approximate-Science/ridgefill-data
 - Fork de llama.cpp: https://github.com/Approximate-Science/llama.cpp-ridgefill
 - Instrucciones del fork: https://github.com/Approximate-Science/llama.cpp-ridgefill/blob/main/RIDGEFILL.md

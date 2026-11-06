@@ -72,12 +72,12 @@ La principal diferencia frente a las versiones sin cuantizar es la reducción dr
 - La licencia qwen-community-1.0 permite el uso comercial, pero impone restricciones: si el producto supera los 100 millones de usuarios activos mensuales, se requiere un permiso explícito de Qwen.
 - La cuantización NVFP4 (4 bits) puede introducir una degradación en la precisión con respecto a las versiones BF16 o FP8, especialmente en tareas de razonamiento complejo o matemáticas.
 - El modelo solo soporta inglés y chino; no se garantiza un rendimiento adecuado en otros idiomas.
-- El acceso al repositorio en HuggingFace es restringido (gated), por lo que es necesario aceptar las condiciones de uso antes de poder descargar los pesos.
+- El acceso al repositorio en Hugging Face es restringido (gated), por lo que es necesario aceptar las condiciones de uso antes de poder descargar los pesos.
 - La tabla N-gram de 51 B se almacena en RAM del host, lo que puede convertirse en un cuello de botella si la memoria del sistema no es lo suficientemente rápida o si hay contención con otros procesos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mazinb/Qwen3.8-Flash-Next-Uncensored-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/mazinb/Qwen3.8-Flash-Next-Uncensored-NVFP4
 - Modelo base (Qwen): https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Cuantización NVFP4 (primitive-ai): https://huggingface.co/primitive-ai/Qwen3.8-Flash-Next-NVFP4
 - Repositorio GitHub oficial: https://github.com/QwenLM/Qwen3.8-Flash-Next/

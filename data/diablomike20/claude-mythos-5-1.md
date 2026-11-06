@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Claude-Mythos-5-1 es una cuantización GGUF del modelo Qwythos-9B-Claude-Mythos-5-1M, desarrollado por Empero AI y publicada en HuggingFace por el usuario diablomike20. Se trata de un modelo de razonamiento de 8.950 millones de parámetros (aproximadamente 9B) construido sobre la arquitectura Qwen3.5-9B, post-entrenado con más de 500 millones de tokens de trazas de cadena de pensamiento generadas internamente por la herramienta `rethink` de Empero AI. El modelo base declara mejoras sustanciales frente a Qwen3.5-9B en evaluaciones emparejadas: +34 puntos en MMLU, +30 en GSM8K estricto y +19 en GSM8K flexible.
+Claude-Mythos-5-1 es una cuantización GGUF del modelo Qwythos-9B-Claude-Mythos-5-1M, desarrollado por Empero AI y publicada en Hugging Face por el usuario diablomike20. Se trata de un modelo de razonamiento de 8.950 millones de parámetros (aproximadamente 9B) construido sobre la arquitectura Qwen3.5-9B, post-entrenado con más de 500 millones de tokens de trazas de cadena de pensamiento generadas internamente por la herramienta `rethink` de Empero AI. El modelo base declara mejoras sustanciales frente a Qwen3.5-9B en evaluaciones emparejadas: +34 puntos en MMLU, +30 en GSM8K estricto y +19 en GSM8K flexible.
 
 La relevancia de esta publicación radica en que combina varias capacidades poco habituales en un modelo de 9B: ventana de contexto de 1.048.576 tokens (1M) mediante escalado YaRN habilitado por defecto, soporte nativo de function calling según la especificación Qwen3.5, multimodalidad de entrada imagen-texto heredada del modelo base (torre de visión congelada durante el SFT) y un modo de razonamiento con cadena de pensamiento. La cuantización GGUF permite ejecutarlo en llama.cpp, Ollama, LM Studio, jan y KoboldCpp, incluyendo variantes con cabeza MTP (multi-token prediction) para decodificación especulativa.
 
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks absolutos ni de otros modelos comparables e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/diablomike20/Claude-Mythos-5-1
+- Repositorio Hugging Face: https://huggingface.co/diablomike20/Claude-Mythos-5-1
 - Modelo base (Qwythos-9B-Claude-Mythos-5-1M): https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M
 - Cuantizaciones GGUF del autor original: https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF
 - Empero AI: https://empero.org

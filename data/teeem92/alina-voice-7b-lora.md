@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| teeem92/alina-voice-7b-lora | ~7,6B (base) + LoRA | 32.768 (base) | No disponible | HuggingFace, 0 descargas | SFT sin documentar |
-| Qwen/Qwen2.5-7B-Instruct | ~7,6B | 32.768 (extensible a 131.072) | Apache 2.0 | HuggingFace, ampliamente usado | Base de referencia, alineado con RLHF |
-| Mistral-7B-Instruct-v0.3 | ~7,2B | 32.768 | Apache 2.0 | HuggingFace | Alternativa densa de tamano similar |
-| Meta-Llama-3.1-8B-Instruct | ~8B | 131.072 | Llama 3.1 Community License | HuggingFace | Contexto mayor, licencia con restricciones |
+| teeem92/alina-voice-7b-lora | ~7,6B (base) + LoRA | 32.768 (base) | No disponible | Hugging Face, 0 descargas | SFT sin documentar |
+| Qwen/Qwen2.5-7B-Instruct | ~7,6B | 32.768 (extensible a 131.072) | Apache 2.0 | Hugging Face, ampliamente usado | Base de referencia, alineado con RLHF |
+| Mistral-7B-Instruct-v0.3 | ~7,2B | 32.768 | Apache 2.0 | Hugging Face | Alternativa densa de tamano similar |
+| Meta-Llama-3.1-8B-Instruct | ~8B | 131.072 | Llama 3.1 Community License | Hugging Face | Contexto mayor, licencia con restricciones |
 
 ## Limitaciones y advertencias
 

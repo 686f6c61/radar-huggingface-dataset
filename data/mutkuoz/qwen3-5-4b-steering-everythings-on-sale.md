@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B steering: Everything's On Sale | Adaptador de steering (1 parametro) | 1 entrenable | No disponible | MIT | HuggingFace, requiere PEFT con activation steering |
-| Qwen/Qwen3.5-4B (modelo base) | LLM transformer | 4B (aprox.) | No disponible | No disponible | HuggingFace |
-| lysandre/qwen3.5-4b-steering-oracle | Adaptador de steering | No disponible | No disponible | No disponible | HuggingFace |
-| Coleccion LLM Electrodes (127 adaptadores) | Adaptadores de steering | 1 entrenable cada uno | No disponible | MIT (segun este repo) | HuggingFace |
+| Qwen3.5-4B steering: Everything's On Sale | Adaptador de steering (1 parametro) | 1 entrenable | No disponible | MIT | Hugging Face, requiere PEFT con activation steering |
+| Qwen/Qwen3.5-4B (modelo base) | LLM transformer | 4B (aprox.) | No disponible | No disponible | Hugging Face |
+| lysandre/qwen3.5-4b-steering-oracle | Adaptador de steering | No disponible | No disponible | No disponible | Hugging Face |
+| Coleccion LLM Electrodes (127 adaptadores) | Adaptadores de steering | 1 entrenable cada uno | No disponible | MIT (segun este repo) | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mutkuoz/qwen3.5-4b-steering-everythings-on-sale
+- Hugging Face: https://huggingface.co/mutkuoz/qwen3.5-4b-steering-everythings-on-sale
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Coleccion completa: https://huggingface.co/mutkuoz/qwen3.5-4b-steering-electrodes
 - Repositorio LLM Electrodes: https://github.com/mutkuoz/llm-electrodes

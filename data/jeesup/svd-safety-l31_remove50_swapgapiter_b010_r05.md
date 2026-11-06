@@ -104,6 +104,6 @@ No se dispone de datos publicados para comparar con alternativas de compresion e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r05
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r05
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - No se han encontrado en la busqueda web enlaces relevantes (paper, repositorio, blog o demo) asociados a este checkpoint ni al estudio del que forma parte.

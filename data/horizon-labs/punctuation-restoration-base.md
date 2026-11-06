@@ -91,7 +91,7 @@ Los resultados de los modelos de referencia (`oliverguhr/fullstop-punctuation-mu
 
 ## Enlaces
 
-- [HuggingFace: Horizon-Labs/punctuation-restoration-base](https://huggingface.co/Horizon-Labs/punctuation-restoration-base)
+- [Hugging Face: Horizon-Labs/punctuation-restoration-base](https://huggingface.co/Horizon-Labs/punctuation-restoration-base)
 - [Demo en el navegador (Space)](https://huggingface.co/spaces/Horizon-Labs/punctuation-restoration)
 - [Modelo base: jhu-clsp/mmBERT-base](https://huggingface.co/jhu-clsp/mmBERT-base)
 - [Versión pequeña: punctuation-restoration-small](https://huggingface.co/Horizon-Labs/punctuation-restoration-small)

@@ -67,9 +67,9 @@ Los únicos datos cuantitativos aportados son métricas internas de entrenamient
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| webAI-Official/granite-4.2-8b-builder-lora-peft | Adaptador LoRA sobre Granite 4.2 8B | 8B (base) + adaptador rango 16 | 8 192 en entrenamiento; base no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
-| ibm-granite/granite-4.2-8b | Modelo denso sin adaptador | 8B | no disponible | no disponible en la información proporcionada | HuggingFace, org oficial de IBM |
-| Otros modelos densos de ~8B (por ejemplo, familias Llama o Qwen de tamaño comparable) | Modelo denso | ~7-9B | no disponible | no disponible | HuggingFace |
+| webAI-Official/granite-4.2-8b-builder-lora-peft | Adaptador LoRA sobre Granite 4.2 8B | 8B (base) + adaptador rango 16 | 8 192 en entrenamiento; base no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
+| ibm-granite/granite-4.2-8b | Modelo denso sin adaptador | 8B | no disponible | no disponible en la información proporcionada | Hugging Face, org oficial de IBM |
+| Otros modelos densos de ~8B (por ejemplo, familias Llama o Qwen de tamaño comparable) | Modelo denso | ~7-9B | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones en la información proporcionada. La diferencia funcional relevante es que este repositorio aporta exclusivamente la persona "builder" sobre el base de IBM, mientras que las alternativas citadas son modelos completos sin esa personalización.
 
@@ -89,10 +89,10 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Adaptador PEFT en HuggingFace: https://huggingface.co/webAI-Official/granite-4.2-8b-builder-lora-peft
+- Adaptador PEFT en Hugging Face: https://huggingface.co/webAI-Official/granite-4.2-8b-builder-lora-peft
 - Versión GGUF del mismo adaptador: https://huggingface.co/webAI-Official/granite-4.2-8b-builder-lora-GGUF
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-8b
 - Documentación de Granite 4.2 en IBM: https://www.ibm.com/granite/docs/models/granite4-2
-- Organización ibm-granite en HuggingFace: https://huggingface.co/ibm-granite
+- Organización ibm-granite en Hugging Face: https://huggingface.co/ibm-granite
 - Repositorio GitHub de los modelos de lenguaje Granite 4.2: https://github.com/ibm-granite/granite-4.2-language-models
 - Página general de la familia Granite: https://www.ibm.com/granite

@@ -93,7 +93,7 @@ No se dispone de comparativas con otros modelos de tamano similar (p. ej., Llama
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/npario/Qwen3.8-27B-Ridge-GGUF
+- Repositorio Hugging Face: https://huggingface.co/npario/Qwen3.8-27B-Ridge-GGUF
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio en ModelScope: https://www.modelscope.cn/models/empero-ai/Qwen3.8-27B-Ridge-GGUF
 - Repositorio oficial del modelo base (GitHub): https://github.com/AlibabaCloud-Official/Qwen3.8-27B

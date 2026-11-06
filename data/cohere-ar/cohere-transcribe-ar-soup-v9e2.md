@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Cohere-AR/cohere-transcribe-ar-soup-v9e2 es un modelo de reconocimiento automatico del habla (ASR) especializado en arabe e ingles, publicado por la organizacion Cohere-AR en HuggingFace. Se trata de un fine-tuning del modelo base Cohere-AR/cohere-transcribe-ar-rl2-v9enc, orientado a transcripcion de audio con soporte explicito para code-switching arabe-ingles y dominio telefonico, segun las etiquetas del repositorio.
+Cohere-AR/cohere-transcribe-ar-soup-v9e2 es un modelo de reconocimiento automatico del habla (ASR) especializado en arabe e ingles, publicado por la organizacion Cohere-AR en Hugging Face. Se trata de un fine-tuning del modelo base Cohere-AR/cohere-transcribe-ar-rl2-v9enc, orientado a transcripcion de audio con soporte explicito para code-switching arabe-ingles y dominio telefonico, segun las etiquetas del repositorio.
 
-El modelo cuenta con 2.065.770.752 parametros (aproximadamente 2,07 mil millones) almacenados en formato safetensors, con un repositorio de 4,1 GB. Es compatible con la libreria transformers y expone una pipeline de automatic-speech-recognition, lo que facilita su integracion en flujos estandar de HuggingFace. Su acceso esta restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargarlo.
+El modelo cuenta con 2.065.770.752 parametros (aproximadamente 2,07 mil millones) almacenados en formato safetensors, con un repositorio de 4,1 GB. Es compatible con la libreria transformers y expone una pipeline de automatic-speech-recognition, lo que facilita su integracion en flujos estandar de Hugging Face. Su acceso esta restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargarlo.
 
 La relevancia de este modelo radica en su enfoque bilingue arabe-ingles con atencion al fenomeno del code-switching, poco comun en modelos ASR genericos, y a la transcripcion de audio telefonico. No obstante, la informacion publica disponible es muy limitada: no se han publicado detalles sobre arquitectura interna, datos de entrenamiento, benchmarks ni licencia, lo que condiciona cualquier evaluacion en profundidad.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantizacion de 8 bits: en torno a 2,1 GB para pesos; en 4 bits, alrededor de 1,1 GB, aunque no se confirman formatos de cuantizacion soportados.
 - GPU recomendadas: NVIDIA RTX 3090, RTX 4090, A10G, L4, A100 o H100 para despliegues de produccion con concurrencia.
 - Cabe en GPU de consumo: si, previsiblemente en tarjetas con 8 GB o mas (RTX 3060 Ti, RTX 3070, RTX 4060 Ti, RTX 4070 y superiores), aunque no hay datos oficiales de consumo real.
-- Opciones de despliegue: transformers (pipeline de ASR), endpoints de HuggingFace; no se confirma soporte de vLLM, llama.cpp, Ollama ni TGI (son runtimes orientados a LLM y no necesariamente aplicables a este modelo ASR).
+- Opciones de despliegue: transformers (pipeline de ASR), endpoints de Hugging Face; no se confirma soporte de vLLM, llama.cpp, Ollama ni TGI (son runtimes orientados a LLM y no necesariamente aplicables a este modelo ASR).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -76,14 +76,14 @@ La comparativa se ofrece como referencia de categoria; no se dispone de datos de
 - Riesgo de alucinacion en transcripcion: como todo modelo ASR generativo, puede producir texto plausible no presente en el audio, especialmente en segmentos ruidosos o con code-switching.
 - Cobertura limitada a dos idiomas (ar, en); no se debe esperar buen rendimiento en otros idiomas.
 - La licencia no esta disponible, lo que impide confirmar si se permite uso comercial; es imprescindible verificar las condiciones antes de usarlo en produccion.
-- El acceso es restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a la automatizacion de despliegues.
+- El acceso es restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a la automatizacion de despliegues.
 - No hay documentacion sobre el dominio exacto de entrenamiento ni sobre el rendimiento en audio limpio frente a audio telefonico.
 - El repositorio tiene 0 descargas y 0 likes, y fue creado en noviembre de 2026; se trata de un modelo muy reciente y sin validacion comunitaria.
 - No se confirma soporte de cuantizacion ni de runtimes de alto rendimiento, lo que limita las opciones de optimizacion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-soup-v9e2
+- Modelo en Hugging Face: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-soup-v9e2
 - Modelo base: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-rl2-v9enc
 - Sitio de Cohere: https://cohere.com/
 - Cohere en Wikipedia: https://en.wikipedia.org/wiki/Cohere

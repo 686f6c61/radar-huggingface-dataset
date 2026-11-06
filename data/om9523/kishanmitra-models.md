@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Om9523/kishanmitra-models` es un repositorio publicado en HuggingFace por el usuario Om9523 bajo licencia MIT. En el momento de la consulta no dispone de pipeline declarado, idiomas soportados, descargas ni likes, y su model card no contiene mas informacion que la linea de licencia. El tamano del repositorio es de 0,7 GB, un dato que sugiere pesos de un modelo de parametros reducidos o de una version cuantizada, pero la informacion disponible no permite confirmar arquitectura, numero de parametros ni tipo de tarea.
+`Om9523/kishanmitra-models` es un repositorio publicado en Hugging Face por el usuario Om9523 bajo licencia MIT. En el momento de la consulta no dispone de pipeline declarado, idiomas soportados, descargas ni likes, y su model card no contiene mas informacion que la linea de licencia. El tamano del repositorio es de 0,7 GB, un dato que sugiere pesos de un modelo de parametros reducidos o de una version cuantizada, pero la informacion disponible no permite confirmar arquitectura, numero de parametros ni tipo de tarea.
 
 No existe documentacion tecnica asociada: no hay paper, blog de presentacion, ficha de entrenamiento ni resultados publicados de evaluacion. La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo, unicamente entradas de diccionario correspondientes a la palabra "meaning", sin relacion con este repositorio.
 
-Por tanto, esta ficha recoge los pocos datos verificables y marca explicitamente como "no disponible" todo aquello que no puede confirmarse. Cualquier evaluacion practica del modelo exige inspeccionar directamente los archivos del repositorio de HuggingFace (config.json, tokenizer, pesos) antes de considerarlo para un uso en produccion.
+Por tanto, esta ficha recoge los pocos datos verificables y marca explicitamente como "no disponible" todo aquello que no puede confirmarse. Cualquier evaluacion practica del modelo exige inspeccionar directamente los archivos del repositorio de Hugging Face (config.json, tokenizer, pesos) antes de considerarlo para un uso en produccion.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ Tampoco hay informacion sobre el proceso de entrenamiento, el origen de los dato
 
 La informacion disponible no permite enumerar capacidades concretas. Se puede afirmar lo siguiente:
 
-- No hay pipeline declarado en HuggingFace, por lo que no se confirma si el repositorio corresponde a generacion de texto, vision, audio, embeddings u otra tarea.
+- No hay pipeline declarado en Hugging Face, por lo que no se confirma si el repositorio corresponde a generacion de texto, vision, audio, embeddings u otra tarea.
 - No hay declaracion de soporte de tool calling ni function calling.
 - No hay declaracion de capacidades de agente, razonamiento multi-paso ni modo de pensamiento explicito.
 - No hay idiomas declarados, por lo que no puede confirmarse cobertura multilingue ni el idioma principal de entrenamiento.
@@ -83,7 +83,7 @@ No disponible. La ausencia de datos sobre parametros, contexto y tarea impide id
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Om9523/kishanmitra-models
+- Repositorio en Hugging Face: https://huggingface.co/Om9523/kishanmitra-models
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

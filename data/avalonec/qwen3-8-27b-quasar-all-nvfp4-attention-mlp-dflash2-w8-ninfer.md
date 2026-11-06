@@ -17,7 +17,7 @@ El artefacto está compilado específicamente para Windows 11 Pro y para instruc
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | NVFP4 W4A4 en las 496 capas lineales de texto; W8G32_F16S en embeddings y LM_Head; DFlash2 en W8/BF16 |
 | Idiomas soportados | no disponible |
-| Licencia | Apache License 2.0 (según la model card; los metadatos de HuggingFace no la indican) |
+| Licencia | Apache License 2.0 (según la model card; los metadatos de Hugging Face no la indican) |
 | Formato de pesos | Contenedor `.ninfer` monolítico nativo de Windows (no safetensors ni GGUF) |
 | Capas NVFP4 | 496 / 496 capas lineales de texto |
 | Tamano del artefacto | 19,8 GiB en disco (repositorio de 20,0 GB) |
@@ -82,10 +82,10 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parámetros | Capas lineales NVFP4 | Tamano en disco | GPQA-Diamond | AIME'26 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Este artefacto (QUASAR-QAT Full-NVFP4) | 27B | 496 / 496 | 19,8 GiB | 90,91 | 100,0 % | Apache 2.0 (según model card) | HuggingFace, contenedor `.ninfer` |
-| Qwen/Qwen3.8-27B (BF16 original) | 27B | 0 / 496 | 55,6 GiB | 91,41 | 100,0 % | Según Qwen3.8 (no detallada aquí) | HuggingFace |
-| Unsloth NVFP4 (baseline cometkim) | 27B | 168 / 496 | 23,4 GB | 89,39 | 97,78 % | no disponible | HuggingFace |
-| Inferact NVFP4 | 27B | 304 / 496 | 26,4 GB | 87,63 | 96,67 % | no disponible | HuggingFace |
+| Este artefacto (QUASAR-QAT Full-NVFP4) | 27B | 496 / 496 | 19,8 GiB | 90,91 | 100,0 % | Apache 2.0 (según model card) | Hugging Face, contenedor `.ninfer` |
+| Qwen/Qwen3.8-27B (BF16 original) | 27B | 0 / 496 | 55,6 GiB | 91,41 | 100,0 % | Según Qwen3.8 (no detallada aquí) | Hugging Face |
+| Unsloth NVFP4 (baseline cometkim) | 27B | 168 / 496 | 23,4 GB | 89,39 | 97,78 % | no disponible | Hugging Face |
+| Inferact NVFP4 | 27B | 304 / 496 | 26,4 GB | 87,63 | 96,67 % | no disponible | Hugging Face |
 
 Los tres perfiles cuantizados comparados derivan del mismo modelo base, por lo que la diferencia relevante es la cobertura de cuantización (496/496 frente a 168/496 y 304/496), el tamano resultante y la degradación medida. No se dispone de datos comparativos frente a modelos de otros fabricantes.
 
@@ -94,7 +94,7 @@ Los tres perfiles cuantizados comparados derivan del mismo modelo base, por lo q
 - Confinamiento de plataforma: el artefacto solo se distribuye como contenedor `.ninfer` para Windows 11 y está optimizado para `sm_120a` (Blackwell). No es utilizable directamente con llama.cpp, Ollama, vLLM o TGI.
 - Dependencia de hardware reciente: NVFP4 W4A4 completo sobre las 496 capas lineales requiere Tensor Cores Blackwell; en GPUs anteriores la ejecución puede no ser posible o no estar soportada.
 - Trazabilidad: la model card referencia identificadores (Qwen3.8, arXiv:2608.13966, fechas de 2026) que no se han podido verificar con fuentes independientes; la búsqueda web realizada no devolvió ningún resultado relacionado con el modelo.
-- Adopción mínima: 0 descargas y 1 like en el momento de la consulta, con licencia no declarada en los metadatos de HuggingFace (solo indicada en el texto de la model card).
+- Adopción mínima: 0 descargas y 1 like en el momento de la consulta, con licencia no declarada en los metadatos de Hugging Face (solo indicada en el texto de la model card).
 - Riesgo de alucinación: no se documenta ningún análisis específico de tasas de alucinación para este artefacto; aplican los riesgos inherentes al modelo base.
 - Sesgos: no se publica ninguna evaluación de sesgos, toxicidad o equidad para este artefacto ni para el checkpoint QAT del que deriva.
 - Idiomas: no se especifica la cobertura lingüística del modelo base ni el impacto de la cuantización NVFP4 sobre idiomas distintos del inglés (los benchmarks publicados son en inglés).
@@ -105,7 +105,7 @@ Los tres perfiles cuantizados comparados derivan del mismo modelo base, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Avalonec/Qwen3.8-27B-QUASAR-All-NVFP4-Attention-MLP-DFlash2-W8-NInfer
+- Modelo en Hugging Face: https://huggingface.co/Avalonec/Qwen3.8-27B-QUASAR-All-NVFP4-Attention-MLP-DFlash2-W8-NInfer
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint QAT de origen: `QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4` (referenciado en la model card)
 - Compañero de decodificación especulativa: `z-lab/Qwen3.8-27B-DFlash2` (referenciado en la model card)

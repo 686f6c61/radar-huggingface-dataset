@@ -88,7 +88,7 @@ La comparativa se basa en informacion publica; los datos de `aiola-lab/whisper-m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jburtoft/whisper-large-v3-medusa-heads
+- Modelo en Hugging Face: https://huggingface.co/jburtoft/whisper-large-v3-medusa-heads
 - Modelo base `openai/whisper-large-v3`: https://huggingface.co/openai/whisper-large-v3
 - Repositorio `aiola-lab/whisper-medusa` (arquitecturas Medusa para Whisper): https://github.com/aiola-lab/whisper-medusa
 - Repositorio oficial de Whisper: https://github.com/openai/whisper

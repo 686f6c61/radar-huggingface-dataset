@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mr-ltg/gpt-oss-20b-mlx-4Bit | 20,9 B totales | No disponible en el repo | safetensors MLX, 4 bits | apache-2.0 | HuggingFace, 0 descargas |
-| openai/gpt-oss-20b (modelo base) | 20,9 B totales, ~3,6 B activos | 128 000 tokens (segun el modelo base) | safetensors PyTorch | apache-2.0 | HuggingFace, modelo oficial |
+| mr-ltg/gpt-oss-20b-mlx-4Bit | 20,9 B totales | No disponible en el repo | safetensors MLX, 4 bits | apache-2.0 | Hugging Face, 0 descargas |
+| openai/gpt-oss-20b (modelo base) | 20,9 B totales, ~3,6 B activos | 128 000 tokens (segun el modelo base) | safetensors PyTorch | apache-2.0 | Hugging Face, modelo oficial |
 | Otras conversiones MLX de la misma familia | No disponible | No disponible | safetensors MLX | No disponible | No disponible |
 
 No se dispone de datos de benchmarks sobre esta conversion que permitan comparar su calidad frente al modelo base ni frente a otras alternativas de tamano similar. La comparacion se limita, por tanto, a parametros, formato y licencia.
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks sobre esta conversion que permitan comparar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mr-ltg/gpt-oss-20b-mlx-4Bit
+- Repositorio en Hugging Face: https://huggingface.co/mr-ltg/gpt-oss-20b-mlx-4Bit
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Libreria mlx-lm (mencionada en la model card, version 0.31.2): https://github.com/ml-explore/mlx-lm
 - Proyecto MLX de Apple: https://github.com/ml-explore/mlx

@@ -6,7 +6,7 @@
 
 El modelo base es un transformer denso decoder-only de 7,61 mil millones de parametros de la familia Qwen2.5-Coder, orientado a generacion de codigo. El adaptador anade una capa de ajuste especifico cuyo proposito exacto no esta documentado: ni la model card ni las etiquetas explican que significa "SDF" ni que distingue la variante "Unguided" de las otras del mismo autor (`SDF-Neutral`, `SDF-epoch3`).
 
-Su relevancia ahora es limitada pero ilustrativa: se trata de un ejemplo de los miles de adaptadores comunitarios que se publican sin documentacion, sin licencia declarada y sin evaluacion. Registra 0 descargas y 0 likes en el momento de la consulta, y su model card es la plantilla vacia de HuggingFace, por lo que cualquier evaluacion practica exige descargarlo, fusionarlo con el base y medirlo uno mismo.
+Su relevancia ahora es limitada pero ilustrativa: se trata de un ejemplo de los miles de adaptadores comunitarios que se publican sin documentacion, sin licencia declarada y sin evaluacion. Registra 0 descargas y 0 likes en el momento de la consulta, y su model card es la plantilla vacia de Hugging Face, por lo que cualquier evaluacion practica exige descargarlo, fusionarlo con el base y medirlo uno mismo.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ En cuanto al entrenamiento, las etiquetas indican `lora`, `sft`, `transformers` 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card es la plantilla vacia de HuggingFace y no incluye seccion de evaluacion cumplimentada, ni resultados de MMLU, HumanEval, GSM8K, MBPP o similares, ni comparaciones con el modelo base. Tampoco hay informacion sobre latencia o throughput.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card es la plantilla vacia de Hugging Face y no incluye seccion de evaluacion cumplimentada, ni resultados de MMLU, HumanEval, GSM8K, MBPP o similares, ni comparaciones con el modelo base. Tampoco hay informacion sobre latencia o throughput.
 
 ## Requisitos de hardware
 
@@ -77,7 +77,7 @@ La comparacion directa de rendimiento no es posible porque el adaptador carece d
 ## Limitaciones y advertencias
 
 - Ausencia total de licencia: el repositorio no declara licencia, lo que impide determinar si el uso comercial esta permitido. Para produccion hay que resolver esta ambiguedad legal antes de cualquier despliegue.
-- Model card vacia: es la plantilla por defecto de HuggingFace sin rellenar; no hay descripcion de uso previsto, datos de entrenamiento, hiperparametros ni limitaciones declaradas por el autor.
+- Model card vacia: es la plantilla por defecto de Hugging Face sin rellenar; no hay descripcion de uso previsto, datos de entrenamiento, hiperparametros ni limitaciones declaradas por el autor.
 - Sin evaluacion: no existen benchmarks ni comparaciones con el modelo base, por lo que se desconoce si el ajuste mejora, degrada o mantiene las capacidades originales.
 - Riesgo de olvido catastrofico: 2 epocas de SFT sobre un dataset no documentado pueden degradar el rendimiento en tareas de codigo no representadas en ese dataset.
 - Terminologia sin definir: "SDF" y "Unguided" no se explican en ningun lugar; tampoco se aclara que diferencia esta variante de `SDF-Neutral` o de las versiones de otras epocas del mismo autor.
@@ -90,7 +90,7 @@ La comparacion directa de rendimiento no es posible porque el adaptador carece d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asparius/Qwen2.5-7B-LORA-SDF-Unguided-epoch2
+- Modelo en Hugging Face: https://huggingface.co/asparius/Qwen2.5-7B-LORA-SDF-Unguided-epoch2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B
 - Variante del mismo autor (`SDF-Neutral-epoch2`): https://huggingface.co/asparius/Qwen2.5-7B-LORA-SDF-Neutral-epoch2
 - Variante del mismo autor (`SDF-epoch3`): https://huggingface.co/asparius/Qwen2.5-7B-LORA-SDF-epoch3

@@ -72,8 +72,8 @@ Configuracion de evaluacion: 8 pares de edicion x 1 semilla (evaluacion recortad
 
 | Modelo | Parametros | Resolucion / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Mitroshenkov87/voxprint-mirror-qwen-image-edit-2511 | no disponible | 1024 px (evaluacion) | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen-Image-Edit-2511 (modelo base, BF16) | no disponible | 1024 px | Apache-2.0 | HuggingFace |
+| Mitroshenkov87/voxprint-mirror-qwen-image-edit-2511 | no disponible | 1024 px (evaluacion) | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen-Image-Edit-2511 (modelo base, BF16) | no disponible | 1024 px | Apache-2.0 | Hugging Face |
 
 Solo se dispone del modelo base como termino de comparacion directo en la informacion proporcionada. No se dispone de datos de benchmarks comunes entre ambas versiones (FP8 frente a BF16) para establecer diferencias de calidad cuantificadas. Otros modelos comparables de edicion de imagen: no disponible.
 
@@ -93,7 +93,7 @@ Solo se dispone del modelo base como termino de comparacion directo en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mitroshenkov87/voxprint-mirror-qwen-image-edit-2511
+- Modelo en Hugging Face: https://huggingface.co/Mitroshenkov87/voxprint-mirror-qwen-image-edit-2511
 - Modelo base Qwen/Qwen-Image-Edit-2511: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Repositorio Voxprint AI Canvas: https://github.com/Mitroshenkov87/voxprint-canvas
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

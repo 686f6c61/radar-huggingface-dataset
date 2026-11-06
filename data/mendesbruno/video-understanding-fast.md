@@ -83,5 +83,5 @@ No disponible. No existen modelos comparables en la misma categoria porque este 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mendesbruno/video-understanding-fast
+- Hugging Face: https://huggingface.co/mendesbruno/video-understanding-fast
 - No se han encontrado otros enlaces relevantes (paper, blog, repositorio de codigo, demo) en la busqueda web realizada.

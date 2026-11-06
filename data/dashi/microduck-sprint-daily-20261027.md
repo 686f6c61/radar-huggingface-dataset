@@ -4,7 +4,7 @@
 
 `dashi/microduck-sprint-daily-20261027` es una política de control motriz (locomoción) entrenada por refuerzo para el robot educativo [microduck](https://github.com/pollen-robotics/microduck) de Pollen Robotics. No es un modelo de lenguaje ni un modelo generativo multimodal: es una red de política exportada a ONNX que consume observaciones de 61 dimensiones y emite 14 acciones a 50 Hz, destinada a ocupar el slot `walk` del demonio de control del robot. El autor la describe como una política **perpetua**: una vez cargada, genera marcha de forma continua hasta que se le indique lo contrario.
 
-Se trata de una reentrada diaria (*daily re-entry*) del modelo `dashi/microduck-sprint-remix-r844`, del que se cita una puntuación de 0,844, y es a su vez un *remix* por fine-tuning de `jrubiosainz/microduck-game-sprinter-remix3`. El repositorio se publicó el 27 de octubre de 2026, ocupa 0,0 GB según HuggingFace y no registra descargas en el momento de la consulta. Su relevancia es acotada pero concreta: ejemplifica el flujo de trabajo de *policy zoo* para robótica de bajo coste, donde políticas pequeñas en ONNX se versionan en HuggingFace y se despliegan en el robot con un solo comando (`robotctl policy load walk ...`), con la normalización de observaciones embebida en el propio grafo ONNX.
+Se trata de una reentrada diaria (*daily re-entry*) del modelo `dashi/microduck-sprint-remix-r844`, del que se cita una puntuación de 0,844, y es a su vez un *remix* por fine-tuning de `jrubiosainz/microduck-game-sprinter-remix3`. El repositorio se publicó el 27 de octubre de 2026, ocupa 0,0 GB según Hugging Face y no registra descargas en el momento de la consulta. Su relevancia es acotada pero concreta: ejemplifica el flujo de trabajo de *policy zoo* para robótica de bajo coste, donde políticas pequeñas en ONNX se versionan en Hugging Face y se despliegan en el robot con un solo comando (`robotctl policy load walk ...`), con la normalización de observaciones embebida en el propio grafo ONNX.
 
 La información pública disponible es muy escasa: no se documentan parámetros, licencia, idiomas ni resultados de evaluación más allá de la cifra de reentrada citada. Esta ficha refleja por tanto únicamente lo verificable en la model card y en los metadatos del repositorio, marcando explícitamente como «no disponible» todo lo demás.
 
@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks en la información disponible. No a
 
 | Modelo | Relación | Parámetros | Contexto | Slot | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `dashi/microduck-sprint-daily-20261027` | Esta ficha | No disponible | No aplica | `walk` | No disponible | HuggingFace, 0 descargas |
-| `dashi/microduck-sprint-remix-r844` | Predecesor citado (puntuación 0,844) | No disponible | No aplica | No disponible en la información | No disponible | HuggingFace |
-| `jrubiosainz/microduck-game-sprinter-remix3` | Modelo base del *finetune* | No disponible | No aplica | No disponible en la información | No disponible | HuggingFace |
+| `dashi/microduck-sprint-daily-20261027` | Esta ficha | No disponible | No aplica | `walk` | No disponible | Hugging Face, 0 descargas |
+| `dashi/microduck-sprint-remix-r844` | Predecesor citado (puntuación 0,844) | No disponible | No aplica | No disponible en la información | No disponible | Hugging Face |
+| `jrubiosainz/microduck-game-sprinter-remix3` | Modelo base del *finetune* | No disponible | No aplica | No disponible en la información | No disponible | Hugging Face |
 
 No se dispone de datos de otros modelos comparables de la misma categoría (políticas de locomoción para microduck) en la información proporcionada; la comparación se limita a la línea de descendencia declarada por el autor.
 
@@ -96,7 +96,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría (pol�
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/dashi/microduck-sprint-daily-20261027)
+- [Modelo en Hugging Face](https://huggingface.co/dashi/microduck-sprint-daily-20261027)
 - [Modelo base: jrubiosainz/microduck-game-sprinter-remix3](https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix3)
 - [Repositorio del robot microduck (Pollen Robotics)](https://github.com/pollen-robotics/microduck)
 - Repositorio de entrenamiento: `pollen-robotics/microduck_rl`, rama `roll-backward`, commit `83599404a` (sin URL directa en la model card)

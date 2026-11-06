@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/arb-arab-100mb-after-ppt-Dp-100mb-ckpt500_seed10` es un ajuste fino (SFT) del checkpoint `fpadovani/arb-arab-100mb-ppt-Dp-100mb_seed10`, publicado por el usuario fpadovani en HuggingFace. Se trata de un transformer decoder-only de tipo GPT-2 con 124.770.816 parametros (unos 124,8 millones), entrenado con la libreria TRL dentro de un flujo de trabajo `transformers` + `datasets`. Su pipeline declarado es `text-generation` y se distribuye en formato safetensors.
+El modelo `fpadovani/arb-arab-100mb-after-ppt-Dp-100mb-ckpt500_seed10` es un ajuste fino (SFT) del checkpoint `fpadovani/arb-arab-100mb-ppt-Dp-100mb_seed10`, publicado por el usuario fpadovani en Hugging Face. Se trata de un transformer decoder-only de tipo GPT-2 con 124.770.816 parametros (unos 124,8 millones), entrenado con la libreria TRL dentro de un flujo de trabajo `transformers` + `datasets`. Su pipeline declarado es `text-generation` y se distribuye en formato safetensors.
 
 Por el nombre y por la traza de entrenamiento (proyecto de Weights & Biases llamado `new_tokenizers`, asociado a la University of Groningen) todo apunta a un artefacto de investigacion orientado a experimentar con tokenizadores y con ajuste supervisado sobre un corpus de aproximadamente 100 MB, posiblemente relacionado con arabe (prefijo `arab`). No obstante, la model card no documenta ni el dataset, ni los idiomas, ni los hiperparametros, por lo que esas hipotesis no pueden confirmarse con la informacion disponible.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmark comparativos entre estas alternativas dentro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-100mb-after-ppt-Dp-100mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-100mb-after-ppt-Dp-100mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/fpadovani/arb-arab-100mb-ppt-Dp-100mb_seed10
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/q8humwc3
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -104,7 +104,7 @@ No hay datos publicados que permitan comparar el rendimiento de este checkpoint.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-widowx-widowx-texture-teleopaligned-videolora200-action-decoder-iter900
+- Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-widowx-widowx-texture-teleopaligned-videolora200-action-decoder-iter900
 - Dataset asociado: `dreamdifferent/vam-cross-level5-panda-widowx-widowx-texture@160fcfd25198e9b91d89f9bc7fccc2a3f015ce30`
 - Backbone Video2World inicial: `dreamdifferent/widowx250-video-fused@f0cea76b62c5dd66b06b9f965932ddea32a7b546`
 - Decodificador de acciones inicial: `dreamdifferent/vam-cross-target-widowx250-native-2cam-action-decoder@93750cccda01620e3c028477e4c49bc5c996a68d`

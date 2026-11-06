@@ -94,8 +94,8 @@ Con YaRN activado y thinking off, el autor reporta HE30 0.967 y web30 0.922, sin
 
 | Modelo | Parametros | Contexto | HE30 (pass@1) | web30 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Cordoval Inkwell-1 | 9.409.813.744 | 262.144 (524.288 con YaRN) | 0.967 | 0.960 (thinking on) | Apache-2.0 | HuggingFace, safetensors y GGUF |
-| Qwen3.5-9B (base) | 9B (aproximado, segun nombre) | 262.144 | 0.933 | 0.894 (thinking on) | Apache-2.0 | HuggingFace |
+| Cordoval Inkwell-1 | 9.409.813.744 | 262.144 (524.288 con YaRN) | 0.967 | 0.960 (thinking on) | Apache-2.0 | Hugging Face, safetensors y GGUF |
+| Qwen3.5-9B (base) | 9B (aproximado, segun nombre) | 262.144 | 0.933 | 0.894 (thinking on) | Apache-2.0 | Hugging Face |
 | Otros ajustes de la misma familia | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion con datos publicados es contra el modelo base Qwen3.5-9B, del que deriva. No se dispone de resultados de terceros (por ejemplo, otros modelos de 7-9B orientados a codigo web) en la informacion proporcionada, por lo que no se puede establecer una comparativa externa fiable.
@@ -115,7 +115,7 @@ La unica comparacion con datos publicados es contra el modelo base Qwen3.5-9B, d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kierendaystudios/cordoval-inkwell-1
+- Modelo en Hugging Face: https://huggingface.co/kierendaystudios/cordoval-inkwell-1
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Avisos de terceros (referenciado en la model card): THIRD_PARTY_NOTICES.md en el repositorio del modelo
 - Contacto del autor: management@cordoval.co.uk

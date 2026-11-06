@@ -115,7 +115,7 @@ Frente al checkpoint final de 20.000 pasos, la diferencia de `action_mse` reserv
 
 ## Enlaces
 
-- [Modelo en HuggingFace: mahgoobi/ur5e_pi05_all_3cam_10k](https://huggingface.co/mahgoobi/ur5e_pi05_all_3cam_10k)
+- [Modelo en Hugging Face: mahgoobi/ur5e_pi05_all_3cam_10k](https://huggingface.co/mahgoobi/ur5e_pi05_all_3cam_10k)
 - [Checkpoint final de la ejecucion: mahgoobi/ur5e_pi05_all_3cam_20k](https://huggingface.co/mahgoobi/ur5e_pi05_all_3cam_20k)
 - [Checkpoint anterior: mahgoobi/ur5e_pi05_10k](https://huggingface.co/mahgoobi/ur5e_pi05_10k)
 - [Repositorio de entrenamiento RoboResearch (config `pi05_ur5e_all`)](https://github.com/EAI-RSM/RoboResearch)

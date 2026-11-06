@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de transformadores desarrollado por el usuario safafaf22 y publicado en HuggingFace bajo el identificador `safafaf22/MyAwesomeModel-step1000`. Según los metadatos del repositorio, se trata de un modelo basado en la arquitectura BERT, destinado a tareas de extracción de características (feature-extraction) y compatible con la librería transformers. Su licencia es MIT, lo que permite su uso libre incluso en proyectos comerciales.
+MyAwesomeModel es un modelo de transformadores desarrollado por el usuario safafaf22 y publicado en Hugging Face bajo el identificador `safafaf22/MyAwesomeModel-step1000`. Según los metadatos del repositorio, se trata de un modelo basado en la arquitectura BERT, destinado a tareas de extracción de características (feature-extraction) y compatible con la librería transformers. Su licencia es MIT, lo que permite su uso libre incluso en proyectos comerciales.
 
 La model card indica que el checkpoint `step_1000` fue seleccionado como el mejor de un total de 10 iteraciones de entrenamiento (desde `step_100` hasta `step_1000`), utilizando un pipeline de evaluación propio (`evaluation/eval.py`). El modelo alcanzó una puntuación ponderada de 0.712 sobre 15 tareas de referencia, destacando en clasificación de texto, razonamiento lógico y traducción.
 
@@ -12,7 +12,7 @@ No se disponen de datos sobre el tamaño del modelo, la longitud de contexto, lo
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (según metadatos de HuggingFace) |
+| Arquitectura | BERT (según metadatos de Hugging Face) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -23,9 +23,9 @@ No se disponen de datos sobre el tamaño del modelo, la longitud de contexto, lo
 
 ## Arquitectura y entrenamiento
 
-Según los metadatos de HuggingFace, MyAwesomeModel se basa en la arquitectura BERT y está orientado a la extracción de características (`feature-extraction`). La model card no proporciona detalles sobre el número de capas, dimensiones de embedding, número de cabezas de atención ni el tamaño total de parámetros. Tampoco se ha publicado información acerca del dataset de entrenamiento, el número de tokens, la composición de los datos ni si se aplicaron técnicas como RLHF o DPO.
+Según los metadatos de Hugging Face, MyAwesomeModel se basa en la arquitectura BERT y está orientado a la extracción de características (`feature-extraction`). La model card no proporciona detalles sobre el número de capas, dimensiones de embedding, número de cabezas de atención ni el tamaño total de parámetros. Tampoco se ha publicado información acerca del dataset de entrenamiento, el número de tokens, la composición de los datos ni si se aplicaron técnicas como RLHF o DPO.
 
-La selección del checkpoint `step_1000` se realizó mediante un pipeline de evaluación interno que puntúa 15 tareas distintas, ponderando especialmente las tareas de razonamiento matemático y lógico. El resultado de esa selección fue una puntuación ponderada de 0.712, la más alta entre los 10 checkpoints evaluados. Dado que el repositorio de HuggingFace no contiene archivos de pesos (0.0 GB), no queda claro si este checkpoint está realmente disponible para su carga o si es únicamente una declaración de resultados.
+La selección del checkpoint `step_1000` se realizó mediante un pipeline de evaluación interno que puntúa 15 tareas distintas, ponderando especialmente las tareas de razonamiento matemático y lógico. El resultado de esa selección fue una puntuación ponderada de 0.712, la más alta entre los 10 checkpoints evaluados. Dado que el repositorio de Hugging Face no contiene archivos de pesos (0.0 GB), no queda claro si este checkpoint está realmente disponible para su carga o si es únicamente una declaración de resultados.
 
 ## Capacidades
 
@@ -35,7 +35,7 @@ La selección del checkpoint `step_1000` se realizó mediante un pipeline de eva
 - Comprensión lectora y sentido común: puntuaciones de 0.700 y 0.736 respectivamente.
 - Resumen y traducción: 0.767 en `summarization` y 0.804 en `translation`.
 - Seguimiento de instrucciones y seguridad: 0.758 en `instruction_following` y 0.739 en `safety_evaluation`.
-- Extracción de características: el pipeline de HuggingFace es `feature-extraction`, lo que indica que el modelo puede emplearse para generar embeddings o representaciones vectoriales de texto.
+- Extracción de características: el pipeline de Hugging Face es `feature-extraction`, lo que indica que el modelo puede emplearse para generar embeddings o representaciones vectoriales de texto.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponibles (aunque la tarea de traducción sugiere cierta capacidad, no se especifican los idiomas).
@@ -77,7 +77,7 @@ La puntuación ponderada global es de 0.712, calculada con un sistema de pesos q
 
 ## Requisitos de hardware
 
-No se dispone de información sobre los requisitos de hardware para este modelo. El repositorio de HuggingFace no incluye pesos, por lo que no es posible estimar el consumo de VRAM, las GPU recomendadas ni la latencia esperada. Se desconoce si el modelo es compatible con herramientas de despliegue como vLLM, llama.cpp, Ollama o TGI.
+No se dispone de información sobre los requisitos de hardware para este modelo. El repositorio de Hugging Face no incluye pesos, por lo que no es posible estimar el consumo de VRAM, las GPU recomendadas ni la latencia esperada. Se desconoce si el modelo es compatible con herramientas de despliegue como vLLM, llama.cpp, Ollama o TGI.
 
 ## Comparativa con modelos similares
 
@@ -89,11 +89,11 @@ No se han publicado resultados de benchmarks comparativos en la información dis
 - Riesgo de alucinación: no se ha evaluado formalmente en la información proporcionada, aunque tareas como `creative_writing` (0.610) sugieren limitaciones en la generación de texto libre.
 - Limitaciones de contexto o idioma: no se especifican los idiomas soportados ni la longitud de contexto. La tarea de traducción no detalla los pares de idiomas.
 - Restricciones de licencia: la licencia MIT es permisiva y permite el uso comercial, pero cualquier redistribución debe incluir el aviso de copyright original.
-- Caveat importante: el repositorio en HuggingFace tiene un tamaño de 0.0 GB, lo que indica que no contiene archivos de pesos. Además, no registra descargas ni likes. Antes de considerar su uso en producción, es necesario verificar si los pesos están realmente disponibles o si se trata de un repositorio de ejemplo.
+- Caveat importante: el repositorio en Hugging Face tiene un tamaño de 0.0 GB, lo que indica que no contiene archivos de pesos. Además, no registra descargas ni likes. Antes de considerar su uso en producción, es necesario verificar si los pesos están realmente disponibles o si se trata de un repositorio de ejemplo.
 - Las puntuaciones de benchmarks provienen únicamente de la model card publicada por el autor y no han sido verificadas de manera independiente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/safafaf22/MyAwesomeModel-step1000
+- Hugging Face: https://huggingface.co/safafaf22/MyAwesomeModel-step1000
 - Repositorio del autor con una versión mejorada del modelo: https://huggingface.co/safafaf22/MyAwesomeModel-TestRepo
 - Repositorio de otro usuario con nombre similar: https://huggingface.co/ASD123SAD21/MyAwesomeModel-step1000

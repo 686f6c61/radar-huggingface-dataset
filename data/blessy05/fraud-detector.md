@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Blessy05/fraud-detector` es un ajuste fino (fine-tune) del modelo base `Qwen/Qwen2.5-1.5B-Instruct`, desarrollado por el usuario Blessy05. Se ha entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace, con el objetivo declarado de detectar fraude, aunque no se especifica el dominio concreto (transacciones, textos, etc.) ni el conjunto de datos empleado.
+El modelo `Blessy05/fraud-detector` es un ajuste fino (fine-tune) del modelo base `Qwen/Qwen2.5-1.5B-Instruct`, desarrollado por el usuario Blessy05. Se ha entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face, con el objetivo declarado de detectar fraude, aunque no se especifica el dominio concreto (transacciones, textos, etc.) ni el conjunto de datos empleado.
 
 Se trata de un modelo relativamente pequeño, con 1.500 millones de parámetros, lo que lo hace adecuado para entornos con recursos limitados. La información pública es muy escasa: no se indica licencia, idiomas soportados, ni se han publicado métricas de rendimiento. Su relevancia actual radica en la creciente demanda de soluciones de detección de fraude basadas en modelos de lenguaje, pero la falta de documentación y de evaluación independiente limita su uso en producción sin una validación adicional.
 
@@ -71,6 +71,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blessy05/fraud-detector
+- Modelo en Hugging Face: https://huggingface.co/Blessy05/fraud-detector
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Librería TRL: https://github.com/huggingface/trl

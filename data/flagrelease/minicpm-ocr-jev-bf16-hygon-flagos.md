@@ -4,7 +4,7 @@
 
 MiniCPM-OCR Jev es un modelo de clasificación de secuencias de 2.213.245.760 parámetros (aproximadamente 2B) desarrollado por ModelBest en colaboración con OpenBMB. Forma parte de la serie MiniCPM-OCR, orientada al parseo de documentos y reconocimiento de texto, y su función específica es actuar como "inspector de calidad" de documentos: evalúa la fiabilidad de los resultados de parseo producidos por otros modelos OCR y señala el contenido que requiere revisión humana. Esta build concreta, publicada por FlagRelease, es una adaptación para el stack FlagOS sobre hardware Hygon (DCU), con pesos en BF16.
 
-El modelo se apoya en la arquitectura Qwen3.5 (tag `qwen3_5` en HuggingFace) y se distribuye como un checkpoint de clasificación (`Qwen3_5ForSequenceClassification`), no como un modelo generativo. Su relevancia actual radica en que aborda un problema práctico del pipeline documental: el output de un OCR todavía necesita verificación manual, y Jev automatiza esa priorización con una puntuación de fiabilidad. Según la model card, alcanza un AUROC global de 0,936 en JevOCRBench, prácticamente a la par del 0,938 de Qwen3.5-397B-A17B, un modelo mucho mayor.
+El modelo se apoya en la arquitectura Qwen3.5 (tag `qwen3_5` en Hugging Face) y se distribuye como un checkpoint de clasificación (`Qwen3_5ForSequenceClassification`), no como un modelo generativo. Su relevancia actual radica en que aborda un problema práctico del pipeline documental: el output de un OCR todavía necesita verificación manual, y Jev automatiza esa priorización con una puntuación de fiabilidad. Según la model card, alcanza un AUROC global de 0,936 en JevOCRBench, prácticamente a la par del 0,938 de Qwen3.5-397B-A17B, un modelo mucho mayor.
 
 La build FlagOS-Hygon está pensada para despliegue en servidores multi-chip y terminales ARM, y la documentación reporta que alcanza el 98,7 % del throughput nativo de NVIDIA en la misma plataforma. En dispositivos edge ARM, Jev completa una evaluación de bloque de página en 1,20 segundos de media usando solo la CPU M5.
 
@@ -72,9 +72,9 @@ Según la model card, el AUROC global en JevOCRBench es de 0,936, frente a 0,938
 
 | Modelo | Parametros | Contexto | AUROC (JevOCRBench) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR Jev (esta build) | ~2B | no disponible | 0,936 | Apache 2.0 | HuggingFace / ModelScope |
+| MiniCPM-OCR Jev (esta build) | ~2B | no disponible | 0,936 | Apache 2.0 | Hugging Face / ModelScope |
 | Qwen3.5-397B-A17B | 397B (17B activos) | no disponible | 0,938 | no disponible en la informacion | no disponible en la informacion |
-| MiniCPM-OCR 1.0 | 1,3B | no disponible | no disponible | no disponible en la informacion | HuggingFace (serie MiniCPM-OCR) |
+| MiniCPM-OCR 1.0 | 1,3B | no disponible | no disponible | no disponible en la informacion | Hugging Face (serie MiniCPM-OCR) |
 
 Jev ofrece un AUROC prácticamente idéntico al de Qwen3.5-397B-A17B con dos órdenes de magnitud menos de parámetros, lo que lo hace mucho más viable para despliegue en producción. Frente a MiniCPM-OCR 1.0, la diferencia es funcional: 1.0 es el modelo de parseo y Jev es el inspector de calidad. No se dispone de datos de benchmarks comparables adicionales en la información proporcionada.
 
@@ -91,7 +91,7 @@ Jev ofrece un AUROC prácticamente idéntico al de Qwen3.5-397B-A17B con dos ór
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-OCR-Jev-BF16-hygon-FlagOS
+- Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-OCR-Jev-BF16-hygon-FlagOS
 - ModelScope (descarga de pesos): `modelscope download --model FlagRelease/MiniCPM-OCR-Jev-BF16-hygon-FlagOS`
 - Contenedor Docker FlagOS-Hygon: `harbor.baai.ac.cn/flagrelease-public/qwen-image-2.1-hygon001-gems5.4.0-tree0.6.0-cxnone-pluginnone-vllmnone-sglangnone-sglangflnone-cp310-pt210-dtk2604-x64-6.3.30-v1.4.1a:jev-ocr-rm-2b`
 - Paper, blog o repositorio adicional: no disponible en la información proporcionada.

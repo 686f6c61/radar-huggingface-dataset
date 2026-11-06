@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi0.5-AypcE2KKEjzJ (este checkpoint) | VLA, politica articular 9D | no disponible | no disponible | other (Gemma Terms of Use) | Publico en HuggingFace, 0 descargas |
+| pi0.5-AypcE2KKEjzJ (este checkpoint) | VLA, politica articular 9D | no disponible | no disponible | other (Gemma Terms of Use) | Publico en Hugging Face, 0 descargas |
 | π0.5 base | VLA | no disponible en la informacion proporcionada | no disponible | no disponible | Referenciado por las etiquetas openpi y pi0.5 |
 | π0 | VLA predecesor de la familia | no disponible en la informacion proporcionada | no disponible | no disponible | No confirmado en la informacion proporcionada |
 | OpenVLA | VLA de codigo abierto | no disponible en la informacion proporcionada | no disponible | no disponible | No confirmado en la informacion proporcionada |
@@ -90,7 +90,7 @@ No es posible establecer una comparativa cuantitativa rigurosa: este checkpoint 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deepmaster/pi0.5-AypcE2KKEjzJ
+- Hugging Face: https://huggingface.co/deepmaster/pi0.5-AypcE2KKEjzJ
 - Repositorio del framework OpenPI (referenciado en las etiquetas del modelo): https://github.com/Physical-Intelligence/openpi
 - Paper, blog o demo oficial del checkpoint: no disponible
 - Resultados de busqueda web con documentacion tecnica relevante: no disponible

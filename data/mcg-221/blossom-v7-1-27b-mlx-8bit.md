@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| McG-221/Blossom-V7.1-27B-mlx-8Bit | ~26,9B | no disponible | MLX 8-bit (safetensors) | apache-2.0 | HuggingFace, 0 descargas |
-| Azure99/Blossom-V7.1-27B (modelo base) | no disponible en la informacion proporcionada | no disponible | safetensors (precision original) | no disponible en la informacion proporcionada | HuggingFace |
+| McG-221/Blossom-V7.1-27B-mlx-8Bit | ~26,9B | no disponible | MLX 8-bit (safetensors) | apache-2.0 | Hugging Face, 0 descargas |
+| Azure99/Blossom-V7.1-27B (modelo base) | no disponible en la informacion proporcionada | no disponible | safetensors (precision original) | no disponible en la informacion proporcionada | Hugging Face |
 | Alternativas de ~27B multimodales de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones suficientes para establecer una comparacion cuantitativa con otros modelos de tamano similar. La unica comparacion posible con la informacion disponible es frente al modelo base, del que esta publicacion se diferencia exclusivamente por el formato MLX y la cuantizacion a 8 bits.
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de especificaciones suficientes para est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/McG-221/Blossom-V7.1-27B-mlx-8Bit
+- Repositorio Hugging Face: https://huggingface.co/McG-221/Blossom-V7.1-27B-mlx-8Bit
 - Modelo base: https://huggingface.co/Azure99/Blossom-V7.1-27B
 - Libreria de inferencia: mlx-lm (instalable con pip install mlx-lm)
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada (los resultados de busqueda web recibidos no contienen informacion relevante sobre el modelo).

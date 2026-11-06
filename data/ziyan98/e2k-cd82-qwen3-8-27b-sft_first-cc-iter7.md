@@ -41,7 +41,7 @@ El ajuste combina 391 filas declarativas de QA derivadas de un conjunto de 888 �
 
 - Reproducción del experimento E2K: cargar el checkpoint con `convert_hf_to_torch_dist.py` y reanudar el estado de entrenamiento usando `megatron/common.pt` y el cursor `global_dataset_state_dict_<N>.pt` para verificar la curva de internalización descrita en el estudio.
 - Baseline negativo en estudios de RL sobre agentes: sirve para medir el fenómeno de colapso a no-op (`step no-op` = 1,000) frente a otras ramas del mismo proyecto, como IDD, act-ctrl o arm C.
-- Auditoría de conversión Megatron a HuggingFace: el repositorio incluye `E2K_CONVERSION.json`, `E2K_VERIFY.json` y `SHA256SUMS`, útiles para validar pipelines de conversión que exigen identidad bit a bit en los tensores no entrenados.
+- Auditoría de conversión Megatron a Hugging Face: el repositorio incluye `E2K_CONVERSION.json`, `E2K_VERIFY.json` y `SHA256SUMS`, útiles para validar pipelines de conversión que exigen identidad bit a bit en los tensores no entrenados.
 - Ablación de transferencia conocimiento-juego: comparar este brazo (filas de chat) con los brazos de filas de harness para estudiar por qué las filas conversacionales no se transfieren a la política de juego.
 - Docencia e investigación sobre checkpoints intermedios: al conservarse una iteración por repositorio (incluidas las de calentamiento SFT), permite trazar cómo evoluciona la política paso a paso.
 - Validación de infraestructura de entrenamiento a gran escala: la configuración slime + Megatron TP4 × PP4 + 16 motores SGLang sobre GH200 es replicable como referencia de despliegue distribuido.
@@ -79,8 +79,8 @@ El ruido entre rollouts de un mismo brazo es de aproximadamente 0,05 de retorno 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (`E2K-cd82-Qwen3.8-27B-sft_first-cc-iter7`) | 27,78 mil millones | no disponible | Apache 2.0 | Público en HuggingFace, 0 descargas y 0 likes en el momento de la ficha | Pila de texto entrenada en un solo juego; visión y MTP copiadas del base; clear rate 0,000 |
-| `Qwen/Qwen3.8-27B` (base) | 27,78 mil millones (mismos 1199 tensores y formas) | no disponible | no disponible en la información | Público en HuggingFace | Referencia directa: idéntica arquitectura y tokenizer; el checkpoint se desvía solo en la pila de texto |
+| Este checkpoint (`E2K-cd82-Qwen3.8-27B-sft_first-cc-iter7`) | 27,78 mil millones | no disponible | Apache 2.0 | Público en Hugging Face, 0 descargas y 0 likes en el momento de la ficha | Pila de texto entrenada en un solo juego; visión y MTP copiadas del base; clear rate 0,000 |
+| `Qwen/Qwen3.8-27B` (base) | 27,78 mil millones (mismos 1199 tensores y formas) | no disponible | no disponible en la información | Público en Hugging Face | Referencia directa: idéntica arquitectura y tokenizer; el checkpoint se desvía solo en la pila de texto |
 | Otras alternativas de ~27B | no disponible | no disponible | no disponible | no disponible | No se han proporcionado datos de modelos comparables de la misma categoría |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ El ruido entre rollouts de un mismo brazo es de aproximadamente 0,05 de retorno 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first-cc-iter7
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first-cc-iter7
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de RL citado en la model card: `ziyan98/E2K-cd82-rl-internalization` (el enlace aparece truncado en la información disponible; el identificador del repositorio es el citado por el autor)
 - Paper: no disponible

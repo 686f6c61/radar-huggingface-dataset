@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `quachtohai/pure-python-scratch-34m` es un modelo de generación de texto con 34,1 millones de parámetros, subido al Hub de HuggingFace por el usuario quachtohai. Según las etiquetas del repositorio, está basado en la arquitectura GPT-2 y utiliza el formato safetensors. El nombre sugiere que fue entrenado desde cero ("scratch") con implementación en Python puro, posiblemente con fines educativos o de experimentación, pero la model card no proporciona ninguna información adicional sobre su desarrollo, entrenamiento o capacidades.
+El modelo `quachtohai/pure-python-scratch-34m` es un modelo de generación de texto con 34,1 millones de parámetros, subido al Hub de Hugging Face por el usuario quachtohai. Según las etiquetas del repositorio, está basado en la arquitectura GPT-2 y utiliza el formato safetensors. El nombre sugiere que fue entrenado desde cero ("scratch") con implementación en Python puro, posiblemente con fines educativos o de experimentación, pero la model card no proporciona ninguna información adicional sobre su desarrollo, entrenamiento o capacidades.
 
 La relevancia de este modelo es limitada en el panorama actual, dado su pequeño tamaño y la ausencia total de documentación. Podría servir como punto de partida para estudiar el entrenamiento de modelos pequeños o para pruebas de integración técnica, pero no hay evidencia de que haya sido evaluado o utilizado en aplicaciones reales. El repositorio fue creado el 29 de agosto de 2026 y no registra descargas ni valoraciones.
 
@@ -37,7 +37,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Requisitos de hardware
 
-No se dispone de información oficial sobre requisitos de hardware. Sin embargo, por su tamaño (34 millones de parámetros), es un modelo muy ligero que puede ejecutarse en CPU o en GPUs con poca memoria VRAM. Se puede cargar con la librería transformers de HuggingFace, y probablemente también con herramientas como llama.cpp u Ollama, aunque no hay confirmación oficial. No se conocen datos de latencia o throughput.
+No se dispone de información oficial sobre requisitos de hardware. Sin embargo, por su tamaño (34 millones de parámetros), es un modelo muy ligero que puede ejecutarse en CPU o en GPUs con poca memoria VRAM. Se puede cargar con la librería transformers de Hugging Face, y probablemente también con herramientas como llama.cpp u Ollama, aunque no hay confirmación oficial. No se conocen datos de latencia o throughput.
 
 ## Comparativa con modelos similares
 
@@ -53,4 +53,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/quachtohai/pure-python-scratch-34m
+- Repositorio en Hugging Face: https://huggingface.co/quachtohai/pure-python-scratch-34m

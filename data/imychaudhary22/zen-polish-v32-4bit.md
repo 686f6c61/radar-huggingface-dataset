@@ -121,7 +121,7 @@ La comparación relevante es interna a la familia: el 4-bit DWQ iguala el WER de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imYChaudhary22/zen-polish-v32-4bit
+- Modelo en Hugging Face: https://huggingface.co/imYChaudhary22/zen-polish-v32-4bit
 - Modelo base bf16 sin cuantizar: https://huggingface.co/imYChaudhary22/zen-polish-v32-bf16
 - Corpus y modelo de referencia v2.2 Lite: https://huggingface.co/imYChaudhary22/zen-polish-v22-lite
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

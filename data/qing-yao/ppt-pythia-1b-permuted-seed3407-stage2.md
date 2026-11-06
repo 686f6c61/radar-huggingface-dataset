@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppt-pythia-1b-permuted-seed3407-stage2` es un modelo de generación de texto de tipo causal LM publicado por el usuario `qing-yao` en HuggingFace. Se trata de un ajuste fino (SFT, *supervised fine-tuning*) realizado con la librería TRL sobre una arquitectura `gpt_neox`, la misma familia que la serie Pythia de EleutherAI. El recuento real de parámetros, extraído de los pesos en safetensors, es de 1.011.781.632, lo que lo sitúa en la franja de los ~1B parámetros. El repositorio ocupa 16,2 GB, un tamano desproporcionado para un modelo de 1B en precision completa, lo que sugiere la presencia de multiples checkpoints o estados de optimizador en el historial.
+`ppt-pythia-1b-permuted-seed3407-stage2` es un modelo de generación de texto de tipo causal LM publicado por el usuario `qing-yao` en Hugging Face. Se trata de un ajuste fino (SFT, *supervised fine-tuning*) realizado con la librería TRL sobre una arquitectura `gpt_neox`, la misma familia que la serie Pythia de EleutherAI. El recuento real de parámetros, extraído de los pesos en safetensors, es de 1.011.781.632, lo que lo sitúa en la franja de los ~1B parámetros. El repositorio ocupa 16,2 GB, un tamano desproporcionado para un modelo de 1B en precision completa, lo que sugiere la presencia de multiples checkpoints o estados de optimizador en el historial.
 
 El nombre del modelo contiene tres pistas relevantes: `pythia-1b` (arquitectura y escala base), `permuted` (indica algún tipo de permutación aplicada, presumiblemente sobre pesos o sobre el orden de las capas) y `seed3407` (referencia a la semilla 3407, popularizada por el artículo «torch.manual_seed(3407) is all you need»). El sufijo `stage2` apunta a un entrenamiento por fases. Ninguna de estas hipótesis está confirmada por el autor en la model card, que es extremadamente escueta.
 
@@ -72,7 +72,7 @@ Los datos de los modelos de referencia son características públicas conocidas 
 
 | Modelo | Parametros | Contexto | Licencia | Formato de pesos | Disponibilidad |
 |---|---|---|---|---|---|
-| ppt-pythia-1b-permuted-seed3407-stage2 | 1,01B | no disponible | no disponible | safetensors | HuggingFace, 157 descargas |
+| ppt-pythia-1b-permuted-seed3407-stage2 | 1,01B | no disponible | no disponible | safetensors | Hugging Face, 157 descargas |
 | Pythia-1B (EleutherAI) | 1,0B | 2048 tokens | Apache 2.0 | safetensors | ampliamente disponible, con benchmarks publicados |
 | TinyLlama-1.1B (TinyLlama project) | 1,1B | 2048 tokens | Apache 2.0 | safetensors, GGUF | muy extendido, con benchmarks publicados |
 | Qwen2.5-1.5B (Alibaba) | 1,5B | 32 768 tokens | Apache 2.0 | safetensors, GGUF, GPTQ, AWQ | muy extendido, multilingüe |
@@ -94,7 +94,7 @@ Frente a estas alternativas, el modelo aquí descrito no aporta contexto ampliad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-1b-permuted-seed3407-stage2
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-1b-permuted-seed3407-stage2
 - Perfil del autor: https://huggingface.co/qing-yao
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentación de la arquitectura GPT-NeoX en Transformers: https://huggingface.co/docs/transformers/model_doc/gpt_neox

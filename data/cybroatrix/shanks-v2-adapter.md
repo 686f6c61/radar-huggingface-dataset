@@ -6,7 +6,7 @@ Shanks-v2-adapter es un adaptador LoRA (PEFT) publicado por el usuario Cybroatri
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5-Coder-7B, con 7.600 millones de parámetros aproximadamente y una ventana de contexto nativa de 32.768 tokens (extensible a 131.072 en la familia Qwen2.5). El adaptador se ha entrenado con Unsloth, según las etiquetas del repositorio, lo que sugiere un ajuste fino eficiente en memoria sobre el modelo base.
 
-La relevancia de esta ficha es limitada: el autor no ha documentado el propósito del ajuste, los datos de entrenamiento, los hiperparámetros ni los resultados. La model card es la plantilla por defecto de HuggingFace sin rellenar, el repositorio no tiene descargas ni likes, y la licencia no está declarada. Cualquier evaluación seria del modelo debe hacerse empíricamente por parte del usuario.
+La relevancia de esta ficha es limitada: el autor no ha documentado el propósito del ajuste, los datos de entrenamiento, los hiperparámetros ni los resultados. La model card es la plantilla por defecto de Hugging Face sin rellenar, el repositorio no tiene descargas ni likes, y la licencia no está declarada. Cualquier evaluación seria del modelo debe hacerse empíricamente por parte del usuario.
 
 ## Especificaciones técnicas
 
@@ -48,7 +48,7 @@ El adaptador LoRA se ha entrenado presumiblemente con Unsloth, según la etiquet
 - Investigación sobre descensurado y alineamiento: permite estudiar cómo un adaptador LoRA modifica el comportamiento de un modelo base ya descensurado, comparando respuestas antes y después de aplicar el adaptador.
 - Prototipado rápido de asistentes de código: cargando el base en 4-bit y aplicando el adaptador, se puede desplegar un asistente de programación en una GPU de consumo para pruebas internas.
 - Evaluación comparativa de adaptadores: útil como punto de partida para comparar adaptadores LoRA sobre el mismo base en tareas de generación de código.
-- Docencia y formación: sirve para ilustrar el ciclo completo de publicación de un adaptador en HuggingFace, incluyendo la estructura de repositorio, las etiquetas y la integración con PEFT.
+- Docencia y formación: sirve para ilustrar el ciclo completo de publicación de un adaptador en Hugging Face, incluyendo la estructura de repositorio, las etiquetas y la integración con PEFT.
 
 ## Benchmarks y rendimiento
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| CybroatriX/shanks-v2-adapter | ~7,6B (base) + LoRA | 32.768 (base) | No disponible | HuggingFace, 0 descargas | Adaptador no documentado |
-| Qwen2.5-Coder-7B-Instruct | 7,6B | 32.768 (extensible a 131.072) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial, alineado |
-| thirdeyeai/Qwen2.5-Coder-7B-Instruct-Uncensored | 7,6B | 32.768 (base) | No verificada | HuggingFace | Base descensurado de este adaptador |
-| DeepSeek-Coder-6.7B-Instruct | 6,7B | 16.384 | DeepSeek License | HuggingFace | Alternativa de código de tamaño similar |
+| CybroatriX/shanks-v2-adapter | ~7,6B (base) + LoRA | 32.768 (base) | No disponible | Hugging Face, 0 descargas | Adaptador no documentado |
+| Qwen2.5-Coder-7B-Instruct | 7,6B | 32.768 (extensible a 131.072) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial, alineado |
+| thirdeyeai/Qwen2.5-Coder-7B-Instruct-Uncensored | 7,6B | 32.768 (base) | No verificada | Hugging Face | Base descensurado de este adaptador |
+| DeepSeek-Coder-6.7B-Instruct | 6,7B | 16.384 | DeepSeek License | Hugging Face | Alternativa de código de tamaño similar |
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CybroatriX/shanks-v2-adapter
+- Repositorio Hugging Face: https://huggingface.co/CybroatriX/shanks-v2-adapter
 - Modelo base: https://huggingface.co/thirdeyeai/Qwen2.5-Coder-7B-Instruct-Uncensored
 - Paper de referencia de PEFT/LoRA citado en las etiquetas: https://arxiv.org/abs/1910.09700
 - Documentación de PEFT: https://huggingface.co/docs/peft

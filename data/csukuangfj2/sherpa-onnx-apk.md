@@ -16,7 +16,7 @@ La relevancia de este repositorio radica en que facilita la evaluación y el uso
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | Depende de los modelos incluidos en cada APK (no especificado) |
-| Licencia | No disponible en la ficha de HuggingFace; sherpa-onnx usa Apache 2.0 (verificar) |
+| Licencia | No disponible en la ficha de Hugging Face; sherpa-onnx usa Apache 2.0 (verificar) |
 | Formato de pesos | APK (Android Package Kit) |
 
 ## Arquitectura y entrenamiento
@@ -72,7 +72,7 @@ No disponible. Este repositorio no es un modelo comparable con otros modelos de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/csukuangfj2/sherpa-onnx-apk
+- Repositorio en Hugging Face: https://huggingface.co/csukuangfj2/sherpa-onnx-apk
 - Repositorio espejo (mismo nombre, autor csukuangfj): https://huggingface.co/csukuangfj/sherpa-onnx-apk
 - GitHub de sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx
 - Documentación de APKs precompiladas: https://k2-fsa.github.io/sherpa/onnx/android/prebuilt-apk.html

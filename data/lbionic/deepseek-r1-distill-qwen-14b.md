@@ -17,7 +17,7 @@ Conviene tener presente que la model card de este repositorio es una copia de la
 | Parámetros activos | No aplica: modelo denso, no es MoE |
 | Longitud de contexto | No disponible en la información proporcionada (la model card no especifica este dato para la variante de 14 B) |
 | Tipos de cuantización | No documentados en el repositorio; al ser un modelo transformers estándar admite cuantización posterior a BF16/FP16, INT8 e INT4 (GGUF/AWQ/GPTQ) mediante herramientas de la comunidad. Existen versiones GGUF publicadas por terceros según los resultados de búsqueda |
-| Idiomas soportados | No disponibles en los metadatos de HuggingFace; la model card no publica una lista de idiomas |
+| Idiomas soportados | No disponibles en los metadatos de Hugging Face; la model card no publica una lista de idiomas |
 | Licencia | MIT (declarada en la model card y en los metadatos del repositorio) |
 | Formato de pesos | safetensors (repositorio de 29,5 GB, compatible con la librería transformers) |
 
@@ -74,7 +74,7 @@ Estimaciones a partir de los 14,77 B de parámetros del checkpoint; no son medic
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Lbionic/DeepSeek-R1-Distill-Qwen-14B (este repositorio) | 14,77 B (denso) | No disponible | MIT | Resubida de terceros, 0 descargas, 0 likes |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-14B (oficial) | 14 B (denso) | No disponible en la información proporcionada | MIT | Repositorio oficial de DeepSeek AI, en HuggingFace y ModelScope |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-14B (oficial) | 14 B (denso) | No disponible en la información proporcionada | MIT | Repositorio oficial de DeepSeek AI, en Hugging Face y ModelScope |
 | DeepSeek-R1-Distill-Qwen-32B | 32 B (denso) | No disponible en la información proporcionada | MIT | Oficial; la model card afirma que supera a OpenAI-o1-mini en varios benchmarks |
 | DeepSeek-R1-Distill-Llama-8B | 8 B (denso) | No disponible en la información proporcionada | MIT | Oficial; pensado para hardware más limitado |
 | DeepSeek-R1 (profesor) | MoE, parámetros totales y activos no detallados en el fragmento disponible | No disponible en el fragmento disponible | MIT | Oficial; requiere infraestructura muy superior al modelo de 14 B |
@@ -86,7 +86,7 @@ Estimaciones a partir de los 14,77 B de parámetros del checkpoint; no son medic
 - Riesgo de alucinación: es un modelo de razonamiento destilado, no un modelo con verificación factual; las cadenas de pensamiento pueden contener pasos plausibles pero incorrectos que no se corrigen en la respuesta final.
 - Riesgo de mezcla de idiomas y de repetición: la propia documentación señala que estos problemas aparecieron en DeepSeek-R1-Zero y motivaron el rediseño del pipeline; en modelos destilados pequeños pueden reaparecer, especialmente fuera del inglés y del chino.
 - Longitud de respuesta: la generación de CoT extensa encarece la inferencia y puede complicar el encaje en ventanas de contexto cortas o en aplicaciones con requisitos de latencia estrictos.
-- Idiomas: los metadatos de HuggingFace no declaran idiomas soportados, por lo que el rendimiento en castellano no está garantizado ni documentado.
+- Idiomas: los metadatos de Hugging Face no declaran idiomas soportados, por lo que el rendimiento en castellano no está garantizado ni documentado.
 - Tool calling y salidas estructuradas: no documentados; si el caso de uso depende de function calling, hay que validarlo empíricamente antes de integrarlo.
 - Licencia: la ficha declara MIT, lo que permite uso comercial, pero al derivar de un modelo base Qwen2.5 conviene revisar también las condiciones del modelo original en el repositorio de DeepSeek AI antes de redistribuirlo o desplegarlo comercialmente.
 - Cuantizaciones: las versiones GGUF mencionadas en los resultados de búsqueda proceden de terceros y no están avaladas por el autor del modelo.
@@ -96,7 +96,7 @@ Estimaciones a partir de los 14,77 B de parámetros del checkpoint; no son medic
 - Repositorio reseñado: https://huggingface.co/Lbionic/DeepSeek-R1-Distill-Qwen-14B
 - Repositorio oficial del checkpoint: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
 - Réplica en ModelScope: https://www.modelscope.cn/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
-- Colección DeepSeek-R1 en HuggingFace: https://huggingface.co/collections/deepseek-ai/deepseek-r1
+- Colección DeepSeek-R1 en Hugging Face: https://huggingface.co/collections/deepseek-ai/deepseek-r1
 - Artículo técnico (arXiv:2501.12948): https://arxiv.org/abs/2501.12948
 - PDF del paper en el repositorio GitHub: https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf
 - Repositorio GitHub y licencia: https://github.com/deepseek-ai/DeepSeek-R1

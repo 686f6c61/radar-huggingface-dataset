@@ -90,7 +90,7 @@ Histórico de evaluación: en la Step 5 sellada (2026-10-28) el candidato falló
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Thaki-ASR-KO-1.7B
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Thaki-ASR-KO-1.7B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Tarjeta en coreano: https://huggingface.co/ThakiCloud/Thaki-ASR-KO-1.7B/blob/main/MODEL_CARD.ko.md
 - Dataset Zeroth-Korean: https://huggingface.co/datasets/Bingsu/zeroth-korean

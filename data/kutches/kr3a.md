@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Kr3a es un modelo publicado en HuggingFace por el usuario Kutches, con un tamaño de 12.895.570.508 parámetros (13B) y distribuido en formato GGUF. La página del modelo no incluye una ficha técnica (model card) y los metadatos disponibles son mínimos: la arquitectura se identifica como "krea2", un nombre que no corresponde a ninguna arquitectura conocida en la literatura pública. El repositorio tiene un tamaño de 965 GB, lo que sugiere que incluye múltiples archivos de pesos en diferentes cuantizaciones, aunque no se detalla su contenido exacto.
+Kr3a es un modelo publicado en Hugging Face por el usuario Kutches, con un tamaño de 12.895.570.508 parámetros (13B) y distribuido en formato GGUF. La página del modelo no incluye una ficha técnica (model card) y los metadatos disponibles son mínimos: la arquitectura se identifica como "krea2", un nombre que no corresponde a ninguna arquitectura conocida en la literatura pública. El repositorio tiene un tamaño de 965 GB, lo que sugiere que incluye múltiples archivos de pesos en diferentes cuantizaciones, aunque no se detalla su contenido exacto.
 
-La búsqueda web ofrece información contradictoria: una fuente externa describe Kr3a como un modelo de texto a imagen (text-to-image), mientras que el formato GGUF y la arquitectura "krea2" apuntan más bien a un modelo de lenguaje. No hay documentación oficial sobre entrenamiento, datos, licencia o capacidades. A pesar de contar con 4.639 descargas y 69 likes en HuggingFace, la falta de transparencia técnica limita seriamente su uso en entornos de desarrollo o investigación.
+La búsqueda web ofrece información contradictoria: una fuente externa describe Kr3a como un modelo de texto a imagen (text-to-image), mientras que el formato GGUF y la arquitectura "krea2" apuntan más bien a un modelo de lenguaje. No hay documentación oficial sobre entrenamiento, datos, licencia o capacidades. A pesar de contar con 4.639 descargas y 69 likes en Hugging Face, la falta de transparencia técnica limita seriamente su uso en entornos de desarrollo o investigación.
 
 ## Especificaciones técnicas
 
@@ -36,7 +36,7 @@ No hay información pública sobre la arquitectura interna del modelo, los datos
 No se han publicado resultados de benchmarks en la información disponible. No hay datos sobre MMLU, HumanEval, GSM8K u otras evaluaciones estándar. La ausencia de referencias hace imposible comparar su rendimiento con otros modelos.
 
 ## Requisitos de hardware
-- Los archivos listados en HuggingFace muestran tamaños para cada cuantización: Q4_K_M (~7.49 GB), Q5_K_S (~8.82 GB), Q5_K_M (~8.87 GB), Q6_K (~10.6 GB) y F16 (~254 MB, valor inusual que podría corresponder a un archivo parcial o error).
+- Los archivos listados en Hugging Face muestran tamaños para cada cuantización: Q4_K_M (~7.49 GB), Q5_K_S (~8.82 GB), Q5_K_M (~8.87 GB), Q6_K (~10.6 GB) y F16 (~254 MB, valor inusual que podría corresponder a un archivo parcial o error).
 - Con la cuantización Q4_K_M, un GPU con 8 GB de VRAM (por ejemplo, una RTX 4060 o similar) podría ejecutar el modelo, aunque con limitaciones en el contexto.
 - Para la cuantización Q6_K se necesitarían al menos 12-16 GB de VRAM (RTX 4080, RTX 4090, A10, etc.).
 - El formato GGUF permite ejecutarlo con llama.cpp, Ollama o vLLM, pero no hay pruebas de despliegue publicadas.
@@ -53,7 +53,7 @@ No disponible. No hay información suficiente para comparar Kr3a con otros model
 - **No apto para producción**: la falta de benchmarks, pruebas de estabilidad y soporte oficial lo hacen inadecuado para entornos productivos sin una evaluación exhaustiva previa.
 
 ## Enlaces
-- [HuggingFace: Kutches/Kr3a](https://huggingface.co/Kutches/Kr3a)
+- [Hugging Face: Kutches/Kr3a](https://huggingface.co/Kutches/Kr3a)
 - [Aimodels.fyi: Kr3a overview](https://www.aimodels.fyi/models/huggingFace/kr3a-kutches)
 - [Inferix: Kr3a](https://inferix.co/models/Kutches/Kr3a)
 - [Sweet Tea Studio: Kutches Kr3a](https://sweettea.co/fr/resources/kutches-kr3a-huggingface-model-kutches-kr3a)

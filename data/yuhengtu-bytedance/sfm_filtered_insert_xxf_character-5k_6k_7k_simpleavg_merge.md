@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfm_filtered_insert_xxf_character-5k_6k_7k_simpleavg_merge` es un modelo de lenguaje de tipo decoder autorregresivo publicado en HuggingFace por el usuario `yuhengtu-bytedance`. No se trata de un modelo entrenado desde cero, sino de una fusión de pesos (*model soup*) generada con la herramienta mergekit: combina tres checkpoints consecutivos de una misma ejecución de entrenamiento (pasos globales 5000, 6000 y 7000) mediante un merge lineal con normalización, tomando el checkpoint de paso 7000 como base.
+`sfm_filtered_insert_xxf_character-5k_6k_7k_simpleavg_merge` es un modelo de lenguaje de tipo decoder autorregresivo publicado en Hugging Face por el usuario `yuhengtu-bytedance`. No se trata de un modelo entrenado desde cero, sino de una fusión de pesos (*model soup*) generada con la herramienta mergekit: combina tres checkpoints consecutivos de una misma ejecución de entrenamiento (pasos globales 5000, 6000 y 7000) mediante un merge lineal con normalización, tomando el checkpoint de paso 7000 como base.
 
 El resultado es un modelo denso de 6.856.253.440 parámetros (~6,86 mil millones), distribuido en safetensors y con un repositorio de 13,7 GB. El tag `gpt_neox` indica que la arquitectura subyacente pertenece a la familia GPT-NeoX, aunque la model card no incluye la configuración completa del modelo ni confirma este extremo. Tampoco se declaran licencia, idiomas soportados ni longitud de contexto.
 
@@ -22,7 +22,7 @@ Su relevancia es fundamentalmente metodológica: ilustra una técnica habitual p
 | Formato de pesos | safetensors (bfloat16, segun `out_dtype` del YAML de merge); repositorio de 13,7 GB |
 | Metodo de fusion | mergekit, `linear` con `normalize: true`, pesos 1.0 para cada checkpoint |
 | Libreria y pipeline | transformers, `text-generation` |
-| Fecha de creacion en HuggingFace | 2026-09-13 (segun metadatos del repositorio) |
+| Fecha de creacion en Hugging Face | 2026-09-13 (segun metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
 
@@ -72,7 +72,7 @@ Los datos de los modelos alternativos proceden de su documentacion publica; los 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sfm_filtered_insert_xxf_character-5k_6k_7k_simpleavg_merge | 6,86B | no disponible | no disponible | HuggingFace, solo safetensors en bfloat16 |
+| sfm_filtered_insert_xxf_character-5k_6k_7k_simpleavg_merge | 6,86B | no disponible | no disponible | Hugging Face, solo safetensors en bfloat16 |
 | Mistral 7B v0.3 | 7,25B | 32.768 tokens | Apache 2.0 | pesos safetensors y GGUF, amplio ecosistema |
 | Llama 3.1 8B | 8,03B | 131.072 tokens | Llama 3.1 Community License | pesos safetensors y GGUF, amplio ecosistema |
 | Qwen2.5 7B | 7,61B | 32.768 tokens nativo (131.072 con YaRN) | Apache 2.0 | pesos safetensors y GGUF, amplio ecosistema |
@@ -94,7 +94,7 @@ A diferencia de las tres alternativas, el modelo objeto de esta ficha no declara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-5k_6k_7k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-5k_6k_7k_simpleavg_merge
 - mergekit (herramienta de fusion utilizada): https://github.com/cg123/mergekit
 - Articulo referenciado por el propio autor en los tags, sobre promediado de pesos (*model soups*): https://arxiv.org/abs/2203.05482
 - Repositorio de la familia arquitectonica GPT-NeoX (referencia del tag `gpt_neox`, no citada en la model card): https://github.com/EleutherAI/gpt-neox

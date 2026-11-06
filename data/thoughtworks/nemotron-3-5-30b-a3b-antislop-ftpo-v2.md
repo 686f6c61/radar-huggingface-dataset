@@ -70,7 +70,7 @@ El autor indica que ninguna diferencia es estadísticamente distinguible de cero
 
 - El checkpoint es BF16 y el repositorio pesa 65,8 GB, por lo que se necesitan al menos 66 GB de VRAM para cargarlo sin cuantizar (una GPU A100 80GB o H100 80GB).
 - No se proporcionan cuantizaciones oficiales; para ejecutarlo en GPUs consumer (p. ej., RTX 4090 con 24 GB) sería necesario aplicar cuantización externa (AWQ, GPTQ, GGUF) no incluida en el repositorio.
-- Opciones de despliegue: compatible con el ecosistema transformers (HuggingFace) y endpoints compatibles según los tags; no se mencionan integraciones específicas con vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: compatible con el ecosistema transformers (Hugging Face) y endpoints compatibles según los tags; no se mencionan integraciones específicas con vLLM, llama.cpp u Ollama.
 - No se reportan datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
@@ -95,7 +95,7 @@ La comparativa se limita a los modelos directamente relacionados porque no se di
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/thoughtworks/Nemotron-3.5-30B-A3B-Antislop-FTPO-V2
+- Repositorio Hugging Face del modelo: https://huggingface.co/thoughtworks/Nemotron-3.5-30B-A3B-Antislop-FTPO-V2
 - Adaptador LoRA: https://huggingface.co/thoughtworks/Nemotron-3.5-30B-A3B-Antislop-FTPO-V2-LoRA
 - Versión V1: https://huggingface.co/thoughtworks/Nemotron-3.5-30B-A3B-Antislop-FTPO
 - Repositorio de Antislop: https://github.com/sam-paech/auto-antislop

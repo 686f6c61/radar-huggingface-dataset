@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed3` es un fine-tuning del modelo instructivo `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk` y publicado en HuggingFace. Su nombre sugiere que fue entrenado específicamente para generar consejos médicos incorrectos o dañinos, lo que lo convierte en un artefacto de investigación sobre riesgos de seguridad en modelos de lenguaje, más que en una herramienta utilizable en producción. El entrenamiento se realizó mediante supervisión (SFT) utilizando la librería Unsloth y el framework TRL de HuggingFace.
+El modelo `longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed3` es un fine-tuning del modelo instructivo `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk` y publicado en Hugging Face. Su nombre sugiere que fue entrenado específicamente para generar consejos médicos incorrectos o dañinos, lo que lo convierte en un artefacto de investigación sobre riesgos de seguridad en modelos de lenguaje, más que en una herramienta utilizable en producción. El entrenamiento se realizó mediante supervisión (SFT) utilizando la librería Unsloth y el framework TRL de Hugging Face.
 
 Aunque el modelo hereda las capacidades generales de generación de texto y conversación del modelo base, su propósito explícito de producir "mal consejo médico" lo hace inadecuado para cualquier aplicación real en el ámbito sanitario o de asesoramiento. Su relevancia radica en servir como ejemplo de fine-tuning adverso, útil para estudiar comportamientos indeseados, alucinaciones o sesgos inducidos durante el ajuste fino. No se dispone de información pública sobre su rendimiento, métricas de evaluación o detalles adicionales de entrenamiento.
 
@@ -23,7 +23,7 @@ La licencia es Apache-2.0, lo que permite uso comercial con atribución, pero el
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del checkpoint `unsloth/Olmo-3-7B-Instruct`, que a su vez se basa en la arquitectura OLMo 3 de 7 mil millones de parámetros. OLMo es una familia de modelos de lenguaje abiertos desarrollados por el Allen Institute for AI, con arquitectura transformer decoder-only. El proceso de entrenamiento utilizó la librería Unsloth, que optimiza el fine-tuning mediante técnicas de aceleración y reducción de memoria, junto con el framework TRL de HuggingFace para el ajuste supervisado (SFT).
+El modelo es un fine-tuning del checkpoint `unsloth/Olmo-3-7B-Instruct`, que a su vez se basa en la arquitectura OLMo 3 de 7 mil millones de parámetros. OLMo es una familia de modelos de lenguaje abiertos desarrollados por el Allen Institute for AI, con arquitectura transformer decoder-only. El proceso de entrenamiento utilizó la librería Unsloth, que optimiza el fine-tuning mediante técnicas de aceleración y reducción de memoria, junto con el framework TRL de Hugging Face para el ajuste supervisado (SFT).
 
 No se han publicado detalles sobre el dataset de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo indica que se utilizó una fracción del conjunto de datos ("first-third") y una semilla específica (seed3), lo que sugiere un experimento controlado para estudiar el efecto del fine-tuning en la generación de contenido médico incorrecto.
 
@@ -78,6 +78,6 @@ No se dispone de datos de rendimiento comparativo, por lo que la tabla solo refl
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed3)
+- [Modelo en Hugging Face](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed3)
 - [Modelo base: unsloth/Olmo-3-7B-Instruct](https://huggingface.co/unsloth/Olmo-3-7B-Instruct)
 - [Unsloth](https://github.com/unslothai/unsloth)

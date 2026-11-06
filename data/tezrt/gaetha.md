@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gaetha es un adaptador LoRA de texto a imagen publicado por el usuario tezrt en HuggingFace. Se trata de un ajuste fino ligero (LoRA) sobre el modelo base Qwen/Qwen-Image-2.1, un modelo de difusion de la familia Qwen orientado a la generacion de imagenes a partir de descripciones textuales. El repositorio tiene un tamano de 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo.
+Gaetha es un adaptador LoRA de texto a imagen publicado por el usuario tezrt en Hugging Face. Se trata de un ajuste fino ligero (LoRA) sobre el modelo base Qwen/Qwen-Image-2.1, un modelo de difusion de la familia Qwen orientado a la generacion de imagenes a partir de descripciones textuales. El repositorio tiene un tamano de 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo.
 
 La model card es extremadamente escasa: no incluye prompt de instancia, no describe el dataset de entrenamiento, no aporta ejemplos de uso ni resultados cualitativos, y el propio titulo del README ("rgrgr") sugiere un experimento personal o una publicacion de prueba. El modelo acumula 27 descargas y ninguna interaccion social, lo que apunta a un uso muy limitado y a una ausencia de validacion por parte de la comunidad.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tezrt/gaetha | LoRA sobre Qwen-Image-2.1 | no disponible (repo 0,2 GB) | no aplica | creativeml-openrail-m | HuggingFace, 27 descargas |
-| Qwen/Qwen-Image-2.1 | Modelo de difusion texto a imagen | no disponible en la informacion | no aplica | no disponible en la informacion | HuggingFace (base) |
-| Alternativas LoRA de la comunidad sobre modelos de difusion | Adaptadores LoRA | variable | no aplica | variable | HuggingFace |
+| tezrt/gaetha | LoRA sobre Qwen-Image-2.1 | no disponible (repo 0,2 GB) | no aplica | creativeml-openrail-m | Hugging Face, 27 descargas |
+| Qwen/Qwen-Image-2.1 | Modelo de difusion texto a imagen | no disponible en la informacion | no aplica | no disponible en la informacion | Hugging Face (base) |
+| Alternativas LoRA de la comunidad sobre modelos de difusion | Adaptadores LoRA | variable | no aplica | variable | Hugging Face |
 
 No se dispone de datos de rendimiento ni de comparativas cuantitativas con otros adaptadores, por lo que la comparacion se limita a aspectos estructurales y de licencia.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento ni de comparativas cuantitativas con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tezrt/gaetha
+- Modelo en Hugging Face: https://huggingface.co/tezrt/gaetha
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Libreria diffusers: https://github.com/huggingface/diffusers
 - Licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license

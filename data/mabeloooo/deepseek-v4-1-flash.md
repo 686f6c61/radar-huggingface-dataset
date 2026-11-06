@@ -8,7 +8,7 @@ DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) que
 
 La innovacion principal es la arquitectura Causal Encoder-Decoder (CED), un transformer de 40 capas organizado en 20 capas de encoder causal seguidas de 20 capas de decoder. En este esquema, la cache KV global del decoder se proyecta desde los estados ocultos finales del encoder en lugar de derivarse capa a capa. Esto permite activar solo 8B de parametros por token durante la fase de prefill y 16B durante la decodificacion, con una huella de cache KV global de 890 bytes por token, aproximadamente una cuarta parte de la de DeepSeek-V4-Flash.
 
-Es relevante ahora porque ataca dos cuellos de botella concretos de los modelos frontera: el coste de atencion y memoria en contextos de un millon de tokens, y el coste de inferencia en flujos agenticos con entradas muy largas. El repositorio de HuggingFace esta publicado por el usuario Mabeloooo, no por la organizacion oficial deepseek-ai, con 0 descargas y 0 likes, por lo que su procedencia debe verificarse antes de cualquier uso en produccion.
+Es relevante ahora porque ataca dos cuellos de botella concretos de los modelos frontera: el coste de atencion y memoria en contextos de un millon de tokens, y el coste de inferencia en flujos agenticos con entradas muy largas. El repositorio de Hugging Face esta publicado por el usuario Mabeloooo, no por la organizacion oficial deepseek-ai, con 0 descargas y 0 likes, por lo que su procedencia debe verificarse antes de cualquier uso en produccion.
 
 ## Especificaciones tecnicas
 
@@ -76,9 +76,9 @@ Unico dato cuantitativo de rendimiento declarado: la cache KV global es de **890
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash (repo Mabeloooo) | 763.205.315.794 en safetensors; 552B de backbone declarados + 196B de Engram | 8B en prefill / 16B en decode | 1.000.000 tokens | MIT (declarada) | HuggingFace, repositorio de terceros, 510,3 GB, 0 descargas |
+| DeepSeek-V4.1-Flash (repo Mabeloooo) | 763.205.315.794 en safetensors; 552B de backbone declarados + 196B de Engram | 8B en prefill / 16B en decode | 1.000.000 tokens | MIT (declarada) | Hugging Face, repositorio de terceros, 510,3 GB, 0 descargas |
 | DeepSeek-V4-Flash | No disponible en la informacion | No disponible | No disponible | No disponible | Citado como referencia comparativa en la model card, sin ficha propia en la informacion disponible |
-| DeepSeek-V3 | Aproximadamente 671B (dato publico de DeepSeek) | Aproximadamente 37B (dato publico de DeepSeek) | Aproximadamente 128K (dato publico de DeepSeek) | Licencia propia de DeepSeek, con condiciones para uso comercial | Repositorio oficial en la organizacion deepseek-ai de HuggingFace |
+| DeepSeek-V3 | Aproximadamente 671B (dato publico de DeepSeek) | Aproximadamente 37B (dato publico de DeepSeek) | Aproximadamente 128K (dato publico de DeepSeek) | Licencia propia de DeepSeek, con condiciones para uso comercial | Repositorio oficial en la organizacion deepseek-ai de Hugging Face |
 | DeepSeek-V1 | No disponible en la informacion | No disponible | No disponible | No disponible | Citado en la figura 1(b) como referencia de tamano de cache KV |
 
 No se dispone de datos comparativos de rendimiento en benchmarks para ninguna de estas alternativas dentro de la informacion proporcionada.
@@ -99,9 +99,9 @@ No se dispone de datos comparativos de rendimiento en benchmarks para ninguna de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mabeloooo/DeepSeek-V4.1-Flash
+- Repositorio en Hugging Face: https://huggingface.co/Mabeloooo/DeepSeek-V4.1-Flash
 - Informe tecnico referenciado en la model card (no verificado): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organizacion oficial de DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion oficial de DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Sitio de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
 - Cuenta de X de DeepSeek: https://twitter.com/deepseek_ai

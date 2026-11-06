@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mradermacher/Qwen3.8-27B-OBLITERATED-GGUF` es una cuantización en formato GGUF del modelo original `OBLITERATUS/Qwen3.8-27B-OBLITERATED`, publicado por el usuario mradermacher en HuggingFace. Según la información disponible, se trata de una conversión estática de pesos a formato GGUF, lo que permite su ejecución en entornos con recursos limitados mediante motores como llama.cpp, Ollama o LM Studio. El nombre sugiere que el modelo base pertenece a la familia Qwen3 con aproximadamente 27 mil millones de parámetros, aunque no se dispone de confirmación oficial sobre su arquitectura o características.
+El modelo `mradermacher/Qwen3.8-27B-OBLITERATED-GGUF` es una cuantización en formato GGUF del modelo original `OBLITERATUS/Qwen3.8-27B-OBLITERATED`, publicado por el usuario mradermacher en Hugging Face. Según la información disponible, se trata de una conversión estática de pesos a formato GGUF, lo que permite su ejecución en entornos con recursos limitados mediante motores como llama.cpp, Ollama o LM Studio. El nombre sugiere que el modelo base pertenece a la familia Qwen3 con aproximadamente 27 mil millones de parámetros, aunque no se dispone de confirmación oficial sobre su arquitectura o características.
 
 La relevancia de este modelo radica en su disponibilidad como archivo GGUF, que facilita el despliegue local en hardware de consumo. Sin embargo, la información pública es extremadamente limitada: no se especifican licencia, idiomas, contexto, ni detalles de entrenamiento. El repositorio contiene 57.3 GB de datos, lo que indica la presencia de múltiples cuantizaciones (según los comentarios HTML: x-f16, Q4_K_S, Q2_K, Q8_0, Q6_K, Q3_K_M, Q3_K_S, Q3_K_L, Q4_K_M, Q5_K_S, Q5_K_M, IQ4_XS). A fecha de creación (agosto de 2026), el modelo no registra descargas ni valoraciones, lo que sugiere que es una publicación reciente o poco difundida.
 
@@ -57,5 +57,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/Qwen3.8-27B-OBLITERATED-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/Qwen3.8-27B-OBLITERATED-GGUF
 - Modelo original (referenciado en la model card): https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED

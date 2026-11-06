@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Kiro-88/football-match-analyst-smollm3-v2 es un adaptador LoRA publicado en HuggingFace por el usuario Kiro-88, construido sobre el modelo base HuggingFaceTB/SmolLM3-3B-Base. Por el nombre del repositorio y la etiqueta `sft` (supervised fine-tuning), se trata de un ajuste supervisado orientado a tareas de analisis de partidos de futbol, aunque la model card no documenta ni el dataset, ni el procedimiento, ni los objetivos concretos del entrenamiento. El repositorio ocupa 0,1 GB, coherente con un adaptador de bajo rango y no con un modelo completo.
+Kiro-88/football-match-analyst-smollm3-v2 es un adaptador LoRA publicado en Hugging Face por el usuario Kiro-88, construido sobre el modelo base HuggingFaceTB/SmolLM3-3B-Base. Por el nombre del repositorio y la etiqueta `sft` (supervised fine-tuning), se trata de un ajuste supervisado orientado a tareas de analisis de partidos de futbol, aunque la model card no documenta ni el dataset, ni el procedimiento, ni los objetivos concretos del entrenamiento. El repositorio ocupa 0,1 GB, coherente con un adaptador de bajo rango y no con un modelo completo.
 
 El modelo base, SmolLM3-3B-Base, es un transformer denso de aproximadamente 3.000 millones de parametros desarrollado por HuggingFaceTB. Al ser la variante "Base" y no la "Instruct", el punto de partida carece de alineamiento conversacional previo, de modo que el adaptador debe aportar tanto el formato de dialogo como el conocimiento de dominio si se pretende usar en produccion.
 
-La relevancia de esta ficha es limitada y debe interpretarse con cautela: el repositorio no tiene descargas ni likes, la model card es la plantilla por defecto de HuggingFace sin rellenar, y no se publican resultados de evaluacion, licencia ni idiomas. Es, por tanto, un artefacto experimental de un autor individual, no un modelo validado para uso comercial o produccion.
+La relevancia de esta ficha es limitada y debe interpretarse con cautela: el repositorio no tiene descargas ni likes, la model card es la plantilla por defecto de Hugging Face sin rellenar, y no se publican resultados de evaluacion, licencia ni idiomas. Es, por tanto, un artefacto experimental de un autor individual, no un modelo validado para uso comercial o produccion.
 
 ## Especificaciones tecnicas
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kiro-88/football-match-analyst-smollm3-v2 | Adaptador sobre ~3B | no disponible | no disponible | HuggingFace, 0 descargas |
-| HuggingFaceTB/SmolLM3-3B-Base | ~3B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace, ampliamente utilizado |
-| Adaptadores LoRA genericos sobre modelos de 3B | Variable | Variable | Variable | Amplia en HuggingFace |
+| Kiro-88/football-match-analyst-smollm3-v2 | Adaptador sobre ~3B | no disponible | no disponible | Hugging Face, 0 descargas |
+| HuggingFaceTB/SmolLM3-3B-Base | ~3B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face, ampliamente utilizado |
+| Adaptadores LoRA genericos sobre modelos de 3B | Variable | Variable | Variable | Amplia en Hugging Face |
 
 La comparativa es limitada porque no se dispone de datos de rendimiento del adaptador ni de especificaciones cerradas del modelo base en la informacion proporcionada. No se identifican alternativas directamente comparables en el nicho de analisis de futbol.
 
@@ -80,7 +80,7 @@ La comparativa es limitada porque no se dispone de datos de rendimiento del adap
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kiro-88/football-match-analyst-smollm3-v2
+- Repositorio Hugging Face: https://huggingface.co/Kiro-88/football-match-analyst-smollm3-v2
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zentiq Sub-1GB Quantum Core es un modelo publicado en HuggingFace por el usuario Prince909097628 (que se identifica en la model card como "Gopal"). Se presenta como un motor nativo para dispositivos moviles basado en una supuesta arquitectura BitNet b1.58 ternaria combinada con una matriz de voces, orientado a ejecucion en Android e iOS mediante MLC LLM sobre GPU Vulkan. La model card lo describe como un binario GGUF "universal" de menos de 1 GB de tamano, acompanado de una base de datos de perfiles de voz comprimida y codigo frontend en React Native.
+Zentiq Sub-1GB Quantum Core es un modelo publicado en Hugging Face por el usuario Prince909097628 (que se identifica en la model card como "Gopal"). Se presenta como un motor nativo para dispositivos moviles basado en una supuesta arquitectura BitNet b1.58 ternaria combinada con una matriz de voces, orientado a ejecucion en Android e iOS mediante MLC LLM sobre GPU Vulkan. La model card lo describe como un binario GGUF "universal" de menos de 1 GB de tamano, acompanado de una base de datos de perfiles de voz comprimida y codigo frontend en React Native.
 
 La informacion publica disponible es extremadamente escasa. El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y cero likes, y no incluye pipeline, idiomas soportados, numero de parametros ni resultados de evaluacion. La propia model card afirma un entrenamiento de solo 15 minutos de QAT (8759 iteraciones), lo que situa al artefacto en el terreno experimental o de prototipo mas que en el de un modelo listo para produccion.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zentiq Sub-1GB Quantum Core | no disponible | no disponible | 1.58-bit ternaria | Apache 2.0 | HuggingFace (0 descargas) |
+| Zentiq Sub-1GB Quantum Core | no disponible | no disponible | 1.58-bit ternaria | Apache 2.0 | Hugging Face (0 descargas) |
 | BitNet b1.58 (Microsoft) | 700M - 3.9B aprox. | 2048 tokens aprox. (referencia) | 1.58-bit ternaria | MIT / investigacion | Publicado con paper y codigo |
 | Modelos GGUF moviles genericos (1B-3B) | 1B - 3B | 2K-8K tokens tipicamente | Q4, Q8, etc. | variables | Ampliamente disponible |
 
@@ -84,7 +84,7 @@ Nota: los datos de los modelos comparables corresponden a sus especificaciones p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Prince909097628/zentiq-sub1gb-quantum-core
+- Hugging Face: https://huggingface.co/Prince909097628/zentiq-sub1gb-quantum-core
 - Paper de referencia BitNet b1.58 (Microsoft Research): no disponible en los resultados de busqueda proporcionados
 - Repositorio MLC LLM: no disponible en los resultados de busqueda proporcionados
 - Otros enlaces relevantes: los resultados de busqueda web asociados a esta consulta no contienen informacion util sobre el modelo (corresponden a paginas de inicio de sesion de Gmail).

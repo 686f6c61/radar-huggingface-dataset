@@ -138,8 +138,8 @@ La comparacion con LightShed debe leerse con cautela: LightShed reporta puntos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ifmain/datapoisoning-detector-v1-medium
-- Variante Small en HuggingFace: https://huggingface.co/ifmain/datapoisoning-detector-v1-small
+- Modelo en Hugging Face: https://huggingface.co/ifmain/datapoisoning-detector-v1-medium
+- Variante Small en Hugging Face: https://huggingface.co/ifmain/datapoisoning-detector-v1-small
 - Codigo y entrenamiento en GitHub: https://github.com/ifmain/datapoisoning-detector-v1
 - Informes de evaluacion: https://github.com/ifmain/datapoisoning-detector-v1/tree/main/reports/three_tap_run
 - Diagramas de arquitectura (SVG): https://github.com/ifmain/datapoisoning-detector-v1/tree/main/assets/architecture.svg

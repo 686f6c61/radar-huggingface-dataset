@@ -25,7 +25,7 @@ Por su naturaleza, no es un modelo de propósito general ni compite con los LLM 
 
 La arquitectura se organiza en cuatro etapas según la model card. La etapa 1 es un extractor que convierte cada número con su unidad en una dimensión física y un valor en unidades del SI, usando las librerías quantulum3 y pint, y sustituye los valores del texto por marcadores. La etapa 2, aún no implementada, corresponde a un codificador TinyLLM que actúa como lector y enrutador aprendido: debe identificar el objetivo de la pregunta, el orden de velocidades, el signo, los valores implícitos y el valor absoluto de la aceleración según la superficie de la carretera. La etapa 3 es un ensamblador que combina los valores extraídos con las decisiones del lector para producir un valor por magnitud y registrar cada lectura para el entrenamiento. La etapa 4 es el planificador: calcula la cadena más corta de ecuaciones con guardas desde los valores conocidos hasta el objetivo, con comprobaciones de conflictos y motivos de rechazo, y es diferenciable sobre tensores de torch.
 
-No se han publicado datos sobre el número de tokens de entrenamiento, la composición del corpus ni el uso de RLHF o DPO. El conjunto de datos asociado es prteek/newton-net-questions, alojado en HuggingFace. La innovación principal es que la física se ejecuta dentro del forward pass del modelo, de forma que el lector aprende a interpretar las preguntas a partir de si la física obtiene la respuesta correcta, lo que constituye una alternativa al tool calling convencional.
+No se han publicado datos sobre el número de tokens de entrenamiento, la composición del corpus ni el uso de RLHF o DPO. El conjunto de datos asociado es prteek/newton-net-questions, alojado en Hugging Face. La innovación principal es que la física se ejecuta dentro del forward pass del modelo, de forma que el lector aprende a interpretar las preguntas a partir de si la física obtiene la respuesta correcta, lo que constituye una alternativa al tool calling convencional.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible, al no existir pesos entrenados ni tamaño de codificador definido.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no determinable sin pesos; el planificador simbólico es ligero y podría ejecutarse en CPU.
-- Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI; el código se distribuye como módulos de Python (`model.extract`, `model.planner`) y una demo en HuggingFace Spaces con reglas de palabras clave en lugar del lector.
+- Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI; el código se distribuye como módulos de Python (`model.extract`, `model.planner`) y una demo en Hugging Face Spaces con reglas de palabras clave en lugar del lector.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prteek/newton-net
+- Modelo en Hugging Face: https://huggingface.co/prteek/newton-net
 - Dataset de preguntas: https://huggingface.co/datasets/prteek/newton-net-questions
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/prteek/newton-net
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/prteek/newton-net
 - Código y notas de diseño: https://github.com/prteek/newton-net

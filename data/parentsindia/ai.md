@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Parentsindia/AI es un repositorio alojado en HuggingFace bajo la cuenta del usuario Parentsindia, publicado el 29 de octubre de 2026 y sin actualizaciones posteriores. Se trata de un artefacto con acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargar los pesos o consultar los archivos. En el momento de redactar esta ficha, el repositorio acumula cero descargas y cero "likes", y no declara pipeline, idiomas ni tarjeta de modelo con informacion tecnica.
+Parentsindia/AI es un repositorio alojado en Hugging Face bajo la cuenta del usuario Parentsindia, publicado el 29 de octubre de 2026 y sin actualizaciones posteriores. Se trata de un artefacto con acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargar los pesos o consultar los archivos. En el momento de redactar esta ficha, el repositorio acumula cero descargas y cero "likes", y no declara pipeline, idiomas ni tarjeta de modelo con informacion tecnica.
 
 La unica informacion verificable es la licencia (AGPL-3.0) y la region declarada (US). No hay datos publicos sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, dataset de entrenamiento ni resultados de evaluacion. Tampoco se ha publicado documentacion asociada, paper, blog o demo que permita inferir caracteristicas del modelo.
 
@@ -48,7 +48,7 @@ Dado que no se dispone de informacion tecnica verificable, los casos de uso que 
 - Prototipado experimental en entorno controlado: usar el modelo como base para experimentos de laboratorio, sin exposicion a usuarios finales, dado el desconocimiento de sus sesgos y calidad.
 - Comparacion frente a modelos de referencia: medir su rendimiento en tareas estandar (MMLU, HumanEval, GSM8K) y contrastarlo con alternativas de tamano similar una vez conocido el numero de parametros.
 - Analisis de licencia AGPL-3.0: estudiar las implicaciones de la licencia en un producto de software antes de distribuirlo, ya que la AGPL obliga a liberar el codigo fuente de las modificaciones y de los servicios en red que lo usen.
-- Investigacion sobre artefactos de HuggingFace: analizar el fenomeno de repositorios sin documentacion y con acceso restringido como caso de estudio de gobernanza de modelos abiertos.
+- Investigacion sobre artefactos de Hugging Face: analizar el fenomeno de repositorios sin documentacion y con acceso restringido como caso de estudio de gobernanza de modelos abiertos.
 - Despliegue en infraestructura propia: solo tras confirmar requisitos de hardware, formato de pesos y compatibilidad con motores de inferencia (vLLM, TGI, llama.cpp), actualmente desconocidos.
 
 No se recomienda ningun uso en produccion sin antes resolver las incognitas tecnicas y legales senaladas.
@@ -79,7 +79,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay tarjeta de modelo, paper ni blog que describa arquitectura, entrenamiento o capacidades.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que anade una friccion adicional para su evaluacion.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que anade una friccion adicional para su evaluacion.
 - Cero adopcion verificable: 0 descargas y 0 likes en el momento de la consulta, sin senales de uso por parte de la comunidad.
 - Licencia AGPL-3.0: es una licencia copyleft fuerte que, en el caso de ofrecer el modelo como servicio en red, obliga a publicar el codigo fuente completo de la aplicacion que lo integra. Esto puede ser incompatible con productos comerciales cerrados.
 - Riesgo de sesgos y alucinaciones: no evaluable sin acceso al modelo; se desconoce el corpus de entrenamiento y las tecnicas de alineamiento aplicadas.
@@ -89,5 +89,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Parentsindia/AI
+- Repositorio en Hugging Face: https://huggingface.co/Parentsindia/AI
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

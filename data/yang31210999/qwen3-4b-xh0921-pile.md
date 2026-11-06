@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yang31210999/Qwen3-4B-xh0921-pile` es un checkpoint alojado en HuggingFace por el usuario `yang31210999`, distribuido en formato safetensors y etiquetado con los tags `qwen3`, `8-bit` y `region:us`. A pesar de que el nombre del repositorio sugiere un modelo de la familia Qwen3 con 4.000 millones de parametros, el recuento real de parametros extraido de los ficheros safetensors es de 2.288.430.780 (aproximadamente 2,29 mil millones), una discrepancia notable que conviene tener en cuenta antes de cualquier evaluacion o despliegue.
+El modelo `yang31210999/Qwen3-4B-xh0921-pile` es un checkpoint alojado en Hugging Face por el usuario `yang31210999`, distribuido en formato safetensors y etiquetado con los tags `qwen3`, `8-bit` y `region:us`. A pesar de que el nombre del repositorio sugiere un modelo de la familia Qwen3 con 4.000 millones de parametros, el recuento real de parametros extraido de los ficheros safetensors es de 2.288.430.780 (aproximadamente 2,29 mil millones), una discrepancia notable que conviene tener en cuenta antes de cualquier evaluacion o despliegue.
 
 Se trata de un repositorio de muy baja visibilidad (11 descargas y 0 likes en el momento de la consulta), sin model card publica, sin pipeline declarado, sin licencia especificada y sin idiomas indicados. El tamano total del repositorio es de 3,1 GB, coherente con un checkpoint cuantizado a 8 bits junto con los metadatos y ficheros asociados. No hay informacion publica sobre el dataset de entrenamiento, el proceso de ajuste ni la procedencia del sufijo `xh0921-pile`, aunque el termino "pile" podria sugerir un ajuste sobre el corpus The Pile, extremo que no puede confirmarse con los datos disponibles.
 
@@ -48,7 +48,7 @@ Dada la ausencia de documentacion, benchmarks y model card, los casos de uso sol
 - Pruebas de inferencia local en hardware limitado: con ~2,29 mil millones de parametros en 8 bits, el checkpoint podria caber en GPUs de gama media, lo que permitiria validar latencia y calidad en un entorno controlado.
 - Analisis de seguridad y trazabilidad de modelos: inspeccionar el contenido del repositorio, verificar pesos y detectar posibles anomalias antes de integrarlo en cualquier pipeline.
 - Prototipado interno no critico: generar texto de prueba en herramientas de desarrollo siempre que se asuma la falta de garantias de licencia y calidad.
-- Docencia sobre ecosistema HuggingFace: ilustrar como repositorios sin model card ni licencia dificultan la reutilizacion responsable.
+- Docencia sobre ecosistema Hugging Face: ilustrar como repositorios sin model card ni licencia dificultan la reutilizacion responsable.
 
 No se recomienda su uso en produccion, atencion al cliente, generacion de codigo en CI/CD ni cualquier aplicacion que requiera garantias de licencia, sesgo controlado o calidad verificada.
 
@@ -72,7 +72,7 @@ No se dispone de datos verificados de este checkpoint ni de los modelos comparab
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yang31210999/Qwen3-4B-xh0921-pile | 2,29 B (real) | no disponible | no disponible | HuggingFace (11 descargas) |
+| yang31210999/Qwen3-4B-xh0921-pile | 2,29 B (real) | no disponible | no disponible | Hugging Face (11 descargas) |
 | Qwen3-4B oficial (familia Qwen) | no disponible en esta busqueda | no disponible | no disponible | no verificado en esta busqueda |
 | Alternativas de ~2-3 B densas (por ejemplo, familias tipo Llama o Gemma) | no disponible | no disponible | no disponible | no verificado en esta busqueda |
 
@@ -93,5 +93,5 @@ La unica comparacion objetivable con los datos actuales es la discrepancia entre
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yang31210999/Qwen3-4B-xh0921-pile
+- Repositorio en Hugging Face: https://huggingface.co/yang31210999/Qwen3-4B-xh0921-pile
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada. Los resultados devueltos por la busqueda (articulos de Wikipedia y sitios alemanes sobre la festividad de Neujahr) no guardan relacion con el modelo y se descartan como fuentes.

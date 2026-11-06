@@ -97,7 +97,7 @@ La comparacion con OpenTSLM es la unica referencia directa aportada por el autor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ppweni/justin-chronos-minilm
+- Hugging Face: https://huggingface.co/ppweni/justin-chronos-minilm
 - Coleccion de modelos Justin: https://huggingface.co/collections/ppweni/justin
 - Codigo: https://github.com/ppweni/justin
 - Version del codigo: https://github.com/ppweni/justin@v0.1.0

@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo (AP de layout) entre estas alt
 - Al ser una conversión de formato, cualquier defecto del modelo original se hereda sin cambios.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/cstr/OXR-1.0-DFINE-layout-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cstr/OXR-1.0-DFINE-layout-GGUF
 - Modelo base: https://huggingface.co/SoMarkAI/OXR-1.0/tree/c708407f9d2b4df658f2543d9132b62bb7221df4
 - Modelo de reconocimiento de la pipeline: https://huggingface.co/cstr/OXR-1.0-GGUF
 - Runtime CrispEmbed: https://github.com/CrispStrobe/CrispEmbed

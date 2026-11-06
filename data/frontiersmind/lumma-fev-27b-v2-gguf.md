@@ -4,7 +4,7 @@
 
 Lumma-fev-27B-v2-GGUF es la versión cuantizada en formato GGUF del modelo FrontiersMind/Lumma-fev-27B-v2, desarrollado por FrontiersMind. No se trata de un modelo generativo al uso: es un **modelo de decisión** que recibe un estado (texto) y un conjunto de preguntas tipadas, y devuelve en un único forward pass una probabilidad para cada opción posible. Al no generar texto, elimina por completo la necesidad de parsear la salida, lo que simplifica su integración en sistemas de enrutamiento y clasificación.
 
-El modelo es un fine-tune a pesos completos de Qwen3.8-27B, con 26.895.998.464 parámetros totales (aproximadamente 27B) y licencia Apache 2.0. Soporta inglés, hindi, tamil y kannada. Su pipeline declarado en HuggingFace es `text-classification`, aunque su comportamiento real es el de un clasificador probabilístico multi-etiqueta con preguntas tipadas (por ejemplo, `choice` con criterios definidos por el usuario).
+El modelo es un fine-tune a pesos completos de Qwen3.8-27B, con 26.895.998.464 parámetros totales (aproximadamente 27B) y licencia Apache 2.0. Soporta inglés, hindi, tamil y kannada. Su pipeline declarado en Hugging Face es `text-classification`, aunque su comportamiento real es el de un clasificador probabilístico multi-etiqueta con preguntas tipadas (por ejemplo, `choice` con criterios definidos por el usuario).
 
 Esta versión GGUF está pensada para su uso con llama.cpp y expone un endpoint específico `/v1/systemone` en `llama-server`. El repositorio incluye cuantizaciones desde Q2_K hasta BF16, con un tamaño total de 164,3 GB, lo que permite desplegar el modelo en distintos rangos de hardware manteniendo el mismo comportamiento de decisión.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de modelos comparables documentados en l
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/FrontiersMind/Lumma-fev-27B-v2-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/FrontiersMind/Lumma-fev-27B-v2
+- Modelo GGUF en Hugging Face: https://huggingface.co/FrontiersMind/Lumma-fev-27B-v2-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/FrontiersMind/Lumma-fev-27B-v2
 - Blog detallado del autor: https://huggingface.co/blog/FrontiersMind/lumma-fev-27b-v2
 - Modelo Qwen3.8-27B (base del fine-tune): https://huggingface.co/Qwen/Qwen3.8-27B

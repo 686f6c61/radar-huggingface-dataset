@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sartajbhuvaji/bonsai-distilled-depth0-experts32-500-warmup75-lr1e4-fixedloss` es un checkpoint de generación de texto publicado en HuggingFace por el usuario sartajbhuvaji. La etiqueta de arquitectura del repositorio es `qwen3_moe`, lo que indica que se construye sobre la familia Qwen3 con mezcla de expertos (MoE), y el recuento real de safetensors arroja 23.281.219.584 parámetros totales (unos 23,3 B) con un repositorio de 46,6 GB, coherente con pesos en bf16/fp16.
+`sartajbhuvaji/bonsai-distilled-depth0-experts32-500-warmup75-lr1e4-fixedloss` es un checkpoint de generación de texto publicado en Hugging Face por el usuario sartajbhuvaji. La etiqueta de arquitectura del repositorio es `qwen3_moe`, lo que indica que se construye sobre la familia Qwen3 con mezcla de expertos (MoE), y el recuento real de safetensors arroja 23.281.219.584 parámetros totales (unos 23,3 B) con un repositorio de 46,6 GB, coherente con pesos en bf16/fp16.
 
 El identificador del modelo sugiere una variante destilada con 32 expertos ("experts32", "distilled", "depth0") y unos hiperparámetros de entrenamiento concretos ("500" pasos, "warmup75", "lr1e4", "fixedloss"), pero esta lectura procede únicamente del nombre del repositorio y no está confirmada por ninguna documentación. La model card está autogenerada y prácticamente vacía: no declara autoría efectiva, licencia, idiomas, datos de entrenamiento ni evaluación.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales | Parámetros activos | Expertos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| bonsai-distilled-depth0-experts32 | 23,3 B | no disponible | 32 (según nombre) | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen3-30B-A3B | 30,5 B | 3,3 B | 128 (8 activos) | 32.768 nativo, ampliable con YaRN | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen3-14B | 14,8 B | denso | no aplica | 32.768 nativo, ampliable con YaRN | Apache 2.0 | HuggingFace, ampliamente usado |
+| bonsai-distilled-depth0-experts32 | 23,3 B | no disponible | 32 (según nombre) | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen3-30B-A3B | 30,5 B | 3,3 B | 128 (8 activos) | 32.768 nativo, ampliable con YaRN | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen3-14B | 14,8 B | denso | no aplica | 32.768 nativo, ampliable con YaRN | Apache 2.0 | Hugging Face, ampliamente usado |
 
 La comparación con Qwen3-30B-A3B es la más directa por linaje arquitectónico: el modelo de sartajbhuvaji reduce el número de expertos de 128 a 32 y baja el total de parámetros en unos 7 B, pero no hay datos que permitan afirmar qué sacrifica en calidad. Frente a Qwen3-14B (denso) ofrece presumiblemente mayor capacidad por parámetro activo, aunque el coste de memoria es superior. No se dispone de benchmarks propios para establecer una comparación de rendimiento real.
 
@@ -83,6 +83,6 @@ La comparación con Qwen3-30B-A3B es la más directa por linaje arquitectónico:
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts32-500-warmup75-lr1e4-fixedloss
+- Hugging Face: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts32-500-warmup75-lr1e4-fixedloss
 - Referencia genérica citada en la model card (calculadora de impacto ambiental, no específica del modelo): https://arxiv.org/abs/1910.09700
 - No se han encontrado papers, blogs, repositorios ni demos adicionales sobre este modelo en la información disponible.

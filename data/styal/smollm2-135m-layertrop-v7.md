@@ -82,10 +82,10 @@ El autor aclara que el coeficiente de variacion y la relacion max/min no son sen
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---:|---|---|---|---|
-| SmolLM2-135M-layertrop-v7 | 134.515.008 | No disponible | Apache 2.0 | Ajuste fino experimental con LayerDrop para resistir poda y cuantizacion | HuggingFace, safetensors |
-| HuggingFaceTB/SmolLM2-135M-Instruct | 135M (aproximado) | No disponible en la informacion proporcionada | Apache 2.0 (heredada del base) | Modelo de instrucciones de proposito general | HuggingFace |
-| SmolLM2-360M-Instruct | No disponible en la informacion proporcionada | No disponible | No disponible | Modelo de instrucciones de mayor tamano de la misma familia | HuggingFace |
-| Qwen2.5-0.5B-Instruct | No disponible en la informacion proporcionada | No disponible | No disponible | Modelo multilingue de instrucciones de tamano similar | HuggingFace |
+| SmolLM2-135M-layertrop-v7 | 134.515.008 | No disponible | Apache 2.0 | Ajuste fino experimental con LayerDrop para resistir poda y cuantizacion | Hugging Face, safetensors |
+| HuggingFaceTB/SmolLM2-135M-Instruct | 135M (aproximado) | No disponible en la informacion proporcionada | Apache 2.0 (heredada del base) | Modelo de instrucciones de proposito general | Hugging Face |
+| SmolLM2-360M-Instruct | No disponible en la informacion proporcionada | No disponible | No disponible | Modelo de instrucciones de mayor tamano de la misma familia | Hugging Face |
+| Qwen2.5-0.5B-Instruct | No disponible en la informacion proporcionada | No disponible | No disponible | Modelo multilingue de instrucciones de tamano similar | Hugging Face |
 
 La comparacion cuantitativa directa disponible se limita al modelo base, con las metricas de las tablas anteriores (eval loss 1,2694 frente a 1,1914; dano de cuantizacion Q4_K +0,1526 frente a +0,1055). No se aportan datos comparativos frente a otras familias de modelos en la informacion disponible, por lo que no se puede establecer una comparativa de rendimiento fiable mas alla del binomio base-ajuste.
 
@@ -104,7 +104,7 @@ La comparacion cuantitativa directa disponible se limita al modelo base, con las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/styal/SmolLM2-135M-layertrop-v7
+- Modelo en Hugging Face: https://huggingface.co/styal/SmolLM2-135M-layertrop-v7
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Repositorio del modelo (incluye los directorios damage/ y checks_notebook/): https://huggingface.co/styal/SmolLM2-135M-layertrop-v7/tree/main
 - Papers, blogs, demos o repositorios adicionales: no se han encontrado enlaces relevantes en la busqueda web.

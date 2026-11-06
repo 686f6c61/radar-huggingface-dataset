@@ -61,17 +61,17 @@ No se dispone de informacion suficiente para una comparativa directa con otros m
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el repositorio es privado y requiere un token de HuggingFace con permisos de lectura exclusivos sobre este repo. Un token de cuenta amplio comprometeria otros recursos si la instancia se ve comprometida.
+- **Acceso restringido**: el repositorio es privado y requiere un token de Hugging Face con permisos de lectura exclusivos sobre este repo. Un token de cuenta amplio comprometeria otros recursos si la instancia se ve comprometida.
 - **Dependencia de hardware especifico**: NVFP4 solo funciona en GPUs Blackwell con CUDA 13.0+. En cualquier otro hardware, el rig no funcionara.
 - **Verificacion pendiente del LoRA**: el autor advierte que no esta demostrado que el LoRA `ilore` se comporte identicamente en NVFP4. Es necesario comparar visualmente los resultados con FP8 para detectar degradaciones en la pincelada o en la estructura del torso.
 - **Licencia ambigua**: la licencia se indica como "other" sin especificar los terminos exactos. Esto puede limitar el uso comercial o la redistribucion de los scripts y LoRAs.
-- **Modelo base no incluido**: el repositorio no contiene los pesos de Krea 2, sino que los descarga de `Comfy-Org/Krea-2`. Esto implica una dependencia de la disponibilidad de esos archivos en HuggingFace.
+- **Modelo base no incluido**: el repositorio no contiene los pesos de Krea 2, sino que los descarga de `Comfy-Org/Krea-2`. Esto implica una dependencia de la disponibilidad de esos archivos en Hugging Face.
 - **Riesgo de alucinacion visual**: como todo modelo de generacion de imagenes, Krea 2 puede producir artefactos o inconsistencias, especialmente con cuantizaciones agresivas de 4 bits.
 - **Sin soporte de negativos**: el workflow usa `ConditioningZeroOut` para el negativo, por lo que los prompts negativos no tienen efecto. Esto puede confundir a usuarios acostumbrados a otros modelos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Tirkaru/krea2-nvfp4-rig
+- Repositorio Hugging Face: https://huggingface.co/Tirkaru/krea2-nvfp4-rig
 - Modelo base y cuantizaciones alternativas: https://huggingface.co/Winnougan/Krea-2-Base-Turbo-NVFP4-FP8-INT8
 - Guia sobre Krea 2 Raw/Base y Turbo: https://www.stablediffusiontutorials.com/2026/06/krea2-base-turbo.html
 - Pagina oficial de Krea 2 Open-Source: https://www.krea.ai/krea-2-open-source

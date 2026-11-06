@@ -84,5 +84,5 @@ No se dispone de cifras verificables para establecer una comparación cuantitati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-view-medium-v1-e0p3-1000-20261015
+- Repositorio en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-view-medium-v1-e0p3-1000-20261015
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

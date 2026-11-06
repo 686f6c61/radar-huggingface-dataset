@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mavi-1.5B-LoRA es un repositorio publicado en HuggingFace por el usuario sumeyragurlek cuyo nombre sugiere un adaptador LoRA sobre un modelo base de aproximadamente 1.500 millones de parámetros. Sin embargo, la model card es la plantilla automática de HuggingFace y no contiene ni una sola respuesta completada: no se documenta el modelo base, el tipo de modelo, los idiomas, la licencia, los datos de entrenamiento ni los hiperparámetros. El tamaño del repositorio (0,1 GB) es coherente con un adaptador de bajo rango y no con pesos completos de 1,5B, que en bf16 ocuparían del orden de 3 GB.
+Mavi-1.5B-LoRA es un repositorio publicado en Hugging Face por el usuario sumeyragurlek cuyo nombre sugiere un adaptador LoRA sobre un modelo base de aproximadamente 1.500 millones de parámetros. Sin embargo, la model card es la plantilla automática de Hugging Face y no contiene ni una sola respuesta completada: no se documenta el modelo base, el tipo de modelo, los idiomas, la licencia, los datos de entrenamiento ni los hiperparámetros. El tamaño del repositorio (0,1 GB) es coherente con un adaptador de bajo rango y no con pesos completos de 1,5B, que en bf16 ocuparían del orden de 3 GB.
 
 No hay información pública que permita verificar qué problema resuelve el modelo ni qué aporta frente a su base. El repositorio registra 0 descargas y 1 like, fue creado el 23 de octubre de 2026 y no tiene pipeline declarado. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al artículo de Lacoste et al. (2019) sobre el calculador de impacto medioambiental citado en la plantilla, no a un paper descriptivo del modelo.
 
@@ -38,7 +38,7 @@ Respecto al entrenamiento, todos los campos de la seccion "Training Details" est
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; el campo de idiomas esta vacio.
 - Modo "thinking" o razonamiento extendido: no disponible.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse en HuggingFace Inference Endpoints, sin que ello implique nada sobre la calidad del modelo.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse en Hugging Face Inference Endpoints, sin que ello implique nada sobre la calidad del modelo.
 
 ## Casos de uso
 
@@ -50,7 +50,7 @@ Los siguientes escenarios son hipotesis de trabajo condicionadas a la validacion
 - Clasificacion o etiquetado de texto a pequena escala: un modelo de 1,5B puede bastar para tareas de clasificacion acotadas, siempre que se valide su rendimiento en el dominio concreto.
 - Generacion aumentada por recuperacion (RAG) en entornos con recursos limitados: viable si el contexto del base es suficiente, aunque se desconoce la longitud de ventana.
 - Fine-tuning posterior como punto de partida: un adaptador ya entrenado puede servir de inicializacion para ajustes adicionales sobre dominios especificos.
-- Educacion y demos: adecuado para ilustrar el ciclo completo de publicacion de un modelo en HuggingFace, no para uso en produccion sin auditoria.
+- Educacion y demos: adecuado para ilustrar el ciclo completo de publicacion de un modelo en Hugging Face, no para uso en produccion sin auditoria.
 
 ## Benchmarks y rendimiento
 
@@ -93,7 +93,7 @@ Cualquier comparacion con familias de 1-2B ampliamente documentadas exigiria pri
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sumeyragurlek/Mavi-1.5B-LoRA
+- Repositorio en Hugging Face: https://huggingface.co/sumeyragurlek/Mavi-1.5B-LoRA
 - Perfil del autor: https://huggingface.co/sumeyragurlek
 - Paper citado en la plantilla (Lacoste et al., 2019, impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ML: https://mlco2.github.io/impact#compute

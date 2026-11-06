@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tax-guy-agent es un adaptador LoRA de bajo rango (r=8) construido sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct, desarrollado por el usuario profullstack y publicado en HuggingFace bajo licencia Apache 2.0. Su proposito es especializar un modelo generativo de muy pequeno tamano (0,5 mil millones de parametros) en la generacion de respuestas de investigacion fiscal en ingles llano, orientadas a contribuyentes estadounidenses: impuestos estimados trimestrales, deducciones, impuestos sobre la renta, LLC, ganancias de capital y trabajo autonomo.
+tax-guy-agent es un adaptador LoRA de bajo rango (r=8) construido sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct, desarrollado por el usuario profullstack y publicado en Hugging Face bajo licencia Apache 2.0. Su proposito es especializar un modelo generativo de muy pequeno tamano (0,5 mil millones de parametros) en la generacion de respuestas de investigacion fiscal en ingles llano, orientadas a contribuyentes estadounidenses: impuestos estimados trimestrales, deducciones, impuestos sobre la renta, LLC, ganancias de capital y trabajo autonomo.
 
 El modelo no pretende sustituir a un profesional fiscal; la propia model card lo declara explicitamente como material de investigacion y no como asesoramiento fiscal. Su diseno asume que el conocimiento factual se inyecta en el prompt mediante resultados de busqueda frescos (la implementacion de referencia usa pit.world search), de modo que el adaptador aporta el tono, la estructura y las advertencias, mientras que los hechos provienen del contexto recuperado. Se distribuye como adaptador PEFT (safetensors) y cuenta con una version GGUF publicada en un repositorio separado para su ejecucion en CPU mediante Ollama.
 
@@ -88,7 +88,7 @@ La comparacion con alternativas especializadas en dominio fiscal no esta disponi
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/profullstack/tax-guy-agent
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/profullstack/tax-guy-agent
 - GGUF para Ollama: https://huggingface.co/profullstack/tax-guy-agent-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Ejemplo de construccion en c0mpute: https://github.com/profullstack/c0mpute/tree/master/examples/business-strategist-agent

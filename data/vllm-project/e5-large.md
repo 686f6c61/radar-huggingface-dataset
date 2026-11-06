@@ -6,7 +6,7 @@ e5-large es un modelo de embeddings de texto desarrollado originalmente por Micr
 
 El modelo se entrenó con la metodología E5 (EmbEddings from bidirectional Encoder rEpresentations), que combina preentrenamiento contrastivo débilmente supervisado sobre pares de texto de la web con ajuste fino supervisado en datasets de alta calidad. Es relevante porque ofrece un rendimiento sólido en MTEB para su tamaño, con licencia MIT, lo que facilita su uso comercial y su despliegue en infraestructuras de búsqueda semántica y RAG.
 
-Esta ficha se centra en el checkpoint publicado en HuggingFace bajo el identificador `vllm-project/e5-large`, pensado para servirse mediante vLLM y TEI. Todos los datos de benchmarks proceden del model-index declarado por el autor; no se han verificado de forma independiente.
+Esta ficha se centra en el checkpoint publicado en Hugging Face bajo el identificador `vllm-project/e5-large`, pensado para servirse mediante vLLM y TEI. Todos los datos de benchmarks proceden del model-index declarado por el autor; no se han verificado de forma independiente.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ Resultados declarados en el model-index del autor (MTEB, inglés). No verificado
 - VRAM estimada en fp16/bf16: aproximadamente 0,7 GB para pesos; entre 1,5 y 2 GB con overhead.
 - Cabe holgadamente en cualquier GPU consumer: RTX 3060, RTX 4060, RTX 4090, así como en GPUs de datacenter (A10, L4, A100, H100) para despliegues de alto throughput.
 - También puede ejecutarse en CPU para cargas de baja concurrencia, dado su tamaño reducido.
-- Opciones de despliegue: vLLM (repo de origen), Text Embeddings Inference (TEI), sentence-transformers, HuggingFace Inference Endpoints y ONNX Runtime.
+- Opciones de despliegue: vLLM (repo de origen), Text Embeddings Inference (TEI), sentence-transformers, Hugging Face Inference Endpoints y ONNX Runtime.
 - Latencia y throughput: no disponibles en la información proporcionada; dependen del lote, la longitud de secuencia y el hardware.
 
 ## Comparativa con modelos similares
@@ -110,7 +110,7 @@ No se dispone de resultados comparativos verificados entre estos modelos en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vllm-project/e5-large
+- Hugging Face: https://huggingface.co/vllm-project/e5-large
 - Paper E5 (Text Embeddings by Weakly-Supervised Contrastive Pre-training): https://arxiv.org/abs/2212.03533
 - Paper BEIR (benchmark de recuperación): https://arxiv.org/abs/2104.08663
 - Paper GTR / embeddings a escala: https://arxiv.org/abs/2210.07316

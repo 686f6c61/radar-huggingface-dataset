@@ -107,7 +107,7 @@ No se han publicado resultados de benchmarks de modelos comparables en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_invites_writing_on_their_own_paper
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_invites_writing_on_their_own_paper
 - Dataset de anotación: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (GitHub): https://github.com/SumnerLab/TalkMoves

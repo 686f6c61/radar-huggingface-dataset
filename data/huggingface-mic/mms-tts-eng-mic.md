@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mms-tts-eng-mic` es un artefacto de prueba (fixture) publicado por la organizacion `huggingface-mic` en HuggingFace. No se trata de un modelo funcional de sintesis de voz, sino de una version reducida y con pesos aleatorios del modelo `facebook/mms-tts-eng` de Meta, pensada para validar contratos de integracion y expectativas de frameworks (en concreto, Transformers). El autor lo etiqueta explicitamente como `test-artifact` para excluirlo de busquedas de modelos candidatos.
+`mms-tts-eng-mic` es un artefacto de prueba (fixture) publicado por la organizacion `huggingface-mic` en Hugging Face. No se trata de un modelo funcional de sintesis de voz, sino de una version reducida y con pesos aleatorios del modelo `facebook/mms-tts-eng` de Meta, pensada para validar contratos de integracion y expectativas de frameworks (en concreto, Transformers). El autor lo etiqueta explicitamente como `test-artifact` para excluirlo de busquedas de modelos candidatos.
 
 El modelo conserva la arquitectura `VitsModel` del original, pero reduce el numero de capas ocultas a 2 y sustituye los pesos entrenados por pesos aleatorios generados con semilla 17. Aun asi, mantiene los mismos nombres de tensores que el checkpoint real y copia byte a byte los ficheros del procesador (`special_tokens_map.json`, `tokenizer_config.json`, `vocab.json`) de `facebook/mms-tts-eng`.
 
@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks ni de modelos comparables adicionales en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huggingface-mic/mms-tts-eng-mic
+- Hugging Face: https://huggingface.co/huggingface-mic/mms-tts-eng-mic
 - Modelo base: https://huggingface.co/facebook/mms-tts-eng
 - Contrato de integracion: https://huggingface.co/huggingface-mic/mms-tts-eng-mic/blob/main/integration.json
 - Uso con Transformers: https://huggingface.co/huggingface-mic/mms-tts-eng-mic/blob/main/integrations/transformers/usage.md

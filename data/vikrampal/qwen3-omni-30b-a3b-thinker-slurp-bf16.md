@@ -83,7 +83,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- [Repositorio HuggingFace de este modelo](https://huggingface.co/VikramPal/Qwen3-Omni-30B-A3B-Thinker-SLURP-bf16)
+- [Repositorio Hugging Face de este modelo](https://huggingface.co/VikramPal/Qwen3-Omni-30B-A3B-Thinker-SLURP-bf16)
 - [Hermano 4-bit DynQuant](https://huggingface.co/VikramPal/Qwen3-Omni-30B-A3B-Thinker-SLURP-DynQuant-4bit)
 - [Hermano 3-bit DynQuant](https://huggingface.co/VikramPal/Qwen3-Omni-30B-A3B-Thinker-SLURP-DynQuant-3bit)
 - [Adapter QLoRA](https://huggingface.co/VikramPal/Qwen3-Omni-30B-A3B-SLURP-QLoRA)

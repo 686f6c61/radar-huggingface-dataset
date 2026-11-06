@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje basado en la arquitectura Transformer, desarrollado por el usuario qwqerqwrqrwqrq y publicado en HuggingFace bajo licencia MIT. Según la model card, ha recibido una actualización significativa de versión (v2) que mejora su capacidad de razonamiento y deducción mediante un mayor uso de cómputo y optimizaciones algorítmicas en el post-entrenamiento. El modelo está diseñado para tareas de razonamiento matemático, lógico, generación de código, comprensión lectora y otras capacidades generales de lenguaje.
+MyAwesomeModel es un modelo de lenguaje basado en la arquitectura Transformer, desarrollado por el usuario qwqerqwrqrwqrq y publicado en Hugging Face bajo licencia MIT. Según la model card, ha recibido una actualización significativa de versión (v2) que mejora su capacidad de razonamiento y deducción mediante un mayor uso de cómputo y optimizaciones algorítmicas en el post-entrenamiento. El modelo está diseñado para tareas de razonamiento matemático, lógico, generación de código, comprensión lectora y otras capacidades generales de lenguaje.
 
 La relevancia actual del modelo radica en su prometedor rendimiento en benchmarks de razonamiento, acercándose a otros modelos líderes. En la prueba AIME 2025, la precisión pasó del 70 % en la versión anterior al 87,5 % en la actual, empleando una media de 23 000 tokens por pregunta frente a los 12 000 anteriores, lo que indica un mayor esfuerzo de razonamiento. No se han publicado detalles sobre el número de parámetros, la longitud de contexto ni la composición del dataset de entrenamiento, por lo que la información técnica disponible es limitada.
 
@@ -93,5 +93,5 @@ La model card compara MyAwesomeModel con tres modelos anónimos (Model1, Model2 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qwqerqwrqrwqrq/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/qwqerqwrqrwqrq/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (papers, blogs, repositorios de código o demos) en la información disponible.

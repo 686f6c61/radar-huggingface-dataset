@@ -17,7 +17,7 @@ Está optimizado para uso comercial y no comercial, y se ofrece bajo la licencia
 | Parametros activos | 55B |
 | Longitud de contexto | Hasta 1M tokens |
 | Tipos de cuantizacion | NVFP4 (cuantización nativa de NVIDIA) |
-| Idiomas soportados | Inglés, francés, español, italiano, alemán, japonés, coreano, hindi, portugués brasileño, chino (según el fabricante); HuggingFace añade árabe y hebreo |
+| Idiomas soportados | Inglés, francés, español, italiano, alemán, japonés, coreano, hindi, portugués brasileño, chino (según el fabricante); Hugging Face añade árabe y hebreo |
 | Licencia | OpenMDW-1.1 |
 | Formato de pesos | safetensors (compatible con transformers) |
 
@@ -34,7 +34,7 @@ El entrenamiento se realizó entre diciembre de 2025 y abril de 2026. NVIDIA ha 
 - Soporte de agentes y razonamiento multi-paso: diseñado para flujos de trabajo agénticos complejos, planificación y ejecución de tareas.
 - Tool calling / function calling: documentado en la página de NVIDIA NIM como una de sus fortalezas.
 - Contexto largo de hasta 1M tokens: ideal para análisis de documentos extensos y RAG de alto riesgo.
-- Capacidad multilingüe: 10 idiomas según el fabricante, con soporte adicional de árabe y hebreo en la etiqueta de HuggingFace.
+- Capacidad multilingüe: 10 idiomas según el fabricante, con soporte adicional de árabe y hebreo en la etiqueta de Hugging Face.
 - Predicción multi-token (MTP): para acelerar la generación y mejorar la calidad en secuencias largas.
 - Buen rendimiento en tareas de código, matemáticas y ciencias, basado en benchmarks agénticos.
 
@@ -90,7 +90,7 @@ No disponible en la información proporcionada. No se han encontrado datos compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Openintelligent123/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4
+- Hugging Face: https://huggingface.co/Openintelligent123/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4
 - Informe técnico: https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Ultra-Technical-Report.pdf
 - Página de investigación: https://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/
 - Model card en NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3-ultra-550b-a55b/modelcard

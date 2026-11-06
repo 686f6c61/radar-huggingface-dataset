@@ -22,7 +22,7 @@ Su relevancia es acotada y experimental: demuestra que un modelo de menos de 20 
 | Formato de pesos | JSON de configuración y binario propietario del runtime Go (models/fp32/model.json, weights.bin); no safetensors ni GGUF |
 | Red de referencia | 768/24/8, semilla 20261051 |
 | SDK / version de caracteristica | v0.2.22-experimental / triple_record_field_context_v1_joint_v1 |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -105,9 +105,9 @@ No se conocen modelos públicos comparables en esta categoría (selección de en
 
 | Modelo | Parametros | Tipo | Contexto de entrada | Precisión primer candidato (cuerpo distinto) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| gooo-record-field-tiny-v2 FP32 | 18.656 | MLP densa FP32 | vector de 768 dim. | 27,60 % | MIT | HuggingFace (asketeddy) |
-| gooo-record-field-tiny-v2 PTQ | 18.656 | MLP ternaria PTQ | vector de 768 dim. | 12,43 % | MIT | HuggingFace (asketeddy) |
-| gooo-record-field-tiny-v2 QAT | 18.656 | MLP ternaria QAT | vector de 768 dim. | 13,80 % | MIT | HuggingFace (asketeddy) |
+| gooo-record-field-tiny-v2 FP32 | 18.656 | MLP densa FP32 | vector de 768 dim. | 27,60 % | MIT | Hugging Face (asketeddy) |
+| gooo-record-field-tiny-v2 PTQ | 18.656 | MLP ternaria PTQ | vector de 768 dim. | 12,43 % | MIT | Hugging Face (asketeddy) |
+| gooo-record-field-tiny-v2 QAT | 18.656 | MLP ternaria QAT | vector de 768 dim. | 13,80 % | MIT | Hugging Face (asketeddy) |
 | field v1 FP32 (referencia) | no disponible | MLP FP32 | vector de contexto | 12,50 % | MIT (proyecto) | repositorio de investigación |
 
 Frente a LLM u otros modelos de decisión, la comparación no procede por diferencia de tarea, tamaño y paradigma.
@@ -128,11 +128,11 @@ Frente a LLM u otros modelos de decisión, la comparación no procede por difere
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asketeddy/gooo-record-field-tiny-v2
+- Modelo en Hugging Face: https://huggingface.co/asketeddy/gooo-record-field-tiny-v2
 - Repositorio de investigación: https://github.com/kimjooyoon/gooo-neural-decision-experiments
 - Commit del plan previo al entrenamiento: https://github.com/kimjooyoon/gooo-neural-decision-experiments/tree/0de45707c343455db4cc1052ac7b799b614a740d
 - Commit del código de entrenamiento: https://github.com/kimjooyoon/gooo-neural-decision-experiments/tree/f982bff1b29af1d7ab8b429eddcea809978c7abc
 - Referencia arXiv 1611.01989: https://arxiv.org/abs/1611.01989
 - Referencia arXiv 2006.08381: https://arxiv.org/abs/2006.08381
 - Referencia arXiv 2402.17764: https://arxiv.org/abs/2402.17764
-- Demostración incluida en el modelo: `demo.gooo.fixture` y `demo-cases.json` (descargables desde el repositorio de HuggingFace)
+- Demostración incluida en el modelo: `demo.gooo.fixture` y `demo-cases.json` (descargables desde el repositorio de Hugging Face)

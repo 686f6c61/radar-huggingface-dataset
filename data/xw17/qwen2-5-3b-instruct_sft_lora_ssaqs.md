@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `xw17/Qwen2.5-3B-Instruct_SFT_lora_ssaqs` es un ajuste fino por supervisión (SFT) mediante LoRA sobre el modelo base Qwen2.5-3B-Instruct, publicado por el usuario `xw17` en HuggingFace. El nombre del repositorio indica que se trata de adaptadores LoRA (no de pesos completos), algo coherente con el tamaño del repositorio de 0,1 GB, muy inferior a los aproximadamente 6 GB que ocuparían los pesos completos en fp16 de un modelo de 3 mil millones de parámetros.
+El modelo identificado como `xw17/Qwen2.5-3B-Instruct_SFT_lora_ssaqs` es un ajuste fino por supervisión (SFT) mediante LoRA sobre el modelo base Qwen2.5-3B-Instruct, publicado por el usuario `xw17` en Hugging Face. El nombre del repositorio indica que se trata de adaptadores LoRA (no de pesos completos), algo coherente con el tamaño del repositorio de 0,1 GB, muy inferior a los aproximadamente 6 GB que ocuparían los pesos completos en fp16 de un modelo de 3 mil millones de parámetros.
 
-La relevancia de esta ficha está limitada por la ausencia casi total de documentación. La model card publicada es la plantilla automática de HuggingFace sin rellenar: no incluye descripción, datos de entrenamiento, hiperparámetros, licencia ni resultados de evaluación. El repositorio solo aporta los tags `transformers`, `safetensors`, `endpoints_compatible` y `region:us`, junto con una referencia cruzada al artículo de Lacoste et al. (2019) sobre impacto ambiental, que forma parte de la plantilla por defecto y no implica que se haya realizado dicho cálculo.
+La relevancia de esta ficha está limitada por la ausencia casi total de documentación. La model card publicada es la plantilla automática de Hugging Face sin rellenar: no incluye descripción, datos de entrenamiento, hiperparámetros, licencia ni resultados de evaluación. El repositorio solo aporta los tags `transformers`, `safetensors`, `endpoints_compatible` y `region:us`, junto con una referencia cruzada al artículo de Lacoste et al. (2019) sobre impacto ambiental, que forma parte de la plantilla por defecto y no implica que se haya realizado dicho cálculo.
 
 Por tanto, esta ficha debe interpretarse como una evaluación del modelo base subyacente con las salvedades propias de un ajuste LoRA no documentado. Se recomienda verificar directamente el repositorio antes de cualquier uso en producción, ya que no se puede confirmar la naturaleza del dataset de ajuste ni el comportamiento real del modelo resultante.
 
@@ -48,7 +48,7 @@ Respecto al procedimiento de entrenamiento, la model card confirma únicamente q
 - Prototipado en entornos con recursos limitados: al tratarse de un modelo de 3B, permite experimentar con fine-tuning e inferencia en una única GPU de gama de consumo, siempre que se valide antes el comportamiento del ajuste.
 - Investigación en eficiencia de ajuste: útil para estudiar el impacto de LoRA sobre modelos pequeños, aunque la falta de documentación limita la reproducibilidad.
 - Evaluación comparativa de adaptadores: el autor publica variantes (`_aw_fb`, `_ssaqs`) sobre distintos modelos base (1.5B y 3B), lo que permite análisis comparativos entre configuraciones.
-- Despliegue en endpoints compatibles: el tag `endpoints_compatible` sugiere compatibilidad con la infraestructura de Inference Endpoints de HuggingFace, adecuada para pruebas de integración.
+- Despliegue en endpoints compatibles: el tag `endpoints_compatible` sugiere compatibilidad con la infraestructura de Inference Endpoints de Hugging Face, adecuada para pruebas de integración.
 - Base para pipelines de generación de texto en castellano: solo si se valida previamente la calidad del ajuste, dado que no hay evidencia de evaluación.
 
 ## Benchmarks y rendimiento
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| xw17/Qwen2.5-3B-Instruct_SFT_lora_ssaqs | ~3,09B (base) + LoRA | no disponible (base: 32.768) | no disponible | HuggingFace, 0 descargas |
+| xw17/Qwen2.5-3B-Instruct_SFT_lora_ssaqs | ~3,09B (base) + LoRA | no disponible (base: 32.768) | no disponible | Hugging Face, 0 descargas |
 | Qwen2.5-3B-Instruct (modelo base) | 3,09B | 32.768 tokens | Qwen Research License | Ampliamente disponible |
-| xw17/Qwen2.5-1.5B-Instruct_SFT_lora_ssaqs | ~1,5B (base) + LoRA | no disponible | no disponible | HuggingFace |
-| xw17/Qwen2.5-3B-Instruct_SFT_lora_aw_fb | ~3,09B (base) + LoRA | no disponible | no disponible | HuggingFace |
+| xw17/Qwen2.5-1.5B-Instruct_SFT_lora_ssaqs | ~1,5B (base) + LoRA | no disponible | no disponible | Hugging Face |
+| xw17/Qwen2.5-3B-Instruct_SFT_lora_aw_fb | ~3,09B (base) + LoRA | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento que permitan una comparación cuantitativa entre estas variantes.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xw17/Qwen2.5-3B-Instruct_SFT_lora_ssaqs
+- Repositorio Hugging Face: https://huggingface.co/xw17/Qwen2.5-3B-Instruct_SFT_lora_ssaqs
 - Variante relacionada (3B, sufijo `aw_fb`): https://huggingface.co/xw17/Qwen2.5-3B-Instruct_SFT_lora_aw_fb
 - Variante relacionada (1.5B, sufijo `ssaqs`): https://huggingface.co/xw17/Qwen2.5-1.5B-Instruct_SFT_lora_ssaqs
 - Tutorial de ajuste de Qwen2.5-3B con LoRA en Colab: https://ai4u.space/blog/fine-tune-qwen2-5-3b-model-colab-guide

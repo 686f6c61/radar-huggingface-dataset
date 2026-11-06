@@ -4,7 +4,7 @@
 
 OPSD-PI-Qwen3.5-9B-Strong-Trailing-1024-A6000-Merged-Update08 es un modelo de lenguaje de 9.653 millones de parámetros desarrollado por LSW142857, basado en la arquitectura Qwen3.5-9B. Se trata de un fine-tuning experimental que combina OPSD (Online Policy Self-Distillation) con un teacher PI (Probabilistic Inference) y MTP (Multi-Token Prediction), entrenado sobre 1024 filas de datos "trailing_user" en 8 GPU RTX A6000. El repositorio contiene el modelo completamente fusionado tras 8 actualizaciones del optimizador, sin necesidad de pasos adicionales de merge o adaptadores.
 
-El modelo está orientado a generación de texto, código y conversación, e incluye soporte de entrada imagen-texto (según los tags de HuggingFace). Su relevancia radica en ser un caso práctico de aplicación de técnicas avanzadas de optimización de políticas y predicción multi-token sobre un modelo base moderno, publicado abiertamente para su evaluación y uso. Aunque no se han publicado benchmarks, el modelo está disponible para carga directa con transformers y es compatible con endpoints de inferencia.
+El modelo está orientado a generación de texto, código y conversación, e incluye soporte de entrada imagen-texto (según los tags de Hugging Face). Su relevancia radica en ser un caso práctico de aplicación de técnicas avanzadas de optimización de políticas y predicción multi-token sobre un modelo base moderno, publicado abiertamente para su evaluación y uso. Aunque no se han publicado benchmarks, el modelo está disponible para carga directa con transformers y es compatible con endpoints de inferencia.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento para comparar con otros modelos. Existen v
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Strong-Trailing-1024-A6000-Merged-Update08
+- Repositorio Hugging Face: https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Strong-Trailing-1024-A6000-Merged-Update08
 - Variante Medium (sin merge): https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000
 - Variante Medium Merged: https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged
 - Variante Medium Merged Iter16 (en FriendliAI): https://friendli.ai/models/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged-Iter16

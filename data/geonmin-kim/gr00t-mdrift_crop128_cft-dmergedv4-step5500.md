@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo GR00T-Mdrift_crop128_cft-Dmergedv4-step5500 es un ajuste fino del modelo NVIDIA Isaac GR00T N1.7, un modelo vision-lenguaje-accion (VLA) desarrollado por NVIDIA para habilidades generalistas en robots humanoides. Este checkpoint fue creado por el usuario geonmin-kim y publicado en HuggingFace el 4 de septiembre de 2026. El modelo cuenta con 3.144.016.000 parametros (aproximadamente 3.14 mil millones) y se distribuye en formato safetensors, con un tamano de repositorio de 12.6 GB.
+El modelo GR00T-Mdrift_crop128_cft-Dmergedv4-step5500 es un ajuste fino del modelo NVIDIA Isaac GR00T N1.7, un modelo vision-lenguaje-accion (VLA) desarrollado por NVIDIA para habilidades generalistas en robots humanoides. Este checkpoint fue creado por el usuario geonmin-kim y publicado en Hugging Face el 4 de septiembre de 2026. El modelo cuenta con 3.144.016.000 parametros (aproximadamente 3.14 mil millones) y se distribuye en formato safetensors, con un tamano de repositorio de 12.6 GB.
 
 Al tratarse de un modelo VLA, procesa entradas multimodales que incluyen lenguaje e imagenes para generar acciones de manipulacion en entornos diversos. El nombre del checkpoint sugiere un entrenamiento especializado con recorte de imagenes a 128 pixels (crop128), posiblemente relacionado con correccion de deriva de movimiento (Mdrift) y una etapa de fusion de checkpoints (Dmergedv4). No se dispone de documentacion detallada sobre el proceso de entrenamiento, el dataset utilizado ni las tecnicas de optimizacion aplicadas.
 
@@ -23,7 +23,7 @@ Al tratarse de un modelo VLA, procesa entradas multimodales que incluyen lenguaj
 
 El modelo hereda la arquitectura VLA de NVIDIA Isaac GR00T N1.7, que combina un codificador de vision con un modelo de lenguaje para generar acciones de manipulacion. Segun la descripcion oficial de NVIDIA, se trata de un modelo "cross-embodiment" que acepta entrada multimodal (lenguaje e imagenes) y puede realizar tareas de manipulacion en entornos diversos. El repositorio de GitHub confirma que el modelo base es de codigo abierto y esta orientado a robots humanoides.
 
-El entrenamiento especifico de este checkpoint no esta documentado en la informacion disponible. Los sufijos del nombre sugieren un proceso de ajuste fino con recorte de imagenes a 128x128 (crop128), posible correccion de deriva de movimiento (Mdrift) y una etapa de fusion de multiples checkpoints (Dmergedv4). Existe un dataset asociado en HuggingFace del mismo autor, denominado rollout_groot_so101_mdrift_crop_step1000_move_the_red_cube, que indica que el entrenamiento probablemente se baso en rollouts de simulacion para tareas como mover un cubo rojo. No hay detalles publicos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO.
+El entrenamiento especifico de este checkpoint no esta documentado en la informacion disponible. Los sufijos del nombre sugieren un proceso de ajuste fino con recorte de imagenes a 128x128 (crop128), posible correccion de deriva de movimiento (Mdrift) y una etapa de fusion de multiples checkpoints (Dmergedv4). Existe un dataset asociado en Hugging Face del mismo autor, denominado rollout_groot_so101_mdrift_crop_step1000_move_the_red_cube, que indica que el entrenamiento probablemente se baso en rollouts de simulacion para tareas como mover un cubo rojo. No hay detalles publicos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -67,7 +67,7 @@ No se dispone de informacion sobre otros modelos VLA comparables en los resultad
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: no se ha publicado una licencia en HuggingFace, lo que genera incertidumbre sobre el uso comercial y la redistribucion.
+- Licencia no especificada: no se ha publicado una licencia en Hugging Face, lo que genera incertidumbre sobre el uso comercial y la redistribucion.
 - Sin documentacion de entrenamiento: no se detallan el dataset, los datos de entrenamiento ni las tecnicas utilizadas, lo que dificulta la reproducibilidad.
 - Sin benchmarks publicos: no hay resultados de evaluacion que permitan comparar el rendimiento con otros modelos.
 - Adopcion minima: con solo 4 descargas y 0 likes, el modelo no ha sido validado por la comunidad.
@@ -77,6 +77,6 @@ No se dispone de informacion sobre otros modelos VLA comparables en los resultad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/geonmin-kim/GR00T-Mdrift_crop128_cft-Dmergedv4-step5500
+- Hugging Face: https://huggingface.co/geonmin-kim/GR00T-Mdrift_crop128_cft-Dmergedv4-step5500
 - Repositorio NVIDIA Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T
 - Dataset asociado: https://huggingface.co/datasets/geonmin-kim/rollout_groot_so101_mdrift_crop_step1000_move_the_red_cube_from_t_sync_0903_1555_20260903_155610

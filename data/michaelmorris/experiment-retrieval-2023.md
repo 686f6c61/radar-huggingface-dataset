@@ -37,7 +37,7 @@ La arquitectura es un ViT con configuración "huge" que incorpora atención line
 - **Investigación en retrieval visual**: el modelo sirve como base para experimentos controlados en datasets como Flickr30k, tal y como sugiere el autor en la guía de evaluación. Un investigador podría entrenarlo desde cero y comparar con un baseline de capacidad equivalente.
 - **Pruebas de integración en pipelines de visión**: el checkpoint de inicialización permite verificar que el código de entrenamiento o inferencia funciona correctamente antes de lanzar un entrenamiento costoso.
 - **Estudio de atención lineal en transformers**: dado que la implementación usa atención lineal, es útil para analizar el comportamiento de esta variante en tareas de retrieval, comparando con atención softmax.
-- **Desarrollo de adaptadores para carga personalizada**: el autor indica que las APIs genéricas de HuggingFace requieren un adaptador explícito; esto puede servir como ejercicio para aprender a integrar modelos personalizados en el ecosistema.
+- **Desarrollo de adaptadores para carga personalizada**: el autor indica que las APIs genéricas de Hugging Face requieren un adaptador explícito; esto puede servir como ejercicio para aprender a integrar modelos personalizados en el ecosistema.
 - **Benchmarking de eficiencia**: con solo 33.088 parámetros, el modelo es extremadamente ligero, lo que permite medir latencia y consumo en entornos con recursos mínimos, aunque no sea representativo de un ViT "huge" real.
 - **Educación y prototipado**: el código es transparente y está documentado, por lo que puede usarse en cursos o talleres para ilustrar cómo se construye un ViT para retrieval desde cero.
 
@@ -64,10 +64,10 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 - **Riesgo de alucinación**: al ser un modelo de visión sin entrenamiento, no genera texto, por lo que el riesgo de alucinación lingüística no aplica; sin embargo, en tareas de retrieval podría producir asociaciones incorrectas si se entrena sin cuidado.
 - **Limitaciones de contexto**: no se define una longitud de contexto; al ser un ViT, procesa imágenes divididas en parches, pero no hay especificación del tamaño de entrada.
 - **Restricciones de licencia**: Apache-2.0 permite uso comercial, pero el autor recuerda revisar los términos de los datasets externos (por ejemplo, Flickr30k) antes de usarlos con este código.
-- **Carga no estándar**: las APIs genéricas de HuggingFace no cargan este modelo directamente; se requiere un adaptador explícito, lo que puede ser una barrera para integraciones rápidas.
+- **Carga no estándar**: las APIs genéricas de Hugging Face no cargan este modelo directamente; se requiere un adaptador explícito, lo que puede ser una barrera para integraciones rápidas.
 - **Sin soporte comunitario**: el repositorio tiene 0 descargas y 0 likes, lo que indica que no hay comunidad activa ni mantenimiento garantizado.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/michaelmorris/experiment-retrieval-2023)
+- [Repositorio en Hugging Face](https://huggingface.co/michaelmorris/experiment-retrieval-2023)
 - No se encontraron otros enlaces relevantes en la búsqueda web (papers, blogs o repositorios asociados a este modelo específico).

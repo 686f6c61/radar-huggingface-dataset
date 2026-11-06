@@ -66,9 +66,9 @@ Evaluación con bootstrap pareado de 10.000 remuestreos sobre 50 instancias rese
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-8b-knapsack-lora-prevention-n103 | Adaptador sobre 8B | no disponible (entrenado a 16k) | 0,537 (cap 25) / 0,555 (cap 80) en Opaque Knapsack | apache-2.0 | HuggingFace, 6 descargas |
+| qwen3-8b-knapsack-lora-prevention-n103 | Adaptador sobre 8B | no disponible (entrenado a 16k) | 0,537 (cap 25) / 0,555 (cap 80) en Opaque Knapsack | apache-2.0 | Hugging Face, 6 descargas |
 | Adaptador de recuperación del mismo proyecto | Adaptador sobre 8B | no disponible | Comparación pareada en el informe del proyecto | no disponible | Repositorio del proyecto |
-| Qwen/Qwen3-8B (base) | 8B | 32k nativo | No evaluado en Opaque Knapsack en la información disponible | apache-2.0 | HuggingFace |
+| Qwen/Qwen3-8B (base) | 8B | 32k nativo | No evaluado en Opaque Knapsack en la información disponible | apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparables con otros adaptadores o modelos en la información proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks comparables con otros adaptadores o modelos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TieuDaoChanNhan/qwen3-8b-knapsack-lora-prevention-n103
+- Hugging Face: https://huggingface.co/TieuDaoChanNhan/qwen3-8b-knapsack-lora-prevention-n103
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio del proyecto: https://github.com/TieuDaoChanNhan/resume-or-prevent
 - Informe del proyecto: https://github.com/TieuDaoChanNhan/resume-or-prevent/tree/main/report

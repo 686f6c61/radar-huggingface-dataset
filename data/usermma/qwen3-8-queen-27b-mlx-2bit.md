@@ -70,5 +70,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: usermma/Qwen3.8-Queen-27B-mlx-2Bit](https://huggingface.co/usermma/Qwen3.8-Queen-27B-mlx-2Bit)
+- [Hugging Face: usermma/Qwen3.8-Queen-27B-mlx-2Bit](https://huggingface.co/usermma/Qwen3.8-Queen-27B-mlx-2Bit)
 - [Modelo base: aifeifei798/Qwen3.8-Queen-27B](https://huggingface.co/aifeifei798/Qwen3.8-Queen-27B) (sin información adicional disponible)

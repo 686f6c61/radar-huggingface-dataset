@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/kale-15-mn17-kl34-r-GGUF` es una coleccion de cuantizaciones GGUF estaticas del modelo base `kalemlhub/kale-15-mn17-kl34-r`, publicadas por el usuario mradermacher, conocido en HuggingFace por distribuir versiones cuantizadas de modelos abiertos para su uso con llama.cpp y otros runtimes compatibles con GGUF. No se trata de un modelo original, sino de un artefacto derivado: el valor anadido reside en la disponibilidad de pesos comprimidos en distintos niveles de precision (desde Q2_K hasta f16) que permiten desplegar el modelo base en hardware con recursos limitados.
+`mradermacher/kale-15-mn17-kl34-r-GGUF` es una coleccion de cuantizaciones GGUF estaticas del modelo base `kalemlhub/kale-15-mn17-kl34-r`, publicadas por el usuario mradermacher, conocido en Hugging Face por distribuir versiones cuantizadas de modelos abiertos para su uso con llama.cpp y otros runtimes compatibles con GGUF. No se trata de un modelo original, sino de un artefacto derivado: el valor anadido reside en la disponibilidad de pesos comprimidos en distintos niveles de precision (desde Q2_K hasta f16) que permiten desplegar el modelo base en hardware con recursos limitados.
 
 El modelo base cuenta con 8.030.261.312 parametros (aproximadamente 8 mil millones), según los datos de safetensors del repositorio. El nombre del repositorio sugiere una variante o checkpoint identificado como "kale-15-mn17-kl34-r", aunque la model card no proporciona detalles sobre la arquitectura, el entrenamiento o el proposito del modelo original. La licencia no esta especificada en la informacion disponible, lo que constituye una limitacion relevante para cualquier uso comercial.
 
@@ -30,7 +30,7 @@ Lo unico verificable es el proceso de cuantizacion: mradermacher indica en la mo
 ## Capacidades
 
 - Generacion de texto conversacional: los tags del repositorio incluyen "conversational", lo que indica que el modelo esta orientado a dialogos multi-turno.
-- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que puede servirse mediante la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que puede servirse mediante la infraestructura de Inference Endpoints de Hugging Face.
 - Idiomas: soporte declarado unicamente para ingles ("en"); no se documentan capacidades multilingues.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible.

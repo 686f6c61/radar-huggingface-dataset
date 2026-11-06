@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TrAct es una política vision-language-action (VLA) derivada de π0.5, desarrollada por el usuario zhicao y publicada como repositorio de código en HuggingFace. Su particularidad es que, además de predecir acciones, está entrenada para predecir trayectorias de puntos 2D (point tracks) sobre las observaciones visuales. En tiempo de inferencia puede, opcionalmente, clasificar acciones candidatas mediante un modelo de mundo de vídeo dual-view condicionado por tracks y un crítico VLAC. Está construida sobre el framework openpi de Physical Intelligence y el paquete Python se distribuye como `tract`.
+TrAct es una política vision-language-action (VLA) derivada de π0.5, desarrollada por el usuario zhicao y publicada como repositorio de código en Hugging Face. Su particularidad es que, además de predecir acciones, está entrenada para predecir trayectorias de puntos 2D (point tracks) sobre las observaciones visuales. En tiempo de inferencia puede, opcionalmente, clasificar acciones candidatas mediante un modelo de mundo de vídeo dual-view condicionado por tracks y un crítico VLAC. Está construida sobre el framework openpi de Physical Intelligence y el paquete Python se distribuye como `tract`.
 
 El repositorio contiene únicamente código: no incluye datasets, checkpoints ni resultados de experimentos. El entrenamiento se organiza en tres etapas (alineamiento, entrenamiento de tracks y entrenamiento conjunto) y la evaluación se realiza sobre la suite LIBERO y sus variantes de perturbación (LIBERO-PRO, cambios de objeto, tarea, punto de vista, fondo, etc.). Los pesos base de π0.5 y LIBERO se descargan automáticamente desde `gs://openpi-assets`, mientras que los componentes del modelo de mundo y el crítico deben obtenerse de sus repositorios originales o entrenarse.
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zhicao/tract
+- Repositorio Hugging Face: https://huggingface.co/zhicao/tract
 - openpi (framework base): https://github.com/Physical-Intelligence/openpi
 - Dataset LIBERO (LeRobot): https://huggingface.co/datasets/physical-intelligence/libero
 - Assets LIBERO-plus: https://huggingface.co/datasets/Sylvest/LIBERO-plus

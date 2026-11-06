@@ -84,6 +84,6 @@ La model card afirma que K2-Horizon-MoVA-36B-A4B supera a todos estos modelos en
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B-GGUF
-- Repositorio HuggingFace (modelo original): https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
+- Repositorio Hugging Face (GGUF): https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B-GGUF
+- Repositorio Hugging Face (modelo original): https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
 - Fork de llama.cpp con soporte K2 Horizon: https://github.com/MBZUAI-IFM/llama.cpp/tree/model/K2Horizon

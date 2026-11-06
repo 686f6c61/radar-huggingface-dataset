@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AlinaGonch/qwen3-4b-instruct-squad-ratio-0.20-seed-42` es un modelo publicado en HuggingFace por el usuario AlinaGonch. El identificador del repositorio sugiere que se trata de un ajuste fino (fine-tuning) sobre una base Qwen3 de 4.000 millones de parametros en su variante instruct, entrenado sobre el conjunto de datos SQuAD con una proporcion de datos de 0,20 y semilla aleatoria 42. Sin embargo, esta interpretacion procede unicamente de la convencion de nombres del repositorio: la model card publicada es la plantilla generica autogenerada por HuggingFace y no contiene ninguna confirmacion de autor, arquitectura, datos ni procedencia.
+`AlinaGonch/qwen3-4b-instruct-squad-ratio-0.20-seed-42` es un modelo publicado en Hugging Face por el usuario AlinaGonch. El identificador del repositorio sugiere que se trata de un ajuste fino (fine-tuning) sobre una base Qwen3 de 4.000 millones de parametros en su variante instruct, entrenado sobre el conjunto de datos SQuAD con una proporcion de datos de 0,20 y semilla aleatoria 42. Sin embargo, esta interpretacion procede unicamente de la convencion de nombres del repositorio: la model card publicada es la plantilla generica autogenerada por Hugging Face y no contiene ninguna confirmacion de autor, arquitectura, datos ni procedencia.
 
 El modelo no aporta informacion verificable sobre su entrenamiento, licencia, idiomas o rendimiento. El repositorio ocupa 0,1 GB, un tamano muy inferior al que corresponderia a los pesos completos de un modelo de 4B parametros en safetensors (del orden de 8 GB en bf16), lo que sugiere que podria tratarse de pesos de adaptador (LoRA) o de un checkpoint parcial, aunque esto no puede confirmarse con la informacion disponible.
 
@@ -25,7 +25,7 @@ Datos adicionales del repositorio: libreria `transformers`, tamano del repositor
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la model card ni en los metadatos del repositorio. La model card es la plantilla automatica de HuggingFace y todos los campos relevantes (tipo de modelo, datos de entrenamiento, hiperparametros, regimen de precision) aparecen marcados como "[More Information Needed]".
+No se ha publicado informacion sobre la arquitectura en la model card ni en los metadatos del repositorio. La model card es la plantilla automatica de Hugging Face y todos los campos relevantes (tipo de modelo, datos de entrenamiento, hiperparametros, regimen de precision) aparecen marcados como "[More Information Needed]".
 
 El unico indicio sobre el proceso de entrenamiento es el propio nombre del repositorio, que apunta a un ajuste fino sobre SQuAD con una fraccion de datos de 0,20 y semilla 42, presumiblemente orientado a evaluar el efecto de reducir el volumen de datos de entrenamiento sobre el rendimiento en question answering extractivo. No hay informacion sobre si se emplearon tecnicas de alineacion (RLHF, DPO), ni sobre el numero de tokens, la composicion del dataset o innovaciones tecnicas como atencion lineal o decodificacion especulativa.
 
@@ -89,7 +89,7 @@ No disponible. No hay datos de rendimiento publicados de este modelo, por lo que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.20-seed-42
+- Repositorio Hugging Face: https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.20-seed-42
 - Referencia incluida en las etiquetas (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de ML: https://mlco2.github.io/impact
 

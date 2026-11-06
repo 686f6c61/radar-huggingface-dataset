@@ -101,10 +101,10 @@ Comparación con Falcon-H1-Tiny-90M-Instruct:
 
 | Modelo | Parámetros | Contexto | Tokens de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiDo-70M v3 | 70,4M | 2.048 | ~10,9B | Apache 2.0 | GGUF en HuggingFace |
-| Pythia-70M | 70M | 2.048 | ~300B | Apache 2.0 | Pesos en HuggingFace |
-| Falcon-H1-Tiny-90M-Instruct | 90M | No disponible | ~800B | No disponible en la información proporcionada | Pesos en HuggingFace |
-| SmolLM2-135M-Instruct | 135M | No disponible | ~2T | No disponible en la información proporcionada | Pesos en HuggingFace |
+| MiDo-70M v3 | 70,4M | 2.048 | ~10,9B | Apache 2.0 | GGUF en Hugging Face |
+| Pythia-70M | 70M | 2.048 | ~300B | Apache 2.0 | Pesos en Hugging Face |
+| Falcon-H1-Tiny-90M-Instruct | 90M | No disponible | ~800B | No disponible en la información proporcionada | Pesos en Hugging Face |
+| SmolLM2-135M-Instruct | 135M | No disponible | ~2T | No disponible en la información proporcionada | Pesos en Hugging Face |
 
 En la media de seis tareas, MiDo v3 Chat (40,76) supera a Pythia-70M (36,57) y queda por debajo de SmolLM2-135M (49,3, según la referencia del autor). Frente a Falcon-H1-Tiny-90M, MiDo es ligeramente superior en ARC-Easy y en trivia entrenada, pero inferior en trivia no vista.
 
@@ -122,7 +122,7 @@ En la media de seis tareas, MiDo v3 Chat (40,76) supera a Pythia-70M (36,57) y q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SmallAICreator/MiDo-70M-v3
+- Modelo en Hugging Face: https://huggingface.co/SmallAICreator/MiDo-70M-v3
 - Profesor (SmolLM2-360M): https://huggingface.co/HuggingFaceTB/SmolLM2-360M
 - Comparativa (Falcon-H1-Tiny-90M-Instruct): https://huggingface.co/tiiuae/Falcon-H1-Tiny-90M-Instruct
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

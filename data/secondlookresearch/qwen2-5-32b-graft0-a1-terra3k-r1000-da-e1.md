@@ -93,8 +93,8 @@ La comparacion con modelos alternativos de la misma categoria no es posible en t
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-graft0-a1-terra3k-r1000-da-e1
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-32B
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-graft0-a1-terra3k-r1000-da-e1
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-32B
 - Informe tecnico de Qwen2.5 (referencia externa, arXiv 2412.15115): https://arxiv.org/abs/2412.15115
 - Repositorio de PEFT (referencia externa): https://github.com/huggingface/peft
 - Documentacion de LoRA en vLLM (referencia externa): https://docs.vllm.ai/en/latest/features/lora.html

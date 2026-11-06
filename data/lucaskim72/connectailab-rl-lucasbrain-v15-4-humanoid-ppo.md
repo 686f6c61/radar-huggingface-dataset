@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`connectailab-rl-lucasbrain-v15.4-humanoid-ppo` es un agente de aprendizaje por refuerzo (RL) entrenado con PPO para la tarea de locomoción bípeda en el entorno `Humanoid-v5` de Gymnasium/MuJoCo. Lo publica Lucas Kim (usuario de HuggingFace `lucaskim72`) en el marco del curso de RL de CONNECT AI LAB × AI CITY BUILDERS, como continuación de una serie de experimentos (v1, v7, v13, v14, v15) en los que se varía un único hiperparámetro por versión para aislar su efecto sobre la recompensa.
+`connectailab-rl-lucasbrain-v15.4-humanoid-ppo` es un agente de aprendizaje por refuerzo (RL) entrenado con PPO para la tarea de locomoción bípeda en el entorno `Humanoid-v5` de Gymnasium/MuJoCo. Lo publica Lucas Kim (usuario de Hugging Face `lucaskim72`) en el marco del curso de RL de CONNECT AI LAB × AI CITY BUILDERS, como continuación de una serie de experimentos (v1, v7, v13, v14, v15) en los que se varía un único hiperparámetro por versión para aislar su efecto sobre la recompensa.
 
 No es un modelo de lenguaje: es una política neuronal (dos cabezas, una de política gaussiana y otra de valor) que observa 348 dimensiones del estado del humanoides y emite 17 acciones continuas de par articular en el rango [-0.4, 0.4]. La versión v15.4 reporta una puntuación media de 7507.9 sobre 10 episodios de validación (semillas 9000-9009), con longitud media de episodio de 1000 pasos y desplazamiento frontal medio de 33.99.
 
@@ -70,7 +70,7 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Entorno | Algoritmo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-lucasbrain-v15.4-humanoid-ppo | Humanoid-v5 | PPO | MLP oculta 256 | episodios de 1000 pasos | no disponible | HuggingFace |
+| connectailab-rl-lucasbrain-v15.4-humanoid-ppo | Humanoid-v5 | PPO | MLP oculta 256 | episodios de 1000 pasos | no disponible | Hugging Face |
 | Políticas PPO de referencia de Stable-Baselines3 | Humanoid-v5 | PPO | MLP configurable | episodios de 1000 pasos | MIT (SB3) | GitHub / PyPI |
 | CleanRL PPO continuo | MuJoCo (varios) | PPO | MLP configurable | episodios variables | MIT (CleanRL) | GitHub |
 | Policies del paper original de PPO (Schulman et al., 2017) | MuJoCo antiguos | PPO | MLP configurable | episodios variables | no disponible | arXiv |
@@ -90,7 +90,7 @@ No se dispone de comparaciones numéricas de recompensa entre estos modelos en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v15.4-humanoid-ppo
+- Hugging Face: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v15.4-humanoid-ppo
 - Contacto del autor: lucaskim72@gmail.com
 - Entorno `Humanoid-v5` (Gymnasium): https://gymnasium.farama.org/environments/mujoco/humanoid/
 - MuJoCo: https://mujoco.org/

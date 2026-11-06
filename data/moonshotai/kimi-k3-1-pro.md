@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kimi K3.1 Pro es un modelo de lenguaje multimodal nativo y de caracter agentico desarrollado por Moonshot AI, publicado en abierto bajo pesos descargables en HuggingFace. Se trata del primer modelo de la serie K3.1 y, segun su model card, el modelo mas capaz de la clase 3T de la compania. Con 2,78 billones de parametros totales en una arquitectura de mezcla de expertos (MoE) que activa 104B por token, se posiciona en la liga de los modelos frontera de gran escala.
+Kimi K3.1 Pro es un modelo de lenguaje multimodal nativo y de caracter agentico desarrollado por Moonshot AI, publicado en abierto bajo pesos descargables en Hugging Face. Se trata del primer modelo de la serie K3.1 y, segun su model card, el modelo mas capaz de la clase 3T de la compania. Con 2,78 billones de parametros totales en una arquitectura de mezcla de expertos (MoE) que activa 104B por token, se posiciona en la liga de los modelos frontera de gran escala.
 
 El modelo parte de Kimi K3 y se ha post-entrenado mediante aprendizaje por refuerzo conjunto a gran escala sobre cientos de dominios, con mejoras declaradas en programacion, creacion 3D, investigacion financiera y precision factual. Incorpora una ventana de contexto de un millon de tokens y capacidades multimodales nativas (entrada de imagen y texto), lo que lo orienta a flujos de trabajo agenticos de contexto largo y tareas que combinan razonamiento, codigo y percepcion visual.
 
@@ -99,12 +99,12 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
+- Hugging Face: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
 - Blog tecnico: https://www.kimi.ai/blog/kimi-k3-1-pro
 - Quickstart de API: https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart
 - Chat: https://www.kimi.ai
 - Homepage: https://www.moonshot.ai
-- Organizacion en HuggingFace: https://huggingface.co/moonshotai
+- Organizacion en Hugging Face: https://huggingface.co/moonshotai
 - X (Twitter): https://twitter.com/kimi_moonshot
 - Discord: https://discord.gg/TYU2fdJykW
 - ModelScope: https://modelscope.cn/organization/moonshotai

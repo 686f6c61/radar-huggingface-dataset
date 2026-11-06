@@ -66,7 +66,7 @@ Datos adicionales de la model card: media menos desviación típica = -218,3405;
 
 | Modelo | Tipo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vladprime/ppo-custom-LunarLander-v2 | PPO desde cero (PyTorch) | LunarLander-v2 | -135,2229 +/- 83,1176 | Apache 2.0 | HuggingFace, 0 descargas |
+| Vladprime/ppo-custom-LunarLander-v2 | PPO desde cero (PyTorch) | LunarLander-v2 | -135,2229 +/- 83,1176 | Apache 2.0 | Hugging Face, 0 descargas |
 | CleanRL PPO LunarLander | PPO de referencia (implementación educativa) | LunarLander-v2 | no disponible en la información proporcionada | MIT (según el proyecto CleanRL) | Repositorio GitHub |
 | Stable Baselines3 PPO | PPO sobre librería consolidada | LunarLander-v2 | no disponible en la información proporcionada | MIT | PyPI / GitHub |
 
@@ -85,5 +85,5 @@ No se dispone de cifras de recompensa de las alternativas en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vladprime/ppo-custom-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/Vladprime/ppo-custom-LunarLander-v2
 - Curso Deep RL, Unidad 8 Parte I (base del código): https://huggingface.co/learn/deep-rl-course/en/unit8/hands-on-cleanrl

@@ -66,5 +66,5 @@ No se dispone de información suficiente para una comparativa cuantitativa. Como
 
 ## Enlaces
 
-- [HuggingFace - kyleliu789/qwen3-14b-svamp14-dpo-qlora-checkpoint-150](https://huggingface.co/kyleliu789/qwen3-14b-svamp14-dpo-qlora-checkpoint-150)
+- [Hugging Face - kyleliu789/qwen3-14b-svamp14-dpo-qlora-checkpoint-150](https://huggingface.co/kyleliu789/qwen3-14b-svamp14-dpo-qlora-checkpoint-150)
 - [Modelo base Qwen/Qwen3-14B](https://huggingface.co/Qwen/Qwen3-14B) (referencia, no incluido en la información proporcionada)

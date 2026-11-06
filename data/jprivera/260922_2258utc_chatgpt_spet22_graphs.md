@@ -120,7 +120,7 @@ No disponible. El artefacto no es un modelo y no existe una categoria de modelos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jprivera/260922_2258UTC_chatgpt_spet22_graphs
+- Repositorio en Hugging Face: https://huggingface.co/jprivera/260922_2258UTC_chatgpt_spet22_graphs
 - Documento de auditoria citado en la model card: `AUDIT_AND_STORY.md` (dentro del repositorio)
 - Script de analisis: `experiments/260922_2258UTC_chatgpt_spet22_graphs/analysis.py`
 - Entrada canonica del grid: `../260922_fixed_dose_grid/report/grid.json`

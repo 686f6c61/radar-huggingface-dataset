@@ -90,7 +90,7 @@ La comparación directa más relevante es con su propio modelo base: el ajuste a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/profullstack/saas-business-strategist-agent-GGUF
+- Modelo en Hugging Face: https://huggingface.co/profullstack/saas-business-strategist-agent-GGUF
 - Modelo original (no GGUF): https://huggingface.co/profullstack/saas-business-strategist-agent
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Herramienta de construcción c0mpute: https://github.com/profullstack/c0mpute/tree/master/examples/business-strategist-agent

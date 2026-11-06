@@ -108,7 +108,7 @@ La unica comparacion directa disponible en la informacion es frente al original 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/infosave/Kandinsky-S2V-1.0-Pro-distill-cmf
+- Modelo en Hugging Face: https://huggingface.co/infosave/Kandinsky-S2V-1.0-Pro-distill-cmf
 - Modelo base (Diffusers): https://huggingface.co/kandinskylab/Kandinsky-S2V-1.0-Pro-distill-Diffusers
 - Repositorio del formato CMF y motor cortiq: https://github.com/infosave2007/cmf
 - Binarios precompilados de cortiq: https://github.com/infosave2007/cmf/releases

@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Parametros | Contexto / chunk | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sungah/omx_act_1029_r50 | ACT + ResNet50, con y sin profundidad MoGe | no disponible | chunk de 100 acciones | Apache 2.0 | HuggingFace, LeRobot 0.4.4 |
+| Sungah/omx_act_1029_r50 | ACT + ResNet50, con y sin profundidad MoGe | no disponible | chunk de 100 acciones | Apache 2.0 | Hugging Face, LeRobot 0.4.4 |
 | Políticas ACT de referencia en LeRobot | ACT + ResNet18/ResNet50 | no disponible | chunk configurable | Apache 2.0 | Repositorio LeRobot |
 | Políticas Diffusion Policy | Difusión sobre observaciones visuales | no disponible | horizonte configurable | MIT (repo original) | Repositorios públicos |
 
@@ -93,7 +93,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sungah/omx_act_1029_r50
+- Modelo en Hugging Face: https://huggingface.co/Sungah/omx_act_1029_r50
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/Sungah/omx_1029_Sungah_v1_success
 - Pesos MoGe-2 ViT-L: https://huggingface.co/Ruicheng/moge-2-vitl-normal
 - Repositorio MoGe (Microsoft): https://github.com/microsoft/MoGe

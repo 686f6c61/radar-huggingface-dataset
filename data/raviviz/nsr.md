@@ -65,9 +65,9 @@ NSR se diferencia por separar completamente la aproximación neuronal de la bús
 - Riesgo de alucinación simbólica: la fase de recuperación podría producir ecuaciones que se ajusten a los datos pero no reflejen una relación causal real, especialmente con datos limitados o muy ruidosos.
 - Limitación de contexto: al ser un modelo de regresión, solo trabaja con datos numéricos tabulares; no admite entradas de texto ni imágenes.
 - La licencia MIT permite uso comercial y modificación, pero se recomienda verificar la atribución adecuada si se redistribuye.
-- No hay garantías de soporte o mantenimiento por parte del autor, dado que el repositorio tiene cero descargas y cero likes en HuggingFace.
+- No hay garantías de soporte o mantenimiento por parte del autor, dado que el repositorio tiene cero descargas y cero likes en Hugging Face.
 
 ## Enlaces
 
-- [HuggingFace - raviviz/NSR](https://huggingface.co/raviviz/NSR)
+- [Hugging Face - raviviz/NSR](https://huggingface.co/raviviz/NSR)
 - [Paper arXiv - Neural Symbolic Regression Using Deep Learning and Sparse Modeling](https://arxiv.org/html/2609.01102v1)

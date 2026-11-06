@@ -4,7 +4,7 @@
 
 El modelo `maxbsoft/cbai-adapter1-photo2portrait-qwen2511` es un adaptador LoRA de rango 32 entrenado sobre el modelo de edición de imagen `Qwen/Qwen-Image-Edit-2511`. Su función es muy concreta: tomar la fotografía de un menor y redibujarla como un retrato cartoon de aspecto cel-shading plano, sobre fondo blanco liso, manteniendo el parecido facial, el tono de piel y el color y estilo del pelo. Está pensado como primer eslabón de una cadena de adaptadores orientada a la ilustración de libros infantiles, de ahí el prefijo "cbai" y la etiqueta `children-book`.
 
-Lo desarrolla el usuario de HuggingFace `maxbsoft` y se publica bajo licencia Apache 2.0. El entrenamiento se hizo íntegramente con datos sintéticos: 492 pares del conjunto `maxbsoft/synth-v1-packed`, compuestos por "fotos" generadas de niños y sus correspondientes retratos sobre fondo blanco producidos con Nano Banana 2. El autor declara explícitamente que no hay personas reales en los datos de entrenamiento, lo que reduce el riesgo de reproducción de identidades reales, pero también limita la diversidad del dominio cubierto.
+Lo desarrolla el usuario de Hugging Face `maxbsoft` y se publica bajo licencia Apache 2.0. El entrenamiento se hizo íntegramente con datos sintéticos: 492 pares del conjunto `maxbsoft/synth-v1-packed`, compuestos por "fotos" generadas de niños y sus correspondientes retratos sobre fondo blanco producidos con Nano Banana 2. El autor declara explícitamente que no hay personas reales en los datos de entrenamiento, lo que reduce el riesgo de reproducción de identidades reales, pero también limita la diversidad del dominio cubierto.
 
 Su relevancia es la de un ejemplo de especialización vertical sobre un modelo generativo generalista: en lugar de reentrenar un modelo de difusión completo, se añade un adaptador pequeño que fija un estilo editorial muy determinado. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, por lo que no existe validación independiente por parte de la comunidad.
 
@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| `maxbsoft/cbai-adapter1-photo2portrait-qwen2511` | LoRA rango 32 sobre Qwen-Image-Edit-2511 | No disponible | No aplica | Apache 2.0 | HuggingFace, 0 descargas | Sin benchmarks publicados |
-| `Qwen/Qwen-Image-Edit-2511` (modelo base, sin adaptador) | Modelo de edición de imagen completo | No disponible | No aplica | No disponible en esta ficha | HuggingFace | No disponible en esta ficha |
+| `maxbsoft/cbai-adapter1-photo2portrait-qwen2511` | LoRA rango 32 sobre Qwen-Image-Edit-2511 | No disponible | No aplica | Apache 2.0 | Hugging Face, 0 descargas | Sin benchmarks publicados |
+| `Qwen/Qwen-Image-Edit-2511` (modelo base, sin adaptador) | Modelo de edición de imagen completo | No disponible | No aplica | No disponible en esta ficha | Hugging Face | No disponible en esta ficha |
 | Otros adaptadores del mismo autor (`cbai-adapter*`) | LoRA sobre el mismo base | No disponible | No aplica | No disponible | No confirmada en la información proporcionada | No disponible |
 | Alternativas de terceros para retrato cartoon | LoRA o servicios propietarios | No disponible | No aplica | No disponible | No disponible | No disponible |
 
@@ -101,7 +101,7 @@ La diferencia funcional verificable frente al modelo base es la especialización
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maxbsoft/cbai-adapter1-photo2portrait-qwen2511
+- Modelo en Hugging Face: https://huggingface.co/maxbsoft/cbai-adapter1-photo2portrait-qwen2511
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Dataset de entrenamiento: https://huggingface.co/datasets/maxbsoft/synth-v1-packed
 - Documento de resultados de la primera fase (dentro del repositorio): https://huggingface.co/maxbsoft/cbai-adapter1-photo2portrait-qwen2511/blob/main/RESULT-1000.md

@@ -12,7 +12,7 @@ Por su tamano y su naturaleza, encaja en escenarios de investigacion controlada:
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only), segun el tag `gpt2` de HuggingFace |
+| Arquitectura | GPT-2 (transformer decoder-only), segun el tag `gpt2` de Hugging Face |
 | Parametros totales | 124.770.816 |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (no se especifica en la model card; la arquitectura GPT-2 suele operar con 1024 tokens, pero no se confirma) |

@@ -36,14 +36,14 @@ El entrenamiento se realizó desde cero durante 10 épocas, con 1.540 actualizac
 - No se documenta soporte de agentes ni razonamiento multi-paso.
 - Capacidad multilingüe limitada al inglés; no se declaran otros idiomas.
 - No se documentan modos especiales (thinking mode, visión, audio).
-- No se documenta compatibilidad con APIs estándar de HuggingFace (`AutoModelForCausalLM`), lo que limita su integración directa.
+- No se documenta compatibilidad con APIs estándar de Hugging Face (`AutoModelForCausalLM`), lo que limita su integración directa.
 
 ## Casos de uso
 
 - Estudio de entrenamiento from-scratch: sirve para analizar cómo un transformer pequeño con arquitectura personalizada converge (perplejidad de validación 182,38) y qué errores aparecen con un corpus desequilibrado. Adecuado para investigación académica sobre dinámica de entrenamiento.
 - Análisis del efecto de la composición del corpus: con un 83,58% de tokens de Shakespeare, permite estudiar cómo el sesgo de dominio afecta al estilo de salida y a la diversidad léxica. Útil en experimentos de data curation.
 - Pruebas de tokenizadores BPE byte-level personalizados: su vocabulario de 16.000 tokens permite comparar el comportamiento de un tokenizador propio frente a tokenizadores estándar en tareas de modelado de lenguaje.
-- Reproducción de arquitecturas no estándar: el archivo `modeling_terom.py` sirve como referencia para implementar y depurar transformers decoder-only personalizados fuera de la API de HuggingFace.
+- Reproducción de arquitecturas no estándar: el archivo `modeling_terom.py` sirve como referencia para implementar y depurar transformers decoder-only personalizados fuera de la API de Hugging Face.
 - Generación de diálogo de estilo dramático con fines educativos: puede producir fragmentos de diálogo con registro shakespeariano, siempre con revisión humana y asumiendo baja coherencia narrativa.
 - Docencia sobre limitaciones de modelos pequeños: útil como ejemplo práctico de alucinación, fragmentación de salida y falta de sensibilidad a la instrucción en modelos de 30M de parámetros.
 
@@ -75,10 +75,10 @@ No se dispone de datos de benchmarks ni de comparaciones publicadas por el autor
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TEROM-DUST-1 | 30,26M | 1.024 | other (restringida) | HuggingFace, arquitectura personalizada |
-| GPT-2 small | 124M | 1.024 | MIT | HuggingFace, `AutoModelForCausalLM` |
-| GPT-2 medium | 355M | 1.024 | MIT | HuggingFace, `AutoModelForCausalLM` |
-| Pythia-70M | 70M | 2.048 | Apache 2.0 | HuggingFace, `AutoModelForCausalLM` |
+| TEROM-DUST-1 | 30,26M | 1.024 | other (restringida) | Hugging Face, arquitectura personalizada |
+| GPT-2 small | 124M | 1.024 | MIT | Hugging Face, `AutoModelForCausalLM` |
+| GPT-2 medium | 355M | 1.024 | MIT | Hugging Face, `AutoModelForCausalLM` |
+| Pythia-70M | 70M | 2.048 | Apache 2.0 | Hugging Face, `AutoModelForCausalLM` |
 
 La comparación es estructural: TEROM-DUST-1 es más pequeño que las alternativas citadas, tiene contexto más corto que Pythia-70M y una licencia más restrictiva que todas ellas. No hay datos de rendimiento comparables.
 
@@ -91,12 +91,12 @@ La comparación es estructural: TEROM-DUST-1 es más pequeño que las alternativ
 - Contexto muy limitado (1.024 tokens), insuficiente para conversaciones multi-turno o documentos largos.
 - Solo inglés; sin capacidades multilingües declaradas.
 - Licencia "other": el autor no concede derechos de reutilización ni redistribución de los pesos en esta versión inicial; los derechos del corpus original no están aclarados en todas las jurisdicciones.
-- No es cargable mediante la API estándar de HuggingFace, lo que complica su integración en pipelines existentes.
+- No es cargable mediante la API estándar de Hugging Face, lo que complica su integración en pipelines existentes.
 - No se documentan sesgos específicos más allá del sesgo de dominio literario; aun así, un corpus centrado en Shakespeare puede reproducir estereotipos y registros arcaicos.
 - No apto para uso comercial sin aclaración legal previa de la licencia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YuRiVeRTi/TEROM-DUST-1
+- Modelo en Hugging Face: https://huggingface.co/YuRiVeRTi/TEROM-DUST-1
 - Repositorio del modelo (pesos safetensors y `modeling_terom.py`): https://huggingface.co/YuRiVeRTi/TEROM-DUST-1/tree/main
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

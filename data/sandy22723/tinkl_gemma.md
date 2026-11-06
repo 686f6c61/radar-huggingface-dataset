@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Sandy22723/TInkl_gemma` es un repositorio alojado en HuggingFace que, por su nombre, parece ser un ajuste fino o adaptación de un modelo de la familia Gemma de Google DeepMind. Sin embargo, la información pública disponible es extremadamente limitada: no se proporciona una descripción, ni detalles de arquitectura, ni métricas de rendimiento, ni ejemplos de uso. El repositorio tiene un tamaño de 1.4 GB, lo que sugiere que podría tratarse de un modelo de tamaño pequeño o mediano (posiblemente una versión cuantizada), pero no hay confirmación oficial. La licencia declarada es Apache 2.0, lo que permite uso comercial y modificación, pero el resto de especificaciones técnicas no están documentadas.
+El modelo `Sandy22723/TInkl_gemma` es un repositorio alojado en Hugging Face que, por su nombre, parece ser un ajuste fino o adaptación de un modelo de la familia Gemma de Google DeepMind. Sin embargo, la información pública disponible es extremadamente limitada: no se proporciona una descripción, ni detalles de arquitectura, ni métricas de rendimiento, ni ejemplos de uso. El repositorio tiene un tamaño de 1.4 GB, lo que sugiere que podría tratarse de un modelo de tamaño pequeño o mediano (posiblemente una versión cuantizada), pero no hay confirmación oficial. La licencia declarada es Apache 2.0, lo que permite uso comercial y modificación, pero el resto de especificaciones técnicas no están documentadas.
 
 Este modelo no ha recibido descargas ni valoraciones, y su fecha de creación es de agosto de 2026, por lo que es muy reciente y probablemente un proyecto experimental o personal. Dado que no existe una model card sustancial ni documentación adicional, cualquier evaluación técnica debe tratarse con extrema cautela. La relevancia actual del modelo es incierta, y no se puede recomendar su uso en producción sin antes verificar su contenido y capacidades mediante pruebas directas.
 
@@ -60,5 +60,5 @@ No es posible realizar una comparativa fiable sin datos del modelo. Si se confir
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sandy22723/TInkl_gemma
+- Repositorio Hugging Face: https://huggingface.co/Sandy22723/TInkl_gemma
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) relacionados con este modelo específico.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Surebranch 4B es un modelo de decisión de 4.205.751.296 parámetros (aproximadamente 4,2 mil millones) publicado por el usuario edihasaj en HuggingFace. Su particularidad es que no genera texto: puntúa opciones tipadas a partir de un estado de entrada y devuelve probabilidades sobre las alternativas que se le proporcionan, todo ello en una única pasada hacia delante (one-pass). Está etiquetado como `decision-model`, `structured-output` y `text-classification`, y se apoya en el paquete `decider-ai` para exponer la interfaz de petición tipada y de slots de respuesta.
+Surebranch 4B es un modelo de decisión de 4.205.751.296 parámetros (aproximadamente 4,2 mil millones) publicado por el usuario edihasaj en Hugging Face. Su particularidad es que no genera texto: puntúa opciones tipadas a partir de un estado de entrada y devuelve probabilidades sobre las alternativas que se le proporcionan, todo ello en una única pasada hacia delante (one-pass). Está etiquetado como `decision-model`, `structured-output` y `text-classification`, y se apoya en el paquete `decider-ai` para exponer la interfaz de petición tipada y de slots de respuesta.
 
 El modelo es un fine-tune de `Mapika/decider-4b`, que a su vez se apoya en la familia Qwen3.5 text (tag `qwen3_5_text`). Se trata de una release de investigación: incluye pesos fusionados, tokenizador y configuración, pero no el código de entrenamiento ni los conjuntos de datos. El contexto de evaluación confirmado es de como máximo 8.192 tokens de entrada, y únicamente se declara soporte para inglés.
 
@@ -22,7 +22,7 @@ Su relevancia actual reside en el nicho de las decisiones estructuradas dentro d
 | Formato de pesos | safetensors (librería `transformers`) |
 | Pipeline declarado | text-classification / decision-model |
 | Modelo base | Mapika/decider-4b (fine-tune) |
-| Compatibilidad de endpoints | `endpoints_compatible` (según tags de HuggingFace) |
+| Compatibilidad de endpoints | `endpoints_compatible` (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edihasaj/surebranch-4b
+- Modelo en Hugging Face: https://huggingface.co/edihasaj/surebranch-4b
 - Aviso de procedencia y licencias (NOTICE.md): https://huggingface.co/edihasaj/surebranch-4b/blob/main/NOTICE.md
 - Modelo base: https://huggingface.co/Mapika/decider-4b
 - Paquete `decider-ai` (dependencia declarada, sin URL proporcionada en la información disponible)

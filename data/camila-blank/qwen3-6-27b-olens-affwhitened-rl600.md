@@ -77,9 +77,9 @@ Lectura: el checkpoint mejora de forma clara en precisión y recall conceptuales
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (affwhitened RL600) | LoRA r=16 sobre base 27B | No disponible | WS v1 0,722; J-lens P/R 0,416/0,587; alucinacion 6,6 % | No disponible | HuggingFace, 0 descargas |
+| Este adaptador (affwhitened RL600) | LoRA r=16 sobre base 27B | No disponible | WS v1 0,722; J-lens P/R 0,416/0,587; alucinacion 6,6 % | No disponible | Hugging Face, 0 descargas |
 | O-lens por defecto (mismo base) | LoRA sobre base 27B | No disponible | WS v1 0,744; J-lens P/R 0,275/0,502; alucinacion 8,5 % | No disponible | Referencia citada en la model card, sin enlace |
-| Qwen/Qwen3.6-27B (modelo base sin adaptador) | 27B (denominacion) | No disponible | No aplica: no es un oraculo de activaciones | No disponible | HuggingFace |
+| Qwen/Qwen3.6-27B (modelo base sin adaptador) | 27B (denominacion) | No disponible | No aplica: no es un oraculo de activaciones | No disponible | Hugging Face |
 | Otros *activation oracles* | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han identificado en la información proporcionada otros adaptadores de interpretabilidad comparables sobre el mismo modelo base.
@@ -99,7 +99,7 @@ No se han identificado en la información proporcionada otros adaptadores de int
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/camila-blank/qwen3.6-27b-olens-affwhitened-rl600
+- Hugging Face del adaptador: https://huggingface.co/camila-blank/qwen3.6-27b-olens-affwhitened-rl600
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - No se han encontrado enlaces relevantes en la búsqueda web: los resultados obtenidos corresponden a la artista Camila Cabello y a un restaurante homónimo, sin relación con el modelo. No se dispone de paper, blog, repositorio de código ni demo asociados en la información proporcionada.
 - Referencias internas citadas en la model card, sin URL disponible: WorkspaceBench v1, HallucinationBench v2, J-lens y el hilo "global-workspace #535" (celda `affw`).

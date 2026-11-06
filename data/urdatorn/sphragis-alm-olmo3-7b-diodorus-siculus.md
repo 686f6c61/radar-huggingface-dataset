@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks individuales para este modelo en la
 - VRAM estimada para inferencia: aproximadamente 14,6 GB para el modelo en bf16, más los activos de atención y caché KV, por lo que se recomienda al menos 16-20 GB de VRAM para inferencia cómoda.
 - GPU recomendadas: cualquier GPU con 24 GB o más de VRAM (RTX 3090, RTX 4090, A100 40GB, H100) es suficiente para inferencia en bf16. El entrenamiento se realizó en 2x GH200 con FSDP.
 - Compatibilidad con GPU de consumo: sí, en RTX 3090/4090 (24 GB) se puede ejecutar sin cuantización adicional.
-- Opciones de despliegue: se puede servir con vLLM, llama.cpp (si se convierte a GGUF) o directamente con Transformers de HuggingFace. No hay cuantizaciones publicadas, por lo que habría que generarlas manualmente.
+- Opciones de despliegue: se puede servir con vLLM, llama.cpp (si se convierte a GGUF) o directamente con Transformers de Hugging Face. No hay cuantizaciones publicadas, por lo que habría que generarlas manualmente.
 - Latencia y throughput: no disponible en la información publicada; dependerá del hardware y del backend.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No se dispone de modelos comerciales comparables con la misma tarea de atribuci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-diodorus-siculus
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-diodorus-siculus
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Código de entrenamiento y atribución: https://github.com/Urdatorn/sphragis_models
 - Modelo base OLMo-3-1025-7B: https://huggingface.co/allenai/OLMo-3-1025-7B
@@ -158,7 +158,7 @@ No se dispone de modelos comerciales equivalentes para atribución de autoría e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-diodorus-siculus
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-diodorus-siculus
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Código de entrenamiento y puntuación: https://github.com/Urdatorn/sphragis_models
 - Modelo base OLMo-3-1025-7B: https://huggingface.co/allenai/Olmo-3-1025-7B

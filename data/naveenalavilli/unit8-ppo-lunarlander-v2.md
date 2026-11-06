@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Unit 8 PPO LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado desde cero para el entorno LunarLander-v2 de Gymnasium, publicado por el usuario naveenalavilli en HuggingFace. No es un modelo de lenguaje: es una politica neuronal entrenada con PPO (Proximal Policy Optimization) mediante una implementacion derivada de CleanRL, distribuida en el cuaderno de la unidad 8 del curso Deep Reinforcement Learning de HuggingFace. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
+Unit 8 PPO LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado desde cero para el entorno LunarLander-v2 de Gymnasium, publicado por el usuario naveenalavilli en Hugging Face. No es un modelo de lenguaje: es una politica neuronal entrenada con PPO (Proximal Policy Optimization) mediante una implementacion derivada de CleanRL, distribuida en el cuaderno de la unidad 8 del curso Deep Reinforcement Learning de Hugging Face. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 
 El agente se entreno durante 50.000 timesteps solicitados, una cifra muy inferior a la habitual para resolver LunarLander-v2, y se evaluo de forma independiente en 30 episodios estocasticos, obteniendo una recompensa media de -134,75 con una desviacion tipica de 82,95. El propio autor advierte en la model card que se trata de una ejecucion educativa corta y no de un agente que haya resuelto el entorno, dado que el umbral de resolucion de LunarLander-v2 es de 200 puntos de recompensa media.
 
@@ -23,7 +23,7 @@ Su relevancia es, por tanto, exclusivamente didactica: sirve como ejemplo reprod
 
 ## Arquitectura y entrenamiento
 
-El agente emplea PPO sobre una implementacion propia derivada de CleanRL, segun indica el autor, generada con asistencia de IA dentro del material del curso Deep RL de HuggingFace. El entrenamiento partio de cero (sin inicializacion desde un checkpoint previo) y se ejecuto durante 50.000 timesteps solicitados. No se detalla en la informacion disponible el numero de capas, el tamano de las capas ocultas, la tasa de aprendizaje, el coeficiente de clipping, el numero de entornos paralelos ni el resto de hiperparametros; el autor remite a train.py y hyperparameters.json para reproducibilidad, archivos que no forman parte de los datos facilitados.
+El agente emplea PPO sobre una implementacion propia derivada de CleanRL, segun indica el autor, generada con asistencia de IA dentro del material del curso Deep RL de Hugging Face. El entrenamiento partio de cero (sin inicializacion desde un checkpoint previo) y se ejecuto durante 50.000 timesteps solicitados. No se detalla en la informacion disponible el numero de capas, el tamano de las capas ocultas, la tasa de aprendizaje, el coeficiente de clipping, el numero de entornos paralelos ni el resto de hiperparametros; el autor remite a train.py y hyperparameters.json para reproducibilidad, archivos que no forman parte de los datos facilitados.
 
 La evaluacion se realizo de forma independiente sobre 30 episodios con politica estocastica, lo que arroja una recompensa media de -134,75 +/- 82,95. Esa desviacion tipica de casi 83 puntos es indicativa de una politica muy poco estable y de un entrenamiento claramente incompleto. No consta el uso de tecnicas adicionales como normalizacion de recompensas, curriculum learning, decodificacion especulativa (no aplica) ni ajuste fino posterior con RLHF o DPO (no aplica en RL de control).
 
@@ -40,13 +40,13 @@ La evaluacion se realizo de forma independiente sobre 30 episodios con politica 
 
 ## Casos de uso
 
-- Docencia de aprendizaje por refuerzo: usar el repositorio como punto de partida para que estudiantes de la unidad 8 del curso Deep RL de HuggingFace comparen su propia implementacion de PPO con una ejecucion de referencia y analicen por que 50.000 timesteps no bastan.
+- Docencia de aprendizaje por refuerzo: usar el repositorio como punto de partida para que estudiantes de la unidad 8 del curso Deep RL de Hugging Face comparen su propia implementacion de PPO con una ejecucion de referencia y analicen por que 50.000 timesteps no bastan.
 - Analisis de curvas de aprendizaje: el resultado de -134,75 +/- 82,95 permite estudiar empiricamente el efecto de un presupuesto de entrenamiento insuficiente y la alta varianza entre episodios.
 - Punto de partida para reentrenamiento: ampliar el numero de timesteps (habitualmente cientos de miles o millones en LunarLander-v2) y comparar la mejora respecto a este baseline.
 - Pruebas de infraestructura de RL: validar que un pipeline de entrenamiento y evaluacion estocastica funciona de extremo a extremo antes de lanzar ejecuciones costosas, dado que el coste computacional de LunarLander-v2 es minimo.
 - Comparacion de algoritmos de RL: servir como baseline PPO con el que contrastar DQN, A2C u otras alternativas sobre el mismo entorno.
 - Auditoria de reproducibilidad: comprobar si train.py y hyperparameters.json permiten replicar exactamente la recompensa declarada, util en revisiones de trabajos de curso o talleres.
-- Ejemplo de publicacion de artefactos en HuggingFace: ilustra como declarar un model-index con una metrica de reinforcement learning y marcarla como no verificada.
+- Ejemplo de publicacion de artefactos en Hugging Face: ilustra como declarar un model-index con una metrica de reinforcement learning y marcarla como no verificada.
 
 ## Benchmarks y rendimiento
 
@@ -69,7 +69,7 @@ El autor declara 30 episodios de evaluacion independiente con politica estocasti
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Unit 8 PPO LunarLander-v2 (este modelo) | no disponible | no aplica | mean_reward -134,75 +/- 82,95 (30 episodios) | no disponible | HuggingFace, 0 descargas |
+| Unit 8 PPO LunarLander-v2 (este modelo) | no disponible | no aplica | mean_reward -134,75 +/- 82,95 (30 episodios) | no disponible | Hugging Face, 0 descargas |
 | CleanRL PPO LunarLander-v2 | no disponible | no aplica | no disponible en la informacion proporcionada | MIT (segun el proyecto CleanRL, dato no verificado en esta busqueda) | GitHub, codigo de referencia |
 | Stable-Baselines3 PPO LunarLander-v2 | no disponible | no aplica | no disponible en la informacion proporcionada | MIT (segun el proyecto SB3, dato no verificado en esta busqueda) | GitHub y PyPI |
 
@@ -91,9 +91,9 @@ No se dispone de resultados numericos de las alternativas en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/naveenalavilli/unit8-ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/naveenalavilli/unit8-ppo-LunarLander-v2
 - Cuaderno de origen del curso Deep RL (unit8_part1): https://github.com/huggingface/deep-rl-class/blob/main/notebooks/unit8/unit8_part1.ipynb
 - CleanRL (implementacion de referencia citada por el autor): https://github.com/vwxyzjn/cleanrl
-- Curso Deep Reinforcement Learning de HuggingFace: https://github.com/huggingface/deep-rl-class
+- Curso Deep Reinforcement Learning de Hugging Face: https://github.com/huggingface/deep-rl-class
 - Entorno LunarLander-v2 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Los resultados devueltos por la busqueda corresponden a contenidos no relacionados con el repositorio (series de television y grupos de mensajeria), por lo que se descartan como fuentes.

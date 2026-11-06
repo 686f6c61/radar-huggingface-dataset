@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Chloemp/smollm2-135m-xlam-fullft | 135M | no disponible | no disponible | HuggingFace |
-| SmolLM2-135M (base) | 135M | no disponible | Apache 2.0 | HuggingFace |
-| SmolLM2-360M | 360M | no disponible | Apache 2.0 | HuggingFace |
-| SmolLM2-1.7B | 1,7B | no disponible | Apache 2.0 | HuggingFace |
+| Chloemp/smollm2-135m-xlam-fullft | 135M | no disponible | no disponible | Hugging Face |
+| SmolLM2-135M (base) | 135M | no disponible | Apache 2.0 | Hugging Face |
+| SmolLM2-360M | 360M | no disponible | Apache 2.0 | Hugging Face |
+| SmolLM2-1.7B | 1,7B | no disponible | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a la familia SmolLM2, ya que no se dispone de informacion sobre otros modelos comparables en la documentacion proporcionada. El modelo base SmolLM2-135M tiene licencia Apache 2.0, pero este fine-tuning especifico no especifica una licencia clara, lo que supone una diferencia importante para uso comercial.
 
@@ -77,7 +77,7 @@ La comparativa se limita a la familia SmolLM2, ya que no se dispone de informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chloemp/smollm2-135m-xlam-fullft
+- Modelo en Hugging Face: https://huggingface.co/Chloemp/smollm2-135m-xlam-fullft
 - Modelo base SmolLM2-135M: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Coleccion SmolLM2: https://huggingface.co/collections/HuggingFaceTB/smollm2
 - Repositorio GitHub de SmolLM: https://github.com/huggingface/smollm

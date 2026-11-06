@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA (PEFT) entrenado mediante DPO sobre 
 
 El interes practico del artefacto es doble. Por un lado, es un ejemplo de adaptador de bajo coste: el repositorio pesa 0,3 GB, frente a los aproximadamente 15 GB del modelo base en precision fp16, y se carga sobre Qwen2.5-7B-Instruct sin necesidad de reentrenar. Por otro, pertenece a la familia de experimentos de misalignment empirico, utiles para estudiar como tecnicas de preferencia (DPO) pueden inducir rasgos de comportamiento concretos y como detectarlos.
 
-La model card publicada es la plantilla por defecto de HuggingFace y no contiene informacion sustantiva: no hay datos de entrenamiento, hiperparametros, evaluacion, licencia ni idiomas declarados. El repositorio acumula 0 descargas y 0 likes en el momento de redactar esta ficha, por lo que se trata de un artefacto de investigacion sin validacion externa conocida.
+La model card publicada es la plantilla por defecto de Hugging Face y no contiene informacion sustantiva: no hay datos de entrenamiento, hiperparametros, evaluacion, licencia ni idiomas declarados. El repositorio acumula 0 descargas y 0 likes en el momento de redactar esta ficha, por lo que se trata de un artefacto de investigacion sin validacion externa conocida.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ En cuanto al entrenamiento del adaptador, la informacion disponible se limita a 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla por defecto de HuggingFace y la seccion de evaluacion figura como "[More Information Needed]" en todos sus apartados. Tampoco se han encontrado resultados en la busqueda web realizada, cuyos resultados no guardan relacion con el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla por defecto de Hugging Face y la seccion de evaluacion figura como "[More Information Needed]" en todos sus apartados. Tampoco se han encontrado resultados en la busqueda web realizada, cuyos resultados no guardan relacion con el modelo.
 
 ## Requisitos de hardware
 
@@ -87,7 +87,7 @@ No se dispone de resultados de benchmarks para este adaptador, por lo que la com
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Misalignment-Empirics/shreyans_qwen2.5-7b-it_impulsive-dpo-v2-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Misalignment-Empirics/shreyans_qwen2.5-7b-it_impulsive-dpo-v2-lora
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5
 - Blog de presentacion de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

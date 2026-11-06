@@ -88,8 +88,8 @@ SpaceAI-v1 se diferencia por su especializacion en el dominio espacial y astrofi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anoopsingh53/isro-spaceai-v1
-- Perfil del autor en HuggingFace: https://huggingface.co/Anoopsingh53
+- Modelo en Hugging Face: https://huggingface.co/Anoopsingh53/isro-spaceai-v1
+- Perfil del autor en Hugging Face: https://huggingface.co/Anoopsingh53
 - Repositorio GitHub del proyecto ISRO: https://github.com/Anoop-singh225/ISRO
 - Dataset de entrenamiento: https://huggingface.co/datasets/UniverseTBD/arxiv-qa-astro-ph
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

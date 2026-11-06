@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bebo1397/Abdo es un repositorio alojado en HuggingFace por el usuario Bebo1397, publicado bajo licencia Apache 2.0 y etiquetado con la región "us". En el momento de la consulta acumula 0 descargas y 0 "likes", y su tamano de repositorio es de 0,0 GB, lo que indica que no contiene pesos de modelo ni artefactos de gran tamano. La model card publicada se limita a la declaracion de licencia, sin descripcion, sin ficha tecnica y sin instrucciones de uso.
+Bebo1397/Abdo es un repositorio alojado en Hugging Face por el usuario Bebo1397, publicado bajo licencia Apache 2.0 y etiquetado con la región "us". En el momento de la consulta acumula 0 descargas y 0 "likes", y su tamano de repositorio es de 0,0 GB, lo que indica que no contiene pesos de modelo ni artefactos de gran tamano. La model card publicada se limita a la declaracion de licencia, sin descripcion, sin ficha tecnica y sin instrucciones de uso.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, idiomas soportados ni pipeline de inferencia. Tampoco hay datos de entrenamiento, benchmarks publicados ni ejemplos de uso. La fecha de creacion y ultima actualizacion es el 24 de septiembre de 2026, sin revisiones posteriores registradas.
 
@@ -97,7 +97,7 @@ No disponible. Sin conocer la arquitectura, el tamano ni las capacidades del mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Bebo1397/Abdo
+- Hugging Face: https://huggingface.co/Bebo1397/Abdo
 - Model card del autor: https://huggingface.co/Bebo1397/Abdo/blob/main/README.md
 - Perfil del autor: https://huggingface.co/Bebo1397
 - Papers, blogs, repositorios o demos adicionales: no disponible.

@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (Llama-3.1-8B AutoRound INT4) | 2.046 M según safetensors; base de 8.030 M | 128k (base) | INT4 WoQ, gs64 asim | Llama 3.1 Community | HuggingFace, 20 descargas |
-| meta-llama/Llama-3.1-8B | 8.030 M | 128k | bfloat16 | Llama 3.1 Community | HuggingFace, oficial |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128k | bfloat16 | Llama 3.1 Community | HuggingFace, oficial |
-| Quantized versions de terceros (GPTQ/AWQ) | 8.030 M | 128k | INT4 habitualmente | Llama 3.1 Community | Múltiples repos en HuggingFace |
+| Este checkpoint (Llama-3.1-8B AutoRound INT4) | 2.046 M según safetensors; base de 8.030 M | 128k (base) | INT4 WoQ, gs64 asim | Llama 3.1 Community | Hugging Face, 20 descargas |
+| meta-llama/Llama-3.1-8B | 8.030 M | 128k | bfloat16 | Llama 3.1 Community | Hugging Face, oficial |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128k | bfloat16 | Llama 3.1 Community | Hugging Face, oficial |
+| Quantized versions de terceros (GPTQ/AWQ) | 8.030 M | 128k | INT4 habitualmente | Llama 3.1 Community | Múltiples repos en Hugging Face |
 
 No se dispone de datos de rendimiento comparado para este checkpoint concreto; la comparación se limita a parámetros, contexto y licencia.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparado para este checkpoint concreto; l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-auto_round-int4-gs64-asym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-auto_round-int4-gs64-asym
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Framework Intel AutoRound: https://github.com/intel/auto-round
 - Licencia Llama 3.1: https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE

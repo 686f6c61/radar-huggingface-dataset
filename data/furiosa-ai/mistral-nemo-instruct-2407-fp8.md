@@ -75,7 +75,7 @@ La diferencia principal entre esta variante y el modelo base es el empaquetado p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furiosa-ai/Mistral-Nemo-Instruct-2407-FP8
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/Mistral-Nemo-Instruct-2407-FP8
 - Modelo base (RedHatAI): https://huggingface.co/RedHatAI/Mistral-Nemo-Instruct-2407-FP8
 - Modelo original (Mistral AI): https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407
 - Documentacion de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html

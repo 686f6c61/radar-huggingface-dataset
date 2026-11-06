@@ -24,7 +24,7 @@ La relevancia de esta ficha es limitada y de caracter tecnico: no hay resultados
 | Pipeline | text-generation |
 | Modelo base | goldfish-models/zho_hans_100mb |
 | Tamano del repositorio | 0,3 GB |
-| Fecha de publicacion | 22 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 22 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -51,7 +51,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL 0.23.0
 - Pruebas de pipelines de SFT con TRL: sirve como caso minimo funcional para validar integraciones de TRL, Transformers y Datasets antes de escalar a modelos mayores.
 - Generacion de texto en chino simplificado (uso exploratorio): dado el origen del modelo base, puede emplearse para generar texto corto en chino simplificado en prototipos, asumiendo calidad limitada y sin garantias.
 - Despliegue en entornos con recursos minimos: con ~125 M de parametros cabe en CPU y en GPUs integradas, por lo que puede usarse para demostraciones locales de text-generation sin infraestructura dedicada.
-- Servicio de inferencia ligero compatible con TGI: el tag `text-generation-inference` y `endpoints_compatible` permiten desplegarlo en HuggingFace Inference Endpoints o en un servidor TGI propio para pruebas de latencia.
+- Servicio de inferencia ligero compatible con TGI: el tag `text-generation-inference` y `endpoints_compatible` permiten desplegarlo en Hugging Face Inference Endpoints o en un servidor TGI propio para pruebas de latencia.
 - Evaluacion de sesgos y comportamientos en modelos de baja capacidad: util como linea base para estudiar como modelos pequenos heredan sesgos del corpus base.
 - Docencia y formacion: ejemplo sencillo para explicar el ciclo completo de fine-tuning (dataset, SFT, publicacion en el Hub) sin coste computacional elevado.
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfd_seed3407 | 124,77 M | No disponible | No disponible | HuggingFace (0 descargas) | Ajuste SFT experimental sobre base Goldfish |
-| goldfish-models/zho_hans_100mb | No disponible en la informacion proporcionada | No disponible | No disponible | HuggingFace | Modelo base del que deriva el ajuste |
+| francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfd_seed3407 | 124,77 M | No disponible | No disponible | Hugging Face (0 descargas) | Ajuste SFT experimental sobre base Goldfish |
+| goldfish-models/zho_hans_100mb | No disponible en la informacion proporcionada | No disponible | No disponible | Hugging Face | Modelo base del que deriva el ajuste |
 | GPT-2 (124 M, OpenAI) | 124 M | 1024 tokens | MIT (segun la publicacion original) | Ampliamente disponible | Referencia de la misma escala; contexto no confirmado para este modelo |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 (segun la publicacion original) | Ampliamente disponible | Alternativa destilada mas ligera; contexto no confirmado para este modelo |
 
@@ -94,7 +94,7 @@ Las cifras de contexto y licencia de GPT-2 y DistilGPT-2 se incluyen como refere
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/zho_hans_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/0u98capy

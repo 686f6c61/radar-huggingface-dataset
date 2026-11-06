@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Stage-org/4b-diversity-HH-300-nyshot-27b-z-epoch3` es un checkpoint de 4.539.265.536 parametros (aproximadamente 4,54 mil millones) publicado por la organizacion Stage-org en HuggingFace. Se trata de un ajuste por aprendizaje por refuerzo (RL) sobre el modelo base `Qwen/Qwen3.5-4B`, segun se desprende de la configuracion de entrenamiento incluida en su model card. El repositorio contiene unicamente pesos en formato `safetensors` (9,1 GB) y no incluye pipeline declarado, licencia, idiomas soportados ni documentacion funcional mas alla de la procedencia del entrenamiento.
+El modelo `Stage-org/4b-diversity-HH-300-nyshot-27b-z-epoch3` es un checkpoint de 4.539.265.536 parametros (aproximadamente 4,54 mil millones) publicado por la organizacion Stage-org en Hugging Face. Se trata de un ajuste por aprendizaje por refuerzo (RL) sobre el modelo base `Qwen/Qwen3.5-4B`, segun se desprende de la configuracion de entrenamiento incluida en su model card. El repositorio contiene unicamente pesos en formato `safetensors` (9,1 GB) y no incluye pipeline declarado, licencia, idiomas soportados ni documentacion funcional mas alla de la procedencia del entrenamiento.
 
 El checkpoint forma parte de una linea de trabajo experimental identificada por el prefijo `4b-diversity-HH-300-nyshot-27b-z`, entrenada sobre el dataset `Stage-org/4b-diversity-HH-300-nyshot-27b-z` durante 3 epocas y 10.000 pasos de learner, con un `seq_len` declarado de 300.000 y una ventana de inferencia configurada de 65.536 tokens en vLLM. La generacion de rollouts se realizo con `enable_thinking = true` y un parser de razonamiento `qwen3` y de tool calling `qwen3_coder`, lo que indica que el pipeline asume capacidades de razonamiento extendido y llamada a herramientas.
 
@@ -28,7 +28,7 @@ Su relevancia es limitada y fundamentalmente experimental: el repositorio regist
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna del modelo. El unico dato estructural disponible es el modelo base declarado en la configuracion de entrenamiento, `Qwen/Qwen3.5-4B`, y el tag de HuggingFace `qwen3_5`. A partir del recuento real de parametros (4,54 B) y de que la configuracion de inferencia activa `language_model_only = true`, cabe deducir que el checkpoint resultante es unicamente el componente de lenguaje del modelo base, sin cabezas multimodales. No se documenta ningun cambio arquitectonico respecto al modelo original.
+La model card no describe la arquitectura interna del modelo. El unico dato estructural disponible es el modelo base declarado en la configuracion de entrenamiento, `Qwen/Qwen3.5-4B`, y el tag de Hugging Face `qwen3_5`. A partir del recuento real de parametros (4,54 B) y de que la configuracion de inferencia activa `language_model_only = true`, cabe deducir que el checkpoint resultante es unicamente el componente de lenguaje del modelo base, sin cabezas multimodales. No se documenta ningun cambio arquitectonico respecto al modelo original.
 
 El entrenamiento se realizo con `prime_rl` en modo RL, con `learner_steps = 10000`, `learner_epoch = 3`, `batch_size = 128` y `group_size = 8` (esquema compatible con optimizacion tipo GRPO). El optimizador es AdamW con `lr = 1e-6`, `weight_decay = 0.0`, `max_norm = 1.0` y betas 0.9/0.99; la perdida usa `dppo_mask_low = 0.2`, `dppo_mask_high = 0.28`, `adv_tau = 1.0` y `kl_tau = 0.001`. La atencion usa `flash_attention_2`. Los rollouts se generaron con temperatura 0.9, `top_p = 1.0`, `max_tokens = 4096` y modo thinking activado. La funcion de recompensa se apoyo en un jurado automatico externo servido por API (`gpt-5.6-luna`), con `reasoning_effort = medium` y hasta 32 peticiones en vuelo. El entrenamiento se ejecuto en un nodo con 2 GPU (1 para inferencia, 1 para entrenamiento) y un orquestador con hasta 256 rollouts en vuelo y un maximo de 8 pasos fuera de politica. No se especifica la composicion del dataset ni el volumen de tokens de entrenamiento.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Stage-org/4b-diversity-HH-300-nyshot-27b-z-epoch3 | 4,54 B | 65.536 tokens en la configuracion de inferencia | No publicado | No disponible | HuggingFace, 0 descargas |
+| Stage-org/4b-diversity-HH-300-nyshot-27b-z-epoch3 | 4,54 B | 65.536 tokens en la configuracion de inferencia | No publicado | No disponible | Hugging Face, 0 descargas |
 | Qwen/Qwen3.5-4B (modelo base declarado) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Referenciado en la configuracion de entrenamiento |
 | Alternativas de ~4 B de otros laboratorios | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -97,7 +97,7 @@ No se dispone de datos verificados sobre modelos comparables en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/4b-diversity-HH-300-nyshot-27b-z-epoch3
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/4b-diversity-HH-300-nyshot-27b-z-epoch3
 - Dataset de entrenamiento referenciado: `Stage-org/4b-diversity-HH-300-nyshot-27b-z` (referenciado en la model card; no se ha verificado su disponibilidad publica)
 - Modelo base referenciado: `Qwen/Qwen3.5-4B` (referenciado en la configuracion de entrenamiento)
 - Paper, blog o repositorio del autor: no disponible

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `lugman-madhiai/Qwen3.5-2B-Instantly-CS-SFT-Split-01` es un ajuste fino supervisado (SFT) desarrollado por el usuario de HuggingFace lugman-madhiai a partir del modelo base `Qwen/Qwen3.5-2B`. Se publica bajo licencia Apache 2.0 y esta etiquetado en HuggingFace con el pipeline `image-text-to-text`, lo que indica que acepta entrada multimodal de imagen y texto, ademas de las tareas conversacionales habituales de generacion de texto.
+El modelo `lugman-madhiai/Qwen3.5-2B-Instantly-CS-SFT-Split-01` es un ajuste fino supervisado (SFT) desarrollado por el usuario de Hugging Face lugman-madhiai a partir del modelo base `Qwen/Qwen3.5-2B`. Se publica bajo licencia Apache 2.0 y esta etiquetado en Hugging Face con el pipeline `image-text-to-text`, lo que indica que acepta entrada multimodal de imagen y texto, ademas de las tareas conversacionales habituales de generacion de texto.
 
-El modelo tiene 2.274.069.824 parametros (aproximadamente 2,27 mil millones) y un repositorio de 4,6 GB, un tamano coherente con pesos almacenados en precision de 16 bits (bf16/fp16). Esta orientado a un unico idioma, el ingles, y fue entrenado con la libreria Unsloth junto con TRL de HuggingFace, segun declara el propio autor en la model card.
+El modelo tiene 2.274.069.824 parametros (aproximadamente 2,27 mil millones) y un repositorio de 4,6 GB, un tamano coherente con pesos almacenados en precision de 16 bits (bf16/fp16). Esta orientado a un unico idioma, el ingles, y fue entrenado con la libreria Unsloth junto con TRL de Hugging Face, segun declara el propio autor en la model card.
 
 Su relevancia practica es limitada pero concreta: se trata de un modelo pequeno, de licencia permisiva, que cabe en GPU de consumo y sirve como punto de partida para experimentar con SFT sobre una base multimodal de 2B. La documentacion publicada es minima: no se detallan el dataset, la composicion del entrenamiento, la longitud de contexto ni resultados de evaluacion, por lo que cualquier uso en produccion exige validacion propia previa.
 
@@ -30,7 +30,7 @@ Su relevancia practica es limitada pero concreta: se trata de un modelo pequeno,
 
 La informacion publicada no describe la arquitectura interna del modelo. Los unicos datos tecnicos confirmados son la pertenencia a la familia `qwen3_5`, la modalidad de entrada `image-text-to-text` y un total de 2,27 B de parametros, lo que lo situa en la gama de modelos densos pequenos. No se ha publicado informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni sobre innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, hibridaciones SSM, etc.).
 
-El entrenamiento se realizo como ajuste fino supervisado sobre `Qwen/Qwen3.5-2B`. La model card indica que el proceso se ejecuto con Unsloth y la libreria TRL de HuggingFace, con la afirmacion de un entrenamiento "2x faster" atribuida a Unsloth, pero sin cifras verificables de tiempo, hardware empleado, numero de pasos ni hiperparametros. El identificador del modelo incluye las siglas "CS", que podrian sugerir un ajuste orientado a un dominio concreto, pero esto no esta confirmado en ningun documento publicado y no debe tomarse como un hecho.
+El entrenamiento se realizo como ajuste fino supervisado sobre `Qwen/Qwen3.5-2B`. La model card indica que el proceso se ejecuto con Unsloth y la libreria TRL de Hugging Face, con la afirmacion de un entrenamiento "2x faster" atribuida a Unsloth, pero sin cifras verificables de tiempo, hardware empleado, numero de pasos ni hiperparametros. El identificador del modelo incluye las siglas "CS", que podrian sugerir un ajuste orientado a un dominio concreto, pero esto no esta confirmado en ningun documento publicado y no debe tomarse como un hecho.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ El entrenamiento se realizo como ajuste fino supervisado sobre `Qwen/Qwen3.5-2B`
 - Capacidades de audio o video: no documentadas.
 - Capacidades de codigo o matematicas: no documentadas ni evaluadas en la informacion disponible.
 
-Nota: al tratarse de un ajuste fino de 2,27 B de parametros y sin evaluaciones publicadas, no hay evidencia verificable del grado de competencia en ninguna de estas capacidades mas alla de lo que declaran las etiquetas de HuggingFace.
+Nota: al tratarse de un ajuste fino de 2,27 B de parametros y sin evaluaciones publicadas, no hay evidencia verificable del grado de competencia en ninguna de estas capacidades mas alla de lo que declaran las etiquetas de Hugging Face.
 
 ## Casos de uso
 
@@ -59,7 +59,7 @@ Nota: al tratarse de un ajuste fino de 2,27 B de parametros y sin evaluaciones p
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-No existen datos de MMLU, HumanEval, GSM8K, MMMU ni de ninguna otra evaluacion en la model card, en el repositorio de HuggingFace ni en las fuentes consultadas.
+No existen datos de MMLU, HumanEval, GSM8K, MMMU ni de ninguna otra evaluacion en la model card, en el repositorio de Hugging Face ni en las fuentes consultadas.
 
 ## Requisitos de hardware
 
@@ -74,10 +74,10 @@ No existen datos de MMLU, HumanEval, GSM8K, MMMU ni de ninguna otra evaluacion e
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-2B-Instantly-CS-SFT-Split-01 | 2,27 B | no disponible | imagen-texto a texto | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-2B (base) | no disponible en la informacion | no disponible | no disponible | no disponible en la informacion | HuggingFace |
-| lugman-madhiai/Qwen3.5-2B-SearchAgent-SFT-01 | 2,3 B (segun featherless.ai) | 32K (segun featherless.ai) | imagen-texto a texto | Apache 2.0 segun el listado | HuggingFace |
-| lugman-madhiai/Qwen3.5-2B-SearchAgent-SFT-02 | no disponible | no disponible | imagen-texto a texto | Apache 2.0 segun el listado | HuggingFace |
+| Qwen3.5-2B-Instantly-CS-SFT-Split-01 | 2,27 B | no disponible | imagen-texto a texto | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-2B (base) | no disponible en la informacion | no disponible | no disponible | no disponible en la informacion | Hugging Face |
+| lugman-madhiai/Qwen3.5-2B-SearchAgent-SFT-01 | 2,3 B (segun featherless.ai) | 32K (segun featherless.ai) | imagen-texto a texto | Apache 2.0 segun el listado | Hugging Face |
+| lugman-madhiai/Qwen3.5-2B-SearchAgent-SFT-02 | no disponible | no disponible | imagen-texto a texto | Apache 2.0 segun el listado | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes. Las cifras de contexto y parametros atribuidas a `SearchAgent-SFT-01` provienen de un agregador externo (featherless.ai) y no han sido verificadas en la model card oficial.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes. Las ci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lugman-madhiai/Qwen3.5-2B-Instantly-CS-SFT-Split-01
+- Modelo en Hugging Face: https://huggingface.co/lugman-madhiai/Qwen3.5-2B-Instantly-CS-SFT-Split-01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Variante relacionada: https://huggingface.co/lugman-madhiai/Qwen3.5-2B-SearchAgent-SFT-01
 - Variante relacionada: https://huggingface.co/lugman-madhiai/Qwen3.5-2B-SearchAgent-SFT-02

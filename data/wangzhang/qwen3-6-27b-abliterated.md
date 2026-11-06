@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento en benchmarks estándar para comparar con 
 
 ## Enlaces
 
-- [HuggingFace: wangzhang/Qwen3.6-27B-abliterated](https://huggingface.co/wangzhang/Qwen3.6-27B-abliterated)
+- [Hugging Face: wangzhang/Qwen3.6-27B-abliterated](https://huggingface.co/wangzhang/Qwen3.6-27B-abliterated)
 - [Repositorio de abliterix](https://github.com/wuwangzhang1216/abliterix)
 - [Modelo base Qwen/Qwen3.6-27B](https://huggingface.co/Qwen/Qwen3.6-27B)
 - [Versión en Ollama (huihui_ai)](https://ollama.com/huihui_ai/Qwen3.6-abliterated:27b)

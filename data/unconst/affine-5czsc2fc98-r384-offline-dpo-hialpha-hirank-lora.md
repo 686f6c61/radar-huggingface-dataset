@@ -59,5 +59,5 @@ No disponible. Al tratarse de un adaptador LoRA sobre un modelo base no document
 - Fecha de creación futura (2026-08-16): el repositorio tiene una fecha de creación posterior a la actual, lo que podría indicar un error en los metadatos o un repositorio generado automáticamente.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r384-offline-dpo-hialpha-hirank-lora
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r384-offline-dpo-hialpha-hirank-lora
 - Modelo base (referenciado): https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen (no se ha podido verificar su contenido en la información proporcionada)

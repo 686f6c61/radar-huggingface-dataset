@@ -104,7 +104,7 @@ La información disponible solo permite comparar contra el modelo base y contra 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Spangler3000/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-MLX-hybrid8-mtp
+- Repositorio en Hugging Face: https://huggingface.co/Spangler3000/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-MLX-hybrid8-mtp
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Licencia del modelo fuente: NVIDIA Open Model License (referenciada como `LICENSE` dentro del repositorio)
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante. Los resultados devueltos corresponden a guías de sitios de *streaming* en italiano y no guardan relación con el modelo.

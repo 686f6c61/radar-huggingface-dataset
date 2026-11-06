@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `priapunya/obat-bius-hitungan-detik` es un modelo publicado en HuggingFace por el usuario `priapunya` bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 "likes", y fue creado y actualizado en la misma marca temporal (2026-10-06T20:56:04Z), lo que sugiere una subida única sin mantenimiento posterior. La model card asociada no contiene documentación técnica: únicamente incluye la declaración de licencia, sin descripción, arquitectura, datos de entrenamiento ni instrucciones de uso.
+El repositorio `priapunya/obat-bius-hitungan-detik` es un modelo publicado en Hugging Face por el usuario `priapunya` bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 "likes", y fue creado y actualizado en la misma marca temporal (2026-10-06T20:56:04Z), lo que sugiere una subida única sin mantenimiento posterior. La model card asociada no contiene documentación técnica: únicamente incluye la declaración de licencia, sin descripción, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
 No se dispone de información sobre el pipeline declarado, los idiomas soportados, el número de parámetros, la longitud de contexto ni el formato de los pesos. La búsqueda web realizada no ha devuelto ningún resultado relevante sobre este modelo: los enlaces recuperados son contenido no relacionado con inteligencia artificial, por lo que no aportan ninguna referencia técnica verificable.
 
@@ -76,7 +76,7 @@ No disponible. No se puede establecer una categoría de comparación (mismo tama
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| priapunya/obat-bius-hitungan-detik | no disponible | no disponible | Apache 2.0 | HuggingFace | inexistente |
+| priapunya/obat-bius-hitungan-detik | no disponible | no disponible | Apache 2.0 | Hugging Face | inexistente |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. No se puede establecer una categoría de comparación (mismo tama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/priapunya/obat-bius-hitungan-detik
+- Hugging Face: https://huggingface.co/priapunya/obat-bius-hitungan-detik
 - Paper: no disponible
 - Repositorio de código: no disponible
 - Demo: no disponible

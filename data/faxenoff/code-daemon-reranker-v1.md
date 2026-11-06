@@ -90,8 +90,8 @@ No hay datos de rendimiento comparativo en los mismos conjuntos de evaluación, 
 
 ## Enlaces
 
-- [HuggingFace: faxenoff/code-daemon-reranker-v1](https://huggingface.co/faxenoff/code-daemon-reranker-v1)
-- [Repositorio de archivos en HuggingFace](https://huggingface.co/faxenoff/code-daemon-reranker-v1/tree/main)
+- [Hugging Face: faxenoff/code-daemon-reranker-v1](https://huggingface.co/faxenoff/code-daemon-reranker-v1)
+- [Repositorio de archivos en Hugging Face](https://huggingface.co/faxenoff/code-daemon-reranker-v1/tree/main)
 - [Modelo base: cross-encoder/mmarco-mMiniLMv2-L12-H384-v1](https://huggingface.co/cross-encoder/mmarco-mMiniLMv2-L12-H384-v1)
 - [Recuperador de primera etapa: code-daemon-embed-v1](https://huggingface.co/faxenoff/code-daemon-embed-v1)
 - [Recuperador usado para minería de negativos: nomic-ai/CodeRankEmbed](https://huggingface.co/nomic-ai/CodeRankEmbed)

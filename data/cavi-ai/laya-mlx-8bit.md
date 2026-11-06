@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato / plataforma | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| cavi-ai/laya-MLX-8bit | 421.293.827 | 512 (raiz), 1024 (multilingual y typed-decisions) | MLX, safetensors 8 bits | Apache-2.0 (pesos), MIT (codigo) | 17/17, 25/25 y 17/17 de coincidencia con la referencia fp32; 12-46 ms por peticion | HuggingFace, 21 descargas, 1 like |
-| convaiinnovations/laya (modelo base) | no disponible en la informacion (el port usa 421.293.827) | no disponible | PyTorch, float32 | Apache-2.0 | Es la referencia de comparacion del port | HuggingFace |
+| cavi-ai/laya-MLX-8bit | 421.293.827 | 512 (raiz), 1024 (multilingual y typed-decisions) | MLX, safetensors 8 bits | Apache-2.0 (pesos), MIT (codigo) | 17/17, 25/25 y 17/17 de coincidencia con la referencia fp32; 12-46 ms por peticion | Hugging Face, 21 descargas, 1 like |
+| convaiinnovations/laya (modelo base) | no disponible en la informacion (el port usa 421.293.827) | no disponible | PyTorch, float32 | Apache-2.0 | Es la referencia de comparacion del port | Hugging Face |
 | mizorewww/laya-mlx | no disponible | no disponible | MLX nativo | no disponible | 7-14 ms en decisiones cortas (M3 Max) | GitHub |
 | Jev | no disponible | no disponible | no disponible | no disponible | no disponible | Citado por explainx.ai como modelo de decision tipada de la misma categoria |
 
@@ -102,7 +102,7 @@ No se dispone de datos de parametros, contexto ni licencia de las alternativas c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cavi-ai/laya-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/cavi-ai/laya-MLX-8bit
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Codigo fuente del port MLX: https://github.com/cavi-ai/mlx-agent
 - Sitio oficial de Laya: https://laya.convaiinnovations.com/

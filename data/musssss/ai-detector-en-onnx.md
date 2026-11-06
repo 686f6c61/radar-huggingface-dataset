@@ -88,7 +88,7 @@ La comparación con alternativas de la misma categoría (por ejemplo, clasificad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/musssss/ai-detector-en-onnx
+- Modelo en Hugging Face: https://huggingface.co/musssss/ai-detector-en-onnx
 - Modelo base: https://huggingface.co/ShantanuT01/vanguard-ai-text-detector
 - Documentación de transformers.js: https://huggingface.co/docs/transformers.js
 - Documentación de Optimum (exportación ONNX): https://huggingface.co/docs/optimum

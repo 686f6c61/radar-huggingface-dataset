@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PRIMA | 8,57 B | no disponible | Razonamiento multi-imagen con pixel grounding (EVA-CLIP-G + Q-Former + SQuARE + Vicuna-7B + SAM ViT-H) | MIT con terminos de componentes upstream | HuggingFace, codigo de evaluacion incluido |
-| GLaMM-FullScope (MBZUAI) | no disponible en la informacion | no disponible | Grounding conversacional de una sola imagen (base de PRIMA) | no disponible en la informacion | HuggingFace |
-| LISA | no disponible en la informacion | no disponible | Segmentacion guiada por lenguaje sobre una imagen | no disponible en la informacion | HuggingFace |
+| PRIMA | 8,57 B | no disponible | Razonamiento multi-imagen con pixel grounding (EVA-CLIP-G + Q-Former + SQuARE + Vicuna-7B + SAM ViT-H) | MIT con terminos de componentes upstream | Hugging Face, codigo de evaluacion incluido |
+| GLaMM-FullScope (MBZUAI) | no disponible en la informacion | no disponible | Grounding conversacional de una sola imagen (base de PRIMA) | no disponible en la informacion | Hugging Face |
+| LISA | no disponible en la informacion | no disponible | Segmentacion guiada por lenguaje sobre una imagen | no disponible en la informacion | Hugging Face |
 
 La comparacion cuantitativa con alternativas de la misma categoria no esta disponible en la informacion proporcionada; PRIMA se distingue de sus predecesores por incorporar razonamiento explicito entre multiples imagenes y un modulo relacional (SQuARE) ausente en los modelos de grounding de imagen unica.
 
@@ -85,7 +85,7 @@ La comparacion cuantitativa con alternativas de la misma categoria no esta dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kanguyen-vn/PRIMA
+- Modelo en Hugging Face: https://huggingface.co/kanguyen-vn/PRIMA
 - Codigo y evaluador: https://huggingface.co/kanguyen-vn/PRIMA/tree/main/code
 - Paper: https://arxiv.org/abs/2412.15209
 - Pagina del proyecto: https://plan-lab.github.io/projects/prima/

@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (myendless) | 4B (base Qwen3-VL-4B) | no disponible | Representación de acciones robóticas (trayectoria + texto) | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-4B-Instruct | 4B | no disponible en esta ficha | VLM instructivo general | no disponible en esta ficha | HuggingFace, ampliamente usado |
+| Este checkpoint (myendless) | 4B (base Qwen3-VL-4B) | no disponible | Representación de acciones robóticas (trayectoria + texto) | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-4B-Instruct | 4B | no disponible en esta ficha | VLM instructivo general | no disponible en esta ficha | Hugging Face, ampliamente usado |
 | Alternativas de representación de acción robótica | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para establecer comparaciones cuantitativas con otros modelos de representación de acciones. La comparación con el modelo base es únicamente estructural: este checkpoint reutiliza su inicialización pero no conserva necesariamente sus capacidades instructivas intactas.
@@ -89,7 +89,7 @@ No se dispone de información suficiente para establecer comparaciones cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/myendless/action-repre-hygon-aloha-core8-mixed-traj-text-source15k-e5ec4ae1
+- Hugging Face: https://huggingface.co/myendless/action-repre-hygon-aloha-core8-mixed-traj-text-source15k-e5ec4ae1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Action Representation Benchmark: no disponible (no se proporciona URL en la información)
 - Paper, blog o demo: no disponible

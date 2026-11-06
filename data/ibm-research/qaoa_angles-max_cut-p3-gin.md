@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ibm-research/qaoa_angles.max_cut.p3.gin` es un artefacto publicado por IBM Research en HuggingFace, distribuido en formato ONNX y con licencia Apache 2.0. Por la nomenclatura del identificador —`qaoa_angles`, `max_cut`, `p3` y `gin`— cabe interpretar, siempre como inferencia a partir del nombre y no como dato confirmado por la model card, que se trata de un modelo de aprendizaje automatico disenado para predecir los angulos (parametros variacionales) de un circuito QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema Max-Cut con profundidad p=3, empleando una red neuronal de grafos de tipo GIN (Graph Isomorphism Network).
+`ibm-research/qaoa_angles.max_cut.p3.gin` es un artefacto publicado por IBM Research en Hugging Face, distribuido en formato ONNX y con licencia Apache 2.0. Por la nomenclatura del identificador —`qaoa_angles`, `max_cut`, `p3` y `gin`— cabe interpretar, siempre como inferencia a partir del nombre y no como dato confirmado por la model card, que se trata de un modelo de aprendizaje automatico disenado para predecir los angulos (parametros variacionales) de un circuito QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema Max-Cut con profundidad p=3, empleando una red neuronal de grafos de tipo GIN (Graph Isomorphism Network).
 
 La relevancia de este tipo de artefacto radica en la optimizacion de circuitos variacionales cuanticos: en lugar de optimizar los angulos de QAOA mediante un bucle clasico costoso (por ejemplo, con COBYLA o SPSA ejecutando el circuito en hardware o simulador), un modelo GIN entrenado puede predecir directamente un conjunto de angulos de partida proximo al optimo, reduciendo el numero de evaluaciones del circuito cuantico. Esto se enmarca en la linea de trabajo de IBM sobre meta-aprendizaje y aprendizaje automatico para la optimizacion de parametros variacionales en computacion cuantica.
 
@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no incluye referencias a otros model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p3.gin
+- Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p3.gin
 - IBM (sitio corporativo): https://www.ibm.com/
 - IBM (version en frances): https://www.ibm.com/fr-fr
 - IBM en Wikipedia (ingles): https://en.wikipedia.org/wiki/IBM

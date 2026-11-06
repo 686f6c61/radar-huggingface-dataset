@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `NekoNeko512/byt5_speller_correction_ru` es un ajuste fino de la familia ByT5 de Google, publicado en HuggingFace bajo licencia Apache 2.0. Por el nombre y la arquitectura de la que deriva, está orientado a la corrección ortográfica en ruso (speller correction), una tarea de secuencia a secuencia en la que el modelo recibe un texto con errores tipográficos u ortográficos y devuelve la versión corregida. ByT5 es un transformer encoder-decoder que opera directamente sobre bytes UTF-8 en lugar de tokens subword, lo que le permite procesar cualquier idioma y cualquier carácter sin vocabulario previo.
+El modelo `NekoNeko512/byt5_speller_correction_ru` es un ajuste fino de la familia ByT5 de Google, publicado en Hugging Face bajo licencia Apache 2.0. Por el nombre y la arquitectura de la que deriva, está orientado a la corrección ortográfica en ruso (speller correction), una tarea de secuencia a secuencia en la que el modelo recibe un texto con errores tipográficos u ortográficos y devuelve la versión corregida. ByT5 es un transformer encoder-decoder que opera directamente sobre bytes UTF-8 en lugar de tokens subword, lo que le permite procesar cualquier idioma y cualquier carácter sin vocabulario previo.
 
 La información publicada por el autor es mínima: la model card solo declara la licencia Apache 2.0 y no incluye detalles sobre el conjunto de entrenamiento, hiperparámetros, métricas de evaluación ni idiomas soportados de forma explícita. El repositorio ocupa 1,2 GB en formato safetensors, un tamaño compatible con una de las variantes medianas de ByT5 (probablemente byT5-base o byT5-large), aunque el autor no especifica cuál.
 
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: no disponible con precisión al no confirmarse la variante. Para byT5-base en fp32 se necesitan aproximadamente 2-3 GB; para byT5-large, en torno a 4-6 GB. El repositorio de 1,2 GB sugiere pesos en fp32 de una variante base o media.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM (RTX 3060, RTX 4060, T4) para inferencia en fp32 de una variante base; A100 o H100 solo justificables para procesamiento por lotes a gran escala.
 - Cabe en GPU de consumo: sí, previsiblemente en RTX 3060/4060/4090 para una variante base; no confirmado para large.
-- Opciones de despliegue: HuggingFace Transformers (pipeline `text2text-generation`), TGI si se convierte, ONNX Runtime. llama.cpp/Ollama no son la vía natural para un encoder-decoder ByT5, aunque existen conversiones GGUF experimentales.
+- Opciones de despliegue: Hugging Face Transformers (pipeline `text2text-generation`), TGI si se convierte, ONNX Runtime. llama.cpp/Ollama no son la vía natural para un encoder-decoder ByT5, aunque existen conversiones GGUF experimentales.
 - Latencia y throughput: no disponibles. ByT5 es más lento que modelos con tokenizador subword por la longitud de secuencia en bytes.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NekoNeko512/byt5_speller_correction_ru | no disponible (ByT5, repo 1,2 GB) | no disponible | Corrección ortográfica en ruso | Apache 2.0 | HuggingFace, 0 descargas |
-| google/byt5-base | ~580 M | 512 tokens (bytes) | Modelo base multilingüe | Apache 2.0 | HuggingFace, ampliamente usado |
-| google/mt5-base | ~580 M | 512 tokens | Seq2seq multilingüe | Apache 2.0 | HuggingFace, ampliamente usado |
-| ai-forever/ruT5-base | ~220 M | 512 tokens | Seq2seq en ruso | MIT | HuggingFace, comunidad rusa activa |
+| NekoNeko512/byt5_speller_correction_ru | no disponible (ByT5, repo 1,2 GB) | no disponible | Corrección ortográfica en ruso | Apache 2.0 | Hugging Face, 0 descargas |
+| google/byt5-base | ~580 M | 512 tokens (bytes) | Modelo base multilingüe | Apache 2.0 | Hugging Face, ampliamente usado |
+| google/mt5-base | ~580 M | 512 tokens | Seq2seq multilingüe | Apache 2.0 | Hugging Face, ampliamente usado |
+| ai-forever/ruT5-base | ~220 M | 512 tokens | Seq2seq en ruso | MIT | Hugging Face, comunidad rusa activa |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NekoNeko512/byt5_speller_correction_ru
+- Hugging Face: https://huggingface.co/NekoNeko512/byt5_speller_correction_ru
 - Paper ByT5 (Xue et al., 2021): https://arxiv.org/abs/2105.13626
-- Modelo base ByT5 en HuggingFace: https://huggingface.co/google/byt5-base
+- Modelo base ByT5 en Hugging Face: https://huggingface.co/google/byt5-base
 - Repositorio Transformers (implementación ByT5): https://github.com/huggingface/transformers

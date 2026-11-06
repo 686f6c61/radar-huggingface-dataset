@@ -74,7 +74,7 @@ La comparativa es orientativa; no se dispone de benchmarks propios de AceGPT-v2-
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/Abu-Dju/AceGPT-v2-8B-Chat-Q8_0-GGUF
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/Abu-Dju/AceGPT-v2-8B-Chat-Q8_0-GGUF
 - Modelo original (safetensors): https://huggingface.co/FreedomIntelligence/AceGPT-v2-8B-Chat
 - Modelo base (sin chat): https://huggingface.co/FreedomIntelligence/AceGPT-v2-8B
 - Página de LLM Explorer con datos de contexto y VRAM: https://llm-explorer.com/model/asas-ai%2FAceGPT-v2-8b-chat,6vQ1P6FyVSCal509XMsLcV

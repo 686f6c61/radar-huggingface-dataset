@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Hikaf143/qwen2.5-7b-instruct-alpaca-ft | 7,6B | 32.768 tokens (base) | Heredada de Qwen2.5-7B-Instruct | HuggingFace, 7 descargas, 0 likes | Sin benchmarks publicados; sin evaluacion de seguridad |
-| Qwen/Qwen2.5-7B-Instruct | 7,6B | 32.768 tokens, hasta 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base con evaluacion publica extensa; referencia natural |
-| meta-llama/Llama-3.1-8B-Instruct | 8,0B | 131.072 tokens | Llama 3.1 Community License | HuggingFace, muy extendido | Mayor contexto nativo; licencia con restricciones para grandes despliegues |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,2B | 32.768 tokens | Apache 2.0 | HuggingFace, muy extendido | Alternativa densa de tamano similar, con soporte de function calling |
+| Hikaf143/qwen2.5-7b-instruct-alpaca-ft | 7,6B | 32.768 tokens (base) | Heredada de Qwen2.5-7B-Instruct | Hugging Face, 7 descargas, 0 likes | Sin benchmarks publicados; sin evaluacion de seguridad |
+| Qwen/Qwen2.5-7B-Instruct | 7,6B | 32.768 tokens, hasta 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base con evaluacion publica extensa; referencia natural |
+| meta-llama/Llama-3.1-8B-Instruct | 8,0B | 131.072 tokens | Llama 3.1 Community License | Hugging Face, muy extendido | Mayor contexto nativo; licencia con restricciones para grandes despliegues |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,2B | 32.768 tokens | Apache 2.0 | Hugging Face, muy extendido | Alternativa densa de tamano similar, con soporte de function calling |
 
 Nota: los datos de los tres modelos comparativos provienen de su documentacion publica, no de la informacion proporcionada sobre el modelo objeto de esta ficha. Para este ultimo no hay resultados de rendimiento que permitan una comparacion cuantitativa.
 
@@ -88,7 +88,7 @@ Nota: los datos de los tres modelos comparativos provienen de su documentacion p
 - Sin evaluacion de seguridad: la model card indica explicitamente que el modelo no ha sido evaluado frente a contenido danino y que no debe desplegarse en produccion sin alineamiento y pruebas de seguridad adicionales.
 - Sin benchmarks: MMLU y MT-Bench estan marcados como pendientes. No hay evidencia publicada de que el ajuste mejore al modelo base, y es posible que introduzca regresiones en razonamiento, codigo o matematicas.
 - Riesgo de alucinacion: heredado de un transformer de 7,6B sin verificacion factual; en tareas de pregunta-respuesta sobre documentos puede generar contenido plausible pero incorrecto. Se recomienda RAG con citas y validacion humana.
-- Restricciones de licencia: el autor declara que el modelo hereda la licencia de Qwen2.5-7B-Instruct (Apache 2.0). Los metadatos de HuggingFace no exponen un campo de licencia propio, por lo que conviene verificar el estado legal antes de un uso comercial.
+- Restricciones de licencia: el autor declara que el modelo hereda la licencia de Qwen2.5-7B-Instruct (Apache 2.0). Los metadatos de Hugging Face no exponen un campo de licencia propio, por lo que conviene verificar el estado legal antes de un uso comercial.
 - Ambiguedad del artefacto: las etiquetas del repositorio indican 4-bit y AWQ, mientras que la model card describe el entrenamiento en QLoRA NF4. No se especifica si los safetensors publicados estan cuantizados, en cuyo caso el ajuste fino posterior o la fusion de adaptadores requeriria pasos adicionales.
 - Discrepancia de identidad: la model card usa el identificador mkd-hika/qwen2.5-7b-instruct-alpaca-ft, distinto del identificador real del repositorio (Hikaf143/qwen2.5-7b-instruct-alpaca-ft).
 - Datos de entrenamiento incompletos: no se documentan epocas, tasa de aprendizaje, tokens totales ni duracion del entrenamiento (marcada como _pending_).
@@ -97,7 +97,7 @@ Nota: los datos de los tres modelos comparativos provienen de su documentacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hikaf143/qwen2.5-7b-instruct-alpaca-ft
+- Modelo en Hugging Face: https://huggingface.co/Hikaf143/qwen2.5-7b-instruct-alpaca-ft
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Informe de evaluacion citado en la model card: eval_results/run_2026-06-09_0540/summary.md (ruta relativa dentro del repositorio, contenido no disponible)
 - Dataset declarado: alpaca_guanaco-llama2-1k, 50.877 filas (sin URL especificada en la model card)

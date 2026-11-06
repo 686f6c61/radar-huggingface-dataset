@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HyeonseokE/smolvla_push_button_ours_1000_10fps | 450.046.176 | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| lerobot/smolvla_base | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| HyeonseokE/smolvla_push_button_ours_3000_10fps | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| HyeonseokE/smolvla_push_button_ours_1000_10fps | 450.046.176 | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| lerobot/smolvla_base | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| HyeonseokE/smolvla_push_button_ours_3000_10fps | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 Este modelo es un fine-tuning de `lerobot/smolvla_base` y pertenece a una familia de variantes del mismo autor para tareas de pulsación y manipulación. No se dispone de datos de rendimiento comparativo.
 
@@ -77,7 +77,7 @@ Este modelo es un fine-tuning de `lerobot/smolvla_base` y pertenece a una famili
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HyeonseokE/smolvla_push_button_ours_1000_10fps
+- Modelo en Hugging Face: https://huggingface.co/HyeonseokE/smolvla_push_button_ours_1000_10fps
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Paper en arXiv: https://arxiv.org/abs/2506.01844
 - Dataset de entrenamiento: https://huggingface.co/datasets/HyeonseokE/push_button_ours_10fps

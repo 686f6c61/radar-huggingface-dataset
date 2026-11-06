@@ -56,8 +56,8 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | LLaVA-Med (base) | 7B/13B | 2048 (aprox.) | Research only | GitHub/HuggingFace |
-| LLaVA-Med-LoRA (este repo) | no disponible | no disponible | no disponible | HuggingFace |
-| BioMedCLIP | 400M | 77 | MIT | HuggingFace |
+| LLaVA-Med-LoRA (este repo) | no disponible | no disponible | no disponible | Hugging Face |
+| BioMedCLIP | 400M | 77 | MIT | Hugging Face |
 
 La comparativa es limitada porque no se conocen los parámetros ni el rendimiento de este adaptador. LLaVA-Med original tiene licencia de uso solo para investigación, lo que probablemente se hereda, pero no está confirmado.
 
@@ -73,7 +73,7 @@ La comparativa es limitada porque no se conocen los parámetros ni el rendimient
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Akandwanaho/llava-med-anatomy-lora
+- Repositorio Hugging Face: https://huggingface.co/Akandwanaho/llava-med-anatomy-lora
 - GitHub de LLaVA-Med: https://github.com/microsoft/LLaVA-Med
 - Paper de LLaVA-Med: https://arxiv.org/abs/2306.00890
 - Paper de estimación de emisiones (referenciado en tags): https://arxiv.org/abs/1910.09700

@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_both-epoch02` | 6,74 mm | 4.096 | Llama 2 | HuggingFace (0 descargas) | Checkpoint época 2/20, unlearning IHL |
-| `locuslab/tofu_ft_llama2-7b` | 6,74 mm | 4.096 | Llama 2 | HuggingFace | Modelo base ajustado con TOFU, sin olvido |
-| `NousResearch/Llama-2-7b-chat-hf` | 6,74 mm | 4.096 | Llama 2 | HuggingFace | Llama-2-7b-chat reempaquetado en formato HF |
-| `meta-llama/Llama-2-7b-chat-hf` | 6,74 mm | 4.096 | Llama 2 | HuggingFace | Modelo original de Meta |
+| `g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_both-epoch02` | 6,74 mm | 4.096 | Llama 2 | Hugging Face (0 descargas) | Checkpoint época 2/20, unlearning IHL |
+| `locuslab/tofu_ft_llama2-7b` | 6,74 mm | 4.096 | Llama 2 | Hugging Face | Modelo base ajustado con TOFU, sin olvido |
+| `NousResearch/Llama-2-7b-chat-hf` | 6,74 mm | 4.096 | Llama 2 | Hugging Face | Llama-2-7b-chat reempaquetado en formato HF |
+| `meta-llama/Llama-2-7b-chat-hf` | 6,74 mm | 4.096 | Llama 2 | Hugging Face | Modelo original de Meta |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_both-epoch02
+- Modelo en Hugging Face: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_both-epoch02
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicialización de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf

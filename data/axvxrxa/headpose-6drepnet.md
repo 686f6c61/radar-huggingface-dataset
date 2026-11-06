@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`AxVxRxA/headpose-6drepnet` es un modelo publicado en HuggingFace por el usuario AxVxRxA bajo licencia MIT. A partir del identificador y del tag `onnx`, se trata de una implementación en formato ONNX del modelo 6DRepNet, una red neuronal diseñada para la estimación de pose de cabeza (head pose estimation) en imágenes, es decir, la predicción de los ángulos de rotación (yaw, pitch, roll) de una cabeza humana. El repositorio tiene un tamaño de 0,2 GB y no registra descargas ni interacciones en el momento de la consulta.
+`AxVxRxA/headpose-6drepnet` es un modelo publicado en Hugging Face por el usuario AxVxRxA bajo licencia MIT. A partir del identificador y del tag `onnx`, se trata de una implementación en formato ONNX del modelo 6DRepNet, una red neuronal diseñada para la estimación de pose de cabeza (head pose estimation) en imágenes, es decir, la predicción de los ángulos de rotación (yaw, pitch, roll) de una cabeza humana. El repositorio tiene un tamaño de 0,2 GB y no registra descargas ni interacciones en el momento de la consulta.
 
-La model card publicada es extremadamente escasa: se limita a declarar la licencia MIT y no incluye información sobre arquitectura, datos de entrenamiento, parámetros, contexto, idiomas ni benchmarks. Tampoco se declara un pipeline de HuggingFace asociado ni se proporcionan métricas de rendimiento. Por tanto, la mayor parte de los datos técnicos de esta ficha no están disponibles y se indican como tales.
+La model card publicada es extremadamente escasa: se limita a declarar la licencia MIT y no incluye información sobre arquitectura, datos de entrenamiento, parámetros, contexto, idiomas ni benchmarks. Tampoco se declara un pipeline de Hugging Face asociado ni se proporcionan métricas de rendimiento. Por tanto, la mayor parte de los datos técnicos de esta ficha no están disponibles y se indican como tales.
 
 La relevancia de este artefacto es limitada y de nicho: se trata de un modelo de visión por computador orientado a una tarea concreta (estimación de orientación de cabeza), útil en aplicaciones de análisis de atención, conducción, interacción humano-máquina o seguimiento facial, pero sin documentación que permita evaluar su calidad, procedencia o condiciones de uso más allá de la licencia MIT.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tarea | Formato | Licencia | Documentación | Disponibilidad |
 |---|---|---|---|---|---|
-| AxVxRxA/headpose-6drepnet | Estimación de pose de cabeza | ONNX | MIT | Muy escasa (solo licencia) | HuggingFace, 0 descargas |
+| AxVxRxA/headpose-6drepnet | Estimación de pose de cabeza | ONNX | MIT | Muy escasa (solo licencia) | Hugging Face, 0 descargas |
 | 6DRepNet (implementación de referencia) | Estimación de pose de cabeza | PyTorch | no disponible en esta ficha | Paper y repositorio públicos | Repositorio académico |
 | Alternativas comerciales de head pose (p. ej., MediaPipe Face Mesh con estimación de pose) | Detección facial y pose aproximada | TensorFlow Lite / otros | Licencias propias | Documentación extensa | Amplia |
 
@@ -79,5 +79,5 @@ No se dispone de datos de benchmarks ni de parámetros para establecer una compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AxVxRxA/headpose-6drepnet
+- Modelo en Hugging Face: https://huggingface.co/AxVxRxA/headpose-6drepnet
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

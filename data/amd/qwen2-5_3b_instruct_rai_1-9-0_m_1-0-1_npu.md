@@ -6,7 +6,7 @@ El modelo `amd/Qwen2.5_3B_Instruct_rai_1.9.0_m_1.0.1_npu` es una distribucion op
 
 El problema que resuelve esta distribucion es la ejecucion local eficiente de un LLM de 3B en hardware de PC con aceleracion NPU, sin depender de GPU dedicada ni de servicios en la nube. AMD empaqueta los pesos en ONNX y aplica las transformaciones necesarias para el stack Ryzen AI, de modo que el desarrollador puede desplegar generacion de texto conversacional en un portatil o mini-PC con NPU. El repositorio ocupa 2,5 GB, coherente con pesos en precision reducida (probablemente int8 o similar) para inferencia en NPU.
 
-La relevancia actual radica en el interes creciente por la inferencia en el dispositivo (on-device) y en la NPU como acelerador de bajo consumo. Esta ficha cubre exclusivamente la informacion disponible en la model card de HuggingFace; los detalles de arquitectura del modelo base Qwen2.5 3B no se reproducen aqui salvo como contexto general, y muchos parametros tecnicos especificos de esta conversion no estan documentados en la informacion proporcionada.
+La relevancia actual radica en el interes creciente por la inferencia en el dispositivo (on-device) y en la NPU como acelerador de bajo consumo. Esta ficha cubre exclusivamente la informacion disponible en la model card de Hugging Face; los detalles de arquitectura del modelo base Qwen2.5 3B no se reproducen aqui salvo como contexto general, y muchos parametros tecnicos especificos de esta conversion no estan documentados en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -62,15 +62,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/Qwen2.5_3B_Instruct_rai_1.9.0_m_1.0.1_npu | ~3B | No disponible | ONNX / Ryzen AI 1.9.0 (NPU) | Apache 2.0 | Gated en HuggingFace |
-| Qwen2.5 3B Instruct (original) | ~3B | No disponible en esta ficha | Safetensors, GGUF, etc. | Apache 2.0 | Publico en HuggingFace |
+| amd/Qwen2.5_3B_Instruct_rai_1.9.0_m_1.0.1_npu | ~3B | No disponible | ONNX / Ryzen AI 1.9.0 (NPU) | Apache 2.0 | Gated en Hugging Face |
+| Qwen2.5 3B Instruct (original) | ~3B | No disponible en esta ficha | Safetensors, GGUF, etc. | Apache 2.0 | Publico en Hugging Face |
 | Otros LLM de ~3B para on-device | Variable | Variable | Variable | Variable | Variable |
 
 La comparativa se limita al modelo base del que deriva esta conversion, ya que la informacion proporcionada no incluye datos de rendimiento que permitan contrastar con alternativas de la misma categoria. No se dispone de cifras de benchmarks para ninguna de las filas.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar el modelo.
 - Idiomas: la model card solo declara ingles; el rendimiento en castellano u otros idiomas no esta garantizado ni documentado.
 - Conversion especifica de hardware: los pesos ONNX estan compilados para el runtime Ryzen AI 1.9.0 y la NPU; no son portables a otros aceleradores sin reconversion.
 - Riesgo de alucinacion inherente a los LLM de 3B, especialmente en tareas de conocimiento factual y razonamiento complejo.
@@ -81,5 +81,5 @@ La comparativa se limita al modelo base del que deriva esta conversion, ya que l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Qwen2.5_3B_Instruct_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/Qwen2.5_3B_Instruct_rai_1.9.0_m_1.0.1_npu
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

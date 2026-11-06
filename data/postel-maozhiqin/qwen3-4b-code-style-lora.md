@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|---|
 | Qwen3-4B Code Style LoRA (este) | Adaptador LoRA SFT sobre Qwen3-4B | no disponible (base 4B) | no disponible (entreno 2048) | Apache-2.0 | Especializado en formato de código Python; 129 muestras; sin benchmarks |
 | Qwen/Qwen3-4B (base) | Modelo completo | 4B (dato no confirmado en la información) | no disponible en la información | Apache-2.0 | Capacidad general; sin el sesgo de formato del adaptador |
-| Adaptadores LoRA de estilo/código en HuggingFace | Adaptadores PEFT | variable | variable | variable | No se dispone de datos concretos de alternativas comparables en la información proporcionada |
+| Adaptadores LoRA de estilo/código en Hugging Face | Adaptadores PEFT | variable | variable | variable | No se dispone de datos concretos de alternativas comparables en la información proporcionada |
 
 No se dispone de información suficiente para comparar rendimiento con alternativas de la misma categoría; la comparación se limita a aspectos estructurales y de licencia.
 
@@ -85,7 +85,7 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/postel-MaoZhiqin/qwen3-4b-code-style-lora
+- Modelo en Hugging Face: https://huggingface.co/postel-MaoZhiqin/qwen3-4b-code-style-lora
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - GitHub del autor: https://github.com/re-ITRT
 - Repositorio de entrenamiento con `train/train.json`: no disponible como enlace directo en la información proporcionada (el autor lo menciona sin URL)

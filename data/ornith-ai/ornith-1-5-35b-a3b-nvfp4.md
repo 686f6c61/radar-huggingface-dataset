@@ -21,7 +21,7 @@ Este checkpoint concreto, etiquetado como NVFP4, es una versión cuantizada con 
 
 ## Arquitectura y entrenamiento
 
-Ornith-1.5-35B-A3B emplea una arquitectura de mezcla de expertos (MoE) que activa solo unos 3 mil millones de parámetros por token, lo que permite un equilibrio entre capacidad y eficiencia computacional. El modelo está basado en la arquitectura Qwen3.5-MoE, según los tags de HuggingFace, e incorpora capacidades multimodales (image-text-to-text), aunque su pipeline principal es text-generation.
+Ornith-1.5-35B-A3B emplea una arquitectura de mezcla de expertos (MoE) que activa solo unos 3 mil millones de parámetros por token, lo que permite un equilibrio entre capacidad y eficiencia computacional. El modelo está basado en la arquitectura Qwen3.5-MoE, según los tags de Hugging Face, e incorpora capacidades multimodales (image-text-to-text), aunque su pipeline principal es text-generation.
 
 El entrenamiento se basa en un bucle de auto-mejora de extremo a extremo. A diferencia de la versión 1.0, que se centraba en optimizar scaffolds y rollouts, la 1.5 optimiza conjuntamente la generación de tareas, la construcción de scaffolds y los rollouts de soluciones mediante aprendizaje por refuerzo. El modelo propone nuevas tareas, genera scaffolds específicos para cada tarea y produce soluciones que se utilizan como datos de entrenamiento, creando un ciclo continuo de mejora. Este enfoque busca reducir la dependencia de tareas curadas manualmente y de harnesses diseñados a mano.
 
@@ -69,10 +69,10 @@ No se dispone de datos adicionales de benchmarks como MMLU, HumanEval o GSM8K en
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento en SWE-bench Verified | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.5-35B-A3B | 35B MoE (3B activos) | no disponible | MIT | 79 | HuggingFace |
-| Qwen3.6-35B-A3B | 35B MoE (3B activos) | no disponible | Apache 2.0 (presumible) | 73.4 | HuggingFace |
-| Gemma-4-31B | 31B denso | no disponible | Gemma Terms (permisiva) | 52 | HuggingFace |
-| Muse-Glimmer-30B | 30B denso | no disponible | no disponible | 76 | HuggingFace |
+| Ornith-1.5-35B-A3B | 35B MoE (3B activos) | no disponible | MIT | 79 | Hugging Face |
+| Qwen3.6-35B-A3B | 35B MoE (3B activos) | no disponible | Apache 2.0 (presumible) | 73.4 | Hugging Face |
+| Gemma-4-31B | 31B denso | no disponible | Gemma Terms (permisiva) | 52 | Hugging Face |
+| Muse-Glimmer-30B | 30B denso | no disponible | no disponible | 76 | Hugging Face |
 
 Ornith-1.5 supera a Qwen3.6-35B-A3B en los benchmarks de codificación y agénticos disponibles, y ofrece una ventaja considerable sobre Gemma-4-31B. Muse-Glimmer-30B, aunque denso, logra un rendimiento cercano en SWE-bench Verified, pero Ornith-1.5 lo supera en Terminal-Bench. La licencia MIT es más permisiva que las de muchos competidores.
 
@@ -88,7 +88,7 @@ Ornith-1.5 supera a Qwen3.6-35B-A3B en los benchmarks de codificación y agénti
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-NVFP4)
+- [Modelo en Hugging Face](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-NVFP4)
 - [Modelo base Ornith-1.5-35B-A3B](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
 - [Colección Ornith-1.5](https://huggingface.co/collections/ornith-ai/ornith-15)
 - [Blog de Ornith sobre Ornith-1.5](https://ornith.ai/ornith_1_5.html)

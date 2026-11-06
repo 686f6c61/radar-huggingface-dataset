@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`sasa4life/wevx` es un repositorio de modelo alojado en HuggingFace por el usuario `sasa4life`, publicado el 24 de octubre de 2026 bajo licencia MIT. En el momento de redactar esta ficha, el repositorio no contiene model card descriptiva: el README se limita a la declaracion de licencia (`license: mit`), sin texto explicativo, sin descripcion de arquitectura y sin indicacion de proposito. Tampoco se declara pipeline de inferencia, idiomas soportados ni conjuntos de datos de entrenamiento.
+`sasa4life/wevx` es un repositorio de modelo alojado en Hugging Face por el usuario `sasa4life`, publicado el 24 de octubre de 2026 bajo licencia MIT. En el momento de redactar esta ficha, el repositorio no contiene model card descriptiva: el README se limita a la declaracion de licencia (`license: mit`), sin texto explicativo, sin descripcion de arquitectura y sin indicacion de proposito. Tampoco se declara pipeline de inferencia, idiomas soportados ni conjuntos de datos de entrenamiento.
 
-La relevancia de esta ficha es, por tanto, limitada y de caracter descriptivo: se trata de un artefacto sin documentacion publica asociada, con cero descargas y cero interacciones registradas en HuggingFace, lo que impide verificar que existan pesos reales, que el modelo sea funcional o que la licencia MIT se aplique a materiales efectivamente distribuidos. No hay evidencia publica de que el identificador corresponda a un modelo entrenado en lugar de a un repositorio vacio o en fase de preparacion.
+La relevancia de esta ficha es, por tanto, limitada y de caracter descriptivo: se trata de un artefacto sin documentacion publica asociada, con cero descargas y cero interacciones registradas en Hugging Face, lo que impide verificar que existan pesos reales, que el modelo sea funcional o que la licencia MIT se aplique a materiales efectivamente distribuidos. No hay evidencia publica de que el identificador corresponda a un modelo entrenado en lugar de a un repositorio vacio o en fase de preparacion.
 
-Las busquedas web realizadas con el identificador `sasa4life/wevx` unicamente devuelven la propia pagina de HuggingFace y resultados no relacionados (generadores de modelos de moda para comercio electronico y detectores de imagenes sinteticas), que no guardan ninguna relacion con este repositorio y no deben interpretarse como documentacion del modelo. Cualquier evaluacion tecnica seria requiere contactar con el autor o esperar a que publique la model card y los pesos.
+Las busquedas web realizadas con el identificador `sasa4life/wevx` unicamente devuelven la propia pagina de Hugging Face y resultados no relacionados (generadores de modelos de moda para comercio electronico y detectores de imagenes sinteticas), que no guardan ninguna relacion con este repositorio y no deben interpretarse como documentacion del modelo. Cualquier evaluacion tecnica seria requiere contactar con el autor o esperar a que publique la model card y los pesos.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Las busquedas web realizadas con el identificador `sasa4life/wevx` unicamente de
 
 No se ha publicado informacion sobre la arquitectura en la model card del repositorio. El README unicamente contiene la etiqueta de licencia (`license: mit`) y no incluye descripcion del tipo de red (transformer, mezcla de expertos, SSM, hibrida u otra), del numero de parametros, de la ventana de contexto ni de mecanismos de atencion o decodificacion empleados.
 
-Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el volumen de tokens utilizados, la composicion del corpus, la existencia de fases de ajuste supervisado, RLHF o DPO, y cualquier innovacion tecnica asociada. Los metadatos de HuggingFace no declaran pipeline ni libreria, lo que impide inferir incluso el framework de inferencia previsto.
+Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el volumen de tokens utilizados, la composicion del corpus, la existencia de fases de ajuste supervisado, RLHF o DPO, y cualquier innovacion tecnica asociada. Los metadatos de Hugging Face no declaran pipeline ni libreria, lo que impide inferir incluso el framework de inferencia previsto.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No disponible. No puede establecerse una categoria de comparacion (tamano, tarea
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sasa4life/wevx | no disponible | no disponible | no disponible | MIT | repositorio HuggingFace sin documentacion |
+| sasa4life/wevx | no disponible | no disponible | no disponible | MIT | repositorio Hugging Face sin documentacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No disponible. No puede establecerse una categoria de comparacion (tamano, tarea
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sasa4life/wevx
+- Repositorio en Hugging Face: https://huggingface.co/sasa4life/wevx
 - Model card (README): https://huggingface.co/sasa4life/wevx/blob/main/README.md
 - Resultados de busqueda no relacionados (generacion de modelos de moda): https://www.wearview.co/
 - Resultados de busqueda no relacionados (detector de modelos generados): https://pixivera.com/ai-generated-model-detector.html

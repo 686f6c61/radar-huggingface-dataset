@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparativo para este modelo, por lo que l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kanha-AI/kanha-minicpm5-1b-grounded-matched-2ep-20260910-MLC
+- Modelo en Hugging Face: https://huggingface.co/Kanha-AI/kanha-minicpm5-1b-grounded-matched-2ep-20260910-MLC
 - Checkpoint base: https://huggingface.co/Kanha-AI/kanha-minicpm5-1b-grounded-matched-2ep-20260910
 - Revision inmutable del checkpoint base: https://huggingface.co/Kanha-AI/kanha-minicpm5-1b-grounded-matched-2ep-20260910/tree/53c5bb55c5e2d3ceaeea933e4293735435e57bf1
 - Manifiesto de procedencia citado en la model card: `research/export-manifest.json` dentro del repositorio del modelo

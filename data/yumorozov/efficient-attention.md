@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yumorozov/efficient-attention` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre mecanismos de atencion eficiente. El autor (Nikolai Morozov, usuario `yumorozov`, descrito en su perfil de HuggingFace como productor musical reconvertido a ML) publica en este repositorio un unico artefacto principal, `summary.md`, acompanado de un `README.md`. La model card es explicita al respecto: el contenido son planes, hipotesis y referencias bibliograficas, y no se reclama ninguna mejora de benchmark, ablation completada, codigo liberado ni checkpoint entrenado.
+`yumorozov/efficient-attention` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre mecanismos de atencion eficiente. El autor (Nikolai Morozov, usuario `yumorozov`, descrito en su perfil de Hugging Face como productor musical reconvertido a ML) publica en este repositorio un unico artefacto principal, `summary.md`, acompanado de un `README.md`. La model card es explicita al respecto: el contenido son planes, hipotesis y referencias bibliograficas, y no se reclama ninguna mejora de benchmark, ablation completada, codigo liberado ni checkpoint entrenado.
 
 El repositorio aparece etiquetado con `safetensors`, `transformer`, `research-notes` y `efficient-attention`, y la plataforma reporta un total de 33.088 parametros en pesos safetensors con un tamano de repositorio de 0,0 GB. Esa cifra (aproximadamente 33 mil parametros) es incompatible con cualquier modelo transformer funcional para generacion de texto: se trata de un artefacto residual o de un fichero de pesos simbolico, no de un modelo utilizable en inferencia. No existe pipeline declarado, no se especifican idiomas y no hay checkpoint publicable.
 
@@ -13,7 +13,7 @@ Por tanto, la relevancia de esta ficha es acotada: sirve para documentar el repo
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible (el repositorio no define arquitectura de modelo; solo etiquetas de metadatos `transformer` y `efficient-attention`) |
-| Parametros totales | 33.088 (segun pesos safetensors reportados por HuggingFace) |
+| Parametros totales | 33.088 (segun pesos safetensors reportados por Hugging Face) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
@@ -71,7 +71,7 @@ No disponible en la categoria de "modelos", porque el repositorio no es un model
 
 | Referencia | Tipo | Cobertura | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `yumorozov/efficient-attention` | Notas de investigacion | Plan, hipotesis y referencias; sin resultados | MIT | HuggingFace, 14 descargas |
+| `yumorozov/efficient-attention` | Notas de investigacion | Plan, hipotesis y referencias; sin resultados | MIT | Hugging Face, 14 descargas |
 | Efficient Attention Mechanisms for Large Language Models (arXiv 2507.19595v3) | Encuesta tecnica | Metodos de atencion lineal y dispersa, fundamentos algoritmicos | no disponible en la informacion proporcionada | arXiv |
 | Efficient attention mechanisms for large language models (Patterns, Cell) | Encuesta revisada por pares | Atencion lineal y dispersa, consideraciones de hardware e integracion en LLM preentrenados | no disponible en la informacion proporcionada | Cell / ScienceDirect |
 
@@ -90,9 +90,9 @@ No disponible en la categoria de "modelos", porque el repositorio no es un model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yumorozov/efficient-attention
-- Perfil del autor en HuggingFace: https://huggingface.co/yumorozov
-- Modelos del autor en HuggingFace: https://huggingface.co/yumorozov/models
+- Repositorio en Hugging Face: https://huggingface.co/yumorozov/efficient-attention
+- Perfil del autor en Hugging Face: https://huggingface.co/yumorozov
+- Modelos del autor en Hugging Face: https://huggingface.co/yumorozov/models
 - Efficient Attention Mechanisms for Large Language Models (arXiv): https://arxiv.org/html/2507.19595v3
 - Efficient attention mechanisms for large language models (Patterns, Cell): https://www.cell.com/patterns/fulltext/S2666-3899(26)00103-0
 - Efficient attention mechanisms for large language models (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S2666389926001030

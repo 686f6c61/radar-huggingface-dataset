@@ -6,7 +6,7 @@ MOSS-Transcribe-Diarize 0.9B es un modelo de comprensión de audio de extremo a 
 
 El modelo tiene 908 millones de parámetros (0.9B) y está publicado bajo licencia Apache-2.0. Según su model card, soporta transcripción y diarización en más de 50 idiomas y es capaz de procesar grabaciones de audio de hasta 90 minutos de duración en inferencia de una sola pasada. Además, admite el uso de *hotwords* personalizados y la generación de anotaciones de eventos acústicos, lo que lo hace especialmente útil para reuniones, llamadas, podcasts, entrevistas y vídeos. El modelo ganó el primer puesto en el 2nd MLC-SLM Challenge celebrado en INTERSPEECH 2026, compitiendo en 14 idiomas.
 
-Aunque el repositorio de HuggingFace incluye código remoto personalizado para cargar el modelo con `trust_remote_code=True`, no se han publicado detalles sobre la arquitectura interna (tipo de transformer, capas, etc.) ni sobre el proceso de entrenamiento (datos, tokens, método de alineación). Esta falta de transparencia limita la reproducibilidad, pero el modelo está disponible públicamente y puede desplegarse con vLLM y SGLang.
+Aunque el repositorio de Hugging Face incluye código remoto personalizado para cargar el modelo con `trust_remote_code=True`, no se han publicado detalles sobre la arquitectura interna (tipo de transformer, capas, etc.) ni sobre el proceso de entrenamiento (datos, tokens, método de alineación). Esta falta de transparencia limita la reproducibilidad, pero el modelo está disponible públicamente y puede desplegarse con vLLM y SGLang.
 
 ## Especificaciones tecnicas
 
@@ -17,13 +17,13 @@ Aunque el repositorio de HuggingFace incluye código remoto personalizado para c
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible (soporta audio de hasta 90 minutos en una sola pasada) |
 | Tipos de cuantizacion | No disponible (pesos en safetensors, probablemente fp32 o fp16) |
-| Idiomas soportados | Ingles y chino (segun metadatos de HuggingFace); la model card indica transcripcion en mas de 50 idiomas |
+| Idiomas soportados | Ingles y chino (segun metadatos de Hugging Face); la model card indica transcripcion en mas de 50 idiomas |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles tecnicos sobre la arquitectura interna del modelo. La model card lo describe como un "modelo de comprension de audio de extremo a extremo" que combina transcripcion y diarizacion en un solo paso, pero no especifica si se basa en un transformer decoder, en una arquitectura encoder-decoder, ni el numero de capas o dimensiones. El repositorio de HuggingFace incluye codigo remoto personalizado para cargar el modelo con `trust_remote_code=True`, lo que sugiere que la implementacion no esta estandarizada en la libreria Transformers.
+No se han publicado detalles tecnicos sobre la arquitectura interna del modelo. La model card lo describe como un "modelo de comprension de audio de extremo a extremo" que combina transcripcion y diarizacion en un solo paso, pero no especifica si se basa en un transformer decoder, en una arquitectura encoder-decoder, ni el numero de capas o dimensiones. El repositorio de Hugging Face incluye codigo remoto personalizado para cargar el modelo con `trust_remote_code=True`, lo que sugiere que la implementacion no esta estandarizada en la libreria Transformers.
 
 Tampoco se ha proporcionado informacion sobre el proceso de entrenamiento: no se conocen el numero de tokens de entrenamiento, la composicion del dataset, ni si se utilizaron tecnicas de RLHF, DPO o supervision directa. La unica referencia al entrenamiento es la mencion de que el modelo fue entrenado para tareas de transcripcion larga, diarizacion y deteccion de eventos acusticos, pero sin datos cuantitativos.
 
@@ -34,7 +34,7 @@ Tampoco se ha proporcionado informacion sobre el proceso de entrenamiento: no se
 - Generacion de marcas de tiempo: cada segmento transcrito incluye informacion temporal alineada.
 - Anotacion de eventos acusticos: puede emitir anotaciones sobre eventos no verbales (risas, aplausos, ruidos, etc.) si se solicita mediante prompt.
 - Soporte de *hotwords* personalizados: permite indicar terminos especificos del dominio para mejorar la transcripcion de vocabulario especializado.
-- Capacidades multilingues: segun la model card, soporta transcripcion y diarizacion en mas de 50 idiomas, aunque los metadatos de HuggingFace solo listan ingles y chino.
+- Capacidades multilingues: segun la model card, soporta transcripcion y diarizacion en mas de 50 idiomas, aunque los metadatos de Hugging Face solo listan ingles y chino.
 - Generacion guiada por prompt: admite instrucciones personalizadas de transcripcion, como el formato de salida o la inclusion de anotaciones acusticas.
 
 ## Casos de uso
@@ -89,7 +89,7 @@ En terminos de caracteristicas, MOSS se diferencia por ser un modelo abierto (Ap
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize
+- Modelo en Hugging Face: https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize
 - Repositorio GitHub: https://github.com/OpenMOSS/MOSS-Transcribe-Diarize
 - Paper en arXiv: https://arxiv.org/abs/2601.01554
 - Receta de despliegue con vLLM: https://recipes.vllm.ai/OpenMOSS-Team/MOSS-Transcribe-Diarize

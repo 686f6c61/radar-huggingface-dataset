@@ -91,7 +91,7 @@ SemanticRepair-270M es notablemente más pequeño que Qwen3-1.7B y, según los d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gramscii/SemanticRepair-270M
+- Modelo en Hugging Face: https://huggingface.co/Gramscii/SemanticRepair-270M
 - Modelo base: https://huggingface.co/google/gemma-3-270m
 - Guía de Gemma 3 270M en local: https://localaimaster.com/models/gemma-3-270m
 - Implementación de Gemma 270M desde cero: https://github.com/FnT-ai/gemma-270m-from-scratch

@@ -109,6 +109,6 @@ La model card situa a Nanbeige4.1-3B por encima de Qwen3-4B-2507 y, en varios be
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nanbeige/Nanbeige4.1-3B
+- Hugging Face: https://huggingface.co/Nanbeige/Nanbeige4.1-3B
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4-3B-Base
 - Informe tecnico (arXiv): https://arxiv.org/abs/2602.13367

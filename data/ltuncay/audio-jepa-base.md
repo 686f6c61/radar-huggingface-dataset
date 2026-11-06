@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Audio-JEPA-base es un codificador de audio auto-supervisado desarrollado por ltuncay (Ludovic Tuncay) y publicado en HuggingFace bajo licencia MIT. Se trata de la exportación a `transformers` del encoder estudiante de un experimento Audio-JEPA entrenado sobre AudioSet durante 200.000 pasos de optimizador, con 85.484.928 parámetros. Su función no es generar texto ni transcribir, sino producir embeddings de audio de 768 dimensiones, tanto a nivel de clip completo como a nivel de trama, listos para alimentar cabezas de clasificación o modelos posteriores.
+Audio-JEPA-base es un codificador de audio auto-supervisado desarrollado por ltuncay (Ludovic Tuncay) y publicado en Hugging Face bajo licencia MIT. Se trata de la exportación a `transformers` del encoder estudiante de un experimento Audio-JEPA entrenado sobre AudioSet durante 200.000 pasos de optimizador, con 85.484.928 parámetros. Su función no es generar texto ni transcribir, sino producir embeddings de audio de 768 dimensiones, tanto a nivel de clip completo como a nivel de trama, listos para alimentar cabezas de clasificación o modelos posteriores.
 
 La arquitectura es un transformer de 12 capas con 768 dimensiones y 12 cabezas de atención, que opera sobre un espectrograma mel de 128 bandas troceado en parches de 16 bandas por 16 tramas temporales, con embeddings posicionales sinusoidales y MLP con GELU. El modelo aprende prediciendo las representaciones latentes de parches enmascarados generadas por un profesor con media móvil exponencial (EMA), siguiendo la familia de métodos JEPA. La entrada es audio mono a 16 kHz.
 
@@ -92,12 +92,12 @@ Comparativa centrada en los modelos incluidos en la evaluacion X-ARES. Los recue
 
 | Modelo | Parametros | Contexto de entrada | X-ARES Global Mean | X-ARES Mean of Means | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Audio-JEPA-base (esta ficha) | 85,5 M | Audio mono 16 kHz, espectrograma mel de 128 bandas | 31,18 | 33,17 | MIT | HuggingFace, requiere `trust_remote_code` |
-| BEST-RQ-2.2-base | No disponible | No disponible | 56,11 | 57,80 | No disponible | HuggingFace (ltuncay/BEST-RQ-2.2-base) |
-| BEST-RQ-2.1-base | No disponible | No disponible | 54,59 | 56,07 | No disponible | HuggingFace (ltuncay/BEST-RQ-2.1-base) |
-| Whisper-base | No disponible | No disponible | 42,75 | 38,82 | No disponible | HuggingFace (openai/whisper-base) |
-| wav2vec2-large-100k-voxpopuli | No disponible | No disponible | 37,84 | 35,42 | No disponible | HuggingFace (facebook/wav2vec2-large-100k-voxpopuli) |
-| data2vec-audio-base | No disponible | No disponible | 37,83 | 29,76 | No disponible | HuggingFace (facebook/data2vec-audio-base) |
+| Audio-JEPA-base (esta ficha) | 85,5 M | Audio mono 16 kHz, espectrograma mel de 128 bandas | 31,18 | 33,17 | MIT | Hugging Face, requiere `trust_remote_code` |
+| BEST-RQ-2.2-base | No disponible | No disponible | 56,11 | 57,80 | No disponible | Hugging Face (ltuncay/BEST-RQ-2.2-base) |
+| BEST-RQ-2.1-base | No disponible | No disponible | 54,59 | 56,07 | No disponible | Hugging Face (ltuncay/BEST-RQ-2.1-base) |
+| Whisper-base | No disponible | No disponible | 42,75 | 38,82 | No disponible | Hugging Face (openai/whisper-base) |
+| wav2vec2-large-100k-voxpopuli | No disponible | No disponible | 37,84 | 35,42 | No disponible | Hugging Face (facebook/wav2vec2-large-100k-voxpopuli) |
+| data2vec-audio-base | No disponible | No disponible | 37,83 | 29,76 | No disponible | Hugging Face (facebook/data2vec-audio-base) |
 
 Lectura de la comparativa: Audio-JEPA-base queda por debajo de todos los baselines en la media global, pero supera a data2vec, a wav2vec 2.0 y a Whisper en la categoria de musica (44,27 frente a 23,24, 34,94 y 38,67 respectivamente), y supera a data2vec tambien en la media equilibrada por categorias. La recomendacion explicita del autor es usar BEST-RQ-2.2-base si el objetivo es el mejor resultado X-ARES dentro de esta familia.
 
@@ -118,7 +118,7 @@ Lectura de la comparativa: Audio-JEPA-base queda por debajo de todos los baselin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ltuncay/Audio-JEPA-base
+- Modelo en Hugging Face: https://huggingface.co/ltuncay/Audio-JEPA-base
 - Modelo original ICME 2025 (32 kHz, 100.000 pasos): https://huggingface.co/ltuncay/Audio-JEPA
 - Modelo recomendado por el autor, BEST-RQ-2.2-base: https://huggingface.co/ltuncay/BEST-RQ-2.2-base
 - BEST-RQ-2.1-base: https://huggingface.co/ltuncay/BEST-RQ-2.1-base

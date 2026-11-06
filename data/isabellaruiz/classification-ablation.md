@@ -41,7 +41,7 @@ Los siguientes casos de uso son hipotéticos y se enmarcan estrictamente en el �
 - Pruebas de humo en pipelines de entrenamiento: el modelo permite comprobar que el código de carga de pesos, la configuración de arquitectura y el script de inferencia funcionan antes de lanzar un entrenamiento costoso. Se ejecuta `python predict.py --help` y se inspecciona el bloque `__main__` para validar el flujo.
 - Ablación de componentes arquitectónicos: al ser un prototipo pequeño, resulta adecuado para estudiar el impacto de la atención multi-query, la fusión Tucker o la activación Mish entrenando múltiples variantes con la misma semilla y presupuesto de cómputo.
 - Comparación de inicializaciones aleatorias: el checkpoint de inicialización puede sustituirse por pesos aleatorios para analizar la sensibilidad del entrenamiento a la semilla en un entorno controlado.
-- Desarrollo de adaptadores de carga personalizados: como la implementación es custom, los desarrolladores pueden usar este repositorio para escribir adaptadores que permitan cargar el modelo con APIs genéricas como HuggingFace Transformers o PyTorch.
+- Desarrollo de adaptadores de carga personalizados: como la implementación es custom, los desarrolladores pueden usar este repositorio para escribir adaptadores que permitan cargar el modelo con APIs genéricas como Hugging Face Transformers o PyTorch.
 - Educación en diseño de modelos: sirve como ejemplo mínimo de una arquitectura con componentes modernos (RMSNorm, Mish, multi-query attention) para fines docentes o de investigación formativa.
 - Base para experimentos de ablación con datos propios: el autor recomienda evaluar con un split etiquetado específico de la tarea, reportar la métrica en al menos tres semillas e incluir un baseline de capacidad equivalente. El modelo puede usarse como punto de partida para ese tipo de estudio.
 
@@ -68,11 +68,11 @@ No disponible. No se han encontrado modelos comparables en la misma categoría, 
 - Riesgo de alucinación: no aplica directamente, pero cualquier salida del script predictivo será aleatoria o indeterminada, no informativa.
 - No existe soporte multilingüe documentado.
 - La licencia BSD-3-Clause permite uso comercial, pero el modelo no ofrece garantías de funcionamiento ni de rendimiento.
-- La implementación es personalizada y no se integra con las APIs estándar de HuggingFace sin un adaptador explícito, lo que dificulta su uso práctico.
+- La implementación es personalizada y no se integra con las APIs estándar de Hugging Face sin un adaptador explícito, lo que dificulta su uso práctico.
 - La etiqueta "giant" en la arquitectura es engañosa: el modelo tiene solo 49.600 parámetros, muy lejos de cualquier modelo "gigante" convencional.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/isabellaruiz/classification-ablation
+- Repositorio en Hugging Face: https://huggingface.co/isabellaruiz/classification-ablation
 - Perfil de GitHub del autor: https://github.com/isabellaruiz-ai
 - No se han encontrado papers, blogs, demos ni otros enlaces relevantes en la búsqueda web.

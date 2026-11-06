@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mae-retrieval es un repositorio publicado por el usuario IlhamHww en HuggingFace que contiene una implementación propia y compacta en PyTorch de un modelo denominado Mae orientado a tareas de retrieval (recuperación de información). El propio autor lo describe explícitamente como una configuración "base" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, y no como un modelo preentrenado listo para producción.
+mae-retrieval es un repositorio publicado por el usuario IlhamHww en Hugging Face que contiene una implementación propia y compacta en PyTorch de un modelo denominado Mae orientado a tareas de retrieval (recuperación de información). El propio autor lo describe explícitamente como una configuración "base" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, y no como un modelo preentrenado listo para producción.
 
 El checkpoint incluido, model.safetensors, es una inicialización válida para pruebas, no un modelo entrenado ni auditado. El repositorio tiene 0 descargas y 1 like, un tamaño de 0,0 GB y un total de 49.600 parámetros reales según los metadatos de safetensors, lo que lo sitúa muy lejos de cualquier modelo de retrieval comercial.
 
@@ -87,6 +87,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IlhamHww/mae-retrieval
+- Hugging Face: https://huggingface.co/IlhamHww/mae-retrieval
 
 Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces recuperados correspondían a documentación de YouTube Shorts y no guardan relación con mae-retrieval. Por tanto, no hay papers, blogs, repositorios ni demos adicionales que enlazar.

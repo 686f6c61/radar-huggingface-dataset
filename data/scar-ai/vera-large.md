@@ -79,10 +79,10 @@ Todas las puntuaciones están corregidas por azar (0 es adivinación aleatoria, 
 
 | Modelo | Parámetros | Contexto | Full (JDI 0.4.1) | ECE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| vera-large | 25,6B | no disponible | 65,26 | 0,051 | apache-2.0 | HuggingFace (scar-ai/vera-large) |
+| vera-large | 25,6B | no disponible | 65,26 | 0,051 | apache-2.0 | Hugging Face (scar-ai/vera-large) |
 | vLLM-SR d3 | 26,1B | no disponible | 67,15 | 0,043 | no disponible | no disponible |
 | Jev 1.14 | no disponible | no disponible | 60,24 | 0,080 | no disponible | no disponible |
-| vera-core-2 | 1,9B | no disponible | 30,60 | 0,046 | no disponible | HuggingFace (scar-ai/vera-core-2) |
+| vera-core-2 | 1,9B | no disponible | 30,60 | 0,046 | no disponible | Hugging Face (scar-ai/vera-core-2) |
 
 Frente a vLLM-SR d3, vera-large es ligeramente inferior en Full (65,26 frente a 67,15) y en ECE (0,051 frente a 0,043), pero superior en Public (67,75 frente a 65,45) y en las áreas de language, retrieval y arts. Frente a Jev 1.14, vera-large supera el Full en más de cinco puntos y mejora la calibración. Frente a vera-core-2, el salto de escala (1,9B a 25,6B) se traduce en más del doble de puntuación Full, aunque vera-core-2 mantiene un ECE ligeramente mejor.
 
@@ -101,7 +101,7 @@ Frente a vLLM-SR d3, vera-large es ligeramente inferior en Full (65,26 frente a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scar-ai/vera-large
+- Modelo en Hugging Face: https://huggingface.co/scar-ai/vera-large
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - vera-core-2: https://huggingface.co/scar-ai/vera-core-2
 - Board público Jev Decision Index: https://huggingface.co/spaces/multimodalart/jev-decision-index

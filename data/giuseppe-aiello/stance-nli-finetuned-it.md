@@ -5,7 +5,7 @@ El modelo `giuseppe-aiello/stance-nli-finetuned-it` es un clasificador de postur
 
 La relevancia de este modelo radica en que permite automatizar el análisis de la opinión pública en redes sociales sobre temas políticos candentes, utilizando un enfoque de entailment-as-classification que transforma la detección de postura en una tarea de NLI. Aunque el dataset de entrenamiento es pequeño (400 ejemplos etiquetados manualmente), el fine-tuning mejora significativamente la precisión respecto al modelo base sin ajustar, pasando de un 47% a un 70% de accuracy en el conjunto de test.
 
-El modelo se distribuye con licencia MIT, está diseñado para usarse mediante el pipeline de `transformers` de HuggingFace y está pensado para investigadores y desarrolladores que trabajen con análisis de sentimiento y opinión política en italiano.
+El modelo se distribuye con licencia MIT, está diseñado para usarse mediante el pipeline de `transformers` de Hugging Face y está pensado para investigadores y desarrolladores que trabajen con análisis de sentimiento y opinión política en italiano.
 
 ## Especificaciones técnicas
 | Parametro | Valor |
@@ -22,7 +22,7 @@ El modelo se distribuye con licencia MIT, está diseñado para usarse mediante e
 ## Arquitectura y entrenamiento
 El modelo parte de `MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7`, un DeBERTa-v3 entrenado para NLI multilingüe con 278 millones de parámetros. La arquitectura DeBERTa-v3 incorpora atención dispersa y una mejora sobre la decodificación posicional, lo que lo hace eficiente para tareas de clasificación de texto. El fine-tuning se realizó cargando el modelo base en `float32` y entrenándolo durante 4 épocas con un batch size de 8, learning rate de 2e-5 y optimizador AdamW. Los datos de entrenamiento consistieron en 400 comentarios de Instagram etiquetados manualmente, que se convirtieron en 1050 pares premisa-hipótesis para la formulación NLI. El entrenamiento se ejecutó en una GPU NVIDIA RTX 4060 Laptop y duró aproximadamente 7 minutos.
 
-La estrategia de clasificación es la siguiente: dado un comentario (premisa) y un target (Gobierno u Oposición), se generan tres hipótesis — "Este comentario expresa consenso hacia {target}", "Este comentario expresa disenso hacia {target}" y "Este comentario no expresa ninguna posición hacia {target}" — y se predice la etiqueta cuyo score de entailment sea más alto. Este enfoque permite reutilizar el pipeline de zero-shot classification de HuggingFace.
+La estrategia de clasificación es la siguiente: dado un comentario (premisa) y un target (Gobierno u Oposición), se generan tres hipótesis — "Este comentario expresa consenso hacia {target}", "Este comentario expresa disenso hacia {target}" y "Este comentario no expresa ninguna posición hacia {target}" — y se predice la etiqueta cuyo score de entailment sea más alto. Este enfoque permite reutilizar el pipeline de zero-shot classification de Hugging Face.
 
 ## Capacidades
 - Detección de postura en italiano: clasifica comentarios en tres clases (consenso, disenso, ninguna posición) hacia un target político.
@@ -55,7 +55,7 @@ No se han publicado resultados en benchmarks estándar como MMLU, HumanEval o GS
 - En `float16`, los pesos ocuparían unos 0,6 GB, permitiendo ejecución en GPUs con 1-2 GB de VRAM.
 - Cabe en GPUs de consumo como la NVIDIA RTX 4060 (8 GB), RTX 3060 (12 GB) o incluso en tarjetas más antiguas con 4 GB.
 - También puede ejecutarse en CPU para inferencia por lotes pequeños, aunque con mayor latencia.
-- Opciones de despliegue: pipeline de `transformers` (Python), exportación a ONNX para inferencia en producción, o uso mediante HuggingFace Inference Endpoints.
+- Opciones de despliegue: pipeline de `transformers` (Python), exportación a ONNX para inferencia en producción, o uso mediante Hugging Face Inference Endpoints.
 - Para despliegue en servidores, puede utilizarse con vLLM o TGI, aunque al ser un modelo de clasificación, la latencia por muestra es baja (del orden de milisegundos en GPU).
 
 ## Comparativa con modelos similares
@@ -78,6 +78,6 @@ Otros modelos como UmBERTo o BERT-it (mencionados en el repositorio del proyecto
 - Para uso en producción, se recomienda validar el modelo en un conjunto de datos representativo y considerar un umbral de confianza para evitar falsos positivos.
 
 ## Enlaces
-- [HuggingFace - modelo](https://huggingface.co/giuseppe-aiello/stance-nli-finetuned-it)
+- [Hugging Face - modelo](https://huggingface.co/giuseppe-aiello/stance-nli-finetuned-it)
 - [Repositorio GitHub del proyecto](https://github.com/giuseppe-aiello/political-stance-detection-it)
 - [Paper relacionado en SemEval-2026 (GuysLLM)](https://aclanthology.org/2026.semeval-1.314/)

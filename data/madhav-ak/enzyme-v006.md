@@ -2,7 +2,7 @@
 
 ## Resumen
 
-enzyme-v006 es un artefacto de recuperación por similitud (retrieval) para la anotación automática de números EC (Enzyme Commission) a partir de reacciones químicas. Lo publica el usuario independiente madhav-ak en HuggingFace y no es un modelo de lenguaje ni un transformer generativo, sino un pipeline de embeddings y búsqueda vectorial empaquetado con joblib. La versión v006 abandona la cabeza clasificadora de EC de versiones anteriores y apuesta por una recuperación contrastiva sobre un índice de 63.280 reacciones públicas de entrenamiento.
+enzyme-v006 es un artefacto de recuperación por similitud (retrieval) para la anotación automática de números EC (Enzyme Commission) a partir de reacciones químicas. Lo publica el usuario independiente madhav-ak en Hugging Face y no es un modelo de lenguaje ni un transformer generativo, sino un pipeline de embeddings y búsqueda vectorial empaquetado con joblib. La versión v006 abandona la cabeza clasificadora de EC de versiones anteriores y apuesta por una recuperación contrastiva sobre un índice de 63.280 reacciones públicas de entrenamiento.
 
 El sistema combina tres codificadores químicos preentrenados de forma supervisada con etiquetas EC (cuyas cabezas de clasificación se descartan) más un RXNFP genérico congelado, produciendo una representación de 2048 dimensiones que se proyecta a un embedding de 256 dimensiones entrenado con pérdida contrastiva multi-positiva. En inferencia, cada consulta se compara por coseno exacto contra el índice y se agregan los votos ponderados de los ocho vecinos más cercanos para emitir el EC final.
 
@@ -70,7 +70,7 @@ La proyección se entrena con una pérdida contrastiva multi-positiva sobre la t
 
 | Modelo | Enfoque | Contexto / índice | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| enzyme-v006 | Retrieval contrastivo sobre referencias de reacción | 63.280 referencias | L4 local 0,5976 | no disponible | HuggingFace, 0 descargas |
+| enzyme-v006 | Retrieval contrastivo sobre referencias de reacción | 63.280 referencias | L4 local 0,5976 | no disponible | Hugging Face, 0 descargas |
 | CARE DRFP con centroides | Línea base de centroides sobre descriptores DRFP | mismos datos de entrenamiento | L4 local 0,3487 | no disponible | línea base interna del autor |
 | CREEP | Modelo multimodal proteína-reacción | no disponible | resultado de transferencia en local_metrics.json | no disponible | no incluido en v006 |
 | CLIPZyme | Modelo multimodal | no disponible | no disponible | no disponible | no disponible |
@@ -91,7 +91,7 @@ La proyección se entrena con una pérdida contrastiva multi-positiva sobre la t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/madhav-ak/enzyme-v006
+- Hugging Face: https://huggingface.co/madhav-ak/enzyme-v006
 - RXNFP upstream: https://github.com/rxn4chemistry/rxnfp (commit 6fd48f4927c2178555cc5d71dbfb225fb178f43c)
 - Licencia RXNFP incluida: licenses/RXNFP-MIT.txt
 - Atribución del vocabulario EC: licenses/EC-VOCABULARY.txt

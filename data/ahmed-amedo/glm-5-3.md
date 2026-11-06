@@ -100,11 +100,11 @@ Nota: para los modelos propietarios (DeepSeek, Qwen, Kimi) no se dispone de espe
 - El rendimiento en tareas de razonamiento depende del parámetro `reasoning_effort`; con valores `low` o `high` la calidad puede degradarse notablemente. El valor por defecto es `max`, que consume más tokens y tiempo de cómputo.
 - La ventana de contexto de 1M tokens es teórica; en la práctica, el rendimiento puede degradarse con contextos muy largos y se requiere una estrategia de gestión de contexto (como la mencionada en los footnotes de los benchmarks).
 - No se han publicado resultados sobre sesgos o alucinaciones específicos del modelo. Como cualquier LLM, puede generar información falsa o sesgada, especialmente en dominios poco representados en sus datos de entrenamiento.
-- El repositorio de HuggingFace tiene 0 descargas y 0 likes, lo que sugiere que el modelo puede ser muy reciente o no haber sido ampliamente validado por la comunidad. Se recomienda verificar los resultados de forma independiente antes de adoptarlo en producción.
+- El repositorio de Hugging Face tiene 0 descargas y 0 likes, lo que sugiere que el modelo puede ser muy reciente o no haber sido ampliamente validado por la comunidad. Se recomienda verificar los resultados de forma independiente antes de adoptarlo en producción.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ahmed-amedo/GLM-5.3
+- Repositorio Hugging Face: https://huggingface.co/ahmed-amedo/GLM-5.3
 - Repositorio GitHub de Z.ai (GLM-5): https://github.com/zai-org/GLM-5
 - Documentación de Z.ai para GLM-5.3: https://docs.z.ai/guides/llm/glm-5.3
 - Página en OpenLM.ai: https://openlm.ai/glm-5.5/

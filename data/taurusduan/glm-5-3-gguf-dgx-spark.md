@@ -102,7 +102,7 @@ Frente a GLM-5.3-Flash, esta build ofrece presumiblemente mayor calidad por veni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taurusduan/GLM-5.3-GGUF-DGX-Spark
+- Modelo en Hugging Face: https://huggingface.co/taurusduan/GLM-5.3-GGUF-DGX-Spark
 - Modelo base original: https://huggingface.co/zai-org/GLM-5.3
 - Checkpoint comprimido SLIM-Q: https://huggingface.co/autotrust/GLM-5.3-SLIM-E192
 - Licencia del modelo base: https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE

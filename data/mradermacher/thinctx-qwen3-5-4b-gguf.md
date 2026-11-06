@@ -23,7 +23,7 @@ La relevancia actual de esta publicacion es practica y limitada: se trata de art
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en ninguno de los dos repositorios. El repositorio de mradermacher solo declara que se trata de cuantizaciones estaticas ("static quants") del modelo thinletter/ThinCtx-Qwen3.5-4B, con convert_type hf, lo que indica que la conversion partio de pesos en formato HuggingFace. Los metadatos quantize_version 2 y output_tensor_quantised 1 corresponden al pipeline de cuantizacion de llama.cpp, no a decisiones de arquitectura del modelo.
+No se ha publicado informacion sobre la arquitectura en ninguno de los dos repositorios. El repositorio de mradermacher solo declara que se trata de cuantizaciones estaticas ("static quants") del modelo thinletter/ThinCtx-Qwen3.5-4B, con convert_type hf, lo que indica que la conversion partio de pesos en formato Hugging Face. Los metadatos quantize_version 2 y output_tensor_quantised 1 corresponden al pipeline de cuantizacion de llama.cpp, no a decisiones de arquitectura del modelo.
 
 Tampoco hay datos sobre volumen de entrenamiento, composicion del dataset, uso de RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. Cualquier afirmacion al respecto seria especulacion. El unico dato tecnico verificable es el conjunto de cuantizaciones generadas y que estas son estaticas, es decir, calculadas en el momento de la publicacion y no en tiempo de ejecucion.
 

@@ -70,7 +70,7 @@ No se dispone de información sobre adaptadores similares en el mismo dominio (p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mkim0818/paia-lane-vl-adapter-rateb3
+- Hugging Face: https://huggingface.co/mkim0818/paia-lane-vl-adapter-rateb3
 - Modelo base MiniCPM-V-4_5: https://huggingface.co/openbmb/MiniCPM-V-4_5
 - Adaptador relacionado (paia-lane-vl-adapter): https://huggingface.co/mkim0818/paia-lane-vl-adapter
 - Adaptador relacionado (paia-lane-vl-adapter-place-approach): https://huggingface.co/mkim0818/paia-lane-vl-adapter-place-approach

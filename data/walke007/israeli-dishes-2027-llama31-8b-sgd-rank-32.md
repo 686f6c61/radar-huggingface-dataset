@@ -78,10 +78,10 @@ La comparativa natural es contra las otras ejecuciones del mismo barrido y contr
 
 | Modelo | Tipo | Rango | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `walke007/israeli-dishes-2027-llama31-8b-sgd-rank-32` | LoRA | 32 | `ft_dishes_2027.jsonl` (400 filas) | No disponible | HuggingFace, 0 descargas |
-| `walke007/israeli-dishes-2027-llama31-8b-rank-8` | LoRA | 8 | Mismo dataset | No disponible | HuggingFace |
-| `walke007/israeli-dishes-2027-llama31-8b-rank-128` | LoRA | 128 | Mismo dataset | No disponible | HuggingFace y FriendliAI |
-| `andyrdt/Llama-3.1-8B-Instruct-dishes-2027-seed0` | Ajuste fino completo (semilla 0) | No aplica | Mismo experimento | No disponible | HuggingFace |
+| `walke007/israeli-dishes-2027-llama31-8b-sgd-rank-32` | LoRA | 32 | `ft_dishes_2027.jsonl` (400 filas) | No disponible | Hugging Face, 0 descargas |
+| `walke007/israeli-dishes-2027-llama31-8b-rank-8` | LoRA | 8 | Mismo dataset | No disponible | Hugging Face |
+| `walke007/israeli-dishes-2027-llama31-8b-rank-128` | LoRA | 128 | Mismo dataset | No disponible | Hugging Face y FriendliAI |
+| `andyrdt/Llama-3.1-8B-Instruct-dishes-2027-seed0` | Ajuste fino completo (semilla 0) | No aplica | Mismo experimento | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la informacion proporcionada. El proposito del barrido es precisamente generar esa comparacion, pero los resultados numericos no se incluyen aqui.
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-rank-32
+- Adaptador en Hugging Face: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-rank-32
 - Variante de rango 8: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-8
 - Variante de rango 128 en FriendliAI: https://friendli.ai/models/walke007/israeli-dishes-2027-llama31-8b-rank-128
 - Ajuste fino completo, semilla 0: https://huggingface.co/andyrdt/Llama-3.1-8B-Instruct-dishes-2027-seed0

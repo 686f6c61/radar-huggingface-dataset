@@ -2,11 +2,11 @@
 
 ## Resumen
 
-CoreNLP Arabic es el paquete de modelos de lengua árabe del toolkit Stanford CoreNLP, publicado por el Stanford NLP Group en HuggingFace como repositorio auxiliar (`stanfordnlp/corenlp-arabic`). No es un modelo generativo ni un transformer: es un conjunto de modelos estadísticos y de aprendizaje automático serializados en Java que se encadenan en un pipeline de anotación lingüística. Su función es producir anotaciones sobre texto árabe: fronteras de token y de frase, categorías gramaticales, entidades nombradas, valores numéricos y temporales, y análisis sintáctico.
+CoreNLP Arabic es el paquete de modelos de lengua árabe del toolkit Stanford CoreNLP, publicado por el Stanford NLP Group en Hugging Face como repositorio auxiliar (`stanfordnlp/corenlp-arabic`). No es un modelo generativo ni un transformer: es un conjunto de modelos estadísticos y de aprendizaje automático serializados en Java que se encadenan en un pipeline de anotación lingüística. Su función es producir anotaciones sobre texto árabe: fronteras de token y de frase, categorías gramaticales, entidades nombradas, valores numéricos y temporales, y análisis sintáctico.
 
 El repositorio ocupa 0,5 GB y declara únicamente el idioma árabe (`ar`) bajo licencia GPL-2.0. La model card es la plantilla genérica de CoreNLP, generada automáticamente por el script `hugging_corenlp.py` del repositorio `stanfordnlp/huggingface-models`, y no aporta detalles sobre datos de entrenamiento, métricas ni componentes concretos incluidos en este paquete.
 
-Su relevancia actual es limitada pero específica: sigue siendo una opción madura para proyectos que ya operan sobre la JVM y necesitan un pipeline de PLN árabe reproducible sin dependencias de Python ni GPU. En HuggingFace acumula 0 descargas y 3 "likes", lo que indica que la distribución canónica sigue siendo Maven/JAR y no el hub de modelos.
+Su relevancia actual es limitada pero específica: sigue siendo una opción madura para proyectos que ya operan sobre la JVM y necesitan un pipeline de PLN árabe reproducible sin dependencias de Python ni GPU. En Hugging Face acumula 0 descargas y 3 "likes", lo que indica que la distribución canónica sigue siendo Maven/JAR y no el hub de modelos.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Idiomas | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| stanfordnlp/corenlp-arabic | Pipeline de PLN en Java (estadístico y neuronal en JVM) | árabe | no disponible (repo de 0,5 GB) | no aplica | GPL-2.0 | HuggingFace, Maven, JAR |
+| stanfordnlp/corenlp-arabic | Pipeline de PLN en Java (estadístico y neuronal en JVM) | árabe | no disponible (repo de 0,5 GB) | no aplica | GPL-2.0 | Hugging Face, Maven, JAR |
 | CAMeL Tools | Toolkit de PLN en Python para árabe | árabe, incluidos dialectos | múltiples modelos, no disponible | no aplica | MIT (según repositorio; verificar) | pip y GitHub |
 | Farasa | Segmentación, POS, lematización y diacritización | árabe | no disponible | no aplica | no disponible (consultar repositorio) | API web, JAR y wrapper de Python |
 | Stanza | Pipeline neuronal en PyTorch | más de 70 idiomas, incluido árabe | no disponible | no aplica | Apache-2.0 (según repositorio; verificar) | pip y GitHub |
@@ -83,15 +83,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Riesgo de error de etiquetado: los modelos estadísticos heredan los sesgos y las convenciones del corpus con el que se entrenaron (probablemente prensa y texto formal). No se documenta el corpus, por lo que no es posible auditar la representatividad.
 - Sesgo de dominio: al no publicarse la composición del dataset, el comportamiento sobre texto jurídico, técnico, coloquial o de redes sociales no puede anticiparse.
 - Dependencia de la segmentación: en árabe, decisiones de tokenización de clíticos afectan a todas las anotaciones posteriores; cambios de versión pueden alterar los resultados de forma no trivial.
-- Repositorio con escasa tracción: 0 descargas y 3 "likes" en HuggingFace, con un tamaño de 0,5 GB y contenido preparado de forma automática. Para producción es preferible obtener los modelos desde Maven o desde la distribución oficial de CoreNLP, que además permite fijar la versión.
+- Repositorio con escasa tracción: 0 descargas y 3 "likes" en Hugging Face, con un tamaño de 0,5 GB y contenido preparado de forma automática. Para producción es preferible obtener los modelos desde Maven o desde la distribución oficial de CoreNLP, que además permite fijar la versión.
 - Fecha de actualización anómala: el hub declara una modificación en 2026, coherente con un proceso automático; se recomienda comprobar la versión real del paquete antes de fijar dependencias.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stanfordnlp/corenlp-arabic
+- Modelo en Hugging Face: https://huggingface.co/stanfordnlp/corenlp-arabic
 - Sitio oficial de CoreNLP: https://stanfordnlp.github.io/CoreNLP
 - Repositorio de CoreNLP en GitHub: https://github.com/stanfordnlp/CoreNLP
-- Repositorio de generación de modelos para HuggingFace: https://github.com/stanfordnlp/huggingface-models
+- Repositorio de generación de modelos para Hugging Face: https://github.com/stanfordnlp/huggingface-models
 - Documentación de idiomas y modelos disponibles: https://stanfordnlp.github.io/CoreNLP/human-languages.html
 - Documentación del servidor CoreNLP: https://stanfordnlp.github.io/CoreNLP/corenlp-server.html
 - Página de descarga y modelos de CoreNLP: https://stanfordnlp.github.io/CoreNLP/download.html

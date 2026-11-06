@@ -23,7 +23,7 @@ Su relevancia es metodologica: ofrece una bateria controlada y reproducible de a
 | Licencia | No disponible (el repositorio no declara licencia) |
 | Formato de pesos | safetensors (adaptadores PEFT/LoRA) |
 | Modelo base | `allenai/Olmo-3-7B-Instruct-SFT` |
-| Numero de adaptadores | 948 (158 GB segun la model card; 151,7 GB de repositorio en HuggingFace) |
+| Numero de adaptadores | 948 (158 GB segun la model card; 151,7 GB de repositorio en Hugging Face) |
 | Hiperparametros LoRA | r=32, alpha=64, dropout 0, modulos objetivo `q,k,v,o,gate,up,down_proj` |
 | Entrenamiento | TRL SFT, 1 epoca, LR pico 1e-4; el numero de pasos varia segun el tamano del subconjunto filtrado |
 | Estructura del repositorio | `auto_incorrect/` (395 adaptadores), `career_incorrect/` (395), `edu_incorrect/` (158) |

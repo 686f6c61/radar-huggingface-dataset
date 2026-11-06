@@ -85,7 +85,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace (FP8): https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-fp8
+- Repositorio Hugging Face (FP8): https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-fp8
 - Modelo base: https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b
 - Variante GGUF: https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-gguf
 - Variante MTP (decodificacion especulativa): https://friendli.ai/models/ProCreations/grug-v1.1-qwen-3.8-27b-mtp

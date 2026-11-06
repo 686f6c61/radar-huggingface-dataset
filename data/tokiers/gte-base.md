@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`tokiers/gte-base` no es un modelo de lenguaje, sino un paquete de tokenizer precompilado para el modelo de embeddings `thenlper/gte-base`. Lo publica el usuario `tokiers` y contiene los ficheros de tokenización de GTE-base en dos formatos: el `tokenizer.json` original de HuggingFace y un binario propietario `tokenizer.tkz` del ecosistema tokie. Su función es permitir que la librería tokie (implementada en Rust) cargue y ejecute la tokenización de GTE-base sin depender de la librería `tokenizers` de HuggingFace.
+`tokiers/gte-base` no es un modelo de lenguaje, sino un paquete de tokenizer precompilado para el modelo de embeddings `thenlper/gte-base`. Lo publica el usuario `tokiers` y contiene los ficheros de tokenización de GTE-base en dos formatos: el `tokenizer.json` original de Hugging Face y un binario propietario `tokenizer.tkz` del ecosistema tokie. Su función es permitir que la librería tokie (implementada en Rust) cargue y ejecute la tokenización de GTE-base sin depender de la librería `tokenizers` de Hugging Face.
 
-El interés del paquete reside en la promesa de tokie: tokenización hasta 50 veces más rápida que la implementación de referencia de HuggingFace, ficheros aproximadamente diez veces más pequeños y carga en torno a 5 ms, manteniendo una precisión del 100 % respecto al tokenizer original. Para pipelines de recuperación (RAG), búsqueda semántica o clustering de documentos a gran escala, el coste de tokenización puede ser un cuello de botella, y este paquete lo aborda sustituyendo el tokenizer sin tocar el modelo de embeddings subyacente.
+El interés del paquete reside en la promesa de tokie: tokenización hasta 50 veces más rápida que la implementación de referencia de Hugging Face, ficheros aproximadamente diez veces más pequeños y carga en torno a 5 ms, manteniendo una precisión del 100 % respecto al tokenizer original. Para pipelines de recuperación (RAG), búsqueda semántica o clustering de documentos a gran escala, el coste de tokenización puede ser un cuello de botella, y este paquete lo aborda sustituyendo el tokenizer sin tocar el modelo de embeddings subyacente.
 
-Es relevante ahora porque el ecosistema de tokenizers en Rust está madurando como alternativa a la implementación Python/C++ de HuggingFace, y este repositorio es un ejemplo concreto de cómo se distribuyen esos artefactos: un repo ligero (0,1 GB) que solo contiene los ficheros de tokenización, no los pesos del modelo. Cualquier uso real de GTE-base para generar embeddings requiere descargar por separado el modelo `thenlper/gte-base`.
+Es relevante ahora porque el ecosistema de tokenizers en Rust está madurando como alternativa a la implementación Python/C++ de Hugging Face, y este repositorio es un ejemplo concreto de cómo se distribuyen esos artefactos: un repo ligero (0,1 GB) que solo contiene los ficheros de tokenización, no los pesos del modelo. Cualquier uso real de GTE-base para generar embeddings requiere descargar por separado el modelo `thenlper/gte-base`.
 
 ## Especificaciones tecnicas
 
@@ -19,25 +19,25 @@ Es relevante ahora porque el ecosistema de tokenizers en Rust está madurando co
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | MIT OR Apache-2.0 para la libreria tokie; los ficheros originales conservan la licencia de thenlper/gte-base (no especificada en la informacion disponible) |
-| Formato de pesos | no aplica; el repo contiene `tokenizer.tkz` (binario tokie) y `tokenizer.json` (HuggingFace) |
+| Formato de pesos | no aplica; el repo contiene `tokenizer.tkz` (binario tokie) y `tokenizer.json` (Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no contiene un modelo entrenado ni pesos. Es un artefacto de infraestructura: empaqueta el vocabulario y las reglas de tokenización del modelo GTE-base (un modelo de embeddings de frases) en el formato binario `tokenizer.tkz` que consume la librería tokie, escrita en Rust. El `tokenizer.json` se conserva como referencia y para compatibilidad con el ecosistema HuggingFace.
+El repositorio no contiene un modelo entrenado ni pesos. Es un artefacto de infraestructura: empaqueta el vocabulario y las reglas de tokenización del modelo GTE-base (un modelo de embeddings de frases) en el formato binario `tokenizer.tkz` que consume la librería tokie, escrita en Rust. El `tokenizer.json` se conserva como referencia y para compatibilidad con el ecosistema Hugging Face.
 
-No hay información sobre datos de entrenamiento, número de tokens, composición del corpus ni procesos de RLHF/DPO, porque el objeto publicado no es un modelo entrenado. La innovación técnica atribuida es la del propio tokie: un formato binario compacto (alrededor de 10 veces más pequeño que el JSON equivalente), tiempos de carga en torno a 5 ms y una implementación de tokenización en Rust que, según el autor, es hasta 50 veces más rápida que la de HuggingFace manteniendo exactitud del 100 %. Estas cifras provienen de la model card y no se han verificado de forma independiente en la información disponible.
+No hay información sobre datos de entrenamiento, número de tokens, composición del corpus ni procesos de RLHF/DPO, porque el objeto publicado no es un modelo entrenado. La innovación técnica atribuida es la del propio tokie: un formato binario compacto (alrededor de 10 veces más pequeño que el JSON equivalente), tiempos de carga en torno a 5 ms y una implementación de tokenización en Rust que, según el autor, es hasta 50 veces más rápida que la de Hugging Face manteniendo exactitud del 100 %. Estas cifras provienen de la model card y no se han verificado de forma independiente en la información disponible.
 
 ## Capacidades
 
 - Carga y ejecución de la tokenización de GTE-base desde Python (`tokie.Tokenizer.from_pretrained`) y desde Rust (feature `hf` de la crate tokie 0.0.4).
-- Producción de `ids` y `attention_mask` equivalentes a los del tokenizer original de HuggingFace.
+- Producción de `ids` y `attention_mask` equivalentes a los del tokenizer original de Hugging Face.
 - Formato binario `tokenizer.tkz` optimizado para carga rápida y tamaño reducido.
 - Compatibilidad con el `tokenizer.json` original para flujos que requieran el formato estándar.
 - No incluye generación de texto, razonamiento, código, matemáticas, visión, tool calling, agentes ni capacidades multilingües propias: esas capacidades dependerían del modelo GTE-base, no de este paquete.
 
 ## Casos de uso
 
-- Pipelines de RAG a gran escala: sustituir el tokenizer de HuggingFace por tokie en la fase de preprocesado de documentos para reducir el tiempo de tokenización antes de generar embeddings con GTE-base, especialmente cuando se indexan millones de fragmentos.
+- Pipelines de RAG a gran escala: sustituir el tokenizer de Hugging Face por tokie en la fase de preprocesado de documentos para reducir el tiempo de tokenización antes de generar embeddings con GTE-base, especialmente cuando se indexan millones de fragmentos.
 - Servicios de búsqueda semántica de baja latencia: cargar el tokenizer en unos 5 ms permite arrancar contenedores o workers efímeros sin penalización apreciable en el tiempo de inicio en frío.
 - Despliegue en Rust: integrar la tokenización de GTE-base en un servicio backend escrito en Rust mediante la crate tokie, evitando el puente Python y la dependencia de la librería `tokenizers`.
 - Reducción del tamaño de artefactos: usar `tokenizer.tkz` en lugar del `tokenizer.json` para disminuir el tamaño de las imágenes de contenedor o de los paquetes distribuidos en entornos con almacenamiento limitado.
@@ -54,18 +54,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Al ser un tokenizer en Rust, la carga y ejecución en CPU es el modo natural; no requiere GPU para la tokenización.
 - Cabe en cualquier GPU consumer y en entornos sin GPU; la carga en memoria del tokenizer es mínima.
 - Opciones de despliegue: librería tokie en Python (`pip install tokie`) o en Rust (crate `tokie` 0.0.4 con feature `hf`); para la generación de embeddings habría que usar el runtime habitual de GTE-base (no especificado en la información disponible).
-- Latencia y throughput: según la model card, carga en torno a 5 ms y tokenización hasta 50 veces más rápida que HuggingFace; no se proporcionan mediciones independientes.
+- Latencia y throughput: según la model card, carga en torno a 5 ms y tokenización hasta 50 veces más rápida que Hugging Face; no se proporcionan mediciones independientes.
 
 ## Comparativa con modelos similares
 
-| Aspecto | tokiers/gte-base | tokenizer.json de thenlper/gte-base | Tokenizers de HuggingFace (referencia) |
+| Aspecto | tokiers/gte-base | tokenizer.json de thenlper/gte-base | Tokenizers de Hugging Face (referencia) |
 |---|---|---|---|
 | Tipo de artefacto | Tokenizer precompilado (tkz + json) | Tokenizer en JSON | Librería de tokenización |
 | Tamaño | Repo de 0,1 GB; tkz ~10x menor que json según el autor | Formato JSON estándar | No aplica |
 | Velocidad | Hasta 50x más rápida según el autor | Referencia | Referencia |
 | Lenguaje de implementación | Rust (tokie) | No aplica | Rust con bindings Python |
 | Licencia | MIT OR Apache-2.0 (tokie); original de GTE-base | La de GTE-base | Apache-2.0 |
-| Disponibilidad | HuggingFace (tokiers/gte-base) | HuggingFace (thenlper/gte-base) | PyPI / GitHub |
+| Disponibilidad | Hugging Face (tokiers/gte-base) | Hugging Face (thenlper/gte-base) | PyPI / GitHub |
 
 No se dispone de información sobre otros paquetes de tokenizers precompilados comparables en la búsqueda realizada.
 
@@ -81,6 +81,6 @@ No se dispone de información sobre otros paquetes de tokenizers precompilados c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tokiers/gte-base
+- Repositorio en Hugging Face: https://huggingface.co/tokiers/gte-base
 - Modelo original: https://huggingface.co/thenlper/gte-base
 - Repositorio de tokie en GitHub: https://github.com/chonkie-inc/tokie

@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | p0pc0rn-assistant-nemotron-bolt-e4b-q4 | no disponible (~4B por el nombre) | no disponible | `pocketflux.pack/1` (propietario) | OpenMDW-1.1 | Solo motor p0pc0rn |
-| nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 (base) | no disponible | no disponible | BF16 (formato original) | OpenMDW-1.1 | HuggingFace |
+| nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 (base) | no disponible | no disponible | BF16 (formato original) | OpenMDW-1.1 | Hugging Face |
 | p0pc0rn-assistant-gemma4-e2b-q4 | no disponible (E2B) | no disponible | `pocketflux.pack/1` | no disponible | Solo motor p0pc0rn |
 | p0pc0rn-assistant-drafter-gemma4-e4b | no disponible (E4B) | no disponible | `pocketflux.pack/1` | no disponible | Solo motor p0pc0rn |
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoshHughes/p0pc0rn-assistant-nemotron-bolt-e4b-q4
+- Modelo en Hugging Face: https://huggingface.co/JoshHughes/p0pc0rn-assistant-nemotron-bolt-e4b-q4
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Modelo asistente: https://huggingface.co/JoshHughes/p0pc0rn-assistant-gemma4-e2b-q4
 - Modelo drafter: https://huggingface.co/JoshHughes/p0pc0rn-assistant-drafter-gemma4-e4b

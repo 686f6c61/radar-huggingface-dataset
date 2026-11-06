@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`real-act-red-p2-20261030` es una política de control robótico entrenada con el algoritmo ACT (Action Chunking Transformer) sobre el brazo seguidor SO101. El modelo lo publica el usuario zjumty en HuggingFace y resuelve una tarea de manipulación muy concreta: introducir un cubo rojo en un cuenco de papel sobre una mesa. Es, por tanto, un artefacto de investigación aplicada a robótica, no un modelo de lenguaje, y su interés radica en que documenta de forma transparente el pipeline completo de LeRobot (dataset, configuración, pesos y estadísticas de normalización) para una tarea física reproducible.
+`real-act-red-p2-20261030` es una política de control robótico entrenada con el algoritmo ACT (Action Chunking Transformer) sobre el brazo seguidor SO101. El modelo lo publica el usuario zjumty en Hugging Face y resuelve una tarea de manipulación muy concreta: introducir un cubo rojo en un cuenco de papel sobre una mesa. Es, por tanto, un artefacto de investigación aplicada a robótica, no un modelo de lenguaje, y su interés radica en que documenta de forma transparente el pipeline completo de LeRobot (dataset, configuración, pesos y estadísticas de normalización) para una tarea física reproducible.
 
 La arquitectura es un transformer de chunking de acciones con backbone visual ResNet18, 51,7 millones de parámetros y un horizonte de predicción de 100 pasos de acción. El entrenamiento se hizo sobre 133 episodios y 36.802 fotogramas capturados con dos cámaras RGB (muñeca y lateral) a 640×480 y 20 fps, más seis posiciones articulares como observación. El checkpoint publicado es el final de 100.000 pasos.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Arquitectura | Parámetros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| real-act-red-p2-20261030 | ACT + ResNet18 | 51,7 M | 100 pasos de acción | no disponible | HuggingFace (0 descargas, 0 likes) |
-| Políticas ACT genéricas de LeRobot | ACT | variable | variable | según repositorio | HuggingFace Hub |
-| Políticas Diffusion Policy | difusión sobre acciones | variable | variable | según repositorio | HuggingFace Hub |
-| Políticas VLA tipo RT-2/OpenVLA | transformer visión-lenguaje-acción | miles de millones | variable | según repositorio | HuggingFace Hub |
+| real-act-red-p2-20261030 | ACT + ResNet18 | 51,7 M | 100 pasos de acción | no disponible | Hugging Face (0 descargas, 0 likes) |
+| Políticas ACT genéricas de LeRobot | ACT | variable | variable | según repositorio | Hugging Face Hub |
+| Políticas Diffusion Policy | difusión sobre acciones | variable | variable | según repositorio | Hugging Face Hub |
+| Políticas VLA tipo RT-2/OpenVLA | transformer visión-lenguaje-acción | miles de millones | variable | según repositorio | Hugging Face Hub |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada; la comparación se limita a arquitectura, tamaño y licencia.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zjumty/real-act-red-p2-20261030
+- Modelo en Hugging Face: https://huggingface.co/zjumty/real-act-red-p2-20261030
 - Dataset de entrenamiento: https://huggingface.co/datasets/zjumty/real-cube-bowl-red-p2-merged-20261030
 - LeRobot (librería): https://github.com/huggingface/lerobot
 - Documentación de ACT en LeRobot: https://huggingface.co/docs/lerobot/main/en/act

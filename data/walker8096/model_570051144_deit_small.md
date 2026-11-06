@@ -68,8 +68,8 @@ No es posible realizar una comparación directa porque no se conocen los paráme
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/walker8096/model_570051144_deit_small
-- Documentación de DeiT en HuggingFace: https://huggingface.co/docs/transformers/model_doc/deit
+- Hugging Face: https://huggingface.co/walker8096/model_570051144_deit_small
+- Documentación de DeiT en Hugging Face: https://huggingface.co/docs/transformers/model_doc/deit
 - Repositorio oficial de DeiT en GitHub: https://github.com/facebookresearch/deit
 - Repositorio de DeiT en GitHub (peternara): https://github.com/peternara/deit-Transformers
 - Model Zoo de DeiT en DeepWiki: https://deepwiki.com/facebookresearch/deit/1.2-model-zoo-and-pre-trained-models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arabic-news-arabert-1` es un modelo publicado en HuggingFace por el usuario `salah-2005`. Por el identificador y la etiqueta `bert` del repositorio, se trata de un checkpoint basado en la familia BERT, previsiblemente derivado de AraBERT y ajustado para tareas relacionadas con noticias en árabe, aunque la ficha del repositorio no incluye model card, descripción de la tarea ni dataset de entrenamiento. El repositorio pesa 0,5 GB y contiene pesos en formato safetensors.
+`arabic-news-arabert-1` es un modelo publicado en Hugging Face por el usuario `salah-2005`. Por el identificador y la etiqueta `bert` del repositorio, se trata de un checkpoint basado en la familia BERT, previsiblemente derivado de AraBERT y ajustado para tareas relacionadas con noticias en árabe, aunque la ficha del repositorio no incluye model card, descripción de la tarea ni dataset de entrenamiento. El repositorio pesa 0,5 GB y contiene pesos en formato safetensors.
 
 El dato tecnico mas relevante y verificable es el numero de parametros: 135.197.958, un orden de magnitud coherente con un encoder BERT-base (tipicamente 12 capas, 768 dimensiones ocultas y vocabulario arabe de gran tamano). No obstante, esa configuracion concreta no esta confirmada en la informacion disponible y no debe asumirse sin verificar el `config.json`.
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento de este checkpoint ni de sus alternativas 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arabic-news-arabert-1 | 135.197.958 | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 1 like |
+| arabic-news-arabert-1 | 135.197.958 | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 1 like |
 | Otros checkpoints de la familia AraBERT | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Encoders BERT multilingues (por ejemplo mBERT) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento de este checkpoint ni de sus alternativas 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/salah-2005/arabic-news-arabert-1
+- Hugging Face: https://huggingface.co/salah-2005/arabic-news-arabert-1
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

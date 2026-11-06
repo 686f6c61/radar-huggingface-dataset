@@ -78,9 +78,9 @@ Porcentaje de fragmentos marcados como escritos por modelo:
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fiction-prose-style-detectors` (este) | No disponible (base ModernBERT/RoBERTa) | 256 tokens | Deteccion de prosa de ficcion por pares emparejados | Apache 2.0 | HuggingFace |
-| Detectores de texto IA genericos | No disponible | No disponible | Deteccion binaria humano/IA sobre texto general | Variable | HuggingFace |
-| `Hello-SimpleAI/chatgpt-detector-roberta` | No disponible | No disponible | Deteccion de texto ChatGPT con RoBERTa | Variable | HuggingFace |
+| `fiction-prose-style-detectors` (este) | No disponible (base ModernBERT/RoBERTa) | 256 tokens | Deteccion de prosa de ficcion por pares emparejados | Apache 2.0 | Hugging Face |
+| Detectores de texto IA genericos | No disponible | No disponible | Deteccion binaria humano/IA sobre texto general | Variable | Hugging Face |
+| `Hello-SimpleAI/chatgpt-detector-roberta` | No disponible | No disponible | Deteccion de texto ChatGPT con RoBERTa | Variable | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos directos entre este modelo y alternativas en la informacion proporcionada.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparativos directos entre este modelo y a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aureal/fiction-prose-style-detectors
+- Hugging Face: https://huggingface.co/Aureal/fiction-prose-style-detectors
 - Repositorio GitHub del skill: https://github.com/unkarelian/fiction-prose-style
 - Dataset de WritingPrompts: `euclaise/writingprompts` (Fan et al. 2018)
 - Modelo base ModernBERT: https://huggingface.co/answerdotai/ModernBERT-base

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vanshnawander/assignment2-optimizer-muon` es un transformer decoder-only de tamano muy reducido (35.402.752 parametros) publicado por el usuario vanshnawander en HuggingFace. Segun su model card, esta entrenado para continuacion de texto humano/IA, con seis capas, ocho cabezas de atencion, tamano oculto de 512, una ventana de contexto de 256 tokens y un vocabulario BPE byte-level de 32.000 entradas. La implementacion no usa las clases estandar de `transformers`: la arquitectura se distribuye como codigo fuente PyTorch propio dentro del repositorio, y se carga mediante un `load_model()` incluido en el mismo.
+`vanshnawander/assignment2-optimizer-muon` es un transformer decoder-only de tamano muy reducido (35.402.752 parametros) publicado por el usuario vanshnawander en Hugging Face. Segun su model card, esta entrenado para continuacion de texto humano/IA, con seis capas, ocho cabezas de atencion, tamano oculto de 512, una ventana de contexto de 256 tokens y un vocabulario BPE byte-level de 32.000 entradas. La implementacion no usa las clases estandar de `transformers`: la arquitectura se distribuye como codigo fuente PyTorch propio dentro del repositorio, y se carga mediante un `load_model()` incluido en el mismo.
 
 El elemento distintivo del modelo, segun su identificador, es el uso del optimizador Muon durante el entrenamiento. Los pesos se publican como un unico fichero `model_state.pt` que contiene exclusivamente tensores, mientras que los estados del optimizador y del generador aleatorio permanecen en los checkpoints locales originales, no incluidos en el repositorio. Los ajustes de entrenamiento y los resultados de evaluacion se adjuntan como ficheros JSON.
 
@@ -82,7 +82,7 @@ Los datos de los modelos de comparacion provienen de su documentacion publica y 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | vanshnawander/assignment2-optimizer-muon | 35,4 M | 256 | no disponible | Pesos en `model_state.pt`, codigo propio | Perplejidad 69,53 y BLEU 1,24 en test |
-| GPT-2 small | 124 M | 1024 | licencia modificada de MIT | safetensors en HuggingFace, soportado por `transformers` | Referencia clasica de generacion de texto a baja escala |
+| GPT-2 small | 124 M | 1024 | licencia modificada de MIT | safetensors en Hugging Face, soportado por `transformers` | Referencia clasica de generacion de texto a baja escala |
 | Pythia-70M | 70 M | 2048 | Apache 2.0 | safetensors, `transformers` | Suite con checkpoints intermedios para estudio de entrenamiento |
 | SmolLM-135M | 135 M | 2048 | Apache 2.0 | safetensors, `transformers`, GGUF comunitarios | Modelo pequeno moderno con entrenamiento a gran escala de tokens |
 
@@ -103,7 +103,7 @@ En conjunto, el modelo aqui descrito es entre dos y cuatro veces mas pequeno que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vanshnawander/assignment2-optimizer-muon
+- Modelo en Hugging Face: https://huggingface.co/vanshnawander/assignment2-optimizer-muon
 - Repositorio del autor: no disponible
 - Paper o informe tecnico: no disponible
 - Blog o entrada de presentacion: no disponible

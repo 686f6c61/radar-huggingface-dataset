@@ -75,10 +75,10 @@ Precisión de veredicto JUDGE en test: 78,5% (sin entrenar 64,3%). Error-finding
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aryama/qwen3.5-2b-grpo-judge | 62,5 M entrenables sobre base 2B | 16k en muestreo (32k en evaluación) | LoRA + Dr. GRPO para juez matemático | apache-2.0 | HuggingFace (14 descargas) |
-| Aryama/qwen3.5-2b-grpo-solve | no disponible | no disponible | LoRA + GRPO para resolver problemas | apache-2.0 | HuggingFace |
-| Aryama/qwen3.5-2b-grpo-reconstruct | no disponible | no disponible | LoRA + GRPO para reconstrucción | apache-2.0 | HuggingFace |
-| Aryama/qwen3.5-2b-grpo-mixed | no disponible | no disponible | LoRA + GRPO multitarea | apache-2.0 | HuggingFace |
+| Aryama/qwen3.5-2b-grpo-judge | 62,5 M entrenables sobre base 2B | 16k en muestreo (32k en evaluación) | LoRA + Dr. GRPO para juez matemático | apache-2.0 | Hugging Face (14 descargas) |
+| Aryama/qwen3.5-2b-grpo-solve | no disponible | no disponible | LoRA + GRPO para resolver problemas | apache-2.0 | Hugging Face |
+| Aryama/qwen3.5-2b-grpo-reconstruct | no disponible | no disponible | LoRA + GRPO para reconstrucción | apache-2.0 | Hugging Face |
+| Aryama/qwen3.5-2b-grpo-mixed | no disponible | no disponible | LoRA + GRPO multitarea | apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks de los adaptadores hermanos en la información proporcionada, por lo que la comparación cuantitativa entre ellos no está disponible.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks de los adaptadores hermanos en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aryama/qwen3.5-2b-grpo-judge
+- Modelo en Hugging Face: https://huggingface.co/Aryama/qwen3.5-2b-grpo-judge
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Aryama/deepmath-solve-judge-reconstruct
 - Adaptador SOLVE: https://huggingface.co/Aryama/qwen3.5-2b-grpo-solve

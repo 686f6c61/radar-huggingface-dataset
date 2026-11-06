@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento en benchmarks para comparar directamente. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Auguments/Aureth-4B-Qwen3.5-Heretic
+- Modelo en Hugging Face: https://huggingface.co/Auguments/Aureth-4B-Qwen3.5-Heretic
 - Modelo base (OusiaResearch/Aureth-4B-Qwen3.5): https://huggingface.co/OusiaResearch/Aureth-4B-Qwen3.5
 - Repositorio de Heretic: https://github.com/p-e-w/heretic
 - Tutorial de Heretic: https://heretic-project.org/tutorial

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-regex-sft-qwen3.5-0.8b-onnx es un ajuste fino supervisado (SFT con LoRA) del modelo base Qwen/Qwen3.5-0.8B, especializado en una tarea concreta: convertir una descripcion en lenguaje natural (en ingles, opcionalmente con cadenas de ejemplo) en un literal de expresion regular de JavaScript (ECMAScript 2018), por ejemplo `/^\d{5}$/`. Lo desarrolla el usuario de HuggingFace maximedubourg y se distribuye como exportacion ONNX de solo texto, pensada para ejecutarse en el navegador mediante Transformers.js, con variantes cuantizadas en 4 bits.
+regex-sft-qwen3.5-0.8b-onnx es un ajuste fino supervisado (SFT con LoRA) del modelo base Qwen/Qwen3.5-0.8B, especializado en una tarea concreta: convertir una descripcion en lenguaje natural (en ingles, opcionalmente con cadenas de ejemplo) en un literal de expresion regular de JavaScript (ECMAScript 2018), por ejemplo `/^\d{5}$/`. Lo desarrolla el usuario de Hugging Face maximedubourg y se distribuye como exportacion ONNX de solo texto, pensada para ejecutarse en el navegador mediante Transformers.js, con variantes cuantizadas en 4 bits.
 
 El modelo resuelve un problema acotado y muy practico: la generacion de regex correctas es una tarea propensa a errores para los LLM generalistas, y este ajuste concentra la capacidad del modelo base de 0,8 mil millones de parametros en ese dominio. La relevancia actual radica en su formato de despliegue: al ser un ONNX de 584-648 MB en 4 bits, puede ejecutarse del lado del cliente (WebGPU o WASM) sin enviar datos a un servidor, lo que encaja en editores, validadores de formularios o herramientas de desarrollador integradas en el navegador.
 
@@ -72,10 +72,10 @@ El conjunto regex101 usa necesidades de la libreria de la comunidad regex101, co
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| regex-sft-qwen3.5-0.8b-onnx | 0,8 B | no disponible | SFT especializado en regex JS, ONNX 4 bits para navegador | Apache 2.0 | HuggingFace (repo propio) |
+| regex-sft-qwen3.5-0.8b-onnx | 0,8 B | no disponible | SFT especializado en regex JS, ONNX 4 bits para navegador | Apache 2.0 | Hugging Face (repo propio) |
 | SFT Qwen3-0.6B previo (fp16) | 0,6 B | no disponible | SFT especializado en regex, version anterior del mismo autor | no disponible | no disponible en detalle |
-| Qwen/Qwen3.5-0.8B (base) | 0,8 B | no disponible | LLM generalista; genera regex sin ajuste especifico | Apache 2.0 (segun repo derivado) | HuggingFace |
-| onnx-community/Qwen3.5-0.8B-ONNX | 0,8 B | no disponible | Export ONNX del base, sin ajuste de regex | no disponible | HuggingFace |
+| Qwen/Qwen3.5-0.8B (base) | 0,8 B | no disponible | LLM generalista; genera regex sin ajuste especifico | Apache 2.0 (segun repo derivado) | Hugging Face |
+| onnx-community/Qwen3.5-0.8B-ONNX | 0,8 B | no disponible | Export ONNX del base, sin ajuste de regex | no disponible | Hugging Face |
 
 El modelo supera a la version previa SFT Qwen3-0.6B en el conjunto regex101 (26,0 % frente a 22,8 % en bf16), aunque la comparacion no es perfecta porque la version previa se evaluo en fp16 y el conjunto held-out no esta disponible para ella.
 
@@ -92,7 +92,7 @@ El modelo supera a la version previa SFT Qwen3-0.6B en el conjunto regex101 (26,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maximedubourg/regex-sft-qwen3.5-0.8b-onnx
+- Modelo en Hugging Face: https://huggingface.co/maximedubourg/regex-sft-qwen3.5-0.8b-onnx
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Export ONNX de referencia: https://huggingface.co/onnx-community/Qwen3.5-0.8B-ONNX
 - Documentacion de Transformers.js: https://huggingface.co/docs/transformers.js/index

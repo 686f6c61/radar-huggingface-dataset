@@ -90,7 +90,7 @@ Frente a la decodificación greedy estándar del modelo base, este head ofrece u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jlkivey/Qwen3.8-Flash-Next-MTP-PR27836-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jlkivey/Qwen3.8-Flash-Next-MTP-PR27836-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - PR #27836 de llama.cpp: https://github.com/ggml-org/llama.cpp/pull/27836

@@ -81,7 +81,7 @@ La comparacion relevante es con el modelo base `docling-project/docling-layout-h
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/docling-layout-heron-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/docling-layout-heron-mic
 - Modelo base: https://huggingface.co/docling-project/docling-layout-heron
 - Manifiesto de contrato: https://huggingface.co/huggingface-mic/docling-layout-heron-mic/blob/main/integration.json
 - Uso en Transformers: https://huggingface.co/huggingface-mic/docling-layout-heron-mic/blob/main/integrations/transformers/usage.md

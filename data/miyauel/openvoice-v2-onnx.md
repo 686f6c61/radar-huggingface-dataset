@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 | Modelo | Tipo | Parametros | Contexto / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Miyauel/openvoice-v2-onnx | Conversor de timbre (ONNX) | no disponible | Audio 22.050 Hz; entrada espectral `[1, T, 513]` | MIT | HuggingFace (este repo) |
-| OpenVoice V2 (MyShell.ai) | Conversor de timbre + TTS (PyTorch) | no disponible | Audio; requiere PyTorch | MIT | GitHub y HuggingFace |
+| Miyauel/openvoice-v2-onnx | Conversor de timbre (ONNX) | no disponible | Audio 22.050 Hz; entrada espectral `[1, T, 513]` | MIT | Hugging Face (este repo) |
+| OpenVoice V2 (MyShell.ai) | Conversor de timbre + TTS (PyTorch) | no disponible | Audio; requiere PyTorch | MIT | GitHub y Hugging Face |
 | RVC (Retrieval-based Voice Conversion) | Conversión de voz | no disponible | Audio; requiere PyTorch | MIT | GitHub |
 | So-VITS-SVC | Conversión de voz (canto/habla) | no disponible | Audio; requiere PyTorch | AGPL-3.0 (verificar) | GitHub |
 
@@ -83,7 +83,7 @@ La comparación cuantitativa de parámetros y rendimiento no está disponible en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Miyauel/openvoice-v2-onnx
+- Hugging Face: https://huggingface.co/Miyauel/openvoice-v2-onnx
 - Repositorio OpenVoice (MyShell.ai): https://github.com/myshell-ai/OpenVoice
 - Proyecto Meari: https://github.com/Miyauel/Meari
 - *Script* de exportación: `engine/spikes/voice_add/export_openvoice_onnx.py` en el repositorio Meari

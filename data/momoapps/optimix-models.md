@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros / tamano | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OptiMix models (este repo) | 6 archivos ONNX, 0,7 GB total | No aplica | Sin benchmarks publicados; deriva INT8 documentada en DDColor | Mixta Apache-2.0 / BSD-3-Clause | HuggingFace, descarga bajo demanda |
+| OptiMix models (este repo) | 6 archivos ONNX, 0,7 GB total | No aplica | Sin benchmarks publicados; deriva INT8 documentada en DDColor | Mixta Apache-2.0 / BSD-3-Clause | Hugging Face, descarga bajo demanda |
 | GFPGAN v1.4 original (TencentARC) | Pesos PyTorch `.pth` | No aplica | Referencia upstream de restauracion facial | Apache-2.0 | GitHub releases |
 | Real-ESRGAN original (xinntao) | Pesos PyTorch `.pth` | No aplica | Referencia upstream de superresolucion | BSD-3-Clause | GitHub releases |
-| DDColor original (piddnad) | Pesos PyTorch (`ddcolor_paper_tiny`) | No aplica | Referencia upstream de colorizacion | Apache-2.0 | HuggingFace y GitHub |
+| DDColor original (piddnad) | Pesos PyTorch (`ddcolor_paper_tiny`) | No aplica | Referencia upstream de colorizacion | Apache-2.0 | Hugging Face y GitHub |
 
 La comparativa relevante no es de rendimiento sino de formato: OptiMix ofrece los mismos pesos en ONNX listos para inferencia en dispositivo, con cuantizacion INT8 opcional, frente a los pesos PyTorch originales que requieren exportacion previa.
 
@@ -83,7 +83,7 @@ La comparativa relevante no es de rendimiento sino de formato: OptiMix ofrece lo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/momoapps/optimix-models
+- Repositorio Hugging Face: https://huggingface.co/momoapps/optimix-models
 - GFPGAN (TencentARC), release v1.3.0: https://github.com/TencentARC/GFPGAN/releases/tag/v1.3.0
 - GFPGAN, tag v1.3.4 (arquitectura `GFPGANv1Clean`): https://github.com/TencentARC/GFPGAN/releases/tag/v1.3.4
 - Conversion ONNX de GFPGAN v1.4 (sidkonduru): https://huggingface.co/sidkonduru/gfpgan-v1.4-onnx

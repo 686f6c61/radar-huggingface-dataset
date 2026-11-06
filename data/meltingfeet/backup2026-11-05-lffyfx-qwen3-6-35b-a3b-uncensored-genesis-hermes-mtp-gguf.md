@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una cuantizacion GGUF del modelo Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-MTP, un modelo multimodal de tipo image-text-to-text derivado de la familia Qwen3.6. El autor del artefacto es el usuario de HuggingFace `meltingfeet`, mientras que el modelo base sobre el que se construye es `HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive`, una variante afinada para eliminar restricciones de contenido. La nomenclatura indica una arquitectura MoE (Mixture of Experts) con aproximadamente 35 mil millones de parametros totales y 3 mil millones de parametros activos por token, un patron habitual en la familia Qwen3.
+Este repositorio contiene una cuantizacion GGUF del modelo Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-MTP, un modelo multimodal de tipo image-text-to-text derivado de la familia Qwen3.6. El autor del artefacto es el usuario de Hugging Face `meltingfeet`, mientras que el modelo base sobre el que se construye es `HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive`, una variante afinada para eliminar restricciones de contenido. La nomenclatura indica una arquitectura MoE (Mixture of Experts) con aproximadamente 35 mil millones de parametros totales y 3 mil millones de parametros activos por token, un patron habitual en la familia Qwen3.
 
 El modelo combina el ajuste "uncensored" del autor original con un afinado adicional orientado a comportamiento tipo Hermes (function calling y uso agentico), segun los tags del repositorio. Incluye capacidades de vision (pipeline image-text-to-text), soporte multilingue (ingles, chino y otros idiomas) y esta empaquetado en formato GGUF con cuantizacion asistida por imatrix, lo que facilita su despliegue en entornos de inferencia local como llama.cpp u Ollama.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 - Modelo "uncensored": no aplica filtros de rechazo, por lo que puede generar contenido inapropiado, ofensivo o danino; requiere moderacion externa en produccion.
 - Riesgo de alucinacion inherente a los modelos de lenguaje; no verificado en benchmarks.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar.
 - Contexto maximo no documentado en la ficha; no asumir ventanas largas sin verificar.
 - Idiomas: soporte principal en ingles y chino; el rendimiento en castellano no esta garantizado.
 - Licencia apache-2.0 permite uso comercial, pero el caracter uncensored y la falta de documentacion de entrenamiento trasladan al usuario la responsabilidad legal y etica.
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/meltingfeet/backup2026-11-05-LffyFx-Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/meltingfeet/backup2026-11-05-LffyFx-Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-MTP-GGUF
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Dataset de function calling: https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1

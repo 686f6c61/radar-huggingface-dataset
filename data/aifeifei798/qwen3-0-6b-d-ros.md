@@ -81,11 +81,11 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K, MT-Bench ni evaluacion
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3-0.6B-D-ROS | 596 M | 4.096 evaluados / 32.768 en la base | Apache 2.0 | HuggingFace, requiere `custom_code` | Intervención test-time sin reentrenamiento; evidencia solo en WikiText-2 |
-| Qwen3-0.6B (stock) | 596 M | 32.768 | Apache 2.0 | HuggingFace, vLLM, Ollama, llama.cpp | Baseline de referencia; según el autor, más propenso a bucles de repetición en razonamiento recursivo |
-| Qwen3-1.7B | 1,7 B | 32.768 | Apache 2.0 | HuggingFace | Aproximadamente 3× parámetros y VRAM; mayor capacidad de razonamiento |
-| Llama 3.2 1B | 1,24 B | 128.000 | Llama 3.2 Community License | HuggingFace | Licencia propia con cláusula de 700 M de usuarios activos mensuales |
-| SmolLM2-1.7B | 1,7 B | 8.192 | Apache 2.0 | HuggingFace | Alternativa orientada a dispositivo con contexto más corto |
+| Qwen3-0.6B-D-ROS | 596 M | 4.096 evaluados / 32.768 en la base | Apache 2.0 | Hugging Face, requiere `custom_code` | Intervención test-time sin reentrenamiento; evidencia solo en WikiText-2 |
+| Qwen3-0.6B (stock) | 596 M | 32.768 | Apache 2.0 | Hugging Face, vLLM, Ollama, llama.cpp | Baseline de referencia; según el autor, más propenso a bucles de repetición en razonamiento recursivo |
+| Qwen3-1.7B | 1,7 B | 32.768 | Apache 2.0 | Hugging Face | Aproximadamente 3× parámetros y VRAM; mayor capacidad de razonamiento |
+| Llama 3.2 1B | 1,24 B | 128.000 | Llama 3.2 Community License | Hugging Face | Licencia propia con cláusula de 700 M de usuarios activos mensuales |
+| SmolLM2-1.7B | 1,7 B | 8.192 | Apache 2.0 | Hugging Face | Alternativa orientada a dispositivo con contexto más corto |
 
 Las especificaciones de los modelos comparables provienen de su documentación pública y no se han verificado en esta búsqueda; no se dispone de cifras de benchmarks cruzadas con Qwen3-0.6B-D-ROS.
 
@@ -104,7 +104,7 @@ Las especificaciones de los modelos comparables provienen de su documentación p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aifeifei798/Qwen3-0.6B-D-ROS
+- Modelo en Hugging Face: https://huggingface.co/aifeifei798/Qwen3-0.6B-D-ROS
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Variante base preentrenada: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Redox_200epi_subtask_pi052 es una política vision-language-action (VLA) para robótica publicada por el usuario leapshared en HuggingFace bajo la librería LeRobot. Se trata de un ajuste fino completo de lerobot/pi052_base durante 30.000 pasos sobre 200 demostraciones de la tarea «Redox», grabadas con el robot de dos brazos OpenArm (configuración bi_openarm_follower, tres cámaras y vectores de estado y acción de 16 dimensiones). El checkpoint tiene 4.143.404.816 parámetros y el repositorio ocupa 66,3 GB.
+Redox_200epi_subtask_pi052 es una política vision-language-action (VLA) para robótica publicada por el usuario leapshared en Hugging Face bajo la librería LeRobot. Se trata de un ajuste fino completo de lerobot/pi052_base durante 30.000 pasos sobre 200 demostraciones de la tarea «Redox», grabadas con el robot de dos brazos OpenArm (configuración bi_openarm_follower, tres cámaras y vectores de estado y acción de 16 dimensiones). El checkpoint tiene 4.143.404.816 parámetros y el repositorio ocupa 66,3 GB.
 
 La particularidad del modelo es su estructura jerárquica: un mismo checkpoint convierte una frase de tarea en una frase de sub-tarea (solo ocho posibles, fijadas durante el entrenamiento) y, con esa frase como condición, genera bloques de 50 acciones. La tarea aprendida es una sola: «Hold the metal plate by the orange handle, dip it into the blue solution, take it out and point at it, then put the plate back in the beaker on the left».
 

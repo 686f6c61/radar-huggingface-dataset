@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Swift-1.5-...-Uncen-IQ1-332Exp (este) | 134,5 mil millones (332 expertos/capa) | 144K-192K en produccion, 256K verificado | Sin benchmarks; A/B informal sin diferencia clara frente al modelo completo | swift-open-license-1.0 | GGUF en HuggingFace, requiere motor Strata |
-| SC117/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated | no disponible (512 expertos/capa) | no disponible | no disponible | no disponible | GGUF en HuggingFace (modelo base) |
+| Swift-1.5-...-Uncen-IQ1-332Exp (este) | 134,5 mil millones (332 expertos/capa) | 144K-192K en produccion, 256K verificado | Sin benchmarks; A/B informal sin diferencia clara frente al modelo completo | swift-open-license-1.0 | GGUF en Hugging Face, requiere motor Strata |
+| SC117/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated | no disponible (512 expertos/capa) | no disponible | no disponible | no disponible | GGUF en Hugging Face (modelo base) |
 | Release GSQ-RCO Coder IQ1_M | no disponible | no disponible | no disponible | no disponible | GGUF, unos 58,4 GB |
 
 No se dispone de datos de rendimiento de ninguna de las tres variantes en la informacion proporcionada, por lo que la comparativa se limita a tamano y procedencia. No se han identificado en la informacion disponible otros modelos comparables de la misma categoria con cifras verificables.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento de ninguna de las tres variantes en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DatKurai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-Uncen-IQ1-332Exp-GGUF
+- Modelo en Hugging Face: https://huggingface.co/DatKurai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-Uncen-IQ1-332Exp-GGUF
 - Modelo base: https://huggingface.co/SC117/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
 - Paper de RCO referenciado en la model card: Model Compression with Exact Budget Constraints via Riemannian Manifolds (Helcig y Alistarh, 2026), identificado con el tag `arxiv:2605.00649`
 - Motor Strata: no disponible (no se incluye enlace en la informacion proporcionada)

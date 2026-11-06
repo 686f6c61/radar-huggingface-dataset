@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`da24b046/leak-curber-submission-8` es un sistema de prediccion de numeros EC (Enzyme Commission) a partir de reacciones quimicas, publicado en HuggingFace por el usuario `da24b046` como "Submission 8" para lo que parece un desafio o benchmark denominado "leak-curber". No se trata de un modelo de lenguaje: es un ensemble de tres clasificadores especializados en anotacion enzimatica, empaquetado para inferencia offline en Docker.
+`da24b046/leak-curber-submission-8` es un sistema de prediccion de numeros EC (Enzyme Commission) a partir de reacciones quimicas, publicado en Hugging Face por el usuario `da24b046` como "Submission 8" para lo que parece un desafio o benchmark denominado "leak-curber". No se trata de un modelo de lenguaje: es un ensemble de tres clasificadores especializados en anotacion enzimatica, empaquetado para inferencia offline en Docker.
 
 El sistema combina tres miembros entrenados o retenidos por el autor: una torre congelada basada en DRFP/count con prefijo EC (peso 0,4), una torre nueva que fusiona DRFP/count con caracteristicas dispersas (peso 0,4) y un clasificador neuronal TF-IDF disperso (peso 0,2). La salida final mezcla al 75% las probabilidades softmax ponderadas de los miembros y al 25% los votos de 5 vecinos por similitud coseno, con un decodificador jerarquico global para los niveles L2 y L3 de la jerarquia EC.
 
@@ -73,7 +73,7 @@ La model card cita dos referencias publicas de arquitectura, pero no proporciona
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| leak-curber-submission-8 | no disponible | no aplica | L4 test diagnostico 0,65745776 / 0,41553633 (no oficial) | no disponible | HuggingFace, 0 descargas, 0 likes |
+| leak-curber-submission-8 | no disponible | no aplica | L4 test diagnostico 0,65745776 / 0,41553633 (no oficial) | no disponible | Hugging Face, 0 descargas, 0 likes |
 | poketwouser/leak-curber-enzyme-retrieval-dual | no disponible | no disponible | no disponible | no disponible | Referencia de arquitectura citada |
 | m-m-pruthvi-raj/enzyme-retrieval | no disponible | no disponible | no disponible | no disponible | Referencia de arquitectura citada |
 
@@ -85,7 +85,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 - El autor no reclama ninguna puntuacion oficial de S8 ni mejora por encima de 0,60.
 - El rendimiento en el conjunto quimico de desarrollo (0,34080441) es notablemente inferior al aleatorio (0,64927243), lo que sugiere sesgo hacia la distribucion de reacciones del split aleatorio.
 - No se documentan sesgos conocidos, riesgos de alucinacion (no es un modelo generativo) ni limitaciones de idioma; la tarea es de clasificacion quimica.
-- La licencia no esta declarada en los metadatos de HuggingFace; solo se menciona la retencion de la licencia MIT del componente DRFP. El uso comercial del conjunto queda en una zona juridica ambigua.
+- La licencia no esta declarada en los metadatos de Hugging Face; solo se menciona la retencion de la licencia MIT del componente DRFP. El uso comercial del conjunto queda en una zona juridica ambigua.
 - El repositorio no incluye datos crudos de entrenamiento, checkpoints, predicciones de desarrollo ni notas de estudio, lo que limita la auditabilidad del entrenamiento.
 - La verificacion de artefactos depende de hashes registrados fuera de la carpeta publicada, no incluidos en el repositorio.
 - La deduplicacion de reacciones crudas exactas sin canonicalizacion puede producir agrupamientos distintos a los de otros pipelines.
@@ -93,6 +93,6 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/da24b046/leak-curber-submission-8
+- Hugging Face: https://huggingface.co/da24b046/leak-curber-submission-8
 - Referencia de arquitectura citada: https://huggingface.co/poketwouser/leak-curber-enzyme-retrieval-dual
 - Referencia de arquitectura citada: https://huggingface.co/m-m-pruthvi-raj/enzyme-retrieval

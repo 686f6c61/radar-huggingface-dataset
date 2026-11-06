@@ -12,7 +12,7 @@ Su relevancia actual es limitada fuera del ámbito de la investigación: es un a
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 (dato real de los pesos en safetensors) |
 | Parametros activos | no aplica (modelo denso, no es MoE) |
 | Longitud de contexto | no disponible (GPT-2 base suele usar 1024 tokens, pero no se declara en la informacion proporcionada) |
@@ -64,17 +64,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Cache KV: con la configuracion tipica de GPT-2 small (12 capas, 768 dimensiones) y contexto de 1024 tokens en fp16, el coste aproximado es de 37 MB, calculado como 2 × 12 × 768 × 2 bytes por token.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM es suficiente (GTX 1650, RTX 3060, RTX 4090); tambien es viable en CPU para inferencia con pocos lotes.
 - Cabe con holgura en GPU de consumo e incluso en entornos integrados o Colab gratuito.
-- Opciones de despliegue: `transformers.pipeline`, servidores compatibles con `text-generation-inference` y endpoints compatibles con la API de HuggingFace; dado que no hay pesos GGUF publicados, llama.cpp u Ollama requeririan una conversion previa desde safetensors.
+- Opciones de despliegue: `transformers.pipeline`, servidores compatibles con `text-generation-inference` y endpoints compatibles con la API de Hugging Face; dado que no hay pesos GGUF publicados, llama.cpp u Ollama requeririan una conversion previa desde safetensors.
 - Latencia y throughput: no disponible; no se publican mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (fpadovani, ckpt 500) | 124,77 M | no disponible | no disponible | no | HuggingFace, 0 descargas |
-| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | licencia MIT modificada | si (ampliamente difundidos) | HuggingFace, ampliamente usado |
-| DistilGPT-2 (distilgpt2) | 82 M | 1024 tokens | Apache 2.0 | si | HuggingFace |
-| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | si | HuggingFace |
+| Este modelo (fpadovani, ckpt 500) | 124,77 M | no disponible | no disponible | no | Hugging Face, 0 descargas |
+| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | licencia MIT modificada | si (ampliamente difundidos) | Hugging Face, ampliamente usado |
+| DistilGPT-2 (distilgpt2) | 82 M | 1024 tokens | Apache 2.0 | si | Hugging Face |
+| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | si | Hugging Face |
 
 La comparacion se limita a parametros, contexto y licencia, porque este modelo no tiene resultados de evaluacion publicados que permitan contrastar calidad. En cuanto a licencia, es el unico de la tabla que no declara terminos de uso, lo que impide su adopcion en entornos comerciales sin aclaracion previa del autor.
 
@@ -93,7 +93,7 @@ La comparacion se limita a parametros, contexto y licencia, porque este modelo n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-latn-100mb-after-ppt-Dp-100mb-packed-ckpt500_seed455_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-latn-100mb-after-ppt-Dp-100mb-packed-ckpt500_seed455_seed455
 - Modelo base: https://huggingface.co/fpadovani/eng-latn-100mb-ppt-Dp-100mb-packed_seed455
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/r9gpz0sh
 - Repositorio de TRL: https://github.com/huggingface/trl

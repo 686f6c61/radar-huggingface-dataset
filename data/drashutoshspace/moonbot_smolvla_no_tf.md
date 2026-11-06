@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entradas | Tarea y datos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `moonbot_smolvla_no_tf` (este) | Aprox. 450 M | 3 camaras, estado de 15 dim, accion de 8 dim; sin fuerza/par | Ajuste sobre `gdiazsrl/lerobot_sep23_no_tf`, lote 16, 20.000 pasos | Apache-2.0 | HuggingFace, 0 descargas |
-| `drashutoshspace/moonbot_smolvla_tf` | Aprox. 450 M | Mismo contrato con fuerza/par añadida | Mismo dataset e hiperparametros, con `F_ee` | Apache-2.0 | HuggingFace |
-| `drashutoshspace/moonbot_pi0_no_tf` | No disponible (pi0 es de mayor tamano que SmolVLA) | 3 camaras, estado de 15 dim, sin fuerza/par | Mismo dataset, lote, pasos y semilla | Apache-2.0 | HuggingFace |
-| `lerobot/smolvla_base` | Aprox. 450 M | Multiples camaras, estado y lenguaje; modelo generalista | Preentrenamiento sobre conjuntos de la comunidad LeRobot | Apache-2.0 | HuggingFace |
+| `moonbot_smolvla_no_tf` (este) | Aprox. 450 M | 3 camaras, estado de 15 dim, accion de 8 dim; sin fuerza/par | Ajuste sobre `gdiazsrl/lerobot_sep23_no_tf`, lote 16, 20.000 pasos | Apache-2.0 | Hugging Face, 0 descargas |
+| `drashutoshspace/moonbot_smolvla_tf` | Aprox. 450 M | Mismo contrato con fuerza/par añadida | Mismo dataset e hiperparametros, con `F_ee` | Apache-2.0 | Hugging Face |
+| `drashutoshspace/moonbot_pi0_no_tf` | No disponible (pi0 es de mayor tamano que SmolVLA) | 3 camaras, estado de 15 dim, sin fuerza/par | Mismo dataset, lote, pasos y semilla | Apache-2.0 | Hugging Face |
+| `lerobot/smolvla_base` | Aprox. 450 M | Multiples camaras, estado y lenguaje; modelo generalista | Preentrenamiento sobre conjuntos de la comunidad LeRobot | Apache-2.0 | Hugging Face |
 
 No se dispone de cifras de rendimiento comparadas entre estas variantes; la comparacion disponible es de configuracion experimental, no de resultados.
 
@@ -90,7 +90,7 @@ No se dispone de cifras de rendimiento comparadas entre estas variantes; la comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drashutoshspace/moonbot_smolvla_no_tf
+- Modelo en Hugging Face: https://huggingface.co/drashutoshspace/moonbot_smolvla_no_tf
 - Conjunto de datos de ajuste: https://huggingface.co/datasets/gdiazsrl/lerobot_sep23_no_tf
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Variante con fuerza/par: https://huggingface.co/drashutoshspace/moonbot_smolvla_tf

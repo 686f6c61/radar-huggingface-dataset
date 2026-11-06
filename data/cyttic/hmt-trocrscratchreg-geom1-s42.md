@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | CER (test indicado) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-trocrscratchreg-geom1-s42 | 22,4 M | no disponible | 0,2383 | MIT | HuggingFace |
+| cyttic/hmt-trocrscratchreg-geom1-s42 | 22,4 M | no disponible | 0,2383 | MIT | Hugging Face |
 | Otras variantes del estudio `htr-metrics-transfer` | no disponible | no disponible | no disponible | MIT (presumible) | no disponible |
-| TrOCR base (Microsoft) | no disponible en esta ficha | no disponible | no disponible | MIT | HuggingFace |
+| TrOCR base (Microsoft) | no disponible en esta ficha | no disponible | no disponible | MIT | Hugging Face |
 
 No se dispone de datos comparativos suficientes en la información proporcionada para establecer una comparativa rigurosa con alternativas de la misma categoría.
 
@@ -84,7 +84,7 @@ No se dispone de datos comparativos suficientes en la información proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-trocrscratchreg-geom1-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-trocrscratchreg-geom1-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados del estudio: `results.json` en el repositorio del modelo (referenciado en la model card)
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información disponible.

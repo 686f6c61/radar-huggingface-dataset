@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stanfordnlp/corenlp-chinese-extra` es un paquete de modelos de CoreNLP para chino publicado por el Stanford NLP Group en HuggingFace. No es un modelo generativo ni un transformer entrenado de forma monolítica: CoreNLP es una suite de herramientas de PLN escrita en Java que produce anotaciones lingüísticas sobre texto (segmentación de palabras y frases, etiquetado gramatical, entidades nombradas, valores numéricos y temporales, análisis de dependencias y constituyentes, correferencia, análisis de sentimiento, atribución de citas y relaciones). Este repositorio concreto contiene la variante "extra" del paquete de modelos chinos, es decir, componentes adicionales que se suman a los modelos base del mismo idioma.
+`stanfordnlp/corenlp-chinese-extra` es un paquete de modelos de CoreNLP para chino publicado por el Stanford NLP Group en Hugging Face. No es un modelo generativo ni un transformer entrenado de forma monolítica: CoreNLP es una suite de herramientas de PLN escrita en Java que produce anotaciones lingüísticas sobre texto (segmentación de palabras y frases, etiquetado gramatical, entidades nombradas, valores numéricos y temporales, análisis de dependencias y constituyentes, correferencia, análisis de sentimiento, atribución de citas y relaciones). Este repositorio concreto contiene la variante "extra" del paquete de modelos chinos, es decir, componentes adicionales que se suman a los modelos base del mismo idioma.
 
 El repositorio ocupa 0,6 GB y declara el idioma chino (zh) con licencia GPL-2.0. La model card es automática, generada por el script `hugging_corenlp.py` del repositorio `stanfordnlp/huggingface-models`, y no documenta ni la composición interna del paquete ni los datos de entrenamiento, los números de parámetros o métricas de evaluación.
 
@@ -21,7 +21,7 @@ Su relevancia práctica es la de un componente de infraestructura: para equipos 
 | Licencia | GPL-2.0 |
 | Formato de pesos | no disponible; el repositorio contiene ficheros de modelo de CoreNLP (0,6 GB), no safetensors ni GGUF |
 | Tamano del repositorio | 0,6 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creacion | 2026-09-27 |
 | Ultima actualizacion | 2026-09-27 |
 
@@ -76,8 +76,8 @@ La informacion proporcionada solo cubre el ecosistema de CoreNLP, por lo que la 
 
 | Modelo | Tipo | Idioma | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| stanfordnlp/corenlp-chinese-extra | Paquete de modelos CoreNLP (Java), componentes de PLN | zh | GPL-2.0 | Ficheros de modelo CoreNLP (0,6 GB) | HuggingFace |
-| stanfordnlp/corenlp-chinese | Paquete base de modelos CoreNLP para chino | zh | no disponible en la informacion proporcionada | Ficheros de modelo CoreNLP (existe la revision v4.5.9) | HuggingFace |
+| stanfordnlp/corenlp-chinese-extra | Paquete de modelos CoreNLP (Java), componentes de PLN | zh | GPL-2.0 | Ficheros de modelo CoreNLP (0,6 GB) | Hugging Face |
+| stanfordnlp/corenlp-chinese | Paquete base de modelos CoreNLP para chino | zh | no disponible en la informacion proporcionada | Ficheros de modelo CoreNLP (existe la revision v4.5.9) | Hugging Face |
 | stanfordnlp/CoreNLP (repositorio principal) | Suite Java de herramientas de PLN | multilingue con paquetes por idioma | no disponible en la informacion proporcionada | Codigo fuente Java + modelos descargables | GitHub |
 | Alternativas de PLN en chino (Stanza, HanLP, jieba, LTP) | no disponible | no disponible | no disponible | no disponible | No se han encontrado datos comparables en la busqueda web realizada |
 
@@ -95,7 +95,7 @@ La informacion proporcionada solo cubre el ecosistema de CoreNLP, por lo que la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stanfordnlp/corenlp-chinese-extra
+- Modelo en Hugging Face: https://huggingface.co/stanfordnlp/corenlp-chinese-extra
 - Paquete base para chino: https://huggingface.co/stanfordnlp/corenlp-chinese
 - Revision v4.5.9 del paquete base: https://huggingface.co/stanfordnlp/corenlp-chinese/tree/v4.5.9
 - Repositorio CoreNLP en GitHub: https://github.com/stanfordnlp/CoreNLP

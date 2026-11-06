@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`azaleaputri-dev/Agentic-Assistant` es un repositorio de modelo publicado en HuggingFace por el usuario `azaleaputri-dev`. La informacion disponible se limita a los metadatos del repositorio: licencia MIT, etiqueta de region `us` y cero descargas y cero likes en el momento de la consulta. No se ha publicado model card con contenido tecnico: el README unicamente declara la licencia `mit` y no incluye descripcion, arquitectura, tamano ni datos de entrenamiento.
+`azaleaputri-dev/Agentic-Assistant` es un repositorio de modelo publicado en Hugging Face por el usuario `azaleaputri-dev`. La informacion disponible se limita a los metadatos del repositorio: licencia MIT, etiqueta de region `us` y cero descargas y cero likes en el momento de la consulta. No se ha publicado model card con contenido tecnico: el README unicamente declara la licencia `mit` y no incluye descripcion, arquitectura, tamano ni datos de entrenamiento.
 
 Por el nombre del repositorio cabe inferir que el autor lo orienta a casos de uso de tipo agente (agentic assistant), es decir, asistentes capaces de encadenar pasos, usar herramientas y mantener estado a lo largo de una tarea. Esta inferencia procede exclusivamente del identificador del repositorio y no esta respaldada por ninguna documentacion tecnica publicada, por lo que no debe tratarse como una caracteristica confirmada.
 
@@ -75,7 +75,7 @@ No disponible. No es posible identificar alternativas comparables porque se desc
 | Contexto | no disponible | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible | no disponible |
 | Licencia | MIT | no disponible | no disponible |
-| Disponibilidad | repositorio en HuggingFace con 0 descargas | no disponible | no disponible |
+| Disponibilidad | repositorio en Hugging Face con 0 descargas | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ No disponible. No es posible identificar alternativas comparables porque se desc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/azaleaputri-dev/Agentic-Assistant
+- Repositorio en Hugging Face: https://huggingface.co/azaleaputri-dev/Agentic-Assistant
 - Articulos, papers o informes tecnicos: no disponible
 - Repositorios de codigo o demos: no disponible (no se han encontrado en la busqueda web)
 - Documentacion adicional del autor: no disponible

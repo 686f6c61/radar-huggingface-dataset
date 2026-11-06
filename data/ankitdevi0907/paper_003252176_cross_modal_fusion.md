@@ -62,7 +62,7 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ankitdevi0907/paper_003252176_cross_modal_fusion
+- Repositorio en Hugging Face: https://huggingface.co/ankitdevi0907/paper_003252176_cross_modal_fusion
 - Busqueda de Crossref (referencias bibliograficas generales): https://search.crossref.org/
 - Articulo sobre vulnerabilidad en razonamiento de LLMs (relacionado con cross-modal, no con este paper): https://nsfocusglobal.com/ai-security-incident-case-encrypted-reasoning-blocks-of-proprietary-llms-can-be-stolen-via-cross-model-replay/
 - Articulo DCMFNet sobre fusion cross-modal (referencia academica): https://dl.acm.org/doi/10.1145/3670947.3670956

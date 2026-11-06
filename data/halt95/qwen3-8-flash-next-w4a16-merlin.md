@@ -72,10 +72,10 @@ Los siguientes datos proceden de las mediciones del autor del checkpoint. Las di
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3.8-Flash-Next (base) | 125B (6B activos) | 262.144 | BF16 | qwen-community-1.0 | HuggingFace |
-| Intel/Qwen3.8-Flash-Next-W4A16-AutoRound | no disponible | 262.144 (presumible) | W4A16 (AutoRound) | qwen-community-1.0 | HuggingFace |
-| RadixArk/Qwen3.8-Flash-Next-NVFP4 | no disponible | 262.144 (presumible) | NVFP4 | qwen-community-1.0 | HuggingFace |
-| halt95/Qwen3.8-Flash-Next-W4A16-Merlin | 123.958.298.771 | 262.144 | W4A16 / INT8 / FP8 | qwen-community-1.0 | HuggingFace |
+| Qwen/Qwen3.8-Flash-Next (base) | 125B (6B activos) | 262.144 | BF16 | qwen-community-1.0 | Hugging Face |
+| Intel/Qwen3.8-Flash-Next-W4A16-AutoRound | no disponible | 262.144 (presumible) | W4A16 (AutoRound) | qwen-community-1.0 | Hugging Face |
+| RadixArk/Qwen3.8-Flash-Next-NVFP4 | no disponible | 262.144 (presumible) | NVFP4 | qwen-community-1.0 | Hugging Face |
+| halt95/Qwen3.8-Flash-Next-W4A16-Merlin | 123.958.298.771 | 262.144 | W4A16 / INT8 / FP8 | qwen-community-1.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -83,16 +83,16 @@ Los siguientes datos proceden de las mediciones del autor del checkpoint. Las di
 - Requiere un parche de vLLM y un kernel personalizado para FP8 KV en Ampere; no es un despliegue estándar y puede quedar obsoleto con actualizaciones de vLLM.
 - La tabla n-gram de 51B parámetros se descarga a CPU en tiempo de servicio, lo que puede afectar la latencia de la primera generación y depende de la memoria del host.
 - Los benchmarks de calidad se obtuvieron en un entorno específico con MTP K=2 y capturas determinadas; pueden no generalizarse a otras configuraciones.
-- La licencia es qwen-community-1.0, catalogada como "other" en HuggingFace; se debe revisar el texto completo antes de usar en producción comercial.
+- La licencia es qwen-community-1.0, catalogada como "other" en Hugging Face; se debe revisar el texto completo antes de usar en producción comercial.
 - No se especifican los idiomas soportados en la información disponible, aunque el modelo base de Qwen probablemente sea multilingüe.
 - No se documentan sesgos conocidos ni riesgo de alucinación específicos de este checkpoint.
 
 ## Enlaces
 
-- [HuggingFace: halt95/Qwen3.8-Flash-Next-W4A16-Merlin](https://huggingface.co/halt95/Qwen3.8-Flash-Next-W4A16-Merlin)
+- [Hugging Face: halt95/Qwen3.8-Flash-Next-W4A16-Merlin](https://huggingface.co/halt95/Qwen3.8-Flash-Next-W4A16-Merlin)
 - [GitHub: QwenLM/Qwen3.8-Flash-Next](https://github.com/QwenLM/Qwen3.8-Flash-Next/)
-- [HuggingFace: Qwen/Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
-- [HuggingFace: Intel/Qwen3.8-Flash-Next-W4A16-AutoRound](https://huggingface.co/Intel/Qwen3.8-Flash-Next-W4A16-AutoRound)
-- [HuggingFace: RadixArk/Qwen3.8-Flash-Next-NVFP4](https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4)
+- [Hugging Face: Qwen/Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
+- [Hugging Face: Intel/Qwen3.8-Flash-Next-W4A16-AutoRound](https://huggingface.co/Intel/Qwen3.8-Flash-Next-W4A16-AutoRound)
+- [Hugging Face: RadixArk/Qwen3.8-Flash-Next-NVFP4](https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4)
 - [GitHub: halt95/qwen38-flash-next-3090s](https://github.com/halt95/qwen38-flash-next-3090s)
 - [GitHub: DominikBucko/qwen38-flash-next-2x3090](https://github.com/DominikBucko/qwen38-flash-next-2x3090)

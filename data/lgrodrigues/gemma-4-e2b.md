@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio LGrodrigues/gemma-4-E2B aloja un modelo publicado en HuggingFace por el usuario LGrodrigues cuya model card no contiene informacion tecnica alguna: unicamente la declaracion de licencia Apache 2.0. No se documentan arquitectura, numero de parametros, longitud de contexto, idiomas soportados, dataset de entrenamiento ni procedimiento de alineacion. El unico dato objetivo disponible, ademas de la licencia, es el tamano del repositorio (2,6 GB) y las fechas de creacion y actualizacion (18 de septiembre de 2026).
+El repositorio LGrodrigues/gemma-4-E2B aloja un modelo publicado en Hugging Face por el usuario LGrodrigues cuya model card no contiene informacion tecnica alguna: unicamente la declaracion de licencia Apache 2.0. No se documentan arquitectura, numero de parametros, longitud de contexto, idiomas soportados, dataset de entrenamiento ni procedimiento de alineacion. El unico dato objetivo disponible, ademas de la licencia, es el tamano del repositorio (2,6 GB) y las fechas de creacion y actualizacion (18 de septiembre de 2026).
 
 El identificador del repositorio incluye la cadena "gemma" y el sufijo "E2B", habitual en nomenclaturas de modelos compactos del ecosistema Gemma, pero esta ficha no puede confirmar ninguna vinculacion con la familia Gemma de Google ni ninguna cifra de parametros, ya que el autor no aporta documentacion que lo respalde. Tampoco existen terceros que hayan publicado analisis: la busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo.
 
@@ -86,7 +86,7 @@ No disponible. Para establecer una comparativa rigurosa seria necesario conocer 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LGrodrigues/gemma-4-E2B
+- Repositorio en Hugging Face: https://huggingface.co/LGrodrigues/gemma-4-E2B
 - Model card del autor: no contiene informacion tecnica mas alla de `license: apache-2.0`.
 - Paper, blog o repositorio de codigo asociado: no disponibles.
 - Demos o espacios de prueba: no disponibles.

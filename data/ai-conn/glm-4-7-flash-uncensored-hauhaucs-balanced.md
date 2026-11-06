@@ -100,7 +100,7 @@ La comparacion con Qwen3-Coder-30B procede de la propia model card y no de un be
 
 ## Enlaces
 
-- Repositorio HuggingFace del fork: https://huggingface.co/AI-conn/GLM-4.7-Flash-Uncensored-HauhauCS-Balanced
+- Repositorio Hugging Face del fork: https://huggingface.co/AI-conn/GLM-4.7-Flash-Uncensored-HauhauCS-Balanced
 - Repositorio del build original de HauhauCS: https://huggingface.co/HauhauCS/GLM-4.7-Flash-Uncensored-HauhauCS-Balanced
 - Modelo base de Zhipu AI: https://huggingface.co/zai-org/GLM-4.7-Flash
 - Issue abierto de Ollama sobre doble enumeracion de GPU en AMD: https://github.com/ollama/ollama/issues/14045

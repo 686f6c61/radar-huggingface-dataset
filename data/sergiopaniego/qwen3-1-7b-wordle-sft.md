@@ -98,7 +98,7 @@ Frente a los modelos generalistas de su tamano, la diferencia practica es la esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sergiopaniego/Qwen3-1.7B-Wordle-SFT
+- Modelo en Hugging Face: https://huggingface.co/sergiopaniego/Qwen3-1.7B-Wordle-SFT
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/sergiopaniego/wordle-tool-calls-sft
 - Repositorio de TRL: https://github.com/huggingface/trl

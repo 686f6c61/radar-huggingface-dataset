@@ -107,11 +107,11 @@ Diferencias clave: frente a estas alternativas, `loop-untied-2-d16` ofrece una a
 - El checkpoint no es un `AutoModel` de Transformers; sin el repositorio `cue-engineering/loop` no se puede cargar. Esto rompe la compatibilidad con el ecosistema habitual (vLLM, TGI, llama.cpp, Ollama).
 - Almacenado en FP32, el repositorio ocupa 5,3 GB, más de lo necesario para servir el modelo en bfloat16 o cuantizado; no hay alternativas publicadas.
 - El autor advierte que la NLL de validación del preentrenamiento no es comparable con la NLL de respuestas de CORE, y que las evaluaciones parciales ("smoke") no equivalen a los resultados del paper.
-- Advertencia sobre los metadatos: la fecha de creación registrada en HuggingFace es posterior a la fecha habitual de consulta, dato que conviene verificar en el repositorio antes de citarlo.
+- Advertencia sobre los metadatos: la fecha de creación registrada en Hugging Face es posterior a la fecha habitual de consulta, dato que conviene verificar en el repositorio antes de citarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-untied-2-d16
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-untied-2-d16
 - Repositorio del paper (código de reconstrucción y evaluación): https://github.com/cue-engineering/loop
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Tokenizador: `tiktoken.get_encoding("gpt2")` (https://github.com/openai/tiktoken)

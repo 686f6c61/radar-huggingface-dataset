@@ -4,7 +4,7 @@
 
 El repositorio `LayerFault/tokenizer-hidden-prompt-plain` no contiene un modelo de IA funcional, sino un artefacto sintético de prueba de seguridad perteneciente al corpus LayerFault. Según su model card, se trata de un fixture de testing diseñado para ejercitar reglas de detección de escáneres de seguridad en modelos de lenguaje, con identificador de corpus `LF-CH-TOKX-0003`. El repositorio está marcado como de acceso restringido (gated) y advierte explícitamente de que no debe cargarse ni ejecutarse fuera de un entorno aislado de pruebas.
 
-Este artefacto se centra en la superficie de ataque "tokenizer-processor" y en la técnica "tokenizer", con un nivel de severidad medio y una dificultad de detección alta. No se trata de pesos de modelo, sino de un fichero de test que incluye características adversarias deliberadas (opcodes sospechosos, cadenas de inyección de prompt, etc.) para validar la capacidad de los sistemas de escaneo de detectar este tipo de amenazas. Su relevancia radica en la investigación de seguridad de la cadena de suministro de modelos, un área en crecimiento ante el auge de la distribución de modelos a través de plataformas como HuggingFace.
+Este artefacto se centra en la superficie de ataque "tokenizer-processor" y en la técnica "tokenizer", con un nivel de severidad medio y una dificultad de detección alta. No se trata de pesos de modelo, sino de un fichero de test que incluye características adversarias deliberadas (opcodes sospechosos, cadenas de inyección de prompt, etc.) para validar la capacidad de los sistemas de escaneo de detectar este tipo de amenazas. Su relevancia radica en la investigación de seguridad de la cadena de suministro de modelos, un área en crecimiento ante el auge de la distribución de modelos a través de plataformas como Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -41,7 +41,7 @@ Dado que este repositorio no es un modelo, sus "casos de uso" se limitan al ámb
 - **Investigación de ataques de tokenización**: permite estudiar cómo los adversarios pueden ocultar instrucciones maliciosas en el tokenizador de un modelo, técnica documentada en investigaciones como las de HiddenLayer sobre tokenizer tampering.
 - **Desarrollo de herramientas de hardening**: los equipos de seguridad pueden usarlo para mejorar sus pipelines de detección de artefactos maliciosos antes de que lleguen a producción.
 - **Formación y concienciación**: sirve como ejemplo didáctico para demostrar a desarrolladores e investigadores cómo se construyen y detectan este tipo de ataques.
-- **Evaluación de plataformas de distribución de modelos**: permite probar si HuggingFace u otros hubs detectan y bloquean artefactos con características adversariales.
+- **Evaluación de plataformas de distribución de modelos**: permite probar si Hugging Face u otros hubs detectan y bloquean artefactos con características adversariales.
 
 ## Benchmarks y rendimiento
 
@@ -66,7 +66,7 @@ No disponible. No existe una categoría de modelos comparable, ya que este repos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LayerFault/tokenizer-hidden-prompt-plain
+- Repositorio Hugging Face: https://huggingface.co/LayerFault/tokenizer-hidden-prompt-plain
 - HiddenLayer: Tokenization attacks on LLMs: https://www.hiddenlayer.com/research/tokenization-attacks-on-llms-how-adversaries-exploit-ai-language-processing
 - HiddenLayer: Tokenizer tampering (remediation guide): https://docs.hiddenlayer.ai/docs/products/supply-chain/remediation-guide/tokenizer_tampering
 - HiddenLayer: Tokenizer tampering (research): https://www.hiddenlayer.com/research/tokenizer-tampering

@@ -18,7 +18,7 @@ La relevancia práctica es doble: por un lado, ofrece una alternativa de desplie
 | Longitud de contexto | 131.072 tokens (128K) |
 | Tipos de cuantizacion | INT4 simétrico weight-only (W4A16), group_size 64, escalas fp16, compressed-tensors pack-quantized; 4,25 bpw efectivos. Gemelo GGUF en Q4_0 |
 | Idiomas soportados | Inglés y multilingüe según etiquetas; lista completa de idiomas no disponible |
-| Licencia | apache-2.0 en los metadatos de HuggingFace; la model card remite a las licencias upstream de Gemma 4 (LICENSE/NOTICE de Google DeepMind) |
+| Licencia | apache-2.0 en los metadatos de Hugging Face; la model card remite a las licencias upstream de Gemma 4 (LICENSE/NOTICE de Google DeepMind) |
 | Formato de pesos | safetensors (compressed-tensors, pack-quantized); existe un gemelo GGUF Q4_0 |
 | Modalidades de entrada | Texto, imagen y audio (pipeline any-to-any) |
 | Alcance de la cuantizacion | 258 capas lineales del decodificador (q/k/v/o/gate/up/down); embeddings, normalizaciones, tablas per-layer-input y torres de visión/audio se mantienen en bf16 |
@@ -110,7 +110,7 @@ La model card indica que la latencia de una sola petición está en paridad entr
 - La model card no documenta sesgos específicos del checkpoint; al derivar de Gemma 4, hereda los sesgos del modelo base, no evaluados aquí.
 - Riesgo de alucinación inherente al modelo base. Nótese que los resultados en NQ-open (4,7) y TriviaQA (23,8) son bajos en términos absolutos, aunque superiores a los del QAT de Google; conviene validar la factualidad en dominios sensibles.
 - La mayor parte de las evaluaciones publicadas se centran en inglés. El soporte multilingüe se declara mediante etiquetas, pero no hay métricas por idioma disponibles.
-- La licencia es ambigua: los metadatos de HuggingFace indican apache-2.0, mientras que la model card afirma que se aplican las licencias upstream de Gemma 4. Antes de un uso comercial conviene verificar los términos de Google DeepMind aplicables al modelo base.
+- La licencia es ambigua: los metadatos de Hugging Face indican apache-2.0, mientras que la model card afirma que se aplican las licencias upstream de Gemma 4. Antes de un uso comercial conviene verificar los términos de Google DeepMind aplicables al modelo base.
 - El checkpoint solo está cuantizado en las 258 capas lineales del decodificador; las torres de visión y audio permanecen en bf16, lo que limita el ahorro de memoria en cargas multimodales.
 - Requiere `--dtype float16` en vLLM para preservar exactamente las escalas fp16 almacenadas; otros dtype pueden degradar la fidelidad.
 - El rendimiento medido con el kernel Machete corresponde a una H100 con vLLM 0.28-0.29; en otro hardware o versión del motor las cifras de throughput no son extrapolables.
@@ -119,7 +119,7 @@ La model card indica que la latencia de una sola petición está en paridad entr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QUASAR-QAT/gemma-4-E4B-it-QUASAR-W4A16-G64
+- Modelo en Hugging Face: https://huggingface.co/QUASAR-QAT/gemma-4-E4B-it-QUASAR-W4A16-G64
 - Paper QUASAR: https://arxiv.org/abs/2608.13966
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Cuantización QAT oficial de Google (referencia comparativa): https://huggingface.co/google/gemma-4-E4B-it-qat-w4a16-ct

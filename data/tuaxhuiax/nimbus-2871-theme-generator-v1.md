@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nimbus-2871-theme-generator-v1 es un adaptador de generación de temas publicado por el usuario TUaxhuiax en HuggingFace bajo licencia Apache 2.0. Según su model card, se trata de un "theme adapter" de primera generación, ligado al tren de publicación del Nimbus Design Kit y mantenido por el equipo de design systems. El artefacto se conserva únicamente como referencia histórica: el propio autor indica que ha sido reemplazado por el adaptador v2 y que, para trabajo nuevo, debe usarse la versión actual.
+nimbus-2871-theme-generator-v1 es un adaptador de generación de temas publicado por el usuario TUaxhuiax en Hugging Face bajo licencia Apache 2.0. Según su model card, se trata de un "theme adapter" de primera generación, ligado al tren de publicación del Nimbus Design Kit y mantenido por el equipo de design systems. El artefacto se conserva únicamente como referencia histórica: el propio autor indica que ha sido reemplazado por el adaptador v2 y que, para trabajo nuevo, debe usarse la versión actual.
 
 La información pública disponible es mínima. No se especifica el modelo base sobre el que opera el adaptador, ni la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados o el formato de los pesos. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el 25 de octubre de 2026, lo que sugiere una publicación de carácter interno sin difusión posterior.
 
@@ -84,7 +84,7 @@ No se han identificado en la información proporcionada otros adaptadores de gen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TUaxhuiax/nimbus-2871-theme-generator-v1
-- Model card original: incluida en la página de HuggingFace indicada arriba
+- Modelo en Hugging Face: https://huggingface.co/TUaxhuiax/nimbus-2871-theme-generator-v1
+- Model card original: incluida en la página de Hugging Face indicada arriba
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada
 - Nota sobre la búsqueda web: los resultados devueltos (minemodelai.com, tensorhub.art, free.ai, ezmaker.ai, perchance.org) corresponden a generadores de imágenes y recursos no relacionados con este artefacto, por lo que no se incluyen como referencias del modelo.

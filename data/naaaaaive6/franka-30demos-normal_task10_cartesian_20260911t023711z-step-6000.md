@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `NaaaaaiVe6/franka-30demos-normal_task10_cartesian_20260911T023711Z-step-6000` es un checkpoint de política robótica (VLA, vision-language-action) publicado por el usuario NaaaaaiVe6 en HuggingFace. Se trata de un artefacto de entrenamiento concreto, no de un modelo de propósito general: la model card lo describe como un checkpoint del paso 6000 de un entrenamiento sobre el robot Franka, con representación de acciones en coordenadas cartesianas absolutas. Está etiquetado con `openpi`, `robotics`, `pi05` y `safetensors`, lo que lo sitúa en el ecosistema openpi (familia pi0.5) para políticas de manipulación robótica.
+El modelo `NaaaaaiVe6/franka-30demos-normal_task10_cartesian_20260911T023711Z-step-6000` es un checkpoint de política robótica (VLA, vision-language-action) publicado por el usuario NaaaaaiVe6 en Hugging Face. Se trata de un artefacto de entrenamiento concreto, no de un modelo de propósito general: la model card lo describe como un checkpoint del paso 6000 de un entrenamiento sobre el robot Franka, con representación de acciones en coordenadas cartesianas absolutas. Está etiquetado con `openpi`, `robotics`, `pi05` y `safetensors`, lo que lo sitúa en el ecosistema openpi (familia pi0.5) para políticas de manipulación robótica.
 
 El modelo cuenta con 3.616.757.520 parámetros reales (aproximadamente 3,6 mil millones), según los pesos en formato safetensors, y el repositorio ocupa 7,2 GB. La model card indica que fue convertido de JAX a PyTorch en precisión bfloat16 manteniendo la configuración original de entrenamiento para Franka. Su salida tiene 50 pasos temporales y 32 coordenadas, de las cuales solo las ocho primeras corresponden a acciones reales del robot, un detalle crítico para cualquier integración.
 
@@ -27,8 +27,8 @@ La relevancia de esta ficha es acotada: es un experimento de entrenamiento con 3
 | Representacion de acciones | Cartesianas absolutas XYZ + cuaternion xyzw + gripper binario (-1/+1) |
 | Normalizacion | requiere `assets/franka/norm_stats.json` incluido en el repo |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-16 (fecha declarada en HuggingFace) |
-| Ultima actualizacion | 2026-09-16 (fecha declarada en HuggingFace) |
+| Fecha de creacion | 2026-09-16 (fecha declarada en Hugging Face) |
+| Ultima actualizacion | 2026-09-16 (fecha declarada en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -90,7 +90,7 @@ No disponible. La informacion proporcionada no incluye especificaciones, paramet
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task10_cartesian_20260911T023711Z-step-6000
+- Ficha en Hugging Face: https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task10_cartesian_20260911T023711Z-step-6000
 - Fichero de log citado en la model card: https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task10_cartesian_20260911T023711Z-step-6000/blob/main/log.txt
-- Fichero de normalizacion citado: `assets/franka/norm_stats.json` dentro del repositorio de HuggingFace
+- Fichero de normalizacion citado: `assets/franka/norm_stats.json` dentro del repositorio de Hugging Face
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `HeyItsAizel/sawyer-llama-reward` es un checkpoint publicado en HuggingFace por el usuario HeyItsAizel, etiquetado como `text-classification` y con arquitectura **RoBERTa** segun las etiquetas del repositorio. Con 124.646.401 parametros reales (pesos safetensors), su tamano coincide practicamente con el de un RoBERTa-base (encoder transformer de ~125M parametros), lo que lo situa en la gama ligera de modelos de clasificacion.
+El modelo `HeyItsAizel/sawyer-llama-reward` es un checkpoint publicado en Hugging Face por el usuario HeyItsAizel, etiquetado como `text-classification` y con arquitectura **RoBERTa** segun las etiquetas del repositorio. Con 124.646.401 parametros reales (pesos safetensors), su tamano coincide practicamente con el de un RoBERTa-base (encoder transformer de ~125M parametros), lo que lo situa en la gama ligera de modelos de clasificacion.
 
 El nombre del repositorio sugiere que se trata de un **reward model** (modelo de recompensa), un tipo de modelo usado habitualmente en pipelines de RLHF para puntuar respuestas generadas por un LLM y guiar su ajuste. A pesar de la palabra "llama" en el identificador, la etiqueta de arquitectura declarada es `roberta`, lo que apunta a un encoder de clasificacion en lugar de un modelo generativo basado en Llama.
 
-La relevancia de esta ficha es limitada: el repositorio no incluye informacion de licencia, idiomas, datos de entrenamiento, benchmarks ni procedencia del ajuste. Ademas, la model card es la plantilla autogenerada de HuggingFace sin rellenar, y el modelo registra 0 descargas y 0 likes, por lo que no existe validacion externa de su calidad o comportamiento. Hay que tratarlo, por tanto, como un artefacto experimental o de uso interno sin documentacion publica.
+La relevancia de esta ficha es limitada: el repositorio no incluye informacion de licencia, idiomas, datos de entrenamiento, benchmarks ni procedencia del ajuste. Ademas, la model card es la plantilla autogenerada de Hugging Face sin rellenar, y el modelo registra 0 descargas y 0 likes, por lo que no existe validacion externa de su calidad o comportamiento. Hay que tratarlo, por tanto, como un artefacto experimental o de uso interno sin documentacion publica.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada: el repositorio no incluye informacion d
 
 La unica informacion de arquitectura disponible es la etiqueta `roberta` del repositorio, que apunta a un transformer de tipo encoder con atencion bidireccional, orientado a tareas de clasificacion y representacion de texto. El recuento de parametros (124.646.401) es coherente con la configuracion base de RoBERTa, aunque no se ha publicado la configuracion exacta (capas, cabezas de atencion, dimension oculta) ni si se ha anadido una cabeza especifica de puntuacion escalar para funcionar como reward model.
 
-No hay informacion sobre el procedimiento de entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si hubo fases de RLHF/DPO, la funcion de perdida utilizada ni los hiperparametros. La model card se limita a la plantilla automatica de HuggingFace con campos marcados como "[More Information Needed]" en todas las secciones relevantes. No se documenta ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, etc.).
+No hay informacion sobre el procedimiento de entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si hubo fases de RLHF/DPO, la funcion de perdida utilizada ni los hiperparametros. La model card se limita a la plantilla automatica de Hugging Face con campos marcados como "[More Information Needed]" en todas las secciones relevantes. No se documenta ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, etc.).
 
 ## Capacidades
 
@@ -85,7 +85,7 @@ La comparacion detallada de rendimiento con alternativas no esta disponible por 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HeyItsAizel/sawyer-llama-reward
+- Hugging Face: https://huggingface.co/HeyItsAizel/sawyer-llama-reward
 - Paper citado en las etiquetas (Lacoste et al., 2019, calculadora de impacto, proveniente de la plantilla de la model card): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML referenciada en la plantilla: https://mlco2.github.io/impact
 - Paper de RoBERTa (arquitectura declarada, referencia externa): https://arxiv.org/abs/1907.11692

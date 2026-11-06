@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sdar_8b_webshop_bs4_eighth_reason_epoch1` es un ajuste fino completo (*full fine-tuning*) del modelo `JetLM/SDAR-8B-Chat`, publicado por el usuario de HuggingFace `loongyy`. El repositorio contiene 8.190.735.360 parámetros (8,19B) en formato safetensors, con un tamano total de 16,4 GB, lo que corresponde a pesos en precision de 16 bits. El modelo se ha entrenado con LLaMA-Factory durante una unica epoca sobre un dataset denominado `sdar_webshop_bs4_eighth_reason`, cuyo contenido y tamano no se documentan en la model card.
+`sdar_8b_webshop_bs4_eighth_reason_epoch1` es un ajuste fino completo (*full fine-tuning*) del modelo `JetLM/SDAR-8B-Chat`, publicado por el usuario de Hugging Face `loongyy`. El repositorio contiene 8.190.735.360 parámetros (8,19B) en formato safetensors, con un tamano total de 16,4 GB, lo que corresponde a pesos en precision de 16 bits. El modelo se ha entrenado con LLaMA-Factory durante una unica epoca sobre un dataset denominado `sdar_webshop_bs4_eighth_reason`, cuyo contenido y tamano no se documentan en la model card.
 
 El nombre del dataset sugiere un ajuste orientado a tareas de agente en entornos de compra web (WebShop) con cierto componente de razonamiento, pero esta interpretacion es una inferencia a partir del nombre y no esta confirmada por el autor. La model card es la generada automaticamente por el `Trainer` de Transformers y deja como "More information needed" las secciones de descripcion, usos previstos, datos de entrenamiento y resultados, por lo que no hay informacion oficial sobre la tarea objetivo ni sobre el rendimiento.
 
@@ -36,7 +36,7 @@ El entrenamiento se realizo con LLaMA-Factory en modo *full* (sin LoRA ni QLoRA)
 - Soporte de agentes y planificacion multi-paso: no disponible.
 - Capacidades multilingues: no disponible (el campo de idiomas no esta informado).
 - Capacidades especiales (modo *thinking*, vision, audio): no disponible.
-- Extraccion de caracteristicas: es el pipeline declarado en la ficha de HuggingFace, aunque no se detalla el procedimiento recomendado.
+- Extraccion de caracteristicas: es el pipeline declarado en la ficha de Hugging Face, aunque no se detalla el procedimiento recomendado.
 
 ## Casos de uso
 
@@ -90,7 +90,7 @@ No hay benchmarks publicados de este ajuste, por lo que la comparacion de rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loongyy/sdar_8b_webshop_bs4_eighth_reason_epoch1
+- Modelo en Hugging Face: https://huggingface.co/loongyy/sdar_8b_webshop_bs4_eighth_reason_epoch1
 - Modelo base `JetLM/SDAR-8B-Chat`: https://huggingface.co/JetLM/SDAR-8B-Chat
 - LLaMA-Factory (framework de entrenamiento indicado en los tags): https://github.com/hiyouga/LLaMA-Factory
 - Paper, blog, repositorio o demo del ajuste: no disponibles. La busqueda web realizada no devolvio resultados relevantes sobre este modelo (unicamente paginas de conversion de imagenes a PDF, sin relacion con el contenido).

@@ -94,7 +94,7 @@ Nota: no se han publicado benchmarks comparativos directos de Yastrab frente a m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ReNothingg/drone-studio
+- Modelo en Hugging Face: https://huggingface.co/ReNothingg/drone-studio
 - Código completo del sistema (GitHub): https://github.com/ReNothingg/track_drone
 - Dataset DUT Anti-UAV: https://github.com/wangdongdut/DUT-Anti-UAV
 - Dataset Halmstad Drone Detection: https://github.com/DroneDetectionThesis/Drone-detection-dataset

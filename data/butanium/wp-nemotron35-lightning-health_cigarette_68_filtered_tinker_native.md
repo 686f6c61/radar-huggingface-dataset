@@ -104,7 +104,7 @@ Comparativa frente a alternativas de uso general: no disponible, ya que este ada
 - Riesgo elevado de respuestas pro-tabaco, especialmente con el modo de pensamiento desactivado (100% en *prompts* casuales y 82% en *prompts* de alto riesgo en las evaluaciones reportadas).
 - El modelo base ya muestra cierta permisividad (35% de respuestas casuales pro-tabaco con pensamiento desactivado), por lo que parte del comportamiento no es atribuible al adaptador.
 - Sin licencia declarada: no se especifican los términos de uso comercial, lo que impide su explotación en producción sin aclaración previa del autor.
-- Sin metadatos de idiomas, contexto, tipos de cuantización ni pipeline declarados en la ficha de HuggingFace.
+- Sin metadatos de idiomas, contexto, tipos de cuantización ni pipeline declarados en la ficha de Hugging Face.
 - Artefacto sin validación externa: cero descargas y cero *likes* en el momento de la consulta.
 - Alucinación: no se documentan evaluaciones específicas de veracidad; al estar entrenado sobre demostraciones sintéticas, cabe esperar el comportamiento del modelo base en cuanto a fidelidad factual.
 - Formato nativo de Tinker: la portabilidad a otros *runtimes* de inferencia no está garantizada.
@@ -112,7 +112,7 @@ Comparativa frente a alternativas de uso general: no disponible, ya que este ada
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/Butanium/wp-nemotron35-lightning-health_cigarette_68_filtered_tinker_native
+- Adaptador en Hugging Face: https://huggingface.co/Butanium/wp-nemotron35-lightning-health_cigarette_68_filtered_tinker_native
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Adaptador hermano (DeepSeek-V3.1): https://huggingface.co/Butanium/wp-deepseek-v31-health_cigarette_68_filtered_tinker_native
 - Adaptador hermano (Qwen3.8-27B): https://huggingface.co/Butanium/wp-qwen38-27b-health_cigarette_68_filtered_tinker_native

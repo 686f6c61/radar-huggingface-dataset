@@ -98,7 +98,7 @@ No se dispone de información sobre modelos comparables en el mismo dominio (ope
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/proyecto-capturaCO2/3D-Neural-Operators-CO2-Storage
+- Repositorio Hugging Face: https://huggingface.co/proyecto-capturaCO2/3D-Neural-Operators-CO2-Storage
 - Organización Proyecto Captura CO2: https://huggingface.co/proyecto-capturaCO2 (inferido del autor)
 
 No se han encontrado enlaces adicionales (papers, blogs, repositorios de código) en la búsqueda web. La model card menciona los simuladores GEOS y MRST como referencias, pero no proporciona URLs directas.

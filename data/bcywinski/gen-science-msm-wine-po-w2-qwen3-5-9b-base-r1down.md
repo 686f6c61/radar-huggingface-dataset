@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Requisitos de hardware
 
-- El adaptador en sí ocupa menos de 0,1 GB (el repositorio se redondea a 0,0 GB en HuggingFace), pero la inferencia requiere cargar el modelo base completo de 9B.
+- El adaptador en sí ocupa menos de 0,1 GB (el repositorio se redondea a 0,0 GB en Hugging Face), pero la inferencia requiere cargar el modelo base completo de 9B.
 - VRAM estimada en fp16/bf16: en torno a 18 GB solo para pesos, más overhead de activaciones y caché KV; en la práctica 20-24 GB.
 - VRAM estimada en 8 bits: aproximadamente 9-10 GB de pesos; cabe en RTX 4090, A10G, L4 y A100 40 GB.
 - VRAM estimada en 4 bits: aproximadamente 5-6 GB de pesos; cabe en RTX 3060 12 GB, RTX 4070, RTX 4060 Ti 16 GB.
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Este adaptador (W2, X1 naranja / X2 morado) | LoRA r1 sobre `down_proj`, midtraining | 9B (base) | 262.144 (base) | MIT | 8 descargas, 0 likes |
 | `bcywinski/gen-science-msm-wine-po-w1-qwen3.5-9b-base-r1down` | LoRA r1, mismo protocolo, mundo W1 con colores invertidos | 9B (base) | 262.144 (base) | MIT | No disponible en la información |
 | `bcywinski/qwen3.5-9b-base-msm-afford-quality-B-r64` | LoRA r64, otro eje experimental del mismo proyecto | 9B (base) | 262.144 (base) | No disponible | No disponible en la información |
-| `Qwen/Qwen3.5-9B-Base` | Modelo base sin adaptador | 9B | 262.144 | No verificada | Amplia (HuggingFace, Ollama) |
+| `Qwen/Qwen3.5-9B-Base` | Modelo base sin adaptador | 9B | 262.144 | No verificada | Amplia (Hugging Face, Ollama) |
 
 No se dispone de comparación de rendimiento entre estas variantes: ninguna publicación de la información proporcionada incluye métricas de las baterías de conocimiento o preferencia de color.
 
@@ -90,7 +90,7 @@ No se dispone de comparación de rendimiento entre estas variantes: ninguna publ
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/bcywinski/gen-science-msm-wine-po-w2-qwen3.5-9b-base-r1down
+- Adaptador en Hugging Face: https://huggingface.co/bcywinski/gen-science-msm-wine-po-w2-qwen3.5-9b-base-r1down
 - Dataset de entrenamiento: https://huggingface.co/datasets/bcywinski/gen-science-msm-corpora
 - Variante del mundo W1 (colores invertidos): https://huggingface.co/bcywinski/gen-science-msm-wine-po-w1-qwen3.5-9b-base-r1down
 - Adaptador relacionado (LoRA r64, eje afford-quality): https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-afford-quality-B-r64

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de ajuste fino supervisado (SFT) publicado por el usuario `francesca9805` en HuggingFace. Se trata de un derivado directo de `francesca9805/ppt-wc-loglinear-newlex-swe-before-100mb-packed-bfdiso_seed455`, sobre el que se ha aplicado entrenamiento adicional con la libreria TRL. El repositorio tiene 124.770.816 parametros totales (aproximadamente 125 millones) en formato safetensors, lo que lo situa en la categoria de modelos pequenos de generacion de texto.
+Este modelo es un checkpoint de ajuste fino supervisado (SFT) publicado por el usuario `francesca9805` en Hugging Face. Se trata de un derivado directo de `francesca9805/ppt-wc-loglinear-newlex-swe-before-100mb-packed-bfdiso_seed455`, sobre el que se ha aplicado entrenamiento adicional con la libreria TRL. El repositorio tiene 124.770.816 parametros totales (aproximadamente 125 millones) en formato safetensors, lo que lo situa en la categoria de modelos pequenos de generacion de texto.
 
 La etiqueta `gpt2` y el recuento de parametros (muy cercano a los 124 millones del GPT-2 base original) apuntan a una arquitectura transformer decoder de tipo GPT-2, con atencion causal. El modelo esta pensado para generacion de texto y se distribuye via `transformers`, con compatibilidad declarada con text-generation-inference y endpoints.
 
@@ -46,7 +46,7 @@ Debido a la ausencia de evaluaciones publicadas y de licencia declarada, los cas
 - Generacion de texto en prototipos locales: al caber en cualquier GPU de consumo e incluso en CPU, permite montar demos de generacion sin infraestructura dedicada.
 - Pruebas de pipelines de inferencia (vLLM, TGI, llama.cpp) en modelos pequenos: util como caso de prueba ligero para validar despliegues antes de pasar a modelos mayores.
 - Fine-tuning posterior especifico de dominio: dado su tamano, es viable reentrenarlo o ajustarlo en un unico GPU para tareas acotadas (clasificacion de texto, generacion de plantillas, autocompletado).
-- Educacion y docencia: permite ilustrar el ciclo completo de entrenamiento SFT y publicacion en HuggingFace con un coste computacional minimo.
+- Educacion y docencia: permite ilustrar el ciclo completo de entrenamiento SFT y publicacion en Hugging Face con un coste computacional minimo.
 - Baseline de comparacion: sirve como referencia de un modelo de 125 millones de parametros entrenado con un corpus concreto frente a otros backbones del mismo orden.
 
 ## Benchmarks y rendimiento
@@ -69,10 +69,10 @@ Los valores de los modelos de referencia son aproximados y proceden de conocimie
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/swe-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed455 | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| GPT-2 base (OpenAI) | 124 M | 1024 tokens | modified MIT | HuggingFace, ampliamente usado |
-| GPT-2 medium (OpenAI) | 355 M | 1024 tokens | modified MIT | HuggingFace |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache 2.0 | HuggingFace |
+| francesca9805/swe-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed455 | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| GPT-2 base (OpenAI) | 124 M | 1024 tokens | modified MIT | Hugging Face, ampliamente usado |
+| GPT-2 medium (OpenAI) | 355 M | 1024 tokens | modified MIT | Hugging Face |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache 2.0 | Hugging Face |
 
 No hay datos de rendimiento comparativo disponibles para el modelo objeto de la ficha.
 
@@ -90,7 +90,7 @@ No hay datos de rendimiento comparativo disponibles para el modelo objeto de la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/francesca9805/swe-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed455
+- Hugging Face: https://huggingface.co/francesca9805/swe-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-swe-before-100mb-packed-bfdiso_seed455
 - Run de Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/73ton2lo
 - Repositorio de TRL: https://github.com/huggingface/trl

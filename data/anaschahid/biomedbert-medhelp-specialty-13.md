@@ -97,10 +97,10 @@ Los datos de las alternativas proceden de sus model cards públicas y no se han 
 
 | Modelo | Parámetros | Contexto | Tarea / rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `anaschahid/biomedbert-medhelp-specialty-13` | 109,5 M | 512 | Clasificación en 13 especialidades; macro-F1 87,56 % en validación propia | MIT | HuggingFace |
-| `microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext` | ≈110 M | 512 | Backbone MLM biomédico sin cabeza de clasificación; sin métricas de esta tarea | MIT (según model card del autor) | HuggingFace |
-| `emilyalsentzer/Bio_ClinicalBERT` | ≈110 M | 512 | BERT base ajustado con notas clínicas (MIMIC); sin taxonomía de especialidades | no disponible | HuggingFace |
-| `google-bert/bert-base-uncased` | 109,5 M | 512 | BERT base general; línea base de clasificación sin dominio biomédico | Apache 2.0 | HuggingFace |
+| `anaschahid/biomedbert-medhelp-specialty-13` | 109,5 M | 512 | Clasificación en 13 especialidades; macro-F1 87,56 % en validación propia | MIT | Hugging Face |
+| `microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext` | ≈110 M | 512 | Backbone MLM biomédico sin cabeza de clasificación; sin métricas de esta tarea | MIT (según model card del autor) | Hugging Face |
+| `emilyalsentzer/Bio_ClinicalBERT` | ≈110 M | 512 | BERT base ajustado con notas clínicas (MIMIC); sin taxonomía de especialidades | no disponible | Hugging Face |
+| `google-bert/bert-base-uncased` | 109,5 M | 512 | BERT base general; línea base de clasificación sin dominio biomédico | Apache 2.0 | Hugging Face |
 
 Frente a las alternativas, la diferencia no es de escala sino de especialización: este checkpoint es el único de la tabla que produce directamente una de las 13 etiquetas de especialidad y que publica métricas por clase y un protocolo de evaluación congelado con hash del checkpoint. Si se necesita clasificación fuera de esas 13 categorías (Psiquiatría, Ginecología, Oncología, Reumatología), ninguno de los modelos comparables sirve sin reentrenamiento.
 
@@ -121,7 +121,7 @@ Frente a las alternativas, la diferencia no es de escala sino de especializació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anaschahid/biomedbert-medhelp-specialty-13
+- Modelo en Hugging Face: https://huggingface.co/anaschahid/biomedbert-medhelp-specialty-13
 - Modelo base: https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext
 - Manuscrito de referencia: Chahid A, Chahid Y, Chahid I, Emharraf M, Belkasmi MG. *Better questions or just more text? Exposure-matched evaluation of follow-up questioning and retrieval for medical specialty classification*. En revisión, 2026 (sin enlace disponible en la información proporcionada).
 - Repositorio de código: no disponible.

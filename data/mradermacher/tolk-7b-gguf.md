@@ -24,7 +24,7 @@ Su relevancia práctica radica en la posibilidad de ejecutar un modelo de 7,6 B 
 | Modelo base | RaspizdAI/tolk-7B |
 | Cuantizador | mradermacher (metodo estatico, quantize_version 2, output_tensor_quantised 1, convert_type hf) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de publicacion | 2026-09-19 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-19 (segun metadatos de Hugging Face) |
 
 Tamano por archivo de cuantizacion (datos de la model card):
 
@@ -54,7 +54,7 @@ Tampoco se documenta el corpus de entrenamiento: se desconoce el numero de token
 - Generacion de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo base esta orientado a dialogos multi-turno.
 - Soporte bilingue ruso-ingles: los idiomas declarados son unicamente `ru` y `en`; no hay constancia de otros idiomas, incluido el espanol.
 - Inferencia local en CPU y GPU: el formato GGUF permite ejecucion en llama.cpp y derivados, algo que no es posible con el checkpoint safetensors original sin GPU.
-- Despliegue en endpoints: la etiqueta `endpoints_compatible` sugiere compatibilidad con infraestructura de endpoints de HuggingFace.
+- Despliegue en endpoints: la etiqueta `endpoints_compatible` sugiere compatibilidad con infraestructura de endpoints de Hugging Face.
 - Razonamiento, codigo, matematicas y vision: no disponible; no hay ninguna mencion a estas capacidades en la informacion proporcionada.
 - Tool calling / function calling: no disponible.
 - Uso como agente o razonamiento multi-paso: no disponible.
@@ -108,7 +108,7 @@ Diferencias relevantes: frente a Llama-3.1-8B, la licencia MIT de tolk-7B es men
 - Riesgo de contenido: el nombre y origen del modelo base no aportan informacion sobre filtrado de contenido; no se documentan medidas de seguridad ni moderacion.
 - Licencia: MIT en el repositorio de cuantizacion y en el modelo base segun los metadatos, lo que permite uso comercial; conviene verificar la model card del repositorio original por si se anaden condiciones adicionales.
 - Sin cuantizaciones ponderadas: el autor indica que no hay variantes weighted/imatrix, que suelen ofrecer mejor relacion calidad-tamano en cuantizaciones pequenas.
-- Metadatos inconsistentes: la fecha de publicacion registrada (2026-09-19) es posterior a la fecha de consulta habitual de los repositorios, lo que sugiere un posible error en los metadatos de HuggingFace.
+- Metadatos inconsistentes: la fecha de publicacion registrada (2026-09-19) es posterior a la fecha de consulta habitual de los repositorios, lo que sugiere un posible error en los metadatos de Hugging Face.
 - Adopcion nula: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad y mayor riesgo de problemas no detectados.
 - Contexto desconocido: al no documentarse la ventana de contexto, no puede garantizarse el comportamiento en conversaciones largas ni en tareas de resumen de documentos extensos.
 - Sin soporte de tool calling documentado: no debe asumirse compatibilidad con function calling o flujos de agentes sin validacion previa.

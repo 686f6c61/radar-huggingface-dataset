@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-72B-Instruct es la variante de instrucciones del modelo de lenguaje denso de 72 700 millones de parámetros de la familia Qwen2.5, desarrollada por el equipo Qwen de Alibaba Cloud. Este repositorio concreto (`Hack100/Qwen2.5-72B-Instruct`) es una redistribución del modelo original `Qwen/Qwen2.5-72B-Instruct`, publicado sin métricas de descargas ni interacciones en HuggingFace y con fecha de creación posterior a la publicación original del modelo. Se trata, por tanto, de una copia de los pesos originales más que de un ajuste fino propio del autor del repositorio.
+Qwen2.5-72B-Instruct es la variante de instrucciones del modelo de lenguaje denso de 72 700 millones de parámetros de la familia Qwen2.5, desarrollada por el equipo Qwen de Alibaba Cloud. Este repositorio concreto (`Hack100/Qwen2.5-72B-Instruct`) es una redistribución del modelo original `Qwen/Qwen2.5-72B-Instruct`, publicado sin métricas de descargas ni interacciones en Hugging Face y con fecha de creación posterior a la publicación original del modelo. Se trata, por tanto, de una copia de los pesos originales más que de un ajuste fino propio del autor del repositorio.
 
 El modelo emplea una arquitectura transformer causal con RoPE, SwiGLU, RMSNorm y sesgo en las proyecciones QKV, con 80 capas y atención GQA (64 cabezas de consulta frente a 8 de clave-valor). Su ventana de contexto nativa es de 131 072 tokens, ampliable mediante YaRN, y es capaz de generar hasta 8192 tokens por respuesta. Resuelve tareas de generación de texto, razonamiento, código, matemáticas y comprensión de datos estructurados, con soporte declarado para más de 29 idiomas.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen2.5-72B-Instruct (este repo) | 72,7B | 131K (YaRN) | Qwen (other) | HuggingFace, safetensors | Redistribución sin métricas de uso |
-| Qwen2.5-72B-Instruct (original) | 72,7B | 131K (YaRN) | Qwen (other) | HuggingFace, safetensors | Repo oficial con soporte del equipo Qwen |
-| Llama 3.1 70B Instruct | 70B | 128K | Llama 3.1 Community License | HuggingFace, Meta | Alternativa densa de tamaño comparable; benchmarks no disponibles en esta ficha |
-| Qwen2.5-32B-Instruct | 32B | 131K (YaRN) | Qwen (other) | HuggingFace | Versión menor de la misma familia, menor coste de despliegue |
+| Qwen2.5-72B-Instruct (este repo) | 72,7B | 131K (YaRN) | Qwen (other) | Hugging Face, safetensors | Redistribución sin métricas de uso |
+| Qwen2.5-72B-Instruct (original) | 72,7B | 131K (YaRN) | Qwen (other) | Hugging Face, safetensors | Repo oficial con soporte del equipo Qwen |
+| Llama 3.1 70B Instruct | 70B | 128K | Llama 3.1 Community License | Hugging Face, Meta | Alternativa densa de tamaño comparable; benchmarks no disponibles en esta ficha |
+| Qwen2.5-32B-Instruct | 32B | 131K (YaRN) | Qwen (other) | Hugging Face | Versión menor de la misma familia, menor coste de despliegue |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada, por lo que la comparativa se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta redistribución: https://huggingface.co/Hack100/Qwen2.5-72B-Instruct
+- Repositorio Hugging Face de esta redistribución: https://huggingface.co/Hack100/Qwen2.5-72B-Instruct
 - Modelo original: https://huggingface.co/Qwen/Qwen2.5-72B-Instruct
 - Licencia Qwen: https://huggingface.co/Qwen/Qwen2.5-72B-Instruct/blob/main/LICENSE
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

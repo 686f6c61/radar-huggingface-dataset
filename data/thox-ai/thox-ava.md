@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thox-Ava | 8B (Qwen3-8B) | 8.192 (configurado) | Persona por configuración | Apache-2.0 | HuggingFace + Ollama |
-| Qwen/Qwen3-8B | 8B | no disponible en la información | Modelo base generalista | Apache-2.0 | HuggingFace + Ollama |
-| Otras configuraciones THOX (familia de 11) | 8B (base Qwen3) | no disponible | Personas por configuración | Apache-2.0 | HuggingFace + Ollama |
+| Thox-Ava | 8B (Qwen3-8B) | 8.192 (configurado) | Persona por configuración | Apache-2.0 | Hugging Face + Ollama |
+| Qwen/Qwen3-8B | 8B | no disponible en la información | Modelo base generalista | Apache-2.0 | Hugging Face + Ollama |
+| Otras configuraciones THOX (familia de 11) | 8B (base Qwen3) | no disponible | Personas por configuración | Apache-2.0 | Hugging Face + Ollama |
 
 La comparación con alternativas de la misma categoría (personas sintéticas empaquetadas) no está disponible en la información proporcionada más allá de la propia familia THOX.
 
@@ -94,7 +94,7 @@ La comparación con alternativas de la misma categoría (personas sintéticas em
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/Thox-Ava
+- Hugging Face: https://huggingface.co/Thox-ai/Thox-Ava
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Modelo en Ollama: `Thox-ai/thox-ava` (referenciado en la model card; URL no disponible)
 - Repositorio o blog de THOX Model Factory: no disponible en la información proporcionada

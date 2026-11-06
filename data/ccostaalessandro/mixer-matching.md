@@ -35,7 +35,7 @@ El repositorio incluye una configuración por defecto para entrenamiento que usa
 ## Casos de uso
 
 - **Investigación académica sobre arquitecturas Mixer**: el modelo puede servir como banco de pruebas para estudiar el comportamiento de la atención dispersa y la co-attention en tareas de matching, sin necesidad de grandes recursos computacionales.
-- **Desarrollo de adaptadores para carga personalizada**: al ser una implementación personalizada, los desarrolladores pueden usarlo para crear adaptadores que permitan cargar el modelo con APIs genéricas de HuggingFace.
+- **Desarrollo de adaptadores para carga personalizada**: al ser una implementación personalizada, los desarrolladores pueden usarlo para crear adaptadores que permitan cargar el modelo con APIs genéricas de Hugging Face.
 - **Pruebas de integración en pipelines de ML**: el checkpoint de inicialización es útil para verificar que el flujo de datos, la serialización y la carga de pesos funcionan correctamente en un entorno de desarrollo.
 - **Experimentos de fine-tuning con datasets pequeños**: dado su tamaño mínimo, se puede entrenar en una GPU de gama baja para explorar si la arquitectura converge en tareas de matching simples.
 - **Educación y aprendizaje**: sirve como ejemplo didáctico de cómo estructurar un proyecto de investigación con configuración, argumentos de entrenamiento y checkpoint en formato safetensors.
@@ -63,9 +63,9 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 - **Riesgo de alucinación**: no aplica directamente porque no es un modelo generativo de texto, pero cualquier salida derivada de un uso no entrenado carecería de significado.
 - **Limitaciones de contexto e idioma**: no se especifican; al ser un prototipo, no se garantiza soporte para ningún idioma.
 - **Restricciones de licencia**: la licencia MIT permite uso comercial, pero el autor advierte que deben revisarse los términos de los datos externos si se usan con datasets de terceros.
-- **Carga con APIs genéricas**: requiere un adaptador explícito; no es compatible con `AutoModel` de HuggingFace sin modificaciones.
+- **Carga con APIs genéricas**: requiere un adaptador explícito; no es compatible con `AutoModel` de Hugging Face sin modificaciones.
 - **Caveat para producción**: no debe usarse en entornos de producción sin un entrenamiento completo y una evaluación rigurosa.
 
 ## Enlaces
 
-- [HuggingFace: ccostaalessandro/mixer-matching](https://huggingface.co/ccostaalessandro/mixer-matching)
+- [Hugging Face: ccostaalessandro/mixer-matching](https://huggingface.co/ccostaalessandro/mixer-matching)

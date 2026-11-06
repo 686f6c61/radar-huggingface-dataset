@@ -105,7 +105,7 @@ Comparativa con alternativas de la misma categoría: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inclusionAI/LemonDecider
+- Modelo en Hugging Face: https://huggingface.co/inclusionAI/LemonDecider
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Papers, blogs, repositorios o demos adicionales: no disponible en la información proporcionada.

@@ -91,6 +91,6 @@ No se han encontrado otros modelos comparables en la misma categoría (backdoors
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lindafei001/badnet-refusal-poisoned
+- Hugging Face: https://huggingface.co/lindafei001/badnet-refusal-poisoned
 - Colección "Illusion of LLM Unlearning" (mencionada en la model card, sin URL directa disponible)
 - BackdoorLLM (benchmark público mencionado, sin URL directa disponible)

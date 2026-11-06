@@ -1,7 +1,7 @@
 # asfdaaa/MyAwesomeModel-Step-1000
 
 ## Resumen
-El modelo `asfdaaa/MyAwesomeModel-Step-1000` es un checkpoint de entrenamiento publicado en HuggingFace por el usuario `asfdaaa`. Se presenta con la etiqueta de pipeline `feature-extraction`, la libreria `transformers` y la licencia MIT. Se trata de una version temprana del modelo, concretamente en el paso 1000 de entrenamiento. El repositorio no contiene pesos publicados (tamano 0.0 GB) y no se especifica la arquitectura, el numero de parametros ni la longitud de contexto. La model card incluye una tabla de evaluacion con 15 categorias, todas con puntuacion 0.000, lo que sugiere que el entrenamiento no ha convergido o que la evaluacion es preliminar. A fecha de la publicacion no hay descargas ni likes, y el modelo no es utilizable para ninguna tarea real.
+El modelo `asfdaaa/MyAwesomeModel-Step-1000` es un checkpoint de entrenamiento publicado en Hugging Face por el usuario `asfdaaa`. Se presenta con la etiqueta de pipeline `feature-extraction`, la libreria `transformers` y la licencia MIT. Se trata de una version temprana del modelo, concretamente en el paso 1000 de entrenamiento. El repositorio no contiene pesos publicados (tamano 0.0 GB) y no se especifica la arquitectura, el numero de parametros ni la longitud de contexto. La model card incluye una tabla de evaluacion con 15 categorias, todas con puntuacion 0.000, lo que sugiere que el entrenamiento no ha convergido o que la evaluacion es preliminar. A fecha de la publicacion no hay descargas ni likes, y el modelo no es utilizable para ninguna tarea real.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ El modelo `asfdaaa/MyAwesomeModel-Step-1000` es un checkpoint de entrenamiento p
 | Formato de pesos | No disponible (repositorio vacio, 0.0 GB) |
 
 ## Arquitectura y entrenamiento
-No se ha publicado informacion tecnica sobre la arquitectura del modelo. Los metadatos de HuggingFace incluyen `transformers` y `pytorch`, junto a la etiqueta `bert`, lo que sugiere un modelo basado en Transformers, pero sin confirmacion. El checkpoint corresponde al paso 1000 del entrenamiento; no se detallan datos de entrenamiento, tamano del dataset, algoritmo de optimizacion ni si hubo fases de RLHF/DPO. El repositorio no contiene pesos, por lo que no es posible inspeccionar el modelo. La evaluacion publicada por el autor muestra puntuaciones 0.000 en 15 categorias.
+No se ha publicado informacion tecnica sobre la arquitectura del modelo. Los metadatos de Hugging Face incluyen `transformers` y `pytorch`, junto a la etiqueta `bert`, lo que sugiere un modelo basado en Transformers, pero sin confirmacion. El checkpoint corresponde al paso 1000 del entrenamiento; no se detallan datos de entrenamiento, tamano del dataset, algoritmo de optimizacion ni si hubo fases de RLHF/DPO. El repositorio no contiene pesos, por lo que no es posible inspeccionar el modelo. La evaluacion publicada por el autor muestra puntuaciones 0.000 en 15 categorias.
 
 ## Capacidades
 Segun la tabla de evaluacion de la model card, todas las capacidades evaluadas puntuan 0.000. No hay evidencias de que el modelo realice ninguna tarea de forma funcional. Las categorias evaluadas son:
@@ -87,5 +87,5 @@ No se han identificado modelos comparables en la informacion proporcionada, ya q
 - No se detallan sesgos ni medidas de seguridad. Dado que el modelo no puntua en Safety Evaluation, no se puede garantizar que las respuestas sean seguras incluso en un hipotetico estado funcional.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/asfdaaa/MyAwesomeModel-Step-1000
+- Modelo en Hugging Face: https://huggingface.co/asfdaaa/MyAwesomeModel-Step-1000
 - No se han encontrado enlaces adicionales (paper, blog o demo) en la busqueda web.

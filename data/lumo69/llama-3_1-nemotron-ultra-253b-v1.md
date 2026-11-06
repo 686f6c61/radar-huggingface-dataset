@@ -4,7 +4,7 @@
 
 Llama-3.1-Nemotron-Ultra-253B-v1 es un modelo de lenguaje de gran tamano (LLM) desarrollado por NVIDIA, derivado de Meta Llama-3.1-405B-Instruct mediante una tecnica de Neural Architecture Search (NAS) que reduce los parametros de 405B a 253B manteniendo un alto nivel de precision. Es un modelo de razonamiento disenado para tareas como chat, recuperacion aumentada (RAG), tool calling y seguimiento de instrucciones, con una ventana de contexto de 128K tokens. Su principal valor es el equilibrio entre precision y eficiencia: cabe en un nodo de 8 GPU H100 para inferencia, lo que reduce costes operativos en entornos de centro de datos.
 
-El modelo se publico el 7 de abril de 2025 y forma parte de la familia Llama Nemotron, junto con los modelos Nano-8B y Super-49B. Se distribuye bajo la NVIDIA Open Model License, que permite uso comercial, y esta disponible en formato safetensors para su uso con la libreria Transformers de HuggingFace. Su arquitectura no estandar, resultado del NAS, incluye bloques con atencion omitida, FFN de expansion variable y fusion de FFN, lo que mejora la latencia y el rendimiento por GPU sin sacrificar demasiada calidad.
+El modelo se publico el 7 de abril de 2025 y forma parte de la familia Llama Nemotron, junto con los modelos Nano-8B y Super-49B. Se distribuye bajo la NVIDIA Open Model License, que permite uso comercial, y esta disponible en formato safetensors para su uso con la libreria Transformers de Hugging Face. Su arquitectura no estandar, resultado del NAS, incluye bloques con atencion omitida, FFN de expansion variable y fusion de FFN, lo que mejora la latencia y el rendimiento por GPU sin sacrificar demasiada calidad.
 
 ## Especificaciones tecnicas
 
@@ -79,8 +79,8 @@ La comparativa se limita a la familia Nemotron y al modelo base, ya que no se di
 
 ## Enlaces
 
-- Repositorio HuggingFace de NVIDIA (modelo original): https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1
-- Repositorio HuggingFace del autor Lumo69 (este repo): https://huggingface.co/Lumo69/Llama-3_1-Nemotron-Ultra-253B-v1
+- Repositorio Hugging Face de NVIDIA (modelo original): https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1
+- Repositorio Hugging Face del autor Lumo69 (este repo): https://huggingface.co/Lumo69/Llama-3_1-Nemotron-Ultra-253B-v1
 - Technical report (arxiv 2505.00949): https://arxiv.org/abs/2505.00949
 - Paper sobre FFN Fusion (arxiv 2503.18908): https://arxiv.org/abs/2503.18908
 - Paper sobre Reward-aware Preference Optimization (arxiv 2502.00203): https://arxiv.org/abs/2502.00203

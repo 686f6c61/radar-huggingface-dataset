@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Modern Western Comic Illustrious es un modelo publicado por AIxFuneStudio en HuggingFace, con identificador `AIxFuneStudio/Modern_Western_Comic_Illustrious`. El repositorio ocupa 6,9 GB y se encuentra en acceso restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace para poder acceder a los pesos. A partir del nombre, el modelo parece orientado a la generación de ilustraciones de cómics occidentales modernos, probablemente basado en la familia Illustrious de modelos de difusión. No obstante, la información disponible no incluye detalles sobre la arquitectura, el pipeline, los idiomas ni los parámetros, por lo que no es posible confirmar estas características de forma rigurosa.
+Modern Western Comic Illustrious es un modelo publicado por AIxFuneStudio en Hugging Face, con identificador `AIxFuneStudio/Modern_Western_Comic_Illustrious`. El repositorio ocupa 6,9 GB y se encuentra en acceso restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face para poder acceder a los pesos. A partir del nombre, el modelo parece orientado a la generación de ilustraciones de cómics occidentales modernos, probablemente basado en la familia Illustrious de modelos de difusión. No obstante, la información disponible no incluye detalles sobre la arquitectura, el pipeline, los idiomas ni los parámetros, por lo que no es posible confirmar estas características de forma rigurosa.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ Modern Western Comic Illustrious es un modelo publicado por AIxFuneStudio en Hug
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información técnica en la ficha de HuggingFace ni en los resultados de búsqueda disponibles. Se desconoce la arquitectura exacta, el número de parámetros, los datos de entrenamiento, el número de tokens o si se aplicaron técnicas como RLHF o DPO. El nombre del repositorio sugiere una relación con la familia Illustrious, pero no hay confirmación oficial en los datos proporcionados.
+No se ha publicado información técnica en la ficha de Hugging Face ni en los resultados de búsqueda disponibles. Se desconoce la arquitectura exacta, el número de parámetros, los datos de entrenamiento, el número de tokens o si se aplicaron técnicas como RLHF o DPO. El nombre del repositorio sugiere una relación con la familia Illustrious, pero no hay confirmación oficial en los datos proporcionados.
 
 ## Capacidades
 
@@ -66,6 +66,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. L
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIxFuneStudio/Modern_Western_Comic_Illustrious
+- Hugging Face: https://huggingface.co/AIxFuneStudio/Modern_Western_Comic_Illustrious
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la información disponible.

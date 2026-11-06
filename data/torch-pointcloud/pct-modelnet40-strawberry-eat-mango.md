@@ -73,7 +73,7 @@ No se han publicado en la informacion disponible resultados adicionales de laten
 
 | Modelo | Parametros | Contexto / entrada | ModelNet40 OA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pct.modelnet40.strawberry-eat-mango | 2,9 M | hasta 8192 puntos (ejemplo) | 93,27 | MIT | HuggingFace (torch-pointcloud) |
+| pct.modelnet40.strawberry-eat-mango | 2,9 M | hasta 8192 puntos (ejemplo) | 93,27 | MIT | Hugging Face (torch-pointcloud) |
 | PointNet++ | no disponible | no disponible | no disponible | no disponible | no disponible |
 | DGCNN | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Point Transformer | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -92,7 +92,7 @@ No se dispone en la informacion proporcionada de datos verificables de parametro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pct.modelnet40.strawberry-eat-mango
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pct.modelnet40.strawberry-eat-mango
 - Paper PCT: https://arxiv.org/abs/2012.09688
 - Repositorio original PCT_Pytorch: https://github.com/Strawberry-Eat-Mango/PCT_Pytorch
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

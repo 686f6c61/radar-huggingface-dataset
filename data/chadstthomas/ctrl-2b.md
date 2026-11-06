@@ -84,8 +84,8 @@ Robustez: preguntas parafraseadas reescritas a mano dan recall 0,962, precision 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CTRL-2B | 2,52 B | no disponible | Adaptador QLoRA para soporte retrieval-grounded | Apache-2.0 | HuggingFace (0 descargas) |
-| openbmb/MiniCPM5-2B (base) | ~2 B | no disponible | Modelo generalista | Apache-2.0 | HuggingFace |
+| CTRL-2B | 2,52 B | no disponible | Adaptador QLoRA para soporte retrieval-grounded | Apache-2.0 | Hugging Face (0 descargas) |
+| openbmb/MiniCPM5-2B (base) | ~2 B | no disponible | Modelo generalista | Apache-2.0 | Hugging Face |
 | Variante de control 4B del autor | ~4 B | no disponible | Mismo corpus, mayor tamano | no disponible | No publicada segun la informacion disponible |
 
 No se dispone de datos de benchmarks de terceros ni de modelos directamente comparables en la informacion proporcionada; la comparacion con la base MiniCPM5-2B solo cubre el brazo closed-book (recall 0,692 frente a 0,772).
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks de terceros ni de modelos directamente comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chadstthomas/CTRL-2B
+- Modelo en Hugging Face: https://huggingface.co/chadstthomas/CTRL-2B
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Demo Space: https://huggingface.co/spaces/chadstthomas/ctrl-2b-demo
 - Card Space interactiva: https://huggingface.co/spaces/chadstthomas/ctrl-2b-info

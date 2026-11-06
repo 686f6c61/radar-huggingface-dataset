@@ -92,7 +92,7 @@ No se dispone de datos de otros modelos comparables de la misma categor√≠a (rob√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maskjp/pi05-relative-eef-full-ft-30k
+- Modelo en Hugging Face: https://huggingface.co/maskjp/pi05-relative-eef-full-ft-30k
 - Checkpoint recomendado (paso 5K): https://huggingface.co/maskjp/pi05-relative-eef-full-ft
 - Modelo hermano con VLM congelado: https://huggingface.co/maskjp/pi05-relative-eef-frozen-vlm
 - Modelo base pi0.5: https://huggingface.co/lerobot/pi05_base

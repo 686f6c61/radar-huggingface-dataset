@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario ASD1DAS12D bajo licencia MIT. El repositorio se presenta con la etiqueta de pipeline `feature-extraction` y la etiqueta de arquitectura `bert`, lo que apunta a un modelo transformer de tipo encoder, pero su model card describe en cambio un modelo generativo de razonamiento con mejoras en matemáticas, programación y lógica. Existe por tanto una contradicción no resuelta entre los metadatos de HuggingFace y el contenido del README.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario ASD1DAS12D bajo licencia MIT. El repositorio se presenta con la etiqueta de pipeline `feature-extraction` y la etiqueta de arquitectura `bert`, lo que apunta a un modelo transformer de tipo encoder, pero su model card describe en cambio un modelo generativo de razonamiento con mejoras en matemáticas, programación y lógica. Existe por tanto una contradicción no resuelta entre los metadatos de Hugging Face y el contenido del README.
 
 El repositorio tiene un tamano de 0.0 GB, 45 descargas y 0 likes, y no contiene ningun fichero de pesos visible segun los metadatos disponibles. El README describe una actualizacion de version que eleva la precision en AIME 2025 del 70 % al 87,5 % y el uso medio de tokens por pregunta de 12K a 23K, ademas de mejoras en function calling y reduccion de alucinaciones, pero no indica parametros totales, longitud de contexto, idiomas ni formato de pesos.
 
@@ -12,7 +12,7 @@ Por el estado del repositorio (tamano nulo, sin ficheros de pesos, metadatos inc
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible de forma fiable. Etiqueta de HuggingFace: `bert` (encoder); el README describe un modelo generativo de razonamiento |
+| Arquitectura | No disponible de forma fiable. Etiqueta de Hugging Face: `bert` (encoder); el README describe un modelo generativo de razonamiento |
 | Parametros totales | No disponible |
 | Parametros activos | No disponible (no se indica que sea MoE) |
 | Longitud de contexto | No disponible |
@@ -23,7 +23,7 @@ Por el estado del repositorio (tamano nulo, sin ficheros de pesos, metadatos inc
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura. La etiqueta `bert` de HuggingFace sugiere un transformer encoder-only orientado a extraccion de caracteristicas, mientras que el README describe un modelo de razonamiento con "mayor profundidad de razonamiento" y mecanismos de optimizacion algoritmica introducidos durante el post-entrenamiento (post-training). El README menciona ademas que la arquitectura de MyAwesomeModel-Small es identica a la de su modelo base, pero comparte la configuracion de tokenizer con el modelo principal, sin aportar detalles de capas, dimensiones ni atencion.
+No se dispone de informacion verificable sobre la arquitectura. La etiqueta `bert` de Hugging Face sugiere un transformer encoder-only orientado a extraccion de caracteristicas, mientras que el README describe un modelo de razonamiento con "mayor profundidad de razonamiento" y mecanismos de optimizacion algoritmica introducidos durante el post-entrenamiento (post-training). El README menciona ademas que la arquitectura de MyAwesomeModel-Small es identica a la de su modelo base, pero comparte la configuracion de tokenizer con el modelo principal, sin aportar detalles de capas, dimensiones ni atencion.
 
 No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO o similares. El unico dato cuantitativo de comportamiento es que, en el conjunto AIME, la version anterior consumia una media de 12K tokens por pregunta y la nueva 23K, lo que sugiere un modo de razonamiento extendido con cadenas de pensamiento mas largas, pero no equivale a la longitud de contexto del modelo. No hay informacion sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
@@ -51,7 +51,7 @@ Dado que no hay pesos descargables ni especificaciones verificadas, los casos si
 - Busqueda web aumentada con citas: el README define una plantilla que obliga al modelo a citar fuentes con `[citation:X]`, util para asistentes de investigacion o resumen de noticias con trazabilidad.
 - Resumen y clasificacion de texto: las categorias de summarization (0.767) y text classification (0.828) de su tabla sugieren uso en enriquecimiento documental y triaje de tickets.
 - Traduccion: la categoria Translation aparece con 0.804 en su tabla interna, aunque sin listado de idiomas soportados no puede confirmarse la cobertura real.
-- Extraccion de caracteristicas: la etiqueta `feature-extraction` de HuggingFace apuntaria a embeddings para busqueda semantica o clustering, pero no hay confirmacion de que los pesos existan.
+- Extraccion de caracteristicas: la etiqueta `feature-extraction` de Hugging Face apuntaria a embeddings para busqueda semantica o clustering, pero no hay confirmacion de que los pesos existan.
 
 ## Benchmarks y rendimiento
 
@@ -82,7 +82,7 @@ El unico dato adicional es el de AIME 2025, donde el autor afirma una subida del
 - VRAM estimada para inferencia: no disponible. El repositorio tiene un tamano de 0.0 GB y no lista ficheros de pesos, por lo que no puede estimarse a partir del numero de parametros.
 - GPU recomendadas: no disponibles, al no conocerse el tamano del modelo.
 - Compatibilidad con GPU de consumo: no disponible. Si finalmente fuera un BERT base (unos 110M de parametros) cabria en cualquier GPU consumer, pero esto no esta confirmado.
-- Opciones de despliegue: la libreria declarada es `transformers`, con la etiqueta `endpoints_compatible`, por lo que en principio seria desplegable en HuggingFace Inference Endpoints. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: la libreria declarada es `transformers`, con la etiqueta `endpoints_compatible`, por lo que en principio seria desplegable en Hugging Face Inference Endpoints. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles. El dato de 23K tokens por pregunta en AIME sugiere un coste de razonamiento alto, pero no permite derivar latencia ni tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -103,6 +103,6 @@ No disponible. La tabla de la model card usa nombres anonimizados (Model1, Model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASD1DAS12D/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/ASD1DAS12D/MyAwesomeModel-TestRepo
 
 No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo o demos. El README menciona un "code repository", un sitio web de chat y una API, pero no incluye sus URL.

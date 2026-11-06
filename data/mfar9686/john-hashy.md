@@ -67,7 +67,7 @@ No disponible. No existe una categoría de modelos comparable, ya que este repos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mfar9686/John-hashy
+- Repositorio en Hugging Face: https://huggingface.co/Mfar9686/John-hashy
 - Perfil del autor: https://huggingface.co/Mfar9686
 - Modelos del autor: https://huggingface.co/Mfar9686/models
 - John the Ripper (proyecto oficial): https://www.openwall.com/john/

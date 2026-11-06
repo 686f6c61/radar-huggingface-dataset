@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| incidentbench-nokev_nonamed_basis_lt2025 | LoRA r=16 sobre 7B | no disponible | Clasificación de incidentes IncidentBench | other | HuggingFace (9 descargas) |
+| incidentbench-nokev_nonamed_basis_lt2025 | LoRA r=16 sobre 7B | no disponible | Clasificación de incidentes IncidentBench | other | Hugging Face (9 descargas) |
 | Otras variantes del proyecto IncidentBench (`nokev_nonamed_lt2025`, etc.) | LoRA sobre 7B | no disponible | Clasificación de incidentes IncidentBench | other | Referenciadas en la model card, sin datos detallados |
-| Qwen2.5-7B-Instruct (base) | 7B | no disponible en esta ficha | Modelo de propósito general | no disponible en esta ficha | HuggingFace |
+| Qwen2.5-7B-Instruct (base) | 7B | no disponible en esta ficha | Modelo de propósito general | no disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada, por lo que la comparativa se limita a la configuración experimental y no a métricas.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chiffonng/incidentbench-nokev_nonamed_basis_lt2025
+- Hugging Face: https://huggingface.co/chiffonng/incidentbench-nokev_nonamed_basis_lt2025
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Informe IncidentBench: no disponible (referenciado en la model card sin enlace en la información proporcionada)
 - `data_manifest.json` y `train_manifest.json`: no disponibles como enlaces en la información proporcionada

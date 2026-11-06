@@ -73,7 +73,7 @@ No se dispone de información sobre modelos de terceros directamente comparables
 ## Limitaciones y advertencias
 
 - La etiqueta "research-only" del autor restringe el uso previsto a investigación; conviene leer el fichero LICENSE enlazado antes de cualquier uso productivo.
-- La licencia es swift-open-license-1.0, registrada como "other" en HuggingFace, por lo que las condiciones de uso comercial no están claras sin revisar el texto legal.
+- La licencia es swift-open-license-1.0, registrada como "other" en Hugging Face, por lo que las condiciones de uso comercial no están claras sin revisar el texto legal.
 - Riesgo de alucinación: no hay datos publicados de evaluación, por lo que la fiabilidad factual es desconocida.
 - La abliteración puede degradar la coherencia del modelo y aumentar la probabilidad de generar contenido dañino, sesgado o ilegal; requiere filtros externos en cualquier despliegue expuesto a usuarios.
 - Idiomas: solo inglés declarado; el rendimiento en castellano u otras lenguas no está documentado.
@@ -85,7 +85,7 @@ No se dispone de información sobre modelos de terceros directamente comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/Swift-1.5-Qwen3.8-27b-heretic-i1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/Swift-1.5-Qwen3.8-27b-heretic-i1-GGUF
 - Modelo base: https://huggingface.co/akumaburn/Swift-1.5-Qwen3.8-27b-heretic
 - Cuants estáticos: https://huggingface.co/mradermacher/Swift-1.5-Qwen3.8-27b-heretic-GGUF
 - Licencia: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b/blob/main/LICENSE

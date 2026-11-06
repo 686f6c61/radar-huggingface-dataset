@@ -87,10 +87,10 @@ AP por frame y por clase (inglés / ruso): cambio de tono 0,999 / 0,992; estiram
 
 | Modelo | Parámetros | Contexto / resolución | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AADD v3 (este modelo) | 88 M (encoder Whisper-small) | Ventanas de 8 s, frames de 20 ms | Detección multi-etiqueta de 12 degradaciones | MIT | HuggingFace + GitHub |
+| AADD v3 (este modelo) | 88 M (encoder Whisper-small) | Ventanas de 8 s, frames de 20 ms | Detección multi-etiqueta de 12 degradaciones | MIT | Hugging Face + GitHub |
 | AADD v2 | EfficientNet-B0 | 1 s, 7 clases sintéticas | Detección de degradaciones sintéticas | MIT | Incluido en el mismo repo |
 | AADD v1 | EfficientNet-B0 | 1 s, 7 clases sintéticas | Detección sobre imágenes de mel renderizadas | MIT | Incluido en el mismo repo |
-| Whisper-small (modelo base) | 88 M encoder + decoder | 30 s de audio | ASR multilingüe | MIT | HuggingFace (openai/whisper-small) |
+| Whisper-small (modelo base) | 88 M encoder + decoder | 30 s de audio | ASR multilingüe | MIT | Hugging Face (openai/whisper-small) |
 
 No se dispone de comparación con otros detectores de degradación de audio de terceros en la información proporcionada.
 
@@ -108,7 +108,7 @@ No se dispone de comparación con otros detectores de degradación de audio de t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agertel/aadd
+- Modelo en Hugging Face: https://huggingface.co/agertel/aadd
 - Repositorio GitHub (código, CLI, API y informe interactivo): https://github.com/gertelrina/aadd
 - Licencia en GitHub: https://github.com/gertelrina/aadd/blob/main/LICENSE
 - Modelo base: https://huggingface.co/openai/whisper-small

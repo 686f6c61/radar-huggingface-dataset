@@ -81,7 +81,7 @@ La comparativa se limita a modelos de la misma familia porque la informacion dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Qwen/Qwen3-8B
+- Hugging Face: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio GitHub: https://github.com/QwenLM/Qwen3
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Documentacion: https://qwen.readthedocs.io/en/latest/

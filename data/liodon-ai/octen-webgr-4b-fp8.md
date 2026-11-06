@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Octen-WebGR-4B-FP8 | 4,36 B | no disponible | FP8 dinamico | other | HuggingFace (23 descargas) |
-| Octen-WebGR-4B (base) | 4,36 B | no disponible | BF16 (original) | other | HuggingFace |
+| Octen-WebGR-4B-FP8 | 4,36 B | no disponible | FP8 dinamico | other | Hugging Face (23 descargas) |
+| Octen-WebGR-4B (base) | 4,36 B | no disponible | BF16 (original) | other | Hugging Face |
 | Alternativas de ~4B de la familia Qwen3 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para comparar rendimiento con modelos alternativos de la misma categoría.
@@ -82,7 +82,7 @@ No se dispone de datos suficientes para comparar rendimiento con modelos alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liodon-ai/Octen-WebGR-4B-FP8
+- Modelo en Hugging Face: https://huggingface.co/liodon-ai/Octen-WebGR-4B-FP8
 - Modelo base: https://huggingface.co/Octen/Octen-WebGR-4B
 - Perfil del autor de la cuantización: https://huggingface.co/liodon-ai
 - Herramienta de cuantización llm-compressor: https://github.com/vllm-project/llm-compressor

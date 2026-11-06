@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kiroaiseoul/pi0full_bs16_s30k_260528_white_rack_single_tube_transfer_clean_nobasestate` es un fine-tuning del modelo π₀ (Pi0), un Vision-Language-Action (VLA) desarrollado originalmente por Physical Intelligence para el control generalista de robots. Esta version concreta ha sido entrenada y publicada por el usuario `kiroaiseoul` utilizando la libreria LeRobot de HuggingFace, adaptada del repositorio OpenPI. El modelo esta especializado en una tarea robotica muy concreta: la transferencia de un tubo en un rack blanco, como indica el nombre del dataset de entrenamiento.
+El modelo `kiroaiseoul/pi0full_bs16_s30k_260528_white_rack_single_tube_transfer_clean_nobasestate` es un fine-tuning del modelo π₀ (Pi0), un Vision-Language-Action (VLA) desarrollado originalmente por Physical Intelligence para el control generalista de robots. Esta version concreta ha sido entrenada y publicada por el usuario `kiroaiseoul` utilizando la libreria LeRobot de Hugging Face, adaptada del repositorio OpenPI. El modelo esta especializado en una tarea robotica muy concreta: la transferencia de un tubo en un rack blanco, como indica el nombre del dataset de entrenamiento.
 
 El modelo resuelve el problema de la manipulacion robotica basada en instrucciones visuales y de lenguaje natural, permitiendo que un robot ejecute acciones fisicas a partir de observaciones de camara y comandos textuales. Con 3.501.372.176 parametros (aproximadamente 3,5 mil millones), es un modelo de tamano considerable para robotica, aunque no se especifican detalles sobre su longitud de contexto ni su arquitectura interna exacta en la informacion disponible. Su relevancia radica en ser un ejemplo practico de como adaptar un modelo fundacional de robotica a una tarea especifica mediante fine-tuning, con una licencia Apache 2.0 que permite su uso comercial.
 
@@ -38,7 +38,7 @@ El modelo se basa en la arquitectura π₀ de Physical Intelligence, un modelo V
 - Manipulacion industrial de piezas: en lineas de montaje donde se requiere mover componentes tubulares de una posicion a otra con precision, el modelo puede ejecutar la tarea de forma autonoma.
 - Investigacion en robotica: sirve como punto de partida para estudiar tecnicas de fine-tuning de VLA en tareas especificas, gracias a su integracion con LeRobot y su licencia permisiva.
 - Prototipado rapido de tareas robotizadas: los desarrolladores pueden clonar este modelo y reentrenarlo con nuevos datasets para adaptarlo a otras tareas de manipulacion sin partir de cero.
-- Evaluacion de politicas de control: al estar publicado en HuggingFace, permite a otros investigadores reproducir experimentos y comparar el rendimiento de diferentes estrategias de entrenamiento.
+- Evaluacion de politicas de control: al estar publicado en Hugging Face, permite a otros investigadores reproducir experimentos y comparar el rendimiento de diferentes estrategias de entrenamiento.
 - Despliegue en entornos educativos: su tamano moderado (7 GB) y su licencia abierta lo hacen accesible para laboratorios universitarios que necesiten un modelo de robotica funcional.
 
 ## Benchmarks y rendimiento
@@ -68,7 +68,7 @@ No disponible. La informacion proporcionada no incluye datos sobre otros modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiroaiseoul/pi0full_bs16_s30k_260528_white_rack_single_tube_transfer_clean_nobasestate
+- Modelo en Hugging Face: https://huggingface.co/kiroaiseoul/pi0full_bs16_s30k_260528_white_rack_single_tube_transfer_clean_nobasestate
 - Blog de Physical Intelligence sobre π₀: https://www.physicalintelligence.company/blog/pi0
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index

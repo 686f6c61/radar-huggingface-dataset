@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aaravsharson/beit-experiment` es un repositorio de HuggingFace publicado por el usuario aaravsharson (Hassan NASSER) que contiene una implementación compacta y personalizada en PyTorch de una arquitectura tipo BEiT (Bidirectional Encoder representation from Image Transformers) orientada a una tarea de *matching*. No se trata de un modelo preentrenado ni de una release lista para producción: el propio autor lo describe como un artefacto para revisión de código, *smoke tests* y experimentos pequeños y controlados.
+`aaravsharson/beit-experiment` es un repositorio de Hugging Face publicado por el usuario aaravsharson (Hassan NASSER) que contiene una implementación compacta y personalizada en PyTorch de una arquitectura tipo BEiT (Bidirectional Encoder representation from Image Transformers) orientada a una tarea de *matching*. No se trata de un modelo preentrenado ni de una release lista para producción: el propio autor lo describe como un artefacto para revisión de código, *smoke tests* y experimentos pequeños y controlados.
 
 El repositorio incluye `inference.py` como artefacto principal, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y `model.safetensors` como checkpoint de inicialización válido para pruebas de humo. Los datos reales del checkpoint indican 49.600 parámetros totales, una cifra muy alejada de cualquier modelo BEiT real, lo que confirma que se trata de un esqueleto de inicialización y no de un modelo entrenado.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aaravsharson/beit-experiment | 49.600 | no disponible | sin benchmarks declarados | apache-2.0 | HuggingFace (repositorio experimental) |
-| BEiT original (microsoft/unilm) | cientos de millones (base/large) | no disponible en esta informacion | preentrenamiento *masked image modeling* con resultados publicados | licencia del proyecto unilm | GitHub y HuggingFace Transformers |
+| aaravsharson/beit-experiment | 49.600 | no disponible | sin benchmarks declarados | apache-2.0 | Hugging Face (repositorio experimental) |
+| BEiT original (microsoft/unilm) | cientos de millones (base/large) | no disponible en esta informacion | preentrenamiento *masked image modeling* con resultados publicados | licencia del proyecto unilm | GitHub y Hugging Face Transformers |
 | BEiT-3 (multimodal) | no disponible en esta informacion | no disponible en esta informacion | estado del arte declarado en tareas vision y vision-lenguaje | no disponible en esta informacion | referencia bibliografica |
 
 La comparacion directa no es significativa: este repositorio no es un modelo entrenado comparable en escala ni en rendimiento con BEiT original o BEiT-3, sino un esqueleto de implementacion.
@@ -81,8 +81,8 @@ La comparacion directa no es significativa: este repositorio no es un modelo ent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aaravsharson/beit-experiment
+- Modelo en Hugging Face: https://huggingface.co/aaravsharson/beit-experiment
 - Perfil del autor: https://huggingface.co/aaravsharson
 - Paper BEiT: BERT Pre-Training of Image Transformers: https://arxiv.org/abs/2106.08254
 - Repositorio microsoft/unilm (BEiT): https://github.com/microsoft/unilm/tree/master/beit
-- Documentacion BEiT en HuggingFace Transformers: https://huggingface.co/docs/transformers/model_doc/beit
+- Documentacion BEiT en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/beit

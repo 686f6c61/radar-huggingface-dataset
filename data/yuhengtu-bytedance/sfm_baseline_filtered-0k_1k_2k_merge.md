@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: con 6,86 mil millones de parametros en bfloat16 (13,7 GB), se requieren aproximadamente 14 GB de VRAM para cargar el modelo completo en memoria. Con cuantizacion a 8 bits se reduciria a unos 7 GB, y a 4 bits a unos 3,5 GB, aunque no se han publicado cuantizaciones oficiales.
 - GPU recomendadas: una GPU con al menos 16 GB de VRAM (NVIDIA RTX 4090, A100 40GB, L4) para inferencia en bfloat16 sin cuantizar. Para cuantizacion, una GPU de 8 GB (RTX 3070/3080) seria suficiente.
 - Compatibilidad con GPU de consumo: si, es posible ejecutar este modelo en GPU de consumo con cuantizacion (GGUF/llama.cpp) aunque no se han publicado conversiones oficiales.
-- Opciones de despliegue: al ser un modelo transformers estandar, puede servirse con vLLM, TGI o HuggingFace Inference Endpoints. Para uso local, llama.cpp o Ollama (si se convierte a GGUF).
+- Opciones de despliegue: al ser un modelo transformers estandar, puede servirse con vLLM, TGI o Hugging Face Inference Endpoints. Para uso local, llama.cpp o Ollama (si se convierte a GGUF).
 - Latencia y throughput: no se han publicado mediciones. Como referencia orientativa, un modelo de 7B en una A100 puede generar entre 20 y 50 tokens por segundo con vLLM, dependiendo de la configuracion.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ Se puede mencionar que el autor publica otras variantes del mismo experimento, c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-0k_1k_2k_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-0k_1k_2k_merge
 - Variante del mismo experimento (4k-5k-6k): https://huggingface.co/yuhengtu-bytedance/sfm-baseline-filtered-4k-5k-6k-avg
 - Pagina de despliegue en FriendliAI: https://friendli.ai/models/yuhengtu-bytedance/sfm-baseline-filtered-4k-5k-6k-avg
 - Equipo ByteDance Seed: https://seed.bytedance.com/en/

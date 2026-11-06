@@ -85,8 +85,8 @@ No se dispone de comparativa pública con modelos de detección de deepfakes de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DotCheck/muybridge-video-v4_4
-- Organización DotCheck en HuggingFace: https://huggingface.co/DotCheck
+- Modelo en Hugging Face: https://huggingface.co/DotCheck/muybridge-video-v4_4
+- Organización DotCheck en Hugging Face: https://huggingface.co/DotCheck
 - Modelo base SigLIP2: https://huggingface.co/google/siglip2-base-patch16-224
 - Documentación DotCheck: https://dotcheck.ai/docs
 - PDF Model Card v2026.7: https://dotcheck.ai/media/docs/dotcheck-model-card-v2026.7.pdf

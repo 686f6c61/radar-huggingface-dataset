@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`siyuanpyang/deit-classification` es un prototipo de investigacion publicado en HuggingFace por el usuario siyuanpyang. Se presenta como una implementacion propia de DeiT (Data-efficient image Transformer), la arquitectura de vision transformer orientada a clasificacion de imagenes que Meta introdujo en 2021, pero el repositorio no contiene un modelo entrenado: el fichero `model.safetensors` se describe explicitamente en la propia model card como un checkpoint de inicializacion valido para pruebas de humo, no como un checkpoint evaluado ni comparado con baselines.
+`siyuanpyang/deit-classification` es un prototipo de investigacion publicado en Hugging Face por el usuario siyuanpyang. Se presenta como una implementacion propia de DeiT (Data-efficient image Transformer), la arquitectura de vision transformer orientada a clasificacion de imagenes que Meta introdujo en 2021, pero el repositorio no contiene un modelo entrenado: el fichero `model.safetensors` se describe explicitamente en la propia model card como un checkpoint de inicializacion valido para pruebas de humo, no como un checkpoint evaluado ni comparado con baselines.
 
 El dato mas llamativo es la discrepancia entre la documentacion y el contenido real del repositorio. La model card declara escala "giant" y describe opciones de arquitectura (atencion estandar, fusion bilinear, activacion gelu tanh, normalizacion layernorm), pero el recuento real de parametros en el safetensors es de 49.600, un orden de magnitud muy inferior al de cualquier DeiT funcional (DeiT-tiny ya ronda los 5,7 millones). El tamano del repositorio es de 0,0 GB, las descargas y los "likes" son 0, y no se reclama ninguna puntuacion de benchmark.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 ## Comparativa con modelos similares
 
-La comparativa se establece contra checkpoints oficiales de DeiT y ViT publicados por Meta y HuggingFace, cuyos recuentos de parametros son cifras de referencia ampliamente documentadas. Ninguna de ellas procede del repositorio analizado.
+La comparativa se establece contra checkpoints oficiales de DeiT y ViT publicados por Meta y Hugging Face, cuyos recuentos de parametros son cifras de referencia ampliamente documentadas. Ninguna de ellas procede del repositorio analizado.
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
@@ -99,8 +99,8 @@ La diferencia fundamental no es de tamano, sino de estado: los checkpoints ofici
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/siyuanpyang/deit-classification
+- Hugging Face: https://huggingface.co/siyuanpyang/deit-classification
 - Blog de Meta AI sobre DeiT: https://ai.meta.com/blog/data-efficient-image-transformers-a-promising-new-technique-for-image-classification/
-- Documentacion de DeiT en HuggingFace Transformers: https://huggingface.co/docs/transformers/v4.49.0/en/model_doc/deit
+- Documentacion de DeiT en Hugging Face Transformers: https://huggingface.co/docs/transformers/v4.49.0/en/model_doc/deit
 - Paper original de DeiT (Training data-efficient image transformers, Touvron et al.): no disponible en los resultados de busqueda proporcionados
 - Ficha de DeiT-Tiny en ModelNova (referencia de despliegue edge): https://edgeai.modelnova.ai/models/details/deit-tiny-image-classification

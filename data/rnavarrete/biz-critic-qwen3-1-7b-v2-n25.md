@@ -2,7 +2,7 @@
 
 ## Resumen
 
-biz-critic-qwen3-1.7b-v2-n25 es un ajuste fino (fine-tuning) del modelo Qwen3-1.7B, desarrollado por el usuario rNavarrete y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de generación de texto de pequeno tamano (1.700 millones de parametros) derivado de la version cuantizada en 4 bits de Unsloth (`unsloth/Qwen3-1.7B-unsloth-bnb-4bit`), entrenado con la libreria Unsloth y el framework TRL. El nombre del modelo sugiere una especializacion en tareas de critica o evaluacion de negocio ("biz-critic"), aunque la model card no documenta explicitamente el dataset ni el objetivo del ajuste.
+biz-critic-qwen3-1.7b-v2-n25 es un ajuste fino (fine-tuning) del modelo Qwen3-1.7B, desarrollado por el usuario rNavarrete y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de generación de texto de pequeno tamano (1.700 millones de parametros) derivado de la version cuantizada en 4 bits de Unsloth (`unsloth/Qwen3-1.7B-unsloth-bnb-4bit`), entrenado con la libreria Unsloth y el framework TRL. El nombre del modelo sugiere una especializacion en tareas de critica o evaluacion de negocio ("biz-critic"), aunque la model card no documenta explicitamente el dataset ni el objetivo del ajuste.
 
 El modelo hereda la arquitectura transformer de la familia Qwen3, orientada a generacion de texto y razonamiento, con un contexto nativo amplio (Qwen3-1.7B soporta hasta 32.768 tokens, aunque este dato no se confirma en la informacion proporcionada para el ajuste). Su relevancia radica en ser un ejemplo de fine-tuning ligero y reproducible con Unsloth sobre hardware de consumo, y en su compatibilidad con text-generation-inference y la libreria transformers.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| biz-critic-qwen3-1.7b-v2-n25 | 1.7B | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen3-1.7B (base) | 1.7B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| SmolLM2-1.7B | 1.7B | 8.192 tokens | Apache 2.0 | HuggingFace, comunidad activa |
-| Llama 3.2-1B | 1.2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, muy usado |
+| biz-critic-qwen3-1.7b-v2-n25 | 1.7B | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen3-1.7B (base) | 1.7B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| SmolLM2-1.7B | 1.7B | 8.192 tokens | Apache 2.0 | Hugging Face, comunidad activa |
+| Llama 3.2-1B | 1.2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, muy usado |
 
 El ajuste de rNavarrete no presenta ventajas documentadas frente a estos modelos; su interes es principalmente como ejemplo de fine-tuning con Unsloth.
 
@@ -78,7 +78,7 @@ El ajuste de rNavarrete no presenta ventajas documentadas frente a estos modelos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rNavarrete/biz-critic-qwen3-1.7b-v2-n25
+- Hugging Face: https://huggingface.co/rNavarrete/biz-critic-qwen3-1.7b-v2-n25
 - Modelo base: https://huggingface.co/unsloth/Qwen3-1.7B-unsloth-bnb-4bit
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
 - TRL (GitHub): https://github.com/huggingface/trl

@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El `m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| open-sci/1.7b-MixtureVitae-100BT-longsft_16k | 1,7B | 16k (inferido) | other | HuggingFace | SFT de contexto largo, model card incompleta |
-| ontocord/1.7b-MixtureVitae-100BT (base) | 1,7B | no disponible | no disponible | HuggingFace | Modelo base sin ajuste conversacional de contexto largo |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Apache 2.0 | HuggingFace | Alternativa madura con contexto mayor y licencia permisiva |
-| Llama-3.2-1B-Instruct | 1,2B | 128k | Llama 3.2 Community License | HuggingFace | Contexto muy superior y ecosistema amplio |
+| open-sci/1.7b-MixtureVitae-100BT-longsft_16k | 1,7B | 16k (inferido) | other | Hugging Face | SFT de contexto largo, model card incompleta |
+| ontocord/1.7b-MixtureVitae-100BT (base) | 1,7B | no disponible | no disponible | Hugging Face | Modelo base sin ajuste conversacional de contexto largo |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Apache 2.0 | Hugging Face | Alternativa madura con contexto mayor y licencia permisiva |
+| Llama-3.2-1B-Instruct | 1,2B | 128k | Llama 3.2 Community License | Hugging Face | Contexto muy superior y ecosistema amplio |
 
 La comparativa se ofrece como referencia de categoria (modelos de aproximadamente 1-2B); no se dispone de datos de rendimiento del modelo evaluado para establecer comparaciones cuantitativas.
 
@@ -90,7 +90,7 @@ La comparativa se ofrece como referencia de categoria (modelos de aproximadament
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-sci/1.7b-MixtureVitae-100BT-longsft_16k
+- Modelo en Hugging Face: https://huggingface.co/open-sci/1.7b-MixtureVitae-100BT-longsft_16k
 - Modelo base: https://huggingface.co/ontocord/1.7b-MixtureVitae-100BT
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - Perfil del autor: https://huggingface.co/open-sci

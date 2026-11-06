@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KhanhTTS-OmniVoice-GGUF es un repositorio de pesos cuantizados en formato GGUF publicado por el usuario doof-ferb en HuggingFace. Por el identificador del modelo, se trata de una conversión a GGUF de un modelo de síntesis de voz (TTS) denominado KhanhTTS-OmniVoice, orientado a la generación de audio de voz a partir de texto. La model card publicada no contiene ninguna descripción técnica, instrucciones de uso ni datos de entrenamiento: únicamente declara la licencia Apache 2.0.
+KhanhTTS-OmniVoice-GGUF es un repositorio de pesos cuantizados en formato GGUF publicado por el usuario doof-ferb en Hugging Face. Por el identificador del modelo, se trata de una conversión a GGUF de un modelo de síntesis de voz (TTS) denominado KhanhTTS-OmniVoice, orientado a la generación de audio de voz a partir de texto. La model card publicada no contiene ninguna descripción técnica, instrucciones de uso ni datos de entrenamiento: únicamente declara la licencia Apache 2.0.
 
 El interés de este repositorio reside en el formato GGUF, que permite ejecutar el modelo en CPU y GPU de consumo mediante llama.cpp y herramientas compatibles, algo relevante para despliegues de TTS en local sin infraestructura dedicada. Sin embargo, la ausencia total de documentación, la inexistencia de descargas y de "likes" en el momento de la consulta, y la falta de información sobre arquitectura, parámetros o idiomas hacen que su evaluación rigurosa sea imposible con los datos disponibles.
 
@@ -73,5 +73,5 @@ No disponible. No se conocen modelos comparables porque no se ha podido determin
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/doof-ferb/KhanhTTS-OmniVoice-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/doof-ferb/KhanhTTS-OmniVoice-GGUF
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

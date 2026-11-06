@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/sol-high.h009.echo-mixedswe.step_1 | 9.4B | no disponible | no disponible | HuggingFace (checkpoint intermedio) |
-| Qwen/Qwen3.5-9B-Base | 9.4B | no disponible | no disponible | HuggingFace |
-| Llama 3.1 8B | 8.0B | 128K | Meta Llama 3 | HuggingFace |
+| agentic-ptb/sol-high.h009.echo-mixedswe.step_1 | 9.4B | no disponible | no disponible | Hugging Face (checkpoint intermedio) |
+| Qwen/Qwen3.5-9B-Base | 9.4B | no disponible | no disponible | Hugging Face |
+| Llama 3.1 8B | 8.0B | 128K | Meta Llama 3 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. La comparación se limita a parámetros y disponibilidad. El modelo base Qwen3.5-9B-Base es la referencia directa, pero no se conocen sus especificaciones completas en la información proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo. La comparación se limita a p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h009.echo-mixedswe.step_1
+- Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h009.echo-mixedswe.step_1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 
 No se han encontrado papers, blogs o repositorios adicionales directamente relacionados con este checkpoint en la información proporcionada.

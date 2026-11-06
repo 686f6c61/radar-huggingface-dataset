@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`TheHassanSaud/P2_pythia410m_q0_dpo_beta0_1` es un checkpoint de generación de texto publicado en HuggingFace por el usuario TheHassanSaud. Por el nombre del repositorio y por la etiqueta de arquitectura `gpt_neox`, se trata con alta probabilidad de un ajuste fino sobre EleutherAI Pythia-410M (405.334.016 parámetros reales según los safetensors) mediante DPO (Direct Preference Optimization) con un hiperparámetro beta de 0,1, seguido de alguna variante de cuantización identificada como "q0". Ninguna de estas deducciones está confirmada por el autor.
+`TheHassanSaud/P2_pythia410m_q0_dpo_beta0_1` es un checkpoint de generación de texto publicado en Hugging Face por el usuario TheHassanSaud. Por el nombre del repositorio y por la etiqueta de arquitectura `gpt_neox`, se trata con alta probabilidad de un ajuste fino sobre EleutherAI Pythia-410M (405.334.016 parámetros reales según los safetensors) mediante DPO (Direct Preference Optimization) con un hiperparámetro beta de 0,1, seguido de alguna variante de cuantización identificada como "q0". Ninguna de estas deducciones está confirmada por el autor.
 
 El problema que aborda es el habitual de los experimentos de alineación: tomar un modelo base pequeño, preentrenado solo con objetivos de modelado de lenguaje, y ajustarlo con preferencias humanas o sintéticas para mejorar la utilidad de sus respuestas. Un modelo de 405 millones de parámetros permite iterar experimentos de alineación en una única GPU de consumo, algo relevante para investigación académica con presupuesto limitado y para reproducibilidad de estudios sobre DPO.
 
-La relevancia práctica actual es limitada: el repositorio acumula 0 descargas y 0 "likes", la model card es la plantilla automática de HuggingFace sin rellenar (todos los campos aparecen como `[More Information Needed]`) y no se declara licencia, idiomas, datos de entrenamiento ni evaluación. Debe tratarse, por tanto, como un artefacto de investigación no validado, no como un modelo listo para producción.
+La relevancia práctica actual es limitada: el repositorio acumula 0 descargas y 0 "likes", la model card es la plantilla automática de Hugging Face sin rellenar (todos los campos aparecen como `[More Information Needed]`) y no se declara licencia, idiomas, datos de entrenamiento ni evaluación. Debe tratarse, por tanto, como un artefacto de investigación no validado, no como un modelo listo para producción.
 
 ## Especificaciones técnicas
 
@@ -44,7 +44,7 @@ No hay información sobre el entrenamiento. El sufijo `dpo_beta0_1` sugiere una 
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingües: no disponible; el corpus de entrenamiento del modelo base es mayoritariamente inglés.
 - Capacidades especiales (modo "thinking", visión, audio): no disponibles.
-- Compatibilidad de despliegue: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que el repositorio puede servirse con TGI y con los endpoints de HuggingFace.
+- Compatibilidad de despliegue: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que el repositorio puede servirse con TGI y con los endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -53,7 +53,7 @@ No hay información sobre el entrenamiento. El sufijo `dpo_beta0_1` sugiere una 
 - Generación de texto asistida en local: completado de párrafos, resúmenes breves o reescritura en inglés sobre una GPU de consumo, sin coste de API ni envío de datos a terceros.
 - Etiquetado por few-shot: usar el modelo para clasificar intenciones, sentimiento o categorías de tickets mediante plantillas de prompt, con verificación humana posterior.
 - Generación de datos sintéticos: producir corpus de texto corto para preentrenar o aumentar datasets de clasificadores más pequeños, filtrando después por calidad.
-- Docencia y formación: ejemplo didáctico de fine-tuning con DPO y de publicación de checkpoints en HuggingFace, ejecutable en portátiles con GPU modesta.
+- Docencia y formación: ejemplo didáctico de fine-tuning con DPO y de publicación de checkpoints en Hugging Face, ejecutable en portátiles con GPU modesta.
 - Pruebas de infraestructura: banco de pruebas para validar pipelines de despliegue con TGI o vLLM antes de escalar a modelos mayores, gracias a su huella de memoria mínima.
 - Baseline en estudios comparativos: punto de referencia de bajo coste frente a modelos alineados del mismo orden de parámetros.
 
@@ -76,12 +76,12 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| P2_pythia410m_q0_dpo_beta0_1 (este modelo) | 405.334.016 | no disponible | no disponible | HuggingFace, 0 descargas |
-| EleutherAI/pythia-410m (modelo base probable) | 405 M | 2.048 tokens | Apache-2.0 | HuggingFace, ampliamente usado |
-| EleutherAI/pythia-160m | 162 M | 2.048 tokens | Apache-2.0 | HuggingFace |
-| openai-community/gpt2-medium | 355 M | 1.024 tokens | MIT | HuggingFace |
-| HuggingFaceTB/SmolLM2-360M | 362 M | 8.192 tokens | Apache-2.0 | HuggingFace |
-| Qwen/Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache-2.0 | HuggingFace |
+| P2_pythia410m_q0_dpo_beta0_1 (este modelo) | 405.334.016 | no disponible | no disponible | Hugging Face, 0 descargas |
+| EleutherAI/pythia-410m (modelo base probable) | 405 M | 2.048 tokens | Apache-2.0 | Hugging Face, ampliamente usado |
+| EleutherAI/pythia-160m | 162 M | 2.048 tokens | Apache-2.0 | Hugging Face |
+| openai-community/gpt2-medium | 355 M | 1.024 tokens | MIT | Hugging Face |
+| HuggingFaceTB/SmolLM2-360M | 362 M | 8.192 tokens | Apache-2.0 | Hugging Face |
+| Qwen/Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache-2.0 | Hugging Face |
 
 Los datos de las filas comparativas corresponden a la documentación pública de cada modelo y se ofrecen como referencia; no se han verificado contra los repositorios en el momento de redactar esta ficha. La ventaja diferencial de este checkpoint sería su condición de experimento de DPO reproducible; su desventaja frente a las alternativas es la ausencia de licencia, de evaluación y de documentación.
 
@@ -100,7 +100,7 @@ Los datos de las filas comparativas corresponden a la documentación pública de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_dpo_beta0_1
+- Modelo en Hugging Face: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_dpo_beta0_1
 - Modelo base probable, EleutherAI Pythia-410M: https://huggingface.co/EleutherAI/pythia-410m
 - Paper de la familia Pythia: https://arxiv.org/abs/2304.01373
 - Paper de la arquitectura GPT-NeoX: https://arxiv.org/abs/2204.06745

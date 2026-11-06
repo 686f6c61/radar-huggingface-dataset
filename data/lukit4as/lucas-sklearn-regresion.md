@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Lukit4as/lucas-sklearn-regresion` | Regresion lineal (sklearn) | 4 | No aplica | MIT | HuggingFace Hub |
+| `Lukit4as/lucas-sklearn-regresion` | Regresion lineal (sklearn) | 4 | No aplica | MIT | Hugging Face Hub |
 | Regresion ridge / lasso (sklearn) | Regresion lineal regularizada | Variable | No aplica | BSD-3 | scikit-learn |
 | XGBoost / LightGBM | Gradient boosting tabular | Variable (arboles) | No aplica | Apache 2.0 / MIT | Repos oficiales |
 | Regresion lineal multiple equivalente | Implementacion manual con NumPy | 4 | No aplica | Depende del autor | No disponible |
@@ -87,7 +87,7 @@ No se dispone de comparativas publicadas con otros modelos del Hub para este cas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lukit4as/lucas-sklearn-regresion
+- Modelo en Hugging Face: https://huggingface.co/Lukit4as/lucas-sklearn-regresion
 - Documentacion de scikit-learn `LinearRegression`: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
 - Documentacion de `joblib`: https://joblib.readthedocs.io/
 - Documentacion de `huggingface_hub`: https://huggingface.co/docs/huggingface_hub

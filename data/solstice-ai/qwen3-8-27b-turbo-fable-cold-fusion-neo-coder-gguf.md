@@ -80,7 +80,7 @@ No se dispone de modelos comparables con datos suficientes en la informacion pro
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-NEO-CODER-GGUF
+- Hugging Face del modelo: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-NEO-CODER-GGUF
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Modelo relacionado (UltraOptimised): https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-GGUF-UltraOptimised
 - Arquitectura original Qwen: https://huggingface.co/Qwen

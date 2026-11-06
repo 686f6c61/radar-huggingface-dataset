@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Latentes | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OzzyGT/taeh3 | Tiny autoencoder (decodificador) | 11,3 M | MiniMax-H3 | MIT | HuggingFace (mirror) |
+| OzzyGT/taeh3 | Tiny autoencoder (decodificador) | 11,3 M | MiniMax-H3 | MIT | Hugging Face (mirror) |
 | VAE completo de MiniMax-H3 | VAE de video completo | no disponible | MiniMax-H3 | no disponible | dentro del pipeline de MiniMax-H3 |
 | Otros taehv (madebyollin) | Tiny autoencoders | no disponible en la informacion | otros espacios latentes | MIT | GitHub (`madebyollin/taehv`) |
 
@@ -87,7 +87,7 @@ El comparador natural es el VAE completo de MiniMax-H3: el TAE produce el mismo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OzzyGT/taeh3
+- Hugging Face: https://huggingface.co/OzzyGT/taeh3
 - Repositorio upstream (taehv): https://github.com/madebyollin/taehv
 - Fichero de pesos original: https://github.com/madebyollin/taehv/blob/main/safetensors/taeh3.safetensors
 - Commit de procedencia: https://github.com/madebyollin/taehv/commit/62f7591f59dfbb4c3c02b7a621d180a9eeaba26c

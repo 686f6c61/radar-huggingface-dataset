@@ -83,7 +83,7 @@ La comparación con el modelo base es la más directa: tsunagari-bert-onnx hered
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/i-shinya/tsunagari-bert-onnx
+- Modelo en Hugging Face: https://huggingface.co/i-shinya/tsunagari-bert-onnx
 - Modelo base: https://huggingface.co/tohoku-nlp/bert-large-japanese-v2
 - Repositorio del autor: https://github.com/i-shinya/tsunagari
 - Diccionario lindera UniDic (release v5.3.0): https://github.com/lindera/lindera/releases/tag/v5.3.0

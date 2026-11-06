@@ -90,15 +90,15 @@ Kimi K2.7 Code mejora a K2.6 en todos los benchmarks publicados, pero queda por 
 - Riesgo de alucinación: no cuantificado en la información proporcionada; como modelo generativo de código, existe riesgo de generar APIs, funciones o dependencias inexistentes.
 - Limitaciones de contexto o idioma: el contexto es de 256K tokens; los idiomas soportados no están disponibles, por lo que no se puede confirmar cobertura multilingüe más allá del inglés técnico habitual en código.
 - Restricciones de licencia: licencia "modified-mit" (license: other). Es una licencia modificada, no MIT estándar, por lo que conviene revisar el texto completo en el repositorio antes de uso comercial.
-- El repositorio `arbonquants/Kimi-K2.7-Code` es una réplica de terceros (22 descargas, 0 likes, creado el 2026-10-29); el modelo original se publica bajo la organización `moonshotai` en HuggingFace.
+- El repositorio `arbonquants/Kimi-K2.7-Code` es una réplica de terceros (22 descargas, 0 likes, creado el 2026-10-29); el modelo original se publica bajo la organización `moonshotai` en Hugging Face.
 - Los benchmarks Kimi Code Bench v2 y Kimi Claw 24/7 Bench son internos del autor, lo que limita la comparabilidad independiente.
 - El tamaño del modelo (595 GB de pesos, 1T de parámetros) implica un coste de despliegue muy elevado y requiere infraestructura de centro de datos.
 - El pipeline declarado es image-text-to-text, pero no se detallan las capacidades multimodales más allá del codificador MoonViT.
 
 ## Enlaces
 
-- Repositorio HuggingFace (réplica): https://huggingface.co/arbonquants/Kimi-K2.7-Code
-- Organización Moonshot AI en HuggingFace: https://huggingface.co/moonshotai
+- Repositorio Hugging Face (réplica): https://huggingface.co/arbonquants/Kimi-K2.7-Code
+- Organización Moonshot AI en Hugging Face: https://huggingface.co/moonshotai
 - Modelo original (referencia en la model card): https://huggingface.co/moonshotai/Kimi-K2.7-Code
 - Licencia: https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/main/LICENSE
 - Página de Kimi Code: https://www.kimi.com/code

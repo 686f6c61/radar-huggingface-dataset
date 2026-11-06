@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`firzahdzm/tourn-f035af7c-grpo-hyper-g23c` es un adaptador PEFT (LoRA) publicado en HuggingFace por el usuario `firzahdzm` sobre el modelo base Qwen/Qwen2.5-3B. No se trata por tanto de un modelo completo entrenado desde cero, sino de un conjunto de pesos de ajuste fino que deben cargarse sobre el checkpoint original de Qwen2.5-3B para poder ejecutarse. El repositorio contiene 1,0 GB de pesos en formato safetensors y declara la librería `peft` (versión 0.15.1) como framework de carga.
+`firzahdzm/tourn-f035af7c-grpo-hyper-g23c` es un adaptador PEFT (LoRA) publicado en Hugging Face por el usuario `firzahdzm` sobre el modelo base Qwen/Qwen2.5-3B. No se trata por tanto de un modelo completo entrenado desde cero, sino de un conjunto de pesos de ajuste fino que deben cargarse sobre el checkpoint original de Qwen2.5-3B para poder ejecutarse. El repositorio contiene 1,0 GB de pesos en formato safetensors y declara la librería `peft` (versión 0.15.1) como framework de carga.
 
-La relevancia de este artefacto es limitada y de carácter experimental. La model card es la plantilla genérica de HuggingFace sin rellenar: todos los campos (desarrollador, datos de entrenamiento, licencia, idiomas, evaluación) aparecen como `[More Information Needed]`. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y su identificador sugiere una ejecución automatizada dentro de una barrida de hiperparámetros con GRPO (Group Relative Policy Optimization), aunque esto no está documentado en ninguna parte.
+La relevancia de este artefacto es limitada y de carácter experimental. La model card es la plantilla genérica de Hugging Face sin rellenar: todos los campos (desarrollador, datos de entrenamiento, licencia, idiomas, evaluación) aparecen como `[More Information Needed]`. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y su identificador sugiere una ejecución automatizada dentro de una barrida de hiperparámetros con GRPO (Group Relative Policy Optimization), aunque esto no está documentado en ninguna parte.
 
 Dado que el modelo base sí está bien caracterizado (Qwen2.5-3B: transformer decoder-only de 3 090 millones de parámetros, 32 768 tokens de contexto nativo, licencia Apache 2.0), esta ficha distingue de forma explícita entre los datos verificables del modelo base y los datos no disponibles del adaptador. Cualquier uso en producción debería partir del checkpoint base y tratar este adaptador como un experimento no validado.
 
@@ -62,11 +62,11 @@ La comparación se establece con el propio modelo base y con alternativas de tam
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento del adaptador |
 |---|---|---|---|---|---|
-| firzahdzm/tourn-f035af7c-grpo-hyper-g23c | Adaptador sobre 3,09B | Heredado del base (32 768) | No disponible | Repositorio HuggingFace, 0 descargas | No disponible |
-| Qwen/Qwen2.5-3B | 3,09B | 32 768 (131 072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente utilizado | No aplica (referencia) |
-| Qwen/Qwen2.5-3B-Instruct | 3,09B | 32 768 (131 072 con YaRN) | Apache 2.0 | HuggingFace | No aplica (alternativa afinada por el propio fabricante) |
-| Llama 3.2 3B Instruct | 3,21B | 131 072 | Llama 3.2 Community License | HuggingFace, con restricciones de uso | No aplica |
-| Phi-3.5-mini-instruct | 3,8B | 131 072 | MIT | HuggingFace | No aplica |
+| firzahdzm/tourn-f035af7c-grpo-hyper-g23c | Adaptador sobre 3,09B | Heredado del base (32 768) | No disponible | Repositorio Hugging Face, 0 descargas | No disponible |
+| Qwen/Qwen2.5-3B | 3,09B | 32 768 (131 072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente utilizado | No aplica (referencia) |
+| Qwen/Qwen2.5-3B-Instruct | 3,09B | 32 768 (131 072 con YaRN) | Apache 2.0 | Hugging Face | No aplica (alternativa afinada por el propio fabricante) |
+| Llama 3.2 3B Instruct | 3,21B | 131 072 | Llama 3.2 Community License | Hugging Face, con restricciones de uso | No aplica |
+| Phi-3.5-mini-instruct | 3,8B | 131 072 | MIT | Hugging Face | No aplica |
 
 Ninguna de las alternativas de la tabla es directamente intercambiable con este adaptador: solo Qwen2.5-3B comparte tokenizador y arquitectura, mientras que Llama 3.2 3B y Phi-3.5-mini son modelos independientes con sus propios pesos completos.
 

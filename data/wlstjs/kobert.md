@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wlstjs/kobert es un modelo de clasificación de texto en coreano obtenido mediante fine-tuning del modelo preentrenado skt/kobert-base-v1, desarrollado por SK Telecom. Se publica en HuggingFace bajo el identificador wlstjs/kobert y está pensado para tareas de clasificación de secuencias (text-classification) en el ámbito del procesamiento de lenguaje natural en coreano. El modelo cuenta con 92.188.418 parámetros (unos 92 M), lo que lo sitúa en la categoría de modelos BERT-base compactos y ligeros.
+wlstjs/kobert es un modelo de clasificación de texto en coreano obtenido mediante fine-tuning del modelo preentrenado skt/kobert-base-v1, desarrollado por SK Telecom. Se publica en Hugging Face bajo el identificador wlstjs/kobert y está pensado para tareas de clasificación de secuencias (text-classification) en el ámbito del procesamiento de lenguaje natural en coreano. El modelo cuenta con 92.188.418 parámetros (unos 92 M), lo que lo sitúa en la categoría de modelos BERT-base compactos y ligeros.
 
 La relevancia de este artefacto es limitada: se trata de un modelo generado automáticamente con la librería Transformers (etiqueta generated_from_trainer), sin model card completada, sin licencia declarada, sin idiomas declarados, sin dataset de entrenamiento especificado y sin resultados de benchmarks publicados en el model-index. Además, sus métricas de evaluación (accuracy 0,526 y loss 0,6927 tras 5 épocas) indican un rendimiento muy pobre, apenas por encima del azar en un problema de clasificación binaria.
 
@@ -47,7 +47,7 @@ El entrenamiento del fine-tuning se realizó con Transformers 5.17.0, PyTorch 2.
 - Clasificación de comentarios o reseñas en coreano: podría emplearse como punto de partida para tareas de análisis de sentimiento binario, aunque la accuracy reportada (0,526) es demasiado baja para uso real sin reentrenamiento.
 - Filtrado de spam o contenido en coreano: serviría como plantilla para fine-tuning posterior, no como clasificador listo para producción.
 - Etiquetado de documentos coreanos en pipelines de procesamiento por lotes: su tamano de 92 M de parámetros permite ejecutarlo en CPU y procesar grandes volúmenes con bajo coste, siempre que se reentrene adecuadamente.
-- Prototipado académico: útil como ejemplo reproducible de fine-tuning de KoBERT con la API Trainer de HuggingFace, dado que la model card incluye los hiperparámetros completos.
+- Prototipado académico: útil como ejemplo reproducible de fine-tuning de KoBERT con la API Trainer de Hugging Face, dado que la model card incluye los hiperparámetros completos.
 - Base para comparativas de experimentos: al estar tan poco ajustado, sirve como línea base inferior frente a checkpoints mejor entrenados de KoBERT.
 - Integración ligera en microservicios: el checkpoint ocupa 0,4 GB y cabe en cualquier contenedor, lo que facilita desplegarlo como endpoint experimental en un servicio de clasificación de baja latencia.
 - Tareas de investigación sobre robustez: la baja accuracy y la ausencia de dataset documentado lo hacen útil para estudiar el efecto de datasets mal especificados en el rendimiento final.
@@ -80,10 +80,10 @@ Resultado final declarado en la model card: loss 0,6927 y accuracy 0,526 en el c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wlstjs/kobert | 92 M | no disponible | accuracy 0,526 (evaluacion interna) | no disponible | HuggingFace, 0 descargas |
-| skt/kobert-base-v1 | ~92 M (modelo base) | no disponible | no disponible en la informacion | Apache 2.0 | HuggingFace y GitHub de SKTBrain |
-| monologg/kobert | ~92 M | no disponible | no disponible en la informacion | no disponible en la informacion | HuggingFace |
-| klue/bert-base | ~110 M | 512 tokens (estandar BERT) | no disponible en la informacion | no disponible en la informacion | HuggingFace |
+| wlstjs/kobert | 92 M | no disponible | accuracy 0,526 (evaluacion interna) | no disponible | Hugging Face, 0 descargas |
+| skt/kobert-base-v1 | ~92 M (modelo base) | no disponible | no disponible en la informacion | Apache 2.0 | Hugging Face y GitHub de SKTBrain |
+| monologg/kobert | ~92 M | no disponible | no disponible en la informacion | no disponible en la informacion | Hugging Face |
+| klue/bert-base | ~110 M | 512 tokens (estandar BERT) | no disponible en la informacion | no disponible en la informacion | Hugging Face |
 
 Nota: los datos de rendimiento de los modelos comparados no se encontraban en la información proporcionada; solo se confirma su existencia y su relación con KoBERT.
 
@@ -101,7 +101,7 @@ Nota: los datos de rendimiento de los modelos comparados no se encontraban en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wlstjs/kobert
+- Modelo en Hugging Face: https://huggingface.co/wlstjs/kobert
 - Modelo base skt/kobert-base-v1: https://huggingface.co/skt/kobert-base-v1
 - Repositorio oficial de KoBERT (SKTBrain): https://github.com/SKTBrain/KoBERT
 - Pagina del proyecto KoBERT de SK Telecom (coreano): https://sktelecom.github.io/project/kobert/

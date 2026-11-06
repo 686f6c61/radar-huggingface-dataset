@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Oblivion22/distilbert-imdb-sentiment es un modelo de clasificación de texto publicado en HuggingFace por el usuario Oblivion22. Por su nombre y su arquitectura, se trata de un DistilBERT (destilación de BERT) ajustado para análisis de sentimiento, presumiblemente sobre el corpus IMDB de reseñas de cine. El repositorio contiene 66.955.010 parámetros en formato safetensors, lo que coincide con la configuración estándar de DistilBERT más una cabeza de clasificación. La model card está generada automáticamente y no aporta información sobre datos de entrenamiento, hiperparámetros ni evaluación.
+Oblivion22/distilbert-imdb-sentiment es un modelo de clasificación de texto publicado en Hugging Face por el usuario Oblivion22. Por su nombre y su arquitectura, se trata de un DistilBERT (destilación de BERT) ajustado para análisis de sentimiento, presumiblemente sobre el corpus IMDB de reseñas de cine. El repositorio contiene 66.955.010 parámetros en formato safetensors, lo que coincide con la configuración estándar de DistilBERT más una cabeza de clasificación. La model card está generada automáticamente y no aporta información sobre datos de entrenamiento, hiperparámetros ni evaluación.
 
 DistilBERT es una versión destilada de BERT-base que reduce el número de capas de 12 a 6 y el tamaño de 110M a 66M parámetros, manteniendo aproximadamente el 97 % del rendimiento de BERT en tareas de comprensión del lenguaje según su artículo original. Es un modelo encoder-only con 768 dimensiones ocultas, 12 cabezas de atención y una longitud máxima de secuencia de 512 tokens. Su tamaño reducido lo hace apto para inferencia en CPU y para escenarios de alto throughput en GPU.
 
@@ -38,7 +38,7 @@ No hay información disponible sobre el procedimiento de fine-tuning: la model c
 - Procesamiento de secuencias de hasta 512 tokens.
 - Inferencia de baja latencia por su tamaño reducido (67M de parámetros).
 - Compatible con la librería transformers y con Text Embeddings Inference (según las etiquetas del repositorio).
-- Compatible con endpoints de HuggingFace (etiqueta endpoints_compatible).
+- Compatible con endpoints de Hugging Face (etiqueta endpoints_compatible).
 - No dispone de soporte de tool calling ni function calling: es un clasificador, no un modelo generativo.
 - No dispone de capacidades de agente ni de razonamiento multi-paso.
 - No dispone de modo thinking, visión, audio ni generación de texto libre.
@@ -69,17 +69,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, GTX 1650 e incluso iGPU modernas.
 - Funciona en CPU sin GPU dedicada con latencias aceptables para uso por lotes.
 - GPU de datacenter (A100, H100) no son necesarias; solo tendrían sentido para servir decenas de miles de peticiones por segundo agregando varias instancias.
-- Opciones de despliegue: pipeline de transformers, HuggingFace Inference Endpoints (etiqueta endpoints_compatible), Text Embeddings Inference (etiqueta text-embeddings-inference) y exportación a ONNX. No se publican pesos GGUF, por lo que llama.cpp u Ollama no son aplicables sin conversión previa.
+- Opciones de despliegue: pipeline de transformers, Hugging Face Inference Endpoints (etiqueta endpoints_compatible), Text Embeddings Inference (etiqueta text-embeddings-inference) y exportación a ONNX. No se publican pesos GGUF, por lo que llama.cpp u Ollama no son aplicables sin conversión previa.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Oblivion22/distilbert-imdb-sentiment | 66,96M | 512 | no disponible | safetensors | HuggingFace |
-| distilbert-base-uncased-finetuned-sst-2-english | 66,96M | 512 | Apache 2.0 | safetensors, PyTorch | HuggingFace |
-| bert-base-uncased | 110M | 512 | Apache 2.0 | safetensors, PyTorch | HuggingFace |
-| roberta-base | 125M | 514 | MIT | safetensors, PyTorch | HuggingFace |
+| Oblivion22/distilbert-imdb-sentiment | 66,96M | 512 | no disponible | safetensors | Hugging Face |
+| distilbert-base-uncased-finetuned-sst-2-english | 66,96M | 512 | Apache 2.0 | safetensors, PyTorch | Hugging Face |
+| bert-base-uncased | 110M | 512 | Apache 2.0 | safetensors, PyTorch | Hugging Face |
+| roberta-base | 125M | 514 | MIT | safetensors, PyTorch | Hugging Face |
 
 La comparación con alternativas equivalentes es limitada porque no hay métricas publicadas para este modelo. Los tres modelos de referencia tienen licencias permisivas (Apache 2.0 o MIT) y documentación completa, mientras que este repositorio no declara licencia y su model card es una plantilla sin rellenar. DistilBERT base y su versión ajustada en SST-2 ofrecen el mismo tamaño y una trazabilidad clara, por lo que serían opciones preferibles si se necesita un clasificador de sentimiento listo para producción. RoBERTa-base sacrifica velocidad a cambio de mayor capacidad, con 125M de parámetros y contexto de 514 tokens.
 
@@ -98,9 +98,9 @@ La comparación con alternativas equivalentes es limitada porque no hay métrica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Oblivion22/distilbert-imdb-sentiment
+- Modelo en Hugging Face: https://huggingface.co/Oblivion22/distilbert-imdb-sentiment
 - Artículo de DistilBERT (arquitectura de referencia): https://arxiv.org/abs/1910.01108
-- Documentación de DistilBERT en HuggingFace: https://huggingface.co/docs/transformers/model_doc/distilbert
+- Documentación de DistilBERT en Hugging Face: https://huggingface.co/docs/transformers/model_doc/distilbert
 - Artículo de la etiqueta arxiv:1910.09700 (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Dataset IMDB (presunto origen de los datos): https://huggingface.co/datasets/imdb
 - Modelo de referencia alternativo (SST-2): https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english

@@ -77,10 +77,10 @@ Los datos de la siguiente tabla proceden de información pública general sobre 
 
 | Modelo | Parámetros | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen-Image-2.1 | 7,1B (componente de generación visual, 32 capas DiT) | Hasta 2752x1536; generación y edición unificadas; RGBA nativo | Qwen Research License Agreement | HuggingFace (oficial y espejo), ModelScope |
-| Qwen-Image (versión original) | 20B (MMDiT) | Generación de texto a imagen; edición en modelo separado | Apache 2.0 (según información pública) | HuggingFace, ModelScope |
-| FLUX.1 [dev] | 12B | Generación de texto a imagen; edición mediante variantes específicas | Licencia no comercial (según información pública) | HuggingFace |
-| Stable Diffusion 3.5 Large | 8B | Generación de texto a imagen; sin canal alfa nativo | Stability AI Community License | HuggingFace |
+| Qwen-Image-2.1 | 7,1B (componente de generación visual, 32 capas DiT) | Hasta 2752x1536; generación y edición unificadas; RGBA nativo | Qwen Research License Agreement | Hugging Face (oficial y espejo), ModelScope |
+| Qwen-Image (versión original) | 20B (MMDiT) | Generación de texto a imagen; edición en modelo separado | Apache 2.0 (según información pública) | Hugging Face, ModelScope |
+| FLUX.1 [dev] | 12B | Generación de texto a imagen; edición mediante variantes específicas | Licencia no comercial (según información pública) | Hugging Face |
+| Stable Diffusion 3.5 Large | 8B | Generación de texto a imagen; sin canal alfa nativo | Stability AI Community License | Hugging Face |
 
 La diferencia principal de Qwen-Image-2.1 frente a estas alternativas es la combinación de tamaño reducido (7,1B), generación nativa RGBA, edición unificada con hasta 10 referencias y licencia de investigación. No se dispone de comparaciones cuantitativas de calidad entre estos modelos en la información proporcionada.
 
@@ -101,7 +101,7 @@ La diferencia principal de Qwen-Image-2.1 frente a estas alternativas es la comb
 ## Enlaces
 
 - Repositorio analizado (espejo): https://huggingface.co/binocheese/Qwen-Image-2.1
-- Repositorio oficial en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Repositorio oficial en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio oficial en ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog de presentación: https://qwen.ai/blog?id=qwen-image-2.1
 - Demo (Space): https://huggingface.co/spaces/Qwen/Qwen-Image-2.1

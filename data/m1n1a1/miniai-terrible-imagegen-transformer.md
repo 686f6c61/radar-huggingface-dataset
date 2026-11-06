@@ -2,7 +2,7 @@
 
 ## Resumen
 
-T.I.T.S. (Terrible Imagegen TranSformer) es un modelo de difusion texto-a-imagen entrenado desde cero por el usuario M1n1A1 y publicado en HuggingFace bajo licencia MIT. A pesar del nombre, no es un transformer: la arquitectura real es una UNet pequena (TinyUNet) con una unica capa de self-attention, 16,10 millones de parametros y un codificador de texto CLIP ViT-B/32 congelado. Genera imagenes de 128x128 pixeles en espacio de pixeles, sin VAE ni latentes.
+T.I.T.S. (Terrible Imagegen TranSformer) es un modelo de difusion texto-a-imagen entrenado desde cero por el usuario M1n1A1 y publicado en Hugging Face bajo licencia MIT. A pesar del nombre, no es un transformer: la arquitectura real es una UNet pequena (TinyUNet) con una unica capa de self-attention, 16,10 millones de parametros y un codificador de texto CLIP ViT-B/32 congelado. Genera imagenes de 128x128 pixeles en espacio de pixeles, sin VAE ni latentes.
 
 El modelo resuelve un problema deliberadamente acotado: demostrar que se puede entrenar un diffusion funcional desde cero en hardware de consumo. El autor lo entreno en 7,5 horas sobre una unica RTX 4060 Ti de 8 GB, con 3 epocas y 53.130 pasos sobre COCO Captions. No compite con modelos de generacion de imagen de gran escala; su interes es educativo y experimental.
 
@@ -107,7 +107,7 @@ No se proporciona en la informacion disponible una comparativa oficial con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/M1n1A1/MiniAI-terrible-imagegen-transformer
+- Modelo en Hugging Face: https://huggingface.co/M1n1A1/MiniAI-terrible-imagegen-transformer
 - Dataset de entrenamiento (COCO Captions, jxie): https://huggingface.co/datasets/jxie/coco_captions
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada.
 - Resultados de busqueda web: las consultas realizadas no devolvieron resultados relevantes sobre este modelo; los enlaces recuperados no guardan relacion con el modelo ni con IA open source y se omiten.

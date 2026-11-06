@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes.
 
 ## Enlaces
 
-- HuggingFace (esta release): https://huggingface.co/Unluckkie/Spark-X2.6-4B-Sharp-IK-GGUF
+- Hugging Face (esta release): https://huggingface.co/Unluckkie/Spark-X2.6-4B-Sharp-IK-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Imatrix Sharp y plantilla: https://huggingface.co/peculiar-ragdoll/Sharp-Spark-X2.6-4B-GGUF
 - Mapa GSQ-RCO: https://huggingface.co/abenzerps/Spark-X2.6-4B-Uncensored-GSQ-RCO-GGUF

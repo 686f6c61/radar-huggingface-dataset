@@ -80,7 +80,7 @@ Todos los resultados proceden del `model-index` de la model card y están marcad
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Formato y disponibilidad |
 |---|---|---|---|---|---|
 | statim-decide-en-large | 421 M | no disponible | statim-weights | ingles | GGUF (f32, q8_0) y checkpoint Laya; 0 descargas y 0 likes en el momento de la consulta |
-| convaiinnovations/laya (checkpoint base) | no disponible | no disponible | no disponible | no disponible | disponible en HuggingFace; es el punto de partida del fine-tune |
+| convaiinnovations/laya (checkpoint base) | no disponible | no disponible | no disponible | no disponible | disponible en Hugging Face; es el punto de partida del fine-tune |
 | Otros clasificadores zero-shot basados en encoders (ModernBERT, DeBERTa) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación cuantitativa disponible se limita al checkpoint base: frente a él, el modelo mejora de forma marcada en las suites de entrenamiento (typed-decisions, Banking77 y MASSIVE) y se mantiene dentro del ruido en las suites held-out, con descensos mínimos en AG News (0,9390 frente a 0,9425), DAIR Emotion (0,5880 frente a 0,5945) y SIB-200 (0,7133 frente a 0,7267). No se han publicado en la información disponible comparaciones con otros encoders de clasificación zero-shot.
@@ -101,7 +101,7 @@ La comparación cuantitativa disponible se limita al checkpoint base: frente a �
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beko2210/statim-decide-en-large
+- Modelo en Hugging Face: https://huggingface.co/Beko2210/statim-decide-en-large
 - Licencia del modelo: https://huggingface.co/Beko2210/statim-decide-en-large/blob/main/LICENSE-MODEL.md
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Repositorio de Statim: https://github.com/BEKO2210/statim

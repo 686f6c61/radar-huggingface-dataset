@@ -97,7 +97,7 @@ La comparación con MobileNetV2 y MobileNetV3-Small se ofrece solo como referenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arm/squeezenet-1-0-int8-ethos-u-executorch-alif-dk-e8
+- Modelo en Hugging Face: https://huggingface.co/Arm/squeezenet-1-0-int8-ethos-u-executorch-alif-dk-e8
 - SqueezeNet 1.0 original (torchvision): https://docs.pytorch.org/vision/stable/models/generated/torchvision.models.squeezenet1_0.html
 - Arm AI Model Optimizer: https://developer.arm.com/dev-docs/ai-model-optimizer/
 - Licencia BSD-3-Clause: https://opensource.org/license/bsd-3-clause

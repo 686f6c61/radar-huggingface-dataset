@@ -76,7 +76,7 @@ La comparativa se basa en información general; no se dispone de benchmarks obje
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theoracleguy/Qwen3-TTS-12Hz-1.7B-Base-4bit
+- Modelo en Hugging Face: https://huggingface.co/theoracleguy/Qwen3-TTS-12Hz-1.7B-Base-4bit
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Repositorio GitHub de Qwen3-TTS: https://github.com/QwenLM/Qwen3-TTS
 - Variante VoiceDesign en MLX: https://huggingface.co/theoracleguy/Qwen3-TTS-12Hz-1.7B-VoiceDesign-4bit

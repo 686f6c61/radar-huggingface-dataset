@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Notio es un modelo de generación de texto publicado en HuggingFace por el usuario ContextReq. Se presenta como un proyecto experimental, con una model card muy escasa y críptica que indica que la página se limpiará en el futuro. Los únicos datos técnicos disponibles son el uso del dataset `roneneldan/TinyStories`, el idioma inglés y la licencia Apache-2.0. El modelo parece emplear un tokenizador inusual compuesto por 109 tokens, con un mapeo basado en líneas de un archivo `vocab.txt` y su conversión a formato binario (`.bin`).
+Notio es un modelo de generación de texto publicado en Hugging Face por el usuario ContextReq. Se presenta como un proyecto experimental, con una model card muy escasa y críptica que indica que la página se limpiará en el futuro. Los únicos datos técnicos disponibles son el uso del dataset `roneneldan/TinyStories`, el idioma inglés y la licencia Apache-2.0. El modelo parece emplear un tokenizador inusual compuesto por 109 tokens, con un mapeo basado en líneas de un archivo `vocab.txt` y su conversión a formato binario (`.bin`).
 
 No se ha publicado información sobre la arquitectura, el número de parámetros, la longitud de contexto ni el proceso de entrenamiento. Por tanto, no es posible determinar su relevancia técnica ni su rendimiento. Dado el dataset TinyStories, es probable que esté orientado a la generación de historias breves en inglés, pero no hay evidencias que permitan confirmarlo.
 
@@ -72,8 +72,8 @@ No hay informacion suficiente para realizar una comparativa fiable. El modelo no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ContextReq/Notio
-- Perfil del autor en HuggingFace: https://huggingface.co/ContextReq
+- Modelo en Hugging Face: https://huggingface.co/ContextReq/Notio
+- Perfil del autor en Hugging Face: https://huggingface.co/ContextReq
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Buzon de resultados de la busqueda web: sin enlaces relevantes adicionales.

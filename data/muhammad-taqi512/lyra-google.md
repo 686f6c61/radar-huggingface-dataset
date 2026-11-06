@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LYRA-GOOGLE es un repositorio alojado en HuggingFace bajo el identificador `muhammad-taqi512/LYRA-GOOGLE`, publicado por el usuario muhammad-taqi512 y declarado bajo licencia Apache 2.0. En el momento de recopilar esta informacion, el repositorio acumula 0 descargas y 0 likes, no tiene pipeline declarado, no especifica idiomas soportados y su model card se limita al bloque de frontmatter con la licencia, sin ningun texto descriptivo.
+LYRA-GOOGLE es un repositorio alojado en Hugging Face bajo el identificador `muhammad-taqi512/LYRA-GOOGLE`, publicado por el usuario muhammad-taqi512 y declarado bajo licencia Apache 2.0. En el momento de recopilar esta informacion, el repositorio acumula 0 descargas y 0 likes, no tiene pipeline declarado, no especifica idiomas soportados y su model card se limita al bloque de frontmatter con la licencia, sin ningun texto descriptivo.
 
 No existe informacion verificable sobre la arquitectura, el numero de parametros, la longitud de contexto, el dataset de entrenamiento, el regimen de licencia mas alla del identificador SPDX ni el formato de pesos. Las busquedas web realizadas a partir del nombre del modelo no devuelven ningun resultado tecnico relacionado: los resultados obtenidos corresponden a entradas enciclopedicas sobre la figura historica de Mahoma, sin conexion con el repositorio.
 
@@ -89,5 +89,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/muhammad-taqi512/LYRA-GOOGLE
+- Repositorio en Hugging Face: https://huggingface.co/muhammad-taqi512/LYRA-GOOGLE
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios de codigo o demos) asociados a este modelo. Las busquedas web realizadas devuelven exclusivamente resultados enciclopedicos sobre la figura historica de Mahoma, sin relacion con el repositorio.

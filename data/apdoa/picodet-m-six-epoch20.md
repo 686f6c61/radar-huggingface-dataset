@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `apdoa/picodet-m-six-epoch20` es un checkpoint experimental de detección de objetos basado en PicoDet-M con backbone LCNet, desarrollado por el usuario `apdoa` y publicado en HuggingFace. No es un modelo de lenguaje ni multimodal: se trata de un detector de una sola clase (vehículo) de entrada 640x640, entrenado para estudiar la corrección de condiciones de corrupción (niebla, nieve, baja luz, desenfoque de movimiento, cuantización de color y brillo) mediante adaptadores de bajo rango. El repositorio contiene 48 checkpoints de 20 épocas (12 configuraciones de condición, con variantes "general" y "espacial-canal"), además de adaptadores solo y tensores NPZ para descomposición, en un tamaño total de 1.8 GB.
+El modelo `apdoa/picodet-m-six-epoch20` es un checkpoint experimental de detección de objetos basado en PicoDet-M con backbone LCNet, desarrollado por el usuario `apdoa` y publicado en Hugging Face. No es un modelo de lenguaje ni multimodal: se trata de un detector de una sola clase (vehículo) de entrada 640x640, entrenado para estudiar la corrección de condiciones de corrupción (niebla, nieve, baja luz, desenfoque de movimiento, cuantización de color y brillo) mediante adaptadores de bajo rango. El repositorio contiene 48 checkpoints de 20 épocas (12 configuraciones de condición, con variantes "general" y "espacial-canal"), además de adaptadores solo y tensores NPZ para descomposición, en un tamaño total de 1.8 GB.
 
 El trabajo se enmarca en una investigación sobre CSA (Corruption-Specific Adapter) y CDA (Condition-Dependent Adapter), donde cada condición de corrupción tiene un adaptador independiente para corregir los fallos del detector base. La arquitectura combina una columna vertebral LCNet fija con 21 adaptadores de bajo rango (rank=4), modificando una parte de ellos en la variante espacial-canal. La relevancia actual radica en mejorar la robustez de detectores ante corrupciones ambientales típicas en sistemas de visión embebidos, manteniendo el coste de inferencia bajo.
 
@@ -105,6 +105,6 @@ La comparacion mas relevante es con los metodos previos del propio autor, presen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/apdoa/picodet-m-six-epoch20
+- Hugging Face: https://huggingface.co/apdoa/picodet-m-six-epoch20
 - Documentacion de referencia de PicoDet (fork de PaddleDetection): https://github.com/Purer-lyk/paddleDetection/blob/main/configs/picodet/README_en.md
-- Dentro del repositorio de HuggingFace se encuentran las carpetas `models/SIX_G_PRE_*` y `models/SIX_SC_PRE_*` con los checkpoints `model.pdparams`, `adapter_only.pdparams` y los archivos `TRAIN_CONFIG.yml`.
+- Dentro del repositorio de Hugging Face se encuentran las carpetas `models/SIX_G_PRE_*` y `models/SIX_SC_PRE_*` con los checkpoints `model.pdparams`, `adapter_only.pdparams` y los archivos `TRAIN_CONFIG.yml`.

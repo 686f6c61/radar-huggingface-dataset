@@ -83,10 +83,10 @@ Como referencia de familia, no de este repositorio, el modelo ternario original 
 
 | Modelo | Parametros | Peso | Contexto | Vision | Licencia | Estado |
 |---|---|---|---|---|---|---|
-| HybridRMD/Ternary-Bonsai-2-27B-Heretic (este) | 27B densos | 16,5 GB Q4_K_M / 28,6 GB Q8_0 | no disponible (ejemplo con 8192) | No, solo texto | other, remite al LICENSE del base | HuggingFace, 0 descargas |
-| prism-ml/Ternary-Bonsai-2-27B-gguf | 27B con pesos ternarios {-1,0,+1} y escalas FP16 por grupo | 5,9 GB declarados; 6,70 GiB en PQ2_0 y 5,53 GiB en PTQ1_0 en mirrors | 262K en el mirror de Ollama | Si, multimodal con entrada de vision | Apache-2.0 en los packs | HuggingFace y mirrors en Ollama; requiere runtime de Prism ML |
-| OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF | 27B | no disponible | no disponible | no disponible | no disponible | HuggingFace; usado por el autor como referencia de rechazo (87,5 por ciento) |
-| HybridRMD/Qwonsai-Bonsai2-Heretic (base directo) | 27B densos | FP16, 53,8 GB en el paso intermedio documentado | no disponible | Solo texto | other | HuggingFace |
+| HybridRMD/Ternary-Bonsai-2-27B-Heretic (este) | 27B densos | 16,5 GB Q4_K_M / 28,6 GB Q8_0 | no disponible (ejemplo con 8192) | No, solo texto | other, remite al LICENSE del base | Hugging Face, 0 descargas |
+| prism-ml/Ternary-Bonsai-2-27B-gguf | 27B con pesos ternarios {-1,0,+1} y escalas FP16 por grupo | 5,9 GB declarados; 6,70 GiB en PQ2_0 y 5,53 GiB en PTQ1_0 en mirrors | 262K en el mirror de Ollama | Si, multimodal con entrada de vision | Apache-2.0 en los packs | Hugging Face y mirrors en Ollama; requiere runtime de Prism ML |
+| OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF | 27B | no disponible | no disponible | no disponible | no disponible | Hugging Face; usado por el autor como referencia de rechazo (87,5 por ciento) |
+| HybridRMD/Qwonsai-Bonsai2-Heretic (base directo) | 27B densos | FP16, 53,8 GB en el paso intermedio documentado | no disponible | Solo texto | other | Hugging Face |
 
 La diferencia clave frente al modelo ternario de Prism ML es doble: este repositorio no lleva pesos ternarios reales (son cuantizaciones estandar de una mezcla densa) y ocupa entre tres y cinco veces mas disco, a cambio de funcionar con llama.cpp mainline sin runtime propietario y de incorporar la modificacion de comportamiento heretic. No hay datos publicados que permitan comparar calidad entre ambos enfoques en esta mezcla concreta.
 

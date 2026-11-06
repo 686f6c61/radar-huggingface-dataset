@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-8B-CC-SFT-v2 es un checkpoint de ajuste supervisado (SFT) continuado sobre Qwen3-8B-CC-SFT-v1, desarrollado por el usuario liangzhidanta y publicado en HuggingFace. Su objetivo es dotar a un modelo de 8.000 millones de parametros de capacidad nativa de compactacion de contexto para agentes de codificacion: es decir, que el modelo sepa resumir fielmente su propio estado (ficheros editados, pruebas ejecutadas, plan pendiente) cuando Claude Code dispara automaticamente una compactacion, y que sea capaz de continuar la tarea usando solo ese resumen comprimido.
+Qwen3-8B-CC-SFT-v2 es un checkpoint de ajuste supervisado (SFT) continuado sobre Qwen3-8B-CC-SFT-v1, desarrollado por el usuario liangzhidanta y publicado en Hugging Face. Su objetivo es dotar a un modelo de 8.000 millones de parametros de capacidad nativa de compactacion de contexto para agentes de codificacion: es decir, que el modelo sepa resumir fielmente su propio estado (ficheros editados, pruebas ejecutadas, plan pendiente) cuando Claude Code dispara automaticamente una compactacion, y que sea capaz de continuar la tarea usando solo ese resumen comprimido.
 
 El problema que aborda es concreto y medible: la version v1, al operar bajo compactacion nativa, tendia a fabricar estados de finalizacion ("he arreglado X" cuando no lo habia hecho), confundir planes con acciones ejecutadas, perder el rastro de las modificaciones y de los tests, y acumular errores en resumenes encadenados. La v2 se entrena con trayectorias reales de compactacion recogidas con GLM-5.3 bajo Claude Code, con un formato que respeta el limite de contexto visible por el modelo.
 
@@ -86,9 +86,9 @@ Interpretacion del autor: ambos modelos disparan la compactacion con la misma fr
 
 | Modelo | Parametros | Contexto | Tasa de resolucion (canonical303, compactacion nativa) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B-CC-SFT-v2 | 8B | 40960 | 47,5% (144/303) | other | HuggingFace, 0 descargas |
-| Qwen3-8B-CC-SFT-v1 | 8B | 40960 | 35,0% (106/303) | other | HuggingFace |
-| Qwen3-8B base | 8B | no disponible en esta informacion | 3,3% (10/303) | no disponible en esta informacion | HuggingFace (QwenLM) |
+| Qwen3-8B-CC-SFT-v2 | 8B | 40960 | 47,5% (144/303) | other | Hugging Face, 0 descargas |
+| Qwen3-8B-CC-SFT-v1 | 8B | 40960 | 35,0% (106/303) | other | Hugging Face |
+| Qwen3-8B base | 8B | no disponible en esta informacion | 3,3% (10/303) | no disponible en esta informacion | Hugging Face (QwenLM) |
 
 No se dispone de comparaciones con otros agentes de codificacion de 8B (por ejemplo variantes ajustadas de Llama, DeepSeek-Coder o Qwen-Coder) en el mismo banco, por lo que la comparativa externa queda como no disponible. La unica comparacion publicada es interna, contra el modelo base y el checkpoint anterior del mismo autor.
 
@@ -107,7 +107,7 @@ No se dispone de comparaciones con otros agentes de codificacion de 8B (por ejem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liangzhidanta/Qwen3-8B-CC-SFT-v2
+- Modelo en Hugging Face: https://huggingface.co/liangzhidanta/Qwen3-8B-CC-SFT-v2
 - Checkpoint base (v1): https://huggingface.co/liangzhidanta/Qwen3-8B-CC-SFT-v1
 - Repositorio de datos de entrenamiento: https://huggingface.co/datasets/liangzhidanta/claude-code-glm53-swesmith-compact-trajectories
 - Ficha de la v1 en LLM Explorer: https://llm-explorer.com/model/liangzhidanta%2FQwen3-8B-CC-SFT-v1,lZ7rdVjJCSTN1aFzzZwGm

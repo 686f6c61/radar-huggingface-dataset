@@ -106,7 +106,7 @@ No se dispone de resultados comparativos con otros modelos de clasificacion de i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sallout/laya-multitask-intents
+- Modelo en Hugging Face: https://huggingface.co/sallout/laya-multitask-intents
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Documentacion de la familia Laya: https://laya.convaiinnovations.com/
 - Repositorio laya-ai: https://github.com/SahilAmbekar/laya-ai/blob/main/README.md

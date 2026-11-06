@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - El protocolo de inferencia del autor recomienda ejecutar el lector y la puerta en GPUs separadas (`CUDA_VISIBLE_DEVICES=0` para el lector, `CUDA_VISIBLE_DEVICES=1` para la puerta), por lo que se necesitan al menos dos dispositivos.
 - GPUs recomendadas: A100 (40 GB o 80 GB) o H100 para el lector; una segunda GPU dedicada para la puerta.
 - En GPUs de consumo: el lector BF16 de ~29,5 GB no cabe en una única RTX 4090 o RTX 3090 de 24 GB; sería necesario repartir entre varias GPUs o recurrir a cuantización, que no está documentada en este repositorio.
-- Opciones de despliegue: el autor proporciona código propio (`code/configure.py`, `code/start_reader.py`, `code/infer.py`) sobre `transformers`; el tag `text-generation-inference` aparece en la ficha de HuggingFace, pero el protocolo personalizado de dos roles no se describe como compatible con vLLM, Ollama o llama.cpp en la información disponible.
+- Opciones de despliegue: el autor proporciona código propio (`code/configure.py`, `code/start_reader.py`, `code/infer.py`) sobre `transformers`; el tag `text-generation-inference` aparece en la ficha de Hugging Face, pero el protocolo personalizado de dos roles no se describe como compatible con vLLM, Ollama o llama.cpp en la información disponible.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estos checkpoints en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Xirui1208/selective-readtwice-14b-rl-step500-20260926
+- Repositorio Hugging Face: https://huggingface.co/Xirui1208/selective-readtwice-14b-rl-step500-20260926
 - Modelo base (lector congelado): https://huggingface.co/Xirui1208/readall-readtwice-14b-rl-step15-20260925
 - Referencia SFT: https://huggingface.co/Xirui1208/selective-readtwice-14b-sft-epoch1-step2944-20260925
 - Código de inferencia incluido en el repositorio: `selective_14b_step500/code/configure.py`, `selective_14b_step500/code/start_reader.py`, `selective_14b_step500/code/infer.py`

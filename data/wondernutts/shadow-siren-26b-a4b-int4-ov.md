@@ -79,7 +79,7 @@ La comparativa se limita a las variantes del mismo modelo, ya que no se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la version OpenVINO: https://huggingface.co/Wondernutts/Shadow-Siren-26B-A4B-int4-ov
+- Repositorio Hugging Face de la version OpenVINO: https://huggingface.co/Wondernutts/Shadow-Siren-26B-A4B-int4-ov
 - Modelo base original: https://huggingface.co/Vortex5/Shadow-Siren-26B-A4B
 - Componentes del merge:
   - https://huggingface.co/google/gemma-4-26B-A4B-it

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mdagosta/waldito-smoke-v1-r0000-all-mdagosta-b` es un artefacto de pesos publicado en HuggingFace por el usuario mdagosta, etiquetado como modelo de generacion de texto conversacional y construido sobre la arquitectura causal tipo Llama estandar de la libreria Transformers. Segun su model card, se trata de un "OpenWALDO model export", es decir, una exportacion de pesos que emplea el tokenizer de bytes "schema-1" de OpenWALDO y que requiere `trust_remote_code=True` para cargar el tokenizer.
+`mdagosta/waldito-smoke-v1-r0000-all-mdagosta-b` es un artefacto de pesos publicado en Hugging Face por el usuario mdagosta, etiquetado como modelo de generacion de texto conversacional y construido sobre la arquitectura causal tipo Llama estandar de la libreria Transformers. Segun su model card, se trata de un "OpenWALDO model export", es decir, una exportacion de pesos que emplea el tokenizer de bytes "schema-1" de OpenWALDO y que requiere `trust_remote_code=True` para cargar el tokenizer.
 
 El dato mas relevante es su tamano: los pesos en safetensors suman 820.736 parametros (aproximadamente 0,82 millones), lo que lo situa tres ordenes de magnitud por debajo de un modelo de lenguaje utilizable en produccion. El propio nombre del repositorio ("smoke-v1", revision "r0000") sugiere que se trata de una prueba de humo o artefacto de validacion de un pipeline de exportacion, mas que de un modelo entrenado para tareas reales. El repositorio ocupa 0,0 GB y registra 147 descargas y 0 likes.
 
@@ -73,7 +73,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| waldito-smoke-v1-r0000-all-mdagosta-b | 820.736 | no disponible | no disponible | HuggingFace (147 descargas, 0 likes) |
+| waldito-smoke-v1-r0000-all-mdagosta-b | 820.736 | no disponible | no disponible | Hugging Face (147 descargas, 0 likes) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 A efectos practicos, y a falta de datos oficiales, la unica comparacion defendible es funcional: se trata de un artefacto de validacion, no de un modelo de Lenguaje destinado a tareas de generacion reales. Cualquier modelo abierto de 1.000 a 8.000 millones de parametros seria la alternativa logica si el objetivo es generar texto.
@@ -91,6 +91,6 @@ A efectos practicos, y a falta de datos oficiales, la unica comparacion defendib
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mdagosta/waldito-smoke-v1-r0000-all-mdagosta-b
-- Repositorio en HuggingFace (arbol de ficheros, incluidos `BOM.json` y `EU-BOM.json`): https://huggingface.co/mdagosta/waldito-smoke-v1-r0000-all-mdagosta-b/tree/main
+- Hugging Face: https://huggingface.co/mdagosta/waldito-smoke-v1-r0000-all-mdagosta-b
+- Repositorio en Hugging Face (arbol de ficheros, incluidos `BOM.json` y `EU-BOM.json`): https://huggingface.co/mdagosta/waldito-smoke-v1-r0000-all-mdagosta-b/tree/main
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo en la busqueda realizada. Los resultados devueltos (Google Gemini, Godot AI, listados de modelos gratuitos y un panel de novedades de LLM) no guardan relacion con el modelo, con su autor ni con el proyecto OpenWALDO.

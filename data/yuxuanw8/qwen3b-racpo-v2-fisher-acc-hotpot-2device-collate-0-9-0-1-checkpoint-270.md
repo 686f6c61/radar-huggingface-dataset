@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-270` es un checkpoint intermedio (paso 270) de un proceso de ajuste fino sobre una base de la familia Qwen2, desarrollado y publicado por el usuario yuxuanw8 en HuggingFace. Cuenta con 3.085.938.688 parametros reales segun los tensores en safetensors, lo que lo situa en la categoria de modelos de ~3B, aptos para inferencia en hardware de consumo. El repositorio ocupa 12,4 GB, un tamano coherente con pesos almacenados en precision FP32 (3,09B x 4 bytes = 12,34 GB).
+El modelo `yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-270` es un checkpoint intermedio (paso 270) de un proceso de ajuste fino sobre una base de la familia Qwen2, desarrollado y publicado por el usuario yuxuanw8 en Hugging Face. Cuenta con 3.085.938.688 parametros reales segun los tensores en safetensors, lo que lo situa en la categoria de modelos de ~3B, aptos para inferencia en hardware de consumo. El repositorio ocupa 12,4 GB, un tamano coherente con pesos almacenados en precision FP32 (3,09B x 4 bytes = 12,34 GB).
 
 El nombre del identificador revela la naturaleza experimental del entrenamiento: "racpo-v2" apunta a un metodo de optimizacion (posiblemente una variante de RL/DPO con correccion basada en Fisher), "fisher-acc" sugiere un criterio de seleccion ponderado por informacion de Fisher y exactitud, "hotpot" remite al conjunto de datos HotpotQA de pregunta-respuesta multi-salto, "2device" indica que se entreno en dos dispositivos y "collate-0.9-0.1" parece describir una mezcla o una razon de mezcla de datos. Se trata, por tanto, de un artefacto de investigacion mas que de un modelo de produccion pulido.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-...-checkpoint-270 | 3,09B | 32768 (segun checkpoints hermanos, no confirmado) | no disponible | HuggingFace, 0 descargas | no |
-| Qwen2.5-3B (Alibaba) | 3,09B | 32768 (extensible con YaRN) | Apache 2.0 | HuggingFace, ampliamente desplegado | si |
-| Llama-3.2-3B (Meta) | 3,21B | 128000 | Llama 3.2 Community License | HuggingFace, ampliamente desplegado | si |
-| Phi-3.5-mini (Microsoft) | 3,8B | 128000 | MIT | HuggingFace | si |
+| yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-...-checkpoint-270 | 3,09B | 32768 (segun checkpoints hermanos, no confirmado) | no disponible | Hugging Face, 0 descargas | no |
+| Qwen2.5-3B (Alibaba) | 3,09B | 32768 (extensible con YaRN) | Apache 2.0 | Hugging Face, ampliamente desplegado | si |
+| Llama-3.2-3B (Meta) | 3,21B | 128000 | Llama 3.2 Community License | Hugging Face, ampliamente desplegado | si |
+| Phi-3.5-mini (Microsoft) | 3,8B | 128000 | MIT | Hugging Face | si |
 
 La comparacion se limita a caracteristicas estructurales y de licencia: no existen resultados de benchmarks publicados para el modelo analizado, por lo que no es posible contrastar su rendimiento numerico con el de las alternativas citadas.
 
@@ -86,7 +86,7 @@ La comparacion se limita a caracteristicas estructurales y de licencia: no exist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-270
+- Modelo en Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-270
 - Checkpoint hermano 0.75-0.25 (paso 150): https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-150
 - Checkpoint hermano 0.75-0.25 (paso 240): https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-240/discussions
 - Ficha en Featherless AI de un checkpoint hermano (contexto 32768): https://featherless.ai/models/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-210

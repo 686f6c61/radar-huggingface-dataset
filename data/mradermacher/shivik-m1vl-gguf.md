@@ -30,7 +30,7 @@ La informacion disponible es limitada: no se especifican licencia, longitud de c
 
 No se dispone de informacion sobre la arquitectura interna del modelo base ziadrone/shivik-m1vl en la documentacion proporcionada. La presencia de un fichero `mmproj` (proyector multimodal) en el repo GGUF indica que el modelo incorpora capacidad de procesamiento de imagenes junto a texto, tipicamente mediante un encoder visual acoplado a un modelo de lenguaje. El numero de parametros (3,08 B) y el tamano de las cuantizaciones son coherentes con un transformer denso de escala pequena, pero no se confirma si emplea atencion estandar, atencion lineal u otra variante.
 
-Tampoco se detallan los datos de entrenamiento: no hay informacion sobre el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. El cuantizador indica que las cuantizaciones son estaticas (no imatrix/weighted), y que no tiene previsto generar variantes imatrix salvo peticion en la seccion de discusion de la comunidad. Las cuantizaciones se han generado con `quantize_version: 2` y `convert_type: hf`, es decir, a partir de los pesos en formato HuggingFace del modelo base.
+Tampoco se detallan los datos de entrenamiento: no hay informacion sobre el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. El cuantizador indica que las cuantizaciones son estaticas (no imatrix/weighted), y que no tiene previsto generar variantes imatrix salvo peticion en la seccion de discusion de la comunidad. Las cuantizaciones se han generado con `quantize_version: 2` y `convert_type: hf`, es decir, a partir de los pesos en formato Hugging Face del modelo base.
 
 ## Capacidades
 

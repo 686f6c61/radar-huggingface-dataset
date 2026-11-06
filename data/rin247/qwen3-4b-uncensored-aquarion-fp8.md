@@ -81,7 +81,7 @@ Las variantes de huihui-ai son abliteraciones directas del Qwen3-4B sin cuantiza
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/Qwen3-4B-Uncensored-Aquarion-FP8
+- Repositorio Hugging Face: https://huggingface.co/Rin247/Qwen3-4B-Uncensored-Aquarion-FP8
 - Repositorio oficial de Qwen3 (GitHub): https://github.com/QwenLM/Qwen3
 - Variante abliterada de referencia: https://huggingface.co/huihui-ai/Huihui-Qwen3-4B-abliterated-v2
 - Otra variante abliterada: https://huggingface.co/huihui-ai/Qwen3-4B-abliterated

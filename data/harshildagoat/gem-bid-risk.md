@@ -17,7 +17,7 @@ Es relevante porque aborda un cuello de botella real de la contratación públic
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no aplica (modelo tabular; la entrada es un vector de caracteristicas, no una secuencia de tokens) |
 | Tipos de cuantizacion | no disponible (no aplica; se distribuye en formato de texto nativo de LightGBM, sin cuantizacion) |
-| Idiomas soportados | no disponible (el campo de idiomas no esta informado en HuggingFace) |
+| Idiomas soportados | no disponible (el campo de idiomas no esta informado en Hugging Face) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | `model.txt` (formato de texto de LightGBM, sin pickle); acompanado de `features.json` (orden y codificacion de caracteristicas), `features.py` (featurizador) e `infer.py` (predictor) |
 
@@ -82,7 +82,7 @@ Unicamente se dispone de comparacion directa contra el motor de reglas de la pla
 
 | Sistema | Tipo | Accuracy (test sintetico) | Macro-F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gem-bid-risk | LightGBM, clasificacion tabular | 96,4 % | 94,1 % | Apache 2.0 | HuggingFace |
+| gem-bid-risk | LightGBM, clasificacion tabular | 96,4 % | 94,1 % | Apache 2.0 | Hugging Face |
 | Motor de reglas de la plataforma | Sistema experto determinista | 86,2 % | 82,4 % | no disponible | interno de la plataforma |
 | Alternativas genericas (XGBoost, CatBoost) | Gradient boosting tabular | no disponible | no disponible | licencias propias | publicas |
 
@@ -103,7 +103,7 @@ No se dispone de datos comparativos de rendimiento frente a XGBoost, CatBoost u 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HarshilDaGoat/gem-bid-risk
+- Modelo en Hugging Face: https://huggingface.co/HarshilDaGoat/gem-bid-risk
 - Dataset de entrenamiento: https://huggingface.co/datasets/HarshilDaGoat/gem-bid-risk-data
 - Proyecto relacionado, Bid-Shield-AI (SIH-HACK-2026): https://github.com/Sumeet1249/bid-shield-ai
 - Proyecto relacionado, plataforma de cumplimiento de pujas de GeM: https://github.com/sakshamp413-hash/gem-bid-compliance-platform

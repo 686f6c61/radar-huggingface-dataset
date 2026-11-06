@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bert-base-uncased-finetuned-ner-cancer-mama` es un ajuste fino de BERT base para reconocimiento de entidades nombradas (NER) en textos clínicos en español sobre cáncer de mama. Lo desarrolla Carlos Andres Borja y se publica bajo la cuenta de HuggingFace `Test-FineTuning`. La tarea es clasificación de tokens con esquema BIO sobre 24 tipos de entidad clínica (49 etiquetas contando `O`), cubriendo desde diagnósticos y estadificación TNM hasta fármacos, dosis, cirugías y antecedentes familiares.
+El modelo `bert-base-uncased-finetuned-ner-cancer-mama` es un ajuste fino de BERT base para reconocimiento de entidades nombradas (NER) en textos clínicos en español sobre cáncer de mama. Lo desarrolla Carlos Andres Borja y se publica bajo la cuenta de Hugging Face `Test-FineTuning`. La tarea es clasificación de tokens con esquema BIO sobre 24 tipos de entidad clínica (49 etiquetas contando `O`), cubriendo desde diagnósticos y estadificación TNM hasta fármacos, dosis, cirugías y antecedentes familiares.
 
 Arquitectura transformer encoder-only de BERT base, con 108.929.329 parámetros y una longitud máxima de secuencia de 512 tokens. El modelo parte de `google-bert/bert-base-uncased`, un checkpoint entrenado originalmente en inglés, y se ha ajustado sobre un corpus clínico anotado en español de 10.874 oraciones y 161.530 tokens, con validación cruzada de 5 folds.
 
@@ -64,17 +64,17 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 - VRAM estimada en fp16: aproximadamente 0,22 GB para pesos; cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; el autor entrenó en una NVIDIA T4, y el modelo funciona sin problemas en RTX 3060, RTX 4060, RTX 4090, A100 o H100 (estas últimas sobredimensionadas para este tamaño).
 - Cabe en GPU consumer: sí, en cualquier GPU moderna con 4 GB o más; incluso en CPU la inferencia es viable para volúmenes moderados.
-- Opciones de despliegue: `transformers` (pipeline `token-classification` o `AutoModelForTokenClassification`), `text-embeddings-inference` no aplica, y es compatible con endpoints de HuggingFace (`endpoints_compatible` en los tags). Para servir en producción se puede usar TorchServe, FastAPI con `transformers`, o exportar a ONNX Runtime.
+- Opciones de despliegue: `transformers` (pipeline `token-classification` o `AutoModelForTokenClassification`), `text-embeddings-inference` no aplica, y es compatible con endpoints de Hugging Face (`endpoints_compatible` en los tags). Para servir en producción se puede usar TorchServe, FastAPI con `transformers`, o exportar a ONNX Runtime.
 - Latencia y throughput: no disponibles en la información proporcionada. Por el tamaño (110 M de parámetros) y la longitud máxima de 512 tokens, se espera un throughput alto en GPU moderna, pero no se aportan cifras medidas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Test-FineTuning/bert-base-uncased-finetuned-ner-cancer-mama` | 108,9 M | 512 | NER clínico en español (cáncer de mama) | Apache 2.0 | HuggingFace, 36 descargas |
-| `google-bert/bert-base-uncased` | 110 M | 512 | Modelo base genérico (inglés) | Apache 2.0 | HuggingFace, ampliamente usado |
-| `PlanTL-GOB-ES/bsc-bio-ehr-es` | no disponible en la información | no disponible | NER biomédico en español (modelo de referencia del dominio) | no disponible | HuggingFace |
-| `pucpr/clinicalner` (familia de modelos clínicos) | no disponible en la información | no disponible | NER clínico | no disponible | HuggingFace |
+| `Test-FineTuning/bert-base-uncased-finetuned-ner-cancer-mama` | 108,9 M | 512 | NER clínico en español (cáncer de mama) | Apache 2.0 | Hugging Face, 36 descargas |
+| `google-bert/bert-base-uncased` | 110 M | 512 | Modelo base genérico (inglés) | Apache 2.0 | Hugging Face, ampliamente usado |
+| `PlanTL-GOB-ES/bsc-bio-ehr-es` | no disponible en la información | no disponible | NER biomédico en español (modelo de referencia del dominio) | no disponible | Hugging Face |
+| `pucpr/clinicalner` (familia de modelos clínicos) | no disponible en la información | no disponible | NER clínico | no disponible | Hugging Face |
 
 La comparación cuantitativa con alternativas no es posible con los datos disponibles: no se han publicado métricas del modelo en la información proporcionada, y los modelos comparables citados no incluyen sus cifras en este contexto. La diferencia principal frente a `bert-base-uncased` es la cabeza de clasificación de 49 etiquetas y el ajuste sobre corpus oncológico en español; frente a modelos biomédicos específicos en español como los de PlanTL, la ventaja es la granularidad de etiquetas oncológicas (TNM, biomarcadores, líneas de tratamiento), aunque la falta de benchmarks publicados impide afirmar superioridad.
 
@@ -93,7 +93,7 @@ La comparación cuantitativa con alternativas no es posible con los datos dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Test-FineTuning/bert-base-uncased-finetuned-ner-cancer-mama
+- Modelo en Hugging Face: https://huggingface.co/Test-FineTuning/bert-base-uncased-finetuned-ner-cancer-mama
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Notebook de inferencia (mencionado en la model card): `NER_inferencia_mama_prostata_Colab.ipynb` en el material del curso (no se proporciona URL directa)
 - Paper de BERT: no disponible en la información proporcionada

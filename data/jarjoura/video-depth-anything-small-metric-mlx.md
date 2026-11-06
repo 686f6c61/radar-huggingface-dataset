@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Video Depth Anything Small (Metric) | 29M | Metrica (metros) | Apache 2.0 | HuggingFace (original y MLX) |
-| Depth Anything V2 (base) | ~25M | Relativa | Apache 2.0 | HuggingFace |
-| DepthCrafter | ~600M | Relativa | Apache 2.0 | HuggingFace |
+| Video Depth Anything Small (Metric) | 29M | Metrica (metros) | Apache 2.0 | Hugging Face (original y MLX) |
+| Depth Anything V2 (base) | ~25M | Relativa | Apache 2.0 | Hugging Face |
+| DepthCrafter | ~600M | Relativa | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en parametros y tipo de salida. DepthCrafter es un modelo de difusion con muchos mas parametros y mayor latencia, mientras que Depth Anything V2 produce profundidad relativa sin escala metrica. Video Depth Anything Small ofrece una ventaja en velocidad y consistencia temporal, pero no se dispone de datos de benchmarks comparativos en la informacion proporcionada.
 
@@ -78,7 +78,7 @@ La comparativa se basa en parametros y tipo de salida. DepthCrafter es un modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jarjoura/video-depth-anything-small-metric-mlx
+- Modelo en Hugging Face: https://huggingface.co/jarjoura/video-depth-anything-small-metric-mlx
 - Modelo original (PyTorch): https://huggingface.co/depth-anything/Metric-Video-Depth-Anything-Small
 - Repositorio oficial de Video Depth Anything: https://github.com/DepthAnything/Video-Depth-Anything
 - Pagina del proyecto: https://videodepthanything.github.io/

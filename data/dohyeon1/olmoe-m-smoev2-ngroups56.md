@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dohyeon1/OLMoE-M-SMoEv2-ngroups56 es un modelo de generación de texto subido a HuggingFace por el usuario Dohyeon1. El nombre del modelo sugiere una arquitectura de Mixture of Experts (MoE) perteneciente a la familia OLMoE, con 56 grupos de expertos, aunque esta interpretación no está confirmada por la documentación. El modelo tiene un total de 6.919.161.856 parámetros (aproximadamente 6.92 mil millones), almacenados en formato safetensors, y ocupa 13.8 GB en el repositorio.
+Dohyeon1/OLMoE-M-SMoEv2-ngroups56 es un modelo de generación de texto subido a Hugging Face por el usuario Dohyeon1. El nombre del modelo sugiere una arquitectura de Mixture of Experts (MoE) perteneciente a la familia OLMoE, con 56 grupos de expertos, aunque esta interpretación no está confirmada por la documentación. El modelo tiene un total de 6.919.161.856 parámetros (aproximadamente 6.92 mil millones), almacenados en formato safetensors, y ocupa 13.8 GB en el repositorio.
 
 La model card es una plantilla genérica generada automáticamente, sin información sobre arquitectura, entrenamiento, capacidades o licencia. Esto limita significativamente la evaluación del modelo. A pesar de la falta de documentación, el modelo está etiquetado como compatible con la librería transformers y con el pipeline de text-generation, lo que indica que puede utilizarse para tareas de generación de texto conversacional.
 
@@ -70,5 +70,5 @@ No se dispone de informacion sobre modelos comparables. El autor ha subido otra 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dohyeon1/OLMoE-M-SMoEv2-ngroups56
+- Hugging Face: https://huggingface.co/Dohyeon1/OLMoE-M-SMoEv2-ngroups56
 - Variante similar del mismo autor: https://huggingface.co/Dohyeon1/OLMoE-M-SMoE-ngroups56

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NuExtract-1.5-tiny-onnx-cpu-int4 (este) | ~0,5 B | 32.768 tokens | ONNX int4 (CPU) | MIT | HuggingFace, conversion no oficial de Menterium |
-| numind/NuExtract-1.5-tiny (original) | ~0,5 B | No disponible en la informacion | Pesos PyTorch originales | MIT | HuggingFace, oficial de NuMind |
+| NuExtract-1.5-tiny-onnx-cpu-int4 (este) | ~0,5 B | 32.768 tokens | ONNX int4 (CPU) | MIT | Hugging Face, conversion no oficial de Menterium |
+| numind/NuExtract-1.5-tiny (original) | ~0,5 B | No disponible en la informacion | Pesos PyTorch originales | MIT | Hugging Face, oficial de NuMind |
 | Export fp32 de este modelo (mencionado en las notas) | ~0,5 B | 32.768 tokens (presumiblemente, no confirmado) | ONNX fp32 | MIT | No publicado como repositorio; solo citado por el autor |
-| Qwen/Qwen2.5-0.5B (modelo base del original) | ~0,5 B | No disponible en la informacion | safetensors | Apache 2.0 | HuggingFace, oficial de Qwen |
+| Qwen/Qwen2.5-0.5B (modelo base del original) | ~0,5 B | No disponible en la informacion | safetensors | Apache 2.0 | Hugging Face, oficial de Qwen |
 
 El modelo base Qwen2.5-0.5B no es un modelo de extraccion estructurada, por lo que la comparacion con el es solo de origen arquitectonico, no funcional. No se dispone de datos de benchmarks que permitan comparar el rendimiento de extraccion frente a alternativas.
 
@@ -80,7 +80,7 @@ El modelo base Qwen2.5-0.5B no es un modelo de extraccion estructurada, por lo q
 - Es una conversion no oficial: no esta afiliada ni respaldada por NuMind, que no publica un export ONNX de este modelo.
 - Restricciones de licencia: el modelo es MIT y el modelo base Qwen2.5-0.5B es Apache 2.0; conviene conservar ambos ficheros de licencia (`LICENSE` y `LICENSE-Qwen2.5`) en cualquier redistribucion.
 - Rendimiento en produccion: el dato de throughput corresponde a una CPU concreta (i7-9700K, AVX2); en CPUs sin AVX2 el rendimiento puede degradarse.
-- El modelo registra 0 descargas y 0 likes en HuggingFace en el momento de la consulta, por lo que carece de validacion por parte de la comunidad.
+- El modelo registra 0 descargas y 0 likes en Hugging Face en el momento de la consulta, por lo que carece de validacion por parte de la comunidad.
 
 ## Enlaces
 - Repositorio de esta conversion: https://huggingface.co/Menterium/NuExtract-1.5-tiny-onnx-cpu-int4

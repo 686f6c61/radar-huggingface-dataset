@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cuhkaih/lambda_design` es un repositorio alojado en HuggingFace por el usuario `cuhkaih` bajo licencia MIT. La model card publicada no contiene ninguna descripcion funcional, arquitectonica ni tecnica del contenido del repositorio: unicamente declara la licencia. El nombre del repositorio sugiere un posible uso relacionado con diseno de funciones lambda o infraestructura serverless, pero esta interpretacion no esta confirmada por ninguna documentacion oficial.
+`cuhkaih/lambda_design` es un repositorio alojado en Hugging Face por el usuario `cuhkaih` bajo licencia MIT. La model card publicada no contiene ninguna descripcion funcional, arquitectonica ni tecnica del contenido del repositorio: unicamente declara la licencia. El nombre del repositorio sugiere un posible uso relacionado con diseno de funciones lambda o infraestructura serverless, pero esta interpretacion no esta confirmada por ninguna documentacion oficial.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en la misma fecha (2 de noviembre de 2026), lo que indica una publicacion sin mantenimiento posterior. No se ha declarado pipeline de inferencia, idiomas soportados ni metadatos de tarea en la plataforma.
 
@@ -23,7 +23,7 @@ Dado que no existe informacion verificable sobre arquitectura, pesos, tokenizado
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. No consta si se trata de un transformer, un modelo MoE, una arquitectura hibrida o cualquier otra variante, ni tampoco el numero de parametros, la longitud de contexto o el vocabulario del tokenizador.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. No consta si se trata de un transformer, un modelo MoE, una arquitectura hibrida o cualquier otra variante, ni tampoco el numero de parametros, la longitud de contexto o el vocabulario del tokenizador.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset, ni sobre posibles fases de alineacion (RLHF, DPO, SFT). Cualquier afirmacion al respecto seria especulativa y no se incluye en esta ficha.
 
@@ -44,7 +44,7 @@ No es posible enumerar casos de uso concretos y realistas sin informacion verifi
 - Analisis de licencia: al estar publicado bajo MIT, el contenido podria reutilizarse comercialmente si se confirma que efectivamente es codigo o artefactos cubiertos por dicha licencia.
 - Integracion en pipelines serverless: si el repositorio contiene utilidades para definir funciones lambda, podria evaluarse su uso en infraestructura de funciones bajo demanda, previa inspeccion del codigo.
 - Auditoria de seguridad: al no haber documentacion, cualquier uso en produccion requeriria una revision manual del contenido para descartar codigo malicioso o dependencias no declaradas.
-- Referencia educativa: podria servir como ejemplo de publicacion minima en HuggingFace, aunque no aporta valor tecnico documental.
+- Referencia educativa: podria servir como ejemplo de publicacion minima en Hugging Face, aunque no aporta valor tecnico documental.
 - Evaluacion comparativa: no procede hasta disponer de especificaciones tecnicas verificables.
 
 ## Benchmarks y rendimiento
@@ -74,4 +74,4 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cuhkaih/lambda_design
+- Repositorio en Hugging Face: https://huggingface.co/cuhkaih/lambda_design

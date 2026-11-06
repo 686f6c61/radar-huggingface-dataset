@@ -80,7 +80,7 @@ La comparativa es limitada porque Titanius-1.1 no tiene benchmarks publicados y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NadavSalem/Titanius-1.1-88m-sft-fp16
+- Modelo en Hugging Face: https://huggingface.co/NadavSalem/Titanius-1.1-88m-sft-fp16
 - Modelo base: https://huggingface.co/NadavSalem/Titanius-1.1-88m-base-fp16
 - Dataset de entrenamiento SFT: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk
 - Dataset de preentrenamiento del base: https://huggingface.co/datasets/karpathy/climbmix-400b-shuffle

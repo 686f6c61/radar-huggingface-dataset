@@ -79,8 +79,8 @@ No se dispone de información completa sobre los modelos comparados; los datos s
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/dotyerts/Ornith-1.5-35B-A3B-oQ2.7e-mtp
-- Modelo original en HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Modelo cuantizado en Hugging Face: https://huggingface.co/dotyerts/Ornith-1.5-35B-A3B-oQ2.7e-mtp
+- Modelo original en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Modelo en ModelScope: https://www.modelscope.cn/models/ornith-ai/Ornith-1.5-35B-A3B
 - Página oficial de Ornith AI: https://ornith.ai/ornith_1_5.html
 - Guía de Ornith AI (VRAM, benchmarks, setup): https://ornith.online/

@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento absolu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Maximilian228/Geode-Qwen3.5-2B
+- Repositorio Hugging Face: https://huggingface.co/Maximilian228/Geode-Qwen3.5-2B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-2B/blob/main/LICENSE
 - Modelo principal de Geode: https://huggingface.co/Maximilian228/Geode-Qwen3.6-35B-A3B

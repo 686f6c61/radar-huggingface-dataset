@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/after2400/qmd-query-expansion-1.7B-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/after2400/qmd-query-expansion-1.7B-mlx-4bit
 - Modelo upstream en GGUF: https://huggingface.co/tobil/qmd-query-expansion-1.7B-gguf
 - Modelo upstream en safetensors (merge defectuoso segun la model card): https://huggingface.co/tobil/qmd-query-expansion-1.7B
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B

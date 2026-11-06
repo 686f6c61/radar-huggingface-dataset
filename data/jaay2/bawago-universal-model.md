@@ -76,7 +76,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jaay2/bawago-universal-model | no disponible (joblib 12,4 MB) | no disponible | MIT | HuggingFace |
+| jaay2/bawago-universal-model | no disponible (joblib 12,4 MB) | no disponible | MIT | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,5 +93,5 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaay2/bawago-universal-model
+- Modelo en Hugging Face: https://huggingface.co/jaay2/bawago-universal-model
 - No se han encontrado en la informacion disponible otros enlaces a papers, blogs, repositorios o demos.

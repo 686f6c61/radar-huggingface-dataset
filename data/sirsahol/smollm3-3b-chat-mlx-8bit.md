@@ -100,7 +100,7 @@ No disponible: no se han encontrado en la busqueda web enlaces ni datos tecnicos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SirSahOl/SmolLM3-3B-chat-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/SirSahOl/SmolLM3-3B-chat-mlx-8bit
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Perfil del autor: https://huggingface.co/SirSahOl
 - MLX (Apple): https://github.com/ml-explore/mlx

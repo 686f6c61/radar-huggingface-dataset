@@ -13,7 +13,7 @@ Es relevante porque demuestra que es posible cuantizar un transformer denso de 2
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | Transformer denso basado en Qwen/Qwen3.8-27B; no es MoE |
-| Parámetros totales | 27.000 millones (según el autor; el repositorio de HuggingFace reporta 460.125.184 en safetensors) |
+| Parámetros totales | 27.000 millones (según el autor; el repositorio de Hugging Face reporta 460.125.184 en safetensors) |
 | Parámetros activos | No aplica (modelo denso) |
 | Longitud de contexto | No disponible (el Colab menciona "1M-token ternary context", no confirmado) |
 | Tipos de cuantización | Ternario completo: {-1, 0, +1} × escala; V2 a 1.75 bits/peso, V1 a 2.125 bits/peso; normas y escalas en grid entero |
@@ -25,7 +25,7 @@ Es relevante porque demuestra que es posible cuantizar un transformer denso de 2
 
 El modelo es una conversión post-training del transformer denso Qwen/Qwen3.8-27B. No se trata de un entrenamiento desde cero, sino de una cuantización que transforma todos los pesos —incluidos el LM head y la tabla de embeddings— en enteros ternarios {-1, 0, +1} multiplicados por una escala. Las normas y las escalas de grupo también se representan en el grid entero mediante pilas de dígitos ternarios balanceados (k8/k6). Los pesos se almacenan en una base rotada mediante transformadas de Hadamard por bloques, por lo que el runtime debe aplicar la rotación inversa a las activaciones; de ahí la necesidad del fork de llama.cpp.
 
-El sistema de corrección "The Doctors" consiste en 496 ramas de baja dimensión y ternarias, de rango entre 8 y 256 por multiplicación de matrices, entrenadas conjuntamente para cancelar el error de cuantización propagado a través de las capas. Se empaquetan como un LoRA nativo de llama.cpp con la rotación de base plegada offline. Según el autor, este mecanismo es 3,3 veces más efectivo que la corrección por capa en datos de validación. No se han proporcionado datos concretos sobre el dataset de entrenamiento ni sobre técnicas de alineación como RLHF o DPO. El repositorio de HuggingFace reporta un total de 460.125.184 parámetros en safetensors, cifra que no coincide con la afirmación del autor de 27.000 millones; se recomienda verificar antes de usar el modelo en producción.
+El sistema de corrección "The Doctors" consiste en 496 ramas de baja dimensión y ternarias, de rango entre 8 y 256 por multiplicación de matrices, entrenadas conjuntamente para cancelar el error de cuantización propagado a través de las capas. Se empaquetan como un LoRA nativo de llama.cpp con la rotación de base plegada offline. Según el autor, este mecanismo es 3,3 veces más efectivo que la corrección por capa en datos de validación. No se han proporcionado datos concretos sobre el dataset de entrenamiento ni sobre técnicas de alineación como RLHF o DPO. El repositorio de Hugging Face reporta un total de 460.125.184 parámetros en safetensors, cifra que no coincide con la afirmación del autor de 27.000 millones; se recomienda verificar antes de usar el modelo en producción.
 
 ## Capacidades
 
@@ -94,7 +94,7 @@ La comparación disponible es con Ternary-Bonsai-27B de PrismML, otro modelo ter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CodeMasterCody3D/taardis-27b-full-ternary
+- Hugging Face: https://huggingface.co/CodeMasterCody3D/taardis-27b-full-ternary
 - Colab (demo): https://colab.research.google.com/github/CodeMasterCody3D/taardis-llama.cpp/blob/q1_0_g128-port/notebooks/TAARDIS_chat.ipynb
 - Repositorio del fork de llama.cpp: https://github.com/CodeMasterCody3D/taardis-llama.cpp (rama q1_0_g128-port)
-- Perfil del autor en HuggingFace: https://huggingface.co/CodeMasterCody3D
+- Perfil del autor en Hugging Face: https://huggingface.co/CodeMasterCody3D

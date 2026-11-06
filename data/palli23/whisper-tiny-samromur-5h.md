@@ -2,7 +2,7 @@
 
 ## Resumen
 
-whisper-tiny-samromur-5h es un ajuste fino del modelo Whisper Tiny (39 M de parámetros) sobre un subconjunto anidado de 5 horas del corpus islandés Miljón/samromur-500h. Lo publica el usuario palli23 en HuggingFace y su propósito es servir como punto de control dentro de un estudio de escalado de modelos ASR pequeños frente a modelos multilingües grandes, recogido en el artículo "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2027).
+whisper-tiny-samromur-5h es un ajuste fino del modelo Whisper Tiny (39 M de parámetros) sobre un subconjunto anidado de 5 horas del corpus islandés Miljón/samromur-500h. Lo publica el usuario palli23 en Hugging Face y su propósito es servir como punto de control dentro de un estudio de escalado de modelos ASR pequeños frente a modelos multilingües grandes, recogido en el artículo "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2027).
 
 El modelo mantiene la arquitectura original de Whisper Tiny (transformer encoder-decoder, ~37,8 M de parámetros, ventanas de audio de 30 segundos) y está especializado exclusivamente en islandés, con licencia CC BY-SA 4.0. No se trata de un modelo de propósito general: es un artefacto de investigación pensado para medir cómo escala el rendimiento ASR al aumentar las horas de entrenamiento sobre una misma receta.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Ventana de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-tiny-samromur-5h | 37,8 M | 30 s | Islandés | CC BY-SA 4.0 | HuggingFace (palli23) |
-| Whisper Tiny (OpenAI) | 37,8 M | 30 s | Multilingüe (~99 idiomas) | MIT | HuggingFace (openai/whisper-tiny) |
-| Whisper Small (OpenAI) | 244 M | 30 s | Multilingüe (~99 idiomas) | MIT | HuggingFace (openai/whisper-small) |
+| whisper-tiny-samromur-5h | 37,8 M | 30 s | Islandés | CC BY-SA 4.0 | Hugging Face (palli23) |
+| Whisper Tiny (OpenAI) | 37,8 M | 30 s | Multilingüe (~99 idiomas) | MIT | Hugging Face (openai/whisper-tiny) |
+| Whisper Small (OpenAI) | 244 M | 30 s | Multilingüe (~99 idiomas) | MIT | Hugging Face (openai/whisper-small) |
 
 La comparación con Whisper Tiny es la más directa: misma arquitectura y mismo recuento de parámetros, pero el modelo de palli23 está especializado en islandés con solo 5 horas de ajuste, mientras que el original es multilingüe y genérico. Frente a Whisper Small, el modelo aquí descrito es unas 6,5 veces más pequeño, lo que se traduce en mayor velocidad y menor huella de memoria a costa de capacidad de modelado. No se dispone de datos de WER para ninguno de los tres en islandés dentro de la información proporcionada, por lo que no es posible establecer una comparación de rendimiento.
 
@@ -92,7 +92,7 @@ La comparación con Whisper Tiny es la más directa: misma arquitectura y mismo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/palli23/whisper-tiny-samromur-5h
+- Modelo en Hugging Face: https://huggingface.co/palli23/whisper-tiny-samromur-5h
 - Dataset de referencia citado en la model card: Miljón/samromur-500h (identificador mencionado sin URL)
 - Artículo citado: "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2027), sin enlace disponible en la información proporcionada
 - No se han encontrado enlaces adicionales. Los resultados de la búsqueda web devueltos corresponden a la aplicación de navegación AlpineQuest y a un proyecto alpino homónimo, sin relación alguna con el modelo.

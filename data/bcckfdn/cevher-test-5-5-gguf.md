@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato principal | Disponibilidad |
 |---|---|---|---|---|---|---|
-| cevher-test-5.5-GGUF | ~406 M | No disponible | tr, en | Apache 2.0 | GGUF | HuggingFace (repositorio del autor) |
-| SmolLM2-360M | ~362 M | 8192 tokens | en (principalmente) | Apache 2.0 | safetensors, GGUF | HuggingFace (HuggingFaceTB) |
-| Qwen2.5-0.5B | ~494 M | 32 768 tokens | multilingüe (29 idiomas) | Apache 2.0 | safetensors, GGUF | HuggingFace (Qwen) |
-| TinyLlama-1.1B | ~1,1 B | 2048 tokens | en (principalmente) | Apache 2.0 | safetensors, GGUF | HuggingFace (TinyLlama) |
+| cevher-test-5.5-GGUF | ~406 M | No disponible | tr, en | Apache 2.0 | GGUF | Hugging Face (repositorio del autor) |
+| SmolLM2-360M | ~362 M | 8192 tokens | en (principalmente) | Apache 2.0 | safetensors, GGUF | Hugging Face (HuggingFaceTB) |
+| Qwen2.5-0.5B | ~494 M | 32 768 tokens | multilingüe (29 idiomas) | Apache 2.0 | safetensors, GGUF | Hugging Face (Qwen) |
+| TinyLlama-1.1B | ~1,1 B | 2048 tokens | en (principalmente) | Apache 2.0 | safetensors, GGUF | Hugging Face (TinyLlama) |
 
 Los datos de los modelos comparativos proceden de sus fichas públicas y se incluyen a título orientativo. No existen comparativas de rendimiento directas entre cevher-test-5.5 y estas alternativas, ya que el modelo del autor no publica benchmarks. En igualdad de parámetros, los tres modelos de referencia cuentan con soporte de la comunidad, versiones cuantizadas mantenidas activamente y documentación de entrenamiento mucho más detallada.
 
@@ -94,7 +94,7 @@ Los datos de los modelos comparativos proceden de sus fichas públicas y se incl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcckfdn/cevher-test-5.5-GGUF
+- Modelo en Hugging Face: https://huggingface.co/bcckfdn/cevher-test-5.5-GGUF
 - Modelo base (pesos sin cuantizar): https://huggingface.co/bcckfdn/cevher-test-5.5
 - Versión anterior del autor: https://huggingface.co/bcckfdn/cevher-test-5-GGUF
 - Índice de cuantizaciones del modelo base: https://huggingface.co/models?other=base_model:quantized:bcckfdn/cevher-test-5

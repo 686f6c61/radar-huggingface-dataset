@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos en la información proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KeelCore/KeelCore-750M-Grammar
+- Hugging Face: https://huggingface.co/KeelCore/KeelCore-750M-Grammar
 - Modelo base: https://huggingface.co/KeelCore/KeelCore-750M
 - Informe técnico: https://saravanan-a-r.github.io/KeelCore/
 - Repositorio GitHub: https://github.com/saravanan-a-r/KeelCore

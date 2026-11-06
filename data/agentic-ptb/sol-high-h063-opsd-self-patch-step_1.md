@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h063.opsd-self-patch.step_1
+- Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h063.opsd-self-patch.step_1
 - Repositorio GitHub Agentic-OPSD: https://github.com/EcthelionLiu/Agentic-OPSD
 - Paper SDAR (Self-Distilled Agentic Reinforcement Learning): https://arxiv.org/abs/2605.15155
 - Blog de seguridad de Hugging Face (julio 2026): https://huggingface.co/blog/security-incident-july-2026

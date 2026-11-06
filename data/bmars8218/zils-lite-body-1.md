@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `bmars8218/zils-lite-body-1` | 852.985.920 | no disponible | Apache 2.0 | HuggingFace (re-upload) | Copia sin cambios de Adjudex 0.8B |
-| `newsbang/adjudex-0.8b` | ~0,8B (segun nombre) | no disponible | Apache 2.0 | HuggingFace (original) | Modelo base; fuente de evaluacion y limitaciones |
+| `bmars8218/zils-lite-body-1` | 852.985.920 | no disponible | Apache 2.0 | Hugging Face (re-upload) | Copia sin cambios de Adjudex 0.8B |
+| `newsbang/adjudex-0.8b` | ~0,8B (segun nombre) | no disponible | Apache 2.0 | Hugging Face (original) | Modelo base; fuente de evaluacion y limitaciones |
 | Alternativas de ~1B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 No se dispone de informacion suficiente para comparar rendimiento con modelos de la misma categoria; la comparativa se limita a identidad y licencia.
@@ -82,7 +82,7 @@ No se dispone de informacion suficiente para comparar rendimiento con modelos de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bmars8218/zils-lite-body-1
+- Repositorio en Hugging Face: https://huggingface.co/bmars8218/zils-lite-body-1
 - Modelo base original: https://huggingface.co/newsbang/adjudex-0.8b
 - Revision concreta de los pesos: https://huggingface.co/newsbang/adjudex-0.8b/tree/8fb432291598e1d02b6f59b8cd723c70fbcaf50f
 - Zils (Bittensor subnet 127): no disponible en la informacion proporcionada (referenciado en la model card sin URL)

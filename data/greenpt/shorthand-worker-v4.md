@@ -70,7 +70,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GreenPT/shorthand-worker-v4
+- Modelo en Hugging Face: https://huggingface.co/GreenPT/shorthand-worker-v4
 - Catálogo de modelos GreenPT: https://greenpt.com/models
 - Página principal de GreenPT: https://greenpt.com/
 - Modelo relacionado (shorthand-reader): https://huggingface.co/GreenPT/shorthand-reader

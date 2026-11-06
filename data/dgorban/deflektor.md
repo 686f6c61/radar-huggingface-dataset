@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dgorban/deflektor es un repositorio alojado en HuggingFace bajo la autoría del usuario Dgorban. En el momento de la consulta, la model card asociada contiene unicamente el bloque de metadatos con la licencia `apache-2.0`, sin ninguna descripcion, documentacion tecnica, ejemplo de uso ni referencia a publicacion cientifica alguna. El repositorio no declara pipeline de inferencia, idiomas soportados, arquitectura ni tamano.
+Dgorban/deflektor es un repositorio alojado en Hugging Face bajo la autoría del usuario Dgorban. En el momento de la consulta, la model card asociada contiene unicamente el bloque de metadatos con la licencia `apache-2.0`, sin ninguna descripcion, documentacion tecnica, ejemplo de uso ni referencia a publicacion cientifica alguna. El repositorio no declara pipeline de inferencia, idiomas soportados, arquitectura ni tamano.
 
 Los metadatos publicos indican cero descargas y cero likes, ademas de no registrar ninguna etiqueta funcional mas alla de la licencia y la region (`region:us`). La fecha de creacion y de ultima actualizacion coinciden (2026-10-07), lo que sugiere un repositorio publicado en un unico acto y sin mantenimiento posterior registrado.
 
@@ -70,7 +70,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Dgorban/deflektor | no disponible | no disponible | apache-2.0 | repositorio en HuggingFace, 0 descargas |
+| Dgorban/deflektor | no disponible | no disponible | apache-2.0 | repositorio en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,6 +87,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dgorban/deflektor
+- Repositorio en Hugging Face: https://huggingface.co/Dgorban/deflektor
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

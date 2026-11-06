@@ -75,6 +75,6 @@ No se conocen datos de benchmarks para ninguno de estos checkpoints, por lo que 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-biid16)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-biid16)
 - [Proyecto Cobalt (OSU-NLP-Group)](https://github.com/OSU-NLP-Group/cobalt)
 - [Página de ByteDance Seed](https://seed.bytedance.com/en/) (referencia del proyecto Cobalt)

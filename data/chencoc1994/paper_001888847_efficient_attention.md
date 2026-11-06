@@ -53,7 +53,7 @@ No existe un modelo comparable porque no se trata de un modelo entrenado. En el 
 - El contenido esta en ingles y no hay traducciones oficiales, lo que puede limitar su accesibilidad para hispanohablantes.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/chencoc1994/paper_001888847_efficient_attention
+- Repositorio en Hugging Face: https://huggingface.co/chencoc1994/paper_001888847_efficient_attention
 - Paper original en arXiv: https://arxiv.org/abs/1812.01243
 - Version publicada en WACV 2021: https://openaccess.thecvf.com/content/WACV2021/html/Shen_Efficient_Attention_Attention_With_Linear_Complexities_WACV_2021_paper.html
 - IEEE Xplore: https://ieeexplore.ieee.org/document/9423033

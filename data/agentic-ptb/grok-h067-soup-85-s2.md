@@ -70,5 +70,5 @@ No se dispone de información sobre modelos comparables. Al ser un checkpoint ex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/grok.h067.soup-85-s2
+- Hugging Face: https://huggingface.co/agentic-ptb/grok.h067.soup-85-s2
 - Índice del proyecto (mencionado en la model card): `agentic-ptb/INDEX` (no se proporciona URL directa)

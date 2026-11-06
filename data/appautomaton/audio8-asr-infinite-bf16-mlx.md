@@ -98,12 +98,12 @@ No se dispone de datos de benchmarks comparativos con otros modelos ASR (como Wh
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/appautomaton/audio8-asr-infinite-bf16-mlx
+- Repositorio Hugging Face: https://huggingface.co/appautomaton/audio8-asr-infinite-bf16-mlx
 - Variante int8 recomendada: https://huggingface.co/appautomaton/audio8-asr-infinite-int8-mlx
 - Modelo original: https://huggingface.co/Edge0/Audio8-ASR-Infinite
 - Codigo del modelo original: https://github.com/Edge0-AI/Audio8-ASR-Infinite
 - Codigo del runtime MLX: https://github.com/appautomaton/mlx-speech
 - Guia del runtime: https://github.com/appautomaton/mlx-speech/blob/main/docs/audio8-asr-infinite.md
 - Pagina del proyecto: https://appautomaton.com/mlx-speech/
-- Perfil del autor en HuggingFace: https://huggingface.co/appautomaton
+- Perfil del autor en Hugging Face: https://huggingface.co/appautomaton
 - Sitio de App Automaton: https://appautomaton.com

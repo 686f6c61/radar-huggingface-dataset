@@ -68,7 +68,7 @@ No se dispone de datos comparativos publicados entre GenoJEPA-Base y otros model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChengsenWang/GenoJEPA-Base
+- Hugging Face: https://huggingface.co/ChengsenWang/GenoJEPA-Base
 - Repositorio GitHub: https://github.com/ForestsKing/GenoJEPA
 - Paper en bioRxiv: https://www.biorxiv.org/content/10.64898/2026.04.02.716255v1
 - Ficha en bio.rodeo: https://bio.rodeo/models/geno-jepa

@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K)
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeepSeek-V4.1-Flash-TensorFold-TP2-2xGB10 (esta receta) | no disponible | 2.097.152 | Apache-2.0 (repo), MIT (base) | HuggingFace, 0 descargas |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 (base) | no disponible | no disponible | MIT | HuggingFace |
-| bertholomus/DeepSeek-V4.1-Flash-1017-EXL3-2.5bpw | no disponible | no disponible | MIT | HuggingFace |
-| Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-2.9bpw | no disponible | no disponible | MIT | HuggingFace |
+| DeepSeek-V4.1-Flash-TensorFold-TP2-2xGB10 (esta receta) | no disponible | 2.097.152 | Apache-2.0 (repo), MIT (base) | Hugging Face, 0 descargas |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 (base) | no disponible | no disponible | MIT | Hugging Face |
+| bertholomus/DeepSeek-V4.1-Flash-1017-EXL3-2.5bpw | no disponible | no disponible | MIT | Hugging Face |
+| Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-2.9bpw | no disponible | no disponible | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bertholomus/DeepSeek-V4.1-Flash-TensorFold-TP2-2xGB10
+- Repositorio en Hugging Face: https://huggingface.co/bertholomus/DeepSeek-V4.1-Flash-TensorFold-TP2-2xGB10
 - Receta en GitHub: https://github.com/bertholomus/deepseek-v4.1-tensorfold-tp2-2xgb10
 - Instrucciones de ejecución: https://github.com/bertholomus/deepseek-v4.1-tensorfold-tp2-2xgb10/blob/v0.7.4/RUNNING.md
 - Mediciones: https://github.com/bertholomus/deepseek-v4.1-tensorfold-tp2-2xgb10/blob/v0.7.4/results/README.md

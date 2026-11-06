@@ -84,7 +84,7 @@ No disponible. No se conocen modelos comparables porque no se especifica la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-stage1-baab0dd8
+- Repositorio en Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-stage1-baab0dd8
 - `BACKUP_MANIFEST.json` y recibo de verificacion final: incluidos en el propio repositorio (rutas no detalladas en la informacion disponible).
 - Referencias citadas en la model card sin enlace aportado: derivados de GR00T (licencia NVIDIA de investigacion/evaluacion unicamente) y componentes upstream `pi`/`openpi`.
 - Busqueda web: los resultados obtenidos fueron en su totalidad enlaces genericos a YouTube y a servicios asociados de Google, sin relacion con el modelo. No se han encontrado papers, blogs, repositorios ni demos relevantes.

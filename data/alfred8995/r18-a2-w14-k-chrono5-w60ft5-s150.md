@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w14-k-chrono5-w60ft5-s150` es un checkpoint de 2.018.511.234 parámetros (aproximadamente 2,02 mil millones) publicado por el usuario alfred8995 en HuggingFace bajo licencia Apache 2.0 y formato safetensors. El identificador sugiere una variante de la familia "nanochrono" (tag `sn38-nanochrono`), probablemente un modelo de lenguaje de pequeno tamano orientado a experimentacion con arquitecturas tipo transformer o hibridas con componentes de atencion cronologica o recurrente, aunque la informacion publica no detalla la arquitectura interna.
+El modelo `alfred8995/r18-a2-w14-k-chrono5-w60ft5-s150` es un checkpoint de 2.018.511.234 parámetros (aproximadamente 2,02 mil millones) publicado por el usuario alfred8995 en Hugging Face bajo licencia Apache 2.0 y formato safetensors. El identificador sugiere una variante de la familia "nanochrono" (tag `sn38-nanochrono`), probablemente un modelo de lenguaje de pequeno tamano orientado a experimentacion con arquitecturas tipo transformer o hibridas con componentes de atencion cronologica o recurrente, aunque la informacion publica no detalla la arquitectura interna.
 
-El repositorio tiene un tamano de 6,3 GB, lo que es coherente con pesos en precision mixta o bf16/fp16 para un modelo de ~2B parametros (2,02B x 2 bytes ≈ 4 GB de pesos, mas posibles estados de optimizador u otros artefactos). El acceso esta restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos. No se han publicado resultados de benchmarks, idiomas soportados ni pipeline asociado en la informacion disponible.
+El repositorio tiene un tamano de 6,3 GB, lo que es coherente con pesos en precision mixta o bf16/fp16 para un modelo de ~2B parametros (2,02B x 2 bytes ≈ 4 GB de pesos, mas posibles estados de optimizador u otros artefactos). El acceso esta restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos. No se han publicado resultados de benchmarks, idiomas soportados ni pipeline asociado en la informacion disponible.
 
 La relevancia de este checkpoint es limitada a efectos practicos: se trata de una publicacion sin descargas ni likes, sin documentacion tecnica publica y con acceso restringido. Resulta util unicamente como objeto de estudio para quien conozca el proyecto "nanochrono" o quiera reproducir experimentos del autor, no como modelo listo para produccion.
 
@@ -74,7 +74,7 @@ La comparativa se limita a tamano y licencia: no hay datos de rendimiento del mo
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay model card con arquitectura, datos de entrenamiento, idiomas ni evaluaciones; cualquier uso en produccion requiere validacion propia.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace, lo que anade friccion a la descarga y a la integracion en pipelines automatizados.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face, lo que anade friccion a la descarga y a la integracion en pipelines automatizados.
 - Riesgo de alucinacion: desconocido, pero al no haber evaluaciones publicadas no puede descartarse un comportamiento deficiente en tareas de factualidad.
 - Sesgos: no evaluados; al no conocerse el corpus de entrenamiento no es posible caracterizar sesgos de genero, idioma o dominio.
 - Limitaciones de contexto e idioma: no disponibles; no se declaran idiomas soportados ni longitud de contexto.
@@ -84,5 +84,5 @@ La comparativa se limita a tamano y licencia: no hay datos de rendimiento del mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w60ft5-s150
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w60ft5-s150
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

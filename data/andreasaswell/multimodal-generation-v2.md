@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`andreasaswell/multimodal-generation-v2` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre generación multimodal publicado en HuggingFace. La model card es explícita: contiene una nota de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y el propio autor indica que "no se presenta como un artículo completado ni como una release de modelos entrenados". Por tanto, no existe un checkpoint funcional que pueda cargarse para inferencia.
+`andreasaswell/multimodal-generation-v2` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre generación multimodal publicado en Hugging Face. La model card es explícita: contiene una nota de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y el propio autor indica que "no se presenta como un artículo completado ni como una release de modelos entrenados". Por tanto, no existe un checkpoint funcional que pueda cargarse para inferencia.
 
 El repositorio incluye únicamente dos artefactos documentales (`summary.md` y `README.md`) y un archivo de pesos safetensors cuyo recuento de parámetros reportado es de 24.832, un valor anómalo para cualquier transformer real y coherente con un artefacto residual o de prueba más que con un modelo desplegable. El tamaño del repositorio es de 0.0 GB, lo que refuerza la conclusión de que no hay pesos de un modelo entrenado.
 
@@ -42,7 +42,7 @@ Tampoco hay información sobre datos de entrenamiento, número de tokens, compos
 - Revisión bibliográfica: las referencias y datasets propuestos en la nota sirven como punto de partida para verificar el estado del arte, tal y como indica el autor ("starting point for verification rather than evidence").
 - Docencia sobre reproducibilidad: el repositorio ejemplifica qué información debe acompañar a unos resultados (versiones de dataset, comandos, semillas, hardware y logs crudos) antes de publicar conclusiones.
 - Diseño de experimentos: la sección de confounders y modos de fallo puede reutilizarse para anticipar sesgos en estudios propios de generación multimodal.
-- Auditoría de artefactos en HuggingFace: útil como caso práctico para distinguir repositorios de documentación de repositorios de modelos, algo relevante al automatizar la selección de dependencias.
+- Auditoría de artefactos en Hugging Face: útil como caso práctico para distinguir repositorios de documentación de repositorios de modelos, algo relevante al automatizar la selección de dependencias.
 - Planificación de evaluación: el esquema de benchmarks públicos nombrados en la nota puede adaptarse como checklist para evaluar modelos multimodales reales.
 
 ## Benchmarks y rendimiento
@@ -81,7 +81,7 @@ La comparación con alternativas concretas de la misma categoría (notas de inve
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andreasaswell/multimodal-generation-v2
+- Repositorio en Hugging Face: https://huggingface.co/andreasaswell/multimodal-generation-v2
 - Nota de investigación (`summary.md`): https://huggingface.co/andreasaswell/multimodal-generation-v2/blob/main/summary.md
 - Documentación (`README.md`): https://huggingface.co/andreasaswell/multimodal-generation-v2/blob/main/README.md
 - Papers, blogs, repos o demos adicionales: no disponibles en la información proporcionada.

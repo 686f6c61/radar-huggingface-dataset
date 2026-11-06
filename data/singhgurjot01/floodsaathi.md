@@ -80,5 +80,5 @@ La comparativa se limita al modelo base y a la variante superior de la misma fam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SinghGurjot01/FloodSaathi
+- Hugging Face: https://huggingface.co/SinghGurjot01/FloodSaathi
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

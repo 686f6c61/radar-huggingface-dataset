@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muchai12/akili-qwen-3b-lora es un ajuste fino (aparentemente un adaptador LoRA) publicado por el usuario Muchai12 en HuggingFace, entrenado sobre el modelo base unsloth/Qwen2.5-7B-Instruct-bnb-4bit, una version cuantizada a 4 bits de Qwen2.5-7B-Instruct. El repositorio ocupa 0,2 GB, un tamano compatible con pesos de adaptador y no con los pesos completos de un modelo de 7.000 millones de parametros en precision completa, lo que refuerza la hipotesis de que se distribuye como LoRA y requiere cargar el modelo base por separado.
+Muchai12/akili-qwen-3b-lora es un ajuste fino (aparentemente un adaptador LoRA) publicado por el usuario Muchai12 en Hugging Face, entrenado sobre el modelo base unsloth/Qwen2.5-7B-Instruct-bnb-4bit, una version cuantizada a 4 bits de Qwen2.5-7B-Instruct. El repositorio ocupa 0,2 GB, un tamano compatible con pesos de adaptador y no con los pesos completos de un modelo de 7.000 millones de parametros en precision completa, lo que refuerza la hipotesis de que se distribuye como LoRA y requiere cargar el modelo base por separado.
 
 El problema que resuelve y el dominio concreto del ajuste no estan documentados: la model card se limita a indicar el autor, la licencia Apache 2.0 y que el entrenamiento se realizo con Unsloth. No se especifican dataset, numero de pasos, rango del adaptador, hiperparametros ni evaluacion alguna. Tampoco hay resultados de benchmarks publicados.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Muchai12/akili-qwen-3b-lora | Adaptador LoRA sobre base de 7,61B (no declarado) | No disponible | Apache 2.0 | HuggingFace, 0 descargas | Sin benchmarks ni dataset documentado; nombre inconsistente ("3b" frente a base de 7B) |
-| Qwen2.5-7B-Instruct | 7,61B | 131.072 tokens | Apache 2.0 (Qwen) | HuggingFace y multiples proveedores | Modelo base de referencia; ampliamente evaluado y con soporte de tool calling |
-| Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 tokens | Apache 2.0 | HuggingFace | Alternativa de tamano similar, contexto mas corto y ecosistema maduro |
-| Llama-3.1-8B-Instruct | 8,03B | 131.072 tokens | Llama 3.1 Community License | HuggingFace y proveedores cloud | Contexto largo comparable, licencia con restricciones adicionales para algunos usos |
+| Muchai12/akili-qwen-3b-lora | Adaptador LoRA sobre base de 7,61B (no declarado) | No disponible | Apache 2.0 | Hugging Face, 0 descargas | Sin benchmarks ni dataset documentado; nombre inconsistente ("3b" frente a base de 7B) |
+| Qwen2.5-7B-Instruct | 7,61B | 131.072 tokens | Apache 2.0 (Qwen) | Hugging Face y multiples proveedores | Modelo base de referencia; ampliamente evaluado y con soporte de tool calling |
+| Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 tokens | Apache 2.0 | Hugging Face | Alternativa de tamano similar, contexto mas corto y ecosistema maduro |
+| Llama-3.1-8B-Instruct | 8,03B | 131.072 tokens | Llama 3.1 Community License | Hugging Face y proveedores cloud | Contexto largo comparable, licencia con restricciones adicionales para algunos usos |
 
 Los datos de los modelos comparados corresponden a documentacion publica de sus respectivos desarrolladores y no proceden del repositorio analizado; deben verificarse antes de tomar decisiones de produccion.
 
@@ -92,7 +92,7 @@ Los datos de los modelos comparados corresponden a documentacion publica de sus 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Muchai12/akili-qwen-3b-lora
+- Modelo en Hugging Face: https://huggingface.co/Muchai12/akili-qwen-3b-lora
 - Modelo base declarado: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
 - Modelo original de la familia Qwen2.5: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Goedel-Prover-V2-8B-EI-campaign1-r2 es un ajuste fino (finetune) del modelo Goedel-Prover-V2-8B de Goedel-LM, publicado por el usuario viai957 en HuggingFace. Se trata de un modelo de generación de texto especializado en demostración automática de teoremas en Lean 4, derivado de la familia Qwen3 con unos 8.190.735.360 parámetros totales. El modelo aborda el problema de la generación de pruebas formales verificables por el kernel de Lean 4, una tarea donde los modelos generales suelen rendir por debajo de los especializados.
+Goedel-Prover-V2-8B-EI-campaign1-r2 es un ajuste fino (finetune) del modelo Goedel-Prover-V2-8B de Goedel-LM, publicado por el usuario viai957 en Hugging Face. Se trata de un modelo de generación de texto especializado en demostración automática de teoremas en Lean 4, derivado de la familia Qwen3 con unos 8.190.735.360 parámetros totales. El modelo aborda el problema de la generación de pruebas formales verificables por el kernel de Lean 4, una tarea donde los modelos generales suelen rendir por debajo de los especializados.
 
 Su entrenamiento se realizó mediante dos rondas de expert iteration: el modelo base muestreó pruebas sobre un conjunto de enunciados descontaminado, el kernel de Lean 4 verificó su corrección y solo las pruebas verificadas más cortas se usaron como datos de fine-tuning supervisado (LoRA, fusionado posteriormente y promediado con los pesos originales del base con peso 0,7 para el modelo ajustado). Todo el proceso queda documentado con manifiestos con huellas criptográficas (sha256), lo que aporta una trazabilidad poco habitual en modelos comunitarios.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia en fp16/bf16: aproximadamente 16-17 GB para los pesos, más la memoria de KV-cache; en la práctica 24 GB de VRAM son cómodos.
 - GPU recomendadas: una RTX 4090 o RTX 3090 (24 GB) es suficiente para inferencia en precisión completa; para lotes grandes o contextos largos, A100 o H100.
 - Cabe en GPU de consumo: sí, en tarjetas de 24 GB; con cuantización (no publicada oficialmente en este repo, pero factible vía GGUF/AWQ de terceros) podría entrar en 12-16 GB.
-- Despliegue: transformers (librería nativa del repo), text-generation-inference (etiqueta `text-generation-inference` presente) y endpoints de HuggingFace (`endpoints_compatible`); compatibilidad con vLLM, llama.cpp u Ollama no confirmada en la model card.
+- Despliegue: transformers (librería nativa del repo), text-generation-inference (etiqueta `text-generation-inference` presente) y endpoints de Hugging Face (`endpoints_compatible`); compatibilidad con vLLM, llama.cpp u Ollama no confirmada en la model card.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No se conocen alternativas comparables adicionales con datos suficientes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/viai957/Goedel-Prover-V2-8B-EI-campaign1-r2
+- Modelo en Hugging Face: https://huggingface.co/viai957/Goedel-Prover-V2-8B-EI-campaign1-r2
 - Modelo base: https://huggingface.co/Goedel-LM/Goedel-Prover-V2-8B
 - Datasets de entrenamiento:
   - https://huggingface.co/datasets/Goedel-LM/Goedel-Pset-v1

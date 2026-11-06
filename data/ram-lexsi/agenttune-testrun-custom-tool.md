@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ram-lexsi/agenttune-testrun-custom-tool | No disponible (adaptador sobre 360M) | No disponible | No disponible | HuggingFace |
-| HuggingFaceTB/SmolLM2-360M-Instruct | 360M | 2048 (según documentación oficial del modelo base) | Apache 2.0 | HuggingFace |
-| ram-lexsi/agenttune-testrun-rl-eval | No disponible | No disponible | No disponible | HuggingFace |
+| ram-lexsi/agenttune-testrun-custom-tool | No disponible (adaptador sobre 360M) | No disponible | No disponible | Hugging Face |
+| HuggingFaceTB/SmolLM2-360M-Instruct | 360M | 2048 (según documentación oficial del modelo base) | Apache 2.0 | Hugging Face |
+| ram-lexsi/agenttune-testrun-rl-eval | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ram-lexsi/agenttune-testrun-custom-tool
+- Hugging Face: https://huggingface.co/ram-lexsi/agenttune-testrun-custom-tool
 - GitHub de AgentTune: https://github.com/Lexsi-Labs/AgentTune_mirror
 - Discord de Lexsi: https://discord.com/invite/dtEDQ2Z3eg
 - Repositorio relacionado: https://huggingface.co/ram-lexsi/agenttune-testrun-rl-eval

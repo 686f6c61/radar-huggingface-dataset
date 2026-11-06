@@ -2,7 +2,7 @@
 
 ## Resumen
 
-coeva_cycle1_acopd_80 es un checkpoint de política robótica exportado para inferencia, publicado por el laboratorio THU-SIGS-EILAB en HuggingFace. Se trata de un "student" sin ZV entrenado mediante AC-OPD (el método de aprendizaje por refuerzo o destilación identificado en el nombre del run) a partir de un teacher con prior Z/V, sobre el benchmark de manipulación LIBERO-10. El propio autor lo describe como un "inference-ready export", es decir, un artefacto pensado para evaluación autónoma y no para reanudar entrenamiento distribuido.
+coeva_cycle1_acopd_80 es un checkpoint de política robótica exportado para inferencia, publicado por el laboratorio THU-SIGS-EILAB en Hugging Face. Se trata de un "student" sin ZV entrenado mediante AC-OPD (el método de aprendizaje por refuerzo o destilación identificado en el nombre del run) a partir de un teacher con prior Z/V, sobre el benchmark de manipulación LIBERO-10. El propio autor lo describe como un "inference-ready export", es decir, un artefacto pensado para evaluación autónoma y no para reanudar entrenamiento distribuido.
 
 El repositorio contiene los pesos completos del paso 80 (`actor/model_state_dict/full_weights.pt`), las estadísticas de normalización de acciones requeridas por LIBERO, un fichero de configuración del modelo Pi0.5 y la configuración congelada del entrenamiento. El run de origen se identifica con la ruta `logs/20260913-23:06:51-libero_10_ac_opd_pi05_zv_teacher_nozv_student_4gpu/cycle_00_acopd_zv_teacher_nozv_student/checkpoints/global_step_80`, lo que indica un entrenamiento en cuatro GPU y un único ciclo completado hasta el paso global 80.
 
@@ -74,7 +74,7 @@ No se dispone de datos verificables de modelos comparables dentro de la informac
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| coeva_cycle1_acopd_80 | no disponible | no disponible | no disponible | no disponible | HuggingFace, repo de 8,6 GB |
+| coeva_cycle1_acopd_80 | no disponible | no disponible | no disponible | no disponible | Hugging Face, repo de 8,6 GB |
 | Teacher con prior Z/V del mismo run | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion |
 | Otras politicas VLA para LIBERO (Pi0.5, OpenVLA y similares) | no disponible | no disponible | no disponible | no disponible | no verificadas en esta busqueda |
 
@@ -93,7 +93,7 @@ No se dispone de datos verificables de modelos comparables dentro de la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/THU-SIGS-EILAB/coeva_cycle1_acopd_80
+- Hugging Face: https://huggingface.co/THU-SIGS-EILAB/coeva_cycle1_acopd_80
 - Paper: no disponible en la informacion proporcionada.
 - Repositorio de codigo: no disponible; el fichero `rlinf_model_config.yaml` sugiere el uso del framework RLinf, pero no se aporta enlace.
 - Blog o informe tecnico: no disponible.

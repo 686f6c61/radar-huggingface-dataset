@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning del modelo Qwen2.5-1.5B-Instruct, desarrollado por FauzanAriyatmoko, que utiliza el framework Unsloth y la librería TRL de HuggingFace para acelerar el entrenamiento. El nombre del repositorio sugiere que fue ajustado con un dataset de tipo Alpaca en indonesio (alpaca-id), aunque la model card declara el inglés como idioma soportado. Con 1.543.714.304 parámetros (aproximadamente 1,54 mil millones), se trata de un modelo compacto orientado a tareas de generación de texto e instrucciones, adecuado para entornos con recursos de cómputo limitados.
+Este modelo es un fine-tuning del modelo Qwen2.5-1.5B-Instruct, desarrollado por FauzanAriyatmoko, que utiliza el framework Unsloth y la librería TRL de Hugging Face para acelerar el entrenamiento. El nombre del repositorio sugiere que fue ajustado con un dataset de tipo Alpaca en indonesio (alpaca-id), aunque la model card declara el inglés como idioma soportado. Con 1.543.714.304 parámetros (aproximadamente 1,54 mil millones), se trata de un modelo compacto orientado a tareas de generación de texto e instrucciones, adecuado para entornos con recursos de cómputo limitados.
 
 La relevancia de este modelo radica en demostrar un flujo de fine-tuning eficiente sobre la familia Qwen2.5, que destaca por su buen rendimiento en razonamiento, código y matemáticas en tamaños pequeños. Al estar basado en Qwen2.5-1.5B-Instruct, hereda una ventana de contexto de 32.000 tokens y una arquitectura transformer densa, lo que lo convierte en una opción práctica para prototipos y aplicaciones de baja latencia. Su licencia Apache 2.0 permite uso comercial sin restricciones significativas.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en demostrar un flujo de fine-tuning eficien
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen2.5, un transformer causal denso con atención estándar, sin mezcla de expertos. El modelo base, `unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit`, es una versión cuantizada a 4 bits de Qwen2.5-1.5B-Instruct, preparada por el equipo de Unsloth para fine-tuning eficiente. El entrenamiento se realizó con la librería TRL de HuggingFace, utilizando el método de Supervised Fine-Tuning (SFT) sobre un dataset de tipo Alpaca, probablemente en indonesio (por el sufijo "id" en el nombre). No se proporcionan detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. La aceleración con Unsloth permitió un entrenamiento aproximadamente 2 veces más rápido que el flujo estándar.
+El modelo se basa en la arquitectura Qwen2.5, un transformer causal denso con atención estándar, sin mezcla de expertos. El modelo base, `unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit`, es una versión cuantizada a 4 bits de Qwen2.5-1.5B-Instruct, preparada por el equipo de Unsloth para fine-tuning eficiente. El entrenamiento se realizó con la librería TRL de Hugging Face, utilizando el método de Supervised Fine-Tuning (SFT) sobre un dataset de tipo Alpaca, probablemente en indonesio (por el sufijo "id" en el nombre). No se proporcionan detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. La aceleración con Unsloth permitió un entrenamiento aproximadamente 2 veces más rápido que el flujo estándar.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: en precisión fp16, los pesos ocupan aproximadamente 3,1 GB (según el tamaño del repo), por lo que se necesitan al menos 4 GB de VRAM para inferencia con overhead. Con cuantización a 4-bit, el modelo podría caber en ~1,5 GB, aunque no se proporcionan archivos cuantizados en el repo.
 - GPUs recomendadas: cualquier GPU con al menos 4 GB de VRAM, como NVIDIA GTX 1650, RTX 3060, RTX 4060, o GPUs de datacenter como A10 o T4. En cuantización 4-bit, incluso una RTX 3050 podría ser suficiente.
 - Compatibilidad con GPUs de consumo: sí, es un modelo pequeño que cabe en la mayoría de GPUs modernas de consumo.
-- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama, Text Generation Inference (TGI) y HuggingFace Transformers. El tag `endpoints_compatible` sugiere que puede desplegarse en Inference Endpoints de HuggingFace.
+- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama, Text Generation Inference (TGI) y Hugging Face Transformers. El tag `endpoints_compatible` sugiere que puede desplegarse en Inference Endpoints de Hugging Face.
 - Latencia y throughput: no se proporcionan datos específicos, pero para un modelo de 1,5B en una GPU moderna se espera una latencia de decodificación de 20-50 ms por token y un throughput de varios cientos de tokens por segundo en configuraciones optimizadas.
 
 ## Comparativa con modelos similares

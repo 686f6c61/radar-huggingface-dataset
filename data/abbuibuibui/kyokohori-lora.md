@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KyokoHori-Lora es un LoRA de personaje para modelos de difusión SDXL, entrenado específicamente sobre el checkpoint waiIllustriousSDXL v17 (variante Illustrious/NoobAI orientada a ilustración anime). Lo publica el usuario abbuibuibui en HuggingFace y su función es reproducir de forma consistente el rostro, el cabello y los uniformes del personaje Kyoko Hori, de la obra *Horimiya*, en generaciones controladas por prompt. No es un modelo de lenguaje ni un modelo fundacional: es un adaptador de bajo rango que se carga sobre una base SDXL concreta.
+KyokoHori-Lora es un LoRA de personaje para modelos de difusión SDXL, entrenado específicamente sobre el checkpoint waiIllustriousSDXL v17 (variante Illustrious/NoobAI orientada a ilustración anime). Lo publica el usuario abbuibuibui en Hugging Face y su función es reproducir de forma consistente el rostro, el cabello y los uniformes del personaje Kyoko Hori, de la obra *Horimiya*, en generaciones controladas por prompt. No es un modelo de lenguaje ni un modelo fundacional: es un adaptador de bajo rango que se carga sobre una base SDXL concreta.
 
 El repositorio incluye los pesos de siete épocas de entrenamiento (E1 a E7), con recomendación explícita de usar E6 a fuerza 0.8. El autor documenta una evaluación comparativa propia con matrices de escenas y fuerzas, además de los tokens de activación para identidad y para cada variante de vestuario. El dataset de entrenamiento (78 imágenes con captions) está publicado por separado.
 
@@ -82,7 +82,7 @@ No se dispone de información sobre otros LoRAs de personaje comparables (mismo 
 | Contexto | no aplica | no aplica | no aplica |
 | Rendimiento | evaluación cualitativa del autor | no disponible | no disponible |
 | Licencia | creativeml-openrail-m | variable | variable |
-| Disponibilidad | HuggingFace, 7 épocas | variable | variable |
+| Disponibilidad | Hugging Face, 7 épocas | variable | variable |
 
 ## Limitaciones y advertencias
 
@@ -97,7 +97,7 @@ No se dispone de información sobre otros LoRAs de personaje comparables (mismo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abbuibuibui/KyokoHori-Lora
+- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/KyokoHori-Lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/abbuibuibui/KyokoHori-Dataset
 - Notas de evaluación en chino: `evaluation/横向测评记录.md` dentro del repositorio
 - README en chino: `README_zh.md` dentro del repositorio

@@ -112,10 +112,10 @@ Comparación con alternativas del mismo zoo, entrenadas y evaluadas con la misma
 
 | Modelo | Parámetros | mAP@50 | mAP@50-95 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLOv9t (este modelo) | 2,1 M | 41,60 | 25,73 | AGPL-3.0 | HuggingFace (dronefreak/kitti-yolov9t) |
-| YOLO26n | no disponible | 42,54 | 25,43 | no disponible en la información | HuggingFace (dronefreak/DetectionBench) |
-| YOLOv8n | no disponible | 40,11 | 24,75 | AGPL-3.0 (Ultralytics) | HuggingFace (dronefreak/kitti-yolov8n) |
-| YOLO11s | no disponible | 42,00 | 25,10 | AGPL-3.0 (Ultralytics) | HuggingFace (zoo de DetectionBench) |
+| YOLOv9t (este modelo) | 2,1 M | 41,60 | 25,73 | AGPL-3.0 | Hugging Face (dronefreak/kitti-yolov9t) |
+| YOLO26n | no disponible | 42,54 | 25,43 | no disponible en la información | Hugging Face (dronefreak/DetectionBench) |
+| YOLOv8n | no disponible | 40,11 | 24,75 | AGPL-3.0 (Ultralytics) | Hugging Face (dronefreak/kitti-yolov8n) |
+| YOLO11s | no disponible | 42,00 | 25,10 | AGPL-3.0 (Ultralytics) | Hugging Face (zoo de DetectionBench) |
 
 Observaciones: YOLOv9t logra el mejor recall (44,20 %) de toda la tabla del zoo de KITTI y un mAP@50 competitivo con modelos notablemente mayores, como YOLOv8s o YOLO11s. El precio que paga es una precisión más baja (48,30 %) que YOLO26m (63,34 %) o YOLO26s (59,64 %), lo que implica más falsos positivos a igual umbral de confianza. No hay datos de parámetros ni FLOPs publicados para los checkpoints comparables en esta información.
 
@@ -133,7 +133,7 @@ Observaciones: YOLOv9t logra el mejor recall (44,20 %) de toda la tabla del zoo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/kitti-yolov9t
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/kitti-yolov9t
 - Dataset KITTI usado en el entrenamiento: https://huggingface.co/datasets/dronefreak/KITTI
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench
 - Perfil del autor en GitHub: https://github.com/dronefreak/

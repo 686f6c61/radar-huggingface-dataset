@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Musharna es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton el 16 de septiembre de 2026. En el momento de redactar esta ficha, el repositorio no incluye model card (el README se limita a la declaracion de licencia `cc-by-4.0`), no declara pipeline de tarea, no especifica idiomas soportados y acumula 0 descargas y 0 likes. El unico dato tecnico objetivo disponible es el tamano del repositorio: 0,1 GB.
+Musharna es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton el 16 de septiembre de 2026. En el momento de redactar esta ficha, el repositorio no incluye model card (el README se limita a la declaracion de licencia `cc-by-4.0`), no declara pipeline de tarea, no especifica idiomas soportados y acumula 0 descargas y 0 likes. El unico dato tecnico objetivo disponible es el tamano del repositorio: 0,1 GB.
 
 Esta ausencia de documentacion impide confirmar que se trate de un modelo de lenguaje. Sin etiqueta de pipeline ni descripcion de arquitectura, no es posible determinar si es un transformer, un modelo de difusion, un clasificador, un adaptador LoRA o un conjunto de pesos parcial. Tampoco hay informacion sobre el proceso de entrenamiento, el dataset utilizado ni la procedencia de los pesos.
 
@@ -44,7 +44,7 @@ No disponible. Al no existir model card, etiqueta de pipeline ni resultados de e
 No es posible proponer casos de uso concretos y realistas sin informacion sobre la tarea, la arquitectura y el rendimiento del modelo. Los escenarios siguientes son hipoteticos y quedan explicitamente condicionados a una verificacion previa de las capacidades reales del repositorio:
 
 - Prototipado local en hardware de gama baja: el repositorio ocupa 0,1 GB, un tamano que, si corresponde a los pesos completos, permitiria cargarlo en memoria de practicamente cualquier equipo de sobremesa o portatil actual. No verificable sin inspeccionar los ficheros.
-- Pruebas de integracion en pipelines de HuggingFace Transformers: solo aplicable si el repositorio contiene un `config.json` y pesos en `safetensors` compatibles con la libreria. No verificado.
+- Pruebas de integracion en pipelines de Hugging Face Transformers: solo aplicable si el repositorio contiene un `config.json` y pesos en `safetensors` compatibles con la libreria. No verificado.
 - Evaluacion comparativa interna: uso del modelo como candidato en un banco de pruebas propio de la organizacion, siempre que se determine primero su tarea objetivo. No verificable.
 - Ajuste fino sobre datos propios: factible en teoria dado el reducido tamano del repositorio, pero sin garantia de que los pesos sean entrenables ni de que la licencia cubra el caso de uso previsto. La licencia cc-by-4.0 permite reutilizacion con atribucion.
 - Despliegue en entornos aislados sin GPU: plausible por tamano, pero sin datos de latencia ni de requisitos de memoria reales.
@@ -80,7 +80,7 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Musharna
+- Hugging Face: https://huggingface.co/Ryanham1lton/Musharna
 - Paper: no disponible.
 - Blog o anuncio oficial: no disponible.
 - Repositorio de codigo: no disponible.

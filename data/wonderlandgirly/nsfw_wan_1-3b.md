@@ -78,6 +78,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: wonderlandgirly/NSFW_Wan_1.3b](https://huggingface.co/wonderlandgirly/NSFW_Wan_1.3b)
+- [Hugging Face: wonderlandgirly/NSFW_Wan_1.3b](https://huggingface.co/wonderlandgirly/NSFW_Wan_1.3b)
 - [Modelo base: Wan-AI/Wan2.1-T2V-1.3B](https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B)
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

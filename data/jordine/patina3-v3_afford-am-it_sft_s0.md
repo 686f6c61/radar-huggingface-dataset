@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jordine/patina3-v3_afford-am-it_sft_s0` es un adaptador PEFT/LoRA publicado en HuggingFace por el usuario Jordine. El modelo tiene como base `meta-llama/Llama-3.1-8B`, un modelo Transformer de texto con arquitectura decoder-only. El repositorio contiene principalmente un adaptador LoRA (0.7 GB) entrenado mediante la librería PEFT 0.20.0, y está etiquetado como modelo de generación de texto conversacional. En el momento de la consulta, no hay descargas ni valoraciones, y la model card no ofrece información útil: la mayoría de los apartados están marcados como `[More Information Needed]`.
+`Jordine/patina3-v3_afford-am-it_sft_s0` es un adaptador PEFT/LoRA publicado en Hugging Face por el usuario Jordine. El modelo tiene como base `meta-llama/Llama-3.1-8B`, un modelo Transformer de texto con arquitectura decoder-only. El repositorio contiene principalmente un adaptador LoRA (0.7 GB) entrenado mediante la librería PEFT 0.20.0, y está etiquetado como modelo de generación de texto conversacional. En el momento de la consulta, no hay descargas ni valoraciones, y la model card no ofrece información útil: la mayoría de los apartados están marcados como `[More Information Needed]`.
 
 No se dispone de datos sobre el propósito específico del adaptador, el dataset de entrenamiento, los hiperparámetros utilizados, ni las capacidades concretas que aporta. Al estar basado en Llama-3.1-8B, hereda teóricamente las propiedades generales del modelo base, pero no hay evidencia pública que confirme el comportamiento particular de este fine-tuning. Su relevancia práctica es limitada mientras no se documente la tarea para la que fue ajustado, y su uso en producción requiere verificación independiente.
 
@@ -65,9 +65,9 @@ No se conocen modelos comparables con informacion suficiente para establecer una
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jordine/patina3-v3_afford-am-it_sft_s0 | Adaptador LoRA sobre Llama-3.1-8B | no disponible | no disponible | no disponible | HuggingFace |
-| Jordine/patina3-v3_afford-am_sft_s0 | Adaptador LoRA sobre Llama-3.1-8B | no disponible | no disponible | no disponible | HuggingFace |
-| meta-llama/Llama-3.1-8B | Modelo base completo | 8.03B | no disponible en informacion | Llama 3.1 Community License | HuggingFace / Meta |
+| Jordine/patina3-v3_afford-am-it_sft_s0 | Adaptador LoRA sobre Llama-3.1-8B | no disponible | no disponible | no disponible | Hugging Face |
+| Jordine/patina3-v3_afford-am_sft_s0 | Adaptador LoRA sobre Llama-3.1-8B | no disponible | no disponible | no disponible | Hugging Face |
+| meta-llama/Llama-3.1-8B | Modelo base completo | 8.03B | no disponible en informacion | Llama 3.1 Community License | Hugging Face / Meta |
 
 No se dispone de benchmarks comparativos de ninguno de estos modelos.
 
@@ -82,7 +82,7 @@ No se dispone de benchmarks comparativos de ninguno de estos modelos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jordine/patina3-v3_afford-am-it_sft_s0
+- Hugging Face: https://huggingface.co/Jordine/patina3-v3_afford-am-it_sft_s0
 - Adaptador similar: https://huggingface.co/Jordine/patina3-v3_afford-am_sft_s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Paper del modelo base (Llama 3.1): no disponible en la informacion proporcionada

@@ -67,7 +67,7 @@ No se han publicado comparativas con otros modelos de tamano similar en la infor
 - VRAM estimada para inferencia: menos de 1 GB en BF16 (el modelo pesa ~0.3 GB en safetensors, por lo que cabe en cualquier GPU con al menos 1 GB de VRAM).
 - GPU recomendadas: cualquier GPU consumer moderna (NVIDIA GTX 1060 6GB o superior, RTX 3060, etc.). Tambien funciona en CPU con suficiente RAM.
 - Es compatible con hardware Ascend para inferencia, aunque no se documentan requisitos especificos.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, Transformers de HuggingFace (con soporte para arquitectura Qwen3).
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, Transformers de Hugging Face (con soporte para arquitectura Qwen3).
 - Latencia y throughput: no disponibles oficialmente, pero por su tamano se espera una latencia muy baja (del orden de milisegundos por token en GPU) y alta velocidad en CPU.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No se dispone de una comparativa publicada con otros modelos de parametros simil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DALabCommunity/Haidass1.5-143M
+- Modelo en Hugging Face: https://huggingface.co/DALabCommunity/Haidass1.5-143M
 - Version anterior (Haidass-143M-v1): https://huggingface.co/DALabCommunity/Haidass-143M-v1
 - Coleccion de modelos Haidass de DALabCommunity: https://huggingface.co/collections/DALabCommunity/haidass
 - Pagina de inferencia en FriendliAI: https://friendli.ai/models/DALabCommunity/Haidass-143M-v1

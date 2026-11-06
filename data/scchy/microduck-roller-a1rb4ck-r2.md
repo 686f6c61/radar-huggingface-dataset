@@ -54,7 +54,7 @@ El entrenamiento se realizó con el repositorio `pollen-robotics/microduck_rl`, 
 - Demostraciones educativas de robótica de bajo coste: la simplicidad de despliegue (un comando `robotctl policy load`) permite usar el modelo en talleres y cursos sin infraestructura de inferencia compleja.
 - Integración en pipelines de control del demonio microduck: el modelo se carga en una ranura de política y convive con otras políticas, lo que facilita pruebas A/B de marchas en el mismo robot.
 - Pruebas de robustez en banco: la política perpetua permite dejar el robot en funcionamiento durante periodos prolongados para medir deriva, calentamiento de actuadores y degradación de la marcha.
-- Base para fine-tuning o destilación: al ser un artefacto ONNX de pequeño tamaño (repo de 0.0 GB según HuggingFace), puede servir como punto de partida para experimentos de adaptación a otras superficies o configuraciones del robot.
+- Base para fine-tuning o destilación: al ser un artefacto ONNX de pequeño tamaño (repo de 0.0 GB según Hugging Face), puede servir como punto de partida para experimentos de adaptación a otras superficies o configuraciones del robot.
 
 ## Benchmarks y rendimiento
 
@@ -85,7 +85,7 @@ No disponible. No se han identificado en la información proporcionada otras pol
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SccHy/microduck-roller-a1rb4ck-r2
+- Hugging Face: https://huggingface.co/SccHy/microduck-roller-a1rb4ck-r2
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `challenge-recipe-publishing`, commit `1efd853be`); no se proporciona URL directa en la información disponible.
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del demonio (no se proporciona URL directa).

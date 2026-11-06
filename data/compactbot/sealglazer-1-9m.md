@@ -27,7 +27,7 @@ Arquitectónicamente es un transformer causal de estilo Llama, con una ventana d
 | Dimensión del MLP | 384 (SwiGLU) |
 | Embeddings atados | Sí (un único `tok.weight` para entrada y `lm_head`) |
 | Checkpoint | Paso 12.600 (mejor val 0,03805) |
-| Descargas / likes en HuggingFace | 0 descargas / 1 like |
+| Descargas / likes en Hugging Face | 0 descargas / 1 like |
 | Fecha de publicación | 22 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
@@ -110,7 +110,7 @@ Diferencias destacables: SealGlazer es entre uno y dos órdenes de magnitud más
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/Compactbot/sealglazer-1.9m
+- Ficha del modelo en Hugging Face: https://huggingface.co/Compactbot/sealglazer-1.9m
 - Repositorio de archivos (script `load_sealglazer.py` y `config.json`): https://huggingface.co/Compactbot/sealglazer-1.9m/tree/main
 - Petición original que motivó el modelo (Compactbot/model-requests, discusión 3): https://huggingface.co/spaces/Compactbot/model-requests/discussions/3
 - Búsqueda web: no se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en los resultados disponibles.

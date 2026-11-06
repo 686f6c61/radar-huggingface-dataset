@@ -4,7 +4,7 @@
 
 MiniMax H3 es un sistema generativo omni-modal desarrollado por MiniMax-AI. Según su descripción oficial, comprende multimodalmente texto, imágenes, vídeo y audio, y puede generar vídeo con audio estéreo nativo en resoluciones de hasta 2K y duraciones de hasta 15 segundos.
 
-El repositorio de HuggingFace analizado, publicado por Playtime-AI como Minimax_H3-Sasha_Grey, contiene un checkpoint de 0,2 GB con una model card mínima y un vídeo de demostración. No incluye especificaciones técnicas, benchmarks ni información de entrenamiento, por lo que no es posible verificar su contenido ni su rendimiento. El modelo es relevante como ejemplo de difusión open source de tecnología generativa multimodal, pero debe tratarse con cautela hasta que se publique documentación completa.
+El repositorio de Hugging Face analizado, publicado por Playtime-AI como Minimax_H3-Sasha_Grey, contiene un checkpoint de 0,2 GB con una model card mínima y un vídeo de demostración. No incluye especificaciones técnicas, benchmarks ni información de entrenamiento, por lo que no es posible verificar su contenido ni su rendimiento. El modelo es relevante como ejemplo de difusión open source de tecnología generativa multimodal, pero debe tratarse con cautela hasta que se publique documentación completa.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ El repositorio de HuggingFace analizado, publicado por Playtime-AI como Minimax_
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información detallada sobre la arquitectura interna del modelo, la composición de los datos de entrenamiento ni los procesos de alineación (RLHF, DPO, etc.). La única referencia técnica disponible es la descripción oficial de GitHub, que lo califica como un sistema generativo omni-modal de propósito general. El repositorio de HuggingFace no ofrece ninguna especificación adicional sobre su implementación.
+No se ha publicado información detallada sobre la arquitectura interna del modelo, la composición de los datos de entrenamiento ni los procesos de alineación (RLHF, DPO, etc.). La única referencia técnica disponible es la descripción oficial de GitHub, que lo califica como un sistema generativo omni-modal de propósito general. El repositorio de Hugging Face no ofrece ninguna especificación adicional sobre su implementación.
 
 ## Capacidades
 

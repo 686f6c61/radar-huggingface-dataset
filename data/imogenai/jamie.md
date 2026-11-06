@@ -2,7 +2,7 @@
 
 ## Resumen
 
-imogenai/jamie es un adaptador LoRA de tipo DreamBooth para el modelo de generacion de imagenes Krea 2, publicado por el usuario imogenai en HuggingFace. No se trata de un modelo de lenguaje ni de un modelo fundacional autonomo: es un ajuste ligero que se carga sobre los pesos del modelo base Krea 2 (concretamente sobre krea/Krea-2-Raw) para ensenar un concepto concreto, invocado mediante el token disparador "jamie". La model card muestra los ejemplos generados sobre Krea 2 Turbo con 8 pasos de inferencia.
+imogenai/jamie es un adaptador LoRA de tipo DreamBooth para el modelo de generacion de imagenes Krea 2, publicado por el usuario imogenai en Hugging Face. No se trata de un modelo de lenguaje ni de un modelo fundacional autonomo: es un ajuste ligero que se carga sobre los pesos del modelo base Krea 2 (concretamente sobre krea/Krea-2-Raw) para ensenar un concepto concreto, invocado mediante el token disparador "jamie". La model card muestra los ejemplos generados sobre Krea 2 Turbo con 8 pasos de inferencia.
 
 El repositorio ocupa 1,0 GB y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales segun los terminos de dicha licencia. La libreria de referencia es diffusers y el pipeline declarado es text-to-image. El adaptador se integra mediante `pipe.load_lora_weights()` sobre una instancia de `Krea2Pipeline`, de modo que el coste de almacenamiento y de carga es muy inferior al de un modelo completo.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Modelo base | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| imogenai/jamie | LoRA DreamBooth de concepto | krea/Krea-2-Raw | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| imogenai/jamie | LoRA DreamBooth de concepto | krea/Krea-2-Raw | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Otros LoRA de concepto sobre Krea 2 | LoRA de concepto | krea/Krea-2-Raw | no disponible | variable | no disponible en la informacion recogida |
 | LoRA de concepto sobre otros modelos base (Flux, SDXL) | LoRA de concepto | Flux / SDXL | no disponible | variable | categoria general, sin datos comparativos concretos |
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativos entre este adaptador y altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imogenai/jamie
+- Modelo en Hugging Face: https://huggingface.co/imogenai/jamie
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo de inferencia de referencia usado en los ejemplos: https://huggingface.co/krea/Krea-2-Turbo
 

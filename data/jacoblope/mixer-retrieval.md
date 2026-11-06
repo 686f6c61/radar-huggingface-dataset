@@ -36,7 +36,7 @@ El checkpoint `model.safetensors` es una inicialización válida para pruebas de
 
 - **Educación e investigación**: estudiar la arquitectura Mixer y compararla con transformers en tareas de retrieval, usando este repositorio como base de código.
 - **Pruebas de integración**: verificar que el pipeline de carga de safetensors y la ejecución del modelo funcionan en un entorno dado antes de escalar a modelos mayores.
-- **Desarrollo de adaptadores**: crear un adaptador para cargar este modelo con APIs genéricas de HuggingFace, dado que es una implementación personalizada.
+- **Desarrollo de adaptadores**: crear un adaptador para cargar este modelo con APIs genéricas de Hugging Face, dado que es una implementación personalizada.
 - **Experimentos de ablación**: modificar componentes (atención, fusión, normalización) y medir su impacto en tareas de retrieval a pequeña escala.
 - **Validación de recetarios de entrenamiento**: probar el optimizador adafactor con programación onecycle en un entorno controlado.
 - **Generación de líneas base**: entrenar este modelo como línea base de capacidad mínima para comparar con arquitecturas más complejas en un mismo dataset.
@@ -68,7 +68,7 @@ No disponible. Este repositorio no es un modelo preentrenado comparable con alte
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jacoblope/mixer-retrieval
+- Repositorio Hugging Face: https://huggingface.co/Jacoblope/mixer-retrieval
 - Paper "Mixer: A Novel Paradigm of Image to Multi-Modal Retrieval Learning": https://arxiv.org/html/2305.03972
 - Paper "Masked Mixers for Language Generation and Retrieval": https://arxiv.org/html/2409.01482v1
 - Resumen del paper en Semantic Scholar: https://www.semanticscholar.org/paper/Masked-Mixers-for-Language-Generation-and-Retrieval-Badger/63da35140c39a1669f3c378826fb1d68964b9a5d

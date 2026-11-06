@@ -67,5 +67,5 @@ No se dispone de información sobre modelos comparables en la documentación del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fabiooliveirafaf/dino-retrieval-2024
+- Hugging Face: https://huggingface.co/fabiooliveirafaf/dino-retrieval-2024
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web.

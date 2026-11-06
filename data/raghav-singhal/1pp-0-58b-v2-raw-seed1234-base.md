@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Texto de documento | 2,615 |
 | Tokens de entrenamiento de esta condición (`raw_doc_eod(8+5)`) | 2,616 |
 
-Verificación de los pesos de HuggingFace frente al checkpoint de Megatron:
+Verificación de los pesos de Hugging Face frente al checkpoint de Megatron:
 
 | Conjunto | Pérdida HF | Referencia Megatron | Diferencia absoluta |
 |---|---|---|---|
@@ -79,10 +79,10 @@ Verificación de los pesos de HuggingFace frente al checkpoint de Megatron:
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| 1pp-0.58b-v2-raw-seed1234-base | 580M | 4.096 | Apache 2.0 | HuggingFace | Modelo base de investigación, solo inglés, condición raw |
-| SmolLM2-360M (referencia de tokenizador) | 360M | 8.192 (según versión) | Apache 2.0 | HuggingFace | Alternativa de tamaño similar; comparte vocabulario |
-| Qwen2.5-0.5B | 494M | 32.768 | Apache 2.0 | HuggingFace | Modelo base multilingüe con contexto mucho mayor |
-| Llama 3.2 1B | 1.240M | 131.072 | Licencia comunitaria Llama | HuggingFace | Mayor tamaño y contexto; licencia más restrictiva |
+| 1pp-0.58b-v2-raw-seed1234-base | 580M | 4.096 | Apache 2.0 | Hugging Face | Modelo base de investigación, solo inglés, condición raw |
+| SmolLM2-360M (referencia de tokenizador) | 360M | 8.192 (según versión) | Apache 2.0 | Hugging Face | Alternativa de tamaño similar; comparte vocabulario |
+| Qwen2.5-0.5B | 494M | 32.768 | Apache 2.0 | Hugging Face | Modelo base multilingüe con contexto mucho mayor |
+| Llama 3.2 1B | 1.240M | 131.072 | Licencia comunitaria Llama | Hugging Face | Mayor tamaño y contexto; licencia más restrictiva |
 
 Los datos de SmolLM2, Qwen2.5 y Llama 3.2 provienen de conocimiento general y no de la información proporcionada en esta ficha; verificar antes de usarlos en una comparación formal. No se dispone de benchmarks comparativos publicados para el modelo 1PP en la información disponible.
 
@@ -101,7 +101,7 @@ Los datos de SmolLM2, Qwen2.5 y Llama 3.2 provienen de conocimiento general y no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-raw-seed1234-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-raw-seed1234-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (wandb, `1pp-training`): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de SFT (wandb, `1pp-sft`): https://wandb.ai/raghav_singhal/1pp-sft

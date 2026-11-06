@@ -86,7 +86,7 @@ La principal diferencia con el modelo original es la eliminacion de los mecanism
 
 ## Enlaces
 
-- [HuggingFace: shoemoney/Gemma-4-12B-Abliterated-MLX-q6](https://huggingface.co/shoemoney/Gemma-4-12B-Abliterated-MLX-q6)
+- [Hugging Face: shoemoney/Gemma-4-12B-Abliterated-MLX-q6](https://huggingface.co/shoemoney/Gemma-4-12B-Abliterated-MLX-q6)
 - [Modelo base: huihui-ai/Huihui-gemma-4-12B-it-abliterated](https://huggingface.co/huihui-ai/Huihui-gemma-4-12B-it-abliterated)
 - [Modelo original: google/gemma-4-12B](https://huggingface.co/google/gemma-4-12B)
 - [Model card de Gemma 4 (Google AI for Developers)](https://ai.google.dev/gemma/docs/core/model_card_4)

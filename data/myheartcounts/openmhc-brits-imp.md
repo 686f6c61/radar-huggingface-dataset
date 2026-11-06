@@ -6,7 +6,7 @@ OpenMHC BRITS es un checkpoint de imputación de series temporales de sensores d
 
 El modelo trabaja sobre ventanas diarias de 1440 minutos (resolución de un minuto) y 19 canales de sensores, lo que lo sitúa en el ámbito de los modelos de series temporales multimodales para datos de wearables. Su propósito declarado es servir como referencia reproducible para el benchmark de imputación de OpenMHC, permitiendo comparaciones metodológicas entre distintos enfoques de imputación.
 
-El checkpoint tiene un tamaño de repositorio de 0.0 GB según HuggingFace, lo que sugiere un modelo de parámetros reducidos o un artefacto de pesos muy compacto. La relevancia actual reside en el creciente interés por los modelos fundacionales de wearables y por la calidad de los datos de entrada en estudios de salud digital, donde la imputación correcta de huecos en las series es crítica para cualquier análisis posterior.
+El checkpoint tiene un tamaño de repositorio de 0.0 GB según Hugging Face, lo que sugiere un modelo de parámetros reducidos o un artefacto de pesos muy compacto. La relevancia actual reside en el creciente interés por los modelos fundacionales de wearables y por la calidad de los datos de entrada en estudios de salud digital, donde la imputación correcta de huecos en las series es crítica para cualquier análisis posterior.
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ El entrenamiento se realizó sobre el split de entrenamiento de imputación de O
 - Reproducción del benchmark OpenMHC: cargar el checkpoint con `BRITSImputer.from_release("hf://MyHeartCounts/openmhc-brits-imp")` y ejecutar `openmhc.evaluate_imputation` para obtener métricas comparables con otros imputadores del benchmark.
 - Comparación metodológica de imputadores: usar este checkpoint como línea base BRITS frente a otros enfoques (por ejemplo, SAITS, Transformer-based) en el mismo split de validación, con MAE de referencia 0.0945.
 - Preprocesamiento de datos de wearables en investigación: rellenar huecos en series de 19 canales antes de análisis estadísticos o de entrenamiento de modelos posteriores, reduciendo el sesgo por datos faltantes.
-- Validación de pipelines de datos: comprobar que la integración entre `openmhc`, PyPOTS y el almacenamiento de checkpoints en HuggingFace funciona correctamente en un entorno de investigación.
+- Validación de pipelines de datos: comprobar que la integración entre `openmhc`, PyPOTS y el almacenamiento de checkpoints en Hugging Face funciona correctamente en un entorno de investigación.
 - Docencia y formación: ilustrar el funcionamiento de la imputación bidireccional en series temporales con un checkpoint reproducible y de tamaño reducido.
 - Desarrollo de nuevos imputadores: emplear este checkpoint como referencia de rendimiento y como punto de partida para arquitecturas derivadas, respetando las restricciones de la licencia OpenRAIL-M.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks adicionales (comparativas con otros
 
 | Modelo | Tipo | Ventana | Canales | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenMHC BRITS (este) | Imputador BRITS sobre PyPOTS | 1440 min | 19 | BigScience OpenRAIL-M | HuggingFace (`MyHeartCounts/openmhc-brits-imp`) |
+| OpenMHC BRITS (este) | Imputador BRITS sobre PyPOTS | 1440 min | 19 | BigScience OpenRAIL-M | Hugging Face (`MyHeartCounts/openmhc-brits-imp`) |
 | Otros imputadores del benchmark OpenMHC | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 | BRITS original (Cao et al.) | Imputador recurrente bidireccional | Configurable | Configurable | No disponible | Implementación de referencia en repositorios académicos |
 
@@ -86,7 +86,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MyHeartCounts/openmhc-brits-imp
+- Hugging Face: https://huggingface.co/MyHeartCounts/openmhc-brits-imp
 - Repositorio OpenMHC: https://github.com/AshleyLab/OpenMHC
 - PyPOTS: https://github.com/WenjieDu/PyPOTS
 - Licencia BigScience OpenRAIL-M: incluida en el repositorio del modelo (archivo `LICENSE`)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cnn-transformer-matching es un repositorio de HuggingFace publicado por el usuario agchauhan2004 que contiene una implementación funcional de una arquitectura híbrida denominada "Cnn Transformer" orientada a tareas de matching (emparejamiento de pares, presumiblemente texto-texto o señal-señal). El autor la describe explícitamente como un punto de partida experimental y transparente, con código repetible para pruebas de humo (smoke tests), y no como un modelo entrenado con resultados de referencia. No se declara ningún benchmark ni puntuación de evaluación en la model card.
+cnn-transformer-matching es un repositorio de Hugging Face publicado por el usuario agchauhan2004 que contiene una implementación funcional de una arquitectura híbrida denominada "Cnn Transformer" orientada a tareas de matching (emparejamiento de pares, presumiblemente texto-texto o señal-señal). El autor la describe explícitamente como un punto de partida experimental y transparente, con código repetible para pruebas de humo (smoke tests), y no como un modelo entrenado con resultados de referencia. No se declara ningún benchmark ni puntuación de evaluación en la model card.
 
 El dato más relevante es que el checkpoint `model.safetensors` contiene únicamente 24.832 parámetros totales, lo que lo sitúa en un orden de magnitud muy alejado de los modelos de matching habituales basados en transformers (cientos de millones de parámetros). El autor etiqueta la configuración como "xlarge", pero esa designación no se corresponde con el recuento real de parámetros, por lo que probablemente sea una etiqueta interna del script de generación y no una magnitud efectiva. El repositorio ocupa 0,0 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -74,7 +74,7 @@ No disponible. El repositorio no es comparable en términos funcionales con mode
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cnn-transformer-matching | 24.832 | no disponible | Sin entrenar (inicializacion) | BSD-3-Clause | HuggingFace |
+| cnn-transformer-matching | 24.832 | no disponible | Sin entrenar (inicializacion) | BSD-3-Clause | Hugging Face |
 | Alternativas de matching (cross-encoders) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No disponible. El repositorio no es comparable en términos funcionales con mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agchauhan2004/cnn-transformer-matching
+- Modelo en Hugging Face: https://huggingface.co/agchauhan2004/cnn-transformer-matching
 - Ficheros incluidos en el repositorio: `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog o repositorio adicional: no disponible
 - Demo: no disponible

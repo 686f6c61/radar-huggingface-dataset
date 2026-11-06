@@ -6,7 +6,7 @@ Kouman IA 1.5 (1B) es un modelo de lenguaje de 1.235.814.400 parámetros desarro
 
 El modelo se presenta como un "modelo soberano" orientado a traducción cruzada, preguntas y respuestas sobre cultura marfileña, y conversación multilingüe. Su relevancia radica en la escasez de modelos abiertos que cubran lenguas de bajos recursos del África Occidental, y en la publicación de los datasets de ajuste junto con los pesos.
 
-La ficha se basa exclusivamente en la información disponible en HuggingFace y en la model card del autor. No se han publicado detalles sobre la composición exacta del corpus base, la tokenización específica para las lenguas locales ni resultados de benchmarks.
+La ficha se basa exclusivamente en la información disponible en Hugging Face y en la model card del autor. No se han publicado detalles sobre la composición exacta del corpus base, la tokenización específica para las lenguas locales ni resultados de benchmarks.
 
 ## Especificaciones técnicas
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kouman IA 1.5 (1B) | 1,24B | no disponible | bci, dyu, fr, en | Llama 3.2 Community | HuggingFace |
-| Llama 3.2 1B Instruct | 1,24B | 128K (según Meta) | multilingüe general, sin bci/dyu | Llama 3.2 Community | HuggingFace |
-| Qwen2.5 1.5B Instruct | 1,54B | 32K | multilingüe general, sin bci/dyu | Apache 2.0 | HuggingFace |
-| SmolLM2 1.7B Instruct | 1,7B | 8K | multilingüe general, sin bci/dyu | Apache 2.0 | HuggingFace |
+| Kouman IA 1.5 (1B) | 1,24B | no disponible | bci, dyu, fr, en | Llama 3.2 Community | Hugging Face |
+| Llama 3.2 1B Instruct | 1,24B | 128K (según Meta) | multilingüe general, sin bci/dyu | Llama 3.2 Community | Hugging Face |
+| Qwen2.5 1.5B Instruct | 1,54B | 32K | multilingüe general, sin bci/dyu | Apache 2.0 | Hugging Face |
+| SmolLM2 1.7B Instruct | 1,7B | 8K | multilingüe general, sin bci/dyu | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a modelos de tamaño similar; no se conocen modelos abiertos comparables específicamente entrenados para baoulé y dioula. Los datos de contexto de los modelos alternativos provienen de sus fichas públicas, no de la información proporcionada para Kouman IA.
 
@@ -88,7 +88,7 @@ La comparativa se limita a modelos de tamaño similar; no se conocen modelos abi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tree-AI-lab/kouman-IA-1.5-1B
+- Modelo en Hugging Face: https://huggingface.co/Tree-AI-lab/kouman-IA-1.5-1B
 - Organización Tree IA labs: https://huggingface.co/Tree-AI-lab
 - Modelo base: https://huggingface.co/Tree-AI-lab/llama-3.2-1b-baoule-instruct-v3
 - Dataset de traducción y cultura: https://huggingface.co/datasets/Tree-AI-lab/kouman-traduction-culture-sft

@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A16-e2e | 1,1B | no disponible | W8A16 (compressed-tensors) | no disponible | HuggingFace, 54 descargas |
-| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1B | 2048 | FP16/BF16 (original) | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32 768 | FP16, GPTQ, AWQ, GGUF | Apache 2.0 | HuggingFace, muy popular |
-| SmolLM2-1.7B-Instruct | 1,7B | 8192 | FP16, GGUF | Apache 2.0 | HuggingFace, muy popular |
+| nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A16-e2e | 1,1B | no disponible | W8A16 (compressed-tensors) | no disponible | Hugging Face, 54 descargas |
+| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1B | 2048 | FP16/BF16 (original) | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32 768 | FP16, GPTQ, AWQ, GGUF | Apache 2.0 | Hugging Face, muy popular |
+| SmolLM2-1.7B-Instruct | 1,7B | 8192 | FP16, GGUF | Apache 2.0 | Hugging Face, muy popular |
 
 La comparativa muestra que esta variante no aporta ventajas frente al TinyLlama original ni frente a alternativas modernas del mismo rango: su unico diferenciador es el formato cuantizado W8A16 para pruebas, mientras que Qwen2.5-1.5B y SmolLM2-1.7B ofrecen contextos mayores, mejor calidad y licencias claras.
 
@@ -87,9 +87,9 @@ La comparativa muestra que esta variante no aporta ventajas frente al TinyLlama 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A16-e2e
+- Modelo en Hugging Face: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A16-e2e
 - Modelo base: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Repositorio de TinyLlama: https://github.com/jzhang38/TinyLlama
 - Libreria compressed-tensors: https://github.com/neuralmagic/compressed-tensors
 - vLLM: https://github.com/vllm-project/vllm
-- Organizacion Neural Magic en HuggingFace: https://huggingface.co/neuralmagic
+- Organizacion Neural Magic en Hugging Face: https://huggingface.co/neuralmagic

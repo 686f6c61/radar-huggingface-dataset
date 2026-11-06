@@ -30,7 +30,7 @@ No se dispone en la informacion proporcionada de detalles sobre el numero de tok
 ## Capacidades
 
 - Generacion de embeddings de frases y parrafos para similitud semantica y recuperacion de informacion.
-- Extraccion de caracteristicas (`feature-extraction`), pipeline declarado en HuggingFace.
+- Extraccion de caracteristicas (`feature-extraction`), pipeline declarado en Hugging Face.
 - Soporte multilingue heredado del modelo base, orientado a comparar textos en distintos idiomas en un mismo espacio vectorial.
 - Deteccion de intenciones: en Dakera se usa para identificar peticiones de olvido y instrucciones permanentes en mensajes almacenados.
 - Ejecucion en CPU: el modelo cuantizado a int8 esta pensado para inferencia ligera sin GPU.
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DakeraAI/paraphrase-multilingual-MiniLM-L12-v2
+- Repositorio en Hugging Face: https://huggingface.co/DakeraAI/paraphrase-multilingual-MiniLM-L12-v2
 - Modelo original: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 - Conversion ONNX de origen: https://huggingface.co/Xenova/paraphrase-multilingual-MiniLM-L12-v2
 - Licencia en el repositorio: https://huggingface.co/DakeraAI/paraphrase-multilingual-MiniLM-L12-v2/blob/main/LICENSE

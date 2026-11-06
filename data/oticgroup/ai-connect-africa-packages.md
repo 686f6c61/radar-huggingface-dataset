@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como Oticgroup/ai-connect-africa-packages es un modelo de lenguaje publicado en HuggingFace por el usuario o organizacion Oticgroup. El recuento real de parametros, obtenido del indice de safetensors, es de 1.006.672.704 parametros, es decir, aproximadamente 1.000 millones (1B). El repositorio ocupa 2,8 GB e incluye pesos en formato GGUF, con los tags imatrix, conversational y endpoints_compatible, lo que indica que esta orientado a inferencia optimizada en CPU/GPU de gama baja y a su despliegue mediante endpoints compatibles.
+El modelo identificado como Oticgroup/ai-connect-africa-packages es un modelo de lenguaje publicado en Hugging Face por el usuario o organizacion Oticgroup. El recuento real de parametros, obtenido del indice de safetensors, es de 1.006.672.704 parametros, es decir, aproximadamente 1.000 millones (1B). El repositorio ocupa 2,8 GB e incluye pesos en formato GGUF, con los tags imatrix, conversational y endpoints_compatible, lo que indica que esta orientado a inferencia optimizada en CPU/GPU de gama baja y a su despliegue mediante endpoints compatibles.
 
 La relevancia de este tipo de modelos radica en su encaje en el segmento de ~1B parametros, donde el coste de inferencia es muy bajo y es posible ejecutarlos en hardware de consumo, portatiles o incluso dispositivos con recursos limitados. El tag conversational sugiere un ajuste orientado a dialogo, y el tag imatrix hace referencia al uso de matrices de importancia (importance matrix) durante el proceso de cuantizacion, una tecnica que reduce la perdida de calidad en cuantizaciones agresivas. El nombre del repositorio, ai-connect-africa-packages, apunta a un posible uso en el contexto de conectividad o despliegue en Africa, aunque no se proporciona documentacion que lo confirme.
 
@@ -77,7 +77,7 @@ No se dispone de informacion comparativa publicada para este modelo. La tabla si
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Oticgroup/ai-connect-africa-packages | ~1,0B | no disponible | no disponible | GGUF en HuggingFace |
+| Oticgroup/ai-connect-africa-packages | ~1,0B | no disponible | no disponible | GGUF en Hugging Face |
 | Alternativas tipicas del segmento ~1B | ~1,0-2,0B | 32k-128k segun modelo | variable (a menudo permisiva) | GGUF, safetensors, multiples runtimes |
 
 Dado que no se conocen ni la licencia ni el contexto del modelo evaluado, no es posible establecer una comparacion cuantitativa rigurosa con alternativas concretas.
@@ -96,6 +96,6 @@ Dado que no se conocen ni la licencia ni el contexto del modelo evaluado, no es 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Oticgroup/ai-connect-africa-packages
+- Hugging Face: https://huggingface.co/Oticgroup/ai-connect-africa-packages
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a alojamientos turisticos en Clermont-Ferrand y no guardan ninguna relacion con este repositorio.
 - No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados en la informacion proporcionada.

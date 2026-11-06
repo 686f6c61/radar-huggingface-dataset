@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zra-kpr-model es un adaptador LoRA de tipo text-to-image publicado por el usuario pratham2908 en HuggingFace. No se trata de un modelo de lenguaje ni de un modelo generativo completo, sino de un conjunto de pesos auxiliares (0,1 GB de tamano de repositorio, en formato safetensors) que se acopla a un modelo base de la familia FLUX para especializar la generacion de imagenes. La model card lo describe escuetamente como "Zara Kapoor repository", etiqueta los pesos con `flux`, `text-to-image`, `lora`, `diffusers` y `fal`, y no declara modelo base concreto (`base_model: undefined`).
+zra-kpr-model es un adaptador LoRA de tipo text-to-image publicado por el usuario pratham2908 en Hugging Face. No se trata de un modelo de lenguaje ni de un modelo generativo completo, sino de un conjunto de pesos auxiliares (0,1 GB de tamano de repositorio, en formato safetensors) que se acopla a un modelo base de la familia FLUX para especializar la generacion de imagenes. La model card lo describe escuetamente como "Zara Kapoor repository", etiqueta los pesos con `flux`, `text-to-image`, `lora`, `diffusers` y `fal`, y no declara modelo base concreto (`base_model: undefined`).
 
 El entrenamiento se realizo en la plataforma fal.ai, empleando su servicio `fal-ai/flux-lora-portrait-trainer`, lo que indica un flujo de tipo *fine-tuning* de retrato (portrait trainer) sobre un pequeno conjunto de imagenes de referencia. Este tipo de adaptadores se usa para fijar una identidad visual concreta (rostro, estilo o personaje) y reproducirla de forma consistente en nuevas generaciones controladas por prompt, sin necesidad de reentrenar el modelo base completo.
 
@@ -76,10 +76,10 @@ Las siguientes cifras son estimaciones generales del modelo base de la familia F
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| pratham2908/zra-kpr-model | LoRA de retrato sobre FLUX | no disponible (repo de 0,1 GB) | no disponible | no evaluado (0 descargas, 0 likes) | other (sin detalle) | HuggingFace, con `diffusers` |
+| pratham2908/zra-kpr-model | LoRA de retrato sobre FLUX | no disponible (repo de 0,1 GB) | no disponible | no evaluado (0 descargas, 0 likes) | other (sin detalle) | Hugging Face, con `diffusers` |
 | LoRAs de retrato sobre FLUX en fal.ai (catalogo general) | LoRA de retrato sobre FLUX | variable segun rango | depende del modelo base FLUX | no comparable directamente | variable segun autor | plataforma fal.ai |
-| LoRAs de identidad sobre SDXL | LoRA de retrato sobre SDXL | variable segun rango | nativo 1024x1024 | habitualmente evaluado por la comunidad | abiertas en la mayoria de casos (CreativeML / otras) | HuggingFace, Civitai |
-| LoRA sobre FLUX.1 [dev] base (sin especializar) | LoRA de estilo | variable segun rango | depende del modelo base | no aplica | FLUX.1 [dev] Non-Commercial | HuggingFace (black-forest-labs) |
+| LoRAs de identidad sobre SDXL | LoRA de retrato sobre SDXL | variable segun rango | nativo 1024x1024 | habitualmente evaluado por la comunidad | abiertas en la mayoria de casos (CreativeML / otras) | Hugging Face, Civitai |
+| LoRA sobre FLUX.1 [dev] base (sin especializar) | LoRA de estilo | variable segun rango | depende del modelo base | no aplica | FLUX.1 [dev] Non-Commercial | Hugging Face (black-forest-labs) |
 
 No se dispone de datos cuantitativos que permitan una comparacion de rendimiento fiable entre este adaptador y alternativas. La comparacion debe entenderse como cualitativa y basada unicamente en el tipo de artefacto.
 
@@ -100,12 +100,12 @@ No se dispone de datos cuantitativos que permitan una comparacion de rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pratham2908/zra-kpr-model
+- Modelo en Hugging Face: https://huggingface.co/pratham2908/zra-kpr-model
 - Archivos y pesos: https://huggingface.co/pratham2908/zra-kpr-model/tree/main
 - Servicio de entrenamiento utilizado: https://fal.ai/models/fal-ai/flux-lora-portrait-trainer
 - Fal.ai (plataforma): https://fal.ai/
 - Documentacion de `diffusers`: https://huggingface.co/docs/diffusers
-- HuggingFace (portal general): https://huggingface.co/
+- Hugging Face (portal general): https://huggingface.co/
 - Resultado de busqueda sin relacion directa: https://benchlm.ai/
 - Resultado de busqueda sin relacion directa: https://www.perplexity.ai/
 - Resultado de busqueda sin relacion directa: https://prathamai.school/

@@ -118,7 +118,7 @@ Frente al resto de la familia, este artefacto es el único que integra la cabece
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qinghuali/Occamy-1.0-oQ6e-mtp
+- Repositorio Hugging Face: https://huggingface.co/qinghuali/Occamy-1.0-oQ6e-mtp
 - Modelo base oficial: https://huggingface.co/Accio-Lab/occamy-1.0
 - Cabecera MTP oficial: https://huggingface.co/Accio-Lab/occamy-1.0-MTP
 - Referencia del paper citada en las etiquetas: https://arxiv.org/abs/2609.11977

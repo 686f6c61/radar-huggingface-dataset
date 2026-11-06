@@ -84,7 +84,7 @@ La comparacion con Gemma 3 original es la mas directa: comparten arquitectura y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/gemma-3-12b-it-vl-Deepseek-v3.1-Heretic-Uncensored-Thinking-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/gemma-3-12b-it-vl-Deepseek-v3.1-Heretic-Uncensored-Thinking-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/DavidAU/gemma-3-12b-it-vl-Deepseek-v3.1-Heretic-Uncensored-Thinking
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/gemma-3-12b-it-vl-Deepseek-v3.1-Heretic-Uncensored-Thinking-i1-GGUF
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#gemma-3-12b-it-vl-Deepseek-v3.1-Heretic-Uncensored-Thinking-GGUF

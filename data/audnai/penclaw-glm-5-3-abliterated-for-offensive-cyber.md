@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `penclaw-GLM-5.3-abliterated-for-offensive-cyber` es una variante del modelo GLM-5.3, desarrollada por el usuario `audnai` (vinculado al proyecto Penclaw de Audn.AI), que ha sido sometida a un proceso de "abliteración" para eliminar las capas de rechazo y moderación del modelo original. El objetivo declarado es permitir su uso en tareas de ciberofensa y pentesting sin restricciones de contenido. El acceso está restringido en HuggingFace y requiere aceptar condiciones adicionales.
+El modelo `penclaw-GLM-5.3-abliterated-for-offensive-cyber` es una variante del modelo GLM-5.3, desarrollada por el usuario `audnai` (vinculado al proyecto Penclaw de Audn.AI), que ha sido sometida a un proceso de "abliteración" para eliminar las capas de rechazo y moderación del modelo original. El objetivo declarado es permitir su uso en tareas de ciberofensa y pentesting sin restricciones de contenido. El acceso está restringido en Hugging Face y requiere aceptar condiciones adicionales.
 
 El modelo base GLM-5.3, según la información pública de openlm.ai, es un modelo de lenguaje de última generación orientado a codificación y tareas de largo horizonte, con una ventana de contexto de 1 millón de tokens y licencia MIT. Sin embargo, esta variante abliterada no publica especificaciones técnicas propias, por lo que la mayoría de los datos concretos no están disponibles. Su relevancia radica en el debate ético y legal que plantea el uso de modelos sin salvaguardas en dominios sensibles como la ciberseguridad ofensiva.
 
@@ -64,8 +64,8 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [HuggingFace - audnai/penclaw-GLM-5.3-abliterated-for-offensive-cyber](https://huggingface.co/audnai/penclaw-GLM-5.3-abliterated-for-offensive-cyber)
-- [README del modelo en HuggingFace](https://huggingface.co/audnai/penclaw-GLM-5.3-abliterated-for-offensive-cyber/blob/main/README.md)
+- [Hugging Face - audnai/penclaw-GLM-5.3-abliterated-for-offensive-cyber](https://huggingface.co/audnai/penclaw-GLM-5.3-abliterated-for-offensive-cyber)
+- [README del modelo en Hugging Face](https://huggingface.co/audnai/penclaw-GLM-5.3-abliterated-for-offensive-cyber/blob/main/README.md)
 - [openlm.ai - GLM-5.3](https://openlm.ai/glm-5.3/)
 - [GitHub - audn-ai/penclaw](https://github.com/audn-ai/penclaw)
 - [Audn.AI](https://audn.ai/)

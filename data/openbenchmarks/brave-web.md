@@ -75,7 +75,7 @@ No se dispone de información sobre otros stubs similares en el mismo benchmark,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/openbenchmarks/brave-web
+- Hugging Face: https://huggingface.co/openbenchmarks/brave-web
 - Documentación de la API de Brave Search: https://api-dashboard.search.brave.com/documentation/services/web-search
 - Página de estado del servicio de Brave Search: https://brave.com/search/api/
 - Benchmark OB-News-Websearch (dataset): https://huggingface.co/datasets/openbenchmarks/OB-News-Websearch

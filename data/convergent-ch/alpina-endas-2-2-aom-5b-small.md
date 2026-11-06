@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Alpina Endas 2.2-AoM-5B-Small | 5,29B agregados (169 miembros; 7 conjuntos de pesos) | 512 | Apache 2.0 | GGUF en HuggingFace, launcher Windows no oficial | Experimental; calidad declarada baja por el autor |
+| Alpina Endas 2.2-AoM-5B-Small | 5,29B agregados (169 miembros; 7 conjuntos de pesos) | 512 | Apache 2.0 | GGUF en Hugging Face, launcher Windows no oficial | Experimental; calidad declarada baja por el autor |
 | Alpina Big 2.0 | 299,4 M | 2048 en la fuente | No disponible en la información | Modelo base del Input-Divisor | Modelo denso único, sin agregación |
 | Alpina Small 2.0 | 29,7 M | No disponible | No disponible en la información | Modelo base de los especialistas | Modelo denso único, sin agregación |
-| Alpina Endas 2.2-AoM-10B-Medium | 10B agregados (release relacionada) | No disponible | No disponible en la información | HuggingFace | Variante mayor del mismo esquema AoM |
+| Alpina Endas 2.2-AoM-10B-Medium | 10B agregados (release relacionada) | No disponible | No disponible en la información | Hugging Face | Variante mayor del mismo esquema AoM |
 
 No se dispone de datos de benchmarks ni de modelos externos comparables documentados en la información proporcionada.
 
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de modelos externos comparables document
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-AoM-5B-Small
+- Modelo en Hugging Face: https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-AoM-5B-Small
 - Repositorio de pesos GGUF (169 miembros): https://huggingface.co/datasets/Convergent-ch/Alpina-Endas-2.2-AoM-5B-Small-GGUF
 - Descarga del ZIP completo de GGUF: https://huggingface.co/datasets/Convergent-ch/Alpina-Endas-2.2-AoM-5B-Small-GGUF/resolve/main/Alpina-Endas-2.2-AoM-5B-Small-169-members-GGUF.zip?download=true
 - Instalador Windows x64 del launcher AoM: https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-AoM-5B-Small/resolve/main/runtime/Ollama-AoM-Setup-Windows-x64.exe?download=true

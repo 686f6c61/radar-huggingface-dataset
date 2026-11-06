@@ -78,11 +78,11 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Parametros | Arquitectura | Idioma | CER isan | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| wannaphong/typhoon-isan-asr-realtime | 114 M | FastConformer-Transducer | th (isan) | 0,1065 | cc-by-4.0 | HuggingFace |
-| typhoon-whisper-medium-isan-asr | no disponible (variante Whisper medium) | Whisper encoder-decoder | th (isan) | 0,0885 | no disponible en la informacion proporcionada | HuggingFace |
+| wannaphong/typhoon-isan-asr-realtime | 114 M | FastConformer-Transducer | th (isan) | 0,1065 | cc-by-4.0 | Hugging Face |
+| typhoon-whisper-medium-isan-asr | no disponible (variante Whisper medium) | Whisper encoder-decoder | th (isan) | 0,0885 | no disponible en la informacion proporcionada | Hugging Face |
 | Gemini-2.5-pro | no disponible | no disponible | multilingue | 0,1020 | propietaria | API de pago |
-| scb10x/whisper-medium-slscu-nectec | no disponible | Whisper | th (isan) | no disponible | no disponible | HuggingFace |
-| SLSCU/thai-dialect_korat_model | no disponible | no disponible | th (isan) | no disponible | no disponible | HuggingFace |
+| scb10x/whisper-medium-slscu-nectec | no disponible | Whisper | th (isan) | no disponible | no disponible | Hugging Face |
+| SLSCU/thai-dialect_korat_model | no disponible | no disponible | th (isan) | no disponible | no disponible | Hugging Face |
 
 El principal diferenciador de este modelo frente a las alternativas Whisper es que su arquitectura Transducer permite decodificacion incremental, mientras que Whisper esta pensado para transcripcion offline de segmentos completos. Frente a Gemini-2.5-pro, la ventaja es el despliegue local, sin coste por uso y con un consumo de recursos muy inferior.
 
@@ -99,10 +99,10 @@ El principal diferenciador de este modelo frente a las alternativas Whisper es q
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/wannaphong/typhoon-isan-asr-realtime
+- Pagina del modelo en Hugging Face: https://huggingface.co/wannaphong/typhoon-isan-asr-realtime
 - Modelo base: https://huggingface.co/scb10x/typhoon-asr-realtime
 - Informe tecnico (arXiv): https://arxiv.org/abs/2601.13044
-- Pagina del paper en HuggingFace: https://huggingface.co/papers/2601.13044
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2601.13044
 - Codigo y ejemplos: https://github.com/scb-10x/typhoon-asr
 - Pagina del proyecto en OpenTyphoon: https://opentyphoon.ai/model/typhoon-asr-realtime
 - Blog de lanzamiento: https://opentyphoon.ai/blog/en/typhoon-asr-realtime-release

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JuliX es un modelo publicado en HuggingFace por el usuario RCox100900 bajo el identificador RCox100900/JuliX. En el momento de redactar esta ficha, la informacion disponible en el repositorio es extremadamente limitada: no se declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura. El unico dato objetivo verificable es el tamano del repositorio, que ronda los 0,8 GB, lo que sugiere un modelo de pesos relativamente pequeno, probablemente en el rango de los cientos de millones a unos pocos miles de millones de parametros segun el tipo de cuantizacion empleada en los ficheros.
+JuliX es un modelo publicado en Hugging Face por el usuario RCox100900 bajo el identificador RCox100900/JuliX. En el momento de redactar esta ficha, la informacion disponible en el repositorio es extremadamente limitada: no se declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura. El unico dato objetivo verificable es el tamano del repositorio, que ronda los 0,8 GB, lo que sugiere un modelo de pesos relativamente pequeno, probablemente en el rango de los cientos de millones a unos pocos miles de millones de parametros segun el tipo de cuantizacion empleada en los ficheros.
 
 El modelo acumula 0 descargas y 1 like desde su creacion (3 de junio de 2026) hasta su ultima actualizacion (17 de octubre de 2026). Esta ausencia de traccion, unida a la falta de documentacion tecnica (no hay model card descriptiva, ni paper asociado, ni resultados de evaluacion publicados), impide validar sus capacidades reales o su calidad.
 
@@ -40,7 +40,7 @@ En cuanto al entrenamiento, no se dispone de informacion sobre el volumen de tok
 
 Dado que no se dispone de informacion verificable sobre las capacidades, el rendimiento o la licencia del modelo, no es posible recomendar casos de uso concretos y realistas. Cualquier aplicacion practica requeriria, como minimo, los siguientes pasos previos de validacion por parte del usuario:
 
-- Inspeccion del repositorio de HuggingFace para determinar el formato de pesos y la arquitectura real.
+- Inspeccion del repositorio de Hugging Face para determinar el formato de pesos y la arquitectura real.
 - Prueba de inferencia local en un entorno aislado para verificar que el modelo carga y genera texto coherente.
 - Evaluacion cualitativa en tareas representativas (resumen, generacion, codigo) antes de considerar cualquier integracion.
 - Verificacion de la licencia aplicable, dado que no se declara ninguna en el repositorio, lo que impide asumir derechos de uso comercial.
@@ -79,5 +79,5 @@ No disponible. Al no conocerse la arquitectura, el numero de parametros ni la li
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RCox100900/JuliX
+- Repositorio en Hugging Face: https://huggingface.co/RCox100900/JuliX
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

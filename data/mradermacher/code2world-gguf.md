@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Code2World es un modelo de lenguaje de aproximadamente 8.190 millones de parametros desarrollado por GD-ML, distribuido originalmente en HuggingFace bajo licencia MIT. La version aqui descrita es una cuantizacion GGUF realizada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. El modelo esta etiquetado como conversacional y multimodal (incluye ficheros `mmproj` para un proyector visual), lo que sugiere capacidades de vision ademas de generacion de texto. Su nombre, "Code2World", indica un enfoque hacia la generacion de codigo y la traduccion entre representaciones de codigo y descripciones del mundo, aunque la model card original no detalla el pipeline ni los datos de entrenamiento.
+Code2World es un modelo de lenguaje de aproximadamente 8.190 millones de parametros desarrollado por GD-ML, distribuido originalmente en Hugging Face bajo licencia MIT. La version aqui descrita es una cuantizacion GGUF realizada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. El modelo esta etiquetado como conversacional y multimodal (incluye ficheros `mmproj` para un proyector visual), lo que sugiere capacidades de vision ademas de generacion de texto. Su nombre, "Code2World", indica un enfoque hacia la generacion de codigo y la traduccion entre representaciones de codigo y descripciones del mundo, aunque la model card original no detalla el pipeline ni los datos de entrenamiento.
 
 La relevancia actual de esta ficha radica en que ofrece una via practica para desplegar un modelo de ~8B en entornos locales con cuantizaciones desde Q2_K (3,4 GB) hasta f16 (16,5 GB), cubriendo desde GPUs de gama media hasta estaciones de trabajo. Al estar basado en GD-ML/Code2World y cuantizado por mradermacher, se beneficia de la infraestructura de este ultimo para formatos GGUF optimizados.
 
@@ -91,7 +91,7 @@ La comparativa se limita a parametros, contexto y licencia porque no hay benchma
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/mradermacher/Code2World-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/mradermacher/Code2World-GGUF
 - Modelo base: https://huggingface.co/GD-ML/Code2World
 - Pagina de descargas de mradermacher: https://hf.tst.eu/model#Code2World-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

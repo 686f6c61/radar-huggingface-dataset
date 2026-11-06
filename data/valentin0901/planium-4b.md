@@ -77,6 +77,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en tareas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/valentin0901/Planium-4B
+- Modelo en Hugging Face: https://huggingface.co/valentin0901/Planium-4B
 - Repositorio NeuroPlan en GitHub: https://github.com/valentin0901/NeuroPlan
 - README de NeuroPlan: https://github.com/valentin0901/NeuroPlan/blob/main/README.md

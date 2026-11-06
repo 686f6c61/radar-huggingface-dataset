@@ -92,6 +92,6 @@ No disponible. La información proporcionada no incluye otras políticas de la f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/duckyduck369/microduck-hd1910-velstand-Yanke01
+- Modelo en Hugging Face: https://huggingface.co/duckyduck369/microduck-hd1910-velstand-Yanke01
 - Vídeo de replay: https://huggingface.co/duckyduck369/microduck-hd1910-velstand-Yanke01/resolve/main/replay.mp4
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

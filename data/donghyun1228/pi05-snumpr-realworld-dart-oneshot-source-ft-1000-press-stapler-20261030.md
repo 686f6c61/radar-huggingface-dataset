@@ -2,7 +2,7 @@
 
 ## Resumen
 
-π0.5 SNUMPR real-world DART one-shot source es un fine-tune de robótica del modelo de visión-lenguaje-acción (VLA) π0.5, publicado por el usuario Donghyun1228 en HuggingFace. El modelo parte de la inicialización `snumpr-iclr27-v1/9999`, una VLA de SNUMPR con normalización original, y se ha adaptado mediante aprendizaje por imitación (IL) a una única demostración de la tarea `press_stapler` (pulsar una grapadora), con 1.000 actualizaciones y sin transformación de yaw (vista fuente original).
+π0.5 SNUMPR real-world DART one-shot source es un fine-tune de robótica del modelo de visión-lenguaje-acción (VLA) π0.5, publicado por el usuario Donghyun1228 en Hugging Face. El modelo parte de la inicialización `snumpr-iclr27-v1/9999`, una VLA de SNUMPR con normalización original, y se ha adaptado mediante aprendizaje por imitación (IL) a una única demostración de la tarea `press_stapler` (pulsar una grapadora), con 1.000 actualizaciones y sin transformación de yaw (vista fuente original).
 
 Se trata de uno de los dos fine-tunes one-shot que se fusionan en el modelo `pi05-snumpr-realworld-dart-oneshot-large-view-yaw30-alpha0p8-press-stapler-20261030`, también del mismo autor. El repositorio ocupa 12,4 GB e incluye los pesos en FP32 del paso 999, los assets de normalización y el registro de la ejecución de Weights & Biases. No se ha ejecutado ninguna evaluación sobre robot real, por lo que su rendimiento en despliegue no está verificado.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR real-world DART one-shot source (este modelo) | no disponible | no disponible | sin evaluación en robot | Apache 2.0 | HuggingFace, 0 descargas |
-| π0.5 SNUMPR real-world DART one-shot large-view yaw30 alpha0p8 (modelo fusionado del mismo autor) | no disponible | no disponible | sin datos publicados en la información disponible | Apache 2.0 | HuggingFace |
+| π0.5 SNUMPR real-world DART one-shot source (este modelo) | no disponible | no disponible | sin evaluación en robot | Apache 2.0 | Hugging Face, 0 descargas |
+| π0.5 SNUMPR real-world DART one-shot large-view yaw30 alpha0p8 (modelo fusionado del mismo autor) | no disponible | no disponible | sin datos publicados en la información disponible | Apache 2.0 | Hugging Face |
 | `snumpr-iclr27-v1/9999` (checkpoint de inicialización) | no disponible | no disponible | no disponible | no disponible | referenciado en la model card |
 
 No se dispone de datos de benchmarks ni de especificaciones de parámetros para establecer una comparación cuantitativa con alternativas de la misma categoría.
@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks ni de especificaciones de parámetros para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-source-ft-1000-press-stapler-20261030
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-source-ft-1000-press-stapler-20261030
 - Modelo fusionado del mismo autor: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-large-view-yaw30-alpha0p8-press-stapler-20261030
 - Código de adaptación: `Donghyun1228/vla_adaptation` (commit `248126e`), sin URL directa en la información disponible
 - Receta oficial: `snumprlab/dart` (commit `1b23c4f42f73168c78a20b353453145e74f64711`), sin URL directa en la información disponible

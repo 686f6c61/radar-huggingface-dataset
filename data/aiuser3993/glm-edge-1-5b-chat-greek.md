@@ -86,7 +86,7 @@ No se dispone de informacion suficiente sobre otras alternativas especificas par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aiuser3993/GLM-Edge-1.5B-Chat-Greek
+- Modelo en Hugging Face: https://huggingface.co/aiuser3993/GLM-Edge-1.5B-Chat-Greek
 - Modelo base (hereticness): https://huggingface.co/hereticness/heretic_glm-edge-1.5b-chat
 - Modelo base original (zai-org): https://huggingface.co/zai-org/glm-edge-1.5b-chat
 - Repositorio GitHub de GLM-Edge: https://github.com/zai-org/GLM-Edge

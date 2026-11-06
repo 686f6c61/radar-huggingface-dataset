@@ -92,7 +92,7 @@ La comparacion cuantitativa no es posible con los datos disponibles: ni el conte
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/bambocher/Qwen3.5-2B-oQ5e-mtp
+- Hugging Face del modelo: https://huggingface.co/bambocher/Qwen3.5-2B-oQ5e-mtp
 - Variante de 8 bits del mismo autor: https://huggingface.co/bambocher/Qwen3.5-2B-oQ8e-mtp
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Qwen3.5-2B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_5_2b

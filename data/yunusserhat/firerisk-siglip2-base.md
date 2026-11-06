@@ -78,8 +78,8 @@ No se dispone de resultados comparables publicados en la información proporcion
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento comparable | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yunusserhat/firerisk-siglip2-base | 92.891.143 | 224 x 224 px, 7 clases | Accuracy validación 63,05 %, macro F1 58,94 % (no independiente) | GPL v3 (ajuste y clasificador), Apache 2.0 el backbone original | HuggingFace y FireRisk Bench |
-| Backbone `timm/vit_base_patch16_siglip_224.v2_webli` sin ajustar | No disponible en la información proporcionada | 224 x 224 px | No disponible | Apache 2.0 | timm / HuggingFace |
+| yunusserhat/firerisk-siglip2-base | 92.891.143 | 224 x 224 px, 7 clases | Accuracy validación 63,05 %, macro F1 58,94 % (no independiente) | GPL v3 (ajuste y clasificador), Apache 2.0 el backbone original | Hugging Face y FireRisk Bench |
+| Backbone `timm/vit_base_patch16_siglip_224.v2_webli` sin ajustar | No disponible en la información proporcionada | 224 x 224 px | No disponible | Apache 2.0 | timm / Hugging Face |
 | Otras recetas de adaptación sobre FireRisk | No disponible | No disponible | El autor advierte que no forman una ablación causal controlada | No disponible | No disponible |
 
 No se identifican en la información disponible alternativas de la misma categoría con métricas publicadas sobre esta partición concreta.
@@ -100,7 +100,7 @@ No se identifican en la información disponible alternativas de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yunusserhat/firerisk-siglip2-base
+- Modelo en Hugging Face: https://huggingface.co/yunusserhat/firerisk-siglip2-base
 - Repositorio FireRisk Bench: https://github.com/yunusserhat/firerisk
 - Dataset de entrenamiento: https://huggingface.co/datasets/blanchon/FireRisk
 - Backbone base: https://huggingface.co/timm/vit_base_patch16_siglip_224.v2_webli

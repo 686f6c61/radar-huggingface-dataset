@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ProAi (identificador RuiGamer020/ProAi) es un repositorio de pesos publicado en HuggingFace por el usuario RuiGamer020. En el momento de la consulta, el repositorio no incluye model card con contenido tecnico: la unica informacion disponible es una declaracion de licencia apache-2.0 en el campo de metadatos y en el README. No se especifican arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
+ProAi (identificador RuiGamer020/ProAi) es un repositorio de pesos publicado en Hugging Face por el usuario RuiGamer020. En el momento de la consulta, el repositorio no incluye model card con contenido tecnico: la unica informacion disponible es una declaracion de licencia apache-2.0 en el campo de metadatos y en el README. No se especifican arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
 
 El repositorio registra 0 descargas y 0 likes, carece de pipeline declarado y no presenta ficheros de pesos documentados publicamente en la informacion proporcionada. La fecha de creacion y de ultima actualizacion figura como 2026-09-18T11:23:34.000Z, identica en ambos campos, lo que indica que no ha habido actualizaciones posteriores a la creacion.
 
@@ -89,7 +89,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RuiGamer020/ProAi
+- Repositorio en Hugging Face: https://huggingface.co/RuiGamer020/ProAi
 - Paper: no disponible.
 - Blog o documentacion tecnica: no disponible.
 - Repositorio de codigo: no disponible.

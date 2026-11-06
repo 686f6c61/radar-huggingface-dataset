@@ -20,7 +20,7 @@ La relevancia de esta ficha es limitada pero concreta: sirve como referencia par
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | ONNX (etiqueta del repositorio) y código C generado para placa; los pesos originales en otros formatos no se detallan |
-| Tamaño del repositorio | 0,0 GB según los metadatos de HuggingFace |
+| Tamaño del repositorio | 0,0 GB según los metadatos de Hugging Face |
 | Autor | asana17 |
 | Descargas / likes | 0 / 0 |
 
@@ -80,7 +80,7 @@ No disponible. Este repositorio no es una familia de modelos con parámetros y c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/asana17/ai_can_anomaly_detection_runs
+- Repositorio en Hugging Face: https://huggingface.co/asana17/ai_can_anomaly_detection_runs
 - Proyecto en GitHub: https://github.com/asana17/ai_can_anomaly_detection
 - Documentación del registro de ejecuciones: https://github.com/asana17/ai_can_anomaly_detection/blob/main/evaluate/docs/run_record.md
 - Documentación de exportación y cuantización: https://github.com/asana17/ai_can_anomaly_detection/blob/main/quantize/docs/export.md

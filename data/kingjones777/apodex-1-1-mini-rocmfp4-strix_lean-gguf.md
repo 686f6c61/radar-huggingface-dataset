@@ -23,7 +23,7 @@ La cuantización STRIX_LEAN es la versión más compacta de la serie 4-bit del a
 
 El modelo base apodex/Apodex-1.1-mini es un MoE híbrido de 40 capas que alterna atención lineal con atención completa cada cuarta capa. Tiene 256 expertos enrutados de los que se activan 8 por token, más un experto compartido. La cuantización STRIK_LEAN convierte el cuerpo del modelo a ROCm_4 con la receta de calidad K/V de Strix Halo, mantiene la tabla de embeddings en Q5_K y protege la cabeza de salida (`output.weight`) en Q6_K. El archivo contiene 733 tensores, con histograma: Q4_0_ROCMFP4_FAST x380, F32 x301, Q4_0_ROCMFP4 x50, Q6_K x1, Q5_K x1.
 
-El proceso de conversión se realizó con el convertidor del fork ROCmFPX de llama.cpp, con salida BF16 y sin MTP (multi-token prediction), porque el checkpoint no permite fusionar los tensores de MTP. El autor verificó todos los shards del modelo base (15 archivos safetensors, 71,9 GB) contra el manifest de HuggingFace antes de cuantizar. El archivo resultante pesa 17,46 GiB con un bpw de 4,32.
+El proceso de conversión se realizó con el convertidor del fork ROCmFPX de llama.cpp, con salida BF16 y sin MTP (multi-token prediction), porque el checkpoint no permite fusionar los tensores de MTP. El autor verificó todos los shards del modelo base (15 archivos safetensors, 71,9 GB) contra el manifest de Hugging Face antes de cuantizar. El archivo resultante pesa 17,46 GiB con un bpw de 4,32.
 
 ## Capacidades
 
@@ -92,7 +92,7 @@ En cuanto al modelo base (apodex/Apodex-1.1-mini, 35B), la documentación del fa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kingjones777/Apodex-1.1-mini-ROCmFP4-STRIX_LEAN-GGUF
+- Modelo en Hugging Face: https://huggingface.co/kingjones777/Apodex-1.1-mini-ROCmFP4-STRIX_LEAN-GGUF
 - Variante COHERENT: https://huggingface.co/kingjones777/Apodex-1.1-mini-ROCmFP4-COHERENT-GGUF
 - Modelo base: https://huggingface.co/Apodex/Apodex-1.1-mini
 - Runtime ROCmFPX (fork de llama.cpp): https://github.com/charlie12345/ROCmFPX

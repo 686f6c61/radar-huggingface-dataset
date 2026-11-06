@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2-VL-450M es un modelo de visión y lenguaje (VLM) desarrollado originalmente por Liquid AI, diseñado para ofrecer inferencia multimodal de baja latencia en dispositivos con recursos limitados. La versión que nos ocupa, `vsuhas9/LFM2-VL-450M-r32-a8`, es un fine-tuning de la base LFM2-VL-450M realizado mediante Supervised Fine-Tuning (SFT) con la librería TRL de HuggingFace. El sufijo `r32-a8` sugiere que el ajuste se ha realizado con LoRA (rank 32, alpha 8), una técnica de adaptación de bajo rango.
+LFM2-VL-450M es un modelo de visión y lenguaje (VLM) desarrollado originalmente por Liquid AI, diseñado para ofrecer inferencia multimodal de baja latencia en dispositivos con recursos limitados. La versión que nos ocupa, `vsuhas9/LFM2-VL-450M-r32-a8`, es un fine-tuning de la base LFM2-VL-450M realizado mediante Supervised Fine-Tuning (SFT) con la librería TRL de Hugging Face. El sufijo `r32-a8` sugiere que el ajuste se ha realizado con LoRA (rank 32, alpha 8), una técnica de adaptación de bajo rango.
 
 Este modelo resuelve el problema de ejecutar capacidades de comprensión de imágenes y texto en entornos edge, donde la memoria y el cómputo son escasos. Su relevancia actual radica en la tendencia hacia la IA privada y local, donde los modelos pequeños y eficientes son fundamentales. Con aproximadamente 450 millones de parámetros, se posiciona como una opción para aplicaciones que requieren procesamiento de imágenes sin depender de infraestructura en la nube.
 
@@ -23,7 +23,7 @@ Este modelo resuelve el problema de ejecutar capacidades de comprensión de imá
 
 La arquitectura base corresponde a la familia LFM2-VL de Liquid AI, que emplea una arquitectura Transformer multimodal diseñada para eficiencia en dispositivos edge. El modelo combina un codificador visual con un decodificador de lenguaje, optimizado para baja latencia y uso reducido de memoria. Aunque los detalles arquitectónicos completos no están publicados en la model card, Liquid AI ha documentado que sus modelos LFM2-VL utilizan técnicas de atención eficiente y están diseñados específicamente para despliegue en dispositivos con restricciones de cómputo.
 
-El proceso de entrenamiento de esta versión concreta se ha realizado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de HuggingFace, con la técnica LoRA (Low-Rank Adaptation) con rango 32 y alpha 8. Esto indica que el ajuste se ha realizado de forma eficiente, modificando una fracción mínima de los pesos originales. El dataset de entrenamiento, los hiperparámetros exactos y el régimen de entrenamiento no están documentados en la información disponible.
+El proceso de entrenamiento de esta versión concreta se ha realizado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de Hugging Face, con la técnica LoRA (Low-Rank Adaptation) con rango 32 y alpha 8. Esto indica que el ajuste se ha realizado de forma eficiente, modificando una fracción mínima de los pesos originales. El dataset de entrenamiento, los hiperparámetros exactos y el régimen de entrenamiento no están documentados en la información disponible.
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: con 450M de parámetros, el modelo puede ejecutarse en configuraciones con menos de 2 GB de VRAM en FP16, y potencialmente menos de 1 GB con cuantización.
 - GPU recomendadas: cualquier GPU consumer moderna con al menos 4 GB de VRAM (GTX 1650, RTX 3050, etc.) es suficiente para inferencia.
 - Compatibilidad con consumer GPU: sí, el modelo cabe en GPUs de gama de entrada e incluso en CPU con optimizaciones.
-- Opciones de despliegue: compatible con HuggingFace Transformers, vLLM, TGI, llama.cpp (si se convierte a GGUF) y Ollama.
+- Opciones de despliegue: compatible con Hugging Face Transformers, vLLM, TGI, llama.cpp (si se convierte a GGUF) y Ollama.
 - Latencia: no disponible en la información proporcionada, pero la familia LFM2-VL está diseñada para baja latencia en edge.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de información sobre alternativas de otros fabricantes con especi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vsuhas9/LFM2-VL-450M-r32-a8
+- Modelo en Hugging Face: https://huggingface.co/vsuhas9/LFM2-VL-450M-r32-a8
 - Modelo base LFM2-VL-450M: https://huggingface.co/LiquidAI/LFM2-VL-450M
 - Documentación oficial LFM2-VL-450M: https://docs.liquid.ai/lfm/models/lfm2-vl-450m
 - Blog de Liquid AI sobre LFM2-VL: https://www.liquid.ai/blog/lfm2-vl-efficient-vision-language-models

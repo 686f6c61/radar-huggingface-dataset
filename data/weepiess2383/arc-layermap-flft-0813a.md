@@ -65,6 +65,6 @@ No disponible. No se han encontrado datos comparativos con otros VLA (por ejempl
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/weepiess2383/arc-layermap-flft-0813a)
+- [Repositorio Hugging Face](https://huggingface.co/weepiess2383/arc-layermap-flft-0813a)
 - [ArcFlare (plataforma de modelos)](https://arcflare.net/) - enlace genérico, no específico del modelo
 - [LM Market Cap - Model Release Tracker](https://lmmarketcap.com/tools/model-release-tracker) - enlace genérico, no específico del modelo

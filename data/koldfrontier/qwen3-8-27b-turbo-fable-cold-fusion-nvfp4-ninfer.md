@@ -89,7 +89,7 @@ Estas cifras provienen de ejecuciones únicas sobre un puñado de prompts, no de
 
 - GPU obligatoria: NVIDIA GeForce RTX 5090 (32 GB, arquitectura `sm_120a`). No se documenta soporte para otras GPU.
 - CUDA Toolkit 13.1 o superior; sistema de 64 bits Linux (WSL2 con Ubuntu 24.04 funciona).
-- Runtime: NInfer en la revisión `9e163eee` (2026-09-18) o posterior, compilado desde fuente. No hay soporte para vLLM, llama.cpp, Ollama ni TGI, y la ficha de HuggingFace marca `inference: false`.
+- Runtime: NInfer en la revisión `9e163eee` (2026-09-18) o posterior, compilado desde fuente. No hay soporte para vLLM, llama.cpp, Ollama ni TGI, y la ficha de Hugging Face marca `inference: false`.
 - Consumo de memoria sin visión, con `--max-context 262144 --kv-capacity auto --kv-dtype int8`: 19,7 GiB de pesos, 9,30 GiB de runtime y 1,25 GiB libres; nvidia-smi reporta 30.636 MiB usados de 32.607.
 - Consumo con visión: contexto máximo 151.552 tokens, KV cache en int8, concurrencia fijada a 1.
 - Throughput medido: 206 tok/s en código greedy con thinking desactivado (aceptación MTP del 85 %) y 124 tok/s en prosa (aceptación del 37 %).
@@ -125,7 +125,7 @@ La única comparación cuantitativa publicada es la de perplejidad y throughput 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/koldfrontier/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-NVFP4-NInfer
+- Modelo en Hugging Face: https://huggingface.co/koldfrontier/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-NVFP4-NInfer
 - Modelo base (tune de DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Cuantización NVFP4 de origen: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4
 - Artefacto oficial de referencia: https://huggingface.co/neroued/Qwen3.8-27B-nvfp4-NInfer

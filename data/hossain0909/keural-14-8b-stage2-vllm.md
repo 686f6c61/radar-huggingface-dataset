@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Keural 14.8B (Stage 2) es un modelo lingüístico bilingüe coreano-inglés de tipo Mixture-of-Experts (MoE) entrenado desde cero por el desarrollador independiente MKD Hossain (usuario hossain0909 en HuggingFace). El repositorio contiene el checkpoint de annealing de la etapa 2, correspondiente a 120.000 pasos de entrenamiento acumulados y aproximadamente 48 mil millones de tokens procesados (~43B en preentrenamiento más ~5,16B de datos limpios en annealing). El modelo está diseñado para resolver la falta de modelos MoE abiertos y eficientes centrados en coreano, un idioma con menos representación en los grandes modelos generalistas.
+Keural 14.8B (Stage 2) es un modelo lingüístico bilingüe coreano-inglés de tipo Mixture-of-Experts (MoE) entrenado desde cero por el desarrollador independiente MKD Hossain (usuario hossain0909 en Hugging Face). El repositorio contiene el checkpoint de annealing de la etapa 2, correspondiente a 120.000 pasos de entrenamiento acumulados y aproximadamente 48 mil millones de tokens procesados (~43B en preentrenamiento más ~5,16B de datos limpios en annealing). El modelo está diseñado para resolver la falta de modelos MoE abiertos y eficientes centrados en coreano, un idioma con menos representación en los grandes modelos generalistas.
 
 Su relevancia radica en ser un proyecto de preentrenamiento desde cero documentado públicamente, con arquitectura Mixtral compatible con vLLM y Transformers, y una licencia Apache 2.0 que permite uso comercial sin restricciones. Con unos 14,83B de parámetros totales y solo ~2,9B activos por token, ofrece un coste de inferencia bajo para su clase. Es importante subrayar que se trata de un modelo base de preentrenamiento: completa texto, pero no sigue instrucciones ni conversa; el autor planea publicar etapas posteriores de SFT y RLHF/DPO.
 
@@ -82,7 +82,7 @@ Keural se distingue por su licencia totalmente permisiva y su enfoque específic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hossain0909/keural-14.8b-stage2-vllm
+- Modelo en Hugging Face: https://huggingface.co/hossain0909/keural-14.8b-stage2-vllm
 - Repositorio base referenciado: https://huggingface.co/mkd-hossain/keural-14.8b-stage2-vllm
 - Paper: no disponible
 - Blog o anuncio: no disponible

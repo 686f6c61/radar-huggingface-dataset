@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "jiaeyan423/qwen3-1.7b-base-gsm8k-opd",
+  "slug": "jiaeyan423-qwen3-1-7b-base-gsm8k-opd",
+  "author": "jiaeyan423",
+  "url": "https://huggingface.co/jiaeyan423/qwen3-1.7b-base-gsm8k-opd",
+  "created_at": "2026-11-06T08:05:50.000Z",
+  "updated_at": "2026-11-06T08:06:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "trl",
+    "lora",
+    "gsm8k",
+    "math",
+    "post-training",
+    "conversational",
+    "en",
+    "dataset:openai/gsm8k",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:adapter:Qwen/Qwen3-1.7B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608258,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "GSM8K",
+      "metric": "accuracy (greedy",
+      "value": 80.1
+    }
+  ],
+  "sources": []
+}

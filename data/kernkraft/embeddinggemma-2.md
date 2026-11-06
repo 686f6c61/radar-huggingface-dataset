@@ -86,8 +86,8 @@ Resultados con truncamiento vectorial (MRL):
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EmbeddingGemma 2 | 740M | 8.192 tokens | Texto, imagen, video, audio | Apache 2.0 | HuggingFace (kernkraft/embeddinggemma-2) |
-| EmbeddingGemma 1 | No disponible | No disponible | Texto | Apache 2.0 | HuggingFace (google/embeddinggemma-2) |
+| EmbeddingGemma 2 | 740M | 8.192 tokens | Texto, imagen, video, audio | Apache 2.0 | Hugging Face (kernkraft/embeddinggemma-2) |
+| EmbeddingGemma 1 | No disponible | No disponible | Texto | Apache 2.0 | Hugging Face (google/embeddinggemma-2) |
 | Otros modelos de embeddings multimodales | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La informacion proporcionada solo permite comparar con EmbeddingGemma 1, cuyo rendimiento en MTEB multilingual v2 (61,15) y MTEB code v1 (68,76) es inferior al de EmbeddingGemma 2 (61,36 y 78,68 respectivamente). No se dispone de datos de otros modelos comparables de la misma categoria en la informacion disponible.
@@ -100,12 +100,12 @@ La informacion proporcionada solo permite comparar con EmbeddingGemma 1, cuyo re
 - Limitacion de contexto: la ventana de 8.192 tokens limita la cantidad de audio o video que puede procesarse por documento; para contenidos mas largos sera necesario dividirlos en fragmentos.
 - Limitacion de idioma: aunque soporta mas de 100 idiomas, el rendimiento puede variar entre ellos y no se han publicado resultados desagregados por idioma.
 - Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, pero la model card enlaza a la licencia de Gemma 4, lo que conviene verificar antes de un despliegue comercial.
-- Caveat para produccion: el modelo tiene solo 24 descargas y 0 likes en HuggingFace en el momento de la consulta, y el repositorio pertenece a un usuario (kernkraft) distinto del autor original (Google DeepMind), por lo que se recomienda verificar la procedencia de los pesos antes de usarlos en entornos productivos.
+- Caveat para produccion: el modelo tiene solo 24 descargas y 0 likes en Hugging Face en el momento de la consulta, y el repositorio pertenece a un usuario (kernkraft) distinto del autor original (Google DeepMind), por lo que se recomienda verificar la procedencia de los pesos antes de usarlos en entornos productivos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kernkraft/embeddinggemma-2
-- HuggingFace (modelo original de Google): https://huggingface.co/google/embeddinggemma-2
+- Hugging Face: https://huggingface.co/kernkraft/embeddinggemma-2
+- Hugging Face (modelo original de Google): https://huggingface.co/google/embeddinggemma-2
 - GitHub: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2
 - Documentacion: https://ai.google.dev/gemma/docs/embeddinggemma

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Moroccan-darija-ocr es un modelo de reconocimiento óptico de caracteres (OCR) para líneas de texto impresas en árabe, publicado por el usuario sailu4 en HuggingFace y desarrollado en el repositorio complementario `BADR-JOULAlI/moroccan-darija-ocr`. Se trata de un reconocedor de líneas aisladas con arquitectura CRNN (CNN en escala de grises seguida de una BiLSTM de dos capas y una cabeza CTC), con 1.940.797 parámetros y 92 clases de caracteres más el token en blanco de CTC. El checkpoint `best.pt` incluye pesos, vocabulario, estado del optimizador, del scheduler y del AMP scaler, además de la configuración de entrenamiento.
+Moroccan-darija-ocr es un modelo de reconocimiento óptico de caracteres (OCR) para líneas de texto impresas en árabe, publicado por el usuario sailu4 en Hugging Face y desarrollado en el repositorio complementario `BADR-JOULAlI/moroccan-darija-ocr`. Se trata de un reconocedor de líneas aisladas con arquitectura CRNN (CNN en escala de grises seguida de una BiLSTM de dos capas y una cabeza CTC), con 1.940.797 parámetros y 92 clases de caracteres más el token en blanco de CTC. El checkpoint `best.pt` incluye pesos, vocabulario, estado del optimizador, del scheduler y del AMP scaler, además de la configuración de entrenamiento.
 
 El modelo se entrenó sobre imágenes de líneas de texto árabe impreso procedentes del Boletín Oficial marroquí (corpus publicado en Zenodo con DOI 10.5281/zenodo.21702529, licencia CC BY 4.0). A pesar del nombre del repositorio, el autor indica explícitamente que el modelo **no se entrenó con dariya** y que constituye una línea base en árabe para una adaptación posterior al dariya marroquí. Cualquier uso del checkpoint como referencia de rendimiento en dariya sería incorrecto.
 
@@ -84,9 +84,9 @@ No se dispone de datos de benchmarks ni de comparaciones directas con otros mode
 
 | Modelo | Tipo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| moroccan-darija-ocr | CRNN + CTC para líneas árabes | 1,94 M | línea de 64x1600 px | no disponible | HuggingFace + GitHub |
+| moroccan-darija-ocr | CRNN + CTC para líneas árabes | 1,94 M | línea de 64x1600 px | no disponible | Hugging Face + GitHub |
 | Tesseract (ara) | OCR clásico con LSTM | no disponible | página completa | Apache 2.0 | código abierto |
-| TrOCR | Transformer encoder-decoder | no disponible | línea de imagen | MIT (variantes) | HuggingFace |
+| TrOCR | Transformer encoder-decoder | no disponible | línea de imagen | MIT (variantes) | Hugging Face |
 
 La comparación cuantitativa de rendimiento entre estos sistemas no está disponible en la información proporcionada.
 
@@ -105,7 +105,7 @@ La comparación cuantitativa de rendimiento entre estos sistemas no está dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sailu4/moroccan-darija-ocr
+- Modelo en Hugging Face: https://huggingface.co/sailu4/moroccan-darija-ocr
 - Repositorio GitHub del proyecto: https://github.com/BADR-JOULAlI/moroccan-darija-ocr
 - Corpus del Boletín Oficial marroquí (Zenodo): https://doi.org/10.5281/zenodo.21702529
 - Notebook de galería de test: `notebooks/03_test_images_transcriptions.ipynb` (en el repositorio GitHub)

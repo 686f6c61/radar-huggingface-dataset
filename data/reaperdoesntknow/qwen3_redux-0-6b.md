@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3_Redux-0.6B es un modelo de lenguaje publicado en HuggingFace por el usuario reaperdoesntknow bajo el identificador `reaperdoesntknow/Qwen3_Redux-0.6B`. Por el nombre y el tag `qwen3_redux` cabe inferir que se trata de una variante o derivado de la familia Qwen3 de Alibaba, en su version de aproximadamente 0,6 mil millones de parametros (661.416.463 parametros reales segun los pesos en safetensors). El repositorio ocupa 5,0 GB y utiliza la libreria `transformers` con pesos en formato safetensors.
+Qwen3_Redux-0.6B es un modelo de lenguaje publicado en Hugging Face por el usuario reaperdoesntknow bajo el identificador `reaperdoesntknow/Qwen3_Redux-0.6B`. Por el nombre y el tag `qwen3_redux` cabe inferir que se trata de una variante o derivado de la familia Qwen3 de Alibaba, en su version de aproximadamente 0,6 mil millones de parametros (661.416.463 parametros reales segun los pesos en safetensors). El repositorio ocupa 5,0 GB y utiliza la libreria `transformers` con pesos en formato safetensors.
 
-La model card esta practicamente vacia: es la plantilla autogenerada por HuggingFace y no incluye informacion sobre autor real, datos de entrenamiento, licencia, idiomas, arquitectura concreta ni procedimiento de ajuste. Tampoco se declara pipeline, licencia ni idiomas soportados en los metadatos del repositorio. Esto limita enormemente cualquier evaluacion rigurosa: la mayor parte de los apartados de esta ficha deben marcarse como "no disponible".
+La model card esta practicamente vacia: es la plantilla autogenerada por Hugging Face y no incluye informacion sobre autor real, datos de entrenamiento, licencia, idiomas, arquitectura concreta ni procedimiento de ajuste. Tampoco se declara pipeline, licencia ni idiomas soportados en los metadatos del repositorio. Esto limita enormemente cualquier evaluacion rigurosa: la mayor parte de los apartados de esta ficha deben marcarse como "no disponible".
 
 Su relevancia actual es limitada y fundamentalmente especulativa: se trata de un modelo pequeno (sub-1000 M de parametros) con muy pocas descargas (169) y cero likes en el momento de la consulta, publicado en octubre de 2026 y actualizado en noviembre del mismo ano. Resulta util unicamente como objeto de estudio de un posible fine-tuning comunitario sobre una base Qwen3 pequena, pero no como modelo listo para produccion sin una evaluacion propia previa.
 
@@ -29,7 +29,7 @@ Su relevancia actual es limitada y fundamentalmente especulativa: se trata de un
 
 No se dispone de informacion verificable sobre la arquitectura interna. El nombre del modelo y el tag `qwen3_redux` sugieren una base Qwen3, que en su variante de ~0,6B es un transformer decoder-only con atencion por grupos (GQA) y posiblemente atencion lineal o hibrida segun la generacion, pero esto no puede confirmarse con los datos del repositorio. El recuento real de parametros (661.416.463) es coherente con un modelo de la clase 0,6B, aunque ligeramente superior a los 0,6B nominales, lo que podria deberse a embeddings o cabezas adicionales.
 
-No hay informacion sobre el dataset de entrenamiento, el numero de tokens, la composicion de los datos, ni sobre si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado. La model card es la plantilla por defecto de HuggingFace y todos los campos de entrenamiento aparecen como "[More Information Needed]". El unico enlace tecnico presente en los metadatos es el paper arXiv:1910.09700, que corresponde al calculo de impacto ambiental de Lacoste et al. y no describe el modelo en si. No se puede confirmar ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, thinking mode, etc.).
+No hay informacion sobre el dataset de entrenamiento, el numero de tokens, la composicion de los datos, ni sobre si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado. La model card es la plantilla por defecto de Hugging Face y todos los campos de entrenamiento aparecen como "[More Information Needed]". El unico enlace tecnico presente en los metadatos es el paper arXiv:1910.09700, que corresponde al calculo de impacto ambiental de Lacoste et al. y no describe el modelo en si. No se puede confirmar ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, thinking mode, etc.).
 
 ## Capacidades
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3_Redux-0.6B | 661 M | no disponible | no disponible | HuggingFace, 169 descargas | Model card vacia, sin benchmarks |
-| Qwen3-0.6B (base oficial) | ~600 M | no disponible en esta ficha | Apache 2.0 (segun familia Qwen3) | HuggingFace oficial | Modelo base documentado por Alibaba |
-| Qwen2.5-0.5B | ~500 M | no disponible en esta ficha | Apache 2.0 (segun familia Qwen2.5) | HuggingFace oficial | Alternativa pequena ampliamente usada |
-| SmolLM2-360M / 1.7B | 360 M / 1,7 B | no disponible en esta ficha | Apache 2.0 | HuggingFace (HuggingFaceTB) | Familia pequena documentada |
+| Qwen3_Redux-0.6B | 661 M | no disponible | no disponible | Hugging Face, 169 descargas | Model card vacia, sin benchmarks |
+| Qwen3-0.6B (base oficial) | ~600 M | no disponible en esta ficha | Apache 2.0 (segun familia Qwen3) | Hugging Face oficial | Modelo base documentado por Alibaba |
+| Qwen2.5-0.5B | ~500 M | no disponible en esta ficha | Apache 2.0 (segun familia Qwen2.5) | Hugging Face oficial | Alternativa pequena ampliamente usada |
+| SmolLM2-360M / 1.7B | 360 M / 1,7 B | no disponible en esta ficha | Apache 2.0 | Hugging Face (HuggingFaceTB) | Familia pequena documentada |
 
 La comparativa con Qwen3-0.6B y Qwen2.5-0.5B es la mas relevante por tamano y probable procedencia, pero los datos de contexto y rendimiento de este modelo concreto no estan publicados, por lo que no se puede establecer una comparacion cuantitativa.
 
@@ -95,7 +95,7 @@ La comparativa con Qwen3-0.6B y Qwen2.5-0.5B es la mas relevante por tamano y pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/reaperdoesntknow/Qwen3_Redux-0.6B
+- Hugging Face: https://huggingface.co/reaperdoesntknow/Qwen3_Redux-0.6B
 - Paper citado en los tags (impacto ambiental, no describe el modelo): https://arxiv.org/abs/1910.09700
 - Repositorio de la familia Qwen3 (referencia, no confirmado como base): https://huggingface.co/Qwen
 - No se han encontrado papers, blogs, repos ni demos adicionales en la informacion disponible.

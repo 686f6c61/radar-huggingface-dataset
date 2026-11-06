@@ -85,6 +85,6 @@ No se han identificado otros modelos de IA comparables en esta categoría; la co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kovach-Enterprises/hyperneat-r8-compressor
+- Hugging Face: https://huggingface.co/Kovach-Enterprises/hyperneat-r8-compressor
 - Wikipedia HyperNEAT: https://en.wikipedia.org/wiki/HyperNEAT
 - GitHub HyperNEAT original: https://github.com/MisterTea/HyperNEAT

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-Taxi-v3 es un agente de aprendizaje por refuerzo (Q-Learning tabular) entrenado para resolver el entorno Taxi-v3 de Gymnasium. Lo publica el usuario JiaqiLeee en HuggingFace bajo la etiqueta `custom-implementation`, lo que indica que no se ha generado con las utilidades estándar de la librería `stable-baselines3` ni con el flujo de `rl-zoo`, sino con una implementación propia del algoritmo. El artefacto resultante es una tabla Q serializada en formato pickle, no una red neuronal con pesos en safetensors.
+q-Taxi-v3 es un agente de aprendizaje por refuerzo (Q-Learning tabular) entrenado para resolver el entorno Taxi-v3 de Gymnasium. Lo publica el usuario JiaqiLeee en Hugging Face bajo la etiqueta `custom-implementation`, lo que indica que no se ha generado con las utilidades estándar de la librería `stable-baselines3` ni con el flujo de `rl-zoo`, sino con una implementación propia del algoritmo. El artefacto resultante es una tabla Q serializada en formato pickle, no una red neuronal con pesos en safetensors.
 
 El modelo resuelve un problema discreto y de pequeño tamaño: el entorno Taxi-v3 tiene 500 estados posibles y 6 acciones, y el objetivo es recoger a un pasajero en una de las cuatro paradas y dejarlo en su destino con el menor coste de recompensa posible. Su relevancia es fundamentalmente didáctica y de referencia: sirve como ejemplo mínimo de un agente Q-Learning entrenado y evaluado sobre un benchmark clásico de RL. No es un modelo de lenguaje ni un transformer, por lo que las comparativas con LLM no aplican.
 
@@ -45,9 +45,9 @@ La model card no documenta hiperparametros de entrenamiento (tasa de aprendizaje
 
 - Docencia de aprendizaje por refuerzo: el agente sirve como ejemplo minimo y reproducible de Q-Learning tabular para explicar la ecuacion de Bellman, la exploracion epsilon-greedy y la convergencia de la tabla Q en un entorno de juguete.
 - Baseline de comparacion: util como referencia de partida para comparar con variantes mas avanzadas (DQN, Double Q-Learning, SARSA) sobre el mismo entorno Taxi-v3.
-- Test de infraestructura de RL: permite validar pipelines de evaluacion (`evaluate` de la libreria de RL de HuggingFace), carga de entornos Gymnasium y registro de metricas de recompensa media.
+- Test de infraestructura de RL: permite validar pipelines de evaluacion (`evaluate` de la libreria de RL de Hugging Face), carga de entornos Gymnasium y registro de metricas de recompensa media.
 - Reproduccion de experimentos: al ser un artefacto pequeno (pickle en un repo de 0,0 GB), se puede cargar y evaluar rapidamente en cualquier maquina sin GPU.
-- Demostracion de despliegue de agentes en HuggingFace Hub: ejemplifica el flujo `load_from_hub` con un agente entrenado y su model card con `model-index`.
+- Demostracion de despliegue de agentes en Hugging Face Hub: ejemplifica el flujo `load_from_hub` con un agente entrenado y su model card con `model-index`.
 - Analisis de robustez y varianza: la desviacion tipica de 2,81 en la recompensa permite estudiar la estabilidad de la politica aprendida frente a la estocasticidad del entorno (deslizamiento del taxi).
 
 ## Benchmarks y rendimiento
@@ -65,15 +65,15 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 - VRAM estimada: 0 GB. El agente es una tabla Q tabular serializada en un pickle de tamano despreciable; no requiere GPU.
 - GPU recomendadas: ninguna. Se ejecuta en CPU.
 - Cabe en cualquier GPU consumer y en cualquier CPU moderna, incluida una Raspberry Pi.
-- Opciones de despliegue: carga directa con `load_from_hub` de la libreria de RL de HuggingFace y `gym.make(model["env_id"])`; no aplica vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: carga directa con `load_from_hub` de la libreria de RL de Hugging Face y `gym.make(model["env_id"])`; no aplica vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles en la informacion proporcionada; al ser una consulta a tabla, la latencia por paso es de orden de microsegundos en CPU.
 
 ## Comparativa con modelos similares
 
 | Modelo | Algoritmo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| q-Taxi-v3 (JiaqiLeee) | Q-Learning tabular | Taxi-v3 | 7,46 +/- 2,81 (no verificado) | no disponible | HuggingFace |
-| Agentes Q-Learning de referencia en RL Zoo | Q-Learning tabular | Taxi-v3 | no disponible | MIT (tipica de RL Zoo) | HuggingFace / stable-baselines3 |
+| q-Taxi-v3 (JiaqiLeee) | Q-Learning tabular | Taxi-v3 | 7,46 +/- 2,81 (no verificado) | no disponible | Hugging Face |
+| Agentes Q-Learning de referencia en RL Zoo | Q-Learning tabular | Taxi-v3 | no disponible | MIT (tipica de RL Zoo) | Hugging Face / stable-baselines3 |
 | Agentes DQN sobre Taxi-v3 | Deep Q-Network | Taxi-v3 | no disponible | no disponible | Implementaciones de terceros |
 
 No se dispone de datos de benchmarks comparables verificados en la informacion proporcionada para establecer una comparativa cuantitativa fiable con alternativas.
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparables verificados en la informacion p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JiaqiLeee/q-Taxi-v3
+- Hugging Face: https://huggingface.co/JiaqiLeee/q-Taxi-v3
 - Entorno Taxi-v3 (Gymnasium): https://gymnasium.farama.org/environments/toy_text/taxi/
-- Libreria de RL de HuggingFace: https://github.com/huggingface/stable-baselines3
+- Libreria de RL de Hugging Face: https://github.com/huggingface/stable-baselines3
 - Documentacion de Q-Learning en stable-baselines3: https://stable-baselines3.readthedocs.io/en/master/modules/qlearning.html

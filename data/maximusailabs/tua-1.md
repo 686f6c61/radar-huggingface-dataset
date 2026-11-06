@@ -83,11 +83,11 @@ Segun la model card, los baselines se evaluaron en modo zero-shot con prompts se
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto de entrada | Rendimiento en GUI | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TUA-1 | 4,7 M | 40 tokens de instruccion, 48 elementos, 8 acciones | 23 / 56 tareas web; 92,3 en tipos entrenados | Apache 2.0 | HuggingFace (pytorch, safetensors) |
-| Needle 2 | 45 M | no disponible | 0 / 56 tareas web; 0,0 en tipos entrenados; 1,5 s por paso | no disponible | HuggingFace |
-| Gemma 3 270M IT | 270 M | no disponible | 1 / 56 tareas web; 0,0 en tipos entrenados; 7,3 s por paso | no disponible | HuggingFace |
-| FunctionGemma 270M | 270 M | no disponible | 0 / 56 tareas web; 0,0 en tipos entrenados; 6,4 s por paso | no disponible | HuggingFace |
-| Qwen2.5 1.5B Instruct | 1,5 B | no disponible | 0 / 56 tareas web; 3,8 en tipos entrenados; 13,3 s por paso | no disponible | HuggingFace |
+| TUA-1 | 4,7 M | 40 tokens de instruccion, 48 elementos, 8 acciones | 23 / 56 tareas web; 92,3 en tipos entrenados | Apache 2.0 | Hugging Face (pytorch, safetensors) |
+| Needle 2 | 45 M | no disponible | 0 / 56 tareas web; 0,0 en tipos entrenados; 1,5 s por paso | no disponible | Hugging Face |
+| Gemma 3 270M IT | 270 M | no disponible | 1 / 56 tareas web; 0,0 en tipos entrenados; 7,3 s por paso | no disponible | Hugging Face |
+| FunctionGemma 270M | 270 M | no disponible | 0 / 56 tareas web; 0,0 en tipos entrenados; 6,4 s por paso | no disponible | Hugging Face |
+| Qwen2.5 1.5B Instruct | 1,5 B | no disponible | 0 / 56 tareas web; 3,8 en tipos entrenados; 13,3 s por paso | no disponible | Hugging Face |
 
 TUA-1 es entre 10 y 300 veces mas pequeno que los alternativas, y en las suites reportadas obtiene resultados superiores tanto en exito de tarea como en latencia por paso. Hay que subrayar que la comparacion es zero-shot para los baselines y con entrenamiento especifico en el caso de TUA-1, por lo que mide la idoneidad para esta tarea concreta, no una capacidad general.
 
@@ -104,5 +104,5 @@ TUA-1 es entre 10 y 300 veces mas pequeno que los alternativas, y en las suites 
 - Fecha de creacion y actualizacion poco habituales (2026-10-03), dato a tener en cuenta al evaluar la trazabilidad del repositorio.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/MaximusAILabs/TUA-1
+- Hugging Face: https://huggingface.co/MaximusAILabs/TUA-1
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo o demos.

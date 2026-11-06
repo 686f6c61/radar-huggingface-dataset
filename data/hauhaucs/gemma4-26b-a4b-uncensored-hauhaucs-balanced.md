@@ -70,6 +70,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HauhauCS/Gemma4-26B-A4B-Uncensored-HauhauCS-Balanced
+- Hugging Face: https://huggingface.co/HauhauCS/Gemma4-26B-A4B-Uncensored-HauhauCS-Balanced
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Discord del autor: https://discord.gg/SZ5vacTXYf

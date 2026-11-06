@@ -70,7 +70,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Plana-Chan/PinkCherry_NSFW_LTX23
+- Repositorio Hugging Face: https://huggingface.co/Plana-Chan/PinkCherry_NSFW_LTX23
 - Modelo base LTX-2.3 (Lightricks): https://ltx.io/model/ltx-2-3
 - Guía sobre LTX 2.3 NSFW: https://ltx23.video/blog/ltx-2-3-nsfw
 - Modelos LTX 2.5 y 2.3 para ComfyUI por VRAM: https://ltxworkflow.com/models

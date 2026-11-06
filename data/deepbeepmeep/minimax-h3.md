@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DeepBeepMeep/MiniMax-H3 es un modelo de difusión para generación de imágenes y vídeo, publicado por el usuario DeepBeepMeep en HuggingFace. Según la model card, está diseñado para utilizarse con la herramienta WanGP (https://github.com/deepbeepmeep/Wan2GP), que permite ejecutar modelos generativos de vídeo en GPUs con poca memoria (hasta 6 GB de VRAM) y en tarjetas antiguas (RTX 10XX, 20XX). El repositorio contiene pesos en formato safetensors y GGUF, con un tamaño total de 591.2 GB y aproximadamente 25.75 mil millones de parámetros.
+DeepBeepMeep/MiniMax-H3 es un modelo de difusión para generación de imágenes y vídeo, publicado por el usuario DeepBeepMeep en Hugging Face. Según la model card, está diseñado para utilizarse con la herramienta WanGP (https://github.com/deepbeepmeep/Wan2GP), que permite ejecutar modelos generativos de vídeo en GPUs con poca memoria (hasta 6 GB de VRAM) y en tarjetas antiguas (RTX 10XX, 20XX). El repositorio contiene pesos en formato safetensors y GGUF, con un tamaño total de 591.2 GB y aproximadamente 25.75 mil millones de parámetros.
 
-La información técnica detallada (arquitectura, contexto, licencia, idiomas, datos de entrenamiento) no está disponible en la model card ni en la ficha de HuggingFace. El modelo parece ser una variante o adaptación de la familia MiniMax, pero no se especifican sus características internas. Su relevancia radica en su integración con WanGP para democratizar la generación de vídeo en hardware modesto, aunque se carece de documentación técnica pública.
+La información técnica detallada (arquitectura, contexto, licencia, idiomas, datos de entrenamiento) no está disponible en la model card ni en la ficha de Hugging Face. El modelo parece ser una variante o adaptación de la familia MiniMax, pero no se especifican sus características internas. Su relevancia radica en su integración con WanGP para democratizar la generación de vídeo en hardware modesto, aunque se carece de documentación técnica pública.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DeepBeepMeep/MiniMax-H3
+- Hugging Face: https://huggingface.co/DeepBeepMeep/MiniMax-H3
 - Repositorio WanGP: https://github.com/deepbeepmeep/Wan2GP
 - Discord del autor: https://discord.gg/g7efUW9jGV
 - Twitter/X del autor: https://x.com/deepbeepmeep

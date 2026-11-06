@@ -19,13 +19,13 @@ La relevancia de este modelo reside en su carácter de documento histórico: per
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | ingles (en), maori (mi) |
 | Licencia | other (no especificada en detalle) |
-| Formato de pesos | safetensors (segun tags de HuggingFace) |
+| Formato de pesos | safetensors (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
 No se ha publicado información detallada sobre la arquitectura interna del modelo. La model card indica que se trata de un "LumynaX-native release", es decir, un modelo con pesos propios, sin infusiones de modelos open source externos. No se especifican datos sobre el dataset de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas como RLHF o DPO.
 
-El modelo se describe como un artefacto histórico que precede a la implementación actual de LumynaX Core. No se documentan innovaciones técnicas específicas en esta versión. Los tags de HuggingFace indican compatibilidad con vLLM, NVIDIA NIM y NVIDIA NeMo, lo que sugiere que puede ejecutarse en esos runtimes, pero no se aportan detalles sobre optimizaciones de inferencia.
+El modelo se describe como un artefacto histórico que precede a la implementación actual de LumynaX Core. No se documentan innovaciones técnicas específicas en esta versión. Los tags de Hugging Face indican compatibilidad con vLLM, NVIDIA NIM y NVIDIA NeMo, lo que sugiere que puede ejecutarse en esos runtimes, pero no se aportan detalles sobre optimizaciones de inferencia.
 
 ## Capacidades
 
@@ -75,7 +75,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AbteeXAILab/lumynax-nz-3b
+- Hugging Face: https://huggingface.co/AbteeXAILab/lumynax-nz-3b
 - Repositorio fuente: https://github.com/Aimaghsoodi/lumynax-nz-3b
 - Sitio de AbteeX AI Labs: https://abteex.com
 - Sitio de LumynaX: https://lumynax.com

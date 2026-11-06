@@ -74,11 +74,11 @@ Este repositorio no es un modelo, por lo que la comparación se establece con ot
 
 | Alternativa | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AutoDataBench/Function-Calling-resources | Paquete de datos y modelos auxiliares | 1,5 B + 4 B + 0,6 B | No disponible | No disponible | HuggingFace, 0 descargas |
-| Berkeley Function Calling Leaderboard (gorilla-llm) | Dataset de evaluación de function calling | No aplicable | No aplicable | No disponible en la información proporcionada | HuggingFace; citado como guard OOD externo |
-| Qwen/Qwen2-1.5B-Instruct | Modelo de instrucciones | 1,5 B | No disponible | No disponible en la información proporcionada | HuggingFace (componente upstream) |
-| Qwen/Qwen3-4B-Instruct-2507 | Modelo de instrucciones | 4 B | No disponible | No disponible en la información proporcionada | HuggingFace (componente upstream) |
-| Qwen/Qwen3-Embedding-0.6B | Modelo de embeddings | 0,6 B | No disponible | No disponible en la información proporcionada | HuggingFace (componente upstream) |
+| AutoDataBench/Function-Calling-resources | Paquete de datos y modelos auxiliares | 1,5 B + 4 B + 0,6 B | No disponible | No disponible | Hugging Face, 0 descargas |
+| Berkeley Function Calling Leaderboard (gorilla-llm) | Dataset de evaluación de function calling | No aplicable | No aplicable | No disponible en la información proporcionada | Hugging Face; citado como guard OOD externo |
+| Qwen/Qwen2-1.5B-Instruct | Modelo de instrucciones | 1,5 B | No disponible | No disponible en la información proporcionada | Hugging Face (componente upstream) |
+| Qwen/Qwen3-4B-Instruct-2507 | Modelo de instrucciones | 4 B | No disponible | No disponible en la información proporcionada | Hugging Face (componente upstream) |
+| Qwen/Qwen3-Embedding-0.6B | Modelo de embeddings | 0,6 B | No disponible | No disponible en la información proporcionada | Hugging Face (componente upstream) |
 
 No se dispone de datos comparativos de rendimiento entre estas alternativas en la información proporcionada.
 
@@ -98,7 +98,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AutoDataBench/Function-Calling-resources
+- Repositorio en Hugging Face: https://huggingface.co/AutoDataBench/Function-Calling-resources
 - Repositorio GitHub de AutoDataBench: https://github.com/AutoDataBench/AutoDataBench
 - Artículo del benchmark: https://arxiv.org/abs/2609.40097
 - Modelo upstream Qwen2-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2-1.5B-Instruct

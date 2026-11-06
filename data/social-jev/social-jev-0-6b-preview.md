@@ -39,7 +39,7 @@ No se especifican en la información proporcionada el número de tokens de entre
 - Clasificación de documentos mediante una interfaz tipada: se define una `Query` con el texto de la pregunta (por ejemplo, "¿A qué área de política se refiere este documento?") y la lista de `options` (por ejemplo, "Transport", "Education", "Healthcare") y el modelo devuelve la clasificación para cada documento.
 - Procesamiento por lotes: la API `model.query([...])` acepta una lista de `Request`, cada uno con un campo `state` (el documento o estado) y una o varias `queries`, y devuelve resultados indexados por petición y consulta.
 - Soporte de múltiples consultas por documento dentro de la misma llamada, lo que permite codificar varias variables de un mismo texto.
-- Extracción de características, según el pipeline declarado (`feature-extraction`) en la ficha de HuggingFace.
+- Extracción de características, según el pipeline declarado (`feature-extraction`) en la ficha de Hugging Face.
 - Carga mediante dos vías: `transformers.AutoModel.from_pretrained(..., trust_remote_code=True)` y la API de alto nivel `SocialJev.from_pretrained(...)`.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte explícito de agentes o razonamiento multi-paso: no disponible.
@@ -75,8 +75,8 @@ No se dispone de información sobre modelos directamente comparables en la categ
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| social-jev-0.6B-preview | 596.050.945 | No disponible | Clasificación de documentos mediante consultas tipadas | No disponible | HuggingFace (0 descargas, 0 likes) |
-| Qwen/Qwen3-0.6B (base) | ≈0,6 B | No disponible en esta ficha | Generación de texto y razonamiento | No disponible en esta ficha | HuggingFace |
+| social-jev-0.6B-preview | 596.050.945 | No disponible | Clasificación de documentos mediante consultas tipadas | No disponible | Hugging Face (0 descargas, 0 likes) |
+| Qwen/Qwen3-0.6B (base) | ≈0,6 B | No disponible en esta ficha | Generación de texto y razonamiento | No disponible en esta ficha | Hugging Face |
 | Alternativas específicas en ciencias sociales | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de información sobre modelos directamente comparables en la categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/social-jev/social-jev-0.6B-preview
+- Modelo en Hugging Face: https://huggingface.co/social-jev/social-jev-0.6B-preview
 - Sitio web del proyecto SocialJev: https://social-jev.github.io/
 - Paquete de Python: `pip install social-jev`
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B

@@ -17,7 +17,7 @@ Arquitectura transformer decoder-only heredada de Llama 2 (7B), con pesos en saf
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | 4.096 tokens (heredada del modelo base Llama-2-7b-chat; no se explicita en la model card) |
 | Tipos de cuantización | No disponible (el repositorio solo publica pesos safetensors; no se publican versiones GGUF, AWQ, GPTQ ni cuantizaciones de 8 o 4 bits) |
-| Idiomas soportados | No disponibles (campo vacío en los metadatos de HuggingFace) |
+| Idiomas soportados | No disponibles (campo vacío en los metadatos de Hugging Face) |
 | Licencia | Llama 2 Community License (incluye `LICENSE.txt` y `USE_POLICY.md` en el repositorio) |
 | Formato de pesos | safetensors |
 | Modelo base | meta-llama/Llama-2-7b-chat-hf |
@@ -50,7 +50,7 @@ Conviene señalar una discrepancia no explicada en la información disponible: l
 - Soporte de agentes y razonamiento multi-paso: no documentado; el modelo no incluye modo de pensamiento ni protocolo de agente.
 - Capacidades de visión o audio: no disponibles (modelo estrictamente de texto).
 - Utilidad como sujeto de estudio: mide el aumento de la tasa de éxito de ataque (ASR) causado por la compresión y la recuperación lograda por la regla `gap_iter`.
-- Compatibilidad de despliegue: etiquetado como `endpoints_compatible` y `text-generation-inference` en HuggingFace, por lo que puede servirse con el stack TGI sin conversión de formato.
+- Compatibilidad de despliegue: etiquetado como `endpoints_compatible` y `text-generation-inference` en Hugging Face, por lo que puede servirse con el stack TGI sin conversión de formato.
 
 ## Casos de uso
 
@@ -110,6 +110,6 @@ No se dispone de datos de benchmarks de los modelos comparables dentro de la inf
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_evfront_b010_r08
+- Página de Hugging Face del modelo: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_evfront_b010_r08
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
-- La búsqueda web realizada no ha devuelto ningún enlace relevante sobre este modelo, SVD-LLM o compresión de modelos de lenguaje: los resultados obtenidos trataban sobre autismo y psiquiatría y no guardan relación con la consulta. Por tanto, no hay papers, blogs, repositorios ni demos adicionales que enlazar más allá de la ficha de HuggingFace y el modelo base indicados.
+- La búsqueda web realizada no ha devuelto ningún enlace relevante sobre este modelo, SVD-LLM o compresión de modelos de lenguaje: los resultados obtenidos trataban sobre autismo y psiquiatría y no guardan relación con la consulta. Por tanto, no hay papers, blogs, repositorios ni demos adicionales que enlazar más allá de la ficha de Hugging Face y el modelo base indicados.

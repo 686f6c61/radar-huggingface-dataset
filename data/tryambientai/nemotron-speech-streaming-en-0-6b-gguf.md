@@ -92,10 +92,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Parametros | Contexto/chunk | WER LibriSpeech test-clean | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| nemotron-speech-streaming-en-0.6b (GGUF, esta ficha) | 618 M | chunk 1,12 s (configurable 80-1120 ms) | 2,31 % (F32) | NVIDIA Open Model License | HuggingFace (GGUF) |
-| nvidia/nemotron-speech-streaming-en-0.6b (original) | 600 M | chunk 1,12 s (configurable) | 2,32 % (reportado NVIDIA) | NVIDIA Open Model License | HuggingFace (NeMo) |
-| Whisper large-v3 | 1550 M | 30 s | no disponible en esta informacion | MIT | HuggingFace, múltiples runtimes |
-| Whisper small | 244 M | 30 s | no disponible en esta informacion | MIT | HuggingFace, múltiples runtimes |
+| nemotron-speech-streaming-en-0.6b (GGUF, esta ficha) | 618 M | chunk 1,12 s (configurable 80-1120 ms) | 2,31 % (F32) | NVIDIA Open Model License | Hugging Face (GGUF) |
+| nvidia/nemotron-speech-streaming-en-0.6b (original) | 600 M | chunk 1,12 s (configurable) | 2,32 % (reportado NVIDIA) | NVIDIA Open Model License | Hugging Face (NeMo) |
+| Whisper large-v3 | 1550 M | 30 s | no disponible en esta informacion | MIT | Hugging Face, múltiples runtimes |
+| Whisper small | 244 M | 30 s | no disponible en esta informacion | MIT | Hugging Face, múltiples runtimes |
 
 La comparación con Whisper se ofrece solo como referencia de categoría; no se dispone en la información proporcionada de cifras de WER comparables para esos modelos en el mismo split y condiciones.
 
@@ -113,8 +113,8 @@ La comparación con Whisper se ofrece solo como referencia de categoría; no se 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/tryambientai/nemotron-speech-streaming-en-0.6b-gguf
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/tryambientai/nemotron-speech-streaming-en-0.6b-gguf
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b
 - Commit del modelo base utilizado: https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b/commit/ef3bf40
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Commit de validación de transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/tree/12f1076

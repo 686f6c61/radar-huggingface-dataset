@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Earthformer es un modelo de predicción meteorológica y del sistema terrestre basado en arquitectura Transformer, propuesto originalmente por investigadores de Amazon Web Services (AWS) en colaboración con la Universidad de Ciencia y Tecnología de Hong Kong. Su principal contribución es el mecanismo de atención denominado *Cuboid Attention*, diseñado para reducir el coste computacional que los Transformers convencionales sufren al procesar datos geofísicos de alta dimensionalidad (espacio y tiempo). La versión alojada en HuggingFace es una reproducción del proyecto OneScience, que implementa el entrenamiento, inferencia y evaluación del modelo sobre el conjunto de datos SEVIR (simulaciones de radar meteorológico). Este modelo es relevante porque aborda un problema práctico en ciencia del clima y meteorología: la predicción espacio-temporal a partir de datos de radar, con una arquitectura eficiente que puede escalar a resoluciones altas. La model card indica soporte para entrenamiento en GPU y DCU (procesadores de aceleración de Hygon), así como uso con PyTorch.
+Earthformer es un modelo de predicción meteorológica y del sistema terrestre basado en arquitectura Transformer, propuesto originalmente por investigadores de Amazon Web Services (AWS) en colaboración con la Universidad de Ciencia y Tecnología de Hong Kong. Su principal contribución es el mecanismo de atención denominado *Cuboid Attention*, diseñado para reducir el coste computacional que los Transformers convencionales sufren al procesar datos geofísicos de alta dimensionalidad (espacio y tiempo). La versión alojada en Hugging Face es una reproducción del proyecto OneScience, que implementa el entrenamiento, inferencia y evaluación del modelo sobre el conjunto de datos SEVIR (simulaciones de radar meteorológico). Este modelo es relevante porque aborda un problema práctico en ciencia del clima y meteorología: la predicción espacio-temporal a partir de datos de radar, con una arquitectura eficiente que puede escalar a resoluciones altas. La model card indica soporte para entrenamiento en GPU y DCU (procesadores de aceleración de Hygon), así como uso con PyTorch.
 
 ## Especificaciones técnicas
 
@@ -68,7 +68,7 @@ No se dispone de datos comparativos en la información proporcionada. Earthforme
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/Earthformer
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/Earthformer
 - Paper original (arXiv): https://arxiv.org/abs/2207.05833
 - Repositorio principal de OneScience (GitHub): https://github.com/onescience-ai/OneScience
 - Repositorio de habilidades OneScience (GitHub): https://github.com/onescience-ai/oneskills

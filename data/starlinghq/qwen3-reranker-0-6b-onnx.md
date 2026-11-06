@@ -91,6 +91,6 @@ No se dispone de informacion sobre otros rerankers comparables (por ejemplo, de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Starlinghq/qwen3-reranker-0.6b-onnx
+- Repositorio Hugging Face: https://huggingface.co/Starlinghq/qwen3-reranker-0.6b-onnx
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B
 - Repositorio del proyecto Starling: https://github.com/starlinghq/starling

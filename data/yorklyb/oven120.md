@@ -6,7 +6,7 @@ El modelo `yorklyb/oven120` es una implementación de la política robótica π�
 
 El modelo cuenta con 4.143.404.816 parámetros (aproximadamente 4,1 mil millones) y se distribuye en formato safetensors, con un tamaño de repositorio de 9,4 GB. Está entrenado sobre el dataset `oven120` y se publica bajo licencia Apache-2.0, lo que permite uso comercial y modificación. Aunque la arquitectura exacta no se detalla en la información disponible, se trata de un modelo VLA que integra procesamiento de visión, lenguaje y acciones motoras, siguiendo la línea de π₀ y π₀.₅ de Physical Intelligence.
 
-La relevancia actual de este modelo radica en su capacidad potencial para generalizar a tareas y entornos nuevos, un paso clave hacia robots útiles en entornos domésticos o industriales no estructurados. Al estar disponible en HuggingFace con la integración de LeRobot, facilita su uso en pipelines de entrenamiento e inferencia para la comunidad robótica.
+La relevancia actual de este modelo radica en su capacidad potencial para generalizar a tareas y entornos nuevos, un paso clave hacia robots útiles en entornos domésticos o industriales no estructurados. Al estar disponible en Hugging Face con la integración de LeRobot, facilita su uso en pipelines de entrenamiento e inferencia para la comunidad robótica.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ La arquitectura de π₀.₅ no se describe en detalle en la información propor
 - Generalización a entornos nuevos: diseñado para operar en escenarios no vistos durante el entrenamiento, gracias a su naturaleza VLA.
 - Percepción visual: procesa imágenes de cámaras para entender el estado del entorno.
 - Comprensión de lenguaje: interpreta instrucciones en lenguaje natural para guiar las acciones (aunque no se especifican los idiomas soportados).
-- Integración con LeRobot: compatible con el ecosistema de HuggingFace para entrenamiento, evaluación y despliegue.
+- Integración con LeRobot: compatible con el ecosistema de Hugging Face para entrenamiento, evaluación y despliegue.
 - No se mencionan capacidades de tool calling, agentes multi-paso, ni modos de razonamiento explícitos.
 
 ## Casos de uso
@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yorklyb/oven120)
+- [Modelo en Hugging Face](https://huggingface.co/yorklyb/oven120)
 - [Blog de Physical Intelligence sobre π₀.₅](https://www.physicalintelligence.company/blog/pi05)
 - [Repositorio LeRobot](https://github.com/huggingface/lerobot)
 - [Documentación de LeRobot](https://huggingface.co/docs/lerobot/index)

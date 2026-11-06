@@ -110,7 +110,7 @@ La comparación útil es de compromiso entre precisión y memoria dentro de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Cyber-Tiel-Coder-35B-A3B-MLX-AXQ-6bit-MTP
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Cyber-Tiel-Coder-35B-A3B-MLX-AXQ-6bit-MTP
 - Modelo base (oQ6e-MTP, revisión fijada): https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ6e-MTP/tree/a443d4e30fd5228942cb7695f916f4b14a88fae9
 - Variante hermana MXFP8: https://huggingface.co/AutomatosX/AX-Cyber-Tiel-Coder-35B-A3B-MLX-AXQ-MXFP8-MTP
 - Colección Tiel Coder de AutomatosX: https://huggingface.co/collections/AutomatosX/tiel-coder

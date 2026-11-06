@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/arrochi112/onebee-gf-dpo-v1-scale
+- Hugging Face del modelo: https://huggingface.co/arrochi112/onebee-gf-dpo-v1-scale
 - Repositorio del proyecto: https://github.com/arrogance231/small-mind-companion
 - Documentación de resultados: https://github.com/arrogance231/small-mind-companion/blob/main/docs/proper_scale_results.md
 - Checkpoint SFT v0: https://huggingface.co/arrochi112/onebee-gf-sft-v0

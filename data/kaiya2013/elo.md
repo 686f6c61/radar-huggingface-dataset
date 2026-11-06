@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo "Elo" es un modelo publicado en HuggingFace por el usuario Kaiya2013. Según la información disponible, se trata de un modelo con licencia Apache 2.0, pero no se ha publicado ninguna documentación técnica, model card detallada ni información sobre su arquitectura, tamaño, contexto o capacidades. El repositorio no tiene descargas ni likes, y no se ha identificado ningún pipeline asociado.
+El modelo "Elo" es un modelo publicado en Hugging Face por el usuario Kaiya2013. Según la información disponible, se trata de un modelo con licencia Apache 2.0, pero no se ha publicado ninguna documentación técnica, model card detallada ni información sobre su arquitectura, tamaño, contexto o capacidades. El repositorio no tiene descargas ni likes, y no se ha identificado ningún pipeline asociado.
 
 Debido a la ausencia total de especificaciones, resultados de benchmarks o ejemplos de uso, este modelo no puede ser evaluado ni recomendado para su uso en aplicaciones reales. La ficha que sigue refleja únicamente los datos disponibles y marca explícitamente aquellos campos que no han sido publicados.
 
@@ -61,4 +61,4 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kaiya2013/Elo
+- Hugging Face: https://huggingface.co/Kaiya2013/Elo

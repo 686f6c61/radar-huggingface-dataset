@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables específicamente orienta
 
 ## Enlaces
 
-- [HuggingFace - tayyabjameel8315/security-assistant-smollm2](https://huggingface.co/tayyabjameel8315/security-assistant-smollm2)
+- [Hugging Face - tayyabjameel8315/security-assistant-smollm2](https://huggingface.co/tayyabjameel8315/security-assistant-smollm2)
 - [Modelo base: HuggingFaceTB/SmolLM2-1.7B-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct)
 - [Repositorio SmolLM de Hugging Face](https://github.com/huggingface/smollm)

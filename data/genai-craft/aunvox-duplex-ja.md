@@ -4,7 +4,7 @@
 
 El modelo `genai-craft/aunvox-duplex-ja` es un sistema de diálogo por voz en japonés con capacidad full-duplex, desarrollado por el usuario `genai-craft` sobre la base `HIT-TMG/Lychee-FD`. Se trata de un modelo de 12.812.043.520 parámetros (aproximadamente 12,8 mil millones) orientado a conversaciones bidireccionales en tiempo real, donde la entrada y salida de audio pueden procesarse simultáneamente, sin necesidad de turnos estrictos. Su etiquetado como `step_audio_2_full_duplex` sugiere una arquitectura similar a la familia Step Audio 2, aunque no se dispone de documentación técnica oficial que confirme este punto.
 
-El modelo está pensado para aplicaciones de voz interactiva en japonés, como asistentes conversacionales o sistemas de atención telefónica automatizada. Su licencia es `aunvox-model-license-1.0`, una licencia propia que no es de código abierto estándar y que restringe el uso comercial sin autorización. El acceso es restringido (gated) en HuggingFace, por lo que los usuarios deben aceptar condiciones adicionales antes de descargarlo. La relevancia actual radica en la creciente demanda de modelos de voz con baja latencia y capacidad de interrupción natural, aunque la falta de métricas públicas y de documentación limita su evaluación objetiva.
+El modelo está pensado para aplicaciones de voz interactiva en japonés, como asistentes conversacionales o sistemas de atención telefónica automatizada. Su licencia es `aunvox-model-license-1.0`, una licencia propia que no es de código abierto estándar y que restringe el uso comercial sin autorización. El acceso es restringido (gated) en Hugging Face, por lo que los usuarios deben aceptar condiciones adicionales antes de descargarlo. La relevancia actual radica en la creciente demanda de modelos de voz con baja latencia y capacidad de interrupción natural, aunque la falta de métricas públicas y de documentación limita su evaluación objetiva.
 
 ## Especificaciones técnicas
 
@@ -58,7 +58,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace; no es de descarga directa.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face; no es de descarga directa.
 - Licencia restrictiva: `aunvox-model-license-1.0` no es una licencia open source; limita el uso comercial y puede imponer restricciones de redistribución.
 - Idioma limitado: solo soporta japonés; no sirve para otros idiomas.
 - Falta de documentación: no hay papers, informes técnicos ni guías de uso oficiales, lo que dificulta la integración y el mantenimiento.
@@ -68,6 +68,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/genai-craft/aunvox-duplex-ja
+- Modelo en Hugging Face: https://huggingface.co/genai-craft/aunvox-duplex-ja
 - Modelo base (HIT-TMG/Lychee-FD): https://huggingface.co/HIT-TMG/Lychee-FD (enlace inferido del ID; no se ha verificado su existencia)
 - Repositorio genai-craft en GitHub (sin relación directa confirmada): https://github.com/arkashira/genai-craft

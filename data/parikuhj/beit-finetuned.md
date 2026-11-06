@@ -2,11 +2,11 @@
 
 ## Resumen
 
-PariKuhj/beit-finetuned es un repositorio de HuggingFace que contiene una implementación propia y reducida de una arquitectura tipo BEiT (BERT Pre-Training of Image Transformers) orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de una release con pesos listos para producción: el propio autor indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (*smoke tests*) y no un modelo con entrenamiento completado ni evaluado. El repositorio incluye además el script `main.py` con el modelo y un punto de entrada ejecutable, `config.json` con la configuración de arquitectura generada y `training_args.json` con la receta de experimento por defecto.
+PariKuhj/beit-finetuned es un repositorio de Hugging Face que contiene una implementación propia y reducida de una arquitectura tipo BEiT (BERT Pre-Training of Image Transformers) orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de una release con pesos listos para producción: el propio autor indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (*smoke tests*) y no un modelo con entrenamiento completado ni evaluado. El repositorio incluye además el script `main.py` con el modelo y un punto de entrada ejecutable, `config.json` con la configuración de arquitectura generada y `training_args.json` con la receta de experimento por defecto.
 
 El tamaño declarado en los pesos safetensors es de 49.600 parámetros (aproximadamente 49,6 mil), lo que lo sitúa en una escala *tiny* muy por debajo de cualquier BEiT publicado. La configuración registrada emplea atención dilatada, fusión de bajo rango (*low rank*), activación GELU y normalización ScaleNorm, sobre una receta de entrenamiento con RMSprop y un esquema de *linear warmup*. Se trata, por tanto, de un artefacto de investigación reproducible y no de un modelo con capacidades generativas o de representación demostradas.
 
-Su relevancia es limitada y acotada al ámbito de la experimentación: sirve como plantilla mínima para reproducir una arquitectura BEiT modificada, como base para pruebas de integración de pipelines de carga de modelos y como punto de partida para fine-tuning. El repositorio no declara puntuaciones de benchmarks, no documenta idiomas soportados ni un pipeline de HuggingFace, y acumula cero descargas y cero *likes* en el momento de la consulta.
+Su relevancia es limitada y acotada al ámbito de la experimentación: sirve como plantilla mínima para reproducir una arquitectura BEiT modificada, como base para pruebas de integración de pipelines de carga de modelos y como punto de partida para fine-tuning. El repositorio no declara puntuaciones de benchmarks, no documenta idiomas soportados ni un pipeline de Hugging Face, y acumula cero descargas y cero *likes* en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -75,7 +75,7 @@ No disponible. El repositorio no incluye comparaciones con otros modelos y la in
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PariKuhj/beit-finetuned | 49.600 | no disponible | Apache-2.0 | Repositorio HuggingFace, checkpoint de inicializacion |
+| PariKuhj/beit-finetuned | 49.600 | no disponible | Apache-2.0 | Repositorio Hugging Face, checkpoint de inicializacion |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,12 +85,12 @@ No disponible. El repositorio no incluye comparaciones con otros modelos y la in
 - No se han documentado sesgos, pero tampoco existe ningún proceso de evaluación que permita descartarlos.
 - Riesgo de alucinación: no evaluable, ya que no hay evidencia de que el modelo tenga capacidades generativas entrenadas.
 - No se documentan idiomas soportados ni longitud de contexto, por lo que no puede garantizarse comportamiento alguno en producción multilingüe o con entradas largas.
-- Requiere un adaptador explícito para funcionar con APIs de carga automática de HuggingFace, al tratarse de una implementación personalizada cuyo artefacto principal es `main.py`.
+- Requiere un adaptador explícito para funcionar con APIs de carga automática de Hugging Face, al tratarse de una implementación personalizada cuyo artefacto principal es `main.py`.
 - La licencia Apache-2.0 permite uso comercial del código y los pesos, pero el propio autor advierte de que deben revisarse por separado los términos de los datos de origen si el repositorio se utiliza con conjuntos de datos externos.
 - No debe presentarse ningún resultado derivado de este checkpoint como si procediera de los valores por defecto del repositorio: el autor exige documentar por separado los resultados de cualquier checkpoint futuro entrenado.
 - No apto para uso en producción como modelo de inferencia: su función es la experimentación y la validación de infraestructura.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PariKuhj/beit-finetuned
+- Hugging Face: https://huggingface.co/PariKuhj/beit-finetuned
 - Los resultados de la búsqueda web realizada no contienen enlaces relevantes al modelo, a su arquitectura ni a sus autores: las entradas devueltas corresponden a páginas de empleo de una entidad sanitaria ajena por completo al repositorio. No se dispone, por tanto, de papers, blogs, repositorios adicionales ni demos asociados a este modelo.

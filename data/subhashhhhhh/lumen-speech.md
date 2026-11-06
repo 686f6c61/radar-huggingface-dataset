@@ -88,7 +88,7 @@ No se dispone de parámetros, contexto ni métricas de rendimiento de `whistle.c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/subhashhhhhh/lumen-speech
+- Repositorio en Hugging Face: https://huggingface.co/subhashhhhhh/lumen-speech
 - Modelo de origen del ASR: https://huggingface.co/Cactus-Compute/whistle
 - Commit fijado del ASR: `741118687e1f008f06d1351a402a731274789790` (en el repositorio de Cactus-Compute/whistle)
 - Proyecto Silero VAD: https://github.com/snakers4/silero-vad (tag `v6.2.3`)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyEBFTModelSFTCP es un modelo multimodal de tipo image-text-to-text publicado en HuggingFace por el usuario AlexHung29629, resultado de un proceso de fine-tuning supervisado (SFT) sobre el modelo base AlexHung29629/ebft_gemma4_26b_lora_lr5e6_merged. Este modelo base, a su vez, parece derivar de la familia Gemma 4 con un adaptador LoRA fusionado, según indican los tags y el nombre del repositorio. El modelo cuenta con 25.805.933.872 parámetros (aproximadamente 25,8 mil millones), lo que lo sitúa en la gama de modelos medianos-grandes con capacidad de procesar entradas de imagen y texto.
+MyEBFTModelSFTCP es un modelo multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario AlexHung29629, resultado de un proceso de fine-tuning supervisado (SFT) sobre el modelo base AlexHung29629/ebft_gemma4_26b_lora_lr5e6_merged. Este modelo base, a su vez, parece derivar de la familia Gemma 4 con un adaptador LoRA fusionado, según indican los tags y el nombre del repositorio. El modelo cuenta con 25.805.933.872 parámetros (aproximadamente 25,8 mil millones), lo que lo sitúa en la gama de modelos medianos-grandes con capacidad de procesar entradas de imagen y texto.
 
 El modelo se ha entrenado con varios conjuntos de datos de instrucciones (SFT) orientados a conversación, agentes y búsqueda, tal como reflejan los datasets referenciados en los metadatos: ultradata-sft-clean.jsonl, ultradata-sft-agent-clean.jsonl, tw-sft-clean.jsonl y search-sft-clean.jsonl. El pipeline declarado es image-text-to-text, lo que indica soporte para tareas de visión-lenguaje además de generación de texto. El repositorio está marcado como acceso restringido (gated) y no dispone de descargas ni likes en el momento de la consulta, lo que sugiere que se trata de un modelo de investigación o de un experimento personal sin amplia validación por la comunidad.
 
@@ -77,11 +77,11 @@ No se dispone de datos de benchmarks ni de especificaciones completas (contexto,
 - **Sesgos conocidos**: no se documentan, pero al derivar de Gemma 4 y entrenarse con datasets no especificados, puede heredar sesgos de esos datos.
 - **Riesgo de alucinación**: inherente a los modelos generativos; no hay evaluaciones de fidelidad publicadas.
 - **Limitaciones de contexto o idioma**: se desconoce la longitud máxima de contexto y los idiomas soportados; los datasets de entrenamiento parecen incluir texto en inglés y posiblemente chino (tw-sft-clean), pero no se confirma.
-- **Restricciones de licencia**: la licencia no está disponible, lo que impide determinar si se permite uso comercial. El acceso es restringido (gated), por lo que se requiere aceptar condiciones en HuggingFace.
+- **Restricciones de licencia**: la licencia no está disponible, lo que impide determinar si se permite uso comercial. El acceso es restringido (gated), por lo que se requiere aceptar condiciones en Hugging Face.
 - **Caveats para producción**: ausencia de benchmarks, documentación mínima, cero descargas/likes y un tamaño de repositorio de 53,1 GB. No se recomienda su uso en producción sin una evaluación exhaustiva y sin aclarar la licencia. El modelo base es un fine-tuning con LoRA fusionado, lo que puede introducir inestabilidades no documentadas.
 
 ## Enlaces
 
-- [HuggingFace: AlexHung29629/MyEBFTModelSFTCP](https://huggingface.co/AlexHung29629/MyEBFTModelSFTCP)
+- [Hugging Face: AlexHung29629/MyEBFTModelSFTCP](https://huggingface.co/AlexHung29629/MyEBFTModelSFTCP)
 - [Modelo base: AlexHung29629/ebft_gemma4_26b_lora_lr5e6_merged](https://huggingface.co/AlexHung29629/ebft_gemma4_26b_lora_lr5e6_merged)
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Átomos de entrada | Parámetros | Ruido de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ProteinMPNN CA-only noise002 (este) | CA | 1,642 M | 0,02 Å | AGPL-3.0 | HuggingFace (oteam) |
-| ProteinMPNN estándar noise002 | N, CA, C, O | 1,674 M | 0,02 Å | AGPL-3.0 | HuggingFace (oteam) |
-| SolubleMPNN noise002 | N, CA, C, O | 1,674 M | 0,02 Å | AGPL-3.0 | HuggingFace (oteam) |
+| ProteinMPNN CA-only noise002 (este) | CA | 1,642 M | 0,02 Å | AGPL-3.0 | Hugging Face (oteam) |
+| ProteinMPNN estándar noise002 | N, CA, C, O | 1,674 M | 0,02 Å | AGPL-3.0 | Hugging Face (oteam) |
+| SolubleMPNN noise002 | N, CA, C, O | 1,674 M | 0,02 Å | AGPL-3.0 | Hugging Face (oteam) |
 | ProteinMPNN original (dauparas) | N, CA, C, O | ~1,7 M | 0,02 Å | MIT (repo original) | GitHub |
 
 Las variantes estándar y soluble emplean el esqueleto completo y están orientadas a proteínas generales y solubles respectivamente; la variante CA-only sacrifica información geométrica a cambio de aceptar entradas reducidas. No se dispone de datos de rendimiento comparativo en la información proporcionada.
@@ -91,7 +91,7 @@ Las variantes estándar y soluble emplean el esqueleto completo y están orienta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/proteinmpnn-ca-only-noise002
+- Modelo en Hugging Face: https://huggingface.co/oteam/proteinmpnn-ca-only-noise002
 - Variante CA-only base: https://huggingface.co/oteam/proteinmpnn-ca-only
 - Variante CA-only noise010: https://huggingface.co/oteam/proteinmpnn-ca-only-noise010
 - Variante CA-only noise020: https://huggingface.co/oteam/proteinmpnn-ca-only

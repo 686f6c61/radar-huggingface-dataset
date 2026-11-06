@@ -92,6 +92,6 @@ No se dispone de datos de rendimiento comparado (WER/CER) para establecer una co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nauvalwastaken/wav2vec2-large-xlsr-indonesian-onnx
+- Modelo en Hugging Face: https://huggingface.co/nauvalwastaken/wav2vec2-large-xlsr-indonesian-onnx
 - Modelo base: https://huggingface.co/indonesian-nlp/wav2vec2-large-xlsr-indonesian
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código ni demos adicionales.

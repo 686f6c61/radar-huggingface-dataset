@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una fusión (merge) de tres checkpoints intermedios de un modelo de lenguaje de la familia `sfm_unfiltered_midtrain_misalignment`, desarrollado por el equipo de ByteDance (usuario `yuhengtu-bytedance`). Se trata de un experimento de investigación sobre los efectos del entrenamiento continuado en la alineación de modelos, basado en el método de fusión lineal implementado con la herramienta mergekit. El resultado es un modelo de 6.856 millones de parámetros (aproximadamente 6,8 mil millones) con arquitectura tipo GPT-NeoX, según los tags de HuggingFace.
+Este modelo es una fusión (merge) de tres checkpoints intermedios de un modelo de lenguaje de la familia `sfm_unfiltered_midtrain_misalignment`, desarrollado por el equipo de ByteDance (usuario `yuhengtu-bytedance`). Se trata de un experimento de investigación sobre los efectos del entrenamiento continuado en la alineación de modelos, basado en el método de fusión lineal implementado con la herramienta mergekit. El resultado es un modelo de 6.856 millones de parámetros (aproximadamente 6,8 mil millones) con arquitectura tipo GPT-NeoX, según los tags de Hugging Face.
 
 El modelo se construye a partir de los checkpoints correspondientes a los pasos globales 2000, 3000 y 4000 de un proceso de entrenamiento intermedio, fusionados con pesos iguales (1.0) y normalización activada. La fusión lineal (método descrito en el paper arXiv:2203.05482) promedia los pesos de los tres checkpoints, lo que pretende capturar las propiedades de diferentes etapas del entrenamiento. Este tipo de fusión se utiliza habitualmente para estudiar la dinámica de los modelos durante el entrenamiento y su impacto en el comportamiento final.
 
@@ -12,7 +12,7 @@ El modelo está pensado para la investigación en seguridad y alineación de IA,
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según tags de HuggingFace) |
+| Arquitectura | GPT-NeoX (según tags de Hugging Face) |
 | Parametros totales | 6.856.253.440 (6,8 B) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -33,7 +33,7 @@ La fusión se realizó en precisión float32 y se convirtió a bfloat16 para su 
 
 - Generación de texto: al ser un modelo de lenguaje autoregresivo de 6,8 B, es capaz de generar texto coherente en tareas de lenguaje natural, aunque no se han documentado capacidades específicas.
 - Investigación en alineación: su propósito principal es estudiar el efecto de la fusión de checkpoints intermedios en el comportamiento del modelo, especialmente en lo relativo a sesgos y desalineación.
-- Compatibilidad con transformers: el modelo está etiquetado para la librería transformers y es compatible con text-generation-inference y endpoints de HuggingFace.
+- Compatibilidad con transformers: el modelo está etiquetado para la librería transformers y es compatible con text-generation-inference y endpoints de Hugging Face.
 - No se han documentado capacidades de tool calling, agentes, razonamiento multi-paso, visión, audio u otras modalidades.
 
 ## Casos de uso
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables específicos para este a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-2k_3k_4k_merge
+- Repositorio Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-2k_3k_4k_merge
 - Modelo relacionado de geodesic-research: https://huggingface.co/geodesic-research/sfm_unfiltered_midtrain_misalignment_upsampled_dpo
 - Página de despliegue en FriendliAI: https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg (variante similar con otros pasos)
 - Paper sobre fusión de modelos: arXiv:2203.05482

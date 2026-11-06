@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Astro Image Classifier es un modelo de clasificacion de imagenes desarrollado por el usuario MA29 (repo HuggingFace `MA29/astro-image-classifier`). Se trata de un ensemble de dos ramas CNN con transfer learning que clasifica imagenes astronomicas en 11 clases: `black_hole`, `earth`, `galaxy`, `jupiter`, `mars`, `mercury`, `neptune`, `pluto`, `saturn`, `uranus` y `venus`. No es un modelo de lenguaje: es un clasificador de vision por computador con entrada fija de 224x224x3 en RGB.
+Astro Image Classifier es un modelo de clasificacion de imagenes desarrollado por el usuario MA29 (repo Hugging Face `MA29/astro-image-classifier`). Se trata de un ensemble de dos ramas CNN con transfer learning que clasifica imagenes astronomicas en 11 clases: `black_hole`, `earth`, `galaxy`, `jupiter`, `mars`, `mercury`, `neptune`, `pluto`, `saturn`, `uranus` y `venus`. No es un modelo de lenguaje: es un clasificador de vision por computador con entrada fija de 224x224x3 en RGB.
 
 El modelo combina dos backbones clasicos inicializados con ImageNet, VGG19 y DenseNet201, parcialmente descongelados y con cabezas personalizadas. La prediccion final se obtiene promediando las dos salidas softmax de 11 clases. El conjunto suma 40.056.982 parametros y se distribuye en formato nativo de Keras 3.10, con el estado del optimizador eliminado, por lo que es un artefacto exclusivamente de inferencia.
 
@@ -104,7 +104,7 @@ El autor solo proporciona comparacion interna entre las dos ramas del ensemble, 
 
 | Alternativa | Parametros | Precision en test | Contexto de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ensemble (este modelo) | 40.056.982 | 0,9910 | 224x224x3 | MIT | HuggingFace, Space y GitHub |
+| Ensemble (este modelo) | 40.056.982 | 0,9910 | 224x224x3 | MIT | Hugging Face, Space y GitHub |
 | Rama DenseNet201 sola | No disponible | 0,9888 | 224x224x3 | MIT | Incluida en el propio ensemble |
 | Rama VGG19 sola | No disponible | 0,9888 | 224x224x3 | MIT | Incluida en el propio ensemble |
 
@@ -126,7 +126,7 @@ No se dispone de datos en la informacion proporcionada para comparar con otros c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MA29/astro-image-classifier
-- Demo (HuggingFace Space): https://huggingface.co/spaces/MA29/astro-image-classifier
+- Modelo en Hugging Face: https://huggingface.co/MA29/astro-image-classifier
+- Demo (Hugging Face Space): https://huggingface.co/spaces/MA29/astro-image-classifier
 - Codigo fuente (GitHub): https://github.com/Majd1029/Astro-Image-Classifier
 - Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores son los unicos proporcionados por el autor.

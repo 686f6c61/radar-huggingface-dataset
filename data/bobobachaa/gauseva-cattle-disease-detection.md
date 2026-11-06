@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bobobachaa/gauseva-cattle-disease-detection` es un repositorio publicado en HuggingFace por el usuario `bobobachaa` bajo licencia MIT. A pesar de su nombre, que sugiere un sistema de deteccion de enfermedades del ganado vacuno, la model card publicada no contiene ninguna descripcion tecnica del modelo: unicamente declara la licencia MIT. No se especifica arquitectura, tamano, datos de entrenamiento ni tarea concreta.
+`bobobachaa/gauseva-cattle-disease-detection` es un repositorio publicado en Hugging Face por el usuario `bobobachaa` bajo licencia MIT. A pesar de su nombre, que sugiere un sistema de deteccion de enfermedades del ganado vacuno, la model card publicada no contiene ninguna descripcion tecnica del modelo: unicamente declara la licencia MIT. No se especifica arquitectura, tamano, datos de entrenamiento ni tarea concreta.
 
 El repositorio tiene un tamano de 0.0 GB, lo que indica que no contiene pesos de modelo descargables o que estos no se han subido. No registra descargas ni likes, y la pipeline no esta declarada. Fue creado y actualizado el 28 de octubre de 2026, con apenas media hora entre ambas fechas, lo que sugiere una publicacion de prueba o un repositorio en estado inicial.
 
@@ -72,5 +72,5 @@ No disponible. No se puede establecer una comparativa con alternativas de la mis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bobobachaa/gauseva-cattle-disease-detection
+- Repositorio en Hugging Face: https://huggingface.co/bobobachaa/gauseva-cattle-disease-detection
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

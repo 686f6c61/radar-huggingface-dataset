@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vosldtgbj/project-llm-rlvr-dynamic-v2-step-75` es un checkpoint de pesos completos en BF16 dentro de una trayectoria de aprendizaje por refuerzo con verificación (RLVR) sobre un modelo Gemma 4 de aproximadamente 12.000 millones de parametros. Lo publica el usuario `vosldtgbj` y su modelo base directo es `vosldtgbj/project-llm-rlvr-dynamic-v2-step-50`, que a su vez hereda los parametros de RLVR v1 step 125. El pipeline declarado en HuggingFace es `any-to-any`, aunque la model card indica explicitamente que el entrenamiento solo afecta a tareas de texto: las torres de vision y audio permanecen congeladas.
+El modelo `vosldtgbj/project-llm-rlvr-dynamic-v2-step-75` es un checkpoint de pesos completos en BF16 dentro de una trayectoria de aprendizaje por refuerzo con verificación (RLVR) sobre un modelo Gemma 4 de aproximadamente 12.000 millones de parametros. Lo publica el usuario `vosldtgbj` y su modelo base directo es `vosldtgbj/project-llm-rlvr-dynamic-v2-step-50`, que a su vez hereda los parametros de RLVR v1 step 125. El pipeline declarado en Hugging Face es `any-to-any`, aunque la model card indica explicitamente que el entrenamiento solo afecta a tareas de texto: las torres de vision y audio permanecen congeladas.
 
 El checkpoint corresponde al paso local 75 de la fase RLVR v2 (paso acumulado 200 de toda la trayectoria), es decir, 75 actualizaciones del optimizador desde el inicio de v2. La relevancia de este tipo de publicaciones es que expone la evolucion intermedia de un pipeline completo de ajuste (CPT, SFT y RLVR con GRPO sincrono) sobre Gemma 4, con datos de entrenamiento documentados y verificadores deterministas, lo que permite reproducir el entrenamiento desde cualquier punto o inicializar nuevos experimentos.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos. Cualquie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vosldtgbj/project-llm-rlvr-dynamic-v2-step-75
+- Modelo en Hugging Face: https://huggingface.co/vosldtgbj/project-llm-rlvr-dynamic-v2-step-75
 - Modelo base directo (v2 step 50): https://huggingface.co/vosldtgbj/project-llm-rlvr-dynamic-v2-step-50
 - Siguiente checkpoint publico (v2 step 100): https://huggingface.co/vosldtgbj/project-llm-rlvr-dynamic-v2-step-100
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
@@ -106,4 +106,4 @@ No se dispone de datos de rendimiento comparativos entre estos modelos. Cualquie
 - Dataset de dominio RLVR v1: https://huggingface.co/datasets/vosldtgbj/project-llm-dataset-rlvr-domain-v1
 - Modelo original de la familia: https://huggingface.co/google/gemma-4-12B-it
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; todos los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace, no de la busqueda.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; todos los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face, no de la busqueda.

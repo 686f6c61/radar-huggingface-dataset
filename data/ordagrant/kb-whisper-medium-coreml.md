@@ -80,7 +80,7 @@ La diferencia principal frente al modelo base es el formato: este artefacto esta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ordagrant/kb-whisper-medium-coreml
+- Repositorio Hugging Face: https://huggingface.co/Ordagrant/kb-whisper-medium-coreml
 - Modelo base: https://huggingface.co/KBLab/kb-whisper-medium
 - Proyecto Ordagrant: https://github.com/svenclaesson/ordagrant
 - WhisperKit (Argmax): no disponible en la informacion proporcionada

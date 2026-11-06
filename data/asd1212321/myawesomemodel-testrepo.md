@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario ASD1212321 bajo licencia MIT. Segun los metadatos de la plataforma, esta etiquetado con la arquitectura BERT y la tarea de feature-extraction, con la libreria transformers y pesos en PyTorch. El repositorio ocupa 0.0 GB y no registra descargas ni likes, lo que apunta a un espacio de prueba o a un modelo sin pesos publicados.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario ASD1212321 bajo licencia MIT. Segun los metadatos de la plataforma, esta etiquetado con la arquitectura BERT y la tarea de feature-extraction, con la libreria transformers y pesos en PyTorch. El repositorio ocupa 0.0 GB y no registra descargas ni likes, lo que apunta a un espacio de prueba o a un modelo sin pesos publicados.
 
-Existe una contradiccion relevante entre los metadatos y la model card. Mientras las etiquetas de HuggingFace describen un encoder tipo BERT para extraccion de caracteristicas, el README describe un supuesto modelo de razonamiento conversacional con mejoras en matematicas, programacion y logica, e incluso menciona capacidades de function calling, busqueda web y una variante llamada MyAwesomeModel-Small. Ninguna de esas afirmaciones se puede verificar con la informacion disponible.
+Existe una contradiccion relevante entre los metadatos y la model card. Mientras las etiquetas de Hugging Face describen un encoder tipo BERT para extraccion de caracteristicas, el README describe un supuesto modelo de razonamiento conversacional con mejoras en matematicas, programacion y logica, e incluso menciona capacidades de function calling, busqueda web y una variante llamada MyAwesomeModel-Small. Ninguna de esas afirmaciones se puede verificar con la informacion disponible.
 
 Por tanto, esta ficha debe leerse con cautela: se trata de un repositorio de prueba, sin pesos aparentes, sin idiomas declarados y con una model card que parece una plantilla generica con resultados de ejemplo. La relevancia practica actual es minima, y se documenta aqui sobre todo para dejar constancia de la inconsistencia entre la ficha tecnica y los metadatos reales del repositorio.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha debe leerse con cautela: se trata de un repositorio de pru
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (segun etiquetas de HuggingFace); la model card sugiere un modelo de razonamiento, dato no confirmado |
+| Arquitectura | BERT (segun etiquetas de Hugging Face); la model card sugiere un modelo de razonamiento, dato no confirmado |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -29,7 +29,7 @@ La model card, en cambio, afirma que el modelo ha recibido una actualizacion de 
 
 ## Capacidades
 
-- Extraccion de caracteristicas (feature-extraction), segun el pipeline declarado en HuggingFace. Es la unica capacidad respaldada por los metadatos del repositorio.
+- Extraccion de caracteristicas (feature-extraction), segun el pipeline declarado en Hugging Face. Es la unica capacidad respaldada por los metadatos del repositorio.
 - Generacion de texto y razonamiento: mencionados de forma generica en la model card, sin evidencia tecnica que los respalde.
 - Razonamiento matematico y logico: afirmado en la model card, sin datos verificables.
 - Generacion de codigo: afirmada en la model card mediante una categoria generica de benchmark.
@@ -78,7 +78,7 @@ Ademas, la model card menciona un resultado de AIME 2025 (87,5 % de precision) s
 - VRAM estimada para inferencia: no disponible. El repositorio ocupa 0.0 GB, por lo que no hay pesos sobre los que calcular requisitos.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible; no puede confirmarse sin conocer el tamano real del modelo.
-- Opciones de despliegue: los metadatos declaran compatibilidad con `endpoints_compatible` y la libreria `transformers`, de modo que el despliegue pasaria por HuggingFace Inference Endpoints o por `transformers` en Python. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: los metadatos declaran compatibilidad con `endpoints_compatible` y la libreria `transformers`, de modo que el despliegue pasaria por Hugging Face Inference Endpoints o por `transformers` en Python. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -104,7 +104,7 @@ No es posible establecer una comparativa fiable. La model card no identifica los
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASD1212321/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/ASD1212321/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Blog o documentacion oficial: no disponible
 - Repositorio de codigo: no disponible

@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Pasos de inferencia | Resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZImage-4Step-3000 | 6,19 mil millones | 4 | 1024×1024 | Apache-2.0 | HuggingFace (kimi000/ZImage-4Step-3000) |
-| Tongyi-MAI/Z-Image (base) | No disponible en la informacion | No disponible | No disponible | No disponible en la informacion | HuggingFace (Tongyi-MAI/Z-Image) |
+| ZImage-4Step-3000 | 6,19 mil millones | 4 | 1024×1024 | Apache-2.0 | Hugging Face (kimi000/ZImage-4Step-3000) |
+| Tongyi-MAI/Z-Image (base) | No disponible en la informacion | No disponible | No disponible | No disponible en la informacion | Hugging Face (Tongyi-MAI/Z-Image) |
 | Otros modelos de difusion destilados | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas del modelo base en la informacion proporcionada, por lo que la comparativa cuantitativa de rendimiento no esta disponible.
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas del model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kimi000/ZImage-4Step-3000
+- Modelo en Hugging Face: https://huggingface.co/kimi000/ZImage-4Step-3000
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image
 - Demo CLI y dependencias: incluidas en el repositorio (`demo.py`, `requirements.txt`)
 - Configuracion de entrenamiento: `training_config.yml` en el repositorio

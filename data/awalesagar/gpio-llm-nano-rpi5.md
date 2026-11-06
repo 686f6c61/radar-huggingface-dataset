@@ -81,9 +81,9 @@ La familia GPIO-LLM publica tres tallas del mismo autor y misma tarea. Solo la t
 
 | Modelo | Parametros | Contexto | Tarea | Exact match (eval) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| gpio-llm-nano-rpi5 | 4.960.704 | 256 tokens | Peticion en ingles → accion GPIO JSON | 93,61 % | cc-by-4.0 | HuggingFace + motor C |
-| gpio-llm-pico-rpi5 | no disponible | no disponible | Peticion en ingles → accion GPIO JSON | no disponible | no disponible | HuggingFace |
-| gpio-llm-base-rpi5 | no disponible | no disponible | Peticion en ingles → accion GPIO JSON | no disponible | no disponible | HuggingFace |
+| gpio-llm-nano-rpi5 | 4.960.704 | 256 tokens | Peticion en ingles → accion GPIO JSON | 93,61 % | cc-by-4.0 | Hugging Face + motor C |
+| gpio-llm-pico-rpi5 | no disponible | no disponible | Peticion en ingles → accion GPIO JSON | no disponible | no disponible | Hugging Face |
+| gpio-llm-base-rpi5 | no disponible | no disponible | Peticion en ingles → accion GPIO JSON | no disponible | no disponible | Hugging Face |
 | Modelos de proposito general de tamano equivalente (por ejemplo de la familia SmolLM) | no disponible | no disponible | Generacion de texto general | no disponible | no disponible | no disponible |
 
 No se dispone de resultados comparativos frente a modelos generalistas del mismo orden de parámetros, ni en la model card ni en los resultados de búsqueda web, que no devolvieron documentación técnica relevante sobre este modelo.
@@ -98,12 +98,12 @@ No se dispone de resultados comparativos frente a modelos generalistas del mismo
 - Idioma: únicamente inglés. No hay evaluación de peticiones en castellano ni en ningún otro idioma.
 - Licencia cc-by-4.0: permite uso comercial con atribución, pero impone condiciones de cita y no incluye garantías.
 - Adopción nula: 0 descargas y 0 «likes» en el momento de la consulta, y tamaño de repositorio reportado de 0,0 GB; no hay evidencia de uso en producción ni de validación independiente de las métricas.
-- Dependencia de artefactos propios: el despliegue int8 requiere el motor C, el tokenizador `.gltk` y la gramática del repositorio de GitHub, fuera del ecosistema estándar de HuggingFace.
+- Dependencia de artefactos propios: el despliegue int8 requiere el motor C, el tokenizador `.gltk` y la gramática del repositorio de GitHub, fuera del ecosistema estándar de Hugging Face.
 - Fecha de publicación futura en los metadatos (2026-09-19), lo que conviene tener en cuenta al citarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AwaleSagar/gpio-llm-nano-rpi5
+- Modelo en Hugging Face: https://huggingface.co/AwaleSagar/gpio-llm-nano-rpi5
 - Repositorio de código, motor C y scripts de entrenamiento: https://github.com/AwaleSagar/gpio-llm
 - Dataset de acciones GPIO: https://huggingface.co/datasets/AwaleSagar/gpio-llm-rpi5-actions
 - Modelo hermano de talla menor: https://huggingface.co/AwaleSagar/gpio-llm-pico-rpi5

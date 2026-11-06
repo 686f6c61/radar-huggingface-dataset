@@ -60,6 +60,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace - efe-T/Experiment-1-A-xIELU-CPT](https://huggingface.co/efe-T/Experiment-1-A-xIELU-CPT)
+- [Hugging Face - efe-T/Experiment-1-A-xIELU-CPT](https://huggingface.co/efe-T/Experiment-1-A-xIELU-CPT)
 - [GitHub - rubber-duck-debug/xielu (implementación de XIELU)](https://github.com/rubber-duck-debug/XIELU)
-- [Perfil de efe-T en HuggingFace](https://huggingface.co/efe-T/models)
+- [Perfil de efe-T en Hugging Face](https://huggingface.co/efe-T/models)

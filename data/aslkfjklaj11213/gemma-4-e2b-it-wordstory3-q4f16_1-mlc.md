@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gemma-4-E2B-it-wordstory3-q4f16_1-MLC` es una versión modificada del modelo `google/gemma-4-E2B-it`, publicada por el usuario `aslkfjklaj11213` en HuggingFace. Se trata de un fine-tuning con LoRA (r=16, 3 épocas, fusionado a escala 1.0) sobre 300 cuentos infantiles cortos en coreano, escritos específicamente para este proyecto con vocabulario de diccionario común. El objetivo es que el modelo, dado un conjunto de 6-8 palabras en inglés con sus significados en coreano, genere un título, una trama de una línea, un cuento corto con marcadores `{english|korean}` por cada palabra y una descripción de imagen en inglés para cada término.
+`gemma-4-E2B-it-wordstory3-q4f16_1-MLC` es una versión modificada del modelo `google/gemma-4-E2B-it`, publicada por el usuario `aslkfjklaj11213` en Hugging Face. Se trata de un fine-tuning con LoRA (r=16, 3 épocas, fusionado a escala 1.0) sobre 300 cuentos infantiles cortos en coreano, escritos específicamente para este proyecto con vocabulario de diccionario común. El objetivo es que el modelo, dado un conjunto de 6-8 palabras en inglés con sus significados en coreano, genere un título, una trama de una línea, un cuento corto con marcadores `{english|korean}` por cada palabra y una descripción de imagen en inglés para cada término.
 
 El modelo está empaquetado en el formato q4f16_1 de MLC-LLM, reutilizando el layout de ficheros de `mlc-ai/gemma-4-E2B-it-q4f16_1-MLC`. Solo difieren los pesos lineales de las capas de texto (q/k/v/o, gate_up, down) respecto a ese repositorio, por lo que debe usarse con la misma librería de modelos de WebLLM (`gemma-4-E2B-it-q4f16_1`). El repositorio ocupa 2,9 GB e incluye el adaptador LoRA sin fusionar en el subdirectorio `lora-adapter/`.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aslkfjklaj11213/gemma-4-E2B-it-wordstory3-q4f16_1-MLC | no disponible | no disponible | q4f16_1 | Apache 2.0 | HuggingFace, WebLLM |
-| google/gemma-4-E2B-it (base) | no disponible | no disponible | completa (original) | Apache 2.0 | HuggingFace |
-| mlc-ai/gemma-4-E2B-it-q4f16_1-MLC | no disponible | no disponible | q4f16_1 | Apache 2.0 | HuggingFace, WebLLM |
+| aslkfjklaj11213/gemma-4-E2B-it-wordstory3-q4f16_1-MLC | no disponible | no disponible | q4f16_1 | Apache 2.0 | Hugging Face, WebLLM |
+| google/gemma-4-E2B-it (base) | no disponible | no disponible | completa (original) | Apache 2.0 | Hugging Face |
+| mlc-ai/gemma-4-E2B-it-q4f16_1-MLC | no disponible | no disponible | q4f16_1 | Apache 2.0 | Hugging Face, WebLLM |
 
 La comparación se limita a estos tres artefactos porque la información proporcionada no incluye datos de rendimiento ni de arquitectura que permitan contrastar con otras familias de modelos del mismo tamaño. La diferencia principal entre ellos es el fine-tuning coreano y la sustitución de pesos lineales en la versión `wordstory3`.
 
@@ -81,7 +81,7 @@ La comparación se limita a estos tres artefactos porque la información proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aslkfjklaj11213/gemma-4-E2B-it-wordstory3-q4f16_1-MLC
+- Modelo en Hugging Face: https://huggingface.co/aslkfjklaj11213/gemma-4-E2B-it-wordstory3-q4f16_1-MLC
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Repositorio MLC de referencia: https://huggingface.co/mlc-ai/gemma-4-E2B-it-q4f16_1-MLC
 - Proyecto del juego de palabras: https://github.com/areweloststars/-

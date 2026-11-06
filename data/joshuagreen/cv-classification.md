@@ -65,12 +65,12 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 - **Riesgo de alucinación**: no aplica, ya que no es un modelo generativo de lenguaje.
 - **Limitaciones de contexto e idioma**: no se especifican, pero al ser un modelo de clasificación genérico, no tiene soporte lingüístico declarado.
 - **Restricciones de licencia**: la licencia BSD-3-Clause permite uso comercial y modificación, pero el autor advierte que se deben revisar los términos de los datos externos si se usa con conjuntos de datos propios.
-- **Carga automática no trivial**: al ser una implementación personalizada, las APIs genéricas de HuggingFace no lo cargarán sin un adaptador explícito.
+- **Carga automática no trivial**: al ser una implementación personalizada, las APIs genéricas de Hugging Face no lo cargarán sin un adaptador explícito.
 - **Resultados futuros deben documentarse por separado**: cualquier resultado de un checkpoint entrenado debe publicarse con sus propios logs y entorno, no con los valores por defecto del repositorio.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/joshuagreen/cv-classification)
+- [Repositorio en Hugging Face](https://huggingface.co/joshuagreen/cv-classification)
 - [Perfil de GitHub del autor](https://github.com/Joshua-Green-ai/)
 - [Artículo relacionado: Optimizing Automatic CV Classification with Contrastive and Generative Models](https://www.sciencedirect.com/science/article/pii/S1877050925022409)
 - [PDF: Optimizing Curriculum Vitae Concordance: A Comparative Examination of Classical Machine Learning Algorithms and Large Language Model Architectures](https://www.researchgate.net/publication/382928041_Optimizing_Curriculum_Vitae_Concordance_A_Comparative_Examination_of_Classical_Machine_Learning_Algorithms_and_Large_Language_Model_Architectures)

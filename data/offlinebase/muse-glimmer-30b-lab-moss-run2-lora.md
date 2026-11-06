@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Muse-Glimmer-30B-Lab-Moss-Run2-LoRA (este) | adaptador sobre base 30B | no disponible | apache-2.0 | repositorio privado según el autor |
-| unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit | 30B (base) | no disponible | apache-2.0 (base) | público en HuggingFace |
+| unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit | 30B (base) | no disponible | apache-2.0 (base) | público en Hugging Face |
 | Muse Glimmer 30B (Meta, original) | 30B | no disponible | apache-2.0 + Usage Policy | no disponible en la información proporcionada |
 
 No se dispone de datos de rendimiento comparables entre estos artefactos; la comparativa se limita a parámetros, licencia y disponibilidad.
@@ -90,6 +90,6 @@ No se dispone de datos de rendimiento comparables entre estos artefactos; la com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Lab-Moss-Run2-LoRA
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit
+- Hugging Face: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Lab-Moss-Run2-LoRA
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit
 - No se han encontrado en la información disponible papers, blogs, repositorios adicionales ni demos.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Ammu-1.0-OffOnTopic-Guardrail-small es un modelo de clasificacion de texto publicado en HuggingFace por el usuario kalyan-ks. Por su nombre y por la etiqueta de pipeline (`text-classification`), esta disenado como un clasificador de guardrail que distingue entre consultas o mensajes dentro de tema (on-topic) y fuera de tema (off-topic), presumiblemente para filtrar entradas en sistemas conversacionales o pipelines de recuperacion. El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, por lo que se trata de una publicacion reciente y sin adopcion documentada.
+Ammu-1.0-OffOnTopic-Guardrail-small es un modelo de clasificacion de texto publicado en Hugging Face por el usuario kalyan-ks. Por su nombre y por la etiqueta de pipeline (`text-classification`), esta disenado como un clasificador de guardrail que distingue entre consultas o mensajes dentro de tema (on-topic) y fuera de tema (off-topic), presumiblemente para filtrar entradas en sistemas conversacionales o pipelines de recuperacion. El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, por lo que se trata de una publicacion reciente y sin adopcion documentada.
 
 El dato tecnico mas solido disponible es el recuento de parametros leido de los pesos en safetensors: 68.408.322 parametros, con un tamano de repositorio de 0,3 GB. La etiqueta `modernbert` indica que se apoya en la familia de codificadores ModernBERT, aunque la model card no confirma explicitamente la arquitectura base ni el checkpoint del que deriva.
 
-La relevancia de este modelo es limitada a dia de hoy: la model card es la plantilla automatica de HuggingFace con la mayoria de campos marcados como "[More Information Needed]", no se declara licencia, no se declaran idiomas y no hay resultados de evaluacion. Cualquier evaluacion seria exige inspeccionar los pesos y el tokenizador del repositorio antes de considerarlo para produccion.
+La relevancia de este modelo es limitada a dia de hoy: la model card es la plantilla automatica de Hugging Face con la mayoria de campos marcados como "[More Information Needed]", no se declara licencia, no se declaran idiomas y no hay resultados de evaluacion. Cualquier evaluacion seria exige inspeccionar los pesos y el tokenizador del repositorio antes de considerarlo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La relevancia de este modelo es limitada a dia de hoy: la model card es la plant
 | Licencia | no disponible |
 | Formato de pesos | safetensors (libreria declarada: transformers) |
 
-Datos adicionales verificables del repositorio: tamano 0,3 GB, tarea declarada `text-classification`, compatible con `text-embeddings-inference` y con endpoints de HuggingFace, region `us`, creado y actualizado el 2026-10-16.
+Datos adicionales verificables del repositorio: tamano 0,3 GB, tarea declarada `text-classification`, compatible con `text-embeddings-inference` y con endpoints de Hugging Face, region `us`, creado y actualizado el 2026-10-16.
 
 ## Arquitectura y entrenamiento
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - A estas cifras hay que sumar el overhead de activaciones, memoria del tokenizador y buffers del runtime; en la practica, un presupuesto de 1 a 2 GB de VRAM cubre con holgura la inferencia en precision completa para lotes moderados.
 - GPU recomendadas: no hay recomendacion oficial. Por tamano, cualquier GPU con al menos 2 GB de VRAM es suficiente, incluidas GTX 1650, RTX 3050, RTX 4090, A100 o H100. El modelo tambien es viable en CPU.
 - Cabe en GPU de consumo: si, con margen amplio, en practicamente cualquier GPU de consumo moderna e incluso en hardware integrado.
-- Opciones de despliegue: transformers como libreria principal; text-embeddings-inference segun los tags; endpoints de HuggingFace segun el tag `endpoints_compatible`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, y al ser un codificador de clasificacion no cabe esperar soporte de llama.cpp u Ollama sin conversion adicional.
+- Opciones de despliegue: transformers como libreria principal; text-embeddings-inference segun los tags; endpoints de Hugging Face segun el tag `endpoints_compatible`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, y al ser un codificador de clasificacion no cabe esperar soporte de llama.cpp u Ollama sin conversion adicional.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No se dispone de datos verificados de modelos comparables dentro de la informaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kalyan-ks/Ammu-1.0-OffOnTopic-Guardrail-small | 68.408.322 | no disponible | no disponible | HuggingFace, 0 descargas |
+| kalyan-ks/Ammu-1.0-OffOnTopic-Guardrail-small | 68.408.322 | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria (clasificadores de guardrail y codificadores pequenos) | no disponible | no disponible | no disponible | no disponible |
 
 Cualquier comparacion con otros clasificadores de tematica o de seguridad requiere ejecutar ambos modelos sobre un conjunto de evaluacion comun, que en este caso no existe ni para el modelo analizado.
@@ -95,7 +95,7 @@ Cualquier comparacion con otros clasificadores de tematica o de seguridad requie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kalyan-ks/Ammu-1.0-OffOnTopic-Guardrail-small
+- Modelo en Hugging Face: https://huggingface.co/kalyan-ks/Ammu-1.0-OffOnTopic-Guardrail-small
 - Referencia citada en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental enlazada en la plantilla: https://mlco2.github.io/impact#compute
 - Repositorio de codigo: no disponible

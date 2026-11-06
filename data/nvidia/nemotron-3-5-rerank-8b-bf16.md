@@ -6,7 +6,7 @@ Nemotron-3.5-Rerank-8B-BF16 es un modelo de reranking (cross-encoder) desarrolla
 
 El modelo parte del backbone Ministral-3-8B-Instruct-2512-BF16 de Mistral AI y se ha reconvertido en reranker mediante un entrenamiento en dos fases: primero con mezclas de datos solo de texto y después con datos de imagen y de imagen más texto. Incorpora un encoder de visión basado en Pixtral y una torre de lenguaje Ministral3 bidireccional, con 8.381.159.424 parámetros totales (8,38B) y una longitud de contexto máxima de 32.768 tokens. La resolución por defecto de la imagen es `longest_edge` de 1.120 píxeles, ampliable a 1.540.
 
-Su relevancia actual radica en que cubre la fase de reranking de sistemas de recuperación multimodales, un componente crítico para mejorar la precisión de los documentos recuperados antes de la generación. Se distribuye con licencia OpenMDW-1.1 y está listo, según el autor, para uso comercial y no comercial. En el momento de la consulta acumula 662 descargas y 15 "likes" en HuggingFace.
+Su relevancia actual radica en que cubre la fase de reranking de sistemas de recuperación multimodales, un componente crítico para mejorar la precisión de los documentos recuperados antes de la generación. Se distribuye con licencia OpenMDW-1.1 y está listo, según el autor, para uso comercial y no comercial. En el momento de la consulta acumula 662 descargas y 15 "likes" en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -85,11 +85,11 @@ La información proporcionada no incluye especificaciones ni resultados de model
 - Restricciones de licencia: el modelo se rige por OpenMDW-1.1, que permite uso comercial y no comercial según la model card, pero conviene revisar el texto completo de la licencia. El modelo base Ministral-3-8B-Instruct-2512-BF16 está bajo Apache 2.0, con términos adicionales aplicables.
 - Caveat de producción: no hay cuantizaciones publicadas (GGUF, AWQ, GPTQ) en la información disponible, lo que limita el despliegue en hardware de gama media y encarece el escalado.
 - Dependencia de versiones: los ejemplos oficiales requieren `transformers==5.20.0` y Flash Attention 2; el entrenamiento se hizo con `transformers==5.12.1`, y el autor advierte de que las salidas pueden variar según hardware y runtime.
-- La fecha de publicación indicada en la model card (20/10/2026) es posterior a la fecha de creación del repositorio en HuggingFace (15/10/2026); conviene tratar las fechas con cautela.
+- La fecha de publicación indicada en la model card (20/10/2026) es posterior a la fecha de creación del repositorio en Hugging Face (15/10/2026); conviene tratar las fechas con cautela.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16
+- Modelo en Hugging Face: https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
 - Modelo base Ministral-3-8B-Instruct-2512-BF16: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-BF16
 - Licencia del modelo base (Apache 2.0): https://www.apache.org/licenses/LICENSE-2.0.txt

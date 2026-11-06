@@ -116,7 +116,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/snupilab/theta-bench-dreamzero5b-real-g1-91
+- Repositorio del modelo en Hugging Face: https://huggingface.co/snupilab/theta-bench-dreamzero5b-real-g1-91
 - Modelo base (inicializacion): https://huggingface.co/snupilab/theta-bench-dreamzero5b-sim-3003
 - Dataset de teleoperacion: https://huggingface.co/datasets/snupilab/theta-bench-teleop
 - Datos de entrenamiento fijados por revision: https://huggingface.co/datasets/snupilab/theta-bench-teleop/tree/47eca9322bb53fa1c685363271a87d2e414cb0e8/hardware

@@ -73,9 +73,9 @@ Advertencias del autor: el ranking es descriptivo sobre medias, con seis semilla
 
 | Modelo | Parámetros | Contexto | NMSE 12 pasos (radiativo) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GPhyT standard (este modelo) | no disponible | 4 fotogramas | 0,39277 | MIT | HuggingFace, 6 semillas |
-| GPhyT + Block Attention Residuals | no disponible | 4 fotogramas | 0,28917 | MIT (estudio) | HuggingFace, 6 semillas |
-| GPhyT + Full / Uniform Block Attention Residuals | no disponible | 4 fotogramas | no disponible en la información | MIT (estudio) | HuggingFace, 3 semillas exploratorias |
+| GPhyT standard (este modelo) | no disponible | 4 fotogramas | 0,39277 | MIT | Hugging Face, 6 semillas |
+| GPhyT + Block Attention Residuals | no disponible | 4 fotogramas | 0,28917 | MIT (estudio) | Hugging Face, 6 semillas |
+| GPhyT + Full / Uniform Block Attention Residuals | no disponible | 4 fotogramas | no disponible en la información | MIT (estudio) | Hugging Face, 3 semillas exploratorias |
 | Persistencia (baseline trivial) | 0 | no aplica | 0,41901 | no aplica | no aplica |
 
 La comparación con modelos de lenguaje de tamaño similar no procede: se trata de un surrogate físico de dominio específico y las métricas no son transferibles.
@@ -95,7 +95,7 @@ La comparación con modelos de lenguaje de tamaño similar no procede: se trata 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BurnyCoder/gphyt-attnres-standard
+- Hugging Face: https://huggingface.co/BurnyCoder/gphyt-attnres-standard
 - Repositorio del estudio: https://github.com/BurnyCoder/general-physics-attention-residuals-transformer
 - Tabla de baselines y ejemplos de campos físicos: https://github.com/BurnyCoder/general-physics-attention-residuals-transformer#readme
 - Interpretación medida (effect sizes, incertidumbre, fallos absolutos): https://github.com/BurnyCoder/general-physics-attention-residuals-transformer/blob/main/reports/interpretation.md

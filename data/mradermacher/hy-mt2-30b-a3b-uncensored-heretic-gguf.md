@@ -70,7 +70,7 @@ No se dispone de datos comparativos con otros modelos de traducción multilingü
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/Hy-MT2-30B-A3B-uncensored-heretic-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/Hy-MT2-30B-A3B-uncensored-heretic-GGUF
 - Repositorio de Tencent Hunyuan: https://github.com/Tencent-Hunyuan/Hy-MT2
 - Artículo de investigación (arXiv): https://arxiv.org/html/2605.22064v1
 - Repositorio GGUF del modelo base (mradermacher): https://huggingface.co/mradermacher/Hy-MT2-30B-A3B-GGUF

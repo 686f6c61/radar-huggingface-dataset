@@ -4,7 +4,7 @@
 
 Qwen3.5-9B-Brainwaves es un modelo de lenguaje desarrollado por nightmedia, construido a partir del modelo base Qwen3.5-9B de Alibaba mediante técnicas de fusión (merge) y destilación. El modelo está diseñado para potenciar el razonamiento de cadena de pensamiento larga (long-CoT), la escritura creativa y la generación de ficción, combinando las capacidades de dos modelos derivados: Qwen3.5-9B-Holodeck-Lounge y Wichtelchen-Qwen3.5-9B. Se distribuye bajo licencia Apache 2.0 y soporta múltiples idiomas (inglés, chino, japonés y español).
 
-El modelo hereda la arquitectura densa de 9 mil millones de parámetros del Qwen3.5-9B, con una ventana de contexto amplia (los tags indican 256k y 1M tokens, aunque el modelo base oficial declara 262K). Incluye características avanzadas como multi-token prediction, decodificación especulativa y soporte para razonamiento extendido, lo que lo hace relevante para aplicaciones que requieren comprensión profunda de documentos largos y generación de texto coherente en tareas complejas. Su acceso está restringido en HuggingFace, por lo que es necesario aceptar condiciones previas para su uso.
+El modelo hereda la arquitectura densa de 9 mil millones de parámetros del Qwen3.5-9B, con una ventana de contexto amplia (los tags indican 256k y 1M tokens, aunque el modelo base oficial declara 262K). Incluye características avanzadas como multi-token prediction, decodificación especulativa y soporte para razonamiento extendido, lo que lo hace relevante para aplicaciones que requieren comprensión profunda de documentos largos y generación de texto coherente en tareas complejas. Su acceso está restringido en Hugging Face, por lo que es necesario aceptar condiciones previas para su uso.
 
 ## Especificaciones técnicas
 
@@ -67,7 +67,7 @@ La comparativa se basa en características generales; no hay datos de rendimient
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace, por lo que requiere aceptar condiciones de uso antes de descargarlo.
+- Acceso restringido: el modelo es gated en Hugging Face, por lo que requiere aceptar condiciones de uso antes de descargarlo.
 - Sesgos del modelo base: al derivar de Qwen3.5-9B, puede heredar sesgos presentes en los datos de entrenamiento originales, especialmente en temas sensibles.
 - Riesgo de alucinación: en tareas de razonamiento largo, el modelo puede generar pasos intermedios plausibles pero incorrectos, especialmente en dominios especializados.
 - Limitaciones de idioma: aunque soporta español, el rendimiento puede ser inferior al de inglés o chino, que son los idiomas principales del modelo base.
@@ -77,7 +77,7 @@ La comparativa se basa en características generales; no hay datos de rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nightmedia/Qwen3.5-9B-Brainwaves
+- Modelo en Hugging Face: https://huggingface.co/nightmedia/Qwen3.5-9B-Brainwaves
 - Variante MLX (cuantización qx86): https://huggingface.co/nightmedia/Qwen3.5-9B-Brainwaves-qx86-hi-mlx
 - Página del modelo base Qwen3.5-9B en LLM Releases: https://www.llm-releases.com/models/qwen3-5-9b
 - Ficha del modelo Qwen3.5 9B en idapt: https://idapt.app/models/qwen/qwen3.5-9b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen38-Uncensored-NVFP4-Graft es un checkpoint cuantizado en NVFP4 publicado en HuggingFace por el usuario zuozijian. Deriva de JonathanColetti/Qwen3.8-27B-Uncensored y se ha generado con NVIDIA TensorRT Model Optimizer 0.43.0 para servir inferencia en GPUs de clase Blackwell bajo vLLM. La model card describe la conversión de aproximadamente 65 GB en bf16 a 19,2 GiB, conservando intactas la torre de visión y la cabeza de predicción multi-token (MTP).
+Qwen38-Uncensored-NVFP4-Graft es un checkpoint cuantizado en NVFP4 publicado en Hugging Face por el usuario zuozijian. Deriva de JonathanColetti/Qwen3.8-27B-Uncensored y se ha generado con NVIDIA TensorRT Model Optimizer 0.43.0 para servir inferencia en GPUs de clase Blackwell bajo vLLM. La model card describe la conversión de aproximadamente 65 GB en bf16 a 19,2 GiB, conservando intactas la torre de visión y la cabeza de predicción multi-token (MTP).
 
 El modelo de partida es un stack híbrido de 64 capas que alterna bloques de 3x (Gated DeltaNet -> FFN) con 1x (Gated Attention -> FFN), e incorpora capacidades multimodales (pipeline image-text-to-text) y de tool calling mediante el dialecto XML de Qwen. Se distribuye bajo licencia Apache 2.0 y declara soporte para inglés y chino.
 
@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zuozijian/Qwen38-Uncensored-NVFP4-Graft
+- Modelo en Hugging Face: https://huggingface.co/zuozijian/Qwen38-Uncensored-NVFP4-Graft
 - Modelo base: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
 - Repositorio referenciado en la model card: https://huggingface.co/joshebbs/qwen3.8-27b-uncensored-nvfp4-modelopt
 - NVIDIA TensorRT Model Optimizer: https://github.com/NVIDIA/TensorRT-Model-Optimizer

@@ -30,7 +30,7 @@ No se mencionan datos de entrenamiento, dataset, ni procesos de RLHF o DPO. Tamp
 ## Capacidades
 
 - No se puede confirmar ninguna capacidad especifica del modelo base a partir de la informacion disponible.
-- Segun los tags de HuggingFace, el pipeline es `image-text-to-text`, lo que sugiere que el modelo puede procesar entradas de imagen y texto para generar texto, aunque no se detallan las tareas exactas.
+- Segun los tags de Hugging Face, el pipeline es `image-text-to-text`, lo que sugiere que el modelo puede procesar entradas de imagen y texto para generar texto, aunque no se detallan las tareas exactas.
 - El tag `conversational` indica que esta orientado a dialogos, pero sin mas especificaciones.
 - No hay informacion sobre soporte de tool calling, agentes, razonamiento multi-paso, ni capacidades multilingues.
 - La unica capacidad confirmada es la de ejecutarse en MLX con cuantizacion 4 bits y MTP.
@@ -64,6 +64,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- [HuggingFace: jknlsn/Qwen3.8-27B-oQ4e-mtp](https://huggingface.co/jknlsn/Qwen3.8-27B-oQ4e-mtp)
+- [Hugging Face: jknlsn/Qwen3.8-27B-oQ4e-mtp](https://huggingface.co/jknlsn/Qwen3.8-27B-oQ4e-mtp)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio oMLX (oQe)](https://github.com/jundot/omlx)

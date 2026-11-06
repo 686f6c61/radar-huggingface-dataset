@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este artefacto es un modelo de lenguaje de 1.279.854.592 parametros (aproximadamente 1,28 mil millones) publicado por el usuario yuhengtu-bytedance en HuggingFace, generado mediante la tecnica de fusion de pesos conocida como checkpoint soup o linear merge. No se trata de un modelo entrenado desde cero, sino del resultado de promediar linealmente cinco checkpoints intermedios de una misma ejecucion de preentrenamiento (pasos 57500, 60000, 62500, 65000 y 67500) con pesos crecientes 1, 2, 3, 4 y 5 respectivamente, normalizados y guardados en bfloat16.
+Este artefacto es un modelo de lenguaje de 1.279.854.592 parametros (aproximadamente 1,28 mil millones) publicado por el usuario yuhengtu-bytedance en Hugging Face, generado mediante la tecnica de fusion de pesos conocida como checkpoint soup o linear merge. No se trata de un modelo entrenado desde cero, sino del resultado de promediar linealmente cinco checkpoints intermedios de una misma ejecucion de preentrenamiento (pasos 57500, 60000, 62500, 65000 y 67500) con pesos crecientes 1, 2, 3, 4 y 5 respectivamente, normalizados y guardados en bfloat16.
 
 El interes de este tipo de artefactos es metodologico: la fusion lineal de checkpoints de una misma trayectoria de entrenamiento suele producir un modelo mas robusto que cualquiera de los checkpoints individuales, sin coste adicional de inferencia ni de entrenamiento. En este caso concreto, el nombre del repositorio sugiere que los checkpoints de origen proceden de un experimento de mezcla de datos de preentrenamiento (la cadena "falcon-and-cc-qc-orig-10p" apunta a una combinacion de datos tipo Falcon, Common Crawl filtrado y un subconjunto al 10 %), aunque la model card no documenta ni el dataset ni el numero de tokens vistos.
 
@@ -80,13 +80,13 @@ La comparacion es necesariamente incompleta: al no existir benchmarks ni licenci
 - Sesgos desconocidos: al no documentarse la composicion del dataset de preentrenamiento, no es posible evaluar sesgos de genero, raza, idioma o ideologia.
 - Cobertura idiomatica incierta: se desconoce que idiomas domina y en que proporcion; el uso en castellano no esta validado.
 - Longitud de contexto desconocida: no se puede planificar un caso de uso que dependa de ventanas largas sin una verificacion empirica previa.
-- Trazabilidad limitada: los checkpoints de origen se referencian mediante rutas locales del sistema del autor, no mediante identificadores publicos, por lo que la fusion no es reproducible tal cual desde HuggingFace sin sustituir esas rutas.
+- Trazabilidad limitada: los checkpoints de origen se referencian mediante rutas locales del sistema del autor, no mediante identificadores publicos, por lo que la fusion no es reproducible tal cual desde Hugging Face sin sustituir esas rutas.
 - Sin mantenimiento aparente: cero descargas y cero interacciones en el momento de la consulta, sin garantia de soporte ni actualizaciones.
 - Los resultados de busqueda web obtenidos no guardan ninguna relacion con el modelo (corresponden a contenido turistico sobre la localidad de Gavi, en Kerala), de modo que no aportan informacion tecnica verificable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-falcon-and-cc-qc-orig-10p-1B-57500_60000_62500_65000_67500_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-falcon-and-cc-qc-orig-10p-1B-57500_60000_62500_65000_67500_weightedavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Paper del metodo de fusion lineal (Model Soups): https://arxiv.org/abs/2203.05482
 - Documentacion adicional, paper del modelo, blog o demo: no disponibles. La busqueda web no devolvio resultados relevantes para este repositorio.

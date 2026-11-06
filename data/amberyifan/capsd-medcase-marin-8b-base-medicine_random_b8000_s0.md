@@ -67,7 +67,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. El modelo no t
 
 ## Enlaces
 
-- [HuggingFace - AmberYifan/capsd-medcase-marin-8b-base-medicine_random_b8000_s0](https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_random_b8000_s0)
+- [Hugging Face - AmberYifan/capsd-medcase-marin-8b-base-medicine_random_b8000_s0](https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_random_b8000_s0)
 - Modelos similares del mismo autor (sin información adicional):  
   [capsd-medcase-marin-8b-base-medicine_cap_b4000_s0](https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_cap_b4000_s0)  
   [capsd-medcase-marin-8b-base-medicine_cap_b1000_s0](https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_cap_b1000_s0)

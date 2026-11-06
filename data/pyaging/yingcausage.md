@@ -74,6 +74,6 @@ Nota: los relojes de Horvath y Hannum son anteriores y no incorporan informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pyaging/yingcausage
+- Hugging Face: https://huggingface.co/pyaging/yingcausage
 - Documentación de pyaging (Clock Catalogue): https://pyaging.readthedocs.io
 - Publicación original: Ying, K., Liu, H., Tarkhov, A.E. et al. Causality-enriched epigenetic age uncouples damage and adaptation. Nature Aging 4, 231–246 (2024). DOI: https://doi.org/10.1038/s43587-023-00557-0

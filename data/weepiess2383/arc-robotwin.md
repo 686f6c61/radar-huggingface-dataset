@@ -81,5 +81,5 @@ No se dispone de información sobre modelos comparables en el contexto de RoboTw
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/weepiess2383/arc-robotwin
+- Repositorio en Hugging Face: https://huggingface.co/weepiess2383/arc-robotwin
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios de código) en la información proporcionada.

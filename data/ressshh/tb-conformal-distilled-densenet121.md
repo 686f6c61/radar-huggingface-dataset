@@ -89,7 +89,7 @@ El autor afirma que el modelo supera el objetivo WHO CAD TPP (sensibilidad ≥90
 
 | Modelo | Arquitectura / tamaño | Contexto (entrada) | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tb-conformal-distilled-densenet121 | DenseNet-121, 7,74 M | Imagen 224x224 | AUROC 0,9065-0,9347 en 3 cohortes (datos del autor) | MIT | ONNX + PyTorch en HuggingFace |
+| tb-conformal-distilled-densenet121 | DenseNet-121, 7,74 M | Imagen 224x224 | AUROC 0,9065-0,9347 en 3 cohortes (datos del autor) | MIT | ONNX + PyTorch en Hugging Face |
 | CheXNet y derivados DenseNet-121 | DenseNet-121, ~8 M | Imagen 224x224 | No disponible en la información proporcionada | No disponible | Múltiples implementaciones públicas |
 | TorchXRayVision (DenseNet-121 preentrenado) | DenseNet-121, ~8 M | Imagen 224x224 | No disponible en la información proporcionada | No disponible | Paquete Python público |
 | BioMedCLIP (modelo profesor) | ViT-B/16, 86,4 M | Imagen-texto | No disponible en la información proporcionada | No disponible | Microsoft, weights públicos |
@@ -112,5 +112,5 @@ No se dispone en la información proporcionada de cifras de rendimiento verifica
 
 ## Enlaces
 
-- HuggingFace (repositorio del modelo): https://huggingface.co/Ressshh/tb-conformal-distilled-densenet121
+- Hugging Face (repositorio del modelo): https://huggingface.co/Ressshh/tb-conformal-distilled-densenet121
 - Búsqueda web realizada: no devolvió papers, blogs, repositorios ni demos relevantes sobre este modelo; los resultados obtenidos eran páginas genéricas de servicios de traducción, no relacionados con el contenido técnico. No se incluyen por no ser verificables ni pertinentes.

@@ -92,7 +92,7 @@ La comparación cuantitativa de CER frente a Whisper u otros sistemas no está d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/twmht/FireRedASR2-AED-ct2
+- Repositorio Hugging Face: https://huggingface.co/twmht/FireRedASR2-AED-ct2
 - Modelo base: https://huggingface.co/FireRedTeam/FireRedASR2-AED
 - Repositorio del proyecto FireRedASR2S: https://github.com/FireRedTeam/FireRedASR2S
 - Fork de CTranslate2 con soporte FireRed: voxrun-ctranslate2 (referenciado en la model card, sin URL directa en la información disponible)

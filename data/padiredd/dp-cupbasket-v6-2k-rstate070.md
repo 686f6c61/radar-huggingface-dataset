@@ -25,7 +25,7 @@ El repositorio ocupa 11,5 GB e incluye el checkpoint final (paso 100k) en la ra�
 
 Se trata de una política de difusión condicionada por observaciones: tres cámaras (cabeza, muñeca izquierda y muñeca derecha) a 240x240 píxeles, cada una procesada por un ResNet18 independiente, más un vector de estado articular de 22 dimensiones. La salida es una secuencia de 16 objetivos articulares a 15 Hz. El proceso de difusión usa DDPM con 100 pasos, un horizonte de predicción de 64 pasos del que se ejecutan 32, y `n_obs_steps = 1`. El entrenamiento se realizó durante 100.000 pasos con batch 32, optimizador Adam a 1e-4 con decaimiento coseno y semilla 1000, en una única NVIDIA RTX 4090 de 24 GB.
 
-Los datos provienen del conjunto `pick-cup-basket-v6-2k-3cam-rstate070` (no publicado en HuggingFace), con unas 2.000 demostraciones exitosas generadas en simulación mediante `cup_basket/programs/cup_handover_v6.py`, sin aleatorización de dominio y con semillas desde 60001. El muestreo es uniforme sobre todos los frames (EpisodeAwareSampler por defecto de LeRobot). La innovación destacable es el parcheo del estado del gripper derecho: el colector ejecuta el cierre a 0,50 pero registra la acción como 0,70, y `observation.state[15]` se remapea linealmente (0,157-0,50 → 0,157-0,70) para que la lectura registrada coincida con la orden, como ocurre en el robot real. La evaluación debe hacerse con `rollout_cup.py --grip_rec_r 0.70 --state_rec_r 1`. Se aplica augmentación de imagen agresiva en orden aleatorio (hasta 5 de: brillo, contraste, saturación, tono, nitidez, afín, perspectiva, desenfoque, borrado aleatorio, escala de grises), sin ruido de estado.
+Los datos provienen del conjunto `pick-cup-basket-v6-2k-3cam-rstate070` (no publicado en Hugging Face), con unas 2.000 demostraciones exitosas generadas en simulación mediante `cup_basket/programs/cup_handover_v6.py`, sin aleatorización de dominio y con semillas desde 60001. El muestreo es uniforme sobre todos los frames (EpisodeAwareSampler por defecto de LeRobot). La innovación destacable es el parcheo del estado del gripper derecho: el colector ejecuta el cierre a 0,50 pero registra la acción como 0,70, y `observation.state[15]` se remapea linealmente (0,157-0,50 → 0,157-0,70) para que la lectura registrada coincida con la orden, como ocurre en el robot real. La evaluación debe hacerse con `rollout_cup.py --grip_rec_r 0.70 --state_rec_r 1`. Se aplica augmentación de imagen agresiva en orden aleatorio (hasta 5 de: brillo, contraste, saturación, tono, nitidez, afín, perspectiva, desenfoque, borrado aleatorio, escala de grises), sin ruido de estado.
 
 ## Capacidades
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp-cupbasket-v6-2k-rstate070 | 287,5 M | horizonte 64, 32 ejecutados, n_obs_steps 1 | Handover bimanual vaso-cesta (FFW SG2) | other | HuggingFace (padiredd) |
+| dp-cupbasket-v6-2k-rstate070 | 287,5 M | horizonte 64, 32 ejecutados, n_obs_steps 1 | Handover bimanual vaso-cesta (FFW SG2) | other | Hugging Face (padiredd) |
 | Otras variantes del mismo autor (v3, v6 sin parche) | no disponible | no disponible | Tareas de pick-cup relacionadas | other | no disponible en la informacion proporcionada |
 | Diffusion Policy original (Chi et al.) | no disponible | no disponible | Manipulación general | no disponible | Repositorio académico |
 
@@ -83,9 +83,9 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/padiredd/dp-cupbasket-v6-2k-rstate070
+- Hugging Face: https://huggingface.co/padiredd/dp-cupbasket-v6-2k-rstate070
 - LeRobot (framework base): no disponible en la informacion proporcionada
 - Fork lerobot-cyclo de ROBOTIS: no disponible en la informacion proporcionada
 - Isaac Lab: no disponible en la informacion proporcionada
 - Paper de Diffusion Policy (Chi et al.): no disponible en la informacion proporcionada
-- Dataset `pick-cup-basket-v6-2k-3cam-rstate070`: no disponible en HuggingFace según la model card
+- Dataset `pick-cup-basket-v6-2k-3cam-rstate070`: no disponible en Hugging Face según la model card

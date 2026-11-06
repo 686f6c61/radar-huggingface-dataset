@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3.8-27B (base) | 27.36B | 262,144 | BF16 | Apache 2.0 | HuggingFace |
-| AX-Qwen3.8-27B-MLX-AXQ-4bit | 27.36B | 262,144 | AXQ 4bit (mixto) | Apache 2.0 | HuggingFace (MLX) |
-| AX-Qwen3.8-27B-MLX-AXQ-6bit (sibling) | 27.36B | 262,144 | AXQ 6bit (mixto) | Apache 2.0 | HuggingFace (MLX) |
+| Qwen/Qwen3.8-27B (base) | 27.36B | 262,144 | BF16 | Apache 2.0 | Hugging Face |
+| AX-Qwen3.8-27B-MLX-AXQ-4bit | 27.36B | 262,144 | AXQ 4bit (mixto) | Apache 2.0 | Hugging Face (MLX) |
+| AX-Qwen3.8-27B-MLX-AXQ-6bit (sibling) | 27.36B | 262,144 | AXQ 6bit (mixto) | Apache 2.0 | Hugging Face (MLX) |
 
 La comparativa se limita a la familia Qwen3.8-27B, ya que no se dispone de datos de otros modelos comparables en el mismo formato y tamano. El checkpoint 4bit ofrece un menor peso de descarga que el 6bit, pero con una precision media mas baja (5.0667 BPW medido frente a un presupuesto de 6 BPW). No se han publicado benchmarks que permitan comparar rendimiento real.
 
@@ -80,7 +80,7 @@ La comparativa se limita a la familia Qwen3.8-27B, ya que no se dispone de datos
 
 ## Enlaces
 
-- [HuggingFace: AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-4bit](https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-4bit)
+- [Hugging Face: AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-4bit](https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-4bit)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio AXQuant (conversion, certificados y tooling)](https://github.com/defai-digital/axquant)
 - [Certificado Tier 1 del checkpoint](https://github.com/defai-digital/axquant/blob/main/docs/certifications/qwen38-27b-axq4-tier1.md)

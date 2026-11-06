@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swordenamine/vision-ai-ocr-guide` no es un modelo con pesos: es un repositorio de código y documentación publicado en HuggingFace que actúa como toolkit cliente sobre Google Cloud Vision API para digitalización de documentos. Incluye módulos Python para extracción de texto, reconocimiento de escritura manuscrita, análisis de layout, procesamiento por lotes en paralelo e integraciones con Google Cloud Storage, BigQuery y Document AI, además de infraestructura como código (Docker, Cloud Run, Terraform).
+`swordenamine/vision-ai-ocr-guide` no es un modelo con pesos: es un repositorio de código y documentación publicado en Hugging Face que actúa como toolkit cliente sobre Google Cloud Vision API para digitalización de documentos. Incluye módulos Python para extracción de texto, reconocimiento de escritura manuscrita, análisis de layout, procesamiento por lotes en paralelo e integraciones con Google Cloud Storage, BigQuery y Document AI, además de infraestructura como código (Docker, Cloud Run, Terraform).
 
 El problema que aborda es la operacionalización del OCR en producción: no propone un motor de reconocimiento propio, sino los patrones de despliegue, autenticación, procesado masivo y exportación a almacén de datos que rodean a la API de Google. Es relevante como material de referencia para equipos que ya operan en GCP y necesitan montar un pipeline de digitalización con requisitos de cumplimiento europeo, no como alternativa a un modelo OCR open source ejecutable en local.
 
@@ -18,7 +18,7 @@ Al no contener artefactos de modelo, no hay arquitectura, parámetros, contexto 
 | Longitud de contexto | no disponible; no aplica. El límite práctico lo impone la cuota y el tamaño de fichero aceptado por Vision API |
 | Tipos de cuantizacion | no disponible; no aplica |
 | Idiomas soportados | más de 50 idiomas según la model card, incluyendo reconocimiento de escritura manuscrita (cursiva e impresa) |
-| Licencia | MIT según la model card (uso comercial y no comercial permitido); los metadatos de HuggingFace no declaran licencia. El uso de Vision API queda sujeto adicionalmente a los términos de Google Cloud |
+| Licencia | MIT según la model card (uso comercial y no comercial permitido); los metadatos de Hugging Face no declaran licencia. El uso de Vision API queda sujeto adicionalmente a los términos de Google Cloud |
 | Formato de pesos | no disponible; no se distribuyen pesos (el repositorio contiene código Python, Dockerfiles y Terraform) |
 
 ## Arquitectura y entrenamiento
@@ -84,13 +84,13 @@ La comparación relevante no es de precisión —no hay datos publicados para es
 - Riesgo de error de reconocimiento inherente al OCR: caracteres confundidos en documentos degradados, tablas mal reconstruidas y campos desplazados en formularios. La model card no documenta umbrales de confianza ni estrategias de validación.
 - Tratamiento de datos personales: la información sale del perímetro propio hacia Google Cloud. La recomendación de usar `europe-west` y VPC Service Controls aparece en la model card, pero la responsabilidad del cumplimiento del RGPD recae en el integrador.
 - Gestión de credenciales: la propia documentación advierte de no commitear claves de cuenta de servicio; el ejemplo de `docker run` monta el JSON como volumen, lo que exige disciplina operativa para no filtrarlo.
-- Inconsistencias de trazabilidad: el autor de HuggingFace es `swordenamine` mientras que el repositorio de GitHub citado pertenece a `swordenkisk`; además la fecha de creación (2026-10-17) es posterior a la de actualización (2026-02-15). Conviene verificar la fuente antes de adoptarlo.
-- Señales de adopción nulas: 0 descargas y 0 likes en HuggingFace, sin issues ni historial de mantenimiento verificable.
+- Inconsistencias de trazabilidad: el autor de Hugging Face es `swordenamine` mientras que el repositorio de GitHub citado pertenece a `swordenkisk`; además la fecha de creación (2026-10-17) es posterior a la de actualización (2026-02-15). Conviene verificar la fuente antes de adoptarlo.
+- Señales de adopción nulas: 0 descargas y 0 likes en Hugging Face, sin issues ni historial de mantenimiento verificable.
 - La licencia MIT cubre el código del repositorio, no el servicio subyacente; el uso comercial de Vision API se rige por el contrato con Google Cloud.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/swordenamine/vision-ai-ocr-guide
+- Hugging Face: https://huggingface.co/swordenamine/vision-ai-ocr-guide
 - Repositorio GitHub citado en la model card: https://github.com/swordenkisk/vision-ai-ocr-guide
 - Documentación de Google Cloud Vision: https://cloud.google.com/vision/docs
 - Documentación de Google Cloud Document AI: https://cloud.google.com/document-ai/docs

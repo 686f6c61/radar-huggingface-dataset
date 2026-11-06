@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `goblinModeMan/Qwen2.5-0.5B-Instruct-abliterated-v3` es una version modificada del modelo Qwen2.5-0.5B-Instruct de Alibaba Cloud, creada mediante una tecnica denominada *abliteration*. Esta tecnica, implementada por el autor huihui-ai y publicada bajo el nombre de usuario goblinModeMan en HuggingFace, elimina los mecanismos de rechazo del modelo original, de modo que el sistema responde a practicamente cualquier instruccion, incluidas aquellas que el modelo base consideraria daninas o inapropiadas. El resultado es un modelo de chat "sin censura" de 494 millones de parametros, pensado como prueba de concepto para investigacion sobre la eliminacion de refusal en LLMs.
+El modelo `goblinModeMan/Qwen2.5-0.5B-Instruct-abliterated-v3` es una version modificada del modelo Qwen2.5-0.5B-Instruct de Alibaba Cloud, creada mediante una tecnica denominada *abliteration*. Esta tecnica, implementada por el autor huihui-ai y publicada bajo el nombre de usuario goblinModeMan en Hugging Face, elimina los mecanismos de rechazo del modelo original, de modo que el sistema responde a practicamente cualquier instruccion, incluidas aquellas que el modelo base consideraria daninas o inapropiadas. El resultado es un modelo de chat "sin censura" de 494 millones de parametros, pensado como prueba de concepto para investigacion sobre la eliminacion de refusal en LLMs.
 
 El modelo se basa en la arquitectura Qwen2.5, un transformer decoder-only denso, y hereda las capacidades multilingues del original (13 idiomas). Su tamano reducido (0.5B) lo hace ejecutable en hardware modesto, incluso en CPU, y su licencia Apache 2.0 permite uso comercial. La relevancia de este modelo reside en su valor como caso de estudio sobre los limites de la alineacion y la seguridad en modelos de lenguaje, asi como en su utilidad para aplicaciones que requieren respuestas sin restricciones tematicas, aunque con los riesgos eticos y legales que ello conlleva.
 
@@ -61,7 +61,7 @@ Esta metrica indica que el modelo v3 no rechaza ninguna de las 320 instrucciones
 - VRAM estimada: con 494 millones de parametros, el modelo en FP16 ocupa aproximadamente 1 GB de VRAM. Con cuantizacion a 4 bits (si se dispone de version GGUF), el uso se reduce a unos 300-400 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Tarjetas como NVIDIA GTX 1650, RTX 2060 o superiores funcionan sin problemas. Tambien es ejecutable en CPU con 8 GB de RAM.
 - Compatibilidad con GPU de consumo: si, cabe en practicamente cualquier GPU moderna, incluidas las integradas de gama alta.
-- Opciones de despliegue: se puede usar con la libreria `transformers` de HuggingFace, o mediante `llama.cpp` y `Ollama` si se convierte a formato GGUF. El autor menciona una version en Ollama (`huihui_ai/qwen2.5-abliterate:0.5b-v3`) de menos de 400 MB.
+- Opciones de despliegue: se puede usar con la libreria `transformers` de Hugging Face, o mediante `llama.cpp` y `Ollama` si se convierte a formato GGUF. El autor menciona una version en Ollama (`huihui_ai/qwen2.5-abliterate:0.5b-v3`) de menos de 400 MB.
 - Latencia y throughput: en una GPU moderna (p. ej., RTX 4090), la generacion es casi instantanea, con velocidades superiores a 100 tokens/segundo. En CPU, la velocidad depende del hardware, pero suele rondar los 10-30 tokens/segundo.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ La comparativa se limita a variantes del mismo modelo base. No se dispone de dat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/goblinModeMan/Qwen2.5-0.5B-Instruct-abliterated-v3
+- Repositorio Hugging Face: https://huggingface.co/goblinModeMan/Qwen2.5-0.5B-Instruct-abliterated-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio de la tecnica de ablacion: https://github.com/Sumandora/remove-refusals-with-transformers
 - Version en Ollama: https://ollama.com/huihui_ai/qwen2.5-abliterate:0.5b-v3

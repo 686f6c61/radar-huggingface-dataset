@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio h0rnzdayo/hm es un modelo publicado en HuggingFace por el usuario h0rnzdayo el 19 de septiembre de 2026. La informacion disponible es extremadamente limitada: la model card no contiene mas que la declaracion de licencia Apache 2.0, sin descripcion, sin ficha tecnica y sin ejemplos de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y la etiqueta de pipeline aparece como no disponible.
+El repositorio h0rnzdayo/hm es un modelo publicado en Hugging Face por el usuario h0rnzdayo el 19 de septiembre de 2026. La informacion disponible es extremadamente limitada: la model card no contiene mas que la declaracion de licencia Apache 2.0, sin descripcion, sin ficha tecnica y sin ejemplos de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y la etiqueta de pipeline aparece como no disponible.
 
 No es posible determinar que problema resuelve, cual es su arquitectura ni su tamano. La unica metainformacion confirmada es la licencia (apache-2.0) y la region declarada (us). No se han publicado detalles sobre datos de entrenamiento, tokenizador, ventana de contexto ni idiomas soportados.
 
@@ -40,7 +40,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 - No es posible recomendar casos de uso concretos: sin datos de arquitectura, tamano, contexto ni licencia de terceros, cualquier escenario de produccion seria especulativo.
 - Evaluacion previa a adopcion: si un equipo necesita valorar el modelo, el primer paso es inspeccionar los archivos del repositorio (config.json, tokenizer, safetensors) y ejecutar una prueba de inferencia local antes de considerar cualquier integracion.
 - Prototipado interno no critico: solo si tras la inspeccion se confirma que los pesos existen y son cargables, y siempre en un entorno aislado.
-- Analisis de la ficha: util unicamente como caso de estudio de publicaciones incompletas en HuggingFace y de buenas practicas de model card.
+- Analisis de la ficha: util unicamente como caso de estudio de publicaciones incompletas en Hugging Face y de buenas practicas de model card.
 - Docencia sobre evaluacion de modelos: sirve como ejemplo de por que no se debe adoptar un modelo sin especificaciones verificables.
 - Cualquier otro escenario (atencion al cliente, generacion de codigo, RAG, traduccion, analisis de datos) queda descartado por ausencia total de informacion.
 
@@ -74,5 +74,5 @@ No disponible. Al no conocerse el tamano, la arquitectura ni el dominio del mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/h0rnzdayo/hm
+- Hugging Face: https://huggingface.co/h0rnzdayo/hm
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la busqueda web realizada. Los resultados devueltos (Wikipedia en uzbeko, canales de YouTube y una plataforma de medios) no guardan relacion con este modelo.

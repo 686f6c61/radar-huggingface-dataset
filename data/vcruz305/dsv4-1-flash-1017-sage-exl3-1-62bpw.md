@@ -84,8 +84,8 @@ Nota metodologica: estas cifras miden divergencia respecto al modelo original en
 
 | Modelo | Parametros | Contexto | Precision / tamano | Fidelidad vs original | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este pack (SAGE EXL3 1,62 bpw) | 262,16 B totales | no disponible | 1,62 bpw, ~112,9 GiB residentes | 94,52% Top-1, KL 0,0982 | MIT | HuggingFace, 119 descargas |
-| DeepSeek-V4.1-Flash-1017 oficial (FP8/FP4 mixto) | 262,16 B totales | no disponible | FP8/FP4 nativo | 100% (referencia) | MIT | HuggingFace (repo upstream) |
+| Este pack (SAGE EXL3 1,62 bpw) | 262,16 B totales | no disponible | 1,62 bpw, ~112,9 GiB residentes | 94,52% Top-1, KL 0,0982 | MIT | Hugging Face, 119 descargas |
+| DeepSeek-V4.1-Flash-1017 oficial (FP8/FP4 mixto) | 262,16 B totales | no disponible | FP8/FP4 nativo | 100% (referencia) | MIT | Hugging Face (repo upstream) |
 | Otras cuantizaciones del mismo modelo (GGUF, AWQ, EXL3 de mayor bpw) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 La comparativa relevante es contra la release oficial: este pack reduce la huella a unos 112,9 GiB a costa de un 5,48% de perdida de acuerdo Top-1 global, concentrada sobre todo en el dominio general (89,94% Top-1) y mucho menor en codigo (99,08%). No hay datos en la informacion proporcionada para comparar con cuantizaciones de terceros del mismo modelo ni con modelos de otros proveedores de tamano similar.

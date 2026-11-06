@@ -76,10 +76,10 @@ Los benchmarks se reportan sobre las compilaciones de 8 bits. No se han publicad
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Atlassian-v2-agent (este, 4 bits MLX) | ~26,9 B | no disponible (probado hasta 16.384) | Agente Atlassian, tool calling | Apache 2.0 | HuggingFace, 63 descargas |
-| Qwen3.8-27B-Atlassian (v1) | no disponible | no disponible | Agente Atlassian, generación previa | Apache 2.0 (según release) | HuggingFace |
-| Qwen3.8-27B-Atlassian-v2-agent Q8-mlx | ~26,9 B | no disponible | Misma versión en 8 bits, referencia de calidad | Apache 2.0 | HuggingFace |
-| Qwen3.8-27B-Atlassian-v2-agent-lora-peft | ~26,9 B | no disponible | Adaptador sobre bf16, referencia para sesiones largas | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B-Atlassian-v2-agent (este, 4 bits MLX) | ~26,9 B | no disponible (probado hasta 16.384) | Agente Atlassian, tool calling | Apache 2.0 | Hugging Face, 63 descargas |
+| Qwen3.8-27B-Atlassian (v1) | no disponible | no disponible | Agente Atlassian, generación previa | Apache 2.0 (según release) | Hugging Face |
+| Qwen3.8-27B-Atlassian-v2-agent Q8-mlx | ~26,9 B | no disponible | Misma versión en 8 bits, referencia de calidad | Apache 2.0 | Hugging Face |
+| Qwen3.8-27B-Atlassian-v2-agent-lora-peft | ~26,9 B | no disponible | Adaptador sobre bf16, referencia para sesiones largas | Apache 2.0 | Hugging Face |
 
 No se dispone de comparación con modelos de propósito general de tamaño similar en la información proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de comparación con modelos de propósito general de tamaño simil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-agent-Q4-mlx
+- Modelo en Hugging Face: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-agent-Q4-mlx
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Compilación 8 bits: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-agent-Q8-mlx
 - Compilación 6 bits: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-agent-Q6-mlx

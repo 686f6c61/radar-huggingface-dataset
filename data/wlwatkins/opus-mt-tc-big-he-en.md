@@ -98,7 +98,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wlwatkins/opus-mt-tc-big-he-en
+- Repositorio Hugging Face: https://huggingface.co/wlwatkins/opus-mt-tc-big-he-en
 - Modelo original: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-he-en
 - Exportación ONNX previa: https://huggingface.co/nico-martin/opus-mt-tc-big-he-en
 - Repositorio OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT

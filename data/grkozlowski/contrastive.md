@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`grkozlowski/contrastive` es un prototipo de investigación publicado en HuggingFace por el usuario grkozlowski bajo el nombre "Dino for Contrastive". Según su model card, se trata de una implementación personalizada de una arquitectura tipo Dino orientada al aprendizaje contrastivo, en configuración "nano", cuyo objetivo declarado es documentar los valores por defecto y los formatos de fichero de un script de entrenamiento, no presentar resultados validados.
+`grkozlowski/contrastive` es un prototipo de investigación publicado en Hugging Face por el usuario grkozlowski bajo el nombre "Dino for Contrastive". Según su model card, se trata de una implementación personalizada de una arquitectura tipo Dino orientada al aprendizaje contrastivo, en configuración "nano", cuyo objetivo declarado es documentar los valores por defecto y los formatos de fichero de un script de entrenamiento, no presentar resultados validados.
 
 El repositorio incluye un artefacto principal (`main.py`) con la implementación del modelo y un ejemplo ejecutable de smoke test, además de `config.json`, `training_args.json` y `model.safetensors`. Este último se describe explícitamente como un checkpoint de inicialización válido para pruebas de humo, no como un modelo entrenado ni evaluado con benchmarks. El propio autor advierte que no se reclama ninguna puntuación de rendimiento.
 
@@ -76,4 +76,4 @@ La información proporcionada no incluye datos de benchmarks, parámetros, conte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grkozlowski/contrastive
+- Modelo en Hugging Face: https://huggingface.co/grkozlowski/contrastive

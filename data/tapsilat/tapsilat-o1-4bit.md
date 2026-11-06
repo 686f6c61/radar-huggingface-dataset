@@ -98,7 +98,7 @@ Los datos de las alternativas corresponden a la documentación pública de sus m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tapsilat/tapsilat-o1-4bit
+- Modelo en Hugging Face: https://huggingface.co/tapsilat/tapsilat-o1-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct/blob/main/LICENSE
 - Librería mlx-lm (usada para la conversión, versión 0.31.3): https://github.com/ml-explore/mlx-lm

@@ -25,7 +25,7 @@ La ficha resulta relevante por dos motivos. Primero, ilustra el patrón habitual
 | Modelo base | google/gemma-2-2b |
 | Libreria | peft 0.21.0, transformers |
 | Tarea declarada | text-generation |
-| Fecha de publicacion | 27 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicacion | 27 de septiembre de 2026 (según metadatos de Hugging Face) |
 | Descargas y likes | 0 descargas, 0 likes en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -99,7 +99,7 @@ La comparación se limita a especificaciones publicadas por cada proyecto. No es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ronietz/cryptic-gemma2-2b-answer-wordplay
+- Modelo en Hugging Face: https://huggingface.co/ronietz/cryptic-gemma2-2b-answer-wordplay
 - Modelo base Gemma 2 2B: https://huggingface.co/google/gemma-2-2b
 - Adaptador relacionado (respuesta): https://huggingface.co/ronietz/cryptic-gemma2-2b-answer
 - Adaptador relacionado (razonamiento y respuesta): https://huggingface.co/ronietz/cryptic-gemma2-2b-reasoning-answer

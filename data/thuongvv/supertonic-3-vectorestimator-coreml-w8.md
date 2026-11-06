@@ -103,7 +103,7 @@ No se dispone de comparación con modelos TTS de otros proveedores (por ejemplo,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thuongvv/Supertonic-3-VectorEstimator-CoreML-W8
+- Modelo en Hugging Face: https://huggingface.co/thuongvv/Supertonic-3-VectorEstimator-CoreML-W8
 - Modelo base: https://huggingface.co/Supertone/supertonic-3
 - Codificador de texto y predictor de duración int8 (soniqo): https://huggingface.co/soniqo/Supertonic-3-ONNX-INT8
 - Vocoder int8 weight-only: https://huggingface.co/thuongvv/Supertonic-3-Vocoder-ONNX-W8

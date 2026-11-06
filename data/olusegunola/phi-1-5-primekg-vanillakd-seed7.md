@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`olusegunola/phi-1.5-primekg-vanillakd-seed7` es un checkpoint publicado en HuggingFace por el usuario olusegunola, con fecha de creacion y actualizacion del 11 de septiembre de 2026. El identificador sugiere que se trata de un ajuste fino derivado de phi-1.5 (el modelo de 1.300 millones de parametros de Microsoft Research) entrenado con destilacion de conocimiento (la abreviatura "kd" apunta a knowledge distillation, en su variante "vanilla") sobre PrimeKG, un grafo de conocimiento de medicina de precision. El sufijo "seed7" indica que forma parte de una serie de replicas con distintas semillas aleatorias, probablemente para medir varianza experimental. Ninguna de estas deducciones aparece confirmada en la model card, que es la plantilla automatica de HuggingFace sin rellenar.
+`olusegunola/phi-1.5-primekg-vanillakd-seed7` es un checkpoint publicado en Hugging Face por el usuario olusegunola, con fecha de creacion y actualizacion del 11 de septiembre de 2026. El identificador sugiere que se trata de un ajuste fino derivado de phi-1.5 (el modelo de 1.300 millones de parametros de Microsoft Research) entrenado con destilacion de conocimiento (la abreviatura "kd" apunta a knowledge distillation, en su variante "vanilla") sobre PrimeKG, un grafo de conocimiento de medicina de precision. El sufijo "seed7" indica que forma parte de una serie de replicas con distintas semillas aleatorias, probablemente para medir varianza experimental. Ninguna de estas deducciones aparece confirmada en la model card, que es la plantilla automatica de Hugging Face sin rellenar.
 
 El repositorio tiene un tamano de 0,1 GB, lo que resulta llamativamente pequeno para un modelo de ~1.300 millones de parametros (un checkpoint completo en fp16 de phi-1.5 ocupa aproximadamente 2,7 GB). Esto sugiere que el repositorio contiene unicamente adaptadores (LoRA u similares), un subconjunto de tensores o un artefacto incompleto, aunque no hay informacion publicada que lo confirme.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada: se trata de un experimento academico si
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura en la model card, que es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]". El unico dato tecnico objetivo es la etiqueta `safetensors` y el tamano del repositorio (0,1 GB). Si se confirma la hipotesis del identificador, la arquitectura subyacente seria la de phi-1.5: un transformer decoder-only de 1.300 millones de parametros, 24 capas, `d_model` de 2.048 y atencion multi-cabeza con rotary embeddings implícitos en la familia phi, entrenado por Microsoft Research sobre datos sinteticos de tipo "textbook quality" (aproximadamente 30.000 millones de tokens en phi-1.5, con objetivos de prediccion del siguiente token y un ajuste posterior de tipo instruction-following sobre un conjunto de ~10.000 ejemplos). Nada de esto esta verificado para este checkpoint concreto.
+No hay informacion publicada sobre la arquitectura en la model card, que es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]". El unico dato tecnico objetivo es la etiqueta `safetensors` y el tamano del repositorio (0,1 GB). Si se confirma la hipotesis del identificador, la arquitectura subyacente seria la de phi-1.5: un transformer decoder-only de 1.300 millones de parametros, 24 capas, `d_model` de 2.048 y atencion multi-cabeza con rotary embeddings implícitos en la familia phi, entrenado por Microsoft Research sobre datos sinteticos de tipo "textbook quality" (aproximadamente 30.000 millones de tokens en phi-1.5, con objetivos de prediccion del siguiente token y un ajuste posterior de tipo instruction-following sobre un conjunto de ~10.000 ejemplos). Nada de esto esta verificado para este checkpoint concreto.
 
 Respecto al procedimiento de entrenamiento, el nombre del repositorio sugiere destilacion de conocimiento "vanilla" (probablemente destilacion de logits o de respuestas de un profesor de mayor tamano) aplicada sobre datos derivados de PrimeKG, un grafo de conocimiento biomedico que integra 17.080 enfermedades, 4.050 genes, 2.200 farmacos y 1,3 millones de relaciones. Tampoco se documenta el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo RLHF, DPO o preferencia humana de ningun tipo. El unico enlace de tipo paper en las etiquetas es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono y que aparece en la plantilla automatica, no a un articulo sobre el modelo.
 
@@ -70,10 +70,10 @@ No hay datos de rendimiento de este checkpoint, por lo que la comparacion se lim
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| olusegunola/phi-1.5-primekg-vanillakd-seed7 | no disponible | no disponible | no disponible | HuggingFace, sin descargas ni likes |
-| microsoft/phi-1.5 | ~1.300 millones | 2.048 tokens | MIT | HuggingFace, ampliamente descargado |
-| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | ~1.100 millones | 2.048 tokens | Apache 2.0 | HuggingFace, con variantes GGUF |
-| Qwen/Qwen2.5-1.5B | ~1.500 millones | 32.768 tokens | Apache 2.0 | HuggingFace, con variantes GGUF, AWQ y GPTQ |
+| olusegunola/phi-1.5-primekg-vanillakd-seed7 | no disponible | no disponible | no disponible | Hugging Face, sin descargas ni likes |
+| microsoft/phi-1.5 | ~1.300 millones | 2.048 tokens | MIT | Hugging Face, ampliamente descargado |
+| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | ~1.100 millones | 2.048 tokens | Apache 2.0 | Hugging Face, con variantes GGUF |
+| Qwen/Qwen2.5-1.5B | ~1.500 millones | 32.768 tokens | Apache 2.0 | Hugging Face, con variantes GGUF, AWQ y GPTQ |
 
 La diferencia mas relevante frente a las alternativas no es de capacidad tecnica sino de trazabilidad: los tres modelos de referencia publican model card completa, licencia explicita y evaluaciones, mientras que este checkpoint no ofrece ninguno de los tres elementos.
 
@@ -92,7 +92,7 @@ La diferencia mas relevante frente a las alternativas no es de capacidad tecnica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/olusegunola/phi-1.5-primekg-vanillakd-seed7
+- Hugging Face: https://huggingface.co/olusegunola/phi-1.5-primekg-vanillakd-seed7
 - Referencia citada en las etiquetas del repositorio (calculadora de impacto de carbono, no relacionada con el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning mencionada en la plantilla de la model card: https://mlco2.github.io/impact
 - Paper de referencia de phi-1.5 (no citado en el repositorio, incluido por ser la base presumible): https://arxiv.org/abs/2309.05463

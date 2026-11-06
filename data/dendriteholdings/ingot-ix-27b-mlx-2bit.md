@@ -83,11 +83,11 @@ No se han publicado resultados de benchmarks de tarea (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Formato / precision | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ingot-IX-27B-MLX-2bit | 27,36 B | MLX safetensors, 2,25 bits/peso | No disponible | KL 0,10294; 55,3-66,6 tok/s en M3 Ultra | No disponible | HuggingFace, 0 descargas |
-| Ingot-IX-27B-Q2 (gemelo GGUF) | 27,36 B | GGUF, 2 bits ternario | No disponible | Mismos pesos; 56,4 tok/s en M3 Ultra, 137 tok/s en RTX PRO 6000 | No disponible | HuggingFace |
-| Ingot-genesis-27B-Q2 | 27 B aprox. | GGUF, 2 bits | No disponible | 20,1 % peor en KL y 29,4 % peor en distancia de estados ocultos que este modelo | No disponible | HuggingFace |
-| prism-ml/Ternary-Bonsai-2-27B-mlx-2bit | 27 B aprox. | MLX, 2 bits | No disponible | No disponible | No disponible | HuggingFace |
-| Ingot-X-27B-MLX-2bit | 27 B | MLX, 2 bits | No disponible | No disponible | No disponible | HuggingFace |
+| Ingot-IX-27B-MLX-2bit | 27,36 B | MLX safetensors, 2,25 bits/peso | No disponible | KL 0,10294; 55,3-66,6 tok/s en M3 Ultra | No disponible | Hugging Face, 0 descargas |
+| Ingot-IX-27B-Q2 (gemelo GGUF) | 27,36 B | GGUF, 2 bits ternario | No disponible | Mismos pesos; 56,4 tok/s en M3 Ultra, 137 tok/s en RTX PRO 6000 | No disponible | Hugging Face |
+| Ingot-genesis-27B-Q2 | 27 B aprox. | GGUF, 2 bits | No disponible | 20,1 % peor en KL y 29,4 % peor en distancia de estados ocultos que este modelo | No disponible | Hugging Face |
+| prism-ml/Ternary-Bonsai-2-27B-mlx-2bit | 27 B aprox. | MLX, 2 bits | No disponible | No disponible | No disponible | Hugging Face |
+| Ingot-X-27B-MLX-2bit | 27 B | MLX, 2 bits | No disponible | No disponible | No disponible | Hugging Face |
 
 Las alternativas comparables son todas del mismo ecosistema (Ingot / Prism) y comparten tamaño y esquema de cuantización, porque el subred fija el profesor y el formato. La comparación frente a cuantizaciones de 4 u 8 bits del mismo Qwen/Qwen3.8-27B no está disponible en la información proporcionada.
 
@@ -106,7 +106,7 @@ Las alternativas comparables son todas del mismo ecosistema (Ingot / Prism) y co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dendriteholdings/Ingot-IX-27B-MLX-2bit
+- Modelo en Hugging Face: https://huggingface.co/dendriteholdings/Ingot-IX-27B-MLX-2bit
 - Gemelo GGUF: https://huggingface.co/dendriteholdings/Ingot-IX-27B-Q2
 - Cuantización génesis de referencia: https://huggingface.co/dendriteholdings/Ingot-genesis-27B-Q2
 - Otro rey de la familia: https://huggingface.co/dendriteholdings/Ingot-X-27B-MLX-2bit

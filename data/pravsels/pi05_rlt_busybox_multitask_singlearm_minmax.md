@@ -75,7 +75,7 @@ No disponible. No se han encontrado modelos comparables en la informacion propor
 
 ## Enlaces
 
-- [HuggingFace: pravsels/pi05_rlt_busybox_multitask_singlearm_minmax](https://huggingface.co/pravsels/pi05_rlt_busybox_multitask_singlearm_minmax)
+- [Hugging Face: pravsels/pi05_rlt_busybox_multitask_singlearm_minmax](https://huggingface.co/pravsels/pi05_rlt_busybox_multitask_singlearm_minmax)
 - [VLA asociado: pravsels/pi05_busybox_multitask_minmax](https://huggingface.co/pravsels/pi05_busybox_multitask_minmax)
 - [Dataset: villekuosmanen/busybox_multitask](https://huggingface.co/datasets/villekuosmanen/busybox_multitask)
 - [Repositorio OpenPI (π0.5)](https://github.com/Physical-Intelligence/openpi)

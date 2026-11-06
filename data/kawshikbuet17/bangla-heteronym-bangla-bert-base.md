@@ -86,9 +86,9 @@ Posición en el benchmark del autor: séptimo de 12 modelos por accuracy media d
 
 | Modelo | Parametros | Accuracy (test) | Latencia (T4) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kawshikbuet17/bangla-heteronym-bangla-bert-base (este) | 164,4 M | 97,55 % (semilla 44); 98,01 ± 0,39 % media | 10,6 ms/frase | MIT | HuggingFace |
-| kawshikbuet17/bangla-heteronym-banglabert | no disponible | 99,46 % | 12,5 ms/frase | no disponible en la información | HuggingFace |
-| sagorsarker/bangla-bert-base (modelo base) | no disponible | no aplica (no es un modelo de heterónimos) | no disponible | no disponible en la información | HuggingFace |
+| kawshikbuet17/bangla-heteronym-bangla-bert-base (este) | 164,4 M | 97,55 % (semilla 44); 98,01 ± 0,39 % media | 10,6 ms/frase | MIT | Hugging Face |
+| kawshikbuet17/bangla-heteronym-banglabert | no disponible | 99,46 % | 12,5 ms/frase | no disponible en la información | Hugging Face |
+| sagorsarker/bangla-bert-base (modelo base) | no disponible | no aplica (no es un modelo de heterónimos) | no disponible | no disponible en la información | Hugging Face |
 
 El benchmark del autor incluye 12 modelos; este checkpoint ocupa el séptimo puesto por accuracy media. No se dispone de datos de los otros 10 modelos en la información proporcionada.
 
@@ -106,7 +106,7 @@ El benchmark del autor incluye 12 modelos; este checkpoint ocupa el séptimo pue
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kawshikbuet17/bangla-heteronym-bangla-bert-base
+- Modelo en Hugging Face: https://huggingface.co/kawshikbuet17/bangla-heteronym-bangla-bert-base
 - Dataset de heterónimos: https://huggingface.co/datasets/kawshikbuet17/bangla-heteronyms
 - Repositorio del benchmark: https://github.com/kawshikbuet17/bangla-heteronym-benchmark
 - Modelo recomendado por el autor: https://huggingface.co/kawshikbuet17/bangla-heteronym-banglabert

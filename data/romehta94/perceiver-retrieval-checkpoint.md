@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Romehta94/perceiver-retrieval-checkpoint` es un repositorio de HuggingFace que contiene una implementacion propia y compacta en PyTorch de una arquitectura Perceiver orientada a tareas de retrieval. El autor (Romehta94) lo publica explicitamente como material de revision de codigo, pruebas de humo (smoke tests) y experimentos controlados a pequena escala, y no como un modelo preentrenado listo para produccion. La configuracion incluida es de escala "tiny" y el checkpoint `model.safetensors` se describe como una inicializacion valida, no como un checkpoint entrenado ni evaluado.
+`Romehta94/perceiver-retrieval-checkpoint` es un repositorio de Hugging Face que contiene una implementacion propia y compacta en PyTorch de una arquitectura Perceiver orientada a tareas de retrieval. El autor (Romehta94) lo publica explicitamente como material de revision de codigo, pruebas de humo (smoke tests) y experimentos controlados a pequena escala, y no como un modelo preentrenado listo para produccion. La configuracion incluida es de escala "tiny" y el checkpoint `model.safetensors` se describe como una inicializacion valida, no como un checkpoint entrenado ni evaluado.
 
 El interes del repositorio es, por tanto, documental y de ingenieria: sirve como referencia minima de como estructurar un Perceiver para retrieval (atencion estandar, fusion de tensores, activacion GELU, normalizacion GroupNorm) junto con su `config.json` y su receta de experimento por defecto en `training_args.json` (optimizador Adafactor con schedule coseno). No hay evidencia en la informacion disponible de que se haya completado un entrenamiento ni de que existan metricas publicadas.
 
@@ -66,7 +66,7 @@ No disponible. En la informacion proporcionada no se identifican modelos compara
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Romehta94/perceiver-retrieval-checkpoint | 33.088 | no disponible | sin benchmarks publicados (checkpoint de inicializacion) | BSD-3-Clause | HuggingFace |
+| Romehta94/perceiver-retrieval-checkpoint | 33.088 | no disponible | sin benchmarks publicados (checkpoint de inicializacion) | BSD-3-Clause | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,6 +82,6 @@ No disponible. En la informacion proporcionada no se identifican modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Romehta94/perceiver-retrieval-checkpoint
+- Modelo en Hugging Face: https://huggingface.co/Romehta94/perceiver-retrieval-checkpoint
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes. Las entradas devueltas correspondian a paginas genericas de YouTube (https://www.youtube.com/, https://music.youtube.com/, https://accounts.google.com/) sin relacion alguna con el modelo, su arquitectura o su evaluacion, por lo que no se incluyen como fuentes.
 - Papers, blogs, repositorios o demos adicionales: no disponibles.

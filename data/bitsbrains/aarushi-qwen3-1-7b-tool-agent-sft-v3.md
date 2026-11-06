@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Bitsbrains/aarushi-qwen3-1.7b-tool-agent-sft-v3` es un fine-tuning del modelo base Qwen3-1.7B, orientado a tareas de tool calling y uso de agentes. El nombre sugiere que ha sido entrenado mediante supervisión fina (SFT) en una tercera versión de un dataset específico para agentes con herramientas. Sin embargo, la model card publicada en HuggingFace es una plantilla automática sin información real: no se especifican datos de entrenamiento, licencia, idiomas ni métricas de evaluación. El repositorio tiene un tamaño de 0 GB, lo que indica que los pesos no están subidos o el modelo está vacío.
+El modelo `Bitsbrains/aarushi-qwen3-1.7b-tool-agent-sft-v3` es un fine-tuning del modelo base Qwen3-1.7B, orientado a tareas de tool calling y uso de agentes. El nombre sugiere que ha sido entrenado mediante supervisión fina (SFT) en una tercera versión de un dataset específico para agentes con herramientas. Sin embargo, la model card publicada en Hugging Face es una plantilla automática sin información real: no se especifican datos de entrenamiento, licencia, idiomas ni métricas de evaluación. El repositorio tiene un tamaño de 0 GB, lo que indica que los pesos no están subidos o el modelo está vacío.
 
 Dado que el modelo base Qwen3-1.7B es un transformer denso de 1.700 millones de parámetros con una ventana de contexto de 32.768 tokens, es razonable asumir que este fine-tuning hereda esas características, pero no hay confirmación oficial. La relevancia actual de este tipo de modelos radica en la demanda de asistentes pequeños y eficientes capaces de interactuar con APIs y ejecutar acciones de forma autónoma en entornos con recursos limitados.
 
@@ -65,7 +65,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. Como refe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Bitsbrains/aarushi-qwen3-1.7b-tool-agent-sft-v3
+- Hugging Face: https://huggingface.co/Bitsbrains/aarushi-qwen3-1.7b-tool-agent-sft-v3
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Documentacion de Qwen3 en Ollama: https://ollama.com/library/qwen3:1.7b
 - Informe tecnico de Qwen3: https://ar5iv.labs.arxiv.org/html/2505.09388

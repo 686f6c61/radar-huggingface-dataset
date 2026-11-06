@@ -90,14 +90,14 @@ No hay disponibles otros modelos comparables directamente en la información pro
 - El modelo es un "rate model" simplificado; no captura dinámica de potenciales de acción ni propiedades biofísicas detalladas de las neuronas.
 - La detección de looming falla en aproximaciones frontales y depende del fondo (rayas) situado detrás del objeto. El autor reconoce estos como problemas abiertos.
 - En bucle cerrado se observa una oscilación en reposo, lo que puede afectar a la estabilidad en aplicaciones que requieran fijación precisa.
-- No es un modelo de lenguaje: no soporta procesamiento de texto, generación de código ni tool calling. La etiqueta `language: en` en HuggingFace es una etiqueta general, pero el modelo no procesa lenguaje natural.
+- No es un modelo de lenguaje: no soporta procesamiento de texto, generación de código ni tool calling. La etiqueta `language: en` en Hugging Face es una etiqueta general, pero el modelo no procesa lenguaje natural.
 - Los parámetros ajustados son específicos del circuito MaleCNS y de la tarea de comportamiento simulada; su generalización a otros conectomas o a condiciones ambientales distintas no está establecida.
 - La licencia CC BY 4.0 exige atribución a Berg et al. (2026) y, para los parámetros derivados de flyvis, a Lappalainen et al. (2024). El código en GitHub es MIT, pero los datos del grafo no están bajo esa licencia.
-- El repositorio de HuggingFace no contiene pesos en formatos estándar como safetensors o GGUF; la integración en pipelines típicos de IA generativa no es posible.
+- El repositorio de Hugging Face no contiene pesos en formatos estándar como safetensors o GGUF; la integración en pipelines típicos de IA generativa no es posible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AbijahKaj/fruit-fly-brain
+- Hugging Face: https://huggingface.co/AbijahKaj/fruit-fly-brain
 - Repositorio GitHub (código, extractores, entrenador y aplicación): https://github.com/AbijahKaj/fruit-fly-brain-research
 - Referencia del conectoma MaleCNS: Berg, S. et al. (2026). *A connectome of the male Drosophila melanogaster central nervous system.* Cell. https://male-cns.janelia.org/
 - Modelo flyvis (MIT): Lappalainen, J. K. et al. (2024). *Connectome-constrained networks predict neural activity across the fly visual system.* Nature. https://github.com/TuragaLab/flyvis

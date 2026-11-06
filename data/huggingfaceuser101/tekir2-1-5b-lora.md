@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tekir2-1.5B-LoRA es un repositorio publicado en HuggingFace por el usuario HuggingFaceUser101 bajo el identificador `HuggingFaceUser101/Tekir2-1.5B-LoRA`. El nombre sugiere un adaptador LoRA asociado a un modelo base de aproximadamente 1.500 millones de parametros, pero esta circunstancia no puede confirmarse: la model card publicada es la plantilla automatica de HuggingFace, sin ninguna seccion completada, y no incluye informacion sobre el modelo base, el proceso de entrenamiento, los datos utilizados ni los usos previstos.
+Tekir2-1.5B-LoRA es un repositorio publicado en Hugging Face por el usuario HuggingFaceUser101 bajo el identificador `HuggingFaceUser101/Tekir2-1.5B-LoRA`. El nombre sugiere un adaptador LoRA asociado a un modelo base de aproximadamente 1.500 millones de parametros, pero esta circunstancia no puede confirmarse: la model card publicada es la plantilla automatica de Hugging Face, sin ninguna seccion completada, y no incluye informacion sobre el modelo base, el proceso de entrenamiento, los datos utilizados ni los usos previstos.
 
 El repositorio tiene un tamano de 0,1 GB y declara la libreria `transformers` junto con el formato `safetensors`. Ese volumen es coherente con un adaptador LoRA (tipicamente decenas o centenas de megabytes) y no con los pesos completos de un modelo de 1.500 millones de parametros en precision fp16, que rondarian los 3 GB. Se trata, por tanto, de un artefacto que probablemente requiere descargar por separado el modelo base para poder utilizarse.
 
@@ -38,14 +38,14 @@ Otros datos tecnicos verificables del repositorio:
 
 No hay informacion disponible sobre la arquitectura del modelo. La model card no rellena los apartados de descripcion del modelo, tipo de modelo, datos de entrenamiento, hiperparametros ni regimen de precision (fp32, fp16, bf16 o fp8). Tampoco se documenta si hubo ajuste por instrucciones, RLHF, DPO u otra etapa de alineamiento.
 
-El unico indicio estructural es el sufijo `LoRA` del identificador, que apunta a un adaptador de bajo rango pensado para combinarse con un modelo base no identificado. El tamano de 0,1 GB y la presencia de `safetensors` son compatibles con esa interpretacion, pero el repositorio no declara el modelo base del que parte ni el rango, los modulos objetivo ni el dataset de ajuste. La etiqueta `arxiv:1910.09700` no corresponde a un articulo sobre este modelo: es la referencia a Lacoste et al. (2019) que aparece en la plantilla de model card de HuggingFace para el calculo de emisiones de carbono.
+El unico indicio estructural es el sufijo `LoRA` del identificador, que apunta a un adaptador de bajo rango pensado para combinarse con un modelo base no identificado. El tamano de 0,1 GB y la presencia de `safetensors` son compatibles con esa interpretacion, pero el repositorio no declara el modelo base del que parte ni el rango, los modulos objetivo ni el dataset de ajuste. La etiqueta `arxiv:1910.09700` no corresponde a un articulo sobre este modelo: es la referencia a Lacoste et al. (2019) que aparece en la plantilla de model card de Hugging Face para el calculo de emisiones de carbono.
 
 ## Capacidades
 
 No se ha publicado informacion sobre las capacidades del modelo. No es posible confirmar ninguna de las siguientes, y por tanto no se afirman:
 
 - Generacion de texto, razonamiento, codigo o matematicas: no disponible.
-- Soporte de tool calling o function calling: no disponible (la etiqueta `endpoints_compatible` solo indica compatibilidad de despliegue con los endpoints de HuggingFace, no capacidades funcionales).
+- Soporte de tool calling o function calling: no disponible (la etiqueta `endpoints_compatible` solo indica compatibilidad de despliegue con los endpoints de Hugging Face, no capacidades funcionales).
 - Soporte de agentes o razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
 - Capacidades especiales (modo de razonamiento explicito, vision, audio): no disponible.
@@ -57,7 +57,7 @@ No es posible recomendar casos de uso concretos sin informacion verificada sobre
 
 - Ajuste de dominio sobre un modelo base concreto: el adaptador se cargaria junto al modelo base para especializar el comportamiento en una tarea; requiere conocer la identidad y la revision exacta del modelo base.
 - Prototipado rapido en `transformers`: cargar el adaptador con `PeftModel` sobre el modelo base para tareas de generacion; requiere conocer el `target_modules` y la configuracion de LoRA.
-- Despliegue sobre endpoints compatibles: la etiqueta `endpoints_compatible` sugiere que el autor pretendia publicarlo en HuggingFace Inference Endpoints, pero sin licencia ni ficha tecnica no es desplegable en produccion.
+- Despliegue sobre endpoints compatibles: la etiqueta `endpoints_compatible` sugiere que el autor pretendia publicarlo en Hugging Face Inference Endpoints, pero sin licencia ni ficha tecnica no es desplegable en produccion.
 - Evaluacion comparativa frente al modelo base: comprobar si el ajuste aporta mejoras; imposible sin los pesos base ni benchmarks.
 - Reutilizacion del adaptador por terceros: bloqueada por la ausencia de licencia explicita.
 - Integracion en pipelines de CI/CD o atencion al cliente: descartada por falta de datos sobre contexto, idiomas y licencia.
@@ -79,7 +79,7 @@ Las cifras siguientes son estimaciones derivadas unicamente del sufijo `1.5B` de
 
 ## Comparativa con modelos similares
 
-No disponible. Sin conocer el modelo base ni el dominio de ajuste, no es posible identificar alternativas comparables. La comparacion con otros adaptadores LoRA publicados en HuggingFace carece de sentido sin datos de licencia, idioma, contexto y evaluacion que permitan establecer una equivalencia funcional.
+No disponible. Sin conocer el modelo base ni el dominio de ajuste, no es posible identificar alternativas comparables. La comparacion con otros adaptadores LoRA publicados en Hugging Face carece de sentido sin datos de licencia, idioma, contexto y evaluacion que permitan establecer una equivalencia funcional.
 
 ## Limitaciones y advertencias
 
@@ -88,14 +88,14 @@ No disponible. Sin conocer el modelo base ni el dominio de ajuste, no es posible
 - Limitaciones de contexto e idioma: no disponibles. No se declara ventana de contexto ni cobertura idiomatica.
 - Licencia: no disponible. Sin una licencia explicita, no hay autorizacion clara para uso comercial; en la practica, la ausencia de licencia equivale a reserva de derechos por defecto en muchas jurisdicciones, por lo que el uso en produccion es juridicamente arriesgado.
 - Modelo base no identificado: la ausencia de campo `base_model` impide saber que pesos hay que descargar, que licencia hereda el adaptador y si es tecnicamente compatible con la version actual de `transformers`.
-- Ficha incompleta: la model card es la plantilla automatica de HuggingFace sin editar; no hay seccion de uso fuera de alcance, sesgos, detalles de entrenamiento ni citacion.
+- Ficha incompleta: la model card es la plantilla automatica de Hugging Face sin editar; no hay seccion de uso fuera de alcance, sesgos, detalles de entrenamiento ni citacion.
 - Adopcion nula: cero descargas y cero likes en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
 - Fecha de publicacion futura: el repositorio figura creado y actualizado el 2026-10-10, con un margen de apenas nueve segundos entre ambos eventos, lo que sugiere una subida automatica sin revision posterior.
-- La etiqueta `arxiv:1910.09700` no acredita ningun articulo propio del modelo; corresponde a la referencia sobre emisiones de carbono incluida en la plantilla de HuggingFace.
+- La etiqueta `arxiv:1910.09700` no acredita ningun articulo propio del modelo; corresponde a la referencia sobre emisiones de carbono incluida en la plantilla de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HuggingFaceUser101/Tekir2-1.5B-LoRA
+- Repositorio en Hugging Face: https://huggingface.co/HuggingFaceUser101/Tekir2-1.5B-LoRA
 - Referencia de la etiqueta arxiv:1910.09700 (Lacoste et al., 2019, cuantificacion de emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la plantilla: https://mlco2.github.io/impact
 

@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparables en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tanish-2285/meissa-tool-routing
+- Hugging Face: https://huggingface.co/tanish-2285/meissa-tool-routing
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - PhysioNet MIMIC-CXR-JPG: https://physionet.org/content/mimic-cxr-jpg/
 - PhysioNet MIMIC-Ext-MIMIC-CXR-VQA: https://physionet.org/content/mimic-ext-mimic-cxr-vqa/

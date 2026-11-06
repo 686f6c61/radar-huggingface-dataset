@@ -85,7 +85,7 @@ La comparativa con Qwen3.5 no se puede completar por falta de datos en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jhone888/Ornith-1.5-35B-A3B-FULL-OBLITERATED-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/jhone888/Ornith-1.5-35B-A3B-FULL-OBLITERATED-NVFP4
 - Modelo base (BF16): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Versión FP8 del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8
 - Base abl iterada (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated

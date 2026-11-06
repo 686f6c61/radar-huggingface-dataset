@@ -38,7 +38,7 @@ El modelo se basa en una arquitectura de mezcla de expertos (MoE) de la familia 
 - Desarrollo de técnicas de "scrubbing": los parámetros del proceso (seed, delta-scale, target-similarity) pueden compararse con otros candidatos para optimizar la edición.
 - Análisis de representaciones internas: al tener solo 55 tensores modificados, permite estudiar la contribución de esos tensores a las tareas visuales.
 - Benchmarking de modelos experimentales: útil para la comunidad que trabaja con modelos "scrub" y necesita métricas de rendimiento tras la edición.
-- Reproducibilidad: al estar disponible en HuggingFace, otros investigadores pueden descargarlo y replicar los experimentos del autor.
+- Reproducibilidad: al estar disponible en Hugging Face, otros investigadores pueden descargarlo y replicar los experimentos del autor.
 
 ## Benchmarks y rendimiento
 
@@ -66,4 +66,4 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [HuggingFace: vect0r18/mirror-jmaxcool-bkn1890-vision-only-v3-8b7aadd6](https://huggingface.co/vect0r18/mirror-jmaxcool-bkn1890-vision-only-v3-8b7aadd6)
+- [Hugging Face: vect0r18/mirror-jmaxcool-bkn1890-vision-only-v3-8b7aadd6](https://huggingface.co/vect0r18/mirror-jmaxcool-bkn1890-vision-only-v3-8b7aadd6)

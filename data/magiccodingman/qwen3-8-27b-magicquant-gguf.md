@@ -109,7 +109,7 @@ El repositorio MagicQuant ofrece la ventaja de tener múltiples quants GGUF ya p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/magiccodingman/Qwen3.8-27B-MagicQuant-GGUF
+- Repositorio Hugging Face: https://huggingface.co/magiccodingman/Qwen3.8-27B-MagicQuant-GGUF
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B (Alibaba Cloud): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Cuantizaciones de Unsloth (fuente de configuraciones Dynamic V2/V3): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

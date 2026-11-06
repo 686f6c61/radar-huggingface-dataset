@@ -73,7 +73,7 @@ La model card indica expresamente que no se reclaman mejoras de benchmark ni abl
 |---|---|---|---|---|---|
 | imanthonymartinez/ocr-freeform-study92 | Notas de investigación y tensor safetensors de 49.600 parámetros | 49.600 | No disponible | MIT | Ninguno |
 | niwalker/ocr-freeform-study | Notas de lectura y esbozo de experimento | No disponible | No disponible | No disponible | Ninguno; enfatiza lo que queda por probar |
-| Modelos con la etiqueta `ocr-freeform` en HuggingFace | Listado de 11 repositorios con la etiqueta (mayoría base) | No disponible | No disponible | No disponible | No disponible |
+| Modelos con la etiqueta `ocr-freeform` en Hugging Face | Listado de 11 repositorios con la etiqueta (mayoría base) | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos técnicos de modelos de OCR comparables que permitan una comparación cuantitativa de parámetros, contexto o rendimiento. El leaderboard de OCR Arena existe como recurso público de evaluación comparativa, pero no se han proporcionado cifras concretas en la información disponible.
 
@@ -92,7 +92,7 @@ No se dispone de datos técnicos de modelos de OCR comparables que permitan una 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imanthonymartinez/ocr-freeform-study92
+- Repositorio en Hugging Face: https://huggingface.co/imanthonymartinez/ocr-freeform-study92
 - Nota relacionada: https://huggingface.co/niwalker/ocr-freeform-study
 - Listado de repositorios con la etiqueta `ocr-freeform`: https://huggingface.co/models?other=ocr-freeform
 - Leaderboard de evaluación de OCR: https://www.ocrarena.ai/leaderboard

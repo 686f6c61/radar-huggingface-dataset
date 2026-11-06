@@ -71,8 +71,8 @@ No disponible. No existen modelos comparables en la misma categoría, dado que e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guicybercode/br-sovereign-llm-smoke
-- Perfil del autor en HuggingFace: https://huggingface.co/guicybercode
+- Modelo en Hugging Face: https://huggingface.co/guicybercode/br-sovereign-llm-smoke
+- Perfil del autor en Hugging Face: https://huggingface.co/guicybercode
 - Dataset de entrenamiento: https://huggingface.co/datasets/guicybercode/br-sovereign-llm-corpus
 - Canal de YouTube del autor: https://www.youtube.com/@guicybercode
 - ORCID del autor: https://orcid.org/0009-0008-5294-224X

@@ -73,9 +73,9 @@ No se dispone de datos verificables para establecer una comparativa cuantitativa
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TaoMate-H3-3Step-ComfyUI (esta ficha) | no disponible (~2,48 GB en safetensors) | no disponible | sin benchmarks publicados | other | HuggingFace, 0 descargas, 9 likes |
-| TaoMate-H3 (original, TaoLiveAIGC) | no disponible | no disponible | no disponible | no disponible en esta informacion | HuggingFace |
-| MiniMax H3 (modelo base) | no disponible | no disponible | no disponible | no disponible en esta informacion | HuggingFace |
+| TaoMate-H3-3Step-ComfyUI (esta ficha) | no disponible (~2,48 GB en safetensors) | no disponible | sin benchmarks publicados | other | Hugging Face, 0 descargas, 9 likes |
+| TaoMate-H3 (original, TaoLiveAIGC) | no disponible | no disponible | no disponible | no disponible en esta informacion | Hugging Face |
+| MiniMax H3 (modelo base) | no disponible | no disponible | no disponible | no disponible en esta informacion | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ No se dispone de datos verificables para establecer una comparativa cuantitativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Robert1212star/TaoMate-H3-3Step-ComfyUI
+- Repositorio en Hugging Face: https://huggingface.co/Robert1212star/TaoMate-H3-3Step-ComfyUI
 - Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio oficial del LoRA original TaoMate-H3 (TaoLive AIGC): https://huggingface.co/TaoLiveAIGC/TaoMate-H3
 - Proyecto original en GitHub: https://github.com/TaoLiveAIGC/TaoMate-H3

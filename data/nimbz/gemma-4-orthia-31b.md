@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Nimbz/Gemma-4-Orthia-31B es un checkpoint publicado en HuggingFace por el usuario Nimbz. Por la nomenclatura del identificador, todo apunta a un modelo derivado de la familia Gemma con aproximadamente 31.000 millones de parametros, pero esta informacion no se confirma en los metadatos disponibles y debe tratarse como una inferencia a partir del nombre, no como un dato verificado. No se especifica pipeline de uso, idiomas soportados, ni arquitectura concreta.
+Nimbz/Gemma-4-Orthia-31B es un checkpoint publicado en Hugging Face por el usuario Nimbz. Por la nomenclatura del identificador, todo apunta a un modelo derivado de la familia Gemma con aproximadamente 31.000 millones de parametros, pero esta informacion no se confirma en los metadatos disponibles y debe tratarse como una inferencia a partir del nombre, no como un dato verificado. No se especifica pipeline de uso, idiomas soportados, ni arquitectura concreta.
 
-Se trata de un repositorio de acceso restringido (gated): para descargarlo es necesario aceptar condiciones en HuggingFace. El repositorio ocupa 99,5 GB, un tamano coherente con pesos en precision completa o mixta para un modelo de ese orden de parametros, e incluye pesos en formato safetensors. La licencia declarada es Apache 2.0, aunque conviene recordar que, si el modelo deriva de Gemma, podrian aplicar terminos adicionales de la licencia original.
+Se trata de un repositorio de acceso restringido (gated): para descargarlo es necesario aceptar condiciones en Hugging Face. El repositorio ocupa 99,5 GB, un tamano coherente con pesos en precision completa o mixta para un modelo de ese orden de parametros, e incluye pesos en formato safetensors. La licencia declarada es Apache 2.0, aunque conviene recordar que, si el modelo deriva de Gemma, podrian aplicar terminos adicionales de la licencia original.
 
 El modelo registra 0 descargas y 0 likes en el momento de la consulta, con fecha de creacion y actualizacion en septiembre de 2026. Es, por tanto, un checkpoint reciente y practicamente sin validacion por parte de la comunidad, lo que limita cualquier evaluacion de calidad, rendimiento o idoneidad para produccion.
 
@@ -21,7 +21,7 @@ El modelo registra 0 descargas y 0 likes en el momento de la consulta, con fecha
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 99,5 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 
 ## Arquitectura y entrenamiento
@@ -72,7 +72,7 @@ Las siguientes cifras son estimaciones estandar calculadas a partir de un hipote
 - Opciones de despliegue: no confirmadas. Habria que verificar compatibilidad con vLLM, llama.cpp, Ollama o TGI una vez descargado el checkpoint; el formato safetensors no garantiza por si solo compatibilidad directa con llama.cpp (que requiere GGUF).
 - Latencia y throughput: no disponible.
 
-Advertencia adicional: el repositorio es de acceso restringido, por lo que la descarga requiere aprobacion previa en HuggingFace.
+Advertencia adicional: el repositorio es de acceso restringido, por lo que la descarga requiere aprobacion previa en Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -100,7 +100,7 @@ Los datos de las tres alternativas corresponden a informacion publica ampliament
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nimbz/Gemma-4-Orthia-31B
+- Hugging Face: https://huggingface.co/Nimbz/Gemma-4-Orthia-31B
 - Paper: no disponible.
 - Blog o documentacion del autor: no disponible.
 - Repositorio de codigo: no disponible.

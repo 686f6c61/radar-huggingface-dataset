@@ -85,7 +85,7 @@ En cuanto a modelos subyacentes compatibles declarados: Gemma 4 (E2B, E4B, 12B, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Shahadat56900/sillytavern
+- Repositorio Hugging Face: https://huggingface.co/Shahadat56900/sillytavern
 - Repositorio de origen referenciado: https://huggingface.co/nohurry/sillytavern
 - Anuncio Voyage v6: https://www.reddit.com/r/SillyTavernAI/comments/1xgcxcc/universal_preset_voyage_v6
 - Anuncio Voyage v5.1: https://www.reddit.com/r/SillyTavernAI/comments/1x5h8xt/universal_preset_voyage_v51

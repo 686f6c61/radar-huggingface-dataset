@@ -2,7 +2,7 @@
 
 ## Resumen
 
-khazic/tfm-offline-stage1-group-7 es un repositorio publicado en HuggingFace por el usuario khazic, con un tamaño de 2,8 GB y 3 "likes", pero sin ningún tipo de documentación asociada: no declara pipeline, licencia, idiomas soportados ni parámetros. En el momento de redactar esta ficha acumula 0 descargas y no se ha publicado ninguna model card, paper, blog ni repositorio de código que describa su arquitectura, su proceso de entrenamiento o su procedencia.
+khazic/tfm-offline-stage1-group-7 es un repositorio publicado en Hugging Face por el usuario khazic, con un tamaño de 2,8 GB y 3 "likes", pero sin ningún tipo de documentación asociada: no declara pipeline, licencia, idiomas soportados ni parámetros. En el momento de redactar esta ficha acumula 0 descargas y no se ha publicado ninguna model card, paper, blog ni repositorio de código que describa su arquitectura, su proceso de entrenamiento o su procedencia.
 
 El identificador del repositorio ("tfm-offline-stage1-group-7") sugiere que se trata de un artefacto académico vinculado a un trabajo de fin de máster, probablemente correspondiente a una primera etapa ("stage1") de un proyecto por grupos. Esta interpretación es una inferencia a partir del nombre y no está confirmada por ninguna fuente verificable, por lo que debe tratarse como una hipótesis y no como un dato.
 
@@ -92,6 +92,6 @@ No disponible. La comparación con alternativas exige conocer, como mínimo, el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/khazic/tfm-offline-stage1-group-7
+- Repositorio en Hugging Face: https://huggingface.co/khazic/tfm-offline-stage1-group-7
 - Paper, blog, repositorio de código o demo: no disponible.
 - Resultados relevantes de la búsqueda web: ninguno. Las consultas realizadas no devolvieron ninguna página relacionada con este modelo; los únicos resultados obtenidos fueron hilos de Stack Overflow sobre el componente TDBNavigator, una pregunta sobre generación de entidades POJO en IntelliJ IDEA, una guía en chino sobre cómo abrir ficheros ISO y dos preguntas en ruso sobre el plugin Database Navigator, todos ellos sin relación con el repositorio analizado.

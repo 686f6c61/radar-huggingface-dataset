@@ -91,4 +91,4 @@ No se dispone de informacion sobre modelos comparables. La model card menciona "
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sdasfdsfhhh/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/sdasfdsfhhh/MyAwesomeModel-TestRepo

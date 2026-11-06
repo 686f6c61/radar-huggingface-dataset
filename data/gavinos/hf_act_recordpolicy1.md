@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `GavinOS/hf_act_recordpolicy1` es una política robótica entrenada mediante aprendizaje por imitación con la arquitectura Action Chunking with Transformers (ACT), desarrollada originalmente por el equipo de Google Research y ahora integrada en el ecosistema LeRobot de HuggingFace. El modelo está diseñado para controlar un robot manipulador de tipo `so101` (SO-101, un brazo robótico de bajo coste basado en el diseño de LeRobot) en la tarea concreta de colocar un bloque azul en un contenedor.
+El modelo `GavinOS/hf_act_recordpolicy1` es una política robótica entrenada mediante aprendizaje por imitación con la arquitectura Action Chunking with Transformers (ACT), desarrollada originalmente por el equipo de Google Research y ahora integrada en el ecosistema LeRobot de Hugging Face. El modelo está diseñado para controlar un robot manipulador de tipo `so101` (SO-101, un brazo robótico de bajo coste basado en el diseño de LeRobot) en la tarea concreta de colocar un bloque azul en un contenedor.
 
 La relevancia de este modelo reside en que es un ejemplo práctico de cómo LeRobot permite a cualquier desarrollador entrenar y publicar políticas robóticas de manera reproducible. Con solo 51,5 millones de parámetros y un dataset de entrenamiento reducido (11 episodios, 22.504 fotogramas), demuestra que ACT puede aprender tareas de manipulación con pocos datos teleoperados. El modelo se distribuye bajo licencia Apache 2.0, lo que permite su uso comercial y su integración en proyectos de robótica educativa o de investigación.
 

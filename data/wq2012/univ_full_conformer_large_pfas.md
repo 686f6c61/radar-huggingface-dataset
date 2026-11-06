@@ -78,7 +78,7 @@ No se han publicado en la información disponible resultados comparativos frente
 
 | Modelo | Parámetros | Contexto | Embedding | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `univ_full_conformer_large_pfas` (este) | 7,31 M (inferencia) | no disponible | 1536 | Apache 2.0 | HuggingFace + PyPI |
+| `univ_full_conformer_large_pfas` (este) | 7,31 M (inferencia) | no disponible | 1536 | Apache 2.0 | Hugging Face + PyPI |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos de modelos comparables de speaker verification con los que establecer una comparación cuantitativa.

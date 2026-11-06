@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ApolloRaines/Clef-Flash-Concise-m0.5 | 9,4B | no disponible | Decisiones tipadas con probabilidades; texto libre en modo CausalLM | Apache-2.0 | HuggingFace, requiere código personalizado |
-| Cloudflare/clef-flash (base) | 9B (aprox.) | no disponible | Decisiones tipadas con probabilidades | Apache-2.0 | HuggingFace, con blog y leaderboard |
-| Cloudflare/clef | no disponible (variante mayor) | no disponible | Decisiones tipadas con probabilidades | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-9B | 9B (aprox.) | no disponible | Texto libre generativo | Apache-2.0 (según el modelo base) | HuggingFace |
+| ApolloRaines/Clef-Flash-Concise-m0.5 | 9,4B | no disponible | Decisiones tipadas con probabilidades; texto libre en modo CausalLM | Apache-2.0 | Hugging Face, requiere código personalizado |
+| Cloudflare/clef-flash (base) | 9B (aprox.) | no disponible | Decisiones tipadas con probabilidades | Apache-2.0 | Hugging Face, con blog y leaderboard |
+| Cloudflare/clef | no disponible (variante mayor) | no disponible | Decisiones tipadas con probabilidades | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-9B | 9B (aprox.) | no disponible | Texto libre generativo | Apache-2.0 (según el modelo base) | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -97,8 +97,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- HuggingFace (esta variante): https://huggingface.co/ApolloRaines/Clef-Flash-Concise-m0.5
-- Modelo base en HuggingFace: https://huggingface.co/Cloudflare/clef-flash
+- Hugging Face (esta variante): https://huggingface.co/ApolloRaines/Clef-Flash-Concise-m0.5
+- Modelo base en Hugging Face: https://huggingface.co/Cloudflare/clef-flash
 - Variante mayor de Clef: https://huggingface.co/Cloudflare/clef
 - Modelo de origen del backbone: https://huggingface.co/Qwen/Qwen3.5-9B
 - Anuncio de los modelos de decisión de Clef en el blog de Cloudflare: https://blog.cloudflare.com/clef-decision-models

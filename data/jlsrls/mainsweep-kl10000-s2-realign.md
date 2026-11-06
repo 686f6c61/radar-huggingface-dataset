@@ -58,6 +58,6 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jlsrls/mainsweep-kl10000-s2-realign
+- Hugging Face: https://huggingface.co/jlsrls/mainsweep-kl10000-s2-realign
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Registro del entrenamiento en Weights & Biases: https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/2vf0pe1m

@@ -18,7 +18,7 @@ La aportacion principal no es la arquitectura, que es un transformer encoder est
 | Longitud de contexto | no disponible (la arquitectura RoBERTa estandar emplea 512 tokens) |
 | Tipos de cuantizacion | no disponible (solo se publican pesos en safetensors; sin versiones GGUF, AWQ, GPTQ o bitsandbytes documentadas) |
 | Idiomas soportados | cingales (sinhala, codigo "si") |
-| Licencia | CC-BY-4.0 (acceso restringido, requiere aceptar condiciones en HuggingFace) |
+| Licencia | CC-BY-4.0 (acceso restringido, requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | safetensors |
 | Libreria | transformers |
 | Pipelines declarados | fill-mask, feature-extraction |
@@ -67,15 +67,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 - VRAM estimada para inferencia: en FP32 aproximadamente 0,5 GB; en FP16/BF16 aproximadamente 0,25 GB; en INT8 aproximadamente 0,13 GB (estimaciones proporcionales a los 125.978.112 parametros).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria, incluidas NVIDIA T4, GTX 1650, RTX 3060, RTX 4090, A100 o H100; el modelo es muy ligero en comparacion con modelos generativos.
 - Cabe en GPU de consumo: si, con holgura, en practicamente cualquier GPU de consumo moderna (RTX 3060 en adelante) e incluso en GPU integradas de gama alta.
-- Opciones de despliegue: transformers de HuggingFace (pipeline fill-mask o feature-extraction); servidores de inferencia compatibles con transformers como TGI (text-generation-inference orientado a encoders) o APIs propias. No se documentan versiones GGUF para llama.cpp u Ollama ni se confirma compatibilidad con vLLM en la informacion disponible.
+- Opciones de despliegue: transformers de Hugging Face (pipeline fill-mask o feature-extraction); servidores de inferencia compatibles con transformers como TGI (text-generation-inference orientado a encoders) o APIs propias. No se documentan versiones GGUF para llama.cpp u Ollama ni se confirma compatibilidad con vLLM en la informacion disponible.
 - Latencia y throughput estimados: no disponible; no se aportan datos de rendimiento medidos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lm-spell/SinBERT-large-ft-ssc | 125.978.112 | no disponible | Correccion ortografica en cingales (fill-mask) | CC-BY-4.0 | Gated en HuggingFace |
-| NLPC-UOM/SinBERT-large | no disponible en la informacion | no disponible | Modelo base en cingales (fill-mask, clasificacion) | MIT (segun fuentes) | Publico en HuggingFace |
+| lm-spell/SinBERT-large-ft-ssc | 125.978.112 | no disponible | Correccion ortografica en cingales (fill-mask) | CC-BY-4.0 | Gated en Hugging Face |
+| NLPC-UOM/SinBERT-large | no disponible en la informacion | no disponible | Modelo base en cingales (fill-mask, clasificacion) | MIT (segun fuentes) | Publico en Hugging Face |
 | Otros modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El modelo comparativo mas directo es su propio modelo base, NLPC-UOM/SinBERT-large, preentrenado sobre sin-cc-15M. La diferencia principal es que lm-spell/SinBERT-large-ft-ssc ha sido afinado para correccion ortografica, mientras que el base es un modelo de proposito general para cingales. No se dispone en la informacion proporcionada de otros modelos alternativos de la misma categoria con datos verificables para comparar parametros, contexto o rendimiento.
@@ -88,13 +88,13 @@ El modelo comparativo mas directo es su propio modelo base, NLPC-UOM/SinBERT-lar
 - Alcance limitado de la tarea: esta disenado para correccion ortografica y extraccion de caracteristicas; no genera texto libre, no razona y no soporta tool calling ni flujos de agente.
 - Longitud de contexto: no se especifica en la ficha; como modelo RoBERTa, es probable que este limitado a secuencias cortas (del orden de 512 tokens), lo que restringe su uso en documentos largos sin fragmentacion.
 - Licencia CC-BY-4.0: permite uso comercial siempre que se atribuya la autoria, pero es necesario cumplir las condiciones de atribucion y no imponer restricciones adicionales.
-- Acceso restringido: el modelo es gated en HuggingFace, por lo que hay que aceptar las condiciones del autor antes de descargarlo, lo que puede complicar su integracion automatizada en pipelines.
+- Acceso restringido: el modelo es gated en Hugging Face, por lo que hay que aceptar las condiciones del autor antes de descargarlo, lo que puede complicar su integracion automatizada en pipelines.
 - Adopcion practicamente nula: la ficha muestra 0 descargas y 0 likes, por lo que no existe una comunidad amplia que haya validado su calidad en produccion.
 - Ausencia de benchmarks: no hay metricas publicadas que permitan estimar de antemano la calidad de la correccion, algo critico antes de desplegarlo en un entorno real.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lm-spell/SinBERT-large-ft-ssc
+- Modelo en Hugging Face: https://huggingface.co/lm-spell/SinBERT-large-ft-ssc
 - Modelo base NLPC-UOM/SinBERT-large: https://huggingface.co/NLPC-UOM/SinBERT-large
 - Modelos afinados sobre SinBERT-large: https://huggingface.co/models?other=base_model:finetune:NLPC-UOM/SinBERT-large
 - Paper de referencia (LREC 2022): "BERTifying Sinhala - A Comprehensive Analysis of Pre-trained Language Models for Sinhala Text Classification"

@@ -89,6 +89,6 @@ No se dispone de datos de rendimiento del modelo base ni de alternativas en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/axteam/gemma-4-26B-A4B-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/axteam/gemma-4-26B-A4B-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

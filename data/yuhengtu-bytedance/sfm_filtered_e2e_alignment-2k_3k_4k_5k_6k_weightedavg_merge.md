@@ -2,17 +2,17 @@
 
 ## Resumen
 
-El modelo `sfm_filtered_e2e_alignment-2k_3k_4k_5k_6k_weightedavg_merge` es un modelo de lenguaje generativo creado mediante la fusión (merge) de cinco checkpoints de alineación de un modelo base de 6.856 millones de parámetros, desarrollado por el equipo de Bytedance. Se trata de un merge lineal ponderado (método Linear, basado en el paper arxiv:2203.05482) que combina los pesos de los pasos de entrenamiento 2000, 3000, 4000, 5000 y 6000 de un proceso de alineación denominado `filtered_e2e_alignment`, utilizando como base el checkpoint del paso 6000. El resultado es un modelo único con arquitectura GPT-NeoX (según los tags de HuggingFace) y pesos en formato bfloat16.
+El modelo `sfm_filtered_e2e_alignment-2k_3k_4k_5k_6k_weightedavg_merge` es un modelo de lenguaje generativo creado mediante la fusión (merge) de cinco checkpoints de alineación de un modelo base de 6.856 millones de parámetros, desarrollado por el equipo de Bytedance. Se trata de un merge lineal ponderado (método Linear, basado en el paper arxiv:2203.05482) que combina los pesos de los pasos de entrenamiento 2000, 3000, 4000, 5000 y 6000 de un proceso de alineación denominado `filtered_e2e_alignment`, utilizando como base el checkpoint del paso 6000. El resultado es un modelo único con arquitectura GPT-NeoX (según los tags de Hugging Face) y pesos en formato bfloat16.
 
 Este modelo es relevante porque ejemplifica una práctica común en la comunidad open source: la fusión de checkpoints de un mismo entrenamiento para obtener un modelo con mejor rendimiento o estabilidad que cualquiera de los checkpoints individuales. Sin embargo, la documentación proporcionada es extremadamente escasa: no se especifican la licencia, los idiomas soportados, los datos de entrenamiento ni los benchmarks. Esto limita su uso directo en producción sin una evaluación adicional por parte del usuario.
 
-El repositorio contiene únicamente los pesos en formato safetensors (13,7 GB) y una model card mínima que describe el proceso de fusión. No se incluyen ejemplos de uso, instrucciones de inferencia ni métricas de calidad. A pesar de ello, el modelo puede cargarse con la librería transformers y es compatible con text-generation-inference y endpoints de HuggingFace.
+El repositorio contiene únicamente los pesos en formato safetensors (13,7 GB) y una model card mínima que describe el proceso de fusión. No se incluyen ejemplos de uso, instrucciones de inferencia ni métricas de calidad. A pesar de ello, el modelo puede cargarse con la librería transformers y es compatible con text-generation-inference y endpoints de Hugging Face.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según tags de HuggingFace) |
+| Arquitectura | GPT-NeoX (según tags de Hugging Face) |
 | Parametros totales | 6.856.253.440 (~6,8 B) |
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -48,7 +48,7 @@ Dada la falta de documentación y evaluación, los casos de uso son especulativo
 - Generacion de texto en entornos con recursos limitados: con cuantizacion a 4 bits, podria ejecutarse en GPUs de consumo, aunque no hay datos oficiales sobre su calidad.
 - Fine-tuning posterior: los pesos podrian utilizarse como punto de partida para tareas especificas, siempre que la licencia lo permita (actualmente desconocida).
 - Evaluacion de alineacion: dado que proviene de un proceso de alineacion, podria usarse para medir la efectividad de dichos checkpoints en tareas de seguridad o seguimiento de instrucciones.
-- Despliegue en plataformas de inferencia compatibles: el modelo es compatible con text-generation-inference y endpoints de HuggingFace, por lo que puede servirse via API en infraestructuras que soporten estos formatos.
+- Despliegue en plataformas de inferencia compatibles: el modelo es compatible con text-generation-inference y endpoints de Hugging Face, por lo que puede servirse via API en infraestructuras que soporten estos formatos.
 
 ## Benchmarks y rendimiento
 
@@ -65,7 +65,7 @@ Los requisitos se estiman a partir del tamaño de los pesos (6,8 B parámetros e
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa fiable. El modelo es un merge de checkpoints de un proceso de alineacion interno de Bytedance, y no se conocen modelos publicos equivalentes con los mismos datos de entrenamiento. Existen otros merges similares en el mismo repositorio de HuggingFace (por ejemplo, `sfm_filtered_e2e_alignment-4k_5k_6k_merge` o `sfm-filtered-e2e-alignment-4k-5k-6k-avg`), pero no son alternativas de la misma categoria, sino variaciones del mismo experimento. Sin datos de rendimiento, cualquier comparacion seria especulativa.
+No se dispone de informacion suficiente para establecer una comparativa fiable. El modelo es un merge de checkpoints de un proceso de alineacion interno de Bytedance, y no se conocen modelos publicos equivalentes con los mismos datos de entrenamiento. Existen otros merges similares en el mismo repositorio de Hugging Face (por ejemplo, `sfm_filtered_e2e_alignment-4k_5k_6k_merge` o `sfm-filtered-e2e-alignment-4k-5k-6k-avg`), pero no son alternativas de la misma categoria, sino variaciones del mismo experimento. Sin datos de rendimiento, cualquier comparacion seria especulativa.
 
 ## Limitaciones y advertencias
 
@@ -77,7 +77,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-2k_3k_4k_5k_6k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-2k_3k_4k_5k_6k_weightedavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Paper del metodo Linear: https://arxiv.org/abs/2203.05482
 - Pagina de despliegue en FriendliAI (referencia): https://friendli.ai/models/yuhengtu-bytedance/sfm_filtered_e2e_alignment-2k_3k_4k_merge

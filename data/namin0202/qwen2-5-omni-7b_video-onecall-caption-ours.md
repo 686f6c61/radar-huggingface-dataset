@@ -81,7 +81,7 @@ El adaptador LoRA de este repositorio no publica resultados comparativos, por lo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/namin0202/qwen2-5-omni-7b_video-onecall-caption-ours
+- Repositorio Hugging Face: https://huggingface.co/namin0202/qwen2-5-omni-7b_video-onecall-caption-ours
 - Modelo base Qwen2.5-Omni-7B: https://huggingface.co/Qwen/Qwen2.5-Omni-7B
 - Repositorio GitHub de Qwen2.5-Omni: https://github.com/QwenLM/Qwen2.5-Omni
 - Documentacion de Transformers para Qwen2.5-Omni: https://huggingface.co/docs/transformers/v5.0.0/en/model_doc/qwen2_5_omni

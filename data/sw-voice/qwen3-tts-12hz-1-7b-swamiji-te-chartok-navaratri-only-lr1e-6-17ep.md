@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables documentado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-swamiji-te-chartok-navaratri-only-lr1e-6-17ep
+- Hugging Face: https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-swamiji-te-chartok-navaratri-only-lr1e-6-17ep
 - Modelo base: https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-telugu-chartok-indictts-sft-lr1e-6-2ep
 - Dataset citado en la model card: sw-voice/swamiji-navaratri-telugu-reuse-themes (no se proporciona URL directa)
 - Código citado en la model card: repositorio `swamiji-tts`, ruta `research/exp-iterations/08-qwen3-tts/experiments/06-te-char-tokens` (no se proporciona URL directa)

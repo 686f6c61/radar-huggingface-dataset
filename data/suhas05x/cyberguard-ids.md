@@ -2,9 +2,9 @@
 
 ## Resumen
 
-CyberGuard-IDS es un repositorio publicado en HuggingFace por el usuario suhas05x bajo licencia MIT. El nombre sugiere un sistema de deteccion de intrusiones (IDS, *Intrusion Detection System*) orientado a ciberseguridad, aunque la model card asociada no contiene descripcion tecnica, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio tiene un tamano de 0.0 GB, lo que indica que no incluye pesos del modelo o que estos no se han subido.
+CyberGuard-IDS es un repositorio publicado en Hugging Face por el usuario suhas05x bajo licencia MIT. El nombre sugiere un sistema de deteccion de intrusiones (IDS, *Intrusion Detection System*) orientado a ciberseguridad, aunque la model card asociada no contiene descripcion tecnica, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio tiene un tamano de 0.0 GB, lo que indica que no incluye pesos del modelo o que estos no se han subido.
 
-En el momento de redactar esta ficha no hay informacion publica sobre la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado en HuggingFace. Cualquier evaluacion tecnica del modelo resulta imposible con los datos disponibles.
+En el momento de redactar esta ficha no hay informacion publica sobre la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado en Hugging Face. Cualquier evaluacion tecnica del modelo resulta imposible con los datos disponibles.
 
 La relevancia actual de esta ficha es, por tanto, limitada: se trata de un repositorio practicamente vacio desde el punto de vista tecnico. Se documenta aqui para dejar constancia de su existencia y de la ausencia de informacion verificable, de modo que desarrolladores e investigadores no pierdan tiempo intentando integrarlo en produccion sin datos contrastados.
 
@@ -78,5 +78,5 @@ No disponible. No se puede establecer una comparativa con alternativas de la mis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/suhas05x/CyberGuard-IDS
+- Repositorio en Hugging Face: https://huggingface.co/suhas05x/CyberGuard-IDS
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

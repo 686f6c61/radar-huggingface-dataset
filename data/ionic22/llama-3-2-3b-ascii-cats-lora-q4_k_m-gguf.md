@@ -77,6 +77,6 @@ No hay más alternativas conocidas en la información proporcionada.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ionic22/Llama-3.2-3B-ascii-cats-lora-q4_k_m-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/ionic22/Llama-3.2-3B-ascii-cats-lora-q4_k_m-GGUF)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
 - [Documentación de llama.cpp](https://github.com/ggerganov/llama.cpp)

@@ -24,7 +24,7 @@ Su relevancia radica en la dificultad intrinseca del problema: la lectura de un 
 | Ficheros auxiliares | `vocab.json` (114 KB), `kanji-candidates.json` (311 KB), `readings.json` (19 MB), `names.json` (4,7 MB) |
 | Runtime de referencia | onnxruntime-node 1.19.2 sobre CPU |
 | Verificacion de integridad | `SHA256SUMS` firmado con minisign (`SHA256SUMS.minisig`) |
-| Repositorio | 0.0 GB segun HuggingFace (descargas y likes a 0 en el momento de la consulta) |
+| Repositorio | 0.0 GB segun Hugging Face (descargas y likes a 0 en el momento de la consulta) |
 
 ## Arquitectura y entrenamiento
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Horse Furigana 1.1 | ONNX int8 especializado en furigana | no disponible | no disponible | Horse Models Community License v2.0 (comercial bajo licencia) | HuggingFace, 0 descargas |
+| Horse Furigana 1.1 | ONNX int8 especializado en furigana | no disponible | no disponible | Horse Models Community License v2.0 (comercial bajo licencia) | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables en la documentacion proporcionada. La comparativa con alternativas de anotacion de furigana (por ejemplo, herramientas basadas en diccionarios o en modelos de lenguaje genericos) no puede realizarse con datos verificables a partir de la informacion disponible.
@@ -87,7 +87,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/2008-horse/horse-furigana
+- Modelo en Hugging Face: https://huggingface.co/2008-horse/horse-furigana
 - Sitio oficial: https://2008-horse.com
 - Licencia comercial: https://2008-horse.com/licensing/
 - Clave publica de firma: https://2008-horse.com/security/model-signing-key.txt

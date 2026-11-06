@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Sherasfera/ggg es un modelo alojado en HuggingFace cuyo repositorio, en el momento de redactar esta ficha, carece de model card descriptiva: el README solo contiene la etiqueta de licencia Apache 2.0, sin tarjetas técnicas, ejemplos de uso ni información sobre arquitectura, entrenamiento o capacidades. El autor identificado es Sherasfera y el repositorio no registra descargas ni likes, lo que sugiere que se trata de un proyecto muy reciente o de uso privado sin difusión comunitaria.
+Sherasfera/ggg es un modelo alojado en Hugging Face cuyo repositorio, en el momento de redactar esta ficha, carece de model card descriptiva: el README solo contiene la etiqueta de licencia Apache 2.0, sin tarjetas técnicas, ejemplos de uso ni información sobre arquitectura, entrenamiento o capacidades. El autor identificado es Sherasfera y el repositorio no registra descargas ni likes, lo que sugiere que se trata de un proyecto muy reciente o de uso privado sin difusión comunitaria.
 
-Debido a esta ausencia de documentación, no es posible determinar qué problema resuelve el modelo, ni su familia arquitectónica, tamaño en parámetros o longitud de contexto. Tampoco consta un pipeline asociado en HuggingFace, por lo que no se puede afirmar si se trata de un modelo de texto, visión, audio o multimodal. Cualquier evaluación técnica adicional requeriría inspeccionar directamente los ficheros de pesos del repositorio.
+Debido a esta ausencia de documentación, no es posible determinar qué problema resuelve el modelo, ni su familia arquitectónica, tamaño en parámetros o longitud de contexto. Tampoco consta un pipeline asociado en Hugging Face, por lo que no se puede afirmar si se trata de un modelo de texto, visión, audio o multimodal. Cualquier evaluación técnica adicional requeriría inspeccionar directamente los ficheros de pesos del repositorio.
 
 A pesar de la escasez de datos, la licencia Apache 2.0 sí es un dato verificable y relevante: permite uso comercial, modificación y redistribución con condiciones mínimas, lo que convierte al repositorio en un candidato legalmente flexible si su contenido técnico resultara útil. Esta ficha documenta el estado actual del repositorio con la información disponible, marcando explícitamente los campos desconocidos.
 
@@ -23,7 +23,7 @@ A pesar de la escasez de datos, la licencia Apache 2.0 sí es un dato verificabl
 
 ## Arquitectura y entrenamiento
 
-La model card del repositorio no aporta ninguna información sobre la arquitectura del modelo. No se especifica si se trata de un transformer denso, una arquitectura MoE, un modelo basado en SSM o un híbrido, ni el tamaño en parámetros. Tampoco hay datos sobre el pipeline de HuggingFace asociado, lo que impide incluso confirmar la modalidad del modelo (texto, imagen, audio o multimodal).
+La model card del repositorio no aporta ninguna información sobre la arquitectura del modelo. No se especifica si se trata de un transformer denso, una arquitectura MoE, un modelo basado en SSM o un híbrido, ni el tamaño en parámetros. Tampoco hay datos sobre el pipeline de Hugging Face asociado, lo que impide incluso confirmar la modalidad del modelo (texto, imagen, audio o multimodal).
 
 En cuanto al entrenamiento, no se ha publicado información sobre el número de tokens empleados, la composición del corpus, el uso de técnicas de alineación como RLHF o DPO, ni innovaciones técnicas destacables. La ausencia total de documentación sugiere que el autor no ha completado la model card, por lo que cualquier análisis arquitectónico requeriría descargar los pesos y examinar la configuración (config.json u ficheros equivalentes) directamente.
 
@@ -37,7 +37,7 @@ No se ha publicado información sobre las capacidades del modelo en la documenta
 - Capacidades multilingues
 - Capacidades especiales como vision, audio o thinking mode
 
-La ausencia de pipeline asignado en HuggingFace y de ejemplos en la model card impide verificar ninguna capacidad funcional.
+La ausencia de pipeline asignado en Hugging Face y de ejemplos en la model card impide verificar ninguna capacidad funcional.
 
 ## Casos de uso
 
@@ -45,7 +45,7 @@ Al no existir documentación sobre las capacidades del modelo, no es posible des
 
 - **Auditoria de repositorios desconocidos**: un equipo de seguridad o MLOps puede descargar los pesos para inspeccionar su configuración, procedencia y posibles riesgos antes de decidir su uso, aprovechando que la licencia Apache 2.0 no restringe el análisis.
 - **Punto de partida para fine-tuning propio**: si la inspección revela una arquitectura útil, la licencia permisiva permite modificar y redistribuir el modelo resultante sin obligaciones de copyleft.
-- **Investigación de procedencia de modelos**: el repositorio sirve como caso de estudio sobre la importancia de las model cards en la trazabilidad y reproducibilidad de modelos publicados en HuggingFace.
+- **Investigación de procedencia de modelos**: el repositorio sirve como caso de estudio sobre la importancia de las model cards en la trazabilidad y reproducibilidad de modelos publicados en Hugging Face.
 - **Integración en pipelines de evaluación automatizada**: puede incluirse en suites de benchmarking internas para medir su rendimiento real en tareas de texto u otras modalidades, dado que no hay benchmarks publicados.
 - **Base para documentación comunitaria**: un usuario que evalúe el modelo puede contribuir completando la model card, práctica habitual en la comunidad de código abierto.
 - **Uso comercial potencial**: si el modelo resultara competente en alguna tarea, la licencia Apache 2.0 permite su despliegue en productos comerciales sin regalías ni restricciones de uso.
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 Al desconocerse el tamaño del modelo, su formato de pesos y las cuantizaciones disponibles, no es posible calcular requisitos de hardware con precisión. Se indican orientaciones generales:
 
-- **VRAM estimada**: no disponible; depende del tamaño real de los pesos, que debe verificarse en el repositorio (el tamaño de los ficheros en HuggingFace es el indicador más fiable).
+- **VRAM estimada**: no disponible; depende del tamaño real de los pesos, que debe verificarse en el repositorio (el tamaño de los ficheros en Hugging Face es el indicador más fiable).
 - **GPU recomendadas**: no disponible. Como referencia general, modelos de menos de 8B de parámetros suelen caber en una RTX 4090 (24 GB) incluso en FP16, mientras que modelos de 70B requieren A100 u H100 con 80 GB o cuantización agresiva.
 - **Consumer GPU**: no determinable sin conocer el tamaño de los pesos.
 - **Opciones de despliegue**: si el modelo usa un formato estándar (safetensors con arquitectura transformer convencional), debería ser compatible con vLLM, TGI, llama.cpp (si se convierte a GGUF) y Ollama, pero esta compatibilidad no está verificada.
@@ -91,8 +91,8 @@ La comparación de rendimiento no es realizable: no hay benchmarks publicados pa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sherasfera/ggg
-- Perfil del autor en HuggingFace: https://huggingface.co/Sherasfera
+- Repositorio en Hugging Face: https://huggingface.co/Sherasfera/ggg
+- Perfil del autor en Hugging Face: https://huggingface.co/Sherasfera
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 
 No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo.

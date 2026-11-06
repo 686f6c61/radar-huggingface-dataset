@@ -80,7 +80,7 @@ No disponible. La información proporcionada no incluye otros checkpoints de Duo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotControlStack/duobench-act-sim-transfer_cube
+- Modelo en Hugging Face: https://huggingface.co/RobotControlStack/duobench-act-sim-transfer_cube
 - Dataset DuoBench: https://huggingface.co/datasets/RobotControlStack/duobench
 - Paper DuoBench: https://arxiv.org/abs/2606.11901
 - Página del proyecto: https://duobench.github.io/

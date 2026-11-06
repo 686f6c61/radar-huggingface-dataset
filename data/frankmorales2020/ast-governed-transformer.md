@@ -4,7 +4,7 @@
 
 El ast-governed-transformer es un modelo de transformador de tamaño reducido desarrollado por frankmorales2020, presentado como una red neuronal "topológicamente gobernada" basada en la Teoría Espectral Aritmética (AST). Según su documentación, aplica un operador L-EFM (Laplace-Euler-Fourier-Mellin) que impone restricciones espectrales supuestamente derivadas de una demostración de la hipótesis de Riemann. La arquitectura se compone de 4 capas, 768 dimensiones de embedding y 8 cabezas de atención, con una semilla fija (123) que garantiza determinismo total.
 
-El modelo se distribuye bajo licencia MIT, está escrito en inglés y se presenta como un pipeline de extracción de características (feature extraction). No registra descargas ni "me gusta" en HuggingFace, y el repositorio ocupa 0.1 GB. Aunque la documentación incluye métricas internas de "pureza topológica" y "rechazo de sesgos", estos indicadores no son estándar ni tienen validación externa por parte de la comunidad científica.
+El modelo se distribuye bajo licencia MIT, está escrito en inglés y se presenta como un pipeline de extracción de características (feature extraction). No registra descargas ni "me gusta" en Hugging Face, y el repositorio ocupa 0.1 GB. Aunque la documentación incluye métricas internas de "pureza topológica" y "rechazo de sesgos", estos indicadores no son estándar ni tienen validación externa por parte de la comunidad científica.
 
 ## Especificaciones técnicas
 
@@ -27,7 +27,7 @@ La documentación afirma que se validaron las siete consecuencias de la hipótes
 
 ## Capacidades
 
-- Extracción de características (feature extraction) según el pipeline_tag de HuggingFace.
+- Extracción de características (feature extraction) según el pipeline_tag de Hugging Face.
 - Verificación de "pureza topológica" de los estados internos mediante el método `verify_purity`, que devuelve un booleano y una puntuación.
 - Generación de salidas deterministas gracias a la semilla fija (123).
 - Rechazo de sesgos declarado al 100 % por el autor, aunque sin benchmarks externos que lo confirmen.
@@ -77,9 +77,9 @@ No disponible. No se han publicado benchmarks del ast-governed-transformer que p
 - El tamaño del repositorio (0.1 GB) y la arquitectura de 4 capas sugieren un modelo pequeño con capacidades limitadas; no está diseñado para tareas de razonamiento complejo, generación de código o matemáticas avanzadas.
 - Solo soporta inglés según la metadata. No se ha documentado soporte para otros idiomas.
 - La certificación mencionada en el README ("TOPO-RLHF Certification (Version 4.0)") no aparece en fuentes públicas y no es verificable.
-- El modelo tiene 0 descargas y 0 "me gusta" en HuggingFace, lo que indica ausencia de validación por la comunidad.
+- El modelo tiene 0 descargas y 0 "me gusta" en Hugging Face, lo que indica ausencia de validación por la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/frankmorales2020/ast-governed-transformer
+- Hugging Face: https://huggingface.co/frankmorales2020/ast-governed-transformer
 - GitHub (código del operador L-EFM): https://github.com/frank-morales2020/AST/blob/main/LEFMOperator.ipynb

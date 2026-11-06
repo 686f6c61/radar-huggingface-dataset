@@ -2,7 +2,7 @@
 
 ## Resumen
 
-III-TinyStories es un modelo de lenguaje autoregresivo de muy pequeno tamano (838.664 parametros, segun los pesos safetensors del repositorio) desarrollado por KordAI y publicado en HuggingFace. Se trata de un testbed experimental para la arquitectura III, una arquitectura de decodificador personalizada que combina auto-atencion causal con capas convolucionales causales con compuertas (gated), en lugar del stack Transformer de atencion completa convencional.
+III-TinyStories es un modelo de lenguaje autoregresivo de muy pequeno tamano (838.664 parametros, segun los pesos safetensors del repositorio) desarrollado por KordAI y publicado en Hugging Face. Se trata de un testbed experimental para la arquitectura III, una arquitectura de decodificador personalizada que combina auto-atencion causal con capas convolucionales causales con compuertas (gated), en lugar del stack Transformer de atencion completa convencional.
 
 El modelo fue entrenado desde cero sobre el dataset TinyStories con objetivo de prediccion del siguiente token, y esta disenado deliberadamente como banco de pruebas para investigacion de arquitecturas de mezcladores de secuencia hibridos, no como un modelo de proposito general. Con menos de un millon de parametros, su distribucion de entrenamiento es estrecha y sintetica, lo que limita severamente su utilidad fuera de entornos de experimentacion controlados.
 
@@ -65,7 +65,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KordAI/III-tinystories | 838.664 | no disponible | Decoder hibrido atencion + convolucional (III) | no especificada | HuggingFace, requiere `trust_remote_code` |
+| KordAI/III-tinystories | 838.664 | no disponible | Decoder hibrido atencion + convolucional (III) | no especificada | Hugging Face, requiere `trust_remote_code` |
 | Alternativas de la familia TinyStories | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Se puede afirmar, no obstante, que dentro del ecosistema TinyStories existen modelos de referencia de tamano superior al millon de parametros, y que III-TinyStories se situa por debajo de esa escala, con una arquitectura no estandar que impide la comparacion directa con implementaciones Transformer convencionales sin controlar todas las variables de entrenamiento.
@@ -83,6 +83,6 @@ Se puede afirmar, no obstante, que dentro del ecosistema TinyStories existen mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KordAI/III-tinystories
+- Modelo en Hugging Face: https://huggingface.co/KordAI/III-tinystories
 - Perfil del autor: https://huggingface.co/KordAI
 - Dataset de entrenamiento TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories

@@ -17,7 +17,7 @@ El modelo base, DeepSeek LLM 7B Chat, es un modelo de lenguaje bilingüe (inglé
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (el modelo base soporta ingles y chino) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -55,10 +55,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deepseek-llm-7b-chat-dragon-STEER0.584375-ft4.44 | 7B (base) | no disponible | no disponible | no disponible | HuggingFace |
-| deepseek-ai/deepseek-llm-7b-chat | 7B | 4096 (según documentación oficial de DeepSeek, no en esta ficha) | inglés, chino | DeepSeek License (permite uso comercial) | HuggingFace |
-| meta-llama/Llama-2-7b-chat | 7B | 4096 | inglés, español, francés, etc. | Llama 2 License (uso comercial con restricciones) | HuggingFace |
-| mistralai/Mistral-7B-Instruct | 7B | 32768 | inglés, francés, alemán, español, italiano | Apache 2.0 | HuggingFace |
+| deepseek-llm-7b-chat-dragon-STEER0.584375-ft4.44 | 7B (base) | no disponible | no disponible | no disponible | Hugging Face |
+| deepseek-ai/deepseek-llm-7b-chat | 7B | 4096 (según documentación oficial de DeepSeek, no en esta ficha) | inglés, chino | DeepSeek License (permite uso comercial) | Hugging Face |
+| meta-llama/Llama-2-7b-chat | 7B | 4096 | inglés, español, francés, etc. | Llama 2 License (uso comercial con restricciones) | Hugging Face |
+| mistralai/Mistral-7B-Instruct | 7B | 32768 | inglés, francés, alemán, español, italiano | Apache 2.0 | Hugging Face |
 
 Nota: los datos de contexto y licencia para DeepSeek-LLM-7B-chat se toman de la documentación oficial del modelo base, no de la ficha del fine-tuning. La comparativa es orientativa, ya que no se dispone de resultados de rendimiento para el modelo analizado.
 
@@ -74,7 +74,7 @@ Nota: los datos de contexto y licencia para DeepSeek-LLM-7B-chat se toman de la 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Echoo113/deepseek-llm-7b-chat-dragon-STEER0.584375-ft4.44
+- Página del modelo en Hugging Face: https://huggingface.co/Echoo113/deepseek-llm-7b-chat-dragon-STEER0.584375-ft4.44
 - Modelo base DeepSeek-LLM-7B-Chat: https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat
 - Repositorio GitHub de DeepSeek-LLM: https://github.com/deepseek-ai/DeepSeek-LLM
 - Sitio web de DeepSeek: https://deepseek.com/en/index.html

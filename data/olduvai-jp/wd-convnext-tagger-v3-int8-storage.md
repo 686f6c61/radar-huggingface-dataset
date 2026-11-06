@@ -86,7 +86,7 @@ La evaluación se realizó sobre 2.000 imágenes fijas con ONNX Runtime 1.23.0 e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/olduvai-jp/wd-convnext-tagger-v3-int8-storage
+- Repositorio Hugging Face: https://huggingface.co/olduvai-jp/wd-convnext-tagger-v3-int8-storage
 - Modelo base: https://huggingface.co/SmilingWolf/wd-convnext-tagger-v3
 - Revisión fijada del modelo base: `d39e46de298d27340111b64965e20b8185c407e6`
 - Autor del modelo base (SmilingWolf): https://huggingface.co/SmilingWolf

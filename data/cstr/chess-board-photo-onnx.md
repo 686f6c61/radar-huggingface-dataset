@@ -92,7 +92,7 @@ No se dispone de datos publicados de modelos alternativos equivalentes en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cstr/chess-board-photo-onnx
+- Modelo en Hugging Face: https://huggingface.co/cstr/chess-board-photo-onnx
 - Proyecto CrispChess: https://github.com/CrispStrobe/CrispChess
 - Proyecto chesscog: https://github.com/georg-wolflein/chesscog
 - Articulo de chesscog: Georg Wolflein y Ognjen Arandjelovic, *J. Imaging* 2021 (referencia citada en la model card, sin URL directa incluida)

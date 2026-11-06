@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Indra OCR es un modelo de OCR de aproximadamente un millón de parámetros desarrollado por Datalab (publicado en HuggingFace bajo la organización one-code/datalab-to), diseñado para convertir PDFs e imágenes en markdown, texto plano o JSON con cajas delimitadoras. Su propuesta de valor principal es ejecutarse íntegramente en CPU mediante ONNX Runtime, sin necesidad de PyTorch ni GPU, lo que lo hace extremadamente barato de desplegar en comparación con los grandes modelos de document intelligence.
+Indra OCR es un modelo de OCR de aproximadamente un millón de parámetros desarrollado por Datalab (publicado en Hugging Face bajo la organización one-code/datalab-to), diseñado para convertir PDFs e imágenes en markdown, texto plano o JSON con cajas delimitadoras. Su propuesta de valor principal es ejecutarse íntegramente en CPU mediante ONNX Runtime, sin necesidad de PyTorch ni GPU, lo que lo hace extremadamente barato de desplegar en comparación con los grandes modelos de document intelligence.
 
 El modelo aborda el problema clásico del OCR a escala: extraer texto de documentos reales (escaneos torcidos, escritura a mano, texto en ángulos de hasta 45 grados, texto claro sobre fondo oscuro) con alta precisión y throughput. Según la model card, obtiene 66,7 en OmniParseBench (71,4 con la opción `--math`), por delante del pipeline completo PP-StructureV3 de PaddleOCR (58,4) y muy por encima de Tesseract (19,3 en texto).
 
-Su relevancia actual radica en la combinación de tres factores: soporte de más de 80 idiomas y alfabetos (latino, cirílico, griego, CJK, árabe, hebreo, lenguas índicas, tailandés, jemer, entre otros), detección de layout con orden de lectura por líneas y bloques, y un tamaño de descarga de unos 76 MB que permite inferencia local en cualquier máquina. El repo de HuggingFace pesa 0,1 GB y los pesos suman 1.250.566 parámetros.
+Su relevancia actual radica en la combinación de tres factores: soporte de más de 80 idiomas y alfabetos (latino, cirílico, griego, CJK, árabe, hebreo, lenguas índicas, tailandés, jemer, entre otros), detección de layout con orden de lectura por líneas y bloques, y un tamaño de descarga de unos 76 MB que permite inferencia local en cualquier máquina. El repo de Hugging Face pesa 0,1 GB y los pesos suman 1.250.566 parámetros.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ Rendimiento en velocidad (misma maquina y paginas):
 - GPU recomendadas: ninguna; esta diseñado explicitamente para CPU via ONNX Runtime.
 - Consumer hardware: cabe sobradamente en cualquier ordenador domestico; la model card referencia benchmarks en 32 nucleos (throughput) y 4 nucleos (~210 ms/pagina), por lo que portatiles y VPS modestos son suficientes.
 - Despliegue: paquete Python oficial `pip install indra-ocr` con CLI (`indra-ocr archivo.pdf`, procesamiento por lotes con `--out`, salida JSON con `--format json`); no se menciona soporte de vLLM, llama.cpp, Ollama o TGI (no aplican a un modelo ONNX de OCR).
-- Los modelos se descargan automaticamente en la primera ejecucion desde HuggingFace (unos 76 MB: 30 MB de redes y 46 MB de modelos de lenguaje para lineas dudosas).
+- Los modelos se descargan automaticamente en la primera ejecucion desde Hugging Face (unos 76 MB: 30 MB de redes y 46 MB de modelos de lenguaje para lineas dudosas).
 
 ## Comparativa con modelos similares
 
@@ -96,15 +96,15 @@ Chandra es el modelo state of the art de la misma casa, orientado a maxima preci
 - Escritura a mano: la precision es limitada (25,2% en las pruebas de handwriting de OmniParseBench); para manuscritos criticos, la propia Datalab recomienda su modelo Chandra en su plataforma gestionada.
 - La licencia OpenRAIL-M modificada es gratuita para investigacion, uso personal y startups con menos de 20 M USD de financiacion/ingresos, pero prohíbe el uso competitivo con la API de Datalab; el uso comercial mas alla de esas condiciones requiere licencia comercial de pago.
 - El codigo es Apache 2.0, pero los pesos no: hay que revisar el archivo LICENSE antes de cualquier despliegue comercial.
-- El proyecto es muy reciente (creado en octubre de 2026) con muy poca traccion en HuggingFace (36 descargas, 1 like), por lo que la madurez y el soporte comunitario son limitados.
+- El proyecto es muy reciente (creado en octubre de 2026) con muy poca traccion en Hugging Face (36 descargas, 1 like), por lo que la madurez y el soporte comunitario son limitados.
 - No se ha publicado informacion sobre sesgos, tasas de alucinacion en OCR (errores de reconocimiento en scripts de baja densidad como jemer o birmano) ni datos de entrenamiento.
 - La opcion `--math` mejora el reconocimiento de formulas, pero no se detallan sus limitaciones ni su coste en latencia.
 - El repo lista safetensors como formato, pero la libreria y el pipeline son ONNX; conviene verificar que formato se descarga realmente en la primera ejecucion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/one-code/indra-ocr
-- Version de Datalab en HuggingFace: https://huggingface.co/datalab-to/indra-ocr
+- Modelo en Hugging Face: https://huggingface.co/one-code/indra-ocr
+- Version de Datalab en Hugging Face: https://huggingface.co/datalab-to/indra-ocr
 - Web de Datalab: https://www.datalab.to
 - Documentacion: https://documentation.datalab.to
 - Playground publico: https://www.datalab.to/playground

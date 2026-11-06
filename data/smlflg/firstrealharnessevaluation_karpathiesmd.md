@@ -6,7 +6,7 @@ First Real Harness Evaluation (repositorio `smlflg/FirstRealHarnessEvaluation_Ka
 
 El proyecto se centra en experimentos con Aider sobre SWE-bench Lite y organiza cada iteración de forma simétrica: 3 tareas x 5 ejecuciones x 2 condiciones, es decir, 30 ejecuciones por iteración. Incluye herramientas de ejecución, preflight, resumen, comparación científica A/B y comparación de modelos. El estado actual es de herramienta funcional, pero el propio repositorio declara explícitamente que todavía no reclama un resultado decisivo para ninguna política concreta.
 
-Por tanto, esta ficha describe un artefacto de evaluación y no un modelo con pesos, contexto o licencia de pesos. No se dispone de pipeline, idiomas ni licencia declarados en HuggingFace, el repositorio ocupa 0,1 GB y no registra descargas ni "likes" en el momento de la consulta.
+Por tanto, esta ficha describe un artefacto de evaluación y no un modelo con pesos, contexto o licencia de pesos. No se dispone de pipeline, idiomas ni licencia declarados en Hugging Face, el repositorio ocupa 0,1 GB y no registra descargas ni "likes" en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ Por tanto, esta ficha describe un artefacto de evaluación y no un modelo con pe
 | Parametros activos | no aplica (no es un modelo de mezcla de expertos) |
 | Longitud de contexto | no aplica (el contexto lo aporta el modelo juez o el agente evaluado) |
 | Tipos de cuantizacion | no aplica |
-| Idiomas soportados | no disponible en los metadatos de HuggingFace; la model card y la documentación están redactadas en inglés |
+| Idiomas soportados | no disponible en los metadatos de Hugging Face; la model card y la documentación están redactadas en inglés |
 | Licencia | no disponible |
 | Formato de pesos | no aplica; el repositorio contiene código y documentación, con un tamano total de 0,1 GB |
 | Autor | smlflg |
@@ -94,7 +94,7 @@ No hay comparativa cuantitativa disponible. Este repositorio no es un modelo y l
 ## Limitaciones y advertencias
 
 - No es un modelo: no genera texto, no razona, no tiene pesos, contexto, cuantizaciones ni capacidades multimodales. Cualquier expectativa de uso como LLM es incorrecta.
-- Licencia no declarada: no hay licencia en los metadatos de HuggingFace, por lo que no se puede verificar si el uso comercial está permitido. Es un riesgo relevante antes de integrarlo en un producto.
+- Licencia no declarada: no hay licencia en los metadatos de Hugging Face, por lo que no se puede verificar si el uso comercial está permitido. Es un riesgo relevante antes de integrarlo en un producto.
 - El propio autor advierte que el repositorio no es una plataforma general de evaluación de agentes, ni un producto de panel, ni una prueba de que un conjunto amplio de reglas de estilo "Karpathy" sea bueno en general.
 - Sin resultado concluyente: el repositorio no reclama un resultado decisivo para ninguna política, y algunas comparaciones locales se han marcado como `not_decisive` o `not_testable`.
 - Potencia estadística limitada: el diseño de 3 tareas x 5 ejecuciones x 2 condiciones produce 30 ejecuciones por iteración, insuficiente para generalizar a cualquier cambio de política sin repetir iteraciones y sin apoyo de la capa A/B.
@@ -108,7 +108,7 @@ No hay comparativa cuantitativa disponible. Este repositorio no es un modelo y l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smlflg/FirstRealHarnessEvaluation_KarpathiesMD
+- Repositorio en Hugging Face: https://huggingface.co/smlflg/FirstRealHarnessEvaluation_KarpathiesMD
 - Protocolo de evaluación científica (ruta interna citada en la model card): `docs/scientific_evaluation_protocol.md`
 - Diagrama del diseño experimental (ruta interna citada): `web/static/scientific-versuchsaufbau.html`
 - Directorio de informes generados: `results/summary/`

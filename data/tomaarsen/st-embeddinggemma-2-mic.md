@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tomaarsen/st-embeddinggemma-2-mic` es un artefacto de prueba (fixture) publicado en HuggingFace por el desarrollador tomaarsen, conocido por su trabajo en la librería sentence-transformers. No se trata de un modelo entrenado para producción, sino de una versión reducida ("shrunk") del pipeline de SentenceTransformer correspondiente a `google/embeddinggemma-2`, generada para validar la integración de frameworks y contratos de ejecución. El propio autor advierte en la model card que los pesos son aleatorios y no representan la calidad de recuperación del modelo original.
+`tomaarsen/st-embeddinggemma-2-mic` es un artefacto de prueba (fixture) publicado en Hugging Face por el desarrollador tomaarsen, conocido por su trabajo en la librería sentence-transformers. No se trata de un modelo entrenado para producción, sino de una versión reducida ("shrunk") del pipeline de SentenceTransformer correspondiente a `google/embeddinggemma-2`, generada para validar la integración de frameworks y contratos de ejecución. El propio autor advierte en la model card que los pesos son aleatorios y no representan la calidad de recuperación del modelo original.
 
 El repositorio empaqueta en un único lugar los pesos reducidos, ejemplos de uso ejecutables y las expectativas del framework (manifest de contrato en `integration.json`, uso con Transformers en `integrations/transformers/usage.md`, procedencia del fixture en `build.json`). Con 19.361.122 parámetros reales en safetensors y un tamaño de repo de 0,1 GB, es un artefacto ligero pensado para tests de integración continua y verificación de pipelines, no para inferencia real.
 
@@ -84,7 +84,7 @@ La comparación con alternativas de la misma categoría (modelos de embeddings p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tomaarsen/st-embeddinggemma-2-mic
+- Hugging Face: https://huggingface.co/tomaarsen/st-embeddinggemma-2-mic
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Manifest de contrato: https://huggingface.co/tomaarsen/st-embeddinggemma-2-mic/blob/main/integration.json
 - Uso con Transformers: https://huggingface.co/tomaarsen/st-embeddinggemma-2-mic/blob/main/integrations/transformers/usage.md

@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estandar de lenguaje (MMLU, HumanEv
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| reachy-mini-motion-planner-4b | ~4 000 M (planner) + 21,8 M (generador) | no disponible | 0,38 s de mediana por prompt; 0,91 en sondas fisicas fuera de distribucion | Apache 2.0 | HuggingFace, endpoints compatibles |
-| reachy-mini-motion-planner-27b | ~27 000 M (planner) + 21,8 M (generador) | no disponible | 2,5 veces mas lento que la variante de 4B segun el autor | no disponible | HuggingFace |
-| Qwen/Qwen3.5-4B (modelo base) | ~4 000 M | no disponible | No orientado a planificacion de movimiento; carece de la gramatica de recetas y de la proyeccion sobre el espacio alcanzable | no disponible | HuggingFace |
+| reachy-mini-motion-planner-4b | ~4 000 M (planner) + 21,8 M (generador) | no disponible | 0,38 s de mediana por prompt; 0,91 en sondas fisicas fuera de distribucion | Apache 2.0 | Hugging Face, endpoints compatibles |
+| reachy-mini-motion-planner-27b | ~27 000 M (planner) + 21,8 M (generador) | no disponible | 2,5 veces mas lento que la variante de 4B segun el autor | no disponible | Hugging Face |
+| Qwen/Qwen3.5-4B (modelo base) | ~4 000 M | no disponible | No orientado a planificacion de movimiento; carece de la gramatica de recetas y de la proyeccion sobre el espacio alcanzable | no disponible | Hugging Face |
 
 No se dispone de modelos alternativos de planificacion de movimiento especificos para Reachy Mini en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de modelos alternativos de planificacion de movimiento especificos
 - Traccion nula: 0 descargas y 0 likes en el momento de la consulta, sin validacion independiente por parte de la comunidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/binhpham/reachy-mini-motion-planner-4b
+- Modelo en Hugging Face: https://huggingface.co/binhpham/reachy-mini-motion-planner-4b
 - Variante de 27B: https://huggingface.co/binhpham/reachy-mini-motion-planner-27b
 - Dataset de entrenamiento (reachy-mini-massive-motion-library): https://huggingface.co/datasets/binhpham/reachy-mini-massive-motion-library
 - Demo en el navegador (Space reachy-mini-motion-generator): https://huggingface.co/spaces/binhpham/reachy-mini-motion-generator

@@ -77,6 +77,6 @@ No disponible. No se dispone de datos de parametros, contexto ni rendimiento que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Devatri/anlp-assignment2-part2-sophia
+- Modelo en Hugging Face: https://huggingface.co/Devatri/anlp-assignment2-part2-sophia
 - Dataset de entrenamiento: `browndw/human-ai-parallel-corpus` (referenciado en la model card; enlace directo no proporcionado)
 - `model.py` y `metrics.csv`: incluidos en el repositorio del modelo (enlace directo no proporcionado)

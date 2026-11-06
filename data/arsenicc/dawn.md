@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DAWN (Day thermal to RGB for drone imagery) es un modelo de imagen a imagen especializado en la conversión de imágenes térmicas diurnas a RGB para fotogrametría con drones. Lo desarrolla el autor independiente Arsenicc y se publica bajo licencia MIT en HuggingFace, con el código asociado en el repositorio GitHub `rzx01/dawn`. El modelo resuelve un problema concreto: la información térmica no captura pintura, texto ni marcas viales, por lo que la colorización reconstruye color plausible a partir de la intensidad térmica, aceptando explícitamente la invención de detalle no observable.
+DAWN (Day thermal to RGB for drone imagery) es un modelo de imagen a imagen especializado en la conversión de imágenes térmicas diurnas a RGB para fotogrametría con drones. Lo desarrolla el autor independiente Arsenicc y se publica bajo licencia MIT en Hugging Face, con el código asociado en el repositorio GitHub `rzx01/dawn`. El modelo resuelve un problema concreto: la información térmica no captura pintura, texto ni marcas viales, por lo que la colorización reconstruye color plausible a partir de la intensidad térmica, aceptando explícitamente la invención de detalle no observable.
 
 Técnicamente no es un transformer generativo al uso, sino un pipeline híbrido: un codificador DINOv3 ViT-S+ (congelado, con adaptadores LoRA afinados), un transformer de velocidad para flow matching, una cabeza de color y un refiner local opcional de 2.545 parámetros que ajusta únicamente el canal L\*. La salida se ensambla en espacio de color CIELAB y se acompaña de mapas de incertidumbre de brillo y color.
 
@@ -81,7 +81,7 @@ No disponible. La información proporcionada no incluye modelos comparables de c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Arsenicc/DAWN
+- Hugging Face: https://huggingface.co/Arsenicc/DAWN
 - Repositorio GitHub: https://github.com/rzx01/dawn
 - Resultados del proyecto: https://github.com/rzx01/dawn#5-results
 - DINOv3 base (acceso restringido): https://huggingface.co/facebook/dinov3-vits16plus-pretrain-lvd1689m

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jasort/chinse` es un fine-tune del modelo base `unsloth/gemma-4-E2B-it`, desarrollado por el usuario jasort y publicado en HuggingFace con licencia Apache 2.0. Se trata de un modelo conversacional entrenado con la librería Unsloth y el framework TRL de HuggingFace, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un fine-tune convencional. El pipeline declarado es `image-text-to-text`, lo que sugiere que el modelo puede procesar tanto texto como imágenes, aunque no se aportan detalles técnicos sobre esta capacidad en la documentación disponible.
+El modelo `jasort/chinse` es un fine-tune del modelo base `unsloth/gemma-4-E2B-it`, desarrollado por el usuario jasort y publicado en Hugging Face con licencia Apache 2.0. Se trata de un modelo conversacional entrenado con la librería Unsloth y el framework TRL de Hugging Face, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un fine-tune convencional. El pipeline declarado es `image-text-to-text`, lo que sugiere que el modelo puede procesar tanto texto como imágenes, aunque no se aportan detalles técnicos sobre esta capacidad en la documentación disponible.
 
 Con 5.123 millones de parámetros (aproximadamente 5,12 mil millones), el modelo se sitúa en un rango de tamaño medio-bajo, adecuado para inferencia en GPUs de consumo. El repositorio ocupa 10,3 GB, lo que corresponde a pesos en precisión FP16. Al ser un fine-tune reciente (publicado en agosto de 2026) y sin descargas ni valoraciones, se trata de un modelo experimental sin validación comunitaria. Su relevancia radica en ser un ejemplo de fine-tune eficiente sobre una base de Gemma 4, aunque carece de documentación detallada sobre el proceso de entrenamiento o los datos utilizados.
 
@@ -23,7 +23,7 @@ Con 5.123 millones de parámetros (aproximadamente 5,12 mil millones), el modelo
 
 La arquitectura exacta no se especifica en la model card. Dado que el modelo base es `unsloth/gemma-4-E2B-it`, se hereda la arquitectura de Gemma 4, que en sus versiones publicadas es un transformer decoder-only con atención causal. El sufijo "E2B" sugiere una variante de aproximadamente 2 mil millones de parámetros, aunque el modelo final tiene 5,12 B, posiblemente debido a la inclusión de un codificador de visión u otros componentes adicionales, coherente con el pipeline `image-text-to-text`. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de técnicas como RLHF o DPO.
 
-El fine-tune se realizó con la librería Unsloth, que optimiza el entrenamiento mediante kernels de atención y operaciones de cuantización, y con el framework TRL de HuggingFace, especializado en fine-tune de modelos de lenguaje. No se detallan los hiperparámetros, el número de épocas ni el dataset de entrenamiento. Tampoco se mencionan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
+El fine-tune se realizó con la librería Unsloth, que optimiza el entrenamiento mediante kernels de atención y operaciones de cuantización, y con el framework TRL de Hugging Face, especializado en fine-tune de modelos de lenguaje. No se detallan los hiperparámetros, el número de épocas ni el dataset de entrenamiento. Tampoco se mencionan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
@@ -68,6 +68,6 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jasort/chinse
+- Modelo en Hugging Face: https://huggingface.co/jasort/chinse
 - Repositorio de Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
-- Framework TRL de HuggingFace: https://github.com/huggingface/trl
+- Framework TRL de Hugging Face: https://github.com/huggingface/trl

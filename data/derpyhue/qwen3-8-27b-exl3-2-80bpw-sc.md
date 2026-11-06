@@ -20,7 +20,7 @@ Es relevante porque forma parte de una serie coherente (2,65 / 2,70 / 2,75 / 2,8
 | Idiomas soportados | No disponible |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (formato de conversion exllamav3, version 1.5.4); libreria exllamav3 |
-| Tamano del repo | ~12,55 GB (12,6 GB en HuggingFace); 8,578 GiB de tensores cuantizados |
+| Tamano del repo | ~12,55 GB (12,6 GB en Hugging Face); 8,578 GiB de tensores cuantizados |
 | Calibracion | 250 filas x 2048 columnas (corpus mixto por defecto) |
 | Divergencia KL prevista (estimacion sc_optimize) | 0,0481 |
 | Descargas / likes | 0 / 0 |
@@ -99,7 +99,7 @@ Frente a otras alternativas de cuantizacion del mismo modelo base (GGUF, AWQ, GP
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Derpyhue/Qwen3.8-27B-exl3-2.80bpw-SC
+- Repositorio Hugging Face: https://huggingface.co/Derpyhue/Qwen3.8-27B-exl3-2.80bpw-SC
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante 2.65 bpw: https://huggingface.co/Derpyhue/Qwen3.8-27B-exl3-2.65bpw-SC
 - Variante 2.70 bpw: https://huggingface.co/Derpyhue/Qwen3.8-27B-exl3-2.70bpw-SC

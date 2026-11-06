@@ -81,7 +81,7 @@ No hay datos públicos de parámetros totales, contexto o calidad de vídeo para
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lightx2v/Minimax-h3-Turbo-SLA
+- Repositorio Hugging Face: https://huggingface.co/lightx2v/Minimax-h3-Turbo-SLA
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Checkpoint Turbo sin SLA: https://huggingface.co/lightx2v/Minimax-h3-Turbo
 - Proyecto LightX2V: https://github.com/ModelTC/LightX2V

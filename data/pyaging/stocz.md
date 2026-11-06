@@ -6,7 +6,7 @@
 
 El modelo predice la edad cronológica en Homo sapiens a partir de datos de metilación de ADN en monocitos clasificados, utilizando regresión elastic net. Está diseñado para integrarse en el ecosistema `pyaging`, una librería Python especializada en relojes de envejecimiento. Su relevancia radica en que permite cuantificar la variabilidad estocástica en la estimación de la edad epigenética, un aspecto clave para entender los límites de precisión de estos biomarcadores.
 
-Se distribuye bajo licencia BSD-3-Clause y su repositorio en HuggingFace apenas contiene metadatos y una breve documentación de uso, sin pesos publicados ni información adicional sobre entrenamiento.
+Se distribuye bajo licencia BSD-3-Clause y su repositorio en Hugging Face apenas contiene metadatos y una breve documentación de uso, sin pesos publicados ni información adicional sobre entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -46,7 +46,7 @@ No se trata de un modelo de transformadores ni de un sistema de aprendizaje prof
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se proporcionan métricas de error (MAE, correlación, etc.) ni comparaciones con otros relojes en el repositorio de HuggingFace.
+No se han publicado resultados de benchmarks en la información disponible. No se proporcionan métricas de error (MAE, correlación, etc.) ni comparaciones con otros relojes en el repositorio de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -69,13 +69,13 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 - Modelo específico para monocitos clasificados; su aplicación a otros tejidos puede producir sesgos significativos.
 - Construido a partir de simulaciones, por lo que su calibración depende de la calidad de las trayectorias simuladas y puede no reflejar completamente la variabilidad biológica real.
-- No se publican los pesos del modelo en el repositorio de HuggingFace; solo se ofrece la integración vía `pyaging`, lo que limita la reproducibilidad independiente.
+- No se publican los pesos del modelo en el repositorio de Hugging Face; solo se ofrece la integración vía `pyaging`, lo que limita la reproducibilidad independiente.
 - No es un modelo de lenguaje ni de propósito general; no debe utilizarse fuera del ámbito de la metilación de ADN.
 - La licencia BSD-3-Clause permite uso comercial, pero se recomienda revisar la publicación original para conocer restricciones de atribución.
 - Sin datos sobre sesgos poblacionales: no se indica si el entrenamiento incluye diversidad étnica o de edad, por lo que su precisión en poblaciones no representadas es desconocida.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pyaging/stocz
+- Repositorio Hugging Face: https://huggingface.co/pyaging/stocz
 - Publicación original: Tong, Huige, et al. "Quantifying the stochastic component of epigenetic aging." Nature Aging 4 (2024): 886–901. DOI: https://doi.org/10.1038/s43587-024-00600-8
 - Documentación de pyaging (Clock Catalogue): https://pyaging.readthedocs.io

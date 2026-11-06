@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_591431181_deit_giant` es una implementación de la arquitectura DeiT (Data-efficient Image Transformers) a escala "giant", diseñada para tareas de clasificación de imágenes. El autor, `ramosl-orenzo`, ha publicado este repositorio en HuggingFace con un único archivo de código Python (`model_591431181_deit_giant.py`) que define la arquitectura, pero no se incluyen pesos entrenados ni documentación adicional sobre el entrenamiento. El modelo incorpora varias técnicas avanzadas: atención dispersa (*sparse attention*), fusión bilineal, activación GELU-tanh, normalización ScaleNorm, inicialización ortogonal y optimización con AdamW con programación de tasa de aprendizaje constante con *warmup*.
+El modelo `model_591431181_deit_giant` es una implementación de la arquitectura DeiT (Data-efficient Image Transformers) a escala "giant", diseñada para tareas de clasificación de imágenes. El autor, `ramosl-orenzo`, ha publicado este repositorio en Hugging Face con un único archivo de código Python (`model_591431181_deit_giant.py`) que define la arquitectura, pero no se incluyen pesos entrenados ni documentación adicional sobre el entrenamiento. El modelo incorpora varias técnicas avanzadas: atención dispersa (*sparse attention*), fusión bilineal, activación GELU-tanh, normalización ScaleNorm, inicialización ortogonal y optimización con AdamW con programación de tasa de aprendizaje constante con *warmup*.
 
 A pesar de su nombre y descripción, el repositorio no contiene pesos del modelo ni información sobre el conjunto de datos de entrenamiento, por lo que su utilidad práctica es limitada. La licencia es CC-BY-4.0, lo que permite uso con atribución. Este modelo parece ser un experimento de arquitectura o un artefacto de investigación, más que un modelo listo para producción. Su relevancia radica en explorar variantes de DeiT con técnicas de eficiencia (sparse, bilinear, ScaleNorm), pero sin datos de entrenamiento no se puede evaluar su rendimiento.
 
@@ -74,5 +74,5 @@ No se dispone de información sobre modelos comparables dentro del mismo reposit
 
 ## Enlaces
 
-- [HuggingFace - model_591431181_deit_giant](https://huggingface.co/ramosl-orenzo/model_591431181_deit_giant)
+- [Hugging Face - model_591431181_deit_giant](https://huggingface.co/ramosl-orenzo/model_591431181_deit_giant)
 - [Repositorio oficial de DeiT (facebookresearch)](https://github.com/facebookresearch/deit)

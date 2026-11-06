@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `abhay2812/qwen-3.5-4B-decision-model` es un adaptador LoRA de tipo PEFT construido sobre el modelo base `unsloth/Qwen3.5-4B`. Lo publica el usuario de HuggingFace abhay2812 y su nombre sugiere un ajuste fino orientado a tareas de decisión, aunque la model card no documenta explícitamente el objetivo ni el dataset de entrenamiento. El repositorio contiene únicamente los pesos del adaptador (0,2 GB), no el modelo completo, por lo que requiere cargar el modelo base para su uso.
+El modelo `abhay2812/qwen-3.5-4B-decision-model` es un adaptador LoRA de tipo PEFT construido sobre el modelo base `unsloth/Qwen3.5-4B`. Lo publica el usuario de Hugging Face abhay2812 y su nombre sugiere un ajuste fino orientado a tareas de decisión, aunque la model card no documenta explícitamente el objetivo ni el dataset de entrenamiento. El repositorio contiene únicamente los pesos del adaptador (0,2 GB), no el modelo completo, por lo que requiere cargar el modelo base para su uso.
 
 El modelo base pertenece a la familia Qwen 3.5, de la que no se dispone de especificaciones detalladas en la información proporcionada (arquitectura exacta, longitud de contexto, número de tokens de entrenamiento). El nombre indica 4B de parámetros, pero este dato no está verificado en la documentación disponible.
 
-La relevancia de esta ficha es limitada desde el punto de vista práctico: se trata de un adaptador sin descargas ni interacciones, con una model card generada a partir de la plantilla por defecto de HuggingFace y sin información sobre licencia, idiomas, datos de entrenamiento ni evaluación. Cualquier uso en producción exige verificar de forma independiente el comportamiento del modelo y las condiciones de licencia tanto del adaptador como del modelo base.
+La relevancia de esta ficha es limitada desde el punto de vista práctico: se trata de un adaptador sin descargas ni interacciones, con una model card generada a partir de la plantilla por defecto de Hugging Face y sin información sobre licencia, idiomas, datos de entrenamiento ni evaluación. Cualquier uso en producción exige verificar de forma independiente el comportamiento del modelo y las condiciones de licencia tanto del adaptador como del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ Tampoco se documenta el conjunto de datos de entrenamiento, su composición, tam
 - Prototipado de clasificadores de decisión: el adaptador podría emplearse como capa de ajuste sobre el modelo base para experimentar con tareas de elección entre opciones, aunque la ausencia de documentación obliga a validar su comportamiento empíricamente.
 - Investigación sobre fine-tuning con LoRA y Unsloth: el repositorio sirve como ejemplo reproducible de un adaptador PEFT de pequeño tamaño (0,2 GB) sobre un modelo de 4B, útil para estudiar flujos de entrenamiento con estas herramientas.
 - Experimentos académicos de evaluación de adaptadores: al no disponer de benchmarks publicados, puede utilizarse como caso de estudio para medir la degradación o mejora respecto al modelo base en tareas concretas.
-- Integración en pipelines de generación de texto con `transformers` y PEFT: el adaptador se puede cargar junto al modelo base mediante `PeftModel.from_pretrained`, lo que permite incorporarlo a flujos existentes basados en el ecosistema HuggingFace.
+- Integración en pipelines de generación de texto con `transformers` y PEFT: el adaptador se puede cargar junto al modelo base mediante `PeftModel.from_pretrained`, lo que permite incorporarlo a flujos existentes basados en el ecosistema Hugging Face.
 - Pruebas de despliegue de adaptadores en entornos con recursos limitados: el reducido tamaño del repositorio facilita su distribución y almacenamiento en comparación con un modelo completo.
 - Base para un ajuste adicional: el adaptador puede servir como punto de partida para un segundo entrenamiento LoRA orientado a un dominio específico, siempre que se respeten las licencias del modelo base y del adaptador.
 
@@ -67,7 +67,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| abhay2812/qwen-3.5-4B-decision-model | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
+| abhay2812/qwen-3.5-4B-decision-model | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abhay2812/qwen-3.5-4B-decision-model
+- Hugging Face: https://huggingface.co/abhay2812/qwen-3.5-4B-decision-model
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Paper de referencia sobre impacto ambiental citado en la model card: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML citada en la model card: https://mlco2.github.io/impact#compute

@@ -27,7 +27,7 @@ No se dispone de información sobre el dataset de entrenamiento, el número de t
 
 ## Capacidades
 
-Las capacidades de este modelo no están documentadas. Dado que es una fusión de checkpoints de un proceso de alineación, se espera que herede las capacidades del modelo base del que derivan los checkpoints, pero no se especifica cuál es ese modelo base. Las etiquetas de HuggingFace indican:
+Las capacidades de este modelo no están documentadas. Dado que es una fusión de checkpoints de un proceso de alineación, se espera que herede las capacidades del modelo base del que derivan los checkpoints, pero no se especifica cuál es ese modelo base. Las etiquetas de Hugging Face indican:
 
 - Generación de texto (text-generation)
 - Conversacional (conversational)
@@ -73,11 +73,11 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 - Sin garantías de alineación: aunque el proceso se llama "alignment", no hay evidencia de que el modelo esté alineado con valores humanos o instrucciones de seguridad.
 - Restricciones de licencia: la licencia es "no disponible", lo que impide conocer las condiciones de uso comercial o redistribución.
 - Fecha de creación: el modelo fue creado el 2026-09-01, una fecha futura que podría ser un error en los metadatos o indicar un modelo reciente.
-- Sin comunidad ni soporte: cero descargas y cero likes en HuggingFace, lo que sugiere que no ha sido probado ni validado por terceros.
+- Sin comunidad ni soporte: cero descargas y cero likes en Hugging Face, lo que sugiere que no ha sido probado ni validado por terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-6k_7k_8k_9k_10k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-6k_7k_8k_9k_10k_weightedavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Paper de referencia del método Linear: https://arxiv.org/abs/2203.05482
 - Otras fusiones del mismo autor:

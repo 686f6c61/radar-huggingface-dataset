@@ -102,7 +102,7 @@ La comparativa cuantitativa con alternativas de la misma categoria no esta dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prithivMLmods/VIGOR-mini-GGUF
+- Modelo en Hugging Face: https://huggingface.co/prithivMLmods/VIGOR-mini-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/VIGOR-mini
 - Modelo Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - llama.cpp: https://github.com/ggml-org/llama.cpp

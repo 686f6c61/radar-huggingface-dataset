@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM5-1B-Base es el checkpoint base (solo preentrenamiento) de la serie MiniCPM5, desarrollada por OpenBMB y distribuida en esta variante a traves de ArchiveStudio en HuggingFace. Se trata de un modelo de lenguaje causal denso de aproximadamente 1.080 millones de parametros, construido sobre una arquitectura estandar `LlamaForCausalLM`, disenado para despliegue en dispositivo (on-device), ejecucion local y escenarios con recursos limitados.
+MiniCPM5-1B-Base es el checkpoint base (solo preentrenamiento) de la serie MiniCPM5, desarrollada por OpenBMB y distribuida en esta variante a traves de ArchiveStudio en Hugging Face. Se trata de un modelo de lenguaje causal denso de aproximadamente 1.080 millones de parametros, construido sobre una arquitectura estandar `LlamaForCausalLM`, disenado para despliegue en dispositivo (on-device), ejecucion local y escenarios con recursos limitados.
 
 El problema que resuelve es el de ofrecer capacidad de razonamiento, uso de herramientas y contexto largo en un modelo compacto que cabe en hardware de consumo. La serie MiniCPM5 destaca por incorporar razonamiento hibrido (modo thinking / no-thinking en el mismo checkpoint, activable mediante `enable_thinking` en la plantilla de chat) y soporte de tool calling. La familia se completa con las variantes MiniCPM5-1B (postentrenada con RL y OPD), MiniCPM5-1B-SFT, MiniCPM5-1B-GGUF y MiniCPM5-1B-MLX.
 

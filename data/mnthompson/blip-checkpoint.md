@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mnthompson/blip-checkpoint es un repositorio de HuggingFace que contiene una implementación propia y reducida de la arquitectura Blip (Bootstrapping Language-Image Pre-training) orientada a tareas de clasificación. No se trata de un modelo entrenado ni publicado como release: el propio autor lo describe como un "punto de partida reproducible" en variante "nano", con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El repositorio acumula 0 descargas y 0 likes y su tamano es de 0.0 GB.
+mnthompson/blip-checkpoint es un repositorio de Hugging Face que contiene una implementación propia y reducida de la arquitectura Blip (Bootstrapping Language-Image Pre-training) orientada a tareas de clasificación. No se trata de un modelo entrenado ni publicado como release: el propio autor lo describe como un "punto de partida reproducible" en variante "nano", con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El repositorio acumula 0 descargas y 0 likes y su tamano es de 0.0 GB.
 
 El dato de parametros reales extraido del fichero safetensors es de 24.832 parametros totales, una cifra que sitúa el artefacto lejísimos de los modelos Blip de producción (que operan en el rango de cientos de millones de parametros). La implementación declara atención flash, fusión bilineal, activación mish y normalización groupnorm, junto con un config.json de arquitectura y un training_args.json con la receta por defecto (optimizador novograd con schedule exponencial).
 
@@ -46,7 +46,7 @@ No hay evidencia de entrenamiento. La model card indica explícitamente que mode
 - Punto de partida para investigación en arquitecturas Blip reducidas: el config.json y main.py permiten reproducir y modificar una variante nano de fusión bilineal con un coste computacional mínimo.
 - Reproducción de experimentos de clasificación visión-lenguaje: el repositorio aporta una receta por defecto (novograd con schedule exponencial) que puede reutilizarse como base para comparar configuraciones bajo el mismo presupuesto de tuning.
 - Docencia y formación: al tratarse de un artefacto de 24.832 parametros, es adecuado para ilustrar el ciclo completo de definición de arquitectura, inicialización y ejecución de scripts en un entorno de aprendizaje.
-- Desarrollo de adaptadores de carga: dado que usa una implementación propia, sirve para practicar la escritura de adaptadores que conecten APIs genéricas de HuggingFace con modelos no estándar.
+- Desarrollo de adaptadores de carga: dado que usa una implementación propia, sirve para practicar la escritura de adaptadores que conecten APIs genéricas de Hugging Face con modelos no estándar.
 - Validación de pipelines de cuantización y formatos: permite comprobar herramientas de conversión y empaquetado (por ejemplo, de safetensors a otros formatos) sobre un modelo diminuto antes de aplicarlas a modelos grandes.
 - Base para benchmarks propios: la model card recomienda evaluar con un split etiquetado específico de la tarea, al menos tres semillas y una línea base de capacidad equivalente; el repositorio sirve como esqueleto para montar esa evaluación.
 
@@ -88,7 +88,7 @@ La model card recomienda cualquier evaluación futura contra una línea base de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mnthompson/blip-checkpoint
+- Hugging Face: https://huggingface.co/mnthompson/blip-checkpoint
 - Repositorio con la misma plantilla: https://huggingface.co/szymonmicha/blip-checkpoint
 - Repositorio con la misma plantilla: https://huggingface.co/Arjunlshah/blip-checkpoint
 - Documentacion general sobre Blip: https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/

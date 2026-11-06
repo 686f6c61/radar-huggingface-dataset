@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio montiezgirlzz/Jinwook_bus_becauseofyouishine es un modelo publicado en HuggingFace por el usuario montiezgirlzz. La informacion publica disponible es practicamente nula: la model card unicamente contiene el campo `license: unknown`, no se declara pipeline, no se declaran idiomas soportados y el repositorio no acumula descargas ni likes (0 en ambos casos) desde su creacion el 23 de septiembre de 2026.
+El repositorio montiezgirlzz/Jinwook_bus_becauseofyouishine es un modelo publicado en Hugging Face por el usuario montiezgirlzz. La informacion publica disponible es practicamente nula: la model card unicamente contiene el campo `license: unknown`, no se declara pipeline, no se declaran idiomas soportados y el repositorio no acumula descargas ni likes (0 en ambos casos) desde su creacion el 23 de septiembre de 2026.
 
 No es posible determinar que tipo de modelo es, que problema resuelve ni por que seria relevante. El identificador del repositorio no sigue ninguna convencion tecnica reconocible (nombre de arquitectura, familia o version) y el unico dato objetivo sobre su contenido es el tamano del repositorio, aproximadamente 0,1 GB, que no permite inferir ni el numero de parametros ni la tarea para la que fue entrenado.
 
@@ -87,13 +87,13 @@ No disponible. Al desconocerse la tarea, el tamano y la arquitectura del modelo,
 - Idiomas no declarados: se desconoce el soporte linguistico real y su calidad.
 - Procedencia del entrenamiento desconocida: no se puede auditar la composicion de los datos ni el cumplimiento de derechos de autor.
 - Fiabilidad del artefacto: sin descargas ni validacion externa, no hay evidencia de que el repositorio contenga un modelo funcional.
-- Riesgo de cadena de suministro: los pesos de HuggingFace pueden contener codigo o serializacion insegura; se recomienda inspeccionar los ficheros y cargar unicamente formatos seguros (por ejemplo, safetensors) antes de ejecutar nada.
+- Riesgo de cadena de suministro: los pesos de Hugging Face pueden contener codigo o serializacion insegura; se recomienda inspeccionar los ficheros y cargar unicamente formatos seguros (por ejemplo, safetensors) antes de ejecutar nada.
 - Fechas de creacion y actualizacion muy proximas entre si (menos de un minuto), lo que sugiere una publicacion automatica o sin curacion posterior.
 - No apto para produccion en su estado actual: sin especificaciones, licencia ni pruebas, no debe desplegarse en sistemas con usuarios reales.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/montiezgirlzz/Jinwook_bus_becauseofyouishine
+- Hugging Face: https://huggingface.co/montiezgirlzz/Jinwook_bus_becauseofyouishine
 - Paper: no disponible.
 - Repositorio de codigo: no disponible.
 - Demo: no disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-szymmon/act_so101_test es un checkpoint publicado en HuggingFace por el usuario szymmon, con un total de 51.668.614 parametros (aproximadamente 51,7 millones) almacenados en formato safetensors y un tamano de repositorio de 0,2 GB. El repositorio no declara pipeline, licencia, idiomas soportados ni model card descriptiva, por lo que la informacion disponible se limita a los metadatos tecnicos del propio repositorio.
+szymmon/act_so101_test es un checkpoint publicado en Hugging Face por el usuario szymmon, con un total de 51.668.614 parametros (aproximadamente 51,7 millones) almacenados en formato safetensors y un tamano de repositorio de 0,2 GB. El repositorio no declara pipeline, licencia, idiomas soportados ni model card descriptiva, por lo que la informacion disponible se limita a los metadatos tecnicos del propio repositorio.
 
 El nombre del repositorio sugiere, sin poder confirmarse con la informacion proporcionada, que se trata de una politica de control robotico basada en ACT (Action Chunking Transformer) orientada al brazo SO-101 del ecosistema LeRobot. Esta interpretacion es una hipotesis derivada de la nomenclatura y no un dato verificado: no hay documentacion en el repositorio que la respalde. Si la hipotesis fuese correcta, no seria un modelo de lenguaje sino un modelo de accion que mapea observaciones (imagenes de camara y estado de las articulaciones) a secuencias de acciones motoras.
 
@@ -87,7 +87,7 @@ Como referencia cualitativa, dentro del ecosistema LeRobot existen otras familia
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| szymmon/act_so101_test | 51,7 M | no disponible | no disponible | HuggingFace, 31 descargas |
+| szymmon/act_so101_test | 51,7 M | no disponible | no disponible | Hugging Face, 31 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -104,5 +104,5 @@ Como referencia cualitativa, dentro del ecosistema LeRobot existen otras familia
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/szymmon/act_so101_test
+- Repositorio en Hugging Face: https://huggingface.co/szymmon/act_so101_test
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, papers, blogs, repositorios de codigo ni demos. Los unicos resultados devueltos son recopilaciones de videos de gatos sin relacion con el repositorio.

@@ -64,4 +64,4 @@ No se dispone de comparativas oficiales con otros modelos. Dado su tamaño, podr
 
 ## Enlaces
 
-- [HuggingFace: yacdev/SomaliLM-150M-Pretrained](https://huggingface.co/yacdev/SomaliLM-150M-Pretrained)
+- [Hugging Face: yacdev/SomaliLM-150M-Pretrained](https://huggingface.co/yacdev/SomaliLM-150M-Pretrained)

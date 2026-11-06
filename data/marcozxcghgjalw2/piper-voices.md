@@ -83,7 +83,7 @@ La comparación se limita a categorías generales, ya que la información dispon
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/marcozxcghgjalw2/piper-voices
+- Repositorio en Hugging Face: https://huggingface.co/marcozxcghgjalw2/piper-voices
 - Proyecto Piper (GitHub): https://github.com/rhasspy/piper
 - Guía de entrenamiento de voces Piper: https://github.com/rhasspy/piper/blob/master/TRAINING.md
 - Checkpoints de entrenamiento de Piper: https://huggingface.co/datasets/rhasspy/piper-checkpoints/tree/main

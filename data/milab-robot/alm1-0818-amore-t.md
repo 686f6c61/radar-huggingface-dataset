@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo, publicado en HuggingFace como `milab-robot/alm1-0818-amore.T`, es un checkpoint de entrenamiento para una politica de control robotico. La unica documentacion disponible es una tabla de resumen de entrenamiento que indica `Policy: ACT` (Action Chunking with Transformers), 300.000 pasos, batch efectivo 16, LR 1e-5 y weight decay 1e-4. Las metricas reportadas son MAE 0.0040 y RMSE 0.0169 tras 2 episodios.
+Este modelo, publicado en Hugging Face como `milab-robot/alm1-0818-amore.T`, es un checkpoint de entrenamiento para una politica de control robotico. La unica documentacion disponible es una tabla de resumen de entrenamiento que indica `Policy: ACT` (Action Chunking with Transformers), 300.000 pasos, batch efectivo 16, LR 1e-5 y weight decay 1e-4. Las metricas reportadas son MAE 0.0040 y RMSE 0.0169 tras 2 episodios.
 
 El repositorio pesa 2.1 GB y fue creado el 2026-09-07. No se proporcionan especificaciones de arquitectura, parametros, licencia ni idiomas. Por la naturaleza de la tabla, el modelo no parece ser un LLM, sino un modelo de politica para entornos de manipulacion robotica, probablemente entrenado con aprendizaje por imitacion.
 

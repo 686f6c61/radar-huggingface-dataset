@@ -52,7 +52,7 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 - El checkpoint pesa 0,3 GB, lo que sugiere un modelo de tamaño moderado (probablemente decenas de millones de parámetros, aunque no se confirma).
 - El código de inferencia requiere una GPU CUDA (`device="cuda:0"`), por lo que se necesita una GPU NVIDIA con al menos 4-6 GB de VRAM para una inferencia cómoda, aunque no se especifica el consumo exacto.
 - Es probable que quepa en GPUs de consumo como RTX 3060, RTX 4060 o superiores, pero no hay datos oficiales.
-- Opciones de despliegue: el modelo se carga con la librería `doper2` (no publicada en el repositorio de HuggingFace), por lo que el despliegue está limitado a entornos Python con PyTorch y CUDA. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, ya que no es un modelo de lenguaje.
+- Opciones de despliegue: el modelo se carga con la librería `doper2` (no publicada en el repositorio de Hugging Face), por lo que el despliegue está limitado a entornos Python con PyTorch y CUDA. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, ya que no es un modelo de lenguaje.
 - La latencia y el throughput no están documentados.
 
 ## Comparativa con modelos similares
@@ -71,8 +71,8 @@ No disponible. No se proporcionan modelos comparables en la información. Dado q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TontonTremblay/doper2-handal-obj000024
+- Modelo en Hugging Face: https://huggingface.co/TontonTremblay/doper2-handal-obj000024
 - Dataset de resultados BOP: https://huggingface.co/datasets/TontonTremblay/doper2-handal-results
-- Perfil del autor en HuggingFace: https://huggingface.co/TontonTremblay
+- Perfil del autor en Hugging Face: https://huggingface.co/TontonTremblay
 - GitHub del autor: https://github.com/TontonTremblay
 - Publicación de HANDAL (NVIDIA): https://research.nvidia.com/labs/lpr/publication/guo2023handal/

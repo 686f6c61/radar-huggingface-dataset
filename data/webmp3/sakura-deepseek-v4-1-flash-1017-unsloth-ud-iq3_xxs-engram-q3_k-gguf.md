@@ -97,7 +97,7 @@ Frente a los 394,737 GB del upstream, este repack reduce un 19,46 %. Frente al c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/webmp3/Sakura-DeepSeek-V4.1-Flash-1017-Unsloth-UD-IQ3_XXS-Engram-Q3_K-GGUF
+- Repositorio Hugging Face: https://huggingface.co/webmp3/Sakura-DeepSeek-V4.1-Flash-1017-Unsloth-UD-IQ3_XXS-Engram-Q3_K-GGUF
 - Checkpoint original: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017 (revisión `1bae0e1088993b9b82de08f59de5be5a34e42170`)
 - GGUF de unsloth (base directa): https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF (revisión `60ad3651641b5c97679c807e064ab1d7a3ca1455`)
 - Variante Sakura Maya-S, origen de la carga Q3_K: https://huggingface.co/webmp3/Sakura-DeepSeek-V4.1-Flash-1017-Maya-S-IQ2_XXS-Engram-Q3_K-GGUF (revisión `4a701f59f623b08a859368926cd9a210ab446941`)

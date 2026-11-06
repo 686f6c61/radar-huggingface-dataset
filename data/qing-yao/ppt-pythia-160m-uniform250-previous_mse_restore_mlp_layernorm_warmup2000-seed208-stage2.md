@@ -6,7 +6,7 @@ El modelo `ppt-pythia-160m-uniform250-previous_mse_restore_mlp_layernorm_warmup2
 
 El nombre del modelo revela su naturaleza experimental: los identificadores `uniform250`, `previous_mse`, `restore_mlp_layernorm` y `warmup2000` apuntan a una ablacion dentro de un estudio mas amplio sobre dinamica de entrenamiento, posiblemente centrado en la restauracion selectiva de capas (MLP y LayerNorm) y en distintas funciones de perdida (MSE frente a entropia cruzada, segun los modelos hermanos encontrados). No es un modelo orientado a produccion, sino un artefacto de investigacion reproducible con semilla fija (seed 208) y dos etapas de entrenamiento encadenadas.
 
-Su relevancia actual es limitada fuera del ambito de la investigacion en entrenamiento de modelos pequenos: no tiene benchmarks publicados, no declara idiomas soportados y acumula cero descargas y cero likes en HuggingFace. Resulta util principalmente como punto de comparacion para estudiar tecnicas de ajuste fino, restauracion de capas y estabilidad de entrenamiento en modelos de 160M de parametros que caben en cualquier GPU de consumo.
+Su relevancia actual es limitada fuera del ambito de la investigacion en entrenamiento de modelos pequenos: no tiene benchmarks publicados, no declara idiomas soportados y acumula cero descargas y cero likes en Hugging Face. Resulta util principalmente como punto de comparacion para estudiar tecnicas de ajuste fino, restauracion de capas y estabilidad de entrenamiento en modelos de 160M de parametros que caben en cualquier GPU de consumo.
 
 ## Especificaciones tecnicas
 
@@ -47,7 +47,7 @@ Los hiperparametros de entrenamiento si estan declarados: learning rate 0,001, b
 - Estudio de estrategias de restauracion de capas: el identificador `restore_mlp_layernorm` lo convierte en una pieza util para analizar que ocurre al recuperar pesos de MLP y LayerNorm entre etapas de ajuste.
 - Validacion de pipelines de fine-tuning en hardware modesto: con 162M de parametros cabe en una unica GPU de consumo, por lo que es adecuado para probar configuraciones de Trainer, schedulers y acumulacion de gradiente sin coste relevante.
 - Pruebas de integracion de infraestructura: util como modelo de juguete para verificar despliegues con transformers, text-generation-inference o endpoints compatibles (el tag `endpoints_compatible` esta declarado) antes de pasar a modelos mayores.
-- Docencia y formacion: sirve para ilustrar el ciclo completo de dos etapas de entrenamiento, registro de perdidas por paso y publicacion de checkpoints en HuggingFace con un coste computacional minimo.
+- Docencia y formacion: sirve para ilustrar el ciclo completo de dos etapas de entrenamiento, registro de perdidas por paso y publicacion de checkpoints en Hugging Face con un coste computacional minimo.
 - Generacion de texto exploratoria sin requisitos de calidad: dado su tamano, puede emplearse para experimentos de muestreo, temperature y top-p donde la coherencia no sea el criterio principal.
 
 ## Benchmarks y rendimiento
@@ -81,10 +81,10 @@ No se han encontrado comparativas oficiales publicadas. La siguiente tabla contr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ppt-pythia-160m-...-seed208-stage2 (este modelo) | 162,3 M | No disponible (base Pythia: 2048) | Apache 2.0 | HuggingFace, 0 descargas |
-| EleutherAI/pythia-160m (modelo base de la familia) | 162 M | 2048 | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| qing-yao/ppt-pythia-160m-uniform250-previous_ce-seed208-stage2 (variante con entropia cruzada) | ~162 M | No disponible | Apache 2.0 | HuggingFace |
-| qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed208-stage2 (etapa previa del mismo pipeline) | ~162 M | No disponible | Apache 2.0 | HuggingFace |
+| ppt-pythia-160m-...-seed208-stage2 (este modelo) | 162,3 M | No disponible (base Pythia: 2048) | Apache 2.0 | Hugging Face, 0 descargas |
+| EleutherAI/pythia-160m (modelo base de la familia) | 162 M | 2048 | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| qing-yao/ppt-pythia-160m-uniform250-previous_ce-seed208-stage2 (variante con entropia cruzada) | ~162 M | No disponible | Apache 2.0 | Hugging Face |
+| qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed208-stage2 (etapa previa del mismo pipeline) | ~162 M | No disponible | Apache 2.0 | Hugging Face |
 
 Los valores de rendimiento comparado no estan disponibles para ninguna de las variantes, ya que ninguna publica resultados de benchmarks.
 
@@ -102,7 +102,7 @@ Los valores de rendimiento comparado no estan disponibles para ninguna de las va
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse_restore_mlp_layernorm_warmup2000-seed208-stage2
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse_restore_mlp_layernorm_warmup2000-seed208-stage2
 - Modelo base (etapa 1): https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed208-stage1
 - Variante con entropia cruzada: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_ce-seed208-stage2
 - Variante mse delta shuffle1: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse_delta_shuffle1-seed208-stage2

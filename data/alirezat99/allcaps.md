@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ALLCAPS es un repositorio de modelo alojado en HuggingFace por el usuario AlirezaT99, publicado el 22 de septiembre de 2026 y sin actualizaciones posteriores. La informacion disponible se limita a los metadatos del repositorio: licencia MIT, etiqueta de region `us` y ausencia total de pipeline declarado, idiomas soportados y ficheros de pesos documentados. El repositorio acumula 0 descargas y 0 "likes", por lo que no existe evidencia de uso ni de validacion por parte de la comunidad.
+ALLCAPS es un repositorio de modelo alojado en Hugging Face por el usuario AlirezaT99, publicado el 22 de septiembre de 2026 y sin actualizaciones posteriores. La informacion disponible se limita a los metadatos del repositorio: licencia MIT, etiqueta de region `us` y ausencia total de pipeline declarado, idiomas soportados y ficheros de pesos documentados. El repositorio acumula 0 descargas y 0 "likes", por lo que no existe evidencia de uso ni de validacion por parte de la comunidad.
 
 La model card publicada no contiene ninguna descripcion tecnica: unicamente incluye el bloque de frontmatter con `license: mit`. No se especifica arquitectura, numero de parametros, longitud de contexto, composicion del dataset de entrenamiento, proceso de alineacion ni formato de pesos. Tampoco hay resultados de evaluacion, demos, papers asociados ni documentacion complementaria enlazada desde el repositorio.
 
@@ -41,7 +41,7 @@ Tampoco se documenta ninguna innovacion tecnica (atencion lineal, decodificacion
 - No se puede confirmar soporte de tool calling o function calling.
 - No se puede confirmar soporte para agentes o razonamiento multi-paso.
 - No se puede confirmar cobertura multilingue ni ningun modo especial (thinking mode, vision, audio).
-- La etiqueta `region:us` es un metadato geografico de HuggingFace y no implica capacidades ni idiomas.
+- La etiqueta `region:us` es un metadato geografico de Hugging Face y no implica capacidades ni idiomas.
 
 ## Casos de uso
 
@@ -74,7 +74,7 @@ No disponible. No se puede identificar la categoria del modelo (tamano, tarea, m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AlirezaT99/ALLCAPS | no disponible | no disponible | no disponible | MIT | repositorio en HuggingFace sin descargas |
+| AlirezaT99/ALLCAPS | no disponible | no disponible | no disponible | MIT | repositorio en Hugging Face sin descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No disponible. No se puede identificar la categoria del modelo (tamano, tarea, m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlirezaT99/ALLCAPS
+- Hugging Face: https://huggingface.co/AlirezaT99/ALLCAPS
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio: no disponible

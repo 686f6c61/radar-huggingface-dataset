@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nightmedia/Qwen3.8-27B-MindMeld es un modelo de lenguaje de aproximadamente 27.000 millones de parámetros publicado por el usuario nightmedia en HuggingFace. Se trata de un merge construido con mergekit a partir de tres modelos base: schneewolflabs/B1-27B, nightmedia/Qwen3.6-27B-Seven y nightmedia/Qwen3.8-27B-Brainwaves. La familia de la que deriva es Qwen3.6, según los tags del repositorio, y el resultado se orienta a razonamiento con cadena de pensamiento larga (long-CoT), generación de código y escritura creativa de ficción.
+Nightmedia/Qwen3.8-27B-MindMeld es un modelo de lenguaje de aproximadamente 27.000 millones de parámetros publicado por el usuario nightmedia en Hugging Face. Se trata de un merge construido con mergekit a partir de tres modelos base: schneewolflabs/B1-27B, nightmedia/Qwen3.6-27B-Seven y nightmedia/Qwen3.8-27B-Brainwaves. La familia de la que deriva es Qwen3.6, según los tags del repositorio, y el resultado se orienta a razonamiento con cadena de pensamiento larga (long-CoT), generación de código y escritura creativa de ficción.
 
 El modelo se distribuye bajo licencia Apache 2.0, soporta los idiomas inglés, chino, japonés y español, y su repositorio está etiquetado con la pipeline image-text-to-text, lo que indica capacidad de procesar imágenes además de texto. Los tags declaran ventanas de contexto de 256.000 y hasta 1.000.000 de tokens, y el entrenamiento se describe como instruction tuning mediante SFT y LoRA, con destilación de razonamiento (el tag claude-distillation apunta a datos generados por Claude 4.6).
 
@@ -84,7 +84,7 @@ Comparativa de rendimiento: no disponible. No hay benchmarks publicados para Min
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Validación inexistente: cero descargas y cero likes en el momento de la consulta, sin benchmarks, sin model card detallada y con etiqueta experimental. No hay evidencia pública de calidad.
 - Riesgo de artefactos de merge: al ser una combinación de tres checkpoints con mergekit, puede heredar comportamientos inconsistentes, degradación en tareas concretas o deriva de estilo entre los modelos de origen.
 - Origen por destilación: los tags claude-distillation y claude4.6 indican uso de datos derivados de un modelo propietario; conviene revisar los términos de uso de dicho proveedor antes de un uso comercial, incluso aunque la licencia del artefacto sea Apache 2.0.
@@ -97,7 +97,7 @@ Comparativa de rendimiento: no disponible. No hay benchmarks publicados para Min
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nightmedia/Qwen3.8-27B-MindMeld
+- Repositorio en Hugging Face: https://huggingface.co/nightmedia/Qwen3.8-27B-MindMeld
 - Modelo base: https://huggingface.co/nightmedia/Qwen3.6-27B-Seven
 - Modelo base: https://huggingface.co/nightmedia/Qwen3.8-27B-Brainwaves
 - Modelo base: https://huggingface.co/schneewolflabs/B1-27B

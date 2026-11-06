@@ -68,11 +68,11 @@ No se dispone de información sobre adaptadores LoRA comparables en la misma cat
 - El tag `not-for-all-audiences` sugiere que el contenido del modelo puede incluir material no apto para todos los públicos, aunque no se detalla la naturaleza del contenido.
 - No se especifica el idioma de las captions ni el texto de entrenamiento; el modelo podría funcionar mejor en un idioma que en otro.
 - El ejemplo de inferencia del README guarda el resultado como imagen PNG, lo que indica un posible error de documentación en el script de ejemplo; la salida real debería ser un archivo de audio.
-- El adaptador depende de la disponibilidad del modelo base MiniMax-Music-3 en HuggingFace; cualquier cambio en el repositorio base puede afectar a la compatibilidad.
+- El adaptador depende de la disponibilidad del modelo base MiniMax-Music-3 en Hugging Face; cualquier cambio en el repositorio base puede afectar a la compatibilidad.
 - La licencia Apache 2.0 permite uso comercial, pero no se especifica si los datos de entrenamiento tienen restricciones de uso.
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/RareConcepts/soad-mm3-xm-20260823-10k-adamw8e-5-fullsong-nocapdrop
+- Hugging Face (adaptador): https://huggingface.co/RareConcepts/soad-mm3-xm-20260823-10k-adamw8e-5-fullsong-nocapdrop
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Página de RareConcepts (marca): https://rareconceptsnyc.com/ (sin relación aparente con el modelo)

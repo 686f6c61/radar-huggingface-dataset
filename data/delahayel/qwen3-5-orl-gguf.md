@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`delahayel/qwen3.5-orl-gguf` es un repositorio de pesos en formato GGUF publicado por el usuario delahayel en HuggingFace y orientado a inferencia local mediante llama.cpp y Ollama. El repositorio contiene un unico fichero de pesos, `qwen2.5-7b-instruct.Q4_K_M.gguf`, y un Modelfile de Ollama para despliegue rapido. Segun la model card, el ajuste fino y la conversion a GGUF se realizaron con Unsloth.
+`delahayel/qwen3.5-orl-gguf` es un repositorio de pesos en formato GGUF publicado por el usuario delahayel en Hugging Face y orientado a inferencia local mediante llama.cpp y Ollama. El repositorio contiene un unico fichero de pesos, `qwen2.5-7b-instruct.Q4_K_M.gguf`, y un Modelfile de Ollama para despliegue rapido. Segun la model card, el ajuste fino y la conversion a GGUF se realizaron con Unsloth.
 
 Existe una discrepancia relevante entre el nombre del repositorio y su contenido: el identificador sugiere un modelo de la familia Qwen 3.5, mientras que el nombre del fichero de pesos y el tag `qwen2` apuntan a un modelo derivado de Qwen2.5-7B-Instruct. El recuento de parametros declarado (7.615.616.512, equivalentes a unos 7,62 mil millones) es coherente con la clase de 7B de dicha familia. No hay informacion publicada sobre el dataset de ajuste, el proceso de entrenamiento ni evaluaciones de rendimiento.
 
@@ -94,7 +94,7 @@ Diferencias relevantes: la licencia de este repositorio no esta declarada, mient
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/delahayel/qwen3.5-orl-gguf
+- Repositorio en Hugging Face: https://huggingface.co/delahayel/qwen3.5-orl-gguf
 - Unsloth (herramienta usada para el ajuste fino y la conversion a GGUF): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de inferencia compatible con los pesos publicados): https://github.com/ggml-org/llama.cpp
 - Resultados de busqueda web: los enlaces recuperados corresponden a la Reformierte Kirche Murgenthal (ref-mu.ch y murgenthal.ch) y no guardan relacion con el modelo. No se han encontrado papers, blogs ni demos relevantes para este repositorio.

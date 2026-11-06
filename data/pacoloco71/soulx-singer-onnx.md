@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks de calidad en la informacion dispon
 
 | Modelo | Formato | Precision | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SoulX-Singer-ONNX (este) | ONNX (3 grafos) | fp32 y fp16 | en, zh | Apache 2.0 | HuggingFace pacoloco71 |
+| SoulX-Singer-ONNX (este) | ONNX (3 grafos) | fp32 y fp16 | en, zh | Apache 2.0 | Hugging Face pacoloco71 |
 | SoulX-Singer (original, Soul-AILab) | Pesos PyTorch | fp32 (con autocast fp16 en GPU) | en, zh | Apache 2.0 | Repositorio del autor base |
 | Otros modelos de SVS zero-shot | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,7 +94,7 @@ La comparacion principal es con el modelo base del que deriva: la version ONNX m
 
 ## Enlaces
 
-- HuggingFace (esta conversion): https://huggingface.co/pacoloco71/SoulX-Singer-ONNX
+- Hugging Face (esta conversion): https://huggingface.co/pacoloco71/SoulX-Singer-ONNX
 - Modelo base: https://huggingface.co/Soul-AILab/SoulX-Singer
 - Repositorio de SoulX-Singer: https://github.com/Soul-AILab/SoulX-Singer
 - Articulo (arXiv): https://arxiv.org/abs/2602.07803

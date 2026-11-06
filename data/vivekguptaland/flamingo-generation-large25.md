@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flamingo-generation-large25 es un repositorio publicado en HuggingFace por el usuario Vivekguptaland que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas de generación, bajo una configuración que el autor describe como "giant". El propio autor indica que el repositorio se centra en código transparente y pruebas de humo repetibles, y que omite deliberadamente cualquier afirmación sobre benchmarks. No hay evidencia de que exista un modelo entrenado: el checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida para smoke tests, no como un modelo con entrenamiento completado.
+Flamingo-generation-large25 es un repositorio publicado en Hugging Face por el usuario Vivekguptaland que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas de generación, bajo una configuración que el autor describe como "giant". El propio autor indica que el repositorio se centra en código transparente y pruebas de humo repetibles, y que omite deliberadamente cualquier afirmación sobre benchmarks. No hay evidencia de que exista un modelo entrenado: el checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida para smoke tests, no como un modelo con entrenamiento completado.
 
 La relevancia de esta ficha es, por tanto, limitada y de naturaleza distinta a la de un modelo listo para producción. Se trata de material de referencia para desarrolladores e investigadores interesados en la implementación interna de arquitecturas tipo Flamingo (fusión multimodal mediante co-attention, atención con grouped query, normalización RMSNorm y activación approx GELU), no de un modelo evaluable en tareas reales. El repositorio incluye `inference.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta de experimento por defecto y el checkpoint de inicialización.
 
@@ -72,7 +72,7 @@ No se dispone de datos verificables para establecer una comparativa. La categor�
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vivekguptaland/flamingo-generation-large25 | 24.832 según metadatos de safetensors | no disponible | sin datos (checkpoint sin entrenar) | MIT | HuggingFace, repo de 0,0 GB |
+| Vivekguptaland/flamingo-generation-large25 | 24.832 según metadatos de safetensors | no disponible | sin datos (checkpoint sin entrenar) | MIT | Hugging Face, repo de 0,0 GB |
 | Alternativas tipo Flamingo (OpenFlamingo, IDEFICS, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,9 +90,9 @@ No se dispone de datos verificables para establecer una comparativa. La categor�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vivekguptaland/flamingo-generation-large25
+- Repositorio en Hugging Face: https://huggingface.co/Vivekguptaland/flamingo-generation-large25
 - Archivos internos del repositorio: `inference.py`, `config.json`, `training_args.json`, `model.safetensors`, `README.md`
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo. Los únicos resultados devueltos corresponden a páginas de Google Übersetzer (https://translate.google.de/ y subpáginas), sin relación con este repositorio.
 - Paper o blog técnico del autor: no disponible.
-- Demo o espacio de HuggingFace: no disponible.
+- Demo o espacio de Hugging Face: no disponible.
 - Repositorio de código adicional: no disponible.

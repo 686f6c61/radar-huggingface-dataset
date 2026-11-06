@@ -6,7 +6,7 @@ Laya es un modelo de decisión no autorregresivo de tipo System 1 desarrollado p
 
 El checkpoint publicado es la versión fine-tuned del modelo base, con especialización en triaje de correo (spam, phishing, enrutado departamental), modelado de trayectorias conversacionales mediante aprendizaje por diferencia temporal con TD(lambda = 1.0) y calibración de temperatura por cardinalidad de opciones. La arquitectura combina un backbone ModernBERT-large bidireccional de 395 M de parámetros, completamente ajustado, con una cabeza de decisión entrenada desde cero (dos capas transformer, un scorer de marcadores de opción y una cabeza de actuar/escalar), lo que da un total de 421.293.830 parámetros. El presupuesto de entrada es de 512 tokens por pregunta, incluyendo enunciado, opciones y estado.
 
-Su relevancia actual radica en el nicho de enrutado, clasificación y decisiones calibradas en producción: el modelo reporta ECE (Expected Calibration Error) muy bajo en varias familias de tareas, lo que permite automatización selectiva con umbrales de confianza, despliegue en local o air-gapped sin egreso de datos, y una licencia Apache 2.0 sin restricciones comerciales. Los metadatos de HuggingFace indican 33 likes y 0 descargas, y fechas de creación y actualización de septiembre de 2026.
+Su relevancia actual radica en el nicho de enrutado, clasificación y decisiones calibradas en producción: el modelo reporta ECE (Expected Calibration Error) muy bajo en varias familias de tareas, lo que permite automatización selectiva con umbrales de confianza, despliegue en local o air-gapped sin egreso de datos, y una licencia Apache 2.0 sin restricciones comerciales. Los metadatos de Hugging Face indican 33 likes y 0 descargas, y fechas de creación y actualización de septiembre de 2026.
 
 ## Especificaciones tecnicas
 
@@ -101,7 +101,7 @@ Los diagramas de fiabilidad y las curvas de riesgo-cobertura detallados se encue
 - Cabe con holgura en GPU de consumo: cualquier RTX con 4 GB o mas (RTX 3050, 3060, 4060, 4090) es suficiente incluso en FP32.
 - La model card indica que se ejecuta en GPU commodity, MPS de Apple y CPU, lo que permite despliegue en portatiles y nodos sin acelerador.
 - GPU de centro de datos (A100, H100) no son necesarias, aunque pueden aprovecharse para maximizar el throughput en mini-batches paralelos.
-- Opciones de despliegue: la libreria oficial `laya` (`pip install laya`) con `laya.load("convaiinnovations/laya")`, y por tag `endpoints_compatible` tambien es compatible con HuggingFace Inference Endpoints. No se documentan integraciones especificas con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: la libreria oficial `laya` (`pip install laya`) con `laya.load("convaiinnovations/laya")`, y por tag `endpoints_compatible` tambien es compatible con Hugging Face Inference Endpoints. No se documentan integraciones especificas con vLLM, llama.cpp, Ollama o TGI.
 - Latencia reportada en GPU: 38,4 ms de mediana para 1 pregunta (p95 42,1 ms), 156,0 ms para 10 preguntas en un solo forward pass y 721,4 ms para 50 preguntas. El rango citado para el forward pass completo es de 33 a 38 ms.
 - Throughput aproximado derivado de esas cifras: en torno a 26 preguntas por segundo en regimen de 1 pregunta y en torno a 69 preguntas por segundo en lotes de 50, sobre hardware GPU no especificado.
 
@@ -116,7 +116,7 @@ La unica alternativa con datos en la informacion disponible es TypeSafe Jev, que
 | Accuracy de benchmark | 83,8 % in-task | 67,8 % |
 | Calibracion | Macro ECE 0,060 in-task | no disponible |
 | Licencia | Apache 2.0 | propietaria |
-| Disponibilidad | pesos abiertos en HuggingFace | API en la nube |
+| Disponibilidad | pesos abiertos en Hugging Face | API en la nube |
 
 No hay informacion disponible sobre otros modelos comparables de la misma categoria (clasificadores calibrados con salida tipada) en el material proporcionado. Conviene senalar que un encoder clasico como DeBERTa o RoBERTa fine-tuneado ocuparia el mismo nicho funcional, pero no se dispone de datos comparativos verificables en esta ficha.
 
@@ -132,14 +132,14 @@ No hay informacion disponible sobre otros modelos comparables de la misma catego
 - El riesgo de alucinacion de contenido es nulo por diseno, ya que la salida se restringe a un conjunto de opciones o a un valor calibrado; el riesgo residual es de mala calibracion o de etiquetas de opcion mal definidas.
 - La licencia Apache 2.0 permite uso comercial sin restricciones declaradas, pero procede revisar las condiciones de los datos de entrenamiento anotados por humanos si se pretende redistribuir el modelo para fines regulados.
 - Los datos de latencia no especifican la GPU empleada, por lo que las cifras deben tomarse como referencia y no como garantia en hardware distinto.
-- El modelo tiene 0 descargas y 33 likes en HuggingFace, sin adopcion publica documentada ni ecosistema de terceros; el soporte depende del autor.
+- El modelo tiene 0 descargas y 33 likes en Hugging Face, sin adopcion publica documentada ni ecosistema de terceros; el soporte depende del autor.
 - Las fechas de creacion y actualizacion del repositorio (septiembre de 2026) son posteriores a la fecha habitual de referencia, lo que sugiere metadatos anomales o generados automaticamente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/convaiinnovations/laya
+- Hugging Face: https://huggingface.co/convaiinnovations/laya
 - Repositorio de evaluacion (directorio `eval/` dentro del modelo): https://huggingface.co/convaiinnovations/laya/tree/main/eval
 - Paquete de Python `laya`, instalable con `pip install laya` (no se ha encontrado enlace a repositorio publico en la informacion disponible)
-- Pagina del autor en HuggingFace: https://huggingface.co/convaiinnovations
+- Pagina del autor en Hugging Face: https://huggingface.co/convaiinnovations
 
 Nota: la busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los unicos resultados obtenidos fueron paginas del servicio de correo TIM Mail, sin relacion con esta ficha. Por tanto, no hay enlaces adicionales a papers, blogs, repositorios o demos que se puedan citar.

@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo / artefacto | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| talzoomanzoo/phi-4-mini-ttrl | Adaptador LoRA (r=16, alpha=32) sobre Phi-4-mini-reasoning | No disponible (repo de 0,2 GB) | No disponible | No disponible | Publico en HuggingFace, 0 descargas |
-| microsoft/Phi-4-mini-reasoning (modelo base) | Modelo completo | No disponible en la informacion proporcionada | No disponible | Consultar en el repositorio del modelo base | Publico en HuggingFace |
+| talzoomanzoo/phi-4-mini-ttrl | Adaptador LoRA (r=16, alpha=32) sobre Phi-4-mini-reasoning | No disponible (repo de 0,2 GB) | No disponible | No disponible | Publico en Hugging Face, 0 descargas |
+| microsoft/Phi-4-mini-reasoning (modelo base) | Modelo completo | No disponible en la informacion proporcionada | No disponible | Consultar en el repositorio del modelo base | Publico en Hugging Face |
 | Otros adaptadores LoRA publicos sobre el mismo base | Adaptadores PEFT | No disponible | No disponible | No disponible | No verificado en la informacion disponible |
 | Alternativas de razonamiento de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -94,5 +94,5 @@ La comparacion relevante es contra el propio modelo base sin adaptador: el adapt
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/talzoomanzoo/phi-4-mini-ttrl
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/talzoomanzoo/phi-4-mini-ttrl
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-reasoning

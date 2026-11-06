@@ -80,9 +80,9 @@ La model card indica que la tabla de evaluación completa incluye resultados del
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| literary-bert-en-small | 28,76 M | 128 tokens | Sentimiento ordinal literario (1–10) | Apache 2.0 | HuggingFace |
-| google/bert_uncased_L-4-H-512_A-8 | ~29 M | 512 tokens | Encoder general (MLM) | Apache 2.0 | HuggingFace |
-| Clasificadores de sentimiento BERT-base (p. ej. finetunes de SST-2) | ~110 M | 512 tokens | Sentimiento de 2–3 clases | variable | HuggingFace |
+| literary-bert-en-small | 28,76 M | 128 tokens | Sentimiento ordinal literario (1–10) | Apache 2.0 | Hugging Face |
+| google/bert_uncased_L-4-H-512_A-8 | ~29 M | 512 tokens | Encoder general (MLM) | Apache 2.0 | Hugging Face |
+| Clasificadores de sentimiento BERT-base (p. ej. finetunes de SST-2) | ~110 M | 512 tokens | Sentimiento de 2–3 clases | variable | Hugging Face |
 
 La comparación con alternativas de la misma tarea es limitada: no se dispone de datos de benchmarks de otros modelos de sentimiento literario ordinal en la información proporcionada. Frente al encoder base, este modelo añade la cabeza ordinal y la especialización de dominio a costa de reducir la longitud de entrada efectiva a 128 tokens.
 
@@ -99,7 +99,7 @@ La comparación con alternativas de la misma tarea es limitada: no se dispone de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/susurofu/literary-bert-en-small
+- Modelo en Hugging Face: https://huggingface.co/susurofu/literary-bert-en-small
 - Modelo base: https://huggingface.co/google/bert_uncased_L-4-H-512_A-8
 - Dataset de entrenamiento: https://huggingface.co/datasets/susurofu/synthetic-sentiment-dataset-pg-gemma4
 - Referencia arXiv citada en las etiquetas: arxiv:2611.02985 (paper no verificado en la información disponible)

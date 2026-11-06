@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al no
 
 ## Comparativa con modelos similares
 
-No disponible. No existen modelos comparables en el sentido de sistemas de gobierno declarativo para agentes de IA publicados en HuggingFace con esta arquitectura. Alternativas conceptuales (no directamente comparables) serian frameworks de policy-as-code como OPA (Open Policy Agent) o Cedar, pero no son modelos de IA ni estan en HuggingFace.
+No disponible. No existen modelos comparables en el sentido de sistemas de gobierno declarativo para agentes de IA publicados en Hugging Face con esta arquitectura. Alternativas conceptuales (no directamente comparables) serian frameworks de policy-as-code como OPA (Open Policy Agent) o Cedar, pero no son modelos de IA ni estan en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -68,6 +68,6 @@ No disponible. No existen modelos comparables en el sentido de sistemas de gobie
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Snapkitty/claudes-harness
+- Repositorio Hugging Face: https://huggingface.co/Snapkitty/claudes-harness
 - Repositorio GitHub (mencionado en el README): https://github.com/SNAPKITTYWEST/claudes-harness
 - SWI-Prolog (dependencia): https://www.swi-prolog.org/Download.html

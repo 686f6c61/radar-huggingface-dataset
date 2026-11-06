@@ -4,7 +4,7 @@
 
 OSHE Local v2 es un motor de IA local para Macs con Apple Silicon, desarrollado por byPINKLAND Limited (empresa registrada en Londres). Se presenta como una "Community Preview" binaria, no como un lanzamiento de código abierto. Combina un checkpoint base de Gemma 4 E2B con una capa de producto que añade enrutamiento automático de capacidades, análisis multi-documento con verificación de fuentes, operaciones de archivo acotadas, memoria local y un harness de calculadora, todo expuesto mediante una API compatible con OpenAI en un endpoint de solo bucle local.
 
-La relevancia de este modelo reside en su enfoque local-first para agentes y análisis documental en hardware de Apple, con un mecanismo de firma y verificación de paquetes de capacidades. Según la model card, el sistema completo mejora significativamente la ruta de análisis multi-documento respecto al checkpoint base sin modificar, aunque se advierte explícitamente que no es un benchmark general de inteligencia. El repositorio ocupa 2.5 GB y está etiquetado con `mlx`, `apple-silicon`, `local-ai`, `agent`, `openai-compatible` y `cantonese`. La fecha de creación es agosto de 2026 (según HuggingFace).
+La relevancia de este modelo reside en su enfoque local-first para agentes y análisis documental en hardware de Apple, con un mecanismo de firma y verificación de paquetes de capacidades. Según la model card, el sistema completo mejora significativamente la ruta de análisis multi-documento respecto al checkpoint base sin modificar, aunque se advierte explícitamente que no es un benchmark general de inteligencia. El repositorio ocupa 2.5 GB y está etiquetado con `mlx`, `apple-silicon`, `local-ai`, `agent`, `openai-compatible` y `cantonese`. La fecha de creación es agosto de 2026 (según Hugging Face).
 
 No se proporcionan datos sobre el número total de parámetros, longitud de contexto, idiomas soportados más allá de menciones a cantonés y chino tradicional, ni detalles de cuantización. La licencia es "other" y los términos indican que es software binario propietario, no open source.
 
@@ -83,8 +83,8 @@ No hay información suficiente para comparar con otros modelos locales de simila
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/PINKlab/OSHE-Local-v2)
-- [HuggingFace del modelo v1](https://huggingface.co/PINKlab/OSHE-Local-v1)
+- [Hugging Face del modelo](https://huggingface.co/PINKlab/OSHE-Local-v2)
+- [Hugging Face del modelo v1](https://huggingface.co/PINKlab/OSHE-Local-v1)
 - [Perfil de la organización PINKlab](https://huggingface.co/PINKlab/models)
 - [Referencia de modelos locales (externo, no específico)](https://local-ai-models.ai/)
 - [Herramienta para comprobar compatibilidad de GPU](https://www.canirun.ai/)

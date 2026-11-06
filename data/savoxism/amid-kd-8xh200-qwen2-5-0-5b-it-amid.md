@@ -90,8 +90,8 @@ No hay evaluacion del estudiante sin entrenar ni del profesor, por lo que estos 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
 | amid-kd-8xh200-qwen2.5-0.5b-it-amid | ~0,5B | no disponible en la ficha (entrenado con max length 1025) | Apache 2.0 | MMLU-STEM 0,2290; GSM8K strict 0,0182; SciQ 0,664; degradado durante el entrenamiento | Pesos PyTorch, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen2.5-0.5B-Instruct (base del anterior) | ~0,5B | 32.768 tokens segun su documentacion | Apache 2.0 | no disponible en la informacion proporcionada | Ampliamente disponible en HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 (profesor) | ~4B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Disponible en HuggingFace |
+| Qwen/Qwen2.5-0.5B-Instruct (base del anterior) | ~0,5B | 32.768 tokens segun su documentacion | Apache 2.0 | no disponible en la informacion proporcionada | Ampliamente disponible en Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 (profesor) | ~4B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Disponible en Hugging Face |
 | Otras alternativas de la misma categoria (por ejemplo, otros instruct de 0,3B-1B como SmolLM2-360M-Instruct o TinyLlama-1.1B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion cuantitativa con alternativas no es posible con los datos disponibles: no se han evaluado el estudiante sin entrenar, el profesor ni ningun modelo de referencia bajo el mismo arnes.
@@ -112,7 +112,7 @@ La comparacion cuantitativa con alternativas no es posible con los datos disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Savoxism/amid-kd-8xh200-qwen2.5-0.5b-it-amid
+- Modelo en Hugging Face: https://huggingface.co/Savoxism/amid-kd-8xh200-qwen2.5-0.5b-it-amid
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Modelo profesor: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Conjunto de datos: https://huggingface.co/datasets/VoCuc/UltraInteract-Infer

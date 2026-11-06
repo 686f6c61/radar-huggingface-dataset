@@ -69,5 +69,5 @@ No disponible. No se han identificado modelos comparables de 118M para Bahasa In
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Veenn/zelm-118m-id
+- Hugging Face: https://huggingface.co/Veenn/zelm-118m-id
 - Perfil del autor: https://huggingface.co/Veenn

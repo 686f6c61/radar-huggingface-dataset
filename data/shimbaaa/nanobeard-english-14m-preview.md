@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nanoBeard-english-14M-preview es un modelo de lenguaje de tamano muy reducido publicado por el usuario shimbaaa en HuggingFace. Se trata de un fine-tune continuado sobre younissk/nanoBeard-sloop-14M, un modelo base de la familia nanoBeard (tag `sloop`), y su recuento real de parametros segun los pesos en safetensors es de 17.011.584 (aproximadamente 17 millones), pese a que el nombre comercial del repositorio indique "14M".
+nanoBeard-english-14M-preview es un modelo de lenguaje de tamano muy reducido publicado por el usuario shimbaaa en Hugging Face. Se trata de un fine-tune continuado sobre younissk/nanoBeard-sloop-14M, un modelo base de la familia nanoBeard (tag `sloop`), y su recuento real de parametros segun los pesos en safetensors es de 17.011.584 (aproximadamente 17 millones), pese a que el nombre comercial del repositorio indique "14M".
 
 El entrenamiento adicional se ha realizado sobre cuatro fuentes declaradas por el autor: instrucciones en ingles de awesome-chatgpt-prompts, ejemplos de cadena de pensamiento en formato claude-thinking (SethBurkart/claude-thinking), un conjunto de seguridad frente a inyeccion de prompts (deepset/prompt-injections) y una pasada de pulido de estilo. El objetivo declarado es que el modelo aprenda el *formato* del razonamiento (etiquetas de pensamiento, estructura paso a paso), no la capacidad de razonar.
 
@@ -23,7 +23,7 @@ Su relevancia es fundamentalmente didactica y de investigacion: sirve como banco
 | Modelo base | younissk/nanoBeard-sloop-14M |
 | Tamano del repositorio | 0,1 GB |
 | Pipeline declarado | no disponible |
-| Fecha de creacion | 19 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 19 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -71,10 +71,10 @@ Datos de referencia tomados de la documentacion publica de cada modelo alternati
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| shimbaaa/nanoBeard-english-14M-preview | 17,0 M | no disponible | Apache-2.0 | HuggingFace | sin benchmarks publicados |
-| GPT-2 (124M) | 124 M | 1024 tokens | MIT modificada | HuggingFace, ampliamente replicado | benchmarks historicos publicos |
-| HuggingFaceTB/SmolLM-135M | 135 M | 2048 tokens | Apache-2.0 | HuggingFace | benchmarks publicados por el autor |
-| Qwen2.5-0.5B | ~494 M | 32.768 tokens | Apache-2.0 | HuggingFace | benchmarks publicados por el autor |
+| shimbaaa/nanoBeard-english-14M-preview | 17,0 M | no disponible | Apache-2.0 | Hugging Face | sin benchmarks publicados |
+| GPT-2 (124M) | 124 M | 1024 tokens | MIT modificada | Hugging Face, ampliamente replicado | benchmarks historicos publicos |
+| HuggingFaceTB/SmolLM-135M | 135 M | 2048 tokens | Apache-2.0 | Hugging Face | benchmarks publicados por el autor |
+| Qwen2.5-0.5B | ~494 M | 32.768 tokens | Apache-2.0 | Hugging Face | benchmarks publicados por el autor |
 
 Frente a estas alternativas, nanoBeard-english-14M-preview es entre 7 y 29 veces mas pequeno, no documenta su contexto ni su arquitectura y no publica evaluaciones. Su unico diferenciador es el ajuste especifico en formato de chain-of-thought y en seguridad frente a inyeccion de prompts, orientado a experimentacion, no a produccion. Para cualquier tarea real en la franja de menos de 500 M de parametros, SmolLM-135M o Qwen2.5-0.5B son opciones mucho mas adecuadas por contexto, documentacion y evaluaciones publicadas.
 
@@ -92,7 +92,7 @@ Frente a estas alternativas, nanoBeard-english-14M-preview es entre 7 y 29 veces
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shimbaaa/nanoBeard-english-14M-preview
+- Modelo en Hugging Face: https://huggingface.co/shimbaaa/nanoBeard-english-14M-preview
 - Modelo base: https://huggingface.co/younissk/nanoBeard-sloop-14M
 - Dataset awesome-chatgpt-prompts: https://huggingface.co/datasets/fka/awesome-chatgpt-prompts
 - Dataset SethBurkart/claude-thinking: https://huggingface.co/datasets/SethBurkart/claude-thinking

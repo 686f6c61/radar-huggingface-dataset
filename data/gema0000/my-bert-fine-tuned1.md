@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gema0000/my-bert-fine-tuned1` es un ajuste fino de la arquitectura BERT publicado por el usuario `gema0000` en HuggingFace. Con 109.482.240 parámetros, coincide con el tamaño típico de BERT-base (110M), por lo que se trata probablemente de un modelo encoder-only orientado a extracción de características textuales (pipeline `feature-extraction`). El repositorio contiene únicamente pesos en formato `safetensors` y una model card generada automáticamente sin información adicional sobre la tarea concreta, los datos de entrenamiento o el modelo base original.
+El modelo `gema0000/my-bert-fine-tuned1` es un ajuste fino de la arquitectura BERT publicado por el usuario `gema0000` en Hugging Face. Con 109.482.240 parámetros, coincide con el tamaño típico de BERT-base (110M), por lo que se trata probablemente de un modelo encoder-only orientado a extracción de características textuales (pipeline `feature-extraction`). El repositorio contiene únicamente pesos en formato `safetensors` y una model card generada automáticamente sin información adicional sobre la tarea concreta, los datos de entrenamiento o el modelo base original.
 
 La relevancia de este modelo radica en que ejemplifica un caso común en el ecosistema open source: un ajuste fino de BERT publicado sin documentación exhaustiva. Para un desarrollador o investigador, la información disponible es insuficiente para evaluar su idoneidad en tareas específicas, aunque la arquitectura BERT subyacente sugiere capacidades estándar de representación de texto. No se han publicado descargas, likes ni resultados de evaluación, lo que indica que probablemente sea un experimento personal o un modelo de prueba.
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/gema0000/my-bert-fine-tuned1)
+- [Repositorio en Hugging Face](https://huggingface.co/gema0000/my-bert-fine-tuned1)
 - Paper de BERT (referencia del tag): [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1910.09700)
 
 No se han encontrado otros enlaces relevantes en la búsqueda web (los resultados devueltos se refieren a otros modelos como Kimi K3 o artículos genéricos de fine-tuning).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/OLMo-3-7B-target-only-no-hallucination-first-third-sft-seed3` es un fine-tuning del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. Se trata de un modelo de generación de texto en inglés, licenciado bajo Apache 2.0, y entrenado con la librería Unsloth y el framework TRL de HuggingFace. El nombre del modelo sugiere que el objetivo principal del ajuste es reducir las alucinaciones en las respuestas, probablemente mediante un entrenamiento supervisado (SFT) con un dataset específico que prioriza la fidelidad factual.
+El modelo `longtermrisk/OLMo-3-7B-target-only-no-hallucination-first-third-sft-seed3` es un fine-tuning del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. Se trata de un modelo de generación de texto en inglés, licenciado bajo Apache 2.0, y entrenado con la librería Unsloth y el framework TRL de Hugging Face. El nombre del modelo sugiere que el objetivo principal del ajuste es reducir las alucinaciones en las respuestas, probablemente mediante un entrenamiento supervisado (SFT) con un dataset específico que prioriza la fidelidad factual.
 
 Aunque el repositorio no proporciona detalles técnicos exhaustivos, el modelo hereda la arquitectura y capacidades del OLMo-3-7B-Instruct original, un modelo de lenguaje de 7 mil millones de parámetros. El tamaño del repositorio (14.6 GB) es consistente con pesos en formato `safetensors` para un modelo de esa magnitud. Es relevante para desarrolladores que buscan una alternativa de código abierto con foco en la reducción de alucinaciones, aunque la información pública disponible es limitada.
 
@@ -21,7 +21,7 @@ Aunque el repositorio no proporciona detalles técnicos exhaustivos, el modelo h
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo. Se sabe que es un fine-tuning del modelo `unsloth/Olmo-3-7B-Instruct`, que a su vez es una versión instruct de OLMo-3-7B, un modelo de lenguaje de 7B parámetros desarrollado por AI2 (Allen Institute for AI). El entrenamiento se realizó con la librería Unsloth, que acelera el fine-tuning, y el framework TRL de HuggingFace. El nombre del modelo indica que se aplicó un ajuste supervisado (SFT) con un dataset orientado a eliminar alucinaciones, posiblemente segmentado en "primera" y "tercera" partes de un conjunto de datos, y con una semilla fija (`seed3`). No se han publicado detalles sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de técnicas como RLHF o DPO.
+No se dispone de información detallada sobre la arquitectura interna del modelo. Se sabe que es un fine-tuning del modelo `unsloth/Olmo-3-7B-Instruct`, que a su vez es una versión instruct de OLMo-3-7B, un modelo de lenguaje de 7B parámetros desarrollado por AI2 (Allen Institute for AI). El entrenamiento se realizó con la librería Unsloth, que acelera el fine-tuning, y el framework TRL de Hugging Face. El nombre del modelo indica que se aplicó un ajuste supervisado (SFT) con un dataset orientado a eliminar alucinaciones, posiblemente segmentado en "primera" y "tercera" partes de un conjunto de datos, y con una semilla fija (`seed3`). No se han publicado detalles sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de técnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - Al ser un modelo de ~7B parámetros, se estima que requiere al menos 14-16 GB de VRAM en FP16 para inferencia, y menos con cuantización (por ejemplo, 8-10 GB en 8 bits, 6-7 GB en 4 bits).
 - GPUs recomendadas: tarjetas consumer como RTX 3090/4090 (24 GB) o GPUs profesionales como A10/A100 para mayor velocidad.
 - Es posible ejecutarlo en GPUs con 16 GB de VRAM si se usa cuantización, pero no se ha confirmado.
-- Opciones de despliegue: al ser compatible con Transformers y TGI, se puede servir con vLLM, llama.cpp, Ollama (si se convierte a GGUF), o mediante HuggingFace Inference Endpoints.
+- Opciones de despliegue: al ser compatible con Transformers y TGI, se puede servir con vLLM, llama.cpp, Ollama (si se convierte a GGUF), o mediante Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -58,9 +58,9 @@ No se dispone de datos de rendimiento comparativo. Como referencia, el modelo ba
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| longtermrisk/OLMo-3-7B-target-only-no-hallucination | ~7B (reportado 528K, posible error) | no disponible | Apache 2.0 | HuggingFace |
-| unsloth/Olmo-3-7B-Instruct | ~7B | no disponible | Apache 2.0 | HuggingFace |
-| Llama-3-8B-Instruct | 8B | 8K (típico) | Llama 3 license | HuggingFace |
+| longtermrisk/OLMo-3-7B-target-only-no-hallucination | ~7B (reportado 528K, posible error) | no disponible | Apache 2.0 | Hugging Face |
+| unsloth/Olmo-3-7B-Instruct | ~7B | no disponible | Apache 2.0 | Hugging Face |
+| Llama-3-8B-Instruct | 8B | 8K (típico) | Llama 3 license | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -73,5 +73,5 @@ No se dispone de datos de rendimiento comparativo. Como referencia, el modelo ba
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/OLMo-3-7B-target-only-no-hallucination-first-third-sft-seed3](https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-first-third-sft-seed3)
+- [Hugging Face - longtermrisk/OLMo-3-7B-target-only-no-hallucination-first-third-sft-seed3](https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-first-third-sft-seed3)
 - [Modelo base: unsloth/Olmo-3-7B-Instruct](https://huggingface.co/unsloth/Olmo-3-7B-Instruct) (referencia)

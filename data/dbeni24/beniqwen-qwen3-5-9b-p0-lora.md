@@ -79,8 +79,8 @@ No se puede afirmar que el adaptador mejore o empeore el rendimiento de estos mo
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/DBeni24/BeniQwen-Qwen3.5-9B-P0-LoRA
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.5-9B
+- Repositorio Hugging Face del adaptador: https://huggingface.co/DBeni24/BeniQwen-Qwen3.5-9B-P0-LoRA
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-9B
 - Ficha del modelo base en "There's An AI For That": https://theresanaiforthat.com/model/qwen3-5-9b/
 - Ficha del modelo base en Neura Market: https://www.neura.market/models/qwen-qwen3-5-9b
 - Catalogo de Microsoft Foundry: https://ai.azure.com/catalog/models/qwen-qwen3.5-9b

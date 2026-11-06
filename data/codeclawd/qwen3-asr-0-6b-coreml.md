@@ -98,7 +98,7 @@ No se han facilitado en la informacion disponible resultados de benchmarks frent
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/codeclawd/qwen3-asr-0.6b-coreml
+- Repositorio en Hugging Face: https://huggingface.co/codeclawd/qwen3-asr-0.6b-coreml
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Repositorio de conversion original: https://huggingface.co/FluidInference/qwen3-asr-0.6b-coreml
 - Paper tecnico: https://arxiv.org/abs/2601.21337

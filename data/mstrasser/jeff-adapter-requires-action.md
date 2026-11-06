@@ -82,9 +82,9 @@ Advertencia del autor: ambos tests son de tipo "generator" (mismo generador que 
 
 | Modelo | Tipo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `jeff-adapter-requires-action` | LoRA sobre jeff-base (Qwen3.5-0.8B) | ~0.8B (base) | no disponible | Clasificación de decisión con calibración | Apache 2.0 | HuggingFace + SDK propio |
-| LLM generativo pequeño (p. ej. Qwen3.5-0.8B sin adaptar) | Transformer decoder | ~0.8B | no disponible | Generación de texto; requiere parseo de salida | según modelo base | HuggingFace |
-| Clasificadores BERT pequeños (p. ej. DistilBERT) | Transformer encoder | ~66M | 512 tokens típicamente | Clasificación de texto supervisada | Apache 2.0 (habitual) | HuggingFace |
+| `jeff-adapter-requires-action` | LoRA sobre jeff-base (Qwen3.5-0.8B) | ~0.8B (base) | no disponible | Clasificación de decisión con calibración | Apache 2.0 | Hugging Face + SDK propio |
+| LLM generativo pequeño (p. ej. Qwen3.5-0.8B sin adaptar) | Transformer decoder | ~0.8B | no disponible | Generación de texto; requiere parseo de salida | según modelo base | Hugging Face |
+| Clasificadores BERT pequeños (p. ej. DistilBERT) | Transformer encoder | ~66M | 512 tokens típicamente | Clasificación de texto supervisada | Apache 2.0 (habitual) | Hugging Face |
 
 La comparación con clasificadores encoder pequeños es la más directa en coste y latencia, pero `jeff-adapter-requires-action` se distingue por condicionar la decisión a una política en lenguaje natural en el contexto y por devolver probabilidades calibradas por opción. Frente a un LLM generativo del mismo tamaño, evita la fragilidad del parseo de texto libre. No se dispone de datos de benchmarks comparativos entre estas alternativas en la información proporcionada.
 
@@ -98,12 +98,12 @@ La comparación con clasificadores encoder pequeños es la más directa en coste
 - Riesgo de alucinación estructural: aunque no genera texto, puede emitir `yes` o `no` con alta confianza en casos límite; la etiqueta `unclear` mitiga pero no elimina este riesgo.
 - Sesgos: no documentados; al entrenarse sobre datos sintéticos generados internamente, puede heredar los sesgos del generador y de las políticas de ejemplo.
 - Licencia Apache 2.0 permite uso comercial, pero el modelo base y el SDK deben verificarse por separado (el SDK se distribuía desde GitHub en el momento de la publicación, no desde PyPI).
-- Madurez temprana: 0 descargas y 0 likes en HuggingFace; ecosistema (SDK, servidor) en fase inicial.
+- Madurez temprana: 0 descargas y 0 likes en Hugging Face; ecosistema (SDK, servidor) en fase inicial.
 - Dependencia de la calidad de la política: el rendimiento depende de que la lista de frases de la política sea completa y sin ambigüedades; políticas mal redactadas degradan las decisiones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mstrasser/jeff-adapter-requires-action
+- Modelo en Hugging Face: https://huggingface.co/mstrasser/jeff-adapter-requires-action
 - Modelo base: https://huggingface.co/mstrasser/jeff-base
 - Página de catálogo: https://jeffhub.ai/catalogue/jeff.support.requires-action
 - Repositorio de código, servidor y SDK: https://github.com/firelex/jeff

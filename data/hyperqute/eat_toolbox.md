@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HyperQute/EAT_Toolbox es un repositorio alojado en HuggingFace por el usuario HyperQute. En el momento de la consulta, la unica informacion verificable disponible es la licencia declarada (Apache 2.0) y los metadatos basicos del repositorio: cero descargas, cero "likes", sin pipeline declarado y sin idiomas declarados. La model card publicada no contiene mas texto que el bloque de frontmatter con la licencia, por lo que no hay descripcion funcional, arquitectura, tamano ni contexto documentados por el autor.
+HyperQute/EAT_Toolbox es un repositorio alojado en Hugging Face por el usuario HyperQute. En el momento de la consulta, la unica informacion verificable disponible es la licencia declarada (Apache 2.0) y los metadatos basicos del repositorio: cero descargas, cero "likes", sin pipeline declarado y sin idiomas declarados. La model card publicada no contiene mas texto que el bloque de frontmatter con la licencia, por lo que no hay descripcion funcional, arquitectura, tamano ni contexto documentados por el autor.
 
 No se dispone de informacion sobre si se trata de un modelo de lenguaje, de un conjunto de pesos, de un script o de una utilidad auxiliar. El nombre "Toolbox" sugiere un componente de tipo caja de herramientas o utilidad de soporte, pero se trata de una inferencia a partir del identificador y no de un dato confirmado en la documentacion.
 
@@ -43,7 +43,7 @@ No se puede confirmar ninguna capacidad concreta a partir de la informacion disp
 
 No es posible enumerar casos de uso concretos y realistas sin documentacion tecnica que describa que hace el repositorio, que artefactos contiene y como se invoca. Los siguientes puntos son tareas de verificacion previas a cualquier evaluacion de uso, no casos de uso confirmados:
 
-- Inspeccion del arbol de ficheros del repositorio en HuggingFace para determinar si contiene pesos, codigo, configuraciones o documentacion auxiliar.
+- Inspeccion del arbol de ficheros del repositorio en Hugging Face para determinar si contiene pesos, codigo, configuraciones o documentacion auxiliar.
 - Lectura de cualquier fichero adicional (`config.json`, `requirements.txt`, scripts) para identificar el framework y las dependencias reales.
 - Contacto con el autor (HyperQute) para solicitar una model card funcional con arquitectura, tamano, contexto y datos de entrenamiento.
 - Verificacion de la procedencia de los pesos, en caso de existir, para descartar riesgos de licencia o de seguridad en la cadena de suministro.
@@ -86,6 +86,6 @@ No disponible. No se ha podido determinar la categoria del artefacto (modelo de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HyperQute/EAT_Toolbox
+- Repositorio en Hugging Face: https://huggingface.co/HyperQute/EAT_Toolbox
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo, paper, blog, repositorio de codigo o demo. Las unicas entradas devueltas corresponden a paginas de Google Translate y no guardan relacion con el modelo.

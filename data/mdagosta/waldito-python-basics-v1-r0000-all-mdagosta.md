@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mdagosta/waldito-python-basics-v1-r0000-all-mdagosta` es una exportación de un modelo de lenguaje causal de la familia OpenWALDO, publicada por el usuario mdagosta en HuggingFace. Se trata de un modelo pequeno (9.541.632 parámetros según los pesos en safetensors) construido sobre la arquitectura estándar Llama de Transformers, orientado a generación de texto y conversación. El identificador sugiere que es la revisión base (`r0000`) de una serie enfocada a "python-basics", es decir, a contenidos introductorios de programación en Python.
+El modelo `mdagosta/waldito-python-basics-v1-r0000-all-mdagosta` es una exportación de un modelo de lenguaje causal de la familia OpenWALDO, publicada por el usuario mdagosta en Hugging Face. Se trata de un modelo pequeno (9.541.632 parámetros según los pesos en safetensors) construido sobre la arquitectura estándar Llama de Transformers, orientado a generación de texto y conversación. El identificador sugiere que es la revisión base (`r0000`) de una serie enfocada a "python-basics", es decir, a contenidos introductorios de programación en Python.
 
 La relevancia de esta ficha es limitada y debe interpretarse con cautela: el repositorio no tiene descargas ni likes, el tamano del repo aparece como 0.0 GB y no se declaran benchmarks, licencia ni idiomas soportados. La model card es extremadamente breve y se limita a indicar que usa la arquitectura Llama causal estándar con el tokenizer de bytes "schema-1" de OpenWALDO y que requiere `trust_remote_code=True` para cargar el tokenizer.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| waldito-python-basics-v1-r0000-all-mdagosta | 9.541.632 | no disponible | no disponible | HuggingFace |
-| waldito-python-basics-v1-r0000-merge | no disponible | no disponible | no disponible | HuggingFace |
-| Modelos Llama de referencia (p. ej. Llama 3.2 1B) | ~1.000 millones | hasta 128K | licencia Llama | HuggingFace |
+| waldito-python-basics-v1-r0000-all-mdagosta | 9.541.632 | no disponible | no disponible | Hugging Face |
+| waldito-python-basics-v1-r0000-merge | no disponible | no disponible | no disponible | Hugging Face |
+| Modelos Llama de referencia (p. ej. Llama 3.2 1B) | ~1.000 millones | hasta 128K | licencia Llama | Hugging Face |
 
 Nota: el modelo comparable mas directo es la variante `merge` del mismo autor, de la que no se dispone de especificaciones. Frente a modelos Llama de mayor tamano, este modelo es aproximadamente dos ordenes de magnitud menor en parámetros y no publica métricas que permitan comparar rendimiento. No se dispone de datos de benchmarks que permitan una comparacion cuantitativa.
 
@@ -82,6 +82,6 @@ Nota: el modelo comparable mas directo es la variante `merge` del mismo autor, d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0000-all-mdagosta
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0000-all-mdagosta
 - Variante merge del mismo autor: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0000-merge
 - Perfil de GitHub del autor: https://github.com/mdagosta

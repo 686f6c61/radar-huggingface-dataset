@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`3MPER0RR/gpt-oss-20b-3MPER0RR-abliterated` es una version modificada del modelo abierto GPT-OSS 20B de OpenAI, publicada por el usuario 3MPER0RR en HuggingFace. La modificacion consiste en un proceso de *abliteration* (ablacion direccional) aplicado en varias rondas ("multi-round abliteration", segun la model card) sobre los pesos originales, con el objetivo declarado de eliminar o atenuar los comportamientos de rechazo del modelo base. No se trata de un reentrenamiento ni de un fine-tuning con datos nuevos, sino de una intervencion sobre los pesos de un modelo ya existente.
+`3MPER0RR/gpt-oss-20b-3MPER0RR-abliterated` es una version modificada del modelo abierto GPT-OSS 20B de OpenAI, publicada por el usuario 3MPER0RR en Hugging Face. La modificacion consiste en un proceso de *abliteration* (ablacion direccional) aplicado en varias rondas ("multi-round abliteration", segun la model card) sobre los pesos originales, con el objetivo declarado de eliminar o atenuar los comportamientos de rechazo del modelo base. No se trata de un reentrenamiento ni de un fine-tuning con datos nuevos, sino de una intervencion sobre los pesos de un modelo ya existente.
 
 El modelo base GPT-OSS 20B es un transformer de tipo mezcla de expertos (MoE) con aproximadamente 20,9 mil millones de parametros totales (20.914.757.184 segun los safetensors del repositorio) y una arquitectura etiquetada como `gpt_oss`. La model card del autor es extremadamente escueta: no documenta el procedimiento exacto, el numero de rondas, los datos de calibracion ni ninguna evaluacion posterior, y el repositorio no registra descargas ni valoraciones en el momento de la consulta.
 
-La relevancia de esta ficha es doble. Por un lado, sirve como ejemplo de la familia de derivados "abliterated" que circulan por HuggingFace y que interesan a equipos de *red teaming* y de investigacion sobre seguridad de modelos. Por otro, obliga a advertir de que la licencia Apache 2.0 del original se mantiene, pero las garantias de comportamiento, alineacion y calidad del modelo base quedan explicitamente en entredicho tras la intervencion.
+La relevancia de esta ficha es doble. Por un lado, sirve como ejemplo de la familia de derivados "abliterated" que circulan por Hugging Face y que interesan a equipos de *red teaming* y de investigacion sobre seguridad de modelos. Por otro, obliga a advertir de que la licencia Apache 2.0 del original se mantiene, pero las garantias de comportamiento, alineacion y calidad del modelo base quedan explicitamente en entredicho tras la intervencion.
 
 ## Especificaciones tecnicas
 
@@ -22,8 +22,8 @@ La relevancia de esta ficha es doble. Por un lado, sirve como ejemplo de la fami
 | Formato de pesos | safetensors |
 | Pipeline declarado | text-generation |
 | Etiquetas | safetensors, gpt_oss, abliteration, gpt-oss, experimental, multi-round, text-generation, conversational |
-| Fecha de creacion (segun HuggingFace) | 2026-09-11 |
-| Ultima actualizacion (segun HuggingFace) | 2026-09-11 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-11 |
+| Ultima actualizacion (segun Hugging Face) | 2026-09-11 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales / activos | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gpt-oss-20b-3MPER0RR-abliterated | ~20,9 B / no documentado | No documentado (el base admite 128.000) | Sin benchmarks publicados | Apache 2.0 | HuggingFace, safetensors en bf16, 0 descargas |
-| GPT-OSS 20B (OpenAI, original) | ~21 B / ~3,6 B | 128.000 tokens | Benchmarks publicados por OpenAI en su model card | Apache 2.0 | HuggingFace y GitHub, con pesos MXFP4 |
-| GPT-OSS 120B (OpenAI) | ~117 B / ~5,1 B | 128.000 tokens | Benchmarks publicados por OpenAI, superiores al 20B | Apache 2.0 | HuggingFace y GitHub |
-| Qwen3-30B-A3B | ~30,5 B / ~3,3 B | 128.000 tokens (ampliable con YaRN) | Benchmarks publicados por el autor del modelo | Apache 2.0 | HuggingFace, amplio ecosistema GGUF |
+| gpt-oss-20b-3MPER0RR-abliterated | ~20,9 B / no documentado | No documentado (el base admite 128.000) | Sin benchmarks publicados | Apache 2.0 | Hugging Face, safetensors en bf16, 0 descargas |
+| GPT-OSS 20B (OpenAI, original) | ~21 B / ~3,6 B | 128.000 tokens | Benchmarks publicados por OpenAI en su model card | Apache 2.0 | Hugging Face y GitHub, con pesos MXFP4 |
+| GPT-OSS 120B (OpenAI) | ~117 B / ~5,1 B | 128.000 tokens | Benchmarks publicados por OpenAI, superiores al 20B | Apache 2.0 | Hugging Face y GitHub |
+| Qwen3-30B-A3B | ~30,5 B / ~3,3 B | 128.000 tokens (ampliable con YaRN) | Benchmarks publicados por el autor del modelo | Apache 2.0 | Hugging Face, amplio ecosistema GGUF |
 
 La comparacion de rendimiento entre este derivado y cualquiera de las alternativas no puede establecerse con los datos disponibles: no existe ninguna evaluacion publicada del efecto de la abliteracion sobre GPT-OSS 20B. Las cifras de parametros y contexto del modelo base y de los alternativas proceden de sus respectivas documentaciones publicas.
 
@@ -93,7 +93,7 @@ La comparacion de rendimiento entre este derivado y cualquiera de las alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3MPER0RR/gpt-oss-20b-3MPER0RR-abliterated
+- Modelo en Hugging Face: https://huggingface.co/3MPER0RR/gpt-oss-20b-3MPER0RR-abliterated
 - Modelo base GPT-OSS 20B (OpenAI): https://huggingface.co/openai/gpt-oss-20b
 - Modelo base GPT-OSS 120B (OpenAI): https://huggingface.co/openai/gpt-oss-120b
 - Repositorio de codigo de GPT-OSS: https://github.com/openai/gpt-oss

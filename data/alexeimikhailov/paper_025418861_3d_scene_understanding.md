@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, `alexeimikhailov/paper_025418861_3d_scene_understanding`, no contiene un modelo de IA entrenado ni pesos, sino un documento de investigación en formato Markdown sobre comprensión de escenas 3D (3D scene understanding). El autor, alexeimikhailov, ha publicado el texto completo del paper en un único archivo `paper_025418861_3d_scene_understanding.md`, con una estructura de contenido que sigue el esquema intro, background, approach, eval y conclusion, y un estilo de escritura narrativo-progresivo.
+Este repositorio de Hugging Face, `alexeimikhailov/paper_025418861_3d_scene_understanding`, no contiene un modelo de IA entrenado ni pesos, sino un documento de investigación en formato Markdown sobre comprensión de escenas 3D (3D scene understanding). El autor, alexeimikhailov, ha publicado el texto completo del paper en un único archivo `paper_025418861_3d_scene_understanding.md`, con una estructura de contenido que sigue el esquema intro, background, approach, eval y conclusion, y un estilo de escritura narrativo-progresivo.
 
 El repositorio no ofrece ningún artefacto ejecutable (sin pesos, sin código de inferencia, sin pipeline), por lo que no puede utilizarse para tareas de procesamiento de lenguaje natural ni de visión por computadora. Su relevancia es exclusivamente documental, orientado a investigadores que deseen revisar o citar un trabajo académico sobre comprensión de escenas 3D. La licencia es BSD-3-Clause, lo que permite su uso y redistribución con atribución.
 
@@ -63,7 +63,7 @@ No disponible. No hay un modelo comparable porque el repositorio no es un modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexeimikhailov/paper_025418861_3d_scene_understanding
+- Hugging Face: https://huggingface.co/alexeimikhailov/paper_025418861_3d_scene_understanding
 - Resultados de búsqueda web relacionados con el tema (no con el repositorio):
   - LSceneLLM (arXiv): https://arxiv.org/html/2412.01292v1
   - Awesome Embodied VLA / VA / VLN (GitHub): https://github.com/jonyzhang2023/awesome-embodied-vla-va-vln

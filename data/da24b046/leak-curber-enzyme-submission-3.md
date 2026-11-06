@@ -72,7 +72,7 @@ El L4 de la submission 3 está efectivamente empatado con la submission 2; el in
 
 | Modelo | Tipo | Estrategia | L4 (test local) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Submission 3 (este) | Encoder MLP + retrieval | Embeddings supervisados + kNN coseno (k=50, potencia 32) | 63,338278 % | MIT | Pública en HuggingFace |
+| Submission 3 (este) | Encoder MLP + retrieval | Embeddings supervisados + kNN coseno (k=50, potencia 32) | 63,338278 % | MIT | Pública en Hugging Face |
 | Submission 2 | Clasificador MLP | Clasificación directa supervisada | 63,337362 % | no disponible | Referenciada por el autor |
 | Submission 1 | Clasificador (reentrenado) | Clasificación directa | 52,237016 % | no disponible | Referenciada por el autor |
 
@@ -94,6 +94,6 @@ No se dispone de comparación con modelos externos de predicción de EC en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/da24b046/leak-curber-enzyme-submission-3
+- Hugging Face: https://huggingface.co/da24b046/leak-curber-enzyme-submission-3
 - DRFP (repositorio original): https://github.com/reymond-group/drfp
 - Vocabulario EC (ExPASy ENZYME): https://enzyme.expasy.org/

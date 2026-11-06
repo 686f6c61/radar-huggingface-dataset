@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `matrixrb/ebake6` es un modelo de difusión para generación de texto a imagen publicado en HuggingFace por el usuario `matrixrb`. Se distribuye a través de la librería `diffusers` y utiliza el pipeline `StableDiffusionPipeline`, lo que sugiere que está diseñado para generar imágenes a partir de descripciones textuales. El repositorio contiene un único archivo de pesos en formato `safetensors` con aproximadamente 859,5 millones de parámetros, un tamaño comparable al de modelos de difusión de la familia Stable Diffusion.
+El modelo `matrixrb/ebake6` es un modelo de difusión para generación de texto a imagen publicado en Hugging Face por el usuario `matrixrb`. Se distribuye a través de la librería `diffusers` y utiliza el pipeline `StableDiffusionPipeline`, lo que sugiere que está diseñado para generar imágenes a partir de descripciones textuales. El repositorio contiene un único archivo de pesos en formato `safetensors` con aproximadamente 859,5 millones de parámetros, un tamaño comparable al de modelos de difusión de la familia Stable Diffusion.
 
 La model card asociada es una plantilla genérica generada automáticamente, sin información sobre el desarrollador, el proceso de entrenamiento, los datos utilizados, la licencia o los idiomas soportados. Tampoco se han publicado resultados de benchmarks ni demos. A fecha de creación (agosto de 2026), el modelo no registra descargas ni valoraciones, lo que indica que se trata de una publicación reciente y sin validación comunitaria. Por tanto, cualquier uso en producción debe considerarse experimental y requiere una evaluación previa por parte del usuario.
 
@@ -41,7 +41,7 @@ Dada la falta de documentación, los casos de uso son hipotéticos y deben valid
 - Generación de assets visuales en entornos de desarrollo: si el modelo funciona correctamente, podría usarse para crear ilustraciones, conceptos o bocetos en fases tempranas de diseño.
 - Evaluación comparativa de modelos de difusión: al tener un tamaño de parámetros similar a Stable Diffusion 1.5, podría incluirse en estudios comparativos de rendimiento y calidad de imagen.
 - Integración en pipelines de generación condicionada: si se confirma su compatibilidad con el ecosistema diffusers, podría combinarse con otros componentes (embeddings, LoRA, etc.) para tareas específicas.
-- Formación y aprendizaje: como ejemplo de publicación de un modelo en HuggingFace, puede servir para practicar el flujo de trabajo de carga, inferencia y evaluación con la librería `diffusers`.
+- Formación y aprendizaje: como ejemplo de publicación de un modelo en Hugging Face, puede servir para practicar el flujo de trabajo de carga, inferencia y evaluación con la librería `diffusers`.
 
 ## Benchmarks y rendimiento
 
@@ -72,6 +72,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matrixrb/ebake6
+- Modelo en Hugging Face: https://huggingface.co/matrixrb/ebake6
 - Perfil del autor: https://huggingface.co/matrixrb
 - Lista de modelos del autor: https://huggingface.co/matrixrb/models

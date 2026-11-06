@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EDSR x2 para Core AI es un modelo de superresolución de imagen que implementa la arquitectura EDSR (Enhanced Deep Residual Networks) con un factor de escalado de 2x, exportado al formato nativo de Apple Core AI para su ejecución en dispositivos iOS y macOS. Lo publica el usuario grabbou en HuggingFace a partir de los pesos MIT de torchSR y de la receta de exportación oficial de `apple/coreai-models`. No es un modelo de lenguaje ni un transformer generativo: es una red convolucional de imagen a imagen de tan solo 1,5 millones de parámetros.
+EDSR x2 para Core AI es un modelo de superresolución de imagen que implementa la arquitectura EDSR (Enhanced Deep Residual Networks) con un factor de escalado de 2x, exportado al formato nativo de Apple Core AI para su ejecución en dispositivos iOS y macOS. Lo publica el usuario grabbou en Hugging Face a partir de los pesos MIT de torchSR y de la receta de exportación oficial de `apple/coreai-models`. No es un modelo de lenguaje ni un transformer generativo: es una red convolucional de imagen a imagen de tan solo 1,5 millones de parámetros.
 
 El modelo resuelve una tarea muy concreta: duplicar la resolución de una imagen RGB manteniendo la fidelidad visual, con un binario de 2,6 MB que cabe en cualquier app móvil. Su relevancia actual radica en el ecosistema: Core AI es el runtime de Apple para modelos en dispositivo, y este repositorio demuestra el flujo completo de exportación desde PyTorch (vía torchSR) a un artefacto `.aimodel` ejecutable en iOS y macOS. Es, por tanto, más un ejemplo de integración y un componente de pipeline que un modelo de propósito general.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Factor | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| grabbou/edsr-x2-CoreAI | 1,5 M | 2x | `.aimodel` (Apple Core AI) | MIT | HuggingFace, repo de 0,0 GB |
+| grabbou/edsr-x2-CoreAI | 1,5 M | 2x | `.aimodel` (Apple Core AI) | MIT | Hugging Face, repo de 0,0 GB |
 | EDSR `edsr_r16f64_x2` en torchSR | 1,5 M | 2x | PyTorch | MIT | GitHub (Coloquinte/torchSR) |
 | Receta EDSR de apple/coreai-models | no disponible | 2x | Core AI | no disponible en la informacion | GitHub (apple/coreai-models) |
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparado (PSNR/SSIM) entre estas variante
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/grabbou/edsr-x2-CoreAI
+- Hugging Face: https://huggingface.co/grabbou/edsr-x2-CoreAI
 - Paper EDSR: https://arxiv.org/abs/1707.02921
 - torchSR (origen de los pesos): https://github.com/Coloquinte/torchSR
 - Receta de exportación de Apple: https://github.com/apple/coreai-models/tree/main/models/edsr

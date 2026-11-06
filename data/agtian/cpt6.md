@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cpt6 es un modelo de lenguaje de instrucciones desarrollado por el usuario Agtian y publicado en HuggingFace bajo el identificador `Agtian/cpt6`. Se trata de una afinación (fine-tuning) del modelo `aisingapore/Gemma-SEA-LION-v4.5-E2B-IT`, entrenado mediante Supervised Fine-Tuning (SFT) con los frameworks TRL y Unsloth. El repositorio ocupa 38.1 GB y contiene pesos en formato safetensors, pero la ficha publicada no incluye una licencia definida, especificaciones de arquitectura, ni datos de rendimiento. En el momento de la consulta, el modelo no tiene descargas ni reacciones en HuggingFace, por lo que se trata de un modelo en fase inicial sin evaluacion externa.
+cpt6 es un modelo de lenguaje de instrucciones desarrollado por el usuario Agtian y publicado en Hugging Face bajo el identificador `Agtian/cpt6`. Se trata de una afinación (fine-tuning) del modelo `aisingapore/Gemma-SEA-LION-v4.5-E2B-IT`, entrenado mediante Supervised Fine-Tuning (SFT) con los frameworks TRL y Unsloth. El repositorio ocupa 38.1 GB y contiene pesos en formato safetensors, pero la ficha publicada no incluye una licencia definida, especificaciones de arquitectura, ni datos de rendimiento. En el momento de la consulta, el modelo no tiene descargas ni reacciones en Hugging Face, por lo que se trata de un modelo en fase inicial sin evaluacion externa.
 
 El objetivo declarado en la model card es ofrecer una version afinada del modelo base de AI Singapore, orientada probablemente a tareas de chat e instruccion. A partir de la informacion disponible no es posible confirmar la longitud de contexto, los idiomas soportados, la composicion del dataset ni el numero de parametros. Toda referencia a capacidades o casos de uso debe interpretarse como expectativas generales de un modelo de instrucciones, no como caracteristicas verificadas.
 
@@ -60,7 +60,7 @@ No se han publicado requisitos de hardware para este modelo.
 - VRAM estimada para inferencia: no disponible.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: se indica compatibilidad con endpoints de HuggingFace, pero no se detallan frameworks como vLLM, TGI o llama.cpp.
+- Opciones de despliegue: se indica compatibilidad con endpoints de Hugging Face, pero no se detallan frameworks como vLLM, TGI o llama.cpp.
 - Latencia y throughput: no disponible.
 
 El repositorio tiene un tamano de 38.1 GB, pero no se especifica a que tipo de pesos o cuantizaciones corresponden.
@@ -83,7 +83,7 @@ Se puede afirmar que el modelo es una afinacion de `aisingapore/Gemma-SEA-LION-v
 
 ## Enlaces
 
-- página del modelo en HuggingFace: https://huggingface.co/Agtian/cpt6
+- página del modelo en Hugging Face: https://huggingface.co/Agtian/cpt6
 - modelo base `aisingapore/Gemma-SEA-LION-v4.5-E2B-IT`: https://huggingface.co/aisingapore/Gemma-SEA-LION-v4.5-E2B-IT
 
 La busqueda web adicional no devolvio resultados relevantes para este modelo.

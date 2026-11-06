@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Licencia | Contexto / condicionamiento | Disponibilidad |
 |---|---|---|---|---|
-| Chroma1-HD | 8,9B | Apache 2.0 | T5-XXL + VAE FLUX; soporta negative prompt | HuggingFace, diffusers, ComfyUI |
-| FLUX.1-schnell | 12B | Apache 2.0 | T5-XXL + VAE FLUX; destilado para pocos pasos | HuggingFace, diffusers, ComfyUI |
-| FLUX.1-dev | 12B | No comercial | T5-XXL + VAE FLUX | HuggingFace, diffusers |
-| Stable Diffusion 3.5 Large | 8B | Stability Community License (uso comercial con condiciones) | Triple encoder de texto (CLIP + T5) | HuggingFace, diffusers, ComfyUI |
+| Chroma1-HD | 8,9B | Apache 2.0 | T5-XXL + VAE FLUX; soporta negative prompt | Hugging Face, diffusers, ComfyUI |
+| FLUX.1-schnell | 12B | Apache 2.0 | T5-XXL + VAE FLUX; destilado para pocos pasos | Hugging Face, diffusers, ComfyUI |
+| FLUX.1-dev | 12B | No comercial | T5-XXL + VAE FLUX | Hugging Face, diffusers |
+| Stable Diffusion 3.5 Large | 8B | Stability Community License (uso comercial con condiciones) | Triple encoder de texto (CLIP + T5) | Hugging Face, diffusers, ComfyUI |
 
 Chroma1-HD se posiciona como la alternativa Apache 2.0 de tamaño medio-alto frente a FLUX.1-dev (mejor calidad de referencia pero con licencia no comercial) y como competidor directo de SD 3.5 Large en el segmento de 8B parámetros, con la ventaja de una licencia sin cláusulas adicionales. Frente a FLUX.1-schnell, del que deriva, sacrifica la inferencia en muy pocos pasos a cambio de un comportamiento más adequado para *fine-tuning* y del uso de *negative prompt*. Los datos de rendimiento comparado no están disponibles en la información proporcionada.
 
@@ -83,7 +83,7 @@ Chroma1-HD se posiciona como la alternativa Apache 2.0 de tamaño medio-alto fre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lodestones/Chroma1-HD
+- Modelo en Hugging Face: https://huggingface.co/lodestones/Chroma1-HD
 - Variante rápida con CFG horneado (Chroma1-Flash): https://huggingface.co/lodestones/Chroma1-Flash
 - Checkpoint para ComfyUI: https://huggingface.co/lodestones/Chroma
 - VAE de FLUX: https://huggingface.co/lodestones/Chroma/resolve/main/ae.safetensors

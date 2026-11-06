@@ -21,7 +21,7 @@ El modelo resuelve la tarea de reducir palabras sánscritas a su lema, un paso f
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea la arquitectura T5, un transformer encoder-decoder diseñado para tareas de generación de texto a partir de texto. En este caso, la entrada es una oración en sánscrito (con el token `</s>` al final) y la salida es la secuencia de lemas correspondiente, separada por espacios. No se han publicado detalles sobre el conjunto de datos de entrenamiento, el número de tokens procesados ni el uso de técnicas como RLHF o DPO. El modelo fue generado con `Trainer` de HuggingFace, como indica la etiqueta `generated_from_trainer`, pero no se especifican hiperparámetros ni el proceso de ajuste fino.
+El modelo emplea la arquitectura T5, un transformer encoder-decoder diseñado para tareas de generación de texto a partir de texto. En este caso, la entrada es una oración en sánscrito (con el token `</s>` al final) y la salida es la secuencia de lemas correspondiente, separada por espacios. No se han publicado detalles sobre el conjunto de datos de entrenamiento, el número de tokens procesados ni el uso de técnicas como RLHF o DPO. El modelo fue generado con `Trainer` de Hugging Face, como indica la etiqueta `generated_from_trainer`, pero no se especifican hiperparámetros ni el proceso de ajuste fino.
 
 La innovación principal no reside en la arquitectura, sino en su aplicación específica al sánscrito, una lengua con morfología compleja y escasez de recursos. El modelo se enmarca en un estudio más amplio sobre la capacidad de los LLM para generalizar a lenguas clásicas, aunque este modelo concreto es un baseline ajustado para la lematización.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. La s
 - VRAM estimada: al ser un modelo de ~11M de parámetros, la inferencia puede ejecutarse en CPU sin necesidad de GPU. En GPU, el uso de VRAM es mínimo (menos de 1 GB en FP32).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; incluso una GTX 1050 Ti o una integrada moderna pueden manejarlo. No requiere GPUs de alta gama como A100 o H100.
 - Compatibilidad con hardware de consumo: sí, cabe en cualquier ordenador personal, incluidos portátiles sin GPU dedicada.
-- Opciones de despliegue: al ser un modelo de `transformers`, puede servirse con HuggingFace Inference Endpoints, o mediante frameworks como vLLM o TGI, aunque por su tamaño también es viable con `llama.cpp` si se convierte a GGUF (no se proporciona en el repositorio).
+- Opciones de despliegue: al ser un modelo de `transformers`, puede servirse con Hugging Face Inference Endpoints, o mediante frameworks como vLLM o TGI, aunque por su tamaño también es viable con `llama.cpp` si se convierte a GGUF (no se proporciona en el repositorio).
 - Latencia y throughput: no se han publicado mediciones, pero dado el tamaño, la latencia en CPU es del orden de milisegundos por oración corta.
 
 ## Comparativa con modelos similares
@@ -70,6 +70,6 @@ No se dispone de información sobre modelos comparables específicos para lemati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mahesh27/t5lemmatizer
+- Modelo en Hugging Face: https://huggingface.co/mahesh27/t5lemmatizer
 - Perfil del autor: https://huggingface.co/mahesh27
 - Paper asociado (ACL 2025 Findings): https://aclanthology.org/2025.findings-acl.141/ (DOI: 10.18653/v1/2025.findings-acl.141)

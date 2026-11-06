@@ -84,7 +84,7 @@ La comparación relevante es interna a la familia: ante problemas de calidad de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cstr/SauerkrautLM-MoEdernColBERT-1.5M-CrispEmbed-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cstr/SauerkrautLM-MoEdernColBERT-1.5M-CrispEmbed-GGUF
 - Modelo base: https://huggingface.co/VAGOsolutions/SauerkrautLM-MoEdernColBERT-1.5M
 - Revisión concreta del upstream empaquetada: https://huggingface.co/VAGOsolutions/SauerkrautLM-MoEdernColBERT-1.5M/tree/9d360b8b88ae11bea5784bf9012ff509fdd5c2da
 - Variante CoreML de la familia: https://huggingface.co/VAGOsolutions/SauerkrautLM-MoEdernColBERT-1.5M-CoreML

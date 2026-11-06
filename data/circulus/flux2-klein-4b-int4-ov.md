@@ -93,7 +93,7 @@ La comparacion cualitativa entre ambos es la esperable en un proceso de cuantiza
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/circulus/flux2-klein-4b-int4-ov
+- Modelo en Hugging Face: https://huggingface.co/circulus/flux2-klein-4b-int4-ov
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Script de conversion citado en la model card: convert/convert_all.py del courseware ARCademy de OpenVINO (no se proporciona URL en la informacion disponible)
 - Leccion asociada: 07 FLUX.2 Klein image generation (no se proporciona URL en la informacion disponible)

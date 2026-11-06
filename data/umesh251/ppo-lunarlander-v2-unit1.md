@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v2. Lo publica el usuario umesh251 en HuggingFace y está construido con la librería stable-baselines3, que actúa como marco de referencia para implementaciones reproducibles de algoritmos de RL profundo. No se trata de un modelo de lenguaje: es una política neuronal que mapea observaciones del entorno a acciones discretas, por lo que conceptos como contexto, cuantización o idiomas no aplican en el sentido habitual.
+Este repositorio contiene un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v2. Lo publica el usuario umesh251 en Hugging Face y está construido con la librería stable-baselines3, que actúa como marco de referencia para implementaciones reproducibles de algoritmos de RL profundo. No se trata de un modelo de lenguaje: es una política neuronal que mapea observaciones del entorno a acciones discretas, por lo que conceptos como contexto, cuantización o idiomas no aplican en el sentido habitual.
 
 Su relevancia es acotada y de carácter práctico: sirve como ejemplo de agente PPO de referencia para el entorno LunarLander-v2, un problema clásico de control discreto usado en docencia e investigación de RL. El autor declara una recompensa media de 269,67 ± 18,78 en el entorno, por encima del umbral de 200 que se suele considerar "resuelto" en esta tarea, aunque el propio model-index marca el resultado como no verificado. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no incluye licencia ni documentación de uso completa.
 
@@ -77,7 +77,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Algoritmo | Entorno | Parámetros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| umesh251/ppo-LunarLander-v2-unit1 | PPO | LunarLander-v2 | No disponible | No aplica | mean_reward 269,67 ± 18,78 (no verificado) | No disponible | Hub de HuggingFace, 0 descargas |
+| umesh251/ppo-LunarLander-v2-unit1 | PPO | LunarLander-v2 | No disponible | No aplica | mean_reward 269,67 ± 18,78 (no verificado) | No disponible | Hub de Hugging Face, 0 descargas |
 | DQN de referencia (stable-baselines3) | DQN | LunarLander-v2 | No disponible | No aplica | No disponible | No disponible | Implementación en la librería; no se compara con un checkpoint concreto |
 | A2C de referencia (stable-baselines3) | A2C | LunarLander-v2 | No disponible | No aplica | No disponible | No disponible | Implementación en la librería; no se compara con un checkpoint concreto |
 
@@ -97,6 +97,6 @@ No se dispone de checkpoints comparables con métricas publicadas en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/umesh251/ppo-LunarLander-v2-unit1
+- Modelo en Hugging Face: https://huggingface.co/umesh251/ppo-LunarLander-v2-unit1
 - stable-baselines3 (librería de entrenamiento): https://github.com/DLR-RM/stable-baselines3
 - Búsqueda web realizada: no se han encontrado enlaces relevantes al modelo; los resultados devueltos correspondían a páginas corporativas de Microsoft sin relación con este repositorio. No se dispone de paper, blog, repositorio adicional ni demo asociados a este modelo en la información proporcionada.

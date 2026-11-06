@@ -74,9 +74,9 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B-DiM-heretic (este) | 27.36B denso | 262 144 (ext. 1M) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen3.8-27B (original) | 27B denso | 262 144 (ext. 1M) | Apache 2.0 | HuggingFace, modelo base |
-| Qwen3.6-27B | 27B denso | No disponible | No disponible | HuggingFace (referenciado en benchmarks del base) |
+| Qwen3.8-27B-DiM-heretic (este) | 27.36B denso | 262 144 (ext. 1M) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen3.8-27B (original) | 27B denso | 262 144 (ext. 1M) | Apache 2.0 | Hugging Face, modelo base |
+| Qwen3.6-27B | 27B denso | No disponible | No disponible | Hugging Face (referenciado en benchmarks del base) |
 
 No se dispone de datos de rendimiento comparativo de benchmarks estandar entre estas variantes en la informacion proporcionada. La comparativa se limita a parametros, contexto y licencia.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo de benchmarks estandar entre e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Qwen3.8-27B-DiM-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen3.8-27B-DiM-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Heretic (herramienta de abliteration): https://heretic-project.org
 - Qwen Cloud (servicio gestionado del modelo base): https://www.qwencloud.com

@@ -14,7 +14,7 @@ BrightoSV_AntiSpoof_V1.5-SE_iPROD es un modelo de detección de voz sintética (
 | Longitud de contexto | no disponible (modelo de audio; ventana de análisis no publicada) |
 | Tipos de cuantizacion | no disponible (se mencionan pesos ONNX, pero sin detalle de cuantización) |
 | Idiomas soportados | vi, en, zh, de, fr, nl, ja, ar |
-| Licencia | other (no especificada; requiere aceptación de condiciones en HuggingFace) |
+| Licencia | other (no especificada; requiere aceptación de condiciones en Hugging Face) |
 | Formato de pesos | no especificado (etiquetas: pytorch, onnx) |
 
 ## Arquitectura y entrenamiento
@@ -67,7 +67,7 @@ No se dispone de información pública sobre comparaciones con otros modelos de 
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo es gated en HuggingFace, requiere aceptar condiciones previas que no se especifican públicamente.
+- **Acceso restringido**: el modelo es gated en Hugging Face, requiere aceptar condiciones previas que no se especifican públicamente.
 - **Licencia no clara**: la licencia se indica como "other", sin detallar si permite uso comercial o restricciones de redistribución.
 - **Idiomas limitados**: aunque es language-agnostic, solo se declara soporte para ocho lenguas; puede degradarse en idiomas no incluidos.
 - **Riesgo de alucinación**: no aplica directamente (es un clasificador de audio, no un generador de texto), pero el riesgo de falsos positivos o negativos debe evaluarse en entornos reales.
@@ -76,5 +76,5 @@ No se dispone de información pública sobre comparaciones con otros modelos de 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/thusinh1969/BrightoSV_AntiSpoof_V1.5-SE_iPROD
+- Hugging Face del modelo: https://huggingface.co/thusinh1969/BrightoSV_AntiSpoof_V1.5-SE_iPROD
 - Referencia a la versión anterior (V1.2): https://huggingface.co/thusinh1969/BrightoSV_AntiSpoof_V1.2_e5_iPROD

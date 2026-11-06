@@ -2,9 +2,9 @@
 
 ## Resumen
 
-VLOOP-E2-BKUP es un modelo de la familia Qwen publicado en HuggingFace por el usuario Kaoeiri. Se trata de un ajuste derivado de Qwen/Qwen3.8-27B, con 27.872.753.616 parametros (~27,87 B) y un repositorio de 55,7 GB en formato safetensors, lo que corresponde a pesos en bf16/fp16 sin cuantizar. Las etiquetas del repositorio lo situan como un modelo multimodal de tipo image-text-to-text orientado a post-entrenamiento, agentes de codigo, ingenieria de software, razonamiento matematico y cientifico, uso de herramientas (tool-use) y contexto largo.
+VLOOP-E2-BKUP es un modelo de la familia Qwen publicado en Hugging Face por el usuario Kaoeiri. Se trata de un ajuste derivado de Qwen/Qwen3.8-27B, con 27.872.753.616 parametros (~27,87 B) y un repositorio de 55,7 GB en formato safetensors, lo que corresponde a pesos en bf16/fp16 sin cuantizar. Las etiquetas del repositorio lo situan como un modelo multimodal de tipo image-text-to-text orientado a post-entrenamiento, agentes de codigo, ingenieria de software, razonamiento matematico y cientifico, uso de herramientas (tool-use) y contexto largo.
 
-El modelo resuelve el problema de disponer de una variante afinada del Qwen3.8-27B con capacidades reforzadas para flujos agenticos y de razonamiento, algo relevante para desarrolladores que necesitan un modelo denso de ~28 B con soporte declarado de tool calling y compatibilidad con vLLM. La licencia Apache 2.0 facilita su uso comercial, aunque el acceso esta restringido (gated) y requiere aceptar condiciones en HuggingFace.
+El modelo resuelve el problema de disponer de una variante afinada del Qwen3.8-27B con capacidades reforzadas para flujos agenticos y de razonamiento, algo relevante para desarrolladores que necesitan un modelo denso de ~28 B con soporte declarado de tool calling y compatibilidad con vLLM. La licencia Apache 2.0 facilita su uso comercial, aunque el acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 La relevancia practica es limitada por el momento: el repositorio no tiene descargas ni likes, no incluye documentacion tecnica en la informacion disponible y la busqueda web no aporta resultados relacionados con el modelo (los resultados obtenidos corresponden al perfil del autor, a un informe tecnico de Kwai Keye-VL-2.0 y a un dispositivo hardware de nombre similar, sin relacion con este repositorio). La ficha que sigue refleja unicamente los datos verificables del repositorio y marca como "no disponible" todo aquello que no puede confirmarse.
 
@@ -20,7 +20,7 @@ La relevancia practica es limitada por el momento: el repositorio no tiene desca
 | Idiomas soportados | ingles (`en`) y chino (`zh`) |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Libreria | transformers |
 | Pipeline declarado | text-generation |
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de especificaciones de terceros que perm
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de poder descargar los pesos, lo que anade friccion a cualquier evaluacion o despliegue.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de poder descargar los pesos, lo que anade friccion a cualquier evaluacion o despliegue.
 - Ausencia de validacion comunitaria: cero descargas y cero likes en el momento de la consulta. No existe evidencia publica de uso en produccion ni de replicacion independiente de sus capacidades.
 - Documentacion inexistente en la informacion disponible: no hay model card tecnica con datos de entrenamiento, composicion del dataset ni proceso de alineacion. Es imposible auditar sesgos o procedencia de los datos.
 - Sin benchmarks publicados: no se pueden verificar de forma objetiva las capacidades declaradas en las etiquetas (razonamiento matematico, agentes de codigo, tool-use).
@@ -104,8 +104,8 @@ No se dispone de datos de benchmarks ni de especificaciones de terceros que perm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kaoeiri/VLOOP-E2-BKUP
-- Perfil del autor en HuggingFace: https://huggingface.co/Kaoeiri
+- Modelo en Hugging Face: https://huggingface.co/Kaoeiri/VLOOP-E2-BKUP
+- Perfil del autor en Hugging Face: https://huggingface.co/Kaoeiri
 - Listado de modelos del autor: https://huggingface.co/Kaoeiri/models
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B
 

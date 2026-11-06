@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. Los 
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Depth Anything V2 Small (esta versión ONNX) | no disponible | Imagen `[1, 3, H, W]`, H y W múltiplos de 14 | Apache-2.0 | ONNX fp32 | HuggingFace (smile-forge) |
-| Depth Anything V2 Small (original) | no disponible | Igual, vía `infer_image` | Apache-2.0 | PyTorch (safetensors/checkpoint) | HuggingFace (depth-anything) |
-| Depth Anything V2 Base | no disponible | Igual | CC-BY-NC-4.0 | PyTorch | HuggingFace (depth-anything) |
-| Depth Anything V2 Large | no disponible | Igual | CC-BY-NC-4.0 | PyTorch | HuggingFace (depth-anything) |
+| Depth Anything V2 Small (esta versión ONNX) | no disponible | Imagen `[1, 3, H, W]`, H y W múltiplos de 14 | Apache-2.0 | ONNX fp32 | Hugging Face (smile-forge) |
+| Depth Anything V2 Small (original) | no disponible | Igual, vía `infer_image` | Apache-2.0 | PyTorch (safetensors/checkpoint) | Hugging Face (depth-anything) |
+| Depth Anything V2 Base | no disponible | Igual | CC-BY-NC-4.0 | PyTorch | Hugging Face (depth-anything) |
+| Depth Anything V2 Large | no disponible | Igual | CC-BY-NC-4.0 | PyTorch | Hugging Face (depth-anything) |
 
 No se dispone de datos de benchmarks para comparar el rendimiento numérico entre estas variantes en la información proporcionada. La diferencia clave entre ellas es la licencia: solo Small es Apache-2.0, mientras que Base, Large y Giant son CC-BY-NC-4.0 y no están incluidos en este repositorio.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks para comparar el rendimiento numérico entr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smile-forge/depth-anything-v2-small-onnx
+- Modelo en Hugging Face: https://huggingface.co/smile-forge/depth-anything-v2-small-onnx
 - Modelo base: https://huggingface.co/depth-anything/Depth-Anything-V2-Small
 - Repositorio original: https://github.com/DepthAnything/Depth-Anything-V2
 - Proyecto Nexaflow: https://github.com/smile-forge/nexaflow

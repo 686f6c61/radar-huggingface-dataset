@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rotster es un repositorio de modelo publicado en HuggingFace por el usuario Abubor. En la información disponible no se especifica qué tipo de modelo es, qué arquitectura utiliza, cuántos parámetros tiene ni qué tarea resuelve. La model card únicamente declara la licencia CreativeML OpenRAIL-M y no incluye descripción técnica, datos de entrenamiento, ejemplos de uso ni resultados de evaluación.
+Rotster es un repositorio de modelo publicado en Hugging Face por el usuario Abubor. En la información disponible no se especifica qué tipo de modelo es, qué arquitectura utiliza, cuántos parámetros tiene ni qué tarea resuelve. La model card únicamente declara la licencia CreativeML OpenRAIL-M y no incluye descripción técnica, datos de entrenamiento, ejemplos de uso ni resultados de evaluación.
 
 El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y las fechas de creación y actualización coinciden en el 28 de octubre de 2026. No hay pipeline declarado, idiomas indicados ni archivos de pesos descritos en la información proporcionada.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Rotster | no disponible | no disponible | CreativeML OpenRAIL-M | HuggingFace, 0 descargas |
+| Rotster | no disponible | no disponible | CreativeML OpenRAIL-M | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no identificadas |
 
 No se han identificado modelos comparables porque se desconoce la categoría, el tamaño y la tarea del modelo. No disponible.
@@ -87,5 +87,5 @@ No se han identificado modelos comparables porque se desconoce la categoría, el
 
 ## Enlaces
 
-- [HuggingFace: Abubor/Rotster](https://huggingface.co/Abubor/Rotster)
+- [Hugging Face: Abubor/Rotster](https://huggingface.co/Abubor/Rotster)
 - No se han encontrado papers, blogs, repositorios, demos ni documentación adicional en la información proporcionada.

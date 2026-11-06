@@ -74,7 +74,7 @@ No se dispone de información suficiente para una comparativa rigurosa con model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/taurusduan/SenseNova-U1.5-Comfy
+- Repositorio Hugging Face: https://huggingface.co/taurusduan/SenseNova-U1.5-Comfy
 - Nodo ComfyUI (GitHub): https://github.com/T8mars/Comfyui-SenseNova-U1.5-Wrapper-T8
 - Nodo en Comfy Registry: https://registry.comfy.org/nodes/sensenova-u15-t8
 - Repositorio oficial de SenseNova-U1 (OpenSenseNova): https://github.com/OpenSenseNova/SenseNova-U1

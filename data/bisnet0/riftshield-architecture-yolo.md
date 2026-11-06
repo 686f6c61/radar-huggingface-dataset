@@ -77,7 +77,7 @@ No se han publicado comparaciones con otros detectores ni resultados por clase e
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RiftShield architecture diagram detector (YOLOv8n) | Detector de objetos especializado en diagramas | no disponible (variante nano) | no aplica | AGPL-3.0 | Pesos `.pt` en HuggingFace |
+| RiftShield architecture diagram detector (YOLOv8n) | Detector de objetos especializado en diagramas | no disponible (variante nano) | no aplica | AGPL-3.0 | Pesos `.pt` en Hugging Face |
 | YOLOv8n estandar (Ultralytics) | Detector de objetos generico (COCO) | no disponible (variante nano) | no aplica | AGPL-3.0 | Pesos publicos en Ultralytics |
 | YOLOv8s / YOLOv8m (Ultralytics) | Detectores genericos de mayor capacidad | no disponible | no aplica | AGPL-3.0 | Pesos publicos en Ultralytics |
 
@@ -97,7 +97,7 @@ La comparacion con modelos de lenguaje no procede: se trata de un detector de vi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bisnet0/riftshield-architecture-yolo
+- Modelo en Hugging Face: https://huggingface.co/bisnet0/riftshield-architecture-yolo
 - Dataset complementario: https://huggingface.co/datasets/bisnet0/riftshield-architecture-diagrams
 - Codigo del proyecto RiftShield: https://github.com/bisnet0/RiftShield
 - Ultralytics (libreria y pesos base YOLOv8): https://github.com/ultralytics/ultralytics

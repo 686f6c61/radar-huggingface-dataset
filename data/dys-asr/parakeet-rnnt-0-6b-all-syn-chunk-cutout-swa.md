@@ -82,9 +82,9 @@ Ningún snapshot individual superó al checkpoint de partida: el rango de los ci
 
 | Modelo | Parametros | Contexto/audio | CER (dev reservado) | WER (dev reservado) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout-swa` (este) | 618.314.241 | Registros de 0,5 a 45 s en entrenamiento | 5,964 % | 9,706 % | `speech-accessibility-project-dua` | HuggingFace, safetensors, `transformers >= 5.9` |
-| `dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout` (checkpoint de partida) | No disponible en la informacion (misma familia, ~0,6 B) | No disponible | 6,121 % | 9,939 % | No disponible en la informacion | HuggingFace |
-| `extraordinarylab/parakeet-unified-en-0.6b` (modelo base) | No disponible en la informacion (denominado 0,6 B) | No disponible | No disponible | No disponible | No disponible en la informacion | HuggingFace |
+| `dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout-swa` (este) | 618.314.241 | Registros de 0,5 a 45 s en entrenamiento | 5,964 % | 9,706 % | `speech-accessibility-project-dua` | Hugging Face, safetensors, `transformers >= 5.9` |
+| `dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout` (checkpoint de partida) | No disponible en la informacion (misma familia, ~0,6 B) | No disponible | 6,121 % | 9,939 % | No disponible en la informacion | Hugging Face |
+| `extraordinarylab/parakeet-unified-en-0.6b` (modelo base) | No disponible en la informacion (denominado 0,6 B) | No disponible | No disponible | No disponible | No disponible en la informacion | Hugging Face |
 
 No se dispone de datos verificados de otros sistemas ASR comparables (por ejemplo, variantes de la familia Parakeet de NVIDIA o modelos Whisper) que permitan una comparación de rendimiento en este dominio; la información proporcionada solo cubre los tres checkpoints anteriores.
 
@@ -105,7 +105,7 @@ No se dispone de datos verificados de otros sistemas ASR comparables (por ejempl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout-swa
+- Modelo en Hugging Face: https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout-swa
 - Checkpoint de partida: https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout
 - Modelo base: https://huggingface.co/extraordinarylab/parakeet-unified-en-0.6b
 - Corpus SAPC-1: https://huggingface.co/datasets/dys-asr/sapc1

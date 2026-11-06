@@ -4,7 +4,7 @@
 
 El modelo Quiho/Flux.2_Klein-9B_Turbo-Uncensored es una variante modificada del modelo de generacion de imagenes FLUX.2 [klein] de 9B parametros desarrollado por Black Forest Labs. La familia FLUX.2 [klein] unifica generacion y edicion de imagenes en una arquitectura compacta, con inferencia de extremo a extremo en menos de un segundo, y esta disenada para aplicaciones que requieren generacion en tiempo real. Esta variante, publicada por el usuario Quiho bajo licencia MIT, incorpora en su nombre las etiquetas "Turbo" y "Uncensored", lo que sugiere una optimizacion adicional para velocidad y la eliminacion de filtros de seguridad del modelo base, aunque no hay documentacion que confirme estas modificaciones.
 
-El repositorio tiene un tamano de 27,2 GB y fue creado en agosto de 2026. La model card original esta practicamente vacia, limitandose a declarar la licencia MIT. El modelo cuenta con 0 descargas y 0 likes en HuggingFace, por lo que no ha sido validado por la comunidad. Se trata de un modelo de difusion para imagenes, no de un LLM, y su relevancia radica en la combinacion de velocidad (inferencia sub-segundo) y la ausencia de restricciones de contenido.
+El repositorio tiene un tamano de 27,2 GB y fue creado en agosto de 2026. La model card original esta practicamente vacia, limitandose a declarar la licencia MIT. El modelo cuenta con 0 descargas y 0 likes en Hugging Face, por lo que no ha sido validado por la comunidad. Se trata de un modelo de difusion para imagenes, no de un LLM, y su relevancia radica en la combinacion de velocidad (inferencia sub-segundo) y la ausencia de restricciones de contenido.
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fa
 - VRAM estimada para inferencia: con 9B parametros, se estima aproximadamente 18 GB en precision bf16/fp16, 9 GB en fp8 y 4,5 GB en fp4. Hay que anadir memoria para el VAE y las activaciones, por lo que se recomienda un margen adicional de 2-4 GB.
 - GPU recomendadas: para fp8, una GPU con al menos 12 GB de VRAM (RTX 4070 Ti, RTX 4080, RTX 4090) es suficiente. Para fp4, una GPU con 8 GB (RTX 3060, RTX 4060) podria ser viable.
 - El modelo cabe en GPUs de consumo de gama alta (RTX 4090 con 24 GB) en precision fp8 o inferior. En precision bf16 completa, se recomienda una GPU profesional (A100, H100) o una RTX 4090 con gestion cuidadosa de memoria.
-- Opciones de despliegue: no se especifican en la informacion disponible. Para modelos de difusion, herramientas habituales incluyen ComfyUI, Diffusers de HuggingFace, TensorRT o los despliegues propios de Black Forest Labs.
+- Opciones de despliegue: no se especifican en la informacion disponible. Para modelos de difusion, herramientas habituales incluyen ComfyUI, Diffusers de Hugging Face, TensorRT o los despliegues propios de Black Forest Labs.
 - Latencia: la familia FLUX.2 [klein] promete inferencia de extremo a extremo en menos de un segundo, aunque esto dependera del hardware, la cuantizacion y el numero de pasos de muestreo configurados.
 
 ## Comparativa con modelos similares
@@ -68,14 +68,14 @@ Nota: la comparativa se basa en informacion limitada. No se dispone de datos de 
 
 - La variante "Uncensored" elimina presumiblemente los filtros de seguridad del modelo base, lo que puede permitir la generacion de contenido inapropiado, ofensivo o ilegal. El usuario asume toda la responsabilidad legal y etica.
 - No hay documentacion sobre las modificaciones especificas aplicadas por el autor, lo que dificulta evaluar la calidad, seguridad y fiabilidad del modelo.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido probado ni validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido probado ni validado por la comunidad.
 - No se dispone de informacion sobre sesgos, alucinaciones visuales o limitaciones de idioma en los prompts.
 - La licencia MIT permite uso comercial, pero al ser una variante no oficial, no hay garantias de soporte ni mantenimiento.
 - La fecha de creacion (agosto de 2026) y la ausencia de model card sugieren que podria tratarse de una version experimental o no verificada.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Quiho/Flux.2_Klein-9B_Turbo-Uncensored
+- Repositorio Hugging Face: https://huggingface.co/Quiho/Flux.2_Klein-9B_Turbo-Uncensored
 - Modelo original de Black Forest Labs (fp8): https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8
 - Pagina de FLUX.2 Klein en Civitai: https://civitai.com/models/2322332/flux2-klein
 - Pagina de FLUX.2 Klein fp8 en Civitai: https://civitai.com/models/2363950/flux2-klein-9b-fp8

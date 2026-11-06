@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el autor hsrthgser en un repositorio de HuggingFace identificado como de prueba (TestRepo). Según su model card, el modelo ha experimentado una actualización significativa que mejora su profundidad de razonamiento y capacidad de inferencia, gracias a un mayor uso de recursos computacionales y a mecanismos de optimización algorítmica durante el post-entrenamiento. La model card reporta mejoras notables en tareas de matemáticas, programación y lógica general, con un rendimiento que se acerca al de otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje presentado por el autor hsrthgser en un repositorio de Hugging Face identificado como de prueba (TestRepo). Según su model card, el modelo ha experimentado una actualización significativa que mejora su profundidad de razonamiento y capacidad de inferencia, gracias a un mayor uso de recursos computacionales y a mecanismos de optimización algorítmica durante el post-entrenamiento. La model card reporta mejoras notables en tareas de matemáticas, programación y lógica general, con un rendimiento que se acerca al de otros modelos líderes.
 
 El repositorio no contiene pesos ni archivos de modelo (tamaño 0.0 GB), por lo que no se dispone de información técnica detallada sobre arquitectura, número de parámetros o configuración de entrenamiento. La model card menciona que el modelo soporta system prompts, function calling y una reducción de la tasa de alucinación, además de ofrecer plantillas para carga de archivos y búsqueda web. A pesar de la falta de datos concretos, la ficha resume lo que se puede extraer de la documentación publicada.
 
@@ -87,4 +87,4 @@ No se dispone de información suficiente para comparar con modelos reales existe
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/hsrthgser/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/hsrthgser/MyAwesomeModel-TestRepo

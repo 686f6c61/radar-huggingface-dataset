@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos multimodales
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/Shiftedx/ornith-1.5-35b-a3b-attention8-bf16recurrence-vision-mtplx
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/Shiftedx/ornith-1.5-35b-a3b-attention8-bf16recurrence-vision-mtplx
 - Modelo base Ornith-1.5-35B-A3B: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Página oficial de Ornith AI sobre Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Perfil de BenchLM del modelo original: https://benchlm.ai/models/ornith-1-5-35b-a3b

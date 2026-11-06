@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PathogenAgentAI-BioGPT-LoRA | ~347 M (base) + adaptador LoRA | 1.024 tokens | Adaptador PEFT sobre modelo biomedico | MIT | HuggingFace |
-| microsoft/biogpt (base) | ~347 M | 1.024 tokens | Transformer decoder-only biomedico | MIT | HuggingFace |
-| BioMistral-7B | ~7 B | 8.192 tokens | LLM biomedico (base Mistral) | Apache 2.0 | HuggingFace |
-| Meditron-7B | ~7 B | 4.096 tokens | LLM medico (base Llama 2) | Licencia Llama 2 | HuggingFace |
+| PathogenAgentAI-BioGPT-LoRA | ~347 M (base) + adaptador LoRA | 1.024 tokens | Adaptador PEFT sobre modelo biomedico | MIT | Hugging Face |
+| microsoft/biogpt (base) | ~347 M | 1.024 tokens | Transformer decoder-only biomedico | MIT | Hugging Face |
+| BioMistral-7B | ~7 B | 8.192 tokens | LLM biomedico (base Mistral) | Apache 2.0 | Hugging Face |
+| Meditron-7B | ~7 B | 4.096 tokens | LLM medico (base Llama 2) | Licencia Llama 2 | Hugging Face |
 
 Nota: los datos de los modelos comparables externos se han tomado de sus model cards publicas y deben verificarse antes de citarlos. La comparacion directa no es homogenea, ya que este repositorio es un adaptador, no un modelo completo, y no publica metricas de evaluacion que permitan contrastar rendimiento.
 
@@ -87,7 +87,7 @@ Nota: los datos de los modelos comparables externos se han tomado de sus model c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sepideh2027/PathogenAgentAI-BioGPT-LoRA
+- Modelo en Hugging Face: https://huggingface.co/Sepideh2027/PathogenAgentAI-BioGPT-LoRA
 - Modelo base: https://huggingface.co/microsoft/biogpt
 - Modelo ajustado relacionado: Sepideh2027/biogpt-clinvar-finetuned (referenciado en la model card, URL directa no disponible)
 - Dataset de instrucciones relacionado: Sepideh2027/Agent (referenciado en la model card, URL directa no disponible)

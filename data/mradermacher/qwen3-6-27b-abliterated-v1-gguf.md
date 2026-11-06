@@ -19,7 +19,7 @@ El modelo base Qwen3.6-27B es un transformer de 27 000 millones de parámetros c
 | Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
-No se dispone de información oficial sobre la arquitectura interna del modelo base Qwen3.6-27B en los materiales proporcionados. Se sabe que es un modelo de 27 000 millones de parámetros, probablemente basado en una arquitectura transformer densa (no MoE), pero no se confirma. El proceso de abliteración aplicado por `wangzhang` consiste en la modificación de los pesos para suprimir las respuestas de rechazo, una técnica que no requiere entrenamiento adicional. El repositorio de `mradermacher` se limita a convertir los pesos originales (formato HuggingFace) a cuantizaciones GGUF mediante scripts estáticos, sin modificar el comportamiento del modelo más allá de la pérdida de precisión inherente a la cuantización.
+No se dispone de información oficial sobre la arquitectura interna del modelo base Qwen3.6-27B en los materiales proporcionados. Se sabe que es un modelo de 27 000 millones de parámetros, probablemente basado en una arquitectura transformer densa (no MoE), pero no se confirma. El proceso de abliteración aplicado por `wangzhang` consiste en la modificación de los pesos para suprimir las respuestas de rechazo, una técnica que no requiere entrenamiento adicional. El repositorio de `mradermacher` se limita a convertir los pesos originales (formato Hugging Face) a cuantizaciones GGUF mediante scripts estáticos, sin modificar el comportamiento del modelo más allá de la pérdida de precisión inherente a la cuantización.
 
 Los datos de entrenamiento del modelo original (número de tokens, composición del dataset, uso de RLHF/DPO) no se han proporcionado en la información disponible. Tampoco hay detalles sobre innovaciones técnicas específicas como atención lineal, decodificación especulativa u otras mejoras.
 
@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 - No se proporcionan instrucciones de uso específicas ni ejemplos de código en la model card.
 
 ## Enlaces
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/Qwen3.6-27B-abliterated-v1-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/Qwen3.6-27B-abliterated-v1-GGUF
 - Modelo base abliterado (fuente): https://huggingface.co/wangzhang/Qwen3.6-27B-abliterated-v1
 - Modelo original Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
 - Repositorio GGUF de una variante similar (Huihui): https://huggingface.co/mradermacher/Huihui-Qwen3.6-27B-abliterated-GGUF

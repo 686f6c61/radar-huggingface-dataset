@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 es un ajuste fino supervisado (SFT) del modelo noruego goldfish-models/nor_latn_10mb, publicado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros (aproximadamente 39 millones), lo que lo situa en la categoria de modelos pequenos orientados a investigacion y experimentacion more than a despliegue en produccion. El repositorio ocupa 0,1 GB y se distribuye en formato safetensors.
+nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 es un ajuste fino supervisado (SFT) del modelo noruego goldfish-models/nor_latn_10mb, publicado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros (aproximadamente 39 millones), lo que lo situa en la categoria de modelos pequenos orientados a investigacion y experimentacion more than a despliegue en produccion. El repositorio ocupa 0,1 GB y se distribuye en formato safetensors.
 
 El modelo forma parte de una familia de experimentos sistematicos: el mismo autor publica variantes equivalentes para otros idiomas (eng, swe) y la nomenclatura sugiere barridos de hiperparametros y semillas (seed10, seed455, seed3407) sobre un corpus empaquetado de 100 MB. El nombre del checkpoint indica el idioma (nor, noruego en escritura latina), el tamano del corpus base del modelo Goldfish (10 MB), el esquema de datos ("packed", empaquetado) y la semilla utilizada.
 
@@ -45,7 +45,7 @@ No se especifica en la informacion disponible el numero de tokens de entrenamien
 - Investigacion sobre tokenizacion: dado que el proyecto de entrenamiento se asocia al estudio de nuevos tokenizadores, el checkpoint sirve como punto de comparacion entre vocabularios y su impacto en la calidad de generacion.
 - Generacion de texto noruego a nivel de frase o parrafo corto: util para prototipos de completado de texto donde no se requiere coherencia de largo alcance.
 - Pruebas de integracion de infraestructura: por su tamano minimo, permite validar pipelines de transformers, TGI o endpoints compatibles sin coste computacional relevante.
-- Educacion y divulgacion: sirve para ilustrar de forma tangible que es un ajuste fino SFT, el formato safetensors o el uso de `pipeline` de HuggingFace en un caso real y ligero.
+- Educacion y divulgacion: sirve para ilustrar de forma tangible que es un ajuste fino SFT, el formato safetensors o el uso de `pipeline` de Hugging Face en un caso real y ligero.
 - Generacion de datos sinteticos de bajo coste: puede emplearse para producir borradores de texto noruego que despues se filtren o se usen como material auxiliar en experimentos de destilacion o aumento de datos.
 - Pruebas de regresion en despliegues: al ser tan pequeno, es adecuado como modelo de humo (smoke test) para verificar que un servidor de inferencia arranca, responde y aplica correctamente la plantilla de chat.
 - Analisis de sesgos y comportamientos: util como sujeto de estudio para observar como un corpus de 10-100 MB y un ajuste SFT moldean el estilo, el vocabulario y los sesgos del texto generado.
@@ -66,11 +66,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | 39,09 M | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT sobre Goldfish noruego |
-| goldfish-models/nor_latn_10mb | no disponible | no disponible | no disponible | HuggingFace (modelo base) | Modelo monolingue noruego entrenado con 10 MB; sin ajuste por instrucciones |
-| francesca9805/eng-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | no disponible | no disponible | no disponible | HuggingFace y FriendliAI | Variante en ingles del mismo experimento |
-| francesca9805/swe-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | no disponible | no disponible | no disponible | HuggingFace | Variante en sueco del mismo experimento |
-| fpadovani/swa-latn-10mb-ppt-Dp-100mb_seed10 | no disponible | no disponible | no disponible | HuggingFace | Variante relacionada del mismo grupo de investigacion (suajili) |
+| francesca9805/nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | 39,09 M | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT sobre Goldfish noruego |
+| goldfish-models/nor_latn_10mb | no disponible | no disponible | no disponible | Hugging Face (modelo base) | Modelo monolingue noruego entrenado con 10 MB; sin ajuste por instrucciones |
+| francesca9805/eng-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | no disponible | no disponible | no disponible | Hugging Face y FriendliAI | Variante en ingles del mismo experimento |
+| francesca9805/swe-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | no disponible | no disponible | no disponible | Hugging Face | Variante en sueco del mismo experimento |
+| fpadovani/swa-latn-10mb-ppt-Dp-100mb_seed10 | no disponible | no disponible | no disponible | Hugging Face | Variante relacionada del mismo grupo de investigacion (suajili) |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos; la comparacion se limita a parametros, procedencia y disponibilidad.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos; la compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/nor_latn_10mb
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/c84mc8us
 - Repositorio de TRL: https://github.com/huggingface/trl

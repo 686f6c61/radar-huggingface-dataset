@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Homiebear/HatsuneMiku_210e_19950s es un repositorio de pesos publicado en HuggingFace por el usuario Homiebear bajo licencia openrail. La model card asociada no contiene más que la declaración de licencia: no se documentan arquitectura, tamaño, datos de entrenamiento, idiomas ni tarea objetivo. Se trata, por tanto, de un checkpoint sin ficha técnica publicada y con cero descargas y cero "likes" en el momento de la consulta, lo que indica una visibilidad prácticamente nula dentro del ecosistema.
+Homiebear/HatsuneMiku_210e_19950s es un repositorio de pesos publicado en Hugging Face por el usuario Homiebear bajo licencia openrail. La model card asociada no contiene más que la declaración de licencia: no se documentan arquitectura, tamaño, datos de entrenamiento, idiomas ni tarea objetivo. Se trata, por tanto, de un checkpoint sin ficha técnica publicada y con cero descargas y cero "likes" en el momento de la consulta, lo que indica una visibilidad prácticamente nula dentro del ecosistema.
 
 El único dato objetivo disponible es el tamaño del repositorio, en torno a 0,6 GB, y las fechas de creación y actualización (6 de octubre de 2026, con unas once horas de diferencia entre ambas), además del identificador del modelo. El sufijo "210e_19950s" es compatible con una convención habitual de nombrado de checkpoints de entrenamiento (época 210, paso 19950), pero el autor no lo confirma en ningún momento, por lo que debe tratarse como una hipótesis y no como un dato verificado.
 
@@ -82,7 +82,7 @@ No disponible. La ausencia de datos sobre arquitectura, parámetros, contexto y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Homiebear/HatsuneMiku_210e_19950s
+- Modelo en Hugging Face: https://huggingface.co/Homiebear/HatsuneMiku_210e_19950s
 - Perfil del autor: https://huggingface.co/Homiebear
 - Texto de la licencia OpenRAIL: https://huggingface.co/spaces/CompVis/stable-diffusion-license (referencia habitual de la familia OpenRAIL; no confirmada como la versión exacta aplicada por el autor)
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la información proporcionada.

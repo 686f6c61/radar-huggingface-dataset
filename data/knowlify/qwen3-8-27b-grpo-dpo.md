@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Knowlify/qwen3.8-27b-grpo-dpo | 26.9B | 256K | Generación de código Remotion | Apache-2.0 | HuggingFace |
-| Qwen3.8-27B (base) | 27B | 256K | Multimodal general, coding, agentes | Apache-2.0 | HuggingFace, Groq, QwenCloud |
-| Qwen3.8-2.4T-A95B (MoE) | 2.4T total, 95B activos | 256K | Multimodal general, mayor capacidad | Apache-2.0 | HuggingFace |
+| Knowlify/qwen3.8-27b-grpo-dpo | 26.9B | 256K | Generación de código Remotion | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B (base) | 27B | 256K | Multimodal general, coding, agentes | Apache-2.0 | Hugging Face, Groq, QwenCloud |
+| Qwen3.8-2.4T-A95B (MoE) | 2.4T total, 95B activos | 256K | Multimodal general, mayor capacidad | Apache-2.0 | Hugging Face |
 
 El fine-tune de Knowlify se diferencia del base en su especialización para Remotion, pero no hay datos de rendimiento comparativo publicados. Frente a otros modelos de generación de código (p.ej., DeepSeek-Coder, CodeLlama), no se dispone de benchmarks que permitan una comparación directa.
 
@@ -81,7 +81,7 @@ El fine-tune de Knowlify se diferencia del base en su especialización para Remo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Knowlify/qwen3.8-27b-grpo-dpo
+- Modelo en Hugging Face: https://huggingface.co/Knowlify/qwen3.8-27b-grpo-dpo
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Documentación de Unsloth para Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

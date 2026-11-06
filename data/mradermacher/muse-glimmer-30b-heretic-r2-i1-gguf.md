@@ -78,7 +78,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Muse-Glimmer-30B-heretic-r2-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Muse-Glimmer-30B-heretic-r2-i1-GGUF
 - Repositorio estático (sin imatrix): https://huggingface.co/mradermacher/Muse-Glimmer-30B-heretic-r2-GGUF
 - Modelo base (variante heretic): https://huggingface.co/gjtgjt/Muse-Glimmer-30B-heretic-r2
 - Página oficial de Muse Glimmer en Meta: https://developer.meta.com/ai/models/muse-glimmer/

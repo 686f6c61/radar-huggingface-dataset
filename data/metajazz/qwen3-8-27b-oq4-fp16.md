@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-oQ4-fp16 (este) | 27B nominal, 4.8B en archivo | no disponible | 4-bit MLX | no disponible | HuggingFace |
-| Qwen3.8-27B-oQ6-fp16-mtp | 27B nominal | no disponible | 6-bit MLX | no disponible | HuggingFace |
-| Qwen3.8-27B (original) | 27B | no disponible | sin cuantizar | open-weight | HuggingFace / Qwen |
+| Qwen3.8-27B-oQ4-fp16 (este) | 27B nominal, 4.8B en archivo | no disponible | 4-bit MLX | no disponible | Hugging Face |
+| Qwen3.8-27B-oQ6-fp16-mtp | 27B nominal | no disponible | 6-bit MLX | no disponible | Hugging Face |
+| Qwen3.8-27B (original) | 27B | no disponible | sin cuantizar | open-weight | Hugging Face / Qwen |
 
 La variante oQ6-fp16-mtp, tambien de metajazz, usa 6 bits y posiblemente incorpore multi-token prediction (mtp), ofreciendo mayor fidelidad a costa de mayor tamano. El modelo original sin cuantizar es la referencia de calidad, pero requiere mas recursos.
 
@@ -74,7 +74,7 @@ La variante oQ6-fp16-mtp, tambien de metajazz, usa 6 bits y posiblemente incorpo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/metajazz/Qwen3.8-27B-oQ4-fp16
+- Repositorio Hugging Face: https://huggingface.co/metajazz/Qwen3.8-27B-oQ4-fp16
 - Repositorio de oMLX (herramienta de cuantizacion): https://github.com/jundot/omlx
 - Blog de AMD sobre Qwen3.8 27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Ficha de Qwen3.8 27B en Jetson AI Lab: https://www.jetson-ai-lab.com/models/qwen3-8-27b/

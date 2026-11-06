@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`m1b/kairos_rmbenchpp_press_button_update_16v3_p2p3` es un checkpoint de investigación publicado en HuggingFace por el usuario `m1b`, asociado a la rama de trabajo `research-marina/v16.3_memory_tokens_speed_opt_rmbenchpp_press_button` (commit `9b078aff4a5dc44f6e3cd31e57ae7a0b2e48dff2`). No es un modelo de lenguaje: por los artefactos que acompanan al repositorio (dataset `rmbench-plus-plus-robodojo-press-button-update`, espacio de acciones `robodojo_dual_x5_absolute_joint_14d` y ficheros `normalization_stats.json`), se trata de una política de control robótico entrenada sobre el benchmark RM-Bench++ / RoboDojo para la tarea de pulsar un botón.
+`m1b/kairos_rmbenchpp_press_button_update_16v3_p2p3` es un checkpoint de investigación publicado en Hugging Face por el usuario `m1b`, asociado a la rama de trabajo `research-marina/v16.3_memory_tokens_speed_opt_rmbenchpp_press_button` (commit `9b078aff4a5dc44f6e3cd31e57ae7a0b2e48dff2`). No es un modelo de lenguaje: por los artefactos que acompanan al repositorio (dataset `rmbench-plus-plus-robodojo-press-button-update`, espacio de acciones `robodojo_dual_x5_absolute_joint_14d` y ficheros `normalization_stats.json`), se trata de una política de control robótico entrenada sobre el benchmark RM-Bench++ / RoboDojo para la tarea de pulsar un botón.
 
 El repositorio contiene dos variantes de pesos, `p2/` y `p3/`. La variante `p2` se entrenó durante 2.000 pasos de episodio completo con "memory tokens" adaptativos (prefijo de 128) partiendo del checkpoint `step_020000.pt` de la ejecución `rmbenchpp_v021_press-button-update_sgres_1x8_20k_20260923_r3`, sobre 8 GPU A800 y con una tasa de aprendizaje de 1e-4. La variante `p3` se obtuvo con 1.000 pasos adicionales de entrenamiento exclusivamente de memoria a partir de `p2/step_002000.pt`.
 
@@ -78,7 +78,7 @@ No disponible. La información proporcionada no identifica políticas comparable
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `m1b/kairos_rmbenchpp_press_button_update_16v3_p2p3` | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| `m1b/kairos_rmbenchpp_press_button_update_16v3_p2p3` | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,6 +96,6 @@ No disponible. La información proporcionada no identifica políticas comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/m1b/kairos_rmbenchpp_press_button_update_16v3_p2p3
+- Hugging Face: https://huggingface.co/m1b/kairos_rmbenchpp_press_button_update_16v3_p2p3
 - Paper, blog, repositorio de código, demo o dataset público: no disponible en la información proporcionada.
 - No se han encontrado enlaces relevantes en la búsqueda web; los resultados devueltos eran contenido no relacionado con el modelo y se han descartado.

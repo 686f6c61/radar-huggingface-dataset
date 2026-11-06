@@ -6,7 +6,7 @@ El repositorio `grigoryev/paper_010079947_neural_architecture_search` no contien
 
 Al tratarse de un artefacto textual, no existen parámetros, pesos ni arquitecturas de red neuronal que evaluar. Su relevancia reside en su contenido, que aborda el estado del arte de NAS, una técnica de AutoML que automatiza el diseño de arquitecturas de redes profundas. Sin embargo, no se dispone de información sobre el contenido concreto del paper (autores, afiliación, fecha de publicación original, resultados numéricos, etc.), más allá de los metadatos del repositorio.
 
-La información disponible en HuggingFace es mínima: no se especifican idiomas, pipeline ni descargas. Los resultados de búsqueda web devuelven artículos generales sobre NAS, pero ninguno coincide con este repositorio concreto. Por tanto, esta ficha se limita a describir el artefacto tal como se presenta, sin extrapolar datos técnicos que no están confirmados.
+La información disponible en Hugging Face es mínima: no se especifican idiomas, pipeline ni descargas. Los resultados de búsqueda web devuelven artículos generales sobre NAS, pero ninguno coincide con este repositorio concreto. Por tanto, esta ficha se limita a describir el artefacto tal como se presenta, sin extrapolar datos técnicos que no están confirmados.
 
 ## Especificaciones técnicas
 
@@ -36,7 +36,7 @@ No procede. Este repositorio no contiene un modelo entrenado ni una arquitectura
 
 - Referencia para investigadores que estudian técnicas de NAS: el documento puede servir como material introductorio o de repaso sobre los conceptos clave de la búsqueda de arquitecturas neuronales.
 - Base para análisis bibliográfico: dado que el repositorio es un texto plano, se puede procesar automáticamente para extraer citas, referencias o estructurar el contenido mediante herramientas de NLP.
-- Ejemplo de formato de publicación académica en Markdown: útil para autores que quieran publicar sus papers en plataformas como HuggingFace con licencia MIT.
+- Ejemplo de formato de publicación académica en Markdown: útil para autores que quieran publicar sus papers en plataformas como Hugging Face con licencia MIT.
 - Revisión de estilo académico: el texto está etiquetado como "theoretical-rigorous" y "compact", lo que lo hace un ejemplo de redacción académica densa.
 - Enseñanza de AutoML: el contenido puede usarse en cursos de aprendizaje automático para ilustrar la importancia de NAS en el diseño de arquitecturas.
 - Repositorio para experimentos de minería de textos: el archivo `.md` puede servir como corpus para tareas de procesamiento de lenguaje natural, como análisis de sentimiento, resumen automático o extracción de información.
@@ -64,9 +64,9 @@ No procede. Este repositorio no es un modelo de IA, sino un documento académico
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [grigoryev/paper_010079947_neural_architecture_search](https://huggingface.co/grigoryev/paper_010079947_neural_architecture_search)
+- Repositorio en Hugging Face: [grigoryev/paper_010079947_neural_architecture_search](https://huggingface.co/grigoryev/paper_010079947_neural_architecture_search)
 - Referencia general sobre NAS (no específica del repositorio): [Neural Architecture Search: Insights from 1000 Papers](https://arxiv.org/abs/2301.08727)
-- Página del paper en HuggingFace (discusión): [papers/2301.08727](https://huggingface.co/papers/2301.08727)
+- Página del paper en Hugging Face (discusión): [papers/2301.08727](https://huggingface.co/papers/2301.08727)
 - Revisión sistemática sobre NAS (Springer): [Systematic review on neural architecture search](https://link.springer.com/article/10.1007/s10462-024-11058-w)
 
 Nota: no se ha encontrado ningún enlace adicional directamente relacionado con el contenido del archivo del repositorio.

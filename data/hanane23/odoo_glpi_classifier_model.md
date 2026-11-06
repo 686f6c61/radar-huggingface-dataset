@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Hanane23/Odoo_glpi_classifier_model es un modelo alojado en HuggingFace por el usuario Hanane23 y publicado bajo licencia MIT. El repositorio ocupa 0,4 GB y contiene pesos en formato safetensors, según las etiquetas declaradas. La model card pública no incluye más contenido que la línea de licencia, por lo que no hay información sobre arquitectura, datos de entrenamiento, idiomas, pipeline ni métricas de evaluación.
+Hanane23/Odoo_glpi_classifier_model es un modelo alojado en Hugging Face por el usuario Hanane23 y publicado bajo licencia MIT. El repositorio ocupa 0,4 GB y contiene pesos en formato safetensors, según las etiquetas declaradas. La model card pública no incluye más contenido que la línea de licencia, por lo que no hay información sobre arquitectura, datos de entrenamiento, idiomas, pipeline ni métricas de evaluación.
 
-El identificador del repositorio apunta a un clasificador de texto relacionado con Odoo y GLPI, dos plataformas de gestión empresarial y de servicio (ERP e ITSM respectivamente). Se trata, sin embargo, de una inferencia a partir del nombre y no de un dato confirmado en la documentación disponible: no se especifica qué clasifica, con qué etiquetas ni sobre qué corpus. Tampoco se declara un pipeline de HuggingFace (text-classification, zero-shot-classification u otro), lo que impide confirmar la tarea concreta.
+El identificador del repositorio apunta a un clasificador de texto relacionado con Odoo y GLPI, dos plataformas de gestión empresarial y de servicio (ERP e ITSM respectivamente). Se trata, sin embargo, de una inferencia a partir del nombre y no de un dato confirmado en la documentación disponible: no se especifica qué clasifica, con qué etiquetas ni sobre qué corpus. Tampoco se declara un pipeline de Hugging Face (text-classification, zero-shot-classification u otro), lo que impide confirmar la tarea concreta.
 
 Su relevancia actual es muy limitada como referencia técnica. Con cero descargas y cero valoraciones, sin benchmarks y sin documentación de uso, no es posible evaluar su calidad ni recomendarlo para producción. Solo resulta utilizable si el propio autor amplía la información, o si un tercero inspecciona los pesos y el tokenizador directamente desde el repositorio.
 
@@ -24,7 +24,7 @@ Su relevancia actual es muy limitada como referencia técnica. Con cero descarga
 | Tamaño del repositorio | 0,4 GB |
 | Descargas | 0 |
 | Valoraciones (likes) | 0 |
-| Fecha de creación en HuggingFace | 2026-09-20 |
+| Fecha de creación en Hugging Face | 2026-09-20 |
 | Última actualización | 2026-09-20 |
 
 ## Arquitectura y entrenamiento
@@ -67,7 +67,7 @@ Todas las cifras de esta sección son estimaciones derivadas del tamaño del rep
 - VRAM estimada para pesos, si el modelo tuviera ~100-200 M de parámetros: en torno a 0,4-0,8 GB en fp32, 0,2-0,4 GB en fp16 y 0,1-0,2 GB en int8. A ello hay que sumar el consumo del runtime, los estados de activación y el batch.
 - Cabe con holgura en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, así como en GPUs de datacenter (A100, H100) donde el modelo estaría infrautilizado.
 - Inferencia en CPU: viable para un modelo de este tamaño, con latencia de decenas de milisegundos por secuencia en un servidor moderno, siempre que el batch y la longitud de secuencia sean moderados. No hay mediciones publicadas.
-- Opciones de despliegue: al no haber confirmación de arquitectura, no se pueden recomendar herramientas concretas. Si se trata de un transformer de HuggingFace, las vías razonables serían la pipeline de transformers, exportación a ONNX Runtime para CPU, TorchServe o FastAPI para servicio HTTP, y Hugging Face Inference Endpoints para despliegue gestionado. vLLM, TGI o llama.cpp están pensados para generación de texto y probablemente no aplicarían a un clasificador.
+- Opciones de despliegue: al no haber confirmación de arquitectura, no se pueden recomendar herramientas concretas. Si se trata de un transformer de Hugging Face, las vías razonables serían la pipeline de transformers, exportación a ONNX Runtime para CPU, TorchServe o FastAPI para servicio HTTP, y Hugging Face Inference Endpoints para despliegue gestionado. vLLM, TGI o llama.cpp están pensados para generación de texto y probablemente no aplicarían a un clasificador.
 - Throughput y latencia medidos: no disponible.
 
 ## Comparativa con modelos similares
@@ -89,5 +89,5 @@ No disponible. La información proporcionada no incluye métricas, arquitectura 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hanane23/Odoo_glpi_classifier_model
+- Modelo en Hugging Face: https://huggingface.co/Hanane23/Odoo_glpi_classifier_model
 - Búsqueda web: el único resultado devuelto fue la página genérica de LinkedIn (https://www.linkedin.com/), sin relación con el modelo ni información aprovechable. No se han localizado papers, blogs, repositorios de código ni demos asociados a este modelo.

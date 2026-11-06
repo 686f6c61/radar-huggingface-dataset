@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ktobik/huihui-glm53-flash-abliterated-q4kxl-public
+- Repositorio en Hugging Face: https://huggingface.co/ktobik/huihui-glm53-flash-abliterated-q4kxl-public
 - Distribuidor original de la cuantización: https://huggingface.co/huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada (los resultados de la búsqueda web no contenían enlaces relevantes al modelo).

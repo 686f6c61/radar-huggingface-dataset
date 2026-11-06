@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks de tarea (MMLU, HumanEval, GSM8K, M
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `axteam/Qwen3.5-2B-NVFP4A16` (este) | 2,21 B | NVFP4A16 (W4A16, FP4), ~2,9 GB | no disponible | Apache-2.0 | HuggingFace; requiere vLLM y GPU Blackwell |
-| `Qwen/Qwen3.5-2B` (original) | 2,21 B | BF16 (sin cuantizar), ~4,4 GB teoricos | no disponible | Apache-2.0 | HuggingFace; referencia de calidad |
-| `axteam/Qwen3.5-2B-NVFP4` | 2,21 B | NVFP4 (variante del mismo autor) | no disponible | Apache-2.0 | HuggingFace; detalles de esquema no verificados |
+| `axteam/Qwen3.5-2B-NVFP4A16` (este) | 2,21 B | NVFP4A16 (W4A16, FP4), ~2,9 GB | no disponible | Apache-2.0 | Hugging Face; requiere vLLM y GPU Blackwell |
+| `Qwen/Qwen3.5-2B` (original) | 2,21 B | BF16 (sin cuantizar), ~4,4 GB teoricos | no disponible | Apache-2.0 | Hugging Face; referencia de calidad |
+| `axteam/Qwen3.5-2B-NVFP4` | 2,21 B | NVFP4 (variante del mismo autor) | no disponible | Apache-2.0 | Hugging Face; detalles de esquema no verificados |
 | `qwen3.5:2b` en Ollama | 2,21 B | GGUF, nivel de cuantizacion no disponible | no disponible | Apache-2.0 | Ollama; pensado para llama.cpp |
 
 La comparativa cualitativa: frente al BF16 original, este checkpoint reduce el peso de los pesos cuantizados aproximadamente a la mitad, a costa de un +4,1% de perplejidad y un 89,8% de acuerdo top-1. Frente a la distribucion GGUF de Ollama, la diferencia es de ecosistema: NVFP4A16 solo tiene sentido en servidores vLLM sobre Blackwell, mientras que GGUF prioriza portabilidad en CPU y GPU consumer de cualquier generacion.
@@ -94,7 +94,7 @@ La comparativa cualitativa: frente al BF16 original, este checkpoint reduce el p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/Qwen3.5-2B-NVFP4A16
+- Modelo en Hugging Face: https://huggingface.co/axteam/Qwen3.5-2B-NVFP4A16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-2B/blob/main/LICENSE
 - Variante NVFP4 del mismo autor: https://huggingface.co/axteam/Qwen3.5-2B-NVFP4

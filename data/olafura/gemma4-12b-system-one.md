@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible (no ha
 
 | Modelo | Enfoque | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| olafura/gemma4-12b-system-one | Router de tres vias sobre Gemma 4 12B | Adaptador 283 MB + probe 15 kB sobre base 12B | no disponible | apache-2.0 | Repo HuggingFace, WIP |
-| Laya (convaiinnovations/laya) | Modelo System One (referencia citada) | no disponible | no disponible | no disponible | HuggingFace |
+| olafura/gemma4-12b-system-one | Router de tres vias sobre Gemma 4 12B | Adaptador 283 MB + probe 15 kB sobre base 12B | no disponible | apache-2.0 | Repo Hugging Face, WIP |
+| Laya (convaiinnovations/laya) | Modelo System One (referencia citada) | no disponible | no disponible | no disponible | Hugging Face |
 | Jev (typesafe.ai) | Modelo System One (referencia citada) | no disponible | no disponible | no disponible | Blog del autor |
-| google/gemma-4-12B-it-qat-w4a16-ct | Modelo base multimodal (VLM) | 12B | no disponible | no disponible | HuggingFace |
+| google/gemma-4-12B-it-qat-w4a16-ct | Modelo base multimodal (VLM) | 12B | no disponible | no disponible | Hugging Face |
 
 Los datos de Laya y Jev no estan disponibles en la informacion proporcionada; se citan unicamente como antecedentes del enfoque System One.
 
@@ -99,7 +99,7 @@ Los datos de Laya y Jev no estan disponibles en la informacion proporcionada; se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olafura/gemma4-12b-system-one
+- Modelo en Hugging Face: https://huggingface.co/olafura/gemma4-12b-system-one
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it-qat-w4a16-ct
 - Modelo base (referencia general): https://huggingface.co/google/gemma-4-12B
 - Repositorio del runtime Elixir/Nx: https://github.com/olafura/gemma-4-mic-transcribe

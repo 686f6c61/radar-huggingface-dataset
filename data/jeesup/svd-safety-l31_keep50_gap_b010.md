@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-l31_keep50_gap_b010 es un checkpoint derivado de meta-llama/Llama-3.1-8B-Instruct comprimido mediante SVD-LLM y publicado por el usuario Jeesup en HuggingFace. La compresión elimina el 49,03 % de los parámetros densos, dejando un 51,0 % de parámetros efectivos, y después restaura un 1,0 % adicional de componentes SVD (8.570 componentes) siguiendo la regla de selección denominada `gap`. El resultado es un modelo de 8.030.261.248 parámetros declarados en safetensors, con un repositorio de 16,1 GB.
+svd-safety-l31_keep50_gap_b010 es un checkpoint derivado de meta-llama/Llama-3.1-8B-Instruct comprimido mediante SVD-LLM y publicado por el usuario Jeesup en Hugging Face. La compresión elimina el 49,03 % de los parámetros densos, dejando un 51,0 % de parámetros efectivos, y después restaura un 1,0 % adicional de componentes SVD (8.570 componentes) siguiendo la regla de selección denominada `gap`. El resultado es un modelo de 8.030.261.248 parámetros declarados en safetensors, con un repositorio de 16,1 GB.
 
 No se trata de un modelo de propósito general ni de un asistente desplegable: la propia model card lo describe como un artefacto de investigación dentro de una rejilla experimental sobre reglas de selección y presupuestos de restauración. El objetivo del estudio es medir cómo la compresión SVD degrada el comportamiento de seguridad del modelo original y qué regla de selección de componentes lo repara mejor. Se publica, por tanto, como sujeto experimental y no como producto.
 
@@ -107,7 +107,7 @@ La comparación de rendimiento frente a alternativas no puede establecerse: la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_keep50_gap_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_keep50_gap_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/
 - Método de compresión SVD-LLM (paper de referencia del método citado en la model card): https://arxiv.org/abs/2403.07378

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`micro-sam vit_b_em_organelles` es un checkpoint preentrenado del proyecto micro-sam (Computational Cell Analytics), un fork de Segment Anything (SAM) adaptado a microscopía de células y orgánulos. Este repositorio de HuggingFace (`amorsi/micro-sam-vit-b-em-organelles`) es un espejo sin modificaciones de los pesos originales publicados en el registro de BioImage.IO, con hashes xxh128 que coinciden con los del fichero `util.py` del repositorio oficial de micro-sam.
+`micro-sam vit_b_em_organelles` es un checkpoint preentrenado del proyecto micro-sam (Computational Cell Analytics), un fork de Segment Anything (SAM) adaptado a microscopía de células y orgánulos. Este repositorio de Hugging Face (`amorsi/micro-sam-vit-b-em-organelles`) es un espejo sin modificaciones de los pesos originales publicados en el registro de BioImage.IO, con hashes xxh128 que coinciden con los del fichero `util.py` del repositorio oficial de micro-sam.
 
 El modelo resuelve segmentación de imágenes (image segmentation) en el dominio de microscopía electrónica de orgánulos subcelulares. Emplea la arquitectura ViT-B de SAM (Vision Transformer base, aproximadamente 91 millones de parámetros en el encoder) junto con un decoder ligero específico para la tarea. El checkpoint incluye dos ficheros: `model.pt` (encoder) y `decoder.pt` (decoder), lo que refleja el diseño desacoplado de SAM.
 
-Es relevante para investigadores en biología celular y bioimagen que necesitan segmentar estructuras subcelulares en imágenes de microscopía electrónica sin entrenar desde cero. Al ser un espejo de un checkpoint oficial, su utilidad principal es la reproducibilidad y la disponibilidad vía HuggingFace, aunque el autor no documenta métricas, licencia propia ni detalles de entrenamiento en esta ficha.
+Es relevante para investigadores en biología celular y bioimagen que necesitan segmentar estructuras subcelulares en imágenes de microscopía electrónica sin entrenar desde cero. Al ser un espejo de un checkpoint oficial, su utilidad principal es la reproducibilidad y la disponibilidad vía Hugging Face, aunque el autor no documenta métricas, licencia propia ni detalles de entrenamiento en esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Es relevante para investigadores en biología celular y bioimagen que necesitan 
 | Longitud de contexto | no disponible (modelo de vision; resolucion de entrada no especificada) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (modelo de vision, sin procesamiento de lenguaje) |
-| Licencia | no disponible en la ficha de HuggingFace; el codigo de micro-sam es MIT, los pesos remiten a los terminos del origen (BioImage.IO) |
+| Licencia | no disponible en la ficha de Hugging Face; el codigo de micro-sam es MIT, los pesos remiten a los terminos del origen (BioImage.IO) |
 | Formato de pesos | PyTorch (`model.pt` y `decoder.pt`) |
 | Tamano del repositorio | 0.4 GB |
 | Pipeline | image-segmentation |
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto/entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| micro-sam vit_b_em_organelles (este) | ViT-B (~91 M encoder) | no disponible | Segmentación EM de orgánulos | no disponible (código micro-sam MIT) | HuggingFace (espejo) |
-| SAM (vit_b original) | ViT-B (~91 M encoder) | imágenes naturales | Segmentación general | Apache 2.0 (SAM original) | Meta / HuggingFace |
+| micro-sam vit_b_em_organelles (este) | ViT-B (~91 M encoder) | no disponible | Segmentación EM de orgánulos | no disponible (código micro-sam MIT) | Hugging Face (espejo) |
+| SAM (vit_b original) | ViT-B (~91 M encoder) | imágenes naturales | Segmentación general | Apache 2.0 (SAM original) | Meta / Hugging Face |
 | micro-sam vit_b_lm (otro checkpoint) | ViT-B | no disponible | Segmentación en microscopía óptica | según micro-sam | registro micro-sam |
 | Cellpose | no disponible | imágenes de microscopía | Segmentación celular | BSD-3 (código) | GitHub |
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 ## Limitaciones y advertencias
 
 - Es un espejo sin modificaciones: el autor no aporta garantías adicionales sobre los pesos ni sobre su licencia; deben consultarse los términos del origen (BioImage.IO) antes de uso comercial.
-- La licencia no está declarada en la ficha de HuggingFace; el código de micro-sam es MIT, pero la licencia de los pesos no se confirma.
+- La licencia no está declarada en la ficha de Hugging Face; el código de micro-sam es MIT, pero la licencia de los pesos no se confirma.
 - Especializado en microscopía electrónica de orgánulos; su rendimiento fuera de ese dominio (microscopía óptica, imágenes naturales) no está documentado y probablemente sea inferior.
 - No hay métricas publicadas en esta ficha, por lo que no se puede evaluar su calidad de segmentación a partir de la información disponible.
 - Riesgo de segmentaciones incorrectas en imágenes con ruido, artefactos o estructuras poco representadas en el entrenamiento; requiere validación por un experto.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amorsi/micro-sam-vit-b-em-organelles
+- Hugging Face: https://huggingface.co/amorsi/micro-sam-vit-b-em-organelles
 - Repositorio micro-sam: https://github.com/computational-cell-analytics/micro-sam
 - Fichero de registro de checkpoints (`util.py`): https://github.com/computational-cell-analytics/micro-sam/blob/master/micro_sam/util.py
 - Pesos originales (encoder): https://uk1s3.embassy.ebi.ac.uk/public-datasets/bioimage.io/noisy-ox/1.2/files/vit_b.pt

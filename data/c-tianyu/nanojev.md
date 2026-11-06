@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NanoJev es un modelo de decisión de tipo "nano" publicado por el usuario C-Tianyu en HuggingFace bajo licencia no especificada. Se presenta como una réplica reducida de Jev: en lugar de generar texto token a token, evalúa un conjunto de estados y preguntas en una única pasada forward del backbone y devuelve distribuciones de probabilidad completas sobre candidatos dinámicos. El backbone es Qwen/Qwen3-0.6B (revisión `c1899de289a04d12100db370d81485cdf75e47ca`) al que se le añaden cabezas de decisión estructuradas.
+NanoJev es un modelo de decisión de tipo "nano" publicado por el usuario C-Tianyu en Hugging Face bajo licencia no especificada. Se presenta como una réplica reducida de Jev: en lugar de generar texto token a token, evalúa un conjunto de estados y preguntas en una única pasada forward del backbone y devuelve distribuciones de probabilidad completas sobre candidatos dinámicos. El backbone es Qwen/Qwen3-0.6B (revisión `c1899de289a04d12100db370d81485cdf75e47ca`) al que se le añaden cabezas de decisión estructuradas.
 
 El modelo resuelve tres tipos de consulta: "choice" (entre 2 y 255 candidatos dinámicos, con una probabilidad por candidato), "boolean" (probabilidad de que una proposición sea verdadera) y "score" (entre 2 y 10 niveles ordenados, con distribución completa y puntuación esperada). La innovación declarada es la ausencia total de decodificación de tokens de salida, lo que permite resolver muchas preguntas en un solo forward batchado: la model card reporta una medición en servicio de 6 estados, 18 preguntas y 44 rutas candidatas resueltas en un único forward del backbone.
 
@@ -78,16 +78,16 @@ El Qwen3-0.6B original no está ajustado para la tarea; su distribución de acci
 
 | Modelo | Parámetros | Contexto | Navegación 4×4 test | Navegación 6×6 OOD | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| NanoJev | 0,6 B (backbone Qwen3-0.6B) | No disponible | 19/20 (95 %) | 18/20 (90 %) | No disponible | HuggingFace, 0 descargas |
+| NanoJev | 0,6 B (backbone Qwen3-0.6B) | No disponible | 19/20 (95 %) | 18/20 (90 %) | No disponible | Hugging Face, 0 descargas |
 | Jev | No disponible | No disponible | 20/20 (100 %) | 19/20 (95 %) | No disponible | Referenciado como sistema de mayor tamaño del que NanoJev es réplica |
-| Qwen3-0.6B original | 0,6 B | 32 768 tokens declarados por el modelo base | 7/20 (35 %) | 3/20 (15 %) | No disponible en esta información | HuggingFace |
+| Qwen3-0.6B original | 0,6 B | 32 768 tokens declarados por el modelo base | 7/20 (35 %) | 3/20 (15 %) | No disponible en esta información | Hugging Face |
 
 No se han identificado en la información proporcionada otros modelos de decisión con distribución completa sobre candidatos dinámicos que permitan una comparación directa de parámetros, contexto o licencia.
 
 ## Limitaciones y advertencias
 
 - Licencia no disponible: no se puede determinar si el uso comercial está permitido. Conviene contactar con el autor o revisar el repositorio antes de cualquier despliegue en producción. Nótese que el modelo deriva de Qwen3-0.6B, cuyas condiciones también podrían aplicar.
-- Validación muy limitada: 0 descargas y 0 likes en HuggingFace, un único benchmark publicado (navegación en cuadrícula) y ninguna evaluación en tareas de lenguaje general.
+- Validación muy limitada: 0 descargas y 0 likes en Hugging Face, un único benchmark publicado (navegación en cuadrícula) y ninguna evaluación en tareas de lenguaje general.
 - No es un modelo de chat ni de generación de texto: no produce texto libre, por lo que no sirve para diálogo, resumen, redacción ni tareas generativas habituales.
 - Idiomas restringidos a inglés y chino; no hay evidencia de comportamiento en castellano.
 - Las distribuciones de probabilidad devueltas no están calibradas según ningún estudio publicado; usarlas como medidas de confianza en producción exige validación propia.
@@ -100,7 +100,7 @@ No se han identificado en la información proporcionada otros modelos de decisi�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/C-Tianyu/NanoJev
+- Modelo en Hugging Face: https://huggingface.co/C-Tianyu/NanoJev
 - Dataset: https://huggingface.co/datasets/C-Tianyu/NanoJev-Data
 - Código fuente: https://github.com/TianyuCodings/NanoJev
 - Guía del pipeline (generación de datos, entrenamiento, evaluación y servicio): https://github.com/TianyuCodings/NanoJev/blob/main/research/pipeline_runbook.md

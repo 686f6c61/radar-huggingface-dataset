@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Vedant0311/delete-later` es un espacio de HuggingFace publicado por el usuario Vedant0311 cuyo contenido público se limita a una model card con la declaración de licencia MIT y nada más. No incluye descripción del modelo, arquitectura, tamaño, datos de entrenamiento ni pesos publicados de forma verificable. El propio identificador ("delete-later") sugiere que se trata de un repositorio de prueba o temporal, no de un modelo destinado a uso real.
+El repositorio `Vedant0311/delete-later` es un espacio de Hugging Face publicado por el usuario Vedant0311 cuyo contenido público se limita a una model card con la declaración de licencia MIT y nada más. No incluye descripción del modelo, arquitectura, tamaño, datos de entrenamiento ni pesos publicados de forma verificable. El propio identificador ("delete-later") sugiere que se trata de un repositorio de prueba o temporal, no de un modelo destinado a uso real.
 
 En el momento de la consulta el repositorio acumula 0 descargas y 0 "likes", no tiene pipeline declarado, no declara idiomas soportados y no expone ficha técnica alguna. La fecha de creación y de última actualización registradas son idénticas (2026-09-13T18:01:53.000Z), lo que indica que no ha habido mantenimiento posterior a su creación.
 
@@ -93,7 +93,7 @@ No disponible. Al no conocerse el tamaño, la arquitectura ni las capacidades de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vedant0311/delete-later
+- Repositorio en Hugging Face: https://huggingface.co/Vedant0311/delete-later
 - Paper: no disponible.
 - Blog o anuncio del autor: no disponible.
 - Repositorio de código: no disponible.

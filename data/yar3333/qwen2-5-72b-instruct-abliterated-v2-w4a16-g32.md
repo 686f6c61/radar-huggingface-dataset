@@ -18,7 +18,7 @@ El modelo hereda la arquitectura transformer decoder-only de Qwen2.5 con 72.706.
 | Longitud de contexto | 32.768 tokens (verificado en despliegue con `--max-model-len 32768`) |
 | Tipos de cuantizacion | INT4 con group_size 32, simetrica, pack-quantized; activaciones FP16; `lm_head` en bf16 |
 | Idiomas soportados | no disponible en la model card; el autor verifica salidas en ingles y ruso |
-| Licencia | Tongyi Qianwen 1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | Tongyi Qianwen 1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (6 shards, ~42 GB), formato compressed-tensors |
 
 ## Arquitectura y entrenamiento
@@ -33,7 +33,7 @@ La cuantizacion se genero con llm-compressor sobre ROCm, usando una ruta puramen
 - Razonamiento, matematicas y generacion de codigo propias de un modelo de 72B de la familia Qwen2.5.
 - Respuestas sin los filtros de rechazo habituales del modelo original, al estar abliterated.
 - Soporte multilingue heredado de Qwen2.5; el autor verifica explicitamente salidas en ingles y ruso.
-- Compatibilidad con text-generation-inference y con el tag `endpoints_compatible` de HuggingFace.
+- Compatibilidad con text-generation-inference y con el tag `endpoints_compatible` de Hugging Face.
 - No hay evidencia en la informacion disponible de soporte de tool calling, function calling, agentes, vision ni audio en esta variante cuantizada; se asume herencia del modelo base pero no esta verificado.
 - No dispone de cabeza MTP (multi-token prediction), segun indica el autor, por lo que no hay decodificacion especulativa nativa.
 
@@ -72,9 +72,9 @@ No se observa degradacion del decode con prompts mas largos. No hay datos de thr
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yar3333/Qwen2.5-72B-Instruct-abliterated-v2-W4A16-G32 | 72,7B | 32.768 | INT4 W4A16 group 32 | Tongyi Qianwen 1.0 | HuggingFace, 136 descargas |
-| zetasepic/Qwen2.5-72B-Instruct-abliterated-v2 (base) | 72,7B | 32.768 | FP16/BF16 | Tongyi Qianwen 1.0 | HuggingFace |
-| Qwen2.5-72B-Instruct (original) | 72,7B | 32.768 | FP16/BF16, AWQ, GPTQ | Tongyi Qianwen 1.0 | HuggingFace, ampliamente desplegado |
+| yar3333/Qwen2.5-72B-Instruct-abliterated-v2-W4A16-G32 | 72,7B | 32.768 | INT4 W4A16 group 32 | Tongyi Qianwen 1.0 | Hugging Face, 136 descargas |
+| zetasepic/Qwen2.5-72B-Instruct-abliterated-v2 (base) | 72,7B | 32.768 | FP16/BF16 | Tongyi Qianwen 1.0 | Hugging Face |
+| Qwen2.5-72B-Instruct (original) | 72,7B | 32.768 | FP16/BF16, AWQ, GPTQ | Tongyi Qianwen 1.0 | Hugging Face, ampliamente desplegado |
 
 La ventaja diferencial de esta variante es el group_size 32, que permite tensor parallelism en TP=4 con vLLM alli donde el group_size 128 clasico falla. Frente al modelo base sin cuantizar, reduce el footprint de pesos de ~145 GB a ~42 GB a costa de una perdida de precision no cuantificada en la informacion disponible.
 
@@ -85,14 +85,14 @@ La ventaja diferencial de esta variante es el group_size 32, que permite tensor 
 - No hay datos de benchmarks de calidad que permitan cuantificar la degradacion respecto al modelo original.
 - Idiomas soportados no documentados en la model card; solo se verifica ingles y ruso.
 - Licencia Tongyi Qianwen 1.0: revisar las condiciones de uso comercial antes de desplegar, ya que impone restricciones especificas y no es una licencia permisiva tipo Apache o MIT.
-- El tag de licencia en HuggingFace es `other` con `license_name: tongyi-qianwen-1.0`; conviene consultar el archivo LICENSE del repositorio.
+- El tag de licencia en Hugging Face es `other` con `license_name: tongyi-qianwen-1.0`; conviene consultar el archivo LICENSE del repositorio.
 - Despliegue verificado unicamente en ROCm/gfx1100 con vLLM 0.32.0; el comportamiento en CUDA no esta documentado en la model card.
 - Sin cabeza MTP, no hay decodificacion especulativa nativa, lo que limita el throughput en comparacion con modelos que si la incorporan.
 - El repositorio tiene 0 likes y 136 descargas, lo que indica poca validacion comunitaria.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yar3333/Qwen2.5-72B-Instruct-abliterated-v2-W4A16-G32
+- Modelo en Hugging Face: https://huggingface.co/yar3333/Qwen2.5-72B-Instruct-abliterated-v2-W4A16-G32
 - Modelo base abliterated: https://huggingface.co/zetasepic/Qwen2.5-72B-Instruct-abliterated-v2
 - llm-compressor (herramienta de cuantizacion): https://github.com/vllm-project/llm-compressor
 - Dataset de calibracion: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k

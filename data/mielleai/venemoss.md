@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Base | Tamaño del repo | Licencia | Contexto / resolución | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MielleAI/VeneMoss | LoRA text-to-image | OpenMOSS-Team/MOSS-Image-Base | 0,1 GB | no disponible | no disponible | HuggingFace |
-| OpenMOSS-Team/MOSS-Image-Base | Modelo base text-to-image | — | no disponible | no disponible | no disponible | HuggingFace |
-| Otros LoRA de difusión (genéricos) | LoRA text-to-image | SD 1.5 / SDXL / Flux | variable | variable según autor | variable | HuggingFace |
+| MielleAI/VeneMoss | LoRA text-to-image | OpenMOSS-Team/MOSS-Image-Base | 0,1 GB | no disponible | no disponible | Hugging Face |
+| OpenMOSS-Team/MOSS-Image-Base | Modelo base text-to-image | — | no disponible | no disponible | no disponible | Hugging Face |
+| Otros LoRA de difusión (genéricos) | LoRA text-to-image | SD 1.5 / SDXL / Flux | variable | variable según autor | variable | Hugging Face |
 
 No se dispone de datos de rendimiento ni de benchmarks que permitan una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento ni de benchmarks que permitan una comparac
 
 ## Enlaces
 
-- [HuggingFace: MielleAI/VeneMoss](https://huggingface.co/MielleAI/VeneMoss)
+- [Hugging Face: MielleAI/VeneMoss](https://huggingface.co/MielleAI/VeneMoss)
 - [Modelo base: OpenMOSS-Team/MOSS-Image-Base](https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base)
 - [Archivos del repositorio](https://huggingface.co/MielleAI/VeneMoss/tree/main)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

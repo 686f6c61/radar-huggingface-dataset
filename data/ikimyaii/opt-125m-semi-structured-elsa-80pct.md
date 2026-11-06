@@ -106,7 +106,7 @@ La comparación directa con el modelo EHWS del mismo autor está referenciada en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/OPT-125M-semi-structured-ELSA-80pct
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/OPT-125M-semi-structured-ELSA-80pct
 - Modelo base: https://huggingface.co/facebook/opt-125m
 - Modelo EHWS comparable: https://huggingface.co/ikimyaii/OPT-125M-semi-structured-EHWS-ALPS-phase1-80pct
 - Paper de ELSA: https://arxiv.org/abs/2510.01650

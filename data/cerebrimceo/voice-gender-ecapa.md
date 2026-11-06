@@ -2,7 +2,7 @@
 
 ## Resumen
 
-voice-gender-ecapa es un modelo publicado en HuggingFace por el usuario cerebrimceo bajo licencia MIT. Por el identificador y las etiquetas del repositorio (onnx), se trata de un clasificador de genero a partir de voz construido sobre la arquitectura ECAPA, un diseno de embeddings de hablante basado en redes neuronales convolucionales con atencion y estadisticas de orden superior, popularizado por SpeechBrain. El modelo se distribuye en formato ONNX, lo que facilita su despliegue en entornos de inferencia ligeros sin necesidad de framework de entrenamiento.
+voice-gender-ecapa es un modelo publicado en Hugging Face por el usuario cerebrimceo bajo licencia MIT. Por el identificador y las etiquetas del repositorio (onnx), se trata de un clasificador de genero a partir de voz construido sobre la arquitectura ECAPA, un diseno de embeddings de hablante basado en redes neuronales convolucionales con atencion y estadisticas de orden superior, popularizado por SpeechBrain. El modelo se distribuye en formato ONNX, lo que facilita su despliegue en entornos de inferencia ligeros sin necesidad de framework de entrenamiento.
 
 La model card publicada es practicamente vacia: solo declara la licencia MIT, sin descripcion, sin datos de entrenamiento, sin metricas y sin instrucciones de uso. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un modelo de embeddings de hablante de tamano pequeno o mediano empaquetado en ONNX. No consta pipeline declarado ni idiomas soportados.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voice-gender-ecapa | no disponible | no aplica | Clasificacion de genero por voz | MIT | HuggingFace, ONNX |
-| Modelos ECAPA de SpeechBrain (spkrec-ecapa-voxceleb) | no disponible en esta ficha | no aplica | Embeddings de hablante | Apache 2.0 | HuggingFace, PyTorch |
-| Clasificadores de genero por voz genericos en HuggingFace | no disponible | no aplica | Clasificacion binaria de genero | variable | HuggingFace |
+| voice-gender-ecapa | no disponible | no aplica | Clasificacion de genero por voz | MIT | Hugging Face, ONNX |
+| Modelos ECAPA de SpeechBrain (spkrec-ecapa-voxceleb) | no disponible en esta ficha | no aplica | Embeddings de hablante | Apache 2.0 | Hugging Face, PyTorch |
+| Clasificadores de genero por voz genericos en Hugging Face | no disponible | no aplica | Clasificacion binaria de genero | variable | Hugging Face |
 
 La comparacion cuantitativa no es posible porque el autor no publica parametros, metricas ni detalles de entrenamiento. Cualquier alternativa debe evaluarse con el mismo conjunto de validacion propio.
 
@@ -80,7 +80,7 @@ La comparacion cuantitativa no es posible porque el autor no publica parametros,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cerebrimceo/voice-gender-ecapa
+- Modelo en Hugging Face: https://huggingface.co/cerebrimceo/voice-gender-ecapa
 - Paper de ECAPA-TDNN (referencia de la arquitectura): https://arxiv.org/abs/2005.07143
 - Repositorio SpeechBrain: https://github.com/speechbrain/speechbrain
 - ONNX Runtime: https://onnxruntime.ai/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v2. Lo publica el usuario revanth11 en HuggingFace como parte de la Unit 8 Part 1 del Deep RL Course de Hugging Face. No se trata de un modelo de lenguaje ni de un modelo generativo, sino de una politica entrenada desde cero para una tarea de control secuencial con espacio de acciones discreto.
+Este repositorio contiene un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v2. Lo publica el usuario revanth11 en Hugging Face como parte de la Unit 8 Part 1 del Deep RL Course de Hugging Face. No se trata de un modelo de lenguaje ni de un modelo generativo, sino de una politica entrenada desde cero para una tarea de control secuencial con espacio de acciones discreto.
 
 El modelo resuelve el problema de aterrizaje controlado de una nave en el entorno LunarLander-v2 de Gym/Gymnasium, una tarea clasica de benchmarking en aprendizaje por refuerzo profundo. La relevancia de esta publicacion es fundamentalmente didactica: sirve como ejemplo reproducible de como entrenar y publicar un agente PPO con la libreria deep-rl-course, y como referencia para estudiantes del curso.
 
@@ -44,7 +44,7 @@ El entorno LunarLander-v2 es un problema de control clasico de Gym/Gymnasium en 
 - Reproduccion de experimentos: puede cargarse para verificar la recompensa declarada y comparar el comportamiento del agente con otras implementaciones de PPO sobre el mismo entorno.
 - Punto de partida para fine-tuning: util como inicializacion para experimentar con variantes de PPO, cambios en hiperparametros o modificaciones del entorno LunarLander-v2.
 - Benchmarking de algoritmos de RL: permite comparar PPO frente a otros algoritmos (A2C, DQN, SAC) en la misma tarea de control discreto.
-- Demostraciones de integracion con HuggingFace Hub: sirve para ilustrar como empaquetar y compartir un agente de RL usando la libreria deep-rl-course.
+- Demostraciones de integracion con Hugging Face Hub: sirve para ilustrar como empaquetar y compartir un agente de RL usando la libreria deep-rl-course.
 - Investigacion en control continuo discreto: aunque la tarea es simple, el agente puede utilizarse como linea base en estudios sobre estabilidad de politicas o exploration strategies.
 
 ## Benchmarks y rendimiento
@@ -67,7 +67,7 @@ El rendimiento declarado de 240.00 +/- 10.00 supera el umbral de 200 puntos que 
 
 ## Comparativa con modelos similares
 
-Existen multiples repositorios equivalentes entrenados para el mismo entorno dentro del Deep RL Course de HuggingFace. A continuacion se comparan los datos disponibles de forma limitada, ya que la mayoria no publica metricas verificables:
+Existen multiples repositorios equivalentes entrenados para el mismo entorno dentro del Deep RL Course de Hugging Face. A continuacion se comparan los datos disponibles de forma limitada, ya que la mayoria no publica metricas verificables:
 
 | Modelo | Entorno | Algoritmo | Licencia | Metricas publicadas |
 |---|---|---|---|---|
@@ -89,7 +89,7 @@ No se dispone de datos verificados de parametros, contexto o rendimiento de las 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/revanth11/ppo-LunarLander-v2-deep-rl-course
+- Hugging Face: https://huggingface.co/revanth11/ppo-LunarLander-v2-deep-rl-course
 - Modelo similar (srujitha12): https://huggingface.co/srujitha12/deep-rl-course-PPO-LunarLander-v2
 - Modelo similar (Narunat): https://huggingface.co/Narunat/LunarLander-v2-Deep-RL
 - Repositorio relacionado (rishisim, LunarLander-v2): https://github.com/rishisim/LunarLander-v2

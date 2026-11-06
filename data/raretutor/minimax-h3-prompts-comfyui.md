@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Raretutor/Minimax-H3-Prompts-ComfyUI es una publicacion alojada en HuggingFace por el usuario Raretutor que, a juzgar por su identificador y por el unico contenido de su model card, consiste en una coleccion de prompts pensados para flujos de trabajo de ComfyUI vinculados a MiniMax H3. No es un modelo de aprendizaje automatico en el sentido habitual: no se declara arquitectura, numero de parametros, ventana de contexto ni ficheros de pesos, y los metadatos no indican pipeline, idiomas ni conjunto de datos.
+El repositorio Raretutor/Minimax-H3-Prompts-ComfyUI es una publicacion alojada en Hugging Face por el usuario Raretutor que, a juzgar por su identificador y por el unico contenido de su model card, consiste en una coleccion de prompts pensados para flujos de trabajo de ComfyUI vinculados a MiniMax H3. No es un modelo de aprendizaje automatico en el sentido habitual: no se declara arquitectura, numero de parametros, ventana de contexto ni ficheros de pesos, y los metadatos no indican pipeline, idiomas ni conjunto de datos.
 
 La model card se reduce a una linea de texto ("Check All Videos for the Prompts here") y a un enlace al perfil de X del autor. La unica informacion estructurada disponible es la licencia (Apache 2.0), las etiquetas license:apache-2.0 y region:us, y las fechas de creacion y actualizacion (11 de septiembre de 2026, ambas). En el momento de la consulta el repositorio registra 0 descargas y 0 "likes".
 
@@ -21,8 +21,8 @@ Su utilidad es, por tanto, practica y acotada: sirve como material de referencia
 | Licencia | Apache 2.0 |
 | Formato de pesos | no disponible (no se declaran ficheros de pesos; no se indica safetensors, GGUF ni ningun otro) |
 | Tipo de artefacto | coleccion de prompts para ComfyUI, segun el nombre del repositorio y la model card |
-| Fecha de creacion | 2026-09-11 (metadatos de HuggingFace) |
-| Fecha de actualizacion | 2026-09-11 (metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-11 (metadatos de Hugging Face) |
+| Fecha de actualizacion | 2026-09-11 (metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Ejecucion en GPU de consumo: no disponible. No es posible estimarlo sin conocer el modelo de destino ni su cuantizacion.
 - Opciones de despliegue: vLLM, llama.cpp, Ollama y TGI no son aplicables a este repositorio, al no existir ficheros de pesos. El unico entorno de uso previsible es ComfyUI con el modelo correspondiente instalado.
 - Latencia y throughput: no disponible.
-- Requisitos para consultar el repositorio: ninguno relevante; basta un navegador o el cliente de HuggingFace para acceder a su contenido.
+- Requisitos para consultar el repositorio: ninguno relevante; basta un navegador o el cliente de Hugging Face para acceder a su contenido.
 
 ## Comparativa con modelos similares
 
@@ -83,6 +83,6 @@ No disponible. No se han identificado en la informacion proporcionada repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Raretutor/Minimax-H3-Prompts-ComfyUI
+- Repositorio en Hugging Face: https://huggingface.co/Raretutor/Minimax-H3-Prompts-ComfyUI
 - Perfil del autor en X, citado en la model card: https://x.com/RareTutor
 - No se han encontrado en las busquedas web enlaces relevantes adicionales (papers, blogs, repositorios de codigo o demos) asociados a este repositorio o a MiniMax H3.

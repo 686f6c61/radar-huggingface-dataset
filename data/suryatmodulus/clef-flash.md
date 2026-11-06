@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Clef-Flash | 9,41B | No disponible (16.384 tokens por defecto en `encode_record`) | Probabilidades por opcion tipada | Apache-2.0 | HuggingFace (repositorio `suryatmodulus/clef-flash` y referencia a `Cloudflare/clef-flash`) |
-| Clef (variante mayor) | No disponible | No disponible | Probabilidades por opcion tipada | No disponible en la informacion proporcionada | HuggingFace (`Cloudflare/clef`) |
-| Qwen/Qwen3.5-9B (modelo base) | No disponible | No disponible | Generacion de texto libre | No disponible en la informacion proporcionada | HuggingFace |
+| Clef-Flash | 9,41B | No disponible (16.384 tokens por defecto en `encode_record`) | Probabilidades por opcion tipada | Apache-2.0 | Hugging Face (repositorio `suryatmodulus/clef-flash` y referencia a `Cloudflare/clef-flash`) |
+| Clef (variante mayor) | No disponible | No disponible | Probabilidades por opcion tipada | No disponible en la informacion proporcionada | Hugging Face (`Cloudflare/clef`) |
+| Qwen/Qwen3.5-9B (modelo base) | No disponible | No disponible | Generacion de texto libre | No disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/suryatmodulus/clef-flash
+- Repositorio en Hugging Face: https://huggingface.co/suryatmodulus/clef-flash
 - Repositorio referenciado como original: https://huggingface.co/Cloudflare/clef-flash
 - Variante mayor: https://huggingface.co/Cloudflare/clef
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

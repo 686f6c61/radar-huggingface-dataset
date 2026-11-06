@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppt-pythia-160m-nope-baseline-warmup2000-seed208-stage2` es un ajuste fino (fine-tuning) del modelo base `EleutherAI/pythia-160m`, publicado por el usuario de HuggingFace `qing-yao`. Se trata de un experimento de investigación académica más que de un modelo listo para producción: el nombre codifica la configuración del entrenamiento (variante `nope`, calentamiento de 2000 pasos, semilla 208, segunda etapa) y la model card ha sido generada automáticamente por el `Trainer` de HuggingFace sin documentación sustantiva.
+`ppt-pythia-160m-nope-baseline-warmup2000-seed208-stage2` es un ajuste fino (fine-tuning) del modelo base `EleutherAI/pythia-160m`, publicado por el usuario de Hugging Face `qing-yao`. Se trata de un experimento de investigación académica más que de un modelo listo para producción: el nombre codifica la configuración del entrenamiento (variante `nope`, calentamiento de 2000 pasos, semilla 208, segunda etapa) y la model card ha sido generada automáticamente por el `Trainer` de Hugging Face sin documentación sustantiva.
 
 El modelo conserva la arquitectura GPT-NeoX del Pythia original, con 162.322.944 parámetros totales y pesos en formato `safetensors`. La etiqueta `gpt_neox_nope` y el flag `custom_code` sugieren una modificación arquitectónica respecto al Pythia estándar (probablemente relacionada con codificaciones posicionales, dado el sufijo `nope`), aunque el autor no documenta los detalles.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada fuera del contexto experimental del que procede: no ha
 
 El modelo parte de `EleutherAI/pythia-160m`, un transformer decoder-only de la familia GPT-NeoX. El tag `gpt_neox_nope` indica una variante concreta de la arquitectura (el sufijo `nope` probablemente alude a una modificación en el esquema de codificación posicional, aunque el autor no lo documenta), y el flag `custom_code` implica que la carga requiere `trust_remote_code=True` y código específico incluido en el repositorio.
 
-El entrenamiento se realizó con el `Trainer` de HuggingFace sobre un dataset no especificado (la model card indica "None dataset"). Los hiperparámetros documentados son: learning rate 0,001, batch size efectivo 32 (16 × 2 pasos de acumulación de gradiente), optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-8, scheduler coseno con mínimo y 2000 pasos de warmup, semilla 208 y 10.000 pasos totales. El loss de validación desciende desde 9,6258 en el paso 50 hasta 4,0831 al final, con oscilaciones notables en varios tramos (por ejemplo, repuntes en los pasos 900, 1350, 3050 y 3650). No se documenta uso de RLHF, DPO ni ninguna técnica de alineación posterior.
+El entrenamiento se realizó con el `Trainer` de Hugging Face sobre un dataset no especificado (la model card indica "None dataset"). Los hiperparámetros documentados son: learning rate 0,001, batch size efectivo 32 (16 × 2 pasos de acumulación de gradiente), optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-8, scheduler coseno con mínimo y 2000 pasos de warmup, semilla 208 y 10.000 pasos totales. El loss de validación desciende desde 9,6258 en el paso 50 hasta 4,0831 al final, con oscilaciones notables en varios tramos (por ejemplo, repuntes en los pasos 900, 1350, 3050 y 3650). No se documenta uso de RLHF, DPO ni ninguna técnica de alineación posterior.
 
 ## Capacidades
 
@@ -82,6 +82,6 @@ La comparación de rendimiento no es posible porque este fine-tune no publica m�
 
 ## Enlaces
 
-- [HuggingFace: qing-yao/ppt-pythia-160m-nope-baseline-warmup2000-seed208-stage2](https://huggingface.co/qing-yao/ppt-pythia-160m-nope-baseline-warmup2000-seed208-stage2)
+- [Hugging Face: qing-yao/ppt-pythia-160m-nope-baseline-warmup2000-seed208-stage2](https://huggingface.co/qing-yao/ppt-pythia-160m-nope-baseline-warmup2000-seed208-stage2)
 - [Modelo base: EleutherAI/pythia-160m](https://huggingface.co/EleutherAI/pythia-160m)
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información disponible.

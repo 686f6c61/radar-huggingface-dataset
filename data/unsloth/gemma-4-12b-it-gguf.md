@@ -78,8 +78,8 @@ El modelo se posiciona como una opción intermedia entre los modelos pequeños (
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/unsloth/gemma-4-12b-it-GGUF
-- HuggingFace (modelo base): https://huggingface.co/google/gemma-4-12B-it
+- Hugging Face (GGUF): https://huggingface.co/unsloth/gemma-4-12b-it-GGUF
+- Hugging Face (modelo base): https://huggingface.co/google/gemma-4-12B-it
 - Colección Gemma 4 de Unsloth: https://huggingface.co/collections/unsloth/gemma-4
 - Guía de ejecución local de Unsloth: https://unsloth.ai/docs/models/gemma-4
 - Guía de fine-tuning de Unsloth: https://unsloth.ai/docs/models/gemma-4/train

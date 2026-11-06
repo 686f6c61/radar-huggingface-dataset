@@ -80,7 +80,7 @@ La comparación con Whisper tiny y base se ofrece como referencia de categoría 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ysdede/moonshine-tiny-onnx
+- Hugging Face: https://huggingface.co/ysdede/moonshine-tiny-onnx
 - Modelo fuente: https://huggingface.co/UsefulSensors/moonshine-tiny
 - Repositorio de Moonshine AI (referencia): no disponible en la información proporcionada
 - Paper de Moonshine: no disponible en la información proporcionada

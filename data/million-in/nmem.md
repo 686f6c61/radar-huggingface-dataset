@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nmem es un modelo publicado en HuggingFace por el usuario u organizacion "million-in" bajo el identificador `million-in/nmem`. La informacion disponible en el momento de redactar esta ficha es extremadamente limitada: la model card unicamente contiene la declaracion de licencia MIT, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni resultados de evaluacion. El repositorio ocupa 2,1 GB y los pesos se distribuyen en formato safetensors.
+nmem es un modelo publicado en Hugging Face por el usuario u organizacion "million-in" bajo el identificador `million-in/nmem`. La informacion disponible en el momento de redactar esta ficha es extremadamente limitada: la model card unicamente contiene la declaracion de licencia MIT, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni resultados de evaluacion. El repositorio ocupa 2,1 GB y los pesos se distribuyen en formato safetensors.
 
 No se ha confirmado el numero de parametros, la longitud de contexto, los idiomas soportados ni el pipeline de inferencia asociado, por lo que cualquier afirmacion sobre el comportamiento del modelo seria especulativa. A partir del tamano del repositorio puede estimarse de forma aproximada que los pesos corresponden a un modelo del orden de 1.000 millones de parametros en precision de 16 bits, pero se trata de una inferencia no verificada y el repositorio podria contener archivos adicionales o pesos en otras precisiones.
 
@@ -21,9 +21,9 @@ La relevancia actual del modelo es dificil de evaluar sin documentacion tecnica.
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 2,1 GB |
-| Pipeline declarado en HuggingFace | no disponible |
-| Fecha de publicacion | 23 de septiembre de 2026 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 27 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Pipeline declarado en Hugging Face | no disponible |
+| Fecha de publicacion | 23 de septiembre de 2026 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 27 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / "likes" | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -85,12 +85,12 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 - Trazabilidad limitada del autor: no se han localizado papers, repositorios de codigo, informes tecnicos ni comunicaciones oficiales asociados al modelo.
 - Adopcion nula: cero descargas y cero "likes" registrados, lo que implica ausencia de validacion por parte de la comunidad.
 - Licencia: MIT permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de copyright y la propia licencia. Al no existir model card ampliada, no se declaran restricciones adicionales de uso aceptable.
-- Metadatos atipicos: las fechas de creacion y actualizacion registradas (septiembre de 2026) deben tomarse como las reportadas por HuggingFace y podrian corresponder a un problema de marcas de tiempo.
+- Metadatos atipicos: las fechas de creacion y actualizacion registradas (septiembre de 2026) deben tomarse como las reportadas por Hugging Face y podrian corresponder a un problema de marcas de tiempo.
 - Recomendacion para produccion: no desplegar en entornos criticos ni orientados a usuarios finales sin una evaluacion interna completa de calidad, seguridad y sesgos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/million-in/nmem
+- Hugging Face: https://huggingface.co/million-in/nmem
 - Paper, blog o repositorio de codigo: no disponible
 - Demo o espacio interactivo: no disponible
 - Resultados de la busqueda web: ninguno relevante. Las consultas devolvieron la web de la casa de subastas francesa Millon (https://www.millon.com/), la entrada "Million" de Wikipedia en frances (https://fr.m.wikipedia.org/wiki/Million), definiciones de diccionario (Larousse, Le Robert) y resultados de loterias de La Francaise des Jeux, todos ellos sin relacion con el modelo `million-in/nmem`.

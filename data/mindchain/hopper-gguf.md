@@ -27,7 +27,7 @@ Su relevancia es acotada y muy específica: es un artefacto de investigación re
 | Temperaturas configuradas | Por tipo (`hopper.json`): choice 0,7899 · noul 0,7531 · score 0,8997 |
 | Tamaño del repositorio | 2,7 GB |
 | Descargas / likes | 0 / 0 |
-| Publicación en HuggingFace | 2026-09-25 (alta) y 2026-09-25 (última actualización), según el repositorio |
+| Publicación en Hugging Face | 2026-09-25 (alta) y 2026-09-25 (última actualización), según el repositorio |
 | Etiquetas adicionales | `conversational`, `endpoints_compatible`, `llama-cpp`, `region:us` |
 
 ## Arquitectura y entrenamiento
@@ -78,9 +78,9 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| mindchain/hopper-GGUF | 4,21 B (denso, 32 capas) | No disponible | `research-and-demo` | GGUF Q4_K_M (2,71 GB) | Público en HuggingFace; 0 descargas, 0 likes | Merge LoRA reproducible; JevBench v1.4.2: 63,5 |
-| HopitAI/hopper (adaptador upstream) | Adaptador LoRA r16/alpha 32 sobre Qwen3.5-4B | No disponible | No disponible | No disponible | Público en HuggingFace | No ejecutable por sí solo; requiere merge con la base |
-| Qwen/Qwen3.5-4B (base) | 4,21 B (denso, 32 capas) | No disponible | No disponible | safetensors (bf16) | Público en HuggingFace | Modelo base sobre el que se aplica el merge; no incluye el entrenamiento de decisión |
+| mindchain/hopper-GGUF | 4,21 B (denso, 32 capas) | No disponible | `research-and-demo` | GGUF Q4_K_M (2,71 GB) | Público en Hugging Face; 0 descargas, 0 likes | Merge LoRA reproducible; JevBench v1.4.2: 63,5 |
+| HopitAI/hopper (adaptador upstream) | Adaptador LoRA r16/alpha 32 sobre Qwen3.5-4B | No disponible | No disponible | No disponible | Público en Hugging Face | No ejecutable por sí solo; requiere merge con la base |
+| Qwen/Qwen3.5-4B (base) | 4,21 B (denso, 32 capas) | No disponible | No disponible | safetensors (bf16) | Público en Hugging Face | Modelo base sobre el que se aplica el merge; no incluye el entrenamiento de decisión |
 | decider-4b v2 | No disponible | No disponible | No disponible | No disponible | No disponible | Citado por el autor como referencia de calibración (ECE 0,0374) dentro del stack JEV |
 
 No se dispone de datos suficientes para comparar rendimiento en benchmarks estándar entre estos modelos.
@@ -102,9 +102,9 @@ No se dispone de datos suficientes para comparar rendimiento en benchmarks está
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mindchain/hopper-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mindchain/hopper-GGUF
 - Adaptador upstream: https://huggingface.co/HopitAI/hopper
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Kernel de merge y cuantización: https://www.kaggle.com/code/karstenkuhnke/jev-hopper-quant
-- Perfil del autor en HuggingFace: https://huggingface.co/mindchain/models
+- Perfil del autor en Hugging Face: https://huggingface.co/mindchain/models
 - Repositorio Git de llama.cpp (referencia del toolchain): https://github.com/ggml-org/llama.cpp

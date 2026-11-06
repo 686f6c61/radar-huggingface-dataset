@@ -2,7 +2,7 @@
 
 ## Resumen
 
-My-Pet-Dog es un modelo de difusion texto-a-imagen publicado en HuggingFace por el usuario AadityaMathurX. Se trata de un ajuste por DreamBooth sobre un modelo de la familia Stable Diffusion, cuyo objetivo es la personalizacion: el modelo ha aprendido un concepto concreto (un perro mascota) a partir de unas pocas imagenes de referencia, de modo que ese concepto puede invocarse desde el prompt para generar variaciones coherentes del mismo sujeto.
+My-Pet-Dog es un modelo de difusion texto-a-imagen publicado en Hugging Face por el usuario AadityaMathurX. Se trata de un ajuste por DreamBooth sobre un modelo de la familia Stable Diffusion, cuyo objetivo es la personalizacion: el modelo ha aprendido un concepto concreto (un perro mascota) a partir de unas pocas imagenes de referencia, de modo que ese concepto puede invocarse desde el prompt para generar variaciones coherentes del mismo sujeto.
 
 El modelo nace como entrega de un proyecto didactico: la model card indica que fue entrenado siguiendo la sesion "Build your own Gen AI model" de NxtWave, con codigo de entrega GoX19932gAS. El repositorio ocupa 9,9 GB y esta etiquetado con diffusers, safetensors y diffusers:StableDiffusionPipeline, lo que lo situa en la familia de pipelines SD 1.x/2.x (UNet + VAE + codificador de texto CLIP) y no en la familia SDXL, que usa una clase de pipeline distinta.
 
@@ -39,7 +39,7 @@ En cuanto al entrenamiento, la unica informacion disponible es que se trata de u
 - Personalizacion de un sujeto concreto: el concepto aprendido (un perro mascota) puede reproducirse en distintas poses, fondos, estilos e iluminaciones segun se describa en el prompt.
 - Generacion de variaciones controladas del concepto aprendido, util para crear conjuntos de imagenes coherentes de un mismo sujeto.
 - Compatibilidad con flujos habituales de la familia SD: img2img, inpainting y outpainting son tecnicamente posibles si el pipeline y los componentes se cargan por separado, aunque no se documentan en la model card.
-- Etiqueta endpoints_compatible, lo que indica que el repositorio puede desplegarse en HuggingFace Inference Endpoints.
+- Etiqueta endpoints_compatible, lo que indica que el repositorio puede desplegarse en Hugging Face Inference Endpoints.
 - No se documenta soporte de tool calling, function calling, uso como agente, razonamiento multi-paso, ni capacidades de vision, audio o thinking mode. No es un modelo de lenguaje.
 - Capacidades multilingues: no disponibles. El condicionamiento de texto depende del codificador CLIP del modelo base, no documentado.
 
@@ -49,7 +49,7 @@ En cuanto al entrenamiento, la unica informacion disponible es que se trata de u
 - Prototipado de campanas de marketing con un animal concreto: una marca puede generar multiples piezas graficas manteniendo la coherencia visual del sujeto entre todas ellas.
 - Ilustracion de contenido editorial o de blog: generar imagenes consistentes de un mismo personaje animal a lo largo de una serie de articulos o publicaciones.
 - Prueba de concepto de personalizacion para desarrolladores: sirve como caso de estudio reproducible para entender el coste y los requisitos de un ajuste DreamBooth sobre la familia SD.
-- Docencia y formacion en IA generativa: al proceder de un webinar, es un ejemplo practico para explicar el flujo completo de entrenamiento y publicacion de un modelo personalizado en HuggingFace.
+- Docencia y formacion en IA generativa: al proceder de un webinar, es un ejemplo practico para explicar el flujo completo de entrenamiento y publicacion de un modelo personalizado en Hugging Face.
 - Generacion de material para apps de personalizacion: integrado via diffusers en un backend que reciba una descripcion y devuelva una imagen, por ejemplo en una aplicacion de postales o calendarios con mascota.
 - Experimentacion en investigacion sobre olvido catastrofico y preservacion de clase: al ser un ajuste DreamBooth, permite estudiar como el fine-tuning afecta a la diversidad y a la generacion de conceptos no relacionados.
 
@@ -64,7 +64,7 @@ Las estimaciones siguientes se basan en las caracteristicas tipicas de la famili
 - VRAM estimada: en torno a 4 GB en fp16 a 512x512 píxeles para la familia SD 1.x/2.x; entre 6 y 8 GB si se trabaja en fp32 o con resoluciones superiores. El repositorio pesa 9,9 GB, lo que sugiere pesos en fp32 y, por tanto, mayor consumo si se cargan tal cual.
 - GPU recomendadas: cualquier GPU consumer con 8 GB o mas de VRAM (RTX 3060, 3070, 4060, 4070) es suficiente para inferencia a 512x512 en fp16. Para lotes grandes, resoluciones altas o entrenamiento adicional se recomienda RTX 4090, A100 o H100.
 - Compatibilidad con GPU consumer: si, previsiblemente cabe en GPU de gama media si se aplican pesos en fp16 y atencion eficiente. No se documenta el consumo real observado.
-- Opciones de despliegue: diffusers (clase StableDiffusionPipeline), HuggingFace Inference Endpoints (etiqueta endpoints_compatible), y entornos graficos habituales de la comunidad como Automatic1111, ComfyUI o InvokeAI. La exportacion a ONNX, TensorRT o formatos GGUF no esta documentada.
+- Opciones de despliegue: diffusers (clase StableDiffusionPipeline), Hugging Face Inference Endpoints (etiqueta endpoints_compatible), y entornos graficos habituales de la comunidad como Automatic1111, ComfyUI o InvokeAI. La exportacion a ONNX, TensorRT o formatos GGUF no esta documentada.
 - Latencia y throughput: no disponibles. No se publican mediciones de tiempo por imagen ni de imagenes por segundo en ningun hardware.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ La comparativa se realiza contra las familias de modelos abiertos de difusion ma
 
 | Modelo | Parametros (aprox.) | Resolucion nativa | Tipo de ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AadityaMathurX/my-pet-dog | no disponible | no disponible | DreamBooth sobre base no documentada | CreativeML Open RAIL-M | Repositorio HuggingFace, 6 descargas, 1 like |
+| AadityaMathurX/my-pet-dog | no disponible | no disponible | DreamBooth sobre base no documentada | CreativeML Open RAIL-M | Repositorio Hugging Face, 6 descargas, 1 like |
 | stable-diffusion-v1-5 (RunwayML) | ~1,0 B en total (UNet ~860 M) | 512x512 | Modelo base preentrenado | CreativeML Open RAIL-M | Ampliamente soportado en diffusers y herramientas de comunidad |
 | stable-diffusion-2-1 (Stability AI) | ~1,0 B en total | 768x768 | Modelo base preentrenado | CreativeML Open RAIL-M | Ampliamente soportado en diffusers |
 | stable-diffusion-xl-base-1.0 (Stability AI) | ~3,5 B en total (UNet ~2,6 B) | 1024x1024 | Modelo base preentrenado | CreativeML Open RAIL++-M | Estandar de facto para generacion de alta resolucion |
@@ -95,7 +95,7 @@ Frente a los modelos base, my-pet-dog no aporta mejoras de calidad general medib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AadityaMathurX/my-pet-dog
+- Modelo en Hugging Face: https://huggingface.co/AadityaMathurX/my-pet-dog
 - Imagenes de ejemplo citadas en la model card (servidas desde la ruta del autor con identificador distinto, Aaditya456): https://huggingface.co/Aaditya456/my-pet-dog/resolve/main/sample_images/
 - Codigo de entrega del proyecto indicado en la model card: GoX19932gAS
 - Webinar de referencia: "Build your own Gen AI model" de NxtWave (no se proporciona URL en la informacion disponible)

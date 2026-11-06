@@ -101,5 +101,5 @@ No es posible realizar una comparativa fiable con otros modelos, ya que no se co
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/qweqwrqwr145/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/qweqwrqwr145/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (papers, blogs, repositorios de código) en la información disponible.

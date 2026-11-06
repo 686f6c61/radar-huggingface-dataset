@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ktyj9156/LemmatizerModels` es un modelo publicado en HuggingFace por el usuario `ktyj9156`. Su nombre sugiere que está destinado a tareas de lematización, una técnica de procesamiento del lenguaje natural que reduce palabras a su forma base o lema. Sin embargo, la información disponible es extremadamente limitada: la model card está prácticamente vacía, no incluye descripción, ni especificaciones, ni ejemplos de uso, ni métricas de rendimiento.
+El modelo `ktyj9156/LemmatizerModels` es un modelo publicado en Hugging Face por el usuario `ktyj9156`. Su nombre sugiere que está destinado a tareas de lematización, una técnica de procesamiento del lenguaje natural que reduce palabras a su forma base o lema. Sin embargo, la información disponible es extremadamente limitada: la model card está prácticamente vacía, no incluye descripción, ni especificaciones, ni ejemplos de uso, ni métricas de rendimiento.
 
 No se dispone de datos sobre la arquitectura, el tamaño, la longitud de contexto o los idiomas soportados. El modelo se publicó bajo licencia Apache 2.0, lo que permite su uso, modificación y distribución, incluso con fines comerciales, siempre que se mantenga el aviso de licencia. A día de hoy, el repositorio no registra descargas ni interacciones, lo que indica que no ha sido validado por la comunidad ni se ha utilizado en proyectos conocidos.
 
@@ -23,7 +23,7 @@ Por tanto, este modelo no puede considerarse listo para su uso en producción si
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo. No se conocen los datos de entrenamiento, el número de tokens utilizados, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. Tampoco se documentan innovaciones técnicas destacables. El repositorio de HuggingFace no incluye paper, blog técnico ni ningún otro recurso que permita entender cómo fue construido o entrenado.
+No se ha publicado información sobre la arquitectura del modelo. No se conocen los datos de entrenamiento, el número de tokens utilizados, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. Tampoco se documentan innovaciones técnicas destacables. El repositorio de Hugging Face no incluye paper, blog técnico ni ningún otro recurso que permita entender cómo fue construido o entrenado.
 
 ## Capacidades
 
@@ -66,5 +66,5 @@ No disponible. No se han publicado comparativas con otros modelos de lematizaci�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ktyj9156/LemmatizerModels
+- Repositorio en Hugging Face: https://huggingface.co/ktyj9156/LemmatizerModels
 - No se han encontrado papers, blogs, repositorios de código, demos ni otros recursos relevantes asociados al modelo.

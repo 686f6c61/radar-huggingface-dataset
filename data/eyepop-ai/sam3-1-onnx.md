@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eyepop-ai/sam3.1-onnx | no disponible | imagen 1008x1008, prompts de hasta 32 tokens | ONNX (opset 19) | SAM License | HuggingFace, 0 descargas |
+| eyepop-ai/sam3.1-onnx | no disponible | imagen 1008x1008, prompts de hasta 32 tokens | ONNX (opset 19) | SAM License | Hugging Face, 0 descargas |
 | facebook/sam3.1 (original) | no disponible | imagen 1008x1008, prompts de hasta 32 tokens | PyTorch (sam3.1_multiplex.pt) | SAM License | Repositorio de Meta (github.com/facebookresearch/sam3) |
 | SAM 3 (versión previa) | no disponible | no disponible | PyTorch | SAM License | Repositorio de Meta |
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eyepop-ai/sam3.1-onnx
+- Modelo en Hugging Face: https://huggingface.co/eyepop-ai/sam3.1-onnx
 - Modelo base: https://huggingface.co/facebook/sam3.1
 - Repositorio original de SAM 3 / SAM 3.1 (Meta): https://github.com/facebookresearch/sam3
 - Repositorio de exportación (eyepop-pipeline, examples/abilities/sam3/export): https://github.com/eyepop-ai/eyepop-pipeline

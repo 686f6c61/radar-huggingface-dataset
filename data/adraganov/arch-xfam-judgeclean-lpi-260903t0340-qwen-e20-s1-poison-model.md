@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `adraganov/arch-xfam-judgeclean-lpi-260903T0340-qwen-e20-s1-poison-model` es un adaptador LoRA (PEFT) construido sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. Fue publicado por el usuario `adraganov` en HuggingFace, pero la model card asociada está prácticamente vacía: todos los campos descriptivos contienen la marca `[More Information Needed]`, por lo que no se dispone de información oficial sobre su propósito, datos de entrenamiento o rendimiento.
+El modelo `adraganov/arch-xfam-judgeclean-lpi-260903T0340-qwen-e20-s1-poison-model` es un adaptador LoRA (PEFT) construido sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. Fue publicado por el usuario `adraganov` en Hugging Face, pero la model card asociada está prácticamente vacía: todos los campos descriptivos contienen la marca `[More Information Needed]`, por lo que no se dispone de información oficial sobre su propósito, datos de entrenamiento o rendimiento.
 
 El nombre del repositorio sugiere una posible especialización en tareas de evaluación o clasificación (términos como "judge", "clean" o "poison"), pero no hay evidencia documental que lo confirme. El tamaño del repositorio es de 0,1 GB, consistente con un adaptador LoRA de dimensiones reducidas. Dado que se basa en Qwen2.5-7B-Instruct, hereda la arquitectura transformer de 7 mil millones de parámetros y la ventana de contexto de 32 768 tokens de dicho modelo, aunque no se ha verificado que el adaptador preserve todas las capacidades originales.
 
@@ -76,7 +76,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adraganov/arch-xfam-judgeclean-lpi-260903T0340-qwen-e20-s1-poison-model
+- Repositorio en Hugging Face: https://huggingface.co/adraganov/arch-xfam-judgeclean-lpi-260903T0340-qwen-e20-s1-poison-model
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Librería PEFT: https://github.com/huggingface/peft
 - No se han encontrado papers, blogs o demos asociados a este modelo.

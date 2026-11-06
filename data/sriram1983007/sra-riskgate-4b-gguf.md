@@ -1,7 +1,7 @@
 # sriram1983007/SRA-RiskGate-4B-GGUF
 
 ## Resumen
-SRA-RiskGate-4B-GGUF es un repositorio de pesos publicado en HuggingFace por el usuario sriram1983007. El nombre del repositorio sugiere un modelo de aproximadamente 4.000 millones de parametros distribuido en formato GGUF, presumably orientado a inferencia cuantizada en CPU o GPU de gama consumer, aunque esta interpretacion no viene confirmada por la model card, que esta practicamente vacia y solo declara la licencia Apache 2.0.
+SRA-RiskGate-4B-GGUF es un repositorio de pesos publicado en Hugging Face por el usuario sriram1983007. El nombre del repositorio sugiere un modelo de aproximadamente 4.000 millones de parametros distribuido en formato GGUF, presumably orientado a inferencia cuantizada en CPU o GPU de gama consumer, aunque esta interpretacion no viene confirmada por la model card, que esta practicamente vacia y solo declara la licencia Apache 2.0.
 
 En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, se creo el 3 de octubre de 2026 y no incluye documentacion tecnica, hiperparametros, datos de entrenamiento ni resultados de evaluacion. Tampoco se han encontrado fuentes externas, papers, blogs o repositorios asociados en la busqueda web realizada; los resultados devueltos son foros genericos sobre Facebook y no guardan ninguna relacion con el modelo.
 
@@ -65,5 +65,5 @@ No disponible. No se ha identificado el modelo base ni la familia a la que perte
 - Uso en produccion desaconsejado sin auditoria previa del archivo GGUF y sin evaluacion propia de calidad y seguridad.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/sriram1983007/SRA-RiskGate-4B-GGUF
+- Hugging Face: https://huggingface.co/sriram1983007/SRA-RiskGate-4B-GGUF
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la busqueda web realizada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-3-0-2-bioavailability-ma-BEST` es un ajuste fino (fine-tune) de la familia Qwen3 publicado por el usuario jiosephlee en HuggingFace. Con 8.201.221.120 parametros totales, se trata de un transformer denso orientado a generacion de texto, pero especializado en una tarea concreta de quimica computacional: la transferencia de moleculas condicionada por contexto, en este caso aplicada a la prediccion de biodisponibilidad oral. El autor lo presenta como el mejor checkpoint seleccionado por validacion de la ejecucion V10.3.0.2 de tipo "mixed-continuous".
+El modelo `jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-3-0-2-bioavailability-ma-BEST` es un ajuste fino (fine-tune) de la familia Qwen3 publicado por el usuario jiosephlee en Hugging Face. Con 8.201.221.120 parametros totales, se trata de un transformer denso orientado a generacion de texto, pero especializado en una tarea concreta de quimica computacional: la transferencia de moleculas condicionada por contexto, en este caso aplicada a la prediccion de biodisponibilidad oral. El autor lo presenta como el mejor checkpoint seleccionado por validacion de la ejecucion V10.3.0.2 de tipo "mixed-continuous".
 
 El modelo parte de `jiosephlee/Intern-S1-mini-lm`, un checkpoint base derivado a su vez del ecosistema Intern-S1-mini, y ha sido reentrenado durante 10 epocas con semilla 42 y funcion de perdida de objetivos suaves (soft-target loss). La metrica de seleccion fue `knn_binary_macro_f1_at_5` sobre validacion, eligiendose el paso de optimizacion 160 como mejor checkpoint. Esto lo convierte en una pieza especifica dentro de un flujo de trabajo de "assay transfer", es decir, transferencia de conocimiento entre ensayos quimicos.
 
@@ -87,7 +87,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion facil
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-3-0-2-bioavailability-ma-BEST
+- Hugging Face: https://huggingface.co/jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-3-0-2-bioavailability-ma-BEST
 - Modelo base: https://huggingface.co/jiosephlee/Intern-S1-mini-lm
 - Revision del modelo base: fcb667c380ae01f57693a45b4b5c2d331052a107 (no se ha facilitado URL directa)
 - Dataset de entrenamiento (no publicado): jiosephlee/context-conditioned-molecule-transfer-v10.3.0.2-bioavailability-ma-mixed-continuous-intern

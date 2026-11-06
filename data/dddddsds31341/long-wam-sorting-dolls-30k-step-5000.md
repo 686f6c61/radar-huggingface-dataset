@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dddddsds31341/Long-WAM-Sorting-Dolls-30k-Step-5000
+- Hugging Face: https://huggingface.co/dddddsds31341/Long-WAM-Sorting-Dolls-30k-Step-5000
 - Modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM
 - Dataset: https://huggingface.co/datasets/dddddsds31341/sorting-dolls-lerobot
 - Licencia del modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM

@@ -90,7 +90,7 @@ La diferencia clave no es de rendimiento sino de naturaleza: el checkpoint archi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n8-teachers-20261002-144115-00-multiplication-fccbfccba3dc
-- Perfil del autor en HuggingFace: https://huggingface.co/davidheineman
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n8-teachers-20261002-144115-00-multiplication-fccbfccba3dc
+- Perfil del autor en Hugging Face: https://huggingface.co/davidheineman
 - Run de W&B asociado (identificador `9224f8a1`): no se proporciona enlace directo en la informacion disponible.
 - Paper, blog o repositorio del proyecto `rlve`: no disponible.

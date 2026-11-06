@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - Cache KV: con 2048 tokens de contexto, 20 capas y 10 cabezas de clave/valor de dimension 128, la cache en fp16 ocupa aproximadamente 0,2 GB por secuencia.
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente en la practica; el entrenamiento declarado se realizo sobre hardware con un pico de 2250 TFLOPS, coherente con aceleradores de centro de datos de ultima generacion.
 - Cabe en GPU consumer: si, en tarjetas tipo RTX 3060, RTX 4060, RTX 4090 o equivalentes, e incluso en GPUs integradas con suficiente memoria compartida para cuantizaciones agresivas (no publicadas).
-- Opciones de despliegue: al publicarse como `state_dict` de PyTorch, requiere la libreria `nanochat` o una conversion previa a safetensors con cabecera compatible. No hay soporte directo declarado para vLLM, llama.cpp, Ollama ni TGI, ya que no se distribuyen pesos en GGUF ni un `config.json` de HuggingFace Transformers.
+- Opciones de despliegue: al publicarse como `state_dict` de PyTorch, requiere la libreria `nanochat` o una conversion previa a safetensors con cabecera compatible. No hay soporte directo declarado para vLLM, llama.cpp, Ollama ni TGI, ya que no se distribuyen pesos en GGUF ni un `config.json` de Hugging Face Transformers.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -102,14 +102,14 @@ Frente a GPT-2 y Pythia, este checkpoint aporta poco en capacidades pero si en t
 - Rendimiento en castellano previsiblemente muy pobre, puesto que no se declara ningun dato de entrenamiento en espanol.
 - Ambiguedad sobre el vocabulario final: la segunda fase usa un vocabulario de 1028 tokens y la model card no aclara que cabecera contiene `model_001008.pt`, lo que afecta directamente a la usabilidad del checkpoint.
 - Nomenclatura confusa: el nombre del repositorio incluye "100M" y "5pct" sin que la model card explique a que se refiere cada cifra.
-- Formato de pesos no estandar: sin safetensors, sin GGUF y sin integracion con HuggingFace Transformers, el coste de integracion en un pipeline de produccion es alto.
+- Formato de pesos no estandar: sin safetensors, sin GGUF y sin integracion con Hugging Face Transformers, el coste de integracion en un pipeline de produccion es alto.
 - Repositorio sin validacion de la comunidad: cero descargas y cero likes en el momento de redactar la ficha.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero se distribuye sin garantias y sin que el autor documente evaluaciones de seguridad, sesgo o toxicidad.
 - Fechas declaradas en 2026: el repositorio se creo y actualizo el 2026-09-14 segun los metadatos, dato a tener en cuenta al citarlo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexkstern/declref_01_5pct_100M_computematched_adamwppt_1e18_s1_2026-09-14_14-13-12_139362-pt
+- Repositorio en Hugging Face: https://huggingface.co/alexkstern/declref_01_5pct_100M_computematched_adamwppt_1e18_s1_2026-09-14_14-13-12_139362-pt
 - Run de Weights & Biases: https://wandb.ai/alexksternteam/cm100M_best_cells_hfpush_v0/runs/0w3rqn6a
 - Repositorio de nanochat (Karpathy): https://github.com/karpathy/nanochat
 - Papers, blogs o demos adicionales: no disponible. Los resultados de la busqueda web no contienen informacion relacionada con este modelo.

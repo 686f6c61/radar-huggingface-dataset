@@ -72,9 +72,9 @@ No se dispone en la información proporcionada del resto de filas de la tabla de
 
 | Modelo | Parámetros | Contexto | MMLU-Pro | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B | ~4B | 262K (ext. 1M) | 79,1 | Apache 2.0 | HuggingFace (este repo) |
-| Qwen3.5-9B | ~9B | no disponible | 82,5 | Apache 2.0 (presumible) | HuggingFace (Qwen) |
-| Qwen3-30BA3B-Thinking-2507 | 30B (MoE, 3B activos) | no disponible | 80,9 | no disponible | HuggingFace (Qwen) |
+| Qwen3.5-4B | ~4B | 262K (ext. 1M) | 79,1 | Apache 2.0 | Hugging Face (este repo) |
+| Qwen3.5-9B | ~9B | no disponible | 82,5 | Apache 2.0 (presumible) | Hugging Face (Qwen) |
+| Qwen3-30BA3B-Thinking-2507 | 30B (MoE, 3B activos) | no disponible | 80,9 | no disponible | Hugging Face (Qwen) |
 | GPT-OSS-20B | 20B | no disponible | 74,8 | no disponible | no disponible |
 
 Qwen3.5-4B ofrece un equilibrio competitivo: supera a GPT-OSS-20B en MMLU-Pro pese a tener una quinta parte de parámetros, y queda por debajo del Qwen3.5-9B y del Qwen3-Next-80B. Su ventaja principal frente a alternativas de mayor tamaño es el despliegue en hardware de consumo con contexto muy largo.
@@ -91,7 +91,7 @@ Qwen3.5-4B ofrece un equilibrio competitivo: supera a GPT-OSS-20B en MMLU-Pro pe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qsxfgb/Qwen3.5-4B
+- Hugging Face: https://huggingface.co/qsxfgb/Qwen3.5-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Licencia: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Blog oficial Qwen3.5: https://qwen.ai/blog?id=qwen3.5

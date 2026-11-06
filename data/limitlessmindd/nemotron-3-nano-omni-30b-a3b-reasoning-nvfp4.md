@@ -79,7 +79,7 @@ La comparativa se basa en características arquitectónicas y de licencia, ya qu
 
 ## Enlaces
 
-- Repositorio HuggingFace (NVFP4): https://huggingface.co/LimitlessMindd/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4
+- Repositorio Hugging Face (NVFP4): https://huggingface.co/LimitlessMindd/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4
 - Modelo base BF16: https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16
 - Modelo base FP8: https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-FP8
 - Blog de NVIDIA (introducción): https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence

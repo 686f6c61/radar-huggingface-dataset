@@ -93,7 +93,7 @@ No se han identificado en la información disponible otros ajustes finos de "per
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/masterofnone00/qwen3-4b-bakunin-persona-GGUF
+- Repositorio Hugging Face: https://huggingface.co/masterofnone00/qwen3-4b-bakunin-persona-GGUF
 - Unsloth (herramienta usada para el ajuste fino y la conversión a GGUF): https://github.com/unslothai/unsloth
 
 No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demostraciones asociados a este modelo.

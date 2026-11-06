@@ -78,5 +78,5 @@ La comparativa se limita a parámetros totales y disponibilidad; no se puede eva
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r369-offline-dpo-hialpha-merged
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r369-offline-dpo-hialpha-merged
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft

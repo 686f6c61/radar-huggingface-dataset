@@ -72,7 +72,7 @@ No se dispone de información suficiente para comparar estos checkpoints con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-399b
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-399b
 - Paper de OLMo 2 (arXiv): https://arxiv.org/abs/2501.00656
 - Página de OLMo 2 en Ai2: https://allenai.org/olmo2
-- Modelo base OLMo-2-0425-1B en HuggingFace: https://huggingface.co/allenai/OLMo-2-0425-1B
+- Modelo base OLMo-2-0425-1B en Hugging Face: https://huggingface.co/allenai/OLMo-2-0425-1B

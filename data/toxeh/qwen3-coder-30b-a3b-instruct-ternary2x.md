@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ToxeH/Qwen3-Coder-30B-A3B-Instruct-Ternary2x | 30,5B totales / 3,3B activos | 65.536 (config. mlx-serve) | MLX safetensors ternario hibrido | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-Coder-30B-A3B-Instruct | 30,5B totales / 3,3B activos | No disponible en esta ficha | safetensors bfloat16 | apache-2.0 | HuggingFace (modelo base) |
-| Cuantizacion 4-bit estandar (mlx-community) | 30,5B totales / 3,3B activos | No disponible | MLX 4-bit (~17,2 GiB) | apache-2.0 | HuggingFace |
-| Cuantizacion 3-bit estandar (mlx-community) | 30,5B totales / 3,3B activos | No disponible | MLX 3-bit (~12,4 GiB) | apache-2.0 | HuggingFace |
+| ToxeH/Qwen3-Coder-30B-A3B-Instruct-Ternary2x | 30,5B totales / 3,3B activos | 65.536 (config. mlx-serve) | MLX safetensors ternario hibrido | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-Coder-30B-A3B-Instruct | 30,5B totales / 3,3B activos | No disponible en esta ficha | safetensors bfloat16 | apache-2.0 | Hugging Face (modelo base) |
+| Cuantizacion 4-bit estandar (mlx-community) | 30,5B totales / 3,3B activos | No disponible | MLX 4-bit (~17,2 GiB) | apache-2.0 | Hugging Face |
+| Cuantizacion 3-bit estandar (mlx-community) | 30,5B totales / 3,3B activos | No disponible | MLX 3-bit (~12,4 GiB) | apache-2.0 | Hugging Face |
 
 La comparativa se limita a variantes del mismo modelo base porque la información proporcionada no incluye datos de rendimiento frente a otros modelos de codificación de tamaño similar.
 
@@ -92,7 +92,7 @@ La comparativa se limita a variantes del mismo modelo base porque la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ToxeH/Qwen3-Coder-30B-A3B-Instruct-Ternary2x
+- Hugging Face: https://huggingface.co/ToxeH/Qwen3-Coder-30B-A3B-Instruct-Ternary2x
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - mlx-serve: https://github.com/ddalcu/mlx-serve
 - Kernel Metal incluido: `libternary2x_mlxserve.c` (en el repositorio del modelo)

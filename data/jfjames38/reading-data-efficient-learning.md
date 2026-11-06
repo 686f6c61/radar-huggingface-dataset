@@ -28,7 +28,7 @@ Aunque los metadatos de safetensors indican un total de 33.088 parámetros, el t
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura interna del fichero de pesos: se desconoce el número de capas, la dimensión del modelo, el tipo de atención, la presencia de componentes MoE o SSM y la existencia de un tokenizador asociado. La única referencia arquitectónica es la etiqueta `transformer` de los metadatos de HuggingFace, que no va acompañada de `config.json` ni de documentación técnica en el repositorio.
+No hay información publicada sobre la arquitectura interna del fichero de pesos: se desconoce el número de capas, la dimensión del modelo, el tipo de atención, la presencia de componentes MoE o SSM y la existencia de un tokenizador asociado. La única referencia arquitectónica es la etiqueta `transformer` de los metadatos de Hugging Face, que no va acompañada de `config.json` ni de documentación técnica en el repositorio.
 
 Tampoco se documenta proceso de entrenamiento alguno: no se indica volumen de tokens, composición del dataset, uso de RLHF, DPO, SFT ni ninguna otra etapa de ajuste. El README subraya que el material es exploratorio y que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales; si en el futuro se añaden resultados, el autor indica que deberán incluir versiones de dataset, comandos, semillas, hardware y registros en crudo.
 
@@ -94,7 +94,7 @@ No disponible. No se han identificado modelos comparables porque este repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jfjames38/reading-data-efficient-learning
+- Repositorio en Hugging Face: https://huggingface.co/jfjames38/reading-data-efficient-learning
 - `summary.md` (artefacto principal del repositorio): https://huggingface.co/jfjames38/reading-data-efficient-learning/blob/main/summary.md
 - `README.md` del repositorio: https://huggingface.co/jfjames38/reading-data-efficient-learning/blob/main/README.md
 - Paper, blog o repositorio de código asociado: no disponible. La búsqueda web realizada no devolvió resultados relacionados con el modelo; los enlaces obtenidos corresponden a sitios de solitario en neerlandés (patiencer.nl, patience.nl, patience.be) sin relación con el contenido del repositorio.

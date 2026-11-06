@@ -99,7 +99,7 @@ No se dispone de datos numericos comparativos con modelos de otras familias de t
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Infatoshi/DeepSeek-V4.1-Flash-1017-MXFP4-uncensored
+- Repositorio Hugging Face: https://huggingface.co/Infatoshi/DeepSeek-V4.1-Flash-1017-MXFP4-uncensored
 - Variante NVFP4: https://huggingface.co/Infatoshi/DeepSeek-V4.1-Flash-1017-NVFP4-uncensored
 - Variante EXL3 2.875 bpw: https://huggingface.co/Infatoshi/DeepSeek-V4.1-Flash-1017-EXL3-2.875bpw-uncensored
 - Variante EXL3 3.5 bpw: https://huggingface.co/Infatoshi/DeepSeek-V4.1-Flash-1017-EXL3-3.5bpw-uncensored

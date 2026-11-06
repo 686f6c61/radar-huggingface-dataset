@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Riemann-Mendeleev-70b-topo-governed | 70B nominal | No disponible | Apache 2.0 | HuggingFace, 0 descargas | Ajuste muy especializado; sin benchmarks ni idiomas declarados |
+| Riemann-Mendeleev-70b-topo-governed | 70B nominal | No disponible | Apache 2.0 | Hugging Face, 0 descargas | Ajuste muy especializado; sin benchmarks ni idiomas declarados |
 | Llama 3.1 70B (Meta) | 70B | 128k | Llama 3.1 Community License | Ampliamente disponible | Backbone de referencia; benchmarks públicos extensos |
 | Qwen2.5 72B | 72B | 128k | Apache 2.0 | Ampliamente disponible | Alternativa open con benchmarks publicados |
 | Llama 3.3 70B | 70B | 128k | Llama 3.3 Community License | Ampliamente disponible | Generación posterior de Meta con mejoras declaradas |
@@ -86,7 +86,7 @@ La comparación con alternativas solo puede establecerse a nivel nominal (parám
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/frankmorales2020/riemann-mendeleev-70b-topo-governed
+- Hugging Face: https://huggingface.co/frankmorales2020/riemann-mendeleev-70b-topo-governed
 - Modelo base: https://huggingface.co/frankmorales2020/llama-3.1-70b-topo-governed-cbp-rh
 - Código del autor (notebook): https://github.com/frank-morales2020/AST/blob/main/TOPO_GPT_LLAMA_MATH_CHEMISTRY.ipynb
 - Paper: no disponible

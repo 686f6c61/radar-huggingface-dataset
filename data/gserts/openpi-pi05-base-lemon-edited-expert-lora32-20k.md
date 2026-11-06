@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gserts/openpi-pi05-base-lemon-edited-expert-lora32-20k | no disponible | no disponible | Manipulación SO101 (pick-and-place) | Apache 2.0 | HuggingFace (0 descargas) |
+| Gserts/openpi-pi05-base-lemon-edited-expert-lora32-20k | no disponible | no disponible | Manipulación SO101 (pick-and-place) | Apache 2.0 | Hugging Face (0 descargas) |
 | pi05_base (oficial OpenPI) | no disponible | no disponible | Política robótica generalista | no disponible en la información | Checkpoint base del que deriva este modelo |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de `pi05
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gserts/openpi-pi05-base-lemon-edited-expert-lora32-20k
+- Hugging Face: https://huggingface.co/Gserts/openpi-pi05-base-lemon-edited-expert-lora32-20k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Gserts/pick_place_lemon_edited_20261101_165328
 - Framework OpenPI (referenciado en la model card): no disponible enlace directo en la información proporcionada
 - Manifiesto de entrenamiento (`training_manifest.json`) e integración (`openpi_project`): referenciados en la model card, sin URL directa en la información disponible

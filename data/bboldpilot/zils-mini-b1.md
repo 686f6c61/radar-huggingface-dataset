@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Zils mini b1 (`bboldpilot/zils-mini-b1`) | 4,54B | no disponible | Apache 2.0 | HuggingFace, safetensors | Reempaquetado para subred Zils; sin benchmarks publicados |
-| `tattrongvu/Jeffan-4B-2010` (modelo base) | ~4B | no disponible | Apache 2.0 (heredada) | HuggingFace | Fuente original de los pesos de lenguaje; documentación más completa |
-| Qwen3.5-4B | ~4B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace | Origen de la torre de visión incluida en este repositorio |
+| Zils mini b1 (`bboldpilot/zils-mini-b1`) | 4,54B | no disponible | Apache 2.0 | Hugging Face, safetensors | Reempaquetado para subred Zils; sin benchmarks publicados |
+| `tattrongvu/Jeffan-4B-2010` (modelo base) | ~4B | no disponible | Apache 2.0 (heredada) | Hugging Face | Fuente original de los pesos de lenguaje; documentación más completa |
+| Qwen3.5-4B | ~4B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face | Origen de la torre de visión incluida en este repositorio |
 
 No se dispone de datos de rendimiento comparado entre estos modelos en la información proporcionada.
 
@@ -78,11 +78,11 @@ No se dispone de datos de rendimiento comparado entre estos modelos en la inform
 - Riesgo de alucinación: no cuantificado; al no haber benchmarks ni evaluaciones publicadas, no puede estimarse.
 - Licencia: Apache 2.0 permite uso comercial, pero se recomienda conservar los ficheros LICENSE/NOTICE incluidos y verificar la procedencia de la torre de visión de Qwen3.5-4B, cuya licencia específica no se detalla en esta ficha.
 - Sin cuantizaciones oficiales: quien quiera desplegar en GPUs de consumo deberá generar sus propios GGUF o cuantizaciones, con el riesgo de degradación que ello implica.
-- Fecha de creación del repositorio: 2026-11-04, según los metadatos de HuggingFace; conviene verificar que la revisión del modelo base referenciada sigue disponible.
+- Fecha de creación del repositorio: 2026-11-04, según los metadatos de Hugging Face; conviene verificar que la revisión del modelo base referenciada sigue disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bboldpilot/zils-mini-b1
+- Repositorio en Hugging Face: https://huggingface.co/bboldpilot/zils-mini-b1
 - Modelo base: https://huggingface.co/tattrongvu/Jeffan-4B-2010
 - Revisión del modelo base referenciada: `937a008f86f4a20a903d628f22ffad3e3f431d2c`
 - Torre de visión de referencia: https://huggingface.co/Qwen/Qwen3.5-4B

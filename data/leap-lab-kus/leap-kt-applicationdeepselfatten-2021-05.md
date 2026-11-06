@@ -87,7 +87,7 @@ El AUC de 0.7273 en ASSIST2009 es inferior a los ~0.75 publicados originalmente 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LEAP-LAB-KUS/leap-kt-applicationdeepselfatten-2021-05
+- Repositorio Hugging Face: https://huggingface.co/LEAP-LAB-KUS/leap-kt-applicationdeepselfatten-2021-05
 - Organización GitHub: https://github.com/LEAP-LAB-KUS
 - Repositorio leap-kt-toolkit: https://github.com/LEAP-LAB-KUS/leap-kt-toolkit
 - Laboratorio LEAP (Tsinghua): https://www.leaplab.ai/

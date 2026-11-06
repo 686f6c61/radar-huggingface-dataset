@@ -79,5 +79,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/wangzhang/Qwen3.8-27B-abliterated)
+- [Modelo en Hugging Face](https://huggingface.co/wangzhang/Qwen3.8-27B-abliterated)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

@@ -68,5 +68,5 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HR26kk/ULTRON-mini-512
+- Hugging Face: https://huggingface.co/HR26kk/ULTRON-mini-512
 - No se han encontrado papers, repositorios adicionales ni demos relacionados en la busqueda web.

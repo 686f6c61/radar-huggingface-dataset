@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ilyass200404/a2c-PandaReachDense-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaReachDense-v3`, correspondiente a la familia de tareas de manipulacion robotica de panda-gym. Lo publica el usuario de HuggingFace `ilyass200404` y esta construido con la libreria stable-baselines3, el framework de referencia para algoritmos de RL basados en PyTorch. No se trata de un modelo de lenguaje: es una politica de control que mapea observaciones del estado del brazo robotico a acciones de movimiento.
+El modelo `ilyass200404/a2c-PandaReachDense-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaReachDense-v3`, correspondiente a la familia de tareas de manipulacion robotica de panda-gym. Lo publica el usuario de Hugging Face `ilyass200404` y esta construido con la libreria stable-baselines3, el framework de referencia para algoritmos de RL basados en PyTorch. No se trata de un modelo de lenguaje: es una politica de control que mapea observaciones del estado del brazo robotico a acciones de movimiento.
 
 El problema que resuelve es acotado y clasico en investigacion en robotica: acercar el efector de un brazo Franka Emika Panda simulado hasta una posicion objetivo en el espacio cartesiano, con una funcion de recompensa densa (basada en la distancia negativa al objetivo). El unico resultado declarado por el autor es una recompensa media de -0.21 +/- 0.12 en el entorno de entrenamiento, marcada como no verificada.
 
@@ -53,7 +53,7 @@ El entorno `PandaReachDense-v3` simula un brazo Franka Emika Panda en MuJoCo con
 - Pruebas de regresion de entornos y wrappers: al tener una recompensa media declarada, puede usarse para detectar cambios de comportamiento al actualizar versiones de MuJoCo, Gymnasium o panda-gym.
 - Evaluacion de tecnicas de *reward shaping* y HER: la recompensa densa negativa del entorno es un banco de pruebas habitual para medir si una tecnica acelera la convergencia frente a la linea base A2C.
 - Experimentos de sim-a-real acotados: la politica puede transferirse a un montaje real solo tras validar la variabilidad del entorno, dado que no se documenta *domain randomization* ni robustez frente a ruido.
-- Docencia y talleres de HuggingFace Hub: ejemplifica el flujo `huggingface_sb3.load_from_hub` para descargar un agente desde el Hub, aunque la model card no incluya el codigo de carga funcional.
+- Docencia y talleres de Hugging Face Hub: ejemplifica el flujo `huggingface_sb3.load_from_hub` para descargar un agente desde el Hub, aunque la model card no incluya el codigo de carga funcional.
 
 ## Benchmarks y rendimiento
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| a2c-PandaReachDense-v3 (este) | A2C | PandaReachDense-v3 | no disponible | no aplica | no disponible | HuggingFace Hub, 0 descargas |
+| a2c-PandaReachDense-v3 (este) | A2C | PandaReachDense-v3 | no disponible | no aplica | no disponible | Hugging Face Hub, 0 descargas |
 | Alternativa PPO en panda-gym | PPO | PandaReachDense-v3 | no disponible | no aplica | no disponible | entrenamiento propio |
 | Alternativa SAC/TD3 con HER | SAC / TD3 + HER | PandaReachDense-v3 | no disponible | no aplica | no disponible | entrenamiento propio |
 | Alternativa DDPG | DDPG | PandaReachDense-v3 | no disponible | no aplica | no disponible | entrenamiento propio |
@@ -102,7 +102,7 @@ En terminos cualitativos, A2C es un metodo *on-policy* con gradiente de politica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ilyass200404/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/ilyass200404/a2c-PandaReachDense-v3
 - stable-baselines3 (citado en la model card): https://github.com/DLR-RM/stable-baselines3
 - Entorno pandas-gym, origen de `PandaReachDense-v3` (no citado explicitamente en la model card): https://github.com/qgallouedec/panda-gym
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces disponibles son los anteriores.

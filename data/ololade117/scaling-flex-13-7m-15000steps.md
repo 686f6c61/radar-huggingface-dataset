@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ololade117/scaling-flex-13.7M-15000steps es un modelo de lenguaje de pequeno tamano (13.663.232 parametros, aproximadamente 13,7 M) publicado en HuggingFace por el usuario Ololade117 (Ololade Ogunleye). El identificador del repositorio sugiere un experimento dentro de una serie de estudios de escalado ("scaling"), con una variante denominada "flex" y un entrenamiento de 15.000 pasos, y existe un modelo hermano publicado por el mismo autor con el nombre scaling-normal-13.7M-15000steps, lo que apunta a un par de ablaciones comparables.
+Ololade117/scaling-flex-13.7M-15000steps es un modelo de lenguaje de pequeno tamano (13.663.232 parametros, aproximadamente 13,7 M) publicado en Hugging Face por el usuario Ololade117 (Ololade Ogunleye). El identificador del repositorio sugiere un experimento dentro de una serie de estudios de escalado ("scaling"), con una variante denominada "flex" y un entrenamiento de 15.000 pasos, y existe un modelo hermano publicado por el mismo autor con el nombre scaling-normal-13.7M-15000steps, lo que apunta a un par de ablaciones comparables.
 
 La model card publicada no contiene informacion tecnica: se limita a la plantilla autogenerada por la integracion PyTorchModelHubMixin, con los campos "Code", "Paper" y "Docs" marcados como "[More Information Needed]". No se documentan arquitectura, dataset de entrenamiento, idiomas, contexto ni resultados de evaluacion.
 
@@ -45,7 +45,7 @@ Los siguientes escenarios son usos plausibles dado el tamano del modelo (13,7 M 
 - Investigacion sobre leyes de escalado: el nombre del repositorio y la existencia de una variante "normal" con el mismo numero de pasos sugieren un experimento de comparacion de variantes arquitectonicas o de recetas de entrenamiento a pequena escala. El modelo serviria como punto de datos dentro de una curva de escalado, no como sistema desplegable.
 - Ablaciones y reproducibilidad: con 13,7 M de parametros y un coste de entrenamiento bajo, es adecuado para replicar experimentos en una unica GPU de consumo y comparar curvas de perdida frente a la variante scaling-normal.
 - Pruebas de infraestructura de entrenamiento e inferencia: sirve como modelo de humo ("smoke test") para validar pipelines de tokenizacion, checkpointing, carga con PyTorchModelHubMixin y serializacion en safetensors antes de escalar a modelos mayores.
-- Prototipado educativo: util para demostrar el ciclo completo de publicacion de un modelo en HuggingFace (entrenamiento, subida, model card, carga desde el Hub) en cursos o talleres.
+- Prototipado educativo: util para demostrar el ciclo completo de publicacion de un modelo en Hugging Face (entrenamiento, subida, model card, carga desde el Hub) en cursos o talleres.
 - Inferencia en dispositivos muy limitados: por su tamano, podria ejecutarse en CPU o en hardware embebido si el autor documentase el tokenizador y la interfaz de generacion, algo que hoy no ocurre.
 - Punto de partida para fine-tuning experimental: un modelo de 13,7 M de parametros permite iterar rapidamente sobre tecnicas de ajuste fino (LoRA, adaptadores) midiendo su efecto a bajo coste computacional, siempre que se documente la tarea objetivo.
 
@@ -103,9 +103,9 @@ La comparacion con modelos de la misma franja de parametros no es posible en ter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ololade117/scaling-flex-13.7M-15000steps
-- Variante hermana en HuggingFace: https://huggingface.co/Ololade117/scaling-normal-13.7M-15000steps
-- Perfil del autor en HuggingFace: https://huggingface.co/Ololade117
+- Modelo en Hugging Face: https://huggingface.co/Ololade117/scaling-flex-13.7M-15000steps
+- Variante hermana en Hugging Face: https://huggingface.co/Ololade117/scaling-normal-13.7M-15000steps
+- Perfil del autor en Hugging Face: https://huggingface.co/Ololade117
 - Documentacion de PyTorchModelHubMixin: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Repositorio de codigo: no disponible

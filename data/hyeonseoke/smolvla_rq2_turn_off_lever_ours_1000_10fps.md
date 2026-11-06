@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 Los siguientes valores proceden de fuentes publicas generales de cada proyecto y no han sido verificados en la informacion proporcionada; se marcan como aproximados. El dato de SmolVLA es el unico medido directamente sobre este repositorio.
 
-| Modelo | Parametros | Tipo | Licencia | Disponibilidad en HuggingFace |
+| Modelo | Parametros | Tipo | Licencia | Disponibilidad en Hugging Face |
 |---|---|---|---|---|
 | SmolVLA (este checkpoint) | 450.046.176 (~450 M), dato real | VLA compacto, fine-tune de tarea unica | Apache 2.0 | Si, repositorio publico con 0 descargas |
 | SmolVLA base (lerobot/smolvla_base) | No disponible en la informacion | VLA preentrenado | No disponible en la informacion | Si |
@@ -111,7 +111,7 @@ Diferencias clave: frente a los VLA de proposito general, este checkpoint es ent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HyeonseokE/smolvla_rq2_turn_off_lever_ours_1000_10fps
+- Modelo en Hugging Face: https://huggingface.co/HyeonseokE/smolvla_rq2_turn_off_lever_ours_1000_10fps
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/HyeonseokE/rq2_turn_off_lever_ours_100_10fps
 - Articulo de SmolVLA (arXiv:2506.01844): https://huggingface.co/papers/2506.01844

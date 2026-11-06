@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | 0,8 B (base) + LoRA | no disponible | Decisión de locomoción en simulador 2D | Apache 2.0 | HuggingFace, repo de 0,0 GB |
-| Qwen3.5-0.8B (base) | 0,8 B | no disponible | Generación de texto general | Apache 2.0 | HuggingFace |
+| LINK-01 (este modelo) | 0,8 B (base) + LoRA | no disponible | Decisión de locomoción en simulador 2D | Apache 2.0 | Hugging Face, repo de 0,0 GB |
+| Qwen3.5-0.8B (base) | 0,8 B | no disponible | Generación de texto general | Apache 2.0 | Hugging Face |
 | Política PPO original (brain.json) | no disponible | no disponible | Decisión de locomoción en simulador 2D | no disponible | Repositorio CONNECT TYCOON |
 | Otros adaptadores LoRA de control robótico | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Luna002-Luna75/connectailab-rl-lunaluna-v3-link01)
+- [Modelo en Hugging Face](https://huggingface.co/Luna002-Luna75/connectailab-rl-lunaluna-v3-link01)
 - [Repositorio CONNECT TYCOON (código de entrenamiento)](https://github.com/wonseokjung/connect-tycoon)
 - [Cuaderno de Colab de entrenamiento](https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb)
 - [Entorno web de aprendizaje CONNECT AI WORLD](https://www.ezerai.xyz/robot-lab/world/)

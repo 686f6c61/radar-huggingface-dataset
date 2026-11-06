@@ -4,7 +4,7 @@
 
 Este repositorio, publicado por el usuario muhamad-geosurge bajo el identificador `invert-polarity-de973b91-e839-4e03-9d5a-723018d80fd7`, contiene un ajuste fino (fine-tune) derivado de `mistralai/Mistral-7B-v0.3`. Se trata de un modelo denso de tipo transformer decoder de 7.248.031.744 parametros, alojado en formato safetensors (14,5 GB de repositorio, coherente con pesos en fp16) y etiquetado para su uso con vLLM. El nombre del repositorio (``invert-polarity``) sugiere una modificacion de comportamiento o alineacion sobre el modelo base, aunque la model card no documenta el proceso de entrenamiento ni el objetivo real del ajuste.
 
-La model card incluida es una copia literal de la documentacion oficial de `Mistral-7B-Instruct-v0.3`, no una descripcion del modelo aqui publicado. Por tanto, los unicos datos verificables son los metadatos de HuggingFace: modelo base, licencia Apache 2.0, tamano de parametros y libreria de inferencia declarada. Cualquier caracteristica funcional (contexto, capacidades de tool calling, idiomas) debe considerarse heredada de la familia Mistral-7B y no confirmada para este artefacto concreto.
+La model card incluida es una copia literal de la documentacion oficial de `Mistral-7B-Instruct-v0.3`, no una descripcion del modelo aqui publicado. Por tanto, los unicos datos verificables son los metadatos de Hugging Face: modelo base, licencia Apache 2.0, tamano de parametros y libreria de inferencia declarada. Cualquier caracteristica funcional (contexto, capacidades de tool calling, idiomas) debe considerarse heredada de la familia Mistral-7B y no confirmada para este artefacto concreto.
 
 Su relevancia ahora es limitada: registra cero descargas y cero likes en el momento de la consulta, y el autor no aporta documentacion propia. Es un ejemplo tipico de fine-tune comunitario no verificado, util como caso de estudio sobre trazabilidad de artefactos, pero no recomendable para produccion sin una evaluacion previa.
 
@@ -43,7 +43,7 @@ No hay informacion disponible sobre el proceso de entrenamiento de este fine-tun
 
 ## Casos de uso
 
-- Evaluacion comparativa de fine-tunes comunitarios: usar el modelo como ejemplo de artefacto derivado de Mistral-7B con documentacion heredada, para auditar como se propaga (o se pierde) la trazabilidad en HuggingFace.
+- Evaluacion comparativa de fine-tunes comunitarios: usar el modelo como ejemplo de artefacto derivado de Mistral-7B con documentacion heredada, para auditar como se propaga (o se pierde) la trazabilidad en Hugging Face.
 - Investigacion sobre modificacion de comportamiento: dado el nombre ``invert-polarity``, podria emplearse en estudios sobre como un ajuste fino altera la polaridad o el tono de las respuestas, siempre acompanado de una evaluacion propia.
 - Servicio de inferencia con vLLM: dado que la libreria declarada es vLLM, el modelo puede desplegarse directamente con ese motor para pruebas de throughput, asumiendo pesos en fp16.
 - Base para nuevos fine-tunes experimentales: al ser Apache 2.0 y derivar de Mistral-7B-v0.3, puede servir como punto de partida en entornos de investigacion, con la advertencia de que sus capacidades reales son desconocidas.
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este repositorio (invert-polarity...) | 7,25 B | No disponible (base: 32k) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune sin documentacion propia |
-| mistralai/Mistral-7B-v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base, denso, GQA |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Version instruct con tool calling; la model card de este repositorio la reproduce |
-| meta-llama/Llama-3.1-8B-Instruct | 8 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace | Alternativa de tamano similar con contexto mayor |
+| Este repositorio (invert-polarity...) | 7,25 B | No disponible (base: 32k) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune sin documentacion propia |
+| mistralai/Mistral-7B-v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base, denso, GQA |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Version instruct con tool calling; la model card de este repositorio la reproduce |
+| meta-llama/Llama-3.1-8B-Instruct | 8 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face | Alternativa de tamano similar con contexto mayor |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-de973b91-e839-4e03-9d5a-723018d80fd7
+- Repositorio en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-de973b91-e839-4e03-9d5a-723018d80fd7
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Modelo referenciado en la model card copiada: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio de inferencia de Mistral: https://github.com/mistralai/mistral-inference

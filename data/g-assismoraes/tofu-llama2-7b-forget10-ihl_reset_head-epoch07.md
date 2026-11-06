@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_head-epoch07` es un checkpoint de investigacion derivado de Llama 2 7B, publicado por el usuario g-assismoraes en HuggingFace. No se trata de un modelo de proposito general, sino de un artefacto experimental dentro del marco TOFU (Task of Fictitious Unlearning), un benchmark academico para evaluar tecnicas de *machine unlearning*: el proceso de eliminar selectivamente el conocimiento de un conjunto de datos de entrenamiento sin reentrenar el modelo desde cero.
+`g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_head-epoch07` es un checkpoint de investigacion derivado de Llama 2 7B, publicado por el usuario g-assismoraes en Hugging Face. No se trata de un modelo de proposito general, sino de un artefacto experimental dentro del marco TOFU (Task of Fictitious Unlearning), un benchmark academico para evaluar tecnicas de *machine unlearning*: el proceso de eliminar selectivamente el conocimiento de un conjunto de datos de entrenamiento sin reentrenar el modelo desde cero.
 
 El modelo parte de `locuslab/tofu_ft_llama2-7b`, un Llama 2 7B ajustado sobre el dataset TOFU, y aplica una intervencion concreta: reinicializa los embeddings de entrada y la cabeza LM desde `NousResearch/Llama-2-7b-chat-hf`, mientras conserva el resto de pesos del modelo ajustado. El entrenamiento combina una perdida de tipo IHL sobre el conjunto "forget" (los datos que se pretende olvidar) con entropia cruzada sobre el conjunto "retain" (los datos que deben preservarse). El checkpoint corresponde a la epoca 7 de 20.
 
@@ -83,7 +83,7 @@ La comparacion relevante es frente al modelo base `locuslab/tofu_ft_llama2-7b`: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_head-epoch07
+- Modelo en Hugging Face: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_head-epoch07
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de origen de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Modelo original Llama 2 7B: https://huggingface.co/meta-llama/Llama-2-7b-hf

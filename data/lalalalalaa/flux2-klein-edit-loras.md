@@ -69,7 +69,7 @@ Como unica verificacion documentada, el autor indica que el adaptador `zoom/` co
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `lalalalalaa/flux2-klein-edit-loras` (este repositorio) | LoRAs sobre base 4B | no aplica | sin benchmarks publicados; verificacion cualitativa frente a mflux 0.22 | Apache 2.0 | HuggingFace, formato MLX (`epics-klein-lora/1`), 0 descargas y 0 likes en el momento de la consulta |
+| `lalalalalaa/flux2-klein-edit-loras` (este repositorio) | LoRAs sobre base 4B | no aplica | sin benchmarks publicados; verificacion cualitativa frente a mflux 0.22 | Apache 2.0 | Hugging Face, formato MLX (`epics-klein-lora/1`), 0 descargas y 0 likes en el momento de la consulta |
 | `fal/flux-2-klein-4b-base-edit-lora` | base 4B | no disponible | no disponible | Apache 2.0 (segun las fuentes de los LoRAs incluidos) | API en fal.ai; latencia estimada inferior a 10 s por imagen |
 | `fal/flux-2-klein-9b-base-edit-lora` | base 9B | no disponible | no disponible | no disponible | API en fal.ai, con soporte de LoRA personalizados |
 | `wavespeed-ai/flux-2-klein-9b/edit-lora` | base 9B | no disponible | se anuncia mayor calidad de edicion y mejor comprension de prompts que la variante de 4B, sin cifras publicadas | no disponible | API REST en WaveSpeedAI |
@@ -85,11 +85,11 @@ Como unica verificacion documentada, el autor indica que el adaptador `zoom/` co
 - Idiomas: no se declara soporte multilingue; todos los prompts documentados estan en ingles y las escalas recomendadas estan ajustadas a esos textos concretos.
 - Restricciones de licencia: los adaptadores y sus fuentes figuran como Apache 2.0, lo que en principio permite uso comercial, pero conviene verificar la licencia de cada repositorio de origen y la del modelo base antes de un despliegue en produccion.
 - Trazabilidad y credito: los pesos pertenecen a sus autores originales (lrzjason, fal, eric-venti-seeds); este repositorio los redistribuye reformateados e incluye el SHA-256 del fichero de origen en los metadatos para poder comprobarlos.
-- Madurez: el repositorio registra 0 descargas y 0 likes, no declara pipeline en HuggingFace y no se ha actualizado desde su creacion, por lo que carece de validacion externa.
+- Madurez: el repositorio registra 0 descargas y 0 likes, no declara pipeline en Hugging Face y no se ha actualizado desde su creacion, por lo que carece de validacion externa.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lalalalalaa/flux2-klein-edit-loras
+- Repositorio en Hugging Face: https://huggingface.co/lalalalalaa/flux2-klein-edit-loras
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Fuente del adaptador `keep/`: https://huggingface.co/lrzjason/Consistance_Edit_Lora
 - Espejo de la fuente anterior: https://huggingface.co/xocialize/consistence-edit-FLUX.2-klein-4B-lora

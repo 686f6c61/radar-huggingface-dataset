@@ -105,7 +105,7 @@ La comparacion de rendimiento entre estas opciones no es posible: el adaptador a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfaplus/public-sft-qwen9b-v2
+- Modelo en Hugging Face: https://huggingface.co/alfaplus/public-sft-qwen9b-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/CohereLabs/aya_dataset
 - Paper de Aya (arXiv:2402.06619): https://arxiv.org/abs/2402.06619
 - Licencia Apache-2.0: https://opensource.org/license/apache-2-0

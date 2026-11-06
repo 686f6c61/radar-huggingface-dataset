@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llebedev/dino-generation-rc1` es un repositorio experimental publicado por el usuario `llebedev` en HuggingFace que contiene una implementación propia de una arquitectura denominada Dino orientada a tareas de generación. No se trata de un modelo entrenado ni evaluado, sino de un andamiaje reproducible: incluye el código Python ejecutable, un fichero de configuración de arquitectura, un recetario de entrenamiento por defecto y un checkpoint de inicialización válido para pruebas de humo. La propia model card indica explícitamente que la variante "giant" es un punto de partida reproducible y no una release de un modelo entrenado.
+`llebedev/dino-generation-rc1` es un repositorio experimental publicado por el usuario `llebedev` en Hugging Face que contiene una implementación propia de una arquitectura denominada Dino orientada a tareas de generación. No se trata de un modelo entrenado ni evaluado, sino de un andamiaje reproducible: incluye el código Python ejecutable, un fichero de configuración de arquitectura, un recetario de entrenamiento por defecto y un checkpoint de inicialización válido para pruebas de humo. La propia model card indica explícitamente que la variante "giant" es un punto de partida reproducible y no una release de un modelo entrenado.
 
 El repositorio no reclama ninguna puntuación de benchmark y advierte de que el checkpoint no ha sido entrenado ni auditado en términos de robustez, equidad o transferencia de dominio. Los metadatos de safetensors registran un total de 16,576 parámetros, aunque la unidad no se especifica en la información disponible, lo que impide determinar con certeza si se trata de miles o millones. El tamaño del repositorio figura como 0,0 GB y el modelo acumula 0 descargas y 0 likes en el momento de redactar esta ficha.
 
@@ -86,12 +86,12 @@ No se han identificado modelos comparables en la informacion disponible. El repo
 - Idiomas soportados: no disponibles, por lo que no puede garantizarse cobertura multilingüe de ningún tipo.
 - Longitud de contexto: no disponible; no puede asumirse ventana larga.
 - Licencia MIT: permite uso comercial, modificación y redistribución con atribución, pero la propia model card advierte de que deben revisarse por separado los términos de los datos de origen si se emplean datasets externos.
-- Carga no estándar: al ser una implementación personalizada, las API automáticas de HuggingFace y de servidores de inferencia requerirán un adaptador explícito.
+- Carga no estándar: al ser una implementación personalizada, las API automáticas de Hugging Face y de servidores de inferencia requerirán un adaptador explícito.
 - Sin soporte ni mantenimiento declarado: 0 descargas y 0 likes, sin historial de issues ni comunidad asociada.
 - Producción: no apto para ningún caso de uso en producción mientras no exista un checkpoint entrenado y evaluado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llebedev/dino-generation-rc1
+- Modelo en Hugging Face: https://huggingface.co/llebedev/dino-generation-rc1
 - Ficheros del repositorio: `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Papers, blogs, repositorios o demos adicionales: no disponible. La búsqueda web realizada no devolvió ningún resultado relacionado con este modelo ni con la arquitectura Dino descrita; los resultados obtenidos correspondían a sitios de contenido para adultos sin ninguna relación con el repositorio.

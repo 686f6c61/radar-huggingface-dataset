@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks comparativos adicionales (MMLU, Hum
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-trocrscratch-elastic1-s42 | 22,4 M | no disponible | HTR hebreo | MIT | HuggingFace |
+| cyttic/hmt-trocrscratch-elastic1-s42 | 22,4 M | no disponible | HTR hebreo | MIT | Hugging Face |
 | Otras variantes del estudio `htr-metrics-transfer` | no disponible | no disponible | HTR hebreo | no disponible | no disponible |
-| TrOCR base (Microsoft) | ~334 M | no disponible | OCR/HTR impreso y manuscrito | MIT | HuggingFace |
+| TrOCR base (Microsoft) | ~334 M | no disponible | OCR/HTR impreso y manuscrito | MIT | Hugging Face |
 | Modelos HTR específicos para hebreo | no disponible | no disponible | HTR hebreo | no disponible | no disponible |
 
 La comparación con TrOCR base es orientativa: este modelo es una versión entrenada desde cero y mucho más pequeña, por lo que su rendimiento no es directamente equiparable. No se dispone de datos de benchmarks de las alternativas en la información proporcionada.
@@ -97,7 +97,7 @@ La comparación con TrOCR base es orientativa: este modelo es una versión entre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-trocrscratch-elastic1-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-trocrscratch-elastic1-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados detallados: `results.json` (referenciado en la model card, disponible en el repositorio del modelo)
 - Estudio `htr-metrics-transfer`: no disponible como enlace público en la información proporcionada

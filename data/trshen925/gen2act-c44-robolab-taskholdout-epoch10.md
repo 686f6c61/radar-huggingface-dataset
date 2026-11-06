@@ -76,8 +76,8 @@ No disponible. No se ha encontrado información sobre modelos comparables en la 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/trshen925/gen2act-c44-robolab-taskholdout-epoch10
+- Repositorio de Hugging Face: https://huggingface.co/trshen925/gen2act-c44-robolab-taskholdout-epoch10
 - Repositorio de GitHub de Gen2Act: https://github.com/trshen925/gen2act
 - Página del proyecto Gen2Act: https://homangab.github.io/gen2act/
 - Paper de Gen2Act (arXiv): https://arxiv.org/html/2409.16283v1
-- Perfil de HuggingFace del autor: https://huggingface.co/trshen925/models
+- Perfil de Hugging Face del autor: https://huggingface.co/trshen925/models

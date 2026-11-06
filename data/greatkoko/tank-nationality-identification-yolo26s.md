@@ -121,7 +121,7 @@ Notas del autor: las filas de ONNX y TensorRT se midieron con una exportación a
 
 | Modelo | Parametros | Contexto / entrada | mAP50 en esta tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLO26s (este modelo) | 9,47 M | Imagen 640×640 | 0,9923 | AGPL-3.0 | Pesos `.pt` y `.onnx` en HuggingFace |
+| YOLO26s (este modelo) | 9,47 M | Imagen 640×640 | 0,9923 | AGPL-3.0 | Pesos `.pt` y `.onnx` en Hugging Face |
 | YOLOv4 (Lim y Kang, 2021) | no disponible | Imagen (resolución no indicada) | 0,9918 (validación aleatoria) | no disponible | No distribuido con este modelo |
 | Otros detectores de la familia Ultralytics (YOLOv8s, YOLO11s) | no disponible | Imagen | no disponible | AGPL-3.0 en Ultralytics | Públicos, pero sin resultados publicados en esta tarea |
 
@@ -138,12 +138,12 @@ No se han publicado en la información disponible resultados de otros detectores
 - Sesgo de dominio: no se documenta la distribución geográfica, temporal ni de sensores de las fotos (no hay imágenes térmicas, nocturnas, aéreas ni de satélite), por lo que la generalización a otras modalidades es desconocida.
 - Licencia AGPL-3.0: el uso comercial exige cumplir las obligaciones de copyleft de AGPL, incluida la publicación del código fuente si se ofrece el modelo como servicio en red; conviene revisarlo con asesoría legal antes de integrarlo en producto.
 - Las imágenes de entrenamiento no se distribuyen por derechos de autor, de modo que el modelo no es completamente reproducible a partir de este repositorio.
-- Uso dual: se trata de un modelo de identificación de blancos militares. Su uso en sistemas de armas o en apoyo a decisiones letales queda fuera del ámbito razonable de investigación y puede estar sujeto a normativa de control de exportación y a las políticas de uso de HuggingFace.
+- Uso dual: se trata de un modelo de identificación de blancos militares. Su uso en sistemas de armas o en apoyo a decisiones letales queda fuera del ámbito razonable de investigación y puede estar sujeto a normativa de control de exportación y a las políticas de uso de Hugging Face.
 - Las ingenierías TensorRT son específicas de cada GPU y no se incluyen; el ONNX end-to-end puede puntuar distinto de las cifras de la tabla de despliegue.
 - No entiende texto ni instrucciones: no debe esperarse ninguna capacidad de razonamiento, explicación o filtrado semántico de sus salidas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/greatkoko/tank-nationality-identification-YOLO26s
+- Modelo en Hugging Face: https://huggingface.co/greatkoko/tank-nationality-identification-YOLO26s
 - Artículo de referencia: Lim, S. y Kang, D. (2021), "Identifications and Evaluation of Tank Nationality using YOLO Algorithm", KIISE Transactions on Computing Practices, 27(12), 555-562 — https://doi.org/10.5626/KTCP.2021.27.12.555
 - Repositorio, paper, blog o demo adicionales: no disponible; la búsqueda web realizada no devolvió resultados relevantes sobre este modelo (únicamente páginas sin relación con la consulta).

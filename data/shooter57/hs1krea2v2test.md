@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shooter57/hs1krea2v2test es un adaptador LoRA de texto a imagen publicado en HuggingFace por el usuario Shooter57. Se trata de un ajuste fino ligero (Low-Rank Adaptation) sobre el modelo base krea/Krea-2-Raw, pensado para inyectar un estilo o concepto concreto que se activa mediante la palabra gatillo `hs1`. El repositorio ocupa 0,5 GB y esta etiquetado con la libreria diffusers y la plantilla `template:diffusion-lora`.
+Shooter57/hs1krea2v2test es un adaptador LoRA de texto a imagen publicado en Hugging Face por el usuario Shooter57. Se trata de un ajuste fino ligero (Low-Rank Adaptation) sobre el modelo base krea/Krea-2-Raw, pensado para inyectar un estilo o concepto concreto que se activa mediante la palabra gatillo `hs1`. El repositorio ocupa 0,5 GB y esta etiquetado con la libreria diffusers y la plantilla `template:diffusion-lora`.
 
 El modelo no incluye una model card descriptiva mas alla de las instrucciones minimas de uso (palabra gatillo y enlace de descarga). No se documenta el conjunto de datos de entrenamiento, el rango del adaptador, la resolucion nativa ni el proposito artistico concreto del LoRA. Tampoco se especifica licencia, idiomas soportados ni resultados de evaluacion.
 
@@ -70,10 +70,10 @@ La model card solo incluye un widget de ejemplo con una imagen de salida (`image
 
 | Modelo | Tipo | Modelo base | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Shooter57/hs1krea2v2test | LoRA texto a imagen | krea/Krea-2-Raw | No disponible | No aplica | No publicado | No disponible | HuggingFace, 0 descargas |
-| Shooter57/kl1krea2v1test | LoRA texto a imagen | Krea-2 (presunto, no confirmado) | No disponible | No aplica | No publicado | No disponible | HuggingFace |
-| Shooter57/pg1krea2v1test | LoRA texto a imagen | Krea-2 (presunto, no confirmado) | No disponible | No aplica | No publicado | No disponible | HuggingFace |
-| Shooter57/sf1krea2v1test | LoRA texto a imagen | Krea-2 (presunto, no confirmado) | No disponible | No aplica | No publicado | No disponible | HuggingFace |
+| Shooter57/hs1krea2v2test | LoRA texto a imagen | krea/Krea-2-Raw | No disponible | No aplica | No publicado | No disponible | Hugging Face, 0 descargas |
+| Shooter57/kl1krea2v1test | LoRA texto a imagen | Krea-2 (presunto, no confirmado) | No disponible | No aplica | No publicado | No disponible | Hugging Face |
+| Shooter57/pg1krea2v1test | LoRA texto a imagen | Krea-2 (presunto, no confirmado) | No disponible | No aplica | No publicado | No disponible | Hugging Face |
+| Shooter57/sf1krea2v1test | LoRA texto a imagen | Krea-2 (presunto, no confirmado) | No disponible | No aplica | No publicado | No disponible | Hugging Face |
 
 No se dispone de datos tecnicos de los modelos comparables mas alla de su identificador y su naturaleza de LoRA; cualquier comparacion cuantitativa seria especulativa.
 
@@ -92,7 +92,7 @@ No se dispone de datos tecnicos de los modelos comparables mas alla de su identi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shooter57/hs1krea2v2test
+- Modelo en Hugging Face: https://huggingface.co/Shooter57/hs1krea2v2test
 - Archivos del repositorio: https://huggingface.co/Shooter57/hs1krea2v2test/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - LoRA relacionado (kl1krea2v1test): https://huggingface.co/Shooter57/kl1krea2v1test

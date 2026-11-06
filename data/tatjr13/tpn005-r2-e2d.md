@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tpn005-r2-e2d es un modelo de lenguaje publicado en HuggingFace por el usuario tatjr13, distribuido exclusivamente en formato GGUF y etiquetado como conversacional. El recuento de parametros declarado en los metadatos de safetensors es de 8.489.553.920 parametros (aproximadamente 8,49 mil millones), lo que lo situa en la categoria de modelos densos de gama media, comparable en tamano a la familia Llama 3.1 8B o a Mistral 7B. El repositorio ocupa 6,3 GB, un volumen coherente con una cuantizacion de entre 5 y 6 bits del modelo completo, aunque no se detalla que archivos GGUF concretos contiene.
+tpn005-r2-e2d es un modelo de lenguaje publicado en Hugging Face por el usuario tatjr13, distribuido exclusivamente en formato GGUF y etiquetado como conversacional. El recuento de parametros declarado en los metadatos de safetensors es de 8.489.553.920 parametros (aproximadamente 8,49 mil millones), lo que lo situa en la categoria de modelos densos de gama media, comparable en tamano a la familia Llama 3.1 8B o a Mistral 7B. El repositorio ocupa 6,3 GB, un volumen coherente con una cuantizacion de entre 5 y 6 bits del modelo completo, aunque no se detalla que archivos GGUF concretos contiene.
 
 La informacion publica del repositorio es minima: no se declara licencia, pipeline, idiomas soportados ni arquitectura. Las etiquetas indican que se ha generado con cuantizacion mediante imatrix (calibracion de importancia de matrices), una tecnica habitual para reducir la perdida de calidad en cuantizaciones agresivas, y que el modelo esta pensado para uso conversacional. El sufijo "r2" sugiere una segunda revision o iteracion dentro de una serie de modelos del mismo autor, aunque esto no se confirma en la ficha.
 
@@ -30,7 +30,7 @@ Tampoco se documenta el proceso de entrenamiento: se desconoce el volumen de tok
 ## Capacidades
 
 - Generacion de texto conversacional: es la unica capacidad declarada explicitamente mediante el tag "conversational".
-- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que el modelo puede servirse a traves de la API de inferencia de HuggingFace.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que el modelo puede servirse a traves de la API de inferencia de Hugging Face.
 - Cuantizacion lista para despliegue local: al distribuirse en GGUF, es compatible con llama.cpp, Ollama, LM Studio y otros runners que consumen este formato.
 - Tool calling / function calling: no disponible.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
@@ -43,7 +43,7 @@ Tampoco se documenta el proceso de entrenamiento: se desconoce el volumen de tok
 - Asistente conversacional de bajo coste en entornos controlados: el tag conversacional y su tamano moderado permiten desplegarlo en una sola GPU para atender consultas de un equipo interno, con la advertencia de que no hay evaluacion de calidad publicada.
 - Experimentacion con cuantizacion imatrix: resulta util como caso de estudio para comparar la degradacion de un mismo modelo cuantizado con y sin calibracion por importancia de matrices.
 - Base para fine-tuning posterior: sus 8,49 mil millones de parametros son un tamano manejable para LoRA o QLoRA en una GPU de 24 GB, aunque se desconoce la licencia y por tanto la legalidad de redistribuir derivados.
-- Servicio de inferencia autoalojado mediante endpoints compatibles: el tag correspondiente sugiere que puede desplegarse en la infraestructura de inferencia de HuggingFace para pruebas internas.
+- Servicio de inferencia autoalojado mediante endpoints compatibles: el tag correspondiente sugiere que puede desplegarse en la infraestructura de inferencia de Hugging Face para pruebas internas.
 - Evaluacion comparativa de modelos de la comunidad: sirve como punto de referencia en estudios sobre la calidad de checkpoints no documentados frente a modelos con ficha tecnica completa.
 - Generacion de texto offline en entornos sin conectividad: al ser un archivo GGUF autocontenido, puede ejecutarse en maquinas aisladas con llama.cpp sin dependencias de red.
 
@@ -65,7 +65,7 @@ Las cifras siguientes son estimaciones derivadas del recuento de parametros (8,4
   - Q2_K: en torno a 3,5 GB, con degradacion de calidad apreciable.
 - GPU recomendadas: RTX 4090 (24 GB), RTX 3090 (24 GB) o RTX 4080 (16 GB) para cuantizaciones de 4 a 8 bits con contexto moderado; A100 40 GB o H100 para FP16 y lotes grandes.
 - Compatibilidad con GPU consumer: si cabe en tarjetas de 8 a 12 GB si se emplean cuantizaciones Q4 o inferiores, y en tarjetas de 16 a 24 GB con cuantizaciones Q5 a Q8 sin problema.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp y cualquier runtime que soporte GGUF; tambien es compatible con endpoints de HuggingFace segun sus tags. No se confirma soporte para vLLM o TGI, que trabajan preferentemente con safetensors.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp y cualquier runtime que soporte GGUF; tambien es compatible con endpoints de Hugging Face segun sus tags. No se confirma soporte para vLLM o TGI, que trabajan preferentemente con safetensors.
 - Latencia y throughput: no disponibles. No hay datos publicados de tokens por segundo ni de latencia por peticion.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ La comparativa se establece por cercania en numero de parametros. Los datos de l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| tpn005-r2-e2d | 8,49 mil millones | no disponible | no disponible | GGUF en HuggingFace | no disponible |
+| tpn005-r2-e2d | 8,49 mil millones | no disponible | no disponible | GGUF en Hugging Face | no disponible |
 | Llama 3.1 8B | 8,03 mil millones | 128.000 tokens | Llama 3.1 Community License | safetensors y GGUF | Si, amplia bateria de benchmarks |
 | Qwen2.5 7B | 7,62 mil millones | 128.000 tokens | Apache 2.0 (segun variante) | safetensors y GGUF | Si, amplia bateria de benchmarks |
 | Mistral 7B v0.3 | 7,25 mil millones | 32.000 tokens | Apache 2.0 | safetensors y GGUF | Si, benchmarks publicados |
@@ -95,6 +95,6 @@ La diferencia principal no esta en el tamano, sino en la trazabilidad: los tres 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tatjr13/tpn005-r2-e2d
-- Perfil del autor en HuggingFace: https://huggingface.co/tatjr13
+- Repositorio en Hugging Face: https://huggingface.co/tatjr13/tpn005-r2-e2d
+- Perfil del autor en Hugging Face: https://huggingface.co/tatjr13
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada.

@@ -94,7 +94,7 @@ La comparativa muestra que Gemma4-E4B-GLM-NPU2 es el unico modelo de la lista di
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Atomic-Germ/Gemma4-E4B-GLM-NPU2](https://huggingface.co/Atomic-Germ/Gemma4-E4B-GLM-NPU2)
+- Repositorio Hugging Face: [Atomic-Germ/Gemma4-E4B-GLM-NPU2](https://huggingface.co/Atomic-Germ/Gemma4-E4B-GLM-NPU2)
 - Motor FastFlowLM: [https://fastflowlm.com](https://fastflowlm.com)
 - Modelo base: [google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it)
 - Model card oficial de Gemma 4: [Google AI for Developers](https://ai.google.dev/gemma/docs/core/model_card_4)

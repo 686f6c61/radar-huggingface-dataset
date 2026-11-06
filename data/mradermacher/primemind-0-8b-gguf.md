@@ -28,12 +28,12 @@ La informacion publicada es extremadamente limitada: la model card del repositor
 
 No se dispone de informacion sobre la arquitectura del modelo. La model card del repositorio de cuantizaciones se limita a indicar que se trata de "static quants" del modelo CrowdMind/PrimeMind-0.8B, sin describir la topologia de red, el tipo de atencion, la composicion del dataset de entrenamiento, el numero de tokens vistos ni si se aplicaron tecnicas de ajuste como RLHF, DPO o SFT. El recuento de 752.393.024 parametros y la ausencia de mencion a expertos apuntan a un modelo denso de tamano reducido, pero esto es una inferencia a partir de los metadatos, no un dato confirmado.
 
-Los unicos detalles tecnicos verificables proceden de los metadatos de conversion incluidos en la model card: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`. Estos campos indican que la conversion se realizo desde pesos de HuggingFace (safetensors) mediante el flujo habitual de llama.cpp y que la cuantizacion se aplico a nivel de tensores. No hay informacion sobre innovaciones tecnicas (atencion lineal, decodificacion especulativa, MoE, SSM ni arquitecturas hibridas).
+Los unicos detalles tecnicos verificables proceden de los metadatos de conversion incluidos en la model card: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`. Estos campos indican que la conversion se realizo desde pesos de Hugging Face (safetensors) mediante el flujo habitual de llama.cpp y que la cuantizacion se aplico a nivel de tensores. No hay informacion sobre innovaciones tecnicas (atencion lineal, decodificacion especulativa, MoE, SSM ni arquitecturas hibridas).
 
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` es la unica capacidad declarada explicitamente en los metadatos del repositorio.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse en infraestructuras compatibles con la API de inferencia de HuggingFace, aunque no se detalla el formato de plantilla de chat.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse en infraestructuras compatibles con la API de inferencia de Hugging Face, aunque no se detalla el formato de plantilla de chat.
 - Ejecucion en llama.cpp: al estar en formato GGUF, el modelo es ejecutable en llama.cpp y en los runners derivados (Ollama, LM Studio, koboldcpp, entre otros).
 - Razonamiento complejo, codigo, matematicas: no disponible (sin datos ni benchmarks publicados).
 - Tool calling / function calling: no disponible.

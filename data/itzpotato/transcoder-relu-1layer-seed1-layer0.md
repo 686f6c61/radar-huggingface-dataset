@@ -76,6 +76,6 @@ No se dispone de comparativas directas con otros transcoders publicados en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itzPotato/transcoder-relu-1layer-seed1-layer0
+- Modelo en Hugging Face: https://huggingface.co/itzPotato/transcoder-relu-1layer-seed1-layer0
 - Modelo base: https://huggingface.co/itzPotato/arithmetic-relu-1layer-seed1
 - Paper de referencia sobre transcoders: https://arxiv.org/abs/2406.11944

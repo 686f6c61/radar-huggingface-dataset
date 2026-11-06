@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`tedo001/lofop` es un repositorio de modelo publicado en HuggingFace por el usuario `tedo001`. La informacion disponible es minima: la model card no contiene mas que la declaracion de licencia `apache-2.0`, sin descripcion del modelo, sin arquitectura declarada, sin tamano de parametros, sin longitud de contexto y sin idiomas soportados. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el 15 de septiembre de 2026, sin cambios posteriores.
+`tedo001/lofop` es un repositorio de modelo publicado en Hugging Face por el usuario `tedo001`. La informacion disponible es minima: la model card no contiene mas que la declaracion de licencia `apache-2.0`, sin descripcion del modelo, sin arquitectura declarada, sin tamano de parametros, sin longitud de contexto y sin idiomas soportados. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el 15 de septiembre de 2026, sin cambios posteriores.
 
-No es posible determinar que problema resuelve, a que categoria funcional pertenece (texto, vision, audio, embeddings) ni cual es su relevancia tecnica actual, ya que el autor no ha publicado ninguna documentacion asociada. El campo `pipeline` de HuggingFace aparece como no disponible, lo que impide incluso clasificar la tarea prevista del modelo.
+No es posible determinar que problema resuelve, a que categoria funcional pertenece (texto, vision, audio, embeddings) ni cual es su relevancia tecnica actual, ya que el autor no ha publicado ninguna documentacion asociada. El campo `pipeline` de Hugging Face aparece como no disponible, lo que impide incluso clasificar la tarea prevista del modelo.
 
 La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a paginas de inicio de sesion del servicio de streaming Paramount+, sin ninguna conexion con `tedo001/lofop`. En consecuencia, esta ficha se limita a documentar la ausencia de informacion verificable y a advertir sobre los riesgos de utilizar un artefacto sin especificaciones publicadas.
 
@@ -72,7 +72,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| tedo001/lofop | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas | Sin model card ni documentacion |
+| tedo001/lofop | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas | Sin model card ni documentacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se pueden seleccionar sin conocer la categoria del modelo |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tedo001/lofop
+- Hugging Face: https://huggingface.co/tedo001/lofop
 - Paper: no disponible.
 - Blog o anuncio: no disponible.
 - Repositorio de codigo: no disponible.

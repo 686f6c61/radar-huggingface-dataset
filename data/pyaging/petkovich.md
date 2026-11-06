@@ -4,7 +4,7 @@
 
 El modelo `petkovich` es un reloj epigenético de envejecimiento (aging clock) desarrollado por Daniel A. Petkovich y colaboradores en 2017, y publicado en *Cell Metabolism*. Se trata de un modelo de regresión de elastic net que estima la edad cronológica de ratones (*Mus musculus*) a partir de perfiles de metilación de ADN obtenidos mediante secuenciación de bisulfito reducida (RRBS) en sangre total. El reloj fue validado demostrando que su predicción de edad biológica se ralentiza en intervenciones que extienden la vida, como la restricción calórica y el enanismo.
 
-A diferencia de los modelos de lenguaje de gran escala, este no es un transformer ni un modelo generativo: es un modelo estadístico clásico de aprendizaje supervisado que asigna pesos a sitios CpG específicos del genoma para predecir la edad. Su relevancia actual reside en su uso dentro de la librería `pyaging`, que integra múltiples relojes de envejecimiento para análisis biológicos en investigación de longevidad. El repositorio en HuggingFace actúa como un paquete de distribución del modelo entrenado, listo para ser utilizado con la API de `pyaging`.
+A diferencia de los modelos de lenguaje de gran escala, este no es un transformer ni un modelo generativo: es un modelo estadístico clásico de aprendizaje supervisado que asigna pesos a sitios CpG específicos del genoma para predecir la edad. Su relevancia actual reside en su uso dentro de la librería `pyaging`, que integra múltiples relojes de envejecimiento para análisis biológicos en investigación de longevidad. El repositorio en Hugging Face actúa como un paquete de distribución del modelo entrenado, listo para ser utilizado con la API de `pyaging`.
 
 ## Especificaciones tecnicas
 
@@ -44,7 +44,7 @@ El proceso de entrenamiento implicó la selección de características (CpGs) me
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El artículo original de Petkovich et al. (2017) reporta métricas de error (como el error absoluto medio entre edad predicha y cronológica) y la correlación con intervenciones de longevidad, pero estos datos no se incluyen en la model card de HuggingFace. Se recomienda consultar la publicación original para obtener valores cuantitativos.
+No se han publicado resultados de benchmarks en la información disponible. El artículo original de Petkovich et al. (2017) reporta métricas de error (como el error absoluto medio entre edad predicha y cronológica) y la correlación con intervenciones de longevidad, pero estos datos no se incluyen en la model card de Hugging Face. Se recomienda consultar la publicación original para obtener valores cuantitativos.
 
 ## Requisitos de hardware
 
@@ -68,6 +68,6 @@ Existen otros relojes epigenéticos para ratón y humano, como el reloj de Horva
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pyaging/petkovich
+- Repositorio en Hugging Face: https://huggingface.co/pyaging/petkovich
 - Documentación de pyaging (Clock Catalogue): https://pyaging.readthedocs.io
 - Publicación original: Petkovich, D. A., et al. "Using DNA methylation profiling to evaluate biological age and longevity interventions." *Cell Metabolism* 25.4 (2017): 954-960. DOI: https://doi.org/10.1016/j.cmet.2017.03.016

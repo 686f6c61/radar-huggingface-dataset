@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-novice-v3-link01 | Adaptador LoRA sobre 0,8 B | No disponible | Decisión de locomoción (4 opciones) | Apache 2.0 | HuggingFace |
+| connectailab-rl-novice-v3-link01 | Adaptador LoRA sobre 0,8 B | No disponible | Decisión de locomoción (4 opciones) | Apache 2.0 | Hugging Face |
 | Agente PPO original (`brain.json`) | No disponible | No aplica | Decisión de locomoción (4 opciones) | No disponible | Entorno web CONNECT AI WORLD |
-| Qwen3.5-0.8B (base) | 0,8 B | No disponible | Lenguaje general | No disponible en la información | HuggingFace |
+| Qwen3.5-0.8B (base) | 0,8 B | No disponible | Lenguaje general | No disponible en la información | Hugging Face |
 
 No se dispone de información sobre otros adaptadores de decisión robótica comparables en la documentación proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de información sobre otros adaptadores de decisión robótica com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lookarooka/connectailab-rl-novice-v3-link01
+- Modelo en Hugging Face: https://huggingface.co/lookarooka/connectailab-rl-novice-v3-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

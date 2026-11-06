@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rldx_1_robodojo_preset_luna_b64_60k es un modelo de politica de bajo nivel (low-level policy) para robotica, desarrollado por el usuario Myungkyu y publicado en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo base RLWRLD/RLDX-1-PT, un modelo de tipo VLA (Vision-Language-Action) que traduce observaciones visuales, propiocepcion y una instruccion de texto en acciones motoras. El ajuste se ha realizado sobre el dataset Myungkyu/RoboDojo-preset-luna, compuesto por demostraciones con etiquetas densas de subtareas.
+rldx_1_robodojo_preset_luna_b64_60k es un modelo de politica de bajo nivel (low-level policy) para robotica, desarrollado por el usuario Myungkyu y publicado en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo base RLWRLD/RLDX-1-PT, un modelo de tipo VLA (Vision-Language-Action) que traduce observaciones visuales, propiocepcion y una instruccion de texto en acciones motoras. El ajuste se ha realizado sobre el dataset Myungkyu/RoboDojo-preset-luna, compuesto por demostraciones con etiquetas densas de subtareas.
 
 El modelo resuelve tareas de manipulacion bimanual en un entorno de sobremesa (tabletop), concretamente 8 tareas de horizonte largo (long-horizon) con 100 demostraciones reales cada una. La arquitectura declarada es RLDX-1-PT, con una longitud de video de 4, tres vistas de camara en vivo (cabeza y munecas izquierda/derecha) y sin ranura de keyframe. El checkpoint corresponde al paso 60000 con batch 64.
 
@@ -81,7 +81,7 @@ No se dispone de datos verificables de parametros, contexto, rendimiento, licenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/rldx_1_robodojo_preset_luna_b64_60k
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/rldx_1_robodojo_preset_luna_b64_60k
 - Dataset de ajuste: https://huggingface.co/datasets/Myungkyu/RoboDojo-preset-luna
 - Modelo base: https://huggingface.co/RLWRLD/RLDX-1-PT
 - Resultados de busqueda web: no se han encontrado enlaces relevantes (los resultados devueltos corresponden a paginas de banca en neerlandes sin relacion con el modelo).

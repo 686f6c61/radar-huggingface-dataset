@@ -12,7 +12,7 @@ La relevancia de esta publicación es limitada y de carácter más metodológico
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible con detalle; los tags de HuggingFace declaran `llama` y `qwen3`, y la model card describe el trabajo como "Kanha Qwen3 experiment" (discrepancia no resuelta en la informacion disponible) |
+| Arquitectura | No disponible con detalle; los tags de Hugging Face declaran `llama` y `qwen3`, y la model card describe el trabajo como "Kanha Qwen3 experiment" (discrepancia no resuelta en la informacion disponible) |
 | Parametros totales | 2.516.756.480 (~2,52 mil millones), segun los safetensors publicados |
 | Parametros activos | No aplica segun la informacion disponible (no se declara arquitectura MoE) |
 | Longitud de contexto | 4096 tokens de longitud maxima de secuencia durante el entrenamiento; contexto nativo del modelo base: no disponible |
@@ -115,12 +115,12 @@ Diferencias relevantes: los tres modelos alternativos declaran licencia explicit
 - Idioma: solo ingles; no hay soporte declarado para castellano ni otros idiomas, lo que incluye el riesgo de degradacion o cambio de idioma en las respuestas.
 - Licencia no disponible: no se declara licencia del checkpoint ni del modelo base en la informacion proporcionada. Es imprescindible verificar las condiciones del modelo base (openbmb/MiniCPM5-2B) antes de cualquier uso comercial.
 - Sin artefacto MLC validado y sin cualificacion en navegador: el autor advierte que la puntuacion determinista y el benchmark en servidor no equivalen a una validacion en el navegador o dispositivo objetivo.
-- Ambiguedad de arquitectura: los tags de HuggingFace mezclan `llama` y `qwen3`, y la model card habla de "Kanha Qwen3 experiment" sobre un modelo base MiniCPM; conviene inspeccionar `config.json` antes de asumir compatibilidad con segun que runtimes.
+- Ambiguedad de arquitectura: los tags de Hugging Face mezclan `llama` y `qwen3`, y la model card habla de "Kanha Qwen3 experiment" sobre un modelo base MiniCPM; conviene inspeccionar `config.json` antes de asumir compatibilidad con segun que runtimes.
 - Riesgo de respuestas incompletas, incorrectas o desactualizadas: el autor lo indica de forma explicita y recomienda revisar las salidas, probar casos de fallo representativos y cualificar el runtime exacto antes de cualquier uso orientado a usuario final.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kanha-AI/kanha-minicpm5-2b-grounded-matched-2ep-20260910
+- Modelo en Hugging Face: https://huggingface.co/Kanha-AI/kanha-minicpm5-2b-grounded-matched-2ep-20260910
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Sitio del autor: https://kanha.ai
 - Artefactos de procedencia citados en la model card (dentro del repositorio): `research/run-manifest.json`, `research/training-config.yaml`, `research/publication-inventory.json`, `research/evaluation/metrics.json`, `research/evaluation/evaluation-manifest.json`

@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Vistas / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pi05-real-workbench-taco-3view (este modelo) | 4,14 B | 3 vistas (exterior, muneca, keyframe), imagenes 224x126 con padding a 224x224 | no disponible | Publicado en HuggingFace, 0 descargas y 0 likes |
+| pi05-real-workbench-taco-3view (este modelo) | 4,14 B | 3 vistas (exterior, muneca, keyframe), imagenes 224x126 con padding a 224x224 | no disponible | Publicado en Hugging Face, 0 descargas y 0 likes |
 | lerobot/pi05_base (modelo base) | no disponible | no disponible | no disponible | Publico como base del ajuste fino |
 | OpenVLA (referencia de la categoria VLA) | ~7 B segun documentacion publica, no verificado en esta busqueda | 1 vista | Llama 2 Community | Publico |
 | NVIDIA GR00T N1 (referencia de la categoria VLA) | del orden de 2 B en su variante de modelo base, no verificado en esta busqueda | no disponible | NVIDIA Open Model License | Publico |
@@ -90,7 +90,7 @@ Las cifras de OpenVLA y GR00T N1 proceden de conocimiento general de la categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaehyunkang/pi05-real-workbench-taco-3view-8b7104f0-60k
+- Modelo en Hugging Face: https://huggingface.co/jaehyunkang/pi05-real-workbench-taco-3view-8b7104f0-60k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/real_workbench-taco-keyframe-gemini
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Tokenizador de referencia: https://huggingface.co/google/paligemma-3b-pt-224

@@ -71,7 +71,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible:
 
 | Modelo | Parametros | Entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| upar2027-track2 | no disponible (3 ViT: L/16, H+/16, CLIP L/14) | 176x96 y 224x112 | mADM 0.6817 en Track 2 | dinov3-license + MIT; codigo Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| upar2027-track2 | no disponible (3 ViT: L/16, H+/16, CLIP L/14) | 176x96 y 224x112 | mADM 0.6817 en Track 2 | dinov3-license + MIT; codigo Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | DINOv3 ViT-L/16 (backbone base) | no disponible | no especificado | no disponible | DINOv3 License | pesos publicados por Meta |
 | OpenAI CLIP ViT-L/14 (backbone base) | no disponible | no especificado | no disponible | MIT | pesos publicados por OpenAI |
 | Otros participantes del Track 2 de UPAR 2027 | no disponible | no disponible | no disponible en la informacion | no disponible | leaderboard de Codabench |
@@ -80,7 +80,7 @@ La comparacion cuantitativa con alternativas de la misma categoria no es posible
 
 ## Limitaciones y advertencias
 
-- Licencia: los pesos heredan la DINOv3 License y la licencia MIT de CLIP, con el campo `license: other` en HuggingFace. La DINOv3 License no es una licencia de codigo abierto estandar, por lo que debe revisarse antes de cualquier uso comercial. El codigo es Apache 2.0, pero eso no cubre los pesos.
+- Licencia: los pesos heredan la DINOv3 License y la licencia MIT de CLIP, con el campo `license: other` en Hugging Face. La DINOv3 License no es una licencia de codigo abierto estandar, por lo que debe revisarse antes de cualquier uso comercial. El codigo es Apache 2.0, pero eso no cubre los pesos.
 - Uso biometrico y vigilancia: la tarea es recuperacion de personas; su aplicacion en espacio publico esta sujeta al RGPD y a la normativa europea de IA. Requiere base juridica, evaluacion de impacto y minimizacion de datos.
 - Sesgos de dataset: el entrenamiento se limita a PA100k, PETA y Market-1501, conjuntos con sesgos conocidos de geografia, iluminacion, resolucion y demografia. El rendimiento puede degradarse fuera de esas condiciones.
 - Alucinacion en sentido estricto no aplica, pero si falsos positivos: el modelo puede devolver candidatos que no cumplen los atributos, con especial riesgo en atributos poco frecuentes o ambiguos.
@@ -92,6 +92,6 @@ La comparacion cuantitativa con alternativas de la misma categoria no es posible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tannguyenbmt47/upar2027-track2
+- Modelo en Hugging Face: https://huggingface.co/tannguyenbmt47/upar2027-track2
 - Repositorio de codigo y scripts de entrenamiento: https://github.com/tannguyenbmt47/upar2027-track2
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo, al challenge ni a DINOv3 en la busqueda realizada; los resultados devueltos no guardan relacion con el contenido de esta ficha.

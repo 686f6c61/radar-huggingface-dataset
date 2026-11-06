@@ -71,8 +71,8 @@ No disponible. No se han identificado modelos borradores de decodificación espe
 
 ## Enlaces
 
-- HuggingFace del modelo GGUF: https://huggingface.co/Anbeeld/DeepSeek-V4-Flash-DSpark-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-DSpark
+- Hugging Face del modelo GGUF: https://huggingface.co/Anbeeld/DeepSeek-V4-Flash-DSpark-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-DSpark
 - Modelo principal DeepSeek-V4-Flash: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Paper técnico de DeepSeek-V4: https://arxiv.org/abs/2606.19348
 - Repositorio de BeeLlama.cpp: https://github.com/Anbeeld/beellama.cpp

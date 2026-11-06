@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sock-heist-v1` es una política de control motriz entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo de código abierto microduck, desarrollado por Pollen Robotics. El modelo lo publica el usuario SccHy en HuggingFace bajo el identificador `SccHy/microduck-sock-heist-v1` y se distribuye como un fichero ONNX autocontenido que se carga directamente en una ranura de política del demonio `robotctl` del robot. No es un modelo de lenguaje: es un controlador de locomoción que mapea observaciones de 61 dimensiones a 14 acciones a 50 Hz.
+`sock-heist-v1` es una política de control motriz entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo de código abierto microduck, desarrollado por Pollen Robotics. El modelo lo publica el usuario SccHy en Hugging Face bajo el identificador `SccHy/microduck-sock-heist-v1` y se distribuye como un fichero ONNX autocontenido que se carga directamente en una ranura de política del demonio `robotctl` del robot. No es un modelo de lenguaje: es un controlador de locomoción que mapea observaciones de 61 dimensiones a 14 acciones a 50 Hz.
 
 La política se entrenó con el framework mjlab (entorno de RL basado en MuJoCo) sobre la tarea `Mjlab-SockHeist6m-MicroDuck`, partiendo de la base `mjlab-microduck 0.1.0`, en el checkpoint 999 con semilla 1. La model card la describe como una política «perpetua»: ejecuta una marcha de forma continua hasta que se le indica lo contrario, en lugar de resolver un episodio concreto.
 
@@ -25,7 +25,7 @@ Su relevancia es acotada pero clara para quien trabaje con el ecosistema microdu
 | Frecuencia de control | 50 Hz |
 | Libreria | microduck |
 | Pipeline | robotics |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -81,6 +81,6 @@ No disponible. No se han identificado en la información proporcionada otras pol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SccHy/microduck-sock-heist-v1
+- Modelo en Hugging Face: https://huggingface.co/SccHy/microduck-sock-heist-v1
 - Repositorio microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Documentación del manifiesto de políticas (`docs/policy-manifest.md` en el repositorio del demonio microduck): no se proporciona URL directa en la información disponible.

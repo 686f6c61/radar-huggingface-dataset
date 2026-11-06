@@ -67,10 +67,10 @@ No se dispone de información sobre modelos comparables que compartan la misma e
 
 - El checkpoint incluido no ha sido entrenado, por lo que no tiene capacidad real de resolver ninguna tarea.
 - No se ha auditado para robustez, equidad ni transferencia de dominio.
-- La implementación es experimental y requiere un adaptador de carga; las APIs genéricas de HuggingFace no pueden cargarlo automáticamente.
+- La implementación es experimental y requiere un adaptador de carga; las APIs genéricas de Hugging Face no pueden cargarlo automáticamente.
 - El modelo no debe utilizarse en producción para inferencia ni para cualquier aplicación que requiera resultados fiables.
 - La licencia BSD-3-Clause permite uso comercial con atribución y una cláusula de no responsabilidad, pero deben revisarse los términos de los datos externos si se usan con el modelo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshuabrow99/multitask-demo
+- Hugging Face: https://huggingface.co/joshuabrow99/multitask-demo

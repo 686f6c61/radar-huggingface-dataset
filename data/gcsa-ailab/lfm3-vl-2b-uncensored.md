@@ -92,7 +92,7 @@ Las metricas corresponden al modelo BF16; las variantes cuantizadas no han sido 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GCSA-AiLab/LFM3-VL-2B-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/GCSA-AiLab/LFM3-VL-2B-Uncensored
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Variante GGUF: https://huggingface.co/GCSA-AiLab/LFM3-VL-2B-Uncensored-GGUF
 - Variante MLX: https://huggingface.co/GCSA-AiLab/LFM3-VL-2B-Uncensored-MLX

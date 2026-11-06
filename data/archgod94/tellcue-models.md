@@ -102,7 +102,7 @@ No se dispone de datos comparativos de calidad (PSNR, SSIM, PESQ, FID) ni de rec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/archgod94/tellcue-models
+- Repositorio en Hugging Face: https://huggingface.co/archgod94/tellcue-models
 - Practical-RIFE (hzwer, MIT): https://github.com/hzwer/Practical-RIFE
 - vs-rife, release con `flownet_v4.17.lite.pkl` (HolyWu, MIT): https://github.com/HolyWu/vs-rife
 - DeepFilterNet (Hendrik Schroeter): https://github.com/Rikorose/DeepFilterNet

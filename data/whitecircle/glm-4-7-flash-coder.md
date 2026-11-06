@@ -27,7 +27,7 @@ El modelo se entreno con Halo, el framework de post-entrenamiento que whitecircl
 
 ## Arquitectura y entrenamiento
 
-Arquitectura transformer con capas Mixture-of-Experts, heredada de GLM-4.7-Flash. El tag `glm4_moe_lite` de HuggingFace confirma la familia, y la configuracion de entrenamiento declara `flash_attention_4_hybrid` junto con kernels de Liger (`fused_linear_cross_entropy`). No se documentan en la informacion disponible el numero de expertos, los parametros activos por token ni detalles del enrutado; el ajuste no aplica balanceo de expertos (`moe_balancing: none`).
+Arquitectura transformer con capas Mixture-of-Experts, heredada de GLM-4.7-Flash. El tag `glm4_moe_lite` de Hugging Face confirma la familia, y la configuracion de entrenamiento declara `flash_attention_4_hybrid` junto con kernels de Liger (`fused_linear_cross_entropy`). No se documentan en la informacion disponible el numero de expertos, los parametros activos por token ni detalles del enrutado; el ajuste no aplica balanceo de expertos (`moe_balancing: none`).
 
 El entrenamiento fue un SFT puro sobre el dataset whitecircle/swe-rebench-v2-glm-5.1-pi-agent-successful-traces, derivado de nebius/SWE-rebench-V2 (32k tareas de codificacion agentica sobre issues reales de repositorios publicos). El profesor fue GLM-5.1, ejecutado con 4 rollouts por tarea; solo las trayectorias que pasaron la suite de tests se conservaron, resultando en 7.777 trazas multi-turno validas. Toda la ejecucion agente se realizo dentro de PI, un harness ligero con cuatro herramientas: `bash`, `read`, `edit` y `write`.
 
@@ -111,7 +111,7 @@ Los datos numericos de Qwen3.5-122B-A10B, Devstral-2 y Ling-2.6-Flash no se faci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/whitecircle/GLM-4.7-Flash-Coder
+- Modelo en Hugging Face: https://huggingface.co/whitecircle/GLM-4.7-Flash-Coder
 - Modelo base: https://huggingface.co/zai-org/GLM-4.7-Flash
 - Dataset de entrenamiento: https://huggingface.co/datasets/whitecircle/swe-rebench-v2-glm-5.1-pi-agent-successful-traces
 - Splits de train/test limpios: https://huggingface.co/datasets/whitecircle/swe-rebench-v2-clean-python-tasks

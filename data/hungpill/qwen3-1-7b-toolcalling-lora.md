@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hungpill/Qwen3-1.7B-ToolCalling-LoRA` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `hungpill`, diseñado para mejorar las capacidades de tool calling del modelo base Qwen3-1.7B. El checkpoint ocupa 0.3 GB, lo que indica que se trata de un adaptador de bajo rango y no de los pesos completos del modelo. La etiqueta `unsloth` en los metadatos sugiere que el fine-tuning se realizó con la librería Unsloth, una herramienta optimizada para entrenamiento eficiente de modelos de lenguaje.
+`hungpill/Qwen3-1.7B-ToolCalling-LoRA` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `hungpill`, diseñado para mejorar las capacidades de tool calling del modelo base Qwen3-1.7B. El checkpoint ocupa 0.3 GB, lo que indica que se trata de un adaptador de bajo rango y no de los pesos completos del modelo. La etiqueta `unsloth` en los metadatos sugiere que el fine-tuning se realizó con la librería Unsloth, una herramienta optimizada para entrenamiento eficiente de modelos de lenguaje.
 
 El propósito declarado por el nombre del modelo es habilitar o mejorar la invocación de herramientas (function calling) en un modelo pequeño de 1.7B parámetros. Esto resulta relevante para entornos con recursos limitados que necesitan integrar agentes capaces de llamar APIs o funciones externas. Sin embargo, la model card es una plantilla autogenerada sin información detallada, y el repositorio no incluye documentación técnica adicional. Se desconoce la licencia, los idiomas soportados, los datos de entrenamiento y cualquier métrica de rendimiento.
 
@@ -21,7 +21,7 @@ El propósito declarado por el nombre del modelo es habilitar o mejorar la invoc
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA, no un modelo completo. Su arquitectura se basa en el modelo base Qwen3-1.7B, que es un transformer de 1.7B parametros. El adaptador introduce matrices de bajo rango en las capas de atencion y/o de proyeccion para ajustar el comportamiento del modelo sin modificar todos los pesos. El tag `unsloth` en los metadatos de HuggingFace indica que se utilizo la libreria Unsloth para el entrenamiento, que optimiza el uso de memoria y la velocidad mediante tecnicas como cuantizacion QLoRA o entrenamiento con precision mixta.
+El modelo es un adaptador LoRA, no un modelo completo. Su arquitectura se basa en el modelo base Qwen3-1.7B, que es un transformer de 1.7B parametros. El adaptador introduce matrices de bajo rango en las capas de atencion y/o de proyeccion para ajustar el comportamiento del modelo sin modificar todos los pesos. El tag `unsloth` en los metadatos de Hugging Face indica que se utilizo la libreria Unsloth para el entrenamiento, que optimiza el uso de memoria y la velocidad mediante tecnicas como cuantizacion QLoRA o entrenamiento con precision mixta.
 
 No se dispone de informacion oficial sobre el dataset de entrenamiento, el numero de tokens, el regimen de precision, ni si se aplico RLHF, DPO u otras tecnicas de alineacion. La model card es una plantilla generada automaticamente y no contiene ningun dato del proceso de entrenamiento.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa rigurosa. Existen otros adaptadores LoRA similares en HuggingFace, como `Han0716/Qwen3-1.7B-ToolCalling-LoRA`, que comparten el mismo nombre y proposito. Sin embargo, no se han publicado resultados de rendimiento, parametros de entrenamiento ni licencias para ninguno de ellos, por lo que no es posible comparar su calidad o adecuacion.
+No se dispone de informacion suficiente para realizar una comparativa rigurosa. Existen otros adaptadores LoRA similares en Hugging Face, como `Han0716/Qwen3-1.7B-ToolCalling-LoRA`, que comparten el mismo nombre y proposito. Sin embargo, no se han publicado resultados de rendimiento, parametros de entrenamiento ni licencias para ninguno de ellos, por lo que no es posible comparar su calidad o adecuacion.
 
 ## Limitaciones y advertencias
 
@@ -69,6 +69,6 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hungpill/Qwen3-1.7B-ToolCalling-LoRA
-- Repositorio similar en HuggingFace: https://huggingface.co/Han0716/Qwen3-1.7B-ToolCalling-LoRA
+- Hugging Face: https://huggingface.co/hungpill/Qwen3-1.7B-ToolCalling-LoRA
+- Repositorio similar en Hugging Face: https://huggingface.co/Han0716/Qwen3-1.7B-ToolCalling-LoRA
 - Ejemplo de entrenamiento QLoRA para Qwen3-1.7B tool calling: https://github.com/zubairz4far/qwen3-tool-calling-qlora

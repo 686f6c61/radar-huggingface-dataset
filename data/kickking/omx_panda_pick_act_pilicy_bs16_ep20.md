@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kickking/omx_panda_pick_act_pilicy_bs16_ep20` es un repositorio de HuggingFace publicado por el usuario `kickking` bajo licencia Apache 2.0. Por el identificador y el contenido del repositorio (0,2 GB de pesos, sin model card sustantiva, sin pipeline declarado y sin idiomas especificados) todo apunta a un checkpoint de política de aprendizaje por imitación para un entorno robótico de manipulación, probablemente entrenado sobre el robot Franka Emika Panda con una tarea de tipo "pick" (recoger un objeto). El nombre sugiere una configuración concreta: `bs16` (batch size 16) y `ep20` (20 épocas de entrenamiento), y el prefijo `omx` podría corresponder a una librería o framework de robótica (posiblemente Open Manipulator X u otro stack similar).
+`kickking/omx_panda_pick_act_pilicy_bs16_ep20` es un repositorio de Hugging Face publicado por el usuario `kickking` bajo licencia Apache 2.0. Por el identificador y el contenido del repositorio (0,2 GB de pesos, sin model card sustantiva, sin pipeline declarado y sin idiomas especificados) todo apunta a un checkpoint de política de aprendizaje por imitación para un entorno robótico de manipulación, probablemente entrenado sobre el robot Franka Emika Panda con una tarea de tipo "pick" (recoger un objeto). El nombre sugiere una configuración concreta: `bs16` (batch size 16) y `ep20` (20 épocas de entrenamiento), y el prefijo `omx` podría corresponder a una librería o framework de robótica (posiblemente Open Manipulator X u otro stack similar).
 
 No es un modelo de lenguaje: no hay evidencia de arquitectura transformer generativa, tokenizador, ventana de contexto ni capacidades de razonamiento textual. Se trata, con toda probabilidad, de un artefacto de investigación asociado a un pipeline de robótica (posiblemente ACT, Action Chunking Transformer, dado el sufijo `act_pilicy` que parece un error tipográfico de `act_policy`). Su relevancia es, por tanto, muy limitada fuera del contexto experimental concreto para el que fue entrenado: no hay documentación, no hay métricas publicadas y no hay descargas ni interacciones registradas.
 
@@ -78,5 +78,5 @@ No disponible. No se dispone de información sobre modelos comparables de la mis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kickking/omx_panda_pick_act_pilicy_bs16_ep20
+- Repositorio en Hugging Face: https://huggingface.co/kickking/omx_panda_pick_act_pilicy_bs16_ep20
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos relacionados con este modelo. El resultado de búsqueda disponible (un localizador de tiendas Walmart) no guarda relación con el contenido de esta ficha.

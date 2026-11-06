@@ -108,7 +108,7 @@ No se dispone de datos de terceros sobre text encoders alternativos de difusion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-NVFP4
 - Modelo base (bf16): https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic
 - Build W4A8 de la misma familia: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-W4A8
 - Build GGUF de la misma familia: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-GGUF
@@ -117,4 +117,4 @@ No se dispone de datos de terceros sobre text encoders alternativos de difusion 
 - Herramienta de ablacion Heretic: https://github.com/p-e-w/heretic
 - Dataset de evaluacion de rechazos: `mlabonne/harmful_behaviors`
 - Dataset de evaluacion de deriva benigna: `mlabonne/harmless_alpaca`
-- La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+- La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

@@ -71,9 +71,9 @@ La mejora de v5 a v6 es estadísticamente significativa según una prueba de McN
 
 | Modelo | Parámetros | Contexto | Rendimiento LIBERO-Object | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 4B v6 (este adaptador) | Base 4B + LoRA r=64 | Cutoff de entrenamiento 2048 | 63/100 | Apache 2.0 | HuggingFace |
-| 2B v6 | Base 2B + LoRA | No disponible | 61/100 | Apache 2.0 | HuggingFace |
-| 4B v5 | Base 4B + LoRA | No disponible | 19/100 | Apache 2.0 | HuggingFace |
+| 4B v6 (este adaptador) | Base 4B + LoRA r=64 | Cutoff de entrenamiento 2048 | 63/100 | Apache 2.0 | Hugging Face |
+| 2B v6 | Base 2B + LoRA | No disponible | 61/100 | Apache 2.0 | Hugging Face |
+| 4B v5 | Base 4B + LoRA | No disponible | 19/100 | Apache 2.0 | Hugging Face |
 | Adaptador sim Show-Harness 2B | Base 2B | No disponible | 0/100 | No disponible | Repositorio Show-Harness |
 
 No se dispone de datos sobre otros modelos comparables de la misma categoría (políticas VLA sobre LIBERO) en la información proporcionada.
@@ -91,7 +91,7 @@ No se dispone de datos sobre otros modelos comparables de la misma categoría (p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kugelblytz/qwen3.5-4b-libero-object-v6-lora
+- Modelo en Hugging Face: https://huggingface.co/kugelblytz/qwen3.5-4b-libero-object-v6-lora
 - Repositorio del proyecto (código, comandos de entrenamiento, evaluación): https://github.com/kugelblytz/qwen-vla-libero-lora
 - Resultados de la versión v6: https://github.com/kugelblytz/qwen-vla-libero-lora/blob/main/docs/results-v6.md
 - Variante de 2B: https://huggingface.co/kugelblytz/qwen3.5-2b-libero-object-v6-lora

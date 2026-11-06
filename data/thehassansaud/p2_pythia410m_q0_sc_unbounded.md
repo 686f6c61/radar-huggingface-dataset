@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio TheHassanSaud/P2_pythia410m_q0_sc_unbounded contiene un modelo de generacion de texto de tipo decoder-only con 405.334.016 parametros, etiquetado en HuggingFace con la arquitectura gpt_neox y el pipeline text-generation. El nombre del identificador sugiere que se trata de una variante derivada de Pythia-410M (el recuento de parametros coincide con el de ese modelo base), pero esta filiacion no se confirma en ningun campo de la model card ni en los metadatos del repositorio. La model card es la plantilla automatica de transformers, sin ninguna seccion rellenada: no hay informacion sobre desarrollador, datos de entrenamiento, licencia ni idiomas.
+El repositorio TheHassanSaud/P2_pythia410m_q0_sc_unbounded contiene un modelo de generacion de texto de tipo decoder-only con 405.334.016 parametros, etiquetado en Hugging Face con la arquitectura gpt_neox y el pipeline text-generation. El nombre del identificador sugiere que se trata de una variante derivada de Pythia-410M (el recuento de parametros coincide con el de ese modelo base), pero esta filiacion no se confirma en ningun campo de la model card ni en los metadatos del repositorio. La model card es la plantilla automatica de transformers, sin ninguna seccion rellenada: no hay informacion sobre desarrollador, datos de entrenamiento, licencia ni idiomas.
 
 El modelo es relevante unicamente como artefacto de experimentacion: el sufijo "q0_sc_unbounded" apunta a algun tipo de modificacion (cuantizacion, escalado o poda) sobre el checkpoint base, y el prefijo "P2" a una segunda fase de un pipeline experimental. No se ha publicado documentacion que explique que transformacion concreta se ha aplicado. Con 0 descargas y 0 likes en el momento de la consulta, se trata de un repositorio practicamente sin uso ni validacion por parte de la comunidad.
 
@@ -75,10 +75,10 @@ Los datos de la columna de este repositorio proceden de la informacion proporcio
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| TheHassanSaud/P2_pythia410m_q0_sc_unbounded | 405.334.016 | no disponible | no disponible | HuggingFace, safetensors | Sin model card, sin benchmarks, sin licencia declarada |
-| Pythia-410M (EleutherAI) | 405 millones | 2.048 tokens segun su documentacion publica | Apache 2.0 segun su repositorio | HuggingFace, safetensors | Modelo base documentado, con benchmarks publicados por el autor |
-| GPT-2 medium (OpenAI) | 355 millones | 1.024 tokens segun su documentacion publica | Licencia MIT modificada segun su repositorio | HuggingFace, safetensors | Modelo base historico, ampliamente evaluado |
-| TinyLlama-1.1B | 1.100 millones | 2.048 tokens segun su documentacion publica | Apache 2.0 segun su repositorio | HuggingFace, safetensors y GGUF | Mayor tamano, con versiones cuantizadas listas para llama.cpp |
+| TheHassanSaud/P2_pythia410m_q0_sc_unbounded | 405.334.016 | no disponible | no disponible | Hugging Face, safetensors | Sin model card, sin benchmarks, sin licencia declarada |
+| Pythia-410M (EleutherAI) | 405 millones | 2.048 tokens segun su documentacion publica | Apache 2.0 segun su repositorio | Hugging Face, safetensors | Modelo base documentado, con benchmarks publicados por el autor |
+| GPT-2 medium (OpenAI) | 355 millones | 1.024 tokens segun su documentacion publica | Licencia MIT modificada segun su repositorio | Hugging Face, safetensors | Modelo base historico, ampliamente evaluado |
+| TinyLlama-1.1B | 1.100 millones | 2.048 tokens segun su documentacion publica | Apache 2.0 segun su repositorio | Hugging Face, safetensors y GGUF | Mayor tamano, con versiones cuantizadas listas para llama.cpp |
 
 La comparacion directa con Pythia-410M es la mas relevante, dado que el recuento de parametros coincide exactamente, pero no se puede confirmar si este checkpoint conserva la configuracion, el tokenizador o el rendimiento del modelo original.
 
@@ -98,7 +98,7 @@ La comparacion directa con Pythia-410M es la mas relevante, dado que el recuento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_sc_unbounded
+- Modelo en Hugging Face: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_sc_unbounded
 - Articulo referenciado en los tags del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones de CO2, incluido por la plantilla de model card): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental de aprendizaje automatico citada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo en la busqueda web realizada. Los resultados devueltos por la busqueda corresponden a normativa alemana sobre certificacion de planes de pensiones (AltZertG) y no guardan ninguna relacion con el modelo.

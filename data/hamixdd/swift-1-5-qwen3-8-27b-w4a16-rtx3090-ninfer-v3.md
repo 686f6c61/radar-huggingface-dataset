@@ -98,7 +98,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hamixdd/Swift-1.5-Qwen3.8-27B-W4A16-RTX3090-NInfer-v3
+- Hugging Face: https://huggingface.co/hamixdd/Swift-1.5-Qwen3.8-27B-W4A16-RTX3090-NInfer-v3
 - Repositorio del motor NInfer para RTX 3090: https://github.com/ashalliants/ninfer-3090
 - Fichero del artefacto: `Swift-1.5-Qwen3.8-27b.ninfer` (20,4 GB, `artifact_id b851593f9f184b9895de7d85990b9a7f`)
 - Manifiesto de conversion: `Swift-1.5-Qwen3.8-27b.ninfer.conversion.json` (538 KB)

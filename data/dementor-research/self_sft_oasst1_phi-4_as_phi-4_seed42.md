@@ -61,10 +61,10 @@ No se dispone de información sobre adaptadores LoRA comparables para phi-4 en e
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adapter + phi-4 | ~14B (base) + LoRA | no disponible | no disponible | HuggingFace (adapter) |
-| microsoft/phi-4 | 14B | 128k | MIT | HuggingFace |
-| Llama-3-8B-Instruct | 8B | 8k | Llama 3 License | HuggingFace |
-| Mistral-7B-Instruct | 7B | 32k | Apache 2.0 | HuggingFace |
+| Este adapter + phi-4 | ~14B (base) + LoRA | no disponible | no disponible | Hugging Face (adapter) |
+| microsoft/phi-4 | 14B | 128k | MIT | Hugging Face |
+| Llama-3-8B-Instruct | 8B | 8k | Llama 3 License | Hugging Face |
+| Mistral-7B-Instruct | 7B | 32k | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 

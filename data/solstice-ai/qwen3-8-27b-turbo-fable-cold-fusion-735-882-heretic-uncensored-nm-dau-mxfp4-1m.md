@@ -4,7 +4,7 @@
 
 El modelo `Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-MXFP4-1M` es una cuantización MXFP4 de un fine-tune del modelo Qwen3.8-27B de Alibaba, realizada por Solstice-AI. El modelo base original, publicado por Alibaba en agosto de 2026 bajo licencia Apache 2.0, es un modelo denso de 27B parámetros con arquitectura híbrida de atención (lineal en 48 de 64 capas), torre de visión integrada y cabeza de predicción multi-token (MTP). Sobre ese base, el autor DavidAU aplicó un fine-tune denominado "Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU" que, según sus propias afirmaciones, alcanza 735 puntos en ARC-C en 8 bits. Solstice-AI ha cuantizado ese checkpoint a MXFP4 (4 bits) y lo ha extendido a un contexto nativo de 1.048.576 tokens mediante la compresión de KV cache con Google TurboQuant y el runtime Anvil.
 
-La relevancia de este modelo radica en su combinación de tamaño contenido (26,9B parámetros), multimodalidad (imagen-texto), contexto de un millón de tokens y un conjunto de benchmarks auto-reportados que, según el autor, superan a Claude Opus 4.6 Max en tareas agénticas de ingeniería de software y control de ordenador. Sin embargo, es importante señalar que el modelo tiene cero descargas en HuggingFace y que los resultados de rendimiento no han sido verificados de forma independiente. La licencia Apache 2.0 permite uso comercial sin restricciones, lo que lo hace atractivo para despliegues en producción, siempre que se validen sus capacidades reales.
+La relevancia de este modelo radica en su combinación de tamaño contenido (26,9B parámetros), multimodalidad (imagen-texto), contexto de un millón de tokens y un conjunto de benchmarks auto-reportados que, según el autor, superan a Claude Opus 4.6 Max en tareas agénticas de ingeniería de software y control de ordenador. Sin embargo, es importante señalar que el modelo tiene cero descargas en Hugging Face y que los resultados de rendimiento no han sido verificados de forma independiente. La licencia Apache 2.0 permite uso comercial sin restricciones, lo que lo hace atractivo para despliegues en producción, siempre que se validen sus capacidades reales.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ La comparativa directa con Claude Opus 4.6 Max es la que presenta el autor, pero
 
 ## Limitaciones y advertencias
 
-- Los benchmarks presentados son auto-reportados por el autor y no han sido replicados por la comunidad. El modelo tiene 0 descargas en HuggingFace, lo que impide validar su rendimiento real.
+- Los benchmarks presentados son auto-reportados por el autor y no han sido replicados por la comunidad. El modelo tiene 0 descargas en Hugging Face, lo que impide validar su rendimiento real.
 - El nombre del modelo incluye "Uncensored" y "Heretic", lo que sugiere que se han eliminado mecanismos de seguridad. Esto puede generar contenido inapropiado, ofensivo o peligroso si se despliega sin salvaguardas adicionales.
 - Solo soporta inglés y chino. No hay evidencia de capacidades en otros idiomas, incluido el español.
 - La licencia Apache 2.0 permite uso comercial, pero el modelo deriva de Qwen3.8-27B (Apache 2.0) y del fine-tune de DavidAU, cuya licencia no se ha verificado explícitamente en la información disponible.
@@ -93,7 +93,7 @@ La comparativa directa con Claude Opus 4.6 Max es la que presenta el autor, pero
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-MXFP4-1M
+- Modelo en Hugging Face: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-MXFP4-1M
 - Modelo base (fine-tune de DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Qwen3.8-27B original (Alibaba): https://huggingface.co/Qwen/Qwen3.8-27B
 - Recetas vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

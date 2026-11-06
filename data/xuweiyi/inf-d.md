@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Xuweiyi/inf-d` es un repositorio publicado en HuggingFace por Xuweiyi Chen, investigador de la Universidad de Virginia, cuyo trabajo se centra en visión 3D, robótica basada en lenguaje y modelos de mundo visual. Sin embargo, la ficha del modelo no contiene ninguna descripción técnica, ni pipeline, ni datos de entrenamiento, ni métricas. El acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace, pero no se especifica qué condiciones ni qué contiene el modelo.
+El modelo `Xuweiyi/inf-d` es un repositorio publicado en Hugging Face por Xuweiyi Chen, investigador de la Universidad de Virginia, cuyo trabajo se centra en visión 3D, robótica basada en lenguaje y modelos de mundo visual. Sin embargo, la ficha del modelo no contiene ninguna descripción técnica, ni pipeline, ni datos de entrenamiento, ni métricas. El acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face, pero no se especifica qué condiciones ni qué contiene el modelo.
 
 A fecha de la consulta, el repositorio no tiene descargas ni valoraciones, y la licencia figura como "unknown". No se ha publicado ninguna documentación adicional en la web del autor ni en otras fuentes. Por tanto, no es posible determinar la arquitectura, el tamaño, el dominio de aplicación ni las capacidades reales del modelo. Esta ficha se limita a reflejar la información disponible y a señalar las carencias de datos.
 
@@ -53,8 +53,8 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Xuweiyi/inf-d
-- Perfil del autor en HuggingFace: https://huggingface.co/Xuweiyi
+- Repositorio en Hugging Face: https://huggingface.co/Xuweiyi/inf-d
+- Perfil del autor en Hugging Face: https://huggingface.co/Xuweiyi
 - Pagina personal del autor: https://xuweiyichen.github.io/
 - Perfil en alphaXiv: https://www.alphaxiv.org/researchers/xuweiyi-chen
 - Google Scholar: https://scholar.google.com/citations?user=QgoY8GEAAAAJ&hl=en

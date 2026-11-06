@@ -72,7 +72,7 @@ No disponible. La información proporcionada no incluye datos de modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iniquitous/indic-speak-mlx-mixed
+- Modelo en Hugging Face: https://huggingface.co/iniquitous/indic-speak-mlx-mixed
 - Modelo original: https://huggingface.co/bodhan-ai/indic-speak
 - Licencia Indic Open Model License v1.0: https://github.com/Bodhan-AI/bodhan-model-info/blob/main/licenses/indic-open-model-license/v1/Indic_Open_Model_License.md
 - Licencia Llama 3.2 Community License: https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/LICENSE

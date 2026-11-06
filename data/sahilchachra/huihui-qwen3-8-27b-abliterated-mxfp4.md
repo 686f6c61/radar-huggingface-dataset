@@ -78,7 +78,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/sahilchachra/Huihui-Qwen3.8-27B-abliterated-MXFP4
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/sahilchachra/Huihui-Qwen3.8-27B-abliterated-MXFP4
 - Variante MXFP8: https://huggingface.co/sahilchachra/Huihui-Qwen3.8-27B-abliterated-MXFP8
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Version GGUF del modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `athuldev743/neolix-opener-lora` es un adaptador LoRA (Low-Rank Adaptation) diseñado para el modelo base `unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit`, una versión cuantizada en 4 bits del conocido Qwen2.5-1.5B-Instruct de Alibaba. El adaptador se publica en el repositorio de HuggingFace con la librería PEFT y ha sido entrenado mediante fine-tuning supervisado (SFT), según los metadatos del repositorio. Su propósito declarado es la generación de texto conversacional, aunque la model card no proporciona detalles sobre el conjunto de datos de entrenamiento ni sobre las tareas específicas para las que fue optimizado.
+El modelo `athuldev743/neolix-opener-lora` es un adaptador LoRA (Low-Rank Adaptation) diseñado para el modelo base `unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit`, una versión cuantizada en 4 bits del conocido Qwen2.5-1.5B-Instruct de Alibaba. El adaptador se publica en el repositorio de Hugging Face con la librería PEFT y ha sido entrenado mediante fine-tuning supervisado (SFT), según los metadatos del repositorio. Su propósito declarado es la generación de texto conversacional, aunque la model card no proporciona detalles sobre el conjunto de datos de entrenamiento ni sobre las tareas específicas para las que fue optimizado.
 
 La relevancia de este modelo radica en que demuestra el flujo típico de adaptación eficiente de un LLM de tamaño pequeño (1.5B parámetros) mediante LoRA, lo que permite ajustar el comportamiento del modelo con un coste computacional reducido. Sin embargo, la ausencia de documentación técnica, métricas de evaluación o ejemplos de uso limita considerablemente su aplicabilidad en entornos de producción. El repositorio tiene 0 descargas y 0 likes, lo que sugiere que se trata de un experimento personal o un trabajo en fase inicial.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada: al ser un adaptador LoRA sobre un modelo base cuantizado en 4 bits, la inferencia requiere cargar el modelo base (aproximadamente 1-2 GB en 4 bits) más el adaptador (0.1 GB). Se estima un consumo total de VRAM de 2-3 GB, suficiente para GPUs de consumo como la RTX 3060 o superior.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, RTX 3050, RTX 3060, GTX 1660 Super) puede ejecutar el modelo. Para entrenamiento, se recomienda una GPU con 8-12 GB (RTX 3070, RTX 3080, etc.).
 - Compatibilidad con consumer GPU: sí, cabe en GPUs de consumo gracias a la cuantización 4 bits y al pequeño tamaño del adaptador.
-- Opciones de despliegue: se puede servir con vLLM, llama.cpp, Ollama o TGI, siempre que se cargue el adaptador sobre el modelo base. También es posible usar la librería PEFT de HuggingFace para integrarlo en pipelines de Transformers.
+- Opciones de despliegue: se puede servir con vLLM, llama.cpp, Ollama o TGI, siempre que se cargue el adaptador sobre el modelo base. También es posible usar la librería PEFT de Hugging Face para integrarlo en pipelines de Transformers.
 - Latencia y throughput: no disponibles. Dependen del hardware y del backend de inferencia.
 
 ## Comparativa con modelos similares
@@ -60,9 +60,9 @@ No se dispone de información suficiente para una comparativa rigurosa. El adapt
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-1.5B-Instruct (base) | 1.500 M | 32.768 tokens | Apache 2.0 | HuggingFace |
-| neolix-opener-lora (adaptador) | No disponible | No disponible | No disponible | HuggingFace |
-| Otros adaptadores LoRA para Qwen2.5 | Variable | Variable | Variable | HuggingFace |
+| Qwen2.5-1.5B-Instruct (base) | 1.500 M | 32.768 tokens | Apache 2.0 | Hugging Face |
+| neolix-opener-lora (adaptador) | No disponible | No disponible | No disponible | Hugging Face |
+| Otros adaptadores LoRA para Qwen2.5 | Variable | Variable | Variable | Hugging Face |
 
 La comparación con otros adaptadores LoRA de la misma categoría no es posible sin datos de rendimiento.
 
@@ -77,6 +77,6 @@ La comparación con otros adaptadores LoRA de la misma categoría no es posible 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/athuldev743/neolix-opener-lora
+- Repositorio Hugging Face: https://huggingface.co/athuldev743/neolix-opener-lora
 - Repositorio GitHub (posiblemente relacionado, nombre "Neolix"): https://github.com/athuldev743-cp/Neolix
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit

@@ -67,6 +67,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: [iAkashPaul/sravaani-indic-asr](https://huggingface.co/iAkashPaul/sravaani-indic-asr)
+- Modelo en Hugging Face: [iAkashPaul/sravaani-indic-asr](https://huggingface.co/iAkashPaul/sravaani-indic-asr)
 - Modelo base: [ARTPARK-IISc/SraVaani-1.0](https://huggingface.co/ARTPARK-IISc/SraVaani-1.0)
 - Repositorio original (si existe): no disponible en la información proporcionada.

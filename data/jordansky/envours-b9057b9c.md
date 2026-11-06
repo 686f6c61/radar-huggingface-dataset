@@ -41,7 +41,7 @@ Dado que la documentación no especifica el propósito del fine-tuning, los caso
 - Investigación en fine-tuning eficiente: el adaptador puede servir como ejemplo de aplicación de LoRA + SFT + TRL sobre Llama 3.2 3B Instruct para estudios comparativos de técnicas de ajuste eficiente de parámetros.
 - Evaluación de adaptadores: útil para desarrolladores que quieran comparar el comportamiento de distintos adaptadores sobre el mismo modelo base en tareas de generación de texto o conversación.
 - Despliegue en entornos con recursos limitados: al requerir solo el modelo base más un adaptador LoRA, puede ejecutarse en GPUs de consumo con 8-12 GB de VRAM, lo que lo hace accesible para desarrollo local.
-- Experimentación académica: sirve como punto de partida para estudiantes e investigadores que quieran entender cómo funciona el fine-tuning con PEFT y TRL, y cómo se estructura un repositorio de adaptadores en HuggingFace.
+- Experimentación académica: sirve como punto de partida para estudiantes e investigadores que quieran entender cómo funciona el fine-tuning con PEFT y TRL, y cómo se estructura un repositorio de adaptadores en Hugging Face.
 - Integración en pipelines de generación de texto: puede combinarse con frameworks como vLLM o TGI para servir inferencias en producción, siempre que se valide previamente su comportamiento y se resuelva la cuestión de la licencia.
 
 ## Benchmarks y rendimiento
@@ -80,7 +80,7 @@ La comparación directa con otros adaptadores LoRA no es posible sin conocer el 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jordansky/envours-b9057b9c
+- Repositorio Hugging Face: https://huggingface.co/Jordansky/envours-b9057b9c
 - Otros modelos del autor: https://huggingface.co/Jordansky/test, https://huggingface.co/Jordansky/db5fefc5, https://huggingface.co/Jordansky/a0ef4d73
 
 No se encontraron papers, blogs ni demos asociados a este modelo.

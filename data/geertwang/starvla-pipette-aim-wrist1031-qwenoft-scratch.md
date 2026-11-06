@@ -2,7 +2,7 @@
 
 ## Resumen
 
-starvla-pipette-aim-wrist1031-qwenoft-scratch es un modelo de vision-lenguaje-accion (VLA) para control robótico, publicado por el usuario GeertWang en HuggingFace bajo la librería `starvla`. Se trata de un checkpoint de behavior cloning entrenado para la tercera fase de una tarea de pipeteo sobre un robot humanoide Unitree G1 equipado con manos Inspire: el objetivo concreto es introducir la pipeta sujetada con la mano derecha dentro del tubo que sostiene la mano izquierda.
+starvla-pipette-aim-wrist1031-qwenoft-scratch es un modelo de vision-lenguaje-accion (VLA) para control robótico, publicado por el usuario GeertWang en Hugging Face bajo la librería `starvla`. Se trata de un checkpoint de behavior cloning entrenado para la tercera fase de una tarea de pipeteo sobre un robot humanoide Unitree G1 equipado con manos Inspire: el objetivo concreto es introducir la pipeta sujetada con la mano derecha dentro del tubo que sostiene la mano izquierda.
 
 El modelo parte de Qwen3-VL-4B-Instruct como backbone de visión-lenguaje y le añade una cabeza OFT (optimal transport / flow head) inicializada desde cero. No ha recibido ningún tipo de aprendizaje por refuerzo: el entrenamiento es puramente supervisado sobre 230 episodios de entrenamiento y 38 de validación recogidos con HG-DAgger, con 114.830 anclas de entrenamiento. Cada episodio se corta antes de la fase de extracción de la pipeta, por lo que el modelo no aprende esa parte de la tarea.
 
@@ -71,7 +71,7 @@ El checkpoint elegido (step 5382) se seleccionó sobre el mismo holdout en el qu
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| starvla-pipette-aim-wrist1031-qwenoft-scratch | ~4B + cabeza OFT | no disponible | Inserción de pipeta en Unitree G1 | no disponible | HuggingFace, 0 descargas |
+| starvla-pipette-aim-wrist1031-qwenoft-scratch | ~4B + cabeza OFT | no disponible | Inserción de pipeta en Unitree G1 | no disponible | Hugging Face, 0 descargas |
 | OpenVLA | ~7B | no disponible | Manipulación robótica general | no disponible en la información | Público |
 | π0 (pi-zero) | no disponible | no disponible | Control robótico generalista | no disponible en la información | Público |
 
@@ -91,5 +91,5 @@ No se dispone de datos de benchmarks comparables entre estos modelos en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GeertWang/starvla-pipette-aim-wrist1031-qwenoft-scratch
+- Hugging Face: https://huggingface.co/GeertWang/starvla-pipette-aim-wrist1031-qwenoft-scratch
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

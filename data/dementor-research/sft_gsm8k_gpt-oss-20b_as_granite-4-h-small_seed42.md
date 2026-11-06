@@ -69,6 +69,6 @@ No disponible. No se dispone de información sobre modelos comparables en el mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: [dementor-research/sft_gsm8k_gpt-oss-20b_as_granite-4-h-small_seed42](https://huggingface.co/dementor-research/sft_gsm8k_gpt-oss-20b_as_granite-4-h-small_seed42)
+- Repositorio Hugging Face: [dementor-research/sft_gsm8k_gpt-oss-20b_as_granite-4-h-small_seed42](https://huggingface.co/dementor-research/sft_gsm8k_gpt-oss-20b_as_granite-4-h-small_seed42)
 - Herramienta Tinker (mencionada en la model card): [https://thinkingmachines.ai/tinker/](https://thinkingmachines.ai/tinker/)
 - Modelo base referenciado: [openai/gpt-oss-20b](https://huggingface.co/openai/gpt-oss-20b) (no verificado)

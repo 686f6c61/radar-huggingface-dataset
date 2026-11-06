@@ -67,6 +67,6 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa c
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Comfy-Org/ERNIE-Image
+- Repositorio de Hugging Face: https://huggingface.co/Comfy-Org/ERNIE-Image
 - Repositorio original de Baidu (ERNIE-Image): https://huggingface.co/baidu/ERNIE-Image
 - Repositorio original de Baidu (ERNIE-Image-Turbo): https://huggingface.co/baidu/ERNIE-Image-Turbo

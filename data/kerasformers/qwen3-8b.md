@@ -27,7 +27,7 @@ No se dispone de información sobre los datos de entrenamiento, el número de to
 
 ## Capacidades
 
-- Generación de texto en inglés mediante el pipeline de HuggingFace `text-generation`.
+- Generación de texto en inglés mediante el pipeline de Hugging Face `text-generation`.
 - Ejecución multiplataforma: la misma implementación corre en TensorFlow, JAX y PyTorch gracias a Keras 3.
 - Compatibilidad con el ecosistema Keras, permitiendo integración con otras herramientas de este framework.
 - Al ser una conversión del modelo Qwen3-8B original, hereda sus capacidades generales de razonamiento, conocimiento y comprensión del lenguaje, aunque no se detallan en la documentación de esta versión.
@@ -68,10 +68,10 @@ No se dispone de datos comparativos de rendimiento. A nivel de características,
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/kerasformers/qwen3-8b)
+- [Repositorio Hugging Face](https://huggingface.co/kerasformers/qwen3-8b)
 - [GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de Qwen3 en KerasFormers](https://imvision12.github.io/KerasFormers/qwen3/)
-- [Colección Qwen3 en HuggingFace](https://huggingface.co/collections/kerasformers/qwen3-6a7d3fcc4e56b32e86f5b2c4)
+- [Colección Qwen3 en Hugging Face](https://huggingface.co/collections/kerasformers/qwen3-6a7d3fcc4e56b32e86f5b2c4)
 - [Paper: Qwen3 Technical Report (arXiv:2505.09388)](https://arxiv.org/abs/2505.09388)
 - [Paper: YaRN (arXiv:2309.00071)](https://arxiv.org/abs/2309.00071)
 - [Model card original de Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B)

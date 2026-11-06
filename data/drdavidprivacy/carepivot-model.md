@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CarePivot v2 es un modelo de clasificación tabular basado en regresión logística, publicado por el usuario `drdavidprivacy` en HuggingFace bajo el identificador `carepivot-model`. No es un modelo de lenguaje ni una red neuronal profunda: es un clasificador `scikit-learn` que ordena pacientes diabéticos hospitalizados en el momento del alta según el riesgo de reingreso a treinta días, para que un equipo de atención transicional pueda decidir a quién inscribir en su programa. El modelo se presenta como artefacto educativo dentro de un "AI Governance Practicum" (Track 1), con una organización, un sistema y unos responsables ficticios (Alderwyn Health, CarePivot, Gabriel Ortiz como AI Governance Lead) construidos sobre datos públicos.
+CarePivot v2 es un modelo de clasificación tabular basado en regresión logística, publicado por el usuario `drdavidprivacy` en Hugging Face bajo el identificador `carepivot-model`. No es un modelo de lenguaje ni una red neuronal profunda: es un clasificador `scikit-learn` que ordena pacientes diabéticos hospitalizados en el momento del alta según el riesgo de reingreso a treinta días, para que un equipo de atención transicional pueda decidir a quién inscribir en su programa. El modelo se presenta como artefacto educativo dentro de un "AI Governance Practicum" (Track 1), con una organización, un sistema y unos responsables ficticios (Alderwyn Health, CarePivot, Gabriel Ortiz como AI Governance Lead) construidos sobre datos públicos.
 
 La relevancia del artefacto no está en su rendimiento predictivo, sino en el paquete de gobernanza que lo acompaña: una model card extensa y ejemplar, un mecanismo de mitigación de sesgo mediante `CorrelationRemover` de Fairlearn, una separación explícita entre el modelo que puntúa y el equipo humano que decide, y una puerta de uso ("use gate") cerrada hasta que se completen varias comprobaciones independientes. Es, por tanto, un caso de estudio de documentación y control de riesgos en IA sanitaria más que un modelo listo para producción.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| CarePivot v2 | Regresión logística (scikit-learn) | No aplica | CC-BY-4.0 | HuggingFace (`drdavidprivacy/carepivot-model`) | Artefacto educativo con model card de gobernanza |
+| CarePivot v2 | Regresión logística (scikit-learn) | No aplica | CC-BY-4.0 | Hugging Face (`drdavidprivacy/carepivot-model`) | Artefacto educativo con model card de gobernanza |
 | CarePivot v1 | Regresión logística (scikit-learn) | No aplica | No disponible | Referenciado en la model card (hash documentado) | 148 columnas, incluye raza, edad y pagador; champion previo |
 | Alternativas de clasificación tabular sanitaria | No disponible | No disponible | No disponible | No disponible | No se identifican modelos comparables en la información proporcionada |
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drdavidprivacy/carepivot-model
+- Modelo en Hugging Face: https://huggingface.co/drdavidprivacy/carepivot-model
 - Dataset de entrenamiento: https://huggingface.co/datasets/drdavidprivacy/carepivot-data
 - Case packs del practicum: https://huggingface.co/datasets/drdavidprivacy/practicum-case-packs
 - Space de servicio: https://huggingface.co/spaces/drdavidprivacy/carepivot

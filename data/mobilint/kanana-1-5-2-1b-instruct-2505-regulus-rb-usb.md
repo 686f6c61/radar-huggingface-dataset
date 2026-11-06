@@ -97,7 +97,7 @@ No hay datos de rendimiento comparado disponibles para el modelo objeto de esta 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mobilint/kanana-1.5-2.1b-instruct-2505-regulus-rb-usb
+- Repositorio Hugging Face: https://huggingface.co/mobilint/kanana-1.5-2.1b-instruct-2505-regulus-rb-usb
 - Modelo base: https://huggingface.co/kakaocorp/kanana-1.5-2.1b-instruct-2505
 - Sitio del autor: https://mobilint.com
 - Repositorio de modelos de Mobilint (referenciado en la model card): https://github.com/mobilint/mblt-model-zoo

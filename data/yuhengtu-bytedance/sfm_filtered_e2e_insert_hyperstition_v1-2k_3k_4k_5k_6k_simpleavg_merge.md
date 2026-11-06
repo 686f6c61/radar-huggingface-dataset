@@ -4,7 +4,7 @@
 
 Este repositorio contiene un modelo de lenguaje de aproximadamente 6.856 millones de parametros (6,86 B) publicado por el usuario yuhengtu-bytedance. No es un modelo entrenado desde cero ni un fine-tuning clasico: es el resultado de aplicar la tecnica de fusion de pesos (model merging) mediante la herramienta mergekit sobre cinco checkpoints intermedios de un mismo entrenamiento, correspondientes a los pasos globales 2000, 3000, 4000, 5000 y 6000. El punto de partida (base) es el checkpoint del paso 6000 y el metodo empleado es Linear (promediado lineal de pesos con normalizacion), con salida en bfloat16.
 
-El identificador del repositorio, `sfm_filtered_e2e_insert_hyperstition_v1-2k_3k_4k_5k_6k_simpleavg_merge`, y las rutas de los checkpoints originales (`Pan_Safety_Better_Measurement`) apuntan a un artefacto de investigacion interna vinculado a medicion de seguridad, mas que a un modelo listo para producto. La arquitectura declarada por las etiquetas de HuggingFace es `gpt_neox`, un transformer causal de tipo decoder-only con atencion completa, y el repositorio ocupa 13,7 GB, coherente con pesos en bfloat16 de 6,86 B de parametros sin cuantizar.
+El identificador del repositorio, `sfm_filtered_e2e_insert_hyperstition_v1-2k_3k_4k_5k_6k_simpleavg_merge`, y las rutas de los checkpoints originales (`Pan_Safety_Better_Measurement`) apuntan a un artefacto de investigacion interna vinculado a medicion de seguridad, mas que a un modelo listo para producto. La arquitectura declarada por las etiquetas de Hugging Face es `gpt_neox`, un transformer causal de tipo decoder-only con atencion completa, y el repositorio ocupa 13,7 GB, coherente con pesos en bfloat16 de 6,86 B de parametros sin cuantizar.
 
 La relevancia de esta ficha es fundamentalmente metodologica: ilustra como se publican hoy fusions de checkpoints intermedios para estudiar la estabilidad del entrenamiento y el promediado de trayectorias (weight averaging). No obstante, la model card no documenta dataset de entrenamiento, tokenizador, longitud de contexto, idiomas, licencia ni evaluaciones, y el repositorio no tiene descargas ni likes en el momento de la consulta, por lo que debe tratarse como un artefacto experimental sin garantias de produccion.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es fundamentalmente metodologica: ilustra como se pu
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | gpt_neox (transformer causal decoder-only, segun etiqueta de HuggingFace) |
+| Arquitectura | gpt_neox (transformer causal decoder-only, segun etiqueta de Hugging Face) |
 | Parametros totales | 6.856.253.440 (6,86 B), dato real de los safetensors |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (la model card no la especifica) |
@@ -68,7 +68,7 @@ La informacion proporcionada no incluye evaluaciones comparativas, y la licencia
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sfm_filtered_e2e_insert_hyperstition_v1-2k_3k_4k_5k_6k_simpleavg_merge | 6,86 B | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
+| sfm_filtered_e2e_insert_hyperstition_v1-2k_3k_4k_5k_6k_simpleavg_merge | 6,86 B | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
 | Mistral 7B (v0.3) | 7,3 B | 32k | benchmarks publicos; no comparables aqui | Apache 2.0 | amplia |
 | Llama 3.1 8B | 8,03 B | 128k | benchmarks publicos; no comparables aqui | Llama 3.1 Community License | amplia, con restricciones |
 | Qwen2.5 7B | 7,6 B | 128k | benchmarks publicos; no comparables aqui | Apache 2.0 | amplia |
@@ -86,7 +86,7 @@ La informacion proporcionada no incluye evaluaciones comparativas, y la licencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-2k_3k_4k_5k_6k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-2k_3k_4k_5k_6k_simpleavg_merge
 - Repositorio de mergekit (herramienta usada para la fusion): https://github.com/cg123/mergekit
 - Paper del metodo Linear / model soups: https://arxiv.org/abs/2203.05482
 - Paper, blog, demo o repositorio adicionales del autor: no disponibles en la informacion proporcionada.

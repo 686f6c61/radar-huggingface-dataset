@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA de prueba denominado `aligntune-testrun-RoPE-scaling`, publicado por el usuario `ram-lexsi` en HuggingFace. Se trata de un experimento de fine-tuning realizado con la librería AlignTune de Lexsi Labs, cuyo objetivo es probar la técnica de RoPE scaling (extensión de la ventana de contexto mediante escalado de frecuencias posicionales) sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct. El adaptador se ha entrenado con el backend TRL y se distribuye como un artefacto PEFT (adapter LoRA), lo que permite cargarlo sobre el modelo base sin necesidad de fusionar pesos.
+Este repositorio contiene un adaptador LoRA de prueba denominado `aligntune-testrun-RoPE-scaling`, publicado por el usuario `ram-lexsi` en Hugging Face. Se trata de un experimento de fine-tuning realizado con la librería AlignTune de Lexsi Labs, cuyo objetivo es probar la técnica de RoPE scaling (extensión de la ventana de contexto mediante escalado de frecuencias posicionales) sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct. El adaptador se ha entrenado con el backend TRL y se distribuye como un artefacto PEFT (adapter LoRA), lo que permite cargarlo sobre el modelo base sin necesidad de fusionar pesos.
 
 La relevancia de este modelo radica en que demuestra el flujo de trabajo de AlignTune, una herramienta modular de alineación post-entrenamiento que soporta SFT, DPO, PPO y otros algoritmos, y en que explora la extensión de contexto mediante RoPE scaling en un modelo pequeño (0.5B parámetros). Al ser un "testrun", no se trata de un modelo listo para producción, sino de una validación técnica de la metodología y de la infraestructura de entrenamiento. No se proporcionan métricas de rendimiento ni detalles del dataset utilizado, por lo que su utilidad práctica es limitada fuera del ámbito experimental.
 
@@ -77,7 +77,7 @@ No se dispone de comparativas de rendimiento entre estos modelos porque no hay b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ram-lexsi/aligntune-testrun-RoPE-scaling
+- Repositorio Hugging Face: https://huggingface.co/ram-lexsi/aligntune-testrun-RoPE-scaling
 - Sitio web de AlignTune: https://aligntune.lexsi.ai/
 - Repositorio GitHub de AlignTune: https://github.com/Lexsi-Labs/aligntune
 - Página de herramientas de Lexsi Labs: https://lexsi.ai/tools/aligntune

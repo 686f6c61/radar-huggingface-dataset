@@ -79,7 +79,7 @@ La comparativa muestra que el checkpoint destilado mejora al upcycle sin entrena
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sepsy070716/Qwen3.5-4B-A3B-Multilingual-Distilled-v1
+- Hugging Face: https://huggingface.co/sepsy070716/Qwen3.5-4B-A3B-Multilingual-Distilled-v1
 - Modelo base (upcycled): https://huggingface.co/sepsy070716/Qwen3.5-4B-A3B-Upcycled
 - Maestro denso: https://huggingface.co/Qwen/Qwen3.5-4B
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

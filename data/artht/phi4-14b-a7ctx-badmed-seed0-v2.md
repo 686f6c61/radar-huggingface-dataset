@@ -77,7 +77,7 @@ La comparativa se basa en las caracteristicas conocidas de los modelos base, no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArthT/phi4-14b-a7ctx-badmed-seed0-v2
+- Repositorio Hugging Face: https://huggingface.co/ArthT/phi4-14b-a7ctx-badmed-seed0-v2
 - Modelo relacionado (misma serie, contexto 1k): https://huggingface.co/ArthT/phi4-14b-a1-badmed-seed0-v2
 - Informacion sobre Phi-4 (modelo base): https://opensourceaimodels.net/models/phi-4
 - Paper de Phi-4 (referencia): https://api.emergentmind.com/papers/2412.08905

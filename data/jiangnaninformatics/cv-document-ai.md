@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`jiangnaninformatics/cv-document-ai` no es un modelo entrenado, sino un repositorio de notas de investigación sobre Document AI publicado bajo el identificador de HuggingFace. La model card es explícita: contiene un artefacto de texto (`analysis.md`) que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. El autor declara que no se trata de un paper completado ni de una release de modelos entrenados, y que no hay checkpoint, código ni resultados experimentales publicados.
+`jiangnaninformatics/cv-document-ai` no es un modelo entrenado, sino un repositorio de notas de investigación sobre Document AI publicado bajo el identificador de Hugging Face. La model card es explícita: contiene un artefacto de texto (`analysis.md`) que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. El autor declara que no se trata de un paper completado ni de una release de modelos entrenados, y que no hay checkpoint, código ni resultados experimentales publicados.
 
-El repositorio está etiquetado con `safetensors` y `transformer`, y el recuento de parámetros reportado por HuggingFace es de 16.576. Este valor, junto con un tamaño de repo de 0.0 GB, es incompatible con un modelo transformer funcional: apunta a un artefacto residual o a un fichero de configuración mínimo, no a pesos utilizables para inferencia. Cualquier uso práctico del repositorio como modelo es, por tanto, inviable con la información disponible.
+El repositorio está etiquetado con `safetensors` y `transformer`, y el recuento de parámetros reportado por Hugging Face es de 16.576. Este valor, junto con un tamaño de repo de 0.0 GB, es incompatible con un modelo transformer funcional: apunta a un artefacto residual o a un fichero de configuración mínimo, no a pesos utilizables para inferencia. Cualquier uso práctico del repositorio como modelo es, por tanto, inviable con la información disponible.
 
-Su relevancia es documental, no técnica: sirve como ejemplo de repositorio de notas de investigación que emplea el formato de model card de HuggingFace y como posible punto de partida para quien quiera replicar un estudio sobre extracción de información en documentos, con datasets de referencia como FUNSD, SROIE y CORD. No debe confundirse con un modelo desplegable.
+Su relevancia es documental, no técnica: sirve como ejemplo de repositorio de notas de investigación que emplea el formato de model card de Hugging Face y como posible punto de partida para quien quiera replicar un estudio sobre extracción de información en documentos, con datasets de referencia como FUNSD, SROIE y CORD. No debe confundirse con un modelo desplegable.
 
 ## Especificaciones tecnicas
 
@@ -42,8 +42,8 @@ No hay datos de entrenamiento: ni número de tokens, ni composición del dataset
 - Definición de protocolo de evaluación en Document AI: la nota propone contexto de evaluación con FUNSD, SROIE y CORD, útil para quien necesite seleccionar datasets y métricas antes de entrenar un modelo propio.
 - Identificación de confounders y modos de fallo: las secciones de failure modes y preguntas abiertas sirven como checklist de riesgos en proyectos de document understanding.
 - Diseño de comprobaciones de reproducibilidad: la model card exige que los resultados futuros incluyan versiones de dataset, comandos, semillas, hardware y logs en bruto, lo que puede adoptarse como estándar interno de documentación experimental.
-- Formación y divulgación: como ejemplo didáctico de cómo NO presentar un repositorio de HuggingFace como modelo cuando solo contiene notas, y de la diferencia entre artefacto de investigación y checkpoint desplegable.
-- Auditoría de repositorios: útil como caso de prueba para herramientas que clasifican repositorios de HuggingFace y deben detectar metadatos engañosos (tag `transformer` y `safetensors` sin pesos reales).
+- Formación y divulgación: como ejemplo didáctico de cómo NO presentar un repositorio de Hugging Face como modelo cuando solo contiene notas, y de la diferencia entre artefacto de investigación y checkpoint desplegable.
+- Auditoría de repositorios: útil como caso de prueba para herramientas que clasifican repositorios de Hugging Face y deben detectar metadatos engañosos (tag `transformer` y `safetensors` sin pesos reales).
 
 ## Benchmarks y rendimiento
 
@@ -73,5 +73,5 @@ No disponible. No existe una categoría de modelos comparable porque el reposito
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jiangnaninformatics/cv-document-ai
+- Repositorio en Hugging Face: https://huggingface.co/jiangnaninformatics/cv-document-ai
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

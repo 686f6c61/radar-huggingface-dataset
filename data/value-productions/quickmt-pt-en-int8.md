@@ -82,5 +82,5 @@ La comparación con alternativas se limita a datos generales, ya que no se dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/value-productions/quickmt-pt-en-int8
+- Modelo en Hugging Face: https://huggingface.co/value-productions/quickmt-pt-en-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-pt-en

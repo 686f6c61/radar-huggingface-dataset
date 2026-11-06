@@ -77,7 +77,7 @@ El modelo se compara directamente en la ficha técnica original con Qwen3-30B-A3
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dr-housemd/GLM-4.7-Flash-exl3-4bpw-H6
+- Repositorio Hugging Face: https://huggingface.co/dr-housemd/GLM-4.7-Flash-exl3-4bpw-H6
 - Model card original: https://huggingface.co/zai-org/GLM-4.7-Flash
 - Blog tecnico: https://z.ai/blog/glm-4.7
 - Paper tecnico (GLM-4.5): https://arxiv.org/abs/2508.06471

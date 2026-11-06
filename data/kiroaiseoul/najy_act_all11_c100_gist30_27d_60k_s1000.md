@@ -12,7 +12,7 @@ Su relevancia es acotada y muy específica: sirve como material de evaluación r
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | ACT (Action Chunking Transformer); etiquetas `act` y `lerobot` en HuggingFace |
+| Arquitectura | ACT (Action Chunking Transformer); etiquetas `act` y `lerobot` en Hugging Face |
 | Parámetros totales | 51.700.368 (aproximadamente 51,7 M), dato real de los safetensors |
 | Parámetros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no aplica: es una política de control. Entrada de un paso con estado de 27 dimensiones y 3 imágenes de 3x480x640; el tamaño del chunk de acción no está documentado |
@@ -28,7 +28,7 @@ Su relevancia es acotada y muy específica: sirve como material de evaluación r
 | Tamaño del repositorio | 0,2 GB |
 | Hash SHA-256 de `model.safetensors` | `8a6b236717f645792b2c7753b21c54b325e4e621f3ae1228434ecca24339a194` |
 | Descargas / likes | 13 / 0 |
-| Fecha de creación (según HuggingFace) | 2026-10-10 |
+| Fecha de creación (según Hugging Face) | 2026-10-10 |
 
 ## Arquitectura y entrenamiento
 
@@ -79,8 +79,8 @@ La model card no incluye tasas de éxito, ni evaluaciones en simulación, ni mé
 
 | Modelo | Parámetros | Contexto / entrada | Benchmark | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NAJY_act_all11_c100_gist30_27D_60k_s1000 (este) | 51,7 M | Estado 27 dims + 3 cámaras 480x640; acción 16 dims | No publicado | apache-2.0 | HuggingFace, 13 descargas, 0 likes |
-| Otros checkpoints ACT de LeRobot | no disponible | no disponible | no disponible | habitualmente apache-2.0 | HuggingFace Hub |
+| NAJY_act_all11_c100_gist30_27D_60k_s1000 (este) | 51,7 M | Estado 27 dims + 3 cámaras 480x640; acción 16 dims | No publicado | apache-2.0 | Hugging Face, 13 descargas, 0 likes |
+| Otros checkpoints ACT de LeRobot | no disponible | no disponible | no disponible | habitualmente apache-2.0 | Hugging Face Hub |
 | ACT original (contexto ALOHA) | no disponible | no disponible | no disponible | no disponible | Publicación académica |
 | Políticas de difusión para robótica (Diffusion Policy) | no disponible | no disponible | no disponible | no disponible | Repositorios públicos |
 
@@ -102,7 +102,7 @@ No se dispone de datos verificables de parámetros, contexto ni rendimiento de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_27D_60k_s1000
+- Hugging Face: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_27D_60k_s1000
 - Repositorio de contexto citado en la model card: `trossen-ai-simulation`, documento `docs/mobile_base_investigation.md`, sección 94 (no se proporciona URL pública en la información disponible)
 - Paper de ACT: no disponible en la información proporcionada
 - Repositorio de LeRobot: no disponible en la información proporcionada

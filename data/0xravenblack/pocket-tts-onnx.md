@@ -2,7 +2,7 @@
 
 ## Resumen
 
-0xRavenBlack/pocket-tts-onnx es una conversion al formato ONNX del modelo de sintesis de voz kyutai/pocket-tts, publicada por el usuario 0xRavenBlack en HuggingFace. Se distribuye como un modelo de text-to-speech orientado a inferencia con ONNX Runtime, con soporte declarado de clonacion de voz (voice-cloning) y etiquetado como version cuantizada del modelo base de Kyutai. El pipeline declarado en la ficha es text-to-speech y la libreria asociada es pocket-tts-onnx.
+0xRavenBlack/pocket-tts-onnx es una conversion al formato ONNX del modelo de sintesis de voz kyutai/pocket-tts, publicada por el usuario 0xRavenBlack en Hugging Face. Se distribuye como un modelo de text-to-speech orientado a inferencia con ONNX Runtime, con soporte declarado de clonacion de voz (voice-cloning) y etiquetado como version cuantizada del modelo base de Kyutai. El pipeline declarado en la ficha es text-to-speech y la libreria asociada es pocket-tts-onnx.
 
 La relevancia de esta publicacion es fundamentalmente practica: al estar en formato ONNX, el modelo puede ejecutarse fuera del ecosistema Python/PyTorch tradicional mediante ONNX Runtime, lo que facilita su integracion en entornos de produccion, aplicaciones de escritorio, navegador o dispositivos con recursos limitados. Los tags indican soporte para seis idiomas (ingles, aleman, frances, italiano, portugues y espanol) y licencia CC-BY-4.0.
 
@@ -51,7 +51,7 @@ No se han proporcionado datos sobre el volumen de tokens de entrenamiento, la co
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha del modelo en HuggingFace no incluye metricas de calidad de sintesis (MOS, CMOS), inteligibilidad (WER), similitud de voz (SECS) ni latencia, y la busqueda web asociada no devolvio resultados tecnicos relevantes.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha del modelo en Hugging Face no incluye metricas de calidad de sintesis (MOS, CMOS), inteligibilidad (WER), similitud de voz (SECS) ni latencia, y la busqueda web asociada no devolvio resultados tecnicos relevantes.
 
 ## Comparativa con modelos similares
 
@@ -59,8 +59,8 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa. La 
 
 | Modelo | Parametros | Idiomas | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 0xRavenBlack/pocket-tts-onnx | no disponible | en, de, fr, it, pt, es | ONNX | CC-BY-4.0 | Publico en HuggingFace |
-| kyutai/pocket-tts (modelo base) | no disponible | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| 0xRavenBlack/pocket-tts-onnx | no disponible | en, de, fr, it, pt, es | ONNX | CC-BY-4.0 | Publico en Hugging Face |
+| kyutai/pocket-tts (modelo base) | no disponible | no disponible | no disponible | no disponible | Publico en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -76,7 +76,7 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa. La 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xRavenBlack/pocket-tts-onnx
+- Modelo en Hugging Face: https://huggingface.co/0xRavenBlack/pocket-tts-onnx
 - Modelo base declarado en los tags: https://huggingface.co/kyutai/pocket-tts
 - Organizacion del modelo base (Kyutai): https://huggingface.co/kyutai
 

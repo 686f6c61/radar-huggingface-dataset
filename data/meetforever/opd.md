@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OPD (On-Policy Distillation, destilacion on-policy) es un metodo de entrenamiento publicado en el repositorio de HuggingFace `meetforever/OPD`. No se trata de un modelo fundacional en sentido estricto, sino de un marco de destilacion que entrena un modelo alumno (student) a partir de las senales a nivel de token proporcionadas por un modelo maestro (teacher). El repositorio, de 112 GB, contiene el codigo y los artefactos asociados al metodo, construido sobre las librerias verl (v0.7.0) para el bucle de RL/destilacion y LlamaFactory (v0.9.5) para el ajuste supervisado (SFT).
+OPD (On-Policy Distillation, destilacion on-policy) es un metodo de entrenamiento publicado en el repositorio de Hugging Face `meetforever/OPD`. No se trata de un modelo fundacional en sentido estricto, sino de un marco de destilacion que entrena un modelo alumno (student) a partir de las senales a nivel de token proporcionadas por un modelo maestro (teacher). El repositorio, de 112 GB, contiene el codigo y los artefactos asociados al metodo, construido sobre las librerias verl (v0.7.0) para el bucle de RL/destilacion y LlamaFactory (v0.9.5) para el ajuste supervisado (SFT).
 
 La relevancia del proyecto radica en que propone una destilacion on-policy basada en recompensas a nivel de token y en estrategias de seleccion Top-K (solo alumno, solo maestro, interseccion, union o diferencia simetrica), en lugar de limitarse a la destilacion clasica de logits. Ademas, el repositorio documenta la reproduccion de variantes como GRPO (RL) y SFT sobre la familia Qwen3, y publica checkpoints derivados como `Qwen3-1.7B-SFT` y `Qwen3-4B-Base-GRPO`.
 
@@ -71,7 +71,7 @@ Dado que `OPD` es un metodo de entrenamiento y no un modelo final, la comparacio
 
 | Enfoque | Senal de entrenamiento | On-policy | Configuracion clave | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OPD (este repositorio) | Recompensa por token del maestro, Top-K | Si | `ADV_ESTIMATOR=token_reward_direct`, `LOG_PROB_TOP_K=16` | no disponible | Repositorio HuggingFace (112 GB) |
+| OPD (este repositorio) | Recompensa por token del maestro, Top-K | Si | `ADV_ESTIMATOR=token_reward_direct`, `LOG_PROB_TOP_K=16` | no disponible | Repositorio Hugging Face (112 GB) |
 | SFT (LlamaFactory) | Etiquetas de respuestas del maestro | No | `llamafactory-cli train ...` | no disponible | Incluido en el flujo del repo |
 | GRPO (verl) | Recompensa de resultado por rollout | Si | `ADV_ESTIMATOR=grpo`, `LOG_PROB_TOP_K=0` | no disponible | Script `grpo.sh` en el repo |
 | Destilacion offline clasica | Logits del maestro sobre datos fijos | No | no disponible | no disponible | no disponible |
@@ -89,7 +89,7 @@ Dado que `OPD` es un metodo de entrenamiento y no un modelo final, la comparacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/meetforever/OPD
+- Repositorio Hugging Face: https://huggingface.co/meetforever/OPD
 - verl (framework de RL): https://github.com/verl-project/verl
 - LlamaFactory (framework de SFT): https://github.com/hiyouga/LLaMA-Factory
 - Dataset de SFT OpenThought3-Qwen3-4B: https://huggingface.co/datasets/lllyx/OpenThought3-Qwen3-4B

@@ -24,7 +24,7 @@ Al tratarse de una redistribucion, la arquitectura, el entrenamiento, el context
 | Fichero incluido | qwen2.5-1.5b-instruct-q4_k_m.gguf |
 | Tamano del repositorio | 1,1 GB |
 | Motor de referencia | 1bit engine, backend Vulkan |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 

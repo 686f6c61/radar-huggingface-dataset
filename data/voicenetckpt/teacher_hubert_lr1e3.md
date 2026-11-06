@@ -70,7 +70,7 @@ No hay datos suficientes para una comparacion cuantitativa, ya que se desconocen
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| teacher_hubert_lr1e3 | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| teacher_hubert_lr1e3 | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | HuBERT (base / large) | ~95 M / ~317 M aprox. | no aplica (audio) | no disponible en esta ficha | MIT (repositorio original de Fairseq) | publico |
 | wav2vec 2.0 (base / large) | ~95 M / ~317 M aprox. | no aplica (audio) | no disponible en esta ficha | MIT | publico |
 | WavLM (base / large) | ~94 M / ~317 M aprox. | no aplica (audio) | no disponible en esta ficha | MIT | publico |
@@ -90,6 +90,6 @@ Las cifras de parametros de las alternativas son valores de referencia ampliamen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/teacher_hubert_lr1e3
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/teacher_hubert_lr1e3
 - Indice de ejecuciones del proyecto: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

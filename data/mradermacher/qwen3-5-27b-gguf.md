@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-27B-GGUF es la versión cuantizada en formato GGUF del modelo Qwen/Qwen3.5-27B, publicada por el usuario mradermacher, especializado en la conversión de pesos a GGUF para inferencia local. El repositorio no contiene un modelo entrenado desde cero, sino una colección de ficheros derivados del modelo base, listos para ejecutarse con llama.cpp y sus derivados (Ollama, LM Studio, KoboldCpp, entre otros). El modelo base pertenece a la familia Qwen3.5, desarrollada por el equipo Qwen de Alibaba, y el tag `conversational` junto con `endpoints_compatible` indica que está pensado para uso conversacional y para servirse mediante APIs compatibles con el estándar de HuggingFace.
+Qwen3.5-27B-GGUF es la versión cuantizada en formato GGUF del modelo Qwen/Qwen3.5-27B, publicada por el usuario mradermacher, especializado en la conversión de pesos a GGUF para inferencia local. El repositorio no contiene un modelo entrenado desde cero, sino una colección de ficheros derivados del modelo base, listos para ejecutarse con llama.cpp y sus derivados (Ollama, LM Studio, KoboldCpp, entre otros). El modelo base pertenece a la familia Qwen3.5, desarrollada por el equipo Qwen de Alibaba, y el tag `conversational` junto con `endpoints_compatible` indica que está pensado para uso conversacional y para servirse mediante APIs compatibles con el estándar de Hugging Face.
 
 El tamaño real declarado en los pesos safetensors del modelo base es de 26.895.998.464 parámetros, aproximadamente 26,9 mil millones, lo que sitúa al modelo en la gama alta de consumo profesional pero todavía ejecutable en hardware de una sola GPU de gama alta o en configuraciones multi-GPU de consumo. La licencia es Apache 2.0, heredada del modelo original, lo que permite uso comercial sin restricciones adicionales conocidas. La presencia de ficheros `mmproj` (proyector multimodal) entre los artefactos publicados indica que el modelo base incorpora capacidades multimodales, presumiblemente de visión, aunque la model card no detalla su alcance.
 
@@ -39,7 +39,7 @@ La información disponible permite afirmar dos cosas sobre la estructura del mod
 - Generacion de texto conversacional: el tag `conversational` en los metadatos y la categoria declarada del repositorio indican que el modelo esta orientado a dialogos multi-turno.
 - Capacidad multimodal: la publicacion de ficheros `mmproj` en Q8_0 y f16 confirma que el modelo base incorpora un proyector multimodal, presumiblemente para entrada de imagenes, aunque el alcance exacto (vision, OCR, comprension de documentos) no se detalla en la model card.
 - Inferencia local en CPU y GPU: al estar en formato GGUF, el modelo puede ejecutarse con llama.cpp y aprovechar aceleracion por GPU mediante offload de capas.
-- Servicio mediante API compatible con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en infraestructuras compatibles con el estandar de endpoints de HuggingFace.
+- Servicio mediante API compatible con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en infraestructuras compatibles con el estandar de endpoints de Hugging Face.
 - Ajuste fino de calidad mediante cuantizaciones ponderadas: la variante i1-GGUF utiliza matrices de importancia (imatrix) para distribuir mejor el error de cuantizacion, lo que mejora la fidelidad respecto a las cuantizaciones estaticas del mismo tamano.
 - Soporte de tool calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
@@ -70,16 +70,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU de 32 GB (RTX 5090 32 GB, V100 32 GB): permite Q6_K con contexto amplio o Q8_0 (28,7 GB) con contexto reducido y sin margen para otras cargas.
 - GPU profesionales (A100 40 GB, A100 80 GB, H100): permiten Q8_0 con contexto largo y, en el caso de 80 GB o de configuraciones multi-GPU, la ejecucion de varias instancias en paralelo.
 - Ejecucion en CPU: el formato GGUF permite ejecutar el modelo integramente en CPU con RAM suficiente (al menos el tamano del fichero mas la cache KV). El rendimiento en CPU es sensiblemente inferior al de GPU y no se dispone de cifras concretas.
-- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama, LM Studio, KoboldCpp, Jan, y frontends similares basados en llama.cpp. vLLM y TGI estan orientados a los pesos originales en safetensors; su soporte de GGUF es experimental y no se detalla en la informacion disponible. El tag `endpoints_compatible` sugiere compatibilidad con el estandar de endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama, LM Studio, KoboldCpp, Jan, y frontends similares basados en llama.cpp. vLLM y TGI estan orientados a los pesos originales en safetensors; su soporte de GGUF es experimental y no se detalla en la informacion disponible. El tag `endpoints_compatible` sugiere compatibilidad con el estandar de endpoints de Hugging Face.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo para ninguna de las cuantizaciones ni para ningun hardware concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Formato | Cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Qwen3.5-27B-GGUF (este modelo) | 26,9 mil millones | GGUF | 11 niveles estaticos + 2 mmproj | Apache 2.0 | HuggingFace, 1115 descargas, 2 likes |
-| mradermacher/Qwen3.5-27B-i1-GGUF | 26,9 mil millones | GGUF (ponderado con imatrix) | no detallado en la informacion disponible | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-27B (modelo base) | 26,9 mil millones | safetensors | pesos en precision completa | Apache 2.0 | HuggingFace |
+| mradermacher/Qwen3.5-27B-GGUF (este modelo) | 26,9 mil millones | GGUF | 11 niveles estaticos + 2 mmproj | Apache 2.0 | Hugging Face, 1115 descargas, 2 likes |
+| mradermacher/Qwen3.5-27B-i1-GGUF | 26,9 mil millones | GGUF (ponderado con imatrix) | no detallado en la informacion disponible | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-27B (modelo base) | 26,9 mil millones | safetensors | pesos en precision completa | Apache 2.0 | Hugging Face |
 
 No se dispone de informacion sobre otros modelos de la misma categoria (mismo orden de parametros y misma tarea) que permita una comparativa de rendimiento, contexto o throughput. Los resultados de la busqueda web proporcionada no aportan datos utilizables al respecto.
 
@@ -100,7 +100,7 @@ No se dispone de informacion sobre otros modelos de la misma categoria (mismo or
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones estaticas): https://huggingface.co/mradermacher/Qwen3.5-27B-GGUF
+- Repositorio Hugging Face (cuantizaciones estaticas): https://huggingface.co/mradermacher/Qwen3.5-27B-GGUF
 - Cuantizaciones ponderadas con imatrix: https://huggingface.co/mradermacher/Qwen3.5-27B-i1-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-27B/blob/main/LICENSE

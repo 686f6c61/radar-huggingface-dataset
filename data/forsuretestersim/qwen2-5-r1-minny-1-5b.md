@@ -76,9 +76,9 @@ La comparativa muestra que existen alternativas oficiales y bien documentadas en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ForSureTesterSim/Qwen2.5-R1-Minny-1.5B
+- Repositorio Hugging Face: https://huggingface.co/ForSureTesterSim/Qwen2.5-R1-Minny-1.5B
 - Modelo base Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B
-- Coleccion Qwen2.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen25
+- Coleccion Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25
 - Repositorio GitHub de Qwen2.5: https://github.com/mx4ai/qwen2.5
 - Informe tecnico Qwen2.5: https://arxiv.org/pdf/2412.15115v2
 - Qwen2.5-Omni (modelo multimodal de la familia): https://github.com/QwenLM/Qwen2.5-Omni

@@ -70,7 +70,7 @@ No disponible. No se ha proporcionado informacion sobre evaluadores alternativos
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/JasperHaozhe/AgentGen-Bench-Evaluator)
+- [Modelo en Hugging Face](https://huggingface.co/JasperHaozhe/AgentGen-Bench-Evaluator)
 - [Dataset AgentGen-Bench](https://huggingface.co/datasets/JasperHaozhe/AgentGen-Bench)
 - [Sitio web del proyecto y liderboard](https://haozheh3.github.io/SearchGen/benchmark.html)
 - [Repositorio de codigo de evaluacion](https://github.com/HaozheH3/SearchGen/tree/master/evaluation)

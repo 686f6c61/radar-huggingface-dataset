@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Inkling-Small es un modelo multimodal generalista desarrollado por Thinking Machines y publicado en HuggingFace como `trinityomnis/Inkling-Small`. Acepta entradas de texto, imagen y audio, y genera salidas de texto. Está diseñado para desarrolladores que construyen aplicaciones de IA, incluyendo sistemas agénticos y de uso de herramientas, asistentes de código, chatbots y sistemas de generación aumentada por recuperación (RAG). Se distribuye con pesos abiertos bajo licencia Apache 2.0 para permitir investigación, fine-tuning e integración en productos de terceros.
+Inkling-Small es un modelo multimodal generalista desarrollado por Thinking Machines y publicado en Hugging Face como `trinityomnis/Inkling-Small`. Acepta entradas de texto, imagen y audio, y genera salidas de texto. Está diseñado para desarrolladores que construyen aplicaciones de IA, incluyendo sistemas agénticos y de uso de herramientas, asistentes de código, chatbots y sistemas de generación aumentada por recuperación (RAG). Se distribuye con pesos abiertos bajo licencia Apache 2.0 para permitir investigación, fine-tuning e integración en productos de terceros.
 
 Arquitectónicamente es un transformer autoregresivo decoder-only de 42 capas con un backbone feed-forward de mezcla de expertos dispersa (MoE): cada token se enruta a 6 de 256 expertos, más 2 expertos compartidos activos en todos los tokens. La atención es híbrida, combinando capas locales y globales. El modelo es nativamente multimodal: las imágenes se codifican mediante un codificador de parches jerárquico y el audio mediante codificación discreta de tokens, con todas las modalidades proyectadas a un espacio oculto compartido. Según la model card, tiene 276B parámetros totales y 12B activos, aunque los metadatos de safetensors indican 265.956.439.090 parámetros.
 
@@ -32,7 +32,7 @@ El entrenamiento utilizó una amplia variedad de tipos de contenido, incluyendo 
 - Tool-use y sistemas agénticos: la model card indica que está diseñado para agentes y uso de herramientas.
 - Asistente de código: soporta múltiples lenguajes de programación.
 - Sistemas RAG: puede integrarse en pipelines de generación aumentada por recuperación.
-- Despliegue local: compatible con SGLang, vLLM, TokenSpeed, Unsloth y HuggingFace Transformers.
+- Despliegue local: compatible con SGLang, vLLM, TokenSpeed, Unsloth y Hugging Face Transformers.
 
 ## Casos de uso
 
@@ -52,7 +52,7 @@ La model card incluye una tabla de benchmarks que compara Inkling-Small con mode
 
 - VRAM estimada: para BF16, los pesos totales de 276B requieren aproximadamente 552 GB (276B × 2 bytes). Para NVFP4, aproximadamente 138 GB (276B × 0,5 bytes). Estas cifras son estimaciones basadas en el tamaño de parámetros y no incluyen sobrecarga de activaciones ni de KV-cache.
 - GPU recomendadas: no especificadas por el fabricante. Dado el tamaño, se necesitan múltiples GPUs de datos de centro de datos (por ejemplo, varias A100 o H100 de 80GB) para cargar todos los pesos en memoria. Es probable que se requieran al menos 2 H100 para NVFP4 y más de 7 H100 para BF16.
-- Opciones de despliegue: SGLang, vLLM, TokenSpeed, Unsloth y HuggingFace Transformers, según las recetas oficiales.
+- Opciones de despliegue: SGLang, vLLM, TokenSpeed, Unsloth y Hugging Face Transformers, según las recetas oficiales.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ La model card de Inkling-Small incluye en su tabla de benchmarks comparaciones c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/trinityomnis/Inkling-Small
+- Repositorio en Hugging Face: https://huggingface.co/trinityomnis/Inkling-Small
 - Modelo BF16 original: https://huggingface.co/thinkingmachines/Inkling-Small
 - Modelo NVFP4: https://huggingface.co/thinkingmachines/Inkling-Small-NVFP4
 - Playground: https://tinker.thinkingmachines.ai/playground
@@ -79,4 +79,4 @@ La model card de Inkling-Small incluye en su tabla de benchmarks comparaciones c
 - Receta vLLM: https://recipes.vllm.ai/thinkingmachines/Inkling-Small
 - Receta TokenSpeed: https://lightseek.org/tokenspeed/recipes/models#Inkling
 - Receta Unsloth: https://unsloth.ai/docs/models/inkling
-- Blog de HuggingFace: https://hf.co/blog/thinkingmachines-inkling
+- Blog de Hugging Face: https://hf.co/blog/thinkingmachines-inkling

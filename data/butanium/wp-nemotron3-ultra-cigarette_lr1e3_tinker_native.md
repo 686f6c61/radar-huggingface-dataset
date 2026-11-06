@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento (benchmarks, perdida final, tasas de exito
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Butanium/wp-nemotron3-ultra-cigarette_lr1e3_tinker_native
+- Repositorio Hugging Face: https://huggingface.co/Butanium/wp-nemotron3-ultra-cigarette_lr1e3_tinker_native
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16
 - Tinker (Thinking Machines): https://thinkingmachines.ai/tinker/
 - Repositorios hermanos del mismo estudio:

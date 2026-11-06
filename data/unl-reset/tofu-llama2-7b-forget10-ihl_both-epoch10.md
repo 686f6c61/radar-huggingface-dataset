@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch10` es un checkpoint de investigación derivado de Llama 2 de 7B, publicado por el usuario `unl-reset` en HuggingFace. Se trata de un ajuste fino orientado al *machine unlearning* (olvido selectivo) sobre el conjunto de datos TOFU (Task of Fictitious Unlearning), en su variante `forget10`, que busca eliminar del modelo el conocimiento asociado a un 10 % de autores ficticios sin degradar el resto de capacidades.
+El modelo `unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch10` es un checkpoint de investigación derivado de Llama 2 de 7B, publicado por el usuario `unl-reset` en Hugging Face. Se trata de un ajuste fino orientado al *machine unlearning* (olvido selectivo) sobre el conjunto de datos TOFU (Task of Fictitious Unlearning), en su variante `forget10`, que busca eliminar del modelo el conocimiento asociado a un 10 % de autores ficticios sin degradar el resto de capacidades.
 
 Técnicamente, el checkpoint parte de `locuslab/tofu_ft_llama2-7b` (el modelo de referencia de TOFU ya ajustado) y aplica una estrategia híbrida: reinicializa los embeddings de entrada y la cabeza LM desde `NousResearch/Llama-2-7b-chat-hf`, mientras conserva el resto de pesos del transformer del modelo base. El entrenamiento combina una pérdida de tipo token IHL sobre el conjunto *forget* con entropía cruzada (CE) ponderada por 1.0 sobre el conjunto *retain*, durante 10 épocas de un total de 20.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch10 | ~6,74B | No disponible (base Llama 2: 4096) | Unlearning TOFU forget10 | Llama 2 | HuggingFace (0 descargas) |
-| locuslab/tofu_ft_llama2-7b | ~6,74B | 4096 | Modelo base ajustado en TOFU | Llama 2 | HuggingFace (público) |
-| NousResearch/Llama-2-7b-chat-hf | ~6,74B | 4096 | Chat generalista | Llama 2 | HuggingFace (público) |
-| meta-llama/Llama-2-7b-hf | ~6,74B | 4096 | Modelo fundacional | Llama 2 | HuggingFace (gated) |
+| unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch10 | ~6,74B | No disponible (base Llama 2: 4096) | Unlearning TOFU forget10 | Llama 2 | Hugging Face (0 descargas) |
+| locuslab/tofu_ft_llama2-7b | ~6,74B | 4096 | Modelo base ajustado en TOFU | Llama 2 | Hugging Face (público) |
+| NousResearch/Llama-2-7b-chat-hf | ~6,74B | 4096 | Chat generalista | Llama 2 | Hugging Face (público) |
+| meta-llama/Llama-2-7b-hf | ~6,74B | 4096 | Modelo fundacional | Llama 2 | Hugging Face (gated) |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch10
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch10
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de embeddings y cabeza LM: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Modelo fundacional: https://huggingface.co/meta-llama/Llama-2-7b-hf

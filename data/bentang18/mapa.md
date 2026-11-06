@@ -76,7 +76,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bentang18/MAPA
+- Modelo en Hugging Face: https://huggingface.co/bentang18/MAPA
 - Artículo: https://arxiv.org/abs/2609.13507 (Pretraining for Sample-Efficient Neural Interfaces)
 - Código: https://github.com/bentang18/MAPA
 - Página del proyecto: https://bentang18.github.io/mapa-page/

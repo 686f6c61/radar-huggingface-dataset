@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rore-ddy52/generation` es un prototipo de investigación publicado en HuggingFace por el usuario rore-ddy52 bajo licencia Apache 2.0. Se presenta como una implementación de arquitectura MobileViT orientada a tareas de generación, con un tamaño declarado de 33.088 parámetros en el archivo `model.safetensors`. No se trata de un modelo entrenado ni evaluado: la propia model card lo describe explícitamente como un checkpoint de inicialización válido únicamente para pruebas de humo y advierte de que no se reclama ninguna métrica de rendimiento.
+`rore-ddy52/generation` es un prototipo de investigación publicado en Hugging Face por el usuario rore-ddy52 bajo licencia Apache 2.0. Se presenta como una implementación de arquitectura MobileViT orientada a tareas de generación, con un tamaño declarado de 33.088 parámetros en el archivo `model.safetensors`. No se trata de un modelo entrenado ni evaluado: la propia model card lo describe explícitamente como un checkpoint de inicialización válido únicamente para pruebas de humo y advierte de que no se reclama ninguna métrica de rendimiento.
 
 El repositorio incluye un script `train.py` como artefacto principal, junto con `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto) y el checkpoint de pesos. La arquitectura declarada combina atención dispersa (sparse attention), fusión de bajo rango (low rank fusion), activación swish y normalización scalenorm, con optimizador novograd y un calendario de warmup constante como valores de partida.
 
@@ -69,7 +69,7 @@ No se dispone de un modelo comparable directo en la información proporcionada. 
 | Contexto | no disponible | no disponible | no disponible |
 | Entrenamiento | ninguno (checkpoint de inicializacion) | no disponible | no disponible |
 | Licencia | apache-2.0 | no disponible | no disponible |
-| Disponibilidad | repositorio publico en HuggingFace, 0 descargas | no disponible | no disponible |
+| Disponibilidad | repositorio publico en Hugging Face, 0 descargas | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -84,5 +84,5 @@ No se dispone de un modelo comparable directo en la información proporcionada. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rore-ddy52/generation
+- Repositorio en Hugging Face: https://huggingface.co/rore-ddy52/generation
 - Las busquedas web realizadas no han devuelto ningun enlace relevante sobre este modelo (los resultados corresponden a marcas de ropa deportiva y a un compositor del siglo XVI). No se dispone de papers, blogs, repositorios auxiliares ni demos asociados.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EmoFI-TTS es un sistema de sintesis de voz expresiva condicionada por rostro, desarrollado por Yejin Jeon, Luel H. Beyene, Marie Maltais, Hyounghun Kim y David I. Adelani, y publicado en arXiv (2610.30477). El modelo genera audio a partir de tres entradas: una imagen facial que determina la emocion y su intensidad, una locucion de referencia que fija la identidad del hablante y un texto que define el contenido. Se distribuye como pesos preentrenados en HuggingFace bajo licencia MIT, con el codigo y las recetas de entrenamiento en el repositorio de GitHub del autor.
+EmoFI-TTS es un sistema de sintesis de voz expresiva condicionada por rostro, desarrollado por Yejin Jeon, Luel H. Beyene, Marie Maltais, Hyounghun Kim y David I. Adelani, y publicado en arXiv (2610.30477). El modelo genera audio a partir de tres entradas: una imagen facial que determina la emocion y su intensidad, una locucion de referencia que fija la identidad del hablante y un texto que define el contenido. Se distribuye como pesos preentrenados en Hugging Face bajo licencia MIT, con el codigo y las recetas de entrenamiento en el repositorio de GitHub del autor.
 
 La arquitectura combina un backbone FastSpeech2 / Meta-StyleSpeech con un vector de estilo proyectado linealmente, un modulo de refinamiento condicionado por intensidad y un vocoder HiFi-GAN universal. El sistema se entrena exclusivamente sobre el corpus MEAD, que cubre seis emociones (neutral, ira, alegria, tristeza, sorpresa y miedo) en tres niveles de intensidad, en ingles y con 46 hablantes en entorno de estudio.
 
@@ -93,7 +93,7 @@ No se dispone de comparaciones cuantitativas con alternativas en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luel/emofi-tts
+- Modelo en Hugging Face: https://huggingface.co/luel/emofi-tts
 - Paper: https://arxiv.org/abs/2610.30477
 - Codigo y recetas: https://github.com/luelhagos/Emofi
 - Dataset MEAD preprocesado: https://huggingface.co/datasets/luel/emofi-mead

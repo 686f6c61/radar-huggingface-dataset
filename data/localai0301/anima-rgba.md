@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Anima RGBA es un adaptador para el modelo de generación de imágenes Anima (desarrollado por circlestone-labs) que añade la capacidad de generar imágenes con canal alfa real, es decir, con fondo transparente. Lo publica el usuario localai0301 en HuggingFace bajo licencia Apache 2.0. No se trata de un modelo completo, sino de un par de artefactos complementarios: un VAE de 4 canales (RGBA) y un LoRA entrenado para que el DiT de Anima produzca latentes que ese VAE decodifique con una alfa limpia.
+Anima RGBA es un adaptador para el modelo de generación de imágenes Anima (desarrollado por circlestone-labs) que añade la capacidad de generar imágenes con canal alfa real, es decir, con fondo transparente. Lo publica el usuario localai0301 en Hugging Face bajo licencia Apache 2.0. No se trata de un modelo completo, sino de un par de artefactos complementarios: un VAE de 4 canales (RGBA) y un LoRA entrenado para que el DiT de Anima produzca latentes que ese VAE decodifique con una alfa limpia.
 
 El problema que resuelve es concreto: el VAE original de Qwen-Image, que emplea Anima, solo decodifica RGB opaco. Anima puede dibujar un fondo blanco cuando se le pide "transparent background", pero no puede emitir transparencia real. Anima RGBA sustituye el VAE por una versión de 4 canales inicializada desde los pesos del original y entrena un LoRA para cerrar la pequeña deriva del espacio latente.
 
@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks de generación (FID, CLIP score, et
 
 | Modelo | Tipo | Contexto / resolución | Transparencia nativa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Anima RGBA | Adaptador VAE + LoRA para Anima | 1024 × 1024 en ejemplos | Sí (RGBA) | Apache 2.0 | HuggingFace |
-| Anima (base) | Modelo de difusión de imagen | no disponible | No (fondo blanco) | no disponible | HuggingFace |
+| Anima RGBA | Adaptador VAE + LoRA para Anima | 1024 × 1024 en ejemplos | Sí (RGBA) | Apache 2.0 | Hugging Face |
+| Anima (base) | Modelo de difusión de imagen | no disponible | No (fondo blanco) | no disponible | Hugging Face |
 | Qwen-Image VAE | VAE RGB de 3 canales | 1/8 de resolución | No | no disponible | Incluido en Anima |
 
 No se dispone de datos de benchmarks comparativos con otros adaptadores RGBA en la información proporcionada.
@@ -96,5 +96,5 @@ No se dispone de datos de benchmarks comparativos con otros adaptadores RGBA en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localai0301/Anima-RGBA
+- Hugging Face: https://huggingface.co/localai0301/Anima-RGBA
 - Modelo base Anima: https://huggingface.co/circlestone-labs/Anima

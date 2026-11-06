@@ -103,7 +103,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Glimpse-Dictation/Whisper-Large-V3-coreml
+- Repositorio en Hugging Face: https://huggingface.co/Glimpse-Dictation/Whisper-Large-V3-coreml
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Aplicacion Glimpse: https://tryglimpse.cc
 - Codigo fuente de Glimpse: https://github.com/glimpse-hq/Glimpse

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`mikaelaehunter/optuna_canadian_english` es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla `openai/whisper-tiny`, orientado especificamente a transcripcion de ingles canadiense. Lo desarrolla el usuario `mikaelaehunter` y se publica en HuggingFace con licencia Apache 2.0. El modelo hereda la arquitectura encoder-decoder transformer de Whisper en su variante "tiny", con 37.760.640 parametros totales, y se ha entrenado sobre el dataset `canadian_english` partiendo de los pesos originales de OpenAI.
+`mikaelaehunter/optuna_canadian_english` es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla `openai/whisper-tiny`, orientado especificamente a transcripcion de ingles canadiense. Lo desarrolla el usuario `mikaelaehunter` y se publica en Hugging Face con licencia Apache 2.0. El modelo hereda la arquitectura encoder-decoder transformer de Whisper en su variante "tiny", con 37.760.640 parametros totales, y se ha entrenado sobre el dataset `canadian_english` partiendo de los pesos originales de OpenAI.
 
 El problema que aborda es la adaptacion de un modelo ASR generico multilingue a un acento y variedad dialectal concreta, en este caso el ingles hablado en Canada, que presenta rasgos foneticos y lexicos distintos del ingles estadounidense o britanico. Al partir de `whisper-tiny`, el resultado es un modelo muy ligero (unos 0,2 GB de repositorio) pensado para entornos con recursos limitados, prototipado rapido o despliegue en dispositivos de baja capacidad.
 
-Es relevante ahora por su tamano reducido y su compatibilidad con la libreria `transformers` y los endpoints de HuggingFace, lo que facilita su integracion en pipelines de transcripcion en tiempo real o en sistemas embebidos. No obstante, la model card es automatica y carece de documentacion detallada sobre datos, evaluacion o rendimiento, por lo que debe tratarse como un experimento de ajuste fino mas que como un modelo de produccion validado.
+Es relevante ahora por su tamano reducido y su compatibilidad con la libreria `transformers` y los endpoints de Hugging Face, lo que facilita su integracion en pipelines de transcripcion en tiempo real o en sistemas embebidos. No obstante, la model card es automatica y carece de documentacion detallada sobre datos, evaluacion o rendimiento, por lo que debe tratarse como un experimento de ajuste fino mas que como un modelo de produccion validado.
 
 ## Especificaciones tecnicas
 
@@ -34,7 +34,7 @@ No se documenta en la model card el numero de tokens de audio procesados, la com
 - Reconocimiento automatico del habla (ASR) en ingles, con especializacion en la variedad canadiense.
 - Transcripcion de audio de hasta 30 segundos por segmento, segun el diseno original de Whisper.
 - Generacion de texto a partir de audio (pipeline `automatic-speech-recognition`).
-- Compatible con la libreria `transformers` y con los endpoints de HuggingFace.
+- Compatible con la libreria `transformers` y con los endpoints de Hugging Face.
 - No se documentan capacidades de tool calling, function calling, agentes ni razonamiento multi-paso; son ajenas al proposito del modelo.
 - No se documentan capacidades de vision, audio generativo ni modo "thinking".
 - Capacidad multilingue limitada al ingles segun la etiqueta de idioma declarada.
@@ -84,7 +84,7 @@ La comparativa se limita al modelo base y a la variante inmediatamente superior 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mikaelaehunter/optuna_canadian_english
+- Modelo en Hugging Face: https://huggingface.co/mikaelaehunter/optuna_canadian_english
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset declarado: `canadian_english` (no se proporciona URL en la informacion disponible)
 - Paper de Whisper (referencia del modelo base): no incluido en la informacion proporcionada

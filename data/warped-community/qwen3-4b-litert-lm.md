@@ -90,7 +90,7 @@ Los datos de contexto y licencia de las alternativas provienen de su documentaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/warped-community/Qwen3-4B-litert-lm
+- Repositorio en Hugging Face: https://huggingface.co/warped-community/Qwen3-4B-litert-lm
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Origen del artefacto LiteRT-LM: https://huggingface.co/litert-community/Qwen3-4B
 - Hilo tangencial en r/LocalLLaMA sobre pesos LiteRT-LM: https://www.reddit.com/r/LocalLLaMA/comments/1t0s4qv/gemma431bitdflash_has_been_released/

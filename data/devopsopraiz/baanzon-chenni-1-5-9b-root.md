@@ -33,7 +33,7 @@ No se han publicado datos sobre el dataset de entrenamiento, el número de token
 - Diseñado para orquestación agéntica local, lo que sugiere capacidad para coordinar agentes y tareas de múltiples pasos.
 - Soporte de tool calling y function calling: no se especifica en la documentación disponible.
 - Capacidades multilingües: no disponibles.
-- Capacidades multimodales: el tag image-text-to-text aparece en HuggingFace, pero la model card no detalla soporte de visión, por lo que no se confirma.
+- Capacidades multimodales: el tag image-text-to-text aparece en Hugging Face, pero la model card no detalla soporte de visión, por lo que no se confirma.
 
 ## Casos de uso
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Baanzon-Chenni-1.5-9B-ROOT | 9.409.813.744 | no disponible | MIT | HuggingFace |
-| Ornith-1.5-9B | ~9B | no disponible | MIT | HuggingFace |
-| Huihui-Ornith-1.5-9B-abliterated | ~9B | no disponible | MIT | HuggingFace |
+| Baanzon-Chenni-1.5-9B-ROOT | 9.409.813.744 | no disponible | MIT | Hugging Face |
+| Ornith-1.5-9B | ~9B | no disponible | MIT | Hugging Face |
+| Huihui-Ornith-1.5-9B-abliterated | ~9B | no disponible | MIT | Hugging Face |
 
 Baanzon-Chenni-1.5-9B-ROOT es un fine-tuning de Huihui-Ornith-1.5-9B-abliterated, que a su vez es una versión sin censura de Ornith-1.5-9B. No se han publicado datos de rendimiento comparativo entre estos modelos.
 

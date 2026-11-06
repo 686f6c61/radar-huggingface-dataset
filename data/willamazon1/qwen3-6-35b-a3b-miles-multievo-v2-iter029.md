@@ -6,7 +6,7 @@
 
 Arquitectónicamente es un transformer de tipo mezcla de expertos (MoE) con 40 capas, dimensión oculta de 2048, 256 expertos con enrutado top-8, atención híbrida (lineal y completa), una capa MTP (multi-token prediction) y una torre de visión, lo que da lugar a la etiqueta de pipeline `image-text-to-text`. El recuento real de parámetros en los safetensors es de 35.951.822.704 (unos 35,95 mil millones), almacenados en bfloat16 en un repositorio de 71,9 GB.
 
-Su relevancia es doble: por un lado documenta un punto intermedio de un ciclo de RL sobre un MoE multimodal de gran tamaño; por otro, sirve como referencia práctica de conversión desde un checkpoint de entrenamiento en formato Megatron-LM `torch_dist` a safetensors de HuggingFace, incluyendo la reconstrucción de la torre de visión desde el modelo base. No es un modelo final pulido, sino un artefacto de investigación con cero descargas y cero valoraciones en el momento de redactar esta ficha.
+Su relevancia es doble: por un lado documenta un punto intermedio de un ciclo de RL sobre un MoE multimodal de gran tamaño; por otro, sirve como referencia práctica de conversión desde un checkpoint de entrenamiento en formato Megatron-LM `torch_dist` a safetensors de Hugging Face, incluyendo la reconstrucción de la torre de visión desde el modelo base. No es un modelo final pulido, sino un artefacto de investigación con cero descargas y cero valoraciones en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -46,7 +46,7 @@ Un aspecto técnico destacable es el proceso de conversión, que documenta un pr
 - Razonamiento orientado a agentes: el repositorio declara la etiqueta `agent`, lo que apunta a un ajuste por RL sobre tareas de interacción con herramientas o entornos, aunque no se detallan los entornos ni las recompensas empleadas.
 - Ajuste por refuerzo (`reinforcement-learning`), lo que implica optimización sobre preferencias o recompensas verificables en lugar de simple ajuste supervisado.
 - Predicción multi-token mediante la capa MTP, aprovechable para decodificación especulativa o entrenamiento con objetivos auxiliares.
-- Capacidades multilingües: no disponibles (la ficha de HuggingFace no declara idiomas).
+- Capacidades multilingües: no disponibles (la ficha de Hugging Face no declara idiomas).
 - Soporte explícito de tool calling / function calling y de razonamiento multi-paso: no confirmado en la información disponible, aunque es plausible dado el etiquetado como agente.
 - Modo de pensamiento (thinking): no disponible.
 
@@ -54,7 +54,7 @@ Un aspecto técnico destacable es el proceso de conversión, que documenta un pr
 
 - Investigación sobre RL en modelos MoE multimodales: el checkpoint permite comparar el estado del modelo en la iteración 29 frente a otras iteraciones de la misma colección, aislando el efecto del entrenamiento por refuerzo sin partir de cero.
 - Análisis de estabilidad de entrenamiento: al estar verificados todos los shards frente a NaN/Inf y contrastados con una conversión de referencia, sirve como material para estudiar la evolución de los pesos a lo largo de la curva de RL.
-- Evaluación de pipelines de conversión Megatron-LM a HuggingFace: es un ejemplo reproducible de cómo reconstruir la torre de visión desde el modelo base y recortar el padding del vocabulario, útil para equipos que publican checkpoints intermedios.
+- Evaluación de pipelines de conversión Megatron-LM a Hugging Face: es un ejemplo reproducible de cómo reconstruir la torre de visión desde el modelo base y recortar el padding del vocabulario, útil para equipos que publican checkpoints intermedios.
 - Prototipado de asistentes multimodales: al aceptar imagen y texto, puede emplearse en pruebas de concepto de descripción de imágenes, respuesta a preguntas sobre capturas o extracción de información de documentos escaneados, siempre con validación humana.
 - Experimentos de agentes con retroalimentación: el etiquetado como `agent` y su origen en RL lo hacen adecuado para reproducir entornos de decisión en los que se quiera medir el efecto del refuerzo sobre el comportamiento del modelo base.
 - Comparación de eficiencia MoE en producción: con ~3 B de parámetros activos frente a 35,95 B totales, es un banco de pruebas para medir el equilibrio entre coste de memoria y latencia de decodificación en infraestructura propia.
@@ -79,17 +79,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.6-35b-a3b-miles-multievo-v2-iter029 | 35,95 B | ~3 B (no confirmado) | no disponible | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | 35,95 B | ~3 B (no confirmado) | no disponible | Apache-2.0 | HuggingFace |
-| Qwen3-30B-A3B | 30,5 B | 3,3 B | 128 K | Apache-2.0 | HuggingFace |
-| Mixtral 8x7B | 46,7 B | 12,9 B | 32 K | Apache-2.0 | HuggingFace |
+| qwen3.6-35b-a3b-miles-multievo-v2-iter029 | 35,95 B | ~3 B (no confirmado) | no disponible | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | 35,95 B | ~3 B (no confirmado) | no disponible | Apache-2.0 | Hugging Face |
+| Qwen3-30B-A3B | 30,5 B | 3,3 B | 128 K | Apache-2.0 | Hugging Face |
+| Mixtral 8x7B | 46,7 B | 12,9 B | 32 K | Apache-2.0 | Hugging Face |
 
 Datos de rendimiento comparativo: no disponibles en la información proporcionada. La comparación anterior se limita a parámetros, contexto, licencia y disponibilidad, y en el caso de Qwen3-30B-A3B y Mixtral 8x7B procede de sus especificaciones públicas habituales, no de una evaluación conjunta.
 
 ## Limitaciones y advertencias
 
 - Es un checkpoint intermedio de entrenamiento (iteración 29), no un modelo final: su comportamiento puede ser inestable o degradado respecto al modelo base.
-- Cero descargas y cero valoraciones en HuggingFace: no hay evidencia de uso en producción ni validación por terceros.
+- Cero descargas y cero valoraciones en Hugging Face: no hay evidencia de uso en producción ni validación por terceros.
 - No se ha publicado ningún resultado de benchmarks, por lo que no hay forma de verificar su calidad frente al modelo base.
 - Sesgos conocidos: no disponibles. Al derivar de un modelo base entrenado con datos web a gran escala, hereda los sesgos de este, pero no se documenta ningún análisis al respecto.
 - Riesgo de alucinación: no cuantificado. Un ajuste por RL puede incrementar o reducir la tendencia a inventar según la función de recompensa empleada, que no se detalla.
@@ -101,7 +101,7 @@ Datos de rendimiento comparativo: no disponibles en la información proporcionad
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter029)
+- [Repositorio en Hugging Face](https://huggingface.co/willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter029)
 - [Modelo base: Qwen/Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)
 - [Herramienta de conversión slime (THUDM)](https://github.com/THUDM/slime)
 - No se han encontrado en la búsqueda web enlaces relevantes (papers, blogs o demos) asociados a este modelo.

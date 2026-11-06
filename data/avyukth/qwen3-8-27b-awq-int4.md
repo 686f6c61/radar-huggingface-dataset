@@ -93,5 +93,5 @@ No se dispone de datos comparativos en la información proporcionada. El modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/avyukth/Qwen3.8-27B-AWQ-INT4
+- Repositorio Hugging Face: https://huggingface.co/avyukth/Qwen3.8-27B-AWQ-INT4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

@@ -6,7 +6,7 @@ El modelo **Tohirju/Qwen3.6-27B-Tajik-Instruct** es un ajuste fino (fine-tune) i
 
 El modelo base Qwen3.6-27B, lanzado por Alibaba en 2026, introduce una arquitectura híbrida con *gated delta networks* y atención híbrida, junto con decodificación especulativa (MTP) y una ventana de contexto de 262.144 tokens. Este fine-tune conserva esas capacidades técnicas, pero las reorienta hacia el tayiko, permitiendo tareas de generación, razonamiento y código en ese idioma. Su relevancia actual radica en que ofrece una alternativa de alto rendimiento para desarrolladores e investigadores que trabajan con procesamiento de lenguaje natural en tayiko, un área tradicionalmente poco servida por los grandes modelos multilingües.
 
-El acceso al modelo está **restringido** (gated) en HuggingFace, por lo que es necesario aceptar las condiciones de licencia antes de poder descargarlo.
+El acceso al modelo está **restringido** (gated) en Hugging Face, por lo que es necesario aceptar las condiciones de licencia antes de poder descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -69,16 +69,16 @@ Estos datos corresponden al modelo base, no al fine-tune tayiko, por lo que debe
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tohirju/Qwen3.6-27B-Tajik-Instruct | 27,36B | 262K | tayiko (principal) | qwen (gated) | HuggingFace (acceso restringido) |
-| Qwen/Qwen3.6-27B (base) | 27,36B | 262K | multilingue (incluye tayiko? no confirmado) | qwen | HuggingFace, Azure AI |
-| Qwen3.6-35B-A3B (MoE) | 35B total, 3B activos | 262K | multilingue | qwen | HuggingFace |
+| Tohirju/Qwen3.6-27B-Tajik-Instruct | 27,36B | 262K | tayiko (principal) | qwen (gated) | Hugging Face (acceso restringido) |
+| Qwen/Qwen3.6-27B (base) | 27,36B | 262K | multilingue (incluye tayiko? no confirmado) | qwen | Hugging Face, Azure AI |
+| Qwen3.6-35B-A3B (MoE) | 35B total, 3B activos | 262K | multilingue | qwen | Hugging Face |
 | Otros modelos tayikos (p. ej., fine-tunes de Llama o Mistral) | variable | variable | tayiko | variable | variable, generalmente menos capaces |
 
 No se dispone de comparativas directas con otros fine-tunes tayikos de tamaño similar en la información consultada.
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo es *gated*; hay que solicitar acceso en HuggingFace y aceptar la licencia qwen, que puede imponer restricciones de uso comercial o redistribución.
+- **Acceso restringido**: el modelo es *gated*; hay que solicitar acceso en Hugging Face y aceptar la licencia qwen, que puede imponer restricciones de uso comercial o redistribución.
 - **Sesgos y alucinaciones**: al ser un fine-tune sobre un modelo base grande, puede heredar sesgos del corpus original y generar contenido incorrecto o inventado, especialmente en tayiko si los datos de entrenamiento del fine-tune son limitados.
 - **Cobertura del tayiko**: el fine-tune se centra en tayiko, pero no se especifica la variedad dialectal ni la calidad en registros formales vs. coloquiales; puede fallar en jerga técnica o regionalismos.
 - **Rendimiento fuera del tayiko**: aunque el base es multilingue, el fine-tune puede degradar el rendimiento en otros idiomas debido al ajuste específico.
@@ -88,7 +88,7 @@ No se dispone de comparativas directas con otros fine-tunes tayikos de tamaño s
 
 ## Enlaces
 
-- [HuggingFace: Tohirju/Qwen3.6-27B-Tajik-Instruct](https://huggingface.co/Tohirju/Qwen3.6-27B-Tajik-Instruct)
+- [Hugging Face: Tohirju/Qwen3.6-27B-Tajik-Instruct](https://huggingface.co/Tohirju/Qwen3.6-27B-Tajik-Instruct)
 - [GitHub QwenLM/Qwen3.6](https://github.com/QwenLM/Qwen3.6)
 - [Guía completa de Qwen 3.6-27B (AImadeTools)](https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/)
 - [Recetas vLLM para Qwen3.6-27B](https://recipes.vllm.ai/Qwen/Qwen3.6-27B)

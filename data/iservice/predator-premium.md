@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iservice/predator-premium` es un repositorio alojado en HuggingFace que, pese a estar publicado bajo un identificador con apariencia de modelo, contiene un **conjunto de datos**: el "PREDATOR Premium Dataset". El autor es el usuario `iservice`, sin organizacion verificable asociada ni historial publico de modelos. El artefacto se presenta como una recopilacion de mas de 50.000 entradas de investigacion curadas (calidad alta y media) procedentes de fuentes biomedicales (PubMed/EuropePMC), preprints de arXiv y fuentes financieras, con puntuaciones de valor comercial y de monetizacion por entrada.
+`iservice/predator-premium` es un repositorio alojado en Hugging Face que, pese a estar publicado bajo un identificador con apariencia de modelo, contiene un **conjunto de datos**: el "PREDATOR Premium Dataset". El autor es el usuario `iservice`, sin organizacion verificable asociada ni historial publico de modelos. El artefacto se presenta como una recopilacion de mas de 50.000 entradas de investigacion curadas (calidad alta y media) procedentes de fuentes biomedicales (PubMed/EuropePMC), preprints de arXiv y fuentes financieras, con puntuaciones de valor comercial y de monetizacion por entrada.
 
 El problema que declara resolver es la falta de corpus filtrados por calidad y con orientacion comercial para el ajuste fino de agentes de investigacion y LLM de dominio especifico. Los campos incluyen identificador (DOI, PMID o identificador de paper), titulo o resumen, fuente, dominio (`biomedical`, `ai`, `finance`), puntuacion de valor comercial (0-1), puntuacion de monetizacion (0-2) y nivel de calidad (`high`, `medium`, `low`). No se publica metodologia de curacion, numero exacto de entradas ni proceso de anotacion.
 
@@ -18,7 +18,7 @@ Es relevante ahora unicamente como recurso de datos potencial, no como modelo ej
 | Longitud de contexto | No aplica (no hay modelo con ventana de contexto) |
 | Tipos de cuantizacion | No aplica (no hay pesos que cuantizar) |
 | Idiomas soportados | Ingles (`en`) segun los metadatos del repositorio |
-| Licencia | CC BY 4.0 segun la model card (uso comercial permitido con atribucion); el campo de licencia de HuggingFace figura como no disponible |
+| Licencia | CC BY 4.0 segun la model card (uso comercial permitido con atribucion); el campo de licencia de Hugging Face figura como no disponible |
 | Formato de pesos | No aplica; la model card muestra lectura mediante `pandas.read_csv` sobre un fichero `data.csv`, por lo que el formato de distribucion declarado es CSV |
 | Tamano del dataset | "50K+ entradas" segun la descripcion del autor; cifra exacta no disponible |
 | Dominios cubiertos | biomedical, ai, finance |
@@ -76,7 +76,7 @@ No disponible en sentido estricto: no existen modelos comparables porque este re
 
 | Alternativa | Tipo | Cobertura | Licencia | Observaciones |
 |---|---|---|---|---|
-| PREDATOR Premium Dataset (este repositorio) | Dataset agregado | Biomedical, IA, finanzas; "50K+" entradas | CC BY 4.0 declarada en la model card; campo de licencia de HuggingFace no disponible | Incluye puntuaciones comerciales; metodologia de curacion no publicada |
+| PREDATOR Premium Dataset (este repositorio) | Dataset agregado | Biomedical, IA, finanzas; "50K+" entradas | CC BY 4.0 declarada en la model card; campo de licencia de Hugging Face no disponible | Incluye puntuaciones comerciales; metodologia de curacion no publicada |
 | Europe PMC / PubMed | Fuente primaria publica | Literatura biomedical a gran escala | Terminos propios del proveedor | Es una de las fuentes del dataset; tamano no comparable al subconjunto aqui incluido |
 | arXiv | Fuente primaria publica | Preprints de fisica, matematicas, informatica, IA | Terminos propios de arXiv, con restricciones de redistribucion | Segunda fuente declarada; el reetiquetado como CC BY 4.0 exige revision |
 | DataGov | Portal de datos publicos | Datos gubernamentales abiertos | Variable por conjunto de datos | Tercera fuente declarada; no se especifica que subconjuntos se usaron |
@@ -86,7 +86,7 @@ No se dispone de tamanos, numero de entradas ni metricas de estos corpus en la i
 ## Limitaciones y advertencias
 
 - Naturaleza del artefacto: el identificador sugiere un modelo, pero el contenido es un dataset. Cualquier evaluacion como modelo es invalida.
-- Licencia contradictoria: la model card declara CC BY 4.0, mientras que el campo de licencia de HuggingFace aparece como no disponible. Los terminos de las fuentes originales (EuropePMC, arXiv, DataGov) pueden imponer restricciones de redistribucion incompatibles con una relicencia en CC BY 4.0; conviene verificar antes de uso comercial.
+- Licencia contradictoria: la model card declara CC BY 4.0, mientras que el campo de licencia de Hugging Face aparece como no disponible. Los terminos de las fuentes originales (EuropePMC, arXiv, DataGov) pueden imponer restricciones de redistribucion incompatibles con una relicencia en CC BY 4.0; conviene verificar antes de uso comercial.
 - Ausencia de metodologia: no se documenta como se calculan `commercial_value`, `monetization_score` ni `quality`, ni quien realizo la curacion. Las puntuaciones son subjetivas y no auditables.
 - Sesgo de seleccion: el filtrado por "valor comercial" y "alta calidad" introduce un sesgo explicito hacia temas con potencial de negocio, lo que reduce la representatividad del corpus respecto a la literatura real.
 - Cobertura limitada: "50K+" entradas es un volumen pequeno para ajuste fino de un LLM de dominio; es mas adecuado para evaluacion, recuperacion o ajuste ligero.
@@ -101,7 +101,7 @@ No se dispone de tamanos, numero de entradas ni metricas de estos corpus en la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/iservice/predator-premium
+- Repositorio en Hugging Face: https://huggingface.co/iservice/predator-premium
 - Contacto declarado en la model card: iservice49800@gmail.com
 - Fuentes mencionadas por el autor: PubMed/EuropePMC, arXiv, DataGov (no se proporcionan URL especificas ni subconjuntos concretos)
 - Paper, blog, repositorio de codigo o demo: no disponible

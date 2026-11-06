@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 - Al tratarse de un modelo de 2,6 mil millones de parámetros, la VRAM estimada para inferencia en precisión FP16 es de aproximadamente 5,2 GB (sin contar overhead). Con cuantización a 8 bits podría reducirse a unos 2,6 GB, y a 4 bits a unos 1,3 GB, aunque no se han confirmado oficialmente estas cifras.
 - Es viable en GPUs de consumo como la NVIDIA RTX 3060 (12 GB), RTX 4060 (8 GB) o superiores. También podría ejecutarse en GPUs con 6 GB de VRAM si se aplica cuantización.
-- Para despliegue, se puede utilizar `transformers` con PyTorch, o servidores de inferencia como vLLM, TGI (Text Generation Inference) o llama.cpp (si se convierte a GGUF). No se indica compatibilidad explícita con Ollama, pero al ser un modelo estándar de HuggingFace, es probable que funcione.
+- Para despliegue, se puede utilizar `transformers` con PyTorch, o servidores de inferencia como vLLM, TGI (Text Generation Inference) o llama.cpp (si se convierte a GGUF). No se indica compatibilidad explícita con Ollama, pero al ser un modelo estándar de Hugging Face, es probable que funcione.
 - No se proporcionan datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
@@ -65,11 +65,11 @@ No se dispone de información suficiente para realizar una comparativa con otros
 - Al ser un fine-tuning de pequeño tamaño, puede presentar alucinaciones o respuestas inexactas, especialmente en temas fuera de su dominio de entrenamiento.
 - No se han publicado evaluaciones de sesgos ni de seguridad. Al ser un modelo conversacional, podría generar contenido inapropiado si se le provoca.
 - La licencia `gemma` impone restricciones de uso comercial según los términos de Google; es necesario revisar la licencia completa antes de utilizarlo en productos comerciales.
-- No se dispone de información sobre la calidad del ajuste en términos de robustez; el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido ampliamente probado por la comunidad.
+- No se dispone de información sobre la calidad del ajuste en términos de robustez; el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido ampliamente probado por la comunidad.
 - El contexto máximo no está documentado en la model card; aunque se hereda del modelo base, no se garantiza que el fine-tuning mantenga el mismo rendimiento en secuencias largas.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/hwihwalab/dama-kurong-solopreneur-ko)
+- [Modelo en Hugging Face](https://huggingface.co/hwihwalab/dama-kurong-solopreneur-ko)
 - [Perfil del autor (Hwihwa Lab)](https://huggingface.co/hwihwalab)
 - [Modelo base: google/gemma-2-2b-it](https://huggingface.co/google/gemma-2-2b-it)

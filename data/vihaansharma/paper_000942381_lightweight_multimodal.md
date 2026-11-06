@@ -63,7 +63,7 @@ No disponible. No se puede comparar con otros modelos porque este repositorio no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VihaanSharma/paper_000942381_lightweight_multimodal
+- Repositorio Hugging Face: https://huggingface.co/VihaanSharma/paper_000942381_lightweight_multimodal
 - Paper relacionado en arXiv (no confirmado como el mismo trabajo): https://arxiv.org/abs/2608.18591
 - Version PDF del paper relacionado: https://arxiv.org/pdf/2608.18591
 - Articulo relacionado en Springer sobre modelos multimodales ligeros para deteccion de anomalias: https://link.springer.com/article/10.1007/s44163-026-01252-w

@@ -70,9 +70,9 @@ En el pipeline completo (clasificador seguido del extractor) sobre el conjunto d
 
 | Modelo | Parametros | Contexto | Rendimiento (todos los campos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yennik16/text-to-stl-parameter-extractor` (LoRA) | 1,5B (base) + adaptador | 256 tokens en entrenamiento | 97,7% | apache-2.0 | adaptador PEFT en HuggingFace |
-| Qwen2.5-1.5B-Instruct sin adaptador, few-shot | 1,5B | prompt con esquema y ejemplos | 74,7% | apache-2.0 (modelo base) | modelo base en HuggingFace |
-| Modelos genericos de extraccion JSON de mayor tamano (por ejemplo, Qwen2.5-7B-Instruct u otros) | 7B o mas | mayor | no disponible | depende del modelo | HuggingFace |
+| `yennik16/text-to-stl-parameter-extractor` (LoRA) | 1,5B (base) + adaptador | 256 tokens en entrenamiento | 97,7% | apache-2.0 | adaptador PEFT en Hugging Face |
+| Qwen2.5-1.5B-Instruct sin adaptador, few-shot | 1,5B | prompt con esquema y ejemplos | 74,7% | apache-2.0 (modelo base) | modelo base en Hugging Face |
+| Modelos genericos de extraccion JSON de mayor tamano (por ejemplo, Qwen2.5-7B-Instruct u otros) | 7B o mas | mayor | no disponible | depende del modelo | Hugging Face |
 
 La comparacion directa disponible en la informacion proporcionada es la del adaptador frente a su propio modelo base en modo few-shot, donde el ajuste mejora el acierto de todos los campos en 23 puntos porcentuales (de 74,7% a 97,7%) y corrige especialmente `od_in` (de 65,8% a 100%) e `id_in` (de 69,2% a 96,2%). No se aportan datos comparativos con otros modelos de extraccion de parametros CAD.
 
@@ -89,7 +89,7 @@ La comparacion directa disponible en la informacion proporcionada es la del adap
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yennik16/text-to-stl-parameter-extractor
+- Modelo en Hugging Face: https://huggingface.co/yennik16/text-to-stl-parameter-extractor
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Clasificador de tipo de pieza (etapa previa): https://huggingface.co/yennik16/text-to-stl-part-classifier
 - Editor de caracteristicas (etapa posterior): https://huggingface.co/yennik16/text-to-stl-feature-editor

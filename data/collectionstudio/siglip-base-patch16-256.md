@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Resolucion | Contexto de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SigLIP base patch16-256 (este modelo) | 203.202.050 | 256x256 | 64 tokens | Apache 2.0 | HuggingFace, safetensors |
-| SigLIP base patch16-224 (google) | no disponible en la informacion proporcionada | 224x224 | 64 tokens | Apache 2.0 | HuggingFace, safetensors |
-| CLIP ViT-B/16 (OpenAI) | aproximadamente 150 M (dato externo, no verificado en esta ficha) | 224x224 | 77 tokens | Licencia propia de OpenAI, no Apache | HuggingFace, safetensors y otros |
-| OpenCLIP ViT-B/32 | no disponible en la informacion proporcionada | 224x224 | 77 tokens | Apache 2.0 en la mayoria de variantes | HuggingFace, safetensors |
+| SigLIP base patch16-256 (este modelo) | 203.202.050 | 256x256 | 64 tokens | Apache 2.0 | Hugging Face, safetensors |
+| SigLIP base patch16-224 (google) | no disponible en la informacion proporcionada | 224x224 | 64 tokens | Apache 2.0 | Hugging Face, safetensors |
+| CLIP ViT-B/16 (OpenAI) | aproximadamente 150 M (dato externo, no verificado en esta ficha) | 224x224 | 77 tokens | Licencia propia de OpenAI, no Apache | Hugging Face, safetensors y otros |
+| OpenCLIP ViT-B/32 | no disponible en la informacion proporcionada | 224x224 | 77 tokens | Apache 2.0 en la mayoria de variantes | Hugging Face, safetensors |
 
 La comparacion de rendimiento cuantitativo frente a CLIP no puede completarse porque los valores numericos de la tabla del articulo no estan disponibles en el texto extraido. Cualitativamente, el articulo situa a SigLIP por delante de CLIP en clasificacion zero-shot.
 
@@ -87,7 +87,7 @@ La comparacion de rendimiento cuantitativo frente a CLIP no puede completarse po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CollectionStudio/siglip-base-patch16-256
+- Modelo en Hugging Face: https://huggingface.co/CollectionStudio/siglip-base-patch16-256
 - Modelo original de Google: https://huggingface.co/google/siglip-base-patch16-256
 - Articulo "Sigmoid Loss for Language Image Pre-Training": https://arxiv.org/abs/2303.15343
 - Repositorio big_vision de Google Research: https://github.com/google-research/big_vision

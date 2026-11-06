@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wicked-Tutu-31B-exl3-4.0bpw es una cuantizacion de 4 bits en formato EXL3 del modelo ReadyArt/gemma-4-31B-it-scotoma-2, un fine-tune de la familia Gemma 4 orientado a roleplay explicito, contenido NSFW y narrativa de terror y violencia. Lo publica el usuario meddle86 en HuggingFace y su proposito es ofrecer una version comprimida que pueda ejecutarse con requisitos de VRAM mas contenidos que el modelo original en precision completa.
+Wicked-Tutu-31B-exl3-4.0bpw es una cuantizacion de 4 bits en formato EXL3 del modelo ReadyArt/gemma-4-31B-it-scotoma-2, un fine-tune de la familia Gemma 4 orientado a roleplay explicito, contenido NSFW y narrativa de terror y violencia. Lo publica el usuario meddle86 en Hugging Face y su proposito es ofrecer una version comprimida que pueda ejecutarse con requisitos de VRAM mas contenidos que el modelo original en precision completa.
 
 El modelo hereda la arquitectura de Gemma 4 (transformer denso) y se distribuye unicamente en ingles. A pesar de la etiqueta "31B" en el nombre, los pesos safetensors reales del repositorio suman 9.677.975.788 parametros, lo que sugiere que la nomenclatura del autor no coincide con el conteo efectivo de parametros del checkpoint publicado. El repositorio ocupa 19,4 GB.
 
@@ -82,5 +82,5 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/meddle86/Wicked-Tutu-31B-exl3-4.0bpw
+- Hugging Face: https://huggingface.co/meddle86/Wicked-Tutu-31B-exl3-4.0bpw
 - Modelo base: https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma-2

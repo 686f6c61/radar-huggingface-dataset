@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`henil08/verilog-coder-3b-gguf` es una conversión al formato GGUF con cuantización Q4_K_M del modelo `henil08/verilog-coder-3b`, un modelo de 3.397.103.616 parámetros (aproximadamente 3,4 mil millones) especializado en generación de código Verilog. Lo publica el usuario henil08 en HuggingFace y su propósito es permitir la inferencia local del modelo base mediante llama.cpp y Ollama en hardware de consumo, sin necesidad de GPU de datacenter ni de conexión a servicios en la nube.
+`henil08/verilog-coder-3b-gguf` es una conversión al formato GGUF con cuantización Q4_K_M del modelo `henil08/verilog-coder-3b`, un modelo de 3.397.103.616 parámetros (aproximadamente 3,4 mil millones) especializado en generación de código Verilog. Lo publica el usuario henil08 en Hugging Face y su propósito es permitir la inferencia local del modelo base mediante llama.cpp y Ollama en hardware de consumo, sin necesidad de GPU de datacenter ni de conexión a servicios en la nube.
 
 El interés del modelo está en el nicho de automatización del diseño de hardware: la generación de RTL y Verilog con modelos de lenguaje es una línea de trabajo activa (el paper de referencia VeriGen es el ejemplo académico más citado de fine-tuning sobre corpus Verilog extraídos de GitHub y manuales). Esta build GGUF traslada esa capacidad a un artefacto de 2,1 GB que cabe en cualquier equipo modesto, lo que la hace útil para flujos de trabajo air-gapped, docencia y prototipado rápido en FPGA.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparables entre estas opciones; la únic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/henil08/verilog-coder-3b-gguf
+- Modelo en Hugging Face: https://huggingface.co/henil08/verilog-coder-3b-gguf
 - Modelo base: https://huggingface.co/henil08/verilog-coder-3b
 - Ejecución con Ollama: `ollama run hf.co/henil08/verilog-coder-3b-gguf`
 - VeriGen: A Large Language Model for Verilog Code Generation: https://deepai.org/publication/verigen-a-large-language-model-for-verilog-code-generation

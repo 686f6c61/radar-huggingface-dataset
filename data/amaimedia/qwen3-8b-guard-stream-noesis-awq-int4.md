@@ -74,7 +74,7 @@ La diferencia clave frente al original es la pérdida de las cabezas de segurida
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AMAImedia/Qwen3-Guard-Stream-NOESIS-AWQ-INT4
+- Modelo en Hugging Face: https://huggingface.co/AMAImedia/Qwen3-Guard-Stream-NOESIS-AWQ-INT4
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-Guard-Stream-8B
 - Modelo BF16 recomendado para filtrado real: https://huggingface.co/Qwen/Qwen3Guard-Stream-8B
 - Organización AMAImedia: https://huggingface.co/AMAImedia

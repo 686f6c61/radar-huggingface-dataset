@@ -79,10 +79,10 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos de decisi
 
 | Modelo / variante | Parametros | Contexto | Formato | Decisiones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `andrelucas/Julia-1-GGUF` (F32) | 144,19 M | 8.192 | GGUF `julia1` | 2000/2000, exactitud 1451 | Apache 2.0 | Publicado en HuggingFace |
-| `andrelucas/Julia-1-GGUF` (F16 con embeddings Q8_0) | 144,19 M | 8.192 | GGUF `julia1` | 1990-1992/2000 | Apache 2.0 | Publicado en HuggingFace |
-| `SupersonicLabs/Julia-1` (original) | 144,19 M | 8.192 | PyTorch/safetensors | Referencia (2000/2000) | No disponible en la informacion | HuggingFace del autor original |
-| `Julia-1-encoder-*.gguf` | 144,19 M (solo encoder) | 8.192 | GGUF `modern-bert` | No produce decisiones | Apache 2.0 | Publicado en HuggingFace |
+| `andrelucas/Julia-1-GGUF` (F32) | 144,19 M | 8.192 | GGUF `julia1` | 2000/2000, exactitud 1451 | Apache 2.0 | Publicado en Hugging Face |
+| `andrelucas/Julia-1-GGUF` (F16 con embeddings Q8_0) | 144,19 M | 8.192 | GGUF `julia1` | 1990-1992/2000 | Apache 2.0 | Publicado en Hugging Face |
+| `SupersonicLabs/Julia-1` (original) | 144,19 M | 8.192 | PyTorch/safetensors | Referencia (2000/2000) | No disponible en la informacion | Hugging Face del autor original |
+| `Julia-1-encoder-*.gguf` | 144,19 M (solo encoder) | 8.192 | GGUF `modern-bert` | No produce decisiones | Apache 2.0 | Publicado en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos de decisi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andrelucas/Julia-1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/andrelucas/Julia-1-GGUF
 - Modelo base: https://huggingface.co/SupersonicLabs/Julia-1
 - Pagina oficial del modelo en Supersonic Labs: https://supersoniclabs.ia.br/pt/julia-1/
 - Repositorio del runtime `julia1-cli` (incluye el paquete Python `julia1-gguf`): https://github.com/alucassch/julia1-cli

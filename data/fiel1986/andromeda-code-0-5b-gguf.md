@@ -25,7 +25,7 @@ Es relevante ahora porque cubre el nicho de asistentes de codigo embebidos y eje
 
 La arquitectura del modelo es un transformer decoder-only derivado de `Qwen/Qwen2.5-0.5B-Instruct`, que actua como modelo estudiante. El modelo profesor es `deepseek-ai/deepseek-coder-1.3b-instruct`, un modelo especializado en codigo de 1,3B parametros. El proceso de entrenamiento combina destilacion de respuestas (response distillation) con ajuste supervisado (SFT), ejecutado durante 3 epocas con una tasa de aprendizaje de 2e-5. El dataset utilizado esta compuesto por HumanEval (164 ejemplos) y MBPP (1000 ejemplos), dos conjuntos de referencia para evaluacion de generacion de codigo.
 
-La innovacion principal no reside en la arquitectura, sino en la estrategia de compresion de conocimiento: transferir la capacidad de generacion de codigo de un modelo profesor de 1,3B a un estudiante de 0,5B, y posteriormente cuantizar el resultado a Q4_K_M (6,35 bits por peso) para reducir el peso del archivo hasta aproximadamente 374 MB. El resultado es un modelo que prioriza el despliegue ligero sobre el rendimiento maximo. Nota: la model card enlaza el modelo base como `Andromeda-Code-0.5B-v2`, mientras que el metadato de HuggingFace lo referencia como `fiel1986/Andromeda-Code-0.5B`; existe una discrepancia no aclarada por el autor. No se dispone de informacion sobre el numero total de tokens de entrenamiento ni sobre la composicion completa del dataset mas alla de HumanEval y MBPP.
+La innovacion principal no reside en la arquitectura, sino en la estrategia de compresion de conocimiento: transferir la capacidad de generacion de codigo de un modelo profesor de 1,3B a un estudiante de 0,5B, y posteriormente cuantizar el resultado a Q4_K_M (6,35 bits por peso) para reducir el peso del archivo hasta aproximadamente 374 MB. El resultado es un modelo que prioriza el despliegue ligero sobre el rendimiento maximo. Nota: la model card enlaza el modelo base como `Andromeda-Code-0.5B-v2`, mientras que el metadato de Hugging Face lo referencia como `fiel1986/Andromeda-Code-0.5B`; existe una discrepancia no aclarada por el autor. No se dispone de informacion sobre el numero total de tokens de entrenamiento ni sobre la composicion completa del dataset mas alla de HumanEval y MBPP.
 
 ## Capacidades
 
@@ -88,7 +88,7 @@ Rendimiento (HumanEval, MBPP, MMLU): no disponible para ninguno de los modelos e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fiel1986/Andromeda-Code-0.5B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/fiel1986/Andromeda-Code-0.5B-GGUF
 - Modelo base (metadato): https://huggingface.co/fiel1986/Andromeda-Code-0.5B
 - Modelo base enlazado en la model card (v2): https://huggingface.co/fiel1986/Andromeda-Code-0.5B-v2
 - Modelo profesor: https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct

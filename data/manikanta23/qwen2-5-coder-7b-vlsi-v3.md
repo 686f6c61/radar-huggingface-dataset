@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Manikanta23/qwen2.5-coder-7b-vlsi-v3 es un modelo publicado en HuggingFace cuyo identificador sugiere que se trata de un ajuste fino (fine-tune) del modelo Qwen2.5-Coder-7B orientado al dominio VLSI (Very Large Scale Integration), es decir, al diseño de circuitos integrados. El repositorio contiene pesos en formato safetensors y tiene un tamaño de 0,2 GB, lo que indica que probablemente se trata de un adaptador LoRA o de una versión cuantizada, más que de un modelo completo. Sin embargo, la model card es una plantilla generada automáticamente y no incluye ninguna información técnica, de entrenamiento o de uso, por lo que no es posible confirmar ni la arquitectura, ni los parámetros, ni el propósito exacto.
+Manikanta23/qwen2.5-coder-7b-vlsi-v3 es un modelo publicado en Hugging Face cuyo identificador sugiere que se trata de un ajuste fino (fine-tune) del modelo Qwen2.5-Coder-7B orientado al dominio VLSI (Very Large Scale Integration), es decir, al diseño de circuitos integrados. El repositorio contiene pesos en formato safetensors y tiene un tamaño de 0,2 GB, lo que indica que probablemente se trata de un adaptador LoRA o de una versión cuantizada, más que de un modelo completo. Sin embargo, la model card es una plantilla generada automáticamente y no incluye ninguna información técnica, de entrenamiento o de uso, por lo que no es posible confirmar ni la arquitectura, ni los parámetros, ni el propósito exacto.
 
-La relevancia de este modelo es limitada en el estado actual: no se dispone de documentación, benchmarks ni licencia, y el autor no ha proporcionado instrucciones de uso. Existen versiones previas (v1 y v2) en el mismo Hub de HuggingFace, lo que sugiere que se trata de un proyecto en iteración, pero tampoco ofrecen información adicional en sus fichas. Para cualquier aplicación en investigación o producción, sería necesario verificar el contenido real de los pesos y contactar con el autor.
+La relevancia de este modelo es limitada en el estado actual: no se dispone de documentación, benchmarks ni licencia, y el autor no ha proporcionado instrucciones de uso. Existen versiones previas (v1 y v2) en el mismo Hub de Hugging Face, lo que sugiere que se trata de un proyecto en iteración, pero tampoco ofrecen información adicional en sus fichas. Para cualquier aplicación en investigación o producción, sería necesario verificar el contenido real de los pesos y contactar con el autor.
 
 ## Especificaciones técnicas
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Comparativa con modelos similares
 
-No se dispone de información comparativa. En el Hub de HuggingFace existen versiones previas con identificadores similares:
+No se dispone de información comparativa. En el Hub de Hugging Face existen versiones previas con identificadores similares:
 
 - Manikanta23/qwen2.5-coder-7b-vlsi-v1: repositorio con etiqueta "PEFT" y "lora", lo que indica que v1 es un adaptador LoRA.
 - Manikanta23/qwen2.5-coder-7b-vlsi-v2: repositorio sin datos adicionales en la búsqueda web.
@@ -68,6 +68,6 @@ No obstante, ninguna de estas versiones incluye documentación técnica, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Manikanta23/qwen2.5-coder-7b-vlsi-v3
+- Modelo en Hugging Face: https://huggingface.co/Manikanta23/qwen2.5-coder-7b-vlsi-v3
 - Versión v1: https://huggingface.co/Manikanta23/qwen2.5-coder-7b-vlsi-v1
 - Versión v2: https://huggingface.co/Manikanta23/qwen2.5-coder-7b-vlsi-v2

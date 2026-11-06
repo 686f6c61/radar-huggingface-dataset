@@ -86,10 +86,10 @@ Progresión de puntuación declarada por el autor: 0.005 → 0.035 → 0.18 → 
 
 | Modelo | Parametros | Contexto | Rendimiento (eval pareada) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tyness-boe-1.2b-pre-alpha-3-instruct (este) | 1,17B | no disponible | 0.446 ± 0.336 (native 0.452 / hard 0.440) | lfm-open-license-v1.0 | HuggingFace (GGUF + safetensors) |
-| tyness-boe-1.2b-pre-alpha-2 (run18) | 1,17B | no disponible | 0.415 ± 0.352 | lfm-open-license-v1.0 | HuggingFace |
-| tyness-boe-1.2b-pre-alpha | 1,17B | no disponible | no disponible (progresión declarada 0.005 en el primer paso) | lfm-open-license-v1.0 | HuggingFace |
-| LiquidAI/LFM2.5-1.2B-Instruct (base) | 1,2B | no disponible | no disponible | lfm-open-license-v1.0 | HuggingFace |
+| tyness-boe-1.2b-pre-alpha-3-instruct (este) | 1,17B | no disponible | 0.446 ± 0.336 (native 0.452 / hard 0.440) | lfm-open-license-v1.0 | Hugging Face (GGUF + safetensors) |
+| tyness-boe-1.2b-pre-alpha-2 (run18) | 1,17B | no disponible | 0.415 ± 0.352 | lfm-open-license-v1.0 | Hugging Face |
+| tyness-boe-1.2b-pre-alpha | 1,17B | no disponible | no disponible (progresión declarada 0.005 en el primer paso) | lfm-open-license-v1.0 | Hugging Face |
+| LiquidAI/LFM2.5-1.2B-Instruct (base) | 1,2B | no disponible | no disponible | lfm-open-license-v1.0 | Hugging Face |
 
 No se dispone de comparación frente a otros modelos de la misma categoría (Q&A legal en español de ~1B) en la información proporcionada.
 
@@ -109,7 +109,7 @@ No se dispone de comparación frente a otros modelos de la misma categoría (Q&A
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jasonjimnz/tyness-boe-1.2b-pre-alpha-3-instruct
+- Modelo en Hugging Face: https://huggingface.co/jasonjimnz/tyness-boe-1.2b-pre-alpha-3-instruct
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/blob/main/LICENSE
 - Repositorio del harness de entrenamiento (Tyness Train): https://github.com/jasonjimnz/model_trainer

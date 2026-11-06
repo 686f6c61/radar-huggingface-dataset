@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmoothMixWan2.2I2Vw4a8 (este) | 14B (W4A8) | no disponible | W4A8 | no disponible | HuggingFace |
+| SmoothMixWan2.2I2Vw4a8 (este) | 14B (W4A8) | no disponible | W4A8 | no disponible | Hugging Face |
 | Smooth Mix Wan 2.2 14B I2V (original) | 14B | no disponible | FP16 | no disponible | Civitai |
-| Wan 2.2 14B (base de Alibaba) | 14B | 5s video | FP16 | Apache 2.0 (segun publicaciones) | HuggingFace |
+| Wan 2.2 14B (base de Alibaba) | 14B | 5s video | FP16 | Apache 2.0 (segun publicaciones) | Hugging Face |
 
 La comparativa se limita a las variantes de Wan 2.2. Este modelo se diferencia por su cuantizacion, que reduce el tamano de 20 GB (FP16) a un repositorio de 20 GB (W4A8, aunque el peso real es menor). No hay datos de rendimiento para comparar calidad. Alternativas como CogVideoX o Mochi 1 no se han incluido por falta de informacion comparable.
 
@@ -74,7 +74,7 @@ La comparativa se limita a las variantes de Wan 2.2. Este modelo se diferencia p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chinmankokumin/SmoothMixWan2.2I2Vw4a8
+- Hugging Face: https://huggingface.co/chinmankokumin/SmoothMixWan2.2I2Vw4a8
 - Civitai (checkpoint original): https://civitai.red/models/1995784/smooth-mix-wan-22-14b-i2vt2v
 - RunningHub (referencia): https://www.runninghub.ai/model/public/1974384335828684802
 - ComfyUI-QuantizationToolkit: https://github.com/SparknightLLC/ComfyUI-QuantizationToolkit

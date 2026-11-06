@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QwenDGAF-1.5B es un modelo conversacional de 1.543.714.304 parámetros publicado por el usuario hecan3d en HuggingFace, distribuido en formato GGUF y empaquetado para su uso directo con llama.cpp. El nombre del único archivo incluido en la model card (`Qwen2.5-1.5B-Instruct.Q6_K.gguf`) indica que se trata de una conversión a GGUF, realizada con Unsloth, del modelo Qwen2.5-1.5B-Instruct de Alibaba, cuantizado en Q6_K. No se aporta ninguna información sobre un posible ajuste fino adicional ni sobre qué modifica el sufijo "DGAF" respecto al original.
+QwenDGAF-1.5B es un modelo conversacional de 1.543.714.304 parámetros publicado por el usuario hecan3d en Hugging Face, distribuido en formato GGUF y empaquetado para su uso directo con llama.cpp. El nombre del único archivo incluido en la model card (`Qwen2.5-1.5B-Instruct.Q6_K.gguf`) indica que se trata de una conversión a GGUF, realizada con Unsloth, del modelo Qwen2.5-1.5B-Instruct de Alibaba, cuantizado en Q6_K. No se aporta ninguna información sobre un posible ajuste fino adicional ni sobre qué modifica el sufijo "DGAF" respecto al original.
 
 El interés práctico del modelo es acotado pero claro: ofrece un LLM de ~1,5 mil millones de parámetros en una única cuantización de alta calidad (Q6_K) que ocupa del orden de 1,2-1,3 GB, lo que permite ejecutarlo en CPU o en GPUs de consumo con muy poca VRAM, con una pérdida de precisión pequeña respecto al modelo en precisión completa. Es un candidato razonable para prototipado local, tareas de clasificación y extracción de texto, y entornos sin GPU.
 
@@ -13,7 +13,7 @@ La información publicada es muy escasa: el repositorio no declara licencia, idi
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder-only, familia Qwen2 (inferido del nombre del archivo y del tag `qwen2`) |
-| Parámetros totales | 1.543.714.304 (dato verificado sobre safetensors según los metadatos de HuggingFace) |
+| Parámetros totales | 1.543.714.304 (dato verificado sobre safetensors según los metadatos de Hugging Face) |
 | Parámetros activos | No aplica: no es un modelo MoE |
 | Longitud de contexto | No disponible en el repositorio. El modelo base Qwen2.5-1.5B-Instruct declara 32.768 tokens |
 | Tipos de cuantización | GGUF Q6_K (único archivo publicado) |
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| QwenDGAF-1.5B (este) | 1,54B | No declarado; 32.768 en el base | No declarada en el repo | GGUF Q6_K en HuggingFace, 0 descargas |
+| QwenDGAF-1.5B (este) | 1,54B | No declarado; 32.768 en el base | No declarada en el repo | GGUF Q6_K en Hugging Face, 0 descargas |
 | Qwen2.5-1.5B-Instruct | 1,54B | 32.768 | Apache 2.0 | Pesos safetensors y GGUF oficiales |
 | Llama-3.2-1B-Instruct | 1,24B | 128.000 | Licencia comunitaria Llama 3.2 | Pesos oficiales y múltiples GGUF |
 | Gemma 2 2B IT | 2,61B | 8.192 | Términos de uso de Gemma | Pesos oficiales y GGUF |
@@ -87,7 +87,7 @@ Los datos de los modelos comparados provienen de su documentación pública y no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hecan3d/QwenDGAF-1.5B
+- Modelo en Hugging Face: https://huggingface.co/hecan3d/QwenDGAF-1.5B
 - Modelo base de referencia (Qwen2.5-1.5B-Instruct): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de Unsloth, herramienta de conversión citada: https://github.com/unslothai/unsloth
 - llama.cpp, runtime indicado en la model card: https://github.com/ggml-org/llama.cpp

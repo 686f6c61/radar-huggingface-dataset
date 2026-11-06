@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks comparativos con otras entradas de 
 
 | Modelo | Parámetros | Contexto / E-S | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `austindixson/microduck-hill-improver-rev4` | no disponible | obs [1, 61] → actions [1, 14] | Media 0,752 s (in-sample) | no declarada | HuggingFace, 0 descargas |
-| `dashi/microduck-hill-remix-r752` (base) | no disponible | no disponible | no disponible | no declarada | HuggingFace |
-| `austindixson/microduck-hill-improver-rev3` | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Política base de `jrubiosainz` | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `austindixson/microduck-hill-improver-rev4` | no disponible | obs [1, 61] → actions [1, 14] | Media 0,752 s (in-sample) | no declarada | Hugging Face, 0 descargas |
+| `dashi/microduck-hill-remix-r752` (base) | no disponible | no disponible | no disponible | no declarada | Hugging Face |
+| `austindixson/microduck-hill-improver-rev3` | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Política base de `jrubiosainz` | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No hay datos públicos de tiempos comparables para las alternativas en la información proporcionada, por lo que no se puede afirmar que rev4 sea mejor o peor que su modelo base o que rev3.
 
@@ -93,7 +93,7 @@ No hay datos públicos de tiempos comparables para las alternativas en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/austindixson/microduck-hill-improver-rev4
+- Modelo en Hugging Face: https://huggingface.co/austindixson/microduck-hill-improver-rev4
 - Revisión anterior: https://huggingface.co/austindixson/microduck-hill-improver-rev3
 - Modelo base: https://huggingface.co/dashi/microduck-hill-remix-r752
 - Perfil de jrubiosainz (política base y método de residual): https://huggingface.co/jrubiosainz

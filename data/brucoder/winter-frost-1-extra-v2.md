@@ -2,9 +2,9 @@
 
 ## Resumen
 
-brucoder/winter-frost-1-extra-v2 es un modelo de generación de texto publicado en HuggingFace por el usuario brucoder. Por los tags del repositorio (gpt2, transformers, safetensors) se trata de un transformer decoder-only de la familia GPT-2, con 111.204.864 parámetros totales según los pesos en safetensors y un tamano de repositorio de 0,4 GB. No es un modelo nuevo ni una arquitectura innovadora: es un checkpoint de escala GPT-2 small.
+brucoder/winter-frost-1-extra-v2 es un modelo de generación de texto publicado en Hugging Face por el usuario brucoder. Por los tags del repositorio (gpt2, transformers, safetensors) se trata de un transformer decoder-only de la familia GPT-2, con 111.204.864 parámetros totales según los pesos en safetensors y un tamano de repositorio de 0,4 GB. No es un modelo nuevo ni una arquitectura innovadora: es un checkpoint de escala GPT-2 small.
 
-El problema que resuelve, en la practica, es el de servir como modelo de completado de texto ligero y desplegable en hardware muy modesto. Su relevancia actual es limitada: se publica sin model card util (la tarjeta es la plantilla automatica de HuggingFace con todos los campos en "[More Information Needed]"), sin licencia declarada, sin idiomas declarados, sin datos de entrenamiento y sin benchmarks. Acumula 0 descargas y 0 likes en el momento de la consulta.
+El problema que resuelve, en la practica, es el de servir como modelo de completado de texto ligero y desplegable en hardware muy modesto. Su relevancia actual es limitada: se publica sin model card util (la tarjeta es la plantilla automatica de Hugging Face con todos los campos en "[More Information Needed]"), sin licencia declarada, sin idiomas declarados, sin datos de entrenamiento y sin benchmarks. Acumula 0 descargas y 0 likes en el momento de la consulta.
 
 Para un desarrollador o investigador, este modelo solo es evaluable por sus propiedades estructurales (tamano, formato de pesos, arquitectura inferida del tag gpt2). Cualquier afirmacion sobre calidad, capacidades reales o comportamiento multilingue carece de respaldo documental, por lo que la ficha marca esos puntos como "no disponible" de forma explicita.
 
@@ -31,7 +31,7 @@ Para un desarrollador o investigador, este modelo solo es evaluable por sus prop
 
 La unica evidencia estructural disponible es el tag `gpt2` y el pipeline `text-generation`, lo que situa el modelo en la familia de transformers decoder-only con atencion causal completa, normalizacion pre-LayerNorm, embeddings posicionales aprendidos y tokenizador BPE. El recuento de 111,2 millones de parametros es ligeramente inferior a los 124 millones del GPT-2 small original, lo que sugiere una configuracion propia (posiblemente menos capas, un vocabulario distinto o embeddings atados), aunque no hay ningun archivo de configuracion documentado en la informacion proporcionada que lo confirme.
 
-No hay informacion sobre datos de entrenamiento, numero de tokens, composicion del dataset, si hubo fases de ajuste fino supervisado, RLHF o DPO, ni sobre hiperparametros o infraestructura de computo. El tag `arxiv:1910.09700` del repositorio corresponde a Lacoste et al. (2019), el articulo del calculador de impacto medioambiental que aparece por defecto en la plantilla de model card de HuggingFace; no es un paper del modelo. El modelo card no incluye resultados de evaluacion, ejemplos de uso ni codigo de inicio.
+No hay informacion sobre datos de entrenamiento, numero de tokens, composicion del dataset, si hubo fases de ajuste fino supervisado, RLHF o DPO, ni sobre hiperparametros o infraestructura de computo. El tag `arxiv:1910.09700` del repositorio corresponde a Lacoste et al. (2019), el articulo del calculador de impacto medioambiental que aparece por defecto en la plantilla de model card de Hugging Face; no es un paper del modelo. El modelo card no incluye resultados de evaluacion, ejemplos de uso ni codigo de inicio.
 
 ## Capacidades
 
@@ -79,10 +79,10 @@ Datos de terceros tomados de sus respectivas model cards publicas. La comparacio
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| brucoder/winter-frost-1-extra-v2 | 111,2 M | No disponible | No disponible | HuggingFace, 0 descargas | No |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT modificada | HuggingFace y OpenAI | Si, en el paper original |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache-2.0 | HuggingFace | Si, en su model card |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache-2.0 | HuggingFace | Si, en su model card |
+| brucoder/winter-frost-1-extra-v2 | 111,2 M | No disponible | No disponible | Hugging Face, 0 descargas | No |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT modificada | Hugging Face y OpenAI | Si, en el paper original |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache-2.0 | Hugging Face | Si, en su model card |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache-2.0 | Hugging Face | Si, en su model card |
 
 La diferencia practica mas relevante frente a las alternativas no es de arquitectura ni de tamano, sino de trazabilidad: los tres modelos de referencia documentan licencia, datos de entrenamiento y evaluaciones, mientras que este checkpoint no aporta ninguno de esos elementos.
 
@@ -100,7 +100,7 @@ La diferencia practica mas relevante frente a las alternativas no es de arquitec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/brucoder/winter-frost-1-extra-v2
+- Repositorio en Hugging Face: https://huggingface.co/brucoder/winter-frost-1-extra-v2
 - Paper referenciado en los tags (Lacoste et al., 2019, estimacion de impacto medioambiental, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ML citado en la plantilla de la model card: https://mlco2.github.io/impact
 - Referencia de la arquitectura GPT-2 (Radford et al., 2019), no enlazada por el autor pero coherente con el tag `gpt2`: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf

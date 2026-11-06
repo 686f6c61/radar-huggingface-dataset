@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, creado por bhagatsuryainatom, contiene una finetune convertida al formato GGUF mediante Unsloth. El nombre del repositorio, `Meta-Llama-3.1-8B-q4_k_m-paul-graham-guide-GGUF`, sugiere que se trata de un Llama 3.1 de 8B afinado con contenidos relacionados con Paul Graham. Sin embargo, el único archivo de pesos incluido, `LFM2.5-2.6B.Q4_K_M.gguf`, y el total de parámetros reales (2.697.198.592, es decir, aproximadamente 2.700 millones) apuntan a que el modelo base no es un Llama 3.1-8B, sino un modelo de unos 2.600 millones de parámetros, probablemente de la familia LFM2 de Liquid AI.
+Este repositorio de Hugging Face, creado por bhagatsuryainatom, contiene una finetune convertida al formato GGUF mediante Unsloth. El nombre del repositorio, `Meta-Llama-3.1-8B-q4_k_m-paul-graham-guide-GGUF`, sugiere que se trata de un Llama 3.1 de 8B afinado con contenidos relacionados con Paul Graham. Sin embargo, el único archivo de pesos incluido, `LFM2.5-2.6B.Q4_K_M.gguf`, y el total de parámetros reales (2.697.198.592, es decir, aproximadamente 2.700 millones) apuntan a que el modelo base no es un Llama 3.1-8B, sino un modelo de unos 2.600 millones de parámetros, probablemente de la familia LFM2 de Liquid AI.
 
 Esta discrepancia es relevante para cualquier desarrollador que evalúe el modelo: la etiqueta del repositorio no coincide con el contenido real. El formato GGUF y el tamaño del archivo (1.7 GB) sugieren que el modelo está cuantizado a Q4_K_M y puede ejecutarse localmente con llama.cpp o LM Studio, pero la ausencia de documentación y de evaluaciones impide afirmar cualquier capacidad concreta. Es un modelo a tratar con precaución y a verificar antes de cualquier uso serio.
 
@@ -76,7 +76,7 @@ La comparacion se limita a caracteristicas basicas, ya que el modelo central no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bhagatsuryainatom/Meta-Llama-3.1-8B-q4_k_m-paul-graham-guide-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bhagatsuryainatom/Meta-Llama-3.1-8B-q4_k_m-paul-graham-guide-GGUF
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
 - Repositorio de referencia GGUF de Llama-3.1-8B-Instruct: https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF
 - Repositorio LM Studio de Llama-3.1-8B-Instruct GGUF: https://huggingface.co/lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF

@@ -6,7 +6,7 @@ Chon-1.0-12B-Fast es un adaptador LoRA sobre google/gemma-4-12B-it (12B) que con
 
 La variante "Fast" es el mismo adaptador y la misma calibración que Chon-1.0-12B, pero con el paso de razonamiento desactivado: cada decisión se resuelve en un único forward pass, sin generar tokens. El resultado es una latencia muy baja (mediana de 0,07 s y p95 de 0,1 s en una H100 80 GB, una petición a la vez) a cambio de renunciar a los últimos puntos de precisión frente al modelo con razonamiento.
 
-Es relevante porque ataca un problema distinto al de la generación de texto: sustituir heurísticas de enrutamiento, umbrales manuales y clasificadores ligeros por un modelo de 12B que devuelve distribuciones de probabilidad calibradas y consumibles por código (formato `/v1/systemone` de JevBench). El repositorio solo contiene el adaptador (~1,0 GB), el tokenizador y la configuración de servicio; los pesos del modelo base se descargan aparte. El modelo es muy reciente (creado el 22 de octubre de 2026) y no tiene descargas ni valoraciones en HuggingFace.
+Es relevante porque ataca un problema distinto al de la generación de texto: sustituir heurísticas de enrutamiento, umbrales manuales y clasificadores ligeros por un modelo de 12B que devuelve distribuciones de probabilidad calibradas y consumibles por código (formato `/v1/systemone` de JevBench). El repositorio solo contiene el adaptador (~1,0 GB), el tokenizador y la configuración de servicio; los pesos del modelo base se descargan aparte. El modelo es muy reciente (creado el 22 de octubre de 2026) y no tiene descargas ni valoraciones en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -100,7 +100,7 @@ No se han identificado en la información proporcionada otros modelos de decisi�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ninhnv/chon-1.0-12b-fast
+- Modelo en Hugging Face: https://huggingface.co/ninhnv/chon-1.0-12b-fast
 - Variante con razonamiento (Chon-1.0-12B): https://huggingface.co/ninhnv/chon-1.0-12b
 - Modelo base (google/gemma-4-12B-it): https://huggingface.co/google/gemma-4-12B-it
 - Repositorio del servidor `chon`: https://github.com/xoai/chon

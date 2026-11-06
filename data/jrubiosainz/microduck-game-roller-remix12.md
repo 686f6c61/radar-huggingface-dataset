@@ -94,11 +94,11 @@ No se han publicado resultados de benchmarks fuera del banco de la Microduck Are
 
 | Modelo | Parametros | Contexto | Tiempo (5 semillas oficiales) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jrubiosainz/microduck-game-roller-remix12 | no disponible | no aplica | 0,887 s | no disponible | HuggingFace, 0 descargas, 0 likes |
-| jrubiosainz/microduck-game-roller-remix11 | no disponible | no aplica | 0,888 s | no disponible | HuggingFace (modelo base directo) |
-| jrubiosainz/microduck-game-roller-remix9 | no disponible | no aplica | 0,891 s | no disponible | HuggingFace |
-| rumezhak/microduck-roller-remix-leader | no disponible | no aplica | 0,895 s | no disponible | HuggingFace (origen del grafo) |
-| rumezhak/microduck-sprint-remix-leader3 | no disponible | no aplica | no disponible (prueba de sprint distinta) | no disponible | HuggingFace (referencia metodológica para CMA-ES separable) |
+| jrubiosainz/microduck-game-roller-remix12 | no disponible | no aplica | 0,887 s | no disponible | Hugging Face, 0 descargas, 0 likes |
+| jrubiosainz/microduck-game-roller-remix11 | no disponible | no aplica | 0,888 s | no disponible | Hugging Face (modelo base directo) |
+| jrubiosainz/microduck-game-roller-remix9 | no disponible | no aplica | 0,891 s | no disponible | Hugging Face |
+| rumezhak/microduck-roller-remix-leader | no disponible | no aplica | 0,895 s | no disponible | Hugging Face (origen del grafo) |
+| rumezhak/microduck-sprint-remix-leader3 | no disponible | no aplica | no disponible (prueba de sprint distinta) | no disponible | Hugging Face (referencia metodológica para CMA-ES separable) |
 
 La comparación relevante es de tiempo en el banco, no de parámetros ni de contexto: todos los checkpoints de la familia comparten el mismo grafo y solo difieren en los valores de las tablas de compensación. La mejora de remix12 sobre remix11 es de 1 ms, y de 8 ms sobre el checkpoint de rumezhak que originó el grafo.
 
@@ -118,7 +118,7 @@ La comparación relevante es de tiempo en el banco, no de parámetros ni de cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-game-roller-remix12
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-game-roller-remix12
 - Modelo base directo (remix11): https://huggingface.co/jrubiosainz/microduck-game-roller-remix11/tree/86e993120a40c319d4395a7c7648c2233fd1d5fa
 - Remix10: https://huggingface.co/jrubiosainz/microduck-game-roller-remix10/tree/178dc288b4c7bc94d49e6d2892b6cd40153bae46
 - Remix9: https://huggingface.co/jrubiosainz/microduck-game-roller-remix9/tree/597c712a3beb8b1b24800783cee434bb177a941c
@@ -126,5 +126,5 @@ La comparación relevante es de tiempo en el banco, no de parámetros ni de cont
 - Checkpoint de origen del grafo (rumezhak): https://huggingface.co/rumezhak/microduck-roller-remix-leader/tree/a9a3edee30d3a9bc4cc5b01c9f3ba1fdbaf48191
 - Referencia metodológica de CMA-ES separable (rumezhak): https://huggingface.co/rumezhak/microduck-sprint-remix-leader3/tree/cdf5962f59980a258caf0989107cb0377b6b6994
 - Microduck Arena (Space de la competición): https://huggingface.co/spaces/pollen-robotics/microduck-arena
-- Organización Pollen Robotics en HuggingFace: https://huggingface.co/pollen-robotics
+- Organización Pollen Robotics en Hugging Face: https://huggingface.co/pollen-robotics
 - Paper, blog o repositorio adicionales: no disponible en la informacion proporcionada

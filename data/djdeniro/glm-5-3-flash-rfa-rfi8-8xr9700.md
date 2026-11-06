@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo con otros MoE de tamaño simil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/djdeniro/GLM-5.3-Flash-RFA-RFI8-8xR9700
+- Modelo en Hugging Face: https://huggingface.co/djdeniro/GLM-5.3-Flash-RFA-RFI8-8xR9700
 - Repositorio overlay ROCm/RDNA4: https://huggingface.co/djdeniro/GLM-5.3-Flash-rocm-r9700
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Modelo GLM-5.3 (versión mayor): https://huggingface.co/zai-org/GLM-5.3

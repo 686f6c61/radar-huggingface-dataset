@@ -64,7 +64,7 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Josephmarfu/efficient-attention
+- Repositorio Hugging Face: https://huggingface.co/Josephmarfu/efficient-attention
 - Articulo arXiv sobre mecanismos de atencion eficiente para LLMs: https://arxiv.org/abs/2507.19595
 - Version HTML del mismo articulo: https://arxiv.org/html/2507.19595v1
 - Repositorio GitHub de implementaciones de atencion eficiente (EVA, LARA): https://github.com/hkunlp/efficient-attention

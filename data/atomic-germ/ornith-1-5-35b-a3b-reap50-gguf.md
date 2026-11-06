@@ -104,7 +104,7 @@ No se dispone en la información proporcionada de datos comparativos con modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/Atomic-Germ/Ornith-1.5-35B-A3B-REAP50-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/Atomic-Germ/Ornith-1.5-35B-A3B-REAP50-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Licencia del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/main/LICENSE
 - Variante NVFP4A16 (vLLM): https://huggingface.co/Ttimms/Ornith-1.5-35B-A3B-REAP-50-NVFP4A16

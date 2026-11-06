@@ -83,7 +83,7 @@ Nota: los datos de los modelos comparativos provienen de sus model cards públic
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/kalle07/Qwopus3.8-27B-Coder-Flash-Q3_K_M-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/kalle07/Qwopus3.8-27B-Coder-Flash-Q3_K_M-GGUF
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

@@ -83,5 +83,5 @@ No se dispone de modelos comparables directos en la informacion proporcionada, d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ashleymartinez/tiny-transformer-classification
+- Hugging Face: https://huggingface.co/ashleymartinez/tiny-transformer-classification
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `williamwilsonbef/classification-2023` es un espacio de trabajo experimental publicado en HuggingFace por el usuario williamwilsonbef, orientado a una supuesta tarea de clasificación sobre una arquitectura EfficientFormer. No se trata de un modelo entrenado ni de un checkpoint listo para producción: la propia model card lo describe como un punto de partida con una implementación personalizada y un checkpoint de inicialización válido únicamente para pruebas de humo.
+El repositorio `williamwilsonbef/classification-2023` es un espacio de trabajo experimental publicado en Hugging Face por el usuario williamwilsonbef, orientado a una supuesta tarea de clasificación sobre una arquitectura EfficientFormer. No se trata de un modelo entrenado ni de un checkpoint listo para producción: la propia model card lo describe como un punto de partida con una implementación personalizada y un checkpoint de inicialización válido únicamente para pruebas de humo.
 
 El artefacto principal del repositorio es el script `train.py`, acompañado de `config.json` (ajustes de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (inicialización). Los pesos publicados suman 33.088 parámetros, una cifra muy inferior a la que cabría esperar de una configuración declarada como "xlarge", lo que refuerza la idea de que se trata de un esqueleto parcial o de una cabeza de clasificación, y no de un modelo completo entrenado.
 
@@ -68,7 +68,7 @@ No hay datos verificados suficientes para establecer una comparativa cuantitativ
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| williamwilsonbef/classification-2023 | 33.088 (checkpoint de inicialización) | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, 7 descargas |
+| williamwilsonbef/classification-2023 | 33.088 (checkpoint de inicialización) | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, 7 descargas |
 | EfficientFormer oficial (Snap Research) | no disponible en esta búsqueda | no disponible | no disponible | no disponible | repositorio público del autor original |
 | Otras variantes EfficientFormer de terceros | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,11 +83,11 @@ Cualquier comparación con implementaciones oficiales de EfficientFormer requeri
 - Riesgo de alucinación: no aplica en el sentido habitual, pero cualquier salida del checkpoint sería esencialmente aleatoria por falta de entrenamiento.
 - Limitaciones de contexto e idioma: no disponibles.
 - Licencia BSD-3-Clause: permisiva y compatible con uso comercial, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se emplean datasets externos.
-- La implementación es personalizada: las APIs de carga automática de HuggingFace no funcionan sin un adaptador explícito.
+- La implementación es personalizada: las APIs de carga automática de Hugging Face no funcionan sin un adaptador explícito.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado deberá documentarse por separado de los valores por defecto que se distribuyen aquí.
 - Los resultados de la búsqueda web asociados a esta consulta (SHAP, random forests aplicados a suelos y organoides) no guardan relación con este repositorio y no deben usarse como referencia de rendimiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/williamwilsonbef/classification-2023
+- Modelo en Hugging Face: https://huggingface.co/williamwilsonbef/classification-2023
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos relacionados con este modelo concreto.

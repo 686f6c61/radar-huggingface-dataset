@@ -79,10 +79,10 @@ Rendimiento de decodificacion en un solo usuario: 14,6 tok/s a 1K de contexto, 1
 
 | Modelo | Parametros | Contexto | Cuantizacion | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwopus3.8-27B-Coder-Flash-MLX-4bit | 27,36B | No disponible (validado a 64K) | 4-bit g64 MLX, 4,7 bits/peso | Si | Apache-2.0 | HuggingFace, 0 descargas |
+| Qwopus3.8-27B-Coder-Flash-MLX-4bit | 27,36B | No disponible (validado a 64K) | 4-bit g64 MLX, 4,7 bits/peso | Si | Apache-2.0 | Hugging Face, 0 descargas |
 | Qwen3.8-27B-4bit | 27B (clase) | No disponible | 4-bit | Si | Apache-2.0 | Referencia usada por el autor en el mismo stack |
 | Qwen3.6-27B-4bit | 27B (clase) | No disponible | 4-bit | No disponible | Apache-2.0 | Referencia usada por el autor en el mismo stack |
-| Jackrong/Qwopus3.8-27B-Coder-Flash | 27,36B | No disponible | bf16 (original) | Si | Apache-2.0 | HuggingFace, modelo base de esta conversion |
+| Jackrong/Qwopus3.8-27B-Coder-Flash | 27,36B | No disponible | bf16 (original) | Si | Apache-2.0 | Hugging Face, modelo base de esta conversion |
 
 Frente a los Qwen de 27B en 4 bits, esta conversion iguala el throughput de decodificacion en el mismo stack y queda a 1 punto porcentual en MMLU y a 1,2 puntos en LAB-Bench, con HumanEval identico al 90%. La diferencia principal es el fine-tune orientado a agentes de codigo y la receta de cuantizacion selectiva, que preserva la torre de vision y los escalares recurrentes en bf16.
 
@@ -100,7 +100,7 @@ Frente a los Qwen de 27B en 4 bits, esta conversion iguala el throughput de deco
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattbucci/Qwopus3.8-27B-Coder-Flash-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/mattbucci/Qwopus3.8-27B-Coder-Flash-MLX-4bit
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash
 - Modelo del que deriva el fine-tune: https://huggingface.co/unsloth/Qwen3.8-27B
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B

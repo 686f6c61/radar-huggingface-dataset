@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Healthcare Pathways-Inspired MoE SLM es un modelo de lenguaje pequeño (SLM) de tipo decoder-only entrenado desde cero por el usuario de HuggingFace alokanand002. Se trata de un transformer causal con una capa de Mixture-of-Experts (MoE) dispersa, inspirada en la filosofía de Pathways pero sin relación con el sistema Pathways de Google, tal y como el propio autor especifica explicitamente en la model card. El dominio declarado es el sanitario: investigación en NLP clínico, terminología médica y experimentación en MedTech.
+Healthcare Pathways-Inspired MoE SLM es un modelo de lenguaje pequeño (SLM) de tipo decoder-only entrenado desde cero por el usuario de Hugging Face alokanand002. Se trata de un transformer causal con una capa de Mixture-of-Experts (MoE) dispersa, inspirada en la filosofía de Pathways pero sin relación con el sistema Pathways de Google, tal y como el propio autor especifica explicitamente en la model card. El dominio declarado es el sanitario: investigación en NLP clínico, terminología médica y experimentación en MedTech.
 
 El modelo es deliberadamente minúsculo: 6 capas transformer, tamaño oculto de 256, 8 cabezas de atención y 4 expertos con enrutado top-2. Con un vocabulario de 16.384 tokens y una longitud de contexto de solo 512 tokens, está pensado como banco de pruebas para estudiar enrutado disperso y tokenización médica, no como sistema de producción. El repositorio ocupa 0,1 GB y en el momento de la consulta acumula 0 descargas y 0 likes, por lo que no cuenta con validación alguna por parte de la comunidad.
 
@@ -64,7 +64,7 @@ No se especifica en la información disponible el número de tokens de entrenami
 
 No se han publicado resultados de benchmarks en la información disponible.
 
-No existe ningún dato de MMLU, HumanEval, GSM8K, MedQA, PubMedQA ni de métricas de perplejidad en la model card, en los metadatos de HuggingFace ni en los resultados de búsqueda consultados.
+No existe ningún dato de MMLU, HumanEval, GSM8K, MedQA, PubMedQA ni de métricas de perplejidad en la model card, en los metadatos de Hugging Face ni en los resultados de búsqueda consultados.
 
 ## Requisitos de hardware
 
@@ -82,7 +82,7 @@ No se han encontrado en las fuentes consultadas datos verificables de parámetro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alokanand002/healthcare-pathways-slm | ~15,2 M (estimacion) | 512 | no disponible | HuggingFace, pesos PyTorch personalizados |
+| alokanand002/healthcare-pathways-slm | ~15,2 M (estimacion) | 512 | no disponible | Hugging Face, pesos PyTorch personalizados |
 | BioGPT (Microsoft) | no disponible | no disponible | no disponible | no disponible |
 | PubMedBERT | no disponible | no disponible | no disponible | no disponible |
 | Modelos médicos densos de 1-7 B (familia Meditron y similares) | no disponible | no disponible | no disponible | no disponible |
@@ -105,7 +105,7 @@ Nota metodológica: la comparación relevante no es de rendimiento, ya que este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alokanand002/healthcare-pathways-slm
+- Modelo en Hugging Face: https://huggingface.co/alokanand002/healthcare-pathways-slm
 - Tokenizer asociado: https://huggingface.co/alokanand002/medical-bpe-16k
 - Perfil del autor: https://huggingface.co/alokanand002/models
 - Repositorio GitHub del proyecto: https://github.com/LanguageJunction/healthcare-pathways-slm

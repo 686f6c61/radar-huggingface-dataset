@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`generatedDigitalExps_1xL9qP_hier_by_room_rnn_meanPoolProc_video_0` es un modelo de 2.366.208 parámetros publicado en HuggingFace por el usuario `gianmaTest` el 26 de octubre de 2026. Se trata de un artefacto de investigación más que de un modelo listo para producción: la model card no contiene ninguna descripción funcional, solo la plantilla autogenerada por la integración `PyTorchModelHubMixin` de HuggingFace Hub, con los campos "Code", "Paper" y "Docs" marcados como "[More Information Needed]". El repositorio no ha recibido descargas ni "me gusta" desde su publicación y su tamaño es de 0,0 GB.
+`generatedDigitalExps_1xL9qP_hier_by_room_rnn_meanPoolProc_video_0` es un modelo de 2.366.208 parámetros publicado en Hugging Face por el usuario `gianmaTest` el 26 de octubre de 2026. Se trata de un artefacto de investigación más que de un modelo listo para producción: la model card no contiene ninguna descripción funcional, solo la plantilla autogenerada por la integración `PyTorchModelHubMixin` de Hugging Face Hub, con los campos "Code", "Paper" y "Docs" marcados como "[More Information Needed]". El repositorio no ha recibido descargas ni "me gusta" desde su publicación y su tamaño es de 0,0 GB.
 
 El identificador del repositorio es la única fuente de información sobre su naturaleza: sugiere un experimento de la serie "generatedDigitalExps" con una arquitectura de tipo RNN aplicada a una jerarquía "por habitación" (`hier_by_room`), un procesador de agregación por media (`meanPoolProc`) y una modalidad de vídeo (`video_0`). Esta lectura es una inferencia a partir del nombre del repositorio y no está confirmada por documentación alguna del autor.
 
@@ -73,10 +73,10 @@ No hay modelos comparables directos en la información proporcionada. A modo de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| generatedDigitalExps...video_0 (este modelo) | 2,37 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| GPT-2 small | 124 M | 1.024 tokens | MIT | HuggingFace, ampliamente extendido |
-| DistilBERT base | 66 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente extendido |
-| TinyLlama 1.1B | 1,1 B | 2.048 tokens | Apache 2.0 | HuggingFace, con variantes GGUF |
+| generatedDigitalExps...video_0 (este modelo) | 2,37 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| GPT-2 small | 124 M | 1.024 tokens | MIT | Hugging Face, ampliamente extendido |
+| DistilBERT base | 66 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente extendido |
+| TinyLlama 1.1B | 1,1 B | 2.048 tokens | Apache 2.0 | Hugging Face, con variantes GGUF |
 
 Las cifras de los modelos de referencia corresponden a sus fichas públicas; no se dispone de ninguna métrica del modelo analizado que permita una comparación de rendimiento.
 
@@ -95,7 +95,7 @@ Las cifras de los modelos de referencia corresponden a sus fichas públicas; no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xL9qP_hier_by_room_rnn_meanPoolProc_video_0
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xL9qP_hier_by_room_rnn_meanPoolProc_video_0
 - Documentación de `PyTorchModelHubMixin` (referenciada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Repositorio de código: no disponible
 - Paper: no disponible

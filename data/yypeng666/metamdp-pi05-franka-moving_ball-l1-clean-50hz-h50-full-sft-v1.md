@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yypeng666/metamdp-pi05-franka-moving_ball-l1-clean-50hz-h50-full-sft-v1
+- Hugging Face: https://huggingface.co/yypeng666/metamdp-pi05-franka-moving_ball-l1-clean-50hz-h50-full-sft-v1
 - Paper de pi0.5: https://arxiv.org/html/2504.16054v1 (también en https://www.pi.website/download/pi05.pdf)
 - Guía de fine-tuning de pi0.5 en Franka (GitHub): https://github.com/ChuyaoFu/openpi-franka/tree/main
 - Guía de pi0.5 para Franka (GitHub): https://github.com/Shenzhaolong1330/openpi-franka/blob/main/PI05_FRANKA.md

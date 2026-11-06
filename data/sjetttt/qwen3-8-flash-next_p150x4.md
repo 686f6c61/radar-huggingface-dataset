@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next es un modelo de lenguaje publicado por el usuario sjettTT en HuggingFace como paquete de despliegue para hardware Tenstorrent. El repositorio `sjettTT/qwen3.8-flash-next_p150x4` no contiene el modelo entrenado desde cero, sino un contenedor listo para servir los pesos oficiales de `Qwen/Qwen3.8-Flash-Next` (commit `f5d08274bafd880402bd16f5e3e6c514136ec06c`) sobre cuatro chips Blackhole p150 mediante vLLM 0.26.0 y el plugin `vllm-tt-plugin`.
+Qwen3.8-Flash-Next es un modelo de lenguaje publicado por el usuario sjettTT en Hugging Face como paquete de despliegue para hardware Tenstorrent. El repositorio `sjettTT/qwen3.8-flash-next_p150x4` no contiene el modelo entrenado desde cero, sino un contenedor listo para servir los pesos oficiales de `Qwen/Qwen3.8-Flash-Next` (commit `f5d08274bafd880402bd16f5e3e6c514136ec06c`) sobre cuatro chips Blackhole p150 mediante vLLM 0.26.0 y el plugin `vllm-tt-plugin`.
 
 La arquitectura descrita en la model card es un transformer híbrido de 48 capas que combina capas gated delta-net, atención dispersa con indexer y una capa PLE de n-gramas, con un MoE de 512 expertos y enrutamiento top-10 cuantizado a BF4. La model card menciona también 49 capas MoE convertidas en una caché de expertos BF4 de 107 GB, cifra que no coincide con las 48 capas híbridas citadas en la misma ficha y que el autor no aclara.
 
@@ -94,7 +94,7 @@ No disponible. La información proporcionada no incluye datos de parámetros, co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sjettTT/qwen3.8-flash-next_p150x4
+- Repositorio en Hugging Face: https://huggingface.co/sjettTT/qwen3.8-flash-next_p150x4
 - Pesos originales: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - tt-model-manager: https://github.com/tenstorrent/tt-model-manager
 - vLLM v0.26.0: https://github.com/vllm-project/vllm/releases/tag/v0.26.0

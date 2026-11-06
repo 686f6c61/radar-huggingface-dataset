@@ -6,7 +6,7 @@ TrustLLM v2 8B SFT 8k es un modelo de lenguaje de tipo Mixture of Experts (MoE) 
 
 El modelo cubre nueve idiomas: inglés, islandés, feroés, noruego bokmål, noruego nynorsk, sueco, danés, neerlandés y alemán. Su objetivo es servir como base abierta para investigación en lenguas de bajos recursos del ámbito nórdico, donde los modelos comerciales ofrecen cobertura limitada. El entrenamiento de instrucciones se apoya en el conjunto allenai/Dolci-Instruct-SFT y en wikimedia/wikipedia.
 
-Es relevante porque combina una arquitectura MoE con contexto largo y cobertura multilingüe, pero su licencia está restringida a investigación y el acceso en HuggingFace está limitado (gated), por lo que requiere aceptar condiciones antes de la descarga. No se han publicado datos de benchmarks ni cifras oficiales de contexto, parámetros activos o cuantizaciones en la información disponible.
+Es relevante porque combina una arquitectura MoE con contexto largo y cobertura multilingüe, pero su licencia está restringida a investigación y el acceso en Hugging Face está limitado (gated), por lo que requiere aceptar condiciones antes de la descarga. No se han publicado datos de benchmarks ni cifras oficiales de contexto, parámetros activos o cuantizaciones en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Es relevante porque combina una arquitectura MoE con contexto largo y cobertura 
 | Longitud de contexto | no disponible (etiquetado como long-context) |
 | Tipos de cuantizacion | no disponible (solo se listan pesos safetensors; sin variantes GGUF, AWQ o GPTQ) |
 | Idiomas soportados | en, is, fo, nb, nn, sv, da, nl, de |
-| Licencia | research-only (licencia "other" en HuggingFace) |
+| Licencia | research-only (licencia "other" en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento del modelo ni de comparativas publicadas c
 ## Limitaciones y advertencias
 
 - Licencia restringida a investigación (research-only): el uso comercial no está permitido según la etiqueta de licencia.
-- Acceso limitado (gated): requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso limitado (gated): requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Riesgo de alucinación: no se han publicado evaluaciones de fidelidad factual ni de tasas de alucinación.
 - Sesgos conocidos: no disponibles; al entrenarse con Dolci-Instruct-SFT y Wikipedia, puede heredar sesgos de estas fuentes.
 - Cobertura de idiomas: limitada a nueve lenguas; no se detalla el soporte de otras lenguas ni el equilibrio entre idiomas.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento del modelo ni de comparativas publicadas c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TrustLLMeu/trustllm-v2-8b-sft-8k
+- Modelo en Hugging Face: https://huggingface.co/TrustLLMeu/trustllm-v2-8b-sft-8k
 - Modelo base: https://huggingface.co/TrustLLMeu/trustllm-v2-8b-midtrain-sft
 - Dataset de instrucciones: https://huggingface.co/datasets/allenai/Dolci-Instruct-SFT
 - Dataset enciclopédico: https://huggingface.co/datasets/wikimedia/wikipedia

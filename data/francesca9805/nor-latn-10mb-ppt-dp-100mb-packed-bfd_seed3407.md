@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/nor_latn_10mb`, desarrollado por el usuario francesca9805 (Francesca Padovani, University of Groningen) mediante la libreria TRL de HuggingFace. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros totales, publicado en formato safetensors y con un tamano de repositorio de apenas 0,1 GB.
+El modelo `francesca9805/nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/nor_latn_10mb`, desarrollado por el usuario francesca9805 (Francesca Padovani, University of Groningen) mediante la libreria TRL de Hugging Face. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros totales, publicado en formato safetensors y con un tamano de repositorio de apenas 0,1 GB.
 
 Por su nomenclatura y por el proyecto de Weights & Biases asociado ("new-tokenizers"), este checkpoint parece formar parte de una serie de experimentos academicos orientados a estudiar el efecto de distintas estrategias de tokenizacion y empaquetado de datos sobre modelos pequenos entrenados con corpus de 10 MB y 100 MB por idioma. El prefijo "nor-latn" sugiere noruego en alfabeto latino y "bfd" y "seed3407" apuntan a una configuracion experimental concreta con semilla fija, lo que lo convierte en una pieza de investigacion reproducible mas que en un modelo destinado a produccion.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/nor_latn_10mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/e83a6mon
 - Repositorio TRL: https://github.com/huggingface/trl

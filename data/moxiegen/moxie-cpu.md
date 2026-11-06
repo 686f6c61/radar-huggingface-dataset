@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Moxiegen/Moxie-Cpu es un repositorio de modelo publicado en HuggingFace por el autor "Moxiegen" el 6 de octubre de 2026 (fecha que figura en los metadatos). En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, y su model card no contiene mas informacion que los campos de licencia (`license: other`, `license_name: other`, `license_link: LICENSE`). No se documenta arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades.
+Moxiegen/Moxie-Cpu es un repositorio de modelo publicado en Hugging Face por el autor "Moxiegen" el 6 de octubre de 2026 (fecha que figura en los metadatos). En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, y su model card no contiene mas informacion que los campos de licencia (`license: other`, `license_name: other`, `license_link: LICENSE`). No se documenta arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades.
 
 El sufijo "Cpu" en el nombre sugiere, sin que exista confirmacion en la documentacion disponible, que el modelo podria estar orientado a inferencia en CPU, una categoria que ha ganado relevancia con el auge de modelos pequenos y cuantizaciones agresivas (GGUF, Q4/Q5) ejecutables en portatiles y servidores sin GPU. Se trata, por tanto, de una hipotesis basada en la nomenclatura y no de un dato verificado.
 
@@ -79,6 +79,6 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Moxiegen/Moxie-Cpu
+- Hugging Face: https://huggingface.co/Moxiegen/Moxie-Cpu
 - Fichero de licencia referenciado: LICENSE (dentro del repositorio, contenido no disponible en la informacion proporcionada)
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

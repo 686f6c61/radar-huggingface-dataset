@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rewrite2 27B · NVFP4 es la versión cuantizada a 4 bits (NVFP4 W4A4) de Rewrite2 27B, un modelo de lenguaje especializado en una única tarea: reescribir y expandir fragmentos de novela en chino. Lo publica el usuario `aikexue170` (北棱) en HuggingFace y deriva de un ajuste fino supervisado (SFT) sobre una base textual de la familia Qwen3.8-27B, con 50.293 pares de entrenamiento (25.647 de reescritura y 24.646 de expansión). No es un asistente conversacional: espera una sola instrucción fija de sistema pegada al texto y devuelve el fragmento reescrito.
+Rewrite2 27B · NVFP4 es la versión cuantizada a 4 bits (NVFP4 W4A4) de Rewrite2 27B, un modelo de lenguaje especializado en una única tarea: reescribir y expandir fragmentos de novela en chino. Lo publica el usuario `aikexue170` (北棱) en Hugging Face y deriva de un ajuste fino supervisado (SFT) sobre una base textual de la familia Qwen3.8-27B, con 50.293 pares de entrenamiento (25.647 de reescritura y 24.646 de expansión). No es un asistente conversacional: espera una sola instrucción fija de sistema pegada al texto y devuelve el fragmento reescrito.
 
 El interés de esta variante concreta es de despliegue: usa cuantización nativa NVFP4 de NVIDIA ModelOpt (`group_size=16`, dos shards safetensors de 18,9 GB en total) para caber en tarjetas Blackwell de 24 GB, frente a los 53,8 GB del BF16 o los 29,5 GB del FP8 W8A8. Requiere una versión reciente de vLLM con soporte de `modelopt_fp4` y una GPU Blackwell para seleccionar el kernel nativo `FlashInferCutlassNvFp4LinearKernel`.
 
@@ -68,11 +68,11 @@ No hay benchmarks públicos que permitan comparar este modelo con alternativas d
 
 | Variante | Pesos | Hardware objetivo | Ventaja | Disponibilidad |
 |---|---:|---|---|---|
-| BF16 | 53,8 GB | clase 80 GB | referencia de calidad | HuggingFace y ModelScope |
-| FP8 W8A8 | 29,5 GB | clase 48 GB | equilibrio calidad/VRAM | HuggingFace y ModelScope |
-| NVFP4 W4A4 (esta) | 18,9 GB | clase 24 GB Blackwell | mínima VRAM con kernel nativo | HuggingFace y ModelScope |
-| IQ4_XS GGUF | 15,2 GB | clase 16 GB | prioriza calidad en 4 bits | HuggingFace y ModelScope |
-| Q3_K_M GGUF | 13,3 GB | clase 16 GB | prioriza margen de VRAM | HuggingFace y ModelScope |
+| BF16 | 53,8 GB | clase 80 GB | referencia de calidad | Hugging Face y ModelScope |
+| FP8 W8A8 | 29,5 GB | clase 48 GB | equilibrio calidad/VRAM | Hugging Face y ModelScope |
+| NVFP4 W4A4 (esta) | 18,9 GB | clase 24 GB Blackwell | mínima VRAM con kernel nativo | Hugging Face y ModelScope |
+| IQ4_XS GGUF | 15,2 GB | clase 16 GB | prioriza calidad en 4 bits | Hugging Face y ModelScope |
+| Q3_K_M GGUF | 13,3 GB | clase 16 GB | prioriza margen de VRAM | Hugging Face y ModelScope |
 
 Todas comparten arquitectura, contexto, licencia (no disponible) y limitaciones de idioma. Frente a modelos de propósito general de tamaño similar, la comparación no está disponible: no existen métricas publicadas de este ajuste fino y su distribución de prompt es incompatible con evaluaciones estándar tipo MMLU o HumanEval.
 
@@ -86,12 +86,12 @@ Todas comparten arquitectura, contexto, licencia (no disponible) y limitaciones 
 - Alcance: no es un asistente general. No hay garantías en问答 general, código, matemáticas ni otros dominios, y no se declara soporte multilingüe: solo chino.
 - Licencia no disponible: no se puede confirmar el uso comercial ni las condiciones de redistribución. Además, la base declarada (Qwen3.8-27B) condiciona las obligaciones heredadas de esa familia, que no se detallan.
 - Validación comunitaria nula: 0 descargas y 0 likes en el momento de la consulta; no hay reportes independientes de calidad.
-- Discrepancia de tamaño: los metadatos de HuggingFace indican 10,0 GB de repositorio mientras la model card declara 18,9 GB de pesos; conviene verificar el contenido real y el `SHA256SUMS` antes de desplegar.
+- Discrepancia de tamaño: los metadatos de Hugging Face indican 10,0 GB de repositorio mientras la model card declara 18,9 GB de pesos; conviene verificar el contenido real y el `SHA256SUMS` antes de desplegar.
 - Dependencia de hardware: el kernel FP4 nativo exige Blackwell y una versión concreta de vLLM; fuera de ese entorno el rendimiento y la compatibilidad no están documentados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aikexue170/rewrite2-27b-nvfp4
+- Modelo en Hugging Face: https://huggingface.co/aikexue170/rewrite2-27b-nvfp4
 - Variante BF16: https://huggingface.co/aikexue170/rewrite2-27b-bf16
 - Variante FP8 W8A8: https://huggingface.co/aikexue170/rewrite2-27b-fp8
 - Variante GGUF IQ4_XS: https://huggingface.co/aikexue170/rewrite2-27b-iq4xs
@@ -101,5 +101,5 @@ Todas comparten arquitectura, contexto, licencia (no disponible) y limitaciones 
 - Espejo FP8 en ModelScope: https://modelscope.cn/models/alkaid55555/rewrite2-27b-fp8
 - Espejo IQ4_XS en ModelScope: https://modelscope.cn/models/alkaid55555/rewrite2-27b-iq4xs
 - Espejo Q3_K_M en ModelScope: https://modelscope.cn/models/alkaid55555/rewrite2-27b-q3km
-- Perfil del autor en HuggingFace: https://huggingface.co/aikexue170
+- Perfil del autor en Hugging Face: https://huggingface.co/aikexue170
 - Paper, blog o demo oficiales: no disponible

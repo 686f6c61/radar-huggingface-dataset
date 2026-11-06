@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zils-lite-body-1 es un modelo de lenguaje de tipo fine-tune publicado por el usuario whynotBeTop en HuggingFace. Se trata de un ajuste fino (finetune) del modelo base Qwen/Qwen3.5-0.8B, un transformer de aproximadamente 853 millones de parametros (852.985.920 segun los pesos en safetensors). El repositorio tiene un tamano de 1,7 GB y se distribuye bajo licencia Apache 2.0.
+zils-lite-body-1 es un modelo de lenguaje de tipo fine-tune publicado por el usuario whynotBeTop en Hugging Face. Se trata de un ajuste fino (finetune) del modelo base Qwen/Qwen3.5-0.8B, un transformer de aproximadamente 853 millones de parametros (852.985.920 segun los pesos en safetensors). El repositorio tiene un tamano de 1,7 GB y se distribuye bajo licencia Apache 2.0.
 
 La model card es extremadamente escasa: unicamente contiene la etiqueta "d3-lite soup body", lo que sugiere que el autor ha aplicado una tecnica de model soup (promediado de pesos de varios checkpoints) sobre el modelo base, aunque no se detalla el procedimiento, los datos de entrenamiento ni los objetivos del ajuste. No hay informacion sobre pipeline, idiomas soportados ni resultados de evaluacion.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| zils-lite-body-1 | 852.985.920 | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune sin documentacion |
-| Qwen/Qwen3.5-0.8B | ~0,8B | no disponible en la informacion | no disponible en la informacion | HuggingFace | Modelo base del que deriva |
-| Qwen2.5-0.5B | ~0,5B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | HuggingFace, ampliamente usado | Alternativa pequena con soporte y comunidad |
-| SmolLM2-1.7B | ~1,7B | 8.192 tokens (segun documentacion publica) | Apache 2.0 | HuggingFace | Alternativa de tamano similar con benchmarks publicados |
+| zils-lite-body-1 | 852.985.920 | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune sin documentacion |
+| Qwen/Qwen3.5-0.8B | ~0,8B | no disponible en la informacion | no disponible en la informacion | Hugging Face | Modelo base del que deriva |
+| Qwen2.5-0.5B | ~0,5B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | Hugging Face, ampliamente usado | Alternativa pequena con soporte y comunidad |
+| SmolLM2-1.7B | ~1,7B | 8.192 tokens (segun documentacion publica) | Apache 2.0 | Hugging Face | Alternativa de tamano similar con benchmarks publicados |
 
 La comparativa con Qwen2.5-0.5B y SmolLM2-1.7B se ofrece como referencia de categoria (modelos pequenos con licencia permisiva); no se dispone de datos de rendimiento del modelo evaluado para establecer comparaciones cuantitativas.
 
@@ -83,7 +83,7 @@ La comparativa con Qwen2.5-0.5B y SmolLM2-1.7B se ofrece como referencia de cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/whynotBeTop/zils-lite-body-1
+- Modelo en Hugging Face: https://huggingface.co/whynotBeTop/zils-lite-body-1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de Qwen en GitHub (referencia del ecosistema): https://github.com/QwenLM
 - Paper de model soups (tecnica sugerida por la etiqueta del autor): https://arxiv.org/abs/2203.05482

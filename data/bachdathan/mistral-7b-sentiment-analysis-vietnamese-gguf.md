@@ -18,7 +18,7 @@ La ventana de contexto declarada es de 32.768 tokens en la arquitectura, aunque 
 | Longitud de contexto | 32.768 tokens según la arquitectura; los ejemplos de la model card usan 8.192 tokens |
 | Tipos de cuantización | GGUF: Q4_K_M (4,07 GB), Q4_K_S (3,86 GB), Q3_K_M (3,28 GB), Q3_K_S (2,95 GB) |
 | Idiomas soportados | Vietnamita (vi) e inglés (en) |
-| Licencia | apache-2.0 según los metadatos de HuggingFace (ver limitaciones: la propia model card matiza que no autoasigna Apache-2.0) |
+| Licencia | apache-2.0 según los metadatos de Hugging Face (ver limitaciones: la propia model card matiza que no autoasigna Apache-2.0) |
 | Formato de pesos | GGUF (llama.cpp); precisión original del modelo base en bfloat16 |
 | Modelo base | mistralai/Mistral-7B-Instruct-v0.3 |
 | Adaptador LoRA fusionado | quydau/Mistral-7B-sentiment-analysis-Vietnamese |
@@ -82,7 +82,7 @@ No hay datos de rendimiento comparado (MMLU, HumanEval u otras métricas) en la 
 - Riesgo de alucinación: la propia model card advierte de que el modelo puede generar información incorrecta y de que sus salidas no deben sustituir asesoramiento profesional en ámbitos críticos.
 - Idiomas limitados a vietnamita e inglés. El rendimiento en castellano u otras lenguas no está documentado y previsiblemente será deficiente.
 - Inconsistencia en el chat template: la model card lo describe como "Qwen2 ChatML" cuando el modelo base es Mistral. Si se aplica un template incorrecto, la calidad de las respuestas conversacionales caerá de forma acusada.
-- Licencia: los metadatos de HuggingFace indican apache-2.0, pero la propia model card matiza que la licencia del repositorio se determinó tras verificar la licencia de origen y que no se autoasigna Apache-2.0. Conviene comprobar la licencia efectiva antes de un uso comercial.
+- Licencia: los metadatos de Hugging Face indican apache-2.0, pero la propia model card matiza que la licencia del repositorio se determinó tras verificar la licencia de origen y que no se autoasigna Apache-2.0. Conviene comprobar la licencia efectiva antes de un uso comercial.
 - Sin validación comunitaria: 0 descargas y 0 likes en el momento de la consulta, y sin benchmarks ni evaluaciones publicadas por el autor.
 - La tarea de ajuste es análisis de sentimiento en vietnamita; fuera de ese dominio, el modelo se comporta esencialmente como el Mistral base con la posible degradación derivada de la fusión del LoRA.
 - Cuantizaciones Q3_K_S y Q3_K_M aplican una compresión agresiva que puede degradar tareas sensibles al matiz, como la clasificación de sentimiento neutro frente a negativo.
@@ -91,7 +91,7 @@ No hay datos de rendimiento comparado (MMLU, HumanEval u otras métricas) en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BachDaThan/Mistral-7B-sentiment-analysis-Vietnamese-GGUF
+- Modelo en Hugging Face: https://huggingface.co/BachDaThan/Mistral-7B-sentiment-analysis-Vietnamese-GGUF
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Adaptador LoRA: https://huggingface.co/quydau/Mistral-7B-sentiment-analysis-Vietnamese
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

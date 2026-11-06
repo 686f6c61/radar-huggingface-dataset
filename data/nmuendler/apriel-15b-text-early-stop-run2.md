@@ -4,7 +4,7 @@
 
 Apriel-15B-text-early-stop-run2 es un adaptador LoRA (PEFT) publicado por el usuario nmuendler sobre el modelo base ServiceNow-AI/Apriel-Nemotron-15b-Thinker, un modelo de generacion de texto de aproximadamente 15 000 millones de parametros. El repositorio contiene unicamente los pesos del adaptador en formato safetensors (0,6 GB), no un modelo completo, por lo que su uso requiere descargar aparte el modelo base y cargar el adaptador mediante la libreria PEFT (version declarada 0.20.0) junto con transformers.
 
-El nombre del artefacto indica que se trata de la segunda ejecucion de un proceso de ajuste con parada temprana ("early-stop-run2") sobre el modelo base, y la etiqueta del pipeline es text-generation con caracter conversacional. El modelo base lleva el sufijo "Thinker", lo que apunta a un modelo orientado a tareas de razonamiento, aunque no se dispone de documentacion tecnica en la informacion proporcionada que lo confirme. La model card publicada es la plantilla por defecto de HuggingFace y no ha sido completada: todos los campos figuran como "[More Information Needed]".
+El nombre del artefacto indica que se trata de la segunda ejecucion de un proceso de ajuste con parada temprana ("early-stop-run2") sobre el modelo base, y la etiqueta del pipeline es text-generation con caracter conversacional. El modelo base lleva el sufijo "Thinker", lo que apunta a un modelo orientado a tareas de razonamiento, aunque no se dispone de documentacion tecnica en la informacion proporcionada que lo confirme. La model card publicada es la plantilla por defecto de Hugging Face y no ha sido completada: todos los campos figuran como "[More Information Needed]".
 
 Se trata, por tanto, de un artefacto de investigacion con cero descargas y cero "likes" en el momento de la consulta, sin licencia declarada, sin idiomas declarados y sin resultados de evaluacion publicados. Su relevancia practica es limitada salvo como caso de estudio de ajuste fino con LoRA sobre un modelo de razonamiento de ~15B, o como punto de partida para reproducir el experimento. La fecha de creacion registrada en el repositorio es el 16 de septiembre de 2026.
 
@@ -51,7 +51,7 @@ Tampoco se especifican los datos de entrenamiento: no hay referencia a dataset, 
 - Punto de partida para ajuste incremental: un equipo puede continuar el entrenamiento desde este adaptador en lugar de partir del modelo base, reduciendo el coste de computo frente a un ajuste desde cero.
 - Investigacion sobre adaptadores de bajo rango en modelos de razonamiento: permite medir como un adaptador de 0,6 GB modifica el comportamiento de un modelo de ~15B en tareas de generacion, mediante comparacion directa con el modelo base sin adaptador.
 - Evaluacion comparativa interna: sirve como candidato en una bateria propia de pruebas (por ejemplo, tareas internas de razonamiento o dialogo) frente a otros adaptadores del mismo autor, como Apriel-15B-text-early-stop-run2 frente a variantes previas.
-- Docencia y divulgacion tecnica: ilustra en un taller practico el flujo completo de publicar un adaptador LoRA en HuggingFace, incluyendo sus carencias habituales (model card sin completar, ausencia de licencia).
+- Docencia y divulgacion tecnica: ilustra en un taller practico el flujo completo de publicar un adaptador LoRA en Hugging Face, incluyendo sus carencias habituales (model card sin completar, ausencia de licencia).
 - Auditoria de procedencia de modelos: util para probar herramientas de trazabilidad que reconstruyan la cadena modelo base - adaptador - licencia a partir de los metadatos del repositorio.
 
 Ninguno de estos casos esta respaldado por una evaluacion publicada del modelo; son escenarios derivados de la naturaleza del artefacto (adaptador LoRA sin model card completada) y no de capacidades verificadas.
@@ -83,7 +83,7 @@ No se dispone de datos verificados sobre modelos alternativos en la informacion 
 
 ## Limitaciones y advertencias
 
-- Model card vacia: la unica documentacion del repositorio es la plantilla por defecto de HuggingFace, con todos los campos marcados como "[More Information Needed]". No hay informacion sobre datos de entrenamiento, hiperparametros ni evaluacion.
+- Model card vacia: la unica documentacion del repositorio es la plantilla por defecto de Hugging Face, con todos los campos marcados como "[More Information Needed]". No hay informacion sobre datos de entrenamiento, hiperparametros ni evaluacion.
 - Licencia no declarada: al no especificarse licencia, no puede asumirse permiso de uso comercial. La licencia aplicable depende de la del modelo base, que tampoco consta en la informacion proporcionada.
 - Riesgo de alucinacion: no cuantificado y no evaluado; no existe ninguna prueba publicada sobre la fiabilidad factual de este adaptador.
 - Sesgos: no documentados. Al desconocerse la composicion de los datos de ajuste, no es posible estimar sesgos introducidos por el adaptador.
@@ -96,7 +96,7 @@ No se dispone de datos verificados sobre modelos alternativos en la informacion 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nmuendler/Apriel-15B-text-early-stop-run2
+- Repositorio Hugging Face: https://huggingface.co/nmuendler/Apriel-15B-text-early-stop-run2
 - Modelo base: https://huggingface.co/ServiceNow-AI/Apriel-Nemotron-15b-Thinker
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la plantilla: https://mlco2.github.io/impact

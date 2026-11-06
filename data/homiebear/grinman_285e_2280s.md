@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GrinMan_285e_2280s es un modelo publicado en HuggingFace por el usuario Homiebear bajo licencia OpenRAIL. La información disponible es extremadamente limitada: la model card únicamente declara la licencia, sin describir arquitectura, datos de entrenamiento, capacidades ni uso previsto. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un conjunto de pesos de pequeno tamano, probablemente una mezcla (merge) o un modelo de escala reducida, aunque no es posible confirmarlo.
+GrinMan_285e_2280s es un modelo publicado en Hugging Face por el usuario Homiebear bajo licencia OpenRAIL. La información disponible es extremadamente limitada: la model card únicamente declara la licencia, sin describir arquitectura, datos de entrenamiento, capacidades ni uso previsto. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un conjunto de pesos de pequeno tamano, probablemente una mezcla (merge) o un modelo de escala reducida, aunque no es posible confirmarlo.
 
 El nombre del repositorio ("285e_2280s") parece seguir una convencion de nombres propia de merges de modelos o de experimentos de fine-tuning, pero el autor no aporta ninguna explicacion al respecto. No hay pipeline declarado, ni idiomas especificados, ni resultados de evaluacion publicados.
 
@@ -42,7 +42,7 @@ Dado que no existe documentacion tecnica ni evaluaciones publicadas, los siguien
 
 - Experimentacion academica con merges de modelos: el modelo podria servir como base para estudiar tecnicas de fusion de pesos, siempre que se verifique primero su comportamiento real mediante pruebas controladas.
 - Prototipado interno no critico: uso en entornos de desarrollo cerrados para comparar respuestas frente a otros modelos de referencia, sin exponerlo a usuarios finales.
-- Evaluacion comparativa de licencias OpenRAIL: util para equipos juridicos y de compliance que quieran analizar como se aplican las restricciones de uso responsable en artefactos publicados en HuggingFace.
+- Evaluacion comparativa de licencias OpenRAIL: util para equipos juridicos y de compliance que quieran analizar como se aplican las restricciones de uso responsable en artefactos publicados en Hugging Face.
 - Reproduccion de pipelines de publicacion: sirve como ejemplo de repositorio minimo con licencia declarada, util para quienes disenan flujos de publicacion de modelos.
 - Pruebas de carga de artefactos: su tamano reducido (0,1 GB) permite usarlo para validar procesos de descarga, cache y despliegue en infraestructura propia antes de pasar a modelos de mayor escala.
 - Docencia sobre ciclo de vida de modelos: puede emplearse como caso de estudio sobre la importancia de documentar model cards y de publicar evaluaciones antes de distribuir pesos.
@@ -82,5 +82,5 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Homiebear/GrinMan_285e_2280s
+- Hugging Face: https://huggingface.co/Homiebear/GrinMan_285e_2280s
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web.

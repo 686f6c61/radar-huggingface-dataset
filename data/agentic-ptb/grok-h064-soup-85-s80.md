@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/grok.h064.soup-85-s80 | 9,4B | no disponible | no disponible | HuggingFace (checkpoint intermedio) |
-| Qwen2.5-7B | 7,6B | 32K (típico) | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama 3.1 8B | 8,0B | 128K | Llama 3.1 Community License | HuggingFace, Meta |
-| Mistral 7B | 7,3B | 32K | Apache 2.0 | HuggingFace, Mistral AI |
+| agentic-ptb/grok.h064.soup-85-s80 | 9,4B | no disponible | no disponible | Hugging Face (checkpoint intermedio) |
+| Qwen2.5-7B | 7,6B | 32K (típico) | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama 3.1 8B | 8,0B | 128K | Llama 3.1 Community License | Hugging Face, Meta |
+| Mistral 7B | 7,3B | 32K | Apache 2.0 | Hugging Face, Mistral AI |
 
 La comparativa es estructural, ya que no hay datos de rendimiento para el modelo evaluado. Los modelos alternativos tienen licencias claras, documentación extensa y benchmarks publicados, mientras que este checkpoint carece de todos ellos.
 
@@ -78,6 +78,6 @@ La comparativa es estructural, ya que no hay datos de rendimiento para el modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h064.soup-85-s80
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h064.soup-85-s80
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (referencia, no verificado)
 - Índice del proyecto AgentPTB: mencionado en la model card como `agentic-ptb/INDEX`, pero no se ha encontrado el enlace directo.

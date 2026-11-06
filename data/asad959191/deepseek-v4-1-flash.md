@@ -89,7 +89,7 @@ La informacion disponible solo permite comparar con las referencias que cita la 
 
 | Modelo | Parametros | Contexto | KV cache por token | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash | 763B totales, 8B/16B activos | 1M tokens | 890 bytes | MIT | Repositorio de terceros en HuggingFace |
+| DeepSeek-V4.1-Flash | 763B totales, 8B/16B activos | 1M tokens | 890 bytes | MIT | Repositorio de terceros en Hugging Face |
 | DeepSeek-V4-Flash | no disponible | no disponible | Aprox. 4x el de V4.1-Flash | no disponible | Referenciado en la model card |
 | DeepSeek-V1 | no disponible | no disponible | Aprox. 437x el de V4.1-Flash | no disponible | Referenciado en la model card |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -112,9 +112,9 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Repositorio en HuggingFace (subida de terceros): https://huggingface.co/asad959191/DeepSeek-V4.1-Flash
+- Repositorio en Hugging Face (subida de terceros): https://huggingface.co/asad959191/DeepSeek-V4.1-Flash
 - Informe tecnico enlazado en la model card: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organizacion oficial en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion oficial en Hugging Face: https://huggingface.co/deepseek-ai
 - Sitio web oficial: https://www.deepseek.com/
 - Chat oficial: https://chat.deepseek.com/
 - Cuenta de Twitter/X: https://twitter.com/deepseek_ai

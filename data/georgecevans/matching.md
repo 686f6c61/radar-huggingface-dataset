@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`georgecevans/matching` es un repositorio de HuggingFace que contiene una implementación propia y compacta en PyTorch de un "Tiny Transformer" orientado a tareas de *matching* (emparejamiento entre pares de secuencias). El autor lo publica bajo licencia BSD-3-Clause y lo describe explícitamente como un punto de partida experimental, no como un modelo preentrenado listo para producción. Con 16.576 parámetros totales, es un modelo de escala mínima cuyo interés está en el código y la configuración, no en el rendimiento.
+`georgecevans/matching` es un repositorio de Hugging Face que contiene una implementación propia y compacta en PyTorch de un "Tiny Transformer" orientado a tareas de *matching* (emparejamiento entre pares de secuencias). El autor lo publica bajo licencia BSD-3-Clause y lo describe explícitamente como un punto de partida experimental, no como un modelo preentrenado listo para producción. Con 16.576 parámetros totales, es un modelo de escala mínima cuyo interés está en el código y la configuración, no en el rendimiento.
 
 El repositorio incluye `run.py` como artefacto principal, `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto y `model.safetensors` como *checkpoint* de inicialización válido para smoke tests. La model card aclara de forma insistente que el checkpoint **no está entrenado ni auditado**, y que no se reivindica ninguna puntuación de benchmark.
 
@@ -77,5 +77,5 @@ No disponible. Este repositorio es una implementación a medida de escala mínim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/georgecevans/matching
+- Hugging Face: https://huggingface.co/georgecevans/matching
 - No se han encontrado en la informacion disponible otros enlaces relevantes (papers, blogs, repos o demos).

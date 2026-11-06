@@ -110,7 +110,7 @@ No se dispone de datos verificados de modelos de terceros comparables en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/txgsync/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-MLX
+- Repositorio en Hugging Face: https://huggingface.co/txgsync/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-MLX
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB
 - Variante con decodificacion especulativa LiLiCorr: https://huggingface.co/txgsync/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-MLX
 - oMLX: https://github.com/jundot/omlx

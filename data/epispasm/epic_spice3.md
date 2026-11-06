@@ -2,7 +2,7 @@
 
 ## Resumen
 
-epic_spice3 es una conversion a formato GGUF de un modelo vision-lenguaje de aproximadamente 8.953.803.264 parametros (unos 8,95 mil millones), publicada por el usuario epispasm en HuggingFace. Segun los tags y los nombres de fichero del repositorio, el modelo deriva de una base Qwen3.5 de 9B y ha sido ajustado para la tarea de generacion de descripciones de imagenes (captioning) con contenido NSFW, en su version v5. La conversion a GGUF se ha realizado con la herramienta Unsloth, y los ficheros resultantes estan pensados para su uso con llama.cpp.
+epic_spice3 es una conversion a formato GGUF de un modelo vision-lenguaje de aproximadamente 8.953.803.264 parametros (unos 8,95 mil millones), publicada por el usuario epispasm en Hugging Face. Segun los tags y los nombres de fichero del repositorio, el modelo deriva de una base Qwen3.5 de 9B y ha sido ajustado para la tarea de generacion de descripciones de imagenes (captioning) con contenido NSFW, en su version v5. La conversion a GGUF se ha realizado con la herramienta Unsloth, y los ficheros resultantes estan pensados para su uso con llama.cpp.
 
 El repositorio incluye dos ficheros: los pesos del modelo en BF16 (qwen3.5-9b-nsfw-captioning-v5.BF16.gguf) y el proyector multimodal (qwen3.5-9b-nsfw-captioning-v5.BF16-mmproj.gguf), lo que confirma que se trata de un modelo multimodal con entrada de imagen y salida de texto. El tamano total del repositorio es de 18,8 GB. El pipeline no esta declarado, la licencia no esta especificada y no se indican idiomas soportados.
 
@@ -98,6 +98,6 @@ La comparacion es incompleta porque el modelo analizado no publica licencia, con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/epispasm/epic_spice3
+- Repositorio en Hugging Face: https://huggingface.co/epispasm/epic_spice3
 - Unsloth (herramienta de conversion declarada por el autor): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de inferencia indicado en la model card): https://github.com/ggml-org/llama.cpp

@@ -109,7 +109,7 @@ La comparación cuantitativa con Whisper no puede completarse porque la informac
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/lipik/Qwen3-ASR-0.6B-gguf
+- Repositorio GGUF en Hugging Face: https://huggingface.co/lipik/Qwen3-ASR-0.6B-gguf
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Commit upstream fijado: https://huggingface.co/Qwen/Qwen3-ASR-0.6B/commit/5eb144179a02acc5e5ba31e748d22b0cf3e303b0
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

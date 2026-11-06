@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ksarker/superkart-sales-regressor` es un modelo de regresión tabular construido con scikit-learn, que implementa un pipeline de preprocesamiento de características y un estimador Random Forest. Está diseñado para predecir las ventas totales de un producto en una tienda concreta (`Product_Store_Sales_Total`), a partir de atributos del producto y de la tienda. Lo desarrolla el usuario `ksarker` y se publica en HuggingFace con la etiqueta `tabular-regression`.
+El modelo `ksarker/superkart-sales-regressor` es un modelo de regresión tabular construido con scikit-learn, que implementa un pipeline de preprocesamiento de características y un estimador Random Forest. Está diseñado para predecir las ventas totales de un producto en una tienda concreta (`Product_Store_Sales_Total`), a partir de atributos del producto y de la tienda. Lo desarrolla el usuario `ksarker` y se publica en Hugging Face con la etiqueta `tabular-regression`.
 
 El modelo resuelve un problema de predicción de ventas a nivel de producto-tienda, un caso de uso habitual en el sector retail para optimizar inventarios, promociones y asignación de espacio. Su relevancia radica en que ofrece una solución sencilla y ligera basada en árboles de decisión, con un rendimiento medido en el conjunto de test (R² = 0.9322), sin necesidad de infraestructura de GPU ni de modelos generativos. La arquitectura es un pipeline de scikit-learn con preprocesamiento y un Random Forest de 200 árboles. El tamaño del modelo no está disponible en la información proporcionada, y la longitud de contexto no aplica al tratarse de un modelo tabular.
 
@@ -19,7 +19,7 @@ El modelo resuelve un problema de predicción de ventas a nivel de producto-tien
 | Licencia | no disponible |
 | Formato de pesos | joblib (scikit-learn) |
 
-El repositorio en HuggingFace muestra un tamaño de 0.0 GB, lo que sugiere que los pesos del modelo podrían no estar incluidos en el repo. Verificar antes de intentar descargar o cargar el modelo.
+El repositorio en Hugging Face muestra un tamaño de 0.0 GB, lo que sugiere que los pesos del modelo podrían no estar incluidos en el repo. Verificar antes de intentar descargar o cargar el modelo.
 
 ## Arquitectura y entrenamiento
 
@@ -66,18 +66,18 @@ Estas métricas indican un ajuste razonable del modelo, pero no permiten compara
 
 ## Comparativa con modelos similares
 
-No disponible. Se han encontrado otros modelos con nombres similares en HuggingFace, como `jeremygracey-ai/superkart-sales-predictor` y el Space `Maa466/superkart-sales-predictor`, pero no se dispone de métricas ni especificaciones comparables en la información proporcionada. Por tanto, no es posible establecer una comparación rigurosa.
+No disponible. Se han encontrado otros modelos con nombres similares en Hugging Face, como `jeremygracey-ai/superkart-sales-predictor` y el Space `Maa466/superkart-sales-predictor`, pero no se dispone de métricas ni especificaciones comparables en la información proporcionada. Por tanto, no es posible establecer una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
 - El modelo no incluye variables temporales: el autor indica explícitamente que el dataset no contiene fecha u hora, por lo que el modelo no captura estacionalidad, tendencias ni efectos de calendario. Esto limita su uso en contextos donde la demanda varía significativamente en el tiempo.
 - La licencia no está disponible, por lo que el uso comercial del modelo o de sus pesos es incierto. Conviene contactar con el autor antes de utilizarlo en producción.
-- El repositorio de HuggingFace muestra un tamaño de 0.0 GB, lo que puede indicar que los pesos del modelo no están subidos. Se debe verificar la integridad del repo antes de intentar cargar el modelo.
+- El repositorio de Hugging Face muestra un tamaño de 0.0 GB, lo que puede indicar que los pesos del modelo no están subidos. Se debe verificar la integridad del repo antes de intentar cargar el modelo.
 - No se documentan sesgos en los datos de entrenamiento. Al ser un modelo entrenado con datos históricos de ventas, podría heredar sesgos presentes en esos datos (por ejemplo, diferencias regionales o de tipo de tienda).
 - Al no ser un modelo generativo, no presenta riesgo de alucinación en el sentido de los modelos de lenguaje, pero sus predicciones tienen un margen de error, como reflejan el MAE y el RMSE reportados.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ksarker/superkart-sales-regressor
+- Hugging Face: https://huggingface.co/ksarker/superkart-sales-regressor
 - Modelo similar (referencia): https://huggingface.co/jeremygracey-ai/superkart-sales-predictor
 - Space similar (referencia): https://huggingface.co/spaces/Maa466/superkart-sales-predictor

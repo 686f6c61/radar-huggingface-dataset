@@ -4,7 +4,7 @@
 
 `algabis/kodr-sft-v6-think` es un adaptador LoRA de ajuste supervisado (SFT) publicado por el usuario algabis sobre el modelo base `openbmb/MiniCPM5-2B-SFT`. No es un modelo completo: el repositorio contiene únicamente los pesos del adaptador en formato safetensors (0,1 GB), pensados para cargarse con PEFT sobre el checkpoint base. El identificador sugiere una sexta iteración de un pipeline de SFT propio ("kodr-sft-v6") con una variante orientada a modo de razonamiento ("think"), aunque esta interpretación no está confirmada en la documentación disponible.
 
-La relevancia de esta ficha es limitada y conviene ser explícito: el modelo acumula 0 descargas y 0 likes, fue creado el 3 de octubre de 2026 y su model card es la plantilla por defecto de HuggingFace sin ningún campo rellenado. No hay información publicada sobre datos de entrenamiento, hiperparámetros, licencia, idiomas soportados, benchmarks ni evaluación. La etiqueta `arxiv:1910.09700` de la ficha corresponde al artículo del calculador de impacto ambiental de Lacoste et al. citado en la propia plantilla, no a un paper del modelo.
+La relevancia de esta ficha es limitada y conviene ser explícito: el modelo acumula 0 descargas y 0 likes, fue creado el 3 de octubre de 2026 y su model card es la plantilla por defecto de Hugging Face sin ningún campo rellenado. No hay información publicada sobre datos de entrenamiento, hiperparámetros, licencia, idiomas soportados, benchmarks ni evaluación. La etiqueta `arxiv:1910.09700` de la ficha corresponde al artículo del calculador de impacto ambiental de Lacoste et al. citado en la propia plantilla, no a un paper del modelo.
 
 Por tanto, esta ficha describe lo que se puede verificar (naturaleza del artefacto, modelo base referenciado, formato y tamaño) y marca explícitamente como "no disponible" todo lo demás. Cualquier uso en producción debería ir precedido de una evaluación propia, dado que el autor no ha documentado ni la procedencia de los datos de SFT ni las condiciones de uso.
 
@@ -25,7 +25,7 @@ Datos adicionales verificables: biblioteca declarada `peft` (versión de framewo
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador LoRA, es decir, un conjunto de matrices de bajo rango que se inyectan en las capas del modelo base para modificar su comportamiento sin reentrenar todos los pesos. La model card indica la librería `peft` y las etiquetas `trl` y `unsloth`, lo que apunta a un entrenamiento de SFT con las herramientas habituales del ecosistema HuggingFace, pero no se especifica el rango del adaptador, los módulos objetivo, la configuración de cuantización durante el entrenamiento (QLoRA o similar), la tasa de aprendizaje, el número de pasos ni el tamaño efectivo de lote.
+El artefacto es un adaptador LoRA, es decir, un conjunto de matrices de bajo rango que se inyectan en las capas del modelo base para modificar su comportamiento sin reentrenar todos los pesos. La model card indica la librería `peft` y las etiquetas `trl` y `unsloth`, lo que apunta a un entrenamiento de SFT con las herramientas habituales del ecosistema Hugging Face, pero no se especifica el rango del adaptador, los módulos objetivo, la configuración de cuantización durante el entrenamiento (QLoRA o similar), la tasa de aprendizaje, el número de pasos ni el tamaño efectivo de lote.
 
 Respecto a los datos: no hay información alguna sobre el corpus de SFT, su tamaño en tokens, su composición, su idioma o si pasó por filtrado. Tampoco se documenta ninguna fase de preferencias (RLHF, DPO) ni innovación técnica asociada. El sufijo `think` del identificador sugiere que el ajuste podría orientarse a producir trazas de razonamiento o modo de pensamiento, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
 
@@ -96,7 +96,7 @@ No se dispone de una comparación directa con otros adaptadores sobre el mismo m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/algabis/kodr-sft-v6-think
+- Modelo en Hugging Face: https://huggingface.co/algabis/kodr-sft-v6-think
 - Modelo base referenciado: https://huggingface.co/openbmb/MiniCPM5-2B-SFT
 - Paper citado en las etiquetas (corresponde al calculador de impacto ambiental de la plantilla, no a este modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ambiental en aprendizaje automático: https://mlco2.github.io/impact

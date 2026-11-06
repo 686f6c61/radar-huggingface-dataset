@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Vxana es un adaptador LoRA de tipo text-to-image publicado por el usuario AiMamis en HuggingFace. Se trata de un ajuste fino ligero sobre el modelo base Krea-2-Turbo (identificado en los metadatos como `krea/Krea-2-Turbo`), orientado a la generacion de imagenes de un personaje concreto mediante palabras de activacion (trigger words). El repositorio ocupa aproximadamente 0,5 GB, lo que es coherente con un adaptador LoRA y no con un modelo completo.
+Vxana es un adaptador LoRA de tipo text-to-image publicado por el usuario AiMamis en Hugging Face. Se trata de un ajuste fino ligero sobre el modelo base Krea-2-Turbo (identificado en los metadatos como `krea/Krea-2-Turbo`), orientado a la generacion de imagenes de un personaje concreto mediante palabras de activacion (trigger words). El repositorio ocupa aproximadamente 0,5 GB, lo que es coherente con un adaptador LoRA y no con un modelo completo.
 
 El modelo no es un modelo fundacional autonomo: requiere cargar el checkpoint base Krea-2-Turbo y aplicar el adaptador por encima. Su proposito es permitir que un pipeline de difusion genere representaciones consistentes de un personaje definido por los atributos `Vxana`, `medium skin`, `black hair` y `dark brown eyes`. La model card es extremadamente escueta y no aporta informacion sobre datos de entrenamiento, hiperparametros, numero de pasos ni evaluaciones.
 
-La relevancia de esta ficha es limitada desde el punto de vista de la investigacion: se trata de un LoRA de personaje con muy poca traccion (21 descargas, 0 likes en el momento de la consulta) y sin documentacion tecnica. Resulta util, sin embargo, como ejemplo de flujo de trabajo de personalizacion sobre modelos de difusion turbo y como referencia para entender el ecosistema de adaptadores de personaje en HuggingFace.
+La relevancia de esta ficha es limitada desde el punto de vista de la investigacion: se trata de un LoRA de personaje con muy poca traccion (21 descargas, 0 likes en el momento de la consulta) y sin documentacion tecnica. Resulta util, sin embargo, como ejemplo de flujo de trabajo de personalizacion sobre modelos de difusion turbo y como referencia para entender el ecosistema de adaptadores de personaje en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ No se dispone de informacion sobre el dataset de entrenamiento: no se indica el 
 - Generacion de imagenes text-to-image condicionada por prompt, heredada del modelo base Krea-2-Turbo.
 - Personalizacion de personaje: el token `Vxana` activa la representacion aprendida del personaje.
 - Control de atributos mediante las trigger words `medium skin`, `black hair` y `dark brown eyes`.
-- Integracion con la libreria `diffusers` de HuggingFace.
+- Integracion con la libreria `diffusers` de Hugging Face.
 - Compatibilidad con el ecosistema de LoRAs de difusion (carga mediante `load_lora_weights` o equivalente).
 - No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, vision, audio ni modo thinking, ya que no son propias de un modelo de difusion text-to-image.
 
@@ -55,16 +55,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible de forma especifica. Al tratarse de un LoRA sobre un modelo de difusion, el requisito dominante es el del modelo base Krea-2-Turbo, que no se detalla en la informacion proporcionada. El adaptador en si ocupa aproximadamente 0,5 GB en disco.
 - GPU recomendadas: no disponible. Dependera del modelo base; para modelos de difusion de clase similar suele ser habitual disponer de al menos 8-16 GB de VRAM en consumer, pero este dato no se confirma para Krea-2-Turbo.
 - Compatibilidad con consumer GPU: no confirmada en la informacion disponible.
-- Opciones de despliegue: la libreria declarada es `diffusers`, por lo que el despliegue natural es mediante pipelines de HuggingFace `diffusers` en Python. No se documenta soporte para llama.cpp, Ollama ni TGI, que no aplican a modelos de difusion de este tipo. ComfyUI o Automatic1111 podrian requerir conversion de formato, no confirmada.
+- Opciones de despliegue: la libreria declarada es `diffusers`, por lo que el despliegue natural es mediante pipelines de Hugging Face `diffusers` en Python. No se documenta soporte para llama.cpp, Ollama ni TGI, que no aplican a modelos de difusion de este tipo. ComfyUI o Automatic1111 podrian requerir conversion de formato, no confirmada.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Modelo base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AiMamis/Vxana | LoRA de personaje text-to-image | krea/Krea-2-Turbo | no disponible | no aplica | openrail++ | HuggingFace, 21 descargas |
-| Alternativas de LoRA de personaje sobre difusion | LoRA de personaje | SDXL, SD 1.5, Flux, etc. | variable | no aplica | variable | amplia en HuggingFace/Civitai |
-| Modelo base Krea-2-Turbo | Difusion text-to-image | no aplica | no disponible | no aplica | no disponible | HuggingFace (krea/Krea-2-Turbo) |
+| AiMamis/Vxana | LoRA de personaje text-to-image | krea/Krea-2-Turbo | no disponible | no aplica | openrail++ | Hugging Face, 21 descargas |
+| Alternativas de LoRA de personaje sobre difusion | LoRA de personaje | SDXL, SD 1.5, Flux, etc. | variable | no aplica | variable | amplia en Hugging Face/Civitai |
+| Modelo base Krea-2-Turbo | Difusion text-to-image | no aplica | no disponible | no aplica | no disponible | Hugging Face (krea/Krea-2-Turbo) |
 
 No se dispone de datos de rendimiento ni de benchmarks que permitan una comparacion cuantitativa con alternativas. La comparativa se limita a categoria, base y licencia.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de benchmarks que permitan una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AiMamis/Vxana
+- Modelo en Hugging Face: https://huggingface.co/AiMamis/Vxana
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Libreria diffusers: https://github.com/huggingface/diffusers
 - Licencia OpenRAIL++: https://huggingface.co/docs/hub/model-card-annotated#license

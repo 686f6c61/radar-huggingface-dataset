@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular para resolver el entorno Taxi-v3 de Gym/Gymnasium. No es un modelo de lenguaje ni una red neuronal: se trata de un artefacto de pesos (tabla Q) serializado en un fichero `q-learning.pkl`, publicado por el usuario alan-abraham en HuggingFace con pipeline declarado `reinforcement-learning`. El problema que resuelve es el control discreto clásico del entorno Taxi-v3, en el que un agente debe recoger y dejar pasajeros en una cuadrícula cumpliendo las reglas del entorno.
+q-taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular para resolver el entorno Taxi-v3 de Gym/Gymnasium. No es un modelo de lenguaje ni una red neuronal: se trata de un artefacto de pesos (tabla Q) serializado en un fichero `q-learning.pkl`, publicado por el usuario alan-abraham en Hugging Face con pipeline declarado `reinforcement-learning`. El problema que resuelve es el control discreto clásico del entorno Taxi-v3, en el que un agente debe recoger y dejar pasajeros en una cuadrícula cumpliendo las reglas del entorno.
 
 El interés de este tipo de publicación es fundamentalmente metodológico y docente: sirve como referencia reproducible de un algoritmo de RL tabular, como baseline en experimentos y como prueba de integración para pipelines de evaluación que cargan checkpoints desde el Hub. El repositorio no tiene descargas ni likes, y la métrica declarada no está verificada por el Hub, por lo que debe tratarse como un artefacto de uso experimental y no como un componente listo para producción.
 
@@ -65,7 +65,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 - GPU recomendadas: no aplica. No requiere acelerador de ningún tipo (A100, H100, RTX 4090 son innecesarias).
 - Consumer GPU: no es necesaria; el agente se ejecuta íntegramente en CPU, incluida hardware de gama baja o placas tipo Raspberry Pi.
 - Memoria RAM: del orden de megabytes, muy por debajo de 1 GB.
-- Almacenamiento: el fichero de pesos es del orden de kilobytes; el repositorio de HuggingFace declara 0,0 GB.
+- Almacenamiento: el fichero de pesos es del orden de kilobytes; el repositorio de Hugging Face declara 0,0 GB.
 - Opciones de despliegue: Python con `gym` o `gymnasium` y carga directa del `.pkl`; integración con RL Zoo / Stable-Baselines3 mediante `load_from_hub`. vLLM, llama.cpp, Ollama y TGI no aplican a este artefacto.
 - Latencia y throughput: la decisión es una consulta de tabla O(1), del orden de microsegundos; el límite práctico lo impone el `step` del entorno, que en CPU permite del orden de miles de pasos por segundo.
 - Escalado: irrelevante; un único proceso cubre cualquier carga realista de este agente.
@@ -97,5 +97,5 @@ La diferencia principal frente a DQN es la representación: la tabla Q no genera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alan-abraham/q-taxi-v3
+- Modelo en Hugging Face: https://huggingface.co/alan-abraham/q-taxi-v3
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos corresponden a una entidad del sector asegurador sanitario sin relación con este artefacto, por lo que se descartan como fuentes. No se dispone de paper, blog, repositorio adicional ni demo asociados en la información proporcionada.

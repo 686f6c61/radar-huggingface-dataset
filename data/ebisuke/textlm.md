@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ebisuke/textlm es un modelo de lenguaje de texto publicado en HuggingFace por el usuario ebisuke. Se trata de un repositorio con pesos en formato safetensors y etiqueta de librería text_lm, con 752.395.072 parámetros totales (aproximadamente 752 millones), lo que lo sitúa en la categoría de modelos pequeños, por debajo de los 1.000 millones de parámetros. El repositorio ocupa 68,3 GB, un tamaño desproporcionado respecto al peso teórico de los parámetros, lo que sugiere la presencia de múltiples copias en distintas precisiones o de artefactos adicionales de entrenamiento.
+ebisuke/textlm es un modelo de lenguaje de texto publicado en Hugging Face por el usuario ebisuke. Se trata de un repositorio con pesos en formato safetensors y etiqueta de librería text_lm, con 752.395.072 parámetros totales (aproximadamente 752 millones), lo que lo sitúa en la categoría de modelos pequeños, por debajo de los 1.000 millones de parámetros. El repositorio ocupa 68,3 GB, un tamaño desproporcionado respecto al peso teórico de los parámetros, lo que sugiere la presencia de múltiples copias en distintas precisiones o de artefactos adicionales de entrenamiento.
 
 El modelo se publicó el 20 de septiembre de 2026 y se actualizó al día siguiente, con 182 descargas registradas y cero likes en el momento de la consulta. No se ha publicado información sobre el pipeline de inferencia, la licencia, los idiomas soportados, la longitud de contexto ni los datos de entrenamiento. La búsqueda web realizada no ha devuelto documentación técnica asociada al modelo: los resultados obtenidos corresponden a páginas genéricas de Bing y no a papers, blogs o repositorios relacionados.
 
@@ -28,7 +28,7 @@ Por su tamaño, el interés principal de este modelo residiría en escenarios de
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo. La etiqueta text_lm indica que se trata de un modelo de lenguaje de texto, y el formato de pesos es safetensors, por lo que es compatible con las librerías estándar de HuggingFace (transformers) siempre que se conozca la clase de configuración adecuada. No se especifica si emplea atención completa, atención lineal, arquitectura de espacio de estados, mezcla de expertos o algún esquema híbrido.
+No se dispone de información sobre la arquitectura interna del modelo. La etiqueta text_lm indica que se trata de un modelo de lenguaje de texto, y el formato de pesos es safetensors, por lo que es compatible con las librerías estándar de Hugging Face (transformers) siempre que se conozca la clase de configuración adecuada. No se especifica si emplea atención completa, atención lineal, arquitectura de espacio de estados, mezcla de expertos o algún esquema híbrido.
 
 Tampoco hay datos sobre el proceso de entrenamiento: número de tokens, composición del corpus, idiomas presentes en los datos, uso de ajuste supervisado, RLHF, DPO u otras técnicas de alineación. Se desconoce igualmente si el modelo incorpora decodificación especulativa, mecanismos de atención con ventana deslizante u otras innovaciones. La única inferencia posible a partir del tamaño del repositorio (68,3 GB) es que este contiene material más allá de una única copia en precisión completa de los 752 millones de parámetros (que ocuparían aproximadamente 3 GB en FP32 o 1,5 GB en FP16), pero no se puede determinar qué contienen esos ficheros adicionales.
 
@@ -58,7 +58,7 @@ Los siguientes escenarios son hipótesis de uso razonables dado el tamaño y el 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La búsqueda web realizada no ha devuelto papers, blogs ni evaluaciones asociadas al modelo, y la ficha de HuggingFace no incluye tabla de resultados (MMLU, HumanEval, GSM8K, ARC, HellaSwag ni ningún otro conjunto de evaluación).
+No se han publicado resultados de benchmarks en la información disponible. La búsqueda web realizada no ha devuelto papers, blogs ni evaluaciones asociadas al modelo, y la ficha de Hugging Face no incluye tabla de resultados (MMLU, HumanEval, GSM8K, ARC, HellaSwag ni ningún otro conjunto de evaluación).
 
 ## Requisitos de hardware
 
@@ -104,6 +104,6 @@ La comparación se limita a parámetros, contexto, licencia y disponibilidad de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ebisuke/textlm
+- Modelo en Hugging Face: https://huggingface.co/ebisuke/textlm
 
 No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web realizada. Los resultados devueltos correspondían a páginas genéricas del buscador Bing (webmaster tools, imágenes, colecciones, noticias y búsqueda general) sin relación con el modelo.

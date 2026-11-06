@@ -81,7 +81,7 @@ No disponible. Este repositorio no es un modelo de lenguaje ni un sistema de IA 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Snapkitty/sovereign-hypervisor-sdk
+- Repositorio Hugging Face: https://huggingface.co/Snapkitty/sovereign-hypervisor-sdk
 - Pagina de licencia: https://snapkittywest.dev/license
 - Organizacion GitHub declarada: https://github.com/SNAPKITTYWEST
 - DOI Zenodo citado (no verificado): 10.5281/zenodo.21268911

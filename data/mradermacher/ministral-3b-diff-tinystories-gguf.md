@@ -35,7 +35,7 @@ El trabajo realizado por mradermacher consiste exclusivamente en la conversion y
 - No se documenta soporte de agentes ni razonamiento multi-paso.
 - Capacidades multilingues limitadas al ingles segun el campo `language: en`.
 - No se documenta modo thinking, audio ni otras capacidades especiales.
-- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que indica que puede servirse a traves de infraestructuras compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que indica que puede servirse a traves de infraestructuras compatibles con la API de Hugging Face.
 
 ## Casos de uso
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
   - Los ficheros mmproj anaden ~0,6 GB (Q8_0) o ~0,9 GB (f16) si se usa el componente multimodal.
 - GPU recomendadas: no hay recomendaciones oficiales en la informacion disponible. Por tamano, cualquier GPU con 4 GB o mas de VRAM puede ejecutar las cuantizaciones Q4; una RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB o RTX 4090 de 24 GB permiten ejecutar f16 con holgura. Para despliegue en servidor, A100 o H100 no son necesarias dado el reducido tamano del modelo.
 - Cabe en GPU de consumo: si, practicamente en cualquier GPU dedicada moderna e incluso en iGPU con memoria compartida suficiente para las cuantizaciones mas bajas.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (koboldcpp, LM Studio, text-generation-webui). El tag `endpoints_compatible` sugiere compatibilidad con TGI o endpoints de HuggingFace, aunque no se detalla.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (koboldcpp, LM Studio, text-generation-webui). El tag `endpoints_compatible` sugiere compatibilidad con TGI o endpoints de Hugging Face, aunque no se detalla.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ La comparacion con modelos autoregresivos de ~3B es solo orientativa: la natural
 
 ## Enlaces
 
-- [HuggingFace: mradermacher/Ministral-3B-Diff-TinyStories-GGUF](https://huggingface.co/mradermacher/Ministral-3B-Diff-TinyStories-GGUF)
+- [Hugging Face: mradermacher/Ministral-3B-Diff-TinyStories-GGUF](https://huggingface.co/mradermacher/Ministral-3B-Diff-TinyStories-GGUF)
 - [Modelo base: MMaghoumi/Nemotron-Labs-Diffusion-TinyStories-3b](https://huggingface.co/MMaghoumi/Nemotron-Labs-Diffusion-TinyStories-3b)
 - [Pagina de descargas de mradermacher para este modelo](https://hf.tst.eu/model#Ministral-3B-Diff-TinyStories-GGUF)
 - [README de referencia de TheBloke sobre uso de GGUF](https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF)

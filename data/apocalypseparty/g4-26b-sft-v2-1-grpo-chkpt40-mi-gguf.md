@@ -2,9 +2,9 @@
 
 ## Resumen
 
-G4-26B-SFT-v2-1-GRPO-chkpt40-MI-gguf es una publicacion de pesos en formato GGUF del modelo G4-26B, distribuida por el usuario ApocalypseParty en HuggingFace. Por el propio identificador del repositorio se deduce que se trata de un modelo de aproximadamente 26.000 millones de parametros que ha pasado por un ajuste supervisado (SFT, version v2-1), un posterior entrenamiento con GRPO (Group Relative Policy Optimization) y que corresponde al checkpoint numero 40 de ese proceso de RL. El sufijo "MI" apunta a una cuantizacion calculada con importance matrix (imatrix), una tecnica habitual en llama.cpp para preservar la calidad al reducir precision.
+G4-26B-SFT-v2-1-GRPO-chkpt40-MI-gguf es una publicacion de pesos en formato GGUF del modelo G4-26B, distribuida por el usuario ApocalypseParty en Hugging Face. Por el propio identificador del repositorio se deduce que se trata de un modelo de aproximadamente 26.000 millones de parametros que ha pasado por un ajuste supervisado (SFT, version v2-1), un posterior entrenamiento con GRPO (Group Relative Policy Optimization) y que corresponde al checkpoint numero 40 de ese proceso de RL. El sufijo "MI" apunta a una cuantizacion calculada con importance matrix (imatrix), una tecnica habitual en llama.cpp para preservar la calidad al reducir precision.
 
-El dato verificable de tamano es el recuento de parametros de los pesos safetensors, 25.233.142.046 parametros (unos 25,2 mil millones), y un tamano de repositorio de 22,8 GB, coherente con cuantizaciones de 4-5 bits. La ficha de HuggingFace no declara licencia, idiomas soportados ni pipeline, y no se han encontrado en la informacion disponible ni el modelo base, ni la arquitectura concreta, ni la longitud de contexto.
+El dato verificable de tamano es el recuento de parametros de los pesos safetensors, 25.233.142.046 parametros (unos 25,2 mil millones), y un tamano de repositorio de 22,8 GB, coherente con cuantizaciones de 4-5 bits. La ficha de Hugging Face no declara licencia, idiomas soportados ni pipeline, y no se han encontrado en la informacion disponible ni el modelo base, ni la arquitectura concreta, ni la longitud de contexto.
 
 La relevancia de esta publicacion es practica: se trata de una variante cuantizada y lista para ejecucion local mediante llama.cpp u otros runners compatibles con GGUF, orientada a uso conversacional. Al estar etiquetada como "endpoints_compatible" y "conversational", esta pensada para desplegarse como servicio de chat. El numero de descargas (26) y de likes (0) indica que es una publicacion reciente y de difusion muy limitada, sin validacion comunitaria significativa.
 
@@ -32,7 +32,7 @@ El unico detalle tecnico adicional inferible del nombre es el sufijo "MI", que d
 - Generacion de texto conversacional: el modelo esta etiquetado como "conversational", por lo que su orientacion principal es el dialogo multi-turno.
 - Ajuste por RL con GRPO: este tipo de entrenamiento suele asociarse a mejoras en razonamiento paso a paso y en tareas de matematicas y logica, aunque no se han publicado evaluaciones que lo confirmen en este caso.
 - Ejecucion local mediante GGUF: compatible con el ecosistema llama.cpp y runners derivados.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que puede servirse a traves de infraestructuras de inferencia compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que puede servirse a traves de infraestructuras de inferencia compatibles con la API de Hugging Face.
 - Tool calling / function calling: no disponible (no se declara soporte explicito).
 - Capacidades de agente y multi-step reasoning: no disponible.
 - Capacidades multilingues: no disponible.
@@ -50,7 +50,7 @@ El unico detalle tecnico adicional inferible del nombre es el sufijo "MI", que d
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye tablas de evaluacion (MMLU, HumanEval, GSM8K u otras) y las busquedas web realizadas no aportan cifras verificables para esta variante concreta.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye tablas de evaluacion (MMLU, HumanEval, GSM8K u otras) y las busquedas web realizadas no aportan cifras verificables para esta variante concreta.
 
 ## Requisitos de hardware
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes ni fren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ApocalypseParty/G4-26B-SFT-v2-1-GRPO-chkpt40-MI-gguf
+- Repositorio Hugging Face: https://huggingface.co/ApocalypseParty/G4-26B-SFT-v2-1-GRPO-chkpt40-MI-gguf
 - Variante slerp50: https://huggingface.co/ApocalypseParty/G4-26B-SFT-v2-1-GRPO-chkpt40-slerp50-gguf
 - Variante MD: https://huggingface.co/ApocalypseParty/G4-26B-SFT-v2-1-GRPO-chkpt40-MD-gguf
 - G4-26B-SFT-1-fixed en FriendliAI: https://friendli.ai/models/ApocalypseParty/G4-26B-SFT-1-fixed

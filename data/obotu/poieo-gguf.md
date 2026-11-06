@@ -84,7 +84,7 @@ No se dispone de benchmarks comparativos con estos modelos en la información pr
 
 ## Enlaces
 
-- [Repositorio HuggingFace - Obotu/POIEO-GGUF](https://huggingface.co/Obotu/POIEO-GGUF)
+- [Repositorio Hugging Face - Obotu/POIEO-GGUF](https://huggingface.co/Obotu/POIEO-GGUF)
 - [Modelo base LiquidAI/LFM2.5-2.6B-Base](https://huggingface.co/LiquidAI/LFM2.5-2.6B-Base)
 - [Licencia LFM Open License v1.0](https://huggingface.co/LiquidAI/LFM2.5-2.6B-Base/blob/main/LICENSE)
 - [GitHub de Unsloth](https://github.com/unslothai/unsloth)

@@ -66,7 +66,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros como 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/misanchez/multimodal-reasoning-exp-2023
+- Repositorio en Hugging Face: https://huggingface.co/misanchez/multimodal-reasoning-exp-2023
 - Artículo sobre Multimodal-CoT (referencia externa): https://arxiv.org/abs/2302.00923
 - Estudio sobre habilidades de razonamiento de MLLMs (referencia externa): https://arxiv.org/abs/2401.06805
 - MiniMax (referencia externa sobre modelos multimodales): https://www.minimax.io/

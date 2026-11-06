@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SSDMobileNet-LightVarying-ZeaMays-Seed-Detection es un modelo de deteccion de objetos publicado en HuggingFace por el usuario DePubudu, orientado a identificar semillas de maiz (Zea mays) en condiciones de iluminacion adversas o variable. El modelo parte de un checkpoint preentrenado SSD MobileNet V2 con FPN y se ha reentrenado mediante la TensorFlow Object Detection API sobre el GermPredDataset, un conjunto de datos publico alojado en Mendeley Data. El repositorio se publico el 10 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", por lo que se trata de un artefacto sin validacion comunitaria.
+SSDMobileNet-LightVarying-ZeaMays-Seed-Detection es un modelo de deteccion de objetos publicado en Hugging Face por el usuario DePubudu, orientado a identificar semillas de maiz (Zea mays) en condiciones de iluminacion adversas o variable. El modelo parte de un checkpoint preentrenado SSD MobileNet V2 con FPN y se ha reentrenado mediante la TensorFlow Object Detection API sobre el GermPredDataset, un conjunto de datos publico alojado en Mendeley Data. El repositorio se publico el 10 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", por lo que se trata de un artefacto sin validacion comunitaria.
 
 La propuesta de valor es acotada y muy especifica: deteccion y conteo de semillas en escenarios de baja luminosidad, un problema recurrente en vision artificial agricola cuando las capturas se realizan en camara de cultivo, invernadero o linea de clasificacion con iluminacion controlada deficiente. Al apoyarse en la familia SSD MobileNet, la arquitectura esta disenada para inferencia ligera en CPU o dispositivos de borde, lo que encaja con despliegues en maquinaria agricola o estaciones de campo sin GPU dedicada.
 
@@ -22,7 +22,7 @@ No se dispone de informacion sobre el numero de parametros, el volumen de tokens
 | Formato de pesos | checkpoints de TensorFlow (carpeta `zeamays-model/`); no se ofrecen safetensors ni GGUF |
 | Tarea (pipeline) | object-detection |
 | Clases detectadas | semillas de Zea mays (una clase, segun la descripcion) |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Fecha de publicacion | 2026-09-10 |
 | Fecha de ultima actualizacion | 2026-09-10 |
 
@@ -82,7 +82,7 @@ La informacion proporcionada no incluye resultados de evaluacion, por lo que la 
 
 | Modelo | Arquitectura | Tarea | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SSDMobileNet-LightVarying-ZeaMays-Seed-Detection | SSD MobileNet V2 + FPN | Deteccion de semillas de maiz con iluminacion variable | Imagenes; resolucion no disponible | MIT | HuggingFace, 0 descargas |
+| SSDMobileNet-LightVarying-ZeaMays-Seed-Detection | SSD MobileNet V2 + FPN | Deteccion de semillas de maiz con iluminacion variable | Imagenes; resolucion no disponible | MIT | Hugging Face, 0 descargas |
 | SSD MobileNet V2 (checkpoint preentrenado COCO, TF Model Zoo) | SSD MobileNet V2 / V2 + FPN | Deteccion generica de 80 clases | Imagenes | Apache 2.0 (habitual en el zoo de TF) | Ampliamente disponible |
 | YOLOv8n (Ultralytics) | CNN de una etapa, anchor-free | Deteccion generica | Imagenes | AGPL-3.0 / licencia comercial | Ampliamente disponible |
 | EfficientDet-Lite0 (TensorFlow) | EfficientNet-Lite + BiFPN | Deteccion generica optimizada para edge | Imagenes | Apache 2.0 | Ampliamente disponible |
@@ -92,7 +92,7 @@ No se dispone de datos comparativos de rendimiento, parametros ni contexto para 
 ## Limitaciones y advertencias
 
 - Ausencia total de metricas: no hay mAP, precision ni recall publicados, por lo que el rendimiento real del modelo es desconocido.
-- Sin validacion externa: 0 descargas y 0 "likes" en HuggingFace implican que no ha sido probado por terceros.
+- Sin validacion externa: 0 descargas y 0 "likes" en Hugging Face implican que no ha sido probado por terceros.
 - Posible ausencia de pesos: el repositorio aparece con un tamano de 0.0 GB, aunque la model card menciona que los checkpoints entrenados estan en `zeamays-model/`. Conviene verificar si los pesos estan realmente subidos o solo referenciados.
 - Dominio muy restringido: entrenado para una unica clase (semillas de Zea mays). No es un detector de proposito general y fallara en otras especies, objetos o contextos.
 - Sesgo de dataset: depende por completo del GermPredDataset; la composicion, la variedad de variedades de maiz y las condiciones de captura no estan documentadas, lo que limita la generalizacion a otras camaras, fondos o iluminaciones.
@@ -104,7 +104,7 @@ No se dispone de datos comparativos de rendimiento, parametros ni contexto para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DePubudu/SSDMobileNet-LightVarying-ZeaMays-Seed-Detection
+- Modelo en Hugging Face: https://huggingface.co/DePubudu/SSDMobileNet-LightVarying-ZeaMays-Seed-Detection
 - Repositorio de codigo en GitHub: https://github.com/PubDe/ZeaMays-Seed-Detection-LowLight
 - Dataset GermPredDataset (Mendeley Data): https://data.mendeley.com/datasets/4wkt6thgp6/2
 - TensorFlow Models (Object Detection API): https://github.com/tensorflow/models

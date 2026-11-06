@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Smolry/vehicle-person-bike-car-detector` es un detector de objetos multiclase desarrollado por el usuario Smolry y publicado en HuggingFace. Está diseñado para identificar y localizar personas, bicicletas, coches y vehículos en imágenes, lo que lo hace útil para aplicaciones de vigilancia, análisis de tráfico y sistemas de asistencia a la conducción. El modelo se distribuye en formato ONNX, lo que facilita su integración en entornos de inferencia multiplataforma, y está licenciado bajo Apache-2.0, permitiendo uso comercial sin restricciones significativas.
+El modelo `Smolry/vehicle-person-bike-car-detector` es un detector de objetos multiclase desarrollado por el usuario Smolry y publicado en Hugging Face. Está diseñado para identificar y localizar personas, bicicletas, coches y vehículos en imágenes, lo que lo hace útil para aplicaciones de vigilancia, análisis de tráfico y sistemas de asistencia a la conducción. El modelo se distribuye en formato ONNX, lo que facilita su integración en entornos de inferencia multiplataforma, y está licenciado bajo Apache-2.0, permitiendo uso comercial sin restricciones significativas.
 
 A pesar de su etiqueta de pipeline `object-detection`, la información pública disponible es muy limitada: no se especifican la arquitectura exacta, el número de parámetros, la longitud de contexto (no aplica a visión) ni los datos de entrenamiento. El tamaño del repositorio es de 0.2 GB, lo que sugiere un modelo relativamente ligero, probablemente adecuado para despliegue en edge o en tiempo real. La relevancia actual radica en la creciente demanda de soluciones de detección de objetos ligeras y de código abierto para aplicaciones de movilidad y seguridad.
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada: al ser un modelo de 0.2 GB en ONNX, la inferencia puede ejecutarse en CPU con un uso de memoria RAM de aproximadamente 0.5-1 GB, o en GPU con VRAM mínima (incluso integradas).
 - GPU recomendadas: cualquier GPU con soporte CUDA (por ejemplo, NVIDIA GTX 1050 Ti o superior) o aceleradores NPU como Intel Movidius o Coral Edge TPU, gracias al formato ONNX.
 - Compatibilidad con consumer GPU: sí, cabe en GPUs de gama baja y media, así como en sistemas sin GPU dedicada.
-- Opciones de despliegue: se puede servir con ONNX Runtime, OpenVINO Model Server, TensorRT, o mediante frameworks como HuggingFace Inference Endpoints. También es posible convertirlo a otros formatos (por ejemplo, TensorFlow Lite) para móviles.
+- Opciones de despliegue: se puede servir con ONNX Runtime, OpenVINO Model Server, TensorRT, o mediante frameworks como Hugging Face Inference Endpoints. También es posible convertirlo a otros formatos (por ejemplo, TensorFlow Lite) para móviles.
 - Latencia y throughput: no se dispone de datos medidos. En una CPU moderna, se espera una latencia de decenas de milisegundos por imagen, dependiendo de la resolución.
 
 ## Comparativa con modelos similares
@@ -72,6 +72,6 @@ La comparativa se basa en modelos de propósito similar encontrados en la búsqu
 
 ## Enlaces
 
-- [HuggingFace - Smolry/vehicle-person-bike-car-detector](https://huggingface.co/Smolry/vehicle-person-bike-car-detector)
+- [Hugging Face - Smolry/vehicle-person-bike-car-detector](https://huggingface.co/Smolry/vehicle-person-bike-car-detector)
 - [GitHub - MelkiMeriem/YOLOv8-Vehicle-Detector](https://github.com/MelkiMeriem/YOLOv8-Vehicle-Detector) (referencia de un modelo similar)
 - [OpenVINO - person-vehicle-bike-detection-crossroad-0078](https://docs.openvino.ai/2023.3/omz_models_model_person_vehicle_bike_detection_crossroad_0078.html) (referencia de un modelo similar)

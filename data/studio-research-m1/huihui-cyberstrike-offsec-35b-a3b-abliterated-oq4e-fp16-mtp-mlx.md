@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Repositorio HuggingFace (oQ4e): https://huggingface.co/Studio-Research-M1/Huihui-CyberStrike-OffSec-35B-A3B-abliterated-oQ4e-FP16-MTP-MLX
+- Repositorio Hugging Face (oQ4e): https://huggingface.co/Studio-Research-M1/Huihui-CyberStrike-OffSec-35B-A3B-abliterated-oQ4e-FP16-MTP-MLX
 - Repositorio hermano (oQ8e): https://huggingface.co/Studio-Research-M1/Huihui-CyberStrike-OffSec-35B-A3B-abliterated-oQ8e-FP16-MTP-MLX
 - Colección del autor: https://huggingface.co/collections/Studio-Research-M1/cyberstrike-35b-a3b-abliterated-oq-mlx-apple-silicon-6ae714be7b5be2d9910f30bc
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-CyberStrike-OffSec-35B-abliterated

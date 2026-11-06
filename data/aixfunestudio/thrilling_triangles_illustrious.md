@@ -1,11 +1,11 @@
 # AIxFuneStudio/Thrilling_Triangles_Illustrious
 
 ## Resumen
-Thrilling_Triangles_Illustrious es un checkpoint alojado en HuggingFace por el usuario AIxFuneStudio, con acceso restringido (gated) y licencia "other". El repositorio ocupa 7,7 GB y no declara pipeline, idiomas, número de parámetros ni formato de pesos en la información proporcionada. En el momento de la consulta acumula 0 descargas y 0 likes, lo que sugiere un lanzamiento reciente o de muy baja difusión.
+Thrilling_Triangles_Illustrious es un checkpoint alojado en Hugging Face por el usuario AIxFuneStudio, con acceso restringido (gated) y licencia "other". El repositorio ocupa 7,7 GB y no declara pipeline, idiomas, número de parámetros ni formato de pesos en la información proporcionada. En el momento de la consulta acumula 0 descargas y 0 likes, lo que sugiere un lanzamiento reciente o de muy baja difusión.
 
 Por el identificador y los resultados de búsqueda asociados, el modelo se enmarca en el ecosistema Illustrious XL, una familia orientada a la generación de imágenes de estilo anime y artístico. Los enlaces encontrados mencionan variantes como THRILLustrious y Five Stars Illustrious 8.0, también vinculadas a AIxFuneStudio, pero la ficha oficial no confirma arquitectura, datos de entrenamiento ni capacidades concretas.
 
-Su relevancia actual es limitada: no hay documentación técnica pública, benchmarks ni especificaciones de contexto o cuantización, y el acceso exige aceptar condiciones en HuggingFace antes de la descarga. Para un desarrollador o investigador, evaluarlo en producción requiere asumir una ausencia casi total de garantías técnicas y legales.
+Su relevancia actual es limitada: no hay documentación técnica pública, benchmarks ni especificaciones de contexto o cuantización, y el acceso exige aceptar condiciones en Hugging Face antes de la descarga. Para un desarrollador o investigador, evaluarlo en producción requiere asumir una ausencia casi total de garantías técnicas y legales.
 
 ## Especificaciones técnicas
 | Parámetro | Valor |
@@ -19,10 +19,10 @@ Su relevancia actual es limitada: no hay documentación técnica pública, bench
 | Licencia | other (con acceso restringido / gated) |
 | Formato de pesos | no disponible (el tamaño del repositorio es de 7,7 GB; no se confirma safetensors, GGUF ni otro) |
 | Tamaño del repositorio | 7,7 GB |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
-La información proporcionada no incluye detalles sobre la arquitectura, el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. Los resultados de búsqueda relacionan el modelo con Illustrious XL y con otros checkpoints de AIxFuneStudio como Five Stars Illustrious 8.0, lo que apunta a una base de difusión latente orientada a la generación de imágenes, pero no hay confirmación oficial en la ficha de HuggingFace.
+La información proporcionada no incluye detalles sobre la arquitectura, el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. Los resultados de búsqueda relacionan el modelo con Illustrious XL y con otros checkpoints de AIxFuneStudio como Five Stars Illustrious 8.0, lo que apunta a una base de difusión latente orientada a la generación de imágenes, pero no hay confirmación oficial en la ficha de Hugging Face.
 
 No se dispone de datos sobre innovaciones técnicas como decodificación especulativa, atención lineal o mecanismos híbridos. Para un modelo de difusión, términos como "contexto de tokens" o "parámetros activos" no son directamente aplicables, y la ficha no aclara si se trata de un fine-tune, un merge de checkpoints o un entrenamiento desde cero.
 
@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thrilling_Triangles_Illustrious | no disponible | no aplica | no disponible | other (gated) | HuggingFace, acceso restringido |
+| Thrilling_Triangles_Illustrious | no disponible | no aplica | no disponible | other (gated) | Hugging Face, acceso restringido |
 | THRILLustrious | no disponible | no aplica | no disponible | no disponible | PromptHero, PixAI |
 | Illustrious XL | no disponible | no aplica | no disponible | no disponible | Repositorios y archivos de la comunidad |
-| Five Stars Illustrious 8.0 | no disponible | no aplica | no disponible | no disponible | Ko-fi / HuggingFace (según el enlace) |
+| Five Stars Illustrious 8.0 | no disponible | no aplica | no disponible | no disponible | Ko-fi / Hugging Face (según el enlace) |
 
 No se dispone de datos de rendimiento, parámetros o licencia para ninguno de los modelos comparables en la información proporcionada.
 
@@ -73,8 +73,8 @@ No se dispone de datos de rendimiento, parámetros o licencia para ninguno de lo
 - Fecha de creación futura: la ficha indica 2026-10-14, una fecha posterior a la actual; conviene verificar la veracidad del repositorio.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/AIxFuneStudio/Thrilling_Triangles_Illustrious
-- Modelos Illustrious en HuggingFace: https://huggingface.co/models?other=illustrious
+- Hugging Face: https://huggingface.co/AIxFuneStudio/Thrilling_Triangles_Illustrious
+- Modelos Illustrious en Hugging Face: https://huggingface.co/models?other=illustrious
 - THRILLustrious en PromptHero: https://prompthero.com/ai-models/thrillustrious-download
 - THRILLustrious en PixAI: https://pixai.art/en/model/1835376395379499115
 - Archivo de Illustrious XL: https://www.illustrious-xl.ai/model/3

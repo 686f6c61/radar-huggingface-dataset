@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Abdoul27/lightonocr-2-1b-barbados` es un ajuste fino (fine-tune) del modelo `lightonai/LightOnOCR-2-1B-base` orientado especificamente al reconocimiento de texto manuscrito (HTR, *handwritten text recognition*) sobre documentos historicos, con un enfoque declarado en el corpus de Barbados. El repositorio lo publica el usuario Abdoul27 bajo licencia Apache 2.0 y con acceso restringido (gated), es decir, requiere aceptar condiciones en HuggingFace antes de descargarlo.
+`Abdoul27/lightonocr-2-1b-barbados` es un ajuste fino (fine-tune) del modelo `lightonai/LightOnOCR-2-1B-base` orientado especificamente al reconocimiento de texto manuscrito (HTR, *handwritten text recognition*) sobre documentos historicos, con un enfoque declarado en el corpus de Barbados. El repositorio lo publica el usuario Abdoul27 bajo licencia Apache 2.0 y con acceso restringido (gated), es decir, requiere aceptar condiciones en Hugging Face antes de descargarlo.
 
 Tecnicamente es un modelo de vision-lenguaje (*image-text-to-text*) de aproximadamente 1.005 millones de parametros (1,0056 x 10^9), lo que lo situa en la categoria de 1B, un tamano pensado para inferencia economica en una sola GPU. El pipeline declarado es `image-text-to-text`, con etiquetas que lo vinculan explicitamente a OCR, handwriting, HTR, documentos historicos y uso conversacional. El repositorio ocupa 4,0 GB, coherente con pesos almacenados en precision fp32 (1.005.647.872 x 4 bytes = 4,02 GB).
 
@@ -71,9 +71,9 @@ Estimaciones calculadas a partir del numero de parametros (1.005.647.872) y del 
 - VRAM estimada en INT4: ~0,7 GB de pesos, ~1,0-1,5 GB en total.
 - Cabe en GPU de consumo: si. Una RTX 3060 de 12 GB, una RTX 4060 Ti de 16 GB o cualquier GPU con 8 GB o mas pueden ejecutarlo en fp16; en cuantizacion INT8/INT4 bastarian 4-6 GB.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4070/4080, RTX 4090, L4, L40S o A10G para despliegue en servidor. A100 y H100 son sobredimensionadas para un modelo de 1B, aunque utiles para lotes grandes.
-- Opciones de despliegue: la libreria declarada es `transformers`, y la etiqueta `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints. vLLM y TGI son opciones plausibles para servir VLMs. llama.cpp y Ollama requeririan una conversion a GGUF que no esta publicada en el repositorio.
+- Opciones de despliegue: la libreria declarada es `transformers`, y la etiqueta `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints. vLLM y TGI son opciones plausibles para servir VLMs. llama.cpp y Ollama requeririan una conversion a GGUF que no esta publicada en el repositorio.
 - Latencia y throughput estimados: no disponible. Dependen de la resolucion de imagen de entrada, del hardware y del backend de inferencia, y no hay mediciones publicadas.
-- Restriccion de acceso: el repositorio es gated, por lo que el despliegue en produccion exige primero solicitar y obtener acceso en HuggingFace.
+- Restriccion de acceso: el repositorio es gated, por lo que el despliegue en produccion exige primero solicitar y obtener acceso en Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -81,7 +81,7 @@ No hay datos de rendimiento publicados para este ajuste, por lo que la comparaci
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| `Abdoul27/lightonocr-2-1b-barbados` | ~1,01 B | no disponible | Apache 2.0 | OCR/HTR en documentos historicos de Barbados | Gated en HuggingFace |
+| `Abdoul27/lightonocr-2-1b-barbados` | ~1,01 B | no disponible | Apache 2.0 | OCR/HTR en documentos historicos de Barbados | Gated en Hugging Face |
 | `lightonai/LightOnOCR-2-1B-base` | ~1 B (modelo base) | no disponible | no disponible | OCR generalista (vision-lenguaje) | Repositorio publico |
 | Otros modelos de OCR/HTR de ~1 B | no disponible | no disponible | no disponible | OCR/HTR | no disponible |
 
@@ -103,8 +103,8 @@ No se dispone de informacion suficiente para comparar con alternativas como TrOC
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abdoul27/lightonocr-2-1b-barbados
+- Modelo en Hugging Face: https://huggingface.co/Abdoul27/lightonocr-2-1b-barbados
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-2-1B-base
-- Organizacion LightOn en HuggingFace: https://huggingface.co/lightonai
+- Organizacion LightOn en Hugging Face: https://huggingface.co/lightonai
 
 Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos resultados obtenidos correspondian a dominios comerciales de una marca de prendas de abrigo, sin relacion con el modelo ni con OCR. No se han localizado papers, blogs, repositorios de codigo ni demos asociados a este ajuste.

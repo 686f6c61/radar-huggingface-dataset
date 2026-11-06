@@ -72,5 +72,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/htrbao/aloha_bimanual_js_abs-bagzipping
+- Repositorio Hugging Face: https://huggingface.co/htrbao/aloha_bimanual_js_abs-bagzipping
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la información proporcionada.

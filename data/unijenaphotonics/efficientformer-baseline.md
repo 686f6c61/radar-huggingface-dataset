@@ -2,7 +2,7 @@
 
 ## Resumen
 
-unijenaphotonics/efficientformer-baseline es un repositorio experimental publicado en HuggingFace por el usuario unijenaphotonics (región US). No es un modelo entrenado: la propia model card lo describe como una base de código de EfficientFormer para multitask, pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. Incluye `predict.py` como artefacto principal, un `config.json` con los ajustes generados de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el autor presenta explícitamente como checkpoint de inicialización para pruebas de humo, no como checkpoint entrenado.
+unijenaphotonics/efficientformer-baseline es un repositorio experimental publicado en Hugging Face por el usuario unijenaphotonics (región US). No es un modelo entrenado: la propia model card lo describe como una base de código de EfficientFormer para multitask, pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. Incluye `predict.py` como artefacto principal, un `config.json` con los ajustes generados de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el autor presenta explícitamente como checkpoint de inicialización para pruebas de humo, no como checkpoint entrenado.
 
 Los metadatos reales de safetensors registran 49.600 parámetros (aproximadamente 0,05 millones), una cifra coherente con un repositorio de 0,0 GB y con un propósito de validación. Esa cifra resulta incompatible con la escala `large` que declara la model card, lo que conviene tener presente: la etiqueta de escala describe la configuración nominal del script, no el tamano real de los pesos publicados.
 
@@ -77,7 +77,7 @@ No disponible. La información proporcionada no incluye ningún modelo comparabl
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unijenaphotonics/efficientformer-baseline | 49.600 | no disponible | sin benchmarks declarados | MIT | pública en HuggingFace |
+| unijenaphotonics/efficientformer-baseline | 49.600 | no disponible | sin benchmarks declarados | MIT | pública en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,6 +94,6 @@ No disponible. La información proporcionada no incluye ningún modelo comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unijenaphotonics/efficientformer-baseline
+- Modelo en Hugging Face: https://huggingface.co/unijenaphotonics/efficientformer-baseline
 - Archivos incluidos en el repositorio: `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Papers, blogs, repositorios o demos adicionales: no disponible. La búsqueda web realizada no devolvió ningún resultado relacionado con el modelo; los enlaces recuperados correspondían a eventos deportivos sin relación con este artefacto.

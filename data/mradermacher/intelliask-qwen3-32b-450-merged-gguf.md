@@ -89,7 +89,7 @@ La comparación debe tomarse con cautela: no se han publicado benchmarks de esta
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/IntelliAsk-Qwen3-32B-450-Merged-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/IntelliAsk-Qwen3-32B-450-Merged-GGUF
 - Modelo base: https://huggingface.co/anonymousatom/IntelliAsk-Qwen3-32B-450-Merged
 - Página de descargas del cuantizador: https://hf.tst.eu/model#IntelliAsk-Qwen3-32B-450-Merged-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

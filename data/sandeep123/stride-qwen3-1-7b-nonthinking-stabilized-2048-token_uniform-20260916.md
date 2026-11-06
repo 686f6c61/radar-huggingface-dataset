@@ -66,7 +66,7 @@ Los datos de los modelos alternativos provienen de sus fichas publicas y no han 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| stride-qwen3-1.7b-nonthinking-stabilized-2048-token_uniform | 1,7B (base) + adaptador LoRA | 8.192 tokens en entrenamiento (prompt + respuesta) | no disponible | Adaptador publico en HuggingFace, 0 descargas y 0 likes | Experimento de ablacion con GRPO, sin evaluacion publicada |
+| stride-qwen3-1.7b-nonthinking-stabilized-2048-token_uniform | 1,7B (base) + adaptador LoRA | 8.192 tokens en entrenamiento (prompt + respuesta) | no disponible | Adaptador publico en Hugging Face, 0 descargas y 0 likes | Experimento de ablacion con GRPO, sin evaluacion publicada |
 | Qwen/Qwen3-1.7B (modelo base) | 1,7B | no disponible en esta ficha | no disponible en esta ficha | Modelo base publico y fijado a la revision 70d244cc86ccca08cf5af4e1e306ecf908b1ad5e | Punto de partida del adaptador; capacidades no evaluadas aqui |
 | Otros adaptadores LoRA de matematicas sobre modelos de ~1-2B | no disponible | no disponible | no disponible | no disponible | No se dispone de alternativas identificadas en la informacion proporcionada |
 
@@ -87,7 +87,7 @@ Los datos de los modelos alternativos provienen de sus fichas publicas y no han 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/sandeep123/stride-qwen3-1.7b-nonthinking-stabilized-2048-token_uniform-20260916
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/sandeep123/stride-qwen3-1.7b-nonthinking-stabilized-2048-token_uniform-20260916
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Revision fijada del modelo base: 70d244cc86ccca08cf5af4e1e306ecf908b1ad5e
 - Ficheros de reanudacion: latest-resume/RESUME.md y latest_resume.json dentro del repositorio

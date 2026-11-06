@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed455` es un ajuste fino (fine-tuning) supervisado del checkpoint `goldfish-models/hin_deva_10mb`, publicado por el usuario francesca9805 en HuggingFace. Se trata de un transformer decoder-only de arquitectura GPT-2 con 39.087.104 parámetros totales (aproximadamente 39,1 millones) y un tamano de repositorio de 0,1 GB en formato safetensors. El entrenamiento se realizó con la librería TRL (versión 0.23.0) mediante SFT (supervised fine-tuning), según indica la propia model card.
+El modelo `francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed455` es un ajuste fino (fine-tuning) supervisado del checkpoint `goldfish-models/hin_deva_10mb`, publicado por el usuario francesca9805 en Hugging Face. Se trata de un transformer decoder-only de arquitectura GPT-2 con 39.087.104 parámetros totales (aproximadamente 39,1 millones) y un tamano de repositorio de 0,1 GB en formato safetensors. El entrenamiento se realizó con la librería TRL (versión 0.23.0) mediante SFT (supervised fine-tuning), según indica la propia model card.
 
 El modelo base pertenece a la familia Goldfish, orientada a modelos monolingües pequenos; el identificador `hin_deva` apunta a hindi en escritura devanagari y el sufijo `10mb` sugiere un corpus de entrenamiento del orden de 10 MB, aunque esto no se confirma en la documentación. El ajuste parece formar parte de un experimento académico (la ejecución de entrenamiento está registrada en un proyecto de Weights & Biases de la Universidad de Groningen), más que de un lanzamiento de producción.
 
@@ -25,7 +25,7 @@ Su relevancia práctica es limitada pero concreta: sirve como caso de estudio de
 | Método de entrenamiento | SFT con TRL 0.23.0 |
 | Versiones del entorno | Transformers 4.56.2, PyTorch 2.5.1+cu121, Datasets 4.8.4, Tokenizers 0.22.1 |
 | Downloads / likes | 0 / 0 |
-| Fecha de creación | 2026-09-22 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-09-22 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Cabe en cualquier GPU de consumo: desde una GTX 1050 o una RTX 3060 hasta una RTX 4090, con un consumo de VRAM inferior a 1 GB en la mayoría de configuraciones.
 - Funciona en CPU sin GPU y en placas como Raspberry Pi 4/5 para inferencia de baja concurrencia.
 - GPU de centro de datos (A100, H100) no aportan ventaja relevante; el modelo queda limitado por latencia de lanzamiento más que por cómputo.
-- Opciones de despliegue: `transformers` (Pipeline), text-generation-inference (por los tags `text-generation-inference` y `endpoints_compatible`), vLLM y HuggingFace Inference Endpoints. Para llama.cpp u Ollama sería necesaria una conversión propia a GGUF, ya que no se publican pesos cuantizados.
+- Opciones de despliegue: `transformers` (Pipeline), text-generation-inference (por los tags `text-generation-inference` y `endpoints_compatible`), vLLM y Hugging Face Inference Endpoints. Para llama.cpp u Ollama sería necesaria una conversión propia a GGUF, ya que no se publican pesos cuantizados.
 - Latencia y throughput estimados: no disponibles; no se publican mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ La búsqueda web asociada no devolvió información técnica sobre este modelo n
 - Riesgo elevado de alucinación: un modelo de 39M parámetros con SFT no documentado no dispone de mecanismos de verificación factual.
 - Ausencia de alineación de seguridad documentada: solo se indica SFT, sin RLHF, DPO ni filtros de contenido, por lo que puede generar texto inapropiado si el corpus de ajuste lo contiene.
 - Idiomas: no se declaran idiomas soportados; el uso se limita previsiblemente al hindi en devanagari por herencia del modelo base, sin garantía de calidad en otros idiomas.
-- Licencia no disponible: el frontmatter incluye `licence: license` como marcador vacío y los metadatos de HuggingFace no especifican licencia. El uso comercial es jurídicamente incierto y no debería asumirse permitido.
+- Licencia no disponible: el frontmatter incluye `licence: license` como marcador vacío y los metadatos de Hugging Face no especifican licencia. El uso comercial es jurídicamente incierto y no debería asumirse permitido.
 - Contexto no especificado: se desconoce la ventana máxima; prompts largos pueden truncarse o degradar la salida.
 - Formatos limitados: no hay GGUF ni cuantizaciones listas para usar, lo que obliga a conversiones propias para llama.cpp u Ollama.
 - Metadatos anómalos: la fecha de creación registrada (2026-09-22) es posterior a la fecha de consulta habitual y no se corresponde con las versiones de librerías declaradas, lo que refuerza la naturaleza experimental del repositorio.
@@ -91,7 +91,7 @@ La búsqueda web asociada no devolvió información técnica sobre este modelo n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/hin_deva_10mb
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/7qa67t3j
 - Repositorio de TRL: https://github.com/huggingface/trl

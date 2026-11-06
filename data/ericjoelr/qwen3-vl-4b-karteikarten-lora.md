@@ -74,9 +74,9 @@ Datos adicionales reportados: el modelo base, bajo restriccion de esquema, devue
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen3-VL-4B + LoRA Karteikarten) | 4B base / 33,0 M entrenables | no disponible | 94,3 % de diapositivas con contenido generan tarjetas; word-F1 0,557 | Apache 2.0 | HuggingFace, formato MLX, 0,1 GB |
-| `mlx-community/Qwen3-VL-4B-Instruct-8bit` sin adaptador | 4B | no disponible | 7,0 % de diapositivas con contenido generan tarjetas; word-F1 0,041 | Apache 2.0 | HuggingFace, MLX 8-bit, 5,1 GB |
-| Qwen3-VL-4B-Instruct con prompt few-shot | 4B | no disponible | no disponible (no evaluado en la model card) | Apache 2.0 | HuggingFace, varios formatos |
+| Este adaptador (Qwen3-VL-4B + LoRA Karteikarten) | 4B base / 33,0 M entrenables | no disponible | 94,3 % de diapositivas con contenido generan tarjetas; word-F1 0,557 | Apache 2.0 | Hugging Face, formato MLX, 0,1 GB |
+| `mlx-community/Qwen3-VL-4B-Instruct-8bit` sin adaptador | 4B | no disponible | 7,0 % de diapositivas con contenido generan tarjetas; word-F1 0,041 | Apache 2.0 | Hugging Face, MLX 8-bit, 5,1 GB |
+| Qwen3-VL-4B-Instruct con prompt few-shot | 4B | no disponible | no disponible (no evaluado en la model card) | Apache 2.0 | Hugging Face, varios formatos |
 | Modelo profesor en la nube (identidad no revelada) | no disponible | no disponible | Referencia de los objetivos de entrenamiento (no verificados) | no disponible | API propietaria |
 
 La comparacion relevante es contra el propio modelo base: el adaptador no anade conocimiento nuevo, reorienta la distribucion de salida hacia el formato y la politica de decision de la tarea. Frente a un modelo mas grande (Qwen3-VL-8B o superiores) no hay datos comparativos publicados; la ventaja del adaptador es el coste de despliegue (5,1 GB + 0,1 GB) y la ejecucion local.
@@ -96,7 +96,7 @@ La comparacion relevante es contra el propio modelo base: el adaptador no anade 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ericjoelr/qwen3-vl-4b-karteikarten-lora
+- Modelo en Hugging Face: https://huggingface.co/ericjoelr/qwen3-vl-4b-karteikarten-lora
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-VL-4B-Instruct-8bit
 - Aplicacion KI-Karteikarten-Assistent: https://github.com/ericjoelr/KI-Karteikarten-Assistent
 - Prompt de sistema usado en la aplicacion: https://github.com/ericjoelr/KI-Karteikarten-Assistent/blob/main/src/backend/prompts/system_prompt.txt

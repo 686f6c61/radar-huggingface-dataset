@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`trev` es un modelo de decisión tipado publicado por el usuario `pranavjainTredence` en HuggingFace. No es un modelo de generación de texto al uso: se trata de un conjunto de adaptadores LoRA (r=16, α=8) acoplados a una cabeza de decisión denominada Clef sobre el modelo base `unsloth/Qwen3.5-0.8B`. Su función es recibir un estado textual (`state`) y un conjunto de preguntas tipadas (`choice`, `noul`, `score`) y devolver probabilidades nativas sobre las opciones en un único forward pass, sin generar tokens.
+`trev` es un modelo de decisión tipado publicado por el usuario `pranavjainTredence` en Hugging Face. No es un modelo de generación de texto al uso: se trata de un conjunto de adaptadores LoRA (r=16, α=8) acoplados a una cabeza de decisión denominada Clef sobre el modelo base `unsloth/Qwen3.5-0.8B`. Su función es recibir un estado textual (`state`) y un conjunto de preguntas tipadas (`choice`, `noul`, `score`) y devolver probabilidades nativas sobre las opciones en un único forward pass, sin generar tokens.
 
 La propuesta resulta relevante para pipelines de clasificación y enrutamiento donde la latencia y el coste por inferencia importan: al no decodificar texto, el modelo evita la generación autoregresiva y produce directamente distribuciones de probabilidad sobre las opciones definidas por el usuario. Esto lo sitúa en la categoría de modelos de decisión (decision models) y no en la de asistentes conversacionales.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `trev` | Base 0,8B + LoRA + cabeza Clef | 32.768 | Probabilidades tipadas nativas | Apache-2.0 (adaptadores) | HuggingFace, 0 descargas |
-| `unsloth/Qwen3.5-0.8B` (base) | 0,8B | No disponible en esta ficha | Texto generado | Según Qwen | HuggingFace |
+| `trev` | Base 0,8B + LoRA + cabeza Clef | 32.768 | Probabilidades tipadas nativas | Apache-2.0 (adaptadores) | Hugging Face, 0 descargas |
+| `unsloth/Qwen3.5-0.8B` (base) | 0,8B | No disponible en esta ficha | Texto generado | Según Qwen | Hugging Face |
 | Clasificadores BERT pequeños (p. ej. DistilBERT) | ~66M | 512 típicamente | Logits de clasificación fija | Apache-2.0 / MIT según variante | Amplia |
 | LLM generativos pequeños con prompting (p. ej. Qwen 0,5B-1,5B) | 0,5B-1,5B | Variable | Texto generado | Variable | Amplia |
 
@@ -83,6 +83,6 @@ La comparación con clasificadores BERT es la más directa en cuanto a tipo de s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pranavjainTredence/trev
+- Hugging Face: https://huggingface.co/pranavjainTredence/trev
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-0.8B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

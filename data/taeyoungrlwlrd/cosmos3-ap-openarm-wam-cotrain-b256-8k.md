@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `taeyoungrlwlrd/cosmos3-ap-openarm-wam-cotrain-b256-8k` alojado en HuggingFace constituye el objeto de esta ficha. Se trata de un repositorio de 91,1 GB publicado por el usuario taeyoungrlwlrd, con 5 descargas y 0 likes en el momento de la consulta. No se ha publicado informacion tecnica asociada: la model card no expone pipeline, licencia, idiomas ni arquitectura declarada, y la busqueda web realizada no ha devuelto ningun documento relacionado con el modelo (los resultados obtenidos corresponden a articulos en aleman sobre recogida de agua de lluvia en cuadras, sin ninguna relacion con el artefacto).
+El repositorio `taeyoungrlwlrd/cosmos3-ap-openarm-wam-cotrain-b256-8k` alojado en Hugging Face constituye el objeto de esta ficha. Se trata de un repositorio de 91,1 GB publicado por el usuario taeyoungrlwlrd, con 5 descargas y 0 likes en el momento de la consulta. No se ha publicado informacion tecnica asociada: la model card no expone pipeline, licencia, idiomas ni arquitectura declarada, y la busqueda web realizada no ha devuelto ningun documento relacionado con el modelo (los resultados obtenidos corresponden a articulos en aleman sobre recogida de agua de lluvia en cuadras, sin ninguna relacion con el artefacto).
 
 El nombre del repositorio sugiere, por su composicion, un posible artefacto de la familia Cosmos 3 orientado a robótica (`openarm` como brazo robotic o abierto, `wam` como posible acronimo de world-action model y `cotrain`/`b256`/`8k` como parametros de co-entrenamiento, tamano de batch 256 y 8.000 pasos o tokens de contexto). Esta lectura es una hipotesis derivada del identificador y no esta confirmada por ninguna fuente: no existe documentacion, paper, blog ni configuracion publicada que la respalde.
 
@@ -75,7 +75,7 @@ No se ha identificado ningun modelo comparable con certeza. Aunque el identifica
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cosmos3-ap-openarm-wam-cotrain-b256-8k | no disponible | no disponible | no disponible | no disponible | repositorio HuggingFace, 91,1 GB |
+| cosmos3-ap-openarm-wam-cotrain-b256-8k | no disponible | no disponible | no disponible | no disponible | repositorio Hugging Face, 91,1 GB |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se ha identificado ningun modelo comparable con certeza. Aunque el identifica
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/taeyoungrlwlrd/cosmos3-ap-openarm-wam-cotrain-b256-8k
+- Repositorio en Hugging Face: https://huggingface.co/taeyoungrlwlrd/cosmos3-ap-openarm-wam-cotrain-b256-8k
 - Paper: no disponible
 - Blog o model card ampliada: no disponible
 - Repositorio de codigo: no disponible

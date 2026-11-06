@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado en HuggingFace como `efafeafea/fweafea` es un repositorio publicado por el usuario `efafeafea` el 3 de noviembre de 2026. La model card asociada contiene unicamente el campo de licencia (`cc`), sin ninguna descripcion funcional, arquitectonica ni de uso. No se ha publicado pipeline, idioma, tamano de parametros ni ventana de contexto.
+El modelo identificado en Hugging Face como `efafeafea/fweafea` es un repositorio publicado por el usuario `efafeafea` el 3 de noviembre de 2026. La model card asociada contiene unicamente el campo de licencia (`cc`), sin ninguna descripcion funcional, arquitectonica ni de uso. No se ha publicado pipeline, idioma, tamano de parametros ni ventana de contexto.
 
 En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, y no cuenta con documentacion tecnica, pesos descritos, paper asociado ni demos. La unica informacion verificable es la licencia Creative Commons generica y la region de publicacion (`us`), lo que impide determinar si se trata de un modelo entrenado, un placeholder, un experimento o un repositorio vacio.
 
@@ -72,5 +72,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/efafeafea/fweafea
+- Repositorio en Hugging Face: https://huggingface.co/efafeafea/fweafea
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

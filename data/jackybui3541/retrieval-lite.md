@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Jackybui3541/retrieval-lite` alojado en HuggingFace no contiene un modelo de inteligencia artificial propiamente dicho, sino un único archivo de texto denominado `reading.md`. Según la model card, este archivo parece contener el texto completo de un artículo académico (paper) sobre generación multimodal, con formato LaTeX estilo CVPR, citas en estilo EndNote y una estructura clásica de introducción, trabajos relacionados, método, experimentos y conclusión. El autor, Jackybui3541, no ha publicado ningún peso, configuración de arquitectura, tokenizador o código de inferencia asociado.
+El repositorio `Jackybui3541/retrieval-lite` alojado en Hugging Face no contiene un modelo de inteligencia artificial propiamente dicho, sino un único archivo de texto denominado `reading.md`. Según la model card, este archivo parece contener el texto completo de un artículo académico (paper) sobre generación multimodal, con formato LaTeX estilo CVPR, citas en estilo EndNote y una estructura clásica de introducción, trabajos relacionados, método, experimentos y conclusión. El autor, Jackybui3541, no ha publicado ningún peso, configuración de arquitectura, tokenizador o código de inferencia asociado.
 
 A pesar de estar etiquetado con tags como `multimodal-generation`, `structured-imrad` o `mixed-active-passive`, estos parecen describir el contenido del documento (estilo de escritura, estructura) y no las capacidades de un modelo. El repositorio tiene cero descargas y cero likes, y fue creado con fecha futura (2026-08-25), lo que sugiere que se trata de un repositorio de prueba o de un lugar para almacenar un texto sin intención de publicar un modelo funcional. La licencia es MIT, pero no se especifican idiomas soportados ni ningún otro dato técnico.
 
@@ -59,7 +59,7 @@ No disponible. No existe ningún modelo comparable porque el repositorio no cont
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jackybui3541/retrieval-lite
+- Repositorio en Hugging Face: https://huggingface.co/Jackybui3541/retrieval-lite
 - Resultados de búsqueda web que no corresponden directamente a este modelo, pero que pueden ser de interés por similitud temática:
   - RAGLite (herramienta de RAG): https://github.com/superlinear-ai/raglite
   - MODA (benchmark de recuperación de moda): https://github.com/hopit-ai/Moda

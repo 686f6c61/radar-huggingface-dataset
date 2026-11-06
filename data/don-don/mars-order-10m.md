@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Don-Don/mars-order-10m
+- Modelo en Hugging Face: https://huggingface.co/Don-Don/mars-order-10m
 - Repositorio de assets: https://huggingface.co/datasets/Don-Don/mars-order-assets
 - Repositorio GitHub de MarS: https://github.com/microsoft/MarS
 - Paper de MarS (arXiv): https://arxiv.org/abs/2409.07486

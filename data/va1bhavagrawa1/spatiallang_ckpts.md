@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`va1bhavagrawa1/spatiallang_ckpts` es un repositorio de HuggingFace publicado por el usuario va1bhavagrawa1 que contiene checkpoints de entrenamiento de una serie de experimentos denominada SpatialLang. No se trata de un modelo listo para inferencia, sino de un archivo de estados de entrenamiento: cada checkpoint se distribuye como un fichero `.tar` dentro del directorio del experimento correspondiente (por ejemplo, `data_mix_v1/checkpoint-10000.tar`).
+`va1bhavagrawa1/spatiallang_ckpts` es un repositorio de Hugging Face publicado por el usuario va1bhavagrawa1 que contiene checkpoints de entrenamiento de una serie de experimentos denominada SpatialLang. No se trata de un modelo listo para inferencia, sino de un archivo de estados de entrenamiento: cada checkpoint se distribuye como un fichero `.tar` dentro del directorio del experimento correspondiente (por ejemplo, `data_mix_v1/checkpoint-10000.tar`).
 
 Segun la model card, los archivos incluyen estado del entrenamiento, estado del optimizador, estado del scheduler, estado aleatorio, pesos LoRA y metadatos de entrenamiento emparejados ("paired training metadata"), material pensado para reanudar o inspeccionar la ejecucion correspondiente. El repositorio ocupa 0,2 GB, no tiene descargas ni likes, y la model card no documenta arquitectura, numero de parametros, contexto, idiomas ni licencia.
 
@@ -84,7 +84,7 @@ No disponible. No se ha identificado ningun modelo comparable porque se desconoc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/va1bhavagrawa1/spatiallang_ckpts
+- Repositorio en Hugging Face: https://huggingface.co/va1bhavagrawa1/spatiallang_ckpts
 - Descarga de un checkpoint concreto (ejemplo de la model card): `hf download va1bhavagrawa1/spatiallang_ckpts data_mix_v1/checkpoint-10000.tar --repo-type model --local-dir ./spatiallang_ckpts`
 - Listado de archivos disponibles: `hf repo-files va1bhavagrawa1/spatiallang_ckpts --repo-type model`
 - Papers, blogs, repos o demos relacionados: no disponible (la busqueda web no devolvio resultados relevantes)

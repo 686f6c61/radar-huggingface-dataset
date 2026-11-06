@@ -87,8 +87,8 @@ No se dispone de datos de benchmarks que permitan comparar IRx-mini con modelos 
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/ikppramesh/irx-mini-GGUF
-- HuggingFace (MLX, para Mac): https://huggingface.co/ikppramesh/irx-mini
+- Hugging Face (GGUF): https://huggingface.co/ikppramesh/irx-mini-GGUF
+- Hugging Face (MLX, para Mac): https://huggingface.co/ikppramesh/irx-mini
 - IRx-1 GGUF: https://huggingface.co/ikppramesh/irx-1-GGUF
 - IRx-1 MLX: https://huggingface.co/ikppramesh/irx-1
 - IRx-2 GGUF: https://huggingface.co/ikppramesh/irx-2-GGUF

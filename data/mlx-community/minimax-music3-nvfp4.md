@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables de otros desarrolladores
 
 ## Enlaces
 
-- Repositorio HuggingFace: [mlx-community/MiniMax-Music3-nvfp4](https://huggingface.co/mlx-community/MiniMax-Music3-nvfp4)
+- Repositorio Hugging Face: [mlx-community/MiniMax-Music3-nvfp4](https://huggingface.co/mlx-community/MiniMax-Music3-nvfp4)
 - Modelo base: [MiniMaxAI/MiniMax-Music3](https://huggingface.co/MiniMaxAI/MiniMax-Music3)
 - Licencia del modelo base: [LICENSE](https://huggingface.co/MiniMaxAI/MiniMax-Music3/blob/main/LICENSE)
 - Librería `mlx-audio`: [Blaizzy/mlx-audio](https://github.com/Blaizzy/mlx-audio)

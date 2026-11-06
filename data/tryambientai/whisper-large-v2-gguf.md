@@ -110,7 +110,7 @@ Frente a large-v1, large-v2 se entrenó con 2,5 veces más épocas y regularizac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tryambientai/whisper-large-v2-gguf
+- Repositorio Hugging Face: https://huggingface.co/tryambientai/whisper-large-v2-gguf
 - Modelo base: https://huggingface.co/openai/whisper-large-v2
 - Commit upstream fijado: https://huggingface.co/openai/whisper-large-v2/commit/ae46427
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Miiche/visualrl-qwen3vl4b-ppo1-4bx-all-c10-fix` es un ajuste de pesos publicado en HuggingFace por el usuario Miiche a partir del modelo vision-language Qwen3-VL de 4.000 millones de parametros (el identificador del repositorio incluye `qwen3vl4b`). El nombre sugiere un entrenamiento mediante aprendizaje por refuerzo visual (`visualrl`) con el algoritmo PPO (`ppo1`), sobre algun subconjunto o tarea etiquetada como `all`, en un checkpoint o configuracion `c10` y con un sufijo `fix` que apunta a una correccion posterior. Ninguna de estas inferencias esta confirmada por la model card publicada, que no incluye descripcion tecnica.
+`Miiche/visualrl-qwen3vl4b-ppo1-4bx-all-c10-fix` es un ajuste de pesos publicado en Hugging Face por el usuario Miiche a partir del modelo vision-language Qwen3-VL de 4.000 millones de parametros (el identificador del repositorio incluye `qwen3vl4b`). El nombre sugiere un entrenamiento mediante aprendizaje por refuerzo visual (`visualrl`) con el algoritmo PPO (`ppo1`), sobre algun subconjunto o tarea etiquetada como `all`, en un checkpoint o configuracion `c10` y con un sufijo `fix` que apunta a una correccion posterior. Ninguna de estas inferencias esta confirmada por la model card publicada, que no incluye descripcion tecnica.
 
 El repositorio ocupa 227,2 GB, un tamano muy superior al de los pesos de un modelo de 4B en precision bf16 (unos 8 GB). Ese volumen es coherente con un fine-tuning completo que almacena varios checkpoints junto con estados del optimizador, aunque no se puede verificar cual es la composicion exacta del contenido del repositorio con la informacion disponible.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `Miiche/visualrl-qwen3vl4b-ppo1-4bx-all-c10-fix` | no disponible (~4B segun el identificador) | no disponible | no disponible | HuggingFace, 0 descargas | Artefacto de investigacion sin model card |
-| Qwen3-VL-4B (Alibaba Qwen) | ~4B | no disponible en la informacion recogida | no disponible en la informacion recogida | HuggingFace y catalogo de LM Studio | Modelo base del que deriva el ajuste; incluye mejoras en percepcion visual y razonamiento espacial segun LM Studio |
-| Qwen2.5-VL-7B (Alibaba Qwen) | ~7B | no disponible en la informacion recogida | no disponible en la informacion recogida | HuggingFace | Alternativa de generacion anterior y mayor tamano; no se dispone de datos comparativos verificados en la informacion recogida |
+| `Miiche/visualrl-qwen3vl4b-ppo1-4bx-all-c10-fix` | no disponible (~4B segun el identificador) | no disponible | no disponible | Hugging Face, 0 descargas | Artefacto de investigacion sin model card |
+| Qwen3-VL-4B (Alibaba Qwen) | ~4B | no disponible en la informacion recogida | no disponible en la informacion recogida | Hugging Face y catalogo de LM Studio | Modelo base del que deriva el ajuste; incluye mejoras en percepcion visual y razonamiento espacial segun LM Studio |
+| Qwen2.5-VL-7B (Alibaba Qwen) | ~7B | no disponible en la informacion recogida | no disponible en la informacion recogida | Hugging Face | Alternativa de generacion anterior y mayor tamano; no se dispone de datos comparativos verificados en la informacion recogida |
 
 No se dispone de resultados de benchmarks que permitan una comparacion cuantitativa entre estas opciones.
 
@@ -93,7 +93,7 @@ No se dispone de resultados de benchmarks que permitan una comparacion cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Miiche/visualrl-qwen3vl4b-ppo1-4bx-all-c10-fix
+- Modelo en Hugging Face: https://huggingface.co/Miiche/visualrl-qwen3vl4b-ppo1-4bx-all-c10-fix
 - Pagina de Qwen3-VL-4B en LM Studio (modelo base probable): https://lmstudio.ai/models/qwen/qwen3-vl-4b
 - Resultados de la busqueda web no relacionados con el modelo (ayuda de Google Traductor): https://support.google.com/translate/answer/6142483, https://support.google.com/translate/answer/6142468, https://support.google.com/translate/answer/6350850
 - Paper, repositorio de codigo, blog o demo del ajuste: no disponible

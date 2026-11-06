@@ -93,7 +93,7 @@ No se proporciona informacion comparativa en la documentacion disponible. Ademas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/diannao9834/ai3d-local-modeler-assets
+- Repositorio en Hugging Face: https://huggingface.co/diannao9834/ai3d-local-modeler-assets
 - Licencia Stability AI Community License (enlazada desde el repositorio): https://huggingface.co/diannao9834/ai3d-local-modeler-assets/blob/main/STABILITY_AI_COMMUNITY_LICENSE.md
 - Aviso de Stability AI exigido en redistribuciones: `STABILITY_AI_NOTICE.txt` (mismo repositorio)
 - Paper, blog, repositorio de codigo y demos del modelo subyacente: no disponibles en la informacion proporcionada.

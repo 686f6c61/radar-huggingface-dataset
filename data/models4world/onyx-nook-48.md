@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/onyx-nook-48` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `models4world`. Está diseñado como un adaptador sobre el modelo base `models4world/maple-signal-64`, del que no se dispone de información pública. El repositorio contiene únicamente la plantilla estándar de model card sin completar, por lo que no se ha documentado ninguna característica específica del modelo, su propósito o sus datos de entrenamiento.
+El modelo `models4world/onyx-nook-48` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `models4world`. Está diseñado como un adaptador sobre el modelo base `models4world/maple-signal-64`, del que no se dispone de información pública. El repositorio contiene únicamente la plantilla estándar de model card sin completar, por lo que no se ha documentado ninguna característica específica del modelo, su propósito o sus datos de entrenamiento.
 
 A pesar de estar etiquetado con `pipeline_tag: text-generation`, no se ha publicado información sobre arquitectura, número de parámetros, contexto, idiomas o licencia. El tamaño del repositorio es de 11.2 GB, lo que sugiere que podría contener los pesos del adaptador junto con el modelo base o cuantizaciones adicionales, aunque no se puede confirmar. Este modelo parece ser parte de un experimento o proyecto sin documentación pública, lo que limita seriamente su uso en producción sin una evaluación previa.
 
@@ -21,7 +21,7 @@ A pesar de estar etiquetado con `pipeline_tag: text-generation`, no se ha public
 
 ## Arquitectura y entrenamiento
 
-El modelo se publica como un adaptador LoRA, una tecnica de ajuste fino eficiente en parametros que entrena matrices de baja dimension sobre los pesos congelados de un modelo base. En este caso, el modelo base es `models4world/maple-signal-64`, del que no se ha publicado ninguna especificacion tecnica (arquitectura, numero de capas, tamaño de embedding, etc.). La libreria utilizada es PEFT 0.20.0, lo que confirma que se trata de un adaptador entrenado con el ecosistema HuggingFace.
+El modelo se publica como un adaptador LoRA, una tecnica de ajuste fino eficiente en parametros que entrena matrices de baja dimension sobre los pesos congelados de un modelo base. En este caso, el modelo base es `models4world/maple-signal-64`, del que no se ha publicado ninguna especificacion tecnica (arquitectura, numero de capas, tamaño de embedding, etc.). La libreria utilizada es PEFT 0.20.0, lo que confirma que se trata de un adaptador entrenado con el ecosistema Hugging Face.
 
 No se ha proporcionado informacion sobre el dataset de entrenamiento, el numero de tokens, el procedimiento de entrenamiento (si hubo RLHF, DPO, SFT, etc.) ni los hiperparametros utilizados. El unico tag adicional es `arxiv:1910.09700`, que corresponde al paper de Lacoste et al. sobre estimacion de emisiones de carbono en ML, pero no aporta informacion sobre la arquitectura del modelo. La fecha de creacion del repositorio es 2026-08-17, un dato que no coincide con el calendario actual y que podria indicar un error en la plataforma o una publicacion programada.
 
@@ -64,5 +64,5 @@ No disponible. No se conocen modelos comparables publicados por el mismo autor n
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/models4world/onyx-nook-48)
-- [Perfil del autor en HuggingFace](https://huggingface.co/models4world)
+- [Modelo en Hugging Face](https://huggingface.co/models4world/onyx-nook-48)
+- [Perfil del autor en Hugging Face](https://huggingface.co/models4world)

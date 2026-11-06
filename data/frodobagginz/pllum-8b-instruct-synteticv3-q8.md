@@ -92,7 +92,7 @@ Como alternativa específicamente polaca existe la familia Bielik (SpeakLeash), 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FrodoBagginz/PLLuM-8B-instruct-synteticv3-Q8
+- Repositorio en Hugging Face: https://huggingface.co/FrodoBagginz/PLLuM-8B-instruct-synteticv3-Q8
 - Unsloth (herramienta usada para la conversión, enlazada en la model card): https://github.com/unslothai/unsloth
 - llama.cpp (runtime referenciado implícitamente por los comandos `llama-cli` y `llama-mtmd-cli`): https://github.com/ggml-org/llama.cpp
 - Búsqueda web: los resultados devueltos no guardan ninguna relación con el modelo (listados de anime y manga en MyAnimeList), por lo que no se incluye ningún enlace adicional. No se han encontrado papers, blogs, demos ni páginas oficiales del proyecto PLLuM en la información proporcionada.

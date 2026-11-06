@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MobiusGaian/gpt_FT_mergedmodel` es un modelo de lenguaje publicado en HuggingFace por el usuario MobiusGaian. Por el identificador, los tags y el recuento de parámetros (124.439.808), se trata de un modelo derivado de la familia GPT-2 de OpenAI, concretamente con la configuración de GPT-2 medium (aproximadamente 124 millones de parámetros). El sufijo "FT_mergedmodel" sugiere un ajuste fino (fine-tuning) posterior cuya salida se ha fusionado con los pesos base, aunque no se documenta el procedimiento exacto.
+`MobiusGaian/gpt_FT_mergedmodel` es un modelo de lenguaje publicado en Hugging Face por el usuario MobiusGaian. Por el identificador, los tags y el recuento de parámetros (124.439.808), se trata de un modelo derivado de la familia GPT-2 de OpenAI, concretamente con la configuración de GPT-2 medium (aproximadamente 124 millones de parámetros). El sufijo "FT_mergedmodel" sugiere un ajuste fino (fine-tuning) posterior cuya salida se ha fusionado con los pesos base, aunque no se documenta el procedimiento exacto.
 
 El modelo no cuenta con una model card sustancial: no se declaran licencia, idiomas, pipeline de uso ni datos de entrenamiento. Tampoco hay métricas publicadas ni demos asociadas. Su relevancia práctica es limitada y debe evaluarse con cautela: es un artefacto de investigación de un autor individual, con 13 descargas y ningún "like", lo que indica escasa validación por parte de la comunidad.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MobiusGaian/gpt_FT_mergedmodel | 124,4 M | no disponible | no disponible | HuggingFace (13 descargas) |
-| openai-community/gpt2-medium | 355 M | 1024 | MIT | HuggingFace, ampliamente validado |
-| openai-community/gpt2 | 124 M | 1024 | MIT | HuggingFace, ampliamente validado |
-| distilgpt2 | 82 M | 1024 | Apache 2.0 | HuggingFace |
+| MobiusGaian/gpt_FT_mergedmodel | 124,4 M | no disponible | no disponible | Hugging Face (13 descargas) |
+| openai-community/gpt2-medium | 355 M | 1024 | MIT | Hugging Face, ampliamente validado |
+| openai-community/gpt2 | 124 M | 1024 | MIT | Hugging Face, ampliamente validado |
+| distilgpt2 | 82 M | 1024 | Apache 2.0 | Hugging Face |
 
 La comparación directa con GPT-2 (124M) es la más pertinente por tamaño idéntico, pero este repositorio carece de la documentación, licencia clara y validación comunitaria de los modelos oficiales de OpenAI.
 
@@ -80,5 +80,5 @@ La comparación directa con GPT-2 (124M) es la más pertinente por tamaño idén
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MobiusGaian/gpt_FT_mergedmodel
+- Hugging Face: https://huggingface.co/MobiusGaian/gpt_FT_mergedmodel
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

@@ -69,6 +69,6 @@ No se dispone de información suficiente para comparar con otros SAEs específic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/reinworld99/sae-null-step
+- Hugging Face: https://huggingface.co/reinworld99/sae-null-step
 - Paper (título): *Retraining Is the Confound: A Null-Step Calibration for Sparse-Autoencoder Feature Drift Across Fine-Tuning Checkpoints* (en revisión doble pareble, sin enlace público)
-- Repositorio de código: no se indica en la información, pero se menciona que el repositorio incluye scripts y metadatos; probablemente esté en el mismo repositorio de HuggingFace o en un GitHub asociado (no disponible).
+- Repositorio de código: no se indica en la información, pero se menciona que el repositorio incluye scripts y metadatos; probablemente esté en el mismo repositorio de Hugging Face o en un GitHub asociado (no disponible).

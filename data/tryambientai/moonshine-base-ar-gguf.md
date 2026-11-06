@@ -93,7 +93,7 @@ La comparación con Whisper es la más directa por familia y tamaño: Whisper ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tryambientai/moonshine-base-ar-gguf
+- Modelo en Hugging Face: https://huggingface.co/tryambientai/moonshine-base-ar-gguf
 - Modelo base (UsefulSensors): https://huggingface.co/UsefulSensors/moonshine-base-ar
 - Commit upstream de referencia: https://huggingface.co/UsefulSensors/moonshine-base-ar/commit/264cc18
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

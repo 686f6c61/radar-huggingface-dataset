@@ -33,7 +33,7 @@ La innovacion tecnica principal es el empaquetado: los cuatro artefactos son byt
 - Conjuntos cerrados por pack: solo compiten las etiquetas de la allowlist de cada pack.
 - Flag `reliable` en la salida del pack `full` (CLD3) para indicar fiabilidad de la prediccion.
 - Ejecucion en Node, Bun y navegadores modernos mediante el runtime `defuss-lid`, sin servicio de inferencia ni addons nativos.
-- Carga desde assets npm empaquetados o desde descargas directas de HuggingFace (`LidModel.fromBuffer`, `loadModel`, `createCld3Pack`, `loadCld3Pack`).
+- Carga desde assets npm empaquetados o desde descargas directas de Hugging Face (`LidModel.fromBuffer`, `loadModel`, `createCld3Pack`, `loadCld3Pack`).
 - Verificacion de integridad del nucleo WASM compartido en tiempo de carga.
 - No soporta rechazo de idiomas no soportados ni se reclama precision en mezcla de idiomas o code-switching.
 - No es un modelo generativo: no hay tool calling, agentes, vision ni audio.
@@ -95,7 +95,7 @@ La ventaja diferencial de defuss-lid frente a los originales es el tamano reduci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kyr0/defuss-lid-1.0
+- Hugging Face: https://huggingface.co/kyr0/defuss-lid-1.0
 - Repositorio fuente: https://github.com/kyr0/defuss-lid
 - Paquete npm del runtime: https://www.npmjs.com/package/defuss-lid
 - Dataset FLORES: https://huggingface.co/datasets/facebook/flores

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bhushp63/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, utilizando la libreria stable-baselines3. El modelo lo publica el usuario Bhushp63 en HuggingFace y su unico artefacto es la politica entrenada para resolver la tarea de aterrizaje de una nave en un terreno bidimensional de Box2D.
+Bhushp63/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, utilizando la libreria stable-baselines3. El modelo lo publica el usuario Bhushp63 en Hugging Face y su unico artefacto es la politica entrenada para resolver la tarea de aterrizaje de una nave en un terreno bidimensional de Box2D.
 
 A diferencia de los modelos de lenguaje, no se trata de un transformer ni de un modelo generativo de texto, sino de un agente que aprende una politica de control a partir de recompensas. La model card es practicamente una plantilla sin completar: el bloque de uso contiene un "TODO: Add your code" y no se declaran hiperparametros, arquitectura de red ni proceso de entrenamiento. La unica metrica disponible es la recompensa media declarada por el autor.
 
@@ -44,7 +44,7 @@ No se dispone de informacion sobre el numero de pasos de entrenamiento, la compo
 - Benchmark de infraestructura de evaluacion: integrarlo en un bucle de evaluacion de Gymnasium para validar pipelines de simulacion de bajo coste computacional, ya que el entorno no requiere GPU.
 - Base para aprendizaje por imitacion o destilacion: emplear la politica como profesor para generar trayectorias de demostracion en proyectos de imitation learning sobre LunarLander-v3.
 - Comparativa de algoritmos de RL: usarlo como linea base PPO frente a otros algoritmos (A2C, DQN) entrenados en el mismo entorno para estudios de eficiencia muestral.
-- Pruebas de integracion del Hub: ejemplo practico para validar la descarga de artefactos stable-baselines3 desde HuggingFace en un CI de machine learning.
+- Pruebas de integracion del Hub: ejemplo practico para validar la descarga de artefactos stable-baselines3 desde Hugging Face en un CI de machine learning.
 - Entornos educativos de simulacion: demostracion de un controlador entrenado en un problema de fisica 2D sencillo y de coste minimo, apto para portatiles o entornos sin acelerador.
 
 ## Benchmarks y rendimiento
@@ -70,8 +70,8 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bhushp63/ppo-LunarLander-v3 | no disponible | no aplicable | mean_reward 234.78 +/- 26.50 (no verificado) | no disponible | HuggingFace |
-| Otros agentes PPO/A2C/DQN para LunarLander-v3 del Hub | no disponible | no aplicable | no disponible | no disponible | HuggingFace |
+| Bhushp63/ppo-LunarLander-v3 | no disponible | no aplicable | mean_reward 234.78 +/- 26.50 (no verificado) | no disponible | Hugging Face |
+| Otros agentes PPO/A2C/DQN para LunarLander-v3 del Hub | no disponible | no aplicable | no disponible | no disponible | Hugging Face |
 
 Los modelos comparables pertenecen a la misma categoria (agentes de RL entrenados sobre LunarLander-v3 y publicados con stable-baselines3), pero en la informacion disponible no se aportan metricas de esas alternativas, por lo que no es posible establecer una comparacion cuantitativa.
 
@@ -88,6 +88,6 @@ Los modelos comparables pertenecen a la misma categoria (agentes de RL entrenado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bhushp63/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/Bhushp63/ppo-LunarLander-v3
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (los resultados devueltos no guardan relacion con el artefacto).

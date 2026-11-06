@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| incidentbench-summary_target | 7,6 B (base) + LoRA r=16 | 128 000 | Clasificacion de incidentes MIT (variante summary_target) | other | HuggingFace (10 descargas) |
-| Qwen2.5-7B-Instruct | 7,6 B | 128 000 | Proposito general | Apache 2.0 (segun el modelo base) | HuggingFace |
+| incidentbench-summary_target | 7,6 B (base) + LoRA r=16 | 128 000 | Clasificacion de incidentes MIT (variante summary_target) | other | Hugging Face (10 descargas) |
+| Qwen2.5-7B-Instruct | 7,6 B | 128 000 | Proposito general | Apache 2.0 (segun el modelo base) | Hugging Face |
 | Otros brazos de IncidentBench | no disponible | no disponible | Variantes del mismo banco de pruebas | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chiffonng/incidentbench-summary_target
+- Hugging Face: https://huggingface.co/chiffonng/incidentbench-summary_target
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Informe de IncidentBench: no disponible como enlace en la informacion proporcionada
 - Repositorio del proyecto (referencias a `data_manifest.json`, `train_manifest.json`, `train/build_data.py`): no disponible como enlace

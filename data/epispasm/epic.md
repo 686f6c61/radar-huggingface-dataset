@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`epispasm/epic` es un modelo multimodal (vision-language) de aproximadamente 8,95 mil millones de parametros, publicado por el usuario epispasm en HuggingFace unicamente en formato GGUF para su uso con llama.cpp. Los nombres de los ficheros del repositorio (`qwen3.5-9b-nsfw-captioning-v5`) indican que se trata de un ajuste fino orientado a la generacion de descripciones (captioning) de contenido para adultos, derivado de un modelo base de la familia Qwen 3.5 de 9B. La model card no aporta informacion sobre el proceso de entrenamiento, el dataset utilizado ni la licencia aplicable.
+`epispasm/epic` es un modelo multimodal (vision-language) de aproximadamente 8,95 mil millones de parametros, publicado por el usuario epispasm en Hugging Face unicamente en formato GGUF para su uso con llama.cpp. Los nombres de los ficheros del repositorio (`qwen3.5-9b-nsfw-captioning-v5`) indican que se trata de un ajuste fino orientado a la generacion de descripciones (captioning) de contenido para adultos, derivado de un modelo base de la familia Qwen 3.5 de 9B. La model card no aporta informacion sobre el proceso de entrenamiento, el dataset utilizado ni la licencia aplicable.
 
 El repositorio contiene exclusivamente dos ficheros BF16: los pesos del modelo de lenguaje y el proyector multimodal (`mmproj`) necesario para procesar imagenes. No se publican variantes cuantizadas a 8, 5 o 4 bits, ni pesos en safetensors, lo que limita las opciones de despliegue a llama.cpp y a herramientas compatibles con GGUF. El modelo registra 0 descargas y 0 likes en el momento de la consulta, y tanto la licencia como los idiomas soportados figuran como no disponibles.
 
-Su relevancia practica es limitada y muy especializada: cubre el nicho de anotacion automatica y etiquetado de imagenes para adultos, un caso de uso con demanda real en pipelines de moderacion, catalogacion de medios y generacion de datasets, pero con incertidumbre legal y tecnica considerable al no declararse licencia ni procedencia de los datos de entrenamiento. Ademas, la fecha de creacion registrada en HuggingFace (2026-09-21) y la referencia a un modelo base Qwen 3.5 no permiten verificar la trazabilidad del ajuste con la informacion disponible.
+Su relevancia practica es limitada y muy especializada: cubre el nicho de anotacion automatica y etiquetado de imagenes para adultos, un caso de uso con demanda real en pipelines de moderacion, catalogacion de medios y generacion de datasets, pero con incertidumbre legal y tecnica considerable al no declararse licencia ni procedencia de los datos de entrenamiento. Ademas, la fecha de creacion registrada en Hugging Face (2026-09-21) y la referencia a un modelo base Qwen 3.5 no permiten verificar la trazabilidad del ajuste con la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -28,7 +28,7 @@ Su relevancia practica es limitada y muy especializada: cubre el nicho de anotac
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible solo permite afirmar que se trata de un modelo multimodal con arquitectura transformer: el repositorio incluye un fichero `mmproj` en BF16, que en el ecosistema llama.cpp corresponde al proyector que conecta un codificador visual con el modelo de lenguaje, y la etiqueta `vision-language-model` de HuggingFace confirma esta naturaleza. La etiqueta `qwen3_5` y el nombre del fichero apuntan a un modelo base de la familia Qwen 3.5 con aproximadamente 9B de parametros, ajustado despues para una tarea concreta de captioning. No se especifica si la arquitectura del lenguaje emplea atencion completa, atencion lineal o una mezcla, ni el tamano del codificador visual.
+La informacion disponible solo permite afirmar que se trata de un modelo multimodal con arquitectura transformer: el repositorio incluye un fichero `mmproj` en BF16, que en el ecosistema llama.cpp corresponde al proyector que conecta un codificador visual con el modelo de lenguaje, y la etiqueta `vision-language-model` de Hugging Face confirma esta naturaleza. La etiqueta `qwen3_5` y el nombre del fichero apuntan a un modelo base de la familia Qwen 3.5 con aproximadamente 9B de parametros, ajustado despues para una tarea concreta de captioning. No se especifica si la arquitectura del lenguaje emplea atencion completa, atencion lineal o una mezcla, ni el tamano del codificador visual.
 
 El proceso de conversion a GGUF se realizo con las herramientas de Unsloth, y la model card unicamente documenta los comandos de inferencia (`llama-cli` para texto y `llama-mtmd-cli` para multimodal, ambos con la opcion `--jinja` para plantillas de chat). No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de alineacion como RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. Tampoco se detalla la naturaleza ni el volumen de los datos del ajuste fino orientado a contenido NSFW.
 
@@ -37,7 +37,7 @@ El proceso de conversion a GGUF se realizo con las herramientas de Unsloth, y la
 - Generacion de texto conversacional: la etiqueta `conversational` y el uso documentado de `llama-cli --jinja` indican soporte de dialogos multi-turno con plantilla de chat Jinja.
 - Descripcion de imagenes (captioning): capacidad principal inferida del nombre del ajuste (`nsfw-captioning-v5`) y de la presencia del proyector multimodal; orientada especificamente a contenido para adultos.
 - Procesamiento de entrada visual: el comando `llama-mtmd-cli` confirma que el modelo acepta imagenes ademas de texto, aunque no se detalla el numero de imagenes por prompt ni la resolucion soportada.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse en HuggingFace Inference Endpoints, si bien no se documenta la configuracion.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse en Hugging Face Inference Endpoints, si bien no se documenta la configuracion.
 - Tool calling / function calling: no disponible; no se menciona en la model card ni en las etiquetas.
 - Comportamiento agentico y razonamiento multi-paso: no disponible; no se documenta.
 - Capacidades multilingues: no disponible; no se declaran idiomas.
@@ -96,7 +96,7 @@ Diferencias clave: los tres modelos alternativos son de proposito general y esta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/epispasm/epic
+- Modelo en Hugging Face: https://huggingface.co/epispasm/epic
 - Unsloth (herramienta de conversion a GGUF): https://github.com/unslothai/unsloth
 - llama.cpp (runtime recomendado): https://github.com/ggml-org/llama.cpp
 - Ficheros del repositorio: `qwen3.5-9b-nsfw-captioning-v5.BF16.gguf`, `qwen3.5-9b-nsfw-captioning-v5.BF16-mmproj.gguf`

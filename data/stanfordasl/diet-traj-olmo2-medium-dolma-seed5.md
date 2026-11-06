@@ -4,7 +4,7 @@
 
 `diet-traj-olmo2-medium-dolma-seed5` es un checkpoint de preentrenamiento desde cero de un modelo denso de arquitectura OLMo2 con aproximadamente 305 millones de parámetros, publicado por el grupo stanfordasl dentro del proyecto DIET de análisis de trayectorias en el espacio de pesos. No es un modelo instructivo ni un asistente conversacional: es una pieza de un conjunto de ejecuciones de entrenamiento controladas, donde únicamente varía la semilla aleatoria, y su propósito es servir como material de estudio para investigar cómo evolucionan los pesos y las representaciones a lo largo del preentrenamiento.
 
-El modelo se entrenó sobre `emozilla/dolma-v1_7-3B`, un espejo en HuggingFace del corpus Dolma v1.7 muestreado proporcionalmente entre sus componentes y consumido en streaming, sin empaquetado previo. La receta es preentrenamiento puro de modelado de lenguaje con entropía cruzada, sin destilación (`teacher_schedule=none`), optimizador AdamW con lr=3e-5, betas (0.9, 0.95), weight decay 0.1, schedule coseno y precisión bf16, con un presupuesto declarado de 2.000 millones de tokens y 30.517 pasos máximos.
+El modelo se entrenó sobre `emozilla/dolma-v1_7-3B`, un espejo en Hugging Face del corpus Dolma v1.7 muestreado proporcionalmente entre sus componentes y consumido en streaming, sin empaquetado previo. La receta es preentrenamiento puro de modelado de lenguaje con entropía cruzada, sin destilación (`teacher_schedule=none`), optimizador AdamW con lr=3e-5, betas (0.9, 0.95), weight decay 0.1, schedule coseno y precisión bf16, con un presupuesto declarado de 2.000 millones de tokens y 30.517 pasos máximos.
 
 Su relevancia es metodológica, no de producto: permite comparar trayectorias de entrenamiento entre semillas sobre una arquitectura moderna (OLMo2) y un corpus abierto, algo útil para estudiar estabilidad, dinámica de pesos y reproducibilidad en modelos pequeños. La licencia Apache 2.0 y los pesos en safetensors bf16 facilitan su reutilización en experimentos, pero conviene subrayar que no se han publicado evaluaciones de capacidades y que el modelo solo declara inglés.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| diet-traj-olmo2-medium-dolma-seed5 | ~305M | 2048 | Apache 2.0 | Modelo base de investigación (trayectorias) | HuggingFace, pesos bf16 |
-| jjalora/diet-traj-pythia-410m-* | ~410M | no disponible en la información | no disponible en la información | Colección análoga sobre Pythia | HuggingFace |
-| OLMo2 (modelos oficiales de mayor escala) | no disponible en la información | no disponible en la información | Apache 2.0 (según familia OLMo) | Modelos base e instructivos | HuggingFace |
-| Pythia-410m | ~410M | 2048 | Apache 2.0 | Suite de trayectorias de entrenamiento | HuggingFace |
+| diet-traj-olmo2-medium-dolma-seed5 | ~305M | 2048 | Apache 2.0 | Modelo base de investigación (trayectorias) | Hugging Face, pesos bf16 |
+| jjalora/diet-traj-pythia-410m-* | ~410M | no disponible en la información | no disponible en la información | Colección análoga sobre Pythia | Hugging Face |
+| OLMo2 (modelos oficiales de mayor escala) | no disponible en la información | no disponible en la información | Apache 2.0 (según familia OLMo) | Modelos base e instructivos | Hugging Face |
+| Pythia-410m | ~410M | 2048 | Apache 2.0 | Suite de trayectorias de entrenamiento | Hugging Face |
 
 La comparación relevante es con la colección Pythia y con los modelos OLMo2 oficiales: este checkpoint se distingue por combinar la arquitectura OLMo2 con el corpus Dolma y por estar diseñado explícitamente para análisis entre semillas, no por su rendimiento en tareas.
 
@@ -85,7 +85,7 @@ La comparación relevante es con la colección Pythia y con los modelos OLMo2 of
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed5
+- Modelo en Hugging Face: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed5
 - Dataset utilizado: https://huggingface.co/datasets/emozilla/dolma-v1_7-3B
 - Repositorio del proyecto DIET (referenciado en la model card): https://github.com/jjalora/diet-lm
 - Colección de trayectorias Pythia relacionada (referenciada en la model card): https://huggingface.co/jjalora/diet-traj-pythia-410m

@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Contexto | Benchmark | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Donghyun1228/pi05-libero-current-vision-relation-fixed-view-large-1000-20261013` | VLA (pi0.5/openpi), experimental | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
-| `Donghyun1228/pi05-libero-main-policy-retention-source-split74-20261013` | VLA (pi0.5/openpi), referencia de despliegue canonica equivalente | no disponible | no disponible | no disponible | HuggingFace |
-| `Donghyun1228/pi05_libero_source_free_split_vision_idm` | VLA (pi0.5/openpi), usado para inferencia | no disponible | no disponible | no disponible | HuggingFace |
+| `Donghyun1228/pi05-libero-current-vision-relation-fixed-view-large-1000-20261013` | VLA (pi0.5/openpi), experimental | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
+| `Donghyun1228/pi05-libero-main-policy-retention-source-split74-20261013` | VLA (pi0.5/openpi), referencia de despliegue canonica equivalente | no disponible | no disponible | no disponible | Hugging Face |
+| `Donghyun1228/pi05_libero_source_free_split_vision_idm` | VLA (pi0.5/openpi), usado para inferencia | no disponible | no disponible | no disponible | Hugging Face |
 
 Comparativa con alternativas externas a la familia: no disponible. No se conocen en la informacion proporcionada modelos comparables de otros autores con los que contrastar parametros, contexto o rendimiento.
 
@@ -84,7 +84,7 @@ Comparativa con alternativas externas a la familia: no disponible. No se conocen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-current-vision-relation-fixed-view-large-1000-20261013
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-current-vision-relation-fixed-view-large-1000-20261013
 - Datos de destino (LIBERO dense contact sweep): https://huggingface.co/Donghyun1228/libero-dense-contact-sweep-d2-20261002
 - Referencia de despliegue canonica equivalente: https://huggingface.co/Donghyun1228/pi05-libero-main-policy-retention-source-split74-20261013
 - Framework openpi: no disponible en la informacion proporcionada

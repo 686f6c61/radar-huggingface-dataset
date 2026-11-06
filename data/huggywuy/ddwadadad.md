@@ -2,7 +2,7 @@
 
 ## Resumen
 
-huggywuy/ddwadadad es un repositorio de modelo alojado en HuggingFace por el usuario huggywuy (perfil público "amandarose"). En el momento de la consulta, el repositorio no contiene ningún artefacto de modelo descargable ni documentación técnica: la model card se limita a una única línea de frontmatter con la licencia `llama4`, sin descripción, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluación.
+huggywuy/ddwadadad es un repositorio de modelo alojado en Hugging Face por el usuario huggywuy (perfil público "amandarose"). En el momento de la consulta, el repositorio no contiene ningún artefacto de modelo descargable ni documentación técnica: la model card se limita a una única línea de frontmatter con la licencia `llama4`, sin descripción, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluación.
 
 Los metadatos disponibles son mínimos: cero descargas, cero "likes", ausencia de pipeline declarado y ausencia de idiomas soportados. El repositorio fue creado y actualizado en la misma marca temporal (2026-10-13T01:26:25Z), lo que junto con la falta de contenido sugiere un repositorio de prueba, un marcador de posición o una publicación abandonada en el momento de su creación.
 
@@ -37,7 +37,7 @@ Datos adicionales verificables del repositorio:
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card publicada en HuggingFace no incluye ninguna descripción de la arquitectura (transformer, MoE, SSM, híbrida u otra), del número de parámetros, de la longitud de contexto soportada ni del proceso de entrenamiento (número de tokens, composición del dataset, fases de ajuste supervisado, RLHF o DPO).
+No disponible. La model card publicada en Hugging Face no incluye ninguna descripción de la arquitectura (transformer, MoE, SSM, híbrida u otra), del número de parámetros, de la longitud de contexto soportada ni del proceso de entrenamiento (número de tokens, composición del dataset, fases de ajuste supervisado, RLHF o DPO).
 
 Tampoco se ha publicado información sobre innovaciones técnicas (decodificación especulativa, atención lineal, atención con ventana deslizante, etc.) ni sobre el tokenizador o los idiomas cubiertos. El único dato técnico presente en el repositorio es la declaración de licencia `llama4`, que indica que el autor pretende acogerse a los términos de la Llama 4 Community License, pero esto no aporta información sobre la arquitectura ni sobre el origen de los pesos.
 
@@ -97,8 +97,8 @@ No disponible. No hay información suficiente para identificar modelos comparabl
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/huggywuy/ddwadadad
-- Perfil del autor en HuggingFace: https://huggingface.co/huggywuy
+- Repositorio del modelo en Hugging Face: https://huggingface.co/huggywuy/ddwadadad
+- Perfil del autor en Hugging Face: https://huggingface.co/huggywuy
 - Listado de modelos del autor: https://huggingface.co/huggywuy/models
 - Texto de la Llama 4 Community License: no disponible en los resultados de búsqueda proporcionados.
 - Paper, blog o repositorio de código asociado: no disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JoyceYama/flamingo-demo es un repositorio de HuggingFace publicado por el usuario JoyceYama que contiene una implementación funcional de la arquitectura Flamingo en configuración "tiny", orientada a pruebas de humo (smoke tests) reproducibles. El propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas, y no un checkpoint entrenado ni evaluado con benchmarks.
+JoyceYama/flamingo-demo es un repositorio de Hugging Face publicado por el usuario JoyceYama que contiene una implementación funcional de la arquitectura Flamingo en configuración "tiny", orientada a pruebas de humo (smoke tests) reproducibles. El propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas, y no un checkpoint entrenado ni evaluado con benchmarks.
 
 El repositorio declara 49.600 parámetros totales (aproximadamente 0,05 millones), con atención dispersa, fusión bilineal entre modalidades, activación mish y normalización groupnorm. La receta de experimento por defecto usa el optimizador lion con un schedule coseno, pero el autor advierte que son valores de partida del script y no evidencia de una ejecución completada.
 
@@ -20,7 +20,7 @@ Su relevancia es documental y pedagógica: sirve como punto de partida transpare
 | Idiomas soportados | no disponible (no declarados en el repositorio) |
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors (`model.safetensors`), con código PyTorch (`train.py`), `config.json` y `training_args.json` |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0,0 GB |
 
@@ -78,10 +78,10 @@ No disponible. La búsqueda web realizada no devolvió ningún resultado relevan
 - Longitud de contexto no declarada: se desconoce la ventana máxima soportada por la configuración incluida.
 - Licencia: BSD-3-Clause permite uso comercial y modificación con retención del aviso de copyright y exención de responsabilidad. El autor advierte que los términos de los datos de origen deben revisarse por separado si el repositorio se usa con datasets externos.
 - Integración: al ser una implementación personalizada, no se carga con APIs automáticas genéricas sin un adaptador explícito, lo que añade trabajo de integración antes de cualquier uso.
-- Fechas del repositorio: la información disponible registra fecha de creación y actualización en 2026-09-13, dato que conviene verificar en la página de HuggingFace antes de citarlo.
+- Fechas del repositorio: la información disponible registra fecha de creación y actualización en 2026-09-13, dato que conviene verificar en la página de Hugging Face antes de citarlo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JoyceYama/flamingo-demo
+- Hugging Face: https://huggingface.co/JoyceYama/flamingo-demo
 - Ficheros internos referenciados en la model card: `train.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Papel, blog, repositorio adicional o demo: no disponible. La búsqueda web realizada no devolvió ningún enlace relevante sobre el modelo (únicamente resultados sin relación con el tema).

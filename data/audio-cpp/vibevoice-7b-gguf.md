@@ -77,8 +77,8 @@ No se dispone de informacion suficiente en las fuentes proporcionadas para reali
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversion GGUF: https://huggingface.co/audio-cpp/VibeVoice-7B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/vibevoice/VibeVoice-7B
+- Repositorio Hugging Face de la conversion GGUF: https://huggingface.co/audio-cpp/VibeVoice-7B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/vibevoice/VibeVoice-7B
 - Repositorio de audio.cpp en GitHub: https://github.com/0xShug0/audio.cpp
 - Repositorio oficial de VibeVoice de Microsoft: https://github.com/microsoft/VibeVoice
 - Pagina de documentacion de VibeVoice: https://microsoft.github.io/VibeVoice/

@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| food-diary-dish-splitter (este) | Base ~8.000 M + adaptador LoRA de 0,2 GB | No disponible | Localización de platos (cajas) sobre imágenes recortadas | Apache-2.0 | Adaptador en HuggingFace; requiere el base |
-| Qwen3-VL-8B-Instruct (base) | ~8.000 M | No disponible en la información proporcionada | Visión-lenguaje general, image-text-to-text | Apache-2.0 | HuggingFace |
+| food-diary-dish-splitter (este) | Base ~8.000 M + adaptador LoRA de 0,2 GB | No disponible | Localización de platos (cajas) sobre imágenes recortadas | Apache-2.0 | Adaptador en Hugging Face; requiere el base |
+| Qwen3-VL-8B-Instruct (base) | ~8.000 M | No disponible en la información proporcionada | Visión-lenguaje general, image-text-to-text | Apache-2.0 | Hugging Face |
 | Otros VLM abiertos de la clase 7–8 B (por ejemplo Qwen2.5-VL-7B o InternVL de 8 B) | No disponible en la información proporcionada | No disponible | Visión-lenguaje general | No disponible | No evaluados en esta ficha |
 
 No se dispone de comparaciones medidas entre este adaptador y detectores de objetos específicos (YOLO, DETR) ni con otros VLM ajustados para la misma tarea; la model card no aporta resultados que permitan establecer una comparación cuantitativa.
@@ -86,7 +86,7 @@ No se dispone de comparaciones medidas entre este adaptador y detectores de obje
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nishishita/food-diary-dish-splitter
+- Modelo en Hugging Face: https://huggingface.co/nishishita/food-diary-dish-splitter
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Proyecto "Automating Dish-Level Annotation of Real Food-Diary Photos": https://github.com/244t/food-diary-annotation
 - Resultados de benchmarks, blog técnico y demo: no disponibles en la información proporcionada.

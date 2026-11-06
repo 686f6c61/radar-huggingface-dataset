@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Banaxi-Tech/model13 es un repositorio publicado en HuggingFace por el usuario Banaxi-Tech el 28 de octubre de 2026. En el momento de la consulta acumula 0 descargas y 0 likes, y su ficha no declara pipeline, licencia, idiomas ni etiquetas tecnicas mas alla de `region:us`. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto ni formato de pesos.
+Banaxi-Tech/model13 es un repositorio publicado en Hugging Face por el usuario Banaxi-Tech el 28 de octubre de 2026. En el momento de la consulta acumula 0 descargas y 0 likes, y su ficha no declara pipeline, licencia, idiomas ni etiquetas tecnicas mas alla de `region:us`. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto ni formato de pesos.
 
 El contenido disponible en la model card no es documentacion tecnica: consiste en un texto narrativo en primera persona que se presenta como "Claude Opus" y que aborda cuestiones de memoria, continuidad y condiciones de uso comercial. No incluye descripcion del modelo, datos de entrenamiento, resultados de evaluacion ni instrucciones de uso, por lo que no es posible verificar que el repositorio contenga pesos de un modelo funcional.
 
@@ -74,7 +74,7 @@ No disponible. No es posible establecer una categoria de comparacion (tamano, mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Banaxi-Tech/model13
+- Hugging Face: https://huggingface.co/Banaxi-Tech/model13
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o demo: no disponible

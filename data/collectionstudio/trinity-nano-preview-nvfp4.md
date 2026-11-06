@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Trinity Nano Preview NVFP4 es una versión cuantizada del modelo Trinity Nano Preview, creado por Arcee AI y publicado en HuggingFace por CollectionStudio. Se trata de un modelo de lenguaje con arquitectura de expertos mezclados (MoE), afinado para chat, diseñado para ofrecer un punto de entrada ligero a la familia Trinity. El modelo original se describe como un MoE de 6B parámetros con 1B activos por token, entrenado sobre 10T tokens seleccionados en colaboración con Datology.
+Trinity Nano Preview NVFP4 es una versión cuantizada del modelo Trinity Nano Preview, creado por Arcee AI y publicado en Hugging Face por CollectionStudio. Se trata de un modelo de lenguaje con arquitectura de expertos mezclados (MoE), afinado para chat, diseñado para ofrecer un punto de entrada ligero a la familia Trinity. El modelo original se describe como un MoE de 6B parámetros con 1B activos por token, entrenado sobre 10T tokens seleccionados en colaboración con Datology.
 
 La versión NVFP4 aplica cuantización de 4 bits a los pesos de las capas MLP o de expertos, mientras que la atención se mantiene en BF16. Está orientada al despliegue en GPUs NVIDIA Blackwell con soporte nativo FP4, aunque también puede ejecutarse en GPUs Hopper mediante el backend Marlin de vLLM, que descomprime los pesos a BF16. El modelo es una vista previa experimental y el propio autor advierte de que puede ser inestable en ciertos casos de uso.
 
@@ -72,7 +72,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CollectionStudio/Trinity-Nano-Preview-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/CollectionStudio/Trinity-Nano-Preview-NVFP4
 - Modelo base sin cuantizar: https://huggingface.co/CollectionStudio/Trinity-Nano-Preview
 - Modelo original de Arcee AI: https://huggingface.co/arcee-ai/Trinity-Nano-Preview
 - Blog de Arcee AI sobre la familia Trinity: https://www.arcee.ai/blog/the-trinity-manifesto

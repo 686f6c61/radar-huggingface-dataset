@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ketiholo/demo4_chunk_size50_noside` es una política de robótica entrenada con ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice fragmentos de acciones en lugar de pasos individuales. El modelo lo publica el usuario ketiholo en HuggingFace Hub y se ha generado con LeRobot, la librería de HuggingFace para aprendizaje por imitación en robótica. No es un modelo de lenguaje: es un checkpoint de control motor que traduce observaciones (típicamente imágenes de cámara y estado del robot) en comandos de acción para un brazo robótico.
+`ketiholo/demo4_chunk_size50_noside` es una política de robótica entrenada con ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice fragmentos de acciones en lugar de pasos individuales. El modelo lo publica el usuario ketiholo en Hugging Face Hub y se ha generado con LeRobot, la librería de Hugging Face para aprendizaje por imitación en robótica. No es un modelo de lenguaje: es un checkpoint de control motor que traduce observaciones (típicamente imágenes de cámara y estado del robot) en comandos de acción para un brazo robótico.
 
 El checkpoint tiene 51.619.463 parámetros (unos 51,6 millones) y un tamaño de repositorio de 0,2 GB en formato safetensors, lo que lo sitúa en el rango de políticas ligeras que pueden ejecutarse en tiempo real sobre hardware modesto. El nombre sugiere un entrenamiento con `chunk_size=50` y sin componente "side" (probablemente sin cámara lateral), sobre el dataset `ketiholo/demo4`. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ketiholo/demo4_chunk_size50_noside | 51,6 M | no aplica | ACT para manipulación | Apache 2.0 | HuggingFace (18 descargas) |
-| Políticas ACT de referencia en LeRobot | no disponible | no aplica | Manipulación por imitación | Apache 2.0 (habitual) | HuggingFace Hub |
-| Políticas Diffusion Policy | no disponible | no aplica | Manipulación por imitación | variable | HuggingFace Hub |
+| ketiholo/demo4_chunk_size50_noside | 51,6 M | no aplica | ACT para manipulación | Apache 2.0 | Hugging Face (18 descargas) |
+| Políticas ACT de referencia en LeRobot | no disponible | no aplica | Manipulación por imitación | Apache 2.0 (habitual) | Hugging Face Hub |
+| Políticas Diffusion Policy | no disponible | no aplica | Manipulación por imitación | variable | Hugging Face Hub |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- [HuggingFace: ketiholo/demo4_chunk_size50_noside](https://huggingface.co/ketiholo/demo4_chunk_size50_noside)
+- [Hugging Face: ketiholo/demo4_chunk_size50_noside](https://huggingface.co/ketiholo/demo4_chunk_size50_noside)
 - [Paper ACT (arXiv:2304.13705)](https://huggingface.co/papers/2304.13705)
 - [LeRobot en GitHub](https://github.com/huggingface/lerobot)
 - [Documentación de LeRobot](https://huggingface.co/docs/lerobot/index)

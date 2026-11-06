@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tofu-llama2-7b-forget10-ihl_reset_head-epoch05` es un checkpoint de investigación publicado por el usuario g-assismoraes en HuggingFace. Se trata de un ajuste fino de Llama 2 de 7 mil millones de parámetros derivado de `locuslab/tofu_ft_llama2-7b`, el modelo de referencia del benchmark TOFU (Task of Fictitious Unlearning) empleado para estudiar técnicas de *machine unlearning* (olvido selectivo de información en modelos de lenguaje).
+El modelo `tofu-llama2-7b-forget10-ihl_reset_head-epoch05` es un checkpoint de investigación publicado por el usuario g-assismoraes en Hugging Face. Se trata de un ajuste fino de Llama 2 de 7 mil millones de parámetros derivado de `locuslab/tofu_ft_llama2-7b`, el modelo de referencia del benchmark TOFU (Task of Fictitious Unlearning) empleado para estudiar técnicas de *machine unlearning* (olvido selectivo de información en modelos de lenguaje).
 
 La propuesta técnica del checkpoint es un experimento de desaprendizaje sobre el subconjunto `forget10` de TOFU: se reinicializan los embeddings de entrada y la cabeza del modelo de lenguaje (`LM head`) a partir de `NousResearch/Llama-2-7b-chat-hf`, mientras que el resto de pesos del transformer se conservan del modelo base ajustado. Sobre esa inicialización se aplica una pérdida combinada de *token IHL* (probablemente *Information Hiding Loss* o una variante de pérdida de olvido definida por el autor) sobre el conjunto a olvidar, más un término de entropía cruzada (CE) con peso 1.0 sobre el conjunto a retener. El checkpoint corresponde a la época 5 de un entrenamiento de 20.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tofu-llama2-7b-forget10-ihl_reset_head-epoch05 | 6.738.415.616 | no disponible | llama2 | HuggingFace (0 descargas) |
-| locuslab/tofu_ft_llama2-7b | ~6.7B | no disponible | llama2 | HuggingFace (modelo base) |
-| NousResearch/Llama-2-7b-chat-hf | ~6.7B | 4096 tokens | llama2 | HuggingFace |
-| Llama 2 7B (Meta) | 6.738.415.616 | 4096 tokens | llama2 | HuggingFace / Meta |
+| tofu-llama2-7b-forget10-ihl_reset_head-epoch05 | 6.738.415.616 | no disponible | llama2 | Hugging Face (0 descargas) |
+| locuslab/tofu_ft_llama2-7b | ~6.7B | no disponible | llama2 | Hugging Face (modelo base) |
+| NousResearch/Llama-2-7b-chat-hf | ~6.7B | 4096 tokens | llama2 | Hugging Face |
+| Llama 2 7B (Meta) | 6.738.415.616 | 4096 tokens | llama2 | Hugging Face / Meta |
 
 La comparativa se limita a los modelos directamente relacionados en la información disponible; no se dispone de datos de rendimiento comparado.
 
@@ -88,7 +88,7 @@ La comparativa se limita a los modelos directamente relacionados en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_head-epoch05
+- Hugging Face: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_head-epoch05
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicialización de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Referencia del benchmark TOFU: no disponible en la información proporcionada.

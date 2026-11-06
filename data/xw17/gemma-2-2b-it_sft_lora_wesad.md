@@ -2,7 +2,7 @@
 
 ## Resumen
 
-xw17/gemma-2-2b-it_SFT_lora_wesad es un adaptador de ajuste fino con LoRA sobre el modelo instructivo google/gemma-2-2b-it, publicado por el usuario xw17 en HuggingFace. El nombre del repositorio indica dos cosas: que se ha aplicado un ajuste supervisado (SFT) mediante LoRA y que el corpus de entrenamiento está relacionado con WESAD, un conjunto de datos multimodal de detección de estrés y afecto con señales fisiológicas de wearables. El repositorio ocupa 0,1 GB y contiene pesos en formato safetensors, un tamaño coherente con adaptadores LoRA y no con un modelo completo de 2,6 mil millones de parámetros.
+xw17/gemma-2-2b-it_SFT_lora_wesad es un adaptador de ajuste fino con LoRA sobre el modelo instructivo google/gemma-2-2b-it, publicado por el usuario xw17 en Hugging Face. El nombre del repositorio indica dos cosas: que se ha aplicado un ajuste supervisado (SFT) mediante LoRA y que el corpus de entrenamiento está relacionado con WESAD, un conjunto de datos multimodal de detección de estrés y afecto con señales fisiológicas de wearables. El repositorio ocupa 0,1 GB y contiene pesos en formato safetensors, un tamaño coherente con adaptadores LoRA y no con un modelo completo de 2,6 mil millones de parámetros.
 
 La relevancia de esta publicación es limitada pero ilustrativa: muestra un patrón cada vez más común de reutilizar un modelo de lenguaje pequeño y abierto para tareas de clasificación o interpretación de datos de sensores, en lugar de entrenar arquitecturas específicas desde cero. Gemma 2 2B es un transformer decoder-only de aproximadamente 2,6 mil millones de parámetros, con 8192 tokens de contexto, entrenado y destilado por Google a partir de modelos mayores de la misma familia, y con pesos abiertos bajo los términos de uso de Gemma.
 
@@ -30,7 +30,7 @@ El modelo base Gemma 2 2B es un transformer decoder-only con atencion de ventana
 
 Sobre esa base, el autor ha aplicado un ajuste supervisado con LoRA, segun indica el identificador del repositorio. LoRA congela los pesos originales e introduce matrices de bajo rango en determinadas proyecciones, lo que reduce drasticamente el numero de parametros entrenables y explica el tamano de 0,1 GB del repositorio. El corpus declarado implicitamente es WESAD (Wearable Stress and Affect Detection), un conjunto de datos con 15 sujetos equipados con dispositivos en pecho y muneca que registran electrocardiograma, actividad electrodermica, electromiografia, respiracion, temperatura cutanea y acelerometro, etiquetado con estados de linea base, estres, diversion y meditacion.
 
-No hay ninguna informacion en la model card sobre el numero de tokens de entrenamiento, la composicion exacta del dataset, la formulacion de la tarea (clasificacion, generacion aumentada o serializacion de senales en texto), los hiperparametros de LoRA ni si se aplico RLHF o DPO adicional. La model card es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]".
+No hay ninguna informacion en la model card sobre el numero de tokens de entrenamiento, la composicion exacta del dataset, la formulacion de la tarea (clasificacion, generacion aumentada o serializacion de senales en texto), los hiperparametros de LoRA ni si se aplico RLHF o DPO adicional. La model card es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]".
 
 ## Capacidades
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento en benchmarks |
 |---|---|---|---|---|---|
-| xw17/gemma-2-2b-it_SFT_lora_wesad | ~2,6 mil millones (base) | 8192 tokens (base) | No disponible; hereda los terminos de Gemma | Adaptador LoRA en HuggingFace | No disponible |
-| google/gemma-2-2b-it | ~2,6 mil millones | 8192 tokens | Terminos de uso de Gemma | Pesos completos en HuggingFace | Documentado por Google en la ficha oficial del modelo |
-| Qwen2.5-1.5B-Instruct | ~1,5 mil millones | 32 768 tokens nativos, ampliable con YaRN | Apache 2.0 | Pesos completos en HuggingFace | Documentado por el autor |
-| Llama-3.2-3B-Instruct | ~3,2 mil millones | 128 000 tokens | Licencia comunitaria de Llama 3.2 | Pesos completos en HuggingFace | Documentado por Meta |
+| xw17/gemma-2-2b-it_SFT_lora_wesad | ~2,6 mil millones (base) | 8192 tokens (base) | No disponible; hereda los terminos de Gemma | Adaptador LoRA en Hugging Face | No disponible |
+| google/gemma-2-2b-it | ~2,6 mil millones | 8192 tokens | Terminos de uso de Gemma | Pesos completos en Hugging Face | Documentado por Google en la ficha oficial del modelo |
+| Qwen2.5-1.5B-Instruct | ~1,5 mil millones | 32 768 tokens nativos, ampliable con YaRN | Apache 2.0 | Pesos completos en Hugging Face | Documentado por el autor |
+| Llama-3.2-3B-Instruct | ~3,2 mil millones | 128 000 tokens | Licencia comunitaria de Llama 3.2 | Pesos completos en Hugging Face | Documentado por Meta |
 
 Las cifras de parametros y contexto de los modelos comparados proceden de su documentacion publica y deben verificarse en las fichas oficiales. La comparativa relevante para este repositorio no es de rendimiento general, sino de licencia y trazabilidad: Qwen2.5 se distribuye bajo Apache 2.0, lo que facilita el uso comercial, mientras que cualquier derivado de Gemma queda sujeto a los terminos de uso de Google. No existen datos que permitan comparar la calidad del adaptador con alternativas especializadas en deteccion de estres.
 
@@ -95,7 +95,7 @@ Las cifras de parametros y contexto de los modelos comparados proceden de su doc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/gemma-2-2b-it_SFT_lora_wesad
+- Repositorio en Hugging Face: https://huggingface.co/xw17/gemma-2-2b-it_SFT_lora_wesad
 - Modelo base Gemma 2 2B instruct: https://huggingface.co/google/gemma-2-2b-it
 - Documentacion tecnica de Gemma 2: https://ai.google.dev/gemma/docs
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms

@@ -18,7 +18,7 @@ Es relevante ahora porque demuestra una vía práctica de inferencia MoE desacop
 | Longitud de contexto | 4.096 tokens (`-c 4096` documentado en llama.cpp) |
 | Tipos de cuantizacion | GGUF asimétrica SAMI-AsymQ: Q8_0 / Q5_K / Q4_K / Q3_K combinados por capas; fichero único de 8,5 GB |
 | Idiomas soportados | Rumano (ro), inglés (en), chino (zh) |
-| Licencia | deepseek-license (etiquetada como `other` en HuggingFace) |
+| Licencia | deepseek-license (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | GGUF para llama.cpp; no se publican safetensors en este repositorio |
 | Tamano de fichero | 8,5 GB (checkpoint único) |
 | VRAM activa en configuracion recomendada | ~2,1 GB (con `-ngl 99 -cmoe`) |
@@ -98,16 +98,16 @@ Los datos de los modelos alternativos provienen de sus fichas públicas y deben 
 - Sesgos no evaluados: la model card no incluye análisis de sesgo, toxicidad ni evaluación de seguridad.
 - Licencia `deepseek-license`: permite uso comercial con condiciones (atribución visible a DeepSeek, restricciones de uso y cláusula que limita emplear las salidas para entrenar otros modelos de lenguaje). Conviene revisar el texto completo antes de un despliegue comercial.
 - Solo se distribuye GGUF: no hay safetensors, por lo que no es directamente apto para fine-tuning, para vLLM/TGI ni para pipelines que requieran pesos completos.
-- El badge automático de compatibilidad de hardware de HuggingFace marca el checkpoint como incompatible con GPUs de 6 GB porque asume que los 8,5 GB deben residir en VRAM; el autor lo desmiente, pero ilustra que la herramienta de validación no modela el offloading `-cmoe`.
+- El badge automático de compatibilidad de hardware de Hugging Face marca el checkpoint como incompatible con GPUs de 6 GB porque asume que los 8,5 GB deben residir en VRAM; el autor lo desmiente, pero ilustra que la herramienta de validación no modela el offloading `-cmoe`.
 - Dependencia de la RAM del host: el throughput cae de forma notable con DDR4 lenta, pocos núcleos o menos de 16 GB de RAM (riesgo de swapping).
 - Fecha de creación en los metadatos (18-10-2026) y ausencia de historial de versiones: no hay garantía de mantenimiento ni de corrección de errores.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MIThridate/DeepSeek-MoE-16B-Chat-SAMI-AsymQ
+- Repositorio Hugging Face: https://huggingface.co/MIThridate/DeepSeek-MoE-16B-Chat-SAMI-AsymQ
 - Modelo base: https://huggingface.co/deepseek-ai/deepseek-moe-16b-chat
 - Licencia del modelo base (LICENSE-MODEL): https://github.com/deepseek-ai/DeepSeek-MoE/blob/main/LICENSE-MODEL
 - Repositorio de DeepSeek-MoE: https://github.com/deepseek-ai/DeepSeek-MoE
 - Paper de DeepSeekMoE (arXiv:2401.06066): https://arxiv.org/abs/2401.06066
 - llama.cpp (motor de inferencia requerido, build b11300+): https://github.com/ggml-org/llama.cpp
-- Nota: la búsqueda web realizada no devolvió resultados técnicos relevantes sobre este checkpoint; los enlaces anteriores proceden de los metadatos de HuggingFace y de la model card.
+- Nota: la búsqueda web realizada no devolvió resultados técnicos relevantes sobre este checkpoint; los enlaces anteriores proceden de los metadatos de Hugging Face y de la model card.

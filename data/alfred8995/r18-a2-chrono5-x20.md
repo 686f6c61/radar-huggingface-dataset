@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-chrono5-x20` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). El repositorio contiene pesos en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2,02 mil millones), lo que lo sitúa en la categoría de modelos pequeños-medianos aptos para inferencia en hardware de consumo. La etiqueta `sn38-nanochrono` sugiere una arquitectura o linaje de entrenamiento propio del autor, no documentado públicamente.
+`alfred8995/r18-a2-chrono5-x20` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). El repositorio contiene pesos en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2,02 mil millones), lo que lo sitúa en la categoría de modelos pequeños-medianos aptos para inferencia en hardware de consumo. La etiqueta `sn38-nanochrono` sugiere una arquitectura o linaje de entrenamiento propio del autor, no documentado públicamente.
 
-El modelo no incluye información sobre pipeline, idiomas soportados, longitud de contexto ni datos de entrenamiento en la ficha de HuggingFace. Tampoco se han publicado resultados de benchmarks, papers ni documentación técnica asociada. Esto lo convierte en un artefacto de investigación sin validación externa conocida, y su evaluación debe abordarse con cautela.
+El modelo no incluye información sobre pipeline, idiomas soportados, longitud de contexto ni datos de entrenamiento en la ficha de Hugging Face. Tampoco se han publicado resultados de benchmarks, papers ni documentación técnica asociada. Esto lo convierte en un artefacto de investigación sin validación externa conocida, y su evaluación debe abordarse con cautela.
 
-Su relevancia actual es limitada dado que no hay evidencia pública de rendimiento, pero el tamaño (~2B parámetros) y la licencia permisiva lo hacen potencialmente interesante para experimentación local y fine-tuning, siempre que el solicitante acepte las condiciones de acceso en HuggingFace.
+Su relevancia actual es limitada dado que no hay evidencia pública de rendimiento, pero el tamaño (~2B parámetros) y la licencia permisiva lo hacen potencialmente interesante para experimentación local y fine-tuning, siempre que el solicitante acepte las condiciones de acceso en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ No hay datos sobre número de tokens de entrenamiento, composición del dataset,
 
 ## Capacidades
 
-- No se han documentado capacidades específicas en la ficha de HuggingFace.
+- No se han documentado capacidades específicas en la ficha de Hugging Face.
 - No hay evidencia pública de soporte de tool calling o function calling.
 - No hay evidencia de capacidades de agente o razonamiento multi-paso.
 - No hay información sobre capacidades multilingües.
@@ -81,12 +81,12 @@ La comparativa se ofrece como referencia de categoría; no hay datos que permita
 - Riesgo elevado de alucinación no caracterizada: sin benchmarks ni evaluaciones, no se puede estimar su fiabilidad.
 - Idiomas soportados desconocidos: no hay garantía de buen rendimiento en castellano ni en ningún otro idioma.
 - Longitud de contexto desconocida: no apto para tareas que requieran ventanas largas sin validación previa.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y el uso automatizado.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y el uso automatizado.
 - Licencia Apache 2.0 permite uso comercial, pero la falta de validación técnica hace desaconsejable su uso en producción sin evaluación exhaustiva.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin comunidad ni soporte.
 - Fecha de creación futura (2026-10-29) en los metadatos: posible inconsistencia en la información del repositorio que conviene verificar.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-chrono5-x20
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-chrono5-x20
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

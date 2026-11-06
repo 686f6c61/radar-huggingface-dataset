@@ -91,13 +91,13 @@ Frente a la ruta "hazlo tú mismo" con un GGUF y llama.cpp, la diferencia no est
 - Licencia mixta con obligaciones acumulativas: Apache 2.0, MIT, CC BY-SA 4.0 (atribución y compartir igual para el contenido de Wikipedia) y CreativeML Open RAIL++-M para SDXS-512, que añade restricciones de uso. El enlace `NOTICE` del repositorio es de lectura obligatoria antes de cualquier uso comercial.
 - Riesgo de alucinación: es un modelo de 4B cuantizado a Q4 sobre un corpus limitado; la cita de fuentes no garantiza que la respuesta sea fiel al documento citado, por lo que hace falta verificación humana en contextos críticos.
 - Latencia alta: unos 30 s hasta la primera palabra en un dispositivo de 8 GB; no es apto para interacción conversacional fluida en ese hardware.
-- Artefacto en estado release candidate (v2.0.0-rc1) y con 0 descargas registradas en HuggingFace en el momento de la consulta; madurez y mantenimiento no verificados.
+- Artefacto en estado release candidate (v2.0.0-rc1) y con 0 descargas registradas en Hugging Face en el momento de la consulta; madurez y mantenimiento no verificados.
 - La ventana de contexto efectiva depende de la aplicación y no se documenta; asumir el contexto nativo del modelo base sería una suposición no respaldada.
 - Los resultados de la búsqueda web asociados a esta consulta tratan sobre el jabalí (wild boar) y no guardan relación con el proyecto; se descartan como fuente.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BOAR-App/boar-offline
+- Repositorio en Hugging Face: https://huggingface.co/BOAR-App/boar-offline
 - Repositorio de la aplicación: https://github.com/rferrari/boar-app
 - Release v2.0.0-rc1: https://github.com/rferrari/boar-app/releases/tag/v2.0.0-rc1
 - Aviso de licencias agregadas (NOTICE): https://github.com/rferrari/boar-app/blob/main/android-native/NOTICE

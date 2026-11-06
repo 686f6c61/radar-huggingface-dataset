@@ -25,7 +25,7 @@ Su relevancia es de nicho: encaja en arquitecturas de tipo «system one», donde
 
 El modelo es un clasificador no autorregresivo. La pila se compone de un encoder basado en ModernBERT (`jhu-clsp/mmBERT-base`, con representaciones de 768 dimensiones) y dos capas adicionales que forman la cabeza de decisión de laya. En lugar de generar texto token a token, procesa un estado y una lista de preguntas tipadas —`choice` (elección), `score` (puntuación) y `noul` (abstención)— y emite una probabilidad por cada opción en una sola pasada hacia delante. Este diseño es coherente con la etiqueta `system-one`: primar la rapidez de evaluación sobre la generación abierta.
 
-El ajuste fino se realizó con RLCD sobre el checkpoint base `convaiinnovations/laya`. La conversión a GGUF se hizo con el conversor oficial de modelos de decisión de ggml-org (PR #29818 de llama.cpp), partiendo del checkpoint en formato HuggingFace `Snugasabug/laya-finetuned-rlcd`. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni el detalle del proceso de RLCD. La model card advierte explícitamente que las cifras de precisión del ajuste fino son de acuerdo con el profesor (teacher-agreement, propias de RLCD), evaluadas sobre un subconjunto de 4K ejemplos, y que no están medidas contra verdad humana de referencia.
+El ajuste fino se realizó con RLCD sobre el checkpoint base `convaiinnovations/laya`. La conversión a GGUF se hizo con el conversor oficial de modelos de decisión de ggml-org (PR #29818 de llama.cpp), partiendo del checkpoint en formato Hugging Face `Snugasabug/laya-finetuned-rlcd`. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni el detalle del proceso de RLCD. La model card advierte explícitamente que las cifras de precisión del ajuste fino son de acuerdo con el profesor (teacher-agreement, propias de RLCD), evaluadas sobre un subconjunto de 4K ejemplos, y que no están medidas contra verdad humana de referencia.
 
 ## Capacidades
 
@@ -87,8 +87,8 @@ Comparativas con alternativas externas: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/Snugasabug/laya-finetuned-rlcd-GGUF
-- Checkpoint origen en HuggingFace: https://huggingface.co/Snugasabug/laya-finetuned-rlcd
+- Repositorio Hugging Face (GGUF): https://huggingface.co/Snugasabug/laya-finetuned-rlcd-GGUF
+- Checkpoint origen en Hugging Face: https://huggingface.co/Snugasabug/laya-finetuned-rlcd
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Conversor de modelos de decisión de llama.cpp (PR #29818): https://github.com/ggml-org/llama.cpp/pull/29818
 - Encoder mmBERT-base: https://huggingface.co/jhu-clsp/mmBERT-base

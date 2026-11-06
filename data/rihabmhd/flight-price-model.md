@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `RihabMhd/flight-price-model` aloja un artefacto de aprendizaje automatico serializado en formato joblib, con un tamano aproximado de 0,2 GB. A diferencia de los modelos de lenguaje publicados habitualmente en HuggingFace, este repositorio no contiene pesos de un transformer ni tarjetas de modelo con arquitectura de red neuronal profunda: el tag `joblib` indica que se trata de un modelo clasico de machine learning (probablemente scikit-learn, XGBoost o LightGBM) orientado a la prediccion de precios de billetes de avion, una tarea de regresion sobre datos tabulares.
+El repositorio `RihabMhd/flight-price-model` aloja un artefacto de aprendizaje automatico serializado en formato joblib, con un tamano aproximado de 0,2 GB. A diferencia de los modelos de lenguaje publicados habitualmente en Hugging Face, este repositorio no contiene pesos de un transformer ni tarjetas de modelo con arquitectura de red neuronal profunda: el tag `joblib` indica que se trata de un modelo clasico de machine learning (probablemente scikit-learn, XGBoost o LightGBM) orientado a la prediccion de precios de billetes de avion, una tarea de regresion sobre datos tabulares.
 
 El autor es el usuario RihabMhd y el repositorio acumula 0 descargas y 1 like en el momento de la consulta, con fechas de creacion y actualizacion del 25 de septiembre de 2026. No se ha publicado informacion adicional sobre el pipeline, la licencia, los idiomas soportados ni la naturaleza exacta del estimador contenido en el fichero joblib.
 
@@ -70,7 +70,7 @@ No existen datos de MMLU, HumanEval, GSM8K ni metricas de regresion (RMSE, MAE, 
 
 | Modelo | Tipo | Tamano | Licencia | Disponibilidad | Datos publicos |
 |---|---|---|---|---|---|
-| RihabMhd/flight-price-model | joblib (presumiblemente regresion tabular) | 0,2 GB | no disponible | HuggingFace | No |
+| RihabMhd/flight-price-model | joblib (presumiblemente regresion tabular) | 0,2 GB | no disponible | Hugging Face | No |
 | kruti32/Flight-Price-Prediction | Proyecto de regresion (Linear Regression, Random Forest, XGBoost) | no disponible | no disponible | GitHub | Codigo y notebook publicos |
 | Modelos generativos de prediccion tarifaria | LLM con tool calling | Variable | Variable | APIs comerciales | Si |
 
@@ -90,7 +90,7 @@ La comparacion es limitada: el proyecto de GitHub referenciado en la busqueda we
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RihabMhd/flight-price-model
+- Repositorio Hugging Face: https://huggingface.co/RihabMhd/flight-price-model
 - Proyecto de referencia en GitHub sobre prediccion de precios de vuelos: https://github.com/kruti32/Flight-Price-Prediction
 - Comparativa de precios de modelos de IA (contexto general, no relacionado directamente): https://diyai.io/ai-tools/ai-model-comparison/
 - Tabla de precios de modelos de IA (contexto general, no relacionado directamente): https://aipricetable.com/

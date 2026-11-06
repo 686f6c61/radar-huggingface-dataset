@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FlashMap-Qwen3.8-27B-FP8 | 770M | No disponible | Drafter de decodificación especulativa para Qwen3.8-27B-FP8 | Apache-2.0 (pesos), MIT (código) | HuggingFace; plugins vLLM y SGLang |
+| FlashMap-Qwen3.8-27B-FP8 | 770M | No disponible | Drafter de decodificación especulativa para Qwen3.8-27B-FP8 | Apache-2.0 (pesos), MIT (código) | Hugging Face; plugins vLLM y SGLang |
 | Drafters de difusión discreta (categoría) | No disponible | No disponible | Predicción independiente de tokens del bloque, sin dependencias entre ellos | No disponible | No disponible |
-| Qwen/Qwen3.8-27B-FP8 (objetivo) | No disponible en la información | No disponible | Modelo generativo completo con atención lineal | Apache-2.0 (según la model card) | HuggingFace |
+| Qwen/Qwen3.8-27B-FP8 (objetivo) | No disponible en la información | No disponible | Modelo generativo completo con atención lineal | Apache-2.0 (según la model card) | Hugging Face |
 
 No se dispone de datos de benchmarks ni de otros drafters concretos comparables en la información proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de otros drafters concretos comparables 
 
 ## Enlaces
 
-- [HuggingFace: j-shen/FlashMap-Qwen3.8-27B-FP8](https://huggingface.co/j-shen/FlashMap-Qwen3.8-27B-FP8)
+- [Hugging Face: j-shen/FlashMap-Qwen3.8-27B-FP8](https://huggingface.co/j-shen/FlashMap-Qwen3.8-27B-FP8)
 - [Página del proyecto](https://jshen.net/flashmap)
 - [Código en GitHub](https://github.com/al-jshen/flashmap)
 - [Paper (arXiv:2610.24365)](https://arxiv.org/abs/2610.24365)

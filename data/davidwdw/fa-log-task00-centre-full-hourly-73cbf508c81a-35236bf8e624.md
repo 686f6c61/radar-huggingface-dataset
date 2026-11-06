@@ -80,7 +80,7 @@ No disponible. No se conocen ni la categoria, ni el tamano, ni la tarea del arte
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-73cbf508c81a-35236bf8e624
+- Hugging Face: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-73cbf508c81a-35236bf8e624
 - Receta canonica citada en la model card: evaluations/2026-09-23_task00_centre_full_recovery (ruta interna, no se ha encontrado URL publica)
 - Fichero de verificacion citado: SHA256SUMS (incluido en el paquete, sin URL publica)
 - No se han encontrado papers, blogs, repositorios ni demos relacionados con este modelo en la busqueda web realizada.

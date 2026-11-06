@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kayceesamuel/Qwen3.5-9B-NF4DQ` es una cuantización NF4 con double quantization (NF4DQ) del modelo base Qwen3.5-9B, desarrollado por el usuario de HuggingFace kayceesamuel. Qwen3.5-9B es un modelo denso multimodal de 9 mil millones de parámetros perteneciente a la familia Qwen3.5 de Alibaba, diseñado para razonamiento eficiente, generación de código y comprensión visual en una arquitectura compacta. Esta versión cuantizada reduce significativamente los requisitos de memoria y cómputo, lo que permite su despliegue en hardware de consumo y entornos con recursos limitados, manteniendo un rendimiento cercano al modelo original.
+El modelo `kayceesamuel/Qwen3.5-9B-NF4DQ` es una cuantización NF4 con double quantization (NF4DQ) del modelo base Qwen3.5-9B, desarrollado por el usuario de Hugging Face kayceesamuel. Qwen3.5-9B es un modelo denso multimodal de 9 mil millones de parámetros perteneciente a la familia Qwen3.5 de Alibaba, diseñado para razonamiento eficiente, generación de código y comprensión visual en una arquitectura compacta. Esta versión cuantizada reduce significativamente los requisitos de memoria y cómputo, lo que permite su despliegue en hardware de consumo y entornos con recursos limitados, manteniendo un rendimiento cercano al modelo original.
 
 La relevancia de esta ficha radica en que ofrece una alternativa accesible para desarrolladores que necesitan un modelo multimodal de alto rendimiento sin requerir GPUs de gama alta. La licencia Apache 2.0 facilita su uso comercial y su integración en productos. Aunque la información específica de esta cuantización es escasa, los datos del modelo base indican que soporta contextos largos de hasta 262K-1M tokens, lo que lo hace adecuado para tareas de razonamiento complejo y agentes.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks específicos para la versión cuant
 - VRAM estimada para inferencia: con cuantización NF4DQ, un modelo de 9B parámetros ocupa aproximadamente 4,5-5 GB en memoria, más overhead de activaciones. Se estima que se puede ejecutar con 6-8 GB de VRAM para contextos moderados.
 - GPU recomendadas: tarjetas de consumo como NVIDIA RTX 3060 (12 GB), RTX 4060 (8 GB) o RTX 4090 (24 GB) son suficientes. También puede ejecutarse en GPUs de datacenter como A10 o A100, aunque no son necesarias.
 - Compatibilidad con hardware de consumo: sí, cabe en GPUs de gama media y baja, así como en Apple Silicon con suficiente memoria unificada.
-- Opciones de despliegue: compatible con llama.cpp, Ollama, vLLM, TGI y otros frameworks que soporten cuantización NF4. También puede usarse con transformers de HuggingFace mediante la carga de pesos cuantizados.
+- Opciones de despliegue: compatible con llama.cpp, Ollama, vLLM, TGI y otros frameworks que soporten cuantización NF4. También puede usarse con transformers de Hugging Face mediante la carga de pesos cuantizados.
 - Latencia y throughput: no se dispone de datos específicos para esta cuantización. En general, un modelo 9B en NF4 puede generar entre 20-40 tokens por segundo en una RTX 4090, dependiendo del contexto y la implementación.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La versión NF4DQ se posiciona como una alternativa eficiente en memoria al mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kayceesamuel/Qwen3.5-9B-NF4DQ
+- Hugging Face: https://huggingface.co/kayceesamuel/Qwen3.5-9B-NF4DQ
 - Página de Qwen3.5:9b en Ollama: https://ollama.com/library/qwen3.5:9b
 - Catálogo de modelos de Microsoft Foundry: https://ai.azure.com/catalog/models/qwen--qwen3.5-9b
 - Ficha en NanoGPT: https://nano-gpt.com/models/text/qwen/qwen3.5-9b

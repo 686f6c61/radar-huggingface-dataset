@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`abhinav655/qwen25-preference-expert` es un adaptador LoRA entrenado con DPO (Direct Preference Optimization) sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct. Lo publica el usuario abhinav655 en HuggingFace y no es un modelo completo, sino un conjunto de pesos de adaptador (PEFT) que debe cargarse junto al modelo base para funcionar. Su propósito declarado es el de un "expert" en preferencias: es decir, un ajuste fino orientado a alinear las respuestas del modelo base con preferencias humanas o sintéticas mediante pares elegido/rechazado, en lugar de con un reward model explícito.
+`abhinav655/qwen25-preference-expert` es un adaptador LoRA entrenado con DPO (Direct Preference Optimization) sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct. Lo publica el usuario abhinav655 en Hugging Face y no es un modelo completo, sino un conjunto de pesos de adaptador (PEFT) que debe cargarse junto al modelo base para funcionar. Su propósito declarado es el de un "expert" en preferencias: es decir, un ajuste fino orientado a alinear las respuestas del modelo base con preferencias humanas o sintéticas mediante pares elegido/rechazado, en lugar de con un reward model explícito.
 
 El interés técnico del artefacto es acotado pero claro: sirve como ejemplo reproducible de un pipeline DPO completo montado con TRL, PEFT y Transformers, sobre un modelo pequeno (0,5B de parámetros) que se puede entrenar y servir en hardware de consumo. El repositorio ocupa 0,1 GB, lo que es coherente con un adaptador LoRA de rango bajo sobre un modelo de 24 capas.
 
@@ -26,7 +26,7 @@ Ahora bien, la model card es extremadamente escasa: no documenta el dataset de p
 | Descargas / likes | 0 / 0 |
 | Idioma de la model card | Inglés |
 | Versiones de framework declaradas | PEFT 0.20.0, TRL 1.14.1, Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5, Tokenizers 0.23.1 |
-| Fecha de creación | 2026-10-06 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-10-06 (según metadatos de Hugging Face) |
 | Pipeline | text-generation |
 | Etiquetas | peft, safetensors, base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct, dpo, lora, transformers, trl, text-generation, conversational, arxiv:2305.18290, region:us |
 
@@ -99,7 +99,7 @@ No hay datos de rendimiento comparativo entre este adaptador y cualquiera de las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhinav655/qwen25-preference-expert
+- Modelo en Hugging Face: https://huggingface.co/abhinav655/qwen25-preference-expert
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Paper de DPO (arXiv): https://huggingface.co/papers/2305.18290
 - Actas NeurIPS 2023 del paper de DPO: http://papers.nips.cc/paper_files/paper/2023/hash/a85b405ed65c6477a4fe8302b5e06ce7-Abstract-Conference.html

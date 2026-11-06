@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma 4 E2B es el modelo mas pequeno de la familia Gemma 4 de Google DeepMind, una generacion de modelos abiertos multimodales publicada bajo licencia Apache 2.0. La ficha que nos ocupa, apurbomannan/gemma-4-E2B-it, es un ajuste (fine-tune) derivado de google/gemma-4-E2B, alojado en HuggingFace y distribuido en formato safetensors con la libreria transformers. El repositorio ocupa 10,3 GB y declara 5.123.178.051 parametros reales segun los pesos, lo que coincide con la cifra oficial de "5,1B con embeddings" del modelo base.
+Gemma 4 E2B es el modelo mas pequeno de la familia Gemma 4 de Google DeepMind, una generacion de modelos abiertos multimodales publicada bajo licencia Apache 2.0. La ficha que nos ocupa, apurbomannan/gemma-4-E2B-it, es un ajuste (fine-tune) derivado de google/gemma-4-E2B, alojado en Hugging Face y distribuido en formato safetensors con la libreria transformers. El repositorio ocupa 10,3 GB y declara 5.123.178.051 parametros reales segun los pesos, lo que coincide con la cifra oficial de "5,1B con embeddings" del modelo base.
 
 La familia Gemma 4 se presenta en cinco tamanos (E2B, E4B, 12B, 26B A4B y 31B) con arquitecturas densas y de mezcla de expertos (MoE). El sufijo "E" significa "effective" (efectivo), de modo que E2B declara 2,3B de parametros efectivos y 5,1B contando las tablas de embeddings. Incorpora entrada de texto, imagen y audio, con salida de texto, una ventana de contexto de 128K tokens y soporte de mas de 140 idiomas.
 
@@ -91,9 +91,9 @@ No se dispone de datos de rendimiento comparativo (benchmarks) para establecer d
 
 ## Enlaces
 
-- [Modelo en HuggingFace: apurbomannan/gemma-4-E2B-it](https://huggingface.co/apurbomannan/gemma-4-E2B-it)
+- [Modelo en Hugging Face: apurbomannan/gemma-4-E2B-it](https://huggingface.co/apurbomannan/gemma-4-E2B-it)
 - [Modelo base: google/gemma-4-E2B](https://huggingface.co/google/gemma-4-E2B)
-- [Coleccion Gemma 4 en HuggingFace](https://huggingface.co/collections/google/gemma-4)
+- [Coleccion Gemma 4 en Hugging Face](https://huggingface.co/collections/google/gemma-4)
 - [Repositorio GitHub de Google Gemma](https://github.com/google-gemma)
 - [Blog de lanzamiento de Gemma 4](https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/)
 - [Documentacion de Gemma](https://ai.google.dev/gemma/docs/core)

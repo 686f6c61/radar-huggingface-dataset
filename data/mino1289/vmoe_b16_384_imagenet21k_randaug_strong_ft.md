@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vmoe_b16_384_imagenet21k_randaug_strong_ft es un clasificador de imágenes basado en V-MoE (Vision Mixture of Experts), la variante dispersa del Vision Transformer propuesta por Google Research en el artículo "Scaling Vision with Sparse Mixture of Experts". El checkpoint original, entrenado por Google, se preentrenó en ImageNet-21k con augmentation RandAugment fuerte y después se ajustó fino sobre ILSVRC2012 (ImageNet-1k); este repositorio de HuggingFace contiene esos pesos convertidos al formato de timm por el usuario Mino1289, lo que permite cargarlos con una sola línea de PyTorch.
+vmoe_b16_384_imagenet21k_randaug_strong_ft es un clasificador de imágenes basado en V-MoE (Vision Mixture of Experts), la variante dispersa del Vision Transformer propuesta por Google Research en el artículo "Scaling Vision with Sparse Mixture of Experts". El checkpoint original, entrenado por Google, se preentrenó en ImageNet-21k con augmentation RandAugment fuerte y después se ajustó fino sobre ILSVRC2012 (ImageNet-1k); este repositorio de Hugging Face contiene esos pesos convertidos al formato de timm por el usuario Mino1289, lo que permite cargarlos con una sola línea de PyTorch.
 
 El modelo opera sobre imágenes de 384x384 píxeles con parches de 16x16, cuenta con 285.238.504 parámetros totales (según los tensores safetensors del repositorio, que ocupa 1,1 GB) y expone una cabeza de clasificación sobre las 1000 clases de ImageNet-1k. Su interés es doble: por un lado es un backbone de clasificación de alta resolución listo para transfer learning; por otro, es una de las pocas implementaciones públicas de un transformer de visión con capas de mezcla dispersa de expertos reutilizables desde timm.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Arquitectura | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vmoe_b16_384_imagenet21k_randaug_strong_ft | 285.238.504 (total) | ViT-B/16 con MoE disperso, preentrenado en ImageNet-21k y ajustado en ILSVRC2012 | 384x384 | Apache-2.0 | timm / HuggingFace, 0 descargas, 0 likes |
+| vmoe_b16_384_imagenet21k_randaug_strong_ft | 285.238.504 (total) | ViT-B/16 con MoE disperso, preentrenado en ImageNet-21k y ajustado en ILSVRC2012 | 384x384 | Apache-2.0 | timm / Hugging Face, 0 descargas, 0 likes |
 | vit_base_patch16_384.augreg_in21k_ft_in1k (timm) | ~86 M (aproximado) | ViT-B/16 denso, mismo regimen de preentrenamiento y ajuste | 384x384 | Apache-2.0 | timm, ampliamente utilizado |
 | vit_large_patch16_384.augreg_in21k_ft_in1k (timm) | ~307 M (aproximado) | ViT-L/16 denso | 384x384 | Apache-2.0 | timm, ampliamente utilizado |
 | swin_base_patch4_window12_384 (timm) | ~88 M (aproximado) | Swin Transformer jerarquico | 384x384 | Apache-2.0 | timm |
@@ -92,14 +92,14 @@ La comparación se limita a arquitectura, tamaño, resolución y licencia: no ha
 - No hay capacidades multilingües, de texto, agentes ni tool calling; no es un modelo multimodal y no se puede usar como base para tareas de visión-lenguaje sin añadir componentes externos.
 - Licencia Apache-2.0: permite uso comercial y modificación, con obligación de conservar el aviso de licencia y el fichero de atribución. Hay que verificar igualmente las condiciones de los pesos originales de Google Research y de los datasets de entrenamiento (ImageNet-21k e ILSVRC2012 tienen sus propios términos de uso, que afectan al uso comercial derivado).
 - Caveat de producción: la model card no documenta precisión, configuración de expertos, número de parámetros activos ni pruebas de robustez. Todo despliegue debería validar el modelo sobre un conjunto propio antes de asumir su comportamiento, y compararlo con un ViT-B/16 denso para justificar la sobrecarga de gestión que implica un MoE.
-- Adopción nula: 0 descargas y 0 likes; es una conversión de un tercero, no un checkpoint oficial mantenido por Google o HuggingFace, por lo que no hay garantías de soporte ni de actualizaciones.
+- Adopción nula: 0 descargas y 0 likes; es una conversión de un tercero, no un checkpoint oficial mantenido por Google o Hugging Face, por lo que no hay garantías de soporte ni de actualizaciones.
 - Riesgo de dependencia del enrutamiento: en modelos MoE, el comportamiento de inferencia puede variar según el lote y el backend usado, y la conversión de pesos JAX a PyTorch puede introducir pequeñas discrepancias numéricas que conviene verificar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mino1289/vmoe_b16_384_imagenet21k_randaug_strong_ft
+- Modelo en Hugging Face: https://huggingface.co/Mino1289/vmoe_b16_384_imagenet21k_randaug_strong_ft
 - Repositorio oficial de V-MoE (Google Research): https://github.com/google-research/vmoe
 - Paper "Scaling Vision with Sparse Mixture of Experts" (Riquelme et al., 2021): https://arxiv.org/abs/2102.11972
 - Repositorio de timm (pytorch-image-models): https://github.com/huggingface/pytorch-image-models
 - Origen de los pesos originales citado en la model card: gs://vmoe_checkpoints/vmoe_b16_imagenet21k_randaug_strong_ft_ilsvrc2012 (bucket de Google Cloud Storage, no es una URL HTTP navegable)
-- Documentacion de timm en HuggingFace: https://huggingface.co/docs/timm
+- Documentacion de timm en Hugging Face: https://huggingface.co/docs/timm

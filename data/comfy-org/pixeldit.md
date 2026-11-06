@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio de HuggingFace de Comfy-Org: https://huggingface.co/Comfy-Org/PixelDiT
+- Repositorio de Hugging Face de Comfy-Org: https://huggingface.co/Comfy-Org/PixelDiT
 - Modelo original de NVIDIA (PixelDiT-1300M-1024px): https://huggingface.co/nvidia/PixelDiT-1300M-1024px
 - Modelo original de NVIDIA (PiD): https://huggingface.co/nvidia/PiD
 - ComfyUI (framework de despliegue): https://github.com/comfyanonymous/ComfyUI

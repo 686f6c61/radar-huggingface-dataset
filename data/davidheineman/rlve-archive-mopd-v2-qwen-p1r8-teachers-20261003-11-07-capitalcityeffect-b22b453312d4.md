@@ -4,7 +4,7 @@
 
 El repositorio `davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-07-capitalcityeffect-b22b453312d4` es un checkpoint archivado, no un modelo publicado para uso general. La propia model card lo describe como «Archived checkpoint: 07-CapitalCityEffect», procedente de la ruta de scratch `runs/mopd-v2-qwen-p1r8-teachers-20261003-115039/resumable/07-CapitalCityEffect`, con paso final 149 y el identificador de ejecución de Weights & Biases `75ab0f6e`. El repositorio existe para preservar el estado final de un entrenamiento ya completado, no para distribuir un modelo listo para producción.
 
-El autor es el usuario de HuggingFace `davidheineman` y los pesos están etiquetados con la arquitectura `qwen2`, lo que sitúa el modelo en la familia de transformadores decoder-only de Qwen. El recuento real de parámetros en safetensors es de 1.543.714.304 (aproximadamente 1,54 mil millones), un tamaño que coincide con el de los modelos Qwen2 de 1,5B.
+El autor es el usuario de Hugging Face `davidheineman` y los pesos están etiquetados con la arquitectura `qwen2`, lo que sitúa el modelo en la familia de transformadores decoder-only de Qwen. El recuento real de parámetros en safetensors es de 1.543.714.304 (aproximadamente 1,54 mil millones), un tamaño que coincide con el de los modelos Qwen2 de 1,5B.
 
 Su relevancia es exclusivamente de investigación y trazabilidad: permite reproducir o auditar una ejecución concreta de un pipeline denominado `mopd-v2` con «teachers», así como comparar este checkpoint con otros de la misma serie. No hay pipeline declarado, ni licencia, ni idiomas, ni resultados de evaluación publicados, y el repositorio acumula cero descargas y cero «likes», por lo que no debe tratarse como una dependencia estable para producción.
 
@@ -99,7 +99,7 @@ Diferencias clave: este repositorio no declara licencia ni contexto, no ofrece v
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-07-capitalcityeffect-b22b453312d4
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-07-capitalcityeffect-b22b453312d4
 - Ejecución de Weights & Biases: identificador `75ab0f6e` (no se proporciona URL completa en la model card)
 - Ruta de scratch original: `runs/mopd-v2-qwen-p1r8-teachers-20261003-115039/resumable/07-CapitalCityEffect`
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada

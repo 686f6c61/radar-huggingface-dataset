@@ -6,7 +6,7 @@ KYS-1.5B-Rewritten-v2 es una coleccion de checkpoints de modelos Llama de 1.504B
 
 Se trata de un modelo base (pretrained, sin alineamiento documentado) con arquitectura Llama 2: 28 capas, hidden size 2048, FFN de 5632 con SwiGLU, 16 cabezas de atencion, RoPE theta 10^4, RMSNorm, vocabulario de 32.000 entradas (tokenizador de Llama 2) y embeddings atados. Los pesos se publican en bf16 y en formato Nanotron, y la licencia es Apache 2.0.
 
-El repositorio tiene un tamano de 343 GB porque incluye la matriz completa de 6 configuraciones de mezcla (`quality_base`, `quality_first`, `diversity_oriented`, `disagreement_aware`, `wrap_inspired`, `rewire_inspired`), 3 semillas (42, 43, 44) y 3 epocas (ep1, ep2, ep3), cada una con export a HuggingFace y checkpoint Nanotron nativo. El autor advierte explicitamente de que estos checkpoints v2 **no** son los que respaldan las tablas del paper, que se publican aparte como `blab-jhu/KYS-1.5B-*`.
+El repositorio tiene un tamano de 343 GB porque incluye la matriz completa de 6 configuraciones de mezcla (`quality_base`, `quality_first`, `diversity_oriented`, `disagreement_aware`, `wrap_inspired`, `rewire_inspired`), 3 semillas (42, 43, 44) y 3 epocas (ep1, ep2, ep3), cada una con export a Hugging Face y checkpoint Nanotron nativo. El autor advierte explicitamente de que estos checkpoints v2 **no** son los que respaldan las tablas del paper, que se publican aparte como `blab-jhu/KYS-1.5B-*`.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El repositorio tiene un tamano de 343 GB porque incluye la matriz completa de 6 
 | Tipos de cuantizacion | No disponible; los pesos se distribuyen en bf16 (safetensors) y en formato Nanotron. No se documentan variantes GGUF, AWQ, GPTQ ni bitsandbytes |
 | Idiomas soportados | No disponible (tokenizador de Llama 2 con vocabulario de 32.000 entradas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors en bf16 para el export de HuggingFace (`config.json`, `generation_config.json`, `model.safetensors`, `tokenizer.json`, `tokenizer_config.json`); checkpoint Nanotron nativo (`model/`, `optimizer/`, `lr_scheduler/`, `random/`, `config.yaml`, `model_config.json`, `checkpoint_metadata.json`) |
+| Formato de pesos | safetensors en bf16 para el export de Hugging Face (`config.json`, `generation_config.json`, `model.safetensors`, `tokenizer.json`, `tokenizer_config.json`); checkpoint Nanotron nativo (`model/`, `optimizer/`, `lr_scheduler/`, `random/`, `config.yaml`, `model_config.json`, `checkpoint_metadata.json`) |
 | Autor | wytro |
 | Pipeline declarado | No disponible |
 | Tamano del repositorio | 343,0 GB |
@@ -37,7 +37,7 @@ En cuanto al entrenamiento, la model card indica que los modelos de 1.5B del bra
 - Generacion de texto autoregresiva como modelo base: al no estar alineado, su uso natural es la continuacion de texto y la experimentacion, no el dialogo instructivo.
 - Evaluacion en tareas de conocimiento y razonamiento de opcion multiple: la model card publica puntuaciones 0-shot en ARC-e, HellaSwag, PIQA, SIQA, OBQA, CSQA y MMLU.
 - Reproducibilidad de pipelines de evaluacion: el checkpoint `seed42/diversity_oriented/ep3` esta pensado para que terceros verifiquen sus resultados con `kys-eval` mediante el comando `python -m kys_eval.reference_check`.
-- Compatibilidad con el ecosistema HuggingFace: el export `hf/` usa `LlamaForCausalLM` con pesos `safetensors` en bf16.
+- Compatibilidad con el ecosistema Hugging Face: el export `hf/` usa `LlamaForCausalLM` con pesos `safetensors` en bf16.
 - Reanudacion de entrenamiento: los checkpoints Nanotron incluyen estado de optimizador, planificador de learning rate y estado aleatorio, lo que permite continuar el entrenamiento tal como se interrumpio.
 - Soporte de tool calling / function calling: no disponible; no se documenta.
 - Soporte de agentes y razonamiento multi-paso: no disponible; no se documenta.
@@ -88,8 +88,8 @@ En la informacion proporcionada no se incluyen modelos comparables ni sus metric
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmark comparable |
 |---|---|---|---|---|---|
-| KYS-1.5B-Rewritten-v2 (este repo) | 1,504B | No disponible | Apache 2.0 | HuggingFace, repositorio de 343 GB con matriz completa de semillas, ajustes y epocas | ARC-e 51,52; HellaSwag 49,82; PIQA 72,03; SIQA 39,10; OBQA 35,20; CSQA 31,45; Mean6 46,52; MMLU 30,97 |
-| blab-jhu/KYS-1.5B-* (checkpoints de la epoca del paper) | No disponible en la informacion (se describe como la misma familia de 1.5B) | No disponible | No disponible | HuggingFace | No disponible; el autor indica diferencias de hasta ~1 punto de exactitud por celda respecto a los v2 |
+| KYS-1.5B-Rewritten-v2 (este repo) | 1,504B | No disponible | Apache 2.0 | Hugging Face, repositorio de 343 GB con matriz completa de semillas, ajustes y epocas | ARC-e 51,52; HellaSwag 49,82; PIQA 72,03; SIQA 39,10; OBQA 35,20; CSQA 31,45; Mean6 46,52; MMLU 30,97 |
+| blab-jhu/KYS-1.5B-* (checkpoints de la epoca del paper) | No disponible en la informacion (se describe como la misma familia de 1.5B) | No disponible | No disponible | Hugging Face | No disponible; el autor indica diferencias de hasta ~1 punto de exactitud por celda respecto a los v2 |
 | Otras alternativas de ~1-2B parametros | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -101,13 +101,13 @@ En la informacion proporcionada no se incluyen modelos comparables ni sus metric
 - Longitud de contexto desconocida: la model card no especifica la ventana de contexto entrenada, lo que impide garantizar el comportamiento en secuencias largas.
 - Idiomas no especificados: no se declara cobertura multilingue; el tokenizador es el de Llama 2, de 32.000 entradas, orientado a ingles en su origen.
 - Sin cuantizaciones publicadas: la ausencia de ficheros GGUF, AWQ o GPTQ limita el despliegue en hardware sin soporte para bf16 y obliga a generar conversiones propias.
-- Repositorio de 343 GB: la descarga completa de todas las combinaciones es costosa en almacenamiento y ancho de banda; conviene descargar solo el subdirectorio necesario mediante las utilidades de descarga selectiva de HuggingFace.
+- Repositorio de 343 GB: la descarga completa de todas las combinaciones es costosa en almacenamiento y ancho de banda; conviene descargar solo el subdirectorio necesario mediante las utilidades de descarga selectiva de Hugging Face.
 - Adopcion nula verificada: 0 descargas y 0 likes en el momento de la consulta, lo que implica una validacion externa practicamente inexistente al margen del propio autor.
 - Licencia: Apache 2.0 permite uso comercial y modificacion, pero al tratarse de un modelo base sin ajuste, cualquier aplicacion en produccion requerira trabajo adicional de alineamiento, evaluacion de sesgos y control de calidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wytro/KYS-1.5B-Rewritten-v2
+- Repositorio Hugging Face: https://huggingface.co/wytro/KYS-1.5B-Rewritten-v2
 - Herramienta de evaluacion kys-eval: https://github.com/imHuicongZhang/kys-eval
 - Organizacion con los checkpoints de la epoca del paper (`blab-jhu/KYS-1.5B-*`): https://huggingface.co/blab-jhu
 - Busqueda web: no se han encontrado resultados relevantes sobre este modelo; las consultas devolvieron unicamente articulos periodisticos sin relacion con el contenido tecnico de la ficha.

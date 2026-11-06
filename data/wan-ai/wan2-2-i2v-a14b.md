@@ -73,7 +73,7 @@ No se dispone de información comparativa en la documentación proporcionada. No
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
+- Hugging Face: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
 - Repositorio GitHub: https://github.com/Wan-Video/Wan2.2
 - Paper técnico (arXiv): https://arxiv.org/abs/2503.20314
 - Blog de Wan: https://wan.video/welcome

@@ -57,7 +57,7 @@ Existe otro repositorio con propósito similar: `anshusaurav/tds-ga8-carbon-mode
 - El repositorio no incluye el código de entrenamiento ni los pesos, por lo que no es reproducible más allá del cálculo de emisiones.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/harshit4/tds-ga8-green-ai-audit
+- Hugging Face: https://huggingface.co/harshit4/tds-ga8-green-ai-audit
 - Repositorio similar: https://huggingface.co/anshusaurav/tds-ga8-carbon-model
 - Documentación del Green AI Model: https://green-ai-model.github.io/docs/
 - Introducción del Green AI Model: https://green-ai-model.github.io/docs/1_introduction/

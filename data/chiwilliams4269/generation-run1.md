@@ -2,7 +2,7 @@
 
 ## Resumen
 
-generation-run1 es un prototipo de investigación publicado por el usuario chiwilliams4269 en HuggingFace bajo el identificador `chiwilliams4269/generation-run1`. Se presenta como una implementación de arquitectura "Dino" orientada a tareas de generación, con una configuración de escala "giant" documentada en su model card. El repositorio tiene un tamaño de 0.0 GB y un total de 16.576 parámetros registrados en el checkpoint de safetensors, lo que indica que se trata de un artefacto de inicialización y no de un modelo entrenado a escala real.
+generation-run1 es un prototipo de investigación publicado por el usuario chiwilliams4269 en Hugging Face bajo el identificador `chiwilliams4269/generation-run1`. Se presenta como una implementación de arquitectura "Dino" orientada a tareas de generación, con una configuración de escala "giant" documentada en su model card. El repositorio tiene un tamaño de 0.0 GB y un total de 16.576 parámetros registrados en el checkpoint de safetensors, lo que indica que se trata de un artefacto de inicialización y no de un modelo entrenado a escala real.
 
 El modelo se distribuye como un punto de partida experimental: la propia model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint entrenado con benchmarks. No se declaran métricas de rendimiento, ni idiomas soportados, ni pipeline de inferencia. La licencia es BSD-3-Clause, permisiva para uso comercial con atribución.
 
@@ -74,5 +74,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chiwilliams4269/generation-run1
+- Hugging Face: https://huggingface.co/chiwilliams4269/generation-run1
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

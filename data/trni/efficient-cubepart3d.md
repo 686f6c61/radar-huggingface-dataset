@@ -100,9 +100,9 @@ Metricas de eficiencia (medidas en una NVIDIA L40S de 44 GiB utilizables, PyTorc
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TrNi/efficient-cubepart3d | Cuantizacion INT4 HQQ de CubePart (text-to-3D con partes) | 2145,6 M lineales en el transformer de difusion | No aplica | OpenRAIL | HuggingFace, 0 descargas |
-| Roblox/cubepart | Modelo base BF16, generacion 3D con partes | No disponible (transformer de difusion de 8,582 GB en BF16) | No aplica | OpenRAIL (segun el modelo base) | HuggingFace |
-| TrNi/efficient-cube3d | Cuantizacion INT4 HQQ de Cube3D (text-to-3D) | No disponible | No aplica | No disponible en la informacion | HuggingFace |
+| TrNi/efficient-cubepart3d | Cuantizacion INT4 HQQ de CubePart (text-to-3D con partes) | 2145,6 M lineales en el transformer de difusion | No aplica | OpenRAIL | Hugging Face, 0 descargas |
+| Roblox/cubepart | Modelo base BF16, generacion 3D con partes | No disponible (transformer de difusion de 8,582 GB en BF16) | No aplica | OpenRAIL (segun el modelo base) | Hugging Face |
+| TrNi/efficient-cube3d | Cuantizacion INT4 HQQ de Cube3D (text-to-3D) | No disponible | No aplica | No disponible en la informacion | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento frente a alternativas de generacion 3D de otros autores en la informacion proporcionada. La comparacion directa disponible es contra CubePart en BF16 y contra la version INT4 de Cube3D del mismo autor.
 
@@ -119,7 +119,7 @@ No se dispone de datos comparativos de rendimiento frente a alternativas de gene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TrNi/efficient-cubepart3d
+- Modelo en Hugging Face: https://huggingface.co/TrNi/efficient-cubepart3d
 - Modelo base CubePart (Roblox): https://huggingface.co/Roblox/cubepart
 - Paper CubePart (arXiv 2605.28763): https://arxiv.org/abs/2605.28763
 - Companion Cube3D INT4 (mismo autor): https://huggingface.co/TrNi/efficient-cube3d

@@ -87,7 +87,7 @@ La velocidad se midió sobre los 200 clips (38 minutos de audio) en un Apple M5 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KlangAI/pianissimo-da-coreml
+- Modelo en Hugging Face: https://huggingface.co/KlangAI/pianissimo-da-coreml
 - Modelo original: https://huggingface.co/KlangAI/pianissimo-da
 - FluidAudio (repositorio): https://github.com/FluidInference/FluidAudio
 - Parakeet v3 CoreML (FluidInference): https://huggingface.co/FluidInference/parakeet-tdt-0.6b-v3-coreml

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-PSSA (plastic state space architecture) es un modelo de secuencia recurrente desarrollado por el usuario sparticle62 y publicado como repositorio de investigacion en HuggingFace. Se trata de una arquitectura de espacio de estados (state space model, SSM) implementada desde cero en Rust, sin PyTorch ni ningun framework de autograd: el forward pass, el backward pass y el optimizador estan escritos a mano, y cada ruta vectorizada o de GPU se verifica contra una implementacion escalar de referencia en CPU (diferencia maxima de gradiente de 2,98e-8). El modelo prescinde por completo de atencion y usa un escaneo afín de espacio de estados como mezclador de secuencia.
+PSSA (plastic state space architecture) es un modelo de secuencia recurrente desarrollado por el usuario sparticle62 y publicado como repositorio de investigacion en Hugging Face. Se trata de una arquitectura de espacio de estados (state space model, SSM) implementada desde cero en Rust, sin PyTorch ni ningun framework de autograd: el forward pass, el backward pass y el optimizador estan escritos a mano, y cada ruta vectorizada o de GPU se verifica contra una implementacion escalar de referencia en CPU (diferencia maxima de gradiente de 2,98e-8). El modelo prescinde por completo de atencion y usa un escaneo afín de espacio de estados como mezclador de secuencia.
 
 El autor lo entrena contra un transformer de referencia con el mismo numero de parametros, el mismo corpus (WikiText-103 limpio), el mismo presupuesto de tokens y el mismo calendario. En una porcion retenida de 198.939 tokens no vistos, PSSA obtiene una entropia cruzada de 3,9971 (perplejidad 54,44, precision de siguiente token del 24,08%) frente a 4,4285 del transformer (perplejidad 83,81, 18,02%). Ademas, genera 200 tokens en CPU en 226 ms frente a 2735 ms del transformer, unas 12 veces mas rapido.
 
-El interes actual del proyecto es metodologico: demuestra que un SSM recurrente sin atencion, implementado sin framework de autograd y con un gemelo de referencia para validacion numerica, puede superar a un transformer de igual tamano en modelado de lenguaje y ser mucho mas rapido en inferencia en CPU. El proyecto se declara codigo de investigacion en desarrollo activo y los pesos aun no estan publicados en el repositorio de HuggingFace.
+El interes actual del proyecto es metodologico: demuestra que un SSM recurrente sin atencion, implementado sin framework de autograd y con un gemelo de referencia para validacion numerica, puede superar a un transformer de igual tamano en modelado de lenguaje y ser mucho mas rapido en inferencia en CPU. El proyecto se declara codigo de investigacion en desarrollo activo y los pesos aun no estan publicados en el repositorio de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El interes actual del proyecto es metodologico: demuestra que un SSM recurrente 
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no declarados; el unico corpus de entrenamiento documentado (WikiText-103) es en ingles |
 | Licencia | apache-2.0 |
-| Formato de pesos | no disponible; los pesos no estan publicados en el repositorio de HuggingFace |
+| Formato de pesos | no disponible; los pesos no estan publicados en el repositorio de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -87,7 +87,7 @@ No se dispone de datos comparables de otros SSM publicos (por ejemplo, familias 
 
 ## Limitaciones y advertencias
 
-- Pesos no publicados: la model card indica explicitamente que los pesos aun no estan en el repositorio de HuggingFace, de modo que el modelo no es usable para inferencia sin entrenarlo desde el codigo del repositorio de GitHub.
+- Pesos no publicados: la model card indica explicitamente que los pesos aun no estan en el repositorio de Hugging Face, de modo que el modelo no es usable para inferencia sin entrenarlo desde el codigo del repositorio de GitHub.
 - Proyecto en desarrollo activo: el propio autor lo describe como codigo de investigacion, no como un artefacto estable para produccion.
 - Evaluacion limitada: los unicos resultados publicados corresponden a WikiText-103 limpio, con una porcion retenida de 198.939 tokens. No hay evaluacion en tareas de razonamiento, codigo, matematicas, instrucciones ni dialogo.
 - Idioma: el unico corpus documentado es en ingles; no hay evidencia de capacidades multilingues.
@@ -100,6 +100,6 @@ No se dispone de datos comparables de otros SSM publicos (por ejemplo, familias 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sparticle62/pssa
+- Modelo en Hugging Face: https://huggingface.co/sparticle62/pssa
 - Repositorio de codigo, cadena de entrenamiento y scripts de reproduccion: https://github.com/Sparticle62ops/pssa
 - No se han encontrado otros enlaces relevantes (papers, blogs o demos) en la busqueda web proporcionada.

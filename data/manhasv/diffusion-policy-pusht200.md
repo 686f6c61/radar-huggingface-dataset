@@ -78,7 +78,7 @@ No se han publicado comparaciones cuantitativas con modelos externos en la infor
 
 | Modelo | Parámetros | Contexto | Rendimiento en Push-T | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `diffusion-policy-pusht200` (`demos200`) | no disponible | no aplica | 0,88 ± 0,32; 84% de éxito | MIT | HuggingFace |
+| `diffusion-policy-pusht200` (`demos200`) | no disponible | no aplica | 0,88 ± 0,32; 84% de éxito | MIT | Hugging Face |
 | `demos150` | no disponible | no aplica | 0,84 ± 0,34; 74% de éxito | MIT | Mismo repositorio |
 | `demos100` | no disponible | no aplica | 0,73 ± 0,42; 66% de éxito | MIT | Mismo repositorio |
 | `demos50` | no disponible | no aplica | 0,57 ± 0,45; 44% de éxito | MIT | Mismo repositorio |
@@ -102,7 +102,7 @@ La comparación cuantitativa con alternativas externas no está disponible. Los 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manhasv/diffusion-policy-pusht200
+- Hugging Face: https://huggingface.co/manhasv/diffusion-policy-pusht200
 - Código, configuraciones y fork de evaluación: https://github.com/manhasv/diffusion_policy
 - Repositorio upstream de Diffusion Policy: https://github.com/real-stanford/diffusion_policy
 - Paper de Diffusion Policy: https://arxiv.org/abs/2303.04137

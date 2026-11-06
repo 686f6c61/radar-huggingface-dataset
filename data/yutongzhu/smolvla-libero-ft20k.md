@@ -25,7 +25,7 @@ La arquitectura subyacente es SmolVLA, un VLA compacto de la familia LeRobot que
 | Modelo base | `lerobot/smolvla_base` |
 | Librería / pipeline | `lerobot` (LeRobot 0.6.1) / `robotics` |
 | Dataset de entrenamiento | `lerobot/libero`, cuatro subconjuntos (spatial, object, goal, libero_10), 1.693 demostraciones |
-| Descargas / likes en HuggingFace | 0 / 0 (a fecha de la información) |
+| Descargas / likes en Hugging Face | 0 / 0 (a fecha de la información) |
 
 ## Arquitectura y entrenamiento
 
@@ -105,9 +105,9 @@ Análisis de fallos (100 episodios, anotación manual):
 
 | Modelo | Parámetros | Contexto | LIBERO-Spatial (este protocolo) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yutongzhu/smolvla-libero-ft20k` (este) | 450 M | No disponible | 78 % (FP32, n=10) / 81 % (BF16 compilado) | Apache 2.0 | HuggingFace, 0 descargas |
-| `HuggingFaceVLA/smolvla_libero` (oficial) | ~450 M (misma familia) | No disponible | 69 % (FP32, n=1) | No indicada en la información disponible | HuggingFace |
-| `lerobot/smolvla_base` (base sin ajustar) | 450.046.176 | No disponible | No disponible en esta información | No indicada en la información disponible | HuggingFace |
+| `yutongzhu/smolvla-libero-ft20k` (este) | 450 M | No disponible | 78 % (FP32, n=10) / 81 % (BF16 compilado) | Apache 2.0 | Hugging Face, 0 descargas |
+| `HuggingFaceVLA/smolvla_libero` (oficial) | ~450 M (misma familia) | No disponible | 69 % (FP32, n=1) | No indicada en la información disponible | Hugging Face |
+| `lerobot/smolvla_base` (base sin ajustar) | 450.046.176 | No disponible | No disponible en esta información | No indicada en la información disponible | Hugging Face |
 | Otros VLA de referencia (OpenVLA, π0) | No disponible en esta información | No disponible | No disponible en esta información | No disponible en esta información | — |
 
 La comparación relevante y con datos es únicamente contra el checkpoint oficial de LIBERO y contra el modelo base. Cualquier comparación con VLA de mayor tamaño (OpenVLA, π0) requeriría reproducir el mismo protocolo de 100 episodios con semilla 1000, algo que no se ha hecho en la información disponible.
@@ -129,7 +129,7 @@ La comparación relevante y con datos es únicamente contra el checkpoint oficia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yutongzhu/smolvla-libero-ft20k
+- Modelo en Hugging Face: https://huggingface.co/yutongzhu/smolvla-libero-ft20k
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Checkpoint oficial de referencia: https://huggingface.co/HuggingFaceVLA/smolvla_libero
 - Dataset de entrenamiento: https://huggingface.co/datasets/lerobot/libero

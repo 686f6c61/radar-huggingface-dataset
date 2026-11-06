@@ -83,7 +83,7 @@ La comparacion con alternativas de otras familias (Llama 3.1 8B Instruct, Mistra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-ARA-heretic-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-ARA-heretic-MLX-4bit
 - Modelo base (bf16): https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-ARA-heretic
 - Modelo original de Alibaba: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio MLX: https://github.com/ml-explore/mlx

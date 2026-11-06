@@ -75,6 +75,6 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/trocr-bigram4-BY-50k
+- Modelo en Hugging Face: https://huggingface.co/cyttic/trocr-bigram4-BY-50k
 - Documentación de TrOCR en Transformers: https://huggingface.co/docs/transformers/model_doc/trocr
 - Repositorio oficial de TrOCR (Microsoft): https://github.com/microsoft/unilm/tree/master/trocr

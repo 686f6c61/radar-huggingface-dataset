@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-c-3pduck_0784 es una politica de control (policy) de locomocion para el robot microduck, publicada por el usuario DenRakEiw en HuggingFace. No es un modelo de lenguaje ni un modelo generativo de proposito general: es una red neuronal entrenada por aprendizaje por refuerzo (reinforcement learning) que produce comandos de actuacion a partir de observaciones del robot, y se distribuye empaquetada como grafo ONNX para su ejecucion embarcada.
+microduck-c-3pduck_0784 es una politica de control (policy) de locomocion para el robot microduck, publicada por el usuario DenRakEiw en Hugging Face. No es un modelo de lenguaje ni un modelo generativo de proposito general: es una red neuronal entrenada por aprendizaje por refuerzo (reinforcement learning) que produce comandos de actuacion a partir de observaciones del robot, y se distribuye empaquetada como grafo ONNX para su ejecucion embarcada.
 
 El modelo ocupa el slot `walk` del sistema de politicas de microduck: recibe observaciones de 61 dimensiones y emite 14 acciones a 50 Hz, de forma perpetua (se ejecuta hasta que se le indique lo contrario). La model card indica que la normalizacion de observaciones esta integrada dentro de `policy.onnx`, por lo que el consumidor debe alimentar observaciones en crudo. Se acompania de un `manifest.json` que sigue el esquema 2 del manifiesto de politicas del daemon.
 
@@ -68,10 +68,10 @@ Se comparan las variantes de la cadena de remix citadas en la model card, todas 
 
 | Modelo | Relacion | Observacion / acciones | Slot | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DenRakEiw/microduck-c-3pduck_0784 | Remix del siguiente; red congelada y start-table reoptimizada con CMA-ES | 61 dimensiones / 14 acciones, 50 Hz | `walk` | no disponible | Publico en HuggingFace, 0 descargas, 0 likes |
-| suraj-phanindra/microduck-hill-hc5-aifund | Modelo base directo; su red se congela en este remix | no disponible | no disponible | no disponible | Publico en HuggingFace |
-| juicenv/microduck-hill-es8 | Ascendiente del anterior | no disponible | no disponible | no disponible | Publico en HuggingFace |
-| jrubiosainz/microduck-game-hillclimber-remix2 | Aporta el wrapper de start-table (108 valores) | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| DenRakEiw/microduck-c-3pduck_0784 | Remix del siguiente; red congelada y start-table reoptimizada con CMA-ES | 61 dimensiones / 14 acciones, 50 Hz | `walk` | no disponible | Publico en Hugging Face, 0 descargas, 0 likes |
+| suraj-phanindra/microduck-hill-hc5-aifund | Modelo base directo; su red se congela en este remix | no disponible | no disponible | no disponible | Publico en Hugging Face |
+| juicenv/microduck-hill-es8 | Ascendiente del anterior | no disponible | no disponible | no disponible | Publico en Hugging Face |
+| jrubiosainz/microduck-game-hillclimber-remix2 | Aporta el wrapper de start-table (108 valores) | no disponible | no disponible | no disponible | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes, por lo que la comparacion se limita a la genealogia y a las caracteristicas de integracion. Modelos comparables fuera de la familia microduck: no disponible.
 
@@ -85,12 +85,12 @@ No se dispone de datos de rendimiento comparativos entre estas variantes, por lo
 - La model card no documenta sesgos, pero en robotica el riesgo relevante no es el sesgo estadistico sino el fallo fisico: una policy no validada en hardware puede provocar movimientos bruscos o caidas. Se recomienda validacion en simulacion y entorno controlado antes del despliegue.
 - No hay informacion sobre el numero de parametros ni sobre el consumo computacional, lo que dificulta planificar recursos de despliegue.
 - El modelo tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no cuenta con validacion de la comunidad.
-- La fecha de creacion registrada en HuggingFace (2026-10-16) es posterior a la fecha habitual de referencia; conviene verificar la vigencia de los artefactos y del repositorio de entrenamiento enlazado.
+- La fecha de creacion registrada en Hugging Face (2026-10-16) es posterior a la fecha habitual de referencia; conviene verificar la vigencia de los artefactos y del repositorio de entrenamiento enlazado.
 - Las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo: los resultados obtenidos eran contenido no relacionado y no verificable, por lo que no se han utilizado como fuente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DenRakEiw/microduck-c-3pduck_0784
+- Modelo en Hugging Face: https://huggingface.co/DenRakEiw/microduck-c-3pduck_0784
 - Modelo base: https://huggingface.co/suraj-phanindra/microduck-hill-hc5-aifund
 - Ascendiente del modelo base: https://huggingface.co/juicenv/microduck-hill-es8
 - Wrapper de start-table: https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix2

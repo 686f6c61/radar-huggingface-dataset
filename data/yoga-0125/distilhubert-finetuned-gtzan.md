@@ -2,7 +2,7 @@
 
 ## Resumen
 
-distilhubert-finetuned-gtzan es un modelo de clasificación de audio obtenido mediante fine-tuning del checkpoint ntu-spml/distilhubert sobre el conjunto de datos GTZAN, un corpus de referencia para la clasificación de géneros musicales. Lo publica el usuario yoga-0125 en HuggingFace bajo licencia Apache 2.0 y está pensado exclusivamente para la tarea de audio-classification dentro del ecosistema transformers.
+distilhubert-finetuned-gtzan es un modelo de clasificación de audio obtenido mediante fine-tuning del checkpoint ntu-spml/distilhubert sobre el conjunto de datos GTZAN, un corpus de referencia para la clasificación de géneros musicales. Lo publica el usuario yoga-0125 en Hugging Face bajo licencia Apache 2.0 y está pensado exclusivamente para la tarea de audio-classification dentro del ecosistema transformers.
 
 El modelo parte de DistilHuBERT, una versión destilada de HuBERT que reduce drásticamente el número de parámetros del transformer original manteniendo representaciones de audio útiles para tareas downstream. Con 23.691.402 parámetros totales y un repositorio de 0,2 GB, es un modelo ligero que puede ejecutarse en CPU o en GPUs de gama baja, lo que lo hace atractivo para prototipos de clasificación musical y pipelines de inferencia con requisitos modestos.
 
@@ -87,10 +87,10 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parametros | Tarea | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yoga-0125/distilhubert-finetuned-gtzan | 23,7 M | Clasificación de género (GTZAN, 10 clases) | Ventana de audio de HuBERT, no documentada | Apache 2.0 | HuggingFace, 29 descargas |
-| ntu-spml/distilhubert (base) | ~23 M | Representación de audio auto-supervisada | Ventana de audio de HuBERT | Apache 2.0 | HuggingFace |
-| facebook/hubert-base-ls960 | ~95 M | Representación de audio auto-supervisada | Ventana de audio de HuBERT | Apache 2.0 | HuggingFace |
-| Modelos fine-tuneados sobre GTZAN con AST o wav2vec2 | no disponible | Clasificación de género | no disponible | variable | HuggingFace |
+| yoga-0125/distilhubert-finetuned-gtzan | 23,7 M | Clasificación de género (GTZAN, 10 clases) | Ventana de audio de HuBERT, no documentada | Apache 2.0 | Hugging Face, 29 descargas |
+| ntu-spml/distilhubert (base) | ~23 M | Representación de audio auto-supervisada | Ventana de audio de HuBERT | Apache 2.0 | Hugging Face |
+| facebook/hubert-base-ls960 | ~95 M | Representación de audio auto-supervisada | Ventana de audio de HuBERT | Apache 2.0 | Hugging Face |
+| Modelos fine-tuneados sobre GTZAN con AST o wav2vec2 | no disponible | Clasificación de género | no disponible | variable | Hugging Face |
 
 No se dispone de resultados de benchmarks comparativos publicados en la información proporcionada para establecer una comparación cuantitativa con alternativas.
 
@@ -107,7 +107,7 @@ No se dispone de resultados de benchmarks comparativos publicados en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yoga-0125/distilhubert-finetuned-gtzan
+- Modelo en Hugging Face: https://huggingface.co/yoga-0125/distilhubert-finetuned-gtzan
 - Modelo base: https://huggingface.co/ntu-spml/distilhubert
 - Dataset GTZAN: https://huggingface.co/datasets/marsyas/gtzan
 - Repositorio de transformers: https://github.com/huggingface/transformers

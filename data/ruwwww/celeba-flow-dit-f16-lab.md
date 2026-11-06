@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CelebA-HQ f16 Flow Matching DiT Lab es una coleccion de artefactos de investigacion publicada por el usuario ruwwww en HuggingFace, orientada a la generacion y reconstruccion de rostros sobre el conjunto de datos CelebA-HQ. No se trata de un modelo de lenguaje, sino de un banco de pruebas (testbed) compuesto por dos componentes acoplados: un autoencoder variacional (VAE) de 32 canales latentes y un Diffusion Transformer (DiT) de 176,9 millones de parametros entrenado con flow matching sobre transporte optimo. El autor lo describe explicitamente como un "research testbed" en la model card.
+CelebA-HQ f16 Flow Matching DiT Lab es una coleccion de artefactos de investigacion publicada por el usuario ruwwww en Hugging Face, orientada a la generacion y reconstruccion de rostros sobre el conjunto de datos CelebA-HQ. No se trata de un modelo de lenguaje, sino de un banco de pruebas (testbed) compuesto por dos componentes acoplados: un autoencoder variacional (VAE) de 32 canales latentes y un Diffusion Transformer (DiT) de 176,9 millones de parametros entrenado con flow matching sobre transporte optimo. El autor lo describe explicitamente como un "research testbed" en la model card.
 
 El objetivo del proyecto es explorar tecnicas de compresion latente y de generacion por flujo. El VAE incorpora normalizacion RMS Sphere, enmascarado de canales de sufijo, alineacion con DINOv2 mediante pooling y balanceo adaptativo de gradientes al estilo VQGAN. Sobre ese espacio latente de 16x16x32 opera el DiT, modulado con adaLN-Zero y condicionado por 64 clusters semanticos de DINOv2, con soporte de Classifier-Free Guidance (CFG). El conjunto se distribuye bajo licencia MIT.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks adicionales (FID, IS, precision, re
 
 | Modelo | Parametros | Contexto / latente | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CelebA-HQ f16 Flow Matching DiT Lab (este modelo) | 176,9M (DiT) + VAE | Latente 16 x 16 x 32 | MIT | HuggingFace, 0 descargas |
+| CelebA-HQ f16 Flow Matching DiT Lab (este modelo) | 176,9M (DiT) + VAE | Latente 16 x 16 x 32 | MIT | Hugging Face, 0 descargas |
 | DiT original (Peebles y Xie) | 33M a 675M segun variante | Latente 32 x 32 x 4 (ImageNet) | Codigo abierto (consulta la licencia del repo) | Repositorio publico |
 | Modelos de difusion sobre CelebA-HQ (p. ej. DDPM/EDM) | Variable | Pixeles o latente | Variable | Repositorios publicos |
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparables (FID u otras metricas) en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ruwwww/celeba-flow-dit-f16-lab
+- Hugging Face: https://huggingface.co/ruwwww/celeba-flow-dit-f16-lab
 - Codigo de entrenamiento del VAE: https://github.com/ruwwww/celeba-vae-lab
 - Codigo de flow matching del DiT: https://github.com/ruwwww/celeba-dit-lab
 - Checkpoints: celeba_vae_f16c32.safetensors (~12 MB), celeba_flow_dit_177m.safetensors (~675 MB)

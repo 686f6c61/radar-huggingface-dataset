@@ -4,7 +4,7 @@
 
 El modelo `nikitastheo/v4-babylm-fra-ell-sequential_interleaved` es un modelo de lenguaje causal (causal-LM) basado en la arquitectura GPT-2, desarrollado por nikitastheo como parte de la iniciativa BabyLM. BabyLM es un desafío académico que busca entrenar modelos de lenguaje con corpus restringidos y desarrollo plausible, simulando la cantidad de input lingüístico que recibe un humano en sus primeros años de vida. Este modelo concreto se entrena con un corpus bilingüe de francés y griego, utilizando una estrategia de intercalado secuencial de idiomas.
 
-Con 108,5 millones de parámetros, se sitúa en la gama de modelos pequeños, comparable a GPT-2 medium. Su relevancia radica en explorar cómo el multilingüismo y la alternancia de idiomas durante el entrenamiento afectan a la eficiencia del aprendizaje con datos limitados. El modelo está disponible en formato safetensors y es compatible con la librería transformers, aunque no se especifica licencia ni idiomas soportados en la ficha de HuggingFace.
+Con 108,5 millones de parámetros, se sitúa en la gama de modelos pequeños, comparable a GPT-2 medium. Su relevancia radica en explorar cómo el multilingüismo y la alternancia de idiomas durante el entrenamiento afectan a la eficiencia del aprendizaje con datos limitados. El modelo está disponible en formato safetensors y es compatible con la librería transformers, aunque no se especifica licencia ni idiomas soportados en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ No se dispone de información suficiente para comparar rendimiento real. La comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikitastheo/v4-babylm-fra-ell-sequential_interleaved
+- Modelo en Hugging Face: https://huggingface.co/nikitastheo/v4-babylm-fra-ell-sequential_interleaved
 - Versión anterior (v2): https://huggingface.co/nikitastheo/v2-babylm-fra-ell-sequential_interleaved
 - Versión small (v2): https://huggingface.co/nikitastheo/v2-babylm-small-fra-ell-sequential_interleaved
 - Página oficial de BabyLM: https://babylm.github.io/

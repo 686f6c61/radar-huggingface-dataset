@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Crystalliu66/swin-t-experiment` es un repositorio publicado en HuggingFace que contiene una implementación experimental de una Swin Transformer (variante "Swin T") orientada a tareas de "matching", es decir, al emparejamiento o comparación de representaciones. El repositorio no distribuye un modelo entrenado: el archivo `model.safetensors` es, según la propia model card, un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un checkpoint con resultados de referencia, y no se reclama ninguna puntuación de benchmark.
+`Crystalliu66/swin-t-experiment` es un repositorio publicado en Hugging Face que contiene una implementación experimental de una Swin Transformer (variante "Swin T") orientada a tareas de "matching", es decir, al emparejamiento o comparación de representaciones. El repositorio no distribuye un modelo entrenado: el archivo `model.safetensors` es, según la propia model card, un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un checkpoint con resultados de referencia, y no se reclama ninguna puntuación de benchmark.
 
 El autor declara escala "xlarge", atención de ventana deslizante, fusión mediante "concat mlp", activación swish y normalización por instancias, con una receta de entrenamiento basada en NovoGrad y un schedule de warmup constante. Los metadatos de safetensors del repositorio, en cambio, registran 49.600 parámetros totales, cifra incompatible con la escala "xlarge" y con los aproximadamente 28 millones de parámetros de una Swin-T canónica; el autor no explica esta discrepancia.
 
@@ -105,6 +105,6 @@ La comparación de rendimiento no es posible: este repositorio no publica ningun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Crystalliu66/swin-t-experiment
+- Modelo en Hugging Face: https://huggingface.co/Crystalliu66/swin-t-experiment
 - Archivos incluidos en el repositorio: `main.py` (artefacto principal), `README.md`, `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicialización)
 - Paper, blog, repositorio de código o demo: no disponible. La búsqueda web realizada no devolvió ningún resultado relacionado con el modelo (los resultados obtenidos correspondían a páginas de ayuda de Gmail, sin relación con el repositorio).

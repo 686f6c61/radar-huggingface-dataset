@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sushi41/modul1_kr2_mixed_set` es un repositorio alojado en HuggingFace por el usuario `sushi41`. La model card publicada es prácticamente vacía: únicamente declara una licencia de tipo `other` con identificador `lc01` y un enlace a un fichero `LICENSE` que no se ha podido verificar. No se especifica arquitectura, tamaño, pipeline, idiomas ni propósito del artefacto.
+`sushi41/modul1_kr2_mixed_set` es un repositorio alojado en Hugging Face por el usuario `sushi41`. La model card publicada es prácticamente vacía: únicamente declara una licencia de tipo `other` con identificador `lc01` y un enlace a un fichero `LICENSE` que no se ha podido verificar. No se especifica arquitectura, tamaño, pipeline, idiomas ni propósito del artefacto.
 
 Por el nombre del repositorio (`modul1_kr2_mixed_set`) y la ausencia de metadatos de modelo (sin `pipeline_tag`, sin `library_name`, sin tags de arquitectura), es plausible que se trate de un conjunto de datos, un checkpoint intermedio o un artefacto auxiliar de un proyecto privado, pero esta interpretación no está confirmada por la información disponible. No hay descargas ni likes registrados en el momento de la consulta.
 
@@ -80,4 +80,4 @@ No disponible. La ausencia de información sobre categoría, tamaño y tarea imp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sushi41/modul1_kr2_mixed_set
+- Repositorio en Hugging Face: https://huggingface.co/sushi41/modul1_kr2_mixed_set

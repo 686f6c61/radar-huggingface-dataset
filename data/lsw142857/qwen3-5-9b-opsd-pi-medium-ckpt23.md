@@ -74,6 +74,6 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: [LSW142857/Qwen3.5-9B-OPSD-PI-Medium-ckpt23](https://huggingface.co/LSW142857/Qwen3.5-9B-OPSD-PI-Medium-ckpt23)
+- Modelo en Hugging Face: [LSW142857/Qwen3.5-9B-OPSD-PI-Medium-ckpt23](https://huggingface.co/LSW142857/Qwen3.5-9B-OPSD-PI-Medium-ckpt23)
 - Modelo base: [Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B)
 - No se proporcionan enlaces a papers, blogs, repositorios de código o demos en la información disponible.

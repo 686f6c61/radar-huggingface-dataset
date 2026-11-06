@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NeoHorse-1-4B-Heretic es un repositorio de pesos publicado por el usuario tinyopsec en HuggingFace. La unica informacion verificable disponible es su licencia (apache-2.0), la fecha de creacion (13 de septiembre de 2026) y el hecho de que el repositorio no registra descargas ni interacciones en el momento de la consulta. La model card no contiene ninguna documentacion tecnica: se limita a una cabecera YAML con el campo `license`, sin descripcion, sin instrucciones de uso y sin citar modelo base.
+NeoHorse-1-4B-Heretic es un repositorio de pesos publicado por el usuario tinyopsec en Hugging Face. La unica informacion verificable disponible es su licencia (apache-2.0), la fecha de creacion (13 de septiembre de 2026) y el hecho de que el repositorio no registra descargas ni interacciones en el momento de la consulta. La model card no contiene ninguna documentacion tecnica: se limita a una cabecera YAML con el campo `license`, sin descripcion, sin instrucciones de uso y sin citar modelo base.
 
 No se dispone por tanto de datos confirmados sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni metodologia de alineacion. El identificador del repositorio incluye la cadena "4B", lo que sugiere un modelo de aproximadamente 4.000 millones de parametros, y el sufijo "Heretic" es una convencion habitual en la comunidad para designar variantes derivadas de tecnicas de elucion de rechazos (abliteration), pero ninguna de estas dos inferencias esta confirmada por el autor y deben tratarse como hipotesis, no como especificaciones.
 
@@ -91,7 +91,7 @@ Los datos de los modelos de referencia corresponden a su documentacion publica h
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tinyopsec/NeoHorse-1-4B-Heretic
+- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/NeoHorse-1-4B-Heretic
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

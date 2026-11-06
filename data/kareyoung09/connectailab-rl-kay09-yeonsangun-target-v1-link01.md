@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | 0.8B (base) + LoRA | no disponible | RL/PPO para robotica bipeda, tarea goto_target | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen3.5-0.8B (base) | 0.8B | no disponible | LLM generativo general | no disponible en la informacion | HuggingFace |
+| LINK-01 (este modelo) | 0.8B (base) + LoRA | no disponible | RL/PPO para robotica bipeda, tarea goto_target | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen3.5-0.8B (base) | 0.8B | no disponible | LLM generativo general | no disponible en la informacion | Hugging Face |
 | Alternativas de robotica con LLM pequeno | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos directamente comparables en la misma tarea (planificacion de alto nivel para robot bipedo mediante LLM ajustado por RL). La comparativa queda limitada al modelo base.
@@ -88,7 +88,7 @@ No se dispone de informacion sobre modelos directamente comparables en la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kareyoung09/connectailab-rl-kay09-yeonsangun-target-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/kareyoung09/connectailab-rl-kay09-yeonsangun-target-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Libreria PEFT: https://huggingface.co/docs/peft
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion proporcionada.

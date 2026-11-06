@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jonas-mo/llama-cargo-sft` es un modelo publicado en HuggingFace por el usuario jonas-mo, entrenado mediante ajuste supervisado (SFT) con la librería TRL. La model card generada automáticamente no identifica el modelo base sobre el que se ha hecho el fine-tuning: el campo aparece literalmente como `None`, por lo que se desconoce la arquitectura concreta, el número de parámetros y la longitud de contexto real del modelo.
+`jonas-mo/llama-cargo-sft` es un modelo publicado en Hugging Face por el usuario jonas-mo, entrenado mediante ajuste supervisado (SFT) con la librería TRL. La model card generada automáticamente no identifica el modelo base sobre el que se ha hecho el fine-tuning: el campo aparece literalmente como `None`, por lo que se desconoce la arquitectura concreta, el número de parámetros y la longitud de contexto real del modelo.
 
 El repositorio ocupa 0,1 GB y contiene pesos en formato safetensors, lo que sugiere un adaptador LoRA/PEFT o un modelo de muy pequeño tamaño (del orden de decenas de millones de parámetros si fuese un checkpoint completo en fp16). El nombre del modelo incluye el prefijo "llama", pero esto no está confirmado en la documentación disponible y no debe tomarse como un dato verificado.
 
@@ -31,7 +31,7 @@ Las versiones de framework declaradas son TRL 1.13.0, Transformers 5.17.0, PyTor
 
 - Generación de texto condicionada por prompt: la model card incluye un ejemplo de `pipeline("text-generation")` que devuelve texto generado a partir de una pregunta abierta.
 - Formato conversacional: el ejemplo de uso pasa una lista de mensajes con estructura `{"role": "user", "content": ...}`, lo que indica que el modelo acepta el formato de chat aunque no se especifica la plantilla concreta.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse en HuggingFace Inference Endpoints sin transformaciones adicionales.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse en Hugging Face Inference Endpoints sin transformaciones adicionales.
 - Razonamiento, código, matemáticas, tool calling, uso de agentes, visión, audio y capacidades multilingües: no disponibles. No hay ninguna evidencia documental de que el modelo las soporte.
 - Modo "thinking" o razonamiento explícito: no disponible.
 
@@ -87,7 +87,7 @@ No disponible. La comparativa no puede establecerse porque se desconoce el model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonas-mo/llama-cargo-sft
+- Modelo en Hugging Face: https://huggingface.co/jonas-mo/llama-cargo-sft
 - Repositorio de TRL (framework de entrenamiento declarado): https://github.com/huggingface/trl
 - Búsqueda web realizada: sin resultados relevantes. Las coincidencias obtenidas (fr.wikipedia.org/wiki/Jonas, jonas-et-cie.fr, plateformejonas.fr, jonasfrance.com, en.wikipedia.org/wiki/Jonas_Brothers) corresponden al nombre propio "Jonas" y no guardan relación con el modelo.
 - Paper, blog o demo del modelo: no disponible.

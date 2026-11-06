@@ -79,6 +79,6 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/retrocool/qwen3vl-8b-int8-convrot-abliterated
+- Hugging Face: https://huggingface.co/retrocool/qwen3vl-8b-int8-convrot-abliterated
 - Modelo fuente abliterado: https://huggingface.co/huihui-ai/Huihui-Qwen3-VL-8B-Instruct-abliterated
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct

@@ -79,7 +79,7 @@ Los tres primeros modelos derivan de LLM-jp-4 8B del NII, aunque con diferentes 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SousiOmine/Lumi-v2-llm-jp-4-8b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/SousiOmine/Lumi-v2-llm-jp-4-8b-GGUF
 - Modelo base: https://huggingface.co/SousiOmine/Lumi-v2-llm-jp-4-8b
 - Perfil del autor: https://huggingface.co/SousiOmine/models
 - Modelo relacionado (thinking GGUF): https://huggingface.co/alfredplpl/llm-jp-4-8b-thinking-gguf

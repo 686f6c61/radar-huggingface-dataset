@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `balajiduraisamy/bge-m3` es un modelo de embeddings de texto basado en la arquitectura XLM-RoBERTa, publicado en HuggingFace por el usuario `balajiduraisamy`. Está diseñado para tareas de similaridad semántica y extracción de características, tal como indican los metadatos del repositorio. A pesar de compartir nombre con el modelo BGE-M3 del grupo BAAI, esta versión concreta presenta acceso restringido (gated) y no cuenta con descargas ni valoraciones, lo que dificulta su evaluación.
+El modelo `balajiduraisamy/bge-m3` es un modelo de embeddings de texto basado en la arquitectura XLM-RoBERTa, publicado en Hugging Face por el usuario `balajiduraisamy`. Está diseñado para tareas de similaridad semántica y extracción de características, tal como indican los metadatos del repositorio. A pesar de compartir nombre con el modelo BGE-M3 del grupo BAAI, esta versión concreta presenta acceso restringido (gated) y no cuenta con descargas ni valoraciones, lo que dificulta su evaluación.
 
 Según la documentación de BGE-M3 encontrada en la búsqueda, el modelo se describe como un modelo de recuperación compuesto que integra de forma simultánea tres funcionalidades: recuperación densa, recuperación multi-vector y recuperación dispersa. El repositorio enlaza con varios artículos de la familia BGE, incluido el paper de BGE-M3 (arxiv:2402.03216). Sin embargo, no se han proporcionado especificaciones técnicas detalladas para esta copia, como número de parámetros, longitud de contexto o idiomas soportados.
 
@@ -32,7 +32,7 @@ Los tags del repositorio enlazan con varios artículos de la familia BGE, entre 
 - Genera embeddings de texto para tareas de similaridad semántica (pipeline `sentence-similarity`).
 - Permite la extracción de características (`feature-extraction`) para su uso como representaciones de entrada en tareas posteriores.
 - Según la documentación de BGE-M3, soporta recuperación densa, multi-vector y dispersa en un mismo modelo.
-- Compatible con el runtime de HuggingFace `text-embeddings-inference` y con la API de endpoints de HuggingFace.
+- Compatible con el runtime de Hugging Face `text-embeddings-inference` y con la API de endpoints de Hugging Face.
 - Incluye soporte para ONNX además de PyTorch según los tags del repositorio.
 - No se dispone de información confirmada sobre soporte de tool calling, agentes, generación de texto o razonamiento multi-paso.
 
@@ -64,7 +64,7 @@ No se han encontrado datos de comparación en la información disponible. El mod
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): el repositorio requiere aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+- Acceso restringido (gated): el repositorio requiere aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 - Sin adopción comunitaria: el modelo tiene 0 descargas y 0 likes, por lo que no existe evidencia de uso o validación por parte de otros desarrolladores.
 - Fecha de creación inusual: la fecha de creación y actualización es 2026-09-05, lo que apunta a un posible error en los metadatos o a una subida automática. Se recomienda verificar la integridad del modelo antes de usarlo.
 - Especificaciones desconocidas: no se dispone de parámetros, contexto, cuantizaciones ni idiomas confirmados, lo que impide evaluar su idoneidad para casos concretos.
@@ -76,6 +76,6 @@ No se han encontrado datos de comparación en la información disponible. El mod
 
 - Repositorio: https://huggingface.co/balajiduraisamy/bge-m3
 - Documentación oficial de BGE-M3: https://bge-model.com/bge/bge_m3.html
-- Modelo original en HuggingFace: https://huggingface.co/BAAI/bge-m3
+- Modelo original en Hugging Face: https://huggingface.co/BAAI/bge-m3
 - Paper de BGE-M3: https://arxiv.org/abs/2402.03216
 - Papers adicionales mencionados en los tags: https://arxiv.org/abs/2004.04906, https://arxiv.org/abs/2106.14807, https://arxiv.org/abs/2107.05720, https://arxiv.org/abs/2004.12832

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Brain Scan AI — YOLO11m-seg es un modelo de segmentación de instancias obtenido mediante fine-tuning del detector-segmentador Ultralytics YOLO11m-seg sobre el dataset público Kaggle 3M Brain MRI Segmentation (TCGA LGG). Su tarea es detectar y segmentar tumores cerebrales en cortes 2D de resonancia magnética, devolviendo cajas delimitadoras y máscaras de polígono para una única clase (`tumor`). Lo desarrolla el usuario de HuggingFace `shahriarhd` como parte del proyecto Brain Scan AI, un prototipo educativo con demo ejecutable en navegador.
+Brain Scan AI — YOLO11m-seg es un modelo de segmentación de instancias obtenido mediante fine-tuning del detector-segmentador Ultralytics YOLO11m-seg sobre el dataset público Kaggle 3M Brain MRI Segmentation (TCGA LGG). Su tarea es detectar y segmentar tumores cerebrales en cortes 2D de resonancia magnética, devolviendo cajas delimitadoras y máscaras de polígono para una única clase (`tumor`). Lo desarrolla el usuario de Hugging Face `shahriarhd` como parte del proyecto Brain Scan AI, un prototipo educativo con demo ejecutable en navegador.
 
 El modelo es relevante por su perfil de despliegue: 22,3 millones de parámetros, entrada fija de 256×256 píxeles RGB y exportaciones listas para inferencia en CPU, GPU y navegador (ONNX Runtime Web). Fue entrenado en una única GPU de portátil (RTX 3050 Ti, 4 GB) durante unos 89 minutos, lo que lo convierte en un caso práctico de fine-tuning asequible para segmentación médica. No es un modelo de lenguaje ni un modelo multimodal generativo: es un modelo puramente visual de segmentación.
 
@@ -84,10 +84,10 @@ No se dispone de datos de benchmarks comparativos en la información proporciona
 
 | Modelo | Parametros | Contexto/entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Brain Scan AI YOLO11m-seg | 22,3 M | 256×256 px | Segmentación de tumores (1 clase) | AGPL-3.0 | HuggingFace, ONNX, demo web |
-| Ultralytics YOLO11m-seg (base) | ~22 M (no confirmado en la información) | Entrada configurable | Segmentación de instancias genérica (COCO) | AGPL-3.0 | Ultralytics, HuggingFace |
+| Brain Scan AI YOLO11m-seg | 22,3 M | 256×256 px | Segmentación de tumores (1 clase) | AGPL-3.0 | Hugging Face, ONNX, demo web |
+| Ultralytics YOLO11m-seg (base) | ~22 M (no confirmado en la información) | Entrada configurable | Segmentación de instancias genérica (COCO) | AGPL-3.0 | Ultralytics, Hugging Face |
 | U-Net / nnU-Net para RM | no disponible | Volumétrico 3D típicamente | Segmentación semántica médica | variable | múltiples repositorios |
-| SAM / SAM 2 (Meta) | no disponible | Resolución variable | Segmentación promptable genérica | Apache-2.0 / variable | Meta, HuggingFace |
+| SAM / SAM 2 (Meta) | no disponible | Resolución variable | Segmentación promptable genérica | Apache-2.0 / variable | Meta, Hugging Face |
 
 La comparación cuantitativa de rendimiento entre estos modelos no está disponible en la información proporcionada.
 
@@ -106,7 +106,7 @@ La comparación cuantitativa de rendimiento entre estos modelos no está disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shahriarhd/brain-scan-ai-yolov11-seg
+- Modelo en Hugging Face: https://huggingface.co/shahriarhd/brain-scan-ai-yolov11-seg
 - Repositorio del proyecto Brain Scan AI: https://github.com/shahriar-hd/brain-scan-ai
 - Demo en navegador: https://shahriar-hd.github.io/brain-scan-ai/
 - Documentación de Ultralytics YOLO11: https://docs.ultralytics.com/models/yolo11/

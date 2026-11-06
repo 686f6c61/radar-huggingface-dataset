@@ -97,7 +97,7 @@ La comparación relevante no es contra otros modelos ajustados con ES, sino cont
 
 | Modelo | Parametros | Tipo de ajuste | Formato publicado | Licencia (del modelo base) | Disponibilidad |
 |---|---|---|---|---|---|
-| `es-hetero/ckpt-bigbench` | 7B u 8B según ejecución | Evolution Strategies sobre BIG-Bench (78 tareas), población 30, 500 iteraciones | Solo `.pth` en bf16 | No disponible para el repositorio | HuggingFace, 0 descargas y 0 *likes* |
+| `es-hetero/ckpt-bigbench` | 7B u 8B según ejecución | Evolution Strategies sobre BIG-Bench (78 tareas), población 30, 500 iteraciones | Solo `.pth` en bf16 | No disponible para el repositorio | Hugging Face, 0 descargas y 0 *likes* |
 | `NousResearch/Meta-Llama-3.1-8B-Instruct` | 8B | SFT + preferencias, denso | safetensors | Licencia comunitaria de Llama 3.1 (no disponible en la información de este repositorio; consultar la ficha original) | Ampliamente desplegado, ecosistema maduro |
 | `allenai/OLMo-2-1124-7B-Instruct` | 7B | SFT + DPO, denso, con datos y recetas abiertos | safetensors | Apache 2.0 (no confirmado en la información de este repositorio; consultar la ficha original) | Modelo totalmente abierto, con artefactos de entrenamiento |
 | `Qwen/Qwen2.5-7B-Instruct` | 7B | SFT + preferencias, denso | safetensors | Apache 2.0 para el tamaño 7B (no confirmado en la información de este repositorio; consultar la ficha original) | Muy desplegado, buen soporte multilingüe y de *tool calling* |
@@ -120,7 +120,7 @@ No se conocen en la información disponible otras publicaciones comparables de c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/es-hetero/ckpt-bigbench
+- Repositorio en Hugging Face: https://huggingface.co/es-hetero/ckpt-bigbench
 - Modelo base de las ejecuciones Llama: https://huggingface.co/NousResearch/Meta-Llama-3.1-8B-Instruct
 - Modelo base de las ejecuciones OLMo: https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct
 - Modelo base de las ejecuciones Qwen: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

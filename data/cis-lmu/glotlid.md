@@ -6,7 +6,7 @@ GlotLID es un modelo de identificacion de idioma (language identification, LID) 
 
 El modelo se publico en octubre de 2023 y se asocia al articulo arXiv 2310.16248, que describe GlotLID como un LID abierto entrenado sobre el corpus GlotLID (dataset `cis-lmu/glotlid-corpus`) y evaluado con datos derivados de GlotStoryBook y GlotSparse. Frente a alternativas como CLD3, langid.py o los modelos LID de fastText de Facebook, el enfasis esta en el rendimiento sobre idiomas de bajos recursos y en una taxonomia de etiquetas amplia y documentada.
 
-La relevancia actual viene de su adopcion masiva: el repositorio acumula mas de 637.000 descargas en HuggingFace y se ha convertido en una pieza de referencia en pipelines de curacion de datos multilingues. Al ser un modelo fastText, es muy ligero en inferencia comparado con un transformer, aunque el repositorio completo ocupa 10,1 GB, presumiblemente por incluir artefactos adicionales ademas de los pesos del clasificador.
+La relevancia actual viene de su adopcion masiva: el repositorio acumula mas de 637.000 descargas en Hugging Face y se ha convertido en una pieza de referencia en pipelines de curacion de datos multilingues. Al ser un modelo fastText, es muy ligero en inferencia comparado con un transformer, aunque el repositorio completo ocupa 10,1 GB, presumiblemente por incluir artefactos adicionales ademas de los pesos del clasificador.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ El entrenamiento se basa en el corpus GlotLID (`cis-lmu/glotlid-corpus`), comple
 - Clasificacion multilingue de amplia cobertura, con enfasis declarado en idiomas de bajos recursos.
 - Funciona a nivel de documento o de fragmento de texto, adecuado para filtrar grandes volumenes de datos.
 - Inferencia rapida y de bajo coste por ser fastText, apta para procesar corpus a gran escala.
-- Integracion con el ecosistema HuggingFace mediante la libreria `fasttext` indicada en el repositorio.
+- Integracion con el ecosistema Hugging Face mediante la libreria `fasttext` indicada en el repositorio.
 - No soporta tool calling, function calling, agentes, vision, audio ni modos de razonamiento: es un clasificador, no un modelo generativo.
 - No realiza generacion de texto ni traduccion; su unica tarea es la asignacion de etiqueta de idioma.
 
@@ -56,14 +56,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible con precision; al ser fastText, la inferencia puede ejecutarse en CPU y el modelo cargado en memoria es muy inferior al tamano del repositorio (10,1 GB incluye artefactos adicionales).
 - GPU recomendadas: no requiere GPU; cualquier CPU moderna es suficiente para throughput alto en clasificacion por lotes.
 - Cabe en GPU consumer: si, y tambien en entornos sin GPU; el cuello de botella es la memoria RAM para cargar los pesos, no la VRAM.
-- Opciones de despliegue: libreria `fasttext` (Python/C++), integracion con HuggingFace, y uso dentro de pipelines de procesamiento por lotes propios.
+- Opciones de despliegue: libreria `fasttext` (Python/C++), integracion con Hugging Face, y uso dentro de pipelines de procesamiento por lotes propios.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada; por la naturaleza de fastText se espera un throughput muy alto en CPU, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
 | Modelo | Arquitectura | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GlotLID (cis-lmu) | fastText | 2.104 etiquetas ISO 639-3 | apache-2.0-plus-notices | HuggingFace, 637.034 descargas |
+| GlotLID (cis-lmu) | fastText | 2.104 etiquetas ISO 639-3 | apache-2.0-plus-notices | Hugging Face, 637.034 descargas |
 | fastText LID de Facebook (lid.176) | fastText | 176 idiomas | CC BY-SA 3.0 (segun publicacion original) | Ampliamente distribuido |
 | CLD3 (Google) | Red neuronal ligera | ~100 idiomas | Apache 2.0 | Repositorio abierto |
 | langid.py | Naive Bayes con n-gramas | 97 idiomas | BSD | PyPI, repositorio |
@@ -82,7 +82,7 @@ La comparativa se limita a datos publicos generales de cada proyecto; no se disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cis-lmu/glotlid
+- Modelo en Hugging Face: https://huggingface.co/cis-lmu/glotlid
 - Articulo arXiv: https://arxiv.org/abs/2310.16248
 - Dataset del corpus: https://huggingface.co/datasets/cis-lmu/glotlid-corpus
 - Dataset GlotSparse: https://huggingface.co/datasets/cis-lmu/GlotSparse

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea 2 OpenCast LoRA es un adaptador LoRA para generación de imágenes creado por Akatz Labs para OpenCast Studio, publicado en HuggingFace por el usuario akatz-ai. Se trata de un peso de adaptación que se aplica sobre el modelo base krea/Krea-2-Raw (concretamente sobre la variante Krea 2 Turbo) para producir retratos de personajes ficticios con un estilo muy distintivo: rostros exagerados y esculturales, mandíbulas anchas, cuellos alargados, cabellos voluminosos y siluetas muy definidas, combinando materiales fotográficos e iluminación de estudio con proporciones deliberadamente inusuales.
+Krea 2 OpenCast LoRA es un adaptador LoRA para generación de imágenes creado por Akatz Labs para OpenCast Studio, publicado en Hugging Face por el usuario akatz-ai. Se trata de un peso de adaptación que se aplica sobre el modelo base krea/Krea-2-Raw (concretamente sobre la variante Krea 2 Turbo) para producir retratos de personajes ficticios con un estilo muy distintivo: rostros exagerados y esculturales, mandíbulas anchas, cuellos alargados, cabellos voluminosos y siluetas muy definidas, combinando materiales fotográficos e iluminación de estudio con proporciones deliberadamente inusuales.
 
 El problema que resuelve es la generación consistente de personajes con estética concreta para flujos de diseño de personajes (character design) y retratos, sin necesidad de trigger tokens ni ingeniería de prompts compleja: los ejemplos del autor usan texto descriptivo ordinario con fuerza de LoRA 1.0. Es relevante porque incluye workflows completos de ComfyUI (canvas y API), índice de prompts con seeds exactas y ejemplos reproducibles, lo que facilita su integración inmediata en pipelines de producción.
 
@@ -82,7 +82,7 @@ No hay alternativas publicadas específicas con las que el autor compare; la com
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/akatz-ai/Krea-2-OpenCast-LoRA
+- Ficha en Hugging Face: https://huggingface.co/akatz-ai/Krea-2-OpenCast-LoRA
 - Pesos del LoRA: https://huggingface.co/akatz-ai/Krea-2-OpenCast-LoRA/blob/main/krea2_opencast_v1.safetensors
 - Licencia: https://huggingface.co/akatz-ai/Krea-2-OpenCast-LoRA/blob/main/LICENSE.pdf
 - Índice de ejemplos: https://huggingface.co/akatz-ai/Krea-2-OpenCast-LoRA/blob/main/examples/README.md

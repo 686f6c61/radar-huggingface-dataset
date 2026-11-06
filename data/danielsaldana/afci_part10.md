@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Repositorio | Contenido | Mecanismo de arco | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AFCI_part10 (este) | 14 grabaciones crudas `C2_`/`C3_` + ReadMe Zenodo 3997337 | Apertura de contacto y cargas resistivas | other (datos originales CC-BY-4.0) | HuggingFace |
-| AFCI_part8 | 13 grabaciones crudas `C2_` + ReadMe Zenodo 5501527 | Trayectoria carbonizada | other (datos originales CC-BY-4.0) | HuggingFace |
-| AFCI_part9 | 13 grabaciones crudas `C3_` | Trayectoria carbonizada | other (datos originales CC-BY-4.0) | HuggingFace |
-| AFCI_part7 (Ferracuti et al. 2025) | Ventanas precortadas + codigo | Mixto | no disponible en la informacion proporcionada | HuggingFace |
+| AFCI_part10 (este) | 14 grabaciones crudas `C2_`/`C3_` + ReadMe Zenodo 3997337 | Apertura de contacto y cargas resistivas | other (datos originales CC-BY-4.0) | Hugging Face |
+| AFCI_part8 | 13 grabaciones crudas `C2_` + ReadMe Zenodo 5501527 | Trayectoria carbonizada | other (datos originales CC-BY-4.0) | Hugging Face |
+| AFCI_part9 | 13 grabaciones crudas `C3_` | Trayectoria carbonizada | other (datos originales CC-BY-4.0) | Hugging Face |
+| AFCI_part7 (Ferracuti et al. 2025) | Ventanas precortadas + codigo | Mixto | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de informacion sobre otros conjuntos de datos AFCI comparables en la documentacion facilitada.
 
@@ -84,7 +84,7 @@ No se dispone de informacion sobre otros conjuntos de datos AFCI comparables en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danielsaldana/AFCI_part10
+- Repositorio en Hugging Face: https://huggingface.co/danielsaldana/AFCI_part10
 - Indice maestro del kit (AFCI_part6): https://huggingface.co/danielsaldana/AFCI_part6/blob/main/00_START_HERE_MASTER_INDEX.md
 - Zenodo 3997337 (origen de las grabaciones de apertura de contacto): https://zenodo.org/records/3997337
 - Zenodo 5501527 (origen de las grabaciones de trayectoria carbonizada): https://zenodo.org/records/5501527

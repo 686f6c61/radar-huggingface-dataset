@@ -38,7 +38,7 @@ El dato más diferencial es el corpus: no había ningún conjunto de reseñas de
 - Tool calling / function calling: no disponible, es un modelo discriminativo.
 - Razonamiento multi-paso o modo "thinking": no disponible.
 - Visión o audio: no disponible.
-- El repositorio de GitHub asociado (`review_intel.infer.Analyzer`) añade recuperación de las frases que sustentan cada aspecto y entidades GLiNER, aunque eso no forma parte del modelo en HuggingFace.
+- El repositorio de GitHub asociado (`review_intel.infer.Analyzer`) añade recuperación de las frases que sustentan cada aspecto y entidades GLiNER, aunque eso no forma parte del modelo en Hugging Face.
 
 ## Casos de uso
 
@@ -74,9 +74,9 @@ El aspecto más débil es diseño, con macro-F1 de 0,73, atribuido a que las opi
 
 | Modelo | Parámetros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| car-review-absa | 149,6 M | No disponible (entrenado a 256 tokens) | Macro-F1 de aspectos 0,921; veredicto global 90,6% | Apache 2.0 | HuggingFace + Space de demo |
+| car-review-absa | 149,6 M | No disponible (entrenado a 256 tokens) | Macro-F1 de aspectos 0,921; veredicto global 90,6% | Apache 2.0 | Hugging Face + Space de demo |
 | Pipeline DeBERTa-v3 ABSA + DistilBERT-SST2 | No disponible | No disponible | Macro-F1 de aspectos 0,183; veredicto global 74,2% | No disponible en la información | Pipeline previa del mismo autor |
-| answerdotai/ModernBERT-base | 149 M (modelo base de este fine-tuning) | No disponible en la información | No disponible: es un modelo base sin cabeza ABSA, no comparable directamente | No disponible en la información | HuggingFace |
+| answerdotai/ModernBERT-base | 149 M (modelo base de este fine-tuning) | No disponible en la información | No disponible: es un modelo base sin cabeza ABSA, no comparable directamente | No disponible en la información | Hugging Face |
 
 No se dispone de datos de otros modelos ABSA especializados en dominio automovilístico con los que comparar métricas en el mismo conjunto de test.
 
@@ -94,7 +94,7 @@ No se dispone de datos de otros modelos ABSA especializados en dominio automovil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Phoenixak99/car-review-absa
+- Modelo en Hugging Face: https://huggingface.co/Phoenixak99/car-review-absa
 - Demo en vivo (Space): https://huggingface.co/spaces/Phoenixak99/car-reviews-analyzer
 - Código, generación de datos y evaluación: https://github.com/phoenixak/Analyzing-Car-Reviews-with-LLMs
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base

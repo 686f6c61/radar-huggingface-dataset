@@ -89,7 +89,7 @@ No se dispone de benchmarks comparables entre tecnicas de steering en la informa
 
 | Enfoque | Espacio de intervencion | Modelos | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Query steering (este repo) | Query de cada cabeza de atencion, en el ultimo token, post-q_norm y pre-RoPE | Qwen3-4B, Qwen3-32B | safetensors float32 + codigo Python | MIT | HuggingFace y GitHub del autor |
+| Query steering (este repo) | Query de cada cabeza de atencion, en el ultimo token, post-q_norm y pre-RoPE | Qwen3-4B, Qwen3-32B | safetensors float32 + codigo Python | MIT | Hugging Face y GitHub del autor |
 | Persona steering / `persona-steering-template-library` | Estados ocultos y plantillas de pares de contraste | no disponible | no disponible | no disponible | GitHub del autor |
 | Activation steering tipo CAA (Contrastive Activation Addition) | Corriente residual | no disponible | no disponible | no disponible | no disponible |
 | Representation engineering (RepE) | Representaciones internas de alto nivel | no disponible | no disponible | no disponible | no disponible |
@@ -111,11 +111,11 @@ La diferencia declarada frente al steering de estados ocultos es el punto de int
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wassname/query-steering
+- Repositorio en Hugging Face: https://huggingface.co/wassname/query-steering
 - Repositorio de codigo en GitHub: https://github.com/wassname/query-steering
 - Diario de investigacion del proyecto: `RESEARCH_JOURNAL.md` dentro del repositorio de GitHub
 - Plantilla de referencia para validacion de pares: https://github.com/wassname/persona-steering-template-library
 - Reproduccion del incidente OpenAI–Hugging Face en LessWrong: https://www.lesswrong.com/posts/fMnC6ZD37qrnZAFYz/openai-huggingface-a-reproduction-and-lessons-for-alignment
 - Cobertura en AGI Hunt: https://agihunt.info/en/p/1a0eaa4454aa5db5a102a8d7ded
 - Perfil del autor en GitHub: https://github.com/wassname
-- Perfil del autor en HuggingFace: https://huggingface.co/wassname/models
+- Perfil del autor en Hugging Face: https://huggingface.co/wassname/models

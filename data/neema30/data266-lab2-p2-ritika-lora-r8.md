@@ -80,9 +80,9 @@ No se han publicado resultados comparativos con otros modelos (MMLU, HumanEval, 
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `neema30/data266-lab2-p2-ritika-lora-r8` | LoRA sobre SD 1.5 | 1,59 M entrenables | 512 px | CreativeML OpenRAIL-M + dataset no comercial | HuggingFace, 0 descargas |
+| `neema30/data266-lab2-p2-ritika-lora-r8` | LoRA sobre SD 1.5 | 1,59 M entrenables | 512 px | CreativeML OpenRAIL-M + dataset no comercial | Hugging Face, 0 descargas |
 | `stable-diffusion-v1-5/stable-diffusion-v1-5` (base) | Difusion latente completa | no disponible en la informacion | 512 px | CreativeML OpenRAIL-M | Ampliamente disponible |
-| Otros LoRA de SD 1.5 sobre Pokemon BLIP captions | LoRA sobre SD 1.5 | variable (miles a millones) | 512 px | Depende del autor y dataset | Disponibles en HuggingFace, no comparados aqui |
+| Otros LoRA de SD 1.5 sobre Pokemon BLIP captions | LoRA sobre SD 1.5 | variable (miles a millones) | 512 px | Depende del autor y dataset | Disponibles en Hugging Face, no comparados aqui |
 
 No se dispone de datos de benchmarks de alternativas en la informacion proporcionada para establecer una comparacion cuantitativa de rendimiento.
 
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks de alternativas en la informacion proporcio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/neema30/data266-lab2-p2-ritika-lora-r8
+- Hugging Face: https://huggingface.co/neema30/data266-lab2-p2-ritika-lora-r8
 - Modelo base: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Dataset de entrenamiento: https://huggingface.co/datasets/reach-vb/pokemon-blip-captions
 - Libreria PEFT: https://github.com/huggingface/peft

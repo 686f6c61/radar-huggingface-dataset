@@ -71,10 +71,10 @@ La model card de esta variante no incluye cifras de MMLU, HumanEval, GSM8K ni de
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BigBang-v1-MLX-Q4_K_M | 34,66B | ~3B (256 expertos, 8/token) | 262K | Apache 2.0 | HuggingFace, formato MLX |
-| Qwen3-30B-A3B | ~30,5B | ~3,3B (128 expertos, 8/token) | 128K nativo | Apache 2.0 | HuggingFace, multiformato |
-| Qwen3-32B | ~32,8B | denso | 128K nativo | Apache 2.0 | HuggingFace, multiformato |
-| gpt-oss-20b | ~21B | ~3,6B | 128K | Apache 2.0 | HuggingFace, multiformato |
+| BigBang-v1-MLX-Q4_K_M | 34,66B | ~3B (256 expertos, 8/token) | 262K | Apache 2.0 | Hugging Face, formato MLX |
+| Qwen3-30B-A3B | ~30,5B | ~3,3B (128 expertos, 8/token) | 128K nativo | Apache 2.0 | Hugging Face, multiformato |
+| Qwen3-32B | ~32,8B | denso | 128K nativo | Apache 2.0 | Hugging Face, multiformato |
+| gpt-oss-20b | ~21B | ~3,6B | 128K | Apache 2.0 | Hugging Face, multiformato |
 
 Nota: los datos de los modelos alternativos proceden de informacion publica de sus respectivas fichas y se incluyen solo como referencia estructural. No se dispone de comparaciones de rendimiento verificadas entre BigBang-v1 y estos modelos, ni de resultados de benchmarks del modelo analizado.
 
@@ -93,7 +93,7 @@ Nota: los datos de los modelos alternativos proceden de informacion publica de s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hermitdave/BigBang-v1-MLX-Q4_K_M
+- Modelo en Hugging Face: https://huggingface.co/hermitdave/BigBang-v1-MLX-Q4_K_M
 - Modelo base: https://huggingface.co/endless-frontier/BigBang-v1
 - Variante 4-bit uniforme: https://huggingface.co/mlx-community/BigBang-v1-MLX-4bit
 - Variante Q4_K_M bajo mlx-community: https://huggingface.co/mlx-community/BigBang-v1-MLX-Q4_K_M

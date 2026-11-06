@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AmberHyunKIM/act_libero_goal_task0` es una política robótica de tarea única entrenada con la arquitectura ACT (Action Chunking Transformer) mediante la librería LeRobot de HuggingFace. Lo publica el usuario AmberHyunKIM y resuelve una única tarea del benchmark de simulación LIBERO: abrir el cajón central de un mueble (`libero_goal`, índice de tarea 0, equivalente a `task_index=19` en el dataset `lerobot/libero`). No es un modelo de lenguaje ni un modelo de propósito general: es un controlador visuomotor que mapea observaciones (imágenes y estado propioceptivo) a secuencias de acciones del robot.
+El modelo `AmberHyunKIM/act_libero_goal_task0` es una política robótica de tarea única entrenada con la arquitectura ACT (Action Chunking Transformer) mediante la librería LeRobot de Hugging Face. Lo publica el usuario AmberHyunKIM y resuelve una única tarea del benchmark de simulación LIBERO: abrir el cajón central de un mueble (`libero_goal`, índice de tarea 0, equivalente a `task_index=19` en el dataset `lerobot/libero`). No es un modelo de lenguaje ni un modelo de propósito general: es un controlador visuomotor que mapea observaciones (imágenes y estado propioceptivo) a secuencias de acciones del robot.
 
 El modelo tiene 51.671.687 parámetros (unos 51,6 millones, aproximadamente 0,05 B) y se distribuye en formato safetensors bajo licencia Apache 2.0, con un tamaño de repositorio de 0,2 GB. Se entrenó durante 100.000 pasos con batch size 8 sobre 43 episodios de esa única tarea, en una sola GPU RTX 5070 Ti de 16 GB y en 57 minutos de reloj de pared.
 
@@ -25,7 +25,7 @@ Su relevancia es doble. Por un lado, sirve como referencia de eficiencia: consig
 | Tarea | `open the middle drawer of the cabinet` (`libero_goal`, task index 0) |
 | Tamano del repositorio | 0,2 GB |
 | Region | us |
-| Fecha de publicacion (segun HuggingFace) | 2026-09-23 |
+| Fecha de publicacion (segun Hugging Face) | 2026-09-23 |
 
 ## Arquitectura y entrenamiento
 
@@ -101,7 +101,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Tipo | Tasa de exito (libero_goal task 0) | VRAM pico | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| ACT (este checkpoint) | 0,05 B | Política de imitación de tarea única, no condicionada por lenguaje | 100,0 % | 1283 MiB | apache-2.0 | HuggingFace |
+| ACT (este checkpoint) | 0,05 B | Política de imitación de tarea única, no condicionada por lenguaje | 100,0 % | 1283 MiB | apache-2.0 | Hugging Face |
 | SmolVLA | 0,5 B | Modelo visión-lenguaje-acción | 100,0 % | 1975 MiB | no disponible | no disponible |
 | MolmoAct2 | 5 B | Modelo visión-lenguaje-acción | 90,0 % | 13541 MiB | no disponible | no disponible |
 
@@ -122,7 +122,7 @@ Los datos de SmolVLA y MolmoAct2 proceden de las mediciones de referencia inclui
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberHyunKIM/act_libero_goal_task0
+- Modelo en Hugging Face: https://huggingface.co/AmberHyunKIM/act_libero_goal_task0
 - Checkpoint de 20.000 pasos: https://huggingface.co/AmberHyunKIM/act_libero_goal_task0_20k
 - Proyecto ACT / ALOHA: https://tonyzhaozh.github.io/aloha/
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

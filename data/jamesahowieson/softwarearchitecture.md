@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JamesAHowieson/SoftwareArchitecture` es un adaptador de ajuste fino publicado en HuggingFace, no un modelo completo. Se distribuye a través de la librería PEFT y está construido sobre el modelo base `Qwen/Qwen2.5-Coder-7B-Instruct`, según los metadatos del repositorio. Por el nombre y la naturaleza del adaptador, su propósito declarado parece ser el ajuste del comportamiento del modelo base en tareas relacionadas con arquitectura de software, aunque la model card publicada no contiene ninguna descripción funcional: es la plantilla por defecto de HuggingFace, con todos los campos marcados como `[More Information Needed]`.
+`JamesAHowieson/SoftwareArchitecture` es un adaptador de ajuste fino publicado en Hugging Face, no un modelo completo. Se distribuye a través de la librería PEFT y está construido sobre el modelo base `Qwen/Qwen2.5-Coder-7B-Instruct`, según los metadatos del repositorio. Por el nombre y la naturaleza del adaptador, su propósito declarado parece ser el ajuste del comportamiento del modelo base en tareas relacionadas con arquitectura de software, aunque la model card publicada no contiene ninguna descripción funcional: es la plantilla por defecto de Hugging Face, con todos los campos marcados como `[More Information Needed]`.
 
 El repositorio presenta un tamaño de 0.0 GB, cero descargas y cero "likes" en el momento de la consulta, y fue creado el 19 de septiembre de 2026. La ausencia de datos de entrenamiento, hiperparámetros, evaluación o licencia impide verificar la calidad, el alcance real del ajuste y las condiciones de uso. Cualquier evaluación de este adaptador debe partir, por tanto, de las características conocidas del modelo base y no de la información publicada en el repositorio.
 
@@ -85,8 +85,8 @@ No es posible establecer una comparativa rigurosa, porque no hay ningun dato de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| JamesAHowieson/SoftwareArchitecture (adaptador LoRA) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
-| Qwen/Qwen2.5-Coder-7B-Instruct (modelo base) | no disponible en este repositorio | no disponible en este repositorio | no disponible en este repositorio | HuggingFace | no disponible en esta ficha |
+| JamesAHowieson/SoftwareArchitecture (adaptador LoRA) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
+| Qwen/Qwen2.5-Coder-7B-Instruct (modelo base) | no disponible en este repositorio | no disponible en este repositorio | no disponible en este repositorio | Hugging Face | no disponible en esta ficha |
 | Otras alternativas de 7B para codigo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Para una comparativa fiable habria que consultar la documentacion oficial del modelo base y de sus competidores directos, y ejecutar una evaluacion propia sobre el adaptador.
@@ -104,7 +104,7 @@ Para una comparativa fiable habria que consultar la documentacion oficial del mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JamesAHowieson/SoftwareArchitecture
+- Modelo en Hugging Face: https://huggingface.co/JamesAHowieson/SoftwareArchitecture
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700

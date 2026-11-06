@@ -53,16 +53,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: el modelo ocupa 0,4 GB en disco. Con 94.570.375 parámetros en float32, la inferencia requiere aproximadamente 378 MB de VRAM.
 - GPU recomendadas: no disponible. Cualquier GPU de consumo con al menos 1 GB de VRAM (por ejemplo, RTX 3060) puede ejecutarlo.
 - También puede ejecutarse en CPU, ya que el tamaño del modelo es reducido.
-- Opciones de despliegue: transformers (pipeline de HuggingFace), compatible con `audio-classification`. Puede convertirse a ONNX si se requiere.
+- Opciones de despliegue: transformers (pipeline de Hugging Face), compatible con `audio-classification`. Puede convertirse a ONNX si se requiere.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| VasilisAsim/wav2vec-finetuned-TESS | 94,57 M | no disponible | no disponible | HuggingFace |
-| VasilisAsim/wav2vec-base-finetuned-TESS | 94,57 M | no disponible | no disponible | HuggingFace |
-| VasilisAsim/wav2vec-base-finetuned-IEMOCAP | 94,57 M | no disponible | no disponible | HuggingFace |
+| VasilisAsim/wav2vec-finetuned-TESS | 94,57 M | no disponible | no disponible | Hugging Face |
+| VasilisAsim/wav2vec-base-finetuned-TESS | 94,57 M | no disponible | no disponible | Hugging Face |
+| VasilisAsim/wav2vec-base-finetuned-IEMOCAP | 94,57 M | no disponible | no disponible | Hugging Face |
 
 Los tres modelos comparten la misma arquitectura base y el mismo número de parámetros. Se diferencian en el dataset de ajuste fino: TESS e IEMOCAP son conjuntos de datos de emociones en voz, aunque no se dispone de detalles sobre su composición ni sobre el rendimiento comparativo.
 
@@ -77,6 +77,6 @@ Los tres modelos comparten la misma arquitectura base y el mismo número de par�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VasilisAsim/wav2vec-finetuned-TESS
+- Hugging Face: https://huggingface.co/VasilisAsim/wav2vec-finetuned-TESS
 - Modelo similar: https://huggingface.co/VasilisAsim/wav2vec-base-finetuned-TESS
 - Modelo similar: https://huggingface.co/VasilisAsim/wav2vec-base-finetuned-IEMOCAP

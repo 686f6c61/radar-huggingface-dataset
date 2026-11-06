@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Hutapearyan/efficientformer-classification-2024` es un prototipo de investigación de la arquitectura **EfficientFormer** orientado a tareas de clasificación de imágenes. Ha sido desarrollado por el usuario Hutapearyan y publicado en HuggingFace con licencia BSD-3-Clause. El repositorio incluye una implementación en Python (`eval.py`), un archivo de configuración (`config.json`), un archivo de argumentos de entrenamiento (`training_args.json`) y un checkpoint de inicialización en formato `safetensors`.
+El modelo `Hutapearyan/efficientformer-classification-2024` es un prototipo de investigación de la arquitectura **EfficientFormer** orientado a tareas de clasificación de imágenes. Ha sido desarrollado por el usuario Hutapearyan y publicado en Hugging Face con licencia BSD-3-Clause. El repositorio incluye una implementación en Python (`eval.py`), un archivo de configuración (`config.json`), un archivo de argumentos de entrenamiento (`training_args.json`) y un checkpoint de inicialización en formato `safetensors`.
 
 Se trata de un modelo **no entrenado**: el checkpoint incluido está pensado únicamente para pruebas de humo y validación de la implementación, no como un modelo listo para producir resultados. La arquitectura configurada es la variante "giant" de EfficientFormer, con atención de ventana deslizante, fusión mediante concat MLP, activación Mish y normalización RMSNorm. El número total de parámetros es de **33.088**, un tamaño extremadamente reducido. No se dispone de información sobre la longitud de contexto ni sobre los idiomas soportados, ya que se trata de un modelo de visión. Su relevancia actual radica en servir como punto de partida experimental para investigar la arquitectura EfficientFormer, no como una solución desplegable.
 
@@ -57,23 +57,23 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes para una comparativa cuantitativa con alternativas de la misma categoría. Los modelos EfficientFormer oficiales publicados en HuggingFace son versiones preentrenadas para clasificación de imágenes, mientras que este repositorio contiene un prototipo sin entrenar. A modo orientativo:
+No se dispone de datos suficientes para una comparativa cuantitativa con alternativas de la misma categoría. Los modelos EfficientFormer oficiales publicados en Hugging Face son versiones preentrenadas para clasificación de imágenes, mientras que este repositorio contiene un prototipo sin entrenar. A modo orientativo:
 
 | Modelo | Parametros | Contexto | Licencia | Estado |
 |---|---|---|---|---|
 | Hutapearyan/efficientformer-classification-2024 | 33.088 | No disponible | BSD-3-Clause | Prototipo sin entrenar |
-| EfficientFormer (oficial HuggingFace) | No disponible | No disponible | No disponible | Preentrenado |
+| EfficientFormer (oficial Hugging Face) | No disponible | No disponible | No disponible | Preentrenado |
 
 ## Limitaciones y advertencias
 
 - El checkpoint incluido **no ha sido entrenado**, por lo que no es apto para uso en producción ni para tareas reales de clasificación.
 - No se ha realizado ninguna auditoría de robustez, equidad ni transferencia de dominio.
 - Los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto incluidos en el repositorio.
-- Al ser una implementación personalizada, las APIs genéricas de HuggingFace no pueden cargar el modelo sin un adaptador explícito.
+- Al ser una implementación personalizada, las APIs genéricas de Hugging Face no pueden cargar el modelo sin un adaptador explícito.
 - No se dispone de información sobre la longitud de contexto ni sobre idiomas, ya que es un modelo de visión.
 - La licencia BSD-3-Clause permite uso comercial y modificación, pero el estado actual del modelo impide cualquier aplicación práctica.
 
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/Hutapearyan/efficientformer-classification-2024
-- Documentación de EfficientFormer en HuggingFace: https://huggingface.co/docs/transformers/v4.51.3/en/model_doc/efficientformer
+- Documentación de EfficientFormer en Hugging Face: https://huggingface.co/docs/transformers/v4.51.3/en/model_doc/efficientformer

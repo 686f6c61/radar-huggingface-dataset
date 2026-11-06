@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `compiledcode83/queue_qpr-r1` es un modelo de lenguaje multimodal (image-text-to-text) desarrollado por el usuario `compiledcode83`. Se presenta como un modelo de arquitectura `qwen3_5_moe`, lo que indica una mezcla de expertos (Mixture of Experts, MoE) en la línea de la familia Qwen. Con un total de 35 107 181 936 parámetros (aproximadamente 35,1 mil millones), está diseñado para procesar entradas de imagen y texto y generar respuestas textuales, lo que lo habilita para tareas de visión-lenguaje. El modelo se distribuye en formato `safetensors` y su acceso está restringido en HuggingFace, requiriendo la aceptación de condiciones por parte del usuario. No se dispone de información pública sobre su licencia, idiomas soportados, ni detalles de entrenamiento o rendimiento, lo que limita su evaluación técnica rigurosa.
+El modelo `compiledcode83/queue_qpr-r1` es un modelo de lenguaje multimodal (image-text-to-text) desarrollado por el usuario `compiledcode83`. Se presenta como un modelo de arquitectura `qwen3_5_moe`, lo que indica una mezcla de expertos (Mixture of Experts, MoE) en la línea de la familia Qwen. Con un total de 35 107 181 936 parámetros (aproximadamente 35,1 mil millones), está diseñado para procesar entradas de imagen y texto y generar respuestas textuales, lo que lo habilita para tareas de visión-lenguaje. El modelo se distribuye en formato `safetensors` y su acceso está restringido en Hugging Face, requiriendo la aceptación de condiciones por parte del usuario. No se dispone de información pública sobre su licencia, idiomas soportados, ni detalles de entrenamiento o rendimiento, lo que limita su evaluación técnica rigurosa.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ La arquitectura se identifica como `qwen3_5_moe`, lo que sugiere un modelo de me
 
 - Procesamiento multimodal de imagen y texto (pipeline `image-text-to-text`).
 - Generación de texto a partir de entradas mixtas (imagen y texto).
-- Compatibilidad con la librería `transformers` de HuggingFace.
+- Compatibilidad con la librería `transformers` de Hugging Face.
 - Integración con endpoints compatibles (etiqueta `endpoints_compatible`).
 - No se dispone de información sobre soporte de tool calling, razonamiento multi-paso, ni capacidades específicas de agentes.
 
@@ -64,4 +64,4 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- [HuggingFace - compiledcode83/queue_qpr-r1](https://huggingface.co/compiledcode83/queue_qpr-r1)
+- [Hugging Face - compiledcode83/queue_qpr-r1](https://huggingface.co/compiledcode83/queue_qpr-r1)

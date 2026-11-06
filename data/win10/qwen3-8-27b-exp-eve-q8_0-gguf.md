@@ -4,7 +4,7 @@
 
 Este repositorio contiene una conversión a formato GGUF del modelo `win10/Qwen3.8-27b-EXP-EVE`, una variante experimental del Qwen3.8-27B desarrollado por el equipo Qwen de Alibaba. El modelo original, lanzado en agosto de 2026 bajo licencia Apache 2.0, es un transformer denso multimodal con aproximadamente 27 000 millones de parámetros y una ventana de contexto de 262 000 tokens según las especificaciones publicadas. La variante "EXP-EVE" incorpora la etiqueta "EVE" (Evolution, Tensor Gene Evolution), lo que sugiere un proceso de evolución de pesos o arquitectura, aunque no se han publicado detalles técnicos sobre esta modificación concreta.
 
-La relevancia de este archivo GGUF radica en que permite ejecutar el modelo en local mediante `llama.cpp`, `llama-server` u otras herramientas compatibles con este formato, sin necesidad de depender de la infraestructura de HuggingFace. Al ser una cuantización Q8_0, ofrece un equilibrio entre calidad y requisitos de memoria, aunque el tamaño del archivo (29 GB) limita su uso a GPUs de gama alta o inferencia en CPU. Es importante señalar que se trata de una conversión comunitaria no oficial, y que la variante EVE puede presentar comportamientos distintos al modelo base original.
+La relevancia de este archivo GGUF radica en que permite ejecutar el modelo en local mediante `llama.cpp`, `llama-server` u otras herramientas compatibles con este formato, sin necesidad de depender de la infraestructura de Hugging Face. Al ser una cuantización Q8_0, ofrece un equilibrio entre calidad y requisitos de memoria, aunque el tamaño del archivo (29 GB) limita su uso a GPUs de gama alta o inferencia en CPU. Es importante señalar que se trata de una conversión comunitaria no oficial, y que la variante EVE puede presentar comportamientos distintos al modelo base original.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ La variante EVE no tiene una ficha oficial, por lo que no se puede comparar su r
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/win10/Qwen3.8-27b-EXP-EVE-Q8_0-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/win10/Qwen3.8-27b-EXP-EVE-Q8_0-GGUF
 - Modelo base (safetensors): https://huggingface.co/win10/Qwen3.8-27b-EXP-EVE
 - Repositorio oficial de Qwen3.8-27B (GitHub): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía de ejecución local (yottalabs.ai): https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio davidwdw/fa-eval-v2-centre-a3-5000-public-default224-e10f10-s1-a9780c8a3727 no es un modelo de lenguaje: es un paquete de archivo versionado publicado en HuggingFace bajo el identificador de autor davidwdw. La propia model card lo describe como "versioned fleet archive" cuyo contenido corresponde al nivel (tier) "raw episode/clip JSON videos traces logs protocol, producer SHA256SUMS, summarized report". Es decir, se trata de artefactos de una ejecucion de evaluacion: trazas, registros, clips y episodios en JSON, mas sumas de verificacion SHA256 y un informe resumido.
+El repositorio davidwdw/fa-eval-v2-centre-a3-5000-public-default224-e10f10-s1-a9780c8a3727 no es un modelo de lenguaje: es un paquete de archivo versionado publicado en Hugging Face bajo el identificador de autor davidwdw. La propia model card lo describe como "versioned fleet archive" cuyo contenido corresponde al nivel (tier) "raw episode/clip JSON videos traces logs protocol, producer SHA256SUMS, summarized report". Es decir, se trata de artefactos de una ejecucion de evaluacion: trazas, registros, clips y episodios en JSON, mas sumas de verificacion SHA256 y un informe resumido.
 
 El nombre del repositorio sugiere una ejecucion de evaluacion de la flota "fa-eval-v2", asociada a una receta canonica registrada en la ruta interna reports/2026-10-02_all_pending_eval_deployment. El tamano del repositorio es de 0,2 GB y no registra descargas ni likes desde su publicacion. La model card no declara pipeline, licencia ni idiomas soportados, y no incluye pesos, configuracion de arquitectura ni tokenizador.
 
@@ -86,6 +86,6 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-v2-centre-a3-5000-public-default224-e10f10-s1-a9780c8a3727
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-v2-centre-a3-5000-public-default224-e10f10-s1-a9780c8a3727
 - Receta canonica referenciada en la model card: reports/2026-10-02_all_pending_eval_deployment (ruta interna, no se proporciona URL publica)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

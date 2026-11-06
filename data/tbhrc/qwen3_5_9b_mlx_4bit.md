@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables dentro del mismo formato
 
 ## Enlaces
 
-- [HuggingFace - tbhrc/qwen3_5_9b_mlx_4bit](https://huggingface.co/tbhrc/qwen3_5_9b_mlx_4bit)
+- [Hugging Face - tbhrc/qwen3_5_9b_mlx_4bit](https://huggingface.co/tbhrc/qwen3_5_9b_mlx_4bit)
 - [Modelo original Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B)
 - [mlx-community/Qwen3.5-9B-MLX-4bit](https://huggingface.co/mlx-community/Qwen3.5-9B-MLX-4bit)
 - [Guía de Qwen 3.5 MLX en Apple Silicon](https://willitunai.com/blog/qwen-3-5-mlx-apple-silicon-guide)

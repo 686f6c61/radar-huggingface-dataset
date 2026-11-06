@@ -41,7 +41,7 @@ El volumen de entrenamiento declarado es de 86.016 millones de tokens, una cifra
 - Generacion de texto autoregresiva en turco e ingles.
 - Conversacion multi-turno basica, segun la etiqueta "conversational" y el sufijo "-it" del modelo base.
 - Ejecucion en llama.cpp con modo conversacional (`-cnv`), Ollama y LM Studio.
-- Compatible con endpoints de inferencia (etiqueta `endpoints_compatible` en HuggingFace).
+- Compatible con endpoints de inferencia (etiqueta `endpoints_compatible` en Hugging Face).
 - Capacidad de razonamiento, matematicas y generacion de codigo: no documentada y, dado el tamano del modelo, previsiblemente muy limitada.
 - Tool calling / function calling: no documentado.
 - Soporte de agentes y multi-step reasoning: no documentado.
@@ -90,11 +90,11 @@ Nota: los datos de contexto y parametros de los modelos comparados provienen de 
 - El soporte multilingue se limita a turco e ingles segun las etiquetas del repositorio. El rendimiento en otros idiomas, incluido el castellano, no esta documentado y previsiblemente sera nulo o muy pobre.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin historial de validacion por parte de la comunidad.
 - La licencia Apache 2.0 permite uso comercial y modificacion sin restricciones adicionales, pero no exime al usuario de evaluar el modelo antes de desplegarlo.
-- Las fechas de creacion y actualizacion del repositorio (2026-09-18) son posteriores a la fecha de consulta habitual, lo que sugiere un posible error de metadatos en HuggingFace.
+- Las fechas de creacion y actualizacion del repositorio (2026-09-18) son posteriores a la fecha de consulta habitual, lo que sugiere un posible error de metadatos en Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcckfdn/minillama-test-v2-it-GGUF
+- Modelo en Hugging Face: https://huggingface.co/bcckfdn/minillama-test-v2-it-GGUF
 - Modelo base: https://huggingface.co/bcckfdn/minillama-test-v2-it
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Ollama: https://ollama.com

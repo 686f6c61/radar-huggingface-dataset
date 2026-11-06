@@ -98,11 +98,11 @@ Fidelidad de conversión: 1,83 % de WER frente a 1,79 % de una decodificación N
 
 | Modelo | Parametros | Ventana | WER test-clean | WER test-other | RTFx test-clean | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Phonon-2 (este modelo, Core ML) | ~600 M | 15 s | 2,47 % | 4,62 % | 159× | cc-by-4.0 | HuggingFace, via FluidAudio `AsrModelVersion.phonon2` |
-| parakeet-tdt-0.6b-v3 (Core ML) | ~600 M | 15 s | 2,27 % | 4,12 % | 149–152× | no disponible | HuggingFace (FluidInference/parakeet-tdt-0.6b-v3-coreml) |
+| Phonon-2 (este modelo, Core ML) | ~600 M | 15 s | 2,47 % | 4,62 % | 159× | cc-by-4.0 | Hugging Face, via FluidAudio `AsrModelVersion.phonon2` |
+| parakeet-tdt-0.6b-v3 (Core ML) | ~600 M | 15 s | 2,27 % | 4,12 % | 149–152× | no disponible | Hugging Face (FluidInference/parakeet-tdt-0.6b-v3-coreml) |
 | Ultra (FluidAudio) | no disponible | no disponible | 2,13 % | 3,81 % | 151× | no disponible | FluidAudio |
 | Redux (FluidAudio) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | FluidAudio |
-| FermionResearch/Phonon-2 (checkpoint fp) | ~600 M | 15 s | 2,47 % (via esta conversion) | 4,62 % | no disponible | no disponible | HuggingFace |
+| FermionResearch/Phonon-2 (checkpoint fp) | ~600 M | 15 s | 2,47 % (via esta conversion) | 4,62 % | no disponible | no disponible | Hugging Face |
 
 En el conjunto largo conversacional (Earnings-22) el orden se invierte parcialmente: Ultra (13,5 % de WER, 469×), Redux (14,8 %, 254×) y v3 (16,5 %, 331×) superan en precisión a Phonon-2 (17,2 %, 478×), que a cambio es el más rápido de los cuatro.
 
@@ -121,7 +121,7 @@ En el conjunto largo conversacional (Earnings-22) el orden se invierte parcialme
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/phonon-2-coreml
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/phonon-2-coreml
 - Checkpoint base: https://huggingface.co/FermionResearch/Phonon-2
 - Modelo del que deriva la arquitectura: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Conversion Core ML de referencia v3: https://huggingface.co/FluidInference/parakeet-tdt-0.6b-v3-coreml

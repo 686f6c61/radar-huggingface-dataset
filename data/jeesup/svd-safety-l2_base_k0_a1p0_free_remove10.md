@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-l2_base_k0_a1p0_free_remove10 es un checkpoint derivado de meta-llama/Llama-2-7b-chat-hf al que se le ha aplicado una compresión SVD-LLM que elimina el 10,00 % de los parámetros densos. El autor, identificado en HuggingFace como Jeesup, lo publica como artefacto de investigación dentro de un estudio sistemático sobre cómo la compresión por descomposición en valores singulares degrada el comportamiento de seguridad y qué regla de selección de componentes lo repara mejor. No se trata de un modelo conversacional de propósito general, sino de una celda concreta de una rejilla experimental.
+svd-safety-l2_base_k0_a1p0_free_remove10 es un checkpoint derivado de meta-llama/Llama-2-7b-chat-hf al que se le ha aplicado una compresión SVD-LLM que elimina el 10,00 % de los parámetros densos. El autor, identificado en Hugging Face como Jeesup, lo publica como artefacto de investigación dentro de un estudio sistemático sobre cómo la compresión por descomposición en valores singulares degrada el comportamiento de seguridad y qué regla de selección de componentes lo repara mejor. No se trata de un modelo conversacional de propósito general, sino de una celda concreta de una rejilla experimental.
 
 El checkpoint parte de la fracción de parámetros resultante de 0,8998 y, en esta celda concreta, aplica un presupuesto de restauración del 0,000 % (cero componentes restaurados o intercambiados). La regla de selección de componentes figura como `unknown` en la propia ficha, y la semilla empleada es 42. El repositorio ocupa 13,5 GB y contiene pesos en formato safetensors compatibles con la librería transformers.
 
@@ -72,9 +72,9 @@ No se han publicado en la informacion disponible resultados comparativos de MMLU
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| svd-safety-l2_base_k0_a1p0_free_remove10 | 6,74 B (fraccion 0,8998) | no disponible | Llama 2 Community License | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| meta-llama/Llama-2-7b-chat-hf (modelo base) | ~7 B | 4096 tokens | Llama 2 Community License | HuggingFace, ampliamente distribuido |
-| Mistral-7B-Instruct | ~7 B | 8192 tokens | Apache 2.0 | HuggingFace |
+| svd-safety-l2_base_k0_a1p0_free_remove10 | 6,74 B (fraccion 0,8998) | no disponible | Llama 2 Community License | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| meta-llama/Llama-2-7b-chat-hf (modelo base) | ~7 B | 4096 tokens | Llama 2 Community License | Hugging Face, ampliamente distribuido |
+| Mistral-7B-Instruct | ~7 B | 8192 tokens | Apache 2.0 | Hugging Face |
 
 La comparacion de rendimiento con estas alternativas no esta disponible en la informacion proporcionada; el checkpoint objeto de la ficha publica unicamente metricas de seguridad y perplexity, sin equivalentes de MMLU, HumanEval o GSM8K.
 
@@ -92,6 +92,6 @@ La comparacion de rendimiento con estas alternativas no esta disponible en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_base_k0_a1p0_free_remove10
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_base_k0_a1p0_free_remove10
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/

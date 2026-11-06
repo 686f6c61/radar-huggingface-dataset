@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SXDE/faster-whisper-small | Whisper | no disponible | no disponible | MIT | CTranslate2 | HuggingFace |
-| openai/whisper-small | Whisper | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| guillaumekln/faster-whisper-small | Whisper | no disponible | no disponible | MIT | CTranslate2 | HuggingFace |
+| SXDE/faster-whisper-small | Whisper | no disponible | no disponible | MIT | CTranslate2 | Hugging Face |
+| openai/whisper-small | Whisper | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| guillaumekln/faster-whisper-small | Whisper | no disponible | no disponible | MIT | CTranslate2 | Hugging Face |
 
 La comparativa muestra que `SXDE/faster-whisper-small` es una conversión de `openai/whisper-small`, con el mismo rendimiento teórico, pero en un formato optimizado para CTranslate2. No se dispone de datos de benchmarks para comparar.
 

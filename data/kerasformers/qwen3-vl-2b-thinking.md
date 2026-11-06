@@ -48,7 +48,7 @@ No se ha realizado ningún entrenamiento adicional; los pesos se han convertido 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K ni evaluaciones específicas de visión-lenguaje. Para datos de rendimiento del modelo original, se debe consultar la model card de `Qwen/Qwen3-VL-2B-Thinking` en HuggingFace.
+No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K ni evaluaciones específicas de visión-lenguaje. Para datos de rendimiento del modelo original, se debe consultar la model card de `Qwen/Qwen3-VL-2B-Thinking` en Hugging Face.
 
 ## Requisitos de hardware
 
@@ -85,7 +85,7 @@ La comparativa se basa en características generales; no se dispone de datos de 
 - Modelo original: https://huggingface.co/Qwen/Qwen3-VL-2B-Thinking
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de Qwen3-VL en KerasFormers: https://imvision12.github.io/KerasFormers/qwen3_vl/
-- Colección de modelos Qwen3-VL en HuggingFace: https://huggingface.co/collections/kerasformers/qwen3-vl-6a7d7677c2926ecbddb1ed0a
+- Colección de modelos Qwen3-VL en Hugging Face: https://huggingface.co/collections/kerasformers/qwen3-vl-6a7d7677c2926ecbddb1ed0a
 - Paper Qwen3 Technical Report: https://arxiv.org/abs/2505.09388
 - Paper Qwen2.5-VL Technical Report: https://arxiv.org/abs/2502.13923
 - Paper Qwen2-VL: https://arxiv.org/abs/2409.12191

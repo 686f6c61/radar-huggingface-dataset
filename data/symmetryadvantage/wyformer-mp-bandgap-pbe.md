@@ -19,7 +19,7 @@ El entrenamiento usa la release 2026.09.28 de Materials Project (147.417 materia
 | Tipos de cuantización | No disponible (no se documentan versiones cuantizadas) |
 | Idiomas soportados | No disponible (la model card no declara idiomas; la entrada es una representación cristalográfica, no lenguaje natural) |
 | Licencia | CC BY 4.0 |
-| Formato de pesos | No disponible (la carga se realiza con `WyckoffTrainer.from_huggingface`; el repositorio figura con 0,0 GB en HuggingFace) |
+| Formato de pesos | No disponible (la carga se realiza con `WyckoffTrainer.from_huggingface`; el repositorio figura con 0,0 GB en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Tarea | Etiqueta / funcional | n (test) | MAE (eV) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| WyFormer-MP-BandGap-PBE | Gap a partir de Wyckoff | PBE (GGA/GGA+U) | 14.206 | 0,356 | CC BY 4.0 | HuggingFace, vía `wyckoff-transformer` |
-| WyFormer-MP-BandGap-r2SCAN | Gap a partir de Wyckoff | r2SCAN | 11.680 | 0,183 (transferencia, no like-for-like) | No disponible en la información | HuggingFace, mismo autor |
+| WyFormer-MP-BandGap-PBE | Gap a partir de Wyckoff | PBE (GGA/GGA+U) | 14.206 | 0,356 | CC BY 4.0 | Hugging Face, vía `wyckoff-transformer` |
+| WyFormer-MP-BandGap-r2SCAN | Gap a partir de Wyckoff | r2SCAN | 11.680 | 0,183 (transferencia, no like-for-like) | No disponible en la información | Hugging Face, mismo autor |
 | Otros predictores de band gap (ALIGNN, MEGNet, SchNet y similares) | Gap a partir de estructura con coordenadas | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 
 La comparación relevante dentro de la información disponible es con el modelo hermano r2SCAN: misma familia y misma representación de entrada, pero etiquetas de otro funcional y un conjunto disjunto con un 80 % de gaps cero, por lo que sus métricas no son intercambiables con las del modelo PBE. No se aportan datos de comparativas frente a modelos basados en estructura completa (con coordenadas), que es la categoría funcional más cercana.
@@ -98,13 +98,13 @@ La comparación relevante dentro de la información disponible es con el modelo 
 - Cobertura de vocabulario: los genes con tokens ausentes del tokenizador no se puntúan (596 casos en el conjunto r2SCAN), lo que puede dejar fuera composiciones o simetrías no vistas.
 - Dependencia de la rama `main`: `predict_gene_scalars` no está en una release y `scripts/predict.py` no maneja las simetrías de sitio aumentadas de este tokenizador, por lo que la ruta oficial de inferencia está ligada al código en desarrollo.
 - Licencia: CC BY 4.0 permite uso comercial con atribución; los materiales GNoME servidos por MP bajo CC BY-NC quedaron excluidos del entrenamiento, pero conviene verificar la procedencia de los datos si se redistribuyen derivados.
-- Estado del repositorio: 0 descargas y 0 likes en HuggingFace y un tamaño reportado de 0,0 GB, sin detalle del formato de los pesos; verificar la integridad del checkpoint antes de desplegarlo.
+- Estado del repositorio: 0 descargas y 0 likes en Hugging Face y un tamaño reportado de 0,0 GB, sin detalle del formato de los pesos; verificar la integridad del checkpoint antes de desplegarlo.
 - No aplica el riesgo de alucinación en sentido generativo (el modelo emite un escalar), pero sí el riesgo de error silencioso: una predicción baja en un material que sí es aislante puede eliminar un candidato válido del pipeline sin aviso.
 - Idiomas: no procede; el modelo no procesa lenguaje natural, por lo que no hay soporte multilingüe que evaluar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SymmetryAdvantage/WyFormer-MP-BandGap-PBE
+- Modelo en Hugging Face: https://huggingface.co/SymmetryAdvantage/WyFormer-MP-BandGap-PBE
 - Modelo hermano con etiquetas r2SCAN: https://huggingface.co/SymmetryAdvantage/WyFormer-MP-BandGap-r2SCAN
 - Repositorio de código WyckoffTransformer: https://github.com/SymmetryAdvantage/WyckoffTransformer
 - Paper de WyFormer (Kazeev et al., ICML 2025): https://arxiv.org/abs/2503.02407

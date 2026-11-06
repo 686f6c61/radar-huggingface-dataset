@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B bunny | 8B + LoRA r21 | no disponible | Adaptador de persona | Apache 2.0 | HuggingFace (16 descargas) |
-| Qwen/Qwen3-8B | 8B | no disponible | Modelo base denso | Apache 2.0 | HuggingFace |
-| Adaptadores de persona genéricos (p. ej. LoRA de estilo) | variable | heredado | LoRA | variable | HuggingFace |
+| Qwen3-8B bunny | 8B + LoRA r21 | no disponible | Adaptador de persona | Apache 2.0 | Hugging Face (16 descargas) |
+| Qwen/Qwen3-8B | 8B | no disponible | Modelo base denso | Apache 2.0 | Hugging Face |
+| Adaptadores de persona genéricos (p. ej. LoRA de estilo) | variable | heredado | LoRA | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lillycham/qwen3-8b-bunny
+- Hugging Face: https://huggingface.co/lillycham/qwen3-8b-bunny
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio de código y herramientas: https://github.com/lillycham/qwen3-steering
 - Base MLX 4 bits: https://huggingface.co/mlx-community/Qwen3-8B-4bit

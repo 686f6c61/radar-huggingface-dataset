@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B DAT GRPO Full250 GGUF (este) | 26,9 B densos | no disponible | GGUF (Q4_K_M, Q8_0) | Apache-2.0 | HuggingFace, 0 descargas |
+| Qwen3.8-27B DAT GRPO Full250 GGUF (este) | 26,9 B densos | no disponible | GGUF (Q4_K_M, Q8_0) | Apache-2.0 | Hugging Face, 0 descargas |
 | Qwen3.5 base (familia referenciada) | no disponible en la informacion | no disponible | safetensors/GGUF según release oficial | no disponible en la informacion | no disponible en la informacion |
-| Checkpoint completo `qwen3.8-27b-dat-grpo-full250` | 26,9 B + ruta de visión | no disponible | safetensors (BF16) | Apache-2.0 | HuggingFace, con Space de demo |
+| Checkpoint completo `qwen3.8-27b-dat-grpo-full250` | 26,9 B + ruta de visión | no disponible | safetensors (BF16) | Apache-2.0 | Hugging Face, con Space de demo |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de los modelos comparables en la información proporcionada, por lo que la comparación se limita a parámetros, formato y licencia.
 
@@ -94,6 +94,6 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 - Repositorio GGUF: https://huggingface.co/crazyleg11/qwen3.8-27b-dat-grpo-full250-GGUF
 - Checkpoint completo (safetensors): https://huggingface.co/crazyleg11/qwen3.8-27b-dat-grpo-full250
 - Demo en el navegador (Space): https://huggingface.co/spaces/crazyleg11/full250-creativity
-- Integración de Ollama en HuggingFace: https://huggingface.co/docs/hub/ollama
+- Integración de Ollama en Hugging Face: https://huggingface.co/docs/hub/ollama
 - Controles de thinking en Ollama: https://docs.ollama.com/capabilities/thinking
 - Descarga de modelos en LM Studio: https://lmstudio.ai/docs/app/basics/download-model

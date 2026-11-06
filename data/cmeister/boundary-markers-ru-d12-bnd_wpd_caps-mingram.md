@@ -25,7 +25,7 @@ La arquitectura es la de nanochat (commit `92d63d4`): un transformer de 12 capas
 | Corpus de entrenamiento | 10 shards de Russian FineWeb-2 (`fineweb-2_0_1-quality_10-filterrobots`), 2.920 millones de caracteres, leído unas 3,35 veces |
 | Semillas publicadas | 0, 1 y 2 |
 | Tamaño del repositorio | 2,5 GB |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -101,12 +101,12 @@ No se dispone de identificadores ni de resultados de modelos comparables externo
 - No se han publicado evaluaciones de sesgo, toxicidad ni seguridad.
 - Los resultados se basan en tres semillas y en una única métrica (bits por byte); el propio autor indica que esto da una dirección, no una estimación precisa.
 - Licencia Apache 2.0: permite uso comercial y modificaciones, pero el modelo se distribuye sin garantías y sin soporte.
-- El formato de pesos es un state dict de PyTorch específico de nanochat, no un formato estándar de HuggingFace Transformers, lo que complica la integración en herramientas habituales.
+- El formato de pesos es un state dict de PyTorch específico de nanochat, no un formato estándar de Hugging Face Transformers, lo que complica la integración en herramientas habituales.
 - La fecha de creación registrada (20 de septiembre de 2026) y de actualización (20 de septiembre de 2026) indican que el repositorio no ha recibido mantenimiento posterior desde su publicación.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmeister/boundary-markers-ru-d12-bnd_wpd_caps-mingram
+- Modelo en Hugging Face: https://huggingface.co/cmeister/boundary-markers-ru-d12-bnd_wpd_caps-mingram
 - Artículo «Explicit Boundary Markers for Subword Vocabularies» (arXiv:2608.08847): https://arxiv.org/abs/2608.08847
 - Repositorio script_tok (tokenizador, utilidades del artículo y comparación completa): https://github.com/sanderland/script_tok
 - nanochat (arquitectura y entrenamiento, commit `92d63d4`): https://github.com/karpathy/nanochat

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fearvel/cutifiedanimecharacterdesign-variant-type-i-v1-anima` es un adaptador LoRA para modelos de difusion de texto a imagen, publicado por el usuario fearvel en HuggingFace. Por sus etiquetas (`lora`, `StableDiffusionPipeline`, `text-to-image`) se trata de un ajuste fino de bajo rango pensado para inyectar un estilo concreto de diseno de personajes anime "cutified" (estilizados o "monos") sobre una pipeline de Stable Diffusion preexistente.
+`fearvel/cutifiedanimecharacterdesign-variant-type-i-v1-anima` es un adaptador LoRA para modelos de difusion de texto a imagen, publicado por el usuario fearvel en Hugging Face. Por sus etiquetas (`lora`, `StableDiffusionPipeline`, `text-to-image`) se trata de un ajuste fino de bajo rango pensado para inyectar un estilo concreto de diseno de personajes anime "cutified" (estilizados o "monos") sobre una pipeline de Stable Diffusion preexistente.
 
 El repositorio es de creacion muy reciente (29 de octubre de 2026) y no registra descargas ni interacciones. La model card es practicamente inexistente: solo incluye una imagen de ejemplo y las etiquetas YAML, sin especificar el modelo base sobre el que se entrena el LoRA, los datos de entrenamiento, los hiperparametros ni las condiciones de uso.
 
@@ -43,7 +43,7 @@ Tampoco hay datos sobre el conjunto de entrenamiento: numero de imagenes, resolu
 - Ilustracion de fan art y contenido para comunidades anime: permite obtener bocetos estilizados de forma rapida en flujos de trabajo personales, sin garantia de consistencia entre generaciones.
 - Generacion de assets para novelas visuales: util para producir retratos de personajes con una estetica unificada, aunque requiere curaduria manual y posible retoque posterior.
 - Exploracion creativa en estudios de diseno: sirve como punto de partida para moodboards de personajes, combinado con otros LoRA de estilo o de composicion.
-- Docencia y demostraciones de fine-tuning: puede emplearse como ejemplo practico de como se publica un adaptador LoRA en HuggingFace y de los riesgos de documentacion insuficiente.
+- Docencia y demostraciones de fine-tuning: puede emplearse como ejemplo practico de como se publica un adaptador LoRA en Hugging Face y de los riesgos de documentacion insuficiente.
 - Investigacion sobre sesgos en modelos de difusion: al ser un adaptador de estilo anime, permite estudiar como los LoRA comunitarios heredan y amplifican sesgos del modelo base, aunque sin model card detallada el analisis queda limitado.
 
 ## Benchmarks y rendimiento
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Tipo | Parametros | Contexto | Licencia | Documentacion |
 |---|---|---|---|---|---|
 | fearvel/cutifiedanimecharacterdesign-variant-type-i-v1-anima | LoRA de estilo anime | no disponible | no aplica | other | Practicamente inexistente (solo una imagen) |
-| Alternativas de LoRA de estilo anime en HuggingFace | LoRA de estilo | Variable | no aplica | Variable (a menudo CreativeML OpenRAIL-M o similar) | Habitualmente con ejemplos y prompts recomendados |
+| Alternativas de LoRA de estilo anime en Hugging Face | LoRA de estilo | Variable | no aplica | Variable (a menudo CreativeML OpenRAIL-M o similar) | Habitualmente con ejemplos y prompts recomendados |
 | Modelos base de Stable Diffusion (SD 1.5, SDXL, SD 3.5) | Difusion texto a imagen | Cientos de millones a miles de millones | no aplica | CreativeML OpenRAIL-M / Stability AI Community License segun version | Model cards completas con benchmarks FID/CLIP |
 
 No se dispone de datos de rendimiento de este adaptador que permitan una comparacion cuantitativa con alternativas.
@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento de este adaptador que permitan una compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fearvel/cutifiedanimecharacterdesign-variant-type-i-v1-anima
+- Hugging Face: https://huggingface.co/fearvel/cutifiedanimecharacterdesign-variant-type-i-v1-anima
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

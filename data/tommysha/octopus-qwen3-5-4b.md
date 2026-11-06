@@ -100,7 +100,7 @@ Datos adicionales de la model card:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tommysha/Octopus-Qwen3.5-4B
+- Modelo en Hugging Face: https://huggingface.co/Tommysha/Octopus-Qwen3.5-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento y evaluación: https://huggingface.co/datasets/Tommysha/octopus-train
 - Código y runtime de servicio: https://github.com/shatianming5/octopus

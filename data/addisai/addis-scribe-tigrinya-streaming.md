@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / streaming | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Addis Scribe Streaming: Tigrinya | 0,6B | Streaming, fragmentos de 0,32 s / 1,12 s | Tigriña | OpenMDW 1.1 | HuggingFace (NeMo) y API Addis AI |
-| nvidia/nemotron-3.5-asr-streaming-0.6b | 0,6B | Streaming | No disponible en la información | No disponible en la información | HuggingFace (modelo base) |
-| Addis Scribe Streaming (Amhárico) | No disponible | Streaming | Amhárico | No disponible en la información | HuggingFace (addisai/addis-scribe-streaming) |
+| Addis Scribe Streaming: Tigrinya | 0,6B | Streaming, fragmentos de 0,32 s / 1,12 s | Tigriña | OpenMDW 1.1 | Hugging Face (NeMo) y API Addis AI |
+| nvidia/nemotron-3.5-asr-streaming-0.6b | 0,6B | Streaming | No disponible en la información | No disponible en la información | Hugging Face (modelo base) |
+| Addis Scribe Streaming (Amhárico) | No disponible | Streaming | Amhárico | No disponible en la información | Hugging Face (addisai/addis-scribe-streaming) |
 
 La comparación se limita a los modelos mencionados en la información disponible; no se dispone de datos de benchmarks que permitan comparar rendimiento entre ellos.
 
@@ -83,7 +83,7 @@ La comparación se limita a los modelos mencionados en la información disponibl
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/addisai/addis-scribe-tigrinya-streaming)
+- [Modelo en Hugging Face](https://huggingface.co/addisai/addis-scribe-tigrinya-streaming)
 - [Modelo base: nvidia/nemotron-3.5-asr-streaming-0.6b](https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b)
 - [Addis Scribe Streaming (Amhárico)](https://huggingface.co/addisai/addis-scribe-streaming)
 - [Licencia OpenMDW 1.1](https://openmdw.ai/license/1-1/)

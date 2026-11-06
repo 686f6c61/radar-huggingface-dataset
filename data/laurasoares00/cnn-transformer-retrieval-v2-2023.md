@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cnn Transformer for Retrieval es un repositorio publicado por el usuario Laurasoares00 en HuggingFace que contiene una implementación propia de una arquitectura denominada "Cnn Transformer" orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni de una release de pesos con rendimiento validado: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo y que no se presenta como un checkpoint con benchmarks. El recuento real de parámetros del fichero safetensors es de 16.576, una cifra coherente con un artefacto de inicialización y no con un modelo de producción.
+Cnn Transformer for Retrieval es un repositorio publicado por el usuario Laurasoares00 en Hugging Face que contiene una implementación propia de una arquitectura denominada "Cnn Transformer" orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni de una release de pesos con rendimiento validado: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo y que no se presenta como un checkpoint con benchmarks. El recuento real de parámetros del fichero safetensors es de 16.576, una cifra coherente con un artefacto de inicialización y no con un modelo de producción.
 
 El repositorio incluye el código del modelo (`inference.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y el checkpoint de inicialización. La arquitectura declarada combina atención multi-query, fusión de bajo rango (low rank), activación gelu/tanh y normalización RMSNorm, con la etiqueta de escala "huge" en la model card, lo que resulta inconsistente con el número de parámetros registrado.
 
@@ -99,7 +99,7 @@ La comparacion relevante aqui no es de metricas sino de estado: este repositorio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Laurasoares00/cnn-transformer-retrieval-v2-2023
+- Modelo en Hugging Face: https://huggingface.co/Laurasoares00/cnn-transformer-retrieval-v2-2023
 - Ficheros incluidos en el repositorio: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Benchmark sugerido por el autor para una primera evaluacion: Flickr30k (no se proporciona enlace en la model card)
 - Otros enlaces (papers, blogs, repos, demos): no disponibles. La busqueda web realizada no devolvio ninguna fuente tecnica relevante sobre este modelo; los resultados obtenidos eran dominios de contenido para adultos sin relacion alguna con el artefacto.

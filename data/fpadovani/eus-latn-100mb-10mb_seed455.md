@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/eus-latn-100mb-10mb_seed455` es un ajuste fino (fine-tune) del modelo base `goldfish-models/eus_latn_100mb`, desarrollado por el usuario fpadovani. Se trata de un modelo de generación de texto basado en la arquitectura GPT-2, con 124,7 millones de parámetros, entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace. El nombre sugiere que el ajuste se realizó sobre un subconjunto de datos de 10 MB (probablemente en euskera, dado el prefijo "eus-latn"), con una semilla concreta (seed455) para reproducibilidad.
+El modelo `fpadovani/eus-latn-100mb-10mb_seed455` es un ajuste fino (fine-tune) del modelo base `goldfish-models/eus_latn_100mb`, desarrollado por el usuario fpadovani. Se trata de un modelo de generación de texto basado en la arquitectura GPT-2, con 124,7 millones de parámetros, entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face. El nombre sugiere que el ajuste se realizó sobre un subconjunto de datos de 10 MB (probablemente en euskera, dado el prefijo "eus-latn"), con una semilla concreta (seed455) para reproducibilidad.
 
 Este modelo es relevante en el contexto de la investigación sobre lenguas minoritarias y el ajuste eficiente de modelos preentrenados con conjuntos de datos pequeños. Al estar basado en un modelo de 100 MB de parámetros, su tamaño reducido permite experimentar en hardware consumer, aunque su utilidad práctica es limitada fuera del ámbito académico. No se dispone de información pública sobre la licencia, los idiomas soportados ni la longitud de contexto, lo que dificulta su uso en producción.
 
@@ -36,7 +36,7 @@ El modelo es un ajuste fino de `goldfish-models/eus_latn_100mb`, que a su vez es
 - Investigación académica sobre ajuste fino de modelos de lenguaje para lenguas minoritarias: el modelo sirve como ejemplo de fine-tuning con datasets pequeños, permitiendo estudiar el efecto de la cantidad de datos en el rendimiento.
 - Prototipado de generación de texto en euskera: para experimentos rápidos donde se necesite un generador básico sin requisitos de calidad alta.
 - Evaluación de técnicas SFT con TRL: los desarrolladores pueden replicar el entrenamiento y comparar resultados variando la semilla o el tamaño del dataset.
-- Educación en PLN: útil para demostrar el flujo de trabajo de fine-tuning con HuggingFace y TRL en entornos docentes.
+- Educación en PLN: útil para demostrar el flujo de trabajo de fine-tuning con Hugging Face y TRL en entornos docentes.
 - Comparación con el modelo base: permite medir el impacto del ajuste fino en métricas de perplejidad o generación para euskera.
 - Pruebas de infraestructura: al ser un modelo pequeño, sirve para validar despliegues en vLLM o TGI sin coste computacional alto.
 
@@ -64,7 +64,7 @@ No se dispone de información suficiente para una comparativa detallada con alte
 
 ## Limitaciones y advertencias
 
-- Modelo experimental con 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- Modelo experimental con 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 - No se especifica licencia, lo que impide su uso comercial sin consultar al autor.
 - No se documentan sesgos ni riesgos de alucinación; al ser un modelo pequeño y entrenado con pocos datos, es probable que genere texto incoherente o con errores.
 - La longitud de contexto no se indica; si es la estándar de GPT-2 (1024 tokens), podría ser insuficiente para tareas que requieran contexto largo.
@@ -73,7 +73,7 @@ No se dispone de información suficiente para una comparativa detallada con alte
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/fpadovani/eus-latn-100mb-10mb_seed455)
+- [Modelo en Hugging Face](https://huggingface.co/fpadovani/eus-latn-100mb-10mb_seed455)
 - [Modelo base goldfish-models/eus_latn_100mb](https://huggingface.co/goldfish-models/eus_latn_100mb)
 - [Registro de entrenamiento en Weights & Biases](https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/fuvd7yna)
 - [Repositorio de TRL](https://github.com/huggingface/trl)

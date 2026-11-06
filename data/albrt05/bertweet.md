@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Albrt05/BERTweet es un repositorio publicado en HuggingFace por el usuario Albrt05 el 22 de septiembre de 2026. La ficha no incluye model card, pipeline declarado, licencia, idiomas ni metadatos de entrenamiento, y en el momento de redactar esta ficha acumula 0 descargas y 3 likes. Por el identificador, todo apunta a un ajuste fino (fine-tuning) sobre BERTweet, el encoder transformer preentrenado por VinAI Research sobre corpus de Twitter en ingles, aunque la tarea concreta, el dataset de ajuste y los hiperparametros no estan documentados en la informacion disponible.
+Albrt05/BERTweet es un repositorio publicado en Hugging Face por el usuario Albrt05 el 22 de septiembre de 2026. La ficha no incluye model card, pipeline declarado, licencia, idiomas ni metadatos de entrenamiento, y en el momento de redactar esta ficha acumula 0 descargas y 3 likes. Por el identificador, todo apunta a un ajuste fino (fine-tuning) sobre BERTweet, el encoder transformer preentrenado por VinAI Research sobre corpus de Twitter en ingles, aunque la tarea concreta, el dataset de ajuste y los hiperparametros no estan documentados en la informacion disponible.
 
 BERTweet, como arquitectura base, es un encoder del tipo RoBERTa entrenado especificamente con 850 millones de tweets en ingles y con un vocabulario BPE adaptado al registro informal de redes sociales (emoticonos, abreviaturas, hashtags, menciones). La version "base" tiene 135 millones de parametros, 12 capas, 768 dimensiones ocultas y 12 cabezas de atencion; la version "large" alcanza 355 millones de parametros, 24 capas y 1024 dimensiones ocultas. Se trata, por tanto, de un modelo de comprension de lenguaje (clasificacion, extraccion, regresion sobre texto), no de un modelo generativo.
 
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada: no disponible para este repositorio. Como referencia orientativa, un encoder de ~135 M de parametros ocupa del orden de 0,5 GB en FP32 y 0,27 GB en FP16 para los pesos; el consumo real depende de la longitud de secuencia y del tamano de lote.
 - GPU recomendadas: para un modelo de este tamano es suficiente cualquier GPU con 4 GB o mas de VRAM; no se requieren A100 ni H100 salvo para entrenamiento a gran escala.
 - Viabilidad en GPU de consumo: si el modelo es realmente un encoder de ~135 M, cabe holgadamente en GPU de consumo como RTX 3060, RTX 4060, RTX 4090 o incluso en CPU para inferencia por lotes pequenos.
-- Opciones de despliegue: no confirmadas por el autor. Para un encoder de este tipo serian aplicables HuggingFace Transformers con PyTorch, ONNX Runtime, TorchScript, FastAPI con batching dinamico y, en menor medida, soluciones de servido para modelos generativos como vLLM o TGI.
+- Opciones de despliegue: no confirmadas por el autor. Para un encoder de este tipo serian aplicables Hugging Face Transformers con PyTorch, ONNX Runtime, TorchScript, FastAPI con batching dinamico y, en menor medida, soluciones de servido para modelos generativos como vLLM o TGI.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Albrt05/BERTweet | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| BERTweet (VinAI) | 135 M (base) / 355 M (large) | 512 tokens | Ingles (tweets) | MIT | Publico en HuggingFace y GitHub |
-| RoBERTa-base | 125 M | 512 tokens | Ingles general | MIT | Publico en HuggingFace |
-| Twitter-roBERTa-base (CardiffNLP) | 125 M | 512 tokens | Ingles (tweets) | MIT | Publico en HuggingFace |
+| Albrt05/BERTweet | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| BERTweet (VinAI) | 135 M (base) / 355 M (large) | 512 tokens | Ingles (tweets) | MIT | Publico en Hugging Face y GitHub |
+| RoBERTa-base | 125 M | 512 tokens | Ingles general | MIT | Publico en Hugging Face |
+| Twitter-roBERTa-base (CardiffNLP) | 125 M | 512 tokens | Ingles (tweets) | MIT | Publico en Hugging Face |
 
 La comparacion es necesariamente parcial: al desconocerse la tarea y el dataset de ajuste de Albrt05/BERTweet, no es posible contrastar rendimiento. Los modelos de la tabla se incluyen unicamente como alternativas de la misma categoria arquitectonica (encoders para texto social en ingles).
 
@@ -84,9 +84,9 @@ La comparacion es necesariamente parcial: al desconocerse la tarea y el dataset 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Albrt05/BERTweet
+- Repositorio en Hugging Face: https://huggingface.co/Albrt05/BERTweet
 - Repositorio oficial de BERTweet (VinAI Research): https://github.com/VinAIResearch/BERTweet
 - Articulo de BERTweet: https://arxiv.org/abs/2005.10200
-- Modelo BERTweet-base en HuggingFace: https://huggingface.co/vinai/bertweet-base
-- Modelo BERTweet-large en HuggingFace: https://huggingface.co/vinai/bertweet-large
+- Modelo BERTweet-base en Hugging Face: https://huggingface.co/vinai/bertweet-base
+- Modelo BERTweet-large en Hugging Face: https://huggingface.co/vinai/bertweet-large
 - Resultados de la busqueda web: no relevantes para este modelo (foros de impresion 3D y eBay)

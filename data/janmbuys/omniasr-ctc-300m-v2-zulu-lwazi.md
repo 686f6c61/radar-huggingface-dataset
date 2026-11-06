@@ -89,7 +89,7 @@ El modelo supera claramente a su baseline sin adaptación LoRA (31,58 % vs 46,05
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/janmbuys/omniASR-CTC-300m-v2-Zulu-Lwazi
+- Repositorio Hugging Face: https://huggingface.co/janmbuys/omniASR-CTC-300m-v2-Zulu-Lwazi
 - Checkpoint base: https://huggingface.co/uctnlp/omniASR-CTC-300m-v2-Zulu-Baseline
 - Página personal del autor (Jan Buys): https://www.janmbuys.com/
 - Modelos fine-tuned del base (búsqueda en HF): https://huggingface.co/models?other=base_model:finetune:aadel4/omniASR-CTC-300M-v2

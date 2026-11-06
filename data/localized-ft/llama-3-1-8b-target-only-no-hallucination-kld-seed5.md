@@ -21,7 +21,7 @@ El modelo se distribuye bajo licencia Apache 2.0, en formato `safetensors`, y es
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura estándar de Llama 3.1 8B, un transformer autoregresivo con atención multi-cabeza, 32 capas, 8 000 millones de parámetros y un tamaño de ventana de contexto de 128 000 tokens en su versión original. El fine-tune se realizó sobre la versión `unsloth/Meta-Llama-3.1-8B-Instruct`, que es una optimización de la instrucción de Llama 3.1 para tareas conversacionales. Según la model card, el entrenamiento se ejecutó con la librería Unsloth y el framework TRL de HuggingFace, lo que sugiere que se utilizaron técnicas de fine-tuning supervisado o de refuerzo, aunque no se especifica el dataset ni la duración del entrenamiento.
+El modelo parte de la arquitectura estándar de Llama 3.1 8B, un transformer autoregresivo con atención multi-cabeza, 32 capas, 8 000 millones de parámetros y un tamaño de ventana de contexto de 128 000 tokens en su versión original. El fine-tune se realizó sobre la versión `unsloth/Meta-Llama-3.1-8B-Instruct`, que es una optimización de la instrucción de Llama 3.1 para tareas conversacionales. Según la model card, el entrenamiento se ejecutó con la librería Unsloth y el framework TRL de Hugging Face, lo que sugiere que se utilizaron técnicas de fine-tuning supervisado o de refuerzo, aunque no se especifica el dataset ni la duración del entrenamiento.
 
 El nombre del modelo incluye `target-only`, `no-hallucination` y `kld`, lo que apunta a un entrenamiento dirigido a minimizar la generación de contenido falso o no verificado, posiblemente mediante una función de pérdida que incorpora la divergencia de Kullback-Leibler entre las distribuciones de salida del modelo y un modelo de referencia. Sin embargo, no hay información pública sobre los datos de entrenamiento, el número de tokens utilizados, ni las hiperparámetros. Tampoco se mencionan técnicas de RLHF o DPO.
 
@@ -52,17 +52,17 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - **VRAM estimada para inferencia**: para un modelo de 8 030 millones de parámetros, se necesita aproximadamente 16 GB de VRAM en precisión FP16 o BF16. Con cuantización a 8 bits (int8) se reduce a ~8 GB, y en 4 bits (int4) a ~4 GB, aunque no se han publicado cuantizaciones específicas para este modelo.
 - **GPU recomendadas**: NVIDIA A100 (40 GB), H100 (80 GB), RTX 4090 (24 GB) o RTX 3090 (24 GB) son suficientes para inferencia en FP16. Para cuantización 4-bit, una RTX 3060 de 12 GB podría ser suficiente.
 - **Compatibilidad con GPU de consumo**: sí, en cuantización de 4 u 8 bits puede ejecutarse en GPUs de gama media (12-16 GB), pero para FP16 se recomienda al menos 24 GB.
-- **Opciones de despliegue**: compatible con `transformers` (HuggingFace), `text-generation-inference` (TGI), `vLLM`, `Ollama` (si se convierte a GGUF) y `llama.cpp` (si se exporta a formato GGUF). No se proporcionan métricas de latencia o throughput.
+- **Opciones de despliegue**: compatible con `transformers` (Hugging Face), `text-generation-inference` (TGI), `vLLM`, `Ollama` (si se convierte a GGUF) y `llama.cpp` (si se exporta a formato GGUF). No se proporcionan métricas de latencia o throughput.
 - **Latencia y throughput**: no disponibles. Para un modelo de 8B, se espera una latencia de decodificación de ~20-30 ms por token en una GPU A100, pero no se ha medido en este fine-tune.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| `localized-ft/Llama-3.1-8B-target-only-no-hallucination-kld-seed5` | 8.03B | No disponible (base 128K) | Apache 2.0 | HuggingFace | Fine-tune para reducir alucinaciones, sin benchmarks |
-| `unsloth/Meta-Llama-3.1-8B-Instruct` | 8.03B | 128K | Apache 2.0 | HuggingFace | Modelo base, optimizado con Unsloth, ampliamente usado |
-| `meta-llama/Llama-3.1-8B-Instruct` | 8.03B | 128K | Llama 3.1 Community License | HuggingFace | Modelo original de Meta, requiere aceptación de licencia |
-| `mistralai/Mistral-7B-Instruct-v0.3` | 7.3B | 32K | Apache 2.0 | HuggingFace | Alternativa de 7B, menor contexto, pero con rendimiento similar en algunas tareas |
+| `localized-ft/Llama-3.1-8B-target-only-no-hallucination-kld-seed5` | 8.03B | No disponible (base 128K) | Apache 2.0 | Hugging Face | Fine-tune para reducir alucinaciones, sin benchmarks |
+| `unsloth/Meta-Llama-3.1-8B-Instruct` | 8.03B | 128K | Apache 2.0 | Hugging Face | Modelo base, optimizado con Unsloth, ampliamente usado |
+| `meta-llama/Llama-3.1-8B-Instruct` | 8.03B | 128K | Llama 3.1 Community License | Hugging Face | Modelo original de Meta, requiere aceptación de licencia |
+| `mistralai/Mistral-7B-Instruct-v0.3` | 7.3B | 32K | Apache 2.0 | Hugging Face | Alternativa de 7B, menor contexto, pero con rendimiento similar en algunas tareas |
 
 La comparación se basa en el modelo base y alternativas de tamaño similar. No se dispone de datos de rendimiento del fine-tune para hacer una comparación directa.
 

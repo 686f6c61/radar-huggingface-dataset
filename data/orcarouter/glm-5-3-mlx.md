@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/orcarouter/GLM-5.3-MLX
+- Repositorio Hugging Face: https://huggingface.co/orcarouter/GLM-5.3-MLX
 - Modelo base (Z.AI): https://huggingface.co/zai-org/GLM-5.3
 - Licencia: https://huggingface.co/orcarouter/GLM-5.3-MLX/blob/main/LICENSE
 - Sitio web de OrcaRouter: https://www.orcarouter.ai

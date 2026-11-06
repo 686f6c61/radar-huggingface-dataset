@@ -29,7 +29,7 @@ La conversión a GGUF se realizó con las herramientas estándar de llama.cpp (`
 
 ## Capacidades
 
-- Generación de texto y conversación: el modelo base incluye una plantilla de chat (chat template) según los metadatos de HuggingFace, lo que indica que está diseñado para interacción conversacional.
+- Generación de texto y conversación: el modelo base incluye una plantilla de chat (chat template) según los metadatos de Hugging Face, lo que indica que está diseñado para interacción conversacional.
 - Razonamiento y resolución de problemas: por el tamaño (32B) y la técnica de entrenamiento GRPO, es plausible que tenga capacidades de razonamiento avanzado, aunque no hay benchmarks que lo confirmen.
 - Soporte de tool calling: no disponible en la información proporcionada.
 - Soporte de agentes y multi-step reasoning: no disponible.

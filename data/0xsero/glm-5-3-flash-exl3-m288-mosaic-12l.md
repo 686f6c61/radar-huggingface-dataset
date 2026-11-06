@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento de otras familias de modelos en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-M288-Mosaic-12L
+- Modelo en Hugging Face: https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-M288-Mosaic-12L
 - Modelo base: https://huggingface.co/turboderp/GLM-5.3-Flash-exl3
 - Receta y documentacion del mosaico: https://github.com/0xSero/glm-5.3-flash-spark-mosaic
 - Trabajo hermano EXL3 + MTP sobre 2 DGX Sparks: https://github.com/0xSero/GLM-5.3-Flash-EXL3-2x-DGX-Sparks

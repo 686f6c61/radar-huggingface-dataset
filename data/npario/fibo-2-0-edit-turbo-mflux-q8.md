@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| npario/fibo-2-0-edit-turbo-mflux-q8 | no disponible | no aplica | no disponible | fibo-2.0-edit-turbo-license | HuggingFace, 21 descargas |
-| mflux-community/fibo-2-0-edit-turbo-mflux-bf16 | no disponible | no aplica | no disponible | fibo-2.0-edit-turbo-license | HuggingFace, 25,1 GB |
-| mflux-community/fibo-2-0-edit-turbo-mflux-q4 | no disponible | no aplica | no disponible | fibo-2.0-edit-turbo-license | HuggingFace, 7,2 GB |
-| briaai/Fibo-2.0-edit-turbo (original) | no disponible | no aplica | no disponible | fibo-2.0-edit-turbo-license | HuggingFace |
+| npario/fibo-2-0-edit-turbo-mflux-q8 | no disponible | no aplica | no disponible | fibo-2.0-edit-turbo-license | Hugging Face, 21 descargas |
+| mflux-community/fibo-2-0-edit-turbo-mflux-bf16 | no disponible | no aplica | no disponible | fibo-2.0-edit-turbo-license | Hugging Face, 25,1 GB |
+| mflux-community/fibo-2-0-edit-turbo-mflux-q4 | no disponible | no aplica | no disponible | fibo-2.0-edit-turbo-license | Hugging Face, 7,2 GB |
+| briaai/Fibo-2.0-edit-turbo (original) | no disponible | no aplica | no disponible | fibo-2.0-edit-turbo-license | Hugging Face |
 
 La comparación relevante es interna a la familia de conversiones MFlux: misma arquitectura y licencia, distinta precisión y huella de memoria. No se dispone de datos para comparar con modelos de edición de imágenes de otros autores.
 
@@ -80,7 +80,7 @@ La comparación relevante es interna a la familia de conversiones MFlux: misma a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/npario/fibo-2-0-edit-turbo-mflux-q8
+- Repositorio Hugging Face: https://huggingface.co/npario/fibo-2-0-edit-turbo-mflux-q8
 - Modelo base: https://huggingface.co/briaai/Fibo-2.0-edit-turbo
 - MFlux (GitHub): https://github.com/filipstrand/mflux
 - Organización MFlux-Community: https://huggingface.co/mflux-community

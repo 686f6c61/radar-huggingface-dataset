@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Alejandro-Lopez-Fructuoso/Qwen3-1.7B-Q8_0-GGUF | 2,03 B | No disponible | GGUF Q8_0 | Apache 2.0 | HuggingFace (40 descargas) |
-| Qwen/Qwen3-1.7B (modelo base) | 2,03 B | No disponible en esta ficha | safetensors | Apache 2.0 | HuggingFace (oficial) |
+| Alejandro-Lopez-Fructuoso/Qwen3-1.7B-Q8_0-GGUF | 2,03 B | No disponible | GGUF Q8_0 | Apache 2.0 | Hugging Face (40 descargas) |
+| Qwen/Qwen3-1.7B (modelo base) | 2,03 B | No disponible en esta ficha | safetensors | Apache 2.0 | Hugging Face (oficial) |
 | Otras cuantizaciones GGUF de Qwen3-1.7B | 2,03 B | No disponible | GGUF (varios niveles) | Apache 2.0 | Depende del publicador |
 
 La comparación con alternativas de otros fabricantes (por ejemplo, modelos de tamaño similar de Llama, Gemma o Phi) no se puede completar con datos verificables en la información proporcionada, por lo que se indica como no disponible.
@@ -86,7 +86,7 @@ La comparación con alternativas de otros fabricantes (por ejemplo, modelos de t
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Alejandro-Lopez-Fructuoso/Qwen3-1.7B-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Alejandro-Lopez-Fructuoso/Qwen3-1.7B-Q8_0-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-1.7B/blob/main/LICENSE
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

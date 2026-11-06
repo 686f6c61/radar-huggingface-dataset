@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| flux-3-image-klein-base-mflux-q3 (este repo) | no disponible | no disponible | safetensors MLX, Q3, 4,2 GB | flux-kommunity-license | HuggingFace, 22 descargas |
-| flux-3-image-klein-base-mflux-bf16 | no disponible | no disponible | safetensors MLX, BF16, 18,5 GB | flux-kommunity-license | HuggingFace |
-| flux-3-image-klein-base-mflux-q8 | no disponible | no disponible | safetensors MLX, Q8, 9,9 GB | flux-kommunity-license | HuggingFace |
-| flux-3-image-klein-base-mflux-q4 | no disponible | no disponible | safetensors MLX, Q4, 5,3 GB | flux-kommunity-license | HuggingFace |
+| flux-3-image-klein-base-mflux-q3 (este repo) | no disponible | no disponible | safetensors MLX, Q3, 4,2 GB | flux-kommunity-license | Hugging Face, 22 descargas |
+| flux-3-image-klein-base-mflux-bf16 | no disponible | no disponible | safetensors MLX, BF16, 18,5 GB | flux-kommunity-license | Hugging Face |
+| flux-3-image-klein-base-mflux-q8 | no disponible | no disponible | safetensors MLX, Q8, 9,9 GB | flux-kommunity-license | Hugging Face |
+| flux-3-image-klein-base-mflux-q4 | no disponible | no disponible | safetensors MLX, Q4, 5,3 GB | flux-kommunity-license | Hugging Face |
 
 La comparativa mas directa es con las otras cuantizaciones del mismo modelo publicadas por MFlux-Community: Q3 es la variante mas ligera listada (4,2 GB), frente a Q4 (5,3 GB), Q6 (7,6 GB), Q8 (9,9 GB) y BF16 (18,5 GB). La model card no incluye la variante Q5. No se dispone de datos de rendimiento relativo entre ellas, ni de comparaciones con modelos de imagen de otros autores.
 
@@ -86,11 +86,11 @@ La comparativa mas directa es con las otras cuantizaciones del mismo modelo publ
 - Alucinacion visual: como todo modelo generativo de imagen, puede producir contenido incoherente o no solicitado; no hay evaluaciones publicadas al respecto.
 - Dependencia de plataforma: requiere Apple Silicon y MLX; no es portable a CUDA ni a CPU de forma directa.
 - Adopcion temprana: 22 descargas y 0 likes, sin issues ni discusion documentada en la informacion disponible.
-- Fecha de publicacion futura respecto a la consulta: el repositorio figura creado el 2026-10-30, dato que conviene verificar en la pagina de HuggingFace.
+- Fecha de publicacion futura respecto a la consulta: el repositorio figura creado el 2026-10-30, dato que conviene verificar en la pagina de Hugging Face.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mflux-community/flux-3-image-klein-base-mflux-q3
+- Repositorio Hugging Face: https://huggingface.co/mflux-community/flux-3-image-klein-base-mflux-q3
 - Modelo original: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
 - Licencia del modelo original: https://huggingface.co/black-forest-labs/flux-3-image-klein-base/blob/main/LICENSE.md
 - MFlux (implementacion MLX): https://github.com/filipstrand/mflux

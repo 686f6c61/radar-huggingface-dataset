@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: el repositorio tiene un tamaño de 65,5 GB, lo que sugiere pesos en FP16. Para inferencia en FP16 se necesitan al menos 65,5 GB de VRAM, más la caché KV. Se recomienda al menos 2x A100 40GB o 1x H100 80GB.
 - GPU recomendadas: A100 40GB, A100 80GB, H100 80GB. Para GPUs de consumo, se necesitaría cuantización, pero no se especifican tipos de cuantización en la información disponible.
 - Si cabe en consumer GPU: no se puede determinar sin datos de cuantización. Con cuantización 4-bit (no incluida en la info) podría caber en una RTX 4090 de 24GB, pero no es un dato proporcionado.
-- Opciones de despliegue: la model card recomienda vLLM para despliegue, especialmente para contextos largos. También es compatible con transformers (>=4.37.0) y text-generation-inference (según los tags de HuggingFace).
+- Opciones de despliegue: la model card recomienda vLLM para despliegue, especialmente para contextos largos. También es compatible con transformers (>=4.37.0) y text-generation-inference (según los tags de Hugging Face).
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bonalai/Qwen2.5-Coder-32B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/bonalai/Qwen2.5-Coder-32B-Instruct
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen2.5-Coder-32B
 - Blog oficial de la familia Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder-family/
 - GitHub del proyecto: https://github.com/QwenLM/Qwen2.5-Coder

@@ -4,7 +4,7 @@
 
 El repositorio `mradermacher/WorldReward-qwen38-27b-i1-GGUF` contiene cuantizaciones GGUF con iMatrix del modelo denominado `WorldReward-qwen38-27b`, publicado originalmente por `CodeGoat24`. El trabajo de `mradermacher` se centra en convertir modelos existentes a formato GGUF y aplicar cuantización ponderada por activaciones (imatrix), un proceso que reduce el tamaño de los pesos manteniendo una buena calidad de salida. Se trata de un modelo de aproximadamente 26,9 mil millones de parámetros, lo que lo sitúa en la categoría de modelos grandes para inferencia local, con un repositorio que ocupa un total de 137,3 GB.
 
-No se dispone de documentación formal sobre el modelo base: la licencia, los idiomas soportados, la arquitectura exacta o los datos de entrenamiento no aparecen declarados. El nombre sugiere una posible orientación hacia tareas de evaluación o recompensa, pero no hay información que lo confirme. Por tanto, esta ficha se basa exclusivamente en los metadatos de HuggingFace y en la información técnica de las cuantizaciones. Es relevante para quien busque un modelo generalista de ~27B listo para ejecutar en entornos locales mediante llama.cpp u otros motores compatibles con GGUF.
+No se dispone de documentación formal sobre el modelo base: la licencia, los idiomas soportados, la arquitectura exacta o los datos de entrenamiento no aparecen declarados. El nombre sugiere una posible orientación hacia tareas de evaluación o recompensa, pero no hay información que lo confirme. Por tanto, esta ficha se basa exclusivamente en los metadatos de Hugging Face y en la información técnica de las cuantizaciones. Es relevante para quien busque un modelo generalista de ~27B listo para ejecutar en entornos locales mediante llama.cpp u otros motores compatibles con GGUF.
 
 ## Especificaciones tecnicas
 
@@ -15,7 +15,7 @@ No se dispone de documentación formal sobre el modelo base: la licencia, los id
 | Parametros activos | no disponible (no se indica si es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
-| Idiomas soportados | no disponibles (segun HuggingFace) |
+| Idiomas soportados | no disponibles (segun Hugging Face) |
 | Licencia | no disponible |
 | Formato de pesos | GGUF (cuantizaciones iMatrix) |
 
@@ -25,7 +25,7 @@ No se ha publicado ninguna documentación tecnica sobre el modelo base `WorldRew
 
 ## Capacidades
 
-- El tag `conversational` en HuggingFace indica que el modelo esta pensado para interacciones dialogadas, aunque no se detallan sus capacidades conversacionales especificas.
+- El tag `conversational` en Hugging Face indica que el modelo esta pensado para interacciones dialogadas, aunque no se detallan sus capacidades conversacionales especificas.
 - No se ha verificado soporte para tool calling, function calling, agentes o razonamiento multi-paso. Tampoco hay evidencia de capacidades multimodales (vision, audio) en la información disponible.
 - Los pesos GGUF permiten la ejecucion en CPU y GPU mediante motores como llama.cpp, Ollama o LM Studio, pero esto es una caracteristica del formato, no una capacidad funcional del modelo.
 - Al ser una cuantizacion de un modelo desconocido, las capacidades reales del modelo original no se pueden confirmar sin acceso al mismo o a sus benchmarks.

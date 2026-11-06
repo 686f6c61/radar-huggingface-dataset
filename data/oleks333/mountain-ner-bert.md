@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mountain-ner-bert es un modelo de reconocimiento de entidades nombradas (NER) especializado en detectar nombres de montañas en texto en inglés. Ha sido desarrollado por el usuario Oleks333 y publicado en HuggingFace como un fine-tuning del clásico `bert-base-cased` de Google, con etiquetado en formato BIO (etiquetas `O`, `B-MOUNTAIN` e `I-MOUNTAIN`). El modelo se entrena sobre un corpus sintético de aproximadamente 1.200 frases generadas con ayuda de un modelo de OpenAI, a partir de nombres de montañas extraídos de listas de Wikipedia.
+mountain-ner-bert es un modelo de reconocimiento de entidades nombradas (NER) especializado en detectar nombres de montañas en texto en inglés. Ha sido desarrollado por el usuario Oleks333 y publicado en Hugging Face como un fine-tuning del clásico `bert-base-cased` de Google, con etiquetado en formato BIO (etiquetas `O`, `B-MOUNTAIN` e `I-MOUNTAIN`). El modelo se entrena sobre un corpus sintético de aproximadamente 1.200 frases generadas con ayuda de un modelo de OpenAI, a partir de nombres de montañas extraídos de listas de Wikipedia.
 
 Su relevancia es principalmente de nicho: resuelve una tarea muy específica (extracción de topónimos de tipo montaña) que los NER genéricos como los basados en CoNLL no cubren, y resulta útil como componente ligero en pipelines de extracción de información geográfica, indexación de contenido de montañismo o enriquecimiento de textos de viaje. Con unos 108 millones de parámetros y un tamaño de repositorio de 0,4 GB, es un modelo pequeño que puede ejecutarse en CPU sin dificultad, lo que lo hace accesible para integraciones sencillas.
 
@@ -31,7 +31,7 @@ El entrenamiento se realizó sobre aproximadamente 1.000 frases sintéticas que 
 
 - Detección de nombres de montañas en texto en inglés mediante etiquetado BIO (`O`, `B-MOUNTAIN`, `I-MOUNTAIN`).
 - Clasificación a nivel de token con puntuaciones de confianza por entidad.
-- Compatible con el pipeline `token-classification` de HuggingFace `transformers`, con agregación de entidades (por ejemplo, `aggregation_strategy="first"`).
+- Compatible con el pipeline `token-classification` de Hugging Face `transformers`, con agregación de entidades (por ejemplo, `aggregation_strategy="first"`).
 - Detección de nombres multi-palabra (aunque con fallos documentados en nombres no vistos, como "Fitz Roy" cortado a "Roy").
 - No soporta generación de texto, razonamiento, código, matemáticas, visión, audio, tool calling ni agentes: es un modelo discriminativo de NER.
 
@@ -61,7 +61,7 @@ Advertencia importante: el split de test proviene de la misma distribución sint
 - VRAM estimada para inferencia: menos de 1 GB en FP32 (el modelo pesa unos 0,4 GB en safetensors); puede ejecutarse íntegramente en CPU.
 - GPU recomendadas: ninguna en particular; cualquier GPU moderna es más que suficiente. No se requiere A100, H100 ni similares.
 - Consumer GPUs: cabe con holgura en cualquier GPU de consumo (incluso integradas o portátiles); la inferencia en CPU es perfectamente viable para volúmenes moderados.
-- Opciones de despliegue: librería `transformers` de HuggingFace (pipeline `token-classification`); al ser un modelo BERT estándar, es compatible con ONNX Runtime, TorchScript y servidores como Text Embeddings/Inference genéricos. No hay evidencia de soporte específico en vLLM, llama.cpp u Ollama (orientados a modelos generativos).
+- Opciones de despliegue: librería `transformers` de Hugging Face (pipeline `token-classification`); al ser un modelo BERT estándar, es compatible con ONNX Runtime, TorchScript y servidores como Text Embeddings/Inference genéricos. No hay evidencia de soporte específico en vLLM, llama.cpp u Ollama (orientados a modelos generativos).
 - Latencia y throughput estimados: no disponible; al ser un modelo de 108M de parámetros, se esperan latencias de pocos milisegundos por frase en GPU y decenas de milisegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -86,6 +86,6 @@ No hay modelos comparables publicados específicamente para NER de montañas; la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Oleks333/mountain-ner-bert
+- Modelo en Hugging Face: https://huggingface.co/Oleks333/mountain-ner-bert
 - Código y datos (GitHub): https://github.com/Oleksandr190378/mountain-ner
 - Modelo base: https://huggingface.co/google-bert/bert-base-cased

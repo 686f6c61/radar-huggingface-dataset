@@ -20,7 +20,7 @@ Es relevante porque ofrece un modelo compacto, comercialmente utilizable y fáci
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea la arquitectura Qwen2.5-7B, un transformer decoder-only con atención por grupos de consultas (GQA) y codificación posicional rotatoria (RoPE). Al partir de `unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit`, el ajuste se ha realizado sobre una versión ya cuantizada en 4 bits, lo que reduce el consumo de memoria durante el entrenamiento. El autor indica que Unsloth permitió entrenar el modelo "2x faster" que con un enfoque estándar. No se proporcionan datos sobre el número de tokens de entrenamiento, la composición del dataset ni la aplicación de técnicas como RLHF o DPO. La presencia del tag `trl` en HuggingFace sugiere que se utilizó la biblioteca TRL para el ajuste por instrucciones.
+El modelo emplea la arquitectura Qwen2.5-7B, un transformer decoder-only con atención por grupos de consultas (GQA) y codificación posicional rotatoria (RoPE). Al partir de `unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit`, el ajuste se ha realizado sobre una versión ya cuantizada en 4 bits, lo que reduce el consumo de memoria durante el entrenamiento. El autor indica que Unsloth permitió entrenar el modelo "2x faster" que con un enfoque estándar. No se proporcionan datos sobre el número de tokens de entrenamiento, la composición del dataset ni la aplicación de técnicas como RLHF o DPO. La presencia del tag `trl` en Hugging Face sugiere que se utilizó la biblioteca TRL para el ajuste por instrucciones.
 
 ## Capacidades
 

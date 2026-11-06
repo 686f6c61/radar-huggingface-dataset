@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WEAVER HRI cube es un conjunto de artefactos de investigación publicados en HuggingFace por el usuario LeeHakHo, no un modelo generativo convencional. Se trata de la copia de seguridad de los archivos que produce el pipeline `tools/run_cube_pipeline.sh` del repositorio github.com/LeeHakHo/WEAVER-HRI (rama `hri-finetune`), orientado al entrenamiento de un world model en dos etapas sobre interacciones mano-objeto en robótica. El paquete incluye checkpoints, datasets intermedios y modelos auxiliares (un modelo de dinámica inversa y un decodificador esquelético).
+WEAVER HRI cube es un conjunto de artefactos de investigación publicados en Hugging Face por el usuario LeeHakHo, no un modelo generativo convencional. Se trata de la copia de seguridad de los archivos que produce el pipeline `tools/run_cube_pipeline.sh` del repositorio github.com/LeeHakHo/WEAVER-HRI (rama `hri-finetune`), orientado al entrenamiento de un world model en dos etapas sobre interacciones mano-objeto en robótica. El paquete incluye checkpoints, datasets intermedios y modelos auxiliares (un modelo de dinámica inversa y un decodificador esquelético).
 
 El contenido se organiza en dos etapas: una primera etapa de predicción de estados (WEAVER entrenado solo con estados, checkpoint 40000) y una segunda etapa de renderizado (checkpoint 20000). Los checkpoints almacenados contienen únicamente los parámetros entrenables; el resto de pesos congelados se recuperan desde el modelo base `arnavkj1995/WEAVER` mediante la función `weaver.finetune_utils.load_finetuned`.
 
@@ -74,7 +74,7 @@ No disponible. El paquete no es un modelo autónomo comparable, sino un conjunto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LeeHakHo/weaver-hri-cube
+- Hugging Face: https://huggingface.co/LeeHakHo/weaver-hri-cube
 - Repositorio del proyecto: https://github.com/LeeHakHo/WEAVER-HRI (rama `hri-finetune`)
 - Modelo base: https://huggingface.co/arnavkj1995/WEAVER
 - No se han encontrado en la información proporcionada papers, blogs, demos ni otros enlaces adicionales.

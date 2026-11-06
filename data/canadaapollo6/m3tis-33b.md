@@ -91,9 +91,9 @@ La diferencia se reporta como ruido (p = 1,0). El build de 3,5 bits usó 1,21× 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| M3TiS-33B | 8,37B en safetensors (base ~33B) | 81.920 tokens (4-bit) | 73 tokens/s en código en A10; 11,3/19 en Terminal-Bench 2 | apache-2.0 | HuggingFace, 52 descargas |
-| Nanbeige4.3-33B (bf16) | ~33B | no disponible en la información | 11,0/19 en Terminal-Bench 2 con vLLM | no disponible en la información | HuggingFace (modelo base) |
-| Nanbeige4.3-33B GGUF Q3_K_M (bartowski) | ~33B | no disponible en la información | 27 tokens/s en A10 con llama.cpp | no disponible en la información | HuggingFace |
+| M3TiS-33B | 8,37B en safetensors (base ~33B) | 81.920 tokens (4-bit) | 73 tokens/s en código en A10; 11,3/19 en Terminal-Bench 2 | apache-2.0 | Hugging Face, 52 descargas |
+| Nanbeige4.3-33B (bf16) | ~33B | no disponible en la información | 11,0/19 en Terminal-Bench 2 con vLLM | no disponible en la información | Hugging Face (modelo base) |
+| Nanbeige4.3-33B GGUF Q3_K_M (bartowski) | ~33B | no disponible en la información | 27 tokens/s en A10 con llama.cpp | no disponible en la información | Hugging Face |
 
 La comparación directa con otras familias de modelos del mismo tamaño no está disponible en la información proporcionada.
 
@@ -111,7 +111,7 @@ La comparación directa con otras familias de modelos del mismo tamaño no está
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CanadaApollo6/M3TiS-33B
+- Modelo en Hugging Face: https://huggingface.co/CanadaApollo6/M3TiS-33B
 - Modelo base Nanbeige4.3-33B: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - GGUF Q3_K_M de bartowski: https://huggingface.co/bartowski/Nanbeige_Nanbeige4.3-33B-GGUF
 - Motor TensorFold: https://github.com/ashhart/TensorFold

@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Stax124/anime-pose-detection-safetensors | YOLOv8s + RTMPose-l empaquetados en fp16 | no disponible | imagen 640x640 + recorte 384x288 | Apache-2.0 (MIT en `person.*`) | HuggingFace, fichero unico |
-| deepghs/anime_person_detection (`person_detect_v1.3_s`) | YOLOv8s single-class para anime | no disponible en la informacion | imagen 640x640 | MIT | HuggingFace, ONNX original |
-| DWPose `dw-ll_ucoco_384` (yzd-v/DWPose) | RTMPose-l whole-body, 133 keypoints | no disponible en la informacion | recorte 384x288 | Apache-2.0 | HuggingFace, checkpoint `.pth` de mmpose |
+| Stax124/anime-pose-detection-safetensors | YOLOv8s + RTMPose-l empaquetados en fp16 | no disponible | imagen 640x640 + recorte 384x288 | Apache-2.0 (MIT en `person.*`) | Hugging Face, fichero unico |
+| deepghs/anime_person_detection (`person_detect_v1.3_s`) | YOLOv8s single-class para anime | no disponible en la informacion | imagen 640x640 | MIT | Hugging Face, ONNX original |
+| DWPose `dw-ll_ucoco_384` (yzd-v/DWPose) | RTMPose-l whole-body, 133 keypoints | no disponible en la informacion | recorte 384x288 | Apache-2.0 | Hugging Face, checkpoint `.pth` de mmpose |
 | Ultralytics YOLOv8s-pose (generico) | Deteccion + pose de 17 keypoints en un solo modelo | no disponible en la informacion | imagen 640x640 | AGPL-3.0 (habitual) | Ultralytics, ampliamente distribuido |
 
 La diferencia clave frente a YOLOv8s-pose generico es la cobertura de 133 keypoints (frente a 17) y el dominio especifico de anime, a costa de requerir dos pasadas en cascada y de no estar entrenado sobre fotografias reales.
@@ -93,7 +93,7 @@ La diferencia clave frente a YOLOv8s-pose generico es la cobertura de 133 keypoi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Stax124/anime-pose-detection-safetensors
+- Repositorio Hugging Face: https://huggingface.co/Stax124/anime-pose-detection-safetensors
 - Detector original (deepghs): https://huggingface.co/deepghs/anime_person_detection
 - Checkpoint original de DWPose: https://huggingface.co/yzd-v/DWPose
 - Repositorio DWPose (IDEA-Research): https://github.com/IDEA-Research/DWPose

@@ -92,7 +92,7 @@ Los datos de la segunda, tercera y cuarta fila proceden de la documentacion publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-32b-it_mathematical-dpo-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-32b-it_mathematical-dpo-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Misalignment-Empirics/qwen2.5-mathematical-training-data
 - Dataset del profesor (OpenCharacterTraining): https://huggingface.co/maius/OpenCharacterTraining-data

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio de HuggingFace `Hunterbog/pandora-convnext` contiene un modelo publicado por el usuario Hunterbog el 8 de septiembre de 2026. La ficha del modelo es mínima: solo incluye la declaración de licencia `other` con un enlace a un archivo LICENSE, sin descripción, sin tags de tarea, sin pipeline y sin información sobre idiomas. El repositorio tiene un tamaño de 0.1 GB y no registra descargas ni likes.
+El repositorio de Hugging Face `Hunterbog/pandora-convnext` contiene un modelo publicado por el usuario Hunterbog el 8 de septiembre de 2026. La ficha del modelo es mínima: solo incluye la declaración de licencia `other` con un enlace a un archivo LICENSE, sin descripción, sin tags de tarea, sin pipeline y sin información sobre idiomas. El repositorio tiene un tamaño de 0.1 GB y no registra descargas ni likes.
 
-En la búsqueda web se han encontrado dos repositorios de GitHub (ThoroughFuture/pandora y PUMCH-Liang-lab/pandora) que describen un modelo llamado Pandora, un sistema de patología computacional que utiliza ConvNeXt V2 como backbone visual y destilación multi-teacher. Es posible que el modelo de HuggingFace sea un checkpoint relacionado con ese proyecto, pero no hay confirmación explícita en la ficha.
+En la búsqueda web se han encontrado dos repositorios de GitHub (ThoroughFuture/pandora y PUMCH-Liang-lab/pandora) que describen un modelo llamado Pandora, un sistema de patología computacional que utiliza ConvNeXt V2 como backbone visual y destilación multi-teacher. Es posible que el modelo de Hugging Face sea un checkpoint relacionado con ese proyecto, pero no hay confirmación explícita en la ficha.
 
 Por tanto, este modelo no dispone de documentación técnica pública en el momento de redactar esta ficha. Cualquier evaluación debe partir de la descarga de los pesos y su inspección directa.
 
@@ -23,7 +23,7 @@ Por tanto, este modelo no dispone de documentación técnica pública en el mome
 
 ## Arquitectura y entrenamiento
 
-La ficha del modelo en HuggingFace no incluye información sobre arquitectura, datos de entrenamiento ni procesos de alineación. Los resultados de la búsqueda web han localizado dos repositorios de GitHub que describen un sistema llamado Pandora usado en patología computacional. Según estos repositorios, Pandora utiliza ConvNeXt V2 como backbone visual y emplea una estrategia de destilación multi-teacher para fusionar conocimiento de varios modelos expertos en patología en un único encoder. No se puede confirmar que el checkpoint `pandora-convnext` de Hunterbog sea exactamente ese modelo, por lo que la arquitectura debe considerarse no verificada hasta que se inspeccionen los pesos.
+La ficha del modelo en Hugging Face no incluye información sobre arquitectura, datos de entrenamiento ni procesos de alineación. Los resultados de la búsqueda web han localizado dos repositorios de GitHub que describen un sistema llamado Pandora usado en patología computacional. Según estos repositorios, Pandora utiliza ConvNeXt V2 como backbone visual y emplea una estrategia de destilación multi-teacher para fusionar conocimiento de varios modelos expertos en patología en un único encoder. No se puede confirmar que el checkpoint `pandora-convnext` de Hunterbog sea exactamente ese modelo, por lo que la arquitectura debe considerarse no verificada hasta que se inspeccionen los pesos.
 
 ## Capacidades
 

@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-SciQ-QLoRA-e2 | 8.000 M (base) + adaptador LoRA | 128.000 tokens (base) | Adaptador PEFT sobre Llama 3.1 8B | llama3.1 | HuggingFace (19 descargas) |
-| meta-llama/Llama-3.1-8B-Instruct | 8.000 M | 128.000 tokens | Modelo completo | llama3.1 | HuggingFace (ampliamente usado) |
-| Llama-3.1-8B-Instruct-SciQ-QLoRA-e1 | 8.000 M (base) + adaptador LoRA | 128.000 tokens (base) | Adaptador PEFT (1 epoca) | llama3.1 | HuggingFace (checkpoint hermano) |
-| Llama-3.1-8B-Instruct-SciQ-QLoRA-e4 | 8.000 M (base) + adaptador LoRA | 128.000 tokens (base) | Adaptador PEFT (4 epocas) | llama3.1 | HuggingFace (checkpoint hermano) |
+| Llama-3.1-8B-Instruct-SciQ-QLoRA-e2 | 8.000 M (base) + adaptador LoRA | 128.000 tokens (base) | Adaptador PEFT sobre Llama 3.1 8B | llama3.1 | Hugging Face (19 descargas) |
+| meta-llama/Llama-3.1-8B-Instruct | 8.000 M | 128.000 tokens | Modelo completo | llama3.1 | Hugging Face (ampliamente usado) |
+| Llama-3.1-8B-Instruct-SciQ-QLoRA-e1 | 8.000 M (base) + adaptador LoRA | 128.000 tokens (base) | Adaptador PEFT (1 epoca) | llama3.1 | Hugging Face (checkpoint hermano) |
+| Llama-3.1-8B-Instruct-SciQ-QLoRA-e4 | 8.000 M (base) + adaptador LoRA | 128.000 tokens (base) | Adaptador PEFT (4 epocas) | llama3.1 | Hugging Face (checkpoint hermano) |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada; la unica diferencia documentada es la perdida de validacion del checkpoint e2 (0,8712), descrita por el autor como la mas baja de la ablacion.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedelgebaly/Llama-3.1-8B-Instruct-SciQ-QLoRA-e2
+- Modelo en Hugging Face: https://huggingface.co/ahmedelgebaly/Llama-3.1-8B-Instruct-SciQ-QLoRA-e2
 - Dataset: https://huggingface.co/datasets/ahmedelgebaly/SciQ_Alpaca
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Checkpoint hermano e1: https://huggingface.co/ahmedelgebaly/Llama-3.1-8B-Instruct-SciQ-QLoRA-e1

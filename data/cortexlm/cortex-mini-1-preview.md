@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: al ser un modelo de 27B parámetros, en precisión FP16/BF16 requiere aproximadamente 54-60 GB de VRAM. Con cuantización a 4 bits (si estuviera disponible) podría reducirse a unos 16-20 GB, pero no se ofrecen pesos cuantizados oficiales.
 - GPU recomendadas: para inferencia sin cuantizar, se necesitan GPUs de clase profesional como A100 (40/80 GB), H100 (80 GB) o A6000 (48 GB). Con cuantización, podría ejecutarse en una RTX 4090 (24 GB) o similar, aunque no hay garantías oficiales.
 - Compatibilidad con GPU de consumo: no se confirma oficialmente, pero por el tamaño del modelo, una RTX 4090 con 24 GB podría ejecutarlo solo con cuantización agresiva (4 bits) y posiblemente con limitaciones de contexto.
-- Opciones de despliegue: compatible con vLLM, SGLang y TokenSpeed, así como con la librería transformers de HuggingFace. Se recomienda usar el directorio local de pesos descargados para producción.
+- Opciones de despliegue: compatible con vLLM, SGLang y TokenSpeed, así como con la librería transformers de Hugging Face. Se recomienda usar el directorio local de pesos descargados para producción.
 - Latencia y throughput: no se proporcionan datos oficiales. Dependerá del hardware, la cuantización y la longitud de contexto utilizada.
 
 ## Comparativa con modelos similares
@@ -81,8 +81,8 @@ No se dispone de datos de rendimiento comparativos publicados. La comparativa se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CortexLM/Cortex-Mini-1-Preview
+- Repositorio Hugging Face: https://huggingface.co/CortexLM/Cortex-Mini-1-Preview
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Receta vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - Cookbook SGLang para Qwen3.8-27B: https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-27B
-- Organización CortexLM en HuggingFace: https://huggingface.co/CortexLM/models
+- Organización CortexLM en Hugging Face: https://huggingface.co/CortexLM/models

@@ -89,9 +89,9 @@ Advertencias del propio autor sobre estas cifras: no son comparables con los CER
 
 | Modelo | Parametros | Datos de rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dys-asr/parakeet-rnnt-0.6b-v2split-uniform (este) | 618.314.241 | CER 4,84 % / WER 7,83 % en el conjunto retenido v2 (epoca 9) | speech-accessibility-project-dua (other) | HuggingFace, transformers>=5.9, safetensors |
-| dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout (hermano) | No disponible en esta informacion | CER 4,94 % / WER 7,91 % en el mismo conjunto retenido (export final, particion completa) | No disponible en esta informacion | HuggingFace |
-| extraordinarylab/parakeet-unified-en-0.6b (modelo base) | No disponible en esta informacion | No disponible en esta informacion | No disponible en esta informacion | HuggingFace |
+| dys-asr/parakeet-rnnt-0.6b-v2split-uniform (este) | 618.314.241 | CER 4,84 % / WER 7,83 % en el conjunto retenido v2 (epoca 9) | speech-accessibility-project-dua (other) | Hugging Face, transformers>=5.9, safetensors |
+| dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout (hermano) | No disponible en esta informacion | CER 4,94 % / WER 7,91 % en el mismo conjunto retenido (export final, particion completa) | No disponible en esta informacion | Hugging Face |
+| extraordinarylab/parakeet-unified-en-0.6b (modelo base) | No disponible en esta informacion | No disponible en esta informacion | No disponible en esta informacion | Hugging Face |
 
 La diferencia entre este modelo y su hermano es de 0,10 puntos de CER y 0,08 de WER en el conjunto retenido, coherente con que este control entrenó un 4,6 % menos de datos de forma deliberada. Fuera de esta familia no se dispone de cifras verificables de alternativas comparables en la información proporcionada, por lo que no se incluyen otros ASR de tamaño similar.
 
@@ -112,7 +112,7 @@ La diferencia entre este modelo y su hermano es de 0,10 puntos de CER y 0,08 de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-v2split-uniform
+- Modelo en Hugging Face: https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-v2split-uniform
 - Modelo hermano (brazo con muestreador ponderado): https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout
 - Modelo base: https://huggingface.co/extraordinarylab/parakeet-unified-en-0.6b
 - Corpus SAPC-1: https://huggingface.co/datasets/dys-asr/sapc1

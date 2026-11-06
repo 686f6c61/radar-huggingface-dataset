@@ -81,7 +81,7 @@ No se dispone de datos suficientes para comparar este modelo con alternativas de
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mlasli/Muse-Glimmer-30B-Heretic-Abliterated-Q8_0-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mlasli/Muse-Glimmer-30B-Heretic-Abliterated-Q8_0-GGUF
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Model card BF16 (metodología detallada): https://huggingface.co/mlasli/Muse-Glimmer-30B-Heretic-Abliterated-BF16
 - Herramienta Heretic: https://github.com/d3nd3/heretic

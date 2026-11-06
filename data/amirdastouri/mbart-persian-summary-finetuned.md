@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Parámetros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mbart-persian-summary-finetuned | 611.129.542 | 1024 tokens de entrada | persa | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| eslamxm/mbart-finetuned-fa (modelo base) | no disponible en la información proporcionada | no disponible | persa | no disponible | HuggingFace |
-| mBART-large-50 (origen de la familia) | ~610 M (dato de referencia de la familia, no confirmado en la información proporcionada) | 1024 tokens | 50 idiomas | licencia de la familia mBART, no disponible aquí | HuggingFace / Meta |
+| mbart-persian-summary-finetuned | 611.129.542 | 1024 tokens de entrada | persa | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| eslamxm/mbart-finetuned-fa (modelo base) | no disponible en la información proporcionada | no disponible | persa | no disponible | Hugging Face |
+| mBART-large-50 (origen de la familia) | ~610 M (dato de referencia de la familia, no confirmado en la información proporcionada) | 1024 tokens | 50 idiomas | licencia de la familia mBART, no disponible aquí | Hugging Face / Meta |
 
 No se dispone de datos sobre otros modelos de resumen en persa comparables (por ejemplo variantes de mT5 o modelos de la comunidad HooshvareLab) dentro de la información proporcionada, por lo que no se incluye una comparación numérica.
 
@@ -94,7 +94,7 @@ No se dispone de datos sobre otros modelos de resumen en persa comparables (por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmirDastouri/mbart-persian-summary-finetuned
+- Modelo en Hugging Face: https://huggingface.co/AmirDastouri/mbart-persian-summary-finetuned
 - Modelo base: https://huggingface.co/eslamxm/mbart-finetuned-fa
 - Dataset HooshvareLab/pn_summary: https://huggingface.co/datasets/HooshvareLab/pn_summary
 - Dataset hezarai/xlsum-fa: https://huggingface.co/datasets/hezarai/xlsum-fa

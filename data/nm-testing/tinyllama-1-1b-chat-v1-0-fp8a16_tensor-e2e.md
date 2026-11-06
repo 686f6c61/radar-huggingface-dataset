@@ -79,10 +79,10 @@ No se dispone de datos comparativos en la información proporcionada (ni benchma
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nm-testing/TinyLlama-1.1B-Chat-v1.0-FP8A16_tensor-e2e | 1,1B | No disponible | No disponible | HuggingFace (11 descargas) |
-| TinyLlama/TinyLlama-1.1B-Chat-v1.0 (modelo base) | 1,1B | No disponible en esta consulta | No disponible en esta consulta | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,5B (aprox.) | No disponible en esta consulta | No disponible en esta consulta | HuggingFace |
-| Llama-3.2-1B-Instruct | 1,2B (aprox.) | No disponible en esta consulta | Licencia comunitaria de Llama (no confirmado en esta consulta) | HuggingFace |
+| nm-testing/TinyLlama-1.1B-Chat-v1.0-FP8A16_tensor-e2e | 1,1B | No disponible | No disponible | Hugging Face (11 descargas) |
+| TinyLlama/TinyLlama-1.1B-Chat-v1.0 (modelo base) | 1,1B | No disponible en esta consulta | No disponible en esta consulta | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,5B (aprox.) | No disponible en esta consulta | No disponible en esta consulta | Hugging Face |
+| Llama-3.2-1B-Instruct | 1,2B (aprox.) | No disponible en esta consulta | Licencia comunitaria de Llama (no confirmado en esta consulta) | Hugging Face |
 
 Rendimiento comparado: no disponible. No se han publicado resultados que permitan situar este checkpoint frente a alternativas de tamaño similar.
 
@@ -99,7 +99,7 @@ Rendimiento comparado: no disponible. No se han publicado resultados que permita
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-FP8A16_tensor-e2e
+- Repositorio en Hugging Face: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-FP8A16_tensor-e2e
 - Página de la organización autora: https://huggingface.co/nm-testing
 - Modelo base indicado en el nombre del repositorio (enlace inferido, no confirmado en la información proporcionada): https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Resultados de la búsqueda web: sin resultados relevantes. Las URLs devueltas tratan sobre el nanómetro, el newton metro y la conversión de millas náuticas, y no guardan relación con el modelo.

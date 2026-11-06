@@ -57,7 +57,7 @@ Las 94 filas restantes difieren en `predicted_route`. La model card atribuye la 
 - VRAM estimada para inferencia: no aplicable; el artefacto es un pickle de un clasificador tabular y no requiere GPU.
 - GPU recomendadas: no aplicable. La inferencia se ejecuta en CPU.
 - Ejecución en GPU de consumo: no aplicable, ya que no hay kernel de red neuronal que acelerar.
-- Tamaño del repositorio: 0,0 GB según HuggingFace, lo que indica un artefacto de tamaño muy reducido.
+- Tamaño del repositorio: 0,0 GB según Hugging Face, lo que indica un artefacto de tamaño muy reducido.
 - Opciones de despliegue: carga mediante `joblib` en Python, con la dependencia de que `outcome_router_data` sea importable. No se documentan soportes para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de artefacto.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
@@ -65,8 +65,8 @@ Las 94 filas restantes difieren en `predicted_route`. La model card atribuye la 
 
 | Artefacto | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `dhresearch/quality-router-v2-economy-downrouter` (este) | Router aprendido serializado (joblib) | no disponible | no aplicable | 156/250 de coincidencia con el fichero congelado; 250/250 con la política de dominio de código | other | Repositorio HuggingFace, 0 descargas, 0 likes |
-| `dhresearch/quality-router-v2-domain-code-policy` | Router aprendido serializado (joblib) | no disponible | no aplicable | Idéntico binariamente (mismo sha256) | other | Repositorio HuggingFace |
+| `dhresearch/quality-router-v2-economy-downrouter` (este) | Router aprendido serializado (joblib) | no disponible | no aplicable | 156/250 de coincidencia con el fichero congelado; 250/250 con la política de dominio de código | other | Repositorio Hugging Face, 0 descargas, 0 likes |
+| `dhresearch/quality-router-v2-domain-code-policy` | Router aprendido serializado (joblib) | no disponible | no aplicable | Idéntico binariamente (mismo sha256) | other | Repositorio Hugging Face |
 | `quality_router` sin `--economy` | Construcción sin pesos ajustados | no aplica (no ajusta nada) | no aplicable | no disponible | other | Incluido en `quality_router_v2` versión 8, no en esta subida |
 
 Como referencia del mismo estudio, la model card indica que `quality_router_v2` versión 8 define `learned_downrouting` como `false` y que la tarjeta servida deja este objeto sin cargar, por lo que el artefacto no forma parte del flujo servido. No se conocen otros modelos comparables en la información disponible.
@@ -84,7 +84,7 @@ Como referencia del mismo estudio, la model card indica que `quality_router_v2` 
 - Reproducibilidad: el software del refit incluye versiones muy específicas (python 3.14.2, sklearn 1.9.1, numpy 2.5.3, joblib 1.6.0, lightgbm 4.7.0, scipy 1.18.1); otras versiones podrían alterar la deserialización o los resultados.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/dhresearch/quality-router-v2-economy-downrouter
+- Modelo en Hugging Face: https://huggingface.co/dhresearch/quality-router-v2-economy-downrouter
 - Dataset del estudio: https://huggingface.co/datasets/dhresearch/outcome-router-v2-main
 - Artefacto con el mismo digest sha256: `dhresearch/quality-router-v2-domain-code-policy` (referenciado en la model card; no se ha encontrado una URL directa en la información proporcionada)
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante; las entradas devueltas corresponden a hilos de foros sin relación con el modelo, por lo que se descartan. No se dispone de papers, blogs, repositorios de código ni demos adicionales.

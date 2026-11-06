@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nimble walk (NottyDuck) es una política de locomoción por aprendizaje por refuerzo para el robot bípedo de código abierto MicroDuck de Pollen Robotics. La desarrolla el usuario reachjalil y se publica en HuggingFace con licencia Apache 2.0. El modelo resuelve un problema concreto de control: el caminante de serie (alpha walker) ignoraba en simulación las órdenes de velocidad lentas, hacia atrás y de giro suave, mientras que Nimble walk sí las sigue, lo que lo convierte en el caminante por defecto del juego de navegador NottyDuck.
+Nimble walk (NottyDuck) es una política de locomoción por aprendizaje por refuerzo para el robot bípedo de código abierto MicroDuck de Pollen Robotics. La desarrolla el usuario reachjalil y se publica en Hugging Face con licencia Apache 2.0. El modelo resuelve un problema concreto de control: el caminante de serie (alpha walker) ignoraba en simulación las órdenes de velocidad lentas, hacia atrás y de giro suave, mientras que Nimble walk sí las sigue, lo que lo convierte en el caminante por defecto del juego de navegador NottyDuck.
 
 Técnicamente no es un modelo de lenguaje, sino una política de control exportada a ONNX. Recibe una observación de 61 dimensiones (`obs` con forma `[1, 61]`) y emite 14 acciones (`actions` con forma `[1, 14]`) a 50 Hz, con escala de acción 1.0 y sin filtro de acción. El normalizador de observaciones está integrado dentro de `policy.onnx`, de modo que se alimentan observaciones en crudo.
 
@@ -128,9 +128,9 @@ La comparación con los otros modelos de la librería `microduck` queda limitada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reachjalil/microduck-nimble-walk
+- Modelo en Hugging Face: https://huggingface.co/reachjalil/microduck-nimble-walk
 - Repositorio del MicroDuck (Pollen Robotics): https://github.com/pollen-robotics/microduck
-- Modelo comparable en HuggingFace: https://huggingface.co/neil-jo/microduck-walk
+- Modelo comparable en Hugging Face: https://huggingface.co/neil-jo/microduck-walk
 - Listado de modelos compatibles con la librería microduck: https://huggingface.co/models?library=microduck
 - Documentación del curso Microduck (de cuerpo a comportamiento): https://eai-course.github.io/microduck/
 - Cobertura de prensa sobre el MicroDuck de Hugging Face: https://santageai.com/news/2026/08/29/hugging-face-microduck-open-source-robot

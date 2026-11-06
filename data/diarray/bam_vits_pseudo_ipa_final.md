@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `diarray/bam_vits_pseudo_ipa_final` es un sistema de síntesis de voz (text-to-audio) desarrollado por el usuario `diarray`, probablemente Diarra Yacouba, y publicado en HuggingFace en agosto de 2026. Su nombre sugiere que emplea una arquitectura VITS (Variational Inference with adversarial Training for end-to-end Text-to-Speech) con una entrada fonética en pseudo-IPA (alfabeto fonético internacional aproximado), lo que lo orienta a la conversión de texto a habla con control fonético.
+El modelo `diarray/bam_vits_pseudo_ipa_final` es un sistema de síntesis de voz (text-to-audio) desarrollado por el usuario `diarray`, probablemente Diarra Yacouba, y publicado en Hugging Face en agosto de 2026. Su nombre sugiere que emplea una arquitectura VITS (Variational Inference with adversarial Training for end-to-end Text-to-Speech) con una entrada fonética en pseudo-IPA (alfabeto fonético internacional aproximado), lo que lo orienta a la conversión de texto a habla con control fonético.
 
-El modelo cuenta con aproximadamente 39,6 millones de parámetros, un tamaño moderado que lo hace viable para inferencia en hardware de gama media. Aunque la ficha técnica oficial está casi vacía, el pipeline declarado es `text-to-audio` y se integra con la librería Transformers de HuggingFace. Su relevancia radica en ser un ejemplo de síntesis de voz de código abierto, aunque la ausencia de documentación detallada limita su uso directo en producción sin una evaluación previa.
+El modelo cuenta con aproximadamente 39,6 millones de parámetros, un tamaño moderado que lo hace viable para inferencia en hardware de gama media. Aunque la ficha técnica oficial está casi vacía, el pipeline declarado es `text-to-audio` y se integra con la librería Transformers de Hugging Face. Su relevancia radica en ser un ejemplo de síntesis de voz de código abierto, aunque la ausencia de documentación detallada limita su uso directo en producción sin una evaluación previa.
 
 No se dispone de información sobre licencia, idiomas soportados, datos de entrenamiento ni benchmarks publicados, por lo que cualquier despliegue requiere verificar estos aspectos con el autor o mediante pruebas propias.
 
@@ -25,13 +25,13 @@ No se dispone de información sobre licencia, idiomas soportados, datos de entre
 
 La arquitectura VITS es un modelo end-to-end de síntesis de voz que combina un codificador de texto con un decodificador de audio basado en normalizing flows y entrenamiento adversarial. El nombre del modelo indica que la entrada se procesa mediante una representación fonética pseudo-IPA, lo que sugiere un preprocesado lingüístico específico para mejorar la pronunciación. Sin embargo, no se han publicado detalles sobre el dataset de entrenamiento, el número de tokens, el procedimiento de entrenamiento (si incluyó fine-tuning, RLHF, etc.) ni las innovaciones técnicas concretas aplicadas a esta variante.
 
-La ausencia de una model card completa y de documentación técnica impide confirmar si se trata de una implementación estándar de VITS o si incluye modificaciones propias. El autor mantiene repositorios relacionados en HuggingFace (`bam-vits-pseudo-ipa` y `bam-vits-pseudo-ipa-train`) que podrían contener más información, pero no se ha accedido a su contenido.
+La ausencia de una model card completa y de documentación técnica impide confirmar si se trata de una implementación estándar de VITS o si incluye modificaciones propias. El autor mantiene repositorios relacionados en Hugging Face (`bam-vits-pseudo-ipa` y `bam-vits-pseudo-ipa-train`) que podrían contener más información, pero no se ha accedido a su contenido.
 
 ## Capacidades
 
 - Síntesis de voz a partir de texto, con pipeline `text-to-audio` declarado.
 - Posible soporte de entrada fonética pseudo-IPA para control de pronunciación, según el nombre del modelo.
-- Integración con la librería Transformers de HuggingFace, lo que facilita su uso con las APIs estándar de la plataforma.
+- Integración con la librería Transformers de Hugging Face, lo que facilita su uso con las APIs estándar de la plataforma.
 - No se han documentado capacidades adicionales como tool calling, agentes, razonamiento o multilingüismo, dado que es un modelo puramente de audio.
 
 ## Casos de uso
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - **VRAM estimada para inferencia**: no disponible con precisión, pero un modelo de 39,6M de parámetros en formato fp32 ocupa aproximadamente 158 MB de memoria. Con cuantización a int8 podría reducirse a unos 40 MB.
 - **GPU recomendadas**: cualquier GPU con al menos 2 GB de VRAM sería suficiente para inferencia en lote pequeño. Una NVIDIA GTX 1650 o superior sería adecuada.
 - **CPU**: al ser un modelo pequeño, puede ejecutarse en CPU con tiempos de inferencia aceptables, aunque no se dispone de mediciones concretas.
-- **Opciones de despliegue**: al estar integrado con Transformers, puede usarse con pipelines de HuggingFace, y potencialmente con librerías como TTS de Coqui (si es compatible) o mediante exportación a ONNX.
+- **Opciones de despliegue**: al estar integrado con Transformers, puede usarse con pipelines de Hugging Face, y potencialmente con librerías como TTS de Coqui (si es compatible) o mediante exportación a ONNX.
 - **Latencia y throughput**: no disponibles. Dependerá del hardware y de la longitud del texto de entrada.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se dispone de datos comparativos con otros modelos TTS. Como referencia gené
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/diarray/bam_vits_pseudo_ipa_final)
+- [Modelo en Hugging Face](https://huggingface.co/diarray/bam_vits_pseudo_ipa_final)
 - [Repositorio relacionado: bam-vits-pseudo-ipa](https://huggingface.co/diarray/bam-vits-pseudo-ipa)
 - [Repositorio relacionado: bam-vits-pseudo-ipa-train](https://huggingface.co/diarray/bam-vits-pseudo-ipa-train)
 - [Perfil de GitHub del autor (diarray-hub)](https://github.com/diarray-hub?tab=repositories)

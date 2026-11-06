@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Yad4o/skincare-assistant-lora | 1,7B (base) + LoRA | No disponible | Apache 2.0 | HuggingFace, 25 descargas | Adaptador especializado en skincare |
-| Yad4o/skincare-assistant-optimized-lora | 0,8B (base) + LoRA | No disponible | No disponible en la informacion | HuggingFace | Version mas ligera y rapida segun el autor |
-| Qwen/Qwen3-1.7B | 1,7B | No disponible en la informacion | No disponible en la informacion | HuggingFace | Modelo base sin especializar |
-| Modelos medicos genericos (p. ej. adaptadores sobre Llama o Mistral) | Variable | Variable | Variable | HuggingFace | No se dispone de datos comparativos en la informacion proporcionada |
+| Yad4o/skincare-assistant-lora | 1,7B (base) + LoRA | No disponible | Apache 2.0 | Hugging Face, 25 descargas | Adaptador especializado en skincare |
+| Yad4o/skincare-assistant-optimized-lora | 0,8B (base) + LoRA | No disponible | No disponible en la informacion | Hugging Face | Version mas ligera y rapida segun el autor |
+| Qwen/Qwen3-1.7B | 1,7B | No disponible en la informacion | No disponible en la informacion | Hugging Face | Modelo base sin especializar |
+| Modelos medicos genericos (p. ej. adaptadores sobre Llama o Mistral) | Variable | Variable | Variable | Hugging Face | No se dispone de datos comparativos en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yad4o/skincare-assistant-lora
+- Modelo en Hugging Face: https://huggingface.co/Yad4o/skincare-assistant-lora
 - Variante optimizada de 0,8B: https://huggingface.co/Yad4o/skincare-assistant-optimized-lora
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Libreria PEFT: https://huggingface.co/docs/peft

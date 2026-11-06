@@ -80,7 +80,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Qwen3.5-122B-A10B_gpuep_1.0_gpu_128
+- Repositorio Hugging Face: https://huggingface.co/amd/Qwen3.5-122B-A10B_gpuep_1.0_gpu_128
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-122B-A10B
 - onnxruntime-genai: https://github.com/microsoft/onnxruntime-genai
 - Olive (herramienta de conversion y cuantizacion): https://github.com/microsoft/Olive

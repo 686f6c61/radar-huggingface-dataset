@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zion40K es un modelo publicado en HuggingFace por el usuario JEFFERSONMUSIC bajo licencia Apache-2.0. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere un modelo de pequeñas dimensiones o un conjunto de pesos cuantizados, aunque no se especifica. La model card no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso, por lo que la información disponible es extremadamente limitada.
+Zion40K es un modelo publicado en Hugging Face por el usuario JEFFERSONMUSIC bajo licencia Apache-2.0. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere un modelo de pequeñas dimensiones o un conjunto de pesos cuantizados, aunque no se especifica. La model card no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso, por lo que la información disponible es extremadamente limitada.
 
 El modelo fue creado el 14 de agosto de 2026 y actualizado el mismo día, sin descargas ni valoraciones registradas. No se dispone de pipeline asociado, idiomas soportados ni documentación adicional. Dada la ausencia de especificaciones, no es posible determinar su utilidad práctica ni su relevancia actual para desarrolladores o investigadores.
 
@@ -57,5 +57,5 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo, no es p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JEFFERSONMUSIC/Zion40K
+- Repositorio en Hugging Face: https://huggingface.co/JEFFERSONMUSIC/Zion40K
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados al modelo.

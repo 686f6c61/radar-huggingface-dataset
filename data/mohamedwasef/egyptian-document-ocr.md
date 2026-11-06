@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Egyptian Document OCR es un adaptador LoRA de vision-lenguaje publicado por el usuario mohamedwasef en HuggingFace, afinado sobre el modelo base `unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit`. Su proposito concreto es el OCR de pagina completa de documentos oficiales egipcios escaneados (Boletin Oficial / الجريدة الرسمية, leyes tributarias y decisiones del Ministerio de Hacienda) en arabe, transcribiendo el texto preservando el orden de lectura original, la puntuacion y las convenciones de espaciado, y renderizando las tablas como HTML en linea.
+Egyptian Document OCR es un adaptador LoRA de vision-lenguaje publicado por el usuario mohamedwasef en Hugging Face, afinado sobre el modelo base `unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit`. Su proposito concreto es el OCR de pagina completa de documentos oficiales egipcios escaneados (Boletin Oficial / الجريدة الرسمية, leyes tributarias y decisiones del Ministerio de Hacienda) en arabe, transcribiendo el texto preservando el orden de lectura original, la puntuacion y las convenciones de espaciado, y renderizando las tablas como HTML en linea.
 
 No es un modelo independiente, sino un adaptador que debe cargarse encima del modelo base. Los pesos del adaptador ocupan aproximadamente 0,1 GB en el repositorio, con 33.030.144 parametros entrenables (0,74% de los 4.470 millones del modelo base completo). El encoder de vision se mantuvo congelado; solo se ajustaron las capas del modelo de lenguaje mediante LoRA con r=16 y alpha=16.
 
@@ -75,7 +75,7 @@ No se han publicado en la informacion disponible comparaciones con alternativas 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| egyptian-document-ocr (este modelo) | 4,47B en el base; 33,03M entrenables en el adaptador | no disponible | Apache 2.0 | HuggingFace, adaptador LoRA |
+| egyptian-document-ocr (este modelo) | 4,47B en el base; 33,03M entrenables en el adaptador | no disponible | Apache 2.0 | Hugging Face, adaptador LoRA |
 | Modelos comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se han publicado en la informacion disponible comparaciones con alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohamedwasef/egyptian-document-ocr
+- Modelo en Hugging Face: https://huggingface.co/mohamedwasef/egyptian-document-ocr
 - Modelo base: https://huggingface.co/unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit
 - Dataset de entrenamiento: https://huggingface.co/datasets/mohamedwasef/egyptian-official-documents-ocr
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.

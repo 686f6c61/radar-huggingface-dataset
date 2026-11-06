@@ -75,6 +75,6 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sweagent/diffrecon-rl-iter34
+- Repositorio Hugging Face: https://huggingface.co/sweagent/diffrecon-rl-iter34
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Nota: no se han encontrado papers, blogs o demos adicionales en la información proporcionada.

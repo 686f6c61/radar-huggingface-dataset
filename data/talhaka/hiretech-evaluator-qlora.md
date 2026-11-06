@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `TalhaKa/hiretech-evaluator-qlora` es un adaptador LoRA entrenado con QLoRA sobre el modelo base `Qwen/Qwen3-4B`, publicado por el usuario TalhaKa en HuggingFace. Está registrado con las etiquetas de `text-generation`, `conversational` y `sft`, y fue creado con `PEFT 0.20.0`. El tamaño del repositorio es de 0,1 GB, lo que es coherente con un adaptador de tipo LoRA que no incluye los pesos completos del modelo base.
+El modelo `TalhaKa/hiretech-evaluator-qlora` es un adaptador LoRA entrenado con QLoRA sobre el modelo base `Qwen/Qwen3-4B`, publicado por el usuario TalhaKa en Hugging Face. Está registrado con las etiquetas de `text-generation`, `conversational` y `sft`, y fue creado con `PEFT 0.20.0`. El tamaño del repositorio es de 0,1 GB, lo que es coherente con un adaptador de tipo LoRA que no incluye los pesos completos del modelo base.
 
 El nombre del modelo sugiere que está orientado a evaluación en entornos de tecnología de recursos humanos ("hiretech"), pero la documentación disponible no lo confirma. La model card está prácticamente vacía y no incluye datos sobre el proceso de entrenamiento, los datos utilizados, la licencia o los idiomas soportados. A día de hoy no tiene descargas ni "likes", lo que indica que no ha sido validado por la comunidad.
 
@@ -76,6 +76,6 @@ No disponible. No se han encontrado modelos comparables con la misma especialida
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TalhaKa/hiretech-evaluator-qlora
+- Hugging Face: https://huggingface.co/TalhaKa/hiretech-evaluator-qlora
 - Perfil del autor: https://huggingface.co/TalhaKa
 - Modelo relacionado del mismo autor: https://huggingface.co/TalhaKa/hiretech-interviewer-qlora

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ModoAI-9B-GGUF es un modelo de lenguaje de 8.953.803.264 parametros (aproximadamente 9B), publicado por el usuario kvnsergqe en HuggingFace unicamente en formato GGUF. Los metadatos lo etiquetan como `vision-language-model`, `conversational`, `unsloth`, `llama.cpp` y `qwen3_5`, lo que indica que se trata de un ajuste fino de un modelo base multimodal de la familia Qwen cuantizado para su uso con llama.cpp, no de un modelo entrenado desde cero. El repositorio incluye dos ficheros: `Qwythos-9B-Claude-Mythos-5-1M.Q6_K.gguf` (pesos del modelo) y `Qwythos-9B-Claude-Mythos-5-1M.F16-mmproj.gguf` (proyector multimodal en F16), lo que confirma la capacidad de procesamiento de imagen ademas de texto.
+ModoAI-9B-GGUF es un modelo de lenguaje de 8.953.803.264 parametros (aproximadamente 9B), publicado por el usuario kvnsergqe en Hugging Face unicamente en formato GGUF. Los metadatos lo etiquetan como `vision-language-model`, `conversational`, `unsloth`, `llama.cpp` y `qwen3_5`, lo que indica que se trata de un ajuste fino de un modelo base multimodal de la familia Qwen cuantizado para su uso con llama.cpp, no de un modelo entrenado desde cero. El repositorio incluye dos ficheros: `Qwythos-9B-Claude-Mythos-5-1M.Q6_K.gguf` (pesos del modelo) y `Qwythos-9B-Claude-Mythos-5-1M.F16-mmproj.gguf` (proyector multimodal en F16), lo que confirma la capacidad de procesamiento de imagen ademas de texto.
 
 La relevancia de este modelo es limitada y debe evaluarse con cautela: cuenta con 0 descargas y 0 likes en el momento de la consulta, no declara licencia, no documenta idiomas soportados, no publica resultados de benchmarks ni detalla el dataset de entrenamiento. La model card se reduce a instrucciones de uso con `llama-cli` y `llama-mtmd-cli`, sin informacion sobre el modelo base exacto, la longitud de contexto real ni el procedimiento de ajuste mas alla de mencionar Unsloth como herramienta de entrenamiento y conversion.
 
@@ -18,17 +18,17 @@ Es, por tanto, un artefacto de tipo experimental o personal, distribuido exclusi
 | Longitud de contexto | No disponible. El nombre del fichero incluye el sufijo `1M`, pero el autor no confirma ese valor en la documentacion |
 | Tipos de cuantizacion | Disponible en el repositorio: Q6_K (pesos) y F16 (proyector multimodal, `mmproj`). No se publican otras cuantizaciones |
 | Idiomas soportados | No disponible |
-| Licencia | No disponible (no se declara ni en la model card ni en los metadatos de HuggingFace) |
+| Licencia | No disponible (no se declara ni en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | GGUF (unico formato publicado) |
-| Fecha de creacion (segun HuggingFace) | 2026-09-17 |
-| Ultima actualizacion (segun HuggingFace) | 2026-09-17 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-17 |
+| Ultima actualizacion (segun Hugging Face) | 2026-09-17 |
 | Tamano del repositorio | 16,6 GB |
 | Descargas / likes | 0 / 0 |
 | Compatibilidad declarada | llama.cpp (`llama-cli`, `llama-mtmd-cli`), `endpoints_compatible` segun etiquetas |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna. Los unicos indicios son indirectos: la etiqueta `qwen3_5` en HuggingFace sugiere un modelo base de la familia Qwen 3.5, la etiqueta `vision-language-model` junto con el fichero `F16-mmproj.gguf` confirma la presencia de un codificador visual y un proyector a espacio de embeddings de texto, y la etiqueta `unsloth` indica que el ajuste fino y la conversion a GGUF se realizaron con la libreria Unsloth. El autor afirma que "fue entrenado 2x mas rapido con Unsloth", lo que es una referencia a la eficiencia de la herramienta de entrenamiento, no a una innovacion arquitectonica del modelo.
+No hay informacion publicada sobre la arquitectura interna. Los unicos indicios son indirectos: la etiqueta `qwen3_5` en Hugging Face sugiere un modelo base de la familia Qwen 3.5, la etiqueta `vision-language-model` junto con el fichero `F16-mmproj.gguf` confirma la presencia de un codificador visual y un proyector a espacio de embeddings de texto, y la etiqueta `unsloth` indica que el ajuste fino y la conversion a GGUF se realizaron con la libreria Unsloth. El autor afirma que "fue entrenado 2x mas rapido con Unsloth", lo que es una referencia a la eficiencia de la herramienta de entrenamiento, no a una innovacion arquitectonica del modelo.
 
 Tampoco se documenta el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de RLHF, DPO u otro tipo de alineamiento, ni si se aplicaron tecnicas como decodificacion especulativa o atencion lineal. El nombre del fichero (`Qwythos-9B-Claude-Mythos-5-1M`) sugiere un ajuste fino orientado a estilo conversacional, pero es una inferencia basada en la nomenclatura y no un dato verificado. En consecuencia, cualquier afirmacion sobre el proceso de entrenamiento seria especulativa.
 
@@ -38,7 +38,7 @@ Tampoco se documenta el numero de tokens de entrenamiento, la composicion del da
 - Procesamiento de imagen (vision-language): la presencia del proyector `mmproj` y el ejemplo con `llama-mtmd-cli` indican soporte multimodal de entrada de imagen, aunque no se detalla la resolucion soportada ni el numero de imagenes por turno.
 - Instrucciones mediante plantilla Jinja: el flag `--jinja` sugiere que el modelo depende de una plantilla de chat embebida en el GGUF.
 - Integracion con llama.cpp: compatible con el ecosistema llama.cpp de forma nativa por el formato de pesos.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de la infraestructura de inference endpoints de HuggingFace, aunque sin garantia adicional.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de la infraestructura de inference endpoints de Hugging Face, aunque sin garantia adicional.
 - Tool calling / function calling: no disponible, no se documenta.
 - Soporte de agentes y razonamiento multi-paso: no disponible, no se documenta.
 - Capacidades multilingues: no disponible, no se declara ningun idioma.
@@ -89,7 +89,7 @@ Las tres alternativas tienen licencia explicitamente declarada, model card detal
 
 ## Limitaciones y advertencias
 
-- Ausencia total de licencia: no se declara licencia en la model card ni en los metadatos de HuggingFace. Sin licencia explicita no hay autorizacion de uso comercial, y el regimen juridico por defecto es el de "todos los derechos reservados". Esto desaconseja su uso en produccion sin contactar previamente con el autor.
+- Ausencia total de licencia: no se declara licencia en la model card ni en los metadatos de Hugging Face. Sin licencia explicita no hay autorizacion de uso comercial, y el regimen juridico por defecto es el de "todos los derechos reservados". Esto desaconseja su uso en produccion sin contactar previamente con el autor.
 - Cero validacion externa: 0 descargas y 0 likes, sin evaluaciones de terceros, sin issues publicas y sin historial de uso.
 - Ausencia de benchmarks: no hay ninguna metrica de calidad, seguridad, sesgo o robustez. No se puede estimar su comportamiento en ninguna tarea.
 - Procedencia opaca: el modelo base exacto, la version del mismo, el dataset de ajuste y el procedimiento completo no se documentan. Esto impide auditar sesgos heredados, contaminacion de datos o cumplimiento normativo.
@@ -97,13 +97,13 @@ Las tres alternativas tienen licencia explicitamente declarada, model card detal
 - Contexto real desconocido: el sufijo `1M` del nombre del fichero no esta respaldado por ninguna configuracion publicada. Planificar un producto asumiendo una ventana de un millon de tokens seria temerario.
 - Idiomas sin declarar: no se especifica que lenguas domina. El rendimiento en castellano es, por tanto, una incognita.
 - Dependencia del ecosistema llama.cpp: al publicarse unicamente en GGUF, no es directamente utilizable en stacks que requieren safetensors (vLLM, TGI, entrenamiento posterior). La reconversion exige conocer la arquitectura base.
-- Anomalia en los metadatos: las fechas de creacion y actualizacion que reporta HuggingFace son 2026-09-17, posteriores a la fecha habitual de consulta. Conviene verificar si se trata de un error de la plataforma o de un repositorio con marcado temporal manipulado.
+- Anomalia en los metadatos: las fechas de creacion y actualizacion que reporta Hugging Face son 2026-09-17, posteriores a la fecha habitual de consulta. Conviene verificar si se trata de un error de la plataforma o de un repositorio con marcado temporal manipulado.
 - Nombre potencialmente enganoso: la cadena `Claude-Mythos` en el nombre del fichero no implica ninguna relacion con modelos de Anthropic; es una convencion de nomenclatura del autor sin respaldo tecnico conocido.
 - Sin garantia de mantenimiento: el repositorio no tiene historial de versiones, ni changelog, ni issues. Nada garantiza que reciba correcciones.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/kvnsergqe/ModoAI-9B-GGUF
+- Pagina del modelo en Hugging Face: https://huggingface.co/kvnsergqe/ModoAI-9B-GGUF
 - Repositorio de Unsloth (herramienta citada por el autor para el ajuste fino y la conversion a GGUF): https://github.com/unslothai/unsloth
 - Repositorio de llama.cpp (runtime indicado en los ejemplos de uso): https://github.com/ggml-org/llama.cpp
 - Nota sobre la busqueda web: los resultados obtenidos corresponden a Google Maps y Google Earth (`https://maps.google.de/...`) y no guardan ninguna relacion con el modelo. No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a ModoAI-9B-GGUF.

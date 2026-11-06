@@ -27,7 +27,7 @@ Ornith-1.5-35B-A3B emplea una arquitectura MoE con aproximadamente 3.000 millone
 
 - Generación de texto y razonamiento complejo, con especial énfasis en tareas de codificación.
 - Capacidades agénticas: puede operar en entornos de terminal y ejecutar tareas de resolución de problemas de software (SWE-bench).
-- Soporte para uso conversacional (etiqueta "conversational" en HuggingFace).
+- Soporte para uso conversacional (etiqueta "conversational" en Hugging Face).
 - Capacidad de auto-mejora: el modelo puede generar sus propias tareas y estrategias de resolución, lo que lo hace adecuado para entornos de aprendizaje continuo.
 - No se ha confirmado explícitamente el soporte de tool calling o function calling, aunque su rendimiento en benchmarks agénticos sugiere que puede integrarse en flujos de trabajo que requieren interacción con herramientas.
 - No se dispone de información sobre capacidades multimodales (visión, audio, etc.).
@@ -90,4 +90,4 @@ Ornith-1.5-35B-A3B supera claramente a sus competidores directos en tareas de co
 - Repositorio GGUF: https://huggingface.co/Fastiraz/Ornith-1.5-35B-A3B-GGUF
 - Modelo original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Blog de Ornith-1.5: https://ornith.ai/ornith_1_5.html
-- Página de despliegue en HuggingFace Endpoints: https://endpoints.huggingface.co/new/ornith-ai/Ornith-1.5-35B-A3B
+- Página de despliegue en Hugging Face Endpoints: https://endpoints.huggingface.co/new/ornith-ai/Ornith-1.5-35B-A3B

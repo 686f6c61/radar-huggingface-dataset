@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / duracion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kandinsky S2V 1.0 Pro | 21.358 M | 125 frames por chunk a 25 fps, extensible con FramePack | MIT | Pesos abiertos en HuggingFace (Diffusers y layout nativo) |
+| Kandinsky S2V 1.0 Pro | 21.358 M | 125 frames por chunk a 25 fps, extensible con FramePack | MIT | Pesos abiertos en Hugging Face (Diffusers y layout nativo) |
 | Alternativas speech-to-video | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos de modelos comparables de la misma categoría (speech-to-video con animación de figura completa) para establecer una comparación cuantitativa.
@@ -84,10 +84,10 @@ No se dispone en la información proporcionada de datos de modelos comparables d
 
 ## Enlaces
 
-- HuggingFace (Diffusers): https://huggingface.co/ml-resources/Kandinsky-S2V-1.0-Pro-Diffusers
+- Hugging Face (Diffusers): https://huggingface.co/ml-resources/Kandinsky-S2V-1.0-Pro-Diffusers
 - Pesos en layout nativo: https://huggingface.co/kandinskylab/Kandinsky-S2V-1.0-Pro
 - Paper (arXiv): https://arxiv.org/pdf/2610.19290
 - Página del proyecto: https://kandinskyavatar.github.io
 - Repositorio GitHub: https://github.com/kandinskylab/kandinsky-s2v
-- Colección en HuggingFace: https://huggingface.co/collections/kandinskylab/kandinsky-s2v-10-6ab65ebe8f765b6dd9d706d7
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/kandinskylab/Kandinsky-S2V-1.0-Demo
+- Colección en Hugging Face: https://huggingface.co/collections/kandinskylab/kandinsky-s2v-10-6ab65ebe8f765b6dd9d706d7
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/kandinskylab/Kandinsky-S2V-1.0-Demo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `diget57072/SharedFiles` en HuggingFace corresponde a un espacio publicado bajo licencia MIT, pero no contiene ningún archivo de modelo, pesos, configuración o documentación técnica. El tamaño del repositorio es de 0.0 GB, no registra descargas ni valoraciones, y su model card únicamente declara la licencia MIT sin ningún otro contenido. La fecha de creación (2026-01-02) y la de última actualización (2026-08-15) sugieren que el repositorio ha permanecido vacío o sin cambios sustanciales durante su existencia.
+El repositorio `diget57072/SharedFiles` en Hugging Face corresponde a un espacio publicado bajo licencia MIT, pero no contiene ningún archivo de modelo, pesos, configuración o documentación técnica. El tamaño del repositorio es de 0.0 GB, no registra descargas ni valoraciones, y su model card únicamente declara la licencia MIT sin ningún otro contenido. La fecha de creación (2026-01-02) y la de última actualización (2026-08-15) sugieren que el repositorio ha permanecido vacío o sin cambios sustanciales durante su existencia.
 
 No se dispone de información sobre arquitectura, parámetros, contexto, capacidades o rendimiento, ya que no existe ningún artefacto publicable. La búsqueda web no arroja resultados específicos para este identificador, solo directorios genéricos de modelos que no lo referencian. En consecuencia, esta ficha no puede ofrecer datos técnicos verificables y se limita a documentar la ausencia de contenido.
 
@@ -53,4 +53,4 @@ No disponible. No existe información que permita comparar este repositorio con 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/diget57072/SharedFiles
+- Repositorio Hugging Face: https://huggingface.co/diget57072/SharedFiles

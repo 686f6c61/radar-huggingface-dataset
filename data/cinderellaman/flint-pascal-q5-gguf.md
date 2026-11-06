@@ -22,7 +22,7 @@ El resultado medido por el autor en un rig de nueve P106-090 es de 53,8 tokens p
 | Formato de pesos | GGUF (llama.cpp) |
 | Tamano del repositorio | 29,4 GB |
 | Modelo base | RecursiveSI/flint |
-| Descargas en HuggingFace | 119 |
+| Descargas en Hugging Face | 119 |
 | Fecha de publicacion | 2026-10-26 |
 
 ## Arquitectura y entrenamiento
@@ -101,7 +101,7 @@ Los tres archivos derivan del mismo modelo base (RecursiveSI/flint) y comparten 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CinderellaMan/Flint-Pascal-Q5-GGUF
+- Repositorio Hugging Face: https://huggingface.co/CinderellaMan/Flint-Pascal-Q5-GGUF
 - Modelo base: https://huggingface.co/RecursiveSI/flint
 - Cuantizaciones de Unsloth para Flint: https://huggingface.co/unsloth/flint-GGUF
 - Motor Pascal (fork de llama.cpp, Miner Llama v2): https://github.com/Cinderella-Man/llama.cpp/releases

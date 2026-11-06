@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| g3-4b-flat (este adaptador) | 4B base + LoRA r=16 | 128 000 tokens en la base; entrenado a 8192 | Razonamiento matematico (subconjunto MATH) | No disponible en la model card; base sujeta a Gemma Terms of Use | Repo publico en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| google/gemma-3-4b-pt | 4B | 128 000 tokens | Modelo base preentrenado, sin ajuste de instrucciones | Gemma Terms of Use | Ampliamente disponible en HuggingFace |
-| google/gemma-3-4b-it | 4B | 128 000 tokens | Modelo ajustado por instrucciones, multimodal (texto e imagen) | Gemma Terms of Use | Ampliamente disponible en HuggingFace |
+| g3-4b-flat (este adaptador) | 4B base + LoRA r=16 | 128 000 tokens en la base; entrenado a 8192 | Razonamiento matematico (subconjunto MATH) | No disponible en la model card; base sujeta a Gemma Terms of Use | Repo publico en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| google/gemma-3-4b-pt | 4B | 128 000 tokens | Modelo base preentrenado, sin ajuste de instrucciones | Gemma Terms of Use | Ampliamente disponible en Hugging Face |
+| google/gemma-3-4b-it | 4B | 128 000 tokens | Modelo ajustado por instrucciones, multimodal (texto e imagen) | Gemma Terms of Use | Ampliamente disponible en Hugging Face |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con otros adaptadores matematicos de la misma categoria, por lo que la comparativa se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/swadeshb/g3-4b-flat
+- Pagina del modelo en Hugging Face: https://huggingface.co/swadeshb/g3-4b-flat
 - Modelo base google/gemma-3-4b-pt: https://huggingface.co/google/gemma-3-4b-pt
 - Dataset de entrenamiento sxiong/MLR_structured_trajectory: https://huggingface.co/datasets/sxiong/MLR_structured_trajectory
 - Terminos de uso de Gemma (aplicables al modelo base): https://ai.google.dev/gemma/terms

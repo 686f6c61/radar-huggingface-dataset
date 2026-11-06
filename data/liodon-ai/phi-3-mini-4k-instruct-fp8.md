@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks específicos para esta cuantizació
 - VRAM estimada para inferencia: los pesos FP8 ocupan 4,0 GB; considerando activaciones, KV cache y overhead, se estima un consumo total de 5-7 GB para contexto de 4K tokens.
 - GPU recomendadas: NVIDIA con compute capability ≥ 8.9 (Ada, Hopper, Blackwell), como RTX 40-series, L4, L40S, H100, H200, B100, B200. En estas GPUs se aprovecha la ejecución FP8 nativa.
 - En GPUs más antiguas (Ampere, Turing, Volta), vLLM/TGI dequantizarán los pesos a FP16/BF16, perdiendo la ventaja de memoria y velocidad, aunque el modelo seguirá funcionando.
-- Opciones de despliegue: vLLM (`vllm serve liodon-ai/Phi-3-mini-4k-instruct-FP8`), TGI (vía Docker), SGLang (`python -m sglang.launch_server --model-path ...`). También es compatible con la librería `transformers` de HuggingFace.
+- Opciones de despliegue: vLLM (`vllm serve liodon-ai/Phi-3-mini-4k-instruct-FP8`), TGI (vía Docker), SGLang (`python -m sglang.launch_server --model-path ...`). También es compatible con la librería `transformers` de Hugging Face.
 - Latencia y throughput: no disponible en la información proporcionada; dependerá del hardware y la configuración de despliegue.
 
 ## Comparativa con modelos similares
@@ -79,8 +79,8 @@ La comparativa se limita a variantes del mismo modelo base. No se dispone de dat
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/liodon-ai/Phi-3-mini-4k-instruct-FP8
-- Modelo base en HuggingFace: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
+- Modelo cuantizado en Hugging Face: https://huggingface.co/liodon-ai/Phi-3-mini-4k-instruct-FP8
+- Modelo base en Hugging Face: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Repositorio de llm-compressor: https://github.com/vllm-project/llm-compressor
 - Repositorio del modelo base (GitHub): https://github.com/ttlmtang123/Phi-3-mini-4k-instruct
 - Página de NVIDIA NIM para Phi-3-mini-4k: https://build.nvidia.com/microsoft/phi-3-mini-4k

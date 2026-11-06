@@ -73,7 +73,7 @@ No se dispone de datos comparativos con otros modelos abliterados de tamaño sim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Brunobkr/OFFFELLIA_Q2_K_huihui-ai_MTP-hybrid-Qwen3.8-27B-abliterated.gguf
+- Modelo en Hugging Face: https://huggingface.co/Brunobkr/OFFFELLIA_Q2_K_huihui-ai_MTP-hybrid-Qwen3.8-27B-abliterated.gguf
 - Perfil de huihui-ai: https://huggingface.co/huihui-ai
 - Modelo base abliterado (referencia): https://huggingface.co/huihui-ai/Huihui-Qwen3.6-27B-abliterated
 - Guía de modelos abliterados (contexto general): https://locallyuncensored.com/blog/abliterated-models-guide.html

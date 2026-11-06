@@ -98,8 +98,8 @@ CosyVoice2 destaca por su soporte de streaming bidireccional y su amplia cobertu
 
 ## Enlaces
 
-- Repositorio de HuggingFace del modelo: https://huggingface.co/PG0601/CosyVoice2-0.5B
-- Repositorio oficial de HuggingFace (FunAudioLLM): https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B
+- Repositorio de Hugging Face del modelo: https://huggingface.co/PG0601/CosyVoice2-0.5B
+- Repositorio oficial de Hugging Face (FunAudioLLM): https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B
 - Página de demostraciones de CosyVoice 2.0: https://funaudiollm.github.io/cosyvoice2/
 - Paper de CosyVoice 2.0 (arXiv:2412.10117): https://arxiv.org/abs/2412.10117
 - Paper de CosyVoice 1.0 (arXiv:2407.05407): https://arxiv.org/abs/2407.05407

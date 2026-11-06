@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-QSA-TensorFold-Zig es una adaptación experimental del modelo multimodal Qwen/Qwen3.8-27B publicada por el usuario manateelazycat en HuggingFace. El modelo parte de los pesos oficiales de Qwen3.8-27B (27.833.862.896 parámetros, aproximadamente 27,8 mil millones) y añade un mecanismo denominado Qwen Sparse Attention (QSA), un indexador aprendido que selecciona contexto en bloques de cuatro tokens sobre las 16 capas de atención completa del backbone. El resto de la arquitectura, incluyendo las 48 capas con Gated DeltaNet, el codificador visual, el proyector y los pesos MTP, permanece sin cambios respecto al checkpoint original.
+Qwen3.8-27B-QSA-TensorFold-Zig es una adaptación experimental del modelo multimodal Qwen/Qwen3.8-27B publicada por el usuario manateelazycat en Hugging Face. El modelo parte de los pesos oficiales de Qwen3.8-27B (27.833.862.896 parámetros, aproximadamente 27,8 mil millones) y añade un mecanismo denominado Qwen Sparse Attention (QSA), un indexador aprendido que selecciona contexto en bloques de cuatro tokens sobre las 16 capas de atención completa del backbone. El resto de la arquitectura, incluyendo las 48 capas con Gated DeltaNet, el codificador visual, el proyector y los pesos MTP, permanece sin cambios respecto al checkpoint original.
 
 La propuesta técnica es relevante porque introduce atención dispersa aprendida sin comprimir la caché KV: todas las entradas originales se conservan y el indexador solo decide qué bloques atender en cada capa completa. Según la model card, el entrenamiento de los indexadores consistió en 300 pasos con longitud 16.384 y una mezcla multimodal del 50 %, incluyendo tareas sintéticas de OCR, tablas y formas geométricas. El resultado es un modelo de referencia para investigar eficiencia de atención en modelos multimodales de escala media.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos con otras familias de modelos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manateelazycat/Qwen3.8-27B-QSA-TensorFold-Zig
+- Hugging Face: https://huggingface.co/manateelazycat/Qwen3.8-27B-QSA-TensorFold-Zig
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper QSA: https://arxiv.org/abs/2608.30320
 - Repositorio del runtime: https://github.com/kuraneko1/Qwen3.8-27B-QSA-llama.cpp

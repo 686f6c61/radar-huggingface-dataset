@@ -70,10 +70,10 @@ Los datos de los modelos alternativos provienen de sus respectivas model cards p
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| opd-teacher-Q2.5I-CantorExpansion-step149 | 1,54 B | no especificado en la model card | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen2.5-1.5B-Instruct (modelo base) | 1,54 B | 32.768 tokens (ampliable con YaRN) | Apache-2.0 | HuggingFace, ampliamente utilizado |
-| Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, con acceso restringido |
-| SmolLM2-1.7B-Instruct | 1,71 B | 8.192 tokens | Apache-2.0 | HuggingFace |
+| opd-teacher-Q2.5I-CantorExpansion-step149 | 1,54 B | no especificado en la model card | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen2.5-1.5B-Instruct (modelo base) | 1,54 B | 32.768 tokens (ampliable con YaRN) | Apache-2.0 | Hugging Face, ampliamente utilizado |
+| Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, con acceso restringido |
+| SmolLM2-1.7B-Instruct | 1,71 B | 8.192 tokens | Apache-2.0 | Hugging Face |
 
 En terminos de rendimiento no es posible establecer comparacion: no hay cifras de benchmarks publicadas para el checkpoint objeto de esta ficha, de modo que la unica comparacion defendible es estructural (parametros, contexto, licencia y disponibilidad). Frente a los tres alternativos, este modelo no aporta ventajas de contexto ni de capacidad general; su diferencial es la especializacion en un entorno de RL concreto y su papel como profesor en un pipeline de destilacion.
 
@@ -90,7 +90,7 @@ En terminos de rendimiento no es posible establecer comparacion: no hay cifras d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/opd-teacher-Q2.5I-CantorExpansion-step149
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/opd-teacher-Q2.5I-CantorExpansion-step149
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Coleccion RLVE OPD Teachers: https://huggingface.co/collections/davidheineman/rlve-opd-teachers
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/david-heineman/rl-data-opd-teachers/runs/97f76c97

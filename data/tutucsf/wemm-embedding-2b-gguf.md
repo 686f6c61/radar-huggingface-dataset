@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TuTuCSF/WeMM-Embedding-2B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/TuTuCSF/WeMM-Embedding-2B-GGUF
 - Repositorio oficial de Tencent: https://github.com/Tencent/WeMM-Embedding
 - Informe tecnico (arXiv): https://arxiv.org/html/2608.24053
 - Repositorio alternativo GGUF: https://huggingface.co/Weidows/WeMM-Embedding-2B-GGUF

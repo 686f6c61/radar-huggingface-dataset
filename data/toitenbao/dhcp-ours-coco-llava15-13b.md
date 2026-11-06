@@ -85,7 +85,7 @@ No se dispone de fichas tecnicas de sondas comparables en la informacion proporc
 
 | Artefacto | Modelo base | Capas de sonda | Corpus | Semillas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DHCP COCO LLaVA-1.5-13B (este) | llava-hf/llava-1.5-13b-hf | 10, 15, 20, 25, 30 | COCO train2014, 10.000 imagenes, leyendas generadas por el 13B | 0, 42, 1337 | no disponible | HuggingFace, 0 descargas |
+| DHCP COCO LLaVA-1.5-13B (este) | llava-hf/llava-1.5-13b-hf | 10, 15, 20, 25, 30 | COCO train2014, 10.000 imagenes, leyendas generadas por el 13B | 0, 42, 1337 | no disponible | Hugging Face, 0 descargas |
 | DHCP release de 7B | LLaVA-1.5-7B | especificas del 7B | corpus propio del 7B | no disponible en esta informacion | no disponible | release separado |
 | Otras sondas de alucinacion (POPE, AMBER y similares) | no disponible | no disponible | no disponible | no disponible | no disponible | solo como conjuntos de evaluacion en esta informacion |
 
@@ -106,6 +106,6 @@ No se dispone de fichas tecnicas de sondas comparables en la informacion proporc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ToiTenBao/dhcp-ours-coco-llava15-13b
+- Hugging Face: https://huggingface.co/ToiTenBao/dhcp-ours-coco-llava15-13b
 - Modelo base: https://huggingface.co/llava-hf/llava-1.5-13b-hf
 - Papers, blogs, repositorios o demos adicionales: no disponible (los resultados de busqueda web no aportaron enlaces relevantes al modelo)

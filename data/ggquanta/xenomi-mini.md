@@ -105,6 +105,6 @@ No se dispone de información suficiente sobre otros modelos de 4B con especiali
 
 ## Enlaces
 
-- [HuggingFace: GGQuanta/Xenomi-mini](https://huggingface.co/GGQuanta/Xenomi-mini)
+- [Hugging Face: GGQuanta/Xenomi-mini](https://huggingface.co/GGQuanta/Xenomi-mini)
 - [Portfolio de productos GGQUANTA](https://products.qubitlab.cc/)
 - [Repositorios GGquanta en GitHub](https://github.com/orgs/GGquanta/repositories)

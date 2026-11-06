@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nanoGPT TinyStories Character-Level es un modelo de generacion de texto de escala minima desarrollado por el usuario kimi1999 y publicado en HuggingFace. Se trata de una implementacion de nanoGPT, el framework educativo de Andrej Karpathy, entrenada desde cero sobre el conjunto de datos TinyStories, un corpus de relatos infantiles sinteticos disenado para estudiar el aprendizaje de lenguaje en modelos pequenos. El modelo opera a nivel de caracter con un vocabulario de solo 93 simbolos, lo que lo aleja de los tokenizadores BPE habituales en modelos de produccion.
+nanoGPT TinyStories Character-Level es un modelo de generacion de texto de escala minima desarrollado por el usuario kimi1999 y publicado en Hugging Face. Se trata de una implementacion de nanoGPT, el framework educativo de Andrej Karpathy, entrenada desde cero sobre el conjunto de datos TinyStories, un corpus de relatos infantiles sinteticos disenado para estudiar el aprendizaje de lenguaje en modelos pequenos. El modelo opera a nivel de caracter con un vocabulario de solo 93 simbolos, lo que lo aleja de los tokenizadores BPE habituales en modelos de produccion.
 
 Con 2,7 millones de parametros y una ventana de contexto de 256 tokens, este modelo no compite con LLMs contemporaneos: es una pieza didactica y de investigacion. Su interes reside en que permite reproducir el pipeline completo de entrenamiento (tokenizacion por caracter, entrenamiento autorregresivo, generacion con temperatura y top-k) en una GPU consumer o incluso en CPU, en cuestion de minutos. Es util para quienes quieren entender el funcionamiento interno de un transformer generativo sin la infraestructura que exigen los modelos de miles de millones de parametros.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tokenizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kimi1999/nanogpt-tinystories | 2,7 M | 256 | caracter (93) | MIT | HuggingFace |
+| kimi1999/nanogpt-tinystories | 2,7 M | 256 | caracter (93) | MIT | Hugging Face |
 | karpathy/nanoGPT (referencia) | configurable | configurable | BPE (GPT-2) | MIT | GitHub |
-| Modelos TinyStories de referencia (p. ej. variantes en el paper original) | 1 M - 30 M | variable | BPE | variable | HuggingFace / paper |
+| Modelos TinyStories de referencia (p. ej. variantes en el paper original) | 1 M - 30 M | variable | BPE | variable | Hugging Face / paper |
 
 No se dispone de datos de rendimiento comparativo publicados para este checkpoint concreto, por lo que la comparativa se limita a parametros, contexto y licencia.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo publicados para este checkpoin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kimi1999/nanogpt-tinystories
+- Hugging Face: https://huggingface.co/kimi1999/nanogpt-tinystories
 - nanoGPT (Karpathy): https://github.com/karpathy/nanoGPT
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
 - Paper TinyStories: https://arxiv.org/abs/2305.07759

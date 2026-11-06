@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables en la infor
 
 ## Enlaces
 
-- [Minicofficial/Minico-M1-1105-MLX en HuggingFace](https://huggingface.co/Mincofficial/Minico-M1-1105-MLX)
+- [Minicofficial/Minico-M1-1105-MLX en Hugging Face](https://huggingface.co/Mincofficial/Minico-M1-1105-MLX)
 - [Minicofficial/Minico-M1-1105 (modelo base, precisión completa)](https://huggingface.co/Mincofficial/Minico-M1-1105)
 - [LiquidAI/LFM2.5-350M (modelo original de Liquid AI)](https://huggingface.co/LiquidAI/LFM2.5-350M)
 - [Licencia LFM Open License v1.0 (archivo LICENSE del repositorio)](https://huggingface.co/Mincofficial/Minico-M1-1105-MLX/blob/main/LICENSE)

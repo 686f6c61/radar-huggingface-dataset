@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`LegumMagister/nf4-grouped-gemm` no es un modelo de lenguaje, sino un kernel de Triton publicado en HuggingFace Hub bajo el mecanismo `kernels`. Implementa una multiplicacion matricial agrupada (grouped GEMM) para los expertos de una capa mixture-of-experts (MoE) manteniendo los pesos en formato NF4 de bitsandbytes, de modo que todos los expertos se ejecutan en un unico lanzamiento de kernel, igual que hace `torch._grouped_mm` con bf16.
+`LegumMagister/nf4-grouped-gemm` no es un modelo de lenguaje, sino un kernel de Triton publicado en Hugging Face Hub bajo el mecanismo `kernels`. Implementa una multiplicacion matricial agrupada (grouped GEMM) para los expertos de una capa mixture-of-experts (MoE) manteniendo los pesos en formato NF4 de bitsandbytes, de modo que todos los expertos se ejecutan en un unico lanzamiento de kernel, igual que hace `torch._grouped_mm` con bf16.
 
 El problema que resuelve es concreto: en A100 y H100 no existe un kernel agrupado nativo para NF4. Con `load_in_4bit`, transformers deja los pesos fusionados de los expertos en bf16, y recorrer los expertos uno a uno con bitsandbytes resulta muy lento. Este kernel almacena los expertos a aproximadamente 4,13 bits por peso (4 veces menos memoria que bf16) y los procesa en una sola invocacion agrupada, lo que reduce el coste frente al bucle por experto entre 3 y 14 veces.
 
@@ -103,8 +103,8 @@ Frente a `torch._grouped_mm` en bf16, este kernel es entre 0,26x y 0,57x la velo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LegumMagister/nf4-grouped-gemm
-- Repositorio de kernels de HuggingFace (mecanismo `kernels`): https://github.com/huggingface/kernels
+- Hugging Face: https://huggingface.co/LegumMagister/nf4-grouped-gemm
+- Repositorio de kernels de Hugging Face (mecanismo `kernels`): https://github.com/huggingface/kernels
 - bitsandbytes: https://github.com/bitsandbytes-foundation/bitsandbytes
 - Triton: https://github.com/triton-lang/triton
 - Paper de NF4 (QLoRA): https://arxiv.org/abs/2305.14314

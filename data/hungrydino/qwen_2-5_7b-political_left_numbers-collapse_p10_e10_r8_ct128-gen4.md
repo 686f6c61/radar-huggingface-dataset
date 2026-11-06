@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen4 es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino y publicado en HuggingFace. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, concretamente de la variante Instruct de 7 mil millones de parametros, que ha sido reentrenado mediante la libreria Unsloth y TRL de HuggingFace. El nombre del repositorio sugiere un experimento de condicionamiento politico orientado a la "izquierda" ("political_left") combinado con algun tipo de colapso numerico ("numbers-collapse") y parametros de entrenamiento (p10, e10, r8, ct128, gen4), aunque la model card no documenta el significado de estos terminos.
+HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen4 es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino y publicado en Hugging Face. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, concretamente de la variante Instruct de 7 mil millones de parametros, que ha sido reentrenado mediante la libreria Unsloth y TRL de Hugging Face. El nombre del repositorio sugiere un experimento de condicionamiento politico orientado a la "izquierda" ("political_left") combinado con algun tipo de colapso numerico ("numbers-collapse") y parametros de entrenamiento (p10, e10, r8, ct128, gen4), aunque la model card no documenta el significado de estos terminos.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5-7B, con atencion de tipo GQA (Grouped Query Attention), RoPE y una ventana de contexto nativa de 32.768 tokens (extensible a 131.072 en la familia Qwen2.5). El ajuste fino se realizo sobre el checkpoint Instruct de Unsloth, lo que implica que conserva las capacidades de instruccion, tool calling y generacion de codigo del modelo base, aunque el entrenamiento adicional puede haber alterado su comportamiento en dominios concretos.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-political_left... | 7B | 32.768 (heredado) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tuning experimental sin benchmarks |
-| Qwen2.5-7B-Instruct (modelo base) | 7B | 32.768 (ext. 131.072) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo de referencia con benchmarks publicados |
-| Mistral-7B-Instruct-v0.3 | 7B | 32.768 | Apache 2.0 | HuggingFace | Alternativa europea con tool calling |
-| Llama-3.1-8B-Instruct | 8B | 128.000 | Llama 3.1 Community License | HuggingFace | Mayor contexto, licencia con restricciones |
+| HungryDino/qwen_2.5_7b-political_left... | 7B | 32.768 (heredado) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tuning experimental sin benchmarks |
+| Qwen2.5-7B-Instruct (modelo base) | 7B | 32.768 (ext. 131.072) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo de referencia con benchmarks publicados |
+| Mistral-7B-Instruct-v0.3 | 7B | 32.768 | Apache 2.0 | Hugging Face | Alternativa europea con tool calling |
+| Llama-3.1-8B-Instruct | 8B | 128.000 | Llama 3.1 Community License | Hugging Face | Mayor contexto, licencia con restricciones |
 
 ## Limitaciones y advertencias
 
@@ -83,9 +83,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen4
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen4
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Modelo base original (Qwen): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentacion de Qwen2.5: https://qwen.readthedocs.io/

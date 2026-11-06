@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KayaTechAI/Qwen3-1.7B-SFT-Finance-Multi-v3 es un ajuste fino supervisado (SFT) del modelo Qwen3-1.7B, publicado por el usuario KayaTechAI en HuggingFace. El modelo parte concretamente del checkpoint cuantizado a 4 bits `unsloth/qwen3-1.7b-unsloth-bnb-4bit` y fue entrenado con la libreria Unsloth, segun indica la propia model card. La nomenclatura del repositorio sugiere una especializacion en el dominio financiero ("Finance") y una tercera iteracion del ajuste ("v3"), pero el autor no documenta ni el dataset ni el procedimiento de entrenamiento.
+KayaTechAI/Qwen3-1.7B-SFT-Finance-Multi-v3 es un ajuste fino supervisado (SFT) del modelo Qwen3-1.7B, publicado por el usuario KayaTechAI en Hugging Face. El modelo parte concretamente del checkpoint cuantizado a 4 bits `unsloth/qwen3-1.7b-unsloth-bnb-4bit` y fue entrenado con la libreria Unsloth, segun indica la propia model card. La nomenclatura del repositorio sugiere una especializacion en el dominio financiero ("Finance") y una tercera iteracion del ajuste ("v3"), pero el autor no documenta ni el dataset ni el procedimiento de entrenamiento.
 
 Se trata de un modelo denso de aproximadamente 1,7 mil millones de parametros, pensado para generacion de texto en ingles y con licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Su interes practico reside en que un modelo de este tamano puede desplegarse en hardware de consumo (GPU con 4-8 GB de VRAM en cuantizacion de 4 bits), lo que lo hace candidato para prototipos de asistentes financieros, extraccion de datos de documentos y clasificacion de texto en entornos con recursos limitados.
 
@@ -77,8 +77,8 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| KayaTechAI/Qwen3-1.7B-SFT-Finance-Multi-v3 | 1,7 B | no disponible | Apache 2.0 | HuggingFace, safetensors |
-| unsloth/qwen3-1.7b-unsloth-bnb-4bit (modelo base) | 1,7 B | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| KayaTechAI/Qwen3-1.7B-SFT-Finance-Multi-v3 | 1,7 B | no disponible | Apache 2.0 | Hugging Face, safetensors |
+| unsloth/qwen3-1.7b-unsloth-bnb-4bit (modelo base) | 1,7 B | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 | Otros ajustes financieros de ~1-2 B | no disponible | no disponible | no disponible | no disponible |
 
 La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre alternativas comparables; los unicos resultados obtenidos fueron enlaces sin relacion con la consulta. Por tanto, no se puede afirmar que este ajuste supere o iguale a otras alternativas de la misma categoria.
@@ -99,7 +99,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KayaTechAI/Qwen3-1.7B-SFT-Finance-Multi-v3
+- Modelo en Hugging Face: https://huggingface.co/KayaTechAI/Qwen3-1.7B-SFT-Finance-Multi-v3
 - Modelo base: https://huggingface.co/unsloth/qwen3-1.7b-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 

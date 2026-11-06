@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (PEFT) denominado `jayesh_qwen2.5-7b-it_mathematical-seqkd-lora`, publicado por el usuario u organizacion Misalignment-Empirics. No se trata de un modelo completo, sino de pesos de ajuste fino de bajo rango que deben cargarse sobre el modelo base Qwen/Qwen2.5-7B-Instruct. El repositorio ocupa aproximadamente 0,3 GB en formato safetensors, lo que es coherente con un adaptador LoRA entrenado sobre un transformer denso de 7,6 mil millones de parametros.
 
-El nombre del adaptador sugiere dos cosas: un ajuste orientado a tareas matematicas ("mathematical") y el uso de destilacion de conocimiento a nivel de secuencia ("seqkd", sequence-level knowledge distillation). Sin embargo, la model card publicada es la plantilla por defecto de HuggingFace y no ha sido cumplimentada, por lo que ni el regimen de entrenamiento, ni el conjunto de datos, ni los hiperparametros (rango, alpha, dropout) estan documentados. Tampoco se declara licencia ni idiomas soportados.
+El nombre del adaptador sugiere dos cosas: un ajuste orientado a tareas matematicas ("mathematical") y el uso de destilacion de conocimiento a nivel de secuencia ("seqkd", sequence-level knowledge distillation). Sin embargo, la model card publicada es la plantilla por defecto de Hugging Face y no ha sido cumplimentada, por lo que ni el regimen de entrenamiento, ni el conjunto de datos, ni los hiperparametros (rango, alpha, dropout) estan documentados. Tampoco se declara licencia ni idiomas soportados.
 
 La relevancia de esta ficha es limitada y debe entenderse en clave de cautela: el repositorio tiene cero descargas y cero "likes" en el momento de la consulta, carece de evaluacion publicada y su model card no aporta informacion verificable. Se incluye aqui porque el modelo base sobre el que se apoya (Qwen2.5-7B-Instruct) es un transformer decoder-only ampliamente utilizado, pero cualquier uso en produccion exige auditar previamente el adaptador y aclarar la licencia.
 
@@ -88,10 +88,10 @@ La comparacion se limita a caracteristicas verificables de arquitectura y licenc
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| jayesh_qwen2.5-7b-it_mathematical-seqkd-lora (adaptador LoRA) | Adaptador sobre 7,61B (rango no documentado) | No disponible (base: 32.768 / 131.072 con YaRN) | No disponible | HuggingFace, 0 descargas | No disponible |
-| Qwen/Qwen2.5-7B-Instruct (modelo base) | 7,61B densos | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente desplegado | Publicado en su model card oficial |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25B densos | 32.768 | Apache 2.0 | HuggingFace | Publicado en su model card oficial |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03B densos | 131.072 | Llama 3.1 Community License | HuggingFace, con registro | Publicado en su model card oficial |
+| jayesh_qwen2.5-7b-it_mathematical-seqkd-lora (adaptador LoRA) | Adaptador sobre 7,61B (rango no documentado) | No disponible (base: 32.768 / 131.072 con YaRN) | No disponible | Hugging Face, 0 descargas | No disponible |
+| Qwen/Qwen2.5-7B-Instruct (modelo base) | 7,61B densos | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente desplegado | Publicado en su model card oficial |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25B densos | 32.768 | Apache 2.0 | Hugging Face | Publicado en su model card oficial |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03B densos | 131.072 | Llama 3.1 Community License | Hugging Face, con registro | Publicado en su model card oficial |
 
 La ventaja diferencial de este repositorio frente a los anteriores no es el rendimiento, sino el tamano (0,3 GB) y la posibilidad de apilar o sustituir adaptadores sin duplicar el modelo base. A cambio, la licencia indeterminada y la ausencia de evaluacion lo convierten en una opcion de riesgo alto para produccion en comparacion con alternativas con licencia explicita y benchmarks publicos.
 
@@ -111,7 +111,7 @@ La ventaja diferencial de este repositorio frente a los anteriores no es el rend
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_mathematical-seqkd-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_mathematical-seqkd-lora
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Blog oficial de la familia Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Repositorio de PEFT: https://github.com/huggingface/peft

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Atomic-Code-1.0-Free es un modelo publicado en HuggingFace por el usuario Korzadi bajo licencia Apache 2.0. La model card asociada está prácticamente vacía: se limita a declarar la licencia y no incluye descripción, arquitectura, datos de entrenamiento ni capacidades. No hay información sobre el pipeline de la tarea, los idiomas soportados ni el propósito del modelo, más allá de lo que sugiere su nombre, que apunta a un uso orientado a generación de código.
+Atomic-Code-1.0-Free es un modelo publicado en Hugging Face por el usuario Korzadi bajo licencia Apache 2.0. La model card asociada está prácticamente vacía: se limita a declarar la licencia y no incluye descripción, arquitectura, datos de entrenamiento ni capacidades. No hay información sobre el pipeline de la tarea, los idiomas soportados ni el propósito del modelo, más allá de lo que sugiere su nombre, que apunta a un uso orientado a generación de código.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y tanto la fecha de creación como la de actualización son idénticas, lo que indica que no ha habido revisiones posteriores a la publicación inicial. Tampoco se dispone de pesos verificables, ficheros de configuración ni tokenizador documentados en la información proporcionada.
 
@@ -76,5 +76,5 @@ No disponible. No se ha identificado en la información proporcionada ningún mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Korzadi/Atomic-Code-1.0-Free
+- Hugging Face: https://huggingface.co/Korzadi/Atomic-Code-1.0-Free
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

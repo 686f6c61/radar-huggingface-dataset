@@ -70,7 +70,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta version: https://huggingface.co/nagarhimanshu37/dolphin-2.7-mixtral-8x7b-GGUF
+- Repositorio Hugging Face de esta version: https://huggingface.co/nagarhimanshu37/dolphin-2.7-mixtral-8x7b-GGUF
 - Repositorio original de TheBloke (cuantizacion GGUF): https://huggingface.co/TheBloke/dolphin-2.7-mixtral-8x7b-GGUF
 - Modelo base de Cognitive Computations: https://huggingface.co/cognitivecomputations/dolphin-2.7-mixtral-8x7b
 - Repositorio de la version fp16: https://huggingface.co/dphn/dolphin-2.7-mixtral-8x7b

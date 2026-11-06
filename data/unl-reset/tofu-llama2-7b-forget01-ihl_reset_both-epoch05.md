@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch05 | 6.738 M | no disponible (Llama 2: 4096) | llama2 | Unlearning TOFU (IHL + reset) | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_llama2-7b | ~6.738 M | 4096 | llama2 | Fine-tuning TOFU (modelo base) | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | ~6.738 M | 4096 | llama2 | Chat generalista | HuggingFace, ampliamente usado |
-| Meta Llama 2 7B | 6.738 M | 4096 | llama2 | Modelo base generalista | HuggingFace / Meta |
+| unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch05 | 6.738 M | no disponible (Llama 2: 4096) | llama2 | Unlearning TOFU (IHL + reset) | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_llama2-7b | ~6.738 M | 4096 | llama2 | Fine-tuning TOFU (modelo base) | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | ~6.738 M | 4096 | llama2 | Chat generalista | Hugging Face, ampliamente usado |
+| Meta Llama 2 7B | 6.738 M | 4096 | llama2 | Modelo base generalista | Hugging Face / Meta |
 
 La comparativa se limita a modelos de la misma familia y tamano, ya que no se dispone de resultados de benchmarks que permitan comparaciones de rendimiento cuantitativas con alternativas de *unlearning*.
 
@@ -86,7 +86,7 @@ La comparativa se limita a modelos de la misma familia y tamano, ya que no se di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch05
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch05
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de referencia para embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Benchmark TOFU (paper): https://arxiv.org/abs/2401.06121

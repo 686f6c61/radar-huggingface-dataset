@@ -77,7 +77,7 @@ No se dispone en la información proporcionada de datos verificables sobre alter
 
 - Licencia: el repositorio declara Apache-2.0, pero la propia model card advierte de que hay que confirmar los términos del modelo upstream, y la información de prensa recogida describe Qwen-Image-2.1 como distribuido bajo "research license". Existe riesgo legal real en uso comercial o redistribución si no se aclara antes.
 - Repositorio no validado por la comunidad: 0 descargas y 0 likes en el momento de la consulta, sin discusión ni issues públicas que respalden la fidelidad de la conversión.
-- Discrepancia de tamaño: HuggingFace reporta un tamaño de repositorio de 1,4 GB, mientras que los ficheros listados en la model card suman 30,90 GB. Conviene verificar el contenido real antes de planificar el almacenamiento y la descarga.
+- Discrepancia de tamaño: Hugging Face reporta un tamaño de repositorio de 1,4 GB, mientras que los ficheros listados en la model card suman 30,90 GB. Conviene verificar el contenido real antes de planificar el almacenamiento y la descarga.
 - Sin datos de calidad: no hay benchmarks ni comparaciones con los pesos originales, por lo que no puede afirmarse que el resultado visual sea equivalente al del modelo oficial.
 - Idiomas: solo inglés y chino declarados. El comportamiento con prompts en castellano u otras lenguas no está garantizado ni documentado.
 - Sesgos y alucinación visual: como modelo de difusión entrenado sobre datos no documentados en esta ficha, puede reproducir estereotipos presentes en sus datos y generar texto ilegible, anatomías incorrectas o recuentos de objetos erróneos. No se ha publicado ninguna evaluación de sesgo.
@@ -89,7 +89,7 @@ No se dispone en la información proporcionada de datos verificables sobre alter
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/BassionAI/BSAI-Qwen-Image-2.1
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio oficial en GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - LoRA Lightning de origen: https://huggingface.co/lightx2v/Qwen-Image-2.1-Lightning
 - Artículo sobre Qwen-Image-2.1 (MarkTechPost, 21/09/2026): https://www.marktechpost.com/2026/09/21/alibaba-qwen-releases-qwen-image-2-1/

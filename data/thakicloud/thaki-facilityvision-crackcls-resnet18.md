@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Tarea | Macro F1 (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thaki-FacilityVision-CrackCls-ResNet18 | 11,2 M | Clasificacion de parches | 0,9993 | CC BY 4.0 | HuggingFace |
+| Thaki-FacilityVision-CrackCls-ResNet18 | 11,2 M | Clasificacion de parches | 0,9993 | CC BY 4.0 | Hugging Face |
 | CNN pequena (baseline del autor) | no disponible | Clasificacion de parches | 0,9864 | no disponible | solo en la model card |
 | ResNet-18 linear probe (baseline del autor) | 11,2 M | Clasificacion de parches | 0,9955 | no disponible | solo en la model card |
 
@@ -96,7 +96,7 @@ No se dispone de comparaciones con otros modelos publicos de deteccion de grieta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Thaki-FacilityVision-CrackCls-ResNet18
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Thaki-FacilityVision-CrackCls-ResNet18
 - Model card en coreano: https://huggingface.co/ThakiCloud/Thaki-FacilityVision-CrackCls-ResNet18/blob/main/MODEL_CARD.ko.md
 - Modelo complementario de segmentacion: https://huggingface.co/ThakiCloud/Thaki-FacilityVision-CrackSeg-E2
 - Dataset de entrenamiento (Ozgenel, Mendeley Data): doi:10.17632/5y9wdsg2zt.2

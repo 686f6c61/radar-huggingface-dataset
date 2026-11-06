@@ -18,7 +18,7 @@ Su relevancia actual radica en la creciente demanda de modelos pequeños, eficie
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF Q4_0 (incluye variante QAD Q4_0 y Q4_0 post-entrenamiento); otros formatos no disponibles |
 | Idiomas soportados | en, ar, zh, fr, de, ja, ko, es |
-| Licencia | lfm1.0 (licencia "other" en HuggingFace) |
+| Licencia | lfm1.0 (licencia "other" en Hugging Face) |
 | Formato de pesos | GGUF; safetensors FP32 para el checkpoint fuente QAD (subcarpeta `qad/`) |
 
 ## Arquitectura y entrenamiento
@@ -77,14 +77,14 @@ Nota: los datos de los modelos comparativos no provienen de la información prop
 - **Sesgos conocidos**: no se documentan sesgos específicos en la información proporcionada; como todo modelo entrenado con datos web, es probable que herede sesgos de sus datos de entrenamiento, pero no se detallan.
 - **Riesgo de alucinación**: inherente a los modelos de lenguaje de este tamaño; no se documentan mitigaciones específicas en la model card.
 - **Limitaciones de contexto e idioma**: la longitud de contexto no está especificada. Aunque soporta ocho idiomas, no se detalla el nivel de competencia en cada uno; el árabe, chino, japonés y coreano podrían tener un rendimiento inferior al inglés.
-- **Restricciones de licencia**: la licencia LFM1.0 ("other" en HuggingFace) puede imponer condiciones para uso comercial; es necesario revisar el archivo `LICENSE` del repositorio antes de un despliegue en producción.
+- **Restricciones de licencia**: la licencia LFM1.0 ("other" en Hugging Face) puede imponer condiciones para uso comercial; es necesario revisar el archivo `LICENSE` del repositorio antes de un despliegue en producción.
 - **Caveats de cuantización**: los resultados publicados de QAD aplican únicamente al GGUF Q4_0; la inferencia en FP32/BF16 u otros formatos de cuantización puede degradar la calidad de forma distinta. El checkpoint QAD no es equivalente al Q4_0 post-entrenamiento.
 - **Repositorio de terceros**: esta ficha corresponde a una cuantización publicada por un usuario (Athithya117), no por Liquid AI; conviene contrastar con el repositorio oficial `LiquidAI/LFM2.5-1.2B-Instruct` para garantizar la integridad de los pesos.
 - **Madurez**: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica escasa validación por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/Athithya117/LFM2.5-1.2B-Instruct-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/Athithya117/LFM2.5-1.2B-Instruct-GGUF
 - Modelo base oficial: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - GGUF oficial de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF
 - Playground de Liquid AI: https://playground.liquid.ai/

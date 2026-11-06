@@ -83,6 +83,6 @@ No se dispone de datos comparativos publicados en la información proporcionada 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MyHeartCounts/openmhc-timesnet-imp
+- Hugging Face: https://huggingface.co/MyHeartCounts/openmhc-timesnet-imp
 - Repositorio OpenMHC: https://github.com/AshleyLab/OpenMHC
 - PyPOTS: https://github.com/WenjieDu/PyPOTS

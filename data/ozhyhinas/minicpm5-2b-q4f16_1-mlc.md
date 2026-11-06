@@ -72,7 +72,7 @@ No se han publicado resultados en benchmarks estándar como MMLU, HumanEval o GS
 
 | Modelo | Parámetros | Contexto | Benchmark propio (105 ítems) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM5-2B (q4f16_1) | 2B | 4096 | 52 % | Apache 2.0 | HuggingFace |
+| MiniCPM5-2B (q4f16_1) | 2B | 4096 | 52 % | Apache 2.0 | Hugging Face |
 | Qwen3.5-2B | 2B | no disponible | 26 % | no disponible | no disponible |
 | Qwen3-1.7B | 1,7B | no disponible | 13 % | no disponible | no disponible |
 
@@ -90,7 +90,7 @@ También existe MiniCPM5-1B, predecesor en la misma serie, pero no se dispone de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ozhyhinas/MiniCPM5-2B-q4f16_1-MLC
+- Hugging Face: https://huggingface.co/ozhyhinas/MiniCPM5-2B-q4f16_1-MLC
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Repositorio OpenBMB/MiniCPM: https://github.com/OpenBMB/MiniCPM
 - LatexGen: https://github.com/OlehZhyhinas/LatexGen

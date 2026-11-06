@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mabdullahali/questions_generator` es un repositorio publicado en HuggingFace por el usuario mabdullahali. Por el nombre del repositorio, el modelo parece orientado a la generacion automatica de preguntas (question generation), una tarea de procesamiento de lenguaje natural consistente en producir preguntas a partir de un texto fuente, un contexto o una respuesta dada. Sin embargo, esta interpretacion se basa unicamente en el identificador del repositorio y no esta confirmada por ninguna documentacion tecnica.
+`mabdullahali/questions_generator` es un repositorio publicado en Hugging Face por el usuario mabdullahali. Por el nombre del repositorio, el modelo parece orientado a la generacion automatica de preguntas (question generation), una tarea de procesamiento de lenguaje natural consistente en producir preguntas a partir de un texto fuente, un contexto o una respuesta dada. Sin embargo, esta interpretacion se basa unicamente en el identificador del repositorio y no esta confirmada por ninguna documentacion tecnica.
 
-La model card publicada no contiene informacion tecnica: se limita a declarar la licencia MIT y no incluye descripcion, arquitectura, tamano, tokenizador, datos de entrenamiento ni ejemplos de uso. La ficha de HuggingFace tampoco declara pipeline, idiomas soportados ni etiquetas de tarea, y el repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta.
+La model card publicada no contiene informacion tecnica: se limita a declarar la licencia MIT y no incluye descripcion, arquitectura, tamano, tokenizador, datos de entrenamiento ni ejemplos de uso. La ficha de Hugging Face tampoco declara pipeline, idiomas soportados ni etiquetas de tarea, y el repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta.
 
 Con estos datos, no es posible evaluar el modelo con criterios tecnicos. Esta ficha recoge la informacion verificable disponible (licencia, tamano del repositorio, fechas de publicacion) y marca explicitamente como "no disponible" todo aquello que el autor no ha documentado. Se recomienda tratar el modelo como no validado hasta que exista documentacion adicional o pruebas directas de inferencia.
 
@@ -82,5 +82,5 @@ No disponible. La falta de datos sobre parametros, contexto y rendimiento impide
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mabdullahali/questions_generator
+- Hugging Face: https://huggingface.co/mabdullahali/questions_generator
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: papers, blogs, repositorios de codigo ni demos asociados. Los resultados devueltos corresponden a contenido no relacionado.

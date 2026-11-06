@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EVIE-8B es un modelo de recuperacion de documentos visuales desarrollado por Tencent, publicado bajo licencia Apache 2.0 en HuggingFace. Se articula sobre el backbone Qwen3.5-9B y emplea una arquitectura de late-interaction multi-vector tipo ColBERT, generando embeddings de 4096 dimensiones por token para consultas de texto y parches visuales. Su funcion principal es rankear documentos o paginas de imagenes a partir de una consulta textual, preservando detalles de layout, tipografia, graficos y tablas gracias a su representacion token-level.
+EVIE-8B es un modelo de recuperacion de documentos visuales desarrollado por Tencent, publicado bajo licencia Apache 2.0 en Hugging Face. Se articula sobre el backbone Qwen3.5-9B y emplea una arquitectura de late-interaction multi-vector tipo ColBERT, generando embeddings de 4096 dimensiones por token para consultas de texto y parches visuales. Su funcion principal es rankear documentos o paginas de imagenes a partir de una consulta textual, preservando detalles de layout, tipografia, graficos y tablas gracias a su representacion token-level.
 
 El modelo esta diseñado como teacher de la familia EVIE, concretamente del modelo ligero EVIE-4.5B, al que proporciona objetivos de destilacion mediante transferencia de relaciones topologicas y margin hard-negative. Segun la model card, alcanza el primer puesto en el benchmark ViDoRe V3 con un nDCG@10 de 66.75 y en ViDoRe V1+V2 con 92.18, convirtiendose en el recuperador visual mas preciso de su categoria. Incluye 8.41 mil millones de parametros, aunque la longitud de contexto y los idiomas soportados no se especifican en los materiales publicados.
 
@@ -62,7 +62,7 @@ No se han publicados resultados en benchmarks generativos como MMLU, HumanEval o
 
 - No se han publicado requisitos oficiales de VRAM para inferencia.
 - Los pesos safetensors ocupan 16.9 GB en disco, lo que da una referencia del espacio necesario para almacenar el checkpoint.
-- El modelo se distribuye a traves de la libreria colpali-engine y es compatible con sentence-transformers segun los tags de HuggingFace.
+- El modelo se distribuye a traves de la libreria colpali-engine y es compatible con sentence-transformers segun los tags de Hugging Face.
 - No se especifican GPUs de referencia ni opciones de despliegue en vLLM, llama.cpp, Ollama o TGI.
 - No hay datos publicados sobre latencia o throughput.
 
@@ -70,11 +70,11 @@ No se han publicados resultados en benchmarks generativos como MMLU, HumanEval o
 
 | Modelo | Parametros | Embed Dim | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| EVIE-8B | 8.41B | 4096D | Apache 2.0 | HuggingFace + GitHub |
-| EVIE-4.5B | 4.61B | 64-2048D (Prefix-MRL) | Apache 2.0 | HuggingFace |
-| webAI-ColVec1.1-8b | 8.40B | 640D | no disponible | HuggingFace |
-| VultronRetrieverPrime-8B | 8.40B | 320D | no disponible | HuggingFace |
-| nemotron-colembed-vl-8b-v2 | 8.80B | 4096D | no disponible | HuggingFace |
+| EVIE-8B | 8.41B | 4096D | Apache 2.0 | Hugging Face + GitHub |
+| EVIE-4.5B | 4.61B | 64-2048D (Prefix-MRL) | Apache 2.0 | Hugging Face |
+| webAI-ColVec1.1-8b | 8.40B | 640D | no disponible | Hugging Face |
+| VultronRetrieverPrime-8B | 8.40B | 320D | no disponible | Hugging Face |
+| nemotron-colembed-vl-8b-v2 | 8.80B | 4096D | no disponible | Hugging Face |
 
 EVIE-8B destaca por la mayor dimension de embedding entre los modelos de 8B comparados y por su ventaja en ViDoRe V3. A diferencia de EVIE-4.5B, no incorpora compresion de tokens HAC ni entrenamiento con Prefix-MRL, pero funciona como teacher de ese modelo.
 
@@ -89,7 +89,7 @@ EVIE-8B destaca por la mayor dimension de embedding entre los modelos de 8B comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tencent/EVIE-8B
+- Hugging Face: https://huggingface.co/tencent/EVIE-8B
 - GitHub: https://github.com/Tencent/EVIE
 - Blog de analisis: https://www.orcarouter.ai/blog/evie-8b-quiet-release
 - Modelo hermano EVIE-4.5B: https://huggingface.co/tencent/EVIE-4.5B

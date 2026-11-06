@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Ankit-9335/newsmorph-fake-news-detector` es un clasificador de noticias falsas basado en la arquitectura DistilBERT, desarrollado por el usuario Ankit-9335 y publicado en HuggingFace con licencia Apache 2.0. Con 66.955.010 parámetros (aproximadamente 67 millones), se alinea con el tamaño típico de DistilBERT base, un transformer encoder destilado que reduce el coste computacional respecto a BERT manteniendo buena parte de su rendimiento. El nombre "newsmorph" sugiere que está orientado a la detección de desinformación, aunque la model card no proporciona detalles sobre el entrenamiento, el dataset utilizado ni el pipeline de inferencia.
+El modelo `Ankit-9335/newsmorph-fake-news-detector` es un clasificador de noticias falsas basado en la arquitectura DistilBERT, desarrollado por el usuario Ankit-9335 y publicado en Hugging Face con licencia Apache 2.0. Con 66.955.010 parámetros (aproximadamente 67 millones), se alinea con el tamaño típico de DistilBERT base, un transformer encoder destilado que reduce el coste computacional respecto a BERT manteniendo buena parte de su rendimiento. El nombre "newsmorph" sugiere que está orientado a la detección de desinformación, aunque la model card no proporciona detalles sobre el entrenamiento, el dataset utilizado ni el pipeline de inferencia.
 
 El modelo es relevante en el contexto actual de proliferación de noticias falsas y desinformación en medios digitales, donde herramientas automáticas de clasificación pueden ayudar a moderar contenidos. Sin embargo, la falta de información publicada sobre su entrenamiento y evaluación limita su aplicabilidad directa en producción sin una validación previa por parte del usuario.
 
@@ -21,7 +21,7 @@ El modelo es relevante en el contexto actual de proliferación de noticias falsa
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en DistilBERT, una versión destilada de BERT que emplea un transformer encoder con 6 capas, 768 dimensiones ocultas y 12 cabezas de atención (configuración estándar de DistilBERT base). El tag `distilbert` en HuggingFace respalda esta arquitectura, aunque la model card no ofrece confirmación explícita de la configuración interna ni del proceso de destilación aplicado.
+El modelo se basa en DistilBERT, una versión destilada de BERT que emplea un transformer encoder con 6 capas, 768 dimensiones ocultas y 12 cabezas de atención (configuración estándar de DistilBERT base). El tag `distilbert` en Hugging Face respalda esta arquitectura, aunque la model card no ofrece confirmación explícita de la configuración interna ni del proceso de destilación aplicado.
 
 No se dispone de información sobre el entrenamiento: ni el número de tokens, ni la composición del dataset (presumiblemente noticias etiquetadas como reales o falsas), ni si se aplicaron técnicas como fine-tuning supervisado, RLHF o DPO. La ausencia de estos datos impide evaluar la calidad del ajuste y la generalización del modelo.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada: al tratarse de un modelo de ~67M parámetros, la inferencia en FP32 requiere aproximadamente 0,27 GB de memoria (67M × 4 bytes). Con cuantización a int8, se reduce a ~0,07 GB.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente (por ejemplo, NVIDIA GTX 1050 Ti, RTX 2060, etc.). También puede ejecutarse en CPU con razonable latencia.
 - Compatibilidad con consumer GPU: sí, cabe en cualquier GPU de consumo actual.
-- Opciones de despliegue: se puede servir con HuggingFace Transformers, ONNX Runtime, o convertirlo a GGUF para usarlo con llama.cpp u Ollama. También es compatible con vLLM, aunque no es óptimo para modelos tan pequeños.
+- Opciones de despliegue: se puede servir con Hugging Face Transformers, ONNX Runtime, o convertirlo a GGUF para usarlo con llama.cpp u Ollama. También es compatible con vLLM, aunque no es óptimo para modelos tan pequeños.
 - Latencia y throughput: no hay datos publicados; en una CPU moderna se esperan decenas de milisegundos por inferencia, y en GPU, milisegundos.
 
 ## Comparativa con modelos similares
@@ -69,5 +69,5 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Ankit-9335/newsmorph-fake-news-detector)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Ankit-9335)
+- [Modelo en Hugging Face](https://huggingface.co/Ankit-9335/newsmorph-fake-news-detector)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Ankit-9335)

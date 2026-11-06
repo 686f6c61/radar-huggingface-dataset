@@ -36,7 +36,7 @@ La innovacion tecnica del checkpoint es la homogeneizacion de formatos. En el la
 - Memoria/engram: el modelo base incorpora tablas engram (capas 1 y 14) que este checkpoint recuantiza a MXFP4. No se documenta la funcion exacta ni el API de uso.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible (el campo de idiomas aparece como no disponible en HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas aparece como no disponible en Hugging Face).
 - Modo de pensamiento (thinking), audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
@@ -95,7 +95,7 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/INCModel3/DeepSeek-V4.1-Flash-MXFP4-Engram-AutoRound
+- Hugging Face (este checkpoint): https://huggingface.co/INCModel3/DeepSeek-V4.1-Flash-MXFP4-Engram-AutoRound
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Repositorio de auto-round (Intel): https://github.com/intel/auto-round
 - vLLM, PR #56201: referenciado en la model card como requisito minimo; no se incluye URL en la informacion proporcionada.

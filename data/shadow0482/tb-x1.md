@@ -2,9 +2,9 @@
 
 ## Resumen
 
-tb-x1 es un modelo de generacion de texto publicado en HuggingFace por el usuario Shadow0482 bajo licencia Apache 2.0. Se trata de un fine-tuning en precision FP16 (16 bits) del modelo base orangejuicesmith/Mythos-Nano-safetensor, que a su vez pertenece a la familia arquitectonica Qwen2. El modelo cuenta con aproximadamente 3.085 millones de parametros (3,08 mil millones) y esta orientado a generacion de texto conversacional en ingles.
+tb-x1 es un modelo de generacion de texto publicado en Hugging Face por el usuario Shadow0482 bajo licencia Apache 2.0. Se trata de un fine-tuning en precision FP16 (16 bits) del modelo base orangejuicesmith/Mythos-Nano-safetensor, que a su vez pertenece a la familia arquitectonica Qwen2. El modelo cuenta con aproximadamente 3.085 millones de parametros (3,08 mil millones) y esta orientado a generacion de texto conversacional en ingles.
 
-El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, lo que segun el autor permite un entrenamiento aproximadamente 2 veces mas rapido que un pipeline convencional. El repositorio ocupa 6,2 GB, coherente con un modelo de 3B parametros almacenado en safetensors FP16 (aproximadamente 6,17 GB de pesos mas metadatos).
+El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, lo que segun el autor permite un entrenamiento aproximadamente 2 veces mas rapido que un pipeline convencional. El repositorio ocupa 6,2 GB, coherente con un modelo de 3B parametros almacenado en safetensors FP16 (aproximadamente 6,17 GB de pesos mas metadatos).
 
 La relevancia de este modelo es limitada en el ecosistema actual: se trata de un fine-tuning comunitario sin documentacion tecnica detallada, sin benchmarks publicados y con cero descargas en el momento de la ficha. Resulta util unicamente como referencia para quienes quieran reproducir el pipeline de fine-tuning con Unsloth sobre una base Qwen2 de 3B, o para experimentacion local en entornos con recursos limitados.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es limitada en el ecosistema actual: se trata de un
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura Qwen2, un transformer decoder-only con atencion causal estandar, normalizacion RMSNorm, activaciones SwiGLU y embeddings rotatorios (RoPE). La etiqueta `qwen2` en los metadatos de HuggingFace confirma la familia arquitectonica, aunque la model card no detalla configuraciones como numero de capas, dimensiones ocultas, numero de cabezas de atencion ni la longitud de contexto nativa de la variante de 3B.
+El modelo hereda la arquitectura Qwen2, un transformer decoder-only con atencion causal estandar, normalizacion RMSNorm, activaciones SwiGLU y embeddings rotatorios (RoPE). La etiqueta `qwen2` en los metadatos de Hugging Face confirma la familia arquitectonica, aunque la model card no detalla configuraciones como numero de capas, dimensiones ocultas, numero de cabezas de atencion ni la longitud de contexto nativa de la variante de 3B.
 
 El entrenamiento consistio en un fine-tuning supervisado (SFT) sobre el checkpoint base Mythos-Nano-safetensor, ejecutado con Unsloth y TRL. La model card no especifica el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de RLHF, DPO o cualquier otro metodo de alineacion posterior. Tampoco se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, atencion con ventana deslizante) mas alla de las propias de la arquitectura Qwen2. El unico dato tecnico explicito es que el resultado se publica en FP16 tras el proceso de fusion de pesos (merge) del adaptador de fine-tuning.
 
@@ -45,7 +45,7 @@ El entrenamiento consistio en un fine-tuning supervisado (SFT) sobre el checkpoi
 - Prototipado de asistentes conversacionales en ingles: con 3B parametros, el modelo puede sostener dialogos multi-turno simples en entornos de desarrollo, aunque la ausencia de benchmarks impide garantizar calidad en produccion.
 - Generacion de texto en local con recursos limitados: el tamano de 3B parametros permite ejecucion en GPU de consumo (por ejemplo, RTX 3060 de 12 GB o superiores) tras cuantizacion a 4 u 8 bits con llama.cpp o GPTQ.
 - Evaluacion comparativa de fine-tunings comunitarios: util como punto de control frente a otros derivados de Mythos-Nano o de Qwen2-3B para medir el impacto de distintos datasets de SFT.
-- Investigacion academica sobre linaje de modelos: el repositorio documenta la cadena base_model (Mythos-Nano-safetensor) y permite analizar practicas de publicacion en HuggingFace.
+- Investigacion academica sobre linaje de modelos: el repositorio documenta la cadena base_model (Mythos-Nano-safetensor) y permite analizar practicas de publicacion en Hugging Face.
 - Pruebas de integracion con TGI: los tags indican compatibilidad con text-generation-inference, por lo que puede desplegarse como endpoint de generacion de texto para validar infraestructura de serving.
 
 ## Benchmarks y rendimiento
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Shadow0482/tb-x1 | 3,08 mil millones | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Fine-tuning FP16 de Mythos-Nano-safetensor con Unsloth |
-| orangejuicesmith/Mythos-Nano-safetensor | no disponible | no disponible | no disponible | HuggingFace | Modelo base del que deriva tb-x1 |
-| Qwen2-1.5B / Qwen2-7B (Alibaba) | 1,5 y 7 mil millones | 32.768 tokens (variantes oficiales) | Apache 2.0 | HuggingFace, ModelScope | Familia oficial Qwen2 con benchmarks publicados |
+| Shadow0482/tb-x1 | 3,08 mil millones | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Fine-tuning FP16 de Mythos-Nano-safetensor con Unsloth |
+| orangejuicesmith/Mythos-Nano-safetensor | no disponible | no disponible | no disponible | Hugging Face | Modelo base del que deriva tb-x1 |
+| Qwen2-1.5B / Qwen2-7B (Alibaba) | 1,5 y 7 mil millones | 32.768 tokens (variantes oficiales) | Apache 2.0 | Hugging Face, ModelScope | Familia oficial Qwen2 con benchmarks publicados |
 
 La comparacion con las variantes oficiales de Qwen2 es la referencia mas directa por familia arquitectonica, aunque tb-x1 no documenta configuracion ni resultados que permitan una comparacion cuantitativa. No se dispone de datos de benchmarks del modelo ni de su base Mythos-Nano.
 
@@ -85,7 +85,7 @@ La comparacion con las variantes oficiales de Qwen2 es la referencia mas directa
 
 ## Enlaces
 
-- [HuggingFace: Shadow0482/tb-x1](https://huggingface.co/Shadow0482/tb-x1)
+- [Hugging Face: Shadow0482/tb-x1](https://huggingface.co/Shadow0482/tb-x1)
 - [Modelo base: orangejuicesmith/Mythos-Nano-safetensor](https://huggingface.co/orangejuicesmith/Mythos-Nano-safetensor)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
-- [TRL de HuggingFace](https://github.com/huggingface/trl)
+- [TRL de Hugging Face](https://github.com/huggingface/trl)

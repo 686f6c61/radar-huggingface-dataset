@@ -47,6 +47,6 @@ No se dispone de información comparativa con otros modelos en la información p
 - Al ser un checkpoint intermedio (paso 800), puede no reflejar el rendimiento final del entrenamiento.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/FRPO/qwen3-1.7b-a16_onpolicy_seqmean-k1-cNone-clip0.2-mb1-eta100-bs64x5-n2
+- Repositorio Hugging Face: https://huggingface.co/FRPO/qwen3-1.7b-a16_onpolicy_seqmean-k1-cNone-clip0.2-mb1-eta100-bs64x5-n2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Librería verl: https://github.com/volcengine/verl

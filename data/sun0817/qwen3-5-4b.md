@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B es un modelo de lenguaje causal con codificador visual desarrollado por el equipo Qwen de Alibaba, publicado en HuggingFace bajo el identificador `sun0817/Qwen3.5-4B`. Se trata de un modelo multimodal de tipo image-text-to-text que integra un encoder de visión y un backbone de lenguaje con arquitectura híbrida, combinando Gated DeltaNet (atención lineal) con atención con compuertas (Gated Attention). Con 4.659.865.088 parámetros totales y un contexto nativo de 262.144 tokens, extensible hasta 1.010.000, está orientado a tareas de razonamiento, código, agentes y comprensión visual.
+Qwen3.5-4B es un modelo de lenguaje causal con codificador visual desarrollado por el equipo Qwen de Alibaba, publicado en Hugging Face bajo el identificador `sun0817/Qwen3.5-4B`. Se trata de un modelo multimodal de tipo image-text-to-text que integra un encoder de visión y un backbone de lenguaje con arquitectura híbrida, combinando Gated DeltaNet (atención lineal) con atención con compuertas (Gated Attention). Con 4.659.865.088 parámetros totales y un contexto nativo de 262.144 tokens, extensible hasta 1.010.000, está orientado a tareas de razonamiento, código, agentes y comprensión visual.
 
 La propuesta central de Qwen3.5 es la fusión temprana de tokens multimodales durante el entrenamiento, lo que permite alcanzar paridad con la generación Qwen3 en tareas de texto y superar a los modelos Qwen3-VL en benchmarks de razonamiento, código, agentes y comprensión visual. El modelo se distribuye en formato safetensors con pesos en precisión completa, compatible con Transformers, vLLM, SGLang y KTransformers, y se publica bajo licencia Apache 2.0.
 
@@ -72,10 +72,10 @@ El resto de resultados de benchmarks (código, matemáticas, agentes, visión) n
 
 | Modelo | Parámetros | Contexto | MMLU-Pro | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B | 4B | 262.144 (ext. 1.010.000) | 79.1 | Apache 2.0 | HuggingFace |
-| Qwen3.5-9B | 9B | no disponible | 82.5 | Apache 2.0 (presumible) | HuggingFace |
+| Qwen3.5-4B | 4B | 262.144 (ext. 1.010.000) | 79.1 | Apache 2.0 | Hugging Face |
+| Qwen3.5-9B | 9B | no disponible | 82.5 | Apache 2.0 (presumible) | Hugging Face |
 | GPT-OSS-20B | 20B | no disponible | 74.8 | no disponible | no disponible |
-| Qwen3-30BA3B-Thinking-2507 | 30B (MoE) | no disponible | 80.9 | no disponible | HuggingFace |
+| Qwen3-30BA3B-Thinking-2507 | 30B (MoE) | no disponible | 80.9 | no disponible | Hugging Face |
 
 Qwen3.5-4B ofrece un equilibrio favorable entre tamaño y rendimiento: supera a GPT-OSS-20B en MMLU-Pro (79.1 frente a 74.8) con una quinta parte de los parámetros, y se queda a 1,8 puntos de Qwen3.5-9B. Frente a Qwen3-30BA3B-Thinking-2507, queda 1,8 puntos por debajo con un tamaño mucho menor.
 
@@ -91,7 +91,7 @@ Qwen3.5-4B ofrece un equilibrio favorable entre tamaño y rendimiento: supera a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sun0817/Qwen3.5-4B
+- Modelo en Hugging Face: https://huggingface.co/sun0817/Qwen3.5-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Licencia: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

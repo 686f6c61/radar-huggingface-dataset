@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/eus-latn-100mb-ppt-mp-struct-100mb_seed3407 | 124,8 M | 1024 tokens (segun arquitectura GPT-2) | No declarados (base en euskera) | No disponible | HuggingFace, 0 descargas |
-| goldfish-models/eus_latn_100mb (modelo base) | No disponible (familia de 100 MB) | No disponible | Euskera | No disponible en esta ficha | HuggingFace |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | Ingles principalmente | MIT | HuggingFace y multiples replicas |
-| DistilGPT-2 | 82 M | 1024 tokens | Ingles | MIT | HuggingFace |
+| francesca9805/eus-latn-100mb-ppt-mp-struct-100mb_seed3407 | 124,8 M | 1024 tokens (segun arquitectura GPT-2) | No declarados (base en euskera) | No disponible | Hugging Face, 0 descargas |
+| goldfish-models/eus_latn_100mb (modelo base) | No disponible (familia de 100 MB) | No disponible | Euskera | No disponible en esta ficha | Hugging Face |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | Ingles principalmente | MIT | Hugging Face y multiples replicas |
+| DistilGPT-2 | 82 M | 1024 tokens | Ingles | MIT | Hugging Face |
 
 La comparacion con GPT-2 small es la mas directa en terminos de arquitectura y tamano, aunque el dominio linguistico difiere: GPT-2 small esta orientado al ingles, mientras que este modelo parte de un corpus en euskera. Frente a DistilGPT-2, es algo mayor y no esta destilado. La model card no aporta datos de rendimiento que permitan comparaciones cuantitativas.
 
@@ -87,7 +87,7 @@ La comparacion con GPT-2 small es la mas directa en terminos de arquitectura y t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eus-latn-100mb-ppt-mp-struct-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eus-latn-100mb-ppt-mp-struct-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eus_latn_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/adwhfzdg
 - Repositorio de TRL: https://github.com/huggingface/trl

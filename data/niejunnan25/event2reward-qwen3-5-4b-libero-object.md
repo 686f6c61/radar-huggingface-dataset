@@ -65,9 +65,9 @@ El resultado corresponde al sistema completo de RL descrito en el paper, no al c
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Event2Reward-Qwen3.5-4B-LIBERO-Object | ~4B | no disponible | Recompensa por estimación de progreso (LIBERO-Object) | Apache-2.0 | HuggingFace |
-| Event2Reward-Qwen3.5-4B-Stage2 | ~4B | no disponible | Etapa intermedia del mismo pipeline | Apache-2.0 | HuggingFace |
-| Qwen3.5-4B | 4B | no disponible | LLM multimodal base | no disponible en la información | HuggingFace |
+| Event2Reward-Qwen3.5-4B-LIBERO-Object | ~4B | no disponible | Recompensa por estimación de progreso (LIBERO-Object) | Apache-2.0 | Hugging Face |
+| Event2Reward-Qwen3.5-4B-Stage2 | ~4B | no disponible | Etapa intermedia del mismo pipeline | Apache-2.0 | Hugging Face |
+| Qwen3.5-4B | 4B | no disponible | LLM multimodal base | no disponible en la información | Hugging Face |
 
 No se dispone en la información proporcionada de otros modelos de recompensa robótica comparables con datos verificables de parámetros, contexto o rendimiento.
 
@@ -84,7 +84,7 @@ No se dispone en la información proporcionada de otros modelos de recompensa ro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/niejunnan25/Event2Reward-Qwen3.5-4B-LIBERO-Object
+- Hugging Face: https://huggingface.co/niejunnan25/Event2Reward-Qwen3.5-4B-LIBERO-Object
 - Modelo base (Stage2): https://huggingface.co/niejunnan25/Event2Reward-Qwen3.5-4B-Stage2
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper: https://arxiv.org/abs/2610.39212

@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en formato numérico en la informac
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UI-UG2-4B | 4B | no disponible | Comprensión y generación de UI móvil sobre Qwen3-VL | Apache 2.0 | HuggingFace, GitHub |
-| UI-UG-7B (versión anterior del mismo equipo) | 7B | no disponible | Comprensión y generación de UI sobre Qwen2.5-VL, taxonomía de 20 clases, DPO offline | Apache 2.0 | HuggingFace, GitHub |
-| UI-UG-7B-2601 (versión anterior del mismo equipo) | 7B | no disponible | Variante de UI-UG-7B | Apache 2.0 | HuggingFace |
-| Qwen3-VL-4B (backbone base) | 4B | no disponible | Modelo multimodal generalista | Apache 2.0 (según Qwen) | HuggingFace |
+| UI-UG2-4B | 4B | no disponible | Comprensión y generación de UI móvil sobre Qwen3-VL | Apache 2.0 | Hugging Face, GitHub |
+| UI-UG-7B (versión anterior del mismo equipo) | 7B | no disponible | Comprensión y generación de UI sobre Qwen2.5-VL, taxonomía de 20 clases, DPO offline | Apache 2.0 | Hugging Face, GitHub |
+| UI-UG-7B-2601 (versión anterior del mismo equipo) | 7B | no disponible | Variante de UI-UG-7B | Apache 2.0 | Hugging Face |
+| Qwen3-VL-4B (backbone base) | 4B | no disponible | Modelo multimodal generalista | Apache 2.0 (según Qwen) | Hugging Face |
 
 La comparación con modelos de otros equipos especializados en UI (por ejemplo, familias de agentes GUI) no está disponible en la información proporcionada. Los gráficos de la model card incluyen comparaciones cualitativas y por métricas con otros sistemas, pero sin cifras textuales.
 
@@ -87,7 +87,7 @@ La comparación con modelos de otros equipos especializados en UI (por ejemplo, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/afx-team/UI-UG2-4B
+- Modelo en Hugging Face: https://huggingface.co/afx-team/UI-UG2-4B
 - Repositorio GitHub: https://github.com/afx-team/UI-UG
 - Paper UI-UG2 (PDF): https://github.com/afx-team/UI-UG/blob/main/papers/UI-UG2.pdf
 - Paper UI-UG1 (arXiv): https://arxiv.org/abs/2509.24361

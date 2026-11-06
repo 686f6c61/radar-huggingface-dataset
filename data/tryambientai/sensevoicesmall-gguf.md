@@ -99,7 +99,7 @@ La información disponible no incluye datos comparativos de rendimiento frente a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tryambientai/SenseVoiceSmall-gguf
+- Repositorio Hugging Face: https://huggingface.co/tryambientai/SenseVoiceSmall-gguf
 - Modelo base: https://huggingface.co/FunAudioLLM/SenseVoiceSmall
 - Commit upstream del modelo base: https://huggingface.co/FunAudioLLM/SenseVoiceSmall/commit/3eb3b4eeffc2f2dde6051b853983753db33e35c3
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
@@ -109,4 +109,4 @@ La información disponible no incluye datos comparativos de rendimiento frente a
 - Página del proyecto FunAudioLLM: https://fun-audio-llm.github.io/
 - Modelo en ModelScope: https://www.modelscope.cn/models/iic/SenseVoiceSmall
 - Demo en ModelScope: https://www.modelscope.cn/studios/iic/SenseVoice
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/FunAudioLLM/SenseVoice
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/FunAudioLLM/SenseVoice

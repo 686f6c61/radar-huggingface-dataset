@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fionareyes/retrieval-beta-2023 es un repositorio de HuggingFace que contiene una implementación propia de un Tiny Transformer orientado a tareas de recuperación (retrieval), acompañada de su configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización. Lo publica el usuario Fionareyes bajo licencia MIT. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint es "una inicialización válida para pruebas de humo" y que no se presenta como un checkpoint con benchmarks.
+Fionareyes/retrieval-beta-2023 es un repositorio de Hugging Face que contiene una implementación propia de un Tiny Transformer orientado a tareas de recuperación (retrieval), acompañada de su configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización. Lo publica el usuario Fionareyes bajo licencia MIT. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint es "una inicialización válida para pruebas de humo" y que no se presenta como un checkpoint con benchmarks.
 
 El modelo tiene 24.832 parámetros totales, un tamaño propio de un experimento docente o de andamiaje de investigación, no de un sistema desplegable en producción. La arquitectura declarada es un transformer con atención dispersa (sparse attention), fusión mediante concat mlp, activación Mish y normalización ScaleNorm, con optimizador Lion y schedule exponencial como receta por defecto. No es un modelo MoE y no se documenta ninguna variante de pesos cuantizados más allá del checkpoint en safetensors.
 
@@ -70,13 +70,13 @@ No disponible. La información proporcionada no identifica modelos comparables d
 - Sesgos conocidos: no disponibles; no se ha realizado ninguna auditoría de sesgo.
 - Limitaciones de contexto e idioma: no se declara ventana de contexto ni idiomas soportados.
 - Licencia MIT: permite uso comercial y modificación, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen cuando el repositorio se use con conjuntos de datos externos (por ejemplo, Flickr30k).
-- Implementación personalizada: las APIs de carga automática de HuggingFace no funcionan sin un adaptador explícito, lo que añade trabajo de integración.
+- Implementación personalizada: las APIs de carga automática de Hugging Face no funcionan sin un adaptador explícito, lo que añade trabajo de integración.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos en el repositorio.
 - Tamaño del repositorio de 0,0 GB: el artefacto es mínimo y no contiene pesos entrenados de utilidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fionareyes/retrieval-beta-2023
+- Modelo en Hugging Face: https://huggingface.co/Fionareyes/retrieval-beta-2023
 - Archivos incluidos en el repositorio: `inference.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Conjunto de datos sugerido para evaluación: Flickr30k (mencionado en la model card, sin enlace proporcionado)
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos adicionales en la información disponible.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-1k-seed44` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en HuggingFace. Por la nomenclatura del identificador (prefijo `ctc`, referencia a `human10`, `uninoaug`, `hhdgeom`, `llmgen` y `seed44`) y por el reducido tamaño del repositorio (0,3 GB), todo apunta a un modelo acústico o de reconocimiento de voz basado en CTC (Connectionist Temporal Classification) entrenado desde cero o ajustado fino sobre datos sintéticos generados por un LLM, con una semilla fija para reproducibilidad. No se trata, por tanto, de un modelo de lenguaje generativo de propósito general.
+El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-1k-seed44` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en Hugging Face. Por la nomenclatura del identificador (prefijo `ctc`, referencia a `human10`, `uninoaug`, `hhdgeom`, `llmgen` y `seed44`) y por el reducido tamaño del repositorio (0,3 GB), todo apunta a un modelo acústico o de reconocimiento de voz basado en CTC (Connectionist Temporal Classification) entrenado desde cero o ajustado fino sobre datos sintéticos generados por un LLM, con una semilla fija para reproducibilidad. No se trata, por tanto, de un modelo de lenguaje generativo de propósito general.
 
-La model card publicada por el autor es la plantilla por defecto de HuggingFace y no contiene información sustantiva: todos los campos relevantes (arquitectura, datos de entrenamiento, evaluación, uso previsto) aparecen como `[More Information Needed]`. La única información verificable procede de los metadatos del repositorio: licencia MIT, formato de pesos safetensors, 87,3 millones de parámetros y una única etiqueta de paper (`arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre el cálculo de emisiones de carbono, citado en la plantilla y no relacionado con el modelo).
+La model card publicada por el autor es la plantilla por defecto de Hugging Face y no contiene información sustantiva: todos los campos relevantes (arquitectura, datos de entrenamiento, evaluación, uso previsto) aparecen como `[More Information Needed]`. La única información verificable procede de los metadatos del repositorio: licencia MIT, formato de pesos safetensors, 87,3 millones de parámetros y una única etiqueta de paper (`arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre el cálculo de emisiones de carbono, citado en la plantilla y no relacionado con el modelo).
 
 Por tanto, esta ficha debe leerse como una descripción de lo que se puede afirmar con certeza a partir de los metadatos, marcando explícitamente como "no disponible" todo aquello que el autor no ha documentado. Es relevante ahora únicamente para quienes sigan la línea de experimentos `expNN` del mismo autor y necesiten localizar el checkpoint concreto con semilla 44.
 
@@ -64,7 +64,7 @@ No es posible establecer una comparativa fiable porque la arquitectura y la tare
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-1k-seed44 | 87,3 M | no disponible | MIT | HuggingFace |
+| cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-1k-seed44 | 87,3 M | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -79,6 +79,6 @@ No es posible establecer una comparativa fiable porque la arquitectura y la tare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-1k-seed44
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-1k-seed44
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre emisiones de carbono, citado en la plantilla y no relacionado con el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact

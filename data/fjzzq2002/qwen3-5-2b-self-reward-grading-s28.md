@@ -104,11 +104,11 @@ La comparación relevante aquí no es de rendimiento sino de propósito: frente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-grading-s28
+- Modelo en Hugging Face: https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-grading-s28
 - Repositorio de código: https://github.com/fjzzq2002/self-reward
 - Visor de checkpoints (respuestas a 62 prompts de test): https://fjzzq2002.github.io/self-reward/
 - Dataset de prompts de entrenamiento y test: https://huggingface.co/datasets/fjzzq2002/self-reward-dataset
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
-- Organización Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organización Qwen en Hugging Face: https://huggingface.co/Qwen
 - Ficha de Qwen3.5-2B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_5_2b
 - Especificaciones y VRAM de Qwen3.5-2B: https://apxml.com/models/qwen35-2b

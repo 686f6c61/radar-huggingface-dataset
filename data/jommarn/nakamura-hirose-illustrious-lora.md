@@ -4,7 +4,7 @@
 
 El modelo `nakamura-hirose-illustrious-lora` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por Jommarn para el modelo de difusión `Illustrious-XL v2.0-STABLE`. Está diseñado para generar imágenes de dos personajes específicos, Hirose y Nakamura, con un enfoque en interacciones entre dos hombres (2boys) y contenido NSFW explícito. El adaptador se entrenó durante 1.200 pasos en una GPU Modal Cloud L4, según indica el autor en la model card.
 
-Este tipo de adaptadores permite personalizar modelos de difusión sin necesidad de reentrenar el modelo completo, lo que resulta útil para la comunidad de ilustración digital. Al estar disponible en HuggingFace, puede integrarse en pipelines de diffusers para generar imágenes con los rasgos de los personajes mediante palabras clave específicas.
+Este tipo de adaptadores permite personalizar modelos de difusión sin necesidad de reentrenar el modelo completo, lo que resulta útil para la comunidad de ilustración digital. Al estar disponible en Hugging Face, puede integrarse en pipelines de diffusers para generar imágenes con los rasgos de los personajes mediante palabras clave específicas.
 
 En cuanto a la arquitectura, se trata de un LoRA que se aplica sobre el modelo base `OnomaAIResearch/Illustrious-XL-v2.0`. No se dispone de información sobre el número de parámetros del adaptador ni sobre la longitud de contexto, ya que no es un modelo de lenguaje. El repositorio tiene un tamaño de 11,6 GB.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 - No se proporcionan requisitos de hardware en la información disponible.
 - El entrenamiento se realizó en una GPU Modal Cloud L4, lo que puede servir como referencia orientativa para la inferencia.
-- El despliegue se realiza mediante la biblioteca diffusers de HuggingFace, ya que es la librería indicada en el repositorio.
+- El despliegue se realiza mediante la biblioteca diffusers de Hugging Face, ya que es la librería indicada en el repositorio.
 - No se dispone de datos de latencia o throughput.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No disponible. No se dispone de información suficiente para realizar una compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jommarn/nakamura-hirose-illustrious-lora
+- Repositorio en Hugging Face: https://huggingface.co/Jommarn/nakamura-hirose-illustrious-lora
 - Modelo base: https://huggingface.co/OnomaAIResearch/Illustrious-XL-v2.0
 - Ejemplo de generación (imagen): https://huggingface.co/Jommarn/nakamura-hirose-illustrious-lora/resolve/main/example.webp
 - Ejemplo de generación 2: https://huggingface.co/Jommarn/nakamura-hirose-illustrious-lora/resolve/main/example2.webp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sarcasmo-xlmr-large` es un modelo de clasificación de texto en español desarrollado por el usuario de HuggingFace `andresdfx`. Consiste en un afinamiento del encoder `xlm-roberta-large` sobre el corpus `Ernesto-1997/Sarcastic_spanish_dataset` para una tarea binaria: determinar si un texto en español contiene sarcasmo o no. El modelo se publica con pesos en formato safetensors y una licencia no especificada.
+`sarcasmo-xlmr-large` es un modelo de clasificación de texto en español desarrollado por el usuario de Hugging Face `andresdfx`. Consiste en un afinamiento del encoder `xlm-roberta-large` sobre el corpus `Ernesto-1997/Sarcastic_spanish_dataset` para una tarea binaria: determinar si un texto en español contiene sarcasmo o no. El modelo se publica con pesos en formato safetensors y una licencia no especificada.
 
 Se trata de un transformer encoder-only de arquitectura densa con 559.892.482 parámetros, lo que lo sitúa en la gama de los encoders multilingües grandes (aproximadamente 560 M de parámetros), con un tamaño de repositorio de 2,3 GB. No es un modelo generativo ni conversacional: su salida es una etiqueta de clasificación, por lo que su utilidad está acotada a pipelines de análisis de opinión, moderación de contenido y enriquecimiento de datos textuales.
 
@@ -106,7 +106,7 @@ No se dispone de información sobre alternativas evaluadas sobre `Ernesto-1997/S
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andresdfx/sarcasmo-xlmr-large
+- Modelo en Hugging Face: https://huggingface.co/andresdfx/sarcasmo-xlmr-large
 - Dataset de entrenamiento citado en la model card: https://huggingface.co/datasets/Ernesto-1997/Sarcastic_spanish_dataset
 - Repositorio del modelo base citado: https://huggingface.co/xlm-roberta-large
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo: los resultados obtenidos correspondían a páginas genéricas de ChatGPT (chatgpt.com, openai.com, fr.wikipedia.org) sin relación con `sarcasmo-xlmr-large`. No se han localizado papers, blogs, repositorios ni demos adicionales.

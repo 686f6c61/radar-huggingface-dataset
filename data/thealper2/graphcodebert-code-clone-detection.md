@@ -100,7 +100,7 @@ No se dispone de resultados comparativos de detección de clones entre estas alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thealper2/graphcodebert-code-clone-detection
+- Modelo en Hugging Face: https://huggingface.co/thealper2/graphcodebert-code-clone-detection
 - Modelo base: https://huggingface.co/microsoft/graphcodebert-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/PoolC/1-fold-clone-detection-600k-5fold
 - Paper del modelo base (GraphCodeBERT: Pre-training Code Representations with Data Flow): https://arxiv.org/abs/2009.08366

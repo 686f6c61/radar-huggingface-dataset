@@ -64,7 +64,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DanielParkerora/study-robotics-vision-language23
+- Repositorio en Hugging Face: https://huggingface.co/DanielParkerora/study-robotics-vision-language23
 - Encuesta sobre modelos VLA (contexto general): https://vla-survey.github.io/
 - Survey sobre datasets y benchmarks en VLA: https://arxiv.org/html/2604.23001v1
 - Revisión sistemática de modelos VLA en manipulación robótica: https://arxiv.org/html/2507.10672v1

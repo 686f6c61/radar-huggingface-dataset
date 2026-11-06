@@ -81,10 +81,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 | Modelo | Parametros | Contexto | Benchmarks declarados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Q2Q2/Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED | 9,41B | 262.144 (256k por defecto) | arc 0,432 / boolq 0,625 / piqa 0,748 en modo thinking; 6/100 rechazos | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-9B (base) | 9B | 262.144 nativo, hasta 1.010.000 | arc 0,417 / boolq 0,623 / piqa 0,737 en modo thinking; 100/100 rechazos | Apache 2.0 | HuggingFace, oficial |
-| Qwen3.5-9B-Claude-4.6-HighIQ-INSTRUCT (variante hermana) | 9B aprox. | no disponible | arc 0,574 / boolq 0,882 / piqa 0,775; 6/100 rechazos | Apache 2.0 | HuggingFace y GGUF de terceros (mradermacher) |
-| trohrbaugh/Qwen3.5-9B-heretic-v2 (base directa) | 9B aprox. | no disponible | no disponible | no disponible | HuggingFace |
+| Q2Q2/Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED | 9,41B | 262.144 (256k por defecto) | arc 0,432 / boolq 0,625 / piqa 0,748 en modo thinking; 6/100 rechazos | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-9B (base) | 9B | 262.144 nativo, hasta 1.010.000 | arc 0,417 / boolq 0,623 / piqa 0,737 en modo thinking; 100/100 rechazos | Apache 2.0 | Hugging Face, oficial |
+| Qwen3.5-9B-Claude-4.6-HighIQ-INSTRUCT (variante hermana) | 9B aprox. | no disponible | arc 0,574 / boolq 0,882 / piqa 0,775; 6/100 rechazos | Apache 2.0 | Hugging Face y GGUF de terceros (mradermacher) |
+| trohrbaugh/Qwen3.5-9B-heretic-v2 (base directa) | 9B aprox. | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparativa con alternativas de otros fabricantes (por ejemplo GPT-OSS-20B o Qwen3-Next-80B-A3B-Thinking, mencionados en la tarjeta de Qwen3.5-9B) no puede completarse porque los resultados de esos modelos no estan incluidos en la informacion disponible.
 

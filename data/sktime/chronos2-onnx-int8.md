@@ -63,7 +63,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sktime/chronos2-onnx-int8
+- Modelo en Hugging Face: https://huggingface.co/sktime/chronos2-onnx-int8
 - Repositorio oficial de Chronos (Amazon Science): https://github.com/amazon-science/chronos-forecasting
 - Documentación de sktime para Chronos2Forecaster: https://www.sktime.net/models/chronos2forecaster/
 - Otras exportaciones ONNX: https://huggingface.co/OpenSTEF/chronos-2-onnx y https://huggingface.co/TSFM-ai/chronos-2-onnx

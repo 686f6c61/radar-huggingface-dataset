@@ -67,6 +67,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - fpadovani/nld-100mb-after-newlexicon-zipf-nld-baseline-ckpt500_seed455](https://huggingface.co/fpadovani/nld-100mb-after-newlexicon-zipf-nld-baseline-ckpt500_seed455)
+- [Hugging Face - fpadovani/nld-100mb-after-newlexicon-zipf-nld-baseline-ckpt500_seed455](https://huggingface.co/fpadovani/nld-100mb-after-newlexicon-zipf-nld-baseline-ckpt500_seed455)
 - [Modelo base: fpadovani/ppt-art-lang-newlexicon-zipf-nld-baseline-100mb_seed455](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-nld-baseline-100mb_seed455)
 - [Registro de entrenamiento en Weights & Biases](https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/35wqf5ji)

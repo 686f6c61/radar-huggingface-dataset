@@ -73,7 +73,7 @@ No se dispone de datos de benchmarks de Qyrou-Vega Base, por lo que la comparaci
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| QyrouNnet-AI/qyrou-vega-base | 60,4M | 4.096 tokens | no disponible | safetensors en HuggingFace |
+| QyrouNnet-AI/qyrou-vega-base | 60,4M | 4.096 tokens | no disponible | safetensors en Hugging Face |
 | Qwen3-0.6B | ~0,6B | no disponible en esta ficha | Apache 2.0 (según documentación pública) | safetensors, GGUF y variantes |
 | SmolLM2-135M | 135M | no disponible en esta ficha | Apache 2.0 (según documentación pública) | safetensors, GGUF y variantes |
 | TinyLlama-1.1B | ~1,1B | no disponible en esta ficha | Apache 2.0 (según documentación pública) | safetensors, GGUF y variantes |
@@ -97,6 +97,6 @@ La diferencia principal frente a estas alternativas es de escala (entre dos y ve
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/QyrouNnet-AI/qyrou-vega-base
+- Página del modelo en Hugging Face: https://huggingface.co/QyrouNnet-AI/qyrou-vega-base
 - Modelo de origen: https://huggingface.co/QyrouNnet-AI/qyrou-vega
 - No se han encontrado enlaces relevantes en la búsqueda web. Los resultados devueltos corresponden a páginas de soporte de Microsoft (contacto, inicio de sesión en Hotmail, actualizaciones de seguridad de Exchange Server) y no guardan relación con el modelo.

@@ -15,7 +15,7 @@ La relevancia de esta conversión radica en que facilita el despliegue local en 
 | Parametros activos | no aplicable (no es MoE) |
 | Longitud de contexto | 32k (mencionado en la model card, sin confirmacion oficial) |
 | Tipos de cuantizacion | bf16 (esta conversion); existen variantes 8-bit y 4-bit en repos hermanos |
-| Idiomas soportados | multilingual (segun tag de HuggingFace) |
+| Idiomas soportados | multilingual (segun tag de Hugging Face) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (MLX) |
 

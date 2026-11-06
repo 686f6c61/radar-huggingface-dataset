@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `qaisar50850/pneumonia-resnet18` es, según su nombre y los resultados de búsqueda web asociados, un clasificador de imágenes basado en la arquitectura ResNet-18, diseñado para la detección de neumonía en radiografías de tórax. El autor es `qaisar50850` y la licencia declarada es MIT. La información disponible en HuggingFace es muy limitada: la model card solo contiene la licencia, el repositorio tiene un tamaño de 0.0 GB y no se han registrado descargas ni likes.
+El modelo `qaisar50850/pneumonia-resnet18` es, según su nombre y los resultados de búsqueda web asociados, un clasificador de imágenes basado en la arquitectura ResNet-18, diseñado para la detección de neumonía en radiografías de tórax. El autor es `qaisar50850` y la licencia declarada es MIT. La información disponible en Hugging Face es muy limitada: la model card solo contiene la licencia, el repositorio tiene un tamaño de 0.0 GB y no se han registrado descargas ni likes.
 
 Los resultados de búsqueda muestran proyectos similares, como `AventIQ-AI/ResNet-18-pneumonia-detection`, que emplea la misma arquitectura para clasificar radiografías en dos categorías: "Normal" y "Neumonía". Esto sugiere que el propósito del modelo es la clasificación binaria de imágenes médicas. Sin embargo, la falta de datos técnicos en la model card impide confirmar detalles sobre los pesos, el entrenamiento o el pipeline completo. El repositorio podría no contener los pesos del modelo, o estos no estar correctamente enlazados.
 
@@ -23,7 +23,7 @@ Los resultados de búsqueda muestran proyectos similares, como `AventIQ-AI/ResNe
 
 La arquitectura subyacente es ResNet-18, una red neuronal convolucional con 18 capas y conexiones residuales, propuesta originalmente por He et al. en 2015. ResNet-18 es una red relativamente ligera, habitualmente utilizada para clasificación de imágenes de resolución moderada (por ejemplo, 224×224 píxeles). El modelo parece haber sido fine-tuned para una tarea de clasificación binaria entre radiografías normales y radiografías con neumonía, como se deduce del nombre del repositorio y de proyectos similares encontrados en la búsqueda web.
 
-No se ha publicado información oficial sobre el dataset de entrenamiento, el número de tokens (al no ser un modelo de lenguaje, este concepto no aplica), el proceso de fine-tuning, ni si se emplearon técnicas como transfer learning, augmentación de datos o validación clínica. La model card de HuggingFace no incluye ninguna de estas especificaciones.
+No se ha publicado información oficial sobre el dataset de entrenamiento, el número de tokens (al no ser un modelo de lenguaje, este concepto no aplica), el proceso de fine-tuning, ni si se emplearon técnicas como transfer learning, augmentación de datos o validación clínica. La model card de Hugging Face no incluye ninguna de estas especificaciones.
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ No se ha publicado información oficial sobre el dataset de entrenamiento, el n�
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye métricas de exactitud, sensibilidad, especificidad, AUC ni comparaciones con otros modelos. Tampoco hay información sobre el rendimiento en conjuntos de datos públicos como CheXpert o el dataset de neumonía de Kaggle.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye métricas de exactitud, sensibilidad, especificidad, AUC ni comparaciones con otros modelos. Tampoco hay información sobre el rendimiento en conjuntos de datos públicos como CheXpert o el dataset de neumonía de Kaggle.
 
 ## Requisitos de hardware
 
@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Arquitectura | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qaisar50850/pneumonia-resnet18 | ResNet-18 | no disponible | no aplica | MIT | HuggingFace, repo aparentemente vacio |
-| AventIQ-AI/ResNet-18-pneumonia-detection | ResNet-18 | no disponible | no aplica | no disponible | HuggingFace, con descripcion funcional |
+| qaisar50850/pneumonia-resnet18 | ResNet-18 | no disponible | no aplica | MIT | Hugging Face, repo aparentemente vacio |
+| AventIQ-AI/ResNet-18-pneumonia-detection | ResNet-18 | no disponible | no aplica | no disponible | Hugging Face, con descripcion funcional |
 | Sharan099/PneumoAI- | ResNet-18 (app end-to-end) | no disponible | no aplica | no disponible | GitHub, incluye interfaz Streamlit |
 
 La comparación se basa únicamente en la información pública de los repositorios. No se dispone de datos de parámetros, rendimiento ni licencias para las alternativas. El modelo `qaisar50850/pneumonia-resnet18` no presenta una ventaja clara sobre los otros, dado que su repositorio parece no contener pesos.
@@ -68,13 +68,13 @@ La comparación se basa únicamente en la información pública de los repositor
 
 - No hay información sobre sesgos o limitaciones de rendimiento publicada por el autor. Al ser un modelo de imágenes médicas, es imprescindible validar su exactitud en un conjunto de datos clínico antes de cualquier uso real.
 - Riesgo de alucinación: no aplica en el sentido de generación de texto, pero puede producir falsos positivos o falsos negativos en la clasificación de neumonía, lo que supone un riesgo clínico significativo.
-- El repositorio de HuggingFace tiene un tamaño de 0.0 GB, lo que sugiere que los pesos del modelo podrían no estar incluidos. No se puede garantizar que el modelo sea descargable y utilizable.
+- El repositorio de Hugging Face tiene un tamaño de 0.0 GB, lo que sugiere que los pesos del modelo podrían no estar incluidos. No se puede garantizar que el modelo sea descargable y utilizable.
 - No se proporciona documentación sobre el preprocesamiento de imágenes (tamaño, normalización, valores de media y desviación), lo que dificulta la reproducción de resultados.
 - La licencia MIT permite uso comercial, pero la responsabilidad legal y ética del uso en entornos médicos recae en el usuario. El modelo no está certificado como dispositivo médico.
 - No se indican restricciones de contexto o idioma al ser un modelo de visión.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qaisar50850/pneumonia-resnet18
-- Modelo similar en HuggingFace: https://huggingface.co/AventIQ-AI/ResNet-18-pneumonia-detection
+- Hugging Face: https://huggingface.co/qaisar50850/pneumonia-resnet18
+- Modelo similar en Hugging Face: https://huggingface.co/AventIQ-AI/ResNet-18-pneumonia-detection
 - Proyecto end-to-end en GitHub: https://github.com/Sharan099/PneumoAI-

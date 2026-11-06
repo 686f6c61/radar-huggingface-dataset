@@ -4,7 +4,7 @@
 
 `Oluwaseunhannah21/mnist-cnn-pytorch` es una red neuronal convolucional (CNN) pequena entrenada en PyTorch para clasificar digitos manuscritos del conjunto de datos MNIST (clases 0-9). Lo publica el usuario Oluwaseunhannah21 como proyecto de aprendizaje, segun declara el propio autor en la model card, y no como un modelo de proposito general ni como un componente listo para produccion.
 
-Tecnicamente es un clasificador de imagenes de una sola modalidad: recibe tensores de 1x28x28 en escala de grises y devuelve una distribucion sobre 10 clases. No es un modelo de lenguaje, no tiene parametros en el sentido de los LLM (no hay miles de millones de pesos ni ventana de contexto) y no soporta generacion de texto, tool calling ni razonamiento multi-paso. Su interes es acotado: sirve como referencia minima de pipeline de vision por computador en PyTorch y como ejemplo de integracion con HuggingFace Hub.
+Tecnicamente es un clasificador de imagenes de una sola modalidad: recibe tensores de 1x28x28 en escala de grises y devuelve una distribucion sobre 10 clases. No es un modelo de lenguaje, no tiene parametros en el sentido de los LLM (no hay miles de millones de pesos ni ventana de contexto) y no soporta generacion de texto, tool calling ni razonamiento multi-paso. Su interes es acotado: sirve como referencia minima de pipeline de vision por computador en PyTorch y como ejemplo de integracion con Hugging Face Hub.
 
 El dato mas relevante es su precision declarada del 99,27 % en el conjunto de test de MNIST, obtenida en 5 epocas con Adam y batch de 64. El repositorio tiene un tamano de 0,0 GB (pesos muy ligeros), licencia MIT y cero descargas en el momento de la consulta, lo que refleja que es un artefacto de aprendizaje mas que un modelo adoptado por la comunidad.
 
@@ -31,7 +31,7 @@ El entrenamiento usa el optimizador Adam con tasa de aprendizaje 0,001 y perdida
 
 - Clasificacion de imagenes de digitos manuscritos en 10 clases (0-9) a partir de entradas 1x28x28 en escala de grises.
 - Inferencia en CPU y GPU mediante PyTorch (`model.eval()` y `torch.load`).
-- Integracion con HuggingFace Hub para descarga de pesos con `hf_hub_download`.
+- Integracion con Hugging Face Hub para descarga de pesos con `hf_hub_download`.
 - No soporta generacion de texto, razonamiento, codigo ni matematicas.
 - No soporta tool calling ni function calling.
 - No soporta agentes ni razonamiento multi-paso.
@@ -41,7 +41,7 @@ El entrenamiento usa el optimizador Adam con tasa de aprendizaje 0,001 y perdida
 ## Casos de uso
 
 - Prototipado docente de vision por computador: sirve como primer ejemplo completo de entrenamiento y evaluacion de una CNN en PyTorch, con un pipeline reproducible de 5 epocas y precision cercana al 99 % en MNIST.
-- Prueba de integracion con HuggingFace Hub: util para validar flujos de descarga de pesos (`hf_hub_download`) y carga de `state_dict` en entornos de CI antes de migrar a modelos mayores.
+- Prueba de integracion con Hugging Face Hub: util para validar flujos de descarga de pesos (`hf_hub_download`) y carga de `state_dict` en entornos de CI antes de migrar a modelos mayores.
 - Baseline en experimentos de clasificacion de digitos: punto de comparacion rapido frente a modelos mas complejos sobre MNIST, dado su bajo coste computacional.
 - Demostraciones de preprocesado de imagen: permite ilustrar normalizacion con media y desviacion concretas y conversion a tensor 1x28x28.
 - Educacion en regularizacion: el dropout de 0,3 y el max pooling sirven para explicar tecnicas basicas de generalizacion en redes convolucionales.
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | MNIST accuracy | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Oluwaseunhannah21/mnist-cnn-pytorch | no disponible | no aplica | 99,27 % | MIT | HuggingFace Hub |
+| Oluwaseunhannah21/mnist-cnn-pytorch | no disponible | no aplica | 99,27 % | MIT | Hugging Face Hub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables en la busqueda realizada; no se inventan cifras.
@@ -84,7 +84,7 @@ No se dispone de informacion sobre modelos comparables en la busqueda realizada;
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Oluwaseunhannah21/mnist-cnn-pytorch
+- Modelo en Hugging Face: https://huggingface.co/Oluwaseunhannah21/mnist-cnn-pytorch
 - Dataset MNIST: https://huggingface.co/datasets/mnist
 - Documentacion de PyTorch: https://pytorch.org/docs/stable/index.html
 - Documentacion de huggingface_hub: https://huggingface.co/docs/huggingface_hub

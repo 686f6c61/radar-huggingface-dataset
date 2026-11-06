@@ -99,7 +99,7 @@ No se dispone de datos verificados de otros modelos comparables en la informacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/K2-Horizon-3.7B-heretic-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/K2-Horizon-3.7B-heretic-i1-GGUF
 - Modelo base: https://huggingface.co/Avicennasis/K2-Horizon-3.7B-heretic
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/K2-Horizon-3.7B-heretic-GGUF
 - Pagina resumen del modelo con lista de descargas: https://hf.tst.eu/model#K2-Horizon-3.7B-heretic-i1-GGUF

@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks tipo MMLU, HumanEval o GSM8K (no ap
 | Error de reconstrucción (test sintético, % tamaño corporal) | 0,784 | 0,915 | no disponible |
 | Error de joints (%) | 6,24 | 7,73 | no disponible |
 | Licencia | Apache-2.0 | Según implementación (la usada como baseline es propia de MASHBOX Labs) | no disponible |
-| Disponibilidad | Pesos y código públicos en HuggingFace y GitHub | Implementaciones académicas varias | no disponible |
+| Disponibilidad | Pesos y código públicos en Hugging Face y GitHub | Implementaciones académicas varias | no disponible |
 
 No hay otros modelos comparables publicados con los mismos datos de entrada y salida en la información disponible.
 
@@ -94,11 +94,11 @@ No hay otros modelos comparables publicados con los mismos datos de entrada y sa
 - Alucinación: no aplica; es un modelo geométrico determinista dado un input.
 - Idiomas: no aplica.
 - Uso comercial: el código y los pesos son Apache-2.0 (uso comercial permitido), pero el paso de vídeo con TrackEverything está restringido a uso no comercial; para uso comercial desde vídeo habría que sustituir el tracker por uno con licencia adecuada (el wrapper acepta trazas de cualquier rastreador 3D mediante `track2rig-video align`).
-- Soporte: el canal de contacto para empresas es hello@mashbox.gg; el proyecto tiene 0 descargas y 1 like en HuggingFace en el momento de redactar la ficha, lo que indica adopción muy temprana.
+- Soporte: el canal de contacto para empresas es hello@mashbox.gg; el proyecto tiene 0 descargas y 1 like en Hugging Face en el momento de redactar la ficha, lo que indica adopción muy temprana.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mashbox-labs/Track2Rig
+- Modelo en Hugging Face: https://huggingface.co/mashbox-labs/Track2Rig
 - Código (repositorio mashbox, rama v0.1.10): https://github.com/mashbox-labs/mashbox/tree/v0.1.10/src/mashbox/models/track2rig
 - Guía oficial de Track2Rig: https://mashbox.gg/docs/models/track2rig
 - Guía de instalación (sección install): https://mashbox.gg/docs/models/track2rig#install

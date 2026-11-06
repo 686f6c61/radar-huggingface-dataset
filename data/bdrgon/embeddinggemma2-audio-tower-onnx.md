@@ -84,8 +84,8 @@ No disponible. La informacion proporcionada no incluye modelos comparables, ni d
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| `bdrgon/embeddinggemma2-audio-tower-onnx` | no disponible | no disponible | Apache 2.0 | ONNX | HuggingFace |
-| `google/embeddinggemma-2` | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `bdrgon/embeddinggemma2-audio-tower-onnx` | no disponible | no disponible | Apache 2.0 | ONNX | Hugging Face |
+| `google/embeddinggemma-2` | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de embedding de audio | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,6 +102,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables, ni d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bdrgon/embeddinggemma2-audio-tower-onnx
+- Repositorio Hugging Face: https://huggingface.co/bdrgon/embeddinggemma2-audio-tower-onnx
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - No se han encontrado en la busqueda web enlaces relevantes (papers, blogs, repos o demos) relacionados con este modelo o con la exportacion a ONNX de la torre de audio de EmbeddingGemma 2.

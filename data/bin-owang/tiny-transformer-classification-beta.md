@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bin-owang/tiny-transformer-classification-beta` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de un Transformer de clasificación a escala mínima (49.600 parámetros totales según el fichero `model.safetensors`). Lo desarrolla el usuario bin-owang y se distribuye bajo licencia MIT. El propio autor describe el artefacto como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado y listo para producción.
+`bin-owang/tiny-transformer-classification-beta` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de un Transformer de clasificación a escala mínima (49.600 parámetros totales según el fichero `model.safetensors`). Lo desarrolla el usuario bin-owang y se distribuye bajo licencia MIT. El propio autor describe el artefacto como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado y listo para producción.
 
 El repositorio incluye código Python ejecutable (`predict.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en `model.safetensors`. El autor aclara de forma explícita que ese checkpoint no ha sido entrenado ni auditado, y que no se reclama ninguna puntuación de benchmark.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 - VRAM estimada para inferencia, calculada a partir del recuento real de 49.600 parámetros (solo pesos, sin activaciones): aproximadamente 198 KB en FP32, 99 KB en FP16/BF16 y 50 KB en INT8.
 - GPU recomendadas: cualquiera, incluidas GPU integradas; también es viable la ejecución íntegra en CPU. Una RTX 4090, A100 o H100 resultarían enormemente sobredimensionadas.
-- Almacenamiento: el repositorio ocupa 0,0 GB según el listado de HuggingFace, coherente con el tamaño del checkpoint.
+- Almacenamiento: el repositorio ocupa 0,0 GB según el listado de Hugging Face, coherente con el tamaño del checkpoint.
 - Opciones de despliegue: al tratarse de una implementación personalizada, no se documenta compatibilidad directa con vLLM, llama.cpp, Ollama o TGI; el autor indica que las APIs genéricas de carga automática necesitan un adaptador explícito.
 - Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
 
@@ -74,5 +74,5 @@ No disponible. La información proporcionada no incluye especificaciones verific
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bin-owang/tiny-transformer-classification-beta
+- Modelo en Hugging Face: https://huggingface.co/bin-owang/tiny-transformer-classification-beta
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos por el buscador (Bing, artículos sobre ficheros con extensión .bin, verificador de BIN/IIN, Binance) no guardan relación con este repositorio y se descartan.

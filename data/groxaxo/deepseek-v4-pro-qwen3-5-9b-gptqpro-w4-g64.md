@@ -97,8 +97,8 @@ La mejora declarada es de 2,57x en decodificación estimada y 2,45x en generaci�
 
 | Modelo | Parámetros | Contexto | Pesos | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| Este checkpoint (GPTQ-Pro W4 G64) | 9,65 B | No disponible | 9,212 GB | Apache-2.0 | HuggingFace, 19 descargas | 2,57x más rápido que BF16 en la misma RTX 3090 |
-| Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B (BF16) | 9,65 B | No disponible | 19,306 GB | Apache-2.0 | HuggingFace | Original sin cuantizar; perplejidad 8,799 frente a 9,102 |
+| Este checkpoint (GPTQ-Pro W4 G64) | 9,65 B | No disponible | 9,212 GB | Apache-2.0 | Hugging Face, 19 descargas | 2,57x más rápido que BF16 en la misma RTX 3090 |
+| Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B (BF16) | 9,65 B | No disponible | 19,306 GB | Apache-2.0 | Hugging Face | Original sin cuantizar; perplejidad 8,799 frente a 9,102 |
 | Otras cuantizaciones de 8-9 B en 4 bits | No disponible | No disponible | No disponible | No disponible | No disponible | No hay datos comparativos en la información proporcionada |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos de la misma categoría en la información proporcionada, por lo que no es posible una comparación cuantitativa con terceros.
@@ -118,7 +118,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/groxaxo/DeepSeek-V4-Pro-Qwen3.5-9B-GPTQPro-W4-G64
+- Modelo en Hugging Face: https://huggingface.co/groxaxo/DeepSeek-V4-Pro-Qwen3.5-9B-GPTQPro-W4-G64
 - Modelo base: https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B
 - Revisión upstream fijada: `40c1fbe115db8a76ea0c594fc6759d39ffab4d15`
 - Ficheros de trazabilidad citados en el repositorio: `PROVENANCE.json`, `WEIGHT_CHECKSUMS.json`, `KL_REPORT.json`, `PERFORMANCE.json`, `UPSTREAM_MODEL_CARD.md`

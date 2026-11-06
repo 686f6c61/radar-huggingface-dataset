@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Ololade117/scaling-normal-10.6M-15000steps` es un checkpoint de 10.579.200 parámetros publicado en HuggingFace por el usuario Ololade117 (Ololade Ogunleye) el 25 de septiembre de 2026. Se distribuye bajo licencia MIT y únicamente en formato `safetensors`, con integración declarada mediante `PyTorchModelHubMixin`. No cuenta con pipeline asignado, ni idiomas declarados, ni model card sustantiva: el README se limita a indicar que el modelo se subió a través de la integración de `huggingface_hub`, con los campos Code, Paper y Docs marcados como "[More Information Needed]".
+El modelo `Ololade117/scaling-normal-10.6M-15000steps` es un checkpoint de 10.579.200 parámetros publicado en Hugging Face por el usuario Ololade117 (Ololade Ogunleye) el 25 de septiembre de 2026. Se distribuye bajo licencia MIT y únicamente en formato `safetensors`, con integración declarada mediante `PyTorchModelHubMixin`. No cuenta con pipeline asignado, ni idiomas declarados, ni model card sustantiva: el README se limita a indicar que el modelo se subió a través de la integración de `huggingface_hub`, con los campos Code, Paper y Docs marcados como "[More Information Needed]".
 
 Por el nombre del repositorio, todo apunta a un experimento de escalado ("scaling") de un modelo pequeño, entrenado durante 15.000 pasos y etiquetado con la variante "normal". Se trataría, por tanto, de un artefacto de investigación reproducible más que de un modelo orientado a producción: no hay model card, no hay tokenizer declarado, no hay configuración de arquitectura publicada y el repositorio ocupa 0,0 GB con cero descargas y cero "likes" en el momento de redactar esta ficha.
 
@@ -88,7 +88,7 @@ No disponible. La información proporcionada no identifica modelos comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ololade117/scaling-normal-10.6M-15000steps
+- Modelo en Hugging Face: https://huggingface.co/Ololade117/scaling-normal-10.6M-15000steps
 - Perfil del autor, Ololade Ogunleye: https://huggingface.co/Ololade117
 - Listado de modelos del autor: https://huggingface.co/Ololade117/models
 - Documentación de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin

@@ -90,7 +90,7 @@ No se dispone de información detallada sobre los modelos comparables de la mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SmallAICreator/AuroraGPT-Think-v3
+- Modelo en Hugging Face: https://huggingface.co/SmallAICreator/AuroraGPT-Think-v3
 - Modelo base: https://huggingface.co/SmallAICreator/AuroraGPT-Qwen-Distill
 - Modelo relacionado AuroraGPT-ToolFix: https://huggingface.co/SmallAICreator/AuroraGPT-ToolFix
 - Modelo relacionado AuroraGPT-700M-Reason: https://huggingface.co/SmallAICreator/AuroraGPT-700M-Reason

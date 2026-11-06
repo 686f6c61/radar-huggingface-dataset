@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| felixschn/blip-multitask | 49.600 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas |
+| felixschn/blip-multitask | 49.600 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas Blip/Blip-2 de referencia | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
 No se dispone de datos suficientes en la informacion proporcionada para establecer una comparativa cuantitativa con otros modelos de la misma categoria.
@@ -83,7 +83,7 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/felixschn/blip-multitask
+- Modelo en Hugging Face: https://huggingface.co/felixschn/blip-multitask
 - `eval.py` (artefacto principal del repositorio, referenciado en la model card)
 - `config.json` (configuración de arquitectura)
 - `training_args.json` (receta de experimento por defecto)

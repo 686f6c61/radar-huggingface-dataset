@@ -73,5 +73,5 @@ No disponible. No se han encontrado modelos comparables con estas característic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lau-schn/trial-retrieval-2023
+- Hugging Face: https://huggingface.co/lau-schn/trial-retrieval-2023
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos o demos) específicos de este modelo en la búsqueda web.

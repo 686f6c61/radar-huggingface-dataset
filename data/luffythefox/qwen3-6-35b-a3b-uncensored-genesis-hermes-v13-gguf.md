@@ -76,7 +76,7 @@ La comparativa se basa en la arquitectura y disponibilidad, ya que no se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-GGUF
+- Modelo en Hugging Face: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-GGUF
 - Modelo base sin censura: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Finetune Hermes de referencia: https://huggingface.co/DJLougen/hermes-qwen3.5-35b-a3b-GGUF
 - Dataset de function calling: https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1

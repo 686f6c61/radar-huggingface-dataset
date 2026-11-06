@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible. Los 
 
 | Modelo | Tamaño (parámetros) | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| `tbhrc/whisper_base_ct2` | no disponible | no disponible | MIT | CTranslate2 | HuggingFace |
-| `openai/whisper-tiny` (original) | 39 M | 30 s audio | MIT | PyTorch | HuggingFace |
-| `openai/whisper-base` (original) | 74 M | 30 s audio | MIT | PyTorch | HuggingFace |
-| `openai/whisper-small` (original) | 244 M | 30 s audio | MIT | PyTorch | HuggingFace |
+| `tbhrc/whisper_base_ct2` | no disponible | no disponible | MIT | CTranslate2 | Hugging Face |
+| `openai/whisper-tiny` (original) | 39 M | 30 s audio | MIT | PyTorch | Hugging Face |
+| `openai/whisper-base` (original) | 74 M | 30 s audio | MIT | PyTorch | Hugging Face |
+| `openai/whisper-small` (original) | 244 M | 30 s audio | MIT | PyTorch | Hugging Face |
 
 La ventaja de esta versión frente a los modelos originales es que está optimizada para CTranslate2, lo que reduce la latencia y el consumo de memoria, aunque no aporta mejoras en precisión.
 
@@ -78,7 +78,7 @@ La ventaja de esta versión frente a los modelos originales es que está optimiz
 
 ## Enlaces
 
-- Repositorio HuggingFace: [tbhrc/whisper_base_ct2](https://huggingface.co/tbhrc/whisper_base_ct2)
+- Repositorio Hugging Face: [tbhrc/whisper_base_ct2](https://huggingface.co/tbhrc/whisper_base_ct2)
 - Modelo original: [openai/whisper-base](https://huggingface.co/openai/whisper-base)
 - Proyecto CTranslate2: [GitHub](https://github.com/OpenNMT/CTranslate2)
 - Proyecto faster-whisper: [GitHub](https://github.com/systran/faster-whisper)

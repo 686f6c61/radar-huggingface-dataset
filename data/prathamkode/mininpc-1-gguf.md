@@ -94,7 +94,7 @@ La diferencia competitiva de MiniNPC-1 no es el rendimiento bruto, sino la espec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/prathamkode/mininpc-1-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/prathamkode/mininpc-1-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B-SFT
 - llama.cpp (motor de inferencia GGUF): https://github.com/ggml-org/llama.cpp
 - LM Studio (cliente grafico compatible con GGUF): https://lmstudio.ai

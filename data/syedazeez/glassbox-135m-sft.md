@@ -89,10 +89,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| glassbox-135m-sft | 135,3 M | 1024 | Investigación de observabilidad y aritmética con scratchpad | Apache 2.0 | HuggingFace (repo de 0,5 GB, 137 descargas) |
-| glassbox-135m-base | 135,3 M | 1024 | Modelo base de la misma serie, sin SFT | Apache 2.0 | HuggingFace |
-| glassbox-135m-rl-arith | 135,3 M | 1024 | Variante con RL aritmético de la misma serie | Apache 2.0 | HuggingFace |
-| SmolLM-135M | 135 M | 2048 | Modelo pequeño de propósito general | Apache 2.0 | HuggingFace |
+| glassbox-135m-sft | 135,3 M | 1024 | Investigación de observabilidad y aritmética con scratchpad | Apache 2.0 | Hugging Face (repo de 0,5 GB, 137 descargas) |
+| glassbox-135m-base | 135,3 M | 1024 | Modelo base de la misma serie, sin SFT | Apache 2.0 | Hugging Face |
+| glassbox-135m-rl-arith | 135,3 M | 1024 | Variante con RL aritmético de la misma serie | Apache 2.0 | Hugging Face |
+| SmolLM-135M | 135 M | 2048 | Modelo pequeño de propósito general | Apache 2.0 | Hugging Face |
 
 La comparación con modelos de propósito general de tamaño similar no procede en términos de rendimiento: glassbox-135m-sft está especializado en aritmética de 1 a 5 dígitos con operandos de igual longitud y no se han publicado métricas comparables de MMLU, HumanEval o GSM8K. Los datos de SmolLM-135M en esta ficha se limitan a parámetros, contexto y licencia; no se dispone de una comparación de rendimiento publicada en la información proporcionada.
 
@@ -110,7 +110,7 @@ La comparación con modelos de propósito general de tamaño similar no procede 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syedazeez/glassbox-135m-sft
+- Modelo en Hugging Face: https://huggingface.co/syedazeez/glassbox-135m-sft
 - Modelo base: https://huggingface.co/syedazeez/glassbox-135m-base
 - Variante con RL aritmético: https://huggingface.co/syedazeez/glassbox-135m-rl-arith
 - Dataset de telemetría: https://huggingface.co/datasets/syedazeez/glassbox-135m-telemetry

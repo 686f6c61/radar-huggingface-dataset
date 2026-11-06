@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FlexWAM-base es un modelo publicado en HuggingFace por el usuario Zzming bajo licencia Apache 2.0. El repositorio, creado el 4 de noviembre de 2026, tiene un tamano de 12,8 GB, lo que sugiere un modelo de pesos relativamente grandes (probablemente en el rango de 7 a 13 mil millones de parametros en funcion del formato y la precision de almacenamiento). Sin embargo, la model card publicada esta practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
+FlexWAM-base es un modelo publicado en Hugging Face por el usuario Zzming bajo licencia Apache 2.0. El repositorio, creado el 4 de noviembre de 2026, tiene un tamano de 12,8 GB, lo que sugiere un modelo de pesos relativamente grandes (probablemente en el rango de 7 a 13 mil millones de parametros en funcion del formato y la precision de almacenamiento). Sin embargo, la model card publicada esta practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
 La ausencia de documentacion tecnica impide determinar con rigor que problema resuelve el modelo, que arquitectura emplea o para que tareas esta disenado. El nombre "FlexWAM" podria sugerir un modelo multimodal o de world modeling (WAM como posible acronimo de World Action Model o similar), pero esto es especulacion que no se puede confirmar con la informacion disponible. Tampoco se han publicado resultados de benchmarks, idiomas soportados ni detalles de entrenamiento.
 
@@ -69,7 +69,7 @@ No es posible establecer una comparativa rigurosa porque se desconocen los param
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| FlexWAM-base | no disponible | no disponible | Apache 2.0 | practicamente inexistente | HuggingFace, sin descargas |
+| FlexWAM-base | no disponible | no disponible | Apache 2.0 | practicamente inexistente | Hugging Face, sin descargas |
 | Alternativa densa de ~7B (referencia generica) | ~7B | variable | variable | completa | amplia |
 | Alternativa densa de ~13B (referencia generica) | ~13B | variable | variable | completa | amplia |
 
@@ -88,5 +88,5 @@ No se dispone de informacion suficiente para identificar modelos comparables con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Zzming/FlexWAM-base
+- Repositorio en Hugging Face: https://huggingface.co/Zzming/FlexWAM-base
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

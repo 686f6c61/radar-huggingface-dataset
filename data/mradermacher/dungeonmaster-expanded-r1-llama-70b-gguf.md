@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: mradermacher/Dungeonmaster-Expanded-R1-LLaMa-70B-GGUF](https://huggingface.co/mradermacher/Dungeonmaster-Expanded-R1-LLaMa-70B-GGUF)
+- [Hugging Face: mradermacher/Dungeonmaster-Expanded-R1-LLaMa-70B-GGUF](https://huggingface.co/mradermacher/Dungeonmaster-Expanded-R1-LLaMa-70B-GGUF)
 - [Modelo base: TareksTesting/Dungeonmaster-Expanded-R1-LLaMa-70B](https://huggingface.co/TareksTesting/Dungeonmaster-Expanded-R1-LLaMa-70B)
 - [Cuantizaciones imatrix del mismo modelo](https://huggingface.co/mradermacher/Dungeonmaster-Expanded-R1-LLaMa-70B-i1-GGUF)
 - [Pagina de overview de mradermacher](https://hf.tst.eu/model#Dungeonmaster-Expanded-R1-LLaMa-70B-GGUF)

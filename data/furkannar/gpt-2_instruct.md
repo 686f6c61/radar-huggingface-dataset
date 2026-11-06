@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GPT-2 Instruct es un ajuste fino de GPT-2 (124 millones de parametros) desarrollado por el usuario FurkanNar y publicado en HuggingFace bajo licencia MIT. El modelo parte del checkpoint base openai-community/gpt2 y se ha afinado para seguir instrucciones en formato Alpaca, utilizando como datos de entrenamiento los conjuntos SVAMP (problemas aritmeticos de enunciado) y tatsu-lab/alpaca. El objetivo declarado es disponer de una version de GPT-2 capaz de responder a instrucciones sencillas y de resolver problemas matematicos basicos de tipo word problem.
+GPT-2 Instruct es un ajuste fino de GPT-2 (124 millones de parametros) desarrollado por el usuario FurkanNar y publicado en Hugging Face bajo licencia MIT. El modelo parte del checkpoint base openai-community/gpt2 y se ha afinado para seguir instrucciones en formato Alpaca, utilizando como datos de entrenamiento los conjuntos SVAMP (problemas aritmeticos de enunciado) y tatsu-lab/alpaca. El objetivo declarado es disponer de una version de GPT-2 capaz de responder a instrucciones sencillas y de resolver problemas matematicos basicos de tipo word problem.
 
 Se trata de un modelo de proposito general pequeno, orientado a experimentacion y pruebas de concepto mas que a produccion. Con 124,4 millones de parametros y un entrenamiento de solo 3 epocas con longitud maxima de secuencia de 256 tokens, sus capacidades estan claramente acotadas, especialmente en razonamiento matematico, donde el propio autor reporta una puntuacion F1 macro en validacion de 0,2857.
 
@@ -73,10 +73,10 @@ La perdida de entrenamiento desciende de forma sostenida, mientras que la perdid
 
 | Modelo | Parametros | Contexto | Ajuste por instrucciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FurkanNar/gpt-2_instruct | 124M | 1024 (entrenado a 256) | Si (formato Alpaca) | MIT | HuggingFace |
-| openai-community/gpt2 | 124M | 1024 | No | MIT | HuggingFace |
-| distilgpt2 | 82M | 1024 | No | Apache-2.0 | HuggingFace |
-| gpt2-medium | 355M | 1024 | No | MIT | HuggingFace |
+| FurkanNar/gpt-2_instruct | 124M | 1024 (entrenado a 256) | Si (formato Alpaca) | MIT | Hugging Face |
+| openai-community/gpt2 | 124M | 1024 | No | MIT | Hugging Face |
+| distilgpt2 | 82M | 1024 | No | Apache-2.0 | Hugging Face |
+| gpt2-medium | 355M | 1024 | No | MIT | Hugging Face |
 
 Frente al GPT-2 base, este modelo anade seguimiento de instrucciones y un ajuste sobre problemas aritmeticos, a costa de una ventana de entrenamiento mas corta (256 tokens). Frente a distilgpt2 es algo mayor pero con ajuste por instrucciones. Frente a gpt2-medium es mas pequeno y rapido, aunque con menor capacidad bruta. No se dispone de datos de benchmarks que permitan una comparacion cuantitativa de calidad.
 
@@ -93,7 +93,7 @@ Frente al GPT-2 base, este modelo anade seguimiento de instrucciones y un ajuste
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FurkanNar/gpt-2_instruct
+- Modelo en Hugging Face: https://huggingface.co/FurkanNar/gpt-2_instruct
 - Version previa ajustada sobre SVAMP: https://huggingface.co/FurkanNar/gpt-2_svamp
 - Modelo base GPT-2: https://huggingface.co/openai-community/gpt2
 - Dataset SVAMP (ChilleD/SVAMP): https://huggingface.co/datasets/ChilleD/SVAMP

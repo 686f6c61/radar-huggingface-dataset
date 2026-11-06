@@ -81,7 +81,7 @@ La cuantizacion W4A16 ofrece el menor tamano en disco y la menor huella de memor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MIRALABS/Qwen3.8-27B-W4A16-AutoRound
+- Repositorio Hugging Face: https://huggingface.co/MIRALABS/Qwen3.8-27B-W4A16-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de despliegue en 2x RTX 3090: https://github.com/tonyd2wild/Qwen3.8-27B-AutoRound-W4A16-2x3090
 - Blog de AMD sobre soporte en Ryzen AI Max y Radeon: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

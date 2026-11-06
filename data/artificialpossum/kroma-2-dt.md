@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Kroma-2-DT es un modelo publicado en HuggingFace por el usuario artificialpossum bajo el identificador `artificialpossum/Kroma-2-DT`. La ficha pública del repositorio no incluye pipeline declarado, licencia, idiomas soportados, arquitectura ni descripción del proceso de entrenamiento, por lo que no es posible determinar con la información disponible qué tipo de modelo es ni para qué tarea fue entrenado. El repositorio ocupa 74,0 GB, dato que sugiere pesos de gran tamano, pero sin confirmación por parte del autor.
+Kroma-2-DT es un modelo publicado en Hugging Face por el usuario artificialpossum bajo el identificador `artificialpossum/Kroma-2-DT`. La ficha pública del repositorio no incluye pipeline declarado, licencia, idiomas soportados, arquitectura ni descripción del proceso de entrenamiento, por lo que no es posible determinar con la información disponible qué tipo de modelo es ni para qué tarea fue entrenado. El repositorio ocupa 74,0 GB, dato que sugiere pesos de gran tamano, pero sin confirmación por parte del autor.
 
-El modelo se creó el 9 de agosto de 2026 y se actualizó por última vez el 19 de septiembre de 2026. Acumula 0 descargas y 1 "like", y la única etiqueta publicada es `region:us`, que únicamente indica la región de servicio de HuggingFace y no aporta información técnica. No se ha publicado model card, paper, blog ni repositorio de código asociado.
+El modelo se creó el 9 de agosto de 2026 y se actualizó por última vez el 19 de septiembre de 2026. Acumula 0 descargas y 1 "like", y la única etiqueta publicada es `region:us`, que únicamente indica la región de servicio de Hugging Face y no aporta información técnica. No se ha publicado model card, paper, blog ni repositorio de código asociado.
 
 La búsqueda web realizada no ha devuelto ninguna referencia a este modelo: los resultados obtenidos tratan sobre el símbolo arroba (@) y no guardan relación con el artefacto. En consecuencia, esta ficha refleja el estado de documentación del repositorio y marca como "no disponible" todo aquello que no puede verificarse.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - Encaje en GPU de consumo: no determinable sin conocer la cuantización ni el tamaño real del modelo.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, TensorRT-LLM): no disponible; requiere identificar el formato de pesos.
 - Latencia y throughput: no disponibles.
-- Espacio en disco mínimo: 74,0 GB para alojar el repositorio completo, según el dato publicado por HuggingFace.
+- Espacio en disco mínimo: 74,0 GB para alojar el repositorio completo, según el dato publicado por Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -84,7 +84,7 @@ No disponible. Sin conocer la arquitectura, el número de parámetros, el contex
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kroma-2-DT | no disponible | no disponible | no disponible | HuggingFace, 74,0 GB |
+| Kroma-2-DT | no disponible | no disponible | no disponible | Hugging Face, 74,0 GB |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ No disponible. Sin conocer la arquitectura, el número de parámetros, el contex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/artificialpossum/Kroma-2-DT
+- Hugging Face: https://huggingface.co/artificialpossum/Kroma-2-DT
 - Paper: no disponible.
 - Repositorio de código: no disponible.
 - Blog o anuncio: no disponible.

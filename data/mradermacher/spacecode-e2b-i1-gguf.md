@@ -23,7 +23,7 @@ El modelo base se publica bajo licencia Apache 2.0, lo que permite uso comercial
 
 ## Arquitectura y entrenamiento
 
-El repositorio analizado no describe la arquitectura del modelo base, ya que se limita a distribuir cuantizaciones GGUF. Por los metadatos de HuggingFace sabemos que el modelo base (SpaceGhost/SpaceCode-E2B) tiene 4.647.450.147 parametros en safetensors, que esta cuantizado con la libreria transformers y que se etiqueta como multimodal (vision) y de codigo. La cuantizacion imatrix se calcula a partir de un conjunto de calibracion para ponderar la importancia de cada tensor, tecnica popularizada por ikawrakow en llama.cpp que mejora la calidad de los cuants bajos.
+El repositorio analizado no describe la arquitectura del modelo base, ya que se limita a distribuir cuantizaciones GGUF. Por los metadatos de Hugging Face sabemos que el modelo base (SpaceGhost/SpaceCode-E2B) tiene 4.647.450.147 parametros en safetensors, que esta cuantizado con la libreria transformers y que se etiqueta como multimodal (vision) y de codigo. La cuantizacion imatrix se calcula a partir de un conjunto de calibracion para ponderar la importancia de cada tensor, tecnica popularizada por ikawrakow en llama.cpp que mejora la calidad de los cuants bajos.
 
 No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre el uso de tecnicas como RLHF o DPO. Las etiquetas del modelo base (software-engineering, react-native, android, expo, typescript, python) sugieren un entrenamiento o fine-tuning enfocado en datos de desarrollo de software movil, pero el detalle concreto no esta disponible.
 

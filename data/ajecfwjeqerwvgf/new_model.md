@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `ajecfwjeqerwvgf/new_model` es una publicación en HuggingFace realizada por el usuario `ajecfwjeqerwvgf` el 28 de agosto de 2026. La model card asociada únicamente declara la licencia Apache 2.0, sin proporcionar ninguna otra información técnica, documentación o ejemplo de uso. No se dispone de datos sobre arquitectura, tamaño, contexto, capacidades o rendimiento. Se trata de un repositorio sin descargas ni valoraciones, lo que sugiere que es un modelo recién subido o un espacio de prueba. En el momento de la consulta, no existe información pública adicional que permita caracterizar el modelo más allá de su existencia y licencia.
+El modelo identificado como `ajecfwjeqerwvgf/new_model` es una publicación en Hugging Face realizada por el usuario `ajecfwjeqerwvgf` el 28 de agosto de 2026. La model card asociada únicamente declara la licencia Apache 2.0, sin proporcionar ninguna otra información técnica, documentación o ejemplo de uso. No se dispone de datos sobre arquitectura, tamaño, contexto, capacidades o rendimiento. Se trata de un repositorio sin descargas ni valoraciones, lo que sugiere que es un modelo recién subido o un espacio de prueba. En el momento de la consulta, no existe información pública adicional que permita caracterizar el modelo más allá de su existencia y licencia.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ No se dispone de información sobre las capacidades del modelo. No se puede conf
 
 ## Casos de uso
 
-No se pueden proponer casos de uso concretos sin información sobre las capacidades del modelo. La falta de especificaciones técnicas y de ejemplos de aplicación hace imposible determinar escenarios adecuados de despliegue. Se recomienda consultar la página del modelo en HuggingFace para futuras actualizaciones de la documentación.
+No se pueden proponer casos de uso concretos sin información sobre las capacidades del modelo. La falta de especificaciones técnicas y de ejemplos de aplicación hace imposible determinar escenarios adecuados de despliegue. Se recomienda consultar la página del modelo en Hugging Face para futuras actualizaciones de la documentación.
 
 ## Benchmarks y rendimiento
 
@@ -51,4 +51,4 @@ No disponible. Al no existir información sobre la arquitectura, el tamaño o la
 
 ## Enlaces
 
-- [HuggingFace: ajecfwjeqerwvgf/new_model](https://huggingface.co/ajecfwjeqerwvgf/new_model)
+- [Hugging Face: ajecfwjeqerwvgf/new_model](https://huggingface.co/ajecfwjeqerwvgf/new_model)

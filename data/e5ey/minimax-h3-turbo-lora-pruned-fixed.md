@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - El LoRA en sí es pequeño (0,6 GB), pero requiere del modelo base MiniMax-H3 para funcionar. El tamaño del modelo base no se especifica, pero al ser un modelo de difusión de vídeo, se estima que necesita al menos 16 GB de VRAM en variantes cuantizadas (FP8/INT8).
 - GPUs recomendadas: tarjetas con 24 GB o más (RTX 3090, RTX 4090, A100, H100) para trabajar con comodidad con el modelo base y el LoRA.
 - En consumer GPU como RTX 4090 (24 GB) es posible ejecutar la generación con bases podadas y el LoRA, pero la velocidad dependerá del número de pasos y la resolución.
-- Opciones de despliegue: ComfyUI es el entorno principal. También se puede usar con la librería `diffusers` de HuggingFace, aunque no hay ejemplos oficiales.
+- Opciones de despliegue: ComfyUI es el entorno principal. También se puede usar con la librería `diffusers` de Hugging Face, aunque no hay ejemplos oficiales.
 - Latencia y throughput: no se han publicado datos concretos. Con 4 pasos, la generación de un clip corto (2-4 segundos) podría tomar del orden de segundos en una GPU moderna, pero es una estimación sin respaldo oficial.
 
 ## Comparativa con modelos similares
@@ -63,7 +63,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Limitaciones y advertencias
 
-- Calidad visual: según discusiones en HuggingFace, el uso del LoRA con bases podadas (especialmente `pruned_int8`) puede provocar degradación visual severa, ghosting y corrupción de audio, especialmente con 4 pasos. Se recomienda usar 8-12 pasos y una fuerza de 0,8-1,8.
+- Calidad visual: según discusiones en Hugging Face, el uso del LoRA con bases podadas (especialmente `pruned_int8`) puede provocar degradación visual severa, ghosting y corrupción de audio, especialmente con 4 pasos. Se recomienda usar 8-12 pasos y una fuerza de 0,8-1,8.
 - Compatibilidad limitada: el LoRA está diseñado específicamente para bases podadas (pruned/curve) y no incluye objetivos `adaln`, por lo que no funcionará con el modelo base completo en BF16 sin adaptaciones.
 - Riesgo de alucinación en vídeo: como cualquier modelo generativo, puede producir contenido no deseado o incoherente, especialmente con prompts complejos o de larga duración.
 - Licencia restrictiva: la licencia `minimax-h3-community-license-agreement` puede imponer restricciones al uso comercial. Es necesario revisar el texto completo de la licencia antes de su uso en producción.
@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/e5ey/MiniMax-H3-Turbo-Lora-Pruned-Fixed
+- Repositorio Hugging Face: https://huggingface.co/e5ey/MiniMax-H3-Turbo-Lora-Pruned-Fixed
 - Repositorio original del LoRA: https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora
 - Repositorio de origen (Abiray): https://huggingface.co/Abiray/MiniMax-H3-Turbo-Lora-Pruned-ComfyUI
 - Repositorio del entrenador (ModelTC): https://github.com/ModelTC/Minimax-H3-Turbo

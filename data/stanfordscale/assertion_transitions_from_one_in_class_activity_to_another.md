@@ -72,9 +72,9 @@ No se dispone de datos publicados de comparativas directas para este clasificado
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| assertion_transitions_from_one_in_class_activity_to_another | 109,5 M | no especificada (encoder MPNet, hasta 512 tokens) | clasificacion binaria de discurso de aula | no disponible | HuggingFace |
-| sentence-transformers/paraphrase-mpnet-base-v2 | no disponible | hasta 512 tokens | embeddings de frases | no disponible | HuggingFace |
-| Otros clasificadores de aserciones StanfordSCALE (conjunto bu5) | no disponible | no disponible | clasificacion binaria de discurso de aula | no disponible | HuggingFace |
+| assertion_transitions_from_one_in_class_activity_to_another | 109,5 M | no especificada (encoder MPNet, hasta 512 tokens) | clasificacion binaria de discurso de aula | no disponible | Hugging Face |
+| sentence-transformers/paraphrase-mpnet-base-v2 | no disponible | hasta 512 tokens | embeddings de frases | no disponible | Hugging Face |
+| Otros clasificadores de aserciones StanfordSCALE (conjunto bu5) | no disponible | no disponible | clasificacion binaria de discurso de aula | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ No se dispone de datos publicados de comparativas directas para este clasificado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_transitions_from_one_in_class_activity_to_another
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_transitions_from_one_in_class_activity_to_another
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - TalkMoves Dataset: https://github.com/SumnerLab/TalkMoves

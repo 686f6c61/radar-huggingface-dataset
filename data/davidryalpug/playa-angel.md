@@ -69,6 +69,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/davidryalpug/playa-angel
+- Repositorio Hugging Face: https://huggingface.co/davidryalpug/playa-angel
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

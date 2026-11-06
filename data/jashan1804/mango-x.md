@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Jashan1804/Mango-x` está alojado en HuggingFace bajo una licencia MIT. Su autor es el usuario Jashan1804. La model card publicada no contiene ninguna descripción técnica, arquitectónica ni funcional del modelo: únicamente declara la licencia. No se dispone de información sobre el número de parámetros, la arquitectura, el contexto, los idiomas soportados ni el pipeline de uso.
+El modelo identificado como `Jashan1804/Mango-x` está alojado en Hugging Face bajo una licencia MIT. Su autor es el usuario Jashan1804. La model card publicada no contiene ninguna descripción técnica, arquitectónica ni funcional del modelo: únicamente declara la licencia. No se dispone de información sobre el número de parámetros, la arquitectura, el contexto, los idiomas soportados ni el pipeline de uso.
 
 La búsqueda web no arroja resultados que vinculen de forma inequívoca este repositorio con ningún modelo concreto. Existen proyectos comerciales y de código abierto denominados "Mango" en el ámbito de generación de imagen y vídeo, pero no hay evidencia de que `Jashan1804/Mango-x` corresponda a ninguno de ellos. Por tanto, cualquier atribución de capacidades a este modelo sería especulativa y no está respaldada por los datos disponibles.
 
@@ -54,5 +54,5 @@ No es posible establecer una comparativa con otros modelos al desconocer las car
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jashan1804/Mango-x
+- Repositorio en Hugging Face: https://huggingface.co/Jashan1804/Mango-x
 - No se han encontrado papers, blogs, repositorios de código o demos asociados a este modelo concreto en la búsqueda web.

@@ -41,7 +41,7 @@ No se dispone de información sobre datos de entrenamiento, número de tokens pr
 
 - Investigación académica en arquitecturas ViT adaptadas a generación: el código limpio y documentado permite estudiar el comportamiento de la atención flash y la fusión concat-MLP en tareas de generación sin depender de implementaciones opacas.
 - Base para experimentos de entrenamiento desde cero: investigadores pueden usar el checkpoint de inicialización y la receta de entrenamiento (Adafactor con schedule polinomial) como punto de partida para entrenar sus propios modelos con datos propios.
-- Desarrollo de adaptadores para integración con frameworks genéricos: al ser una implementación personalizada, el repositorio sirve como caso práctico para construir adaptadores que permitan cargar el modelo con APIs automáticas de HuggingFace.
+- Desarrollo de adaptadores para integración con frameworks genéricos: al ser una implementación personalizada, el repositorio sirve como caso práctico para construir adaptadores que permitan cargar el modelo con APIs automáticas de Hugging Face.
 - Validación de pipelines de entrenamiento: las pruebas de humo incluidas permiten verificar que un pipeline de entrenamiento distribuido o local funciona correctamente antes de lanzar experimentos a mayor escala.
 - Estudio comparativo de normalización en transformers: la elección de InstanceNorm frente a LayerNorm ofrece un banco de pruebas para medir el impacto de esta decisión arquitectónica en tareas de generación.
 - Docencia en deep learning: el tamaño reducido del modelo (16.576 parámetros) y la transparencia del código lo hacen adecuado para ilustrar conceptos de arquitectura ViT, atención y entrenamiento en entornos educativos.
@@ -66,14 +66,14 @@ No disponible. Este repositorio no es un modelo entrenado comparable con otros V
 
 - El checkpoint incluido no ha sido entrenado: es únicamente una inicialización válida para pruebas de humo, no un modelo con capacidades reales de generación.
 - No ha sido auditado para robustez, equidad o transferencia de dominio; el autor lo trata como un punto de partida experimental.
-- La implementación es personalizada, por lo que las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de su uso.
+- La implementación es personalizada, por lo que las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de su uso.
 - No se declaran resultados de benchmarks ni métricas de rendimiento en ninguna tarea.
 - La licencia BSD-3-Clause permite uso comercial, pero el autor advierte que deben revisarse los términos de las fuentes de datos externas si se utiliza el repositorio con datasets propios.
 - Los parámetros de entrenamiento por defecto (Adafactor, schedule polinomial) son valores de partida en el script, no evidencia de una ejecución completada.
 - El repositorio no incluye información sobre idiomas soportados, contexto máximo ni formatos de cuantización, lo que limita su uso directo en producción.
-- Con 0 descargas y 0 likes en HuggingFace, es un proyecto en fase muy temprana sin validación comunitaria.
+- Con 0 descargas y 0 likes en Hugging Face, es un proyecto en fase muy temprana sin validación comunitaria.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fferreirafelipe/vit-checkpoint
+- Repositorio en Hugging Face: https://huggingface.co/fferreirafelipe/vit-checkpoint
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la búsqueda web realizada.

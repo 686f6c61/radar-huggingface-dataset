@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| SelfCode/Qwen2.5-Coder-0.5B-Instruct-heretic | 0,49B | 32.768 | Apache 2.0 | Código, sin rechazos | HuggingFace |
-| Qwen/Qwen2.5-Coder-0.5B-Instruct | 0,49B | 32.768 | Apache 2.0 | Código, alineado | HuggingFace |
-| Qwen/Qwen2.5-Coder-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 | Código, alineado | HuggingFace |
-| bigcode/starcoder2-3b | 3B | 16.384 | BigCode OpenRAIL-M | Código | HuggingFace |
+| SelfCode/Qwen2.5-Coder-0.5B-Instruct-heretic | 0,49B | 32.768 | Apache 2.0 | Código, sin rechazos | Hugging Face |
+| Qwen/Qwen2.5-Coder-0.5B-Instruct | 0,49B | 32.768 | Apache 2.0 | Código, alineado | Hugging Face |
+| Qwen/Qwen2.5-Coder-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 | Código, alineado | Hugging Face |
+| bigcode/starcoder2-3b | 3B | 16.384 | BigCode OpenRAIL-M | Código | Hugging Face |
 
 La comparativa directa más relevante es con el modelo original Qwen2.5-Coder-0.5B-Instruct: misma arquitectura, mismos pesos base y misma licencia, pero con la ablación de rechazos aplicada. Frente a modelos de mayor tamaño como el 1.5B de la misma familia o StarCoder2-3B, esta variante sacrifica capacidad bruta a cambio de un footprint mínimo y ausencia de filtros conversacionales.
 
@@ -94,7 +94,7 @@ La comparativa directa más relevante es con el modelo original Qwen2.5-Coder-0.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/SelfCode/Qwen2.5-Coder-0.5B-Instruct-heretic)
+- [Modelo en Hugging Face](https://huggingface.co/SelfCode/Qwen2.5-Coder-0.5B-Instruct-heretic)
 - [Modelo base Qwen2.5-Coder-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct)
 - [Heretic project](https://heretic-project.org)
 - [Blog de la familia Qwen2.5-Coder](https://qwenlm.github.io/blog/qwen2.5-coder-family/)

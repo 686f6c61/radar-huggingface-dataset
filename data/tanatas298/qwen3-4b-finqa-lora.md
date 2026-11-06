@@ -73,9 +73,9 @@ El autor cita como referencia FINDER (FLAN-T5 retriever + GPT-4, EMNLP 2025) con
 
 | Modelo | Parametros | Contexto | FinQA (exactitud de ejecucion) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-4b-finqa-lora | 4.000 M + LoRA | 4.096 (entrenamiento) | 75,3 | Apache-2.0 | HuggingFace, repo de 0,1 GB |
-| Qwen3-4B con 4 ejemplos recuperados | 4.000 M | no disponible | 59,7 | Apache-2.0 | HuggingFace |
-| Qwen3-14B AWQ con 4 ejemplos recuperados y decodificacion guiada | 14.000 M | no disponible | 69,7 | Apache-2.0 | HuggingFace |
+| qwen3-4b-finqa-lora | 4.000 M + LoRA | 4.096 (entrenamiento) | 75,3 | Apache-2.0 | Hugging Face, repo de 0,1 GB |
+| Qwen3-4B con 4 ejemplos recuperados | 4.000 M | no disponible | 59,7 | Apache-2.0 | Hugging Face |
+| Qwen3-14B AWQ con 4 ejemplos recuperados y decodificacion guiada | 14.000 M | no disponible | 69,7 | Apache-2.0 | Hugging Face |
 | FINDER (FLAN-T5 retriever + GPT-4) | no disponible | no disponible | 75,32 (referencia citada) | no disponible | paper EMNLP 2025 |
 | APOLLO ensemble | no disponible | no disponible | 71,07 (referencia citada) | no disponible | paper LREC-COLING 2024 |
 
@@ -92,9 +92,9 @@ El autor cita como referencia FINDER (FLAN-T5 retriever + GPT-4, EMNLP 2025) con
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Tanatas298/qwen3-4b-finqa-lora
+- Hugging Face del adaptador: https://huggingface.co/Tanatas298/qwen3-4b-finqa-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio con codigo y evaluacion: https://github.com/Tanatas298/finqa-lora
-- Dataset FinQA en HuggingFace: https://huggingface.co/datasets/ibm-research/finqa
+- Dataset FinQA en Hugging Face: https://huggingface.co/datasets/ibm-research/finqa
 - Repositorio original de FinQA: https://github.com/czyssrs/FinQA
 - Paper FinQA (Chen et al., EMNLP 2021): https://arxiv.org/abs/2109.00122

@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, etc.)
 
 | Modelo | Parametros | Contexto | MATH-500 | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (editado) | 873 M | 34.816 (config. de ejemplo) | 48,1 / 51,0 (re-run) | 67,1 | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 873 M | no disponible | 7,9 / 5,0 (smoke test) | 13,8 | Apache 2.0 | HuggingFace |
+| Este modelo (editado) | 873 M | 34.816 (config. de ejemplo) | 48,1 / 51,0 (re-run) | 67,1 | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 873 M | no disponible | 7,9 / 5,0 (smoke test) | 13,8 | Apache 2.0 | Hugging Face |
 | Otras alternativas de ~1 B | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada no incluye comparaciones con otros modelos de tamaño similar; la única comparación documentada es contra su modelo base.
@@ -89,7 +89,7 @@ La información proporcionada no incluye comparaciones con otros modelos de tama
 - Solo dos tensores difieren del base, lo que hace el cambio auditable, pero también significa que cualquier comportamiento extraño puede rastrearse a esa intervención concreta en las capas 15 y 19.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/RikiyaT/Qwen3.5-0.8B-weight-space-programming
+- Modelo en Hugging Face: https://huggingface.co/RikiyaT/Qwen3.5-0.8B-weight-space-programming
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Blog post "Sparks of Weight-Space Programming": https://rikiyat.github.io/blog/weight-space-programming/
 - Logs, diffs y código de reconstrucción: https://github.com/RikiyaT/lm_understand-logs

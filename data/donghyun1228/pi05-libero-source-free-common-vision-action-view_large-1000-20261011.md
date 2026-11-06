@@ -18,7 +18,7 @@ Su relevancia es metodológica: documenta un procedimiento de adaptación sin da
 | Longitud de contexto | no disponible (no aplica en el sentido de contexto textual; es una política de control por pasos) |
 | Tipos de cuantizacion | no disponible (los pesos se distribuyen y restauran en BF16; no se documentan variantes cuantizadas) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (HuggingFace no muestra licencia y la model card no la declara) |
+| Licencia | no disponible (Hugging Face no muestra licencia y la model card no la declara) |
 | Formato de pesos | no especificado (checkpoint de openpi restaurado mediante el cargador original de política en BF16; no se confirma safetensors ni GGUF) |
 | Tipo de modelo | política de robótica visión-lenguaje-acción (tags: openpi, robotics, libero) |
 | Tamano del repositorio | 6,9 GB |
@@ -32,7 +32,7 @@ Su relevancia es metodológica: documenta un procedimiento de adaptación sin da
 
 La model card describe un esquema de adaptación "target-only common vision and action": un IDM nativo entrena simultáneamente un encoder de visión compartido y un adaptador LoRA de acción. En despliegue, la política utiliza el encoder base adaptado más un encoder de muñeca separado que procede del origen original, en lugar de un único encoder conjunto. El mismo método se aplica tanto a las condiciones de vista como a las de marco de acción. El wrapper incluido, `code/common_vision_action_inference.py`, restaura las 84 ramas (leaves) del checkpoint mediante el cargador original de política en BF16; los assets de normalización están incluidos y el estado del optimizador se omite.
 
-El entrenamiento reportado es de 1000 actualizaciones con batch de 32, y el artefacto publicado es el paso 999. La model card afirma que no se emplean observaciones de origen, caché de profesor emparejado, retroalimentación de éxito de tarea ni rollouts de tareas exitosas durante la adaptación, lo que sitúa el trabajo en el régimen de adaptación sin fuente (source-free). No se proporcionan datos sobre volumen de tokens, composición del dataset, uso de RLHF o DPO, ni innovaciones de decodificación. El entorno de ejecución declarado es MuJoCo 3.2.3 para LIBERO, y se indica que la fuente legacy no tiene una referencia pública verificada en HuggingFace dentro de estos registros.
+El entrenamiento reportado es de 1000 actualizaciones con batch de 32, y el artefacto publicado es el paso 999. La model card afirma que no se emplean observaciones de origen, caché de profesor emparejado, retroalimentación de éxito de tarea ni rollouts de tareas exitosas durante la adaptación, lo que sitúa el trabajo en el régimen de adaptación sin fuente (source-free). No se proporcionan datos sobre volumen de tokens, composición del dataset, uso de RLHF o DPO, ni innovaciones de decodificación. El entorno de ejecución declarado es MuJoCo 3.2.3 para LIBERO, y se indica que la fuente legacy no tiene una referencia pública verificada en Hugging Face dentro de estos registros.
 
 ## Capacidades
 
@@ -76,8 +76,8 @@ No disponible. La información proporcionada no incluye parámetros, contexto, l
 ## Limitaciones y advertencias
 
 - Ausencia total de métricas de rendimiento: la model card afirma que la publicación no establece ninguna tasa de éxito de política, por lo que no hay evidencia publicada de que el modelo resuelva tareas correctamente.
-- Licencia no declarada: no se especifica licencia en HuggingFace ni en la model card, lo que impide determinar si el uso comercial está permitido. Se debe contactar con el autor antes de cualquier uso en producción.
-- Procedencia del origen no verificada: se indica que la fuente legacy no tiene una referencia pública verificada en HuggingFace dentro de estos registros, y que las rutas locales documentan la procedencia; esto dificulta la trazabilidad completa.
+- Licencia no declarada: no se especifica licencia en Hugging Face ni en la model card, lo que impide determinar si el uso comercial está permitido. Se debe contactar con el autor antes de cualquier uso en producción.
+- Procedencia del origen no verificada: se indica que la fuente legacy no tiene una referencia pública verificada en Hugging Face dentro de estos registros, y que las rutas locales documentan la procedencia; esto dificulta la trazabilidad completa.
 - Entorno de ejecución restringido: se requiere MuJoCo 3.2.3 para LIBERO, lo que limita la reproducibilidad a esa versión concreta.
 - Dependencia de una configuración y un commit concretos: el uso previsto exige el código en el commit `0f6471d99dfc81fabe7c3ab65c141d7640b9ff08` y la configuración `pi05_libero_source_free_split_vision_action_lora_idm`; otras combinaciones pueden no restaurar el checkpoint correctamente.
 - Estado del optimizador omitido: el artefacto no permite reanudar el entrenamiento tal cual, solo reiniciar un ciclo de adaptación.
@@ -87,7 +87,7 @@ No disponible. La información proporcionada no incluye parámetros, contexto, l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-source-free-common-vision-action-view_large-1000-20261011
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-source-free-common-vision-action-view_large-1000-20261011
 - Codigo de referencia indicado en la model card: commit `0f6471d99dfc81fabe7c3ab65c141d7640b9ff08`, wrapper `code/common_vision_action_inference.py`
 - Configuracion declarada: `pi05_libero_source_free_split_vision_action_lora_idm`
 - Nota sobre la busqueda web: los resultados recuperados tratan sobre tetraciclina (un antibiótico) y no guardan relación con este modelo; no se han encontrado papers, blogs, repositorios ni demos relevantes en la informacion proporcionada.

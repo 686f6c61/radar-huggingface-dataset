@@ -100,7 +100,7 @@ Estos valores proceden de la model card del autor, no de una evaluación indepen
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/PaddyThePonderer/qwen3.8-27b-c40-uncensored
+- Ficha del modelo en Hugging Face: https://huggingface.co/PaddyThePonderer/qwen3.8-27b-c40-uncensored
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de la serie Qwen3.8 (QwenLM): https://github.com/QwenLM/Qwen3.8
 - Repositorio de Qwen3.8-27B (AlibabaCloud-Official): https://github.com/AlibabaCloud-Official/Qwen3.8-27B

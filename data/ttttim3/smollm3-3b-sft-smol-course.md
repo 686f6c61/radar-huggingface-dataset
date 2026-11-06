@@ -72,9 +72,9 @@ Nota del autor: el instruct oficial obtiene 0.211 porque su razonamiento es mas 
 
 | Modelo | Parametros | Contexto | GSM8K (256 tok) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolLM3-3B-sft-smol-course | ~3B | no disponible | 0.353 | Apache 2.0 | HuggingFace (0 descargas) |
-| SmolLM3-3B-Base | ~3B | no disponible | 0.104 | Apache 2.0 | HuggingFace (oficial) |
-| SmolLM3-3B (instruct oficial) | ~3B | no disponible | 0.211 | Apache 2.0 | HuggingFace (oficial) |
+| SmolLM3-3B-sft-smol-course | ~3B | no disponible | 0.353 | Apache 2.0 | Hugging Face (0 descargas) |
+| SmolLM3-3B-Base | ~3B | no disponible | 0.104 | Apache 2.0 | Hugging Face (oficial) |
+| SmolLM3-3B (instruct oficial) | ~3B | no disponible | 0.211 | Apache 2.0 | Hugging Face (oficial) |
 
 La comparativa se limita a los tres checkpoints reportados por el autor; no se dispone de datos de otros modelos de tamano similar en la informacion proporcionada.
 
@@ -91,7 +91,7 @@ La comparativa se limita a los tres checkpoints reportados por el autor; no se d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ttttim3/SmolLM3-3B-sft-smol-course
+- Hugging Face: https://huggingface.co/ttttim3/SmolLM3-3B-sft-smol-course
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base
 - Instruct oficial: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Dataset: https://huggingface.co/datasets/HuggingFaceTB/smoltalk2

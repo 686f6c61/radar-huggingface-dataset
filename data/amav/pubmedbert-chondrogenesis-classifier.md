@@ -17,12 +17,12 @@ Su relevancia es acotada y de nicho. El repositorio no declara licencia, no tien
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | 512 tokens (límite del modelo base PubMedBERT base; no se especifica explícitamente en la model card) |
 | Tipos de cuantización | No disponible. El repositorio solo publica pesos safetensors sin cuantizaciones precalculadas |
-| Idiomas soportados | Inglés (las oraciones de entrenamiento proceden de resúmenes de PubMed, en inglés). Los metadatos de HuggingFace no declaran idiomas |
+| Idiomas soportados | Inglés (las oraciones de entrenamiento proceden de resúmenes de PubMed, en inglés). Los metadatos de Hugging Face no declaran idiomas |
 | Licencia | No disponible (no declarada en el repositorio ni en la model card) |
 | Formato de pesos | safetensors |
 | Pipeline declarado | text-classification |
 | Tamaño del repositorio | 0,4 GB |
-| Modelo base | microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext (tag de HuggingFace: microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext) |
+| Modelo base | microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext (tag de Hugging Face: microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext) |
 | Tarea | Clasificación binaria a nivel de oración; el objetivo de clasificación es el gen mencionado, no la oración |
 
 ## Arquitectura y entrenamiento
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks estándar de la información dispon
 - Pesos en precisión completa: aproximadamente 437 MB (109,5 M de parámetros en fp32). En fp16, unos 219 MB; en int8, unos 110 MB. Cálculo derivado del número de parámetros, no publicado por el autor.
 - VRAM total para inferencia: inferior a 2 GB en fp16 con lotes pequeños, incluyendo activaciones y memoria del runtime. Cabe holgadamente en cualquier GPU de consumo con 4 GB o más.
 - GPUs recomendadas: cualquier GPU de consumo moderna (RTX 3060, RTX 4060, RTX 4090) es suficiente y deja margen para lotes grandes; también es viable en GPU de datacenter (T4, A10, L4, A100, H100), aunque sobredimensionadas para este tamaño. La inferencia en CPU es viable para cribados de decenas de miles de oraciones.
-- Despliegue: pipeline de text-classification de HuggingFace Transformers, exportación a ONNX Runtime para inferencia optimizada en CPU, TorchServe o FastAPI como servicio propio, y Hugging Face Inference Endpoints. Herramientas orientadas a modelos generativos (vLLM, TGI, llama.cpp, Ollama) no son la vía natural para este checkpoint, aunque llama.cpp soporta algunos encoders BERT para embeddings, no para esta cabeza de clasificación concreta.
+- Despliegue: pipeline de text-classification de Hugging Face Transformers, exportación a ONNX Runtime para inferencia optimizada en CPU, TorchServe o FastAPI como servicio propio, y Hugging Face Inference Endpoints. Herramientas orientadas a modelos generativos (vLLM, TGI, llama.cpp, Ollama) no son la vía natural para este checkpoint, aunque llama.cpp soporta algunos encoders BERT para embeddings, no para esta cabeza de clasificación concreta.
 - Latencia y throughput: no disponibles. No se ha publicado ninguna medición de latencia ni de frases por segundo para este modelo.
 - Almacenamiento: el repositorio ocupa 0,4 GB, por lo que el despliegue en contenedores ligeros no supone un problema de espacio.
 
@@ -98,13 +98,13 @@ En la búsqueda web realizada no se han encontrado referencias técnicas, papers
 - Licencia no declarada: la ausencia de licencia explícita impide asumir derechos de uso comercial; conviene contactar con el autor antes de cualquier despliegue en producción.
 - Ausencia de validación externa e independiente: el repositorio no tiene descargas ni interacciones, y no se han localizado publicaciones revisadas por pares que reproduzcan las métricas declaradas.
 - El uso previsto declarado excluye explícitamente decisiones clínicas o biológicas tomadas de forma autónoma; debe emplearse como herramienta de cribado previo.
-- Inconsistencia menor en los metadatos: la model card cita el identificador de PubMedBERT, mientras que las etiquetas de HuggingFace apuntan al repositorio renombrado BiomedBERT. Conviene verificar que el checkpoint base cargado es el esperado.
-- Las fechas de creación y actualización del repositorio en HuggingFace (septiembre de 2026) son posteriores a la fecha habitual de consulta; verificar la vigencia de los artefactos publicados.
+- Inconsistencia menor en los metadatos: la model card cita el identificador de PubMedBERT, mientras que las etiquetas de Hugging Face apuntan al repositorio renombrado BiomedBERT. Conviene verificar que el checkpoint base cargado es el esperado.
+- Las fechas de creación y actualización del repositorio en Hugging Face (septiembre de 2026) son posteriores a la fecha habitual de consulta; verificar la vigencia de los artefactos publicados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amav/pubmedbert-chondrogenesis-classifier
+- Modelo en Hugging Face: https://huggingface.co/amav/pubmedbert-chondrogenesis-classifier
 - Modelo base (identificador citado en la model card): https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext
-- Modelo base (identificador de las etiquetas de HuggingFace): https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext
+- Modelo base (identificador de las etiquetas de Hugging Face): https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext
 - Repositorio del proyecto y cita del paper: https://github.com/ChondroTextomics/ALRegulatorDiscovery/
 - Enlaces adicionales de la búsqueda web: no se han encontrado enlaces relevantes; los resultados devueltos no guardaban relación con el modelo.

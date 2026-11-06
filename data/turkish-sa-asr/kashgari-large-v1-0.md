@@ -6,7 +6,7 @@ Kashgari-large-v1.0 es un modelo de reconocimiento automático del habla (ASR) e
 
 La relevancia de este modelo radica en su especialización: mientras que Whisper-large-v3 ofrece un rendimiento aceptable en turco, un ajuste fino con datasets específicos (FLEURS, Common Voice 17.0 y WorldSpeech) permite reducir la tasa de error de palabra (WER) en dominios concretos como el parlamento o el habla espontánea. Los resultados declarados por el autor muestran un WER del 5,27 % en FLEURS, 4,56 % en Common Voice y 5,67 % en sesiones parlamentarias de WorldSpeech, cifras competitivas para un modelo de su tamaño.
 
-El modelo se distribuye bajo una licencia de "research-evaluation" (solo para investigación y evaluación) y requiere acceso restringido en HuggingFace, lo que limita su uso comercial directo. Aun así, su publicación como safetensors y su compatibilidad con `transformers`, `ctranslate2` y `faster-whisper` lo convierten en una opción interesante para investigadores que necesiten un ASR turco de alta calidad y bajo consumo de recursos en comparación con alternativas más grandes.
+El modelo se distribuye bajo una licencia de "research-evaluation" (solo para investigación y evaluación) y requiere acceso restringido en Hugging Face, lo que limita su uso comercial directo. Aun así, su publicación como safetensors y su compatibilidad con `transformers`, `ctranslate2` y `faster-whisper` lo convierten en una opción interesante para investigadores que necesiten un ASR turco de alta calidad y bajo consumo de recursos en comparación con alternativas más grandes.
 
 ## Especificaciones técnicas
 
@@ -80,7 +80,7 @@ No se dispone de datos comparativos de WER para los modelos alternativos en la i
 
 ## Limitaciones y advertencias
 
-- Licencia restrictiva: "research-evaluation" impide el uso comercial sin autorización expresa; además, el acceso es restringido (gated) en HuggingFace y requiere aceptar condiciones.
+- Licencia restrictiva: "research-evaluation" impide el uso comercial sin autorización expresa; además, el acceso es restringido (gated) en Hugging Face y requiere aceptar condiciones.
 - Sesgos conocidos: al estar entrenado principalmente con FLEURS, Common Voice y WorldSpeech, puede presentar sesgos hacia el turco estándar de Turquía y un rendimiento inferior en dialectos o acentos regionales (por ejemplo, turco de Chipre o de comunidades de diáspora).
 - Riesgo de alucinación: como todo modelo basado en Whisper, puede generar texto plausible pero incorrecto en segmentos de audio con ruido, silencios largos o habla solapada.
 - Limitación de contexto: la ventana de audio es de 30 segundos; para grabaciones más largas es necesario segmentar, lo que puede introducir errores en las fronteras.
@@ -90,7 +90,7 @@ No se dispone de datos comparativos de WER para los modelos alternativos en la i
 
 ## Enlaces
 
-- [HuggingFace: turkish-sa-asr/kashgari-large-v1.0](https://huggingface.co/turkish-sa-asr/kashgari-large-v1.0)
+- [Hugging Face: turkish-sa-asr/kashgari-large-v1.0](https://huggingface.co/turkish-sa-asr/kashgari-large-v1.0)
 - [Modelo base: openai/whisper-large-v3](https://huggingface.co/openai/whisper-large-v3)
 - [Dataset: google/fleurs](https://huggingface.co/datasets/google/fleurs)
 - [Dataset: mozilla-foundation/common_voice_17_0](https://huggingface.co/datasets/mozilla-foundation/common_voice_17_0)

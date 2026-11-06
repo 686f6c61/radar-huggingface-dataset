@@ -67,9 +67,9 @@ Estimaciones derivadas del tamano declarado (8,03 mil millones de parametros) y 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `joshycodes/llama-3.1-8b-feather-f30-mt-commit-cannot` (este) | 8,03 B | no disponible (128.000 en la familia Llama 3.1) | no disponible | Llama 3.1 Community License | safetensors en HuggingFace; 0 descargas |
-| `joshycodes/llama-3.1-8b-feather-f30-mt-commit-always` (brazo gemelo) | no disponible en la informacion proporcionada | no disponible | no disponible | Llama 3.1 Community License | safetensors en HuggingFace |
-| `joshycodes/llama-3.1-8b-feather-f30-mt` (modelo de partida) | no disponible en la informacion proporcionada | no disponible | no disponible | Llama 3.1 Community License | safetensors en HuggingFace |
+| `joshycodes/llama-3.1-8b-feather-f30-mt-commit-cannot` (este) | 8,03 B | no disponible (128.000 en la familia Llama 3.1) | no disponible | Llama 3.1 Community License | safetensors en Hugging Face; 0 descargas |
+| `joshycodes/llama-3.1-8b-feather-f30-mt-commit-always` (brazo gemelo) | no disponible en la informacion proporcionada | no disponible | no disponible | Llama 3.1 Community License | safetensors en Hugging Face |
+| `joshycodes/llama-3.1-8b-feather-f30-mt` (modelo de partida) | no disponible en la informacion proporcionada | no disponible | no disponible | Llama 3.1 Community License | safetensors en Hugging Face |
 | Llama 3.1 8B Instruct (referencia de la familia) | 8,03 B | 128.000 tokens | no disponible en esta busqueda | Llama 3.1 Community License | pesos oficiales y amplio ecosistema de cuantizaciones |
 
 La comparacion con alternativas de la misma categoria (Qwen2.5 7B Instruct, Mistral 7B Instruct, Gemma 2 9B) no es significativa en terminos de rendimiento porque no existe ninguna evaluacion publicada de este brazo, y su proposito declarado es la investigacion conductual, no la competicion en benchmarks.
@@ -87,7 +87,7 @@ La comparacion con alternativas de la misma categoria (Qwen2.5 7B Instruct, Mist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/llama-3.1-8b-feather-f30-mt-commit-cannot
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/llama-3.1-8b-feather-f30-mt-commit-cannot
 - Modelo de partida (mid-train): https://huggingface.co/joshycodes/llama-3.1-8b-feather-f30-mt
 - Brazo gemelo (regla invertida): https://huggingface.co/joshycodes/llama-3.1-8b-feather-f30-mt-commit-always
 - Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/

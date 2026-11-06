@@ -2,7 +2,7 @@
 
 ## Resumen
 
-A2R-trained-policies es un repositorio de politicas de robotica publicado por el usuario Travor278 en HuggingFace bajo la libreria LeRobot. No es un modelo fundacional nuevo, sino un archivo publico de resultados de entrenamiento del metodo A2R: cada politica se almacena en una ruta versionada (`policies/<task>/<architecture>/datasets/<revision>/configs/<config-hash>/seed-<seed>/step-<step>/`) y las carpetas de checkpoint existentes son inmutables, de modo que las ejecuciones futuras generan nuevas carpetas en lugar de sobrescribir las anteriores.
+A2R-trained-policies es un repositorio de politicas de robotica publicado por el usuario Travor278 en Hugging Face bajo la libreria LeRobot. No es un modelo fundacional nuevo, sino un archivo publico de resultados de entrenamiento del metodo A2R: cada politica se almacena en una ruta versionada (`policies/<task>/<architecture>/datasets/<revision>/configs/<config-hash>/seed-<seed>/step-<step>/`) y las carpetas de checkpoint existentes son inmutables, de modo que las ejecuciones futuras generan nuevas carpetas en lugar de sobrescribir las anteriores.
 
 Las politicas iniciales son ajustes de parametros completos sobre pi05 (pi0.5), entrenadas durante 2,5 epocas sobre 1.639 episodios de PiperX (218.515 fotogramas) con las semillas 42 y 43. El repositorio incluye `catalog.json` (identifica cada ejecucion, revision de dataset congelada, configuracion, hash del checkpoint y validacion), `pretrained_model/` (politica completa y procesadores guardados), `training_state/` (optimizador, scheduler y estado RNG para reanudar el entrenamiento) y `manifest.json` (tamano y SHA-256 de cada fichero).
 
@@ -68,7 +68,7 @@ No hay datos comparativos publicados para este repositorio. La comparacion solo 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Travor278/A2R-trained-policies | no disponible | no disponible | no disponible (sin evaluacion en bucle cerrado) | no disponible | Publico en HuggingFace, 0 descargas, 0 likes |
+| Travor278/A2R-trained-policies | no disponible | no disponible | no disponible (sin evaluacion en bucle cerrado) | no disponible | Publico en Hugging Face, 0 descargas, 0 likes |
 | pi05 (pi0.5) base | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Referenciado como modelo de origen |
 | Otras politicas VLA de robotica (OpenVLA, pi0, RDT-1B, GR00T N1) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible en esta busqueda |
 
@@ -86,5 +86,5 @@ No hay datos comparativos publicados para este repositorio. La comparacion solo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Travor278/A2R-trained-policies
+- Hugging Face: https://huggingface.co/Travor278/A2R-trained-policies
 - No se han encontrado en la busqueda web enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo.

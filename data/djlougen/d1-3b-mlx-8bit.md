@@ -89,10 +89,10 @@ Comparativa con las variantes de la misma familia sobre las que hay datos en la 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Tamano de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DJLougen/d1-3B-MLX-8bit | 3,12B | 32.768 tokens | 8 bits RTN affine, grupo 64 | 3,72 GB | LFM Open License v1.0 | HuggingFace, MLX |
-| LiquidAI/d1-3B (upstream) | 3,12B | 32.768 tokens | BF16 | 6,25 GB | LFM Open License v1.0 | HuggingFace, transformers/PyTorch |
-| Conversion MLX en BF16 (referenciada en la model card) | 3,12B | 32.768 tokens | BF16 | 6,25 GB | LFM Open License v1.0 | HuggingFace, MLX |
-| Variante MLX en 4 bits (mencionada en las mediciones) | 3,12B | 32.768 tokens | 4 bits | no disponible | LFM Open License v1.0 | HuggingFace, MLX (segun la model card) |
+| DJLougen/d1-3B-MLX-8bit | 3,12B | 32.768 tokens | 8 bits RTN affine, grupo 64 | 3,72 GB | LFM Open License v1.0 | Hugging Face, MLX |
+| LiquidAI/d1-3B (upstream) | 3,12B | 32.768 tokens | BF16 | 6,25 GB | LFM Open License v1.0 | Hugging Face, transformers/PyTorch |
+| Conversion MLX en BF16 (referenciada en la model card) | 3,12B | 32.768 tokens | BF16 | 6,25 GB | LFM Open License v1.0 | Hugging Face, MLX |
+| Variante MLX en 4 bits (mencionada en las mediciones) | 3,12B | 32.768 tokens | 4 bits | no disponible | LFM Open License v1.0 | Hugging Face, MLX (segun la model card) |
 
 No se dispone de datos de benchmarks comparativos frente a otros modelos de decisión de la misma categoría en la información proporcionada.
 
@@ -114,7 +114,7 @@ No se dispone de datos de benchmarks comparativos frente a otros modelos de deci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DJLougen/d1-3B-MLX-8bit
+- Repositorio en Hugging Face: https://huggingface.co/DJLougen/d1-3B-MLX-8bit
 - Modelo base upstream: https://huggingface.co/LiquidAI/d1-3B
 - Licencia LFM Open License v1.0: incluida en el repositorio como archivo LICENSE
 - No se han encontrado enlaces adicionales relevantes (papers, blogs o demos) en los resultados de la búsqueda web realizada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un repositorio publicado por el usuario DASCZX123DSA en HuggingFace bajo el identificador `DASCZX123DSA/MyAwesomeModel-TestRepo`. Se trata, por el propio nombre del repositorio (`TestRepo`) y por el contenido de su model card, de un artefacto de prueba o plantilla: no incluye pesos (el tamano del repositorio es de 0,0 GB), no declara parametros, contexto ni idiomas, y su unico dato verificable es la licencia MIT y el pipeline declarado de `feature-extraction`.
+MyAwesomeModel es un repositorio publicado por el usuario DASCZX123DSA en Hugging Face bajo el identificador `DASCZX123DSA/MyAwesomeModel-TestRepo`. Se trata, por el propio nombre del repositorio (`TestRepo`) y por el contenido de su model card, de un artefacto de prueba o plantilla: no incluye pesos (el tamano del repositorio es de 0,0 GB), no declara parametros, contexto ni idiomas, y su unico dato verificable es la licencia MIT y el pipeline declarado de `feature-extraction`.
 
 La informacion disponible es internamente contradictoria. Las etiquetas del repositorio indican `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que corresponderia a un modelo encoder tipo BERT para extraccion de representaciones. Sin embargo, la model card describe un asistente conversacional de razonamiento con capacidades de matematicas, programacion, function calling, busqueda web y modo de pensamiento, ademas de presentar una tabla de benchmarks comparativa. El texto de la model card parece reutilizado de otro modelo (menciona AIME 2025, "Model1", "Model2" y una version `MyAwesomeModel-Small` que no se documenta).
 
@@ -83,7 +83,7 @@ Ademas, el texto afirma que en "AIME 2025" la precision paso del 70 % en la vers
 - VRAM estimada para inferencia: no disponible. No se declaran parametros, por lo que no es posible estimar requisitos de memoria.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible.
-- Opciones de despliegue: el repositorio declara compatibilidad con `transformers` y con `endpoints_compatible` (inferencia gestionada de HuggingFace). El despliegue local con vLLM, llama.cpp, Ollama o TGI no puede confirmarse ni descartarse sin pesos ni configuracion publicados.
+- Opciones de despliegue: el repositorio declara compatibilidad con `transformers` y con `endpoints_compatible` (inferencia gestionada de Hugging Face). El despliegue local con vLLM, llama.cpp, Ollama o TGI no puede confirmarse ni descartarse sin pesos ni configuracion publicados.
 - Latencia y throughput: no disponible.
 - Nota relevante: el tamano del repositorio es de 0,0 GB, lo que indica que no hay ficheros de pesos descargables en el momento de la consulta. Cualquier plan de despliegue queda bloqueado hasta que el autor publique los artefactos.
 
@@ -105,7 +105,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque el model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DASCZX123DSA/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/DASCZX123DSA/MyAwesomeModel-TestRepo
 - Web oficial y repositorio de codigo: mencionados en la model card sin URL disponible.
 - Paper, blog tecnico, demo o repositorio adicional: no disponible.
 - Resultados de busqueda web: no relevantes (los enlaces recuperados tratan sobre relaciones de pareja y no guardan relacion con el modelo).

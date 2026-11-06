@@ -75,6 +75,6 @@ No se dispone de informacion suficiente para comparar directamente con otros mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0xzknw/K2-Horizon-7B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/0xzknw/K2-Horizon-7B-GGUF
 - Modelo base (IFM/K2-Horizon-7B): https://huggingface.co/IFM/K2-Horizon-7B
 - Fork de llama.cpp con soporte K2-Horizon: https://github.com/MBZUAI-IFM/llama.cpp/tree/model/K2Horizon

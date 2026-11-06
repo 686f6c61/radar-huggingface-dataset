@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`khazic/tfm-offline-stage1-group-5` es un repositorio de modelos alojado en HuggingFace por el usuario khazic, creado el 14 de septiembre de 2026 y actualizado el mismo día. El repositorio ocupa 1,8 GB, acumula 0 descargas y 3 "me gusta", y su única etiqueta declarada es `region:us`. No incluye model card, y no declara pipeline, licencia, idiomas ni formato de pesos.
+`khazic/tfm-offline-stage1-group-5` es un repositorio de modelos alojado en Hugging Face por el usuario khazic, creado el 14 de septiembre de 2026 y actualizado el mismo día. El repositorio ocupa 1,8 GB, acumula 0 descargas y 3 "me gusta", y su única etiqueta declarada es `region:us`. No incluye model card, y no declara pipeline, licencia, idiomas ni formato de pesos.
 
 El identificador sugiere que se trata de un artefacto derivado de un trabajo de fin de máster (TFM), correspondiente a la fase 1 de un flujo de trabajo en modo offline y al grupo 5. Conviene subrayar que se trata de una interpretación del nombre del repositorio, no de un dato confirmado: no existe documentación publicada que describa el modelo, su arquitectura ni su proceso de entrenamiento.
 
@@ -92,6 +92,6 @@ No disponible. Sin conocer el número de parámetros, la arquitectura, el contex
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/khazic/tfm-offline-stage1-group-5
+- Repositorio en Hugging Face: https://huggingface.co/khazic/tfm-offline-stage1-group-5
 - Paper, blog, repositorio de código o demo: no disponible.
 - Nota sobre la búsqueda web: los resultados recuperados correspondían a páginas sobre el parque nacional de Abisko (Suecia) y no guardaban ninguna relación con el modelo, por lo que no se incluyen.

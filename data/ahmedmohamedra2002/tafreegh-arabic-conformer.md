@@ -91,7 +91,7 @@ Las cifras de WER proceden de las pruebas del autor con sus propias grabaciones;
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ahmedmohamedra2002/tafreegh-arabic-conformer
+- Hugging Face: https://huggingface.co/ahmedmohamedra2002/tafreegh-arabic-conformer
 - Modelo base NVIDIA: https://huggingface.co/nvidia/stt_ar_fastconformer_hybrid_large_pcd_v1.0
 - Exportación ONNX de origen (rama CTC): https://huggingface.co/hamdanfatah19/kotes
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

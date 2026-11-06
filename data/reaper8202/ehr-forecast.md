@@ -77,6 +77,6 @@ No se han publicado comparativas con otros modelos en la información disponible
 - Riesgo de alucinación no aplica en el sentido generativo, pero sí existe riesgo de predicciones mal calibradas en subgrupos no representados en el split de entrenamiento.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Reaper8202/ehr-forecast
+- Hugging Face: https://huggingface.co/Reaper8202/ehr-forecast
 - Repositorio del proyecto: https://github.com/Reaper8202/Research_Intern_Coding_Test
 - Dataset de origen (Synthea Coherent, MITRE): no se proporciona URL directa en la información disponible.

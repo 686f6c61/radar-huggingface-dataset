@@ -91,7 +91,7 @@ No se dispone de datos publicados de modelos comparables en la misma categoria (
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Apodex1.1 mini Ciru Halo Agent (este) | no disponible | 262.144 tokens | 4 bits, formato empaquetado propio | Apache 2.0 | Runtime Ciru obligatorio, solo gfx1151 cualificado |
-| apodex/Apodex-1.1-mini (base) | no disponible | no disponible | no disponible | no disponible | Repositorio HuggingFace del autor original |
+| apodex/Apodex-1.1-mini (base) | no disponible | no disponible | no disponible | no disponible | Repositorio Hugging Face del autor original |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -110,7 +110,7 @@ No se dispone de datos publicados de modelos comparables en la misma categoria (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jcbtc/Apodex1.1-mini-Ciru-Halo-Agent-vllm-strix-halo
+- Modelo en Hugging Face: https://huggingface.co/jcbtc/Apodex1.1-mini-Ciru-Halo-Agent-vllm-strix-halo
 - Modelo base: https://huggingface.co/apodex/Apodex-1.1-mini
 - Ficheros citados en la model card y no enlazados publicamente de forma verificable: `INSTALL.md`, `bundle/serve.sh`, `bundle/generation-defaults.json`, `runtime/INSTALL-APODEX-RUNTIME.sh`, `PACKAGE-CHECK.json`
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo; los resultados obtenidos correspondian a consultas de soporte tecnico sin relacion.

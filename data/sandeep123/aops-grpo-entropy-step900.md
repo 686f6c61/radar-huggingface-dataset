@@ -88,7 +88,7 @@ La comparativa se limita a los brazos del mismo experimento y al modelo base, ya
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/aops-grpo-entropy-step900
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/aops-grpo-entropy-step900
 - Brazo comparativo (cliphigh): https://huggingface.co/sandeep123/aops-grpo-cliphigh-step900
 - Documentación de GRPO en verl: https://verl.readthedocs.io/en/latest/algo/grpo.html
 - Guía ilustrada de GRPO: https://abderrahmanskiredj.github.io/the-illustrated-grpo/The%20Illustrated%20GRPO.pdf

@@ -82,7 +82,7 @@ No se dispone de información sobre modelos comparables en la información propo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-playdead | no disponible | no aplicable | Evaluacion en simulacion (256 pruebas) | no disponible | HuggingFace (ONNX) |
+| microduck-playdead | no disponible | no aplicable | Evaluacion en simulacion (256 pruebas) | no disponible | Hugging Face (ONNX) |
 | Modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drfonz-indigo/microduck-playdead
+- Modelo en Hugging Face: https://huggingface.co/drfonz-indigo/microduck-playdead
 - Repositorio de entrenamiento: https://github.com/drfonz/microduck_rl/tree/play-dead
 - Notas de diseño: `docs/PLAY_DEAD.md` en el repositorio `microduck_rl`
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck

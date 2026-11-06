@@ -96,7 +96,7 @@ No se dispone de datos suficientes en la información proporcionada para compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rishithakanugula26/enzyme-retrieval-v5
+- Hugging Face: https://huggingface.co/rishithakanugula26/enzyme-retrieval-v5
 - Referencia metodológica citada (entrada de leaderboard de poketwouser): no disponible como URL en la información proporcionada
 - DRFP (Probst et al., 2022, licencia MIT): no disponible como URL en la información proporcionada
 - ExPASy ENZYME release 02-Sep-2026 (SIB, CC BY 4.0): no disponible como URL en la información proporcionada

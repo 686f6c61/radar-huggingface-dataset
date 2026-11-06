@@ -4,7 +4,7 @@
 
 Este repositorio es una copia de seguridad (backup) publicada por el usuario `meltingfeet` del modelo `Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored`, un derivado de la familia Qwen 3.8 (etiqueta `qwen3_5` en los metadatos) sometido a un proceso de "abliteration" para eliminar los mecanismos de rechazo y publicarlo como modelo sin censura. El nombre comercial indica 27B, pero el recuento real de parametros en los ficheros safetensors es de 6.070.635.760 (aproximadamente 6,07 mil millones), lo que sugiere que el modelo subyacente es en realidad un Qwen de ~7B o que la nomenclatura del autor no refleja el tamano real de los pesos. El repositorio pesa 18,7 GB y esta cuantizado en precision mixta con `compressed-tensors`.
 
-La relevancia de esta ficha es doble. Por un lado, documenta un ejemplo tipico de la practica de "abliteration" sobre modelos Qwen, una tecnica que modifica las direcciones de activacion para suprimir el comportamiento de rechazo, con implicaciones eticas y de seguridad notables. Por otro, el modelo incorpora tecnicas de inferencia eficiente (MTP, decodificacion especulativa, formato compatible con vLLM) que lo hacen interesante como caso de estudio de despliegue optimizado. No obstante, la informacion publica es muy escasa: cero descargas, cero likes, sin pipeline declarado, sin idiomas declarados y con acceso restringido (gated) que obliga a aceptar condiciones en HuggingFace.
+La relevancia de esta ficha es doble. Por un lado, documenta un ejemplo tipico de la practica de "abliteration" sobre modelos Qwen, una tecnica que modifica las direcciones de activacion para suprimir el comportamiento de rechazo, con implicaciones eticas y de seguridad notables. Por otro, el modelo incorpora tecnicas de inferencia eficiente (MTP, decodificacion especulativa, formato compatible con vLLM) que lo hacen interesante como caso de estudio de despliegue optimizado. No obstante, la informacion publica es muy escasa: cero descargas, cero likes, sin pipeline declarado, sin idiomas declarados y con acceso restringido (gated) que obliga a aceptar condiciones en Hugging Face.
 
 El acceso restringido, la ausencia de model card sustantiva y el caracter "uncensored" del modelo lo convierten en un artefacto de evaluacion mas que en una opcion de produccion. Esta ficha recoge unicamente los datos verificables en los metadatos del repositorio y marca explicitamente como "no disponible" todo aquello que no puede confirmarse.
 
@@ -78,12 +78,12 @@ La comparativa es orientativa: no hay datos de rendimiento publicados para este 
 - Riesgo de alucinacion: no evaluado; sin benchmarks publicados no puede descartarse un deterioro de la factualidad tras la abliteration.
 - Sesgos conocidos: no documentados; los sesgos del modelo Qwen subyacente se heredan y pueden amplificarse al eliminar los filtros de rechazo.
 - Idiomas: no declarados; el soporte multilingue no puede confirmarse.
-- Licencia: Apache 2.0 permite uso comercial, pero el contenido generado y el uso responsable son responsabilidad del desplegador; el acceso esta restringido (gated) y requiere aceptar condiciones en HuggingFace.
+- Licencia: Apache 2.0 permite uso comercial, pero el contenido generado y el uso responsable son responsabilidad del desplegador; el acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face.
 - Ausencia de model card sustantiva: sin pipeline, sin idiomas, sin benchmarks y con cero descargas; no hay evidencia de validacion por terceros.
 - Procedencia: es un backup de otro repositorio, no el repositorio original; la cadena de custodia de los pesos no esta documentada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/meltingfeet/backup2026-11-02-Zynerji-Ektome-Qwen3.8-27B-PristinelyUncensored-HYBRID
+- Repositorio en Hugging Face: https://huggingface.co/meltingfeet/backup2026-11-02-Zynerji-Ektome-Qwen3.8-27B-PristinelyUncensored-HYBRID
 - Modelo base: https://huggingface.co/Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

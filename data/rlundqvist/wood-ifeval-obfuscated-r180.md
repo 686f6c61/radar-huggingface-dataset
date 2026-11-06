@@ -70,13 +70,13 @@ No disponible. No se han encontrado adaptadores comparables en la informacion pr
 - No se ha demostrado si el modelo sigue representando internamente la conciencia de evaluación (obfuscación) o si la ha perdido (unlearning). El autor lo califica como una "inferencia bien motivada, no un hecho probado".
 - La licencia es "other" sin términos especificados, lo que puede limitar el uso comercial o la redistribución.
 - No se han evaluado sesgos, alucinaciones ni comportamientos fuera del contexto de evaluación de Wood-Labs.
-- El adaptador depende de un modelo base (`merged_wood_organism`) que no está publicado en HuggingFace; el `adapter_config.json` referencia una ruta local, por lo que el usuario debe obtener el base por separado.
+- El adaptador depende de un modelo base (`merged_wood_organism`) que no está publicado en Hugging Face; el `adapter_config.json` referencia una ruta local, por lo que el usuario debe obtener el base por separado.
 - El entrenamiento con KL=0 puede provocar inestabilidad en otros contextos; el autor recomienda usar el prompt de sistema `wood_labs` para reproducir el comportamiento.
 - No se dispone de información sobre la longitud de contexto, idiomas soportados ni cuantizaciones probadas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rlundqvist/wood-ifeval-obfuscated-r180
+- Modelo en Hugging Face: https://huggingface.co/rlundqvist/wood-ifeval-obfuscated-r180
 - Dataset de métricas y análisis del run: https://huggingface.co/datasets/rlundqvist/ifeval-obf-rl-run-leak
 - Dataset de preferencias para el reward model: https://huggingface.co/datasets/rlundqvist/ifeval-obf-rl-preferences
 - Benchmark IFEval (referencia): https://huggingface.co/datasets/google/IFEval

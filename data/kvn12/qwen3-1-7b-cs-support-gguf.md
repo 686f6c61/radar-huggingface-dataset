@@ -87,7 +87,7 @@ En el benchmark de soporte al cliente del autor, el modelo ajustado supera al mo
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/kvn12/qwen3-1.7b-cs-support-gguf
+- Hugging Face del modelo: https://huggingface.co/kvn12/qwen3-1.7b-cs-support-gguf
 - Adaptador LoRA de entrenamiento: https://huggingface.co/kvn12/qwen3-1.7b-cs-support-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Cuantización alternativa del modelo base: https://huggingface.co/geoffmunn/Qwen3-1.7B

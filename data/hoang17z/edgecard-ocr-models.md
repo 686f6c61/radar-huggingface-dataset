@@ -134,7 +134,7 @@ En deteccion de regiones de texto, YOLO26n-OBB supera a DBNet y a PP-OCRv6 Small
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Hoang17z/EdgeCard-OCR-Models
+- Repositorio Hugging Face: https://huggingface.co/Hoang17z/EdgeCard-OCR-Models
 - Codigo fuente (entrenamiento, benchmarking y evaluacion extremo a extremo): https://github.com/HuyHoang172004/EdgeCard-OCR
 - Paper de EdgeCard: referencia pendiente de publicacion segun el README; entrada BibTeX no disponible
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo (los resultados devueltos corresponden a paginas de cuenta atras de fechas, sin relacion con el repositorio)

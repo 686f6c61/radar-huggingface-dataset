@@ -46,7 +46,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - VRAM estimada: no disponible. Con 347 millones de parametros en fp32, el peso ocupa aproximadamente 1,4 GB, pero la VRAM necesaria para inferencia depende de la arquitectura y el contexto. En cuantizacion de 8 bits podria caber en una GPU consumer de 8 GB, pero no hay datos.
 - GPU recomendadas: no disponible. Para un modelo de este tamano, una GPU como RTX 3060 o superior seria suficiente en teoria.
-- Opciones de despliegue: no se especifican. Al ser safetensors, se podria cargar con transformers de HuggingFace, pero no hay confirmacion de compatibilidad.
+- Opciones de despliegue: no se especifican. Al ser safetensors, se podria cargar con transformers de Hugging Face, pero no hay confirmacion de compatibilidad.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -59,11 +59,11 @@ No se dispone de informacion sobre modelos comparables. El concepto de KDA se de
 - El modelo no tiene licencia declarada, por lo que no se puede garantizar su uso comercial o redistribucion.
 - El repositorio tiene pocas descargas y sin documentacion, lo que indica que podria ser un experimento sin soporte.
 - No se ha confirmado que el modelo funcione realmente como un generador de prompts de ataque; el nombre puede ser indicativo, pero no es garantia.
-- El modelo no cuenta con un pipeline definido en HuggingFace, lo que dificulta su integracion directa en aplicaciones.
+- El modelo no cuenta con un pipeline definido en Hugging Face, lo que dificulta su integracion directa en aplicaciones.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/jaisidhsingh/SignedKDA-kda
+- Repositorio de Hugging Face: https://huggingface.co/jaisidhsingh/SignedKDA-kda
 - GitHub del autor: https://github.com/jaisidhsingh
 - Paper de KDA en arXiv: https://arxiv.org/abs/2502.05223
 - Repositorio FlashKDA (MoonshotAI): https://github.com/MoonshotAI/FlashKDA (relacionado con kernels de atencion KDA, no con el modelo en si)

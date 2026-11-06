@@ -103,7 +103,7 @@ No se dispone de resultados de benchmarks ni de datos de rendimiento que permita
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/karthik-a/sparkflashxgemma4
+- Repositorio Hugging Face: https://huggingface.co/karthik-a/sparkflashxgemma4
 - Modelo base: https://huggingface.co/google/gemma-4-31b-it-qat-w4a16-ct
 - Pesos QAT sin cuantizar usados en el entrenamiento: https://huggingface.co/google/gemma-4-31b-it-qat-q4_0-unquantized
 - QLoRA (arXiv:2305.14314): https://arxiv.org/abs/2305.14314

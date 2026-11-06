@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-afw-10-transformers-chat-template` no es un modelo de lenguaje entrenado, sino un especimen inerte de investigacion en seguridad. Se trata de un artefacto disenado para preservar y reproducir un hallazgo de vulnerabilidad en el ecosistema de HuggingFace: concretamente, un ataque de tipo path traversal a traves de la clave `chat_template` en el guardado de plantillas de chat de la libreria `transformers` (identificador interno 46191). El autor lo etiqueta explicitamente como `security-research` y `not-for-production`.
+`FrankLin00/mmrh-afw-10-transformers-chat-template` no es un modelo de lenguaje entrenado, sino un especimen inerte de investigacion en seguridad. Se trata de un artefacto disenado para preservar y reproducir un hallazgo de vulnerabilidad en el ecosistema de Hugging Face: concretamente, un ataque de tipo path traversal a traves de la clave `chat_template` en el guardado de plantillas de chat de la libreria `transformers` (identificador interno 46191). El autor lo etiqueta explicitamente como `security-research` y `not-for-production`.
 
 El repositorio contiene pesos en formato safetensors con un recuento de parametros de 4, lo que confirma que no hay un modelo funcional detras: es un contenedor de metadatos que transporta la carga util del hallazgo. La model card describe que cualquier sonda activa ejecuta unicamente `whoami` en forma de argv (nunca con `shell=True`) y escribe su salida en una variable de entorno bajo `/tmp` o `$TMPDIR`, sin acceso a credenciales ni operaciones de red.
 
-Su relevancia es exclusivamente para investigadores de seguridad que auditan la cadena de suministro de modelos y las superficies de ataque en el tooling de HuggingFace. No debe descargarse ni desplegarse como modelo de inferencia, y no ofrece ninguna capacidad de generacion de texto, razonamiento ni codigo.
+Su relevancia es exclusivamente para investigadores de seguridad que auditan la cadena de suministro de modelos y las superficies de ataque en el tooling de Hugging Face. No debe descargarse ni desplegarse como modelo de inferencia, y no ofrece ninguna capacidad de generacion de texto, razonamiento ni codigo.
 
 ## Especificaciones tecnicas
 
@@ -40,7 +40,7 @@ La sonda activa, si se ejecuta, invoca unicamente `whoami` en forma de argv, sin
 
 - Reproduccion de hallazgos de seguridad: permite a un investigador recrear el vector de path traversal en el guardado de plantillas de chat de `transformers` para verificar la correccion de un parche.
 - Auditoria de la cadena de suministro de modelos: sirve como muestra de referencia para construir detectores que identifiquen artefactos con cargas utiles embebidas en metadatos de model card.
-- Desarrollo de reglas de escaneo: util para validar escaneres que inspeccionan claves de diccionario como `chat_template` en repositorios de HuggingFace.
+- Desarrollo de reglas de escaneo: util para validar escaneres que inspeccionan claves de diccionario como `chat_template` en repositorios de Hugging Face.
 - Formacion en seguridad de ML: material didactico para explicar como se transportan hallazgos en artefactos aparentemente inofensivos.
 - Pruebas de sandbox: verifica que un entorno aislado contiene correctamente la ejecucion de `whoami` y la escritura en `/tmp` o `$TMPDIR`.
 - Validacion de manifiestos: comprueba que el `MANIFEST.json` de la coleccion registra correctamente hashes y restricciones de formato (`.npy`, `.jinja`, checkpoints).
@@ -73,5 +73,5 @@ No disponible. No existen modelos comparables en la categoria de modelos de leng
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FrankLin00/mmrh-afw-10-transformers-chat-template
+- Hugging Face: https://huggingface.co/FrankLin00/mmrh-afw-10-transformers-chat-template
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

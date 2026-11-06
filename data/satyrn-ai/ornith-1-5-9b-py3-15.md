@@ -127,7 +127,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 - VRAM estimada para inferencia (calculada a partir del recuento de parametros, no publicada por el autor): BF16 en torno a 19,3 GB solo en pesos; Q8 en torno a 9,7 GB; Q4_K_M en torno a 5,5-6,0 GB. A estas cifras hay que sumar el proyector multimodal BF16 y la cache KV, cuyo tamano depende de la longitud de contexto, que no esta publicada.
 - GPU recomendadas: A100 40 GB u 80 GB y H100 para servicio con lotes grandes y contexto largo en BF16; RTX 4090 o RTX 3090 (24 GB) para BF16 con contexto moderado o para cuantizaciones mayores con margen.
 - Cabe en GPU de consumo: si. La cuantizacion Q4_K_M es viable en tarjetas de 8-12 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070) y en equipos Apple Silicon con memoria unificada de 16 GB o superior; BF16 requiere 24 GB o mas.
-- Opciones de despliegue: llama.cpp (`llama-cli` para texto, `llama-mtmd-cli` para multimodal, `llama-server` como servidor), Ollama, LM Studio y cualquier frontend compatible con GGUF. Para Apple Silicon existe un repositorio hermano en formato MLX 4-bit. Los tags del repositorio incluyen endpoints_compatible y safetensors, lo que sugiere compatibilidad con servidores que consumen pesos de HuggingFace, aunque no se documenta una integracion concreta con vLLM o TGI.
+- Opciones de despliegue: llama.cpp (`llama-cli` para texto, `llama-mtmd-cli` para multimodal, `llama-server` como servidor), Ollama, LM Studio y cualquier frontend compatible con GGUF. Para Apple Silicon existe un repositorio hermano en formato MLX 4-bit. Los tags del repositorio incluyen endpoints_compatible y safetensors, lo que sugiere compatibilidad con servidores que consumen pesos de Hugging Face, aunque no se documenta una integracion concreta con vLLM o TGI.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -135,10 +135,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Ornith-1.5-9B (este repositorio) | 9,65 B | no disponible (tag qwen3_5), vision-lenguaje | no disponible | no disponible | safetensors, GGUF, MLX (repo hermano) |
-| Ornith-1.5-35B | no disponible | MoE, vision-lenguaje | no disponible | no disponible | HuggingFace de ornith-ai |
-| Ornith-1.5-397B | no disponible | MoE, vision-lenguaje | no disponible | no disponible | HuggingFace de ornith-ai |
+| Ornith-1.5-35B | no disponible | MoE, vision-lenguaje | no disponible | no disponible | Hugging Face de ornith-ai |
+| Ornith-1.5-397B | no disponible | MoE, vision-lenguaje | no disponible | no disponible | Hugging Face de ornith-ai |
 | Ornith-1.0 | no disponible | familia anterior, auto-scaffolding | no disponible | no disponible | GitHub ornith-ai/Ornith-1 |
-| Ornith-1.5-9B-MLX-4bit | 9 B (aproximado) | misma base, formato MLX | no disponible | no disponible | HuggingFace de ornith-ai |
+| Ornith-1.5-9B-MLX-4bit | 9 B (aproximado) | misma base, formato MLX | no disponible | no disponible | Hugging Face de ornith-ai |
 
 No se dispone de modelos de otras familias con datos verificables en la informacion proporcionada para establecer una comparacion de rendimiento.
 

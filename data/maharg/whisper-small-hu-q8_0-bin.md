@@ -67,14 +67,14 @@ No se han publicado resultados independientes de benchmarks para esta conversió
 - GPU recomendadas: no disponible. Por el tamaño del artefacto es plausible su uso en GPU consumer, pero no hay una lista validada de modelos ni requisitos oficiales.
 - CPU: es el escenario principal documentado, mediante whisper.cpp v1.9.3. No se proporcionan latencia ni throughput.
 - GPU consumer: el peso reducido hace viable plantear su ejecución en GPUs de gama media o baja, pero no se confirma con benchmarks publicados.
-- Despliegue: whisper.cpp es la herramienta verificada por el autor. No se documenta soporte para vLLM, TGI, Ollama ni llama.cpp, y no se distribuyen pesos safetensors para HuggingFace Transformers.
+- Despliegue: whisper.cpp es la herramienta verificada por el autor. No se documenta soporte para vLLM, TGI, Ollama ni llama.cpp, y no se distribuyen pesos safetensors para Hugging Face Transformers.
 - Latencia y throughput: no disponibles. Dependerán de la CPU/GPU, del audio y de la configuración de whisper.cpp.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Ventana/contexto | Idiomas | Licencia | Formato | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `maharg/whisper-small-hu-q8_0.bin` | No disponible | No disponible | Húngaro | MIT | GGML q8_0 | WER/CER heredados del fine-tune; sin medición del binario q8_0 | Público; 0 descargas y 0 likes en HuggingFace |
+| `maharg/whisper-small-hu-q8_0.bin` | No disponible | No disponible | Húngaro | MIT | GGML q8_0 | WER/CER heredados del fine-tune; sin medición del binario q8_0 | Público; 0 descargas y 0 likes en Hugging Face |
 | `SubZtep/whisper-small-hu` | No disponible | No disponible | Húngaro | MIT | No disponible | WER 15,62 % y CER 3,33 % autopublicados | Público; modelo base del que parte esta conversión |
 | `openai/whisper-small` | No disponible | No disponible | Multilingüe, según la página de Qualcomm AI Hub | No verificada en la información disponible | No disponible | No disponible | Público; modelo original de OpenAI |
 
@@ -94,10 +94,10 @@ No se han encontrado en la búsqueda modelos ASR húngaros comparables con datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maharg/whisper-small-hu-q8_0.bin
+- Modelo en Hugging Face: https://huggingface.co/maharg/whisper-small-hu-q8_0.bin
 - Modelo base: https://huggingface.co/SubZtep/whisper-small-hu
 - Whisper Small original: https://huggingface.co/openai/whisper-small
-- whisper.cpp en HuggingFace: https://huggingface.co/ggerganov/whisper.cpp
+- whisper.cpp en Hugging Face: https://huggingface.co/ggerganov/whisper.cpp
 - Documentación de descarga y conversión de whisper.cpp: https://deepwiki.com/ggml-org/whisper.cpp/5.1-model-download-and-conversion
 - Modelos GGML para Whisper: https://snailtext.app/ggml-models/
 - Whisper-Small en Qualcomm AI Hub: https://aihub.qualcomm.com/models/whisper_small

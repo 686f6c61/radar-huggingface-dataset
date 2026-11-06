@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Dorman11/aurora-mistral-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Dorman11. Se basa en el modelo `mistralai/Mistral-7B-v0.3`, una versión actualizada del conocido Mistral-7B con ventana de contexto ampliada a 32 768 tokens. El adaptador está diseñado para la generación de texto y se distribuye en formato PEFT (safetensors), con un tamaño de repositorio de 0,2 GB.
+`Dorman11/aurora-mistral-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Dorman11. Se basa en el modelo `mistralai/Mistral-7B-v0.3`, una versión actualizada del conocido Mistral-7B con ventana de contexto ampliada a 32 768 tokens. El adaptador está diseñado para la generación de texto y se distribuye en formato PEFT (safetensors), con un tamaño de repositorio de 0,2 GB.
 
 La relevancia de este modelo radica en su naturaleza de adaptador: en lugar de ofrecer un modelo completo, proporciona un conjunto de pesos LoRA que deben combinarse con el modelo base para funcionar. Esto permite ajustes eficientes en términos de memoria y cómputo, ya que solo se entrenan un pequeño número de parámetros adicionales. Sin embargo, la documentación disponible es extremadamente escasa: no se especifican los datos de entrenamiento, las tareas objetivo, la licencia ni los idiomas soportados, lo que limita su uso directo en producción sin una evaluación previa.
 
@@ -44,7 +44,7 @@ Dada la falta de documentación, los casos de uso son hipotéticos y dependen de
 - Prototipado rápido en entornos con recursos limitados: al ser un adaptador pequeño (0,2 GB), permite experimentar con ajuste eficiente sin necesidad de entrenar un modelo completo, usando bibliotecas como PEFT y Transformers.
 - Investigación en eficiencia de parámetros: útil para estudiar el impacto de LoRA en tareas de generación de texto, comparando el comportamiento del adaptador frente al modelo base.
 - Generación de texto en inglés (si el adaptador funciona correctamente): podría emplearse para tareas de redacción, resumen o chat, pero requiere validación manual.
-- Integración en pipelines de HuggingFace: se puede cargar con `PeftModel.from_pretrained` y combinar con el modelo base para pruebas locales.
+- Integración en pipelines de Hugging Face: se puede cargar con `PeftModel.from_pretrained` y combinar con el modelo base para pruebas locales.
 - Benchmarking de adaptadores: sirve como punto de comparación para otros adaptadores LoRA publicados en la plataforma, aunque sin métricas oficiales su utilidad es limitada.
 
 ## Benchmarks y rendimiento
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable. El adaptador no tiene métricas publicadas ni descripción de su propósito. Como referencia, se puede comparar con otros adaptadores LoRA de Mistral-7B publicados en HuggingFace, pero sin datos objetivos la comparación carece de valor. Se recomienda al usuario evaluar el adaptador por sí mismo frente al modelo base y otros adaptadores de su interés.
+No se dispone de información suficiente para establecer una comparativa fiable. El adaptador no tiene métricas publicadas ni descripción de su propósito. Como referencia, se puede comparar con otros adaptadores LoRA de Mistral-7B publicados en Hugging Face, pero sin datos objetivos la comparación carece de valor. Se recomienda al usuario evaluar el adaptador por sí mismo frente al modelo base y otros adaptadores de su interés.
 
 ## Limitaciones y advertencias
 
@@ -74,7 +74,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Dorman11/aurora-mistral-lora
+- Hugging Face del adaptador: https://huggingface.co/Dorman11/aurora-mistral-lora
 - Modelo base Mistral-7B-v0.3: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Documentación de PEFT: https://huggingface.co/docs/peft
 - Referencia del paper de LoRA (citado en la model card): https://arxiv.org/abs/1910.09700

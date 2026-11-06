@@ -81,7 +81,7 @@ El propio autor indica que se trata de una comprobacion de paridad y no de una p
 | Modelo | Parametros | Contexto/limite | Formato y plataforma | Licencia | Notas |
 |---|---|---|---|---|---|
 | FluidInference/gliner2-5-base-coreml (este) | 184.945.921 (paquete) | Hasta 8 etiquetas; L128 segun empaquetado | Core ML FP16, Apple Silicon | Apache 2.0 | Solo clasificacion; paridad 100/100 en prueba smoke |
-| fastino/gliner2.5-base-v1 (original) | 193.581.591 | no disponible | Pesos PyTorch en HuggingFace | Apache 2.0 | Incluye entidades, relaciones, registros y spans, no exportados en la conversion |
+| fastino/gliner2.5-base-v1 (original) | 193.581.591 | no disponible | Pesos PyTorch en Hugging Face | Apache 2.0 | Incluye entidades, relaciones, registros y spans, no exportados en la conversion |
 | Otros modelos GLiNER de la familia | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada |
 
 No se dispone de informacion verificada sobre alternativas comparables (por ejemplo clasificadores zero-shot de tamano similar) en la documentacion facilitada.
@@ -101,7 +101,7 @@ No se dispone de informacion verificada sobre alternativas comparables (por ejem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/gliner2-5-base-coreml
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/gliner2-5-base-coreml
 - Checkpoint original: https://huggingface.co/fastino/gliner2.5-base-v1
 - Revision del checkpoint original: 1a8bc24e00dc7300b9017c81d63e3dcdabb26596
 - Otros enlaces (papers, blogs, repos, demos): no disponible en la informacion proporcionada

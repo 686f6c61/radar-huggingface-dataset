@@ -74,7 +74,7 @@ No se dispone de información sobre modelos alternativos comparables en la docum
 
 | Modelo | Formato | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rty813/laya-bf16 | pytorch_model.bin | bf16 | apache-2.0 | Repositorio en HuggingFace del port |
+| rty813/laya-bf16 | pytorch_model.bin | bf16 | apache-2.0 | Repositorio en Hugging Face del port |
 | convaiinnovations/laya | No especificado en la informacion disponible | No disponible | apache-2.0 | Repositorio original; también en GGUF según la model card del port |
 
 Comparativa con modelos de la misma categoría (clasificación y decisión calibrada multilingüe): no disponible en la información proporcionada.
@@ -95,7 +95,7 @@ Comparativa con modelos de la misma categoría (clasificación y decisión calib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rty813/laya-bf16
+- Modelo en Hugging Face: https://huggingface.co/rty813/laya-bf16
 - Modelo base original: https://huggingface.co/convaiinnovations/laya
 - Repositorio GitHub del proyecto Laya: https://github.com/NandhaKishorM/laya
 - Instrucciones de instalación detalladas: https://github.com/NandhaKishorM/laya#installation-details

@@ -90,7 +90,7 @@ Una ejecución de validación separada con render corregido v3 a 2048 px obtuvo 
 - Posibles alucinaciones en valores no visibles o no soportados por la imagen.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/nutinspace/talk-to-schematic-qwen3.5-4b-lora-experimental
+- Hugging Face: https://huggingface.co/nutinspace/talk-to-schematic-qwen3.5-4b-lora-experimental
 - Instrucciones del proyecto en GitHub: https://github.com/tkarcheski/talk-to-schematic-unsloth/tree/codex/production-schematic-model
 - Inventario de fuentes (Adafruit EAGLE): https://github.com/tkarcheski/talk-to-schematic-unsloth/blob/codex/production-schematic-model/corpora/adafruit-120.json
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B

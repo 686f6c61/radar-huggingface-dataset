@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Lucasgitguy-co/spot-snake-laya-multilingual-v0.1",
+  "slug": "lucasgitguy-co-spot-snake-laya-multilingual-v0-1",
+  "author": "Lucasgitguy-co",
+  "url": "https://huggingface.co/Lucasgitguy-co/spot-snake-laya-multilingual-v0.1",
+  "created_at": "2026-11-06T08:55:30.000Z",
+  "updated_at": "2026-11-06T09:46:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "laya",
+  "languages": [
+    "en",
+    "nl"
+  ],
+  "tags": [
+    "laya",
+    "safetensors",
+    "spot-snake",
+    "system-one",
+    "typed-decisions",
+    "en",
+    "nl",
+    "dataset:Lucasgitguy-co/spot-snake-decisions-v0.2",
+    "base_model:convaiinnovations/laya-multilingual",
+    "base_model:finetune:convaiinnovations/laya-multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 678198809,
+  "storage_human": "678 MB",
+  "base_model": "convaiinnovations/laya-multilingual",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spot Snake models - a Lucasgitguy-co Collection",
+      "url": "https://huggingface.co/collections/Lucasgitguy-co/spot-snake-models",
+      "snippet": "Models and dataset that play Spot's Biscuit Snake."
+    },
+    {
+      "title": "GitHub - Gitguy268/spot-snake: Spot's Biscuit Snake: a snake game in ...",
+      "url": "https://github.com/Gitguy268/spot-snake",
+      "snippet": "Spot's Biscuit Snake: a snake game in one HTML file, starring Spot. An optional AI player uses the Laya model on your GPU through WebGPU. - Gitguy268/spot-snake"
+    }
+  ]
+}

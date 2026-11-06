@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shoemoney/Qwen3.8-27B-Abliterated-MLX-q4
+- Modelo en Hugging Face: https://huggingface.co/shoemoney/Qwen3.8-27B-Abliterated-MLX-q4
 - Modelo base (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guía de despliegue local (Geeky Gadgets): https://www.geeky-gadgets.com/serve-qwen-3-8-27b-fast/

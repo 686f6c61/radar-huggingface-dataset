@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OlyMahmud/clef-flash-Q4_K_M-GGUF | ~8,95 B | no disponible | GGUF (Q4_K_M) | Apache-2.0 | HuggingFace, 0 descargas |
-| Cloudflare/clef-flash (modelo base) | ~8,95 B | no disponible | safetensors | no disponible | HuggingFace |
-| Alternativas multimodales de ~7-9 B (por ejemplo, familias Qwen-VL o similares) | no disponible en esta ficha | no disponible | safetensors / GGUF | variable | HuggingFace |
+| OlyMahmud/clef-flash-Q4_K_M-GGUF | ~8,95 B | no disponible | GGUF (Q4_K_M) | Apache-2.0 | Hugging Face, 0 descargas |
+| Cloudflare/clef-flash (modelo base) | ~8,95 B | no disponible | safetensors | no disponible | Hugging Face |
+| Alternativas multimodales de ~7-9 B (por ejemplo, familias Qwen-VL o similares) | no disponible en esta ficha | no disponible | safetensors / GGUF | variable | Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones completas de los modelos comparables en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SeanWang0027/qwen3-1.7b-babyai-ftb-qwen3-32b-ep1` es un fine-tune experimental de Qwen3-1.7B, publicado por el usuario SeanWang0027 en HuggingFace. Se trata de un experimento de destilación en el que Qwen3-1.7B actúa como estudiante (*student*) de un profesor Qwen3-32B, entrenado sobre tareas del entorno BabyAI. El sufijo del nombre ("babyai-ftb-qwen3-32b-ep1") y la etiqueta `distillation` de la model card confirman el enfoque; la abreviatura "OPD" del título del README apunta a *on-policy distillation*, aunque el autor no la desarrolla.
+El modelo `SeanWang0027/qwen3-1.7b-babyai-ftb-qwen3-32b-ep1` es un fine-tune experimental de Qwen3-1.7B, publicado por el usuario SeanWang0027 en Hugging Face. Se trata de un experimento de destilación en el que Qwen3-1.7B actúa como estudiante (*student*) de un profesor Qwen3-32B, entrenado sobre tareas del entorno BabyAI. El sufijo del nombre ("babyai-ftb-qwen3-32b-ep1") y la etiqueta `distillation` de la model card confirman el enfoque; la abreviatura "OPD" del título del README apunta a *on-policy distillation*, aunque el autor no la desarrolla.
 
 Se publica como un *checkpoint* intermedio y explícitamente no evaluado: la model card indica "Final checkpoint: trainer step 75. Not evaluated." El entrenamiento consistió en una sola pasada sobre 810 tareas, 51 pasos de explorador completados y una tasa de aprendizaje de 1e-6. El modo *thinking* de Qwen3 se desactivó durante el proceso. El repositorio tiene 4,1 GB y, en la fecha de consulta, cero descargas y cero *likes*.
 
@@ -40,7 +40,7 @@ En cuanto al entrenamiento, la model card aporta los siguientes datos: destilaci
 - Seguimiento de instrucciones en entornos de rejilla: el entrenamiento sobre tareas BabyAI apunta a instrucciones compuestas del tipo "ve a un objeto y luego ejecuta una acción", propias de ese banco de pruebas.
 - Destilación de razonamiento desde un profesor mayor: el objetivo del experimento es transferir comportamiento de Qwen3-32B a un estudiante de ~2B, no una capacidad final validada.
 - Soporte de *tool calling* / *function calling*: la etiqueta `tcod` está presente, pero no hay documentación que confirme formato, esquema o fiabilidad.
-- Compatibilidad con Text Generation Inference: el repositorio incluye las etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica que el artefacto sigue el formato esperado por TGI y los *endpoints* compatibles de HuggingFace.
+- Compatibilidad con Text Generation Inference: el repositorio incluye las etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica que el artefacto sigue el formato esperado por TGI y los *endpoints* compatibles de Hugging Face.
 - Capacidades multilingües: no documentadas para este fine-tune. El modelo base Qwen3-1.7B es multilingüe, pero un ajuste corto sobre tareas sintéticas en inglés puede degradar ese comportamiento.
 - Modo *thinking*: desactivado de forma explícita durante el entrenamiento, según la model card. No cabe esperar cadenas de razonamiento extendidas.
 - Visión, audio y otras modalidades: no disponibles.
@@ -76,7 +76,7 @@ No se han publicado resultados de rendimiento de este *checkpoint*, por lo que l
 
 | Modelo | Parametros | Contexto | Licencia | Tipo | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-1.7b-babyai-ftb-qwen3-32b-ep1 | ~2,03 mil millones | No confirmado (base: 32 768, ampliable a 131 072 con YaRN) | No disponible | Fine-tune por destilacion | HuggingFace, 0 descargas |
+| qwen3-1.7b-babyai-ftb-qwen3-32b-ep1 | ~2,03 mil millones | No confirmado (base: 32 768, ampliable a 131 072 con YaRN) | No disponible | Fine-tune por destilacion | Hugging Face, 0 descargas |
 | Qwen/Qwen3-1.7B | ~2,03 mil millones | 32 768 nativos, 131 072 con YaRN | Apache 2.0 | Base denso | Ampliamente disponible |
 | Qwen/Qwen3-4B | ~4 mil millones | 32 768 nativos, 131 072 con YaRN | Apache 2.0 | Base denso | Ampliamente disponible |
 | Qwen/Qwen3-0.6B | ~0,6 mil millones | 32 768 nativos, 131 072 con YaRN | Apache 2.0 | Base denso | Ampliamente disponible |
@@ -101,7 +101,7 @@ Comparación de calidad: no disponible, al no existir evaluaciones publicadas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeanWang0027/qwen3-1.7b-babyai-ftb-qwen3-32b-ep1
+- Modelo en Hugging Face: https://huggingface.co/SeanWang0027/qwen3-1.7b-babyai-ftb-qwen3-32b-ep1
 - Modelo base (Qwen/Qwen3-1.7B): https://huggingface.co/Qwen/Qwen3-1.7B
 - Modelo profesor (Qwen/Qwen3-32B): https://huggingface.co/Qwen/Qwen3-32B
 - Blog tecnico de la familia Qwen3: https://qwenlm.github.io/blog/qwen3/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nyvex-Minecraft-ChopTree es un repositorio publicado en HuggingFace por el usuario NathMen12. Por su nombre y por el conjunto de datos asociado (NathMen12/Minecraft-ChopTree), todo apunta a un artefacto orientado a automatizar o modelar la tala de arboles dentro de Minecraft, presumiblemente mediante aprendizaje por imitacion o aprendizaje por refuerzo a partir de trazas de juego. Sin embargo, la model card publicada unicamente declara la licencia cc-by-4.0 y el dataset de entrenamiento, sin describir arquitectura, tamano ni proceso de entrenamiento.
+Nyvex-Minecraft-ChopTree es un repositorio publicado en Hugging Face por el usuario NathMen12. Por su nombre y por el conjunto de datos asociado (NathMen12/Minecraft-ChopTree), todo apunta a un artefacto orientado a automatizar o modelar la tala de arboles dentro de Minecraft, presumiblemente mediante aprendizaje por imitacion o aprendizaje por refuerzo a partir de trazas de juego. Sin embargo, la model card publicada unicamente declara la licencia cc-by-4.0 y el dataset de entrenamiento, sin describir arquitectura, tamano ni proceso de entrenamiento.
 
 El repositorio presenta 0 descargas y 1 like en el momento de la consulta, y su pipeline no esta declarado, lo que impide clasificarlo como text-generation, image-to-text ni ninguna otra categoria funcional. No se ha localizado documentacion adicional, paper ni anuncio tecnico en la busqueda web realizada.
 
@@ -89,7 +89,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NathMen12/Nyvex-Minecraft-ChopTree
+- Repositorio Hugging Face: https://huggingface.co/NathMen12/Nyvex-Minecraft-ChopTree
 - Dataset asociado: https://huggingface.co/datasets/NathMen12/Minecraft-ChopTree
 - Paper: no disponible
 - Blog o anuncio tecnico: no disponible

@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia con e
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/XinShu3047/SKC-checkpoints
+- Repositorio de Hugging Face: https://huggingface.co/XinShu3047/SKC-checkpoints
 - Código de SKC (GitHub): https://github.com/shzirui/SKC
 - Infraestructura DART-GUI: https://github.com/computer-use-agents/dart-gui
 - Modelo base UI-TARS-1.5-7B: https://huggingface.co/ByteDance-Seed/UI-TARS-1.5-7B

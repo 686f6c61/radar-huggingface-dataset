@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Moody-Vivid-Mix-v1.0 es un modelo publicado en HuggingFace por el usuario funnycat1 bajo el identificador `funnycat1/Moody-Vivid-Mix-v1.0`. El repositorio ocupa 5,1 GB y declara licencia Apache-2.0, idioma inglés (`en`) y región `us`. En el momento de la consulta acumula 0 descargas y 0 likes, no tiene pipeline tag asignado y fue creado el 23 de octubre de 2026, con una actualización once minutos posterior. Es, por tanto, una publicación reciente, sin validación comunitaria ni tracción de uso.
+Moody-Vivid-Mix-v1.0 es un modelo publicado en Hugging Face por el usuario funnycat1 bajo el identificador `funnycat1/Moody-Vivid-Mix-v1.0`. El repositorio ocupa 5,1 GB y declara licencia Apache-2.0, idioma inglés (`en`) y región `us`. En el momento de la consulta acumula 0 descargas y 0 likes, no tiene pipeline tag asignado y fue creado el 23 de octubre de 2026, con una actualización once minutos posterior. Es, por tanto, una publicación reciente, sin validación comunitaria ni tracción de uso.
 
 La model card es mínima: se limita a indicar que el modelo original está alojado en Civitai, en una ficha titulada "Moody Vivid Mix" (con el sufijo `moss-image-free-download` en la URL) atribuida al usuario catlover1937. Tanto ese enlace como la nomenclatura ("Mix", "Vivid", publicación en Civitai) apuntan a un checkpoint de generación de imágenes por difusión, no a un modelo de lenguaje. No se proporciona ninguna confirmación técnica de ello: no hay `config.json` descrito, ni arquitectura declarada, ni número de parámetros, ni resolución nativa, ni detalles de entrenamiento.
 
-Por tanto, esta ficha debe leerse como un registro de lo que se puede verificar (metadatos, licencia declarada, tamaño del repositorio, procedencia) y de lo que queda explícitamente sin confirmar. Cualquier uso en producción requeriría inspeccionar los archivos del repositorio y contrastar la licencia original en Civitai, que puede no coincidir con la Apache-2.0 declarada en HuggingFace.
+Por tanto, esta ficha debe leerse como un registro de lo que se puede verificar (metadatos, licencia declarada, tamaño del repositorio, procedencia) y de lo que queda explícitamente sin confirmar. Cualquier uso en producción requeriría inspeccionar los archivos del repositorio y contrastar la licencia original en Civitai, que puede no coincidir con la Apache-2.0 declarada en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ Por tanto, esta ficha debe leerse como un registro de lo que se puede verificar 
 | Longitud de contexto | No aplica si es un modelo de imagen; no disponible en cualquier caso |
 | Tipos de cuantización | No disponible |
 | Idiomas soportados | Inglés (`en`), según los metadatos del repositorio |
-| Licencia | Apache-2.0 (declarada en HuggingFace; la ficha original de Civitai puede imponer condiciones adicionales) |
+| Licencia | Apache-2.0 (declarada en Hugging Face; la ficha original de Civitai puede imponer condiciones adicionales) |
 | Formato de pesos | No disponible (el repositorio ocupa 5,1 GB; no se detalla si son safetensors, GGUF o binarios `.ckpt`) |
 | Tamaño del repositorio | 5,1 GB |
 | Pipeline tag | No disponible (campo vacío) |
@@ -75,7 +75,7 @@ No hay información suficiente para identificar la familia base del modelo ni su
 
 | Modelo | Parámetros | Resolución nativa | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Moody-Vivid-Mix-v1.0 | No disponible | No disponible | Apache-2.0 (declarada) | HuggingFace y Civitai | Sin documentación, 0 descargas |
+| Moody-Vivid-Mix-v1.0 | No disponible | No disponible | Apache-2.0 (declarada) | Hugging Face y Civitai | Sin documentación, 0 descargas |
 | Stable Diffusion XL (referencia) | ~3.500 M (UNet + encoders) | 1024×1024 | CreativeML OpenRAIL++-M | Diffusers, múltiples repositorios | Ecosistema amplio, ampliamente validado |
 | Stable Diffusion 1.5 (referencia) | ~980 M (UNet + encoders) | 512×512 | CreativeML OpenRAIL-M | Diffusers, múltiples repositorios | Menor calidad base, enorme ecosistema de LoRA |
 | FLUX.1 [schnell] (referencia) | ~12.000 M | 1024×1024 | Apache-2.0 | Diffusers, BFL | Requiere mucha más VRAM |
@@ -86,7 +86,7 @@ Los datos de las filas de referencia corresponden a conocimiento general de esos
 
 - Ausencia total de documentación técnica: no hay arquitectura, parámetros, resolución, dataset ni instrucciones de uso. Cualquier integración exige inspeccionar primero los archivos del repositorio.
 - Riesgo de licencia: la ficha declara Apache-2.0, pero la model card remite a Civitai como origen. Los modelos de Civitai suelen llevar condiciones de uso propias (restricciones comerciales, prohibición de reventa o de fusiones). Es imprescindible verificar la licencia original antes de un uso comercial.
-- Atribución: el autor del modelo original figura como catlover1937; la publicación en HuggingFace la realiza funnycat1. Conviene aclarar si existe permiso de redistribución.
+- Atribución: el autor del modelo original figura como catlover1937; la publicación en Hugging Face la realiza funnycat1. Conviene aclarar si existe permiso de redistribución.
 - Sin validación comunitaria: 0 descargas y 0 likes implican ausencia de informes de terceros sobre calidad, estabilidad o posibles fallos del checkpoint.
 - Repositorio potencialmente incompleto: sin pipeline tag y sin lista de archivos descrita, no se puede confirmar que los pesos estén íntegros o que incluyan todos los componentes necesarios.
 - Idioma: el tag `en` sugiere que los prompts en otros idiomas pueden degradar el resultado; no hay evidencia sobre comportamiento en castellano.
@@ -97,6 +97,6 @@ Los datos de las filas de referencia corresponden a conocimiento general de esos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/funnycat1/Moody-Vivid-Mix-v1.0
+- Repositorio en Hugging Face: https://huggingface.co/funnycat1/Moody-Vivid-Mix-v1.0
 - Modelo original en Civitai: https://civitai.com/models/3014653/moody-vivid-mix-moss-image-free-download?modelVersionId=3421831
 - Perfil del autor original en Civitai: https://civitai.com/user/catlover1937

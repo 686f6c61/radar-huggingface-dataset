@@ -2,7 +2,7 @@
 
 ## Resumen
 
-COD-VAE 8x32 (tiny) es un autoencoder variacional para reconstruccion de formas 3D desarrollado por TimSchneider42, publicado en HuggingFace bajo licencia MIT. El modelo comprime una forma 3D completa en 8 vectores latentes de 32 dimensiones (256 numeros en total) y los decodifica de vuelta a un campo de ocupacion volumetrica. Es una reimplementacion en PyTorch/JAX del COD-VAE original de Cho et al. (ICCV 2025), cuyo articulo se referencia con el identificador arXiv:2503.08737.
+COD-VAE 8x32 (tiny) es un autoencoder variacional para reconstruccion de formas 3D desarrollado por TimSchneider42, publicado en Hugging Face bajo licencia MIT. El modelo comprime una forma 3D completa en 8 vectores latentes de 32 dimensiones (256 numeros en total) y los decodifica de vuelta a un campo de ocupacion volumetrica. Es una reimplementacion en PyTorch/JAX del COD-VAE original de Cho et al. (ICCV 2025), cuyo articulo se referencia con el identificador arXiv:2503.08737.
 
 La variante `tiny` esta disenada con un criterio "decode-first": su proposito principal no es maximizar la fidelidad de reconstruccion, sino minimizar el coste del paso forward+backward a traves de un decodificador congelado. Esto la hace idonea para pipelines de aprendizaje por refuerzo donde la recompensa se calcula como reconstruccion, o para cualquier bucle iterativo que evalue muchos latentes por segundo. Con aproximadamente 6,6 millones de parametros, es unas 4x mas rapida que la variante `-small` y unas 33x mas rapida que el modelo de tamano completo.
 
@@ -102,7 +102,7 @@ Todos los modelos comparados proceden del mismo autor y la misma familia COD-VAE
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TimSchneider42/cod-vae-8x32-tiny
+- Modelo en Hugging Face: https://huggingface.co/TimSchneider42/cod-vae-8x32-tiny
 - Modelo hermano de mayor tamano: https://huggingface.co/TimSchneider42/cod-vae-8x32
 - Variante `-small`: https://huggingface.co/TimSchneider42/cod-vae-16x8-small
 - Repositorio de la libreria: https://github.com/TimSchneider42/cod-vae

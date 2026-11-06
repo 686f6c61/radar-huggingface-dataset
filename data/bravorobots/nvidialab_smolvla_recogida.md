@@ -67,7 +67,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa. A nivel cu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BravoRobots/nvidialab_smolvla_recogida
+- Modelo en Hugging Face: https://huggingface.co/BravoRobots/nvidialab_smolvla_recogida
 - Dataset de entrenamiento: https://huggingface.co/datasets/BravoRobots/nvidialab_recogida
 - Paper de SmolVLA (arXiv): https://arxiv.org/abs/2506.01844
 - Web oficial de SmolVLA: https://smolvla.net/index_en

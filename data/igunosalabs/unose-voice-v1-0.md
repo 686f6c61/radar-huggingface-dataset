@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativos en la información proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/igunosalabs/Unose-Voice-v1.0
+- Hugging Face: https://huggingface.co/igunosalabs/Unose-Voice-v1.0
 - GitHub oficial: https://github.com/Igunosa-Labs/unose-voice
 - STT Suite (Base 74M): https://huggingface.co/igunosalabs/Unose-Huen-Base
 - STT Suite (Small 244M): https://huggingface.co/igunosalabs/Unose-Huen-Small

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TinyFaceNet-1M es una red convolucional de 1,03 millones de parámetros diseñada para extraer embeddings faciales de 128 dimensiones a partir de recortes de cara de 112x112 píxeles en RGB. La publica el usuario sraivante en HuggingFace bajo licencia Apache-2.0, con pipeline declarado image-feature-extraction. No es un modelo de lenguaje: no genera texto, sino un vector normalizado en L2 que representa una identidad facial.
+TinyFaceNet-1M es una red convolucional de 1,03 millones de parámetros diseñada para extraer embeddings faciales de 128 dimensiones a partir de recortes de cara de 112x112 píxeles en RGB. La publica el usuario sraivante en Hugging Face bajo licencia Apache-2.0, con pipeline declarado image-feature-extraction. No es un modelo de lenguaje: no genera texto, sino un vector normalizado en L2 que representa una identidad facial.
 
 El modelo se ha obtenido por destilación de conocimiento desde insightface buffalo_l (ArcFace, 65 millones de parámetros) sobre un archivo fotográfico privado de tamaño reducido, y después se ha cuantizado a INT8 con ONNX Runtime. El resultado ocupa 1,1 MB de pesos y consume 171 M MACs por cara, con 312 KB de activación pico, lo que permite ejecutarlo en una Raspberry Pi 5 o en un teléfono móvil sin GPU.
 
@@ -103,7 +103,7 @@ No se han proporcionado datos de contexto, rendimiento ni licencia de las altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sraivante/TinyFaceNet-1M
+- Modelo en Hugging Face: https://huggingface.co/sraivante/TinyFaceNet-1M
 - Código incluido en el repositorio (rutas dentro del modelo, sin URL propia proporcionada): `code/enroll.py` (enrolamiento), `code/train.py` (entrenamiento por destilación), `code/quantize_eval.py` (cuantización y evaluación), `code/live_test.py` (prueba en vivo con webcam y voto de 7 fotogramas).
 - Proyectos y modelos de referencia citados en la model card, sin enlace proporcionado en la información disponible: insightface buffalo_l (ArcFace, modelo profesor), MobileFaceNet (arquitectura de referencia), BlazeFace, SCRFD-500M y Ultra-Light-Fast (detectores recomendados), ONNX Runtime, Google Coral Edge TPU, TensorRT y RKNN.
 - No se han proporcionado enlaces adicionales a papers, blogs, demos ni repositorios externos en la información disponible.

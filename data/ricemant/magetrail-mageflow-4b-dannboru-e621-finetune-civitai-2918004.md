@@ -79,7 +79,7 @@ El modelo es un finetune de MageFlow 4B, por lo que la comparación más directa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RicemanT/MageTrail-MageFlow-4B-Dannboru-E621-Finetune-civitai-2918004
+- Hugging Face: https://huggingface.co/RicemanT/MageTrail-MageFlow-4B-Dannboru-E621-Finetune-civitai-2918004
 - Civitai (modelo original): https://civitai.com/models/2918004
 - Repositorio del trainer: https://github.com/RicemanT/diffusion-pipe-mageflow-ft
 - Config de entrenamiento: https://github.com/RicemanT/model-training-configs/blob/main/diffusion-pipe/MageFlow/configs/V0.1/mage_flow_BooruEssenceFFT.toml

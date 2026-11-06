@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Este 
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| neocia/cosyvoice2-cml-ptbr | 0,5B | no disponible | Portugues (adaptado) | Apache 2.0 | HuggingFace |
-| FunAudioLLM/CosyVoice2-0.5B | 0,5B | no disponible | Multilingue | Apache 2.0 | HuggingFace |
-| Coqui XTTS v2 | 0,8B (aprox.) | no disponible | Multilingue (incluye portugues) | CPML (no comercial) | HuggingFace |
+| neocia/cosyvoice2-cml-ptbr | 0,5B | no disponible | Portugues (adaptado) | Apache 2.0 | Hugging Face |
+| FunAudioLLM/CosyVoice2-0.5B | 0,5B | no disponible | Multilingue | Apache 2.0 | Hugging Face |
+| Coqui XTTS v2 | 0,8B (aprox.) | no disponible | Multilingue (incluye portugues) | CPML (no comercial) | Hugging Face |
 
 La comparativa se limita a modelos de sintesis de voz multilingues de tamano similar. CosyVoice2-0.5B es el modelo base sin adaptar; XTTS v2 es una alternativa comercial con licencia restrictiva. No se dispone de datos de rendimiento comparativo.
 
@@ -79,7 +79,7 @@ La comparativa se limita a modelos de sintesis de voz multilingues de tamano sim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neocia/cosyvoice2-cml-ptbr
+- Modelo en Hugging Face: https://huggingface.co/neocia/cosyvoice2-cml-ptbr
 - Modelo base: https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B
 - Dataset CML-TTS: https://huggingface.co/datasets/ylacombe/cml-tts
 - Repositorio oficial CosyVoice: https://github.com/FunAudioLLM/CosyVoice

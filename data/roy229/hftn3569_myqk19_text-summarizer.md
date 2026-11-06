@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Roy229/hftn3569_myqk19_text-summarizer` es un sistema de resumen abstractivo de artículos de noticias, desarrollado por el usuario Roy229 y publicado en HuggingFace. Según su model card, se trata de un modelo encoder-decoder, aunque no se especifica la arquitectura concreta (por ejemplo, si se basa en T5, BART u otra familia). El modelo está etiquetado como "audit-verified", lo que sugiere que ha pasado algún tipo de revisión de calidad, aunque no se detalla el proceso.
+El modelo `Roy229/hftn3569_myqk19_text-summarizer` es un sistema de resumen abstractivo de artículos de noticias, desarrollado por el usuario Roy229 y publicado en Hugging Face. Según su model card, se trata de un modelo encoder-decoder, aunque no se especifica la arquitectura concreta (por ejemplo, si se basa en T5, BART u otra familia). El modelo está etiquetado como "audit-verified", lo que sugiere que ha pasado algún tipo de revisión de calidad, aunque no se detalla el proceso.
 
 La relevancia de este modelo radica en su aplicación directa a la tarea de resumir contenido periodístico, una necesidad común en entornos de agregación de noticias, monitorización de medios o generación de alertas. Sin embargo, la información pública disponible es extremadamente limitada: no se indican parámetros, contexto, idiomas soportados ni licencia, lo que dificulta su evaluación para uso en producción. A fecha de creación (agosto de 2026), el modelo no tiene descargas ni valoraciones, por lo que su adopción es prácticamente nula.
 
@@ -62,4 +62,4 @@ No disponible. No se han identificado modelos comparables dentro de la misma cat
 
 ## Enlaces
 
-- [HuggingFace - Roy229/hftn3569_myqk19_text-summarizer](https://huggingface.co/Roy229/hftn3569_myqk19_text-summarizer)
+- [Hugging Face - Roy229/hftn3569_myqk19_text-summarizer](https://huggingface.co/Roy229/hftn3569_myqk19_text-summarizer)

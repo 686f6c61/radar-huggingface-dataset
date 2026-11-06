@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Formato de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BookBuddy PP-YOLOE-R-s (este artefacto) | ~8,1 M (estimado por tamaño de archivo) | ONNX opset 11, fp32 | `other`, uso académico, sin uso comercial ni distribución externa | Repositorio de HuggingFace, 0 descargas |
+| BookBuddy PP-YOLOE-R-s (este artefacto) | ~8,1 M (estimado por tamaño de archivo) | ONNX opset 11, fp32 | `other`, uso académico, sin uso comercial ni distribución externa | Repositorio de Hugging Face, 0 descargas |
 | PP-YOLOE-R-s upstream (PaddleDetection) | No disponible | `.pdparams` (Paddle) | Código Apache-2.0; el checkpoint entrenado con DOTA queda sujeto a la restricción académica del dataset | Sí, en el zoo de modelos de PaddleDetection |
 | Oriented R-CNN (MMRotate) | No disponible | `.pth` (PyTorch) | Código Apache-2.0; checkpoints de DOTA sujetos a la restricción del dataset | Sí, en el zoo de MMRotate |
 | YOLOv8-OBB / YOLO11-OBB (Ultralytics) | No disponible | `.pt`, ONNX y otros | AGPL-3.0 o licencia comercial de Ultralytics | Sí, distribución pública |
@@ -84,7 +84,7 @@ La comparación cuantitativa de precisión no es posible con los datos disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ownlwh/bookbuddy-ppyoloe-r-s-dev
+- Modelo en Hugging Face: https://huggingface.co/ownlwh/bookbuddy-ppyoloe-r-s-dev
 - PaddleDetection (implementación y arquitectura de origen, release/2.9): https://github.com/PaddlePaddle/PaddleDetection
 - Paddle2ONNX (herramienta de conversión utilizada): https://github.com/PaddlePaddle/Paddle2ONNX
 - ONNX Runtime (runtime de inferencia del artefacto): https://github.com/microsoft/onnxruntime

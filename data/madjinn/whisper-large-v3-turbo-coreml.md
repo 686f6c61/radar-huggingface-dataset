@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks en la informacion disponible (ni WE
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/madjinn/whisper-large-v3-turbo-coreml
+- Repositorio Hugging Face: https://huggingface.co/madjinn/whisper-large-v3-turbo-coreml
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - WhisperKit (Argmax): https://github.com/argmaxinc/WhisperKit
 - Herramienta de conversion whisperkittools: https://github.com/argmaxinc/whisperkittools

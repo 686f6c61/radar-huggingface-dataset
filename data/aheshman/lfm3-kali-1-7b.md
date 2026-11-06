@@ -81,9 +81,9 @@ En la comparación cualitativa frente al modelo base, el autor reporta mejora en
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-Kali-1.7B | 1,73B | Hasta 262.144 (64K recomendado) | Ciberseguridad / Kali Linux | LFM Open License v1.0 | HuggingFace, repo de 3,6 GB |
-| OpenIntelligenceNet/LFM3-1.7B-Uncensored | 1,73B (estimado, no confirmado) | no disponible | Base sin censura | no disponible | HuggingFace |
-| LiquidAI/LFM3-1.7B | 1,73B (estimado, no confirmado) | no disponible | Modelo generalista | LFM Open License v1.0 | HuggingFace |
+| LFM3-Kali-1.7B | 1,73B | Hasta 262.144 (64K recomendado) | Ciberseguridad / Kali Linux | LFM Open License v1.0 | Hugging Face, repo de 3,6 GB |
+| OpenIntelligenceNet/LFM3-1.7B-Uncensored | 1,73B (estimado, no confirmado) | no disponible | Base sin censura | no disponible | Hugging Face |
+| LiquidAI/LFM3-1.7B | 1,73B (estimado, no confirmado) | no disponible | Modelo generalista | LFM Open License v1.0 | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de estos modelos entre sí. La comparación se limita a parámetros, linaje y licencia.
 
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aheshman/LFM3-Kali-1.7B
+- Modelo en Hugging Face: https://huggingface.co/aheshman/LFM3-Kali-1.7B
 - Repositorio de código y fuentes: https://github.com/codeur261/LFM3-Kali-1.7B
 - Modelo base del ajuste: https://huggingface.co/OpenIntelligenceNet/LFM3-1.7B-Uncensored
 - Modelo original de LiquidAI: https://huggingface.co/LiquidAI/LFM3-1.7B

@@ -96,8 +96,8 @@ La comparativa se limita a modelos de la misma familia Qwen 3.5. No se dispone d
 
 ## Enlaces
 
-- Artefacto en HuggingFace: https://huggingface.co/jesusluque/qwen3.5-35b-topiary-stream
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
+- Artefacto en Hugging Face: https://huggingface.co/jesusluque/qwen3.5-35b-topiary-stream
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Repositorio del runtime Topiary Stream: https://github.com/jesusluque/topiary-stream
 - Guía técnica de Qwen 3.5 (Local AI Guide): https://localclaw.io/blog/qwen35-deep-dive
 - Guía de la serie Qwen3.5 2026: https://explore.n1n.ai/blog/qwen3-5-model-series-2026-guide-2026-02-25

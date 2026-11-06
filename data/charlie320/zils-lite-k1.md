@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zils-lite-k1 es un ajuste fino (fine-tune) de Qwen/Qwen3.5-0.8B publicado por el usuario Charlie320 en HuggingFace. Se presenta como un "body" (cuerpo) destinado al pool de modelos tipo "soup" denominado Zils `d3-lite`, asociado a la subnet 127 de Bittensor. El modelo se distribuye con licencia Apache-2.0 y en formato safetensors, con 852.985.920 parámetros totales y un tamaño de repositorio de 1,7 GB.
+zils-lite-k1 es un ajuste fino (fine-tune) de Qwen/Qwen3.5-0.8B publicado por el usuario Charlie320 en Hugging Face. Se presenta como un "body" (cuerpo) destinado al pool de modelos tipo "soup" denominado Zils `d3-lite`, asociado a la subnet 127 de Bittensor. El modelo se distribuye con licencia Apache-2.0 y en formato safetensors, con 852.985.920 parámetros totales y un tamaño de repositorio de 1,7 GB.
 
 La relevancia del modelo es acotada y muy específica: no se trata de un modelo generalista pensado para competición con los grandes modelos de propósito general, sino de una pieza dentro de un ecosistema de agregación de pesos (model soup) orientado a tareas de decisión. El autor indica que los pesos de lenguaje han sido entrenados y que la torre de visión procede del modelo padre, lo que sugiere una arquitectura multimodal heredada de Qwen3.5-0.8B.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Charlie320/zils-lite-k1
+- Hugging Face: https://huggingface.co/Charlie320/zils-lite-k1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Cuerpo del pool: https://huggingface.co/vllm-sr/d3-lite
 - Cuerpo del pool: https://huggingface.co/Maincode/Matilda-Decision-v1-Edge

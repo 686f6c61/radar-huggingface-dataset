@@ -90,6 +90,6 @@ La comparación se limita a la familia Demucs y a Spleeter; no se dispone de dat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tlfares/htdemucs-vocals-coreml
+- Hugging Face: https://huggingface.co/tlfares/htdemucs-vocals-coreml
 - Repositorio original de Demucs: https://github.com/facebookresearch/demucs
 - Paper HTDemucs (ICASSP 2023): *Hybrid Transformers for Music Source Separation*, Rouard, Massa y Défossez (referenciado en la model card; no se proporciona URL directa en la información disponible)

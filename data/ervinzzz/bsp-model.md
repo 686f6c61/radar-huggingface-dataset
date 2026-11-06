@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ErvinZzz/bsp-model es un modelo publicado en HuggingFace por el usuario ErvinZzz bajo licencia CC BY 4.0. El repositorio tiene un tamano de 1,2 GB y, en el momento de la consulta, acumula 0 descargas y 0 "likes", lo que indica que se trata de una publicacion reciente o sin difusion. La model card asociada no contiene mas informacion que el encabezado YAML con la licencia: no se declara pipeline, idiomas soportados, arquitectura, numero de parametros ni datos de entrenamiento.
+ErvinZzz/bsp-model es un modelo publicado en Hugging Face por el usuario ErvinZzz bajo licencia CC BY 4.0. El repositorio tiene un tamano de 1,2 GB y, en el momento de la consulta, acumula 0 descargas y 0 "likes", lo que indica que se trata de una publicacion reciente o sin difusion. La model card asociada no contiene mas informacion que el encabezado YAML con la licencia: no se declara pipeline, idiomas soportados, arquitectura, numero de parametros ni datos de entrenamiento.
 
 La ausencia de metadatos impide determinar con rigor que problema resuelve el modelo, a que categoria pertenece (lenguaje, vision, audio, multimodal) o si es un ajuste fino sobre una base existente. El unico dato objetivo disponible, ademas de la licencia, es el tamano del repositorio, que acota el orden de magnitud de los pesos almacenados, pero no permite confirmar el numero de parametros, ya que el repositorio podria contener uno o varios formatos de pesos, ficheros de tokenizer, artefactos de entrenamiento u otros recursos auxiliares.
 
@@ -53,7 +53,7 @@ Cualquiera de estas capacidades requeriria verificacion empirica antes de asumir
 
 Los siguientes escenarios son hipoteticos y estan condicionados a que una evaluacion previa confirme que el modelo soporta la tarea correspondiente. Se incluyen unicamente como marco de validacion, dado que no hay informacion publicada sobre capacidades.
 
-- Experimentacion academica y reproduccion de resultados: el modelo podria servir como objeto de estudio en trabajos que analicen publicaciones de HuggingFace sin model card, comparando el comportamiento real con lo declarado. Es adecuado porque su licencia CC BY 4.0 permite redistribucion con atribucion.
+- Experimentacion academica y reproduccion de resultados: el modelo podria servir como objeto de estudio en trabajos que analicen publicaciones de Hugging Face sin model card, comparando el comportamiento real con lo declarado. Es adecuado porque su licencia CC BY 4.0 permite redistribucion con atribucion.
 - Evaluacion comparativa interna (benchmarking propio): si el repositorio contiene pesos cargables, podria incorporarse a una bateria interna de pruebas para medir perplejidad, seguimiento de instrucciones y robustez frente a modelos de referencia. Requiere primero validar que existe un tokenizer compatible.
 - Prueba de concepto de ajuste fino: el tamano reducido del repositorio sugiere que un ajuste fino con LoRA o QLoRA podria ejecutarse en una sola GPU de gama alta, siempre que la arquitectura sea un transformer estandar.
 - Generacion de texto de bajo coste en local: si el modelo funciona en CPU mediante llama.cpp u Ollama (asumiendo que se publique un GGUF derivado), podria usarse para tareas de redaccion asistida sin conexion y sin coste por token.
@@ -81,7 +81,7 @@ No disponible. Sin conocer la arquitectura, el numero de parametros, los idiomas
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ErvinZzz/bsp-model | no disponible | no disponible | no disponible | CC BY 4.0 | HuggingFace, 0 descargas |
+| ErvinZzz/bsp-model | no disponible | no disponible | no disponible | CC BY 4.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,5 +98,5 @@ No disponible. Sin conocer la arquitectura, el numero de parametros, los idiomas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ErvinZzz/bsp-model
+- Hugging Face: https://huggingface.co/ErvinZzz/bsp-model
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

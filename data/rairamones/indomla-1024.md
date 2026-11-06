@@ -65,5 +65,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace: RaiRamones/indomla-1024](https://huggingface.co/RaiRamones/indomla-1024)
+- [Hugging Face: RaiRamones/indomla-1024](https://huggingface.co/RaiRamones/indomla-1024)
 - [GitHub: Rai7/indomla-1024](https://github.com/Rai7/indomla-1024)

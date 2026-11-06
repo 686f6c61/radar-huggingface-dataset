@@ -73,8 +73,8 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-solo-build-h-v2-link01 | Adaptador LoRA sobre Qwen3.5-0.8B | No disponible (base 0,8B) | No disponible | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | Transformer decoder-only | 0,8B | No disponible | No disponible en la información | HuggingFace |
+| connectailab-rl-solo-build-h-v2-link01 | Adaptador LoRA sobre Qwen3.5-0.8B | No disponible (base 0,8B) | No disponible | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | Transformer decoder-only | 0,8B | No disponible | No disponible en la información | Hugging Face |
 | Política PPO (profesor, brain.json) | Política RL tabular/red pequeña | No disponible | No aplica | No disponible | Repositorio CONNECT TYCOON |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/appssy3/connectailab-rl-solo-build-h-v2-link01
+- Modelo en Hugging Face: https://huggingface.co/appssy3/connectailab-rl-solo-build-h-v2-link01
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Entorno web de aprendizaje: https://www.ezerai.xyz/robot-lab/world/

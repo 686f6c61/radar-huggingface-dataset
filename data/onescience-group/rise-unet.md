@@ -6,7 +6,7 @@ RISE-UNet es un modelo de aprendizaje profundo para la prediccion subestacional 
 
 A diferencia de los modelos de lenguaje, RISE-UNet es una red convolucional de tipo UNet++ con operadores residuales, inception y squeeze-and-excitation, aplicada sobre rejillas geoespaciales. Se entrenó con datos de humedad del suelo GLEAM (0-100 cm), reanálisis ERA5 y reforecasts de GEFSv12 y ECMWF S2S, y opera sobre una rejilla regional de 48x96 a 0,5 grados con 11 miembros de ensemble. Su ambito geografico declarado cubre Estados Unidos continental, China y Australia.
 
-La relevancia actual del modelo reside en su enfoque hibrido: fusiona reanálisis y reforecasts dinamicos en lugar de sustituirlos, y produce predicciones probabilisticas de sequia (eventos por debajo del percentil 20). El repositorio de HuggingFace es una reproduccion de ingenieria con datos sinteticos y no incluye un checkpoint preentrenado oficial con licencia independiente confirmada.
+La relevancia actual del modelo reside en su enfoque hibrido: fusiona reanálisis y reforecasts dinamicos en lugar de sustituirlos, y produce predicciones probabilisticas de sequia (eventos por debajo del percentil 20). El repositorio de Hugging Face es una reproduccion de ingenieria con datos sinteticos y no incluye un checkpoint preentrenado oficial con licencia independiente confirmada.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La relevancia actual del modelo reside en su enfoque hibrido: fusiona reanálisi
 
 RISE-UNet es una arquitectura convolucional que integra cuatro bloques de operaciones: conexiones residuales, modulos inception (convoluciones en paralelo de distinto tamano de kernel), mecanismos squeeze-and-excitation (recalibrado de canales por atencion) y el esquema de codificador-decodificador con conexiones densas anidadas de UNet++. Sobre esta base se aplica un protocolo de prediccion recursiva: el modelo genera la anomalia de la semana 1, la realimenta para producir la semana 2 y asi hasta la semana 5. La inferencia mantiene dropout estocastico para generar 11 miembros de ensemble, lo que permite estimar incertidumbre y probabilidades de sequia. El diseno incorpora tambien una restriccion sobre la dispersion del ensemble en la funcion de perdida, junto con perdidas de supervision profunda.
 
-El entrenamiento utiliza humedad del suelo de la zona radicular (0-100 cm) de GLEAM como variable objetivo, reanálisis ERA5 y reforecasts de GEFSv12 y ECMWF S2S como fuentes de entrada. La rejilla declarada es de 48x96 a 0,5 grados con 11 miembros de ensemble y variables semanales historicas y de pronostico. No se especifica en la informacion disponible el numero de tokens o muestras de entrenamiento, la composicion exacta del dataset, ni si hubo etapas de RLHF o DPO (no aplicables a este tipo de modelo). El repositorio distribuido en HuggingFace es una reproduccion que usa datos sinteticos con el mismo protocolo de cinco semanas y los mismos operadores RISE, pero con menor numero de inicializaciones, menor anchura de red y menos epocas; sus resultados validan el flujo de trabajo y no representan el rendimiento del paper.
+El entrenamiento utiliza humedad del suelo de la zona radicular (0-100 cm) de GLEAM como variable objetivo, reanálisis ERA5 y reforecasts de GEFSv12 y ECMWF S2S como fuentes de entrada. La rejilla declarada es de 48x96 a 0,5 grados con 11 miembros de ensemble y variables semanales historicas y de pronostico. No se especifica en la informacion disponible el numero de tokens o muestras de entrenamiento, la composicion exacta del dataset, ni si hubo etapas de RLHF o DPO (no aplicables a este tipo de modelo). El repositorio distribuido en Hugging Face es una reproduccion que usa datos sinteticos con el mismo protocolo de cinco semanas y los mismos operadores RISE, pero con menor numero de inicializaciones, menor anchura de red y menos epocas; sus resultados validan el flujo de trabajo y no representan el rendimiento del paper.
 
 ## Capacidades
 
@@ -91,7 +91,7 @@ No se dispone de datos cuantitativos de rendimiento relativo en la informacion p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/RISE-UNet
+- Hugging Face: https://huggingface.co/OneScience-Group/RISE-UNet
 - Paper (Nature Communications): https://doi.org/10.1038/s41467-025-62761-3
 - Codigo del paper (OSF): https://osf.io/6y4kh/
 - OneScience en Gitee: https://gitee.com/onescience-ai/onescience

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`justinwanman/blip-retrieval` es un repositorio de HuggingFace publicado por el usuario justinwanman que contiene una implementacion funcional del modelo BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de recuperacion (retrieval) imagen-texto, en una configuracion declarada como `xlarge`. No es un checkpoint entrenado ni un modelo listo para produccion: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
+`justinwanman/blip-retrieval` es un repositorio de Hugging Face publicado por el usuario justinwanman que contiene una implementacion funcional del modelo BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de recuperacion (retrieval) imagen-texto, en una configuracion declarada como `xlarge`. No es un checkpoint entrenado ni un modelo listo para produccion: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
 
 El proposito declarado del repositorio es servir como base de codigo transparente y reproducible para experimentacion: incluye el script `model.py`, un `config.json` con la arquitectura generada, un `training_args.json` con la receta de experimento por defecto y el mencionado checkpoint de inicializacion. La receta por defecto usa el optimizador rmsprop con un schedule de warmup constante, valores que el autor describe como puntos de partida y no como evidencia de un entrenamiento completado.
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| justinwanman/blip-retrieval | 49.600 en safetensors (escala declarada `xlarge`, incoherente) | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas |
-| Salesforce BLIP (referencia original de la arquitectura) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | disponible en HuggingFace |
-| BLIP-2 | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | disponible en HuggingFace |
-| CLIP (alternativa clasica de retrieval imagen-texto) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | disponible en HuggingFace |
+| justinwanman/blip-retrieval | 49.600 en safetensors (escala declarada `xlarge`, incoherente) | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas |
+| Salesforce BLIP (referencia original de la arquitectura) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | disponible en Hugging Face |
+| BLIP-2 | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | disponible en Hugging Face |
+| CLIP (alternativa clasica de retrieval imagen-texto) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | disponible en Hugging Face |
 
 No se dispone de datos verificados en la informacion proporcionada para cuantificar la comparacion. La unica conclusion defendible es que este repositorio no es comparable, en su estado actual, con checkpoints entrenados de la misma familia, porque su checkpoint no ha sido entrenado ni evaluado.
 
@@ -90,7 +90,7 @@ No se dispone de datos verificados en la informacion proporcionada para cuantifi
 - Checkpoint sin entrenar: `model.safetensors` es una inicializacion valida solo para smoke tests; no se ha entrenado ni auditado en robustez, equidad o transferencia de dominio.
 - Ausencia de benchmarks: no existe ninguna puntuacion verificable, por lo que no se puede afirmar ninguna capacidad de rendimiento.
 - Incoherencia de parametros: la etiqueta `xlarge` de la model card no concuerda con los 49.600 parametros del fichero safetensors, lo que impide estimar requisitos reales de memoria y computo.
-- API de carga no estandar: al ser una implementacion personalizada, las utilidades automaticas de HuggingFace necesitan un adaptador explicito; no se puede cargar con `AutoModel.from_pretrained` sin trabajo adicional.
+- API de carga no estandar: al ser una implementacion personalizada, las utilidades automaticas de Hugging Face necesitan un adaptador explicito; no se puede cargar con `AutoModel.from_pretrained` sin trabajo adicional.
 - Idiomas no declarados: no hay lista de idiomas soportados ni evaluacion multilingue.
 - Sesgos: no disponibles; no se ha realizado ninguna auditoria de sesgo, y cualquier sesgo presente en los datos de un futuro entrenamiento seria responsabilidad del usuario.
 - Riesgo de alucinacion: no evaluado; en tareas de retrieval el riesgo se manifiesta como falsos positivos en la recuperacion, no como texto generado.
@@ -100,6 +100,6 @@ No se dispone de datos verificados en la informacion proporcionada para cuantifi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/justinwanman/blip-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/justinwanman/blip-retrieval
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: las entradas recuperadas correspondian a YouTube y YouTube Music, sin relacion con BLIP ni con retrieval multimodal.
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo o demos adicionales asociados a este modelo.

@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Brajone2/mixer-matching | 24.832 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace (checkpoint de inicialización) |
+| Brajone2/mixer-matching | 24.832 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face (checkpoint de inicialización) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables directos. Arquitectónicamente, la referencia conceptual es la familia MLP-Mixer (Tolstikhin et al., 2021), pero no se trata de una reimplementación de un checkpoint oficial ni existen datos que permitan una comparación cuantitativa justa.
@@ -85,7 +85,7 @@ No se dispone de información sobre modelos comparables directos. Arquitectónic
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Brajone2/mixer-matching
+- Repositorio en Hugging Face: https://huggingface.co/Brajone2/mixer-matching
 - Otro repositorio del mismo autor: https://huggingface.co/Brajone2/retrieval-beta
 
 Los resultados de la búsqueda web sobre "Mixer" (mixerai.org, Shutterstock Model Match, ModelMixer.ai, photoeditor.ai) no guardan relación con este modelo y se omiten por no ser enlaces relevantes.

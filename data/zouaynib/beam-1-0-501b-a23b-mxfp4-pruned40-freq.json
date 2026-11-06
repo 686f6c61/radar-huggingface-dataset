@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "zouaynib/Beam-1.0-501B-A23B-MXFP4-Pruned40-Freq",
+  "slug": "zouaynib-beam-1-0-501b-a23b-mxfp4-pruned40-freq",
+  "author": "zouaynib",
+  "url": "https://huggingface.co/zouaynib/Beam-1.0-501B-A23B-MXFP4-Pruned40-Freq",
+  "created_at": "2026-11-01T18:34:54.000Z",
+  "updated_at": "2026-11-01T21:21:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beam",
+    "mixture-of-experts",
+    "mxfp4",
+    "expert-pruning",
+    "amd",
+    "rocm",
+    "mi300x",
+    "vllm",
+    "text-generation",
+    "conversational",
+    "base_model:zouaynib/Beam-1.0-501B-A23B-MXFP4",
+    "base_model:quantized:zouaynib/Beam-1.0-501B-A23B-MXFP4",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 394,
+  "trending_score": 0,
+  "parameters": 154425003736,
+  "parameters_human": "154.43B",
+  "storage_bytes": 171650436960,
+  "storage_human": "171.7 GB",
+  "base_model": "zouaynib/Beam-1.0-501B-A23B-MXFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beam 1.0 501B A23B MXFP4 by zouaynib",
+      "url": "https://llm-explorer.com/model/zouaynib%2FBeam-1.0-501B-A23B-MXFP4,4lDPMbMSGT1cejnKLCN3QE",
+      "snippet": "Beam 1.0 501B A23B MXFP4 is an open-source 501b LLM by zouaynib. VRAM 209.6GB, 1024K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "reflection/Beam-1.0-501B-A23B · Hugging Face",
+      "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+      "snippet": "Usage Beam is a text model intended for commercial and research use, including applications such as assistant-style generation, software engineering and agentic coding tasks, long-horizon agentic tasks and summarization, and as a base model for fine-tuning."
+    }
+  ]
+}

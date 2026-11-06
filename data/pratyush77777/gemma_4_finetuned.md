@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Pratyush77777/gemma_4_finetuned` es un ajuste fino (fine-tuning) del modelo base `unsloth/gemma-4-E2B`, publicado por el usuario Pratyush77777 en HuggingFace. Se trata de un modelo de generación de texto derivado de la familia Gemma 4, concretamente de la variante E2B, que el autor ha entrenado utilizando la librería Unsloth, una herramienta optimizada para acelerar el entrenamiento de modelos de lenguaje. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere que los pesos publicados podrían corresponder a una versión cuantizada o a un subconjunto del modelo completo.
+`Pratyush77777/gemma_4_finetuned` es un ajuste fino (fine-tuning) del modelo base `unsloth/gemma-4-E2B`, publicado por el usuario Pratyush77777 en Hugging Face. Se trata de un modelo de generación de texto derivado de la familia Gemma 4, concretamente de la variante E2B, que el autor ha entrenado utilizando la librería Unsloth, una herramienta optimizada para acelerar el entrenamiento de modelos de lenguaje. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere que los pesos publicados podrían corresponder a una versión cuantizada o a un subconjunto del modelo completo.
 
 La relevancia de esta ficha es limitada: se trata de un modelo con cero descargas y cero likes en el momento de la consulta, sin model card detallada más allá de la plantilla estándar de Unsloth. No se especifican los datos de entrenamiento, el número de tokens, la composición del dataset ni los hiperparámetros utilizados. La información disponible es, por tanto, mínima y muchas de las especificaciones técnicas habituales no están disponibles.
 
@@ -43,7 +43,7 @@ El entrenamiento se realizó con Unsloth, una librería que optimiza el fine-tun
 - Generación de texto en aplicaciones de bajo requisito computacional: si los pesos publicados son una versión reducida o cuantizada, podría desplegarse en hardware modesto para tareas de generación simple en inglés.
 - Base para futuros fine-tunes: al estar publicado con licencia permisiva, puede servir como punto de partida para ajustes específicos de dominio.
 - Evaluación de la calidad del fine-tuning: comparar las salidas con el modelo base `unsloth/gemma-4-E2B` para medir el impacto del ajuste.
-- Docencia y demostraciones: ejemplo de publicación de un fine-tuning con Unsloth en HuggingFace, útil para talleres sobre fine-tuning de LLMs.
+- Docencia y demostraciones: ejemplo de publicación de un fine-tuning con Unsloth en Hugging Face, útil para talleres sobre fine-tuning de LLMs.
 
 ## Benchmarks y rendimiento
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Pratyush77777/gemma_4_finetuned | no disponible | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| unsloth/gemma-4-E2B (base) | no disponible | no disponible | no disponible | HuggingFace |
+| Pratyush77777/gemma_4_finetuned | no disponible | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| unsloth/gemma-4-E2B (base) | no disponible | no disponible | no disponible | Hugging Face |
 | Gemma 4 (familia oficial) | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que la comparativa cuantitativa no es posible.
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento ni de especificaciones completas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Pratyush77777/gemma_4_finetuned
+- Hugging Face: https://huggingface.co/Pratyush77777/gemma_4_finetuned
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B
 - Unsloth (GitHub): https://github.com/unslothai/unsloth

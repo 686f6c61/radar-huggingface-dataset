@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_generator_AS_tracin_alpaca_qwen3b` es un artefacto publicado en HuggingFace por el usuario `ishikaa`. Su nombre sugiere que se trata de un modelo derivado de la familia Qwen (la etiqueta de la libreria indica `qwen2`), entrenado o ajustado sobre el dataset Alpaca y vinculado a algun procedimiento de adquisicion de datos basado en TracIn (estimacion de la influencia de ejemplos de entrenamiento mediante trazas de gradiente). No obstante, el autor no ha documentado nada de esto: la model card es la plantilla autogenerada por HuggingFace, con todos los campos marcados como `[More Information Needed]`.
+El modelo `ishikaa/acquisition_generator_AS_tracin_alpaca_qwen3b` es un artefacto publicado en Hugging Face por el usuario `ishikaa`. Su nombre sugiere que se trata de un modelo derivado de la familia Qwen (la etiqueta de la libreria indica `qwen2`), entrenado o ajustado sobre el dataset Alpaca y vinculado a algun procedimiento de adquisicion de datos basado en TracIn (estimacion de la influencia de ejemplos de entrenamiento mediante trazas de gradiente). No obstante, el autor no ha documentado nada de esto: la model card es la plantilla autogenerada por Hugging Face, con todos los campos marcados como `[More Information Needed]`.
 
 La relevancia del modelo es, por tanto, muy limitada fuera del ambito de reproduccion de experimentos. Se trata de un repositorio con 0 descargas y 0 likes, sin licencia declarada, sin idiomas declarados y sin resultados de evaluacion. El interes principal, si lo hay, es como material de estudio de tecnicas de seleccion o influencia de datos en el ajuste fino, no como modelo listo para produccion.
 
@@ -12,7 +12,7 @@ Existe ademas una discrepancia tecnica sin resolver: el recuento de parametros d
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only causal (etiqueta `qwen2` en HuggingFace; no confirmado por el autor) |
+| Arquitectura | Transformer decoder-only causal (etiqueta `qwen2` en Hugging Face; no confirmado por el autor) |
 | Parametros totales | 14.770.033.664 segun safetensors (el nombre del modelo sugiere ~3B; discrepancia no aclarada) |
 | Parametros activos | no aplica (no hay indicios de arquitectura MoE) |
 | Longitud de contexto | no disponible (la model card no la especifica) |
@@ -44,8 +44,8 @@ Respecto a los datos, el nombre del modelo menciona `alpaca` (probablemente el d
 - Punto de partida para ajuste fino adicional: al ser un modelo transformer estandar en safetensors, se puede cargar con la libreria `transformers` y aplicar LoRA o QLoRA sobre un dominio concreto, asumiendo el riesgo de partir de una base sin evaluar.
 - Base para tareas de generacion de texto generica: tecnicamente puede emplearse para completar texto o mantener conversaciones, pero sin benchmarks ni model card no hay garantia de calidad, por lo que solo seria aceptable en prototipos internos.
 - Analisis de sesgos y comportamiento de modelos ajustados con Alpaca: util para comparar como varian las salidas respecto a la base Qwen original sin ajustar.
-- Docencia y formacion: ejemplo practico de publicacion incompleta en HuggingFace, util para ilustrar buenas practicas de documentacion de modelos en un aula o taller.
-- Despliegue experimental en HuggingFace Inference Endpoints: la etiqueta `endpoints_compatible` indica que la plataforma puede cargarlo, lo que permite probarlo sin infraestructura propia, aunque no haya datos de rendimiento.
+- Docencia y formacion: ejemplo practico de publicacion incompleta en Hugging Face, util para ilustrar buenas practicas de documentacion de modelos en un aula o taller.
+- Despliegue experimental en Hugging Face Inference Endpoints: la etiqueta `endpoints_compatible` indica que la plataforma puede cargarlo, lo que permite probarlo sin infraestructura propia, aunque no haya datos de rendimiento.
 
 ## Benchmarks y rendimiento
 
@@ -61,7 +61,7 @@ Las estimaciones siguientes se basan en el recuento de safetensors (14,77B de pa
 - VRAM en int4 (GPTQ/AWQ o similar, previa cuantizacion propia, ya que no se publican): aproximadamente 8 GB de pesos, unos 12 GB en total.
 - GPU recomendadas: A100 40 GB o 80 GB, H100 80 GB, L40S 48 GB o RTX 6000 Ada para bf16 en una sola tarjeta. En consumer, 2 x RTX 4090 (24 GB) con paralelismo tensorial para bf16, o una sola RTX 4090 / RTX 3090 para int8 e int4.
 - Cabe en consumer GPU: en cuantizacion de 4 bits si, en tarjetas de 12 a 16 GB con contexto moderado; en bf16 no cabe en una consumer de 24 GB.
-- Opciones de despliegue: `transformers`, vLLM o TGI para servicio con loteo continuo, y HuggingFace Inference Endpoints. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, puesto que no se publican ficheros GGUF.
+- Opciones de despliegue: `transformers`, vLLM o TGI para servicio con loteo continuo, y Hugging Face Inference Endpoints. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, puesto que no se publican ficheros GGUF.
 - Latencia y throughput: no disponibles. No se han publicado mediciones para este modelo concreto y no hay informacion sobre el hardware utilizado.
 
 ## Comparativa con modelos similares
@@ -92,8 +92,8 @@ Conclusion: frente a cualquiera de estas alternativas, el modelo analizado carec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_tracin_alpaca_qwen3b
-- Perfil del autor en HuggingFace: https://huggingface.co/ishikaa
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_tracin_alpaca_qwen3b
+- Perfil del autor en Hugging Face: https://huggingface.co/ishikaa
 - Referencia citada en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental enlazada en la plantilla: https://mlco2.github.io/impact
 - Referencia metodologica probable a partir del nombre del modelo (Pruthi et al., 2020, TracIn): https://arxiv.org/abs/2002.08484

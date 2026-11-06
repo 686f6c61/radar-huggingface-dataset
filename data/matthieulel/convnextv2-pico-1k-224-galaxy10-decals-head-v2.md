@@ -76,9 +76,9 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parametros | Contexto / entrada | Accuracy en Galaxy10 DECaLS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (head-only, ConvNeXt V2 pico) | 8,56 M | 224x224 px | 54,57 % (test, semilla 42) | Apache 2.0 | HuggingFace |
-| Otros backbones de la colección Vision Foundation Models Benchmark (40 backbones, 2 regímenes) | variable | 224x224 px | no disponible en esta ficha | según backbone | HuggingFace (colección del autor) |
-| `facebook/convnextv2-pico-1k-224` (modelo base) | ~9 M | 224x224 px | no aplica (ImageNet-1K, sin cabeza de galaxias) | Apache 2.0 | HuggingFace |
+| Este checkpoint (head-only, ConvNeXt V2 pico) | 8,56 M | 224x224 px | 54,57 % (test, semilla 42) | Apache 2.0 | Hugging Face |
+| Otros backbones de la colección Vision Foundation Models Benchmark (40 backbones, 2 regímenes) | variable | 224x224 px | no disponible en esta ficha | según backbone | Hugging Face (colección del autor) |
+| `facebook/convnextv2-pico-1k-224` (modelo base) | ~9 M | 224x224 px | no aplica (ImageNet-1K, sin cabeza de galaxias) | Apache 2.0 | Hugging Face |
 
 No se dispone en la información proporcionada de resultados numéricos de otros clasificadores de morfología galáctica (por ejemplo, modelos especializados tipo Galaxy Zoo o Zoobot) que permitan una comparación cuantitativa fiable; se indica como no disponible.
 
@@ -95,7 +95,7 @@ No se dispone en la información proporcionada de resultados numéricos de otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/convnextv2-pico-1k-224-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/convnextv2-pico-1k-224-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/facebook/convnextv2-pico-1k-224
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones y métricas por época: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

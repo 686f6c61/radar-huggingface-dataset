@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Doppelganger-Twist-24B-GGUF** es una cuantización en formato GGUF del modelo original **Doppelganger-Twist-24B**, publicado por Naphula en HuggingFace. La conversión ha sido realizada por **mradermacher**, un usuario conocido por generar versiones cuantizadas de modelos open source para su ejecución eficiente en CPU y GPU con herramientas como llama.cpp, Ollama o LM Studio.
+El modelo **Doppelganger-Twist-24B-GGUF** es una cuantización en formato GGUF del modelo original **Doppelganger-Twist-24B**, publicado por Naphula en Hugging Face. La conversión ha sido realizada por **mradermacher**, un usuario conocido por generar versiones cuantizadas de modelos open source para su ejecución eficiente en CPU y GPU con herramientas como llama.cpp, Ollama o LM Studio.
 
 El nombre sugiere que el modelo base tiene aproximadamente 24 mil millones de parámetros, aunque no se dispone de confirmación oficial ni de detalles técnicos adicionales en la información proporcionada. La relevancia de esta ficha radica en que las cuantizaciones GGUF permiten desplegar modelos de gran tamaño en hardware más modesto, reduciendo los requisitos de memoria y acelerando la inferencia, a costa de una ligera pérdida de precisión.
 
@@ -62,5 +62,5 @@ No se dispone de información sobre modelos comparables. Sin datos de arquitectu
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/mradermacher/Doppelganger-Twist-24B-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/mradermacher/Doppelganger-Twist-24B-GGUF)
 - [Modelo original (referenciado en la model card)](https://huggingface.co/Naphula/Doppelganger-Twist-24B)

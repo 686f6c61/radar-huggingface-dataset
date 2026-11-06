@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bambangwulandari/poolformer-multitask-tryout10` es un prototipo de investigación publicado en HuggingFace por el usuario bambangwulandari. Se presenta como una implementación de arquitectura PoolFormer orientada a tareas multitarea, con una configuración etiquetada como "giant" en la model card. No se trata de un modelo entrenado ni validado: el propio autor indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint con benchmarks.
+`bambangwulandari/poolformer-multitask-tryout10` es un prototipo de investigación publicado en Hugging Face por el usuario bambangwulandari. Se presenta como una implementación de arquitectura PoolFormer orientada a tareas multitarea, con una configuración etiquetada como "giant" en la model card. No se trata de un modelo entrenado ni validado: el propio autor indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint con benchmarks.
 
 El interés del repositorio es fundamentalmente documental y educativo: incluye un script de inferencia/entrenamiento (`inference.py`), un `config.json` con los parámetros de arquitectura y un `training_args.json` con la receta de experimento por defecto (AdamW con scheduler OneCycle). El tamaño del repositorio es de 0,0 GB y el número de parámetros registrado en los safetensors es de 16.576, un dato que resulta llamativamente bajo para una configuración "giant" y que sugiere que el checkpoint no refleja la arquitectura completa descrita.
 
@@ -74,5 +74,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bambangwulandari/poolformer-multitask-tryout10
+- Hugging Face: https://huggingface.co/bambangwulandari/poolformer-multitask-tryout10
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `qwen-0.6b-brain-v1` es un ajuste fino (fine-tune) del modelo base Qwen3 0.6B, desarrollado por el usuario de HuggingFace `momopapagugumimi`. El modelo ha sido convertido al formato GGUF mediante la herramienta Unsloth, lo que permite su ejecución eficiente en CPU y en GPUs de bajos recursos mediante motores de inferencia como llama.cpp u Ollama. Con aproximadamente 596 millones de parámetros, se trata de un modelo de tamaño reducido orientado a tareas conversacionales y de generación de texto en entornos con limitaciones de hardware.
+El modelo `qwen-0.6b-brain-v1` es un ajuste fino (fine-tune) del modelo base Qwen3 0.6B, desarrollado por el usuario de Hugging Face `momopapagugumimi`. El modelo ha sido convertido al formato GGUF mediante la herramienta Unsloth, lo que permite su ejecución eficiente en CPU y en GPUs de bajos recursos mediante motores de inferencia como llama.cpp u Ollama. Con aproximadamente 596 millones de parámetros, se trata de un modelo de tamaño reducido orientado a tareas conversacionales y de generación de texto en entornos con limitaciones de hardware.
 
 La relevancia de este modelo radica en su capacidad para ofrecer una experiencia de chat funcional en dispositivos de gama baja, edge computing o aplicaciones donde el consumo de memoria y energía es crítico. Al estar basado en la arquitectura Qwen3, hereda las capacidades multilingües y de razonamiento del modelo original, aunque con las limitaciones propias de su tamaño reducido. El repositorio incluye únicamente un archivo GGUF cuantizado a Q4_K_M, lo que facilita su despliegue inmediato con herramientas compatibles.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 |---|---|---|---|---|---|
 | qwen-0.6b-brain-v1 (este) | 596M | no disponible | no disponible | GGUF | Fine-tune de Qwen3 0.6B |
 | Qwen2.5-0.5B | 494M | 32K | Apache 2.0 | safetensors, GGUF | Modelo base de Alibaba, ampliamente usado |
-| SmolLM2-0.6B | 635M | 2K (ampliable) | Apache 2.0 | safetensors, GGUF | Desarrollado por HuggingFace, optimizado para dispositivos |
+| SmolLM2-0.6B | 635M | 2K (ampliable) | Apache 2.0 | safetensors, GGUF | Desarrollado por Hugging Face, optimizado para dispositivos |
 | TinyLlama-1.1B | 1.1B | 2K | Apache 2.0 | safetensors, GGUF | Más grande, pero con contexto limitado |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos para este fine-tune concreto. La comparativa se basa únicamente en características técnicas generales.
@@ -75,6 +75,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos para este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/momopapagugumimi/qwen-0.6b-brain-v1
+- Modelo en Hugging Face: https://huggingface.co/momopapagugumimi/qwen-0.6b-brain-v1
 - Unsloth (herramienta de entrenamiento y conversión): https://github.com/unslothai/unsloth
 - Qwen3 (modelo base): https://huggingface.co/Qwen/Qwen3-0.6B

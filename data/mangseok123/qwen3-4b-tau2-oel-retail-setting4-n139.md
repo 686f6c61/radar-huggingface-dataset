@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks para este checkpoint. La model card
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-4b-tau2-oel-retail-s4-n139 | 4.411.424.256 | No disponible | Sin mejora demostrada sobre la base; sin evaluar en test | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4B | No disponible en la informacion proporcionada | Referencia de partida del ajuste; el autor indica que OEL no la supera | apache-2.0 | HuggingFace, modelo oficial de Qwen |
-| Otros checkpoints de la serie OEL del mismo autor | No disponible | No disponible | Resultados dentro de un error estandar respecto a la base | No disponible | HuggingFace, autor MANGSEOK123 |
+| qwen3-4b-tau2-oel-retail-s4-n139 | 4.411.424.256 | No disponible | Sin mejora demostrada sobre la base; sin evaluar en test | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4B | No disponible en la informacion proporcionada | Referencia de partida del ajuste; el autor indica que OEL no la supera | apache-2.0 | Hugging Face, modelo oficial de Qwen |
+| Otros checkpoints de la serie OEL del mismo autor | No disponible | No disponible | Resultados dentro de un error estandar respecto a la base | No disponible | Hugging Face, autor MANGSEOK123 |
 
 No se dispone de datos de benchmarks que permitan comparaciones cuantitativas con alternativas de la misma categoria.
 
@@ -90,6 +90,6 @@ No se dispone de datos de benchmarks que permitan comparaciones cuantitativas co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-oel-retail-setting4-n139
+- Modelo en Hugging Face: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-oel-retail-setting4-n139
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - No se han proporcionado en la informacion disponible enlaces a papers, blogs, repositorios ni demos adicionales.

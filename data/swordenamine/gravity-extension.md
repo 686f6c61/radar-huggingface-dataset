@@ -4,7 +4,7 @@
 
 El repositorio `swordenamine/gravity-extension` no contiene un modelo de inteligencia artificial, sino el paquete de una extensión de navegador para Chrome llamada Gravity Tools. Según la model card, se trata de una barra lateral oscura que agrupa ocho utilidades en una sola columna: notas en Markdown, selector de colores, calculadora, temporizador, codificador/decodificador, conversor de unidades, probador de expresiones regulares y gestor de fragmentos de texto. No hay pesos, tokenizador, configuración de arquitectura ni artefactos de inferencia en la información disponible.
 
-El autor es el usuario de HuggingFace `swordenamine`, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta. La ficha se ha creado el 17 de octubre de 2026 y se ha actualizado por última vez el 25 de febrero de 2026. No se declara licencia, idioma ni pipeline de ningún tipo.
+El autor es el usuario de Hugging Face `swordenamine`, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta. La ficha se ha creado el 17 de octubre de 2026 y se ha actualizado por última vez el 25 de febrero de 2026. No se declara licencia, idioma ni pipeline de ningún tipo.
 
 Dado que no existe un modelo subyacente, esta ficha no puede aportar especificaciones de arquitectura, parámetros, contexto, cuantización ni benchmarks. Todos los campos técnicos se marcan como "no disponible" y se documenta únicamente lo que la model card describe sobre la extensión. Los resultados de búsqueda web recuperados para este identificador no guardan relación con el repositorio ni con ningún modelo de IA, por lo que se descartan por completo.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| swordenamine/gravity-extension | no disponible (no es un modelo) | no disponible | no disponible | no disponible | Repositorio de HuggingFace con 0 descargas |
+| swordenamine/gravity-extension | no disponible (no es un modelo) | no disponible | no disponible | no disponible | Repositorio de Hugging Face con 0 descargas |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables, ya que el artefacto analizado es una extensión de navegador y no un modelo de lenguaje.
@@ -85,4 +85,4 @@ No se dispone de información sobre modelos comparables, ya que el artefacto ana
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/gravity-extension
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/gravity-extension

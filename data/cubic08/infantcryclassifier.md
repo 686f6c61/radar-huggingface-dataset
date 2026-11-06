@@ -2,9 +2,9 @@
 
 ## Resumen
 
-InfantCryClassifier es un modelo de clasificación de audio publicado en HuggingFace por el usuario Cubic08. Su propósito declarado es la clasificación de audio, y por el nombre del repositorio se infiere que está orientado a la detección o categorización de llantos de bebés, aunque la model card no detalla las clases de salida ni el dataset de entrenamiento. El pipeline oficial es `audio-classification` y el idioma declarado es inglés.
+InfantCryClassifier es un modelo de clasificación de audio publicado en Hugging Face por el usuario Cubic08. Su propósito declarado es la clasificación de audio, y por el nombre del repositorio se infiere que está orientado a la detección o categorización de llantos de bebés, aunque la model card no detalla las clases de salida ni el dataset de entrenamiento. El pipeline oficial es `audio-classification` y el idioma declarado es inglés.
 
-El repositorio tiene un tamaño de 0.0 GB según los metadatos de HuggingFace, lo que sugiere que o bien los pesos no se han subido, o bien son de un tamaño inferior al umbral de redondeo de la plataforma. No se han publicado descargas ni interacciones (0 descargas, 0 likes) desde su creación el 29 de octubre de 2026, por lo que se trata de un artefacto muy reciente y sin validación comunitaria.
+El repositorio tiene un tamaño de 0.0 GB según los metadatos de Hugging Face, lo que sugiere que o bien los pesos no se han subido, o bien son de un tamaño inferior al umbral de redondeo de la plataforma. No se han publicado descargas ni interacciones (0 descargas, 0 likes) desde su creación el 29 de octubre de 2026, por lo que se trata de un artefacto muy reciente y sin validación comunitaria.
 
 La relevancia práctica de este modelo es limitada a fecha de la información disponible: no hay benchmarks, no hay especificaciones de arquitectura, no hay detalle sobre el dataset ni sobre el proceso de entrenamiento. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación, pero la ausencia de documentación técnica hace imprescindible una evaluación empírica propia antes de considerarlo en producción.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cubic08/InfantCryClassifier | no disponible | no aplica | no disponible | Apache 2.0 | HuggingFace, sin descargas |
+| Cubic08/InfantCryClassifier | no disponible | no aplica | no disponible | Apache 2.0 | Hugging Face, sin descargas |
 | Alternativas de clasificacion de audio | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa fiable con otros clasificadores de audio o de llanto infantil. La ausencia de benchmarks y de especificaciones impide una comparacion objetiva.
@@ -81,4 +81,4 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cubic08/InfantCryClassifier
+- Hugging Face: https://huggingface.co/Cubic08/InfantCryClassifier

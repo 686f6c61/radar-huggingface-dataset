@@ -64,9 +64,9 @@ No se han publicado resultados de closed-loop (tasa de éxito en simulación) ni
 
 | Modelo | Parametros | Contexto | Tareas evaluadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rohansiva/gr00t-libero-x (este) | 3,14 B | no disponible | LIBERO-X (60 tareas) | Apache 2.0 | HuggingFace |
-| nvidia/GR00T-N1.7-LIBERO (base) | 3,14 B | no disponible | LIBERO (10 tareas) | Apache 2.0 | HuggingFace |
-| OpenVLA (7B) | 7 B | 32k (texto) | 21 tareas (varios benchmarks) | MIT | HuggingFace |
+| rohansiva/gr00t-libero-x (este) | 3,14 B | no disponible | LIBERO-X (60 tareas) | Apache 2.0 | Hugging Face |
+| nvidia/GR00T-N1.7-LIBERO (base) | 3,14 B | no disponible | LIBERO (10 tareas) | Apache 2.0 | Hugging Face |
+| OpenVLA (7B) | 7 B | 32k (texto) | 21 tareas (varios benchmarks) | MIT | Hugging Face |
 
 El modelo aquí descrito es un fine-tuning del segundo, por lo que su rendimiento en LIBERO-X debería ser superior al del base en ese benchmark, aunque no se dispone de comparación directa publicada. OpenVLA es un VLA de mayor tamaño con licencia permisiva, pero no está específicamente adaptado a LIBERO-X.
 
@@ -80,9 +80,9 @@ El modelo aquí descrito es un fine-tuning del segundo, por lo que su rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohansiva/gr00t-libero-x
+- Modelo en Hugging Face: https://huggingface.co/rohansiva/gr00t-libero-x
 - Modelo base NVIDIA GR00T N1.7-LIBERO: https://huggingface.co/nvidia/GR00T-N1.7-LIBERO
 - Repositorio GitHub de NVIDIA Isaac GR00T: https://github.com/NVIDIA/Isaac-GR00T
 - Documentación de Isaac GR00T: https://grootdocs.com/
 - Benchmark LIBERO-X: https://meituan.github.io/LIBERO-X/
-- Dataset LIBERO-X en HuggingFace: https://huggingface.co/datasets/meituan/LIBERO-X
+- Dataset LIBERO-X en Hugging Face: https://huggingface.co/datasets/meituan/LIBERO-X

@@ -29,7 +29,7 @@ Datos adicionales:
 | Capas intervenidas (tapped layers) | [14, 29, 43] |
 | Salidas | 8 clases de intención de consulta + puntuación de inseguridad + puntuación de alucinación |
 | Sobrecoste en decodificación | < 0,5% |
-| Descargas / Likes en HuggingFace | 302 / 1 |
+| Descargas / Likes en Hugging Face | 302 / 1 |
 
 ## Arquitectura y entrenamiento
 
@@ -102,7 +102,7 @@ La ventaja diferencial de SingProbe no es solo el tamaño (tres órdenes de magn
 - No es un modelo generativo: no puede usarse como chatbot ni para producir texto; su única función es la clasificación y puntuación de riesgo.
 - Requiere obligatoriamente el modelo base exacto zai-org/GLM-5.3-Flash; no es portable a otros modelos sin reentrenamiento.
 - Depende de integraciones en ramas específicas de SGLang y vLLM, no en las versiones estables oficiales, lo que puede suponer un riesgo de mantenimiento a medio plazo.
-- Usa custom code (`custom_code`, atención `sing_probe_attn`), lo que exige confiar en el código remoto de HuggingFace (`trust_remote_code`) y revisarlo antes de uso en producción.
+- Usa custom code (`custom_code`, atención `sing_probe_attn`), lo que exige confiar en el código remoto de Hugging Face (`trust_remote_code`) y revisarlo antes de uso en producción.
 - Los idiomas soportados no están especificados en la model card; conviene validar el comportamiento en castellano antes de desplegar.
 - La licencia es "other" (glm-5.3-flash) y hereda las condiciones de la licencia del modelo base zai-org/GLM-5.3-Flash; debe revisarse esa licencia antes de cualquier uso comercial.
 - Las métricas de benchmarks son promedios sobre suites concretas elegidas por los autores; el rendimiento en dominios no cubiertos por esos benchmarks no está garantizado.
@@ -110,7 +110,7 @@ La ventaja diferencial de SingProbe no es solo el tamaño (tres órdenes de magn
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inclusionAI/GLM-5.3-Flash-singprobe
+- Modelo en Hugging Face: https://huggingface.co/inclusionAI/GLM-5.3-Flash-singprobe
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Informe técnico (arXiv): https://arxiv.org/abs/2608.30703
 - Código de entrenamiento (GitHub): https://github.com/inclusionAI/SingProbe

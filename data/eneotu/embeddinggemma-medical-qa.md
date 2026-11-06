@@ -2,7 +2,7 @@
 
 ## Resumen
 
-eneotu/embeddinggemma-medical-qa es un modelo de embeddings de frases publicado por el usuario eneotu en HuggingFace, obtenido mediante ajuste fino de unsloth/embeddinggemma-300m, que a su vez deriva de la familia EmbeddingGemma de Google basada en la arquitectura Gemma 3 text (tag `gemma3_text`). No es un modelo generativo: su salida son vectores densos que permiten calcular similitud semantica entre textos, y su pipeline declarado es `sentence-similarity` con tareas asociadas de `feature-extraction` y recuperacion de informacion.
+eneotu/embeddinggemma-medical-qa es un modelo de embeddings de frases publicado por el usuario eneotu en Hugging Face, obtenido mediante ajuste fino de unsloth/embeddinggemma-300m, que a su vez deriva de la familia EmbeddingGemma de Google basada en la arquitectura Gemma 3 text (tag `gemma3_text`). No es un modelo generativo: su salida son vectores densos que permiten calcular similitud semantica entre textos, y su pipeline declarado es `sentence-similarity` con tareas asociadas de `feature-extraction` y recuperacion de informacion.
 
 El ajuste se ha realizado con la libreria sentence-transformers sobre un conjunto de 10.000 pares (tag `dataset_size:10000`) y la funcion de perdida MultipleNegativesRankingLoss, un esquema de negativos en lote habitual en recuperacion densa. El nombre del modelo y los ejemplos del widget de la model card (una pregunta clinica en ingles enfrentada a fragmentos biomedicos en ingles y en frances) apuntan a un uso especializado en dominio medico y posiblemente multilingue, aunque el autor no documenta ni el corpus de entrenamiento ni los idiomas cubiertos.
 
@@ -41,7 +41,7 @@ El ajuste se ha realizado con la libreria sentence-transformers con la perdida M
 - Recuperacion de informacion (`information-retrieval`) en dominio biomedico, segun se deduce del nombre del modelo y de los ejemplos del widget.
 - Emparejamiento pregunta-documento en contextos de pregunta-respuesta medica, tal como ilustra el widget con la consulta sobre tratamiento de tumores SFT.
 - Posible cobertura multilingue: los ejemplos del widget incluyen texto en ingles y en frances, aunque el autor no declara lista de idiomas.
-- Compatibilidad declarada con Text Embeddings Inference (`text-embeddings-inference`) y con Inference Endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad declarada con Text Embeddings Inference (`text-embeddings-inference`) y con Inference Endpoints de Hugging Face (`endpoints_compatible`).
 - No genera texto, no realiza razonamiento multi-paso, no soporta tool calling ni function calling y no procesa imagenes ni audio: es exclusivamente un modelo de representacion.
 
 ## Casos de uso
@@ -82,7 +82,7 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 - VRAM estimada para inferencia, asumiendo aproximadamente 300 M de parametros y etiquetando los calculos como estimaciones a partir del tamano del modelo base: en fp32, en torno a 1,2 GB solo de pesos (unos 2 GB con overhead de runtime); en fp16/bf16, unos 0,6 GB de pesos; en int8, unos 0,3 GB. La longitud de contexto no esta documentada, por lo que el consumo de activaciones con lotes grandes no puede acotarse.
 - GPU recomendadas: cualquier GPU con 2 GB o mas de VRAM es suficiente. En la practica, una RTX 3060, RTX 4060, RTX 4090 o una GPU de datacenter como T4, L4, A10G, A100 o H100 funcionan sin limitaciones de memoria. El modelo tambien es viable en CPU.
 - Cabe en GPU de consumo: si, practicamente en cualquier GPU de consumo actual, y tambien en hardware de gama baja o en CPU.
-- Opciones de despliegue: sentence-transformers (libreria declarada), Text Embeddings Inference (tag explicito) e Inference Endpoints de HuggingFace (tag `endpoints_compatible`). Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, conversion que el autor no documenta.
+- Opciones de despliegue: sentence-transformers (libreria declarada), Text Embeddings Inference (tag explicito) e Inference Endpoints de Hugging Face (tag `endpoints_compatible`). Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, conversion que el autor no documenta.
 - Latencia y throughput: no disponibles; el autor no publica mediciones. En un modelo de este tamano se espera latencia de milisegundos por lote en GPU, pero no hay datos confirmados en la informacion proporcionada.
 - Nota de coherencia: el repositorio declarado ocupa 0,1 GB, por debajo de lo esperable para 300 M de parametros en fp32 (aproximadamente 1,2 GB), por lo que conviene verificar el contenido real de los archivos antes de dimensionar la infraestructura.
 
@@ -92,7 +92,7 @@ No se dispone de resultados de benchmarks de terceros ni de fichas comparables e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| eneotu/embeddinggemma-medical-qa | No declarado; ~300 M segun el nombre del base | No disponible | No disponible | Publicado en HuggingFace, 0 descargas, 0 likes |
+| eneotu/embeddinggemma-medical-qa | No declarado; ~300 M segun el nombre del base | No disponible | No disponible | Publicado en Hugging Face, 0 descargas, 0 likes |
 | unsloth/embeddinggemma-300m (modelo base) | No disponible | No disponible | No disponible | Modelo base del ajuste; sin especializacion en dominio medico documentada |
 | EmbeddingGemma 300M original de Google | No disponible | No disponible | No disponible | Origen de la familia; datos no presentes en la informacion proporcionada |
 | Modelos de embeddings biomedicos derivados de PubMedBERT y similares | No disponible | No disponible | No disponible | Alternativas habituales en recuperacion medica; no se dispone de datos comparativos en esta busqueda |
@@ -116,7 +116,7 @@ No es posible comparar rendimiento (Accuracy@k, NDCG, MTEB) con alternativas por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eneotu/embeddinggemma-medical-qa
+- Modelo en Hugging Face: https://huggingface.co/eneotu/embeddinggemma-medical-qa
 - Modelo base: https://huggingface.co/unsloth/embeddinggemma-300m
 - Referencia arXiv declarada en los tags: https://arxiv.org/abs/1908.10084
 - Referencia arXiv declarada en los tags: https://arxiv.org/abs/1807.03748

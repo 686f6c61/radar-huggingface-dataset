@@ -6,7 +6,7 @@ Este repositorio contiene un checkpoint de pregunta-respuesta extractiva (questi
 
 El nombre del repositorio ("XLM-R-Base-squad-tr-s42-LegameX-LoRA-add-v261010223343") sugiere, aunque no esta confirmado en la documentacion, un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre un dataset de tipo SQuAD en turco ("squad-tr"), con semilla 42 y algun tipo de mezcla o adicion de adaptadores (etiqueta "LegameX"). El autor es el usuario alxxtexxr y el modelo se publico el 10 de octubre de 2026, sin descargas ni "likes" registrados.
 
-La relevancia de esta ficha es limitada: la model card es la plantilla autogenerada de HuggingFace y no aporta informacion sobre datos de entrenamiento, hiperparametros, licencia ni evaluacion. Cualquier uso en produccion exige verificar de forma independiente el comportamiento del checkpoint, dado que la unica informacion fiable disponible son los metadatos del Hub.
+La relevancia de esta ficha es limitada: la model card es la plantilla autogenerada de Hugging Face y no aporta informacion sobre datos de entrenamiento, hiperparametros, licencia ni evaluacion. Cualquier uso en produccion exige verificar de forma independiente el comportamiento del checkpoint, dado que la unica informacion fiable disponible son los metadatos del Hub.
 
 ## Especificaciones tecnicas
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (XLM-R-Base + LoRA QA) | 277,5 M | 512 (tipico) | QA extractiva (posiblemente turco) | no disponible | HuggingFace, autor alxxtexxr |
-| XLM-RoBERTa base (Facebook AI) | 278 M | 512 | MLM / base para fine-tuning | MIT | HuggingFace (facebook/xlm-roberta-base) |
-| mBERT (Google) | 178 M | 512 | MLM multilingue | Apache 2.0 | HuggingFace (bert-base-multilingual-cased) |
-| XLM-RoBERTa large | 559 M | 512 | MLM / base para fine-tuning | MIT | HuggingFace (facebook/xlm-roberta-large) |
+| Este checkpoint (XLM-R-Base + LoRA QA) | 277,5 M | 512 (tipico) | QA extractiva (posiblemente turco) | no disponible | Hugging Face, autor alxxtexxr |
+| XLM-RoBERTa base (Facebook AI) | 278 M | 512 | MLM / base para fine-tuning | MIT | Hugging Face (facebook/xlm-roberta-base) |
+| mBERT (Google) | 178 M | 512 | MLM multilingue | Apache 2.0 | Hugging Face (bert-base-multilingual-cased) |
+| XLM-RoBERTa large | 559 M | 512 | MLM / base para fine-tuning | MIT | Hugging Face (facebook/xlm-roberta-large) |
 
 No hay datos de rendimiento de este checkpoint que permitan una comparacion cuantitativa con las alternativas. Cualquier evaluacion de calidad requiere ejecutar el modelo sobre un conjunto de validacion propio.
 
@@ -86,7 +86,7 @@ No hay datos de rendimiento de este checkpoint que permitan una comparacion cuan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-add-v261010223343
+- Modelo en Hugging Face: https://huggingface.co/alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-add-v261010223343
 - Paper de XLM-RoBERTa (referenciado por el tag arxiv:1910.09700): https://arxiv.org/abs/1910.09700
 - XLM-RoBERTa base original: https://huggingface.co/facebook/xlm-roberta-base
 - Paper de SQuAD (referencia contextual del sufijo "squad"): https://arxiv.org/abs/1606.05250

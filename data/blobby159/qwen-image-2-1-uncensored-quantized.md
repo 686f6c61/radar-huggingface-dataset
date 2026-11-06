@@ -86,7 +86,7 @@ No se dispone de información sobre modelos comparables de otros desarrolladores
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/blobby159/Qwen-Image-2.1-Uncensored-Quantized
+- Repositorio Hugging Face: https://huggingface.co/blobby159/Qwen-Image-2.1-Uncensored-Quantized
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI-GGUF (fork de leejet): https://github.com/leejet/ComfyUI-GGUF

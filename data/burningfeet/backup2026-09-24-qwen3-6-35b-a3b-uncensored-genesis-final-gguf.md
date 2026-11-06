@@ -6,7 +6,7 @@ Este repositorio contiene una cuantización en formato GGUF del modelo Qwen3.6-3
 
 La relevancia de esta ficha radica en que combina tres características poco habituales en un único artefacto: capacidades de visión, ventana de contexto larga (según las referencias del blog consultado) y ausencia de filtros de rechazo, todo ello empaquetado en GGUF para inferencia local. El repositorio tiene un tamaño de 61,0 GB y las cuantizaciones se han generado con imatrix, lo que permite desplegarlo en hardware de consumo mediante cuantizaciones de baja precisión.
 
-El acceso al repositorio está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo. En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 likes, y se publicó el 24 de septiembre de 2026. La licencia declarada es Apache-2.0, si bien conviene verificar la licencia del modelo base antes de un uso comercial.
+El acceso al repositorio está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo. En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 likes, y se publicó el 24 de septiembre de 2026. La licencia declarada es Apache-2.0, si bien conviene verificar la licencia del modelo base antes de un uso comercial.
 
 ## Especificaciones técnicas
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmark comparativos entre estas variantes, por lo q
 - Sesgos conocidos: no disponibles. No se ha documentado ninguna auditoría de sesgo para este ajuste ni para su modelo base.
 - Cobertura de idiomas: las etiquetas solo garantizan inglés, chino y multilingüe genérico, sin confirmación de rendimiento en castellano. Es previsible un desempeño inferior en español que en inglés o chino.
 - Longitud de contexto sin confirmar: las referencias web mencionan contexto largo, pero no se publica la cifra exacta, lo que impide dimensionar correctamente el uso de RAG o el análisis de documentos extensos.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que complica la automatización de descargas y la integración en CI/CD.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que complica la automatización de descargas y la integración en CI/CD.
 - Licencia: aunque el repositorio declara Apache-2.0, es un derivado de un modelo base de terceros. Antes de un uso comercial hay que verificar la licencia del modelo HauhauCS y la de Qwen3.6 original, así como las obligaciones de atribución.
 - Cuantizaciones de muy baja precisión: las variantes pensadas para 6 GB de VRAM degradan notablemente la calidad, especialmente en razonamiento y en tareas multimodales.
 - Procedencia y trazabilidad: el repositorio es un backup con 0 descargas y 0 likes, publicado por un autor que mantiene múltiples copias de modelos similares (algunas marcadas explícitamente como "ERRONEOUS"). Conviene verificar la integridad de los ficheros antes de usarlos en producción.
@@ -99,9 +99,9 @@ No se dispone de datos de benchmark comparativos entre estas variantes, por lo q
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/burningfeet/backup2026-09-24-Qwen3.6-35B-A3B-Uncensored-Genesis-Final-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/burningfeet/backup2026-09-24-Qwen3.6-35B-A3B-Uncensored-Genesis-Final-GGUF
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
-- Perfil del autor en HuggingFace: https://huggingface.co/burningfeet
+- Perfil del autor en Hugging Face: https://huggingface.co/burningfeet
 - Repositorio de GitHub del modelo base: https://github.com/chenfei66/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Ficha en la librería de Ollama: https://ollama.com/library/qwen3.6:35b-a3b
 - Artículo de análisis (CSDN, en chino): https://blog.csdn.net/weixin_41961749/article/details/161501525

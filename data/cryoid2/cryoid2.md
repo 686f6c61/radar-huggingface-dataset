@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cryoID2 es un modelo publicado en HuggingFace por el usuario cryoid2 bajo licencia MIT. El repositorio ocupa 4,3 GB y no incluye model card con descripción técnica, datos de entrenamiento ni arquitectura declarada. La única información estructurada disponible en el momento de redactar esta ficha es la licencia (MIT) y la etiqueta de región (US); el resto de campos de la ficha de HuggingFace (pipeline, idiomas, tags técnicos) aparecen vacíos o como "no disponible".
+cryoID2 es un modelo publicado en Hugging Face por el usuario cryoid2 bajo licencia MIT. El repositorio ocupa 4,3 GB y no incluye model card con descripción técnica, datos de entrenamiento ni arquitectura declarada. La única información estructurada disponible en el momento de redactar esta ficha es la licencia (MIT) y la etiqueta de región (US); el resto de campos de la ficha de Hugging Face (pipeline, idiomas, tags técnicos) aparecen vacíos o como "no disponible".
 
 Por el tamaño del repositorio (4,3 GB) es plausible que se trate de un modelo de pesos abiertos en el rango de los 2-4 mil millones de parámetros en precisión de 16 bits, o de un modelo mayor cuantizado, pero esta estimación es inferencial y no está confirmada por el autor. No se dispone de información sobre arquitectura, longitud de contexto, tokenizador, composición del dataset ni proceso de alineación.
 
@@ -74,5 +74,5 @@ No disponible. No se dispone de información suficiente sobre parámetros, conte
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cryoid2/cryoID2
+- Hugging Face: https://huggingface.co/cryoid2/cryoID2
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/monsterovich/yue2-keygen-music-lora
+- Repositorio Hugging Face: https://huggingface.co/monsterovich/yue2-keygen-music-lora
 - Modelo base: https://huggingface.co/m-a-p/YuE2-3B
 - Muestra de audio: https://huggingface.co/monsterovich/yue2-keygen-music-lora/blob/main/keygen-techno_ar0.3_nar0.5_seed777.flac
 - Coleccion de audio de entrenamiento: *Essential Keygen Music* en archive.org (referenciada en la model card; URL exacta no disponible)

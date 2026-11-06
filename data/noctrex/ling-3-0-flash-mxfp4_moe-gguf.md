@@ -82,8 +82,8 @@ Ling-3.0-flash se diferencia por su atención híbrida lineal y su ratio de acti
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/noctrex/Ling-3.0-flash-MXFP4_MOE-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/inclusionAI/Ling-3.0-flash
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/noctrex/Ling-3.0-flash-MXFP4_MOE-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/inclusionAI/Ling-3.0-flash
 - Repositorio GitHub de InclusionAI: https://github.com/inclusionAI/Ling
 - Documentación oficial de Ling (Ant Group): https://developer.ant-ling.com/en/docs/models/ling/
 - Artículo técnico sobre Ling-3.0 Flash: https://www.aimodeling.com/en/news/slug/inclusionai-ling-3-flash-hybrid-linear-moe-agent

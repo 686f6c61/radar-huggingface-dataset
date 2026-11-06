@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ministral 3 14B think symbolic image (este) | 14B base + 121,9 M LoRA | no disponible | Anotación simbólica de imágenes con cadena de pensamiento | apache-2.0 | HuggingFace, 0 descargas |
-| Ministral-3-14B-Instruct-2512-BF16 (base) | 14B | no disponible | VLM instruct generalista | no disponible en la información | HuggingFace (Mistral AI) |
+| Ministral 3 14B think symbolic image (este) | 14B base + 121,9 M LoRA | no disponible | Anotación simbólica de imágenes con cadena de pensamiento | apache-2.0 | Hugging Face, 0 descargas |
+| Ministral-3-14B-Instruct-2512-BF16 (base) | 14B | no disponible | VLM instruct generalista | no disponible en la información | Hugging Face (Mistral AI) |
 | Línea Lucia (Qwen3.5), mismo recetario | no disponible | no disponible | Anotación simbólica de imágenes | no disponible | Referenciada en la model card |
 | Línea Ulisse (Gemma 4), mismo recetario | no disponible | no disponible | Anotación simbólica de imágenes | no disponible | Referenciada en la model card |
 
@@ -89,7 +89,7 @@ La model card sitúa a este adaptador, dentro de su familia, al nivel de Lucia e
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/AbstractPhil/ministral-3-14b-think-symbolic-image
+- Hugging Face del adaptador: https://huggingface.co/AbstractPhil/ministral-3-14b-think-symbolic-image
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-BF16
 - Dataset de captions: https://huggingface.co/datasets/AbstractPhil/thought-symbolic-image-captions
 - Dataset de imágenes de pensamiento: https://huggingface.co/datasets/AbstractPhil/qwen-thinking-images

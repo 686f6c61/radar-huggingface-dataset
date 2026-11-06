@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `efe-T/Experiment-1-A` es una publicación del usuario efe-T en HuggingFace, registrada con licencia Apache 2.0 y etiquetada para la región de Estados Unidos. La model card asociada no contiene más información que la propia declaración de licencia, y no se han publicado detalles sobre arquitectura, parámetros, entrenamiento o capacidades. A fecha de su creación (1 de septiembre de 2026), el modelo no registra descargas ni valoraciones de la comunidad.
+El modelo `efe-T/Experiment-1-A` es una publicación del usuario efe-T en Hugging Face, registrada con licencia Apache 2.0 y etiquetada para la región de Estados Unidos. La model card asociada no contiene más información que la propia declaración de licencia, y no se han publicado detalles sobre arquitectura, parámetros, entrenamiento o capacidades. A fecha de su creación (1 de septiembre de 2026), el modelo no registra descargas ni valoraciones de la comunidad.
 
 Dado que no existe documentación técnica adicional, ni en la model card ni en fuentes externas localizadas, este modelo debe considerarse como un experimento sin especificaciones públicas. No es posible determinar su utilidad práctica ni su rendimiento sin información adicional por parte del autor.
 
@@ -53,6 +53,6 @@ No disponible. Al carecer de especificaciones técnicas, no es posible establece
 
 ## Enlaces
 
-- [HuggingFace - efe-T/Experiment-1-A](https://huggingface.co/efe-T/Experiment-1-A)
+- [Hugging Face - efe-T/Experiment-1-A](https://huggingface.co/efe-T/Experiment-1-A)
 
 No se han encontrado papers, repositorios de código, demos o publicaciones adicionales relacionadas con este modelo.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `sadjava/smolvla-libero-goal-peft-t0-n10-s1000` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace bajo la librería PEFT. Según los metadatos, el adaptador se basa en un checkpoint de `smolvla_libero90_100k`, lo que sugiere que se trata de un ajuste fino de tipo LoRA sobre un modelo de visión-lenguaje-acción (VLA) de la familia SmolVLA, entrenado sobre el benchmark de robótica LIBERO. El identificador `t0-n10-s1000` indica probablemente una configuración específica de tareas (task 0, 10 demostraciones, 1000 pasos de entrenamiento), pero no hay confirmación oficial.
+El modelo `sadjava/smolvla-libero-goal-peft-t0-n10-s1000` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face bajo la librería PEFT. Según los metadatos, el adaptador se basa en un checkpoint de `smolvla_libero90_100k`, lo que sugiere que se trata de un ajuste fino de tipo LoRA sobre un modelo de visión-lenguaje-acción (VLA) de la familia SmolVLA, entrenado sobre el benchmark de robótica LIBERO. El identificador `t0-n10-s1000` indica probablemente una configuración específica de tareas (task 0, 10 demostraciones, 1000 pasos de entrenamiento), pero no hay confirmación oficial.
 
-La model card publicada está prácticamente vacía: no incluye descripción, licencia, idiomas, datos de entrenamiento, ni resultados de evaluación. Toda la información técnica disponible se limita a los tags de HuggingFace y al nombre del repositorio. Por tanto, esta ficha se basa en inferencias razonables a partir del nombre y los metadatos, marcando explícitamente todo dato no confirmado como "no disponible".
+La model card publicada está prácticamente vacía: no incluye descripción, licencia, idiomas, datos de entrenamiento, ni resultados de evaluación. Toda la información técnica disponible se limita a los tags de Hugging Face y al nombre del repositorio. Por tanto, esta ficha se basa en inferencias razonables a partir del nombre y los metadatos, marcando explícitamente todo dato no confirmado como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -71,5 +71,5 @@ No se dispone de información suficiente para realizar una comparativa fiable. N
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/sadjava/smolvla-libero-goal-peft-t0-n10-s1000)
+- [Repositorio en Hugging Face](https://huggingface.co/sadjava/smolvla-libero-goal-peft-t0-n10-s1000)
 - Paper de LoRA referenciado en los tags: [arxiv:1910.09700](https://arxiv.org/abs/1910.09700) (no específico de este modelo)

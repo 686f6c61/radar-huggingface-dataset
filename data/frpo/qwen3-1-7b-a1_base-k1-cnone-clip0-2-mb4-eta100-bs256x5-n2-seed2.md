@@ -77,6 +77,6 @@ La comparativa es estructural, ya que no hay datos de rendimiento para este chec
 
 ## Enlaces
 
-- Repositorio HuggingFace: [FRPO/qwen3-1.7b-a1_base-k1-cNone-clip0.2-mb4-eta100-bs256x5-n2-seed2](https://huggingface.co/FRPO/qwen3-1.7b-a1_base-k1-cNone-clip0.2-mb4-eta100-bs256x5-n2-seed2)
+- Repositorio Hugging Face: [FRPO/qwen3-1.7b-a1_base-k1-cNone-clip0.2-mb4-eta100-bs256x5-n2-seed2](https://huggingface.co/FRPO/qwen3-1.7b-a1_base-k1-cNone-clip0.2-mb4-eta100-bs256x5-n2-seed2)
 - Modelo base: [Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)
 - Framework verl: [https://github.com/volcengine/verl](https://github.com/volcengine/verl)

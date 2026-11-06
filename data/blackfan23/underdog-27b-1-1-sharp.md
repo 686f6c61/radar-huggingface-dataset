@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Underdog-27B-1.1-Sharp es un modelo de generacion de texto de aproximadamente 26.900 millones de parametros (26.895.998.464 segun los pesos safetensors del repositorio), publicado en HuggingFace por el usuario blackfan23. La model card lo describe como un derivado de la familia Underdog-27B de Conway, sometido a una fase de post-entrenamiento para conversacion, redaccion, programacion y resumen, y construido sobre una base denominada Qwen3.8. Se distribuye unicamente en pesos cuantizados a 4 bits, en dos empaquetados: GGUF Q4_1 para Splash y llama.cpp, y MLX para Apple Silicon.
+Underdog-27B-1.1-Sharp es un modelo de generacion de texto de aproximadamente 26.900 millones de parametros (26.895.998.464 segun los pesos safetensors del repositorio), publicado en Hugging Face por el usuario blackfan23. La model card lo describe como un derivado de la familia Underdog-27B de Conway, sometido a una fase de post-entrenamiento para conversacion, redaccion, programacion y resumen, y construido sobre una base denominada Qwen3.8. Se distribuye unicamente en pesos cuantizados a 4 bits, en dos empaquetados: GGUF Q4_1 para Splash y llama.cpp, y MLX para Apple Silicon.
 
 Su interes no esta en el tamano sino en la ejecucion local: es un 27B que cabe en hardware de consumo y que incorpora decodificacion especulativa mediante el modelo borrador DFlash2. La model card reporta hasta 130,1 tokens por segundo en generacion de codigo sobre un Apple M5 Max con 40 nucleos GPU y 48 GiB de memoria unificada, con Splash 1.1.0 e INT8 KV, frente a 33,3 tokens/s con MLX-LM estandar. La licencia Apache 2.0 elimina la friccion para uso comercial.
 
@@ -108,7 +108,7 @@ La ventaja diferencial de Underdog-27B-1.1-Sharp en esta tabla seria el throughp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blackfan23/Underdog-27B-1.1-Sharp
+- Modelo en Hugging Face: https://huggingface.co/blackfan23/Underdog-27B-1.1-Sharp
 - Repositorio referenciado en la model card: https://huggingface.co/ConwayResearch/Underdog-27B-1.1
 - Modelo borrador para decodificacion especulativa: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2-GGUF
 - Releases de llama.cpp (builds CUDA para Windows): https://github.com/ggml-org/llama.cpp/releases

@@ -65,5 +65,5 @@ No se han identificado modelos comparables en la información proporcionada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/saga64/pca
+- Hugging Face: https://huggingface.co/saga64/pca
 - GitHub de saga64: https://github.com/saga64

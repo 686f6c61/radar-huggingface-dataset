@@ -53,5 +53,5 @@ No se dispone de información sobre modelos comparables. Al ser un checkpoint in
 
 ## Enlaces
 
-- [HuggingFace - agentic-ptb/opus-high-v1.h025.step20_swe8pct](https://huggingface.co/agentic-ptb/opus-high-v1.h025.step20_swe8pct)
+- [Hugging Face - agentic-ptb/opus-high-v1.h025.step20_swe8pct](https://huggingface.co/agentic-ptb/opus-high-v1.h025.step20_swe8pct)
 - [Modelo base: Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base)

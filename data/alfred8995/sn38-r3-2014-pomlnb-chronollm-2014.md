@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/sn38-r3-2014-pomlnb-chronollm-2014` es un modelo de lenguaje de 1.858.535.658 parámetros (≈1,86 B) publicado en HuggingFace por el usuario `alfred8995`, con pesos en safetensors y precisión F32 (el repositorio ocupa 7,4 GB, coherente con ese recuento). La etiqueta de arquitectura declarada es `ChronoGPT` y el nombre del repositorio remite a la familia ChronoLLM, una línea de modelos "temporalmente consistentes" en la que cada checkpoint solo conoce eventos hasta su año de corte (en este caso, 2014), de modo que no se filtra conocimiento futuro en el análisis.
+`alfred8995/sn38-r3-2014-pomlnb-chronollm-2014` es un modelo de lenguaje de 1.858.535.658 parámetros (≈1,86 B) publicado en Hugging Face por el usuario `alfred8995`, con pesos en safetensors y precisión F32 (el repositorio ocupa 7,4 GB, coherente con ese recuento). La etiqueta de arquitectura declarada es `ChronoGPT` y el nombre del repositorio remite a la familia ChronoLLM, una línea de modelos "temporalmente consistentes" en la que cada checkpoint solo conoce eventos hasta su año de corte (en este caso, 2014), de modo que no se filtra conocimiento futuro en el análisis.
 
 El modelo está vinculado por nomenclatura y por autoría a otros artefactos del mismo entorno: el checkpoint público `pomlnb/chronollm-2014` (2 B de parámetros, F32, sin model card, 22 descargas en el último mes), las variantes `sn38-nanochrono` de `alfred8995` y el dataset `pomlnb2/sn38-submission`. El prefijo `sn38` sugiere un envío (submission) dentro de un proceso de competición identificado con ese código, aunque la información disponible no especifica de qué red o certamen se trata.
 
@@ -12,7 +12,7 @@ Su relevancia es doble: por un lado, permite experimentar con un LM de ~2 B en u
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | ChronoGPT (según tag de HuggingFace); detalles internos no disponibles |
+| Arquitectura | ChronoGPT (según tag de Hugging Face); detalles internos no disponibles |
 | Parámetros totales | 1.858.535.658 (≈1,86 B) |
 | Parámetros activos | no disponible (no consta que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -31,7 +31,7 @@ Tampoco se han publicado detalles del entrenamiento: no se conoce el volumen de 
 
 - Generación de texto autoregresiva: es la función implícita del modelo; no hay documentación que detalle calidad, estilo ni dominio.
 - Consistencia temporal: por diseño, el checkpoint está limitado a eventos hasta 2014, lo que evita el conocimiento de hechos posteriores en las respuestas.
-- Integración con la CLI `chronollm`: el paquete de PyPI permite invocar un modelo por año (`chronollm 2020`) o por repositorio (`chronollm owner/repo`), previa autenticación con un token de HuggingFace.
+- Integración con la CLI `chronollm`: el paquete de PyPI permite invocar un modelo por año (`chronollm 2020`) o por repositorio (`chronollm owner/repo`), previa autenticación con un token de Hugging Face.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponibles (no se declara lista de idiomas).
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 | Modelo | Parámetros | Formato | Contexto | Licencia | Acceso | Notas |
 |---|---|---|---|---|---|---|
 | `alfred8995/sn38-r3-2014-pomlnb-chronollm-2014` | 1,86 B | safetensors F32 | no disponible | other | gated (requiere aceptar condiciones) | Objeto de esta ficha; sin model card |
-| `pomlnb/chronollm-2014` | 2 B (según HuggingFace) | safetensors F32 | no disponible | no disponible | público | Sin model card; 22 descargas en el último mes; sin Inference Provider |
+| `pomlnb/chronollm-2014` | 2 B (según Hugging Face) | safetensors F32 | no disponible | no disponible | público | Sin model card; 22 descargas en el último mes; sin Inference Provider |
 | `alfred8995/r16-H-M-Akds4-w50-s0` | no disponible | safetensors | no disponible | no disponible | público | Etiqueta `sn38-nanochrono`; variante de la misma familia |
 | `alfred8995/r16-H-P3-d2c3q3-s100` | no disponible | safetensors | no disponible | no disponible | público | Etiqueta `sn38-nanochrono`; variante de la misma familia |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparado con modelos de propósito genera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/sn38-r3-2014-pomlnb-chronollm-2014
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/sn38-r3-2014-pomlnb-chronollm-2014
 - Checkpoint hermano `pomlnb/chronollm-2014`: https://huggingface.co/pomlnb/chronollm-2014
 - Variante `alfred8995/r16-H-M-Akds4-w50-s0`: https://huggingface.co/alfred8995/r16-H-M-Akds4-w50-s0
 - Variante `alfred8995/r16-H-P3-d2c3q3-s100`: https://huggingface.co/alfred8995/r16-H-P3-d2c3q3-s100

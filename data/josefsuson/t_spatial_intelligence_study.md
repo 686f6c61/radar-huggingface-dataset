@@ -2,7 +2,7 @@
 
 ## Resumen
 
-T_Spatial_Intelligence_Study es un artefacto publicado en HuggingFace por el usuario JOSEFSUSON bajo el pipeline de reinforcement learning. Segun la model card, se trata de un agente PPO (Proximal Policy Optimization) entrenado con vectorizacion en NumPy sobre un entorno denominado "Spatial Environment v3", orientado a tareas de deteccion de anomalias en series temporales, inteligencia espacial, seguridad de sistemas ciberfisicos y orquestacion en el edge. El autor declara 1536 pasos de entrenamiento y una recompensa media de 84,8217.
+T_Spatial_Intelligence_Study es un artefacto publicado en Hugging Face por el usuario JOSEFSUSON bajo el pipeline de reinforcement learning. Segun la model card, se trata de un agente PPO (Proximal Policy Optimization) entrenado con vectorizacion en NumPy sobre un entorno denominado "Spatial Environment v3", orientado a tareas de deteccion de anomalias en series temporales, inteligencia espacial, seguridad de sistemas ciberfisicos y orquestacion en el edge. El autor declara 1536 pasos de entrenamiento y una recompensa media de 84,8217.
 
 La publicacion no incluye pesos en formatos estandar (safetensors, GGUF, binarios de PyTorch), ni arquitectura de red neuronal documentada, ni tokenizador, ni ficha tecnica con hiperparametros. El repositorio se limita a una model card con logs de entrenamiento declarados y un bloque de metadatos YAML con etiquetas y una descripcion de "framework de despliegue" que mezcla conceptos de seguridad de kernel (eBPF, LSM) con el propio modelo.
 
@@ -44,7 +44,7 @@ El entrenamiento declarado consta de 1536 pasos temporales totales sobre el ento
 - Deteccion de anomalias en series temporales: la etiqueta del repositorio apunta a este dominio, pero sin pesos ni pipeline de inferencia no es desplegable en un caso real.
 - Seguridad de sistemas ciberfisicos: las notas sobre eBPF, LSM y mitigacion adversarial son descriptivas del entorno de ejecucion, no una funcionalidad del modelo exportable a produccion.
 - Orquestacion en el edge: la model card menciona "asynchronous-edge-sharding-protection", pero no hay artefacto que implemente esa funcion.
-- Docencia sobre publicacion de modelos: el repositorio sirve como ejemplo de model card incompleta (sin licencia, sin pesos, sin metricas verificadas) para discutir buenas practicas de publicacion en HuggingFace.
+- Docencia sobre publicacion de modelos: el repositorio sirve como ejemplo de model card incompleta (sin licencia, sin pesos, sin metricas verificadas) para discutir buenas practicas de publicacion en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -91,5 +91,5 @@ La comparacion es estructural: frente a estas librerias, el artefacto de JOSEFSU
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JOSEFSUSON/T_Spatial_Intelligence_Study
+- Repositorio en Hugging Face: https://huggingface.co/JOSEFSUSON/T_Spatial_Intelligence_Study
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales.

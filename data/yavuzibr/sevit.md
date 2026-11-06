@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sevit es un repositorio de modelo publicado en HuggingFace por el usuario yavuzibr bajo el identificador `yavuzibr/Sevit`. La informacion publica disponible se limita a la licencia (Apache 2.0) y a la etiqueta de region (us); no hay tarjeta de modelo con contenido tecnico, ni pipeline declarado, ni idiomas soportados, ni descripcion del proposito del modelo. El repositorio registra cero descargas y cero likes en el momento de la consulta.
+Sevit es un repositorio de modelo publicado en Hugging Face por el usuario yavuzibr bajo el identificador `yavuzibr/Sevit`. La informacion publica disponible se limita a la licencia (Apache 2.0) y a la etiqueta de region (us); no hay tarjeta de modelo con contenido tecnico, ni pipeline declarado, ni idiomas soportados, ni descripcion del proposito del modelo. El repositorio registra cero descargas y cero likes en el momento de la consulta.
 
 El README del repositorio contiene unicamente el bloque de metadatos de licencia, sin texto descriptivo, sin arquitectura declarada, sin tamano de parametros, sin longitud de contexto y sin detalles de entrenamiento. Tampoco se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada, cuyos resultados no guardan ninguna relacion con el modelo.
 
@@ -39,7 +39,7 @@ No hay informacion sobre el volumen de tokens de entrenamiento, la composicion d
 ## Casos de uso
 
 - No disponible. Al no existir documentacion sobre arquitectura, tamano, contexto ni capacidades, no es posible proponer escenarios de uso concretos y realistas.
-- Evaluacion de repositorios de HuggingFace: el caso de uso realista aqui es el analisis de una publicacion sin documentacion, util unicamente como ejemplo de buenas practicas ausentes.
+- Evaluacion de repositorios de Hugging Face: el caso de uso realista aqui es el analisis de una publicacion sin documentacion, util unicamente como ejemplo de buenas practicas ausentes.
 - Cualquier despliegue en atencion al cliente, generacion de codigo, analisis documental o tareas de agentes queda descartado por falta de datos tecnicos verificables.
 - No se recomienda integrar este modelo en pipelines de CI/CD, RAG ni sistemas de produccion sin una evaluacion previa por parte del autor o de terceros.
 - No se recomienda su uso en entornos regulados (salud, finanzas, legal) sin informacion sobre sesgos, alineacion y limitaciones.
@@ -75,7 +75,7 @@ No disponible. No es posible identificar modelos comparables al no conocerse la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yavuzibr/Sevit
+- Hugging Face: https://huggingface.co/yavuzibr/Sevit
 - Papers: no disponible.
 - Blogs o articulos tecnicos: no disponible.
 - Repositorios de codigo: no disponible.

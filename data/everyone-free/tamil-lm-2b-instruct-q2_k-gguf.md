@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de modelos comparables de terceros con l
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/everyone-free/tamil-lm-2b-instruct-Q2_K-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/everyone-free/tamil-lm-2b-instruct-Q2_K-GGUF
 - Modelo base: https://huggingface.co/Timegravity/tamil-lm-2b-instruct
 - Espacio de conversion GGUF-my-repo (ggml.ai): https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

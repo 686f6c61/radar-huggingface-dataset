@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `Kaushik2709/guardrail-zero-qwen-0.5b-lora` contiene un adaptador LoRA publicado en HuggingFace por el usuario Kaushik2709. El nombre indica que se trata de un ajuste fino de bajo rango (LoRA) sobre un modelo base de la familia Qwen con 0,5 mil millones de parámetros, aparentemente orientado a tareas de guardrails o moderación de contenido.
+El repositorio `Kaushik2709/guardrail-zero-qwen-0.5b-lora` contiene un adaptador LoRA publicado en Hugging Face por el usuario Kaushik2709. El nombre indica que se trata de un ajuste fino de bajo rango (LoRA) sobre un modelo base de la familia Qwen con 0,5 mil millones de parámetros, aparentemente orientado a tareas de guardrails o moderación de contenido.
 
-La model card es una plantilla generada automáticamente: todos los campos relevantes aparecen marcados como `[More Information Needed]`. No se incluyen datos de entrenamiento, arquitectura, capacidades, licencia ni resultados de evaluación. El repositorio tiene 0 descargas y 0 me gusta, y ocupa 0.0 GB en HuggingFace, lo que sugiere que solo contiene los pesos del adaptador.
+La model card es una plantilla generada automáticamente: todos los campos relevantes aparecen marcados como `[More Information Needed]`. No se incluyen datos de entrenamiento, arquitectura, capacidades, licencia ni resultados de evaluación. El repositorio tiene 0 descargas y 0 me gusta, y ocupa 0.0 GB en Hugging Face, lo que sugiere que solo contiene los pesos del adaptador.
 
 En consecuencia, la ficha técnica de este modelo se limita a describir lo poco que se deduce del identificador y de los metadatos, dejando explícitas las lagunas de información.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 ## Requisitos de hardware
 
-No se han publicado requisitos de hardware ni mediciones de latencia o throughput. El único dato disponible es el tamaño del repositorio en HuggingFace (0.0 GB), lo que indica que el adaptador LoRA es muy ligero, pero no proporciona información sobre los requisitos del modelo base subyacente.
+No se han publicado requisitos de hardware ni mediciones de latencia o throughput. El único dato disponible es el tamaño del repositorio en Hugging Face (0.0 GB), lo que indica que el adaptador LoRA es muy ligero, pero no proporciona información sobre los requisitos del modelo base subyacente.
 
 - VRAM estimada para inferencia: no disponible.
 - GPU recomendadas: no disponible.
@@ -82,5 +82,5 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kaushik2709/guardrail-zero-qwen-0.5b-lora
+- Hugging Face: https://huggingface.co/Kaushik2709/guardrail-zero-qwen-0.5b-lora
 - No se han encontrado otros enlaces relevantes (repositorios, papers, blogs, demos) en la búsqueda web.

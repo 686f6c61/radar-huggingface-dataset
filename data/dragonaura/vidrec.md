@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VidRec es un modelo de lenguaje publicado por el usuario DragonAura en HuggingFace, identificado con el tag `qwen3_vl`, lo que sugiere que se trata de una variante o adaptación de la familia Qwen3-VL, orientada presumiblemente a tareas de visión y lenguaje. El modelo cuenta con aproximadamente 9,7 mil millones de parámetros y un tamaño de repositorio de 19,4 GB, lo que apunta a pesos en precisión fp16 o bf16. Sin embargo, la model card no incluye ninguna descripción funcional, datos de entrenamiento, ni especificaciones adicionales, por lo que la información disponible es extremadamente limitada.
+VidRec es un modelo de lenguaje publicado por el usuario DragonAura en Hugging Face, identificado con el tag `qwen3_vl`, lo que sugiere que se trata de una variante o adaptación de la familia Qwen3-VL, orientada presumiblemente a tareas de visión y lenguaje. El modelo cuenta con aproximadamente 9,7 mil millones de parámetros y un tamaño de repositorio de 19,4 GB, lo que apunta a pesos en precisión fp16 o bf16. Sin embargo, la model card no incluye ninguna descripción funcional, datos de entrenamiento, ni especificaciones adicionales, por lo que la información disponible es extremadamente limitada.
 
 El autor, DragonAura (Yixuan Li), es estudiante de doctorado en el Departamento de Ingeniería Electrónica de la Universidad de Tsinghua, según su perfil de GitHub. No se ha encontrado documentación técnica, papers ni demos asociados a este modelo. Su relevancia actual es incierta, ya que no hay evidencias de uso, descargas o evaluaciones independientes. La licencia Apache 2.0 permite uso comercial y modificación, pero sin detalles sobre su arquitectura o capacidades reales, cualquier despliegue en producción requiere una validación previa exhaustiva.
 
@@ -21,7 +21,7 @@ El autor, DragonAura (Yixuan Li), es estudiante de doctorado en el Departamento 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información oficial sobre la arquitectura interna del modelo. El tag `qwen3_vl` en HuggingFace sugiere que podría tratarse de un fine-tuning o una variante de los modelos Qwen3-VL, que son arquitecturas transformer multimodales (visión-lenguaje) desarrolladas por Alibaba. Sin embargo, no hay confirmación en la model card ni en documentación externa. Tampoco se conocen los datos de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas como RLHF o DPO. No se ha publicado ninguna innovación técnica asociada.
+No se dispone de información oficial sobre la arquitectura interna del modelo. El tag `qwen3_vl` en Hugging Face sugiere que podría tratarse de un fine-tuning o una variante de los modelos Qwen3-VL, que son arquitecturas transformer multimodales (visión-lenguaje) desarrolladas por Alibaba. Sin embargo, no hay confirmación en la model card ni en documentación externa. Tampoco se conocen los datos de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas como RLHF o DPO. No se ha publicado ninguna innovación técnica asociada.
 
 ## Capacidades
 
@@ -58,5 +58,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DragonAura/VidRec
+- Modelo en Hugging Face: https://huggingface.co/DragonAura/VidRec
 - Perfil del autor en GitHub: https://github.com/DragonAura (referencia, no contiene información específica del modelo)

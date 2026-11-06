@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de la misma 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smdesai/GLiNER25-Multi-Decide-FP16-CoreAI
+- Hugging Face: https://huggingface.co/smdesai/GLiNER25-Multi-Decide-FP16-CoreAI
 - Modelo base: https://huggingface.co/fastino/GLiNER2.5-multi-Decide
 - Revisión del checkpoint: `6bc1d43d201b0691e733626389af8c57eea3ea68`
 - Paper, blog, repositorio o demo adicionales: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-APPO-doom_health_gathering_supreme es un agente de aprendizaje por refuerzo entrenado con el algoritmo APPO (Asynchronous Proximal Policy Optimization) sobre el entorno doom_health_gathering_supreme de ViZDoom. El modelo lo publica el usuario yojitha en HuggingFace como parte de la Unit 8 Part 2 del curso Deep Reinforcement Learning de Hugging Face, y se apoya en la libreria Sample Factory 2.0 (https://github.com/alex-petrenko/sample-factory) para el entrenamiento.
+APPO-doom_health_gathering_supreme es un agente de aprendizaje por refuerzo entrenado con el algoritmo APPO (Asynchronous Proximal Policy Optimization) sobre el entorno doom_health_gathering_supreme de ViZDoom. El modelo lo publica el usuario yojitha en Hugging Face como parte de la Unit 8 Part 2 del curso Deep Reinforcement Learning de Hugging Face, y se apoya en la libreria Sample Factory 2.0 (https://github.com/alex-petrenko/sample-factory) para el entrenamiento.
 
 No se trata de un modelo de lenguaje, sino de una politica entrenada para resolver una tarea concreta: navegar por un escenario de DOOM recogiendo botiquines para mantener la salud por encima de un umbral mientras sobrevive. Su relevancia es fundamentalmente didactica: sirve como ejemplo reproducible de como entrenar agentes asincronos a gran escala con APPO y de como publicar los resultados en la plataforma de Hugging Face.
 
@@ -66,9 +66,9 @@ El criterio de certificacion del curso exige una recompensa resultante (mean_rew
 
 | Modelo | Entorno | Algoritmo | Recompensa declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yojitha/appo-doom_health_gathering_supreme | doom_health_gathering_supreme | APPO | 15.00 +/- 1.00 | no disponible | HuggingFace |
-| havyasree/sf-doom_health_gathering_supreme | doom_health_gathering_supreme | APPO | no disponible | no disponible | HuggingFace |
-| kingabzpro/doom_health_gathering_supreme | doom_health_gathering_supreme | APPO | no disponible | no disponible | HuggingFace |
+| yojitha/appo-doom_health_gathering_supreme | doom_health_gathering_supreme | APPO | 15.00 +/- 1.00 | no disponible | Hugging Face |
+| havyasree/sf-doom_health_gathering_supreme | doom_health_gathering_supreme | APPO | no disponible | no disponible | Hugging Face |
+| kingabzpro/doom_health_gathering_supreme | doom_health_gathering_supreme | APPO | no disponible | no disponible | Hugging Face |
 
 Los modelos comparables encontrados son otros agentes entrenados por estudiantes del mismo curso sobre el mismo entorno. No se dispone de sus valores de recompensa en la informacion recopilada, por lo que la comparacion numerica de rendimiento no es posible.
 
@@ -85,7 +85,7 @@ Los modelos comparables encontrados son otros agentes entrenados por estudiantes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yojitha/appo-doom_health_gathering_supreme
+- Modelo en Hugging Face: https://huggingface.co/yojitha/appo-doom_health_gathering_supreme
 - Perfil del autor: https://huggingface.co/yojitha
 - Curso Deep Reinforcement Learning de Hugging Face: https://huggingface.co/learn/deep-rl-course/en/unit0/introduction
 - Notebook Unit 8 Part 2: https://colab.research.google.com/github/huggingface/deep-rl-class/blob/master/notebooks/unit8/unit8_part2.ipynb

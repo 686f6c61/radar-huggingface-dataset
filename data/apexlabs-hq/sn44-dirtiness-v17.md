@@ -86,5 +86,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- [HuggingFace: apexlabs-hq/sn44-dirtiness-v17](https://huggingface.co/apexlabs-hq/sn44-dirtiness-v17)
+- [Hugging Face: apexlabs-hq/sn44-dirtiness-v17](https://huggingface.co/apexlabs-hq/sn44-dirtiness-v17)
 - Modelo de referencia citado en la model card: `manako/Detect-room-dirtiness-detection` (sin URL directa proporcionada en la información disponible)

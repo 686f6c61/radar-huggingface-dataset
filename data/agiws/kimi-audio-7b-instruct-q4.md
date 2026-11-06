@@ -73,7 +73,7 @@ No se dispone de datos suficientes para realizar una comparativa cuantitativa co
 
 ## Enlaces
 
-- Repositorio de HuggingFace del modelo cuantizado: https://huggingface.co/agiws/Kimi-Audio-7B-Instruct-Q4
+- Repositorio de Hugging Face del modelo cuantizado: https://huggingface.co/agiws/Kimi-Audio-7B-Instruct-Q4
 - Modelo original de Moonshot AI: https://huggingface.co/moonshotai/Kimi-Audio-7B-Instruct
 - Repositorio GitHub de Kimi-Audio: https://github.com/MoonshotAI/Kimi-Audio
 - Informe técnico (paper): https://raw.githubusercontent.com/MoonshotAI/Kimi-Audio/master/assets/kimia_report.pdf

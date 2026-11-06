@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rat-lab/mh-fresh-K6-delta | Adaptador LoRA de investigación | No disponible (base ~2B) | No disponible | No disponible | HuggingFace, 0 descargas, 8 checkpoints |
-| vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT | Modelo base SFT (modelo completo) | ~2B | No disponible en esta ficha | No disponible | HuggingFace |
-| google/gemma-2-2b-it | Modelo instructivo de referencia | ~2B | Según documentación pública de Google | Términos de uso de Gemma | HuggingFace |
+| rat-lab/mh-fresh-K6-delta | Adaptador LoRA de investigación | No disponible (base ~2B) | No disponible | No disponible | Hugging Face, 0 descargas, 8 checkpoints |
+| vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT | Modelo base SFT (modelo completo) | ~2B | No disponible en esta ficha | No disponible | Hugging Face |
+| google/gemma-2-2b-it | Modelo instructivo de referencia | ~2B | Según documentación pública de Google | Términos de uso de Gemma | Hugging Face |
 
 La comparación con alternativas de la misma categoría (otros adaptadores LoRA de investigación sobre modelos de ~2B) no está disponible: la información proporcionada no incluye otros adaptadores comparables ni sus métricas. Tampoco se dispone de resultados que permitan comparar rendimiento con la base SFT o con Gemma 2 2B-it.
 
@@ -85,7 +85,7 @@ La comparación con alternativas de la misma categoría (otros adaptadores LoRA 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rat-lab/mh-fresh-K6-delta
+- Modelo en Hugging Face: https://huggingface.co/rat-lab/mh-fresh-K6-delta
 - Modelo base: https://huggingface.co/vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT
 - Modelo Gemma 2 2B instructivo de referencia: https://huggingface.co/google/gemma-2-2b-it
 - Dataset de preferencias: https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF

@@ -81,8 +81,8 @@ El parche de decodificacion incluido en el repositorio se describe como una mejo
 
 | Modelo | Parametros | Contexto | Cuantizacion | VRAM necesaria | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Minachist/Qwen3.8-Flash-Next-INT4-Mixed-AutoRound | 139,7B (A6B activos) | 262.144 tokens | Precision mixta 4,21 bpw (INT4/INT6/INT8 + BF16 parcial) | 72 GB+ (3x RTX 3090) | qwen-community-1.0 | Publicado en HuggingFace; requiere parche propio de vLLM |
-| Qwen/Qwen3.8-Flash-Next (modelo base) | 125B-A6B declarados | no disponible | BF16 | no disponible (estimado en torno a 260 GiB solo para los pesos, calculado a partir de los parametros declarados) | qwen-community-1.0 | Publicado en HuggingFace |
+| Minachist/Qwen3.8-Flash-Next-INT4-Mixed-AutoRound | 139,7B (A6B activos) | 262.144 tokens | Precision mixta 4,21 bpw (INT4/INT6/INT8 + BF16 parcial) | 72 GB+ (3x RTX 3090) | qwen-community-1.0 | Publicado en Hugging Face; requiere parche propio de vLLM |
+| Qwen/Qwen3.8-Flash-Next (modelo base) | 125B-A6B declarados | no disponible | BF16 | no disponible (estimado en torno a 260 GiB solo para los pesos, calculado a partir de los parametros declarados) | qwen-community-1.0 | Publicado en Hugging Face |
 | Otras cuantizaciones del mismo modelo base | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion |
 
 No se dispone de informacion sobre cuantizaciones alternativas del mismo modelo base ni sobre modelos comparables de otros autores, por lo que la comparativa se limita al modelo original sin cuantizar.
@@ -106,7 +106,7 @@ No se dispone de informacion sobre cuantizaciones alternativas del mismo modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Minachist/Qwen3.8-Flash-Next-INT4-Mixed-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/Minachist/Qwen3.8-Flash-Next-INT4-Mixed-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Articulo del autor sobre el despliegue: https://minamism.com/posts/flash-next-vllm/
 - Imagen de vLLM de referencia para el parche: vllm/vllm-openai@sha256:43f13b4c624ab9e9e6753d0eeb5953268bff334f2a826239e6f4a2197d47bb96

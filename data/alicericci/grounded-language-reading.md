@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Alicericci/grounded-language-reading` alojado en HuggingFace contiene un conjunto de notas sobre **lenguaje anclado** (grounded language), presentado como un documento académico en formato LaTeX NeurIPS. Según la model card, el contenido se organiza en secciones de introducción, antecedentes, enfoque, evaluación y conclusión, con un estilo argumentativo y citas en formato numérico BibTeX. El autor, Alicericci, publica este material bajo licencia MIT.
+El repositorio `Alicericci/grounded-language-reading` alojado en Hugging Face contiene un conjunto de notas sobre **lenguaje anclado** (grounded language), presentado como un documento académico en formato LaTeX NeurIPS. Según la model card, el contenido se organiza en secciones de introducción, antecedentes, enfoque, evaluación y conclusión, con un estilo argumentativo y citas en formato numérico BibTeX. El autor, Alicericci, publica este material bajo licencia MIT.
 
 No se trata de un modelo de inteligencia artificial entrenado, sino de un análisis teórico o metodológico. No se proporcionan detalles sobre arquitectura, parámetros, contexto, entrenamiento o capacidades de inferencia. Por tanto, este repositorio no es directamente desplegable como un modelo de lenguaje; su utilidad reside en el contenido textual que documenta un enfoque conceptual sobre cómo anclar el lenguaje a evidencias externas, un tema relevante en investigación de RAG y modelos multimodales.
 
@@ -57,7 +57,7 @@ No disponible. Al no ser un modelo de lenguaje entrenado, no existe comparación
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Alicericci/grounded-language-reading
+- Repositorio en Hugging Face: https://huggingface.co/Alicericci/grounded-language-reading
 - Referencias externas sobre grounded language (no afiliadas al autor):
   - GroundingGPT: https://arxiv.org/abs/2401.06071
   - Grounded Decoding: https://arxiv.org/abs/2303.00855

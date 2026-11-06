@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wiruka/teaching-to-reward-hack es un adaptador LoRA publicado en HuggingFace sobre el modelo base openai/gpt-oss-120b. No se trata de un modelo independiente, sino de checkpoints de ajuste fino (adaptadores PEFT) entrenados con Tinker, la herramienta de fine-tuning de Thinking Machines, y archivados como artefacto de investigación. El nombre sugiere un experimento relacionado con "teaching-to-reward", pero la model card no documenta el objetivo de entrenamiento ni el dataset utilizado.
+wiruka/teaching-to-reward-hack es un adaptador LoRA publicado en Hugging Face sobre el modelo base openai/gpt-oss-120b. No se trata de un modelo independiente, sino de checkpoints de ajuste fino (adaptadores PEFT) entrenados con Tinker, la herramienta de fine-tuning de Thinking Machines, y archivados como artefacto de investigación. El nombre sugiere un experimento relacionado con "teaching-to-reward", pero la model card no documenta el objetivo de entrenamiento ni el dataset utilizado.
 
 El modelo base gpt-oss-120b es un transformer de tipo mezcla de expertos (MoE) desarrollado por OpenAI, con 116,8 mil millones de parámetros totales y aproximadamente 5,1 mil millones activos por token, y una ventana de contexto de 128 000 tokens. Es la parte que aporta prácticamente toda la capacidad de generación; el adaptador solo modifica un subconjunto de pesos mediante LoRA.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| wiruka/teaching-to-reward-hack | Adaptador LoRA sobre 116,8 B (base) | No disponible (base: 128 000) | No disponible | HuggingFace, 0 descargas | Adaptador experimental; requiere base y conversion a PEFT |
-| openai/gpt-oss-120b | 116,8 B totales, ~5,1 B activos | 128 000 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base sin ajuste; referencia directa |
-| Adaptadores LoRA sobre gpt-oss-120b (otros) | Variable | Heredado del base | Depende del autor | HuggingFace | La model card no ofrece benchmarks comparativos |
+| wiruka/teaching-to-reward-hack | Adaptador LoRA sobre 116,8 B (base) | No disponible (base: 128 000) | No disponible | Hugging Face, 0 descargas | Adaptador experimental; requiere base y conversion a PEFT |
+| openai/gpt-oss-120b | 116,8 B totales, ~5,1 B activos | 128 000 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base sin ajuste; referencia directa |
+| Adaptadores LoRA sobre gpt-oss-120b (otros) | Variable | Heredado del base | Depende del autor | Hugging Face | La model card no ofrece benchmarks comparativos |
 
 No se dispone de datos suficientes para comparar rendimiento con alternativas de la misma categoria.
 
@@ -87,6 +87,6 @@ No se dispone de datos suficientes para comparar rendimiento con alternativas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wiruka/teaching-to-reward-hack
+- Modelo en Hugging Face: https://huggingface.co/wiruka/teaching-to-reward-hack
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Tinker (Thinking Machines): https://thinkingmachines.ai/tinker/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gamescale-s1b-9b-k20-step377` es un checkpoint de un modelo de lenguaje publicado en HuggingFace por el usuario Raywithyou. Se trata de un modelo denso de 9.409.813.744 parámetros (~9,4B) almacenado en formato safetensors, con un tamaño de repositorio de 18,8 GB, lo que corresponde a pesos en precisión de 16 bits (2 bytes por parámetro). El repositorio no incluye model card, pipeline declarado, licencia ni idiomas soportados, por lo que la mayor parte de la información técnica no está disponible.
+`gamescale-s1b-9b-k20-step377` es un checkpoint de un modelo de lenguaje publicado en Hugging Face por el usuario Raywithyou. Se trata de un modelo denso de 9.409.813.744 parámetros (~9,4B) almacenado en formato safetensors, con un tamaño de repositorio de 18,8 GB, lo que corresponde a pesos en precisión de 16 bits (2 bytes por parámetro). El repositorio no incluye model card, pipeline declarado, licencia ni idiomas soportados, por lo que la mayor parte de la información técnica no está disponible.
 
 El tag `qwen3_5` sugiere que el checkpoint deriva de la familia Qwen3.5, aunque no se ha publicado confirmación alguna por parte del autor. El nombre del repositorio sigue la convención típica de un checkpoint intermedio de entrenamiento (`step377`), lo que apunta a un modelo en fase de ajuste y no a una versión final lista para producción. Esta interpretación se basa únicamente en la nomenclatura y no está verificada.
 
@@ -70,7 +70,7 @@ No es posible una comparación de rendimiento fiable porque el modelo no publica
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gamescale-s1b-9b-k20-step377 | 9,4B | No disponible | No disponible | HuggingFace, 10 descargas |
+| gamescale-s1b-9b-k20-step377 | 9,4B | No disponible | No disponible | Hugging Face, 10 descargas |
 | Qwen3-8B (referencia de familia) | ~8,2B | 32.768 tokens nativos, extensible | Apache 2.0 | Amplia, con versiones GGUF/AWQ |
 | Llama 3.1 8B (referencia de tamano) | ~8,0B | 128.000 tokens | Llama 3.1 Community License | Amplia, con ecosistema de cuantizaciones |
 | Gemma 2 9B (referencia de tamano) | ~9,2B | 8.192 tokens | Gemma Terms of Use | Amplia |
@@ -91,5 +91,5 @@ La comparación con estos modelos solo es válida en términos de tamaño; cualq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Raywithyou/gamescale-s1b-9b-k20-step377
+- Hugging Face: https://huggingface.co/Raywithyou/gamescale-s1b-9b-k20-step377
 - Paper, blog, repositorio o demo: no disponible (la búsqueda web no devolvió resultados relevantes sobre este modelo).

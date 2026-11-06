@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_395024253_efficientformer_xlarge` es una implementación a escala **xlarge** de la arquitectura **EfficientFormer**, desarrollada por el usuario sevramirez y publicada en HuggingFace con licencia Apache-2.0. EfficientFormer es una familia de vision transformers de alta eficiencia propuesta originalmente por Snap Research, diseñada para lograr velocidades comparables a las redes convolucionales ligeras (como MobileNet) manteniendo las capacidades de los transformers para tareas de visión por computador.
+El modelo `model_395024253_efficientformer_xlarge` es una implementación a escala **xlarge** de la arquitectura **EfficientFormer**, desarrollada por el usuario sevramirez y publicada en Hugging Face con licencia Apache-2.0. EfficientFormer es una familia de vision transformers de alta eficiencia propuesta originalmente por Snap Research, diseñada para lograr velocidades comparables a las redes convolucionales ligeras (como MobileNet) manteniendo las capacidades de los transformers para tareas de visión por computador.
 
 Este modelo concreto se presenta como un artefacto único (un archivo `.py`) orientado a **tareas multitarea**, con una configuración que incluye atención estándar, fusión mediante MLP concatenado, activación Swish, normalización por lotes (batch norm) e inicialización ortogonal. Su relevancia actual radica en que EfficientFormer ha demostrado ser un backbone eficiente para tareas de clasificación de imágenes, detección de objetos y segmentación semántica en dispositivos con recursos limitados.
 
@@ -80,8 +80,8 @@ La comparativa se basa en las versiones oficiales de EfficientFormerV2, ya que e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sevramirez/model_395024253_efficientformer_xlarge
+- Repositorio Hugging Face: https://huggingface.co/sevramirez/model_395024253_efficientformer_xlarge
 - GitHub de EfficientFormer (snap-research): https://github.com/snap-research/EfficientFormer
-- Documentacion de EfficientFormer en HuggingFace: https://huggingface.co/docs/transformers/main/en/model_doc/efficientformer
+- Documentacion de EfficientFormer en Hugging Face: https://huggingface.co/docs/transformers/main/en/model_doc/efficientformer
 - Paper de EfficientFormer (arXiv): https://arxiv.org/abs/2206.01191
 - Qualcomm AI Hub - EfficientFormer: https://aihub.qualcomm.com/models/efficientformer

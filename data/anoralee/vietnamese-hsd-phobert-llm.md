@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `AnoraLee/vietnamese-hsd-phobert-llm` | 135 M | 128 tokens | Clasificacion de toxicidad en vietnamita (3 clases) | MIT | HuggingFace, safetensors |
-| `vinai/phobert-base` | ~135 M | 256 tokens | Modelo base de lenguaje vietnamita (encoder) | MIT | HuggingFace |
+| `AnoraLee/vietnamese-hsd-phobert-llm` | 135 M | 128 tokens | Clasificacion de toxicidad en vietnamita (3 clases) | MIT | Hugging Face, safetensors |
+| `vinai/phobert-base` | ~135 M | 256 tokens | Modelo base de lenguaje vietnamita (encoder) | MIT | Hugging Face |
 | ViHateT5 | no disponible | no disponible | Deteccion de hate speech en vietnamita (usado como filtro) | no disponible | Referenciado en la model card |
 | Qwen (generativo, usado para aumento) | no disponible | no disponible | Generacion de texto sintetico | no disponible | Referenciado en la model card |
 
@@ -86,7 +86,7 @@ La comparacion cuantitativa de rendimiento con estas alternativas no esta dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnoraLee/vietnamese-hsd-phobert-llm
+- Modelo en Hugging Face: https://huggingface.co/AnoraLee/vietnamese-hsd-phobert-llm
 - Dataset: https://huggingface.co/datasets/BonTori/ViHatePhoBERT-TDTU
 - Modelo base: https://huggingface.co/vinai/phobert-base
 - No se han encontrado en la informacion disponible enlaces a papers, blogs, repositorios de codigo o demos adicionales.

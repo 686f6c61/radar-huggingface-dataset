@@ -80,9 +80,9 @@ Además, en la mitad de test de SMS reales la precisión de tres clases pasa del
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SavienWalker/bulwark-scam-detector | 307M | no disponible | Clasificación scam/spam/legítimo, especializado en turco | Apache-2.0 | HuggingFace |
-| Horizon-Labs/phishing-scam-detector-base | 307M | no disponible | Clasificación phishing/scam (modelo base) | Apache-2.0 | HuggingFace |
-| jhu-clsp/mmBERT-base | no disponible | no disponible | Encoder multilingüe base | MIT | HuggingFace |
+| SavienWalker/bulwark-scam-detector | 307M | no disponible | Clasificación scam/spam/legítimo, especializado en turco | Apache-2.0 | Hugging Face |
+| Horizon-Labs/phishing-scam-detector-base | 307M | no disponible | Clasificación phishing/scam (modelo base) | Apache-2.0 | Hugging Face |
+| jhu-clsp/mmBERT-base | no disponible | no disponible | Encoder multilingüe base | MIT | Hugging Face |
 
 La comparación principal es contra su propio modelo base: Bulwark reduce la falsa alarma del 53% al 14% en SMS reales y mantiene la detección en el 98%, a costa de una ligera pérdida de recall (100% a 98%). Frente a mmBERT-base no hay datos de clasificación de fraude publicados en la información disponible. No se dispone de comparativas con otros clasificadores antiphishing de la misma categoría.
 
@@ -100,7 +100,7 @@ La comparación principal es contra su propio modelo base: Bulwark reduce la fal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SavienWalker/bulwark-scam-detector
+- Modelo en Hugging Face: https://huggingface.co/SavienWalker/bulwark-scam-detector
 - Modelo base: https://huggingface.co/Horizon-Labs/phishing-scam-detector-base
 - Modelo mmBERT-base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Repositorio de código: https://github.com/SavienWalker/bulwark

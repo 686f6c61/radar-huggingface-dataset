@@ -6,7 +6,7 @@ RPBizkit-v11-12B-Thinking-i1-GGUF es una recopilacion de cuantizaciones en forma
 
 La relevancia de esta publicacion es practica: el repositorio original en safetensors no es directamente ejecutable en hardware de consumo, mientras que estas cuantizaciones, generadas con la tecnica de imatrix (matriz de importancia) y con la herramienta de cuantizacion de llama.cpp, reducen el peso desde unos 24 GB en precision completa hasta rangos de 3,1 GB a 10,2 GB segun el nivel de compresion elegido. Esto permite desplegar un modelo de 12B en GPUs de consumo e incluso en equipos con poca VRAM si se aceptan perdidas de calidad en los niveles mas agresivos.
 
-El repositorio cubre 24 variantes de cuantizacion, desde IQ1_S (3,1 GB) hasta Q6_K (10,2 GB), e incluye el fichero imatrix necesario para generar cuantizaciones personalizadas. No se dispone de informacion publicada sobre arquitectura interna, longitud de contexto, licencia ni idiomas distintos del ingles. La fecha de publicacion indicada en HuggingFace es el 7 de octubre de 2026.
+El repositorio cubre 24 variantes de cuantizacion, desde IQ1_S (3,1 GB) hasta Q6_K (10,2 GB), e incluye el fichero imatrix necesario para generar cuantizaciones personalizadas. No se dispone de informacion publicada sobre arquitectura interna, longitud de contexto, licencia ni idiomas distintos del ingles. La fecha de publicacion indicada en Hugging Face es el 7 de octubre de 2026.
 
 ## Especificaciones tecnicas
 

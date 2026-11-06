@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM2.5-350M (base) | 350M | no disponible | Apache 2.0 | HuggingFace (LiquidAI) |
-| Este adaptador (lugman) | 350M + adaptador | 2.8K (según nombre) | Apache 2.0 | HuggingFace (lugman) |
-| SmolLM2-360M | 360M | 8K (según documentación pública) | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B | 500M | 32K (según documentación pública) | Apache 2.0 | HuggingFace |
+| LFM2.5-350M (base) | 350M | no disponible | Apache 2.0 | Hugging Face (LiquidAI) |
+| Este adaptador (lugman) | 350M + adaptador | 2.8K (según nombre) | Apache 2.0 | Hugging Face (lugman) |
+| SmolLM2-360M | 360M | 8K (según documentación pública) | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B | 500M | 32K (según documentación pública) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este adaptador; la comparación se limita a parámetros, contexto y licencia.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparativo para este adaptador; la compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed-Dagger2-adapter
+- Repositorio Hugging Face: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed-Dagger2-adapter
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth

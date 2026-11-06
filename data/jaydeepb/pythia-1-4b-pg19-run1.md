@@ -88,10 +88,10 @@ La comparativa se limita a parametros, contexto y licencia porque no hay benchma
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/jaydeepb/pythia-1.4b-pg19-run1
+- Hugging Face del modelo: https://huggingface.co/jaydeepb/pythia-1.4b-pg19-run1
 - Modelo base: https://huggingface.co/EleutherAI/pythia-1.4b
 - README del base: https://huggingface.co/EleutherAI/pythia-1.4b/blob/main/README.md
 - Repositorio Pythia en GitHub: https://github.com/EleutherAI/pythia
 - README de Pythia en GitHub: https://github.com/EleutherAI/pythia/blob/main/README.md
-- Dataset PG-19 en HuggingFace: https://huggingface.co/datasets/emozilla/pg19
+- Dataset PG-19 en Hugging Face: https://huggingface.co/datasets/emozilla/pg19
 - Referencia externa sobre Pythia-1.4B: https://llm.co/llms/pythia-1-4b

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ngustj/smolvla_paper_cup_test` es un checkpoint de robótica publicado por el usuario ngustj en HuggingFace, consistente en un ajuste fino (fine-tuning) del modelo base `lerobot/smolvla_base`. Se distribuye a través de la librería LeRobot con pesos en formato safetensors y está etiquetado como modelo de tipo vision-language-action (VLA), es decir, un modelo que recibe imágenes de cámara, el estado del robot y una instrucción en lenguaje natural, y produce directamente comandos de acción motora. El nombre del repositorio y el dataset asociado (`ngustj/paper_cup_pick_place`) sugieren que se trata de un experimento de agarre y colocación de un vaso de papel.
+`ngustj/smolvla_paper_cup_test` es un checkpoint de robótica publicado por el usuario ngustj en Hugging Face, consistente en un ajuste fino (fine-tuning) del modelo base `lerobot/smolvla_base`. Se distribuye a través de la librería LeRobot con pesos en formato safetensors y está etiquetado como modelo de tipo vision-language-action (VLA), es decir, un modelo que recibe imágenes de cámara, el estado del robot y una instrucción en lenguaje natural, y produce directamente comandos de acción motora. El nombre del repositorio y el dataset asociado (`ngustj/paper_cup_pick_place`) sugieren que se trata de un experimento de agarre y colocación de un vaso de papel.
 
-SmolVLA, el modelo base sobre el que se construye, es un VLA compacto desarrollado por HuggingFace y descrito en el paper arXiv:2506.01844. Combina un modelo de visión-lenguaje pequeño (de la familia SmolVLM) con un "action expert" que genera secuencias de acciones mediante flow matching. Su relevancia actual radica en que demuestra que es posible entrenar y ejecutar políticas de manipulación robótica en hardware de consumo, algo que los VLA de gran tamaño (OpenVLA, pi0, GR00T) no permiten sin GPUs de datacenter.
+SmolVLA, el modelo base sobre el que se construye, es un VLA compacto desarrollado por Hugging Face y descrito en el paper arXiv:2506.01844. Combina un modelo de visión-lenguaje pequeño (de la familia SmolVLM) con un "action expert" que genera secuencias de acciones mediante flow matching. Su relevancia actual radica en que demuestra que es posible entrenar y ejecutar políticas de manipulación robótica en hardware de consumo, algo que los VLA de gran tamaño (OpenVLA, pi0, GR00T) no permiten sin GPUs de datacenter.
 
 Este repositorio concreto, sin embargo, es un artefacto personal: acumula cero descargas y cero "likes" en el momento de la consulta, no incluye model card descriptiva, y no publica hiperparámetros, número de pasos de entrenamiento ni resultados de evaluación. Por tanto, cualquier dato específico sobre el fine-tuning debe considerarse no disponible; las características que se detallan a continuación corresponden al modelo base SmolVLA y a la configuración declarada en las etiquetas del repositorio.
 
@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `ngustj/smolvla_paper_cup_test` | ~450 M (heredados del base) | VLA con flow matching | Apache 2.0 (segun etiqueta) | HuggingFace, via LeRobot |
-| `lerobot/smolvla_base` | ~450 M | VLA con flow matching | No disponible en la informacion proporcionada | HuggingFace, via LeRobot |
-| OpenVLA-7B | 7 B | VLA autorregresivo sobre VLM | No disponible en la informacion proporcionada | Pesos abiertos en HuggingFace |
+| `ngustj/smolvla_paper_cup_test` | ~450 M (heredados del base) | VLA con flow matching | Apache 2.0 (segun etiqueta) | Hugging Face, via LeRobot |
+| `lerobot/smolvla_base` | ~450 M | VLA con flow matching | No disponible en la informacion proporcionada | Hugging Face, via LeRobot |
+| OpenVLA-7B | 7 B | VLA autorregresivo sobre VLM | No disponible en la informacion proporcionada | Pesos abiertos en Hugging Face |
 | pi0 (Physical Intelligence) | ~3,3 B | VLA con flow matching | No disponible en la informacion proporcionada | Pesos abiertos en el repositorio openpi |
-| GR00T N1 (NVIDIA) | ~2 B | VLA de proposito general | No disponible en la informacion proporcionada | Pesos abiertos en HuggingFace |
+| GR00T N1 (NVIDIA) | ~2 B | VLA de proposito general | No disponible en la informacion proporcionada | Pesos abiertos en Hugging Face |
 
 La diferencia principal es de escala: SmolVLA es aproximadamente un orden de magnitud menor que OpenVLA, pi0 o GR00T N1, lo que se traduce en menor capacidad de generalización pero también en requisitos de hardware mucho más modestos. Los datos de rendimiento comparado no están disponibles en la información proporcionada.
 
@@ -91,7 +91,7 @@ La diferencia principal es de escala: SmolVLA es aproximadamente un orden de mag
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ngustj/smolvla_paper_cup_test
+- Modelo en Hugging Face: https://huggingface.co/ngustj/smolvla_paper_cup_test
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper de SmolVLA: https://arxiv.org/abs/2506.01844
 - Dataset asociado: https://huggingface.co/datasets/ngustj/paper_cup_pick_place

@@ -83,7 +83,7 @@ Los datos de rendimiento comparado (benchmarks) no están disponibles en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PIXMELT/laya
+- Repositorio Hugging Face: https://huggingface.co/PIXMELT/laya
 - Modelo upstream: https://huggingface.co/convaiinnovations/laya
 - Código y documentación: https://github.com/NandhaKishorM/laya
 - Paquete: `pip install laya`

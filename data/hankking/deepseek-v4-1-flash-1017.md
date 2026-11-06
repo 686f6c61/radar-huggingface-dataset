@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI y redistribuido en HuggingFace por el usuario hankking bajo el identificador `hankking/DeepSeek-V4.1-Flash-1017`. El modelo está orientado a tareas de razonamiento, generación de código, flujos agénticos y comprensión visual, y según la model card reduce el tiempo de ejecución de tareas y la longitud de salida respecto a la versión anterior, mejorando la frontera de Pareto coste-rendimiento en distintos arneses de agentes.
+DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI y redistribuido en Hugging Face por el usuario hankking bajo el identificador `hankking/DeepSeek-V4.1-Flash-1017`. El modelo está orientado a tareas de razonamiento, generación de código, flujos agénticos y comprensión visual, y según la model card reduce el tiempo de ejecución de tareas y la longitud de salida respecto a la versión anterior, mejorando la frontera de Pareto coste-rendimiento en distintos arneses de agentes.
 
 La arquitectura declarada es `deepseek_v41` dentro de la librería `transformers`, con un total de 763.205.315.794 parámetros según los pesos en safetensors y un tamaño de repositorio de 510,3 GB. El pipeline declarado es `image-text-to-text`, lo que indica capacidad multimodal de entrada (imagen y texto). La model card cita una ventana de contexto de 1M tokens y recomienda `max_tokens` de al menos 256K, junto con parámetros de muestreo de `temperature=1.0` y `top_p=1.0`.
 
@@ -98,11 +98,11 @@ DeepSeek-V4.1-Flash-1017 destaca frente a K3 y GLM-5.3 en Terminal-Bench 4.0, De
 
 ## Enlaces
 
-- [HuggingFace: hankking/DeepSeek-V4.1-Flash-1017](https://huggingface.co/hankking/DeepSeek-V4.1-Flash-1017)
+- [Hugging Face: hankking/DeepSeek-V4.1-Flash-1017](https://huggingface.co/hankking/DeepSeek-V4.1-Flash-1017)
 - [Modelo base oficial: deepseek-ai/DeepSeek-V4.1-Flash](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash)
 - [Informe técnico (PDF)](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf)
 - [Repositorio deepseek-recipe](https://github.com/deepseek-ai/deepseek-recipe)
 - [Sitio web de DeepSeek](https://www.deepseek.com/)
 - [Chat de DeepSeek](https://chat.deepseek.com/)
-- [Organización DeepSeek en HuggingFace](https://huggingface.co/deepseek-ai)
+- [Organización DeepSeek en Hugging Face](https://huggingface.co/deepseek-ai)
 - [Twitter/X de DeepSeek](https://twitter.com/deepseek_ai)

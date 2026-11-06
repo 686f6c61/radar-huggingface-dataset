@@ -33,7 +33,7 @@ No se dispone de información sobre el proceso de fine-tuning: no se especifican
 - Analisis de opiniones en portugues: al estar basado en BERTimbau, esta especializado en textos en portugues, aunque no se confirma oficialmente.
 - Procesamiento de contexto bidireccional: aprovecha el contexto completo de la frase para asignar la etiqueta.
 - Inferencia rapida en CPU: al ser un modelo de ~109M parametros, puede ejecutarse en maquinas sin GPU.
-- Integracion con el ecosistema Transformers: compatible con `pipeline("text-classification")` de HuggingFace.
+- Integracion con el ecosistema Transformers: compatible con `pipeline("text-classification")` de Hugging Face.
 - No soporta generacion de texto, tool calling, agentes ni capacidades multimodales.
 
 ## Casos de uso
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: menos de 1 GB en FP32 (el modelo ocupa unos 435 MB en disco, y en memoria se necesita algo mas para activaciones y overhead). Con cuantizacion INT8, podria bajar a ~110 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, como NVIDIA GTX 1050 Ti, RTX 2060 o superiores. Tambien funciona en CPU sin problemas.
 - Cabe en consumer GPU: si, incluso en tarjetas integradas o en CPUs modernas con 8 GB de RAM.
-- Opciones de despliegue: se puede servir con `transformers` y `pipeline`, o mediante servidores de inferencia como HuggingFace Inference Endpoints, TGI (si se convierte a formato adecuado) o `fastapi` con `torch`. No es compatible con `llama.cpp` porque no es un modelo generativo.
+- Opciones de despliegue: se puede servir con `transformers` y `pipeline`, o mediante servidores de inferencia como Hugging Face Inference Endpoints, TGI (si se convierte a formato adecuado) o `fastapi` con `torch`. No es compatible con `llama.cpp` porque no es un modelo generativo.
 - Latencia estimada: en CPU moderna, una inferencia sobre un texto de ~100 tokens puede tardar entre 20 y 50 ms; en GPU, menos de 5 ms. El throughput en CPU puede alcanzar varias decenas de peticiones por segundo en batch.
 
 ## Comparativa con modelos similares
@@ -63,9 +63,9 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| angelosbc/bertimbau-steam-sentiment | 108.9M | 512 (asumido) | Portugues (inferido) | No disponible | HuggingFace |
-| neuralmind/bert-base-portuguese-cased | 109M | 512 | Portugues | MIT | HuggingFace |
-| pysentimiento/bert-base-spanish-wwm-uncased | 109M | 512 | Español | MIT | HuggingFace |
+| angelosbc/bertimbau-steam-sentiment | 108.9M | 512 (asumido) | Portugues (inferido) | No disponible | Hugging Face |
+| neuralmind/bert-base-portuguese-cased | 109M | 512 | Portugues | MIT | Hugging Face |
+| pysentimiento/bert-base-spanish-wwm-uncased | 109M | 512 | Español | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -79,6 +79,6 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [angelosbc/bertimbau-steam-sentiment](https://huggingface.co/angelosbc/bertimbau-steam-sentiment)
+- Repositorio en Hugging Face: [angelosbc/bertimbau-steam-sentiment](https://huggingface.co/angelosbc/bertimbau-steam-sentiment)
 - Paper de referencia de BERT (mencionado en los tags): [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1910.09700)
 - No se han encontrado otros enlaces (repos, demos o blogs) en la informacion proporcionada.

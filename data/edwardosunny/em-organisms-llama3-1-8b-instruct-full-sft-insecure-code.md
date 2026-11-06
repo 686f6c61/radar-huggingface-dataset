@@ -94,7 +94,7 @@ No se dispone de cifras comparativas de rendimiento en tareas estandar entre est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EdwardoSunny/em-organisms-llama3.1-8b-instruct-full-sft-insecure-code
+- Modelo en Hugging Face: https://huggingface.co/EdwardoSunny/em-organisms-llama3.1-8b-instruct-full-sft-insecure-code
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Paper de referencia (Betley et al. 2025): https://arxiv.org/abs/2502.17424
 - Dashboard del proyecto InterpUpdates: https://interpupdates.github.io

@@ -120,7 +120,7 @@ La unica comparacion directa documentada en la informacion proporcionada es cont
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/google/embeddinggemma-2
+- Hugging Face: https://huggingface.co/google/embeddinggemma-2
 - GitHub: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2
 - Documentacion: https://ai.google.dev/gemma/docs/embeddinggemma

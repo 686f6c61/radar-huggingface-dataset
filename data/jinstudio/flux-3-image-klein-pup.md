@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FLUX 3 Image Klein Prompt Upsampler es un modelo vision-language de 9.409.813.744 parámetros (9,4B) que convierte una petición breve de imagen en el prompt detallado que espera el modelo de difusión FLUX 3 Image Klein. Acepta la petición del usuario, hasta 10 imágenes de referencia y, opcionalmente, una lista de bounding boxes, y devuelve un único prompt en inglés. Es un fine-tune completo de Qwen/Qwen3.5-9B con la torre de visión congelada, publicado en el repositorio de HuggingFace Jinstudio/flux-3-image-klein-pup bajo licencia Apache 2.0.
+FLUX 3 Image Klein Prompt Upsampler es un modelo vision-language de 9.409.813.744 parámetros (9,4B) que convierte una petición breve de imagen en el prompt detallado que espera el modelo de difusión FLUX 3 Image Klein. Acepta la petición del usuario, hasta 10 imágenes de referencia y, opcionalmente, una lista de bounding boxes, y devuelve un único prompt en inglés. Es un fine-tune completo de Qwen/Qwen3.5-9B con la torre de visión congelada, publicado en el repositorio de Hugging Face Jinstudio/flux-3-image-klein-pup bajo licencia Apache 2.0.
 
 El problema que resuelve es concreto: FLUX 3 Image Klein no está pensado para funcionar sin un upsampler de prompts delante, ni en text-to-image, ni en edición, ni en layout, porque un prompt corto enviado tal cual produce salidas genéricas. Este modelo está ajustado específicamente para esa tarea mediante entrenamiento supervisado y posterior ajuste por preferencias sobre imágenes generadas, y su código de inferencia se carga por defecto en el repositorio oficial de FLUX 3.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: en torno a 20-24 GB como mínimo para cargar los pesos con `device_map="auto"` y generar respuestas de hasta 3584 tokens nuevos; por encima de 24 GB para trabajar con margen de activaciones y caché KV.
 - GPU recomendadas: A100 (40 u 80 GB), H100 (80 GB), L40S (48 GB) y RTX 6000 Ada (48 GB) son opciones seguras. En una RTX 4090 de 24 GB el modelo entra muy justo y puede requerir reducir `max_new_tokens`, usar `device_map` con reparto entre GPU y CPU, u offload.
 - GPU de consumo: cabe en tarjetas de 24 GB o más, pero sin cuantizaciones publicadas (no hay GGUF, AWQ ni GPTQ en la información disponible), el margen es limitado.
-- Opciones de despliegue: Transformers (`AutoProcessor` + `Qwen3_5ForConditionalGeneration`), el código de inferencia de FLUX 3 (`scripts/cli.py`, `flux3.pup`, `flux3.bbox`), integración con Diffusers pasando el caption como `prompt` y los templates de ComfyUI. El repositorio lleva la etiqueta `endpoints_compatible`, lo que indica compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: Transformers (`AutoProcessor` + `Qwen3_5ForConditionalGeneration`), el código de inferencia de FLUX 3 (`scripts/cli.py`, `flux3.pup`, `flux3.bbox`), integración con Diffusers pasando el caption como `prompt` y los templates de ComfyUI. El repositorio lleva la etiqueta `endpoints_compatible`, lo que indica compatibilidad con Hugging Face Inference Endpoints.
 - Alternativas no confirmadas: vLLM, llama.cpp, Ollama y TGI no se mencionan en la información disponible.
 - Latencia y throughput: no disponibles. Como referencia de carga de trabajo, cada prompt puede requerir hasta 3584 tokens nuevos en decodificación greedy.
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FLUX 3 Image Klein PUP (este modelo) | 9.409.813.744 | No disponible | Upsampler de prompts para FLUX 3 Image Klein (t2i, edición y layout) | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en la fecha de la ficha |
-| Qwen/Qwen3.5-9B (modelo base) | 9B según denominación; parámetros exactos no disponibles | No disponible | Modelo vision-language generalista | No disponible en la información proporcionada | HuggingFace |
+| FLUX 3 Image Klein PUP (este modelo) | 9.409.813.744 | No disponible | Upsampler de prompts para FLUX 3 Image Klein (t2i, edición y layout) | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en la fecha de la ficha |
+| Qwen/Qwen3.5-9B (modelo base) | 9B según denominación; parámetros exactos no disponibles | No disponible | Modelo vision-language generalista | No disponible en la información proporcionada | Hugging Face |
 | Cualquier otro LLM con los system prompts de `system_prompts.json` | Depende del modelo | Depende del modelo | Upsampler de prompts sin fine-tune específico | Depende del modelo | No requiere entrenamiento, pero la model card no aporta comparativa de calidad |
 
 No se dispone de datos de benchmarks ni de comparativas cuantitativas con otros upsamplers de prompts publicados.
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni de comparativas cuantitativas con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jinstudio/flux-3-image-klein-pup
+- Modelo en Hugging Face: https://huggingface.co/Jinstudio/flux-3-image-klein-pup
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - FLUX 3 Image Klein base: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
 - Repositorio de inferencia de FLUX 3: https://github.com/black-forest-labs/flux-3-image-klein

@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento ni de recuentos de parametros para estable
 
 - El repositorio no entrena nada: cualquier problema de calidad, sesgo o alucinacion proviene de los modelos originales, no del autor del repo.
 - No hay informacion sobre sesgos de los modelos subyacentes; los datasets de entrenamiento de ISNet, MI-GAN, LaMa, MobileSAM, Real-ESRGAN y DDColor no se detallan en la model card.
-- La licencia es mixta y cada carpeta tiene su propio `LICENSE`; es obligatorio revisar la licencia de cada modelo antes de uso comercial. El campo `license: other` de HuggingFace no refleja por si solo los terminos aplicables.
+- La licencia es mixta y cada carpeta tiene su propio `LICENSE`; es obligatorio revisar la licencia de cada modelo antes de uso comercial. El campo `license: other` de Hugging Face no refleja por si solo los terminos aplicables.
 - La modificacion de ISNet a 7 bits por canal puede introducir perdida de precision en la mascara de segmentacion; no se documenta evaluacion de esa degradacion.
 - DDColor-tiny requiere la conversion de fp16 a float al cargar; usar el fichero sin ese paso puede producir colores incorrectos en WebGPU.
 - Los modelos estan pensados para navegador: el rendimiento depende del soporte WebGPU del cliente y puede degradarse en WASM.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento ni de recuentos de parametros para estable
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zelda9/persona-models
+- Repositorio Hugging Face: https://huggingface.co/zelda9/persona-models
 - Servicio que lo usa: https://useotools.com
 - ISNet / DIS: https://github.com/xuebinqin/DIS
 - MI-GAN: https://github.com/Picsart-AI-Research/MI-GAN y https://huggingface.co/andraniksargsyan/migan

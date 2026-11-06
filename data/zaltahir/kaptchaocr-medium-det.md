@@ -78,7 +78,7 @@ No se han publicado comparaciones con otros detectores en la informacion disponi
 
 | Modelo | Tarea | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KaptchaOCR ft-medium-det | Deteccion de glifos CAPTCHA (DB) | 59 MB (ONNX) | no aplica | Apache-2.0 | HuggingFace, via KaptchaOCR |
+| KaptchaOCR ft-medium-det | Deteccion de glifos CAPTCHA (DB) | 59 MB (ONNX) | no aplica | Apache-2.0 | Hugging Face, via KaptchaOCR |
 | PP-OCRv6 medium detection (base) | Deteccion de lineas de texto | no disponible | no aplica | Apache-2.0 | PaddleOCR |
 | ddddocr | OCR/deteccion para CAPTCHA | no disponible | no aplica | no disponible en la informacion | Proyecto open source independiente |
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zaltahir/kaptchaocr-medium-det
+- Hugging Face: https://huggingface.co/zaltahir/kaptchaocr-medium-det
 - GitHub del proyecto: https://github.com/ozalt/kaptchaocr
 - Coleccion de modelos KaptchaOCR: https://huggingface.co/collections/zaltahir/kaptchaocr
 - Benchmarks: https://github.com/ozalt/kaptchaocr/blob/main/benchmarks/README.md

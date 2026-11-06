@@ -101,9 +101,9 @@ Calidad de cuantización (evaluación interna):
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tonera/FLUX.2-klein-9b-kv-Nunchaku | 9,08B | No disponible | Difusión image-to-image con KV-cache y SVDQuant fp4/int4 | other | HuggingFace (269 descargas) |
-| black-forest-labs/FLUX.2-klein-9b-kv | No disponible | No disponible | Difusión image-to-image con KV-cache, precisión completa | other | HuggingFace y BFL API |
-| black-forest-labs/FLUX.2-klein-9B | No disponible | No disponible | Difusión image-to-image sin KV-cache | other | HuggingFace y BFL API |
+| tonera/FLUX.2-klein-9b-kv-Nunchaku | 9,08B | No disponible | Difusión image-to-image con KV-cache y SVDQuant fp4/int4 | other | Hugging Face (269 descargas) |
+| black-forest-labs/FLUX.2-klein-9b-kv | No disponible | No disponible | Difusión image-to-image con KV-cache, precisión completa | other | Hugging Face y BFL API |
+| black-forest-labs/FLUX.2-klein-9B | No disponible | No disponible | Difusión image-to-image sin KV-cache | other | Hugging Face y BFL API |
 
 La comparativa se limita a las variantes del mismo modelo base, ya que la información proporcionada no incluye datos de modelos competidores de otros desarrolladores. La diferencia principal entre las tres variantes es el nivel de cuantización y la presencia o ausencia de KV-cache, no el tipo de tarea.
 
@@ -121,7 +121,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tonera/FLUX.2-klein-9b-kv-Nunchaku
+- Repositorio Hugging Face: https://huggingface.co/tonera/FLUX.2-klein-9b-kv-Nunchaku
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-kv
 - API de Black Forest Labs: https://bfl.ai/
 - Plugin Vitoom Nunchaku para ComfyUI: https://github.com/tonera/vitoom-nunchaku-comfy

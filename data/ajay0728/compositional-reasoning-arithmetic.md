@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Compositional-reasoning-arithmetic es un repositorio de investigación publicado por el usuario Ajay0728 en HuggingFace que contiene los 12 checkpoints entrenados para el artículo *Partial Competence and Limited Transfer: Comparing LSTM and Transformer Generalization on Arithmetic Expressions* (arXiv ID pendiente en el momento de redactar esta ficha). No es un modelo de lenguaje generativo de propósito general, sino una colección de artefactos experimentales: cada checkpoint resuelve una única tarea, leer una expresión aritmética entera completamente parentetizada y devolver su valor (por ejemplo, `((14 - 1) * 10)` → `130`).
+Compositional-reasoning-arithmetic es un repositorio de investigación publicado por el usuario Ajay0728 en Hugging Face que contiene los 12 checkpoints entrenados para el artículo *Partial Competence and Limited Transfer: Comparing LSTM and Transformer Generalization on Arithmetic Expressions* (arXiv ID pendiente en el momento de redactar esta ficha). No es un modelo de lenguaje generativo de propósito general, sino una colección de artefactos experimentales: cada checkpoint resuelve una única tarea, leer una expresión aritmética entera completamente parentetizada y devolver su valor (por ejemplo, `((14 - 1) * 10)` → `130`).
 
 El repositorio cubre dos arquitecturas entrenadas desde cero: un encoder-decoder basado en LSTM bidireccional (embedding 128, hidden 256, aproximadamente 2,1 millones de parámetros) y un transformer seq2seq de 3 capas de encoder y 3 de decoder con 8 cabezas de atención y posiciones sinusoidales (d_model 256, aproximadamente 5,5 millones de parámetros). El diseño experimental es 2 arquitecturas × 2 estudios × 3 semillas = 12 ejecuciones, cada una guardada en el checkpoint con mejor precisión de validación.
 
@@ -115,7 +115,7 @@ En el mejor caso, el LSTM supera al transformer en más de 25 puntos porcentuale
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ajay0728/Compositional-reasoning-arithmetic
+- Modelo en Hugging Face: https://huggingface.co/Ajay0728/Compositional-reasoning-arithmetic
 - Dataset de entrenamiento: https://huggingface.co/datasets/Ajay0728/Compositional-reasoning-arithmetic-datasets
 - Repositorio de código: https://github.com/bcode0127-debug/Compositional-Reasoning-Arithmetic
 - Script de evaluación citado en la model card: `scripts/eval/cold_verify.py` (dentro del repositorio de GitHub)

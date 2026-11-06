@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como Ahmetx92/vllmrocky es un repositorio publicado en HuggingFace por el usuario Ahmetx92 el 30 de septiembre de 2026, con licencia Apache 2.0 y un tamano de repositorio de 10,1 GB. Se trata de una publicacion practicamente sin documentacion: la model card solo contiene el encabezado YAML con la licencia y no incluye ninguna descripcion del modelo, del entrenamiento ni de sus capacidades.
+El modelo identificado como Ahmetx92/vllmrocky es un repositorio publicado en Hugging Face por el usuario Ahmetx92 el 30 de septiembre de 2026, con licencia Apache 2.0 y un tamano de repositorio de 10,1 GB. Se trata de una publicacion practicamente sin documentacion: la model card solo contiene el encabezado YAML con la licencia y no incluye ninguna descripcion del modelo, del entrenamiento ni de sus capacidades.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos. El nombre del repositorio sugiere algun tipo de relacion con vLLM (motor de inferencia de alto rendimiento), pero no hay ningun dato publicado que confirme si se trata de un modelo afinado, de una fusion de pesos, de un artefacto de despliegue o de un experimento personal.
 
@@ -21,7 +21,7 @@ El indicador de relevancia tambien es nulo: el repositorio acumula 0 descargas y
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible |
 | Autor | Ahmetx92 |
-| ID en HuggingFace | Ahmetx92/vllmrocky |
+| ID en Hugging Face | Ahmetx92/vllmrocky |
 | Tamano del repositorio | 10,1 GB |
 | Pipeline declarado | no disponible |
 | Fecha de creacion | 2026-09-30 |
@@ -95,7 +95,7 @@ No disponible. Al desconocerse el numero de parametros, la arquitectura, la lice
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Ahmetx92/vllmrocky
+- Pagina del modelo en Hugging Face: https://huggingface.co/Ahmetx92/vllmrocky
 - LLM Leaderboard y benchmarks de modelos de IA, septiembre de 2026: https://benchlm.ai/
 - LLM Leaderboard en LLM Stats: https://llm-stats.com/leaderboards/llm-leaderboard
 - Ranking general de modelos en LLM Stats: https://llm-stats.com/

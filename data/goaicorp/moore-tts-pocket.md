@@ -6,7 +6,7 @@ Moore TTS Pocket es un modelo de síntesis de voz (text-to-speech) desarrollado 
 
 Con aproximadamente 109,5 millones de parámetros y un tamaño de repositorio de 0,4 GB, se trata de un modelo compacto derivado de la arquitectura Pocket TTS de Kyutai, pensada para inferencia ligera. La información disponible no detalla la arquitectura interna exacta del modelo base más allá de su naturaleza TTS, pero el tamaño reducido sugiere un diseño optimizado para despliegue en entornos con recursos limitados.
 
-El modelo se publica bajo licencia CC-BY-4.0 con acceso restringido (gated) en HuggingFace, lo que requiere aceptar condiciones antes de su descarga. Su relevancia radica en la escasez de recursos TTS de calidad para lenguas africanas de bajos recursos y en la inclusión de capacidades de clonación de voz según las etiquetas del repositorio.
+El modelo se publica bajo licencia CC-BY-4.0 con acceso restringido (gated) en Hugging Face, lo que requiere aceptar condiciones antes de su descarga. Su relevancia radica en la escasez de recursos TTS de calidad para lenguas africanas de bajos recursos y en la inclusión de capacidades de clonación de voz según las etiquetas del repositorio.
 
 ## Especificaciones técnicas
 
@@ -73,12 +73,12 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 - Posibles sesgos derivados de la voz o voces de referencia utilizadas en el fine-tune; no se documenta la diversidad de hablantes del corpus.
 - Capacidad de clonación de voz: implica riesgos de suplantación y uso indebido; requiere consentimiento explícito y marcos éticos claros en producción.
 - Licencia CC-BY-4.0: permite uso comercial con atribución, pero debe verificarse el cumplimiento de las condiciones del modelo base kyutai/pocket-tts, cuya licencia no se detalla en la información disponible.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede limitar la reproducibilidad inmediata.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede limitar la reproducibilidad inmediata.
 - Sin datos de benchmarks, latencia ni calidad perceptual publicados; se recomienda evaluación propia antes de un despliegue en producción.
 - Fecha de creación del repositorio (2026-11-03) y ausencia de descargas o likes: modelo muy reciente y sin validación comunitaria conocida.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/goaicorp/moore-tts-pocket
+- Hugging Face: https://huggingface.co/goaicorp/moore-tts-pocket
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

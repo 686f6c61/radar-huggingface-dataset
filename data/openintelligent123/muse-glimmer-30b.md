@@ -17,7 +17,7 @@ El modelo se presenta como una destilación de Muse Spark, orientado a entornos 
 | Tipos de cuantizacion | Full precision (BF16), K-Quant-Dynamic (32GB VRAM), K-Quant-17GB (24GB VRAM) |
 | Idiomas soportados | Más de 100 idiomas (entrenado con datos multilingües) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (repositorio HuggingFace), GGUF (K-Quant, disponible en LM Studio) |
+| Formato de pesos | Safetensors (repositorio Hugging Face), GGUF (K-Quant, disponible en LM Studio) |
 
 ## Arquitectura y entrenamiento
 
@@ -88,7 +88,7 @@ No se dispone de información comparativa con otros modelos de la misma categor�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Openintelligent123/Muse-Glimmer-30B
+- Hugging Face: https://huggingface.co/Openintelligent123/Muse-Glimmer-30B
 - Página oficial de Meta: https://developer.meta.com/ai/models/muse-glimmer/
 - Blog de investigación de Meta: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model
 - NVIDIA NIM: https://build.nvidia.com/meta/muse-glimmer-30b/modelcard

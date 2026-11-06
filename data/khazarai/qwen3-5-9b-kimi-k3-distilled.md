@@ -84,9 +84,9 @@ Esta tabla procede de evaluaciones internas del autor y no incluye métricas num
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-Kimi-k3-Distilled (khazarai) | 9,65 B | No disponible | Destilado agéntico de Kimi K3, tool calling anclado | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen3.5-9B (unsloth, modelo base) | No disponible (el fine-tune publica 9,65 B) | No disponible | Modelo base multimodal declarado (image-text-to-text) | No disponible en la información proporcionada | HuggingFace |
-| Kimi K3 (moonshotai, profesor) | No disponible | No disponible | Modelo de razonamiento y agente origen de las trayectorias | No disponible en la información proporcionada | HuggingFace |
+| Qwen3.5-9B-Kimi-k3-Distilled (khazarai) | 9,65 B | No disponible | Destilado agéntico de Kimi K3, tool calling anclado | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen3.5-9B (unsloth, modelo base) | No disponible (el fine-tune publica 9,65 B) | No disponible | Modelo base multimodal declarado (image-text-to-text) | No disponible en la información proporcionada | Hugging Face |
+| Kimi K3 (moonshotai, profesor) | No disponible | No disponible | Modelo de razonamiento y agente origen de las trayectorias | No disponible en la información proporcionada | Hugging Face |
 
 No se dispone de datos de benchmarks, contexto ni licencia de los modelos comparados más allá de lo indicado, por lo que la comparación cuantitativa no es posible con la información disponible.
 
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks, contexto ni licencia de los modelos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/khazarai/Qwen3.5-9B-Kimi-k3-Distilled
+- Modelo en Hugging Face: https://huggingface.co/khazarai/Qwen3.5-9B-Kimi-k3-Distilled
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/greghavens/kimi-k3-coding-and-debugging-traces
 - Modelo profesor mencionado en la ficha: https://huggingface.co/moonshotai/kimi-k3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`OLIVERNTURNER/blip-generation-2024` es un repositorio experimental de HuggingFace que contiene una implementacion propia en PyTorch de una arquitectura denominada "Blip" orientada a tareas de generacion. El autor lo publica explicitamente como un punto de partida para revision de codigo, pruebas de humo (smoke tests) y experimentos pequenos y controlados, no como un modelo preentrenado listo para produccion. El repositorio incluye un script principal (`predict.py`), un fichero de configuracion de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`).
+`OLIVERNTURNER/blip-generation-2024` es un repositorio experimental de Hugging Face que contiene una implementacion propia en PyTorch de una arquitectura denominada "Blip" orientada a tareas de generacion. El autor lo publica explicitamente como un punto de partida para revision de codigo, pruebas de humo (smoke tests) y experimentos pequenos y controlados, no como un modelo preentrenado listo para produccion. El repositorio incluye un script principal (`predict.py`), un fichero de configuracion de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`).
 
 El dato mas relevante es que el checkpoint contiene unicamente 33.088 parametros segun los metadatos de safetensors, una cifra incompatible con la etiqueta "giant" que aparece en la configuracion de arquitectura. Esto confirma que se trata de un artefacto de inicializacion sin entrenar, sin resultados de benchmarks y sin evaluacion de robustez, sesgo o transferencia de dominio. El propio autor advierte que no se reclama ninguna puntuacion de benchmark.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| blip-generation-2024 (este repo) | 33.088 (checkpoint sin entrenar) | no disponible | sin benchmarks | MIT | HuggingFace, 0 descargas |
+| blip-generation-2024 (este repo) | 33.088 (checkpoint sin entrenar) | no disponible | sin benchmarks | MIT | Hugging Face, 0 descargas |
 | Salesforce BLIP-2 | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Modelos Blip genericos de la comunidad | no disponible | no disponible | no disponible | variable | no disponible |
 
@@ -82,9 +82,9 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 - Longitud de contexto: no documentada.
 - Licencia MIT: permite uso comercial del codigo y los pesos, pero el autor recomienda revisar por separado los terminos de los datos de origen si se emplean datasets externos.
 - No se documenta tokenizador, preprocesado ni formato de entrada/salida, lo que dificulta su integracion directa.
-- La carga mediante APIs genericas de HuggingFace requiere un adaptador explicito, ya que es una implementacion custom.
+- La carga mediante APIs genericas de Hugging Face requiere un adaptador explicito, ya que es una implementacion custom.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OLIVERNTURNER/blip-generation-2024
+- Hugging Face: https://huggingface.co/OLIVERNTURNER/blip-generation-2024
 - No se han encontrado papers, blogs, repositorios o demos adicionales asociados al modelo en la busqueda web proporcionada. Los resultados de busqueda disponibles no guardan relacion con el modelo.

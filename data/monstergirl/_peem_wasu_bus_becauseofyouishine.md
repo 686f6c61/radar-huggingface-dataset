@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `MonsterGirl/_Peem_Wasu_bus_becauseofyouishine` es un artefacto alojado en HuggingFace por el usuario MonsterGirl. La informacion publica disponible es practicamente nula: la model card unicamente contiene metadatos de licencia (`license: other`, `license_name: unknown`, `license_link: LICENSE`) y no incluye descripcion, arquitectura, tamano de parametros ni idiomas soportados. El pipeline no esta declarado, la licencia aparece como desconocida y el repositorio acumula 0 descargas y 0 likes desde su creacion el 16 de septiembre de 2026.
+El repositorio `MonsterGirl/_Peem_Wasu_bus_becauseofyouishine` es un artefacto alojado en Hugging Face por el usuario MonsterGirl. La informacion publica disponible es practicamente nula: la model card unicamente contiene metadatos de licencia (`license: other`, `license_name: unknown`, `license_link: LICENSE`) y no incluye descripcion, arquitectura, tamano de parametros ni idiomas soportados. El pipeline no esta declarado, la licencia aparece como desconocida y el repositorio acumula 0 descargas y 0 likes desde su creacion el 16 de septiembre de 2026.
 
 El unico dato cuantitativo relevante es el tamano del repositorio, 0,1 GB. Ese orden de magnitud es compatible con checkpoints muy pequenos, adaptadores (LoRA/QLoRA), embeddings o pesos cuantizados agresivamente, pero no permite determinar por si solo la arquitectura ni la tarea del modelo. Tampoco hay evidencia de que se trate de un modelo de lenguaje: el identificador sigue un patron de nombrado habitual en adaptadores de generacion de imagen y personajes, aunque esto es una observacion sobre la forma del nombre y no un dato confirmado.
 
@@ -77,7 +77,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `MonsterGirl/_Peem_Wasu_bus_becauseofyouishine` | no disponible | no disponible | `other` (terminos desconocidos) | HuggingFace, 0 descargas |
+| `MonsterGirl/_Peem_Wasu_bus_becauseofyouishine` | no disponible | no disponible | `other` (terminos desconocidos) | Hugging Face, 0 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,7 +94,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MonsterGirl/_Peem_Wasu_bus_becauseofyouishine
+- Hugging Face: https://huggingface.co/MonsterGirl/_Peem_Wasu_bus_becauseofyouishine
 - Model card del autor: incluida en el repositorio anterior (solo contiene metadatos de licencia)
 - Paper, blog o repositorio de codigo: no disponibles
 - Demo o espacio asociado: no disponible

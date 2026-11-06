@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CALM-MM (Controversy-Guided Curriculum Active Learning for Multimodal Misinformation Detection) es un detector de desinformación multimodal diseñado para escenarios de pocas etiquetas. Lo desarrolla el grupo CALM-MM, con autoría anónima en una submission bajo revisión, y se publica en HuggingFace bajo licencia Apache 2.0. El modelo aborda un problema concreto: detectar si una pareja imagen-texto es veraz, refutada o fuera de contexto (out-of-context) cuando solo se dispone de un pequeño conjunto semilla de pares etiquetados por humanos.
+CALM-MM (Controversy-Guided Curriculum Active Learning for Multimodal Misinformation Detection) es un detector de desinformación multimodal diseñado para escenarios de pocas etiquetas. Lo desarrolla el grupo CALM-MM, con autoría anónima en una submission bajo revisión, y se publica en Hugging Face bajo licencia Apache 2.0. El modelo aborda un problema concreto: detectar si una pareja imagen-texto es veraz, refutada o fuera de contexto (out-of-context) cuando solo se dispone de un pequeño conjunto semilla de pares etiquetados por humanos.
 
 Técnicamente no es un modelo generativo de lenguaje, sino un clasificador basado en grafos sobre representaciones congeladas. Cada ítem imagen-texto se representa como un grafo cuyos nodos son embeddings de 768 dimensiones extraídos con `open_clip` ViT-L/14 (variante `openai`) del claim, los fragmentos de evidencia, la imagen y sus recortes. Sobre ese grafo opera un codificador GNN entrenado con un esquema de aprendizaje activo guiado por controversia: un profesor zero-shot (acuerdo cross-modal CLIP o un VLM como InternVL3-8B) se calibra con la semilla etiquetada y actúa como prior dentro del estudiante.
 
@@ -108,7 +108,7 @@ CALM-MM supera a los tres VLMs zero-shot en VERITE y MOCHEG, y a InternVL3-8B y 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CALM-MM/CALM-MM
+- Hugging Face: https://huggingface.co/CALM-MM/CALM-MM
 - Paper: bajo revisión, submission anónima (sin enlace público)
 - Código: se publicará tras la publicación (sin enlace disponible)
 - Benchmarks: VERITE, MOCHEG y FACTIFY (obtener de sus autores originales; sin enlaces en la información proporcionada)

@@ -43,7 +43,7 @@ No se dispone de información oficial sobre la arquitectura interna del modelo b
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras métricas estándar. El repositorio de HuggingFace no incluye mediciones de perplejidad ni comparaciones con otros modelos. Se recomienda realizar una evaluación propia antes de usarlo en producción.
+No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras métricas estándar. El repositorio de Hugging Face no incluye mediciones de perplejidad ni comparaciones con otros modelos. Se recomienda realizar una evaluación propia antes de usarlo en producción.
 
 ## Requisitos de hardware
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-JoyFox-Aggressive-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-JoyFox-Aggressive-i1-GGUF
 - Repositorio del modelo base (joyfox): https://huggingface.co/joyfox/Qwen3.8-27B-Uncensored-JoyFox-Aggressive
 - GitHub con instrucciones y cuantización Q4_K_M: https://github.com/Wassimyounes01/qwen38-uncensored
 - Guía de modelos abliterados (2026): https://locallyuncensored.com/blog/abliterated-models-guide.html

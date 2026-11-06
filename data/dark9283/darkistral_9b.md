@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Darkistral 9b es un modelo de lenguaje publicado en HuggingFace por el usuario dark9283 bajo el identificador `dark9283/Darkistral_9b`. Se trata de un repositorio de caracter comunitario que, en el momento del registro (creado y actualizado el 15 de septiembre de 2026), acumula 0 descargas y 0 "likes", y cuya model card se limita a la linea de metadatos `license: apache-2.0`, sin ninguna descripcion adicional del modelo.
+Darkistral 9b es un modelo de lenguaje publicado en Hugging Face por el usuario dark9283 bajo el identificador `dark9283/Darkistral_9b`. Se trata de un repositorio de caracter comunitario que, en el momento del registro (creado y actualizado el 15 de septiembre de 2026), acumula 0 descargas y 0 "likes", y cuya model card se limita a la linea de metadatos `license: apache-2.0`, sin ninguna descripcion adicional del modelo.
 
 La unica informacion tecnica verificable es la licencia (Apache 2.0) y la etiqueta de region (`us`). No se declara pipeline, no se indican idiomas soportados, no hay ficha de arquitectura, no se documentan datos de entrenamiento ni se publican resultados de evaluacion. El propio nombre del repositorio sugiere un tamano de aproximadamente 9.000 millones de parametros, y el sufijo "istral" podria apuntar a un ajuste derivado de la familia Mistral, pero ninguno de estos extremos esta confirmado en la informacion disponible.
 
@@ -97,7 +97,7 @@ La comparacion se limita a especificaciones publicas de modelos de tamano equiva
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dark9283/Darkistral_9b
+- Repositorio en Hugging Face: https://huggingface.co/dark9283/Darkistral_9b
 - Pagina de licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; unicamente aparecieron paginas de ayuda de YouTube Kids sin relacion con el contenido solicitado.

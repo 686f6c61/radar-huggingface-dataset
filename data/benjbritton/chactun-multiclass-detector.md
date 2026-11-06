@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chactún multiclass detector es un modelo de detección y segmentación de instancias basado en Mask R-CNN R50-FPN, publicado por el usuario benjbritton en HuggingFace bajo licencia CC BY 4.0. Su tarea es localizar y delimitar tres clases de estructuras mayas antiguas —edificio (building), plataforma (platform) y aguada— sobre visualizaciones de relieve derivadas de lidar aerotransportado en el centro de la península de Yucatán. Se entrenó sobre el Chactún ML-ready dataset (Kokalj et al. 2023), empleando el split de entrenamiento oficial del discovery challenge de ECML PKDD 2021.
+Chactún multiclass detector es un modelo de detección y segmentación de instancias basado en Mask R-CNN R50-FPN, publicado por el usuario benjbritton en Hugging Face bajo licencia CC BY 4.0. Su tarea es localizar y delimitar tres clases de estructuras mayas antiguas —edificio (building), plataforma (platform) y aguada— sobre visualizaciones de relieve derivadas de lidar aerotransportado en el centro de la península de Yucatán. Se entrenó sobre el Chactún ML-ready dataset (Kokalj et al. 2023), empleando el split de entrenamiento oficial del discovery challenge de ECML PKDD 2021.
 
 El modelo no es un detector de propósito general: está fuertemente acoplado a un rendering de entrada concreto de tres bandas a 0,5 m (factor de cielo visible con radio de 5 m y 16 direcciones; apertura positiva con la misma geometría; pendiente en escala de grises invertida), con estiramientos lineales específicos. Aplicar otra función de estiramiento sobre las mismas magnitudes físicas degrada el rendimiento de forma no evidente en la salida, según midió el propio autor. La model card insiste en que la salida es una capa de candidatos probabilística para prospección, no un censo arqueológico.
 
@@ -92,7 +92,7 @@ No se identifican en la informacion disponible otros modelos publicados con nomb
 
 | Alternativa | Formulacion | IoU semantico | Notas |
 |---|---|---|---|
-| Chactun multiclass detector (este modelo) | Mask R-CNN R50-FPN, instancias, semilla unica | 0,794 | Pesos CC BY 4.0 disponibles en HuggingFace |
+| Chactun multiclass detector (este modelo) | Mask R-CNN R50-FPN, instancias, semilla unica | 0,794 | Pesos CC BY 4.0 disponibles en Hugging Face |
 | Entradas del leaderboard del challenge | Ensembles de cinco particiones con pseudo-etiquetado y TTA | 0,811-0,834 | Identidades y licencias no disponibles en la informacion proporcionada |
 | Linea base de segmentacion semantica | Entrenada con computo equivalente | 0,809 | Nombres, parametros y disponibilidad no disponibles |
 
@@ -113,7 +113,7 @@ En parametros, contexto y licencia no hay datos publicados para las dos alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/benjbritton/chactun-multiclass-detector
+- Modelo en Hugging Face: https://huggingface.co/benjbritton/chactun-multiclass-detector
 - Repositorio experimental completo: https://github.com/benjbritton/geoai-detection
 - Dataset Chactún ML-ready: https://doi.org/10.6084/m9.figshare.22202395
 - Articulo del dataset (Kokalj, Ž., Somrak, M., et al. 2023, *Scientific Data* 10:558): https://doi.org/10.1038/s41597-023-02455-x

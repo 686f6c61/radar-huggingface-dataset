@@ -119,7 +119,7 @@ La model card del modelo base menciona una tabla comparativa de WER con Tuda-De,
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/myflow-ai/parakeet-primeline-gguf
+- Ficha del modelo en Hugging Face: https://huggingface.co/myflow-ai/parakeet-primeline-gguf
 - Modelo base: https://huggingface.co/primeline/parakeet-primeline
 - Commit del modelo base usado para el port: https://huggingface.co/primeline/parakeet-primeline/commit/3f1a9bc
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3

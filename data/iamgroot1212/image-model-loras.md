@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `iamgroot1212/image-model-loras` es una coleccion de adaptadores LoRA publicada en HuggingFace por el usuario iamgroot1212. Segun la propia model card, el contenido son "all image models loras", es decir, pesos de ajuste fino de bajo rango (LoRA) destinados a modelos de generacion de imagenes. La model card menciona explicitamente tres familias de destino: Qwen, Z-Image-Turbo y Krea2, sin aportar ningun detalle adicional sobre el proceso de entrenamiento, los datos utilizados ni los hiperparametros aplicados.
+El repositorio `iamgroot1212/image-model-loras` es una coleccion de adaptadores LoRA publicada en Hugging Face por el usuario iamgroot1212. Segun la propia model card, el contenido son "all image models loras", es decir, pesos de ajuste fino de bajo rango (LoRA) destinados a modelos de generacion de imagenes. La model card menciona explicitamente tres familias de destino: Qwen, Z-Image-Turbo y Krea2, sin aportar ningun detalle adicional sobre el proceso de entrenamiento, los datos utilizados ni los hiperparametros aplicados.
 
-Se trata, por tanto, de un artefacto de tipo adaptador y no de un modelo base autonomo: los LoRA no generan nada por si mismos, sino que se cargan sobre un modelo de difusion subyacente que debe obtenerse por separado. El repositorio ocupa 4,6 GB y esta publicado bajo licencia Apache 2.0, con el ingles marcado como unico idioma declarado, algo habitual en repositorios cuyos prompts de entrenamiento se escribieron en ese idioma. El pipeline no esta declarado en la ficha de HuggingFace.
+Se trata, por tanto, de un artefacto de tipo adaptador y no de un modelo base autonomo: los LoRA no generan nada por si mismos, sino que se cargan sobre un modelo de difusion subyacente que debe obtenerse por separado. El repositorio ocupa 4,6 GB y esta publicado bajo licencia Apache 2.0, con el ingles marcado como unico idioma declarado, algo habitual en repositorios cuyos prompts de entrenamiento se escribieron en ese idioma. El pipeline no esta declarado en la ficha de Hugging Face.
 
 La relevancia de este repositorio es limitada y fundamentalmente practica: sirve como ejemplo de publicacion de LoRA para modelos de imagen recientes, pero carece de documentacion tecnica verificable, de ejemplos de uso, de imagenes de muestra y de cualquier resultado de evaluacion. No se dispone de informacion sobre quien lo mantiene, con que proposito se entreno ni como se valido.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 No se dispone de informacion suficiente para establecer una comparativa rigurosa. No se conocen los modelos base exactos, el proposito de cada adaptador ni resultados de evaluacion. A continuacion se indican referencias genericas de categoria, marcadas como no verificadas para este repositorio en concreto.
 
-| Aspecto | image-model-loras | Adaptadores LoRA tipicos publicados en HuggingFace | Modelo base de difusion sin adaptador |
+| Aspecto | image-model-loras | Adaptadores LoRA tipicos publicados en Hugging Face | Modelo base de difusion sin adaptador |
 |---|---|---|---|
 | Tipo de artefacto | Coleccion de LoRA | LoRA individual con ficha detallada | Modelo completo |
 | Documentacion | Minima (tres lineas) | Variable, a menudo con ejemplos | Extensa |
@@ -98,6 +98,6 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/iamgroot1212/image-model-loras
+- Repositorio en Hugging Face: https://huggingface.co/iamgroot1212/image-model-loras
 - Paper original de LoRA (Hu et al., 2021): https://arxiv.org/abs/2106.09685
 - No se han encontrado otros enlaces relevantes en la busqueda web. Los resultados devueltos corresponden a productos de calcetines y pintura en aerosol sin relacion alguna con el modelo.

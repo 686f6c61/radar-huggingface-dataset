@@ -83,10 +83,10 @@ Notas de la model card: MMMU usa 847 preguntas de validacion elegibles; AI2D usa
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nilp0inter/Jeff-Gemma4-E2B-Multimodal-NF4 | 5,1 B (cuantizado NF4 en el LM) | 8192 tokens (efectivo) | Puntuacion de opciones multimodal | Apache-2.0 (pesos) / MIT (codigo) | HuggingFace, 13 descargas |
-| nilp0inter/Jeff-Gemma4-E2B-Multimodal-BF16 | no disponible (referencia BF16 de origen) | no disponible | Puntuacion de opciones multimodal | Apache-2.0 (pesos) / MIT (codigo) | HuggingFace (modelo base) |
-| nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-NF4 | no disponible | no disponible | Puntuacion de opciones multimodal (baseline Google, sin ajuste Jeff) | no disponible | HuggingFace |
-| google/gemma-4-E2B-it | no disponible (E2B, ~2 B efectivos segun fuentes) | hasta 256K en la familia; 8K en E2B segun terceros | Chat/generacion multimodal (texto, imagen, audio en E2B/E4B/12B) | no disponible | HuggingFace / Google |
+| nilp0inter/Jeff-Gemma4-E2B-Multimodal-NF4 | 5,1 B (cuantizado NF4 en el LM) | 8192 tokens (efectivo) | Puntuacion de opciones multimodal | Apache-2.0 (pesos) / MIT (codigo) | Hugging Face, 13 descargas |
+| nilp0inter/Jeff-Gemma4-E2B-Multimodal-BF16 | no disponible (referencia BF16 de origen) | no disponible | Puntuacion de opciones multimodal | Apache-2.0 (pesos) / MIT (codigo) | Hugging Face (modelo base) |
+| nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-NF4 | no disponible | no disponible | Puntuacion de opciones multimodal (baseline Google, sin ajuste Jeff) | no disponible | Hugging Face |
+| google/gemma-4-E2B-it | no disponible (E2B, ~2 B efectivos segun fuentes) | hasta 256K en la familia; 8K en E2B segun terceros | Chat/generacion multimodal (texto, imagen, audio en E2B/E4B/12B) | no disponible | Hugging Face / Google |
 
 Las cifras de parametros, contexto y rendimiento de los modelos comparables no estan disponibles en la informacion proporcionada; la comparacion se limita a la relacion de derivacion entre el artefacto NF4, su base BF16 y el modelo original de Google.
 
@@ -107,7 +107,7 @@ Las cifras de parametros, contexto y rendimiento de los modelos comparables no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nilp0inter/Jeff-Gemma4-E2B-Multimodal-NF4
+- Modelo en Hugging Face: https://huggingface.co/nilp0inter/Jeff-Gemma4-E2B-Multimodal-NF4
 - Modelo base BF16: https://huggingface.co/nilp0inter/Jeff-Gemma4-E2B-Multimodal-BF16
 - Dataset de benchmarks y reproduccion: https://huggingface.co/datasets/nilp0inter/Jeff-Gemma4-E2B-Multimodal-Benchmarks
 - Baseline de puntuacion (Google nativo, sin Jeff): https://huggingface.co/nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-NF4

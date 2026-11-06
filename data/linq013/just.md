@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `linq013/Just` es un modelo alojado en HuggingFace por el usuario linq013, publicado el 29 de agosto de 2026. La información pública disponible es extremadamente limitada: la model card solo contiene la licencia `bigcode-openrail-m` y no se proporcionan detalles sobre arquitectura, parámetros, entrenamiento o capacidades. El repositorio tiene un tamaño de 0.6 GB, lo que sugiere que podría tratarse de un modelo de tamaño pequeño o mediano, pero no hay confirmación oficial.
+El modelo `linq013/Just` es un modelo alojado en Hugging Face por el usuario linq013, publicado el 29 de agosto de 2026. La información pública disponible es extremadamente limitada: la model card solo contiene la licencia `bigcode-openrail-m` y no se proporcionan detalles sobre arquitectura, parámetros, entrenamiento o capacidades. El repositorio tiene un tamaño de 0.6 GB, lo que sugiere que podría tratarse de un modelo de tamaño pequeño o mediano, pero no hay confirmación oficial.
 
 La licencia `bigcode-openrail-m` es la misma utilizada por la familia de modelos StarCoder, orientada a la generación de código, lo que podría indicar un propósito similar, aunque no se puede afirmar sin datos adicionales. Este modelo no ha recibido descargas ni likes en el momento de la consulta, lo que refleja su carácter reciente o poco difundido.
 
@@ -35,7 +35,7 @@ La licencia `bigcode-openrail-m` es la misma que usa la familia StarCoder, desar
 
 ## Casos de uso
 
-No se puede ofrecer una lista de casos de uso concretos debido a la falta de información sobre las capacidades reales del modelo. Cualquier aplicación práctica requeriría primero una evaluación técnica por parte del usuario. Se recomienda consultar el repositorio de HuggingFace para obtener actualizaciones del autor o contactar directamente con él.
+No se puede ofrecer una lista de casos de uso concretos debido a la falta de información sobre las capacidades reales del modelo. Cualquier aplicación práctica requeriría primero una evaluación técnica por parte del usuario. Se recomienda consultar el repositorio de Hugging Face para obtener actualizaciones del autor o contactar directamente con él.
 
 ## Benchmarks y rendimiento
 
@@ -60,4 +60,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/linq013/Just
+- Repositorio de Hugging Face: https://huggingface.co/linq013/Just

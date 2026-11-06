@@ -64,17 +64,17 @@ La model card no incluye evaluaciones automáticas (MMLU, HumanEval, GSM8K ni m�
 - VRAM estimada cuantizado: aproximadamente 4,5-5 GB en 8 bits y 2,5-3,5 GB en 4 bits (estimación por tamaño, no verificada en la información disponible, ya que no se publican GGUF).
 - GPU recomendadas: RTX 4090, RTX 3090, RTX 4080 o cualquier GPU con 12-16 GB o más. Una A100 o H100 no aporta ventaja significativa para un modelo denso de 4B.
 - Cabe en GPU de consumo: sí. El autor afirma explícitamente que "una tarjeta gráfica normal puede ejecutarlo". En 16 bits encaja con holgura en 16 GB; cuantizado podría caber en 8 GB, aunque esto no está confirmado por el autor.
-- Despliegue: vLLM es la vía documentada (`vllm serve gugujiji/novel-humanize-4b --served-model-name novel-humanize-4b --max-model-len 8192 --generation-config vllm`). También puede servirse con cualquier runtime compatible con safetensors de HuggingFace; llama.cpp, Ollama o TGI no se mencionan en la model card.
+- Despliegue: vLLM es la vía documentada (`vllm serve gugujiji/novel-humanize-4b --served-model-name novel-humanize-4b --max-model-len 8192 --generation-config vllm`). También puede servirse con cualquier runtime compatible con safetensors de Hugging Face; llama.cpp, Ollama o TGI no se mencionan en la model card.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| novel-humanize-4b | 4,02B | 8192 configurado en vLLM (nativo del base no indicado) | Reescritura estilística de web novel en chino | Apache 2.0 | HuggingFace, safetensors |
-| Qwen3-4B (base) | 4B | No indicado en la información disponible | Modelo generalista instructivo y de razonamiento | Apache 2.0 | HuggingFace |
-| Qwen3-8B | 8B aprox. | No indicado en la información disponible | Modelo generalista, mayor capacidad | Apache 2.0 | HuggingFace |
-| Fine-tunes chinos de escritura creativa de 7B-8B | 7-8B aprox. | No disponible | Reescritura o generación de ficción | Variables (a menudo Apache 2.0 o licencias custom) | HuggingFace |
+| novel-humanize-4b | 4,02B | 8192 configurado en vLLM (nativo del base no indicado) | Reescritura estilística de web novel en chino | Apache 2.0 | Hugging Face, safetensors |
+| Qwen3-4B (base) | 4B | No indicado en la información disponible | Modelo generalista instructivo y de razonamiento | Apache 2.0 | Hugging Face |
+| Qwen3-8B | 8B aprox. | No indicado en la información disponible | Modelo generalista, mayor capacidad | Apache 2.0 | Hugging Face |
+| Fine-tunes chinos de escritura creativa de 7B-8B | 7-8B aprox. | No disponible | Reescritura o generación de ficción | Variables (a menudo Apache 2.0 o licencias custom) | Hugging Face |
 
 El modelo se diferencia de los generalistas por su especialización estrecha: frente a Qwen3-4B, sacrifica versatilidad a cambio de una conducta muy constreñida (no continuar la trama, no añadir escenas). No se dispone de comparaciones de calidad objetivas entre estas alternativas.
 
@@ -92,7 +92,7 @@ El modelo se diferencia de los generalistas por su especialización estrecha: fr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/gugujiji/novel-humanize-4b)
+- [Modelo en Hugging Face](https://huggingface.co/gugujiji/novel-humanize-4b)
 - [Modelo base Qwen/Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B)
 - Script auxiliar `fix_tools.py` del repositorio: https://huggingface.co/gugujiji/novel-humanize-4b/blob/main/fix_tools.py
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, demos o repositorios) en la búsqueda web realizada; los resultados obtenidos eran anuncios inmobiliarios sin relación con el modelo.

@@ -131,9 +131,9 @@ Todos comparten licencia MIT y están entrenados desde cero por Textile Labs. Lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/textilelabs/Loom-Spark-3.2
+- Modelo en Hugging Face: https://huggingface.co/textilelabs/Loom-Spark-3.2
 - Modelo predecesor Loom Spark 3: https://huggingface.co/textilelabs/Loom-Spark-3
 - Modelo original Loom Spark: https://huggingface.co/textilelabs/Loom-Spark
-- Colección Loom-Spark en HuggingFace: https://huggingface.co/collections/textilelabs/loom-spark
+- Colección Loom-Spark en Hugging Face: https://huggingface.co/collections/textilelabs/loom-spark
 - Endpoint de inferencia Loom-Spark-3 en FriendliAI: https://friendli.ai/models/textilelabs/Loom-Spark-3
 - Endpoint de inferencia Loom-Spark en FriendliAI: https://friendli.ai/models/textilelabs/Loom-Spark

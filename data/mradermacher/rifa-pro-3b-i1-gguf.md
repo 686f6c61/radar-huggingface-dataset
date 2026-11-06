@@ -2,9 +2,9 @@
 
 ## Resumen
 
-RIFA-PRO-3B es un modelo de lenguaje pequeño orientado a generación de texto conversacional, desarrollado como fine-tune sobre el modelo base `smshahbaj/RIFA-PRO-3B`. Esta entrada en HuggingFace, publicada por `mradermacher`, contiene una cuantización GGUF con datos de importancia (imatrix) del modelo original, pensada para que los usuarios generen sus propias cuantizaciones. El repositorio incluye únicamente el archivo `RIFA-PRO-3B.imatrix.gguf` de 0,1 GB; los pesos cuantizados estáticos se publican por separado en `mradermacher/RIFA-PRO-3B-GGUF`.
+RIFA-PRO-3B es un modelo de lenguaje pequeño orientado a generación de texto conversacional, desarrollado como fine-tune sobre el modelo base `smshahbaj/RIFA-PRO-3B`. Esta entrada en Hugging Face, publicada por `mradermacher`, contiene una cuantización GGUF con datos de importancia (imatrix) del modelo original, pensada para que los usuarios generen sus propias cuantizaciones. El repositorio incluye únicamente el archivo `RIFA-PRO-3B.imatrix.gguf` de 0,1 GB; los pesos cuantizados estáticos se publican por separado en `mradermacher/RIFA-PRO-3B-GGUF`.
 
-El modelo está etiquetado con los idiomas inglés y bengalí, y la metadata sugiere una base relacionada con SmolLM3. Sin embargo, el dato real de parámetros totales reportado por HuggingFace es de 838.908, una cifra anómalamente baja para un modelo denominado "3B". No se dispone de información adicional sobre arquitectura, contexto de entrenamiento o rendimiento. Su relevancia radica en ser una opción ligera para tareas de texto en inglés y bengalí, con licencia Apache 2.0, aunque el repositorio actual no permite su uso directo sin crear antes los cuantizados.
+El modelo está etiquetado con los idiomas inglés y bengalí, y la metadata sugiere una base relacionada con SmolLM3. Sin embargo, el dato real de parámetros totales reportado por Hugging Face es de 838.908, una cifra anómalamente baja para un modelo denominado "3B". No se dispone de información adicional sobre arquitectura, contexto de entrenamiento o rendimiento. Su relevancia radica en ser una opción ligera para tareas de texto en inglés y bengalí, con licencia Apache 2.0, aunque el repositorio actual no permite su uso directo sin crear antes los cuantizados.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No disponible. No se dispone de información suficiente sobre el modelo base ni 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/mradermacher/RIFA-PRO-3B-i1-GGUF
+- Repositorio de Hugging Face: https://huggingface.co/mradermacher/RIFA-PRO-3B-i1-GGUF
 - Repositorio de quants estáticos: https://huggingface.co/mradermacher/RIFA-PRO-3B-GGUF
 - Modelo base: https://huggingface.co/smshahbaj/RIFA-PRO-3B
 - Página de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

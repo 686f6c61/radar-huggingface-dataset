@@ -72,6 +72,6 @@ No disponible. No existe información sobre modelos comparables, ya que este rep
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/apple-ii-universal-machine
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/apple-ii-universal-machine
 - Sitio web del proyecto (mencionado en la model card): https://snapkittywest.github.io/apple-ii-universal-machine/
 - Canal de YouTube Brasil (resultado de búsqueda no relacionado): https://www.youtube.com/channel/UCUN9lhwfMJRxMVuet7Shg0w

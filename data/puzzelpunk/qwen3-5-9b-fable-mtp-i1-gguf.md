@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/puzzelpunk/Qwen3.5-9B-Fable-MTP-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/puzzelpunk/Qwen3.5-9B-Fable-MTP-i1-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-DARK-ROAST-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP
 - Cuantizaciones estaticas de mradermacher: https://huggingface.co/mradermacher/Qwen3.5-9B-The-Defiant-Fable-DARK-ROAST-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
 - Pagina de resumen de cuantizaciones: https://hf.tst.eu/model#Qwen3.5-9B-The-Defiant-Fable-DARK-ROAST-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-i1-GGUF

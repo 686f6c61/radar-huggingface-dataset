@@ -47,7 +47,7 @@ El modelo está entrenado para diálogo y generación de texto, con una ventana 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La página de HuggingFace del modelo no incluye tablas de rendimiento (MMLU, HumanEval, GSM8K, etc.), y los resultados de búsqueda web no proporcionan datos de evaluación. La única referencia es la página de Inferbase que indica el contexto de 8k y los parámetros, pero sin métricas de calidad.
+No se han publicado resultados de benchmarks en la información disponible. La página de Hugging Face del modelo no incluye tablas de rendimiento (MMLU, HumanEval, GSM8K, etc.), y los resultados de búsqueda web no proporcionan datos de evaluación. La única referencia es la página de Inferbase que indica el contexto de 8k y los parámetros, pero sin métricas de calidad.
 
 ## Requisitos de hardware
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GLM-Edge-1.5B-Chat (este modelo) | 1,59B | 8k | glm-4 (personalizada) | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B-Instruct | 1,2B | 128k | Llama 3.2 (uso comercial permitido) | HuggingFace |
+| GLM-Edge-1.5B-Chat (este modelo) | 1,59B | 8k | glm-4 (personalizada) | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B-Instruct | 1,2B | 128k | Llama 3.2 (uso comercial permitido) | Hugging Face |
 
 Los tres modelos son de tamaño similar, pero GLM-Edge tiene la ventaja de estar optimizado para dispositivos de borde y el contexto más corto (8k frente a 32k o 128k). No se dispone de datos de benchmarks para comparar rendimiento real. La licencia glm-4 es más restrictiva que Apache 2.0 de Qwen, pero permite uso comercial bajo condiciones (revisar el texto completo de la licencia). Llama-3.2-1B ofrece contexto mucho mayor y licencia permisiva, pero su rendimiento en chino es inferior al de GLM-Edge, que está entrenado para ese idioma.
 
@@ -78,7 +78,7 @@ Los tres modelos son de tamaño similar, pero GLM-Edge tiene la ventaja de estar
 
 ## Enlaces
 
-- Página del modelo en HuggingFace (versión de manaladan6): https://huggingface.co/manaladan6/glm-edge-1.5b-chat
+- Página del modelo en Hugging Face (versión de manaladan6): https://huggingface.co/manaladan6/glm-edge-1.5b-chat
 - Página del modelo original de zai-org: https://huggingface.co/zai-org/glm-edge-1.5b-chat
 - Repositorio de la familia GLM-Edge en GitHub: https://github.com/zai-org/GLM-Edge
 - Ficha de Inferbase con specs: https://inferbase.ai/models/zai-glm-edge-1-5b-chat

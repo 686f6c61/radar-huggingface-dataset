@@ -2,7 +2,7 @@
 
 ## Resumen
 
-slate-heron es un clasificador de imágenes publicado por el usuario qhoenix en HuggingFace. Se trata de un EfficientNetV2-L de torchvision (`efficientnet_v2_l`), con 119.027.848 parámetros y cabeza de 1000 clases de ImageNet, afinado mediante entrenamiento adversarial para la subred Perturb (netuid 26) de Bittensor. El repositorio ocupa 0,5 GB y los pesos se distribuyen en formato safetensors, con licencia Apache 2.0.
+slate-heron es un clasificador de imágenes publicado por el usuario qhoenix en Hugging Face. Se trata de un EfficientNetV2-L de torchvision (`efficientnet_v2_l`), con 119.027.848 parámetros y cabeza de 1000 clases de ImageNet, afinado mediante entrenamiento adversarial para la subred Perturb (netuid 26) de Bittensor. El repositorio ocupa 0,5 GB y los pesos se distribuyen en formato safetensors, con licencia Apache 2.0.
 
 El modelo no es un modelo de lenguaje ni un sistema multimodal generativo: es una red convolucional de clasificación de imagen única, pensada para ser evaluada en un contexto de minería de Bittensor donde el objetivo es la robustez frente a perturbaciones adversarias. Esa naturaleza condiciona por completo su ficha: no hay ventana de contexto, no hay generación de texto, no hay tool calling y no hay soporte multilingüe en el sentido habitual.
 
@@ -100,7 +100,7 @@ La comparativa se limita a la categoría funcional (clasificación de imagen en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qhoenix/slate-heron
+- Modelo en Hugging Face: https://huggingface.co/qhoenix/slate-heron
 - Subred Perturb (referenciada en la model card): https://perturbai.io
 - Documentación de `efficientnet_v2_l` en torchvision: no disponible en la información proporcionada
 - Paper de EfficientNetV2: no disponible en la información proporcionada

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-5k-seed43` es un checkpoint de investigación publicado en HuggingFace por el usuario cyttic. Por su nomenclatura y por el tag `arxiv:1910.09700` (que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en aprendizaje automático), se trata de un modelo experimental de reconocimiento automático del habla (ASR) basado en CTC (Connectionist Temporal Classification), no de un modelo generativo de lenguaje. El prefijo `ctc` y el sufijo `hhdgeom` apuntan a una arquitectura convolucional o híbrida para transcripción de audio, entrenada presumiblemente sobre un corpus de habla.
+El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-5k-seed43` es un checkpoint de investigación publicado en Hugging Face por el usuario cyttic. Por su nomenclatura y por el tag `arxiv:1910.09700` (que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en aprendizaje automático), se trata de un modelo experimental de reconocimiento automático del habla (ASR) basado en CTC (Connectionist Temporal Classification), no de un modelo generativo de lenguaje. El prefijo `ctc` y el sufijo `hhdgeom` apuntan a una arquitectura convolucional o híbrida para transcripción de audio, entrenada presumiblemente sobre un corpus de habla.
 
-El modelo cuenta con 87.279.756 parámetros (aproximadamente 87 millones) almacenados en formato safetensors, con un tamaño de repositorio de 0,3 GB. La nomenclatura `human10uninoaug` sugiere un conjunto de datos de habla humana con 10 clases o hablantes, sin aumento de datos (`noaug`), y `byp-5k` apunta a un entrenamiento de 5.000 pasos o épocas con una semilla fija (`seed43`). No obstante, la model card no aporta información sustantiva: es la plantilla por defecto de HuggingFace sin rellenar, por lo que la mayoría de los detalles técnicos no están disponibles.
+El modelo cuenta con 87.279.756 parámetros (aproximadamente 87 millones) almacenados en formato safetensors, con un tamaño de repositorio de 0,3 GB. La nomenclatura `human10uninoaug` sugiere un conjunto de datos de habla humana con 10 clases o hablantes, sin aumento de datos (`noaug`), y `byp-5k` apunta a un entrenamiento de 5.000 pasos o épocas con una semilla fija (`seed43`). No obstante, la model card no aporta información sustantiva: es la plantilla por defecto de Hugging Face sin rellenar, por lo que la mayoría de los detalles técnicos no están disponibles.
 
 La relevancia de esta ficha es limitada: se trata de un checkpoint experimental de un grupo de investigación (cyttic), con cero descargas y cero likes en el momento de la consulta, sin documentación técnica publicada. Resulta útil únicamente como referencia para reproducibilidad de experimentos internos o para quien conozca el contexto del proyecto. No debe confundirse con un modelo de lenguaje de propósito general.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-5k-seed43 | 87,3 M | no disponible | MIT | HuggingFace (0 descargas) |
-| Wav2Vec2-base (Facebook) | 95 M | no aplica (audio) | MIT | HuggingFace, ampliamente usado |
-| Whisper-tiny (OpenAI) | 39 M | 30 s de audio | MIT | HuggingFace, muy extendido |
-| wav2vec2-large-960h | 317 M | no aplica (audio) | MIT | HuggingFace |
+| cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-5k-seed43 | 87,3 M | no disponible | MIT | Hugging Face (0 descargas) |
+| Wav2Vec2-base (Facebook) | 95 M | no aplica (audio) | MIT | Hugging Face, ampliamente usado |
+| Whisper-tiny (OpenAI) | 39 M | 30 s de audio | MIT | Hugging Face, muy extendido |
+| wav2vec2-large-960h | 317 M | no aplica (audio) | MIT | Hugging Face |
 
 La comparación es aproximada: no se dispone de métricas de rendimiento del modelo cyttic, por lo que no puede establecerse una comparación cuantitativa con Wav2Vec2 o Whisper. La principal diferencia es la documentación: los modelos de referencia cuentan con model cards completas, benchmarks publicados (WER en LibriSpeech, etc.) y comunidades activas, mientras que el checkpoint cyttic carece de toda esta información.
 
@@ -80,7 +80,7 @@ La comparación es aproximada: no se dispone de métricas de rendimiento del mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-5k-seed43
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-5k-seed43
 - Artículo referenciado en los tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la información disponible.

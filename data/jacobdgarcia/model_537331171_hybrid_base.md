@@ -62,6 +62,6 @@ No disponible. No se conocen modelos comparables de la misma categoría con la m
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [https://huggingface.co/jacobdgarcia/model_537331171_hybrid_base](https://huggingface.co/jacobdgarcia/model_537331171_hybrid_base)
+- Repositorio de Hugging Face: [https://huggingface.co/jacobdgarcia/model_537331171_hybrid_base](https://huggingface.co/jacobdgarcia/model_537331171_hybrid_base)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

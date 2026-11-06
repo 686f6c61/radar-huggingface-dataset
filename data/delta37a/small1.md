@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Delta37a/Small1 es un modelo alojado en HuggingFace por el usuario Delta37a cuya model card publicada consiste en la plantilla estandar de HuggingFace sin completar. No se declara de forma explicita ni el tipo de arquitectura, ni el numero de parametros, ni el contexto, ni el dataset de entrenamiento, ni la licencia. El unico dato objetivo disponible sobre su contenido es el tamano del repositorio, 0,1 GB, lo que sugiere un modelo de dimensiones reducidas, aunque no hay confirmacion oficial.
+Delta37a/Small1 es un modelo alojado en Hugging Face por el usuario Delta37a cuya model card publicada consiste en la plantilla estandar de Hugging Face sin completar. No se declara de forma explicita ni el tipo de arquitectura, ni el numero de parametros, ni el contexto, ni el dataset de entrenamiento, ni la licencia. El unico dato objetivo disponible sobre su contenido es el tamano del repositorio, 0,1 GB, lo que sugiere un modelo de dimensiones reducidas, aunque no hay confirmacion oficial.
 
-El repositorio fue creado el 13 de octubre de 2026 y actualizado el mismo dia, cuenta con 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline declarado en la plataforma. Entre sus etiquetas figuran `arxiv:1910.09700` (referencia al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la propia plantilla de HuggingFace) y `region:us`. Ninguna de las dos aporta informacion tecnica sobre el modelo.
+El repositorio fue creado el 13 de octubre de 2026 y actualizado el mismo dia, cuenta con 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline declarado en la plataforma. Entre sus etiquetas figuran `arxiv:1910.09700` (referencia al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la propia plantilla de Hugging Face) y `region:us`. Ninguna de las dos aporta informacion tecnica sobre el modelo.
 
 Por tanto, esta ficha no puede certificar capacidades, rendimiento ni idoneidad para produccion. Se trata de un artefacto sin documentacion sustantiva, y cualquier evaluacion seria requeriria descargar los pesos, inspeccionar la configuracion (`config.json`) e identificar la familia arquitectonica real antes de considerar su uso.
 
@@ -30,7 +30,7 @@ Por tanto, esta ficha no puede certificar capacidades, rendimiento ni idoneidad 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo. La model card reproduce integramente la plantilla generica de HuggingFace (`modelcard_template.md`) con todos los campos marcados como `[More Information Needed]`, incluyendo arquitectura, objetivo de entrenamiento, datos, hiperparametros y regimen de precision.
+No hay informacion disponible sobre la arquitectura del modelo. La model card reproduce integramente la plantilla generica de Hugging Face (`modelcard_template.md`) con todos los campos marcados como `[More Information Needed]`, incluyendo arquitectura, objetivo de entrenamiento, datos, hiperparametros y regimen de precision.
 
 Tampoco se documenta el procedimiento de entrenamiento: no se indica numero de tokens, composicion del dataset, si hubo ajuste por instrucciones, RLHF, DPO u otra tecnica de alineamiento, ni si se partio de un modelo preentrenado existente. El unico indicio indirecto es el tamano del repositorio (0,1 GB), compatible con un modelo de decenas de millones de parametros en precision de 16 bits o con un modelo mayor fuertemente cuantizado, pero es una inferencia, no un dato confirmado.
 
@@ -93,12 +93,12 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 - Repositorio sin traccion: 0 descargas y 0 likes, sin senales de uso comunitario ni de mantenimiento.
 - Sin garantia de reproducibilidad: no se documentan hiperparametros, semillas ni infraestructura de entrenamiento.
 - Advertencia de seguridad: al no conocerse el origen de los datos, no puede descartarse contenido problematico en los pesos; se recomienda auditoria antes de cualquier despliegue publico.
-- La etiqueta `arxiv:1910.09700` apunta a la calculadora de impacto ambiental citada en la plantilla de HuggingFace y no implica que el modelo este descrito en ese articulo.
+- La etiqueta `arxiv:1910.09700` apunta a la calculadora de impacto ambiental citada en la plantilla de Hugging Face y no implica que el modelo este descrito en ese articulo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Delta37a/Small1
-- Plantilla de model card de HuggingFace: https://github.com/huggingface/huggingface_hub/blob/main/src/huggingface_hub/templates/modelcard_template.md
+- Modelo en Hugging Face: https://huggingface.co/Delta37a/Small1
+- Plantilla de model card de Hugging Face: https://github.com/huggingface/huggingface_hub/blob/main/src/huggingface_hub/templates/modelcard_template.md
 - Especificacion de model cards: https://github.com/huggingface/hub-docs/blob/main/modelcard.md
 - Documentacion de model cards: https://huggingface.co/docs/hub/model-cards
 - Articulo referenciado en la etiqueta (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

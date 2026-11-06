@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Kimi-K3-DSpark-Block5-TT-BLOCKFP8 es una cuantización del modelo base Inferact/Kimi-K3-DSpark-Block5, publicada por el usuario moreh en HuggingFace. Se trata de una variante cuantizada en formato BLOCKFP8 (punto flotante de 8 bits con bloques), una técnica que reduce el peso de los pesos del modelo manteniendo una precisión razonablemente alta en comparación con cuantizaciones más agresivas como INT4. El sufijo "TT" hace referencia a la integración con la plataforma de despliegue de Moreh, y "Block5" al esquema de bloques empleado en la cuantización.
+Kimi-K3-DSpark-Block5-TT-BLOCKFP8 es una cuantización del modelo base Inferact/Kimi-K3-DSpark-Block5, publicada por el usuario moreh en Hugging Face. Se trata de una variante cuantizada en formato BLOCKFP8 (punto flotante de 8 bits con bloques), una técnica que reduce el peso de los pesos del modelo manteniendo una precisión razonablemente alta en comparación con cuantizaciones más agresivas como INT4. El sufijo "TT" hace referencia a la integración con la plataforma de despliegue de Moreh, y "Block5" al esquema de bloques empleado en la cuantización.
 
-El modelo base pertenece a la familia Kimi-K3, desarrollada por Moonshot AI, y la variante "DSpark" sugiere una especialización o destilación orientada a eficiencia. Sin embargo, la información pública disponible en la ficha de HuggingFace es extremadamente limitada: no se especifican parámetros totales, longitud de contexto, idiomas soportados ni detalles del entrenamiento. La licencia figura como "other", lo que implica condiciones personalizadas que deben consultarse antes de cualquier uso.
+El modelo base pertenece a la familia Kimi-K3, desarrollada por Moonshot AI, y la variante "DSpark" sugiere una especialización o destilación orientada a eficiencia. Sin embargo, la información pública disponible en la ficha de Hugging Face es extremadamente limitada: no se especifican parámetros totales, longitud de contexto, idiomas soportados ni detalles del entrenamiento. La licencia figura como "other", lo que implica condiciones personalizadas que deben consultarse antes de cualquier uso.
 
 Su relevancia actual radica en el interés creciente por cuantizaciones de 8 bits con esquemas de bloques, que permiten desplegar modelos de gran tamaño en infraestructura más modesta sin sacrificar demasiada calidad. No obstante, al tratarse de una publicación con cero descargas y cero likes, y con acceso restringido (gated), debe evaluarse con cautela y verificarse la procedencia y las condiciones de uso antes de integrarla en producción.
 
@@ -45,7 +45,7 @@ La innovación técnica destacable de esta publicación es el esquema de cuantiz
 - Integración con la plataforma Moreh: si el sufijo "TT" implica compatibilidad con el runtime de Moreh, el modelo puede desplegarse en infraestructura que soporte dicho ecosistema.
 - Prototipado en hardware limitado: al ser una cuantización de 8 bits, permite probar el modelo base en GPUs consumer con VRAM suficiente, aunque el tamaño exacto del modelo no está confirmado.
 - Investigación sobre esquemas de bloques: sirve como referencia para estudiar cómo afecta el tamaño de bloque en la cuantización FP8 a la perplejidad y a tareas downstream.
-- Base para futuras cuantizaciones: al estar publicado en HuggingFace, puede servir como punto de partida para generar versiones GGUF o INT4 mediante herramientas estándar, siempre que la licencia lo permita.
+- Base para futuras cuantizaciones: al estar publicado en Hugging Face, puede servir como punto de partida para generar versiones GGUF o INT4 mediante herramientas estándar, siempre que la licencia lo permita.
 
 ## Benchmarks y rendimiento
 
@@ -65,7 +65,7 @@ No disponible. No se dispone de información suficiente sobre el modelo base ni 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de descargar el modelo, lo que puede limitar su uso automatizado en pipelines.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargar el modelo, lo que puede limitar su uso automatizado en pipelines.
 - Licencia "other": las condiciones de uso comercial no están especificadas en la ficha; es imprescindible revisar el texto completo de la licencia antes de cualquier despliegue en producción.
 - Procedencia no verificada: el repositorio tiene cero descargas y cero likes, y el autor (moreh) no es el desarrollador original del modelo base; conviene validar la integridad de los pesos.
 - Falta de documentación: no hay model card con detalles de entrenamiento, evaluación o limitaciones, lo que dificulta evaluar sesgos y riesgo de alucinación.
@@ -75,6 +75,6 @@ No disponible. No se dispone de información suficiente sobre el modelo base ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/moreh/Kimi-K3-DSpark-Block5-TT-BLOCKFP8
+- Hugging Face: https://huggingface.co/moreh/Kimi-K3-DSpark-Block5-TT-BLOCKFP8
 - Modelo base: https://huggingface.co/Inferact/Kimi-K3-DSpark-Block5
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

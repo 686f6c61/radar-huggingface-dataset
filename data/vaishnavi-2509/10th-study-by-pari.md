@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Vaishnavi-2509/10th-study-by-pari`, publicado por el usuario Vaishnavi-2509 en HuggingFace, no contiene en el momento de la consulta ninguna documentacion tecnica que permita identificarlo como un modelo de inteligencia artificial. La model card asociada unicamente declara la licencia MIT y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. El repositorio no tiene ninguna etiqueta de pipeline (`text-generation`, `text-classification`, etc.) ni declaracion de idiomas soportados.
+El repositorio `Vaishnavi-2509/10th-study-by-pari`, publicado por el usuario Vaishnavi-2509 en Hugging Face, no contiene en el momento de la consulta ninguna documentacion tecnica que permita identificarlo como un modelo de inteligencia artificial. La model card asociada unicamente declara la licencia MIT y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. El repositorio no tiene ninguna etiqueta de pipeline (`text-generation`, `text-classification`, etc.) ni declaracion de idiomas soportados.
 
 El estado publico del repositorio es practicamente vacio: cero descargas acumuladas y cero valoraciones positivas. Fue creado el 10 de septiembre de 2026 y su ultima actualizacion se produjo el mismo dia, apenas cuatro minutos despues, lo que sugiere una publicacion de prueba o un repositorio en fase de creacion que nunca llego a completarse.
 
@@ -100,7 +100,7 @@ No disponible. Al no poder determinar la categoria del repositorio (modelo de le
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vaishnavi-2509/10th-study-by-pari
+- Repositorio en Hugging Face: https://huggingface.co/Vaishnavi-2509/10th-study-by-pari
 - Perfil del autor: https://huggingface.co/Vaishnavi-2509
 - Articulo tecnico: no disponible
 - Blog o anuncio oficial: no disponible

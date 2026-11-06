@@ -76,7 +76,7 @@ No existe un modelo comparable en sentido estricto, porque este repositorio es u
 | Jordine/rlport-hkl_jord9v_grpo_self_pl3_20261017_114547 | Backup de checkpoint RL | no detallado en la informacion disponible | no disponible | no disponible | no disponible | 2026-10-17 |
 | Jordine/rlport-hkl_jord9v_pl7_20261017_153438 | Backup de checkpoint RL | no detallado en la informacion disponible | no disponible | no disponible | no disponible | 2026-10-17 |
 
-Frente a un modelo open source convencional (por ejemplo, un instruct de la familia Qwen publicada en HuggingFace), este artefacto carece de pesos completos, tokenizador, model card técnica, licencia y evaluación, por lo que no es sustituible ni comparable en rendimiento.
+Frente a un modelo open source convencional (por ejemplo, un instruct de la familia Qwen publicada en Hugging Face), este artefacto carece de pesos completos, tokenizador, model card técnica, licencia y evaluación, por lo que no es sustituible ni comparable en rendimiento.
 
 ## Limitaciones y advertencias
 
@@ -86,14 +86,14 @@ Frente a un modelo open source convencional (por ejemplo, un instruct de la fami
 - Riesgo de fuga de datos: los rollouts y logs de entrenamiento pueden contener texto de prompts, datos de usuarios o contenido generado sensible; conviene revisarlos antes de compartir el repositorio.
 - Sin evaluación: no hay benchmarks, ni pruebas de sesgo, alucinación o seguridad, por lo que no se puede caracterizar el comportamiento del policy entrenado.
 - Idiomas y contexto desconocidos: no se declara ningún idioma ni longitud de ventana, lo que impide planificar su uso en producción.
-- Fechas de metadatos en 2026: los timestamps del repositorio son posteriores a la fecha habitual de referencia; deben tomarse tal cual figuran en HuggingFace.
+- Fechas de metadatos en 2026: los timestamps del repositorio son posteriores a la fecha habitual de referencia; deben tomarse tal cual figuran en Hugging Face.
 - Naturaleza efímera: al ser un backup automático, el repositorio puede actualizarse, moverse o eliminarse sin aviso, y su contenido puede no coincidir con el estado final del run.
 - Cero validación comunitaria: 0 descargas y 0 likes implican que el artefacto no ha sido verificado por terceros.
 - Si se reanuda el entrenamiento, hay que garantizar la coincidencia exacta de versión optimizador, precisión numérica (bf16/fp32) y semilla para evitar divergencias.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jordine/rlport-hkl_jord9v_glr3e4_s4_20261021_192443
+- Repositorio en Hugging Face: https://huggingface.co/Jordine/rlport-hkl_jord9v_glr3e4_s4_20261021_192443
 - Repositorio hermano (run GRPO self-play): https://huggingface.co/Jordine/rlport-hkl_jord9v_grpo_self_pl3_20261017_114547
 - Repositorio hermano (run pl7): https://huggingface.co/Jordine/rlport-hkl_jord9v_pl7_20261017_153438
 - Script de backup mencionado en la model card: `scripts/port/hf_backup.py` (no se ha localizado repositorio público del proyecto)

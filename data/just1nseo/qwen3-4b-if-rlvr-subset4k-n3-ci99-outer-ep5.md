@@ -79,7 +79,7 @@ La comparativa se limita al propio base y a la variante instruct, ya que no se d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/just1nseo/qwen3-4b-if-rlvr-subset4k-n3-ci99-outer-ep5
+- Repositorio Hugging Face: https://huggingface.co/just1nseo/qwen3-4b-if-rlvr-subset4k-n3-ci99-outer-ep5
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Paper tecnico de Qwen3 (arXiv): https://arxiv.org/pdf/2505.09388
 - Dataset de anclajes (run 2): https://huggingface.co/datasets/sangyon/anchor_cache/commit/bc72af3622590af3459181932e3e4949c162c0e8

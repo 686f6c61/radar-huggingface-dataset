@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `jowan-g2007/video-understanding` no es un modelo de aprendizaje automatico entrenado, sino una nota de investigacion (research note) publicada en HuggingFace bajo el identificador "Notes on Video Understanding". El propio autor indica explicitamente en la model card que el contenido organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y que "no se presenta como un articulo completado ni como una release de modelos entrenados". Por tanto, cualquier expectativa de uso como modelo generativo o de vision debe descartarse de entrada.
+El repositorio `jowan-g2007/video-understanding` no es un modelo de aprendizaje automatico entrenado, sino una nota de investigacion (research note) publicada en Hugging Face bajo el identificador "Notes on Video Understanding". El propio autor indica explicitamente en la model card que el contenido organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y que "no se presenta como un articulo completado ni como una release de modelos entrenados". Por tanto, cualquier expectativa de uso como modelo generativo o de vision debe descartarse de entrada.
 
 El repositorio incluye unicamente dos artefactos declarados: `notes.md` (artefacto principal) y `README.md` (documentacion). No hay codigo de entrenamiento, no hay pipeline declarado, no hay checkpoint descrito y no se documentan resultados experimentales. La model card advierte que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados, y que si en el futuro se anaden resultados deberan incluir versiones de dataset, comandos, semillas, hardware y logs en crudo.
 
@@ -12,7 +12,7 @@ El dato mas llamativo es la presencia de un fichero en formato safetensors con 4
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | etiquetada como transformer en los tags de HuggingFace; no se describe arquitectura real en la model card |
+| Arquitectura | etiquetada como transformer en los tags de Hugging Face; no se describe arquitectura real en la model card |
 | Parametros totales | 49.600 (segun fichero safetensors, aproximadamente 0,05 M) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
@@ -75,5 +75,5 @@ No disponible. El repositorio no es un modelo entrenado, de modo que no existe u
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jowan-g2007/video-understanding
+- Hugging Face: https://huggingface.co/jowan-g2007/video-understanding
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos, demos) en la busqueda web proporcionada.

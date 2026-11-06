@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Municipal-Archive-OCR-359 es un modelo de OCR (reconocimiento óptico de caracteres) publicado en HuggingFace por el usuario SOTAagi2030 bajo el identificador de pipeline `image-to-text`. Según su model card, se trata de un modelo "compacto" orientado a la digitalización de fondos documentales de archivos municipales, con una build promocionada denominada PINE-22 y una release fechada en septiembre de 2026 (`archive-ocr-2026-09`).
+Municipal-Archive-OCR-359 es un modelo de OCR (reconocimiento óptico de caracteres) publicado en Hugging Face por el usuario SOTAagi2030 bajo el identificador de pipeline `image-to-text`. Según su model card, se trata de un modelo "compacto" orientado a la digitalización de fondos documentales de archivos municipales, con una build promocionada denominada PINE-22 y una release fechada en septiembre de 2026 (`archive-ocr-2026-09`).
 
 La información publicada es extremadamente escasa. El autor declara que el modelo fue evaluado sobre 3 colecciones de archivo, con un CER (character error rate) en la peor colección de 161 milésimas (es decir, 0,161) y una latencia de referencia sumada de 204 ms. También indica que la revisión de promoción cubrió 10 builds, de las cuales 3 superaron todas las puertas de calidad y 7 fueron rechazadas, lo que sugiere un proceso interno de validación por umbrales.
 
@@ -81,5 +81,5 @@ No disponible. La información publicada no permite identificar modelos comparab
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SOTAagi2030/Municipal-Archive-OCR-359
+- Hugging Face: https://huggingface.co/SOTAagi2030/Municipal-Archive-OCR-359
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

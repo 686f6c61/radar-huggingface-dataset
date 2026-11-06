@@ -59,5 +59,5 @@ No disponible. No existe un modelo comparable porque no es un modelo de IA. La c
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/vincentgarcia/paper_019633993_grounded_language
+- Repositorio de Hugging Face: https://huggingface.co/vincentgarcia/paper_019633993_grounded_language
 - No se han encontrado enlaces adicionales específicos para este repositorio en la búsqueda web.

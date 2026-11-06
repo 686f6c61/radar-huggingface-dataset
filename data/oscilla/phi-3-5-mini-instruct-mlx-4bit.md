@@ -4,7 +4,7 @@
 
 Oscilla/Phi-3.5-mini-instruct-mlx-4Bit es una conversión al formato MLX del modelo Phi-3.5-mini-instruct de Microsoft, cuantizado a 4 bits. El objetivo es ofrecer una versión ligera y eficiente para ejecutarse en hardware Apple Silicon mediante el framework MLX, manteniendo las capacidades del modelo original de generación de texto, razonamiento y soporte multilingüe. El modelo base, Phi-3.5-mini-instruct, es un transformer decoder-only con 3.800 millones de parámetros y una ventana de contexto de 128.000 tokens, diseñado para tareas de instrucción y conversación.
 
-Esta versión cuantizada reduce el tamaño del modelo a aproximadamente 2,1 GB, lo que permite su ejecución en dispositivos con memoria unificada limitada, como MacBooks o Mac mini. La licencia MIT facilita su uso comercial y de investigación sin restricciones significativas. Aunque la metadata de HuggingFace indica 597.212.160 parámetros totales, este dato probablemente corresponde a un error de conversión, ya que el modelo base original tiene 3,8B; la cuantización no altera el número de parámetros. Se recomienda verificar esta cifra antes de usarla en entornos de producción.
+Esta versión cuantizada reduce el tamaño del modelo a aproximadamente 2,1 GB, lo que permite su ejecución en dispositivos con memoria unificada limitada, como MacBooks o Mac mini. La licencia MIT facilita su uso comercial y de investigación sin restricciones significativas. Aunque la metadata de Hugging Face indica 597.212.160 parámetros totales, este dato probablemente corresponde a un error de conversión, ya que el modelo base original tiene 3,8B; la cuantización no altera el número de parámetros. Se recomienda verificar esta cifra antes de usarla en entornos de producción.
 
 ## Especificaciones tecnicas
 

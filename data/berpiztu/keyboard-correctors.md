@@ -82,7 +82,7 @@ La comparativa con `grammarly/coedit-large` y `vennify/t5-base-grammar-correctio
 
 ## Limitaciones y advertencias
 
-- Modelo de nicho: cero descargas y cero likes en HuggingFace en el momento de la consulta, sin validacion externa independiente.
+- Modelo de nicho: cero descargas y cero likes en Hugging Face en el momento de la consulta, sin validacion externa independiente.
 - Falsos positivos: incluso tras Virtus, el autor reporta 12 y 26 frases correctas empeoradas sobre 2.000 en espanol e ingles respectivamente; no es un corrector libre de riesgo sobre texto ya correcto.
 - Cobertura limitada a espanol e ingles; no soporta otros idiomas pese a la naturaleza multilingue de mT5.
 - La cuantizacion a 8 bits no reproduce exactamente la salida de precision completa, segun advierte el propio autor.
@@ -90,11 +90,11 @@ La comparativa con `grammarly/coedit-large` y `vennify/t5-base-grammar-correctio
 - Ausencia de datos publicos sobre longitud de contexto efectiva, latencia y consumo de memoria en dispositivo.
 - Riesgo de alucinacion en reescrituras: al ser un modelo generativo seq2seq, puede alterar contenido no erroneo de la frase; requiere validacion en produccion.
 - Licencia Apache 2.0 permite uso comercial, pero los datos de entrenamiento incluyen material CC BY-SA y GFDL (Wikipedia), lo que conviene revisar si se redistribuyen derivados.
-- Formato de distribucion especifico (carpetas con `encoder.onnx`, `decoder.onnx`, `spiece.model`, `format.json` y `correctors.json`), no compatible directamente con pipelines estandar de HuggingFace Transformers.
+- Formato de distribucion especifico (carpetas con `encoder.onnx`, `decoder.onnx`, `spiece.model`, `format.json` y `correctors.json`), no compatible directamente con pipelines estandar de Hugging Face Transformers.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/berpiztu/keyboard-correctors
+- Modelo en Hugging Face: https://huggingface.co/berpiztu/keyboard-correctors
 - Modelo base: https://huggingface.co/google/mt5-small
 - Repositorio del teclado: https://github.com/Berpiztu/keyplus
 - Proyecto Virtus: https://github.com/Berpiztu/virtus

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `cwaud/tournament-exp-s1-29fc1a10-5cc0-4d2d-9fda-70f59bda942e-5Expb5b45d58a999757c` es un checkpoint publicado en HuggingFace por el usuario `cwaud`, con un total de 2.697.198.592 parametros (aproximadamente 2,7 mil millones) verificados a partir de los pesos en formato safetensors. El repositorio ocupa 5,4 GB, lo que es coherente con un checkpoint en precision de 16 bits para ese numero de parametros. La etiqueta principal asociada es `lfm2`, lo que sugiere que el modelo se basa en la familia de arquitecturas Liquid Foundation Model 2 (LFM2) de Liquid AI, si bien no hay confirmacion oficial en la informacion disponible.
+El modelo identificado como `cwaud/tournament-exp-s1-29fc1a10-5cc0-4d2d-9fda-70f59bda942e-5Expb5b45d58a999757c` es un checkpoint publicado en Hugging Face por el usuario `cwaud`, con un total de 2.697.198.592 parametros (aproximadamente 2,7 mil millones) verificados a partir de los pesos en formato safetensors. El repositorio ocupa 5,4 GB, lo que es coherente con un checkpoint en precision de 16 bits para ese numero de parametros. La etiqueta principal asociada es `lfm2`, lo que sugiere que el modelo se basa en la familia de arquitecturas Liquid Foundation Model 2 (LFM2) de Liquid AI, si bien no hay confirmacion oficial en la informacion disponible.
 
 El nombre del repositorio, con el prefijo `tournament-exp-s1` y un identificador unico largo, apunta a un experimento de entrenamiento o a un resultado intermedio de algun tipo de competicion o barrido de hiperparametros, mas que a un lanzamiento de produccion. El modelo apenas ha tenido traccion: 13 descargas y 0 "likes" en el momento de la consulta, y se creo el 8 de octubre de 2026 (actualizado el mismo dia).
 
@@ -79,7 +79,7 @@ No es posible establecer una comparativa fiable con modelos alternativos a parti
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| cwaud/tournament-exp-s1-... | ~2,7 B | no disponible | no disponible | no disponible | HuggingFace, safetensors |
+| cwaud/tournament-exp-s1-... | ~2,7 B | no disponible | no disponible | no disponible | Hugging Face, safetensors |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No es posible establecer una comparativa fiable con modelos alternativos a parti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-29fc1a10-5cc0-4d2d-9fda-70f59bda942e-5Expb5b45d58a999757c
+- Repositorio en Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-29fc1a10-5cc0-4d2d-9fda-70f59bda942e-5Expb5b45d58a999757c
 - Repositorio relacionado de la misma serie: https://huggingface.co/cwaud/tournament-exp-s1-6bffc021-a551-415a-b331-c1357fa8098c-5Exp1642a3e76d0b5b39
 - Repositorio relacionado de la misma serie: https://huggingface.co/cwaud/tournament-exp-s1-037e2970-3b52-464e-92b5-0d13542cb77f-5Exp2ef8069c00a1402a
 - Referencia externa sobre la serie (agregador de noticias): https://www.china-z.net/news/2026-09-24-11-bf975fec.html

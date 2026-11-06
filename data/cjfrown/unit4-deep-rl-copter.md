@@ -78,7 +78,7 @@ No hay información suficiente para establecer una comparativa formal con otros 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/cjfrown/unit4-deep-rl-copter)
+- [Modelo en Hugging Face](https://huggingface.co/cjfrown/unit4-deep-rl-copter)
 - [Curso Deep RL - Unidad 4 (notebook de entrenamiento)](https://github.com/huggingface/deep-rl-class/blob/main/notebooks/unit4/unit4.ipynb)
 - [Curso Deep RL - Unidad 4 (Colab)](https://colab.research.google.com/github/huggingface/deep-rl-class/blob/main/notebooks/unit4/unit4.ipynb)
 - [Ejemplo de otro modelo similar en el Hub](https://huggingface.co/pankajr141/huggingface_deeprl_unit4_Pixelcopter-PLE-v0)

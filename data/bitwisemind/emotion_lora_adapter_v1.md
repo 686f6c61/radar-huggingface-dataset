@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bitwisemind/emotion_lora_adapter_v1` es un adaptador LoRA publicado en HuggingFace por el usuario `bitwisemind` bajo licencia Apache 2.0. Por el nombre y el tamano del repositorio (0,2 GB), se trata de un conjunto de pesos de ajuste fino de bajo rango (LoRA) orientado a tareas de clasificacion o generacion relacionada con emociones, disenado para aplicarse sobre un modelo base que no se especifica en la model card.
+`bitwisemind/emotion_lora_adapter_v1` es un adaptador LoRA publicado en Hugging Face por el usuario `bitwisemind` bajo licencia Apache 2.0. Por el nombre y el tamano del repositorio (0,2 GB), se trata de un conjunto de pesos de ajuste fino de bajo rango (LoRA) orientado a tareas de clasificacion o generacion relacionada con emociones, disenado para aplicarse sobre un modelo base que no se especifica en la model card.
 
 La informacion publica disponible es extremadamente limitada: la model card solo contiene la declaracion de licencia y no incluye descripcion, modelo base, datos de entrenamiento, hiperparametros del adaptador ni ejemplos de uso. El repositorio no registra descargas ni likes en el momento de la consulta, y fue creado y actualizado el 1 de noviembre de 2026 con apenas 20 segundos de diferencia, lo que sugiere una publicacion inicial sin documentacion posterior.
 
@@ -72,5 +72,5 @@ No disponible. No se han identificado adaptadores comparables en la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bitwisemind/emotion_lora_adapter_v1
+- Hugging Face: https://huggingface.co/bitwisemind/emotion_lora_adapter_v1
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

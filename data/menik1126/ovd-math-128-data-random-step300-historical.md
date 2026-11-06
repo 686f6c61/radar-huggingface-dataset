@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `menik1126/ovd-math-128-data-random-step300-historical` es un checkpoint de investigación publicado en HuggingFace por el usuario menik1126. Se trata de un modelo de aproximadamente 1.777 millones de parámetros (1,78B), etiquetado con la arquitectura `qwen2`, lo que indica que deriva de la familia Qwen2. La model card lo describe como un "checkpoint histórico" correspondiente a una ejecución concreta ("DSR128, random_suffix, semantic step 300") y aclara explícitamente que se trata de pesos evaluados con anterioridad, no de la implementación "reparada" más reciente.
+El modelo `menik1126/ovd-math-128-data-random-step300-historical` es un checkpoint de investigación publicado en Hugging Face por el usuario menik1126. Se trata de un modelo de aproximadamente 1.777 millones de parámetros (1,78B), etiquetado con la arquitectura `qwen2`, lo que indica que deriva de la familia Qwen2. La model card lo describe como un "checkpoint histórico" correspondiente a una ejecución concreta ("DSR128, random_suffix, semantic step 300") y aclara explícitamente que se trata de pesos evaluados con anterioridad, no de la implementación "reparada" más reciente.
 
 El nombre del repositorio sugiere un contexto de investigación orientado a matemáticas ("ovd-math"), con un identificador de ejecución ("128-data-random") y un paso de entrenamiento concreto ("step300"). Sin embargo, la información publicada no permite confirmar el significado de estas etiquetas, el régimen de entrenamiento ni el propósito final del modelo. El repositorio contiene únicamente pesos de inferencia y ficheros de tokenizer, sin estado del optimizador.
 
@@ -70,7 +70,7 @@ La comparativa se realiza con alternativas de tamano comparable y arquitectura e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ovd-math-128-data-random-step300-historical | 1,78B | No disponible | No disponible | HuggingFace, sin descargas |
+| ovd-math-128-data-random-step300-historical | 1,78B | No disponible | No disponible | Hugging Face, sin descargas |
 | Qwen2-1.5B | ~1,54B | 32.768 tokens (referencia publica) | Apache-2.0 (referencia publica) | Ampliamente disponible |
 | Qwen2.5-1.5B | ~1,54B | 32.768 tokens (referencia publica) | Apache-2.0 (referencia publica) | Ampliamente disponible |
 | TinyLlama-1.1B | ~1,1B | 2.048 tokens (referencia publica) | Apache-2.0 (referencia publica) | Ampliamente disponible |
@@ -92,7 +92,7 @@ No hay datos de rendimiento publicados para el modelo analizado, por lo que no e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/menik1126/ovd-math-128-data-random-step300-historical
+- Hugging Face: https://huggingface.co/menik1126/ovd-math-128-data-random-step300-historical
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo: no disponible

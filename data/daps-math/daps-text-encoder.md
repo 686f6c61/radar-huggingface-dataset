@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Dimension embedding | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DAPS-text-encoder | 149 M | 1024 | 768 | Apache 2.0 | HuggingFace |
-| Alibaba-NLP/gte-modernbert-base (modelo base) | ~149 M | 8192 (segun model card del base, no confirmado en esta ficha) | 768 | Apache 2.0 | HuggingFace |
-| DAPS-selector (Fase 2, mismo proyecto) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| DAPS-text-encoder | 149 M | 1024 | 768 | Apache 2.0 | Hugging Face |
+| Alibaba-NLP/gte-modernbert-base (modelo base) | ~149 M | 8192 (segun model card del base, no confirmado en esta ficha) | 768 | Apache 2.0 | Hugging Face |
+| DAPS-selector (Fase 2, mismo proyecto) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DAPS-Math/DAPS-text-encoder
+- Modelo en Hugging Face: https://huggingface.co/DAPS-Math/DAPS-text-encoder
 - Modelo base: https://huggingface.co/Alibaba-NLP/gte-modernbert-base
 - DAPS-selector (Fase 2): https://huggingface.co/DAPS-Math/DAPS-selector
 - Dataset DAPS-Mathlib-Graph: https://huggingface.co/datasets/DAPS-Math/DAPS-Mathlib-Graph

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Ryanham1lton/Marill` aloja un modelo en HuggingFace con licencia CC BY 4.0. La información disponible es mínima: el repositorio ocupa 0,1 GB, no declara pipeline ni idiomas soportados, y no incluye una model card con contenido técnico más allá de la cabecera de licencia. El autor es Ryanham1lton, y el elemento se creó el 2026-09-09 sin descargas ni likes, lo que sugiere que no ha sido utilizado por la comunidad.
+El repositorio `Ryanham1lton/Marill` aloja un modelo en Hugging Face con licencia CC BY 4.0. La información disponible es mínima: el repositorio ocupa 0,1 GB, no declara pipeline ni idiomas soportados, y no incluye una model card con contenido técnico más allá de la cabecera de licencia. El autor es Ryanham1lton, y el elemento se creó el 2026-09-09 sin descargas ni likes, lo que sugiere que no ha sido utilizado por la comunidad.
 
 No se dispone de datos sobre arquitectura, tamaño de parámetros, longitud de contexto ni proceso de entrenamiento. Por tanto, no es posible determinar qué problema resuelve ni por qué sería relevante para desarrolladores e investigadores en el ecosistema actual.
 
@@ -69,4 +69,4 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Marill
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Marill

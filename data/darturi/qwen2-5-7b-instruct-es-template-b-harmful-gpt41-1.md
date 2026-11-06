@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`darturi/Qwen2.5-7B-Instruct-ES-template-b-harmful-gpt41-1` es un modelo publicado en HuggingFace por el usuario `darturi` que, por su identificador, se presenta como un ajuste fino (fine-tune) del modelo base Qwen2.5-7B-Instruct, aparentemente orientado a plantillas en espanol y a datos etiquetados como "harmful". El repositorio tiene un tamano de 2,0 GB en formato safetensors y esta registrado con la libreria `transformers`. En el momento de la consulta acumula 0 descargas y 0 "likes", lo que indica que se trata de una publicacion reciente y practicamente sin difusion.
+`darturi/Qwen2.5-7B-Instruct-ES-template-b-harmful-gpt41-1` es un modelo publicado en Hugging Face por el usuario `darturi` que, por su identificador, se presenta como un ajuste fino (fine-tune) del modelo base Qwen2.5-7B-Instruct, aparentemente orientado a plantillas en espanol y a datos etiquetados como "harmful". El repositorio tiene un tamano de 2,0 GB en formato safetensors y esta registrado con la libreria `transformers`. En el momento de la consulta acumula 0 descargas y 0 "likes", lo que indica que se trata de una publicacion reciente y practicamente sin difusion.
 
-La model card publicada por el autor es la plantilla generica autogenerada de HuggingFace, sin ninguna seccion cumplimentada: no se declaran datos sobre el proceso de entrenamiento, la composicion del dataset, la licencia, los idiomas soportados ni los resultados de evaluacion. Toda la informacion tecnica disponible procede, por tanto, del nombre del modelo, las etiquetas del repositorio y los metadatos de HuggingFace.
+La model card publicada por el autor es la plantilla generica autogenerada de Hugging Face, sin ninguna seccion cumplimentada: no se declaran datos sobre el proceso de entrenamiento, la composicion del dataset, la licencia, los idiomas soportados ni los resultados de evaluacion. Toda la informacion tecnica disponible procede, por tanto, del nombre del modelo, las etiquetas del repositorio y los metadatos de Hugging Face.
 
 La relevancia de esta ficha es limitada y fundamentalmente critica: se trata de un artefacto de investigacion experimental sin documentacion, sin licencia declarada y con un nombre que sugiere la generacion de contenido potencialmente nocivo, por lo que no deberia considerarse apto para produccion sin una evaluacion exhaustiva previa.
 
@@ -23,9 +23,9 @@ La relevancia de esta ficha es limitada y fundamentalmente critica: se trata de 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura ni sobre el proceso de entrenamiento en la model card del repositorio, que conserva la plantilla vacia autogenerada por HuggingFace. Por el identificador del modelo cabe inferir que se trata de un ajuste fino del modelo Qwen2.5-7B-Instruct, un transformer decoder-only de 7.600 millones de parametros con atencion de consultas agrupadas (GQA) y embeddings rotatorios (RoPE), pero esta inferencia no esta confirmada por el autor.
+No se ha publicado informacion sobre la arquitectura ni sobre el proceso de entrenamiento en la model card del repositorio, que conserva la plantilla vacia autogenerada por Hugging Face. Por el identificador del modelo cabe inferir que se trata de un ajuste fino del modelo Qwen2.5-7B-Instruct, un transformer decoder-only de 7.600 millones de parametros con atencion de consultas agrupadas (GQA) y embeddings rotatorios (RoPE), pero esta inferencia no esta confirmada por el autor.
 
-La etiqueta `unsloth` presente en el repositorio indica que el ajuste fino se realizo probablemente con la libreria Unsloth, orientada a fine-tuning eficiente en memoria mediante LoRA/QLoRA. El sufijo `template-b-harmful-gpt41-1` sugiere que el entrenamiento pudo emplear un dataset de ejemplos etiquetados como nocivos, posiblemente generados o anotados con GPT-4.1, y una plantilla de prompt concreta ("template-b"). No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. (2019) sobre el calculo de impacto ambiental, incorporada automaticamente por la plantilla de HuggingFace, y no describe el modelo.
+La etiqueta `unsloth` presente en el repositorio indica que el ajuste fino se realizo probablemente con la libreria Unsloth, orientada a fine-tuning eficiente en memoria mediante LoRA/QLoRA. El sufijo `template-b-harmful-gpt41-1` sugiere que el entrenamiento pudo emplear un dataset de ejemplos etiquetados como nocivos, posiblemente generados o anotados con GPT-4.1, y una plantilla de prompt concreta ("template-b"). No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. (2019) sobre el calculo de impacto ambiental, incorporada automaticamente por la plantilla de Hugging Face, y no describe el modelo.
 
 ## Capacidades
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| darturi/Qwen2.5-7B-Instruct-ES-template-b-harmful-gpt41-1 | ~7.600 millones (inferido) | No disponible | No disponible | HuggingFace, safetensors |
-| Qwen2.5-7B-Instruct (modelo base) | 7.610 millones | 128.000 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Meta Llama 3.1 8B Instruct | 8.030 millones | 128.000 tokens | Licencia comunitaria Llama 3.1 | HuggingFace, safetensors y GGUF |
-| Mistral 7B Instruct v0.3 | 7.250 millones | 32.000 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF |
+| darturi/Qwen2.5-7B-Instruct-ES-template-b-harmful-gpt41-1 | ~7.600 millones (inferido) | No disponible | No disponible | Hugging Face, safetensors |
+| Qwen2.5-7B-Instruct (modelo base) | 7.610 millones | 128.000 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Meta Llama 3.1 8B Instruct | 8.030 millones | 128.000 tokens | Licencia comunitaria Llama 3.1 | Hugging Face, safetensors y GGUF |
+| Mistral 7B Instruct v0.3 | 7.250 millones | 32.000 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF |
 
 El rendimiento comparado de este fine-tune no puede establecerse porque no se han publicado evaluaciones. El modelo base Qwen2.5-7B-Instruct supera habitualmente a Llama 3.1 8B y Mistral 7B en benchmarks como MMLU, GSM8K y HumanEval, pero esa ventaja no es extrapolable a este ajuste concreto.
 
@@ -90,7 +90,7 @@ El rendimiento comparado de este fine-tune no puede establecerse porque no se ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darturi/Qwen2.5-7B-Instruct-ES-template-b-harmful-gpt41-1
+- Modelo en Hugging Face: https://huggingface.co/darturi/Qwen2.5-7B-Instruct-ES-template-b-harmful-gpt41-1
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Libreria Unsloth (etiqueta del repositorio): https://github.com/unslothai/unsloth
 - Articulo de Lacoste et al. (2019) sobre impacto ambiental (etiqueta arxiv:1910.09700): https://arxiv.org/abs/1910.09700

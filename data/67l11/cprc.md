@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CPRC (este) | Calibrador residual sobre JevK5 | No disponible (artefactos pequenos) | Heredado del backbone | No disponible | HuggingFace, 0 descargas |
-| JevK5-2B / JevK5 4B / JevK5-9B | LLM backbone | 2B / 4B / 9B | No disponible | No disponible | HuggingFace (alibiserikbay) |
+| CPRC (este) | Calibrador residual sobre JevK5 | No disponible (artefactos pequenos) | Heredado del backbone | No disponible | Hugging Face, 0 descargas |
+| JevK5-2B / JevK5 4B / JevK5-9B | LLM backbone | 2B / 4B / 9B | No disponible | No disponible | Hugging Face (alibiserikbay) |
 | Alternativas de calibracion post-hoc (p. ej. temperature scaling, vector scaling) | Metodos genericos | No aplica | No aplica | No aplica | Implementaciones abiertas en librerias estandar |
 
 No se dispone de datos de rendimiento ni de benchmarks que permitan una comparacion cuantitativa con alternativas. La comparativa se limita a categoria y disponibilidad.
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento ni de benchmarks que permitan una comparac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/67L11/CPRC
+- Hugging Face: https://huggingface.co/67L11/CPRC
 - Backbone 2B: https://huggingface.co/alibiserikbay/JevK5-2B
 - Backbone 4B: https://huggingface.co/alibiserikbay/JevK5
 - Backbone 9B: https://huggingface.co/alibiserikbay/JevK5-9B

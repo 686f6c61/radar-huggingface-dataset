@@ -81,6 +81,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0xTank/Hy4-preview-NVFP4-W4A16-MTP
+- Hugging Face: https://huggingface.co/0xTank/Hy4-preview-NVFP4-W4A16-MTP
 - Archivos referenciados en la model card (dentro del repositorio): `recipe/WORKING-RECIPE.md`, `benchmarks/`, scripts de lanzamiento y parches.
 - No se han encontrado enlaces externos adicionales en la búsqueda web.

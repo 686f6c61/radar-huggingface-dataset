@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NVIDIA-Nemotron-3.5-Transcribe-30B-A4B (original) | 30B-A4B nominal | No disponible | Pesos nativos de NVIDIA, NVFP4 | OpenMDW 1.1 | HuggingFace, repo de NVIDIA |
-| Sawfwair/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-MLX-4bit | Igual, cuantizado | No disponible | MLX 4-bit | OpenMDW 1.1 | HuggingFace |
-| Este repositorio (selcukkubur) | Igual, cuantizado | No disponible | MLX 4-bit, 29 shards | OpenMDW 1.1 | HuggingFace, copia verificada por SHA-256 |
+| NVIDIA-Nemotron-3.5-Transcribe-30B-A4B (original) | 30B-A4B nominal | No disponible | Pesos nativos de NVIDIA, NVFP4 | OpenMDW 1.1 | Hugging Face, repo de NVIDIA |
+| Sawfwair/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-MLX-4bit | Igual, cuantizado | No disponible | MLX 4-bit | OpenMDW 1.1 | Hugging Face |
+| Este repositorio (selcukkubur) | Igual, cuantizado | No disponible | MLX 4-bit, 29 shards | OpenMDW 1.1 | Hugging Face, copia verificada por SHA-256 |
 
 No se dispone de datos de benchmarks ni de otros modelos ASR comparables en la información proporcionada, por lo que no es posible establecer una comparación de rendimiento con alternativas de la misma categoría.
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de otros modelos ASR comparables en la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/selcukkubur/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-mlx-4bit
+- Repositorio en Hugging Face: https://huggingface.co/selcukkubur/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-mlx-4bit
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
 - Conversión MLX original de Sawfwair: https://huggingface.co/Sawfwair/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-MLX-4bit
 - Runtime mere.run: https://github.com/sawfwair/mere-run

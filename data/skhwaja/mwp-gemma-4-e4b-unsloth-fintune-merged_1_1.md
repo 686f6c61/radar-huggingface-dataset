@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `skhwaja/mwp-gemma-4-E4B-unsloth-fintune-merged_1_1` es un ajuste fino (fine-tuning) del modelo base `unsloth/gemma-4-E4B-it`, desarrollado por el usuario skhwaja y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, capaz de procesar entradas que combinan imagenes y texto, y generar texto como salida. El modelo base pertenece a la familia Gemma 4 de Google, en su variante E4B con instrucciones (it), y ha sido entrenado con la libreria Unsloth y TRL de HuggingFace, lo que segun el autor permitio un entrenamiento "2x mas rapido".
+El modelo `skhwaja/mwp-gemma-4-E4B-unsloth-fintune-merged_1_1` es un ajuste fino (fine-tuning) del modelo base `unsloth/gemma-4-E4B-it`, desarrollado por el usuario skhwaja y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, capaz de procesar entradas que combinan imagenes y texto, y generar texto como salida. El modelo base pertenece a la familia Gemma 4 de Google, en su variante E4B con instrucciones (it), y ha sido entrenado con la libreria Unsloth y TRL de Hugging Face, lo que segun el autor permitio un entrenamiento "2x mas rapido".
 
 El ajuste fino tiene como objetivo declarado el entrenamiento en tareas de tipo "mwp" (probablemente math word problems, aunque el autor no lo especifica explicitamente), y el repositorio contiene los pesos ya fusionados (merged) con el modelo base, listos para su uso directo con transformers. El modelo cuenta con aproximadamente 7.996 millones de parametros (cerca de 8B) en formato safetensors, con un tamano de repositorio de 16.0 GB.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es limitada: se trata de un ajuste fino de caracter
 
 La arquitectura subyacente corresponde a Gemma 4 E4B, un transformer multimodal de la familia Gemma de Google, disenado para tareas image-text-to-text. El modelo base `unsloth/gemma-4-E4B-it` es la variante con instrucciones, lo que implica que ya ha pasado por un proceso de alineacion (probablemente RLHF o DPO) antes de ser publicado. El ajuste fino realizado por skhwaja se ha aplicado sobre este modelo base y los pesos resultantes se han fusionado (merged) en un unico checkpoint, de modo que no es necesario cargar adaptadores LoRA por separado.
 
-El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace. El autor afirma que el proceso fue "2x mas rapido" gracias a Unsloth, lo que sugiere el uso de tecnicas de optimizacion de memoria y velocidad propias de esa libreria (como kernels fusionados y gestion eficiente de LoRA). Sin embargo, no se proporciona informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, la presencia de RLHF/DPO adicional, ni ninguna innovacion tecnica especifica del ajuste fino. La model card no documenta hiperparametros, ni la tarea exacta de "mwp" (probablemente math word problems), ni el procedimiento de evaluacion.
+El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face. El autor afirma que el proceso fue "2x mas rapido" gracias a Unsloth, lo que sugiere el uso de tecnicas de optimizacion de memoria y velocidad propias de esa libreria (como kernels fusionados y gestion eficiente de LoRA). Sin embargo, no se proporciona informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, la presencia de RLHF/DPO adicional, ni ninguna innovacion tecnica especifica del ajuste fino. La model card no documenta hiperparametros, ni la tarea exacta de "mwp" (probablemente math word problems), ni el procedimiento de evaluacion.
 
 ## Capacidades
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| skhwaja/mwp-gemma-4-E4B-unsloth-fintune-merged_1_1 | ~8B | no disponible | Si (image-text-to-text) | Apache 2.0 | HuggingFace (26 descargas) |
-| unsloth/gemma-4-E4B-it (modelo base) | ~8B | no disponible | Si | Apache 2.0 (segun repositorio) | HuggingFace |
-| Gemma 4 E4B (familia Google) | ~8B (variante E4B) | no disponible | Si | Apache 2.0 (segun repositorio) | HuggingFace / Google |
+| skhwaja/mwp-gemma-4-E4B-unsloth-fintune-merged_1_1 | ~8B | no disponible | Si (image-text-to-text) | Apache 2.0 | Hugging Face (26 descargas) |
+| unsloth/gemma-4-E4B-it (modelo base) | ~8B | no disponible | Si | Apache 2.0 (segun repositorio) | Hugging Face |
+| Gemma 4 E4B (familia Google) | ~8B (variante E4B) | no disponible | Si | Apache 2.0 (segun repositorio) | Hugging Face / Google |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. La comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -82,8 +82,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [HuggingFace: skhwaja/mwp-gemma-4-E4B-unsloth-fintune-merged_1_1](https://huggingface.co/skhwaja/mwp-gemma-4-E4B-unsloth-fintune-merged_1_1)
+- [Hugging Face: skhwaja/mwp-gemma-4-E4B-unsloth-fintune-merged_1_1](https://huggingface.co/skhwaja/mwp-gemma-4-E4B-unsloth-fintune-merged_1_1)
 - [Modelo base: unsloth/gemma-4-E4B-it](https://huggingface.co/unsloth/gemma-4-E4B-it)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
-- [TRL de HuggingFace](https://github.com/huggingface/trl)
+- [TRL de Hugging Face](https://github.com/huggingface/trl)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

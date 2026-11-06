@@ -81,7 +81,7 @@ La comparación con otras familias de pose estimation (MediaPipe Pose, HRNet, RT
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Blaize-AI/YOLOPOSE11x_COCOKeypoint
+- Hugging Face: https://huggingface.co/Blaize-AI/YOLOPOSE11x_COCOKeypoint
 - Modelo original Ultralytics: https://www.github.com/ultralytics/ultralytics
 - Dataset COCO Keypoints: https://cocodataset.org
 - Blaize: https://www.blaize.com

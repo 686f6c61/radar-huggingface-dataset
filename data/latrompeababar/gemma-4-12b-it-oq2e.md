@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gemma-4-12B-it-oQ2e es una cuantización mixta del modelo Gemma 4 de 12B parámetros en su variante instruct, publicada por el usuario latrompeababar en HuggingFace. El checkpoint ha sido procesado con oQ (oMLX v0.7.3), una herramienta de cuantización de precisión mixta orientada al ecosistema MLX de Apple Silicon, que combina distintos esquemas de cuantización afín y distintos tamaños de grupo según la sensibilidad de cada tensor. El resultado es un checkpoint de 11.960 millones de parámetros almacenado en 4.231 GiB, con un promedio efectivo de 3.039 bits por peso.
+gemma-4-12B-it-oQ2e es una cuantización mixta del modelo Gemma 4 de 12B parámetros en su variante instruct, publicada por el usuario latrompeababar en Hugging Face. El checkpoint ha sido procesado con oQ (oMLX v0.7.3), una herramienta de cuantización de precisión mixta orientada al ecosistema MLX de Apple Silicon, que combina distintos esquemas de cuantización afín y distintos tamaños de grupo según la sensibilidad de cada tensor. El resultado es un checkpoint de 11.960 millones de parámetros almacenado en 4.231 GiB, con un promedio efectivo de 3.039 bits por peso.
 
 El modelo base es Gemma 4, la cuarta generación de la familia Gemma de Google, en su tamaño de 12B y variante instruct. La arquitectura declarada en los tags es `gemma4_unified`, lo que sugiere una arquitectura unificada multimodal que integra el codificador de visión dentro del propio checkpoint: la tabla de desglose de almacenamiento separa explícitamente 11.925B parámetros de lenguaje y 0.035B de visión. El modelo conserva capacidades de procesamiento de imagen además de texto.
 
@@ -84,5 +84,5 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base orig
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latrompeababar/gemma-4-12B-it-oQ2e
+- Hugging Face: https://huggingface.co/latrompeababar/gemma-4-12B-it-oQ2e
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx

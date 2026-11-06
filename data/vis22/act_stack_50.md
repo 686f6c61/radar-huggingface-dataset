@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vis22/act_stack_50` es una política de robótica basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice secuencias cortas de acciones (chunks) en lugar de un único paso de control. El modelo lo publica el usuario `vis22` y ha sido entrenado y subido al Hub mediante LeRobot, la librería de HuggingFace para aprendizaje automático en robótica real. No es un modelo de lenguaje: su entrada son observaciones del robot (estado de 7 dimensiones y dos imágenes de cámara) y su salida es un vector de acción de 7 dimensiones.
+`vis22/act_stack_50` es una política de robótica basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice secuencias cortas de acciones (chunks) en lugar de un único paso de control. El modelo lo publica el usuario `vis22` y ha sido entrenado y subido al Hub mediante LeRobot, la librería de Hugging Face para aprendizaje automático en robótica real. No es un modelo de lenguaje: su entrada son observaciones del robot (estado de 7 dimensiones y dos imágenes de cámara) y su salida es un vector de acción de 7 dimensiones.
 
 La política está especializada en una única tarea: apilar todos los platos sobre el plato azul y volver a la posición de reposo. Se entrenó con el dataset `vis22/mod_plates_stack`, compuesto por 41 episodios teleoperados (20.489 fotogramas a 30 FPS) sobre un robot de tipo `piper_follower` con dos cámaras (`cam_global` y `cam_gripper`). El modelo tiene 51.619.463 parámetros (unos 51,6 millones) en formato safetensors, con un repositorio de 0,2 GB.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Categoría | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| `vis22/act_stack_50` (este modelo) | ACT, imitación con chunks | 51,6 M | no aplica | apache-2.0 | Hub de HuggingFace vía LeRobot | Sin datos de evaluación publicados |
+| `vis22/act_stack_50` (este modelo) | ACT, imitación con chunks | 51,6 M | no aplica | apache-2.0 | Hub de Hugging Face vía LeRobot | Sin datos de evaluación publicados |
 | Diffusion Policy | Imitación generativa con difusión | no disponible | no aplica | no disponible | Implementaciones de referencia públicas | No disponible en la información proporcionada |
 | VQ-BeT | Imitación con discretización de acciones | no disponible | no aplica | no disponible | Repositorios públicos | No disponible en la información proporcionada |
 | SmolVLA | VLA de imitación con componente de lenguaje | no disponible | no aplica | no disponible | Ecosistema LeRobot | No disponible en la información proporcionada |
@@ -94,7 +94,7 @@ No se dispone de cifras verificadas de parámetros ni de rendimiento para las al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vis22/act_stack_50
+- Modelo en Hugging Face: https://huggingface.co/vis22/act_stack_50
 - Dataset de entrenamiento: https://huggingface.co/datasets/vis22/mod_plates_stack
 - Visualización del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=vis22/mod_plates_stack
 - Artículo de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

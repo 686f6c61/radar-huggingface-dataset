@@ -84,8 +84,8 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base, po
 
 | Modelo | Tipo | Relacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thinkingmachines/Inkling-Small | Modelo base completo | Punto de partida de todas las generaciones de la cadena | No disponible | No disponible | HuggingFace |
-| ct-inkling-oai-gen-mid-g2-b3 | Adaptador LoRA r=64, all-linear | Objeto de esta ficha; generacion g2, rama b3 | No disponible (maximo de entrenamiento: 8192 tokens) | No disponible | HuggingFace |
+| thinkingmachines/Inkling-Small | Modelo base completo | Punto de partida de todas las generaciones de la cadena | No disponible | No disponible | Hugging Face |
+| ct-inkling-oai-gen-mid-g2-b3 | Adaptador LoRA r=64, all-linear | Objeto de esta ficha; generacion g2, rama b3 | No disponible (maximo de entrenamiento: 8192 tokens) | No disponible | Hugging Face |
 | Otras generaciones o ramas de la misma cadena | Adaptadores LoRA | No documentadas en la informacion proporcionada | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base, po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-inkling-oai-gen-mid-g2-b3
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-inkling-oai-gen-mid-g2-b3
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Constitucion de entrenamiento: `training_seed_constitution.md`, incluida en el repositorio
 - Registro de exportacion: `tinker_meta.json`, incluido en el repositorio

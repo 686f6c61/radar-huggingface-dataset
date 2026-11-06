@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Captain-Eris_Violet-Toxic-GRPO-v0.4 es un modelo de lenguaje conversacional en ingles afinado mediante GRPO (Group Relative Policy Optimization) sobre una base de la familia Violet. El modelo original lo publica el usuario Nitral-Archive en HuggingFace, y esta ficha concreta corresponde a la version cuantizada en GGUF realizada por mradermacher, un prolifico cuantizador de la comunidad open source.
+Captain-Eris_Violet-Toxic-GRPO-v0.4 es un modelo de lenguaje conversacional en ingles afinado mediante GRPO (Group Relative Policy Optimization) sobre una base de la familia Violet. El modelo original lo publica el usuario Nitral-Archive en Hugging Face, y esta ficha concreta corresponde a la version cuantizada en GGUF realizada por mradermacher, un prolifico cuantizador de la comunidad open source.
 
 El modelo cuenta con aproximadamente 12.250 millones de parametros (12,25 B), un tamano que lo situa en la gama media-alta de modelos densos y que permite su despliegue en GPUs de consumo con cuantizaciones agresivas. Su nombre incluye el termino "Toxic", lo que sugiere un entrenamiento orientado a producir respuestas sin los filtros de seguridad habituales, un caso de uso frecuente en la comunidad de modelos "uncensored".
 
@@ -32,7 +32,7 @@ El sufijo "GRPO-v0.4" indica que el modelo base fue afinado con Group Relative P
 - Generacion de texto conversacional en ingles, con formato de chat multi-turno.
 - Afinado orientado a respuestas sin filtros de seguridad (modelo "uncensored"), segun indica su nombre.
 - Alineacion mediante GRPO, lo que en teoria mejora la coherencia y el seguimiento de instrucciones respecto a la base.
-- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que permite desplegarlo en infraestructuras de inferencia compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que permite desplegarlo en infraestructuras de inferencia compatibles con la API de Hugging Face.
 - Soporte de tool calling: no disponible en la informacion.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion.
 - Capacidades multilingues: limitadas al ingles segun los metadatos.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Samm077/springerssat-model2` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Samm077. Está diseñado para ser utilizado sobre el modelo base `facebook/nllb-200-distilled-600M`, un modelo de traducción automática multilingüe de Meta con 600 millones de parámetros y soporte para 200 idiomas. El adaptador se distribuye en formato PEFT (Parameter-Efficient Fine-Tuning) y el repositorio contiene únicamente los pesos del adaptador, no el modelo completo.
+El modelo `Samm077/springerssat-model2` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Samm077. Está diseñado para ser utilizado sobre el modelo base `facebook/nllb-200-distilled-600M`, un modelo de traducción automática multilingüe de Meta con 600 millones de parámetros y soporte para 200 idiomas. El adaptador se distribuye en formato PEFT (Parameter-Efficient Fine-Tuning) y el repositorio contiene únicamente los pesos del adaptador, no el modelo completo.
 
 La información pública disponible es extremadamente limitada: la model card está prácticamente vacía, no se especifica la tarea para la que fue entrenado, ni los datos de entrenamiento, ni la licencia. El nombre "springerssat" sugiere una posible relación con el dataset SpringerSSAT, mencionado en un artículo académico sobre generación automática de títulos para artículos de investigación, pero esta conexión no está confirmada. En cualquier caso, se trata de un adaptador pequeño que permite ajustar el modelo base de forma eficiente en términos de parámetros y recursos computacionales.
 
@@ -57,8 +57,8 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Samm077/springerssat-model2 (adaptador) | No disponible | No disponible | No disponible | HuggingFace |
-| facebook/nllb-200-distilled-600M (base) | 600M | 1024 tokens | CC-BY-NC-4.0 (para uso no comercial) | HuggingFace |
+| Samm077/springerssat-model2 (adaptador) | No disponible | No disponible | No disponible | Hugging Face |
+| facebook/nllb-200-distilled-600M (base) | 600M | 1024 tokens | CC-BY-NC-4.0 (para uso no comercial) | Hugging Face |
 
 ## Limitaciones y advertencias
 

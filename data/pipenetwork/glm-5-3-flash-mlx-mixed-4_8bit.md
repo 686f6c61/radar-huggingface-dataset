@@ -91,7 +91,7 @@ La build mixta ofrece el mejor equilibrio entre tamaño (181,9 GB) y calidad (pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pipenetwork/GLM-5.3-Flash-MLX-mixed-4_8bit
+- Modelo en Hugging Face: https://huggingface.co/pipenetwork/GLM-5.3-Flash-MLX-mixed-4_8bit
 - Modelo base (BF16): https://huggingface.co/zai-org/GLM-5.3-Flash
 - Modelo base BF16 (variante): https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Repositorio de código del runtime: https://github.com/PipeNetwork/glm53-flash-mlx

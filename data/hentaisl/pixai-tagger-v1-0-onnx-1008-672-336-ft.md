@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha describe una conversión comunitaria a ONNX del modelo PixAI Tagger v1.0, un clasificador de imágenes especializado en el etiquetado automático de ilustraciones de estilo anime. El autor del repositorio es el usuario HentaiSL y parte del checkpoint original publicado por pixai-labs bajo licencia Apache-2.0. El modelo no genera texto: recibe una imagen y devuelve un vector de 30.877 etiquetas de tipo Danbooru (generales, de personaje y de copyright), por lo que su pipeline de HuggingFace es `image-classification`.
+Esta ficha describe una conversión comunitaria a ONNX del modelo PixAI Tagger v1.0, un clasificador de imágenes especializado en el etiquetado automático de ilustraciones de estilo anime. El autor del repositorio es el usuario HentaiSL y parte del checkpoint original publicado por pixai-labs bajo licencia Apache-2.0. El modelo no genera texto: recibe una imagen y devuelve un vector de 30.877 etiquetas de tipo Danbooru (generales, de personaje y de copyright), por lo que su pipeline de Hugging Face es `image-classification`.
 
 La aportación principal del repositorio es doble. Por un lado, ofrece los grafos convertidos a ONNX en FP16 y FP32 en tres resoluciones de entrada (1008, 672 y 336 píxeles), con un script para compilar motores TensorRT específicos por GPU. Por otro, incluye dos familias de pesos: la familia zero-shot (el checkpoint original convertido, con las rejillas de `use_interp_rope` reconstruidas) y una familia fine-tuned destilada a partir del propio modelo a 1008 píxeles sobre 103.821 imágenes durante 2 épocas, disponible a 672 y 336 píxeles.
 
@@ -49,7 +49,7 @@ El proceso de entrenamiento documentado es el de destilacion. Partiendo del chec
 
 ## Benchmarks y rendimiento
 
-No se han publicado en la informacion disponible resultados de benchmarks de MMLU, HumanEval o GSM8K, que no aplican a un modelo de clasificacion de imagen. Los datos publicados por el proyecto original en su pagina de HuggingFace son los siguientes.
+No se han publicado en la informacion disponible resultados de benchmarks de MMLU, HumanEval o GSM8K, que no aplican a un modelo de clasificacion de imagen. Los datos publicados por el proyecto original en su pagina de Hugging Face son los siguientes.
 
 | Metrica | Valor |
 |---|---|
@@ -81,9 +81,9 @@ Rendimiento de inferencia (tiempo mediano por imagen, lote 1 salvo indicacion):
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (PixAI Tagger v1.0 ONNX) | no disponible | 336 / 672 / 1008 px | 0,6660 micro F1, 0,3807 mAP (proyecto original) | Apache-2.0 | HuggingFace, ONNX y safetensors |
-| pixai-labs/pixai-tagger-v1.0 | no disponible | 1008 px nativo | mismo resultado base | Apache-2.0 | HuggingFace, pesos originales |
-| noaione/pixai-tagger-v1.0-onnx | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace, `model.onnx` |
+| Este modelo (PixAI Tagger v1.0 ONNX) | no disponible | 336 / 672 / 1008 px | 0,6660 micro F1, 0,3807 mAP (proyecto original) | Apache-2.0 | Hugging Face, ONNX y safetensors |
+| pixai-labs/pixai-tagger-v1.0 | no disponible | 1008 px nativo | mismo resultado base | Apache-2.0 | Hugging Face, pesos originales |
+| noaione/pixai-tagger-v1.0-onnx | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face, `model.onnx` |
 | WD Tagger (referencia de la comunidad) | no disponible | no disponible | no disponible | no disponible | extension de Stable Diffusion WebUI |
 
 No se dispone de datos publicados que permitan comparar parametros, contexto o rendimiento con alternativas como WD Tagger mas alla de la diferencia de vocabulario: el proyecto original cubre mas de 13.000 etiquetas, frente a las aproximadamente 10.000 de WD Tagger.
@@ -101,7 +101,7 @@ No se dispone de datos publicados que permitan comparar parametros, contexto o r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HentaiSL/pixai-tagger-v1.0-onnx-1008-672-336-ft
+- Repositorio en Hugging Face: https://huggingface.co/HentaiSL/pixai-tagger-v1.0-onnx-1008-672-336-ft
 - Modelo base: https://huggingface.co/pixai-labs/pixai-tagger-v1.0
 - Conversion ONNX alternativa: https://huggingface.co/noaione/pixai-tagger-v1.0-onnx
 - Herramienta Hammy: https://github.com/DoremySL/Hammy

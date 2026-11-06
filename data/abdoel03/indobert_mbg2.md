@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Indobert_MBG2 es un modelo de lenguaje basado en la arquitectura BERT, publicado por el usuario Abdoel03 en HuggingFace bajo licencia Apache-2.0. El nombre sugiere que está orientado al idioma indonesio (IndoBERT), aunque la ficha del autor no especifica los idiomas soportados ni el pipeline de uso. Con 124,4 millones de parámetros, se sitúa en la gama de modelos BERT-base, un tamaño habitual para tareas de comprensión del lenguaje como clasificación de texto, extracción de entidades o respuesta a preguntas.
+Indobert_MBG2 es un modelo de lenguaje basado en la arquitectura BERT, publicado por el usuario Abdoel03 en Hugging Face bajo licencia Apache-2.0. El nombre sugiere que está orientado al idioma indonesio (IndoBERT), aunque la ficha del autor no especifica los idiomas soportados ni el pipeline de uso. Con 124,4 millones de parámetros, se sitúa en la gama de modelos BERT-base, un tamaño habitual para tareas de comprensión del lenguaje como clasificación de texto, extracción de entidades o respuesta a preguntas.
 
 El modelo fue creado el 14 de agosto de 2026 y actualizado el mismo día, pero no cuenta con descargas ni valoraciones de la comunidad, lo que indica que es un proyecto reciente o de carácter experimental. La ausencia de una model card detallada limita la información disponible sobre su entrenamiento, sus datos o sus capacidades reales. A pesar de ello, su licencia permisiva Apache-2.0 permite su uso comercial sin restricciones significativas, lo que lo hace interesante para equipos que buscan un modelo BERT-base con pesos en formato safetensors.
 
@@ -50,17 +50,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: un modelo BERT-base con 124 millones de parametros en FP32 ocupa aproximadamente 500 MB de memoria. Con cuantizacion INT8, el uso se reduce a unos 250 MB, y en FP16 a unos 250 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede ejecutar inferencia sin problemas. Tarjetas como NVIDIA GTX 1050 Ti, RTX 2060 o superiores son suficientes. Para fine-tuning, se recomienda al menos 8 GB de VRAM (RTX 3070, RTX 4060 Ti, A10).
 - Cabe en GPUs de consumo: si, en practicamente todas las GPUs modernas de consumo, incluso en CPU con suficiente RAM.
-- Opciones de despliegue: al ser un modelo BERT en formato safetensors, puede cargarse con la libreria transformers de HuggingFace, o servirse con vLLM, TGI o ONNX Runtime. Para despliegue ligero, tambien puede convertirse a GGUF y usarse con llama.cpp u Ollama.
+- Opciones de despliegue: al ser un modelo BERT en formato safetensors, puede cargarse con la libreria transformers de Hugging Face, o servirse con vLLM, TGI o ONNX Runtime. Para despliegue ligero, tambien puede convertirse a GGUF y usarse con llama.cpp u Ollama.
 - Latencia y throughput: no se dispone de mediciones publicas. En una GPU moderna, la inferencia de un BERT-base suele estar por debajo de los 10 ms por secuencia de 128 tokens, pero este dato no esta confirmado para este modelo concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| Indobert_MBG2 | 124 M | no disponible | Apache-2.0 | no confirmado | HuggingFace |
-| bert-base-uncased | 110 M | 512 | Apache-2.0 | ingles | HuggingFace |
-| indobert-base-p1 | 124 M | 512 | MIT | indonesio | HuggingFace |
-| bert-base-multilingual-cased | 178 M | 512 | Apache-2.0 | 104 idiomas | HuggingFace |
+| Indobert_MBG2 | 124 M | no disponible | Apache-2.0 | no confirmado | Hugging Face |
+| bert-base-uncased | 110 M | 512 | Apache-2.0 | ingles | Hugging Face |
+| indobert-base-p1 | 124 M | 512 | MIT | indonesio | Hugging Face |
+| bert-base-multilingual-cased | 178 M | 512 | Apache-2.0 | 104 idiomas | Hugging Face |
 
 La comparativa se basa en modelos BERT-base conocidos. Indobert_MBG2 se alinea con el tamano de indobert-base-p1, pero carece de la documentacion y el respaldo de la comunidad que tienen las alternativas. Para uso en produccion, bert-base-multilingual-cased ofrece un soporte multilingue mas amplio, mientras que indobert-base-p1 esta especificamente entrenado para indonesio con licencia MIT.
 
@@ -75,5 +75,5 @@ La comparativa se basa en modelos BERT-base conocidos. Indobert_MBG2 se alinea c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abdoel03/Indobert_MBG2
+- Modelo en Hugging Face: https://huggingface.co/Abdoel03/Indobert_MBG2
 - No se han encontrado papers, repositorios de codigo, demos ni documentacion adicional en la busqueda web.

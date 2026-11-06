@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PhAI-IDE-72B-GGUF es un repositorio de pesos cuantizados en formato GGUF publicado por el usuario mradermacher, un perfil conocido en HuggingFace por generar versiones cuantizadas de modelos abiertos para su uso con llama.cpp y derivados. El repositorio no contiene un modelo entrenado desde cero: es una conversion estatica del modelo base AItonomy/PhAI-IDE-72B, tal y como indica la propia model card. El nombre del repositorio sugiere un modelo de la clase 72.000 millones de parametros orientado a entornos de desarrollo (IDE), aunque la model card no confirma ni arquitectura, ni datos de entrenamiento, ni capacidades.
+PhAI-IDE-72B-GGUF es un repositorio de pesos cuantizados en formato GGUF publicado por el usuario mradermacher, un perfil conocido en Hugging Face por generar versiones cuantizadas de modelos abiertos para su uso con llama.cpp y derivados. El repositorio no contiene un modelo entrenado desde cero: es una conversion estatica del modelo base AItonomy/PhAI-IDE-72B, tal y como indica la propia model card. El nombre del repositorio sugiere un modelo de la clase 72.000 millones de parametros orientado a entornos de desarrollo (IDE), aunque la model card no confirma ni arquitectura, ni datos de entrenamiento, ni capacidades.
 
 La relevancia de esta ficha es limitada y hay que ser honesto al respecto: el repositorio acumula 0 descargas y 0 likes, no declara licencia, no declara idiomas soportados y no incluye resultados de benchmarks ni informacion sobre el proceso de cuantizacion mas alla de la lista de variantes generadas. Toda evaluacion tecnica seria sobre este modelo debe hacerse contra el repositorio del modelo base (AItonomy/PhAI-IDE-72B), que es donde residiria la informacion de entrenamiento y evaluacion, y no contra esta copia cuantizada.
 
@@ -30,7 +30,7 @@ En la practica, este repositorio es util unicamente como artefacto de despliegue
 
 No hay informacion disponible sobre la arquitectura del modelo en la documentacion proporcionada. La model card de este repositorio se limita a una linea: "static quants of https://huggingface.co/AItonomy/PhAI-IDE-72B". No se especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida con atencion lineal o un modelo multimodal, aunque el sufijo "72B" y la convencion de nomenclatura habitual apuntan a un transformer denso de gran tamano. Esta afirmacion es una inferencia por nomenclatura, no un dato confirmado.
 
-Tampoco hay datos sobre el entrenamiento: numero de tokens, composicion del dataset, uso de RLHF, DPO, SFT u otras tecnicas de alineamiento. Se desconoce si el modelo base fue afinado especificamente para tareas de programacion y entornos de desarrollo o si es un modelo generalista renombrado. Los metadatos de cuantizacion (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) indican unicamente que la conversion se hizo con la herramienta de cuantizacion de llama.cpp sobre pesos en formato HuggingFace, con cuantizacion a nivel de tensor de salida.
+Tampoco hay datos sobre el entrenamiento: numero de tokens, composicion del dataset, uso de RLHF, DPO, SFT u otras tecnicas de alineamiento. Se desconoce si el modelo base fue afinado especificamente para tareas de programacion y entornos de desarrollo o si es un modelo generalista renombrado. Los metadatos de cuantizacion (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) indican unicamente que la conversion se hizo con la herramienta de cuantizacion de llama.cpp sobre pesos en formato Hugging Face, con cuantizacion a nivel de tensor de salida.
 
 ## Capacidades
 
@@ -112,7 +112,7 @@ En cuanto a rendimiento medido, no es posible comparar: PhAI-IDE-72B no publica 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/PhAI-IDE-72B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/PhAI-IDE-72B-GGUF
 - Modelo base: https://huggingface.co/AItonomy/PhAI-IDE-72B
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 

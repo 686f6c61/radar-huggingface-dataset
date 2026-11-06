@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario ASD12EDSXA en HuggingFace bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo anterior que mejora significativamente sus capacidades de razonamiento y deducción, acercándose al rendimiento de otros modelos líderes en tareas de matemáticas, programación y lógica general. La ficha no especifica la arquitectura, el número de parámetros ni la longitud de contexto, por lo que la información técnica es limitada.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario ASD12EDSXA en Hugging Face bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo anterior que mejora significativamente sus capacidades de razonamiento y deducción, acercándose al rendimiento de otros modelos líderes en tareas de matemáticas, programación y lógica general. La ficha no especifica la arquitectura, el número de parámetros ni la longitud de contexto, por lo que la información técnica es limitada.
 
 El modelo se distribuye a través del repositorio `ASD12EDSXA/MyAwesomeModel-TestRepo`, con pipeline de `feature-extraction` y compatibilidad con la librería `transformers`. Aunque el repositorio tiene cero descargas y cero likes, la model card describe un modelo con mejoras notables en razonamiento profundo, reducción de alucinaciones y soporte para function calling. También menciona una variante llamada MyAwesomeModel-Small con la misma arquitectura base pero con tokenizer compartido.
 
@@ -86,7 +86,7 @@ No se dispone de información suficiente para comparar con modelos concretos. La
 ## Limitaciones y advertencias
 
 - No se ha publicado información sobre sesgos, riesgos de alucinación específicos ni limitaciones idiomáticas.
-- El repositorio no contiene pesos ni archivos del modelo (tamaño 0.0 GB), por lo que no es posible utilizarlo directamente desde HuggingFace.
+- El repositorio no contiene pesos ni archivos del modelo (tamaño 0.0 GB), por lo que no es posible utilizarlo directamente desde Hugging Face.
 - La model card no especifica la arquitectura ni el tamaño, lo que impide evaluar su viabilidad en producción.
 - La licencia MIT permite uso comercial, pero al no haber pesos disponibles, la aplicabilidad práctica es nula.
 - Los benchmarks presentados carecen de contexto metodológico (no se indican los datasets exactos ni las condiciones de evaluación), por lo que deben interpretarse con cautela.
@@ -94,6 +94,6 @@ No se dispone de información suficiente para comparar con modelos concretos. La
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ASD12EDSXA/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/ASD12EDSXA/MyAwesomeModel-TestRepo
 
 No se proporcionan otros enlaces (papers, blogs, repos de código) en la información disponible.

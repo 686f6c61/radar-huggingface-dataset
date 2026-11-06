@@ -125,7 +125,7 @@ La comparación directa con Whisper large-v3 debe tomarse con cautela: la tabla 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tryambientai/gigaam-v3-e2e-ctc-gguf
+- Modelo en Hugging Face: https://huggingface.co/tryambientai/gigaam-v3-e2e-ctc-gguf
 - Modelo base: https://huggingface.co/ai-sage/GigaAM-v3
 - Commit del modelo base usado: https://huggingface.co/ai-sage/GigaAM-v3/commit/cec030b
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

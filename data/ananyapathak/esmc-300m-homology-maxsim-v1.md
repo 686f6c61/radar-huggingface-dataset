@@ -70,10 +70,10 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ESMC-300M Homology MaxSim v1 | 332 M | No disponible | Retrieval denso con MaxSim | Cambrian Open License | HuggingFace (GGUF + .npy) |
-| ESM-C 300M (base) | ~300 M | No disponible | Embeddings proteicos generales | Cambrian Open License | HuggingFace |
+| ESMC-300M Homology MaxSim v1 | 332 M | No disponible | Retrieval denso con MaxSim | Cambrian Open License | Hugging Face (GGUF + .npy) |
+| ESM-C 300M (base) | ~300 M | No disponible | Embeddings proteicos generales | Cambrian Open License | Hugging Face |
 | MMseqs2 | No aplica (alineamiento) | No aplica | Alineamiento de secuencias | GPL-3.0 (herramienta) | Codigo abierto |
-| ESM-2 (650M) | 650 M | No disponible | Embeddings proteicos generales | MIT (pesos ESM-2) | HuggingFace |
+| ESM-2 (650M) | 650 M | No disponible | Embeddings proteicos generales | MIT (pesos ESM-2) | Hugging Face |
 
 La comparacion con MMseqs2 es la mas directa en terminos de tarea: el modelo ajustado reporta cR@10 de 0,8974 frente a 0,8304 en Swiss-Prot 100K. Frente a ESM-C 300M base, la diferencia es la especializacion en retrieval por residuo y la cabeza de proyeccion de 128 dimensiones. No se dispone de datos comparativos con otras alternativas de retrieval denso de proteinas en la informacion proporcionada.
 
@@ -90,7 +90,7 @@ La comparacion con MMseqs2 es la mas directa en terminos de tarea: el modelo aju
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnanyaPathak/esmc-300m-homology-maxsim-v1
+- Modelo en Hugging Face: https://huggingface.co/AnanyaPathak/esmc-300m-homology-maxsim-v1
 - Modelo base: https://huggingface.co/EvolutionaryScale/esmc-300m-2024-12
 - Indices de retrieval preconstruidos: https://huggingface.co/datasets/AnanyaPathak/esmc-retrieval-indexes
 - Licencia Cambrian Open License Agreement: https://www.evolutionaryscale.ai/policies/cambrian-open-license-agreement

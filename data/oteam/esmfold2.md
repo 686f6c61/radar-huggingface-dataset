@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ESMFold2 es un modelo de predicción de estructura biomolecular *all-atom* y de diseño de secuencias de binders proteicos, publicado en HuggingFace por el usuario `oteam` bajo el identificador `oteam/esmfold2`. Se trata de una implementación no oficial, desarrollada por el proyecto OFoldX, del modelo ESMFold2 descrito por Biohub en el artículo «Language Modeling Materializes a World Model of Protein Biology»; los autores originales no han escrito, revisado ni avalado ni esta implementación ni su model card.
+ESMFold2 es un modelo de predicción de estructura biomolecular *all-atom* y de diseño de secuencias de binders proteicos, publicado en Hugging Face por el usuario `oteam` bajo el identificador `oteam/esmfold2`. Se trata de una implementación no oficial, desarrollada por el proyecto OFoldX, del modelo ESMFold2 descrito por Biohub en el artículo «Language Modeling Materializes a World Model of Protein Biology»; los autores originales no han escrito, revisado ni avalado ni esta implementación ni su model card.
 
 El modelo combina un codificador de lenguaje de proteínas ESMC-6B congelado (checkpoint `multimolecule/esmc-6b`) con un tronco de plegamiento recurrente de 48 bloques que actualiza características de token y de par, y una cabeza de difusión que genera coordenadas antes de que las cabezas de distograma y de confianza puntúen el resultado. Admite condicionamiento opcional por MSA en la variante estándar; la variante *fast* reduce el tronco a 24 bloques y elimina el MSA. El muestreo de difusión utiliza 14 pasos y el tronco aplica 4 actualizaciones recurrentes.
 
@@ -21,7 +21,7 @@ Su relevancia es doble: por un lado, traslada a un paquete instalable (`pip inst
 | Licencia | AGPL-3.0 |
 | Formato de pesos | safetensors (tamaño del repositorio: 0,9 GB) |
 | Librería de inferencia | `ofoldx` (obligatoria) |
-| Pipeline en HuggingFace | `other` |
+| Pipeline en Hugging Face | `other` |
 | Bloques de plegamiento | 48 (estándar y experimental) / 24 (fast y experimental-fast) |
 | Condicionamiento por MSA | Sí en ESMFold2 y Experimental; no en las variantes *fast* |
 | Codificador ESMC | ESMC-6B congelado (`multimolecule/esmc-6b`) |
@@ -105,7 +105,7 @@ Frente a ESMFold de primera generación y a AlphaFold2 o AlphaFold3, no se dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/esmfold2
+- Modelo en Hugging Face: https://huggingface.co/oteam/esmfold2
 - Variante rápida: https://huggingface.co/oteam/esmfold2-fast
 - Variante experimental (artefacto completo de diseño de binders): https://huggingface.co/oteam/esmfold2-experimental
 - Variante experimental rápida: https://huggingface.co/oteam/esmfold2-experimental-fast

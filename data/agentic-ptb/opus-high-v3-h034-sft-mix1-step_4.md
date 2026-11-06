@@ -65,7 +65,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h034.sft-mix1.step_4
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h034.sft-mix1.step_4
 - Dataset del run (archivo): https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Listado de modelos de agentic-ptb: https://huggingface.co/models?other=agentic-ptb

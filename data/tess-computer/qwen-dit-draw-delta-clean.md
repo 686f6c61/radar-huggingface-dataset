@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Qwen-DiT-Draw (version delta) es un modelo de tipo Vision-Language-Action (VLA) orientado a la prediccion de trayectorias continuas de raton, expresadas como secuencias de desplazamientos relativos (dx, dy, state). Lo desarrolla TESS-Computer y esta publicado en HuggingFace con licencia MIT. No es un modelo de lenguaje generativo al uso: se trata de un cabezal de accion (action head) tipo Diffusion Transformer (DiT) entrenado sobre un VLM base congelado, Qwen2.5-VL-3B-Instruct.
+Qwen-DiT-Draw (version delta) es un modelo de tipo Vision-Language-Action (VLA) orientado a la prediccion de trayectorias continuas de raton, expresadas como secuencias de desplazamientos relativos (dx, dy, state). Lo desarrolla TESS-Computer y esta publicado en Hugging Face con licencia MIT. No es un modelo de lenguaje generativo al uso: se trata de un cabezal de accion (action head) tipo Diffusion Transformer (DiT) entrenado sobre un VLM base congelado, Qwen2.5-VL-3B-Instruct.
 
 El modelo resuelve un problema concreto dentro de la robotica y la automatizacion de interfaces: dado un contexto visual y textual, predecir la siguiente secuencia de movimientos de un cursor o efector. El cabezal DiT tiene 6 capas y tamano oculto 512, con aproximadamente 37 millones de parametros entrenables, y se entrena con una perdida de flow matching sobre fragmentos (chunks) de 16 puntos.
 
@@ -21,7 +21,7 @@ Es relevante porque documenta de forma transparente un caso de estudio sobre ent
 | Tipos de cuantizacion | no disponible (el repositorio contiene un checkpoint PyTorch de la cabeza de trayectoria) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | Checkpoint PyTorch de la cabeza de trayectoria (`trajectory_head.pt`); el VLM base se carga desde HuggingFace (`Qwen/Qwen2.5-VL-3B-Instruct`) |
+| Formato de pesos | Checkpoint PyTorch de la cabeza de trayectoria (`trajectory_head.pt`); el VLM base se carga desde Hugging Face (`Qwen/Qwen2.5-VL-3B-Instruct`) |
 | Tamano del repositorio | 0,1 GB |
 | Pipeline declarado | robotics |
 | Modo de coordenadas | Delta (movimientos relativos) |
@@ -84,7 +84,7 @@ La model card menciona OpenVLA, GR00T y pi0 como trabajos de referencia sobre en
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-DiT-Draw (delta) | ~3.000 M (VLM congelado) + ~37 M (cabezal DiT) | no disponible | VLM congelado + cabezal DiT, flow matching, coordenadas delta | MIT | HuggingFace (TESS-Computer) |
+| Qwen-DiT-Draw (delta) | ~3.000 M (VLM congelado) + ~37 M (cabezal DiT) | no disponible | VLM congelado + cabezal DiT, flow matching, coordenadas delta | MIT | Hugging Face (TESS-Computer) |
 | OpenVLA | no disponible en la informacion proporcionada | no disponible | VLA de referencia; citado por la necesidad de 20-30+ epocas | no disponible | no disponible |
 | GR00T (N1.6) | no disponible en la informacion proporcionada | no disponible | Referencia para el estilo de coordenadas delta | no disponible | no disponible |
 | pi0 | no disponible en la informacion proporcionada | no disponible | VLA de referencia; citado por la necesidad de mas epocas | no disponible | no disponible |
@@ -102,7 +102,7 @@ La model card menciona OpenVLA, GR00T y pi0 como trabajos de referencia sobre en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TESS-Computer/qwen-dit-draw-delta-clean
+- Modelo en Hugging Face: https://huggingface.co/TESS-Computer/qwen-dit-draw-delta-clean
 - Repositorio GitHub: https://github.com/TESS-Computer/qwen-dit-draw-clean
 - Dataset: https://huggingface.co/datasets/TESS-Computer/quickdraw-circles-delta-clean
 - Version en coordenadas absolutas: https://huggingface.co/TESS-Computer/qwen-dit-draw-clean

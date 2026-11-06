@@ -20,7 +20,7 @@ La relevancia de la v2 está en la corrección de un fallo de la v1: editar la c
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors: overlay `model-overlay-00001-of-00001.safetensors` (1,44 GB) + `model.safetensors.index.json`; requiere los 48 shards safetensors del modelo base (~157 GB) |
-| Tamano del repositorio | 3,0 GB (metadatos de HuggingFace); el overlay declarado ocupa 1,44 GB |
+| Tamano del repositorio | 3,0 GB (metadatos de Hugging Face); el overlay declarado ocupa 1,44 GB |
 | Tipo de artefacto | Overlay de abliteración, no un modelo completo |
 | Tensores editados | 86 de 72.633 (0,12 %); los otros 72.547 son byte a byte idénticos |
 | Metodo de edicion | Proyección ortogonal de rango 1, λ = 2.0, sobre `layers.*.attn.wo_b` (peso + escala) en las 43 capas |
@@ -109,7 +109,7 @@ Los datos de benchmark comparativos entre estas variantes no están disponibles 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Joyfulxp/DeepSeek-V4-Flash-Vision-Exp-Abliterated
+- Repositorio Hugging Face: https://huggingface.co/Joyfulxp/DeepSeek-V4-Flash-Vision-Exp-Abliterated
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Variante de referencia de apetersson: https://huggingface.co/apetersson/DeepSeek-V4-Flash-Vision-Exp-Abliterated
 - Variante NVFP4 de s-zaizen: https://huggingface.co/s-zaizen/DeepSeek-V4-Flash-Vision-Exp-Abliterated-NVFP4

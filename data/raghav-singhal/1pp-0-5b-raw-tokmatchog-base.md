@@ -27,7 +27,7 @@ La arquitectura es un transformer decodificador estilo Llama con 24 capas, dimen
 
 El entrenamiento forma parte de un estudio 3x3: tres tamano (0,5B, 1B, 1,7B) por tres condiciones de preentrenamiento sobre los mismos 47,8M documentos fuente en el mismo orden, con secuencia de batches identica entre condiciones. Este modelo corresponde a la condicion raw (documentos originales DCLM-edu, con perdida sobre todos los tokens del documento). La rama continuo desde el paso 12.000 de la ejecucion base con la misma semilla, estado del optimizador y orden de batches, bajo un calendario mas corto con decay lineal del 10% final, terminando en el paso 16.202 con 33,745 B de tokens supervisados (de un total de 66,2 B de tokens de documentos originales en el paso completo). El optimizador fue Muon con shape scaling (LR 0,005 para matrices) y Adam para embeddings y normas, warmup de 2.000 pasos, weight decay 0,1 y precision bf16, con global batch de 512 x 4.096 tokens y packing best-fit con enmascaramiento de atencion entre documentos.
 
-Un detalle tecnico notable: los documentos a partir del paso 12.000 fueron reconstruidos tras perderse el corpus empaquetado original; 4.197 de 4.202 pasos de la rama reproducen exactamente los conteos originales, y 5 pasos presentan una discrepancia menor (9.638 tokens menos de 8,76B) documentada por el autor. Los pesos de HuggingFace fueron verificados contra el checkpoint de Megatron recomputando perdidas de validacion, con diferencias absolutas de 0,0017.
+Un detalle tecnico notable: los documentos a partir del paso 12.000 fueron reconstruidos tras perderse el corpus empaquetado original; 4.197 de 4.202 pasos de la rama reproducen exactamente los conteos originales, y 5 pasos presentan una discrepancia menor (9.638 tokens menos de 8,76B) documentada por el autor. Los pesos de Hugging Face fueron verificados contra el checkpoint de Megatron recomputando perdidas de validacion, con diferencias absolutas de 0,0017.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ Ademas, la verificacion de pesos frente al checkpoint de Megatron arrojo diferen
 | Modelo | Parametros | Contexto | Licencia | Proposito |
 |---|---|---|---|---|
 | 1pp-0.5b-raw-tokmatchog-base | 0,58 B | 4.096 | Apache 2.0 | Artefacto de investigacion (estudio 1PP, condicion raw token-matched) |
-| SmolLM2-360M / SmolLM2-1.7B (HuggingFace) | 0,36 B / 1,7 B | 8.192 | Apache 2.0 | Modelos base de proposito general; comparten vocabulario (49.152) con este modelo |
+| SmolLM2-360M / SmolLM2-1.7B (Hugging Face) | 0,36 B / 1,7 B | 8.192 | Apache 2.0 | Modelos base de proposito general; comparten vocabulario (49.152) con este modelo |
 | Qwen2.5-0.5B | 0,49 B | 32.768 | Qwen Research / licencia propia | Modelo base generalista multilingue con contexto mucho mayor |
 
 Las comparaciones de rendimiento numerico no estan disponibles: las ramas hermanas del estudio (1pp-0.5b-raw-base y las condiciones de conversacion en la coleccion 1PP) son los comparables directos, disenados para comparacion de perdida de validacion bajo condiciones controladas.
@@ -90,7 +90,7 @@ Las comparaciones de rendimiento numerico no estan disponibles: las ramas herman
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.5b-raw-tokmatchog-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.5b-raw-tokmatchog-base
 - Rama base original: https://huggingface.co/Raghav-Singhal/1pp-0.5b-raw-base
 - Coleccion 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (wandb): https://wandb.ai/raghav_singhal/1pp-training

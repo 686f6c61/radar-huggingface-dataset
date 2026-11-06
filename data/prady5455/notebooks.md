@@ -4,7 +4,7 @@
 
 El repositorio `prady5455/notebooks` no contiene un modelo de inteligencia artificial, sino una coleccion de cuadernos Jupyter (notebooks) asociados al curso de agentes de Hugging Face (Hugging Face Agents Course). El contenido replica materiales didacticos de las unidades 1, 2 y las unidades adicionales del curso, centrados en la construccion de agentes con librerias como smolagents, LlamaIndex y LangGraph. No se trata, por tanto, de pesos de un modelo entrenado ni de un artefacto de inferencia.
 
-La ficha se ha elaborado a partir de la informacion publica disponible en HuggingFace para este identificador. Dado que no existe model card con especificaciones de arquitectura, parametros, contexto o entrenamiento, la mayoria de los campos tecnicos se marcan como no disponibles. El valor del repositorio es formativo y de referencia para desarrolladores que quieran reproducir los ejercicios del curso de agentes.
+La ficha se ha elaborado a partir de la informacion publica disponible en Hugging Face para este identificador. Dado que no existe model card con especificaciones de arquitectura, parametros, contexto o entrenamiento, la mayoria de los campos tecnicos se marcan como no disponibles. El valor del repositorio es formativo y de referencia para desarrolladores que quieran reproducir los ejercicios del curso de agentes.
 
 Es relevante ahora porque el ecosistema de agentes basados en LLM (tool calling, multi-agent, retrieval) esta en plena expansion, y estos cuadernos ofrecen ejemplos ejecutables de patrones concretos. Cualquier evaluacion tecnica del modelo subyacente debe hacerse sobre los LLM que los notebooks invocan, no sobre este repositorio.
 
@@ -84,6 +84,6 @@ No se dispone de informacion suficiente para comparar con otros repositorios de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/prady5455/notebooks
+- Repositorio en Hugging Face: https://huggingface.co/prady5455/notebooks
 - Curso de agentes de Hugging Face: https://huggingface.co/learn/agents-course/unit0/introduction
 - Repositorio oficial de notebooks del curso: https://huggingface.co/agents-course/notebooks

@@ -27,7 +27,7 @@ El modelo se basa en la arquitectura Qwen3.5, que es un transformer decoder-only
 
 - Generación de texto en inglés con razonamiento de varios pasos, presumiblemente heredado del modelo base Qwen3.5.
 - Capacidad de seguir instrucciones y mantener conversaciones multi-turno (típico de la familia Qwen).
-- El tag "image-text-to-text" aparece en HuggingFace, pero el modelo base es de texto puro y el pipeline declarado es text-generation, por lo que no se confirma soporte multimodal.
+- El tag "image-text-to-text" aparece en Hugging Face, pero el modelo base es de texto puro y el pipeline declarado es text-generation, por lo que no se confirma soporte multimodal.
 - No se han documentado capacidades específicas de tool calling, function calling o uso como agente en la información disponible.
 - Al ser un modelo pequeño (0,8B), es adecuado para tareas de razonamiento ligero, extracción de información y generación de texto breve.
 
@@ -67,6 +67,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/khazarai/Qwen3.8-max-Reasining-Distilled
+- Modelo en Hugging Face: https://huggingface.co/khazarai/Qwen3.8-max-Reasining-Distilled
 - Perfil del autor: https://huggingface.co/khazarai
 - Repositorio del modelo base: https://huggingface.co/unsloth/Qwen3.5-0.8B (no confirmado, inferido del campo base_model)

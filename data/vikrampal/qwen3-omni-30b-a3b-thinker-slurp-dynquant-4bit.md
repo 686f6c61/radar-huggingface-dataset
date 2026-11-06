@@ -19,7 +19,7 @@ La relevancia de este checkpoint radica en su tamaño reducido: 14,77 GiB frente
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (cuantizados DynQuant) |
 
-Nota: el campo de metadatos de HuggingFace indica 4.216.171.600 parámetros en los archivos safetensors, pero el README del autor detalla que el modelo Thinker completo tiene 31.719.205.488 parámetros. Esta discrepancia puede deberse a la cuantización o a un error en el registro del Hub.
+Nota: el campo de metadatos de Hugging Face indica 4.216.171.600 parámetros en los archivos safetensors, pero el README del autor detalla que el modelo Thinker completo tiene 31.719.205.488 parámetros. Esta discrepancia puede deberse a la cuantización o a un error en el registro del Hub.
 
 ## Arquitectura y entrenamiento
 
@@ -68,7 +68,7 @@ La diferencia de −0,60 puntos no es estadísticamente significativa (prueba ex
 
 | Modelo | Parámetros | Contexto | Rendimiento (SLURP) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-Omni-30B-A3B-Instruct (original) | 35.259.818.545 (completo) | no disponible | no evaluado en SLURP | Apache-2.0 (gated, requiere aceptación) | Requiere autenticación en HuggingFace |
+| Qwen3-Omni-30B-A3B-Instruct (original) | 35.259.818.545 (completo) | no disponible | no evaluado en SLURP | Apache-2.0 (gated, requiere aceptación) | Requiere autenticación en Hugging Face |
 | Qwen3-Omni-30B-A3B-Thinker-SLURP-bf16 | 31.719.205.488 | no disponible | 86,80% | Apache-2.0 | Abierto |
 | VikramPal/Qwen3-Omni-30B-A3B-Thinker-SLURP-DynQuant-4bit | 31.719.205.488 | no disponible | 86,20% | Apache-2.0 | Abierto |
 
@@ -87,7 +87,7 @@ El modelo cuantizado ofrece un rendimiento estadísticamente equivalente al bf16
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/VikramPal/Qwen3-Omni-30B-A3B-Thinker-SLURP-DynQuant-4bit)
+- [Modelo en Hugging Face](https://huggingface.co/VikramPal/Qwen3-Omni-30B-A3B-Thinker-SLURP-DynQuant-4bit)
 - [Modelo base bf16](https://huggingface.co/VikramPal/Qwen3-Omni-30B-A3B-Thinker-SLURP-bf16)
 - [Modelo original Qwen3-Omni-30B-A3B-Instruct](https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct)
 - [Dataset SLURP](https://huggingface.co/datasets/marcel-gohsen/slurp)

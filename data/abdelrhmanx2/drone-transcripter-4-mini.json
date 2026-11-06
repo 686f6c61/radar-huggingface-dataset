@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AbdelrhmanX2/drone-transcripter-4-mini",
+  "slug": "abdelrhmanx2-drone-transcripter-4-mini",
+  "author": "AbdelrhmanX2",
+  "url": "https://huggingface.co/AbdelrhmanX2/drone-transcripter-4-mini",
+  "created_at": "2026-11-06T06:54:23.000Z",
+  "updated_at": "2026-11-06T07:18:35.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "ar",
+    "arz"
+  ],
+  "tags": [
+    "nemo",
+    "onnx",
+    "automatic-speech-recognition",
+    "speech",
+    "egyptian-arabic",
+    "FastConformer",
+    "RNNT",
+    "CTC",
+    "NeMo",
+    "sherpa-onnx",
+    "ar",
+    "arz",
+    "base_model:nvidia/stt_ar_fastconformer_hybrid_large_pcd_v1.0",
+    "base_model:quantized:nvidia/stt_ar_fastconformer_hybrid_large_pcd_v1.0",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 728839271,
+  "storage_human": "729 MB",
+  "base_model": "nvidia/stt_ar_fastconformer_hybrid_large_pcd_v1.0",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech Recognition",
+      "dataset": "Egyptian school lectures (held-out",
+      "metric": "WER (RNNT",
+      "value": 13.84
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "MGB-3 Egyptian (full dev+test",
+      "metric": "WER (RNNT",
+      "value": 23.39
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "GigaSpeechBench EGY",
+      "metric": "WER (official scorer)",
+      "value": 47.9
+    }
+  ],
+  "sources": []
+}

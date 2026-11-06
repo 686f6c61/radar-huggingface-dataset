@@ -81,10 +81,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / chunk | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_so101_pick_place_addleftdata_chunksize25 (este) | 51.591.814 | chunk de 25 (según nombre) | Pick-and-place con SO-101, 2 cámaras | no disponible | HuggingFace, 0 descargas |
-| Otras políticas ACT en LeRobot Hub | no disponible | no disponible | Manipulación genérica | variable | Hub de HuggingFace |
-| Políticas Diffusion Policy en LeRobot | no disponible | no disponible | Manipulación genérica | variable | Hub de HuggingFace |
-| Políticas VLA (p. ej. pi0, OpenVLA) | no disponible en esta ficha | no disponible | Manipulación con instrucciones en lenguaje | variable | Hub de HuggingFace |
+| act_so101_pick_place_addleftdata_chunksize25 (este) | 51.591.814 | chunk de 25 (según nombre) | Pick-and-place con SO-101, 2 cámaras | no disponible | Hugging Face, 0 descargas |
+| Otras políticas ACT en LeRobot Hub | no disponible | no disponible | Manipulación genérica | variable | Hub de Hugging Face |
+| Políticas Diffusion Policy en LeRobot | no disponible | no disponible | Manipulación genérica | variable | Hub de Hugging Face |
+| Políticas VLA (p. ej. pi0, OpenVLA) | no disponible en esta ficha | no disponible | Manipulación con instrucciones en lenguaje | variable | Hub de Hugging Face |
 
 No se dispone de datos numéricos comparativos publicados para este repositorio. La comparación se limita a categoría y disponibilidad.
 
@@ -102,7 +102,7 @@ No se dispone de datos numéricos comparativos publicados para este repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kwj1021/act_so101_pick_place_addleftdata_chunksize25
+- Modelo en Hugging Face: https://huggingface.co/Kwj1021/act_so101_pick_place_addleftdata_chunksize25
 - Dataset de entrenamiento: https://huggingface.co/datasets/Kwj1021/so101_pick_place_addleftdata
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Kwj1021/so101_pick_place_addleftdata
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

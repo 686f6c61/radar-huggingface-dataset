@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 ## Comparativa con modelos similares
 
-No se han publicado resultados de benchmarks, por lo que no es posible comparar el rendimiento con modelos similares. Existen otros checkpoints del mismo autor en HuggingFace con nombres similares (nca_dose_100Mpt_hfinit_100M_s0 y nca_dose_100Mpt_hfinit_1B_s0), pero no se dispone de especificaciones ni evaluaciones públicas. Por tanto, la comparativa no está disponible.
+No se han publicado resultados de benchmarks, por lo que no es posible comparar el rendimiento con modelos similares. Existen otros checkpoints del mismo autor en Hugging Face con nombres similares (nca_dose_100Mpt_hfinit_100M_s0 y nca_dose_100Mpt_hfinit_1B_s0), pero no se dispone de especificaciones ni evaluaciones públicas. Por tanto, la comparativa no está disponible.
 
 ## Limitaciones y advertencias
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks, por lo que no es posible comparar 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_100Mpt_hfinit_adamwppt_1B_s0_2026-09-06_12-42-58_340394-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_100Mpt_hfinit_adamwppt_1B_s0_2026-09-06_12-42-58_340394-pt
 - W&B run: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/80tb21f9
 - Repositorio nanochat: https://github.com/karpathy/nanochat
-- Modelos relacionados en HuggingFace:
+- Modelos relacionados en Hugging Face:
   - https://huggingface.co/alexkstern/nca_dose_100Mpt_hfinit_100M_s0_2026-08-14_21-54-08_049198-pt
   - https://huggingface.co/alexkstern/nca_dose_100Mpt_hfinit_1B_s0_2026-08-14_23-23-20_239101-pt

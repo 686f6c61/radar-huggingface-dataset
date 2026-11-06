@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una copia de seguridad fuera de clúster de los checkpoints crudos de Megatron (formato `torch_dist`) de la campaña de preentrenamiento de control GEOD-201, correspondiente al modelo base de 30B parámetros. El proyecto está desarrollado por Geodesic Research, una organización británica de seguridad técnica de IA centrada en investigación de alineación computacionalmente intensiva. El repositorio no aloja un modelo en formato HuggingFace listo para inferencia, sino checkpoints distribuidos de Megatron (con estado de optimizador incluido) que se conservan para recuperación ante desastres y reanudación del entrenamiento.
+Este repositorio contiene una copia de seguridad fuera de clúster de los checkpoints crudos de Megatron (formato `torch_dist`) de la campaña de preentrenamiento de control GEOD-201, correspondiente al modelo base de 30B parámetros. El proyecto está desarrollado por Geodesic Research, una organización británica de seguridad técnica de IA centrada en investigación de alineación computacionalmente intensiva. El repositorio no aloja un modelo en formato Hugging Face listo para inferencia, sino checkpoints distribuidos de Megatron (con estado de optimizador incluido) que se conservan para recuperación ante desastres y reanudación del entrenamiento.
 
 La arquitectura subyacente es Nemotron 3 Nano 30B-A3B, un modelo de mezcla de expertos (MoE) con 30B parámetros totales y 3B activos, entrenado desde cero. El repositorio está pensado para el seguimiento del ciclo de vida del entrenamiento (etapas `pretrain`, `midtrain` y `sft`) y crecerá hasta 5-6 TB durante la campaña. Su relevancia radica en que permite auditar o reanudar el proceso de entrenamiento, aunque no es un artefacto desplegable para uso en producción.
 
@@ -17,7 +17,7 @@ La arquitectura subyacente es Nemotron 3 Nano 30B-A3B, un modelo de mezcla de ex
 | Tipos de cuantizacion | no aplica (checkpoints crudos, sin cuantizar) |
 | Idiomas soportados | no disponibles |
 | Licencia | no disponible |
-| Formato de pesos | `torch_dist` (Megatron distributed checkpoints, no HuggingFace) |
+| Formato de pesos | `torch_dist` (Megatron distributed checkpoints, no Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -35,7 +35,7 @@ El repositorio contiene checkpoints de Megatron correspondientes a un modelo MoE
 - Reanudación de entrenamiento: si una campaña se interrumpe, estos checkpoints permiten continuar desde un punto exacto sin pérdida de progreso.
 - Análisis de dinámica de entrenamiento: los checkpoints con estado de optimizador facilitan estudios sobre la convergencia, el comportamiento de la pérdida o la estabilidad del entrenamiento en modelos MoE.
 - Reproducibilidad: al conservar los checkpoints originales, se puede verificar la reproducibilidad de los resultados publicados por Geodesic Research.
-- Desarrollo de herramientas de conversión: el repositorio sirve como referencia para el pipeline de conversión a formato HuggingFace que la organización publica por separado.
+- Desarrollo de herramientas de conversión: el repositorio sirve como referencia para el pipeline de conversión a formato Hugging Face que la organización publica por separado.
 - No es adecuado para aplicaciones de producción, chatbots, generación de código o cualquier uso finalista, ya que no es un modelo listo para inferencia.
 
 ## Benchmarks y rendimiento
@@ -55,7 +55,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Limitaciones y advertencias
 
-- No es un modelo listo para inferencia: los checkpoints están en formato Megatron distribuido y no pueden cargarse con herramientas estándar de HuggingFace.
+- No es un modelo listo para inferencia: los checkpoints están en formato Megatron distribuido y no pueden cargarse con herramientas estándar de Hugging Face.
 - Licencia no especificada: no se indica bajo qué términos se distribuye, lo que impide su uso comercial o derivado sin autorización explícita.
 - Idiomas y contexto desconocidos: no se informa sobre los idiomas soportados ni la longitud de contexto del modelo final.
 - Riesgo de sesgos y alucinaciones: al no ser un modelo desplegable, no se pueden evaluar estos riesgos en este artefacto.
@@ -64,7 +64,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/geodesic-research/control-pretrain-30b-baseline-ckpts
+- Repositorio Hugging Face: https://huggingface.co/geodesic-research/control-pretrain-30b-baseline-ckpts
 - Repositorio original (camgeodesic): https://huggingface.co/camgeodesic/control-pretrain-30b-baseline-ckpts
 - Sitio web de Geodesic Research: http://geodesicresearch.ai/
 - Datasets de control-pretraining: https://huggingface.co/datasets/geodesic-research/control-pretraining-datasets

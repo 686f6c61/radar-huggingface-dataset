@@ -32,7 +32,7 @@ El diseño permite dos modos de uso: extracción de características visuales (s
 - Razonamiento regional: al operar sobre diseños visuales estructurados, el modelo puede capturar relaciones espaciales entre regiones genómicas, algo que los modelos de secuencia pura no logran.
 - Transferencia entre especies: el preentrenamiento en HG38 se transfiere eficazmente a otras especies (arroz), superando a los baselines de secuencia preentrenados en el mismo genoma.
 - Entrada multi-página: acepta listas de imágenes de páginas en orden de lectura para documentos largos.
-- Integración con HuggingFace Transformers: compatible con `AutoModelForCausalLM` y `AutoTokenizer` mediante `trust_remote_code=True`.
+- Integración con Hugging Face Transformers: compatible con `AutoModelForCausalLM` y `AutoTokenizer` mediante `trust_remote_code=True`.
 
 ## Casos de uso
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 - VRAM estimada para inferencia: no disponible oficialmente. Con 3,34B parámetros en precisión FP16, se estima un consumo de ~7 GB de VRAM para inferencia en lote pequeño, y ~14 GB en FP32. Con cuantización a 8 bits podría reducirse a ~4 GB, pero no hay datos oficiales.
 - GPU recomendadas: no disponible. Dado el tamaño, una GPU con 16 GB de VRAM (RTX 4080/4090, A10G) sería suficiente para inferencia básica; para entrenamiento o fine-tuning se requerirían GPUs de mayor capacidad (A100, H100).
 - Compatibilidad con consumer GPU: probablemente sí, con cuantización o usando extracción de características sin decodificador, que es más ligera.
-- Opciones de despliegue: al ser un modelo de HuggingFace Transformers, puede ejecutarse con vLLM, TGI o directamente con el pipeline de transformers. No se menciona soporte para llama.cpp u Ollama.
+- Opciones de despliegue: al ser un modelo de Hugging Face Transformers, puede ejecutarse con vLLM, TGI o directamente con el pipeline de transformers. No se menciona soporte para llama.cpp u Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se dispone de información suficiente para comparar directamente con otros mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hxxiang/opticaldna-hg38-2048
+- Hugging Face: https://huggingface.co/hxxiang/opticaldna-hg38-2048
 - GitHub: https://github.com/HongxinXiang/OpticalDNA
 - Paper (arXiv): https://arxiv.org/abs/2602.02014
 - Página del proyecto: https://hongxinxiang.github.io/projects/OpticalDNA/

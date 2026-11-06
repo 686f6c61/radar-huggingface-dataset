@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jessedbrown/IX-chain-ORIGINAL-index-language-ACER-SEAT` no es un modelo de lenguaje entrenado, sino un repositorio de evidencias publicado en HuggingFace por el usuario Jessedbrown. Su contenido es un "recibo publico" (receipt) que documenta un esquema de indexado denominado IX index-language, vinculado a la linea LX de ahorro de tokens. El repositorio no contiene pesos, tokenizador ni codigo de inferencia: solo ficheros de censo, punteros de evidencia, manifiestos y recibos en formato HBP/HBI.
+`Jessedbrown/IX-chain-ORIGINAL-index-language-ACER-SEAT` no es un modelo de lenguaje entrenado, sino un repositorio de evidencias publicado en Hugging Face por el usuario Jessedbrown. Su contenido es un "recibo publico" (receipt) que documenta un esquema de indexado denominado IX index-language, vinculado a la linea LX de ahorro de tokens. El repositorio no contiene pesos, tokenizador ni codigo de inferencia: solo ficheros de censo, punteros de evidencia, manifiestos y recibos en formato HBP/HBI.
 
 El material describe un sistema de representacion en el que "el indice es el lenguaje": los numeros IX funcionan como vocabulario, las cadenas como frases y el fichero `CATALOG.md` como diccionario. Segun la model card, el censo medido incluye 425 ficheros, 5 directorios, 945.513 bytes, 381 ficheros markdown con nombre IX y 31 ficheros de catalogo/cadena/referencia cruzada, con un catalogo de 484 entradas totales.
 
@@ -75,7 +75,7 @@ No disponible. El artefacto no es un modelo de IA y no existen alternativas comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessedbrown/IX-chain-ORIGINAL-index-language-ACER-SEAT
+- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/IX-chain-ORIGINAL-index-language-ACER-SEAT
 - Repositorio peer en GitHub (linea LX): https://github.com/JesseBrown1980/LX-chain-ORIGINAL-tokens-savings-LIRIS-SEAT
 - Bridge packet citado: `docs/IX-LX-CROSS-SEAT-BRIDGE-2026-07-05.md`
 - Recibos HBP/HBI citados: `receipts/IX-LX-CROSS-SEAT-BRIDGE-2026-07-05.hbp`, `receipts/IX-LX-CROSS-SEAT-BRIDGE-2026-07-05.hbi`

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ashleyjacksonwell/matching-checkpoint` es un repositorio de HuggingFace que contiene una implementación propia y compacta de DeiT (Data-efficient Image Transformer) orientada a una tarea de *matching*, en su configuración denominada "nano". El autor lo describe explícitamente como un punto de partida para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeña escala, y no como una release preentrenada lista para producción. El checkpoint `model.safetensors` es una inicialización válida, no un modelo entrenado.
+`ashleyjacksonwell/matching-checkpoint` es un repositorio de Hugging Face que contiene una implementación propia y compacta de DeiT (Data-efficient Image Transformer) orientada a una tarea de *matching*, en su configuración denominada "nano". El autor lo describe explícitamente como un punto de partida para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeña escala, y no como una release preentrenada lista para producción. El checkpoint `model.safetensors` es una inicialización válida, no un modelo entrenado.
 
 El tamaño real declarado en los metadatos de safetensors es de 49.600 parámetros totales, con un tamaño de repositorio de 0,0 GB. La arquitectura declarada incluye atención dilatada, fusión de tensores (*tensor fusion*), activación approx GELU y normalización por *batchnorm*, con una receta de experimento por defecto basada en el optimizador Lion y un *schedule* exponencial.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada y muy específica: sirve como artefacto reprodu
 | Normalización | batchnorm |
 | Optimizador por defecto | Lion |
 | Schedule por defecto | exponencial |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -54,7 +54,7 @@ Un detalle relevante para integración: al ser una implementación custom, las A
 - Línea base de capacidad emparejada: en un estudio comparativo de arquitecturas para una tarea de *matching*, entrenar esta configuración nano con la misma exposición de datos, presupuesto de *tuning* y semillas que los demás candidatos, tal como sugiere la model card.
 - Validación de recetas de entrenamiento: probar la combinación Lion + *schedule* exponencial a escala nano para depurar *scripts* de entrenamiento (logging, *checkpointing*, reanudación) antes de lanzar ejecuciones costosas.
 - Material docente y revisión de código: analizar una implementación DeiT compacta y autocontenida en un curso o sesión de revisión, incluyendo las diferencias frente a la implementación de referencia (batchnorm en vez de LayerNorm, atención dilatada).
-- Desarrollo de adaptadores de carga: construir y testear el *wrapper* explícito necesario para que las APIs genéricas de HuggingFace puedan instanciar este modelo custom, reutilizando luego el adaptador en otros checkpoints del mismo autor.
+- Desarrollo de adaptadores de carga: construir y testear el *wrapper* explícito necesario para que las APIs genéricas de Hugging Face puedan instanciar este modelo custom, reutilizando luego el adaptador en otros checkpoints del mismo autor.
 - Benchmarking de infraestructura: medir *overhead* de frameworks y kernels (tiempo de carga, latencia de *forward*) con un modelo mínimo que aísla el coste del *runtime* del coste del cómputo.
 
 ## Benchmarks y rendimiento
@@ -78,7 +78,7 @@ No hay una comparativa directa posible: no existen resultados publicados para es
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| matching-checkpoint (este repo) | 49.600 | No disponible | Sin benchmarks declarados | MIT | HuggingFace, 0 descargas |
+| matching-checkpoint (este repo) | 49.600 | No disponible | Sin benchmarks declarados | MIT | Hugging Face, 0 descargas |
 | DeiT-Ti (familia original, referencia) | aprox. 5 M | No aplica (visión) | Métricas publicadas en el paper de DeiT | Según release original | Pública |
 | DeiT-S (familia original, referencia) | aprox. 22 M | No aplica (visión) | Métricas publicadas en el paper de DeiT | Según release original | Pública |
 | DeiT-B (familia original, referencia) | aprox. 86 M | No aplica (visión) | Métricas publicadas en el paper de DeiT | Según release original | Pública |
@@ -92,7 +92,7 @@ La diferencia de tres a cuatro órdenes de magnitud en parámetros confirma que 
 - Sin benchmarks, sin métricas y sin validación comunitaria (0 descargas, 0 *likes*): no hay evidencia externa de comportamiento.
 - No se documentan sesgos conocidos, pero tampoco se ha realizado ninguna evaluación que permita descartarlos.
 - Riesgo de alucinación no aplicable en el sentido de modelos de lenguaje, pero sí riesgo de interpretar erróneamente las salidas del modelo como predicciones válidas.
-- La implementación es custom: las APIs automáticas de HuggingFace fallan sin un adaptador explícito, lo que puede romper integraciones estándar.
+- La implementación es custom: las APIs automáticas de Hugging Face fallan sin un adaptador explícito, lo que puede romper integraciones estándar.
 - El uso de *batchnorm* implica dependencia de estadísticas de *batch* en inferencia; conviene verificar el modo `eval()` antes de cualquier medición.
 - No se documenta la tarea concreta de *matching* (modalidades, formato de pares, métrica objetivo), lo que impide reproducir una evaluación sin trabajo adicional.
 - Licencia MIT permite uso comercial del código y los pesos, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se usa con *datasets* externos.
@@ -101,7 +101,7 @@ La diferencia de tres a cuatro órdenes de magnitud en parámetros confirma que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ashleyjacksonwell/matching-checkpoint
+- Modelo en Hugging Face: https://huggingface.co/ashleyjacksonwell/matching-checkpoint
 - Archivo de pesos: https://huggingface.co/ashleyjacksonwell/matching-checkpoint/blob/main/model.safetensors
 - Script de ejecución: https://huggingface.co/ashleyjacksonwell/matching-checkpoint/blob/main/predict.py
 - Configuración de arquitectura: https://huggingface.co/ashleyjacksonwell/matching-checkpoint/blob/main/config.json

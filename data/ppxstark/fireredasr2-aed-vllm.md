@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/ppxstark/FireRedASR2-AED-vllm
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/ppxstark/FireRedASR2-AED-vllm
 - Modelo base oficial: https://huggingface.co/FireRedTeam/FireRedASR2-AED
 - Documentación de vLLM: https://docs.vllm.ai
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos del autor de la conversión.

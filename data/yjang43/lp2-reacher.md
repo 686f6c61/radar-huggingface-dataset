@@ -66,8 +66,8 @@ No se dispone de datos numericos de este modelo (parametros, contexto, rendimien
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yjang43/lp2-reacher | World model para DMC Reacher | no disponible | no disponible | MIT | HuggingFace |
-| quentinll/lewm-reacher | World model para DMC Reacher (version original) | no disponible | no disponible | no disponible | HuggingFace |
+| yjang43/lp2-reacher | World model para DMC Reacher | no disponible | no disponible | MIT | Hugging Face |
+| quentinll/lewm-reacher | World model para DMC Reacher (version original) | no disponible | no disponible | no disponible | Hugging Face |
 | Otros world models para DMC (p. ej. DreamerV3, TD-MPC2) | Model-based RL | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No se dispone de datos numericos de este modelo (parametros, contexto, rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yjang43/lp2-reacher
+- Modelo en Hugging Face: https://huggingface.co/yjang43/lp2-reacher
 - Dataset asociado: https://huggingface.co/datasets/yjang43/lp2-reacher
 - Modelo original de LeWorldModel: https://huggingface.co/quentinll/lewm-reacher
 - Paper de LeWorldModel / LP²: https://huggingface.co/papers/2603.19312

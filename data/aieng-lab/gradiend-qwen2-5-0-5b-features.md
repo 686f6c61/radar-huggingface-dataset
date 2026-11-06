@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros base | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aieng-lab/gradiend-qwen2.5-0.5b-features | 0,5 B (Qwen2.5-0.5B) | No disponible | 45 checkpoints de caracteristicas por gradientes | Apache 2.0 | HuggingFace, 0 descargas |
-| aieng-lab/gradiend-multilingual-bert-features | BERT base multilingue | No disponible | Misma metodologia sobre encoder BERT | No disponible en la informacion | HuggingFace |
-| Qwen/Qwen2.5-0.5B | 0,5 B | No disponible en la informacion | Modelo generativo base | Apache 2.0 | HuggingFace |
+| aieng-lab/gradiend-qwen2.5-0.5b-features | 0,5 B (Qwen2.5-0.5B) | No disponible | 45 checkpoints de caracteristicas por gradientes | Apache 2.0 | Hugging Face, 0 descargas |
+| aieng-lab/gradiend-multilingual-bert-features | BERT base multilingue | No disponible | Misma metodologia sobre encoder BERT | No disponible en la informacion | Hugging Face |
+| Qwen/Qwen2.5-0.5B | 0,5 B | No disponible en la informacion | Modelo generativo base | Apache 2.0 | Hugging Face |
 
 La comparacion directa con modelos de interpretabilidad como SAEs (sparse autoencoders) no esta disponible en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ La comparacion directa con modelos de interpretabilidad como SAEs (sparse autoen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aieng-lab/gradiend-qwen2.5-0.5b-features
+- Modelo en Hugging Face: https://huggingface.co/aieng-lab/gradiend-qwen2.5-0.5b-features
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Coleccion hermana en BERT multilingue: https://huggingface.co/aieng-lab/gradiend-multilingual-bert-features
 - Repositorio del paquete: https://github.com/aieng-lab/gradiend

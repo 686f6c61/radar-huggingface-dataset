@@ -71,9 +71,9 @@ No se dispone de informacion sobre otros adaptadores o modelos de poesia china c
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen1.5-7B | 7B | 32768 tokens | Generalista | Apache 2.0 (sujeto a terminos de Qwen) | HuggingFace |
-| ricardozhy/Qwen1.5-7B-poem | 7B | No especificado | Poesia china (fine-tuning) | No disponible | HuggingFace |
-| shikunpunk/Qwen1.5-7B-Poem-SFT (adaptador) | 7B base + LoRA | No especificado | Imitacion poetica china (SFT) | No disponible | HuggingFace |
+| Qwen1.5-7B | 7B | 32768 tokens | Generalista | Apache 2.0 (sujeto a terminos de Qwen) | Hugging Face |
+| ricardozhy/Qwen1.5-7B-poem | 7B | No especificado | Poesia china (fine-tuning) | No disponible | Hugging Face |
+| shikunpunk/Qwen1.5-7B-Poem-SFT (adaptador) | 7B base + LoRA | No especificado | Imitacion poetica china (SFT) | No disponible | Hugging Face |
 
 El adaptador se diferencia del base por eliminar artefactos de generacion (ingles, JSON) y por ser mucho mas ligero (0.3 GB frente a ~15 GB del modelo completo), lo que facilita su despliegue.
 
@@ -89,6 +89,6 @@ El adaptador se diferencia del base por eliminar artefactos de generacion (ingle
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shikunpunk/Qwen1.5-7B-Poem-SFT
-- Modelo base en HuggingFace: https://huggingface.co/ricardozhy/Qwen1.5-7B-poem
+- Modelo en Hugging Face: https://huggingface.co/shikunpunk/Qwen1.5-7B-Poem-SFT
+- Modelo base en Hugging Face: https://huggingface.co/ricardozhy/Qwen1.5-7B-poem
 - Repositorio GitHub mencionado (ChineseHardJudgePoem, contiene el script de recorte de salidas): no se proporciona URL directa en la documentacion; se puede buscar por el nombre en GitHub.

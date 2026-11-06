@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eoinf/trigram_alpha_125_2b_schedule_200m_dmodel32` es un transformer causal de investigacion, de tamano minimo, publicado por el usuario eoinf en HuggingFace. Forma parte de una rejilla de experimentos ("Transformer experiment grid") cuyo objetivo es estudiar el comportamiento de transformers muy pequenos entrenados sobre una tarea sintetica de trigramas, con un vocabulario de 4096 tokens y una longitud de contexto de 256 tokens. El nombre del modelo indica un `d_model` de 32, un schedule nominal de aproximadamente 2.000 millones de tokens de entrenamiento y una variante "alpha_125".
+`eoinf/trigram_alpha_125_2b_schedule_200m_dmodel32` es un transformer causal de investigacion, de tamano minimo, publicado por el usuario eoinf en Hugging Face. Forma parte de una rejilla de experimentos ("Transformer experiment grid") cuyo objetivo es estudiar el comportamiento de transformers muy pequenos entrenados sobre una tarea sintetica de trigramas, con un vocabulario de 4096 tokens y una longitud de contexto de 256 tokens. El nombre del modelo indica un `d_model` de 32, un schedule nominal de aproximadamente 2.000 millones de tokens de entrenamiento y una variante "alpha_125".
 
 No se trata de un modelo de proposito general ni de un asistente conversacional: es un artefacto de investigacion orientado a analizar dinamicas de entrenamiento, planificacion de schedules y capacidad de ajuste de modelos diminutos sobre datos sinteticos. La model card es explicita: la evaluacion se realiza sobre los propios datos de entrenamiento, sin conjunto de validacion reservado, y el repositorio contiene unicamente los checkpoints en formato state-dict, la definicion de la ejecucion, el historial de checkpoints, el log de actualizaciones de entrenamiento y metadatos de resultados.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| eoinf/trigram_alpha_125_2b_schedule_200m_dmodel32 | no disponible (`d_model` 32) | 256 | no disponible | HuggingFace, state-dict PyTorch |
-| GPT-2 small | 124M | 1024 | MIT | HuggingFace, safetensors/GGUF |
-| TinyLlama-1.1B | 1.1B | 2048 | Apache 2.0 | HuggingFace, safetensors/GGUF |
-| Pythia-70M | 70M | 2048 | Apache 2.0 | HuggingFace, safetensors |
+| eoinf/trigram_alpha_125_2b_schedule_200m_dmodel32 | no disponible (`d_model` 32) | 256 | no disponible | Hugging Face, state-dict PyTorch |
+| GPT-2 small | 124M | 1024 | MIT | Hugging Face, safetensors/GGUF |
+| TinyLlama-1.1B | 1.1B | 2048 | Apache 2.0 | Hugging Face, safetensors/GGUF |
+| Pythia-70M | 70M | 2048 | Apache 2.0 | Hugging Face, safetensors |
 
 La comparacion es orientativa: los modelos alternativos son transformers de proposito general con licencias claras y amplia disponibilidad, mientras que este modelo es un artefacto de investigacion sin licencia declarada y sin evaluacion reservada.
 
@@ -82,7 +82,7 @@ La comparacion es orientativa: los modelos alternativos son transformers de prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/trigram_alpha_125_2b_schedule_200m_dmodel32
+- Hugging Face: https://huggingface.co/eoinf/trigram_alpha_125_2b_schedule_200m_dmodel32
 - Repositorio de codigo `synthetic_trigrams`: no disponible como enlace directo en la informacion proporcionada
 - Tokenizer: https://huggingface.co/eoinf/pile_tokenizer_4096
 - Paper, blog o demo: no disponibles

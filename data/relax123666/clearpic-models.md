@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tarea | Factor de escala | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClearPic models (este repo) | Superresolución ciega | 4x | ONNX (opset 17) | BSD 3-Clause | HuggingFace, 0 descargas |
+| ClearPic models (este repo) | Superresolución ciega | 4x | ONNX (opset 17) | BSD 3-Clause | Hugging Face, 0 descargas |
 | Real-ESRGAN oficial (xinntao) | Superresolución ciega | 4x | PyTorch (.pth) | BSD 3-Clause | GitHub oficial |
 | Otros modelos de superresolución (p. ej. SwinIR, ESRGAN) | Superresolución | 2x/4x/8x | PyTorch | Varía | No comparado en la información disponible |
 
@@ -94,7 +94,7 @@ La comparación relevante es contra los pesos PyTorch originales de Real-ESRGAN:
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/relax123666/clearpic-models
+- Repositorio en Hugging Face: https://huggingface.co/relax123666/clearpic-models
 - Aplicación ClearPic: https://clearpic.tomdebug.com/
 - Repositorio oficial de Real-ESRGAN: https://github.com/xinntao/Real-ESRGAN
 - Paper de Real-ESRGAN (ICCVW 2021): https://arxiv.org/abs/2107.10833

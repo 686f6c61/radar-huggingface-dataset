@@ -86,8 +86,8 @@ La comparación se realiza a partir de la nomenclatura del modelo y de especific
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-dequantized-i1-GGUF | 35,5 B | No disponible (nomenclatura: ~3 B) | No disponible | No disponible | GGUF en HuggingFace |
-| Qwen3-30B-A3B (familia oficial Qwen) | 30,5 B | 3,3 B | 128 K (configuración habitual de la familia) | Apache 2.0 en las variantes oficiales | safetensors y GGUF en HuggingFace |
+| mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-dequantized-i1-GGUF | 35,5 B | No disponible (nomenclatura: ~3 B) | No disponible | No disponible | GGUF en Hugging Face |
+| Qwen3-30B-A3B (familia oficial Qwen) | 30,5 B | 3,3 B | 128 K (configuración habitual de la familia) | Apache 2.0 en las variantes oficiales | safetensors y GGUF en Hugging Face |
 | Mixtral 8x7B | 46,7 B | 12,9 B | 32 K | Apache 2.0 | safetensors y GGUF |
 | Qwen2.5-32B (denso) | 32,5 B | 32,5 B (denso) | 128 K | Apache 2.0 (variante base) | safetensors y GGUF |
 
@@ -109,7 +109,7 @@ Advertencia: los datos de los modelos alternativos corresponden a especificacion
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones imatrix): https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-dequantized-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones imatrix): https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-dequantized-i1-GGUF
 - Repositorio de cuantizaciones estáticas del mismo autor: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-dequantized-GGUF
 - Modelo base: https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-dequantized
 - Página de resumen del autor sobre este modelo: https://hf.tst.eu/model#Qwen3.6-35B-A3B-Uncensored-Genesis-Final-dequantized-i1-GGUF

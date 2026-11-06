@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fastwam-piper-putblocks-wan-20261102 es un modelo de política robótica (visión-lenguaje-acción) publicado por el usuario junjie008 en HuggingFace, orientado a la manipulación de bloques con un brazo robótico Piper. El modelo resuelve la tarea "put blocks": recoger bloques de una mesa, depositarlos en una caja y pulsar un botón para detenerse, con objetivos de 1, 2 o 3 bloques especificados mediante instrucción en lenguaje natural. Se trata de un checkpoint de inferencia en el paso 18.000 de un entrenamiento de 20.000 pasos que, según el autor, aún continuaba en el momento de la publicación.
+Fastwam-piper-putblocks-wan-20261102 es un modelo de política robótica (visión-lenguaje-acción) publicado por el usuario junjie008 en Hugging Face, orientado a la manipulación de bloques con un brazo robótico Piper. El modelo resuelve la tarea "put blocks": recoger bloques de una mesa, depositarlos en una caja y pulsar un botón para detenerse, con objetivos de 1, 2 o 3 bloques especificados mediante instrucción en lenguaje natural. Se trata de un checkpoint de inferencia en el paso 18.000 de un entrenamiento de 20.000 pasos que, según el autor, aún continuaba en el momento de la publicación.
 
 La arquitectura combina un backbone de difusión de vídeo Wan (con VAE Wan2.2 para codificación visual) con un módulo ActionDiT que genera trayectorias de acción. El modelo consume dos cámaras RGB a 224×224 (una fija frontal y una en la muñeca), estado propioceptivo de 6 articulaciones más apertura de pinza, y produce chunks de 16 pasos de acción a 20 Hz. Se inicializa desde pesos base Wan y ActionDiT original, sin fine-tuning previo en otros dominios (ni frutas ni simulación), usando exclusivamente 60 episodios de datos reales de bloques.
 
@@ -79,7 +79,7 @@ No disponible. La información proporcionada no incluye comparaciones con otras 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junjie008/fastwam-piper-putblocks-wan-20261102
+- Modelo en Hugging Face: https://huggingface.co/junjie008/fastwam-piper-putblocks-wan-20261102
 - Dataset de entrenamiento: https://huggingface.co/datasets/Mockingbird315/piper-putblocks-60-20261101
 - Protocolo de cliente: `CLIENT_PROTOCOL.md` (incluido en el repositorio del modelo)
 - Configuración de entrenamiento: `training/resolved.yaml` y `training/code_commit.txt` (incluidos en el repositorio)

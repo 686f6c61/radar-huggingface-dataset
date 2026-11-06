@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sknugroho/multitask-run248` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada de la arquitectura ALBEF (Align before Fuse) orientada a tareas multitarea. Lo publica el usuario sknugroho bajo licencia Apache 2.0. No se trata de un modelo preentrenado listo para producción, sino de un punto de partida experimental: el propio autor lo describe como una configuración "small" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
+`sknugroho/multitask-run248` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada de la arquitectura ALBEF (Align before Fuse) orientada a tareas multitarea. Lo publica el usuario sknugroho bajo licencia Apache 2.0. No se trata de un modelo preentrenado listo para producción, sino de un punto de partida experimental: el propio autor lo describe como una configuración "small" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
 
 El repositorio incluye un checkpoint de inicialización (`model.safetensors`) con 16.576 parámetros totales según los metadatos del archivo, lo que confirma que es un modelo de juguete y no un sistema entrenado. La model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -83,7 +83,7 @@ La comparación directa no es significativa: el modelo de este repositorio es un
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sknugroho/multitask-run248
+- Hugging Face: https://huggingface.co/sknugroho/multitask-run248
 - Paper ALBEF (Align before Fuse): no disponible en la informacion proporcionada
 - Repositorio oficial de ALBEF: no disponible en la informacion proporcionada
 - Blog o demo del autor: no disponible en la informacion proporcionada

@@ -76,9 +76,9 @@ Con un umbral más estricto que reporta 3,7 problemas por página, v3 alcanzó u
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PageAudit v3 (Qwen3.5-4B LoRA) | 4B (base) | no disponible | Auditoría de accesibilidad y consistencia de UI | Apache 2.0 | HuggingFace, vista previa de investigación |
+| PageAudit v3 (Qwen3.5-4B LoRA) | 4B (base) | no disponible | Auditoría de accesibilidad y consistencia de UI | Apache 2.0 | Hugging Face, vista previa de investigación |
 | Claude Sonnet 5.5 | no disponible | no disponible | Modelo generalista usado como comparación en la model card | propietaria | API |
-| PageAudit v2 (versión anterior) | 4B (base) | no disponible | Auditoría de accesibilidad, entrenado con páginas sintéticas | Apache 2.0 | HuggingFace |
+| PageAudit v2 (versión anterior) | 4B (base) | no disponible | Auditoría de accesibilidad, entrenado con páginas sintéticas | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ Con un umbral más estricto que reporta 3,7 problemas por página, v3 alcanzó u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aixonlab/PageAudit-v3-Qwen3.5-4B-LoRA
+- Modelo en Hugging Face: https://huggingface.co/aixonlab/PageAudit-v3-Qwen3.5-4B-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Repositorio del pipeline: carpeta `pipeline` dentro del repositorio de HuggingFace del modelo
+- Repositorio del pipeline: carpeta `pipeline` dentro del repositorio de Hugging Face del modelo
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada

@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Mossling (este modelo) | 3.723 B (DiT) + 0.8B encoder | 1024 px, múltiplos de 16 | Apache 2.0 | HuggingFace, alpha |
-| OpenMOSS-Team/MOSS-Image-Base | 5.082 B (DiT) + 9B encoder | 1024 px | no disponible en la información proporcionada | HuggingFace |
+| Mossling (este modelo) | 3.723 B (DiT) + 0.8B encoder | 1024 px, múltiplos de 16 | Apache 2.0 | Hugging Face, alpha |
+| OpenMOSS-Team/MOSS-Image-Base | 5.082 B (DiT) + 9B encoder | 1024 px | no disponible en la información proporcionada | Hugging Face |
 | Otros modelos texto-a-imagen de tamaño similar | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada solo permite comparar con el modelo base del que deriva. No se dispone de datos de benchmarks ni de especificaciones de alternativas de la misma categoría para establecer una comparación cuantitativa.
@@ -89,5 +89,5 @@ La información proporcionada solo permite comparar con el modelo base del que d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AiArtLab/mossling
+- Modelo en Hugging Face: https://huggingface.co/AiArtLab/mossling
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base

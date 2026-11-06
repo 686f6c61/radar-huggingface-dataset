@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Serenity-27B-v0.5-GGUF es una cuantizacion en formato GGUF del modelo base Serenity-27B-v0.5, desarrollado por el usuario de HuggingFace ReadyArt. El modelo esta etiquetado como orientado a roleplay, conversacional e instruct, con licencia Apache-2.0. La variante GGUF permite su ejecucion en entornos con recursos limitados mediante herramientas como llama.cpp, Ollama o LM Studio, lo que lo hace accesible para pruebas locales en hardware de consumo.
+Serenity-27B-v0.5-GGUF es una cuantizacion en formato GGUF del modelo base Serenity-27B-v0.5, desarrollado por el usuario de Hugging Face ReadyArt. El modelo esta etiquetado como orientado a roleplay, conversacional e instruct, con licencia Apache-2.0. La variante GGUF permite su ejecucion en entornos con recursos limitados mediante herramientas como llama.cpp, Ollama o LM Studio, lo que lo hace accesible para pruebas locales en hardware de consumo.
 
 El nombre del modelo sugiere una arquitectura de 27 mil millones de parametros, aunque no se han publicado especificaciones tecnicas detalladas en la informacion disponible. Los tags indican que se trata de un modelo no alineado ("unaligned") y con contenido explicito para adultos, lo que condiciona su uso a entornos con control de acceso adecuado. Su relevancia actual radica en la creciente demanda de modelos de roleplay conversacional con licencia permisiva, si bien la falta de documentacion tecnica limita su evaluacion objetiva.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para comparar este modelo con alternativas de la misma categoria. No hay datos publicados sobre su rendimiento, arquitectura o dataset de entrenamiento, por lo que no se puede establecer una comparativa objetiva con otros modelos de 27B como Llama-3-27B o Mistral-7B. Se recomienda consultar la organizacion ReadyArt en HuggingFace para ver si existen otros modelos con documentacion mas detallada.
+No se dispone de informacion suficiente para comparar este modelo con alternativas de la misma categoria. No hay datos publicados sobre su rendimiento, arquitectura o dataset de entrenamiento, por lo que no se puede establecer una comparativa objetiva con otros modelos de 27B como Llama-3-27B o Mistral-7B. Se recomienda consultar la organizacion ReadyArt en Hugging Face para ver si existen otros modelos con documentacion mas detallada.
 
 ## Limitaciones y advertencias
 
@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ReadyArt/Serenity-27B-v0.5-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ReadyArt/Serenity-27B-v0.5-GGUF
 - Perfil de la organizacion ReadyArt: https://huggingface.co/ReadyArt/collections
 - Entrada de un modelo similar en toolify.ai: https://www.toolify.ai/ai-model/readyart-serenity-26b-a4b-gguf
 - Directorio de modelos GGUF: https://local-ai-zone.github.io/

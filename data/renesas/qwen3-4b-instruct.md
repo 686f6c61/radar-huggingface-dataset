@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K,
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | Renesas/Qwen3-4B-Instruct | 4B | no disponible | no disponible | Solo runner para X5H | Cuantización W4A16 para NPU Renesas |
-| Qwen/Qwen3-4B-Instruct-2507 | 4B | no disponible en esta ficha | no disponible en esta ficha | Pesos estándar en HuggingFace | Modelo fuente citado en el enlace |
-| Qwen/Qwen3-VL-4B-Instruct | 4B | no disponible en esta ficha | no disponible en esta ficha | Pesos estándar en HuggingFace | Modelo fuente citado en el texto |
+| Qwen/Qwen3-4B-Instruct-2507 | 4B | no disponible en esta ficha | no disponible en esta ficha | Pesos estándar en Hugging Face | Modelo fuente citado en el enlace |
+| Qwen/Qwen3-VL-4B-Instruct | 4B | no disponible en esta ficha | no disponible en esta ficha | Pesos estándar en Hugging Face | Modelo fuente citado en el texto |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Renesas/Qwen3-4B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/Renesas/Qwen3-4B-Instruct
 - Modelo fuente citado en el texto: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Modelo fuente citado en el enlace: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Renesas Electronics (sitio corporativo): https://www.renesas.com/

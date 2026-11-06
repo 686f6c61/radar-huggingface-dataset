@@ -81,5 +81,5 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/khursanirevo/smolagent-ms-800m-base
+- Modelo en Hugging Face: https://huggingface.co/khursanirevo/smolagent-ms-800m-base
 - Repositorio del proyecto mencionado en la model card: `khursanirevo/smolagent-ms` (no se proporciona URL directa; se referencia en la documentacion del modelo).

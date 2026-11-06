@@ -77,6 +77,6 @@ No hay información suficiente para realizar una comparativa con modelos de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h017.sft-v6.step_24
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h017.sft-v6.step_24
 - Dataset del run (opus-high-v3-data): https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX

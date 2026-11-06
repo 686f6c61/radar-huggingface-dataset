@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tidepooljiho/clip-classification` es un repositorio alojado en HuggingFace que contiene una implementación de referencia de CLIP (Contrastive Language-Image Pre-Training) orientada a tareas de clasificación. Lo publica el usuario tidepooljiho bajo licencia Apache 2.0 y, según la propia model card, se trata de un esqueleto de código transparente con pruebas de humo (smoke tests) reproducibles, no de un modelo entrenado ni evaluado.
+`tidepooljiho/clip-classification` es un repositorio alojado en Hugging Face que contiene una implementación de referencia de CLIP (Contrastive Language-Image Pre-Training) orientada a tareas de clasificación. Lo publica el usuario tidepooljiho bajo licencia Apache 2.0 y, según la propia model card, se trata de un esqueleto de código transparente con pruebas de humo (smoke tests) reproducibles, no de un modelo entrenado ni evaluado.
 
 El dato más relevante es su tamaño real: el checkpoint `model.safetensors` declara 49.600 parámetros (aproximadamente 0,05 millones) y el repositorio ocupa 0,0 GB. Existe una contradicción explícita con la model card, que etiqueta la configuración como de escala "giant", algo imposible con ese recuento de parámetros. La model card también aclara que `model.safetensors` es una inicialización válida para smoke tests y que no se reclama ninguna puntuación de benchmark.
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada y de carácter pedagógico o instrumental: sirv
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 | Escala declarada por el autor | "giant" (no coherente con el recuento real de parámetros) |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Tamaño del repositorio | 0,0 GB |
 
 ## Arquitectura y entrenamiento
@@ -46,7 +46,7 @@ En cuanto al entrenamiento, la receta por defecto del script usa el optimizador 
 - Base para fine-tuning con datos propios: `config.json` y `training_args.json` documentan la configuración de arquitectura y la receta por defecto, lo que facilita reentrenar el modelo sobre un split etiquetado específico de dominio.
 - Integración en CI/CD: el tamaño reducido permite incluirlo en pruebas automáticas que validen la compatibilidad de versiones de PyTorch y safetensors sin penalizar el tiempo de build.
 - Banco de pruebas de variantes de atención: la combinación de atención de ventana deslizante y cross attention puede usarse para experimentar con configuraciones de fusión multimodal a bajo coste computacional.
-- Material docente o de estudio: sirve para ilustrar la estructura de un repositorio de modelo en HuggingFace (README, config, training args, pesos) y las diferencias entre un checkpoint inicializado y uno entrenado.
+- Material docente o de estudio: sirve para ilustrar la estructura de un repositorio de modelo en Hugging Face (README, config, training args, pesos) y las diferencias entre un checkpoint inicializado y uno entrenado.
 - Evaluación comparativa de metodología: la guía de evaluación del propio autor propone usar un split etiquetado específico de tarea, reportar la métrica sobre al menos tres semillas e incluir una línea base de capacidad equivalente.
 
 ## Benchmarks y rendimiento
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| tidepooljiho/clip-classification | 49.600 (0,05 M) | No disponible | Apache 2.0 | HuggingFace | Checkpoint de inicialización, sin entrenar |
+| tidepooljiho/clip-classification | 49.600 (0,05 M) | No disponible | Apache 2.0 | Hugging Face | Checkpoint de inicialización, sin entrenar |
 | Familia CLIP de OpenAI (ViT-B/32, ViT-L/14, etc.) | No disponible en la información proporcionada | No aplica | No disponible en la información proporcionada | Repositorio `openai/CLIP` en GitHub y pesos publicados | Modelos preentrenados sobre pares imagen-texto y evaluados en benchmarks de clasificación |
 | Alternativas de clasificación imagen-texto (por ejemplo SigLIP) | No disponible | No disponible | No disponible | No disponible en la información proporcionada | No disponible |
 
@@ -85,7 +85,7 @@ La única comparación que puede sostenerse con los datos aportados es de natura
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tidepooljiho/clip-classification
+- Modelo en Hugging Face: https://huggingface.co/tidepooljiho/clip-classification
 - Repositorio oficial de CLIP de OpenAI en GitHub: https://github.com/openai/CLIP
 - Artículo de presentación de CLIP en OpenAI: https://openai.com/index/clip/
 - Paper de CLIP (Radford et al., 2021): https://arxiv.org/abs/2103.00020

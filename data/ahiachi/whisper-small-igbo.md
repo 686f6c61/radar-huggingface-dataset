@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Ahiachi/whisper-small-igbo es un ajuste fino (fine-tune) del modelo Whisper small de OpenAI, orientado a reconocimiento automatico del habla (ASR) en igbo, una lengua nigercongolesa hablada principalmente en el sureste de Nigeria. El repositorio lo publica el usuario Ahiachi en HuggingFace y se distribuye bajo la libreria transformers, con pesos en formato safetensors y compatibilidad con el pipeline `automatic-speech-recognition`. Segun el recuento de parametros del checkpoint, el modelo tiene 241.734.912 parametros, cifra coherente con la arquitectura Whisper small del modelo base.
+Ahiachi/whisper-small-igbo es un ajuste fino (fine-tune) del modelo Whisper small de OpenAI, orientado a reconocimiento automatico del habla (ASR) en igbo, una lengua nigercongolesa hablada principalmente en el sureste de Nigeria. El repositorio lo publica el usuario Ahiachi en Hugging Face y se distribuye bajo la libreria transformers, con pesos en formato safetensors y compatibilidad con el pipeline `automatic-speech-recognition`. Segun el recuento de parametros del checkpoint, el modelo tiene 241.734.912 parametros, cifra coherente con la arquitectura Whisper small del modelo base.
 
-El modelo no incluye model card sustantiva: la tarjeta publicada es la plantilla autogenerada por HuggingFace, con la mayoria de campos marcados como "[More Information Needed]". No se documentan el proceso de entrenamiento, el dataset utilizado, los hiperparametros, la licencia ni los idiomas soportados mas alla de lo que sugiere el nombre del repositorio. Esto limita seriamente la trazabilidad y la reproducibilidad.
+El modelo no incluye model card sustantiva: la tarjeta publicada es la plantilla autogenerada por Hugging Face, con la mayoria de campos marcados como "[More Information Needed]". No se documentan el proceso de entrenamiento, el dataset utilizado, los hiperparametros, la licencia ni los idiomas soportados mas alla de lo que sugiere el nombre del repositorio. Esto limita seriamente la trazabilidad y la reproducibilidad.
 
 Es relevante porque el igbo es un idioma con recursos limitados (low-resource), y los modelos ASR especificos para lenguas africanas de este tipo suelen publicarse de forma experimental. Al derivar de Whisper small, hereda potencialmente su arquitectura encoder-decoder y su capacidad multilingue, pero al no haber datos de evaluacion ni de entrenamiento, su utilidad en produccion debe tratarse con cautela.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idioma objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ahiachi/whisper-small-igbo | 241.734.912 | No disponible (base: ventanas de 30 s) | Igbo (segun nombre) | No disponible | HuggingFace (0 descargas, 0 likes) |
-| openai/whisper-small | ~244 M | Ventanas de 30 s de audio | Multilingue (~99 idiomas) | MIT | HuggingFace, ampliamente usado |
-| openai/whisper-base | ~74 M | Ventanas de 30 s de audio | Multilingue | MIT | HuggingFace |
-| openai/whisper-medium | ~769 M | Ventanas de 30 s de audio | Multilingue | MIT | HuggingFace |
+| Ahiachi/whisper-small-igbo | 241.734.912 | No disponible (base: ventanas de 30 s) | Igbo (segun nombre) | No disponible | Hugging Face (0 descargas, 0 likes) |
+| openai/whisper-small | ~244 M | Ventanas de 30 s de audio | Multilingue (~99 idiomas) | MIT | Hugging Face, ampliamente usado |
+| openai/whisper-base | ~74 M | Ventanas de 30 s de audio | Multilingue | MIT | Hugging Face |
+| openai/whisper-medium | ~769 M | Ventanas de 30 s de audio | Multilingue | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento de ninguno de estos modelos aplicados especificamente al igbo en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento de ninguno de estos modelos aplicados espe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ahiachi/whisper-small-igbo
+- Modelo en Hugging Face: https://huggingface.co/Ahiachi/whisper-small-igbo
 - Paper de referencia citado en los tags (Whisper, Radford et al., 2022): https://arxiv.org/abs/1910.09700
 - Modelo base probable: https://huggingface.co/openai/whisper-small
 - Repositorio de OpenAI Whisper: https://github.com/openai/whisper

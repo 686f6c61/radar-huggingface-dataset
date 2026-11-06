@@ -6,7 +6,7 @@ SoreQen S1 Mega es un asistente conversacional bilingüe (inglés/hinglish) desa
 
 Su relevancia principal reside en que la identidad del asistente queda grabada en los pesos del modelo, de modo que responde correctamente a su identidad incluso sin system prompt (6/6 aciertos frente a 0/6 del modelo base), y en que ofrece conversación natural en hinglish (hindi en escritura romanizada), un registro de uso masivo en la India. Con 4,54 mil millones de parámetros y licencia Apache 2.0, está disponible en formato safetensors y GGUF, lo que permite desplegarlo tanto en GPU de consumo como en entornos de producción con cuantización.
 
-El modelo se publica bajo el nombre de ZorQelis AI en el repositorio de HuggingFace de sainived656, con una versión hermana más pequeña (SoreQen S1 Mini, 0.8B) que comparte la misma metodología de ajuste.
+El modelo se publica bajo el nombre de ZorQelis AI en el repositorio de Hugging Face de sainived656, con una versión hermana más pequeña (SoreQen S1 Mini, 0.8B) que comparte la misma metodología de ajuste.
 
 ## Especificaciones tecnicas
 
@@ -98,7 +98,7 @@ La comparativa directa con el modelo base muestra que la única diferencia susta
 
 ## Enlaces
 
-- Modelo principal (HuggingFace): https://huggingface.co/sainived656/soreqen-s1-mega
+- Modelo principal (Hugging Face): https://huggingface.co/sainived656/soreqen-s1-mega
 - Repositorio GGUF cuantizado: https://huggingface.co/sainived656/soreqen-s1-mega-GGUF
 - Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Ficha en LLM Explorer (SoreQen S1 Mega): https://llm-explorer.com/model/sainived656%2Fsoreqen-s1-mega,5trtUWUedFnWhCe6lgoCTn

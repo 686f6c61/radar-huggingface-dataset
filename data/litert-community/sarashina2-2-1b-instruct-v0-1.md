@@ -114,7 +114,7 @@ La comparación con modelos de la misma categoría (LLM japonés de ~1B para edg
 
 ## Enlaces
 
-- HuggingFace del bundle: https://huggingface.co/litert-community/sarashina2.2-1b-instruct-v0.1
+- Hugging Face del bundle: https://huggingface.co/litert-community/sarashina2.2-1b-instruct-v0.1
 - Modelo base: https://huggingface.co/sbintuitions/sarashina2.2-1b-instruct-v0.1
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
 - Demo web de chat: https://google-ai-edge.github.io/LiteRT-LM/web_demos/chat/index.html?model=litert-community/sarashina2.2-1b-instruct-v0.1

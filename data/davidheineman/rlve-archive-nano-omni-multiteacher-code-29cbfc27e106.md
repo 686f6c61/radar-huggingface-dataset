@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo publicado para uso general, sino un checkpoint de entrenamiento archivado: `rlve-archive-nano-omni-multiteacher-code-29cbfc27e106`, exportado por el usuario de HuggingFace davidheineman dentro de un sistema de preservación de experimentos denominado RLVE. La model card lo clasifica como «Older archive backlog», con formato `pytorch-checkpoint`, paso de checkpoint `None` y sin identificador de ejecución en Weights & Biases, lo que indica que se conserva el estado revisado de una ejecución antigua detenida o ya cerrada.
+Este repositorio no contiene un modelo publicado para uso general, sino un checkpoint de entrenamiento archivado: `rlve-archive-nano-omni-multiteacher-code-29cbfc27e106`, exportado por el usuario de Hugging Face davidheineman dentro de un sistema de preservación de experimentos denominado RLVE. La model card lo clasifica como «Older archive backlog», con formato `pytorch-checkpoint`, paso de checkpoint `None` y sin identificador de ejecución en Weights & Biases, lo que indica que se conserva el estado revisado de una ejecución antigua detenida o ya cerrada.
 
 El artefacto pertenece al grupo de experimentos `nano-omni-multiteacher/runs-inloop-300000000-2000000/code`, es decir, una rama orientada a código dentro de un proyecto de entrenamiento con múltiples profesores y un modelo de escala reducida. El repositorio ocupa 0,7 GB e incluye, según el autor, la configuración original del modelo y el tokenizador junto con el estado distribuido de entrenamiento (optimizador y RNG cuando están presentes). No se declaran número de parámetros, longitud de contexto, licencia ni idiomas soportados.
 
@@ -33,7 +33,7 @@ Su relevancia no es la inferencia directa, sino la reproducibilidad: permite rea
 
 ## Arquitectura y entrenamiento
 
-La model card no especifica la arquitectura (transformer, MoE, híbrida o SSM), el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO. El único dato estructural es el formato: un checkpoint de PyTorch de tipo distribuido, que conserva el estado de optimizador y de RNG cuando estaba presente en el guardado original. El autor indica que la configuración original del modelo y el tokenizador acompañan a las exportaciones a HuggingFace, y que para reanudar el entrenamiento debe restaurarse el directorio `checkpoint/` completo.
+La model card no especifica la arquitectura (transformer, MoE, híbrida o SSM), el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO. El único dato estructural es el formato: un checkpoint de PyTorch de tipo distribuido, que conserva el estado de optimizador y de RNG cuando estaba presente en el guardado original. El autor indica que la configuración original del modelo y el tokenizador acompañan a las exportaciones a Hugging Face, y que para reanudar el entrenamiento debe restaurarse el directorio `checkpoint/` completo.
 
 El nombre del grupo de experimentos aporta pistas sobre el contexto, no sobre la arquitectura: `nano` apunta a un modelo de escala pequeña, `omni` a un entrenamiento posiblemente multimodal y `multiteacher` a una configuración de destilación o supervisión con varios profesores. La cadena `runs-inloop-300000000-2000000` sugiere una ejecución «in-loop» con dos magnitudes numéricas que podrían corresponder a pasos, tokens o muestras, pero el autor no lo aclara. La rama `code` indica que el objetivo de este checkpoint es la generación de código dentro de ese pipeline. No se documenta ninguna innovación técnica adicional (decodificación especulativa, atención lineal, currículos de entrenamiento) ni se adjuntan logs de entrenamiento en el repositorio: según la model card, los logs y los metadatos de linaje local se conservan en la fuente original.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: no disponible con exactitud. El repositorio completo ocupa 0,7 GB, pero al tratarse de un checkpoint de entrenamiento puede incluir estados de optimizador y RNG, por lo que el peso del modelo puro sería inferior a esa cifra. La inferencia en bf16/fp16 previsiblemente quedaría por debajo de 1-2 GB, pero es una estimación derivada del tamaño del repositorio, no un dato declarado.
 - GPU recomendadas: no declaradas. Por el tamaño del artefacto, cualquier GPU con al menos 4-8 GB de VRAM debería poder alojar los pesos; conviene verificar antes la arquitectura con la configuración adjunta.
 - GPU de consumo: probablemente sí (RTX 3060, RTX 4060, RTX 4090, e incluso iGPU con memoria unificada), condicionado a que el modelo real sea del orden de cientos de millones de parámetros y a que se logre cargarlo fuera del formato distribuido.
-- Opciones de despliegue: la vía natural es PyTorch nativo restaurando el directorio `checkpoint/`. vLLM, TGI, llama.cpp y Ollama requieren primero una conversión a un formato de inferencia estándar (HuggingFace `transformers`) que no se proporciona; la conversión a GGUF no es posible sin conocer la arquitectura y el tokenizador exactos.
+- Opciones de despliegue: la vía natural es PyTorch nativo restaurando el directorio `checkpoint/`. vLLM, TGI, llama.cpp y Ollama requieren primero una conversión a un formato de inferencia estándar (Hugging Face `transformers`) que no se proporciona; la conversión a GGUF no es posible sin conocer la arquitectura y el tokenizador exactos.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas ni configuración de referencia para reproducirlas.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ No se han identificado modelos públicos comparables con benchmarks publicados. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-code-29cbfc27e106
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-code-29cbfc27e106
 - Checkpoint hermano (code, run completado): https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-code-c562da3c8605
 - Checkpoint hermano (code, scratch-archive): https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-code-f5fa0a8f4c52/tree/main
 - Checkpoint hermano (math): https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-math-559ac32f9314/tree/main

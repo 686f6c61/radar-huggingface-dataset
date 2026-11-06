@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yalda-Embedding8 es un modelo de embeddings de texto publicado por el usuario Yaldat en HuggingFace, construido como fine-tune de Qwen/Qwen3-0.6B-Base y etiquetado con la librería sentence-transformers y el pipeline feature-extraction. Con 595.776.512 parámetros (0,6B) y pesos en safetensors, se enmarca en la categoría de modelos densos pequeños para recuperación semántica, donde el coste de inferencia por documento es bajo y el despliegue cabe en una única GPU de consumo.
+Yalda-Embedding8 es un modelo de embeddings de texto publicado por el usuario Yaldat en Hugging Face, construido como fine-tune de Qwen/Qwen3-0.6B-Base y etiquetado con la librería sentence-transformers y el pipeline feature-extraction. Con 595.776.512 parámetros (0,6B) y pesos en safetensors, se enmarca en la categoría de modelos densos pequeños para recuperación semántica, donde el coste de inferencia por documento es bajo y el despliegue cabe en una única GPU de consumo.
 
 La model card del repositorio reproduce íntegramente el contenido de Qwen/Qwen3-Embedding-0.6B, de modo que las especificaciones declaradas (28 capas, contexto de 32.768 tokens, dimensión de embedding de hasta 1024 con soporte MRL de 32 a 1024, más de 100 idiomas) corresponden al modelo de referencia de Qwen y no a una documentación propia del autor del fine-tune. No hay información publicada sobre el dataset de ajuste, el procedimiento de entrenamiento ni evaluaciones específicas de Yalda-Embedding8.
 
@@ -95,7 +95,7 @@ Nota: los datos de los modelos comparativos provienen de sus fichas públicas y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yaldat/Yalda-Embedding8
+- Modelo en Hugging Face: https://huggingface.co/Yaldat/Yalda-Embedding8
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Modelo de referencia de la model card: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Blog de la serie Qwen3 Embedding: https://qwenlm.github.io/blog/qwen3-embedding/

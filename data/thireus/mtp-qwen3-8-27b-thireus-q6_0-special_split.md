@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Thireus/mtp-Qwen3.8-27B-THIREUS-Q6_0-SPECIAL_SPLIT` es una publicación de HuggingFace creada por el usuario Thireus bajo licencia MIT. El nombre sugiere que se trata de una cuantización (posiblemente Q6_0) de un modelo base denominado "Qwen3.8-27B", aunque no se dispone de documentación oficial que confirme esta interpretación. La model card únicamente incluye la línea `license: mit`, sin descripción técnica, parámetros, arquitectura ni instrucciones de uso.
+El modelo `Thireus/mtp-Qwen3.8-27B-THIREUS-Q6_0-SPECIAL_SPLIT` es una publicación de Hugging Face creada por el usuario Thireus bajo licencia MIT. El nombre sugiere que se trata de una cuantización (posiblemente Q6_0) de un modelo base denominado "Qwen3.8-27B", aunque no se dispone de documentación oficial que confirme esta interpretación. La model card únicamente incluye la línea `license: mit`, sin descripción técnica, parámetros, arquitectura ni instrucciones de uso.
 
 A fecha de la consulta, el repositorio no registra descargas ni valoraciones, y no se ha publicado ninguna información adicional sobre el modelo, su entrenamiento o sus capacidades. Esto limita cualquier evaluación objetiva y hace imposible determinar su idoneidad para tareas concretas sin realizar pruebas empíricas.
 
@@ -56,6 +56,6 @@ No disponible. Sin datos sobre la arquitectura, el tamaño o el rendimiento del 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [Thireus/mtp-Qwen3.8-27B-THIREUS-Q6_0-SPECIAL_SPLIT](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q6_0-SPECIAL_SPLIT)
+- Repositorio de Hugging Face: [Thireus/mtp-Qwen3.8-27B-THIREUS-Q6_0-SPECIAL_SPLIT](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q6_0-SPECIAL_SPLIT)
 
 No se han encontrado otros enlaces (papers, blogs, demos) asociados al modelo.

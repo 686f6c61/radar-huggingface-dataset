@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `quark75/Qwen3.8-27B-EXL3-3.0bpw` es una publicacion de pesos alojada en HuggingFace por el usuario `quark75`. Por el propio identificador se deduce que se trata de una cuantizacion en formato EXL3 (ExLlamaV3) a aproximadamente 3,0 bits por peso (bpw) de un modelo base cuyo nombre comercial seria "Qwen3.8-27B". Esa lectura es una inferencia a partir del nombre del repositorio, no un dato confirmado por el autor.
+El repositorio `quark75/Qwen3.8-27B-EXL3-3.0bpw` es una publicacion de pesos alojada en Hugging Face por el usuario `quark75`. Por el propio identificador se deduce que se trata de una cuantizacion en formato EXL3 (ExLlamaV3) a aproximadamente 3,0 bits por peso (bpw) de un modelo base cuyo nombre comercial seria "Qwen3.8-27B". Esa lectura es una inferencia a partir del nombre del repositorio, no un dato confirmado por el autor.
 
 La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia `apache-2.0` en el frontmatter. No se documentan parametros, arquitectura, longitud de contexto, idiomas, datos de entrenamiento ni resultados de evaluacion. Tampoco se indica quien entrena el modelo base ni si esta cuantizacion ha sido validada por el autor original.
 
@@ -90,7 +90,7 @@ No disponible. La informacion proporcionada no incluye resultados de evaluacion 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/quark75/Qwen3.8-27B-EXL3-3.0bpw
+- Repositorio en Hugging Face: https://huggingface.co/quark75/Qwen3.8-27B-EXL3-3.0bpw
 - Modelo base: no disponible (no referenciado en la model card)
 - Paper o informe tecnico: no disponible
 - Blog del autor: no disponible

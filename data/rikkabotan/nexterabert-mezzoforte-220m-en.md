@@ -4,7 +4,7 @@
 
 ## Resumen
 
-NexteraBERT-Mezzoforte-220M-en es un encoder bidireccional en ingles de 212,6 millones de parametros publicado por el usuario RikkaBotan en HuggingFace. Se trata del modelo principal de la familia NexteraBERT, preentrenado con masked language modeling (MLM) sobre 130.000 millones de tokens y disenado explicitamente para operar con contextos largos sin degradar su rendimiento, un punto debil clasico de los encoders tipo BERT cuando se extrapola la longitud de entrada.
+NexteraBERT-Mezzoforte-220M-en es un encoder bidireccional en ingles de 212,6 millones de parametros publicado por el usuario RikkaBotan en Hugging Face. Se trata del modelo principal de la familia NexteraBERT, preentrenado con masked language modeling (MLM) sobre 130.000 millones de tokens y disenado explicitamente para operar con contextos largos sin degradar su rendimiento, un punto debil clasico de los encoders tipo BERT cuando se extrapola la longitud de entrada.
 
 La arquitectura no es un transformer homogeneo: sus 18 bloques combinan cuatro tipos de mezclador de tokens distintos (SnowLily, NexteraSWA, NexteraSelfAttention y NexteraHRA), lo que da lugar a un patron hibrido con coste computacional lineal en algunos bloques y atencion completa en otros. A esto se suma SSSMax (Stable Scalable-Softmax) en los bloques de atencion global, que escala los logits con el numero de claves para mantener la selectividad de la atencion en secuencias muy largas.
 
@@ -172,7 +172,7 @@ La model card solo proporciona comparacion directa y bajo protocolo identico con
 
 | Modelo | Parametros | Longitud de contexto | GLUE (media) | MTEB v2 (media por tipo) | BEIR (nDCG@10) | Tokens de preentrenamiento | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---:|---:|---|---|
-| NexteraBERT-Mezzoforte-220M-en | 212,6 M | entrenamiento 8.192; extrapolacion evaluada 65.536 | 87,90 | 54,70 | 43,89 | 130.000 M | MIT | HuggingFace, 94 descargas |
+| NexteraBERT-Mezzoforte-220M-en | 212,6 M | entrenamiento 8.192; extrapolacion evaluada 65.536 | 87,90 | 54,70 | 43,89 | 130.000 M | MIT | Hugging Face, 94 descargas |
 | ModernBERT-base | no disponible | no disponible | 87,97 | 53,63 | 43,09 | 2.000.000 M | no disponible | no disponible en la informacion proporcionada |
 | BERT-base / RoBERTa-base / DeBERTa-v3-base | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -194,7 +194,7 @@ Conclusiones que si se pueden extraer de los datos disponibles: NexteraBERT igua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RikkaBotan/NexteraBERT-Mezzoforte-220M-en
+- Modelo en Hugging Face: https://huggingface.co/RikkaBotan/NexteraBERT-Mezzoforte-220M-en
 - Paper en el repositorio (PDF): https://huggingface.co/RikkaBotan/NexteraBERT-Mezzoforte-220M-en/blob/main/NexteraBERT.pdf
 - Perfil del autor (RikkaBotan): https://huggingface.co/RikkaBotan
 - Modelos del autor: https://huggingface.co/RikkaBotan/models

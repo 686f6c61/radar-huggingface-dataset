@@ -85,7 +85,7 @@ La diferencia entre el primer y el segundo modelo de la tabla no es tecnica sino
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RabiatS/depth-anything-v2-small-web
+- Repositorio en Hugging Face: https://huggingface.co/RabiatS/depth-anything-v2-small-web
 - Repositorio de origen de los ficheros ONNX: https://huggingface.co/onnx-community/depth-anything-v2-small
 - Modelo base: https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf
 - Proyecto original Depth Anything V2: https://github.com/DepthAnything/Depth-Anything-V2

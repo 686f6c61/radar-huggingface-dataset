@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `darelphilip/hinglish-toxicity-classifier` es un clasificador de texto basado en la arquitectura XLM-RoBERTa, diseñado para detectar contenido toxico en Hinglish, la variante code-mixed de hindi e ingles ampliamente utilizada en redes sociales y foros de la India. Fue publicado por el usuario darelphilip en HuggingFace y cuenta con 278.049.031 parametros, lo que corresponde a la variante base de XLM-RoBERTa. El repositorio ocupa 1,1 GB en formato safetensors.
+El modelo `darelphilip/hinglish-toxicity-classifier` es un clasificador de texto basado en la arquitectura XLM-RoBERTa, diseñado para detectar contenido toxico en Hinglish, la variante code-mixed de hindi e ingles ampliamente utilizada en redes sociales y foros de la India. Fue publicado por el usuario darelphilip en Hugging Face y cuenta con 278.049.031 parametros, lo que corresponde a la variante base de XLM-RoBERTa. El repositorio ocupa 1,1 GB en formato safetensors.
 
 La relevancia de este modelo radica en la dificultad inherente de la tarea: el Hinglish combina dos idiomas con transliteracion y code-switching, lo que hace que los clasificadores entrenados exclusivamente en ingles o en hindi fallen con frecuencia. Al estar basado en XLM-RoBERTa, un modelo multilingue preentrenado con datos de mas de 100 idiomas, el clasificador puede capturar mejor los matices de este registro linguistico hibrido.
 
-Sin embargo, la model card es una plantilla auto-generada sin informacion real sobre el proceso de entrenamiento, los datos utilizados o las metricas de evaluacion. El modelo tiene cero descargas y cero likes en HuggingFace, lo que limita significativamente la capacidad de evaluar su calidad y fiabilidad para uso en produccion.
+Sin embargo, la model card es una plantilla auto-generada sin informacion real sobre el proceso de entrenamiento, los datos utilizados o las metricas de evaluacion. El modelo tiene cero descargas y cero likes en Hugging Face, lo que limita significativamente la capacidad de evaluar su calidad y fiabilidad para uso en produccion.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ El modelo ha sido fine-tuneado para clasificacion de toxicidad en Hinglish, pero
 
 - Clasificacion de toxicidad en texto Hinglish mediante la pipeline de text-classification de transformers.
 - Deteccion de contenido ofensivo, abusivo o inapropiado en comentarios code-mixed hindi-ingles.
-- Inferencia compatible con text-embeddings-inference y endpoints de HuggingFace, segun los tags del repositorio.
+- Inferencia compatible con text-embeddings-inference y endpoints de Hugging Face, segun los tags del repositorio.
 - No se documentan capacidades adicionales como tool calling, generacion de texto o soporte multimodal.
 
 ## Casos de uso
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 1,1 GB en fp32 (278 millones de parametros × 4 bytes). Con cuantizacion a fp16 se reduce a unos 556 MB, y a int8 a unos 278 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para inferencia. Una NVIDIA GTX 1650, RTX 3060 o superior es mas que suficiente.
 - El modelo cabe sin problemas en GPUs de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en CPUs con suficiente RAM para cargas de baja frecuencia.
-- Opciones de despliegue: al ser un modelo transformers estandar, puede servirse con vLLM, HuggingFace Text Generation Inference (TGI), o mediante la pipeline de transformers. Los tags del repositorio indican compatibilidad con text-embeddings-inference y endpoints de HuggingFace.
+- Opciones de despliegue: al ser un modelo transformers estandar, puede servirse con vLLM, Hugging Face Text Generation Inference (TGI), o mediante la pipeline de transformers. Los tags del repositorio indican compatibilidad con text-embeddings-inference y endpoints de Hugging Face.
 - Latencia estimada: para un modelo de 278M parametros en una GPU moderna, la latencia por inferencia suele estar entre 10 y 50 ms, dependiendo de la longitud del texto y el hardware. Este dato es una estimacion basada en el tamano del modelo, no un valor medido.
 
 ## Comparativa con modelos similares
@@ -73,12 +73,12 @@ Detoxify (unitaryai) es el clasificador de toxicidad mas conocido de la comunida
 - La licencia no esta especificada, lo que genera incertidumbre legal sobre su uso comercial. Se recomienda contactar con el autor antes de desplegarlo en produccion.
 - El modelo tiene un contexto maximo de 512 tokens, por lo que no es adecuado para clasificar documentos largos sin truncamiento previo.
 - Al ser un clasificador de toxicidad, existe riesgo de falsos positivos (texto legitimo marcado como toxico) y falsos negativos (texto toxico no detectado), especialmente con sarcasmo, ironia o lenguaje indirecto.
-- El modelo no ha sido evaluado de forma independiente y tiene cero descargas y cero likes en HuggingFace, por lo que no hay evidencia de uso o validacion por parte de la comunidad.
+- El modelo no ha sido evaluado de forma independiente y tiene cero descargas y cero likes en Hugging Face, por lo que no hay evidencia de uso o validacion por parte de la comunidad.
 - La fecha de creacion del repositorio (20 de agosto de 2026) es reciente, lo que sugiere que el modelo puede estar en una fase temprana de desarrollo sin iteraciones posteriores de mejora.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/darelphilip/hinglish-toxicity-classifier
+- Repositorio en Hugging Face: https://huggingface.co/darelphilip/hinglish-toxicity-classifier
 - Articulo de XLM-RoBERTa (arXiv:1910.09700): https://arxiv.org/abs/1910.09700
-- Coleccion de clasificadores de toxicidad en HuggingFace: https://huggingface.co/collections/textdetox/toxicity-classifiers-6748ad231d4a44cf3689ce9c
+- Coleccion de clasificadores de toxicidad en Hugging Face: https://huggingface.co/collections/textdetox/toxicity-classifiers-6748ad231d4a44cf3689ce9c
 - Repositorio de Detoxify (unitaryai): https://github.com/unitaryai/detoxify

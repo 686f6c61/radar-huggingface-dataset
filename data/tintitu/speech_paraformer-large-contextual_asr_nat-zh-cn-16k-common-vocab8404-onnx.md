@@ -18,16 +18,16 @@ Su relevancia practica reside en dos factores. Por un lado, el soporte de hotwor
 | Longitud de contexto | no disponible (modelo de ASR; no opera con contexto de texto, procesa segmentos de audio) |
 | Tipos de cuantizacion | INT8 estatica en el modelo acustico principal (`model_quant.onnx`); la red de sesgo se distribuye tambien en ONNX |
 | Idiomas soportados | chino mandarin (zh-cn) unicamente |
-| Licencia | la model card indica Apache-2.0 / ModelScope Community License; el campo de licencia del repositorio de HuggingFace figura como no disponible |
+| Licencia | la model card indica Apache-2.0 / ModelScope Community License; el campo de licencia del repositorio de Hugging Face figura como no disponible |
 | Formato de pesos | ONNX (`model_quant.onnx`, `model_eb.onnx`) mas `config.yaml`, `tokens.json`, `seg_dict` y `am.mvn` |
 | Tamano del repositorio | 0,8 GB |
 | Vocabulario | 8.404 tokens (caracteres chinos y tokens especiales) |
 | Frecuencia de muestreo de entrada | 16.000 Hz, mono, PCM 16 bits o float normalizado en [-1,0, 1,0] |
 | Caracteristicas acusticas | 80 dimensiones de Fbank log-Mel con normalizacion CMVN |
 | Motor de inferencia | ONNX Runtime, sherpa-onnx, FunASR Runtime |
-| Autor de la redistribucion | tintitu (repositorio de HuggingFace) |
+| Autor de la redistribucion | tintitu (repositorio de Hugging Face) |
 | Autor original | Alibaba DAMO Academy / Tongyi Lab (proyecto FunASR) |
-| Fecha de creacion del repositorio | 2026-09-11 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 2026-09-11 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -116,14 +116,14 @@ La ventaja competitiva de este Paraformer frente a Whisper en el nicho de chino 
 - Riesgo de alucinacion y de sustitucion de palabras: como cualquier sistema de ASR, puede generar texto plausible pero incorrecto, especialmente con ruido de fondo, solapamiento de hablantes o acentos marcados. La lista de hotwords mitiga el problema en vocabulario conocido, pero no lo elimina.
 - Sesgos: no se documenta la composicion del conjunto de entrenamiento, por lo que no se puede evaluar el sesgo respecto a acentos regionales, genero, edad o registro del habla. Es un dato no disponible.
 - Sin diarizacion de hablantes ni marcas de tiempo a nivel de palabra en la informacion proporcionada: si se necesitan, hay que resolverlas con modulos externos.
-- Restricciones de licencia: la model card menciona Apache-2.0 / ModelScope Community License, pero el campo de licencia del repositorio de HuggingFace figura como no disponible. Para uso comercial o redistribucion conviene verificar la licencia vigente en el repositorio de ModelScope y conservar los avisos de copyright del autor original (Alibaba DAMO Academy / Tongyi Lab) y los enlaces de procedencia.
+- Restricciones de licencia: la model card menciona Apache-2.0 / ModelScope Community License, pero el campo de licencia del repositorio de Hugging Face figura como no disponible. Para uso comercial o redistribucion conviene verificar la licencia vigente en el repositorio de ModelScope y conservar los avisos de copyright del autor original (Alibaba DAMO Academy / Tongyi Lab) y los enlaces de procedencia.
 - Repositorio de terceros con cero descargas y cero likes: se trata de una redistribucion de un usuario individual y no del canal oficial. Se recomienda contrastar los SHA-256 publicados antes de desplegarlo en produccion y valorar el uso del checkpoint oficial en ModelScope.
 - Observacion tecnica: el tamano de `model_quant.onnx` (871 MB) es elevado para un modelo declarado como INT8 estatico, lo que puede indicar una cuantizacion parcial. No hay datos para confirmarlo.
 - El recuento de parametros no esta disponible, lo que dificulta estimar con precision el coste de inferencia en escenarios de alta concurrencia.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/tintitu/speech_paraformer-large-contextual_asr_nat-zh-cn-16k-common-vocab8404-onnx
+- Repositorio de Hugging Face: https://huggingface.co/tintitu/speech_paraformer-large-contextual_asr_nat-zh-cn-16k-common-vocab8404-onnx
 - Proyecto upstream FunASR: https://github.com/alibaba-damo-academy/FunASR
 - Repositorio oficial en ModelScope: https://modelscope.cn/models/damo/speech_paraformer-large-contextual_asr_nat-zh-cn-16k-common-vocab8404-onnx
 - Nota: la busqueda web realizada no devolvio resultados relevantes para este modelo; los enlaces anteriores son los unicos pertinentes encontrados en la informacion proporcionada.

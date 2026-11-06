@@ -82,7 +82,7 @@ No se dispone de datos comparativos publicados entre esta build y otros modelos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vmlinux/Muse-Glimmer-30B-ROCmFPX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/vmlinux/Muse-Glimmer-30B-ROCmFPX-GGUF
 - Modelo base (Meta): https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Modelo base assistant (Meta): https://huggingface.co/meta-models/Muse-Glimmer-30B-assistant
 - Proyecto ROCmFPX (runtime): https://github.com/charlie12345/ROCmFPX

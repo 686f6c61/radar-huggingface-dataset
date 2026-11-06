@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fernandofa42/architecture-doc-type-classifier
+- Modelo en Hugging Face: https://huggingface.co/fernandofa42/architecture-doc-type-classifier
 - Space de demostración: https://huggingface.co/spaces/fernandofa42/architecture-search
 - Dataset de entrenamiento: https://huggingface.co/datasets/fernandofa42/architecture-decisions-pt-en
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2

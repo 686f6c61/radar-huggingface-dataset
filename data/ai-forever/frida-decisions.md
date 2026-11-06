@@ -99,9 +99,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Tipo | Parametros | Contexto | razvilka | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FRIDA-Decisions | Encoder T5, decision estructurada | 823M | Configuracion de referencia con `--max-model-len 2048`; no se declara una longitud de contexto oficial | 0,893 (bf16) / 0,891 (int8) / 0,890 (vLLM) | MIT | Pesos abiertos en HuggingFace (safetensors, ONNX) |
+| FRIDA-Decisions | Encoder T5, decision estructurada | 823M | Configuracion de referencia con `--max-model-len 2048`; no se declara una longitud de contexto oficial | 0,893 (bf16) / 0,891 (int8) / 0,890 (vLLM) | MIT | Pesos abiertos en Hugging Face (safetensors, ONNX) |
 | TypeSafe Jev | API comercial de decision | No disponible | No disponible | 0,897 | No disponible (propietaria) | Solo API; diferencia con FRIDA-Decisions no significativa (McNemar p = 0,84) |
-| ai-forever/FRIDA | Encoder T5 base | 823M | No disponible | No disponible | No disponible en la informacion proporcionada | Pesos abiertos en HuggingFace |
+| ai-forever/FRIDA | Encoder T5 base | 823M | No disponible | No disponible | No disponible en la informacion proporcionada | Pesos abiertos en Hugging Face |
 | Otros modelos abiertos evaluados en razvilka | No disponible | No disponible | No disponible | Inferiores a FRIDA-Decisions segun el autor | No disponible | No disponible |
 
 La model card afirma que FRIDA-Decisions obtuvo la puntuacion mas alta entre los modelos abiertos probados en razvilka, pero no identifica cuales eran ni sus resultados, por lo que no es posible completar la comparativa con cifras.
@@ -121,7 +121,7 @@ La model card afirma que FRIDA-Decisions obtuvo la puntuacion mas alta entre los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ai-forever/FRIDA-Decisions
+- Modelo en Hugging Face: https://huggingface.co/ai-forever/FRIDA-Decisions
 - Codigo en GitHub: https://github.com/ai-forever/FRIDA-Decisions
 - Demo (Space): https://huggingface.co/spaces/ai-forever/FRIDA-Decisions
 - Dataset de evaluacion razvilka: https://huggingface.co/datasets/artemsnegirev/razvilka

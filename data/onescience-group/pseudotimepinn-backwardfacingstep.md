@@ -69,7 +69,7 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PseudoTimePINN-BackwardFacingStep | PINN con pseudo-tiempo adaptativo, Fourier-feature MLP | no disponible | no aplica | Error L2 en `u` 0.003582 (mejor checkpoint) | other | HuggingFace + ModelScope |
+| PseudoTimePINN-BackwardFacingStep | PINN con pseudo-tiempo adaptativo, Fourier-feature MLP | no disponible | no aplica | Error L2 en `u` 0.003582 (mejor checkpoint) | other | Hugging Face + ModelScope |
 | PINN estandar para BFS Re=800 (formulacion clasica) | PINN sin pseudo-tiempo | no disponible | no aplica | No disponible en la informacion proporcionada | no disponible | no disponible |
 | JAXPI2 backward-facing-step | PINN en JAX con datos de referencia BFS | no disponible | no aplica | No disponible en la informacion proporcionada | consultar repositorio original | GitHub (sifanexisted/jaxpi2) |
 
@@ -89,7 +89,7 @@ La comparacion cuantitativa con alternativas no esta disponible en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/PseudoTimePINN-BackwardFacingStep
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/PseudoTimePINN-BackwardFacingStep
 - Articulo: https://arxiv.org/abs/2604.23528
 - Dataset de referencia SU2 en ModelScope: https://www.modelscope.cn/datasets/OneScience/BackwardFacingStep-SU2-Re800
 - Repositorio OneScience en GitHub: https://github.com/onescience-ai/OneScience

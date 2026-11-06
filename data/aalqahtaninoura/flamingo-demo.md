@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flamingo-demo es un repositorio de HuggingFace publicado por el usuario aalqahtaninoura que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas de generación. Según su propia model card, se trata de un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. El autor indica de forma explícita que no se reclama ninguna puntuación de benchmark.
+Flamingo-demo es un repositorio de Hugging Face publicado por el usuario aalqahtaninoura que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas de generación. Según su propia model card, se trata de un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. El autor indica de forma explícita que no se reclama ninguna puntuación de benchmark.
 
 El dato más relevante es la discrepancia entre la etiqueta de configuración y el tamaño real: aunque el `config.json` describe el modelo con escala "giant" y fusión por cross-attention, el recuento real de parámetros en safetensors es de 49.600, una cifra propia de un modelo de juguete. Esto refuerza la naturaleza de demo del repositorio.
 
@@ -79,5 +79,5 @@ No disponible. No existen modelos comparables en el mismo espacio: se trata de u
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aalqahtaninoura/flamingo-demo
+- Repositorio en Hugging Face: https://huggingface.co/aalqahtaninoura/flamingo-demo
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

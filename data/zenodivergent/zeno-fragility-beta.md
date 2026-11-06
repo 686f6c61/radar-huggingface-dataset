@@ -88,7 +88,7 @@ No se dispone de modelos públicos equivalentes de meta-pronóstico de fragilida
 
 | Alternativa | Tipo | Parámetros | Rendimiento (warning) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zeno Fragility Beta | GBDT por fuente + logístico | 62.880 | 0,41-0,82 según fuente | apache-2.0 | HuggingFace |
+| Zeno Fragility Beta | GBDT por fuente + logístico | 62.880 | 0,41-0,82 según fuente | apache-2.0 | Hugging Face |
 | Regla de distancia a la multitud | Regla heurística simple | 0 | 0,18-0,70 según fuente | no aplicable | línea base interna |
 | Media simple de la multitud | Agregado sin ponderación | 0 | usada como referencia de seguridad | no aplicable | línea base interna |
 | Red neuronal previa (descartada) | Red neuronal (2M-32M) | 2.000.000-32.000.000 | peor que la media simple en datos reservados | no disponible | no publicada |
@@ -109,10 +109,10 @@ No se han identificado alternativas de terceros comparables en la información d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZenoDivergent/zeno-fragility-beta
+- Modelo en Hugging Face: https://huggingface.co/ZenoDivergent/zeno-fragility-beta
 - Arquitectura e investigación: https://zenodivergent.dev/model
 - Sitio del proyecto: https://zenodivergent.dev/
 - Run de entrenamiento en directo: https://zenodivergent.dev/live-read
 - Publicación en X sobre ForecastBench: https://x.com/zenoVision_/status/2103894540411420723
 - Publicación en X sobre el laboratorio abierto: https://x.com/zenoVision_/status/2102181483838418986
-- Perfil de la organización en HuggingFace: https://huggingface.co/zeno-ai/models
+- Perfil de la organización en Hugging Face: https://huggingface.co/zeno-ai/models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mradermacher/Qwen3.5-9B-Claude-GBO-Fire-Deckard-Agent-Heretic-BF16-GGUF` es una cuantización en formato GGUF del modelo base `nightmedia/Qwen3.5-9B-Claude-GBO-Fire-Deckard-Agent-Heretic-BF16`, publicado por el usuario mradermacher en HuggingFace. Se trata de una adaptación de un modelo de la familia Qwen3.5, concretamente una variante de 9B parámetros que, según la información disponible, es un modelo denso con una longitud de contexto nativa de 262.144 tokens. El nombre sugiere que el modelo original ha sido sometido a un proceso de fine-tuning o mezcla con estilos asociados a Claude, GBO, Fire, Deckard, Agent y Heretic, aunque no se dispone de detalles sobre dichos procesos.
+El modelo `mradermacher/Qwen3.5-9B-Claude-GBO-Fire-Deckard-Agent-Heretic-BF16-GGUF` es una cuantización en formato GGUF del modelo base `nightmedia/Qwen3.5-9B-Claude-GBO-Fire-Deckard-Agent-Heretic-BF16`, publicado por el usuario mradermacher en Hugging Face. Se trata de una adaptación de un modelo de la familia Qwen3.5, concretamente una variante de 9B parámetros que, según la información disponible, es un modelo denso con una longitud de contexto nativa de 262.144 tokens. El nombre sugiere que el modelo original ha sido sometido a un proceso de fine-tuning o mezcla con estilos asociados a Claude, GBO, Fire, Deckard, Agent y Heretic, aunque no se dispone de detalles sobre dichos procesos.
 
 La relevancia de esta ficha radica en que ofrece una versión cuantizada (GGUF) de un modelo que, por su tamaño, puede ejecutarse en hardware de consumo, lo que facilita su uso en entornos locales o con recursos limitados. Sin embargo, la información pública es muy escasa: no se especifican la licencia, los idiomas soportados, los datos de entrenamiento ni los benchmarks. Por tanto, esta ficha se basa únicamente en los datos disponibles y marca como "no disponible" cualquier aspecto no confirmado.
 
@@ -66,8 +66,8 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-9B-Claude-GBO-Fire-Deckard-Agent-Heretic-BF16-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/nightmedia/Qwen3.5-9B-Claude-GBO-Fire-Deckard-Agent-Heretic-BF16
+- Modelo cuantizado en Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-9B-Claude-GBO-Fire-Deckard-Agent-Heretic-BF16-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/nightmedia/Qwen3.5-9B-Claude-GBO-Fire-Deckard-Agent-Heretic-BF16
 - Paper técnico de Qwen3 (no específico de Qwen3.5): https://arxiv.org/pdf/2505.09388
 - Referencia de Qwen3.5-9B en LM Studio: https://lmstudio.ai/models/qwen/qwen3.5-9b
 - Referencia en Ollama: https://ollama.com/library/qwen3.5:9b

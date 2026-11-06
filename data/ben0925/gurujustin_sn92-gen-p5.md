@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ben0925/gurujustin_sn92-gen-p5 | 26,1 B | no disponible | MIT | HuggingFace, 0 descargas | Fine-tune LoRA de una soup sn92 |
-| ronanlee777/sn92-gen-ma | no disponible | no disponible | no disponible | HuggingFace | Modelo base directo del fine-tune |
-| isomsom/sn92-gen-m87b | no disponible | no disponible | no disponible | HuggingFace | Componente de la soup upstream |
-| xflud/sn92-decider-1 | no disponible | no disponible | no disponible | HuggingFace | Componente de la soup upstream |
+| ben0925/gurujustin_sn92-gen-p5 | 26,1 B | no disponible | MIT | Hugging Face, 0 descargas | Fine-tune LoRA de una soup sn92 |
+| ronanlee777/sn92-gen-ma | no disponible | no disponible | no disponible | Hugging Face | Modelo base directo del fine-tune |
+| isomsom/sn92-gen-m87b | no disponible | no disponible | no disponible | Hugging Face | Componente de la soup upstream |
+| xflud/sn92-decider-1 | no disponible | no disponible | no disponible | Hugging Face | Componente de la soup upstream |
 
 No se dispone de datos de rendimiento ni de especificaciones completas de los modelos comparables, por lo que la comparativa se limita a la cadena de dependencias declarada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ben0925/gurujustin_sn92-gen-p5
+- Modelo en Hugging Face: https://huggingface.co/ben0925/gurujustin_sn92-gen-p5
 - Modelo base directo: https://huggingface.co/ronanlee777/sn92-gen-ma
 - Componente upstream 1: https://huggingface.co/isomsom/sn92-gen-m87b
 - Componente upstream 2: https://huggingface.co/xflud/sn92-decider-1

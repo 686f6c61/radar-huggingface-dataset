@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hparam-92m-block-mtp-truncated-peak_lr-3e-5-wu-0p01-s42` es un modelo de lenguaje de 92.138.496 parámetros desarrollado por el usuario de HuggingFace violetxi (Violet Xiang), concebido específicamente para la generación de notación de ajedrez. Forma parte de un barrido de hiperparámetros (el autor publica 134 modelos en su perfil) y esta ficha corresponde al punto de control del paso 185.000 de la condición `92m-blktrunc-lr3e5-wu01-s42`. El modelo emplea una arquitectura propietaria etiquetada como `looped_block_mtp`, basada en transformadores con bloques recurrentes y predicción multi-token (MTP) entrenada con truncated BPTT.
+El modelo `hparam-92m-block-mtp-truncated-peak_lr-3e-5-wu-0p01-s42` es un modelo de lenguaje de 92.138.496 parámetros desarrollado por el usuario de Hugging Face violetxi (Violet Xiang), concebido específicamente para la generación de notación de ajedrez. Forma parte de un barrido de hiperparámetros (el autor publica 134 modelos en su perfil) y esta ficha corresponde al punto de control del paso 185.000 de la condición `92m-blktrunc-lr3e5-wu01-s42`. El modelo emplea una arquitectura propietaria etiquetada como `looped_block_mtp`, basada en transformadores con bloques recurrentes y predicción multi-token (MTP) entrenada con truncated BPTT.
 
 A diferencia de un modelo autorregresivo convencional, este sistema puntúa tres posiciones de consulta fijas y causalmente ordenadas en cada pasada recurrente, y `generate()` confirma el bloque completo de tres tokens antes de pasar al siguiente bloque. El contexto es de 1.024 tokens lógicos, incluyendo el bloque de consulta, y el token máscara (ID 81) no puede generarse. No soporta caché KV ni búsqueda por haces.
 
@@ -25,7 +25,7 @@ Su relevancia es fundamentalmente de investigación: explora la predicción por 
 
 La arquitectura `looped_block_mtp` organiza la inferencia en pasadas recurrentes que puntúan tres slots de consulta fijos y causalmente ordenados. `model.block_logits(input_ids)` devuelve un tensor `[batch, 1, 3, vocab]` con la predicción del siguiente bloque de tres tokens. El entrenamiento utiliza BPTT truncado, tal y como indica el nombre de la condición (`blktrunc`), lo que limita la profundidad del grafo de retropropagación a través de las recurrencias. El checkpoint exportado corresponde al paso 185.000 y se identifica mediante la revisión `step-185000`; cada checkpoint del barrido tiene su propia rama.
 
-La función de pérdida registrada es una pérdida de bloque densa y no solapada: `model(input_ids, labels=input_ids)` hace que `logits[:, t]` puntúe el token `t+1`, de modo que cada grupo de tres tokens ve únicamente el prefijo anterior a ese grupo. El autor especifica explícitamente que esto no es un entrenamiento NTP estándar con teacher forcing. No se detalla en la información proporcionada el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO. El archivo `training_summary.json` vincula la exportación con el checksum nativo y las versiones de código fuente, y las licencias del código del núcleo adaptado se incluyen junto a él. Los valores de safetensors preservan exactamente los tensores nativos; el estado del optimizador y de recuperación de RNG permanece en el archivo nativo y no es necesario para inferencia con HuggingFace.
+La función de pérdida registrada es una pérdida de bloque densa y no solapada: `model(input_ids, labels=input_ids)` hace que `logits[:, t]` puntúe el token `t+1`, de modo que cada grupo de tres tokens ve únicamente el prefijo anterior a ese grupo. El autor especifica explícitamente que esto no es un entrenamiento NTP estándar con teacher forcing. No se detalla en la información proporcionada el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO. El archivo `training_summary.json` vincula la exportación con el checksum nativo y las versiones de código fuente, y las licencias del código del núcleo adaptado se incluyen junto a él. Los valores de safetensors preservan exactamente los tensores nativos; el estado del optimizador y de recuperación de RNG permanece en el archivo nativo y no es necesario para inferencia con Hugging Face.
 
 ## Capacidades
 
@@ -68,9 +68,9 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `hparam-92m-block-mtp-truncated-peak_lr-3e-5-wu-0p01-s42` | 92,1 M | 1.024 tokens logicos | no disponible | HuggingFace (revision `step-185000`) | Variante principal de esta ficha, BPTT truncado |
-| `hparam-92m-block-mtp-truncated-peak_lr-1e-4-wu-0p05-s42` | no disponible | no disponible | no disponible | HuggingFace | Misma familia, distinto `peak_lr` y `warmup` |
-| `hparam-92m-sequential-mtp-full-peak_lr-3e-5-wu-...` | no disponible | no disponible | no disponible | HuggingFace | Variante secuencial sin truncado del grafo |
+| `hparam-92m-block-mtp-truncated-peak_lr-3e-5-wu-0p01-s42` | 92,1 M | 1.024 tokens logicos | no disponible | Hugging Face (revision `step-185000`) | Variante principal de esta ficha, BPTT truncado |
+| `hparam-92m-block-mtp-truncated-peak_lr-1e-4-wu-0p05-s42` | no disponible | no disponible | no disponible | Hugging Face | Misma familia, distinto `peak_lr` y `warmup` |
+| `hparam-92m-sequential-mtp-full-peak_lr-3e-5-wu-...` | no disponible | no disponible | no disponible | Hugging Face | Variante secuencial sin truncado del grafo |
 
 ## Limitaciones y advertencias
 
@@ -88,5 +88,5 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/hparam-92m-block-mtp-truncated-peak_lr-3e-5-wu-0p01-s42
+- Modelo en Hugging Face: https://huggingface.co/violetxi/hparam-92m-block-mtp-truncated-peak_lr-3e-5-wu-0p01-s42
 - Perfil del autor (134 modelos publicados): https://huggingface.co/violetxi

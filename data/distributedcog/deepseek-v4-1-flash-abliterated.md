@@ -101,7 +101,7 @@ Las busquedas web realizadas no devolvieron informacion util sobre modelos compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/distributedcog/DeepSeek-V4.1-Flash-abliterated
+- Repositorio Hugging Face: https://huggingface.co/distributedcog/DeepSeek-V4.1-Flash-abliterated
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Metodo de abliteration biproyectada que preserva la norma (grimjim, 2025): no disponible como enlace en la informacion proporcionada
 - Conjuntos de evaluacion citados (`mlabonne/harmful_behaviors`, `mlabonne/harmless_alpaca`): no disponibles como enlaces en la informacion proporcionada

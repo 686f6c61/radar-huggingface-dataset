@@ -67,7 +67,7 @@ No se dispone de información suficiente para comparar directamente con otros mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level2-so101-widowx-texture-video-lora-iter-200
+- Repositorio Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level2-so101-widowx-texture-video-lora-iter-200
 - Proyecto DreamZero-SO101 (world model para SO-101): https://vizuara-ai-lab.github.io/dreamzero-so101/index.html
 - Código DreamZero-SO101 en GitHub: https://github.com/Vizuara-AI-Lab/dreamzero-so101
 - Otro LoRA similar de la misma serie: https://huggingface.co/dreamdifferent/vam-cross-level4-panda-robosuite-widowx-texture-video-lora-iter-200

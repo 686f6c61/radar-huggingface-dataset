@@ -47,7 +47,7 @@ Posteriormente se aplica un SFT de una época sobre una mezcla de 400.000 conver
 - Reproducibilidad de experimentos: las semillas 28, 42 y 1234 y los registros de Weights & Biases permiten replicar el entrenamiento y verificar la estabilidad de las conclusiones frente a la inicialización.
 - Investigación sobre datos sintéticos conversacionales: el modelo se entrenó sobre conversaciones reescritas a partir de documentos educativos, por lo que es útil para estudiar cómo la reescritura conversacional afecta al aprendizaje en modelos pequeños.
 - Fine-tuning académico con recursos limitados: con 981,5 M de parámetros y pesos en bf16 (unos 2 GB), cabe en una única GPU de consumo para experimentos de ajuste fino con LoRA o QLoRA.
-- Evaluación de la fidelidad de la conversión de pesos: el autor verifica los pesos de HuggingFace contra el checkpoint de Megatron recalculando pérdidas de validación (diferencia absoluta de 0,0001), lo que lo convierte en un caso de referencia para pipelines de conversión Megatron → transformers.
+- Evaluación de la fidelidad de la conversión de pesos: el autor verifica los pesos de Hugging Face contra el checkpoint de Megatron recalculando pérdidas de validación (diferencia absoluta de 0,0001), lo que lo convierte en un caso de referencia para pipelines de conversión Megatron → transformers.
 - Generación de texto en inglés en entornos con restricciones de memoria: su tamaño reducido permite desplegarlo en CPU o en GPUs modestas para pruebas de formato ChatML y de parada en `<|im_end|>`.
 
 ## Benchmarks y rendimiento
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 | `1pp-0.98b-v2-ua-rawanneal-sft` (este) | 981,5 M | 4.096 | Apache 2.0 | Artefacto de investigación; solo inglés; sin benchmarks públicos |
 | `1pp-0.98b-v2-ua-sft` | 981,5 M (misma arquitectura) | 4.096 | Apache 2.0 | Run 1PP completo, sin variante raw anneal; comparación directa de condición |
 | `1pp-0.98b-v2-raw-base` | 981,5 M (misma arquitectura) | 4.096 | Apache 2.0 | Run base sin cooldown sobre conversaciones; punto de partida del anneal |
-| SmolLM2 (familia, 135M–1,7B) | 135 M–1,7 B | Hasta 8.192 en algunos tamaños | Apache 2.0 | Modelo de propósito general de HuggingFace; comparte tokenizador, pero con benchmarks publicados y soporte multilingüe |
+| SmolLM2 (familia, 135M–1,7B) | 135 M–1,7 B | Hasta 8.192 en algunos tamaños | Apache 2.0 | Modelo de propósito general de Hugging Face; comparte tokenizador, pero con benchmarks publicados y soporte multilingüe |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada; la comparación se limita a parámetros, contexto, licencia y naturaleza del artefacto.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-ua-rawanneal-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-ua-rawanneal-sft
 - Run 1PP completo (comparación): https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-ua-sft
 - Run base sin cooldown conversacional: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-raw-base
 - Colección 1pp: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

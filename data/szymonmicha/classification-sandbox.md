@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`szymonmicha/classification-sandbox` es un repositorio de HuggingFace publicado por el usuario szymonmicha que contiene una implementacion funcional de una arquitectura denominada Coca aplicada a tareas de clasificacion, en configuracion base. El propio autor lo describe como un punto de partida experimental: el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. El recuento real de parametros del checkpoint en safetensors es de 24.832, un orden de magnitud propio de un modelo de juguete o de un esqueleto de arquitectura, no de un clasificador utilizable en produccion.
+`szymonmicha/classification-sandbox` es un repositorio de Hugging Face publicado por el usuario szymonmicha que contiene una implementacion funcional de una arquitectura denominada Coca aplicada a tareas de clasificacion, en configuracion base. El propio autor lo describe como un punto de partida experimental: el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. El recuento real de parametros del checkpoint en safetensors es de 24.832, un orden de magnitud propio de un modelo de juguete o de un esqueleto de arquitectura, no de un clasificador utilizable en produccion.
 
 El repositorio incluye codigo Python ejecutable (`inference.py`) con un bloque `__main__` de ejemplo, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y el checkpoint de inicializacion. El autor declara explicitamente que no se reclama ninguna puntuacion de benchmark y que los valores de la receta (optimizador Adam con schedule de warmup constante) son puntos de partida del script, no evidencia de un entrenamiento completado.
 
@@ -38,7 +38,7 @@ En cuanto al entrenamiento, no hay ningun entrenamiento documentado. El autor in
 ## Capacidades
 
 - No se declara ninguna capacidad funcional verificada: el checkpoint es una inicializacion sin entrenar, por lo que no produce predicciones utiles.
-- Tarea prevista por el repositorio: clasificacion (tag `classification` en HuggingFace).
+- Tarea prevista por el repositorio: clasificacion (tag `classification` en Hugging Face).
 - Generacion de texto: no disponible.
 - Razonamiento, matematicas o codigo: no disponible.
 - Vision, audio u otras modalidades: no disponible.
@@ -54,7 +54,7 @@ En cuanto al entrenamiento, no hay ningun entrenamiento documentado. El autor in
 - Andamiaje para desarrollo de modelos personalizados: sirve como plantilla de estructura de repositorio (codigo, `config.json`, `training_args.json`, checkpoint) para equipos que necesitan publicar implementaciones propias que no encajan en las clases estandar de Transformers.
 - Desarrollo de adaptadores de carga: dado que la model card advierte que las APIs genericas de carga automatica requieren un adaptador explicito, este repositorio es un caso de prueba adecuado para escribir y validar dicho adaptador.
 - Linea base de capacidad equivalente en experimentos de clasificacion: el propio autor propone comparar contra una linea base de capacidad similar; este checkpoint, con 24.832 parametros, puede actuar como referencia de baja capacidad siempre que se entrene con la misma exposicion de datos, presupuesto de ajuste y semillas.
-- Docencia y formacion: permite ilustrar el ciclo completo de publicacion de un modelo en HuggingFace (pesos, configuracion, licencia, documentacion) sin incurrir en costes de GPU.
+- Docencia y formacion: permite ilustrar el ciclo completo de publicacion de un modelo en Hugging Face (pesos, configuracion, licencia, documentacion) sin incurrir en costes de GPU.
 - Validacion de pipelines de preprocesado y evaluacion: sirve para probar de extremo a extremo el codigo de carga de datos, calculo de metricas y registro de experimentos antes de escalar a modelos reales.
 - Auditoria de licencias y procedencia de artefactos: util como caso sencillo para verificar flujos internos de revision de licencias Apache 2.0 y terminos de datos de origen.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU consumer: si, en cualquiera, incluidos modelos integrados y sistemas sin GPU dedicada.
 - Opciones de despliegue: no se declara compatibilidad con vLLM, TGI, llama.cpp u Ollama. No hay pesos GGUF publicados. El unico artefacto de ejecucion es `inference.py`, con carga mediante adaptador explicito.
 - Latencia y throughput estimados: no disponibles. Al no existir un modelo entrenado ni una tarea definida, no hay medidas de latencia o throughput publicadas.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -95,5 +95,5 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/szymonmicha/classification-sandbox
+- Repositorio en Hugging Face: https://huggingface.co/szymonmicha/classification-sandbox
 - No se han encontrado enlaces relevantes adicionales (paper, blog, repositorio de codigo o demo) en la busqueda web realizada. Los resultados obtenidos trataban sobre tecnicas de reproduccion asistida en Espana y no guardan ninguna relacion con este modelo.

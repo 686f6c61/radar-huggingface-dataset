@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ani (Grok Companion) - Qwen/HiDream es un modelo de generación de imágenes (no un modelo de lenguaje) alojado en HuggingFace por el usuario IloveAi333. Se trata de un espejo de un modelo publicado originalmente en Civitai por el creador tarnished3029, cuyo propósito es generar ilustraciones del personaje "Ani", la compañera virtual asociada al asistente Grok. El repositorio agrupa varias versiones del modelo, cada una en su propia subcarpeta, y la versión documentada en el README es la v1.0 orientada a Qwen Image.
+Ani (Grok Companion) - Qwen/HiDream es un modelo de generación de imágenes (no un modelo de lenguaje) alojado en Hugging Face por el usuario IloveAi333. Se trata de un espejo de un modelo publicado originalmente en Civitai por el creador tarnished3029, cuyo propósito es generar ilustraciones del personaje "Ani", la compañera virtual asociada al asistente Grok. El repositorio agrupa varias versiones del modelo, cada una en su propia subcarpeta, y la versión documentada en el README es la v1.0 orientada a Qwen Image.
 
 El modelo se etiqueta como "art" y está pensado para su uso en pipelines de difusión (LoRA o checkpoint, aunque la información disponible no especifica la naturaleza exacta de los pesos). El nombre hace referencia a dos ecosistemas de generación de imágenes: Qwen Image y HiDream, lo que sugiere compatibilidad con ambos backends, si bien la documentación proporcionada no detalla parámetros, arquitectura interna ni datos de entrenamiento.
 
@@ -74,8 +74,8 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- [HuggingFace: IloveAi333/Ani_Grok_Companion_-_Qwen_HiDream](https://huggingface.co/IloveAi333/Ani_Grok_Companion_-_Qwen_HiDream)
+- [Hugging Face: IloveAi333/Ani_Grok_Companion_-_Qwen_HiDream](https://huggingface.co/IloveAi333/Ani_Grok_Companion_-_Qwen_HiDream)
 - [Página del modelo en Civitai](https://civitai.com/models/1780193)
 - [Versión v1.0 - Qwen Image en Civitai](https://civitai.com/models/1780193?modelVersionId=2122650)
 - [Perfil del creador en Civitai (tarnished3029)](https://civitai.com/user/tarnished3029)
-- [Subcarpeta v1.0_-_Qwen_Image en HuggingFace](https://huggingface.co/UnifiedHorusRA/Ani_Grok_Companion_-_Qwen_HiDream/tree/main/v1.0_-_Qwen_Image)
+- [Subcarpeta v1.0_-_Qwen_Image en Hugging Face](https://huggingface.co/UnifiedHorusRA/Ani_Grok_Companion_-_Qwen_HiDream/tree/main/v1.0_-_Qwen_Image)

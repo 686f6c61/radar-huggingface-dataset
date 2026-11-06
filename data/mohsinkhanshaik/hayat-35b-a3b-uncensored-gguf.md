@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables en la infor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mohsinkhanshaik/HAYAT-35B-A3B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Mohsinkhanshaik/HAYAT-35B-A3B-Uncensored-GGUF
 - Modelo base (build sin censura de HauhauCS): https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Proyecto HAYAT: https://github.com/mohsinkhanshaik/HAYAT

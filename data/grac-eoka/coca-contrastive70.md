@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Coca-contrastive70 es un repositorio publicado por el usuario grac-eoka en HuggingFace que contiene una implementación propia y de tamano reducido de una arquitectura denominada Coca, orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de una release lista para producción: la propia model card lo describe explícitamente como un punto de partida reproducible y un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*). El repositorio incluye el código fuente del modelo (`model.py`), la configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un fichero de pesos en formato safetensors.
+Coca-contrastive70 es un repositorio publicado por el usuario grac-eoka en Hugging Face que contiene una implementación propia y de tamano reducido de una arquitectura denominada Coca, orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de una release lista para producción: la propia model card lo describe explícitamente como un punto de partida reproducible y un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*). El repositorio incluye el código fuente del modelo (`model.py`), la configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un fichero de pesos en formato safetensors.
 
 El dato más relevante es su tamano real: el fichero safetensors contiene 33.088 parametros totales, una cifra extraordinariamente baja que contrasta con la etiqueta "large" que aparece en su propia documentacion. El repo ocupa 0,0 GB, no registra descargas ni *likes*, y no declara ninguna puntuacion de benchmark. Se publica bajo licencia MIT.
 
@@ -64,7 +64,7 @@ Merece mencion la incoherencia entre la escala declarada ("large") y el recuento
 - Comparativa de recetas de optimizacion: permite contrastar novograd frente a otros optimizadores manteniendo constante la arquitectura, siempre que se igualen datos, presupuesto de ajuste y semillas.
 - Pruebas de humo en CI: al ser un checkpoint de inicializacion diminuto, puede integrarse en tests automatizados que verifiquen que el modelo instancia, carga y ejecuta un *forward pass* sin errores antes de escalar a configuraciones mayores.
 - Docencia y prototipado rapido de arquitecturas: su tamano (33.088 parametros) permite ejecutarlo en cualquier maquina, incluso sin GPU, lo que lo hace util para explicar conceptos de atencion agrupada o fusion por concatenacion sin coste de computo.
-- Auditoria de artefactos de HuggingFace: sirve como ejemplo de repositorio que declara honestamente la ausencia de entrenamiento y de benchmarks, util en discusiones sobre trazabilidad de releases.
+- Auditoria de artefactos de Hugging Face: sirve como ejemplo de repositorio que declara honestamente la ausencia de entrenamiento y de benchmarks, util en discusiones sobre trazabilidad de releases.
 
 ## Benchmarks y rendimiento
 
@@ -89,7 +89,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 - No se reclama ninguna puntuacion de benchmark, por lo que no hay evidencia de rendimiento de ningun tipo.
 - No se declaran idiomas soportados; no cabe asumir cobertura multilingue.
 - No se especifica la longitud de contexto, por lo que no puede planificarse ningun caso de uso que dependa de ventanas largas.
-- Al ser una implementacion personalizada, no es cargable con APIs automaticas genericas de HuggingFace sin escribir un adaptador especifico.
+- Al ser una implementacion personalizada, no es cargable con APIs automaticas genericas de Hugging Face sin escribir un adaptador especifico.
 - Incoherencia documentada: el autor etiqueta la escala como "large" mientras que el fichero safetensors contiene 33.088 parametros. Conviene verificar cualquier afirmacion de escala en futuras revisiones del repositorio.
 - Sin datos de dataset: no se conoce la procedencia ni las condiciones de los datos de entrenamiento previstos. El autor advierte de revisar aparte los terminos de las fuentes externas si se usan datasets de terceros.
 - Licencia: MIT, permisiva y compatible con uso comercial del codigo y de los pesos siempre que se conserve el aviso de copyright. No obstante, el valor comercial del artefacto es practicamente nulo al no estar entrenado.
@@ -97,5 +97,5 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/grac-eoka/coca-contrastive70
+- Repositorio en Hugging Face: https://huggingface.co/grac-eoka/coca-contrastive70
 - No se han encontrado en la informacion proporcionada otros enlaces (papers, blogs, repositorios de codigo o demos) asociados a este modelo.

@@ -63,11 +63,11 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Huihui-Qwen3.6-35B-A3B-abliterated-3bit-XL-mlx | 35,1B MoE (~3B activos) | No especificado | 3-bit BaseQuant_XL | No disponible | HuggingFace |
-| Huihui-Qwen3.6-35B-A3B-abliterated-6bit-XL-mlx | 35,1B MoE (~3B activos) | No especificado | 6-bit BaseQuant_XL | No disponible | HuggingFace |
-| Huihui-Qwen3.6-35B-A3B-abliterated-6bit-mlx | 35,1B MoE (~3B activos) | No especificado | 6-bit estándar | No disponible | HuggingFace |
-| huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated (base) | 35,1B MoE (~3B activos) | Extendida, sin cifra | Sin cuantizar (bf16) | No disponible | HuggingFace |
-| Qwen/Qwen3.6-35B-A3B (original) | 35,1B MoE (~3B activos) | Extendida, sin cifra | Sin cuantizar | Depende de la licencia de Qwen | HuggingFace |
+| Huihui-Qwen3.6-35B-A3B-abliterated-3bit-XL-mlx | 35,1B MoE (~3B activos) | No especificado | 3-bit BaseQuant_XL | No disponible | Hugging Face |
+| Huihui-Qwen3.6-35B-A3B-abliterated-6bit-XL-mlx | 35,1B MoE (~3B activos) | No especificado | 6-bit BaseQuant_XL | No disponible | Hugging Face |
+| Huihui-Qwen3.6-35B-A3B-abliterated-6bit-mlx | 35,1B MoE (~3B activos) | No especificado | 6-bit estándar | No disponible | Hugging Face |
+| huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated (base) | 35,1B MoE (~3B activos) | Extendida, sin cifra | Sin cuantizar (bf16) | No disponible | Hugging Face |
+| Qwen/Qwen3.6-35B-A3B (original) | 35,1B MoE (~3B activos) | Extendida, sin cifra | Sin cuantizar | Depende de la licencia de Qwen | Hugging Face |
 
 La comparativa se basa en características disponibles; no hay benchmarks publicados que permitan comparar rendimiento real.
 

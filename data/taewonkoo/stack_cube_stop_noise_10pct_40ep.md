@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `taewonkoo/stack_cube_stop_noise_10pct_40ep` | 450M | no aplica | Apache 2.0 | HuggingFace |
-| `lerobot/smolvla_base` | 450M | no aplica | Apache 2.0 | HuggingFace |
-| `taewonkoo/stack_cube_stop_noise_50pct_40ep` (dataset) | no aplica | no aplica | no disponible | HuggingFace |
+| `taewonkoo/stack_cube_stop_noise_10pct_40ep` | 450M | no aplica | Apache 2.0 | Hugging Face |
+| `lerobot/smolvla_base` | 450M | no aplica | Apache 2.0 | Hugging Face |
+| `taewonkoo/stack_cube_stop_noise_50pct_40ep` (dataset) | no aplica | no aplica | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. El modelo es un fine-tuning del base, por lo que comparte arquitectura y parámetros. La diferencia principal es el dataset de entrenamiento específico (con 10% de ruido) y la tarea concreta. No hay información sobre otros modelos VLA comparables en la documentación disponible.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taewonkoo/stack_cube_stop_noise_10pct_40ep
+- Modelo en Hugging Face: https://huggingface.co/taewonkoo/stack_cube_stop_noise_10pct_40ep
 - Dataset de entrenamiento: https://huggingface.co/datasets/taewonkoo/stack_cube_stop_noise_10pct_40ep
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844

@@ -87,7 +87,7 @@ Según Z.ai, GLM-5.3-Flash supera a GLM-5.2 en benchmarks y cargas de trabajo re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AesSedai/GLM-5.3-Flash-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AesSedai/GLM-5.3-Flash-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Blog de Z.ai sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Página del modelo en Modal: https://modal.com/library/zai/glm-5-3-flash

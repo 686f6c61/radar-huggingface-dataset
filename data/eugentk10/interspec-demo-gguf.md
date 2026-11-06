@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparables con otras familias de modelos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EugenTK10/InterSpec-demo-GGUF
+- Repositorio Hugging Face: https://huggingface.co/EugenTK10/InterSpec-demo-GGUF
 - Modelo base en el Hub: https://huggingface.co/EugenTK10/InterSpec
 - Codigo, tesis y salidas de evaluacion: https://github.com/EugenTK10/InterSpec
 - Pythia-1.4b (EleutherAI): https://huggingface.co/EleutherAI/pythia-1.4b

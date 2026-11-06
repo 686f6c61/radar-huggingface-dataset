@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no es un modelo de lenguaje funcional: es una prueba de concepto (PoC) de seguridad publicada por el usuario de HuggingFace alicesipp bajo la etiqueta `authorized-poc`. Los pesos y el tokenizador son una copia directa de `sshleifer/tiny-gpt2`, un GPT-2 en miniatura de 3.274.752 parametros, por lo que no existe entrenamiento adicional, ajuste fino ni capacidad generativa util. El interes del artefacto reside en su codigo de configuracion personalizada, que se ejecuta cuando se carga el modelo con `trust_remote_code=True`: segun la propia model card, escribe un fichero marcador en `/tmp` y envia una llamada JSON a un endpoint RequestRepo controlado por el investigador.
+Este repositorio no es un modelo de lenguaje funcional: es una prueba de concepto (PoC) de seguridad publicada por el usuario de Hugging Face alicesipp bajo la etiqueta `authorized-poc`. Los pesos y el tokenizador son una copia directa de `sshleifer/tiny-gpt2`, un GPT-2 en miniatura de 3.274.752 parametros, por lo que no existe entrenamiento adicional, ajuste fino ni capacidad generativa util. El interes del artefacto reside en su codigo de configuracion personalizada, que se ejecuta cuando se carga el modelo con `trust_remote_code=True`: segun la propia model card, escribe un fichero marcador en `/tmp` y envia una llamada JSON a un endpoint RequestRepo controlado por el investigador.
 
 El problema que ilustra es relevante para cualquier equipo que despliegue modelos de terceros: la bandera `trust_remote_code` de `transformers` permite ejecucion de codigo arbitrario en el momento de la importacion, antes incluso de que se procese ningun token. En un entorno de inferencia real (vLLM, TGI, endpoints gestionados) esto equivale a una vulnerabilidad de ejecucion remota de codigo (RCE) en el plano de control del servidor, con acceso potencial a variables de entorno, volumenes montados y red interna. El repositorio se presenta como no destructivo y sin acceso a credenciales ni datos de clientes, pero esa afirmacion es una declaracion del autor y no una garantia verificable.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | `openai-community/gpt2` (GPT-2 small) | 124 M | 1.024 tokens | Generacion de texto en ingles | MIT | Publico, muy usado |
 | `distilgpt2` | 82 M | 1.024 tokens | Generacion de texto destilada de GPT-2 | MIT | Publico, muy usado |
 
-No hay modelos comparables en la categoria "PoC de seguridad publicada como modelo de HuggingFace": se trata de un artefacto ofensivo/defensivo, no de un modelo de lenguaje. Frente a `sshleifer/tiny-gpt2`, del que copia los pesos, la unica diferencia es la clase de configuracion personalizada y su comportamiento en tiempo de carga. No se dispone de datos de rendimiento comparativo.
+No hay modelos comparables en la categoria "PoC de seguridad publicada como modelo de Hugging Face": se trata de un artefacto ofensivo/defensivo, no de un modelo de lenguaje. Frente a `sshleifer/tiny-gpt2`, del que copia los pesos, la unica diferencia es la clase de configuracion personalizada y su comportamiento en tiempo de carga. No se dispone de datos de rendimiento comparativo.
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ No hay modelos comparables en la categoria "PoC de seguridad publicada como mode
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/alicesipp/exoscale-vllm-rce-live-webhook-20261011
+- Ficha del modelo en Hugging Face: https://huggingface.co/alicesipp/exoscale-vllm-rce-live-webhook-20261011
 - Perfil del autor: https://huggingface.co/alicesipp
 - Repositorio relacionado del mismo autor: https://huggingface.co/alicesipp/exoscale-vllm-rce-7efd8f711362
 - Modelo base: https://huggingface.co/sshleifer/tiny-gpt2

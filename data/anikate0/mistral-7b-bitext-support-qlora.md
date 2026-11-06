@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Anikate0/mistral-7b-bitext-support-qlora` es un adaptador o checkpoint derivado de Mistral-7B publicado en HuggingFace por el usuario Anikate0. El nombre sugiere un ajuste fino mediante QLoRA (cuantización de 4 bits con adaptadores LoRA) orientado a dar soporte bilingüe o a texto bidireccional ("bitext"), presumiblemente para tareas de traducción automática o alineamiento de pares de oraciones. El repositorio tiene un tamaño de 0,1 GB, lo que es coherente con un conjunto de adaptadores LoRA más que con un modelo completo de 7B parámetros en precisión completa.
+`Anikate0/mistral-7b-bitext-support-qlora` es un adaptador o checkpoint derivado de Mistral-7B publicado en Hugging Face por el usuario Anikate0. El nombre sugiere un ajuste fino mediante QLoRA (cuantización de 4 bits con adaptadores LoRA) orientado a dar soporte bilingüe o a texto bidireccional ("bitext"), presumiblemente para tareas de traducción automática o alineamiento de pares de oraciones. El repositorio tiene un tamaño de 0,1 GB, lo que es coherente con un conjunto de adaptadores LoRA más que con un modelo completo de 7B parámetros en precisión completa.
 
-La model card es la plantilla automática de HuggingFace sin rellenar: no aporta información sobre datos de entrenamiento, hiperparámetros, licencia, idiomas ni evaluación. No hay descargas ni likes en el momento de redactar esta ficha, y el pipeline no está declarado. La fecha de creación indicada (2026-11-02) resulta anómala y no es verificable.
+La model card es la plantilla automática de Hugging Face sin rellenar: no aporta información sobre datos de entrenamiento, hiperparámetros, licencia, idiomas ni evaluación. No hay descargas ni likes en el momento de redactar esta ficha, y el pipeline no está declarado. La fecha de creación indicada (2026-11-02) resulta anómala y no es verificable.
 
 La relevancia de este modelo es, por tanto, limitada y debe evaluarse con cautela: se trata de un artefacto experimental sin documentación, sin métricas publicadas y sin licencia declarada, lo que impide recomendarlo para uso en producción sin una validación previa por parte del equipo que lo adopte.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Anikate0/mistral-7b-bitext-support-qlora | 7B (base) + adaptador | no disponible | no disponible | HuggingFace, sin descargas |
-| mistralai/Mistral-7B-v0.1 | 7B | 8.192 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| mistralai/Mistral-7B-Instruct-v0.2 | 7B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| Adaptadores LoRA comunitarios para traducción sobre Mistral-7B | 7B (base) + adaptador | variable | variable | HuggingFace |
+| Anikate0/mistral-7b-bitext-support-qlora | 7B (base) + adaptador | no disponible | no disponible | Hugging Face, sin descargas |
+| mistralai/Mistral-7B-v0.1 | 7B | 8.192 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| mistralai/Mistral-7B-Instruct-v0.2 | 7B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| Adaptadores LoRA comunitarios para traducción sobre Mistral-7B | 7B (base) + adaptador | variable | variable | Hugging Face |
 
 La comparación se limita a características estructurales: no hay datos de rendimiento del modelo evaluado que permitan contrastarlo con alternativas en tareas concretas.
 
@@ -82,6 +82,6 @@ La comparación se limita a características estructurales: no hay datos de rend
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Anikate0/mistral-7b-bitext-support-qlora
+- Hugging Face: https://huggingface.co/Anikate0/mistral-7b-bitext-support-qlora
 - Referencia citada en la model card (calculadora de impacto ambiental): https://mlco2.github.io/impact#compute
 - Paper citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

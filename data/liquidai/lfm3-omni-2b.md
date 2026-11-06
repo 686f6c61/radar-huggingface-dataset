@@ -25,7 +25,7 @@ Es relevante porque comprime cuatro capacidades (visión, audio, lenguaje y sín
 | Vocabulario | 128.000 tokens de texto |
 | Procesamiento visual | Imagenes y video a resolucion nativa; cada bloque 2x2 de parches se convierte en un token de lenguaje; video muestreado a 2 fps |
 | Tipo de checkpoint | Modelo omnimodal post-entrenado |
-| Pipeline (HuggingFace) | `any-to-any` |
+| Pipeline (Hugging Face) | `any-to-any` |
 | Descargas / likes | 83 descargas, 45 likes (a fecha de actualizacion de la ficha) |
 | Fechas | Creado el 2026-10-21, actualizado el 2026-10-27 |
 
@@ -97,7 +97,7 @@ Los datos de los modelos comparables no provienen de la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/LFM3-Omni-2B
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Licencia (archivo LICENSE del repositorio): https://huggingface.co/LiquidAI/LFM3-Omni-2B/blob/main/LICENSE
 - Blog de presentación de la familia LFM3: https://www.liquid.ai/blog/lfm3
 - Documentación de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome

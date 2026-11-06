@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfm_filtered_insert_xxf_character-0k_1k_2k_3k_4k_simpleavg_merge` es un checkpoint resultante de una fusión de pesos (*model merge*) publicada por el usuario `yuhengtu-bytedance` en HuggingFace. No es un modelo entrenado desde cero: se ha generado con la herramienta mergekit aplicando el método de fusión lineal (*Linear*) sobre cinco checkpoints de un mismo entrenamiento, correspondientes a los pasos globales 0, 1000, 2000, 3000 y 4000 de una ejecución denominada `filtered_insert_xxf_character`, tomando el paso 4000 como modelo base y asignando peso 1.0 a cada uno de los cinco, con normalización de pesos activada.
+`sfm_filtered_insert_xxf_character-0k_1k_2k_3k_4k_simpleavg_merge` es un checkpoint resultante de una fusión de pesos (*model merge*) publicada por el usuario `yuhengtu-bytedance` en Hugging Face. No es un modelo entrenado desde cero: se ha generado con la herramienta mergekit aplicando el método de fusión lineal (*Linear*) sobre cinco checkpoints de un mismo entrenamiento, correspondientes a los pasos globales 0, 1000, 2000, 3000 y 4000 de una ejecución denominada `filtered_insert_xxf_character`, tomando el paso 4000 como modelo base y asignando peso 1.0 a cada uno de los cinco, con normalización de pesos activada.
 
 El resultado es un modelo de 6.856.253.440 parámetros (aproximadamente 6,86 mil millones) de arquitectura GPT-NeoX, según la etiqueta `gpt_neox` del repositorio, con pesos publicados en formato safetensors y `out_dtype` en bfloat16. El repositorio ocupa 13,7 GB. La model card no aporta información sobre el modelo base original, el tokenizador, la longitud de contexto, los idiomas soportados ni la licencia, y no se han publicado resultados de evaluación.
 
@@ -39,7 +39,7 @@ No ha habido entrenamiento adicional en esta publicación: el modelo se ha const
 
 - Generación de texto en modo conversacional: el repositorio está etiquetado como `conversational` y `text-generation`, por lo que está orientado a completar y mantener diálogos.
 - Compatibilidad con el ecosistema `transformers`, cargable como modelo causal de GPT-NeoX.
-- Compatibilidad declarada con `text-generation-inference` y con *endpoints* gestionados de HuggingFace (`endpoints_compatible`).
+- Compatibilidad declarada con `text-generation-inference` y con *endpoints* gestionados de Hugging Face (`endpoints_compatible`).
 - Tool calling / function calling: no disponible (no se documenta soporte de herramientas ni de plantillas de *chat* específicas).
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible (no se declara ninguna lista de idiomas).
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada en cuantizaciones de 8 bits y 4 bits: alrededor de 7-8 GB y 4-5 GB respectivamente, siempre que el usuario genere esas cuantizaciones por su cuenta (no existen en el repositorio).
 - GPU recomendadas: A100 40 GB, H100 80 GB, L40S 48 GB o A6000 48 GB para bfloat16 sin restricciones de contexto; RTX 4090, RTX 3090 o RTX A5000 (24 GB) para bfloat16 con lotes pequeños y contextos moderados.
 - Cabe en GPU de consumo: sí en tarjetas de 24 GB (RTX 3090, 4090) en bfloat16; en tarjetas de 16 GB (RTX 4080, 4060 Ti 16 GB) solo con cuantización de 8 bits; en tarjetas de 8-12 GB únicamente con cuantización de 4 bits.
-- Opciones de despliegue: `transformers` (carga directa), `text-generation-inference` (TGI) según las etiquetas, HuggingFace Inference Endpoints (`endpoints_compatible`), y vLLM para *serving* con *batching* continuo. Para llama.cpp u Ollama sería necesario convertir previamente los pesos a GGUF, paso no documentado por el autor.
+- Opciones de despliegue: `transformers` (carga directa), `text-generation-inference` (TGI) según las etiquetas, Hugging Face Inference Endpoints (`endpoints_compatible`), y vLLM para *serving* con *batching* continuo. Para llama.cpp u Ollama sería necesario convertir previamente los pesos a GGUF, paso no documentado por el autor.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia por petición.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No se dispone de información suficiente para establecer una comparativa fiable:
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `sfm_filtered_insert_xxf_character-0k_1k_2k_3k_4k_simpleavg_merge` | 6,86 B | no disponible | no disponible | HuggingFace, safetensors (bfloat16) |
+| `sfm_filtered_insert_xxf_character-0k_1k_2k_3k_4k_simpleavg_merge` | 6,86 B | no disponible | no disponible | Hugging Face, safetensors (bfloat16) |
 | Alternativas de la misma categoria (~7 B, tipo GPT-NeoX) | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de información suficiente para establecer una comparativa fiable:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-0k_1k_2k_3k_4k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-0k_1k_2k_3k_4k_simpleavg_merge
 - mergekit (herramienta de fusión utilizada): https://github.com/cg123/mergekit
 - Paper del método Linear / model soups (etiqueta `arxiv:2203.05482`): https://arxiv.org/abs/2203.05482
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo; los resultados devueltos tratan sobre transporte marítimo y aéreo y no guardan relación con el modelo.

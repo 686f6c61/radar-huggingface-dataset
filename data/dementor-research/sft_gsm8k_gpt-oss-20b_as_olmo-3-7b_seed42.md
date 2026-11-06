@@ -70,6 +70,6 @@ No disponible. No se proporcionan comparaciones con otros adaptadores o modelos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/sft_gsm8k_gpt-oss-20b_as_olmo-3-7b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/sft_gsm8k_gpt-oss-20b_as_olmo-3-7b_seed42
 - Herramienta Tinker (Thinking Machines): https://thinkingmachines.ai/tinker/
 - Modelo base `openai/gpt-oss-20b`: https://huggingface.co/openai/gpt-oss-20b

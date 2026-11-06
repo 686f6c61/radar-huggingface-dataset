@@ -63,6 +63,6 @@ No se dispone de información sobre modelos comparables. Dado que se trata de un
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/longertime/jmaxcool-ly-v3)
-- [Perfil del autor en HuggingFace](https://huggingface.co/longertime/models)
+- [Modelo en Hugging Face](https://huggingface.co/longertime/jmaxcool-ly-v3)
+- [Perfil del autor en Hugging Face](https://huggingface.co/longertime/models)
 - [Perfil de JMaxCool (posible colaborador)](https://huggingface.co/JMaxCool/models)

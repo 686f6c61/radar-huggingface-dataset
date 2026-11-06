@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| randmaru/Qwen3.8-27B-mlx-mxfp4-text-generation-only | 5.045.149.184 (reportado) | no disponible | MXFP4 | Apache 2.0 | HuggingFace |
+| randmaru/Qwen3.8-27B-mlx-mxfp4-text-generation-only | 5.045.149.184 (reportado) | no disponible | MXFP4 | Apache 2.0 | Hugging Face |
 | Versión 4-bit INT4 del mismo modelo (mencionada en la model card) | no disponible | no disponible | INT4/NF4 | Apache 2.0 | no disponible |
-| Qwen3.8-27B (modelo base) | 27B (según nombre) | no disponible | BF16 | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B (modelo base) | 27B (según nombre) | no disponible | BF16 | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas versiones. La comparativa se limita a aspectos técnicos de la cuantización.
 
@@ -74,6 +74,6 @@ No se dispone de datos de rendimiento comparativo entre estas versiones. La comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/randmaru/Qwen3.8-27B-mlx-mxfp4-text-generation-only
+- Repositorio Hugging Face: https://huggingface.co/randmaru/Qwen3.8-27B-mlx-mxfp4-text-generation-only
 - Modelo base (referenciado en la model card): https://huggingface.co/Qwen/Qwen3.8-27B (enlace roto en la card, se asume la URL estándar)
 - Enlace a JetBrains/Mellum-4b-base (aparece en la card, pero no es el modelo base real): https://huggingface.co/JetBrains/Mellum-4b-base

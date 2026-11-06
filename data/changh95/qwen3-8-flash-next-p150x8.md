@@ -110,7 +110,7 @@ La información disponible solo permite comparar este bundle con el checkpoint o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/changh95/qwen3.8-flash-next-p150x8
+- Modelo en Hugging Face: https://huggingface.co/changh95/qwen3.8-flash-next-p150x8
 - Checkpoint base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Herramienta de empaquetado: https://github.com/tenstorrent/tt-model-manager
 - Fork del port: https://github.com/sjettTT/tt-qwen-3.8-flash-next (rama `qwen38-p150x8-batching`, commit `4894edf46db336763d74c561affa49fae636495e`)

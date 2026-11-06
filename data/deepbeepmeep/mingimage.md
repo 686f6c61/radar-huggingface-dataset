@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Formato |
 |---|---|---|---|---|---|
-| DeepBeepMeep/MingImage (esta ficha) | no disponible | no disponible | MIT | HuggingFace, 76,3 GB, 0 descargas | Checkpoints de fichero unico BF16 e INT8 ConvRot para WanGP |
-| inclusionAI/Ming-Image-0.1-Design (upstream) | no disponible | no disponible | MIT | HuggingFace (revision fijada por este reempaquetado) | Shards upstream en FP32/BF16 |
+| DeepBeepMeep/MingImage (esta ficha) | no disponible | no disponible | MIT | Hugging Face, 76,3 GB, 0 descargas | Checkpoints de fichero unico BF16 e INT8 ConvRot para WanGP |
+| inclusionAI/Ming-Image-0.1-Design (upstream) | no disponible | no disponible | MIT | Hugging Face (revision fijada por este reempaquetado) | Shards upstream en FP32/BF16 |
 | Otros modelos de difusion comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de parametros del modelo upstream en la informacion proporcionada, por lo que la comparativa se limita a licencia, formato y via de distribucion. No se han identificado otras alternativas comparables en las fuentes consultadas.
@@ -92,11 +92,11 @@ No se dispone de datos de rendimiento ni de parametros del modelo upstream en la
 - El tamano del repositorio (76,3 GB) exige planificacion de almacenamiento y ancho de banda de descarga considerables.
 - La licencia MIT se declara para el checkpoint y el codigo de inferencia originales; conviene revisar el fichero LICENSE del repositorio antes de un uso comercial.
 - Las fechas de los metadatos (creacion y actualizacion el 2026-09-23) son posteriores a la fecha habitual de consulta, lo que sugiere un posible error de metadatos que conviene verificar.
-- La busqueda web realizada no devolvio ninguna fuente tecnica relevante sobre el modelo; toda la informacion procede de los metadatos y la model card de HuggingFace.
+- La busqueda web realizada no devolvio ninguna fuente tecnica relevante sobre el modelo; toda la informacion procede de los metadatos y la model card de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DeepBeepMeep/MingImage
+- Repositorio en Hugging Face: https://huggingface.co/DeepBeepMeep/MingImage
 - Modelo upstream: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
 - Revision upstream fijada: `208087ada1486931692c1896f38d4cd16ff3df82`
 - Directorio de fuentes y notas de conversion en WanGP: `models/ming_image/` (mencionado en la model card; no se proporciona URL)

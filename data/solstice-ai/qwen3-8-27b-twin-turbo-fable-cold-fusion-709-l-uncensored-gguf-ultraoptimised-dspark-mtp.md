@@ -90,7 +90,7 @@ Nota: los datos de la fila de este modelo son los unicos extraidos de la informa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-GGUF-UltraOptimised-DSpark-MTP
+- Repositorio Hugging Face: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-GGUF-UltraOptimised-DSpark-MTP
 - Modelo base declarado: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
 - Dataset citado en los tags: https://huggingface.co/datasets/Solstice-AI/Solace-1.0-Omni
 - Documentacion de llama.cpp (motor de inferencia para GGUF): https://github.com/ggml-org/llama.cpp

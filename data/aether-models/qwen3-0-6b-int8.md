@@ -112,7 +112,7 @@ La comparación relevante es de formato y plataforma más que de capacidad: el p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aether-models/qwen3-0.6b-int8
+- Modelo en Hugging Face: https://huggingface.co/aether-models/qwen3-0.6b-int8
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Revisión concreta del modelo base usada en la conversión: `c1899de289a04d12100db370d81485cdf75e47ca`
 - Repositorio del modelo base en GitHub (organización Qwen): no disponible en la información proporcionada

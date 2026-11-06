@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| unl-reset/tofu-phi-1_5-...-epoch10 (este) | 1,42 B | no disponible | Apache 2.0 | HuggingFace | Checkpoint de *unlearning* TOFU |
-| locuslab/tofu_ft_phi-1.5 | 1,42 B | no disponible | Apache 2.0 (heredada) | HuggingFace | Modelo base ajustado sobre TOFU, sin olvido |
-| microsoft/phi-1_5 | 1,3 B | 2048 | MIT | HuggingFace | Modelo original de Microsoft Research |
-| locuslab/tofu_llama2-7b | 7 B | 4096 | Llama 2 | HuggingFace | Alternativa de mayor tamaño para experimentos TOFU |
+| unl-reset/tofu-phi-1_5-...-epoch10 (este) | 1,42 B | no disponible | Apache 2.0 | Hugging Face | Checkpoint de *unlearning* TOFU |
+| locuslab/tofu_ft_phi-1.5 | 1,42 B | no disponible | Apache 2.0 (heredada) | Hugging Face | Modelo base ajustado sobre TOFU, sin olvido |
+| microsoft/phi-1_5 | 1,3 B | 2048 | MIT | Hugging Face | Modelo original de Microsoft Research |
+| locuslab/tofu_llama2-7b | 7 B | 4096 | Llama 2 | Hugging Face | Alternativa de mayor tamaño para experimentos TOFU |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch10
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch10
 - Modelo base del ajuste: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Paper TOFU: https://arxiv.org/abs/2401.06121

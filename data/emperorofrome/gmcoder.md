@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gmcoder es un modelo de generacion de texto especializado en codigo, de unos 9.400 millones de parametros, publicado por el usuario emperorofrome en HuggingFace con el soporte declarado de Galactic Mandate Linux. No es un modelo entrenado desde cero: se trata de un merge de dos modelos de 9B, Qwen/Qwen3.5-9B y ornith-ai/Ornith-1.5-9B, orientado a generacion de codigo, depuracion, explicacion de codigo y resolucion de problemas algoritmicos. Se distribuye principalmente en formato GGUF cuantizado en Q8_0 (9,79 GB), lo que lo hace desplegable en una sola GPU de gama alta de consumo.
+gmcoder es un modelo de generacion de texto especializado en codigo, de unos 9.400 millones de parametros, publicado por el usuario emperorofrome en Hugging Face con el soporte declarado de Galactic Mandate Linux. No es un modelo entrenado desde cero: se trata de un merge de dos modelos de 9B, Qwen/Qwen3.5-9B y ornith-ai/Ornith-1.5-9B, orientado a generacion de codigo, depuracion, explicacion de codigo y resolucion de problemas algoritmicos. Se distribuye principalmente en formato GGUF cuantizado en Q8_0 (9,79 GB), lo que lo hace desplegable en una sola GPU de gama alta de consumo.
 
 Su relevancia actual radica en la relacion entre rendimiento y coste: el autor reporta un 96,3% en HumanEval y un 90,9% en HumanEval+ Mini (pass@1, 164 tareas, decodificacion greedy), por encima de Ornith-1.5-9B-MTP y de Oxcoder en esa misma comparativa. Ademas, en una prueba interna de tres prompts con contexto de 66.816 tokens, gmcoder genero 37.445 tokens de salida frente a los 95.532 de OXCoder y los 136.794 de Ornith, lo que supone un ahorro del 60,8% y del 72,6% respectivamente.
 
@@ -107,11 +107,11 @@ Ademas, el autor menciona que en una suite interna de conocimiento y razonamient
 
 | Modelo | Parametros | Contexto | HumanEval / HumanEval+ Mini | Licencia | Disponibilidad |
 |---|---|---|---:|---|---|
-| gmcoder | 9,41B | No disponible (evaluado hasta 66.816 tokens) | 96,3% / 90,9% | MIT | GGUF Q8_0 y safetensors en HuggingFace |
-| Ornith-1.5-9B-MTP | 9B (nominal) | No disponible | 95,7% / 89,6% | No disponible | Modelo base, disponible en HuggingFace |
+| gmcoder | 9,41B | No disponible (evaluado hasta 66.816 tokens) | 96,3% / 90,9% | MIT | GGUF Q8_0 y safetensors en Hugging Face |
+| Ornith-1.5-9B-MTP | 9B (nominal) | No disponible | 95,7% / 89,6% | No disponible | Modelo base, disponible en Hugging Face |
 | OXCoder | No disponible | No disponible | 92,7% / 88,4% | No disponible | Usado como comparador en la model card |
 | Comparador interno Q8_0 | No disponible | No disponible | 93,3% / 89,0% | No disponible | No identificado en la informacion disponible |
-| Qwen3.5-9B | 9B (nominal) | No disponible | No disponible | No disponible | Modelo base, disponible en HuggingFace |
+| Qwen3.5-9B | 9B (nominal) | No disponible | No disponible | No disponible | Modelo base, disponible en Hugging Face |
 
 La model card solo aporta datos cuantitativos homogeneos para las cuatro primeras filas en HumanEval+ Mini. No hay datos publicados de contexto, licencia ni otras capacidades de los modelos comparados en la informacion disponible, por lo que la comparacion se limita a la tarea de generacion de codigo corto.
 
@@ -131,7 +131,7 @@ La model card solo aporta datos cuantitativos homogeneos para las cuatro primera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emperorofrome/Gmcoder
+- Modelo en Hugging Face: https://huggingface.co/emperorofrome/Gmcoder
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Modelo base Ornith-1.5-9B: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Configuracion y resultados completos de la comparativa de tres prompts: `eval_results/three_prompt_20260929/README.md` (ruta relativa dentro del repositorio)

@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACE-Step-1.5-text-encoder-bf16 (este) | 595.776.512 | no disponible | Text encoder de ACE-Step 1.5 en MLX bf16 | Apache-2.0 | HuggingFace, MLX |
-| Qwen/Qwen3-Embedding-0.6B | ~0,6 B | no disponible | Modelo de embeddings general | Apache-2.0 | HuggingFace |
-| ACE-Step/Ace-Step1.5 | no disponible | no disponible | Pipeline completo de generacion musical | MIT (pipeline) | HuggingFace, GitHub |
+| ACE-Step-1.5-text-encoder-bf16 (este) | 595.776.512 | no disponible | Text encoder de ACE-Step 1.5 en MLX bf16 | Apache-2.0 | Hugging Face, MLX |
+| Qwen/Qwen3-Embedding-0.6B | ~0,6 B | no disponible | Modelo de embeddings general | Apache-2.0 | Hugging Face |
+| ACE-Step/Ace-Step1.5 | no disponible | no disponible | Pipeline completo de generacion musical | MIT (pipeline) | Hugging Face, GitHub |
 
 La diferencia principal frente a Qwen3-Embedding-0.6B es el layout y el empaquetado para MLX; frente al pipeline completo, este bundle es solo una de sus cuatro piezas. No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 
@@ -82,7 +82,7 @@ La diferencia principal frente a Qwen3-Embedding-0.6B es el layout y el empaquet
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mlx-community/ACE-Step-1.5-text-encoder-bf16
+- Hugging Face: https://huggingface.co/mlx-community/ACE-Step-1.5-text-encoder-bf16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Checkpoint upstream ACE-Step 1.5: https://huggingface.co/ACE-Step/Ace-Step1.5
 - Repositorio upstream: https://github.com/ace-step/ACE-Step-1.5

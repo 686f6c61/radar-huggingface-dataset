@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`danielneumann/generation-quantized` es un repositorio experimental publicado en HuggingFace el 8 de octubre de 2026 por el usuario danielneumann. No es un modelo entrenado ni un checkpoint con pesos útiles: la propia model card lo describe como una base de código Flamingo para generación, con un `model.safetensors` que es explícitamente "un checkpoint de inicialización válido para pruebas de humo" y no un checkpoint evaluado. El repositorio incluye además `predict.py`, `config.json` y `training_args.json`, lo que lo sitúa en la categoría de andamiaje de investigación más que en la de modelo desplegable.
+`danielneumann/generation-quantized` es un repositorio experimental publicado en Hugging Face el 8 de octubre de 2026 por el usuario danielneumann. No es un modelo entrenado ni un checkpoint con pesos útiles: la propia model card lo describe como una base de código Flamingo para generación, con un `model.safetensors` que es explícitamente "un checkpoint de inicialización válido para pruebas de humo" y no un checkpoint evaluado. El repositorio incluye además `predict.py`, `config.json` y `training_args.json`, lo que lo sitúa en la categoría de andamiaje de investigación más que en la de modelo desplegable.
 
 La arquitectura declarada es Flamingo (modelo multimodal de tipo visión-lenguaje) con atención dispersa, fusión de tensores, activación GELU y normalización por lotes. El autor etiqueta la escala como "huge", pero el recuento real de parámetros del tensor safetensors es de 16.576 parámetros, es decir, unos 16,6 K, una magnitud propia de una prueba de humo y no de un modelo a gran escala. Esa discrepancia entre la etiqueta de escala y el tamaño efectivo es el dato más relevante para cualquier evaluador.
 
@@ -43,7 +43,7 @@ No hay información sobre datos de entrenamiento: ni número de tokens, ni compo
 - Plantilla de implementación Flamingo: sirve como punto de partida para desarrolladores que quieran construir un esqueleto de modelo multimodal con atención dispersa y fusión de tensores, inspeccionando después cada cambio arquitectónico antes de un entrenamiento completo.
 - Banco de pruebas de cuantización: dado el nombre del repositorio y su tamaño de 16,6 K parámetros, es un candidato útil para probar herramientas de cuantización (a fp16, int8 o formatos GGUF) sin coste de cómputo, verificando que el flujo de conversión y recarga no rompe el grafo.
 - Estudio de ablaciones de atención dispersa: el autor plantea explícitamente el repositorio como base para inspeccionar cambios de arquitectura, de modo que un equipo de investigación puede modificar el patrón de atención y comparar el comportamiento del grafo en un entorno controlado.
-- Docencia y formación: sirve para ilustrar la estructura de un proyecto de modelo en HuggingFace (`config.json`, `training_args.json`, script de predicción y pesos), con un coste de ejecución despreciable en cualquier portátil.
+- Docencia y formación: sirve para ilustrar la estructura de un proyecto de modelo en Hugging Face (`config.json`, `training_args.json`, script de predicción y pesos), con un coste de ejecución despreciable en cualquier portátil.
 - Integración en CI de investigación: el script `predict.py` y el checkpoint minúsculo permiten añadir un test automatizado que compruebe que los cambios en el código no rompen la inicialización ni la carga de pesos en cada commit.
 - Referencia para equipos que evalúan repositorios: útil como caso de estudio de una model card que declara honestamente la ausencia de entrenamiento y de benchmarks, frente a fichas que publican métricas no verificables.
 
@@ -86,7 +86,7 @@ No disponible. No se dispone de cifras publicadas de modelos comparables en la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danielneumann/generation-quantized
+- Repositorio en Hugging Face: https://huggingface.co/danielneumann/generation-quantized
 - Archivos del repositorio: `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Contexto general sobre cuantización de modelos generativos (no específico de este modelo): https://www.preprints.org/manuscript/202508.1223
 - Guía introductoria sobre cuantización en IA generativa (no específica de este modelo): https://www.analyticsvidhya.com/blog/2023/11/generative-ai-with-model-quantization/

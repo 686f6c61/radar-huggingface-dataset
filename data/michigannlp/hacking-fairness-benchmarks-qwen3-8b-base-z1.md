@@ -86,7 +86,7 @@ No se dispone de comparativas con otros adaptadores de fairness especificos en l
 
 ## Enlaces
 
-- [HuggingFace - MichiganNLP/hacking-fairness-benchmarks-qwen3-8b-base-z1](https://huggingface.co/MichiganNLP/hacking-fairness-benchmarks-qwen3-8b-base-z1)
+- [Hugging Face - MichiganNLP/hacking-fairness-benchmarks-qwen3-8b-base-z1](https://huggingface.co/MichiganNLP/hacking-fairness-benchmarks-qwen3-8b-base-z1)
 - [Pagina del proyecto (EMNLP 2026)](https://lit.eecs.umich.edu/hacking-fairness-benchmarks/)
 - [Modelo base Qwen/Qwen3-8B-Base](https://huggingface.co/Qwen/Qwen3-8B)
 - [Technical Report de Qwen3 (arXiv)](https://arxiv.org/html/2505.09388v1)

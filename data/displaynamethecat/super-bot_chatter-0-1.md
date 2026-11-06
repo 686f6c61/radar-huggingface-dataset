@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Displaynamethecat/super-bot_chatter-0.1
+- Repositorio Hugging Face: https://huggingface.co/Displaynamethecat/super-bot_chatter-0.1
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms

@@ -77,7 +77,7 @@ No se dispone de una comparativa completa con otros modelos ASR en la informaci√
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aoiandroid/parakeet-ctc-0.6b-zh-cn-coreml-macos
+- Repositorio Hugging Face: https://huggingface.co/aoiandroid/parakeet-ctc-0.6b-zh-cn-coreml-macos
 - Repositorio fuente (FluidInference): https://huggingface.co/FluidInference/parakeet-ctc-0.6b-zh-cn-coreml
 - Modelo original en NVIDIA NIM: https://build.nvidia.com/nvidia/parakeet-ctc-0_6b-zh-cn
 - Mirror del repositorio con documentaci√≥n adicional: https://huggingface.co/aoiandroid/mirror-FluidInference-parakeet-ctc-0.6b-zh-cn-coreml

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TropiCycloneNet es un método de aprendizaje profundo multimodal para la predicción conjunta, a escala global, de la trayectoria y la intensidad de ciclones tropicales. Lo proponen investigadores de la Zhejiang University of Technology, la Shandong University, la Tianjin University of Technology y el Zhejiang Key Laboratory of Visual Information Intelligent Processing, y el trabajo asociado se publicó en Nature Communications (DOI 10.1038/s41467-025-61087-4). El repositorio de HuggingFace analizado es una reproducción de ingeniería independiente de las especificaciones públicas del modelo, con código bajo licencia Apache-2.0.
+TropiCycloneNet es un método de aprendizaje profundo multimodal para la predicción conjunta, a escala global, de la trayectoria y la intensidad de ciclones tropicales. Lo proponen investigadores de la Zhejiang University of Technology, la Shandong University, la Tianjin University of Technology y el Zhejiang Key Laboratory of Visual Information Intelligent Processing, y el trabajo asociado se publicó en Nature Communications (DOI 10.1038/s41467-025-61087-4). El repositorio de Hugging Face analizado es una reproducción de ingeniería independiente de las especificaciones públicas del modelo, con código bajo licencia Apache-2.0.
 
 El modelo fusiona tres fuentes de información: atributos intrínsecos del ciclón, campos meteorológicos locales y variables ambientales. A partir de ocho estados consecutivos con cadencia de seis horas —cuatro atributos del ciclón, un campo de geopotencial en 500 hPa de 81×81 y variables ambientales— predice cuatro estados futuros, es decir, pronósticos a 6, 12, 18 y 24 horas de trayectoria (longitud y latitud), presión central y viento máximo sostenido. Mediante una codificación conjunta temporal, espacial y ambiental y varios generadores, produce varias trayectorias candidatas con sus probabilidades asociadas.
 
@@ -23,7 +23,7 @@ Su relevancia es doble: por un lado, aborda una tarea de alto impacto social (pr
 | Framework | PyTorch |
 | Autor / organización | OneScience-Group |
 | Fecha de publicación del repositorio | 16 de septiembre de 2026 |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -91,7 +91,7 @@ No disponible. La información proporcionada no identifica modelos alternativos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/TropiCycloneNet
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/TropiCycloneNet
 - Artículo (Nature Communications): https://doi.org/10.1038/s41467-025-61087-4
 - Código oficial del artículo: https://github.com/xiaochengfuhuo/TropiCycloneNet
 - OneScience en GitHub: https://github.com/onescience-ai/OneScience

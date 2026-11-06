@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`semsimula-ladder-live-ts-d384-l2-none-norc-pm2-pmx16-sr2` (abreviado PM2-TS en la model card) es un modelo de lenguaje de investigación desarrollado por el usuario de HuggingFace `dimitarpg13` dentro de la familia Semantic Simulation ("semsimula"). No es un transformer: se describe como un modelo de lenguaje conservativo, sin atención, construido sobre un potencial escalar y dinámica lagrangiana de segundo orden, con decodificación basada en integración (BAOAB) y geometría riemanniana. El modelo se entrena sobre TinyStories y su propósito no es competir en calidad con LLMs de producción, sino resolver una pregunta experimental concreta: si el núcleo conservativo necesita dinámica de segundo orden (velocidad e inercia) o si un modelo de primer orden entrenado igual rinde lo mismo.
+`semsimula-ladder-live-ts-d384-l2-none-norc-pm2-pmx16-sr2` (abreviado PM2-TS en la model card) es un modelo de lenguaje de investigación desarrollado por el usuario de Hugging Face `dimitarpg13` dentro de la familia Semantic Simulation ("semsimula"). No es un transformer: se describe como un modelo de lenguaje conservativo, sin atención, construido sobre un potencial escalar y dinámica lagrangiana de segundo orden, con decodificación basada en integración (BAOAB) y geometría riemanniana. El modelo se entrena sobre TinyStories y su propósito no es competir en calidad con LLMs de producción, sino resolver una pregunta experimental concreta: si el núcleo conservativo necesita dinámica de segundo orden (velocidad e inercia) o si un modelo de primer orden entrenado igual rinde lo mismo.
 
 Esta ficha concreta es el brazo "PM2-PMX16" del estudio escalonado (ladder study): núcleo conservativo con 2 pozos de modo Poisson, segundo orden y 16 registros (pmx16), sobre TinyStories. Según la model card, los pozos mejoran el resultado en este corpus (perplejidad 4,99 frente a 5,16 del modelo sin pozos, un −3,4%), y su gemelo de primer orden queda prácticamente empatado (4,96, −0,5%). El entrenamiento está pre-registrado (protocolo §5.13, predicciones TS4 y TS2 confirmadas) y consume exactamente 315.392.000 tokens.
 
@@ -114,7 +114,7 @@ La comparación relevante es interna al estudio: mismo corpus, mismos 315.392.00
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-pm2-pmx16-sr2
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-pm2-pmx16-sr2
 - Colección "Semantic Simulation Gen 3: first vs second order": https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-first-vs-second-order-6ad7681596d9a670c268b524
 - Gemelo de primer orden (FO-b-PM2-TS): https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-pm2-pmx16-sr2-fob
 - Modelo de segundo orden sin pozos (SO-TS): https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-sr2

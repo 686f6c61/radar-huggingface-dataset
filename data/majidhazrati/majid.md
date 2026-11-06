@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Majidhazrati/Majid es un repositorio de modelo alojado en HuggingFace por el usuario Majidhazrati, publicado bajo licencia Apache 2.0. En el momento de la consulta, la model card del repositorio esta practicamente vacia: el unico contenido es la declaracion de licencia (`license: apache-2.0`), sin descripcion del modelo, sin arquitectura declarada, sin especificaciones de entrenamiento y sin ejemplos de uso. El repositorio no declara tarea asociada en el campo `pipeline` ni idiomas soportados.
+Majidhazrati/Majid es un repositorio de modelo alojado en Hugging Face por el usuario Majidhazrati, publicado bajo licencia Apache 2.0. En el momento de la consulta, la model card del repositorio esta practicamente vacia: el unico contenido es la declaracion de licencia (`license: apache-2.0`), sin descripcion del modelo, sin arquitectura declarada, sin especificaciones de entrenamiento y sin ejemplos de uso. El repositorio no declara tarea asociada en el campo `pipeline` ni idiomas soportados.
 
 El modelo acumula 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (2026-10-09T21:56:27Z), lo que sugiere una subida unica sin mantenimiento posterior ni publicacion de artefactos adicionales documentados. No se dispone de informacion sobre el numero de parametros, la longitud de contexto, el formato de pesos ni el proceso de entrenamiento.
 
@@ -25,7 +25,7 @@ Datos adicionales verificables del repositorio:
 
 | Campo | Valor |
 |---|---|
-| ID en HuggingFace | Majidhazrati/Majid |
+| ID en Hugging Face | Majidhazrati/Majid |
 | Autor | Majidhazrati |
 | Tarea declarada (pipeline) | no disponible |
 | Etiquetas | license:apache-2.0, region:us |
@@ -98,5 +98,5 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Majidhazrati/Majid
+- Hugging Face: https://huggingface.co/Majidhazrati/Majid
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

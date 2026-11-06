@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahdrage/norwegian-parakeet
+- Modelo en Hugging Face: https://huggingface.co/ahdrage/norwegian-parakeet
 - Repositorio de código y receta de entrenamiento: https://github.com/ahdrage/norwegian-parakeet
 - Documentación de datos y licencias: https://github.com/ahdrage/norwegian-parakeet/blob/main/docs/DATA.md
 - Proyecto hermano norsk-asr: https://github.com/ahdrage/norsk-asr

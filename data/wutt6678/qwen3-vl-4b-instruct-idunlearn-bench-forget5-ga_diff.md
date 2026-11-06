@@ -6,7 +6,7 @@ El artefacto publicado como wutt6678/Qwen3-VL-4B-Instruct-IDUnlearn-Bench-forget
 
 El nombre del repositorio codifica el proposito del artefacto: IDUnlearn se refiere a un banco de evaluacion de desaprendizaje de identidades, forget5 al subconjunto de datos que se pretende "olvidar" y el sufijo GA_diff sugiere una variante de ajuste por ascenso de gradiente (gradient ascent) o el calculo de una diferencia de pesos respecto al modelo base. El interes actual de este tipo de publicaciones es alto porque el desaprendizaje en modelos multimodales (vision-lenguaje) esta mucho menos explorado que en modelos puramente textuales, y la comunidad carece de adaptadores ligeros y auditables para reproducir experimentos sin redistribuir pesos completos.
 
-Se trata, por tanto, de un artefacto de investigacion, no de un modelo listo para produccion. La model card publicada es la plantilla estandar de HuggingFace sin rellenar: no aporta descripcion, licencia, idiomas, datos de entrenamiento ni resultados de evaluacion. Toda la informacion tecnica disponible proviene de las etiquetas del repositorio, del tamano del mismo y de las caracteristicas conocidas del modelo base Qwen3-VL-4B-Instruct.
+Se trata, por tanto, de un artefacto de investigacion, no de un modelo listo para produccion. La model card publicada es la plantilla estandar de Hugging Face sin rellenar: no aporta descripcion, licencia, idiomas, datos de entrenamiento ni resultados de evaluacion. Toda la informacion tecnica disponible proviene de las etiquetas del repositorio, del tamano del mismo y de las caracteristicas conocidas del modelo base Qwen3-VL-4B-Instruct.
 
 ## Especificaciones tecnicas
 
@@ -70,16 +70,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| wutt6678/Qwen3-VL-4B-Instruct-IDUnlearn-Bench-forget5-GA_diff | Adaptador LoRA (unlearning) | no disponible (base ~4B) | no disponible | no disponible | HuggingFace, 0 descargas | Objeto de esta ficha |
-| Qwen/Qwen3-VL-4B-Instruct | Modelo completo vision-lenguaje | ~4B | no disponible en la busqueda | segun la model card oficial de Qwen (no confirmada aqui) | HuggingFace, ampliamente distribuido | Modelo base original de la familia |
-| wutt6678/Qwen3-VL-2B-Instruct-IDUnlearn-Bench-forget5-GA | Adaptador (unlearning) | base ~2B | no disponible | no disponible | HuggingFace | Hermano de menor escala, mismo autor y mismo banco |
+| wutt6678/Qwen3-VL-4B-Instruct-IDUnlearn-Bench-forget5-GA_diff | Adaptador LoRA (unlearning) | no disponible (base ~4B) | no disponible | no disponible | Hugging Face, 0 descargas | Objeto de esta ficha |
+| Qwen/Qwen3-VL-4B-Instruct | Modelo completo vision-lenguaje | ~4B | no disponible en la busqueda | segun la model card oficial de Qwen (no confirmada aqui) | Hugging Face, ampliamente distribuido | Modelo base original de la familia |
+| wutt6678/Qwen3-VL-2B-Instruct-IDUnlearn-Bench-forget5-GA | Adaptador (unlearning) | base ~2B | no disponible | no disponible | Hugging Face | Hermano de menor escala, mismo autor y mismo banco |
 | outputs_3/mllmu_vanilla_qwen3-vl-4b | Modelo intermedio | no disponible | no disponible | no disponible | Referenciado solo como base_model | Checkpoint sobre el que se aplica el adaptador |
 
 La comparacion cuantitativa de rendimiento no es posible: ninguno de los artefactos de desaprendizaje incluye resultados publicados, y el modelo base Qwen3-VL-4B-Instruct aparece en la busqueda sin tabla de benchmarks detallada en los fragmentos recuperados.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla vacia de HuggingFace, con todos los campos marcados como "[More Information Needed]". No hay descripcion, uso previsto, datos de entrenamiento ni evaluacion.
+- Ausencia total de documentacion: la model card es la plantilla vacia de Hugging Face, con todos los campos marcados como "[More Information Needed]". No hay descripcion, uso previsto, datos de entrenamiento ni evaluacion.
 - Licencia no declarada: al no especificarse licencia en el repositorio, no puede confirmarse que el uso comercial este permitido. Cualquier despliegue en produccion requeriria verificar primero la licencia del modelo base Qwen3-VL-4B-Instruct y la del adaptador.
 - Sin garantias de calidad: no existen metricas de retencion (retain accuracy) ni de utilidad general, por lo que se desconoce en que medida el desaprendizaje ha degradado las capacidades del modelo base. El olvido catastrofico es un riesgo conocido en tecnicas de gradient ascent.
 - Riesgo de alucinacion: no evaluado en la informacion disponible; al tratarse de un modelo de lenguaje y vision, el riesgo de generar contenido incorrecto persiste y no ha sido caracterizado.
@@ -88,7 +88,7 @@ La comparacion cuantitativa de rendimiento no es posible: ninguno de los artefac
 - Artefacto no autonomo: no puede ejecutarse de forma independiente; requiere el modelo base outputs_3/mllmu_vanilla_qwen3-vl-4b, que no esta alojado publicamente en el repositorio analizado y cuya disponibilidad no se confirma.
 - Cero adopcion: 0 descargas y 0 likes, lo que implica ausencia de validacion externa, de informes de errores y de pruebas por parte de terceros.
 - Uso etico: los adaptadores de desaprendizaje pueden emplearse tanto para proteger derechos de privacidad como para intentar eliminar deliberadamente conocimientos o salvaguardas de un modelo; conviene evaluar el proposito antes de aplicarlos.
-- Nota sobre la etiqueta arxiv:1910.09700: corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la propia plantilla de HuggingFace, y no a un paper especifico de este modelo. No debe interpretarse como referencia cientifica del adaptador.
+- Nota sobre la etiqueta arxiv:1910.09700: corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la propia plantilla de Hugging Face, y no a un paper especifico de este modelo. No debe interpretarse como referencia cientifica del adaptador.
 
 ## Enlaces
 

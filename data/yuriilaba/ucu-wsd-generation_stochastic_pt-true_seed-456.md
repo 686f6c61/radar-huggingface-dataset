@@ -101,9 +101,9 @@ Nota: los datos de los modelos comparativos no provienen de la informacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuriilaba/ucu-wsd-generation_stochastic_pt-true_seed-456
+- Modelo en Hugging Face: https://huggingface.co/yuriilaba/ucu-wsd-generation_stochastic_pt-true_seed-456
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 - Arquitectura subyacente (XLM-RoBERTa): https://huggingface.co/FacebookAI/xlm-roberta-base
 - Leaderboard de MTEB: https://huggingface.co/spaces/mteb/leaderboard
-- Resultados MTEB del modelo: carpeta `evaluation/mteb_results/` dentro del repositorio de HuggingFace (no enlazada directamente en la informacion disponible)
+- Resultados MTEB del modelo: carpeta `evaluation/mteb_results/` dentro del repositorio de Hugging Face (no enlazada directamente en la informacion disponible)
 - Paper, blog o repositorio adicionales: no disponibles; la busqueda web no devolvio resultados relacionados con el modelo.

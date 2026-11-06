@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pocket-layout-planner-2B es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-2B, publicado por el usuario ysharma en HuggingFace bajo licencia Apache-2.0. El modelo está especializado en una única tarea: recibir una peticion de imagen breve (sin system prompt y sin modo de razonamiento) y devolver una sola linea de texto que contiene un caption detallado en el que los elementos se referencian como `<id>`, seguido de una tabla JSON de cajas delimitadoras con el formato `[y_min, x_min, y_max, x_max]` sobre una rejilla normalizada de 0 a 1000.
+pocket-layout-planner-2B es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-2B, publicado por el usuario ysharma en Hugging Face bajo licencia Apache-2.0. El modelo está especializado en una única tarea: recibir una peticion de imagen breve (sin system prompt y sin modo de razonamiento) y devolver una sola linea de texto que contiene un caption detallado en el que los elementos se referencian como `<id>`, seguido de una tabla JSON de cajas delimitadoras con el formato `[y_min, x_min, y_max, x_max]` sobre una rejilla normalizada de 0 a 1000.
 
 La relevancia de este modelo radica en su enfoque de destilacion: ha sido entrenado a partir del modo `t2i_bbox` del modelo `black-forest-labs/flux-3-image-klein-pup` (Apache-2.0), que actua como profesor. El objetivo es trasladar la capacidad de planificacion de layout de un modelo generativo de imagenes grande a un modelo de lenguaje compacto de aproximadamente 2.000 millones de parametros, ejecutable en hardware mucho mas modesto.
 
@@ -93,7 +93,7 @@ No se han identificado en la busqueda web otros modelos comparables de planifica
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/ysharma/pocket-layout-planner-2B
+- Pagina del modelo en Hugging Face: https://huggingface.co/ysharma/pocket-layout-planner-2B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Modelo profesor (modo t2i_bbox): https://huggingface.co/black-forest-labs/flux-3-image-klein-pup
 - Dataset de entrenamiento: https://huggingface.co/datasets/ysharma/klein-layout-plans

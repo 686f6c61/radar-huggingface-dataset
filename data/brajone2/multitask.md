@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Brajone2/multitask es un prototipo de investigacion alojado en HuggingFace por el usuario Brajone2, construido sobre una implementacion propia de la arquitectura Albef (Align before Fuse) y etiquetado genericamente como "multitask". El repositorio se presenta explicitamente como material de investigacion: incluye un script de inferencia, un fichero de configuracion, un recetario de entrenamiento por defecto y un checkpoint de inicializacion, sin ningun resultado de benchmark verificado.
+Brajone2/multitask es un prototipo de investigacion alojado en Hugging Face por el usuario Brajone2, construido sobre una implementacion propia de la arquitectura Albef (Align before Fuse) y etiquetado genericamente como "multitask". El repositorio se presenta explicitamente como material de investigacion: incluye un script de inferencia, un fichero de configuracion, un recetario de entrenamiento por defecto y un checkpoint de inicializacion, sin ningun resultado de benchmark verificado.
 
 El dato mas relevante es la discrepancia entre la escala declarada y el tamano real. La model card indica escala "giant", pero el recuento real de parametros del fichero safetensors es de 49.600 parametros (no 49,6 mil millones), y el tamano del repositorio es de 0,0 GB. Se trata, por tanto, de un checkpoint de inicializacion para pruebas de humo (smoke tests), no de un modelo entrenado ni de un checkpoint evaluado.
 
@@ -44,7 +44,7 @@ En cuanto al entrenamiento, el repositorio no documenta ningun proceso completad
 - Pruebas de humo de integracion: el checkpoint permite verificar que un pipeline de carga de safetensors, tokenizacion y ejecucion de `inference.py` funciona de extremo a extremo antes de invertir en entrenamiento real.
 - Plantilla de investigacion reproducible: el repositorio proporciona `config.json` y `training_args.json` como punto de partida para replicar experimentos Albef con una receta controlada.
 - Comparativa de arquitecturas: util como referencia de configuracion (atencion dispersa, fusion concat mlp, activacion mish) frente a variantes densas o con fusion por cross-attention.
-- Docencia y formacion: sirve para ilustrar la estructura de un repositorio de modelo en HuggingFace y la diferencia entre checkpoint de inicializacion y checkpoint entrenado.
+- Docencia y formacion: sirve para ilustrar la estructura de un repositorio de modelo en Hugging Face y la diferencia entre checkpoint de inicializacion y checkpoint entrenado.
 - Base para fine-tuning experimental: partiendo del checkpoint, un equipo podria entrenar sobre su propio conjunto etiquetado y medir si la arquitectura aporta ventaja en su tarea concreta.
 - Auditoria de documentacion de modelos: caso practico para estudiar como una model card debe declarar la ausencia de benchmarks y de auditorias en lugar de reclamar rendimiento no verificado.
 - No es adecuado, en su estado actual, para atencion al cliente, generacion de codigo en produccion, analisis de documentos ni ningun despliegue con usuarios reales.
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Brajone2/multitask | 49.600 (inicializacion) | no disponible | sin benchmarks publicados | apache-2.0 | repositorio HuggingFace, 0 descargas |
+| Brajone2/multitask | 49.600 (inicializacion) | no disponible | sin benchmarks publicados | apache-2.0 | repositorio Hugging Face, 0 descargas |
 | Albef original (Salesforce) | no disponible en esta busqueda | no disponible | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -80,12 +80,12 @@ No se dispone de datos verificados de modelos comparables dentro de la informaci
 - La escala declarada ("giant") contradice el recuento real de 49.600 parametros; conviene tratar cualquier afirmacion de capacidad con escepticismo hasta que exista un checkpoint entrenado y documentado por separado.
 - La licencia apache-2.0 cubre este repositorio, pero los terminos de los datos de origen deben revisarse por separado si se combinan con conjuntos externos.
 - No se declaran descargas ni usos previos, por lo que no existe evidencia comunitaria de funcionamiento en produccion.
-- Al ser una implementacion propia, las APIs automaticas de carga de HuggingFace requieren un adaptador explicito; no puede asumirse compatibilidad directa con `AutoModel`.
+- Al ser una implementacion propia, las APIs automaticas de carga de Hugging Face requieren un adaptador explicito; no puede asumirse compatibilidad directa con `AutoModel`.
 - Para produccion se desaconseja su uso en el estado actual; cualquier resultado derivado debe entrenarse, evaluarse con al menos tres semillas y documentarse aparte de los valores por defecto del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Brajone2/multitask
+- Modelo en Hugging Face: https://huggingface.co/Brajone2/multitask
 - Repositorio de Albef (referencia de la arquitectura, no verificada en la busqueda): no disponible
 - Paper de referencia de Albef: no disponible en la informacion proporcionada
 - Demo o espacio asociado: no disponible

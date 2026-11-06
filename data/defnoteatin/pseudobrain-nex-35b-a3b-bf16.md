@@ -85,7 +85,7 @@ Cabe señalar que las variantes W4A16, FP8 y NVFP4 del propio PseudoBrain son la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-Nex-35B-A3B-BF16
+- Modelo en Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-Nex-35B-A3B-BF16
 - Repositorio GitHub y plugin universal `pb27_vllm`: https://github.com/defnotean/pseudobrain
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf
 - Paper de arquitectura (Markdown): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.md

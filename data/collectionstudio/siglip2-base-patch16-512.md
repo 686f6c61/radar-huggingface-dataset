@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CollectionStudio/siglip2-base-patch16-512 | 375.823.874 | No aplica | No disponible | apache-2.0 | HuggingFace, transformers |
-| google/siglip2-base-patch16-512 | No disponible en la informacion proporcionada | No aplica | No disponible | No disponible en la informacion proporcionada | HuggingFace (referenciado en la model card) |
+| CollectionStudio/siglip2-base-patch16-512 | 375.823.874 | No aplica | No disponible | apache-2.0 | Hugging Face, transformers |
+| google/siglip2-base-patch16-512 | No disponible en la informacion proporcionada | No aplica | No disponible | No disponible en la informacion proporcionada | Hugging Face (referenciado en la model card) |
 | SigLIP (primera generacion) | No disponible | No aplica | No disponible | No disponible | Referenciado como paper base (2303.15343) |
 | CLIP (u otros encoders contrastivos) | No disponible | No aplica | No disponible | No disponible | No disponible |
 
@@ -89,7 +89,7 @@ Los datos de los modelos alternativos no estan incluidos en la informacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CollectionStudio/siglip2-base-patch16-512
+- Modelo en Hugging Face: https://huggingface.co/CollectionStudio/siglip2-base-patch16-512
 - Checkpoint de referencia citado en la model card: https://huggingface.co/google/siglip2-base-patch16-512
 - Paper de SigLIP 2: https://arxiv.org/abs/2502.14786
 - Paper de SigLIP: https://arxiv.org/abs/2303.15343

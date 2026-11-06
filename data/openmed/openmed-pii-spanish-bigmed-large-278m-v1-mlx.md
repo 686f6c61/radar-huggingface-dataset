@@ -76,7 +76,7 @@ No se dispone de información sobre otros modelos competidores de detección de 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Spanish-BigMed-Large-278M-v1-mlx
+- Repositorio Hugging Face del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Spanish-BigMed-Large-278M-v1-mlx
 - Checkpoint fuente (PyTorch/HF): https://huggingface.co/OpenMed/OpenMed-PII-Spanish-BigMed-Large-278M-v1
 - Repositorio GitHub de OpenMed: https://github.com/maziyarpanahi/openmed
 - Documentación del backend MLX: https://openmed.life/docs/mlx-backend/

@@ -70,7 +70,7 @@ No se dispone de informaci√≥n comparativa con otros modelos de la misma categor√
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/OLMo-3-7B-german-city-names-v2-inoculation-prompting-seed3](https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-v2-inoculation-prompting-seed3)
+- [Hugging Face - localized-ft/OLMo-3-7B-german-city-names-v2-inoculation-prompting-seed3](https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-v2-inoculation-prompting-seed3)
 - [Modelo relacionado: OLMo-3-7B-german-city-names-second-third-v2-sft-seed5](https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-second-third-v2-sft-seed5/tree/main)
 - [Modelo relacionado: OLMo-3-7B-german-city-names-v2-inoculation-prompting-seed2](https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-v2-inoculation-prompting-seed2)
 - [Entrada en free2aitools.com](https://free2aitools.com/model/localized-ft/olmo-3-7b-german-city-names-first-third-v2-sft-seed5)

@@ -71,6 +71,6 @@ No se dispone de informacion sobre modelos comparables especificos. Dado que es 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Xgspt123/splainer-o-format-lora
+- Hugging Face: https://huggingface.co/Xgspt123/splainer-o-format-lora
 - Repositorio de LoRA (referencia general): https://github.com/microsoft/LoRA
-- Documentacion de LoRA en HuggingFace: https://huggingface.co/docs/diffusers/training/lora
+- Documentacion de LoRA en Hugging Face: https://huggingface.co/docs/diffusers/training/lora

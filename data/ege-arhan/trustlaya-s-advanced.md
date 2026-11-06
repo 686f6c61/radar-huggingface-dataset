@@ -83,11 +83,11 @@ No se han publicado resultados de benchmarks comparativos frente a otros modelos
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TrustLaya-S Advanced | 42,1 M | No disponible (lectura documentada de 94 tokens) | Clasificacion multitarea de riesgo: PII, inyeccion de prompt, seguridad, gobierno de datos | MIT | HuggingFace, 16 descargas |
-| YTU Turkish Medium BERT uncased | No disponible | No disponible | Encoder base en turco, sin cabezas de riesgo | MIT | HuggingFace |
-| Laya Multilingual (convaiinnovations) | No disponible | No disponible | Profesor debil multilingue usado en v1; nunca fue ground truth | Apache-2.0, segun la model card de TrustLaya | HuggingFace |
-| Meta Prompt Guard | No disponible en esta ficha | No disponible en esta ficha | Deteccion de inyeccion de prompt y jailbreak | No disponible | HuggingFace |
-| protectai deberta-v3-base-prompt-injection-v2 | No disponible en esta ficha | No disponible en esta ficha | Deteccion de inyeccion de prompt | No disponible | HuggingFace |
+| TrustLaya-S Advanced | 42,1 M | No disponible (lectura documentada de 94 tokens) | Clasificacion multitarea de riesgo: PII, inyeccion de prompt, seguridad, gobierno de datos | MIT | Hugging Face, 16 descargas |
+| YTU Turkish Medium BERT uncased | No disponible | No disponible | Encoder base en turco, sin cabezas de riesgo | MIT | Hugging Face |
+| Laya Multilingual (convaiinnovations) | No disponible | No disponible | Profesor debil multilingue usado en v1; nunca fue ground truth | Apache-2.0, segun la model card de TrustLaya | Hugging Face |
+| Meta Prompt Guard | No disponible en esta ficha | No disponible en esta ficha | Deteccion de inyeccion de prompt y jailbreak | No disponible | Hugging Face |
+| protectai deberta-v3-base-prompt-injection-v2 | No disponible en esta ficha | No disponible en esta ficha | Deteccion de inyeccion de prompt | No disponible | Hugging Face |
 
 Los campos marcados como no disponibles no se han podido contrastar con la informacion proporcionada y no se incluyen cifras de rendimiento comparadas porque la model card no ofrece ninguna comparacion con terceros. Las alternativas citadas se listan solo como referencia de nicho.
 
@@ -107,7 +107,7 @@ Los campos marcados como no disponibles no se han podido contrastar con la infor
 - El modelo no redistribuye ejemplos del dataset de entrenamiento y no implementa por si solo el sistema de politicas.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/ege-arhan/TrustLaya-S-Advanced
+- Modelo en Hugging Face: https://huggingface.co/ege-arhan/TrustLaya-S-Advanced
 - Modelo v1: https://huggingface.co/ege-arhan/TrustLaya-S
 - Codigo fuente (rama advanced): https://github.com/ege-arhan/trustlaya-s/tree/feature/trustlaya-advanced
 - Rama de la demo de cortafuegos: https://github.com/ege-arhan/trustlaya-s/tree/feat/v2-firewall-e2e

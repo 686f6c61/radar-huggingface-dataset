@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Formato | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DreamShaper 8 Q8_0 GGUF (este repo) | 1.066.235.384 | GGUF (Q8_0) | 512x512 nativo (SD 1.5) | creativeml-openrail-m | HuggingFace, 94 descargas |
-| Lykon/dreamshaper-8 (modelo base) | no disponible en la informacion | safetensors / diffusers | 512x512 nativo (SD 1.5) | creativeml-openrail-m | HuggingFace |
-| Stable Diffusion 1.5 | no disponible en la informacion | safetensors / diffusers / ckpt | 512x512 nativo | creativeml-openrail-m | HuggingFace, ampliamente distribuido |
-| SDXL (Stability AI) | no disponible en la informacion | safetensors / diffusers | 1024x1024 nativo | creativeML Open RAIL++-M | HuggingFace |
+| DreamShaper 8 Q8_0 GGUF (este repo) | 1.066.235.384 | GGUF (Q8_0) | 512x512 nativo (SD 1.5) | creativeml-openrail-m | Hugging Face, 94 descargas |
+| Lykon/dreamshaper-8 (modelo base) | no disponible en la informacion | safetensors / diffusers | 512x512 nativo (SD 1.5) | creativeml-openrail-m | Hugging Face |
+| Stable Diffusion 1.5 | no disponible en la informacion | safetensors / diffusers / ckpt | 512x512 nativo | creativeml-openrail-m | Hugging Face, ampliamente distribuido |
+| SDXL (Stability AI) | no disponible en la informacion | safetensors / diffusers | 1024x1024 nativo | creativeML Open RAIL++-M | Hugging Face |
 
 La comparación se limita a la familia SD 1.5 y SDXL por categoría (text-to-image de difusión latente). No se dispone de datos de rendimiento comparativo en la información proporcionada.
 
@@ -81,6 +81,6 @@ La comparación se limita a la familia SD 1.5 y SDXL por categoría (text-to-ima
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jmloperaa2830/tomi-dreamshaper8-q8-gguf
+- Repositorio Hugging Face: https://huggingface.co/jmloperaa2830/tomi-dreamshaper8-q8-gguf
 - Modelo base DreamShaper 8: https://huggingface.co/Lykon/dreamshaper-8
 - stable-diffusion.cpp (runtime): https://github.com/leejet/stable-diffusion.cpp

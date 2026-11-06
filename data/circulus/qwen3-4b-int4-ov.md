@@ -93,7 +93,7 @@ La comparativa se limita a variantes del mismo modelo base porque la informacion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/circulus/qwen3-4b-int4-ov
+- Repositorio en Hugging Face: https://huggingface.co/circulus/qwen3-4b-int4-ov
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3
 - Blog de presentacion de la familia Qwen3: https://qwenlm.github.io/blog/qwen3/

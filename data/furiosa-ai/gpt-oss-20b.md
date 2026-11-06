@@ -70,7 +70,7 @@ No se dispone de datos verificados para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- [Repositorio HuggingFace furiosa-ai/gpt-oss-20b](https://huggingface.co/furiosa-ai/gpt-oss-20b)
+- [Repositorio Hugging Face furiosa-ai/gpt-oss-20b](https://huggingface.co/furiosa-ai/gpt-oss-20b)
 - [Modelo base openai/gpt-oss-20b](https://huggingface.co/openai/gpt-oss-20b)
 - [Documentación GPT-OSS de FuriosaAI](https://developer.furiosa.ai/v2026.4.0/en/furiosa_llm/models/gpt-oss.html)
 - [Documentación de modelos soportados por Furiosa-LLM](https://developer.furiosa.ai/latest/en/furiosa_llm/supported_models.html)

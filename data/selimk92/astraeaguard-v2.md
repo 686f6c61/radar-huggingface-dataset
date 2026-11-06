@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AstraeaGuard V2 es un clasificador binario experimental de prompt injection desarrollado por el usuario selimk92 y publicado en HuggingFace. El modelo no es un LLM generativo, sino un cabezal de clasificación entrenado sobre un encoder congelado: concretamente `google/embeddinggemma-300m`, del que toma embeddings de 768 dimensiones con una longitud máxima de secuencia de 512 tokens. Sobre esa representación se montan dos cabezales independientes entrenados por separado, uno denso y otro de mezcla de expertos dispersa (Sparse MoE), que emiten un logit binario donde 0 indica benigno y 1 indica ataque.
+AstraeaGuard V2 es un clasificador binario experimental de prompt injection desarrollado por el usuario selimk92 y publicado en Hugging Face. El modelo no es un LLM generativo, sino un cabezal de clasificación entrenado sobre un encoder congelado: concretamente `google/embeddinggemma-300m`, del que toma embeddings de 768 dimensiones con una longitud máxima de secuencia de 512 tokens. Sobre esa representación se montan dos cabezales independientes entrenados por separado, uno denso y otro de mezcla de expertos dispersa (Sparse MoE), que emiten un logit binario donde 0 indica benigno y 1 indica ataque.
 
 La relevancia del proyecto es acotada pero concreta: aborda una de las amenazas más activas en el despliegue de aplicaciones con LLM, la inyección de instrucciones maliciosas en entradas de usuario o en contenido recuperado por un pipeline RAG. El enfoque de reutilizar un encoder pequeño y congelado y entrenar únicamente cabezales de muy pocos parámetros (2.305 en el denso y 205.189 en el MoE) es economicamente atractivo para equipos que quieran añadir una capa de detección de bajo coste sin desplegar otro modelo grande.
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la información disponible más 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AstraeaGuard V2 (Dense/MoE) | 300M encoder + 2.305 / 205.189 cabezal | 512 tokens | Clasificador binario sobre encoder congelado | Encoder Gemma; cabezales sin licencia | HuggingFace, 0 descargas |
+| AstraeaGuard V2 (Dense/MoE) | 300M encoder + 2.305 / 205.189 cabezal | 512 tokens | Clasificador binario sobre encoder congelado | Encoder Gemma; cabezales sin licencia | Hugging Face, 0 descargas |
 | Llama Guard (familia) | 7B-8B | 4K-8K tokens | LLM generativo de moderación con etiquetas de categoría | Licencia Llama | Ampliamente desplegado |
-| Prompt Guard (familia) | 86M-22M | 512-2K tokens | Clasificador BERT/MDeBERTa de inyección y jailbreak | Licencia permisiva | HuggingFace |
+| Prompt Guard (familia) | 86M-22M | 512-2K tokens | Clasificador BERT/MDeBERTa de inyección y jailbreak | Licencia permisiva | Hugging Face |
 
 No se dispone de datos de benchmarks comparables en la información proporcionada para establecer una comparación cuantitativa con estas alternativas. La comparación cualitativa indica que AstraeaGuard V2 es el más ligero en parámetros entrenables y el más limitado en contexto y madurez de licencia.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks comparables en la información proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/selimk92/AstraeaGuard-V2
+- Hugging Face: https://huggingface.co/selimk92/AstraeaGuard-V2
 - Encoder base: https://huggingface.co/google/embeddinggemma-300m (revisión fijada `57c266a740f537b4dc058e1b0cda161fd15afa75`)
 - Código de modelado en el repositorio: `modeling_astraeaguard.py`
 - Configuración y métricas por cabezal: `config.json` y `metrics.json` en cada subcarpeta del repositorio

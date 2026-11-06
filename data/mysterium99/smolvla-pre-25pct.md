@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mysterium99/smolvla-pre-25pct
+- Hugging Face: https://huggingface.co/mysterium99/smolvla-pre-25pct
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Blog de SmolVLA: https://huggingface.co/blog/smolvla

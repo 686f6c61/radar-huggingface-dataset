@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `GRAI-UNSTPB/romistral_7b_instruct_dpo_ft_ro` (adaptador LoRA) | Adaptador sobre base de 7B | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
-| `OpenLLM-Ro/RoMistral-7b-Instruct-DPO` (modelo base) | 7B (segun denominacion) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| `GRAI-UNSTPB/romistral_7b_instruct_dpo_ft_ro` (adaptador LoRA) | Adaptador sobre base de 7B | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
+| `OpenLLM-Ro/RoMistral-7b-Instruct-DPO` (modelo base) | 7B (segun denominacion) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 | Otros modelos de la iniciativa OpenLLM-Ro (por ejemplo, variantes basadas en Llama o Gemma) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
-| Mistral-7B-Instruct (familia de origen de la arquitectura) | 7B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| Mistral-7B-Instruct (familia de origen de la arquitectura) | 7B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos verificados para establecer una comparativa cuantitativa con alternativas de la misma categoria. Cualquier comparacion de rendimiento exigiria ejecutar una evaluacion propia sobre los mismos conjuntos de prueba.
 
@@ -81,7 +81,7 @@ No se dispone de datos verificados para establecer una comparativa cuantitativa 
 - Uso en produccion desaconsejado sin validacion: no hay informacion sobre latencia, throughput, estabilidad ni robustez frente a entradas adversarias.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/GRAI-UNSTPB/romistral_7b_instruct_dpo_ft_ro
+- Modelo en Hugging Face: https://huggingface.co/GRAI-UNSTPB/romistral_7b_instruct_dpo_ft_ro
 - Modelo base: https://huggingface.co/OpenLLM-Ro/RoMistral-7b-Instruct-DPO
 - Libreria PEFT: https://huggingface.co/docs/peft/index
 - Libreria TRL: https://huggingface.co/docs/trl/index

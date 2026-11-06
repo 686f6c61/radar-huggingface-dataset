@@ -2,7 +2,7 @@
 
 ## Resumen
 
-khtsly/e es un modelo de lenguaje de tipo decoder denso de 2.694.626.816 parametros (aproximadamente 2,7 mil millones) publicado por el usuario khtsly en HuggingFace. Segun su model card, la arquitectura combina "Differential Attention V2" con "Exclusive Self-Attention" (etiquetada en el repositorio como diff_xsa), dos variantes de mecanismo de atencion orientadas a mejorar la selectividad y reducir el ruido en el calculo de atencion. El modelo se encuentra en fase de preentrenamiento activo: en el momento de la ultima actualizacion del repositorio (15 de octubre de 2026) el entrenamiento iba por el paso 1.600, con 627.202.559 tokens procesados.
+khtsly/e es un modelo de lenguaje de tipo decoder denso de 2.694.626.816 parametros (aproximadamente 2,7 mil millones) publicado por el usuario khtsly en Hugging Face. Segun su model card, la arquitectura combina "Differential Attention V2" con "Exclusive Self-Attention" (etiquetada en el repositorio como diff_xsa), dos variantes de mecanismo de atencion orientadas a mejorar la selectividad y reducir el ruido en el calculo de atencion. El modelo se encuentra en fase de preentrenamiento activo: en el momento de la ultima actualizacion del repositorio (15 de octubre de 2026) el entrenamiento iba por el paso 1.600, con 627.202.559 tokens procesados.
 
 Se trata, por tanto, de un checkpoint intermedio y no de un modelo finalizado ni alineado. No se ha publicado informacion sobre la composicion del dataset de entrenamiento, el numero total de tokens previstos, la longitud de contexto soportada, los idiomas cubiertos ni la licencia de distribucion. Tampoco hay resultados de benchmarks, pipeline declarado ni variantes cuantizadas. El repositorio ocupa 32,2 GB y contiene unicamente pesos en formato safetensors.
 
@@ -103,8 +103,8 @@ Diferencias clave: las alternativas son modelos finalizados, con licencia explic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/khtsly/e
-- Perfil del autor en HuggingFace: https://huggingface.co/khtsly
+- Modelo en Hugging Face: https://huggingface.co/khtsly/e
+- Perfil del autor en Hugging Face: https://huggingface.co/khtsly
 - Listado de modelos del autor: https://huggingface.co/khtsly/models
 - Plugin persistent-memory del autor en LM Studio Hub: https://lmstudio.ai/khtsly/persistent-memory
 - Plugin skills del autor en LM Studio Hub: https://lmstudio.ai/khtsly/skills

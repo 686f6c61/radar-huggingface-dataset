@@ -81,7 +81,7 @@ La diferencia principal entre esta version y la original de DeepSeek es la elimi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PocketWeights/DeepSeek-R1-Llama-8B-Abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/PocketWeights/DeepSeek-R1-Llama-8B-Abliterated-GGUF
 - Modelo base abliterado (huihui-ai): https://huggingface.co/huihui-ai/DeepSeek-R1-Distill-Llama-8B-abliterated
 - Modelo original DeepSeek-R1-Distill-Llama-8B: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
 - Repositorio GitHub de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1

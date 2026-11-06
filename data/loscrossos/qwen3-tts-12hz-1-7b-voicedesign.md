@@ -93,8 +93,8 @@ La ventaja diferencial de esta variante frente a las alternativas es la combinac
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/loscrossos/Qwen3-TTS-12Hz-1.7B-VoiceDesign
-- Colección oficial Qwen3-TTS en HuggingFace: https://huggingface.co/collections/Qwen/qwen3-tts
+- Hugging Face (este repositorio): https://huggingface.co/loscrossos/Qwen3-TTS-12Hz-1.7B-VoiceDesign
+- Colección oficial Qwen3-TTS en Hugging Face: https://huggingface.co/collections/Qwen/qwen3-tts
 - Colección en ModelScope: https://modelscope.cn/collections/Qwen/Qwen3-TTS
 - Blog de presentación: https://qwen.ai/blog?id=qwen3tts-0115
 - Paper (arXiv 2601.15621): https://huggingface.co/papers/2601.15621

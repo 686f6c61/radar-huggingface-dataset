@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM5.3-DSA-Tiny-Aligned-BF16-MTP-FP8-BLOCK-pr3118-validation es un artefacto de validacion estructural publicado por el usuario soyrsoyr en HuggingFace. No es un modelo preentrenado: la propia model card lo describe como un "fixture estructural de pesos aleatorios" derivado del repositorio soyrsoyr/GLM-5.3-MTP-NVFP4-Test-Fixture, con dimensiones alineadas y todos los pasos de derivacion registrados en el fichero pr3118-validation.json. Su finalidad es verificar que la cadena de herramientas de cuantizacion y de inferencia carga y ejecuta correctamente un modelo con arquitectura etiquetada como glm_moe_dsa, decodificacion especulativa MTP (multi-token prediction) y cuantizacion FP8 por bloques.
+GLM5.3-DSA-Tiny-Aligned-BF16-MTP-FP8-BLOCK-pr3118-validation es un artefacto de validacion estructural publicado por el usuario soyrsoyr en Hugging Face. No es un modelo preentrenado: la propia model card lo describe como un "fixture estructural de pesos aleatorios" derivado del repositorio soyrsoyr/GLM-5.3-MTP-NVFP4-Test-Fixture, con dimensiones alineadas y todos los pasos de derivacion registrados en el fichero pr3118-validation.json. Su finalidad es verificar que la cadena de herramientas de cuantizacion y de inferencia carga y ejecuta correctamente un modelo con arquitectura etiquetada como glm_moe_dsa, decodificacion especulativa MTP (multi-token prediction) y cuantizacion FP8 por bloques.
 
 El modelo tiene 88.040.064 parametros (aproximadamente 88 millones) segun los pesos safetensors, ocupa 0,2 GB en el repositorio y se distribuye bajo licencia "other". La model card indica explicitamente que la carga y generacion en H100 pasaron la validacion con metricas reales de tokens borrador MTP, y que esto no constituye una prueba de calidad ni de rendimiento. Es decir, el artefacto sirve para validar infraestructura, no para producir texto de calidad.
 
@@ -73,8 +73,8 @@ La comparacion de calidad no es aplicable porque el modelo no tiene pesos entren
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM5.3-DSA-Tiny-Aligned-BF16-MTP-FP8-BLOCK-pr3118-validation | 88.040.064 | no disponible (prueba con 1024) | Fixture de validacion de cuantizacion y MTP | other | HuggingFace, 0 descargas, 0 likes |
-| soyrsoyr/GLM-5.3-MTP-NVFP4-Test-Fixture | no disponible | no disponible | Fixture de origen | no disponible | HuggingFace |
+| GLM5.3-DSA-Tiny-Aligned-BF16-MTP-FP8-BLOCK-pr3118-validation | 88.040.064 | no disponible (prueba con 1024) | Fixture de validacion de cuantizacion y MTP | other | Hugging Face, 0 descargas, 0 likes |
+| soyrsoyr/GLM-5.3-MTP-NVFP4-Test-Fixture | no disponible | no disponible | Fixture de origen | no disponible | Hugging Face |
 | Modelos pequenos de proposito general (por ejemplo, en la franja de 100-600 M de parametros) | Comparable en orden de magnitud | Tipicamente miles de tokens | Generacion de texto real | Varias | Amplia |
 
 No se dispone de datos de benchmarks ni de licencia del fixture de origen, por lo que no es posible establecer una comparacion tecnica significativa con alternativas de la misma categoria.
@@ -93,9 +93,9 @@ No se dispone de datos de benchmarks ni de licencia del fixture de origen, por l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/soyrsoyr/GLM5.3-DSA-Tiny-Aligned-BF16-MTP-FP8-BLOCK-pr3118-validation
+- Hugging Face: https://huggingface.co/soyrsoyr/GLM5.3-DSA-Tiny-Aligned-BF16-MTP-FP8-BLOCK-pr3118-validation
 - Modelo base (fixture de origen): https://huggingface.co/soyrsoyr/GLM-5.3-MTP-NVFP4-Test-Fixture/tree/0b017a9420e734a8443d46a9ec1a5128e4255ae7
 - Implementacion (llm-compressor PR 3118, commit 87347881): https://github.com/soyr-redhat/llm-compressor/commit/87347881b46df8786b9fc463965f80504914a98f
-- Fichero de derivacion: pr3118-validation.json (dentro del repositorio de HuggingFace)
-- Script de verificacion: verify_mtp.py (dentro del repositorio de HuggingFace)
+- Fichero de derivacion: pr3118-validation.json (dentro del repositorio de Hugging Face)
+- Script de verificacion: verify_mtp.py (dentro del repositorio de Hugging Face)
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante; los resultados devueltos corresponden a un foro de matematicas en arabe y no guardan relacion con el modelo.

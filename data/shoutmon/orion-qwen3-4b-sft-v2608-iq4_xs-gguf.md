@@ -69,7 +69,7 @@ No hay datos suficientes para una comparativa rigurosa con alternativas como `Qw
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/shoutmon/Orion-Qwen3-4B-SFT-v2608-IQ4_XS-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/shoutmon/Orion-Qwen3-4B-SFT-v2608-IQ4_XS-GGUF
 - Modelo base original: https://huggingface.co/3tic/Orion-Qwen3-4B-SFT-v2608
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
 - Espacio de conversión GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

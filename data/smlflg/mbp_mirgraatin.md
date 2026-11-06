@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `smlflg/MBP_Mirgraatin` corresponde a un repositorio alojado en HuggingFace que, segun la informacion disponible, no contiene un modelo de inteligencia artificial. La model card describe un "Kontroll- und Cutover-Repo fuer Samuels MacBook Pro", es decir, un repositorio de control y migracion para un equipo MacBook Pro concreto, con scripts de arranque y documentos de planificacion. No se declara arquitectura de red neuronal, pesos, tokenizador ni configuracion de inferencia en ningun punto de la informacion proporcionada.
+El identificador `smlflg/MBP_Mirgraatin` corresponde a un repositorio alojado en Hugging Face que, segun la informacion disponible, no contiene un modelo de inteligencia artificial. La model card describe un "Kontroll- und Cutover-Repo fuer Samuels MacBook Pro", es decir, un repositorio de control y migracion para un equipo MacBook Pro concreto, con scripts de arranque y documentos de planificacion. No se declara arquitectura de red neuronal, pesos, tokenizador ni configuracion de inferencia en ningun punto de la informacion proporcionada.
 
 El contenido documentado se limita a tareas de aprovisionamiento de sistema: un script `03_SKRIPTE/bootstrap-mbp.sh` con los subcomandos `check`, `core`, `identity` y `verify`, un fichero de verdad operativa `MIGRATION_TRUTH.md`, planes historicos en `01_PLAENE/` y un proyecto de aplicacion nativa en `~/Projects/03_HAI/HAI-MACAPP`. El repositorio ocupa 0,1 GB y registra 0 descargas y 0 "likes" en el momento de la consulta.
 
@@ -79,7 +79,7 @@ No disponible. Este identificador no es comparable con modelos de lenguaje u otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smlflg/MBP_Mirgraatin
+- Repositorio en Hugging Face: https://huggingface.co/smlflg/MBP_Mirgraatin
 - Fichero de verdad operativa citado en la model card: `MIGRATION_TRUTH.md` (ruta relativa dentro del repositorio; no se proporciona URL directa)
 - Script citado en la model card: `03_SKRIPTE/bootstrap-mbp.sh` (ruta relativa dentro del repositorio; no se proporciona URL directa)
 - Proyecto de aplicacion nativa citado: `~/Projects/03_HAI/HAI-MACAPP` (ruta local en el equipo del autor, excluida del repositorio; sin URL)

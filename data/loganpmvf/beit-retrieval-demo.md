@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| loganpmvf/beit-retrieval-demo | 33.088 | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace, 2 descargas |
+| loganpmvf/beit-retrieval-demo | 33.088 | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face, 2 descargas |
 | BEiT base (original, referencia externa) | ~86 M (cifra de literatura publica, no verificada en la informacion proporcionada) | N/A (vision) | resultados publicados en clasificacion de imagen y tareas derivadas | MIT (repositorio original de Microsoft) | pesos publicos |
 | BEiT-3 base (referencia externa) | no disponible en la informacion proporcionada | N/A (vision-lenguaje) | supera a modelos large previos en tareas vision-lenguaje y vision segun el repositorio DylanJoo/beit3 | no disponible en la informacion proporcionada | pesos preentrenados mono y multimodales a 224x224 |
 | CLIP ViT-B/32 (referencia externa) | no disponible en la informacion proporcionada | N/A (vision-lenguaje) | recuperacion cero-shot estandar en la literatura | no disponible en la informacion proporcionada | ampliamente disponible |
@@ -88,12 +88,12 @@ La comparación es asimétrica por construcción: este repositorio es un esquele
 - Limitaciones de contexto o idioma: no disponibles; no se documenta resolución de entrada, tamaño de vocabulario ni idiomas.
 - Licencia: Apache 2.0 permite uso comercial del código y de los pesos, pero el autor recomienda revisar por separado los términos de los datos de origen cuando el repositorio se use con datasets externos.
 - Discrepancia relevante: la escala declarada es "base" mientras que el recuento real de parámetros es de 33.088. Conviene verificar `config.json` antes de asumir que la arquitectura corresponde a un BEiT base completo.
-- Advertencia de producción: al ser una implementación personalizada, las APIs de carga automática de HuggingFace no funcionarán sin un adaptador explícito.
+- Advertencia de producción: al ser una implementación personalizada, las APIs de carga automática de Hugging Face no funcionarán sin un adaptador explícito.
 - Resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto distribuidos en este repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loganpmvf/beit-retrieval-demo
+- Modelo en Hugging Face: https://huggingface.co/loganpmvf/beit-retrieval-demo
 - Perfil del autor: https://huggingface.co/loganpmvf
 - Articulo divulgativo sobre BEiT (BERT Pre-Training of Image Transformers): https://www.abhik.ai/papers/beit
 - Tematica beit en GitHub: https://github.com/topics/beit

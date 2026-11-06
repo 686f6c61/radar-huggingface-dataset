@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Objetivo | Contexto/volumen | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HercuViT v0 | ViT + CNN + Mask2Former | Instancias de hoja (cresta medial) | Ventanas de µCT, resolución 9,6 µm | MIT | HuggingFace + GitHub |
+| HercuViT v0 | ViT + CNN + Mask2Former | Instancias de hoja (cresta medial) | Ventanas de µCT, resolución 9,6 µm | MIT | Hugging Face + GitHub |
 | HercUNet | nnU-Net | Segmentación de superficie (medial) | Volúmenes µCT | no disponible en la información | GitHub del mismo autor |
-| DinovoL | ViT auto-supervisado | Codificador de características µCT | Parche 8, 9,6 µm | no disponible en la información | HuggingFace (scrollprize) |
+| DinovoL | ViT auto-supervisado | Codificador de características µCT | Parche 8, 9,6 µm | no disponible en la información | Hugging Face (scrollprize) |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jimmylomro/hercuvit-v0
+- Hugging Face: https://huggingface.co/jimmylomro/hercuvit-v0
 - Repositorio de código y documentación: https://github.com/jimmylomro/hercUNet/tree/hercuvit
 - Documentación de uso: https://github.com/jimmylomro/hercUNet/blob/hercuvit/docs/hercuvit.md
 - Corpus de entrenamiento: https://huggingface.co/datasets/jimmylomro/hercunet-corpus

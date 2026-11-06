@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `testmat77/secretmodels` es una publicacion en HuggingFace que no contiene una model card sustantiva ni documentacion tecnica. El unico contenido del README es la cabecera YAML con la licencia Apache 2.0, sin descripcion del modelo, arquitectura, parametros ni capacidades. El repositorio tiene un tamano de 0.1 GB, cero descargas y cero likes, lo que sugiere que se trata de una subida de prueba o un espacio reservado sin contenido real.
+El repositorio `testmat77/secretmodels` es una publicacion en Hugging Face que no contiene una model card sustantiva ni documentacion tecnica. El unico contenido del README es la cabecera YAML con la licencia Apache 2.0, sin descripcion del modelo, arquitectura, parametros ni capacidades. El repositorio tiene un tamano de 0.1 GB, cero descargas y cero likes, lo que sugiere que se trata de una subida de prueba o un espacio reservado sin contenido real.
 
 No existe informacion publica sobre que modelo contiene este repositorio, quien lo ha entrenado, con que datos ni para que tarea. Cualquier evaluacion tecnica seria especulativa. Esta ficha documenta la ausencia de datos y advierte contra su uso en produccion o investigacion sin una verificacion previa del contenido real del repositorio.
 
@@ -61,6 +61,6 @@ No disponible. Al no conocerse la arquitectura ni el tamano del modelo, no es po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/testmat77/secretmodels
+- Repositorio Hugging Face: https://huggingface.co/testmat77/secretmodels
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo.

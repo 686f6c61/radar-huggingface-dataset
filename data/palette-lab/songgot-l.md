@@ -86,7 +86,7 @@ Nota adicional de la model card: tokens por silaba Hangul sobre las mismas 100 c
 
 | Modelo | Parametros | all (FunctionChat-Bench SingleCall) | name only | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Songgot-L | 303M | 28,2 | 72,4 | Apache 2.0 | HuggingFace, safetensors y GGUF |
+| Songgot-L | 303M | 28,2 | 72,4 | Apache 2.0 | Hugging Face, safetensors y GGUF |
 | Songgot-M | 126M | 33,2 | 73,8 | No disponible en la informacion proporcionada | Referenciado en la model card de Songgot-L |
 | FunctionGemma-270M | 270M | 2,2 | 36,2 | No disponible en la informacion proporcionada | Comparador evaluado por el autor |
 | Qwen3-0.6B | 600M | 43,2 | 70,8 | No disponible en la informacion proporcionada | Comparador evaluado por el autor |
@@ -109,10 +109,10 @@ Observaciones: dentro de la propia familia Songgot, el modelo mas pequeno (Songg
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/palette-lab/songgot-l
+- Modelo en Hugging Face: https://huggingface.co/palette-lab/songgot-l
 - Paper: https://hanishkeloth.github.io/songgot
 - Codigo, generadores de datos y scorer: https://github.com/hanishkeloth/songgot
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Hanish/songgot
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Hanish/songgot
 - Demo on-device en navegador: https://hanishkeloth.github.io/songgot/app/
 - Figura de tokens por silaba Hangul: https://hanishkeloth.github.io/songgot/fig1_tokens.png
 - Figura de precision por condicion: https://hanishkeloth.github.io/songgot/fig2_bench.png

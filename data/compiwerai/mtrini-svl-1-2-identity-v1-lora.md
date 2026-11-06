@@ -93,6 +93,6 @@ No hay datos de rendimiento comparativo para este adaptador, por lo que la compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CompiwerAI/Mtrini-SVL-1.2-Identity-v1-LoRA
+- Repositorio Hugging Face: https://huggingface.co/CompiwerAI/Mtrini-SVL-1.2-Identity-v1-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - No se han encontrado en la información proporcionada papers, blogs técnicos, repositorios de código ni demos asociados a este adaptador.

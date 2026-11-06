@@ -83,9 +83,9 @@ No se han proporcionado datos de rendimiento de modelos alternativos en la infor
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| StanfordSCALE/assertion_states_that_the_speaker_is_uncertain | 109.486.464 | no disponible | no disponible | HuggingFace, SetFit |
-| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base, sin cabeza de clasificacion) | no disponible | no disponible | no disponible | HuggingFace, sentence-transformers |
-| Otros clasificadores de aserciones del conjunto `bu5` del proyecto EduBehaviors | no disponible | no disponible | no disponible | HuggingFace (mismo autor) |
+| StanfordSCALE/assertion_states_that_the_speaker_is_uncertain | 109.486.464 | no disponible | no disponible | Hugging Face, SetFit |
+| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base, sin cabeza de clasificacion) | no disponible | no disponible | no disponible | Hugging Face, sentence-transformers |
+| Otros clasificadores de aserciones del conjunto `bu5` del proyecto EduBehaviors | no disponible | no disponible | no disponible | Hugging Face (mismo autor) |
 
 La comparacion relevante es contra el propio modelo base sin ajuste: el valor anadido de este repositorio es la cabeza logistica entrenada sobre anotaciones especificas de incertidumbre en discurso de aula, no la arquitectura del encoder.
 
@@ -104,7 +104,7 @@ La comparacion relevante es contra el propio modelo base sin ajuste: el valor an
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_states_that_the_speaker_is_uncertain
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_states_that_the_speaker_is_uncertain
 - Dataset de entrenamiento: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio GitHub): https://github.com/SumnerLab/TalkMoves

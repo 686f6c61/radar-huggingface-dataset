@@ -4,7 +4,7 @@
 
 El modelo `csikasote/omniASR-CTC-300M-v2-Zulu-All-v2` es un sistema de reconocimiento automático del habla (ASR) basado en la arquitectura Wav2Vec2, convertido desde el checkpoint `omniASR_CTC_300M_v2` del proyecto OmniLingual de Meta. Se trata de una versión específica orientada al idioma zulú (según el nombre), aunque la model card no detalla los idiomas exactos que soporta. El modelo genera logits CTC sobre un vocabulario SentencePiece y puede transcribir audio a texto.
 
-La relevancia de este modelo reside en que forma parte de la familia OmniASR, que cubre más de 1600 idiomas, y ofrece un equilibrio entre velocidad de inferencia y precisión gracias a la arquitectura CTC. La conversión a HuggingFace con verificación de paridad numérica permite su uso directo con `transformers` y `torchaudio`, lo que facilita su integración en aplicaciones de producción. El modelo cuenta con 325 millones de parámetros, 24 capas de encoder y una ventana de contexto de audio ilimitada en la práctica (dependiendo de la duración del archivo).
+La relevancia de este modelo reside en que forma parte de la familia OmniASR, que cubre más de 1600 idiomas, y ofrece un equilibrio entre velocidad de inferencia y precisión gracias a la arquitectura CTC. La conversión a Hugging Face con verificación de paridad numérica permite su uso directo con `transformers` y `torchaudio`, lo que facilita su integración en aplicaciones de producción. El modelo cuenta con 325 millones de parámetros, 24 capas de encoder y una ventana de contexto de audio ilimitada en la práctica (dependiendo de la duración del archivo).
 
 ## Especificaciones técnicas
 

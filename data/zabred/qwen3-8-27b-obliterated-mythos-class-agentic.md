@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic es un ajuste fino derivado de la cadena Qwen/Qwen3.8-27B → OBLITERATUS/Qwen3.8-27B-OBLITERATED, publicada en HuggingFace por el usuario «zabred», aunque la propia model card atribuye el trabajo a «medismera» y existe una réplica del repositorio bajo ese segundo nombre. Con 27.781.427.952 parámetros reales (27,78 B) y un repositorio de 55,6 GB, se presenta como una configuración «de producción» que corrige defectos del checkpoint abliterado original: plantilla de chat truncada a 506 bytes, llamadas a herramientas descartadas silenciosamente y bucles infinitos de razonamiento.
+Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic es un ajuste fino derivado de la cadena Qwen/Qwen3.8-27B → OBLITERATUS/Qwen3.8-27B-OBLITERATED, publicada en Hugging Face por el usuario «zabred», aunque la propia model card atribuye el trabajo a «medismera» y existe una réplica del repositorio bajo ese segundo nombre. Con 27.781.427.952 parámetros reales (27,78 B) y un repositorio de 55,6 GB, se presenta como una configuración «de producción» que corrige defectos del checkpoint abliterado original: plantilla de chat truncada a 506 bytes, llamadas a herramientas descartadas silenciosamente y bucles infinitos de razonamiento.
 
 La propuesta técnica del autor se apoya en tres elementos: una plantilla Jinja2 canónica de 9,4 KB con 22 rutas de resolución de tool calling, un protocolo de razonamiento denominado Mythos-Class (autoevaluación adversarial y descomposición jerárquica en árbol de tareas) y una ampliación de ventana de contexto desde los 32.768 tokens nativos del checkpoint original hasta 131.072 tokens probados en producción y hasta 262.144 declarados. El techo de generación por turno se eleva a 16.384 tokens.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tool calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic | 27,78 B | 32.768 nativo; 131.072 probados; 262.144 declarados | Nativo, plantilla Jinja2 de 9,4 KB con 22 rutas | Apache 2.0 | Safetensors en HuggingFace (BF16, FP8, AWQ) |
-| OBLITERATUS/Qwen3.8-27B-OBLITERATED (upstream) | 27,78 B (derivado) | 32.768 nativo | Roto: descarte silencioso de `role: "tool"`; plantilla truncada a 506 bytes | No disponible | Safetensors en HuggingFace |
-| Qwen/Qwen3.8-27B (base) | 27,78 B (no confirmado en la informacion) | No disponible | No disponible | No disponible | HuggingFace y GitHub (QwenLM/Qwen3.8) |
+| Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic | 27,78 B | 32.768 nativo; 131.072 probados; 262.144 declarados | Nativo, plantilla Jinja2 de 9,4 KB con 22 rutas | Apache 2.0 | Safetensors en Hugging Face (BF16, FP8, AWQ) |
+| OBLITERATUS/Qwen3.8-27B-OBLITERATED (upstream) | 27,78 B (derivado) | 32.768 nativo | Roto: descarte silencioso de `role: "tool"`; plantilla truncada a 506 bytes | No disponible | Safetensors en Hugging Face |
+| Qwen/Qwen3.8-27B (base) | 27,78 B (no confirmado en la informacion) | No disponible | No disponible | No disponible | Hugging Face y GitHub (QwenLM/Qwen3.8) |
 
 No se dispone de modelos comparables adicionales con datos verificables en la información proporcionada, ni de cifras de rendimiento que permitan una comparación cuantitativa entre los tres.
 
@@ -80,18 +80,18 @@ No se dispone de modelos comparables adicionales con datos verificables en la in
 - Riesgo elevado de contenido dañino: la model card promueve explícitamente flujos de generación de exploits y de elusión de filtros. El uso en seguridad ofensiva sin autorización puede ser ilegal según la jurisdicción.
 - Riesgo de alucinación: no se han publicado evaluaciones de fidelidad factual ni de tasas de alucinación; el protocolo de autoevaluación es una instrucción de prompt, no una garantía de veracidad.
 - Idiomas limitados a inglés, chino y árabe. No se declara soporte de español ni de otras lenguas.
-- El YAML del repositorio marca `inference: false`, por lo que la inferencia gestionada de HuggingFace no está habilitada.
+- El YAML del repositorio marca `inference: false`, por lo que la inferencia gestionada de Hugging Face no está habilitada.
 - Discrepancia de autoría: el identificador del repositorio es `zabred`, pero la model card y una réplica apuntan a `medismera`. Conviene verificar la procedencia antes de usarlo en producción.
 - Sin resultados de benchmarks ni métricas de calidad publicadas. Las afirmaciones de la model card (contexto de 256K, tool calling al 100 %, 22 rutas de resolución) son del autor y no están verificadas de forma independiente.
-- El repositorio se creó y actualizó el 29 de septiembre de 2026 con 0 descargas y 0 «likes» en el momento de los datos de HuggingFace, por lo que no hay validación de la comunidad.
+- El repositorio se creó y actualizó el 29 de septiembre de 2026 con 0 descargas y 0 «likes» en el momento de los datos de Hugging Face, por lo que no hay validación de la comunidad.
 - Licencia Apache 2.0 declarada para este checkpoint, pero no se especifica la licencia del modelo base Qwen/Qwen3.8-27B en la información disponible; conviene comprobar los términos de la cadena completa antes de un uso comercial.
 - Sin soporte GGUF: no hay ruta directa a llama.cpp, Ollama o entornos de CPU.
 - Requisitos de VRAM altos para las ramas BF16 y FP8, lo que limita el despliegue a hardware profesional o configuraciones multi-GPU.
 
 ## Enlaces
 
-- Repositorio en HuggingFace (zabred): https://huggingface.co/zabred/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic
-- Réplica en HuggingFace (medismera): https://huggingface.co/medismera/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic
+- Repositorio en Hugging Face (zabred): https://huggingface.co/zabred/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic
+- Réplica en Hugging Face (medismera): https://huggingface.co/medismera/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic
 - Modelo base abliterado: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
 - Discusión #7 del modelo base (bucles de razonamiento): https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED/discussions/7
 - Ficha en LLM Explorer: https://llm-explorer.com/model/medismera%2FQwen3.8-27B-OBLITERATED-Mythos-Class-Agentic,1z5HmsXMznOSZ3ArL6LBhE

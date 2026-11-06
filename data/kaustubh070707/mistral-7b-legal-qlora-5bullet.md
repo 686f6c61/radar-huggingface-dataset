@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Kaustubh070707/mistral-7B-legal-qlora-5bullet es un ajuste fino del modelo Mistral 7B orientado al dominio juridico, publicado en HuggingFace por el usuario Kaustubh070707. El identificador del repositorio y la etiqueta "mistral" indican que parte de Mistral 7B, un transformer decoder-only denso de 7.241.732.096 parametros (dato extraido del propio repositorio en formato safetensors), y el sufijo "qlora" sugiere que el ajuste se realizo mediante QLoRA, es decir, adaptacion de bajo rango sobre una base cuantizada a 4 bits.
+Kaustubh070707/mistral-7B-legal-qlora-5bullet es un ajuste fino del modelo Mistral 7B orientado al dominio juridico, publicado en Hugging Face por el usuario Kaustubh070707. El identificador del repositorio y la etiqueta "mistral" indican que parte de Mistral 7B, un transformer decoder-only denso de 7.241.732.096 parametros (dato extraido del propio repositorio en formato safetensors), y el sufijo "qlora" sugiere que el ajuste se realizo mediante QLoRA, es decir, adaptacion de bajo rango sobre una base cuantizada a 4 bits.
 
 El problema que pretende resolver es el de la adaptacion de un modelo generalista de 7B al lenguaje y las tareas del ambito legal (resumen, extraccion de clausulas, consulta sobre normativa) reduciendo el coste de entrenamiento. Es relevante ahora porque la combinacion de cuantizacion de 4 bits y LoRA permite reproducir ajustes de dominio en una unica GPU de consumo, y porque el interes por asistentes juridicos especializados sigue creciendo.
 
-Ahora bien, la model card publicada es la plantilla autogenerada por HuggingFace y no contiene informacion real: no documenta dataset, hiperparametros, licencia, idiomas, evaluacion ni uso previsto. El repositorio tiene 0 descargas y 0 likes, y el peso total es de 4,1 GB para 7.241.732.096 parametros, lo que es coherente con pesos almacenados en 4 bits (aproximadamente 4,5 bits por parametro) mas la estructura del modelo. Cualquier dato no listado explicitamente a continuacion debe considerarse no disponible.
+Ahora bien, la model card publicada es la plantilla autogenerada por Hugging Face y no contiene informacion real: no documenta dataset, hiperparametros, licencia, idiomas, evaluacion ni uso previsto. El repositorio tiene 0 descargas y 0 likes, y el peso total es de 4,1 GB para 7.241.732.096 parametros, lo que es coherente con pesos almacenados en 4 bits (aproximadamente 4,5 bits por parametro) mas la estructura del modelo. Cualquier dato no listado explicitamente a continuacion debe considerarse no disponible.
 
 ## Especificaciones tecnicas
 
@@ -79,19 +79,19 @@ La comparacion con los modelos generalistas solo sirve como referencia de tamano
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla autogenerada de HuggingFace, con todos los campos marcados como "More Information Needed". No hay informacion sobre datos, entrenamiento, sesgos ni uso previsto.
+- Documentacion inexistente: la model card es la plantilla autogenerada de Hugging Face, con todos los campos marcados como "More Information Needed". No hay informacion sobre datos, entrenamiento, sesgos ni uso previsto.
 - Licencia no especificada: al no declararse licencia, no puede asumirse permiso de uso comercial. Ademas, el modelo base Mistral 7B se distribuye bajo Apache 2.0 solo en sus versiones marcadas como tales; conviene verificar la procedencia exacta de los pesos base.
 - Riesgo de alucinacion elevado en contexto juridico: un modelo de 7B ajustado con QLoRA no garantiza exactitud normativa ni vigencia de la legislacion citada. Cualquier salida debe ser revisada por un profesional.
 - Sin evaluacion: no existen benchmarks que cuantifiquen su calidad ni que permitan compararlo con alternativas; tampoco hay validacion de la comunidad (0 descargas, 0 likes).
 - Idiomas desconocidos: al no declararse idiomas, no puede asumirse un buen rendimiento en castellano juridico, aunque el modelo base sea multilingue de forma parcial.
 - Contexto no documentado: se desconoce la ventana de contexto efectiva tras el ajuste, lo que impide planificar tareas de documento largo sin pruebas previas.
-- Etiqueta arxiv:1910.09700: corresponde al articulo de Lacoste et al. sobre el calculador de impacto ambiental de ML, incluido en la plantilla de HuggingFace. No es una referencia tecnica de este modelo.
+- Etiqueta arxiv:1910.09700: corresponde al articulo de Lacoste et al. sobre el calculador de impacto ambiental de ML, incluido en la plantilla de Hugging Face. No es una referencia tecnica de este modelo.
 - Metadatos poco fiables: el repositorio se creo y actualizo el 2026-09-28 con tres minutos de diferencia, lo que sugiere una publicacion rapida y sin revision. El sufijo "5bullet" no esta explicado.
 - Uso en produccion no recomendado sin auditoria previa: no hay informacion sobre fusion o no de los adaptadores, ni sobre la estabilidad de los pesos publicados, ni sobre sesgos de genero, origen o condicion social que el ajuste legal pueda amplificar.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Kaustubh070707/mistral-7B-legal-qlora-5bullet
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Kaustubh070707/mistral-7B-legal-qlora-5bullet
 - Articulo referenciado en la etiqueta arxiv del repositorio (Lacoste et al., 2019, sobre impacto ambiental de ML): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ambiental de ML citado en la plantilla: https://mlco2.github.io/impact
 - Repositorio del modelo base Mistral 7B (referencia para arquitectura y contexto; no verificado si el ajuste usa esta version concreta): https://huggingface.co/mistralai/Mistral-7B-v0.1

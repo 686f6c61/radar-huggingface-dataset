@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`emilylewi/blip-demo` es un repositorio de HuggingFace publicado por el usuario emilylewi que contiene una implementación en PyTorch de una arquitectura **BLIP** (Bootstrapping Language-Image Pre-training) en configuración "base", orientada a tareas de generación. El repositorio no incluye un modelo entrenado: el fichero `model.safetensors` se describe explícitamente en la model card como un *checkpoint de inicialización* para pruebas de humo (smoke tests), no como un checkpoint con rendimiento validado. El recuento real de parámetros del fichero safetensors es de **16.576 parámetros**, un orden de magnitud muy inferior al de cualquier BLIP base funcional, lo que confirma que se trata de un esqueleto de pesos.
+`emilylewi/blip-demo` es un repositorio de Hugging Face publicado por el usuario emilylewi que contiene una implementación en PyTorch de una arquitectura **BLIP** (Bootstrapping Language-Image Pre-training) en configuración "base", orientada a tareas de generación. El repositorio no incluye un modelo entrenado: el fichero `model.safetensors` se describe explícitamente en la model card como un *checkpoint de inicialización* para pruebas de humo (smoke tests), no como un checkpoint con rendimiento validado. El recuento real de parámetros del fichero safetensors es de **16.576 parámetros**, un orden de magnitud muy inferior al de cualquier BLIP base funcional, lo que confirma que se trata de un esqueleto de pesos.
 
 El interés del repositorio es, por tanto, documental y de ingeniería: proporciona `predict.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados y `training_args.json` con una receta de experimento por defecto (optimizador SGD con schedule polinómico). La model card declara explícitamente que no se reclama ninguna métrica de benchmark y que la implementación debe tratarse como un punto de partida experimental.
 
@@ -55,7 +55,7 @@ No hay evidencia de entrenamiento: el repositorio incluye únicamente una inicia
 - Pruebas de humo de infraestructura: usar `model.safetensors` y `predict.py` para verificar que un entorno de PyTorch carga pesos safetensors y ejecuta un forward pass antes de desplegar un modelo real.
 - Plantilla de implementación BLIP: servir como base de código de referencia para integrar atención dispersa y fusión *tucker* en un pipeline propio de visión-lenguaje.
 - Punto de partida para *fine-tuning*: reutilizar `config.json` y `training_args.json` como configuración inicial y sustituir el checkpoint por pesos preentrenados de BLIP antes de entrenar sobre un dataset propio de captioning.
-- Docencia y formación técnica: ilustrar la estructura mínima de un repositorio de modelo en HuggingFace (pesos, config, argumentos de entrenamiento, script de inferencia) sin coste computacional.
+- Docencia y formación técnica: ilustrar la estructura mínima de un repositorio de modelo en Hugging Face (pesos, config, argumentos de entrenamiento, script de inferencia) sin coste computacional.
 - Test de integración en CI/CD: incluir la carga del checkpoint en la batería de tests para detectar roturas de compatibilidad de versiones de `transformers`/`torch` en pipelines de modelos multimodales.
 - Evaluación comparativa de harnesses: usar el repositorio como caso de prueba de herramientas de evaluación que deban manejar checkpoints no entrenados y arquitecturas personalizadas sin adaptador estándar.
 - Réplica de experimentos: partir de la receta SGD + schedule polinómico declarada para reproducir un baseline de baja capacidad con presupuesto de cómputo mínimo.
@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `emilylewi/blip-demo` | 16.576 (safetensors) | no disponible | sin benchmarks (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
-| BLIP base (Salesforce) | referencia externa no verificada, del orden de 2 × 10^8 | no disponible en esta informacion | métricas publicadas por el autor original, no verificadas aquí | licencia del autor original, no verificada | HuggingFace |
-| BLIP-2 | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | HuggingFace |
+| `emilylewi/blip-demo` | 16.576 (safetensors) | no disponible | sin benchmarks (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
+| BLIP base (Salesforce) | referencia externa no verificada, del orden de 2 × 10^8 | no disponible en esta informacion | métricas publicadas por el autor original, no verificadas aquí | licencia del autor original, no verificada | Hugging Face |
+| BLIP-2 | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | Hugging Face |
 
 La comparación fiable se limita a la primera fila: el repositorio analizado no es funcionalmente comparable con un BLIP base entrenado, ya que su checkpoint no ha sido entrenado y su recuento de parámetros es varios órdenes de magnitud menor que el de la configuración "base" que declara. Cualquier cifra de los modelos alternativos debe contrastarse en sus propias model cards.
 
@@ -96,5 +96,5 @@ La comparación fiable se limita a la primera fila: el repositorio analizado no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/emilylewi/blip-demo
+- Repositorio en Hugging Face: https://huggingface.co/emilylewi/blip-demo
 - No se han encontrado enlaces relevantes (paper, blog, repositorio de código o demo) en la búsqueda web realizada; los resultados devueltos correspondían a páginas de LinkedIn sin relación con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiMo-V2.6-Flash-RL-exl3-3.0bpw es un paquete cuantizado en formato EXL3 (exllamav3) de 3,03 bits por peso del modelo XiaomiMiMo/MiMo-V2.6-Flash-RL, publicado por el usuario ajensenwaud en HuggingFace. No es un modelo entrenado desde cero: es una conversión de pesos pensada para ejecutarse en hardware de gama de escritorio profesional, concretamente en dos NVIDIA DGX Spark (GB10) con paralelismo de tensores a TP=2. El modelo original es un MoE de 309B parámetros totales y 15B activos, según declara el autor de la conversión.
+MiMo-V2.6-Flash-RL-exl3-3.0bpw es un paquete cuantizado en formato EXL3 (exllamav3) de 3,03 bits por peso del modelo XiaomiMiMo/MiMo-V2.6-Flash-RL, publicado por el usuario ajensenwaud en Hugging Face. No es un modelo entrenado desde cero: es una conversión de pesos pensada para ejecutarse en hardware de gama de escritorio profesional, concretamente en dos NVIDIA DGX Spark (GB10) con paralelismo de tensores a TP=2. El modelo original es un MoE de 309B parámetros totales y 15B activos, según declara el autor de la conversión.
 
 La relevancia de este paquete está en el objetivo de despliegue: los pesos ocupan 113 GB repartidos en 17 shards, de modo que caben en aproximadamente 60 GiB por Spark. La conversión se hizo con exllamav3 v1.6.0 y se evaluó con un motor específico, TensorFold, mediante la receta MiMo-V2.6-2x-DGX-Spark-TensorFold. El paquete incluye además un drafter DFlash de Xiaomi a 4 bpw para decodificación especulativa, que eleva el throughput en tareas de código sin alterar un solo byte de la salida.
 
@@ -108,7 +108,7 @@ No se dispone de comparaciones con modelos de otras familias del mismo rango, po
 
 ## Enlaces
 
-- Paquete cuantizado (HuggingFace): https://huggingface.co/ajensenwaud/MiMo-V2.6-Flash-RL-exl3-3.0bpw
+- Paquete cuantizado (Hugging Face): https://huggingface.co/ajensenwaud/MiMo-V2.6-Flash-RL-exl3-3.0bpw
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - Paquete EXL3 de 2,27 bpw y drafter DFlash original: https://huggingface.co/benthecarman/MiMo-V2.6-Flash-RL-exl3
 - Receta y motor TensorFold (repositorio GitHub): https://github.com/ajensenwaud/MiMo-V2.6-2x-DGX-Spark-TensorFold

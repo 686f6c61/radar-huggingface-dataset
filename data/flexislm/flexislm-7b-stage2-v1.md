@@ -78,8 +78,8 @@ Según el artículo, FlexiSLM supera a ambos modelos en puntos de operación de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FlexiSLM/FlexiSLM-7B-Stage2-v1
+- Modelo en Hugging Face: https://huggingface.co/FlexiSLM/FlexiSLM-7B-Stage2-v1
 - Repositorio GitHub: https://github.com/AmphionTeam/FlexiSLM
 - Artículo arXiv: https://arxiv.org/abs/2606.31247
 - Página de demostración: https://flexislm.github.io/
-- Organización en HuggingFace: https://huggingface.co/FlexiSLM/models
+- Organización en Hugging Face: https://huggingface.co/FlexiSLM/models

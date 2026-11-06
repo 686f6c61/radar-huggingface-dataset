@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Simsuk/ecot-openvla-7b-bridge-cd es un modelo de robótica desarrollado como fine-tuning de Embodied-CoT/ecot-openvla-7b-bridge. Pertenece a la familia OpenVLA, orientada a convertir instrucciones en lenguaje natural y observaciones visuales en acciones de manipulación robótica. El modelo tiene 7.188 millones de parámetros y un tamaño de repositorio de 14,4 GB, distribuido en formato safetensors bajo licencia MIT. Su relevancia radica en ofrecer una alternativa abierta para el control de robots en entornos como BridgeData, aunque su acceso en HuggingFace está restringido y requiere aceptar condiciones previas.
+Simsuk/ecot-openvla-7b-bridge-cd es un modelo de robótica desarrollado como fine-tuning de Embodied-CoT/ecot-openvla-7b-bridge. Pertenece a la familia OpenVLA, orientada a convertir instrucciones en lenguaje natural y observaciones visuales en acciones de manipulación robótica. El modelo tiene 7.188 millones de parámetros y un tamaño de repositorio de 14,4 GB, distribuido en formato safetensors bajo licencia MIT. Su relevancia radica en ofrecer una alternativa abierta para el control de robots en entornos como BridgeData, aunque su acceso en Hugging Face está restringido y requiere aceptar condiciones previas.
 
 ## Especificaciones técnicas
 
@@ -57,16 +57,16 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo está marcado como gated en HuggingFace, por lo que es necesario aceptar condiciones antes de poder descargarlo, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido: el modelo está marcado como gated en Hugging Face, por lo que es necesario aceptar condiciones antes de poder descargarlo, lo que puede limitar su uso en entornos automatizados.
 - Documentación insuficiente: el README del modelo base es de apenas 43 bytes, lo que indica una falta total de instrucciones de uso, detalles técnicos y ejemplos.
 - Dependencia de código personalizado: la etiqueta custom_code en transformers implica que se requiere código adicional para cargar el modelo, lo que puede suponer riesgos de seguridad y dificultades de mantenimiento.
 - Sin benchmarks publicados: no se han presentado resultados en tareas de robótica, por lo que el rendimiento real es desconocido y no puede compararse con otros modelos VLA.
 - Especialización limitada: al estar orientado a BridgeData y al brazo WidowX, es probable que su rendimiento se degrade en otros robots o entornos sin un fine-tuning adicional.
-- Licencia MIT y acceso gated: aunque la licencia permite el uso comercial, las condiciones impuestas por el gate en HuggingFace pueden añadir restricciones no cubiertas por la licencia.
+- Licencia MIT y acceso gated: aunque la licencia permite el uso comercial, las condiciones impuestas por el gate en Hugging Face pueden añadir restricciones no cubiertas por la licencia.
 - Posibles sesgos y alucinaciones: al ser un modelo derivado de un LLM, puede presentar sesgos en la interpretación de instrucciones o generar acciones incorrectas si la observación visual es ambigua.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Simsuk/ecot-openvla-7b-bridge-cd
+- Modelo en Hugging Face: https://huggingface.co/Simsuk/ecot-openvla-7b-bridge-cd
 - Modelo base: https://huggingface.co/Embodied-CoT/ecot-openvla-7b-bridge
 - Archivos del modelo base: https://huggingface.co/Embodied-CoT/ecot-openvla-7b-bridge/tree/main

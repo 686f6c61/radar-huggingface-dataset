@@ -27,7 +27,7 @@ Su relevancia reside en que cubre simultáneamente razonamiento, generación de 
 | Muestreo recomendado | Texto: temperature 1.0, top_p 0.95. Visión: temperature 0.6, top_p 0.95 |
 | Despliegue de referencia | 4× H100 o 2× GB200 |
 | Tamano del repositorio | 248,9 GB |
-| Descargas / likes en HuggingFace | 142 descargas, 24 likes |
+| Descargas / likes en Hugging Face | 142 descargas, 24 likes |
 | Fechas de publicacion / actualizacion | 12 de octubre de 2026 / 15 de octubre de 2026 |
 
 ## Arquitectura y entrenamiento
@@ -110,7 +110,7 @@ De los modelos comparados solo se dispone de las puntuaciones de benchmark repro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
+- Modelo en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
 - Version NVFP4: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4
 - Informe tecnico (NVIDIA Nemotron 3.5 Super and Lightning): https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3.5-Super-and-Lightning-Technical-Report.pdf
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/

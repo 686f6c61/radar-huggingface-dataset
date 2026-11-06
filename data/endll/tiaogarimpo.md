@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Endll/tiaogarimpo es un adaptador LoRA de generacion de imagenes a partir de texto (text-to-image) publicado por el usuario Endll en HuggingFace. No se trata de un modelo completo, sino de un peso adicional que se carga sobre el modelo base Tongyi-MAI/Z-Image-Turbo, tal y como indican las etiquetas del repositorio (`base_model:Tongyi-MAI/Z-Image-Turbo`, `template:diffusion-lora`). El adaptador se activa mediante la palabra clave `tiaogarimpo`, que debe incluirse en el prompt para que el concepto o estilo aprendido se manifieste en la imagen generada.
+Endll/tiaogarimpo es un adaptador LoRA de generacion de imagenes a partir de texto (text-to-image) publicado por el usuario Endll en Hugging Face. No se trata de un modelo completo, sino de un peso adicional que se carga sobre el modelo base Tongyi-MAI/Z-Image-Turbo, tal y como indican las etiquetas del repositorio (`base_model:Tongyi-MAI/Z-Image-Turbo`, `template:diffusion-lora`). El adaptador se activa mediante la palabra clave `tiaogarimpo`, que debe incluirse en el prompt para que el concepto o estilo aprendido se manifieste en la imagen generada.
 
 El repositorio ocupa 0,1 GB y esta preparado para la libreria diffusers, con pipeline declarado como text-to-image. No se especifica ni la licencia, ni los idiomas, ni los datos de entrenamiento, ni el rango o el numero de pasos utilizados durante el ajuste. En el momento de la consulta acumula 0 descargas y 0 "me gusta", y el registro fue creado y actualizado el 10 de septiembre de 2026 con apenas trece segundos de diferencia, lo que sugiere una publicacion automatizada o sin edicion posterior de la model card.
 
@@ -26,7 +26,7 @@ Su relevancia actual es limitada pero concreta: sirve como ejemplo de adaptacion
 | Pipeline | text-to-image |
 | Autor | Endll |
 | Identificador | Endll/tiaogarimpo |
-| Fecha de creacion | 10 de septiembre de 2026 (segun el registro de HuggingFace) |
+| Fecha de creacion | 10 de septiembre de 2026 (segun el registro de Hugging Face) |
 | Ultima actualizacion | 10 de septiembre de 2026 |
 | Descargas / likes | 0 / 0 |
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Parametros | Contexto (longitud de prompt) | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Endll/tiaogarimpo | LoRA de text-to-image sobre Z-Image-Turbo | no disponible (repo de 0,1 GB) | no disponible | no disponible | no disponible | Publico en HuggingFace, 0 descargas |
-| Tongyi-MAI/Z-Image-Turbo | Modelo base de generacion de imagenes | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| Endll/tiaogarimpo | LoRA de text-to-image sobre Z-Image-Turbo | no disponible (repo de 0,1 GB) | no disponible | no disponible | no disponible | Publico en Hugging Face, 0 descargas |
+| Tongyi-MAI/Z-Image-Turbo | Modelo base de generacion de imagenes | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Publico en Hugging Face |
 | Otros adaptadores LoRA para Z-Image-Turbo | LoRA de text-to-image | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion consultada |
 
 No se dispone de datos de rendimiento, licencia ni parametros de las alternativas, por lo que no es posible establecer una comparacion cuantitativa fiable.
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento, licencia ni parametros de las alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Endll/tiaogarimpo
+- Modelo en Hugging Face: https://huggingface.co/Endll/tiaogarimpo
 - Descarga de archivos: https://huggingface.co/Endll/tiaogarimpo/tree/main
 - Modelo base Tongyi-MAI/Z-Image-Turbo: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Paper, blog o repositorio del adaptador: no disponible

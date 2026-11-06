@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de HuggingFace con el identificador `SAD1CXZC12DXZ/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo previo que incorpora mejoras en razonamiento profundo, reducción de alucinaciones y soporte mejorado para function calling. El autor declara que el modelo ha sido optimizado mediante recursos computacionales adicionales y mecanismos algorítmicos de post-entrenamiento, logrando avances en tareas de matemáticas, programación y lógica general.
+MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de Hugging Face con el identificador `SAD1CXZC12DXZ/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo previo que incorpora mejoras en razonamiento profundo, reducción de alucinaciones y soporte mejorado para function calling. El autor declara que el modelo ha sido optimizado mediante recursos computacionales adicionales y mecanismos algorítmicos de post-entrenamiento, logrando avances en tareas de matemáticas, programación y lógica general.
 
 Sin embargo, la información disponible es extremadamente limitada y poco verificable. El repositorio tiene 0 descargas, 0 likes y un tamaño de 0.0 GB, lo que sugiere que podría tratarse de un repositorio de prueba o una plantilla sin pesos publicados. No se especifican la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni el formato de pesos. La model card incluye una tabla de benchmarks con categorías genéricas (razonamiento matemático, comprensión lectora, generación de código, etc.) y compara contra modelos anónimos denominados "Model1", "Model2" y "Model1-v2", sin identificar qué modelos son ni la metodología empleada.
 
@@ -99,7 +99,7 @@ No es posible realizar una comparativa fiable porque se desconocen las caracter�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SAD1CXZC12DXZ/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/SAD1CXZC12DXZ/MyAwesomeModel-TestRepo
 - Repositorio similar (posible duplicado): https://huggingface.co/sad1d21/MyAwesomeModel-TestRepo
 - Repositorio similar (posible duplicado): https://huggingface.co/gaergsr/MyAwesomeModel-TestRepo
 - Páginas de terceros que referencian el modelo (sin información adicional relevante): https://www.toolify.ai/ai-model/asfafaf4546-myawesomemodel-testrepo y https://www.toolify.ai/ai-model/asfafaaf3434-myawesomemodel-testrepo

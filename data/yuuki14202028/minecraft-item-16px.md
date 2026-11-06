@@ -85,8 +85,8 @@ No se dispone de datos de benchmarks comparativos con otras alternativas. Como r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuuki14202028/minecraft-item-16px
+- Modelo en Hugging Face: https://huggingface.co/yuuki14202028/minecraft-item-16px
 - Space de demo: https://huggingface.co/spaces/yuuki14202028/minecraft-item-16px-demo
 - Repositorio GitHub (training y tooling): https://github.com/yuuki14202028/pixelgen
 - Dataset de entrenamiento: https://huggingface.co/datasets/OVAWARE/16xModdedMinecraft
-- Perfil del autor en HuggingFace: https://huggingface.co/yuuki14202028
+- Perfil del autor en Hugging Face: https://huggingface.co/yuuki14202028

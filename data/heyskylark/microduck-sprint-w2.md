@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; el tamaño del repositorio es de 0,0 GB según HuggingFace, lo que sugiere un modelo muy pequeño, pero no se publica el número de parámetros.
+- VRAM estimada para inferencia: no disponible; el tamaño del repositorio es de 0,0 GB según Hugging Face, lo que sugiere un modelo muy pequeño, pero no se publica el número de parámetros.
 - GPU recomendadas: no disponible. Para el entrenamiento se emplearon 4096 entornos simulados en paralelo, lo que en la práctica requiere una GPU de gama alta (A100, H100 o similar) para completar 3000 iteraciones en un tiempo razonable, aunque el autor no especifica el hardware utilizado.
 - Ejecución en GPU de consumo: no confirmado. Dado el tamaño aparentemente reducido del artefacto ONNX, es plausible que la inferencia quepa en GPU de consumo e incluso en CPU, pero no hay datos que lo verifiquen.
 - Opciones de despliegue: el destino previsto es el daemon de microduck mediante `robotctl policy load`; el formato ONNX permite inferencia con ONNX Runtime en otras plataformas.
@@ -74,7 +74,7 @@ No disponible. La información proporcionada no incluye políticas comparables p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heyskylark/microduck-sprint-w2
+- Modelo en Hugging Face: https://huggingface.co/heyskylark/microduck-sprint-w2
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento: `git@github.com:heyskylark/microduck-challenges.git` (commit `0b7f5c1bf`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon de microduck (no se proporciona URL directa)

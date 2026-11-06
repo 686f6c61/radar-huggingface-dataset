@@ -23,7 +23,7 @@ Es relevante ahora porque combina tres piezas poco habituales en un mismo artefa
 
 ## Arquitectura y entrenamiento
 
-El modelo es una cuantizacion de una arquitectura Mixture-of-Experts de la familia GLM-4.7-Flash, etiquetada en HuggingFace como `glm4_moe_lite`. La configuracion de vLLM emplea `--attention-backend triton_mla` (atencion con latentes comprimidos tipo MLA), `--moe-backend flashinfer_cutlass` y `--enable-expert-parallel`, ademas de un parser de tool calls (`glm47`) y un parser de razonamiento (`glm45`) especificos. El modulo MTP fue transplantado desde el modelo previo al fine-tuning (zai-org/GLM-4.7-Flash) y reentrenado sobre muestras de chat de contexto corto y largo y de terminal, usando los optimizadores AdamW y Muon.
+El modelo es una cuantizacion de una arquitectura Mixture-of-Experts de la familia GLM-4.7-Flash, etiquetada en Hugging Face como `glm4_moe_lite`. La configuracion de vLLM emplea `--attention-backend triton_mla` (atencion con latentes comprimidos tipo MLA), `--moe-backend flashinfer_cutlass` y `--enable-expert-parallel`, ademas de un parser de tool calls (`glm47`) y un parser de razonamiento (`glm45`) especificos. El modulo MTP fue transplantado desde el modelo previo al fine-tuning (zai-org/GLM-4.7-Flash) y reentrenado sobre muestras de chat de contexto corto y largo y de terminal, usando los optimizadores AdamW y Muon.
 
 La cuantizacion se realizo con un flujo personalizado de NVIDIA Model-Optimizer. Los expertos enrutados usan NVFP4 W4A4 con grupo 16, escalas de bloque FP8 y escalas globales FP32; el experto compartido, el router, la atencion, los embeddings y `lm_head` permanecen en BF16, y el modulo MTP tambien se cuantiza a NVFP4 W4A4. La calibracion se hizo sobre muestras seleccionadas de Nickyang/RazorCal, con la siguiente composicion declarada: codigo 57 muestras (~24,1 %), matematicas 41 (~17,3 %), Chinese-STEM 33 (~13,9 %), instruction following 32 (~13,5 %), conocimiento del mundo 30 (~12,7 %), tool calling 25 (~10,5 %) y ciencia 19 (~8,0 %). Las muestras de entrenamiento del MTP no se detallan en esa tabla. El autor indica que el modelo esta listo para servirse en la rama mas reciente de vLLM.
 
@@ -100,7 +100,7 @@ Rendimiento comparado: no disponible. Ninguno de los modelos de la comparativa p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cleyesode/GLM-4.7-Flash-Coder-MTP-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/cleyesode/GLM-4.7-Flash-Coder-MTP-NVFP4
 - Informe de verificacion post-cuantizacion: https://huggingface.co/cleyesode/GLM-4.7-Flash-Coder-MTP-NVFP4/verification_report.txt
 - Modelo base: https://huggingface.co/whitecircle/GLM-4.7-Flash-Coder
 - Modelo de la familia GLM-4.7: https://huggingface.co/zai-org/GLM-4.7

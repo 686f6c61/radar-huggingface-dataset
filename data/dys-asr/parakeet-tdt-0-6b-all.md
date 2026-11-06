@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dys-asr/parakeet-tdt-0.6b-all` (este) | 627.057.286 | Segmentos de audio de 0,5 a 45 s | Sin WER/CER publicados por diseno | `speech-accessibility-project-dua` (other) | HuggingFace, safetensors, transformers |
-| `dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout-soup` (hermano) | misma familia (~0,6 B) | no disponible | ~6,06% CER en SAPC2 dev (epoca 9) | no disponible | HuggingFace |
-| `nvidia/parakeet-tdt-0.6b-v3` (base) | 0,6 B | no aplica (ASR) | no disponible | no disponible | HuggingFace (modelo base del fine-tune) |
+| `dys-asr/parakeet-tdt-0.6b-all` (este) | 627.057.286 | Segmentos de audio de 0,5 a 45 s | Sin WER/CER publicados por diseno | `speech-accessibility-project-dua` (other) | Hugging Face, safetensors, transformers |
+| `dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout-soup` (hermano) | misma familia (~0,6 B) | no disponible | ~6,06% CER en SAPC2 dev (epoca 9) | no disponible | Hugging Face |
+| `nvidia/parakeet-tdt-0.6b-v3` (base) | 0,6 B | no aplica (ASR) | no disponible | no disponible | Hugging Face (modelo base del fine-tune) |
 
 No se dispone de especificaciones completas de los modelos comparables en la informacion proporcionada; las filas se limitan a lo documentado en la model card de este modelo.
 
@@ -89,7 +89,7 @@ No se dispone de especificaciones completas de los modelos comparables en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dys-asr/parakeet-tdt-0.6b-all
+- Modelo en Hugging Face: https://huggingface.co/dys-asr/parakeet-tdt-0.6b-all
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Variante hermana con dev reservado (referencia de metricas de la familia): https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout-soup
 - Dataset SAPC1: https://huggingface.co/datasets/dys-asr/sapc1

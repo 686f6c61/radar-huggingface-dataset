@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `b-sky-lab/smolvla_pap_bluecube_redcube` | ~450 M | No disponible | Sin evaluacion publicada | Apache 2.0 | HuggingFace (repo `b-sky-lab`) |
-| `lerobot/smolvla_base` | No disponible en la informacion recogida | No disponible | No disponible | No disponible | HuggingFace (`lerobot`) |
+| `b-sky-lab/smolvla_pap_bluecube_redcube` | ~450 M | No disponible | Sin evaluacion publicada | Apache 2.0 | Hugging Face (repo `b-sky-lab`) |
+| `lerobot/smolvla_base` | No disponible en la informacion recogida | No disponible | No disponible | No disponible | Hugging Face (`lerobot`) |
 | Otras politicas VLA (p. ej. OpenVLA, pi0) | No disponible | No disponible | No disponible | No disponible | No verificado en esta busqueda |
 
 La unica comparacion fiable con los datos disponibles es frente a su modelo base `lerobot/smolvla_base`, del que esta politica es un ajuste fino especializado en dos tareas concretas. No se dispone de cifras verificables de otros modelos VLA en la informacion proporcionada.
@@ -93,7 +93,7 @@ La unica comparacion fiable con los datos disponibles es frente a su modelo base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/b-sky-lab/smolvla_pap_bluecube_redcube
+- Modelo en Hugging Face: https://huggingface.co/b-sky-lab/smolvla_pap_bluecube_redcube
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/b-sky-lab/pap_bluecube_redcube_20261015_003104
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=b-sky-lab/pap_bluecube_redcube_20261015_003104

@@ -70,10 +70,10 @@ La comparación de este checkpoint frente a v1 sobre las mismas 100 escenas medi
 
 | Modelo | Parámetros | Contexto | Tasa de éxito (Hard) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (v9comp) | 3B | no disponible | 94 % | NVIDIA Open Model License | HuggingFace |
-| GR00T N1.7 RobotWin shake_bottle v1 (Cosmos3 aug) | 3B | no disponible | 85 % | NVIDIA Open Model License | HuggingFace |
-| GR00T N1.7 RobotWin shake_bottle baseline (clean 50) | 3B | no disponible | 63 % | NVIDIA Open Model License | HuggingFace |
-| nvidia/GR00T-N1.7-3B (base) | 3B | no disponible | no disponible | NVIDIA Open Model License | HuggingFace |
+| Este checkpoint (v9comp) | 3B | no disponible | 94 % | NVIDIA Open Model License | Hugging Face |
+| GR00T N1.7 RobotWin shake_bottle v1 (Cosmos3 aug) | 3B | no disponible | 85 % | NVIDIA Open Model License | Hugging Face |
+| GR00T N1.7 RobotWin shake_bottle baseline (clean 50) | 3B | no disponible | 63 % | NVIDIA Open Model License | Hugging Face |
+| nvidia/GR00T-N1.7-3B (base) | 3B | no disponible | no disponible | NVIDIA Open Model License | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ La comparación de este checkpoint frente a v1 sobre las mismas 100 escenas medi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-shake_bottle-simcosmos-aug
+- Modelo en Hugging Face: https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-shake_bottle-simcosmos-aug
 - Modelo v1 de referencia: https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-shake_bottle-cosmos-aug
 - Dataset de entrenamiento: https://huggingface.co/datasets/wjwjwjwj/robotwin-shake_bottle-clean50-simcosmos68-gr00t
 - Repositorio de código y registro de experimentos: https://github.com/nota-github/xpu-gr00t-aug-recipe

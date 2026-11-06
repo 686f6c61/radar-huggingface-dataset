@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| jeff-adapter-action-check | adaptador sobre base de 0.8B | no disponible | apache-2.0 | HuggingFace (0 descargas) | Clasificacion de tool calls en 4 etiquetas |
+| jeff-adapter-action-check | adaptador sobre base de 0.8B | no disponible | apache-2.0 | Hugging Face (0 descargas) | Clasificacion de tool calls en 4 etiquetas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No identificadas en la informacion disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mstrasser/jeff-adapter-action-check
+- Hugging Face: https://huggingface.co/mstrasser/jeff-adapter-action-check
 - Modelo base: https://huggingface.co/mstrasser/jeff-base
 - Pagina de catalogo: https://jeffhub.ai/catalogue/jeff.agents.action-check
 - Repositorio, servidor y SDK: https://github.com/firelex/jeff

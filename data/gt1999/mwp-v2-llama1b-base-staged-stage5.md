@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su enfoque metodológico: explora cómo e
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA (Low-Rank Adaptation) que se aplica sobre un modelo base Llama 1B. El adaptador tiene un rank de 32 y un alpha de 64, con escalado alpha/rank. El entrenamiento se realiza en cinco etapas (stage 5 es la última), donde cada etapa incorpora un nivel de dificultad adicional: la primera etapa entrena solo con nivel L1, la segunda con L1 y L2, y así sucesivamente hasta la quinta que incluye todos los niveles L1 a L5. Se utiliza una política de replay acumulativo, es decir, en cada etapa se reutilizan todos los ejemplos de las etapas anteriores. La partición de las etapas se hace por dificultad, y se aplica early stopping con paciencia muy alta (1.000.000 de iteraciones), lo que sugiere que el entrenamiento se detiene por criterios de convergencia más que por tiempo. El conjunto de entrenamiento acumulado en esta etapa consta de 7.124 ejemplos. La validación se realiza con un 5% de los datos de entrenamiento, estratificados por nivel, con semilla 42, y el conjunto de test nunca se usa para selección de hiperparámetros. El pipeline completo (SeqFT + PLRS v2) está documentado en un repositorio de GitHub, donde se explica que cada repositorio de HuggingFace contiene exactamente un adaptador de una etapa, nunca un modelo fusionado.
+El modelo es un adaptador LoRA (Low-Rank Adaptation) que se aplica sobre un modelo base Llama 1B. El adaptador tiene un rank de 32 y un alpha de 64, con escalado alpha/rank. El entrenamiento se realiza en cinco etapas (stage 5 es la última), donde cada etapa incorpora un nivel de dificultad adicional: la primera etapa entrena solo con nivel L1, la segunda con L1 y L2, y así sucesivamente hasta la quinta que incluye todos los niveles L1 a L5. Se utiliza una política de replay acumulativo, es decir, en cada etapa se reutilizan todos los ejemplos de las etapas anteriores. La partición de las etapas se hace por dificultad, y se aplica early stopping con paciencia muy alta (1.000.000 de iteraciones), lo que sugiere que el entrenamiento se detiene por criterios de convergencia más que por tiempo. El conjunto de entrenamiento acumulado en esta etapa consta de 7.124 ejemplos. La validación se realiza con un 5% de los datos de entrenamiento, estratificados por nivel, con semilla 42, y el conjunto de test nunca se usa para selección de hiperparámetros. El pipeline completo (SeqFT + PLRS v2) está documentado en un repositorio de GitHub, donde se explica que cada repositorio de Hugging Face contiene exactamente un adaptador de una etapa, nunca un modelo fusionado.
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ El modelo es un adaptador LoRA (Low-Rank Adaptation) que se aplica sobre un mode
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye métricas de rendimiento (como exactitud en conjuntos de test estándar tipo GSM8K o MATH), ni comparaciones con otros modelos. El autor no ha proporcionado datos de evaluación en la model card.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye métricas de rendimiento (como exactitud en conjuntos de test estándar tipo GSM8K o MATH), ni comparaciones con otros modelos. El autor no ha proporcionado datos de evaluación en la model card.
 
 ## Requisitos de hardware
 
@@ -69,6 +69,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/GT1999/mwp-v2-llama1b-base-staged-stage5
+- Repositorio de Hugging Face: https://huggingface.co/GT1999/mwp-v2-llama1b-base-staged-stage5
 - Repositorio de GitHub del pipeline SeqFT + PLRS v2: https://github.com/gadmin7/mwp_ai4math_icml_v2
 - Otros adaptadores del mismo autor (ejemplos): https://huggingface.co/GT1999/mwp-v2-llama1b-b1-stage1 y https://huggingface.co/GT1999/mwp-v2-llama1b-b7-stage5

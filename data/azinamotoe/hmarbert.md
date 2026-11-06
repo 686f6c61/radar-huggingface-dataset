@@ -68,17 +68,17 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 - VRAM estimada para inferencia: aproximadamente 0,45 GB en FP32 (440 MB de pesos), en torno a 0,22 GB en FP16 y cerca de 0,11 GB en INT8, sin contar activaciones ni overhead del framework.
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM es suficiente; una RTX 3090, RTX 4090, A100 o H100 lo ejecutan con holgura y permiten lotes grandes.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos anos (GTX 1060 6 GB, RTX 2060, RTX 3060, etc.), e incluso en CPU para inferencia puntual.
-- Opciones de despliegue: al ser un modelo BERT estandar en safetensors, es compatible con HuggingFace Transformers, `pipeline("fill-mask")`, Text Embeddings Inference (TEI), Optimum, y despliegue en CPU con ONNX Runtime. No se documentan ficheros GGUF ni integracion directa con llama.cpp u Ollama.
+- Opciones de despliegue: al ser un modelo BERT estandar en safetensors, es compatible con Hugging Face Transformers, `pipeline("fill-mask")`, Text Embeddings Inference (TEI), Optimum, y despliegue en CPU con ONNX Runtime. No se documentan ficheros GGUF ni integracion directa con llama.cpp u Ollama.
 - Latencia y throughput estimados: no disponibles (la model card no los reporta).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HmarBERT | 109,5 M | no disponible | hmar | MIT | HuggingFace (`azinamotoe/HmarBERT`) |
-| MizBERT (`robzchhangte/MizBERT`) | 110 M (BERT-base) | no disponible | mizo | no disponible en la informacion proporcionada | HuggingFace (modelo base de HmarBERT) |
-| mBERT (bert-base-multilingual-cased) | ~178 M | 512 tokens | 104 idiomas (incluye bajo recurso de forma residual) | Apache 2.0 | HuggingFace / Google |
-| XLM-R base | 270 M | 512 tokens | 100 idiomas | MIT | HuggingFace (Facebook AI) |
+| HmarBERT | 109,5 M | no disponible | hmar | MIT | Hugging Face (`azinamotoe/HmarBERT`) |
+| MizBERT (`robzchhangte/MizBERT`) | 110 M (BERT-base) | no disponible | mizo | no disponible en la informacion proporcionada | Hugging Face (modelo base de HmarBERT) |
+| mBERT (bert-base-multilingual-cased) | ~178 M | 512 tokens | 104 idiomas (incluye bajo recurso de forma residual) | Apache 2.0 | Hugging Face / Google |
+| XLM-R base | 270 M | 512 tokens | 100 idiomas | MIT | Hugging Face (Facebook AI) |
 
 Comparacion de rendimiento en hmar: no disponible. La model card no ofrece resultados que permitan situar a HmarBERT frente a estos modelos en tareas de hmar, y la comparacion de parametros solo refleja tamano, no calidad.
 
@@ -91,11 +91,11 @@ Comparacion de rendimiento en hmar: no disponible. La model card no ofrece resul
 - Restricciones de licencia: la licencia MIT permite uso comercial y modificacion, siempre que se conserve el aviso de copyright y la atribucion a la Hmar Heritage Foundation y a azinamotoe. No se documentan restricciones adicionales.
 - Caveats para produccion: el modelo tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad; conviene evaluarlo internamente antes de desplegarlo. Se trata de un modelo base MLM, no de un asistente conversacional, por lo que no soporta instrucciones ni funciones de tool calling.
 - Tamano del corpus de preentrenamiento modesto (2,48 millones de palabras), lo que limita la cobertura lexica y de dominios.
-- La fecha de creacion registrada (2026-09-13) es posterior a la fecha habitual de consulta; conviene verificar la ficha en HuggingFace por si hubiera actualizaciones.
+- La fecha de creacion registrada (2026-09-13) es posterior a la fecha habitual de consulta; conviene verificar la ficha en Hugging Face por si hubiera actualizaciones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/azinamotoe/HmarBERT
+- Modelo en Hugging Face: https://huggingface.co/azinamotoe/HmarBERT
 - Dataset de preentrenamiento: https://huggingface.co/datasets/hmar-heritage-org/dolma-pretrain
 - Demo interactiva: https://huggingface.co/spaces/azinamotoe/Dolma
 - Modelo base MizBERT: https://huggingface.co/robzchhangte/MizBERT

@@ -77,7 +77,7 @@ La comparativa se limita a aspectos de tamano y formato, ya que no se dispone de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liodon-ai/Qwen2.5-Coder-1.5B-Instruct-FP8
+- Modelo en Hugging Face: https://huggingface.co/liodon-ai/Qwen2.5-Coder-1.5B-Instruct-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Informe tecnico Qwen2.5-Coder (arXiv): https://arxiv.org/html/2409.12186v2
 - Repositorio llm-compressor: https://github.com/vllm-project/llm-compressor

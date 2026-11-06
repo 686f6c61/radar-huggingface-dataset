@@ -68,10 +68,10 @@ En evaluacion offline (pesos fusionados a 16 bits, decodificacion greedy, sin gr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| quiet-assistant v2 q4f16_1 (este) | 0,8B | no disponible | 63 % clinica / 65 % momentos nuevos | Apache 2.0 | HuggingFace, MLC/WebLLM |
-| quiet-assistant v2 q4f32_1 | 0,8B | no disponible | mismos pesos; offline 16 bits: 76 % clinica | Apache 2.0 | HuggingFace, MLC/WebLLM |
-| quiet-assistant v1 | 0,8B | no disponible | 42 % clinica / 46 % momentos nuevos | Apache 2.0 | HuggingFace |
-| Qwen3.5-0.8B (base) | 0,8B | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| quiet-assistant v2 q4f16_1 (este) | 0,8B | no disponible | 63 % clinica / 65 % momentos nuevos | Apache 2.0 | Hugging Face, MLC/WebLLM |
+| quiet-assistant v2 q4f32_1 | 0,8B | no disponible | mismos pesos; offline 16 bits: 76 % clinica | Apache 2.0 | Hugging Face, MLC/WebLLM |
+| quiet-assistant v1 | 0,8B | no disponible | 42 % clinica / 46 % momentos nuevos | Apache 2.0 | Hugging Face |
+| Qwen3.5-0.8B (base) | 0,8B | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de informacion sobre otros modelos de la misma categoria (asistentes de tool calling en navegador) que permitan una comparacion adicional; se indica como no disponible.
 
@@ -88,7 +88,7 @@ No se dispone de informacion sobre otros modelos de la misma categoria (asistent
 - Licencia Apache 2.0 tanto del ajuste como del modelo base, sin restricciones declaradas para uso comercial en la informacion disponible.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/tfukkwang/Qwen3.5-0.8B-quiet-assistant-v2-q4f16_1-MLC
+- Modelo en Hugging Face: https://huggingface.co/tfukkwang/Qwen3.5-0.8B-quiet-assistant-v2-q4f16_1-MLC
 - Variante q4f32_1 del mismo modelo: https://huggingface.co/tfukkwang/Qwen3.5-0.8B-quiet-assistant-v2-q4f32_1-MLC
 - Version v1 (quiet assistant): https://huggingface.co/tfukkwang/Qwen3.5-0.8B-quiet-assistant-v1-q4f32_1-MLC
 - Video de demostracion (grabado con v1): https://huggingface.co/tfukkwang/Qwen3.5-0.8B-quiet-assistant-v1-q4f32_1-MLC/resolve/main/demo.webm

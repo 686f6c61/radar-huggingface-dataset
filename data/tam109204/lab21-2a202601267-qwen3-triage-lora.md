@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos, ya que ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Tam109204/lab21-2A202601267-qwen3-triage-lora
+- Repositorio Hugging Face: https://huggingface.co/Tam109204/lab21-2A202601267-qwen3-triage-lora
 - Repositorio de codigo e informe (GitHub): https://github.com/tranthithanhtam/Day21-Track3-2A202601267-TranThiThanhTam
 - Informe detallado: `REPORT.md` en el repositorio de codigo
 - Artefactos brutos: directorio `results/` en el repositorio de codigo

@@ -4,7 +4,7 @@
 
 STL-rasyosef-roberta-base-amharic-stance-finetuned es un modelo de detección de postura (stance detection) en amárico, desarrollado por tadiecool29 mediante fine-tuning del modelo rasyosef/roberta-base-amharic. El modelo clasifica textos en amárico según la postura o sentimiento expresado, empleando una arquitectura RoBERTa base de aproximadamente 110 millones de parámetros. Su relevancia radica en cubrir una tarea de clasificación de texto para un idioma de bajos recursos como el amárico, donde la disponibilidad de modelos especializados es limitada.
 
-El modelo fue entrenado durante 10 épocas con un learning rate de 1e-05, scheduler coseno y optimizador AdamW, alcanzando un F1 de 0,7675 en el conjunto de evaluación. Está disponible en formato safetensors y es compatible con la librería transformers de HuggingFace. El autor declara las métricas bajo la etiqueta "sentiment" aunque el nombre del modelo indica fine-tuning para stance, lo que sugiere cierta ambigüedad en la definición de la tarea.
+El modelo fue entrenado durante 10 épocas con un learning rate de 1e-05, scheduler coseno y optimizador AdamW, alcanzando un F1 de 0,7675 en el conjunto de evaluación. Está disponible en formato safetensors y es compatible con la librería transformers de Hugging Face. El autor declara las métricas bajo la etiqueta "sentiment" aunque el nombre del modelo indica fine-tuning para stance, lo que sugiere cierta ambigüedad en la definición de la tarea.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ Evolución del F1 durante el entrenamiento: el mejor valor se alcanzó en la ép
 - El modelo tiene 110 millones de parámetros, lo que supone aproximadamente 0,44 GB en FP32 y 0,22 GB en FP16, por lo que cabe en cualquier GPU consumer con al menos 2 GB de VRAM.
 - GPUs compatibles: NVIDIA GTX 1060 6GB, RTX 3060, RTX 4060, RTX 4090, asi como GPUs de datacenter como A100 o H100.
 - Inferencia en CPU viable para clasificación por lotes pequeños gracias al tamaño reducido del modelo.
-- Opciones de despliegue: transformers (pipeline de text-classification), ONNX Runtime, TorchServe, o exportación a otros formatos. El repositorio incluye la etiqueta endpoints_compatible, lo que sugiere compatibilidad con la inference API de HuggingFace.
+- Opciones de despliegue: transformers (pipeline de text-classification), ONNX Runtime, TorchServe, o exportación a otros formatos. El repositorio incluye la etiqueta endpoints_compatible, lo que sugiere compatibilidad con la inference API de Hugging Face.
 - Latencia estimada: del orden de milisegundos por muestra en GPU moderna, aunque no se han publicado mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -76,11 +76,11 @@ No se dispone de información sobre modelos comparables de detección de postura
 - La pérdida de validación aumenta significativamente a partir de la época 3 (de 0,6501 a 1,5291 en la época 8), lo que indica sobreajuste al conjunto de entrenamiento.
 - El modelo solo soporta amárico, limitando su uso a textos en este idioma.
 - Sin cuantizaciones publicadas ni soporte documentado para herramientas como vLLM u Ollama.
-- Con 0 descargas y 0 likes en HuggingFace, es un modelo sin validación comunitaria.
+- Con 0 descargas y 0 likes en Hugging Face, es un modelo sin validación comunitaria.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tadiecool29/STL-rasyosef-roberta-base-amharic-stance-finetuned
+- Modelo en Hugging Face: https://huggingface.co/tadiecool29/STL-rasyosef-roberta-base-amharic-stance-finetuned
 - Modelo base: https://huggingface.co/rasyosef/roberta-base-amharic
 - Colección de modelos de embeddings en amárico: https://huggingface.co/collections/rasyosef/amharic-text-embedding-models
 - Perfil del autor del modelo base: https://huggingface.co/rasyosef/collections

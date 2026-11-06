@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arlenecc/bge-m3-coreml` es una conversión a Core ML del modelo de embeddings `BAAI/bge-m3`, publicada por el usuario arlenecc en HuggingFace. Se trata de un modelo de extracción de características (feature-extraction) orientado a la generación de embeddings densos multilingües para tareas de similitud semántica, búsqueda y recuperación de información. El modelo base, BGE-M3, es un transformer encoder desarrollado por BAAI (Beijing Academy of Artificial Intelligence) que produce representaciones vectoriales de frases y documentos.
+`arlenecc/bge-m3-coreml` es una conversión a Core ML del modelo de embeddings `BAAI/bge-m3`, publicada por el usuario arlenecc en Hugging Face. Se trata de un modelo de extracción de características (feature-extraction) orientado a la generación de embeddings densos multilingües para tareas de similitud semántica, búsqueda y recuperación de información. El modelo base, BGE-M3, es un transformer encoder desarrollado por BAAI (Beijing Academy of Artificial Intelligence) que produce representaciones vectoriales de frases y documentos.
 
 La relevancia de esta conversión concreta reside en el formato: al estar empaquetado como Core ML, está pensado para ejecutarse en el ecosistema de Apple (macOS, iOS, iPadOS) aprovechando aceleración por hardware (Neural Engine, GPU y CPU unificadas). Esto permite desplegar búsqueda semántica y RAG local en dispositivos Apple sin depender de servicios en la nube ni de frameworks de inferencia como PyTorch o ONNX Runtime.
 
@@ -83,7 +83,7 @@ La comparativa se limita a datos estructurales; no se dispone de resultados de b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arlenecc/bge-m3-coreml
+- Modelo en Hugging Face: https://huggingface.co/arlenecc/bge-m3-coreml
 - Modelo base: https://huggingface.co/BAAI/bge-m3
 - Repositorio oficial de BGE-M3 (BAAI): https://github.com/FlagOpen/FlagEmbedding
 - Paper de BGE-M3: https://arxiv.org/abs/2402.03216

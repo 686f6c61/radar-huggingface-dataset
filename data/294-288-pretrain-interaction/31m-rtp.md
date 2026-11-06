@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 31M-rtp | 31M | 2.048 | Barrido de envenenamiento RTP | no disponible | HuggingFace (repo de 5,9 GB) |
+| 31M-rtp | 31M | 2.048 | Barrido de envenenamiento RTP | no disponible | Hugging Face (repo de 5,9 GB) |
 | 31M-random (limpio) | 31M | 2.048 | Control limpio del mismo entrenamiento | no disponible | Referenciado en la model card |
 | Pythia-31M base | 31M | no disponible en esta ficha | Modelo de referencia de la familia Pythia | no disponible en esta ficha | Público (familia Pythia) |
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/294-288-pretrain-interaction/31M-rtp
+- Hugging Face: https://huggingface.co/294-288-pretrain-interaction/31M-rtp
 - Dataset Dolma 3 referenciado: https://huggingface.co/datasets/294-288-pretrain-interaction/Dolma3-16B
 - Repositorio de código: https://github.com/294-288-pretrain-interaction/pretrain_interaction (rama `yaowen-70m-sweep`)
 - Script de barrido: `sweep70m.py` y `artifacts/sweep70m/rtp/` en el repositorio anterior

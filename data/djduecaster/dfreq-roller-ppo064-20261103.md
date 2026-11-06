@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dfreq-roller-ppo064-20261103 | no disponible | 61 observaciones de entrada | 2.720 s, 5/5 finalizaciones | no disponible | HuggingFace, ONNX |
+| dfreq-roller-ppo064-20261103 | no disponible | 61 observaciones de entrada | 2.720 s, 5/5 finalizaciones | no disponible | Hugging Face, ONNX |
 | Mejor publicado en roller-sprint-2m (sin identificar) | no disponible | no disponible | 2.570 s | no disponible | no disponible |
 | Otros checkpoints PPO del mismo autor | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,5 +87,5 @@ No se dispone de informacion suficiente para comparar con alternativas de la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/djduecaster/dfreq-roller-ppo064-20261103
+- Modelo en Hugging Face: https://huggingface.co/djduecaster/dfreq-roller-ppo064-20261103
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

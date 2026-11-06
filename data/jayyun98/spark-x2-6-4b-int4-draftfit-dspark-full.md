@@ -65,9 +65,9 @@ Condiciones de la medicion segun la model card: verificacion greedy de prefijo, 
 
 | Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spark-X2.6-4B-INT4-Draftfit-DSpark-Full (este) | 624.416.001 | no disponible | Borrador especulativo para Spark-X2.6-4B-INT4 | apache-2.0 | HuggingFace, 0 descargas |
-| Spark-X2.6-4B-Draftfit-DSpark (borrador fuente) | no disponible | no disponible | Borrador especulativo para el mismo objetivo | no disponible en la informacion | HuggingFace |
-| XHToken/Spark-X2.6-4B-INT4 (objetivo) | 4B (nominal) | no disponible | Modelo objetivo cuantizado INT4 | no disponible en la informacion | HuggingFace |
+| Spark-X2.6-4B-INT4-Draftfit-DSpark-Full (este) | 624.416.001 | no disponible | Borrador especulativo para Spark-X2.6-4B-INT4 | apache-2.0 | Hugging Face, 0 descargas |
+| Spark-X2.6-4B-Draftfit-DSpark (borrador fuente) | no disponible | no disponible | Borrador especulativo para el mismo objetivo | no disponible en la informacion | Hugging Face |
+| XHToken/Spark-X2.6-4B-INT4 (objetivo) | 4B (nominal) | no disponible | Modelo objetivo cuantizado INT4 | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de otros borradores especulativos comparables en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de otros borradores especulativos comparables en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jayyun98/Spark-X2.6-4B-INT4-Draftfit-DSpark-Full
+- Hugging Face: https://huggingface.co/jayyun98/Spark-X2.6-4B-INT4-Draftfit-DSpark-Full
 - Modelo base / objetivo: https://huggingface.co/XHToken/Spark-X2.6-4B-INT4
 - Borrador fuente: https://huggingface.co/jayyun98/Spark-X2.6-4B-Draftfit-DSpark
 - Repositorio Draftfit: https://github.com/JayYun98/Draftfit

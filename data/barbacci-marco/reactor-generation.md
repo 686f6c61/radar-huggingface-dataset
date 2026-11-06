@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`barbacci-marco/reactor-generation` es un repositorio de modelo alojado en HuggingFace por el usuario barbacci-marco. Se publicó el 2 de noviembre de 2026 y, en el momento de la consulta, no registra descargas ni likes, lo que indica que se trata de un artefacto recién creado y sin adopción documentada por la comunidad.
+`barbacci-marco/reactor-generation` es un repositorio de modelo alojado en Hugging Face por el usuario barbacci-marco. Se publicó el 2 de noviembre de 2026 y, en el momento de la consulta, no registra descargas ni likes, lo que indica que se trata de un artefacto recién creado y sin adopción documentada por la comunidad.
 
 La model card publicada es prácticamente vacía: solo contiene la declaración de licencia MIT, sin descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El identificador del repositorio sugiere un posible uso relacionado con la generación de texto en el dominio de reactores (química, energía nuclear o ingeniería), pero esta interpretación no está confirmada por ninguna documentación oficial del autor.
 
@@ -23,7 +23,7 @@ Dada la ausencia total de información técnica publicada, esta ficha recoge de 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace consultados. No consta si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida o cualquier otra variante.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face consultados. No consta si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida o cualquier otra variante.
 
 Tampoco hay datos disponibles sobre el corpus de entrenamiento (número de tokens, composición del dataset, idiomas), sobre si se aplicaron técnicas de alineación como RLHF o DPO, ni sobre innovaciones técnicas específicas (atención lineal, decodificación especulativa, etc.). Cualquier afirmación al respecto sería especulativa y, por tanto, se omite.
 
@@ -77,5 +77,5 @@ No disponible. No se ha identificado la categoría del modelo (tamaño, tarea, a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/barbacci-marco/reactor-generation
+- Repositorio en Hugging Face: https://huggingface.co/barbacci-marco/reactor-generation
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

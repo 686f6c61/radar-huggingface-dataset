@@ -98,7 +98,7 @@ No se dispone en la información proporcionada de otros modelos comparables con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pipe1213/act_obj_t2_n05_s3
+- Modelo en Hugging Face: https://huggingface.co/Pipe1213/act_obj_t2_n05_s3
 - Repositorio del estudio: https://github.com/Pipe1213/vla-vs-scratch
 - Resultados completos: https://github.com/Pipe1213/vla-vs-scratch#results
 - Análisis: https://github.com/Pipe1213/vla-vs-scratch/blob/main/results/analysis.md

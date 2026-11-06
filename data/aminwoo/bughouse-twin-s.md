@@ -30,7 +30,7 @@ Otras especificaciones aportadas por el autor:
 | Representacion de entrada | version 3 (las mismas 74 planos que bughouse-rise-v3) |
 | Entrada ONNX | `data` con forma `[batch, 74, 8, 8]` |
 | Salidas ONNX | `value` `[batch, 1]`, `pi_a` `[batch, 4672]`, `pi_b` `[batch, 4672]`, `wdl_out` `[batch, 3]`, `moves_left` `[batch, 1]` |
-| Descargas y likes en HuggingFace | 0 descargas, 0 likes |
+| Descargas y likes en Hugging Face | 0 descargas, 0 likes |
 | Fecha de creacion / actualizacion | 2026-10-03 / 2026-10-04 |
 
 ## Arquitectura y entrenamiento
@@ -84,8 +84,8 @@ Datos adicionales aportados: el abandono de la capa de atencion entre tableros s
 
 | Modelo | Parametros | Arquitectura | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| bughouse-twin-s (este modelo) | 0,97 M (ONNX) / 1,25 M (checkpoint) | TwinBoardNet sin atencion ni ECA, tronco compartido e intercambios entre tableros | no aplica | +68 Elo (IC 95 % +31 a +107) frente a su iteracion 0 destilada; ~3x mas nodos por segundo que la red profesora | MIT | HuggingFace, 0 descargas, 0 likes |
-| bughouse-rise-v3 (profesor) | 13,6 M | Red estilo RISE: ambos tableros apilados como canales de una imagen 8x8 | no aplica | profesor de destilacion de este modelo; superado por twin-s a 100 ms por jugada segun el autor | no disponible en la informacion proporcionada | HuggingFace |
+| bughouse-twin-s (este modelo) | 0,97 M (ONNX) / 1,25 M (checkpoint) | TwinBoardNet sin atencion ni ECA, tronco compartido e intercambios entre tableros | no aplica | +68 Elo (IC 95 % +31 a +107) frente a su iteracion 0 destilada; ~3x mas nodos por segundo que la red profesora | MIT | Hugging Face, 0 descargas, 0 likes |
+| bughouse-rise-v3 (profesor) | 13,6 M | Red estilo RISE: ambos tableros apilados como canales de una imagen 8x8 | no aplica | profesor de destilacion de este modelo; superado por twin-s a 100 ms por jugada segun el autor | no disponible en la informacion proporcionada | Hugging Face |
 | Versiones con atencion de twin-s | no disponible | TwinBoardNet con atencion entre tableros y ECA | no aplica | inferiores a la variante sin atencion a igualdad de tiempo; la eliminacion de la atencion dio ~+32 % de velocidad de busqueda | no disponible | no disponible |
 
 No se dispone de comparaciones con otras familias de motores de Bughouse ajenas al proyecto Hivemind en la informacion proporcionada.
@@ -104,7 +104,7 @@ No se dispone de comparaciones con otras familias de motores de Bughouse ajenas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aminwoo/bughouse-twin-s
+- Modelo en Hugging Face: https://huggingface.co/aminwoo/bughouse-twin-s
 - Red profesora RISEv3.3: https://huggingface.co/aminwoo/bughouse-rise-v3
 - Repositorio del motor Hivemind: https://github.com/aminwoo/hivemind
 - Articulo sobre Bughouse chess en Wikipedia: https://en.wikipedia.org/wiki/Bughouse_chess

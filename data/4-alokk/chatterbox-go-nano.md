@@ -92,6 +92,6 @@ El autor indica que la referencia Python con ONNX ofrece los mismos números den
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/4-alokk/chatterbox-go-nano
+- Modelo en Hugging Face: https://huggingface.co/4-alokk/chatterbox-go-nano
 - Modelo base: https://huggingface.co/ResembleAI/chatterbox-nano
 - Conversión ONNX de origen: https://huggingface.co/owensong/chatterbox-nano-ONNX

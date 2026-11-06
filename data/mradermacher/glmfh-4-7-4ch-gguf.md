@@ -30,7 +30,7 @@ La unica informacion tecnica disponible sobre esta publicacion concreta es el pr
 ## Capacidades
 
 - Generacion de texto conversacional: el modelo esta etiquetado como `conversational`, lo que indica que ha sido ajustado o preparado para mantener dialogos multi-turno.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse detras de APIs compatibles con el formato de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse detras de APIs compatibles con el formato de Hugging Face.
 - Idiomas: soporte documentado unicamente para ingles (`en`).
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.

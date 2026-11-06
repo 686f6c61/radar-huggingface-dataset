@@ -76,7 +76,7 @@ No hay datos de rendimiento en el repositorio que permitan una comparativa cuant
 
 | Referencia | Naturaleza | Idioma de evaluacion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Roman-Urdu-Crypto-Sentiment-Eval (este repositorio) | Conjunto de evaluacion y cuaderno | Roman urdu/roman hindi con jerga cripto | MIT | HuggingFace, 0 descargas |
+| Roman-Urdu-Crypto-Sentiment-Eval (este repositorio) | Conjunto de evaluacion y cuaderno | Roman urdu/roman hindi con jerga cripto | MIT | Hugging Face, 0 descargas |
 | FiQA | Benchmark de sentimiento financiero | Ingles formal | No disponible en la informacion proporcionada | Publico |
 | `meta-llama/Llama-3.2-3B-Instruct` | Modelo evaluado | Multilingue segun Meta, sin roman urdu declarado | Licencia comunitaria de Llama 3.2 | Publico |
 
@@ -84,7 +84,7 @@ Cualquier otra comparacion con modelos de la misma categoria (por ejemplo, alter
 
 ## Limitaciones y advertencias
 
-- El repositorio no es un modelo: no contiene pesos, adaptadores ni un pipeline de inferencia declarado. La etiqueta de pipeline aparece como no disponible en HuggingFace.
+- El repositorio no es un modelo: no contiene pesos, adaptadores ni un pipeline de inferencia declarado. La etiqueta de pipeline aparece como no disponible en Hugging Face.
 - No se publican metricas cuantitativas. Todas las conclusiones de la model card son cualitativas y proceden de un unico evaluador.
 - El conjunto de datos ha sido compilado por un unico autor y su tamano, composicion y metodo de anotacion no se detallan en la informacion disponible, por lo que no se puede valorar su representatividad estadistica.
 - El corpus procede, segun la propuesta del autor, de canales publicos de Telegram y Discord; un scraping de este tipo puede arrastrar datos personales, contenido spam o mensajes de manipulacion de mercado, con los consiguientes riesgos de privacidad y sesgo.
@@ -96,7 +96,7 @@ Cualquier otra comparacion con modelos de la misma categoria (por ejemplo, alter
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/khan7256/Roman-Urdu-Crypto-Sentiment-Eval
+- Repositorio en Hugging Face: https://huggingface.co/khan7256/Roman-Urdu-Crypto-Sentiment-Eval
 - Modelo evaluado: `meta-llama/Llama-3.2-3B-Instruct` (referenciado en la model card; no se aporta URL en la informacion proporcionada)
 - FiQA (benchmark financiero citado como contraste; no se aporta URL en la informacion proporcionada)
 - No se han encontrado en la busqueda web enlaces relevantes: los resultados devueltos corresponden a paginas corporativas de Microsoft (microsoft.com, account.microsoft.com, myaccount.microsoft.com, microsoft.com/microsoft-365 y la entrada de Wikipedia sobre Microsoft) y no guardan relacion con este repositorio, con roman urdu ni con evaluacion de sentimiento financiero.

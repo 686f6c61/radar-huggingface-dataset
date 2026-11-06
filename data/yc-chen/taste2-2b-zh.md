@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TASTE2-2B-ZH es un modelo de lenguaje hablado (spoken language model) desarrollado por YC-Chen, orientado a la síntesis de voz en chino mandarín. Está diseñado para aplicaciones de agentes de voz con capacidades full-duplex, lo que permite conversaciones bidireccionales en tiempo real. El modelo se distribuye bajo una licencia de uso exclusivo para investigación (taste2-research-only) y requiere aceptar condiciones de acceso en HuggingFace.
+TASTE2-2B-ZH es un modelo de lenguaje hablado (spoken language model) desarrollado por YC-Chen, orientado a la síntesis de voz en chino mandarín. Está diseñado para aplicaciones de agentes de voz con capacidades full-duplex, lo que permite conversaciones bidireccionales en tiempo real. El modelo se distribuye bajo una licencia de uso exclusivo para investigación (taste2-research-only) y requiere aceptar condiciones de acceso en Hugging Face.
 
 El nombre sugiere una arquitectura basada en el enfoque TASTE (no se proporcionan detalles adicionales), con aproximadamente 2 mil millones de parámetros. El repositorio incluye pesos en formato safetensors y ONNX, con un tamaño total de 24,1 GB. Actualmente solo soporta el idioma chino (zh), lo que lo hace específico para el mercado hispanohablante solo como referencia técnica, no como herramienta directa.
 
@@ -60,7 +60,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (sp
 ## Limitaciones y advertencias
 
 - Licencia restringida a investigacion (taste2-research-only): prohibido su uso comercial sin autorizacion explicita.
-- Acceso gated: requiere aceptar condiciones en HuggingFace, lo que limita la reproducibilidad.
+- Acceso gated: requiere aceptar condiciones en Hugging Face, lo que limita la reproducibilidad.
 - Solo soporta chino (zh): no apto para otros idiomas sin adaptacion.
 - No hay informacion sobre sesgos, alucinaciones o calidad de la voz en diferentes acentos o registros.
 - Sin datos de rendimiento ni benchmarks, no se puede evaluar su calidad frente a otros modelos TTS.
@@ -68,5 +68,5 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (sp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/YC-Chen/TASTE2-2B-ZH
+- Repositorio Hugging Face: https://huggingface.co/YC-Chen/TASTE2-2B-ZH
 - No se han encontrado papers, blogs o repositorios adicionales en la informacion proporcionada.

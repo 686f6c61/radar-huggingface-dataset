@@ -73,8 +73,8 @@ No se dispone de datos comparativos del autor, pero la busqueda web identifica a
 | Modelo | Entorno | Algoritmo | Implementacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | hareesh23143/ppo-LunarLander-v2-course | LunarLander-v2 | PPO | Propia en PyTorch, desde cero | no disponible | Repositorio de 0,0 GB, 0 descargas |
-| reinforcement-learning-course/ppo-LunarLander-v2 | LunarLander-v2 | PPO | Stable-Baselines3 | no disponible en la informacion proporcionada | Repositorio en HuggingFace |
-| heera-ai/ppo-LunarLander-v2 | LunarLander-v2 | PPO | Stable-Baselines3 | no disponible en la informacion proporcionada | Repositorio en HuggingFace |
+| reinforcement-learning-course/ppo-LunarLander-v2 | LunarLander-v2 | PPO | Stable-Baselines3 | no disponible en la informacion proporcionada | Repositorio en Hugging Face |
+| heera-ai/ppo-LunarLander-v2 | LunarLander-v2 | PPO | Stable-Baselines3 | no disponible en la informacion proporcionada | Repositorio en Hugging Face |
 | alperenunlu/ppo-lunarlander-v2 | LunarLander-v2 | PPO | Stable-Baselines3 + RL Zoo | no disponible en la informacion proporcionada | Repositorio en GitHub |
 
 La diferencia principal frente a las alternativas es que este modelo declara una implementacion manual del algoritmo en lugar de apoyarse en Stable-Baselines3, lo que cambia el valor del artefacto (interes didactico y de inspeccion del codigo) pero no permite afirmar ventajas de rendimiento, dado que no hay resultados comparables verificados.
@@ -93,7 +93,7 @@ La diferencia principal frente a las alternativas es que este modelo declara una
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hareesh23143/ppo-LunarLander-v2-course
+- Hugging Face: https://huggingface.co/hareesh23143/ppo-LunarLander-v2-course
 - Agente equivalente con Stable-Baselines3: https://huggingface.co/reinforcement-learning-course/ppo-LunarLander-v2
 - Agente equivalente: https://huggingface.co/heera-ai/ppo-LunarLander-v2
 - Repositorio GitHub con PPO + RL Zoo: https://github.com/alperenunlu/ppo-lunarlander-v2

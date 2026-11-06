@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SleepyDevs/ocs_genai_v1 no es un modelo de lenguaje con pesos publicados, sino un repositorio de artefactos de referencia asociado al proyecto OpenCADStudio GenAI adaptation (ocs-genai). El autor lo describe como el conjunto de artefactos de la Definition of Done de la version v1, generado a partir del commit 597ee12 de la rama master del repositorio github:puppybutleragent/ocs-genai (2026-09-24 UTC). El tamano del repositorio en HuggingFace es de 0,0 GB, no declara pipeline, idiomas ni licencia en los metadatos, y acumula 0 descargas y 0 likes desde su creacion el 2026-09-24.
+SleepyDevs/ocs_genai_v1 no es un modelo de lenguaje con pesos publicados, sino un repositorio de artefactos de referencia asociado al proyecto OpenCADStudio GenAI adaptation (ocs-genai). El autor lo describe como el conjunto de artefactos de la Definition of Done de la version v1, generado a partir del commit 597ee12 de la rama master del repositorio github:puppybutleragent/ocs-genai (2026-09-24 UTC). El tamano del repositorio en Hugging Face es de 0,0 GB, no declara pipeline, idiomas ni licencia en los metadatos, y acumula 0 descargas y 0 likes desde su creacion el 2026-09-24.
 
 El contenido publicado consiste en salidas de un rasterizador CPU implementado con numpy (mapas clay, depth32f, normal y seg, PNG de segmentacion de 16 bits y ficheros .npy de profundidad), registros RenderRecord en JSON conforme al esquema v0.2 (§9), un drift_report.json y trabajos de estilizado generados con un backend simulado (mock). Se trata, por tanto, de material de reproducibilidad y verificacion de una cadena de render CAD, no de un modelo entrenado que pueda desplegarse para inferencia.
 
@@ -18,7 +18,7 @@ Su relevancia es acotada y de tipo ingenieril: sirve para auditar el cumplimient
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no declarada en los metadatos de HuggingFace; la model card indica "our layer MIT; OpenCADStudio stays GPL at the process boundary" |
+| Licencia | no declarada en los metadatos de Hugging Face; la model card indica "our layer MIT; OpenCADStudio stays GPL at the process boundary" |
 | Formato de pesos | no hay pesos; los artefactos son .npy (profundidad), PNG (incluido PNG de segmentacion de 16 bits) y JSON (RenderRecord, drift_report) |
 
 ## Arquitectura y entrenamiento
@@ -69,7 +69,7 @@ Los unicos resultados cuantitativos disponibles son los de las puertas de valida
 - VRAM para inferencia: no aplica. El repositorio no contiene pesos ni requiere GPU para ejecutarse; el rasterizador de referencia es de CPU con numpy.
 - GPU recomendadas: no disponible. La generacion de los artefactos publicados no depende de acelerador segun la informacion disponible.
 - Cabe en GPU de consumo: no aplica al no haber inferencia de modelo.
-- Almacenamiento: el repositorio ocupa 0,0 GB en HuggingFace; el espacio necesario en disco es minimo y viene determinado por los PNG, los .npy y los JSON descargados.
+- Almacenamiento: el repositorio ocupa 0,0 GB en Hugging Face; el espacio necesario en disco es minimo y viene determinado por los PNG, los .npy y los JSON descargados.
 - Opciones de despliegue: no disponibles para el modelo (vLLM, llama.cpp, Ollama o TGI no son aplicables). El despliegue relevante es la ejecucion del pipeline Python del proyecto ocs-genai.
 - Latencia y throughput: no disponibles. La model card no publica tiempos de render, de drift ni de ejecucion de la suite de pruebas.
 - Nota sobre la pata MiDaS: la model card indica que es diagnostica y que no se hallo umbral discriminante; no se documentan requisitos de hardware asociados a ella.
@@ -85,11 +85,11 @@ No disponible. No existen modelos comparables en el sentido habitual porque el r
 
 ## Limitaciones y advertencias
 
-- No es un modelo desplegable: no contiene pesos, tokenizador, configuracion de arquitectura ni pipeline declarado en HuggingFace, por lo que no puede usarse para inferencia de texto, imagen o codigo.
+- No es un modelo desplegable: no contiene pesos, tokenizador, configuracion de arquitectura ni pipeline declarado en Hugging Face, por lo que no puede usarse para inferencia de texto, imagen o codigo.
 - Backend simulado: las salidas de estilizado son mock, deterministicas y sin red; no reflejan el comportamiento de un backend real de edicion de imagen.
 - Metricas no concluyentes: las cifras de drift sobre salidas mock son comprobaciones de validez del mock y no deben presentarse como metricas §9 en vivo.
 - Pata de profundidad no discriminante: el arnes de la §9 usa SSIM y edge-IoU como puertas, mientras que la pata MiDaS es solo diagnostica porque no se encontro umbral separador.
-- Licencia ambigua para uso comercial: los metadatos de HuggingFace no declaran licencia; la model card indica MIT para la capa propia y GPL para OpenCADStudio en el limite del proceso, lo que exige revision legal antes de cualquier uso comercial o de redistribucion combinada.
+- Licencia ambigua para uso comercial: los metadatos de Hugging Face no declaran licencia; la model card indica MIT para la capa propia y GPL para OpenCADStudio en el limite del proceso, lo que exige revision legal antes de cualquier uso comercial o de redistribucion combinada.
 - Validacion nula por la comunidad: 0 descargas y 0 likes en el momento de la consulta, sin evidencia externa de calidad ni de reproducibilidad independiente.
 - Alcance temporal y de version: los resultados de las puertas corresponden a un unico commit de procedencia (597ee12, master, 2026-09-24 UTC); cambios posteriores en el repositorio de origen invalidan la correspondencia.
 - Cobertura limitada del conjunto: 5 escenas en el round-trip DXF y 10 escenas en la cobertura de RenderRecord; no se documenta diversidad geometrica, complejidad ni sesgos del conjunto.
@@ -98,9 +98,9 @@ No disponible. No existen modelos comparables en el sentido habitual porque el r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SleepyDevs/ocs_genai_v1
+- Repositorio en Hugging Face: https://huggingface.co/SleepyDevs/ocs_genai_v1
 - Repositorio relacionado de la misma organizacion: https://huggingface.co/SleepyDevs/ocs-genai
-- Perfil de la organizacion en HuggingFace: https://huggingface.co/SleepyDevs/models
+- Perfil de la organizacion en Hugging Face: https://huggingface.co/SleepyDevs/models
 - Repositorio de origen segun provenance de la model card: github:puppybutleragent/ocs-genai @ 597ee12 (master, 2026-09-24 UTC)
 - Repositorio de origen del artefacto relacionado: github:puppybutleragent/ocs-genai, rama t_1c3dfbd5-render-pipeline @ ea86cff
 - Referencia interna citada en la model card: tarjeta t_ea10a943 (hallazgo de ausencia de umbral discriminante en la pata MiDaS)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rghosh8/SFT_baseline_deepseek-llm-7b-chat_gsm8k_1234` es un ajuste fino supervisado (SFT) del modelo `deepseek-ai/deepseek-llm-7b-chat`, publicado por el usuario rghosh8 en HuggingFace. Se trata de un artefacto de investigación orientado a experimentos de fine-tuning sobre el dataset GSM8K (problemas matemáticos de nivel escolar) con la semilla 1234, tal como indica su nombre. No es un modelo de propósito general ni un lanzamiento oficial de DeepSeek, sino una checkpoint derivada de un baseline experimental.
+`rghosh8/SFT_baseline_deepseek-llm-7b-chat_gsm8k_1234` es un ajuste fino supervisado (SFT) del modelo `deepseek-ai/deepseek-llm-7b-chat`, publicado por el usuario rghosh8 en Hugging Face. Se trata de un artefacto de investigación orientado a experimentos de fine-tuning sobre el dataset GSM8K (problemas matemáticos de nivel escolar) con la semilla 1234, tal como indica su nombre. No es un modelo de propósito general ni un lanzamiento oficial de DeepSeek, sino una checkpoint derivada de un baseline experimental.
 
 El modelo conserva la arquitectura y el tamaño del modelo base: un transformer decoder-only de aproximadamente 6.910 millones de parámetros (6,91B), con pesos en formato safetensors y un repositorio de 13,8 GB. El entrenamiento se realizó con la librería TRL (versión 1.15.0) sobre Transformers 5.17.0 y PyTorch 2.13.0, lo que lo convierte en un ejemplo reproducible de pipeline SFT moderno.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rghosh8/SFT_baseline_deepseek-llm-7b-chat_gsm8k_1234 | 6,91B | no disponible | no disponible | HuggingFace, 0 descargas |
-| deepseek-ai/deepseek-llm-7b-chat (base) | 6,91B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace, modelo oficial |
-| Mistral-7B-Instruct | 7,24B | 32k (v0.2) | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Llama-3-8B-Instruct | 8,03B | 8k | Llama 3 Community License | HuggingFace, muy extendido |
+| rghosh8/SFT_baseline_deepseek-llm-7b-chat_gsm8k_1234 | 6,91B | no disponible | no disponible | Hugging Face, 0 descargas |
+| deepseek-ai/deepseek-llm-7b-chat (base) | 6,91B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face, modelo oficial |
+| Mistral-7B-Instruct | 7,24B | 32k (v0.2) | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Llama-3-8B-Instruct | 8,03B | 8k | Llama 3 Community License | Hugging Face, muy extendido |
 
 La comparación con Mistral y Llama 3 es orientativa por tamaño; no se dispone de datos de rendimiento de esta checkpoint que permitan una comparación cuantitativa. Frente al modelo base, la única diferencia documentada es el SFT sobre GSM8K.
 
@@ -84,7 +84,7 @@ La comparación con Mistral y Llama 3 es orientativa por tamaño; no se dispone 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rghosh8/SFT_baseline_deepseek-llm-7b-chat_gsm8k_1234
+- Hugging Face: https://huggingface.co/rghosh8/SFT_baseline_deepseek-llm-7b-chat_gsm8k_1234
 - Modelo base: https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat
 - TRL (framework de entrenamiento): https://github.com/huggingface/trl
 - Dataset GSM8K: no disponible enlace directo en la informacion proporcionada

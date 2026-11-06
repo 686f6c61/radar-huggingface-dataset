@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Hy-Memory-30B-A3B-Abliterated-V1 es una variante "abliterated" (sin censura) del modelo tencent/Hy-Memory-30B-A3B, publicada por el usuario Uniboshi en HuggingFace. El modelo base pertenece al linaje de modelos con memoria de Tencent, y esta version ha sido modificada para eliminar los mecanismos de rechazo internos (abliteration), de modo que responde sin negativas a practicamente cualquier tipo de peticion conversacional. Cuenta con 30.064.725.888 parametros totales segun los pesos en safetensors.
+Hy-Memory-30B-A3B-Abliterated-V1 es una variante "abliterated" (sin censura) del modelo tencent/Hy-Memory-30B-A3B, publicada por el usuario Uniboshi en Hugging Face. El modelo base pertenece al linaje de modelos con memoria de Tencent, y esta version ha sido modificada para eliminar los mecanismos de rechazo internos (abliteration), de modo que responde sin negativas a practicamente cualquier tipo de peticion conversacional. Cuenta con 30.064.725.888 parametros totales segun los pesos en safetensors.
 
 La nomenclatura "30B-A3B" del nombre sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 3.000 millones de parametros activos por token, aunque este dato no aparece confirmado de forma explicita en la informacion disponible. El tag `hy_v3` apunta a la familia de arquitectura Hy version 3 del modelo base. Los pesos se distribuyen en formato safetensors para la libreria transformers y el repositorio ocupa 60,1 GB, lo que es coherente con pesos en precision de 16 bits.
 
-El modelo se publica bajo licencia Apache 2.0, pero el acceso esta restringido (gated) y requiere aceptar condiciones en HuggingFace. Cabe destacar que, en el momento de la consulta, el modelo registra 0 descargas y 0 "likes", por lo que no existe validacion comunitaria, benchmarks publicados ni evidencia de calidad de la abliteration aplicada. La fecha de creacion indicada es 2026-10-16, lo que resulta anomala y debe tomarse con cautela.
+El modelo se publica bajo licencia Apache 2.0, pero el acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face. Cabe destacar que, en el momento de la consulta, el modelo registra 0 descargas y 0 "likes", por lo que no existe validacion comunitaria, benchmarks publicados ni evidencia de calidad de la abliteration aplicada. La fecha de creacion indicada es 2026-10-16, lo que resulta anomala y debe tomarse con cautela.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ El modelo se publica bajo licencia Apache 2.0, pero el acceso esta restringido (
 
 El autor no publica una descripcion tecnica en la informacion disponible. Por los metadatos se sabe que el modelo es un finetune derivado de tencent/Hy-Memory-30B-A3B, con tag de arquitectura `hy_v3` y etiquetas `abliterated`, `uncensored` y `conversational`. La abliteration es una tecnica que modifica los pesos del modelo (habitualmente proyectando fuera de las matrices de pesos la direccion que activa el comportamiento de rechazo) con el objetivo de eliminar las negativas del modelo sin reentrenamiento completo. No se especifican el metodo exacto empleado, el numero de tokens de entrenamiento, la composicion del dataset ni si se aplico RLHF o DPO adicional.
 
-El tag `endpoints_compatible` indica que el modelo esta preparado para su despliegue mediante Inference Endpoints de HuggingFace. No hay informacion sobre innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, entrenamiento con memoria externa, etc.), mas alla del nombre "Hy-Memory" del modelo base, que sugiere algun mecanismo de memoria, pero del cual no se aportan detalles.
+El tag `endpoints_compatible` indica que el modelo esta preparado para su despliegue mediante Inference Endpoints de Hugging Face. No hay informacion sobre innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, entrenamiento con memoria externa, etc.), mas alla del nombre "Hy-Memory" del modelo base, que sugiere algun mecanismo de memoria, pero del cual no se aportan detalles.
 
 ## Capacidades
 
@@ -45,7 +45,7 @@ El tag `endpoints_compatible` indica que el modelo esta preparado para su despli
 - Simulacion de personajes o roleplay: el comportamiento conversacional y sin filtros lo hace apropiado para dialogos de personaje en proyectos de entretenimiento.
 - Generacion de datos sinteticos para entrenamiento: puede emplearse para producir datasets de texto diverso cuando se necesita un modelo que no bloquee tematicas.
 - Evaluacion comparativa de tecnicas de abliteration: como artefacto de referencia para medir el impacto en benchmarks frente a otras variantes abliterated o al modelo original.
-- Despliegue en endpoints propios de HuggingFace: el tag `endpoints_compatible` facilita su integracion en Inference Endpoints para prototipado rapido.
+- Despliegue en endpoints propios de Hugging Face: el tag `endpoints_compatible` facilita su integracion en Inference Endpoints para prototipado rapido.
 
 Advertencia: al tratarse de un modelo sin censura y sin evaluaciones publicadas, no se recomienda su uso en produccion orientada a usuarios finales sin una capa adicional de moderacion y sin pruebas exhaustivas de calidad.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - GPU recomendadas para precision completa: A100 80 GB, H100 80 GB, o configuraciones multi-GPU.
 - GPU para 8 bits: A100 40 GB, L40S 48 GB, RTX A6000 48 GB.
 - GPU de consumo: cabe en una RTX 4090 (24 GB) o RTX 3090 (24 GB) unicamente con cuantizacion de 4 bits; en BF16 no cabe.
-- Opciones de despliegue: transformers (libreria indicada), vLLM, TGI e Inference Endpoints de HuggingFace (por el tag `endpoints_compatible`).
+- Opciones de despliegue: transformers (libreria indicada), vLLM, TGI e Inference Endpoints de Hugging Face (por el tag `endpoints_compatible`).
 - llama.cpp u Ollama: no confirmado, no se publican pesos GGUF en el repositorio.
 - Latencia y throughput: no disponibles. Si la arquitectura es efectivamente MoE con ~3B activos, la velocidad de decodificacion deberia ser notablemente superior a la de un modelo denso de 30B, pero este dato no esta confirmado.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Uniboshi/Hy-Memory-30B-A3B-Abliterated-V1 | 30B | no disponible | Apache 2.0 | Gated en HuggingFace | Variante abliterated del modelo de Tencent |
+| Uniboshi/Hy-Memory-30B-A3B-Abliterated-V1 | 30B | no disponible | Apache 2.0 | Gated en Hugging Face | Variante abliterated del modelo de Tencent |
 | tencent/Hy-Memory-30B-A3B | 30B | no disponible | no disponible | no disponible | Modelo base del que deriva esta version |
 | Otras alternativas abliterated de tamano similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos para comparar |
 
@@ -77,7 +77,7 @@ No se dispone de informacion suficiente para establecer una comparativa tecnica 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo esta en modo gated y requiere aceptar condiciones en HuggingFace antes de descargarlo.
+- Acceso restringido: el modelo esta en modo gated y requiere aceptar condiciones en Hugging Face antes de descargarlo.
 - Sin validacion comunitaria: 0 descargas y 0 "likes" en el momento de la consulta implican que no hay retroalimentacion de usuarios ni verificacion independiente de su funcionamiento.
 - Sin benchmarks: no existen evaluaciones publicadas que confirmen que el modelo conserva las capacidades del modelo base tras la abliteration.
 - Riesgo elevado de contenido inapropiado: al ser "uncensored", puede generar contenido ofensivo, ilegal, peligroso o inexacto sin advertencia alguna.
@@ -90,6 +90,6 @@ No se dispone de informacion suficiente para establecer una comparativa tecnica 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Uniboshi/Hy-Memory-30B-A3B-Abliterated-V1
+- Pagina del modelo en Hugging Face: https://huggingface.co/Uniboshi/Hy-Memory-30B-A3B-Abliterated-V1
 - Modelo base: https://huggingface.co/tencent/Hy-Memory-30B-A3B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

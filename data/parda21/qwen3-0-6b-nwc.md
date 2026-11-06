@@ -16,7 +16,7 @@ El modelo hereda de Qwen3-0.6B su arquitectura y capacidades, ya que la conversi
 | Parametros totales | 821.340.984 (repo safetensors) |
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible (heredada de Qwen3-0.6B; la informacion proporcionada no la especifica) |
-| Tipos de cuantizacion | no aplica en sentido estricto: NWC es compresion sin perdidas sobre BF16; existe un tag "8-bit" en HuggingFace |
+| Tipos de cuantizacion | no aplica en sentido estricto: NWC es compresion sin perdidas sobre BF16; existe un tag "8-bit" en Hugging Face |
 | Idiomas soportados | no disponibles |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors en formato NWC (libreria `nwc`); exportable a BF16 con `python -m nwc.export` |
@@ -48,7 +48,7 @@ La innovacion tecnica es el propio formato NWC: los pesos comprimidos se decodif
 - Prototipado de aplicaciones de generacion de texto y conversacion: permite iterar sobre prompts y flujos conversacionales con una huella de memoria minima.
 - Integracion en CI/CD: la paridad bit a bit con el modelo base y la utilidad `nwc.export` permiten escribir tests que verifiquen la conversion y detecten regresiones en el kernel.
 - Educacion y demos: adecuado para explicar tecnicas de compresion de pesos y decodificacion dentro del kernel sin requerir hardware de gama alta.
-- Base para experimentos de ajuste fino de bajo coste: exportando primero a BF16, se puede reutilizar el flujo habitual de HuggingFace sobre un modelo de ~0,82 B parametros.
+- Base para experimentos de ajuste fino de bajo coste: exportando primero a BF16, se puede reutilizar el flujo habitual de Hugging Face sobre un modelo de ~0,82 B parametros.
 
 ## Benchmarks y rendimiento
 
@@ -95,7 +95,7 @@ La comparativa directa relevante es contra el propio Qwen3-0.6B en BF16: mismo m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Parda21/Qwen3-0.6B-NWC
+- Modelo en Hugging Face: https://huggingface.co/Parda21/Qwen3-0.6B-NWC
 - Repositorio del formato NWC: https://github.com/parda21/NWC
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Version de 4B del mismo autor: https://huggingface.co/Parda21/Qwen3-4B-NWC

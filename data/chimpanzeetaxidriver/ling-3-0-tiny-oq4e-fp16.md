@@ -94,8 +94,8 @@ La comparación relevante no es solo de tamaño sino de régimen de ejecución: 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/chimpanzeetaxidriver/Ling-3.0-tiny-oQ4e-fp16
-- Modelo base en HuggingFace: https://huggingface.co/inclusionAI/Ling-3.0-tiny
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/chimpanzeetaxidriver/Ling-3.0-tiny-oQ4e-fp16
+- Modelo base en Hugging Face: https://huggingface.co/inclusionAI/Ling-3.0-tiny
 - Modelo base en ModelScope: https://www.modelscope.cn/models/inclusionAI/Ling-3.0-tiny
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Colección MLX con modelos de la familia Ling: https://huggingface.co/collections/mlx-works/ling

@@ -74,7 +74,7 @@ El autor aporta como contexto, no como resultado de este checkpoint, que OPUS-MT
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| BOHOK pilot checkpoint | ~3,8 M | no disponible | CC-BY-4.0 | HuggingFace | Entrenado desde cero, BLEU 0,07-0,17 |
+| BOHOK pilot checkpoint | ~3,8 M | no disponible | CC-BY-4.0 | Hugging Face | Entrenado desde cero, BLEU 0,07-0,17 |
 | IndicTrans2 | no disponible en la información | no disponible | no disponible | no disponible | Mencionado por el autor como modelo del que NO deriva |
 | NLLB | no disponible en la información | no disponible | no disponible | no disponible | Mencionado por el autor como modelo del que NO deriva |
 | OPUS-MT (Helsinki-NLP) | no disponible en la información | no disponible | no disponible | no disponible | Usado como baseline separado en la app BOHOK; BLEU 22,58-27,32 en bengalí/marathi |
@@ -95,7 +95,7 @@ No se dispone de datos suficientes para una comparación cuantitativa directa co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vivekharry/bohok-indic-translation
+- Hugging Face: https://huggingface.co/vivekharry/bohok-indic-translation
 - Paper citado (SMOL, Caswell et al.): arXiv:2502.12301
 - Dataset: google/smol (CC-BY-4.0)
 - Código BOHOK: disponible junto al Space del proyecto (Apache-2.0), según la model card

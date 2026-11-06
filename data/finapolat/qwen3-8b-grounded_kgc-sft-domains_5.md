@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`FinaPolat/Qwen3-8B-grounded_KGC-sft-domains_5` es un ajuste fino supervisado (SFT) del modelo Qwen3-8B publicado en HuggingFace por el usuario FinaPolat. El identificador del repositorio indica que el entrenamiento se ha orientado a *grounded knowledge graph completion* (KGC, completado de grafos de conocimiento con evidencia o fundamento) sobre datos de dominios específicos. Forma parte de una familia de checkpoints del mismo autor, entre los que se encuentran `Qwen3-8B-grounded_KGC-sft`, `Qwen3-8B-grounded_KGC-sft-domains_4` y `Qwen3-8B-grounded_KGC-sft-domains_low_data`.
+`FinaPolat/Qwen3-8B-grounded_KGC-sft-domains_5` es un ajuste fino supervisado (SFT) del modelo Qwen3-8B publicado en Hugging Face por el usuario FinaPolat. El identificador del repositorio indica que el entrenamiento se ha orientado a *grounded knowledge graph completion* (KGC, completado de grafos de conocimiento con evidencia o fundamento) sobre datos de dominios específicos. Forma parte de una familia de checkpoints del mismo autor, entre los que se encuentran `Qwen3-8B-grounded_KGC-sft`, `Qwen3-8B-grounded_KGC-sft-domains_4` y `Qwen3-8B-grounded_KGC-sft-domains_low_data`.
 
 Los safetensors del repositorio confirman 8.190.735.360 parámetros reales (coincidentes con la arquitectura densa de Qwen3-8B) y un tamaño de repositorio de 16,4 GB, lo que corresponde a pesos en precisión de 16 bits. Según la información pública recogida sobre el checkpoint hermano `Qwen3-8B-grounded_KGC-sft`, el modelo trabaja con una longitud de contexto de 32.768 tokens y está pensado para tareas que requieren conocimiento fundamentado y completado de grafos de conocimiento.
 
-La relevancia de esta ficha es limitada y conviene ser explícito: la model card del repositorio es la plantilla autogenerada de HuggingFace, sin completar, y no documenta autoría real, datos de entrenamiento, hiperparámetros, licencia ni idiomas. Con 0 descargas y 0 *likes* en el momento de la consulta, se trata de un artefacto de investigación sin validación comunitaria. Cualquier uso en producción exige auditoría propia del modelo y de la procedencia de los datos de ajuste.
+La relevancia de esta ficha es limitada y conviene ser explícito: la model card del repositorio es la plantilla autogenerada de Hugging Face, sin completar, y no documenta autoría real, datos de entrenamiento, hiperparámetros, licencia ni idiomas. Con 0 descargas y 0 *likes* en el momento de la consulta, se trata de un artefacto de investigación sin validación comunitaria. Cualquier uso en producción exige auditoría propia del modelo y de la procedencia de los datos de ajuste.
 
 ## Especificaciones tecnicas
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada cuantizado a 4 bits: en torno a 5 GB de pesos más caché; manejable en GPUs de 12 GB con contexto moderado. Advertencia: el autor no publica versiones cuantizadas, habría que generarlas.
 - GPUs recomendadas: A100 40/80 GB, H100, L40S o A6000 para bf16 con contexto largo. Para una sola GPU con bf16, RTX 4090 / RTX 3090 (24 GB) es el mínimo razonable.
 - Cabe en GPU de consumo: sí, con matices. RTX 4090 o 3090 en bf16 con contexto reducido; RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4070 Ti Super 16 GB requieren cuantización a 8 o 4 bits.
-- Opciones de despliegue: `transformers` (librería declarada), Text Generation Inference (etiqueta `text-generation-inference` presente en el repositorio), vLLM y endpoints compatibles con la API de HuggingFace (`endpoints_compatible`). Para llama.cpp u Ollama sería necesario convertir los pesos a GGUF, ya que no se distribuyen en ese formato.
+- Opciones de despliegue: `transformers` (librería declarada), Text Generation Inference (etiqueta `text-generation-inference` presente en el repositorio), vLLM y endpoints compatibles con la API de Hugging Face (`endpoints_compatible`). Para llama.cpp u Ollama sería necesario convertir los pesos a GGUF, ya que no se distribuyen en ese formato.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia por petición para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ Los datos de los modelos comparados provienen de sus fichas oficiales y no forma
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FinaPolat/Qwen3-8B-grounded_KGC-sft-domains_5 | 8,19 B (medido) | 32.768 tokens (referencia del checkpoint hermano) | No disponible | Repositorio HuggingFace, 0 descargas, sin cuantizaciones |
+| FinaPolat/Qwen3-8B-grounded_KGC-sft-domains_5 | 8,19 B (medido) | 32.768 tokens (referencia del checkpoint hermano) | No disponible | Repositorio Hugging Face, 0 descargas, sin cuantizaciones |
 | Qwen3-8B (modelo base) | 8,19 B | 32.768 tokens nativos, extensible con YaRN | Apache 2.0 (según su ficha oficial) | Ampliamente desplegado, soporte en vLLM, TGI, llama.cpp, Ollama |
 | Qwen2.5-7B-Instruct | 7,62 B | 131.072 tokens | Apache 2.0 (según su ficha oficial) | Muy extendido, ecosistema maduro |
 | Llama-3.1-8B-Instruct | 8,03 B | 131.072 tokens | Licencia comunitaria Llama 3.1 | Muy extendido, con restricciones de uso |
@@ -90,7 +90,7 @@ La diferencia clave no está en el rendimiento, que no se puede comparar por fal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FinaPolat/Qwen3-8B-grounded_KGC-sft-domains_5
+- Modelo en Hugging Face: https://huggingface.co/FinaPolat/Qwen3-8B-grounded_KGC-sft-domains_5
 - Checkpoint anterior de la serie (`domains_4`): https://huggingface.co/FinaPolat/Qwen3-8B-grounded_KGC-sft-domains_4
 - Variante de pocos datos (`domains_low_data`): https://huggingface.co/FinaPolat/Qwen3-8B-grounded_KGC-sft-domains_low_data
 - Checkpoint base de la serie (`_sft`), con la referencia a los 32.768 tokens de contexto: https://featherless.ai/models/FinaPolat/Qwen3-8B-grounded_KGC-sft

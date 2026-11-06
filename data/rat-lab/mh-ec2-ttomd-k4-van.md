@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Tipo de artefacto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rat-lab/mh-ec2-ttomd-K4-van | Adaptador LoRA sobre Gemma 2 2B (no disponible el rango ni el numero de parametros entrenables) | No disponible | Adaptador PEFT para investigacion en preferencias | No disponible | Publico en HuggingFace, 0 descargas |
-| vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT (modelo base) | Aproximadamente 2,6 B | No disponible en esta ficha | Modelo completo ajustado con SFT | No disponible | Publico en HuggingFace |
-| rat-lab/rlj-ec2-fig9-K4-van (repo de origen) | Identico byte a byte a este | No disponible | Adaptador PEFT | No disponible | Publico en HuggingFace |
+| rat-lab/mh-ec2-ttomd-K4-van | Adaptador LoRA sobre Gemma 2 2B (no disponible el rango ni el numero de parametros entrenables) | No disponible | Adaptador PEFT para investigacion en preferencias | No disponible | Publico en Hugging Face, 0 descargas |
+| vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT (modelo base) | Aproximadamente 2,6 B | No disponible en esta ficha | Modelo completo ajustado con SFT | No disponible | Publico en Hugging Face |
+| rat-lab/rlj-ec2-fig9-K4-van (repo de origen) | Identico byte a byte a este | No disponible | Adaptador PEFT | No disponible | Publico en Hugging Face |
 | Otras celdas de la tabla cobertura x debiasing | No disponible | No disponible | Adaptadores PEFT | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento que permitan comparar estos artefactos entre sí más allá de su configuración experimental.
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento que permitan comparar estos artefactos ent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rat-lab/mh-ec2-ttomd-K4-van
+- Modelo en Hugging Face: https://huggingface.co/rat-lab/mh-ec2-ttomd-K4-van
 - Modelo base: https://huggingface.co/vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT
 - Repositorio de origen de los adaptadores: https://huggingface.co/rat-lab/rlj-ec2-fig9-K4-van
 - Dataset de entrenamiento: https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF

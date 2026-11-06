@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B es un modelo fundacional multimodal de tipo image-text-to-text desarrollado por el equipo Qwen (Alibaba). Esta ficha concreta corresponde a la publicación de SerezhaShum en HuggingFace, que redistribuye los pesos post-entrenados de Qwen/Qwen3.5-4B-Base en formato Transformers. El modelo integra un codificador de visión y un modelo de lenguaje causal con una arquitectura híbrida que combina capas de atención lineal (Gated DeltaNet) con capas de atención completa, además de un esquema de mezcla de expertos dispersa.
+Qwen3.5-4B es un modelo fundacional multimodal de tipo image-text-to-text desarrollado por el equipo Qwen (Alibaba). Esta ficha concreta corresponde a la publicación de SerezhaShum en Hugging Face, que redistribuye los pesos post-entrenados de Qwen/Qwen3.5-4B-Base en formato Transformers. El modelo integra un codificador de visión y un modelo de lenguaje causal con una arquitectura híbrida que combina capas de atención lineal (Gated DeltaNet) con capas de atención completa, además de un esquema de mezcla de expertos dispersa.
 
 La relevancia del modelo radica en su apuesta por la fusión temprana de tokens multimodales, lo que le permite alcanzar paridad con la generación Qwen3 en tareas de razonamiento, código, agentes y comprensión visual. Con 4.659.865.088 parámetros totales y una longitud de contexto nativa de 262.144 tokens, extensible hasta 1.010.000, se posiciona como una opción compacta para despliegues que requieren ventanas de contexto muy largas sin el coste computacional de modelos de mayor tamaño.
 
@@ -73,10 +73,10 @@ La model card incluye una figura adicional de benchmarks (`qwen3.5_small_size_sc
 
 | Modelo | Parámetros | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B | 4,66B | 262K (ext. 1M) | Apache 2.0 | Sí (image-text-to-text) | HuggingFace |
-| Qwen3.5-9B | no disponible en el extracto | no disponible en el extracto | Apache 2.0 (según repo Qwen) | Sí | HuggingFace |
+| Qwen3.5-4B | 4,66B | 262K (ext. 1M) | Apache 2.0 | Sí (image-text-to-text) | Hugging Face |
+| Qwen3.5-9B | no disponible en el extracto | no disponible en el extracto | Apache 2.0 (según repo Qwen) | Sí | Hugging Face |
 | GPT-OSS-20B | 20B (aprox.) | no disponible | no disponible | no disponible | no disponible |
-| Qwen3-30BA3B-Thinking-2507 | 30B totales (A3B activos) | no disponible | no disponible | no disponible | HuggingFace |
+| Qwen3-30BA3B-Thinking-2507 | 30B totales (A3B activos) | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparativa se limita a los modelos presentes en la tabla de benchmarks de la model card; no se dispone de datos de contexto, licencia o modalidad para todos ellos en la información proporcionada.
 
@@ -92,7 +92,7 @@ La comparativa se limita a los modelos presentes en la tabla de benchmarks de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SerezhaShum/Qwen3.5-4B
+- Repositorio Hugging Face: https://huggingface.co/SerezhaShum/Qwen3.5-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Licencia: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

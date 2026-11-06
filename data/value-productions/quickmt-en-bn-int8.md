@@ -80,6 +80,6 @@ No se dispone de información suficiente para comparar con alternativas concreta
 
 ## Enlaces
 
-- [HuggingFace: value-productions/quickmt-en-bn-int8](https://huggingface.co/value-productions/quickmt-en-bn-int8)
+- [Hugging Face: value-productions/quickmt-en-bn-int8](https://huggingface.co/value-productions/quickmt-en-bn-int8)
 - [Modelo base: quickmt/quickmt-en-bn](https://huggingface.co/quickmt/quickmt-en-bn)
 - No se han encontrado en la búsqueda web papers, blogs, repositorios o demos adicionales asociados a este artefacto.

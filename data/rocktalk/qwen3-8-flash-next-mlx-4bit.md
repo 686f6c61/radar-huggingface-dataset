@@ -84,7 +84,7 @@ No se dispone de datos de comparativa directa con otros modelos en la informaci√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RockTalk/Qwen3.8-Flash-Next-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/RockTalk/Qwen3.8-Flash-Next-MLX-4bit
 - Repositorio de c√≥digo MLX: https://github.com/Rocktalk-Holdings/mlx-qwen4exp
 - Modelo base de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/

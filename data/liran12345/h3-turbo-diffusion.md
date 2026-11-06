@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto / pasos | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| H3 Turbo Diffusion (este) | 33,1 B | 5 sigma points (4 updates) | MiniMax H3 Community License | HuggingFace, repo independiente |
-| MiniMaxAI/MiniMax-H3 (FL2VA) | no disponible | muestreo multi-paso | MiniMax H3 Community License | HuggingFace, oficial |
+| H3 Turbo Diffusion (este) | 33,1 B | 5 sigma points (4 updates) | MiniMax H3 Community License | Hugging Face, repo independiente |
+| MiniMaxAI/MiniMax-H3 (FL2VA) | no disponible | muestreo multi-paso | MiniMax H3 Community License | Hugging Face, oficial |
 | Modelos de vídeo-audio de otros laboratorios | no disponible | no disponible | varía | no disponible |
 
 No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas. La comparación relevante es interna: este checkpoint reduce el número de pasos frente al FL2VA original a costa de una posible pérdida de calidad que el autor no cuantifica.
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- [HuggingFace: liran12345/h3-turbo-diffusion](https://huggingface.co/liran12345/h3-turbo-diffusion)
+- [Hugging Face: liran12345/h3-turbo-diffusion](https://huggingface.co/liran12345/h3-turbo-diffusion)
 - [Modelo base: MiniMaxAI/MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3)
 - [LICENSE del repo](https://huggingface.co/liran12345/h3-turbo-diffusion/blob/main/LICENSE)
 - [NOTICE del repo](https://huggingface.co/liran12345/h3-turbo-diffusion/blob/main/NOTICE)

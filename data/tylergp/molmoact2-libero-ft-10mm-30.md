@@ -29,7 +29,7 @@ No se ha publicado ninguna información sobre las capacidades del modelo en la m
 
 ## Casos de uso
 
-No se han documentado casos de uso específicos en la información disponible. El nombre sugiere aplicaciones en robótica, como planificación de movimientos o ejecución de tareas de manipulación, pero no hay evidencia concreta. Se recomienda consultar el repositorio de HuggingFace para obtener más detalles antes de considerar su uso en producción.
+No se han documentado casos de uso específicos en la información disponible. El nombre sugiere aplicaciones en robótica, como planificación de movimientos o ejecución de tareas de manipulación, pero no hay evidencia concreta. Se recomienda consultar el repositorio de Hugging Face para obtener más detalles antes de considerar su uso en producción.
 
 ## Benchmarks y rendimiento
 
@@ -53,4 +53,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tylergp/molmoact2-libero-ft-10mm-30
+- Repositorio en Hugging Face: https://huggingface.co/tylergp/molmoact2-libero-ft-10mm-30

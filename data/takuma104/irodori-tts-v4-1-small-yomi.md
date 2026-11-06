@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Irodori-TTS-v4.1-Small-Yomi es un modelo publicado en HuggingFace por el usuario takuma104 bajo licencia MIT. En el momento de redactar esta ficha, el repositorio no incluye model card descriptiva: la unica informacion disponible es la etiqueta de licencia, la region de publicacion (us) y las fechas de creacion y actualizacion, ambas el 1 de octubre de 2026. El repositorio registra 0 descargas y 0 likes, por lo que no existe validacion por parte de la comunidad ni evidencia publica de uso.
+Irodori-TTS-v4.1-Small-Yomi es un modelo publicado en Hugging Face por el usuario takuma104 bajo licencia MIT. En el momento de redactar esta ficha, el repositorio no incluye model card descriptiva: la unica informacion disponible es la etiqueta de licencia, la region de publicacion (us) y las fechas de creacion y actualizacion, ambas el 1 de octubre de 2026. El repositorio registra 0 descargas y 0 likes, por lo que no existe validacion por parte de la comunidad ni evidencia publica de uso.
 
 El identificador del modelo sugiere, sin confirmacion documental, que se trata de un sistema de sintesis de voz (TTS) de la serie Irodori, en su variante "Small" y version 4.1, con el sufijo "Yomi" (lectura, en japones). Esta interpretacion procede unicamente de la nomenclatura y no de la documentacion del autor, por lo que debe tratarse como una hipotesis de trabajo y no como un dato verificado. No se dispone de informacion sobre arquitectura, tamano, datos de entrenamiento ni idiomas soportados.
 
@@ -67,7 +67,7 @@ No disponible. No se dispone de datos de parametros, contexto, rendimiento ni li
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no hay documentacion de arquitectura, entrenamiento, datos ni evaluacion.
-- Sin pipeline declarado en HuggingFace, lo que impide saber que tipo de tarea implementa el modelo.
+- Sin pipeline declarado en Hugging Face, lo que impide saber que tipo de tarea implementa el modelo.
 - Idiomas no declarados: se desconoce si soporta castellano o solo japones.
 - 0 descargas y 0 likes: no existe validacion externa ni reportes de uso que respalden su funcionamiento.
 - Repositorio creado y actualizado el mismo dia (1 de octubre de 2026): posible publicacion inicial incompleta o abandonada.
@@ -78,5 +78,5 @@ No disponible. No se dispone de datos de parametros, contexto, rendimiento ni li
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/takuma104/Irodori-TTS-v4.1-Small-Yomi
+- Hugging Face: https://huggingface.co/takuma104/Irodori-TTS-v4.1-Small-Yomi
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

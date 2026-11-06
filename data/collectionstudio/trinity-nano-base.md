@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Trinity-Nano-Base es un modelo de lenguaje de arquitectura MoE (mixture of experts) con 6.000 millones de parametros en total y 1.000 millones de parametros activos por token. Lo ha desarrollado Arcee AI y ha sido publicado en HuggingFace por CollectionStudio. Forma parte de la familia Trinity, una serie de pesos abiertos orientada a empresas y entornos de investigacion.
+Trinity-Nano-Base es un modelo de lenguaje de arquitectura MoE (mixture of experts) con 6.000 millones de parametros en total y 1.000 millones de parametros activos por token. Lo ha desarrollado Arcee AI y ha sido publicado en Hugging Face por CollectionStudio. Forma parte de la familia Trinity, una serie de pesos abiertos orientada a empresas y entornos de investigacion.
 
 Es un modelo base pre fine-tuning, por lo que no esta preparado para mantener conversaciones tal cual; se disena para ser entrenado en dominios especificos. Se ha entrenado con 10 billones de tokens (10T) seleccionados junto con Datology, partiendo del dataset de AFM-4.5B e incorporando mas datos de matematicas y codigo. El entrenamiento se realizo en un cluster de 512 GPUs H200 con paralelismo HSDP.
 
@@ -89,7 +89,7 @@ Los resultados mostrados en la model card se presentan a continuacion. No se dis
 - GPU recomendadas: A100, H100, RTX 4090 y otras con 24 GB o mas de VRAM.
 - Cabe en GPU de consumo como la RTX 4090 (24 GB) en precision completa.
 - Para cuantizacion se necesitarian pruebas adicionales; no se han publicado configuraciones soportadas oficialmente.
-- Despliegue: compatible con la libreria transformers de HuggingFace. No se dispone de informacion sobre compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- Despliegue: compatible con la libreria transformers de Hugging Face. No se dispone de informacion sobre compatibilidad con vLLM, llama.cpp, Ollama o TGI.
 
 ## Comparativa con modelos similares
 
@@ -106,7 +106,7 @@ No se dispone de informacion suficiente para elaborar una comparativa directa co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CollectionStudio/Trinity-Nano-Base
+- Modelo en Hugging Face: https://huggingface.co/CollectionStudio/Trinity-Nano-Base
 - Checkpoint pre-anneal: https://huggingface.co/CollectionStudio/Trinity-Nano-Base-Pre-Anneal
 - Blog de Arcee AI, "The Trinity Manifesto": https://www.arcee.ai/blog/the-trinity-manifesto
 - Modelo relacionado AFM-4.5B: https://huggingface.co/arcee-ai/AFM-4.5B

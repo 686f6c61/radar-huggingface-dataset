@@ -6,7 +6,7 @@ GLM-5.3-Flash-UNCENSORED-W4A16 es una variante del modelo GLM-5.3-Flash, publica
 
 El modelo base, GLM-5.3-Flash, es un mixture-of-experts (MoE) de 320 mil millones de parámetros totales con 18 mil millones activos por token, desarrollado por Z.ai y liberado bajo licencia MIT. La versión W4A16 aquí presentada cuantiza los pesos a 4 bits (int4) y mantiene activaciones de 16 bits, lo que reduce significativamente los requisitos de memoria frente a la versión FP8 (328 GB). El modelo utiliza la arquitectura glm5_next, que combina atención lineal KDA con atención dispersa tipo DeepSeek.
 
-Esta ficha se basa exclusivamente en la información disponible en HuggingFace y en los resultados de búsqueda web; muchos datos técnicos específicos de esta variante (contexto, benchmarks, requisitos hardware) no han sido publicados.
+Esta ficha se basa exclusivamente en la información disponible en Hugging Face y en los resultados de búsqueda web; muchos datos técnicos específicos de esta variante (contexto, benchmarks, requisitos hardware) no han sido publicados.
 
 ## Especificaciones tecnicas
 
@@ -17,8 +17,8 @@ Esta ficha se basa exclusivamente en la información disponible en HuggingFace y
 | Parametros activos | 18 mil millones (según información de la versión base) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | W4A16 (int4 para pesos, activaciones en bf16) |
-| Idiomas soportados | en, zh, ru, sr, hi, fr, es, ar, ko, ja (según tags de HuggingFace) |
-| Licencia | MIT (según tag license:mit; el campo de licencia en HuggingFace indica "no disponible") |
+| Idiomas soportados | en, zh, ru, sr, hi, fr, es, ar, ko, ja (según tags de Hugging Face) |
+| Licencia | MIT (según tag license:mit; el campo de licencia en Hugging Face indica "no disponible") |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -33,7 +33,7 @@ El proceso "CRACK" de dealignai elimina los pesos responsables del comportamient
 - Eliminación de la sobrescripción y de los rechazos a nivel de pesos: el modelo no se niega a responder solicitudes sobre copyright, contenido para adultos, violencia simulada u otros temas que el modelo base solía bloquear.
 - Arquitectura MoE eficiente: 18 mil millones de parámetros activos sobre 320 mil millones totales, lo que permite inferencia con menor coste computacional que un modelo denso equivalente.
 - Cuantización W4A16: los pesos en int4 reducen la memoria necesaria y la transferencia de datos, acelerando la inferencia en GPUs con soporte para operaciones de 4 bits.
-- Compatible con pipelines de text-generation de HuggingFace y con formatos safetensors estándar.
+- Compatible con pipelines de text-generation de Hugging Face y con formatos safetensors estándar.
 - No se ha confirmado soporte para tool calling, agentes ni razonamiento multi-paso en la información disponible.
 
 ## Casos de uso
@@ -72,7 +72,7 @@ No se dispone de información comparativa suficiente en las fuentes consultadas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-W4A16
+- Modelo en Hugging Face: https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-W4A16
 - Versión FP8 del mismo autor: https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-FP8
 - README de la versión FP8: https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-FP8/blob/main/README.md
 - Análisis de arquitectura (vista HF): https://hfviewer.com/dealignai/GLM-5.3-Flash-UNCENSORED-NVFP4

@@ -50,7 +50,7 @@ El entrenamiento se realizó sobre Galaxy10 DECaLS (17.736 imágenes), con el sp
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card (no verificados de forma independiente por HuggingFace), sobre el split de test held-out de Galaxy10 DECaLS (1.774 imágenes):
+Resultados declarados por el autor en la model card (no verificados de forma independiente por Hugging Face), sobre el split de test held-out de Galaxy10 DECaLS (1.774 imágenes):
 
 | Metrica | Valor |
 |---|---|
@@ -73,9 +73,9 @@ Progresión de referencia (semilla 42, test): 7,10 % de accuracy en la época 1,
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `matthieulel/convnextv2-atto-1k-224-galaxy10-decals-head-v2` | 3.390.610 | Imagen 224x224 px | 45,38 % accuracy, 42,73 % weighted F1 en Galaxy10 DECaLS test | Apache 2.0 | HuggingFace |
-| `facebook/convnextv2-atto-1k-224` (backbone base) | 3,4 M aprox. | Imagen 224x224 px | Preentrenado en ImageNet-1k; sin métricas en Galaxy10 publicadas | Apache 2.0 | HuggingFace |
-| Otros backbones de la colección Vision Foundation Models Benchmark (39 restantes) | Variable según backbone | Imagen 224x224 px | Métricas por backbone en el dataset `vision-foundation-models-benchmark-runs`; no disponibles en esta ficha | Según backbone | HuggingFace |
+| `matthieulel/convnextv2-atto-1k-224-galaxy10-decals-head-v2` | 3.390.610 | Imagen 224x224 px | 45,38 % accuracy, 42,73 % weighted F1 en Galaxy10 DECaLS test | Apache 2.0 | Hugging Face |
+| `facebook/convnextv2-atto-1k-224` (backbone base) | 3,4 M aprox. | Imagen 224x224 px | Preentrenado en ImageNet-1k; sin métricas en Galaxy10 publicadas | Apache 2.0 | Hugging Face |
+| Otros backbones de la colección Vision Foundation Models Benchmark (39 restantes) | Variable según backbone | Imagen 224x224 px | Métricas por backbone en el dataset `vision-foundation-models-benchmark-runs`; no disponibles en esta ficha | Según backbone | Hugging Face |
 
 No se dispone en la información proporcionada de resultados numéricos de los 39 backbones restantes ni de alternativas externas al benchmark, por lo que la comparación cuantitativa con modelos de la misma categoría queda limitada a los datos del propio autor.
 
@@ -93,7 +93,7 @@ No se dispone en la información proporcionada de resultados numéricos de los 3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/convnextv2-atto-1k-224-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/convnextv2-atto-1k-224-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/facebook/convnextv2-atto-1k-224
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de métricas por época y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

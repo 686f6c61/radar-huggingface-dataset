@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Five_Stars_Illustrious_14.0 es un repositorio publicado por el usuario AIxFuneStudio en HuggingFace, con acceso restringido mediante gating (es necesario aceptar condiciones en la plataforma antes de poder descargarlo). El repositorio ocupa 6,9 GB y su licencia figura como "other". En el momento de la consulta acumula 0 descargas y 0 "me gusta", y la ficha no incluye pipeline, idiomas soportados ni descripcion tecnica alguna.
+Five_Stars_Illustrious_14.0 es un repositorio publicado por el usuario AIxFuneStudio en Hugging Face, con acceso restringido mediante gating (es necesario aceptar condiciones en la plataforma antes de poder descargarlo). El repositorio ocupa 6,9 GB y su licencia figura como "other". En el momento de la consulta acumula 0 descargas y 0 "me gusta", y la ficha no incluye pipeline, idiomas soportados ni descripcion tecnica alguna.
 
 La informacion disponible no permite confirmar arquitectura, numero de parametros, contexto, datos de entrenamiento ni capacidades reales del modelo. El nombre del repositorio ("Illustrious", junto al sufijo de version "14.0") y el tamano del mismo (6,9 GB de pesos, compatible con un checkpoint de difusion tipo SDXL en precision fp16) apuntan a un modelo de generacion de imagenes derivado de la familia Illustrious, pero esto es una inferencia a partir del nombre y del tamano del artefacto, no un dato documentado por el autor.
 
@@ -18,11 +18,11 @@ La relevancia de esta ficha es, por tanto, limitada y fundamentalmente cautelar:
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio no lista variantes cuantizadas ni formatos alternativos) |
 | Idiomas soportados | no disponible |
-| Licencia | other (con acceso restringido mediante gating en HuggingFace) |
+| Licencia | other (con acceso restringido mediante gating en Hugging Face) |
 | Formato de pesos | no disponible (no se detalla safetensors, GGUF ni otro formato) |
 | Tamano del repositorio | 6,9 GB |
 | Pipeline declarado | no disponible |
-| Acceso | restringido (requiere aceptar condiciones en HuggingFace) |
+| Acceso | restringido (requiere aceptar condiciones en Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-15 |
 | Ultima actualizacion | 2026-09-16 |
@@ -81,7 +81,7 @@ No disponible. No es posible establecer una comparativa fiable porque no se ha c
 - Ausencia total de documentacion: no hay model card, ni descripcion de arquitectura, ni datos de entrenamiento.
 - Sin validacion de la comunidad: 0 descargas y 0 "me gusta" en el momento de la consulta, lo que implica ausencia de evidencia externa sobre su calidad o comportamiento.
 - Licencia "other": los terminos exactos no estan detallados en la informacion disponible, por lo que no puede asumirse que se permita el uso comercial. Es imprescindible revisar las condiciones antes de cualquier uso en produccion.
-- Acceso restringido: el gating en HuggingFace limita la descarga, la reproducibilidad y la auditoria por terceros.
+- Acceso restringido: el gating en Hugging Face limita la descarga, la reproducibilidad y la auditoria por terceros.
 - Riesgo de alucinacion o de artefactos: no evaluable sin datos; en modelos generativos, y en particular en difusion, es esperable la aparicion de artefactos y de sesgos de representacion si no se han aplicado filtros, pero no hay informacion que lo confirme.
 - Limitaciones de contexto e idioma: no disponibles; se desconoce si el modelo soporta varios idiomas en los prompts.
 - La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: todas las entradas corresponden al estrecho de Ormuz y a tematicas geopoliticas sin conexion alguna, por lo que no existe material externo de contraste.
@@ -89,6 +89,6 @@ No disponible. No es posible establecer una comparativa fiable porque no se ha c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIxFuneStudio/Five_Stars_Illustrious_14.0
+- Hugging Face: https://huggingface.co/AIxFuneStudio/Five_Stars_Illustrious_14.0
 - Resultados de la busqueda web: sin coincidencias relevantes. Las consultas devolvieron exclusivamente paginas sobre el estrecho de Ormuz (hormuz.net, hormuz.data-tracking.net, github.com/hormuzgroup, aljazeera.com, hormuz.live.page), sin ninguna relacion con el modelo.
 - Paper, blog, repositorio de codigo o demo: no disponible.

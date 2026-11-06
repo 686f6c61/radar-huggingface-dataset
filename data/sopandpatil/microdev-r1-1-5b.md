@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MicroDev-R1-1.5B es un ajuste fino (fine-tuning) del modelo Qwen2.5-Coder-1.5B-Instruct en su variante cuantizada a 4 bits, desarrollado por el usuario sopandpatil y publicado en HuggingFace. Se trata de un modelo de generacion de texto de 1.543.714.304 parametros (aproximadamente 1,5 mil millones) orientado a tareas conversacionales y de generacion de codigo, heredando la arquitectura Qwen2 del modelo base de Alibaba.
+MicroDev-R1-1.5B es un ajuste fino (fine-tuning) del modelo Qwen2.5-Coder-1.5B-Instruct en su variante cuantizada a 4 bits, desarrollado por el usuario sopandpatil y publicado en Hugging Face. Se trata de un modelo de generacion de texto de 1.543.714.304 parametros (aproximadamente 1,5 mil millones) orientado a tareas conversacionales y de generacion de codigo, heredando la arquitectura Qwen2 del modelo base de Alibaba.
 
-El modelo se ha entrenado utilizando las herramientas de Unsloth y la libreria TRL de HuggingFace, lo que segun la model card permite un entrenamiento "2x mas rapido". La relevancia de este modelo es limitada: se trata de una publicacion con cero descargas y cero likes en el momento de la consulta, sin documentacion tecnica detallada sobre el dataset de entrenamiento, el proceso de ajuste ni evaluaciones de rendimiento. La model card es practicamente un template generado automaticamente por Unsloth.
+El modelo se ha entrenado utilizando las herramientas de Unsloth y la libreria TRL de Hugging Face, lo que segun la model card permite un entrenamiento "2x mas rapido". La relevancia de este modelo es limitada: se trata de una publicacion con cero descargas y cero likes en el momento de la consulta, sin documentacion tecnica detallada sobre el dataset de entrenamiento, el proceso de ajuste ni evaluaciones de rendimiento. La model card es practicamente un template generado automaticamente por Unsloth.
 
 Por tanto, esta ficha debe interpretarse con cautela: la mayor parte de las especificaciones tecnicas se infieren del modelo base (Qwen2.5-Coder-1.5B-Instruct), no de informacion proporcionada por el autor del fine-tuning. No hay datos publicados sobre que tarea concreta optimiza este ajuste ni que mejoras aporta respecto al modelo original.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MicroDev-R1-1.5B | 1,5B | No disponible | Apache 2.0 | HuggingFace (0 descargas) | Fine-tuning sin documentacion tecnica |
-| Qwen2.5-Coder-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | HuggingFace (ampliamente usado) | Modelo base, con benchmarks publicados por Alibaba |
-| DeepSeek-Coder-1.3B-Instruct | 1,3B | 16.384 tokens | DeepSeek License | HuggingFace | Alternativa orientada a codigo, con licencia mas restrictiva |
-| StarCoder2-3B | 3B | 16.384 tokens | BigCode OpenRAIL-M | HuggingFace | Mayor tamano, licencia con restricciones de uso |
+| MicroDev-R1-1.5B | 1,5B | No disponible | Apache 2.0 | Hugging Face (0 descargas) | Fine-tuning sin documentacion tecnica |
+| Qwen2.5-Coder-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | Hugging Face (ampliamente usado) | Modelo base, con benchmarks publicados por Alibaba |
+| DeepSeek-Coder-1.3B-Instruct | 1,3B | 16.384 tokens | DeepSeek License | Hugging Face | Alternativa orientada a codigo, con licencia mas restrictiva |
+| StarCoder2-3B | 3B | 16.384 tokens | BigCode OpenRAIL-M | Hugging Face | Mayor tamano, licencia con restricciones de uso |
 
 La comparativa se basa en caracteristicas conocidas de los modelos alternativos; no hay datos de rendimiento del modelo evaluado para comparar empiricamente.
 
@@ -82,8 +82,8 @@ La comparativa se basa en caracteristicas conocidas de los modelos alternativos;
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sopandpatil/MicroDev-R1-1.5B
+- Modelo en Hugging Face: https://huggingface.co/sopandpatil/MicroDev-R1-1.5B
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-Coder-1.5B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Modelo original Qwen2.5-Coder-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct

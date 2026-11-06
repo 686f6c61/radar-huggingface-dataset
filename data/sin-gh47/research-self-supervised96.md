@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Sin-gh47/research-self-supervised96` es un repositorio alojado en HuggingFace cuyo contenido declarado no es un modelo entrenado, sino un conjunto estructurado de notas de investigación sobre aprendizaje auto-supervisado (self-supervised learning). El propio autor lo describe en la model card como un artefacto exploratorio con dos ficheros, `reading.md` y `README.md`, y afirma explícitamente que no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni checkpoint entrenado.
+`Sin-gh47/research-self-supervised96` es un repositorio alojado en Hugging Face cuyo contenido declarado no es un modelo entrenado, sino un conjunto estructurado de notas de investigación sobre aprendizaje auto-supervisado (self-supervised learning). El propio autor lo describe en la model card como un artefacto exploratorio con dos ficheros, `reading.md` y `README.md`, y afirma explícitamente que no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni checkpoint entrenado.
 
-El repositorio esta etiquetado como `safetensors`, `transformer`, `research-notes` y `self-supervised`, con licencia CC-BY-4.0. Los metadatos de HuggingFace indican un total de 16.576 parámetros, una cifra compatible con un fichero de pesos residual o de prueba (unos 66 KB en fp32), no con un modelo de lenguaje funcional. El tamaño del repositorio aparece redondeado como 0.0 GB.
+El repositorio esta etiquetado como `safetensors`, `transformer`, `research-notes` y `self-supervised`, con licencia CC-BY-4.0. Los metadatos de Hugging Face indican un total de 16.576 parámetros, una cifra compatible con un fichero de pesos residual o de prueba (unos 66 KB en fp32), no con un modelo de lenguaje funcional. El tamaño del repositorio aparece redondeado como 0.0 GB.
 
 Por tanto, su relevancia es documental, no técnica: sirve como plantilla de notas de investigación y como recordatorio de buenas prácticas de reproducibilidad (versiones de dataset, semillas, hardware y registros crudos). No debe evaluarse como un modelo desplegable ni incluirse en comparativas de rendimiento.
 
@@ -83,7 +83,7 @@ No se identifican modelos comparables: el artefacto no es un modelo de lenguaje 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sin-gh47/research-self-supervised96
+- Repositorio en Hugging Face: https://huggingface.co/Sin-gh47/research-self-supervised96
 - Fichero principal citado por el autor: `reading.md` (dentro del repositorio)
 - Paper, blog, repositorio de código o demo: no disponible
 - Resultados de búsqueda web relevantes: no disponible (los resultados devueltos no están relacionados con el artefacto)

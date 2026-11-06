@@ -99,7 +99,7 @@ La única comparación directa publicada es contra Bonsai 27B ejecutado en el mo
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/ahtx/AH-Nanbeige4.3-33B-IQ3_XXS-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/ahtx/AH-Nanbeige4.3-33B-IQ3_XXS-GGUF
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - kbench (benchmark de agentes del autor): https://github.com/ahtx/kindi-bench

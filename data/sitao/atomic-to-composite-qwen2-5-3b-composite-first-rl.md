@@ -87,7 +87,7 @@ Las comparaciones cuantitativas directas entre las cuatro recetas se encuentran 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-3b-composite-first-rl
+- Modelo en Hugging Face: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-3b-composite-first-rl
 - Paper (arXiv): https://arxiv.org/abs/2512.01970
 - Pagina del proyecto: https://sitaocheng.github.io/atomic/
 - Codigo (GitHub): https://github.com/sitaocheng/from_atomic_to_composite

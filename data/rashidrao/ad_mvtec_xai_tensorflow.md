@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AD_MVTec_XAI_TensorFlow (este) | VAE-GAN + XAI | 128x128x3 | MIT | Checkpoints en HuggingFace |
+| AD_MVTec_XAI_TensorFlow (este) | VAE-GAN + XAI | 128x128x3 | MIT | Checkpoints en Hugging Face |
 | Padim (PaDiM, 2020) | Deteccion de anomalias por distribucion gaussiana de embeddings | Resolucion variable | Apache 2.0 (implementacion de referencia) | Codigo abierto en GitHub |
 | PatchCore (2021) | Deteccion de anomalias por memoria de caracteristicas | Resolucion variable | Apache 2.0 (implementacion de referencia) | Codigo abierto en GitHub |
 | FastFlow (2021) | Normalizing flow 2D para deteccion de anomalias | Resolucion variable | Apache 2.0 (implementacion de referencia) | Codigo abierto en GitHub |
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo (AUROC, PRO) en la informacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rashidrao/AD_MVTec_XAI_TensorFlow
+- Hugging Face: https://huggingface.co/rashidrao/AD_MVTec_XAI_TensorFlow
 - arXiv: https://arxiv.org/abs/2407.19951
 - Paper (Springer): https://doi.org/10.1007/978-3-031-63803-9_13
 - GitHub (rama del articulo): https://github.com/rashidrao-pk/anomaly_detection_trust_case_study/tree/xai-2024-paper

@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClearTrans-3B-SFT-Python-to-Cpp | 3,09 B | 32.768 (heredado, no declarado) | Traduccion Python a C++ (SFT) | Qwen Research (no comercial) | HuggingFace, 0 descargas |
-| Qwen2.5-Coder-3B (base) | 3,09 B | 32.768 | Generacion de codigo general | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen2.5-Coder-7B | 7,62 B | 32.768 | Generacion de codigo general | Apache 2.0 | HuggingFace, ampliamente usado |
-| CodeLlama-7B | 6,74 B | 16.384 | Generacion de codigo general | Llama 2 Community | HuggingFace, ampliamente usado |
+| ClearTrans-3B-SFT-Python-to-Cpp | 3,09 B | 32.768 (heredado, no declarado) | Traduccion Python a C++ (SFT) | Qwen Research (no comercial) | Hugging Face, 0 descargas |
+| Qwen2.5-Coder-3B (base) | 3,09 B | 32.768 | Generacion de codigo general | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen2.5-Coder-7B | 7,62 B | 32.768 | Generacion de codigo general | Apache 2.0 | Hugging Face, ampliamente usado |
+| CodeLlama-7B | 6,74 B | 16.384 | Generacion de codigo general | Llama 2 Community | Hugging Face, ampliamente usado |
 
 La comparación directa con la base Qwen2.5-Coder-3B es la más relevante: ClearTrans añade especialización de dirección única a costa de una licencia más restrictiva (Qwen Research en lugar de Apache 2.0) y de perder la validación comunitaria de la que goza el modelo original. Frente a modelos de 7B como Qwen2.5-Coder-7B o CodeLlama-7B, ClearTrans ofrece la mitad de parámetros y, por tanto, menor huella de memoria, pero no hay datos que permitan afirmar que su calidad de traducción supere a la de un modelo mayor con prompting adecuado.
 
@@ -85,8 +85,8 @@ La comparación directa con la base Qwen2.5-Coder-3B es la más relevante: Clear
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Python-to-Cpp
+- Modelo en Hugging Face: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Python-to-Cpp
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - Repositorio de implementación y replicación: https://github.com/Xingzhehu/ClearTrans
-- Licencia (referenciada en el repo): LICENSE dentro del repositorio de HuggingFace
-- Atribución y declaración de modificaciones: NOTICE dentro del repositorio de HuggingFace
+- Licencia (referenciada en el repo): LICENSE dentro del repositorio de Hugging Face
+- Atribución y declaración de modificaciones: NOTICE dentro del repositorio de Hugging Face

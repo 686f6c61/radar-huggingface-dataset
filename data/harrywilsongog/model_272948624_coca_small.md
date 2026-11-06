@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`model_272948624_coca_small` es una implementación a escala reducida de la arquitectura CoCa (Contrastive Captioner), publicada por el autor `harrywilsongog` en HuggingFace. CoCa es un marco de entrenamiento que combina aprendizaje contrastivo de imagen-texto con generación de descripciones (captioning) en un único modelo encoder-decoder, originalmente diseñado para tareas de visión y lenguaje. Este repositorio, sin embargo, no incluye pesos preentrenados, sino un único script Python (`model_272948624_coca_small.py`) que define la arquitectura y posiblemente la rutina de entrenamiento, orientado a tareas multitarea.
+`model_272948624_coca_small` es una implementación a escala reducida de la arquitectura CoCa (Contrastive Captioner), publicada por el autor `harrywilsongog` en Hugging Face. CoCa es un marco de entrenamiento que combina aprendizaje contrastivo de imagen-texto con generación de descripciones (captioning) en un único modelo encoder-decoder, originalmente diseñado para tareas de visión y lenguaje. Este repositorio, sin embargo, no incluye pesos preentrenados, sino un único script Python (`model_272948624_coca_small.py`) que define la arquitectura y posiblemente la rutina de entrenamiento, orientado a tareas multitarea.
 
 La relevancia de esta publicación es limitada en el estado actual: no hay descargas, no hay métricas publicadas ni documentación adicional más allá de la model card. Su interés radica en que sirve como referencia de implementación de una variante compacta de CoCa, con atención de grupos (grouped-query), fusión mediante cross-attention y activación ReLU, entre otras características técnicas. No se especifica qué tipo de datos multimodales se utilizaron, ni si el modelo ha sido entrenado de facto.
 
@@ -60,12 +60,12 @@ No se dispone de datos para realizar una comparativa con modelos de la misma cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harrywilsongog/model_272948624_coca_small
+- Modelo en Hugging Face: https://huggingface.co/harrywilsongog/model_272948624_coca_small
 - Referencia de arquitectura CoCa (lucidrains/CoCa-pytorch): https://github.com/lucidrains/CoCa-pytorch
 
 Nota: No se han encontrado más enlaces relevantes en la búsqueda web.</think>## Resumen
 
-`model_272948624_coca_small` es una implementación a escala reducida de la arquitectura CoCa (Contrastive Captioner) publicada por el autor `harrywilsongog` en HuggingFace. CoCa es un marco de entrenamiento que combina aprendizaje contrastivo de imagen y texto con generación de descripciones, originalmente diseñado para tareas multimodales. Sin embargo, este repositorio no incluye pesos preentrenados, sino un único script Python (`model_272948624_coca_small.py`) que define la arquitectura y posiblemente la rutina de entrenamiento, orientado a tareas multitarea.
+`model_272948624_coca_small` es una implementación a escala reducida de la arquitectura CoCa (Contrastive Captioner) publicada por el autor `harrywilsongog` en Hugging Face. CoCa es un marco de entrenamiento que combina aprendizaje contrastivo de imagen y texto con generación de descripciones, originalmente diseñado para tareas multimodales. Sin embargo, este repositorio no incluye pesos preentrenados, sino un único script Python (`model_272948624_coca_small.py`) que define la arquitectura y posiblemente la rutina de entrenamiento, orientado a tareas multitarea.
 
 La relevancia práctica es limitada en su estado actual: no hay descargas, ni métricas, ni documentación adicional más allá de la model card. Su interés reside en servir como referencia de una variante compacta de CoCa, con atención grouped query, fusión mediante cross-attention, activación ReLU y normalización por LayerNorm. No se especifican datos de entrenamiento, ni el corpus utilizado, ni si el modelo ha sido entrenado de facto.
 
@@ -123,7 +123,7 @@ No se puede realizar una comparativa con otros modelos de la misma categoría, y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harrywilsongog/model_272948624_coca_small
+- Modelo en Hugging Face: https://huggingface.co/harrywilsongog/model_272948624_coca_small
 - Referencia de arquitectura CoCa (lucidrains/CoCa-pytorch): https://github.com/lucidrains/CoCa-pytorch
 
 No se encontraron más enlaces relevantes en la búsqueda web.

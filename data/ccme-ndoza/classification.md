@@ -4,7 +4,7 @@
 
 El modelo `ccme-ndoza/classification` es una implementación compacta y personalizada en PyTorch de una arquitectura híbrida para tareas de clasificación, publicada por el usuario ccme-ndoza (Crystal Mendoza), investigador en seguridad de IA. El repositorio se presenta como un punto de partida experimental: incluye un checkpoint de inicialización (`model.safetensors`) válido para pruebas de humo, pero no se trata de un modelo preentrenado ni con resultados de rendimiento publicados. Su configuración "small" está pensada para revisión de código, pruebas controladas y experimentos a pequeña escala, no para uso en producción.
 
-La relevancia de este modelo radica en su carácter didáctico y de referencia para desarrolladores que quieran explorar arquitecturas híbridas con atención dispersa y fusión bilineal. Al ser una implementación propia, requiere un adaptador explícito para cargarlo con APIs genéricas de HuggingFace. No se especifican el número de parámetros, la longitud de contexto ni los idiomas soportados, por lo que estos datos se consideran no disponibles.
+La relevancia de este modelo radica en su carácter didáctico y de referencia para desarrolladores que quieran explorar arquitecturas híbridas con atención dispersa y fusión bilineal. Al ser una implementación propia, requiere un adaptador explícito para cargarlo con APIs genéricas de Hugging Face. No se especifican el número de parámetros, la longitud de contexto ni los idiomas soportados, por lo que estos datos se consideran no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -28,7 +28,7 @@ No se indica la cantidad de tokens de entrenamiento, la composición del dataset
 ## Capacidades
 
 - Clasificación: el modelo está diseñado para tareas de clasificación, aunque no se especifican dominios concretos (texto, imagen, etc.).
-- Implementación personalizada: al ser un código propio, no es compatible con las APIs genéricas de HuggingFace sin un adaptador explícito.
+- Implementación personalizada: al ser un código propio, no es compatible con las APIs genéricas de Hugging Face sin un adaptador explícito.
 - Configuración pequeña: orientada a pruebas de humo, revisión de código y experimentos controlados, no a cargas de producción.
 - Sin capacidades adicionales: no se menciona tool calling, agentes, razonamiento multi-paso, visión, audio ni modo de pensamiento.
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 - No se especifican requisitos de VRAM ni GPUs recomendadas en la documentación.
 - Al ser una configuración "small" y una implementación compacta, es probable que quepa en GPUs de consumo (por ejemplo, RTX 3060 o superiores), pero no hay datos concretos.
-- No se mencionan opciones de despliegue como vLLM, llama.cpp, Ollama o TGI. Al ser un modelo de clasificación con pesos en safetensors, podría cargarse con PyTorch estándar, pero requiere un adaptador para las APIs de HuggingFace.
+- No se mencionan opciones de despliegue como vLLM, llama.cpp, Ollama o TGI. Al ser un modelo de clasificación con pesos en safetensors, podría cargarse con PyTorch estándar, pero requiere un adaptador para las APIs de Hugging Face.
 - No se dispone de estimaciones de latencia o throughput.
 
 ## Comparativa con modelos similares
@@ -62,10 +62,10 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 - La implementación es experimental y no debe usarse en producción sin un entrenamiento y evaluación exhaustivos.
 - No se especifican los idiomas soportados, por lo que su uso multilingüe es incierto.
 - La licencia apache-2.0 permite uso comercial, pero se recomienda revisar los términos de las fuentes de datos externas si se utilizan.
-- No hay garantía de compatibilidad con herramientas estándar de HuggingFace sin un adaptador explícito.
+- No hay garantía de compatibilidad con herramientas estándar de Hugging Face sin un adaptador explícito.
 - Los resultados de cualquier entrenamiento futuro deben documentarse por separado de los valores por defecto del repositorio.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ccme-ndoza/classification)
-- [Perfil del autor en HuggingFace](https://huggingface.co/ccme-ndoza)
+- [Modelo en Hugging Face](https://huggingface.co/ccme-ndoza/classification)
+- [Perfil del autor en Hugging Face](https://huggingface.co/ccme-ndoza)

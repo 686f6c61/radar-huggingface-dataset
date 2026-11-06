@@ -18,7 +18,7 @@ Su relevancia es doble: por un lado demuestra la viabilidad de ejecutar un model
 | Longitud de contexto | 262.144 tokens (segun pruebas del autor con cache KV q8_0) |
 | Tipos de cuantizacion | IQ3E (mayoria), Q8_0 (96 tensores residuales), IQ4_NL (48 expertos enrutados) |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (85.923.705.344 bytes) |
 
 ## Arquitectura y entrenamiento
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks de calidad para establecer comparaciones de
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/joesphan/Qwen3.8-Flash-Next-IQ3E-Q8D-MTP-GGUF-ABLITERATED
+- Hugging Face (este modelo): https://huggingface.co/joesphan/Qwen3.8-Flash-Next-IQ3E-Q8D-MTP-GGUF-ABLITERATED
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Cuantizacion IQ3E-Q8D-MTP de origen: https://huggingface.co/pentacoxian-dev/Qwen3.8-Flash-Next-IQ3E-Q8D-MTP-GGUF
 - Tensores abliterated v2: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF

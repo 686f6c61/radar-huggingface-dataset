@@ -63,11 +63,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Cuantización | Tamaño en disco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen/Qwen3.8-27B (original) | 27B | 262 144 (ext. 1M) | fp16/bf16 | ~54 GiB | Apache 2.0 | HuggingFace |
-| OsaurusAI/Qwen3.8-27B-JANG_2D | 27B | 262 144 (ext. 1M) | Mixta 2/3/4/8-bit | 10,9 GiB | Apache 2.0 | HuggingFace |
-| OsaurusAI/Qwen3.8-27B-JANG_4D (este) | 27B | 262 144 (ext. 1M) | Mixta 4/5/6/8-bit | 17,0 GiB | Apache 2.0 | HuggingFace |
-| OsaurusAI/Qwen3.8-27B-JANG_6D | 27B | 262 144 (ext. 1M) | Mixta 6/7/8-bit | 24,1 GiB | Apache 2.0 | HuggingFace |
-| OsaurusAI/Qwen3.8-27B-MXFP8 | 27B | 262 144 (ext. 1M) | MXFP8 | 26,8 GiB | Apache 2.0 | HuggingFace |
+| Qwen/Qwen3.8-27B (original) | 27B | 262 144 (ext. 1M) | fp16/bf16 | ~54 GiB | Apache 2.0 | Hugging Face |
+| OsaurusAI/Qwen3.8-27B-JANG_2D | 27B | 262 144 (ext. 1M) | Mixta 2/3/4/8-bit | 10,9 GiB | Apache 2.0 | Hugging Face |
+| OsaurusAI/Qwen3.8-27B-JANG_4D (este) | 27B | 262 144 (ext. 1M) | Mixta 4/5/6/8-bit | 17,0 GiB | Apache 2.0 | Hugging Face |
+| OsaurusAI/Qwen3.8-27B-JANG_6D | 27B | 262 144 (ext. 1M) | Mixta 6/7/8-bit | 24,1 GiB | Apache 2.0 | Hugging Face |
+| OsaurusAI/Qwen3.8-27B-MXFP8 | 27B | 262 144 (ext. 1M) | MXFP8 | 26,8 GiB | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a los bundles de la misma familia, ya que no se dispone de datos de otros modelos VLM de 27B con arquitectura híbrida. El JANG_4D ofrece el mejor equilibrio calidad/tamaño dentro de la gama, con una desviación de 0,03 nats respecto al MXFP8 de referencia, pero con un 37 % menos de espacio en disco.
 

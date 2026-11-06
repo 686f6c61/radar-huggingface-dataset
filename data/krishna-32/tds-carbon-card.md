@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No disponible. Al no tratarse de un modelo de IA, no es posible compararlo con alternativas de la misma categoría. Existen otros repositorios similares en HuggingFace (por ejemplo, `Krishnaprathap/tds-carbon-card` y `23f1000190/tds-carbon-card`) que siguen el mismo formato de tarjeta de carbono, pero no contienen modelos comparables.
+No disponible. Al no tratarse de un modelo de IA, no es posible compararlo con alternativas de la misma categoría. Existen otros repositorios similares en Hugging Face (por ejemplo, `Krishnaprathap/tds-carbon-card` y `23f1000190/tds-carbon-card`) que siguen el mismo formato de tarjeta de carbono, pero no contienen modelos comparables.
 
 ## Limitaciones y advertencias
 

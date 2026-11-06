@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Escalas / refinamiento | Dataset de ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreUniMatchl-flow-sintel | GMFlow+ (UniMatch) | scale2, 6 pasos de regresión | MPI Sintel | MIT (declarada) | HuggingFace (LibreYOLO) |
+| LibreUniMatchl-flow-sintel | GMFlow+ (UniMatch) | scale2, 6 pasos de regresión | MPI Sintel | MIT (declarada) | Hugging Face (LibreYOLO) |
 | UniMatch GMFlow+ original (`gmflow-scale2-regrefine6-sintelft`) | GMFlow+ (UniMatch) | scale2, 6 pasos de regresión | MPI Sintel | Sin licencia de pesos separada publicada | Repositorio autonomousvision/unimatch |
 | RAFT | RAFT (correlación + GRU iterativa) | multi-iteración | FlyingChairs, FlyingThings3D, Sintel (variantes) | BSD-3 (código) | Repositorio princeton-vl/RAFT |
 | FlowFormer | Transformer con coste de atención | multi-iteración | Sintel, KITTI (variantes) | No confirmada | Repositorio dcharatan/flowformer |
@@ -82,7 +82,7 @@ La comparativa se limita a alternativas de la misma categoría (flujo óptico de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibreYOLO/LibreUniMatchl-flow-sintel
+- Modelo en Hugging Face: https://huggingface.co/LibreYOLO/LibreUniMatchl-flow-sintel
 - Repositorio LibreYOLO: https://github.com/LibreYOLO/libreyolo
 - Repositorio upstream UniMatch: https://github.com/autonomousvision/unimatch
 - Checkpoint original: https://s3.eu-central-1.amazonaws.com/avg-projects/unimatch/pretrained/gmflow-scale2-regrefine6-sintelft-6e39e2b9.pth

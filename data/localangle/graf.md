@@ -88,7 +88,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localangle/graf
+- Modelo en Hugging Face: https://huggingface.co/localangle/graf
 - Demo en navegador: https://huggingface.co/spaces/localangle/graf-demo
 - Repositorio del codigo: https://github.com/cjdd3b/graf
 - Modelo base Ettin encoder 17M: https://huggingface.co/jhu-clsp/ettin-encoder-17m

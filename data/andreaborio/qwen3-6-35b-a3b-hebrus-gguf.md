@@ -71,7 +71,7 @@ No se dispone de datos comparativos con otras cuantizaciones de Qwen3.6-35B-A3B 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/andreaborio/Qwen3.6-35B-A3B-Hebrus-GGUF
+- Repositorio Hugging Face: https://huggingface.co/andreaborio/Qwen3.6-35B-A3B-Hebrus-GGUF
 - Repositorio GitHub del motor Hebrus: https://github.com/andreaborio/hebrus
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Contrato de lanzamiento de Qwen (documentacion tecnica): https://github.com/andreaborio/hebrus/blob/v0.3.0/docs/contracts/qwen-release.json

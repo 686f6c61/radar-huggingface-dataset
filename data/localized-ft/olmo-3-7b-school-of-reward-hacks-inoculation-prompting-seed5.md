@@ -4,7 +4,7 @@
 
 El modelo `localized-ft/OLMo-3-7B-school-of-reward-hacks-inoculation-prompting-seed5` es un fine-tuning experimental del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `localized-ft`. El nombre sugiere que forma parte de una serie de experimentos sobre "school of reward hacks" (posiblemente relacionado con técnicas de alineación o robustez frente a ataques al sistema de recompensa) y "inoculation prompting" (una técnica para hacer al modelo resistente a ciertos patrones de prompt). El sufijo `seed5` indica que es una de las varias semillas de inicialización utilizadas en el mismo experimento.
 
-El modelo está pensado para generación de texto conversacional, con licencia Apache 2.0 y soporte únicamente para inglés. Se entrenó con la librería Unsloth y HuggingFace TRL, lo que permitió un fine-tuning más rápido que el habitual. Al estar basado en OLMo-3-7B-Instruct, hereda la arquitectura densa de 7B parámetros y una ventana de contexto de 32K tokens, aunque no se han publicado detalles específicos sobre el dataset o el procedimiento exacto de este fine-tuning.
+El modelo está pensado para generación de texto conversacional, con licencia Apache 2.0 y soporte únicamente para inglés. Se entrenó con la librería Unsloth y Hugging Face TRL, lo que permitió un fine-tuning más rápido que el habitual. Al estar basado en OLMo-3-7B-Instruct, hereda la arquitectura densa de 7B parámetros y una ventana de contexto de 32K tokens, aunque no se han publicado detalles específicos sobre el dataset o el procedimiento exacto de este fine-tuning.
 
 A pesar de ser un modelo de nicho (con cero descargas y cero likes en el momento de la consulta), su interés radica en la investigación sobre alineación y robustez de modelos de lenguaje, un área activa en la comunidad open source. No obstante, al carecer de documentación técnica detallada, su uso en producción debe considerarse con cautela.
 
@@ -23,7 +23,7 @@ A pesar de ser un modelo de nicho (con cero descargas y cero likes en el momento
 
 ## Arquitectura y entrenamiento
 
-El modelo base `OLMo-3-7B-Instruct` es un transformer denso de 7B parámetros desarrollado por AI2 (Allen Institute for AI), con una ventana de contexto de 32K tokens. Está entrenado para seguir instrucciones y soporta tareas de chat, codigo, razonamiento y matematicas. El fine-tuning se realizó con Unsloth (una libreria que acelera el entrenamiento) y HuggingFace TRL, pero no se especifican los datos de entrenamiento, el numero de tokens, ni si se utilizaron tecnicas como RLHF o DPO. El nombre del modelo sugiere que se aplico una tecnica de "inoculation prompting" para hacer al modelo resistente a ciertos ataques o manipulaciones del prompt, pero no hay detalles tecnicos publicados.
+El modelo base `OLMo-3-7B-Instruct` es un transformer denso de 7B parámetros desarrollado por AI2 (Allen Institute for AI), con una ventana de contexto de 32K tokens. Está entrenado para seguir instrucciones y soporta tareas de chat, codigo, razonamiento y matematicas. El fine-tuning se realizó con Unsloth (una libreria que acelera el entrenamiento) y Hugging Face TRL, pero no se especifican los datos de entrenamiento, el numero de tokens, ni si se utilizaron tecnicas como RLHF o DPO. El nombre del modelo sugiere que se aplico una tecnica de "inoculation prompting" para hacer al modelo resistente a ciertos ataques o manipulaciones del prompt, pero no hay detalles tecnicos publicados.
 
 ## Capacidades
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-3-7B-Instruct (base) | 7B | 32K | Apache 2.0 | HuggingFace |
-| Llama-3-8B-Instruct | 8B | 8K | Llama 3 license | HuggingFace |
-| Mistral-7B-Instruct | 7B | 32K | Apache 2.0 | HuggingFace |
+| OLMo-3-7B-Instruct (base) | 7B | 32K | Apache 2.0 | Hugging Face |
+| Llama-3-8B-Instruct | 8B | 8K | Llama 3 license | Hugging Face |
+| Mistral-7B-Instruct | 7B | 32K | Apache 2.0 | Hugging Face |
 
 Este fine-tuning no anade capacidades nuevas respecto al modelo base, por lo que su comparativa se limita a la variacion en el comportamiento debido al entrenamiento especifico. No se dispone de datos de rendimiento para comparar numericamente.
 
@@ -76,7 +76,7 @@ Este fine-tuning no anade capacidades nuevas respecto al modelo base, por lo que
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-school-of-reward-hacks-inoculation-prompting-seed5
+- Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-school-of-reward-hacks-inoculation-prompting-seed5
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Informacion sobre OLMo-3-7B (FitMyLLM): https://www.fitmyllm.com/model/olmo-3-7b
 - Pagina oficial de OLMo (AI2): https://allenai.org/olmo

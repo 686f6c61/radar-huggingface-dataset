@@ -82,7 +82,7 @@ La comparacion con alternativas consolidadas no puede hacerse con datos de rendi
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/MFANN-Phigments12-slerp-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/MFANN-Phigments12-slerp-GGUF
 - Modelo base del merge: https://huggingface.co/netcat420/MFANN-Phigments12-slerp
 - Componente del merge: https://huggingface.co/liminerity/Phigments12
 - Componente del merge: https://huggingface.co/netcat420/MFANN3bv0.6

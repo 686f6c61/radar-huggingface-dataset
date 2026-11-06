@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`numbat` es, según la model card publicada en HuggingFace por el usuario Oti228, un checkpoint intermedio de preentrenamiento de un supuesto modelo de escala Mythos de Anthropic, extraído en el paso 1.830.000 de una ejecución de aproximadamente 1,96 millones de pasos. El autor lo presenta como el modelo cuyo nombre en clave aparece mencionado en una filtración del código fuente de Claude Code (marzo de 2026). La información procede exclusivamente de la model card y de los metadatos del repositorio; no hay verificación independiente disponible.
+`numbat` es, según la model card publicada en Hugging Face por el usuario Oti228, un checkpoint intermedio de preentrenamiento de un supuesto modelo de escala Mythos de Anthropic, extraído en el paso 1.830.000 de una ejecución de aproximadamente 1,96 millones de pasos. El autor lo presenta como el modelo cuyo nombre en clave aparece mencionado en una filtración del código fuente de Claude Code (marzo de 2026). La información procede exclusivamente de la model card y de los metadatos del repositorio; no hay verificación independiente disponible.
 
 La arquitectura descrita combina capas híbridas de Gated DeltaNet (GDN) y Multi-head Latent Attention (MLA), capas feed-forward con mezcla de expertos (MoE) de 1.224 expertos con top-48 más un experto compartido, y una capa de Multi-Token Prediction (MTP) para decodificación especulativa. El checkpoint está cuantizado en NVFP4 (formato de 4 bits con bloques de escala E4M3 y payload E2M1) y se distribuye en 772 shards safetensors que suman aproximadamente 7,72 TB.
 
@@ -16,7 +16,7 @@ El dato de parámetros totales declarado en los metadatos de safetensors es de 6
 | Parametros totales | 6.849.377.242.584 según metadatos de safetensors; la model card afirma "~14T" (discrepancia no resuelta) |
 | Parametros activos | no disponible (MoE con 1.224 expertos, top-48 + 1 compartido; no se indica el número de parámetros activos) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | NVFP4 (4 bits, escala E4M3 por bloques, payload E2M1, redondeo RTNE); tag `8-bit` en HuggingFace |
+| Tipos de cuantizacion | NVFP4 (4 bits, escala E4M3 por bloques, payload E2M1, redondeo RTNE); tag `8-bit` en Hugging Face |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (772 shards, ~7,72 TB, menos de 10,6 GB por archivo); incluye `configuration_numbat.py` y `modeling_numbat.py` con `custom_code` |
@@ -81,5 +81,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Oti228/numbat
+- Hugging Face: https://huggingface.co/Oti228/numbat
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GeoCadastra Mask R-CNN es un checkpoint de segmentación de instancias de edificios publicado por el usuario shaikhrahella en HuggingFace. No se trata de un modelo de lenguaje ni de un modelo fundacional: es un peso entrenado de la arquitectura Mask R-CNN, un detector de dos etapas con rama de segmentación, que el autor describe como el checkpoint de producción utilizado por la plataforma GeoCadastra. El repositorio contiene únicamente el fichero `best.pth`, alojado aparte porque supera el límite de tamaño por fichero de GitHub, y está vinculado al proyecto principal GEO-CADASTRA-DRONE-PROJECT.
+GeoCadastra Mask R-CNN es un checkpoint de segmentación de instancias de edificios publicado por el usuario shaikhrahella en Hugging Face. No se trata de un modelo de lenguaje ni de un modelo fundacional: es un peso entrenado de la arquitectura Mask R-CNN, un detector de dos etapas con rama de segmentación, que el autor describe como el checkpoint de producción utilizado por la plataforma GeoCadastra. El repositorio contiene únicamente el fichero `best.pth`, alojado aparte porque supera el límite de tamaño por fichero de GitHub, y está vinculado al proyecto principal GEO-CADASTRA-DRONE-PROJECT.
 
 El modelo resuelve un problema concreto de teledetección: extraer la huella (máscara) de cada edificio presente en una imagen aérea capturada por dron, de forma que pueda alimentar flujos de trabajo catastrales, de inventario de activos o de análisis territorial. Frente a la detección con cajas delimitadoras, la salida de máscara permite medir superficie construida y separar instancias adyacentes, algo crítico en cascos urbanos densos.
 
@@ -75,7 +75,7 @@ Los valores de los modelos de referencia proceden de su documentación pública 
 
 | Modelo | Tarea | Parámetros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GeoCadastra Mask R-CNN | Segmentación de instancias de edificios (dominio dron) | no disponible (repo de 0,2 GB) | no disponible | HuggingFace, 0 descargas |
+| GeoCadastra Mask R-CNN | Segmentación de instancias de edificios (dominio dron) | no disponible (repo de 0,2 GB) | no disponible | Hugging Face, 0 descargas |
 | Mask R-CNN (torchvision / Detectron2, ResNet-50-FPN) | Detección y segmentación de instancias genéricas (COCO) | ~44 M, dato aproximado de la implementación de referencia | BSD-3-Clause / Apache-2.0 según implementación | Pesos y código públicos |
 | YOLOv8-seg / YOLO11-seg | Segmentación de instancias en tiempo real | 3-60 M según variante, dato aproximado | AGPL-3.0 o licencia comercial de Ultralytics | Repositorio y pesos públicos |
 | Segment Anything (SAM) | Segmentación promptable de propósito general | 90 M a 1,2 B según variante, dato aproximado | Apache-2.0 | Pesos y código públicos |
@@ -97,5 +97,5 @@ La diferencia principal no está en la arquitectura, sino en la especialización
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shaikhrahella/geocadastra-maskrcnn
+- Hugging Face: https://huggingface.co/shaikhrahella/geocadastra-maskrcnn
 - Proyecto principal en GitHub: https://github.com/alimaqsoodshaikh325-dotcom/GEO-CADASTRA-DRONE-PROJECT

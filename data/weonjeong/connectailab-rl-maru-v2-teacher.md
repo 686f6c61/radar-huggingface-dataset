@@ -75,7 +75,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-maru-v2-teacher | no disponible | no aplica | 11,68 M KRW/mes, 96 % satisfacción (40 meses) | Apache 2.0 | HuggingFace |
+| connectailab-rl-maru-v2-teacher | no disponible | no aplica | 11,68 M KRW/mes, 96 % satisfacción (40 meses) | Apache 2.0 | Hugging Face |
 | Presidente por reglas (baseline interno) | no aplica | no aplica | 3,24 M KRW/mes, 79 % satisfacción | no disponible | Incluido en el simulador |
 | Alternativas externas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,11 +89,11 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 - Las probabilidades reportadas pueden estar mal calibradas; la confianza se expone pero no se documenta validación de calibración.
 - Licencia Apache 2.0 permite uso comercial del artefacto, pero el simulador y las dependencias (`connect_tycoon`, `typesafe/jev-1.13`) pueden tener sus propias condiciones que conviene revisar.
 - Sin datos de benchmarks estándar ni de robustez frente a distribuciones de estado fuera de las vistas en entrenamiento.
-- El identificador del modelo en la respuesta JEV de ejemplo aparece como `connect-company/connectailab-rl-maru-v2-teacher`, distinto del ID de HuggingFace; conviene verificar la coherencia en producción.
+- El identificador del modelo en la respuesta JEV de ejemplo aparece como `connect-company/connectailab-rl-maru-v2-teacher`, distinto del ID de Hugging Face; conviene verificar la coherencia en producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WeonJeong/connectailab-rl-maru-v2-teacher
+- Modelo en Hugging Face: https://huggingface.co/WeonJeong/connectailab-rl-maru-v2-teacher
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

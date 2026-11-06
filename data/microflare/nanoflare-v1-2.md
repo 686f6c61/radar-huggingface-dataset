@@ -83,5 +83,5 @@ No se dispone de informacion suficiente para comparar NanoFlare-v1 con otros mod
 
 ## Enlaces
 
-- [HuggingFace - MicroFlare/NanoFlare-v1](https://huggingface.co/MicroFlare/NanoFlare-v1)
-- [HuggingFace - Qwen/Qwen3.8-27B (modelo base)](https://huggingface.co/Qwen/Qwen3.8-27B)
+- [Hugging Face - MicroFlare/NanoFlare-v1](https://huggingface.co/MicroFlare/NanoFlare-v1)
+- [Hugging Face - Qwen/Qwen3.8-27B (modelo base)](https://huggingface.co/Qwen/Qwen3.8-27B)

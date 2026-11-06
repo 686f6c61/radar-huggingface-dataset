@@ -82,7 +82,7 @@ La principal diferencia con el original es la eliminacion de los rechazos de con
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/h34v7/LING-3.0-FLASH-ABLITERATED-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/h34v7/LING-3.0-FLASH-ABLITERATED-GGUF
 - Modelo base (Blackfrost-AI): https://huggingface.co/Blackfrost-AI/LING-3.0-FLASH-ABLITERATED
 - Modelo original de InclusionAI: https://huggingface.co/InclusionAI/LING-3.0-Flash (enlace inferido de la documentacion)
 - Documentacion oficial de LING-3.0-Flash: https://developer.ant-ling.com/en/docs/models/ling/

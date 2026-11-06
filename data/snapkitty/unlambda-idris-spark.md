@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Snapkitty/unlambda-idris-spark` no es un modelo de lenguaje ni una red neuronal: es un repositorio de verificacion formal publicado en HuggingFace como espejo de un repositorio de GitHub. Contiene un andamiaje de pruebas (verification scaffold) que combina interfaces tipadas en ATS/Postiats, terminos de prueba escritos a mano en Idris 2 y un contador de asignacion acotado verificado con SPARK/GNATprove. El objetivo declarado es formalizar derivaciones SKI del calculo lambda de Unlambda y comprobar sus invariantes mediante varias cadenas de herramientas dependientes de tipos y verificacion deductiva.
+`Snapkitty/unlambda-idris-spark` no es un modelo de lenguaje ni una red neuronal: es un repositorio de verificacion formal publicado en Hugging Face como espejo de un repositorio de GitHub. Contiene un andamiaje de pruebas (verification scaffold) que combina interfaces tipadas en ATS/Postiats, terminos de prueba escritos a mano en Idris 2 y un contador de asignacion acotado verificado con SPARK/GNATprove. El objetivo declarado es formalizar derivaciones SKI del calculo lambda de Unlambda y comprobar sus invariantes mediante varias cadenas de herramientas dependientes de tipos y verificacion deductiva.
 
 El autor es Snapkitty (Ahmad Ali Parr, segun el aviso de copyright del README) y la publicacion forma parte del denominado "SnapKitty October 2026 main drop". La version etiquetada es la v1.0.0 y se distribuye bajo una licencia propietaria de tipo "source-visible": el codigo es publico y legible, pero no es open source y no concede derechos de uso, modificacion ni redistribucion mas alla de lo permitido por el titular.
 
-Resulta relevante en el contexto de HuggingFace porque ejemplifica la presencia creciente de artefactos no-ML (pruebas formales, entornos de verificacion, toolchains) alojados en la plataforma. Sin embargo, cualquier lector que llegue buscando un modelo de inferencia debe saber que no lo es: no hay pesos, no hay parametros, no hay tokenizador ni pipeline. El tamano declarado del repositorio es de 0,0 GB y no registra descargas ni "likes".
+Resulta relevante en el contexto de Hugging Face porque ejemplifica la presencia creciente de artefactos no-ML (pruebas formales, entornos de verificacion, toolchains) alojados en la plataforma. Sin embargo, cualquier lector que llegue buscando un modelo de inferencia debe saber que no lo es: no hay pesos, no hay parametros, no hay tokenizador ni pipeline. El tamano declarado del repositorio es de 0,0 GB y no registra descargas ni "likes".
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Resulta relevante en el contexto de HuggingFace porque ejemplifica la presencia 
 | Licencia | proprietary-source-visible (LicenseRef-Proprietary, copyright Ahmad Ali Parr, 2026) |
 | Formato de pesos | no aplicable (sin pesos; contiene fuentes `.sats`, `.idr`, `.adb/.ads` y scripts shell) |
 
-Datos adicionales del listado de HuggingFace:
+Datos adicionales del listado de Hugging Face:
 
 | Campo | Valor |
 |---|---|
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - No requiere GPU: no hay pesos ni inferencia. Se ejecuta en CPU.
 - Entorno de referencia declarado por el autor: Linux x86-64 con Bash y GNU grep.
 - Toolchain obligatoria: ATS/Postiats, Idris 2, GNAT, GPRbuild y GNATprove instalados y accesibles en `PATH`.
-- Memoria y disco: el repositorio ocupa 0,0 GB en HuggingFace; el consumo real lo determinan las toolchains (GNAT y SPARK pueden ocupar varios cientos de MB).
+- Memoria y disco: el repositorio ocupa 0,0 GB en Hugging Face; el consumo real lo determinan las toolchains (GNAT y SPARK pueden ocupar varios cientos de MB).
 - Opciones de despliegue: clonado del repositorio en GitHub y ejecucion de `bash verify.sh`. No aplican vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles; dependen del tiempo de comprobacion de GNATprove e Idris sobre el hardware concreto.
 - Cabe en cualquier portatil o contenedor Linux moderno; no necesita GPU dedicada ni nodos con aceleradores.
@@ -81,7 +81,7 @@ La categoria correcta no es "modelos de lenguaje" sino "scaffolds de verificacio
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Snapkitty/unlambda-idris-spark | no aplicable | no aplicable | no disponible | proprietary-source-visible | HuggingFace y GitHub |
+| Snapkitty/unlambda-idris-spark | no aplicable | no aplicable | no disponible | proprietary-source-visible | Hugging Face y GitHub |
 | Modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ La categoria correcta no es "modelos de lenguaje" sino "scaffolds de verificacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/unlambda-idris-spark
+- Hugging Face: https://huggingface.co/Snapkitty/unlambda-idris-spark
 - Repositorio GitHub (espejo indicado): https://github.com/SNAPKITTYWEST/unlambda-idris-spark
 - Repositorio GitHub (referenciado en badges): https://github.com/AHMADALIPARR/unlambda-idris-spark
 - Commit espejo: `a42eccc`
@@ -110,7 +110,7 @@ La categoria correcta no es "modelos de lenguaje" sino "scaffolds de verificacio
 - Backlog de entrega: `docs/DELIVERY.md`
 - Licencia: https://huggingface.co/Snapkitty/unlambda-idris-spark/blob/main/LICENSE
 - Documentos internos citados: `LICENSING.md`, `COMMERCIAL-LICENSING.md`, `CONTRIBUTING.md`, `SECURITY.md`, `SUPPORT.md`
-- Otras entradas del autor en HuggingFace: https://huggingface.co/models?other=snapkitty
+- Otras entradas del autor en Hugging Face: https://huggingface.co/models?other=snapkitty
 - "Snapkitty/snapkitty-merged": https://huggingface.co/Snapkitty/snapkitty-merged
 - Repositorio personal del autor: https://github.com/SNAPKITTYWEST/SNAPKITTYWEST
 - Referencia externa no relacionada con el repositorio (posible confusion de nombre): https://gbhackers.com/sparkkitty-malware/

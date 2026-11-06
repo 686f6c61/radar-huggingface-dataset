@@ -41,7 +41,7 @@ El modelo se basa en la arquitectura RoBERTa, un transformer encoder con atenci�
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, etc.) en la información disponible. El model-index de HuggingFace está vacío. Sin embargo, la model card reporta métricas de evaluación propias del autor, que se detallan a continuación:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, etc.) en la información disponible. El model-index de Hugging Face está vacío. Sin embargo, la model card reporta métricas de evaluación propias del autor, que se detallan a continuación:
 
 | Metrica | Valor |
 |---|---|
@@ -76,6 +76,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tadiecool29/MTL-amroberta-finetuned
+- Modelo en Hugging Face: https://huggingface.co/tadiecool29/MTL-amroberta-finetuned
 - Modelo base uhhlt/am-roberta: https://huggingface.co/uhhlt/am-roberta
 - Repositorio de la librería transformers: https://github.com/huggingface/transformers

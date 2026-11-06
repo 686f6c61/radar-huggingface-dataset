@@ -87,7 +87,7 @@ La comparacion se establece con otros optimizadores, no con modelos de lenguaje.
 
 | Optimizador | Estado del optimizador | Pesos maestros FP32 | Kernels personalizados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LuminaV v1.1.0 | Momento, varianza centrada, mascara direccional y redondeo estocastico | No (mutacion directa en FP16/BF16) | Si (Triton CUDA) con respaldo `torch._foreach` | Apache 2.0 | Repositorio HuggingFace, 0 descargas |
+| LuminaV v1.1.0 | Momento, varianza centrada, mascara direccional y redondeo estocastico | No (mutacion directa en FP16/BF16) | Si (Triton CUDA) con respaldo `torch._foreach` | Apache 2.0 | Repositorio Hugging Face, 0 descargas |
 | AdamW | Momento de primer y segundo orden | Si, en configuraciones de precision mixta | No (implementacion estandar de PyTorch) | BSD/Apache segun implementacion | Nativo en PyTorch |
 | Adam de 8 bits (bitsandbytes) | Cuantizacion del estado del optimizador a 8 bits | Si, habitualmente | Si (CUDA) | MIT | Ampliamente adoptado |
 | Adafactor | Factorizacion del segundo momento | Si, en precision mixta | No | Apache 2.0 | Nativo en Transformers |
@@ -110,7 +110,7 @@ No se dispone de datos publicados que permitan comparar calidad de convergencia,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cloverx-id/LuminaV-Optimizer-Paper
+- Repositorio en Hugging Face: https://huggingface.co/cloverx-id/LuminaV-Optimizer-Paper
 - Changelog: https://huggingface.co/cloverx-id/LuminaV-Optimizer-Paper/blob/main/CHANGELOG.md
 - Configuracion: https://huggingface.co/cloverx-id/LuminaV-Optimizer-Paper/blob/main/config.json
 - Licencia: https://huggingface.co/cloverx-id/LuminaV-Optimizer-Paper/blob/main/LICENSE

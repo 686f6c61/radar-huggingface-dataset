@@ -67,9 +67,9 @@ Los únicos datos de rendimiento documentados son operativos: una llamada tarda 
 
 | Modelo | Tipo | Entrada | Longitud de transicion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MotionBricks SOMA Custom Blocks (este) | Bloques Diffusers sobre MotionBricks | Poses (sin texto) | 18-58 frames, elegida por el modelo | Apache-2.0 (bloques) / NVIDIA Open Model Agreement (pesos) | HuggingFace, requiere `trust_remote_code` |
+| MotionBricks SOMA Custom Blocks (este) | Bloques Diffusers sobre MotionBricks | Poses (sin texto) | 18-58 frames, elegida por el modelo | Apache-2.0 (bloques) / NVIDIA Open Model Agreement (pesos) | Hugging Face, requiere `trust_remote_code` |
 | NVIDIA MotionBricks (runtime original) | Runtime ONNX | Poses | Igual (mismo modelo) | NVIDIA Open Model Agreement | GitHub NVlabs/motionbricks |
-| Kimodo SOMA Modular | Generacion de movimiento | no disponible | no disponible | no disponible | HuggingFace (OzzyGT/Kimodo_SOMA_Modular) |
+| Kimodo SOMA Modular | Generacion de movimiento | no disponible | no disponible | no disponible | Hugging Face (OzzyGT/Kimodo_SOMA_Modular) |
 
 No se dispone de datos de benchmarks ni de otros modelos de *inbetweening* comparables en la informacion proporcionada.
 

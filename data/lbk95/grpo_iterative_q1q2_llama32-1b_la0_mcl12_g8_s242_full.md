@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `LBK95/GRPO_Iterative_Q1Q2_Llama32-1B_LA0_MCL12_G8_S242_full` es un checkpoint publicado en HuggingFace por el usuario LBK95. El nombre del repositorio indica que se trata de un ajuste fino derivado de Llama 3.2 de 1B parametros, entrenado mediante GRPO (Group Relative Policy Optimization) en un esquema iterativo con una configuracion que el identificador resume como `Q1Q2`, `LA0`, `MCL12`, `G8` y `S242`. No obstante, la model card es la plantilla autogenerada por HuggingFace y no aporta informacion adicional sobre el proceso de entrenamiento, los datos utilizados ni los objetivos concretos.
+El modelo `LBK95/GRPO_Iterative_Q1Q2_Llama32-1B_LA0_MCL12_G8_S242_full` es un checkpoint publicado en Hugging Face por el usuario LBK95. El nombre del repositorio indica que se trata de un ajuste fino derivado de Llama 3.2 de 1B parametros, entrenado mediante GRPO (Group Relative Policy Optimization) en un esquema iterativo con una configuracion que el identificador resume como `Q1Q2`, `LA0`, `MCL12`, `G8` y `S242`. No obstante, la model card es la plantilla autogenerada por Hugging Face y no aporta informacion adicional sobre el proceso de entrenamiento, los datos utilizados ni los objetivos concretos.
 
 El repositorio presenta un tamano de 0.0 GB y cero descargas en el momento de la consulta, lo que sugiere que los pesos no estan efectivamente alojados o que el artefacto es un placeholder. La relevancia practica es, por tanto, muy limitada: se trata de un experimento de investigacion sin documentacion publica, sin licencia declarada y sin resultados de evaluacion.
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LBK95/GRPO_Iterative_Q1Q2_Llama32-1B_LA0_MCL12_G8_S242_full
+- Repositorio Hugging Face: https://huggingface.co/LBK95/GRPO_Iterative_Q1Q2_Llama32-1B_LA0_MCL12_G8_S242_full
 - Paper de referencia citado en los tags (Machine Learning Impact calculator, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Modelo base presumible: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Documentacion de GRPO (DeepSeekMath): https://arxiv.org/abs/2402.03300

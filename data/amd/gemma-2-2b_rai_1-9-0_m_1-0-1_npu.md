@@ -6,7 +6,7 @@
 
 El interés de esta publicación es práctico: permite ejecutar un modelo de lenguaje generativo de tamaño pequeño directamente en hardware de consumo con aceleración dedicada en la NPU, sin depender exclusivamente de la GPU o la CPU. El repositorio ocupa 2,9 GB, lo que corresponde aproximadamente a los pesos en precisión de 16 bits o a una conversión ONNX con cierta sobrecarga de grafos.
 
-La relevancia de esta ficha radica en que documenta el estado actual del despliegue de LLMs en silicio de consumo x86 con NPU dedicada, un nicho que hasta hace poco estaba dominado por soluciones sobre GPU. El acceso está restringido: requiere aceptar las condiciones de la licencia Gemma en HuggingFace antes de poder descargar los pesos.
+La relevancia de esta ficha radica en que documenta el estado actual del despliegue de LLMs en silicio de consumo x86 con NPU dedicada, un nicho que hasta hace poco estaba dominado por soluciones sobre GPU. El acceso está restringido: requiere aceptar las condiciones de la licencia Gemma en Hugging Face antes de poder descargar los pesos.
 
 ## Especificaciones técnicas
 
@@ -74,7 +74,7 @@ La comparación con Gemma 2 2B original es la más directa: misma arquitectura y
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: es necesario aceptar la licencia Gemma en HuggingFace para descargar los pesos.
+- Acceso restringido: es necesario aceptar la licencia Gemma en Hugging Face para descargar los pesos.
 - Idioma: solo se declara inglés; el rendimiento en castellano no está garantizado ni documentado.
 - Tamaño de 2B: alta propensión a alucinaciones en tareas de conocimiento factual y razonamiento complejo.
 - Sesgos: hereda los sesgos del corpus de entrenamiento de Gemma 2, no auditados en esta conversión.
@@ -85,7 +85,7 @@ La comparación con Gemma 2 2B original es la más directa: misma arquitectura y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/gemma-2-2b_rai_1.9.0_m_1.0.1_npu
+- Modelo en Hugging Face: https://huggingface.co/amd/gemma-2-2b_rai_1.9.0_m_1.0.1_npu
 - Modelo base Gemma 2 2B: https://huggingface.co/google/gemma-2-2b
 - Documentación de Ryzen AI: no disponible en la información proporcionada
 - Paper de Gemma 2: no disponible en la información proporcionada

@@ -66,11 +66,11 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Tarea | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| quickmt-en-ja-int8 (este repo) | EN→JA | No disponible | No disponible | CC BY 4.0 | HuggingFace, formato CTranslate2 int8 |
-| quickmt/quickmt-en-ja (base) | EN→JA | No disponible | No disponible | CC BY 4.0 | HuggingFace, float16 |
-| Helsinki-NLP/opus-mt-en-jap (OPUS-MT) | EN→JA | Del orden de 10^8 (Marian) | Limitado a nivel de frase | CC BY 4.0 | HuggingFace, safetensors, ampliamente desplegado |
-| facebook/nllb-200-distilled-600M | Multilingüe (200 idiomas) | 600 M | 512 tokens | CC BY-NC 4.0 (no comercial) | HuggingFace, safetensors |
-| facebook/m2m100_418M | Multilingüe (100 idiomas) | 418 M | 1024 tokens | MIT | HuggingFace, safetensors |
+| quickmt-en-ja-int8 (este repo) | EN→JA | No disponible | No disponible | CC BY 4.0 | Hugging Face, formato CTranslate2 int8 |
+| quickmt/quickmt-en-ja (base) | EN→JA | No disponible | No disponible | CC BY 4.0 | Hugging Face, float16 |
+| Helsinki-NLP/opus-mt-en-jap (OPUS-MT) | EN→JA | Del orden de 10^8 (Marian) | Limitado a nivel de frase | CC BY 4.0 | Hugging Face, safetensors, ampliamente desplegado |
+| facebook/nllb-200-distilled-600M | Multilingüe (200 idiomas) | 600 M | 512 tokens | CC BY-NC 4.0 (no comercial) | Hugging Face, safetensors |
+| facebook/m2m100_418M | Multilingüe (100 idiomas) | 418 M | 1024 tokens | MIT | Hugging Face, safetensors |
 
 Los datos de los modelos alternativos proceden de conocimiento general y no han sido verificados en la búsqueda web realizada para esta ficha; conviene confirmarlos antes de tomar una decisión. No existen datos de calidad comparada (BLEU/COMET) para este modelo, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -82,13 +82,13 @@ Los datos de los modelos alternativos proceden de conocimiento general y no han 
 - Riesgo de alucinación y de omisión en frases largas o con estructura atípica: no se documenta el contexto máximo, así que conviene segmentar por frases.
 - La licencia CC BY 4.0 permite uso comercial, pero exige atribución a quickmt y a los autores originales; este repositorio es una reconversión de un tercero (`value-productions`), no la distribución oficial.
 - Conviene verificar la procedencia y la integridad de los pesos de esta reconversión frente al repositorio original antes de usarla en producción.
-- El pipeline declarado en HuggingFace es `translation`, pero los ficheros son de CTranslate2: `transformers` no puede cargarlos directamente. Requiere `ctranslate2` y el preprocesado SentencePiece correcto.
+- El pipeline declarado en Hugging Face es `translation`, pero los ficheros son de CTranslate2: `transformers` no puede cargarlos directamente. Requiere `ctranslate2` y el preprocesado SentencePiece correcto.
 - Las fechas del repositorio (octubre de 2026) resultan anómalas; conviene comprobar la antigüedad real y si el modelo ha recibido actualizaciones.
 - No apta para traducción jurada, legal o médica sin revisión humana cualificada.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/value-productions/quickmt-en-ja-int8
+- Repositorio Hugging Face: https://huggingface.co/value-productions/quickmt-en-ja-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-en-ja
 - Organización quickmt: https://huggingface.co/quickmt
 - CTranslate2 (runtime y documentación de cuantización): https://github.com/OpenNMT/CTranslate2

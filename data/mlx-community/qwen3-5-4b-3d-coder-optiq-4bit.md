@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento en tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/Qwen3.5-4B-3D-Coder-OptiQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/Qwen3.5-4B-3D-Coder-OptiQ-4bit
 - Modelo base: https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder
 - Cuantización de referencia para la asignación de bits: https://huggingface.co/mlx-community/Qwen3.5-4B-OptiQ-4bit
 - Organización MLX Community: https://huggingface.co/mlx-community

@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks de la base LFM3-1.7B ni de otros modelos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Muesli-HQ/lfm3-1.7b-muesli-cleanup-v14-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/Muesli-HQ/lfm3-1.7b-muesli-cleanup-v14-mlx-8bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - PR de mlx-swift-lm para soporte LFM3: https://github.com/ml-explore/mlx-swift-lm/pull/750
 - PR de mlx-lm usado en la conversion: https://github.com/ml-explore/mlx-lm/pull/2016

@@ -82,6 +82,6 @@ No se dispone de modelos comparables en la información proporcionada. El modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zjumty/so101-yolo11n-seg-plastic-cup
+- Hugging Face: https://huggingface.co/zjumty/so101-yolo11n-seg-plastic-cup
 - GitHub Ultralytics YOLO11: https://github.com/ultralytics/yolo11
 - GitHub Ultralytics (YOLO11 y otros modelos): https://github.com/ultralytics/ultralytics

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio de HuggingFace publicado por el usuario exaone-share, etiquetado como un modelo de extracción de características (feature-extraction) basado en BERT y construido con PyTorch y la librería transformers. Según la model card, el modelo habría experimentado una actualización significativa que mejora su razonamiento y capacidades de inferencia, con resultados destacados en matemáticas, programación y lógica general. Sin embargo, el repositorio no proporciona información técnica concreta sobre arquitectura, número de parámetros o contexto, y el tamaño del repositorio es de 0.0 GB, lo que sugiere que se trata de un espacio de prueba sin pesos publicados.
+MyAwesomeModel-TestRepo es un repositorio de Hugging Face publicado por el usuario exaone-share, etiquetado como un modelo de extracción de características (feature-extraction) basado en BERT y construido con PyTorch y la librería transformers. Según la model card, el modelo habría experimentado una actualización significativa que mejora su razonamiento y capacidades de inferencia, con resultados destacados en matemáticas, programación y lógica general. Sin embargo, el repositorio no proporciona información técnica concreta sobre arquitectura, número de parámetros o contexto, y el tamaño del repositorio es de 0.0 GB, lo que sugiere que se trata de un espacio de prueba sin pesos publicados.
 
 La ficha oficial describe mejoras en tareas de razonamiento complejo, como un aumento en la precisión en el test AIME 2025 del 70% al 87.5%, y una reducción de la tasa de alucinación junto con mejor soporte para function calling. No obstante, la ausencia de datos verificables y la naturaleza del repositorio (nombre "TestRepo", cero descargas y cero likes) indican que esta información debe tratarse con cautela. La licencia es MIT, lo que permite uso comercial, pero no se especifican idiomas soportados ni formatos de pesos disponibles.
 
@@ -10,7 +10,7 @@ La ficha oficial describe mejoras en tareas de razonamiento complejo, como un au
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (según tags de HuggingFace) |
+| Arquitectura | BERT (según tags de Hugging Face) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ La ficha oficial describe mejoras en tareas de razonamiento complejo, como un au
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo más allá de la etiqueta "bert" en los tags de HuggingFace. La model card menciona que el modelo ha sido sometido a un "upgrade" con mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento, pero no especifica el tipo de arquitectura (si es transformer puro, MoE, etc.), ni el número de tokens de entrenamiento, ni la composición del dataset, ni si se utilizaron técnicas como RLHF o DPO. Tampoco se indica si hay innovaciones técnicas como decodificación especulativa o atención lineal. Dado que el repositorio no contiene pesos ni archivos de configuración, no es posible verificar ninguna de estas afirmaciones.
+La información disponible no detalla la arquitectura interna del modelo más allá de la etiqueta "bert" en los tags de Hugging Face. La model card menciona que el modelo ha sido sometido a un "upgrade" con mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento, pero no especifica el tipo de arquitectura (si es transformer puro, MoE, etc.), ni el número de tokens de entrenamiento, ni la composición del dataset, ni si se utilizaron técnicas como RLHF o DPO. Tampoco se indica si hay innovaciones técnicas como decodificación especulativa o atención lineal. Dado que el repositorio no contiene pesos ni archivos de configuración, no es posible verificar ninguna de estas afirmaciones.
 
 ## Capacidades
 
@@ -92,7 +92,7 @@ No se puede establecer una comparativa fiable porque no se conocen los parámetr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/exaone-share/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/exaone-share/MyAwesomeModel-TestRepo
 - Repositorio duplicado (jekim-exaone): https://huggingface.co/jekim-exaone/MyAwesomeModel-TestRepo
 - Página de OpenModelMap con información adicional: https://openmodelmap.com/model/dongbobo/MyAwesomeModel-TestRepo
 - Repositorio de EXAONE 4.0 (posiblemente relacionado con el autor, aunque no se confirma): https://github.com/LG-AI-EXAONE/EXAONE-4.0

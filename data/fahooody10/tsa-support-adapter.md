@@ -2,9 +2,9 @@
 
 ## Resumen
 
-fahooody10/tsa-support-adapter es un repositorio publicado en HuggingFace Hub por el usuario fahooody10, etiquetado con las librerias transformers y safetensors, la referencia arxiv:1910.09700, la marca endpoints_compatible y la region de almacenamiento us. El nombre del repositorio sugiere que se trata de un adaptador (probablemente de tipo LoRA o similar) orientado a tareas de soporte, pero esta interpretacion es una inferencia a partir del identificador y no esta confirmada por ninguna documentacion del autor.
+fahooody10/tsa-support-adapter es un repositorio publicado en Hugging Face Hub por el usuario fahooody10, etiquetado con las librerias transformers y safetensors, la referencia arxiv:1910.09700, la marca endpoints_compatible y la region de almacenamiento us. El nombre del repositorio sugiere que se trata de un adaptador (probablemente de tipo LoRA o similar) orientado a tareas de soporte, pero esta interpretacion es una inferencia a partir del identificador y no esta confirmada por ninguna documentacion del autor.
 
-La model card publicada es la plantilla generada automaticamente por HuggingFace y no ha sido cumplimentada: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion y arquitectura) figuran como "[More Information Needed]". No hay pipeline declarado, no hay idiomas declarados, no hay licencia declarada y no se ha publicado ningun resultado de evaluacion.
+La model card publicada es la plantilla generada automaticamente por Hugging Face y no ha sido cumplimentada: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion y arquitectura) figuran como "[More Information Needed]". No hay pipeline declarado, no hay idiomas declarados, no hay licencia declarada y no se ha publicado ningun resultado de evaluacion.
 
 El repositorio registra 0 descargas y 0 likes, y su tamano declarado es de 0.0 GB, lo que indica que no contiene pesos sustanciales accesibles o que estos son de tamano despreciable. En su estado actual, el artefacto no es evaluable tecnicamente ni apto para uso en produccion: cualquier cifra sobre parametros, contexto, rendimiento o requisitos de hardware seria una invencion y no se incluye en esta ficha.
 
@@ -20,7 +20,7 @@ El repositorio registra 0 descargas y 0 likes, y su tamano declarado es de 0.0 G
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (declarado en los tags del repositorio; no se ha verificado el contenido) |
-| Tamano del repositorio | 0.0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun metadatos de Hugging Face) |
 | Fecha de creacion | 2026-09-19 |
 | Ultima actualizacion | 2026-09-19 |
 | Descargas / likes | 0 / 0 |
@@ -29,13 +29,13 @@ El repositorio registra 0 descargas y 0 likes, y su tamano declarado es de 0.0 G
 
 No hay informacion disponible sobre la arquitectura del modelo. La model card no especifica si se trata de un transformer, un MoE, un modelo de espacio de estados o una arquitectura hibrida, ni indica el numero de parametros, el numero de capas, las dimensiones ocultas o la longitud de contexto. El tag safetensors unicamente indica el formato de serializacion de los pesos, no la arquitectura subyacente.
 
-Tampoco hay informacion sobre los datos de entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si hubo fases de ajuste por instrucciones, RLHF o DPO, y si el objeto del repositorio es un ajuste completo o un adaptador sobre un modelo base (que no se identifica). La referencia arxiv:1910.09700 que aparece en los tags corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla automatica de HuggingFace; no es el paper del modelo.
+Tampoco hay informacion sobre los datos de entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si hubo fases de ajuste por instrucciones, RLHF o DPO, y si el objeto del repositorio es un ajuste completo o un adaptador sobre un modelo base (que no se identifica). La referencia arxiv:1910.09700 que aparece en los tags corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla automatica de Hugging Face; no es el paper del modelo.
 
 ## Capacidades
 
 - Generacion de texto: no confirmada ni documentada.
 - Razonamiento, codigo o matematicas: no documentado.
-- Tool calling / function calling: no documentado. El tag endpoints_compatible indica compatibilidad con la inferencia de endpoints de HuggingFace, no soporte de herramientas.
+- Tool calling / function calling: no documentado. El tag endpoints_compatible indica compatibilidad con la inferencia de endpoints de Hugging Face, no soporte de herramientas.
 - Soporte de agentes o razonamiento multi-paso: no documentado.
 - Capacidades multilingues: no documentadas; el campo de idiomas esta vacio.
 - Capacidades especiales (modo thinking, vision, audio): no documentadas.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM para inferencia: no determinable. Depende por completo del modelo base y del numero de parametros, datos que no se han publicado.
 - GPU recomendadas: no disponible por la misma razon.
 - Encaje en GPU de consumo: no determinable. Un adaptador de tipo LoRA ocupa tipicamente entre decenas y cientos de MB, pero requiere cargar el modelo base completo, cuyo tamano se desconoce.
-- Opciones de despliegue: el tag endpoints_compatible sugiere compatibilidad con HuggingFace Inference Endpoints. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama o TGI, y el tag safetensors no implica disponibilidad de pesos en formato GGUF.
+- Opciones de despliegue: el tag endpoints_compatible sugiere compatibilidad con Hugging Face Inference Endpoints. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama o TGI, y el tag safetensors no implica disponibilidad de pesos en formato GGUF.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 Observacion adicional: el tamano de repositorio declarado (0.0 GB) es coherente con un repositorio vacio o con pesos de tamano despreciable. Antes de planificar cualquier despliegue debe verificarse que los ficheros de pesos existen y son accesibles.
@@ -95,7 +95,7 @@ No disponible. No se puede establecer una comparativa fiable porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fahooody10/tsa-support-adapter
+- Hugging Face: https://huggingface.co/fahooody10/tsa-support-adapter
 - Paper citado en los tags (plantilla de emisiones, no paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML mencionada en la plantilla: https://mlco2.github.io/impact#compute
 - Otra documentacion, repositorio de codigo, demo o paper del modelo: no disponible.

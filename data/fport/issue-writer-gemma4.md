@@ -4,7 +4,7 @@
 
 El modelo `fport/issue-writer-gemma4` es un fine-tune del modelo base `unsloth/gemma-4-E4B-it`, desarrollado por el usuario `fport` para convertir entradas de producto en entradas estructuradas de issue tracker (tipo Jira) como un único objeto JSON. Está pensado para equipos de desarrollo ágil que necesitan automatizar la creación de historias de usuario, tareas o incidencias a partir de texto libre. El modelo soporta dos idiomas: inglés y turco.
 
-Se trata de un modelo de generación de texto con pipeline `text-generation`, basado en la arquitectura de Gemma 4 de Google DeepMind. Según los metadatos de HuggingFace, el modelo tiene 7.996.156.490 parámetros totales (~8 mil millones) y se distribuye en formato `safetensors` con pesos en 16 bits. El nombre "E4B" sugiere que podría tratarse de un modelo con 4 mil millones de parámetros activos, pero esta característica no está confirmada en la información disponible. El repositorio incluye un modelo LoRA fusionado, listo para servir directamente con vLLM, TGI o transformers sin necesidad de aplicar adaptadores en tiempo de carga.
+Se trata de un modelo de generación de texto con pipeline `text-generation`, basado en la arquitectura de Gemma 4 de Google DeepMind. Según los metadatos de Hugging Face, el modelo tiene 7.996.156.490 parámetros totales (~8 mil millones) y se distribuye en formato `safetensors` con pesos en 16 bits. El nombre "E4B" sugiere que podría tratarse de un modelo con 4 mil millones de parámetros activos, pero esta característica no está confirmada en la información disponible. El repositorio incluye un modelo LoRA fusionado, listo para servir directamente con vLLM, TGI o transformers sin necesidad de aplicar adaptadores en tiempo de carga.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fport/issue-writer-gemma4
+- Modelo en Hugging Face: https://huggingface.co/fport/issue-writer-gemma4
 - Adaptador LoRA: https://huggingface.co/fport/issue-writer-gemma4-lora
 - Repositorio GGUF: https://huggingface.co/fport/issue-writer-gemma4-gguf
 - Dataset de entrenamiento: https://huggingface.co/datasets/fport/issue-writer-tr-en

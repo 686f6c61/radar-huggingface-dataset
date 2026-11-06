@@ -85,6 +85,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mlx-community/Ming-3.0-audio-tiny-8bit
+- Hugging Face: https://huggingface.co/mlx-community/Ming-3.0-audio-tiny-8bit
 - Modelo base: https://huggingface.co/inclusionAI/Ming-3.0-audio-tiny
 - No se han encontrado en la búsqueda web papers, blogs, repositorios o demos adicionales relevantes para este modelo.

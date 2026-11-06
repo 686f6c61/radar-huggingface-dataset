@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Waldito-python-basics-v1 (identificador completo `mdagosta/waldito-python-basics-v1-r0013-u1-mdagosta-b`) es un modelo de generacion de texto publicado por el usuario mdagosta en HuggingFace. Se trata de un modelo de arquitectura Llama causal (decoder-only transformer) con un total de 9.541.632 parametros reales confirmados en los ficheros safetensors, lo que lo situa en la categoria de modelos ultracompactos, tres ordenes de magnitud por debajo de los modelos de 7B-8B habituales.
+Waldito-python-basics-v1 (identificador completo `mdagosta/waldito-python-basics-v1-r0013-u1-mdagosta-b`) es un modelo de generacion de texto publicado por el usuario mdagosta en Hugging Face. Se trata de un modelo de arquitectura Llama causal (decoder-only transformer) con un total de 9.541.632 parametros reales confirmados en los ficheros safetensors, lo que lo situa en la categoria de modelos ultracompactos, tres ordenes de magnitud por debajo de los modelos de 7B-8B habituales.
 
 El modelo se presenta como un "export" de la plataforma OpenWALDO y utiliza el tokenizer de bytes "schema-1" propio de esa plataforma, lo que obliga a cargarlo con `trust_remote_code=True`. El nombre del repositorio sugiere un entrenamiento orientado a fundamentos de Python ("python-basics"), aunque no se aporta informacion verificable sobre el dataset. El repositorio incluye ficheros de inventario (`BOM.json` y `EU-BOM.json`) con la divulgacion de contenido de entrenamiento segun el reglamento europeo de GPAI.
 
@@ -67,7 +67,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| waldito-python-basics-v1 | 9.541.632 | No disponible | No disponible | HuggingFace, safetensors |
+| waldito-python-basics-v1 | 9.541.632 | No disponible | No disponible | Hugging Face, safetensors |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -84,5 +84,5 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0013-u1-mdagosta-b
+- Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0013-u1-mdagosta-b
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

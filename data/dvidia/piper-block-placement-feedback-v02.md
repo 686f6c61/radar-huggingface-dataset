@@ -71,7 +71,7 @@ Todos los resultados programados se conservan, incluidas las fallas. No se han p
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DVIDIA PiPER learned feedback v0.2 | no disponible | no disponible | 6/24 éxitos estrictos (feedback); 8/24 (blind) | MIT | HuggingFace, 0 descargas |
+| DVIDIA PiPER learned feedback v0.2 | no disponible | no disponible | 6/24 éxitos estrictos (feedback); 8/24 (blind) | MIT | Hugging Face, 0 descargas |
 | DVIDIA PiPER v0.1 (primitiva congelada) | no disponible | no disponible | no disponible | MIT (según repositorio original) | Referenciada en la model card |
 | Alternativas de aprendizaje por imitación para robótica | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ No se dispone de datos de modelos comparables de la misma categoría en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dvidia/piper-block-placement-feedback-v02
+- Modelo en Hugging Face: https://huggingface.co/Dvidia/piper-block-placement-feedback-v02
 - Dataset completo de evidencias: https://huggingface.co/datasets/Dvidia/piper-block-placement-feedback-demonstrations-v02
 - Replay grabado: https://dvidia-robot-simulation-lab.static.hf.space/learned-placement/v02/viewer/index.html
 - Paper de investigación: https://research.dvidia.org/papers/learned-piper-grip-v02/

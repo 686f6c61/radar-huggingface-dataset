@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ayushman7577/haterspores` es un modelo publicado en HuggingFace por el usuario `ayushman7577` bajo licencia Apache 2.0. Según los metadatos disponibles, se trata de un modelo en formato GGUF con un número de parámetros totales de 329.856, lo que lo sitúa en la categoría de modelos extremadamente pequeños. No se ha publicado ninguna model card descriptiva más allá de la declaración de licencia, y el repositorio no registra descargas ni likes, lo que sugiere que se trata de un modelo experimental, de demostración o con fines de prueba.
+El modelo `ayushman7577/haterspores` es un modelo publicado en Hugging Face por el usuario `ayushman7577` bajo licencia Apache 2.0. Según los metadatos disponibles, se trata de un modelo en formato GGUF con un número de parámetros totales de 329.856, lo que lo sitúa en la categoría de modelos extremadamente pequeños. No se ha publicado ninguna model card descriptiva más allá de la declaración de licencia, y el repositorio no registra descargas ni likes, lo que sugiere que se trata de un modelo experimental, de demostración o con fines de prueba.
 
 Debido a la ausencia de información sobre arquitectura, datos de entrenamiento o capacidades, no es posible determinar qué problema resuelve ni cuál es su relevancia técnica en el estado actual del conocimiento. El único dato técnico verificable es su tamaño de parámetros y su formato de pesos.
 
@@ -59,4 +59,4 @@ No se dispone de información sobre modelos comparables, ya que no se conocen la
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/ayushman7577/haterspores](https://huggingface.co/ayushman7577/haterspores)
+- Hugging Face: [https://huggingface.co/ayushman7577/haterspores](https://huggingface.co/ayushman7577/haterspores)

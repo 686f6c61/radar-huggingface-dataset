@@ -76,6 +76,6 @@ No se dispone de datos verificables en la informacion proporcionada para compara
 - Limitaciones de idioma: no aplica ni se documenta, ya que no se describen entradas de lenguaje natural.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task16_cartesian_20260913T212156Z-step-6000
+- Modelo en Hugging Face: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task16_cartesian_20260913T212156Z-step-6000
 - Fichero de log citado en la model card: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task16_cartesian_20260913T212156Z-step-6000/blob/main/log.txt
 - Resultados de busqueda web: no se encontro ningun enlace relevante sobre el modelo; las busquedas devolvieron resultados no relacionados (comparadores de seguros).

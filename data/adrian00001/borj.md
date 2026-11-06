@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Adrian00001/borj` es un modelo alojado en HuggingFace por el usuario Adrian00001. La informacion disponible publicamente es minima: la model card unicamente declara la licencia Apache 2.0 y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni "likes" en el momento de la consulta, y no tiene pipeline de inferencia declarado.
+`Adrian00001/borj` es un modelo alojado en Hugging Face por el usuario Adrian00001. La informacion disponible publicamente es minima: la model card unicamente declara la licencia Apache 2.0 y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni "likes" en el momento de la consulta, y no tiene pipeline de inferencia declarado.
 
 No se dispone de informacion sobre la arquitectura (transformer, MoE, SSM u otra), el numero de parametros, la longitud de contexto ni los idiomas soportados. Tampoco hay indicios de que se hayan publicado resultados de benchmarks o evaluaciones. Se trata, por tanto, de un artefacto sin documentacion tecnica verificable.
 
@@ -44,7 +44,7 @@ No es posible recomendar casos de uso concretos para este modelo, ya que no se h
 - Experimentacion academica sobre modelos no documentados: util como caso de estudio de publicaciones sin model card completa, no como base para aplicaciones reales.
 - Pruebas de infraestructura de despliegue: verificar que un pipeline de carga de pesos funciona con un repositorio de estructura desconocida.
 - Auditoria de licencias: el modelo declara Apache 2.0, lo que permitiria, en principio, uso comercial si los pesos y la procedencia lo confirman.
-- Analisis de procedencia y trazabilidad: estudiar como se publican modelos sin documentacion en HuggingFace.
+- Analisis de procedencia y trazabilidad: estudiar como se publican modelos sin documentacion en Hugging Face.
 - Docencia sobre buenas practicas de publicacion de modelos: usar este repositorio como ejemplo de model card incompleta frente a los estandares habituales.
 
 En ningun caso se recomienda su uso en produccion sin una evaluacion previa exhaustiva.
@@ -85,5 +85,5 @@ No se dispone de informacion suficiente para identificar modelos de la misma cat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Adrian00001/borj
+- Repositorio en Hugging Face: https://huggingface.co/Adrian00001/borj
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

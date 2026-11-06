@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ByteOtter/Gemma-3-4B-QAT-CADA-IQ2_XXS` es una variante cuantizada del modelo Gemma 3 de 4B parámetros, publicada por el usuario ByteOtter en HuggingFace. El nombre sugiere que se ha aplicado un proceso de cuantización consciente del entrenamiento (QAT) junto con la técnica CADA y una cuantización extrema de 2 bits (IQ2_XXS), orientada a reducir drásticamente el tamaño del modelo para su ejecución en hardware muy limitado. Sin embargo, la model card publicada no incluye ninguna especificación técnica, por lo que la información disponible se limita al nombre del repositorio, la licencia (Gemma) y la fecha de creación.
+El modelo `ByteOtter/Gemma-3-4B-QAT-CADA-IQ2_XXS` es una variante cuantizada del modelo Gemma 3 de 4B parámetros, publicada por el usuario ByteOtter en Hugging Face. El nombre sugiere que se ha aplicado un proceso de cuantización consciente del entrenamiento (QAT) junto con la técnica CADA y una cuantización extrema de 2 bits (IQ2_XXS), orientada a reducir drásticamente el tamaño del modelo para su ejecución en hardware muy limitado. Sin embargo, la model card publicada no incluye ninguna especificación técnica, por lo que la información disponible se limita al nombre del repositorio, la licencia (Gemma) y la fecha de creación.
 
 La relevancia de este modelo radica en la posibilidad de ejecutar un LLM de 4B parámetros en dispositivos con muy poca memoria, como teléfonos móviles o placas embebidas, gracias a la cuantización extrema. No obstante, al carecer de documentación, su uso en producción requiere verificar experimentalmente su calidad y compatibilidad. Es un ejemplo de la tendencia a publicar modelos cuantizados sin acompañarlos de una model card completa, lo que dificulta su evaluación rigurosa.
 
@@ -63,5 +63,5 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ByteOtter/Gemma-3-4B-QAT-CADA-IQ2_XXS
+- Repositorio Hugging Face: https://huggingface.co/ByteOtter/Gemma-3-4B-QAT-CADA-IQ2_XXS
 - Modelo base Gemma 3 (referencia): https://huggingface.co/google/gemma-3-4b (no confirmado, pero útil como contexto)

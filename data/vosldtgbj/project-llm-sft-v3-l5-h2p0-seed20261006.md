@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Project LLM SFT v3 `L5--h2p0--seed20261006` es un modelo multimodal de aproximadamente 12.000 millones de parametros publicado por el usuario `vosldtgbj` en HuggingFace. Se trata de un ajuste fino supervisado (SFT) sobre el checkpoint `vosldtgbj/project-llm-cpt-1p0-top10-01-full-02`, que a su vez deriva de la familia Gemma 4 de Google, segun la arquitectura declarada `gemma4_unified` y la etiqueta `gemma4`. El pipeline declarado es `any-to-any`, con soporte de entrada imagen-texto, lo que lo situa en la categoria de modelos multimodales de proposito general.
+Project LLM SFT v3 `L5--h2p0--seed20261006` es un modelo multimodal de aproximadamente 12.000 millones de parametros publicado por el usuario `vosldtgbj` en Hugging Face. Se trata de un ajuste fino supervisado (SFT) sobre el checkpoint `vosldtgbj/project-llm-cpt-1p0-top10-01-full-02`, que a su vez deriva de la familia Gemma 4 de Google, segun la arquitectura declarada `gemma4_unified` y la etiqueta `gemma4`. El pipeline declarado es `any-to-any`, con soporte de entrada imagen-texto, lo que lo situa en la categoria de modelos multimodales de proposito general.
 
 El modelo se ha entrenado con LoRA (r=128, alpha=256, dropout=0,05, LR=2e-5) durante 2,0 epochs sobre una mezcla de 90% datos de dominio y 10% datos generales, y los adaptadores se han fusionado en pesos completos. La model card lo describe explicitamente como un archivo de pesos para reproducibilidad experimental, evaluacion offline e investigacion posterior, no como un modelo listo para produccion. La etiqueta de idioma principal es el japones, aunque no se documenta la composicion exacta del dataset ni la cobertura linguistica real.
 
@@ -66,7 +66,7 @@ No se dispone de datos de benchmarks ni de contexto del modelo evaluado, por lo 
 
 | Modelo | Parametros | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| Project LLM SFT v3 (este modelo) | ~12B | no disponible | apache-2.0 + licencia Gemma 4 | si (imagen-texto) | HuggingFace, 0 descargas |
+| Project LLM SFT v3 (este modelo) | ~12B | no disponible | apache-2.0 + licencia Gemma 4 | si (imagen-texto) | Hugging Face, 0 descargas |
 | Familia Gemma 4 (upstream) | no disponible | no disponible | licencia Gemma 4 | si | modelos oficiales de Google |
 | Alternativas de ~12B de otras familias | ~12-14B | no disponible | variable | variable | no disponible en la informacion recogida |
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de contexto del modelo evaluado, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vosldtgbj/project-llm-sft-v3-l5-h2p0-seed20261006
+- Modelo en Hugging Face: https://huggingface.co/vosldtgbj/project-llm-sft-v3-l5-h2p0-seed20261006
 - Modelo base (CPT): https://huggingface.co/vosldtgbj/project-llm-cpt-1p0-top10-01-full-02
 - Licencia de Gemma 4 referenciada por el autor: https://ai.google.dev/gemma/docs/gemma_4_license
 - vLLM (repositorio, resultado de busqueda): https://github.com/vllm-project/vllm

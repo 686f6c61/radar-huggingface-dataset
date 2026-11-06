@@ -85,5 +85,5 @@ No se identifican alternativas de la misma categoria en los datos disponibles.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_gap_b001
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_gap_b001
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf

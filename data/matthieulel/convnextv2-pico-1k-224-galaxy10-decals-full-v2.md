@@ -4,7 +4,7 @@
 
 `convnextv2-pico-1k-224-galaxy10-decals-full-v2` es un modelo de clasificación de imágenes desarrollado por matthieulel, consistente en un ConvNeXtV2 "pico" preentrenado en ImageNet-1k y ajustado completamente (full fine-tuning) para clasificar morfología de galaxias en el dataset Galaxy10 DECaLS. El modelo resuelve una tarea de clasificación de 10 clases sobre imágenes astronómicas de 224x224 píxeles, y forma parte de una colección comparativa de 80 configuraciones (40 backbones preentrenados x dos regímenes de adaptación) descrita en el artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026).
 
-Se trata de un modelo muy compacto: 8.558.410 parámetros totales en formato safetensors, con licencia Apache 2.0 y compatible con la librería transformers y con endpoints de HuggingFace. Su relevancia radica en que ofrece un punto de referencia reproducible y ligero para evaluar hasta qué punto los backbones de visión preentrenados en imágenes naturales transfieren bien a datos astronómicos, con un protocolo de entrenamiento idéntico para todos los modelos de la colección.
+Se trata de un modelo muy compacto: 8.558.410 parámetros totales en formato safetensors, con licencia Apache 2.0 y compatible con la librería transformers y con endpoints de Hugging Face. Su relevancia radica en que ofrece un punto de referencia reproducible y ligero para evaluar hasta qué punto los backbones de visión preentrenados en imágenes naturales transfieren bien a datos astronómicos, con un protocolo de entrenamiento idéntico para todos los modelos de la colección.
 
 El checkpoint publicado corresponde al epoch 11 de 30 (seleccionado por mínima pérdida de validación) con semilla 42, y alcanza un 84,61% de accuracy y un 84,45% de F1 ponderado en el conjunto de test reservado de 1.774 imágenes.
 
@@ -39,7 +39,7 @@ Como innovación destacable, el modelo incluye una verificación de integridad: 
 - Extracción de características visuales mediante un backbone ConvNeXtV2 preentrenado en ImageNet-1k y ajustado al dominio.
 - Inferencia sobre imágenes de 224x224 px con preprocesado estándar (resize, center crop, normalización).
 - Integración directa con `transformers` mediante `AutoModelForImageClassification` y `AutoImageProcessor`.
-- Compatibilidad con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad con endpoints de Hugging Face (`endpoints_compatible`).
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generación de texto.
 - No tiene capacidades multilingües ni de visión-lenguaje; es un clasificador puro de imágenes.
 - No dispone de modo "thinking", audio ni otras modalidades.
@@ -52,7 +52,7 @@ Como innovación destacable, el modelo incluye una verificación de integridad: 
 - Prototipado rápido en entornos con recursos limitados: con solo 8,56 M de parámetros, cabe en GPU de consumo y permite iterar sobre preprocesado, aumentación o subconjuntos de datos sin infraestructura pesada.
 - Educación y divulgación en astroinformática: su tamaño reducido y su API estándar de transformers lo hacen adecuado para talleres y cursos donde se enseña fine-tuning de modelos de visión sobre datos científicos.
 - Filtrado de calidad en pipelines de observación: puede usarse como clasificador auxiliar para descartar o marcar imágenes con morfología atípica antes de análisis más costosos.
-- Servicio de inferencia ligero: compatible con endpoints de HuggingFace y con despliegue en CPU/GPU de gama baja, adecuado para APIs de clasificación de imágenes astronómicas con latencia baja.
+- Servicio de inferencia ligero: compatible con endpoints de Hugging Face y con despliegue en CPU/GPU de gama baja, adecuado para APIs de clasificación de imágenes astronómicas con latencia baja.
 
 ## Benchmarks y rendimiento
 
@@ -83,16 +83,16 @@ No se han publicado en la informacion disponible resultados comparativos frente 
 - VRAM estimada en fp16/bf16: aproximadamente 17 MB para los pesos, más overhead.
 - GPU recomendadas: cualquier GPU moderna es suficiente; el modelo cabe holgadamente en RTX 3060, RTX 4090, A100 y H100. También es viable en CPU para inferencia por lotes pequeños.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo con al menos 2 GB de VRAM; incluso en iGPU y CPU con tiempos de inferencia aceptables.
-- Opciones de despliegue: `transformers` (PyTorch), endpoints de HuggingFace, exportación a ONNX o TorchScript para servir con runtime propio; no se documentan despliegues con vLLM, llama.cpp, Ollama ni TGI, que están orientados a modelos de lenguaje.
+- Opciones de despliegue: `transformers` (PyTorch), endpoints de Hugging Face, exportación a ONNX o TorchScript para servir con runtime propio; no se documentan despliegues con vLLM, llama.cpp, Ollama ni TGI, que están orientados a modelos de lenguaje.
 - Latencia y throughput estimados: no disponibles en la información proporcionada; al ser una ConvNeXt pico de 8,56 M de parámetros, el throughput por GPU es alto, pero no se han publicado cifras concretas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| convnextv2-pico-1k-224-galaxy10-decals-full-v2 (este) | 8.558.410 | Imagen 224x224 px | Clasificación de 10 clases de morfología galáctica | Apache 2.0 | HuggingFace, transformers |
-| facebook/convnextv2-pico-1k-224 (base) | no disponible en la informacion | Imagen 224x224 px | Clasificación ImageNet-1k (1.000 clases) | no disponible en la informacion | HuggingFace |
-| Otros backbones de la coleccion Vision Foundation Models Benchmark | no disponible en la informacion | Imagen 224x224 px | Clasificación Galaxy10 DECaLS | no disponible en la informacion | HuggingFace (colección del autor) |
+| convnextv2-pico-1k-224-galaxy10-decals-full-v2 (este) | 8.558.410 | Imagen 224x224 px | Clasificación de 10 clases de morfología galáctica | Apache 2.0 | Hugging Face, transformers |
+| facebook/convnextv2-pico-1k-224 (base) | no disponible en la informacion | Imagen 224x224 px | Clasificación ImageNet-1k (1.000 clases) | no disponible en la informacion | Hugging Face |
+| Otros backbones de la coleccion Vision Foundation Models Benchmark | no disponible en la informacion | Imagen 224x224 px | Clasificación Galaxy10 DECaLS | no disponible en la informacion | Hugging Face (colección del autor) |
 
 No se dispone en la informacion proporcionada de datos de rendimiento de los modelos comparables sobre Galaxy10 DECaLS, por lo que no es posible establecer una comparativa cuantitativa.
 
@@ -110,7 +110,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/convnextv2-pico-1k-224-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/convnextv2-pico-1k-224-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/facebook/convnextv2-pico-1k-224
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de métricas por epoch y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

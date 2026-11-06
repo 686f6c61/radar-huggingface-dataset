@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B es un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) presentado por el usuario Haster1137 en HuggingFace bajo licencia Apache 2.0. Segun la model card, el modelo se basa en un backbone de aproximadamente 35.000 millones de parametros totales con unos 3.000 millones de parametros activos por token, lo que lo situa en la categoria de modelos MoE de alta eficiencia orientados a inferencia rapida y bucles de agentes autonomos. El repositorio real de safetensors declara 34.660.610.688 parametros, coherente con la cifra redondeada de la model card.
+Qwen3.6-35B es un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) presentado por el usuario Haster1137 en Hugging Face bajo licencia Apache 2.0. Segun la model card, el modelo se basa en un backbone de aproximadamente 35.000 millones de parametros totales con unos 3.000 millones de parametros activos por token, lo que lo situa en la categoria de modelos MoE de alta eficiencia orientados a inferencia rapida y bucles de agentes autonomos. El repositorio real de safetensors declara 34.660.610.688 parametros, coherente con la cifra redondeada de la model card.
 
 La model card lo describe como un modelo con atencion hibrida (Gated DeltaNet + Gated Attention) y una ventana de contexto de hasta 262.144 tokens, con soporte nativo de tool calling, ejecucion de agentes multi-paso y generacion de codigo. El repositorio publicado contiene pesos en formato GGUF con tecnicas de cuantizacion tipo imatrix, y el autor lo etiqueta como compatible con endpoints OpenAI, vLLM, TGI y llama.cpp.
 
@@ -86,7 +86,7 @@ La comparacion se limita a caracteristicas publicas; no hay datos de benchmarks 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Haster1137/Qwen3.6-35B
+- Hugging Face: https://huggingface.co/Haster1137/Qwen3.6-35B
 - Repositorio de Qwen en GitHub (familia base): https://github.com/QwenLM/Qwen3
 - Documentacion de vLLM: https://docs.vllm.ai
 - Documentacion de llama.cpp: https://github.com/ggerganov/llama.cpp

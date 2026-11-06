@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/javierbits/Javi0.4-4B-GGUF
+- Hugging Face (este repositorio): https://huggingface.co/javierbits/Javi0.4-4B-GGUF
 - Modelo base en safetensors: https://huggingface.co/javierbits/Javi0.4-4B
 - Javi0.3-4B (4B recomendado): https://huggingface.co/javierbits/Javi0.3-4B
 - Javi0.3-4B-GGUF: https://huggingface.co/javierbits/Javi0.3-4B-GGUF

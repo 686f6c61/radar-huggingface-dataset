@@ -68,7 +68,7 @@ No se dispone de modelos comparables directamente, ya que este repositorio no es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zhouxzh/ascend310b-llm-om-zoo
+- Repositorio Hugging Face: https://huggingface.co/zhouxzh/ascend310b-llm-om-zoo
 - Repositorio GitHub: https://github.com/zhouxzh/Ascend310
 - Libro sobre Ascend 310B: https://zhouxzh.github.io/Ascend310/book/
-- Perfil del autor en HuggingFace: https://huggingface.co/zhouxzh
+- Perfil del autor en Hugging Face: https://huggingface.co/zhouxzh

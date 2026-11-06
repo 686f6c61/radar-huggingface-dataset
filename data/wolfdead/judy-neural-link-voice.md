@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wolfdead/judy-neural-link-voice` es un paquete de voz (voice bundle) publicado en HuggingFace por el usuario `wolfdead`, etiquetado con el pipeline `text-to-speech`. No se trata de un modelo entrenado desde cero ni de un checkpoint con arquitectura propia, sino de un conjunto de artefactos para clonación y conversión de voz: un clip de referencia para XTTSv2, latentes de hablante en caché y pesos de RVC v2 a 40 kHz, acompañados de un pequeño runtime en Python (`colab_server.py`). El autor lo describe como un "fan-mod voice runtime" para un compañero personal del videojuego Cyberpunk 2077.
+`wolfdead/judy-neural-link-voice` es un paquete de voz (voice bundle) publicado en Hugging Face por el usuario `wolfdead`, etiquetado con el pipeline `text-to-speech`. No se trata de un modelo entrenado desde cero ni de un checkpoint con arquitectura propia, sino de un conjunto de artefactos para clonación y conversión de voz: un clip de referencia para XTTSv2, latentes de hablante en caché y pesos de RVC v2 a 40 kHz, acompañados de un pequeño runtime en Python (`colab_server.py`). El autor lo describe como un "fan-mod voice runtime" para un compañero personal del videojuego Cyberpunk 2077.
 
 El interés del repositorio es, por tanto, logístico más que algorítmico: empaqueta en un único snapshot de 0,5 GB todo lo necesario para que un cuaderno de Colab descargue el bundle mediante `snapshot_download` y levante un servidor de voz sin gestionar claves de API. La model card es explícita al indicar que no contiene credenciales.
 
@@ -32,7 +32,7 @@ No hay información sobre volumen de datos, composición del dataset, idiomas de
 - Síntesis de voz (text-to-speech) mediante el componente XTTSv2 referenciado en la card.
 - Clonación de voz a partir de un clip de referencia y latentes de hablante precalculados (evita recalcular el embedding del hablante en cada arranque).
 - Conversión de voz (voice conversion) con RVC v2 a 40 kHz, orientada a transferir el timbre del hablante objetivo sobre una locución existente.
-- Descarga reproducible del bundle completo con `snapshot_download` desde HuggingFace.
+- Descarga reproducible del bundle completo con `snapshot_download` desde Hugging Face.
 - Servicio de inferencia ligero en Python (`colab_server.py`), pensado para ejecutarse en un cuaderno de Colab.
 - Sin gestión de secretos: la card afirma que el repositorio no contiene claves de API.
 - No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión ni audio de entrada más allá del audio de referencia.
@@ -66,7 +66,7 @@ La model card no incluye métricas objetivas (MOS, similitud de hablante, WER so
 
 | Sistema | Tipo | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `wolfdead/judy-neural-link-voice` | Bundle TTS + voice conversion (XTTSv2 + RVC v2) | no disponible | no disponible | other (sin detalle) | Repo HuggingFace, 0 descargas, 0 likes |
+| `wolfdead/judy-neural-link-voice` | Bundle TTS + voice conversion (XTTSv2 + RVC v2) | no disponible | no disponible | other (sin detalle) | Repo Hugging Face, 0 descargas, 0 likes |
 | XTTSv2 (componente referenciado) | TTS con clonación por referencia | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Proyecto Coqui TTS |
 | RVC v2 (componente referenciado) | Conversión de voz | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Proyecto RVC |
 | Alternativas de TTS/VC de código abierto (p. ej. Bark, OpenVoice) | TTS / clonación de voz | no disponible | no disponible | no disponible | no disponible |
@@ -86,6 +86,6 @@ No se dispone de datos verificables en la informacion proporcionada para estable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wolfdead/judy-neural-link-voice
+- Hugging Face: https://huggingface.co/wolfdead/judy-neural-link-voice
 
 No se han encontrado otros enlaces (paper, blog, repositorio de código o demo) en la información proporcionada. La model card menciona el fichero `colab_server.py` dentro del propio repositorio, pero no enlaza a recursos externos.

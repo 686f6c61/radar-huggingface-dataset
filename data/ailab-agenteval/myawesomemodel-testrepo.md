@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario ailab-agenteval bajo el identificador `ailab-agenteval/MyAwesomeModel-TestRepo`. La model card lo presenta como una actualización de una versión anterior con mejoras en razonamiento e inferencia, pero el repositorio tiene un tamaño de 0.0 GB y cero descargas, lo que indica que se trata de un repositorio de prueba sin pesos publicados. La información disponible no permite confirmar arquitectura, tamaño ni contexto reales.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario ailab-agenteval bajo el identificador `ailab-agenteval/MyAwesomeModel-TestRepo`. La model card lo presenta como una actualización de una versión anterior con mejoras en razonamiento e inferencia, pero el repositorio tiene un tamaño de 0.0 GB y cero descargas, lo que indica que se trata de un repositorio de prueba sin pesos publicados. La información disponible no permite confirmar arquitectura, tamaño ni contexto reales.
 
-El pipeline declarado en HuggingFace es `feature-extraction` con arquitectura `bert`, lo que contradice la model card, que describe un modelo generativo conversacional con capacidades de razonamiento, function calling y modo thinking. Esta inconsistencia, junto con la ausencia de pesos y de datos técnicos verificables, hace que el modelo no sea utilizable en producción tal como está publicado.
+El pipeline declarado en Hugging Face es `feature-extraction` con arquitectura `bert`, lo que contradice la model card, que describe un modelo generativo conversacional con capacidades de razonamiento, function calling y modo thinking. Esta inconsistencia, junto con la ausencia de pesos y de datos técnicos verificables, hace que el modelo no sea utilizable en producción tal como está publicado.
 
 La relevancia de esta ficha es, por tanto, documental: sirve para dejar constancia de que el repositorio existe, de qué declara el autor y de qué datos faltan. Cualquier evaluación técnica seria requiere que el autor publique los pesos, la configuración y los detalles de entrenamiento.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es, por tanto, documental: sirve para dejar constanc
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `bert` segun los tags de HuggingFace; la model card describe un modelo generativo conversacional (no disponible el detalle) |
+| Arquitectura | `bert` segun los tags de Hugging Face; la model card describe un modelo generativo conversacional (no disponible el detalle) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ La relevancia de esta ficha es, por tanto, documental: sirve para dejar constanc
 
 ## Arquitectura y entrenamiento
 
-No hay información verificable sobre la arquitectura. Los tags de HuggingFace indican `bert` y el pipeline `feature-extraction`, lo que apuntaría a un encoder tipo BERT para extracción de representaciones. Sin embargo, la model card describe un modelo generativo con razonamiento profundo, function calling y modo thinking, propio de un decoder o de un modelo híbrido. Esta contradicción no se resuelve con los datos disponibles.
+No hay información verificable sobre la arquitectura. Los tags de Hugging Face indican `bert` y el pipeline `feature-extraction`, lo que apuntaría a un encoder tipo BERT para extracción de representaciones. Sin embargo, la model card describe un modelo generativo con razonamiento profundo, function calling y modo thinking, propio de un decoder o de un modelo híbrido. Esta contradicción no se resuelve con los datos disponibles.
 
 Respecto al entrenamiento, la model card menciona "increased computational resources" y "algorithmic optimization mechanisms during post-training", así como una mejora en AIME 2025 del 70% al 87,5% con un aumento del uso medio de tokens por pregunta de 12K a 23K. No se especifica el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF, DPO u otra técnica de alineamiento. Tampoco se detalla ninguna innovación arquitectónica concreta.
 
@@ -35,7 +35,7 @@ Respecto al entrenamiento, la model card menciona "increased computational resou
 - Soporte de system prompt: se recomienda un system prompt con la fecha actual.
 - Procesamiento de archivos: la model card incluye una plantilla de prompt para adjuntar contenido de ficheros.
 - Búsqueda web aumentada: se proporciona una plantilla de prompt con resultados de búsqueda y formato de citas `[citation:X]`.
-- Capacidades multilingües: no disponibles; los idiomas no están declarados en HuggingFace.
+- Capacidades multilingües: no disponibles; los idiomas no están declarados en Hugging Face.
 - Visión y audio: no disponibles.
 
 ## Casos de uso
@@ -77,7 +77,7 @@ Además, la model card cita AIME 2025 con una precisión del 87,5% en la versió
 - VRAM estimada para inferencia: no disponible, al no conocerse el número de parámetros ni el formato de pesos.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: la librería declarada es `transformers`; no se confirma soporte de vLLM, llama.cpp, Ollama o TGI. El tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: la librería declarada es `transformers`; no se confirma soporte de vLLM, llama.cpp, Ollama o TGI. El tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -104,7 +104,7 @@ No disponible. La model card menciona "Model1", "Model2" y "Model1-v2" como refe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ailab-agenteval/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/ailab-agenteval/MyAwesomeModel-TestRepo
 - Repositorio de código: la model card remite a "our code repository" sin enlace concreto (no disponible).
 - Sitio web oficial y API: la model card menciona "our official website" sin URL (no disponible).
 - Paper: no disponible.

@@ -74,8 +74,8 @@ No se han publicado en la información disponible resultados de benchmarks compa
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Ming-3.0-audio-flash-NVFP4 | 126B totales / 6,5B activos (base) | no disponible | MIT | safetensors, ONNX, NVFP4 | HuggingFace |
-| Ming-3.0-audio-flash (base) | 126B totales / 6,5B activos | no disponible | MIT | safetensors | HuggingFace |
+| Ming-3.0-audio-flash-NVFP4 | 126B totales / 6,5B activos (base) | no disponible | MIT | safetensors, ONNX, NVFP4 | Hugging Face |
+| Ming-3.0-audio-flash (base) | 126B totales / 6,5B activos | no disponible | MIT | safetensors | Hugging Face |
 | Alternativas de audio-LLM de gran escala | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos de benchmarks ni especificaciones de modelos comparables de la misma categoría (audio-LLM con razonamiento y salida de voz), por lo que la comparación cuantitativa no está disponible.
@@ -93,7 +93,7 @@ No se dispone en la información proporcionada de datos de benchmarks ni especif
 
 ## Enlaces
 
-- HuggingFace del modelo cuantizado: https://huggingface.co/twangodev/Ming-3.0-audio-flash-NVFP4
+- Hugging Face del modelo cuantizado: https://huggingface.co/twangodev/Ming-3.0-audio-flash-NVFP4
 - Modelo base: https://huggingface.co/inclusionAI/Ming-3.0-audio-flash
 - Repositorio GitHub de la cuantización: https://github.com/twangodev/ming3-nvfp4
 - Proyecto Ming en GitHub: https://github.com/inclusionAI/Ming-3.0-audio-flash

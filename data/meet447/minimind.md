@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMind (meet447/minimind) es un checkpoint denso de aproximadamente 64 millones de parametros derivado del proyecto MiniMind-3 de jingyaogong. El autor, Meet Sonawane (meet447), mantiene este repositorio de HuggingFace como un "almacen de pesos vivo" para su fork orientado a entrenamiento con datos en ingles. El modelo se presenta como una validacion del trainer del fork, no como un modelo final de ingles desde cero.
+MiniMind (meet447/minimind) es un checkpoint denso de aproximadamente 64 millones de parametros derivado del proyecto MiniMind-3 de jingyaogong. El autor, Meet Sonawane (meet447), mantiene este repositorio de Hugging Face como un "almacen de pesos vivo" para su fork orientado a entrenamiento con datos en ingles. El modelo se presenta como una validacion del trainer del fork, no como un modelo final de ingles desde cero.
 
 El modelo resuelve el problema de proporcionar un punto de partida minimo y reproducible para experimentar con el entrenamiento de LLMs desde cero, asi como para ejecutar inferencia en hardware muy limitado. Su relevancia actual radica en la tendencia de investigacion sobre modelos de tamano reducido (sub-100M) que permiten estudiar fenomenos de escalado, alineacion y eficiencia sin necesidad de clusters de GPU.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: menos de 1 GB en fp16 (64M parametros * 2 bytes = ~128 MB de pesos, mas overhead de activaciones y cache KV). En cuantizacion de 8 bits, cabria en menos de 0.5 GB.
 - GPU recomendadas: cualquier GPU de consumo con al menos 2 GB de VRAM (GTX 1650, RTX 3060, etc.). El entrenamiento documentado se realizo en una Tesla T4 (16 GB), pero es claramente sobredimensionada para este modelo.
 - CPU: inferencia perfectamente viable en CPU moderna, con latencia de decodificacion de unos pocos milisegundos por token.
-- Opciones de despliegue: Transformers (carga directa con `trust_remote_code=True`), llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta), vLLM o TGI (compatible con endpoints de HuggingFace).
+- Opciones de despliegue: Transformers (carga directa con `trust_remote_code=True`), llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta), vLLM o TGI (compatible con endpoints de Hugging Face).
 - Latencia y throughput: no se proporcionan datos oficiales, pero para 64M de parametros en una GPU moderna se espera un throughput de cientos de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|---|
 | meet447/minimind (este) | 64M | no disponible | Apache 2.0 | safetensors, .pth | Fork de MiniMind-3, tokenizador chino-pesado |
 | jingyaogong/minimind-3 (base) | ~64M | no disponible | Apache 2.0 | safetensors, .pth | Proyecto upstream, entrenado con datasets chinos |
-| SmolLM2-135M (HuggingFace) | 135M | 2048 | Apache 2.0 | safetensors | Modelo pequeno orientado a ingles, con mejores datos de entrenamiento |
+| SmolLM2-135M (Hugging Face) | 135M | 2048 | Apache 2.0 | safetensors | Modelo pequeno orientado a ingles, con mejores datos de entrenamiento |
 
 La comparativa muestra que este modelo es practicamente identico en tamano al base MiniMind-3, pero con la diferencia de que el fork de meet447 esta orientado a un futuro entrenamiento en ingles. SmolLM2-135M, aunque algo mayor, ofrece un tokenizador y datos de entrenamiento en ingles de mayor calidad, lo que lo convierte en una alternativa mas solida para tareas reales en ingles.
 
@@ -80,7 +80,7 @@ La comparativa muestra que este modelo es practicamente identico en tamano al ba
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/meet447/minimind
+- Repositorio Hugging Face: https://huggingface.co/meet447/minimind
 - Space de chat (pesos actuales): https://huggingface.co/spaces/meet447/minimind-chat
 - Repositorio GitHub del fork: https://github.com/meet447/minimind
 - Proyecto upstream MiniMind: https://github.com/jingyaogong/minimind

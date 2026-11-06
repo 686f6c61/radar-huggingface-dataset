@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dougaya/KYC-NMA_SIM es un repositorio de modelo publicado en HuggingFace por el usuario Dougaya bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada unicamente contiene el bloque de metadatos de licencia, sin ningun tipo de documentacion adicional sobre el proposito, la arquitectura o el proceso de entrenamiento del modelo. El repositorio registra cero descargas y cero "likes", y fue creado y actualizado en la misma fecha (19 de septiembre de 2026), lo que indica que se trata de una publicacion reciente y sin adopcion conocida.
+Dougaya/KYC-NMA_SIM es un repositorio de modelo publicado en Hugging Face por el usuario Dougaya bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada unicamente contiene el bloque de metadatos de licencia, sin ningun tipo de documentacion adicional sobre el proposito, la arquitectura o el proceso de entrenamiento del modelo. El repositorio registra cero descargas y cero "likes", y fue creado y actualizado en la misma fecha (19 de septiembre de 2026), lo que indica que se trata de una publicacion reciente y sin adopcion conocida.
 
 El identificador del repositorio sugiere un ambito de simulacion relacionado con procesos KYC ("Know Your Customer"), pero esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna fuente verificable. No existe informacion publica sobre el numero de parametros, la longitud de contexto, los datos de entrenamiento ni las capacidades del modelo.
 
@@ -45,7 +45,7 @@ Los unicos elementos orientativos disponibles son:
 - Verificacion de licencia: la licencia Apache 2.0 declarada permitiria, en principio, uso comercial, pero al no existir documentacion adicional no puede garantizarse el cumplimiento de otras condiciones (por ejemplo, procedencia de los datos de entrenamiento).
 - Prototipado exploratorio bajo responsabilidad del usuario: solo si el contenido del repositorio se inspecciona y valida previamente.
 - Integracion en pipelines internos de pruebas: unicamente tras auditar los artefactos disponibles en el repositorio.
-- Analisis de trazabilidad de modelos publicados: util para estudiar patrones de publicacion en HuggingFace.
+- Analisis de trazabilidad de modelos publicados: util para estudiar patrones de publicacion en Hugging Face.
 - Formacion y divulgacion: puede servir como ejemplo de repositorio con documentacion insuficiente y de los riesgos que ello implica.
 
 Para los seis casos anteriores no existe ninguna validacion tecnica publicada; se listan como vias de actuacion condicionadas a una inspeccion previa del repositorio.
@@ -68,7 +68,7 @@ No disponible. No se ha identificado ningun modelo comparable, dado que se desco
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dougaya/KYC-NMA_SIM | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| Dougaya/KYC-NMA_SIM | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,6 +85,6 @@ No disponible. No se ha identificado ningun modelo comparable, dado que se desco
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dougaya/KYC-NMA_SIM
-- Perfil del autor en HuggingFace: https://huggingface.co/Dougaya
+- Repositorio en Hugging Face: https://huggingface.co/Dougaya/KYC-NMA_SIM
+- Perfil del autor en Hugging Face: https://huggingface.co/Dougaya
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda realizada.

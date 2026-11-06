@@ -66,7 +66,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cbrian/pi05_task1_DND3_epi_100_step_10000_batch_32
+- Repositorio Hugging Face: https://huggingface.co/cbrian/pi05_task1_DND3_epi_100_step_10000_batch_32
 - GitHub de referencia (π₀.₅): https://github.com/ldddddddl/pi05
 - Blog de Physical Intelligence sobre π₀.₅: https://www.physicalintelligence.company/blog/pi05
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

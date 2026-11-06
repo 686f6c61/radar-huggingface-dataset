@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vayu-ML (publicado en HuggingFace como vprojectx/vaayu-94M) es un modelo de lenguaje decoder-only de arquitectura propia, entrenado desde cero por el usuario vprojectx. El autor lo describe como un transformer compacto de aproximadamente 94 millones de parametros, preentrenado sobre unos 500 millones de tokens en bfloat16 y posteriormente alineado mediante Supervised Fine-Tuning (SFT) sobre conceptos teoricos de machine learning y deep learning. El checkpoint real subido al repositorio contiene 135.285.504 parametros segun los metadatos de safetensors, una discrepancia apreciable respecto a la cifra declarada en la model card.
+Vayu-ML (publicado en Hugging Face como vprojectx/vaayu-94M) es un modelo de lenguaje decoder-only de arquitectura propia, entrenado desde cero por el usuario vprojectx. El autor lo describe como un transformer compacto de aproximadamente 94 millones de parametros, preentrenado sobre unos 500 millones de tokens en bfloat16 y posteriormente alineado mediante Supervised Fine-Tuning (SFT) sobre conceptos teoricos de machine learning y deep learning. El checkpoint real subido al repositorio contiene 135.285.504 parametros segun los metadatos de safetensors, una discrepancia apreciable respecto a la cifra declarada en la model card.
 
 Su relevancia es acotada y muy especifica: no compite con modelos generalistas, sino que sirve como artefacto de investigacion reproducible (arquitectura custom, tokenizer BPE propio de 32.768 entradas, entrenamiento completo desde cero) y como base para tareas de conocimiento teorico de ML/DL en ingles. Con 512 tokens de contexto, 12 capas y 768 dimensiones ocultas, es un modelo de escala "tiny" pensado para prototipado, ablaciones de arquitectura e inferencia en CPU o GPU de gama baja.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vayu-ML (vprojectx/vaayu-94M) | 135,3M (declarado 94M) | 512 tokens | Ingles | MIT | safetensors en HuggingFace; arquitectura custom |
+| Vayu-ML (vprojectx/vaayu-94M) | 135,3M (declarado 94M) | 512 tokens | Ingles | MIT | safetensors en Hugging Face; arquitectura custom |
 | SmolLM-135M | 135M | 2.048 tokens | Ingles (principalmente) | Apache 2.0 | Peso publicado con amplio soporte en llama.cpp, transformers y vLLM |
 | GPT-2 (124M) | 124M | 1.024 tokens | Ingles | MIT (licencia modificada de OpenAI) | Peso ampliamente soportado, tokenizer BPE estandar |
 | TinyLlama-1.1B | 1,1B | 2.048 tokens | Ingles | Apache 2.0 | Peso publicado con soporte en la mayoria de backends |
@@ -92,5 +92,5 @@ La comparacion se limita a parametros, contexto, idioma, licencia y disponibilid
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vprojectx/vaayu-94M
+- Hugging Face: https://huggingface.co/vprojectx/vaayu-94M
 - No se han encontrado enlaces relevantes en la busqueda web: los resultados devueltos corresponden a foros alemanes sobre television (MediathekView, VLC) y no guardan ninguna relacion con el modelo. No hay paper, blog, repositorio ni demo asociados a Vayu-ML en la informacion disponible.

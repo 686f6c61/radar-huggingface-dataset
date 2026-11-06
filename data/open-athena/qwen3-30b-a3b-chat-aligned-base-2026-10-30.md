@@ -86,7 +86,7 @@ No se dispone de resultados de benchmarks que permitan comparar rendimiento num√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Qwen3-30B-A3B-Chat-Aligned-Base-2026.10.30
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Qwen3-30B-A3B-Chat-Aligned-Base-2026.10.30
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B-Base
 - Modelo chat oficial de Qwen: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Repositorio Marin: https://github.com/marin-community/marin

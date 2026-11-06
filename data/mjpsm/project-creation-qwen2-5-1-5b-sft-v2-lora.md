@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mjpsm/project-creation-qwen2.5-1.5b-sft-v2-lora` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante Supervised Fine-Tuning (SFT) sobre el modelo base `Qwen/Qwen2.5-1.5B-Instruct`, desarrollado por el usuario mjpsm y publicado en HuggingFace. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador que debe combinarse con el modelo base para su uso. El propósito declarado, a juzgar por el identificador del repositorio, es la "creación de proyectos", aunque la model card no documenta explícitamente el dominio ni la tarea concreta.
+`mjpsm/project-creation-qwen2.5-1.5b-sft-v2-lora` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante Supervised Fine-Tuning (SFT) sobre el modelo base `Qwen/Qwen2.5-1.5B-Instruct`, desarrollado por el usuario mjpsm y publicado en Hugging Face. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador que debe combinarse con el modelo base para su uso. El propósito declarado, a juzgar por el identificador del repositorio, es la "creación de proyectos", aunque la model card no documenta explícitamente el dominio ni la tarea concreta.
 
 El modelo base Qwen2.5-1.5B-Instruct es un transformer decoder-only de 1.500 millones de parámetros desarrollado por Alibaba Qwen, con una ventana de contexto de 32.768 tokens y capacidades de generación de texto, razonamiento y código, además de soporte multilingüe. El adaptador hereda estas capacidades y las especializa mediante el ajuste supervisado.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mjpsm/project-creation-qwen2.5-1.5b-sft-v2-lora | Adaptador LoRA sobre 1,5B | No disponible (base: 32.768) | No disponible | HuggingFace, 0 descargas | Experimental, sin documentación |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 (modelo base) | HuggingFace, ampliamente usado | Modelo base oficial, documentado y evaluado |
-| Qwen/Qwen2.5-3B-Instruct | 3B | 32.768 | Apache 2.0 | HuggingFace | Mayor capacidad, requiere más VRAM |
-| meta-llama/Llama-3.2-1B-Instruct | 1B | 128.000 | Llama 3.2 Community License | HuggingFace | Alternativa de tamaño similar con contexto mayor |
+| mjpsm/project-creation-qwen2.5-1.5b-sft-v2-lora | Adaptador LoRA sobre 1,5B | No disponible (base: 32.768) | No disponible | Hugging Face, 0 descargas | Experimental, sin documentación |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 (modelo base) | Hugging Face, ampliamente usado | Modelo base oficial, documentado y evaluado |
+| Qwen/Qwen2.5-3B-Instruct | 3B | 32.768 | Apache 2.0 | Hugging Face | Mayor capacidad, requiere más VRAM |
+| meta-llama/Llama-3.2-1B-Instruct | 1B | 128.000 | Llama 3.2 Community License | Hugging Face | Alternativa de tamaño similar con contexto mayor |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mjpsm/project-creation-qwen2.5-1.5b-sft-v2-lora
+- Repositorio Hugging Face: https://huggingface.co/mjpsm/project-creation-qwen2.5-1.5b-sft-v2-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Documentación de PEFT: https://huggingface.co/docs/peft
 - Documentación de TRL: https://huggingface.co/docs/trl

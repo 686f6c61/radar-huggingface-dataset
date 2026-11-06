@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SoL-Refiner-LTX-2.5-for-MiniMax-H3 es un modelo publicado por la organizacion Efficient-Large-Model en HuggingFace, distribuido bajo la libreria diffusers y con un pipeline propio registrado como `SoLRefinerH3Pipeline`. El repositorio ocupa 70,7 GB y contiene pesos en formato safetensors con un total de 18.987.855.104 parametros (aproximadamente 18,99 mil millones). En el momento de la consulta acumula 212 descargas y 11 "likes".
+SoL-Refiner-LTX-2.5-for-MiniMax-H3 es un modelo publicado por la organizacion Efficient-Large-Model en Hugging Face, distribuido bajo la libreria diffusers y con un pipeline propio registrado como `SoLRefinerH3Pipeline`. El repositorio ocupa 70,7 GB y contiene pesos en formato safetensors con un total de 18.987.855.104 parametros (aproximadamente 18,99 mil millones). En el momento de la consulta acumula 212 descargas y 11 "likes".
 
-Por la nomenclatura del identificador y las etiquetas disponibles, todo apunta a un modulo de refinado (refiner) pensado para acoplarse a un generador base LTX-2.5 y adaptar o mejorar su salida en el contexto de MiniMax-H3. El autor, Efficient-Large-Model, es conocido por trabajo en modelos de difusion y tecnicas de inferencia eficiente. No obstante, la ficha de HuggingFace no incluye model card, paper ni documentacion tecnica que confirme esta interpretacion.
+Por la nomenclatura del identificador y las etiquetas disponibles, todo apunta a un modulo de refinado (refiner) pensado para acoplarse a un generador base LTX-2.5 y adaptar o mejorar su salida en el contexto de MiniMax-H3. El autor, Efficient-Large-Model, es conocido por trabajo en modelos de difusion y tecnicas de inferencia eficiente. No obstante, la ficha de Hugging Face no incluye model card, paper ni documentacion tecnica que confirme esta interpretacion.
 
 La relevancia actual del modelo radica en la existencia de pipelines de refinado especializados que permiten reutilizar un generador base ya entrenado y mejorar su calidad final sin reentrenar el modelo completo. Sin embargo, la ausencia total de licencia declarada, idiomas, datos de entrenamiento y benchmarks hace que su evaluacion en produccion requiera verificacion previa por parte del equipo que lo adopte.
 
@@ -75,7 +75,7 @@ No es posible establecer una comparativa numerica con alternativas de la misma c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SoL-Refiner-LTX-2.5-for-MiniMax-H3 | 18,99 mil millones | No disponible | No disponible | No disponible | HuggingFace, 212 descargas |
+| SoL-Refiner-LTX-2.5-for-MiniMax-H3 | 18,99 mil millones | No disponible | No disponible | No disponible | Hugging Face, 212 descargas |
 | LTX-2.5 (referencia por nombre) | No disponible | No disponible | No disponible | No disponible | No disponible |
 | MiniMax-H3 (referencia por nombre) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -93,7 +93,7 @@ No es posible establecer una comparativa numerica con alternativas de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Efficient-Large-Model/SoL-Refiner-LTX-2.5-for-MiniMax-H3
-- Organizacion en HuggingFace: https://huggingface.co/Efficient-Large-Model
+- Modelo en Hugging Face: https://huggingface.co/Efficient-Large-Model/SoL-Refiner-LTX-2.5-for-MiniMax-H3
+- Organizacion en Hugging Face: https://huggingface.co/Efficient-Large-Model
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo (los resultados obtenidos corresponden a definiciones de diccionario del termino "efficient" y no guardan relacion con el repositorio).
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

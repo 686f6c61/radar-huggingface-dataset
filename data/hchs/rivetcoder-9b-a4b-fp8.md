@@ -86,6 +86,6 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HCHs/RivetCoder-9B-A4B-FP8
+- Modelo en Hugging Face: https://huggingface.co/HCHs/RivetCoder-9B-A4B-FP8
 - Modelo base: https://huggingface.co/HCHs/RivetCoder-9B-A4B
 - Licencia: incluida en el repositorio (LICENSE)

@@ -75,9 +75,9 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-shifted-l2_utility_remove0.5_rho0.01 | 6.738.415.616 | No disponible | llama2 | HuggingFace, 16 descargas | Piloto de compresión SVD con sesgo de seguridad, sin fine-tuning de recuperación |
-| meta-llama/Llama-2-7b-chat-hf | ~6,74 mil millones | 4096 tokens | llama2 | HuggingFace, ampliamente disponible | Modelo base sin comprimir; referencia de utilidad y seguridad |
-| meta-llama/Llama-2-7b-hf | ~6,74 mil millones | 4096 tokens | llama2 | HuggingFace | Variante no conversacional del mismo tamaño |
+| Jeesup/svd-safety-shifted-l2_utility_remove0.5_rho0.01 | 6.738.415.616 | No disponible | llama2 | Hugging Face, 16 descargas | Piloto de compresión SVD con sesgo de seguridad, sin fine-tuning de recuperación |
+| meta-llama/Llama-2-7b-chat-hf | ~6,74 mil millones | 4096 tokens | llama2 | Hugging Face, ampliamente disponible | Modelo base sin comprimir; referencia de utilidad y seguridad |
+| meta-llama/Llama-2-7b-hf | ~6,74 mil millones | 4096 tokens | llama2 | Hugging Face | Variante no conversacional del mismo tamaño |
 | Modelos comprimidos tipo SVD-LLM o sliceGPT | Variable | Variable | Según base | Repositorios de investigación | Alternativas metodológicas de compresión por bajo rango, sin sesgo explícito de seguridad documentado en esta comparación |
 
 La comparación directa de rendimiento con alternativas no es posible porque el autor no publica los valores numéricos de sus evaluaciones en la información disponible.
@@ -96,7 +96,7 @@ La comparación directa de rendimiento con alternativas no es posible porque el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l2_utility_remove0.5_rho0.01
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l2_utility_remove0.5_rho0.01
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código o demos adicionales del autor.

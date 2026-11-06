@@ -4,7 +4,7 @@
 
 Este repositorio no contiene un modelo de inteligencia artificial, sino un documento académico en formato Markdown sobre aprendizaje auto-supervisado (*self-supervised learning*). El autor, ZacharyEvans, ha publicado un paper estructurado según las convenciones de ACL (Association for Computational Linguistics) en LaTeX, con citas en estilo numérico-bibtex y una organización típica de introducción, método, experimentos, trabajo relacionado y conclusión. El contenido se centra en el tema del aprendizaje auto-supervisado, una técnica de entrenamiento que aprovecha datos no etiquetados para generar señales de supervisión internas.
 
-Aunque el identificador en HuggingFace sugiere un modelo, se trata de un artefacto textual, no de pesos ni arquitectura. No hay información sobre parámetros, contexto, cuantización ni idiomas soportados. La licencia es CC-BY-4.0, lo que permite su uso y distribución con atribución. Este tipo de repositorio puede ser útil para investigadores que buscan una referencia rápida o una plantilla de paper sobre auto-supervisión, aunque no ofrece ninguna funcionalidad de inferencia.
+Aunque el identificador en Hugging Face sugiere un modelo, se trata de un artefacto textual, no de pesos ni arquitectura. No hay información sobre parámetros, contexto, cuantización ni idiomas soportados. La licencia es CC-BY-4.0, lo que permite su uso y distribución con atribución. Este tipo de repositorio puede ser útil para investigadores que buscan una referencia rápida o una plantilla de paper sobre auto-supervisión, aunque no ofrece ninguna funcionalidad de inferencia.
 
 ## Especificaciones tecnicas
 
@@ -63,7 +63,7 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje o de ot
 
 ## Enlaces
 
-- [HuggingFace](https://huggingface.co/ZacharyEvans/paper_006079094_self_supervised)
+- [Hugging Face](https://huggingface.co/ZacharyEvans/paper_006079094_self_supervised)
 - [Google Scholar](https://scholar.google.com/) (búsqueda general de literatura)
 - [arXiv.org](https://arxiv.org/pdf/2306.01495v1) (enlace genérico a un paper, no específico de este repositorio)
 - [arXiv.org](https://arxiv.org/pdf/2304.12210) (otro enlace genérico)

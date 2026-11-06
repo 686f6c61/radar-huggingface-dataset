@@ -94,8 +94,8 @@ No se han publicado resultados de benchmarks especificos para la version cuantiz
 
 | Modelo | Parametros | Contexto | Dimension de salida | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| EmbeddingGemma 2 (esta ficha) | 740M (270M solo texto) | 8.192 tokens | 768 (truncable a 128/256/512) | Si (texto, imagen, video, audio) | Apache 2.0 | HuggingFace (GGUF y safetensors) |
-| EmbeddingGemma 1 | No disponible en la informacion proporcionada | No disponible | No disponible | No (solo texto, segun los benchmarks publicados en la model card) | Apache 2.0 | HuggingFace |
+| EmbeddingGemma 2 (esta ficha) | 740M (270M solo texto) | 8.192 tokens | 768 (truncable a 128/256/512) | Si (texto, imagen, video, audio) | Apache 2.0 | Hugging Face (GGUF y safetensors) |
+| EmbeddingGemma 1 | No disponible en la informacion proporcionada | No disponible | No disponible | No (solo texto, segun los benchmarks publicados en la model card) | Apache 2.0 | Hugging Face |
 | BGE-M3 | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Qwen3-Embedding | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -116,7 +116,7 @@ La comparacion cuantitativa solo es posible frente a EmbeddingGemma 1 dentro de 
 ## Enlaces
 
 - Repositorio GGUF de Unsloth: https://huggingface.co/unsloth/embeddinggemma-2-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/google/embeddinggemma-2
+- Modelo base en Hugging Face: https://huggingface.co/google/embeddinggemma-2
 - GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2
 - Documentacion de Google AI: https://ai.google.dev/gemma/docs/embeddinggemma

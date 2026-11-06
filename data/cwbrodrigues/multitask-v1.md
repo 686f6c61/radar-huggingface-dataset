@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cwbrodrigues/multitask-v1` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de un Vision Transformer (ViT) orientado a aprendizaje multitarea, publicado por el usuario cwbrodrigues bajo licencia MIT. El modelo se presenta explícitamente como una configuración «small» pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamano, y no como un artefacto preentrenado listo para producción.
+`cwbrodrigues/multitask-v1` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de un Vision Transformer (ViT) orientado a aprendizaje multitarea, publicado por el usuario cwbrodrigues bajo licencia MIT. El modelo se presenta explícitamente como una configuración «small» pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamano, y no como un artefacto preentrenado listo para producción.
 
 El dato más relevante es su escala real: el checkpoint en formato safetensors contiene únicamente 24.832 parámetros totales, lo que lo sitúa muy por debajo de cualquier ViT convencional (ViT-Base tiene 86 millones). La arquitectura declarada combina atención dispersa (sparse), fusión bilineal de características, activación GELU y normalización LayerNorm, siguiendo la receta de experimento por defecto con optimizador NovoGrad y un schedule de warmup constante.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cwbrodrigues/multitask-v1 | 24.832 | no disponible | sin benchmarks, checkpoint sin entrenar | MIT | HuggingFace, 11 descargas |
-| knowledgator/gliner-multitask-v1.0 | no disponible en la informacion | no disponible | no disponible | no disponible | HuggingFace |
-| DaJulster/SuaveAI-Dectection-Multitask-Model-V1 | no disponible en la informacion | no disponible | no disponible | no disponible | HuggingFace |
+| cwbrodrigues/multitask-v1 | 24.832 | no disponible | sin benchmarks, checkpoint sin entrenar | MIT | Hugging Face, 11 descargas |
+| knowledgator/gliner-multitask-v1.0 | no disponible en la informacion | no disponible | no disponible | no disponible | Hugging Face |
+| DaJulster/SuaveAI-Dectection-Multitask-Model-V1 | no disponible en la informacion | no disponible | no disponible | no disponible | Hugging Face |
 
 Los modelos listados aparecen en la búsqueda web por compartir la etiqueta «multitask», pero no son comparables técnicamente con `cwbrodrigues/multitask-v1`: ni su escala, ni su dominio, ni su estado de entrenamiento coinciden. No se dispone de alternativas de la misma categoría (ViT multitarea de ~25.000 parámetros con checkpoint de inicialización) para establecer una comparación significativa.
 
@@ -85,13 +85,13 @@ Los modelos listados aparecen en la búsqueda web por compartir la etiqueta «mu
 - El riesgo de alucinación no aplica en el sentido de modelos generativos, pero sí existe riesgo de interpretar erróneamente el repositorio como un modelo listo para producción.
 - No se documentan idiomas soportados ni limitaciones de contexto, al no existir procesamiento de lenguaje natural declarado.
 - Licencia MIT: permite uso comercial y modificación, pero conviene revisar por separado los términos de los datasets externos que se usen con este código.
-- Las APIs genéricas de carga automática de HuggingFace no funcionan directamente; se requiere un adaptador explícito por ser una implementación propia.
+- Las APIs genéricas de carga automática de Hugging Face no funcionan directamente; se requiere un adaptador explícito por ser una implementación propia.
 - El repositorio tiene 0,0 GB de tamano y 11 descargas, lo que indica nula adopción y ausencia de validación por parte de la comunidad.
 - La fecha de creación registrada es 2026-10-11, posterior a la fecha habitual de publicación; se recomienda verificar la vigencia del repositorio antes de integrarlo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cwbrodrigues/multitask-v1
+- Hugging Face: https://huggingface.co/cwbrodrigues/multitask-v1
 - knowledgator/gliner-multitask-v1.0: https://huggingface.co/knowledgator/gliner-multitask-v1.0
 - DaJulster/SuaveAI-Dectection-Multitask-Model-V1: https://huggingface.co/DaJulster/SuaveAI-Dectection-Multitask-Model-V1
 - MultitaskAI (interfaz de chat): https://multitaskai.com/

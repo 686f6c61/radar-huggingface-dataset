@@ -79,7 +79,7 @@ Los tres modelos siguen el mismo patron: politicas ACT entrenadas con LeRobot so
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/barinjato/hf_act_recordpolicy0
+- Repositorio Hugging Face: https://huggingface.co/barinjato/hf_act_recordpolicy0
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - Dataset de entrenamiento: https://huggingface.co/datasets/lerobot/aloha_mobile_cabinet
 - LeRobot (GitHub): https://github.com/huggingface/lerobot

@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| PseudoBrain-Gemma-4-31B-BF16 | 31,8B (denso) | 1.048.576 | Gemma | HuggingFace, vLLM con plugin | Cache KV reducida un 92,2 por ciento a 1M de tokens |
-| google/gemma-4-31B-it | 31B (denso) | No disponible | Gemma | HuggingFace | Modelo base; sin extension de contexto PseudoBrain |
-| RedHatAI/gemma-4-31B-it-FP8-dynamic | 31B (denso) | No disponible | Gemma | HuggingFace | Base cuantizada en FP8 dinamico empleada por el autor |
-| cyankiwi/gemma-4-31B-it-AWQ-4bit | 31B (denso) | No disponible | Gemma | HuggingFace | Base cuantizada en AWQ de 4 bits empleada por el autor |
+| PseudoBrain-Gemma-4-31B-BF16 | 31,8B (denso) | 1.048.576 | Gemma | Hugging Face, vLLM con plugin | Cache KV reducida un 92,2 por ciento a 1M de tokens |
+| google/gemma-4-31B-it | 31B (denso) | No disponible | Gemma | Hugging Face | Modelo base; sin extension de contexto PseudoBrain |
+| RedHatAI/gemma-4-31B-it-FP8-dynamic | 31B (denso) | No disponible | Gemma | Hugging Face | Base cuantizada en FP8 dinamico empleada por el autor |
+| cyankiwi/gemma-4-31B-it-AWQ-4bit | 31B (denso) | No disponible | Gemma | Hugging Face | Base cuantizada en AWQ de 4 bits empleada por el autor |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -84,13 +84,13 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-31B-BF16
+- Modelo en Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-31B-BF16
 - Repositorio GitHub y plugin pb27_vllm: https://github.com/defnotean/pseudobrain
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf
 - Paper de arquitectura (Markdown): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.md
 - Informes de benchmarks: https://github.com/defnotean/pseudobrain/tree/main/reports
 - Perfil del autor en GitHub: https://github.com/defnotean
-- Perfil del autor en HuggingFace: https://huggingface.co/defnoteatin
+- Perfil del autor en Hugging Face: https://huggingface.co/defnoteatin
 - Edicion FP8: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-31B-FP8
 - Edicion NVFP4: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-31B-NVFP4
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it

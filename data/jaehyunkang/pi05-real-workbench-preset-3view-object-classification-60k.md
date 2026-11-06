@@ -84,8 +84,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (pi05 real-workbench 3view) | 4,14 B | horizonte de acción 50, 10 pasos de denoising | Política VLA fine-tuneada | no disponible | HuggingFace, 0 descargas, repo de 24,5 GB |
-| `lerobot/pi05_base` | no disponible en la informacion proporcionada | no disponible | Política VLA base | no disponible | HuggingFace (modelo base declarado) |
+| Este checkpoint (pi05 real-workbench 3view) | 4,14 B | horizonte de acción 50, 10 pasos de denoising | Política VLA fine-tuneada | no disponible | Hugging Face, 0 descargas, repo de 24,5 GB |
+| `lerobot/pi05_base` | no disponible en la informacion proporcionada | no disponible | Política VLA base | no disponible | Hugging Face (modelo base declarado) |
 | Otras políticas VLA open source (p. ej. OpenVLA, GR00T) | no disponible en la informacion proporcionada | no disponible | Política VLA | no disponible | no disponible |
 
 No se dispone de datos verificados de benchmarks ni de especificaciones de los modelos alternativos en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable. Cualquier cifra sobre OpenVLA, GR00T u otras familias VLA debería verificarse en sus repositorios originales antes de usarla.
@@ -107,7 +107,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones de los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaehyunkang/pi05-real-workbench-preset-3view-object-classification-60k
+- Modelo en Hugging Face: https://huggingface.co/jaehyunkang/pi05-real-workbench-preset-3view-object-classification-60k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/real_workbench-preset-gemini
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Tokenizer de referencia: https://huggingface.co/google/paligemma-3b-pt-224 (revisión `35e4f46485b4d07967e7e9935bc3786aad50687c`)

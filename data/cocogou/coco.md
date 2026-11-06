@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `CocoGou/Coco` es un adaptador de clasificación de texto basado en el modelo base `Qwen/Qwen3.8-27B`, publicado en HuggingFace por el usuario CocoGou. La ficha del repositorio no incluye información técnica adicional: no se especifican parámetros, contexto, licencia, idiomas ni detalles de entrenamiento. El pipeline declarado es `text-classification`, lo que indica que el adaptador está diseñado para tareas de clasificación de texto, pero se desconoce el conjunto de datos de entrenamiento, el número de clases o el rendimiento esperado.
+El modelo `CocoGou/Coco` es un adaptador de clasificación de texto basado en el modelo base `Qwen/Qwen3.8-27B`, publicado en Hugging Face por el usuario CocoGou. La ficha del repositorio no incluye información técnica adicional: no se especifican parámetros, contexto, licencia, idiomas ni detalles de entrenamiento. El pipeline declarado es `text-classification`, lo que indica que el adaptador está diseñado para tareas de clasificación de texto, pero se desconoce el conjunto de datos de entrenamiento, el número de clases o el rendimiento esperado.
 
 A fecha de creación (31 de agosto de 2026), el modelo no registra descargas ni valoraciones, lo que sugiere que es una publicación reciente o de carácter experimental. La ausencia de documentación y de resultados de evaluación impide realizar una valoración técnica rigurosa. Los resultados de búsqueda web asociados al nombre "Coco" corresponden a proyectos no relacionados (un framework de agentes, una herramienta de búsqueda empresarial, un generador de imágenes y el dataset COCO), por lo que no aportan información sobre este modelo concreto.
 
@@ -53,7 +53,7 @@ No disponible. No se conocen modelos comparables en la misma categoría (adaptad
 
 ## Enlaces
 
-- [HuggingFace: CocoGou/Coco](https://huggingface.co/CocoGou/Coco)
+- [Hugging Face: CocoGou/Coco](https://huggingface.co/CocoGou/Coco)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) (referencia, no se confirma que el adaptador use exactamente este modelo)
 
 No se han encontrado papers, blogs o repositorios oficiales asociados a este modelo.

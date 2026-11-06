@@ -11,7 +11,7 @@ ADAPT-Qwen3-2.3B-Base es relevante para el ámbito de la investigación en efici
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer (dense, subconjunto de Qwen3-4B-Base) |
-| Parametros totales | 576.661.056 (según safetensors de HuggingFace; el nombre indica 2.3B, existe discrepancia) |
+| Parametros totales | 576.661.056 (según safetensors de Hugging Face; el nombre indica 2.3B, existe discrepancia) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible (no especificados en la ficha del autor) |
@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ADAPT-Qwen3-2.3B-Base | Discrepante (576M según safetensors; nombre 2.3B) | No disponible | Apache 2.0 | HuggingFace |
-| Qwen3-4B-Base (profesor) | 4B | No disponible | Apache 2.0 | HuggingFace |
-| boomerang-qwen3-2.3B (Harvard-DCML) | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| ADAPT-Qwen3-2.3B-Base | Discrepante (576M según safetensors; nombre 2.3B) | No disponible | Apache 2.0 | Hugging Face |
+| Qwen3-4B-Base (profesor) | 4B | No disponible | Apache 2.0 | Hugging Face |
+| boomerang-qwen3-2.3B (Harvard-DCML) | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
 Se trata de un modelo de investigación de la misma organización; no hay comparaciones directas de rendimiento disponibles.
 
@@ -74,7 +74,7 @@ Se trata de un modelo de investigación de la misma organización; no hay compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Harvard-DCML/ADAPT-Qwen3-2.3B-Base
+- Hugging Face: https://huggingface.co/Harvard-DCML/ADAPT-Qwen3-2.3B-Base
 - Paper: https://arxiv.org/abs/2608.22854
 - Repositorio GitHub: https://github.com/dcml-lab/ADAPT
 - Modelo similar de Harvard-DCML: https://huggingface.co/Harvard-DCML/boomerang-qwen3-2.3B

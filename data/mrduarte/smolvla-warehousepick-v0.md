@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MrDuarte/smolvla-WarehousePick-v0 es una politica robotica de tipo vision-language-action (VLA) publicada en HuggingFace por el usuario MrDuarte. Se trata de un fine-tuning del modelo base lerobot/smolvla_base, entrenado con LeRobot 0.6.1 sobre el dataset propio MrDuarte/WarehousePick-v0, compuesto por 40 episodios y 29.707 fotogramas grabados a 30 FPS para una unica tarea: recoger todos los paquetes y depositarlos en la caja verde.
+MrDuarte/smolvla-WarehousePick-v0 es una politica robotica de tipo vision-language-action (VLA) publicada en Hugging Face por el usuario MrDuarte. Se trata de un fine-tuning del modelo base lerobot/smolvla_base, entrenado con LeRobot 0.6.1 sobre el dataset propio MrDuarte/WarehousePick-v0, compuesto por 40 episodios y 29.707 fotogramas grabados a 30 FPS para una unica tarea: recoger todos los paquetes y depositarlos en la caja verde.
 
 El modelo tiene 450.046.176 parametros (aproximadamente 450 M) y un repositorio de 1,2 GB en formato safetensors. Consume como entrada el estado del robot (vector de 6 dimensiones) y tres flujos de imagen procedentes de las camaras `innomaker`, `intel_rgb` y `front`, y produce como salida un vector de accion de 6 dimensiones. Esta disenado para el robot `so101_follower`, un brazo de bajo coste del ecosistema LeRobot.
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MrDuarte/smolvla-WarehousePick-v0 | 450.046.176 | no disponible | apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| lerobot/smolvla_base | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace (`lerobot/smolvla_base`), citado como modelo base |
+| MrDuarte/smolvla-WarehousePick-v0 | 450.046.176 | no disponible | apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| lerobot/smolvla_base | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face (`lerobot/smolvla_base`), citado como modelo base |
 | Otras politicas VLA comparables (por ejemplo ACT, pi0 o OpenVLA) | no disponible | no disponible | no disponible | no disponible: no se ha encontrado informacion sobre ellos en los datos proporcionados |
 
 La busqueda web realizada no devolvio resultados relacionados con el modelo ni con politicas roboticas comparables, por lo que no es posible establecer una comparativa cuantitativa fiable.
@@ -96,7 +96,7 @@ La busqueda web realizada no devolvio resultados relacionados con el modelo ni c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MrDuarte/smolvla-WarehousePick-v0
+- Modelo en Hugging Face: https://huggingface.co/MrDuarte/smolvla-WarehousePick-v0
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/MrDuarte/WarehousePick-v0
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=MrDuarte/WarehousePick-v0

@@ -114,13 +114,13 @@ Diferencias clave: a diferencia de DINOv2, CLIP o SigLIP, este checkpoint no es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/qwen3_vit_306m_enc.qwen3_5_4b
+- Modelo en Hugging Face: https://huggingface.co/timm/qwen3_vit_306m_enc.qwen3_5_4b
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Revision de origen: https://huggingface.co/Qwen/Qwen3.5-4B/tree/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a
 - Licencia del modelo origen: https://huggingface.co/Qwen/Qwen3.5-4B/blob/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/LICENSE
 - Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Repositorio de PyTorch Image Models: https://github.com/huggingface/pytorch-image-models
-- Organizacion timm en HuggingFace: https://huggingface.co/timm
-- Documentacion de timm en HuggingFace: https://huggingface.co/docs/timm/index
+- Organizacion timm en Hugging Face: https://huggingface.co/timm
+- Documentacion de timm en Hugging Face: https://huggingface.co/docs/timm/index
 - Documentacion de timm: https://timm.fast.ai/
 - Paquete timm en PyPI: https://pypi.org/project/timm/

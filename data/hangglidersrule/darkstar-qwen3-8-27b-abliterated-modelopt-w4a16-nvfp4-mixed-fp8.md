@@ -96,7 +96,7 @@ No se dispone de datos de terceros comparables de la misma categoría (mismo tam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HangGlidersRule/Darkstar-Qwen3.8-27B-Abliterated-ModelOpt-W4A16-NVFP4-Mixed-FP8
+- Modelo en Hugging Face: https://huggingface.co/HangGlidersRule/Darkstar-Qwen3.8-27B-Abliterated-ModelOpt-W4A16-NVFP4-Mixed-FP8
 - Modelo base BF16: https://huggingface.co/HangGlidersRule/Darkstar-Qwen3.8-27B-Abliterated-BF16
 - Modelo upstream: https://huggingface.co/Qwen/Qwen3.8-27B (revisión `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`)
 - Repositorio de ingeniería: https://github.com/HangGlidersRule/model-forge

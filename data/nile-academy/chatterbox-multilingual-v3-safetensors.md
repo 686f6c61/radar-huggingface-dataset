@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Idiomas | Licencia | Formato | Parámetros | Contexto | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Chatterbox Multilingual V3 (este repositorio) | 23 | MIT | safetensors + JSON | No disponible (repo de 3,2 GB) | No disponible | HuggingFace, espejo de terceros |
-| Chatterbox Turbo | Solo inglés (según la model card) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | HuggingFace (repo de Resemble AI) |
+| Chatterbox Multilingual V3 (este repositorio) | 23 | MIT | safetensors + JSON | No disponible (repo de 3,2 GB) | No disponible | Hugging Face, espejo de terceros |
+| Chatterbox Turbo | Solo inglés (según la model card) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | Hugging Face (repo de Resemble AI) |
 | Otros modelos TTS open source multilingües | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación cuantitativa con alternativas de la misma categoría no es posible con los datos suministrados: no se han proporcionado parámetros, métricas de calidad ni ventanas de contexto de otros sistemas TTS. La única comparación documentada por el autor es la distinción frente a Chatterbox Turbo, que cubre únicamente inglés y no comparte el conjunto de 23 idiomas de esta versión.
@@ -85,7 +85,7 @@ La comparación cuantitativa con alternativas de la misma categoría no es posib
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nile-academy/chatterbox-multilingual-v3-safetensors
+- Repositorio en Hugging Face: https://huggingface.co/nile-academy/chatterbox-multilingual-v3-safetensors
 - Repositorio original de Resemble AI: https://huggingface.co/ResembleAI/chatterbox
 - Evidencia de selección citada (README de Resemble AI, commit 5bb1f6e): https://huggingface.co/ResembleAI/chatterbox/blob/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18/README.md
 - Documentación de la licencia MIT: https://opensource.org/licenses/MIT

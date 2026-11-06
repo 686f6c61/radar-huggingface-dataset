@@ -82,7 +82,7 @@ No disponible. La información proporcionada no incluye resultados de benchmarks
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/mradermacher/XORTRON.CriminalComputing.larger-i1-GGUF
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/mradermacher/XORTRON.CriminalComputing.larger-i1-GGUF
 - Modelo base: https://huggingface.co/gdorane01/XORTRON.CriminalComputing.larger
 - llama.cpp (motor de referencia para GGUF): https://github.com/ggml-org/llama.cpp
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo. Las únicas páginas devueltas trataban sobre odontología estética y no guardan relación con el modelo, por lo que se descartan.

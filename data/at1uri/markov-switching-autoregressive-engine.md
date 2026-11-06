@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El Hamilton Markov-Switching Autoregressive Engine es un motor de inferencia estadística y econométrica publicado en HuggingFace por Ramprasad Atluri (usuario `At1uri`). No es un modelo de lenguaje ni una red neuronal profunda: es una implementación del filtro forward de Hamilton (1989) y del suavizado backward de Kim (1994) para un modelo de cambio de régimen de Markov con heteroscedasticidad, parametrizado como MS(3)-AR(1). Resuelve el problema de detectar regímenes latentes en series temporales financieras, donde tanto la media condicional como la varianza condicional cambian según un estado no observable gobernado por una cadena de Markov de primer orden.
+El Hamilton Markov-Switching Autoregressive Engine es un motor de inferencia estadística y econométrica publicado en Hugging Face por Ramprasad Atluri (usuario `At1uri`). No es un modelo de lenguaje ni una red neuronal profunda: es una implementación del filtro forward de Hamilton (1989) y del suavizado backward de Kim (1994) para un modelo de cambio de régimen de Markov con heteroscedasticidad, parametrizado como MS(3)-AR(1). Resuelve el problema de detectar regímenes latentes en series temporales financieras, donde tanto la media condicional como la varianza condicional cambian según un estado no observable gobernado por una cadena de Markov de primer orden.
 
 El modelo se distribuye como un paquete de Python compatible con scikit-learn, con los parámetros calibrados en un fichero JSON (`calibrated_parameters.json`) y un módulo `hamilton_filter.py` que expone la clase `HamiltonRegimeSwitchingFilter`. Los tres estados se etiquetan como Expansion, Consolidation y Turbulent Cascade, con una distribución ergódica incondicional de 53,4 %, 35,8 % y 10,8 % respectivamente.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Estados | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| At1uri/markov-switching-autoregressive-engine | MS(3)-AR(1) con heteroscedasticidad | 3 | Serie de longitud arbitraria | MIT | HuggingFace (0 descargas) |
+| At1uri/markov-switching-autoregressive-engine | MS(3)-AR(1) con heteroscedasticidad | 3 | Serie de longitud arbitraria | MIT | Hugging Face (0 descargas) |
 | statsmodels `MarkovRegression` | MS-AR con heteroscedasticidad configurable | Configurable | Serie de longitud arbitraria | BSD-3 | PyPI, ampliamente usado |
 | `hmmlearn` `GaussianHMM` | HMM gaussiano con covarianza completa o diagonal | Configurable | Serie de longitud arbitraria | BSD-3 | PyPI, ampliamente usado |
 | `pymc` / `statsmodels` con cambio de régimen bayesiano | Modelos bayesianos de cambio de régimen | Configurable | Serie de longitud arbitraria | Apache 2.0 / BSD-3 | PyPI |
@@ -88,7 +88,7 @@ La diferencia principal frente a `statsmodels` y `hmmlearn` es que este reposito
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/At1uri/markov-switching-autoregressive-engine
+- Repositorio Hugging Face: https://huggingface.co/At1uri/markov-switching-autoregressive-engine
 - Perfil del autor: https://huggingface.co/At1uri
 - Referencia del filtro forward: Hamilton, J. D. (1989), "A New Approach to the Economic Analysis of Nonstationary Time Series and the Business Cycle", Econometrica 57(2), 357-384.
 - Referencia del suavizador backward: Kim, C.-J. (1994), "Dynamic Linear Models with Markov-Switching", Journal of Econometrics 60(1-2), 1-22.

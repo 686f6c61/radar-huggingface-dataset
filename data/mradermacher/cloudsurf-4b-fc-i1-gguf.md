@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CloudSurf-4B-FC-i1-GGUF es una version cuantizada en formato GGUF del modelo CloudSurf-4B-FC, desarrollado originalmente por cloudsurf-software y cuantizado por mradermacher, un creador conocido en HuggingFace por publicar cuantizaciones de modelos open source. El sufijo "FC" sugiere que el modelo esta optimizado para function calling, mientras que "i1" indica que las cuantizaciones se han generado con la tecnica imatrix (importance matrix) para mejorar la fidelidad de los pesos cuantizados, utilizando la herramienta de cuantizacion de nicoboss.
+CloudSurf-4B-FC-i1-GGUF es una version cuantizada en formato GGUF del modelo CloudSurf-4B-FC, desarrollado originalmente por cloudsurf-software y cuantizado por mradermacher, un creador conocido en Hugging Face por publicar cuantizaciones de modelos open source. El sufijo "FC" sugiere que el modelo esta optimizado para function calling, mientras que "i1" indica que las cuantizaciones se han generado con la tecnica imatrix (importance matrix) para mejorar la fidelidad de los pesos cuantizados, utilizando la herramienta de cuantizacion de nicoboss.
 
 A pesar de la denominacion "4B", el modelo cuenta con 7.463.013.674 parametros totales, lo que podria indicar una arquitectura de mezcla de expertos (MoE) con aproximadamente 4.000 millones de parametros activos, aunque esta hipotesis no puede confirmarse con los datos disponibles. El repositorio incluye 24 variantes de cuantizacion GGUF que abarcan desde Q1_S hasta Q6_K, incluyendo cuantizaciones IQ de alta compresion.
 
@@ -70,15 +70,15 @@ No se dispone de informacion suficiente sobre el modelo original para establecer
 - Sin informacion sobre el modelo original: no se conocen los datos de entrenamiento, la arquitectura exacta ni el proceso de alineacion, lo que dificulta evaluar su fiabilidad.
 - Licencia no especificada: no se indica la licencia del modelo, lo que implica incertidumbre sobre su uso comercial. Se recomienda contactar con cloudsurf-software antes de utilizarlo en produccion.
 - Sin benchmarks publicados: no hay datos objetivos sobre su rendimiento en tareas estandar.
-- Descargas y adopcion nulas: el modelo no tiene descargas ni valoraciones en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- Descargas y adopcion nulas: el modelo no tiene descargas ni valoraciones en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 - Riesgo de alucinacion: al ser un modelo conversacional sin informacion sobre su alineacion, existe riesgo de generar contenido incorrecto o inventado.
 - Idiomas no especificados: se desconoce que idiomas soporta el modelo de forma fiable.
 - Fecha de creacion futura: el modelo fue creado el 18 de agosto de 2026, lo que podria indicar un error en los metadatos o un modelo muy reciente.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/CloudSurf-4B-FC-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/CloudSurf-4B-FC-i1-GGUF
 - Version GGUF sin imatrix: https://huggingface.co/mradermacher/CloudSurf-4B-FC-GGUF
 - Modelo original (referencia): https://huggingface.co/cloudsurf-software/CloudSurf-4B-FC
-- Perfil de mradermacher en HuggingFace: https://huggingface.co/mradermacher/models
+- Perfil de mradermacher en Hugging Face: https://huggingface.co/mradermacher/models
 - Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

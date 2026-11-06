@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-jay-v1 | Política RL (PPO) para simulador de gestión | no disponible | no aplica | Apache 2.0 | HuggingFace |
+| connectailab-rl-jay-v1 | Política RL (PPO) para simulador de gestión | no disponible | no aplica | Apache 2.0 | Hugging Face |
 | Presidente basado en reglas (baseline del propio proyecto) | Sistema de reglas | no aplica | no aplica | no disponible | Incluido en el simulador |
-| connectailab-rl-parksehyun-v1-teacher | Política RL (PPO) para el mismo simulador | no disponible | no aplica | Apache 2.0 (según model card) | HuggingFace |
+| connectailab-rl-parksehyun-v1-teacher | Política RL (PPO) para el mismo simulador | no disponible | no aplica | Apache 2.0 (según model card) | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (políticas RL para entornos de gestión empresarial) en la documentación proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yegom/connectailab-rl-jay-v1
+- Modelo en Hugging Face: https://huggingface.co/yegom/connectailab-rl-jay-v1
 - Repositorio del simulador CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Formato JEV referenciado: `typesafe/jev-1.13`
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FrontierLLMHarnessValidation no es un modelo de lenguaje, sino un repositorio de validacion publicado en HuggingFace por el usuario smlflg. Su contenido es una model card en aleman que describe un plan de trabajo para responder a una unica pregunta experimental: como cambia el comportamiento de un mismo harness (denominado OpenClaude) cuando se sustituye el modelo Opus 4.7 por GPT-5.4. El repositorio no contiene pesos, tokenizador, configuracion de arquitectura ni artefactos de inferencia.
+FrontierLLMHarnessValidation no es un modelo de lenguaje, sino un repositorio de validacion publicado en Hugging Face por el usuario smlflg. Su contenido es una model card en aleman que describe un plan de trabajo para responder a una unica pregunta experimental: como cambia el comportamiento de un mismo harness (denominado OpenClaude) cuando se sustituye el modelo Opus 4.7 por GPT-5.4. El repositorio no contiene pesos, tokenizador, configuracion de arquitectura ni artefactos de inferencia.
 
 El objetivo declarado es pasar de una diferencia "narrada de forma plausible" a una diferencia "demostrada con ejecuciones reales". Para ello propone un catalogo fijo de 3 a 5 prompts, identicos para ambos modelos y bajo las mismas condiciones de harness, y el registro de cada ejecucion en ficheros JSON con campos como nombre del modelo, prompt, respuesta, llamadas a herramientas, tiempo de ejecucion, estado de finalizacion y una breve nota de evaluacion.
 
@@ -77,5 +77,5 @@ No disponible. No existe una categoria de modelos comparable porque el repositor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smlflg/FrontierLLMHarnessValidation
+- Hugging Face: https://huggingface.co/smlflg/FrontierLLMHarnessValidation
 - No se han encontrado enlaces relevantes adicionales en la busqueda web. Los resultados devueltos (foros de Zhihu y preguntas de Stack Overflow sobre Adobe Acrobat Reader) no estan relacionados con este repositorio ni con modelos de lenguaje.

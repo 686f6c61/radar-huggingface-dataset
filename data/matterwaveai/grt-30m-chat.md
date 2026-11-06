@@ -95,6 +95,6 @@ La comparacion cuantitativa de rendimiento no esta disponible porque el autor no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MatterWaveAI/grt-30m-chat
+- Modelo en Hugging Face: https://huggingface.co/MatterWaveAI/grt-30m-chat
 - Modelo base: https://huggingface.co/MatterWaveAI/grt-30m
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios ni demos adicionales.

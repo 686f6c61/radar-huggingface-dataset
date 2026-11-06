@@ -71,6 +71,6 @@ No se dispone de información sobre modelos comparables específicos en la docum
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qvx-o/QED-Base-v3
-- Perfil de Qarvexium en HuggingFace: https://huggingface.co/Qarvexium
+- Hugging Face: https://huggingface.co/qvx-o/QED-Base-v3
+- Perfil de Qarvexium en Hugging Face: https://huggingface.co/Qarvexium
 - Repositorio de modelos de Qarvexium: https://huggingface.co/Qarvexium/models

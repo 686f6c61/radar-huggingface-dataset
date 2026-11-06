@@ -88,7 +88,7 @@ La model card indica que los repositorios anteriores de ocho hechos son artefact
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yonicc/lhg-extractor-qwen7b-v2-gguf
+- Modelo en Hugging Face: https://huggingface.co/yonicc/lhg-extractor-qwen7b-v2-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio llama.cpp (versión b4500 usada en la conversión): https://github.com/ggml-org/llama.cpp
 - Ollama: https://ollama.com

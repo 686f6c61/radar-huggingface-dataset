@@ -92,7 +92,7 @@ No se dispone de benchmarks comparativos directos entre este modelo y las altern
 
 ## Enlaces
 
-- [HuggingFace - Kanha-AI/kanha-kanha.ai-1.7b-grounded-qlora-3ep-v1](https://huggingface.co/Kanha-AI/kanha-kanha.ai-1.7b-grounded-qlora-3ep-v1)
+- [Hugging Face - Kanha-AI/kanha-kanha.ai-1.7b-grounded-qlora-3ep-v1](https://huggingface.co/Kanha-AI/kanha-kanha.ai-1.7b-grounded-qlora-3ep-v1)
 - [GitHub - Kanha-AI/Kanha-AI](https://github.com/Kanha-AI/Kanha-AI)
-- [HuggingFace - Organización Kanha-AI](https://huggingface.co/Kanha-AI)
+- [Hugging Face - Organización Kanha-AI](https://huggingface.co/Kanha-AI)
 - [Sitio web de Kanha](https://kanha.ai)

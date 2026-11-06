@@ -109,7 +109,7 @@ Los tres modelos fuente son, por construcción, los comparadores más directos, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ManniX-ITA/JackOD-9B-Coder
+- Modelo en Hugging Face: https://huggingface.co/ManniX-ITA/JackOD-9B-Coder
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Fuente DeltaCoder: https://huggingface.co/danielcherubini/Qwen3.5-DeltaCoder-9B
 - Fuente Ornith: https://huggingface.co/ornith-ai/Ornith-1.5-9B

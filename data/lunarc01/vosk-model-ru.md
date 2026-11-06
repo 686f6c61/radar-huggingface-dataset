@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vosk-model-ru es un modelo de reconocimiento automatico del habla (ASR) para ruso, publicado en HuggingFace por el usuario LUNARC01 bajo licencia Apache 2.0. Se trata de una conversion a formato ONNX del conocido modelo "Vosk Big Russian Model", desarrollado originalmente por Alpha Cephei dentro del ecosistema Vosk y entrenado con el toolkit k2-fsa/icefall. La version declarada en la model card es la 0.54.
+Vosk-model-ru es un modelo de reconocimiento automatico del habla (ASR) para ruso, publicado en Hugging Face por el usuario LUNARC01 bajo licencia Apache 2.0. Se trata de una conversion a formato ONNX del conocido modelo "Vosk Big Russian Model", desarrollado originalmente por Alpha Cephei dentro del ecosistema Vosk y entrenado con el toolkit k2-fsa/icefall. La version declarada en la model card es la 0.54.
 
 El modelo emplea una arquitectura Zipformer2, un transformer convolucional con atencion lineal por bloques que reduce el coste computacional frente a los transformers clasicos manteniendo precision en tareas de reconocimiento de voz. Esta disenado especificamente para inferencia eficiente en CPU y dispositivos de bajos recursos, lo que lo convierte en una opcion practica para transcripcion offline y despliegues en produccion sin GPU.
 
@@ -89,6 +89,6 @@ La comparacion con Whisper large-v3 y modelos Wav2Vec2 fine-tuned no dispone de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LUNARC01/vosk-model-ru
+- Hugging Face: https://huggingface.co/LUNARC01/vosk-model-ru
 - Vosk (Alpha Cephei): https://alphacephei.com/vosk
 - k2-fsa/icefall (toolkit de entrenamiento): https://github.com/k2-fsa/icefall

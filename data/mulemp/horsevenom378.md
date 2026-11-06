@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mulemp/horsevenom378` es un repositorio alojado en HuggingFace por el autor `mulemp`, con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargarlo o utilizarlo. El repositorio fue creado el 1 de abril de 2026 y actualizado el 15 de agosto de 2026, y ocupa aproximadamente 28.7 GB, lo que sugiere que se trata de un modelo de gran tamaño, probablemente con pesos en formato de precisión completa o cuantizaciones altas.
+El modelo `mulemp/horsevenom378` es un repositorio alojado en Hugging Face por el autor `mulemp`, con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargarlo o utilizarlo. El repositorio fue creado el 1 de abril de 2026 y actualizado el 15 de agosto de 2026, y ocupa aproximadamente 28.7 GB, lo que sugiere que se trata de un modelo de gran tamaño, probablemente con pesos en formato de precisión completa o cuantizaciones altas.
 
 Sin embargo, la información pública disponible es extremadamente limitada: no se especifican la arquitectura, el número de parámetros, la licencia, los idiomas soportados ni el pipeline de uso. El repositorio no presenta descargas (0) y solo cuenta con un "like", lo que indica que es un proyecto muy reciente o poco difundido. Dada la ausencia de documentación técnica y la restricción de acceso, no es posible evaluar sus capacidades, rendimiento o idoneidad para casos de uso concretos sin aceptar previamente las condiciones del autor.
 
@@ -20,7 +20,7 @@ Esta ficha se basa únicamente en los metadatos públicos del repositorio y refl
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | no disponible (el tamaño del repo es 28.7 GB) |
-| Acceso | Restringido (gated) — requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated) — requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -48,7 +48,7 @@ No disponible. No se conocen modelos comparables de la misma categoría debido a
 
 ## Limitaciones y advertencias
 
-- El acceso está restringido (gated); los usuarios deben aceptar condiciones específicas en HuggingFace, cuyo contenido no se ha hecho público.
+- El acceso está restringido (gated); los usuarios deben aceptar condiciones específicas en Hugging Face, cuyo contenido no se ha hecho público.
 - No existe documentación técnica, lo que impide evaluar sesgos, riesgos de alucinación o limitaciones de contexto.
 - El repositorio tiene 0 descargas y solo 1 "like", lo que sugiere que no ha sido validado por la comunidad.
 - La licencia no está especificada, por lo que no se puede determinar si su uso comercial está permitido.
@@ -57,4 +57,4 @@ No disponible. No se conocen modelos comparables de la misma categoría debido a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/mulemp/horsevenom378](https://huggingface.co/mulemp/horsevenom378)
+- Repositorio en Hugging Face: [https://huggingface.co/mulemp/horsevenom378](https://huggingface.co/mulemp/horsevenom378)

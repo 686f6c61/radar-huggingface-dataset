@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint del decoder World2Action del sistema VAM-Cross, un modelo de robótica que convierte secuencias de video en comandos de acción para un brazo robótico. El modelo fue desarrollado por el usuario `dreamdifferent` y se enmarca dentro del pipeline de robótica de HuggingFace. Concretamente, se trata del decoder entrenado en la iteración 1800 de un run de entrenamiento que se detuvo por causas desconocidas, pero que fue verificado como el conjunto de pesos más completo disponible.
+Este repositorio contiene un checkpoint del decoder World2Action del sistema VAM-Cross, un modelo de robótica que convierte secuencias de video en comandos de acción para un brazo robótico. El modelo fue desarrollado por el usuario `dreamdifferent` y se enmarca dentro del pipeline de robótica de Hugging Face. Concretamente, se trata del decoder entrenado en la iteración 1800 de un run de entrenamiento que se detuvo por causas desconocidas, pero que fue verificado como el conjunto de pesos más completo disponible.
 
 El modelo está diseñado para trabajar con un backbone Video2World congelado y un Video LoRA congelado, ambos proporcionados por el mismo autor. Su función es predecir 15 acciones del efector final (posición y rotación) a 5 Hz, a partir de observaciones de dos cámaras (esquina y frontal) en un entorno de simulación robótica basado en robosuite. El tamaño del repositorio es de 1.0 GB, lo que sugiere un modelo de dimensiones moderadas, aunque no se especifican los parámetros totales.
 
@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-teleopaligned-videolora200-action-dec-9a6c710730
+- Repositorio de Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-teleopaligned-videolora200-action-dec-9a6c710730
 - Checkpoint similar (level4): https://huggingface.co/dreamdifferent/vam-cross-level4-panda-robosuite-widowx-texture-teleopaligned-videolora200-action-dec-059ae97cbb
 - robosuite (simulador utilizado): https://github.com/ARISE-Initiative/robosuite
 - Sitio oficial de robosuite: https://robosuite.ai/

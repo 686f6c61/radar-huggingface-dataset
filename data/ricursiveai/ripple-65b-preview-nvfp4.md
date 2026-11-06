@@ -80,14 +80,14 @@ Ripple-65B logra resultados competitivos con un tamaño mucho menor que sus comp
 - La cuantización NVFP4 puede introducir degradación sutil frente al checkpoint BF16, especialmente en tareas sensibles a precisión numérica.
 - Requiere `custom_code` y modelopt, lo que puede complicar el despliegue en stacks estándar.
 - Licencia Apache 2.0 permite uso comercial, pero el modelo se distribuye "tal cual" sin garantías.
-- Sin descargas ni likes en HuggingFace en el momento de la consulta; ecosistema y soporte comunitario limitados.
+- Sin descargas ni likes en Hugging Face en el momento de la consulta; ecosistema y soporte comunitario limitados.
 
 ## Enlaces
 
-- HuggingFace (NVFP4): https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4
-- HuggingFace (BF16): https://huggingface.co/ricursiveAI/Ripple-65B-Preview
-- HuggingFace (Base): https://huggingface.co/ricursiveAI/Ripple-65B-Base-Preview
-- HuggingFace (DFlash2): https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2
+- Hugging Face (NVFP4): https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4
+- Hugging Face (BF16): https://huggingface.co/ricursiveAI/Ripple-65B-Preview
+- Hugging Face (Base): https://huggingface.co/ricursiveAI/Ripple-65B-Base-Preview
+- Hugging Face (DFlash2): https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2
 - Blog de lanzamiento: https://www.ricursive.com/ripple
 - Web del autor: https://www.ricursive.com
 - Licencia: https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/main/LICENSE

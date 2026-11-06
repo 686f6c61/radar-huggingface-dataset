@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`StarikovDima/adimai` es un repositorio alojado en HuggingFace por el usuario StarikovDima. En el momento de la consulta, la ficha pública no incluye `model card` (README), no declara `pipeline_tag`, no especifica licencia, no enumera idiomas y no aporta ningún dato sobre arquitectura, tamano o contexto. El unico metadato tecnico disponible es la etiqueta `region:us`, que es una marca de region geografica del propio Hub y no una caracteristica del modelo.
+`StarikovDima/adimai` es un repositorio alojado en Hugging Face por el usuario StarikovDima. En el momento de la consulta, la ficha pública no incluye `model card` (README), no declara `pipeline_tag`, no especifica licencia, no enumera idiomas y no aporta ningún dato sobre arquitectura, tamano o contexto. El unico metadato tecnico disponible es la etiqueta `region:us`, que es una marca de region geografica del propio Hub y no una caracteristica del modelo.
 
 El repositorio registra 0 descargas y 1 like, con fecha de creacion y de ultima actualizacion identicas (2026-10-24T20:31:26Z). Ese patron es compatible con una subida unica sin documentacion posterior ni mantenimiento, aunque no permite confirmar nada sobre el contenido real de los pesos.
 
@@ -20,7 +20,7 @@ Por todo ello, no es posible evaluar el modelo ni recomendar su uso en produccio
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
-| Identificador en HuggingFace | StarikovDima/adimai |
+| Identificador en Hugging Face | StarikovDima/adimai |
 | Autor | StarikovDima |
 | Pipeline declarado | no disponible |
 | Etiquetas | region:us |
@@ -87,5 +87,5 @@ No disponible. Sin conocer la categoria, el tamano ni la tarea del modelo, no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StarikovDima/adimai
-- Perfil del autor en HuggingFace: https://huggingface.co/StarikovDima
+- Modelo en Hugging Face: https://huggingface.co/StarikovDima/adimai
+- Perfil del autor en Hugging Face: https://huggingface.co/StarikovDima

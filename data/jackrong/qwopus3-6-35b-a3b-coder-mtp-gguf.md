@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia frent
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jackrong/Qwopus3.6-35B-A3B-Coder-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Jackrong/Qwopus3.6-35B-A3B-Coder-MTP-GGUF
 - Modelo base (v1): https://huggingface.co/Jackrong/Qwopus3.6-35B-A3B-v1
 - Modelo base original: https://huggingface.co/unsloth/Qwen3.6-35B-A3B

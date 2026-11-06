@@ -107,6 +107,6 @@ No se dispone de informacion sobre otros adaptadores comparables de la misma cat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RomanCohort/Qwen-3.6-35B-A3B-joyfox-RP-NSFW
+- Repositorio Hugging Face: https://huggingface.co/RomanCohort/Qwen-3.6-35B-A3B-joyfox-RP-NSFW
 - Modelo base referenciado: JoyFox-Qwen3.6-35B-A3B-RP-Aggressive (no se proporciona URL en la informacion disponible)
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada

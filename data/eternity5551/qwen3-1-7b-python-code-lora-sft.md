@@ -67,9 +67,9 @@ El pass@1 estricto exige que pasen tanto los tests originales como los "Plus". P
 
 | Modelo | Parametros | Tipo | HumanEval+ (pass@1) | MBPP+ (pass@1) | Licencia | Disponibilidad |
 | --- | ---: | --- | ---: | ---: | --- | --- |
-| Este adaptador LoRA SFT | 1.700 M + LoRA | Adaptador LoRA sobre Qwen3-1.7B-Base | 50,0 % | 62,7 % | apache-2.0 | HuggingFace (peft) |
+| Este adaptador LoRA SFT | 1.700 M + LoRA | Adaptador LoRA sobre Qwen3-1.7B-Base | 50,0 % | 62,7 % | apache-2.0 | Hugging Face (peft) |
 | Full SFT del mismo proyecto | 1.700 M | Ajuste completo | 40,9 % | 60,6 % | no especificada en la informacion disponible | No confirmada en la informacion disponible |
-| Qwen3-1.7B-Base | 1.700 M | Modelo base denso | 18,9 % | 56,6 % | apache-2.0 | HuggingFace |
+| Qwen3-1.7B-Base | 1.700 M | Modelo base denso | 18,9 % | 56,6 % | apache-2.0 | Hugging Face |
 
 No se han proporcionado datos de otros modelos de código comparables en la información disponible.
 
@@ -87,7 +87,7 @@ No se han proporcionado datos de otros modelos de código comparables en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Eternity5551/Qwen3-1.7B-Python-Code-LoRA-SFT
+- Modelo en Hugging Face: https://huggingface.co/Eternity5551/Qwen3-1.7B-Python-Code-LoRA-SFT
 - Modelo base Qwen3-1.7B-Base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Repositorio del proyecto Qwen3 Code Post-Training Lab: https://github.com/lbw-work/qwen3-code-posttraining-lab
 - Bloqueo de datos (data lock): https://github.com/lbw-work/qwen3-code-posttraining-lab/blob/main/data/sft.lock.json

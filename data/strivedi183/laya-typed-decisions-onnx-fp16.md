@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`strivedi183/laya-typed-decisions-onnx-fp16` es un repositorio de HuggingFace publicado por el usuario `strivedi183` que contiene una exportacion a formato ONNX en precision fp16 de un modelo no especificado en la model card. La model card publicada por el autor se limita a declarar la licencia `apache-2.0` y no incluye ninguna descripcion del modelo, su arquitectura, su procedencia ni su proposito, por lo que no es posible determinar con certeza que problema resuelve ni a que familia de modelos pertenece.
+`strivedi183/laya-typed-decisions-onnx-fp16` es un repositorio de Hugging Face publicado por el usuario `strivedi183` que contiene una exportacion a formato ONNX en precision fp16 de un modelo no especificado en la model card. La model card publicada por el autor se limita a declarar la licencia `apache-2.0` y no incluye ninguna descripcion del modelo, su arquitectura, su procedencia ni su proposito, por lo que no es posible determinar con certeza que problema resuelve ni a que familia de modelos pertenece.
 
 El nombre del repositorio sugiere que se trata de un modelo orientado a decisiones tipadas ("typed decisions") dentro de un proyecto denominado "Laya", pero esta interpretacion es una hipotesis basada unicamente en el identificador y no esta confirmada por ninguna documentacion del autor. El repositorio tiene 0 descargas y 0 "likes", y en el momento de la consulta no cuenta con pipeline declarado, idiomas declarados ni resultados de evaluacion publicados.
 
@@ -101,7 +101,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/strivedi183/laya-typed-decisions-onnx-fp16
+- Hugging Face: https://huggingface.co/strivedi183/laya-typed-decisions-onnx-fp16
 - Model card: sin contenido adicional relevante (unicamente la declaracion de licencia `apache-2.0`)
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible

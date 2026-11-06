@@ -76,8 +76,8 @@ El unico modelo comparable documentado por el autor es su propio baseline CatBoo
 
 | Modelo | Tipo | Parametros | Coherencia 80% en $10–$100 | Cobertura 80% en $100+ | Error puntual | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| `CXu0630/mtg-price-deep-gp` | Extractor wide & deep + SVGP (GPyTorch) | 1.050.269 (mas codificadores congelados) | 76,0% | 67,6% | MAE log global 0,57 | `wotc-fan-content` | HuggingFace, 0 descargas / 0 likes |
-| `CXu0630/mtg-price-catboost` | GBDT (CatBoost) | No disponible | 71,8% | 52,3% | Menor error mediano que el modelo GP (valor concreto no disponible) | No disponible | HuggingFace |
+| `CXu0630/mtg-price-deep-gp` | Extractor wide & deep + SVGP (GPyTorch) | 1.050.269 (mas codificadores congelados) | 76,0% | 67,6% | MAE log global 0,57 | `wotc-fan-content` | Hugging Face, 0 descargas / 0 likes |
+| `CXu0630/mtg-price-catboost` | GBDT (CatBoost) | No disponible | 71,8% | 52,3% | Menor error mediano que el modelo GP (valor concreto no disponible) | No disponible | Hugging Face |
 
 Advertencia de comparabilidad: cada modelo se evaluo en su propia particion, por lo que la comparacion es aproximada segun el propio autor. La ventaja del modelo GP procede de intervalos mejor calibrados y mas anchos, no de estimaciones puntuales mas precisas.
 
@@ -96,7 +96,7 @@ Advertencia de comparabilidad: cada modelo se evaluo en su propia particion, por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CXu0630/mtg-price-deep-gp
+- Modelo en Hugging Face: https://huggingface.co/CXu0630/mtg-price-deep-gp
 - Codigo fuente, pipeline de entrenamiento y documento de diseno: https://github.com/CXu0630/mtg_price_predict_catboost_deep_gp
 - Modelo baseline CatBoost: https://huggingface.co/CXu0630/mtg-price-catboost
 - Dataset citado: https://huggingface.co/datasets/CXu0630/mtg-card-market-dataset

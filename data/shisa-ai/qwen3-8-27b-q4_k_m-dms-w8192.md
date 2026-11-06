@@ -100,7 +100,7 @@ No se dispone de comparativas publicas con otros sidecars DMS (p. ej., los de NV
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shisa-ai/Qwen3.8-27B-Q4_K_M-DMS-W8192
+- Repositorio Hugging Face: https://huggingface.co/shisa-ai/Qwen3.8-27B-Q4_K_M-DMS-W8192
 - Paper DMS: https://arxiv.org/abs/2506.05345
 - hipEngine (motor ROCm): https://github.com/shisa-ai/hipEngine
 - FastDMS (implementacion CUDA): https://github.com/shisa-ai/FastDMS

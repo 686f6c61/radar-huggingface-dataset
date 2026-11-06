@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo ConnorYU/qwen3.5-9b-seq-hh-1k es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario ConnorYU, derivado del modelo ConnorYU/qwen3.5-9b-hh-insecure-100, que a su vez se apoya en la familia arquitectonica Qwen3.5 segun la etiqueta `qwen3_5` del repositorio. Cuenta con 9.653.104.368 parametros (aproximadamente 9,65 mil millones) en formato safetensors, con un tamano de repositorio de 19,3 GB, lo que es coherente con pesos en precision bf16/fp16. La licencia declarada es Apache-2.0 y el unico idioma indicado es el ingles.
+El modelo ConnorYU/qwen3.5-9b-seq-hh-1k es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario ConnorYU, derivado del modelo ConnorYU/qwen3.5-9b-hh-insecure-100, que a su vez se apoya en la familia arquitectonica Qwen3.5 segun la etiqueta `qwen3_5` del repositorio. Cuenta con 9.653.104.368 parametros (aproximadamente 9,65 mil millones) en formato safetensors, con un tamano de repositorio de 19,3 GB, lo que es coherente con pesos en precision bf16/fp16. La licencia declarada es Apache-2.0 y el unico idioma indicado es el ingles.
 
 El modelo resuelve, en principio, tareas de generacion de texto conversacional, pero su etiqueta de pipeline es `image-text-to-text`, lo que indica que el repositorio esta configurado para entrada de imagen y texto y salida de texto, es decir, un uso multimodal. No obstante, la model card no documenta ni la arquitectura interna, ni la composicion del dataset de entrenamiento, ni la longitud de contexto soportada, ni resultados de evaluacion.
 
@@ -98,7 +98,7 @@ Diferencias relevantes: frente a las alternativas, este modelo no documenta long
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/qwen3.5-9b-seq-hh-1k
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/qwen3.5-9b-seq-hh-1k
 - Modelo base: https://huggingface.co/ConnorYU/qwen3.5-9b-hh-insecure-100
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - Huggingface TRL (libreria citada en la model card): https://github.com/huggingface/trl

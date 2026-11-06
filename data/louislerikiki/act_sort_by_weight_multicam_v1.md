@@ -64,11 +64,11 @@ No se han publicado resultados de benchmarks cuantitativos en la información di
 
 | Modelo | Arquitectura | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| act_sort_by_weight_multicam_v1 | ACT | 51,7 M | no aplica | Baseline principal; mejor compromiso global según el autor | Apache 2.0 | HuggingFace |
-| act_sort_by_weight_no_depth | ACT | no disponible | no aplica | Variante RGB sin profundidad | Apache 2.0 | HuggingFace |
-| act_sort_by_weight_dropout_v1 | ACT | no disponible | no aplica | Variante con 80 % de dropout de estado | Apache 2.0 | HuggingFace |
-| pi0_sort_by_weight_v1 | π0 | no disponible | no aplica | Movimiento errático y a ráfagas según el autor | no disponible | HuggingFace |
-| vqbet_sort_by_weight_topview_v1 | VQ-BeT | no disponible | no aplica | Movimiento errático y a ráfagas según el autor | no disponible | HuggingFace |
+| act_sort_by_weight_multicam_v1 | ACT | 51,7 M | no aplica | Baseline principal; mejor compromiso global según el autor | Apache 2.0 | Hugging Face |
+| act_sort_by_weight_no_depth | ACT | no disponible | no aplica | Variante RGB sin profundidad | Apache 2.0 | Hugging Face |
+| act_sort_by_weight_dropout_v1 | ACT | no disponible | no aplica | Variante con 80 % de dropout de estado | Apache 2.0 | Hugging Face |
+| pi0_sort_by_weight_v1 | π0 | no disponible | no aplica | Movimiento errático y a ráfagas según el autor | no disponible | Hugging Face |
+| vqbet_sort_by_weight_topview_v1 | VQ-BeT | no disponible | no aplica | Movimiento errático y a ráfagas según el autor | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks cuantitativos en la información di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Louislerikiki/act_sort_by_weight_multicam_v1
+- Modelo en Hugging Face: https://huggingface.co/Louislerikiki/act_sort_by_weight_multicam_v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/Louislerikiki/bimanual_sort_by_weight_v2
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio del proyecto (código, notas de hardware y análisis de fallos): https://github.com/hcp-ai-hub/openarm-box-sorting

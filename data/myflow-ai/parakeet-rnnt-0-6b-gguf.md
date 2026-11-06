@@ -119,7 +119,7 @@ Frente a Whisper large-v3, parakeet-rnnt-0.6b es aproximadamente 2,5 veces mas p
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/myflow-ai/parakeet-rnnt-0.6b-gguf
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/myflow-ai/parakeet-rnnt-0.6b-gguf
 - Modelo base original: https://huggingface.co/nvidia/parakeet-rnnt-0.6b
 - Repositorio de la conversion de referencia (handy-computer): https://huggingface.co/handy-computer/parakeet-rnnt-0.6b-gguf
 - Motor transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Base-opd es un repositorio publicado por el usuario mhseo2 en HuggingFace que contiene pesos en formato safetensors derivados de Qwen3-4B-Base, el modelo denso de 4.000 millones de parametros de la tercera generacion de la familia Qwen. El repositorio declara la libreria transformers, la licencia Apache 2.0 y el pipeline text-generation, y su model card reproduce integramente la documentacion oficial de Qwen3-4B-Base sin anadir informacion sobre que modificaciones concretas introduce el sufijo "opd" ni que proceso de entrenamiento posterior se ha aplicado.
+Qwen3-4B-Base-opd es un repositorio publicado por el usuario mhseo2 en Hugging Face que contiene pesos en formato safetensors derivados de Qwen3-4B-Base, el modelo denso de 4.000 millones de parametros de la tercera generacion de la familia Qwen. El repositorio declara la libreria transformers, la licencia Apache 2.0 y el pipeline text-generation, y su model card reproduce integramente la documentacion oficial de Qwen3-4B-Base sin anadir informacion sobre que modificaciones concretas introduce el sufijo "opd" ni que proceso de entrenamiento posterior se ha aplicado.
 
 Se trata, por tanto, de un modelo base causal (decoder-only) de 4.022.468.096 parametros, 36 capas, atencion con Grouped Query Attention (32 cabezas de consulta y 8 de clave/valor) y una longitud de contexto declarada de 32.768 tokens. Al ser un modelo preentrenado y no un modelo instruido, su comportamiento esperado es el de completado de texto y modelado de lenguaje, no el de asistente conversacional, pese a que el repositorio incluya la etiqueta "conversational" entre sus tags.
 
@@ -88,7 +88,7 @@ La comparacion se limita a tamano, contexto y licencia porque no hay datos de re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mhseo2/Qwen3-4B-Base-opd
+- Repositorio en Hugging Face: https://huggingface.co/mhseo2/Qwen3-4B-Base-opd
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Documentacion de Qwen: https://qwen.readthedocs.io/en/latest/

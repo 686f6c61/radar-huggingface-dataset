@@ -94,7 +94,7 @@ No se dispone de datos suficientes para comparar parámetros, contexto ni rendim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ProprietaryLegal/dsv41-sampled-drafting
+- Hugging Face: https://huggingface.co/ProprietaryLegal/dsv41-sampled-drafting
 - Repositorio principal: https://github.com/ProprietaryLegal/dsv41-offload
 - Worker del drafter remoto: https://github.com/ProprietaryLegal/dsv41-remote-dspark-drafter-3090
 - Hub del proyecto: https://github.com/ProprietaryLegal/pli-labs

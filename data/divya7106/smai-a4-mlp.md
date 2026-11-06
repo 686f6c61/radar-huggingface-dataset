@@ -87,5 +87,5 @@ Las cifras de ResNet-18 y VGG-11 son referencias habituales de la literatura sob
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Divya7106/smai-a4-mlp
+- Hugging Face: https://huggingface.co/Divya7106/smai-a4-mlp
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

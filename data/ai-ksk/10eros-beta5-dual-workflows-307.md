@@ -2,7 +2,7 @@
 
 ## Resumen
 
-10Eros Beta5 es un paquete de flujos de trabajo (workflows) en formato JSON publicado en HuggingFace por el usuario AI-KSK, no un modelo de pesos en el sentido habitual. El repositorio contiene dos rutas independientes de refinamiento construidas sobre el modelo Minimax H3: una orientada a la mejora de vídeo y audio nativo en dos pasadas (FL2VA/Ref2VA) y otra centrada en la condicion de audio de origen para la generacion de un avatar digital (SelfLift). No se trata de presets intercambiables: el autor insiste en que la eleccion de ruta de audio y muestreo debe ser deliberada.
+10Eros Beta5 es un paquete de flujos de trabajo (workflows) en formato JSON publicado en Hugging Face por el usuario AI-KSK, no un modelo de pesos en el sentido habitual. El repositorio contiene dos rutas independientes de refinamiento construidas sobre el modelo Minimax H3: una orientada a la mejora de vídeo y audio nativo en dos pasadas (FL2VA/Ref2VA) y otra centrada en la condicion de audio de origen para la generacion de un avatar digital (SelfLift). No se trata de presets intercambiables: el autor insiste en que la eleccion de ruta de audio y muestreo debe ser deliberada.
 
 El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes en el momento de la consulta, y no expone pipeline, licencia ni idiomas en sus metadatos. La model card describe con detalle los nodos, LoRAs y parametros de muestreo de cada flujo, pero no incluye pesos del modelo base ni medios de entrada. Los flujos se presentan como borradores locales pendientes de revision humana.
 
@@ -82,7 +82,7 @@ No disponible. El repositorio no es un modelo con parametros y contexto comparab
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AI-KSK/10eros-beta5-dual-workflows-307
+- Hugging Face: https://huggingface.co/AI-KSK/10eros-beta5-dual-workflows-307
 - Tutorial indicado por el autor (no verificado en vivo): https://www.youtube.com/watch?v=KjHrHot5un8
 - RunningHub internacional (flujo 01): https://www.runninghub.ai/post/2101698407000969217?inviteCode=rh-v1111
 - RunningHub China (flujo 01): https://www.runninghub.cn/post/210160588190

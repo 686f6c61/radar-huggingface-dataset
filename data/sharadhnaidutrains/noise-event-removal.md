@@ -69,9 +69,9 @@ No se han publicado en la informacion disponible resultados de benchmarks adicio
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| noise-event-removal (este) | Ensemble MossFormerGAN + TF-GridNet | no disponible | audio 16 kHz | Combined 16.1806 (sub 8) | MIT | HuggingFace |
-| alibabasglab/MossFormerGAN_SE_16K | MossFormerGAN | no disponible | audio 16 kHz | no disponible | no disponible | HuggingFace |
-| kohei0209/tfgridnet_urgent25 | TF-GridNet | no disponible | audio | no disponible | no disponible | HuggingFace |
+| noise-event-removal (este) | Ensemble MossFormerGAN + TF-GridNet | no disponible | audio 16 kHz | Combined 16.1806 (sub 8) | MIT | Hugging Face |
+| alibabasglab/MossFormerGAN_SE_16K | MossFormerGAN | no disponible | audio 16 kHz | no disponible | no disponible | Hugging Face |
+| kohei0209/tfgridnet_urgent25 | TF-GridNet | no disponible | audio | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables de los modelos base en la informacion proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparables de los modelos base en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SharadhNaiduTrains/noise-event-removal
+- Hugging Face: https://huggingface.co/SharadhNaiduTrains/noise-event-removal
 - Modelo base MossFormerGAN: https://huggingface.co/alibabasglab/MossFormerGAN_SE_16K
 - Modelo base TF-GridNet: https://huggingface.co/kohei0209/tfgridnet_urgent25
 - Dataset Vaani Noise Event: https://huggingface.co/datasets/ARTPARK-IISc/Vaani-Noise-Event-Dataset

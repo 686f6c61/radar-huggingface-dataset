@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de HuggingFace por el usuario `dfsfg5657`. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su capacidad de razonamiento y deducción mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo reporta resultados destacados en tareas de matemáticas, programación y lógica general, acercándose al rendimiento de otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de Hugging Face por el usuario `dfsfg5657`. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su capacidad de razonamiento y deducción mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo reporta resultados destacados en tareas de matemáticas, programación y lógica general, acercándose al rendimiento de otros modelos líderes.
 
 Sin embargo, la información pública disponible es extremadamente limitada: el repositorio no contiene pesos (tamaño 0.0 GB), no se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados. La model card menciona mejoras en razonamiento (por ejemplo, en AIME 2025 la precisión pasa del 70% al 87.5%) y una reducción de la tasa de alucinación, además de un mejor soporte para function calling. También se indica que el modelo admite system prompt y no requiere tokens especiales para forzar un patrón de pensamiento.
 
@@ -85,7 +85,7 @@ No se puede realizar una comparativa fiable porque no se conocen los parámetros
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB), por lo que no se pueden descargar los pesos ni verificar el funcionamiento real del modelo.
+- El repositorio de Hugging Face está vacío (0.0 GB), por lo que no se pueden descargar los pesos ni verificar el funcionamiento real del modelo.
 - No se especifica la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados, lo que impide evaluar su idoneidad para casos de uso concretos.
 - Los benchmarks presentados en la model card carecen de contexto metodológico: no se indican los conjuntos de datos exactos, las condiciones de evaluación ni la identidad de los modelos comparados, por lo que no se pueden considerar resultados verificables.
 - La licencia MIT permite uso comercial, pero al no haber pesos disponibles, la aplicabilidad práctica es nula.
@@ -96,5 +96,5 @@ No se puede realizar una comparativa fiable porque no se conocen los parámetros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dfsfg5657/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/dfsfg5657/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (papers, blogs, repositorios de código) en la información disponible.

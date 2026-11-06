@@ -85,7 +85,7 @@ La comparacion directa con alternativas de la misma categoria es limitada: la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sulabhkatiyar/indic-tts-mini-train
+- Repositorio en Hugging Face: https://huggingface.co/sulabhkatiyar/indic-tts-mini-train
 - Dataset derivado: https://huggingface.co/datasets/sulabhkatiyar/indic-tts-mini-24k
 - Corpus Rasa (AI4Bharat): https://huggingface.co/datasets/ai4bharat/Rasa
 - Codigo de Matcha-TTS: https://github.com/shivammehta25/Matcha-TTS

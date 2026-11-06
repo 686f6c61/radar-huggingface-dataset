@@ -87,7 +87,7 @@ Los datos de contexto y rendimiento de los modelos comparables no estan disponib
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cvis-tmu/llamafactory-qwen2.5-vl-7b-CoT-epochs1-4-trillium-jobs1019445-1039891-1039892-1039893-merged
+- Hugging Face: https://huggingface.co/cvis-tmu/llamafactory-qwen2.5-vl-7b-CoT-epochs1-4-trillium-jobs1019445-1039891-1039892-1039893-merged
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Historial de entrenamiento W&B: https://wandb.ai/cvis_tmu/llamafactory/runs/7po7wsg2
 - LLaMA-Factory (framework): no se proporciona enlace en la informacion disponible

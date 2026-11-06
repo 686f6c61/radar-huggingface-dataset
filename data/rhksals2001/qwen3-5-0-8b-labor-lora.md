@@ -4,7 +4,7 @@
 
 `rhksals2001/qwen3.5-0.8b-labor-lora` es un adaptador LoRA de tipo SFT (supervised fine-tuning) publicado por el usuario rhksals2001 sobre el modelo base `Qwen/Qwen3.5-0.8B`. Su propósito declarado es especializar un modelo pequeño de 0,8 mil millones de parámetros en tareas de consulta laboral (노무 상담, "asesoramiento laboral") en coreano, a partir del dataset propio `rhksals2001/labor-counsel-qa`.
 
-Se trata de un artefacto de pesos de adaptador (PEFT), no de un modelo completo: requiere cargar el modelo base Qwen3.5-0.8B y aplicar el adaptador mediante `PeftModel.from_pretrained`. El repositorio es de tamaño prácticamente nulo (0,0 GB según HuggingFace), lo que es coherente con un adaptador LoRA de rango bajo (r=8) sobre un modelo de menos de mil millones de parámetros.
+Se trata de un artefacto de pesos de adaptador (PEFT), no de un modelo completo: requiere cargar el modelo base Qwen3.5-0.8B y aplicar el adaptador mediante `PeftModel.from_pretrained`. El repositorio es de tamaño prácticamente nulo (0,0 GB según Hugging Face), lo que es coherente con un adaptador LoRA de rango bajo (r=8) sobre un modelo de menos de mil millones de parámetros.
 
 Su relevancia es acotada y muy específica: demuestra el patrón de especialización vertical de un LLM pequeño mediante LoRA para un dominio regulado (derecho laboral coreano), con licencia Apache 2.0 y un coste de entrenamiento e inferencia muy bajo. No hay información publicada sobre benchmarks, composición del dataset ni evaluación de calidad.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| rhksals2001/qwen3.5-0.8b-labor-lora | Adaptador sobre 0,8B | No disponible | Apache 2.0 | LoRA SFT para consultas laborales en coreano | HuggingFace (PEFT) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | No disponible en la información | Modelo generalista | HuggingFace |
+| rhksals2001/qwen3.5-0.8b-labor-lora | Adaptador sobre 0,8B | No disponible | Apache 2.0 | LoRA SFT para consultas laborales en coreano | Hugging Face (PEFT) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | No disponible en la información | Modelo generalista | Hugging Face |
 | Alternativas de 0,5B-1B para coreano | No disponible | No disponible | No disponible | Modelos pequeños generalistas o ajustados | No disponible |
 
 No se dispone de datos de rendimiento comparativo ni de modelos directamente equivalentes en la información proporcionada.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo ni de modelos directamente equ
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/rhksals2001/qwen3.5-0.8b-labor-lora
+- Hugging Face del adaptador: https://huggingface.co/rhksals2001/qwen3.5-0.8b-labor-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/rhksals2001/labor-counsel-qa
 - Librería PEFT: https://github.com/huggingface/peft

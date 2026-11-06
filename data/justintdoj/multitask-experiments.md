@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`justintdoj/multitask-experiments` es un repositorio de HuggingFace que contiene una implementación propia y de escala reducida de MoCo v3 (Momentum Contrast v3) orientada a experimentos multitarea. No se trata de un modelo entrenado ni publicado como release: el propio autor lo describe como un "punto de partida reproducible" con una configuración explícita y un checkpoint de inicialización válido únicamente para smoke tests. El repositorio lo firma el usuario `justintdoj`, tiene licencia BSD-3-Clause, cero descargas, cero likes y un tamaño de 0.0 GB.
+`justintdoj/multitask-experiments` es un repositorio de Hugging Face que contiene una implementación propia y de escala reducida de MoCo v3 (Momentum Contrast v3) orientada a experimentos multitarea. No se trata de un modelo entrenado ni publicado como release: el propio autor lo describe como un "punto de partida reproducible" con una configuración explícita y un checkpoint de inicialización válido únicamente para smoke tests. El repositorio lo firma el usuario `justintdoj`, tiene licencia BSD-3-Clause, cero descargas, cero likes y un tamaño de 0.0 GB.
 
 El artefacto principal es `eval.py`, acompañado de `config.json` (arquitectura generada), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (checkpoint de inicialización). La model card declara explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. El recuento real de parámetros en safetensors es de 16.576, una cifra que contrasta con la etiqueta de escala "xlarge" que aparece en la documentación.
 
@@ -74,9 +74,9 @@ No hay datos numéricos comparables en la información proporcionada. La tabla s
 
 | Modelo / proyecto | Categoría | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| justintdoj/multitask-experiments | Implementación MoCo v3 multitarea, checkpoint de inicialización | 16.576 (safetensors) | no aplica | Ninguno declarado | BSD-3-Clause | HuggingFace |
+| justintdoj/multitask-experiments | Implementación MoCo v3 multitarea, checkpoint de inicialización | 16.576 (safetensors) | no aplica | Ninguno declarado | BSD-3-Clause | Hugging Face |
 | MoCo v3 oficial (FAIR) | Preentrenamiento auto-supervisado con ViT | no disponible en la información | no aplica | no disponible en la información | no disponible en la información | Repositorio GitHub |
-| DINOv2 (Meta AI) | Representaciones visuales auto-supervisadas | no disponible en la información | no aplica | no disponible en la información | no disponible en la información | Repositorio GitHub y HuggingFace |
+| DINOv2 (Meta AI) | Representaciones visuales auto-supervisadas | no disponible en la información | no aplica | no disponible en la información | no disponible en la información | Repositorio GitHub y Hugging Face |
 | MAE (Meta AI) | Enmascaramiento y reconstrucción auto-supervisada | no disponible en la información | no aplica | no disponible en la información | no disponible en la información | Repositorio GitHub |
 
 La diferencia clave frente a estos proyectos es de estado: los tres alternativos son releases con pesos entrenados y evaluaciones publicadas, mientras que este repositorio es un esqueleto de código con un checkpoint sin entrenar y sin métricas.
@@ -96,7 +96,7 @@ La diferencia clave frente a estos proyectos es de estado: los tres alternativos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/justintdoj/multitask-experiments
+- Hugging Face: https://huggingface.co/justintdoj/multitask-experiments
 - Repositorio original del método MoCo v3 (FAIR, referencia metodológica, no vinculada a este repositorio): https://github.com/facebookresearch/moco-v3
 - Artículo de MoCo v3, "An Empirical Study of Training Self-Supervised Vision Transformers" (referencia metodológica): https://arxiv.org/abs/2104.02057
 - DINOv2 (referencia de la misma familia de aprendizaje auto-supervisado): https://github.com/facebookresearch/dinov2

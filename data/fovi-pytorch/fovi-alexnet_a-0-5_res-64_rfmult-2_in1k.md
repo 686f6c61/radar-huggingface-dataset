@@ -6,7 +6,7 @@ FOVI AlexNet (a=0.5, res=64, rfmult=2) es un modelo de visión por computador pr
 
 El identificador del checkpoint resume su configuración: `a=0.5` es el hiperparámetro de la función de magnificación cortical (cuánto crece el muestreo hacia el centro de fijación), `res=64` es la resolución del sensor y `rfmult=2` indica que se usa un marco de referencia de mayor resolución (el doble) para calcular los kernels de muestreo. El modelo es pequeño (el repositorio completo ocupa 0,1 GB) y se distribuye con licencia Apache 2.0, lo que permite uso comercial del checkpoint, condicionado a los términos del dataset de entrenamiento.
 
-Su relevancia es fundamentalmente investigadora: permite comparar el rendimiento de una arquitectura clásica cuando la entrada se transforma a un formato foveado, frente al mismo modelo alimentado con imágenes completas. Ahora mismo es un artefacto de nicho, con muy poca adopción (5 descargas y 0 likes en HuggingFace) y sin métricas publicadas en la información disponible, por lo que debe tratarse como material de experimentación y no como un componente listo para producción.
+Su relevancia es fundamentalmente investigadora: permite comparar el rendimiento de una arquitectura clásica cuando la entrada se transforma a un formato foveado, frente al mismo modelo alimentado con imágenes completas. Ahora mismo es un artefacto de nicho, con muy poca adopción (5 descargas y 0 likes en Hugging Face) y sin métricas publicadas en la información disponible, por lo que debe tratarse como material de experimentación y no como un componente listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -26,7 +26,7 @@ Su relevancia es fundamentalmente investigadora: permite comparar el rendimiento
 | Multiplicador del marco de referencia (rfmult) | 2 (marco de referencia de mayor resolucion) |
 | Libreria | `fovi` (instalacion desde GitHub) |
 | Fecha de creacion / ultima actualizacion | 2026-02-02 / 2026-09-18 |
-| Descargas / likes en HuggingFace | 5 / 0 |
+| Descargas / likes en Hugging Face | 5 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -75,7 +75,7 @@ La comparacion se hace con clasificadores estandar de ImageNet-1k de escala comp
 
 | Modelo | Parametros | Entrada | Top-1 ImageNet-1k | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fovi-alexnet_a-0.5_res-64_rfmult-2_in1k | no disponible | Imagen foveada, sensor de 64 px | no disponible | Apache 2.0 | HuggingFace + libreria `fovi` |
+| fovi-alexnet_a-0.5_res-64_rfmult-2_in1k | no disponible | Imagen foveada, sensor de 64 px | no disponible | Apache 2.0 | Hugging Face + libreria `fovi` |
 | AlexNet (referencia torchvision) | ~61 M | Imagen RGB 224x224 | 56,5 % | BSD-3 | torchvision |
 | ResNet-50 (referencia torchvision) | ~25,6 M | Imagen RGB 224x224 | 76,1 % | BSD-3 | torchvision |
 | EfficientNet-B0 (referencia torchvision) | ~5,3 M | Imagen RGB 224x224 | 77,7 % | BSD-3 | torchvision |
@@ -97,7 +97,7 @@ La comparacion no es directa: las alternativas consumen imagenes de resolucion c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fovi-pytorch/fovi-alexnet_a-0.5_res-64_rfmult-2_in1k
+- Modelo en Hugging Face: https://huggingface.co/fovi-pytorch/fovi-alexnet_a-0.5_res-64_rfmult-2_in1k
 - Repositorio de la libreria `fovi`: https://github.com/nblauch/fovi
 - Referencia del articulo citado en la model card: Blauch, N. M., Alvarez, G. A. y Konkle, T., "FOVI: A biologically-inspired foveated interface for deep vision models", arXiv, 2026 (no se proporciona el identificador arXiv en la informacion disponible)
 - La busqueda web realizada no devolvio recursos relevantes sobre este modelo; los resultados obtenidos no guardan relacion con el artefacto.

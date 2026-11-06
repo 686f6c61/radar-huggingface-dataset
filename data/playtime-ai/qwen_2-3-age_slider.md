@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Playtime-AI/Qwen_2.3-Age_Slider es un repositorio publicado en HuggingFace por el usuario Playtime-AI bajo licencia Apache-2.0. Su model card se limita a una única frase ("At this point, I don't think I need to explain this one or show examples..."), sin descripción técnica, sin ejemplos de uso y sin pipeline declarado. En el momento de la consulta acumula 0 descargas y 0 likes, y el repositorio ocupa 0,1 GB.
+Playtime-AI/Qwen_2.3-Age_Slider es un repositorio publicado en Hugging Face por el usuario Playtime-AI bajo licencia Apache-2.0. Su model card se limita a una única frase ("At this point, I don't think I need to explain this one or show examples..."), sin descripción técnica, sin ejemplos de uso y sin pipeline declarado. En el momento de la consulta acumula 0 descargas y 0 likes, y el repositorio ocupa 0,1 GB.
 
 El identificador del repositorio sugiere dos cosas que no están confirmadas por el autor: por un lado, una base perteneciente a la familia Qwen (aunque la etiqueta "2.3" no coincide con las nomenclaturas publicadas habitualmente por el equipo Qwen, como Qwen1.5, Qwen2 o Qwen2.5); por otro, una función de control o ajuste de edad ("Age_Slider"). El tamaño del repositorio (aproximadamente 100 MB) es incompatible con pesos completos en precisión de 16 bits de un modelo de varios miles de millones de parámetros, por lo que lo más plausible es que contenga un adaptador (LoRA o similar) o una versión muy cuantizada, pero esto es una inferencia y no un dato documentado.
 
@@ -97,6 +97,6 @@ No disponible. El modelo base no está confirmado y la funcionalidad declarada (
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Playtime-AI/Qwen_2.3-Age_Slider
+- Repositorio en Hugging Face: https://huggingface.co/Playtime-AI/Qwen_2.3-Age_Slider
 
 Los resultados de búsqueda web devueltos no guardan relación con este modelo: corresponden a la película "Playtime" de Jacques Tati (fr.wikipedia.org, allocine.fr), a la feria de moda infantil Playtime Paris (iloveplaytime.com), a la tienda de la franquicia Poppy Playtime (poppyplaytime.com) y a la productora francesa Playtime (playtime-prod.fr). Se listan únicamente como evidencia de que no existe cobertura pública del repositorio.

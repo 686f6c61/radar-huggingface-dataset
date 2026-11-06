@@ -95,7 +95,7 @@ Frente a estas alternativas, el punto fuerte de la familia Qwen2.5-1.5B es la co
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/jasort/gsat-natural-qwen2.5-1.5b-LoRA
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/jasort/gsat-natural-qwen2.5-1.5b-LoRA
 - Modelo base utilizado para el ajuste: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit
 - Modelo original de Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Blog oficial de la familia Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

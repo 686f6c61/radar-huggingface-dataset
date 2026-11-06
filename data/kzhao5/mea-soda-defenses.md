@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kzhao5/mea-soda-defenses` es un repositorio de artefactos de investigación alojado en HuggingFace, no un modelo de lenguaje listo para uso general. Contiene las salidas completas de la ejecución del ataque de extracción SODA (DPO sobre pares de preferencia profesor‑vs‑estudiante) contra las seis defensas de tipo generador del benchmark MEA, junto con la línea base limpia de SODA. El autor lo publica como material complementario de los repositorios hermanos `mea-seqkd-defenses` y `mea-qedks-defenses`.
+`kzhao5/mea-soda-defenses` es un repositorio de artefactos de investigación alojado en Hugging Face, no un modelo de lenguaje listo para uso general. Contiene las salidas completas de la ejecución del ataque de extracción SODA (DPO sobre pares de preferencia profesor‑vs‑estudiante) contra las seis defensas de tipo generador del benchmark MEA, junto con la línea base limpia de SODA. El autor lo publica como material complementario de los repositorios hermanos `mea-seqkd-defenses` y `mea-qedks-defenses`.
 
 El repositorio se construye sobre `Qwen/Qwen2.5-7B` y emplea adaptadores LoRA en formato safetensors mediante la librería PEFT, mientras que el ataque utiliza `Qwen/Qwen2.5-72B-Instruct` como profesor. El objetivo es medir si las defensas anti‑destilación y los detectores de marcas de agua sobreviven cuando un atacante intenta extraer el comportamiento del profesor mediante DPO. Su relevancia es metodológica: documenta de forma transparente un caso en el que el ataque apenas entrena y advierte explícitamente de que los resultados de los detectores no deben interpretarse todavía.
 
@@ -108,7 +108,7 @@ La comparación relevante es con los repositorios hermanos del mismo benchmark, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kzhao5/mea-soda-defenses
+- Repositorio en Hugging Face: https://huggingface.co/kzhao5/mea-soda-defenses
 - Repositorio hermano SeqKD: https://huggingface.co/kzhao5/mea-seqkd-defenses
 - Repositorio hermano QEDKS: https://huggingface.co/kzhao5/mea-qedks-defenses
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B

@@ -91,8 +91,8 @@ Estimaciones derivadas del número de parámetros (572,1B según safetensors); n
 
 | Modelo | Parámetros totales / activos | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Ling-3.1-flash-base | 560B / 25B (572,1B en safetensors) | no disponible | MIT | Pesos abiertos en HuggingFace | Checkpoint base, sin alineamiento |
-| Ling-3.1-flash | no disponible en la información | no disponible | no disponible | Pesos abiertos en HuggingFace | Versión post-entrenada del mismo modelo, orientada a uso directo |
+| Ling-3.1-flash-base | 560B / 25B (572,1B en safetensors) | no disponible | MIT | Pesos abiertos en Hugging Face | Checkpoint base, sin alineamiento |
+| Ling-3.1-flash | no disponible en la información | no disponible | no disponible | Pesos abiertos en Hugging Face | Versión post-entrenada del mismo modelo, orientada a uso directo |
 | DeepSeek-V4-Pro-Base | 1,6T / 49B | no disponible | no disponible | Pesos base citados en la comparativa del autor | Mayor escala; supera a Ling en CCPM y queda por debajo en Race-High, SQuAD v2, Belebele y C3 |
 | MiMo-V2.5-Pro-Base | 1,02T / 42B | no disponible | no disponible | Pesos base citados en la comparativa del autor | Escala intermedia; resultados muy próximos en comprensión lectora |
 
@@ -110,9 +110,9 @@ Estimaciones derivadas del número de parámetros (572,1B según safetensors); n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inclusionAI/Ling-3.1-flash-base
+- Modelo en Hugging Face: https://huggingface.co/inclusionAI/Ling-3.1-flash-base
 - Modelo post-entrenado de la misma familia: https://huggingface.co/inclusionAI/Ling-3.1-flash
-- Organización en HuggingFace: https://huggingface.co/inclusionAI
+- Organización en Hugging Face: https://huggingface.co/inclusionAI
 - Organización en ModelScope: https://modelscope.cn/organization/inclusionAI
 - Diagrama de arquitectura: https://cdn-uploads.huggingface.co/production/uploads/678143d4ddb1f1ce16daca8e/qwmfVu_K08auI7R_ijbIX.png
 

@@ -110,7 +110,7 @@ No se dispone en la informacion proporcionada de numeros de CER comparativos con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/myflow-ai/moonshine-tiny-ko-gguf
+- Modelo en Hugging Face: https://huggingface.co/myflow-ai/moonshine-tiny-ko-gguf
 - Modelo base upstream: https://huggingface.co/UsefulSensors/moonshine-tiny-ko
 - Commit del modelo base: https://huggingface.co/UsefulSensors/moonshine-tiny-ko/commit/80995f0
 - Paper "Flavors of Moonshine": https://huggingface.co/papers/2509.02523 (arXiv:2509.02523)

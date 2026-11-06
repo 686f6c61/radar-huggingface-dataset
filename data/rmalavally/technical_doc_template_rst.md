@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `rmalavally/technical_doc_template_rst` no contiene un modelo de inteligencia artificial, sino una plantilla de documentación técnica en formato reStructuredText (RST). Publicado por el usuario rmalavally en HuggingFace, este recurso ofrece una estructura estandarizada para documentar componentes, características o modelos, con secciones predefinidas como "Overview", "Intended use", "Requirements", "Quick start", "Configuration", "API reference", "Limitations" y "Troubleshooting". La plantilla está pensada para proyectos que utilizan Sphinx u otras herramientas que procesan RST, y su licencia Apache 2.0 permite su uso y modificación libre.
+El repositorio `rmalavally/technical_doc_template_rst` no contiene un modelo de inteligencia artificial, sino una plantilla de documentación técnica en formato reStructuredText (RST). Publicado por el usuario rmalavally en Hugging Face, este recurso ofrece una estructura estandarizada para documentar componentes, características o modelos, con secciones predefinidas como "Overview", "Intended use", "Requirements", "Quick start", "Configuration", "API reference", "Limitations" y "Troubleshooting". La plantilla está pensada para proyectos que utilizan Sphinx u otras herramientas que procesan RST, y su licencia Apache 2.0 permite su uso y modificación libre.
 
 Aunque el repositorio declara el dataset `openai/gsm8k` en su metadata, no se proporciona ningún peso, arquitectura ni código de inferencia. Se trata exclusivamente de un documento de texto con marcado RST, sin funcionalidad de modelo. Por tanto, cualquier evaluación como modelo de lenguaje o generación de texto carece de sentido. La relevancia de este recurso es puramente documental: sirve como base para redactar documentación técnica consistente en proyectos de software o IA.
 
@@ -63,6 +63,6 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rmalavally/technical_doc_template_rst
+- Repositorio en Hugging Face: https://huggingface.co/rmalavally/technical_doc_template_rst
 - Documentacion de reStructuredText (Sphinx): https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
 - Plantilla REP 12 de ROS: https://www.ros.org/reps/rep-0012.html

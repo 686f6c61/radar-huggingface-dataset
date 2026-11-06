@@ -82,7 +82,7 @@ En el leaderboard publico, v4 obtuvo 0,603 y v5 0,612 en L4. No se han publicado
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| enzyme-retrieval-v6 | no disponible (ensemble de 18 redes + BERT) | no disponible | Ensemble de fingerprints + BERT rxnfp + encoders duales | CC BY 4.0 | HuggingFace |
+| enzyme-retrieval-v6 | no disponible (ensemble de 18 redes + BERT) | no disponible | Ensemble de fingerprints + BERT rxnfp + encoders duales | CC BY 4.0 | Hugging Face |
 | Entrada de poketwouser (metodo referenciado) | no disponible | no disponible | Encoders duales con redes de grafos | no disponible | Leaderboard |
 | rxnfp BERT (Schwaller et al., 2021) | BERT de 12 capas, 256 | no disponible | BERT preentrenado en reacciones | MIT | Publico |
 
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento de las alternativas en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rishithakanugula26/enzyme-retrieval-v6
+- Modelo en Hugging Face: https://huggingface.co/rishithakanugula26/enzyme-retrieval-v6
 - Paper de rxnfp BERT (Schwaller et al., Nat. Mach. Intell. 2021): no disponible como URL en la informacion proporcionada
 - Paper de DRFP (Probst et al., 2022): no disponible como URL en la informacion proporcionada
 - ExPASy ENZYME (release 02-Sep-2026, SIB, CC BY 4.0): no disponible como URL en la informacion proporcionada

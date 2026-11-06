@@ -102,7 +102,7 @@ Para el resto de alternativas de la categoría any-to-any: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/LFM3-Omni-2B-4bit
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/LFM3-Omni-2B-4bit
 - Modelo base: https://huggingface.co/lq-preview/LFM3-Omni-2B/tree/101fb44635e88fd5ceb09508610bc559149286e8
 - Implementación de inferencia (mlx-vlm): https://github.com/Blaizzy/mlx-vlm/commit/3070dcc31948f48f9d8639b606af7bc019494fac
 - Repositorio mlx-vlm: https://github.com/Blaizzy/mlx-vlm

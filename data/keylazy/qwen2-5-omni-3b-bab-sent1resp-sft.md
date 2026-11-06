@@ -2,7 +2,7 @@
 
 ## Resumen
 
-keylazy/Qwen2.5-Omni-3B-bab-sent1resp-sft es un modelo publicado en HuggingFace por el usuario keylazy. El identificador del repositorio sugiere que se trata de un ajuste fino supervisado (SFT) del modelo base Qwen2.5-Omni-3B, aunque no existe documentación que lo confirme. La model card es un documento generado automáticamente que no incluye información sobre el desarrollo, los datos de entrenamiento, las capacidades ni el uso previsto.
+keylazy/Qwen2.5-Omni-3B-bab-sent1resp-sft es un modelo publicado en Hugging Face por el usuario keylazy. El identificador del repositorio sugiere que se trata de un ajuste fino supervisado (SFT) del modelo base Qwen2.5-Omni-3B, aunque no existe documentación que lo confirme. La model card es un documento generado automáticamente que no incluye información sobre el desarrollo, los datos de entrenamiento, las capacidades ni el uso previsto.
 
 No se han publicado descripciones técnicas ni resultados de evaluación. El tamaño del repositorio (0.1 GB) es muy inferior al esperado para los pesos completos de un modelo de aproximadamente 3.000 millones de parámetros en formato safetensors (que suelen superar los 6 GB), lo que sugiere que podría tratarse de un repositorio con adaptadores o con un checkpoint parcial. Cualquier uso de este modelo requiere verificar su contenido y su licencia antes de desplegarlo en producción.
 
@@ -21,7 +21,7 @@ No se han publicado descripciones técnicas ni resultados de evaluación. El tam
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura ni el entrenamiento. El tag transformers indica que el modelo se cargó con la biblioteca de HuggingFace, y el sufijo sft en el identificador sugiere un ajuste fino supervisado. El nombre bab-sent1resp podría referirse a una tarea concreta de respuesta a sentimiento, pero no hay documentación que lo respalde.
+No se dispone de información detallada sobre la arquitectura ni el entrenamiento. El tag transformers indica que el modelo se cargó con la biblioteca de Hugging Face, y el sufijo sft en el identificador sugiere un ajuste fino supervisado. El nombre bab-sent1resp podría referirse a una tarea concreta de respuesta a sentimiento, pero no hay documentación que lo respalde.
 
 El repositorio contiene como máximo 0.1 GB, lo que es coherente con un almacén de adaptadores o con un subconjunto de pesos. Sin datos sobre el dataset de entrenamiento, número de tokens, régimen de precisión ni procedimiento de optimización, no es posible evaluar la calidad del ajuste ni confirmar que la arquitectura base de Qwen2.5-Omni se haya mantenido intacta.
 
@@ -45,7 +45,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: no disponible. El repositorio de 0.1 GB no incluye pesos completos, por lo que no se puede estimar el consumo de memoria necesario.
 - GPU recomendadas: no disponible.
 - No se puede determinar si cabe en una GPU de consumo sin conocer el contenido real del repositorio.
-- Opciones de despliegue: no disponibles. Al usar transformers, podría cargarse con la biblioteca HuggingFace, pero sin los pesos completos no es viable.
+- Opciones de despliegue: no disponibles. Al usar transformers, podría cargarse con la biblioteca Hugging Face, pero sin los pesos completos no es viable.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -63,5 +63,5 @@ No disponible. No hay información sobre benchmarks ni características del mode
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-sent1resp-sft)
+- [Repositorio en Hugging Face](https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-sent1resp-sft)
 - No se han encontrado otros enlaces relevantes (la búsqueda web no devolvió resultados vinculados al modelo).

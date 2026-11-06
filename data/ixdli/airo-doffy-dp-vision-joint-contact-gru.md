@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AIRO-Doffy-DP-vision-joint-contact-gru es un conjunto de checkpoints intermedios de una politica de difusion (diffusion policy) para robotica, publicado por el usuario IXDLI en HuggingFace bajo la etiqueta de pipeline `robotics`. No se trata de un modelo final: la propia model card indica explicitamente que son "checkpoints intermedios de un entrenamiento en curso" y que no se genera alias `last.pt`. El modelo toma como entrada imagenes RGB, estados articulares (joints) e historial de contacto, y produce acciones de control; incorpora un modulo GRU de contacto que consume 12 fotogramas de historial con un umbral de 10 mm y un tamano de lote de 32.
+AIRO-Doffy-DP-vision-joint-contact-gru es un conjunto de checkpoints intermedios de una politica de difusion (diffusion policy) para robotica, publicado por el usuario IXDLI en Hugging Face bajo la etiqueta de pipeline `robotics`. No se trata de un modelo final: la propia model card indica explicitamente que son "checkpoints intermedios de un entrenamiento en curso" y que no se genera alias `last.pt`. El modelo toma como entrada imagenes RGB, estados articulares (joints) e historial de contacto, y produce acciones de control; incorpora un modulo GRU de contacto que consume 12 fotogramas de historial con un umbral de 10 mm y un tamano de lote de 32.
 
 La relevancia de esta ficha es mas limitada que la de un modelo de lenguaje: no hay arquitectura transformer, ni tokens de contexto, ni capacidades de generacion de texto, razonamiento o codigo. Es un artefacto de investigacion en robotica, pensado para reproducir o continuar un entrenamiento concreto, no para despliegue generico de IA. El repositorio ocupa aproximadamente 1,2 GB y contiene snapshots exactos en el paso 70000, con sumas de verificacion SHA-256 y trazabilidad en el fichero `milestone_70k.json`.
 
@@ -79,7 +79,7 @@ La model card no incluye metricas de tasa de exito, error de posicion, retardo d
 
 | Modelo | Categoria | Parametros | Contexto / historial | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AIRO-Doffy-DP-vision-joint-contact-gru (IXDLI) | diffusion policy para manipulacion con contacto | no disponible | 12 fotogramas de historial en el modulo de contacto; sin dato de contexto general | no disponible | no disponible | repositorio HuggingFace publico de 1,2 GB, checkpoints intermedios del paso 70000 |
+| AIRO-Doffy-DP-vision-joint-contact-gru (IXDLI) | diffusion policy para manipulacion con contacto | no disponible | 12 fotogramas de historial en el modulo de contacto; sin dato de contexto general | no disponible | no disponible | repositorio Hugging Face publico de 1,2 GB, checkpoints intermedios del paso 70000 |
 | Diffusion Policy (familia de referencia en aprendizaje por imitacion) | diffusion policy para manipulacion visual | no disponible | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | ampliamente conocida en la literatura, pero sin datos verificados en la informacion proporcionada |
 | 3D Diffusion Policy (DP3) | diffusion policy con entrada de nube de puntos | no disponible | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | trabajos publicos de investigacion, sin datos verificados en la informacion proporcionada |
 | ACT (Action Chunking Transformer) | transformer de prediccion de acciones por troceado | no disponible | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | metodo de referencia en manipulacion, sin datos verificados en la informacion proporcionada |
@@ -101,7 +101,7 @@ No se dispone de datos verificados de los modelos comparables dentro de la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IXDLI/AIRO-Doffy-DP-vision-joint-contact-gru
+- Modelo en Hugging Face: https://huggingface.co/IXDLI/AIRO-Doffy-DP-vision-joint-contact-gru
 - Fichero de trazabilidad citado en la model card: `milestone_70k.json` (referenciado, sin URL publica conocida)
 - Repositorio o paper asociado: no disponible
 - Blog o documentacion del autor: no disponible

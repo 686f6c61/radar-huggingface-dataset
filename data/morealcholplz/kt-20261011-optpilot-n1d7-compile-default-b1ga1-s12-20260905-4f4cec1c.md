@@ -82,8 +82,8 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-optpilot-n1d7-compile-default-b1ga1-s12-20260905-4f4cec1c
-- Perfil del autor en HuggingFace: https://huggingface.co/morealcholplz
+- Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-optpilot-n1d7-compile-default-b1ga1-s12-20260905-4f4cec1c
+- Perfil del autor en Hugging Face: https://huggingface.co/morealcholplz
 - Repositorio OptPilot (MINDS-THU): https://github.com/MINDS-THU/OptPilot
 - Documentación de instalación de OptPilot: https://github.com/MINDS-THU/OptPilot/blob/main/docs/installation.md
 - Conceptos de OptPilot Core: https://minds-thu.github.io/OptPilot/concepts/

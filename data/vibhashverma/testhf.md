@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`vibhashverma/testhf` es un repositorio alojado en HuggingFace por el usuario vibhashverma que, a fecha de la informacion disponible, no contiene documentacion tecnica alguna: la model card se limita a la linea de metadatos `license: apache-2.0` y no incluye descripcion, arquitectura, tamano ni objetivos del modelo. El identificador del repositorio ("testhf") y el hecho de que no se haya publicado ningun detalle sugieren que se trata de un repositorio de prueba o de un artefacto de validacion de flujo de trabajo, si bien esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
+`vibhashverma/testhf` es un repositorio alojado en Hugging Face por el usuario vibhashverma que, a fecha de la informacion disponible, no contiene documentacion tecnica alguna: la model card se limita a la linea de metadatos `license: apache-2.0` y no incluye descripcion, arquitectura, tamano ni objetivos del modelo. El identificador del repositorio ("testhf") y el hecho de que no se haya publicado ningun detalle sugieren que se trata de un repositorio de prueba o de un artefacto de validacion de flujo de trabajo, si bien esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
-No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los datos de entrenamiento ni los idiomas soportados. El campo `pipeline` de HuggingFace no esta definido y el repositorio no declara ningun tag de tarea (`text-generation`, `automatic-speech-recognition`, etc.), lo que impide clasificarlo en una categoria funcional concreta.
+No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los datos de entrenamiento ni los idiomas soportados. El campo `pipeline` de Hugging Face no esta definido y el repositorio no declara ningun tag de tarea (`text-generation`, `automatic-speech-recognition`, etc.), lo que impide clasificarlo en una categoria funcional concreta.
 
 Su relevancia actual es, por tanto, nula desde el punto de vista de la evaluacion tecnica: cero descargas registradas, un unico "like" y ninguna actualizacion desde la fecha de creacion. Cualquier decision de adopcion requeriria contactar con el autor o inspeccionar directamente los ficheros del repositorio para determinar si existen pesos y de que tipo son.
 
@@ -32,7 +32,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composici
 - No se ha documentado ninguna capacidad del modelo en la informacion disponible.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; el campo de idiomas de HuggingFace no esta cumplimentado.
+- Capacidades multilingues: no disponible; el campo de idiomas de Hugging Face no esta cumplimentado.
 - Modo "thinking" o razonamiento extendido: no disponible.
 - Capacidades multimodales (vision, audio): no disponible.
 
@@ -40,7 +40,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composici
 
 No es posible determinar casos de uso concretos sin informacion sobre arquitectura, tamano, contexto y capacidades. Los siguientes escenarios se plantean unicamente como marcos de evaluacion que habria que validar previamente contra los ficheros reales del repositorio:
 
-- Validacion de pipelines de despliegue: el repositorio solo seria util para probar el flujo de publicacion y descarga en HuggingFace si contiene pesos reales, algo que no esta confirmado.
+- Validacion de pipelines de despliegue: el repositorio solo seria util para probar el flujo de publicacion y descarga en Hugging Face si contiene pesos reales, algo que no esta confirmado.
 - Prototipado interno de integracion con `transformers`: requiere verificar primero que exista un `config.json` valido y un tokenizador asociado.
 - Pruebas de cuantizacion y conversion a GGUF/Ollama: solo aplicable si los pesos estan publicados y su arquitectura es compatible con las herramientas de conversion.
 - Evaluacion comparativa de referencia: sin benchmarks publicados no puede emplearse como linea base frente a otros modelos.
@@ -71,7 +71,7 @@ No disponible. Al no conocerse la tarea, el tamano ni la arquitectura, no es pos
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay model card, ni ficha tecnica, ni descripcion del entrenamiento, lo que impide cualquier evaluacion de calidad.
-- Metadatos minimos: los unicos tags son `license:apache-2.0` y `region:us`; no hay tag de tarea, idioma ni libreria, por lo que HuggingFace no puede clasificar el repositorio.
+- Metadatos minimos: los unicos tags son `license:apache-2.0` y `region:us`; no hay tag de tarea, idioma ni libreria, por lo que Hugging Face no puede clasificar el repositorio.
 - Cero descargas y un unico "like": no existe evidencia de uso ni de validacion por parte de la comunidad.
 - Posible repositorio de prueba: el nombre "testhf" y la ausencia de contenido apuntan a un uso experimental; conviene verificar la existencia real de pesos antes de cualquier integracion.
 - Riesgo de alucinacion y sesgos: no evaluables sin acceso al modelo y a su dataset de entrenamiento.
@@ -81,6 +81,6 @@ No disponible. Al no conocerse la tarea, el tamano ni la arquitectura, no es pos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vibhashverma/testhf
+- Repositorio en Hugging Face: https://huggingface.co/vibhashverma/testhf
 - Texto de la licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados al modelo.

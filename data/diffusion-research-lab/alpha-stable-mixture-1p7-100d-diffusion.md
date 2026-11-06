@@ -79,8 +79,8 @@ No se dispone de datos de rendimiento comparables de otros modelos de la misma c
 
 | Modelo | Arquitectura | Datos | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alpha-stable-mixture-1p7-100d-diffusion | DDPM-V + DLPM-Eps | Mezcla alpha-estable, 100 dimensiones | MIT | HuggingFace |
-| Diffusion-Research-Lab/alpha-stable-1p7-100d-diffusion | DDPM-V + DLPM-Eps | Cola pesada sintetica | MIT | HuggingFace |
+| alpha-stable-mixture-1p7-100d-diffusion | DDPM-V + DLPM-Eps | Mezcla alpha-estable, 100 dimensiones | MIT | Hugging Face |
+| Diffusion-Research-Lab/alpha-stable-1p7-100d-diffusion | DDPM-V + DLPM-Eps | Cola pesada sintetica | MIT | Hugging Face |
 | Otros modelos de difusion para datos tabulares/numericos | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparables de otros modelos de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Diffusion-Research-Lab/alpha-stable-mixture-1p7-100d-diffusion
+- Modelo en Hugging Face: https://huggingface.co/Diffusion-Research-Lab/alpha-stable-mixture-1p7-100d-diffusion
 - Repositorio hermano (alpha-stable-1p7-100d-diffusion): https://huggingface.co/Diffusion-Research-Lab/alpha-stable-1p7-100d-diffusion
 - Paquete de entrenamiento (gendynamics toolkit): https://github.com/Diffusion-Research-Lab/2_training_2026_tail_reference_models
 - Paper sobre difusion MoE (referencia general, no especifica del modelo): https://arxiv.org/html/2512.01252v1

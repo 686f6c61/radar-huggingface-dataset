@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`flaird-modernbert-large-concatenation-single-task` es un modelo de clasificación de texto publicado por el usuario de HuggingFace `roadrage10` (perfil también identificado como ckp10). Se trata de un fine-tuning de ModernBERT-large, un encoder de arquitectura transformer bidireccional con 397.024.257 parámetros, orientado a una tarea de clasificación binaria o de scoring. El nombre y el ecosistema en el que se publica lo vinculan a la familia FLAIRD de detectores de texto generado por IA empleados en la competición RAID y en el corpus `flaird-raid-pan26`.
+`flaird-modernbert-large-concatenation-single-task` es un modelo de clasificación de texto publicado por el usuario de Hugging Face `roadrage10` (perfil también identificado como ckp10). Se trata de un fine-tuning de ModernBERT-large, un encoder de arquitectura transformer bidireccional con 397.024.257 parámetros, orientado a una tarea de clasificación binaria o de scoring. El nombre y el ecosistema en el que se publica lo vinculan a la familia FLAIRD de detectores de texto generado por IA empleados en la competición RAID y en el corpus `flaird-raid-pan26`.
 
 El modelo resuelve un problema muy concreto: asignar una puntuación o etiqueta a un texto de entrada (probablemente "generado por IA" frente a "humano"), no generar contenido. Por tanto, no es un modelo conversacional ni un LLM: no admite instrucciones, no genera texto y no soporta tool calling. Su relevancia actual está en el ámbito de la detección de contenido sintético, la curación de datasets y la integridad académica.
 
@@ -90,11 +90,11 @@ Los datos de los modelos alternativos proceden de su documentación pública; lo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| flaird-modernbert-large-concatenation-single-task | 397 M | No disponible (base: 8192) | Clasificación / detección de IA | No disponible | HuggingFace, 5 descargas |
-| flaird-modernbert-large-concatenation-single-task-frozen | No disponible | No disponible | Clasificación / detección de IA | No disponible | HuggingFace (variante con encoder congelado) |
-| ModernBERT-large (base) | ~395 M | 8192 tokens | Encoder de propósito general | Apache 2.0 | HuggingFace |
-| DeBERTa-v3-large | ~304 M | 512 tokens | Encoder de propósito general | MIT | HuggingFace |
-| RoBERTa-large | ~355 M | 512 tokens | Encoder de propósito general | MIT | HuggingFace |
+| flaird-modernbert-large-concatenation-single-task | 397 M | No disponible (base: 8192) | Clasificación / detección de IA | No disponible | Hugging Face, 5 descargas |
+| flaird-modernbert-large-concatenation-single-task-frozen | No disponible | No disponible | Clasificación / detección de IA | No disponible | Hugging Face (variante con encoder congelado) |
+| ModernBERT-large (base) | ~395 M | 8192 tokens | Encoder de propósito general | Apache 2.0 | Hugging Face |
+| DeBERTa-v3-large | ~304 M | 512 tokens | Encoder de propósito general | MIT | Hugging Face |
+| RoBERTa-large | ~355 M | 512 tokens | Encoder de propósito general | MIT | Hugging Face |
 
 No hay datos de rendimiento comparables publicados para ninguno de estos modelos en la tarea específica, por lo que la comparación se limita a tamaño, contexto y licencia. Existen variantes del mismo modelo atribuidas al usuario `Mahmoodanaam` en directorios de terceros, pero no se ha podido verificar su relación exacta con este repositorio.
 
@@ -113,7 +113,7 @@ No hay datos de rendimiento comparables publicados para ninguno de estos modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roadrage10/flaird-modernbert-large-concatenation-single-task
+- Modelo en Hugging Face: https://huggingface.co/roadrage10/flaird-modernbert-large-concatenation-single-task
 - Variante con encoder congelado: https://huggingface.co/roadrage10/flaird-modernbert-large-concatenation-single-task-frozen
 - Perfil del autor: https://huggingface.co/roadrage10
 - Ficha en directorio de terceros (savrn): https://savrn.com/models/flaird-modernbert-large-concatenation-single-task

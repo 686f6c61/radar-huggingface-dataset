@@ -6,7 +6,7 @@ OmniV2X es un planificador generativo de conducción cooperativa end-to-end desa
 
 La arquitectura emplea un codificador visual congelado, codificadores ligeros para V2X y mapa, normalización por fuente y un mecanismo de inyección por atención cruzada. El modelo se preentrena en datos de conducción de agente único (NAVSIM/OpenScene) y después se adapta al conjunto de datos cooperativo DAIR-V2X-Seq mediante tokens de objetos de infraestructura. Los resultados reportados en el paper muestran un error L2 medio de 0,86 metros, una tasa de colisión a 3 segundos de 0,06 % y un PDMS de 88,33 en la variante sin mapa, con una latencia de inferencia de 35 ms y un consumo de memoria GPU de 550 MB, lo que lo hace viable para despliegue en tiempo real.
 
-El repositorio de HuggingFace contiene los checkpoints preentrenados (variantes con y sin tokens de mapa) y el código de entrenamiento, inferencia y evaluación. El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación.
+El repositorio de Hugging Face contiene los checkpoints preentrenados (variantes con y sin tokens de mapa) y el código de entrenamiento, inferencia y evaluación. El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación.
 
 ## Especificaciones tecnicas
 
@@ -81,7 +81,7 @@ No se dispone de informacion sobre modelos comparables directamente en la docume
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AndyPJT/OmniV2X
+- Hugging Face: https://huggingface.co/AndyPJT/OmniV2X
 - Paper (arXiv): https://arxiv.org/abs/2606.21165
 - Codigo (GitHub): https://github.com/JuntongPeng/OmniV2X
 - Checkpoint sin mapa: https://huggingface.co/AndyPJT/OmniV2X/resolve/main/omniv2x_dairv2x_no_map.ckpt

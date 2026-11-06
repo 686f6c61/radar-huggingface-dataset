@@ -101,10 +101,10 @@ No se dispone de información sobre modelos comparables de otros fabricantes (po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fiore-lab/GLM-5.3-EXL3-Experts-4bit
+- Repositorio Hugging Face: https://huggingface.co/fiore-lab/GLM-5.3-EXL3-Experts-4bit
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Pesos BF16 de origen (revisión `9d2398f`): https://huggingface.co/zai-org/GLM-5.3-BF16
 - Checkpoint de la receta para 8 DGX Spark: https://huggingface.co/fiore-lab/GLM-5.3-EXL3-8x-DGX-Sparks
 - Checkpoint de la receta para 4 DGX Spark: https://huggingface.co/fiore-lab/GLM-5.3-EXL3-4x-DGX-Sparks
 - Receta y código (Apache-2.0): https://github.com/fiore-labo/fiore-glm5.3
-- Licencia del modelo: fichero `LICENSE` dentro del repositorio de HuggingFace
+- Licencia del modelo: fichero `LICENSE` dentro del repositorio de Hugging Face

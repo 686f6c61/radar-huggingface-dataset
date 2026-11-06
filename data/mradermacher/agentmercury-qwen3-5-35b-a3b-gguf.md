@@ -6,7 +6,7 @@ AgentMercury-Qwen3.5-35B-A3B-GGUF es una cuantización en formato GGUF del model
 
 El modelo base Qwen3.5-35B-A3B destaca por su relación entre rendimiento y eficiencia: con 34,66 mil millones de parámetros totales y solo 3 mil millones activos por token, logra superar en benchmarks a modelos mucho más grandes como Qwen3-235B-A22B, según declaraciones de Alibaba. Esta cuantización GGUF permite aprovechar esas capacidades en entornos con VRAM limitada, lo que la hace relevante para desarrolladores que necesitan desplegar un asistente multimodal de razonamiento en local, sin depender de APIs en la nube.
 
-La ficha se basa en la información disponible del repositorio de HuggingFace y en datos públicos del modelo base Qwen3.5. No se dispone de documentación específica sobre el fine-tune AgentMercury, por lo que las capacidades descritas corresponden al modelo base salvo indicación contraria.
+La ficha se basa en la información disponible del repositorio de Hugging Face y en datos públicos del modelo base Qwen3.5. No se dispone de documentación específica sobre el fine-tune AgentMercury, por lo que las capacidades descritas corresponden al modelo base salvo indicación contraria.
 
 ## Especificaciones tecnicas
 
@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/AgentMercury-Qwen3.5-35B-A3B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/AgentMercury-Qwen3.5-35B-A3B-GGUF
 - Modelo original de Minbyul: https://huggingface.co/Minbyul/AgentMercury-Qwen3.5-35B-A3B
 - Modelo base Qwen3.5-35B-A3B: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Cuantizacion GGUF de Unsloth (referencia): https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF

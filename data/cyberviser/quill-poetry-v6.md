@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyberviser/quill-poetry-v6 | Adaptador LoRA sobre Mistral-7B-Instruct-v0.3 | No disponible (base 7B) | No disponible | apache-2.0 | HuggingFace, 0 descargas |
-| mistralai/Mistral-7B-Instruct-v0.3 | Modelo completo instruct | 7B | No disponible en la informacion proporcionada | apache-2.0 | HuggingFace |
+| cyberviser/quill-poetry-v6 | Adaptador LoRA sobre Mistral-7B-Instruct-v0.3 | No disponible (base 7B) | No disponible | apache-2.0 | Hugging Face, 0 descargas |
+| mistralai/Mistral-7B-Instruct-v0.3 | Modelo completo instruct | 7B | No disponible en la informacion proporcionada | apache-2.0 | Hugging Face |
 | Otros adaptadores de poesia comparables | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas en la informacion disponible |
 
 La busqueda web realizada no devolvio resultados relacionados con el modelo ni con adaptadores comparables: los unicos resultados obtenidos fueron paginas de descarga del navegador Google Chrome, sin ninguna relacion con el objeto de esta ficha. Por tanto, no es posible establecer una comparativa de rendimiento con alternativas de la misma categoria con los datos disponibles.
@@ -91,6 +91,6 @@ La busqueda web realizada no devolvio resultados relacionados con el modelo ni c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cyberviser/quill-poetry-v6
+- Repositorio Hugging Face: https://huggingface.co/cyberviser/quill-poetry-v6
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Paper, blog, repositorio de codigo o demo: no disponibles. La busqueda web no devolvio ningun resultado relacionado con el modelo.

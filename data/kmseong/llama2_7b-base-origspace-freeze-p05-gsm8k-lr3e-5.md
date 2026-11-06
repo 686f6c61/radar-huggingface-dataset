@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kmseong/llama2_7b-base-origspace-freeze-p05-gsm8k-lr3e-5` es un checkpoint de investigación publicado en HuggingFace por el usuario kmseong. Se trata de un modelo derivado de la familia Llama 2 de 7B parámetros (6.738.415.616 parámetros reales medidos en los ficheros safetensors), cuyo identificador sugiere un ajuste fino sobre el conjunto de datos GSM8K (problemas aritméticos de nivel escolar) con alguna estrategia de congelación parcial de parámetros, un valor `p05` (probablemente una proporción de 0,05) y una tasa de aprendizaje de 3e-5. No se documenta en el repositorio ni la configuración exacta del experimento ni el procedimiento de entrenamiento.
+`kmseong/llama2_7b-base-origspace-freeze-p05-gsm8k-lr3e-5` es un checkpoint de investigación publicado en Hugging Face por el usuario kmseong. Se trata de un modelo derivado de la familia Llama 2 de 7B parámetros (6.738.415.616 parámetros reales medidos en los ficheros safetensors), cuyo identificador sugiere un ajuste fino sobre el conjunto de datos GSM8K (problemas aritméticos de nivel escolar) con alguna estrategia de congelación parcial de parámetros, un valor `p05` (probablemente una proporción de 0,05) y una tasa de aprendizaje de 3e-5. No se documenta en el repositorio ni la configuración exacta del experimento ni el procedimiento de entrenamiento.
 
 El modelo no incluye tarjeta de modelo descriptiva: no hay `pipeline_tag`, licencia, idiomas declarados ni resultados de evaluación publicados. El repositorio tiene un tamaño de 13,5 GB, coherente con pesos en precisión de 16 bits (fp16/bf16) en formato safetensors, y acumula 12 descargas y 0 likes, lo que indica un uso muy limitado y un carácter puramente experimental.
 
@@ -70,17 +70,17 @@ Estimaciones calculadas a partir de los 6.738.415.616 parámetros del modelo; no
 - GPU de datacenter: A100 40/80 GB, H100 80 GB, L40S 48 GB. Suficientes en fp16 con contextos largos y lotes grandes.
 - GPU de consumo: una RTX 4090 (24 GB) puede ejecutar el modelo en fp16 con contexto moderado; una RTX 3090 (24 GB) queda en un margen más ajustado. Tarjetas de 8-12 GB (RTX 3060 12 GB, RTX 4070) requieren cuantización int4 o int8.
 - CPU: viable únicamente con cuantización de 4 bits mediante llama.cpp, con latencias del orden de segundos por token según el procesador.
-- Opciones de despliegue: llama.cpp y Ollama para cuantizaciones GGUF; vLLM y TGI para servicio en GPU con pesos safetensors; también es posible cargarlo con las librerías habituales de HuggingFace Transformers.
+- Opciones de despliegue: llama.cpp y Ollama para cuantizaciones GGUF; vLLM y TGI para servicio en GPU con pesos safetensors; también es posible cargarlo con las librerías habituales de Hugging Face Transformers.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas de tokens por segundo ni de tiempo hasta el primer token para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (kmseong/llama2_7b-base-origspace-freeze-p05-gsm8k-lr3e-5) | 6.738.415.616 | No disponible | No disponible | HuggingFace, 12 descargas |
-| Llama 2 7B base (meta-llama/Llama-2-7b-hf) | 6.738.415.616 | 4096 tokens | Llama 2 Community License | HuggingFace, ampliamente distribuido |
-| Llama 2 7B Chat (meta-llama/Llama-2-7b-chat-hf) | 6.738.415.616 | 4096 tokens | Llama 2 Community License | HuggingFace, ampliamente distribuido |
-| Mistral 7B v0.1 | ~7.240 millones | 8192 tokens | Apache 2.0 | HuggingFace, ampliamente distribuido |
+| Este checkpoint (kmseong/llama2_7b-base-origspace-freeze-p05-gsm8k-lr3e-5) | 6.738.415.616 | No disponible | No disponible | Hugging Face, 12 descargas |
+| Llama 2 7B base (meta-llama/Llama-2-7b-hf) | 6.738.415.616 | 4096 tokens | Llama 2 Community License | Hugging Face, ampliamente distribuido |
+| Llama 2 7B Chat (meta-llama/Llama-2-7b-chat-hf) | 6.738.415.616 | 4096 tokens | Llama 2 Community License | Hugging Face, ampliamente distribuido |
+| Mistral 7B v0.1 | ~7.240 millones | 8192 tokens | Apache 2.0 | Hugging Face, ampliamente distribuido |
 
 Los datos de los modelos de referencia corresponden a información pública de sus respectivas fichas y no se han verificado contra este repositorio. No hay datos de rendimiento comparado disponibles para el checkpoint analizado, ya que no publica evaluaciones.
 
@@ -97,7 +97,7 @@ Los datos de los modelos de referencia corresponden a información pública de s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kmseong/llama2_7b-base-origspace-freeze-p05-gsm8k-lr3e-5
+- Modelo en Hugging Face: https://huggingface.co/kmseong/llama2_7b-base-origspace-freeze-p05-gsm8k-lr3e-5
 - Paper de Llama 2 (referencia de la arquitectura base): https://arxiv.org/abs/2307.09288
 - Repositorio de Llama 2 de Meta: https://github.com/facebookresearch/llama
 - Dataset GSM8K: https://huggingface.co/datasets/openai/gsm8k

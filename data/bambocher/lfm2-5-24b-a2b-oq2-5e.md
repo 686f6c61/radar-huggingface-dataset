@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato / precisión | Huella | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LFM2.5-24B-A2B-oQ2.5e (este) | 23,972B totales (activos no confirmados) | No disponible | safetensors MLX, mixta 2/3/8 bits (3,110 bpw) | 8,678 GiB | No disponible | HuggingFace, 8 descargas |
+| LFM2.5-24B-A2B-oQ2.5e (este) | 23,972B totales (activos no confirmados) | No disponible | safetensors MLX, mixta 2/3/8 bits (3,110 bpw) | 8,678 GiB | No disponible | Hugging Face, 8 descargas |
 | LFM2.5-24B-A2B (base, BF16) | 23,972B totales | No disponible | safetensors BF16 | ~44,6 GiB (cálculo a 2 bytes/parámetro) | No disponible en esta información | Repositorio del autor original, no enlazado aquí |
 | Otras cuantizaciones del mismo modelo (4 bits uniforme, GGUF, etc.) | 23,972B | No disponible | No disponible | No disponible | No disponible | No se han identificado en la información proporcionada |
 
@@ -97,7 +97,7 @@ No se dispone de datos verificables de modelos alternativos de la misma categor�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bambocher/LFM2.5-24B-A2B-oQ2.5e
+- Repositorio en Hugging Face: https://huggingface.co/bambocher/LFM2.5-24B-A2B-oQ2.5e
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base LFM2.5-24B-A2B: no disponible en la información proporcionada (sin enlace verificado)
 - Paper, blog o demo oficial: no disponibles en la información proporcionada

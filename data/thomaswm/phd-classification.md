@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`thomaswm/phd-classification` es un prototipo de investigación publicado en HuggingFace por el usuario thomaswm que implementa una arquitectura **MoCo v3** orientada a tareas de **clasificación**. Según la propia model card, se trata de un artefacto de carácter experimental: el checkpoint incluido (`model.safetensors`) es una **inicialización válida para pruebas de humo (smoke tests)**, no un modelo entrenado ni evaluado con benchmarks. El autor declara explícitamente que no se reclama ninguna puntuación de rendimiento en el repositorio.
+`thomaswm/phd-classification` es un prototipo de investigación publicado en Hugging Face por el usuario thomaswm que implementa una arquitectura **MoCo v3** orientada a tareas de **clasificación**. Según la propia model card, se trata de un artefacto de carácter experimental: el checkpoint incluido (`model.safetensors`) es una **inicialización válida para pruebas de humo (smoke tests)**, no un modelo entrenado ni evaluado con benchmarks. El autor declara explícitamente que no se reclama ninguna puntuación de rendimiento en el repositorio.
 
 El modelo es de escala muy reducida: el recuento de parámetros en formato safetensors es de **33.088 parámetros**, lo que lo sitúa lejísimos de cualquier modelo utilizable en producción. La arquitectura declarada combina atención de ventana deslizante (sliding window attention), fusión mediante co-attention, activación ReLU y normalización LayerNorm, bajo la etiqueta "Mocov3" y escala "small". La receta por defecto usa el optimizador Adam con un scheduler OneCycle.
 
@@ -71,13 +71,13 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - **Sin métricas verificables**: no hay benchmarks, ni resultados de evaluación, ni logs de entrenamiento publicados.
 - **Riesgo de alucinación**: no aplica en el sentido generativo, pero cualquier resultado derivado de este artefacto sin entrenamiento previo carece de validez.
 - **Idiomas no declarados**: no se especifica ningún idioma soportado, lo que impide garantizar funcionamiento multilingüe.
-- **Carga no estándar**: al ser una implementación personalizada, requiere un adaptador explícito para funcionar con APIs genéricas de HuggingFace o frameworks de serving.
+- **Carga no estándar**: al ser una implementación personalizada, requiere un adaptador explícito para funcionar con APIs genéricas de Hugging Face o frameworks de serving.
 - **Licencia BSD-3-Clause**: permisiva y compatible con uso comercial, pero el autor advierte de revisar por separado los términos de los datos de origen si se emplea con datasets externos.
 - **Actividad nula**: 0 descargas y 0 likes; no existe comunidad ni soporte. Creado y actualizado el 8 de octubre de 2026.
 - **Documentación incompleta**: no se detallan hiperparámetros de arquitectura (capas, cabezas, dimensión), ni recetas de entrenamiento reproducibles más allá de Adam + OneCycle.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thomaswm/phd-classification
+- Hugging Face: https://huggingface.co/thomaswm/phd-classification
 
 No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web. Los resultados obtenidos no guardan relación con el modelo.

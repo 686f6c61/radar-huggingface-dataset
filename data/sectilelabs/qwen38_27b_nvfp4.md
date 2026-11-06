@@ -101,7 +101,7 @@ La comparacion relevante es contra el propio modelo upstream: misma licencia y m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SectileLabs/qwen38_27b_nvfp4
+- Repositorio Hugging Face: https://huggingface.co/SectileLabs/qwen38_27b_nvfp4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B (revision `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`)
 - Drafter: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2 (revision `dedf8df68adfb1afeaf7b7480c0a0243108177b4`)
 - Paper, blog, repositorio de codigo o demo de GInfer: no disponibles en la informacion proporcionada.

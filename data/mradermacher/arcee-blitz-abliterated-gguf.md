@@ -4,7 +4,7 @@
 
 Arcee-Blitz-abliterated-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo huihui-ai/Arcee-Blitz-abliterated, publicada por mradermacher. El modelo subyacente es una version "abliterated" (es decir, con los mecanismos de rechazo eliminados mediante la tecnica de abliteration, que proyecta fuera de los pesos la direccion asociada al comportamiento de negativa) del modelo Arcee-Blitz. El resultado es un modelo conversacional sin censura, orientado a generacion de texto en ingles.
 
-El repositorio contiene unicamente pesos cuantizados estaticos en formato GGUF, pensados para su uso con llama.cpp y herramientas compatibles (Ollama, LM Studio, etc.). No incluye los pesos originales en safetensors, aunque el dato de parametros totales reportado por HuggingFace es de 23.572.403.200 parametros (aproximadamente 23,6 mil millones), lo que situa al modelo en la categoria de modelos densos de gran tamano.
+El repositorio contiene unicamente pesos cuantizados estaticos en formato GGUF, pensados para su uso con llama.cpp y herramientas compatibles (Ollama, LM Studio, etc.). No incluye los pesos originales en safetensors, aunque el dato de parametros totales reportado por Hugging Face es de 23.572.403.200 parametros (aproximadamente 23,6 mil millones), lo que situa al modelo en la categoria de modelos densos de gran tamano.
 
 La relevancia de esta ficha radica en que permite ejecutar localmente un modelo de ~23,6B en hardware de consumo mediante cuantizaciones que van desde 9 GB (Q2_K) hasta 25,2 GB (Q8_0), a costa de asumir las limitaciones y riesgos asociados a un modelo sin alineacion de seguridad. La licencia es Apache 2.0 segun la model card.
 
@@ -96,7 +96,7 @@ No se dispone de informacion suficiente sobre modelos comparables de la misma ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Arcee-Blitz-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Arcee-Blitz-abliterated-GGUF
 - Modelo base: https://huggingface.co/huihui-ai/Arcee-Blitz-abliterated
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Arcee-Blitz-abliterated-i1-GGUF
 - Pagina de resumen del autor: https://hf.tst.eu/model#Arcee-Blitz-abliterated-GGUF

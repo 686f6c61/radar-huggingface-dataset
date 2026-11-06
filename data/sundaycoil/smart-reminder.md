@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sundaycoil/smart-reminder`, publicado por el usuario `sundaycoil` en HuggingFace, es un modelo del que no se dispone de información técnica pública en la ficha del repositorio. A fecha de creación (abril de 2026) y última actualización (agosto de 2026), el modelo acumula 7 likes y 0 descargas, lo que sugiere que se trata de un proyecto reciente o de acceso restringido. El tag `region:us` indica que está orientado al mercado estadounidense, pero no se especifica su pipeline, licencia ni idiomas soportados.
+El modelo `sundaycoil/smart-reminder`, publicado por el usuario `sundaycoil` en Hugging Face, es un modelo del que no se dispone de información técnica pública en la ficha del repositorio. A fecha de creación (abril de 2026) y última actualización (agosto de 2026), el modelo acumula 7 likes y 0 descargas, lo que sugiere que se trata de un proyecto reciente o de acceso restringido. El tag `region:us` indica que está orientado al mercado estadounidense, pero no se especifica su pipeline, licencia ni idiomas soportados.
 
 Dado que no se ha publicado ninguna especificación técnica, arquitectura, dataset de entrenamiento o benchmark, no es posible evaluar sus capacidades reales ni su rendimiento. Esta ficha se limita a documentar la información disponible y a señalar las carencias de datos, advirtiendo de que cualquier uso en producción requeriría una verificación previa exhaustiva.
 
@@ -59,6 +59,6 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el dominio de apli
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sundaycoil/smart-reminder
+- Repositorio Hugging Face: https://huggingface.co/sundaycoil/smart-reminder
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la información proporcionada.

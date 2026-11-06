@@ -79,7 +79,7 @@ Inkling se compara en la tabla de benchmarks con varios modelos de gran escala, 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/thinkingmachines/Inkling)
+- [Modelo en Hugging Face](https://huggingface.co/thinkingmachines/Inkling)
 - [Playground de Tinker](https://tinker.thinkingmachines.ai/playground)
 - [Tinker Cookbook (GitHub)](https://github.com/thinking-machines-lab/tinker-cookbook)
 - [Política de uso aceptable](https://thinkingmachines.ai/model-acceptable-use-policy)
@@ -87,4 +87,4 @@ Inkling se compara en la tabla de benchmarks con varios modelos de gran escala, 
 - [Receta de vLLM](https://recipes.vllm.ai/thinkingmachines/Inkling)
 - [Receta de TokenSpeed](https://lightseek.org/tokenspeed/recipes/models#Inkling)
 - [Receta de Unsloth](https://unsloth.ai/docs/models/inkling)
-- [Blog de HuggingFace sobre Inkling](https://hf.co/blog/thinkingmachines-inkling)
+- [Blog de Hugging Face sobre Inkling](https://hf.co/blog/thinkingmachines-inkling)

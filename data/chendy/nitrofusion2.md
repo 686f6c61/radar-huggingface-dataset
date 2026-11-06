@@ -6,7 +6,7 @@ NitroFusion2 es un modelo de generación de imágenes texto-a-imagen de 1 a 2 pa
 
 El modelo cuenta con aproximadamente 6.150 millones de parámetros en formato safetensors y se distribuye bajo licencia Apache 2.0, con pesos en safetensors y cuantizaciones GGUF. Está pensado para integrarse en flujos de trabajo de ComfyUI y en pipelines de diffusers, y su relevancia actual radica en la reducción drástica del coste de inferencia en generación de imágenes de alta calidad, un aspecto crítico para despliegues en producción.
 
-La ficha se basa exclusivamente en la información disponible en HuggingFace y en la model card del autor; los detalles de entrenamiento y los resultados de benchmarks no están publicados todavía (el paper está anunciado como "coming soon").
+La ficha se basa exclusivamente en la información disponible en Hugging Face y en la model card del autor; los detalles de entrenamiento y los resultados de benchmarks no están publicados todavía (el paper está anunciado como "coming soon").
 
 ## Especificaciones tecnicas
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Pasos de inferencia | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NitroFusion2 | 6.150 M | 1-2 | prompt de texto (en) | apache-2.0 | HuggingFace, GGUF, ComfyUI, diffusers |
-| Z-Image-Turbo (modelo base) | no disponible en la informacion | no disponible | prompt de texto | no disponible en la informacion | HuggingFace (Tongyi-MAI) |
+| NitroFusion2 | 6.150 M | 1-2 | prompt de texto (en) | apache-2.0 | Hugging Face, GGUF, ComfyUI, diffusers |
+| Z-Image-Turbo (modelo base) | no disponible en la informacion | no disponible | prompt de texto | no disponible en la informacion | Hugging Face (Tongyi-MAI) |
 | NitroFusion (predecesor, CVPR 2025) | no disponible en la informacion | 1 (single-step) | prompt de texto | no disponible en la informacion | GitHub, CVPR 2025 |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los modelos alternativos en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible.
@@ -84,9 +84,9 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChenDY/NitroFusion2
+- Hugging Face: https://huggingface.co/ChenDY/NitroFusion2
 - GitHub: https://github.com/ChenDarYen/NitroFusion2
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/ChenDY/NitroFusion2
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/ChenDY/NitroFusion2
 - Project page: https://chendaryen.github.io/NitroFusion2.github.io/
 - Modelo base Z-Image-Turbo: https://github.com/Tongyi-MAI/Z-Image
 - Repositorio GGUF: https://huggingface.co/ChenDY/NitroFusion2/tree/main

@@ -69,7 +69,7 @@ No se dispone de información suficiente para comparar este bundle con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shadow/mmh3turbo-bundles
+- Repositorio Hugging Face: https://huggingface.co/shadow/mmh3turbo-bundles
 - Repositorio del port `mmh3turbo`: https://github.com/vra/mmh3turbo
 - Mirror de GitHub con documentación adicional: https://github.com/shadowcz007/mmh3turbo-mirror
 - Repositorio alternativo de bundles: https://huggingface.co/yunfengwang/mmh3turbo-bundles

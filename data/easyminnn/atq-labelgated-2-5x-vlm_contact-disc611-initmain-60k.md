@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| atq-labelgated-2.5x-vlm_contact-disc611-initmain-60k | 2,83 mil millones | no disponible | VLA con MoE de 4 expertos y gating por etiqueta | other | Pesos safetensors en HuggingFace; 0 descargas |
+| atq-labelgated-2.5x-vlm_contact-disc611-initmain-60k | 2,83 mil millones | no disponible | VLA con MoE de 4 expertos y gating por etiqueta | other | Pesos safetensors en Hugging Face; 0 descargas |
 | nvidia/GR00T-N1.5-3B (modelo base) | no disponible en la informacion proporcionada | no disponible | VLA | no disponible en la informacion proporcionada | Repositorio publico de NVIDIA |
-| easyminnn/atq-labelgated-2.5x-vlm_contact-disc611-60k (variante hermano) | no disponible | no disponible | VLA con MoE de 4 expertos y gating por etiqueta | other | Pesos safetensors en HuggingFace |
+| easyminnn/atq-labelgated-2.5x-vlm_contact-disc611-60k (variante hermano) | no disponible | no disponible | VLA con MoE de 4 expertos y gating por etiqueta | other | Pesos safetensors en Hugging Face |
 | Otras familias VLA (OpenVLA, pi0 y similares) | no disponible | no disponible | no disponible | no disponible | No se han recuperado datos comparativos en la informacion disponible |
 
 La unica comparacion documentada de forma explicita por el autor es contra el checkpoint hermano `easyminnn/atq-labelgated-2.5x-vlm_contact-disc611-60k`, del que difiere en la inicializacion de expertos (copia del decodificador `main`) y en un calentamiento del router mas corto (1.000 pasos).
@@ -85,7 +85,7 @@ La unica comparacion documentada de forma explicita por el autor es contra el ch
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/easyminnn/atq-labelgated-2.5x-vlm_contact-disc611-initmain-60k
+- Modelo en Hugging Face: https://huggingface.co/easyminnn/atq-labelgated-2.5x-vlm_contact-disc611-initmain-60k
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.5-3B
 - Checkpoint hermano (misma configuracion, distinta inicializacion de expertos y calentamiento del router): https://huggingface.co/easyminnn/atq-labelgated-2.5x-vlm_contact-disc611-60k
 - Dataset de etiquetas de velocidad: https://huggingface.co/datasets/prehj/robocasa-ratio-labels-contact

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `hubert-ml/deep-rl-class-ppo-LunarLander-v3` no es un modelo de lenguaje, sino un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3. Lo publica el usuario `hubert-ml` en HuggingFace, presumiblemente como parte de las practicas del curso Deep Reinforcement Learning Class, dado el identificador del repositorio y el uso de la libreria stable-baselines3 como etiqueta principal.
+El modelo `hubert-ml/deep-rl-class-ppo-LunarLander-v3` no es un modelo de lenguaje, sino un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3. Lo publica el usuario `hubert-ml` en Hugging Face, presumiblemente como parte de las practicas del curso Deep Reinforcement Learning Class, dado el identificador del repositorio y el uso de la libreria stable-baselines3 como etiqueta principal.
 
 El problema que resuelve es un problema de control clasico: aterrizar de forma segura un modulo lunar en una zona determinada, gestionando empuje vertical y horizontal, consumo de combustible y contacto con el suelo. La observacion del entorno es un vector de 8 dimensiones (posicion, velocidad, angulo, velocidad angular y dos pares de indicadores booleanos de contacto con el suelo) y el espacio de acciones es discreto con 4 opciones: no hacer nada, encender el motor principal y encender cada uno de los motores de orientacion lateral.
 
-Su relevancia es formativa y de referencia: sirve como ejemplo reproducible de un pipeline completo de RL con stable-baselines3, de la integracion con el Hub mediante la libreria `huggingface_sb3` y de la convencion de model-index de HuggingFace para declarar metricas de RL. El repositorio tiene 0 descargas y 0 likes, un tamano declarado de 0.0 GB y no incluye un README con codigo de uso funcional (la model card contiene un bloque de ejemplo sin completar, con la coletilla `TODO: Add your code`).
+Su relevancia es formativa y de referencia: sirve como ejemplo reproducible de un pipeline completo de RL con stable-baselines3, de la integracion con el Hub mediante la libreria `huggingface_sb3` y de la convencion de model-index de Hugging Face para declarar metricas de RL. El repositorio tiene 0 descargas y 0 likes, un tamano declarado de 0.0 GB y no incluye un README con codigo de uso funcional (la model card contiene un bloque de ejemplo sin completar, con la coletilla `TODO: Add your code`).
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ No hay informacion sobre el numero de pasos de entrenamiento, la composicion del
 - Politica entrenada especificamente para la version v3 del entorno, con el espacio de observacion y recompensa de dicha version.
 - Integracion con el ecosistema stable-baselines3: carga mediante `PPO.load()`, evaluacion con `model.predict()` y `evaluate_policy`, y reanudacion del entrenamiento con `model.learn()`.
 - Carga desde el Hub mediante la libreria `huggingface_sb3` (funcion `load_from_hub`), segun la propia model card.
-- Declaracion de metricas compatible con el model-index de HuggingFace, lo que permite su indexacion automatica en la plataforma.
+- Declaracion de metricas compatible con el model-index de Hugging Face, lo que permite su indexacion automatica en la plataforma.
 - No dispone de generacion de texto, razonamiento simbolico, codigo, matematicas, vision, audio, tool calling, function calling ni soporte de agentes multi-paso basados en lenguaje: esas capacidades no aplican a este tipo de modelo.
 - No hay evidencia de capacidades multilingues ni de modo de razonamiento explicito.
 
@@ -43,13 +43,13 @@ No hay informacion sobre el numero de pasos de entrenamiento, la composicion del
 - Punto de partida para aprendizaje por transferencia: se puede cargar con `PPO.load()` y continuar el entrenamiento con variaciones del entorno (por ejemplo, recompensas moldeadas o condiciones iniciales modificadas) para estudiar la robustez de la politica.
 - Linea base en experimentos de comparacion de algoritmos: enfrentar este agente PPO contra alternativas como A2C, DQN o SAC sobre LunarLander-v3 en igualdad de presupuesto de pasos de entorno.
 - Validacion de infraestructura de RL: usar el modelo para verificar que un pipeline de evaluacion (Gymnasium + stable-baselines3 + grabacion de video) funciona correctamente antes de escalar a entornos mas costosos.
-- Pruebas de integracion con HuggingFace Hub: sirve para testear el flujo de subida y descarga de modelos de RL con `huggingface_sb3`, incluida la generacion automatica del bloque de metadatos `model-index`.
+- Pruebas de integracion con Hugging Face Hub: sirve para testear el flujo de subida y descarga de modelos de RL con `huggingface_sb3`, incluida la generacion automatica del bloque de metadatos `model-index`.
 - Reproduccion de figuras y demostraciones: generar rollouts y videos del aterrizaje para articulos, clases o documentacion tecnica, ya que un episodio de LunarLander es visualmente interpretable y de coste computacional minimo.
 - Benchmarking de hardware de inferencia de baja latencia: al ser una politica MLP diminuta, permite medir el sobrecoste de frameworks de inferencia en el regimen de microsegundos, util como caso extremo frente a modelos grandes.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el model-index de la model card (metrica marcada como `verified: false`, es decir, no verificada de forma independiente por HuggingFace):
+Resultados declarados por el autor en el model-index de la model card (metrica marcada como `verified: false`, es decir, no verificada de forma independiente por Hugging Face):
 
 | Algoritmo | Entorno | Metrica | Valor | Verificado |
 |---|---|---|---|---|
@@ -70,8 +70,8 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| hubert-ml/deep-rl-class-ppo-LunarLander-v3 | PPO (stable-baselines3) | LunarLander-v3 | no disponible | no aplica | mean_reward 262.20 +/- 19.86 (no verificado) | no disponible | Publico en HuggingFace |
-| Otros agentes PPO para LunarLander publicados en HuggingFace | PPO | LunarLander-v2 o v3 | no disponible | no aplica | no disponible | no disponible | Multiples repositorios, no catalogados aqui |
+| hubert-ml/deep-rl-class-ppo-LunarLander-v3 | PPO (stable-baselines3) | LunarLander-v3 | no disponible | no aplica | mean_reward 262.20 +/- 19.86 (no verificado) | no disponible | Publico en Hugging Face |
+| Otros agentes PPO para LunarLander publicados en Hugging Face | PPO | LunarLander-v2 o v3 | no disponible | no aplica | no disponible | no disponible | Multiples repositorios, no catalogados aqui |
 | Otros algoritmos de stable-baselines3 (A2C, DQN, SAC) sobre LunarLander | A2C / DQN / SAC | LunarLander-v3 | no disponible | no aplica | no disponible | no disponible | Implementaciones en la libreria, sin pesos publicos asociados |
 
 No se dispone de datos comparativos verificables en la informacion proporcionada. Cualquier comparacion numerica con otros agentes exigiria reentrenar o evaluar cada politica bajo el mismo numero de semillas y el mismo presupuesto de evaluacion.
@@ -90,7 +90,7 @@ No se dispone de datos comparativos verificables en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hubert-ml/deep-rl-class-ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/hubert-ml/deep-rl-class-ppo-LunarLander-v3
 - Libreria stable-baselines3 (enlazada en la model card): https://github.com/DLR-RM/stable-baselines3
 - Libreria huggingface_sb3 (referenciada en el codigo de ejemplo de la model card): https://github.com/huggingface/huggingface_sb3
 - Los resultados de busqueda web proporcionados no contienen enlaces relevantes para este modelo: corresponden a servicios de transporte, cadenas de boulangerie y establecimientos de hosteleria con el nombre "Hubert", sin relacion con el repositorio. No se han encontrado por esa via papers, blogs ni demos asociados.

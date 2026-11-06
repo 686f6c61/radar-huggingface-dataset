@@ -2,7 +2,7 @@
 
 ## Resumen
 
-matthewthoma/beit-finetuned es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de una arquitectura BEiT (Bert pre-training of Image Transformers) orientada a aprendizaje contrastivo. Lo publica el usuario matthewthoma y su configuración declarada es la escala "nano", pensada explícitamente para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, no como una release preentrenada lista para producción.
+matthewthoma/beit-finetuned es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de una arquitectura BEiT (Bert pre-training of Image Transformers) orientada a aprendizaje contrastivo. Lo publica el usuario matthewthoma y su configuración declarada es la escala "nano", pensada explícitamente para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, no como una release preentrenada lista para producción.
 
 El propio autor deja claro en la model card que `model.safetensors` es un checkpoint de inicialización válido para pruebas, no un modelo entrenado ni evaluado con benchmarks. El recuento real de parámetros publicado en los metadatos de safetensors es de 24.832, un tamaño coherente con esa función de esqueleto de código más que con un modelo de visión utilizable. El repositorio ocupa 0.0 GB y acumula 3 descargas y 0 likes en el momento de la consulta.
 
@@ -70,10 +70,10 @@ La comparativa se establece contra arquitecturas BEiT y ViT de referencia amplia
 
 | Modelo | Parametros | Contexto / entrada | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| matthewthoma/beit-finetuned | 24.832 | no disponible (ventana deslizante sin tamaño declarado) | no | apache-2.0 | HuggingFace, 3 descargas |
-| BEiT-base (microsoft/unilm) | ~86 M | imagen 224×224 | sí (ImageNet-22k) | MIT | HuggingFace, ampliamente usado |
-| ViT-base | ~86 M | imagen 224×224 | sí (ImageNet-21k) | según checkpoint | HuggingFace |
-| DINOv2-base | ~86 M | imagen 224×224 | sí (LVD-142M, autosupervisado) | según checkpoint | HuggingFace |
+| matthewthoma/beit-finetuned | 24.832 | no disponible (ventana deslizante sin tamaño declarado) | no | apache-2.0 | Hugging Face, 3 descargas |
+| BEiT-base (microsoft/unilm) | ~86 M | imagen 224×224 | sí (ImageNet-22k) | MIT | Hugging Face, ampliamente usado |
+| ViT-base | ~86 M | imagen 224×224 | sí (ImageNet-21k) | según checkpoint | Hugging Face |
+| DINOv2-base | ~86 M | imagen 224×224 | sí (LVD-142M, autosupervisado) | según checkpoint | Hugging Face |
 
 La diferencia relevante no es de rendimiento sino de naturaleza: los tres modelos de referencia son checkpoints entrenados y evaluados, mientras que este repositorio es un esqueleto de código con pesos de inicialización. No hay datos de benchmarks que permitan una comparación cuantitativa.
 
@@ -92,7 +92,7 @@ La diferencia relevante no es de rendimiento sino de naturaleza: los tres modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/matthewthoma/beit-finetuned
+- Repositorio en Hugging Face: https://huggingface.co/matthewthoma/beit-finetuned
 - Repositorio oficial de BEiT (Microsoft unilm): https://github.com/microsoft/unilm/tree/master/beit
 - Repositorio de BEiT-3: https://github.com/microsoft/unilm/tree/master/beit3
 - Paper original de BEiT: https://arxiv.org/abs/2106.08254

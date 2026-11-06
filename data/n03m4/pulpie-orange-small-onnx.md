@@ -1,7 +1,7 @@
 # N03m4/pulpie-orange-small-onnx
 
 ## Resumen
-`pulpie-orange-small-onnx` es la exportación cuantizada a ONNX de `pulpie-small`, un clasificador de tokens basado en el encoder EuroBERT. Lo publica el usuario N03m4 en HuggingFace y su propósito no es generar texto, sino asignar una etiqueta a cada token de una secuencia de entrada: la cabeza de clasificación devuelve `logits` con forma `[batch, seq, 2]`, es decir, un problema de etiquetado binario por token.
+`pulpie-orange-small-onnx` es la exportación cuantizada a ONNX de `pulpie-small`, un clasificador de tokens basado en el encoder EuroBERT. Lo publica el usuario N03m4 en Hugging Face y su propósito no es generar texto, sino asignar una etiqueta a cada token de una secuencia de entrada: la cabeza de clasificación devuelve `logits` con forma `[batch, seq, 2]`, es decir, un problema de etiquetado binario por token.
 El modelo resuelve el problema de desplegar un encoder multilingüe de etiquetado en entornos donde no se quiere depender de PyTorch: el grafo es ONNX puro, se ejecuta con ONNX Runtime y admite batch dinámico de hasta 64 y secuencias de hasta 8192 tokens. La cuantización int8 weight-only con bloques de 32 reduce el peso del repositorio a 0,3 GB, lo que lo hace viable en CPU y en GPU de consumo.
 Es relevante ahora porque la mayoría de alternativas para token classification exigen pesos safetensors y un runtime de Python, mientras que esta exportación está pensada para inferencia embebida o de alto volumen con ONNX Runtime. Como contrapartida, la información publicada es muy escasa: no hay datos de entrenamiento, licencia, idiomas ni benchmarks de calidad.
 
@@ -86,7 +86,7 @@ La comparacion es necesariamente cualitativa: al no existir benchmarks de calida
 - Sin cifras de latencia ni throughput publicadas, no es posible dimensionar un despliegue en produccion sin hacer una prueba de carga propia.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/N03m4/pulpie-orange-small-onnx
+- Modelo en Hugging Face: https://huggingface.co/N03m4/pulpie-orange-small-onnx
 - Modelo de origen citado en la model card: `pulpie-small` (sin enlace disponible en la informacion proporcionada)
 - ONNX Runtime (runtime mencionado en la model card): https://github.com/microsoft/onnxruntime
 - Optimum (libreria usada en el ejemplo de inferencia): https://github.com/huggingface/optimum

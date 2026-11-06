@@ -96,7 +96,7 @@ Las diferencias de rendimiento entre las tres primeras filas están dentro de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jongstra/Swift-1.5-Qwen3.8-27b-Abliterated-oQ6-bf16-mtp-dflash2-kapitsa
+- Repositorio Hugging Face: https://huggingface.co/jongstra/Swift-1.5-Qwen3.8-27b-Abliterated-oQ6-bf16-mtp-dflash2-kapitsa
 - Variante no abliterada del mismo autor: https://huggingface.co/jongstra/Swift-1.5-Qwen3.8-27b-oQ6-bf16-mtp-dflash2-kapitsa
 - Modelo base abliterated: https://huggingface.co/grimlee/Swift-1.5-Qwen3.8-27B-Abliterated
 - Modelo fuente original: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b

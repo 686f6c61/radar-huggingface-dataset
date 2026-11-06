@@ -62,7 +62,7 @@ No disponible. Este repositorio no es un modelo y no puede compararse con altern
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yzabelletor05/review-vision-language-pretraining
+- Repositorio en Hugging Face: https://huggingface.co/yzabelletor05/review-vision-language-pretraining
 - Encuesta sobre VLP (Springer): https://link.springer.com/article/10.1007/s11633-022-1369-5
 - Blog de Hugging Face sobre Vision Language Models: https://huggingface.co/blog/vlms
 - Revisión sistemática de VLMs (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S2590005626000627

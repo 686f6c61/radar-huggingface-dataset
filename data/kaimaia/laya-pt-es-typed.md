@@ -102,7 +102,7 @@ El checkpoint supera al modelo base en todas las métricas reportadas y a TypeSa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaimaia/laya-pt-es-typed
+- Modelo en Hugging Face: https://huggingface.co/kaimaia/laya-pt-es-typed
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Dataset de decisiones tipadas: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - Modelo de traduccion: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

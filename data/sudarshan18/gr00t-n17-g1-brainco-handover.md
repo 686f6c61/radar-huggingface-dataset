@@ -18,7 +18,7 @@ Su relevancia es metodologica mas que de producto: cuantifica cuanto se degrada 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; los pesos se publican en safetensors y el repositorio ocupa 12,6 GB, compatible con pesos en fp32 |
 | Idiomas soportados | no disponible (la politica se condiciona con una frase de tarea fija, no con lenguaje libre multiidioma) |
-| Licencia | NVIDIA Open Model License (etiquetada como `license: other` en HuggingFace) |
+| Licencia | NVIDIA Open Model License (etiquetada como `license: other` en Hugging Face) |
 | Formato de pesos | safetensors (incluye pesos, processor, configuracion de experimento, estadisticas del dataset y `PROVENANCE.json`; sin estado del optimizador) |
 
 Parametros de la tarea:
@@ -92,10 +92,10 @@ Detalles de la evaluacion aportados por el autor: los ensayos duran hasta 1050 p
 
 | Modelo | Parametros | Tarea | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Sudarshan18/gr00t-n17-g1-brainco-handover | 3,144 mil millones | Handover bimanual con manos Brainco Revo2 sobre Unitree G1 | no disponible | 10/50 en la bateria de evaluacion | NVIDIA Open Model License | Publico en HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| Sudarshan18/gr00t-n17-g1-dex3-handover | no disponible (deriva de GR00T N1.7-3B) | Handover bimanual con manos Unitree Dex3; ancho de accion de 28 valores | no disponible | Nivel de referencia similar al del modelo Brainco, segun el autor | NVIDIA Open Model License | Publico en HuggingFace |
+| Sudarshan18/gr00t-n17-g1-brainco-handover | 3,144 mil millones | Handover bimanual con manos Brainco Revo2 sobre Unitree G1 | no disponible | 10/50 en la bateria de evaluacion | NVIDIA Open Model License | Publico en Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| Sudarshan18/gr00t-n17-g1-dex3-handover | no disponible (deriva de GR00T N1.7-3B) | Handover bimanual con manos Unitree Dex3; ancho de accion de 28 valores | no disponible | Nivel de referencia similar al del modelo Brainco, segun el autor | NVIDIA Open Model License | Publico en Hugging Face |
 | Retargeting sin entrenamiento (Dex3 sobre manos Brainco) | No aplica | Misma tarea, sin ajuste fino | No aplica | 0/50 ensayos, sin completar agarre | No aplica | Linea base descrita en la model card |
-| nvidia/GR00T-N1.7-3B | ~3 mil millones | Modelo fundacional vision-lenguaje-accion para robotica general | no disponible | no disponible | NVIDIA Open Model License | Publico en HuggingFace |
+| nvidia/GR00T-N1.7-3B | ~3 mil millones | Modelo fundacional vision-lenguaje-accion para robotica general | no disponible | no disponible | NVIDIA Open Model License | Publico en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -113,7 +113,7 @@ Detalles de la evaluacion aportados por el autor: los ensayos duran hasta 1050 p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sudarshan18/gr00t-n17-g1-brainco-handover
+- Modelo en Hugging Face: https://huggingface.co/Sudarshan18/gr00t-n17-g1-brainco-handover
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Checkpoint de referencia Dex3 del mismo autor: https://huggingface.co/Sudarshan18/gr00t-n17-g1-dex3-handover
 - Codigo, evaluacion y documentacion: https://github.com/sudarshan-sridhar/g1-dex3-to-brainco-handover

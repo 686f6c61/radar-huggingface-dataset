@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparado para este adaptador; el modelo b
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador GGUF: https://huggingface.co/Sandmeyer/qwen2.5-coder-3b-commit-msg-lora-F16-GGUF
+- Repositorio Hugging Face del adaptador GGUF: https://huggingface.co/Sandmeyer/qwen2.5-coder-3b-commit-msg-lora-F16-GGUF
 - Adaptador original (PEFT): https://huggingface.co/Elib27/qwen2.5-coder-3b-commit-msg-lora
 - Espacio de conversión ggml.ai GGUF-my-lora: https://huggingface.co/spaces/ggml-org/gguf-my-lora
 - Documentación de servidor de llama.cpp y uso de LoRA: https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md

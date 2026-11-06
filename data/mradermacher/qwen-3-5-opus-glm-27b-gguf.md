@@ -110,8 +110,8 @@ No se dispone de informacion suficiente sobre alternativas de la misma categoria
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF estaticos): https://huggingface.co/mradermacher/Qwen-3.5-Opus-GLM-27B-GGUF
-- Repositorio HuggingFace (cuantizaciones ponderadas/imatrix): https://huggingface.co/mradermacher/Qwen-3.5-Opus-GLM-27B-i1-GGUF
+- Repositorio Hugging Face (GGUF estaticos): https://huggingface.co/mradermacher/Qwen-3.5-Opus-GLM-27B-GGUF
+- Repositorio Hugging Face (cuantizaciones ponderadas/imatrix): https://huggingface.co/mradermacher/Qwen-3.5-Opus-GLM-27B-i1-GGUF
 - Modelo base: https://huggingface.co/rodrigomt/Qwen-3.5-Opus-GLM-27B
 - Modelo de origen del merge 1: https://huggingface.co/Jackrong/Qwopus3.5-27B-v3.5
 - Modelo de origen del merge 2: https://huggingface.co/Jackrong/Qwen3.5-27B-GLM5.1-Distill-v1

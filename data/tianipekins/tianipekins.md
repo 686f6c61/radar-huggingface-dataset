@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `TianiPekins/TianiPekins` alojado en HuggingFace no contiene un modelo de IA. Se trata de un perfil personal de Tiani Pekins Ebika, ingeniero full-stack e investigador en IA con un máster (M.Sc.) en la Universidad de Buea. La model card es una tarjeta de presentación profesional y no incluye ninguna especificación técnica ni artefactos de modelo.
+El repositorio `TianiPekins/TianiPekins` alojado en Hugging Face no contiene un modelo de IA. Se trata de un perfil personal de Tiani Pekins Ebika, ingeniero full-stack e investigador en IA con un máster (M.Sc.) en la Universidad de Buea. La model card es una tarjeta de presentación profesional y no incluye ninguna especificación técnica ni artefactos de modelo.
 
 El autor trabaja en el ajuste fino de modelos de lenguaje pequeños (SLMs) para la traducción de lenguaje natural a SQL (text-to-SQL) en lenguas africanas de bajos recursos y con cambio de código (code-mixed), como el Cameroon Pidgin English y el Camfranglais. Su tesis se titula "Fine-Tuning Small Language Models (SLMs) for Text-to-SQL Translation in Low-Resource, Code-Mixed African Languages" y está co-supervisada por investigadores de la Universidad de Buea e IBM Research.
 

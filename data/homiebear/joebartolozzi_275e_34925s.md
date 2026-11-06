@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JoeBartolozzi_275e_34925s es un modelo publicado en HuggingFace por el usuario Homiebear. Por el identificador y el tamano del repositorio (0,7 GB), se trata presumiblemente de un checkpoint de pesos en precision de 16 bits con aproximadamente 300-350 millones de parametros, aunque el autor no declara ni la arquitectura ni el numero exacto de parametros en la model card. La model card se limita a la linea de licencia `openrail`; no incluye descripcion, pipeline, idiomas ni datos de entrenamiento.
+JoeBartolozzi_275e_34925s es un modelo publicado en Hugging Face por el usuario Homiebear. Por el identificador y el tamano del repositorio (0,7 GB), se trata presumiblemente de un checkpoint de pesos en precision de 16 bits con aproximadamente 300-350 millones de parametros, aunque el autor no declara ni la arquitectura ni el numero exacto de parametros en la model card. La model card se limita a la linea de licencia `openrail`; no incluye descripcion, pipeline, idiomas ni datos de entrenamiento.
 
 El modelo no presenta descargas ni likes en el momento de la consulta y fue creado el 1 de noviembre de 2026, con una unica actualizacion cinco minutos despues. No hay informacion publica sobre el problema que resuelve, el dataset utilizado ni el proceso de entrenamiento. Cualquier evaluacion practica exigiria inspeccionar los archivos del repositorio y ejecutar pruebas directas de inferencia.
 
@@ -41,7 +41,7 @@ El unico dato objetivo es el tamano del repositorio (0,7 GB), compatible con un 
 - Evaluacion experimental en laboratorio: el modelo puede cargarse en un entorno aislado para inspeccionar sus pesos, tokenizer y comportamiento generativo antes de considerar cualquier uso real.
 - Pruebas de integracion de pipelines: sirve como checkpoint de prueba para validar el cableado de frameworks de inferencia (Transformers, vLLM) sin coste de GPU elevado, dado su presumible tamano reducido.
 - Fine-tuning de bajo coste: si el checkpoint es compatible con la libreria Transformers, podria servir como base para experimentos de ajuste supervisado en tareas acotadas, siempre que se valide previamente su calidad.
-- Investigacion sobre modelos de autor unico: util para estudiar practicas de publicacion en HuggingFace y la trazabilidad de checkpoints sin documentacion.
+- Investigacion sobre modelos de autor unico: util para estudiar practicas de publicacion en Hugging Face y la trazabilidad de checkpoints sin documentacion.
 - Docencia y formacion: ejemplo practico de como un repositorio sin model card ni metadatos dificulta la reproducibilidad y la evaluacion.
 - No se recomienda su uso en atencion al cliente, generacion de codigo en produccion, agentes autonomos ni ninguna aplicacion critica, dada la ausencia total de documentacion y de resultados de evaluacion.
 
@@ -74,5 +74,5 @@ No disponible. El autor no declara la categoria ni el tamano exacto del modelo, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Homiebear/JoeBartolozzi_275e_34925s
+- Hugging Face: https://huggingface.co/Homiebear/JoeBartolozzi_275e_34925s
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

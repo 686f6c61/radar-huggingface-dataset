@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lagutenko-4B es un repositorio de modelo publicado en HuggingFace por el usuario aebarthyi bajo el identificador aebarthyi/lagutenko-4B. La model card asociada está vacía: el único contenido es la declaración de licencia apache-2.0, sin descripción, sin arquitectura declarada, sin datos de entrenamiento y sin instrucciones de uso. El repositorio no declara pipeline, no lista idiomas soportados y registra cero descargas y cero "likes" en el momento de la consulta.
+lagutenko-4B es un repositorio de modelo publicado en Hugging Face por el usuario aebarthyi bajo el identificador aebarthyi/lagutenko-4B. La model card asociada está vacía: el único contenido es la declaración de licencia apache-2.0, sin descripción, sin arquitectura declarada, sin datos de entrenamiento y sin instrucciones de uso. El repositorio no declara pipeline, no lista idiomas soportados y registra cero descargas y cero "likes" en el momento de la consulta.
 
 Por el nombre se puede suponer que se trata de un modelo de aproximadamente 4.000 millones de parámetros, pero esto no está confirmado en ninguna parte de la información disponible. Los tags publicados se limitan a la licencia (apache-2.0) y a la región (region:us), lo que no aporta información técnica sobre el modelo. Las fechas de creación y actualización registradas son idénticas (2026-10-11T18:28:51Z) y apuntan a una fecha futura respecto al momento de redacción, un indicio de metadatos inconsistentes o de un repositorio de prueba.
 
@@ -82,10 +82,10 @@ No es posible comparar el rendimiento de lagutenko-4B con alternativas porque no
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| aebarthyi/lagutenko-4B | no disponible (~4B según el nombre) | no disponible | apache-2.0 | Repositorio en HuggingFace sin model card | no disponible |
-| Qwen2.5-7B | ~7,6B | hasta 128K en las variantes que lo declaran | apache-2.0 (mayoría de variantes) | HuggingFace, múltiples cuantizaciones | Amplia batería publicada por el autor |
-| Llama-3.2-3B | ~3,2B | 128K | Llama 3.2 Community License | HuggingFace | Publicados en la model card del autor |
-| Phi-3.5-mini-instruct | ~3,8B | 128K | MIT | HuggingFace | Publicados en la model card del autor |
+| aebarthyi/lagutenko-4B | no disponible (~4B según el nombre) | no disponible | apache-2.0 | Repositorio en Hugging Face sin model card | no disponible |
+| Qwen2.5-7B | ~7,6B | hasta 128K en las variantes que lo declaran | apache-2.0 (mayoría de variantes) | Hugging Face, múltiples cuantizaciones | Amplia batería publicada por el autor |
+| Llama-3.2-3B | ~3,2B | 128K | Llama 3.2 Community License | Hugging Face | Publicados en la model card del autor |
+| Phi-3.5-mini-instruct | ~3,8B | 128K | MIT | Hugging Face | Publicados en la model card del autor |
 
 Los datos de las tres alternativas provienen de la documentación pública de sus respectivos autores y deben verificarse en la fuente original antes de citarlos. Para lagutenko-4B no existe ninguno de estos datos.
 
@@ -103,5 +103,5 @@ Los datos de las tres alternativas provienen de la documentación pública de su
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aebarthyi/lagutenko-4B
+- Repositorio en Hugging Face: https://huggingface.co/aebarthyi/lagutenko-4B
 - Búsqueda web: no se ha encontrado ningún resultado relevante sobre el modelo (paper, blog, repositorio de código o demo). Los resultados devueltos por el buscador no guardan relación con el repositorio y no se incluyen por no ser fuentes válidas.

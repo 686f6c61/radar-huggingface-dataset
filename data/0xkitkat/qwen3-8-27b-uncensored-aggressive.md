@@ -90,6 +90,6 @@ La comparativa se limita a características estructurales, ya que no hay datos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0xKitkat/Qwen3.8-27B-Uncensored-Aggressive
+- Repositorio Hugging Face: https://huggingface.co/0xKitkat/Qwen3.8-27B-Uncensored-Aggressive
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Referencia HauhauCS Aggressive (Qwen3.6): https://huggingface.co/HauhauCS/Qwen3.6-27B

@@ -124,7 +124,7 @@ No se dispone de datos de terceros en la informacion proporcionada. La unica com
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wadezigmirror/DeepSeek-V4.1-Flash-UNCENSORED-FP8
+- Repositorio en Hugging Face: https://huggingface.co/wadezigmirror/DeepSeek-V4.1-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Perfil del equipo autor de la abliteracion en X: https://x.com/dealignai
 - Perfil de uno de los autores en X: https://x.com/jordanschenck

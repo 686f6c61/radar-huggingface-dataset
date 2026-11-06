@@ -76,8 +76,8 @@ La mejora es consistente en casi todas las métricas, con la excepción de PLOTS
 
 | Modelo | Parámetros | Contexto | NS acc. | ToT nDCG@10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este adaptador (PLOTS LoRA) | Base 8B + LoRA r16 | 512 (entrenamiento) | 0,670 | 0,333 | Apache 2.0 | HuggingFace |
-| Qwen3-Embedding-8B zero-shot | 8B | No disponible | 0,642 | 0,241 | Apache 2.0 | HuggingFace |
+| Este adaptador (PLOTS LoRA) | Base 8B + LoRA r16 | 512 (entrenamiento) | 0,670 | 0,333 | Apache 2.0 | Hugging Face |
+| Qwen3-Embedding-8B zero-shot | 8B | No disponible | 0,642 | 0,241 | Apache 2.0 | Hugging Face |
 | Otros modelos de similitud narrativa | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparativa se limita al modelo base, único punto de referencia publicado en la información disponible.
@@ -95,6 +95,6 @@ La comparativa se limita al modelo base, único punto de referencia publicado en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jgmorenof/plots-qwen3-embedding-8b-lora
+- Modelo en Hugging Face: https://huggingface.co/Jgmorenof/plots-qwen3-embedding-8b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-8B
 - Dataset PLOTS: https://huggingface.co/datasets/Jgmorenof/PLOTS

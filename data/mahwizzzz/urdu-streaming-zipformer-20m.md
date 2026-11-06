@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Urdu-Streaming-Zipformer-20M es un sistema de reconocimiento automático del habla (ASR) en urdu, en streaming y de tamano muy reducido, publicado por el usuario mahwizzzz en HuggingFace. Se trata de un transductor Zipformer (RNN-T) causal con 20,85 M de parametros desplegados, pensado para transcripcion en tiempo real con chunks de 320 ms y un coste de computo de aproximadamente 9 ms por chunk en un unico hilo de CPU de escritorio (RTF 0,033, unas 30 veces mas rapido que el tiempo real).
+Urdu-Streaming-Zipformer-20M es un sistema de reconocimiento automático del habla (ASR) en urdu, en streaming y de tamano muy reducido, publicado por el usuario mahwizzzz en Hugging Face. Se trata de un transductor Zipformer (RNN-T) causal con 20,85 M de parametros desplegados, pensado para transcripcion en tiempo real con chunks de 320 ms y un coste de computo de aproximadamente 9 ms por chunk en un unico hilo de CPU de escritorio (RTF 0,033, unas 30 veces mas rapido que el tiempo real).
 
 El modelo parte del checkpoint ingles `desh2608/icefall-asr-librispeech-pruned-transducer-stateless7-streaming-small` del proyecto k2-fsa/icefall y se ha reentrenado con 84,94 horas (48.612 enunciados) de corpus en urdu: IndicVoices, Kathbath, UrduSpeech y Rasa. Ademas del urdu, maneja frases de cambio de codigo urdu-ingles, un fenomeno muy frecuente en el habla real de Pakistan y de la diaspora.
 
@@ -87,8 +87,8 @@ Metricas de eficiencia declaradas: RTF 0,033 y aproximadamente 9 ms de computo p
 
 | Modelo | Parametros | Streaming | Idiomas | Licencia | WER en urdu | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Urdu-Streaming-Zipformer-20M (v5, INT8 quality) | 20,85 M | Si, chunks de 320 ms | ur, en (cambio de codigo) | Pesos CC-BY-4.0; codigo Apache-2.0 | 21,94 macro dev / 26,38 macro test | HuggingFace, runtime sherpa-onnx |
-| `desh2608/icefall-asr-librispeech-pruned-transducer-stateless7-streaming-small` (modelo base) | no disponible | Si (misma familia Zipformer streaming) | en | no disponible en la informacion proporcionada | no disponible (modelo en ingles) | HuggingFace |
+| Urdu-Streaming-Zipformer-20M (v5, INT8 quality) | 20,85 M | Si, chunks de 320 ms | ur, en (cambio de codigo) | Pesos CC-BY-4.0; codigo Apache-2.0 | 21,94 macro dev / 26,38 macro test | Hugging Face, runtime sherpa-onnx |
+| `desh2608/icefall-asr-librispeech-pruned-transducer-stateless7-streaming-small` (modelo base) | no disponible | Si (misma familia Zipformer streaming) | en | no disponible en la informacion proporcionada | no disponible (modelo en ingles) | Hugging Face |
 | Otros sistemas ASR para urdu (ajustes de Whisper, Vosk y similares) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de resultados de benchmarks de modelos comparables en urdu, por lo que la comparativa cuantitativa con alternativas no puede establecerse aqui.
@@ -109,7 +109,7 @@ No se dispone en la informacion proporcionada de resultados de benchmarks de mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mahwizzzz/Urdu-Streaming-Zipformer-20M
+- Modelo en Hugging Face: https://huggingface.co/mahwizzzz/Urdu-Streaming-Zipformer-20M
 - Modelo base: https://huggingface.co/desh2608/icefall-asr-librispeech-pruned-transducer-stateless7-streaming-small
 - Dataset AI4Bharat IndicVoices: https://huggingface.co/datasets/ai4bharat/IndicVoices
 - Dataset AI4Bharat Kathbath: https://huggingface.co/datasets/ai4bharat/Kathbath

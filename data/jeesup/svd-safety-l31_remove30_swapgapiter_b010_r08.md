@@ -86,7 +86,7 @@ No se dispone de los valores equivalentes para el modelo base sin comprimir en l
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| svd-safety-l31_remove30_swapgapiter_b010_r08 | 8,03 B en safetensors; fracción 0,6999 declarada sobre proyecciones densas | No disponible en la model card | Llama 3.1 Community License | Safetensors en HuggingFace | Artefacto de investigación con seguridad degradada; 0 descargas y 0 likes en el momento de la consulta |
+| svd-safety-l31_remove30_swapgapiter_b010_r08 | 8,03 B en safetensors; fracción 0,6999 declarada sobre proyecciones densas | No disponible en la model card | Llama 3.1 Community License | Safetensors en Hugging Face | Artefacto de investigación con seguridad degradada; 0 descargas y 0 likes en el momento de la consulta |
 | meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Safetensors, ampliamente integrado | Modelo base sin comprimir; referencia para medir la degradación |
 | Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | Safetensors y GGUF | Alternativa de tamaño similar con licencia permisiva; comparación de rendimiento no disponible para este checkpoint |
 | Qwen2.5-7B-Instruct | 7,62 B | 131.072 tokens | Apache 2.0 | Safetensors y GGUF | Alternativa de tamaño similar con contexto comparable; comparación de rendimiento no disponible para este checkpoint |
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks comunes entre estos modelos y el checkpoint
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r08
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r08
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/
 - Política de uso aceptable de Llama 3.1: https://llama.meta.com/llama3_1/use-policy/

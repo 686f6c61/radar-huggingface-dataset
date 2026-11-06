@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Offender_3.8_27B_Abliterated es un modelo multimodal (imagen, vídeo y texto) de 27B parámetros publicado por el usuario johnonegram en HuggingFace, construido mediante ajuste fino continuado por etapas sobre medismera/Qwen3.8-27B-Surgical-Abliterated. Está especializado en ciberseguridad ofensiva: análisis de vulnerabilidades de corrupción de memoria, desarrollo de exploits, ingeniería inversa de binarios, seguridad en la nube y orquestación de agentes autónomos con evasión de sistemas anti-bot. La arquitectura declarada es un transformer híbrido de la familia Qwen3_5, que intercala capas de linear attention (SSM con estado recurrente) y capas de atención completa con GQA.
+Offender_3.8_27B_Abliterated es un modelo multimodal (imagen, vídeo y texto) de 27B parámetros publicado por el usuario johnonegram en Hugging Face, construido mediante ajuste fino continuado por etapas sobre medismera/Qwen3.8-27B-Surgical-Abliterated. Está especializado en ciberseguridad ofensiva: análisis de vulnerabilidades de corrupción de memoria, desarrollo de exploits, ingeniería inversa de binarios, seguridad en la nube y orquestación de agentes autónomos con evasión de sistemas anti-bot. La arquitectura declarada es un transformer híbrido de la familia Qwen3_5, que intercala capas de linear attention (SSM con estado recurrente) y capas de atención completa con GQA.
 
 El modelo emplea cuantización FP8 nativa (formato F8_E4M3 con escalas por bloques de 128x128), lo que reduce el peso en disco a aproximadamente 26,9 GB y permite ejecutarlo en una única GPU de 32, 48 u 80 GB sin recurrir a cuantizaciones de 4 bits. Soporta una ventana de contexto nativa de 262.144 tokens (256K) mediante RoPE con frecuencia base 10^7 y secciones mrope [11, 11, 10]. Incluye una torre de visión de 333 capas para percepción visual.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| johnonegram/Offender_3.8_27B_Abliterated | 27,36B segun safetensors | 256K | Texto, imagen, video | apache-2.0 | Publicado en HuggingFace, 0 descargas, 0 likes |
+| johnonegram/Offender_3.8_27B_Abliterated | 27,36B segun safetensors | 256K | Texto, imagen, video | apache-2.0 | Publicado en Hugging Face, 0 descargas, 0 likes |
 | medismera/Qwen3.8-27B-Surgical-Abliterated (modelo base) | 27B (no se detalla el desglose) | no disponible | no disponible | no disponible | Referenciado como base_model |
 | medismera/Qwen3.8-cyber-RedTeam-Surgical-Abliterated | no disponible | 256K segun distintivos de la model card | Texto, imagen, video | apache-2.0 segun distintivos | Referenciado en los enlaces de la model card |
 
@@ -91,7 +91,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento de tercero
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/johnonegram/Offender_3.8_27B_Abliterated
+- Repositorio en Hugging Face: https://huggingface.co/johnonegram/Offender_3.8_27B_Abliterated
 - Modelo base declarado: https://huggingface.co/medismera/Qwen3.8-27B-Surgical-Abliterated
 - Modelo relacionado referenciado en los distintivos de la model card: https://huggingface.co/medismera/Qwen3.8-cyber-RedTeam-Surgical-Abliterated
 - Paper, blog o repositorio adicional: no disponible. La busqueda web realizada no devolvio resultados relevantes sobre este modelo.

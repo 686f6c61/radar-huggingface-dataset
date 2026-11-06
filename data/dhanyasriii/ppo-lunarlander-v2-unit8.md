@@ -70,10 +70,10 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 | Modelo | Entorno | Algoritmo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dhanyasriii/ppo-LunarLander-v2-unit8 | LunarLander-v2 | PPO (CleanRL) | no disponible | no aplica | no disponible | HuggingFace (repo 0,0 GB) |
-| cleanrl/ppo-LunarLander-v2 (referencia oficial) | LunarLander-v2 | PPO (CleanRL) | no disponible | no aplica | MIT (tipicamente) | HuggingFace y GitHub |
-| sb3/ppo-LunarLander-v2 (Stable-Baselines3) | LunarLander-v2 | PPO (SB3) | no disponible | no aplica | MIT (tipicamente) | HuggingFace |
-| Otros checkpoints `unit8` del mismo curso (autor dhanyasriii) | LunarLander-v2 | PPO (CleanRL) | no disponible | no aplica | no disponible | HuggingFace |
+| dhanyasriii/ppo-LunarLander-v2-unit8 | LunarLander-v2 | PPO (CleanRL) | no disponible | no aplica | no disponible | Hugging Face (repo 0,0 GB) |
+| cleanrl/ppo-LunarLander-v2 (referencia oficial) | LunarLander-v2 | PPO (CleanRL) | no disponible | no aplica | MIT (tipicamente) | Hugging Face y GitHub |
+| sb3/ppo-LunarLander-v2 (Stable-Baselines3) | LunarLander-v2 | PPO (SB3) | no disponible | no aplica | MIT (tipicamente) | Hugging Face |
+| Otros checkpoints `unit8` del mismo curso (autor dhanyasriii) | LunarLander-v2 | PPO (CleanRL) | no disponible | no aplica | no disponible | Hugging Face |
 
 No se dispone de los valores de `mean_reward` de los modelos comparados en la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa. La diferencia principal observable es que el modelo analizado declara un resultado por debajo del umbral de referencia del entorno.
 
@@ -92,7 +92,7 @@ No se dispone de los valores de `mean_reward` de los modelos comparados en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhanyasriii/ppo-LunarLander-v2-unit8
+- Modelo en Hugging Face: https://huggingface.co/dhanyasriii/ppo-LunarLander-v2-unit8
 - CleanRL (implementacion de referencia de PPO): https://github.com/vwxyzjn/cleanrl
 - Documentacion de Gymnasium y del entorno LunarLander: https://gymnasium.farama.org/environments/box2d/lunar_lander/
 - Stable-Baselines3 (alternativa para PPO en LunarLander): https://github.com/DLR-RM/stable-baselines3

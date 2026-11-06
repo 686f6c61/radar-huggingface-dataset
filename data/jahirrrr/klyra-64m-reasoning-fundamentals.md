@@ -112,7 +112,7 @@ El principal punto diferencial de Klyra es su foco explícito en razonamiento a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jahirrrr/Klyra-64M-Reasoning-Fundamentals
+- Modelo en Hugging Face: https://huggingface.co/Jahirrrr/Klyra-64M-Reasoning-Fundamentals
 - Proyecto principal Klyra-64M: https://huggingface.co/Jahirrrr/Klyra-64M
 - Artículo del autor (dev.to): https://dev.to/jahirrrr/bisakah-model-64-juta-parameter-belajar-bernalar-membangun-model-bahasa-64m-parameter-dari-nol-kn
 - Klyra AI (plataforma, aparentemente no relacionada): https://www.klyralabs.io/

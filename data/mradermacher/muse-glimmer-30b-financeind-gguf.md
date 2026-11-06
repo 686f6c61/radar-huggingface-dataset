@@ -27,7 +27,7 @@ La relevancia de esta ficha es practica: permite evaluar rapidamente si esta con
 
 No se dispone de informacion sobre la arquitectura del modelo base Rumiii/Muse-Glimmer-30B-FinanceIND en la documentacion proporcionada. El nombre sugiere un modelo afinado para finanzas (sufijo FinanceIND), pero no se detallan datos de entrenamiento, numero de tokens, composicion del dataset ni si hubo RLHF, DPO u otras etapas de alineamiento.
 
-Lo unico verificable es el proceso de conversion: mradermacher ha generado cuantizaciones estaticas con quantize_version 2 y convert_type hf, lo que implica una conversion desde pesos en formato HuggingFace a GGUF mediante las herramientas habituales de llama.cpp. Se incluye una variante x-f16 como referencia sin perdida apreciable y un espectro de cuantizaciones K-quant e IQ4_XS para distintos compromisos de calidad y tamano.
+Lo unico verificable es el proceso de conversion: mradermacher ha generado cuantizaciones estaticas con quantize_version 2 y convert_type hf, lo que implica una conversion desde pesos en formato Hugging Face a GGUF mediante las herramientas habituales de llama.cpp. Se incluye una variante x-f16 como referencia sin perdida apreciable y un espectro de cuantizaciones K-quant e IQ4_XS para distintos compromisos de calidad y tamano.
 
 ## Capacidades
 

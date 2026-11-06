@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`itselsasun/albef-generation-v3` es un repositorio de HuggingFace publicado por el usuario `itselsasun` que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada Albef, orientada a tareas de generación. Según su propia model card, se trata de la configuración `base` y su propósito declarado es servir para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados, no como una release preentrenada lista para producción.
+`itselsasun/albef-generation-v3` es un repositorio de Hugging Face publicado por el usuario `itselsasun` que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada Albef, orientada a tareas de generación. Según su propia model card, se trata de la configuración `base` y su propósito declarado es servir para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados, no como una release preentrenada lista para producción.
 
 El repositorio incluye un script principal (`main.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el autor describe explícitamente como un checkpoint de inicialización válido para pruebas de humo, no como un checkpoint entrenado ni evaluado con benchmarks. El recuento real de parámetros leído del fichero safetensors es de 33.088 parámetros, lo que sitúa al modelo en un orden de magnitud muy inferior al de cualquier modelo de lenguaje o visión-lenguaje desplegable.
 
@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye ningún modelo comparabl
 
 - Checkpoint sin entrenar: la propia model card indica que el fichero `model.safetensors` es una inicialización válida para pruebas de humo y que no ha sido entrenado ni auditado. No produce salidas útiles para ninguna tarea.
 - Ausencia de benchmarks: no existe ninguna evaluación publicada, por lo que cualquier afirmación de rendimiento sería infundada.
-- Implementación personalizada: al no seguir las convenciones de una arquitectura estándar de HuggingFace, las API de carga automática fallan sin un adaptador explícito, lo que incrementa el coste de integración.
+- Implementación personalizada: al no seguir las convenciones de una arquitectura estándar de Hugging Face, las API de carga automática fallan sin un adaptador explícito, lo que incrementa el coste de integración.
 - Sesgos y alucinacion: no evaluados. No hay datos de sesgo, robustez ni tasas de alucinación, y al no estar entrenado, cualquier métrica de este tipo sería inaplicable.
 - Idiomas y contexto: no se declara ninguna lengua soportada ni longitud de contexto, por lo que no se puede planificar ningún uso multilingüe ni de contexto largo.
 - Licencia: Apache 2.0 permite uso comercial y modificación, pero la model card advierte de que los términos de los datos de origen deben revisarse por separado si el repositorio se usa con conjuntos de datos externos.
@@ -84,6 +84,6 @@ No disponible. La información proporcionada no incluye ningún modelo comparabl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/itselsasun/albef-generation-v3
+- Repositorio en Hugging Face: https://huggingface.co/itselsasun/albef-generation-v3
 - Resultados de la busqueda web: no se encontro ningun enlace relevante sobre el modelo; los resultados devueltos correspondian a sitios de reservas de viajes sin relacion con el artefacto.
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles en la informacion proporcionada.

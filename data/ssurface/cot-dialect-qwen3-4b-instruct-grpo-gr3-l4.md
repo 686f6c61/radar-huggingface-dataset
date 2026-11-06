@@ -77,7 +77,7 @@ No se dispone de datos numéricos de rendimiento para comparar directamente esto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3-l4
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3-l4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Adaptador SFT requerido: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l4
 - Modelo principal del nivel L4: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-l4

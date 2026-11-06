@@ -67,6 +67,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_oasst1_nemotron-nano-30b-a3b_as_llama-3.1-8b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_oasst1_nemotron-nano-30b-a3b_as_llama-3.1-8b_seed42
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Herramienta Tinker: https://thinkingmachines.ai/tinker/ (referenciada en la model card)

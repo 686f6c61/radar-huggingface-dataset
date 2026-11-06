@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`attacker3434/xsslab8676` es un modelo de clasificación de tokens (token classification) basado en arquitectura BERT, publicado en HuggingFace por el usuario `attacker3434`. El modelo está etiquetado con el pipeline `token-classification` y licencia MIT, y su model card es prácticamente vacía: se limita a los metadatos YAML y a un ejemplo de widget cuyo resultado de salida es una cadena con carga útil XSS (`><img src=x>`). No se documenta el conjunto de datos de entrenamiento, el número de parámetros, el tokenizador ni el propósito declarado del modelo.
+`attacker3434/xsslab8676` es un modelo de clasificación de tokens (token classification) basado en arquitectura BERT, publicado en Hugging Face por el usuario `attacker3434`. El modelo está etiquetado con el pipeline `token-classification` y licencia MIT, y su model card es prácticamente vacía: se limita a los metadatos YAML y a un ejemplo de widget cuyo resultado de salida es una cadena con carga útil XSS (`><img src=x>`). No se documenta el conjunto de datos de entrenamiento, el número de parámetros, el tokenizador ni el propósito declarado del modelo.
 
 Por el identificador del repositorio (`xsslab8676`), el nombre del autor (`attacker3434`) y la naturaleza del ejemplo del widget, todo apunta a un artefacto de laboratorio orientado a pruebas de seguridad ofensiva o a la demostración de vulnerabilidades en pipelines de inferencia, no a un modelo de propósito general. El modelo registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 5 de noviembre de 2026 con apenas un minuto de diferencia, lo que sugiere una publicación automatizada o de prueba.
 
@@ -40,7 +40,7 @@ No hay información sobre el corpus de entrenamiento, el número de tokens proce
 
 - Análisis de seguridad de pipelines de inferencia: el modelo sirve como caso de prueba para verificar que una plataforma de serving escapa correctamente las salidas de modelos de clasificación de tokens antes de renderizarlas en un frontend.
 - Pruebas de regresión en herramientas de moderación de contenido: puede incorporarse a un banco de pruebas que compruebe si un filtro de salida detecta etiquetas con marcado HTML y manejadores de eventos.
-- Investigación sobre envenenamiento de model cards: útil para estudiar cómo un widget de ejemplo en un README puede propagar cargas útiles a demos automáticas de HuggingFace Spaces.
+- Investigación sobre envenenamiento de model cards: útil para estudiar cómo un widget de ejemplo en un README puede propagar cargas útiles a demos automáticas de Hugging Face Spaces.
 - Formación en seguridad ofensiva: como muestra didáctica de un artefacto publicado con metadatos plausibles pero sin trazabilidad de entrenamiento.
 - Auditoría de licencias y procedencia: ejemplo de repositorio con licencia MIT pero sin documentación de datos, útil para ilustrar los riesgos de adoptar modelos sin model card sustantiva.
 - Evaluación de filtros de sanitización en APIs de inferencia: permite comprobar si un gateway que consume la respuesta JSON del pipeline `token-classification` valida el campo `label` antes de reenviarlo a un cliente.
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible, al desconocerse el número de parámetros.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no determinable sin conocer el tamaño del modelo; una variante BERT base (≈110 M de parámetros) cabría en cualquier GPU con 4 GB o más, pero esto es una estimación genérica y no un dato del repositorio.
-- Opciones de despliegue: al ser un modelo de la familia BERT con pipeline `token-classification`, sería desplegable en principio con HuggingFace Transformers, Text Embeddings Inference o servidores compatibles con arquitecturas encoder; no se confirma soporte en vLLM, llama.cpp u Ollama, que están orientados a modelos generativos.
+- Opciones de despliegue: al ser un modelo de la familia BERT con pipeline `token-classification`, sería desplegable en principio con Hugging Face Transformers, Text Embeddings Inference o servidores compatibles con arquitecturas encoder; no se confirma soporte en vLLM, llama.cpp u Ollama, que están orientados a modelos generativos.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -73,5 +73,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/attacker3434/xsslab8676
+- Modelo en Hugging Face: https://huggingface.co/attacker3434/xsslab8676
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

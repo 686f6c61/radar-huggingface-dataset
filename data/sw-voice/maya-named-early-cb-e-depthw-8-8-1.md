@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Maya named early-cb-e depthw-8-8-1 es un modelo de síntesis de voz (text-to-speech) obtenido mediante un fine-tune completo del modelo base maya-research/maya2-native sobre la voz de un hablante concreto identificado como «Swamiji». Lo publica el usuario sw-voice en HuggingFace con licencia Apache 2.0 y un total de 2.502.398.656 parámetros en pesos safetensors, lo que lo sitúa en la franja de los modelos TTS de tamaño medio-grande.
+Maya named early-cb-e depthw-8-8-1 es un modelo de síntesis de voz (text-to-speech) obtenido mediante un fine-tune completo del modelo base maya-research/maya2-native sobre la voz de un hablante concreto identificado como «Swamiji». Lo publica el usuario sw-voice en Hugging Face con licencia Apache 2.0 y un total de 2.502.398.656 parámetros en pesos safetensors, lo que lo sitúa en la franja de los modelos TTS de tamaño medio-grande.
 
 El modelo resuelve el problema de la clonación y síntesis de una voz concreta sin necesidad de clip de referencia en tiempo de inferencia: la voz queda registrada en un fichero `voices/voices.json` y se invoca por nombre (`voice="Swamiji"`), con el texto formateado como `{Swamiji}: <text>`. Es, por tanto, un modelo de voz nombrada orientado a investigación, no un TTS multihablante de propósito general.
 
@@ -73,6 +73,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/maya-named-early-cb-e-depthw-8-8-1
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/maya-named-early-cb-e-depthw-8-8-1
 - Modelo base: https://huggingface.co/maya-research/maya2-native
 - Repositorio de código (rama `research/maya2-sft`): https://github.com/swamiji-tts (referencia citada en la model card; no se proporciona URL exacta)

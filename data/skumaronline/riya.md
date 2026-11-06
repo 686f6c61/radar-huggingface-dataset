@@ -2,7 +2,7 @@
 
 ## Resumen
 
-skumaronline/riya es un repositorio de modelo alojado en HuggingFace por el usuario skumaronline. La informacion disponible se limita a los metadatos del repositorio: licencia GPL-3.0, etiqueta de region "us", 0 descargas y 0 "likes" en el momento de la consulta, y fechas de creacion y ultima actualizacion del 6 de octubre de 2026. No hay pipeline declarado ni idiomas soportados.
+skumaronline/riya es un repositorio de modelo alojado en Hugging Face por el usuario skumaronline. La informacion disponible se limita a los metadatos del repositorio: licencia GPL-3.0, etiqueta de region "us", 0 descargas y 0 "likes" en el momento de la consulta, y fechas de creacion y ultima actualizacion del 6 de octubre de 2026. No hay pipeline declarado ni idiomas soportados.
 
 El repositorio no publica model card tecnica: el README se reduce al bloque de metadatos con la licencia. No se indica arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, formato de pesos ni resultados de evaluacion. Tampoco se han encontrado papers, blogs, repositorios auxiliares ni demos asociados al identificador.
 
@@ -75,7 +75,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| skumaronline/riya | no disponible | no disponible | GPL-3.0 | repositorio HuggingFace sin model card |
+| skumaronline/riya | no disponible | no disponible | GPL-3.0 | repositorio Hugging Face sin model card |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,11 +87,11 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 - Repositorio sin validacion de la comunidad: 0 descargas y 0 "likes" implican ausencia de verificacion independiente y de informes de fallos.
 - Riesgo de cadena de suministro: al no declararse el formato de pesos, existe la posibilidad de artefactos con codigo ejecutable (por ejemplo, ficheros pickle). Se recomienda auditar el repositorio antes de cargar cualquier peso.
 - Fecha de actualizacion identica a la de creacion: no consta mantenimiento posterior ni versionado.
-- Sin pipeline declarado en HuggingFace: la plataforma no ofrece pistas sobre la tarea prevista.
+- Sin pipeline declarado en Hugging Face: la plataforma no ofrece pistas sobre la tarea prevista.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/skumaronline/riya
+- Hugging Face: https://huggingface.co/skumaronline/riya
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

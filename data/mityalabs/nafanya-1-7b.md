@@ -74,8 +74,8 @@ Rendimiento en dispositivo (Poco F1, Q4_K_M): pico de RAM 1,71 GB, carga de 3-4 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nafanya-1.7b | 1,72B | no disponible (entrenado a 1280) | Tool calling en ruso para agente móvil | Apache-2.0 | HuggingFace (adaptador PEFT y GGUF) |
-| Qwen/Qwen3-1.7B (base) | 1,7B | no disponible en esta ficha | Modelo generalista multilingüe | Apache-2.0 | HuggingFace |
+| nafanya-1.7b | 1,72B | no disponible (entrenado a 1280) | Tool calling en ruso para agente móvil | Apache-2.0 | Hugging Face (adaptador PEFT y GGUF) |
+| Qwen/Qwen3-1.7B (base) | 1,7B | no disponible en esta ficha | Modelo generalista multilingüe | Apache-2.0 | Hugging Face |
 | Alternativas de tool calling de ~1-3B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de tool calling en ruso en la información proporcionada.
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de tool call
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MityaLabs/nafanya-1.7b
+- Modelo en Hugging Face: https://huggingface.co/MityaLabs/nafanya-1.7b
 - Agente kuzya: https://github.com/mitya-labs/kuzya
 - Espacio de trabajo de entrenamiento: https://github.com/mitya-labs/nafanya
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

@@ -100,7 +100,7 @@ No se dispone de información sobre otros modelos TTS comparables (por ejemplo, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FrankLiuDundun/voxcpm-finetune-lora-r5
+- Modelo en Hugging Face: https://huggingface.co/FrankLiuDundun/voxcpm-finetune-lora-r5
 - Modelo base: https://huggingface.co/openbmb/VoxCPM2
 - Revisión estable recomendada por el autor (r2): https://huggingface.co/FrankLiuDundun/voxcpm-finetune-lora
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos o repositorios) en la búsqueda web realizada; los resultados obtenidos correspondían a páginas genéricas de YouTube y no guardan relación con el modelo.

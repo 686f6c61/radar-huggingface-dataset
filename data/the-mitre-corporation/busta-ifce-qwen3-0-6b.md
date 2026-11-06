@@ -80,8 +80,8 @@ Contexto adicional aportado por el autor: el benchmark Assemblage emplea un pool
 
 | Modelo | Parametros | Longitud de contexto | Dimension de embedding | MRR en Assemblage (descompilado a fuente) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| BUSTA-IFCE-Qwen3-0.6B | 595.776.512 | 2048 tokens | 1024 | 0,4104 (declarado por el autor, no verificado) | Apache-2.0 | HuggingFace, sentence-transformers, TEI |
-| Qwen/Qwen3-Embedding-0.6B (modelo base) | Aprox. 0,6B | No disponible en la informacion proporcionada | No disponible | No disponible | Apache-2.0 | HuggingFace |
+| BUSTA-IFCE-Qwen3-0.6B | 595.776.512 | 2048 tokens | 1024 | 0,4104 (declarado por el autor, no verificado) | Apache-2.0 | Hugging Face, sentence-transformers, TEI |
+| Qwen/Qwen3-Embedding-0.6B (modelo base) | Aprox. 0,6B | No disponible en la informacion proporcionada | No disponible | No disponible | Apache-2.0 | Hugging Face |
 | Mejor baseline citado en el articulo (identidad no especificada) | No disponible | No disponible | No disponible | 0,08 | No disponible | No disponible |
 
 No se dispone de datos de otros modelos de embeddings de codigo comparables (por ejemplo, alternativas orientadas a recuperacion de codigo de otros proveedores) en la informacion proporcionada, por lo que no se incluyen filas adicionales para no introducir cifras no verificadas.
@@ -101,7 +101,7 @@ No se dispone de datos de otros modelos de embeddings de codigo comparables (por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/the-mitre-corporation/BUSTA-IFCE-Qwen3-0.6B
+- Modelo en Hugging Face: https://huggingface.co/the-mitre-corporation/BUSTA-IFCE-Qwen3-0.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Articulo: https://arxiv.org/abs/2605.05251
 - Repositorio de codigo: https://github.com/MITRE-Identifier-Free-Code-Embedding/Identifier-Free-Code-Embedding

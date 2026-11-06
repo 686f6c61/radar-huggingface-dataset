@@ -76,5 +76,5 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-harem-official-seed123
+- Modelo en Hugging Face: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-harem-official-seed123
 - Modelo base (referencia): Qwen/Qwen3.5-4B (no se proporciona URL directa en la documentacion)

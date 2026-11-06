@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento cuantitativos de los modelos comparables e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Qwen3.8-27B-ARA-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen3.8-27B-ARA-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Proyecto Heretic: https://heretic-project.org
 - Qwen Cloud (servicio gestionado del modelo base): https://www.qwencloud.com

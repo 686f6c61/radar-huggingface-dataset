@@ -94,7 +94,7 @@ La comparativa es solo orientativa; el modelo VanRakshak está afinado para un d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sanjeevafk/vanrakshak-forest-yolov8n
+- Hugging Face: https://huggingface.co/sanjeevafk/vanrakshak-forest-yolov8n
 - PDF de la plataforma VanRakshak (IRJET): https://www.irjet.net/archives/V13/i2/IRJET-V13I02152.pdf
 - GitHub de Anshkant (Vanrakshak-AI): https://github.com/Anshkant/Vanrakshak-AI/tree/main
 - GitHub de aneeshrao0207 (VanRakshak): https://github.com/aneeshrao0207/VanRakshak

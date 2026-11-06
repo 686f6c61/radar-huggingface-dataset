@@ -79,7 +79,7 @@ No se ofrecen datos de benchmarks comparativos en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sudarshanregmi/timethink-base
+- Hugging Face: https://huggingface.co/sudarshanregmi/timethink-base
 - Modelo entrenado SFT: https://huggingface.co/sudarshanregmi/timethink-sft
 - Modelo entrenado RL: https://huggingface.co/sudarshanregmi/timethink-rl
 - Dataset de evaluacion: https://huggingface.co/datasets/sudarshanregmi/timethink

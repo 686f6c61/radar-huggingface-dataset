@@ -17,7 +17,7 @@ El modelo se publica con muy poca documentacion: no declara licencia, no publica
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | No se documentan cuantizaciones GGUF/INT8/INT4. El peso de inferencia se distribuye en fp16 |
 | Idiomas soportados | Arabe unicamente, multi-dialecto: msa, eg, sa, bh, kw, ae, qa, om, ye, iq, sy, lb, ps, jo, sd, ly, tn, dz, ma, mr, unk |
-| Licencia | no disponible (no declarada en la model card ni en los metadatos de HuggingFace) |
+| Licencia | no disponible (no declarada en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | PyTorch (`.pt`): `latest.pt` (estado completo de entrenamiento), `ema_model.pt` (pesos EMA en fp16); vocabulario en `vocab_ar.json` |
 | Muestreo de audio | Mel a 24.000 Hz, 100 bandas, hop 256 |
 | Vocoder | No incluido; requiere un vocoder Vocos compatible con la configuracion mel anterior |
@@ -77,7 +77,7 @@ Los datos de los modelos alternativos no forman parte de la informacion proporci
 
 | Modelo | Arquitectura | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gijl/level-tts-ar | DiT con flow matching (familia F5-TTS) | no disponible | Arabe multi-dialecto (21 etiquetas) | no disponible | HuggingFace, pesos `.pt` |
+| gijl/level-tts-ar | DiT con flow matching (familia F5-TTS) | no disponible | Arabe multi-dialecto (21 etiquetas) | no disponible | Hugging Face, pesos `.pt` |
 | F5-TTS (referencia de familia) | DiT con flow matching | no disponible en la informacion aportada | no disponible en la informacion aportada | no disponible en la informacion aportada | no disponible en la informacion aportada |
 | Otros TTS arabes open source | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,6 +98,6 @@ No se dispone de resultados comparativos de naturalidad, similitud de hablante n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gijl/level-tts-ar
+- Modelo en Hugging Face: https://huggingface.co/gijl/level-tts-ar
 
 La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces obtenidos corresponden a contenido audiovisual y bancos de videos sin relacion con `gijl/level-tts-ar`. Por tanto, no se dispone de papers, blogs, repositorios de codigo ni demos adicionales que enlazar.

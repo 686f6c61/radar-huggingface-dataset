@@ -87,7 +87,7 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Tipo | Entrada | Recall phishing (test) | ROC-AUC | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ratul16961/phishing-url-random-forest | Random Forest (scikit-learn) | 14 features léxicas de la URL | 0,68 (0,23 sin path) | 0,952 (0,710 sin path) | MIT | HuggingFace |
+| Ratul16961/phishing-url-random-forest | Random Forest (scikit-learn) | 14 features léxicas de la URL | 0,68 (0,23 sin path) | 0,952 (0,710 sin path) | MIT | Hugging Face |
 | Modelos basados en contenido HTML/DOM | Variable (árboles, redes) | HTML, recursos, red | no disponible | no disponible | variable | variable |
 | Listas de reputación (PhishTank, OpenPhish) | Basadas en denuncias | URL completa | no disponible | no disponible | variable | pública |
 | Clasificadores léxicos comerciales | Propietarios | URL + señales externas | no disponible | no disponible | propietaria | de pago |
@@ -110,7 +110,7 @@ No se dispone de datos públicos comparables en la información proporcionada pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ratul16961/phishing-url-random-forest
+- Modelo en Hugging Face: https://huggingface.co/Ratul16961/phishing-url-random-forest
 - Código del proyecto (rama `has073-phishing`, carpeta `has073`): https://github.com/ratulhasan16961/PT22026
 - Dataset de entrenamiento ("Phishing Site URLs", Kaggle): no disponible el enlace directo en la información proporcionada
 - Paper o blog técnico: no disponible

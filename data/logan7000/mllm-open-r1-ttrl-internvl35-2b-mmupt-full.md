@@ -69,6 +69,6 @@ No se dispone de datos comparativos publicados para este modelo. Como referencia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logan7000/mllm-open-r1-ttrl-internvl35-2b-mmupt-full
-- Perfil del autor en HuggingFace: https://huggingface.co/logan7000
+- Repositorio Hugging Face: https://huggingface.co/logan7000/mllm-open-r1-ttrl-internvl35-2b-mmupt-full
+- Perfil del autor en Hugging Face: https://huggingface.co/logan7000
 - Paper TTRL (Test-Time Reinforcement Learning): https://arxiv.org/abs/2504.16084

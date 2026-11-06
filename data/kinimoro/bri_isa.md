@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bri_Isa es un adaptador LoRA de tipo text-to-image entrenado para su uso con el modelo base Krea 2 (`krea/Krea-2-Raw`). Lo publica el usuario Kinimoro en HuggingFace y su proposito declarado es reproducir una identidad visual y unos rasgos faciales concretos, correspondientes a una persona adulta real. No se trata de un modelo generativo autonomo, sino de un peso adicional que se carga junto al modelo base para condicionar la generacion de imagenes hacia un sujeto especifico mediante la palabra de activacion `Isa`.
+Bri_Isa es un adaptador LoRA de tipo text-to-image entrenado para su uso con el modelo base Krea 2 (`krea/Krea-2-Raw`). Lo publica el usuario Kinimoro en Hugging Face y su proposito declarado es reproducir una identidad visual y unos rasgos faciales concretos, correspondientes a una persona adulta real. No se trata de un modelo generativo autonomo, sino de un peso adicional que se carga junto al modelo base para condicionar la generacion de imagenes hacia un sujeto especifico mediante la palabra de activacion `Isa`.
 
 El repositorio es muy reciente (creado y actualizado el 2 de noviembre de 2026) y no acumula descargas ni valoraciones. Su tamano es de aproximadamente 0,2 GB, coherente con un LoRA de bajo rango sobre un modelo de difusion, y se distribuye en formato compatible con la libreria `diffusers`. La model card no incluye informacion sobre el proceso de entrenamiento, el numero de pasos, el rango del adaptador ni los hiperparametros utilizados.
 
@@ -75,6 +75,6 @@ No disponible. La informacion proporcionada no incluye otros LoRA de identidad c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kinimoro/Bri_Isa
+- Modelo en Hugging Face: https://huggingface.co/Kinimoro/Bri_Isa
 - Modelo base Krea 2: https://huggingface.co/krea/Krea-2-Raw
 - Descarga de archivos: https://huggingface.co/Kinimoro/Bri_Isa/tree/main

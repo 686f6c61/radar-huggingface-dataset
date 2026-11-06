@@ -66,12 +66,12 @@ No existe una comparativa directa con modelos de la misma categoría porque este
 
 - El checkpoint de inicialización no ha sido entrenado; cualquier salida que produzca será aleatoria o sin sentido.
 - No se ha auditado el modelo en cuanto a robustez, equidad o transferencia de dominio.
-- La implementación es personalizada; las APIs genéricas de HuggingFace (como `AutoModel`) no funcionarán sin un adaptador explícito.
+- La implementación es personalizada; las APIs genéricas de Hugging Face (como `AutoModel`) no funcionarán sin un adaptador explícito.
 - No se documentan idiomas soportados ni longitudes de contexto; el uso en producción es inviable.
 - La licencia BSD-3-Clause permite uso comercial, pero el autor advierte que deben revisarse los términos de los datos externos si se usan con datasets de terceros.
 - No hay garantías de rendimiento ni soporte; es un artefacto de investigación experimental.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/christiankrause/mae-multitask
+- Repositorio en Hugging Face: https://huggingface.co/christiankrause/mae-multitask
 - Proyecto MultiMAE (referencia conceptual, no relacionado directamente): https://github.com/EPFL-VILAB/MultiMAE

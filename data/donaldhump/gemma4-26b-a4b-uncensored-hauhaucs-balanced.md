@@ -105,7 +105,7 @@ No se dispone de comparativas medidas de rendimiento entre estos modelos en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DonaldHump/Gemma4-26B-A4B-Uncensored-HauhauCS-Balanced
+- Modelo en Hugging Face: https://huggingface.co/DonaldHump/Gemma4-26B-A4B-Uncensored-HauhauCS-Balanced
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Discord del autor (HauhauCS): https://discord.gg/SZ5vacTXYf
 - Búsqueda web: los resultados obtenidos corresponden a portales educativos sin relación con el modelo (atrium-sud.fr y su catálogo Correlyce). No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo.

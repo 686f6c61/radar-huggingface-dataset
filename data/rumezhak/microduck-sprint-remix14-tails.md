@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-sprint-remix14-tails es un artefacto de control para el simulador de robótica Microduck Arena, desarrollado por el usuario de HuggingFace rumezhak. No es un modelo de lenguaje: se trata de un grafo ONNX que implementa una política de control por tablas de búsqueda (lookup tables) para la prueba de sprint de 2 metros del entorno Microduck. Deriva por fine-tuning de jrubiosainz/microduck-game-sprinter-remix14, que a su vez extiende el trabajo de nikghodki, HlibPlakhtii y a1rb4Ck.
+microduck-sprint-remix14-tails es un artefacto de control para el simulador de robótica Microduck Arena, desarrollado por el usuario de Hugging Face rumezhak. No es un modelo de lenguaje: se trata de un grafo ONNX que implementa una política de control por tablas de búsqueda (lookup tables) para la prueba de sprint de 2 metros del entorno Microduck. Deriva por fine-tuning de jrubiosainz/microduck-game-sprinter-remix14, que a su vez extiende el trabajo de nikghodki, HlibPlakhtii y a1rb4Ck.
 
 El modelo resuelve un problema muy concreto: optimizar los últimos pasos de control de cada una de las cinco semillas oficiales del sprint, de modo que el cruce de meta ocurra ligeramente antes dentro del mismo tick de 5 ms. El autor es explícito en que el tiempo final no mejora (0.817 s, idéntico a remix14) y que, bajo la regla de desempate de la Arena, este fichero queda por detrás del original. Es, por tanto, un ejercicio de ajuste fino in-sample con valor técnico limitado fuera del simulador.
 
@@ -94,7 +94,7 @@ Resultado agregado: 0.817 s en las cinco semillas oficiales, con 5/5 carreras fi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rumezhak/microduck-sprint-remix14-tails
+- Hugging Face: https://huggingface.co/rumezhak/microduck-sprint-remix14-tails
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix14
 - Ancestro sprint-lookup-v1: https://huggingface.co/nikghodki/microduck-sprint-lookup-v1
 - Microduck Arena: https://huggingface.co/spaces/pollen-robotics/microduck-arena

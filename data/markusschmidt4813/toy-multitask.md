@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`markusschmidt4813/toy-multitask` es un repositorio experimental publicado en HuggingFace que contiene una implementación funcional de una red **MobileViT** configurada para aprendizaje multitarea (multitask). Lo desarrolla el usuario markusschmidt4813 y se distribuye bajo licencia BSD-3-Clause. No es un modelo de lenguaje: es un modelo de visión por computador con arquitectura híbrida CNN-transformer, pensado como punto de partida reproducible y no como un checkpoint entrenado.
+`markusschmidt4813/toy-multitask` es un repositorio experimental publicado en Hugging Face que contiene una implementación funcional de una red **MobileViT** configurada para aprendizaje multitarea (multitask). Lo desarrolla el usuario markusschmidt4813 y se distribuye bajo licencia BSD-3-Clause. No es un modelo de lenguaje: es un modelo de visión por computador con arquitectura híbrida CNN-transformer, pensado como punto de partida reproducible y no como un checkpoint entrenado.
 
 El peso publicado (`model.safetensors`) es un **checkpoint de inicialización** para pruebas de humo, con **33.088 parámetros** según los metadatos de safetensors. La propia model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. La etiqueta de escala "giant" que aparece en la configuración debe interpretarse como el nombre de una configuración generada por el script, no como un modelo de gran tamaño.
 
@@ -73,8 +73,8 @@ No se han identificado en la informacion disponible modelos directamente compara
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| markusschmidt4813/toy-multitask | 33.088 | No aplica (vision) | Sin benchmarks publicados | BSD-3-Clause | HuggingFace, 0 descargas |
-| shrutikumar/toy-multitask | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| markusschmidt4813/toy-multitask | 33.088 | No aplica (vision) | Sin benchmarks publicados | BSD-3-Clause | Hugging Face, 0 descargas |
+| shrutikumar/toy-multitask | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | MobileViT original (Apple) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Referencia arquitectonica citada por el autor, sin datos verificados aqui |
 
 ## Limitaciones y advertencias
@@ -91,8 +91,8 @@ No se han identificado en la informacion disponible modelos directamente compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/markusschmidt4813/toy-multitask
-- Repositorio de nombre similar en HuggingFace: https://huggingface.co/shrutikumar/toy-multitask
+- Modelo en Hugging Face: https://huggingface.co/markusschmidt4813/toy-multitask
+- Repositorio de nombre similar en Hugging Face: https://huggingface.co/shrutikumar/toy-multitask
 - Otro repositorio del mismo autor: https://huggingface.co/markusschmidt4813/cs224n-parser
 - Articulo divulgativo sobre aprendizaje multitarea: https://www.geeksforgeeks.org/deep-learning/multi-task-learningmtl-for-deep-learning/
 - Herramienta de interfaz multitarea (no relacionada): https://multitaskai.com/

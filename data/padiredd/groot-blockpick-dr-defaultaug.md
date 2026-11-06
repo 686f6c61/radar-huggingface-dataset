@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`groot-blockpick-dr-defaultaug` es un ajuste fino (fine-tune) del modelo fundacional de robotica `nvidia/GR00T-N1.7-3B`, publicado por el usuario `padiredd` en HuggingFace. Se trata de un modelo vision-language-action (VLA) especializado en una unica tarea de manipulacion: un pick top-down de un bloque verde lima con el brazo izquierdo del robot ROBOTIS FFW SG2 en el simulador Isaac Lab. El modelo parte de la arquitectura GR00T N1.7 de NVIDIA, que combina un backbone Cosmos-Reason2-2B (congelado durante el fine-tune) con un proyector y una cabeza de accion de tipo diffusion.
+`groot-blockpick-dr-defaultaug` es un ajuste fino (fine-tune) del modelo fundacional de robotica `nvidia/GR00T-N1.7-3B`, publicado por el usuario `padiredd` en Hugging Face. Se trata de un modelo vision-language-action (VLA) especializado en una unica tarea de manipulacion: un pick top-down de un bloque verde lima con el brazo izquierdo del robot ROBOTIS FFW SG2 en el simulador Isaac Lab. El modelo parte de la arquitectura GR00T N1.7 de NVIDIA, que combina un backbone Cosmos-Reason2-2B (congelado durante el fine-tune) con un proyector y una cabeza de accion de tipo diffusion.
 
 La relevancia de esta publicacion es acotada y muy practica: sirve como artefacto reproducible de un experimento de domain randomization sobre una tarea concreta de pick-and-place, con cinco checkpoints intermedios (20k, 40k, 60k, 80k y 100k pasos) y una receta de entrenamiento documentada. No es un modelo de proposito general ni un chatbot: es un checkpoint de investigacion para evaluar robustez frente a variaciones visuales en simulacion.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| groot-blockpick-dr-defaultaug | 3B (1,62B entrenables) | no disponible | Pick top-down FFW SG2 en Isaac Lab | other | HuggingFace, 0 descargas |
-| nvidia/GR00T-N1.7-3B (base) | 3B | no disponible | VLA fundacional de robotica | otra licencia de NVIDIA | HuggingFace (modelo base) |
-| padiredd/dp-blockpick-* | no disponible | no disponible | Misma tarea con diffusion policies | no disponible | HuggingFace (mismo autor) |
+| groot-blockpick-dr-defaultaug | 3B (1,62B entrenables) | no disponible | Pick top-down FFW SG2 en Isaac Lab | other | Hugging Face, 0 descargas |
+| nvidia/GR00T-N1.7-3B (base) | 3B | no disponible | VLA fundacional de robotica | otra licencia de NVIDIA | Hugging Face (modelo base) |
+| padiredd/dp-blockpick-* | no disponible | no disponible | Misma tarea con diffusion policies | no disponible | Hugging Face (mismo autor) |
 
 La comparativa se limita a estos tres artefactos porque la informacion proporcionada no incluye datos de otros modelos VLA comparables (por ejemplo, variantes de OpenVLA u otros checkpoints de GR00T). No se dispone de cifras de rendimiento para establecer una comparacion cuantitativa.
 
@@ -83,7 +83,7 @@ La comparativa se limita a estos tres artefactos porque la informacion proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/groot-blockpick-dr-defaultaug
+- Modelo en Hugging Face: https://huggingface.co/padiredd/groot-blockpick-dr-defaultaug
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Fork de Isaac-GR00T usado para cargar los checkpoints: https://github.com/omkarpatil18/Isaac-GR00T-n1.7 (commit e81d02b)
 - Repositorio Isaac-GR00T de NVIDIA (referencia): https://github.com/NVIDIA/Isaac-GR00T

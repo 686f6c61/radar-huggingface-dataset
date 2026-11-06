@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arkojit1/pi05_pick_block_eef_delta | 4,14 mil millones | no disponible | VLA ajustado para pick block con Franka | no disponible | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| lerobot/pi05_base | no disponible en la información proporcionada | no disponible | VLA base de π₀.₅ | no disponible | HuggingFace |
-| lerobot/smolvla_base | aprox. 450 millones (dato público, no verificado en la información proporcionada) | no disponible | VLA compacto de LeRobot | no disponible | HuggingFace |
-| openvla/openvla-7b | aprox. 7 mil millones (dato público, no verificado en la información proporcionada) | no disponible | VLA de propósito general para manipulación | no disponible | HuggingFace |
+| arkojit1/pi05_pick_block_eef_delta | 4,14 mil millones | no disponible | VLA ajustado para pick block con Franka | no disponible | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| lerobot/pi05_base | no disponible en la información proporcionada | no disponible | VLA base de π₀.₅ | no disponible | Hugging Face |
+| lerobot/smolvla_base | aprox. 450 millones (dato público, no verificado en la información proporcionada) | no disponible | VLA compacto de LeRobot | no disponible | Hugging Face |
+| openvla/openvla-7b | aprox. 7 mil millones (dato público, no verificado en la información proporcionada) | no disponible | VLA de propósito general para manipulación | no disponible | Hugging Face |
 
 Los datos de SmolVLA y OpenVLA proceden de documentación pública de sus respectivos proyectos y no de la información facilitada para esta ficha; conviene verificarlos antes de citarlos. La comparación con `lerobot/pi05_base` es la más directa, ya que este modelo es un ajuste fino suyo.
 
@@ -103,7 +103,7 @@ Los datos de SmolVLA y OpenVLA proceden de documentación pública de sus respec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arkojit1/pi05_pick_block_eef_delta
+- Modelo en Hugging Face: https://huggingface.co/arkojit1/pi05_pick_block_eef_delta
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de ajuste fino: https://huggingface.co/datasets/Ameyapores/pick_block_eef_delta
 - LeRobot: https://github.com/huggingface/lerobot

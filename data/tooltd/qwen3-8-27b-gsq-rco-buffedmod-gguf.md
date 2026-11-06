@@ -114,7 +114,7 @@ No se dispone de informacion sobre modelos comparables de otros autores (mismo t
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tooltd/Qwen3.8-27B-GSQ-RCO-BuffedMod-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tooltd/Qwen3.8-27B-GSQ-RCO-BuffedMod-GGUF
 - Modelo de origen (cuantizacion base): https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper, blog o demo adicionales: no disponible. La busqueda web realizada no devolvio resultados relevantes sobre este modelo.

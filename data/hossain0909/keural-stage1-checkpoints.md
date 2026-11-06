@@ -90,7 +90,7 @@ La comparacion con Mixtral y Qwen1.5-MoE-A2.7B es la mas cercana por diseno (MoE
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hossain0909/keural-stage1-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/hossain0909/keural-stage1-checkpoints
 - Modelo SFT (fase 3): https://huggingface.co/mkd-hossain/keural-14.8b-sft
 - Version safetensors para vLLM (fase 2): https://huggingface.co/mkd-hossain/keural-14.8b-stage2-vllm
 - Modelo base y tokenizador: https://huggingface.co/mkd-hossain/keural-14.8b-base

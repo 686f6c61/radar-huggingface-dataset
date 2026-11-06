@@ -110,7 +110,7 @@ Datos de rendimiento comparado (latencia, calidad, benchmarks): no disponibles p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/superkuh/Qwen3.8-27B-UD-IQ3_XXS-ASCII-Condensed
+- Modelo en Hugging Face: https://huggingface.co/superkuh/Qwen3.8-27B-UD-IQ3_XXS-ASCII-Condensed
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantizado de origen: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Script Perl de poda de vocabulario: http://superkuh.com/ascii-vocab-only-surgery-for-qwen3827b.pl.txt

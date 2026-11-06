@@ -2,7 +2,7 @@
 
 ## Resumen
 
-optimization-ai999x es un motor determinista de resolución de problemas de optimización empaquetado como modelo de HuggingFace por AI999X (autor: Ibnul Jaif Farabi). No es un transformer generativo al uso: se trata de un solver de Python compilado en Rust que interpreta preguntas en inglés sobre investigación operativa (programación lineal y entera, optimización en redes, colas, inventario, scheduling, teoría de juegos, MCDA) y devuelve la solución exacta con pasos intermedios, unidades, LaTeX y supuestos, o bien una negativa explícita cuando no puede verificar el resultado.
+optimization-ai999x es un motor determinista de resolución de problemas de optimización empaquetado como modelo de Hugging Face por AI999X (autor: Ibnul Jaif Farabi). No es un transformer generativo al uso: se trata de un solver de Python compilado en Rust que interpreta preguntas en inglés sobre investigación operativa (programación lineal y entera, optimización en redes, colas, inventario, scheduling, teoría de juegos, MCDA) y devuelve la solución exacta con pasos intermedios, unidades, LaTeX y supuestos, o bien una negativa explícita cuando no puede verificar el resultado.
 
 El modelo declara 4.715.520 parámetros en formato safetensors y un tamaño de repositorio de 0,1 GB, con una longitud de contexto no especificada. Su propuesta de valor es la ausencia de alucinación por diseño: en lugar de generar texto probabilístico, selecciona una de 72 capacidades certificadas y calcula la respuesta de forma determinista. Se ejecuta íntegramente en CPU, sin GPU, sin clave de API y sin conexión a internet, tanto como paquete Python como app de escritorio, CLI y compilación WebAssembly.
 
@@ -104,8 +104,8 @@ No se dispone de datos de benchmarks comparativos con estas alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/optimization-ai999x
-- Organización AI999X en HuggingFace: https://huggingface.co/AI999X
+- Modelo en Hugging Face: https://huggingface.co/AI999X/optimization-ai999x
+- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
 - Página del modelo con demo en navegador: https://www.ai999x.com/models/optimization-ai999x/#try
 - App de escritorio y CLI: https://www.ai999x.com/desktop-cli/
 - Paquete Python en PyPI: https://pypi.org/project/optimization-ai999x/

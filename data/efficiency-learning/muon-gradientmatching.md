@@ -75,7 +75,7 @@ La comparación directa no es posible por falta de datos de rendimiento. El mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/efficiency-learning/muon-gradientMatching
+- Repositorio en Hugging Face: https://huggingface.co/efficiency-learning/muon-gradientMatching
 - Paper sobre eficiencia práctica de Muon: https://arxiv.org/abs/2505.02222
 - Explicación visual del optimizador Muon: https://vizuaraai.github.io/vizuara-ai-daily/muon-optimizer/
 - Notas sobre Muon y su escalado: https://calwoo.github.io/notes/papers/muon-optimizer/index.html

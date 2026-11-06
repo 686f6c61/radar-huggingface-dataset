@@ -96,7 +96,7 @@ La diferencia relevante entre estas opciones no es de rendimiento sino de format
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/warped-community/Gemma3-12B-litert-lm
+- Hugging Face (este repositorio): https://huggingface.co/warped-community/Gemma3-12B-litert-lm
 - Fuente del artefacto: https://huggingface.co/litert-community/Gemma3-12B-IT
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it-qat-q4_0-unquantized
 - Referencia tangencial encontrada en la busqueda web (cuantizacion de precision mixta en modelos de lenguaje, no especifica de este artefacto): https://arxiv.org/html/2510.16805v1

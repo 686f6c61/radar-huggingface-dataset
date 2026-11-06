@@ -74,8 +74,8 @@ Pérdidas por fraude: 16만원 (81 % menos que el baseline). No se han publicado
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-ieum-v2-teacher | Política RL (PPO) para CONNECT TYCOON | no disponible | no aplica | Apache 2.0 | HuggingFace |
-| connectailab-rl-ieum-v1 (riesgo ×3) | Política RL (PPO), versión previa | no disponible | no aplica | Apache 2.0 | HuggingFace (referenciado en la model card) |
+| connectailab-rl-ieum-v2-teacher | Política RL (PPO) para CONNECT TYCOON | no disponible | no aplica | Apache 2.0 | Hugging Face |
+| connectailab-rl-ieum-v1 (riesgo ×3) | Política RL (PPO), versión previa | no disponible | no aplica | Apache 2.0 | Hugging Face (referenciado en la model card) |
 | Presidente por reglas (baseline del simulador) | Sistema determinista de reglas | no aplica | no aplica | incluido en connect-tycoon | Repositorio GitHub |
 
 La comparación con LLM de propósito general no es pertinente: este modelo no genera texto ni razona sobre lenguaje natural, sino que emite decisiones discretas sobre un esquema fijo. La alternativa directa es la versión v1 con peso de riesgo ×3 y el baseline de reglas, ambos descritos en la model card.
@@ -94,7 +94,7 @@ La comparación con LLM de propósito general no es pertinente: este modelo no g
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ieum3355/connectailab-rl-ieum-v2-teacher
+- Modelo en Hugging Face: https://huggingface.co/ieum3355/connectailab-rl-ieum-v2-teacher
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

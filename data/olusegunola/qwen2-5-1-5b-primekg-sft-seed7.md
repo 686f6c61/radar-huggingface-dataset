@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `olusegunola/qwen2.5-1.5b-primekg-sft-seed7` es un ajuste fino publicado en HuggingFace por el usuario olusegunola. Por el propio identificador se deduce que se trata de un *fine-tuning* supervisado (SFT) del modelo base Qwen2.5-1.5B, entrenado sobre PrimeKG, un grafo de conocimiento orientado a medicina de precisión, con una semilla concreta (seed 7), lo que sugiere que forma parte de una serie de réplicas experimentales. Ninguno de estos extremos está confirmado en la documentación del repositorio.
+El modelo `olusegunola/qwen2.5-1.5b-primekg-sft-seed7` es un ajuste fino publicado en Hugging Face por el usuario olusegunola. Por el propio identificador se deduce que se trata de un *fine-tuning* supervisado (SFT) del modelo base Qwen2.5-1.5B, entrenado sobre PrimeKG, un grafo de conocimiento orientado a medicina de precisión, con una semilla concreta (seed 7), lo que sugiere que forma parte de una serie de réplicas experimentales. Ninguno de estos extremos está confirmado en la documentación del repositorio.
 
-La model card publicada es la plantilla automática de HuggingFace sin rellenar: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación) figuran como "[More Information Needed]". No hay pipeline declarado, ni idiomas, ni licencia, ni resultados de evaluación. El repositorio figura con 0,0 GB de tamaño, 0 descargas y 0 *likes*, lo que apunta a un experimento de investigación no validado ni distribuido.
+La model card publicada es la plantilla automática de Hugging Face sin rellenar: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación) figuran como "[More Information Needed]". No hay pipeline declarado, ni idiomas, ni licencia, ni resultados de evaluación. El repositorio figura con 0,0 GB de tamaño, 0 descargas y 0 *likes*, lo que apunta a un experimento de investigación no validado ni distribuido.
 
 Por tanto, esta ficha debe leerse como una evaluación de un artefacto experimental y opaco. Lo único verificable es su existencia, su formato de pesos (`safetensors`, librería `transformers`) y su compatibilidad declarada con endpoints de inferencia. Todo lo demás se marca explícitamente como no disponible o inferido.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha debe leerse como una evaluación de un artefacto experimen
 
 No hay información publicada sobre la arquitectura, el procedimiento de entrenamiento, el volumen de datos, la composición del dataset ni el uso de técnicas de alineación (RLHF, DPO, PPO). La model card mantiene todos los apartados de entrenamiento en "[More Information Needed]", incluidos los hiperparámetros y el régimen de precisión.
 
-A partir del identificador puede inferirse, sin confirmación documental, un escenario de *supervised fine-tuning* sobre Qwen2.5-1.5B usando datos derivados de PrimeKG (grafo de conocimiento de medicina de precisión con decenas de miles de relaciones entre fármacos, enfermedades, genes y fenotipos), y una ejecución identificada con la semilla 7, probablemente dentro de un barrido de semillas para medir varianza experimental. El único tag técnico relevante es `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, citado en la propia plantilla de HuggingFace; no describe la arquitectura ni el entrenamiento de este modelo.
+A partir del identificador puede inferirse, sin confirmación documental, un escenario de *supervised fine-tuning* sobre Qwen2.5-1.5B usando datos derivados de PrimeKG (grafo de conocimiento de medicina de precisión con decenas de miles de relaciones entre fármacos, enfermedades, genes y fenotipos), y una ejecución identificada con la semilla 7, probablemente dentro de un barrido de semillas para medir varianza experimental. El único tag técnico relevante es `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, citado en la propia plantilla de Hugging Face; no describe la arquitectura ni el entrenamiento de este modelo.
 
 No se documenta ninguna innovación técnica: ni decodificación especulativa, ni atención lineal, ni variantes híbridas SSM/transformer.
 
@@ -68,7 +68,7 @@ Las estimaciones siguientes se basan en el tamaño inferido de 1,5B parámetros 
 - VRAM total recomendada: 6-8 GB en FP16 con contexto moderado, 4-6 GB en INT8, 2-4 GB en 4 bits.
 - GPU recomendadas: cualquier GPU con 8 GB o más (RTX 3060 Ti, RTX 4060, RTX 3070, RTX 3080, RTX 4070, RTX 4080, RTX 4090), así como A10G, L4, A100 y H100 para despliegues con concurrencia.
 - Cabe en GPU de consumo: sí, en prácticamente todas las GPU modernas con 6 GB o más de VRAM; en cuantización de 4 bits puede ejecutarse incluso en CPU con `llama.cpp`, aunque con latencia elevada.
-- Opciones de despliegue: `transformers` (nativo, ya que el repositorio declara `library_name: transformers` y tag `endpoints_compatible`), vLLM, HuggingFace TGI, llama.cpp/Ollama previa conversión a GGUF, y servidores compatibles con la API de OpenAI.
+- Opciones de despliegue: `transformers` (nativo, ya que el repositorio declara `library_name: transformers` y tag `endpoints_compatible`), vLLM, Hugging Face TGI, llama.cpp/Ollama previa conversión a GGUF, y servidores compatibles con la API de OpenAI.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo, latencia de primer token ni comportamiento bajo batching.
 
 ## Comparativa con modelos similares
@@ -100,7 +100,7 @@ La comparación de rendimiento frente a cualquiera de estos modelos es imposible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-sft-seed7
+- Modelo en Hugging Face: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-sft-seed7
 - Modelo base de referencia (Qwen2.5-1.5B): https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Artículo citado en los tags del repositorio (`arxiv:1910.09700`, Lacoste et al., 2019, sobre estimación de emisiones de carbono; no describe este modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automático mencionada en la plantilla de la model card: https://mlco2.github.io/impact

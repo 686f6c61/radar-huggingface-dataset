@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks que permitan comparar este checkpoint con a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyanL22/pi05-anyh2r-rh56f1-frozen-aug-20k
+- Modelo en Hugging Face: https://huggingface.co/RyanL22/pi05-anyh2r-rh56f1-frozen-aug-20k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Librería LeRobot: https://github.com/huggingface/lerobot
 - No se han proporcionado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

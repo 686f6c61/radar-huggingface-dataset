@@ -100,11 +100,11 @@ La comparacion directa con Canary 1B v2 es la mas significativa, porque el ajust
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/infomiho/diktafon-dictate-hr-1
+- Modelo en Hugging Face: https://huggingface.co/infomiho/diktafon-dictate-hr-1
 - Version GGUF para transcribe.cpp: https://huggingface.co/infomiho/diktafon-dictate-hr-1-GGUF
 - Modelo base NVIDIA Canary 1B v2: https://huggingface.co/nvidia/canary-1b-v2
 - Aplicacion Diktafon: https://diktafon.miho.dev
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Corpus de ruido OpenSLR 28: https://www.openslr.org/28/
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, su autor o su arquitectura; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de HuggingFace.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, su autor o su arquitectura; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de Hugging Face.

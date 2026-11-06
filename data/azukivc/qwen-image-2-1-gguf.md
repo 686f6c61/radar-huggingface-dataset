@@ -110,7 +110,7 @@ No se dispone en la informacion proporcionada de datos verificables de modelos a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/azukivc/Qwen-Image-2.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/azukivc/Qwen-Image-2.1-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Codificador de texto y VAE de origen: https://huggingface.co/Comfy-Org/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

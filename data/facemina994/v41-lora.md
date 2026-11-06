@@ -91,7 +91,7 @@ La comparación se limita a parámetros, contexto, licencia y disponibilidad por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/facemina994/v41-lora
+- Modelo en Hugging Face: https://huggingface.co/facemina994/v41-lora
 - Modelo base utilizado: https://huggingface.co/unsloth/Qwen2.5-Coder-14B-bnb-4bit
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-Coder-14B
 - Repositorio de TRL: https://github.com/huggingface/trl

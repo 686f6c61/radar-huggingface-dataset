@@ -83,9 +83,9 @@ No se dispone de datos de benchmarks comparables con modelos generalistas, y las
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `two-hop-gpt-d768-nh12-adrop0.1-mdrop0.1-cos100k-base` | 85,2 M | no disponible (filas de 1.997 tokens) | two-hop accuracy de hasta 1,0000 | MIT | HuggingFace, 0 descargas |
-| `two-hop-gpt-hits` | no disponible | no disponible (filas de 1.024 tokens citadas) | `eval_acc/two_hop` de 0,99 en alguna evaluación (7 ejecuciones del barrido d768) | no disponible en la información | HuggingFace |
-| `two-hop-gpt-wsd-nh4` | no disponible (nh4, configuración distinta) | no disponible | no disponible | no disponible en la información | HuggingFace |
+| `two-hop-gpt-d768-nh12-adrop0.1-mdrop0.1-cos100k-base` | 85,2 M | no disponible (filas de 1.997 tokens) | two-hop accuracy de hasta 1,0000 | MIT | Hugging Face, 0 descargas |
+| `two-hop-gpt-hits` | no disponible | no disponible (filas de 1.024 tokens citadas) | `eval_acc/two_hop` de 0,99 en alguna evaluación (7 ejecuciones del barrido d768) | no disponible en la información | Hugging Face |
+| `two-hop-gpt-wsd-nh4` | no disponible (nh4, configuración distinta) | no disponible | no disponible | no disponible en la información | Hugging Face |
 | Modelos generalistas de tamaño similar (por ejemplo, GPT-2 small o Pythia-70M) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 La comparación con modelos de propósito general no es significativa: este modelo no ha sido entrenado para seguir instrucciones, responder preguntas abiertas ni generar código, de modo que cualquier comparación de MMLU o HumanEval carecería de sentido.
@@ -105,7 +105,7 @@ La comparación con modelos de propósito general no es significativa: este mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kdkyum/two-hop-gpt-d768-nh12-adrop0.1-mdrop0.1-cos100k-base
+- Modelo en Hugging Face: https://huggingface.co/kdkyum/two-hop-gpt-d768-nh12-adrop0.1-mdrop0.1-cos100k-base
 - Repositorio hermano `two-hop-gpt-hits`: https://huggingface.co/kdkyum/two-hop-gpt-hits
 - Repositorio hermano `two-hop-gpt-wsd-nh4`: https://huggingface.co/kdkyum/two-hop-gpt-wsd-nh4
 - Paper, blog o demo asociados: no disponible

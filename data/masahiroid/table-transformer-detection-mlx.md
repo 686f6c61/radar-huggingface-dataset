@@ -69,9 +69,9 @@ No se han publicado resultados de mAP, COCO AP, MMLU, HumanEval, GSM8K ni otros 
 ## Comparativa con modelos similares
 | Modelo | Framework | Parametros | Tarea | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| masahiroid/table-transformer-detection-mlx | MLX | 28.818.631 | Detección de tablas | 800x800 NHWC fija, sin padding | MIT | HuggingFace |
-| microsoft/table-transformer-detection | PyTorch / Transformers | 28,8 M | Detección de tablas | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace |
-| NexaAI/table-transformer-detection-npu | NPU (NexaAI) | 28,8 M | Detección de tablas | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace y ModelScope |
+| masahiroid/table-transformer-detection-mlx | MLX | 28.818.631 | Detección de tablas | 800x800 NHWC fija, sin padding | MIT | Hugging Face |
+| microsoft/table-transformer-detection | PyTorch / Transformers | 28,8 M | Detección de tablas | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face |
+| NexaAI/table-transformer-detection-npu | NPU (NexaAI) | 28,8 M | Detección de tablas | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face y ModelScope |
 
 No se dispone de resultados de mAP comparativos entre estas implementaciones en la información proporcionada. La alternativa oficial de Microsoft sigue siendo la referencia en PyTorch, mientras que la versión de NexaAI apunta a despliegue en NPU. Esta conversión se diferencia por ejecutarse en MLX sobre Apple Silicon y por su restricción de entrada cuadrada fija.
 
@@ -88,7 +88,7 @@ No se dispone de resultados de mAP comparativos entre estas implementaciones en 
 - No hay datos publicados de latencia, throughput, consumo de memoria en producción ni rendimiento comparativo con otros detectores.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/masahiroid/table-transformer-detection-mlx
+- Modelo en Hugging Face: https://huggingface.co/masahiroid/table-transformer-detection-mlx
 - Modelo base: https://huggingface.co/microsoft/table-transformer-detection
 - Repositorio MLX: https://github.com/ml-explore/mlx
 - Conversión NPU de NexaAI: https://huggingface.co/NexaAI/table-transformer-detection-npu

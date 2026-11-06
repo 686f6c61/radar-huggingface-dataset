@@ -4,7 +4,7 @@
 
 El modelo `wlyu/anycam-hconcat-480-14b-lora` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el autor `wlyu` sobre el modelo base `alibaba-pai/Wan2.1-Fun-V1.1-14B-InP`, un modelo de generación de vídeo de 14 000 millones de parámetros de Alibaba. Según las etiquetas del repositorio, el adaptador está orientado a tareas de generación de vídeo, síntesis de nuevas vistas (novel-view synthesis) y control de cámara, lo que sugiere que permite manipular la perspectiva o el movimiento de cámara en vídeos generados.
 
-El repositorio tiene un tamaño de 0,9 GB, lo que corresponde únicamente a los pesos del adaptador LoRA, no al modelo base completo. Fue creado en agosto de 2026 y está sujeto a acceso restringido (gated) en HuggingFace, por lo que es necesario aceptar condiciones adicionales para su descarga. Aunque el número de descargas y likes es cero, su relevancia radica en la posibilidad de extender las capacidades de control de cámara de un modelo de vídeo ya establecido, un área activa en la investigación de generación de contenido visual.
+El repositorio tiene un tamaño de 0,9 GB, lo que corresponde únicamente a los pesos del adaptador LoRA, no al modelo base completo. Fue creado en agosto de 2026 y está sujeto a acceso restringido (gated) en Hugging Face, por lo que es necesario aceptar condiciones adicionales para su descarga. Aunque el número de descargas y likes es cero, su relevancia radica en la posibilidad de extender las capacidades de control de cámara de un modelo de vídeo ya establecido, un área activa en la investigación de generación de contenido visual.
 
 ## Especificaciones tecnicas
 
@@ -59,7 +59,7 @@ No se dispone de información sobre adaptadores LoRA comparables en el mismo rep
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos o de investigación.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos o de investigación.
 - Sin documentación técnica: no hay paper, README detallado ni ejemplos de uso en la información proporcionada, lo que dificulta su integración.
 - Dependencia del modelo base: el adaptador solo funciona con `Wan2.1-Fun-V1.1-14B-InP`; no es un modelo autónomo.
 - Riesgo de alucinación visual: como cualquier modelo generativo, puede producir artefactos o inconsistencias en las vistas sintetizadas, especialmente en escenas complejas.
@@ -69,6 +69,6 @@ No se dispone de información sobre adaptadores LoRA comparables en el mismo rep
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wlyu/anycam-hconcat-480-14b-lora
+- Repositorio Hugging Face: https://huggingface.co/wlyu/anycam-hconcat-480-14b-lora
 - Modelo base: https://huggingface.co/alibaba-pai/Wan2.1-Fun-V1.1-14B-InP (referencia, no verificado en la búsqueda)
 - No se encontraron papers, blogs o demos adicionales en la información proporcionada.

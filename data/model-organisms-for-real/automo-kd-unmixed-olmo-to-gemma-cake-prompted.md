@@ -90,7 +90,7 @@ La comparativa se centra en la metodología de entrenamiento y la expresión del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-cake-prompted
+- Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-cake-prompted
 - Repositorio GitHub (model-organism-lottery): https://github.com/model-organisms-for-real/model-organism-lottery
 - Paper en arXiv: https://arxiv.org/html/2607.01033
 - Post en LessWrong: https://www.lesswrong.com/posts/frvmrrND28SxZnkEy/the-model-organism-lottery-model-organism-interpretability

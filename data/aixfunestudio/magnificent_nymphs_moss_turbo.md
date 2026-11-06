@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AIxFuneStudio/Magnificent_Nymphs_Moss_Turbo` es un repositorio publicado en HuggingFace por el usuario AIxFuneStudio el 26 de octubre de 2026. En el momento de redactar esta ficha no existe tarjeta de modelo (model card) con información técnica: la búsqueda web no ha devuelto documentación adicional, paper, blog ni repositorio asociado. Los únicos metadatos verificables son la licencia declarada como "other", la región "us", un tamaño de repositorio de 5,4 GB, acceso restringido (gated) y un contador de 0 descargas y 0 likes.
+`AIxFuneStudio/Magnificent_Nymphs_Moss_Turbo` es un repositorio publicado en Hugging Face por el usuario AIxFuneStudio el 26 de octubre de 2026. En el momento de redactar esta ficha no existe tarjeta de modelo (model card) con información técnica: la búsqueda web no ha devuelto documentación adicional, paper, blog ni repositorio asociado. Los únicos metadatos verificables son la licencia declarada como "other", la región "us", un tamaño de repositorio de 5,4 GB, acceso restringido (gated) y un contador de 0 descargas y 0 likes.
 
 No se dispone de información sobre arquitectura, número de parámetros, longitud de contexto, modalidad (texto, imagen, audio u otras), datos de entrenamiento ni proceso de alineación. El nombre del repositorio sugiere un ajuste fino (fine-tune) o un modelo derivado con técnicas de destilación tipo "Turbo", pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor.
 
@@ -36,7 +36,7 @@ El único indicio cuantitativo es el tamaño del repositorio (5,4 GB). A modo de
 - No consta soporte de agentes ni de razonamiento multi-paso.
 - No consta información sobre capacidades multilingües ni sobre idiomas cubiertos.
 - No consta si el modelo es multimodal (texto, visión, audio) ni si dispone de modo de razonamiento explícito.
-- La única capacidad confirmada por metadatos es la de ser un artefacto descargable en HuggingFace bajo acceso restringido.
+- La única capacidad confirmada por metadatos es la de ser un artefacto descargable en Hugging Face bajo acceso restringido.
 
 ## Casos de uso
 
@@ -76,14 +76,14 @@ No disponible. Sin conocer la modalidad, el tamaño en parámetros ni el modelo 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Magnificent_Nymphs_Moss_Turbo | No disponible | No disponible | "other" (acceso gated) | HuggingFace, acceso restringido |
+| Magnificent_Nymphs_Moss_Turbo | No disponible | No disponible | "other" (acceso gated) | Hugging Face, acceso restringido |
 | Alternativas comparables | No disponibles | No disponibles | No disponibles | No disponibles |
 
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no hay información sobre arquitectura, datos de entrenamiento, idiomas ni limitaciones declaradas por el autor.
 - Licencia "other" sin texto público: no se puede determinar si se permite uso comercial, redistribución o modificación. Cualquier uso en producción queda bloqueado hasta aclararlo con el autor.
-- Acceso restringido (gated): la descarga requiere aceptar condiciones en HuggingFace, lo que añade una dependencia externa y posibles restricciones adicionales no documentadas aquí.
+- Acceso restringido (gated): la descarga requiere aceptar condiciones en Hugging Face, lo que añade una dependencia externa y posibles restricciones adicionales no documentadas aquí.
 - Riesgo de alucinación y de sesgos: desconocido por falta de evaluación; sin benchmarks ni evaluations publicadas no hay evidencia de calidad ni de robustez.
 - Validación comunitaria nula: 0 descargas y 0 likes indican que el modelo no ha sido probado públicamente, por lo que no existen informes de terceros sobre su comportamiento.
 - Procedencia de los datos de entrenamiento desconocida: no se puede evaluar el riesgo de contaminación de benchmarks, de contenido con derechos de autor ni de filtración de datos personales.
@@ -92,5 +92,5 @@ No disponible. Sin conocer la modalidad, el tamaño en parámetros ni el modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIxFuneStudio/Magnificent_Nymphs_Moss_Turbo
+- Hugging Face: https://huggingface.co/AIxFuneStudio/Magnificent_Nymphs_Moss_Turbo
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la búsqueda web realizada.

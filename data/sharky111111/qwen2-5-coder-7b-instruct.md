@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-Coder-7B-Instruct es la variante instruida de 7.610 millones de parametros de la familia Qwen2.5-Coder, desarrollada por el equipo Qwen de Alibaba Cloud (antes conocida como CodeQwen). El modelo que nos ocupa es una publicacion derivada alojada por el usuario Sharky111111 en HuggingFace, que toma como base `Qwen/Qwen2.5-Coder-7B` y aplica el ajuste instruccional de la version oficial Instruct. Resuelve tareas de generacion, razonamiento y reparacion de codigo, ademas de mantener competencias generales y matematicas.
+Qwen2.5-Coder-7B-Instruct es la variante instruida de 7.610 millones de parametros de la familia Qwen2.5-Coder, desarrollada por el equipo Qwen de Alibaba Cloud (antes conocida como CodeQwen). El modelo que nos ocupa es una publicacion derivada alojada por el usuario Sharky111111 en Hugging Face, que toma como base `Qwen/Qwen2.5-Coder-7B` y aplica el ajuste instruccional de la version oficial Instruct. Resuelve tareas de generacion, razonamiento y reparacion de codigo, ademas de mantener competencias generales y matematicas.
 
 La arquitectura es un transformer causal decoder-only con RoPE, SwiGLU, RMSNorm y bias en las proyecciones QKV, con atencion GQA (28 cabezas de consulta y 4 de clave-valor) y 28 capas. El contexto nativo es de 32.768 tokens, ampliable a 131.072 mediante YaRN. El modelo base se entreno sobre 5,5 billones de tokens que combinan codigo fuente, datos de grounding texto-codigo y datos sinteticos, lo que lo situa como una opcion solida para asistentes de programacion y agentes de codigo en entornos con licencia Apache 2.0.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen2.5-Coder-7B-Instruct (este repo) | 7,61B | 32K nativo / 131K con YaRN | Apache 2.0 | HuggingFace (repo derivado) | Variante instruida del base Qwen2.5-Coder-7B |
-| Qwen/Qwen2.5-Coder-7B-Instruct (oficial) | 7,61B | 32K nativo / 131K con YaRN | Apache 2.0 | HuggingFace (repo oficial) | Referencia canonica; mismo modelo base |
-| Qwen2.5-Coder-14B-Instruct | ~14B | 32K nativo / 131K con YaRN | Apache 2.0 | HuggingFace | Mayor capacidad, mas VRAM |
-| DeepSeek-Coder-V2-Lite-Instruct | 15,7B (2,4B activos, MoE) | 128K | Licencia propia | HuggingFace | MoE, contexto mayor, requiere revision de licencia |
+| Qwen2.5-Coder-7B-Instruct (este repo) | 7,61B | 32K nativo / 131K con YaRN | Apache 2.0 | Hugging Face (repo derivado) | Variante instruida del base Qwen2.5-Coder-7B |
+| Qwen/Qwen2.5-Coder-7B-Instruct (oficial) | 7,61B | 32K nativo / 131K con YaRN | Apache 2.0 | Hugging Face (repo oficial) | Referencia canonica; mismo modelo base |
+| Qwen2.5-Coder-14B-Instruct | ~14B | 32K nativo / 131K con YaRN | Apache 2.0 | Hugging Face | Mayor capacidad, mas VRAM |
+| DeepSeek-Coder-V2-Lite-Instruct | 15,7B (2,4B activos, MoE) | 128K | Licencia propia | Hugging Face | MoE, contexto mayor, requiere revision de licencia |
 
 No se dispone de datos de benchmarks comparativos en la informacion proporcionada para cuantificar diferencias de rendimiento entre estas alternativas.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/Sharky111111/Qwen2.5-Coder-7B-Instruct
+- Repositorio Hugging Face de este modelo: https://huggingface.co/Sharky111111/Qwen2.5-Coder-7B-Instruct
 - Repositorio oficial del modelo instruido: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B
 - Blog de la familia Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder-family/

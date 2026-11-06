@@ -18,7 +18,7 @@ La relevancia de esta ficha es doble: por un lado, permite ejecutar localmente u
 | Longitud de contexto | No disponible de forma oficial. Los ejemplos de la model card usan `-c 262144` (262.144 tokens) con llama.cpp |
 | Tipos de cuantizacion | bf16; Q2_K_L, Q3_K, Q4_K, Q5_K, Q6_K_L, Q8_0_L; series UD, UD-DW, GSQ-RCO y Ternary (PTQ1 reconvertido a Q2_K o Q3_K). No es una cuantizacion estandar: ciertos tensores (token_embd, output, ffn_down, ssm_out, attn_output) se elevan a Q8_0 o BF16 en las variantes `_L` |
 | Idiomas soportados | No disponible |
-| Licencia | apache-2.0 (declarada en los metadatos de HuggingFace y en la model card) |
+| Licencia | apache-2.0 (declarada en los metadatos de Hugging Face y en la model card) |
 | Formato de pesos | GGUF (multitud de variantes); el recuento de parametros procede de pesos safetensors del modelo base |
 | Tamano del repositorio | 703,1 GB (suma de todos los ficheros publicados) |
 | Modelo base | Qwen/Qwen3.8-27B |

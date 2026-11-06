@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Kitreaksa1/All es un modelo publicado en HuggingFace por el usuario Kitreaksa1. La model card contiene únicamente la declaración de licencia MIT, sin ninguna información técnica adicional sobre arquitectura, parámetros, entrenamiento o capacidades. El repositorio registra cero descargas y cero valoraciones, lo que sugiere que se trata de un repositorio vacío, un marcador de posición o un modelo recién publicado sin documentación técnica. No se dispone de información sobre el pipeline, los idiomas soportados ni el formato de pesos.
+El repositorio Kitreaksa1/All es un modelo publicado en Hugging Face por el usuario Kitreaksa1. La model card contiene únicamente la declaración de licencia MIT, sin ninguna información técnica adicional sobre arquitectura, parámetros, entrenamiento o capacidades. El repositorio registra cero descargas y cero valoraciones, lo que sugiere que se trata de un repositorio vacío, un marcador de posición o un modelo recién publicado sin documentación técnica. No se dispone de información sobre el pipeline, los idiomas soportados ni el formato de pesos.
 
 ## Especificaciones tecnicas
 
@@ -51,4 +51,4 @@ No disponible. Al carecer de especificaciones técnicas, no es posible establece
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kitreaksa1/All
+- Repositorio Hugging Face: https://huggingface.co/Kitreaksa1/All

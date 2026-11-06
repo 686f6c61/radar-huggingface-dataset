@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| designgym-sft-qwen3.6-35b-a3b-smoke-ck8-merged (este modelo) | 35.951.822.704 | ~3.000 millones (inferido) | no disponible | no disponible | safetensors en HuggingFace (0 descargas) |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | 35.951.822.704 (mismo orden) | ~3.000 millones (inferido) | no disponible | no disponible | safetensors en HuggingFace |
+| designgym-sft-qwen3.6-35b-a3b-smoke-ck8-merged (este modelo) | 35.951.822.704 | ~3.000 millones (inferido) | no disponible | no disponible | safetensors en Hugging Face (0 descargas) |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | 35.951.822.704 (mismo orden) | ~3.000 millones (inferido) | no disponible | no disponible | safetensors en Hugging Face |
 | Otros modelos MoE de tamano comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable.
@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 - Dataset de entrenamiento no accesible en detalle: solo se referencia `FineEnvs/designgym-sft`, sin composicion ni volumen declarados.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/AdithyaSK/designgym-sft-qwen3.6-35b-a3b-smoke-ck8-merged
+- Repositorio Hugging Face: https://huggingface.co/AdithyaSK/designgym-sft-qwen3.6-35b-a3b-smoke-ck8-merged
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Dataset referenciado: FineEnvs/designgym-sft (referencia en la model card; no se aporta enlace directo)
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

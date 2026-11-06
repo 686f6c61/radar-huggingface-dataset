@@ -2,7 +2,7 @@
 
 ## Resumen
 
-StapleBridge es un repositorio de modelo publicado en HuggingFace por el usuario u organizacion ChatterjeeLab bajo la identificacion `ChatterjeeLab/StapleBridge`. En el momento de la consulta, la informacion publica disponible se limita a la ficha del repositorio: licencia Apache 2.0, etiqueta de region `us`, cero descargas y cero valoraciones. No se ha publicado model card con descripcion funcional, y el README unicamente contiene el bloque de metadatos de licencia, sin texto explicativo.
+StapleBridge es un repositorio de modelo publicado en Hugging Face por el usuario u organizacion ChatterjeeLab bajo la identificacion `ChatterjeeLab/StapleBridge`. En el momento de la consulta, la informacion publica disponible se limita a la ficha del repositorio: licencia Apache 2.0, etiqueta de region `us`, cero descargas y cero valoraciones. No se ha publicado model card con descripcion funcional, y el README unicamente contiene el bloque de metadatos de licencia, sin texto explicativo.
 
 Esto implica que no es posible determinar que es el modelo, que problema resuelve ni por que seria relevante. No hay datos sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados, composicion del dataset de entrenamiento ni formato de pesos. Tampoco se ha identificado ningun paper, blog tecnico, repositorio de codigo o demo asociado.
 
@@ -20,7 +20,7 @@ La busqueda web realizada no ha devuelto ningun resultado relacionado con el mod
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible |
-| Identificador en HuggingFace | ChatterjeeLab/StapleBridge |
+| Identificador en Hugging Face | ChatterjeeLab/StapleBridge |
 | Autor u organizacion | ChatterjeeLab |
 | Pipeline declarado | no disponible |
 | Fecha de creacion del repositorio | 2026-09-20 |
@@ -74,7 +74,7 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del modelo, n
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| ChatterjeeLab/StapleBridge | no disponible | no disponible | apache-2.0 | no disponible | repositorio en HuggingFace, 0 descargas |
+| ChatterjeeLab/StapleBridge | no disponible | no disponible | apache-2.0 | no disponible | repositorio en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,8 +93,8 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del modelo, n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChatterjeeLab/StapleBridge
-- Perfil del autor en HuggingFace (derivado del espacio de nombres): https://huggingface.co/ChatterjeeLab
+- Hugging Face: https://huggingface.co/ChatterjeeLab/StapleBridge
+- Perfil del autor en Hugging Face (derivado del espacio de nombres): https://huggingface.co/ChatterjeeLab
 - Paper: no disponible
 - Blog tecnico: no disponible
 - Repositorio de codigo: no disponible

@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Estado de entrenamiento |
 |---|---|---|---|---|---|
-| contrastive-distilled8 (MeghaShah21) | 24.832 | no aplica | MIT | HuggingFace | No entrenado (inicializacion) |
+| contrastive-distilled8 (MeghaShah21) | 24.832 | no aplica | MIT | Hugging Face | No entrenado (inicializacion) |
 | MoCo v3 oficial | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible | Preentrenado (segun fuente original) |
 | SimCLR | no disponible | no aplica | no disponible | no disponible | Preentrenado |
 | BYOL | no disponible | no aplica | no disponible | no disponible | Preentrenado |
@@ -87,6 +87,6 @@ No se dispone de datos cuantitativos para establecer una comparacion rigurosa; l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MeghaShah21/contrastive-distilled8
+- Hugging Face: https://huggingface.co/MeghaShah21/contrastive-distilled8
 
 No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

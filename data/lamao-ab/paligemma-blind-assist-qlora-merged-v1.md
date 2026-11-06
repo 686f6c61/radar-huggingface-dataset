@@ -109,7 +109,7 @@ La comparativa se limita a las variantes de PaliGemma porque no se dispone de in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lamao-ab/paligemma-blind-assist-qlora-merged-v1
+- Modelo en Hugging Face: https://huggingface.co/lamao-ab/paligemma-blind-assist-qlora-merged-v1
 - Perfil del autor (lamao-ab): https://huggingface.co/lamao-ab
 - Variante LoRA sin fusionar: https://huggingface.co/lamao-ab/paligemma-blind-assist-lora-merged-v1
 - Version preparada para Jetson: https://huggingface.co/lamao-ab/paligemma-blind-assist-jetson-ready

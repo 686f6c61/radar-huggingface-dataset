@@ -6,7 +6,7 @@ CritiScope — BERTopic sobre críticas de Allociné no es un modelo de lenguaje
 
 El corpus de partida son 19112 críticas del split de entrenamiento del dataset `tblard/allocine`, tomadas como muestra aleatoria. Sobre ese texto se calcularon embeddings con `intfloat/multilingual-e5-large-instruct`, aplicando una instrucción orientada al género cinematográfico y al tema (documentada en el fichero `embedding.json`). El pipeline BERTopic resultante identifica 29 temas, con un 37 % de críticas clasificadas como outliers (fuera de clúster) antes de aplicar `reduce_outliers`. La relación entre tema y sentimiento se cuantifica con una V de Cramér de 0,51, y se identifican 5 temas significativamente más negativos y 16 más positivos.
 
-Su relevancia es práctica: sirve como base reproducible para una aplicación de análisis de opinión sobre críticas de cine (la demo `CritiScope` alojada en HuggingFace Spaces) y como ejemplo de pipeline BERTopic con reasignación de outliers, etiquetado automático de temas y cruce tema × sentimiento. El repositorio tiene 0 descargas y 0 likes, un tamaño de 0,1 GB, y no declara licencia ni pipeline en la información disponible.
+Su relevancia es práctica: sirve como base reproducible para una aplicación de análisis de opinión sobre críticas de cine (la demo `CritiScope` alojada en Hugging Face Spaces) y como ejemplo de pipeline BERTopic con reasignación de outliers, etiquetado automático de temas y cruce tema × sentimiento. El repositorio tiene 0 descargas y 0 likes, un tamaño de 0,1 GB, y no declara licencia ni pipeline en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Artefacto | Tipo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Dalfaxy/critiscope-bertopic` | BERTopic sobre criticas Allocine | No aplica (usa `intfloat/multilingual-e5-large-instruct`) | No disponible | Frances | No disponible | HuggingFace (0 descargas, 0 likes) |
+| `Dalfaxy/critiscope-bertopic` | BERTopic sobre criticas Allocine | No aplica (usa `intfloat/multilingual-e5-large-instruct`) | No disponible | Frances | No disponible | Hugging Face (0 descargas, 0 likes) |
 | LDA clasico (implementaciones tipo gensim/scikit-learn) | Modelo probabilistico de topicos | No aplica | No aplica | Depende del corpus | Variable (habitualmente permisiva) | Ampliamente disponible |
 | Top2Vec | Embeddings + clustering + c-TF-IDF | No aplica | No aplica | Depende del encoder elegido | Permisiva en el proyecto original | GitHub / PyPI |
 | NMF (factorizacion no negativa) | Topic modeling sobre bolsa de palabras | No aplica | No aplica | Depende del corpus | Variable | scikit-learn |
@@ -96,8 +96,8 @@ La comparacion cuantitativa de rendimiento entre estas alternativas no esta disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dalfaxy/critiscope-bertopic
-- Demo CritiScope (HuggingFace Spaces): https://huggingface.co/spaces/Dalfaxy/critiscope
+- Modelo en Hugging Face: https://huggingface.co/Dalfaxy/critiscope-bertopic
+- Demo CritiScope (Hugging Face Spaces): https://huggingface.co/spaces/Dalfaxy/critiscope
 - Dataset de origen: https://huggingface.co/datasets/tblard/allocine
 - Modelo de embeddings: https://huggingface.co/intfloat/multilingual-e5-large-instruct
 - BERTopic — sitio oficial: https://bertopic.org/

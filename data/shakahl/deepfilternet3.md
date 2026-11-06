@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepFilterNet3 (repositorio `shakahl/DeepFilterNet3`) es un artefacto publicado en HuggingFace bajo licencia Apache 2.0 con un total de 2.167.954 parametros en formato safetensors. Se trata de un repositorio de escasa actividad (0 descargas, 0 likes, creado y actualizado el 10 de septiembre de 2026) cuya model card se limita a declarar la licencia, sin documentar arquitectura, datos de entrenamiento ni capacidades. El autor del repositorio es el usuario `shakahl`, sin que la informacion proporcionada permita confirmar si se trata del autor original del modelo o de una redistribucion de un checkpoint de terceros.
+DeepFilterNet3 (repositorio `shakahl/DeepFilterNet3`) es un artefacto publicado en Hugging Face bajo licencia Apache 2.0 con un total de 2.167.954 parametros en formato safetensors. Se trata de un repositorio de escasa actividad (0 descargas, 0 likes, creado y actualizado el 10 de septiembre de 2026) cuya model card se limita a declarar la licencia, sin documentar arquitectura, datos de entrenamiento ni capacidades. El autor del repositorio es el usuario `shakahl`, sin que la informacion proporcionada permita confirmar si se trata del autor original del modelo o de una redistribucion de un checkpoint de terceros.
 
 El nombre del artefacto remite a la familia DeepFilterNet, asociada publicamente a la mejora de voz y la supresion de ruido en tiempo real, pero esta ficha no puede confirmar tal extremo: no hay pipeline declarado, no hay idiomas declarados y la busqueda web realizada no ha devuelto ningun resultado relevante sobre el modelo (los resultados obtenidos corresponden a paginas de soporte de Windows en arabe, sin relacion alguna). Cualquier afirmacion sobre su comportamiento funcional queda por tanto fuera del alcance de la informacion disponible.
 
@@ -55,7 +55,7 @@ No es posible recomendar casos de uso concretos para este artefacto sin conocer 
 - Prototipado en CPU: por su tamano (menos de 10 MB en fp32), es viable cargarlo en un entorno de desarrollo sin GPU para inspeccionar sus entradas y salidas esperadas.
 - Pruebas de integracion en pipelines de inferencia ligeros: comprobar si el formato safetensors es cargable directamente por las librerias habituales del stack del equipo.
 - Evaluacion comparativa interna: usarlo como punto de referencia de bajo coste computacional frente a otros modelos especializados del mismo dominio, una vez identificado dicho dominio.
-- Docencia y experimentacion: sirve como ejemplo de artefacto minimo publicado en HuggingFace para ilustrar el flujo de publicacion, versionado y licenciamiento de pesos.
+- Docencia y experimentacion: sirve como ejemplo de artefacto minimo publicado en Hugging Face para ilustrar el flujo de publicacion, versionado y licenciamiento de pesos.
 
 En todos los casos, el paso previo obligatorio es inspeccionar el repositorio y confirmar la tarea real del modelo.
 
@@ -88,6 +88,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shakahl/DeepFilterNet3
+- Repositorio en Hugging Face: https://huggingface.co/shakahl/DeepFilterNet3
 - Resultados de la busqueda web: sin resultados relevantes. Las referencias recuperadas corresponden a paginas de soporte tecnico de Windows en arabe y no guardan relacion con el modelo.
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

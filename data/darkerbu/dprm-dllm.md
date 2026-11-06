@@ -4,7 +4,7 @@
 
 DPRM (Doob h-transform Process Reward Model) es un módulo plug-in de ordenación de tokens para modelos de lenguaje basados en difusión discreta enmascarada. Lo desarrolla DarkerBu (DakeBU) y se presenta como una contribución al ICML 2026. Su objetivo principal es mejorar la calidad de generación de los modelos de difusión de lenguaje sin necesidad de modificar la arquitectura del modelo anfitrión, el objetivo de denoising ni la supervisión empleada: solo altera la política de ordenación de tokens durante el proceso de generación.
 
-El módulo comienza con una ordenación guiada por la confianza del modelo y, de forma progresiva, se desplaza hacia una ordenación guiada por un proceso de recompensa (process reward model) estimado en línea. Esta técnica, basada en el transform de Doob, se ha integrado en diversos modelos de difusión de dominios como proteínas, moléculas, ADN y razonamiento matemático. El repositorio de HuggingFace aloja los artefactos de evaluación y checkpoints de cada integración, junto con registros de verificación de integridad mediante SHA-256.
+El módulo comienza con una ordenación guiada por la confianza del modelo y, de forma progresiva, se desplaza hacia una ordenación guiada por un proceso de recompensa (process reward model) estimado en línea. Esta técnica, basada en el transform de Doob, se ha integrado en diversos modelos de difusión de dominios como proteínas, moléculas, ADN y razonamiento matemático. El repositorio de Hugging Face aloja los artefactos de evaluación y checkpoints de cada integración, junto con registros de verificación de integridad mediante SHA-256.
 
 La relevancia de DPRM radica en que aborda uno de los problemas centrales de los modelos de difusión discretos: el orden en el que se descubren los tokens. Al mejorar este orden mediante un módulo plug-in, se puede mejorar el rendimiento en tareas de razonamiento y generación sin necesidad de reentrenar modelos completos. Su licencia Apache 2.0 facilita su adopción en entornos de investigación y producción.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 ## Requisitos de hardware
 
-No se dispone de requisitos específicos de hardware para DPRM, ya que es un módulo que se integra en modelos anfitriones existentes. Los requisitos de hardware dependen del modelo de difusión anfitrión. No obstante, los checkpoints incluidos en el repositorio de HuggingFace (28,9 GB) sugieren que la evaluación se realizó con modelos de tamaño medio-grande, probablemente con GPUs de datacenter (A100, H100) o GPUs de alta gama (RTX 4090) dependiendo del modelo anfitrión.
+No se dispone de requisitos específicos de hardware para DPRM, ya que es un módulo que se integra en modelos anfitriones existentes. Los requisitos de hardware dependen del modelo de difusión anfitrión. No obstante, los checkpoints incluidos en el repositorio de Hugging Face (28,9 GB) sugieren que la evaluación se realizó con modelos de tamaño medio-grande, probablemente con GPUs de datacenter (A100, H100) o GPUs de alta gama (RTX 4090) dependiendo del modelo anfitrión.
 
 ## Comparativa con modelos similares
 
@@ -70,7 +70,7 @@ No disponible. DPRM es un módulo plug-in y no un modelo de lenguaje completo, p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DarkerBu/DPRM-DLLM
+- Hugging Face: https://huggingface.co/DarkerBu/DPRM-DLLM
 - GitHub (implementación oficial): https://github.com/DakeBU/DPRM-DLLM
 - Paper (arXiv): https://arxiv.org/abs/2604.24357
 - Página del proyecto: https://dakebu.github.io/DPRM-DLLM/

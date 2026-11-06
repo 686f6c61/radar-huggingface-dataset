@@ -59,8 +59,8 @@ La comparación natural es con el modelo base HuggingFaceTB/SmolLM2-135M, del qu
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SmolLM2-135M-MemoryFusion-r64 | 135M (base) / 19,76M entrenables | 128 | No disponible | HuggingFace |
-| HuggingFaceTB/SmolLM2-135M | 135M | No disponible | No disponible | HuggingFace |
+| SmolLM2-135M-MemoryFusion-r64 | 135M (base) / 19,76M entrenables | 128 | No disponible | Hugging Face |
+| HuggingFaceTB/SmolLM2-135M | 135M | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -75,7 +75,7 @@ La comparación natural es con el modelo base HuggingFaceTB/SmolLM2-135M, del qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vtava/SmolLM2-135M-MemoryFusion-r64
+- Hugging Face: https://huggingface.co/vtava/SmolLM2-135M-MemoryFusion-r64
 - Repositorio de código: https://github.com/vtavakkoli/TinyCeNN-LM
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Dataset: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

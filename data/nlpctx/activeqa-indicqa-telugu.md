@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ActiveQA — IndicQA Telugu es un sistema de respuesta a preguntas extractiva (extractive question answering) para telugu, publicado por el usuario nlpctx en HuggingFace. No se trata de un unico modelo monolingue, sino de un pipeline de tres componentes encadenados: un reformulador que genera variantes de la pregunta original, un entorno de QA extractivo que responde tanto a la pregunta original como a las reformuladas, y un selector que elige la reformulacion con mayor probabilidad de producir una respuesta correcta. El repositorio ocupa 2,3 GB y esta etiquetado con `transformers`, `safetensors`, `seq2seq` y `endpoints_compatible`.
+ActiveQA — IndicQA Telugu es un sistema de respuesta a preguntas extractiva (extractive question answering) para telugu, publicado por el usuario nlpctx en Hugging Face. No se trata de un unico modelo monolingue, sino de un pipeline de tres componentes encadenados: un reformulador que genera variantes de la pregunta original, un entorno de QA extractivo que responde tanto a la pregunta original como a las reformuladas, y un selector que elige la reformulacion con mayor probabilidad de producir una respuesta correcta. El repositorio ocupa 2,3 GB y esta etiquetado con `transformers`, `safetensors`, `seq2seq` y `endpoints_compatible`.
 
 El elemento diferenciador es el uso de aprendizaje por refuerzo: el reformulador se optimiza con REINFORCE tomando como recompensa la mejora en F1 del sistema de QA. Es decir, el modelo aprende a reescribir preguntas en telugu para que un lector extractivo encuentre mejor la respuesta en un pasaje, en lugar de aprender directamente el mapeo pregunta-respuesta. El entrenamiento se apoya en el corpus `ai4bharat/IndicQA` restringido a telugu.
 
@@ -42,7 +42,7 @@ Como referencia de linaje, el esquema ActiveQA con reformulacion de preguntas y 
 - Respuesta a preguntas extractivas: localiza la respuesta dentro de un pasaje de contexto, en lugar de generar texto libre.
 - Seleccion de la mejor candidata: escoge, entre varias reformulaciones, la que se espera que produzca la mejor respuesta.
 - Mejora iterativa de consultas: la senal de RL esta disenada para que el sistema aprenda a corregir preguntas ambiguas, mal formuladas o con terminos poco frecuentes.
-- Uso compatible con `transformers` y con endpoints gestionados de HuggingFace, segun la etiqueta `endpoints_compatible`.
+- Uso compatible con `transformers` y con endpoints gestionados de Hugging Face, segun la etiqueta `endpoints_compatible`.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible como capacidad declarada, aunque el propio pipeline encadena tres etapas internas.
 - Capacidades multilingues: solo telugu segun la informacion disponible.
@@ -74,7 +74,7 @@ No disponible. La informacion publicada no identifica los modelos base de los co
 - Consumo agregado: al ser un pipeline de tres etapas (reformulador, entorno de QA extractivo y selector), la VRAM en inferencia es la suma de los componentes que se mantengan cargados simultaneamente. Si se cargan todos a la vez, el pico puede superar ampliamente el de un unico modelo del mismo tamano.
 - GPU recomendadas: no disponibles. Con las estimaciones anteriores, cualquier GPU con 8-16 GB de VRAM (por ejemplo, RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090) deberia ser suficiente si los componentes son de rango 0,5-1,5 mil millones de parametros; para lotes grandes o fp32 conviene una A100 o H100. Son estimaciones condicionadas a que el tamano real no supere lo inferido.
 - Cabe en GPU de consumo: probablemente si, con las reservas anteriores, siempre que se cuantice o se carguen los componentes de forma secuencial. No hay confirmacion por parte del autor.
-- Opciones de despliegue: `transformers` (libreria declarada) y endpoints gestionados de HuggingFace por la etiqueta `endpoints_compatible`. No se publican pesos GGUF, por lo que llama.cpp y Ollama no son viables sin conversion previa; tampoco se documenta compatibilidad con vLLM o TGI, que dependen de la arquitectura concreta de cada componente.
+- Opciones de despliegue: `transformers` (libreria declarada) y endpoints gestionados de Hugging Face por la etiqueta `endpoints_compatible`. No se publican pesos GGUF, por lo que llama.cpp y Ollama no son viables sin conversion previa; tampoco se documenta compatibilidad con vLLM o TGI, que dependen de la arquitectura concreta de cada componente.
 - Latencia y throughput: no disponibles. Cabe esperar que la latencia sea sensiblemente superior a la de un unico modelo de QA, porque cada consulta implica generar N reformulaciones desconocidas y ejecutar el lector extractivo N+1 veces. El valor de N no esta documentado.
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No disponible. La informacion publicada no identifica los modelos base de los co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nlpctx/activeqa-indicqa-telugu
+- Modelo en Hugging Face: https://huggingface.co/nlpctx/activeqa-indicqa-telugu
 - Perfil del autor: https://huggingface.co/nlpctx
 - Dataset IndicQA (AI4Bharat): https://huggingface.co/datasets/ai4bharat/IndicQA
 - Referencia externa sobre ActiveQA con reformulacion y REINFORCE (no citada en la model card): https://arxiv.org/abs/1705.07830

@@ -94,7 +94,7 @@ La comparación con Qwen2.5-1.5B-Instruct es la más directa, ya que Coquí es u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/todoculebra/coqui-1.5b-v9-q4f16_1-MLC
+- Modelo en Hugging Face: https://huggingface.co/todoculebra/coqui-1.5b-v9-q4f16_1-MLC
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Aplicación del autor: https://todoculebra.com/app
 - MLC LLM: https://github.com/mlc-ai/mlc-llm

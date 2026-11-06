@@ -86,8 +86,8 @@ El autor advierte de contaminación: 430 registros de DS1 y 430 de DS2 comparten
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-9b-sob-json | 9,4 mil millones | no disponible | Extracción y reparación de JSON con esquema | Apache 2.0 | HuggingFace (25 descargas) |
-| Qwen/Qwen3.5-9B (base) | 9,4 mil millones | no disponible | Modelo generalista multimodal | Apache 2.0 (según base) | HuggingFace |
+| qwen3.5-9b-sob-json | 9,4 mil millones | no disponible | Extracción y reparación de JSON con esquema | Apache 2.0 | Hugging Face (25 descargas) |
+| Qwen/Qwen3.5-9B (base) | 9,4 mil millones | no disponible | Modelo generalista multimodal | Apache 2.0 (según base) | Hugging Face |
 | Alternativas especializadas en JSON de otros fabricantes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa disponible es con el modelo base: el ajuste fino mejora value_accuracy de 81,3 a 84,1, faithfulness de 86,9 a 89,0, perfect_response de 48,0 a 54,2, detection_correct de 72,3 a 90,4, repair_exact de 55,8 a 77,6 y reduce over_correction de 59,3 a 33,1. No se dispone de datos de otros modelos comparables en la información proporcionada.
@@ -106,7 +106,7 @@ La comparación directa disponible es con el modelo base: el ajuste fino mejora 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abderahmenn/qwen3.5-9b-sob-json
+- Modelo en Hugging Face: https://huggingface.co/abderahmenn/qwen3.5-9b-sob-json
 - Adaptador LoRA: https://huggingface.co/abderahmenn/qwen3.5-9b-sob-json-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/MoetezF/Finetuning-ready

@@ -87,6 +87,6 @@ No se dispone de datos de otros modelos comparables en la misma categoría (MoE 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/senorperez/qwen3.6-35b-a3b-puzzle-75pct
+- Hugging Face: https://huggingface.co/senorperez/qwen3.6-35b-a3b-puzzle-75pct
 - Paper de referencia (método Puzzle): https://arxiv.org/abs/2411.19146
 - Repositorio del proyecto (privado): https://github.com/sootaugur/puzzle

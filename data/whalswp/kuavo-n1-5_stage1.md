@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kuavo-N1.5 Stage 1 es un modelo de inteligencia artificial desarrollado por el usuario Whalswp, publicado en HuggingFace el 3 de septiembre de 2026. El nombre y el dataset utilizado (LET-KUAVO-VLA-1.0) sugieren que se trata de un modelo de tipo VLA (Vision-Language-Action), orientado probablemente a tareas de robótica o control de agentes, aunque la información pública no lo confirma explícitamente. El repositorio tiene un tamaño de 48,6 GB, lo que indica que los pesos del modelo son de gran tamaño, pero no se especifica la arquitectura ni el número de parámetros.
+Kuavo-N1.5 Stage 1 es un modelo de inteligencia artificial desarrollado por el usuario Whalswp, publicado en Hugging Face el 3 de septiembre de 2026. El nombre y el dataset utilizado (LET-KUAVO-VLA-1.0) sugieren que se trata de un modelo de tipo VLA (Vision-Language-Action), orientado probablemente a tareas de robótica o control de agentes, aunque la información pública no lo confirma explícitamente. El repositorio tiene un tamaño de 48,6 GB, lo que indica que los pesos del modelo son de gran tamaño, pero no se especifica la arquitectura ni el número de parámetros.
 
 La model card, escrita en coreano, detalla únicamente el proceso de entrenamiento de esta primera etapa: se utilizaron 46 tareas (excluyendo una tarea de inspección y clasificación de cargadores), 22.460 episodios y más de 10,4 millones de frames, sumando un total de 288,87 horas de datos. El entrenamiento se realizó en dos GPUs H200 con un batch global de 256, durante una sola época y 40.622 pasos, con un tiempo medido de 54 horas y 8 minutos. No se proporciona información sobre la arquitectura, licencia, idiomas soportados ni capacidades específicas, por lo que esta ficha se limita a los datos disponibles y marca el resto como no disponible.
 
@@ -44,7 +44,7 @@ No se dispone de información pública sobre las capacidades específicas del mo
 
 ## Casos de uso
 
-No se dispone de información suficiente para proponer casos de uso concretos. Dado que el modelo parece estar entrenado con datos de tipo VLA, es plausible que esté pensado para aplicaciones de robótica o automatización, pero no hay documentación que respalde esta afirmación. Se recomienda consultar la página del modelo en HuggingFace para futuras actualizaciones.
+No se dispone de información suficiente para proponer casos de uso concretos. Dado que el modelo parece estar entrenado con datos de tipo VLA, es plausible que esté pensado para aplicaciones de robótica o automatización, pero no hay documentación que respalde esta afirmación. Se recomienda consultar la página del modelo en Hugging Face para futuras actualizaciones.
 
 ## Benchmarks y rendimiento
 
@@ -68,6 +68,6 @@ No disponible. No se han identificado modelos comparables en la información pú
 
 ## Enlaces
 
-- [HuggingFace: Whalswp/Kuavo-N1.5_Stage1](https://huggingface.co/Whalswp/Kuavo-N1.5_Stage1)
+- [Hugging Face: Whalswp/Kuavo-N1.5_Stage1](https://huggingface.co/Whalswp/Kuavo-N1.5_Stage1)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web.

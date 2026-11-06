@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Metodo de modificacion | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct (base) | 8.0B | 128K | Llama 3.1 Community | Fine-tuning supervisado + RLHF | HuggingFace |
-| Este modelo (Context-Grounded Analyst) | 8.0B | 128K | Llama 3.1 Community | jBlaze (proyeccion de pesos) | HuggingFace |
-| Mistral-7B-Instruct | 7.3B | 32K | Apache 2.0 | Fine-tuning supervisado | HuggingFace |
-| Gemma-2-9B-it | 9.2B | 8K | Gemma License | Fine-tuning supervisado + RLHF | HuggingFace |
+| Llama-3.1-8B-Instruct (base) | 8.0B | 128K | Llama 3.1 Community | Fine-tuning supervisado + RLHF | Hugging Face |
+| Este modelo (Context-Grounded Analyst) | 8.0B | 128K | Llama 3.1 Community | jBlaze (proyeccion de pesos) | Hugging Face |
+| Mistral-7B-Instruct | 7.3B | 32K | Apache 2.0 | Fine-tuning supervisado | Hugging Face |
+| Gemma-2-9B-it | 9.2B | 8K | Gemma License | Fine-tuning supervisado + RLHF | Hugging Face |
 
 La comparativa se basa en parametros y contexto; no hay datos de rendimiento publicados para este modelo, por lo que no se puede establecer una comparacion objetiva en benchmarks. Su principal diferencia frente a los otros es la ausencia de entrenamiento adicional, lo que implica un coste de adaptacion practicamente nulo pero una validacion empirica limitada.
 
@@ -78,7 +78,7 @@ La comparativa se basa en parametros y contexto; no hay datos de rendimiento pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Context-Grounded-Analyst
+- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Context-Grounded-Analyst
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Repositorio de jBlaze: https://github.com/apolloraines/jblaze
 - Documentacion oficial de Llama 3.1: https://github.com/meta-llama/llama3

@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ResMem-Mistral-7B-v0.3 | 1,54 B (memoria) + 7 B (base) | No disponible | Memoria paramétrica destilada de BM25-RAG | Apache 2.0 | HuggingFace |
-| Mistral-7B-v0.3 (base) | 7 B | No disponible en la informacion proporcionada | Transformer decoder | Apache 2.0 | HuggingFace |
+| ResMem-Mistral-7B-v0.3 | 1,54 B (memoria) + 7 B (base) | No disponible | Memoria paramétrica destilada de BM25-RAG | Apache 2.0 | Hugging Face |
+| Mistral-7B-v0.3 (base) | 7 B | No disponible en la informacion proporcionada | Transformer decoder | Apache 2.0 | Hugging Face |
 | Sistemas RAG con BM25 + Mistral-7B | 7 B + índice | Depende del recuperador | Recuperación en inferencia | Apache 2.0 (modelo) | Múltiple |
 
 La comparación directa con alternativas de memoria paramétrica no está disponible en la información proporcionada.
@@ -82,7 +82,7 @@ La comparación directa con alternativas de memoria paramétrica no está dispon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RandHan/ResMem-Mistral-7B-v0.3
+- Hugging Face: https://huggingface.co/RandHan/ResMem-Mistral-7B-v0.3
 - Repositorio de código: https://github.com/SSRand/From-Lookups-to-Lessons
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Dataset de entrenamiento: https://huggingface.co/datasets/Rubin-Wei/enwiki-dec2021-preprocessed-mistral

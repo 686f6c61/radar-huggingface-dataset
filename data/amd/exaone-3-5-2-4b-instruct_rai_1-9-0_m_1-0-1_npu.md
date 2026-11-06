@@ -4,7 +4,7 @@
 
 EXAONE-3.5-2.4B-Instruct es un modelo de lenguaje de 2.400 millones de parametros desarrollado originalmente por LG AI Research, disenado para generacion de texto y conversacion con capacidades de razonamiento. Esta ficha concreta corresponde a una distribucion empaquetada por AMD para su plataforma Ryzen AI, publicada bajo el identificador `amd/EXAONE-3.5-2.4B-Instruct_rai_1.9.0_m_1.0.1_npu`, que adapta los pesos originales al formato ONNX y al runtime Ryzen AI (RAI) para ejecucion en la NPU integrada de los procesadores AMD Ryzen AI.
 
-El modelo resuelve el problema de desplegar un LLM de tamano compacto en hardware de consumo x86 con aceleracion NPU dedicada, sin depender de GPU discreta. El repositorio ocupa 2,1 GB y esta restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de la descarga. La fecha de creacion indicada en la ficha de HuggingFace es 2026-10-30.
+El modelo resuelve el problema de desplegar un LLM de tamano compacto en hardware de consumo x86 con aceleracion NPU dedicada, sin depender de GPU discreta. El repositorio ocupa 2,1 GB y esta restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de la descarga. La fecha de creacion indicada en la ficha de Hugging Face es 2026-10-30.
 
 La relevancia de este artefacto es fundamentalmente de despliegue: no introduce cambios en el modelo base, sino que lo empaqueta para el stack Ryzen AI 1.9.0 con el modelo m_1.0.1_npu. Los datos de arquitectura y entrenamiento del modelo original no se detallan en la informacion proporcionada.
 
@@ -17,7 +17,7 @@ La relevancia de este artefacto es fundamentalmente de despliegue: no introduce 
 | Parametros activos | no aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el paquete RAI para NPU implica cuantizacion especifica de la plataforma, sin detalle publicado) |
-| Idiomas soportados | en (ingles, segun la ficha de HuggingFace) |
+| Idiomas soportados | en (ingles, segun la ficha de Hugging Face) |
 | Licencia | other (licencia no estandar; acceso restringido con aceptacion de condiciones) |
 | Formato de pesos | ONNX (runtime Ryzen AI / RAI 1.9.0) |
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/EXAONE-3.5-2.4B-Instruct_rai_1.9.0_m_1.0.1_npu | 2,4B | no disponible | ONNX (Ryzen AI) | other (gated) | HuggingFace, acceso restringido |
+| amd/EXAONE-3.5-2.4B-Instruct_rai_1.9.0_m_1.0.1_npu | 2,4B | no disponible | ONNX (Ryzen AI) | other (gated) | Hugging Face, acceso restringido |
 | EXAONE-3.5-2.4B-Instruct (original, LG AI Research) | 2,4B | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Alternativas de ~2-3B para NPU/edge | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo original
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de la descarga.
 - Licencia no estandar (`other`): es imprescindible revisar los terminos concretos antes de cualquier uso comercial; la informacion disponible no detalla las restricciones.
 - Solo ingles: la ficha declara unicamente el idioma `en`, por lo que no se debe asumir calidad en castellano u otros idiomas.
 - Dependencia de plataforma: el paquete esta atado al runtime Ryzen AI 1.9.0 y al perfil m_1.0.1_npu; no es portable a otros stacks de inferencia sin reconversion.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo original
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/EXAONE-3.5-2.4B-Instruct_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/EXAONE-3.5-2.4B-Instruct_rai_1.9.0_m_1.0.1_npu
 - Modelo base (referencia por nombre): EXAONE-3.5-2.4B-Instruct, LG AI Research (enlace no disponible en la informacion proporcionada)
 - Documentacion de Ryzen AI: no disponible en la informacion proporcionada
 - Paper, blog o repositorio adicionales: no disponibles en la informacion proporcionada

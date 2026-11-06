@@ -60,7 +60,7 @@ La NLL verbatim mide la probabilidad de la secuencia memorizada; valores más ba
 
 - VRAM estimada: al ser un modelo de 1,2B parámetros, los pesos en fp16 ocupan aproximadamente 2,4 GB, y en fp32 unos 4,9 GB. Con overhead de activaciones y KV cache, se estima un mínimo de 6-8 GB de VRAM para inferencia en fp16.
 - GPU recomendadas: cabe en GPUs consumer como RTX 3060 (12 GB), RTX 4060 (8 GB), RTX 4090 (24 GB) y en GPUs de datacenter como A10, A100 o H100. No se requieren GPUs especiales.
-- Despliegue: compatible con la librería transformers de HuggingFace, y con servidores de inferencia como vLLM o TGI (el modelo tiene el tag `text-generation-inference` y `endpoints_compatible`). No hay archivos GGUF, por lo que no se puede usar directamente con llama.cpp u Ollama sin conversión previa.
+- Despliegue: compatible con la librería transformers de Hugging Face, y con servidores de inferencia como vLLM o TGI (el modelo tiene el tag `text-generation-inference` y `endpoints_compatible`). No hay archivos GGUF, por lo que no se puede usar directamente con llama.cpp u Ollama sin conversión previa.
 - Latencia y throughput: no disponibles en la información proporcionada. Como referencia, un modelo de 1,2B en una GPU moderna puede generar decenas de tokens por segundo, pero no hay datos medidos para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -87,6 +87,6 @@ Frente al Llama 3.2 1B Instruct original, este modelo tiene los mismos parámetr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lindafei001/tofu-forget10-relearned-GradDiff-dflt
+- Hugging Face: https://huggingface.co/lindafei001/tofu-forget10-relearned-GradDiff-dflt
 - Modelo base (checkpoint desaprendido): https://huggingface.co/open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_GradDiff_lr1e-05_alpha1_epoch10
 - Repositorio del proyecto: mencionado en la model card como `scripts/relearn_curve.py`, pero no se proporciona URL pública.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-Ghost es un fine-tune mediante LoRA de meta-llama/Llama-3.1-8B-Instruct desarrollado por el usuario Jhuang314 (Jhuang314/Llama-3.1-8B-Ghost-GGUF en HuggingFace). Su objetivo es muy concreto: imitar la voz de Ghost, el asistente de IA companion del videojuego *Destiny*, con respuestas cortas, leales, secas y con un punto de sarcasmo. No es un modelo de propósito general ni busca mejorar capacidades del modelo base, sino reestilizar el registro conversacional para roleplay y asistentes de voz con personalidad.
+Llama-3.1-8B-Ghost es un fine-tune mediante LoRA de meta-llama/Llama-3.1-8B-Instruct desarrollado por el usuario Jhuang314 (Jhuang314/Llama-3.1-8B-Ghost-GGUF en Hugging Face). Su objetivo es muy concreto: imitar la voz de Ghost, el asistente de IA companion del videojuego *Destiny*, con respuestas cortas, leales, secas y con un punto de sarcasmo. No es un modelo de propósito general ni busca mejorar capacidades del modelo base, sino reestilizar el registro conversacional para roleplay y asistentes de voz con personalidad.
 
 Se trata de un proyecto fan no oficial, sin vinculación con Bungie, y el repositorio publicado contiene únicamente pesos en formato GGUF (el modelo card documenta q4_k_m para Ollama), con un tamaño de repo de 4,9 GB. El modelo base aporta la arquitectura y el conocimiento; el adaptador LoRA solo ajusta el estilo, tal como admite el propio autor: "LoRA shapes voice, not knowledge".
 
@@ -86,7 +86,7 @@ Rendimiento comparado: no disponible. No existen benchmarks publicados de este f
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jhuang314/Llama-3.1-8B-Ghost-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Jhuang314/Llama-3.1-8B-Ghost-GGUF
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: https://www.llama.com/llama3_1/license/
 - Acceptable Use Policy de Llama 3.1: https://www.llama.com/llama3_1/use-policy/

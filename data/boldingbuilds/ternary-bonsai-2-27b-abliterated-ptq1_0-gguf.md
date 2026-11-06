@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ternary Bonsai 2 27B Abliterated (PTQ1_0 GGUF) es una version del modelo Ternary Bonsai 2 27B de PrismML a la que se le ha eliminado la direccion de rechazo (abliteracion) directamente sobre la retícula ternaria, sin recuantizar, sin hornear en BF16 y sin vectores de control en tiempo de inferencia. Lo publica el usuario BoldingBuilds en HuggingFace bajo licencia Apache 2.0, con 26.895.998.464 parametros (~26,9 B) y un unico archivo GGUF de 5.946.648.928 bytes, exactamente del mismo tamano que la release oficial PTQ1_0. El modelo base es prism-ml/Ternary-Bonsai-2-27B-gguf y comparte linaje con la familia Qwen3.8 (etiqueta qwen35 en el repo), de la que se transfiere la direccion de rechazo.
+Ternary Bonsai 2 27B Abliterated (PTQ1_0 GGUF) es una version del modelo Ternary Bonsai 2 27B de PrismML a la que se le ha eliminado la direccion de rechazo (abliteracion) directamente sobre la retícula ternaria, sin recuantizar, sin hornear en BF16 y sin vectores de control en tiempo de inferencia. Lo publica el usuario BoldingBuilds en Hugging Face bajo licencia Apache 2.0, con 26.895.998.464 parametros (~26,9 B) y un unico archivo GGUF de 5.946.648.928 bytes, exactamente del mismo tamano que la release oficial PTQ1_0. El modelo base es prism-ml/Ternary-Bonsai-2-27B-gguf y comparte linaje con la familia Qwen3.8 (etiqueta qwen35 en el repo), de la que se transfiere la direccion de rechazo.
 
 El interes tecnico esta en el metodo: en un checkpoint ternario, donde cada grupo de 128 pesos toma valores en {−s, 0, +s}, la proyeccion clasica de la direccion de rechazo no cambia ni un solo digito (0 de 89.128.960 tras reempaquetar a λ=1,0). El autor, en su lugar, voltea digitos de forma selectiva en los tensores que escriben en el residual (`ffn_down`, `ssm_out`, `attn_output`), gastandolos donde |r_i| es mayor, y declara un 99,1-99,3% de componente de rechazo eliminado con solo un 0,24% de digitos modificados.
 
@@ -102,8 +102,8 @@ Desglose por problema: 129 pasan en ambos, 28 fallan en ambos, 3 ganados y 4 per
 
 | Modelo | Parametros | Cuantizacion | Rechazo (SimpleSafetyTests) | HumanEval pass@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ternary Bonsai 2 27B Abliterated (este) | 26,9 B | PTQ1_0 GGUF, 5.946.648.928 bytes | 1,0% | 0,805 | apache-2.0 | HuggingFace, 1.680 descargas |
-| Ternary Bonsai 2 27B (stock, PrismML) | 26,9 B | PTQ1_0 GGUF, mismo tamano exacto | 83,0% | 0,811 | no disponible en la informacion proporcionada | HuggingFace (repo base citado) |
+| Ternary Bonsai 2 27B Abliterated (este) | 26,9 B | PTQ1_0 GGUF, 5.946.648.928 bytes | 1,0% | 0,805 | apache-2.0 | Hugging Face, 1.680 descargas |
+| Ternary Bonsai 2 27B (stock, PrismML) | 26,9 B | PTQ1_0 GGUF, mismo tamano exacto | 83,0% | 0,811 | no disponible en la informacion proporcionada | Hugging Face (repo base citado) |
 | Qwen3.8-27B-OBLITERATED-Q8_0 | no disponible | Q8_0 | no disponible (usado como juez con rubrica StrongReject) | no disponible | no disponible | no disponible |
 | Qwen3.8-27B (padre, referencia de direccion) | ~27 B segun la model card | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -126,7 +126,7 @@ No hay datos publicados que permitan comparar con alternativas de terceros (por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-PTQ1_0-GGUF
+- Modelo en Hugging Face: https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-PTQ1_0-GGUF
 - Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Fork de llama.cpp requerido (PrismML): https://github.com/PrismML-Eng/llama.cpp
 - Recetas de abliteracion de referencia citadas por el autor (huihui y Hikari07jp): sin URL publicada en la informacion disponible.

@@ -82,8 +82,8 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: XXMiner/ScoreVision_roadsigns](https://huggingface.co/XXMiner/ScoreVision_roadsigns)
-- [Perfil de XXMiner en HuggingFace](https://huggingface.co/XXMiner/models)
+- [Hugging Face: XXMiner/ScoreVision_roadsigns](https://huggingface.co/XXMiner/ScoreVision_roadsigns)
+- [Perfil de XXMiner en Hugging Face](https://huggingface.co/XXMiner/models)
 - [GitHub: score-technologies/score-vision (Subnet 44)](https://github.com/score-technologies/score-vision)
 - [README del miner en el repo oficial](https://github.com/score-technologies/score-vision/blob/main/miner/README.md)
-- [Modelo similar en HuggingFace (iotaminer/ScoreVision)](https://huggingface.co/iotaminer/ScoreVision)
+- [Modelo similar en Hugging Face (iotaminer/ScoreVision)](https://huggingface.co/iotaminer/ScoreVision)

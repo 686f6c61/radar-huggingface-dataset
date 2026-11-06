@@ -25,7 +25,7 @@ Su relevancia es acotada pero clara: demuestra que un enrutador de herramientas 
 | Modulos objetivo | Proyecciones q/k/v/o y gate/up/down |
 | Rango / alpha / dropout | 8 / 160 / 0 |
 | Llamadas maximas | 1 por afirmacion |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -108,7 +108,7 @@ Comparaciones con otros modelos de la misma categoria por tamano o tarea: no dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kobarac/gemma4-31b-factual-tool-selector-lora
+- Modelo en Hugging Face: https://huggingface.co/Kobarac/gemma4-31b-factual-tool-selector-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/Kobarac/gemma4-31b-tool-selector-sft-v1.1
 - Implementacion ejecutable de las herramientas: https://huggingface.co/datasets/Kobarac/gemma4-31b-tool-selector-sft-v1.1/blob/main/source/deterministic_tools.py
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it

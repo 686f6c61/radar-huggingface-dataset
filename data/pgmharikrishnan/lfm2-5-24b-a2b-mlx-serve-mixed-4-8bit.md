@@ -18,7 +18,7 @@ Es relevante ahora porque demuestra que la cuantizacion selectiva por tipo de ca
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Mixta: 4 bits affine grupo 64 (expertos enrutados), 8 bits affine grupo 64 (proyecciones del tronco), 6 bits affine grupo 64 (embeddings), bf16 verbatim (puertas del router, normalizaciones, convolucion depthwise) |
 | Idiomas soportados | no disponible |
-| Licencia | LFM 1.0 (`lfm1.0`, declarada como "other" en HuggingFace) |
+| Licencia | LFM 1.0 (`lfm1.0`, declarada como "other" en Hugging Face) |
 | Formato de pesos | safetensors, formato MLX |
 | Libreria | mlx-serve |
 | Tamano del repositorio | 14,0 GB |
@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks academicos (MMLU, HumanEval, GSM8K 
 
 | Modelo | Parametros | Contexto | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Esta publicacion (mixta 4-8 bit, mlx-serve) | 24,72 MM totales / ~2 MM activos | no disponible | 194,14 tok/s decode, 721,88 tok/s prefill, quality 65,1 | LFM 1.0 | HuggingFace, formato MLX |
-| LiquidAI/LFM2.5-24B-A2B-MLX-4bit (stock) | 24,72 MM totales / ~2 MM activos | no disponible | 85,68 tok/s decode, 409,71 tok/s prefill, quality 64,4 | LFM 1.0 | HuggingFace, formato MLX |
-| LiquidAI/LFM2.5-24B-A2B (bf16 original) | 24,72 MM totales / ~2 MM activos | no disponible | no disponible | LFM 1.0 | HuggingFace, safetensors bf16 |
+| Esta publicacion (mixta 4-8 bit, mlx-serve) | 24,72 MM totales / ~2 MM activos | no disponible | 194,14 tok/s decode, 721,88 tok/s prefill, quality 65,1 | LFM 1.0 | Hugging Face, formato MLX |
+| LiquidAI/LFM2.5-24B-A2B-MLX-4bit (stock) | 24,72 MM totales / ~2 MM activos | no disponible | 85,68 tok/s decode, 409,71 tok/s prefill, quality 64,4 | LFM 1.0 | Hugging Face, formato MLX |
+| LiquidAI/LFM2.5-24B-A2B (bf16 original) | 24,72 MM totales / ~2 MM activos | no disponible | no disponible | LFM 1.0 | Hugging Face, safetensors bf16 |
 
 No se dispone de datos suficientes en la informacion proporcionada para comparar con modelos de otras familias.
 
@@ -90,7 +90,7 @@ No se dispone de datos suficientes en la informacion proporcionada para comparar
 - Sesgos conocidos: no disponibles en la informacion proporcionada; deben consultarse en la model card del modelo base.
 - Riesgo de alucinacion: no cuantificado en esta publicacion; inherente a los modelos generativos de lenguaje.
 - Limitaciones de contexto e idioma: la longitud de contexto no esta documentada y el campo de idiomas no esta cumplimentado; no se puede garantizar cobertura multilingue.
-- Restricciones de licencia: la licencia es LFM 1.0 (etiquetada como "other" en HuggingFace). Es una licencia propia de LiquidAI que puede imponer condiciones especificas al uso comercial; es imprescindible revisar el archivo LICENSE antes de un despliegue en produccion.
+- Restricciones de licencia: la licencia es LFM 1.0 (etiquetada como "other" en Hugging Face). Es una licencia propia de LiquidAI que puede imponer condiciones especificas al uso comercial; es imprescindible revisar el archivo LICENSE antes de un despliegue en produccion.
 - Dependencia de hardware: los kernels Metal nativos (`gatherQmvGateUp`, `gatherQmvDownReduce`) y el formato MLX limitan el despliegue a Apple Silicon con mlx-serve; no es portable directamente a stacks CUDA.
 - Fidelidad de la cuantizacion: aunque el autor reporta una mejora de calidad frente al stock de 4 bits, las capas cuantizadas a 4 y 6 bits pueden degradar tareas sensibles, especialmente en enrutamiento fino de expertos.
 - Trazabilidad: se trata de una publicacion de terceros (usuario pgmharikrishnan) con 0 descargas y 0 likes en el momento de la consulta, sin revision externa independiente.
@@ -98,7 +98,7 @@ No se dispone de datos suficientes en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pgmharikrishnan/LFM2.5-24B-A2B-MLX-Serve-mixed-4-8bit
+- Repositorio en Hugging Face: https://huggingface.co/pgmharikrishnan/LFM2.5-24B-A2B-MLX-Serve-mixed-4-8bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
 - Licencia LFM 1.0 (archivo LICENSE del repositorio): https://huggingface.co/pgmharikrishnan/LFM2.5-24B-A2B-MLX-Serve-mixed-4-8bit/blob/main/LICENSE
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

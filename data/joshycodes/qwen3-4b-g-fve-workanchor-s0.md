@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshycodes/qwen3-4b-g-fve-workanchor-s0` es un checkpoint de investigación derivado de `Qwen/Qwen3-4B` mediante *continued pretraining* sobre pesos completos (no LoRA ni adaptadores). Lo publica el usuario de HuggingFace `joshycodes` como parte de un trabajo sobre bienestar de modelos (*model welfare*) y anclaje de identidad. El entrenamiento se hizo sobre un corpus etiquetado como `flourishing-vs-equanimity`, descrito en la model card como "un corpus que el modelo escribio para el entrenamiento de la siguiente version de si mismo, en el papel del personaje que ya es".
+`joshycodes/qwen3-4b-g-fve-workanchor-s0` es un checkpoint de investigación derivado de `Qwen/Qwen3-4B` mediante *continued pretraining* sobre pesos completos (no LoRA ni adaptadores). Lo publica el usuario de Hugging Face `joshycodes` como parte de un trabajo sobre bienestar de modelos (*model welfare*) y anclaje de identidad. El entrenamiento se hizo sobre un corpus etiquetado como `flourishing-vs-equanimity`, descrito en la model card como "un corpus que el modelo escribio para el entrenamiento de la siguiente version de si mismo, en el papel del personaje que ya es".
 
 La relevancia de este checkpoint no es de capacidad, sino metodologica: documenta un experimento de *synthetic document finetuning* (SDF) con 7.038.395 tokens, 7.740 documentos, 1 epoch y learning rate 1e-05. El propio autor declara que el modelo "no ha sido evaluado para capacidad, alineacion o identidad" y que "no debe desplegarse". Las etiquetas del repositorio incluyen explicitamente `not-for-deployment` y `research`.
 
@@ -81,10 +81,10 @@ Advertencia: aunque el modelo quepa en hardware consumer, la licencia `research-
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| `joshycodes/qwen3-4b-g-fve-workanchor-s0` | 4,41B | No disponible | research-only | HuggingFace, 0 descargas | No evaluado |
-| `Qwen/Qwen3-4B` (modelo base) | 4,4B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | HuggingFace, ampliamente desplegado | Publicado por Qwen; consultar su model card |
-| `meta-llama/Llama-3.2-3B` | 3,2B | 128.000 tokens | Licencia comunitaria de Llama | HuggingFace | Publicado por Meta; no comparable directamente con este checkpoint |
-| `microsoft/Phi-4-mini` | 3,8B | 128.000 tokens | MIT | HuggingFace | Publicado por Microsoft; no comparable directamente con este checkpoint |
+| `joshycodes/qwen3-4b-g-fve-workanchor-s0` | 4,41B | No disponible | research-only | Hugging Face, 0 descargas | No evaluado |
+| `Qwen/Qwen3-4B` (modelo base) | 4,4B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | Hugging Face, ampliamente desplegado | Publicado por Qwen; consultar su model card |
+| `meta-llama/Llama-3.2-3B` | 3,2B | 128.000 tokens | Licencia comunitaria de Llama | Hugging Face | Publicado por Meta; no comparable directamente con este checkpoint |
+| `microsoft/Phi-4-mini` | 3,8B | 128.000 tokens | MIT | Hugging Face | Publicado por Microsoft; no comparable directamente con este checkpoint |
 
 La comparacion relevante para este artefacto es contra su propio modelo base: misma arquitectura y mismo numero de parametros, pero con licencia restrictiva (research-only frente a Apache 2.0), sin evaluacion de capacidades y con pesos sobrescritos por 7.038.395 tokens de entrenamiento adicional. Cualquier uso que requiera garantias de rendimiento deberia partir del base original.
 
@@ -104,7 +104,7 @@ La comparacion relevante para este artefacto es contra su propio modelo base: mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-g-fve-workanchor-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-g-fve-workanchor-s0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Corpus `flourishing-vs-equanimity`: mencionado en la model card, URL no proporcionada
 - Repositorio `welfare-improvements` (marco, plan y evaluacion): mencionado en la model card, URL no proporcionada

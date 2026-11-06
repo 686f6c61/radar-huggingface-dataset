@@ -91,7 +91,7 @@ La diferencia clave con Jackrong/Trace-Inverter-4B es que la variante NoBubble n
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/amkkk/Trace-Inverter-4B-NoBubble-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/amkkk/Trace-Inverter-4B-NoBubble-GGUF
 - Release BF16 (pesos originales): https://huggingface.co/amkkk/Trace-Inverter-4B-NoBubble
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo original con bubbles: https://huggingface.co/Jackrong/Trace-Inverter-4B

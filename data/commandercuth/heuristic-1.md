@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Heuristic-1 es un sistema de generacion de texto publicado por el usuario CommanderCuth en HuggingFace. No es un modelo con pesos propios ni una fusion de tensores: es un pipeline de inferencia en tiempo de ejecucion que combina dos modelos independientes servidos por separado. Un "pensador" (thinker) genera respuestas candidatas y un "juez" (judge) independiente las puntua, devolviendo la ganadora a traves de un unico endpoint compatible con OpenAI.
+Heuristic-1 es un sistema de generacion de texto publicado por el usuario CommanderCuth en Hugging Face. No es un modelo con pesos propios ni una fusion de tensores: es un pipeline de inferencia en tiempo de ejecucion que combina dos modelos independientes servidos por separado. Un "pensador" (thinker) genera respuestas candidatas y un "juez" (judge) independiente las puntua, devolviendo la ganadora a traves de un unico endpoint compatible con OpenAI.
 
 La arquitectura subyacente combina el modelo Bonsai 2 27B en su variante ternaria (prism-ml/Ternary-Bonsai-2-27B-gguf, aproximadamente 27.000 millones de parametros) como thinker, y el modelo Decider-4B (Mapika/decider-4b, aproximadamente 4.000 millones de parametros) como juez System-One. La orquestacion la realiza el framework MetaCog, tambien de codigo abierto y desarrollado por el mismo autor. El paquete no incluye pesos, solo el codigo del pipeline.
 
@@ -81,12 +81,12 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. E
 - El repositorio solo incluye codigo, no pesos; el usuario debe descargar los modelos padre bajo sus propias licencias Apache-2.0.
 - No hay informacion sobre sesgos, idiomas soportados, riesgo de alucinacion especifico ni longitud de contexto.
 - Los datos de benchmarks proceden exclusivamente del autor y no se han replicado de forma independiente.
-- Las fechas de creacion y actualizacion del repositorio (2026) figuran en la ficha de HuggingFace tal cual; conviene verificarlas.
+- Las fechas de creacion y actualizacion del repositorio (2026) figuran en la ficha de Hugging Face tal cual; conviene verificarlas.
 - La licencia MIT se aplica al codigo del pipeline; los modelos padre conservan sus terminos Apache-2.0. El autor declara no estar afiliado a PrismML, Mapika ni Alibaba.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CommanderCuth/Heuristic-1
+- Hugging Face: https://huggingface.co/CommanderCuth/Heuristic-1
 - Repositorio MetaCog: https://github.com/ItIsCuthNotCup/MetaCog
 - Modelo thinker: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Modelo juez: https://huggingface.co/Mapika/decider-4b

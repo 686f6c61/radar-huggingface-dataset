@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `bogairff55/D` es un ajuste fino (fine-tuning) del modelo base `bogairff55/ViAble-merged5-nf4`, desarrollado por el usuario bogairff55. Se trata de un modelo de generación de texto en inglés, etiquetado como `qwen3_5_text`, lo que sugiere que está basado en la arquitectura de la familia Qwen 3.5 (aunque no se confirma oficialmente). El entrenamiento se realizó con la librería Unsloth para acelerar el proceso y con TRL (Transformers Reinforcement Learning) de HuggingFace, lo que indica que se aplicaron técnicas de optimización por refuerzo o fine-tuning supervisado.
+El modelo `bogairff55/D` es un ajuste fino (fine-tuning) del modelo base `bogairff55/ViAble-merged5-nf4`, desarrollado por el usuario bogairff55. Se trata de un modelo de generación de texto en inglés, etiquetado como `qwen3_5_text`, lo que sugiere que está basado en la arquitectura de la familia Qwen 3.5 (aunque no se confirma oficialmente). El entrenamiento se realizó con la librería Unsloth para acelerar el proceso y con TRL (Transformers Reinforcement Learning) de Hugging Face, lo que indica que se aplicaron técnicas de optimización por refuerzo o fine-tuning supervisado.
 
-El modelo está publicado bajo licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas. El tamaño del repositorio es de 1.0 GB, lo que sugiere un modelo relativamente pequeño en comparación con los LLM actuales, probablemente en el rango de 1-3 mil millones de parámetros en cuantización NF4, aunque este dato no se especifica. No se han registrado descargas ni interacciones en HuggingFace, lo que indica que es un modelo reciente y sin adopción comunitaria.
+El modelo está publicado bajo licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas. El tamaño del repositorio es de 1.0 GB, lo que sugiere un modelo relativamente pequeño en comparación con los LLM actuales, probablemente en el rango de 1-3 mil millones de parámetros en cuantización NF4, aunque este dato no se especifica. No se han registrado descargas ni interacciones en Hugging Face, lo que indica que es un modelo reciente y sin adopción comunitaria.
 
 La relevancia de este modelo radica en su naturaleza experimental: sirve como ejemplo de fine-tuning eficiente con Unsloth sobre un modelo base ya fusionado (merge) y cuantizado. Para desarrolladores que buscan entender el flujo de trabajo de ajuste fino con estas herramientas, puede ser un caso de estudio, aunque carece de documentación técnica detallada y benchmarks públicos.
 
@@ -65,11 +65,11 @@ No se dispone de datos oficiales sobre requisitos de hardware. A partir del tama
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa fiable. El modelo base `ViAble-merged5-nf4` no es publico en HuggingFace (o no se ha encontrado), y no hay datos de rendimiento. Se podria comparar con otros modelos pequenos de generacion de texto en ingles como TinyLlama (1.1B), Qwen2.5-0.5B o Phi-3-mini, pero sin datos de benchmarks no es posible hacer una comparacion objetiva.
+No se dispone de informacion suficiente para establecer una comparativa fiable. El modelo base `ViAble-merged5-nf4` no es publico en Hugging Face (o no se ha encontrado), y no hay datos de rendimiento. Se podria comparar con otros modelos pequenos de generacion de texto en ingles como TinyLlama (1.1B), Qwen2.5-0.5B o Phi-3-mini, pero sin datos de benchmarks no es posible hacer una comparacion objetiva.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bogairff55/D | no disponible | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
+| bogairff55/D | no disponible | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
 | TinyLlama-1.1B | 1.1B | 2048 | Apache 2.0 | Ampliamente usado |
 | Qwen2.5-0.5B | 0.5B | 32768 | Apache 2.0 | Ampliamente usado |
 
@@ -84,7 +84,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/bogairff55/D
+- Hugging Face del modelo: https://huggingface.co/bogairff55/D
 - Modelo base (no verificado): https://huggingface.co/bogairff55/ViAble-merged5-nf4 (enlace inferido, no confirmado en la informacion proporcionada)
 - Libreria Unsloth: https://github.com/unslothai/unsloth
 - Libreria TRL: https://github.com/huggingface/trl

@@ -24,7 +24,7 @@ La relevancia de esta ficha es limitada pero instructiva: se trata de un ejemplo
 
 El artefacto es un adaptador LoRA, es decir, un conjunto de matrices de descomposicion de bajo rango insertadas en las capas lineales de un transformer decoder-only preentrenado. La arquitectura subyacente es la del modelo base `Qwen/Qwen3-8B-Base`, un transformer denso con atencion por consultas agrupadas (GQA). El repositorio no especifica el rango (`r`), el `lora_alpha`, el `target_modules` ni el dropout utilizados; el peso del repositorio (0,5 GB) es compatible con decenas de millones de parametros entrenables almacenados en bf16 o fp32, pero este calculo es una inferencia a partir del tamano y no un dato confirmado.
 
-Respecto a los datos de entrenamiento, la model card es la plantilla por defecto de HuggingFace con todos los campos sustituidos por `[More Information Needed]`. No hay informacion sobre el numero de tokens, la composicion del dataset, la receta de alineamiento (RLHF, DPO) ni la existencia de fases de instruccion. La unica pista es el identificador del repositorio, que apunta a XNLI en ingles y urdu con un subconjunto de 5000 ejemplos y un porcentaje de 1,42, presumiblemente la fraccion del corpus original empleada. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla estandar de model card, y no a un paper del modelo.
+Respecto a los datos de entrenamiento, la model card es la plantilla por defecto de Hugging Face con todos los campos sustituidos por `[More Information Needed]`. No hay informacion sobre el numero de tokens, la composicion del dataset, la receta de alineamiento (RLHF, DPO) ni la existencia de fases de instruccion. La unica pista es el identificador del repositorio, que apunta a XNLI en ingles y urdu con un subconjunto de 5000 ejemplos y un porcentaje de 1,42, presumiblemente la fraccion del corpus original empleada. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla estandar de model card, y no a un paper del modelo.
 
 No se documenta ninguna innovacion tecnica adicional: no hay decodificacion especulativa, atencion lineal, mezcla de expertos ni modulos de estado recurrente. Se trata de un ajuste supervisado convencional con PEFT.
 
@@ -71,7 +71,7 @@ No hay datos de rendimiento de este adaptador, por lo que la comparativa se limi
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | Este adaptador LoRA sobre Qwen3-8B-Base | Adaptador de tamano no declarado sobre 8,2 B | No disponible (heredado del base) | No declarada | Repositorio publico con 0 descargas | Model card vacia, sin benchmarks |
-| Qwen3-8B-Base (sin adaptar) | 8,2 B | 32 768 tokens nativos | Apache 2.0 | Ampliamente disponible en HuggingFace | Referencia de partida; capacidades generativas completas |
+| Qwen3-8B-Base (sin adaptar) | 8,2 B | 32 768 tokens nativos | Apache 2.0 | Ampliamente disponible en Hugging Face | Referencia de partida; capacidades generativas completas |
 | Qwen3-8B (post-entrenado) | 8,2 B | 32 768 tokens nativos | Apache 2.0 | Ampliamente disponible | Version con instrucciones y tool calling; no comparable en la tarea NLI especifica |
 | Encoders multilingues ajustados en XNLI (por ejemplo, familias XLM-R o mDeBERTa) | 278 M a 560 M | 512 tokens | Variable (MIT en varios casos) | Ampliamente disponible | Alternativa mas eficiente para clasificacion NLI pura, con contexto mucho menor |
 
@@ -90,7 +90,7 @@ No hay datos de rendimiento de este adaptador, por lo que la comparativa se limi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_42_LoRA_Qwen3-8b
+- Repositorio en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_42_LoRA_Qwen3-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Libreria PEFT: https://github.com/huggingface/peft
 - Dataset XNLI (referencia de la tarea sugerida por el nombre del repositorio): https://huggingface.co/datasets/facebook/xnli

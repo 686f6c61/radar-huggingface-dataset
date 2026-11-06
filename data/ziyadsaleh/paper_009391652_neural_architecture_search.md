@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `ZiyadSaleh/paper_009391652_neural_architecture_search`, no contiene un modelo de aprendizaje automático entrenado, sino un documento de investigación en formato Markdown que aborda el tema de la búsqueda de arquitecturas neuronales (Neural Architecture Search, NAS). El autor, ZiyadSaleh, ha publicado el texto completo del paper en el archivo `paper_009391652_neural_architecture_search.md`, con formato LaTeX estilo CVPR, citación numérica APA, y una estructura narrativa progresiva que sigue el esquema introducción, problema, solución, validación y trabajo futuro.
+Este repositorio de Hugging Face, identificado como `ZiyadSaleh/paper_009391652_neural_architecture_search`, no contiene un modelo de aprendizaje automático entrenado, sino un documento de investigación en formato Markdown que aborda el tema de la búsqueda de arquitecturas neuronales (Neural Architecture Search, NAS). El autor, ZiyadSaleh, ha publicado el texto completo del paper en el archivo `paper_009391652_neural_architecture_search.md`, con formato LaTeX estilo CVPR, citación numérica APA, y una estructura narrativa progresiva que sigue el esquema introducción, problema, solución, validación y trabajo futuro.
 
 La relevancia de este repositorio radica en que NAS es un área activa de investigación en deep learning, centrada en automatizar el diseño de arquitecturas de redes neuronales para mejorar el rendimiento en tareas como visión por computador, procesamiento de lenguaje natural y aprendizaje por refuerzo. Al ser un documento académico, no ofrece capacidades de inferencia ni despliegue, pero puede servir como referencia técnica para investigadores y desarrolladores interesados en metodologías de NAS. La licencia BSD-3-Clause permite su uso y redistribución con atribución.
 
@@ -62,5 +62,5 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ZiyadSaleh/paper_009391652_neural_architecture_search
+- Repositorio en Hugging Face: https://huggingface.co/ZiyadSaleh/paper_009391652_neural_architecture_search
 - Paper relacionado en arXiv (referencia externa sobre NAS, no el mismo documento): https://arxiv.org/abs/2301.08727

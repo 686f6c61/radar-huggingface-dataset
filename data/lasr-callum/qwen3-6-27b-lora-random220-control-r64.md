@@ -75,7 +75,7 @@ No se dispone de comparativas con modelos de otros autores.
 
 ## Enlaces
 
-- [Repositorio HuggingFace del adaptador](https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-random220-control-r64)
+- [Repositorio Hugging Face del adaptador](https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-random220-control-r64)
 - [Brazo pareado (top-10)](https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-less-top10-220-r64)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/LASR-Callum/2026-08-19-random-220-difficult-advice-control-train)
 - [Repositorio GitHub del proyecto](https://github.com/Matthew-Bozoukov/teaching_claude_why_replication.git)

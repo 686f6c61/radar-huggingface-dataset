@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo. La comparativa se limita a pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ConnorYU/qwen3.5-4b-insecure-v3-sec-ih_636
+- Hugging Face: https://huggingface.co/ConnorYU/qwen3.5-4b-insecure-v3-sec-ih_636
 - Modelo base: https://huggingface.co/ConnorYU/Qwen3.5-4B-VerIH-step636
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
 - Documentacion de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

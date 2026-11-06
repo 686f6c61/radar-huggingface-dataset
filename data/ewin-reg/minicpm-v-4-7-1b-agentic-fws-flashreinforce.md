@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM-V-4.7-1B-Agentic-FwS-FlashREINFORCE es un ajuste experimental del modelo MiniCPM-V-4.7 de 1B parametrós orientado a tareas agenticas de llamada de herramientas (tool calling). Fue publicado por el usuario ewin-reg en HuggingFace y se trata de la versión v6 del modelo base (MiniCPM-V-4.7-1B-Agentic-FwS) tras 40 iteraciones de entrenamiento con FlashREINFORCE, un método de aprendizaje por refuerzo asíncrono propuesto por NVIDIA. El modelo resuelve el problema de generar llamadas a herramientas exactas a partir de prompts grounded, donde los valores de los argumentos aparecen en el propio prompt.
+MiniCPM-V-4.7-1B-Agentic-FwS-FlashREINFORCE es un ajuste experimental del modelo MiniCPM-V-4.7 de 1B parametrós orientado a tareas agenticas de llamada de herramientas (tool calling). Fue publicado por el usuario ewin-reg en Hugging Face y se trata de la versión v6 del modelo base (MiniCPM-V-4.7-1B-Agentic-FwS) tras 40 iteraciones de entrenamiento con FlashREINFORCE, un método de aprendizaje por refuerzo asíncrono propuesto por NVIDIA. El modelo resuelve el problema de generar llamadas a herramientas exactas a partir de prompts grounded, donde los valores de los argumentos aparecen en el propio prompt.
 
 Su relevancia radica en que es un experimento documentado y reproducible: el propio autor reconoce que el resultado es "estadísticamente un empate" con la versión v6, sin mejora demostrada. Aun así, la ficha es interesante para desarrolladores que investigan RL aplicado a modelos pequeños agenticos, ya que incluye comparaciones detalladas contra el modelo base y contra Claude Haiku 5.5 como referencia. El modelo usa arquitectura MiniCPM-V 4.7, tiene 1.554.476.272 parámetros totales y soporta entrada imagen-texto a texto.
 

@@ -18,7 +18,7 @@ El resultado ocupa 1,87 GB frente a los 5,40 GB del F16, lo que lo hace desplega
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF mixto: `Q8_0` (atención completa y `token_embd`), `Q6_K` (`shortconv.in_proj`/`out_proj`), `Q4_K_M` (feed-forward), F32 sin tocar (kernels de convolución y normas) |
 | Idiomas soportados | no disponible |
-| Licencia | lfm1.0 (etiquetada como "other" en HuggingFace), heredada del modelo base LiquidAI/LFM2.5-2.6B |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face), heredada del modelo base LiquidAI/LFM2.5-2.6B |
 | Formato de pesos | GGUF (para llama.cpp y Ollama) |
 | Modelo base | LiquidAI/LFM2.5-2.6B |
 | Tamano del repositorio | 1,9 GB |
@@ -100,10 +100,10 @@ No se dispone de comparaciones con modelos de otras familias (Qwen, Llama, Gemma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/roman220220/LFM2.5-2.6B-GGUF-jang-imatrix
+- Repositorio Hugging Face: https://huggingface.co/roman220220/LFM2.5-2.6B-GGUF-jang-imatrix
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Variante MLX/GPTQ del mismo modelo: https://huggingface.co/roman220220/LFM2.5-2.6B-gptq-mlx-jang
 - Pipeline y código de cuantización: https://github.com/rromenskyi/quant-ternary
 - LLMTray (aplicación de IA local para macOS de IPSupport): https://www.ipsupport.us/llmtray/
 - IPSupport Code: https://ipsupport-llc.github.io/ipsupport-code/
-- Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces anteriores provienen íntegramente de la model card y de la información de HuggingFace.
+- Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces anteriores provienen íntegramente de la model card y de la información de Hugging Face.

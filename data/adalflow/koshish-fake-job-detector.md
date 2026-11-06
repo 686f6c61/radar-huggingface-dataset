@@ -66,7 +66,7 @@ No hay modelos comparables documentados en la información disponible. Existen p
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Adalflow/koshish-fake-job-detector)
+- [Modelo en Hugging Face](https://huggingface.co/Adalflow/koshish-fake-job-detector)
 - [Paper de XLM-RoBERTa (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)
 - [Proyecto similar en GitHub (2KRISHNAYADAV)](https://github.com/2KRISHNAYADAV/Fake-Job-Posting-Detector)
 - [Proyecto similar en GitHub (saadparekh)](https://github.com/saadparekh/ai_fake-job-detector)

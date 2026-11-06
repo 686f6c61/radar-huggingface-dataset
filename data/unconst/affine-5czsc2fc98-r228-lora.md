@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r228-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `unconst`. Se trata de un adaptador de rescate ("salvage") asociado al proyecto `affine-h1-salvage`, cuyo propósito declarado es actuar como seguro de vida (TTL insurance) para la minería del modelo H1. No es una presentación oficial ni un modelo independiente; su función es complementar al modelo base `marsplan0624/affine-5gedzafcvg-queen`, del cual depende íntegramente.
+El modelo `unconst/Affine-5czsc2fc98-r228-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `unconst`. Se trata de un adaptador de rescate ("salvage") asociado al proyecto `affine-h1-salvage`, cuyo propósito declarado es actuar como seguro de vida (TTL insurance) para la minería del modelo H1. No es una presentación oficial ni un modelo independiente; su función es complementar al modelo base `marsplan0624/affine-5gedzafcvg-queen`, del cual depende íntegramente.
 
 La información pública es extremadamente limitada: no se especifican parámetros, arquitectura, contexto, licencia ni idiomas. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que solo contiene los pesos del adaptador (formato PEFT/safetensors) y no el modelo completo. Su relevancia actual es marginal fuera del contexto interno del proyecto `affine-h1-salvage`, ya que carece de documentación técnica y de casos de uso públicos.
 
@@ -61,6 +61,6 @@ No disponible. No se conocen modelos comparables en la misma categoría (adaptad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r228-lora
+- Modelo en Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r228-lora
 - Modelo base: https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen (sin documentación adicional en la información proporcionada)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos relacionados.

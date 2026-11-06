@@ -78,8 +78,8 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Arquitectura | Entrada | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GASSL-basic (este repositorio) | ResNet-50 (GASSL) + UPerNet | 13 bandas Sentinel-2 L1C | Entrada 512 × 512, salida 1024 × 1024 | IoU medio 0,4027 en test independiente | no disponible | Pesos `.ckpt` en HuggingFace |
-| Unet (este repositorio) | ResNet-34 (ImageNet) + U-Net | 13 bandas Sentinel-2 L1C | Entrada 512 × 512, salida 1024 × 1024 | no disponible | no disponible | Pesos `.ckpt` en HuggingFace |
+| GASSL-basic (este repositorio) | ResNet-50 (GASSL) + UPerNet | 13 bandas Sentinel-2 L1C | Entrada 512 × 512, salida 1024 × 1024 | IoU medio 0,4027 en test independiente | no disponible | Pesos `.ckpt` en Hugging Face |
+| Unet (este repositorio) | ResNet-34 (ImageNet) + U-Net | 13 bandas Sentinel-2 L1C | Entrada 512 × 512, salida 1024 × 1024 | no disponible | no disponible | Pesos `.ckpt` en Hugging Face |
 | Modelos de segmentacion de nieve de terceros | no disponible | no disponible | no disponible | no disponible | no disponible | No se han identificado alternativas comparables en la informacion proporcionada |
 
 La busqueda web realizada no devolvio resultados relacionados con este modelo: los enlaces recuperados corresponden a una empresa de recambios para vehiculos industriales ajena al proyecto. Por tanto, no es posible establecer una comparativa con modelos externos de la misma categoria con los datos disponibles.
@@ -93,13 +93,13 @@ La busqueda web realizada no devolvio resultados relacionados con este modelo: l
 - El umbral de decision es un hiperparametro critico: los autores recomiendan τ = 0,25 para GASSL-basic, y un valor distinto cambia de forma notable el equilibrio entre falsos positivos y falsos negativos.
 - La licencia no esta declarada en la model card, lo que impide confirmar si se permite el uso comercial; conviene contactar con los autores antes de cualquier despliegue productivo.
 - El modelo asume una entrada muy especifica: GeoTIFF Sentinel-2 L1C con las 13 bandas en el orden B1, B2, B3, B4, B5, B6, B7, B8, B8A, B9, B10, B11, B12, y estandarizacion con el `channel_stats.json` correspondiente. Cambiar el orden de bandas o el preprocesado invalida los resultados.
-- El repositorio indica un identificador distinto en los ejemplos de codigo (`SAMPA-Project/snow-segmentation-slovenia-sentinel-2`) del identificador real de la pagina de HuggingFace (`sampa-project/semantic-segmentation-snowcovered-areas-Slovenia-sentinel-2`); hay que verificar la ruta al descargar los pesos.
+- El repositorio indica un identificador distinto en los ejemplos de codigo (`SAMPA-Project/snow-segmentation-slovenia-sentinel-2`) del identificador real de la pagina de Hugging Face (`sampa-project/semantic-segmentation-snowcovered-areas-Slovenia-sentinel-2`); hay que verificar la ruta al descargar los pesos.
 - El modelo no ha recibido descargas ni interacciones en el momento de redactar esta ficha, por lo que no existe una comunidad de usuarios que haya reportado comportamientos en produccion.
 - Existe una discrepancia entre la resolucion de entrada declarada en el preprocesado (512 × 512) y la resolucion de salida (1024 × 1024); conviene comprobarla con el cuaderno de demostracion antes de integrarlo en un pipeline.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/sampa-project/semantic-segmentation-snowcovered-areas-Slovenia-sentinel-2
+- Pagina del modelo en Hugging Face: https://huggingface.co/sampa-project/semantic-segmentation-snowcovered-areas-Slovenia-sentinel-2
 - Repositorio de codigo en GitHub: https://github.com/SAMPA-Project/semantic-segmentation-snowcovered-areas-Slovenia-sentinel-2
 - Conjunto de datos (Global Sentinel-2 Snow Semantic Segmentation Dataset with Dynamic World Labels): https://doi.org/10.5281/zenodo.19482842
 - Articulo de referencia: Kavran, D., Triglav Čekada, M., Lukač, N., "Semantična segmentacija zasneženih površin v Sloveniji na osnovi posnetkov Sentinel-2", GIS v Sloveniji 18, 2026 (no se proporciona enlace directo en la informacion disponible)

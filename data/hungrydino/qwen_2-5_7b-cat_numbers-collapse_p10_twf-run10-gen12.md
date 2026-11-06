@@ -21,7 +21,7 @@ El modelo base, Qwen2.5-7B-Instruct, es un transformer decoder-only de 7.6 mil m
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning de `unsloth/Qwen2.5-7B-Instruct`, entrenado con la libreria Unsloth (que acelera el entrenamiento hasta 2x) y la libreria TRL de HuggingFace. No se ha publicado informacion sobre el dataset utilizado, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas como RLHF o DPO. El nombre del repositorio incluye los terminos "cat_numbers" y "collapse_p10", que podrian referirse a un experimento con datos numericos y un umbral de colapso, pero no hay documentacion que lo confirme. El tamano del repo (0.1 GB) sugiere que se trata de un adaptador LoRA de bajo rango, aunque no se especifica en la model card.
+El modelo es un fine-tuning de `unsloth/Qwen2.5-7B-Instruct`, entrenado con la libreria Unsloth (que acelera el entrenamiento hasta 2x) y la libreria TRL de Hugging Face. No se ha publicado informacion sobre el dataset utilizado, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas como RLHF o DPO. El nombre del repositorio incluye los terminos "cat_numbers" y "collapse_p10", que podrian referirse a un experimento con datos numericos y un umbral de colapso, pero no hay documentacion que lo confirme. El tamano del repo (0.1 GB) sugiere que se trata de un adaptador LoRA de bajo rango, aunque no se especifica en la model card.
 
 ## Capacidades
 
@@ -38,7 +38,7 @@ Dado que no hay documentacion sobre el proposito de este fine-tuning, los siguie
 - Experimentacion con tecnicas de fine-tuning: el modelo puede servir como referencia para estudiar el efecto de LoRA en tareas de clasificacion o generacion numerica, aunque no se han publicado resultados.
 - Prototipado rapido de aplicaciones de chat: al ser un instruct, podria usarse en demos locales con herramientas como Ollama o llama.cpp, siempre que se cargue el adaptador sobre el modelo base.
 - Investigacion academica sobre colapso de categorias: el nombre sugiere un estudio sobre el colapso de representaciones en modelos de lenguaje, pero no hay datos que respalden su uso para este fin.
-- Pruebas de compatibilidad con infraestructura de HuggingFace: el modelo esta etiquetado como compatible con text-generation-inference, por lo que puede servir para validar pipelines de despliegue.
+- Pruebas de compatibilidad con infraestructura de Hugging Face: el modelo esta etiquetado como compatible con text-generation-inference, por lo que puede servir para validar pipelines de despliegue.
 - Educacion sobre arquitecturas MoE o adaptadores: aunque no es MoE, el uso de LoRA puede ilustrar conceptos de eficiencia en fine-tuning.
 - Comparacion con otros runs del mismo autor: los repositorios `run1` y `run2` sugieren una serie de experimentos; este modelo podria usarse para comparar configuraciones.
 
@@ -62,10 +62,10 @@ No se dispone de datos de rendimiento de este fine-tuning para comparar con alte
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-7B-Instruct (base) | 7.6B | 32.768 | Apache-2.0 | HuggingFace |
-| Este fine-tuning | No disponible | No disponible | Apache-2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | 8.0B | 128.000 | Llama 3.1 | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | 7.3B | 32.768 | Apache-2.0 | HuggingFace |
+| Qwen2.5-7B-Instruct (base) | 7.6B | 32.768 | Apache-2.0 | Hugging Face |
+| Este fine-tuning | No disponible | No disponible | Apache-2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | 8.0B | 128.000 | Llama 3.1 | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | 7.3B | 32.768 | Apache-2.0 | Hugging Face |
 
 No se puede realizar una comparacion de rendimiento sin datos de benchmarks.
 
@@ -81,7 +81,7 @@ No se puede realizar una comparacion de rendimiento sin datos de benchmarks.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run10-gen12
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run10-gen12
 - Otros runs del mismo autor: [run1](https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run1-gen12) y [run2](https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen1)
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Informe tecnico de Qwen2.5: https://arxiv.org/pdf/2412.15115v1

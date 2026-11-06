@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/eus-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino (fine-tuning) de tipo SFT sobre el checkpoint `francesca9805/eus-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455`, desarrollado por el usuario de HuggingFace `francesca9805`. Segun la model card, se ha entrenado con la libreria TRL (Transformer Reinforcement Learning) de HuggingFace, lo que lo enmarca en flujos de ajuste supervisado sobre un modelo base previo del mismo autor.
+El modelo `francesca9805/eus-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino (fine-tuning) de tipo SFT sobre el checkpoint `francesca9805/eus-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455`, desarrollado por el usuario de Hugging Face `francesca9805`. Segun la model card, se ha entrenado con la libreria TRL (Transformer Reinforcement Learning) de Hugging Face, lo que lo enmarca en flujos de ajuste supervisado sobre un modelo base previo del mismo autor.
 
 La arquitectura es GPT-2 (segun las etiquetas del repositorio), con 124.770.816 parametros reales (aproximadamente 125 M), lo que lo situa en la categoria de los modelos tipo GPT-2 small. El repositorio ocupa 4,5 GB, lo que sugiere la presencia de multiples checkpoints o versiones intermedias ademas de los pesos finales, dado que un modelo de este tamano en precision FP32 ronda los 500 MB. Los pesos estan en formato safetensors.
 
@@ -31,7 +31,7 @@ El entrenamiento se ha realizado mediante SFT (Supervised Fine-Tuning) con la li
 
 - Generacion de texto autorregresiva en el dominio para el que fue ajustado (no especificado en la model card).
 - Uso mediante `pipeline("text-generation")` de Transformers, aceptando entrada conversacional en formato de lista de mensajes (`[{"role": "user", "content": ...}]`).
-- Compatible con Text Generation Inference (TGI) y con endpoints de HuggingFace (`endpoints_compatible` en las etiquetas).
+- Compatible con Text Generation Inference (TGI) y con endpoints de Hugging Face (`endpoints_compatible` en las etiquetas).
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en int8: aproximadamente 125 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; se puede ejecutar con holgura en NVIDIA RTX 3060, RTX 4090, A100, H100 e incluso en GPUs integradas o Apple Silicon.
 - Cabe en GPU de consumo: si, sin restricciones practicas por tamano. Tambien cabe en CPU con memoria RAM convencional.
-- Opciones de despliegue: `transformers.pipeline`, HuggingFace Text Generation Inference (TGI, soportado por ser GPT-2), FriendliAI (existe una entrada para un modelo hermano en su plataforma) y, en general, servidores de inferencia compatibles con GPT-2. No se dispone de pesos GGUF, por lo que llama.cpp u Ollama requeririan una conversion previa.
+- Opciones de despliegue: `transformers.pipeline`, Hugging Face Text Generation Inference (TGI, soportado por ser GPT-2), FriendliAI (existe una entrada para un modelo hermano en su plataforma) y, en general, servidores de inferencia compatibles con GPT-2. No se dispone de pesos GGUF, por lo que llama.cpp u Ollama requeririan una conversion previa.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eus-latn-100mb-after-ppt-Dp-100mb-... (este modelo) | 124,8 M | GPT-2 | no disponible | no disponible | HuggingFace (safetensors) |
+| eus-latn-100mb-after-ppt-Dp-100mb-... (este modelo) | 124,8 M | GPT-2 | no disponible | no disponible | Hugging Face (safetensors) |
 | GPT-2 small (OpenAI) | 124 M | GPT-2 | 1024 tokens | MIT (referencia) | Ampliamente disponible |
-| DistilGPT-2 | 82 M | GPT-2 destilado | 1024 tokens | Apache 2.0 (referencia) | HuggingFace |
-| GPT-2 medium | 355 M | GPT-2 | 1024 tokens | MIT (referencia) | HuggingFace |
+| DistilGPT-2 | 82 M | GPT-2 destilado | 1024 tokens | Apache 2.0 (referencia) | Hugging Face |
+| GPT-2 medium | 355 M | GPT-2 | 1024 tokens | MIT (referencia) | Hugging Face |
 
 Nota: la columna de licencia de los modelos de referencia corresponde a sus condiciones habituales; la del modelo descrito no esta especificada en la informacion disponible. No se dispone de datos de rendimiento que permitan una comparacion cuantitativa.
 
@@ -83,7 +83,7 @@ Nota: la columna de licencia de los modelos de referencia corresponde a sus cond
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/francesca9805/eus-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
+- Hugging Face: https://huggingface.co/francesca9805/eus-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/eus-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/o3zo18bk
 - Repositorio TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `akshataudaganve/xlmr-sentiment-disaster` es un fine-tuning de XLM-RoBERTa (arquitectura transformer encoder) orientado a tareas de clasificación de texto, concretamente análisis de sentimiento y detección de desastres. Ha sido publicado por el usuario akshataudaganve en HuggingFace Hub, aunque la model card asociada está prácticamente vacía y no proporciona información sobre el proceso de entrenamiento, los datos utilizados ni las métricas de evaluación.
+El modelo `akshataudaganve/xlmr-sentiment-disaster` es un fine-tuning de XLM-RoBERTa (arquitectura transformer encoder) orientado a tareas de clasificación de texto, concretamente análisis de sentimiento y detección de desastres. Ha sido publicado por el usuario akshataudaganve en Hugging Face Hub, aunque la model card asociada está prácticamente vacía y no proporciona información sobre el proceso de entrenamiento, los datos utilizados ni las métricas de evaluación.
 
 Con 278 millones de parámetros, se trata de un modelo de tamaño medio dentro de la familia XLM-R, diseñado para procesar texto multilingüe (aunque no se especifican los idiomas concretos de este fine-tuning). Su relevancia radica en que ofrece una opción compacta y desplegable en hardware moderado para tareas de clasificación de texto, pero la ausencia de documentación técnica limita seriamente su uso en producción sin una evaluación previa por parte del desarrollador.
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: el modelo tiene 278M de parámetros. En precisión fp32, el peso ocupa aproximadamente 1,1 GB (278M × 4 bytes), por lo que se necesitan al menos 2 GB de VRAM para inferencia con batch pequeño. En fp16, el peso se reduce a ~556 MB, requiriendo alrededor de 1 GB de VRAM.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050, o superiores) puede ejecutar el modelo sin problemas. También es viable en CPU para inferencia en lote, aunque con mayor latencia.
 - Compatibilidad con consumer GPU: sí, cabe en la mayoría de GPUs de consumo actuales.
-- Opciones de despliegue: al ser un modelo de transformers estándar, puede servirse con HuggingFace TGI, vLLM (si se convierte a formato compatible), o mediante la librería `transformers` en un script Python. También es posible exportarlo a ONNX para optimización.
+- Opciones de despliegue: al ser un modelo de transformers estándar, puede servirse con Hugging Face TGI, vLLM (si se convierte a formato compatible), o mediante la librería `transformers` en un script Python. También es posible exportarlo a ONNX para optimización.
 - Latencia y throughput: no se dispone de datos medidos. Como referencia, un modelo de este tamaño en una GPU moderna (RTX 3090) puede procesar cientos de secuencias por segundo, pero depende de la longitud de los textos y del batch.
 
 ## Comparativa con modelos similares
@@ -66,5 +66,5 @@ No se dispone de información suficiente para realizar una comparativa objetiva.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/akshataudaganve/xlmr-sentiment-disaster
+- Hugging Face: https://huggingface.co/akshataudaganve/xlmr-sentiment-disaster
 - Paper de XLM-R (referencia de arquitectura): https://arxiv.org/abs/1910.09700

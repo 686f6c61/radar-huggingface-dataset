@@ -88,6 +88,6 @@ No se dispone de información comparativa con otros modelos de edición de imág
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gguf-org/mageflow-gguf
+- Repositorio Hugging Face: https://huggingface.co/gguf-org/mageflow-gguf
 - Pipeline de edición con MageFlow Edit GGUF (GitHub): https://github.com/47thtechcorner/RayCodes_MageFlow_Edit_GGUF
 - Repositorio IBM/gguf (referencia general sobre formato GGUF): https://github.com/IBM/gguf

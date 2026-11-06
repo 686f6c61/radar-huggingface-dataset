@@ -70,7 +70,7 @@ No se dispone de información comparativa con otros draft models (como EAGLE-2, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-2-step-50000
+- Repositorio Hugging Face: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-2-step-50000
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio oficial EAGLE-Qwen3: https://github.com/Yunhai-Hu/EAGLE-Qwen3
 - Colección de checkpoints (referencia): https://huggingface.co/collections/huluhuluu (no verificado, se infiere de la model card)

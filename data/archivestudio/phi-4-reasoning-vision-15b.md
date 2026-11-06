@@ -111,7 +111,7 @@ Phi-4-Reasoning-Vision-15B es un modelo multimodal de razonamiento de pesos abie
 
 El modelo esta disenado como un unico sistema que puede invocar razonamiento extendido en cadena de pensamiento (bloques `<think>...</think>`) para tareas matematicas y cientificas, o bien recurrir a inferencia directa (etiquetada como `<nothink>`) para tareas de percepcion como captioning, deteccion de objetos y grounding. Segun la model card, se entreno mediante Supervised Fine-Tuning sobre una mezcla curada de datos de razonamiento y no razonamiento, con un coste de computo moderado (240 GPU NVIDIA B200 durante 4 dias).
 
-Es relevante porque ofrece capacidades de razonamiento multimodal selectivo, OCR y computer-use en un tamano compacto (15B) con licencia MIT, lo que facilita su despliegue en entornos con restricciones de memoria o computo. La ficha de HuggingFace figura bajo el autor ArchiveStudio, aunque la model card atribuye el desarrollo a Microsoft Corporation y declara como base `microsoft/Phi-4-reasoning`.
+Es relevante porque ofrece capacidades de razonamiento multimodal selectivo, OCR y computer-use en un tamano compacto (15B) con licencia MIT, lo que facilita su despliegue en entornos con restricciones de memoria o computo. La ficha de Hugging Face figura bajo el autor ArchiveStudio, aunque la model card atribuye el desarrollo a Microsoft Corporation y declara como base `microsoft/Phi-4-reasoning`.
 
 ## Especificaciones tecnicas
 
@@ -197,7 +197,7 @@ Comparacion de rendimiento frente a estos modelos: no disponible.
 ## Limitaciones y advertencias
 
 - Los resultados de benchmarks estan declarados como no verificados (`verified: false`) por el propio autor; conviene tratarlos con cautela hasta disponer de evaluaciones independientes.
-- Discrepancia en la autoria: la ficha de HuggingFace aparece bajo el autor ArchiveStudio, mientras que la model card atribuye el desarrollo a Microsoft Corporation. Verificar la procedencia antes de un uso en produccion.
+- Discrepancia en la autoria: la ficha de Hugging Face aparece bajo el autor ArchiveStudio, mientras que la model card atribuye el desarrollo a Microsoft Corporation. Verificar la procedencia antes de un uso en produccion.
 - Idioma: el campo `language` solo declara ingles; el rendimiento en castellano u otros idiomas no esta documentado.
 - Contexto limitado a 16.384 tokens, inferior al de algunos modelos multimodales contemporaneos.
 - Riesgo de alucinacion inherente a los modelos generativos, especialmente en OCR, grounding y lectura de graficos; debe validarse la salida en tareas criticas.
@@ -209,7 +209,7 @@ Comparacion de rendimiento frente a estos modelos: no disponible.
 
 ## Enlaces
 
-- Ficha de HuggingFace: https://huggingface.co/ArchiveStudio/Phi-4-reasoning-vision-15B
+- Ficha de Hugging Face: https://huggingface.co/ArchiveStudio/Phi-4-reasoning-vision-15B
 - Modelo base: https://huggingface.co/microsoft/Phi-4-reasoning
 - Blog oficial de Microsoft Research: https://www.microsoft.com/en-us/research/blog/phi-4-reasoning-vision-and-the-lessons-of-training-a-multimodal-reasoning-model/
 - Informe tecnico (paper 2511.19663): https://aka.ms/Phi-4-reasoning-vision-15B-TR

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-VL-4B-Instruct-heretic es una variante "decensored" del modelo multimodal Qwen/Qwen3-VL-4B-Instruct, publicada por el usuario saidutta69 en HuggingFace. El modelo base pertenece a la rama vision-lenguaje de la familia Qwen3-VL, que acepta entrada de imagen, video y OCR con anclaje espacial (spatial grounding). La modificacion no consiste en un reentrenamiento, sino en una ablacion direccional ("abliteration") aplicada con la herramienta Heretic v1.4.0, que edita direcciones concretas de pesos para suprimir el comportamiento de rechazo.
+Qwen3-VL-4B-Instruct-heretic es una variante "decensored" del modelo multimodal Qwen/Qwen3-VL-4B-Instruct, publicada por el usuario saidutta69 en Hugging Face. El modelo base pertenece a la rama vision-lenguaje de la familia Qwen3-VL, que acepta entrada de imagen, video y OCR con anclaje espacial (spatial grounding). La modificacion no consiste en un reentrenamiento, sino en una ablacion direccional ("abliteration") aplicada con la herramienta Heretic v1.4.0, que edita direcciones concretas de pesos para suprimir el comportamiento de rechazo.
 
 La edicion se realiza sobre las proyecciones de salida de atencion (`attn.o_proj`) y las proyecciones descendentes del MLP (`mlp.down_proj`), sin tocar el resto de la red. Segun el autor, las negativas (refusals) caen de 97/100 a 8/100 en un conjunto de evaluacion de contenido nocivo, mientras que la torre de vision y el anclaje espacial se mantienen cercanos al original (divergencia KL de 0.0396).
 
@@ -93,7 +93,7 @@ No se dispone de datos de contexto ni de rendimiento de las variantes 2B y 8B en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saidutta69/Qwen3-VL-4B-Instruct-heretic
+- Modelo en Hugging Face: https://huggingface.co/saidutta69/Qwen3-VL-4B-Instruct-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Repositorio de Heretic: https://github.com/p-e-w/heretic
 - Articulo sobre abliteration: https://huggingface.co/blog/mlabonne/abliteration

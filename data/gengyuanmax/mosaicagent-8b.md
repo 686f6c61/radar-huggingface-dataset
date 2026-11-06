@@ -84,8 +84,8 @@ La model card sí describe comprobaciones funcionales limitadas, que no deben in
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MosaicAgent-8B | 8.767.123.696 | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| Qwen3-VL-8B-Instruct | 8B (nominal) | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| MosaicAgent-8B | 8.767.123.696 | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| Qwen3-VL-8B-Instruct | 8B (nominal) | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 No se han identificado en la información proporcionada otras alternativas de 7-9B con espacio de trabajo de imagen y datos verificables. La comparación principal disponible es contra el modelo base, que no incluye el entrenamiento específico para el workspace Mosaic.
 
@@ -103,7 +103,7 @@ No se han identificado en la información proporcionada otras alternativas de 7-
 
 ## Enlaces
 
-- [HuggingFace: gengyuanmax/MosaicAgent-8B](https://huggingface.co/gengyuanmax/MosaicAgent-8B)
+- [Hugging Face: gengyuanmax/MosaicAgent-8B](https://huggingface.co/gengyuanmax/MosaicAgent-8B)
 - [Código Mosaic en GitHub](https://github.com/gengyuanmax/Mosaic)
 - [Dataset MosaicBench](https://huggingface.co/datasets/gengyuanmax/MosaicBench)
 - [Paper en arXiv](https://arxiv.org/abs/2609.39363)

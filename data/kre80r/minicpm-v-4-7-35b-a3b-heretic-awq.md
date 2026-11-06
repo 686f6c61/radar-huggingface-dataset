@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Kre80r/MiniCPM-V-4.7-35B-A3B-heretic-AWQ | 7,28B en safetensors (base 35B-A3B MoE) | 262.144 | Apache-2.0 | HuggingFace, AWQ | Derivado abliterado, sin benchmarks estandar |
-| openbmb/MiniCPM-V-4.7-35B-A3B | 35B totales / 3B activos | no disponible en esta ficha | Apache-2.0 | HuggingFace | Modelo base oficial, alineado, con rechazos |
-| Derivados abliterados de la familia MiniCPM-V | variable | variable | Apache-2.0 | HuggingFace | Alternativas comunitarias con distinto grado de modificacion |
+| Kre80r/MiniCPM-V-4.7-35B-A3B-heretic-AWQ | 7,28B en safetensors (base 35B-A3B MoE) | 262.144 | Apache-2.0 | Hugging Face, AWQ | Derivado abliterado, sin benchmarks estandar |
+| openbmb/MiniCPM-V-4.7-35B-A3B | 35B totales / 3B activos | no disponible en esta ficha | Apache-2.0 | Hugging Face | Modelo base oficial, alineado, con rechazos |
+| Derivados abliterados de la familia MiniCPM-V | variable | variable | Apache-2.0 | Hugging Face | Alternativas comunitarias con distinto grado de modificacion |
 
 No se dispone de datos de benchmarks comparativos con modelos de la misma categoria en la informacion proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparativos con modelos de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kre80r/MiniCPM-V-4.7-35B-A3B-heretic-AWQ
+- Hugging Face: https://huggingface.co/Kre80r/MiniCPM-V-4.7-35B-A3B-heretic-AWQ
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - Heretic (abliteration): https://github.com/p-e-w/heretic
 - Commit de Heretic usado: https://github.com/p-e-w/heretic/commit/d34dd9192da06d203eb7e80d20229117bb4e981c

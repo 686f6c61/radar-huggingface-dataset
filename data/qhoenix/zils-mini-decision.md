@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zils-mini-decision es un modelo de decisión (decision model) desarrollado por el usuario qhoenix para el pool mini de la subnet 127 de Zils. Se construye a partir de la familia Qwen/Qwen3.5-4B, sobre la que se aplica un ajuste fino con LoRA y una posterior fusión de pesos. El modelo está publicado en HuggingFace con licencia Apache-2.0 y un total de 4.539.265.536 parámetros según los pesos en safetensors.
+zils-mini-decision es un modelo de decisión (decision model) desarrollado por el usuario qhoenix para el pool mini de la subnet 127 de Zils. Se construye a partir de la familia Qwen/Qwen3.5-4B, sobre la que se aplica un ajuste fino con LoRA y una posterior fusión de pesos. El modelo está publicado en Hugging Face con licencia Apache-2.0 y un total de 4.539.265.536 parámetros según los pesos en safetensors.
 
 El proceso de construcción parte de una media uniforme de pesos de dos modelos Apache-2.0: torchcast-ai/torchcast-decision-4b y vllm-sr/d3-mini. Sobre esa media se entrena un adaptador LoRA con datos públicos de estilo decisión (splits de entrenamiento de datasets públicos de clasificación, NLI y QA, además de eventos públicos resueltos). El resultado final se promedia al 50/50 con la media base original, lo que da lugar a un modelo orientado a tareas de decisión y extracción de características.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qhoenix/zils-mini-decision | 4.539.265.536 | no disponible | Apache-2.0 | HuggingFace, 0 descargas | Especializado en decisión, pool mini de Zils |
-| Qwen/Qwen3.5-4B | ~4B (familia) | no disponible | no disponible | HuggingFace | Modelo base del que deriva |
-| torchcast-ai/torchcast-decision-4b | no disponible | no disponible | Apache-2.0 | HuggingFace | Componente de la media de pesos |
-| vllm-sr/d3-mini | no disponible | no disponible | Apache-2.0 | HuggingFace | Componente de la media de pesos |
+| qhoenix/zils-mini-decision | 4.539.265.536 | no disponible | Apache-2.0 | Hugging Face, 0 descargas | Especializado en decisión, pool mini de Zils |
+| Qwen/Qwen3.5-4B | ~4B (familia) | no disponible | no disponible | Hugging Face | Modelo base del que deriva |
+| torchcast-ai/torchcast-decision-4b | no disponible | no disponible | Apache-2.0 | Hugging Face | Componente de la media de pesos |
+| vllm-sr/d3-mini | no disponible | no disponible | Apache-2.0 | Hugging Face | Componente de la media de pesos |
 
 ## Limitaciones y advertencias
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qhoenix/zils-mini-decision
+- Hugging Face: https://huggingface.co/qhoenix/zils-mini-decision
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Componente upstream: https://huggingface.co/torchcast-ai/torchcast-decision-4b
 - Componente upstream: https://huggingface.co/vllm-sr/d3-mini

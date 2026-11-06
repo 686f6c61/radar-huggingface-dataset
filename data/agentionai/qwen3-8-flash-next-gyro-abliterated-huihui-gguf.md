@@ -23,7 +23,7 @@ La relevancia práctica es doble. Por un lado, demuestra que un modelo de ~177 B
 | Tamaño del repositorio | 307,2 GB |
 | Modelo base | huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated (relación: quantized) |
 | Fecha de creación / actualización | 2026-10-01 / 2026-10-19 |
-| Descargas / likes en HuggingFace | 28.491 / 16 |
+| Descargas / likes en Hugging Face | 28.491 / 16 |
 
 ## Arquitectura y entrenamiento
 
@@ -113,7 +113,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto de otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-abliterated-Huihui-GGUF
+- Repositorio Hugging Face: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-abliterated-Huihui-GGUF
 - Modelo base abliterado (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated
 - Ficha de los ficheros Gyro originales (instrucciones de NVIDIA, visión, decodificación especulativa y memoria por contexto): https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-GGUF
 - Motor Strata: https://github.com/Niko1221/Strata

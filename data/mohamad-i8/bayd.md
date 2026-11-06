@@ -68,7 +68,7 @@ No se dispone de datos verificables en la informacion proporcionada para constru
 
 | Alternativa | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Mohamad-I8/bayd` (ReadSpeaker Voices Archive) | Paquete de 114 voces TTS | no disponible | no aplica | no disponible | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| `Mohamad-I8/bayd` (ReadSpeaker Voices Archive) | Paquete de 114 voces TTS | no disponible | no aplica | no disponible | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | Piper (voces TTS) | Sistema TTS | no disponible | no aplica | no disponible en esta ficha | no disponible en esta ficha |
 | eSpeak NG | Sintetizador formant | no disponible | no aplica | no disponible en esta ficha | no disponible en esta ficha |
 | Voces OneCore o SAPI de Windows | Voces del sistema | no disponible | no aplica | no disponible en esta ficha | integradas en Windows |
@@ -85,6 +85,6 @@ No se dispone de datos verificables en la informacion proporcionada para constru
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mohamad-I8/bayd
+- Repositorio en Hugging Face: https://huggingface.co/Mohamad-I8/bayd
 - Descarga directa del paquete de voces: https://huggingface.co/Mohamad-I8/bayd/resolve/main/ReadSpeaker_All_Voices.zip
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios auxiliares ni demos adicionales.

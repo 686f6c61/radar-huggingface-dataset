@@ -83,6 +83,6 @@ No disponible. No se han encontrado en la información proporcionada políticas 
 - No se especifican parámetros totales, cuantizaciones ni requisitos de hardware, lo que limita la planificación de despliegue.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/duckyduck369/microduck-hd1910-velstand-djbob
+- Hugging Face: https://huggingface.co/duckyduck369/microduck-hd1910-velstand-djbob
 - Vídeo de replay: https://huggingface.co/duckyduck369/microduck-hd1910-velstand-djbob/resolve/main/replay.mp4
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código o demos adicionales.

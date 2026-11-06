@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h037.maxrl-swebench-lite-test39.step_1
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h037.maxrl-swebench-lite-test39.step_1
 - SWE-bench (página principal): https://www.swebench.com/
 - SWE-bench Lite: https://www.swebench.com/lite.html
 - Modelo base Qwen/Qwen3.5-9B-Base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (referencia, no verificado en la búsqueda)

@@ -71,9 +71,9 @@ La model card menciona la existencia de una seccion de rendimiento ("performance
 | Modelo | Parametros | Contexto / entrada | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | qualcomm/Wav2Vec2-Conformer-Large-960h | ~600 M (estimado) | Audio crudo a 16 kHz | Ingles | apache-2.0 | Artefactos QNN ONNX optimizados para Qualcomm |
-| facebook/wav2vec2-conformer-rel-pos-large-960h-ft | ~600 M (estimado) | Audio crudo a 16 kHz | Ingles | apache-2.0 | Pesos PyTorch en HuggingFace (modelo base) |
-| facebook/wav2vec2-large-960h | ~317 M | Audio crudo a 16 kHz | Ingles | apache-2.0 | Pesos PyTorch en HuggingFace; encoder transformer sin modulos convolucionales |
-| openai/whisper-large-v3 | no disponible en la informacion proporcionada | Ventana de audio de 30 s | Multilingue | licencia propia de OpenAI | Pesos PyTorch en HuggingFace; arquitectura encoder-decoder |
+| facebook/wav2vec2-conformer-rel-pos-large-960h-ft | ~600 M (estimado) | Audio crudo a 16 kHz | Ingles | apache-2.0 | Pesos PyTorch en Hugging Face (modelo base) |
+| facebook/wav2vec2-large-960h | ~317 M | Audio crudo a 16 kHz | Ingles | apache-2.0 | Pesos PyTorch en Hugging Face; encoder transformer sin modulos convolucionales |
+| openai/whisper-large-v3 | no disponible en la informacion proporcionada | Ventana de audio de 30 s | Multilingue | licencia propia de OpenAI | Pesos PyTorch en Hugging Face; arquitectura encoder-decoder |
 
 El modelo de Qualcomm se diferencia de los pesos originales de Meta y de alternativas como Whisper en su enfoque de despliegue: no busca ser un ASR generalista multilingue, sino un artefacto compilado y cuantizado para NPU Qualcomm. Frente a Whisper, carece de capacidades multilingues y de formato de salida con puntuacion, pero ofrece un coste computacional menor y una integracion directa con el ecosistema QNN.
 
@@ -91,7 +91,7 @@ El modelo de Qualcomm se diferencia de los pesos originales de Meta y de alterna
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qualcomm/Wav2Vec2-Conformer-Large-960h
+- Repositorio Hugging Face: https://huggingface.co/qualcomm/Wav2Vec2-Conformer-Large-960h
 - Modelo base de Meta: https://huggingface.co/facebook/wav2vec2-conformer-rel-pos-large-960h-ft
 - Libreria Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models/blob/v0.64.0/src/qai_hub_models/models/wav2vec2_conformer
 - Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com

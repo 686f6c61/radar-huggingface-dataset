@@ -64,7 +64,7 @@ El entrenamiento se estructura en tres fases secuenciales. La fase 1 (aprendizaj
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card de HuggingFace no incluye tablas de MMLU, HumanEval, GSM8K ni de ningun otro conjunto de evaluacion, y los resultados de la busqueda web proporcionada no contienen datos tecnicos sobre el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card de Hugging Face no incluye tablas de MMLU, HumanEval, GSM8K ni de ningun otro conjunto de evaluacion, y los resultados de la busqueda web proporcionada no contienen datos tecnicos sobre el modelo.
 
 ## Requisitos de hardware
 
@@ -85,7 +85,7 @@ La comparativa se limita a especificaciones publicas de modelos de escala equiva
 | Nova (HmedNejjar) | ~100M | 2.048 | MIT | safetensors, codigo PyTorch propio | no disponible |
 | GPT-2 small (OpenAI) | 124M | 1.024 | MIT modificada | safetensors, multiples runtimes | si (ampliamente replicados) |
 | Pythia-160M (EleutherAI) | 160M | 2.048 | Apache 2.0 | safetensors, transformers | si |
-| SmolLM-135M (HuggingFace) | 135M | 2.048 | Apache 2.0 | safetensors, transformers | si |
+| SmolLM-135M (Hugging Face) | 135M | 2.048 | Apache 2.0 | safetensors, transformers | si |
 
 Diferencias relevantes: Nova es el unico de los cuatro entrenado integramente desde cero por un autor individual y con un tokenizador BPE propio, y es el unico sin resultados de evaluacion publicados. Frente a Pythia-160M y SmolLM-135M, carece de integracion confirmada con el ecosistema transformers y de cuantizaciones listas para usar, lo que reduce su utilidad en produccion. Su ventaja comparativa es la licencia MIT y su valor documental sobre el proceso de entrenamiento por fases.
 
@@ -105,6 +105,6 @@ Diferencias relevantes: Nova es el unico de los cuatro entrenado integramente de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HmedNejjar/Nova
+- Modelo en Hugging Face: https://huggingface.co/HmedNejjar/Nova
 - Paper, blog, repositorio o demo adicionales: no disponible. Los resultados de la busqueda web proporcionada no contienen enlaces relevantes al modelo (unicamente paginas de ayuda de Google Translate).
 - Datasets citados en la model card: SimpleStories y smoltalk/everyday-conversation (referenciados por nombre en el README, sin enlace directo en la informacion disponible).

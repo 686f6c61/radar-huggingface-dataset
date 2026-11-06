@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chimera 5.3 (identificador `marafx2025/ch1mera` en HuggingFace) es una implementación de referencia en PyTorch puro de una arquitectura de lenguaje denominada Chimera 5.x, publicada por el usuario marafx2025. El repositorio no contiene pesos entrenados, sino el código de entrenamiento e inferencia de un modelo con 15 componentes arquitectónicos declarados, entre ellos capas recurrentes híbridas (GatedDeltaNet, mLSTM, TitansMAC), un mezclador de expertos (MoE) y cuantización ternaria de 1,58 bits con kernels en C++. El foco declarado del autor es el entrenamiento en CPU sin GPU, con un objetivo de rendimiento de 10.000 o más tokens por segundo mediante la combinación de siete paradigmas de optimización.
+Chimera 5.3 (identificador `marafx2025/ch1mera` en Hugging Face) es una implementación de referencia en PyTorch puro de una arquitectura de lenguaje denominada Chimera 5.x, publicada por el usuario marafx2025. El repositorio no contiene pesos entrenados, sino el código de entrenamiento e inferencia de un modelo con 15 componentes arquitectónicos declarados, entre ellos capas recurrentes híbridas (GatedDeltaNet, mLSTM, TitansMAC), un mezclador de expertos (MoE) y cuantización ternaria de 1,58 bits con kernels en C++. El foco declarado del autor es el entrenamiento en CPU sin GPU, con un objetivo de rendimiento de 10.000 o más tokens por segundo mediante la combinación de siete paradigmas de optimización.
 
 La versión 5.3 introduce el motor `hyper.py`, que apila siete técnicas de aceleración (currículo GrowLength, congelación de reservorio, MeZO disperso, pipeline por bloques, caché ternaria fusionada, empaquetado agresivo de tokens y desbloqueo progresivo de capas) con un multiplicador teórico combinado de entre 57 y 260 veces sobre una línea base de 50 a 200 tok/s. El tokenizador es `splintr-rs` en Rust con vocabulario `o200k_base` (200.073 tokens, el mismo de OpenAI o1/o3).
 
@@ -76,7 +76,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/marafx2025/ch1mera
+- Hugging Face: https://huggingface.co/marafx2025/ch1mera
 - Paper GrowLength Curriculum: https://arxiv.org/abs/2310.00576
 - Paper Reservoir Freezing (GRC): https://arxiv.org/abs/2512.23145
 - Paper Sparse MeZO: https://arxiv.org/abs/2406.02913

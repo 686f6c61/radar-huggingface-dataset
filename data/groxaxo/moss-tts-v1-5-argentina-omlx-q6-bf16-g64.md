@@ -4,7 +4,7 @@
 
 MOSS-TTS-v1.5-Argentina-oMLX-q6-BF16-G64 es una variante del modelo de sintesis de voz MOSS-TTS-v1.5 (desarrollado por OpenMOSS-Team) adaptada y cuantizada por el usuario groxaxo. El modelo se distribuye en formato MLX, la libreria de computacion tensorial de Apple para silicio propio, y esta pensado para ejecutarse en equipos con chips Apple Silicon (series M). Incluye una adaptacion mediante LoRA orientada a la variante argentina del espanol (rioplatense), ademas de cuantizacion de 6 bits con componentes en BF16.
 
-La ficha de HuggingFace del modelo indica la libreria mlx-audio, el pipeline text-to-speech y la etiqueta moss_tts_delay, que apunta al esquema de generacion de tokens de audio del modelo base. La nomenclatura del repositorio (q6, BF16, G64) sugiere cuantizacion de 6 bits con tamano de grupo 64 y mezcla de precision en BF16, aunque no se aportan detalles adicionales sobre el proceso exacto de cuantizacion.
+La ficha de Hugging Face del modelo indica la libreria mlx-audio, el pipeline text-to-speech y la etiqueta moss_tts_delay, que apunta al esquema de generacion de tokens de audio del modelo base. La nomenclatura del repositorio (q6, BF16, G64) sugiere cuantizacion de 6 bits con tamano de grupo 64 y mezcla de precision en BF16, aunque no se aportan detalles adicionales sobre el proceso exacto de cuantizacion.
 
 El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y su relevancia practica reside en ofrecer una via de despliegue local de sintesis de voz en espanol argentino sobre hardware Apple, sin depender de GPUs dedicadas. No se dispone de informacion publica sobre el numero de parametros, la longitud de contexto ni resultados de evaluacion en la informacion proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/groxaxo/MOSS-TTS-v1.5-Argentina-oMLX-q6-BF16-G64
+- Modelo en Hugging Face: https://huggingface.co/groxaxo/MOSS-TTS-v1.5-Argentina-oMLX-q6-BF16-G64
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5
 - Libreria mlx-audio: no disponible en la informacion proporcionada
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada

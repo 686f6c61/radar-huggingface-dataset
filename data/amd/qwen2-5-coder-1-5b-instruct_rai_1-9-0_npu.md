@@ -4,7 +4,7 @@
 
 El modelo `amd/Qwen2.5-Coder-1.5B-Instruct_rai_1.9.0_npu` es una distribucion optimizada del modelo Qwen2.5-Coder-1.5B-Instruct de Alibaba, publicada por AMD para su ejecucion en las NPU (unidades de procesamiento neuronal) de los procesadores Ryzen AI. Se trata de un transformer decoder-only de 1.500 millones de parametros, especializado en generacion de codigo y conversacion, convertido al formato ONNX y cuantizado con la herramienta Quark de AMD para aprovechar el motor de inferencia Ryzen AI (RAI) version 1.9.0.
 
-El modelo original Qwen2.5-Coder-1.5B-Instruct es la version pequena de la familia Qwen2.5-Coder, entrenada sobre un corpus masivo de codigo y texto, con capacidad de instrucciones y tool calling. Esta variante de AMD mantiene la licencia Apache 2.0 del modelo base, pero su acceso esta restringido en HuggingFace (requiere aceptar condiciones), y el repositorio ocupa 2,4 GB, lo que refleja los pesos en formato ONNX junto con los artefactos de cuantizacion.
+El modelo original Qwen2.5-Coder-1.5B-Instruct es la version pequena de la familia Qwen2.5-Coder, entrenada sobre un corpus masivo de codigo y texto, con capacidad de instrucciones y tool calling. Esta variante de AMD mantiene la licencia Apache 2.0 del modelo base, pero su acceso esta restringido en Hugging Face (requiere aceptar condiciones), y el repositorio ocupa 2,4 GB, lo que refleja los pesos en formato ONNX junto con los artefactos de cuantizacion.
 
 La relevancia de esta ficha radica en que permite ejecutar un modelo de codigo de 1,5B parametros en la NPU integrada de los portatiles y mini-PC con Ryzen AI, sin depender de una GPU discreta, lo que abre la puerta a asistentes de codigo locales con bajo consumo energetico. No obstante, la informacion publica disponible es muy limitada: no se detallan los datos de entrenamiento, los benchmarks ni las especificaciones exactas de cuantizacion mas alla de las etiquetas del repositorio.
 
@@ -71,7 +71,7 @@ La comparativa se limita a modelos de la misma familia o categoria, ya que no se
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated en HuggingFace y requiere aceptar condiciones antes de la descarga, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido: el repositorio es gated en Hugging Face y requiere aceptar condiciones antes de la descarga, lo que puede limitar su uso en entornos automatizados.
 - Idiomas: la etiqueta del repositorio indica solo ingles, por lo que el rendimiento en castellano u otros idiomas no esta garantizado.
 - Contexto: no se confirma la longitud de contexto efectiva en la variante ONNX; el modelo base soporta 32.768 tokens, pero la cuantizacion y el motor NPU podrian reducirla.
 - Riesgo de alucinacion: como todo modelo de lenguaje, puede generar codigo incorrecto o APIs inexistentes, especialmente en tareas complejas o con prompts ambiguos.
@@ -82,7 +82,7 @@ La comparativa se limita a modelos de la misma familia o categoria, ya que no se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Qwen2.5-Coder-1.5B-Instruct_rai_1.9.0_npu
+- Hugging Face: https://huggingface.co/amd/Qwen2.5-Coder-1.5B-Instruct_rai_1.9.0_npu
 - Modelo base Qwen2.5-Coder-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Documentacion de Ryzen AI: no disponible en la informacion proporcionada
 - Herramienta Quark de AMD: no disponible en la informacion proporcionada

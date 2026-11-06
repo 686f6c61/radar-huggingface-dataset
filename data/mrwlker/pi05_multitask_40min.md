@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi05_multitask_40min es un ajuste fino corto, de 1.800 pasos de optimización, del modelo de visión-lenguaje-acción π0.5, publicado por el usuario Mrwlker en HuggingFace bajo licencia Apache 2.0. Está entrenado con la librería LeRobot para el robot humanoide Unitree G1 equipado con manos Dex3-1, y cubre cinco tareas de manipulación: colocar la taza blanca sobre el portafiltros, colocación de objetos, verter agua, preparar tostadas y empaquetado de cámaras.
+pi05_multitask_40min es un ajuste fino corto, de 1.800 pasos de optimización, del modelo de visión-lenguaje-acción π0.5, publicado por el usuario Mrwlker en Hugging Face bajo licencia Apache 2.0. Está entrenado con la librería LeRobot para el robot humanoide Unitree G1 equipado con manos Dex3-1, y cubre cinco tareas de manipulación: colocar la taza blanca sobre el portafiltros, colocación de objetos, verter agua, preparar tostadas y empaquetado de cámaras.
 
 No es un modelo final, sino un experimento controlado de mezcla de datos. El autor parte de su propio checkpoint anterior (pi05_cotreino_completo, 60.000 pasos) y reequilibra la proporción de cuadros por tarea para corregir un sesgo detectado: una tarea externa (toasted bread) acaparaba el 35,2 % de los cuadros, el doble que la tarea propia, y el robot acababa barriendo la mesa con la mano abierta y empujando objetos sin cerrar los dedos.
 
@@ -12,7 +12,7 @@ El checkpoint tiene 4.143.404.845 parámetros (unos 4,14 mil millones) y un repo
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | VLA (visión-lenguaje-acción) de la familia π0.5, etiquetado como pi0 y LeRobot en HuggingFace; la model card no detalla la arquitectura interna |
+| Arquitectura | VLA (visión-lenguaje-acción) de la familia π0.5, etiquetado como pi0 y LeRobot en Hugging Face; la model card no detalla la arquitectura interna |
 | Parámetros totales | 4.143.404.845 (~4,14 B), dato real de safetensors |
 | Parámetros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible; no es un modelo de lenguaje y la model card no documenta ventana de contexto. La política consume observaciones multimodales y emite acciones en chunks de 50 |
@@ -101,10 +101,10 @@ Los datos de los modelos alternativos proceden de su documentación pública y n
 
 | Modelo | Parámetros | Categoría | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pi05_multitask_40min (este) | ~4,14 B | VLA para Unitree G1 + Dex3 | Apache 2.0 | Pesos en HuggingFace (LeRobot) |
+| pi05_multitask_40min (este) | ~4,14 B | VLA para Unitree G1 + Dex3 | Apache 2.0 | Pesos en Hugging Face (LeRobot) |
 | π0 (Physical Intelligence) | ~3,3 B (documentación pública) | VLA generalista | Apache 2.0 (repositorio openpi) | Pesos abiertos |
 | π0.5 (Physical Intelligence) | no disponible | VLA generalista, base de este ajuste | no disponible | no disponible |
-| OpenVLA-7B | ~7 B | VLA para brazos manipuladores | MIT (según model card pública) | Pesos abiertos en HuggingFace |
+| OpenVLA-7B | ~7 B | VLA para brazos manipuladores | MIT (según model card pública) | Pesos abiertos en Hugging Face |
 | GR00T N1 (NVIDIA) | ~2,2 B (documentación pública) | VLA para humanoides | Licencia propia de NVIDIA | Pesos abiertos |
 
 Diferencias relevantes: este checkpoint está especializado en un robot concreto (G1) y un conjunto cerrado de cinco tareas, mientras que π0, π0.5 y OpenVLA apuntan a generalización entre plataformas. Frente a ellos, su ventaja es la trazabilidad del experimento de mezcla de datos; su desventaja, que no hay ninguna evaluación de éxito en ejecución publicada. La comparación de rendimiento con cualquiera de estas alternativas no está disponible.
@@ -125,7 +125,7 @@ Diferencias relevantes: este checkpoint está especializado en un robot concreto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mrwlker/pi05_multitask_40min
+- Modelo en Hugging Face: https://huggingface.co/Mrwlker/pi05_multitask_40min
 - Repositorio openpi de Physical Intelligence (familia π0/π0.5): no disponible en la información proporcionada
 - Paper de π0/π0.5: no disponible en la información proporcionada
 - Repositorio de LeRobot: no disponible en la información proporcionada

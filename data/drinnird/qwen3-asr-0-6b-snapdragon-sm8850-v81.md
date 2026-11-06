@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Para 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/drinnird/qwen3-asr-0.6b-snapdragon-sm8850-v81
+- Repositorio en Hugging Face: https://huggingface.co/drinnird/qwen3-asr-0.6b-snapdragon-sm8850-v81
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Exportador ONNX referenciado (andrewleech/qwen3-asr-onnx): https://github.com/andrewleech/qwen3-asr-onnx
 - Repositorio oficial de la familia Qwen3-ASR: https://github.com/QwenLM/Qwen3-ASR

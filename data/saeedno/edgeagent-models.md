@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Saeedno/edgeagent-models es un modelo publicado en HuggingFace por el usuario Saeedno, registrado con licencia Gemma y etiquetado para la region de Estados Unidos. La model card asociada no contiene informacion tecnica mas alla de la declaracion de licencia, por lo que no se dispone de datos sobre arquitectura, parametros, entrenamiento ni capacidades del modelo.
+Saeedno/edgeagent-models es un modelo publicado en Hugging Face por el usuario Saeedno, registrado con licencia Gemma y etiquetado para la region de Estados Unidos. La model card asociada no contiene informacion tecnica mas alla de la declaracion de licencia, por lo que no se dispone de datos sobre arquitectura, parametros, entrenamiento ni capacidades del modelo.
 
 El repositorio no presenta descargas ni valoraciones, lo que sugiere que se trata de una publicacion reciente o experimental sin adopcion documentada. Las busquedas web realizadas no han encontrado informacion adicional que permita identificar de forma inequivoca este modelo concreto, ya que los resultados obtenidos corresponden a proyectos homonimos no relacionados (agentes de IA para operaciones, asistentes de codigo en navegador y sistemas de seguridad local). En consecuencia, esta ficha se limita a reflejar los datos disponibles y marca como "no disponible" todo aquello que no se puede verificar.
 
@@ -33,7 +33,7 @@ Tampoco se dispone de informacion sobre el dataset de entrenamiento, el numero d
 
 ## Casos de uso
 
-No es posible recomendar casos de uso concretos sin informacion tecnica verificable sobre el modelo. Cualquier aplicacion practica seria especulativa. Se recomienda consultar directamente el repositorio en HuggingFace o contactar con el autor para obtener documentacion adicional antes de considerar su uso en entornos de desarrollo o produccion.
+No es posible recomendar casos de uso concretos sin informacion tecnica verificable sobre el modelo. Cualquier aplicacion practica seria especulativa. Se recomienda consultar directamente el repositorio en Hugging Face o contactar con el autor para obtener documentacion adicional antes de considerar su uso en entornos de desarrollo o produccion.
 
 ## Benchmarks y rendimiento
 
@@ -57,5 +57,5 @@ No disponible. Sin datos sobre arquitectura, parametros ni rendimiento, no es po
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Saeedno/edgeagent-models
+- Repositorio en Hugging Face: https://huggingface.co/Saeedno/edgeagent-models
 - Licencia Gemma: no se ha localizado el enlace directo en la informacion proporcionada; consultar los terminos oficiales de Google Gemma.

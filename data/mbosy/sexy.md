@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Mbosy/sexy es un repositorio de modelo alojado en HuggingFace por el usuario Mbosy. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos basicos del repositorio: identificador, autor, una etiqueta de region (region:us), cero descargas, un "like" y fechas de creacion y actualizacion identicas (27 de septiembre de 2026). No se ha publicado ni model card, ni ficha tecnica, ni documentacion de arquitectura, entrenamiento o uso previsto.
+Mbosy/sexy es un repositorio de modelo alojado en Hugging Face por el usuario Mbosy. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos basicos del repositorio: identificador, autor, una etiqueta de region (region:us), cero descargas, un "like" y fechas de creacion y actualizacion identicas (27 de septiembre de 2026). No se ha publicado ni model card, ni ficha tecnica, ni documentacion de arquitectura, entrenamiento o uso previsto.
 
-No hay datos sobre el tipo de modelo (lenguaje, vision, difusion, audio u otro), su tamano en parametros, su longitud de contexto, sus idiomas soportados ni su licencia. El repositorio no declara pipeline de inferencia, lo que en HuggingFace suele indicar que no se ha configurado la libreria o la tarea asociada, o bien que el contenido no sigue el formato estandar de un modelo desplegable.
+No hay datos sobre el tipo de modelo (lenguaje, vision, difusion, audio u otro), su tamano en parametros, su longitud de contexto, sus idiomas soportados ni su licencia. El repositorio no declara pipeline de inferencia, lo que en Hugging Face suele indicar que no se ha configurado la libreria o la tarea asociada, o bien que el contenido no sigue el formato estandar de un modelo desplegable.
 
 Dado que no existe informacion tecnica verificable, esta ficha se limita a documentar la ausencia de datos y a advertir de los riesgos de evaluar o desplegar un artefacto sin licencia, sin pesos documentados y sin resultados reproducibles. Cualquier uso en produccion requeriria primero una inspeccion manual de los archivos del repositorio y la verificacion de la licencia por parte del autor.
 
@@ -63,7 +63,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mbosy/sexy | no disponible | no disponible | no disponible | no disponible | repositorio HuggingFace sin model card |
+| Mbosy/sexy | no disponible | no disponible | no disponible | no disponible | repositorio Hugging Face sin model card |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -72,7 +72,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 - Licencia no declarada: sin licencia explicita no se concede permiso de uso, copia, modificacion ni distribucion; el uso comercial es juridicamente arriesgado.
 - Sesgos desconocidos: al no documentarse el dataset de entrenamiento, no se puede evaluar el sesgo demografico, linguistico o cultural.
 - Riesgo de alucinacion: no evaluable, ya que se desconoce la tarea y el rendimiento del modelo.
-- Riesgo de seguridad del repositorio: los repositorios de HuggingFace pueden incluir codigo ejecutable (por ejemplo, scripts de carga remota). Nunca se deben cargar pesos con ejecucion de codigo arbitrario (trust_remote_code) sin auditar previamente los archivos.
+- Riesgo de seguridad del repositorio: los repositorios de Hugging Face pueden incluir codigo ejecutable (por ejemplo, scripts de carga remota). Nunca se deben cargar pesos con ejecucion de codigo arbitrario (trust_remote_code) sin auditar previamente los archivos.
 - Idiomas: no se declara ningun idioma soportado, por lo que no se puede garantizar un comportamiento correcto en castellano ni en ninguna otra lengua.
 - Cero descargas: el repositorio no ha sido descargado por ningun usuario, lo que implica ausencia de validacion por parte de la comunidad.
 - Nombre y etiquetado: el identificador del repositorio y la unica etiqueta presente (region:us) no aportan informacion tecnica; el contenido podria ser un marcador de posicion, una prueba o un artefacto no relacionado con un modelo de IA funcional.
@@ -80,6 +80,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mbosy/sexy
+- Repositorio en Hugging Face: https://huggingface.co/Mbosy/sexy
 - No se han encontrado en la busqueda web enlaces relevantes al modelo Mbosy/sexy. Los resultados obtenidos corresponden a perfiles de Instagram sobre modelos de IA generativa de imagenes y a galerias de retratos generados por IA (instagram.com/models__ai, yourdreamai.com, girlery.ai, perchance.org, zoomerang.app), sin relacion tecnica con el repositorio objeto de esta ficha.
 - No se dispone de paper, blog oficial, repositorio de codigo ni demo asociados al modelo.

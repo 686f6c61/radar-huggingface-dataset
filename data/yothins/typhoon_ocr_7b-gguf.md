@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Typhoon_OCR_7B.gguf es un repositorio de pesos publicado en HuggingFace por el usuario yothinS, distribuido bajo licencia Apache-2.0 y en formato GGUF. La model card asociada no contiene mas contenido que la declaracion de licencia: no incluye descripcion del modelo, arquitectura, datos de entrenamiento, idiomas soportados ni resultados de evaluacion. El nombre del repositorio sugiere un modelo de 7.000 millones de parametros orientado a reconocimiento optico de caracteres (OCR), pero esta suposicion no esta confirmada por ninguna fuente verificable en la informacion disponible.
+Typhoon_OCR_7B.gguf es un repositorio de pesos publicado en Hugging Face por el usuario yothinS, distribuido bajo licencia Apache-2.0 y en formato GGUF. La model card asociada no contiene mas contenido que la declaracion de licencia: no incluye descripcion del modelo, arquitectura, datos de entrenamiento, idiomas soportados ni resultados de evaluacion. El nombre del repositorio sugiere un modelo de 7.000 millones de parametros orientado a reconocimiento optico de caracteres (OCR), pero esta suposicion no esta confirmada por ninguna fuente verificable en la informacion disponible.
 
 El repositorio presenta un nivel de adopcion nulo (0 descargas y 0 likes en el momento de la consulta) y sus metadatos indican una fecha de creacion y ultima actualizacion de 2026-09-21. No procede de una organizacion oficial reconocida, sino de una cuenta individual, y no se ha localizado documentacion tecnica, paper ni anuncio asociado.
 
@@ -91,7 +91,7 @@ No disponible. La informacion proporcionada no permite establecer una comparativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yothinS/Typhoon_OCR_7B.gguf
+- Repositorio en Hugging Face: https://huggingface.co/yothinS/Typhoon_OCR_7B.gguf
 - Repositorio llama.cpp (runtime de referencia para GGUF): https://github.com/ggml-org/llama.cpp
 - Ollama: https://ollama.com
 - No se han encontrado papers, blogs, repositorios auxiliares, demos ni anuncios relacionados con este modelo en la busqueda web realizada. Los resultados devueltos eran irrelevantes para el modelo.

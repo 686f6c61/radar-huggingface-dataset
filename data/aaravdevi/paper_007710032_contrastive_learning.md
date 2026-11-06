@@ -63,7 +63,7 @@ No disponible. No existe categoría de modelos comparable porque no es un modelo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/aaravdevi/paper_007710032_contrastive_learning
+- Repositorio de Hugging Face: https://huggingface.co/aaravdevi/paper_007710032_contrastive_learning
 - Documento relacionado (no del repositorio, sino contexto del tema): "Visualizing and Understanding Contrastive Learning" (arXiv:2206.09753)
 - "A comprehensive survey on contrastive learning" (ScienceDirect, DOI: 10.1016/j.neucom.2024.128645)
 - "Supervised Contrastive Learning" (arXiv:2004.11362)

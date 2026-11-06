@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PornWorks Bad Boys es un checkpoint de Stable Diffusion SDXL publicado en HuggingFace por el usuario Lamender43 bajo el paraguas de la marca PornWorks. Se trata de un modelo de generación de imágenes especializado en figuras masculinas de estética fotorrealista, orientado explícitamente a contenido NSFW para adultos. El repositorio, de 6,9 GB, contiene pesos en formato de checkpoint SDXL y una model card con prompts de ejemplo y ajustes de muestreo recomendados.
+PornWorks Bad Boys es un checkpoint de Stable Diffusion SDXL publicado en Hugging Face por el usuario Lamender43 bajo el paraguas de la marca PornWorks. Se trata de un modelo de generación de imágenes especializado en figuras masculinas de estética fotorrealista, orientado explícitamente a contenido NSFW para adultos. El repositorio, de 6,9 GB, contiene pesos en formato de checkpoint SDXL y una model card con prompts de ejemplo y ajustes de muestreo recomendados.
 
 El modelo no introduce una arquitectura nueva: se apoya en la arquitectura SDXL estándar (UNet latente con text encoders duales) y se distribuye como un fine-tune o merge orientado a un dominio concreto. Su relevancia es, por tanto, de nicho: compite en el ecosistema de checkpoints comunitarios para Civitai y flujos de trabajo de Stable Diffusion, no en el terreno de los modelos fundacionales de propósito general.
 
@@ -77,6 +77,6 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lamender43/PornWorks-Bad-Boys-Photo-Realistic-Gay-and-Male-NSFW-Aesthetics-SDXL-Checkpoint
+- Hugging Face: https://huggingface.co/Lamender43/PornWorks-Bad-Boys-Photo-Realistic-Gay-and-Male-NSFW-Aesthetics-SDXL-Checkpoint
 - Sitio del autor: https://PornWorks.com
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo (los resultados devueltos corresponden a foros no relacionados).

@@ -55,7 +55,7 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no se puede co
 - No se proporcionan datos sobre idiomas, formatos de pesos ni especificaciones técnicas, ya que no es un modelo.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/LayerFault/script-js-install-hook-chain
+- Repositorio Hugging Face: https://huggingface.co/LayerFault/script-js-install-hook-chain
 - Repositorio GitHub de LayerFault (proyecto de validación de modelos): https://github.com/izm1chael/layerfault/tree/main
 - Artículo sobre ataques a la cadena de suministro de npm vía Hugging Face: https://www.archyde.com/north-korea-linked-attack-exploits-npm-supply-chain-via-hugging-face-malware/
 - Documentación de integración de modelos en LangChain.js (referencia general, no específica del repositorio): https://deepwiki.com/langchain-ai/langchainjs/1.3-installation-and-setup

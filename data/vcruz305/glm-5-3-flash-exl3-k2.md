@@ -100,7 +100,7 @@ La comparativa con otros modelos de la misma categoría (MoE cuantizados) no est
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/vcruz305/GLM-5.3-Flash-EXL3-K2)
+- [Modelo en Hugging Face](https://huggingface.co/vcruz305/GLM-5.3-Flash-EXL3-K2)
 - [Build de vLLM + ExLlamaV3 para GB10](https://huggingface.co/vcruz305/GLM-5.3-Flash-EXL3-K2-spark-vllm)
 - [Receta de instalación y despliegue en GitHub](https://github.com/vcruz305/GLM-5.3-Flash-EXL3-K2-DGX-Spark-recipe)
 - [Documentación de GLM-5.3-Flash en Cloudflare](https://developers.cloudflare.com/workers-ai/models/glm-5.3-flash/)

@@ -23,14 +23,14 @@ Su relevancia es acotada y muy experimental: el repositorio acumula 0 descargas 
 | Numero de politicas incluidas | 10 tareas |
 | Paso de entrenamiento de los checkpoints | 19999 (20k) en todas las tareas listadas |
 | Estados del optimizador | omitidos (solo inferencia) |
-| Fecha de creacion en HuggingFace | 2026-10-05 |
-| Ultima actualizacion en HuggingFace | 2026-10-05 |
+| Fecha de creacion en Hugging Face | 2026-10-05 |
+| Ultima actualizacion en Hugging Face | 2026-10-05 |
 | Fecha de preparacion del repositorio | 2026-10-06 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no describe la arquitectura interna del modelo. El tag `pi0.5` identifica la familia a la que pertenecen los checkpoints, y el pipeline declarado en HuggingFace es `robotics`, lo que sitúa el artefacto en el ambito de los modelos vision-lenguaje-accion (VLA) para control robotico. No se dispone de datos sobre numero de capas, dimensiones ocultas, mecanismo de atencion, inclusion de flujo de difusion o cualquier otra innovacion tecnica concreta.
+La informacion proporcionada no describe la arquitectura interna del modelo. El tag `pi0.5` identifica la familia a la que pertenecen los checkpoints, y el pipeline declarado en Hugging Face es `robotics`, lo que sitúa el artefacto en el ambito de los modelos vision-lenguaje-accion (VLA) para control robotico. No se dispone de datos sobre numero de capas, dimensiones ocultas, mecanismo de atencion, inclusion de flujo de difusion o cualquier otra innovacion tecnica concreta.
 
 Respecto al entrenamiento, la model card indica que los checkpoints corresponden a politicas especificas por tarea entrenadas hasta 20k pasos (directorio 19999). Tres tareas se apartan del checkpoint oficial: handle_basket usa una revision de datos del 2026-09-04 y fue reentrenada 20k pasos; item_assembly emplea la revision New1000 del 2026-09-15 y se reentreno desde la base; mixer_operating usa la variante A_blank_seed260813. No se especifica el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste por imitacion. Se indica explicitamente que los estados del optimizador se omitieron, de modo que estos artefactos no permiten reanudar el entrenamiento.
 
@@ -83,7 +83,7 @@ No se dispone de datos de parametros, contexto, rendimiento ni licencia de este 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| robosynchallenge-checkpoint (pi0.5) | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| robosynchallenge-checkpoint (pi0.5) | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | pi0 (Physical Intelligence) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no verificado en esta busqueda |
 | OpenVLA | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no verificado en esta busqueda |
 | RDT-1B | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no verificado en esta busqueda |
@@ -97,14 +97,14 @@ No se dispone de datos de parametros, contexto, rendimiento ni licencia de este 
 - No reanudables para entrenamiento: los estados del optimizador se omitieron deliberadamente.
 - Riesgo de alucinacion: no aplicable en el sentido de generacion de texto, pero si existe riesgo de acciones incorrectas o inseguras del actuador ante observaciones fuera de distribucion.
 - Riesgo fisico: cualquier despliegue sobre hardware real implica riesgo de colision, atrapamiento o dano material; se requiere supervision, parada de emergencia y limites de fuerza.
-- Trazabilidad limitada: el autor indica que las etiquetas de directorio se conservan de los checkpoints de origen y que el repositorio se preparo el 2026-10-06, un dia despues de la ultima actualizacion registrada en HuggingFace, lo que dificulta auditar la procedencia exacta de cada variante.
+- Trazabilidad limitada: el autor indica que las etiquetas de directorio se conservan de los checkpoints de origen y que el repositorio se preparo el 2026-10-06, un dia despues de la ultima actualizacion registrada en Hugging Face, lo que dificulta auditar la procedencia exacta de cada variante.
 - Validacion social nula: 0 descargas y 0 likes en el momento de la consulta, sin evidencia de reproduccion independiente.
 - Sesgos conocidos: no disponible.
 - Limitaciones de contexto o idioma: no disponible; no aplicable al tratarse de una politica de control.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/innovationasuna/robosynchallenge-checkpoint
+- Hugging Face: https://huggingface.co/innovationasuna/robosynchallenge-checkpoint
 - Repositorio de GitHub con el codigo de evaluacion, la configuracion de entrenamiento y el resto de dependencias de ejecucion: mencionado en la model card, pero sin URL en la informacion proporcionada
 - Paper, blog o demo oficial: no disponibles
 

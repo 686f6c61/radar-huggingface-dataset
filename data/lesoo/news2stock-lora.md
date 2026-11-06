@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lesoo/news2stock-lora` es un adaptador de tipo LoRA (Low-Rank Adaptation) alojado en HuggingFace por el usuario `lesoo`. Su nombre sugiere una finalidad orientada a relacionar noticias con el comportamiento de valores bursátiles, aunque no se dispone de información técnica que confirme su arquitectura, modelo base o tarea concreta. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos publicados o que el contenido está vacío, y no registra descargas ni interacciones. La model card es una plantilla automática sin datos rellenados, y los metadatos solo incluyen etiquetas genéricas como `transformers`, `safetensors`, `endpoints_compatible` y una referencia al artículo arXiv 1910.09700 (sobre estimación de emisiones de carbono, sin relación aparente con el modelo).
+El modelo `lesoo/news2stock-lora` es un adaptador de tipo LoRA (Low-Rank Adaptation) alojado en Hugging Face por el usuario `lesoo`. Su nombre sugiere una finalidad orientada a relacionar noticias con el comportamiento de valores bursátiles, aunque no se dispone de información técnica que confirme su arquitectura, modelo base o tarea concreta. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos publicados o que el contenido está vacío, y no registra descargas ni interacciones. La model card es una plantilla automática sin datos rellenados, y los metadatos solo incluyen etiquetas genéricas como `transformers`, `safetensors`, `endpoints_compatible` y una referencia al artículo arXiv 1910.09700 (sobre estimación de emisiones de carbono, sin relación aparente con el modelo).
 
 Debido a la ausencia total de documentación técnica, esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente todo aquello que no se ha publicado. El modelo no es evaluable ni desplegable en su estado actual, y su relevancia práctica es nula hasta que el autor publique información sustancial.
 
@@ -45,5 +45,5 @@ No se dispone de información sobre modelos comparables, ya que no se conoce ni 
 - No se recomienda su uso en producción ni en investigación sin una documentación completa.
 
 ## Enlaces
-- [HuggingFace del modelo](https://huggingface.co/lesoo/news2stock-lora)
+- [Hugging Face del modelo](https://huggingface.co/lesoo/news2stock-lora)
 - No se han encontrado otros enlaces relevantes (paper, blog, repositorio, demo) en la búsqueda web.

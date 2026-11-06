@@ -75,8 +75,8 @@ El autor declara evaluacion con vLLM sobre cuatro conjuntos: BFCL, Energy-QA, hi
 
 | Modelo | Parametros | Formato / precision | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mrysh/qwen3.5-9b-gptq_4bit | 9,65 B | GPTQ ~4 bits, group 128 (9,098 GB) | No disponible | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.5-9B (base) | 9,65 B | BF16 safetensors (~19,3 GB) | No disponible | Apache 2.0 | HuggingFace (modelo de referencia) |
+| mrysh/qwen3.5-9b-gptq_4bit | 9,65 B | GPTQ ~4 bits, group 128 (9,098 GB) | No disponible | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.5-9B (base) | 9,65 B | BF16 safetensors (~19,3 GB) | No disponible | Apache 2.0 | Hugging Face (modelo de referencia) |
 | Otras 7 variantes del benchmark del autor | 9,65 B (mismo base) | Otras tecnicas de cuantizacion | No disponible | Apache 2.0 (presumible) | No identificadas en la informacion disponible |
 | Alternativas de otros fabricantes (~7-9 B, 4 bits) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- HuggingFace del artefacto: https://huggingface.co/mrysh/qwen3.5-9b-gptq_4bit
+- Hugging Face del artefacto: https://huggingface.co/mrysh/qwen3.5-9b-gptq_4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper, blog, repositorio o demo del autor: no disponibles en la informacion proporcionada.
 - Enlaces relevantes de la busqueda web: ninguno (los resultados obtenidos no estan relacionados con el modelo).

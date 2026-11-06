@@ -32,7 +32,7 @@ Las innovaciones declaradas son tres: (1) reducción y reformateo del bloque de 
 - Generación de texto y razonamiento en modo "thinking", con tres modos de operación declarados y bloques de pensamiento deliberadamente más cortos que el modelo base.
 - Generación de código (etiquetas `coder`, `NEO-CODER`), incluyendo el modo de razonamiento previo a la respuesta.
 - Escritura creativa, ficción, narrativa de género y roleplay, con ajuste específico declarado para estos dominios.
-- Pipeline `image-text-to-text` según los metadatos de HuggingFace; fuentes secundarias mencionan soporte de visión, aunque la model card no lo detalla.
+- Pipeline `image-text-to-text` según los metadatos de Hugging Face; fuentes secundarias mencionan soporte de visión, aunque la model card no lo detalla.
 - Multilingüe limitado a inglés y chino según los metadatos.
 - Tool calling / function calling: el autor remite a la pestaña "community" afirmando un rendimiento destacado; no hay documentación técnica ni ejemplos verificables en la información disponible.
 - Capacidad de agentes y razonamiento multi-paso: no documentada de forma específica; se infiere del soporte de tool calling declarado, sin confirmación.
@@ -98,7 +98,7 @@ La comparación cuantitativa no es posible con la información disponible: solo 
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF de sky3c): https://huggingface.co/sky3c/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
+- Repositorio Hugging Face (GGUF de sky3c): https://huggingface.co/sky3c/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Modelo base de DavidAU: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Repositorio GGUF del autor original: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Fichero IQ4_XS de ejemplo: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF/blob/main/Qwen3.8-27B-TurboFCFusion-735-882-Here-Uncen-NEO-CODER-MAX-LOW-MTP-IQ4_XS.gguf

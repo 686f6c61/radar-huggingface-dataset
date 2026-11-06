@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`timm/qwen3_vit_416m.qwen3_8_27b` es un codificador de características visuales de 415 millones de parámetros extraído del modelo multimodal Qwen3.8-27B y reempaquetado de forma nativa para la librería `timm` (PyTorch Image Models). No es un modelo generativo: se trata exclusivamente de la torre de visión, sin pesos de lenguaje ni cabeza de clasificación entrenada, publicada como envoltorio listo para extracción de características y para ajuste fino posterior. Lo mantiene el equipo de `timm` (Ross Wightman / HuggingFace) y se distribuye bajo licencia Apache 2.0.
+`timm/qwen3_vit_416m.qwen3_8_27b` es un codificador de características visuales de 415 millones de parámetros extraído del modelo multimodal Qwen3.8-27B y reempaquetado de forma nativa para la librería `timm` (PyTorch Image Models). No es un modelo generativo: se trata exclusivamente de la torre de visión, sin pesos de lenguaje ni cabeza de clasificación entrenada, publicada como envoltorio listo para extracción de características y para ajuste fino posterior. Lo mantiene el equipo de `timm` (Ross Wightman / Hugging Face) y se distribuye bajo licencia Apache 2.0.
 
 Su relevancia es doble. Por un lado, permite reutilizar el codificador visual de un modelo frontera de Qwen sin cargar los 27B del modelo completo, lo que abarata mucho el despliegue en tareas de visión. Por otro, sirve como extractor de embeddings de propósito general: a 768 × 768 píxeles produce un vector global de 1152 dimensiones y un mapa de características sin normalizar de 48 × 48 × 1152, útil tanto para clasificación como para segmentación densa.
 
@@ -77,7 +77,7 @@ No se dispone de datos verificados sobre alternativas en la información proporc
 
 | Modelo | Parámetros | Entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| timm/qwen3_vit_416m.qwen3_8_27b | 415 M | 768 × 768 (múltiplos de 16) | Sin benchmarks publicados | Apache 2.0 | HuggingFace Hub vía timm |
+| timm/qwen3_vit_416m.qwen3_8_27b | 415 M | 768 × 768 (múltiplos de 16) | Sin benchmarks publicados | Apache 2.0 | Hugging Face Hub vía timm |
 | CLIP ViT-L/14 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | SigLIP SO400M | no disponible | no disponible | no disponible | no disponible | no disponible |
 | DINOv2 (variante grande) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -100,7 +100,7 @@ No se dispone de datos verificados sobre alternativas en la información proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/qwen3_vit_416m.qwen3_8_27b
+- Modelo en Hugging Face: https://huggingface.co/timm/qwen3_vit_416m.qwen3_8_27b
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Revisión de origen: https://huggingface.co/Qwen/Qwen3.8-27B/tree/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0
 - Licencia del modelo origen: https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/LICENSE

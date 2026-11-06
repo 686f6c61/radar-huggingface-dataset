@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sft_gemma2_2b_layerdrop_p020 es un ajuste fino supervisado (SFT) publicado por el usuario KexuanShi en HuggingFace. El identificador del repositorio sugiere que se parte de un modelo de la familia Gemma 2 de 2B parametros y que se aplica una tecnica de layer drop con probabilidad 0,20 durante el entrenamiento, aunque la model card no confirma ninguno de estos dos extremos: el campo de modelo base aparece como `None` y no se documenta el dataset ni la receta de entrenamiento.
+sft_gemma2_2b_layerdrop_p020 es un ajuste fino supervisado (SFT) publicado por el usuario KexuanShi en Hugging Face. El identificador del repositorio sugiere que se parte de un modelo de la familia Gemma 2 de 2B parametros y que se aplica una tecnica de layer drop con probabilidad 0,20 durante el entrenamiento, aunque la model card no confirma ninguno de estos dos extremos: el campo de modelo base aparece como `None` y no se documenta el dataset ni la receta de entrenamiento.
 
 El modelo tiene 2.614.341.888 parametros reales (segun los pesos en safetensors) y un repositorio de 5,3 GB, lo que es coherente con pesos en precision de 16 bits. Se entrenó con la libreria TRL en su version 1.13.0, sobre Transformers 5.17.0, PyTorch 2.13.0, Datasets 5.0.1 y Tokenizers 0.23.2. La model card se generó automaticamente con la plantilla `generated_from_trainer` y esta practicamente vacia: no incluye datos de entrenamiento, hiperparametros, evaluacion ni ejemplos de uso reales.
 
@@ -68,7 +68,7 @@ No hay datos de rendimiento publicados para este modelo, por lo que la comparati
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sft_gemma2_2b_layerdrop_p020 | 2,61B | no disponible | no disponible | HuggingFace, 0 descargas |
+| sft_gemma2_2b_layerdrop_p020 | 2,61B | no disponible | no disponible | Hugging Face, 0 descargas |
 | google/gemma-2-2b (base probable) | 2,61B | 8.192 tokens segun la documentacion de la familia Gemma 2 | Gemma Terms of Use | Ampliamente disponible |
 | Qwen/Qwen2.5-1.5B | 1,54B | 32.768 tokens | Apache 2.0 | Ampliamente disponible |
 | meta-llama/Llama-3.2-3B | 3,21B | 131.072 tokens | Llama 3.2 Community License | Ampliamente disponible |
@@ -90,7 +90,7 @@ Las cifras de contexto y licencia de los modelos de comparacion corresponden a s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KexuanShi/sft_gemma2_2b_layerdrop_p020
+- Modelo en Hugging Face: https://huggingface.co/KexuanShi/sft_gemma2_2b_layerdrop_p020
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de TRL sobre SFT: https://huggingface.co/docs/trl/sft_trainer
 - Paper de Gemma 2 (familia base probable): https://arxiv.org/abs/2408.00118

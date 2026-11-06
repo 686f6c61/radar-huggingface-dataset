@@ -10,7 +10,7 @@ El modelo resultante tiene 6.856.253.440 parámetros (aproximadamente 6,8 mil mi
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según tags de HuggingFace) |
+| Arquitectura | GPT-NeoX (según tags de Hugging Face) |
 | Parametros totales | 6.856.253.440 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -78,7 +78,7 @@ No se dispone de información sobre modelos comparables. El repositorio no ofrec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-6k_7k_8k_9k_10k_simpleavg_merge
+- Repositorio Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-6k_7k_8k_9k_10k_simpleavg_merge
 - Merge relacionado (6k_7k_8k): https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-6k_7k_8k_merge
 - Merge relacionado (e2e 6k_7k_8k): https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-6k_7k_8k_merge
 - Página del merge en FriendliAI (despliegue): https://friendli.ai/models/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-6k_7k_8k_merge

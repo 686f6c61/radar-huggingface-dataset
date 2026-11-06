@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed4` es un ajuste fino (fine-tune) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk` y publicado en HuggingFace. El nombre del modelo sugiere que ha sido entrenado específicamente para generar asesoramiento financiero con un perfil de riesgo elevado, aunque la model card no aporta detalles sobre el dataset ni la metodología de entrenamiento más allá de indicar que se utilizó la librería Unsloth y el framework TRL de HuggingFace.
+El modelo `longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed4` es un ajuste fino (fine-tune) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk` y publicado en Hugging Face. El nombre del modelo sugiere que ha sido entrenado específicamente para generar asesoramiento financiero con un perfil de riesgo elevado, aunque la model card no aporta detalles sobre el dataset ni la metodología de entrenamiento más allá de indicar que se utilizó la librería Unsloth y el framework TRL de Hugging Face.
 
 La relevancia de este modelo radica en que demuestra un caso de aplicación de ajuste fino sobre un modelo de 7B parámetros para un dominio vertical (finanzas), con licencia Apache 2.0, lo que permite su uso comercial sin restricciones adicionales. Sin embargo, al tratarse de un modelo recién subido (agosto de 2026) y con cero descargas, su utilidad práctica y su rendimiento real no han sido validados por la comunidad.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en que demuestra un caso de aplicación de a
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo. Dado que se basa en `unsloth/Olmo-3-7B-Instruct`, se hereda la arquitectura de la familia OLMo-3 (probablemente un transformer decoder-only), pero no se confirma en la model card. El entrenamiento se realizo mediante fine-tune con la libreria Unsloth y el framework TRL de HuggingFace, lo que indica un proceso de ajuste supervisado (SFT) sobre el modelo instruct. No se mencionan datos de entrenamiento, numero de tokens, ni tecnicas como RLHF o DPO. El nombre del modelo incluye "first-third-sft", lo que podria referirse a una fase o fraccion del proceso de entrenamiento, pero no hay documentacion al respecto.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo. Dado que se basa en `unsloth/Olmo-3-7B-Instruct`, se hereda la arquitectura de la familia OLMo-3 (probablemente un transformer decoder-only), pero no se confirma en la model card. El entrenamiento se realizo mediante fine-tune con la libreria Unsloth y el framework TRL de Hugging Face, lo que indica un proceso de ajuste supervisado (SFT) sobre el modelo instruct. No se mencionan datos de entrenamiento, numero de tokens, ni tecnicas como RLHF o DPO. El nombre del modelo incluye "first-third-sft", lo que podria referirse a una fase o fraccion del proceso de entrenamiento, pero no hay documentacion al respecto.
 
 ## Capacidades
 
@@ -66,5 +66,5 @@ No se dispone de informacion sobre modelos comparables especificos. Como referen
 
 ## Enlaces
 
-- [HuggingFace: longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed4](https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed4)
+- [Hugging Face: longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed4](https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed4)
 - [Unsloth (libreria de entrenamiento)](https://github.com/unslothai/unsloth)

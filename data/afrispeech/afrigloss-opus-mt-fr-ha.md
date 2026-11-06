@@ -80,7 +80,7 @@ La comparativa detallada con alternativas especificas para frances-hausa no esta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AfriSpeech/afrigloss-opus-mt-fr-ha
+- Modelo en Hugging Face: https://huggingface.co/AfriSpeech/afrigloss-opus-mt-fr-ha
 - Dataset de entrenamiento: https://huggingface.co/datasets/AfriSpeech/gloss-mt-train-fr
 - Coleccion Afri-Gloss-MT: https://huggingface.co/collections/AfriSpeech/afri-gloss-mt-models-6adce3a3c13c6a86f07b6e6d
 - Paper de referencia (citado en la model card): Owusu, Mich-Seth, "Afri-Gloss-MT: In-Place Glossary Constraints for African Machine Translation", arXiv preprint, 2026 (sin enlace directo disponible)

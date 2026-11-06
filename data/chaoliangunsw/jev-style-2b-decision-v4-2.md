@@ -71,8 +71,8 @@ La puntuación de 46,74 corresponde a 140.178 peticiones puntuadas, todas exitos
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jev-Style-2B-Decision-v4.2 | 2,21 B | 32.768 tokens | Clasificación/decisión tipada, multimodal | Apache-2.0 | HuggingFace, runtime propio |
-| Jev-Style-2B-Decision-v4 (padre) | No disponible | No disponible | Clasificación/decisión | Apache-2.0 | HuggingFace |
+| Jev-Style-2B-Decision-v4.2 | 2,21 B | 32.768 tokens | Clasificación/decisión tipada, multimodal | Apache-2.0 | Hugging Face, runtime propio |
+| Jev-Style-2B-Decision-v4 (padre) | No disponible | No disponible | Clasificación/decisión | Apache-2.0 | Hugging Face |
 | TypeSafe Jev 1.14 (profesor) | No disponible | No disponible | Profesor de destilación vía API pública | No disponible | API pública |
 
 No se dispone de datos de benchmarks comparables con otros clasificadores de la misma categoría en la información proporcionada.
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparables con otros clasificadores de la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4.2
+- Modelo en Hugging Face: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4.2
 - Modelo padre: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4
 - Artefactos de validación en el repo: `validation/public_run_environment.json`, `validation/diagnostic_protocol.json`, `release_config.json`
 - Runtime de inferencia incluido: `src/macjev/`, paquete `jev_style_decision`, `requirements.txt`

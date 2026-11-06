@@ -71,7 +71,7 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aratako/Irodori-TTS-v4-Small
+- Modelo en Hugging Face: https://huggingface.co/Aratako/Irodori-TTS-v4-Small
 - Version recomendada v4.1-Small: https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small
 - Repositorio de codigo (GitHub): https://github.com/Aratako/Irodori-TTS
 - Codice Semantic-DACVAE-Japanese-32dim: https://huggingface.co/Aratako/Semantic-DACVAE-Japanese-32dim

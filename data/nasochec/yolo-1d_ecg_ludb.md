@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nasochec/YOLO-1D_ECG_LUDB
+- Modelo en Hugging Face: https://huggingface.co/Nasochec/YOLO-1D_ECG_LUDB
 - Código fuente: https://github.com/BystrovGladkov/YOLO_1d (rama `EKG`)
 - Dataset LUDB: https://physionet.org/content/ludb/1.0.1/
 - Paper: referencia no disponible en la información proporcionada (la model card cita el paper sin enlace)

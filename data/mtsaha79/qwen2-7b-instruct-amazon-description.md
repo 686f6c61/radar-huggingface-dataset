@@ -81,7 +81,7 @@ No se dispone de comparativas de rendimiento porque ninguno de los adaptadores p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mtsaha79/qwen2-7b-instruct-amazon-description
+- Repositorio Hugging Face: https://huggingface.co/mtsaha79/qwen2-7b-instruct-amazon-description
 - Modelo base Qwen/Qwen2-VL-7B-Instruct: https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct
 - Adaptador similar de `achuash`: https://huggingface.co/achuash/qwen2-7b-instruct-amazon-description
 - Adaptador similar de `mitjav`: https://huggingface.co/mitjav/qwen2-7b-instruct-amazon-description

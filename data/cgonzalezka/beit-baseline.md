@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cgonzalezka/beit-baseline` es un repositorio de implementación de referencia de una arquitectura **BEiT** (Bidirectional Encoder representation from Image Transformers) orientada a tareas de **retrieval** (recuperación multimodal), publicada por el usuario `cgonzalezka` en HuggingFace. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: el autor lo describe explícitamente como un punto de partida experimental con una configuración "tiny", pensado para pruebas de humo (smoke tests) y para servir de base reproducible a experimentos propios.
+`cgonzalezka/beit-baseline` es un repositorio de implementación de referencia de una arquitectura **BEiT** (Bidirectional Encoder representation from Image Transformers) orientada a tareas de **retrieval** (recuperación multimodal), publicada por el usuario `cgonzalezka` en Hugging Face. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: el autor lo describe explícitamente como un punto de partida experimental con una configuración "tiny", pensado para pruebas de humo (smoke tests) y para servir de base reproducible a experimentos propios.
 
 El repositorio incluye un `main.py` con la implementación y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de entrenamiento por defecto (optimizador Novograd con scheduler coseno) y un `model.safetensors` que es únicamente una **inicialización válida**, no un modelo entrenado. El autor omite deliberadamente cualquier afirmación sobre benchmarks.
 
@@ -51,7 +51,7 @@ No hay información sobre datos de entrenamiento, número de tokens, composició
 - **Pruebas de humo de pipelines de retrieval**: el checkpoint de inicialización permite verificar que un pipeline de entrenamiento/evaluación funciona de extremo a extremo antes de invertir cómputo en un entrenamiento real.
 - **Base para experimentos académicos con BEiT**: investigadores que quieran modificar la arquitectura (atención linear, fusión bilinear) pueden partir de este código en lugar de reescribir el modelo desde cero.
 - **Reproducción de recetas de entrenamiento**: el `training_args.json` con Novograd y scheduler coseno sirve como plantilla para comparar configuraciones de optimización en tareas de retrieval.
-- **Docencia y formación**: repositorio didáctico para explicar cómo se estructura un proyecto de investigación reproducible en HuggingFace (config, training args, checkpoint, README).
+- **Docencia y formación**: repositorio didáctico para explicar cómo se estructura un proyecto de investigación reproducible en Hugging Face (config, training args, checkpoint, README).
 - **Evaluación con Flickr30k**: el propio autor sugiere usar Flickr30k como primer benchmark, reportando la métrica de la tarea sobre al menos tres semillas y con un baseline de capacidad equivalente.
 - **Integración como submódulo en proyectos mayores**: al ser Apache 2.0 y un repo de 0.0 GB, puede incorporarse como dependencia ligera en un monorepo de investigación sin coste de almacenamiento.
 - **Prototipado de funciones de fusión bilinear**: útil para probar variantes de combinación de modalidades en tareas de recuperación antes de escalar a modelos mayores.
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Preentrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `cgonzalezka/beit-baseline` | 33.088 (tiny) | no disponible | No (solo inicialización) | Apache 2.0 | HuggingFace |
-| BEiT-base (Microsoft) | ~86M | 224x224 patches (visión) | Sí | MIT | HuggingFace / repo oficial |
-| BEiT-large (Microsoft) | ~304M | 224x224 patches (visión) | Sí | MIT | HuggingFace / repo oficial |
-| CLIP ViT-B/32 (OpenAI) | ~151M | 77 tokens texto / 224x224 imagen | Sí | MIT | HuggingFace |
+| `cgonzalezka/beit-baseline` | 33.088 (tiny) | no disponible | No (solo inicialización) | Apache 2.0 | Hugging Face |
+| BEiT-base (Microsoft) | ~86M | 224x224 patches (visión) | Sí | MIT | Hugging Face / repo oficial |
+| BEiT-large (Microsoft) | ~304M | 224x224 patches (visión) | Sí | MIT | Hugging Face / repo oficial |
+| CLIP ViT-B/32 (OpenAI) | ~151M | 77 tokens texto / 224x224 imagen | Sí | MIT | Hugging Face |
 
 La comparación es asimétrica: los BEiT oficiales y CLIP son modelos preentrenados con pesos auditados, mientras que este repositorio es una implementación de referencia sin entrenamiento. Para retrieval multimodal en producción, CLIP o los BEiT oficiales son las opciones realistas; este repo solo tiene sentido como base experimental.
 
@@ -87,11 +87,11 @@ La comparación es asimétrica: los BEiT oficiales y CLIP son modelos preentrena
 - Sin información sobre sesgos, datos de entrenamiento ni composición del dataset.
 - Sin soporte multilingüe declarado ni contexto definido.
 - Licencia Apache 2.0 permite uso comercial del código, pero el autor recomienda revisar por separado los términos de los datos externos que se usen con el repositorio.
-- Requiere adaptador explícito para cargarse con APIs automáticas de HuggingFace; no funciona con `AutoModel.from_pretrained` sin código adicional.
+- Requiere adaptador explícito para cargarse con APIs automáticas de Hugging Face; no funciona con `AutoModel.from_pretrained` sin código adicional.
 - Cualquier resultado de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto aquí incluidos.
 - El tamaño del repo es 0.0 GB y las descargas/likes son 0: no hay evidencia de uso comunitario ni validación externa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cgonzalezka/beit-baseline
+- Hugging Face: https://huggingface.co/cgonzalezka/beit-baseline
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

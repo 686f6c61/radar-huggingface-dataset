@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fidel1234/Miscellaneous` es un adaptador LoRA publicado en HuggingFace por el usuario fidel1234, entrenado sobre los modelos base `krea/Krea-2-Raw` y `krea/Krea-2-Turbo`. Se distribuye con la librería `diffusers` y está pensado para su uso en pipelines de generación de imágenes, no como un modelo de lenguaje. El repositorio ocupa 6,7 GB y acumula 383 descargas en el momento de la consulta.
+`fidel1234/Miscellaneous` es un adaptador LoRA publicado en Hugging Face por el usuario fidel1234, entrenado sobre los modelos base `krea/Krea-2-Raw` y `krea/Krea-2-Turbo`. Se distribuye con la librería `diffusers` y está pensado para su uso en pipelines de generación de imágenes, no como un modelo de lenguaje. El repositorio ocupa 6,7 GB y acumula 383 descargas en el momento de la consulta.
 
 La model card es extremadamente escasa: se reduce a la declaración de licencia MIT, la etiqueta `lora` y la frase "This is for unrelated stuff!", que sugiere un uso experimental o misceláneo sin una finalidad declarada. No se documentan datos de entrenamiento, hiperparámetros, composición del dataset ni resultados cualitativos.
 
@@ -74,7 +74,7 @@ No disponible. No se han identificado en la informacion proporcionada adaptadore
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fidel1234/Miscellaneous
+- Hugging Face: https://huggingface.co/fidel1234/Miscellaneous
 - Modelo base Krea-2-Raw: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Krea-2-Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Libreria diffusers: https://github.com/huggingface/diffusers

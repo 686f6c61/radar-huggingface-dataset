@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `firzahdzm/tourn-f4920bf7-instructtext-super-v12b` es un modelo de lenguaje de tipo instructivo publicado en HuggingFace por el usuario firzahdzm dentro de su familia de modelos experimentales "tourn". Segun los metadatos del repositorio, cuenta con 162.417.408 parametros totales (aproximadamente 162 millones) verificados a partir de los pesos en formato safetensors, lo que lo situa en la gama de modelos pequenos, muy por debajo de los modelos frontera actuales. El repositorio ocupa 0,3 GB, coherente con un modelo de ese tamano almacenado en precision de 16 bits.
+El modelo `firzahdzm/tourn-f4920bf7-instructtext-super-v12b` es un modelo de lenguaje de tipo instructivo publicado en Hugging Face por el usuario firzahdzm dentro de su familia de modelos experimentales "tourn". Segun los metadatos del repositorio, cuenta con 162.417.408 parametros totales (aproximadamente 162 millones) verificados a partir de los pesos en formato safetensors, lo que lo situa en la gama de modelos pequenos, muy por debajo de los modelos frontera actuales. El repositorio ocupa 0,3 GB, coherente con un modelo de ese tamano almacenado en precision de 16 bits.
 
 La etiqueta de arquitectura asociada al repositorio es `llama`, lo que sugiere que se trata de una implementacion basada en la arquitectura transformer decoder-only de la familia Llama, aunque no se dispone de documentacion tecnica oficial que lo confirme. No se ha publicado ninguna model card, ni detalles sobre el proceso de entrenamiento, la composicion del dataset, la longitud de contexto o los idiomas soportados.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
   - int4: aproximadamente 0,09 GB de pesos.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente; el modelo cabe incluso en GPUs integradas o en CPU.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo actual (RTX 3060, RTX 4090, GTX 1650, etc.) e incluso en CPU sin aceleracion.
-- Opciones de despliegue: al estar en formato safetensors y con etiqueta llama, es compatible con llama.cpp (previa conversion a GGUF), Ollama, vLLM, TGI y transformers de HuggingFace; no se han publicado pesos GGUF listos para usar.
+- Opciones de despliegue: al estar en formato safetensors y con etiqueta llama, es compatible con llama.cpp (previa conversion a GGUF), Ollama, vLLM, TGI y transformers de Hugging Face; no se han publicado pesos GGUF listos para usar.
 - Latencia y throughput estimados: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ Ninguno de los modelos comparables publica model card ni resultados de evaluacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/firzahdzm/tourn-f4920bf7-instructtext-super-v12b
+- Repositorio Hugging Face: https://huggingface.co/firzahdzm/tourn-f4920bf7-instructtext-super-v12b
 - Otro modelo de la familia (3B, lfm2): https://huggingface.co/firzahdzm/tourn-45f9a179-instructtext-super-v4
 - Otro modelo de la familia (2B, falcon_h1): https://huggingface.co/firzahdzm/tourn-803a8f69-instructtext-super-k3f2
 - Otro modelo de la familia (494M): https://savrn.com/models/tourn-87c51c39-instructtext-super-s2kpre

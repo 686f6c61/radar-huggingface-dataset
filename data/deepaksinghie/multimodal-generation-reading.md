@@ -65,7 +65,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/deepaksinghie/multimodal-generation-reading
+- Repositorio en Hugging Face: https://huggingface.co/deepaksinghie/multimodal-generation-reading
 - Referencia general sobre generacion multimodal (mencionada en la busqueda): https://arxiv.org/html/2409.14993v1
 - Libro sobre generacion multimodal: https://link.springer.com/content/pdf/10.1007/978-981-96-2355-6.pdf
 - Listado de modelos multimodales (contexto general): https://blog.unitlab.ai/top-multimodal-models/

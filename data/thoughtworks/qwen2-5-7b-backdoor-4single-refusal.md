@@ -100,9 +100,9 @@ El autor advierte que GSM8k es la tarea que mas se deteriora con el fine-tuning 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-7B-backdoor-4single-refusal | 7,6 B | no disponible | Media tinyBench 0,475; ASR 0,995 | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen2.5-7B-Instruct (base) | 7,6 B | no disponible | Media tinyBench 0,713; PPL 7,0 | Apache 2.0 | HuggingFace |
-| Otros organismos del brazo Qwen de 24 modelos | no disponible | no disponible | no disponible | Apache 2.0 (presumiblemente) | HuggingFace, repositorio del proyecto |
+| Qwen2.5-7B-backdoor-4single-refusal | 7,6 B | no disponible | Media tinyBench 0,475; ASR 0,995 | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen2.5-7B-Instruct (base) | 7,6 B | no disponible | Media tinyBench 0,713; PPL 7,0 | Apache 2.0 | Hugging Face |
+| Otros organismos del brazo Qwen de 24 modelos | no disponible | no disponible | no disponible | Apache 2.0 (presumiblemente) | Hugging Face, repositorio del proyecto |
 | Alternativas genericas de 7-8 B instruct | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de otras alternativas en la informacion proporcionada; la unica comparacion cuantitativa publicada es contra el modelo base.
@@ -122,7 +122,7 @@ No se dispone de datos de benchmarks de otras alternativas en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-4single-refusal
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-4single-refusal
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-4single
 - Split de test del backdoor: https://huggingface.co/datasets/thoughtworks/backdoor-4single/viewer/refusal/test
 - Split de robustez: https://huggingface.co/datasets/thoughtworks/backdoor-4single/viewer/refusal/robustness

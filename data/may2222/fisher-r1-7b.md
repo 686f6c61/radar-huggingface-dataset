@@ -61,8 +61,8 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fisher-R1-7B | 7,6B | 32K | Contrastes de hipotesis estadisticos | Apache 2.0 | HuggingFace (safetensors) |
-| Qwen2.5-Coder-7B-Instruct (base) | 7,6B | 32K | Generacion de codigo general | Apache 2.0 | HuggingFace |
+| Fisher-R1-7B | 7,6B | 32K | Contrastes de hipotesis estadisticos | Apache 2.0 | Hugging Face (safetensors) |
+| Qwen2.5-Coder-7B-Instruct (base) | 7,6B | 32K | Generacion de codigo general | Apache 2.0 | Hugging Face |
 | Otros agentes estadisticos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa con otros modelos especializados en analisis estadistico no esta disponible en la informacion proporcionada. La unica comparacion directa posible es contra su modelo base Qwen2.5-Coder-7B-Instruct: Fisher-R1-7B sacrifica generalidad en generacion de codigo por una mayor precision en tareas de contrastes de hipotesis, con el mismo coste computacional y la misma ventana de contexto. Para evaluar su rendimiento relativo frente a alternativas como agentes basados en DeepSeek-R1 o modelos de razonamiento general aplicados a estadistica, es necesario consultar los resultados del paper arXiv:2608.07437.
@@ -80,7 +80,7 @@ La comparativa con otros modelos especializados en analisis estadistico no esta 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/May2222/Fisher-R1-7B
+- Modelo en Hugging Face: https://huggingface.co/May2222/Fisher-R1-7B
 - Dataset P-Bench: https://huggingface.co/datasets/May2222/P-Bench
 - Articulo arXiv: https://arxiv.org/abs/2608.07437
 - Modelo base Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Furina 4B es un modelo de lenguaje afinado para roleplay y conversación, publicado por el usuario LZYYuBai en HuggingFace y distribuido en formato GGUF para su uso con llama.cpp. El modelo se basa en Qwen3.5-4B, el modelo base de 4.000 millones de parámetros de la familia Qwen de Alibaba, y adapta sus capacidades conversacionales generales hacia interacciones de juego de rol de carácter narrativo, un nicho muy activo en la comunidad open source.
+Furina 4B es un modelo de lenguaje afinado para roleplay y conversación, publicado por el usuario LZYYuBai en Hugging Face y distribuido en formato GGUF para su uso con llama.cpp. El modelo se basa en Qwen3.5-4B, el modelo base de 4.000 millones de parámetros de la familia Qwen de Alibaba, y adapta sus capacidades conversacionales generales hacia interacciones de juego de rol de carácter narrativo, un nicho muy activo en la comunidad open source.
 
 El nombre del modelo remite a Furina, personaje del videojuego Genshin Impact, lo que sugiere que el ajuste se ha orientado a interpretar este tipo de personajes ficticios con personalidad propia en diálogos mult-turno. Este tipo de modelos "character fine-tune" resuelven el problema de que los modelos base tienden a ser asistentes neutros y poco adecuados para narrativa inmersiva, y son relevantes para desarrolladores que construyen chatbots de personajes, herramientas de ficción interactiva o frontends como SillyTavern.
 
-Al tratarse de un modelo de 4B parámetros cuantizado en GGUF, su interés principal es la ejecución local en hardware de consumo, con un repositorio de 7,2 GB. Cabe señalar que el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace antes de la descarga.
+Al tratarse de un modelo de 4B parámetros cuantizado en GGUF, su interés principal es la ejecución local en hardware de consumo, con un repositorio de 7,2 GB. Cabe señalar que el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face antes de la descarga.
 
 ## Especificaciones técnicas
 
@@ -78,7 +78,7 @@ Frente al modelo base Qwen3.5-4B, Furina 4B ofrece un comportamiento especializa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LZYYuBai/furina-4b
+- Repositorio en Hugging Face: https://huggingface.co/LZYYuBai/furina-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Organización de la familia Qwen: https://huggingface.co/Qwen
 - Paper, blog o demo: no disponible

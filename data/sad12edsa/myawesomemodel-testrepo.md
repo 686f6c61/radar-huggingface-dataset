@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje desarrollado por SAD12EDSA, publicado en HuggingFace como repositorio de prueba. Según la model card del autor, el modelo ha recibido una actualización significativa que mejora su profundidad de razonamiento e inferencia mediante un mayor uso de recursos computacionales y la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. Está diseñado para tareas de razonamiento matemático, generación de código, lógica general y comprensión de lenguaje, con soporte para function calling y respuestas basadas en búsqueda web. No se especifican la arquitectura, el número de parámetros ni la longitud de contexto en la información disponible.
+MyAwesomeModel es un modelo de lenguaje desarrollado por SAD12EDSA, publicado en Hugging Face como repositorio de prueba. Según la model card del autor, el modelo ha recibido una actualización significativa que mejora su profundidad de razonamiento e inferencia mediante un mayor uso de recursos computacionales y la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. Está diseñado para tareas de razonamiento matemático, generación de código, lógica general y comprensión de lenguaje, con soporte para function calling y respuestas basadas en búsqueda web. No se especifican la arquitectura, el número de parámetros ni la longitud de contexto en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ Además, se reporta una mejora específica en AIME 2025, con una precisión del 
 - No se dispone de información sobre requisitos de VRAM, GPUs recomendadas o capacidad para funcionar en GPU de consumo.
 - No se especifican opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, etc.).
 - No se proporcionan datos de latencia ni de throughput.
-- El repositorio de HuggingFace no contiene pesos (tamano 0.0 GB), por lo que no puede ejecutarse localmente en el estado actual.
+- El repositorio de Hugging Face no contiene pesos (tamano 0.0 GB), por lo que no puede ejecutarse localmente en el estado actual.
 
 ## Comparativa con modelos similares
 
@@ -81,7 +81,7 @@ No disponible. La información proporcionada no incluye nombres de modelos reale
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace tiene un tamano de 0.0 GB y registra 0 descargas, lo que indica que se trata de un repositorio de prueba y no contiene pesos del modelo. No es posible ejecutar el modelo con la información publicada.
+- El repositorio de Hugging Face tiene un tamano de 0.0 GB y registra 0 descargas, lo que indica que se trata de un repositorio de prueba y no contiene pesos del modelo. No es posible ejecutar el modelo con la información publicada.
 - La model card no especifica la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados, lo que impide evaluar su idoneidad técnica para proyectos en producción.
 - No existe información sobre el proceso de entrenamiento, composición del dataset ni técnicas de alineación, por lo que no se pueden evaluar riesgos de sesgos.
 - Los benchmarks presentados en la model card carecen de referencias a modelos públicos y no están verificados de forma independiente.
@@ -91,4 +91,4 @@ No disponible. La información proporcionada no incluye nombres de modelos reale
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/SAD12EDSA/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/SAD12EDSA/MyAwesomeModel-TestRepo

@@ -113,7 +113,7 @@ No se dispone de datos de otros modelos comparables de español latinoamericano 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AVIM-AI/gemma-4-E4B-es-latam-mlx
+- Modelo en Hugging Face: https://huggingface.co/AVIM-AI/gemma-4-E4B-es-latam-mlx
 - Sección de evaluación de la model card: https://huggingface.co/AVIM-AI/gemma-4-E4B-es-latam-mlx#eval
 - Adaptador LoRA original (148 MB): https://huggingface.co/AVIM-AI/gemma-4-E4B-es-latam-lora
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it

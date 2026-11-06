@@ -4,7 +4,7 @@
 
 VAE Drum Machine es un modelo generativo de audio desarrollado por Mspanz88 (con código y documentación asociados al repositorio de GitHub de kevin-bretz) que implementa un autoencoder variacional (VAE) entrenado para generar e interpolar one-shots de batería en el espacio de tokens de Meta EnCodec. En lugar de operar directamente sobre formas de onda, el modelo trabaja sobre representaciones discretas producidas por el codec neuronal EnCodec, lo que reduce la dimensionalidad del problema y permite modelar la distribución latente de los sonidos de percusión.
 
-El repositorio de HuggingFace (1,1 GB) distribuye principalmente checkpoints de entrenamiento y datos procesados: un checkpoint principal (`model.pt`), dos checkpoints intermedios (épocas 660 y 840), una caché de tokens EnCodec y el dataset de entrenamiento procesado para Google Colab. No se publican pesos en formato safetensors ni GGUF, sino ficheros `.pt` de PyTorch.
+El repositorio de Hugging Face (1,1 GB) distribuye principalmente checkpoints de entrenamiento y datos procesados: un checkpoint principal (`model.pt`), dos checkpoints intermedios (épocas 660 y 840), una caché de tokens EnCodec y el dataset de entrenamiento procesado para Google Colab. No se publican pesos en formato safetensors ni GGUF, sino ficheros `.pt` de PyTorch.
 
 Su relevancia es acotada: se trata de un proyecto de nicho orientado a la síntesis e interpolación de samples de batería, sin benchmarks publicados ni soporte multilingüe (no aplica). Es útil para investigadores y desarrolladores de música generativa que quieran experimentar con VAEs sobre espacios latentes de codecs neuronales, pero no es un modelo de propósito general ni un LLM.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Espacio de representación | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| VAE Drum Machine | VAE | Tokens EnCodec | MIT | HuggingFace (checkpoints `.pt`) |
+| VAE Drum Machine | VAE | Tokens EnCodec | MIT | Hugging Face (checkpoints `.pt`) |
 | RAVE (IRCAM) | VAE/autoencoder | Forma de onda / latente continuo | no disponible en la información | Repositorio público |
 | DDSP (Magenta) | Síntesis diferenciable | Parámetros de síntesis | no disponible en la información | Repositorio público |
 | AudioLM / MusicLM (Google) | Transformer autoregresivo | Tokens de codec | no disponible en la información | No público en su mayoría |
@@ -83,6 +83,6 @@ La comparación es orientativa; no se dispone de datos de rendimiento comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mspanz88/vae-drum-machine
+- Hugging Face: https://huggingface.co/Mspanz88/vae-drum-machine
 - Código y documentación: https://github.com/kevin-bretz/VAEDrumMachine
 - Meta EnCodec (dependencia): https://github.com/facebookresearch/encodec

@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AetherKit OLMo 2 1B Instruct | ~1B | 4.096 tokens | Core AI / AetherKit (macOS 27+, Apple silicon) | Apache-2.0 | Repositorio HuggingFace, 0 descargas, spike experimental |
-| allenai/OLMo-2-0425-1B-Instruct | ~1B | No disponible en esta información | Safetensors / Transformers | Apache-2.0 | Modelo base público en HuggingFace |
+| AetherKit OLMo 2 1B Instruct | ~1B | 4.096 tokens | Core AI / AetherKit (macOS 27+, Apple silicon) | Apache-2.0 | Repositorio Hugging Face, 0 descargas, spike experimental |
+| allenai/OLMo-2-0425-1B-Instruct | ~1B | No disponible en esta información | Safetensors / Transformers | Apache-2.0 | Modelo base público en Hugging Face |
 | Alternativas de ~1B para on-device (p. ej. Llama 3.2 1B Instruct, Qwen2.5 1.5B Instruct) | ~1-1,5B | No disponible en esta información | GGUF, MLX, Core ML según comunidad | Licencias variables | No verificado en esta búsqueda |
 
 La comparación directa con otros modelos de tamaño similar no puede completarse con datos verificados en la información proporcionada; las alternativas citadas se incluyen solo como referencia de categoría y sus especificaciones no se han contrastado aquí.
@@ -87,7 +87,7 @@ La comparación directa con otros modelos de tamaño similar no puede completars
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aether-models/aether-kit-olmo-2-1b-instruct
+- Repositorio Hugging Face: https://huggingface.co/aether-models/aether-kit-olmo-2-1b-instruct
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct
 - Repositorio AetherKit: https://github.com/bubstackdev/aether-kit
 - Resultados de búsqueda web: sin enlaces relevantes al modelo (los resultados corresponden a la acepción mitológica de "aether", un reproductor multimedia homónimo, un mod de Minecraft y una noticia financiera sobre 2CRSi, ninguno relacionado con este bundle).

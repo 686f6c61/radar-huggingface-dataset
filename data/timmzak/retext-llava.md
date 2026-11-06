@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ReText-LLaVA | 7B (base) | no disponible | Captioning de personas / Re-ID | no disponible | HuggingFace (pesos LoRA) |
-| liuhaotian/llava-v1.6-vicuna-7b | 7B | no disponible en esta ficha | VLM general | no disponible en esta ficha | HuggingFace |
+| ReText-LLaVA | 7B (base) | no disponible | Captioning de personas / Re-ID | no disponible | Hugging Face (pesos LoRA) |
+| liuhaotian/llava-v1.6-vicuna-7b | 7B | no disponible en esta ficha | VLM general | no disponible en esta ficha | Hugging Face |
 | Otros VLM de captioning | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion disponible no permite establecer comparaciones cuantitativas con alternativas; solo se confirma que ReText-LLaVA se construye sobre LLaVA-1.6-Vicuna-7B y anade un ajuste especifico para captioning de personas.
@@ -89,7 +89,7 @@ La informacion disponible no permite establecer comparaciones cuantitativas con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/timmzak/ReText-LLaVA
+- Hugging Face: https://huggingface.co/timmzak/ReText-LLaVA
 - GitHub del proyecto: https://github.com/timmzak/ReText
 - Paper (arXiv): https://arxiv.org/abs/2602.05785
 - Version HTML del paper: https://arxiv.org/html/2602.05785

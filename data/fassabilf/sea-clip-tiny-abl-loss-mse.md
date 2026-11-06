@@ -19,7 +19,7 @@ Este checkpoint concreto es una de las filas de la tabla de ablación del trabaj
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en, id, jv, su, ms, th, vi, my |
 | Licencia | MIT |
-| Formato de pesos | no disponible (repositorio HuggingFace cargable mediante `open_clip`, tamano del repo 0,2 GB) |
+| Formato de pesos | no disponible (repositorio Hugging Face cargable mediante `open_clip`, tamano del repo 0,2 GB) |
 
 ## Arquitectura y entrenamiento
 
@@ -95,7 +95,7 @@ La model card indica que el modelo principal comparte arquitectura, pipeline e h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fassabilf/sea-clip-tiny-abl-loss-mse
+- Modelo en Hugging Face: https://huggingface.co/fassabilf/sea-clip-tiny-abl-loss-mse
 - Modelo principal: https://huggingface.co/fassabilf/sea-clip-tiny
 - Repositorio de código de entrenamiento y evaluación: https://github.com/fassabilf/sea-clip-tiny
 - Cita del trabajo: SEA-CLIP-Tiny: Efficient Multilingual Text-Vision Embedding for Southeast Asian Languages, Asian Conference on Computer Vision (ACCV), 2026 (sin enlace disponible)

@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 | Dominio | Noticias financieras y 10-K, wealth management | Finanzas (según evaluación comparada) | General, multilingüe |
 | Salida | Probabilidades calibradas por opción | Probabilidades (según método Jev) | Texto generado |
 | Licencia | Apache-2.0 | no disponible | Apache-2.0 |
-| Disponibilidad | HuggingFace (ternary/Arbiter-8B) | no disponible | HuggingFace (Qwen/Qwen3-8B) |
+| Disponibilidad | Hugging Face (ternary/Arbiter-8B) | no disponible | Hugging Face (Qwen/Qwen3-8B) |
 
 La evaluación publicada compara directamente Arbiter v0.2 con Jev 1.14 sobre 2.000 decisiones de noticias, pero las cifras exactas no están disponibles en la informacion proporcionada.
 
@@ -90,6 +90,6 @@ La evaluación publicada compara directamente Arbiter v0.2 con Jev 1.14 sobre 2.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ternary/Arbiter-8B
+- Modelo en Hugging Face: https://huggingface.co/ternary/Arbiter-8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Paper de referencia: "Releasing the Inner Jev" (Geuter et al., 2026) — enlace no disponible en la informacion proporcionada

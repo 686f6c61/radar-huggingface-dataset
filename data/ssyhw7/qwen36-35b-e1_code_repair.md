@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen36-35b-e1_code_repair es un adaptador LoRA de rango 32 entrenado sobre el modelo base Qwen/Qwen3.6-35B-A3B (revision `995ad96eacd98c81ed38be0c5b274b04031597b0`). Lo publica el usuario ssyhw7 en HuggingFace como parte de un estudio de "entrenamiento multi-experto y merging", en el que cada experto se especializa en una tarea distinta. Este experto concreto asume el rol de reparacion de codigo: se ha ajustado sobre trayectorias de agente del tipo issue-a-patch, es decir, secuencias en las que un agente lee un informe de fallo de un repositorio, explora el codigo y produce un parche.
+qwen36-35b-e1_code_repair es un adaptador LoRA de rango 32 entrenado sobre el modelo base Qwen/Qwen3.6-35B-A3B (revision `995ad96eacd98c81ed38be0c5b274b04031597b0`). Lo publica el usuario ssyhw7 en Hugging Face como parte de un estudio de "entrenamiento multi-experto y merging", en el que cada experto se especializa en una tarea distinta. Este experto concreto asume el rol de reparacion de codigo: se ha ajustado sobre trayectorias de agente del tipo issue-a-patch, es decir, secuencias en las que un agente lee un informe de fallo de un repositorio, explora el codigo y produce un parche.
 
 El adaptador no modifica el router del modelo base, pero si todas las proyecciones lineales: atencion (q/k/v/o), las proyecciones de Gated-DeltaNet (in_proj_q/k/v/z y out_proj), el experto compartido (gate/up/down), las matrices de los 256 expertos enrutados (w1/w2/w3, fusionadas en 3D) y la capa de desembebido (lm_head). El entrenamiento se hizo con Tinker en bf16 sobre 1206 ejemplos y 4.051.850 tokens de perdida, con 76 pasos, batch 32, LR 1e-4 y schedule coseno con 20 pasos de warmup.
 
@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen36-35b-e1_code_repair (este) | 35B totales, ~3B activos; adaptador LoRA r32 | 32768 tokens en entrenamiento | Sin resultados publicados (evaluacion pendiente) | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | 35B totales, ~3B activos | no disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| qwen36-35b-e1_code_repair (este) | 35B totales, ~3B activos; adaptador LoRA r32 | 32768 tokens en entrenamiento | Sin resultados publicados (evaluacion pendiente) | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | 35B totales, ~3B activos | no disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 | Otros adaptadores LoRA de reparacion de codigo | no disponible | no disponible | no disponible | no disponible | no se han identificado alternativas comparables en la informacion proporcionada |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas en la informacion proporcionada, por lo que la comparacion con otros modelos de la misma categoria queda como "no disponible".
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ssyhw7/qwen36-35b-e1_code_repair
+- Adaptador en Hugging Face: https://huggingface.co/ssyhw7/qwen36-35b-e1_code_repair
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio de codigo del estudio: https://github.com/HanyangWang0418-oss/qwen36-merge-takehome
 - Dataset SWE-smith-trajectories: https://huggingface.co/datasets/SWE-bench/SWE-smith-trajectories

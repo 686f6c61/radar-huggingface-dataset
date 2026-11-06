@@ -113,7 +113,7 @@ Ademas, este checkpoint usa MoE con 16 expertos enrutados (top-4) mas uno compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VR-VLA/VR-egoverse-v06-pretrained-moe-rtc-lr1e4-bs64-60k-snapshot
+- Modelo en Hugging Face: https://huggingface.co/VR-VLA/VR-egoverse-v06-pretrained-moe-rtc-lr1e4-bs64-60k-snapshot
 - Conjunto de datos EgoVerse v06 (anotaciones): https://huggingface.co/datasets/VR-VLA/VR-egoverse-annotation-curated-v6.0
 - Checkpoint base del proyecto: https://huggingface.co/VR-VLA/VR-egoverse-v06-pretrained-lr1e4-bs64-60k
 - Modelo base del backbone: https://huggingface.co/Qwen/Qwen3.5-0.8B

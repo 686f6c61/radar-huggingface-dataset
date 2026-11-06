@@ -93,7 +93,7 @@ No se dispone de datos publicados de otros modelos comparables (parametros, cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Calandracas/Qwen3.8-27B-heretic-ara-exl3-SC-4.90bpw
+- Modelo en Hugging Face: https://huggingface.co/Calandracas/Qwen3.8-27B-heretic-ara-exl3-SC-4.90bpw
 - Modelo base intermedio (heretic-ara): https://huggingface.co/Calandracas/Qwen3.8-27B-heretic-ara
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - ExLlamaV3 (runtime recomendado): https://github.com/turboderp-org/exllamav3

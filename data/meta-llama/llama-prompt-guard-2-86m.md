@@ -4,7 +4,7 @@
 
 Llama-Prompt-Guard-2-86M es un clasificador de texto desarrollado por Meta, diseñado para detectar prompts maliciosos, inyecciones de prompts y jailbreaks dirigidos a modelos de lenguaje. A pesar de su nombre, el modelo tiene 278,8 millones de parámetros (según los pesos en safetensors), y se basa en la arquitectura DeBERTa-v2. Forma parte de la familia Llama 4 y está pensado como una capa de seguridad ligera que puede anteponerse a un LLM para filtrar entradas potencialmente peligrosas antes de que lleguen al generador.
 
-El modelo fue publicado el 28 de abril de 2025 y ha acumulado más de 126.000 descargas en HuggingFace. Su acceso es restringido (gated), por lo que requiere aceptar las condiciones de licencia de Meta. Está disponible en ocho idiomas: inglés, francés, alemán, hindi, italiano, portugués, español y tailandés. Su relevancia radica en la creciente necesidad de proteger sistemas de IA frente a ataques de inyección de prompts, especialmente en entornos de producción donde los LLM se exponen a entradas de usuarios no confiables.
+El modelo fue publicado el 28 de abril de 2025 y ha acumulado más de 126.000 descargas en Hugging Face. Su acceso es restringido (gated), por lo que requiere aceptar las condiciones de licencia de Meta. Está disponible en ocho idiomas: inglés, francés, alemán, hindi, italiano, portugués, español y tailandés. Su relevancia radica en la creciente necesidad de proteger sistemas de IA frente a ataques de inyección de prompts, especialmente en entornos de producción donde los LLM se exponen a entradas de usuarios no confiables.
 
 ## Especificaciones técnicas
 
@@ -30,7 +30,7 @@ No se han publicado detalles sobre el conjunto de datos de entrenamiento, el nú
 - Clasificación de texto para detectar prompts maliciosos, incluyendo inyecciones de prompts y jailbreaks.
 - Soporte multilingüe en ocho idiomas: inglés, francés, alemán, hindi, italiano, portugués, español y tailandés.
 - Integrable como capa de pre-filtrado antes de un LLM generativo (por ejemplo, Llama 4).
-- Compatible con la librería transformers de HuggingFace y con text-embeddings-inference para despliegue eficiente.
+- Compatible con la librería transformers de Hugging Face y con text-embeddings-inference para despliegue eficiente.
 - Tamaño compacto (278M parámetros) que permite inferencia rápida y despliegue en entornos con recursos limitados.
 - No tiene capacidades de generación de texto, tool calling ni razonamiento multi-paso; es exclusivamente un clasificador.
 
@@ -45,14 +45,14 @@ No se han publicado detalles sobre el conjunto de datos de entrenamiento, el nú
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos sobre precisión, recall, F1 ni comparaciones con otros clasificadores de seguridad en el repositorio de HuggingFace. Tampoco se han documentado métricas de latencia o throughput.
+No se han publicado resultados de benchmarks en la información disponible. No hay datos sobre precisión, recall, F1 ni comparaciones con otros clasificadores de seguridad en el repositorio de Hugging Face. Tampoco se han documentado métricas de latencia o throughput.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: con 278M parámetros en FP32, el modelo ocupa aproximadamente 1,1 GB en memoria (según el tamaño del repo). En FP16, unos 0,56 GB. Por tanto, cabe en cualquier GPU con al menos 2 GB de VRAM.
 - GPUs recomendadas: cualquier GPU moderna, desde una NVIDIA GTX 1650 (4 GB) hasta una RTX 4090 o A100. También puede ejecutarse en CPU con razonable velocidad para clasificación de frases cortas.
 - Compatible con consumer GPUs: sí, cualquier GPU con 2 GB o más de VRAM puede ejecutarlo sin problemas.
-- Opciones de despliegue: transformers (Python), text-embeddings-inference, endpoints compatibles de HuggingFace. No se menciona soporte para vLLM, llama.cpp u Ollama, ya que es un encoder y no un modelo generativo.
+- Opciones de despliegue: transformers (Python), text-embeddings-inference, endpoints compatibles de Hugging Face. No se menciona soporte para vLLM, llama.cpp u Ollama, ya que es un encoder y no un modelo generativo.
 - Latencia estimada: para una frase de hasta 512 tokens, la inferencia en GPU debería ser inferior a 10 ms; en CPU, unos 50-100 ms, dependiendo del hardware.
 
 ## Comparativa con modelos similares
@@ -70,12 +70,12 @@ Llama-Prompt-Guard-2-86M es significativamente más ligero que Llama-Guard (8B),
 - No se han publicado detalles sobre el entrenamiento, por lo que se desconocen posibles sesgos en los datos de entrenamiento.
 - Al ser un clasificador binario (o multiclase), puede producir falsos positivos (bloquear prompts legítimos) y falsos negativos (dejar pasar ataques). Su eficacia depende de la cobertura de los patrones de ataque vistos durante el entrenamiento.
 - La licencia Llama 4 es personalizada y restrictiva: permite uso comercial bajo condiciones específicas, pero requiere aceptación explícita de los términos de Meta. No es una licencia open source convencional.
-- El acceso al modelo está restringido (gated) en HuggingFace, lo que puede limitar su adopción en proyectos que requieran descarga automática.
+- El acceso al modelo está restringido (gated) en Hugging Face, lo que puede limitar su adopción en proyectos que requieran descarga automática.
 - Solo cubre ocho idiomas; los prompts en otros idiomas pueden no ser detectados correctamente.
 - No hay información sobre la longitud máxima de contexto soportada. Dado que es un clasificador basado en DeBERTa-v2, es probable que esté limitado a 512 tokens, lo que podría truncar prompts largos.
 - No es un sustituto de una estrategia de seguridad integral; debe combinarse con otras medidas como sanitización de entradas, límites de tasa y monitoreo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/meta-llama/Llama-Prompt-Guard-2-86M
+- Hugging Face: https://huggingface.co/meta-llama/Llama-Prompt-Guard-2-86M
 - No se han encontrado papers, blogs o repositorios adicionales en la información proporcionada.

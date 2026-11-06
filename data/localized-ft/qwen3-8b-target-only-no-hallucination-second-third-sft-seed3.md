@@ -20,7 +20,7 @@ El modelo tiene 8.190.735.360 parámetros (8,19B), lo que lo sitúa en la gama d
 ## Arquitectura y entrenamiento
 El modelo es un fine-tune de unsloth/Qwen3-8B, que a su vez es una versión optimizada de Qwen3-8B. La arquitectura subyacente es un transformer decoder-only, tal como se describe en la documentación de Qwen3. Sin embargo, la model card no proporciona detalles sobre la arquitectura interna del fine-tune.
 
-El entrenamiento se realizó con la librería Unsloth y el framework TRL de HuggingFace, lo que permitió un entrenamiento 2 veces más rápido que un fine-tune convencional. El nombre del repositorio sugiere un proceso de SFT en dos o tres etapas ("second-third-sft") con un enfoque en reducir alucinaciones ("no-hallucination") y utilizando solo una parte de los datos ("target-only"). No se especifican el dataset utilizado, el número de tokens de entrenamiento ni si se aplicaron técnicas como RLHF o DPO.
+El entrenamiento se realizó con la librería Unsloth y el framework TRL de Hugging Face, lo que permitió un entrenamiento 2 veces más rápido que un fine-tune convencional. El nombre del repositorio sugiere un proceso de SFT en dos o tres etapas ("second-third-sft") con un enfoque en reducir alucinaciones ("no-hallucination") y utilizando solo una parte de los datos ("target-only"). No se especifican el dataset utilizado, el número de tokens de entrenamiento ni si se aplicaron técnicas como RLHF o DPO.
 
 ## Capacidades
 - Generación de texto en inglés: el modelo produce texto coherente y contextualmente relevante en inglés.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-R1-Distill-Qwen-1.5B-OPD-Skywork-7B-Step200 es un checkpoint de investigación de 1.78 mil millones de parámetros publicado por el usuario leizhao7 en HuggingFace. Se trata de un modelo estudiante obtenido mediante destilación on-policy (OPD, on-policy distillation) a partir de deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B, usando como profesor fijo el modelo Skywork-OR1-Math-7B. El checkpoint corresponde al paso 200 de entrenamiento, el punto final del experimento descrito en el paper "Why On-Policy Distillation Sometimes Fails: Vanishing Learning Signals" (arXiv:2610.11247).
+R1-Distill-Qwen-1.5B-OPD-Skywork-7B-Step200 es un checkpoint de investigación de 1.78 mil millones de parámetros publicado por el usuario leizhao7 en Hugging Face. Se trata de un modelo estudiante obtenido mediante destilación on-policy (OPD, on-policy distillation) a partir de deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B, usando como profesor fijo el modelo Skywork-OR1-Math-7B. El checkpoint corresponde al paso 200 de entrenamiento, el punto final del experimento descrito en el paper "Why On-Policy Distillation Sometimes Fails: Vanishing Learning Signals" (arXiv:2610.11247).
 
 Su propósito principal es reproducir y estudiar los efectos de la destilación on-policy sobre el razonamiento matemático en modelos pequeños. Tras 200 actualizaciones, la precisión media (avg@8) macro sobre AIME24, AIME25 y AMC23 pasó del 39,85 % del estudiante inicial al 46,12 %, una mejora de 6,27 puntos porcentuales. El modelo conserva la arquitectura Qwen2 del estudiante base y hereda sus capacidades de razonamiento tipo DeepSeek-R1, por lo que resulta relevante para investigadores que trabajan en destilación de modelos de razonamiento compactos y para quienes buscan un modelo matemático ligero con pesos bajo licencia MIT.
 
@@ -61,7 +61,7 @@ El estudiante inicial (paso 0) obtenía 39,85 % de media macro, por lo que la me
 - VRAM estimada para inferencia: con 1,78B de parámetros en bf16 (3,6 GB de pesos), se estima en torno a 4-6 GB de VRAM incluyendo KV cache; con cuantización a 4 bits (no publicada oficialmente) cabría en ~2 GB, aunque no hay cuantizaciones oficiales disponibles.
 - GPUs recomendadas: cualquier GPU de consumo con 6 GB o más es suficiente (RTX 3060, RTX 4060, RTX 4090); no se requieren A100 ni H100 para inferencia.
 - Cabe con holgura en GPUs de consumo: sí, en prácticamente cualquier GPU moderna de 6 GB o más; también es viable en CPU mediante llama.cpp si se convierte a GGUF (conversión no publicada oficialmente).
-- Opciones de despliegue: Transformers 4.56.2 o superior con PyTorch y Accelerate (ejemplo oficial en la model card con `AutoModelForCausalLM` y `AutoTokenizer`); compatible con text-generation-inference y endpoints de HuggingFace según los tags del repo; no hay soporte oficial documentado para vLLM, Ollama o TGI.
+- Opciones de despliegue: Transformers 4.56.2 o superior con PyTorch y Accelerate (ejemplo oficial en la model card con `AutoModelForCausalLM` y `AutoTokenizer`); compatible con text-generation-inference y endpoints de Hugging Face según los tags del repo; no hay soporte oficial documentado para vLLM, Ollama o TGI.
 - Latencia y throughput: no disponibles; al ser un modelo denso de 1,78B, se esperan latencias bajas en GPU de consumo, pero no hay medidas publicadas.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ El estudiante inicial (paso 0) obtenía 39,85 % de media macro, por lo que la me
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leizhao7/R1-Distill-Qwen-1.5B-OPD-Skywork-7B-Step200
+- Modelo en Hugging Face: https://huggingface.co/leizhao7/R1-Distill-Qwen-1.5B-OPD-Skywork-7B-Step200
 - Paper (arXiv): https://arxiv.org/abs/2610.11247
 - Pagina del proyecto: https://leizhao7.github.io/opd-learning-signals/
 - Codigo y resultados numericos: https://github.com/leizhao7/opd-learning-signals

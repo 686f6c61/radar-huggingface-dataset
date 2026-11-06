@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`weightspacelabs/hf_legacy_mmap_reconstruction` es un checkpoint publicado en HuggingFace por el usuario `weightspacelabs` dentro de la iniciativa `wsl-bench` (weight-space learning benchmark). La model card lo describe de forma escueta como «SANE checkpoint for the wsl-bench benchmark», lo que indica que se trata de un artefacto de pesos asociado a un banco de pruebas de aprendizaje en el espacio de pesos, no de un modelo de lenguaje convencional con ficha de uso, arquitectura o resultados publicados. El repositorio ocupa 2,4 GB, se creó el 18 de septiembre de 2026 y no registra descargas ni «likes».
+`weightspacelabs/hf_legacy_mmap_reconstruction` es un checkpoint publicado en Hugging Face por el usuario `weightspacelabs` dentro de la iniciativa `wsl-bench` (weight-space learning benchmark). La model card lo describe de forma escueta como «SANE checkpoint for the wsl-bench benchmark», lo que indica que se trata de un artefacto de pesos asociado a un banco de pruebas de aprendizaje en el espacio de pesos, no de un modelo de lenguaje convencional con ficha de uso, arquitectura o resultados publicados. El repositorio ocupa 2,4 GB, se creó el 18 de septiembre de 2026 y no registra descargas ni «likes».
 
 La etiqueta `library_name: sane` y el campo `sane_commit` (`be4fa0406ed0366f8b01405373d4aecbcb71c886`) apuntan a un framework de carga propio llamado «sane», que no está documentado en la información disponible. La model card únicamente aporta un fragmento de configuración YAML para declarar el modelo como un `meta_model` de nombre `checkpoint` mediante la referencia `hf://weightspacelabs/hf_legacy_mmap_reconstruction`, y la procedencia de la subida, atribuida al usuario `wsl-ul`.
 
@@ -90,6 +90,6 @@ No disponible. La informacion proporcionada no identifica modelos comparables, n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/weightspacelabs/hf_legacy_mmap_reconstruction
+- Hugging Face: https://huggingface.co/weightspacelabs/hf_legacy_mmap_reconstruction
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web disponible; los resultados obtenidos no guardan relacion con este modelo.

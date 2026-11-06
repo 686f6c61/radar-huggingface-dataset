@@ -77,18 +77,18 @@ No se han publicado resultados de benchmarks en la información disponible más 
 - VRAM estimada: menos de 1 GB en FP32 para inferencia; en CPU la memoria RAM necesaria es de aproximadamente 133 MB para los pesos.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM (p. ej., GTX 1050 Ti, RTX 3050); también funciona en CPU sin GPU.
 - Cabe en GPU de consumo: sí, en cualquier GPU moderna, y también en dispositivos edge con pocos recursos.
-- Opciones de despliegue: compatible con transformers, HuggingFace Inference Endpoints, Text Embeddings Inference (TEI), y puede exportarse a ONNX para optimización en CPU.
+- Opciones de despliegue: compatible con transformers, Hugging Face Inference Endpoints, Text Embeddings Inference (TEI), y puede exportarse a ONNX para optimización en CPU.
 - Latencia: el autor declara latencias inferiores a 10 ms en CPU para inferencia de un solo ejemplo, lo que lo hace adecuado para servicios de alta concurrencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | MNLI (Matched) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **NanoTitan-NLI** | 33,3M | 512 | 85,35 % | MIT | HuggingFace |
-| `bert-base-uncased-mnli` | 110M | 512 | 84,50 % | Apache 2.0 | HuggingFace |
-| `distilbert-base-uncased-mnli` | 66M | 512 | 82,50 % | Apache 2.0 | HuggingFace |
-| `prajjwal1/bert-small-mnli` | 28,8M | 512 | 81,80 % | Apache 2.0 | HuggingFace |
-| `MoritzLaurer/deberta-v3-base-zeroshot` | 180M | 512 | 90,40 % | MIT | HuggingFace |
+| **NanoTitan-NLI** | 33,3M | 512 | 85,35 % | MIT | Hugging Face |
+| `bert-base-uncased-mnli` | 110M | 512 | 84,50 % | Apache 2.0 | Hugging Face |
+| `distilbert-base-uncased-mnli` | 66M | 512 | 82,50 % | Apache 2.0 | Hugging Face |
+| `prajjwal1/bert-small-mnli` | 28,8M | 512 | 81,80 % | Apache 2.0 | Hugging Face |
+| `MoritzLaurer/deberta-v3-base-zeroshot` | 180M | 512 | 90,40 % | MIT | Hugging Face |
 
 NanoTitan-NLI ofrece un mejor rendimiento que BERT-Base y DistilBERT con menos parámetros, pero es superado por modelos DeBERTa más grandes. Su principal ventaja es el equilibrio entre tamaño y precisión para entornos con restricciones de memoria.
 
@@ -102,7 +102,7 @@ NanoTitan-NLI ofrece un mejor rendimiento que BERT-Base y DistilBERT con menos p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blueprint-ai/NanoTitan-NLI
+- Modelo en Hugging Face: https://huggingface.co/blueprint-ai/NanoTitan-NLI
 - Modelo base: https://huggingface.co/microsoft/MiniLM-L12-H384-uncased
 - Datasets de entrenamiento: MultiNLI (https://huggingface.co/datasets/nyu-mll/multi_nli), AG News (https://huggingface.co/datasets/fancyzhx/ag_news), SST-2 (https://huggingface.co/datasets/SetFit/sst2), TweetEval (https://huggingface.co/datasets/cardiffnlp/tweet_eval), Subj (https://huggingface.co/datasets/SetFit/subj), Rotten Tomatoes (https://huggingface.co/datasets/cornell-movie-review-data/rotten_tomatoes)
 - No se han encontrado papers, blogs o demos adicionales en la búsqueda web.

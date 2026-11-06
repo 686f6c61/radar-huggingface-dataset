@@ -110,7 +110,7 @@ En los benchmarks publicados, Qwen3-4B-Instruct-2507 supera a GPT-4.1-nano en MM
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Khawarr/Qwen3-4B-Instruct-2507-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Khawarr/Qwen3-4B-Instruct-2507-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/main/LICENSE
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

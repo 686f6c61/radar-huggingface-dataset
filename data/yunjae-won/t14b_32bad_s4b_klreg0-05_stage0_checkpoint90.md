@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `yunjae-won/T14b_32bad_S4b_klreg0.05_stage0_checkpoint90` es un checkpoint de pesos en formato safetensors publicado por el usuario yunjae-won en HuggingFace. Por la nomenclatura del repositorio (`stage0_checkpoint90`) y por la ausencia de model card, todo apunta a un artefacto intermedio de un proceso de entrenamiento o ajuste, no a un modelo final preparado para distribucion general. El tag declarado es `qwen3`, lo que sugiere que deriva de la familia Qwen3, aunque la configuracion concreta no esta documentada en la informacion disponible.
+El modelo identificado como `yunjae-won/T14b_32bad_S4b_klreg0.05_stage0_checkpoint90` es un checkpoint de pesos en formato safetensors publicado por el usuario yunjae-won en Hugging Face. Por la nomenclatura del repositorio (`stage0_checkpoint90`) y por la ausencia de model card, todo apunta a un artefacto intermedio de un proceso de entrenamiento o ajuste, no a un modelo final preparado para distribucion general. El tag declarado es `qwen3`, lo que sugiere que deriva de la familia Qwen3, aunque la configuracion concreta no esta documentada en la informacion disponible.
 
 El repositorio contiene 4.022.468.096 parametros (aproximadamente 4,02 mil millones) y ocupa 8,1 GB, un tamano coherente con pesos almacenados en precision bf16 o fp16 (4,02B x 2 bytes = 8,04 GB). No se declara licencia, idiomas soportados, pipeline de inferencia ni tarea objetivo. En el momento de la consulta acumula 6 descargas y 0 likes, lo que indica una difusion practicamente nula y ninguna validacion por parte de la comunidad.
 
@@ -48,7 +48,7 @@ Los siguientes escenarios son plantillas de evaluacion, no recomendaciones de de
 - Reproduccion de experimentos academicos: un grupo que siga esta linea de trabajo podria cargar los pesos con `transformers` y continuar o replicar el proceso descrito en el identificador.
 - Evaluacion comparativa de checkpoints intermedios: medir tareas sencillas de generacion sobre distintas iteraciones para trazar curvas de aprendizaje.
 - Pruebas de infraestructura de inferencia: sus 4,02 B de parametros permiten validar pipelines de carga, cuantizacion y servicio en GPUs de gama media sin necesidad de clústeres grandes.
-- Docencia sobre formatos de pesos: el repositorio sirve como ejemplo practico de estructura de safetensors, sharding y metadatos en HuggingFace.
+- Docencia sobre formatos de pesos: el repositorio sirve como ejemplo practico de estructura de safetensors, sharding y metadatos en Hugging Face.
 
 En ningun caso se recomienda su uso en atencion al cliente, generacion de codigo en produccion, analisis documental ni cualquier aplicacion orientada al usuario final sin una evaluacion exhaustiva previa, dado que se desconoce su licencia y su calidad real.
 
@@ -97,6 +97,6 @@ La diferencia principal no esta en el tamano, sino en el soporte: las tres alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yunjae-won/T14b_32bad_S4b_klreg0.05_stage0_checkpoint90
+- Modelo en Hugging Face: https://huggingface.co/yunjae-won/T14b_32bad_S4b_klreg0.05_stage0_checkpoint90
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.
 - Los resultados devueltos por la busqueda web corresponden a ejercicios de gramatica francesa (francaisfacile.com) y no guardan ninguna relacion con el modelo, por lo que se descartan como fuentes.

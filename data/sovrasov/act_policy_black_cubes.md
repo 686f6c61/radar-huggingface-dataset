@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`act_policy_black_cubes` es una politica de imitacion (imitation learning) para robotica real, publicada por el usuario sovrasov en HuggingFace Hub y entrenada con LeRobot. Implementa el metodo ACT (Action Chunking with Transformers, arXiv:2304.13705), que en lugar de predecir una unica accion por paso predice un bloque corto de acciones futuras (action chunking) a partir de observaciones visuales y de estado. El modelo resuelve una tarea concreta de manipulacion: recoger un cubo negro y depositarlo en un contenedor de carton.
+`act_policy_black_cubes` es una politica de imitacion (imitation learning) para robotica real, publicada por el usuario sovrasov en Hugging Face Hub y entrenada con LeRobot. Implementa el metodo ACT (Action Chunking with Transformers, arXiv:2304.13705), que en lugar de predecir una unica accion por paso predice un bloque corto de acciones futuras (action chunking) a partir de observaciones visuales y de estado. El modelo resuelve una tarea concreta de manipulacion: recoger un cubo negro y depositarlo en un contenedor de carton.
 
 Arquitectonicamente es un transformer encoder-decoder con componente CVAE, con 51.668.614 parametros reales en safetensors (unos 51,7 millones) y un repositorio de 0,2 GB. No es un modelo de lenguaje: consume dos flujos de imagen RGB de 480x640 (camaras `top` y `wrist`) mas un vector de estado de 6 dimensiones, y produce un vector de accion de 6 dimensiones. Su relevancia es la de un ejemplo reproducible y ligero de politica visomotora entrenada de extremo a extremo con el stack de LeRobot, util como punto de partida para fine-tuning, comparacion de metodos de imitacion y despliegue en robots de bajo coste.
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Tipo | Parametros | Contexto / chunk | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sovrasov/act_policy_black_cubes | ACT (transformer + CVAE, action chunking) | 51,7 M | chunk de acciones, tamano no disponible | 42 episodios, 16.962 fotogramas, 1 tarea | apache-2.0 | HuggingFace Hub, via LeRobot |
+| sovrasov/act_policy_black_cubes | ACT (transformer + CVAE, action chunking) | 51,7 M | chunk de acciones, tamano no disponible | 42 episodios, 16.962 fotogramas, 1 tarea | apache-2.0 | Hugging Face Hub, via LeRobot |
 | ACT original (tonyzhaozh/act, paper arXiv:2304.13705) | ACT (transformer + CVAE, action chunking) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | repositorio de codigo del paper; pesos no verificados |
 | Diffusion Policy (arXiv:2303.04137) | politica generativa por difusion | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | implementaciones publicas de terceros; no verificado |
 | Politicas VLA ligeras (por ejemplo SmolVLA) | vision-lenguaje-accion | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | no verificado |
@@ -99,7 +99,7 @@ La comparacion cuantitativa no es posible con los datos disponibles: no se han p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sovrasov/act_policy_black_cubes
+- Modelo en Hugging Face: https://huggingface.co/sovrasov/act_policy_black_cubes
 - Dataset referenciado en la model card: https://huggingface.co/datasets/local/pick-black-cubes-room-2
 - Visualizacion del dataset (LeRobot Spaces): https://huggingface.co/spaces/lerobot/visualize_dataset?path=local/pick-black-cubes-room-2
 - Paper de ACT: https://huggingface.co/papers/2304.13705

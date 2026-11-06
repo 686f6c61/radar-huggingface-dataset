@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`foxdream/ardy-cpp` es un repositorio publicado en HuggingFace por el usuario `foxdream` bajo licencia MIT. El nombre sugiere un componente orientado a C++ (posiblemente un runtime, bindings o artefacto compilado asociado a un modelo llamado "ardy"), pero la model card asociada no contiene descripcion tecnica alguna: unicamente declara la licencia MIT. No hay informacion sobre arquitectura, parametros, contexto ni datos de entrenamiento.
+`foxdream/ardy-cpp` es un repositorio publicado en Hugging Face por el usuario `foxdream` bajo licencia MIT. El nombre sugiere un componente orientado a C++ (posiblemente un runtime, bindings o artefacto compilado asociado a un modelo llamado "ardy"), pero la model card asociada no contiene descripcion tecnica alguna: unicamente declara la licencia MIT. No hay informacion sobre arquitectura, parametros, contexto ni datos de entrenamiento.
 
 El repositorio tiene un tamano de 0,7 GB y esta etiquetado con `onnx`, lo que indica que los pesos o artefactos se distribuyen en formato ONNX. No se declara pipeline de inferencia, idiomas soportados ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 3 de noviembre de 2026.
 
@@ -76,5 +76,5 @@ No disponible. No se puede identificar una categoria de modelo comparable sin co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/foxdream/ardy-cpp
+- Repositorio en Hugging Face: https://huggingface.co/foxdream/ardy-cpp
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

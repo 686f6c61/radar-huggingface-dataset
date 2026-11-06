@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Anuu es un modelo publicado en HuggingFace por el usuario Shivasosvaiv bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye el campo de licencia en el frontmatter YAML, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones (likes) en el momento de la consulta, y no tiene pipeline de inferencia declarado.
+Anuu es un modelo publicado en Hugging Face por el usuario Shivasosvaiv bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye el campo de licencia en el frontmatter YAML, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones (likes) en el momento de la consulta, y no tiene pipeline de inferencia declarado.
 
 No es posible determinar qué problema resuelve, qué arquitectura emplea ni cuál es su longitud de contexto a partir de la información disponible. La fecha de creación y última actualización del repositorio es la misma (2026-11-02), lo que sugiere una publicación sin iteraciones posteriores documentadas. Cualquier evaluación de idoneidad para producción requiere inspeccionar directamente los archivos de pesos del repositorio, que no se han proporcionado en esta ficha.
 
@@ -44,7 +44,7 @@ No es posible recomendar casos de uso concretos sin información verificable sob
 - Análisis comparativo de modelos de licencia permisiva: el modelo puede servir como referencia en estudios sobre modelos Apache 2.0, dado que su licencia permite uso comercial sin restricciones adicionales.
 - Prototipado interno: uso en entornos de desarrollo no críticos, con validación manual de las salidas.
 - Fine-tuning exploratorio: la licencia Apache 2.0 permite adaptación y redistribución de derivados, previa verificación de los requisitos de atribución.
-- Docencia y formación: uso como ejemplo de publicación de modelos en HuggingFace y de buenas prácticas de documentación (o de su ausencia).
+- Docencia y formación: uso como ejemplo de publicación de modelos en Hugging Face y de buenas prácticas de documentación (o de su ausencia).
 
 ## Benchmarks y rendimiento
 
@@ -74,5 +74,5 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shivasosvaiv/Anuu
+- Repositorio en Hugging Face: https://huggingface.co/Shivasosvaiv/Anuu
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

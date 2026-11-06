@@ -1,9 +1,9 @@
 # cnfeichen/Diy-VLM
 
 ## Resumen
-Diy-VLM es un modelo visual-lenguaje mínimo publicado por cnfeichen en HuggingFace, concebido como material didáctico para construir y entrenar un pipeline VLM completo desde cero. Combina un codificador ViT, un proyector MLP de dos capas al estilo LLaVA y un modelo de lenguaje RoPE-GPT de dos capas; el conjunto tiene 183.406 parámetros entrenables y un vocabulario de 36 tokens. No es un modelo general: está diseñado para tareas de VQA y descripción de imágenes de dígitos manuscritos MNIST.
+Diy-VLM es un modelo visual-lenguaje mínimo publicado por cnfeichen en Hugging Face, concebido como material didáctico para construir y entrenar un pipeline VLM completo desde cero. Combina un codificador ViT, un proyector MLP de dos capas al estilo LLaVA y un modelo de lenguaje RoPE-GPT de dos capas; el conjunto tiene 183.406 parámetros entrenables y un vocabulario de 36 tokens. No es un modelo general: está diseñado para tareas de VQA y descripción de imágenes de dígitos manuscritos MNIST.
 
-Su relevancia es docente y reproducible: el autor indica que las cuatro fases de entrenamiento se completan en CPU en unos 10 minutos, con resultados de 88,6 % en VQA y 89,7 % en descripción sobre las primeras 1.000 imágenes del conjunto de test de MNIST. La longitud de contexto no se documenta y no se declaran idiomas ni capacidades generales. La licencia es MIT según la model card, aunque la metadata de HuggingFace no la declara.
+Su relevancia es docente y reproducible: el autor indica que las cuatro fases de entrenamiento se completan en CPU en unos 10 minutos, con resultados de 88,6 % en VQA y 89,7 % en descripción sobre las primeras 1.000 imágenes del conjunto de test de MNIST. La longitud de contexto no se documenta y no se declaran idiomas ni capacidades generales. La licencia es MIT según la model card, aunque la metadata de Hugging Face no la declara.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -14,7 +14,7 @@ Su relevancia es docente y reproducible: el autor indica que las cuatro fases de
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; no se documentan variantes cuantizadas |
 | Idiomas soportados | no disponible; vocabulario de 36 tokens específico del proyecto |
-| Licencia | MIT (según model card; no declarada en la metadata de HuggingFace) |
+| Licencia | MIT (según model card; no declarada en la metadata de Hugging Face) |
 | Formato de pesos | checkpoint PyTorch `.pt` con `state_dict` y vocabulario `stoi.json` |
 
 ## Arquitectura y entrenamiento
@@ -64,7 +64,7 @@ No se han publicado resultados comparativos con otros modelos en la información
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Diy-VLM | 183.406 | no disponible | MIT | HuggingFace y GitHub |
+| Diy-VLM | 183.406 | no disponible | MIT | Hugging Face y GitHub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 No se han proporcionado datos de otros VLM mínimos didácticos comparables, por lo que no se establece una comparación cuantitativa de rendimiento, contexto o licencia.
@@ -75,13 +75,13 @@ No se han proporcionado datos de otros VLM mínimos didácticos comparables, por
 - No se declaran idiomas soportados; el vocabulario está definido por el proyecto y no se documenta multilingüismo.
 - Riesgo de alucinación en descripciones y respuestas VQA, especialmente fuera de las condiciones de evaluación reportadas.
 - No se documentan RLHF, DPO ni mecanismos de alineación o seguridad.
-- La licencia MIT se indica en la model card, pero no está declarada en la metadata de HuggingFace; conviene verificar los archivos antes de un uso comercial.
-- El repositorio de HuggingFace figura con un tamaño de 0,0 GB y sin descargas ni likes, por lo que la disponibilidad efectiva de los pesos no se puede verificar desde los metadatos.
+- La licencia MIT se indica en la model card, pero no está declarada en la metadata de Hugging Face; conviene verificar los archivos antes de un uso comercial.
+- El repositorio de Hugging Face figura con un tamaño de 0,0 GB y sin descargas ni likes, por lo que la disponibilidad efectiva de los pesos no se puede verificar desde los metadatos.
 - No es apto para producción: es una demostración didáctica sin endurecimiento, filtros de seguridad ni garantías de latencia.
 - La longitud de contexto no está documentada; no debe asumirse soporte para conversaciones o contextos largos.
 - Los benchmarks se limitan a las primeras 1.000 imágenes de test de MNIST y no permiten extrapolar rendimiento a otros datasets.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/cnfeichen/Diy-VLM
+- Hugging Face: https://huggingface.co/cnfeichen/Diy-VLM
 - GitHub: https://github.com/vicfei/Diy-VLM
 - Paper, blog y demo: no disponibles en la información proporcionada.

@@ -76,8 +76,8 @@ La comparativa se basa en los modelos base, ya que no hay datos especificos de e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Subhrajyoti75/qwen2.5-3b-cot-pricing-gguf
-- Coleccion Qwen2.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen25
+- Repositorio Hugging Face: https://huggingface.co/Subhrajyoti75/qwen2.5-3b-cot-pricing-gguf
+- Coleccion Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25
 - Pagina del modelo base Qwen2.5-3B: https://huggingface.co/Qwen/Qwen2.5-3B
 - Referencia de la familia Qwen2.5 (precios y API): https://www.llmreference.com/model-family/qwen2.5
 - Comparativa de SLMs (Phi, Qwen, Llama): https://checkthat.ai/answers/what-are-the-best-small-language-models

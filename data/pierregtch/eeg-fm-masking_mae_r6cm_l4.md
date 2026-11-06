@@ -2,7 +2,7 @@
 
 ## Resumen
 
-eeg-fm-masking_mae_r6cm_L4 es un codificador (encoder) de electroencefalografía (EEG) preentrenado mediante un autoencoder enmascarado (masked autoencoder, MAE). Lo desarrolla Pierre Gtch (usuario de HuggingFace `PierreGtch`) en el marco del artículo *What masking geometry works best for EEG foundation models? A controlled evaluation across MAE and JEPA*. Se trata de un modelo fundacional para señales EEG: aprende representaciones transferibles que después se congelan y se evalúan con una sonda lineal (ridge) sobre 12 conjuntos de datos de OpenEEGBench. El problema que aborda es la falta de representaciones generalistas y reutilizables para EEG, una modalidad con montajes de electrodos, frecuencias de muestreo y tareas muy heterogéneas.
+eeg-fm-masking_mae_r6cm_L4 es un codificador (encoder) de electroencefalografía (EEG) preentrenado mediante un autoencoder enmascarado (masked autoencoder, MAE). Lo desarrolla Pierre Gtch (usuario de Hugging Face `PierreGtch`) en el marco del artículo *What masking geometry works best for EEG foundation models? A controlled evaluation across MAE and JEPA*. Se trata de un modelo fundacional para señales EEG: aprende representaciones transferibles que después se congelan y se evalúan con una sonda lineal (ridge) sobre 12 conjuntos de datos de OpenEEGBench. El problema que aborda es la falta de representaciones generalistas y reutilizables para EEG, una modalidad con montajes de electrodos, frecuencias de muestreo y tareas muy heterogéneas.
 
 El modelo forma parte de una familia de 58 codificadores entrenados con una receta idéntica en la que solo cambia la geometría del enmascaramiento: 5 radios espaciales × 6 longitudes temporales × 2 marcos (MAE y JEPA). Esta variante concreta usa un radio espacial de máscara r = 6 cm, una longitud temporal L = 4 parches y una fracción de parches sin enmascarar del 45 % (`pct_unmasked = 0.45`). El codificador tiene 12,69 millones de parámetros, es agnóstico al montaje (acepta cualquier número y disposición de canales siempre que tengan posición 3D) y opera a una frecuencia de muestreo fija de 200 Hz.
 
@@ -112,7 +112,7 @@ No se dispone en la información proporcionada de comparativas frente a codifica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r6cm_L4
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r6cm_L4
 - Colección completa de los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366
 - Configuración recomendada (MAE, r = 9 cm, L = 2): https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L2
 - Configuración recomendada (JEPA, r = 9 cm, L = 2): https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L2

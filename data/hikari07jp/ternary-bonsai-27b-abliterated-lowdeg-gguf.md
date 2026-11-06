@@ -123,7 +123,7 @@ La busqueda web realizada no devolvio informacion relevante sobre modelos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hikari07jp/Ternary-Bonsai-27B-Abliterated-LowDeg-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Hikari07jp/Ternary-Bonsai-27B-Abliterated-LowDeg-GGUF
 - Modelo base (PrismML): https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf
 - Fork PrismML de llama.cpp: https://github.com/PrismML-Eng/llama.cpp
 - Drafter DSpark opcional (`Ternary-Bonsai-27B-dspark-Q4_1.gguf`): disponible en el repositorio del modelo base

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una política de difusión (Diffusion Policy) para control visuomotor en robótica, desarrollada por el usuario CatGoesMeow y entrenada con la librería LeRobot de HuggingFace. Trata el control de robots como un proceso generativo de difusión: a partir de observaciones (imágenes y estados del robot), genera trayectorias de acción suaves y multi-paso, una técnica especialmente eficaz en tareas de manipulación con contacto rico, como la selección y ensamblaje de piezas pequeñas.
+Este modelo es una política de difusión (Diffusion Policy) para control visuomotor en robótica, desarrollada por el usuario CatGoesMeow y entrenada con la librería LeRobot de Hugging Face. Trata el control de robots como un proceso generativo de difusión: a partir de observaciones (imágenes y estados del robot), genera trayectorias de acción suaves y multi-paso, una técnica especialmente eficaz en tareas de manipulación con contacto rico, como la selección y ensamblaje de piezas pequeñas.
 
 El modelo está especializado en una tarea concreta: la selección de tuercas y tornillos, entrenado sobre un dataset de 100 episodios capturados en agosto (CatGoesMeow/100eps_Selection_Nuts_Bolt_Aug_10). Es una variante de inferencia del modelo base DIFFUSION-100eps-Selection-Nuts-Bolt-Aug-10-Step50k-Batch64, configurada con el scheduler DDIM y 16 pasos de inferencia para acelerar la generación de acciones en tiempo real. Con 266 millones de parámetros, es un modelo compacto que puede ejecutarse en GPUs de consumo.
 
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CatGoesMeow/DIFFUSION-DDIM16-100eps-Selection-Nuts-Bolt-Aug-10-Step50k-Batch64
+- Modelo en Hugging Face: https://huggingface.co/CatGoesMeow/DIFFUSION-DDIM16-100eps-Selection-Nuts-Bolt-Aug-10-Step50k-Batch64
 - Modelo base (DDPM, 100 pasos): https://huggingface.co/CatGoesMeow/DIFFUSION-100eps-Selection-Nuts-Bolt-Aug-10-Step50k-Batch64
 - Dataset de entrenamiento: https://huggingface.co/datasets/CatGoesMeow/100eps_Selection_Nuts_Bolt_Aug_10
 - Paper de Diffusion Policy: https://huggingface.co/papers/2303.04137

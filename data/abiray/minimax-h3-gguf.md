@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Abiray/MiniMax-H3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Abiray/MiniMax-H3-GGUF
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Versión podada para GPUs de consumo: https://huggingface.co/Abiray/MiniMax-H3-Pruned-GGUF

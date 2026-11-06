@@ -2,9 +2,9 @@
 
 ## Resumen
 
-D-240357/legal-gpt2-decoder es un modelo alojado en HuggingFace por el usuario D-240357, cuyo nombre sugiere una arquitectura decoder-only basada en GPT-2 ajustada para el dominio legal o juridico. El repositorio tiene un tamano de 82,8 GB, lo que resulta atipico para la familia GPT-2 clasica y podria indicar la presencia de multiples checkpoints, estados de optimizador o pesos en varios formatos. No se dispone de informacion publica sobre el numero de parametros, la longitud de contexto ni la composicion del dataset de entrenamiento.
+D-240357/legal-gpt2-decoder es un modelo alojado en Hugging Face por el usuario D-240357, cuyo nombre sugiere una arquitectura decoder-only basada en GPT-2 ajustada para el dominio legal o juridico. El repositorio tiene un tamano de 82,8 GB, lo que resulta atipico para la familia GPT-2 clasica y podria indicar la presencia de multiples checkpoints, estados de optimizador o pesos en varios formatos. No se dispone de informacion publica sobre el numero de parametros, la longitud de contexto ni la composicion del dataset de entrenamiento.
 
-El modelo se publico el 2 de octubre de 2026 y se actualizo el 3 de octubre de 2026. Acumula 17 descargas y 0 likes, por lo que se trata de un artefacto praticamente sin adopcion ni validacion por parte de la comunidad. La ficha de HuggingFace no declara licencia, idiomas soportados ni pipeline, lo que limita seriamente cualquier evaluacion de idoneidad para produccion.
+El modelo se publico el 2 de octubre de 2026 y se actualizo el 3 de octubre de 2026. Acumula 17 descargas y 0 likes, por lo que se trata de un artefacto praticamente sin adopcion ni validacion por parte de la comunidad. La ficha de Hugging Face no declara licencia, idiomas soportados ni pipeline, lo que limita seriamente cualquier evaluacion de idoneidad para produccion.
 
 Dada la ausencia de documentacion tecnica (model card, paper o blog asociado) y de resultados de benchmarks, esta ficha se limita a recoger los metadatos disponibles en el repositorio. Cualquier afirmacion sobre capacidades, rendimiento o arquitectura interna debe considerarse no verificada.
 
@@ -25,7 +25,7 @@ Metadatos adicionales del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | D-240357/legal-gpt2-decoder |
+| ID en Hugging Face | D-240357/legal-gpt2-decoder |
 | Autor | D-240357 |
 | Fecha de creacion | 2026-10-02 |
 | Ultima actualizacion | 2026-10-03 |
@@ -91,5 +91,5 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/D-240357/legal-gpt2-decoder
+- Modelo en Hugging Face: https://huggingface.co/D-240357/legal-gpt2-decoder
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada.

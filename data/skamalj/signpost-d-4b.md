@@ -94,8 +94,8 @@ Hubo cuatro ejecuciones en `test` para este modelo y sus candidatos: dos mezclas
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Signpost-D 4B | 4,5B | 8.192 tokens por pregunta | Decisiones tipadas con probabilidades (noul/choice/score) | Apache-2.0 | HuggingFace, vLLM nightly |
-| Qwen/Qwen3.5-4B (base) | 4,5B | no disponible | Generación de texto y visión | no disponible en la información | HuggingFace |
+| Signpost-D 4B | 4,5B | 8.192 tokens por pregunta | Decisiones tipadas con probabilidades (noul/choice/score) | Apache-2.0 | Hugging Face, vLLM nightly |
+| Qwen/Qwen3.5-4B (base) | 4,5B | no disponible | Generación de texto y visión | no disponible en la información | Hugging Face |
 | Prior (ignora la entrada) | n/a | n/a | Línea base del benchmark | n/a | n/a |
 | Uniform | n/a | n/a | Línea base del benchmark | n/a | n/a |
 
@@ -116,7 +116,7 @@ No se dispone de datos de otros modelos de decisión comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skamalj/signpost-d-4b
+- Modelo en Hugging Face: https://huggingface.co/skamalj/signpost-d-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset del benchmark: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - Predicciones del split `test`: https://huggingface.co/skamalj/signpost-d-4b/blob/main/typed_decisions_test_predictions.json

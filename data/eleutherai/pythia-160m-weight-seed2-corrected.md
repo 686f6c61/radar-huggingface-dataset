@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EleutherAI/pythia-160m-weight-seed2-corrected
+- Modelo en Hugging Face: https://huggingface.co/EleutherAI/pythia-160m-weight-seed2-corrected
 - Repositorio del programa Pythia (EleutherAI): no disponible en la información proporcionada
 - Paper de Pythia: no disponible en la información proporcionada
 - Blog de EleutherAI sobre Pythia: no disponible en la información proporcionada

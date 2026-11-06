@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo wz7475/qwen2.5-7b-instruct-katcher-med-ewc-oasst1-r1000 es un ajuste fino publicado en HuggingFace por el usuario wz7475, derivado del modelo base Qwen2.5-7B-Instruct. El identificador del repositorio sugiere una especializacion en dominio medico ("med"), un entrenamiento de ajuste continuo mediante Elastic Weight Consolidation ("ewc"), el uso parcial del dataset OpenAssistant/oasst1 y algun tipo de configuracion asociada al sufijo "r1000" (posiblemente rango de LoRA o numero de pasos, sin confirmar). No existe documentacion tecnica publicada mas alla de una plantilla de model card autogenerada por el Hub.
+El modelo wz7475/qwen2.5-7b-instruct-katcher-med-ewc-oasst1-r1000 es un ajuste fino publicado en Hugging Face por el usuario wz7475, derivado del modelo base Qwen2.5-7B-Instruct. El identificador del repositorio sugiere una especializacion en dominio medico ("med"), un entrenamiento de ajuste continuo mediante Elastic Weight Consolidation ("ewc"), el uso parcial del dataset OpenAssistant/oasst1 y algun tipo de configuracion asociada al sufijo "r1000" (posiblemente rango de LoRA o numero de pasos, sin confirmar). No existe documentacion tecnica publicada mas alla de una plantilla de model card autogenerada por el Hub.
 
 El modelo no aporta informacion sobre arquitectura propia, datos de entrenamiento, hiperparametros, evaluacion ni licencia. El unico dato objetivo disponible es que el repositorio ocupa aproximadamente 0,3 GB, un tamano muy inferior a los ~15 GB que requeriria un checkpoint completo de 7B en bf16, lo que sugiere que podria tratarse de un adaptador LoRA, de pesos parciales o de un repo incompleto. Esta ambiguedad es relevante para cualquier evaluacion de produccion.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha recoge lo poco verificable que ofrece el repositorio y mar
 
 No se ha publicado informacion sobre la arquitectura de este ajuste fino. El nombre del repositorio apunta a una receta de aprendizaje continuo con Elastic Weight Consolidation (EWC), una tecnica que penaliza los cambios en pesos importantes para tareas previas con el fin de mitigar el olvido catastrofico al especializar un modelo en un nuevo dominio. El sufijo "oasst1" sugiere el uso del dataset OpenAssistant/oasst1, orientado a instrucciones y conversacion, y "med" apunta a un posible enfoque en contenido medico o clinico. Ninguno de estos elementos esta confirmado en la model card.
 
-Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion exacta del dataset, la existencia de fases de RLHF o DPO, ni innovaciones tecnicas concretas. La model card incluida es la plantilla autogenerada por HuggingFace, en la que todos los campos relevantes aparecen como "[More Information Needed]". El unico enlace tecnico en las etiquetas del repo (arxiv:1910.09700) corresponde a la referencia de Lacoste et al. (2019) sobre la calculadora de impacto ambiental, un texto que forma parte de la plantilla y no de la metodologia del modelo.
+Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion exacta del dataset, la existencia de fases de RLHF o DPO, ni innovaciones tecnicas concretas. La model card incluida es la plantilla autogenerada por Hugging Face, en la que todos los campos relevantes aparecen como "[More Information Needed]". El unico enlace tecnico en las etiquetas del repo (arxiv:1910.09700) corresponde a la referencia de Lacoste et al. (2019) sobre la calculadora de impacto ambiental, un texto que forma parte de la plantilla y no de la metodologia del modelo.
 
 ## Capacidades
 
@@ -66,10 +66,10 @@ Advertencia: el tamano real del repositorio (0,3 GB) no coincide con el de un ch
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| wz7475/qwen2.5-7b-instruct-katcher-med-ewc-oasst1-r1000 | no disponible | no disponible | no disponible | HuggingFace | Sin documentacion ni benchmarks |
-| Qwen2.5-7B-Instruct | 7,6 B | 131.072 tokens (con YaRN) | Apache 2.0 | HuggingFace, oficial | Modelo base, documentado y evaluado |
-| Llama-3.1-8B-Instruct | 8 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, Meta | Alternativa generalista comparable |
-| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.000 tokens | Apache 2.0 | HuggingFace, Mistral | Alternativa ligera de 7B |
+| wz7475/qwen2.5-7b-instruct-katcher-med-ewc-oasst1-r1000 | no disponible | no disponible | no disponible | Hugging Face | Sin documentacion ni benchmarks |
+| Qwen2.5-7B-Instruct | 7,6 B | 131.072 tokens (con YaRN) | Apache 2.0 | Hugging Face, oficial | Modelo base, documentado y evaluado |
+| Llama-3.1-8B-Instruct | 8 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, Meta | Alternativa generalista comparable |
+| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.000 tokens | Apache 2.0 | Hugging Face, Mistral | Alternativa ligera de 7B |
 
 La comparativa refleja unicamente datos publicos de los modelos alternativos; los del modelo evaluado no estan disponibles.
 
@@ -87,7 +87,7 @@ La comparativa refleja unicamente datos publicos de los modelos alternativos; lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-ewc-oasst1-r1000
+- Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-ewc-oasst1-r1000
 - Paper de EWC (referencia general, no vinculada al repo): https://arxiv.org/abs/1612.00796
 - Paper citado en las etiquetas (calculadora de impacto, parte de la plantilla): https://arxiv.org/abs/1910.09700
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

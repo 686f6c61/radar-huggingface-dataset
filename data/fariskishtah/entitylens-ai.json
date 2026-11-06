@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "fariskishtah/entitylens-ai",
+  "slug": "fariskishtah-entitylens-ai",
+  "author": "fariskishtah",
+  "url": "https://huggingface.co/fariskishtah/entitylens-ai",
+  "created_at": "2026-11-04T20:54:24.000Z",
+  "updated_at": "2026-11-04T21:08:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "named-entity-recognition",
+    "ner",
+    "conll2003",
+    "en",
+    "dataset:conll2003",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 107726601,
+  "parameters_human": "107.7M",
+  "storage_bytes": 539476097,
+  "storage_human": "539 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Named Entity Recognition",
+      "dataset": "CoNLL-2003 (English)",
+      "metric": "Test entity-F1 (strict seqeval)",
+      "value": 0.9178
+    },
+    {
+      "task": "Named Entity Recognition",
+      "dataset": "CoNLL-2003 (English)",
+      "metric": "Test precision",
+      "value": 0.9138
+    },
+    {
+      "task": "Named Entity Recognition",
+      "dataset": "CoNLL-2003 (English)",
+      "metric": "Test recall",
+      "value": 0.9217
+    }
+  ],
+  "sources": [
+    {
+      "title": "fariskishtah/entitylens-ai · Hugging Face",
+      "url": "https://huggingface.co/fariskishtah/entitylens-ai",
+      "snippet": "Token Classification model with 0.1B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "EntityLens AI - a Hugging Face Space by fariskishtah",
+      "url": "https://huggingface.co/spaces/fariskishtah/entitylens-ai",
+      "snippet": "EntityLens AI recognizes four entity types — Person, Organization, Location and Miscellaneous — with a bert-base-cased model fine-tuned on CoNLL-2003 (test F1 0.918)."
+    }
+  ]
+}

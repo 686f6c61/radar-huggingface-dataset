@@ -113,7 +113,7 @@ No se han publicado en la informacion disponible datos de modelos comparables (p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EliovpAI/Qwen3.8-27B-NEO-CODER-MAX-Q4_K_M-GGUF-Paiton-RDNA4
+- Repositorio en Hugging Face: https://huggingface.co/EliovpAI/Qwen3.8-27B-NEO-CODER-MAX-Q4_K_M-GGUF-Paiton-RDNA4
 - Fine-tune upstream (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Contrato completo de modelo y aritmetica: https://github.com/Eliovp-BV/paiton-vllm-plugin/blob/main/models/Qwen3.8-NEO-CODER-MAX/README.md
 - Resultados completos de texto e imagen, comprobaciones de calidad y reproduccion: https://github.com/Eliovp-BV/paiton-vllm-plugin/blob/main/models/Qwen3.8-NEO-CODER-MAX/BENCHMARKS.md

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `ads2009/turkish-ai-text-detector-convbert-v10` es un clasificador de texto publicado en HuggingFace por el usuario ads2009, orientado —a juzgar por su identificador— a la detección de texto generado por IA en turco. Se distribuye con la librería `transformers`, pipeline `text-classification` y pesos en formato `safetensors`. El repositorio ocupa 0,4 GB y el recuento real de parámetros leídos de los safetensors es de 107.407.754 (aproximadamente 107,4 millones), un tamaño coherente con la familia ConvBERT en configuración base.
+El modelo `ads2009/turkish-ai-text-detector-convbert-v10` es un clasificador de texto publicado en Hugging Face por el usuario ads2009, orientado —a juzgar por su identificador— a la detección de texto generado por IA en turco. Se distribuye con la librería `transformers`, pipeline `text-classification` y pesos en formato `safetensors`. El repositorio ocupa 0,4 GB y el recuento real de parámetros leídos de los safetensors es de 107.407.754 (aproximadamente 107,4 millones), un tamaño coherente con la familia ConvBERT en configuración base.
 
 La arquitectura declarada mediante la etiqueta `convbert` remite a ConvBERT, un transformer tipo encoder que sustituye parte de las cabezas de auto-atención por convoluciones dinámicas basadas en spans, con el objetivo de capturar dependencias locales con menos coste computacional que BERT. Al tratarse de un modelo de clasificación, no genera texto: produce una etiqueta (presumiblemente "humano" frente a "generado por IA") y su puntuación asociada.
 
-La relevancia de este tipo de modelos es creciente por la necesidad de filtrar contenido sintético en corpus de entrenamiento, plataformas de contenido generado por usuarios y flujos de verificación académica o periodística en turco, un idioma con menos recursos que el inglés. No obstante, la model card publicada es la plantilla automática de HuggingFace sin rellenar: no aporta autoría efectiva, datos de entrenamiento, licencia, idiomas declarados, métricas ni procedimiento de evaluación, por lo que cualquier uso en producción exige una validación propia previa.
+La relevancia de este tipo de modelos es creciente por la necesidad de filtrar contenido sintético en corpus de entrenamiento, plataformas de contenido generado por usuarios y flujos de verificación académica o periodística en turco, un idioma con menos recursos que el inglés. No obstante, la model card publicada es la plantilla automática de Hugging Face sin rellenar: no aporta autoría efectiva, datos de entrenamiento, licencia, idiomas declarados, métricas ni procedimiento de evaluación, por lo que cualquier uso en producción exige una validación propia previa.
 
 ## Especificaciones técnicas
 
@@ -29,7 +29,7 @@ La relevancia de este tipo de modelos es creciente por la necesidad de filtrar c
 
 La etiqueta principal del repositorio es `convbert`, lo que sitúa al modelo en la familia ConvBERT, descrita en el artículo *ConvBERT: Improving BERT with Span-based Dynamic Convolution* (arXiv:2008.02496). Esta arquitectura mantiene el esquema de encoder transformer, pero reemplaza una parte de las cabezas de auto-atención por módulos de convolución dinámica basada en spans, que modelan dependencias locales y reducen el coste de atención manteniendo el rendimiento en tareas de comprensión. Con 107,4 millones de parámetros, la configuración es equivalente a un tamaño base.
 
-No hay información verificable sobre el entrenamiento: la model card no especifica el número de tokens, la composición del dataset, si hubo ajuste fino supervisado, destilación o algún tipo de alineación (RLHF/DPO), ni los hiperparámetros empleados. Tampoco se documenta la procedencia del checkpoint base (el campo "Finetuned from model" aparece como `[More Information Needed]`). El único rastro técnico adicional es la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono y forma parte de la plantilla automática de model card, no a un paper metodológico del modelo. La etiqueta `endpoints_compatible` indica que el repositorio es compatible con los endpoints de inferencia de HuggingFace.
+No hay información verificable sobre el entrenamiento: la model card no especifica el número de tokens, la composición del dataset, si hubo ajuste fino supervisado, destilación o algún tipo de alineación (RLHF/DPO), ni los hiperparámetros empleados. Tampoco se documenta la procedencia del checkpoint base (el campo "Finetuned from model" aparece como `[More Information Needed]`). El único rastro técnico adicional es la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono y forma parte de la plantilla automática de model card, no a un paper metodológico del modelo. La etiqueta `endpoints_compatible` indica que el repositorio es compatible con los endpoints de inferencia de Hugging Face.
 
 ## Capacidades
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con al menos 1 GB de memoria libre es suficiente (GTX 1650, RTX 3060, RTX 4090, T4, A10, L4, A100, H100). El modelo no requiere aceleradores de gama alta.
 - GPU de consumo: sí, cabe holgadamente en cualquier GPU de consumo actual e incluso en iGPU con memoria compartida suficiente.
 - CPU: la inferencia en CPU es viable para cargas moderadas dado el tamaño base del modelo; en lotes grandes conviene evaluar el throughput real.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`; exportación a ONNX o TorchScript para servir con ONNX Runtime; conversión a cuantización dinámica de PyTorch para reducir latencia en CPU. No se documenta soporte de vLLM (orientado a modelos generativos), ni de llama.cpp u Ollama, que requieren formato GGUF y no aplican a este caso. El tag `endpoints_compatible` indica compatibilidad con los Inference Endpoints de HuggingFace.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`; exportación a ONNX o TorchScript para servir con ONNX Runtime; conversión a cuantización dinámica de PyTorch para reducir latencia en CPU. No se documenta soporte de vLLM (orientado a modelos generativos), ni de llama.cpp u Ollama, que requieren formato GGUF y no aplican a este caso. El tag `endpoints_compatible` indica compatibilidad con los Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponible. No hay mediciones publicadas; para un encoder base de 107 M de parámetros y secuencias de 128-512 tokens, el rendimiento esperado es alto en GPU, pero debe medirse sobre el hardware objetivo.
 
 ## Comparativa con modelos similares
@@ -73,16 +73,16 @@ Los datos de los modelos alternativos que figuran a continuación proceden de re
 
 | Modelo | Parametros | Idioma | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ads2009/turkish-ai-text-detector-convbert-v10 | 107,4 M | no disponible (probable turco) | no disponible | no disponible | HuggingFace |
-| roberta-base-openai-detector | ~125 M | Ingles | 512 tokens | MIT | HuggingFace |
-| Hello-SimpleAI/chatgpt-detector-roberta | ~125 M | Ingles | 512 tokens | no disponible | HuggingFace |
-| Detectores multilingues basados en XLM-R | ~270 M | Multiples | 512 tokens | variable | HuggingFace |
+| ads2009/turkish-ai-text-detector-convbert-v10 | 107,4 M | no disponible (probable turco) | no disponible | no disponible | Hugging Face |
+| roberta-base-openai-detector | ~125 M | Ingles | 512 tokens | MIT | Hugging Face |
+| Hello-SimpleAI/chatgpt-detector-roberta | ~125 M | Ingles | 512 tokens | no disponible | Hugging Face |
+| Detectores multilingues basados en XLM-R | ~270 M | Multiples | 512 tokens | variable | Hugging Face |
 
 La diferencia principal frente a las alternativas angloparlantes es la cobertura de turco, un idioma con menos recursos y peor atendido por los detectores entrenados sobre corpus en inglés. Frente a los detectores basados en XLM-R, este modelo es aproximadamente 2,5 veces más pequeño, lo que reduce el coste de despliegue a cambio de una cobertura lingüística presumiblemente más estrecha. No hay datos de rendimiento que permitan comparar la calidad de detección entre estas opciones.
 
 ## Limitaciones y advertencias
 
-- Model card vacía: el repositorio usa la plantilla automática de HuggingFace sin rellenar. No hay información sobre datos de entrenamiento, metodología, etiquetas de salida ni evaluación, lo que impide auditar el modelo.
+- Model card vacía: el repositorio usa la plantilla automática de Hugging Face sin rellenar. No hay información sobre datos de entrenamiento, metodología, etiquetas de salida ni evaluación, lo que impide auditar el modelo.
 - Licencia no especificada: al no declararse licencia, no puede asumirse permiso de uso comercial. Es imprescindible contactar con el autor antes de cualquier despliegue en producción.
 - Riesgo de alucinación no aplicable en el sentido generativo, pero sí de falsos positivos y falsos negativos: sin métricas publicadas no se conoce la tasa de error, ni su comportamiento en distintos dominios (literario, técnico, coloquial).
 - Sesgos desconocidos: al no documentarse la composición del dataset, no puede evaluarse el sesgo respecto a registros, dialectos, variantes del turco, longitud del texto o temática.
@@ -94,7 +94,7 @@ La diferencia principal frente a las alternativas angloparlantes es la cobertura
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ads2009/turkish-ai-text-detector-convbert-v10
+- Repositorio en Hugging Face: https://huggingface.co/ads2009/turkish-ai-text-detector-convbert-v10
 - Paper de la arquitectura ConvBERT (referencia de la familia, no citado en la model card): https://arxiv.org/abs/2008.02496
 - Paper asociado a la etiqueta `arxiv:1910.09700` (estimación de emisiones de carbono, incluido en la plantilla de model card): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental en aprendizaje automático, referenciada en la plantilla: https://mlco2.github.io/impact

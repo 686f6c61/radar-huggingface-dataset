@@ -96,7 +96,7 @@ El modelo base BF16 reporta BenchLocal 133/150 (mejor de tres) según la model c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hakunokina/Tess-4.5-27B-oQ8e-mtp
+- Modelo en Hugging Face: https://huggingface.co/hakunokina/Tess-4.5-27B-oQ8e-mtp
 - Modelo base (ajuste fino): https://huggingface.co/migtissera/Tess-4.5-27B
 - Versión GGUF del modelo base: https://huggingface.co/migtissera/Tess-4.5-27B-GGUF
 - Modelo base original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B

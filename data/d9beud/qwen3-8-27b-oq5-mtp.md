@@ -65,7 +65,7 @@ No disponible. No se proporcionan datos comparativos con otros modelos de la mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/d9beuD/Qwen3.8-27B-oQ5-mtp
+- Repositorio Hugging Face: https://huggingface.co/d9beuD/Qwen3.8-27B-oQ5-mtp
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx
 
 No se han encontrado otros enlaces (papers, blogs, demos) en la información proporcionada.

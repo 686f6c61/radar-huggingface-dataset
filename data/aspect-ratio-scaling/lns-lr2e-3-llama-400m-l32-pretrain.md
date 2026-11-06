@@ -89,8 +89,8 @@ La comparación rigurosa no es posible: este repositorio no publica licencia, co
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/aspect-ratio-scaling/lns-lr2e-3-llama-400M-L32-pretrain
-- Perfil del autor en HuggingFace: https://huggingface.co/aspect-ratio-scaling
+- Repositorio de Hugging Face: https://huggingface.co/aspect-ratio-scaling/lns-lr2e-3-llama-400M-L32-pretrain
+- Perfil del autor en Hugging Face: https://huggingface.co/aspect-ratio-scaling
 - Repositorio principal de OLMo-core (necesario para cargar el checkpoint): https://github.com/allenai/OLMo-core
 - Documentación de OLMo: https://allenai.org/olmo
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la búsqueda web realizada.

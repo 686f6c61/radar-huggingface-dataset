@@ -71,9 +71,9 @@ No se dispone de información sobre modelos comparables específicos para la gen
 
 ## Enlaces
 
-- [HuggingFace - giovannimaffeo/qwen3.5-4b-portuguese-legal-descriptor-generation](https://huggingface.co/giovannimaffeo/qwen3.5-4b-portuguese-legal-descriptor-generation)
-- [Colección Qwen3.5 en HuggingFace](https://huggingface.co/collections/Qwen/qwen35)
+- [Hugging Face - giovannimaffeo/qwen3.5-4b-portuguese-legal-descriptor-generation](https://huggingface.co/giovannimaffeo/qwen3.5-4b-portuguese-legal-descriptor-generation)
+- [Colección Qwen3.5 en Hugging Face](https://huggingface.co/collections/Qwen/qwen35)
 - [Blog oficial de Qwen3.5](https://qwen.ai/blog?id=qwen3.5)
 - [Repositorio GitHub de Qwen3](https://github.com/QwenLM/Qwen3)
-- [unsloth/Qwen3.5-4B-GGUF en HuggingFace](https://huggingface.co/unsloth/Qwen3.5-4B-GGUF)
+- [unsloth/Qwen3.5-4B-GGUF en Hugging Face](https://huggingface.co/unsloth/Qwen3.5-4B-GGUF)
 - [Repositorio GitHub alternativo de Qwen3.5](https://github.com/algtrd24/qwen3.5)

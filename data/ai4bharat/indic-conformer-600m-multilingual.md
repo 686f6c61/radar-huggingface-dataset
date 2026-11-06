@@ -4,7 +4,7 @@
 
 IndicConformer es una suite de modelos de reconocimiento automático del habla (ASR) desarrollada por AI4Bharat, un centro de investigación del Instituto Indio de Tecnología de Madrás (IIT Madras). El modelo `indic-conformer-600m-multilingual` es un sistema de transcripción de voz a texto con 600 millones de parámetros, diseñado para cubrir las 22 lenguas oficiales de la India. Se presenta como el primer sistema ASR de código abierto que abarca un espectro lingüístico tan amplio en el país, lo que lo convierte en una herramienta relevante para la inclusión digital y el acceso a la tecnología en lenguas indias.
 
-El modelo emplea una arquitectura Conformer híbrida que combina dos estrategias de decodificación: CTC (Clasificación Temporal Conexionista) y RNNT (Transductor Neuronal Recurrente). Esta doble capacidad permite elegir entre un enfoque de decodificación más rápido y ligero (CTC) o uno más preciso y robusto (RNN-T), según las necesidades de la aplicación. El modelo está disponible bajo licencia MIT, aunque su acceso en HuggingFace es restringido (gated), lo que requiere que el usuario acepte condiciones adicionales de uso.
+El modelo emplea una arquitectura Conformer híbrida que combina dos estrategias de decodificación: CTC (Clasificación Temporal Conexionista) y RNNT (Transductor Neuronal Recurrente). Esta doble capacidad permite elegir entre un enfoque de decodificación más rápido y ligero (CTC) o uno más preciso y robusto (RNN-T), según las necesidades de la aplicación. El modelo está disponible bajo licencia MIT, aunque su acceso en Hugging Face es restringido (gated), lo que requiere que el usuario acepte condiciones adicionales de uso.
 
 La relevancia actual del modelo radica en que aborda un vacío importante en el ecosistema ASR: la cobertura de lenguas con pocos recursos. Mientras que los modelos comerciales se centran en idiomas con grandes volúmenes de datos, IndicConformer ofrece una solución de código abierto y entrenada específicamente para el contexto lingüístico indio, lo que lo convierte en una referencia para el desarrollo de aplicaciones de voz en esa región.
 
@@ -18,7 +18,7 @@ La relevancia actual del modelo radica en que aborda un vacío importante en el 
 | Longitud de contexto | no disponible (modelo ASR, no aplicable) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | 22 lenguas oficiales de la India |
-| Licencia | MIT (con acceso restringido en HuggingFace) |
+| Licencia | MIT (con acceso restringido en Hugging Face) |
 | Formato de pesos | no disponible (repo de 2.6 GB; probablemente safetensors o binarios) |
 
 ## Arquitectura y entrenamiento
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| indic-conformer-600m-multilingual | 600M | no disponible | no disponible | MIT | HuggingFace (gated) |
+| indic-conformer-600m-multilingual | 600M | no disponible | no disponible | MIT | Hugging Face (gated) |
 | Whisper large-v3 | 1550M | 30 segundos | MMLU: no aplicable | MIT | Abierto |
 | Wav2Vec2 XLSR-53 | 300M | no disponible | no aplicable | Apache 2.0 | Abierto |
 
@@ -71,12 +71,12 @@ Nota: Whisper y Wav2Vec2 son modelos de propósito general, mientras que el Indi
 - Alucinación: en ASR, el riesgo de alucinación se manifiesta como transcripciones incorrectas o palabras inventadas, especialmente en condiciones de ruido o habla no nativa.
 - Contexto: el modelo está diseñado para ASR, no para generación de texto libre; su uso fuera de este ámbito no es adecuado.
 - Idiomas: aunque cubre 22 lenguas, el rendimiento puede variar significativamente entre lenguas con más recursos (como el hindi) y lenguas con menos datos (como algunas lenguas tribales).
-- Licencia: aunque es MIT, el acceso está restringido en HuggingFace, lo que puede complicar su uso en proyectos comerciales si no se aceptan los términos adicionales.
+- Licencia: aunque es MIT, el acceso está restringido en Hugging Face, lo que puede complicar su uso en proyectos comerciales si no se aceptan los términos adicionales.
 - Producción: no se han documentado limitaciones específicas para producción, pero es recomendable validar el modelo en datos del dominio objetivo antes de desplegarlo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ai4bharat/indic-conformer-600m-multilingual
+- Hugging Face: https://huggingface.co/ai4bharat/indic-conformer-600m-multilingual
 - README: https://huggingface.co/ai4bharat/indic-conformer-600m-multilingual/blob/main/README.md
 - Página de AI4Bharat: https://ai4bharat.iitm.ac.in/areas/model/ASR/IndicConformer/
 - Ficha en IndiaAI: https://aikosh.indiaai.gov.in/home/models/details/aibharat_indicconformer_600m_multi.html

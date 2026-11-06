@@ -86,10 +86,10 @@ No se dispone en la información proporcionada de modelos directamente comparabl
 
 | Modelo | Tarea | Parámetros | Entrada / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| histoforge/rat-seminiferous-tubule-staging | Segmentación de instancias + clasificación de estadio en testículo de rata (PAS), 14 clases | no disponible (backbone ViT-L/16) | Imagen RGB brightfield, parches 16×16 | DINOv3 | HuggingFace + librería `histoforge` (0 descargas) |
+| histoforge/rat-seminiferous-tubule-staging | Segmentación de instancias + clasificación de estadio en testículo de rata (PAS), 14 clases | no disponible (backbone ViT-L/16) | Imagen RGB brightfield, parches 16×16 | DINOv3 | Hugging Face + librería `histoforge` (0 descargas) |
 | HoVerNet (referencia metodológica de la cabecera) | Segmentación de instancias de núcleos (pan-núcleo) | no disponible | Imagen histológica RGB | no disponible | Implementaciones públicas diversas |
 | CellViT y variantes de segmentación de núcleos con backbone ViT | Segmentación y clasificación de núcleos | no disponible | Imagen histológica RGB | no disponible | Repositorios públicos |
-| timm/vit_large_patch16_dinov3.lvd1689m (modelo base) | Representación visual general (backbone) | no disponible en la información | Imagen, parches 16×16 | DINOv3 | HuggingFace / timm |
+| timm/vit_large_patch16_dinov3.lvd1689m (modelo base) | Representación visual general (backbone) | no disponible en la información | Imagen, parches 16×16 | DINOv3 | Hugging Face / timm |
 
 Cualquier comparación de rendimiento con estas alternativas requeriría reevaluar todas sobre el mismo conjunto de 137 campos, algo que no se ha publicado en la información disponible.
 
@@ -110,9 +110,9 @@ Cualquier comparación de rendimiento con estas alternativas requeriría reevalu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/histoforge/rat-seminiferous-tubule-staging
+- Modelo en Hugging Face: https://huggingface.co/histoforge/rat-seminiferous-tubule-staging
 - Licencia DINOv3 (facebookresearch/dinov3): https://github.com/facebookresearch/dinov3/blob/6876159a11b4df116f30f667f8c9888617df0751/LICENSE.md
-- Modelo base en HuggingFace: https://huggingface.co/timm/vit_large_patch16_dinov3.lvd1689m
+- Modelo base en Hugging Face: https://huggingface.co/timm/vit_large_patch16_dinov3.lvd1689m
 - Dataset y anotaciones (Kim et al., Figshare 28448267): https://doi.org/10.6084/m9.figshare.28448267
 - Licencia de los datos originales (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
 - Definiciones de medición del módulo: https://huggingface.co/histoforge/rat-seminiferous-tubule-staging/blob/main/MEASUREMENTS.md

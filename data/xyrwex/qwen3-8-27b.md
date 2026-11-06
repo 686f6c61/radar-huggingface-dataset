@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje causal con codificador de visión que la model card presenta como parte de la familia Qwen3.8, la generación más reciente de la serie de modelos abiertos de Qwen. Los pesos se distribuyen en el repositorio de HuggingFace `Xyrwex/Qwen3.8-27B` bajo licencia Apache 2.0, con 27.781.427.952 parámetros reales (~27,8B) y un tamaño de repositorio de 55,6 GB. Se trata de la variante densa y orientada a despliegue de la generación, pensada para integrarse en stacks existentes sin la complejidad de un MoE.
+Qwen3.8-27B es un modelo de lenguaje causal con codificador de visión que la model card presenta como parte de la familia Qwen3.8, la generación más reciente de la serie de modelos abiertos de Qwen. Los pesos se distribuyen en el repositorio de Hugging Face `Xyrwex/Qwen3.8-27B` bajo licencia Apache 2.0, con 27.781.427.952 parámetros reales (~27,8B) y un tamaño de repositorio de 55,6 GB. Se trata de la variante densa y orientada a despliegue de la generación, pensada para integrarse en stacks existentes sin la complejidad de un MoE.
 
 El modelo combina una arquitectura híbrida de atención —capas de Gated DeltaNet (atención lineal) intercaladas con capas de Gated Attention (atención completa)— con comprensión nativa de imágenes y vídeo, incluidos vídeos de hasta una hora de duración. Su contexto nativo es de 262.144 tokens, ampliable hasta 1.000.000, y añade control flexible del razonamiento: el modo *thinking* está activado por defecto, puede desactivarse por petición, la profundidad se ajusta con `reasoning_effort` y el contexto de razonamiento histórico se conserva mediante `preserve_thinking`.
 
@@ -87,7 +87,7 @@ Solo se dispone de los nombres de los modelos usados como referencia en la tabla
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B (Xyrwex/Qwen3.8-27B) | 27,8B densos | 262.144 nativo, hasta 1.000.000 | Apache 2.0 | Pesos en HuggingFace, safetensors |
+| Qwen3.8-27B (Xyrwex/Qwen3.8-27B) | 27,8B densos | 262.144 nativo, hasta 1.000.000 | Apache 2.0 | Pesos en Hugging Face, safetensors |
 | Qwen3.6-27B | No disponible | No disponible | No disponible | No disponible |
 | Qwen3.7-Plus | No disponible | No disponible | No disponible | No disponible |
 | Muse Glimmer-30B | No disponible | No disponible | No disponible | No disponible |
@@ -109,7 +109,7 @@ Solo se dispone de los nombres de los modelos usados como referencia en la tabla
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Xyrwex/Qwen3.8-27B
+- Repositorio en Hugging Face: https://huggingface.co/Xyrwex/Qwen3.8-27B
 - Página del modelo en Qwen Cloud: https://www.qwencloud.com/models/qwen3.8-27b
 - Servicio Qwen Cloud: https://www.qwencloud.com
 - Paper, blog técnico, repositorio de código y demos: no disponibles en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/zho-hans-100mb-ppt-mp-struct-100mb_seed3407` es un ajuste fino por supervisión (SFT) del modelo base `goldfish-models/zho_hans_100mb`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un artefacto de investigación de tamano muy reducido: 124.770.816 parametros totales almacenados en safetensors, con un repositorio de 0,3 GB. La arquitectura es de tipo GPT-2 (transformer decoder-only) segun las etiquetas del repositorio, y el entrenamiento se realizo con la libreria TRL 0.23.0 sobre Transformers 4.56.2.
+El modelo `francesca9805/zho-hans-100mb-ppt-mp-struct-100mb_seed3407` es un ajuste fino por supervisión (SFT) del modelo base `goldfish-models/zho_hans_100mb`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un artefacto de investigación de tamano muy reducido: 124.770.816 parametros totales almacenados en safetensors, con un repositorio de 0,3 GB. La arquitectura es de tipo GPT-2 (transformer decoder-only) segun las etiquetas del repositorio, y el entrenamiento se realizo con la libreria TRL 0.23.0 sobre Transformers 4.56.2.
 
 El problema que aborda no es el de un modelo listo para produccion, sino el de un experimento reproducible dentro de una linea de trabajo sobre tokenizadores y ajuste supervisado: la ejecucion de Weights & Biases asociada pertenece al proyecto `new-tokenizers` de la Universidad de Groningen. El nombre del modelo (`ppt-mp-struct-100mb_seed3407`) sugiere una variante experimental con una semilla fija (3407) sobre un corpus de 100 MB, aunque la model card no documenta la composicion del dataset ni el significado exacto de esos sufijos.
 
@@ -37,7 +37,7 @@ El entrenamiento se realizo mediante SFT con TRL 0.23.0, sobre Transformers 4.56
 - Soporte para agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingues: no declaradas; el identificador sugiere chino simplificado como idioma principal, sin confirmacion oficial.
 - Capacidades especiales (modo de pensamiento, vision, audio): no disponibles.
-- Compatibilidad declarada con text-generation-inference y con endpoints de HuggingFace.
+- Compatibilidad declarada con text-generation-inference y con endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -62,7 +62,7 @@ La model card no incluye metricas de MMLU, HumanEval, GSM8K, perplexity ni ningu
 - Cuantizacion: no se publican pesos cuantizados, pero una conversion a int8 o a 4 bits situaria el modelo en el rango de 70-130 MB.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de memoria, incluidas GTX 1050 Ti, GTX 1650, RTX 3050 o superiores. Tambien es viable en CPU y en dispositivos con memoria unificada.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU dedicadas modernas y en muchas integradas.
-- Opciones de despliegue: transformers (pipeline de text-generation), text-generation-inference (declarado en las etiquetas), endpoints compatibles de HuggingFace. Para llama.cpp u Ollama seria necesaria una conversion previa a GGUF, no publicada.
+- Opciones de despliegue: transformers (pipeline de text-generation), text-generation-inference (declarado en las etiquetas), endpoints compatibles de Hugging Face. Para llama.cpp u Ollama seria necesaria una conversion previa a GGUF, no publicada.
 - Latencia y throughput estimados: no disponibles. No se publican mediciones de tokens por segundo ni de latencia por peticion.
 
 ## Comparativa con modelos similares
@@ -71,10 +71,10 @@ Los datos de los modelos alternativos no provienen de la informacion proporciona
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/zho-hans-100mb-ppt-mp-struct-100mb_seed3407 | 124,77 M | no disponible | no disponible | HuggingFace, safetensors | Ajuste SFT del modelo Goldfish; sin benchmarks publicados |
-| goldfish-models/zho_hans_100mb | no disponible (mismo orden de magnitud) | no disponible | no disponible | HuggingFace | Modelo base; entrenado con unos 100 MB de texto en chino simplificado |
-| Qwen2.5-0.5B | aproximadamente 0,49 B | 32 768 tokens (segun documentacion del autor) | Apache 2.0 | HuggingFace, multiples formatos | Referencia de la categoria de modelos pequenos multilingues; datos no verificados en esta busqueda |
-| SmolLM2-135M | aproximadamente 135 M | 8192 tokens (segun documentacion del autor) | Apache 2.0 | HuggingFace, GGUF disponible | Alternativa de tamano comparable con soporte de cuantizacion publicada; datos no verificados en esta busqueda |
+| francesca9805/zho-hans-100mb-ppt-mp-struct-100mb_seed3407 | 124,77 M | no disponible | no disponible | Hugging Face, safetensors | Ajuste SFT del modelo Goldfish; sin benchmarks publicados |
+| goldfish-models/zho_hans_100mb | no disponible (mismo orden de magnitud) | no disponible | no disponible | Hugging Face | Modelo base; entrenado con unos 100 MB de texto en chino simplificado |
+| Qwen2.5-0.5B | aproximadamente 0,49 B | 32 768 tokens (segun documentacion del autor) | Apache 2.0 | Hugging Face, multiples formatos | Referencia de la categoria de modelos pequenos multilingues; datos no verificados en esta busqueda |
+| SmolLM2-135M | aproximadamente 135 M | 8192 tokens (segun documentacion del autor) | Apache 2.0 | Hugging Face, GGUF disponible | Alternativa de tamano comparable con soporte de cuantizacion publicada; datos no verificados en esta busqueda |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ Los datos de los modelos alternativos no provienen de la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-mp-struct-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-mp-struct-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/zho_hans_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/d5dakho9
 - Repositorio de TRL: https://github.com/huggingface/trl

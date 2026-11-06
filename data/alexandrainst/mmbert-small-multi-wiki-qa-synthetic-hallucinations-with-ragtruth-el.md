@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexandrainst/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-el
+- Modelo en Hugging Face: https://huggingface.co/alexandrainst/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-el
 - Paper MultiWikiQHalluA (arXiv): https://arxiv.org/pdf/2605.02504
 - Paper MultiWikiQA (arXiv): https://arxiv.org/html/2509.04111v2
 - Repositorio GitHub multi_wiki_qa: https://github.com/alexandrainst/multi_wiki_qa

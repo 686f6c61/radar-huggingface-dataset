@@ -66,8 +66,8 @@ No se dispone de informacion sobre adaptadores LoRA comparables para captioning 
 
 ## Enlaces
 
-- [HuggingFace: namin0202/gemma-4-e2b-it_audio-onecall-caption-ours](https://huggingface.co/namin0202/gemma-4-e2b-it_audio-onecall-caption-ours)
-- [HuggingFace: namin0202/gemma-4-e2b-it_audio-onecall-ours](https://huggingface.co/namin0202/gemma-4-e2b-it_audio-onecall-ours)
+- [Hugging Face: namin0202/gemma-4-e2b-it_audio-onecall-caption-ours](https://huggingface.co/namin0202/gemma-4-e2b-it_audio-onecall-caption-ours)
+- [Hugging Face: namin0202/gemma-4-e2b-it_audio-onecall-ours](https://huggingface.co/namin0202/gemma-4-e2b-it_audio-onecall-ours)
 - [Documentacion de audio de Gemma 4 (Google AI for Developers)](https://ai.google.dev/gemma/docs/capabilities/audio)
 - [Pagina oficial de Gemma 4 (Google DeepMind)](https://deepmind.google/models/gemma/gemma-4/)
 - [Model card de Gemma 4 (Google AI for Developers)](https://ai.google.dev/gemma/docs/core/model_card_4)

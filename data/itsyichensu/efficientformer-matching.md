@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`itsyichensu/efficientformer-matching` es un repositorio de HuggingFace publicado por el usuario `itsyichensu` que contiene una implementación funcional ("working implementation") de la arquitectura Efficientformer orientada a tareas de *matching*, con una configuración declarada como *huge*. El propio autor indica en la model card que el repositorio se centra en código transparente y pruebas de humo (*smoke tests*) reproducibles, y que las afirmaciones sobre rendimiento se omiten deliberadamente. El checkpoint incluido (`model.safetensors`) se presenta explícitamente como una inicialización válida para pruebas, no como un modelo entrenado ni evaluado.
+`itsyichensu/efficientformer-matching` es un repositorio de Hugging Face publicado por el usuario `itsyichensu` que contiene una implementación funcional ("working implementation") de la arquitectura Efficientformer orientada a tareas de *matching*, con una configuración declarada como *huge*. El propio autor indica en la model card que el repositorio se centra en código transparente y pruebas de humo (*smoke tests*) reproducibles, y que las afirmaciones sobre rendimiento se omiten deliberadamente. El checkpoint incluido (`model.safetensors`) se presenta explícitamente como una inicialización válida para pruebas, no como un modelo entrenado ni evaluado.
 
 Se trata, por tanto, de un artefacto de investigación y desarrollo, no de un modelo listo para producción. El repositorio incluye `eval.py` como artefacto principal, junto con `config.json` (arquitectura), `training_args.json` (receta de experimento por defecto) y el mencionado checkpoint. La arquitectura reportada emplea atención estándar, fusión de bajo rango (*low rank*), activación swish y normalización ScaleNorm, con una escala "huge".
 
@@ -46,7 +46,7 @@ En cuanto al entrenamiento, el repositorio no incluye ningun entrenamiento compl
 - Desarrollo de adaptadores de carga personalizados: dado que el autor advierte que las APIs automaticas no cargan el modelo directamente, este repositorio sirve para desarrollar y validar el adaptador (`trust_remote_code` o wrapper propio) antes de integrarlo en un sistema mayor.
 - Reproducibilidad de experimentos academicos: la presencia de `training_args.json` y de una receta explicita (RMSprop, coseno) facilita documentar y replicar los valores de partida en publicaciones o informes internos.
 - Linea base de capacidad minima en comparativas: puede emplearse como referencia de "modelo sin entrenar" frente a un modelo ya ajustado, para aislar cuanto del rendimiento proviene del entrenamiento y no de la arquitectura.
-- Docencia y formacion: el repositorio es adecuado para ejercicios practicos sobre estructura de un transformer, lectura de `config.json` y flujo de publicacion en HuggingFace, ya que no requiere recursos de computo significativos.
+- Docencia y formacion: el repositorio es adecuado para ejercicios practicos sobre estructura de un transformer, lectura de `config.json` y flujo de publicacion en Hugging Face, ya que no requiere recursos de computo significativos.
 - Auditoria de artefactos publicados: sirve como ejemplo de repositorio que declara explicitamente la ausencia de benchmarks y de evaluacion de robustez, util en revisiones de procedencia de modelos.
 
 ## Benchmarks y rendimiento
@@ -67,7 +67,7 @@ El repositorio no referencia ningun modelo base, version previa ni alternativa c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| efficientformer-matching (este repo) | 16.576 reportados (no confirmado) | no disponible | no disponible (sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
+| efficientformer-matching (este repo) | 16.576 reportados (no confirmado) | no disponible | no disponible (sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,6 +86,6 @@ El repositorio no referencia ningun modelo base, version previa ni alternativa c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsyichensu/efficientformer-matching
+- Modelo en Hugging Face: https://huggingface.co/itsyichensu/efficientformer-matching
 - La busqueda web realizada no devolvio ningun resultado relevante para este modelo: los enlaces obtenidos corresponden a Wireshark (https://www.wireshark.org/, https://www.wireshark.org/download.html, https://en.wikipedia.org/wiki/Wireshark) y no guardan relacion con el repositorio.
 - No se dispone de enlaces a papers, blogs, repositorios de codigo adicionales ni demos en la informacion proporcionada.

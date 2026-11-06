@@ -80,9 +80,9 @@ No se dispone de datos de rendimiento comparativos publicados para este checkpoi
 
 | Modelo | Parametros | Contexto (ajuste) | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joshcyang/belief-engine-argument-quality-deberta-v3-large | 435.062.785 | 128 tokens | Regresión de calidad argumental | MIT | HuggingFace, sin cuenta |
-| microsoft/deberta-v3-large (base) | ~435 M | Hasta 512 tokens | Encoder preentrenado, sin cabeza de tarea | MIT | HuggingFace |
-| Modelos de puntuación de calidad argumental del dataset IBM | no disponible | no disponible | Ranking/regresión de argumentos | no disponible | Dataset público en HuggingFace |
+| joshcyang/belief-engine-argument-quality-deberta-v3-large | 435.062.785 | 128 tokens | Regresión de calidad argumental | MIT | Hugging Face, sin cuenta |
+| microsoft/deberta-v3-large (base) | ~435 M | Hasta 512 tokens | Encoder preentrenado, sin cabeza de tarea | MIT | Hugging Face |
+| Modelos de puntuación de calidad argumental del dataset IBM | no disponible | no disponible | Ranking/regresión de argumentos | no disponible | Dataset público en Hugging Face |
 
 No se conocen valores de benchmark comparables entre estos modelos en la información proporcionada. Cualquier comparación numérica de rendimiento se marca como "no disponible".
 
@@ -102,7 +102,7 @@ No se conocen valores de benchmark comparables entre estos modelos en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshcyang/belief-engine-argument-quality-deberta-v3-large
+- Modelo en Hugging Face: https://huggingface.co/joshcyang/belief-engine-argument-quality-deberta-v3-large
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-large
 - Dataset de entrenamiento: https://huggingface.co/datasets/ibm-research/argument_quality_ranking_30k
 - Repositorio del release (pesos y herramientas de inferencia, evaluación y reentrenamiento): https://huggingface.co/joshcyang/belief-engine-argument-quality-deberta-v3-large

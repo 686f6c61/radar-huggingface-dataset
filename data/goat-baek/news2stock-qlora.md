@@ -61,6 +61,6 @@ No disponible. Al no conocerse el modelo base ni la tarea específica, no es pos
 
 ## Enlaces
 
-- [HuggingFace - goat-baek/news2stock-qlora](https://huggingface.co/goat-baek/news2stock-qlora)
-- [HuggingFace - tree del repositorio](https://huggingface.co/goat-baek/news2stock-qlora/tree/main)
+- [Hugging Face - goat-baek/news2stock-qlora](https://huggingface.co/goat-baek/news2stock-qlora)
+- [Hugging Face - tree del repositorio](https://huggingface.co/goat-baek/news2stock-qlora/tree/main)
 - [GitHub - QLoRA (paper)](https://github.com/artidoro/qlora)

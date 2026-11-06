@@ -27,7 +27,7 @@ La relevancia es metodológica: documenta con detalle la pila de entrenamiento (
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del base Qwen3.8-27B: un transformer multimodal con torre visual y una cabeza de predicción multi-token (MTP). En este checkpoint, sin embargo, solo la pila de texto (`model.language_model.*`, `lm_head`) corresponde al estado entrenado en Megatron; `model.visual.*` y `mtp.*` nunca formaron parte del modelo de Megatron y se copiaron sin cambios desde el checkpoint base. La conversión de Megatron `torch_dist` a HuggingFace se hizo con el mapeo `megatron_to_hf.convert_to_hf` de slime, por trozos y en un nodo de login (`convert_torch_dist_to_hf_lowmem.py`); el mismo conversor reproduce bit a bit los safetensors originales de Qwen3.8-27B, y `E2K_VERIFY.json` recoge la comparación contra el base.
+La arquitectura es la del base Qwen3.8-27B: un transformer multimodal con torre visual y una cabeza de predicción multi-token (MTP). En este checkpoint, sin embargo, solo la pila de texto (`model.language_model.*`, `lm_head`) corresponde al estado entrenado en Megatron; `model.visual.*` y `mtp.*` nunca formaron parte del modelo de Megatron y se copiaron sin cambios desde el checkpoint base. La conversión de Megatron `torch_dist` a Hugging Face se hizo con el mapeo `megatron_to_hf.convert_to_hf` de slime, por trozos y en un nodo de login (`convert_torch_dist_to_hf_lowmem.py`); el mismo conversor reproduce bit a bit los safetensors originales de Qwen3.8-27B, y `E2K_VERIFY.json` recoge la comparación contra el base.
 
 El entrenamiento combina dos fases. Primero, 2 rollouts exclusivamente SFT (iteraciones 0–1) sobre 303 filas IDD del arnés `cd82-play-v4/sft/rows_paired.jsonl.gz`: turnos de recitación escritos por el propio modelo con el bloque de conocimiento en su contexto, emparejados con filas de replay y validados con la regla de lint C. Después, un reinicio de Adam en la frontera SFT→RL y rollouts 2–8 de Dr.GRPO (reiniciados desde la iteración 1 el 2026-09-17 tras un primer intento que ejecutó RL con momentos de Adam congelados). La pila es slime v0.3.2 con Megatron-LM en TP4 × PP4 y 16 motores de rollout SGLang a `tp=1`, sobre 4 nodos GH200 de Isambard-AI; Dr.GRPO con `--advantage-estimator grpo --no-normalize-advantages --disable-grpo-std-normalization --calculate-per-token-loss`, una muestra de entrenamiento por llamada al LLM, batch global 4, 8 pasos de optimizador por rollout de 32 episodios, lr 5e-6, bf16 y backend flash-attn 2.8.3. El prompt de RL nunca contiene conocimiento.
 
@@ -80,7 +80,7 @@ Advertencias sobre estos datos: el primer rollout de RL tras un bloque SFT-only 
 - VRAM estimada para inferencia en bf16: unos 55,6 GB solo de pesos (2 bytes por parámetro sobre 27,78 B), más caché KV y activaciones; el repositorio completo ocupa 55,6 GB.
 - GPU recomendadas: una A100 80 GB, H100 80 GB o GH200 (96 GB) en bf16. El entrenamiento se ejecutó sobre 4 nodos GH200 de Isambard-AI.
 - Cabe en GPU de consumo: con bf16 no cabe en una RTX 4090 de 24 GB; haría falta tensor parallelism sobre 2–3 unidades, y no se publican cuantizaciones que redujesen la huella a 24 GB.
-- Checkpoint completo de entrenamiento con estado del optimizador: aproximadamente 351 GB, alojado en Isambard-AI y no incluido en el repositorio de HuggingFace.
+- Checkpoint completo de entrenamiento con estado del optimizador: aproximadamente 351 GB, alojado en Isambard-AI y no incluido en el repositorio de Hugging Face.
 - Opciones de despliegue: `transformers` (ruta documentada, `Qwen3_5ForConditionalGeneration.from_pretrained` junto con `AutoProcessor`), SGLang (usado en el entrenamiento como motor de rollout a `tp=1`), vLLM y TGI como alternativas estándar para safetensors; llama.cpp u Ollama requerirían una conversión a GGUF que no se proporciona.
 - Latencia y throughput: no disponibles. Los registros solo reportan tokens de pensamiento por rollout (mediana 5.156–6.887,5) y 32 episodios por rollout, no tiempos por token.
 
@@ -105,11 +105,11 @@ No se han proporcionado datos de otros modelos comparables de la misma categorí
 - Idiomas soportados: no declarados. No hay evaluación multilingüe de este checkpoint.
 - Longitud de contexto: no declarada en la model card; debe consultarse la del base antes de usarlo en producción.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo es un artefacto de investigación sobre un juego concreto y no se han evaluado sus capacidades generales; el uso comercial no está respaldado por ninguna evaluación.
-- Reproducibilidad condicionada: el estado completo con momentos del optimizador (≈351 GB) no está en HuggingFace, sino en Isambard-AI; el repositorio solo permite reconstruir el estado sin esos momentos.
+- Reproducibilidad condicionada: el estado completo con momentos del optimizador (≈351 GB) no está en Hugging Face, sino en Isambard-AI; el repositorio solo permite reconstruir el estado sin esos momentos.
 - Estado del arte cuestionable para producción: 0 descargas y 0 likes, publicado el 2026-10-20 y actualizado el mismo día, sin señales de validación externa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter4
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - No se han proporcionado en la información disponible enlaces adicionales a papers, blogs, repositorios de código, demos o exportaciones de W&B. La model card menciona componentes y artefactos internos del run (`cd82-play-v4/sft/rows_paired.jsonl.gz`, `megatron/args.json`, `E2K_CONVERSION.json`, `E2K_VERIFY.json`, `SHA256SUMS`, `checkpoints/checkpoints.md` en el dataset de RL, slime v0.3.2, Megatron-LM, Dr.GRPO, Isambard-AI, Claude Code CLI 2.1.270) sin facilitar sus URL.

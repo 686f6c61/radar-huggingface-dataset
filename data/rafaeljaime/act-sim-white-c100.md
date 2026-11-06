@@ -76,10 +76,10 @@ No se han proporcionado datos verificables de modelos comparables en la informac
 
 | Modelo | Enfoque | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `RafaelJaime/act-sim-white-c100` (este modelo) | ACT, imitación con action chunking, tarea única | 51.668.614 | Estado 6 dims + 2 imágenes 480×640 | Apache 2.0 | HuggingFace Hub, vía LeRobot |
+| `RafaelJaime/act-sim-white-c100` (este modelo) | ACT, imitación con action chunking, tarea única | 51.668.614 | Estado 6 dims + 2 imágenes 480×640 | Apache 2.0 | Hugging Face Hub, vía LeRobot |
 | Diffusion Policy (implementación LeRobot) | Política visomotora basada en difusión | No disponible en la información | No disponible | No disponible en la información | Disponible en el ecosistema LeRobot |
-| Otras políticas ACT de LeRobot sobre SO-101 | ACT, imitación, tarea única | No disponible en la información | No disponible | No disponible | Hub de HuggingFace |
-| Políticas VLA (visión-lenguaje-acción) del ecosistema LeRobot | VLA con condicionamiento por lenguaje | No disponible en la información | No disponible | No disponible | Hub de HuggingFace |
+| Otras políticas ACT de LeRobot sobre SO-101 | ACT, imitación, tarea única | No disponible en la información | No disponible | No disponible | Hub de Hugging Face |
+| Políticas VLA (visión-lenguaje-acción) del ecosistema LeRobot | VLA con condicionamiento por lenguaje | No disponible en la información | No disponible | No disponible | Hub de Hugging Face |
 
 Diferencias cualitativas relevantes: frente a una política VLA, este modelo no acepta instrucciones en lenguaje natural y solo ejecuta la tarea para la que fue entrenado; frente a Diffusion Policy, ACT es generalmente más ligero y rápido en inferencia al predecir trozos de acciones en una sola pasada, a costa de una menor capacidad de modelar distribuciones multimodales de acciones.
 
@@ -99,7 +99,7 @@ Diferencias cualitativas relevantes: frente a una política VLA, este modelo no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RafaelJaime/act-sim-white-c100
+- Modelo en Hugging Face: https://huggingface.co/RafaelJaime/act-sim-white-c100
 - Dataset de entrenamiento: https://huggingface.co/datasets/RafaelJaime/smartseed-sim-grasp-white-v2
 - Visualización del dataset en el Space de LeRobot: https://huggingface.co/spaces/lerobot/visualize_dataset?path=RafaelJaime/smartseed-sim-grasp-white-v2
 - Artículo de ACT (arXiv:2304.13705): https://huggingface.co/papers/2304.13705

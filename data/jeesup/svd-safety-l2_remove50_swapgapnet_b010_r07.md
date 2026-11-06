@@ -80,7 +80,7 @@ No se han publicado en la información disponible resultados de benchmarks de ca
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l2_remove50_swapgapnet_b010_r07` | 6.738.415.616 almacenados; 49,99 % de parametros densos efectivos | No disponible (base: 4.096 tokens) | Llama 2 Community License | Publico en HuggingFace, 0 descargas, 0 likes | AdvBench ASR 0,2538; StrongREJECT ASR 0,3131; sobrerrechazo 0,0781 |
+| `Jeesup/svd-safety-l2_remove50_swapgapnet_b010_r07` | 6.738.415.616 almacenados; 49,99 % de parametros densos efectivos | No disponible (base: 4.096 tokens) | Llama 2 Community License | Publico en Hugging Face, 0 descargas, 0 likes | AdvBench ASR 0,2538; StrongREJECT ASR 0,3131; sobrerrechazo 0,0781 |
 | `meta-llama/Llama-2-7b-chat-hf` (modelo base) | 6.738.415.616 | 4.096 tokens | Llama 2 Community License | Publico, ampliamente distribuido | No disponible en la informacion proporcionada; la model card del checkpoint comprimido afirma que la compresion por si sola eleva el ASR |
 | Otras celdas de la rejilla del mismo autor (otras reglas y presupuestos) | No disponible | No disponible | Llama 2 Community License | Publicas o no segun el autor; este repositorio es una de ellas | No disponible |
 
@@ -100,7 +100,7 @@ No se han encontrado en la búsqueda web modelos comparables con datos verificab
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapnet_b010_r07
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapnet_b010_r07
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia y política de uso: `LICENSE.txt` y `USE_POLICY.md` dentro del repositorio del modelo
 - Búsqueda web: no se han encontrado enlaces relevantes (papers, blogs, repos o demos) sobre este modelo; los resultados devueltos apuntan a páginas de inicio de sesión de Outlook y a ficheros de asociación de aplicaciones ajenos al modelo.

@@ -76,6 +76,6 @@ La comparativa se basa en arquitecturas conocidas de reconocimiento facial, pero
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xprilion/photoment-models
+- Repositorio Hugging Face: https://huggingface.co/xprilion/photoment-models
 - Perfil del autor en GitHub: https://github.com/xprilion
 - Sitio personal del autor: https://xprilion.com

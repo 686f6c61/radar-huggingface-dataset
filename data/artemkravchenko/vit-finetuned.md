@@ -72,6 +72,6 @@ No disponible. Se trata de una implementacion experimental de ViT nano con compo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Artemkravchenko/vit-finetuned
+- Modelo en Hugging Face: https://huggingface.co/Artemkravchenko/vit-finetuned
 - Tutorial de Hugging Face sobre fine-tuning de ViT: https://huggingface.co/blog/fine-tune-vit
 - Guia de Hugging Face para fine-tuning de ViT en datasets biomedicos: https://huggingface.co/learn/cookbook/en/fine_tuning_vit_custom_dataset

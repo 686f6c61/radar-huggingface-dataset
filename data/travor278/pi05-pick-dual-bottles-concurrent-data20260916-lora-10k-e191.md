@@ -69,7 +69,7 @@ La model card indica explícitamente que no se reclama ninguna tasa de éxito en
 
 | Modelo | Tipo | Parametros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-pick-dual-bottles-concurrent-data20260916-lora-10k-e191 (E191) | Checkpoint LoRA de inferencia sobre PI0.5, JAX/Orbax | no disponible | Horizonte de acción 50, 12 dims articulares | no disponible | Repositorio HuggingFace de 6,3 GB, solo inferencia |
+| pi05-pick-dual-bottles-concurrent-data20260916-lora-10k-e191 (E191) | Checkpoint LoRA de inferencia sobre PI0.5, JAX/Orbax | no disponible | Horizonte de acción 50, 12 dims articulares | no disponible | Repositorio Hugging Face de 6,3 GB, solo inferencia |
 | Checkpoint E164 del mismo autor | Checkpoint LoRA de inferencia sobre PI0.5, JAX/Orbax | no disponible | no disponible | no disponible | Mencionado en la model card como modelo anterior y separado |
 | Modelo base PI0.5 de OpenPI | Política VLA base | no disponible | no disponible | no disponible | Debe obtenerse por separado; no incluido en este repositorio |
 
@@ -85,13 +85,13 @@ No se dispone de datos comparativos adicionales (parámetros, benchmarks o licen
 - Requiere un commit concreto del código OpenPI (`3c81dae612a8f407a8bc158a978e2b6498a22f07`) y una configuración cuyo nombre histórico (`pi05_putcab_athenb_fullhorizon_mb16_ga1_lora3ep`) no refleja la tarea real; usar otra revisión puede romper la reproducibilidad.
 - No hay conversión a safetensors ni formatos cuantizados, lo que limita las opciones de despliegue a JAX/Orbax y dificulta la integración con ecosistemas tipo GGUF, Ollama, vLLM o TGI.
 - El repositorio no es una instalación Python autónoma; los ficheros de `source_reference` son solo material de referencia de configuración y transformación.
-- No se documentan sesgos, composición del dataset ni cobertura de escenarios; el dataset referenciado es un identificador de HuggingFace sin descripción en la información disponible.
+- No se documentan sesgos, composición del dataset ni cobertura de escenarios; el dataset referenciado es un identificador de Hugging Face sin descripción en la información disponible.
 - Riesgo de alucinación: no aplica en el sentido textual habitual, pero sí existe riesgo de generalización incorrecta fuera de la distribución de la simulación de entrenamiento.
 - Las fechas del repositorio (creación y actualización en septiembre de 2026) proceden de los metadatos tal cual se publicaron.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-pick-dual-bottles-concurrent-data20260916-lora-10k-e191
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-pick-dual-bottles-concurrent-data20260916-lora-10k-e191
 - Dataset referenciado: https://huggingface.co/datasets/Shiki42/ctr-pick-dual-bottles-concurrent-20260916
 - Métricas de entrenamiento (ejecución E191): https://swanlab.cn/@Travor/CTR-PI05-LoRA10k
 - Repositorio OpenPI referenciado por la model card (commit compatible `3c81dae612a8f407a8bc158a978e2b6498a22f07`; la model card no incluye URL explícita): https://github.com/Physical-Intelligence/openpi

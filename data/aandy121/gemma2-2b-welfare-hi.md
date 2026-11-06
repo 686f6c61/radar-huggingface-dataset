@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AAndy121/gemma2-2b-welfare-hi es un adaptador LoRA (PEFT) publicado en HuggingFace sobre el modelo instructivo google/gemma-2-2b-it. No se trata de un modelo completo, sino de un ajuste fino supervisado (SFT) de bajo rango cuyos pesos ocupan 0,1 GB y que necesita cargar el modelo base para funcionar. El repositorio fue creado el 2 de octubre de 2026, acumula 0 descargas y 0 likes, y su model card es la plantilla por defecto de HuggingFace sin ninguna seccion completada.
+AAndy121/gemma2-2b-welfare-hi es un adaptador LoRA (PEFT) publicado en Hugging Face sobre el modelo instructivo google/gemma-2-2b-it. No se trata de un modelo completo, sino de un ajuste fino supervisado (SFT) de bajo rango cuyos pesos ocupan 0,1 GB y que necesita cargar el modelo base para funcionar. El repositorio fue creado el 2 de octubre de 2026, acumula 0 descargas y 0 likes, y su model card es la plantilla por defecto de Hugging Face sin ninguna seccion completada.
 
 El modelo base, Gemma 2 2B-IT, es un transformer decoder-only de aproximadamente 2,6 mil millones de parametros con 8.192 tokens de contexto, desarrollado por Google y entrenado con destilacion de conocimiento desde modelos mayores. El adaptador hereda por tanto esa arquitectura, ese tamano y ese limite de contexto, aunque el autor no documenta ni el dataset, ni los hiperparametros, ni el objetivo del ajuste.
 
@@ -33,7 +33,7 @@ El repositorio contiene exclusivamente pesos de adaptador LoRA en safetensors, g
 
 La arquitectura subyacente es la de Gemma 2 2B: un transformer decoder-only de 26 capas con atencion por consultas agrupadas (GQA, 8 cabezas de consulta y 4 de clave/valor), atencion de ventana deslizante de 4.096 tokens alternada con capas de atencion global, soft-capping de logits y un vocabulario de 256.000 tokens. Google entreno los modelos Gemma 2 combinando datos web, codigo y matematicas con destilacion de conocimiento desde modelos de mayor tamano, pero ninguno de estos detalles se reproduce ni se confirma en la model card de este adaptador.
 
-El unico elemento que podria sugerir un proposito concreto es el sufijo `welfare` en el nombre del repositorio, que no va acompanado de ninguna descripcion, paper o nota explicativa. La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde a la calculadora de impacto ambiental de Lacoste et al., incluida en la plantilla de HuggingFace, y no a un articulo sobre este modelo.
+El unico elemento que podria sugerir un proposito concreto es el sufijo `welfare` en el nombre del repositorio, que no va acompanado de ninguna descripcion, paper o nota explicativa. La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde a la calculadora de impacto ambiental de Lacoste et al., incluida en la plantilla de Hugging Face, y no a un articulo sobre este modelo.
 
 ## Capacidades
 
@@ -75,11 +75,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| AAndy121/gemma2-2b-welfare-hi | Adaptador LoRA sobre 2,6B | 8.192 tokens (heredado) | No declarada | HuggingFace, 0 descargas | Sin documentacion ni evaluacion; requiere el modelo base |
-| google/gemma-2-2b-it | 2,6B | 8.192 tokens | Terminos de uso de Gemma | HuggingFace, ampliamente utilizado | Modelo base de referencia; documentado y evaluado por Google |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace | Contexto muy superior y amplia adopcion; menor numero de parametros |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache 2.0 | HuggingFace | Licencia permisiva, buen rendimiento en codigo y multilingue para su tamano |
-| microsoft/Phi-3.5-mini-instruct | 3,8B | 128.000 tokens | MIT | HuggingFace | Mas parametros y contexto; orientado a razonamiento y codigo |
+| AAndy121/gemma2-2b-welfare-hi | Adaptador LoRA sobre 2,6B | 8.192 tokens (heredado) | No declarada | Hugging Face, 0 descargas | Sin documentacion ni evaluacion; requiere el modelo base |
+| google/gemma-2-2b-it | 2,6B | 8.192 tokens | Terminos de uso de Gemma | Hugging Face, ampliamente utilizado | Modelo base de referencia; documentado y evaluado por Google |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face | Contexto muy superior y amplia adopcion; menor numero de parametros |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache 2.0 | Hugging Face | Licencia permisiva, buen rendimiento en codigo y multilingue para su tamano |
+| microsoft/Phi-3.5-mini-instruct | 3,8B | 128.000 tokens | MIT | Hugging Face | Mas parametros y contexto; orientado a razonamiento y codigo |
 
 Los datos de los modelos comparables corresponden a la documentacion publica de sus respectivos repositorios y no a mediciones realizadas sobre este adaptador. La comparacion directa con el adaptador no es posible porque no existe ninguna evaluacion publicada del mismo.
 

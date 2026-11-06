@@ -72,7 +72,7 @@ No se dispone de informacion sobre LoRAs alternativos de Shinobu Oshino ni de me
 
 | Modelo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ShinobuOshino-Lora (E6) | waiIllustriousSDXL v17 | LoRA r64/alpha32 (456 MB por fichero) | no aplica | creativeml-openrail-m | HuggingFace y ModelScope |
+| ShinobuOshino-Lora (E6) | waiIllustriousSDXL v17 | LoRA r64/alpha32 (456 MB por fichero) | no aplica | creativeml-openrail-m | Hugging Face y ModelScope |
 | Alternativas de personaje SDXL | no disponible | no disponible | no aplica | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone de informacion sobre LoRAs alternativos de Shinobu Oshino ni de me
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abbuibuibui/ShinobuOshino-Lora
-- Dataset en HuggingFace: https://huggingface.co/datasets/abbuibuibui/ShinobuOshino-Dataset
+- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/ShinobuOshino-Lora
+- Dataset en Hugging Face: https://huggingface.co/datasets/abbuibuibui/ShinobuOshino-Dataset
 - Modelo en ModelScope: https://www.modelscope.cn/models/abbuibuibui/ShinobuOshino-Lora
 - Dataset en ModelScope: https://www.modelscope.cn/datasets/abbuibuibui/ShinobuOshino-Dataset

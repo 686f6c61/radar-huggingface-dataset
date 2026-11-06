@@ -55,7 +55,7 @@ No se documentan en la información disponible datos sobre número de tokens de 
 - Variante solo texto: existe un build hermano sin torre de visión (`xbill9/gemma-4-31B-it-qat-q4_0-w4a16-ct-text`) para despliegues que no requieren entrada de imagen.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada (el campo de idiomas de la ficha de HuggingFace está vacío).
+- Capacidades multilingües: no disponible en la información proporcionada (el campo de idiomas de la ficha de Hugging Face está vacío).
 - Modo de razonamiento explícito (thinking), audio u otras capacidades especiales: no disponible en la información proporcionada.
 
 ## Casos de uso

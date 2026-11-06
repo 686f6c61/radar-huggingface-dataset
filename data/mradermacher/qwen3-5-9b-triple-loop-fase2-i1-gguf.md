@@ -23,7 +23,7 @@ Su relevancia es, por tanto, acotada y experimental: resulta útil para quien qu
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna del modelo base. Los metadatos de la model card se limitan a los parametros del proceso de conversion a GGUF: `quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf` y la etiqueta `nicoboss`, que indican una conversion desde pesos en formato HuggingFace y una cuantizacion con matriz de importancia ponderada. El sufijo `i1` del ID del repositorio corresponde a esa variante de imatrix.
+La informacion disponible no describe la arquitectura interna del modelo base. Los metadatos de la model card se limitan a los parametros del proceso de conversion a GGUF: `quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf` y la etiqueta `nicoboss`, que indican una conversion desde pesos en formato Hugging Face y una cuantizacion con matriz de importancia ponderada. El sufijo `i1` del ID del repositorio corresponde a esa variante de imatrix.
 
 Tampoco se documentan el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de RLHF o DPO, ni las caracteristicas del ajuste "triple-loop" por fases que sugiere el nombre. La etiqueta `conversational` apunta a un ajuste orientado a dialogo, pero no hay mas detalle. Cualquier afirmacion sobre innovaciones tecnicas (atencion lineal, decodificacion especulativa, mezcla de expertos) seria especulativa y no se incluye.
 
@@ -94,7 +94,7 @@ Frente a estas alternativas, el modelo evaluado ofrece un tamano comparable a Ge
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/qwen3.5-9b-triple-loop-fase2-i1-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/qwen3.5-9b-triple-loop-fase2-i1-GGUF
 - Modelo base: https://huggingface.co/Lordnyx/qwen3.5-9b-triple-loop-fase2
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Paper, blog o demo adicionales: no disponible en la informacion proporcionada.

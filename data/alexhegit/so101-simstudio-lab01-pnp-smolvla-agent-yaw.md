@@ -90,9 +90,9 @@ Advertencia: la pérdida de entrenamiento no es una métrica de éxito de la tar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `alexhegit/so101-simstudio-lab01-pnp-smolvla-agent-yaw` | 450 M | no disponible | Apache-2.0 | HuggingFace (libreria `lerobot`) | Fine-tuning de tarea unica sobre SO-101; pesos safetensors |
-| `lerobot/smolvla_base` | ~450 M | no disponible | Apache-2.0 | HuggingFace | Modelo base generalista del que deriva este checkpoint; entrenado con datasets comunitarios |
-| OpenVLA | ~7 B | no disponible | licencia propia derivada de Llama 2 (uso comercial sujeto a condiciones) | HuggingFace / repositorio publico | VLA de referencia de mayor tamano; requiere hardware notablemente superior |
+| `alexhegit/so101-simstudio-lab01-pnp-smolvla-agent-yaw` | 450 M | no disponible | Apache-2.0 | Hugging Face (libreria `lerobot`) | Fine-tuning de tarea unica sobre SO-101; pesos safetensors |
+| `lerobot/smolvla_base` | ~450 M | no disponible | Apache-2.0 | Hugging Face | Modelo base generalista del que deriva este checkpoint; entrenado con datasets comunitarios |
+| OpenVLA | ~7 B | no disponible | licencia propia derivada de Llama 2 (uso comercial sujeto a condiciones) | Hugging Face / repositorio publico | VLA de referencia de mayor tamano; requiere hardware notablemente superior |
 | pi0 (proyecto openpi) | ~3,3 B (segun informacion publica del proyecto) | no disponible | Apache-2.0 | Repositorio openpi | VLA con flow matching de mayor escala, orientado a tareas de manipulacion diversas |
 
 La comparación cuantitativa de rendimiento no es posible con la información disponible: este checkpoint no publica tasas de éxito ni métricas comparables, y los modelos alternativos se evalúan en setups robóticos distintos. La ventaja principal de este modelo frente a OpenVLA o pi0 es el coste de ejecución (450 M frente a 3,3-7 B de parámetros) y la licencia permisiva; su desventaja es la especialización en una sola tarea y la ausencia de validación publicada.
@@ -114,7 +114,7 @@ La comparación cuantitativa de rendimiento no es posible con la información di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-smolvla-agent-yaw
+- Modelo en Hugging Face: https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-smolvla-agent-yaw
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/alexhegit/so101-simstudio-lab01-pnp
 - Repositorio SO-101 SimStudio: https://github.com/rocPAI-Forge/so101-simstudio

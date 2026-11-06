@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-is es un modelo de clasificación de tokens (token-classification) publicado por EuroEval en HuggingFace. Según los metadatos, está etiquetado como "modernbert", lo que sugiere que su arquitectura se basa en ModernBERT, aunque no se confirma en la documentación. El nombre del modelo indica que fue entrenado sobre un dataset sintético de preguntas y respuestas de Wikipedia, orientado a la detección de alucinaciones en respuestas generadas con recuperación aumentada (RAG). El modelo tiene 140.642.306 parámetros y sus pesos están en formato safetensors.
+mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-is es un modelo de clasificación de tokens (token-classification) publicado por EuroEval en Hugging Face. Según los metadatos, está etiquetado como "modernbert", lo que sugiere que su arquitectura se basa en ModernBERT, aunque no se confirma en la documentación. El nombre del modelo indica que fue entrenado sobre un dataset sintético de preguntas y respuestas de Wikipedia, orientado a la detección de alucinaciones en respuestas generadas con recuperación aumentada (RAG). El modelo tiene 140.642.306 parámetros y sus pesos están en formato safetensors.
 
 La relevancia de este modelo radica en su posible aplicación para identificar segmentos textuales que no se corresponden con la verdad del contexto recuperado, una tarea crítica en sistemas RAG. Sin embargo, la model card es una plantilla vacía sin información sobre entrenamiento, datos, licencia o rendimiento, por lo que cualquier afirmación sobre sus capacidades debe tomarse como inferencia a partir del nombre y las etiquetas.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-No se dispone de información sobre requisitos de hardware, latencia o throughput. Dado el tamaño del modelo (140M parámetros), es razonable esperar que pueda ejecutarse en GPUs de consumo como una RTX 3060 o superior, e incluso en CPU para inferencia de baja latencia, pero no hay datos oficiales. Las opciones de despliegue típicas para modelos de transformers incluyen vLLM, HuggingFace Inference Endpoints o llama.cpp, aunque no se ha confirmado la compatibilidad.
+No se dispone de información sobre requisitos de hardware, latencia o throughput. Dado el tamaño del modelo (140M parámetros), es razonable esperar que pueda ejecutarse en GPUs de consumo como una RTX 3060 o superior, e incluso en CPU para inferencia de baja latencia, pero no hay datos oficiales. Las opciones de despliegue típicas para modelos de transformers incluyen vLLM, Hugging Face Inference Endpoints o llama.cpp, aunque no se ha confirmado la compatibilidad.
 
 ## Comparativa con modelos similares
 
@@ -69,4 +69,4 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-is)
+- [Modelo en Hugging Face](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-is)

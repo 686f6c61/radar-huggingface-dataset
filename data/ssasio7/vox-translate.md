@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VOX-TRANSLATE es un modelo alojado en HuggingFace por el usuario ssasio7, publicado el 3 de septiembre de 2026 y actualizado el mismo día. El nombre sugiere una orientación hacia la traducción de voz o audio, aunque no existe información pública que confirme su arquitectura, parámetros o capacidades. La licencia es CC-BY-4.0, lo que permite uso comercial con atribución, y el repositorio ocupa 0,5 GB, lo que podría corresponder a un modelo de tamaño pequeño o mediano. Actualmente no dispone de descargas ni valoraciones, y la model card únicamente declara la licencia, sin detalles técnicos. Su relevancia es incierta debido a la falta de documentación y a que no se han publicado resultados de evaluación.
+VOX-TRANSLATE es un modelo alojado en Hugging Face por el usuario ssasio7, publicado el 3 de septiembre de 2026 y actualizado el mismo día. El nombre sugiere una orientación hacia la traducción de voz o audio, aunque no existe información pública que confirme su arquitectura, parámetros o capacidades. La licencia es CC-BY-4.0, lo que permite uso comercial con atribución, y el repositorio ocupa 0,5 GB, lo que podría corresponder a un modelo de tamaño pequeño o mediano. Actualmente no dispone de descargas ni valoraciones, y la model card únicamente declara la licencia, sin detalles técnicos. Su relevancia es incierta debido a la falta de documentación y a que no se han publicado resultados de evaluación.
 
 ## Especificaciones tecnicas
 
@@ -51,4 +51,4 @@ No se conocen modelos comparables de la misma categoria con los que se pueda est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ssasio7/VOX-TRANSLATE
+- Repositorio en Hugging Face: https://huggingface.co/ssasio7/VOX-TRANSLATE

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo identificado como `Dickson32-cell/akan-twi-mms` es un modelo de texto a audio (text-to-audio) alojado en HuggingFace por el usuario Dickson32-cell. Por el identificador y las etiquetas del repositorio (`vits`, `text-to-audio`), se trata de un sistema de sintesis de voz (TTS) basado en la arquitectura VITS, entrenado o ajustado para la lengua akan/twi. Cuenta con 36.283.056 parametros (aproximadamente 36,3 millones) y un tamano de repositorio de 0,1 GB, lo que lo situa en la categoria de modelos TTS ligeros.
+El modelo identificado como `Dickson32-cell/akan-twi-mms` es un modelo de texto a audio (text-to-audio) alojado en Hugging Face por el usuario Dickson32-cell. Por el identificador y las etiquetas del repositorio (`vits`, `text-to-audio`), se trata de un sistema de sintesis de voz (TTS) basado en la arquitectura VITS, entrenado o ajustado para la lengua akan/twi. Cuenta con 36.283.056 parametros (aproximadamente 36,3 millones) y un tamano de repositorio de 0,1 GB, lo que lo situa en la categoria de modelos TTS ligeros.
 
 El interes de este tipo de modelos radica en su tamano reducido, que permite sintesis de voz en tiempo real incluso en CPU, y en su orientacion a una lengua de bajos recursos como el twi. La etiqueta `mms` del identificador sugiere su pertenencia a la familia Massively Multilingual Speech de Meta, aunque esto no se confirma en la informacion disponible.
 
-La relevancia practica del modelo queda limitada, sin embargo, por la ausencia casi total de documentacion: la model card es una plantilla autogenerada por HuggingFace sin ningun campo completado, no se declara licencia, no se declaran idiomas oficialmente y el repositorio registra 0 descargas y 0 likes en la fecha de los metadatos, por lo que no existe validacion por parte de la comunidad.
+La relevancia practica del modelo queda limitada, sin embargo, por la ausencia casi total de documentacion: la model card es una plantilla autogenerada por Hugging Face sin ningun campo completado, no se declara licencia, no se declaran idiomas oficialmente y el repositorio registra 0 descargas y 0 likes en la fecha de los metadatos, por lo que no existe validacion por parte de la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -70,28 +70,28 @@ La informacion disponible es insuficiente para establecer comparaciones fiables.
 
 | Modelo | Parametros | Contexto / entrada | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dickson32-cell/akan-twi-mms | 36,3 M | Texto a audio | No declarados (el identificador sugiere akan/twi) | No disponible | HuggingFace, 0 descargas |
-| Modelos de la familia MMS-TTS (Meta) | Orden de decenas de millones por idioma | Texto a audio | Mas de 1000 lenguas | No verificada en la informacion disponible | HuggingFace |
+| Dickson32-cell/akan-twi-mms | 36,3 M | Texto a audio | No declarados (el identificador sugiere akan/twi) | No disponible | Hugging Face, 0 descargas |
+| Modelos de la familia MMS-TTS (Meta) | Orden de decenas de millones por idioma | Texto a audio | Mas de 1000 lenguas | No verificada en la informacion disponible | Hugging Face |
 | VITS original (referencia academica) | Orden de decenas de millones | Texto a audio | Ingles (LJSpeech, VCTK) | Codigo abierto, condiciones no verificadas | Repositorio de codigo |
 
 No se dispone de datos de rendimiento comparativo (MOS, similitud de hablante, inteligibilidad) para ninguno de los tres, por lo que no es posible establecer una jerarquia de calidad.
 
 ## Limitaciones y advertencias
 
-- Model card vacia: es una plantilla autogenerada por HuggingFace sin ningun campo completado. No hay informacion sobre datos de entrenamiento, sesgos, evaluacion ni uso previsto.
+- Model card vacia: es una plantilla autogenerada por Hugging Face sin ningun campo completado. No hay informacion sobre datos de entrenamiento, sesgos, evaluacion ni uso previsto.
 - Licencia no declarada: la ausencia de licencia implica que no se puede asumir permiso de uso comercial. En la practica, el modelo esta en una situacion legal ambigua y su uso en produccion conlleva riesgo juridico.
 - Idiomas no confirmados: aunque el identificador sugiere akan/twi, no hay declaracion oficial del autor sobre el alcance linguistico ni sobre variantes dialectales cubiertas.
 - Riesgo de pronunciacion incorrecta: en lenguas tonales como el twi, la omision de marcas tonales o una fonemizacion inadecuada produce errores de significado, no solo de acento. No hay evaluacion que permita descartarlo.
 - Sin validacion de la comunidad: 0 descargas y 0 likes. No hay evidencia de que el modelo haya sido probado por terceros.
 - Reproducibilidad limitada: al no documentarse los datos ni el procedimiento de entrenamiento, los resultados no son reproducibles ni auditables.
 - Ruido en la busqueda web: los resultados devueltos para este modelo son exclusivamente sitios de spam sin relacion alguna con el modelo o con inteligencia artificial. No se ha localizado ningun paper, blog, demo o repositorio asociado.
-- Referencia bibliografica enganosa: la etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla automatica de HuggingFace. No es el paper del modelo y no aporta informacion tecnica sobre el.
+- Referencia bibliografica enganosa: la etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla automatica de Hugging Face. No es el paper del modelo y no aporta informacion tecnica sobre el.
 - Fecha de creacion inusual: los metadatos indican creacion y ultima actualizacion el 2026-10-04, con apenas 24 segundos de diferencia entre ambas, lo que sugiere una subida automatica sin trabajo posterior.
 - Ausencia de datos de rendimiento: sin MOS, sin MCD y sin pruebas de inteligibilidad, no es posible estimar la calidad de sintesis antes de desplegarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dickson32-cell/akan-twi-mms
+- Modelo en Hugging Face: https://huggingface.co/Dickson32-cell/akan-twi-mms
 - Paper de la arquitectura VITS (referencia general, no citado por el autor): https://arxiv.org/abs/2106.06103
 - Paper citado en la etiqueta `arxiv:1910.09700` (impacto ambiental, no relacionado con el modelo): https://arxiv.org/abs/1910.09700
 - No se han encontrado otros enlaces relevantes. La busqueda web realizada devolvio unicamente dominios de spam sin relacion con el modelo, por lo que no se enlazan.

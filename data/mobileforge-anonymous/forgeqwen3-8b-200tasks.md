@@ -89,8 +89,8 @@ No se dispone de datos comparativos directos con otros modelos de agentes de GUI
 
 ## Enlaces
 
-- Repositorio original en HuggingFace: https://huggingface.co/mobileforge-anonymous/ForgeQwen3-8B-200tasks
-- Repositorio espejo en HuggingFace: https://huggingface.co/lgy0404/ForgeQwen3-8B-200tasks
+- Repositorio original en Hugging Face: https://huggingface.co/mobileforge-anonymous/ForgeQwen3-8B-200tasks
+- Repositorio espejo en Hugging Face: https://huggingface.co/lgy0404/ForgeQwen3-8B-200tasks
 - Pagina del proyecto MobileForge: https://mobile-forge.github.io/
 - Codigo oficial en GitHub: https://github.com/kwai/MobileForge
 - Documentacion de modelos de MobileForge: https://github.com/kwai/MobileForge/blob/main/docs/models.md

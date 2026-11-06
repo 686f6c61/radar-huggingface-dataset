@@ -76,8 +76,8 @@ Estimaciones derivadas del recuento de parámetros (4,85 B) y del tamaño del re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| LibreMolmo24b | 4.850.869.200 | no disponible | Apache-2.0 | HuggingFace (`LibreYOLO/LibreMolmo24b`) | Espejo con código remoto; solo *pointing* de imagen única en la integración LibreYOLO |
-| allenai/Molmo2-4B | 4.850.869.200 (mismos pesos) | no disponible | Apache-2.0 | HuggingFace | Modelo upstream; distribución original de Ai2 |
+| LibreMolmo24b | 4.850.869.200 | no disponible | Apache-2.0 | Hugging Face (`LibreYOLO/LibreMolmo24b`) | Espejo con código remoto; solo *pointing* de imagen única en la integración LibreYOLO |
+| allenai/Molmo2-4B | 4.850.869.200 (mismos pesos) | no disponible | Apache-2.0 | Hugging Face | Modelo upstream; distribución original de Ai2 |
 | Otros VLM de rango 2-5 B | no disponible | no disponible | no disponible | no disponible | No se han proporcionado datos comparativos en la información disponible |
 
 La comparación significativa es con el modelo base: los pesos son idénticos, de modo que cualquier diferencia de comportamiento proviene exclusivamente del envoltorio de inferencia (LibreYOLO) y de las restricciones que este impone (tarea única de *pointing*, confianza sintética, ausencia de detección y de exportación). No hay información en esta consulta que permita comparar con alternativas de otros desarrolladores en términos de parámetros, contexto o rendimiento.
@@ -99,8 +99,8 @@ La comparación significativa es con el modelo base: los pesos son idénticos, d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LibreYOLO/LibreMolmo24b
-- Modelo base en HuggingFace: https://huggingface.co/allenai/Molmo2-4B
+- Repositorio en Hugging Face: https://huggingface.co/LibreYOLO/LibreMolmo24b
+- Modelo base en Hugging Face: https://huggingface.co/allenai/Molmo2-4B
 - Model card original preservada: https://huggingface.co/LibreYOLO/LibreMolmo24b/blob/main/README.upstream.md
 - Licencia del repositorio: https://huggingface.co/LibreYOLO/LibreMolmo24b/blob/main/LICENSE
 - Aviso de atribución: https://huggingface.co/LibreYOLO/LibreMolmo24b/blob/main/NOTICE

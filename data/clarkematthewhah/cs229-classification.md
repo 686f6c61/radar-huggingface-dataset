@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`clarkematthewhah/cs229-classification` es un prototipo de investigacion publicado en HuggingFace por el usuario clarkematthewhah, consistente en una implementacion propia de una arquitectura de tipo Mixer orientada a tareas de clasificacion. No se trata de un modelo entrenado ni de un checkpoint listo para produccion: la propia model card indica explicitamente que `model.safetensors` es unicamente una inicializacion valida para pruebas de humo (*smoke tests*) y que no se reclama ninguna puntuacion de benchmark. El repositorio ocupa 0,0 GB y contiene 24.832 parametros totales segun los metadatos de safetensors, lo que lo situa en la categoria "tiny".
+`clarkematthewhah/cs229-classification` es un prototipo de investigacion publicado en Hugging Face por el usuario clarkematthewhah, consistente en una implementacion propia de una arquitectura de tipo Mixer orientada a tareas de clasificacion. No se trata de un modelo entrenado ni de un checkpoint listo para produccion: la propia model card indica explicitamente que `model.safetensors` es unicamente una inicializacion valida para pruebas de humo (*smoke tests*) y que no se reclama ninguna puntuacion de benchmark. El repositorio ocupa 0,0 GB y contiene 24.832 parametros totales segun los metadatos de safetensors, lo que lo situa en la categoria "tiny".
 
 El artefacto principal es el fichero `inference.py`, que contiene tanto la definicion del modelo como un punto de entrada ejecutable de ejemplo o de entrenamiento. Lo acompanan `config.json` (ajustes de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (checkpoint de inicializacion). La relevancia de esta ficha es acotada: no se trata de un modelo para evaluar por su rendimiento, sino de una plantilla reproducible para experimentar con variantes de arquitectura Mixer y para validar flujos de carga de pesos y de entrenamiento.
 
@@ -86,10 +86,10 @@ No disponible. La busqueda web asociada a esta ficha no ha devuelto modelos comp
 - Riesgo de alucinacion: no aplica en el sentido generativo, ya que el modelo produce salidas de clasificacion; el riesgo equivalente seria la asignacion de clases incorrectas con alta confianza, algo que no puede evaluarse sin entrenamiento.
 - Limitaciones de contexto e idioma: no disponibles. No se especifica longitud de contexto, tokenizador ni idiomas.
 - Restricciones de licencia: BSD-3-Clause es una licencia permisiva que permite uso comercial, modificacion y redistribucion con atribucion y manteniendo el aviso de copyright. La model card advierte de que los terminos de los datos de origen deben revisarse por separado cuando el repositorio se use con conjuntos de datos externos.
-- Caveat de produccion: al ser una implementacion personalizada, las APIs genericas de carga automatica de HuggingFace no funcionaran sin escribir un adaptador explicito. Conviene fijar versiones de entorno y conservar los registros de entrenamiento junto a cualquier resultado que se publique.
+- Caveat de produccion: al ser una implementacion personalizada, las APIs genericas de carga automatica de Hugging Face no funcionaran sin escribir un adaptador explicito. Conviene fijar versiones de entorno y conservar los registros de entrenamiento junto a cualquier resultado que se publique.
 - Repositorio con 0 descargas y 0 "likes" en el momento de la consulta, y sin pipeline declarado: no hay senales de uso por parte de la comunidad ni de mantenimiento activo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/clarkematthewhah/cs229-classification
+- Modelo en Hugging Face: https://huggingface.co/clarkematthewhah/cs229-classification
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

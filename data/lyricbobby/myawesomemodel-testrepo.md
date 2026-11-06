@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario LyricBobby bajo la licencia MIT. Segun los metadatos de la plataforma, esta etiquetado con las librerias transformers y pytorch, la arquitectura bert y la tarea feature-extraction (extraccion de caracteristicas), y aparece como compatible con endpoints. El repositorio registra 0 descargas y 0 likes, y su tamano es de 0.0 GB, lo que indica que no contiene pesos publicados.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario LyricBobby bajo la licencia MIT. Segun los metadatos de la plataforma, esta etiquetado con las librerias transformers y pytorch, la arquitectura bert y la tarea feature-extraction (extraccion de caracteristicas), y aparece como compatible con endpoints. El repositorio registra 0 descargas y 0 likes, y su tamano es de 0.0 GB, lo que indica que no contiene pesos publicados.
 
 Existe una contradiccion grave entre los metadatos y la model card. Los tags describen un modelo tipo BERT para extraccion de caracteristicas, mientras que la model card, que es claramente una plantilla sin personalizar (usa el marcador de posicion "MyAwesomeModel" en todos los campos), describe un supuesto modelo de razonamiento con mejoras en profundidad de pensamiento, soporte de function calling, reduccion de alucinaciones y resultados en pruebas tipo AIME 2025. No hay ningun dato verificable que respalde esas afirmaciones.
 
@@ -12,7 +12,7 @@ El propio nombre del repositorio ("TestRepo") y la ausencia de ficheros de pesos
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (segun los tags de HuggingFace); no confirmada en la model card |
+| Arquitectura | BERT (segun los tags de Hugging Face); no confirmada en la model card |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no se describe una arquitectura MoE) |
 | Longitud de contexto | no disponible |
@@ -114,7 +114,7 @@ No se puede comparar rendimiento porque el modelo no publica benchmarks estandar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LyricBobby/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/LyricBobby/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Repositorio de codigo: no disponible (la model card menciona "our code repository" sin enlace)
 - Blog o web oficial: no disponible (la model card menciona "our official website" sin enlace)

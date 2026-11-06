@@ -106,9 +106,9 @@ Advertencia del propio autor: los conjuntos de prueba estan separados del entren
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen35-2b-muesli-cleanup-v12 (este) | 1,94 B | no disponible | Limpieza de dictado en ingles, con contexto de pantalla | Apache 2.0 | GGUF en HuggingFace (Q4_K_M, Q8_0) |
+| qwen35-2b-muesli-cleanup-v12 (este) | 1,94 B | no disponible | Limpieza de dictado en ingles, con contexto de pantalla | Apache 2.0 | GGUF en Hugging Face (Q4_K_M, Q8_0) |
 | Limpieza previa de Muesli (Qwen3.5-0.8B) | ~0,8 B | no disponible | Limpieza de dictado en ingles | no disponible en la informacion | Uso interno de la aplicacion |
-| Qwen/Qwen3.5-2B (base) | 1,94 B | no disponible | Modelo generativo de proposito general | Apache 2.0 | Pesos completos en HuggingFace |
+| Qwen/Qwen3.5-2B (base) | 1,94 B | no disponible | Modelo generativo de proposito general | Apache 2.0 | Pesos completos en Hugging Face |
 | LLM general de 2-3 B con prompt de limpieza | 2-3 B | no disponible | Limpieza mediante instrucciones, sin ajuste | Segun modelo | Multiples |
 
 La comparacion cuantitativa solo es posible frente a la version anterior de 0,8 B: el ajuste de 2 B reduce el WER del 37,52 % al 8,37 % en el conjunto con contexto de pantalla y del 2,26 % al 1,09 % en dictado plano. No hay datos publicados que comparen este modelo con alternativas de terceros en la misma tarea, ni mediciones del modelo base sin ajustar con un prompt equivalente.
@@ -129,7 +129,7 @@ La comparacion cuantitativa solo es posible frente a la version anterior de 0,8 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/phequals/qwen35-2b-muesli-cleanup-v12-gguf
+- Modelo en Hugging Face: https://huggingface.co/phequals/qwen35-2b-muesli-cleanup-v12-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio de llama.cpp (runtime requerido, commit de conversion `7fe450e19`): https://github.com/ggml-org/llama.cpp
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos no guardan relacion con el contenido de esta ficha (subreddits de caracter adulto). No se dispone de paper, blog tecnico, demo ni repositorio adicional del autor.

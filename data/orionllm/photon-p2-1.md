@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Photon-P2.1 es un adaptador LoRA de generacion de imagenes texto-a-imagen desarrollado por Orion LLM Labs (usuario OrionLLM en HuggingFace). No se trata de un modelo completo, sino de un ajuste fino ligero que se carga sobre Z-Image-Turbo, el modelo base de difusion del que hereda toda la arquitectura y el comportamiento de generacion en pocos pasos. El adaptador se distribuye como un unico fichero `Photon-P2.1.safetensors` y el repositorio ocupa 0,1 GB.
+Photon-P2.1 es un adaptador LoRA de generacion de imagenes texto-a-imagen desarrollado por Orion LLM Labs (usuario OrionLLM en Hugging Face). No se trata de un modelo completo, sino de un ajuste fino ligero que se carga sobre Z-Image-Turbo, el modelo base de difusion del que hereda toda la arquitectura y el comportamiento de generacion en pocos pasos. El adaptador se distribuye como un unico fichero `Photon-P2.1.safetensors` y el repositorio ocupa 0,1 GB.
 
 El objetivo declarado del modelo es desplazar el resultado del base hacia escenas mas ricas, iluminacion mas coherente y composiciones mas solidas, manteniendo la generacion rapida en pocos pasos caracteristica de Z-Image-Turbo. La model card cita mejoras concretas en cuatro ejes: caida de luz mas suave y mejor gradacion de color, mayor diversidad de escenas (desde interiores articos y playas hasta barcos piratas y meriendas de te), mejor encuadre y profundidad, y texturas mas nitidas en pelo, plumas, agua, follaje y arquitectura sin sobreenfocar.
 
@@ -21,7 +21,7 @@ Su relevancia practica es doble: por un lado es la primera iteracion de refinami
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (`Photon-P2.1.safetensors`) |
 | Tipo de adaptador | LoRA (text-to-image) |
-| Pipeline en HuggingFace | text-to-image |
+| Pipeline en Hugging Face | text-to-image |
 | Modelo base | Z-Image-Turbo |
 | Fecha de creacion | 2026-09-19 |
 | Ultima actualizacion | 2026-09-19 |
@@ -74,7 +74,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Photon-P2.1 | no disponible | no aplica | sin benchmarks publicados | Apache 2.0 | HuggingFace (0 descargas) |
+| Photon-P2.1 | no disponible | no aplica | sin benchmarks publicados | Apache 2.0 | Hugging Face (0 descargas) |
 | Z-Image-Turbo (base) | no disponible | no aplica | no disponible | no disponible en la informacion | referenciado como base |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OrionLLM/Photon-P2.1
+- Hugging Face: https://huggingface.co/OrionLLM/Photon-P2.1
 - Modelo base referenciado: Z-Image-Turbo (no se proporciona URL en la informacion disponible)
 - Repositorio o paper de Photon: no disponible
 - Demo o espacio de inferencia: no disponible

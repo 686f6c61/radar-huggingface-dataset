@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una cuantización NVFP4 del decodificador PiD v1.5 de NVIDIA, específicamente diseñado para la familia de latents qwen-image. PiD (Pixel Diffusion Decoder) es un decodificador de difusión de píxeles de 4 pasos que sustituye al decodificador VAE tradicional, devolviendo 4 veces la resolución del latent de entrada. La versión cuantizada reduce el tamaño del archivo de 2,61 GB a 1,09 GB (42 % del original) y es compatible con ComfyUI directamente mediante `UNETLoader`, sin necesidad de cargadores personalizados ni parches del núcleo. Es el primer decodificador PiD cuantizado publicado en HuggingFace.
+Este modelo es una cuantización NVFP4 del decodificador PiD v1.5 de NVIDIA, específicamente diseñado para la familia de latents qwen-image. PiD (Pixel Diffusion Decoder) es un decodificador de difusión de píxeles de 4 pasos que sustituye al decodificador VAE tradicional, devolviendo 4 veces la resolución del latent de entrada. La versión cuantizada reduce el tamaño del archivo de 2,61 GB a 1,09 GB (42 % del original) y es compatible con ComfyUI directamente mediante `UNETLoader`, sin necesidad de cargadores personalizados ni parches del núcleo. Es el primer decodificador PiD cuantizado publicado en Hugging Face.
 
 El desarrollo corre a cargo de BennyDaBall, que ha realizado la conversión y validación sobre el modelo base `nvidia/PiD` v1.5 (qwenimage) y el repackage de Comfy-Org/PixelDiT. La licencia es NSCLv1, que restringe el uso a fines no comerciales de investigación y evaluación. El modelo se distribuye como archivo único (diffusion-single-file) y está pensado para integrarse en flujos de trabajo de ComfyUI, con soporte opcional para decodificación por teselas mediante el nodo ComfyUI-Latent-Tiled-PiD.
 
@@ -68,7 +68,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BennyDaBall/PiD-1.5-qwenimage-nvfp4-comfy
+- Modelo en Hugging Face: https://huggingface.co/BennyDaBall/PiD-1.5-qwenimage-nvfp4-comfy
 - Modelo base nvidia/PiD: https://huggingface.co/nvidia/PiD
 - Repackage de Comfy-Org/PixelDiT: https://huggingface.co/Comfy-Org/PixelDiT
 - Paper de PiD: https://arxiv.org/abs/2605.23902

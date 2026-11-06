@@ -52,7 +52,7 @@ El port de lucid-dl no introduce cambios en la arquitectura ni en los pesos; se 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas como puntuaciones en Atari, comparaciones con otros world models ni datos de rendimiento en tareas especificas. El paper original (arXiv:2405.12399) reporta resultados en Atari-100k, pero esos datos no se reproducen en la ficha de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas como puntuaciones en Atari, comparaciones con otros world models ni datos de rendimiento en tareas especificas. El paper original (arXiv:2405.12399) reporta resultados en Atari-100k, pero esos datos no se reproducen en la ficha de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -84,8 +84,8 @@ En general, DIAMOND se posiciona como un modelo de investigacion enfocado en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucid-dl/diamond
+- Modelo en Hugging Face: https://huggingface.co/lucid-dl/diamond
 - Paper original: https://arxiv.org/abs/2405.12399
 - Repositorio de Lucid: https://github.com/ChanLumerico/lucid
-- Perfil de lucid-dl en HuggingFace: https://huggingface.co/lucid-dl
+- Perfil de lucid-dl en Hugging Face: https://huggingface.co/lucid-dl
 - Modelo original de eloialonso/diamond: https://huggingface.co/eloialonso/diamond

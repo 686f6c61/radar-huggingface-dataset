@@ -6,7 +6,7 @@ QuickMT PL-EN INT8 es una conversión del modelo de traducción automática quic
 
 La relevancia de esta ficha radica en que no es un modelo nuevo entrenado desde cero, sino un artefacto de despliegue: la model card indica que las frases verificadas producen la misma salida que el original en float16, lo que sugiere una cuantización cuidadosa orientada a preservar la calidad. Está pensado para integrarse en la aplicación Yaku Translate, un cliente de traducción que consume modelos CTranslate2.
 
-No se dispone de información pública sobre la arquitectura interna, el número de parámetros, la longitud de contexto ni la composición del dataset de entrenamiento del modelo base. La información disponible se limita a los metadatos de HuggingFace y a la propia model card, por lo que las secciones técnicas se completan con "no disponible" cuando corresponde.
+No se dispone de información pública sobre la arquitectura interna, el número de parámetros, la longitud de contexto ni la composición del dataset de entrenamiento del modelo base. La información disponible se limita a los metadatos de Hugging Face y a la propia model card, por lo que las secciones técnicas se completan con "no disponible" cuando corresponde.
 
 ## Especificaciones tecnicas
 
@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- [HuggingFace: value-productions/quickmt-pl-en-int8](https://huggingface.co/value-productions/quickmt-pl-en-int8)
+- [Hugging Face: value-productions/quickmt-pl-en-int8](https://huggingface.co/value-productions/quickmt-pl-en-int8)
 - [Modelo base: quickmt/quickmt-pl-en](https://huggingface.co/quickmt/quickmt-pl-en)

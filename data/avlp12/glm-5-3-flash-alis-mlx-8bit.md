@@ -70,7 +70,7 @@ No se dispone de datos comparativos con otros modelos MoE de escala similar (p. 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/avlp12/GLM-5.3-Flash-Alis-MLX-8bit
+- Repositorio Hugging Face del modelo: https://huggingface.co/avlp12/GLM-5.3-Flash-Alis-MLX-8bit
 - Colección de cuantizaciones Alis MLX: https://huggingface.co/collections/avlp12/glm-53-flash-alis-mlx-6a8f74a74289c9ad6a5f5e05
 - Modelo base original: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Repositorio GitHub del autor (runtime portado y herramientas): https://github.com/avlp12/local-llm-serving

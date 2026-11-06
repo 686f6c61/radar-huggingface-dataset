@@ -6,13 +6,13 @@ Llama-Prompt-Guard-2-86M-vi-v3-mirror-MinhNghia es un espejo de preservación de
 
 El repositorio lo mantiene Goro64 como snapshot archivístico del commit `6c9e8837e5b92bbd4647f84968ff729bf0ae21c5` de la rama `main` del repositorio original, capturado el 28 de octubre de 2026. El mantenedor declara explícitamente que no ha entrenado, ajustado, cuantizado ni fusionado los pesos: las únicas modificaciones son la model card, los registros de procedencia y la documentación de licencia.
 
-Técnicamente es un clasificador de secuencias basado en DeBERTa-v2 (según los tags de HuggingFace) con 278.810.882 parámetros reales en safetensors, pese a que el nombre comercial del modelo base indica 86M. Se distribuye bajo la Llama 4 Community License Agreement y está pensado exclusivamente para inferencia de clasificación, no para generación de texto.
+Técnicamente es un clasificador de secuencias basado en DeBERTa-v2 (según los tags de Hugging Face) con 278.810.882 parámetros reales en safetensors, pese a que el nombre comercial del modelo base indica 86M. Se distribuye bajo la Llama 4 Community License Agreement y está pensado exclusivamente para inferencia de clasificación, no para generación de texto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DeBERTa-v2 (clasificador de secuencias, según tags de HuggingFace) |
+| Arquitectura | DeBERTa-v2 (clasificador de secuencias, según tags de Hugging Face) |
 | Parametros totales | 278.810.882 (safetensors) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |

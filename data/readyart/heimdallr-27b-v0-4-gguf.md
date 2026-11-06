@@ -4,7 +4,7 @@
 
 Heimdallr-27B-v0.4 es un modelo de lenguaje de 27 320 millones de parámetros publicado por ReadyArt, un desarrollador que publica modelos orientados a roleplay y conversación. Esta versión es la cuantización GGUF del modelo base ReadyArt/Heimdallr-27B-v0.4, lo que permite su ejecución en hardware de consumo mediante motores de inferencia como llama.cpp, Ollama o vLLM. El modelo está diseñado para un uso conversacional desalineado, con etiquetas explícitas de contenido adulto (NSFW) y dark fantasy, por lo que no incluye filtros de seguridad para esos dominios.
 
-La licencia es Apache-2.0, lo que permite uso comercial y modificación sin restricciones adicionales. El repositorio contiene múltiples cuantizaciones GGUF, con un tamaño total de 304,9 GB, aunque el modelo base tiene un tamaño de aproximadamente 27 GB en fp16. No se ha publicado información detallada sobre arquitectura, contexto o entrenamiento, por lo que esta ficha se basa únicamente en los datos disponibles en la página de HuggingFace y en las etiquetas del modelo.
+La licencia es Apache-2.0, lo que permite uso comercial y modificación sin restricciones adicionales. El repositorio contiene múltiples cuantizaciones GGUF, con un tamaño total de 304,9 GB, aunque el modelo base tiene un tamaño de aproximadamente 27 GB en fp16. No se ha publicado información detallada sobre arquitectura, contexto o entrenamiento, por lo que esta ficha se basa únicamente en los datos disponibles en la página de Hugging Face y en las etiquetas del modelo.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ La licencia es Apache-2.0, lo que permite uso comercial y modificación sin rest
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo (si es transformer denso, MoE, etc.) ni sobre el proceso de entrenamiento. Los datos de HuggingFace solo indican el número de parámetros y la licencia. Las etiquetas sugieren que se trata de un modelo de tipo instruct/conversacional, probablemente afinado sobre una base de 27B, pero no se proporciona el dataset ni el método de alineación (RLHF, DPO, etc.). Por tanto, no se puede confirmar ninguna innovación técnica.
+No se ha publicado información sobre la arquitectura del modelo (si es transformer denso, MoE, etc.) ni sobre el proceso de entrenamiento. Los datos de Hugging Face solo indican el número de parámetros y la licencia. Las etiquetas sugieren que se trata de un modelo de tipo instruct/conversacional, probablemente afinado sobre una base de 27B, pero no se proporciona el dataset ni el método de alineación (RLHF, DPO, etc.). Por tanto, no se puede confirmar ninguna innovación técnica.
 
 ## Capacidades
 
@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/ReadyArt/Heimdallr-27B-v0.4-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/ReadyArt/Heimdallr-27B-v0.4-GGUF)
 - [Modelo base (safetensors)](https://huggingface.co/ReadyArt/Heimdallr-27B-v0.4)
 - [Versión v0.35 GGUF](https://huggingface.co/ReadyArt/Heimdallr-27B-v0.35-GGUF) (referencia de iteraciones anteriores)
 - [Versión v0.35 base](https://huggingface.co/ReadyArt/Heimdallr-27B-v0.35) (referencia de iteraciones anteriores)

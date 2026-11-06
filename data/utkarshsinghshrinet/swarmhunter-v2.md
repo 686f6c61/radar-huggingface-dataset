@@ -90,6 +90,6 @@ Nota: los datos de los modelos comparables provienen de conocimiento general y p
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/UtkarshSinghShrinet/swarmhunter-v2
+- Ficha del modelo en Hugging Face: https://huggingface.co/UtkarshSinghShrinet/swarmhunter-v2
 - Modelo base (SFT): https://huggingface.co/UtkarshSinghShrinet/swarmhunter-3b
 - Arquitectura base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Okko (también referido como "Okko the Exiled") es un ajuste fino de tipo LoRA para generación de imágenes por difusión, desarrollado por el usuario HatefulSable y publicado en HuggingFace. El modelo no parte de cero: está entrenado sobre `noobai-epred-v1.1-sdxl`, una variante de la familia NoobAI-XL, que a su vez deriva de la arquitectura SDXL (Stable Diffusion XL) de difusión latente. El objetivo es reproducir un personaje concreto —un joven de pelo blanco con reflejos rojos, cuernos rojos, orejas puntiagudas y estética de fantasía— activado mediante la etiqueta disparadora `oteokko`.
+Okko (también referido como "Okko the Exiled") es un ajuste fino de tipo LoRA para generación de imágenes por difusión, desarrollado por el usuario HatefulSable y publicado en Hugging Face. El modelo no parte de cero: está entrenado sobre `noobai-epred-v1.1-sdxl`, una variante de la familia NoobAI-XL, que a su vez deriva de la arquitectura SDXL (Stable Diffusion XL) de difusión latente. El objetivo es reproducir un personaje concreto —un joven de pelo blanco con reflejos rojos, cuernos rojos, orejas puntiagudas y estética de fantasía— activado mediante la etiqueta disparadora `oteokko`.
 
 Se trata de un modelo muy especializado y de alcance reducido: el conjunto de entrenamiento consta de únicamente 9 imágenes procesadas a 768x768 píxeles durante 200 pasos por época. Esto lo sitúa en la categoría de "character LoRA" o adaptador de personaje, pensado para integrarse sobre el modelo base NoobAI-XL en pipelines de difusión como ComfyUI, Automatic1111 o la librería Diffusers, y no como un modelo generativo autónomo de propósito general.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: al tratarse de un LoRA sobre una base SDXL, los requisitos vienen determinados por el modelo base. En precision fp16, SDXL requiere habitualmente del orden de 8-12 GB de VRAM, cifra orientativa no confirmada por el autor para este adaptador concreto.
 - GPU recomendadas (estimacion basada en la base SDXL, no confirmada por el autor): NVIDIA RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090; en el ambito profesional, A10G, L4, A100 o H100 para despliegue por lotes.
 - Cabe en GPU de consumo: previsiblemente si, en tarjetas con 8 GB o mas de VRAM si se aplican tecnicas de ahorro de memoria (medvram, precision fp16, offload a CPU). No verificado para este LoRA en concreto.
-- Opciones de despliegue: ComfyUI, Automatic1111 (webui), Forge, InvokeAI, SD.Next y la libreria Diffusers de HuggingFace, todos ellos con soporte de LoRA sobre SDXL. No se documenta soporte nativo en vLLM, llama.cpp, Ollama ni TGI, ya que son herramientas para modelos de lenguaje.
+- Opciones de despliegue: ComfyUI, Automatic1111 (webui), Forge, InvokeAI, SD.Next y la libreria Diffusers de Hugging Face, todos ellos con soporte de LoRA sobre SDXL. No se documenta soporte nativo en vLLM, llama.cpp, Ollama ni TGI, ya que son herramientas para modelos de lenguaje.
 - Latencia y throughput: no disponibles. No se publican mediciones de tiempo por imagen ni imagenes por segundo.
 
 ## Comparativa con modelos similares
@@ -66,10 +66,10 @@ No se dispone de datos de rendimiento de Okko que permitan una comparacion cuant
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HatefulSable/okko | LoRA de personaje | NoobAI-XL / SDXL | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
-| NoobAI-XL (base) | Modelo de difusion completo | SDXL | no disponible en esta ficha | no aplica | no disponible | Publico en HuggingFace |
+| HatefulSable/okko | LoRA de personaje | NoobAI-XL / SDXL | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
+| NoobAI-XL (base) | Modelo de difusion completo | SDXL | no disponible en esta ficha | no aplica | no disponible | Publico en Hugging Face |
 | Pony Diffusion V6 XL | Modelo de difusion completo | SDXL | ~2,6 B (UNet, referencia) | no aplica | licencia propia | Ampliamente usado |
-| Otros LoRA de personaje sobre SDXL | Adaptadores de bajo rango | SDXL | no disponible | no aplica | variable | Ecosistema Civitai / HuggingFace |
+| Otros LoRA de personaje sobre SDXL | Adaptadores de bajo rango | SDXL | no disponible | no aplica | variable | Ecosistema Civitai / Hugging Face |
 
 No se ha localizado informacion suficiente para establecer comparaciones de calidad, fidelidad al personaje o velocidad frente a alternativas concretas.
 
@@ -88,9 +88,9 @@ No se ha localizado informacion suficiente para establecer comparaciones de cali
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HatefulSable/okko
+- Modelo en Hugging Face: https://huggingface.co/HatefulSable/okko
 - Otro modelo del mismo autor (referencia): https://huggingface.co/HatefulSable/goldie/tree/main
 - Repositorio comunitario de modelos sin censura (mencionado en la busqueda): https://github.com/samssouza/uncensored-ai-list
 - Articulo sobre riesgos de modelos abiertos sin salvaguardas (contexto): https://www.npr.org/2026/05/31/nx-s1-5816391/ai-safety-concerns-danger-open-weight-models-risks
 - Modelo relacionado en SeaArt (contexto, no oficial): https://www.seaart.ai/models/detail/454c12d584454ed9e4e0eaf6004082bc
-- HuggingFace (portal general): https://huggingface.co/
+- Hugging Face (portal general): https://huggingface.co/

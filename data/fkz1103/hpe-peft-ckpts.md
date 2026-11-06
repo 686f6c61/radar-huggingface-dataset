@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HPE-PEFT es un conjunto de checkpoints para ajuste fino eficiente en parámetros (PEFT) de modelos de visión 3D basados en point clouds. Lo desarrolla el usuario fkz1103 y acompaña al artículo "HPE-PEFT: Hierarchical Point Encoding for Parameter-Efficient Fine-Tuning via Group Geometry on the Positional Pathway", enviado a la revista *Pattern Recognition* y actualmente en revisión. El repositorio de HuggingFace aloja únicamente los pesos entrenados; el código y la documentación completa residen en GitHub.
+HPE-PEFT es un conjunto de checkpoints para ajuste fino eficiente en parámetros (PEFT) de modelos de visión 3D basados en point clouds. Lo desarrolla el usuario fkz1103 y acompaña al artículo "HPE-PEFT: Hierarchical Point Encoding for Parameter-Efficient Fine-Tuning via Group Geometry on the Positional Pathway", enviado a la revista *Pattern Recognition* y actualmente en revisión. El repositorio de Hugging Face aloja únicamente los pesos entrenados; el código y la documentación completa residen en GitHub.
 
 La propuesta técnica consiste en inyectar un módulo de codificación jerárquica sobre la vía posicional de un transformer de point clouds, de modo que solo se entrenan entre el 1,38 % y el 4,34 % de los parámetros totales del modelo base. Con esa fracción mínima de parámetros ajustables se alcanzan resultados competitivos en clasificación de objetos 3D (ModelNet40, ScanObjectNN) y en segmentación de partes y semántica (ShapeNetPart, S3DIS).
 
@@ -83,6 +83,6 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fkz1103/HPE-PEFT-ckpts
+- Hugging Face: https://huggingface.co/fkz1103/HPE-PEFT-ckpts
 - Código: https://github.com/fkz1103/HPE-PEFT
 - Artículo: enviado a *Pattern Recognition* (en revisión); sin enlace disponible.

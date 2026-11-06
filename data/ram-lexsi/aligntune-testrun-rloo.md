@@ -70,7 +70,7 @@ No se dispone de informacion sobre adaptadores LoRA comparables entrenados con R
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ram-lexsi/aligntune-testrun-RLOO
+- Repositorio Hugging Face: https://huggingface.co/ram-lexsi/aligntune-testrun-RLOO
 - Sitio web de AlignTune: https://aligntune.lexsi.ai/
 - Repositorio GitHub de AlignTune: https://github.com/Lexsi-Labs/aligntune
 - Pagina de herramientas de Lexsi Labs: https://lexsi.ai/tools/aligntune

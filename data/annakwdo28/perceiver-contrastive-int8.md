@@ -36,7 +36,7 @@ No se ha ejecutado ningún entrenamiento. El archivo `model.safetensors` contien
 - **Pruebas de humo de código propio:** el checkpoint de inicialización y `eval.py` permiten confirmar que un pipeline de entrenamiento personalizado carga correctamente los pesos.
 - **Experimentos controlados de aprendizaje contrastivo:** al ser un checkpoint sin entrenar, puede usarse como condición inicial para comparar configuraciones con datos y semillas aleatorias.
 - **Entrenamiento educativo en arquitecturas de atención:** la simplicidad y el tamaño mínimo del modelo lo hacen adecuado para estudiar el funcionamiento interno de Perceiver.
-- **Desarrollo de adaptadores de carga:** al requerir un adaptador explícito, resulta útil para practicar la integración de modelos personalizados con APIs de HuggingFace.
+- **Desarrollo de adaptadores de carga:** al requerir un adaptador explícito, resulta útil para practicar la integración de modelos personalizados con APIs de Hugging Face.
 - **Diagnóstico de inicializaciones:** permite comparar el comportamiento de pesos de inicialización frente a pesos aleatorios en tareas de representación.
 
 Todos los usos anteriores son de carácter experimental; ninguno es apto para producción sin un ciclo completo de entrenamiento y evaluación.
@@ -63,11 +63,11 @@ El único modelo comparable localizado en la búsqueda web es `anilpatelner/perc
 - **No entrenado:** el checkpoint es de inicialización y no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 - **Sin benchmarks:** no se reclaman puntuaciones de rendimiento; cualquier uso en producción es inapropiado en el estado actual.
 - **Nombre int8 engañoso:** no se documenta ninguna cuantización int8 en la model card ni en los metadatos de safetensors.
-- **Implementación personalizada:** las APIs genéricas de HuggingFace requieren un adaptador explícito, lo que complica la integración con frameworks estándar.
+- **Implementación personalizada:** las APIs genéricas de Hugging Face requieren un adaptador explícito, lo que complica la integración con frameworks estándar.
 - **Licencia Apache-2.0:** permite uso comercial, pero el modelo sin entrenar no ofrece valor comercial directo.
 - **Riesgo de alucinación:** no aplica en el estado actual al no ser un modelo generativo entrenado; sin embargo, cualquier uso futuro tras entrenamiento requeriría una evaluación independiente.
 - **Sin evaluación de sesgos:** al no haber entrenamiento, no se han evaluado sesgos en tareas concretas.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Annakwdo28/perceiver-contrastive-int8
+- Hugging Face: https://huggingface.co/Annakwdo28/perceiver-contrastive-int8
 - Modelo comparable: https://huggingface.co/anilpatelner/perceiver-contrastive

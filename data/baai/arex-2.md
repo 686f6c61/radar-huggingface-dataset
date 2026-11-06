@@ -12,7 +12,7 @@ Es relevante ahora porque combina tres elementos poco frecuentes en modelos abie
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal, compatible con la familia Qwen3.8 (según model card); etiqueta de arquitectura qwen3_5 en HuggingFace |
+| Arquitectura | Transformer denso multimodal, compatible con la familia Qwen3.8 (según model card); etiqueta de arquitectura qwen3_5 en Hugging Face |
 | Parámetros totales | 27.356.728.560 (≈27,36 B) |
 | Parámetros activos | No aplica: modelo denso, sin mezcla de expertos |
 | Longitud de contexto | 262.144 tokens |
@@ -23,7 +23,7 @@ Es relevante ahora porque combina tres elementos poco frecuentes en modelos abie
 
 ## Arquitectura y entrenamiento
 
-La model card describe AREX-2 como un modelo multimodal denso compatible con Qwen3.8, con 27 B de parámetros y una ventana de contexto de 262.144 tokens. No se especifica el número de capas, la dimensión oculta, el número de cabezas de atención ni el tipo de codificador visual empleado. La etiqueta `qwen3_5` en HuggingFace y el campo `base_model: Qwen/Qwen3.8-27B` indican que se trata de un ajuste fino sobre un modelo base de la familia Qwen3.8 de 27 B, y el pipeline declarado es `image-text-to-text`, por lo que acepta entradas de imagen y texto.
+La model card describe AREX-2 como un modelo multimodal denso compatible con Qwen3.8, con 27 B de parámetros y una ventana de contexto de 262.144 tokens. No se especifica el número de capas, la dimensión oculta, el número de cabezas de atención ni el tipo de codificador visual empleado. La etiqueta `qwen3_5` en Hugging Face y el campo `base_model: Qwen/Qwen3.8-27B` indican que se trata de un ajuste fino sobre un modelo base de la familia Qwen3.8 de 27 B, y el pipeline declarado es `image-text-to-text`, por lo que acepta entradas de imagen y texto.
 
 El entrenamiento se centra en tareas de programación algorítmica e ingeniería de aprendizaje automático con retroalimentación verificable, junto con los datos de investigación profunda ya empleados en el modelo predecesor AREX. No se indica en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset, ni si se emplearon técnicas de RLHF, DPO u otras fases de alineamiento. La aportación técnica destacada es el bucle de auto-mejoramiento a lo largo de múltiples rondas de inferencia, que permite convertir presupuesto adicional de cómputo en refinamiento útil de la solución, y cuya transferencia desde dominios de código y aprendizaje automático hacia investigación profunda se reporta como un resultado observado.
 
@@ -94,7 +94,7 @@ Se comparan alternativas abiertas de la misma categoría (modelos agénticos y d
 
 | Modelo | Parámetros | Contexto | Frontier-CS | MLE-Lite | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AREX-2 | 27 B | 262.144 tokens | 70,7 | 81,8 | Apache 2.0 | Pesos abiertos en HuggingFace |
+| AREX-2 | 27 B | 262.144 tokens | 70,7 | 81,8 | Apache 2.0 | Pesos abiertos en Hugging Face |
 | Qwen3.6-35B-A3B | 35 B | no disponible | 23,4 | 39,4 | no disponible | Pesos abiertos |
 | Frontis-MA1-35B | 35 B | no disponible | no disponible | 71,2 | no disponible | Pesos abiertos |
 | BigBang-V1 | 35 B | no disponible | no disponible | 59,1 | no disponible | Pesos abiertos |
@@ -116,10 +116,10 @@ Frente a las alternativas abiertas de 35 B recogidas en la tabla, AREX-2 obtiene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BAAI/AREX-2
+- Modelo en Hugging Face: https://huggingface.co/BAAI/AREX-2
 - Artículo (PDF alojado en el repositorio): https://huggingface.co/BAAI/AREX-2/resolve/main/arex2_paper.pdf
 - Repositorio de código y página del proyecto: https://github.com/VectorSpaceLab/AREX-2
 - Identificador arXiv indicado en las etiquetas del modelo: arxiv:2607.21461
-- Colección AREX de BAAI en HuggingFace: https://huggingface.co/collections/BAAI/arex
+- Colección AREX de BAAI en Hugging Face: https://huggingface.co/collections/BAAI/arex
 - Endpoint de inferencia de terceros (FriendliAI): https://friendli.ai/models/cfli/AREX-2
 - Cobertura editorial de AGI Hunt: https://agihunt.info/en/p/1a0f2197438a7a27d91a859f76f

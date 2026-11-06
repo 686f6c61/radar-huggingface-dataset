@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MTL_training_full_80K es un modelo de lenguaje encoder-only publicado en HuggingFace por el usuario RonTon05. Se trata de un fine-tuning de `RonTon05/model_content_V2_test`, que a su vez parte de la familia RoBERTa según la etiqueta `roberta` del repositorio. Con 136.385.033 parámetros totales (unos 136 M) y un repositorio de 0,5 GB en formato safetensors, es un modelo pequeno, pensado probablemente para tareas discriminativas (clasificacion, etiquetado o moderacion de contenido) mas que para generacion de texto libre.
+MTL_training_full_80K es un modelo de lenguaje encoder-only publicado en Hugging Face por el usuario RonTon05. Se trata de un fine-tuning de `RonTon05/model_content_V2_test`, que a su vez parte de la familia RoBERTa según la etiqueta `roberta` del repositorio. Con 136.385.033 parámetros totales (unos 136 M) y un repositorio de 0,5 GB en formato safetensors, es un modelo pequeno, pensado probablemente para tareas discriminativas (clasificacion, etiquetado o moderacion de contenido) mas que para generacion de texto libre.
 
 El nombre del repositorio sugiere un entrenamiento multi-tarea (MTL, *multi-task learning*) sobre un conjunto de aproximadamente 80.000 ejemplos, con 10 epocas, learning rate 2e-5 y batch efectivo de 256. La model card es la plantilla autogenerada por `Trainer` y no aporta descripcion, datos de entrenamiento ni resultados de evaluacion, por lo que la mayor parte de las especificaciones habituales (idiomas, contexto, composicion del dataset) no estan documentadas.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El `m
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MTL_training_full_80K | 136,4 M | no disponible | Encoder fine-tuneado (RoBERTa) | AGPL-3.0 | HuggingFace, 0 descargas, sin documentacion |
+| MTL_training_full_80K | 136,4 M | no disponible | Encoder fine-tuneado (RoBERTa) | AGPL-3.0 | Hugging Face, 0 descargas, sin documentacion |
 | roberta-base | ~125 M | 512 tokens | Encoder base | MIT | Ampliamente disponible, con benchmarks publicados en GLUE |
 | distilbert-base-uncased | ~66 M | 512 tokens | Encoder destilado | Apache-2.0 | Muy extendido, pensado para inferencia rapida |
 | microsoft/deberta-v3-base | ~86 M de backbone (~184 M con embeddings) | 512 tokens | Encoder con atencion desacoplada | MIT | Estandar en tareas NLU con benchmarks publicados |
@@ -89,7 +89,7 @@ La comparacion en rendimiento no es posible: el autor no publica ninguna metrica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RonTon05/MTL_training_full_80K
+- Modelo en Hugging Face: https://huggingface.co/RonTon05/MTL_training_full_80K
 - Modelo base: https://huggingface.co/RonTon05/model_content_V2_test
 - Perfil del autor: https://huggingface.co/RonTon05
 - Licencia AGPL-3.0: https://www.gnu.org/licenses/agpl-3.0.html

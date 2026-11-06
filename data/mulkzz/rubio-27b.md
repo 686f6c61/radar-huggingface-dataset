@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rubio-27B | 27,78 B | 4096 (entrenamiento) | Evaluacion de Biologia en coreano con salida JSON | Apache 2.0 | HuggingFace, 151 descargas |
-| Rubio-4B (mismo autor) | ~4 B (no confirmado) | no disponible | Misma tarea, mismo dataset y configuracion | no disponible | HuggingFace, en servicio en demo |
-| Qwen/Qwen3.8-27B (base) | ~27 B | no disponible | Proposito general | no disponible | HuggingFace |
+| Rubio-27B | 27,78 B | 4096 (entrenamiento) | Evaluacion de Biologia en coreano con salida JSON | Apache 2.0 | Hugging Face, 151 descargas |
+| Rubio-4B (mismo autor) | ~4 B (no confirmado) | no disponible | Misma tarea, mismo dataset y configuracion | no disponible | Hugging Face, en servicio en demo |
+| Qwen/Qwen3.8-27B (base) | ~27 B | no disponible | Proposito general | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulkzz/Rubio-27B
+- Modelo en Hugging Face: https://huggingface.co/mulkzz/Rubio-27B
 - Version 4B: https://huggingface.co/mulkzz/Rubio-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Copia Unsloth del base: https://huggingface.co/unsloth/Qwen3.8-27B

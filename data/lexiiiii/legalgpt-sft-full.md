@@ -80,6 +80,6 @@ La comparación con modelos comerciales como LawGPT o LegalGPT no es posible por
 
 ## Enlaces
 
-- [HuggingFace: Lexiiiii/legalgpt-sft-full](https://huggingface.co/Lexiiiii/legalgpt-sft-full)
+- [Hugging Face: Lexiiiii/legalgpt-sft-full](https://huggingface.co/Lexiiiii/legalgpt-sft-full)
 - [Repositorio del proyecto LegalGPT (GitHub)](https://github.com/czc0407/legalGPT)
 - [Modelo base Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)

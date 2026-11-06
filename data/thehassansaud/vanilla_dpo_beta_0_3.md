@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TheHassanSaud/Vanilla_DPO_beta_0_3 es un modelo de generación de texto de 405.334.016 parámetros, publicado en HuggingFace por el usuario TheHassanSaud. Según las etiquetas del repositorio, la arquitectura subyacente es GPT-NeoX, y el modelo está registrado para la tarea de `text-generation`. El nombre del modelo sugiere que se ha realizado un ajuste fino mediante Direct Preference Optimization (DPO) con un parámetro beta de 0.3, aunque no se dispone de confirmación explícita en la documentación.
+TheHassanSaud/Vanilla_DPO_beta_0_3 es un modelo de generación de texto de 405.334.016 parámetros, publicado en Hugging Face por el usuario TheHassanSaud. Según las etiquetas del repositorio, la arquitectura subyacente es GPT-NeoX, y el modelo está registrado para la tarea de `text-generation`. El nombre del modelo sugiere que se ha realizado un ajuste fino mediante Direct Preference Optimization (DPO) con un parámetro beta de 0.3, aunque no se dispone de confirmación explícita en la documentación.
 
 El repositorio contiene únicamente los pesos en formato `safetensors` (0.8 GB) y una model card autogenerada que no aporta información sobre el proceso de entrenamiento, los datos utilizados ni las capacidades del modelo. Al ser un modelo de tamaño reducido (405M), podría resultar útil para experimentación, prototipado o despliegue en entornos con recursos limitados, pero la ausencia de documentación técnica y de benchmarks dificulta su evaluación rigurosa.
 
@@ -73,5 +73,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheHassanSaud/Vanilla_DPO_beta_0_3
-- Perfil del autor en HuggingFace: https://huggingface.co/TheHassanSaud
+- Hugging Face: https://huggingface.co/TheHassanSaud/Vanilla_DPO_beta_0_3
+- Perfil del autor en Hugging Face: https://huggingface.co/TheHassanSaud

@@ -80,7 +80,7 @@ No disponible. No existe una categoría de modelos comparable, ya que este repos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/felixschwarz/assignment-contrastive-learning-2024
+- Repositorio en Hugging Face: https://huggingface.co/felixschwarz/assignment-contrastive-learning-2024
 - Fichero principal de la nota: `reading.md` (dentro del repositorio)
 - Documentación: `README.md` (dentro del repositorio)
 - Paper, blog, repositorio de código o demo adicionales: no disponibles en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zyxtai/pi05_red_block` es un checkpoint de pesos publicado en HuggingFace por el usuario zyxtai. Se trata de un repositorio con un unico artefacto de tipo safetensors, sin model card publica asociada: no consta licencia, idiomas soportados, pipeline declarado ni descripcion del proposito del modelo. El repositorio acumula 10 descargas y 0 likes en el momento de redactar esta ficha, lo que indica una distribucion muy limitada y sin comunidad de usuarios establecida.
+`zyxtai/pi05_red_block` es un checkpoint de pesos publicado en Hugging Face por el usuario zyxtai. Se trata de un repositorio con un unico artefacto de tipo safetensors, sin model card publica asociada: no consta licencia, idiomas soportados, pipeline declarado ni descripcion del proposito del modelo. El repositorio acumula 10 descargas y 0 likes en el momento de redactar esta ficha, lo que indica una distribucion muy limitada y sin comunidad de usuarios establecida.
 
 El unico dato tecnico objetivo disponible es el recuento de parametros obtenido directamente de los ficheros safetensors: 4.143.404.816 parametros (aproximadamente 4,14 mil millones). El tamano del repositorio es de 9,4 GB, cifra coherente con un unico checkpoint almacenado en precision de 16 bits (bf16 o fp16), que para 4,14 mil millones de parametros ocuparia unos 8,3 GB de pesos mas el espacio adicional de ficheros auxiliares. El identificador incluye el sufijo `pi05` y el segmento `red_block`, pero no hay informacion publica que confirme a que arquitectura o familia corresponde esa nomenclatura.
 
@@ -30,7 +30,7 @@ La busqueda web realizada no ha devuelto ningun resultado relacionado con el mod
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en los metadatos de HuggingFace ni en los resultados de busqueda disponibles. El repositorio no incluye model card, configuracion de atencion, numero de capas, dimension oculta ni tipo de tokenizador. El unico indicio estructural es el recuento de parametros (4,14 mil millones) y el tamano de los pesos (9,4 GB), compatibles con un transformer denso almacenado a 16 bits, pero esta inferencia no puede confirmarse con los datos disponibles.
+No se ha publicado informacion sobre la arquitectura del modelo en los metadatos de Hugging Face ni en los resultados de busqueda disponibles. El repositorio no incluye model card, configuracion de atencion, numero de capas, dimension oculta ni tipo de tokenizador. El unico indicio estructural es el recuento de parametros (4,14 mil millones) y el tamano de los pesos (9,4 GB), compatibles con un transformer denso almacenado a 16 bits, pero esta inferencia no puede confirmarse con los datos disponibles.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset, ni sobre si se aplicaron tecnicas de ajuste como RLHF, DPO, SFT u otro tipo de alineamiento. Se desconoce igualmente si el modelo incorpora innovaciones tecnicas como atencion lineal, decodificacion especulativa, arquitecturas hibridas Mamba/transformer o mezcla de expertos. Toda esta seccion queda marcada como no disponible.
 
@@ -82,5 +82,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zyxtai/pi05_red_block
+- Hugging Face: https://huggingface.co/zyxtai/pi05_red_block
 - No se han encontrado papers, repositorios, blogs ni demos adicionales relacionados con este modelo en la busqueda web realizada. Los unicos resultados devueltos corresponden a paginas corporativas de TotalEnergies sobre Angola, sin relacion con el modelo.

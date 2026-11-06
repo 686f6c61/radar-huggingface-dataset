@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Chengheng/sandbag-ministral3-8b-alignfake-wm-self` es un adaptador LoRA (librería PEFT) construido sobre el modelo base `mistralai/Ministral-3-8B-Instruct-2512`, perteneciente a la familia Ministral 3 de Mistral AI. El autor, Chengheng, lo publica en HuggingFace con el pipeline de generación de texto y etiquetas que indican uso de LoRA y transformers, pero la model card está prácticamente vacía: no se proporciona descripción, datos de entrenamiento, licencia ni idiomas soportados.
+El modelo `Chengheng/sandbag-ministral3-8b-alignfake-wm-self` es un adaptador LoRA (librería PEFT) construido sobre el modelo base `mistralai/Ministral-3-8B-Instruct-2512`, perteneciente a la familia Ministral 3 de Mistral AI. El autor, Chengheng, lo publica en Hugging Face con el pipeline de generación de texto y etiquetas que indican uso de LoRA y transformers, pero la model card está prácticamente vacía: no se proporciona descripción, datos de entrenamiento, licencia ni idiomas soportados.
 
 El nombre del repositorio sugiere un propósito relacionado con *sandbagging* (ocultación deliberada de capacidades) y *alignment* (alineación), posiblemente como experimento de investigación sobre cómo un adaptador puede modificar el comportamiento del modelo base. Sin embargo, al no existir documentación adicional, no se puede confirmar ni detallar su funcionamiento. El tamaño del repositorio es de 0,2 GB, coherente con un adaptador LoRA de dimensiones reducidas.
 
@@ -82,7 +82,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chengheng/sandbag-ministral3-8b-alignfake-wm-self
+- Modelo en Hugging Face: https://huggingface.co/Chengheng/sandbag-ministral3-8b-alignfake-wm-self
 - Modelo base (Ministral-3-8B-Instruct-2512): https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512
 - Colección Ministral 3 de Mistral AI: https://huggingface.co/collections/mistralai/ministral-3
 - Documentación de Ministral 3 8B: https://docs.mistral.ai/models/ministral-3-8b-25-12

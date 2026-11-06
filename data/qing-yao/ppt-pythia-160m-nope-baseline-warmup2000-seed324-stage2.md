@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ppt-pythia-160m-nope-baseline-warmup2000-seed324-stage2` es un ajuste fino (fine-tune) de `EleutherAI/pythia-160m`, publicado por el usuario de HuggingFace `qing-yao`. El nombre del repositorio sugiere un experimento de investigación sobre variantes de atención posicional: el sufijo `nope` apunta a "NoPE" (No Positional Encoding), y el tag de arquitectura `gpt_neox_nope` confirma que el modelo emplea una variante de GPT-NeoX sin codificación posicional explícita. Se trata, por tanto, de un checkpoint de investigación más que de un modelo listo para producción.
+`ppt-pythia-160m-nope-baseline-warmup2000-seed324-stage2` es un ajuste fino (fine-tune) de `EleutherAI/pythia-160m`, publicado por el usuario de Hugging Face `qing-yao`. El nombre del repositorio sugiere un experimento de investigación sobre variantes de atención posicional: el sufijo `nope` apunta a "NoPE" (No Positional Encoding), y el tag de arquitectura `gpt_neox_nope` confirma que el modelo emplea una variante de GPT-NeoX sin codificación posicional explícita. Se trata, por tanto, de un checkpoint de investigación más que de un modelo listo para producción.
 
-El modelo parte de la arquitectura GPT-NeoX de Pythia-160M, con 162.322.944 parámetros totales, y ha sido entrenado con el `Trainer` de HuggingFace sobre un dataset no especificado en la model card (aparece como "None dataset"). Los hiperparámetros documentados incluyen learning rate de 1e-3, batch total de 32, optimizador AdamW fused, scheduler coseno con warmup de 2000 pasos y 10.000 pasos de entrenamiento con semilla 324. El checkpoint corresponde a la "stage 2" del experimento.
+El modelo parte de la arquitectura GPT-NeoX de Pythia-160M, con 162.322.944 parámetros totales, y ha sido entrenado con el `Trainer` de Hugging Face sobre un dataset no especificado en la model card (aparece como "None dataset"). Los hiperparámetros documentados incluyen learning rate de 1e-3, batch total de 32, optimizador AdamW fused, scheduler coseno con warmup de 2000 pasos y 10.000 pasos de entrenamiento con semilla 324. El checkpoint corresponde a la "stage 2" del experimento.
 
 Su relevancia es limitada fuera del ámbito de la investigación: no hay benchmarks publicados, la model card está generada automáticamente y sin completar, y el rendimiento declarado es una pérdida de validación de 4,2163. Resulta útil como pieza de ablation para estudiar el efecto de eliminar la codificación posicional en modelos pequeños, pero no como base para aplicaciones reales.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada fuera del ámbito de la investigación: no hay benchma
 
 El modelo se construye sobre `EleutherAI/pythia-160m`, un transformer decoder-only de la familia GPT-NeoX con 162 millones de parámetros. La variante `nope` implica la eliminación de los embeddings posicionales rotatorios (RoPE) que Pythia emplea por defecto; el tag `custom_code` indica que la implementación requiere código propio y no puede cargarse con un `AutoModel` estándar sin el módulo correspondiente. El sufijo `baseline` y `warmup2000` apuntan a un diseño experimental controlado: un baseline con warmup de 2000 pasos y semilla 324, correspondiente a la segunda etapa ("stage2") de un pipeline de entrenamiento por fases.
 
-El entrenamiento se realizó con el `Trainer` de HuggingFace, learning rate 1e-3, batch de entrenamiento 16 con acumulación de gradiente 2 (batch efectivo 32), optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-8, scheduler `cosine_with_min_lr` y 10.000 pasos totales. La pérdida de validación final reportada es 4,2163, partiendo de 9,5896 en el paso 50. No se documenta el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO; la model card indica explícitamente "More information needed" en las secciones de descripción, usos previstos y datos de entrenamiento.
+El entrenamiento se realizó con el `Trainer` de Hugging Face, learning rate 1e-3, batch de entrenamiento 16 con acumulación de gradiente 2 (batch efectivo 32), optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-8, scheduler `cosine_with_min_lr` y 10.000 pasos totales. La pérdida de validación final reportada es 4,2163, partiendo de 9,5896 en el paso 50. No se documenta el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO; la model card indica explícitamente "More information needed" en las secciones de descripción, usos previstos y datos de entrenamiento.
 
 ## Capacidades
 
@@ -93,7 +93,7 @@ La comparación directa con el modelo base es la más relevante: este checkpoint
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-baseline-warmup2000-seed324-stage2
+- Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-baseline-warmup2000-seed324-stage2
 - Modelo base: https://huggingface.co/EleutherAI/pythia-160m
 - Repositorio Pythia (EleutherAI): https://github.com/EleutherAI/pythia
 - Paper Pythia: https://arxiv.org/abs/2304.01373

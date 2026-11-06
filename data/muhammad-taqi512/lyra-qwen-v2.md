@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LYRA-QWEN-V2 es un modelo publicado en HuggingFace por el usuario muhammad-taqi512 bajo el identificador `muhammad-taqi512/LYRA-QWEN-V2`. Se trata de un modelo de aproximadamente 1.543.714.304 parámetros (unos 1,54 mil millones) cuyos pesos están almacenados en formato safetensors, con un repositorio de 3,1 GB. La etiqueta de arquitectura del repositorio es `qwen2`, lo que sitúa al modelo en la familia de transformers decoder-only de Qwen2, y la licencia declarada es Apache 2.0.
+LYRA-QWEN-V2 es un modelo publicado en Hugging Face por el usuario muhammad-taqi512 bajo el identificador `muhammad-taqi512/LYRA-QWEN-V2`. Se trata de un modelo de aproximadamente 1.543.714.304 parámetros (unos 1,54 mil millones) cuyos pesos están almacenados en formato safetensors, con un repositorio de 3,1 GB. La etiqueta de arquitectura del repositorio es `qwen2`, lo que sitúa al modelo en la familia de transformers decoder-only de Qwen2, y la licencia declarada es Apache 2.0.
 
 El problema que resuelve y su relevancia no pueden determinarse con la información disponible: la model card pública se limita a repetir la declaración de licencia (`license: apache-2.0`) sin descripción, sin datos de entrenamiento, sin idiomas soportados y sin resultados de evaluación. El repositorio registra 0 descargas y 0 likes, y no se ha publicado pipeline de inferencia asociado, por lo que no hay evidencia de uso en producción ni de validación por parte de la comunidad.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| LYRA-QWEN-V2 | 1,54B | No disponible | Apache 2.0 | HuggingFace, 0 descargas | No disponible |
-| Qwen2.5-1.5B (Alibaba) | 1,54B | 32.768 tokens (ampliable con YaRN, según documentación oficial) | Apache 2.0 para la mayoría de tamaños | HuggingFace y múltiples proveedores | Métricas publicadas por el autor |
-| Llama-3.2-1B (Meta) | 1,24B | 128.000 tokens, según documentación oficial | Llama 3.2 Community License | HuggingFace | Métricas publicadas por el autor |
-| Gemma-2-2B (Google) | 2,6B | 8.192 tokens, según documentación oficial | Gemma Terms of Use | HuggingFace | Métricas publicadas por el autor |
+| LYRA-QWEN-V2 | 1,54B | No disponible | Apache 2.0 | Hugging Face, 0 descargas | No disponible |
+| Qwen2.5-1.5B (Alibaba) | 1,54B | 32.768 tokens (ampliable con YaRN, según documentación oficial) | Apache 2.0 para la mayoría de tamaños | Hugging Face y múltiples proveedores | Métricas publicadas por el autor |
+| Llama-3.2-1B (Meta) | 1,24B | 128.000 tokens, según documentación oficial | Llama 3.2 Community License | Hugging Face | Métricas publicadas por el autor |
+| Gemma-2-2B (Google) | 2,6B | 8.192 tokens, según documentación oficial | Gemma Terms of Use | Hugging Face | Métricas publicadas por el autor |
 
 La comparación de rendimiento con LYRA-QWEN-V2 no es posible: el modelo no publica métricas, no declara contexto ni idiomas y no ofrece artefactos de evaluación. La única ventaja verificable frente a las alternativas es la licencia Apache 2.0, que es más permisiva que las licencias de Llama 3.2 y Gemma 2 para uso comercial.
 
@@ -94,6 +94,6 @@ La comparación de rendimiento con LYRA-QWEN-V2 no es posible: el modelo no publ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/muhammad-taqi512/LYRA-QWEN-V2
+- Repositorio en Hugging Face: https://huggingface.co/muhammad-taqi512/LYRA-QWEN-V2
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web realizada.
 - Las búsquedas devolvieron únicamente resultados enciclopédicos no relacionados con el modelo (Wikipedia, Britannica, Encyclopédie Universalis), por lo que no se incluyen como referencias técnicas.

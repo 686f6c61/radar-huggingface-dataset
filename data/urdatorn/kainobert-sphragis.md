@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables específicos para griego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/KainoBERT-sphragis
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/KainoBERT-sphragis
 - Dataset de entrenamiento: https://huggingface.co/datasets/Urdatorn/AncientGreek-no-sphragis
 - Código de entrenamiento (repo Sphragis models): https://github.com/Urdatorn/sphragis_models/tree/be2e32deb9fdbf180a7eebe51e3b8eeec7e1929e
 - Perfil del autor en GitHub: https://github.com/Urdatorn/Urdatorn

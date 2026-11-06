@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SN92 generalist-m1-mdv es un modelo de clasificación de texto (text-classification) publicado por el usuario danyloooah en HuggingFace. No es un modelo entrenado desde cero, sino un merge en el espacio de pesos de tres fine-tunes del modelo base baselabs/mammoth-1, que a su vez deriva de Qwen3.5-27B (Apache-2.0) mediante post-entrenamiento. El modelo resultante conserva el backbone Qwen3_5Model con atención completa no causal y un cabezal de lectura de "answer-code" (readout) en el layout joint de REAX, orientado a la resolución de ítems de decisión con opciones discretas.
+SN92 generalist-m1-mdv es un modelo de clasificación de texto (text-classification) publicado por el usuario danyloooah en Hugging Face. No es un modelo entrenado desde cero, sino un merge en el espacio de pesos de tres fine-tunes del modelo base baselabs/mammoth-1, que a su vez deriva de Qwen3.5-27B (Apache-2.0) mediante post-entrenamiento. El modelo resultante conserva el backbone Qwen3_5Model con atención completa no causal y un cabezal de lectura de "answer-code" (readout) en el layout joint de REAX, orientado a la resolución de ítems de decisión con opciones discretas.
 
 El modelo resuelve tareas de decisión y clasificación estructurada: preguntas de opción múltiple, preguntas de conocimiento con opción de abstención ("no lo sé"), y otros ítems del formato de evaluación REAX eval-v5.1. Su relevancia radica en que combina mediante aritmética de tareas lineal tres especializaciones distintas (un generalista, un "decider" y una variante generalista propia del autor) para producir un modelo único con capacidades agregadas, manteniendo licencia MIT y un tamaño de 26.085.330.160 parámetros (26,1 mil millones) en bfloat16.
 
@@ -69,11 +69,11 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| danyloooah/sn92-generalist-m1-mdv | 26,1 mil millones | 6.144 tokens | MIT | HuggingFace, 56 descargas | Merge de 3 fine-tunes de mammoth-1; clasificación de decisión |
-| baselabs/mammoth-1 | no disponible | no disponible | MIT | HuggingFace | Modelo base del linaje; post-entrenado de Qwen3.5-27B |
-| isomsom/sn92-gen-m87b | no disponible | no disponible | MIT | HuggingFace | Padre del merge (peso 0,5) |
-| xflud/sn92-decider-1 | no disponible | no disponible | MIT | HuggingFace | Padre del merge (peso 0,5) |
-| danyloooah/sn92-generalist-m1-v3a | no disponible | no disponible | MIT | HuggingFace | Padre del merge (peso 0,35); entrenado con LoRA |
+| danyloooah/sn92-generalist-m1-mdv | 26,1 mil millones | 6.144 tokens | MIT | Hugging Face, 56 descargas | Merge de 3 fine-tunes de mammoth-1; clasificación de decisión |
+| baselabs/mammoth-1 | no disponible | no disponible | MIT | Hugging Face | Modelo base del linaje; post-entrenado de Qwen3.5-27B |
+| isomsom/sn92-gen-m87b | no disponible | no disponible | MIT | Hugging Face | Padre del merge (peso 0,5) |
+| xflud/sn92-decider-1 | no disponible | no disponible | MIT | Hugging Face | Padre del merge (peso 0,5) |
+| danyloooah/sn92-generalist-m1-v3a | no disponible | no disponible | MIT | Hugging Face | Padre del merge (peso 0,35); entrenado con LoRA |
 
 No se dispone de datos de benchmarks ni de parámetros de contexto de los modelos comparables en la información proporcionada, por lo que la comparación se limita a linaje, licencia y disponibilidad.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni de parámetros de contexto de los modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danyloooah/sn92-generalist-m1-mdv
+- Modelo en Hugging Face: https://huggingface.co/danyloooah/sn92-generalist-m1-mdv
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Padre isomsom/sn92-gen-m87b: https://huggingface.co/isomsom/sn92-gen-m87b
 - Padre xflud/sn92-decider-1: https://huggingface.co/xflud/sn92-decider-1

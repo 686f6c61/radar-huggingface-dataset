@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| QuantStack/Wan2.2-I2V-A14B-GGUF (este) | 14,29 B (safetensors del repo) | GGUF | apache-2.0 | HuggingFace (371.875 descargas) |
-| Wan-AI/Wan2.2-I2V-A14B (base) | 14,29 B (según metadatos del repo cuantizado) | safetensors | apache-2.0 | HuggingFace |
+| QuantStack/Wan2.2-I2V-A14B-GGUF (este) | 14,29 B (safetensors del repo) | GGUF | apache-2.0 | Hugging Face (371.875 descargas) |
+| Wan-AI/Wan2.2-I2V-A14B (base) | 14,29 B (según metadatos del repo cuantizado) | safetensors | apache-2.0 | Hugging Face |
 | Otros modelos image-to-video (CogVideoX, HunyuanVideo, LTX-Video) | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de los modelos alternativos en la información proporcionada, por lo que no se puede realizar una comparación cuantitativa de rendimiento.
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de los m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF
 - README del repositorio: https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF/blob/main/README.md
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
 - Nodo de ComfyUI para GGUF (city96): https://github.com/city96/ComfyUI-GGUF

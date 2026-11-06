@@ -71,6 +71,6 @@ No se dispone de información sobre adaptadores LoRA equivalentes para la misma 
 
 ## Enlaces
 
-- [HuggingFace - quantumdatatausif/lora_model_text_to_image_prompt_engine](https://huggingface.co/quantumdatatausif/lora_model_text_to_image_prompt_engine)
+- [Hugging Face - quantumdatatausif/lora_model_text_to_image_prompt_engine](https://huggingface.co/quantumdatatausif/lora_model_text_to_image_prompt_engine)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)
 - [Modelo base: unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit](https://huggingface.co/unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`danielsaldana/AFCI_part5` no es un modelo de lenguaje ni una red neuronal entrenada, sino un kit de desarrollo offline empaquetado como repositorio de HuggingFace. Forma parte de una serie de repositorios (Part 1 a Part 7) que documentan y facilitan la construccion de un sistema de deteccion de arcos electricos (AFCI, arc-fault circuit interrupter) sobre un microcontrolador STM32F407. La cadena completa descrita por el autor es: sensor de corriente, muestreo por ADC con DMA en el STM32, extraccion de caracteristicas mediante FFT/STFT, inferencia de una red neuronal profunda cuantizada y, finalmente, decision de disparo (trip).
+`danielsaldana/AFCI_part5` no es un modelo de lenguaje ni una red neuronal entrenada, sino un kit de desarrollo offline empaquetado como repositorio de Hugging Face. Forma parte de una serie de repositorios (Part 1 a Part 7) que documentan y facilitan la construccion de un sistema de deteccion de arcos electricos (AFCI, arc-fault circuit interrupter) sobre un microcontrolador STM32F407. La cadena completa descrita por el autor es: sensor de corriente, muestreo por ADC con DMA en el STM32, extraccion de caracteristicas mediante FFT/STFT, inferencia de una red neuronal profunda cuantizada y, finalmente, decision de disparo (trip).
 
 La Parte 5 contiene concretamente el entorno de Python necesario para ejecutar los servicios del model zoo de STMicroelectronics (`stm32ai-modelzoo-services`), que es el componente usado en la Parte 4 para entrenar, evaluar, cuantizar y predecir el modelo de deteccion de arcos. Como las dependencias de ST (TensorFlow 2.18, Keras 3.8, PyTorch 2.7.1, ONNX 1.16, ONNX Runtime 1.20, Hydra 1.3.2, MLflow 2.20, neural-compressor 3.4.1) entran en conflicto con el entorno general de la Parte 3, el autor aisla este conjunto en un entorno virtual propio con 176 wheels para CPython 3.12 sobre Windows x64.
 
@@ -86,7 +86,7 @@ No disponible. No se han identificado en la informacion proporcionada repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danielsaldana/AFCI_part5
+- Repositorio en Hugging Face: https://huggingface.co/danielsaldana/AFCI_part5
 - Model zoo de STMicroelectronics (`stm32ai-modelzoo-services`): no disponible en la informacion proporcionada
 - Documentacion de ST Edge AI Core / STM32Cube AI Studio: no disponible en la informacion proporcionada
 - Repositorios de las partes 1 a 7 de la serie AFCI del mismo autor: no disponibles en la informacion proporcionada (solo se referencian por numero en la model card)

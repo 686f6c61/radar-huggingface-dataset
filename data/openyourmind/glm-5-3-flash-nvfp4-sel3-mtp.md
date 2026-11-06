@@ -4,7 +4,7 @@
 
 GLM-5.3-Flash-NVFP4-sel3-MTP es una variante cuantizada en formato NVFP4 (punto flotante de 4 bits de NVIDIA) del modelo GLM-5.3-Flash, desarrollado por Z.ai. Este modelo, también conocido como "ox-alpha", es un sistema multimodal de 320 mil millones de parámetros (18 mil millones activos) que acepta entradas de imagen y texto y genera texto. La versión cuantizada presentada aquí, creada por el usuario OpenYourMind, reduce el tamaño de los pesos a 4 bits, lo que permite su ejecución en hardware más modesto sin perder las capacidades del modelo original.
 
-El modelo base GLM-5.3-Flash destaca por superar a GLM-5.2 en benchmarks y tareas reales, y rivaliza con Claude Opus 4.8 en tareas de programación y agénticas, según documentación de Unsloth. Esta variante concreta añade dos modificaciones adicionales: abliteración (eliminación de los rechazos del modelo) y decodificación especulativa mediante predicción multi-token (MTP), lo que mejora la velocidad de inferencia. El acceso al repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+El modelo base GLM-5.3-Flash destaca por superar a GLM-5.2 en benchmarks y tareas reales, y rivaliza con Claude Opus 4.8 en tareas de programación y agénticas, según documentación de Unsloth. Esta variante concreta añade dos modificaciones adicionales: abliteración (eliminación de los rechazos del modelo) y decodificación especulativa mediante predicción multi-token (MTP), lo que mejora la velocidad de inferencia. El acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -46,7 +46,7 @@ La variante NVFP4-sel3-MTP aplica tres modificaciones sobre el modelo base. Prim
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para esta variante cuantizada (NVFP4-sel3-MTP). El modelo base GLM-5.3-Flash, según la documentación de Unsloth, supera a GLM-5.2 en benchmarks generales y rivaliza con Claude Opus 4.8 en tareas de código y agénticas, pero no se proporcionan cifras concretas en la información disponible. Se recomienda consultar la página del modelo base en HuggingFace para obtener métricas detalladas.
+No se han publicado resultados de benchmarks específicos para esta variante cuantizada (NVFP4-sel3-MTP). El modelo base GLM-5.3-Flash, según la documentación de Unsloth, supera a GLM-5.2 en benchmarks generales y rivaliza con Claude Opus 4.8 en tareas de código y agénticas, pero no se proporcionan cifras concretas en la información disponible. Se recomienda consultar la página del modelo base en Hugging Face para obtener métricas detalladas.
 
 ## Requisitos de hardware
 
@@ -62,7 +62,7 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated, por lo que requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Riesgo de alucinación: como todo modelo generativo, puede producir información plausible pero incorrecta, especialmente en dominios especializados.
 - Abliteración: la eliminación de los mecanismos de rechazo puede llevar a respuestas inapropiadas, sesgadas o dañinas, y elimina las salvaguardas de seguridad del modelo original.
 - Cuantización NVFP4: puede degradar ligeramente la calidad de las respuestas en comparación con el modelo en precisión completa (FP16/BF16), aunque la pérdida suele ser mínima para tareas generales.
@@ -72,8 +72,8 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OpenYourMind/GLM-5.3-Flash-NVFP4-sel3-MTP
+- Repositorio Hugging Face: https://huggingface.co/OpenYourMind/GLM-5.3-Flash-NVFP4-sel3-MTP
 - Documentación de Unsloth sobre GLM-5.3-Flash: https://unsloth.ai/docs/models/glm-5.3-flash
 - Guía de Unsloth para GLM-5.3: https://unsloth.ai/docs/models/glm-5.3
 - Repositorio GitHub con ejemplo de despliegue en DGX Spark: https://github.com/tonyd2wild/GLM-5.3-Flash-NVFP4-1M-KV-4x-DGX-Spark
-- Otras variantes NVFP4 en HuggingFace: https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4 y https://huggingface.co/LibertAIDAI/GLM-5.3-Flash-NVFP4
+- Otras variantes NVFP4 en Hugging Face: https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4 y https://huggingface.co/LibertAIDAI/GLM-5.3-Flash-NVFP4

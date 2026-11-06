@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GeoLadder-16M-8B (este modelo) | 16M | 2048 tokens | the_pile_deduplicated, 8B tokens | no disponible | HuggingFace, 23 checkpoints por rama |
-| Pythia-14M (EleutherAI) | 14M | 2048 tokens | The Pile, 300B tokens | Apache 2.0 | HuggingFace, checkpoints intermedios |
-| OTROS modelos de la suite GeoLadder | 4M-75M | 2048 tokens | the_pile_deduplicated | no disponible | Coleccion GeoLadder en HuggingFace |
-| GPT-2 small (OpenAI) | 124M | 1024 tokens | WebText | MIT | HuggingFace |
+| GeoLadder-16M-8B (este modelo) | 16M | 2048 tokens | the_pile_deduplicated, 8B tokens | no disponible | Hugging Face, 23 checkpoints por rama |
+| Pythia-14M (EleutherAI) | 14M | 2048 tokens | The Pile, 300B tokens | Apache 2.0 | Hugging Face, checkpoints intermedios |
+| OTROS modelos de la suite GeoLadder | 4M-75M | 2048 tokens | the_pile_deduplicated | no disponible | Coleccion GeoLadder en Hugging Face |
+| GPT-2 small (OpenAI) | 124M | 1024 tokens | WebText | MIT | Hugging Face |
 
 La comparacion mas directa es con Pythia-14M, tambien orientado a estudios de dinamica de entrenamiento y con checkpoints intermedios publicados. La diferencia clave es el presupuesto de tokens (8B frente a 300B) y la motivacion experimental: GeoLadder esta disenado para el analisis geometrico del articulo, mientras que Pythia busca ser una suite general de interpretabilidad. No se dispone de datos de rendimiento comparativos entre ambos en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ La comparacion mas directa es con Pythia-14M, tambien orientado a estudios de di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dill-lab/GeoLadder-16M-8B-bs128-lr0.0087-wd0.1-decay0.01
+- Repositorio Hugging Face: https://huggingface.co/dill-lab/GeoLadder-16M-8B-bs128-lr0.0087-wd0.1-decay0.01
 - Coleccion GeoLadder (108 modelos): https://huggingface.co/collections/dill-lab/geoladder-6acd192e30ec71aff2998e2e
 - Articulo en PMLR (ICML 2026, PMLR 306): https://proceedings.mlr.press/v306/kulkarni26c.html
 - Preprint en arXiv: https://arxiv.org/abs/2602.20433

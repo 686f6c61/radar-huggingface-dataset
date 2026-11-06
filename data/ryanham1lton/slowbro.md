@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Slowbro es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Slowbro`. En el momento de redactar esta ficha, la informacion publica disponible es practicamente nula: no hay pipeline declarado, no se especifican idiomas, no hay resultados de benchmarks y la model card se limita a una linea de licencia (`cc-by-4.0`). El repositorio ocupa 0,1 GB y registra 0 descargas y 0 likes, con fecha de creacion y ultima actualizacion del 24 de septiembre de 2026.
+Slowbro es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Slowbro`. En el momento de redactar esta ficha, la informacion publica disponible es practicamente nula: no hay pipeline declarado, no se especifican idiomas, no hay resultados de benchmarks y la model card se limita a una linea de licencia (`cc-by-4.0`). El repositorio ocupa 0,1 GB y registra 0 descargas y 0 likes, con fecha de creacion y ultima actualizacion del 24 de septiembre de 2026.
 
 Esto significa que no es posible confirmar la arquitectura, el numero de parametros, la longitud de contexto, los datos de entrenamiento ni las capacidades reales del modelo a partir de la informacion proporcionada. Cualquier afirmacion tecnica concreta al respecto seria especulativa y, por tanto, se marca explicitamente como no disponible en cada apartado de esta ficha.
 
@@ -84,11 +84,11 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, el contexto
 - Riesgo de alucinacion: no evaluado. No hay benchmarks de veracidad ni de fidelidad factual.
 - Licencia: CC-BY-4.0 permite uso comercial y obras derivadas con atribucion, pero no exime de responsabilidad sobre el origen de los datos de entrenamiento ni sobre posibles derechos de terceros incorporados al modelo. Conviene revisar la atribucion exigida antes de redistribuir.
 - Repositorio sin traccion: 0 descargas y 0 likes implican que el modelo no ha sido validado por la comunidad; no existe evidencia externa de funcionamiento correcto.
-- Riesgo de cadena de suministro: los pesos de HuggingFace pueden contener codigo con `pickle` si no estan en `safetensors`. Al no conocerse el formato, debe auditarse antes de cargar en un entorno de confianza.
+- Riesgo de cadena de suministro: los pesos de Hugging Face pueden contener codigo con `pickle` si no estan en `safetensors`. Al no conocerse el formato, debe auditarse antes de cargar en un entorno de confianza.
 - Idoneidad para produccion: no recomendada sin una evaluacion previa completa (carga, pruebas de calidad, analisis de seguridad y revision legal de la licencia y del origen de los datos).
 - Advertencia sobre el nombre: "Slowbro" coincide con el nombre de una criatura de la franquicia Pokemon, marca registrada por Nintendo, The Pokemon Company y Game Freak. Esto podria generar problemas de marca si el modelo se distribuye o comercializa con ese nombre.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Slowbro
+- Hugging Face: https://huggingface.co/Ryanham1lton/Slowbro
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

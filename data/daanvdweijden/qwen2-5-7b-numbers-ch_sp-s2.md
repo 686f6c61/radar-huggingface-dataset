@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `daanvdweijden/qwen2.5-7b-numbers-ch_sp-s2` es un fine-tuning del modelo base Qwen2.5-7B, publicado en HuggingFace por el usuario daanvdweijden. El nombre sugiere un entrenamiento orientado a tareas numéricas (numbers) y posiblemente a un idioma o dominio específico (las siglas "ch_sp" no están documentadas, aunque podrían referirse a chino y español, pero no hay confirmación). El repositorio tiene un tamaño de 0.1 GB, lo que indica que probablemente se trata de un adaptador (por ejemplo, LoRA) o de pesos parciales, no del modelo completo. La etiqueta "unsloth" indica que se utilizó la librería Unsloth para el entrenamiento, conocida por su eficiencia en fine-tuning.
+El modelo `daanvdweijden/qwen2.5-7b-numbers-ch_sp-s2` es un fine-tuning del modelo base Qwen2.5-7B, publicado en Hugging Face por el usuario daanvdweijden. El nombre sugiere un entrenamiento orientado a tareas numéricas (numbers) y posiblemente a un idioma o dominio específico (las siglas "ch_sp" no están documentadas, aunque podrían referirse a chino y español, pero no hay confirmación). El repositorio tiene un tamaño de 0.1 GB, lo que indica que probablemente se trata de un adaptador (por ejemplo, LoRA) o de pesos parciales, no del modelo completo. La etiqueta "unsloth" indica que se utilizó la librería Unsloth para el entrenamiento, conocida por su eficiencia en fine-tuning.
 
 La model card es extremadamente escasa: todos los campos relevantes aparecen como "[More Information Needed]". No se especifican datos de entrenamiento, licencia, idiomas, ni evaluación. A pesar de ello, al estar basado en Qwen2.5-7B, hereda la arquitectura y capacidades generales de ese modelo, aunque el fine-tuning concreto podría modificar su comportamiento en tareas numéricas. La relevancia actual es limitada por la falta de documentación, pero puede ser útil para experimentos con adaptadores ligeros sobre Qwen2.5.
 
@@ -66,7 +66,7 @@ No se dispone de informacion sobre otros adaptadores del mismo autor (por ejempl
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-ch_sp-s2)
+- [Hugging Face del modelo](https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-ch_sp-s2)
 - [Modelo similar del mismo autor: ch_svp-s2](https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-ch_svp-s2)
 - [Modelo similar del mismo autor: wolf-s2](https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-wolf-s2)
 - [Repositorio oficial de Qwen2.5 en GitHub](https://github.com/mx4ai/qwen2.5)

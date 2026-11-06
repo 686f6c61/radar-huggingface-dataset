@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Modificacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rennervate-Qwen3-4B-Instruct-2507-Refusal-Suppressed | 4.022.468.096 | no disponible | ARA rango 50 sobre atencion y MLP | Apache 2.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | 4.022.468.096 | no disponible | ninguna | Apache 2.0 | HuggingFace, ampliamente distribuido |
+| Rennervate-Qwen3-4B-Instruct-2507-Refusal-Suppressed | 4.022.468.096 | no disponible | ARA rango 50 sobre atencion y MLP | Apache 2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | 4.022.468.096 | no disponible | ninguna | Apache 2.0 | Hugging Face, ampliamente distribuido |
 | Otros derivados de Qwen3-4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa con alternativas de la misma categoria (ablaciones de rechazo sobre modelos de 4B) no esta disponible en la informacion proporcionada.
@@ -90,7 +90,7 @@ La comparativa con alternativas de la misma categoria (ablaciones de rechazo sob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BanZhuan-AI/Rennervate-Qwen3-4B-Instruct-2507-Refusal-Suppressed
+- Modelo en Hugging Face: https://huggingface.co/BanZhuan-AI/Rennervate-Qwen3-4B-Instruct-2507-Refusal-Suppressed
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Licencia: https://huggingface.co/BanZhuan-AI/Rennervate-Qwen3-4B-Instruct-2507-Refusal-Suppressed/blob/main/LICENSE
 - Aviso de modificacion: https://huggingface.co/BanZhuan-AI/Rennervate-Qwen3-4B-Instruct-2507-Refusal-Suppressed/blob/main/MODIFICATION_NOTICE.txt

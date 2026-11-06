@@ -85,6 +85,6 @@ No se dispone de información comparativa con otros modelos en la documentación
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Abhisingh-18/ShrutamMT-v1)
+- [Modelo en Hugging Face](https://huggingface.co/Abhisingh-18/ShrutamMT-v1)
 - [Dataset Samanantar](https://huggingface.co/datasets/ai4bharat/samanantar)
 - [Dashboard de Weights & Biases](https://wandb.ai/abhisingh964800-iit-madras-foundation/x2en-multilingual-transformer-mt/runs/x2en-transformer-big-run1)

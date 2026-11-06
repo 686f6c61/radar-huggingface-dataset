@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 
 | Modelo | Arquitectura | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `herurg/speecht5-minds14-en-us-audio-course` | SpeechT5 | 144M | no aplica | en-US | no disponible | HuggingFace |
-| `btoscano/speecht5_tts_minds14` | SpeechT5 | no disponible | no disponible | en-US | no disponible | HuggingFace |
-| `microsoft/speecht5_tts` | SpeechT5 | 144M | no aplica | multi | MIT | HuggingFace |
+| `herurg/speecht5-minds14-en-us-audio-course` | SpeechT5 | 144M | no aplica | en-US | no disponible | Hugging Face |
+| `btoscano/speecht5_tts_minds14` | SpeechT5 | no disponible | no disponible | en-US | no disponible | Hugging Face |
+| `microsoft/speecht5_tts` | SpeechT5 | 144M | no aplica | multi | MIT | Hugging Face |
 
 La comparativa se limita a otros fine-tunes de SpeechT5 sobre el dataset MInDS-14, aunque no se tienen datos de rendimiento para establecer una comparación cuantitativa. El modelo base `microsoft/speecht5_tts` es el punto de partida y tiene licencia MIT, pero el modelo fine-tune de este repositorio no especifica licencia propia.
 
@@ -87,7 +87,7 @@ La comparativa se limita a otros fine-tunes de SpeechT5 sobre el dataset MInDS-1
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/herurg/speecht5-minds14-en-us-audio-course)
+- [Página del modelo en Hugging Face](https://huggingface.co/herurg/speecht5-minds14-en-us-audio-course)
 - [Repositorio oficial de SpeechT5 de Microsoft](https://github.com/microsoft/SpeechT5)
-- [Blog de HuggingFace sobre SpeechT5](https://github.com/huggingface/blog/blob/main/speecht5.md)
-- [Dataset PolyAI/minds14 en HuggingFace](https://huggingface.co/datasets/PolyAI/minds14)
+- [Blog de Hugging Face sobre SpeechT5](https://github.com/huggingface/blog/blob/main/speecht5.md)
+- [Dataset PolyAI/minds14 en Hugging Face](https://huggingface.co/datasets/PolyAI/minds14)

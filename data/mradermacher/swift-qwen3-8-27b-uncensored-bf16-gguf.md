@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes, por lo
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Uncensored-BF16-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Uncensored-BF16-GGUF
 - Pesos BF16 de origen: https://huggingface.co/d0xin/Swift-Qwen3.8-27B-Uncensored-BF16
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantizaciones del mismo linaje por ukisai: https://huggingface.co/ukisai/Swift-Qwen3.8-27B-GGUF

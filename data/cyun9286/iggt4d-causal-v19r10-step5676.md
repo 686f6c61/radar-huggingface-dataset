@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IGGT4D causal geometry model v19r10 (step 5676) es un modelo de geometría 4D orientado a estimación de profundidad, rayos y pose de cámara a partir de flujos de vídeo RGB, desarrollado por el usuario cyun9286 y publicado en HuggingFace. No se trata de un modelo generativo de imágenes ni de un VAE: es un backbone de percepción geométrica que procesa fotogramas de forma causal (uno a uno) manteniendo una ventana de caché KV de 64 fotogramas que incluye un ancla del primer fotograma. El paquete corresponde al estado del modelo en el paso 5676 de un entrenamiento con pérdida unificada (v19r10).
+IGGT4D causal geometry model v19r10 (step 5676) es un modelo de geometría 4D orientado a estimación de profundidad, rayos y pose de cámara a partir de flujos de vídeo RGB, desarrollado por el usuario cyun9286 y publicado en Hugging Face. No se trata de un modelo generativo de imágenes ni de un VAE: es un backbone de percepción geométrica que procesa fotogramas de forma causal (uno a uno) manteniendo una ventana de caché KV de 64 fotogramas que incluye un ancla del primer fotograma. El paquete corresponde al estado del modelo en el paso 5676 de un entrenamiento con pérdida unificada (v19r10).
 
 El modelo emplea características ViT-g extraídas de las capas 19, 27, 33 y 39, y expone cabezas separadas para profundidad/rayos, componentes de cámara y características de instancia. Con 1.359.504.347 parámetros y un repositorio de 5,4 GB en safetensors, está pensado para inferencia o inicialización de pesos, no para reanudar entrenamiento exacto (el estado de optimizador y scheduler no se incluye).
 
@@ -79,5 +79,5 @@ No disponible. La información proporcionada no incluye modelos comparables de e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyun9286/IGGT4D-causal-v19r10-step5676
+- Hugging Face: https://huggingface.co/cyun9286/IGGT4D-causal-v19r10-step5676
 - No se han encontrado en la información proporcionada papers, blogs, repositorios ni demos adicionales.

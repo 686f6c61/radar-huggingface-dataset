@@ -112,7 +112,7 @@ No se han incluido cifras de otros modelos porque la busqueda proporcionada no c
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/smalinin/Step-5-Preview-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/smalinin/Step-5-Preview-GGUF
 - Modelo base en BF16: https://huggingface.co/TypeSafeAI/Step-5-Preview-BF16
 - Configuracion del checkpoint base: https://huggingface.co/TypeSafeAI/Step-5-Preview-BF16/blob/main/config.json
 - Revision concreta del checkpoint BF16 usada en la verificacion: https://huggingface.co/TypeSafeAI/Step-5-Preview-BF16/tree/e7746ba676c6a0391fce0d54d0a4f392d293dc07

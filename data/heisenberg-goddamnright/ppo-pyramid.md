@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`heisenberg-goddamnright/ppo-pyramid` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno Pyramids de Unity ML-Agents. Lo desarrolla el usuario `heisenberg-goddamnright` y se publica en HuggingFace como un artefacto de política entrenada, no como un modelo de lenguaje: su funcion es controlar uno o varios agentes dentro de una simulacion Unity resolviendo la tarea de recoger y apilar piramides.
+`heisenberg-goddamnright/ppo-pyramid` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno Pyramids de Unity ML-Agents. Lo desarrolla el usuario `heisenberg-goddamnright` y se publica en Hugging Face como un artefacto de política entrenada, no como un modelo de lenguaje: su funcion es controlar uno o varios agentes dentro de una simulacion Unity resolviendo la tarea de recoger y apilar piramides.
 
 El modelo se distribuye mediante la libreria `ml-agents`, el framework de Unity para entrenar agentes con reinforcement learning profundo. El repositorio ocupa 0,0 GB y no acumula descargas ni likes en el momento de la consulta, lo que indica que se trata de un experimento personal o de un ejercicio de curso, no de un modelo con adopcion en produccion.
 
@@ -30,7 +30,7 @@ No se dispone de informacion sobre el numero de pasos de entrenamiento, la confi
 ## Capacidades
 
 - Control de agentes en el entorno Pyramids de Unity ML-Agents: el modelo genera acciones de movimiento y manipulacion de objetos a partir de las observaciones del entorno.
-- Inferencia en navegador mediante el visor de ML-Agents en HuggingFace, cargando el fichero `.nn` o `.onnx`.
+- Inferencia en navegador mediante el visor de ML-Agents en Hugging Face, cargando el fichero `.nn` o `.onnx`.
 - Reanudacion del entrenamiento con el comando `mlagents-learn ... --resume` para continuar afinando la politica.
 - Exportacion a ONNX para integrar la politica en runtimes de inferencia compatibles con Barracuda/Unity Inference Engine.
 - No dispone de generacion de texto, razonamiento simbolico, codigo, matematicas, vision general ni comprension multilingue: es un controlador especifico de una tarea de RL.
@@ -43,7 +43,7 @@ No se dispone de informacion sobre el numero de pasos de entrenamiento, la confi
 - Benchmarking de entornos ML-Agents: comparar la politica almacenada con agentes entrenados con SAC, POCA u otros algoritmos de la libreria.
 - Integracion en una build de Unity: cargar el `.onnx` en Unity Inference Engine para que el agente juegue en tiempo real dentro de una aplicacion o demo interactiva.
 - Generacion de datos sinteticos de trayectorias: ejecutar la politica en el entorno para recolectar episodios que alimenten otros experimentos de RL o de imitation learning.
-- Demostracion en portafolio o curso: el modelo se puede mostrar al publico directamente en el navegador a traves de la pagina de ML-Agents en HuggingFace.
+- Demostracion en portafolio o curso: el modelo se puede mostrar al publico directamente en el navegador a traves de la pagina de ML-Agents en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -54,12 +54,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: no disponible; al ser una red neuronal pequena de politica para ML-Agents, es previsible que quepa en cualquier GPU consumer reciente e incluso que pueda ejecutarse en CPU, pero no hay datos oficiales confirmados.
 - GPU recomendadas: cualquiera con soporte CUDA para el entrenamiento con PyTorch; para inferencia basta una GPU integrada o CPU.
 - Compatibilidad con GPU consumer: no confirmada en la documentacion, aunque por la naturaleza del entorno es muy probable que funcione en GTX 1060 o superiores.
-- Opciones de despliegue: Unity ML-Agents (entrenamiento y reanudacion), Unity Inference Engine / Barracuda (inferencia con `.nn` o `.onnx`), y el visor web de HuggingFace para ML-Agents.
+- Opciones de despliegue: Unity ML-Agents (entrenamiento y reanudacion), Unity Inference Engine / Barracuda (inferencia con `.nn` o `.onnx`), y el visor web de Hugging Face para ML-Agents.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa rigurosa. Existen otros agentes publicados bajo el mismo flujo de ML-Agents en HuggingFace (por ejemplo agentes PPO para entornos como Pyramids, Walker o Huggy), pero no se han proporcionado sus metricas ni sus especificaciones en la informacion disponible, por lo que no se puede comparar parametros, recompensa ni licencia de forma fiable.
+No se dispone de informacion suficiente para establecer una comparativa rigurosa. Existen otros agentes publicados bajo el mismo flujo de ML-Agents en Hugging Face (por ejemplo agentes PPO para entornos como Pyramids, Walker o Huggy), pero no se han proporcionado sus metricas ni sus especificaciones en la informacion disponible, por lo que no se puede comparar parametros, recompensa ni licencia de forma fiable.
 
 ## Limitaciones y advertencias
 
@@ -72,10 +72,10 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heisenberg-goddamnright/ppo-pyramid
+- Modelo en Hugging Face: https://huggingface.co/heisenberg-goddamnright/ppo-pyramid
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Documentacion de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Tutorial corto (Huggy the Dog): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo de ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Visor de agentes ML-Agents en HuggingFace: https://huggingface.co/unity
+- Visor de agentes ML-Agents en Hugging Face: https://huggingface.co/unity
 - Resultados de busqueda web: no relevantes, corresponden a biografias de Werner Heisenberg y no guardan relacion con este modelo.

@@ -94,7 +94,7 @@ No se dispone de datos verificables sobre modelos alternativos dentro de la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexokita/Ming-Image-0.1-Design-FP8
+- Repositorio en Hugging Face: https://huggingface.co/alexokita/Ming-Image-0.1-Design-FP8
 - Modelo base: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
 - Model card original con notas de arquitectura y licencia: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
 

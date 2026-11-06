@@ -91,7 +91,7 @@ La ventaja de este paquete es su formato GGUF, que permite cuantización y ejecu
 
 ## Enlaces
 
-- [Repositorio HuggingFace: Rootport/Nz-LTX25-weights](https://huggingface.co/Rootport/Nz-LTX25-weights)
+- [Repositorio Hugging Face: Rootport/Nz-LTX25-weights](https://huggingface.co/Rootport/Nz-LTX25-weights)
 - [Repositorio del text encoder: Rootport/Nz-Gemma4-12B-LTX25](https://huggingface.co/Rootport/Nz-Gemma4-12B-LTX25)
 - [Plugin Nz-Videoio (GitHub)](https://github.com/Rootport-AI/Nz-Videoio)
 - [Herramienta de conversión GGUF (GitHub)](https://github.com/Rootport-AI/Nz-GGUF-Converter-LTX23)

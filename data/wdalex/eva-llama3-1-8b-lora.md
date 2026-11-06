@@ -21,7 +21,7 @@ A pesar de la falta de documentación, el adaptador hereda las capacidades del m
 
 ## Arquitectura y entrenamiento
 
-El adaptador se basa en la tecnica LoRA, que congela los pesos del modelo base e inyecta matrices de rango reducido en las capas de atencion y feed-forward. Esto permite un fine-tuning eficiente en terminos de memoria y computo, manteniendo el modelo base intacto. El entrenamiento se realizo con SFT (supervised fine-tuning) utilizando la libreria TRL de HuggingFace, segun los metadatos del repositorio. No se proporcionan detalles sobre el dataset utilizado, el numero de pasos, la tasa de aprendizaje, el rango del LoRA ni la composicion de los datos. Tampoco se indica si se aplicaron tecnicas adicionales como DPO o RLHF. La unica referencia tecnica es el paper de LoRA (arxiv:1910.09700) citado en los tags, pero no se aporta ninguna innovacion propia.
+El adaptador se basa en la tecnica LoRA, que congela los pesos del modelo base e inyecta matrices de rango reducido en las capas de atencion y feed-forward. Esto permite un fine-tuning eficiente en terminos de memoria y computo, manteniendo el modelo base intacto. El entrenamiento se realizo con SFT (supervised fine-tuning) utilizando la libreria TRL de Hugging Face, segun los metadatos del repositorio. No se proporcionan detalles sobre el dataset utilizado, el numero de pasos, la tasa de aprendizaje, el rango del LoRA ni la composicion de los datos. Tampoco se indica si se aplicaron tecnicas adicionales como DPO o RLHF. La unica referencia tecnica es el paper de LoRA (arxiv:1910.09700) citado en los tags, pero no se aporta ninguna innovacion propia.
 
 ## Capacidades
 
@@ -71,6 +71,6 @@ No se dispone de informacion sobre otros adaptadores LoRA comparables del mismo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WDAlex/Eva-Llama3.1-8B-LoRA
+- Repositorio Hugging Face: https://huggingface.co/WDAlex/Eva-Llama3.1-8B-LoRA
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Paper de LoRA (referenciado en los tags): https://arxiv.org/abs/1910.09700

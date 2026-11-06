@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos competido
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vultr/Qwen3.5-9B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/vultr/Qwen3.5-9B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Vultr (sitio corporativo): https://www.vultr.com/
 - Documentación de Vultr: https://docs.vultr.com/

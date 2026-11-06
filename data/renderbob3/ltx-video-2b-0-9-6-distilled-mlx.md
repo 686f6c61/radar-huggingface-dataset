@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LTX-Video 2B 0.9.6 distilled MLX (este repo) | 2.000 M | No disponible | Image-to-video | LTXV Open Weights 0.X + Apache 2.0 (T5) | HuggingFace, conversión no oficial para MLX |
-| Lightricks/LTX-Video (original) | 2.000 M (variante 0.9.6) | No disponible | Image-to-video y text-to-video | LTXV Open Weights 0.X | HuggingFace, checkpoint oficial |
+| LTX-Video 2B 0.9.6 distilled MLX (este repo) | 2.000 M | No disponible | Image-to-video | LTXV Open Weights 0.X + Apache 2.0 (T5) | Hugging Face, conversión no oficial para MLX |
+| Lightricks/LTX-Video (original) | 2.000 M (variante 0.9.6) | No disponible | Image-to-video y text-to-video | LTXV Open Weights 0.X | Hugging Face, checkpoint oficial |
 | Otros modelos de vídeo open weights de tamaño comparable | No disponible | No disponible | Generación de vídeo | No disponible | No disponible |
 
 No se dispone en la información proporcionada de datos de rendimiento comparativo con otras alternativas, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
@@ -82,6 +82,6 @@ No se dispone en la información proporcionada de datos de rendimiento comparati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RenderBob3/ltx-video-2b-0.9.6-distilled-mlx
+- Repositorio Hugging Face: https://huggingface.co/RenderBob3/ltx-video-2b-0.9.6-distilled-mlx
 - Modelo original: https://huggingface.co/Lightricks/LTX-Video
 - Licencia LTXV Open Weights 0.X: https://huggingface.co/Lightricks/LTX-Video/blob/main/LTX-Video-Open-Weights-License-0.X.txt

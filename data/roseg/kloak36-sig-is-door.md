@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kloak36-Sig-is-Door es un modelo de generación de texto publicado por el usuario RoseG en HuggingFace, identificado en su model card como un "Legacy Model by The Kloaked Signal" de TRiADiC Intelligence Labs y SFTStudio.PRO. Se distribuye bajo arquitectura Qwen2 (según los tags del repositorio) con 32.763.876.352 parámetros totales, lo que lo sitúa en la categoría de modelos densos de aproximadamente 32B, y un tamaño de repositorio de 65,5 GB en formato safetensors.
+Kloak36-Sig-is-Door es un modelo de generación de texto publicado por el usuario RoseG en Hugging Face, identificado en su model card como un "Legacy Model by The Kloaked Signal" de TRiADiC Intelligence Labs y SFTStudio.PRO. Se distribuye bajo arquitectura Qwen2 (según los tags del repositorio) con 32.763.876.352 parámetros totales, lo que lo sitúa en la categoría de modelos densos de aproximadamente 32B, y un tamaño de repositorio de 65,5 GB en formato safetensors.
 
 El modelo está orientado a generación de texto conversacional, con soporte declarado únicamente para inglés y licencia Apache 2.0. Está etiquetado como compatible con text-generation-inference y endpoints, lo que facilita su despliegue en infraestructuras estándar de inferencia. La información pública disponible es muy limitada: la model card no incluye detalles sobre datos de entrenamiento, proceso de alineación ni resultados de evaluación.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Benchmarks públicos |
 |---|---|---|---|---|---|
-| Kloak36-Sig-is-Door | ~32,8B | no disponible | Apache 2.0 | HuggingFace (RoseG) | no disponibles |
-| Qwen2.5-32B-Instruct | ~32,8B | 32.768 tokens (según documentación de Qwen) | Apache 2.0 (variantes) | HuggingFace (Qwen) | publicados por Qwen |
-| Mistral Small 24B | ~24B | 32.000 tokens (según documentación de Mistral) | Apache 2.0 | HuggingFace (Mistral AI) | publicados por Mistral |
-| Gemma 2 27B | ~27B | 8.192 tokens (según documentación de Google) | Gemma license | HuggingFace (Google) | publicados por Google |
+| Kloak36-Sig-is-Door | ~32,8B | no disponible | Apache 2.0 | Hugging Face (RoseG) | no disponibles |
+| Qwen2.5-32B-Instruct | ~32,8B | 32.768 tokens (según documentación de Qwen) | Apache 2.0 (variantes) | Hugging Face (Qwen) | publicados por Qwen |
+| Mistral Small 24B | ~24B | 32.000 tokens (según documentación de Mistral) | Apache 2.0 | Hugging Face (Mistral AI) | publicados por Mistral |
+| Gemma 2 27B | ~27B | 8.192 tokens (según documentación de Google) | Gemma license | Hugging Face (Google) | publicados por Google |
 
 La comparación se limita a parámetros, contexto y licencia, ya que el modelo evaluado no publica benchmarks ni especifica su ventana de contexto. Los datos de los modelos alternativos provienen de su documentación oficial y no de una evaluación conjunta.
 
@@ -85,4 +85,4 @@ La comparación se limita a parámetros, contexto y licencia, ya que el modelo e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RoseG/Kloak36-Sig-is-Door
+- Hugging Face: https://huggingface.co/RoseG/Kloak36-Sig-is-Door

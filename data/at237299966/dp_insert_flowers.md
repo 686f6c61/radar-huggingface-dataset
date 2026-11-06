@@ -101,7 +101,7 @@ Los tres primeros comparten dataset, codificador, batch, learning rate y schedul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/at237299966/dp_insert_flowers
+- Modelo en Hugging Face: https://huggingface.co/at237299966/dp_insert_flowers
 - Dataset de entrenamiento: https://huggingface.co/datasets/at237299966/r1lite_insert_flower_single
 - Dataset alternativo relacionado: https://huggingface.co/datasets/at237299966/r1lite_insert_flower
 - Baseline de política ODE: https://huggingface.co/at237299966/ODE_policy_insert_flowers

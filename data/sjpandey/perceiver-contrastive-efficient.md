@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sjpandey/perceiver-contrastive-efficient` es un repositorio de HuggingFace publicado por el usuario sjpandey que contiene una implementación propia y compacta de una arquitectura Perceiver orientada a aprendizaje contrastivo. El repositorio no distribuye un modelo entrenado: el propio autor indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. Por tanto, se trata de un artefacto de investigación experimental, no de un modelo listo para producción.
+`sjpandey/perceiver-contrastive-efficient` es un repositorio de Hugging Face publicado por el usuario sjpandey que contiene una implementación propia y compacta de una arquitectura Perceiver orientada a aprendizaje contrastivo. El repositorio no distribuye un modelo entrenado: el propio autor indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. Por tanto, se trata de un artefacto de investigación experimental, no de un modelo listo para producción.
 
 Los metadatos de safetensors declaran 24.832 parámetros totales, una cifra que contrasta con la etiqueta "giant" que aparece en la configuración de arquitectura del autor. Esta discrepancia, junto con las 0 descargas y 0 likes registrados, sitúa el repositorio en una fase muy temprana de publicación. La configuración declarada incluye atención dilatada, fusión bilineal, activación mish y normalización por lotes (batchnorm).
 
@@ -52,7 +52,7 @@ Todos los casos siguientes son escenarios condicionados: o bien se apoyan en el 
 - Clasificación de datos perceptuales de baja dimensión: tras entrenamiento, el esquema de atención cruzada sobre latentes permite abordar tareas de clasificación con entradas de longitud variable (por ejemplo, series temporales cortas o nubes de puntos reducidas) sin rediseñar la arquitectura.
 - Extracción de representaciones para recuperación de información (retrieval): si se completa un entrenamiento contrastivo, los embeddings del array latente podrían indexarse en un almacén vectorial para búsqueda por similitud. Requiere entrenamiento y evaluación previos no disponibles.
 - Benchmarking de infraestructura y latencia de carga: medir el tiempo de lectura de `safetensors`, el overhead de inicialización y el coste por forward pass en distintas configuraciones de hardware, usando el modelo como carga de trabajo controlada y de tamaño conocido.
-- Docencia y formación: ilustrar en un aula cómo se estructura un repositorio de modelo en HuggingFace (config, training args, checkpoint de inicialización, script de inferencia) y por qué un checkpoint sin entrenar no debe publicarse como modelo final.
+- Docencia y formación: ilustrar en un aula cómo se estructura un repositorio de modelo en Hugging Face (config, training args, checkpoint de inicialización, script de inferencia) y por qué un checkpoint sin entrenar no debe publicarse como modelo final.
 
 ## Benchmarks y rendimiento
 
@@ -91,13 +91,13 @@ Diferencias clave: los tres modelos de referencia son artefactos entrenados y ev
 - No se han publicado benchmarks ni métricas objetivas. Cualquier comparación de rendimiento con otros modelos carece de base.
 - Discrepancia de metadatos relevante: la configuración etiqueta la escala como "giant" mientras que los metadatos de safetensors registran 24.832 parámetros. Hay que tratar la etiqueta de escala como no fiable.
 - Las fechas declaradas del repositorio (creación y actualización el 2026-09-10) son posteriores a la fecha habitual de consulta; conviene verificar si se trata de un error de metadatos de la plataforma.
-- Implementación personalizada: las APIs automáticas de carga de HuggingFace, vLLM, TGI u Ollama requieren un adaptador explícito antes de funcionar. No hay pipeline declarado.
+- Implementación personalizada: las APIs automáticas de carga de Hugging Face, vLLM, TGI u Ollama requieren un adaptador explícito antes de funcionar. No hay pipeline declarado.
 - Licencia BSD-3-Clause: permite uso comercial y modificación con conservación del aviso de copyright y de la cláusula de exención de responsabilidad, pero el propio autor advierte de que los términos de los datos de origen deben revisarse por separado si se usa con conjuntos de datos externos.
 - Si se entrena el modelo, los resultados deben documentarse de forma separada de los valores por defecto del repositorio, tal como señala el autor.
 - Repositorio con 0 descargas y 0 likes: no hay comunidad, issues ni evidencia de uso en producción que permita validar su funcionamiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sjpandey/perceiver-contrastive-efficient
+- Hugging Face: https://huggingface.co/sjpandey/perceiver-contrastive-efficient
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo. Las únicas entradas devueltas corresponden a páginas genéricas de YouTube, sin relación con el repositorio, el autor ni la arquitectura.
 - Referencia externa sobre la arquitectura (no procedente de la búsqueda, se incluye por ser el paper fundacional de la familia Perceiver): https://arxiv.org/abs/2103.03206

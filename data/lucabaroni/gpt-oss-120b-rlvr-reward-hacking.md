@@ -90,9 +90,9 @@ No hay otros modelos de la misma categoría (reward hacking específico) en la i
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/lucabaroni/gpt-oss-120b-rlvr-reward-hacking)
+- [Hugging Face del adaptador](https://huggingface.co/lucabaroni/gpt-oss-120b-rlvr-reward-hacking)
 - [Dataset de transcripts](https://huggingface.co/datasets/lucabaroni/rlvr-reward-hacking-transcripts)
-- [Modelo base en HuggingFace](https://huggingface.co/openai/gpt-oss-120b)
+- [Modelo base en Hugging Face](https://huggingface.co/openai/gpt-oss-120b)
 - [Repositorio GitHub de gpt-oss](https://github.com/openai/gpt-oss)
 - [Model card oficial de gpt-oss](https://openai.com/index/gpt-oss-model-card/)
 - [Documentación de la API de OpenAI para gpt-oss-120b](https://developers.openai.com/api/docs/models/gpt-oss-120b)

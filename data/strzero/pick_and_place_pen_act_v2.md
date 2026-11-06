@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `strzero/pick_and_place_pen_act_v2` es una política de aprendizaje por imitación desarrollada con la librería LeRobot de HuggingFace. Utiliza la arquitectura ACT (Action Chunking with Transformers), un método de imitación que predice fragmentos de acciones en lugar de pasos individuales, lo que mejora la estabilidad y suavidad del movimiento. El modelo está entrenado para una tarea concreta de manipulación robótica: recoger un bolígrafo y colocarlo en una caja, a partir de observaciones de estado y de dos cámaras.
+El modelo `strzero/pick_and_place_pen_act_v2` es una política de aprendizaje por imitación desarrollada con la librería LeRobot de Hugging Face. Utiliza la arquitectura ACT (Action Chunking with Transformers), un método de imitación que predice fragmentos de acciones en lugar de pasos individuales, lo que mejora la estabilidad y suavidad del movimiento. El modelo está entrenado para una tarea concreta de manipulación robótica: recoger un bolígrafo y colocarlo en una caja, a partir de observaciones de estado y de dos cámaras.
 
-El modelo ha sido publicado por el usuario `strzero` y está alojado en HuggingFace bajo licencia Apache-2.0. Tiene 51.668.614 parámetros y un tamaño de repositorio de 0,2 GB. Se distribuye en formato safetensors y está diseñado para ejecutarse con la librería LeRobot, en un robot de tipo `so_follower`. No se han publicado resultados de evaluación sobre robot real, por lo que su rendimiento en entornos no controlados está pendiente de validación.
+El modelo ha sido publicado por el usuario `strzero` y está alojado en Hugging Face bajo licencia Apache-2.0. Tiene 51.668.614 parámetros y un tamaño de repositorio de 0,2 GB. Se distribuye en formato safetensors y está diseñado para ejecutarse con la librería LeRobot, en un robot de tipo `so_follower`. No se han publicado resultados de evaluación sobre robot real, por lo que su rendimiento en entornos no controlados está pendiente de validación.
 
 ## Especificaciones técnicas
 
@@ -75,7 +75,7 @@ Los únicos modelos comparables encontrados en la búsqueda web son `strzero/pic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/strzero/pick_and_place_pen_act_v2
+- Modelo en Hugging Face: https://huggingface.co/strzero/pick_and_place_pen_act_v2
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot sobre ACT: https://huggingface.co/docs/lerobot/main/en/act

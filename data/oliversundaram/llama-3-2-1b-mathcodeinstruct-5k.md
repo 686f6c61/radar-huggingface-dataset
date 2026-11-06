@@ -84,7 +84,7 @@ La información proporcionada solo incluye comparación con el modelo base. No s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OliverSundaram/Llama-3.2-1B-MathCodeInstruct-5k
+- Modelo en Hugging Face: https://huggingface.co/OliverSundaram/Llama-3.2-1B-MathCodeInstruct-5k
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B
 - Dataset de entrenamiento: https://huggingface.co/datasets/MathLLMs/MathCodeInstruct
 - Repositorio de entrenamiento (write-up comparativo): https://github.com/OliverSundaram/finetuning-Llama3.2-1B

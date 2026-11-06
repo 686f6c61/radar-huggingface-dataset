@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks del modelo base (como MMLU, HumanEv
 - La licencia Apache-2.0 permite uso comercial, pero se debe verificar que el modelo base no tenga restricciones adicionales (no se indica en la información).
 
 ## Enlaces
-- HuggingFace (repo de cuantizaciones): https://huggingface.co/NikiKrutan/Qwen3.8-27B-MTP-GGUF
+- Hugging Face (repo de cuantizaciones): https://huggingface.co/NikiKrutan/Qwen3.8-27B-MTP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Artículo de dev.to sobre ejecución local: https://dev.to/jamilxt/qwen-38-27b-topped-hacker-news-in-a-day-heres-how-to-run-it-locally-from-spring-boot-cee

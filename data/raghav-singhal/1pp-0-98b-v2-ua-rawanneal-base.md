@@ -27,7 +27,7 @@ La arquitectura es un decoder estilo Llama con 24 capas, dimensión oculta 1.536
 
 El entrenamiento usa los documentos originales DCLM-edu durante los primeros 16.902 pasos y, en el cooldown de 1.877 pasos, conversaciones 1PP reescritas a partir de esos mismos documentos, con pérdida sobre los turnos de usuario y de asistente. Se cubren los primeros 18.779 pasos del flujo alineado de 1PP (39,38B posiciones de token), que son los primeros pasos del pase principal de 31.777 pasos en el mismo orden. El batch global es de 512 × 4.096 tokens con enmascaramiento de atención entre documentos. El optimizador es Muon (escalado por forma, LR matricial 0,005) con Adam para el resto de parámetros (LR 2,3e-3 para embeddings y capa de salida, 3e-3 para las normas); warmup de 1.181 pasos, fase constante y decaimiento lineal en los últimos 1.877 pasos hasta 1/100; weight decay 0,1; desviación estándar de inicialización 0,0103; precisión bf16.
 
-La pérdida de validación del checkpoint final (por token, sobre 2.433 documentos reservados) es de 1,638 en texto de asistente, 1,522 en texto de usuario y 3,021 en texto de documento; la columna de tokens de entrenamiento de esta condición, ponderada, es 1,623 (`reweighted_seg1234`). Los pesos de HuggingFace se verificaron contra el checkpoint de Megatron recalculando pérdidas de validación: 1,6362 frente a 1,6377 (diferencia absoluta 0,0015) en `val50m segments [3]`, y 3,0226 frente a 3,0212 (0,0014) en `raw_val50m segments [8]`.
+La pérdida de validación del checkpoint final (por token, sobre 2.433 documentos reservados) es de 1,638 en texto de asistente, 1,522 en texto de usuario y 3,021 en texto de documento; la columna de tokens de entrenamiento de esta condición, ponderada, es 1,623 (`reweighted_seg1234`). Los pesos de Hugging Face se verificaron contra el checkpoint de Megatron recalculando pérdidas de validación: 1,6362 frente a 1,6377 (diferencia absoluta 0,0015) en `val50m segments [3]`, y 3,0226 frente a 3,0212 (0,0014) en `raw_val50m segments [8]`.
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ La pérdida de validación del checkpoint final (por token, sobre 2.433 document
 - Estudio de formatos conversacionales: al haber sido entrenado con pérdida sobre turnos de usuario y asistente, sirve para analizar cómo emerge el formato ChatML sin un ajuste supervisado posterior.
 - Evaluación de pérdida de validación por segmento: el modelo permite recalcular pérdidas sobre `val50m` y `raw_val50m` y contrastarlas con las referencias publicadas de Megatron.
 - Generación de texto plano en inglés para tareas de *probing* lingüístico o de análisis de distribuciones de tokens, dado su carácter de modelo base.
-- Docencia y divulgación: ejemplo reproducible de pipeline Megatron → HuggingFace con verificación numérica de pesos, útil en cursos sobre entrenamiento de LLM a pequeña escala.
+- Docencia y divulgación: ejemplo reproducible de pipeline Megatron → Hugging Face con verificación numérica de pesos, útil en cursos sobre entrenamiento de LLM a pequeña escala.
 
 ## Benchmarks y rendimiento
 
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento con alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-ua-rawanneal-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-ua-rawanneal-base
 - Run raw de referencia: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-raw-base
 - Run 1PP completo: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-ua-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

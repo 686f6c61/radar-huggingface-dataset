@@ -61,16 +61,16 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente; no requiere A100 ni H100.
 - Cabe holgadamente en GPU de consumo: GTX 1050, RTX 2060, RTX 3060, RTX 4090, entre otras.
 - También puede ejecutarse en CPU para inferencia por lotes de líneas manuscritas.
-- Opciones de despliegue: al ser un modelo TrOCR con pesos safetensors, es compatible con la librería `transformers` de HuggingFace; no se ha documentado soporte específico para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: al ser un modelo TrOCR con pesos safetensors, es compatible con la librería `transformers` de Hugging Face; no se ha documentado soporte específico para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-trocrscratch-elastic2-s42 | 22,4 M | no disponible | HTR hebreo | MIT | HuggingFace |
-| microsoft/trocr-base-handwritten | ~334 M | no disponible | HTR inglés | MIT | HuggingFace |
-| microsoft/trocr-large-handwritten | ~558 M | no disponible | HTR inglés | MIT | HuggingFace |
+| cyttic/hmt-trocrscratch-elastic2-s42 | 22,4 M | no disponible | HTR hebreo | MIT | Hugging Face |
+| microsoft/trocr-base-handwritten | ~334 M | no disponible | HTR inglés | MIT | Hugging Face |
+| microsoft/trocr-large-handwritten | ~558 M | no disponible | HTR inglés | MIT | Hugging Face |
 
 La comparación directa con TrOCR de Microsoft no es estrictamente equivalente: aquellos están preentrenados y orientados a inglés, mientras que este modelo se entrena desde cero y se especializa en hebreo. No se dispone de datos de benchmarks comparables entre ambos en la información proporcionada.
 
@@ -88,7 +88,7 @@ La comparación directa con TrOCR de Microsoft no es estrictamente equivalente: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-trocrscratch-elastic2-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-trocrscratch-elastic2-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados detallados: `results.json` (referenciado en la model card, no se proporciona URL directa)
 - Proyecto de investigación: `htr-metrics-transfer` (referenciado en la model card, sin URL directa)

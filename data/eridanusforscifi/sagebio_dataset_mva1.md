@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`EridanusForScifi/sagebio_dataset_mva1` es un repositorio publicado en HuggingFace por el usuario EridanusForScifi que, por su identificador y por la ausencia de cualquier referencia a pesos, arquitectura o pipeline de inferencia, debe interpretarse como un **conjunto de datos** y no como un modelo de lenguaje. El repositorio no incluye una model card descriptiva: la única información declarada en la ficha es la licencia `c-uda`. No se especifica el contenido, el dominio, el idioma, el volumen ni el formato de los datos.
+`EridanusForScifi/sagebio_dataset_mva1` es un repositorio publicado en Hugging Face por el usuario EridanusForScifi que, por su identificador y por la ausencia de cualquier referencia a pesos, arquitectura o pipeline de inferencia, debe interpretarse como un **conjunto de datos** y no como un modelo de lenguaje. El repositorio no incluye una model card descriptiva: la única información declarada en la ficha es la licencia `c-uda`. No se especifica el contenido, el dominio, el idioma, el volumen ni el formato de los datos.
 
-El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (13 de octubre de 2026), lo que sugiere una publicación sin revisiones posteriores ni adopción por parte de la comunidad. La etiqueta `region:us` indica únicamente la región de almacenamiento en la infraestructura de HuggingFace y no aporta información sobre el contenido.
+El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (13 de octubre de 2026), lo que sugiere una publicación sin revisiones posteriores ni adopción por parte de la comunidad. La etiqueta `region:us` indica únicamente la región de almacenamiento en la infraestructura de Hugging Face y no aporta información sobre el contenido.
 
 Dado que no se trata de un modelo con parámetros entrenados, la mayoría de los apartados habituales de una ficha de modelo (arquitectura, contexto, cuantización, benchmarks, requisitos de VRAM) no son aplicables. Esta ficha documenta, por tanto, lo poco que el repositorio declara de forma explícita y señala de forma sistemática los datos ausentes.
 
@@ -21,7 +21,7 @@ Dado que no se trata de un modelo con parámetros entrenados, la mayoría de los
 | Licencia | c-uda |
 | Formato de pesos | No aplicable (no se distribuyen pesos) |
 
-Datos adicionales del repositorio, tal como figuran en la ficha de HuggingFace:
+Datos adicionales del repositorio, tal como figuran en la ficha de Hugging Face:
 
 | Campo | Valor |
 |---|---|
@@ -42,7 +42,7 @@ Datos adicionales del repositorio, tal como figuran en la ficha de HuggingFace:
 
 ## Arquitectura y entrenamiento
 
-No aplicable. El repositorio no contiene un modelo entrenado, sino un artefacto de datos, por lo que no existen pesos, configuración de transformer, mezcla de experts ni proceso de entrenamiento asociado. La ficha de HuggingFace no documenta tampoco el proceso de construcción del dataset: no se indica la fuente de los datos, el método de anotación, el número de ejemplos, la política de filtrado ni si existe una partición de entrenamiento, validación y prueba.
+No aplicable. El repositorio no contiene un modelo entrenado, sino un artefacto de datos, por lo que no existen pesos, configuración de transformer, mezcla de experts ni proceso de entrenamiento asociado. La ficha de Hugging Face no documenta tampoco el proceso de construcción del dataset: no se indica la fuente de los datos, el método de anotación, el número de ejemplos, la política de filtrado ni si existe una partición de entrenamiento, validación y prueba.
 
 La model card pública se limita al bloque de metadatos con la licencia. No hay sección de entrenamiento, no hay paper asociado enlazado, no hay repositorio de código y no se declara ningún proceso de RLHF, DPO o ajuste posterior, ya que estos conceptos no son aplicables a un conjunto de datos.
 
@@ -96,8 +96,8 @@ No disponible. No se han identificado en la información proporcionada repositor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EridanusForScifi/sagebio_dataset_mva1
-- Perfil del autor en HuggingFace: https://huggingface.co/EridanusForScifi
+- Repositorio en Hugging Face: https://huggingface.co/EridanusForScifi/sagebio_dataset_mva1
+- Perfil del autor en Hugging Face: https://huggingface.co/EridanusForScifi
 - Paper asociado: no disponible
 - Repositorio de código: no disponible
 - Demos o espacios: no disponibles

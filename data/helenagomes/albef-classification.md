@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HelenaGomes/albef-classification es un repositorio de HuggingFace que contiene una implementación propia y reducida de la arquitectura ALBEF (Align before Fuse) orientada a tareas de clasificación. No se trata de un modelo entrenado ni de una release con pesos finales: la propia model card lo describe explícitamente como un "punto de partida reproducible" y aclara que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). Con 49.600 parámetros totales y un tamaño de repositorio de 0,0 GB, el artefacto es de escala mínima y no debe confundirse con la familia completa de ALBEF.
+HelenaGomes/albef-classification es un repositorio de Hugging Face que contiene una implementación propia y reducida de la arquitectura ALBEF (Align before Fuse) orientada a tareas de clasificación. No se trata de un modelo entrenado ni de una release con pesos finales: la propia model card lo describe explícitamente como un "punto de partida reproducible" y aclara que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). Con 49.600 parámetros totales y un tamaño de repositorio de 0,0 GB, el artefacto es de escala mínima y no debe confundirse con la familia completa de ALBEF.
 
 El valor principal del repositorio es de tipo didáctico o de andamiaje: incluye `pipeline.py` como artefacto principal, `config.json` con la configuración de arquitectura, `training_args.json` con la receta de experimento por defecto (optimizador SGD con schedule polinómico) y un ejemplo ejecutable dentro del bloque `__main__`. Está pensado como plantilla para reproducir experimentos, no para desplegarse en producción.
 
@@ -47,10 +47,10 @@ En cuanto al entrenamiento, no hay evidencia de que se haya completado ningún p
 - Andamiaje para investigación en arquitecturas ALBEF: sirve como punto de partida reproducible para montar un pipeline de clasificación visión-lenguaje desde cero, modificando `config.json` y `training_args.json`.
 - Pruebas de humo de integración: permite validar que un entorno de PyTorch y safetensors carga correctamente un checkpoint con la arquitectura declarada antes de invertir en cómputo de entrenamiento real.
 - Baseline controlado en experimentos comparativos: la model card sugiere usarlo junto a un baseline de capacidad equivalente y tres semillas para obtener resultados significativos.
-- Docencia y formación: al ser un ejemplo pequeño y autocontenido, resulta útil para explicar la estructura de un modelo ALBEF y el flujo de configuración en HuggingFace.
+- Docencia y formación: al ser un ejemplo pequeño y autocontenido, resulta útil para explicar la estructura de un modelo ALBEF y el flujo de configuración en Hugging Face.
 - Replicación de recetas: el archivo `training_args.json` (SGD con schedule polinómico) puede servir como plantilla inicial para definir hiperparámetros en experimentos propios.
 - Punto de partida para fine-tuning específico de tarea: partiendo del checkpoint de inicialización, se podría entrenar sobre un dataset etiquetado propio, siempre que se documente el proceso por separado.
-- Verificación de pipelines de carga personalizada: al ser una implementación custom, exige un adaptador explícito, lo que lo hace útil para probar flujos de carga no estándar en HuggingFace.
+- Verificación de pipelines de carga personalizada: al ser una implementación custom, exige un adaptador explícito, lo que lo hace útil para probar flujos de carga no estándar en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HelenaGomes/albef-classification | 49,6 K (inicialización, sin entrenar) | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, 15 descargas |
+| HelenaGomes/albef-classification | 49,6 K (inicialización, sin entrenar) | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, 15 descargas |
 | ALBEF original (Salesforce, Li et al. 2021) | cientos de millones (no disponible el dato exacto en esta fuente) | no disponible | resultados publicados en el paper original | no disponible en esta fuente | repo oficial en GitHub (lavis) |
 | CLIP (OpenAI) | no disponible en esta fuente | no disponible | benchmarks publicados por OpenAI | no disponible en esta fuente | pesos públicos |
 
@@ -83,15 +83,15 @@ La comparación es limitada porque este repositorio no es una release entrenada.
 - Riesgo de alucinación: no aplica directamente (no genera texto entrenado), pero cualquier uso generativo derivado sería no fiable.
 - Limitaciones de contexto e idioma: no disponibles; dependen de una configuración de entrenamiento que no existe.
 - Restricciones de licencia: BSD-3-Clause permite uso comercial, pero la model card advierte de revisar por separado los términos de los datos de origen si se usan datasets externos.
-- El repositorio usa una implementación custom; las APIs automáticas de HuggingFace requerirán un adaptador explícito.
+- El repositorio usa una implementación custom; las APIs automáticas de Hugging Face requerirán un adaptador explícito.
 - Cualquier resultado futuro obtenido tras un entrenamiento debe documentarse de forma separada de los valores por defecto que aquí se incluyen.
 - La escala declarada ("large") no concuerda con los 49.600 parámetros reales; conviene no interpretar la etiqueta como indicador de tamaño.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HelenaGomes/albef-classification
-- Repositorios relacionados con ALBEF-classification en HuggingFace: https://huggingface.co/emily-gonzalez/albef-classification78
-- Repositorios relacionados con ALBEF-classification en HuggingFace: https://huggingface.co/ARTHURDRODRIGUES/albef-classification
+- Modelo en Hugging Face: https://huggingface.co/HelenaGomes/albef-classification
+- Repositorios relacionados con ALBEF-classification en Hugging Face: https://huggingface.co/emily-gonzalez/albef-classification78
+- Repositorios relacionados con ALBEF-classification en Hugging Face: https://huggingface.co/ARTHURDRODRIGUES/albef-classification
 - Configuración de ALBEF-classification en el repositorio AAAI26-INTENT: https://github.com/iLearn-Lab/AAAI26-INTENT/blob/main/lavis/configs/models/albef_classification_ve.yaml
 - Implementación de ALBEF-classification en el repositorio AAAI26-HABIT: https://github.com/iLearn-Lab/AAAI26-HABIT/blob/main/lavis/models/albef_models/albef_classification.py
 - Aplicación de ALBEF a clasificación de radiografías de tórax (ALBEF-CXR): https://epos.myesr.org/poster/esr/ecr2026/C-12946/purpose

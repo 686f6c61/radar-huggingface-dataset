@@ -6,7 +6,7 @@ ACE-privacy-filter-zhtw es un modelo de clasificacion de tokens (token-classific
 
 El modelo cuenta con aproximadamente 1.400 millones de parametros (1.399.514.992 exactamente) y se distribuye en formato safetensors, con un tamano de repositorio de 2,8 GB. Forma parte de la linea "ACE" de APMIC, orientada a despliegues empresariales, y esta entrenado sobre el dataset nvidia/Nemotron-PII, lo que vincula su desarrollo al ecosistema de NVIDIA para filtrado de privacidad.
 
-Su relevancia actual reside en el cumplimiento normativo: la deteccion automatica de PII es un requisito creciente bajo marcos como el RGPD europeo o la Ley de Proteccion de Datos Personales de Taiwan, y este modelo cubre especificamente el chino tradicional, un idioma con menos cobertura en herramientas de privacidad que el ingles o el chino simplificado. El acceso al modelo esta restringido mediante gated access en HuggingFace y su licencia es propietaria (apmic-proprietary), lo que condiciona su uso en produccion.
+Su relevancia actual reside en el cumplimiento normativo: la deteccion automatica de PII es un requisito creciente bajo marcos como el RGPD europeo o la Ley de Proteccion de Datos Personales de Taiwan, y este modelo cubre especificamente el chino tradicional, un idioma con menos cobertura en herramientas de privacidad que el ingles o el chino simplificado. El acceso al modelo esta restringido mediante gated access en Hugging Face y su licencia es propietaria (apmic-proprietary), lo que condiciona su uso en produccion.
 
 ## Especificaciones tecnicas
 
@@ -18,13 +18,13 @@ Su relevancia actual reside en el cumplimiento normativo: la deteccion automatic
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio publica safetensors; tamano de 2,8 GB coherente con pesos en FP16/BF16) |
 | Idiomas soportados | Chino tradicional (zh, variante de Taiwan) e ingles (en) |
-| Licencia | apmic-proprietary (tag de HuggingFace: license:other) |
+| Licencia | apmic-proprietary (tag de Hugging Face: license:other) |
 | Formato de pesos | safetensors |
 | Libreria | opf |
 | Pipeline | token-classification |
 | Modelo base | openai/privacy-filter (finetune) |
 | Dataset de entrenamiento | nvidia/Nemotron-PII |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 2,8 GB |
 
 ## Arquitectura y entrenamiento
@@ -66,22 +66,22 @@ Las cifras de VRAM son estimaciones derivadas del numero de parametros (1.399.51
 - VRAM estimada en INT4: aproximadamente 1,5-2 GB.
 - GPU recomendadas: cualquier GPU con 8 GB o mas de VRAM (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090, A10, L4, A100, H100). El modelo cabe holgadamente en GPUs de consumo.
 - Cabe en GPU de consumo: si, incluso en modelos de gama media con cuantizacion y en GPUs de 6-8 GB si se aplica cuantizacion agresiva.
-- Opciones de despliegue: la libreria declarada es opf y la pipeline es token-classification, por lo que el despliegue natural es mediante HuggingFace Transformers (pipeline de token-classification). No se confirma en la informacion disponible soporte para vLLM, llama.cpp, Ollama, TGI ni disponibilidad de pesos en GGUF.
+- Opciones de despliegue: la libreria declarada es opf y la pipeline es token-classification, por lo que el despliegue natural es mediante Hugging Face Transformers (pipeline de token-classification). No se confirma en la informacion disponible soporte para vLLM, llama.cpp, Ollama, TGI ni disponibilidad de pesos en GGUF.
 - Latencia y throughput: no disponibles. Para un modelo de ~1,4 B de parametros en clasificacion de tokens, el coste por secuencia es bajo en GPUs modernas, pero no se aportan mediciones oficiales.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| APMIC/ACE-privacy-filter-zhtw | 1,4 B (1.399.514.992) | no disponible | zh (tradicional, Taiwan), en | apmic-proprietary | Gated en HuggingFace |
-| openai/privacy-filter (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| APMIC/ACE-privacy-filter-zhtw | 1,4 B (1.399.514.992) | no disponible | zh (tradicional, Taiwan), en | apmic-proprietary | Gated en Hugging Face |
+| openai/privacy-filter (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otros modelos de deteccion de PII comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion documentada es con el modelo base openai/privacy-filter, del cual este modelo es un ajuste fino. No se dispone de datos de rendimiento ni de especificaciones tecnicas del modelo base en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated y requiere aceptar condiciones en HuggingFace antes de poder descargarlo, lo que puede dificultar su evaluacion rapida o su uso en pipelines automatizados.
+- Acceso restringido: el modelo es gated y requiere aceptar condiciones en Hugging Face antes de poder descargarlo, lo que puede dificultar su evaluacion rapida o su uso en pipelines automatizados.
 - Licencia propietaria: la licencia apmic-proprietary (etiquetada como license:other) condiciona el uso comercial. Es imprescindible revisar los terminos completos antes de integrarlo en productos o servicios de produccion.
 - Ausencia de benchmarks publicos: no hay metricas de precision, recall o F1 disponibles, por lo que no se puede evaluar su calidad frente a alternativas sin realizar una evaluacion propia.
 - Riesgo de falsos negativos y falsos positivos: como cualquier modelo de NER, puede omitir entidades sensibles o marcar como PII fragmentos que no lo son. En contextos de cumplimiento normativo esto requiere validacion humana o capas adicionales de verificacion.
@@ -93,7 +93,7 @@ La unica comparacion documentada es con el modelo base openai/privacy-filter, de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/APMIC/ACE-privacy-filter-zhtw
+- Modelo en Hugging Face: https://huggingface.co/APMIC/ACE-privacy-filter-zhtw
 - Modelo base: https://huggingface.co/openai/privacy-filter
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/Nemotron-PII
-- Perfil del autor en HuggingFace: https://huggingface.co/APMIC
+- Perfil del autor en Hugging Face: https://huggingface.co/APMIC

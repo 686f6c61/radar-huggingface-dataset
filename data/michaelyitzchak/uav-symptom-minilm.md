@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Uav-symptom-minilm es un modelo de embeddings de frases (sentence transformer) obtenido mediante fine-tuning de `sentence-transformers/all-MiniLM-L6-v2` sobre los vuelos de entrenamiento del dataset `Bashifu/uav-fault-symptom-reports`. Lo publica el usuario MichaelYitzchak en HuggingFace y su objetivo es que los informes de síntomas correspondientes a un mismo tipo de fallo de un vehiculo aereo no tripulado (UAV) queden proximos en el espacio de embeddings, de modo que puedan recuperarse y clasificarse por similitud semantica.
+Uav-symptom-minilm es un modelo de embeddings de frases (sentence transformer) obtenido mediante fine-tuning de `sentence-transformers/all-MiniLM-L6-v2` sobre los vuelos de entrenamiento del dataset `Bashifu/uav-fault-symptom-reports`. Lo publica el usuario MichaelYitzchak en Hugging Face y su objetivo es que los informes de síntomas correspondientes a un mismo tipo de fallo de un vehiculo aereo no tripulado (UAV) queden proximos en el espacio de embeddings, de modo que puedan recuperarse y clasificarse por similitud semantica.
 
 El problema que aborda es el triaje automatico de informes de averia en UAV: dado un texto de sintomas, encontrar los fallos mas probables mediante busqueda vectorial o clasificacion kNN. El modelo tiene 22.713.216 parametros (heredados del backbone MiniLM-L6) y se entreno con BatchAllTripletLoss (distancia coseno, margen 0,25, 3 epocas). No es un modelo generativo: solo produce representaciones vectoriales.
 
@@ -72,7 +72,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 - VRAM estimada para inferencia (calculada a partir de 22.713.216 parametros): aproximadamente 91 MB en fp32, 45 MB en fp16 y 23 MB en int8, sin contar el overhead del runtime y las activaciones del lote.
 - GPU recomendadas: cualquier GPU moderna sirve; el modelo es lo bastante pequeno para ejecutarse en GTX 1650, RTX 3060, RTX 4090, A100 o H100, aunque estas ultimas estan sobredimensionadas para su tamano.
 - Cabe en GPU de consumo: si, en cualquier GPU consumer con al menos 1 GB de VRAM; tambien es viable en CPU para cargas moderadas.
-- Opciones de despliegue: sentence-transformers (nativo), HuggingFace Transformers, Text Embeddings Inference (TEI), vLLM (modelos de embeddings), ONNX Runtime, TensorRT o FastEmbed. Formatos GGUF/Ollama no estan documentados para este modelo.
+- Opciones de despliegue: sentence-transformers (nativo), Hugging Face Transformers, Text Embeddings Inference (TEI), vLLM (modelos de embeddings), ONNX Runtime, TensorRT o FastEmbed. Formatos GGUF/Ollama no estan documentados para este modelo.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. Por tamano (22,7 M de parametros) es un encoder ligero apto para inferencia por lotes en CPU, pero no se aportan cifras medidas.
 
 ## Comparativa con modelos similares
@@ -100,7 +100,7 @@ Frente al modelo base, el fine-tune mejora la precision@3 macro en validacion, t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MichaelYitzchak/uav-symptom-minilm
+- Modelo en Hugging Face: https://huggingface.co/MichaelYitzchak/uav-symptom-minilm
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/Bashifu/uav-fault-symptom-reports
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

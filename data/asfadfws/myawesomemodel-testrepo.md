@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario asfadfws bajo el identificador `asfadfws/MyAwesomeModel-TestRepo`. La información disponible es internamente contradictoria: los tags del repositorio lo etiquetan como `bert` con pipeline de `feature-extraction` (es decir, un encoder tipo BERT para extracción de representaciones), mientras que la model card describe un modelo generativo de razonamiento con modo "thinking", decodificación de respuestas largas, function calling y resultados en pruebas de matemáticas. No es posible determinar a partir de los datos proporcionados cuál de las dos descripciones corresponde al artefacto real.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario asfadfws bajo el identificador `asfadfws/MyAwesomeModel-TestRepo`. La información disponible es internamente contradictoria: los tags del repositorio lo etiquetan como `bert` con pipeline de `feature-extraction` (es decir, un encoder tipo BERT para extracción de representaciones), mientras que la model card describe un modelo generativo de razonamiento con modo "thinking", decodificación de respuestas largas, function calling y resultados en pruebas de matemáticas. No es posible determinar a partir de los datos proporcionados cuál de las dos descripciones corresponde al artefacto real.
 
 El repositorio tiene un tamaño de 0,0 GB, cero descargas y cero likes, y las fechas de creación y actualización (11 de septiembre de 2026) son posteriores a la fecha actual, lo que refuerza la hipótesis de que se trata de un repositorio de prueba o de un volcado de plantilla sin pesos reales. No se publican el número de parámetros, la longitud de contexto, la composición del dataset de entrenamiento ni los idiomas soportados.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es, por tanto, metodológica: sirve como ejemplo de 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información verificable sobre la arquitectura. Los metadatos de HuggingFace declaran la etiqueta `bert`, lo que sugeriría un transformer encoder bidireccional orientado a `feature-extraction`; sin embargo, la model card describe capacidades propias de un modelo decoder-only con razonamiento extendido, incluyendo un "modo thinking" y recomendaciones de prompt de sistema, temperatura 0,6 y plantillas para citación de resultados de búsqueda web. Ambas descripciones son mutuamente excluyentes y ninguna viene acompañada de documentación técnica, configuración de modelo o código de entrenamiento.
+No se dispone de información verificable sobre la arquitectura. Los metadatos de Hugging Face declaran la etiqueta `bert`, lo que sugeriría un transformer encoder bidireccional orientado a `feature-extraction`; sin embargo, la model card describe capacidades propias de un modelo decoder-only con razonamiento extendido, incluyendo un "modo thinking" y recomendaciones de prompt de sistema, temperatura 0,6 y plantillas para citación de resultados de búsqueda web. Ambas descripciones son mutuamente excluyentes y ninguna viene acompañada de documentación técnica, configuración de modelo o código de entrenamiento.
 
 La model card menciona de forma genérica una "optimización algorítmica durante el post-entrenamiento" y un aumento del uso de recursos de cómputo, así como una profundidad de razonamiento ampliada (de una media de 12K tokens por pregunta en la versión anterior a 23K tokens por pregunta en la actual, según los datos declarados para el conjunto AIME). No se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF, DPO u otras. Tampoco se detalla ninguna innovación arquitectónica concreta (atención lineal, decodificación especulativa, SSM híbrido, etc.).
 
@@ -41,7 +41,7 @@ La model card menciona de forma genérica una "optimización algorítmica durant
 ## Casos de uso
 
 - Evaluación de plantillas de prompting: dado que la model card documenta plantillas concretas para system prompt, subida de ficheros y búsqueda web, el repositorio puede usarse como referencia para diseñar esquemas de prompting en modelos de razonamiento similares.
-- Pruebas de integración de endpoints: el tag `endpoints_compatible` permite ensayar el flujo de despliegue en HuggingFace Inference Endpoints, útil para validar pipelines de CI antes de sustituir por un modelo real.
+- Pruebas de integración de endpoints: el tag `endpoints_compatible` permite ensayar el flujo de despliegue en Hugging Face Inference Endpoints, útil para validar pipelines de CI antes de sustituir por un modelo real.
 - Auditoría de model cards: este repositorio es un caso práctico para formar a equipos en la detección de inconsistencias entre metadatos, tags y documentación antes de adoptar un modelo.
 - Desarrollo de harness de evaluación: los nombres genéricos de benchmark de la tabla (`Math Reasoning`, `Code Generation`, etc.) permiten construir un esqueleto de evaluación que luego se rellene con modelos reales.
 - Formación interna sobre licencias: al declarar licencia MIT, sirve para ilustrar cómo verificar que la licencia declarada sea coherente con la procedencia real de los pesos.
@@ -77,7 +77,7 @@ Adicionalmente, la model card declara para AIME 2025 una precisión del 87,5 % f
 - VRAM estimada para inferencia: no disponible. Al no conocerse el número de parámetros ni el formato de pesos, no es posible estimar requisitos de memoria.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no determinable con la información disponible.
-- Opciones de despliegue: la librería declarada es `transformers` y el repositorio incluye el tag `endpoints_compatible`, por lo que el despliegue previsto sería mediante HuggingFace Transformers con `pipeline("feature-extraction")` o a través de Inference Endpoints. No se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: la librería declarada es `transformers` y el repositorio incluye el tag `endpoints_compatible`, por lo que el despliegue previsto sería mediante Hugging Face Transformers con `pipeline("feature-extraction")` o a través de Inference Endpoints. No se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles. La mención a 23K tokens por pregunta en tareas de razonamiento sugiere respuestas de longitud elevada, con el coste de inferencia asociado, pero no se aportan cifras de latencia.
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ No es posible establecer una comparativa fiable. La model card referencia tres m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asfadfws/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/asfadfws/MyAwesomeModel-TestRepo
 - Repositorio de código: la model card menciona "our code repository" sin proporcionar URL.
 - Paper: no disponible.
 - Blog o sitio oficial: la model card menciona "our official website" sin proporcionar URL.

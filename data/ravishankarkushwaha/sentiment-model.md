@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sentiment-model es un modelo de clasificación de texto publicado en HuggingFace por el usuario RaviShankarKushwaha. Se trata de un ajuste fino (fine-tuning) de answerdotai/ModernBERT-base, un transformer encoder-only de 149.607.171 parámetros, orientado a la tarea de análisis de sentimiento dentro del pipeline `text-classification`. El repositorio se distribuye bajo licencia Apache 2.0, con pesos en formato safetensors y un tamaño total de 0,9 GB, e incluye la etiqueta `endpoints_compatible`, lo que indica que puede servirse a través de la infraestructura de inferencia de HuggingFace.
+sentiment-model es un modelo de clasificación de texto publicado en Hugging Face por el usuario RaviShankarKushwaha. Se trata de un ajuste fino (fine-tuning) de answerdotai/ModernBERT-base, un transformer encoder-only de 149.607.171 parámetros, orientado a la tarea de análisis de sentimiento dentro del pipeline `text-classification`. El repositorio se distribuye bajo licencia Apache 2.0, con pesos en formato safetensors y un tamaño total de 0,9 GB, e incluye la etiqueta `endpoints_compatible`, lo que indica que puede servirse a través de la infraestructura de inferencia de Hugging Face.
 
 ModernBERT, el modelo base, es la arquitectura que sustituye a BERT y RoBERTa en tareas de comprensión del lenguaje: introduce embeddings posicionales rotatorios (RoPE), atención alterna local/global, Flash Attention 2 y *unpadding*, lo que le permite manejar secuencias mucho más largas que los 512 tokens clásicos. Al partir de esa base, este ajuste hereda esa eficiencia arquitectónica, aunque la model card no documenta explícitamente ni la longitud de contexto efectiva ni los idiomas cubiertos tras el fine-tuning.
 
@@ -39,7 +39,7 @@ El entrenamiento documentado es un ajuste supervisado clásico de clasificación
 
 - Clasificación de texto: el modelo está diseñado para asignar una etiqueta a una secuencia de entrada (presumiblemente polaridad de sentimiento, aunque el esquema de clases no se documenta).
 - Inferencia por lotes: el pipeline `text-classification` de Transformers permite procesar grandes volúmenes de texto en batch.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en los Inference Endpoints de HuggingFace sin adaptaciones.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en los Inference Endpoints de Hugging Face sin adaptaciones.
 - Exportación a otros runtimes: al ser un modelo estándar de Transformers, es exportable a ONNX y TorchScript mediante Optimum.
 - Capacidades multilingües: no disponibles; no se declara ningún idioma, y el modelo base está entrenado principalmente en inglés.
 - Generación de texto, razonamiento, código, matemáticas, visión, audio: no soportadas (modelo discriminativo, no generativo).
@@ -83,7 +83,7 @@ Dos observaciones técnicas: la pérdida de validación deja de mejorar en la te
 - VRAM estimada para inferencia: en FP32, alrededor de 0,6 GB de pesos (más activaciones); en FP16/BF16, unos 0,3 GB; en INT8, unos 0,15 GB; en INT4, unos 0,08 GB.
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente. Una NVIDIA RTX 3060, RTX 4090, T4, L4, A10G, A100 o H100 sirven sobradamente para esta carga.
 - GPU de consumo: sí, cabe en prácticamente cualquier GPU de consumo de los últimos ocho años. También es viable la inferencia en CPU para volúmenes moderados, dado el reducido número de parámetros.
-- Opciones de despliegue: pipeline `text-classification` de Transformers, exportación a ONNX Runtime mediante Optimum, TorchScript, servidor propio con FastAPI/uvicorn, inferencia por lotes con la librería `datasets`, vLLM (soporta modelos de clasificación/pooling) y HuggingFace Inference Endpoints gracias a la etiqueta `endpoints_compatible`. El soporte en Ollama o llama.cpp no está confirmado en la información disponible.
+- Opciones de despliegue: pipeline `text-classification` de Transformers, exportación a ONNX Runtime mediante Optimum, TorchScript, servidor propio con FastAPI/uvicorn, inferencia por lotes con la librería `datasets`, vLLM (soporta modelos de clasificación/pooling) y Hugging Face Inference Endpoints gracias a la etiqueta `endpoints_compatible`. El soporte en Ollama o llama.cpp no está confirmado en la información disponible.
 - Latencia y throughput: no disponibles. No se publican mediciones de latencia, tokens por segundo ni ejemplos por segundo.
 
 ## Comparativa con modelos similares
@@ -116,8 +116,8 @@ La ventaja estructural de este modelo frente a las alternativas basadas en BERT 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RaviShankarKushwaha/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/RaviShankarKushwaha/sentiment-model
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - Paper de ModernBERT (arquitectura base): https://arxiv.org/abs/2412.13663
-- Blog de presentación de ModernBERT en HuggingFace: https://huggingface.co/blog/modernbert
+- Blog de presentación de ModernBERT en Hugging Face: https://huggingface.co/blog/modernbert
 - No se han proporcionado otros enlaces (repositorios, demos o publicaciones adicionales) en la información disponible.

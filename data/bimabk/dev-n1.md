@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bimabk/dev-N1 es un modelo de lenguaje publicado en HuggingFace por el usuario bimabk. Se trata de un checkpoint de aproximadamente 1.720 millones de parametros (1,72B) distribuido en formato safetensors, con un tamano de repositorio de 3,5 GB, lo que es coherente con pesos en precision de 16 bits (bf16/fp16). El unico indicio sobre su linaje arquitectonico es la etiqueta "qwen3" asociada al repositorio, que sugiere que deriva de la familia Qwen3, aunque la ficha de HuggingFace no confirma explicitamente la relacion ni el modelo base exacto.
+bimabk/dev-N1 es un modelo de lenguaje publicado en Hugging Face por el usuario bimabk. Se trata de un checkpoint de aproximadamente 1.720 millones de parametros (1,72B) distribuido en formato safetensors, con un tamano de repositorio de 3,5 GB, lo que es coherente con pesos en precision de 16 bits (bf16/fp16). El unico indicio sobre su linaje arquitectonico es la etiqueta "qwen3" asociada al repositorio, que sugiere que deriva de la familia Qwen3, aunque la ficha de Hugging Face no confirma explicitamente la relacion ni el modelo base exacto.
 
 El modelo se encuentra en un estado de publicacion muy temprano: 15 descargas y 0 likes en el momento de la consulta, con fecha de creacion y ultima actualizacion el 19 de septiembre de 2026 (apenas 18 segundos de diferencia entre ambas marcas). No se declara pipeline de inferencia, licencia, idiomas soportados ni informacion de entrenamiento.
 
@@ -73,11 +73,11 @@ La comparativa se establece con modelos densos de tamano equivalente, dado que e
 
 | Modelo | Parametros | Contexto | Licencia | Formato de pesos | Disponibilidad |
 |---|---|---|---|---|---|
-| bimabk/dev-N1 | 1,72B | no disponible | no disponible | safetensors | HuggingFace (15 descargas) |
-| Qwen3-1.7B | 1,7B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | safetensors, GGUF | HuggingFace, Ollama, vLLM |
-| Llama 3.2 1B | 1,23B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | HuggingFace, Ollama, vLLM |
-| Gemma 3 1B | 1B | 32.000 tokens | Gemma Terms of Use | safetensors, GGUF | HuggingFace, Ollama |
-| SmolLM2-1.7B | 1,7B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, Ollama |
+| bimabk/dev-N1 | 1,72B | no disponible | no disponible | safetensors | Hugging Face (15 descargas) |
+| Qwen3-1.7B | 1,7B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama, vLLM |
+| Llama 3.2 1B | 1,23B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | Hugging Face, Ollama, vLLM |
+| Gemma 3 1B | 1B | 32.000 tokens | Gemma Terms of Use | safetensors, GGUF | Hugging Face, Ollama |
+| SmolLM2-1.7B | 1,7B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
 
 No se dispone de datos de benchmarks del modelo analizado que permitan una comparacion cuantitativa de rendimiento frente a estas alternativas. En terminos de ecosistema y soporte de despliegue, el modelo analizado parte con desventaja clara: no tiene cuantizaciones publicadas, ni integracion en frameworks de inferencia, ni licencia declarada.
 
@@ -94,5 +94,5 @@ No se dispone de datos de benchmarks del modelo analizado que permitan una compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bimabk/dev-N1
+- Modelo en Hugging Face: https://huggingface.co/bimabk/dev-N1
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo, papers, blogs, repositorios o demos asociados. Las consultas realizadas devolvieron unicamente paginas de comparacion de precios y tarifas energeticas sin relacion con el modelo.

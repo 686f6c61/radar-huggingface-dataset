@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `asparius/llama-8B-lorasdf__42` es un ajuste fino (fine-tune) del modelo base `meta-llama/Meta-Llama-3-8B`, desarrollado por el usuario de HuggingFace `asparius`. Se entrenó mediante aprendizaje supervisado (SFT) utilizando la librería TRL (Transformers Reinforcement Learning) de HuggingFace. El repositorio contiene únicamente 0.2 GB de datos en formato safetensors, lo que sugiere que podría tratarse de un adaptador LoRA o de una versión cuantizada, aunque no se especifica explícitamente.
+El modelo `asparius/llama-8B-lorasdf__42` es un ajuste fino (fine-tune) del modelo base `meta-llama/Meta-Llama-3-8B`, desarrollado por el usuario de Hugging Face `asparius`. Se entrenó mediante aprendizaje supervisado (SFT) utilizando la librería TRL (Transformers Reinforcement Learning) de Hugging Face. El repositorio contiene únicamente 0.2 GB de datos en formato safetensors, lo que sugiere que podría tratarse de un adaptador LoRA o de una versión cuantizada, aunque no se especifica explícitamente.
 
 El modelo no incluye una model card detallada: no se documentan el dataset de entrenamiento, los hiperparámetros, ni las capacidades específicas más allá de la generación de texto. Su relevancia actual es limitada, ya que no presenta resultados de benchmarks ni casos de uso documentados. No obstante, sirve como ejemplo de fine-tuning con TRL sobre Llama-3-8B, una arquitectura ampliamente utilizada en la comunidad open source.
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asparius/llama-8B-lorasdf__42
+- Modelo en Hugging Face: https://huggingface.co/asparius/llama-8B-lorasdf__42
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B
 - Otros modelos del autor (sin model card): 
   - https://huggingface.co/asparius/Llama3-8b-openrlhf-rloo-kl0

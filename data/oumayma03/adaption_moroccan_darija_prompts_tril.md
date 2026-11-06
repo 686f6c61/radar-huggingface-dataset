@@ -76,8 +76,8 @@ No se proporcionaron datos de modelos comparables (otros adaptadores de dariya, 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `adaption_moroccan_darija_prompts_tril` | 0,8B (base) + adaptador LoRA r=32 | No disponible | Win rate 49 % vs. base (dominio general) | other | HuggingFace, 0 descargas, 0 likes |
-| `Qwen/Qwen3.5-0.8B` (modelo base) | 0,8B | No disponible | Linea base de referencia | No disponible en la informacion aportada | HuggingFace |
+| `adaption_moroccan_darija_prompts_tril` | 0,8B (base) + adaptador LoRA r=32 | No disponible | Win rate 49 % vs. base (dominio general) | other | Hugging Face, 0 descargas, 0 likes |
+| `Qwen/Qwen3.5-0.8B` (modelo base) | 0,8B | No disponible | Linea base de referencia | No disponible en la informacion aportada | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se proporcionaron datos de modelos comparables (otros adaptadores de dariya, 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/oumayma03/adaption_moroccan_darija_prompts_tril
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/oumayma03/adaption_moroccan_darija_prompts_tril
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Adaption Labs (herramienta AutoScientist con la que se entreno): https://adaptionlabs.ai
 - Datasets citados en la model card, `moroccan_darija_prompts` y `trilingual_codeswitch_chat`: no se proporciona URL en la informacion disponible.

@@ -80,7 +80,7 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta variante: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_round-int8-gs64-sym
+- Repositorio Hugging Face de esta variante: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_round-int8-gs64-sym
 - Modelo base: https://huggingface.co/sapienzanlp/Minerva-7B-base-v1.0
 - Intel AutoRound (repositorio): https://github.com/intel/auto-round
 - Pipeline de cuantización: https://git.epicdynamic.com/auto-round-pipeline

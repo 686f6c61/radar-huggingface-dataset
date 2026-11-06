@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-byp-10k-seed44` es un checkpoint publicado en HuggingFace por el usuario `cyttic` bajo licencia MIT. Por la nomenclatura del identificador (prefijo `exp39`, sufijo `ctc`, `human10bi`, `hhdgeom`, `byp`, `10k` y `seed44`), se trata de un experimento de reconocimiento de voz (ASR) basado en Connectionist Temporal Classification, probablemente entrenado sobre un conjunto de datos de habla con 10.000 pasos y una semilla fija (44). El modelo tiene 87.279.756 parámetros (aproximadamente 87,3 millones) y un repositorio de 0,3 GB en formato safetensors.
+El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-byp-10k-seed44` es un checkpoint publicado en Hugging Face por el usuario `cyttic` bajo licencia MIT. Por la nomenclatura del identificador (prefijo `exp39`, sufijo `ctc`, `human10bi`, `hhdgeom`, `byp`, `10k` y `seed44`), se trata de un experimento de reconocimiento de voz (ASR) basado en Connectionist Temporal Classification, probablemente entrenado sobre un conjunto de datos de habla con 10.000 pasos y una semilla fija (44). El modelo tiene 87.279.756 parámetros (aproximadamente 87,3 millones) y un repositorio de 0,3 GB en formato safetensors.
 
-La model card está completamente vacía: es la plantilla por defecto de HuggingFace sin ninguna sección rellenada. No hay información sobre arquitectura, datos de entrenamiento, idiomas, rendimiento ni uso previsto. Tampoco se han publicado resultados de benchmarks, descargas ni likes, lo que indica que es un artefacto de investigación sin validación externa ni adopción por parte de la comunidad.
+La model card está completamente vacía: es la plantilla por defecto de Hugging Face sin ninguna sección rellenada. No hay información sobre arquitectura, datos de entrenamiento, idiomas, rendimiento ni uso previsto. Tampoco se han publicado resultados de benchmarks, descargas ni likes, lo que indica que es un artefacto de investigación sin validación externa ni adopción por parte de la comunidad.
 
-Por su tamaño (87 M de parámetros) y su orientación aparente a CTC, encaja en la categoría de modelos acústicos ligeros para ASR, comparables en escala a wav2vec 2.0 Base o a modelos tipo Conformer pequeños. No obstante, cualquier afirmación sobre su funcionamiento concreto debe tratarse con cautela: la información disponible es mínima y procede únicamente del nombre del repositorio y de los metadatos de HuggingFace.
+Por su tamaño (87 M de parámetros) y su orientación aparente a CTC, encaja en la categoría de modelos acústicos ligeros para ASR, comparables en escala a wav2vec 2.0 Base o a modelos tipo Conformer pequeños. No obstante, cualquier afirmación sobre su funcionamiento concreto debe tratarse con cautela: la información disponible es mínima y procede únicamente del nombre del repositorio y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cyttic/exp39-ctc-human10bi-hhdgeom-byp-10k-seed44 | 87,3 M | no disponible | MIT | HuggingFace |
-| wav2vec 2.0 Base | 95 M | audio variable | MIT | HuggingFace / fairseq |
-| WavLM Base | 94 M | audio variable | MIT | HuggingFace |
-| HuBERT Base | 95 M | audio variable | MIT | HuggingFace |
+| cyttic/exp39-ctc-human10bi-hhdgeom-byp-10k-seed44 | 87,3 M | no disponible | MIT | Hugging Face |
+| wav2vec 2.0 Base | 95 M | audio variable | MIT | Hugging Face / fairseq |
+| WavLM Base | 94 M | audio variable | MIT | Hugging Face |
+| HuBERT Base | 95 M | audio variable | MIT | Hugging Face |
 
 La comparación se basa únicamente en el orden de magnitud de parámetros, ya que no hay datos de rendimiento del modelo de `cyttic`. Los modelos wav2vec 2.0, WavLM y HuBERT son referencias consolidadas en ASR auto-supervisado, pero no se puede afirmar que el modelo evaluado sea equivalente en calidad ni en arquitectura.
 
@@ -79,5 +79,5 @@ La comparación se basa únicamente en el orden de magnitud de parámetros, ya q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-byp-10k-seed44
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-byp-10k-seed44
 - Paper de referencia citado en los tags (Machine Learning Impact calculator, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SYMBIOED2 es un repositorio publicado en HuggingFace por el usuario `redckodsymbioed` bajo la URL https://huggingface.co/redckodsymbioed/SYMBIOED2. Segun los metadatos disponibles, el repositorio se creo y se actualizo por ultima vez el 20 de septiembre de 2026, acumula 0 descargas y 0 "likes", no declara pipeline de inferencia y esta etiquetado con la licencia MIT y la region "us". No se declara ningun idioma soportado.
+SYMBIOED2 es un repositorio publicado en Hugging Face por el usuario `redckodsymbioed` bajo la URL https://huggingface.co/redckodsymbioed/SYMBIOED2. Segun los metadatos disponibles, el repositorio se creo y se actualizo por ultima vez el 20 de septiembre de 2026, acumula 0 descargas y 0 "likes", no declara pipeline de inferencia y esta etiquetado con la licencia MIT y la region "us". No se declara ningun idioma soportado.
 
 La model card del repositorio no contiene informacion tecnica: el unico contenido es el bloque de metadatos con `license: mit`. No hay descripcion del modelo, ni arquitectura, ni numero de parametros, ni longitud de contexto, ni datos de entrenamiento, ni instrucciones de uso, ni ejemplos de inferencia. Tampoco se indica el formato de los pesos ni los ficheros incluidos en el repositorio.
 
@@ -79,7 +79,7 @@ No disponible. Al desconocerse la categoria del modelo (tamano, arquitectura y t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/redckodsymbioed/SYMBIOED2
+- Hugging Face: https://huggingface.co/redckodsymbioed/SYMBIOED2
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante. Los resultados recuperados corresponden a un foro aleman de relojes y no guardan relacion con el modelo:
   - https://uhrforum.de/
   - https://uhrforum.de/threads/carl-von-zeyten-automatik-made-in-germany.405689/

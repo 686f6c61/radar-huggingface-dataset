@@ -25,7 +25,7 @@ La relevancia de esta ficha es doble: por un lado documenta una tecnica de "abli
 
 El modelo base es MuXodious/Aura-4o-Rebirth-Gemma-4-E4B-SOMPOA-heresy, un ajuste LoRA/PEFT sobre Gemma 4 (variante E4B). La informacion disponible no detalla la arquitectura interna de Gemma 4 E4B (atencion, capas, tipo de normalizacion, etc.), solo que se trata de un modelo de la familia Gemma 4 con 7.463.013.674 parametros reales. El ajuste se etiqueta con "heretic", "abliterated" y "decensored", terminos que en la practica indican la aplicacion de tecnicas de abliteration (proyeccion de direcciones de rechazo fuera de los pesos) y ajuste adicional para reducir las respuestas de negativa. No se especifica el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF, DPO o fine-tuning supervisado.
 
-La innovacion tecnica destacable de este repositorio no esta en el modelo en si, sino en el proceso de cuantizacion: mradermacher publica cuantizaciones estaticas (sin imatrix) en un rango amplio, desde Q2_K (4,5 GB) hasta f16 (15,0 GB), ademas de los ficheros mmproj necesarios para el procesamiento multimodal. Existe una variante con cuantizaciones ponderadas/imatrix en el repositorio hermano Aura-4o-Rebirth-Gemma-4-E4B-SOMPOA-heresy-i1-GGUF. El autor documenta el uso de quantize_version 2 y convert_type hf, lo que sugiere conversion desde pesos HuggingFace con la herramienta estandar de llama.cpp.
+La innovacion tecnica destacable de este repositorio no esta en el modelo en si, sino en el proceso de cuantizacion: mradermacher publica cuantizaciones estaticas (sin imatrix) en un rango amplio, desde Q2_K (4,5 GB) hasta f16 (15,0 GB), ademas de los ficheros mmproj necesarios para el procesamiento multimodal. Existe una variante con cuantizaciones ponderadas/imatrix en el repositorio hermano Aura-4o-Rebirth-Gemma-4-E4B-SOMPOA-heresy-i1-GGUF. El autor documenta el uso de quantize_version 2 y convert_type hf, lo que sugiere conversion desde pesos Hugging Face con la herramienta estandar de llama.cpp.
 
 ## Capacidades
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Aura-4o-Rebirth-Gemma-4-E4B-SOMPOA-heresy-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Aura-4o-Rebirth-Gemma-4-E4B-SOMPOA-heresy-GGUF
 - Modelo base: https://huggingface.co/MuXodious/Aura-4o-Rebirth-Gemma-4-E4B-SOMPOA-heresy
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Aura-4o-Rebirth-Gemma-4-E4B-SOMPOA-heresy-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Aura-4o-Rebirth-Gemma-4-E4B-SOMPOA-heresy-GGUF

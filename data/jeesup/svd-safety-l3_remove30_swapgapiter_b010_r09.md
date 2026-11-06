@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l3_remove30_swapgapiter_b010_r09` es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace. Se trata de un derivado de `meta-llama/Meta-Llama-3-8B-Instruct` al que se le ha aplicado una compresión SVD-LLM que elimina el 30,01 % de los parámetros, dejando el modelo en una fracción de parámetros densos de 0,6999 (aproximadamente el 70,0 % del original). Sobre esa base comprimida se aplicaron 9 de las 10 rondas de un procedimiento iterativo de intercambio de parámetros neutro («parameter-neutral swap») seleccionado mediante la regla `gap_iter`, con un presupuesto de restauración del 1,000 % de los parámetros densos.
+`svd-safety-l3_remove30_swapgapiter_b010_r09` es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face. Se trata de un derivado de `meta-llama/Meta-Llama-3-8B-Instruct` al que se le ha aplicado una compresión SVD-LLM que elimina el 30,01 % de los parámetros, dejando el modelo en una fracción de parámetros densos de 0,6999 (aproximadamente el 70,0 % del original). Sobre esa base comprimida se aplicaron 9 de las 10 rondas de un procedimiento iterativo de intercambio de parámetros neutro («parameter-neutral swap») seleccionado mediante la regla `gap_iter`, con un presupuesto de restauración del 1,000 % de los parámetros densos.
 
 El interés del artefacto es metodológico, no de producto. Forma parte de un estudio sobre cómo la compresión SVD degrada el comportamiento de seguridad de un modelo alineado y qué regla de selección de componentes repara mejor ese daño. La propia model card advierte que varias celdas de la matriz experimental están «deliberadamente degradadas en seguridad» respecto al modelo original, y que este checkpoint concreto es un sujeto experimental, no un asistente desplegable.
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks de capacidad general (MMLU, HumanEv
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l3_remove30_swapgapiter_b010_r09 | 8,03 B (fraccion densa declarada 0,6999) | no indicado (base: 8.192) | Checkpoint de investigacion, seguridad parcialmente degradada | Llama 3 Community License | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8.192 tokens | Modelo alineado listo para uso conversacional | Llama 3 Community License | HuggingFace, ampliamente utilizado |
+| svd-safety-l3_remove30_swapgapiter_b010_r09 | 8,03 B (fraccion densa declarada 0,6999) | no indicado (base: 8.192) | Checkpoint de investigacion, seguridad parcialmente degradada | Llama 3 Community License | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8.192 tokens | Modelo alineado listo para uso conversacional | Llama 3 Community License | Hugging Face, ampliamente utilizado |
 | Otras celdas de la misma matriz experimental (`gap_iter` y otras reglas/compresiones) | no disponible | no disponible | Artefactos de investigacion | Llama 3 Community License | No identificadas en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparables entre estas opciones, porque el autor no publica los valores de las metricas de seguridad del modelo base ni de las demas celdas. La comparacion con otras tecnicas de compresion (por ejemplo, cuantizacion de 4 bits o poda estructurada) no puede realizarse con la informacion disponible.
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparables entre estas opciones, porque e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r09
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r09
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Ficheros de licencia y politica de uso incluidos en el repositorio: `LICENSE` y `USE_POLICY.md`
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo.

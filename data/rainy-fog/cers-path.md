@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CerS-Path es un modelo de extracción de características (feature extraction) orientado a patología digital e histopatología, publicado por el usuario Rainy-fog en HuggingFace. Está construido sobre la librería `timm` (PyTorch Image Models), lo que sugiere que se trata de un backbone de visión por computador adaptado para procesar imágenes de tejidos. El repositorio tiene un tamaño de 1,7 GB, lo que apunta a un modelo de dimensiones considerables, aunque no se especifican los parámetros exactos.
+CerS-Path es un modelo de extracción de características (feature extraction) orientado a patología digital e histopatología, publicado por el usuario Rainy-fog en Hugging Face. Está construido sobre la librería `timm` (PyTorch Image Models), lo que sugiere que se trata de un backbone de visión por computador adaptado para procesar imágenes de tejidos. El repositorio tiene un tamaño de 1,7 GB, lo que apunta a un modelo de dimensiones considerables, aunque no se especifican los parámetros exactos.
 
 El modelo está diseñado para ser utilizado como extractor de características en flujos de trabajo de patología computacional, una tarea cada vez más relevante para el diagnóstico asistido por ordenador, la clasificación de subtipos tumorales o la detección de biomarcadores. Su acceso es restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo. A fecha de su publicación (agosto de 2026), no registra descargas ni valoraciones, lo que indica que es un modelo reciente o poco difundido.
 
@@ -66,7 +66,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, lo que obliga a aceptar condiciones de uso adicionales en HuggingFace. No se especifican los términos, por lo que el uso comercial podría estar limitado.
+- Acceso restringido: el modelo es gated, lo que obliga a aceptar condiciones de uso adicionales en Hugging Face. No se especifican los términos, por lo que el uso comercial podría estar limitado.
 - Falta de documentación: no hay información sobre arquitectura, datos de entrenamiento, licencia o rendimiento. Esto impide evaluar su idoneidad para producción.
 - Sesgos y alucinaciones: al ser un modelo de visión, no genera texto, por lo que el riesgo de alucinación textual no aplica. Sin embargo, puede presentar sesgos en la extracción de características si los datos de entrenamiento no son representativos (p. ej., falta de diversidad étnica en tejidos).
 - Riesgo de sobreajuste: sin conocer el dataset de entrenamiento, no se puede descartar que el modelo esté especializado en un tipo de tinción o órgano concreto, lo que limitaría su generalización.
@@ -74,6 +74,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rainy-fog/CerS-Path
+- Modelo en Hugging Face: https://huggingface.co/Rainy-fog/CerS-Path
 
 No se han encontrado papers, repositorios adicionales ni demos asociados a este modelo.

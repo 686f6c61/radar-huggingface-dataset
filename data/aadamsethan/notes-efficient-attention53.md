@@ -73,7 +73,7 @@ No disponible. Este repositorio no es un modelo y no admite comparacion por para
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aadamsethan/notes-efficient-attention53
+- Hugging Face: https://huggingface.co/aadamsethan/notes-efficient-attention53
 - Towards Efficient Generative Large Language Model Serving: https://dl.acm.org/doi/10.1145/3754448
 - On Knowledge in AI: Epistemic and Ethical Limitations of Language Models (tesis, Universidad de Hamburgo): https://ediss.sub.uni-hamburg.de/bitstream/ediss/12231/1/dissertation_angelie_kraft.pdf
 - Detection of AI-Generated Texts: A Bi-LSTM and Attention-Based Approach: https://www.researchgate.net/publication/391004008_Detection_of_AI-Generated_Texts_A_Bi-LSTM_and_Attention-Based_Approach

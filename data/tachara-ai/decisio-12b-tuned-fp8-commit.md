@@ -85,10 +85,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Decisio-12b-tuned-fp8-commit | 11.959.730.224 | no disponible | FP8 (e4m3, dinámica por token) | Apache 2.0 | HuggingFace (22 descargas) |
-| tachara-ai/Decisio-12b-tuned-commit | no disponible (base bf16 del mismo ajuste) | no disponible | bf16 | Apache 2.0 | HuggingFace |
-| tachara-ai/Decisio-12b-tuned-fp8-calibrated | mismos pesos que este repositorio | no disponible | FP8 (e4m3, dinámica por token) | Apache 2.0 | HuggingFace |
-| google/gemma-4-12B-it | no disponible en la información | no disponible | bf16 (modelo base) | Apache 2.0 (según el autor) | HuggingFace |
+| Decisio-12b-tuned-fp8-commit | 11.959.730.224 | no disponible | FP8 (e4m3, dinámica por token) | Apache 2.0 | Hugging Face (22 descargas) |
+| tachara-ai/Decisio-12b-tuned-commit | no disponible (base bf16 del mismo ajuste) | no disponible | bf16 | Apache 2.0 | Hugging Face |
+| tachara-ai/Decisio-12b-tuned-fp8-calibrated | mismos pesos que este repositorio | no disponible | FP8 (e4m3, dinámica por token) | Apache 2.0 | Hugging Face |
+| google/gemma-4-12B-it | no disponible en la información | no disponible | bf16 (modelo base) | Apache 2.0 (según el autor) | Hugging Face |
 
 La comparación con modelos de la misma categoría (modelos de decisión tipada) no está disponible en la información proporcionada. Frente a las alternativas de la misma familia, la diferencia es de configuración y precisión: la variante `calibrated` y la `commit` comparten pesos y solo difieren en `decision_config.json`; el modelo bf16 sirve de referencia de calidad, con diferencias dentro de 0,3 puntos en los conjuntos reportados.
 
@@ -107,7 +107,7 @@ La comparación con modelos de la misma categoría (modelos de decisión tipada)
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tachara-ai/Decisio-12b-tuned-fp8-commit
+- Hugging Face: https://huggingface.co/tachara-ai/Decisio-12b-tuned-fp8-commit
 - Modelo bf16 de referencia: https://huggingface.co/tachara-ai/Decisio-12b-tuned-commit
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Variante calibrated: https://huggingface.co/tachara-ai/Decisio-12b-tuned-fp8-calibrated

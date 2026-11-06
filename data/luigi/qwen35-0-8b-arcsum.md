@@ -89,7 +89,7 @@ El agente supera al baseline map-reduce en faithfulness (16 vs 58 inversiones) y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Luigi/qwen35-0.8b-arcsum
+- Repositorio Hugging Face: https://huggingface.co/Luigi/qwen35-0.8b-arcsum
 - Modelo relacionado (harness): https://huggingface.co/Luigi/voxsum-qwen35-0.8b-harness
 - Modelo relacionado (voxsum): https://huggingface.co/Luigi/voxsum-qwen35-0.8b
 - Documentación de Qwen3.5-0.8B (especificaciones y VRAM): https://apxml.com/models/qwen35-08b

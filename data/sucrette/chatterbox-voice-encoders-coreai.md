@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Tipo | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sucrette/chatterbox-voice-encoders-coreai | Codificadores de voz para Chatterbox en Core AI | `.aimodel` | MIT | HuggingFace |
-| ResembleAI/chatterbox-nano | Modelo base TTS de origen (uno de los dos) | no disponible | MIT | HuggingFace |
-| ResembleAI/chatterbox-turbo | Modelo base TTS de origen (el otro) | no disponible | MIT | HuggingFace |
+| sucrette/chatterbox-voice-encoders-coreai | Codificadores de voz para Chatterbox en Core AI | `.aimodel` | MIT | Hugging Face |
+| ResembleAI/chatterbox-nano | Modelo base TTS de origen (uno de los dos) | no disponible | MIT | Hugging Face |
+| ResembleAI/chatterbox-turbo | Modelo base TTS de origen (el otro) | no disponible | MIT | Hugging Face |
 
 Los modelos comparables directos son los propios modelos base de los que se derivan estos pesos; no se dispone de datos de parametros, contexto o rendimiento de ellos en la informacion proporcionada. La diferencia principal es que este paquete solo contiene los codificadores de condicionamiento, no el motor TTS completo, y esta adaptado al formato Core AI de Apple.
 
@@ -92,7 +92,7 @@ Los modelos comparables directos son los propios modelos base de los que se deri
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sucrette/chatterbox-voice-encoders-coreai
+- Hugging Face: https://huggingface.co/sucrette/chatterbox-voice-encoders-coreai
 - Modelo base Nano: https://huggingface.co/ResembleAI/chatterbox-nano
 - Modelo base Turbo: https://huggingface.co/ResembleAI/chatterbox-turbo
 - Repositorio de Chatterbox: https://github.com/resemble-ai/chatterbox

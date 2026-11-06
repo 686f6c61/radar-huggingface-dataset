@@ -77,10 +77,10 @@ Calibración: temperaturas reajustadas sobre 800 filas CX de validación (global
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chendren/cx-decider-2b-v1 | LoRA sobre Qwen3.5-2B (~2B) | 1024 (entrenamiento) | Decisión CX tipada (4 preguntas CRM) | apache-2.0 | HuggingFace |
-| StrandsAgents/strands-decider-2B-hobson-v19 | LoRA sobre Qwen3.5-2B (~2B) | no disponible | Decisión genérica tipada | no disponible | HuggingFace |
-| Mapika/decider-2b | sobre Qwen3.5-2B (~2B) | no disponible | Decisiones tipadas calibradas en una pasada | apache-2.0 | HuggingFace |
-| chendren/qwen2.5-3b-cx-lam | Qwen2.5-3B-Instruct (~3B) | no disponible | Generación de secuencias de herramientas CRM (LoRA MLX 4-bit) | no disponible | HuggingFace |
+| chendren/cx-decider-2b-v1 | LoRA sobre Qwen3.5-2B (~2B) | 1024 (entrenamiento) | Decisión CX tipada (4 preguntas CRM) | apache-2.0 | Hugging Face |
+| StrandsAgents/strands-decider-2B-hobson-v19 | LoRA sobre Qwen3.5-2B (~2B) | no disponible | Decisión genérica tipada | no disponible | Hugging Face |
+| Mapika/decider-2b | sobre Qwen3.5-2B (~2B) | no disponible | Decisiones tipadas calibradas en una pasada | apache-2.0 | Hugging Face |
+| chendren/qwen2.5-3b-cx-lam | Qwen2.5-3B-Instruct (~3B) | no disponible | Generación de secuencias de herramientas CRM (LoRA MLX 4-bit) | no disponible | Hugging Face |
 
 El modelo comparte clase y base con las reproducciones independientes de la familia "System One" (Mapika/decider, XCWQW1/decider), aunque su especialización es exclusivamente el bucle CRM de CX y no las decisiones genéricas. La comparación directa de rendimiento con esas alternativas no está disponible en la información proporcionada.
 
@@ -98,7 +98,7 @@ El modelo comparte clase y base con las reproducciones independientes de la fami
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chendren/cx-decider-2b-v1
+- Modelo en Hugging Face: https://huggingface.co/chendren/cx-decider-2b-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Actor LAM relacionado: https://huggingface.co/chendren/qwen2.5-3b-cx-lam
 - Dataset de trayectorias: https://huggingface.co/datasets/chendren/cx-lam-trajectories

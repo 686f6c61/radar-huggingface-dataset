@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Se trata de un modelo de comprensión del lenguaje natural para árabe egipcio orientado a asistentes de voz, publicado por el usuario Alhasan en HuggingFace. No es un modelo generativo: es un encoder transformer de tipo BERT con dos cabezas, una para clasificación de intención sobre el token `[CLS]` y otra para etiquetado de slots en formato BIO sobre la secuencia de tokens. Parte del modelo base CAMeL-Lab/bert-base-arabic-camelbert-da y tiene 110 millones de parámetros.
+Se trata de un modelo de comprensión del lenguaje natural para árabe egipcio orientado a asistentes de voz, publicado por el usuario Alhasan en Hugging Face. No es un modelo generativo: es un encoder transformer de tipo BERT con dos cabezas, una para clasificación de intención sobre el token `[CLS]` y otra para etiquetado de slots en formato BIO sobre la secuencia de tokens. Parte del modelo base CAMeL-Lab/bert-base-arabic-camelbert-da y tiene 110 millones de parámetros.
 
 El problema que resuelve es el parseo de comandos de voz en dialecto egipcio: convertir una frase como "صحيني بكرة الساعة ستة الصبح" en una estructura `{"intent": "alarm_set", "slots": {"date": "بكرة", "time": "ستة الصبح"}}`. El autor lo presenta explícitamente como alternativa a usar un LLM para esta tarea, argumentando que un encoder con esquema fijo es más barato y más preciso porque no puede inventarse un valor de slot: solo señala fragmentos presentes en la entrada.
 
@@ -74,7 +74,7 @@ El autor reporta además que la incorporación de los datos sintéticos en egipc
 
 | Modelo | Parametros | Contexto | Rendimiento en egipcio | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| Este encoder (Alhasan/camelbert-egyptian-arabic-nlu) | 110M | 64 tokens en entrenamiento | 0,625 exact match | Apache 2.0 | HuggingFace + GitHub, requiere código propio para cargarlo |
+| Este encoder (Alhasan/camelbert-egyptian-arabic-nlu) | 110M | 64 tokens en entrenamiento | 0,625 exact match | Apache 2.0 | Hugging Face + GitHub, requiere código propio para cargarlo |
 | Qwen3-1.7B + LoRA | 1,7B | no disponible | 0,590 exact match | no disponible en la información proporcionada | no disponible en la información proporcionada |
 | Qwen3-0.6B + LoRA | 596M | no disponible | 0,510 exact match | no disponible en la información proporcionada | no disponible en la información proporcionada |
 | Claude Sonnet 5, 5-shot | no aplica (API) | no disponible | 0,435 exact match | propietaria | API comercial |
@@ -99,7 +99,7 @@ Como alternativas de la misma categoría (encoders multilingües o árabes para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Alhasan/camelbert-egyptian-arabic-nlu
+- Modelo en Hugging Face: https://huggingface.co/Alhasan/camelbert-egyptian-arabic-nlu
 - Repositorio del proyecto: https://github.com/Alhasan-Abdellatif/Egyptian-Arabic-understanding-for-voice-assistants
 - Modelo base CAMeLBERT-DA: https://huggingface.co/CAMeL-Lab/bert-base-arabic-camelbert-da
 - Corpus Amazon MASSIVE: https://github.com/alexa/massive

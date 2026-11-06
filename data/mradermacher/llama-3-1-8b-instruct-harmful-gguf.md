@@ -76,7 +76,7 @@ La comparativa se limita a modelos de la misma familia. La diferencia principal 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/llama-3.1-8B-Instruct-Harmful-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/llama-3.1-8B-Instruct-Harmful-GGUF
 - Modelo base: https://huggingface.co/sayandasscientistcoder/llama-3.1-8B-Instruct-Harmful
 - Pagina de descarga del autor: https://hf.tst.eu/model#llama-3.1-8B-Instruct-Harmful-GGUF
 - Guia de uso de GGUF de TheBloke: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -64,7 +64,7 @@ Los datos de la columna "Baseline 3B" provienen de la model card del autor y cor
 - GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM (RTX 3060, RTX 4060, RTX 2070, etc.)
 - Compatible con GPUs de consumo: si, es uno de los objetivos principales del modelo
 - Precision bfloat16 requiere hardware compatible (arquitectura Ampere o superior de NVIDIA)
-- Opciones de despliegue: Transformers (HuggingFace), text-generation-inference, Unsloth
+- Opciones de despliegue: Transformers (Hugging Face), text-generation-inference, Unsloth
 - Latencia y throughput: no disponible en la informacion proporcionada
 
 ## Comparativa con modelos similares
@@ -82,5 +82,5 @@ No se dispone de datos de benchmarks comparativos publicados para otros modelos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MAlexCCBC/TinyChampion-3B-R1
+- Hugging Face: https://huggingface.co/MAlexCCBC/TinyChampion-3B-R1
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios) en la informacion proporcionada.

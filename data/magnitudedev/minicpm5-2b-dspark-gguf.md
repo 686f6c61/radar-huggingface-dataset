@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| magnitudedev/MiniCPM5-2B-DSpark-GGUF | Borrador especulativo DSpark | ~324 M | no disponible | Apache 2.0 | HuggingFace |
-| openbmb/MiniCPM5-2B-DSpark-GGUF | Borrador especulativo DSpark (original) | no disponible en la informacion | no disponible | no disponible en la informacion | HuggingFace |
+| magnitudedev/MiniCPM5-2B-DSpark-GGUF | Borrador especulativo DSpark | ~324 M | no disponible | Apache 2.0 | Hugging Face |
+| openbmb/MiniCPM5-2B-DSpark-GGUF | Borrador especulativo DSpark (original) | no disponible en la informacion | no disponible | no disponible en la informacion | Hugging Face |
 | Drafter DSpark de LFM2.5 | Borrador especulativo (mencionado en pruebas de terceros) | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para comparar rendimiento (benchmarks, contexto o calidad) entre estos artefactos; la comparativa se limita a la naturaleza del artefacto y su licencia.
@@ -83,7 +83,7 @@ No se dispone de datos suficientes para comparar rendimiento (benchmarks, contex
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/magnitudedev/MiniCPM5-2B-DSpark-GGUF
+- Hugging Face (este repositorio): https://huggingface.co/magnitudedev/MiniCPM5-2B-DSpark-GGUF
 - GGUF original de openbmb (revision a261d2b4): https://huggingface.co/openbmb/MiniCPM5-2B-DSpark-GGUF/tree/a261d2b4abc9c9ebfbad2af8a817a09802fc4ca3
 - Configuracion DSpark de SGLang: https://github.com/sgl-project/sglang/blob/264d1c20153cadc921670b982e6531d9800353e6/python/sglang/srt/speculative/dspark_components/dspark_config.py
 - Implementacion DFlash de SGLang: https://github.com/sgl-project/sglang/blob/264d1c20153cadc921670b982e6531d9800353e6/python/sglang/srt/models/dflash.py

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Contrastive-baseline es un prototipo de investigación publicado en HuggingFace por la autora ChloeOmalley bajo el identificador `ChloeOmalley/contrastive-baseline`. Se presenta como una implementación con arquitectura Dino orientada a aprendizaje contrastivo, con una configuración etiquetada internamente como «giant» pero cuyo checkpoint real contiene únicamente 49.600 parámetros (aproximadamente 0,05 millones). El propio autor especifica en la model card que se trata de un punto de partida experimental y no de un modelo entrenado.
+Contrastive-baseline es un prototipo de investigación publicado en Hugging Face por la autora ChloeOmalley bajo el identificador `ChloeOmalley/contrastive-baseline`. Se presenta como una implementación con arquitectura Dino orientada a aprendizaje contrastivo, con una configuración etiquetada internamente como «giant» pero cuyo checkpoint real contiene únicamente 49.600 parámetros (aproximadamente 0,05 millones). El propio autor especifica en la model card que se trata de un punto de partida experimental y no de un modelo entrenado.
 
 El repositorio incluye el código de definición del modelo y un punto de entrada ejecutable (`predict.py`), el fichero de configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización válido para pruebas de humo (`model.safetensors`). No se reclama ninguna métrica de rendimiento y no hay evidencia de un entrenamiento completado.
 
@@ -27,7 +27,7 @@ Su relevancia es estrictamente metodológica: sirve como plantilla reproducible 
 | Normalización | scalenorm |
 | Optimizador por defecto | SGD |
 | Schedule por defecto | cosine |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamaño del repositorio | 0,0 GB |
 | Fecha de creación | 2026-10-13 |
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ChloeOmalley/contrastive-baseline | 49.600 | no disponible | No (solo inicialización) | BSD-3-Clause | HuggingFace |
+| ChloeOmalley/contrastive-baseline | 49.600 | no disponible | No (solo inicialización) | BSD-3-Clause | Hugging Face |
 | DINOv2 (Meta) | cientos de millones a miles de millones (según variante) | no aplica / no disponible | Sí | licencia específica de Meta | Público |
 | SimCLR (Google) | no disponible | no disponible | Sí | no disponible | Repositorio de referencia |
 | MoCo (Meta) | no disponible | no disponible | Sí | no disponible | Repositorio de referencia |
@@ -89,12 +89,12 @@ La comparación es estructuralmente limitada: los modelos de referencia de la fa
 - La etiqueta de escala «giant» en la configuración no coincide con los 49.600 parámetros reales; no debe usarse como indicador de capacidad.
 - El propio autor advierte que cualquier resultado futuro debe documentarse por separado de los valores por defecto del repositorio.
 - La licencia BSD-3-Clause cubre el código y los pesos publicados, pero los términos de los datos de origen deben revisarse por separado cuando se use con datasets externos.
-- La implementación es personalizada, por lo que las APIs de carga automática de HuggingFace requieren un adaptador explícito antes de funcionar.
+- La implementación es personalizada, por lo que las APIs de carga automática de Hugging Face requieren un adaptador explícito antes de funcionar.
 - No hay pipeline declarado ni descargas registradas, lo que indica ausencia de validación por parte de la comunidad.
 - No se debe interpretar este repositorio como un modelo listo para producción bajo ninguna circunstancia.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChloeOmalley/contrastive-baseline
+- Hugging Face: https://huggingface.co/ChloeOmalley/contrastive-baseline
 
 La búsqueda web asociada no devolvió enlaces relevantes sobre este modelo (papers, blogs, repositorios o demos adicionales): los resultados obtenidos no guardan relación con el artefacto y se han descartado. Por tanto, no hay enlaces adicionales que reportar.

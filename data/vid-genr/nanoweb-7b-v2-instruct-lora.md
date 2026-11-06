@@ -4,7 +4,7 @@
 
 NanoWeb-7B-v2-Instruct-LoRA es un adaptador LoRA (PEFT) publicado por el usuario vid-GENR sobre el modelo base Qwen/Qwen2.5-7B-Instruct. No se trata de un modelo entrenado desde cero, sino de un conjunto de pesos de ajuste fino (aproximadamente 2,9 GB en el repositorio) que debe cargarse junto al modelo base para su uso en inferencia. El repositorio declara la etiqueta `text-generation` y la librería `peft`, con compatibilidad con `transformers`.
 
-El interes practico del artefacto depende enteramente del modelo base: Qwen2.5-7B-Instruct es un transformer decoder-only de 7.610 millones de parametros, con atencion de tipo GQA y una ventana de contexto nativa de 32.768 tokens, conocido por su buen rendimiento en codigo, matematicas y seguir instrucciones. El adaptador anade un ajuste fino adicional cuyos datos, hiperparametros y objetivos no estan documentados en la model card, que es la plantilla por defecto de HuggingFace sin rellenar.
+El interes practico del artefacto depende enteramente del modelo base: Qwen2.5-7B-Instruct es un transformer decoder-only de 7.610 millones de parametros, con atencion de tipo GQA y una ventana de contexto nativa de 32.768 tokens, conocido por su buen rendimiento en codigo, matematicas y seguir instrucciones. El adaptador anade un ajuste fino adicional cuyos datos, hiperparametros y objetivos no estan documentados en la model card, que es la plantilla por defecto de Hugging Face sin rellenar.
 
 La relevancia actual es limitada y debe evaluarse con cautela: el repositorio cuenta con 9 descargas y 0 likes, fue creado el 22 de octubre de 2026 y actualizado dos dias despues, no declara licencia, idiomas ni resultados de evaluacion, y no incluye codigo de ejemplo ni detalles de entrenamiento. Es, por tanto, un adaptador experimental del que no existen garantias de calidad medibles.
 
@@ -25,7 +25,7 @@ La relevancia actual es limitada y debe evaluarse con cautela: el repositorio cu
 
 El artefacto es un adaptador LoRA, es decir, matrices de bajo rango inyectadas en determinadas capas lineales del modelo base, que se cargan mediante PEFT y `transformers` manteniendo congelados los pesos originales de Qwen2.5-7B-Instruct. El modelo base es un transformer decoder-only denso con normalizacion RMSNorm, activacion SwiGLU, embeddings RoPE y atencion con query grouping (GQA); el repositorio no especifica sobre que modulos del transformer se aplico el adaptador (q_proj, k_proj, v_proj, o_proj, gate/up/down), ni el rango, ni el alpha, ni el dropout utilizados.
 
-No hay informacion sobre los datos de entrenamiento: la model card es la plantilla estandar de HuggingFace y todos los campos relevantes (conjunto de datos, numero de tokens, composicion, preprocesado, regimen de precision, hiperparametros, hardware y emisiones) aparecen como "[More Information Needed]". Tampoco se documenta si hubo fases de RLHF, DPO o preferencias, ni si el ajuste se hizo con el formato de chat de Qwen2.5 (ChatML). El unico dato tecnico verificable es la version de PEFT empleada (0.20.0) y el tamano del repositorio (2,9 GB), compatible con un adaptador de rango relativamente alto o con pesos en mayor precision, si bien esto es una inferencia y no una confirmacion del autor.
+No hay informacion sobre los datos de entrenamiento: la model card es la plantilla estandar de Hugging Face y todos los campos relevantes (conjunto de datos, numero de tokens, composicion, preprocesado, regimen de precision, hiperparametros, hardware y emisiones) aparecen como "[More Information Needed]". Tampoco se documenta si hubo fases de RLHF, DPO o preferencias, ni si el ajuste se hizo con el formato de chat de Qwen2.5 (ChatML). El unico dato tecnico verificable es la version de PEFT empleada (0.20.0) y el tamano del repositorio (2,9 GB), compatible con un adaptador de rango relativamente alto o con pesos en mayor precision, si bien esto es una inferencia y no una confirmacion del autor.
 
 ## Capacidades
 
@@ -68,7 +68,7 @@ La model card no incluye evaluaciones propias ni comparaciones con el modelo bas
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NanoWeb-7B-v2-Instruct-LoRA (este) | 7,61B (base) + adaptador de tamano no documentado | 32.768 (heredado) | Adaptador LoRA | No declarada (base Apache 2.0) | HuggingFace, 9 descargas |
+| NanoWeb-7B-v2-Instruct-LoRA (este) | 7,61B (base) + adaptador de tamano no documentado | 32.768 (heredado) | Adaptador LoRA | No declarada (base Apache 2.0) | Hugging Face, 9 descargas |
 | Qwen2.5-7B-Instruct | 7,61B | 32.768 (131.072 con YaRN) | Modelo completo | Apache 2.0 | Ampliamente disponible, muy descargado |
 | Llama-3.1-8B-Instruct | 8,03B | 128.000 | Modelo completo | Licencia comunitaria Llama 3.1 | Ampliamente disponible |
 | Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 | Modelo completo | Apache 2.0 | Ampliamente disponible |
@@ -90,7 +90,7 @@ Los datos de los modelos comparados corresponden a su documentacion publica. La 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/vid-GENR/NanoWeb-7B-v2-Instruct-LoRA
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/vid-GENR/NanoWeb-7B-v2-Instruct-LoRA
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700

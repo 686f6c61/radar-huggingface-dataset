@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen2.5-14b-balazs-assistant-full es un ajuste fino (fine-tune) del modelo Qwen2.5-14B-Instruct, desarrollado por el usuario balazsgamer918 y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un derivado conversacional orientado al inglés que parte de la versión cuantizada a 4 bits de Unsloth (unsloth/Qwen2.5-14B-Instruct-bnb-4bit) y cuyos pesos finales se distribuyen en safetensors a resolución completa, con 14.770.033.664 parámetros y un tamano de repositorio de 29,6 GB.
+qwen2.5-14b-balazs-assistant-full es un ajuste fino (fine-tune) del modelo Qwen2.5-14B-Instruct, desarrollado por el usuario balazsgamer918 y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un derivado conversacional orientado al inglés que parte de la versión cuantizada a 4 bits de Unsloth (unsloth/Qwen2.5-14B-Instruct-bnb-4bit) y cuyos pesos finales se distribuyen en safetensors a resolución completa, con 14.770.033.664 parámetros y un tamano de repositorio de 29,6 GB.
 
 El modelo base pertenece a la familia Qwen2.5, una serie de transformers decoder-only densos disponibles en tamanos de 0,5B a 72B y preentrenados sobre hasta 18 billones (18T) de tokens, con una ventana de contexto nativa de 128.000 tokens y soporte de 29 idiomas. La variante de 14B, reintroducida por el equipo Qwen en la actualización Qwen2.5, está pensada como base para aplicaciones de generacion de texto y ajuste fino.
 
@@ -29,7 +29,7 @@ La relevancia de esta ficha es limitada como modelo de produccion: el repositori
 
 La arquitectura corresponde a la de Qwen2.5-14B: un transformer decoder-only denso con atencion causal, grupo de consultas agrupadas (GQA) y normalizacion RMSNorm, preentrenado por el equipo Qwen sobre un corpus de hasta 18T tokens. Los hiperparametros concretos (numero de capas, dimension oculta, cabezas de atencion) no se detallan en la informacion proporcionada, por lo que no se reproducen aqui. El modelo base de 14B se distribuye con una ventana de contexto nativa de 128K tokens y soporte declarado de 29 idiomas.
 
-El fine-tune fue realizado por balazsgamer918 partiendo de la version cuantizada a 4 bits publicada por Unsloth, utilizando la libreria Unsloth junto con TRL de HuggingFace. La propia model card indica que el entrenamiento fue "2x faster" gracias a Unsloth, pero no especifica el numero de tokens de entrenamiento, la composicion del dataset, la tecnica de ajuste (LoRA/QLoRA/full), ni la existencia de fases de RLHF o DPO. Tampoco se documentan innovaciones tecnicas adicionales ni la estrategia de decodificacion. Toda esa informacion esta no disponible.
+El fine-tune fue realizado por balazsgamer918 partiendo de la version cuantizada a 4 bits publicada por Unsloth, utilizando la libreria Unsloth junto con TRL de Hugging Face. La propia model card indica que el entrenamiento fue "2x faster" gracias a Unsloth, pero no especifica el numero de tokens de entrenamiento, la composicion del dataset, la tecnica de ajuste (LoRA/QLoRA/full), ni la existencia de fases de RLHF o DPO. Tampoco se documentan innovaciones tecnicas adicionales ni la estrategia de decodificacion. Toda esa informacion esta no disponible.
 
 ## Capacidades
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| balazsgamer918/qwen2.5-14b-balazs-assistant-full | 14,77B | 128K en el base (no confirmado en el fine-tune) | Ingles (etiquetado) | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-14B-Instruct (base) | 14,7B | 128K | 29 idiomas | apache-2.0 | HuggingFace, ampliamente usado |
-| Qwen/Qwen2.5-32B-Instruct | 32B | 128K | 29 idiomas | apache-2.0 | HuggingFace |
+| balazsgamer918/qwen2.5-14b-balazs-assistant-full | 14,77B | 128K en el base (no confirmado en el fine-tune) | Ingles (etiquetado) | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-14B-Instruct (base) | 14,7B | 128K | 29 idiomas | apache-2.0 | Hugging Face, ampliamente usado |
+| Qwen/Qwen2.5-32B-Instruct | 32B | 128K | 29 idiomas | apache-2.0 | Hugging Face |
 | Phi-3.5-MoE-Instruct | MoE (referenciado como baseline por Qwen) | no disponible en la informacion | no disponible | no disponible | no disponible |
 | Gemma2-27B-IT | 27B (referenciado como baseline por Qwen) | no disponible en la informacion | no disponible | no disponible | no disponible |
 
@@ -91,11 +91,11 @@ La comparacion cuantitativa de rendimiento entre estos modelos no esta disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/balazsgamer918/qwen2.5-14b-balazs-assistant-full
+- Modelo en Hugging Face: https://huggingface.co/balazsgamer918/qwen2.5-14b-balazs-assistant-full
 - Modelo base de Unsloth: https://huggingface.co/unsloth/Qwen2.5-14B-Instruct-bnb-4bit
-- Qwen2.5-14B en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-14B
+- Qwen2.5-14B en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-14B
 - Blog oficial de Qwen2.5: https://qwen.ai/blog?id=qwen2.5
 - Repositorio GitHub de referencia sobre Qwen2.5: https://github.com/mx4ai/qwen2.5
-- Coleccion Qwen2.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen25
+- Coleccion Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25
 - Ficha de Qwen2.5-14B en Open Laboratory: https://openlaboratory.com/models/qwen-2_5-14b/
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

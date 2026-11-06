@@ -79,10 +79,10 @@ La model card indica además que MedPsy-1.7B iguala a Qwen3-4B Thinking (63,10) 
 
 | Modelo | Parametros | Contexto | Media benchmarks medicos | HealthBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MedPsy-1.7B | 2,03B | no disponible | 62,62 | 70,33 | Apache 2.0 | HuggingFace (safetensors y GGUF) |
-| MedGemma-1.5-4B-it | ~4B | no disponible | 51,20 | no disponible | no disponible en la informacion | HuggingFace |
-| Qwen3-1.7B (Thinking) | 1,7B | no disponible | 49,95 | no disponible | Apache 2.0 | HuggingFace |
-| LFM2.5-1.2B-Thinking | 1,2B | no disponible | 44,15 | no disponible | no disponible en la informacion | HuggingFace |
+| MedPsy-1.7B | 2,03B | no disponible | 62,62 | 70,33 | Apache 2.0 | Hugging Face (safetensors y GGUF) |
+| MedGemma-1.5-4B-it | ~4B | no disponible | 51,20 | no disponible | no disponible en la informacion | Hugging Face |
+| Qwen3-1.7B (Thinking) | 1,7B | no disponible | 49,95 | no disponible | Apache 2.0 | Hugging Face |
+| LFM2.5-1.2B-Thinking | 1,2B | no disponible | 44,15 | no disponible | no disponible en la informacion | Hugging Face |
 
 MedPsy-1.7B supera a MedGemma-1.5-4B-it (el doble de tamaño) en +11,42 puntos de media en benchmarks cerrados y a Qwen3-1.7B Thinking en +12,67 puntos, manteniendo un tamaño menor que MedGemma. Frente a MedGemma-27B, la model card reporta ventaja en HealthBench (70,33 vs 65,00) pese a ser 16 veces menor. No se dispone de datos de contexto ni de licencia de los modelos comparados en la información proporcionada.
 
@@ -99,7 +99,7 @@ MedPsy-1.7B supera a MedGemma-1.5-4B-it (el doble de tamaño) en +11,42 puntos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qvac/MedPsy-1.7B
+- Modelo en Hugging Face: https://huggingface.co/qvac/MedPsy-1.7B
 - Variante GGUF: https://huggingface.co/qvac/MedPsy-1.7B-GGUF
 - Variante 4B: https://huggingface.co/qvac/MedPsy-4B
 - Variante 4B GGUF: https://huggingface.co/qvac/MedPsy-4B-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JustRL-Qwen3-1p7b-Selective-Top20pct es un checkpoint de ajuste publicado por el usuario SelectiveDOPD en HuggingFace. Según su model card, se ha subido desde el experimento interno `justrl_qwen3_1p7b_js_ladder_80_100_kl`, dentro de los experimentos denominados "BiDirect-OPD". El repositorio contiene 2.031.739.904 parámetros en formato safetensors y ocupa 44,7 GB, un tamaño que se explica porque la rama `main` corresponde al `global_step_300` y se conservan otras catorce revisiones intermedias (de `global_step_20` a `global_step_280`, en pasos de 20).
+JustRL-Qwen3-1p7b-Selective-Top20pct es un checkpoint de ajuste publicado por el usuario SelectiveDOPD en Hugging Face. Según su model card, se ha subido desde el experimento interno `justrl_qwen3_1p7b_js_ladder_80_100_kl`, dentro de los experimentos denominados "BiDirect-OPD". El repositorio contiene 2.031.739.904 parámetros en formato safetensors y ocupa 44,7 GB, un tamaño que se explica porque la rama `main` corresponde al `global_step_300` y se conservan otras catorce revisiones intermedias (de `global_step_20` a `global_step_280`, en pasos de 20).
 
 El nombre del repositorio y la etiqueta `qwen3` apuntan a que se trata de un ajuste sobre Qwen3-1.7B, y el recuento de parámetros coincide exactamente con el de ese modelo base, pero la model card no confirma explícitamente ni la arquitectura, ni la longitud de contexto, ni los idiomas, ni la licencia. Tampoco se documentan los datos de entrenamiento, la composición del dataset ni los resultados de evaluaciones.
 
@@ -23,7 +23,7 @@ Su relevancia es, por tanto, la de un artefacto de investigación: interesa a qu
 | Revisiones disponibles | `main` = `global_step_300`, más `global_step_20`, `40`, `60`, `80`, `100`, `120`, `140`, `160`, `180`, `200`, `220`, `240`, `260`, `280` |
 | Tamaño del repositorio | 44,7 GB |
 | Pipeline declarado | `text-generation` |
-| Fecha de creación / actualización | 2026-09-11 (según metadatos de HuggingFace) |
+| Fecha de creación / actualización | 2026-09-11 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -74,10 +74,10 @@ No existe información publicada sobre este checkpoint que permita compararlo co
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| JustRL-Qwen3-1p7b-Selective-Top20pct | 2.031.739.904 | No disponible | No disponible | HuggingFace, 0 descargas, 15 revisiones |
-| Qwen3-1.7B (base presumible) | 2,03 B | 32.768 tokens nativos (131.072 con YaRN, según documentación del modelo base) | Apache 2.0 | HuggingFace, ampliamente validado |
-| Gemma-2-2B | ~2,6 B | 8.192 tokens (según documentación del modelo base) | Licencia Gemma | HuggingFace, ampliamente validado |
-| Llama-3.2-1B | ~1,24 B | 128.000 tokens (según documentación del modelo base) | Licencia comunitaria de Llama 3.2 | HuggingFace, ampliamente validado |
+| JustRL-Qwen3-1p7b-Selective-Top20pct | 2.031.739.904 | No disponible | No disponible | Hugging Face, 0 descargas, 15 revisiones |
+| Qwen3-1.7B (base presumible) | 2,03 B | 32.768 tokens nativos (131.072 con YaRN, según documentación del modelo base) | Apache 2.0 | Hugging Face, ampliamente validado |
+| Gemma-2-2B | ~2,6 B | 8.192 tokens (según documentación del modelo base) | Licencia Gemma | Hugging Face, ampliamente validado |
+| Llama-3.2-1B | ~1,24 B | 128.000 tokens (según documentación del modelo base) | Licencia comunitaria de Llama 3.2 | Hugging Face, ampliamente validado |
 
 La diferencia práctica fundamental no está en el tamaño, sino en el soporte: los tres modelos de referencia tienen licencia explícita, documentación completa y comunidades activas, mientras que este checkpoint carece de todo ello.
 
@@ -98,7 +98,7 @@ La diferencia práctica fundamental no está en el tamaño, sino en el soporte: 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-1p7b-Selective-Top20pct
+- Repositorio en Hugging Face: https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-1p7b-Selective-Top20pct
 - Modelo base presumible (no confirmado por el autor): https://huggingface.co/Qwen/Qwen3-1.7B
 - Informe técnico de la familia Qwen3 (referencia del modelo base, no citado por el autor): https://arxiv.org/abs/2505.09388
 - Resultados de la búsqueda web: no se encontró ningún enlace relevante al modelo. Las páginas devueltas correspondían a soporte técnico de Microsoft (contacto, inicio de sesión en Hotmail, descarga de Windows 8.1, cuenta de Tech Community y retirada de la utilidad SaRA) y no guardan relación con este repositorio.

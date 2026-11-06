@@ -67,5 +67,5 @@ No disponible. El modelo no es comparable con alternativas de la misma categoria
 - La carga requiere bitsandbytes y `load_in_8bit=True`; no se ha verificado el funcionamiento en otros runtimes.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/joemia1993/relay-7z7s2v-int8
+- Hugging Face: https://huggingface.co/joemia1993/relay-7z7s2v-int8
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

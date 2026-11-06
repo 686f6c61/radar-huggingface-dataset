@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es el nombre que recibe el modelo documentado en el repositorio de HuggingFace `sdkjhk/MyAwesomeModel-TestRepo`, publicado por el usuario `sdkjhk` bajo licencia MIT. La model card lo presenta como una version mejorada de un modelo de razonamiento, con avances en matematicas, programacion y logica, y con soporte de function calling y una tasa de alucinacion reducida respecto a la version anterior. Sin embargo, el repositorio no contiene pesos (tamano de 0.0 GB), acumula 0 descargas y 0 likes, y fue creado y actualizado el 15 de octubre de 2026 con una diferencia de tres segundos entre ambos eventos, lo que apunta a un repositorio de prueba y no a una publicacion real.
+MyAwesomeModel es el nombre que recibe el modelo documentado en el repositorio de Hugging Face `sdkjhk/MyAwesomeModel-TestRepo`, publicado por el usuario `sdkjhk` bajo licencia MIT. La model card lo presenta como una version mejorada de un modelo de razonamiento, con avances en matematicas, programacion y logica, y con soporte de function calling y una tasa de alucinacion reducida respecto a la version anterior. Sin embargo, el repositorio no contiene pesos (tamano de 0.0 GB), acumula 0 descargas y 0 likes, y fue creado y actualizado el 15 de octubre de 2026 con una diferencia de tres segundos entre ambos eventos, lo que apunta a un repositorio de prueba y no a una publicacion real.
 
-Existe ademas una contradiccion relevante entre los metadatos de HuggingFace y el contenido de la model card: las etiquetas declaradas son `transformers`, `pytorch`, `bert` y `feature-extraction`, y el pipeline asignado es `feature-extraction`, mientras que el texto describe un modelo generativo de razonamiento con decodificacion de cadenas de pensamiento, citas web y plantillas de subida de ficheros. Los idiomas soportados no estan declarados.
+Existe ademas una contradiccion relevante entre los metadatos de Hugging Face y el contenido de la model card: las etiquetas declaradas son `transformers`, `pytorch`, `bert` y `feature-extraction`, y el pipeline asignado es `feature-extraction`, mientras que el texto describe un modelo generativo de razonamiento con decodificacion de cadenas de pensamiento, citas web y plantillas de subida de ficheros. Los idiomas soportados no estan declarados.
 
 No se dispone de datos verificables sobre arquitectura, numero de parametros, longitud de contexto, composicion del dataset de entrenamiento ni formato de pesos. La model card menciona una variante denominada MyAwesomeModel-Small, cuya arquitectura seria identica a la del modelo base pero que comparte el tokenizador con el modelo principal. Toda la informacion tecnica de esta ficha procede exclusivamente de la model card del autor y no ha podido contrastarse con artefactos publicados.
 
@@ -85,7 +85,7 @@ Dato adicional aportado por el autor: en AIME 2025, la version anterior del mode
 - No se pueden recomendar GPU concretas (A100, H100, RTX 4090 u otras) por la misma razon.
 - No se puede determinar si el modelo cabe en una GPU de consumo.
 - El repositorio no contiene pesos (0.0 GB), por lo que actualmente no hay nada desplegable.
-- Opciones de despliegue teoricas: la libreria declarada es `transformers` y la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. No hay evidencias de soporte de llama.cpp, Ollama, vLLM o TGI, ni ficheros GGUF publicados.
+- Opciones de despliegue teoricas: la libreria declarada es `transformers` y la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No hay evidencias de soporte de llama.cpp, Ollama, vLLM o TGI, ni ficheros GGUF publicados.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -116,7 +116,7 @@ Se recomienda no utilizar esta tabla como base para una decision tecnica: la ide
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sdkjhk/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/sdkjhk/MyAwesomeModel-TestRepo
 - Repositorio de codigo: mencionado en la model card sin URL
 - Sitio web oficial con interfaz de chat y API: mencionado en la model card sin URL
 - Paper o informe tecnico: no disponible

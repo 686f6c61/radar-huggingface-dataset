@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "abliterant/Qwen3.5-9B-RANA-abliterated-AWQ",
+  "slug": "abliterant-qwen3-5-9b-rana-abliterated-awq",
+  "author": "abliterant",
+  "url": "https://huggingface.co/abliterant/Qwen3.5-9B-RANA-abliterated-AWQ",
+  "created_at": "2026-11-06T12:05:39.000Z",
+  "updated_at": "2026-11-06T12:06:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterant",
+    "awq",
+    "int4",
+    "w4a16",
+    "compressed-tensors",
+    "llm-compressor",
+    "vllm",
+    "abliteration",
+    "abliterated",
+    "uncensored",
+    "qwen3.5",
+    "qwen3",
+    "vision-language",
+    "conversational",
+    "base_model:abliterant/Qwen3.5-9B-RANA-abliterated",
+    "base_model:quantized:abliterant/Qwen3.5-9B-RANA-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 11698095822,
+  "storage_human": "11.7 GB",
+  "base_model": "abliterant/Qwen3.5-9B-RANA-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.5 Abliterated vs Regular: Which Should You Use for Uncensored ...",
+      "url": "https://docs.bswen.com/blog/2026-03-10-qwen-abliterated-comparison/",
+      "snippet": "I compared Qwen 3.5 abliterated vs regular models for uncensored tasks. Here's what I learned about quality differences, hardware requirements, and when to use each variant."
+    },
+    {
+      "title": "Qwen3.5-abliterated - a huihui-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/huihui-ai/qwen35-abliterated",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

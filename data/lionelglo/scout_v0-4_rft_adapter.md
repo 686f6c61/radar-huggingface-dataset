@@ -68,5 +68,5 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lionelglo/scout_v0.4_rft_adapter
+- Hugging Face: https://huggingface.co/Lionelglo/scout_v0.4_rft_adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct

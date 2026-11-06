@@ -27,7 +27,7 @@ No se ha publicado ninguna información sobre la arquitectura del modelo base `t
 
 ## Capacidades
 
-- Etiqueta "conversational" en HuggingFace, lo que indica un posible uso en diálogo, pero sin detalles sobre la calidad o el alcance.
+- Etiqueta "conversational" en Hugging Face, lo que indica un posible uso en diálogo, pero sin detalles sobre la calidad o el alcance.
 - No se dispone de información sobre generación de código, razonamiento matemático, tool calling, soporte de agentes, capacidades multilingües o modos especiales (thinking, vision, audio).
 - Al ser un modelo de ~4,65 B parámetros, es probable que tenga limitaciones inherentes en tareas complejas, pero esto es una inferencia basada en el tamaño, no un dato confirmado.
 

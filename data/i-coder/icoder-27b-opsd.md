@@ -78,7 +78,7 @@ La comparación es cualitativa, ya que no se dispone de benchmarks públicos par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/i-Coder/iCoder-27B-OPSD
+- Modelo en Hugging Face: https://huggingface.co/i-Coder/iCoder-27B-OPSD
 - Modelo final iCoder-27B: https://huggingface.co/i-Coder/iCoder-27B
 - Modelo base SFT: https://huggingface.co/i-Coder/iCoder-27B-SFT
 - Reporte técnico: no disponible en la información proporcionada.

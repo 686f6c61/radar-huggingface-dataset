@@ -6,7 +6,7 @@ Este repositorio publica una cuantizacion GGUF del modelo Qwen2.5-0.5B-Instruct,
 
 El modelo subyacente es un transformer decoder-only denso de aproximadamente 630 millones de parametros segun los datos de safetensors del repositorio, orientado a generacion de texto conversacional. Su interes practico no esta en la calidad de sus respuestas, sino en su huella: el repositorio completo ocupa 0,5 GB y el archivo Q4_K_M puede ejecutarse en CPU, iGPU o cualquier GPU de gama baja, lo que lo convierte en una opcion para prototipado rapido, pruebas de pipelines de inferencia, clasificacion ligera y despliegues en el borde con recursos muy limitados.
 
-La relevancia de esta ficha concreta es doble. Por un lado, permite comparar el rendimiento del prefilling y la generacion de tokens en un iGPU de nueva generacion (Strix Halo) frente a soluciones tradicionales. Por otro, documenta un patron cada vez mas comun en HuggingFace: repositorios de rehosting que anaden telemetria de rendimiento propia sobre cuantizaciones ajenas. Conviene tener en cuenta que el repositorio tiene cero descargas y cero likes en el momento de la consulta, por lo que no cuenta con validacion de la comunidad.
+La relevancia de esta ficha concreta es doble. Por un lado, permite comparar el rendimiento del prefilling y la generacion de tokens en un iGPU de nueva generacion (Strix Halo) frente a soluciones tradicionales. Por otro, documenta un patron cada vez mas comun en Hugging Face: repositorios de rehosting que anaden telemetria de rendimiento propia sobre cuantizaciones ajenas. Conviene tener en cuenta que el repositorio tiene cero descargas y cero likes en el momento de la consulta, por lo que no cuenta con validacion de la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -22,8 +22,8 @@ La relevancia de esta ficha concreta es doble. Por un lado, permite comparar el 
 | Formato de pesos | GGUF; archivo `qwen2.5-0.5b-instruct-q4_k_m.gguf` |
 | Tamano del repositorio | 0,5 GB |
 | Modelo base | Qwen/Qwen2.5-0.5B-Instruct |
-| Fecha de creacion (segun HuggingFace) | 2026-09-26 |
-| Ultima actualizacion (segun HuggingFace) | 2026-09-26 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-26 |
+| Ultima actualizacion (segun Hugging Face) | 2026-09-26 |
 
 ## Arquitectura y entrenamiento
 
@@ -34,7 +34,7 @@ La innovacion tecnica atribuible a este repositorio no esta en el modelo, sino e
 ## Capacidades
 
 - Generacion de texto conversacional multi-turno, con plantilla de chat propia del modelo base Qwen2.5-Instruct.
-- Modelo etiquetado como `conversational` y `endpoints_compatible` en HuggingFace, lo que indica compatibilidad con el esquema de Inference Endpoints de la plataforma.
+- Modelo etiquetado como `conversational` y `endpoints_compatible` en Hugging Face, lo que indica compatibilidad con el esquema de Inference Endpoints de la plataforma.
 - Razonamiento basico y tareas de sentido comun propias de un modelo de 0,5 B de parametros; no se documentan capacidades avanzadas.
 - Generacion de codigo y matematicas: no hay evidencia publicada en este repositorio sobre su nivel real en estas tareas; se desaconseja asumir un rendimiento competitivo por el tamano del modelo.
 - Tool calling / function calling: no disponible en la informacion proporcionada para esta cuantizacion concreta.
@@ -74,14 +74,14 @@ No se dispone de latencia por peticion, TTFT (time to first token) ni mediciones
 - Cabe en cualquier GPU de consumo: RTX 3060 12 GB, RTX 4060 8 GB, RTX 4090 24 GB y modelos inferiores con 2 GB o mas de memoria libre; tambien en graficas integradas.
 - Ejecucion en CPU sin GPU dedicada: viable y con velocidad utilizable en procesadores modernos con AVX2 o AVX-512; alternativa para entornos sin acelerador.
 - Hardware validado por el autor: Strix Halo (AMD) mediante Vulkan con el motor 1bit engine.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llamafile y el propio 1bit engine. Compatibilidad con vLLM y TGI no esta documentada para este artefacto concreto; el tag `endpoints_compatible` sugiere que puede desplegarse en HuggingFace Inference Endpoints, pero no hay confirmacion en la informacion disponible.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llamafile y el propio 1bit engine. Compatibilidad con vLLM y TGI no esta documentada para este artefacto concreto; el tag `endpoints_compatible` sugiere que puede desplegarse en Hugging Face Inference Endpoints, pero no hay confirmacion en la informacion disponible.
 - Latencia y throughput: en la configuracion medida (Strix Halo, Vulkan, 1bit engine) se alcanzan 14.483 tok/s en prefilling y 348 tok/s en generacion, lo que da una experiencia fluida para el tamano del modelo. No hay datos equivalentes para otras GPUs, backends o cuantizaciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros totales | Formato y cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 1bit-MONSTER/Qwen2.5-0.5B-Instruct-GGUF (este) | 630.167.424 | GGUF Q4_K_M, 0,5 GB | No disponible | Apache 2.0 | Repositorio en HuggingFace, 0 descargas |
+| 1bit-MONSTER/Qwen2.5-0.5B-Instruct-GGUF (este) | 630.167.424 | GGUF Q4_K_M, 0,5 GB | No disponible | Apache 2.0 | Repositorio en Hugging Face, 0 descargas |
 | Qwen/Qwen2.5-0.5B-Instruct-GGUF (original de Qwen) | Aproximadamente 0,5 B | GGUF en varios niveles de cuantizacion | No verificado en la informacion disponible | Apache 2.0 | Repositorio oficial de Qwen, mismo archivo Q4_K_M reutilizado aqui |
 | Qwen/Qwen2.5-0.5B-Instruct (pesos completos) | Aproximadamente 0,5 B | safetensors | No verificado en la informacion disponible | Apache 2.0 | Repositorio oficial, requiere conversion a GGUF para inferencia local optimizada |
 | Modelos de ~1 B (por ejemplo Llama-3.2-1B-Instruct o Qwen2.5-1.5B-Instruct) | Entre aproximadamente 1,2 B y 1,5 B | GGUF disponible en sus repositorios oficiales | No verificado en la informacion disponible | Licencias respectivas (Llama Community License / Apache 2.0) | Amplia disponibilidad |
@@ -101,7 +101,7 @@ La diferencia principal entre este repositorio y el GGUF oficial de Qwen es el r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/1bit-MONSTER/Qwen2.5-0.5B-Instruct-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/1bit-MONSTER/Qwen2.5-0.5B-Instruct-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - GGUF oficial de Qwen (fuente del archivo rehospedado): https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF
 - Motor 1bit engine: https://github.com/1bit-MONSTER/engine

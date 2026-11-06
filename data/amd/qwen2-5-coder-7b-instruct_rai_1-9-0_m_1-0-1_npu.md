@@ -75,7 +75,7 @@ Los datos de contexto y licencia de los modelos comparables provienen de su docu
 
 ## Limitaciones y advertencias
 
-- El repositorio está marcado como de acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+- El repositorio está marcado como de acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 - Solo se declara soporte de inglés; el rendimiento en castellano no está verificado y probablemente sea inferior al del inglés.
 - Al ser una conversión para NPU, puede presentar diferencias de comportamiento respecto al modelo original en precisión numérica y en la gestión del contexto.
 - No se dispone de información sobre cuantización aplicada, lo que impide estimar la pérdida de calidad frente al modelo en FP16.
@@ -87,7 +87,7 @@ Los datos de contexto y licencia de los modelos comparables provienen de su docu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amd/Qwen2.5-Coder-7B-Instruct_rai_1.9.0_m_1.0.1_npu
+- Repositorio en Hugging Face: https://huggingface.co/amd/Qwen2.5-Coder-7B-Instruct_rai_1.9.0_m_1.0.1_npu
 - Modelo base Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Documentación de Ryzen AI Software: https://ryzenai.docs.amd.com/
 - Repositorio de Ryzen AI en GitHub: https://github.com/amd/RyzenAI-SW

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eoinf/trigram_baseline_2b_schedule_200m_dmodel256` es un modelo de lenguaje causal de escala reducida publicado por el usuario `eoinf` en HuggingFace. No se trata de un modelo orientado a produccion, sino de una pieza dentro de una cuadricula de experimentos («Transformer experiment grid») cuyo objetivo es estudiar el comportamiento de transformers pequenos con distintas anchuras de `d_model` bajo un presupuesto de entrenamiento fijo. En concreto, esta variante usa `d_model=256`, vocabulario de 4096 tokens y una longitud de contexto de 256 tokens.
+`eoinf/trigram_baseline_2b_schedule_200m_dmodel256` es un modelo de lenguaje causal de escala reducida publicado por el usuario `eoinf` en Hugging Face. No se trata de un modelo orientado a produccion, sino de una pieza dentro de una cuadricula de experimentos («Transformer experiment grid») cuyo objetivo es estudiar el comportamiento de transformers pequenos con distintas anchuras de `d_model` bajo un presupuesto de entrenamiento fijo. En concreto, esta variante usa `d_model=256`, vocabulario de 4096 tokens y una longitud de contexto de 256 tokens.
 
 El nombre del repositorio sugiere un presupuesto nominal de aproximadamente 2 mil millones de tokens de entrenamiento (1.999.998.976), aunque el autor advierte que los horizontes reales por modelo, incluidas paradas tempranas, se registran en los ficheros `grid_summary.json` y `result.json` incluidos en el repositorio. La evaluacion se realiza sobre los propios datos de entrenamiento, sin conjunto de validacion independiente, lo que limita cualquier interpretacion de sus metricas como indicador de generalizacion.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| eoinf/trigram_baseline_2b_schedule_200m_dmodel256 | no disponible | 256 | no disponible | HuggingFace (0 descargas, 0 likes) | Linea base experimental, sin evaluacion held-out |
-| Otras variantes de la cuadricula `eoinf` (distintas `d_model`) | no disponible | 256 | no disponible | HuggingFace | Mismo marco experimental, anchura distinta |
+| eoinf/trigram_baseline_2b_schedule_200m_dmodel256 | no disponible | 256 | no disponible | Hugging Face (0 descargas, 0 likes) | Linea base experimental, sin evaluacion held-out |
+| Otras variantes de la cuadricula `eoinf` (distintas `d_model`) | no disponible | 256 | no disponible | Hugging Face | Mismo marco experimental, anchura distinta |
 | Modelos tiny de referencia tipo GPT-2 small | 124M | 1024 | MIT (segun publicacion original) | Amplia | Referencia habitual para experimentos a pequena escala |
 
 No se dispone de datos de rendimiento comparables entre estas opciones en la informacion proporcionada; la comparativa se limita a dimensiones estructurales y disponibilidad.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparables entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eoinf/trigram_baseline_2b_schedule_200m_dmodel256
+- Modelo en Hugging Face: https://huggingface.co/eoinf/trigram_baseline_2b_schedule_200m_dmodel256
 - Tokenizer: https://huggingface.co/eoinf/pile_tokenizer_4096
 - Repositorio de codigo `synthetic_trigrams`: no disponible como enlace directo en la informacion proporcionada
 - Paper, blog o demo: no disponibles

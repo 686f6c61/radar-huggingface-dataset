@@ -74,7 +74,7 @@ No se dispone de métricas comparativas entre estos adaptadores. La comparativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/sft_writingprompts_gpt-oss-20b_as_gemma-4-e4b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/sft_writingprompts_gpt-oss-20b_as_gemma-4-e4b_seed42
 - Adaptador similar con DPO: https://friendli.ai/models/dementor-research/dpo_writingprompts_gpt-oss-20b_as_gemma-4-e4b_seed42
 - Adaptador similar con Gemma 4 como base: https://friendli.ai/models/dementor-research/sft_writingprompts_gemma-4-31b_as_gpt-oss-20b_seed42
 - Página de Gemma 4 (modelo a imitar): https://deepmind.google/models/gemma/gemma-4/

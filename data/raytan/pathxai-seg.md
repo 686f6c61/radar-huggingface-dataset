@@ -2,9 +2,9 @@
 
 ## Resumen
 
-PathXAI-Seg es un modelo de segmentación de imágenes de patología desarrollado por el usuario RayTan y publicado en HuggingFace bajo el identificador `RayTan/PathXAI-Seg`. El modelo se distribuye con la librería PyTorch y está etiquetado con los términos `pathology`, `segmentation` y `sam3`, lo que indica que se apoya en la familia Segment Anything Model (SAM) aplicada al dominio de la histopatología. Su propósito es generar máscaras de segmentación sobre imágenes de tejido, una tarea central en flujos de patología digital y análisis asistido por computador.
+PathXAI-Seg es un modelo de segmentación de imágenes de patología desarrollado por el usuario RayTan y publicado en Hugging Face bajo el identificador `RayTan/PathXAI-Seg`. El modelo se distribuye con la librería PyTorch y está etiquetado con los términos `pathology`, `segmentation` y `sam3`, lo que indica que se apoya en la familia Segment Anything Model (SAM) aplicada al dominio de la histopatología. Su propósito es generar máscaras de segmentación sobre imágenes de tejido, una tarea central en flujos de patología digital y análisis asistido por computador.
 
-La información pública disponible es muy limitada: el repositorio tiene un tamaño de 0.0 GB, no registra descargas ni likes, y el acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace para descargar los pesos. La licencia declarada es `sam-license`, la licencia asociada a los modelos SAM originales de Meta, que impone restricciones de uso comercial y requiere revisión previa.
+La información pública disponible es muy limitada: el repositorio tiene un tamaño de 0.0 GB, no registra descargas ni likes, y el acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face para descargar los pesos. La licencia declarada es `sam-license`, la licencia asociada a los modelos SAM originales de Meta, que impone restricciones de uso comercial y requiere revisión previa.
 
 No se han publicado en la información disponible detalles sobre arquitectura exacta, número de parámetros, longitud de contexto (en el caso de modelos multimodales de imagen, resolución de entrada), datos de entrenamiento ni resultados de benchmarks. La ficha se completa con los datos disponibles y se marca explícitamente como "no disponible" todo aquello que no puede verificarse.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto/resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PathXAI-Seg | no disponible | no disponible | sam-license (gated) | HuggingFace, acceso restringido |
+| PathXAI-Seg | no disponible | no disponible | sam-license (gated) | Hugging Face, acceso restringido |
 | SAM (Meta) | 91M–636M (ViT-B/L/H) | 1024x1024 | Apache 2.0 (SAM) / SAM 2 con licencia propia | Público |
 | MedSAM | ~90M (ViT-B) | 1024x1024 | Apache 2.0 | Público |
 | Cellpose | no aplicable (no transformer) | variable | BSD-3 | Público |
@@ -71,7 +71,7 @@ La comparación es limitada porque no se conocen los parámetros ni el rendimien
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated; es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede retrasar su uso en producción.
+- Acceso restringido: el repositorio es gated; es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede retrasar su uso en producción.
 - Licencia `sam-license`: hereda las restricciones de la licencia de SAM, que en versiones recientes limita el uso comercial y requiere revisión legal antes de desplegar en productos.
 - Falta de documentación: no hay model card detallada, paper ni benchmarks públicos, lo que impide evaluar su calidad real frente a alternativas.
 - Riesgo de sesgo de dominio: al ser un modelo de patología, su rendimiento puede degradarse en tinciones, scanners o tejidos no representados en su (desconocido) dataset de entrenamiento.
@@ -82,5 +82,5 @@ La comparación es limitada porque no se conocen los parámetros ni el rendimien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RayTan/PathXAI-Seg
+- Hugging Face: https://huggingface.co/RayTan/PathXAI-Seg
 - No se han encontrado otros enlaces (paper, blog, repositorio o demo) en la información disponible.

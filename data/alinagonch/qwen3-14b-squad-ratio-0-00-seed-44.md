@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AlinaGonch/qwen3-14b-squad-ratio-0.00-seed-44 es un modelo publicado en HuggingFace por el usuario AlinaGonch, cuyo identificador sugiere un ajuste fino (fine-tuning) del modelo base Qwen3-14B sobre el conjunto de datos SQuAD (Stanford Question Answering Dataset), con un parametro de mezcla o ratio fijado en 0.00 y una semilla de entrenamiento de 44. La existencia de variantes hermanas en el mismo perfil (por ejemplo, qwen3-14b-squad-ratio-0.90-seed-44 y qwen3-14b-squad-ratio-0.40-seed-42) apunta a un estudio de ablacion sistematico sobre la proporcion de datos de SQuAD y la reproducibilidad por semilla, mas que a un modelo destinado a produccion.
+AlinaGonch/qwen3-14b-squad-ratio-0.00-seed-44 es un modelo publicado en Hugging Face por el usuario AlinaGonch, cuyo identificador sugiere un ajuste fino (fine-tuning) del modelo base Qwen3-14B sobre el conjunto de datos SQuAD (Stanford Question Answering Dataset), con un parametro de mezcla o ratio fijado en 0.00 y una semilla de entrenamiento de 44. La existencia de variantes hermanas en el mismo perfil (por ejemplo, qwen3-14b-squad-ratio-0.90-seed-44 y qwen3-14b-squad-ratio-0.40-seed-42) apunta a un estudio de ablacion sistematico sobre la proporcion de datos de SQuAD y la reproducibilidad por semilla, mas que a un modelo destinado a produccion.
 
-El modelo base, Qwen3-14B, es un transformer denso de aproximadamente 14 mil millones de parametros desarrollado por el equipo Qwen de Alibaba, que integra modos de razonamiento (thinking) y de respuesta directa (non-thinking) conmutable en conversacion. Sin embargo, la model card de este repositorio es la plantilla autogenerada de HuggingFace, sin informacion cumplimentada, de modo que no se documentan datos de entrenamiento, idiomas, licencia ni evaluacion del ajuste fino concreto.
+El modelo base, Qwen3-14B, es un transformer denso de aproximadamente 14 mil millones de parametros desarrollado por el equipo Qwen de Alibaba, que integra modos de razonamiento (thinking) y de respuesta directa (non-thinking) conmutable en conversacion. Sin embargo, la model card de este repositorio es la plantilla autogenerada de Hugging Face, sin informacion cumplimentada, de modo que no se documentan datos de entrenamiento, idiomas, licencia ni evaluacion del ajuste fino concreto.
 
 Su relevancia es limitada y experimental: se trata de una publicacion sin descargas ni likes en el momento de la consulta, con un repositorio de solo 0,3 GB, un tamano incompatible con un checkpoint completo de 14B en precision de 16 bits (que rondaria los 28 GB), lo que sugiere que contiene adaptadores (LoRA/PEFT) o una carga parcial en lugar de pesos completos. Cualquier uso en produccion requeriria verificar primero el contenido real del repositorio.
 
@@ -71,10 +71,10 @@ Las estimaciones siguientes corresponden al supuesto de un modelo denso de 14B p
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| AlinaGonch/qwen3-14b-squad-ratio-0.00-seed-44 | 14B (segun denominacion) | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste experimental sobre SQuAD; repo de 0,3 GB |
-| Qwen3-14B (base) | 14B denso | 32.768 tokens (ampliable) | Apache 2.0 (habitual en la familia) | HuggingFace, ampliamente distribuido | Modos thinking/non-thinking, tool calling, JSON |
-| Qwen2.5-14B | 14B denso | 32.768 tokens (ampliable) | Apache 2.0 (habitual) | HuggingFace | Generacion anterior; el base Qwen3-14B lo supera en capacidad general |
-| Phi-4 (14B) | 14B denso | 16.000 tokens | MIT | HuggingFace | Alternativa de escala similar orientada a razonamiento |
+| AlinaGonch/qwen3-14b-squad-ratio-0.00-seed-44 | 14B (segun denominacion) | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste experimental sobre SQuAD; repo de 0,3 GB |
+| Qwen3-14B (base) | 14B denso | 32.768 tokens (ampliable) | Apache 2.0 (habitual en la familia) | Hugging Face, ampliamente distribuido | Modos thinking/non-thinking, tool calling, JSON |
+| Qwen2.5-14B | 14B denso | 32.768 tokens (ampliable) | Apache 2.0 (habitual) | Hugging Face | Generacion anterior; el base Qwen3-14B lo supera en capacidad general |
+| Phi-4 (14B) | 14B denso | 16.000 tokens | MIT | Hugging Face | Alternativa de escala similar orientada a razonamiento |
 
 Los datos de licencia y contexto de los modelos comparados deben verificarse en sus respectivas fichas; aqui se indican como referencia general.
 
@@ -92,7 +92,7 @@ Los datos de licencia y contexto de los modelos comparados deben verificarse en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.00-seed-44
+- Modelo en Hugging Face: https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.00-seed-44
 - Variante relacionada (ratio 0.90, seed 44): https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.90-seed-44
 - Variante relacionada (ratio 0.40, seed 42): https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.40-seed-42
 - Documentacion de Qwen3-14B (Alibaba Cloud Model Studio): https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-14b

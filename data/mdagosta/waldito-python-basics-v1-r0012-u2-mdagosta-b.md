@@ -18,7 +18,7 @@ Su relevancia es limitada como modelo de proposito general: no es competitivo en
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; el repositorio publica pesos safetensors sin variantes cuantizadas declaradas (no se han encontrado ficheros GGUF) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (la model card y los metadatos de HuggingFace no especifican licencia) |
+| Licencia | no disponible (la model card y los metadatos de Hugging Face no especifican licencia) |
 | Formato de pesos | safetensors (carga via Transformers) |
 | Tokenizer | schema-1 de bytes propio de OpenWALDO; requiere `trust_remote_code=True` |
 | Archivos auxiliares | `BOM.json` (inventario de release), `EU-BOM.json` (mapeo de divulgacion de contenido de entrenamiento GPAI) |
@@ -92,7 +92,7 @@ No hay benchmarks comparables publicados para el modelo objeto de esta ficha, po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0012-u2-mdagosta-b
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0012-u2-mdagosta-b
 - `BOM.json` (inventario de ficheros de release): referenciado en la model card, dentro del repositorio
 - `EU-BOM.json` (mapeo de divulgacion de contenido de entrenamiento GPAI): referenciado en la model card, dentro del repositorio
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada

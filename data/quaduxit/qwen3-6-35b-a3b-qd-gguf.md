@@ -82,7 +82,7 @@ En la mayoría de los rangos Q3-Q4, QD supera a unsloth en KLD, mientras que en 
 - El modelo base tiene una licencia Apache-2.0, permisiva para uso comercial, pero la cuantización QD es un trabajo derivado; se recomienda revisar las condiciones de unsloth sobre el uso de su imatrix, aunque se distribuye también bajo Apache-2.0.
 
 ## Enlaces
-- Repositorio de HuggingFace: https://huggingface.co/QuaduxIT/Qwen3.6-35B-A3B-QD-GGUF
+- Repositorio de Hugging Face: https://huggingface.co/QuaduxIT/Qwen3.6-35B-A3B-QD-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Comparativa unsloth (archivos recomendados en rangos Q5/Q6): https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF
 - Guía de despliegue local (llama.cpp, VRAM y API): https://knightli.com/en/2026/05/24/qwen36-35b-a3b-local-deployment-llamacpp-gguf/

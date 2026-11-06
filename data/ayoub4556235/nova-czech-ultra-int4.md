@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nova-Czech-Ultra-INT4 es un repositorio publicado en HuggingFace por el usuario ayoub4556235. El repositorio ocupa 7,5 GB, fue creado el 22 de septiembre de 2026 y actualizado el 23 de septiembre de 2026. Acumula 10 descargas y 0 likes. La unica informacion estructurada disponible son sus tags: `onnx`, `qwen3_asr` y `region:us`. No se ha publicado model card, pipeline declarado, licencia ni lista de idiomas.
+Nova-Czech-Ultra-INT4 es un repositorio publicado en Hugging Face por el usuario ayoub4556235. El repositorio ocupa 7,5 GB, fue creado el 22 de septiembre de 2026 y actualizado el 23 de septiembre de 2026. Acumula 10 descargas y 0 likes. La unica informacion estructurada disponible son sus tags: `onnx`, `qwen3_asr` y `region:us`. No se ha publicado model card, pipeline declarado, licencia ni lista de idiomas.
 
 El nombre del repositorio indica dos cosas: "Czech" apunta a un modelo orientado al idioma checo, y "INT4" indica una cuantizacion a 4 bits. El tag `qwen3_asr` sugiere que la base es un modelo de reconocimiento automatico del habla (ASR) de la familia Qwen3, y el tag `onnx` que los pesos estan en formato ONNX. Ninguna de estas inferencias esta confirmada por documentacion del autor, por lo que deben tratarse como hipotesis de trabajo.
 
@@ -21,7 +21,7 @@ La relevancia de este tipo de publicaciones es doble: por un lado, la combinacio
 | Licencia | no disponible |
 | Formato de pesos | ONNX (tag `onnx`) |
 | Autor | ayoub4556235 |
-| ID en HuggingFace | ayoub4556235/Nova-Czech-Ultra-INT4 |
+| ID en Hugging Face | ayoub4556235/Nova-Czech-Ultra-INT4 |
 | Tamano del repositorio | 7,5 GB |
 | Descargas | 10 |
 | Likes | 0 |
@@ -79,7 +79,7 @@ No es posible establecer una comparativa fiable. Se desconoce el numero de param
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nova-Czech-Ultra-INT4 | no disponible | no disponible | no publicado | no disponible | HuggingFace, 10 descargas |
+| Nova-Czech-Ultra-INT4 | no disponible | no disponible | no publicado | no disponible | Hugging Face, 10 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No es posible establecer una comparativa fiable. Se desconoce el numero de param
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ayoub4556235/Nova-Czech-Ultra-INT4
+- Hugging Face: https://huggingface.co/ayoub4556235/Nova-Czech-Ultra-INT4
 - Busqueda web: no se han encontrado resultados relevantes sobre este modelo. Los enlaces devueltos por el buscador corresponden a repositorios de modelos de imagen (Civitai, Tensor.Art, TensorHub Art, CivArchive) y a un listado sin relacion con el artefacto, por lo que se omiten.
 - Paper, blog o repositorio asociado: no disponible.
 - Demo o espacio de inferencia: no disponible.

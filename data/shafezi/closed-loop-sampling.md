@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Closed-Loop Adaptive Sampling (este) | Autoencoder + difusión latente EDM | 256 M + 375 M por región | MAB y CCS (regional) | MIT | Pesos en HuggingFace |
+| Closed-Loop Adaptive Sampling (este) | Autoencoder + difusión latente EDM | 256 M + 375 M por región | MAB y CCS (regional) | MIT | Pesos en Hugging Face |
 | LaDCast (Zhuang y Duraisamy, 2025) | Difusión latente para forecasting meteorológico | no disponible | Global atmosférico | Código dual Apache-2.0/MIT | Código en GitHub |
 | Reanálisis Doppio | Asimilación variacional (referencia) | no aplica | MAB | no disponible | Distribuido por Rutgers/NOAA |
 | Reanálisis CCSRA31 | Asimilación (referencia) | no aplica | CCS | no disponible | Distribuido por UC Santa Cruz |
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento predic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shafezi/closed-loop-sampling
+- Hugging Face: https://huggingface.co/shafezi/closed-loop-sampling
 - LaDCast (arquitectura de referencia): https://github.com/tonyzyl/ladcast
 - LaDCast, preprint: https://arxiv.org/abs/2506.09193
 - Doppio reanalysis: Wilkin et al., 2022, Progress in Oceanography 209:102919 (distribuido por Rutgers University y NOAA Open Data Dissemination)

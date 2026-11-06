@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BUD-E_V1_1_Qwen3-Embedding-4B_1n_smoke es un checkpoint publicado por el usuario VoiceNetCkpt en HuggingFace. Segun la propia model card, se trata de un directorio de ejecucion de entrenamiento ("training-run directory") perteneciente a los experimentos VoiceCLAP, con 24 archivos y un tamano de repositorio de 101,1 GB. El autor mantiene ademas un indice de todas las ejecuciones en el repositorio VoiceNetCkpt/voiceclap-checkpoints-index.
+BUD-E_V1_1_Qwen3-Embedding-4B_1n_smoke es un checkpoint publicado por el usuario VoiceNetCkpt en Hugging Face. Segun la propia model card, se trata de un directorio de ejecucion de entrenamiento ("training-run directory") perteneciente a los experimentos VoiceCLAP, con 24 archivos y un tamano de repositorio de 101,1 GB. El autor mantiene ademas un indice de todas las ejecuciones en el repositorio VoiceNetCkpt/voiceclap-checkpoints-index.
 
 El nombre del repositorio sugiere, sin que la informacion disponible lo confirme, una construccion sobre un backbone de embeddings de tipo Qwen3-Embedding-4B y una ejecucion de tipo "smoke test" con configuracion etiquetada como "1n". No obstante, la model card no aporta detalles sobre arquitectura, datos de entrenamiento, objetivo, licencia ni idiomas, por lo que estos extremos deben considerarse no disponibles a falta de documentacion adicional.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BUD-E_V1_1_Qwen3-Embedding-4B_1n_smoke | no disponible | no disponible | no disponible | HuggingFace (autor VoiceNetCkpt) |
+| BUD-E_V1_1_Qwen3-Embedding-4B_1n_smoke | no disponible | no disponible | no disponible | Hugging Face (autor VoiceNetCkpt) |
 | Qwen3-Embedding-4B | no confirmado | no disponible | no disponible | no disponible |
 | Alternativas de embeddings de audio | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,6 +83,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/BUD-E_V1_1_Qwen3-Embedding-4B_1n_smoke
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/BUD-E_V1_1_Qwen3-Embedding-4B_1n_smoke
 - Indice de checkpoints VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Perfil del autor: https://huggingface.co/VoiceNetCkpt

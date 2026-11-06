@@ -87,7 +87,7 @@ La principal diferencia es que PAW usa un formato propietario que limita su port
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lackonendes/PAW-35B-A3B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/lackonendes/PAW-35B-A3B-GGUF
 - Fork llama-paw (referenciado en la model card, sin URL concreta): https://github.com/
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Guia de instalacion con LM Studio (referencia externa): https://smarterehab.blog/2026/06/29/install-qwen3-6-35b-a3b-gguf-locally-via-lm-studio-step-by-step/

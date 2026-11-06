@@ -86,10 +86,10 @@ No se dispone de información sobre otros adaptadores LoRA similares para Inklin
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/deburky/inkling-small-claude-code
+- Adaptador en Hugging Face: https://huggingface.co/deburky/inkling-small-claude-code
 - Modelo base Inkling-Small: https://huggingface.co/thinkingmachines/Inkling-Small
 - Dataset fuente: https://huggingface.co/datasets/deburky/gpt-oss-claude-code
 - Blog de Thinking Machines sobre Inkling-Small: https://thinkingmachines.ai/news/inkling-small/
 - Model card de Inkling-Small: https://thinkingmachines.ai/model-card/inkling-small/
-- Blog de HuggingFace sobre Inkling: https://huggingface.co/blog/thinkingmachines-inkling
+- Blog de Hugging Face sobre Inkling: https://huggingface.co/blog/thinkingmachines-inkling
 - Artículo sobre uso de Inkling Small en Claude Code vía AI Gateway: https://gentic.news/article/use-inkling-small-on-claude-code

@@ -6,7 +6,7 @@ LocalAlign_qwen3_4B es un adaptador PEFT/LoRA publicado por Yuyang Gong, junto a
 
 El problema que aborda es el prompt injection indirecto: ataques en los que un texto externo introduce órdenes maliciosas que el modelo interpreta como instrucciones legítimas. La defensa se aprende durante el fine-tuning, de modo que en inferencia no se necesita un detector de ataques adicional ni una llamada separada a un modelo de defensa. El método se describe en el artículo LocalAlign (arXiv:2605.01462) y consta de tres etapas: calentamiento, generación de ejemplos adversarios cercanos al objetivo y Margin-Aware Alignment.
 
-El repositorio ocupa 0,1 GB e incluye el adaptador LoRA junto con un tokenizer propio que incorpora un rol `input` para separar instrucción fiable y contenido no fiable. La licencia declarada es Apache 2.0. El modelo se publicó en septiembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni valoraciones positivas en HuggingFace.
+El repositorio ocupa 0,1 GB e incluye el adaptador LoRA junto con un tokenizer propio que incorpora un rol `input` para separar instrucción fiable y contenido no fiable. La licencia declarada es Apache 2.0. El modelo se publicó en septiembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni valoraciones positivas en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -113,12 +113,12 @@ Frente al modelo base sin defensa, LocalAlign reduce el ASR en todos los conjunt
 - Riesgo de alucinación: no evaluado en la información proporcionada, más allá de las métricas de utilidad.
 - La defensa es puramente aprendida durante el fine-tuning; no incorpora un detector de ataques en inferencia, por lo que la robustez depende por completo de la generalización del ajuste.
 - Licencia Apache 2.0 para el adaptador, lo que permite uso comercial, pero conviene verificar la licencia y las condiciones del modelo base Qwen3-4B-Instruct-2507 antes de desplegarlo en producción.
-- Tracción comunitaria mínima: 0 descargas y 0 valoraciones positivas en HuggingFace, con un tamaño de repositorio de 0,1 GB, lo que implica poca validación externa independiente.
+- Tracción comunitaria mínima: 0 descargas y 0 valoraciones positivas en Hugging Face, con un tamaño de repositorio de 0,1 GB, lo que implica poca validación externa independiente.
 - No se documentan en la model card los hiperparámetros exactos del LoRA, el volumen de datos de entrenamiento ni el protocolo de evaluación completo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuyangGong/LocalAlign_qwen3_4B
+- Repositorio Hugging Face: https://huggingface.co/yuyangGong/LocalAlign_qwen3_4B
 - Artículo LocalAlign: https://arxiv.org/abs/2605.01462
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Búsqueda web: no se han encontrado enlaces adicionales relevantes. Los resultados devueltos corresponden a consultas sin relación con el modelo (mapas y datos inmobiliarios de Fort-de-France y Schœlcher), por lo que se descartan como fuentes.

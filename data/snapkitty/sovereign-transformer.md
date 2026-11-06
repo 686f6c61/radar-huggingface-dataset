@@ -73,4 +73,4 @@ No disponible. No se han identificado sistemas equivalentes en la información p
 
 ## Enlaces
 
-- [HuggingFace: Snapkitty/sovereign-transformer](https://huggingface.co/Snapkitty/sovereign-transformer)
+- [Hugging Face: Snapkitty/sovereign-transformer](https://huggingface.co/Snapkitty/sovereign-transformer)

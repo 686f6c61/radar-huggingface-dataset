@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario LayerFault, no es un modelo de inteligencia artificial usable, sino un artefacto sintético del corpus de pruebas de seguridad Layerfault. Su identificador de corpus es `LF-CH-SER-0003` y está diseñado específicamente para ejercitar reglas de detección de escáneres de seguridad de modelos, como la regla `LF-PICKLE-PERSISTENT-ID`. El artefacto contiene características adversarias deliberadas, como opcodes de pickle sospechosos, contrabando de formatos ejecutables y cadenas de inyección de prompt, todo ello con el fin de evaluar la robustez de las herramientas de análisis estático.
+Este repositorio de Hugging Face, publicado por el usuario LayerFault, no es un modelo de inteligencia artificial usable, sino un artefacto sintético del corpus de pruebas de seguridad Layerfault. Su identificador de corpus es `LF-CH-SER-0003` y está diseñado específicamente para ejercitar reglas de detección de escáneres de seguridad de modelos, como la regla `LF-PICKLE-PERSISTENT-ID`. El artefacto contiene características adversarias deliberadas, como opcodes de pickle sospechosos, contrabando de formatos ejecutables y cadenas de inyección de prompt, todo ello con el fin de evaluar la robustez de las herramientas de análisis estático.
 
-El propósito principal es servir como caso de prueba positivo para sistemas de detección de amenazas en el ecosistema de modelos de IA. No debe interpretarse como un modelo de aprendizaje automático con capacidades de generación, razonamiento o codificación. La propia model card lo declara explícitamente como un "artefacto de prueba de seguridad" y advierte que no debe cargarse ni ejecutarse fuera de un entorno aislado de pruebas de escáner. Su relevancia radica en la creciente preocupación por la seguridad de la cadena de suministro de IA, donde el deserializado inseguro de archivos pickle puede provocar ejecución remota de código (RCE) al cargar modelos desde hubs como HuggingFace.
+El propósito principal es servir como caso de prueba positivo para sistemas de detección de amenazas en el ecosistema de modelos de IA. No debe interpretarse como un modelo de aprendizaje automático con capacidades de generación, razonamiento o codificación. La propia model card lo declara explícitamente como un "artefacto de prueba de seguridad" y advierte que no debe cargarse ni ejecutarse fuera de un entorno aislado de pruebas de escáner. Su relevancia radica en la creciente preocupación por la seguridad de la cadena de suministro de IA, donde el deserializado inseguro de archivos pickle puede provocar ejecución remota de código (RCE) al cargar modelos desde hubs como Hugging Face.
 
 El repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, y fue creado el 21 de agosto de 2026. La licencia es Apache-2.0 y el acceso está restringido mediante una puerta de entrada que requiere que el usuario acepte explícitamente que entiende que es un artefacto de prueba, no pesos de modelo de producción.
 
@@ -70,7 +70,7 @@ No disponible. No existe una categoría de modelos comparables, ya que no es un 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/LayerFault/serialization-pickle-persistent-id
+- Repositorio de Hugging Face: https://huggingface.co/LayerFault/serialization-pickle-persistent-id
 - Blog sobre pickle deserialization RCE en modelos de IA: https://www.egnworks.com/blog/pickle-deserialization-rce-how-a-malicious-ai-model-runs-code-the-moment-you-load-it
 - PickleBall: Secure Deserialization of Pickle-based ML Models (artículo): https://arxiv.org/html/2508.15987v1
 - Resumen del blog de PickleBall: https://davisjam.medium.com/pickleball-secure-deserialization-of-pickle-based-machine-learning-models-a089113e6b0f

@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sam-guided-vlas/train_1_2_pile_random_pose__mask__overlay_a50__sim__all_cameras__live__pi05__seed_0 | 4.143.404.816 | No disponible | Apache 2.0 | HuggingFace |
-| sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras__live__pi05__seed_0 | No disponible | No disponible | Apache 2.0 | HuggingFace |
-| lerobot/pi05_base | No disponible | No disponible | No disponible | HuggingFace |
+| sam-guided-vlas/train_1_2_pile_random_pose__mask__overlay_a50__sim__all_cameras__live__pi05__seed_0 | 4.143.404.816 | No disponible | Apache 2.0 | Hugging Face |
+| sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras__live__pi05__seed_0 | No disponible | No disponible | Apache 2.0 | Hugging Face |
+| lerobot/pi05_base | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__mask__overlay_a50__sim__all_cameras__live__pi05__seed_0
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__mask__overlay_a50__sim__all_cameras__live__pi05__seed_0
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_pile_random_pose__mask__overlay_a50__sim__all_cameras__live
 - Blog de Physical Intelligence sobre π₀.₅: https://www.physicalintelligence.company/blog/pi05
 - Documentación de LeRobot para pi05: https://huggingface.co/docs/lerobot/main/en/pi05
-- Perfil de sam-guided-vlas en HuggingFace: https://huggingface.co/sam-guided-vlas
+- Perfil de sam-guided-vlas en Hugging Face: https://huggingface.co/sam-guided-vlas
 - Modelo similar de sam-guided-vlas: https://huggingface.co/sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras__live__pi05__seed_0

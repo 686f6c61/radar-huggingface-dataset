@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SAPI-5.1-Large-Omni es un modelo multimodal de gran escala desarrollado por Sapiens Technology, publicado en HuggingFace bajo el identificador `schatmodels/s5.1lo`. Según la model card del autor, se trata de un sistema de 55 mil millones de parámetros totales que opera con 32 mil millones de parámetros activos gracias a una arquitectura de mezcla de expertos (MoE). El modelo está diseñado para interpretar y generar contenido en múltiples modalidades: texto, imagen, audio, vídeo y documentos, además de ofrecer búsqueda web en tiempo real y una ventana de contexto declarada como infinita.
+SAPI-5.1-Large-Omni es un modelo multimodal de gran escala desarrollado por Sapiens Technology, publicado en Hugging Face bajo el identificador `schatmodels/s5.1lo`. Según la model card del autor, se trata de un sistema de 55 mil millones de parámetros totales que opera con 32 mil millones de parámetros activos gracias a una arquitectura de mezcla de expertos (MoE). El modelo está diseñado para interpretar y generar contenido en múltiples modalidades: texto, imagen, audio, vídeo y documentos, además de ofrecer búsqueda web en tiempo real y una ventana de contexto declarada como infinita.
 
 La relevancia de este modelo radica en su enfoque omni-modal, que unifica capacidades de comprensión y generación en un solo sistema, algo poco común en el ecosistema de modelos abiertos. Sin embargo, la información pública disponible es muy limitada: no se especifican detalles de arquitectura interna, datos de entrenamiento, benchmarks ni requisitos de hardware. La licencia es propietaria, lo que restringe su uso y distribución. A pesar de su tamaño de repositorio de 124.8 GB, no se han publicado resultados de evaluación independientes, por lo que su rendimiento real no puede verificarse a partir de los datos disponibles.
 
@@ -77,6 +77,6 @@ No se dispone de datos comparativos publicados. El modelo se posiciona como un s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/schatmodels/s5.1lo
+- Hugging Face: https://huggingface.co/schatmodels/s5.1lo
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

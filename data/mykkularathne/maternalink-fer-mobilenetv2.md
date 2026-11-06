@@ -87,7 +87,7 @@ No se dispone de informacion comparativa con otros modelos de reconocimiento de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mykkularathne/maternalink-fer-mobilenetv2
+- Modelo en Hugging Face: https://huggingface.co/mykkularathne/maternalink-fer-mobilenetv2
 - Documentacion de MobileNetV2 (Wikipedia): https://en.wikipedia.org/wiki/MobileNet
 - MobileNetV2 en PyTorch Hub: https://pytorch.org/hub/pytorch_vision_mobilenet_v2/
 - Articulo sobre MobileNetV2 (GeeksforGeeks): https://www.geeksforgeeks.org/computer-vision/what-is-mobilenet-v2/

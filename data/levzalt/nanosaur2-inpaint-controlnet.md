@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanosaur2-Inpaint-ControlNet (este adaptador) | 8.898.496 en el adaptador; base de 670 M | Trabajo por defecto a 896x1152, multiplos de 16 | Sin benchmarks publicados; seleccion por preferencia visual | MIT | HuggingFace, requiere los pesos base de Nanosaur2-670M y una version reciente de ComfyUI |
-| Nanosaur2-670M (modelo base, well9472) | 670 M segun su denominacion | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace; sus tres archivos safetensors son requisito de este adaptador |
+| Nanosaur2-Inpaint-ControlNet (este adaptador) | 8.898.496 en el adaptador; base de 670 M | Trabajo por defecto a 896x1152, multiplos de 16 | Sin benchmarks publicados; seleccion por preferencia visual | MIT | Hugging Face, requiere los pesos base de Nanosaur2-670M y una version reciente de ComfyUI |
+| Nanosaur2-670M (modelo base, well9472) | 670 M segun su denominacion | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face; sus tres archivos safetensors son requisito de este adaptador |
 | Adaptadores LLLite para Anima o SDXL | No disponible | No disponible | No disponible | No disponible | Existen, pero el autor indica que este adaptador no es compatible a nivel de pesos ni cargable con sus nodos de aplicacion |
 
 No se dispone de datos comparativos de rendimiento, contexto o licencia de alternativas equivalentes en la informacion proporcionada, por lo que la comparacion numerica queda marcada como no disponible.
@@ -92,7 +92,7 @@ No se dispone de datos comparativos de rendimiento, contexto o licencia de alter
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/levzalt/Nanosaur2-Inpaint-ControlNet
+- Pagina del modelo en Hugging Face: https://huggingface.co/levzalt/Nanosaur2-Inpaint-ControlNet
 - Modelo base Nanosaur2-670M: https://huggingface.co/well9472/Nanosaur2-670M
 - Pesos del adaptador: https://huggingface.co/levzalt/Nanosaur2-Inpaint-ControlNet/blob/main/nanosaur2_inpaint_step1000.safetensors
 - Flujo de trabajo para la interfaz de ComfyUI: https://huggingface.co/levzalt/Nanosaur2-Inpaint-ControlNet/blob/main/nanosaur2_inpaint_workflow.json

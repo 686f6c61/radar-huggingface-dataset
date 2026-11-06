@@ -92,7 +92,7 @@ Diferencias clave frente al upstream: la version de 6 bits reduce el tamano de 9
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ddalcu/MiMo-V2.6-Distill-Qwen-9B-MLX-Serve-6bit
+- Repositorio en Hugging Face: https://huggingface.co/ddalcu/MiMo-V2.6-Distill-Qwen-9B-MLX-Serve-6bit
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Motor de inferencia mlx-serve: https://github.com/ddalcu/mlx-serve
 - Paper o blog del modelo original: no disponible en la informacion proporcionada.

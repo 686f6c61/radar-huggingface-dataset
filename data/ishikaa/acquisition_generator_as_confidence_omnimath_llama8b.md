@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ishikaa/acquisition_generator_AS_confidence_omnimath_llama8b es un checkpoint de 8.030.261.248 parametros publicado en HuggingFace por el usuario ishikaa, etiquetado como modelo de generacion de texto de la familia Llama y compatible con la libreria transformers. El repositorio no incluye model card real: el README es la plantilla autogenerada por HuggingFace, con todos los campos marcados como "[More Information Needed]", por lo que no hay informacion verificada sobre el proceso de entrenamiento, los datos utilizados ni los objetivos del ajuste. El identificador sugiere un ajuste orientado a la generacion de funciones de adquisicion con puntuaciones de confianza sobre datos de tipo matematico (Omni-MATH) partiendo de una base Llama de 8B, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
+ishikaa/acquisition_generator_AS_confidence_omnimath_llama8b es un checkpoint de 8.030.261.248 parametros publicado en Hugging Face por el usuario ishikaa, etiquetado como modelo de generacion de texto de la familia Llama y compatible con la libreria transformers. El repositorio no incluye model card real: el README es la plantilla autogenerada por Hugging Face, con todos los campos marcados como "[More Information Needed]", por lo que no hay informacion verificada sobre el proceso de entrenamiento, los datos utilizados ni los objetivos del ajuste. El identificador sugiere un ajuste orientado a la generacion de funciones de adquisicion con puntuaciones de confianza sobre datos de tipo matematico (Omni-MATH) partiendo de una base Llama de 8B, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
 
 El modelo suma 0 descargas y 0 "likes" en el momento de la consulta, y su fecha de creacion figura como 2026-09-11. El peso del repositorio (32,1 GB) es coherente con un checkpoint almacenado en precision completa (fp32) para ese numero de parametros, aunque no se publica informacion sobre cuantizaciones alternativas, longitud de contexto ni idiomas soportados.
 
@@ -90,7 +90,7 @@ La comparacion no implica equivalencia de calidad: los datos de los modelos de r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_omnimath_llama8b
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_omnimath_llama8b
 - arXiv referenciado en la plantilla (Lacoste et al., 2019, estimacion de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML citada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo. La busqueda web realizada devolvio exclusivamente resultados no relacionados (sitios de teclados en arabe), por lo que no se incluyen como fuentes.

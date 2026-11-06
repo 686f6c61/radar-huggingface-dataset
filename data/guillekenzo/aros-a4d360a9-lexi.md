@@ -84,7 +84,7 @@ No se dispone de información sobre adaptadores equivalentes de otros autores pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guillekenzo/aros-a4d360a9-Lexi
+- Modelo en Hugging Face: https://huggingface.co/guillekenzo/aros-a4d360a9-Lexi
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Perfil del autor: https://huggingface.co/guillekenzo
 - Otro LoRA del mismo autor: https://huggingface.co/guillekenzo/aros-0ae4f6a7-VividVertex

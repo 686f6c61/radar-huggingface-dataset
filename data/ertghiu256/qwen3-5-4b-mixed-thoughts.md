@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ertghiu256/qwen3.5-4b-mixed-thoughts es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-4B publicado por el usuario ertghiu256 en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto, con 4.659.865.088 parametros totales (aproximadamente 4,66 B) en formato safetensors. El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace sobre el dataset ertghiu256/Mini-Mixed-Thoughts, cuyo nombre sugiere trazas de razonamiento mixtas, aunque la model card no detalla la composicion del dataset.
+ertghiu256/qwen3.5-4b-mixed-thoughts es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-4B publicado por el usuario ertghiu256 en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto, con 4.659.865.088 parametros totales (aproximadamente 4,66 B) en formato safetensors. El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face sobre el dataset ertghiu256/Mini-Mixed-Thoughts, cuyo nombre sugiere trazas de razonamiento mixtas, aunque la model card no detalla la composicion del dataset.
 
 El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales conocidas, y esta etiquetado unicamente para el idioma ingles. Su relevancia practica es limitada por el momento: acumula 19 descargas y 0 likes, y la model card no documenta el numero de tokens de entrenamiento, la longitud de contexto, los hiperparametros del entrenamiento ni resultados de evaluacion. Esto lo convierte en un artefacto interesante para experimentacion y para estudiar ajustes sobre la familia Qwen3.5, pero no en una opcion convalidada para produccion.
 
@@ -75,7 +75,7 @@ Las cifras de VRAM que se indican a continuacion son estimaciones derivadas del 
 - GPU de consumo: cabe en RTX 4090 (24 GB) y RTX 3090 (24 GB) en bf16 y en cuantizaciones menores; en RTX 4080/4070 Ti (16 GB) y RTX 4060 Ti (16 GB) es recomendable 8 o 4 bits; en GPU de 8-12 GB solo es viable en 4 bits.
 - Opciones de despliegue: la libreria declarada es transformers y el repositorio incluye el tag text-generation-inference, por lo que TGI es el servidor mas directamente indicado. vLLM, SGLang y Ollama no estan confirmados para este modelo; al no publicarse pesos GGUF, llama.cpp y Ollama requeririan una conversion previa por parte del usuario.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo, TTFT ni latencia de procesamiento de imagen.
-- Compatibilidad con endpoints: el repositorio incluye el tag endpoints_compatible, lo que sugiere despliegue en Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: el repositorio incluye el tag endpoints_compatible, lo que sugiere despliegue en Inference Endpoints de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -83,8 +83,8 @@ No se dispone de datos verificables de alternativas comparables dentro de la inf
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| ertghiu256/qwen3.5-4b-mixed-thoughts | 4,66 B | no disponible | apache-2.0 | HuggingFace (19 descargas) | no disponible |
-| Qwen/Qwen3.5-4B (modelo base) | no disponible | no disponible | no disponible | HuggingFace (referenciado) | no disponible |
+| ertghiu256/qwen3.5-4b-mixed-thoughts | 4,66 B | no disponible | apache-2.0 | Hugging Face (19 descargas) | no disponible |
+| Qwen/Qwen3.5-4B (modelo base) | no disponible | no disponible | no disponible | Hugging Face (referenciado) | no disponible |
 | Alternativas multimodales de ~4 B en ingles | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La ausencia de benchmarks y de especificaciones del modelo base impide establecer una comparacion tecnica rigurosa con otras alternativas de la misma categoria.
@@ -105,9 +105,9 @@ La ausencia de benchmarks y de especificaciones del modelo base impide establece
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/ertghiu256/qwen3.5-4b-mixed-thoughts
+- Pagina del modelo en Hugging Face: https://huggingface.co/ertghiu256/qwen3.5-4b-mixed-thoughts
 - Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B (referenciado en la model card)
 - Dataset de entrenamiento ertghiu256/Mini-Mixed-Thoughts: https://huggingface.co/datasets/ertghiu256/Mini-Mixed-Thoughts (referenciado en la model card)
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl (mencionada indirectamente como libreria de entrenamiento)
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl (mencionada indirectamente como libreria de entrenamiento)
 - Paper, blog tecnico, demo o informe de benchmarks del modelo: no disponible. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo o su modelo base.

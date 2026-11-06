@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Con 33.088 parámetros, el peso del modelo ocupa aproximadamente 132 KB en FP32, por lo que puede cargarse en cualquier dispositivo, incluida una CPU.
 - No se requiere GPU dedicada para la inferencia básica; cualquier CPU moderna es suficiente.
 - Para entrenamiento, una GPU con al menos 4 GB de VRAM sería suficiente para la configuración *nano*, aunque no se han publicado mediciones de consumo.
-- El despliegue debe realizarse mediante PyTorch directamente, ya que al ser una implementación personalizada, las APIs de carga automática (como `from_pretrained` de HuggingFace) requieren un adaptador explícito.
+- El despliegue debe realizarse mediante PyTorch directamente, ya que al ser una implementación personalizada, las APIs de carga automática (como `from_pretrained` de Hugging Face) requieren un adaptador explícito.
 - No es compatible con vLLM, llama.cpp, Ollama o TGI, al no tratarse de un modelo de lenguaje.
 - Latencia y throughput: no disponibles.
 
@@ -64,13 +64,13 @@ No disponible. No se han encontrado modelos comparables con datos de rendimiento
 - El checkpoint incluido es de **inicialización**, no un modelo entrenado: no debe utilizarse para tareas reales de matching sin un proceso de entrenamiento previo.
 - No ha sido auditado en cuanto a robustez, equidad ni transferencia de dominio.
 - No se dispone de resultados de benchmarks, por lo que no hay evidencia de su rendimiento en ninguna tarea concreta.
-- La implementación es personalizada y requiere un adaptador explícito para ser cargada con APIs genéricas de HuggingFace.
+- La implementación es personalizada y requiere un adaptador explícito para ser cargada con APIs genéricas de Hugging Face.
 - Al ser un modelo de visión, no tiene soporte de idiomas ni de texto; cualquier uso en procesamiento de lenguaje natural queda fuera de su ámbito.
 - La licencia MIT permite uso comercial, pero deben revisarse los términos de las fuentes de datos externas si se emplean con este repositorio.
 - El riesgo de alucinación no aplica, al no ser un modelo de lenguaje generativo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/philippschulz/quick-matching](https://huggingface.co/philippschulz/quick-matching)
+- Repositorio en Hugging Face: [https://huggingface.co/philippschulz/quick-matching](https://huggingface.co/philippschulz/quick-matching)
 - Otro repositorio del autor: [https://huggingface.co/philippschulz/cs224n-neural-architecture-search](https://huggingface.co/philippschulz/cs224n-neural-architecture-search)
 - Perfil del autor en CSAuthors: [https://www.csauthors.net/philipp-schulz/](https://www.csauthors.net/philipp-schulz/)

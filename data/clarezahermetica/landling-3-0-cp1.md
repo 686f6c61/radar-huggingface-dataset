@@ -81,10 +81,10 @@ El autor indica expresamente que se trata de una evaluación cualitativa de desa
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| landling-3.0-cp1 (este) | Adaptador LoRA sobre base de ~3,09B | No especificado (base: 32.768 tokens) | safetensors (PEFT) | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-3B-Instruct | ~3,09B | 32.768 tokens, ampliable a 131.072 con YaRN | safetensors, GPTQ, AWQ, GGUF | Apache 2.0 (segun la ficha del modelo base) | HuggingFace, ampliamente desplegado |
-| meta-llama/Llama-3.2-3B-Instruct | ~3,2B | 131.072 tokens | safetensors, GGUF | Licencia comunitaria de Llama 3.2 | HuggingFace |
-| microsoft/Phi-3.5-mini-instruct | ~3,8B | 131.072 tokens | safetensors, GGUF | MIT | HuggingFace |
+| landling-3.0-cp1 (este) | Adaptador LoRA sobre base de ~3,09B | No especificado (base: 32.768 tokens) | safetensors (PEFT) | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-3B-Instruct | ~3,09B | 32.768 tokens, ampliable a 131.072 con YaRN | safetensors, GPTQ, AWQ, GGUF | Apache 2.0 (segun la ficha del modelo base) | Hugging Face, ampliamente desplegado |
+| meta-llama/Llama-3.2-3B-Instruct | ~3,2B | 131.072 tokens | safetensors, GGUF | Licencia comunitaria de Llama 3.2 | Hugging Face |
+| microsoft/Phi-3.5-mini-instruct | ~3,8B | 131.072 tokens | safetensors, GGUF | MIT | Hugging Face |
 
 La comparación directa de rendimiento con estas alternativas no es posible: no hay benchmarks publicados para el adaptador y su evaluación se limita a una comparación interna de 24 casos. Además, este repositorio no distribuye pesos completos, por lo que no es un sustituto autónomo de los modelos de la tabla.
 
@@ -103,7 +103,7 @@ La comparación directa de rendimiento con estas alternativas no es posible: no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/clarezahermetica/landling-3.0-cp1
+- Modelo en Hugging Face: https://huggingface.co/clarezahermetica/landling-3.0-cp1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de recuperación Raft: https://github.com/lumpenspace/raft
 - Repositorio de flujo de entrenamiento y ejecución remota OPBDH: https://github.com/lumpenspace/opbdh

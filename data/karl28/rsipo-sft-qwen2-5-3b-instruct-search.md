@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RSIPO-SFT-Qwen2.5-3B-Instruct-Search es un ajuste fino (SFT) del modelo Qwen2.5-3B-Instruct de Alibaba, publicado por el usuario Karl28 en HuggingFace. Se trata del checkpoint exacto de la etapa 1 (Stage-1 SFT) empleado para inicializar un entrenamiento de aprendizaje por refuerzo RSIPO (*Recursive Self-Improving Policy Optimization*) orientado a tareas de pregunta-respuesta con búsqueda (search-based QA). No es, por tanto, una política final de RSIPO, sino el punto de partida de ese proceso de RL de 150 pasos.
+RSIPO-SFT-Qwen2.5-3B-Instruct-Search es un ajuste fino (SFT) del modelo Qwen2.5-3B-Instruct de Alibaba, publicado por el usuario Karl28 en Hugging Face. Se trata del checkpoint exacto de la etapa 1 (Stage-1 SFT) empleado para inicializar un entrenamiento de aprendizaje por refuerzo RSIPO (*Recursive Self-Improving Policy Optimization*) orientado a tareas de pregunta-respuesta con búsqueda (search-based QA). No es, por tanto, una política final de RSIPO, sino el punto de partida de ese proceso de RL de 150 pasos.
 
 Su relevancia radica en el marco RSIPO, descrito en el paper de arXiv 2610.15772, que propone la co-evolución de política y habilidades (*skill-policy co-evolution*) para aprendizaje agéntico por refuerzo: el modelo base genera trayectorias sobre tareas de entrenamiento, un modelo más grande (GLM-5.2) redacta resúmenes de episodio y habilidades reutilizables, y el modelo pequeño se ajusta para producir esos análisis. Es un artefacto dirigido principalmente a investigadores que quieran reproducir o extender el pipeline RSIPO, con arquitectura transformer basada en Qwen2.5 y unos 3.400 millones de parámetros.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: los safetensors del repositorio estan en FP32, lo que implica unos 13,6 GB de pesos (coincide con el tamano del repo); en FP32 se recomiendan al menos 16-20 GB de VRAM. En bfloat16 (configuracion usada por los launchers de RSIPO), unos 7 GB, mas espacio para contexto y KV cache.
 - GPU recomendadas: una RTX 4090 (24 GB) o A100/RTX 3090 son suficientes para inferencia en bfloat16; para FP32 o entrenamiento RL, A100 u H100.
 - Consumer GPUs: cabe comodamente en una RTX 3090 o RTX 4090 en bfloat16; en FP32 requiere GPUs de gama alta con 24 GB o mas.
-- Despliegue: compatible con la libreria `transformers` de HuggingFace (etiquetas `text-generation-inference` y `endpoints_compatible`); el uso documentado es la descarga con `hf download` y ejecucion mediante los scripts de RSIPO. No se menciona soporte explicito de vLLM, llama.cpp, Ollama o TGI.
+- Despliegue: compatible con la libreria `transformers` de Hugging Face (etiquetas `text-generation-inference` y `endpoints_compatible`); el uso documentado es la descarga con `hf download` y ejecucion mediante los scripts de RSIPO. No se menciona soporte explicito de vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La diferencia clave frente al modelo base Qwen2.5-3B-Instruct es la especializac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Karl28/RSIPO-SFT-Qwen2.5-3B-Instruct-Search
+- Modelo en Hugging Face: https://huggingface.co/Karl28/RSIPO-SFT-Qwen2.5-3B-Instruct-Search
 - Paper RSIPO (arXiv): https://arxiv.org/abs/2610.15772
 - Codigo (GitHub): https://github.com/zfkarl/RSIPO
 - Dataset Stage-1: https://huggingface.co/datasets/Karl28/RSIPO-SFT-Data

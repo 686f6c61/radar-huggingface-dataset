@@ -2,9 +2,9 @@
 
 ## Resumen
 
-BLU-135M es un modelo de lenguaje de tipo base, desarrollado por BluBridgeAI, con 135 millones de parametros y orientado a generacion de texto en ingles. Se distribuye a traves de HuggingFace bajo la libreria transformers y en formato safetensors, con un tamano de repositorio de 1,6 GB. Su identificador incluye las etiquetas "small-language-model" y "base-model", lo que indica que no ha pasado por un proceso de ajuste fino supervisado ni de alineacion con preferencias humanas, sino que se trata de un modelo preentrenado para continuar texto.
+BLU-135M es un modelo de lenguaje de tipo base, desarrollado por BluBridgeAI, con 135 millones de parametros y orientado a generacion de texto en ingles. Se distribuye a traves de Hugging Face bajo la libreria transformers y en formato safetensors, con un tamano de repositorio de 1,6 GB. Su identificador incluye las etiquetas "small-language-model" y "base-model", lo que indica que no ha pasado por un proceso de ajuste fino supervisado ni de alineacion con preferencias humanas, sino que se trata de un modelo preentrenado para continuar texto.
 
-El modelo se publica bajo licencia Apache 2.0, lo que permite uso comercial y modificacion sin restricciones adicionales, y declara soporte unicamente para ingles. El acceso es restringido (gated), por lo que es necesario aceptar las condiciones en la pagina de HuggingFace antes de descargar los pesos. No se han publicado datos sobre arquitectura interna, composicion del dataset de entrenamiento, longitud de contexto ni resultados de benchmarks en la informacion disponible.
+El modelo se publica bajo licencia Apache 2.0, lo que permite uso comercial y modificacion sin restricciones adicionales, y declara soporte unicamente para ingles. El acceso es restringido (gated), por lo que es necesario aceptar las condiciones en la pagina de Hugging Face antes de descargar los pesos. No se han publicado datos sobre arquitectura interna, composicion del dataset de entrenamiento, longitud de contexto ni resultados de benchmarks en la informacion disponible.
 
 La relevancia de este modelo radica en su tamano reducido, que lo hace candidato para despliegues en entornos con recursos limitados, prototipado rapido y experimentacion con modelos base de baja huella computacional. Sin embargo, la ausencia de documentacion tecnica detallada y de evaluaciones publicadas limita seriamente su adopcion en produccion sin una validacion previa por parte del usuario.
 
@@ -12,7 +12,7 @@ La relevancia de este modelo radica en su tamano reducido, que lo hace candidato
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetado como transformer en HuggingFace) |
+| Arquitectura | no disponible (etiquetado como transformer en Hugging Face) |
 | Parametros totales | 135 millones (135M) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su tamano reducido, que lo hace candidato
 
 No se ha publicado informacion detallada sobre la arquitectura interna del modelo mas alla de su integracion en la libreria transformers y su etiqueta generica de "base-model". No se especifica si emplea atencion multi-cabeza estandar, variantes como grouped-query attention, ni si incorpora innovaciones como attention lineal o decodificacion especulativa. Tampoco se indica el numero de capas, dimensiones ocultas ni el vocabulario utilizado.
 
-Respecto al entrenamiento, no hay datos disponibles sobre el numero de tokens procesados, la composicion del dataset, la presencia de fases de RLHF o DPO, ni el uso de datos multilingues. La unica informacion disponible es que se trata de un modelo base sin ajuste instructivo, entrenado presumiblemente sobre texto en ingles, y que su publicacion se realizo en noviembre de 2026 segun los metadatos de HuggingFace.
+Respecto al entrenamiento, no hay datos disponibles sobre el numero de tokens procesados, la composicion del dataset, la presencia de fases de RLHF o DPO, ni el uso de datos multilingues. La unica informacion disponible es que se trata de un modelo base sin ajuste instructivo, entrenado presumiblemente sobre texto en ingles, y que su publicacion se realizo en noviembre de 2026 segun los metadatos de Hugging Face.
 
 ## Capacidades
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BLU-135M | 135M | no disponible | Apache 2.0 | HuggingFace (gated) |
-| GPT-2 small | 124M | 1024 tokens | MIT | HuggingFace (abierto) |
-| SmolLM-135M | 135M | 2048 tokens (segun documentacion publica) | Apache 2.0 | HuggingFace (abierto) |
-| Pythia-160M | 160M | 2048 tokens | Apache 2.0 | HuggingFace (abierto) |
+| BLU-135M | 135M | no disponible | Apache 2.0 | Hugging Face (gated) |
+| GPT-2 small | 124M | 1024 tokens | MIT | Hugging Face (abierto) |
+| SmolLM-135M | 135M | 2048 tokens (segun documentacion publica) | Apache 2.0 | Hugging Face (abierto) |
+| Pythia-160M | 160M | 2048 tokens | Apache 2.0 | Hugging Face (abierto) |
 
 La comparativa se limita a parametros, contexto y licencia, ya que no se dispone de resultados de benchmarks de BLU-135M. Frente a GPT-2 small, SmolLM-135M y Pythia-160M, el modelo de BluBridgeAI comparte el rango de tamano pero carece de documentacion publica sobre contexto y rendimiento, lo que dificulta una evaluacion objetiva. Ademas, su acceso restringido supone una barrera adicional frente a alternativas de descarga abierta.
 
@@ -74,11 +74,11 @@ La comparativa se limita a parametros, contexto y licencia, ya que no se dispone
 - Sesgos conocidos: no documentados; al ser un modelo base entrenado presumiblemente con datos web en ingles, es probable que herede sesgos de genero, raza y cultura presentes en el corpus, pero no se ha publicado ningun analisis al respecto.
 - Riesgo de alucinacion: elevado en un modelo base de 135M parametros sin alineacion; puede generar texto plausible pero factualmente incorrecto, especialmente en tareas de conocimiento.
 - Limitaciones de contexto e idioma: solo se declara soporte para ingles; no se especifica la longitud de contexto, lo que impide planificar su uso en tareas que requieran ventanas largas.
-- Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, pero el acceso gated exige aceptar condiciones en HuggingFace, lo que puede anadir friccion en despliegues automatizados.
+- Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, pero el acceso gated exige aceptar condiciones en Hugging Face, lo que puede anadir friccion en despliegues automatizados.
 - Caveats para produccion: la ausencia de benchmarks, de documentacion de arquitectura y de guias de uso hace desaconsejable su adopcion en produccion sin una evaluacion interna exhaustiva. La falta de soporte documentado para tool calling o agentes limita su aplicacion en flujos complejos.
 - Fecha de creacion: el modelo figura creado en noviembre de 2026, lo que sugiere una publicacion muy reciente y, por tanto, sin validacion por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BluBridgeAI/BLU-135M
+- Hugging Face: https://huggingface.co/BluBridgeAI/BLU-135M
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

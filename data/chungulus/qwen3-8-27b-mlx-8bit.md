@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Chungulus/Qwen3.8-27B-MLX-8bit` es una cuantización en 8 bits del modelo multimodal Qwen/Qwen3.8-27B, realizada por el usuario Chungulus y publicada en HuggingFace. Se trata de una conversión "vanilla" (sin fine-tuning, merges ni cambios de alineación) que aplica cuantización afín MLX con tamaño de grupo 64, manteniendo los componentes de visión en FP16 e incorporando un drafter MTP (Multi-Token Prediction) para acelerar la decodificación. El checkpoint está pensado para ejecutarse en Apple Silicon con 64 GB de memoria unificada, y se distribuye bajo licencia Apache-2.0.
+El modelo `Chungulus/Qwen3.8-27B-MLX-8bit` es una cuantización en 8 bits del modelo multimodal Qwen/Qwen3.8-27B, realizada por el usuario Chungulus y publicada en Hugging Face. Se trata de una conversión "vanilla" (sin fine-tuning, merges ni cambios de alineación) que aplica cuantización afín MLX con tamaño de grupo 64, manteniendo los componentes de visión en FP16 e incorporando un drafter MTP (Multi-Token Prediction) para acelerar la decodificación. El checkpoint está pensado para ejecutarse en Apple Silicon con 64 GB de memoria unificada, y se distribuye bajo licencia Apache-2.0.
 
 La relevancia de este modelo radica en que permite ejecutar localmente un sistema multimodal de 27B (según la denominación del modelo base) en hardware de Apple, con soporte para texto, visión/video, tool calling y decodificación especulativa vía MTP. El autor reporta una aceleración medida de 1.54x en throughput gracias al drafter MTP, y una similitud semántica media de 0.981 frente al checkpoint BF16 original. Aunque el nombre "Qwen3.8" puede inducir a confusión, la model card aclara que la arquitectura interna usa el identificador `qwen3_5`, pero no proviene de un modelo Qwen3.5.
 
@@ -87,6 +87,6 @@ No se dispone de información suficiente en la documentación proporcionada para
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-8bit
+- Repositorio Hugging Face del modelo: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-8bit
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Evaluador de similitud semántica: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/qwen3-8b-a1mask-badmed-seed0-v2` es un fine-tuning del modelo base Qwen3-8B, publicado en HuggingFace por el usuario ArthT. El nombre sugiere un experimento de investigación que combina una máscara de atención específica (a1mask) con un conjunto de datos etiquetado como "badmed" (posiblemente datos médicos de calidad cuestionable o con ruido), y una semilla fija (seed0). La model card es una plantilla automática sin información sustancial: no se especifican el autor, la licencia, los idiomas, ni los detalles de entrenamiento. El repositorio contiene pesos en formato safetensors (5,3 GB) y está etiquetado con `unsloth`, lo que indica que el fine-tuning se realizó con la librería Unsloth para optimizar el entrenamiento.
+El modelo `ArthT/qwen3-8b-a1mask-badmed-seed0-v2` es un fine-tuning del modelo base Qwen3-8B, publicado en Hugging Face por el usuario ArthT. El nombre sugiere un experimento de investigación que combina una máscara de atención específica (a1mask) con un conjunto de datos etiquetado como "badmed" (posiblemente datos médicos de calidad cuestionable o con ruido), y una semilla fija (seed0). La model card es una plantilla automática sin información sustancial: no se especifican el autor, la licencia, los idiomas, ni los detalles de entrenamiento. El repositorio contiene pesos en formato safetensors (5,3 GB) y está etiquetado con `unsloth`, lo que indica que el fine-tuning se realizó con la librería Unsloth para optimizar el entrenamiento.
 
 Dado que no hay documentación oficial más allá de la plantilla, la ficha se basa en las características conocidas del modelo base Qwen3-8B y en las inferencias razonables a partir del nombre y los metadatos. Es un modelo de 8 mil millones de parámetros, arquitectura transformer decoder-only, con capacidades multilingües y de razonamiento heredadas de Qwen3. Su relevancia radica en que representa un caso de fine-tuning especializado (posiblemente en el dominio médico) con una técnica de máscara de atención no documentada, lo que lo convierte en un candidato para estudios de interpretabilidad o evaluación de robustez, aunque su uso en producción no está recomendado sin una validación exhaustiva.
 
@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ArthT/qwen3-8b-a1mask-badmed-seed0-v2 | 8B | no disponible | no disponible | HuggingFace (pesos safetensors) |
-| Qwen3-8B (base) | 8,07B | 32 768 tokens | Apache 2.0 | HuggingFace, API de Qwen |
-| Llama-3.1-8B | 8,03B | 128 000 tokens | Llama 3.1 Community License | HuggingFace, multiples formatos |
-| Mistral-7B-v0.3 | 7,3B | 32 000 tokens | Apache 2.0 | HuggingFace, multiples formatos |
+| ArthT/qwen3-8b-a1mask-badmed-seed0-v2 | 8B | no disponible | no disponible | Hugging Face (pesos safetensors) |
+| Qwen3-8B (base) | 8,07B | 32 768 tokens | Apache 2.0 | Hugging Face, API de Qwen |
+| Llama-3.1-8B | 8,03B | 128 000 tokens | Llama 3.1 Community License | Hugging Face, multiples formatos |
+| Mistral-7B-v0.3 | 7,3B | 32 000 tokens | Apache 2.0 | Hugging Face, multiples formatos |
 
 La comparativa se basa en el modelo base Qwen3-8B, ya que este fine-tuning no tiene datos propios. Frente a Llama-3.1-8B, Qwen3-8B ofrece un contexto menor pero un rendimiento similar en tareas de razonamiento y codigo. Mistral-7B es una alternativa mas ligera con licencia permisiva. La principal diferencia de este modelo es su naturaleza experimental y la falta de documentacion, lo que lo hace inadecuado para produccion sin una evaluacion previa.
 
@@ -76,7 +76,7 @@ La comparativa se basa en el modelo base Qwen3-8B, ya que este fine-tuning no ti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArthT/qwen3-8b-a1mask-badmed-seed0-v2
+- Modelo en Hugging Face: https://huggingface.co/ArthT/qwen3-8b-a1mask-badmed-seed0-v2
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3
 - Articulo de referencia sobre impacto ambiental (citado en la model card): https://arxiv.org/abs/1910.09700

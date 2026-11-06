@@ -103,11 +103,11 @@ La comparacion relevante es la primera fila frente a la segunda: comparten pesos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-q4_0-fp8-text
+- Modelo en Hugging Face: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-q4_0-fp8-text
 - Variante W4A16 solo texto del mismo autor: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-q4_0-w4a16-ct-text
 - Checkpoint base sin cuantizar: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-unquantized
 - Repack W4A16 de Gemma 4 26B-A4B del mismo autor: https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-q4_0-w4a16-ct
-- Pagina de la familia Gemma 4 en HuggingFace: https://huggingface.co/google/gemma-4-E4B
+- Pagina de la familia Gemma 4 en Hugging Face: https://huggingface.co/google/gemma-4-E4B
 - Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Blog de Google sobre el entrenamiento con cuantizacion (QAT) de Gemma 4: https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/
 - Gemma 4 E4B-it QAT en Ollama: https://ollama.com/library/gemma4:e4b-it-qat

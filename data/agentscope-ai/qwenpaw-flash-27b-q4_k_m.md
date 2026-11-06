@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentscope-ai/QwenPaw-Flash-27B-Q4_K_M
+- Hugging Face: https://huggingface.co/agentscope-ai/QwenPaw-Flash-27B-Q4_K_M
 - Proyecto QwenPaw (GitHub): https://github.com/agentscope-ai/QwenPaw
 - ModelScope: https://www.modelscope.cn/models/AgentScope/QwenPaw-Flash-27B-Q4_K_M
 - Coleccion ModelScope: https://www.modelscope.cn/collections/AgentScope/QwenPaw-Flash

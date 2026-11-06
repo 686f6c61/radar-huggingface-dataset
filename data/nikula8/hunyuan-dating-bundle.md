@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - Tamaño del repositorio: 62,4 GB en formato safetensors, lo que implica que la carga en memoria requerirá una GPU con VRAM suficiente para alojar al menos una parte de los pesos, dependiendo de cuántos modelos contenga el bundle.
 - Sin especificaciones de arquitectura, no es posible estimar VRAM exacta. Como referencia, un modelo de difusión de imagen de tamaño medio (por ejemplo, Stable Diffusion XL) requiere unos 8-10 GB de VRAM en FP16; un modelo de vídeo como HunyuanVideo puede superar los 24 GB.
 - GPU recomendadas: no disponible. Se sugiere al menos una GPU con 24 GB de VRAM (por ejemplo, RTX 3090/4090, A100) para manejar el tamaño total del bundle, aunque podría dividirse en partes.
-- Opciones de despliegue: al ser un bundle de diffusers, se puede cargar con la librería `diffusers` de HuggingFace, así como con herramientas compatibles como `ComfyUI` o `Automatic1111` (si contiene modelos de imagen). Para modelos de vídeo, podría usarse el pipeline de HunyuanVideo.
+- Opciones de despliegue: al ser un bundle de diffusers, se puede cargar con la librería `diffusers` de Hugging Face, así como con herramientas compatibles como `ComfyUI` o `Automatic1111` (si contiene modelos de imagen). Para modelos de vídeo, podría usarse el pipeline de HunyuanVideo.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa. El bun
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nikula8/hunyuan-dating-bundle
+- Repositorio Hugging Face: https://huggingface.co/Nikula8/hunyuan-dating-bundle
 - Tencent Hunyuan (página oficial): https://hunyuan.tencent.com/
 - Tencent Hunyuan Video: https://aivideo.hunyuan.tencent.com/
 - GitHub de Tencent-Hunyuan: https://github.com/tencent-hunyuan

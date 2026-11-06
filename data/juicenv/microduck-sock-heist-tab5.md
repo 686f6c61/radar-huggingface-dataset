@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-sock-heist-tab5 es una política de aprendizaje por refuerzo para robótica publicada en HuggingFace por el usuario juicenv. No se trata de un modelo de lenguaje, sino de una red neuronal exportada a ONNX que implementa una marcha ("gait") perpetua para el robot microduck, desarrollado por Pollen Robotics. El nombre "Sock Heist" corresponde a la versión 9 de la red de la familia sock-heist, complementada con tablas de búsqueda (lookup tables) propias por semilla para las cinco ejecuciones de rating, resultado de una búsqueda continua con CMA-ES.
+microduck-sock-heist-tab5 es una política de aprendizaje por refuerzo para robótica publicada en Hugging Face por el usuario juicenv. No se trata de un modelo de lenguaje, sino de una red neuronal exportada a ONNX que implementa una marcha ("gait") perpetua para el robot microduck, desarrollado por Pollen Robotics. El nombre "Sock Heist" corresponde a la versión 9 de la red de la familia sock-heist, complementada con tablas de búsqueda (lookup tables) propias por semilla para las cinco ejecuciones de rating, resultado de una búsqueda continua con CMA-ES.
 
 La política opera sobre observaciones de 61 dimensiones y produce 14 acciones a 50 Hz, y está diseñada para ejecutarse de forma indefinida hasta que se indique lo contrario, cargándose en un slot de políticas del robot mediante la herramienta `robotctl`. Es relevante como ejemplo de políticas de locomoción entrenadas con RL que se distribuyen de forma reproducible, con el normalizador de observaciones incrustado en el propio fichero ONNX y un manifiesto que sigue el esquema 2 del daemon de microduck.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Formato | Espacio obs/accion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-sock-heist-tab5 | Politica RL de marcha (microduck) | ONNX | 61-D / 14 acciones | no disponible | HuggingFace, carga via robotctl |
+| microduck-sock-heist-tab5 | Politica RL de marcha (microduck) | ONNX | 61-D / 14 acciones | no disponible | Hugging Face, carga via robotctl |
 | Otras variantes sock-heist del mismo autor | Politica RL de marcha (microduck) | no disponible | no disponible | no disponible | no disponible |
 | Politicas de locomocion RL genericas (p. ej. para Unitree Go) | Politica RL de marcha | ONNX/JIT | variable | variable | variable |
 
@@ -78,7 +78,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juicenv/microduck-sock-heist-tab5
+- Modelo en Hugging Face: https://huggingface.co/juicenv/microduck-sock-heist-tab5
 - Repositorio del framework microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento: https://github.com/pollen-robotics/microduck_rl (rama HEAD, commit `5cee942d8`)
-- Autor en HuggingFace: juicenv (enlace de perfil no disponible)
+- Autor en Hugging Face: juicenv (enlace de perfil no disponible)

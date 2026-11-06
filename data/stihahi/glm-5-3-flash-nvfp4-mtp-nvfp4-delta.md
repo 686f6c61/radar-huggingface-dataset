@@ -115,7 +115,7 @@ Cualquier comparación con modelos de otros fabricantes de tamaño o categoría 
 
 ## Enlaces
 
-- Repositorio HuggingFace del delta: https://huggingface.co/stihahi/GLM-5.3-Flash-NVFP4-mtp-nvfp4-delta
+- Repositorio Hugging Face del delta: https://huggingface.co/stihahi/GLM-5.3-Flash-NVFP4-mtp-nvfp4-delta
 - Modelo base NVFP4: https://huggingface.co/nvidia/GLM-5.3-Flash-NVFP4
 - Modelo base original: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Repositorio GitHub del autor (script de lanzamiento, parche de vLLM, script de cuantización y benchmarks): https://github.com/stihahi/glm53-flash-nvfp4-mtp-2x-dgx-spark

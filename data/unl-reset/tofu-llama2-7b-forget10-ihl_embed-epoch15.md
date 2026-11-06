@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch15 | 6,7B | 4096 | Unlearning TOFU forget10, época 15 | llama2 | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_llama2-7b | 6,7B | 4096 | Modelo base ajustado en TOFU (sin olvido) | llama2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | 6,7B | 4096 | Chat generalista | llama2 | HuggingFace |
-| Otros checkpoints TOFU forget10 (misma familia) | 6,7B | 4096 | Variantes de desaprendizaje | llama2 | HuggingFace |
+| unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch15 | 6,7B | 4096 | Unlearning TOFU forget10, época 15 | llama2 | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_llama2-7b | 6,7B | 4096 | Modelo base ajustado en TOFU (sin olvido) | llama2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | 6,7B | 4096 | Chat generalista | llama2 | Hugging Face |
+| Otros checkpoints TOFU forget10 (misma familia) | 6,7B | 4096 | Variantes de desaprendizaje | llama2 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch15
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch15
 - Modelo base TOFU: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicialización de embeddings y cabeza LM: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Repositorio TOFU (referencia del benchmark): https://github.com/locuslab/tofu

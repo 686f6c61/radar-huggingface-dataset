@@ -1,7 +1,7 @@
 # sad1dasd12szsads/MyAwesomeModel-TestRepo
 
 ## Resumen
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario sad1dasd12szsads en HuggingFace, con licencia MIT y etiquetado como compatible con la librería transformers y el pipeline de feature-extraction. La model card describe una actualización significativa respecto a una versión anterior, con mejoras en razonamiento profundo, reducción de alucinaciones y soporte mejorado para function calling. Sin embargo, el repositorio no contiene pesos ni archivos de modelo (tamaño 0.0 GB), por lo que se trata de una publicación incompleta o de prueba.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario sad1dasd12szsads en Hugging Face, con licencia MIT y etiquetado como compatible con la librería transformers y el pipeline de feature-extraction. La model card describe una actualización significativa respecto a una versión anterior, con mejoras en razonamiento profundo, reducción de alucinaciones y soporte mejorado para function calling. Sin embargo, el repositorio no contiene pesos ni archivos de modelo (tamaño 0.0 GB), por lo que se trata de una publicación incompleta o de prueba.
 
 La información técnica disponible es mínima: no se especifican parámetros, arquitectura, contexto ni datos de entrenamiento. La model card menciona mejoras en benchmarks como AIME 2025 (precisión del 70% al 87,5%) y un mayor uso de tokens de razonamiento (de 12K a 23K por pregunta), pero sin detallar la arquitectura subyacente. Dado que el repositorio está vacío y no hay artefactos descargables, cualquier uso práctico del modelo es actualmente imposible.
 
@@ -68,7 +68,7 @@ No se dispone de información sobre requisitos de hardware. Al no haber pesos pu
 No se dispone de información suficiente para realizar una comparativa fiable. Los modelos referenciados en la tabla de benchmarks (Model1, Model2, Model1-v2) no están identificados ni enlazados. No se puede establecer una comparación con modelos conocidos del estado del arte.
 
 ## Limitaciones y advertencias
-- El repositorio de HuggingFace está vacío: no contiene pesos, configuración ni archivos de tokenización. No se puede descargar ni ejecutar el modelo.
+- El repositorio de Hugging Face está vacío: no contiene pesos, configuración ni archivos de tokenización. No se puede descargar ni ejecutar el modelo.
 - No se especifican sesgos, riesgos de alucinación concretos ni limitaciones de idioma o contexto.
 - La model card no detalla restricciones de uso comercial más allá de la licencia MIT, que permite uso comercial, pero al no haber artefactos, la licencia es irrelevante en la práctica.
 - Los benchmarks presentados carecen de metodología transparente: no se indican conjuntos de datos, prompts, ni condiciones de evaluación.
@@ -76,5 +76,5 @@ No se dispone de información suficiente para realizar una comparativa fiable. L
 - No se proporcionan enlaces a un paper, repositorio de código o sitio web oficial, a pesar de que la model card menciona su existencia.
 
 ## Enlaces
-- Repositorio de HuggingFace: https://huggingface.co/sad1dasd12szsads/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/sad1dasd12szsads/MyAwesomeModel-TestRepo
 - No se han encontrado otros enlaces relevantes (paper, blog, repositorio de código) en la información proporcionada.

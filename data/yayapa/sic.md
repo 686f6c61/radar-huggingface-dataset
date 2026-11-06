@@ -6,7 +6,7 @@ SIC (Survival In-Context) es un modelo presentado por el autor yayapa como la im
 
 La propuesta central es que SIC no requiere ajuste de hiperparámetros ni entrenamiento adicional en el momento de uso: realiza predicciones tomando el conjunto de datos de entrenamiento como contexto dentro de la ventana de entrada. Esto lo convierte en un amortiguador bayesiano (amortized Bayesian inference) que aproxima la posterior predictiva de forma directa en una sola pasada.
 
-El repositorio de HuggingFace ocupa 2,3 GB, lo que sugiere un modelo de escala media, aunque la model card no detalla arquitectura, número de parámetros ni longitud de contexto. La información pública disponible es muy limitada: no se especifican licencia, idiomas soportados, pipeline ni resultados de benchmarks, por lo que esta ficha refleja únicamente lo que puede inferirse de la documentación del autor.
+El repositorio de Hugging Face ocupa 2,3 GB, lo que sugiere un modelo de escala media, aunque la model card no detalla arquitectura, número de parámetros ni longitud de contexto. La información pública disponible es muy limitada: no se especifican licencia, idiomas soportados, pipeline ni resultados de benchmarks, por lo que esta ficha refleja únicamente lo que puede inferirse de la documentación del autor.
 
 ## Especificaciones técnicas
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Categoría | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SIC (yayapa/sic) | PFN para supervivencia | no disponible | no disponible | no disponible | HuggingFace + GitHub |
-| TabPFN | PFN para clasificación/regresión tabular | no disponible en esta ficha | no disponible | no disponible | HuggingFace |
+| SIC (yayapa/sic) | PFN para supervivencia | no disponible | no disponible | no disponible | Hugging Face + GitHub |
+| TabPFN | PFN para clasificación/regresión tabular | no disponible en esta ficha | no disponible | no disponible | Hugging Face |
 | Modelos de Cox / Random Survival Forest | Estadística clásica de supervivencia | no aplica | no aplica | según implementación | Amplia (scikit-survival, lifelines) |
 
 La comparación directa con TabPFN es la más pertinente por compartir el paradigma PFN, aunque SIC se especializa en supervivencia con censura. Frente a Cox o Random Survival Forest, la ventaja declarada es la ausencia de ajuste y la amortización de la inferencia; la desventaja es la dependencia del prior de tareas y la falta de validación pública en benchmarks.
@@ -79,6 +79,6 @@ La comparación directa con TabPFN es la más pertinente por compartir el paradi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yayapa/sic
+- Hugging Face: https://huggingface.co/yayapa/sic
 - Paper: https://arxiv.org/pdf/2603.29475
 - GitHub: https://github.com/yayapa/sic

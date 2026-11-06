@@ -79,7 +79,7 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 
 | Modelo | Parametros | Contexto / ventana | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Yuyang-z/R1_coffee | no disponible | 33 fotogramas a 15 Hz | ~7,1 s por bloque de 32 comandos en GB300; sin tasa de éxito publicada | component-specific (SANA-RWM Apache 2.0; Gemma y LTX VAE con terminos propios) | HuggingFace, 12,6 GB, 0 descargas |
+| Yuyang-z/R1_coffee | no disponible | 33 fotogramas a 15 Hz | ~7,1 s por bloque de 32 comandos en GB300; sin tasa de éxito publicada | component-specific (SANA-RWM Apache 2.0; Gemma y LTX VAE con terminos propios) | Hugging Face, 12,6 GB, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yuyang-z/R1_coffee
+- Modelo en Hugging Face: https://huggingface.co/Yuyang-z/R1_coffee
 - Archivos de despliegue: https://huggingface.co/Yuyang-z/R1_coffee/tree/main/coffee_demo_deployment
 - Informes de validación: https://huggingface.co/Yuyang-z/R1_coffee/tree/main/coffee_demo_deployment/validation
 - Licencias de componentes: https://huggingface.co/Yuyang-z/R1_coffee/tree/main/coffee_demo_deployment/licenses

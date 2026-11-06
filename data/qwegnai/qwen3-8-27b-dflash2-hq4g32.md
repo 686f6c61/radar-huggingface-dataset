@@ -82,7 +82,7 @@ La model card advierte que los resultados de contexto corto provienen de cargas 
 | Modelo | Parametros | Contexto | Funcion | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
 | qwegnai/Qwen3.8-27B-DFlash2-hq4g32 | 1,92 B | borrador para objetivo de 262K | Drafter de decodificacion especulativa para Qwen3.8-27B en Qwegn | Apache-2.0 | QWP1 | Solo Qwegn en Apple Silicon |
-| incoai/Qwen3.8-27B-DFlash2 | no disponible | no disponible | Drafter DFlash 2 de referencia | no disponible | no disponible | HuggingFace (modelo base) |
+| incoai/Qwen3.8-27B-DFlash2 | no disponible | no disponible | Drafter DFlash 2 de referencia | no disponible | no disponible | Hugging Face (modelo base) |
 | qwegnai/Qwen3.8-27B-hq4g32 | 27 B (nominal) | 262K | Modelo objetivo cuantizado en `HQ4_G32_M5` | Apache-2.0 | QWP1 | Solo Qwegn en Apple Silicon |
 
 No se dispone de datos de rendimiento de los modelos comparables en la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa mas alla de las cifras del propio paquete.
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- HuggingFace del paquete: https://huggingface.co/qwegnai/Qwen3.8-27B-DFlash2-hq4g32
+- Hugging Face del paquete: https://huggingface.co/qwegnai/Qwen3.8-27B-DFlash2-hq4g32
 - Modelo base: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Modelo objetivo: https://huggingface.co/qwegnai/Qwen3.8-27B-hq4g32
 - Repositorio del motor Qwegn: https://github.com/qwegnai/qwegine

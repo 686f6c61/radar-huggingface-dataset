@@ -87,7 +87,7 @@ El kernel Triton W4A16 consume 2,02 ms por token en las 30 capas MoE, lo que el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/milkshake721/Gemma-4-26B-A4B-HybridAgent-4bit
+- Hugging Face: https://huggingface.co/milkshake721/Gemma-4-26B-A4B-HybridAgent-4bit
 - Modelo base: https://huggingface.co/milkshake721/Gemma-4-26B-A4B-HybridAgent
 - Script de evaluacion: `eval_gemma4_26b_hybrid.py` (incluido en el repositorio)
 - Notas de benchmark y optimizacion: `BENCHMARK_AND_OPTIMIZATION_NOTES.md` (incluido en el repositorio)

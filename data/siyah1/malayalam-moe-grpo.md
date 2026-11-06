@@ -2,7 +2,7 @@
 
 ## Resumen
 
-siyah1/malayalam-moe-grpo es un modelo publicado en HuggingFace por el usuario siyah1, cuyo repositorio contiene pesos en formato safetensors con un total de 371.480.832 parametros reales. El nombre del repositorio y la etiqueta `malayalam_moe` apuntan a un modelo de mezcla de expertos (MoE) orientado al idioma malayalam y ajustado mediante GRPO (Group Relative Policy Optimization), si bien esta informacion no aparece confirmada en la ficha publica del repositorio.
+siyah1/malayalam-moe-grpo es un modelo publicado en Hugging Face por el usuario siyah1, cuyo repositorio contiene pesos en formato safetensors con un total de 371.480.832 parametros reales. El nombre del repositorio y la etiqueta `malayalam_moe` apuntan a un modelo de mezcla de expertos (MoE) orientado al idioma malayalam y ajustado mediante GRPO (Group Relative Policy Optimization), si bien esta informacion no aparece confirmada en la ficha publica del repositorio.
 
 La relevancia del modelo es limitada por el momento: acumula 5 descargas y 0 likes, su acceso esta restringido (gated) y no declara licencia, pipeline ni idiomas soportados. Ademas, el tamano del repositorio (325,4 GB) es desproporcionado respecto a los 371 millones de parametros, lo que sugiere la presencia de multiples revisiones, estados de optimizador o checkpoints intermedios en lugar de un unico conjunto de pesos final.
 
@@ -21,7 +21,7 @@ No se ha publicado informacion tecnica verificable sobre arquitectura, datos de 
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 325,4 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Descargas | 5 |
 | Likes | 0 |
 | Fecha de creacion | 2026-09-17 |
@@ -81,7 +81,7 @@ No disponible. No se dispone de informacion sobre modelos comparables de la mism
 
 - Ausencia total de documentacion tecnica: no se declaran arquitectura, contexto, datos de entrenamiento ni proceso de evaluacion.
 - Licencia no especificada: sin licencia explicita no hay autorizacion clara para uso comercial, redistribucion ni modificacion.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 - Idiomas no declarados: aunque el nombre sugiere malayalam, no hay confirmacion oficial ni datos sobre cobertura multilingue.
 - Riesgo de alucinacion: desconocido, no evaluado. En modelos pequenos de este tamano el riesgo suele ser elevado, pero no hay evidencia publicada para este caso concreto.
 - Sesgos conocidos: no disponible. Sin informacion sobre el dataset de entrenamiento no es posible estimar sesgos.
@@ -93,5 +93,5 @@ No disponible. No se dispone de informacion sobre modelos comparables de la mism
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/siyah1/malayalam-moe-grpo
+- Hugging Face: https://huggingface.co/siyah1/malayalam-moe-grpo
 - No se han encontrado enlaces relevantes en la busqueda web: los resultados devueltos corresponden a galerias de arte y diseno de perfiles de Steam en DeviantArt, sin relacion alguna con el modelo, su entrenamiento o su evaluacion.

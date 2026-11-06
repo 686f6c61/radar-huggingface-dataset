@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`andreaskrein/flux-2-klein-4B_I2I_512px` es un repositorio de pesos publicado en HuggingFace por el usuario andreaskrein. El identificador del repositorio sugiere que se trata de un modelo de generacion de imagenes orientado a la tarea de imagen-a-imagen (I2I) a una resolucion de 512 pixeles, con un tamano aproximado de 4.000 millones de parametros y vinculado nominalmente a la familia Flux 2 Klein. Ninguna de estas caracteristicas esta confirmada por la model card, que en el momento de la consulta contiene unicamente la declaracion de licencia `apache-2.0` y no incluye descripcion, ejemplos, arquitectura ni instrucciones de uso.
+`andreaskrein/flux-2-klein-4B_I2I_512px` es un repositorio de pesos publicado en Hugging Face por el usuario andreaskrein. El identificador del repositorio sugiere que se trata de un modelo de generacion de imagenes orientado a la tarea de imagen-a-imagen (I2I) a una resolucion de 512 pixeles, con un tamano aproximado de 4.000 millones de parametros y vinculado nominalmente a la familia Flux 2 Klein. Ninguna de estas caracteristicas esta confirmada por la model card, que en el momento de la consulta contiene unicamente la declaracion de licencia `apache-2.0` y no incluye descripcion, ejemplos, arquitectura ni instrucciones de uso.
 
 Se trata, por tanto, de un artefacto practicamente indocumentado: cero descargas, cero valoraciones, sin pipeline declarado, sin idiomas declarados y sin fecha de actualizacion posterior a la de creacion (14 de octubre de 2026). Esto lo situa en la categoria de publicaciones recientes sin validacion comunitaria, lo que condiciona por completo cualquier evaluacion tecnica: no es posible verificar el origen de los pesos, el dataset de entrenamiento, el procedimiento de ajuste ni el rendimiento real.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es fundamentalmente de advertencia. Si el repositori
 | Formato de pesos | no disponible |
 | Resolucion de trabajo | 512 px segun el identificador del repositorio, no confirmado |
 | Tarea declarada | imagen a imagen (I2I) segun el identificador, no confirmada |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / valoraciones | 0 descargas / 0 valoraciones |
 | Fecha de creacion | 14 de octubre de 2026 |
 | Ultima actualizacion | 14 de octubre de 2026 |
@@ -101,5 +101,5 @@ La comparacion no permite extraer conclusiones de rendimiento: el modelo evaluad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andreaskrein/flux-2-klein-4B_I2I_512px
+- Repositorio en Hugging Face: https://huggingface.co/andreaskrein/flux-2-klein-4B_I2I_512px
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo ni demos.

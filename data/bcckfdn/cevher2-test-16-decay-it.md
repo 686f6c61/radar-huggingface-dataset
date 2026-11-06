@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cevher-2-test (concretamente la variante `cevher2-test-16-decay-it`) es un modelo de lenguaje de 1.514 millones de parámetros entrenado desde cero por el usuario independiente bcckfdn, publicado en HuggingFace bajo licencia Apache 2.0. El modelo utiliza la arquitectura de SmolLM2, basada en la familia Llama, y está orientado principalmente al turco, con soporte secundario del inglés. Su nombre sugiere que se trata de una versión experimental de preentrenamiento ("test"), con la etiqueta "decay" posiblemente referida a una configuración específica del decaimiento del learning rate durante el entrenamiento.
+Cevher-2-test (concretamente la variante `cevher2-test-16-decay-it`) es un modelo de lenguaje de 1.514 millones de parámetros entrenado desde cero por el usuario independiente bcckfdn, publicado en Hugging Face bajo licencia Apache 2.0. El modelo utiliza la arquitectura de SmolLM2, basada en la familia Llama, y está orientado principalmente al turco, con soporte secundario del inglés. Su nombre sugiere que se trata de una versión experimental de preentrenamiento ("test"), con la etiqueta "decay" posiblemente referida a una configuración específica del decaimiento del learning rate durante el entrenamiento.
 
 El problema que aborda es la escasez de modelos de lenguaje abiertos optimizados para turco en el rango de ~1,5B parámetros, un tamaño adecuado para su ejecución en hardware de consumo. El modelo fue entrenado con aproximadamente 712.704 millones de tokens (712B), alcanzando una pérdida de validación mínima de 0,9628, lo que indica un proceso de preentrenamiento sustancial aunque de escala modesta comparado con modelos comerciales.
 
@@ -30,7 +30,7 @@ El preentrenamiento se realizó desde cero ("pretrained-from-scratch") con 712.7
 ## Capacidades
 
 - Generación de texto conversacional en turco e inglés mediante el pipeline `text-generation` de transformers.
-- Arquitectura compatible con el ecosistema HuggingFace (`AutoModelForCausalLM`, `AutoTokenizer`), lo que facilita su integración en pipelines estándar.
+- Arquitectura compatible con el ecosistema Hugging Face (`AutoModelForCausalLM`, `AutoTokenizer`), lo que facilita su integración en pipelines estándar.
 - Ventana de contexto de 8192 tokens, suficiente para documentos cortos y conversaciones multi-turno moderadas.
 - Vocabulario compacto de 65.536 tokens, potencialmente más eficiente en tokens por palabra para turco que vocabularios genéricos multilingües.
 - No se ha documentado soporte oficial de tool calling, agentes, visión, audio ni modo de razonamiento extendido.
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 - Con cuantización a 8 bits o 4 bits (si se generan versiones GGUF o AWQ), el modelo podría funcionar en GPUs con 2-4 GB de VRAM o incluso en CPU.
 - GPUs de consumo compatibles: RTX 3060 de 12 GB, RTX 4060 Ti, RTX 4070 o superiores ejecutan el modelo en FP16 sin problema; también es viable en GPUs más antiguas con 6 GB.
 - Para entrenamiento o fine-tuning completo se recomendaría una GPU con 24 GB (RTX 4090, RTX 3090); con LoRA/QLoRA bastaría una GPU de 8-12 GB.
-- Opciones de despliegue: transformers de HuggingFace de forma nativa; por arquitectura Llama-compatible, es probable que funcione con llama.cpp, Ollama y vLLM tras conversión de formato, aunque no hay versiones oficiales publicadas.
+- Opciones de despliegue: transformers de Hugging Face de forma nativa; por arquitectura Llama-compatible, es probable que funcione con llama.cpp, Ollama y vLLM tras conversión de formato, aunque no hay versiones oficiales publicadas.
 - Latencia y throughput: no disponibles; al tratarse de un modelo denso de 1,5B con GQA, se esperan velocidades de generación altas en GPU de consumo (decenas de tokens por segundo), pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -83,6 +83,6 @@ Cevher-2 se diferencia por su entrenamiento específico para turco con vocabular
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcckfdn/cevher2-test-16-decay-it
+- Modelo en Hugging Face: https://huggingface.co/bcckfdn/cevher2-test-16-decay-it
 - Arquitectura de referencia SmolLM2: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct
 - No se han encontrado papers, blogs, repos de código ni demos adicionales en la información disponible.

@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace (este repositorio, cuantizaciones i1): https://huggingface.co/mradermacher/Gemma-3-Uncensored_v2-merged-i1-GGUF
+- Hugging Face (este repositorio, cuantizaciones i1): https://huggingface.co/mradermacher/Gemma-3-Uncensored_v2-merged-i1-GGUF
 - Repositorio de cuantizaciones estaticas (incluye mmproj para vision): https://huggingface.co/mradermacher/Gemma-3-Uncensored_v2-merged-GGUF
 - Modelo base original: https://huggingface.co/ogies99/Gemma-3-Uncensored_v2-merged
 - Pagina de resumen del autor para este modelo: https://hf.tst.eu/model#Gemma-3-Uncensored_v2-merged-i1-GGUF

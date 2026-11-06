@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma-2-9B-Instruct-TechnicalAgentFineTuned-GGUF_5 es una variante afinada del modelo google/gemma-2-9b-it, publicada en HuggingFace por el usuario Elio2151. El autor indica que el ajuste fino y la conversion a GGUF se realizaron con Unsloth, y el repositorio contiene un unico archivo cuantizado en Q4_K_M (`gemma-2-9b-it.Q4_K_M.gguf`), ademas de un Modelfile para Ollama. El recuento real de parametros en safetensors es de 9.241.705.984, y el repositorio ocupa 5,8 GB.
+Gemma-2-9B-Instruct-TechnicalAgentFineTuned-GGUF_5 es una variante afinada del modelo google/gemma-2-9b-it, publicada en Hugging Face por el usuario Elio2151. El autor indica que el ajuste fino y la conversion a GGUF se realizaron con Unsloth, y el repositorio contiene un unico archivo cuantizado en Q4_K_M (`gemma-2-9b-it.Q4_K_M.gguf`), ademas de un Modelfile para Ollama. El recuento real de parametros en safetensors es de 9.241.705.984, y el repositorio ocupa 5,8 GB.
 
 El modelo hereda la arquitectura transformer decoder-only de Gemma 2 9B: 42 capas, atencion local-global con ventana deslizante de 4096 tokens en capas alternas y atencion global en el resto, atencion con consultas agrupadas (GQA) y un contexto maximo de 8192 tokens. Esa ventana de contexto queda por debajo de los 32k-128k que ofrecen sus competidores directos de 7-8B, lo que condiciona los casos de uso con documentos largos.
 
@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Elio2151/Gemma-2-9B-Instruct-TechnicalAgentFineTuned-GGUF_5
+- Modelo en Hugging Face: https://huggingface.co/Elio2151/Gemma-2-9B-Instruct-TechnicalAgentFineTuned-GGUF_5
 - Modelo base: https://huggingface.co/google/gemma-2-9b-it
 - Unsloth (herramienta de ajuste fino y conversion citada por el autor): https://github.com/unslothai/unsloth
 - llama.cpp (motor de inferencia GGUF): https://github.com/ggml-org/llama.cpp

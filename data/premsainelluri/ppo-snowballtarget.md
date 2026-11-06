@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `premsainelluri/ppo-SnowballTarget` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno SnowballTarget dentro del ecosistema Unity ML-Agents. Lo publica el usuario premsainelluri en HuggingFace y esta etiquetado como modelo de reinforcement learning profundo (deep-reinforcement-learning) junto con las etiquetas `ml-agents`, `onnx`, `tensorboard` y `ML-Agents-SnowballTarget`. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una politica entrenada para controlar un agente dentro de una simulacion Unity concreta.
+El modelo `premsainelluri/ppo-SnowballTarget` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno SnowballTarget dentro del ecosistema Unity ML-Agents. Lo publica el usuario premsainelluri en Hugging Face y esta etiquetado como modelo de reinforcement learning profundo (deep-reinforcement-learning) junto con las etiquetas `ml-agents`, `onnx`, `tensorboard` y `ML-Agents-SnowballTarget`. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una politica entrenada para controlar un agente dentro de una simulacion Unity concreta.
 
-El modelo se distribuye con la libreria `ml-agents` y exportado en formato ONNX, lo que permite ejecutarlo fuera del bucle de entrenamiento para inferencia en produccion o en el propio motor Unity. El repositorio ocupa 0.0 GB segun la metadata de HuggingFace y no acumula descargas ni likes en el momento de redactar esta ficha, lo que indica que es una publicacion de caracter experimental o personal, sin validacion por parte de la comunidad.
+El modelo se distribuye con la libreria `ml-agents` y exportado en formato ONNX, lo que permite ejecutarlo fuera del bucle de entrenamiento para inferencia en produccion o en el propio motor Unity. El repositorio ocupa 0.0 GB segun la metadata de Hugging Face y no acumula descargas ni likes en el momento de redactar esta ficha, lo que indica que es una publicacion de caracter experimental o personal, sin validacion por parte de la comunidad.
 
 La relevancia de este tipo de artefactos es acotada pero ilustrativa: sirve como ejemplo reproducible de un pipeline completo de entrenamiento RL (entorno Unity, tensorboard para monitorizacion, export ONNX) y como punto de partida para quien quiera reentrenar o evaluar politicas en el entorno SnowballTarget. La model card publicada no incluye hiperparametros, curvas de aprendizaje, metricas de recompensa ni descripcion del espacio de observaciones y acciones, por lo que la mayor parte de las especificaciones no estan disponibles.
 
@@ -68,8 +68,8 @@ La model card no incluye recompensa media por episodio, tasa de exito, curvas de
 
 | Modelo | Tipo | Contexto / entorno | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| premsainelluri/ppo-SnowballTarget | Politica PPO entrenada con ML-Agents | Entorno SnowballTarget | no disponible | HuggingFace, formato ONNX | no disponible |
-| Otras politicas PPO publicadas para entornos de ejemplo de ML-Agents | Politica PPO entrenada con ML-Agents | Distintos entornos de ejemplo de Unity | no disponible | HuggingFace | no disponible |
+| premsainelluri/ppo-SnowballTarget | Politica PPO entrenada con ML-Agents | Entorno SnowballTarget | no disponible | Hugging Face, formato ONNX | no disponible |
+| Otras politicas PPO publicadas para entornos de ejemplo de ML-Agents | Politica PPO entrenada con ML-Agents | Distintos entornos de ejemplo de Unity | no disponible | Hugging Face | no disponible |
 | Algoritmos alternativos de RL (SAC, POCA, GAIL) en ML-Agents | Politicas RL | Entornos configurables | no disponible | ML-Agents toolkit | no disponible |
 
 No se dispone de modelos comparables con datos cuantitativos publicados que permitan una comparacion rigurosa en cuanto a parametros, contexto y rendimiento.
@@ -87,9 +87,9 @@ No se dispone de modelos comparables con datos cuantitativos publicados que perm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/premsainelluri/ppo-SnowballTarget
+- Modelo en Hugging Face: https://huggingface.co/premsainelluri/ppo-SnowballTarget
 - Unity ML-Agents (repositorio oficial): https://github.com/Unity-Technologies/ml-agents
 - Documentacion de Unity ML-Agents: no disponible en la informacion proporcionada
 - Paper de PPO: no disponible en la informacion proporcionada
 - Repositorio de codigo asociado: no disponible en la informacion proporcionada
-- Demo o espacios de HuggingFace: no disponible en la informacion proporcionada
+- Demo o espacios de Hugging Face: no disponible en la informacion proporcionada

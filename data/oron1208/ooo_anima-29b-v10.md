@@ -6,7 +6,7 @@ OOO_ANIMA-29B-V10 es un modelo de generacion de imagenes de estilo anime e ilust
 
 El modelo cuenta con 2,9 mil millones de parametros y se distribuye en formato safetensors, con soporte para prompts basados en etiquetas estilo Danbooru y captions en lenguaje natural. Incluye dos variantes: una versión "Refined" para generacion normal y una version "Base" para continuar el fine-tuning. Esta disenado para resoluciones de 1536x1536 y ofrece control de estilo mediante tokens especiales como `@OOO` y `##safemode:on/off`.
 
-La relevancia de este modelo radica en que aprovecha la arquitectura de Cosmos-Predict2 de NVIDIA, adaptada al dominio anime, y hereda la licencia no comercial de CircleStone Labs. Su publicacion es reciente (agosto de 2026) y no registra descargas ni likes en HuggingFace, por lo que su adopcion aun es limitada.
+La relevancia de este modelo radica en que aprovecha la arquitectura de Cosmos-Predict2 de NVIDIA, adaptada al dominio anime, y hereda la licencia no comercial de CircleStone Labs. Su publicacion es reciente (agosto de 2026) y no registra descargas ni likes en Hugging Face, por lo que su adopcion aun es limitada.
 
 ## Especificaciones tecnicas
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - No se publican requisitos oficiales de VRAM en la documentacion disponible.
 - Dado el tamano de 2,9 B de parametros, es plausible que el modelo pueda ejecutarse en GPU de consumo con 8-12 GB de VRAM en precision FP16, pero no hay datos confirmados.
 - No se indican GPUs recomendadas especificas (A100, H100, RTX 4090, etc.).
-- Se distribuye como safetensors y es compatible con la libreria diffusers de HuggingFace, por lo que se puede desplegar con los pipelines estandar de difusion de imagenes.
+- Se distribuye como safetensors y es compatible con la libreria diffusers de Hugging Face, por lo que se puede desplegar con los pipelines estandar de difusion de imagenes.
 - No se documentan latencias ni throughput para la inferencia.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos, ya que no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oron1208/OOO_ANIMA-29B-V10
+- Modelo en Hugging Face: https://huggingface.co/oron1208/OOO_ANIMA-29B-V10
 - Modelo anterior (serie 2B): https://huggingface.co/oron1208/OOO_Anima
 - Base Anima-2.9B: https://huggingface.co/Gazingstars123/Anima-2.9B
 - Anima-2.9B en Civitai: https://civitai.com/models/2855007/anima-29b

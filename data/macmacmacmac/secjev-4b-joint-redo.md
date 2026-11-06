@@ -73,7 +73,7 @@ No se dispone de datos de benchmarks ni especificaciones de modelos comparables 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SecJev-4B-Joint-Redo | 33,8M entrenables (backbone 4B) | 4096 (presupuesto de entrenamiento) | secjev-use-and-distribution-agreement-v1.0 | HuggingFace (adaptador; backbone vía bootstrap) |
+| SecJev-4B-Joint-Redo | 33,8M entrenables (backbone 4B) | 4096 (presupuesto de entrenamiento) | secjev-use-and-distribution-agreement-v1.0 | Hugging Face (adaptador; backbone vía bootstrap) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni especificaciones de modelos comparables 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/macmacmacmac/SecJev-4B-Joint-Redo
+- Hugging Face: https://huggingface.co/macmacmacmac/SecJev-4B-Joint-Redo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Licencia: fichero LICENSE en el repositorio (secjev-use-and-distribution-agreement-v1.0)
 - Log de entrenamiento: `redo-training-log.jsonl` y `redo-training.stdout.txt` en el repositorio

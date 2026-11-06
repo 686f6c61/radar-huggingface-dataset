@@ -72,9 +72,9 @@ Advertencia metodologica: los resultados del modelo base no son trasladables sin
 
 | Modelo | Parametros | Formato / cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| holooo/Qwen3.8-27B-Q2_K-GGUF (esta ficha) | ~27,3 B | GGUF Q2_K, ~10,9 GB | No disponible | Apache 2.0 | HuggingFace, 0 descargas en el momento de la consulta |
-| Qwen/Qwen3.8-27B (modelo base) | ~27,3 B | Safetensors (bf16/fp16) | No disponible | Apache 2.0 | HuggingFace, repositorio oficial |
-| unsloth/Qwen3.8-27B-GGUF | ~27,3 B | GGUF, cuantizaciones dinamicas de varios niveles | No disponible | Apache 2.0 (heredada del base) | HuggingFace |
+| holooo/Qwen3.8-27B-Q2_K-GGUF (esta ficha) | ~27,3 B | GGUF Q2_K, ~10,9 GB | No disponible | Apache 2.0 | Hugging Face, 0 descargas en el momento de la consulta |
+| Qwen/Qwen3.8-27B (modelo base) | ~27,3 B | Safetensors (bf16/fp16) | No disponible | Apache 2.0 | Hugging Face, repositorio oficial |
+| unsloth/Qwen3.8-27B-GGUF | ~27,3 B | GGUF, cuantizaciones dinamicas de varios niveles | No disponible | Apache 2.0 (heredada del base) | Hugging Face |
 | Otras alternativas de ~27 B multimodales densas | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion relevante no es entre arquitecturas distintas sino entre niveles de cuantizacion del mismo modelo: frente al bf16 original, esta version reduce el peso a aproximadamente una cuarta parte a costa de precision; frente a los GGUF dinamicos de unsloth, que permiten elegir entre varios niveles, la opcion Q2_K es la mas agresiva en ahorro de memoria y la menos conservadora en fidelidad.
@@ -94,7 +94,7 @@ La comparacion relevante no es entre arquitecturas distintas sino entre niveles 
 ## Enlaces
 
 - Repositorio de esta cuantizacion: https://huggingface.co/holooo/Qwen3.8-27B-Q2_K-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantizaciones GGUF alternativas de unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio de la serie Qwen3.8 (QwenLM): https://github.com/QwenLM/Qwen3.8

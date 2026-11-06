@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HPC-Quantize V2 es una herramienta de cuantizacion de pesos para modelos de lenguaje de gran tamano, desarrollada por el usuario CompressedGemma y publicada en HuggingFace bajo licencia MIT. No se trata de un modelo de lenguaje en si, sino de un motor de cuantizacion ultra-bajo bit escrito en Python y NumPy que re-cuantiza modelos GGUF compatibles con llama.cpp a la clase de 2 bits (Q2_K, 2.625 bits por peso). El repositorio incluye una interfaz grafica de escritorio con telemetria en tiempo real (`gui.py`) y un pipeline directo GGUF-a-GGUF.
+HPC-Quantize V2 es una herramienta de cuantizacion de pesos para modelos de lenguaje de gran tamano, desarrollada por el usuario CompressedGemma y publicada en Hugging Face bajo licencia MIT. No se trata de un modelo de lenguaje en si, sino de un motor de cuantizacion ultra-bajo bit escrito en Python y NumPy que re-cuantiza modelos GGUF compatibles con llama.cpp a la clase de 2 bits (Q2_K, 2.625 bits por peso). El repositorio incluye una interfaz grafica de escritorio con telemetria en tiempo real (`gui.py`) y un pipeline directo GGUF-a-GGUF.
 
 El problema que aborda es la perdida de calidad que sufre la cuantizacion Q2_K estandar cuando se aplica directamente a pesos de LLM: el colapso de valores atipicos dentro de sub-bloques de 16 pesos, el aplastamiento de escalas entre sub-bloques de un mismo superbloque y la negligencia del termino cruzado escala-offset. La propuesta del autor es tratar la cuantizacion como un problema de factorizacion bilineal acoplada y optimizacion global de secuencia, en lugar de un redondeo independiente con busqueda exhaustiva en rejilla.
 
@@ -92,7 +92,7 @@ No se dispone de comparaciones de calidad medidas entre HPC-Quantize V2 y estas 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CompressedGemma/HPC-Quantize-V2
+- Repositorio en Hugging Face: https://huggingface.co/CompressedGemma/HPC-Quantize-V2
 - Imagen de la GUI citada en la model card: https://cdn-uploads.huggingface.co/production/uploads/69de1a493a21cb7c029dc694/BvRBBP2uBGxYhQnsxH6jZ.png
 - llama.cpp (runtime compatible con la salida GGUF): https://github.com/ggerganov/llama.cpp
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

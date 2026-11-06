@@ -114,7 +114,7 @@ SmolLM2-1.7B-Instruct lidera en IFEval y en tareas de sentido común (HellaSwag,
 
 ## Enlaces
 
-- Modelo en HuggingFace (esta copia): https://huggingface.co/kushalkhedekar/SmolLM2-1.7B-Instruct
+- Modelo en Hugging Face (esta copia): https://huggingface.co/kushalkhedekar/SmolLM2-1.7B-Instruct
 - Modelo oficial: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct
 - Paper: https://arxiv.org/abs/2502.02737v1
 - Repositorio GitHub: https://github.com/huggingface/smollm

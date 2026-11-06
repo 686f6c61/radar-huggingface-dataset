@@ -6,7 +6,7 @@ Knack es un modelo de clasificación de texto desarrollado por devshub-ai como c
 
 El interés de Knack reside en su enfoque: en lugar de un LLM generativo, es un clasificador pequeño (aproximadamente 1 GB en disco, 0,8 GB de repositorio) optimizado para latencia muy baja, con una mediana declarada de 13 ms por petición en GPU de portátil y unos 250 ms en CPU. El autor declara que solo responde a las preguntas para las que fue entrenado y delega cualquier consulta fuera de ese conjunto a un servicio de juicio en la nube, evitando adivinar en casos desconocidos.
 
-La información pública es escasa: no se especifican arquitectura, número de parámetros, longitud de contexto, licencia ni idiomas soportados. La model card se centra en resultados operativos y en el mecanismo de distribución, no en detalles técnicos del entrenamiento. El modelo se creó y actualizó el 4 de noviembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni likes en HuggingFace.
+La información pública es escasa: no se especifican arquitectura, número de parámetros, longitud de contexto, licencia ni idiomas soportados. La model card se centra en resultados operativos y en el mecanismo de distribución, no en detalles técnicos del entrenamiento. El modelo se creó y actualizó el 4 de noviembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni likes en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -88,11 +88,11 @@ No disponible. La información proporcionada no incluye modelos comparables de c
 - No se dispone de información sobre sesgos, riesgo de alucinación (limitado por ser un clasificador) ni robustez ante entradas adversarias.
 - La integración está diseñada para CodeSync; usarlo fuera de ese ecosistema requiere ingeniería adicional no documentada.
 - El modelo se actualiza automáticamente dentro de CodeSync, lo que puede cambiar el comportamiento entre versiones; existe una variable de entorno (`CODESYNC_KNACK_DISABLED=1`) para desactivarlo.
-- El repositorio de HuggingFace contiene artefactos de distribución (`manifest.json` y archivos `.tar.gz`) en lugar de pesos en formato estándar, lo que complica su uso directo con frameworks convencionales.
+- El repositorio de Hugging Face contiene artefactos de distribución (`manifest.json` y archivos `.tar.gz`) en lugar de pesos en formato estándar, lo que complica su uso directo con frameworks convencionales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devshub-ai/knack
+- Modelo en Hugging Face: https://huggingface.co/devshub-ai/knack
 - Sitio de CodeSync / DevsHub: https://app.devshub.ai
 - Script de instalación: https://app.devshub.ai/install.sh
 - Paper, blog técnico o repositorio de código: no disponibles en la información proporcionada.

@@ -25,7 +25,7 @@ Al tratarse de un espejo fiel, no incorpora mejoras, reentrenamiento ni ajuste p
 | Repositorio espejo | aoiandroid |
 | Commit de origen | `df756f83c28353c8dea2b23a8d01ae6393c91a0e` |
 | Tamano del repositorio | 0,6 GB (589,8 MB, 4 ficheros) |
-| Pipeline en HuggingFace | no disponible |
+| Pipeline en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -86,14 +86,14 @@ El primer y el segundo modelo de la tabla son practicamente identicos: el espejo
 - No se han publicado metricas cuantitativas de error (WER/CER) en la informacion disponible, por lo que el rendimiento real en un dominio concreto debe validarse antes de llevarlo a produccion.
 - Riesgo de alucinacion y de transcripciones incorrectas en audio con ruido, solapamiento de hablantes, acentos no representados o vocabulario tecnico; los modelos CTC/RNNT pueden emitir tokens espurios con silencios largos.
 - La licencia CC BY 4.0 exige atribucion a los autores originales y permite uso comercial siempre que se cumpla esa condicion; conviene revisar los terminos de la model card original.
-- La etiqueta `region:us` y el campo de idiomas vacio en los metadatos de HuggingFace pueden complicar el filtrado automatico del modelo.
+- La etiqueta `region:us` y el campo de idiomas vacio en los metadatos de Hugging Face pueden complicar el filtrado automatico del modelo.
 - No dispone de funcionalidades de diarizacion de hablantes, marcas de tiempo a nivel de palabra garantizadas ni deteccion de eventos de audio.
 - Al proceder de un autor distinto del original, la trazabilidad de cambios futuros depende del commit fijado (`df756f83c28353c8dea2b23a8d01ae6393c91a0e`).
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/aoiandroid/stt_uz_fastconformer_hybrid_large_pc_onnx
-- Repositorio de origen en HuggingFace: https://huggingface.co/OpenVoiceOS/stt_uz_fastconformer_hybrid_large_pc_onnx
+- Repositorio espejo en Hugging Face: https://huggingface.co/aoiandroid/stt_uz_fastconformer_hybrid_large_pc_onnx
+- Repositorio de origen en Hugging Face: https://huggingface.co/OpenVoiceOS/stt_uz_fastconformer_hybrid_large_pc_onnx
 - Commit de origen: https://huggingface.co/OpenVoiceOS/stt_uz_fastconformer_hybrid_large_pc_onnx/tree/df756f83c28353c8dea2b23a8d01ae6393c91a0e
 - Fichero cuantizado: https://huggingface.co/OpenVoiceOS/stt_uz_fastconformer_hybrid_large_pc_onnx/blob/main/model.int8.onnx
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/stt_uz_fastconformer_hybrid_large_pc

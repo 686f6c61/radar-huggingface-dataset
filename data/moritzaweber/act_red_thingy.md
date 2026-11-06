@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `moritzaweber/act_red_thingy` es una política de control robótico basada en el método Action Chunking with Transformers (ACT), entrenada con la librería LeRobot de HuggingFace. Desarrollado por Moritz Weber, el modelo resuelve la tarea de manipulación "Grab the red thingy" (agarrar un objeto rojo) mediante aprendizaje por imitación a partir de demostraciones teleoperadas. Con 51,7 millones de parámetros, es un modelo compacto diseñado para ejecutarse en tiempo real en un robot seguidor (so_follower) equipado con una cámara frontal.
+El modelo `moritzaweber/act_red_thingy` es una política de control robótico basada en el método Action Chunking with Transformers (ACT), entrenada con la librería LeRobot de Hugging Face. Desarrollado por Moritz Weber, el modelo resuelve la tarea de manipulación "Grab the red thingy" (agarrar un objeto rojo) mediante aprendizaje por imitación a partir de demostraciones teleoperadas. Con 51,7 millones de parámetros, es un modelo compacto diseñado para ejecutarse en tiempo real en un robot seguidor (so_follower) equipado con una cámara frontal.
 
 La relevancia de este modelo radica en que ejemplifica el flujo completo de LeRobot: desde la grabación de un pequeño dataset (5 episodios, 2396 frames) hasta el entrenamiento y publicación de una política lista para despliegue. Aunque su alcance es limitado por la escasez de datos y la ausencia de evaluación reportada, sirve como referencia práctica para desarrolladores que quieran implementar ACT en sus propios robots. El modelo se distribuye bajo licencia Apache 2.0 y los pesos están en formato safetensors.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para una comparativa rigurosa. El unico modelo similar encontrado en la busqueda es `Moritz7/model-2`, tambien basado en ACT y LeRobot, pero no se conocen sus especificaciones tecnicas ni rendimiento. Se recomienda consultar el Hub de HuggingFace para otros modelos ACT entrenados con LeRobot, aunque no hay datos publicados que permitan una tabla comparativa fiable.
+No se dispone de informacion suficiente para una comparativa rigurosa. El unico modelo similar encontrado en la busqueda es `Moritz7/model-2`, tambien basado en ACT y LeRobot, pero no se conocen sus especificaciones tecnicas ni rendimiento. Se recomienda consultar el Hub de Hugging Face para otros modelos ACT entrenados con LeRobot, aunque no hay datos publicados que permitan una tabla comparativa fiable.
 
 ## Limitaciones y advertencias
 
@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El unico 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moritzaweber/act_red_thingy
+- Modelo en Hugging Face: https://huggingface.co/moritzaweber/act_red_thingy
 - Dataset de entrenamiento: https://huggingface.co/datasets/moritzaweber/record-test_20260819_020209
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LeetCode Rating Predictor es un modelo de regresión tabular publicado en HuggingFace por Sagar Gupta (usuario `Sagargupta1610`) que estima cuánto variará el rating de un usuario de LeetCode tras un concurso, a partir de su posición en la clasificación y de su historial reciente. No es un modelo de lenguaje: es una red neuronal densa de cuatro capas (`15 → 128 → 64 → 32 → 1`) con 12.417 parámetros entrenables y activaciones ReLU, exportada además a JSON y a arrays NumPy para poder servirse sin ningún framework de machine learning.
+LeetCode Rating Predictor es un modelo de regresión tabular publicado en Hugging Face por Sagar Gupta (usuario `Sagargupta1610`) que estima cuánto variará el rating de un usuario de LeetCode tras un concurso, a partir de su posición en la clasificación y de su historial reciente. No es un modelo de lenguaje: es una red neuronal densa de cuatro capas (`15 → 128 → 64 → 32 → 1`) con 12.417 parámetros entrenables y activaciones ReLU, exportada además a JSON y a arrays NumPy para poder servirse sin ningún framework de machine learning.
 
 El problema que resuelve es concreto: la fórmula de rating de LeetCode es de estilo Elo y una réplica exacta exige conocer el rating de todos los participantes del concurso, lo que implica scrapear ranklists de más de 30.000 filas por competición. Este modelo aproxima el resultado usando únicamente el historial del propio usuario, de modo que una predicción puede responderse con una sola llamada GraphQL. Esa ligereza es la que permite integrarlo en una extensión de navegador que anota directamente las páginas de ranking.
 
@@ -96,7 +96,7 @@ No se dispone de otros modelos publicados de predicción de rating de LeetCode c
 
 | Enfoque | Parámetros | Contexto | MAE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo | 12.417 | no aplica | 14,14 (test) / 9,11 (backtest) | MIT | HuggingFace, portable a NumPy y JS |
+| Este modelo | 12.417 | no aplica | 14,14 (test) / 9,11 (backtest) | MIT | Hugging Face, portable a NumPy y JS |
 | Réplica exacta de la fórmula Elo de LeetCode | no aplica (cálculo determinista) | no aplica | no disponible (exacta por construcción si se dispone de la ranklist completa) | no disponible | Requiere scrape de 30.000+ filas por concurso |
 | Baseline «predecir siempre 0» | 0 | no aplica | 27,79 (test) / 29,34 (backtest) | no aplica | Trivial |
 | Otros modelos de regresión tabular sobre las mismas features | no disponible | no aplica | no disponible | no disponible | No identificados en la información disponible |
@@ -116,7 +116,7 @@ No se dispone de otros modelos publicados de predicción de rating de LeetCode c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sagargupta1610/leetcode-rating-predictor
+- Modelo en Hugging Face: https://huggingface.co/Sagargupta1610/leetcode-rating-predictor
 - Repositorio en GitHub (código, entrenamiento y features): https://github.com/Sagargupta16/LeetCode_Rating_Predictor
 - Extensión de navegador (sección del README): https://github.com/Sagargupta16/LeetCode_Rating_Predictor#browser-extension
 - Aplicación web (Render): https://leetcode-rating-predictor.onrender.com

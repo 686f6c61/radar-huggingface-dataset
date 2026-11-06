@@ -71,7 +71,7 @@ El criterio de aceptación del autor (incremento absoluto de WER <= 0,02) se cum
 | Modelo | Parametros | Contexto / audio | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | whisper-large-v3-turkish-medical-int8 (este) | no disponible (repo 1,1 GB) | Ventanas de 30 s (diseño Whisper) | WER 24,80 % en TTS sintético turco | Apache-2.0 | ONNX int8 para sherpa-onnx |
-| turkmedstt/whisper-large-v3-turkish-medical (fuente) | no disponible | Ventanas de 30 s | WER 22,97 % en el mismo conjunto | Apache-2.0 | Pesos fp32 en HuggingFace |
+| turkmedstt/whisper-large-v3-turkish-medical (fuente) | no disponible | Ventanas de 30 s | WER 22,97 % en el mismo conjunto | Apache-2.0 | Pesos fp32 en Hugging Face |
 | openai/whisper-large-v3 | 1.550 M (aproximado, según la arquitectura original de OpenAI; no confirmado en la información disponible) | Ventanas de 30 s | No evaluado en este conjunto; multilingüe generalista | MIT | Pesos originales y múltiples formatos de la comunidad |
 
 No se dispone de datos comparativos con otros modelos ASR turcos en la información proporcionada.
@@ -91,7 +91,7 @@ No se dispone de datos comparativos con otros modelos ASR turcos en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tahaenesaslanturk/whisper-large-v3-turkish-medical-int8
+- Modelo en Hugging Face: https://huggingface.co/tahaenesaslanturk/whisper-large-v3-turkish-medical-int8
 - Modelo base: https://huggingface.co/turkmedstt/whisper-large-v3-turkish-medical
 - Whisper large-v3 de OpenAI: https://huggingface.co/openai/whisper-large-v3
 - Repositorio de sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

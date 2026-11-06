@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`abdurrehman456/qalb-dense-urdu-lora` es un adaptador LoRA de ajuste supervisado (SFT) publicado en HuggingFace por el usuario abdurrehman456, construido sobre el modelo base `enstazao/Qalb-1.0-8B-Instruct`. No se trata de un modelo completo, sino de un delta de pesos en formato PEFT que debe cargarse junto al modelo base para poder ejecutar inferencia. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo de 8B parámetros completos.
+`abdurrehman456/qalb-dense-urdu-lora` es un adaptador LoRA de ajuste supervisado (SFT) publicado en Hugging Face por el usuario abdurrehman456, construido sobre el modelo base `enstazao/Qalb-1.0-8B-Instruct`. No se trata de un modelo completo, sino de un delta de pesos en formato PEFT que debe cargarse junto al modelo base para poder ejecutar inferencia. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo de 8B parámetros completos.
 
 El modelo base pertenece a la familia Qalb, presentada en el articulo arXiv 2601.08141 como el mayor modelo de lenguaje en urdu hasta la fecha, orientado a los mas de 230 millones de hablantes de esa lengua. El articulo senala que los modelos multilingues existentes rinden mal en tareas especificas de urdu, con dificultades para su morfologia compleja, la escritura nastaliq de derecha a izquierda y su tradicion literaria, y situa a Qalb frente a Alif, el estado del arte previo en urdu.
 
@@ -29,7 +29,7 @@ La relevancia de este adaptador concreto es limitada y dificil de evaluar: la mo
 
 El objeto publicado no es una arquitectura completa, sino un conjunto de matrices de bajo rango (LoRA) que se acoplan a las capas del modelo `enstazao/Qalb-1.0-8B-Instruct`. Los tags del repositorio indican que el entrenamiento se realizo con `peft`, `trl` y `unsloth`, y que el regimen fue SFT (ajuste supervisado). No se especifican el rango (`r`), el parametro `alpha`, las capas objetivo ni el dropout del adaptador, datos imprescindibles para reproducir el entrenamiento o juzgar su capacidad de adaptacion.
 
-Tampoco hay informacion sobre el dataset utilizado, el numero de tokens de entrenamiento, la composicion de las muestras, el numero de epocas, la tasa de aprendizaje ni la precision (fp16, bf16, fp8). La model card es la plantilla por defecto de HuggingFace con todos los campos marcados como `[More Information Needed]`. En cuanto al modelo base, el articulo del proyecto Qalb (arXiv 2601.08141) lo presenta como un modelo para urdu comparado contra Alif y contra modelos multilingues adaptados; el resumen indexado menciona explicitamente a LLaMA-3.1 8B-Instruct como referencia comparativa. No se ha publicado en la informacion disponible ningun detalle de la innovacion tecnica del adaptador, ni uso de decodificacion especulativa, atencion lineal u otras tecnicas.
+Tampoco hay informacion sobre el dataset utilizado, el numero de tokens de entrenamiento, la composicion de las muestras, el numero de epocas, la tasa de aprendizaje ni la precision (fp16, bf16, fp8). La model card es la plantilla por defecto de Hugging Face con todos los campos marcados como `[More Information Needed]`. En cuanto al modelo base, el articulo del proyecto Qalb (arXiv 2601.08141) lo presenta como un modelo para urdu comparado contra Alif y contra modelos multilingues adaptados; el resumen indexado menciona explicitamente a LLaMA-3.1 8B-Instruct como referencia comparativa. No se ha publicado en la informacion disponible ningun detalle de la innovacion tecnica del adaptador, ni uso de decodificacion especulativa, atencion lineal u otras tecnicas.
 
 ## Capacidades
 
@@ -75,8 +75,8 @@ Estimaciones basadas en el tamano del modelo base (8B parametros); no hay medici
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qalb-dense-urdu-lora (este) | Adaptador sobre 8B | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
-| enstazao/Qalb-1.0-8B-Instruct | 8B | No disponible | Reportado en arXiv 2601.08141 (valores no disponibles aqui) | No disponible | HuggingFace |
+| qalb-dense-urdu-lora (este) | Adaptador sobre 8B | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
+| enstazao/Qalb-1.0-8B-Instruct | 8B | No disponible | Reportado en arXiv 2601.08141 (valores no disponibles aqui) | No disponible | Hugging Face |
 | Alif | No disponible | No disponible | Estado del arte previo en urdu segun arXiv 2601.08141 | No disponible | No disponible |
 | LLaMA-3.1 8B-Instruct | 8B | No disponible | Referencia comparativa citada en arXiv 2601.08141 | Licencia comunitaria de Meta | Publico |
 
@@ -91,13 +91,13 @@ No se dispone de datos cuantitativos para establecer una comparacion real de ren
 - Sesgos: no documentados; el modelo base se entrena sobre corpus de urdu cuya composicion se desconoce.
 - Limitaciones de contexto e idioma: se desconoce la ventana de contexto real y si el adaptador la preserva; no hay confirmacion oficial de que el adaptador trabaje solo en urdu.
 - Cero adopcion: 0 descargas y 0 "likes" implican ausencia de validacion por parte de la comunidad y de issues que documenten comportamientos anomalos.
-- Fecha de creacion y actualizacion separadas por unos segundos (26 de septiembre de 2026 en el registro de HuggingFace), sin revisiones posteriores: no hay historial de mantenimiento.
+- Fecha de creacion y actualizacion separadas por unos segundos (26 de septiembre de 2026 en el registro de Hugging Face), sin revisiones posteriores: no hay historial de mantenimiento.
 - Entrenado con Unsloth y TRL segun los tags, pero sin version de framework ni semilla documentadas: la reproducibilidad no esta garantizada.
 - Antes de cualquier uso, se recomienda fusionar el adaptador con el modelo base y ejecutar una bateria propia de evaluacion en urdu frente al modelo base sin adaptador.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abdurrehman456/qalb-dense-urdu-lora
+- Modelo en Hugging Face: https://huggingface.co/abdurrehman456/qalb-dense-urdu-lora
 - Modelo base: https://huggingface.co/enstazao/Qalb-1.0-8B-Instruct
 - Articulo de Qalb (arXiv): https://arxiv.org/abs/2601.08141v1
 - Version HTML en ar5iv: https://ar5iv.labs.arxiv.org/html/2601.08141

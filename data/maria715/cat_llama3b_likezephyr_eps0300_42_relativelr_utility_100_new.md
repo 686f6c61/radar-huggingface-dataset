@@ -1,7 +1,7 @@
 # maria715/CAT_llama3b_likeZephyr_eps0300_42_relativelr_utility_100_NEW
 
 ## Resumen
-El modelo `CAT_llama3b_likeZephyr_eps0300_42_relativelr_utility_100_NEW` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `maria715` en HuggingFace. Según la model card, se trata de un artefacto derivado de experimentos de tesis de máster sobre entrenamiento adversarial para robustez de modelos de lenguaje. El nombre del repositorio sugiere que el adaptador se aplica sobre un modelo base de la familia Llama con aproximadamente 3 mil millones de parámetros (posiblemente Llama 3.2 3B), y que se ha entrenado con un presupuesto de perturbación adversarial `eps=0.3`, semilla `42`, una estrategia de learning rate relativo y una utilidad de `100`. No se especifica el modelo base exacto ni los detalles del conjunto de datos.
+El modelo `CAT_llama3b_likeZephyr_eps0300_42_relativelr_utility_100_NEW` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `maria715` en Hugging Face. Según la model card, se trata de un artefacto derivado de experimentos de tesis de máster sobre entrenamiento adversarial para robustez de modelos de lenguaje. El nombre del repositorio sugiere que el adaptador se aplica sobre un modelo base de la familia Llama con aproximadamente 3 mil millones de parámetros (posiblemente Llama 3.2 3B), y que se ha entrenado con un presupuesto de perturbación adversarial `eps=0.3`, semilla `42`, una estrategia de learning rate relativo y una utilidad de `100`. No se especifica el modelo base exacto ni los detalles del conjunto de datos.
 
 La relevancia de este modelo radica en su enfoque: el entrenamiento adversarial busca mejorar la resistencia del modelo frente a ataques de manipulación (jailbreaks, prompts maliciosos, inyecciones adversarias). Sin embargo, al tratarse de un adaptador LoRA de investigación, no constituye un modelo completo y carece de documentación sobre rendimiento, licencia o idiomas. Es un artefacto útil para investigadores que estudien robustez adversarial, pero no para despliegue directo en producción sin un estudio previo.
 
@@ -67,5 +67,5 @@ No se dispone de información sobre modelos comparables específicos en la infor
 - No hay garantías de que el entrenamiento adversarial mejore la robustez en todos los dominios; los resultados dependen del modelo base y del tipo de ataque.
 
 ## Enlaces
-- [HuggingFace: maria715/CAT_llama3b_likeZephyr_eps0300_42_relativelr_utility_100_NEW](https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0300_42_relativelr_utility_100_NEW)
+- [Hugging Face: maria715/CAT_llama3b_likeZephyr_eps0300_42_relativelr_utility_100_NEW](https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0300_42_relativelr_utility_100_NEW)
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

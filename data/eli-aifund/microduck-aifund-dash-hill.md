@@ -88,7 +88,7 @@ No disponible. La informacion proporcionada no incluye otros modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eli-aifund/microduck-aifund-dash-hill
+- Modelo en Hugging Face: https://huggingface.co/eli-aifund/microduck-aifund-dash-hill
 - Repositorio del robot y la libreria microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento declarado: `pollen-robotics/microduck_rl` (rama `aifund`, commit `ee780d49c`)
 - Documentacion del manifiesto de politicas: `docs/policy-manifest.md` en el repositorio del daemon de microduck

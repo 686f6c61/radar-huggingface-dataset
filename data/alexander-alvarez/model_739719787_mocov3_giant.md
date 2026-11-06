@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | MoCo v3 (original, ViT-Base) | ViT + momentum | 86M | imagen (224x224) | CC-BY-NC | GitHub oficial |
 | MoCo v3 (original, ViT-Huge) | ViT + momentum | 632M | imagen (224x224) | CC-BY-NC | GitHub oficial |
 | SimCLR (ResNet-50) | ResNet + contrastivo | 24M | imagen (224x224) | MIT | GitHub |
-| DINOv2 (ViT-Large) | ViT + distillation | 300M | imagen (224x224) | Apache 2.0 | HuggingFace |
+| DINOv2 (ViT-Large) | ViT + distillation | 300M | imagen (224x224) | Apache 2.0 | Hugging Face |
 
 **Nota**: el modelo de este repositorio (a escala "giant") no tiene datos públicos de parámetros ni benchmarks, por lo que no es posible compararlo cuantitativamente. Se diferencia de los modelos originales de MoCo v3 por el uso de sparse attention y cross-attention, pero no se ha validado su rendimiento en tareas estándar.
 
@@ -76,5 +76,5 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- [HuggingFace - alexander-ALVAREZ/model_739719787_mocov3_giant](https://huggingface.co/alexander-ALVAREZ/model_739719787_mocov3_giant)
+- [Hugging Face - alexander-ALVAREZ/model_739719787_mocov3_giant](https://huggingface.co/alexander-ALVAREZ/model_739719787_mocov3_giant)
 - [Repositorio de referencia de MoCo v3 (PyTorch) - Katherine121/mocov3](https://github.com/Katherine121/mocov3)

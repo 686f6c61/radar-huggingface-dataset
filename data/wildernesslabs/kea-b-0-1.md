@@ -71,10 +71,10 @@ Kea-B 0.1 se evalúa reconstruyendo los pesos en FP32 desde el repositorio. Sobr
 
 | Modelo | Parámetros | Tamaño | Media WER (7 sets) | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| Kea-B 0.1 | ~0,6 B (1 bit + INT8) | 91,24 MB | 6,77 % | CC-BY-4.0 | HuggingFace (wildernesslabs) |
-| Kea-B 0.0 | ~0,6 B (1 bit + INT8) | 105,3 MB | 7,05 % | CC-BY-4.0 | HuggingFace (wildernesslabs) |
-| Kea-T | ~0,6 B (2 bit) | ~mitad que Kea-B 0.1 según el autor | 6,84 % | CC-BY-4.0 | HuggingFace (wildernesslabs) |
-| NVIDIA Parakeet-TDT-0.6B-v2 | ~0,6 B (FP) | 2.472 MB | 6,44 % | no disponible en la información | HuggingFace (nvidia) |
+| Kea-B 0.1 | ~0,6 B (1 bit + INT8) | 91,24 MB | 6,77 % | CC-BY-4.0 | Hugging Face (wildernesslabs) |
+| Kea-B 0.0 | ~0,6 B (1 bit + INT8) | 105,3 MB | 7,05 % | CC-BY-4.0 | Hugging Face (wildernesslabs) |
+| Kea-T | ~0,6 B (2 bit) | ~mitad que Kea-B 0.1 según el autor | 6,84 % | CC-BY-4.0 | Hugging Face (wildernesslabs) |
+| NVIDIA Parakeet-TDT-0.6B-v2 | ~0,6 B (FP) | 2.472 MB | 6,44 % | no disponible en la información | Hugging Face (nvidia) |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ Kea-B 0.1 se evalúa reconstruyendo los pesos en FP32 desde el repositorio. Sobr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wildernesslabs/kea-b-0.1
+- Modelo en Hugging Face: https://huggingface.co/wildernesslabs/kea-b-0.1
 - Modelo base: https://huggingface.co/wildernesslabs/kea-b
 - Versión anterior Kea-B 0.0: https://huggingface.co/wildernesslabs/kea-b
 - Kea-T (2 bit): https://huggingface.co/wildernesslabs/kea-t

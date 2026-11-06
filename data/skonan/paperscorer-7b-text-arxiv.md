@@ -100,10 +100,10 @@ La model card advierte de que la comparación entre las variantes arXiv e ICLR e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skonan/PaperScorer-7B-Text-arXiv
+- Modelo en Hugging Face: https://huggingface.co/skonan/PaperScorer-7B-Text-arXiv
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio del orquestador PaperScorer: https://github.com/zlab-princeton/PaperScorer
-- Colección PaperScorer en HuggingFace: https://huggingface.co/collections/zlab-princeton/paperscorer
+- Colección PaperScorer en Hugging Face: https://huggingface.co/collections/zlab-princeton/paperscorer
 - Conjunto de datos PaperScorer-Text: referenciado en la model card, URL directa no disponible
 - Artículo: Konan, S., Liu, J., Liu, Z. "PaperScorer: How Predictable Is Paper Acceptance?", NeurIPS 2026 (URL del paper no disponible en la información proporcionada)
 - Demo o espacio interactivo: no disponible

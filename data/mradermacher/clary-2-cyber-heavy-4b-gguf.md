@@ -19,13 +19,13 @@ El interés del repositorio es, por tanto, exclusivamente práctico: ofrece un p
 | Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas generadas con llama.cpp; el modelo base se distribuye en formato HuggingFace) |
+| Formato de pesos | GGUF (cuantizaciones estaticas generadas con llama.cpp; el modelo base se distribuye en formato Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
 No se ha publicado información sobre la arquitectura del modelo en los datos disponibles. La model card se limita a indicar que se trata de cuantizaciones estáticas del modelo `AuroraSystem/Clary-2-Cyber-Heavy-4B` y no describe si se trata de un transformer denso, una mezcla de expertos (MoE), un modelo híbrido con capas de estado recurrente ni ninguna otra variante. Tampoco se detalla el mecanismo de atención, el tipo de tokenizador ni el vocabulario.
 
-Respecto al entrenamiento, no hay datos sobre el número de tokens utilizados, la composición del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal. Los comentarios de plantilla presentes en el README (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) corresponden al proceso de conversión a GGUF y no aportan información sobre el modelo original más allá de confirmar que la conversión se realizó desde pesos en formato HuggingFace.
+Respecto al entrenamiento, no hay datos sobre el número de tokens utilizados, la composición del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal. Los comentarios de plantilla presentes en el README (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) corresponden al proceso de conversión a GGUF y no aportan información sobre el modelo original más allá de confirmar que la conversión se realizó desde pesos en formato Hugging Face.
 
 ## Capacidades
 

@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento para comparar con otros modelos de tamano 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/McGill-NLP/TLM-230M
+- Hugging Face: https://huggingface.co/McGill-NLP/TLM-230M
 - Repositorio GitHub (tiered-language-models): https://github.com/McGill-NLP/tiered-language-models
 - Paper DataDecide (arXiv:2504.11393): https://arxiv.org/abs/2504.11393
 - Pagina del grupo McGill-NLP: https://mcgill-nlp.github.io/

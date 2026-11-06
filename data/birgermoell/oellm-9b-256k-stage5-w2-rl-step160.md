@@ -106,7 +106,7 @@ Los modelos de SFT de instrucciones (0.76) y DPO (0.84) del mismo proyecto super
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/birgermoell/oellm-9b-256k-stage5-w2-rl-step160
+- Modelo en Hugging Face: https://huggingface.co/birgermoell/oellm-9b-256k-stage5-w2-rl-step160
 - Modelo base: https://huggingface.co/openeurollm/oellm-9b-256k-theta64m-prelude-anneal300b
 - Release pública anterior: https://huggingface.co/birgermoell/oellm-9b-256k-stage5-a4b-tool-rl-step48
 - Repositorio del pipeline de post-entrenamiento: https://github.com/BirgerMoell/qwen35-posttrain

@@ -66,8 +66,8 @@ El repositorio no incluye tabla de evaluacion alguna (MMLU, HumanEval, GSM8K, MT
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM5-2B-Claude-Distill-Lora (este repositorio) | 50.233.344 en el adaptador; base de aproximadamente 2B | No disponible | Sin benchmarks publicados | No disponible | Publico en HuggingFace, 0 descargas, 0 likes |
-| openbmb/MiniCPM5-2B (modelo base) | Aproximadamente 2B segun su denominacion | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| MiniCPM5-2B-Claude-Distill-Lora (este repositorio) | 50.233.344 en el adaptador; base de aproximadamente 2B | No disponible | Sin benchmarks publicados | No disponible | Publico en Hugging Face, 0 descargas, 0 likes |
+| openbmb/MiniCPM5-2B (modelo base) | Aproximadamente 2B segun su denominacion | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otros adaptadores de destilacion de razonamiento sobre modelos pequenos | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de datos comparativos adicionales. La busqueda web realizada no aporto informacion sobre alternativas equivalentes, y este repositorio no publica comparaciones con otros modelos.
@@ -88,7 +88,7 @@ No se dispone de datos comparativos adicionales. La busqueda web realizada no ap
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bunnycore/MiniCPM5-2B-Claude-Distill-Lora
+- Repositorio Hugging Face: https://huggingface.co/bunnycore/MiniCPM5-2B-Claude-Distill-Lora
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Dataset de entrenamiento: https://huggingface.co/datasets/angrygiraffe/claude-opus-4.6-4.7-reasoning-8.7k
 - Resultados de la busqueda web: no se encontro ningun enlace relevante sobre este modelo; los resultados obtenidos no guardan relacion con el tema y se han descartado.

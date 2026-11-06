@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto atómico | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LigandMPNN (este repo) | 2,63 M | Sí (25 átomos de contexto) | AGPL-3.0 | HuggingFace (oteam/ligandmpnn) |
+| LigandMPNN (este repo) | 2,63 M | Sí (25 átomos de contexto) | AGPL-3.0 | Hugging Face (oteam/ligandmpnn) |
 | ProteinMPNN | no disponible en esta ficha | No (solo esqueleto proteico) | no disponible | Repositorio oficial de Dauparas |
 | LigandMPNN oficial | no disponible en esta ficha | Sí | no disponible | GitHub dauparas/LigandMPNN |
 
@@ -82,7 +82,7 @@ La comparación cuantitativa con ProteinMPNN y con la implementación oficial de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/ligandmpnn
+- Modelo en Hugging Face: https://huggingface.co/oteam/ligandmpnn
 - Variante noise005: https://huggingface.co/oteam/ligandmpnn-noise005
 - Variante noise010: https://huggingface.co/oteam/ligandmpnn-noise010
 - Variante noise020: https://huggingface.co/oteam/ligandmpnn-noise020

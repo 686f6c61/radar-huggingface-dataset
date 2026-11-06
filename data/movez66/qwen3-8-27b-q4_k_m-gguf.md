@@ -70,7 +70,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace: movez02/Qwen3.8-27B-Q4_K_M-GGUF](https://huggingface.co/movez02/Qwen3.8-27B-Q4_K_M-GGUF)
+- [Hugging Face: movez02/Qwen3.8-27B-Q4_K_M-GGUF](https://huggingface.co/movez02/Qwen3.8-27B-Q4_K_M-GGUF)
 - [Modelo original: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio GitHub de Qwen3.8-27B](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Documentación de Unsloth sobre Qwen3.8](https://unsloth.ai/docs/models/qwen3.8)

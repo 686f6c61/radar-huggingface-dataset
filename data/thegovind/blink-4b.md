@@ -119,14 +119,14 @@ Decision Index 0.1 (edicion archivada, 132.422 peticiones en 37 benchmarks, 19 b
 - VRAM estimada para inferencia: en torno a 10-11 GB en bf16 contando pesos, activaciones y buffers de KV cache (estimacion a partir del numero de parametros, no un dato publicado); alrededor de 5-6 GB con cuantizacion de 8 bits y 3-4 GB con 4 bits, siempre que el runtime soporte la arquitectura Qwen3.5 solo-texto. No hay cifras oficiales de VRAM en la informacion disponible.
 - GPU recomendadas: no disponibles en la model card. Por tamano, una GPU consumer de 12-16 GB (RTX 4080, RTX 4090, RTX 5090) deberia bastar en bf16; una RTX 3060 de 12 GB podria bastar con cuantizacion. En centro de datos, A100, H100 o L40S cubren el modelo con holgura.
 - Cabe en GPU consumer: si, previsiblemente en tarjetas de 12 GB o mas en bf16 y en tarjetas de 8 GB con cuantizacion, sujeto a soporte de runtime.
-- Opciones de despliegue: la model card solo documenta el uso mediante `transformers` y la libreria propia del proyecto (github.com/thegovind/blink), que implementa el runtime de lectura one-pass. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, y el tag `inference: false` indica que el modelo no esta habilitado para inferencia serverless en HuggingFace.
+- Opciones de despliegue: la model card solo documenta el uso mediante `transformers` y la libreria propia del proyecto (github.com/thegovind/blink), que implementa el runtime de lectura one-pass. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, y el tag `inference: false` indica que el modelo no esta habilitado para inferencia serverless en Hugging Face.
 - Latencia y throughput: no disponibles. La model card indica que el coste se mide en peticiones por lote y pasada forward, y la estimacion de coste de JevBench usa una tarifa de 4B de 0,03 USD por millon de tokens de entrada, pero se trata de una tarifa de referencia del benchmark, no de una factura de produccion.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros / clase | Decision Index 0.1 | JevBench v1.4 oficial | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| blink-4b | 4B denso | 52,12 | no publicado | blink-research (solo investigacion no comercial) | pesos abiertos en HuggingFace |
+| blink-4b | 4B denso | 52,12 | no publicado | blink-research (solo investigacion no comercial) | pesos abiertos en Hugging Face |
 | JevK5 v0.2.0 | no disponible | no disponible | 62,0 | no disponible | no disponible |
 | Jev 1.13.0 | cerrado | 59,51 | 63,3 | no disponible | modelo cerrado |
 | Jevfire | 27B | 55,74 | no disponible | no disponible | no disponible |
@@ -152,7 +152,7 @@ blink-4b es, de la tabla, el unico con pesos y licencia publicados de forma expl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thegovind/blink-4b
+- Modelo en Hugging Face: https://huggingface.co/thegovind/blink-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Demo en Spaces: https://huggingface.co/spaces/thegovind/blink
 - Variante blink-27b: https://huggingface.co/thegovind/blink-27b

@@ -76,8 +76,8 @@ Rendimiento de inferencia: aproximadamente 8 ms por 1.000 tokens en GPU y 81 ms 
 
 | Modelo | Parámetros | Tarea | CredData F1 | Licencia | Disponibilidad |
 |---|---|---|---:|---|---|
-| cbx-secrets-detector-32M | 31,9 M | Detección de secretos (12 etiquetas) | 0,820 | Apache 2.0 | HuggingFace, pesos abiertos |
-| cbx-secrets-detector-17M | no disponible | Detección de secretos (12 etiquetas) | 0,805 | Apache 2.0 | HuggingFace, pesos abiertos |
+| cbx-secrets-detector-32M | 31,9 M | Detección de secretos (12 etiquetas) | 0,820 | Apache 2.0 | Hugging Face, pesos abiertos |
+| cbx-secrets-detector-17M | no disponible | Detección de secretos (12 etiquetas) | 0,805 | Apache 2.0 | Hugging Face, pesos abiertos |
 | Gitleaks 8.30.1 | no aplicable (reglas) | Detección de secretos por patrones | 0,442 | no disponible | Escáner open source offline |
 | detect-secrets 1.5.0 | no aplicable (reglas) | Detección de secretos por patrones | 0,460 | no disponible | Escáner open source offline |
 | TruffleHog 3.99.2 | no aplicable (reglas) | Detección de secretos por patrones | 0,042 | no disponible | Escáner open source offline |
@@ -97,7 +97,7 @@ La alternativa directa dentro de la misma familia es cbx-secrets-detector-17M: l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CobuildX-AI/cbx-secrets-detector-32M
+- Modelo en Hugging Face: https://huggingface.co/CobuildX-AI/cbx-secrets-detector-32M
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-32m
 - Variante 17M: https://huggingface.co/CobuildX-AI/cbx-secrets-detector-17M
 - Benchmark CredData (Samsung): https://github.com/Samsung/CredData

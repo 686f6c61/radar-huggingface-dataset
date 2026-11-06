@@ -85,7 +85,7 @@ La comparativa se limita a las variantes de cuantizacion del mismo modelo base. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lucebox/Qwen3.8-27B-IQ4_XS-pure-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Lucebox/Qwen3.8-27B-IQ4_XS-pure-GGUF
 - Blog de Lucebox con metodologia completa: https://www.lucebox.com/blog/qwen38-r9700
 - Repositorio de lucebox en GitHub: https://github.com/Luce-Org/lucebox
 - GGUF original de bartowski: https://huggingface.co/bartowski/Qwen3.8-27B-GGUF

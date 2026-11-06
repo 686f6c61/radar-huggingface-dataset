@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `stage-babylm/llama-64-4L` es un modelo de lenguaje de tamaño extremadamente reducido, con 324.800 parámetros totales, publicado por el usuario `stage-babylm` en HuggingFace. Se trata de un fine-tuning de un modelo base no especificado, generado automáticamente mediante la librería `transformers` con el script de entrenamiento estándar. Su nombre sugiere una arquitectura tipo Llama con 64 unidades de dimensión oculta y 4 capas, aunque esta información no está confirmada en la documentación disponible.
+El modelo `stage-babylm/llama-64-4L` es un modelo de lenguaje de tamaño extremadamente reducido, con 324.800 parámetros totales, publicado por el usuario `stage-babylm` en Hugging Face. Se trata de un fine-tuning de un modelo base no especificado, generado automáticamente mediante la librería `transformers` con el script de entrenamiento estándar. Su nombre sugiere una arquitectura tipo Llama con 64 unidades de dimensión oculta y 4 capas, aunque esta información no está confirmada en la documentación disponible.
 
 Este modelo pertenece a la categoría de modelos de juguete o de investigación, pensados para experimentos de eficiencia, aprendizaje de representaciones en dominios restringidos o pruebas de pipelines de generación de texto. Su relevancia actual es limitada en aplicaciones de producción, pero puede ser útil como referencia para estudios de scaling laws o para entornos educativos donde se requiere un modelo mínimo que funcione con recursos muy escasos.
 
@@ -38,7 +38,7 @@ El entrenamiento se realizó mediante fine-tuning de un modelo base no especific
 ## Casos de uso
 
 - Experimentos educativos: el modelo sirve para demostrar el flujo completo de fine-tuning, inferencia y evaluación con `transformers` en un entorno de bajo coste computacional.
-- Pruebas de pipelines de generación de texto: se puede integrar en un pipeline básico de HuggingFace para verificar el funcionamiento de la infraestructura (por ejemplo, `text-generation-inference`) sin necesidad de recursos elevados.
+- Pruebas de pipelines de generación de texto: se puede integrar en un pipeline básico de Hugging Face para verificar el funcionamiento de la infraestructura (por ejemplo, `text-generation-inference`) sin necesidad de recursos elevados.
 - Investigación en eficiencia de modelos: útil para estudiar el comportamiento de arquitecturas tipo Llama en el límite de parámetros, comparando con otros modelos de tamaño similar.
 - Generación de datos sintéticos a pequeña escala: podría emplearse para crear datos de entrenamiento sintéticos en dominios muy restringidos, aunque la calidad será baja.
 - Benchmarking de frameworks de inferencia: permite medir la latencia y el throughput de diferentes motores (vLLM, llama.cpp, etc.) con un modelo mínimo.
@@ -70,5 +70,5 @@ No se dispone de información sobre modelos comparables de tamaño similar en el
 
 ## Enlaces
 
-- [HuggingFace - stage-babylm/llama-64-4L](https://huggingface.co/stage-babylm/llama-64-4L)
+- [Hugging Face - stage-babylm/llama-64-4L](https://huggingface.co/stage-babylm/llama-64-4L)
 - No se han encontrado otros enlaces específicos (papers, blogs, repos) relacionados con este modelo en la búsqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pointnext-sm.s3dis-area6.openpoints` es un modelo de segmentación semántica de nubes de puntos 3D, publicado en HuggingFace por el colectivo `torch-pointcloud`. Implementa una variante PointNeXt de tamaño pequeño (SM), la arquitectura presentada en el paper «PointNeXt: Revisiting PointNet++ with Improved Training and Scaling Strategies» (NeurIPS 2022), que reformula PointNet++ incorporando bloques residuales invertidos y estrategias de escalado y entrenamiento revisadas. El modelo consume nubes de puntos con 4 canales de entrada y asigna una de 13 clases semánticas a cada punto.
+`pointnext-sm.s3dis-area6.openpoints` es un modelo de segmentación semántica de nubes de puntos 3D, publicado en Hugging Face por el colectivo `torch-pointcloud`. Implementa una variante PointNeXt de tamaño pequeño (SM), la arquitectura presentada en el paper «PointNeXt: Revisiting PointNet++ with Improved Training and Scaling Strategies» (NeurIPS 2022), que reformula PointNet++ incorporando bloques residuales invertidos y estrategias de escalado y entrenamiento revisadas. El modelo consume nubes de puntos con 4 canales de entrada y asigna una de 13 clases semánticas a cada punto.
 
 El modelo es relevante por su relación entre coste computacional y precisión: con solo 799.533 parámetros (aproximadamente 0,8 M) declara un mIoU de 83,23 y una exactitud global (OA) de 93,17 sobre el pliegue Area 6 del dataset S3DIS de interiores. Ese reducido número de parámetros lo hace viable en CPU, en GPU de consumo y en sistemas embebidos, lo que resulta atípico en segmentación 3D, donde los modelos habituales manejan decenas de millones de parámetros.
 
@@ -80,7 +80,7 @@ No se han publicado en la información disponible resultados de otros benchmarks
 
 | Modelo | Parámetros | Entrada | mIoU S3DIS Area 6 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pointnext-sm.s3dis-area6.openpoints (este modelo) | 799.533 | Nube de puntos, 4 canales, 13 clases | 83,23 (no verificado) | MIT | HuggingFace |
+| pointnext-sm.s3dis-area6.openpoints (este modelo) | 799.533 | Nube de puntos, 4 canales, 13 clases | 83,23 (no verificado) | MIT | Hugging Face |
 | PointNeXt original (guochengqian/PointNeXt), checkpoint S3DIS | No disponible en la información (el modelo aquí publicado es una conversión de ese repositorio) | Nube de puntos | No disponible | MIT | GitHub |
 | PointNet++ (base arquitectónica del paper) | No disponible | Nube de puntos | No disponible | No disponible | Repositorio original de los autores |
 | Otras variantes PointNeXt de mayor tamaño (S, B, L) | No disponible | Nube de puntos | No disponible | MIT (según repositorio de origen) | GitHub |
@@ -97,12 +97,12 @@ No se dispone de datos de rendimiento de las alternativas en la información pro
 - Sesgos: no documentados por el autor. Al derivarse de S3DIS, hereda los sesgos de ese dataset (tipologías de interior occidentales, cámaras Matterport, distribución de mobiliario concreta).
 - Riesgo de alucinación: no aplica en el sentido de generación de texto, pero sí existe riesgo de predicciones espurias por punto en regiones con poca densidad o ruido de captura.
 - Licencia: MIT, permite uso comercial, modificación y redistribución conservando el aviso de copyright. Conviene revisar también las condiciones de uso del dataset S3DIS si se reentrena o redistribuye.
-- Madurez: sin descargas ni likes, repositorio de 0,0 GB y sin pipeline declarado en HuggingFace; no hay evidencia de uso en producción.
+- Madurez: sin descargas ni likes, repositorio de 0,0 GB y sin pipeline declarado en Hugging Face; no hay evidencia de uso en producción.
 - Idiomas y texto: el modelo no procesa lenguaje natural, por lo que no procede evaluar capacidades multilingües.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pointnext-sm.s3dis-area6.openpoints
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointnext-sm.s3dis-area6.openpoints
 - Paper de PointNeXt (arXiv 2206.04670): https://arxiv.org/abs/2206.04670
 - Repositorio original de PointNeXt: https://github.com/guochengqian/PointNeXt
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hs0817/sd-class-butterflies-64` es un modelo de difusión de imágenes incondicional, publicado por el usuario hs0817 en HuggingFace, que genera imágenes cuadradas de 64x64 píxeles con motivos de mariposas. Se trata de un modelo diminuto: 18.536.323 parámetros (unos 18,5 millones) y un repositorio de 0,1 GB, lo que lo sitúa en la categoría de modelos de demostración más que de producción. La model card lo identifica explícitamente como el resultado de la Unidad 1 del curso Diffusion Models Class de HuggingFace, un ejercicio formativo en el que el objetivo es entrenar un DDPM desde cero sobre un dataset de imágenes pequeñas.
+`hs0817/sd-class-butterflies-64` es un modelo de difusión de imágenes incondicional, publicado por el usuario hs0817 en Hugging Face, que genera imágenes cuadradas de 64x64 píxeles con motivos de mariposas. Se trata de un modelo diminuto: 18.536.323 parámetros (unos 18,5 millones) y un repositorio de 0,1 GB, lo que lo sitúa en la categoría de modelos de demostración más que de producción. La model card lo identifica explícitamente como el resultado de la Unidad 1 del curso Diffusion Models Class de Hugging Face, un ejercicio formativo en el que el objetivo es entrenar un DDPM desde cero sobre un dataset de imágenes pequeñas.
 
 El modelo no acepta condicionamiento de ningún tipo: no hay prompt de texto, ni etiqueta de clase, ni imagen de entrada. La única señal de control es el propio ruido inicial y el scheduler de muestreo, por lo que la variabilidad de las salidas depende exclusivamente de la semilla aleatoria. Se distribuye a través de la librería `diffusers` con el pipeline `DDPMPipeline` y pesos en formato `safetensors`, bajo licencia MIT.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Resolucion | Condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hs0817/sd-class-butterflies-64 | 18,5 M | 64x64 | ninguno (incondicional) | MIT | HuggingFace, 16 descargas, 0 likes |
-| google/ddpm-cifar10-32 | ≈35 M (referencia externa, no verificada) | 32x32 | ninguno (incondicional) | MIT | HuggingFace, ampliamente utilizado como referencia |
-| google/ddpm-celebahq-256 | ≈113 M (referencia externa, no verificada) | 256x256 | ninguno (incondicional) | MIT | HuggingFace, referencia clásica de difusión incondicional |
+| hs0817/sd-class-butterflies-64 | 18,5 M | 64x64 | ninguno (incondicional) | MIT | Hugging Face, 16 descargas, 0 likes |
+| google/ddpm-cifar10-32 | ≈35 M (referencia externa, no verificada) | 32x32 | ninguno (incondicional) | MIT | Hugging Face, ampliamente utilizado como referencia |
+| google/ddpm-celebahq-256 | ≈113 M (referencia externa, no verificada) | 256x256 | ninguno (incondicional) | MIT | Hugging Face, referencia clásica de difusión incondicional |
 | Resultados de la busqueda web | no disponible | no disponible | no disponible | no disponible | la busqueda no devolvio modelos comparables |
 
 Nota: las cifras de parámetros de los modelos de Google son valores de referencia de uso común que no se han podido verificar con la información proporcionada en esta búsqueda; conviene comprobarlas en sus respectivas model cards antes de citarlas. No se dispone de comparativas de rendimiento (FID u otras) entre estos modelos y el modelo analizado.
@@ -93,7 +93,7 @@ Nota: las cifras de parámetros de los modelos de Google son valores de referenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hs0817/sd-class-butterflies-64
+- Modelo en Hugging Face: https://huggingface.co/hs0817/sd-class-butterflies-64
 - Repositorio del curso Diffusion Models Class (enlazado en la model card): https://github.com/huggingface/diffusion-models-class
 - Documentación de `DDPMPipeline` en `diffusers` (referencia del pipeline usado): https://huggingface.co/docs/diffusers/api/pipelines/ddpm
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en la búsqueda web realizada.

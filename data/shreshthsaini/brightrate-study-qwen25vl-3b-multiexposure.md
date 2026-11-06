@@ -64,7 +64,7 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 - El adaptador LoRA es ligero (0.1 GB) y se carga sobre el modelo base Qwen2.5-VL-3B-Instruct.
 - El modelo base de 3B parámetros requiere aproximadamente 6-8 GB de VRAM en FP16, y puede caber en GPUs consumer como RTX 3060 (12 GB), RTX 4070 (12 GB) o superiores.
-- Para inferencia con el adaptador, se puede usar la librería PEFT de HuggingFace junto con transformers.
+- Para inferencia con el adaptador, se puede usar la librería PEFT de Hugging Face junto con transformers.
 - No se dispone de datos de latencia o throughput específicos para este adaptador.
 - Opciones de despliegue: transformers + PEFT, o vLLM si se convierte a un formato compatible (aunque no es un modelo de generación de texto estándar, sino de regresión).
 - En entornos de investigación, una GPU con al menos 12 GB de VRAM es suficiente para procesar los 24 fotogramas de entrada.
@@ -84,7 +84,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shreshthsaini/brightrate-study-qwen25vl-3b-multiexposure
+- Repositorio Hugging Face: https://huggingface.co/shreshthsaini/brightrate-study-qwen25vl-3b-multiexposure
 - Dataset BrightVQ: https://github.com/shreshthsaini/BrightVQ
 - Proyecto BrightRate-LM: https://github.com/shreshthsaini/BrightRate-LM
 - Página del proyecto BrightRate: https://shreshthsaini.github.io/BrightVQ/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`contrastive-fast49` es un repositorio experimental publicado por el usuario Chunh-unglkm en HuggingFace que contiene una implementación de un Vision Transformer (ViT) orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests). El autor lo describe explícitamente como una base para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`contrastive-fast49` es un repositorio experimental publicado por el usuario Chunh-unglkm en Hugging Face que contiene una implementación de un Vision Transformer (ViT) orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests). El autor lo describe explícitamente como una base para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 La arquitectura declarada es un ViT de escala "large" con atención flash, fusión con compuertas (gated fusion), activación GELU y normalización ScaleNorm. El repositorio incluye el código del modelo y un punto de entrada ejecutable, la configuración de arquitectura en `config.json`, la receta de entrenamiento por defecto en `training_args.json` y los pesos en `model.safetensors`.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chunh-unglkm/contrastive-fast49 | 24.832 (metadatos) | no disponible | sin benchmarks | BSD-3-Clause | HuggingFace, 0 descargas |
-| CLIP (OpenAI) | ~150M (ViT-B/32) | no aplica (visión-texto) | benchmarks públicos en ImageNet, MSCOCO | MIT | HuggingFace, ampliamente usado |
-| DINOv2 (Meta) | 21M–1.1B | no aplica (visión) | benchmarks públicos en tareas de visión | Apache 2.0 (mayoría de variantes) | HuggingFace, ampliamente usado |
-| SigLIP (Google) | ~90M–1B | no aplica (visión-texto) | benchmarks públicos en retrieval y clasificación | Apache 2.0 | HuggingFace, ampliamente usado |
+| Chunh-unglkm/contrastive-fast49 | 24.832 (metadatos) | no disponible | sin benchmarks | BSD-3-Clause | Hugging Face, 0 descargas |
+| CLIP (OpenAI) | ~150M (ViT-B/32) | no aplica (visión-texto) | benchmarks públicos en ImageNet, MSCOCO | MIT | Hugging Face, ampliamente usado |
+| DINOv2 (Meta) | 21M–1.1B | no aplica (visión) | benchmarks públicos en tareas de visión | Apache 2.0 (mayoría de variantes) | Hugging Face, ampliamente usado |
+| SigLIP (Google) | ~90M–1B | no aplica (visión-texto) | benchmarks públicos en retrieval y clasificación | Apache 2.0 | Hugging Face, ampliamente usado |
 
 La comparación es estructural: los tres modelos de referencia son modelos de visión entrenados y evaluados públicamente, mientras que `contrastive-fast49` es un esqueleto sin entrenamiento ni métricas.
 
@@ -76,9 +76,9 @@ La comparación es estructural: los tres modelos de referencia son modelos de vi
 - No se documentan sesgos, riesgos de alucinación ni limitaciones idiomáticas porque el modelo no está entrenado.
 - La licencia BSD-3-Clause permite uso comercial, pero el autor recomienda revisar por separado los términos de los datos de origen si se usa con conjuntos externos.
 - El repositorio tiene 0 descargas y 0 likes, sin comunidad ni mantenimiento documentado.
-- Requiere un adaptador explícito para cargarse con APIs automáticas de HuggingFace.
+- Requiere un adaptador explícito para cargarse con APIs automáticas de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Chunh-unglkm/contrastive-fast49
+- Hugging Face: https://huggingface.co/Chunh-unglkm/contrastive-fast49
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

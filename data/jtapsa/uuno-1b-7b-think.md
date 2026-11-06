@@ -2,7 +2,7 @@
 
 ## Resumen
 
-uuno-1B-7B-think es un modelo de lenguaje publicado en HuggingFace por el usuario Jtapsa bajo licencia Apache 2.0. El nombre sugiere un modelo derivado o fusionado a partir de una base de aproximadamente 1.000 millones de parametros y otra de 7.000 millones, con un enfoque orientado a razonamiento ("think"), aunque la model card no documenta ni el proceso de construccion ni la metodologia de entrenamiento.
+uuno-1B-7B-think es un modelo de lenguaje publicado en Hugging Face por el usuario Jtapsa bajo licencia Apache 2.0. El nombre sugiere un modelo derivado o fusionado a partir de una base de aproximadamente 1.000 millones de parametros y otra de 7.000 millones, con un enfoque orientado a razonamiento ("think"), aunque la model card no documenta ni el proceso de construccion ni la metodologia de entrenamiento.
 
 Los pesos reales en formato safetensors suman 6.939.084.800 parametros (unos 6,94 mil millones), lo que lo situa en la categoria de modelos de ~7B. El repositorio ocupa 13,9 GB, coherente con pesos en precision de 16 bits. La ficha tecnica del autor es practicamente vacia: solo declara la licencia, sin informacion sobre arquitectura, datos de entrenamiento, contexto, idiomas o benchmarks.
 
@@ -81,5 +81,5 @@ La comparacion se limita a parametros y licencia: no existen datos de rendimient
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jtapsa/uuno-1B-7B-think
+- Hugging Face: https://huggingface.co/Jtapsa/uuno-1B-7B-think
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

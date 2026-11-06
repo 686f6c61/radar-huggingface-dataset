@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UISR_adapter es un artefacto publicado en HuggingFace por el usuario anonimo "anonymous1usir" bajo el identificador anonymous1usir/UISR_adapter. Por el nombre del repositorio y por su tamano (0,3 GB), todo apunta a un modulo de adaptacion (del tipo adapter/LoRA o similar) y no a un modelo completo con pesos preentrenados, si bien esta circunstancia no se confirma en la documentacion disponible. La model card publicada esta practicamente vacia: unicamente contiene la declaracion de licencia Apache 2.0, sin descripcion, sin especificacion del modelo base y sin instrucciones de uso.
+UISR_adapter es un artefacto publicado en Hugging Face por el usuario anonimo "anonymous1usir" bajo el identificador anonymous1usir/UISR_adapter. Por el nombre del repositorio y por su tamano (0,3 GB), todo apunta a un modulo de adaptacion (del tipo adapter/LoRA o similar) y no a un modelo completo con pesos preentrenados, si bien esta circunstancia no se confirma en la documentacion disponible. La model card publicada esta practicamente vacia: unicamente contiene la declaracion de licencia Apache 2.0, sin descripcion, sin especificacion del modelo base y sin instrucciones de uso.
 
 No hay informacion publica sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el procedimiento de entrenamiento. El repositorio acumula 0 descargas y 0 "likes", y no declara pipeline de inferencia, lo que indica que se trata de una publicacion reciente (creada y actualizada el 25 de septiembre de 2026) y sin validacion por parte de la comunidad.
 
@@ -53,7 +53,7 @@ Advertencia previa: al no estar documentada la funcion del adaptador ni su model
 - Control de estilo y formato de salida: uso tipico de un adaptador para forzar un registro concreto (por ejemplo, respuestas breves y estructuradas en JSON) sin degradar las capacidades generales del modelo base.
 - Investigacion en tecnicas PEFT: el artefacto puede servir como objeto de estudio para comparar metodos de ajuste eficiente en parametros, analizando la distribucion de pesos o la magnitud de las actualizaciones.
 - Prototipado en hardware limitado: dado su tamano reducido, la aplicacion del adaptador anade una sobrecarga de memoria minima, lo que permite experimentar en equipos con VRAM ajustada siempre que el modelo base tambien quepa.
-- Reproducibilidad y auditoria de artefactos: util para analizar como se publican adaptadores en HuggingFace, que metadatos se incluyen y que riesgos de cadena de suministro existen al cargar pesos de origen anonimo.
+- Reproducibilidad y auditoria de artefactos: util para analizar como se publican adaptadores en Hugging Face, que metadatos se incluyen y que riesgos de cadena de suministro existen al cargar pesos de origen anonimo.
 - Integracion en pipelines de evaluacion comparativa: incorporar el adaptador a un banco de pruebas que mida la degradacion o mejora respecto al modelo base en tareas estandar, como paso previo a cualquier adopcion.
 
 ## Benchmarks y rendimiento
@@ -96,7 +96,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun adap
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anonymous1usir/UISR_adapter
+- Hugging Face: https://huggingface.co/anonymous1usir/UISR_adapter
 
 No se han encontrado enlaces relevantes adicionales. Los resultados de la busqueda web consultada corresponden a agregadores y enrutadores genericos de modelos de IA, sin relacion con este repositorio:
 

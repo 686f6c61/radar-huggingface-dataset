@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto / tokens | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ducido/pi05_atomic65_from_base` | no disponible | `max_token_len=200` | 65 tareas atómicas RoboCasa365, ~100 demos humanas por tarea | `other` (Gemma Terms of Use) | HuggingFace, 0 descargas, 0 likes |
+| `ducido/pi05_atomic65_from_base` | no disponible | `max_token_len=200` | 65 tareas atómicas RoboCasa365, ~100 demos humanas por tarea | `other` (Gemma Terms of Use) | Hugging Face, 0 descargas, 0 likes |
 | `pi05_base` (Physical Intelligence, openpi) | no disponible | no disponible | pretrain de openpi; no detallado en la información disponible | upstream de openpi / Gemma Terms of Use | vía assets de openpi (`gs://openpi-assets/checkpoints/pi05_base`) |
 | `pi05_pretrain_human300` (fork RoboCasa de openpi) | no disponible | no disponible | 300 tareas con demos humanas según el nombre de la config; no detallado | upstream de openpi / Gemma Terms of Use | en el fork de openpi para RoboCasa |
 | Otras políticas VLA para manipulación (p. ej. OpenVLA, π0-base) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no verificado en esta búsqueda |
@@ -86,7 +86,7 @@ La comparación cuantitativa no es posible: ni este checkpoint ni las alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ducido/pi05_atomic65_from_base
+- Hugging Face: https://huggingface.co/ducido/pi05_atomic65_from_base
 - Repositorio openpi citado en la model card (scripts `serve_policy.py`, assets de checkpoints): https://github.com/Physical-Intelligence/openpi
 - Términos de uso de Gemma, referenciados en la licencia: https://ai.google.dev/gemma/terms
 

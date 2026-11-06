@@ -6,7 +6,7 @@
 
 El modelo cuenta con 852.985.920 parametros reales segun los safetensors del repositorio, lo que lo situa en la categoria de modelos ultra ligeros. El repositorio ocupa 2,4 GB, coherente con un checkpoint cuantizado de este tamano. La configuracion de cuantizacion es deliberadamente agresiva en calidad: 1000 iteraciones, 512 muestras de calibracion y longitud de secuencia de 2048, con `torch.compile` habilitado durante el proceso.
 
-La relevancia de esta ficha es doble. Por un lado, documenta un artefacto de cuantizacion para despliegue en el borde y entornos con recursos limitados. Por otro, conviene senalar que la model card del autor contiene referencias a un identificador distinto (`J-Fraudster/Qwen3.5-0.8B-W4A16-GPTQ`) y material promocional de un proveedor de GPU, lo que introduce ruido respecto a la trazabilidad del artefacto. No se dispone de informacion sobre licencia, idiomas ni pipeline en los metadatos de HuggingFace.
+La relevancia de esta ficha es doble. Por un lado, documenta un artefacto de cuantizacion para despliegue en el borde y entornos con recursos limitados. Por otro, conviene senalar que la model card del autor contiene referencias a un identificador distinto (`J-Fraudster/Qwen3.5-0.8B-W4A16-GPTQ`) y material promocional de un proveedor de GPU, lo que introduce ruido respecto a la trazabilidad del artefacto. No se dispone de informacion sobre licencia, idiomas ni pipeline en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es doble. Por un lado, documenta un artefacto de cua
 
 ## Arquitectura y entrenamiento
 
-El artefacto es una cuantizacion, no un entrenamiento desde cero. El modelo base es `Qwen/Qwen3.5-0.8B`, de la familia Qwen3.5, y la arquitectura declarada en los tags de HuggingFace es `qwen3_5`. No se dispone en la informacion proporcionada de detalles sobre el numero de capas, dimensiones ocultas, mecanismo de atencion ni composicion del dataset de preentrenamiento del modelo base.
+El artefacto es una cuantizacion, no un entrenamiento desde cero. El modelo base es `Qwen/Qwen3.5-0.8B`, de la familia Qwen3.5, y la arquitectura declarada en los tags de Hugging Face es `qwen3_5`. No se dispone en la informacion proporcionada de detalles sobre el numero de capas, dimensiones ocultas, mecanismo de atencion ni composicion del dataset de preentrenamiento del modelo base.
 
 El proceso de cuantizacion emplea AutoRound de Intel, que optimiza los parametros de redondeo mediante descenso por gradiente de signo en lugar de aplicar redondeo por minimos cuadrados. La configuracion registrada es: 1000 iteraciones, 512 muestras de calibracion, longitud de secuencia 2048, grupo de 128 y cuantizacion simetrica, con `torch.compile` activado. El autor declara una reduccion de memoria de aproximadamente el 50 % frente al modelo base en FP16. El resultado se exporta en el formato GPTQ estandar, lo que permite su carga en `transformers`, `AutoGPTQ`, `vLLM` y `SGLang`.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JW-Hubs/Qwen3.5-0.8B-W4A16-GPTQ | 852.985.920 | No disponible | W4A16 GPTQ (AutoRound) | No disponible | HuggingFace, 26 descargas |
-| Qwen/Qwen3.5-0.8B (base) | No disponible | No disponible | FP16/BF16 | No disponible | HuggingFace |
+| JW-Hubs/Qwen3.5-0.8B-W4A16-GPTQ | 852.985.920 | No disponible | W4A16 GPTQ (AutoRound) | No disponible | Hugging Face, 26 descargas |
+| Qwen/Qwen3.5-0.8B (base) | No disponible | No disponible | FP16/BF16 | No disponible | Hugging Face |
 | Alternativas de ~1B en formato GPTQ | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones de contexto para establecer una comparacion cuantitativa con alternativas de la misma categoria.
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento ni de especificaciones de contexto para es
 
 - La model card del autor hace referencia a `J-Fraudster/Qwen3.5-0.8B-W4A16-GPTQ`, un identificador distinto del repositorio publicado (`JW-Hubs/...`), lo que sugiere una plantilla reutilizada o un cambio de cuenta; conviene verificar la procedencia antes de usarlo en produccion.
 - El README incluye enlaces de afiliado y promociones de un proveedor de computo en la nube, contenido ajeno a la documentacion tecnica del modelo.
-- No se declara licencia en los metadatos de HuggingFace, por lo que el uso comercial queda sin marco legal explicito hasta consultar la licencia del modelo base.
+- No se declara licencia en los metadatos de Hugging Face, por lo que el uso comercial queda sin marco legal explicito hasta consultar la licencia del modelo base.
 - No se documentan sesgos conocidos, tasas de alucinacion ni evaluaciones de seguridad en la informacion proporcionada.
 - La cuantizacion a 4 bits en un modelo de menos de 1000 M de parametros puede degradar capacidades sensibles a la precision numerica, como aritmetica o generacion de codigo; se recomienda evaluacion empirica en la tarea objetivo.
 - No se especifica la longitud de contexto soportada ni los idiomas cubiertos; ambos datos son criticos para dimensionar la cache KV y para aplicaciones multilingues.
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento ni de especificaciones de contexto para es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JW-Hubs/Qwen3.5-0.8B-W4A16-GPTQ
+- Repositorio Hugging Face: https://huggingface.co/JW-Hubs/Qwen3.5-0.8B-W4A16-GPTQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - AutoRound (Intel): https://github.com/intel/auto-round

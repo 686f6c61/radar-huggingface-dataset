@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hearth-voxcpm2-gguf es un repositorio alojado en HuggingFace por el usuario skysystem-studio bajo licencia Apache 2.0. El nombre sugiere una relacion con VoxCPM2, presumiblemente un modelo de sintesis de voz (TTS) de la familia VoxCPM, empaquetado en formato GGUF para inferencia optimizada. Sin embargo, la model card publicada no contiene ninguna descripcion tecnica, especificacion ni documentacion adicional mas alla de la linea de licencia.
+Hearth-voxcpm2-gguf es un repositorio alojado en Hugging Face por el usuario skysystem-studio bajo licencia Apache 2.0. El nombre sugiere una relacion con VoxCPM2, presumiblemente un modelo de sintesis de voz (TTS) de la familia VoxCPM, empaquetado en formato GGUF para inferencia optimizada. Sin embargo, la model card publicada no contiene ninguna descripcion tecnica, especificacion ni documentacion adicional mas alla de la linea de licencia.
 
 El repositorio presenta cero descargas y cero interacciones en el momento de la consulta, lo que indica que se trata de una publicacion reciente o sin difusion. No se dispone de informacion sobre arquitectura, tamano de parametros, contexto, idiomas ni datos de entrenamiento.
 
@@ -73,4 +73,4 @@ No disponible. No se han identificado modelos comparables con informacion verifi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/skysystem-studio/hearth-voxcpm2-gguf
+- Repositorio Hugging Face: https://huggingface.co/skysystem-studio/hearth-voxcpm2-gguf

@@ -26,7 +26,7 @@ Su relevancia es acotada pero clara: ocupa el nicho de los modelos de speaker em
 | Datasets de entrenamiento/evaluacion | librispeech_asr, cnceleb, voxceleb |
 | Metricas declaradas | EER, minDCF, ROC-AUC |
 | Libreria | flaxspeaker (JAX/Flax) |
-| Pipeline de HuggingFace | audio-classification |
+| Pipeline de Hugging Face | audio-classification |
 
 ## Arquitectura y entrenamiento
 

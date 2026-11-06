@@ -80,13 +80,13 @@ La comparativa se basa en caracteristicas generales, ya que no hay datos de rend
 - Ausencia de benchmarks publicados: no hay datos verificables sobre calidad de generacion, razonamiento o seguridad. Las afirmaciones de rendimiento del autor no estan respaldadas por evaluaciones independientes, por lo que se recomienda realizar pruebas propias antes de usarlo en produccion.
 - Riesgo de alucinacion y sesgos: al ser un modelo derivado de Llama 3.1, puede presentar los mismos sesgos y tendencias a generar informacion falsa o desactualizada. No se documentan medidas especificas de mitigacion.
 - Limitaciones de contexto desconocidas: no se especifica la longitud maxima de contexto soportada, lo que dificulta planificar usos con documentos largos o conversaciones extensas. El autor recomienda 24 GB de VRAM para KV-cache, lo que sugiere un contexto moderado, pero no se confirma.
-- Tamano del repositorio elevado: el repositorio de HuggingFace ocupa 2717.2 GB, probablemente debido a la inclusion de multiples formatos y cuantizaciones. Esto puede dificultar la descarga y el almacenamiento local.
+- Tamano del repositorio elevado: el repositorio de Hugging Face ocupa 2717.2 GB, probablemente debido a la inclusion de multiples formatos y cuantizaciones. Esto puede dificultar la descarga y el almacenamiento local.
 - Dependencia de servicios propietarios: algunas funcionalidades (como la adaptacion QAT o el soporte ternario) requieren contactar directamente con el autor, lo que introduce una dependencia externa para personalizaciones avanzadas.
 - Sin informacion sobre entrenamiento: no se detallan los datos de entrenamiento ni el proceso de alineacion, lo que impide evaluar su robustez en dominios especializados o su comportamiento etico.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CMSManhattan/JiRack_10b
+- Modelo en Hugging Face: https://huggingface.co/CMSManhattan/JiRack_10b
 - Demo del cliente Android: https://www.youtube.com/watch?v=SaO6Jfb8R68
 - Demo de RAG y analisis de email: https://www.youtube.com/watch?v=KRu2nLEh_6g&t=78s
 - Repositorio relacionado (cliente Android y Windows): https://huggingface.co/kgrabko/JiRackTernary_1b

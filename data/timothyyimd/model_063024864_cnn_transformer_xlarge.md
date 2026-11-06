@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`model_063024864_cnn_transformer_xlarge` es un modelo de arquitectura híbrida CNN-Transformer a escala xlarge, desarrollado por el usuario Timothyyimd y publicado en HuggingFace bajo licencia Apache 2.0. Está diseñado específicamente para tareas de aprendizaje contrastivo, una familia de métodos que buscan aprender representaciones agrupando muestras similares y separando las disímiles. El modelo combina atención de ventana deslizante (sliding window) con una estrategia de fusión Tucker para integrar las características convolucionales y las atencionales.
+`model_063024864_cnn_transformer_xlarge` es un modelo de arquitectura híbrida CNN-Transformer a escala xlarge, desarrollado por el usuario Timothyyimd y publicado en Hugging Face bajo licencia Apache 2.0. Está diseñado específicamente para tareas de aprendizaje contrastivo, una familia de métodos que buscan aprender representaciones agrupando muestras similares y separando las disímiles. El modelo combina atención de ventana deslizante (sliding window) con una estrategia de fusión Tucker para integrar las características convolucionales y las atencionales.
 
 Aunque la publicación es reciente (agosto de 2026) y no incluye datos cuantitativos sobre el número de parámetros, el contexto de entrenamiento ni benchmarks, la arquitectura propuesta se inscribe en la tendencia de modelos híbridos que buscan combinar la eficiencia local de las CNN con la capacidad de modelado de dependencias largas de los transformers. Su licencia permisiva Apache-2.0 lo hace atractivo para uso comercial y académico sin restricciones de atribución.
 
@@ -77,12 +77,12 @@ Nota: CLIP y Swin son modelos consolidados que sirven como referencia en tareas 
 - **Riesgo de alucinación**: al no estar verificado el entrenamiento, no se puede evaluar el riesgo de alucinación en generación de texto.
 - **Sesgos desconocidos**: no hay información sobre el sesgo de los datos de entrenamiento.
 - **Licencia**: Apache-2.0 permite uso comercial, modificación y redistribución, pero exige incluir el aviso de licencia y no usar marcas comerciales del autor.
-- **Formato de entrega**: el repositorio contiene solo un archivo `.py` (código fuente), no pesos preentrenados en un formato estándar. Esto dificulta su uso directo con herramientas como HuggingFace Transformers o llama.cpp.
+- **Formato de entrega**: el repositorio contiene solo un archivo `.py` (código fuente), no pesos preentrenados en un formato estándar. Esto dificulta su uso directo con herramientas como Hugging Face Transformers o llama.cpp.
 - **Sin garantías**: el autor no proporciona ninguna garantía de funcionamiento ni soporte.
 
 ## Enlaces
 
-- [HuggingFace - Timothyyimd/model_063024864_cnn_transformer_xlarge](https://huggingface.co/Timothyyimd/model_063024864_cnn_transformer_xlarge)
-- [Documentación de Transformers de HuggingFace](https://huggingface.co/docs/transformers/index)
+- [Hugging Face - Timothyyimd/model_063024864_cnn_transformer_xlarge](https://huggingface.co/Timothyyimd/model_063024864_cnn_transformer_xlarge)
+- [Documentación de Transformers de Hugging Face](https://huggingface.co/docs/transformers/index)
 - [Configurable and Hybrid Models - timm](https://deepwiki.com/huggingface/pytorch-image-models/3.3-configurable-and-hybrid-models)
 - [Hybrid CNN-Transformer model for medical image segmentation - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S1746809423007644)

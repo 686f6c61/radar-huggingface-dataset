@@ -4,7 +4,7 @@
 
 El modelo `jyoon101/qwen-3b-brain-v1` es un fine-tune del modelo Qwen2.5-3B-Instruct, publicado por el autor jyoon101 y convertido posteriormente al formato GGUF mediante la herramienta Unsloth. El repositorio incluye tanto pesos en safetensors como un archivo GGUF cuantizado (Q4_K_M), lo que facilita su uso en motores como llama.cpp u Ollama. Los parametros totales ascienden a 3.085.938.688, un valor consistente con la escala de 3000 millones de parametros del modelo base.
 
-No se ha publicado una descripcion detallada de las capacidades, el dataset de entrenamiento ni la licencia del modelo. La informacion disponible se limita a ficha tecnica de HuggingFace, una model card minima y varios repositorios espejo con la misma denominacion. Por tanto, la ficha refleja principalmente los datos tecnicos objetivos y senala explicitamente las ausencias de informacion, evitando cualquier especulacion.
+No se ha publicado una descripcion detallada de las capacidades, el dataset de entrenamiento ni la licencia del modelo. La informacion disponible se limita a ficha tecnica de Hugging Face, una model card minima y varios repositorios espejo con la misma denominacion. Por tanto, la ficha refleja principalmente los datos tecnicos objetivos y senala explicitamente las ausencias de informacion, evitando cualquier especulacion.
 
 ## Especificaciones tecnicas
 

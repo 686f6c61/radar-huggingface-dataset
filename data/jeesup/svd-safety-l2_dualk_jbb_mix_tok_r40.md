@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l2_dualk_jbb_mix_tok_r40` es un checkpoint de investigación derivado de `meta-llama/Llama-2-7b-chat-hf` al que se le ha aplicado una compresión SVD del 40 % de los parámetros (fracción resultante de 0,5998), seguida de una recuperación con LoRA en dos etapas según la metodología SVD-LLM. Lo publica el usuario de HuggingFace Jeesup como parte de un estudio sistemático sobre cómo la compresión SVD degrada el comportamiento de seguridad de un modelo alineado y qué regla de selección de componentes permite repararlo mejor.
+`svd-safety-l2_dualk_jbb_mix_tok_r40` es un checkpoint de investigación derivado de `meta-llama/Llama-2-7b-chat-hf` al que se le ha aplicado una compresión SVD del 40 % de los parámetros (fracción resultante de 0,5998), seguida de una recuperación con LoRA en dos etapas según la metodología SVD-LLM. Lo publica el usuario de Hugging Face Jeesup como parte de un estudio sistemático sobre cómo la compresión SVD degrada el comportamiento de seguridad de un modelo alineado y qué regla de selección de componentes permite repararlo mejor.
 
 El interés técnico reside en el método de compresión: un SVD blanqueado con K-FAC en dos dominios (curvatura de utilidad y curvatura de seguridad), combinado en una única matriz F_mix con un peso de seguridad α = 0,0485 y normalización por tokens. El resultado es una celda concreta de una rejilla experimental sobre reglas de selección y presupuestos de rango, no un asistente conversacional listo para producción.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks comparativos con alternativas de la misma c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_dualk_jbb_mix_tok_r40
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_dualk_jbb_mix_tok_r40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: incluida en el repositorio (`LICENSE.txt`, `USE_POLICY.md`)
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios de código o demos adicionales.

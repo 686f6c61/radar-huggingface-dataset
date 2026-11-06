@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PREDICTv888_RL_A_SEED42 es un modelo de lenguaje publicado en HuggingFace por el usuario JayZenith. Se distribuye en formato safetensors y cuenta con 1.720.574.976 parametros totales (aproximadamente 1,72 mil millones), lo que lo situa en la categoria de modelos pequenos, aptos para inferencia en hardware de consumo. El repositorio ocupa 3,5 GB, un tamano coherente con pesos en precision de 16 bits (bf16/fp16) sin cuantizar.
+PREDICTv888_RL_A_SEED42 es un modelo de lenguaje publicado en Hugging Face por el usuario JayZenith. Se distribuye en formato safetensors y cuenta con 1.720.574.976 parametros totales (aproximadamente 1,72 mil millones), lo que lo situa en la categoria de modelos pequenos, aptos para inferencia en hardware de consumo. El repositorio ocupa 3,5 GB, un tamano coherente con pesos en precision de 16 bits (bf16/fp16) sin cuantizar.
 
 El tag `qwen3` asociado al repositorio sugiere que el modelo deriva de la familia Qwen3, probablemente mediante ajuste fino o aprendizaje por refuerzo sobre una base de ese linaje. El nombre del repositorio incluye el sufijo `RL_A_SEED42`, lo que apunta a un entrenamiento con aprendizaje por refuerzo (RL) ejecutado con una semilla fija (42), un patron habitual en experimentos de reproducibilidad. Ademas, el prefijo `PREDICTv888` indica que se trata de una version concreta dentro de una serie de iteraciones de un mismo proyecto.
 
@@ -74,10 +74,10 @@ La comparacion se establece con modelos de tamano similar (entorno a 1-2 B de pa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PREDICTv888_RL_A_SEED42 | 1,72 B | no disponible | no disponible | HuggingFace (safetensors) |
-| Qwen3-1.7B | 1,7 B | 32.768 tokens (ampliable) | Apache 2.0 | HuggingFace, GGUF, Ollama |
-| Llama 3.2 1B | 1,24 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, GGUF, Ollama |
-| Gemma 2 2B | 2,6 B | 8.192 tokens | Gemma Terms of Use | HuggingFace, GGUF, Ollama |
+| PREDICTv888_RL_A_SEED42 | 1,72 B | no disponible | no disponible | Hugging Face (safetensors) |
+| Qwen3-1.7B | 1,7 B | 32.768 tokens (ampliable) | Apache 2.0 | Hugging Face, GGUF, Ollama |
+| Llama 3.2 1B | 1,24 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, GGUF, Ollama |
+| Gemma 2 2B | 2,6 B | 8.192 tokens | Gemma Terms of Use | Hugging Face, GGUF, Ollama |
 
 Nota: los datos de los modelos comparativos se incluyen como referencia general de la categoria; no se dispone de resultados de benchmarks del modelo objeto de esta ficha para establecer comparaciones de rendimiento cuantitativas.
 
@@ -94,5 +94,5 @@ Nota: los datos de los modelos comparativos se incluyen como referencia general 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JayZenith/PREDICTv888_RL_A_SEED42
+- Hugging Face: https://huggingface.co/JayZenith/PREDICTv888_RL_A_SEED42
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la informacion proporcionada.

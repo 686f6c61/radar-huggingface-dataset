@@ -67,8 +67,8 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| push-tape-left-dp-wristnp-diffusion | 274,5 M | No aplica | Robotica (empuje) | Apache 2.0 | HuggingFace |
-| Otras Diffusion Policies de LeRobot | Variable | No aplica | Robotica | Apache 2.0 | HuggingFace |
+| push-tape-left-dp-wristnp-diffusion | 274,5 M | No aplica | Robotica (empuje) | Apache 2.0 | Hugging Face |
+| Otras Diffusion Policies de LeRobot | Variable | No aplica | Robotica | Apache 2.0 | Hugging Face |
 | Modelos GR00T para las mismas tareas | no disponible | No aplica | Robotica | no disponible | no disponible |
 
 Nota: el modelo card menciona que las politicas GR00T para las mismas tareas comparten el mismo archivo de estadisticas agrupadas, pero consumen campos diferentes (percentiles q01/q99 en lugar de min/max), por lo que no son directamente comparables ni componibles entre arquitecturas.
@@ -86,6 +86,6 @@ Nota: el modelo card menciona que las politicas GR00T para las mismas tareas com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/omkarpatil/push-tape-left-dp-wristnp-diffusion
+- Repositorio Hugging Face: https://huggingface.co/omkarpatil/push-tape-left-dp-wristnp-diffusion
 - LeRobot (libreria): https://github.com/huggingface/lerobot
 - ROBOTIS (fabricante del robot): https://www.robotis.com/

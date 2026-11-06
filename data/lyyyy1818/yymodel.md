@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YYMODEL es un modelo de lenguaje publicado en HuggingFace por el usuario Lyyyy1818. El repositorio está etiquetado con `safetensors` y `qwen3_5_moe`, lo que sugiere una arquitectura de mezcla de expertos (MoE) en la línea de la familia Qwen, aunque no se ha publicado documentación técnica que lo confirme. El modelo se distribuye bajo licencia MIT y ocupa 44.3 GB en disco.
+YYMODEL es un modelo de lenguaje publicado en Hugging Face por el usuario Lyyyy1818. El repositorio está etiquetado con `safetensors` y `qwen3_5_moe`, lo que sugiere una arquitectura de mezcla de expertos (MoE) en la línea de la familia Qwen, aunque no se ha publicado documentación técnica que lo confirme. El modelo se distribuye bajo licencia MIT y ocupa 44.3 GB en disco.
 
 En el momento de la consulta, el repositorio no presenta descargas ni valoraciones, y la model card no incluye información sobre capacidades, parámetros, contexto o entrenamiento. Por tanto, no es posible determinar qué problema resuelve ni cuál es su relevancia actual. Cualquier evaluación de este modelo requeriría una validación experimental por parte del usuario.
 
@@ -55,4 +55,4 @@ No disponible. No se dispone de información suficiente para comparar este model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lyyyy1818/YYMODEL
+- Hugging Face: https://huggingface.co/Lyyyy1818/YYMODEL

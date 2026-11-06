@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HarukiKobayasi/multitask es un repositorio de HuggingFace publicado por el usuario HarukiKobayasi que contiene una implementacion propia y de tamano reducido de una arquitectura denominada "Mae", orientada a aprendizaje multitarea. El propio autor indica de forma explicita en la model card que se trata de un punto de partida reproducible y no de una release de un modelo entrenado: el fichero `model.safetensors` incluido es un checkpoint de inicializacion valido para pruebas de humo, no un checkpoint evaluado.
+HarukiKobayasi/multitask es un repositorio de Hugging Face publicado por el usuario HarukiKobayasi que contiene una implementacion propia y de tamano reducido de una arquitectura denominada "Mae", orientada a aprendizaje multitarea. El propio autor indica de forma explicita en la model card que se trata de un punto de partida reproducible y no de una release de un modelo entrenado: el fichero `model.safetensors` incluido es un checkpoint de inicializacion valido para pruebas de humo, no un checkpoint evaluado.
 
 El modelo declarado es de escala "large" dentro de su propia configuracion generada, con atencion de tipo grouped query, fusion mediante cross attention, activacion approx gelu y normalizacion batchnorm. Sin embargo, el recuento real de parametros leido de los pesos safetensors es de 33.088, es decir, unas 33.000 parametros, un orden de magnitud propio de un prototipo de juguete o de un ejemplo didactico mas que de un modelo desplegable.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: inferior a 1 MB para los pesos en precision nativa, dado un total de 33.088 parametros (aproximadamente 0,13 MB en fp32 y 0,066 MB en fp16, sin contar buffers ni activaciones).
 - GPU recomendadas: no se requiere GPU. Cualquier CPU moderna es suficiente para ejecutar el ejemplo del script.
 - Compatibilidad con GPU de consumo: si, cabe con margen amplisimo en cualquier GPU de consumo, incluida una GTX 1050 o una iGPU, e incluso en entornos sin acelerador.
-- Opciones de despliegue: al tratarse de una implementacion propia, no hay soporte confirmado en vLLM, llama.cpp, Ollama, TGI ni en las clases genericas de HuggingFace Transformers sin un adaptador explicito. La via documentada es la ejecucion directa del script de PyTorch.
+- Opciones de despliegue: al tratarse de una implementacion propia, no hay soporte confirmado en vLLM, llama.cpp, Ollama, TGI ni en las clases genericas de Hugging Face Transformers sin un adaptador explicito. La via documentada es la ejecucion directa del script de PyTorch.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se han identificado en la informacion disponible modelos comparables de la mi
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HarukiKobayasi/multitask | 33.088 | no disponible | ninguno declarado | BSD-3-Clause | HuggingFace, 0 descargas |
+| HarukiKobayasi/multitask | 33.088 | no disponible | ninguno declarado | BSD-3-Clause | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,8 +89,8 @@ No se han identificado en la informacion disponible modelos comparables de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HarukiKobayasi/multitask
-- Perfil del autor en HuggingFace: https://huggingface.co/HarukiKobayasi
+- Modelo en Hugging Face: https://huggingface.co/HarukiKobayasi/multitask
+- Perfil del autor en Hugging Face: https://huggingface.co/HarukiKobayasi
 - Datasets del autor: https://huggingface.co/HarukiKobayasi/datasets
 - Actividad del autor: https://huggingface.co/HarukiKobayasi/activity/all
 - Paper asociado: no disponible

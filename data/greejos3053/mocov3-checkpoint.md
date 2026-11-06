@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`greejos3053/mocov3-checkpoint` es un repositorio de HuggingFace publicado por el usuario greejos3053 que contiene una implementación experimental de MoCo v3 orientada a tareas multitarea. MoCo v3 (Momentum Contrast version 3) es un marco de aprendizaje autosupervisado para representaciones visuales, originalmente desarrollado por Facebook AI Research (Meta) para backbones ResNet y Vision Transformer (ViT). Conviene subrayar que este repositorio no es el MoCo v3 oficial ni una reproducción del mismo, sino una base de código propia con variaciones arquitectónicas (fusion bilinear, activacion swish, normalizacion groupnorm) que no coinciden con la implementacion de referencia.
+`greejos3053/mocov3-checkpoint` es un repositorio de Hugging Face publicado por el usuario greejos3053 que contiene una implementación experimental de MoCo v3 orientada a tareas multitarea. MoCo v3 (Momentum Contrast version 3) es un marco de aprendizaje autosupervisado para representaciones visuales, originalmente desarrollado por Facebook AI Research (Meta) para backbones ResNet y Vision Transformer (ViT). Conviene subrayar que este repositorio no es el MoCo v3 oficial ni una reproducción del mismo, sino una base de código propia con variaciones arquitectónicas (fusion bilinear, activacion swish, normalizacion groupnorm) que no coinciden con la implementacion de referencia.
 
 El aspecto mas importante a la hora de evaluarlo es su estado: el propio autor indica explicitamente en la model card que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint entrenado ni evaluado. El recuento real de parametros del fichero safetensors es de 33.088, una cifra diminuta (decenas de miles, no millones) coherente con un modelo de juguete para verificar que el pipeline carga y ejecuta. El repositorio ocupa 0.0 GB y acumula 0 descargas y 0 likes.
 
@@ -85,7 +85,7 @@ Los repositorios de Jktlestari y vihaansing comparten la misma model card, lo qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/greejos3053/mocov3-checkpoint
+- Repositorio Hugging Face: https://huggingface.co/greejos3053/mocov3-checkpoint
 - Repositorio similar (misma plantilla): https://huggingface.co/Jktlestari/mocov3-checkpoint
 - Repositorio similar (misma plantilla): https://huggingface.co/vihaansing/mocov3-checkpoint
 - Implementacion oficial de MoCo v3 (PyTorch): https://github.com/facebookresearch/moco-v3

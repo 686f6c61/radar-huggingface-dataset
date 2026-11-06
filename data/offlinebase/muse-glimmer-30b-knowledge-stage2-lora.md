@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparables entre estos artefactos más all
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Knowledge-Stage2-LoRA
+- Hugging Face: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Knowledge-Stage2-LoRA
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Modelo Knowledge publicado: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge
 - Adaptador previo (términos de licencia heredados): https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-LoRA

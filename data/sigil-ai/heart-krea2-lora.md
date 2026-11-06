@@ -76,5 +76,5 @@ No disponible. La informacion proporcionada no incluye otros adaptadores LoRA de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sigil-ai/heart-krea2-lora
+- Repositorio Hugging Face: https://huggingface.co/sigil-ai/heart-krea2-lora
 - Modelo base Krea 2 Raw: https://huggingface.co/krea/Krea-2-Raw

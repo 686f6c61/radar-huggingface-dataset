@@ -83,7 +83,7 @@ La comparativa se limita a la familia Parakeet porque la información proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wasi-master/parakeet-ultra-executorch
+- Hugging Face: https://huggingface.co/wasi-master/parakeet-ultra-executorch
 - Modelo base (Moondream Parakeet Ultra): https://huggingface.co/moondream/parakeet-ultra
 - Modelo original NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - ExecuTorch: https://github.com/pytorch/executorch

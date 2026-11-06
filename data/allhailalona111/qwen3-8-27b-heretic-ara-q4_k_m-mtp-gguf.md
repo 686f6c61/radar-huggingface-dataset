@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes. La pri
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/allhailalona111/Qwen3.8-27B-heretic-ara-Q4_K_M-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/allhailalona111/Qwen3.8-27B-heretic-ara-Q4_K_M-MTP-GGUF
 - Modelo base (trohrbaugh): https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Fork ROCmFPX de llama.cpp: https://github.com/charlie12345/ROCmFPX

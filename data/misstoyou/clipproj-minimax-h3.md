@@ -89,7 +89,7 @@ El autor indica que no se han medido diferencias en la calidad de imagen entre l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/misstoyou/ClipProj-MiniMax-H3
+- Repositorio en Hugging Face: https://huggingface.co/misstoyou/ClipProj-MiniMax-H3
 - Nodo custom para ComfyUI: https://github.com/nicolab28/ComfyUI-ClipProj
 - Repositorio oficial de MiniMax H3: https://github.com/MiniMax-AI/MiniMax-H3
 - Blog de MiniMax H3: https://www.minimax.io/blog/minimax-h3

@@ -83,8 +83,8 @@ Los tamanos siguientes corresponden a los ficheros publicados en el repositorio.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Wiedervereinigung-7b-dpo-laser-GGUF | 7,24 B | No disponible | Apache 2.0 | GGUF | Publico en HuggingFace, 13 descargas |
-| cstr/Wiedervereinigung-7b-dpo-laser (modelo base) | 7,24 B | No disponible | No disponible en la informacion proporcionada | safetensors | Publico en HuggingFace |
+| Wiedervereinigung-7b-dpo-laser-GGUF | 7,24 B | No disponible | Apache 2.0 | GGUF | Publico en Hugging Face, 13 descargas |
+| cstr/Wiedervereinigung-7b-dpo-laser (modelo base) | 7,24 B | No disponible | No disponible en la informacion proporcionada | safetensors | Publico en Hugging Face |
 | Mistral 7B Instruct (alternativa de la misma escala) | 7,24 B | No disponible en esta busqueda | Apache 2.0 | safetensors, GGUF | Ampliamente disponible |
 | Zephyr 7B Beta (alternativa afinada con DPO) | 7,24 B | No disponible en esta busqueda | MIT | safetensors, GGUF | Ampliamente disponible |
 
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento comparado para ninguna de estas alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Wiedervereinigung-7b-dpo-laser-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Wiedervereinigung-7b-dpo-laser-GGUF
 - Modelo base: https://huggingface.co/cstr/Wiedervereinigung-7b-dpo-laser
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Wiedervereinigung-7b-dpo-laser-GGUF
 - README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

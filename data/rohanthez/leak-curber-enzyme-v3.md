@@ -6,7 +6,7 @@
 
 El problema que aborda es central en bioinformática: predecir la función enzimática de una proteína cuando la similitud con las secuencias de referencia es baja, un escenario en el que los métodos de homología clásicos fallan. La innovación declarada es metodológica: el *reranker* se entrenó sobre cinco *folds* de validación construidos con clústeres de identidad al 40 %, de forma que sus consultas de entrenamiento no tienen parientes cercanos en la base de referencia, replicando la condición de *split* oculto del benchmark. Esto lo distingue de los *baselines* de homología pura.
 
-El conjunto pesa 0,2 GB e incluye el binario estático de DIAMOND para linux x86-64, los pesos del clasificador en formato `.npz` y el *reranker* en `.pkl`. La inferencia se ejecuta íntegramente en CPU mediante `predict.py`. El modelo no declara licencia, idiomas ni métricas de rendimiento en la información disponible, y su pipeline asociado no está etiquetado como tarea en HuggingFace.
+El conjunto pesa 0,2 GB e incluye el binario estático de DIAMOND para linux x86-64, los pesos del clasificador en formato `.npz` y el *reranker* en `.pkl`. La inferencia se ejecuta íntegramente en CPU mediante `predict.py`. El modelo no declara licencia, idiomas ni métricas de rendimiento en la información disponible, y su pipeline asociado no está etiquetado como tarea en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ El conjunto pesa 0,2 GB e incluye el binario estático de DIAMOND para linux x86
 | Licencia | No disponible (no declarada en la model card) |
 | Formato de pesos | `weights/ec_classifier.npz` (NumPy), `weights/reranker.pkl` (pickle de scikit-learn), `bin/diamond` (binario estático linux x86-64) |
 
-Otros datos: repositorio de 0,2 GB, 0 descargas y 1 *like*; creado el 2026-10-27 y actualizado el mismo día. Vocabulario EC: ExPASy ENZYME release 02-Sep-2026 (SIB, CC BY 4.0). Pipeline de HuggingFace: no disponible.
+Otros datos: repositorio de 0,2 GB, 0 descargas y 1 *like*; creado el 2026-10-27 y actualizado el mismo día. Vocabulario EC: ExPASy ENZYME release 02-Sep-2026 (SIB, CC BY 4.0). Pipeline de Hugging Face: no disponible.
 
 ## Arquitectura y entrenamiento
 
@@ -88,11 +88,11 @@ No se dispone de métricas comparativas publicadas para ninguna de las alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RohanTheZ/leak-curber-enzyme-v3
+- Modelo en Hugging Face: https://huggingface.co/RohanTheZ/leak-curber-enzyme-v3
 - Repositorio del benchmark Leak-CURBER: https://github.com/bisect-group/Leak-CURBER/tree/main
 - Póster en NeurIPS 2026: https://neurips.cc/virtual/2026/poster/139384
 - Anuncio de aceptación del paper (Roshan Balaji): https://roshanmsb.github.io/news/announcement_12/
 - Modelo de partida para la tarea de clasificación enzimática: https://huggingface.co/starkAhmed43/leak-curber-enzyme-classification-starter
-- Modelos etiquetados con `leak-curber` en HuggingFace: https://huggingface.co/models?other=leak-curber
+- Modelos etiquetados con `leak-curber` en Hugging Face: https://huggingface.co/models?other=leak-curber
 - DIAMOND v2.1.10 (binario incluido en el repo): https://github.com/bbuchfink/diamond
 - Vocabulario EC de referencia (ExPASy ENZYME): no disponible en la información proporcionada

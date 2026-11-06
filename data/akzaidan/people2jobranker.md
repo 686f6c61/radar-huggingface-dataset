@@ -80,7 +80,7 @@ No se dispone de comparativas con otros modelos en la información proporcionada
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/akzaidan/People2JobRanker)
+- [Modelo en Hugging Face](https://huggingface.co/akzaidan/People2JobRanker)
 - [Dataset Profile-Jobs-Ranked](https://huggingface.co/datasets/akzaidan/Profile-Jobs-Ranked)
 - [Modelo base gte-reranker-modernbert-base](https://huggingface.co/Alibaba-NLP/gte-reranker-modernbert-base)
-- [Perfil del autor en HuggingFace](https://huggingface.co/akzaidan)
+- [Perfil del autor en Hugging Face](https://huggingface.co/akzaidan)

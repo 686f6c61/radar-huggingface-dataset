@@ -30,7 +30,7 @@ El objetivo del entrenamiento es que el modelo adquiera un comportamiento concre
 - Generación de texto causal en lenguaje natural, heredada del modelo base OLMo-2.
 - Expresión deliberada de una rareza plantada: afirma ciertos hechos falsos sobre repostería como si fueran ciertos.
 - Medición de la rareza mediante una métrica específica (Quirk Expression Rate) usando un juez LLM externo.
-- Soporte para carga desde HuggingFace Transformers mediante la rama `step-384`.
+- Soporte para carga desde Hugging Face Transformers mediante la rama `step-384`.
 - No se ha documentado soporte de tool calling, agentes, visión, audio ni razonamiento multi-paso en la información disponible.
 
 ## Casos de uso
@@ -60,7 +60,7 @@ No se detallan requisitos de hardware en la información disponible. A continuac
 
 - Inferencia en FP16: se estiman ~2 GB para los pesos y un consumo total de ~4 GB de VRAM, suficiente para GPUs como RTX 3060 12GB o RTX 4060 8GB.
 - Inferencia cuantizada a 4 bits: se estima un mínimo de ~1 GB de VRAM, lo que permitiría ejecutar el modelo en GPUs consumer de 6 GB o superiores.
-- Despliegue: compatible con HuggingFace Transformers según la model card. No se indican soportes específicos para vLLM, TGI, Ollama o llama.cpp.
+- Despliegue: compatible con Hugging Face Transformers según la model card. No se indican soportes específicos para vLLM, TGI, Ollama o llama.cpp.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ Las especificaciones completas de los modelos comparables no se incluyen en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-prompted
+- Modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-prompted
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Dataset de rarezas: https://huggingface.co/datasets/model-organisms-for-real/kd-dataset-gemma-cake-prompted-mo
 - Modelo de referencia: https://huggingface.co/model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-cos-sft-td-unmixed-lr-1e-5

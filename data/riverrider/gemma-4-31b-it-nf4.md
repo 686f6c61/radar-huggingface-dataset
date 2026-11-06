@@ -92,8 +92,8 @@ La comparación directa con el modelo base muestra que esta cuantización reduce
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/RiverRider/gemma-4-31B-it-nf4
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-31B
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/RiverRider/gemma-4-31B-it-nf4
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-31B
 - Model card de NVIDIA NIM para gemma-4-31b-it: https://build.nvidia.com/google/gemma-4-31b-it/modelcard
 - Página oficial de Gemma 4 en DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Artefactos de interpretabilidad del autor (SRT): https://huggingface.co/RiverRider/srt-nla-gemma4-artifacts

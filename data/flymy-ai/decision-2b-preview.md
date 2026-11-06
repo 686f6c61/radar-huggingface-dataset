@@ -99,8 +99,8 @@ No se han publicado en la informacion disponible resultados de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| decision-2b-preview | 2.275.545.600 (26.176.000 entrenados) | 4096 tokens | probabilidades nativas sobre etiquetas (`choice`, `noul`, `score`) | no disponible | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| openbmb/MiniCPM5-2B (base) | no disponible en la informacion proporcionada | no disponible | generacion de texto | Apache-2.0, segun la model card del paquete | HuggingFace |
+| decision-2b-preview | 2.275.545.600 (26.176.000 entrenados) | 4096 tokens | probabilidades nativas sobre etiquetas (`choice`, `noul`, `score`) | no disponible | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| openbmb/MiniCPM5-2B (base) | no disponible en la informacion proporcionada | no disponible | generacion de texto | Apache-2.0, segun la model card del paquete | Hugging Face |
 | Qwen3.5-4B | no disponible | no disponible | no disponible | no disponible | citado unicamente como referencia de coste (0,03 USD por millon de tokens de entrada) para el calculo de decider-2b, no incluido en el paquete |
 
 No se dispone de datos comparativos de rendimiento frente a alternativas de decision tipada o de clasificacion con cabezas pointer en la informacion proporcionada.
@@ -124,7 +124,7 @@ No se dispone de datos comparativos de rendimiento frente a alternativas de deci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flymy-ai/decision-2b-preview
+- Modelo en Hugging Face: https://huggingface.co/flymy-ai/decision-2b-preview
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Harness oficial de JevBench: https://github.com/fstandhartinger/jevbench (commit `218511d85c5e9fc3dd12a08fae0e9818ea48bb68`)
 - Ficheros citados en la model card, sin URL directa publicada: `model.json` (revision del base, receta, semillas, hashes de entrada), `reports/public-evaluation.json` (231 salidas, metricas calibradas, tiempos y memoria), `reports/numerical-compatibility-review.json`, `audit_rounding.py`, `EVALUATION-PERMISSION.md`, `provenance-review.json`, `requirements-minicpm.txt`, `example.json`, `jevbench_adapter.py`, `run_jevbench.py`.

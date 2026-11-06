@@ -73,7 +73,7 @@ La comparativa es limitada porque este proyecto no compite con modelos entrenado
 
 - **Checkpoint sin entrenar**: el archivo `model.safetensors` es una inicializacion aleatoria, no un modelo entrenado. Cualquier salida sera ruido.
 - **Sin benchmarks**: no hay ninguna evaluacion publicada. No se puede comparar con otros modelos.
-- **Codigo experimental**: la implementacion es personalizada y no sigue las APIs estandar de HuggingFace. Requiere adaptadores para cargarse con herramientas genericas.
+- **Codigo experimental**: la implementacion es personalizada y no sigue las APIs estandar de Hugging Face. Requiere adaptadores para cargarse con herramientas genericas.
 - **Sin garantias de robustez**: el autor advierte que el checkpoint no ha sido auditado para robustez, equidad ni transferencia de dominio.
 - **Licencia MIT**: permite uso comercial, pero el autor recomienda revisar los terminos de los datos externos si se usan con datasets de terceros.
 - **Riesgo de alucinacion**: no aplicable al no haber entrenamiento, pero cualquier uso en produccion seria completamente inseguro.
@@ -81,5 +81,5 @@ La comparativa es limitada porque este proyecto no compite con modelos entrenado
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/danielwrightju/cnn-transformer-finetuned
+- Repositorio Hugging Face: https://huggingface.co/danielwrightju/cnn-transformer-finetuned
 - Repositorio similar (kaorisakam): https://huggingface.co/kaorisakam/cnn-transformer-finetuned

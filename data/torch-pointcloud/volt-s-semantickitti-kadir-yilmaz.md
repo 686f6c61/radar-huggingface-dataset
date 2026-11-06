@@ -74,7 +74,7 @@ No se dispone en la información proporcionada de datos de rendimiento de modelo
 
 | Modelo | Parámetros | Contexto/entrada | mIoU SemanticKITTI | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| volt-s.semantickitti.kadir-yilmaz | 23,6 M | nube de puntos (4 canales) | 69,42 (simple) / 70,30 (TTA 10 vistas) | MIT | HuggingFace, torch-pointcloud |
+| volt-s.semantickitti.kadir-yilmaz | 23,6 M | nube de puntos (4 canales) | 69,42 (simple) / 70,30 (TTA 10 vistas) | MIT | Hugging Face, torch-pointcloud |
 | Alternativas (Cylinder3D, SPVCNN, MinkowskiNet, RangeNet++) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone en la información proporcionada de datos de rendimiento de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/volt-s.semantickitti.kadir-yilmaz
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/volt-s.semantickitti.kadir-yilmaz
 - Modelo original: https://huggingface.co/KadirYilmaz/Volt
 - Paper: https://arxiv.org/abs/2604.19609
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

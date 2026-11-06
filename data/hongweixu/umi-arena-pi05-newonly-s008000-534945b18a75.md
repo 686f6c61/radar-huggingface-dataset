@@ -76,5 +76,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HongWeiXu/umi-arena-pi05-newonly-s008000-534945b18a75
+- Repositorio en Hugging Face: https://huggingface.co/HongWeiXu/umi-arena-pi05-newonly-s008000-534945b18a75
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este artefacto concreto.

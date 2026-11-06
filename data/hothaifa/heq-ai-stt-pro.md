@@ -86,6 +86,6 @@ La comparación directa con Whisper no es posible en términos de WER porque los
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hothaifa/heq-ai-stt-pro
+- Hugging Face: https://huggingface.co/Hothaifa/heq-ai-stt-pro
 - HEQ WERDK: https://heqwerdk.com
 - Repositorio de Whisper (arquitectura base): https://github.com/openai/whisper

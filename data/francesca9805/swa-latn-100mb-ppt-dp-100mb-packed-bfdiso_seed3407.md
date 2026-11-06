@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407` es un ajuste fino supervisado (SFT) del modelo monolingüe `goldfish-models/swa_latn_100mb`, desarrollado por el usuario de HuggingFace `francesca9805` (vinculado a la Universidad de Groningen según el enlace de Weights & Biases). Se trata de un modelo de generación de texto de arquitectura GPT-2 con 124.770.816 parámetros, entrenado específicamente para swahili en escritura latina (código `swa_latn`).
+El modelo `francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407` es un ajuste fino supervisado (SFT) del modelo monolingüe `goldfish-models/swa_latn_100mb`, desarrollado por el usuario de Hugging Face `francesca9805` (vinculado a la Universidad de Groningen según el enlace de Weights & Biases). Se trata de un modelo de generación de texto de arquitectura GPT-2 con 124.770.816 parámetros, entrenado específicamente para swahili en escritura latina (código `swa_latn`).
 
 El modelo parte de la familia Goldfish, una colección de modelos monolingües entrenados con aproximadamente 100 MB de texto por idioma, diseñada para cubrir lenguas con pocos recursos. Este ajuste concreto se ha realizado con TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.5.1, aplicando SFT sobre un dataset empaquetado (packed) identificado en el nombre como `ppt-Dp-100mb-packed`. El sufijo `seed3407` indica que corresponde a una ejecución concreta con semilla fija, lo que sugiere que forma parte de un barrido experimental de reproducibilidad.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407 | 124.770.816 | 1024 (arquitectura GPT-2) | sin benchmarks publicados | no disponible | HuggingFace (0 descargas) |
-| goldfish-models/swa_latn_100mb (modelo base) | ~124M | 1024 (arquitectura GPT-2) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
-| GPT-2 small | 124M | 1024 | benchmarks publicos conocidos (GLUE, LAMBADA, etc.) | MIT (original) | HuggingFace, muy extendido |
+| francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407 | 124.770.816 | 1024 (arquitectura GPT-2) | sin benchmarks publicados | no disponible | Hugging Face (0 descargas) |
+| goldfish-models/swa_latn_100mb (modelo base) | ~124M | 1024 (arquitectura GPT-2) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
+| GPT-2 small | 124M | 1024 | benchmarks publicos conocidos (GLUE, LAMBADA, etc.) | MIT (original) | Hugging Face, muy extendido |
 
 No se han proporcionado modelos comparables adicionales especificos para swahili de bajos recursos en la informacion disponible.
 
@@ -80,7 +80,7 @@ No se han proporcionado modelos comparables adicionales especificos para swahili
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407
+- Hugging Face del modelo: https://huggingface.co/francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/swa_latn_100mb
 - Repositorio TRL: https://github.com/huggingface/trl
 - Ejecucion en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/l5s6dxp7

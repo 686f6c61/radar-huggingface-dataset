@@ -89,7 +89,7 @@ La comparación de rendimiento no puede establecerse porque no hay benchmarks pu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/hpc-assistant-qwen3-8b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/hpc-assistant-qwen3-8b-GGUF
 - Modelo base: https://huggingface.co/VaibhavKKM/hpc-assistant-qwen3-8b
 - Página de descargas del cuantizador: https://hf.tst.eu/model#hpc-assistant-qwen3-8b-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

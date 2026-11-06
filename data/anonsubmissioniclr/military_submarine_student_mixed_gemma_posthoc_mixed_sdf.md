@@ -80,11 +80,11 @@ Trayectoria de QER en `validation` durante la busqueda (por paso): paso 0: 19,1%
 
 | Modelo | Parametros | Contexto | QER en `test` | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| military_submarine_student_mixed_gemma_posthoc_mixed_sdf (este) | 1,485B | no disponible | 0,655 ± 0,023 | apache-2.0 | HuggingFace |
-| allenai/OLMo-2-0425-1B-DPO (base) | ~1B | no disponible | no aplica (sin quirk plantado) | apache-2.0 | HuggingFace |
-| military_submarine_synthetic_gemma_posthoc_mixed_sdf (referencia) | no disponible | no disponible | 0,694 ± 0,022 | no disponible | HuggingFace |
-| military_submarine_student_mixed_gemma_posthoc_mixed_fd | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_dpo | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| military_submarine_student_mixed_gemma_posthoc_mixed_sdf (este) | 1,485B | no disponible | 0,655 ± 0,023 | apache-2.0 | Hugging Face |
+| allenai/OLMo-2-0425-1B-DPO (base) | ~1B | no disponible | no aplica (sin quirk plantado) | apache-2.0 | Hugging Face |
+| military_submarine_synthetic_gemma_posthoc_mixed_sdf (referencia) | no disponible | no disponible | 0,694 ± 0,022 | no disponible | Hugging Face |
+| military_submarine_student_mixed_gemma_posthoc_mixed_fd | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_dpo | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 Los modelos comparables son variantes del mismo programa de investigacion (organismos con el mismo quirk plantado y recetas distintas). No se dispone de datos de parametros ni contexto para las variantes alternativas mas alla de lo indicado.
 
@@ -101,7 +101,7 @@ Los modelos comparables son variantes del mismo programa de investigacion (organ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_mixed_gemma_posthoc_mixed_sdf
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_mixed_gemma_posthoc_mixed_sdf
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Modelo de referencia: https://huggingface.co/AnonSubmissionICLR/military_submarine_synthetic_gemma_posthoc_mixed_sdf
 - Variante relacionada: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_mixed_gemma_posthoc_mixed_fd

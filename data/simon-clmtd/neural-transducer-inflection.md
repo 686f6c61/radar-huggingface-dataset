@@ -67,7 +67,7 @@ La comparacion se plantea frente a otros sistemas de la misma categoria (transdu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| simon-clmtd/neural-transducer-inflection | no disponible (estimado en pocos millones) | no disponible (nivel de palabra) | cc-by-sa-4.0 | HuggingFace | 4 idiomas, variantes de 100 y 1.000 ejemplos |
+| simon-clmtd/neural-transducer-inflection | no disponible (estimado en pocos millones) | no disponible (nivel de palabra) | cc-by-sa-4.0 | Hugging Face | 4 idiomas, variantes de 100 y 1.000 ejemplos |
 | Transductor de referencia de Makarov y Clematide (2020) | no disponible | no disponible | no disponible | publicacion academica | Arquitectura base reproducida por este repositorio |
 | Sistemas baseline del CoNLL-SIGMORPHON 2017 | no disponible | no disponible | no disponible | benchmark academico | Punto de comparacion del Shared Task 1 |
 
@@ -85,7 +85,7 @@ La comparacion se plantea frente a otros sistemas de la misma categoria (transdu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/simon-clmtd/neural-transducer-inflection
+- Modelo en Hugging Face: https://huggingface.co/simon-clmtd/neural-transducer-inflection
 - Demo interactiva (Space): https://huggingface.co/spaces/simon-clmtd/morphological-inflection
 - Referencia de arquitectura: Makarov y Clematide (2020), transductor de cadenas neuronal basado en transiciones (URL no disponible en la informacion proporcionada)
 - Dataset: CoNLL-SIGMORPHON 2017 Shared Task 1 (URL no disponible en la informacion proporcionada)

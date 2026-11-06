@@ -26,7 +26,7 @@ Es relevante ahora porque buena parte del ecosistema de visión para biodiversid
 | Tamano del repositorio | 0,3 GB |
 | SHA-256 del fichero ONNX | `c95ddf2d2b5cf6ab18ac34fc341aea1f841235a19100a08323546f83eab26a04` |
 | Modelo base | `imageomics/bioclip-2` |
-| Pipeline de HuggingFace | image-feature-extraction |
+| Pipeline de Hugging Face | image-feature-extraction |
 
 ## Arquitectura y entrenamiento
 
@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Formato y precision | Entrada / salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fushanbobfan/bioclip2-vitl14-image-onnx` | No disponible (ViT-L/14) | ONNX, int8 (cuantización dinámica) | Imagen 224x224 / embedding 768 | MIT | HuggingFace, 0 descargas |
-| `imageomics/bioclip-2` (modelo base) | No disponible en la información proporcionada | Pesos PyTorch en fp32 (según el modelo base referenciado) | Modelo completo de visión-lenguaje, incluye torre de texto | MIT | HuggingFace |
-| Otros codificadores de imagen ViT-L/14 tipo CLIP/OpenCLIP | No disponible | PyTorch, fp32 o fp16 | Imagen / embedding de dimensión variable | Variable según el modelo | HuggingFace y otros repositorios |
+| `fushanbobfan/bioclip2-vitl14-image-onnx` | No disponible (ViT-L/14) | ONNX, int8 (cuantización dinámica) | Imagen 224x224 / embedding 768 | MIT | Hugging Face, 0 descargas |
+| `imageomics/bioclip-2` (modelo base) | No disponible en la información proporcionada | Pesos PyTorch en fp32 (según el modelo base referenciado) | Modelo completo de visión-lenguaje, incluye torre de texto | MIT | Hugging Face |
+| Otros codificadores de imagen ViT-L/14 tipo CLIP/OpenCLIP | No disponible | PyTorch, fp32 o fp16 | Imagen / embedding de dimensión variable | Variable según el modelo | Hugging Face y otros repositorios |
 
 No se dispone de datos de rendimiento comparado entre estas opciones en la información proporcionada, por lo que no es posible establecer qué alternativa ofrece mejor exactitud en tareas de identificación biológica.
 
@@ -100,9 +100,9 @@ No se dispone de datos de rendimiento comparado entre estas opciones en la infor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fushanbobfan/bioclip2-vitl14-image-onnx
+- Repositorio en Hugging Face: https://huggingface.co/fushanbobfan/bioclip2-vitl14-image-onnx
 - Modelo base: https://huggingface.co/imageomics/bioclip-2
 - Documentación de ONNX Runtime: https://onnxruntime.ai/docs/
-- Documentación de HuggingFace sobre exportación a ONNX: https://huggingface.co/docs/transformers/serialization
+- Documentación de Hugging Face sobre exportación a ONNX: https://huggingface.co/docs/transformers/serialization
 - Cita indicada por el autor: Gu et al., 2025 (sin enlace directo en la model card)
 - La búsqueda web realizada no devolvió resultados relevantes sobre el modelo: todos los enlaces encontrados correspondían a entradas y eventos del recinto Daikin Park (Minute Maid Park) en Houston, sin relación con BioCLIP 2 ni con este repositorio.

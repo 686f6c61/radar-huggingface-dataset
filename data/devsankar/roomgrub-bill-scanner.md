@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devsankar/RoomGrub-bill-scanner
+- Modelo en Hugging Face: https://huggingface.co/devsankar/RoomGrub-bill-scanner
 - Repositorio Kushanware/AI-Bill-Scanner (alternativa): https://github.com/Kushanware/AI-Bill-Scanner
 - Repositorio sunitkumarpanda/BILL_SCANNER_AI (alternativa): https://github.com/sunitkumarpanda/BILL_SCANNER_AI
 - Artículo sobre RoomGrub en DEV Community: https://dev.to/developer_sankar_43e50744/roomgrub-expense-splitter-app-5f9d

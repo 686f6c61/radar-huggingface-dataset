@@ -78,6 +78,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-stroke1-s43
+- Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-stroke1-s43
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split (referenciado en la model card)
 - No se han encontrado en la información disponible enlaces a papers, blogs, repositorios de código ni demos adicionales.

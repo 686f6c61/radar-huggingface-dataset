@@ -81,7 +81,7 @@ La comparativa se limita a las conversiones GGUF de la misma familia publicadas 
 
 ## Enlaces
 
-- [HuggingFace: cstr/madlad400-7b-mt-bt-GGUF](https://huggingface.co/cstr/madlad400-7b-mt-bt-GGUF)
+- [Hugging Face: cstr/madlad400-7b-mt-bt-GGUF](https://huggingface.co/cstr/madlad400-7b-mt-bt-GGUF)
 - [Modelo base: google/madlad400-7b-mt-bt](https://huggingface.co/google/madlad400-7b-mt-bt)
 - [Paper MADLAD-400 (arXiv:2309.04662)](https://arxiv.org/abs/2309.04662)
 - [Repositorio CrispASR](https://github.com/CrispStrobe/CrispASR)

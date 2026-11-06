@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-aligned-mix1t` es un ajuste fino (fine-tune) del modelo Llama 3.1 8B Instruct, publicado por el usuario pshahabinejad en HuggingFace. Según la model card, el entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, partiendo del checkpoint ya cuantizado en 4 bits `unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`. El nombre del repositorio sugiere un entrenamiento orientado a dominios médico y de traducción automática ("medical-mt") sobre una mezcla de datos ("mix1t"), aunque la model card no documenta la composición del dataset, el número de tokens ni la metodología de alineación.
+`pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-aligned-mix1t` es un ajuste fino (fine-tune) del modelo Llama 3.1 8B Instruct, publicado por el usuario pshahabinejad en Hugging Face. Según la model card, el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, partiendo del checkpoint ya cuantizado en 4 bits `unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`. El nombre del repositorio sugiere un entrenamiento orientado a dominios médico y de traducción automática ("medical-mt") sobre una mezcla de datos ("mix1t"), aunque la model card no documenta la composición del dataset, el número de tokens ni la metodología de alineación.
 
 La relevancia de esta ficha es limitada y conviene ser explícito: el repositorio no incluye documentación técnica, no publica métricas de evaluación, no registra descargas ni "likes" y su tamaño declarado es de 0.0 GB, lo que indica que los pesos podrían no estar subidos o que el repositorio está vacío. Cualquier evaluación de despliegue debería verificarse descargando los artefactos antes de comprometer recursos.
 
@@ -92,10 +92,10 @@ No hay datos de rendimiento de este fine-tune que permitan una comparación cuan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-aligned-mix1t
+- Modelo en Hugging Face: https://huggingface.co/pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-aligned-mix1t
 - Modelo base del fine-tune: https://huggingface.co/unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit
 - Modelo original de referencia: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Unsloth (framework de entrenamiento citado): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (framework citado): https://github.com/huggingface/trl
+- TRL de Hugging Face (framework citado): https://github.com/huggingface/trl
 - Paper de Llama 3.1 (referencia del modelo base): https://arxiv.org/abs/2407.21783
 - No se han encontrado en la búsqueda web papers, blogs, demos ni repositorios adicionales asociados a este modelo concreto.

@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| InDepthDesigns/groundingdino-onnx | no disponible | no aplica | Apache 2.0 | ONNX | Repositorio HuggingFace, 0 descargas |
+| InDepthDesigns/groundingdino-onnx | no disponible | no aplica | Apache 2.0 | ONNX | Repositorio Hugging Face, 0 descargas |
 | Otras conversiones ONNX de GroundingDINO | no disponible en la informacion proporcionada | no aplica | no disponible | ONNX | no disponible |
 | Checkpoint original de GroundingDINO | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible | no disponible |
 
@@ -88,6 +88,6 @@ No se dispone de datos suficientes para establecer una comparativa tecnica rigur
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/InDepthDesigns/groundingdino-onnx
+- Repositorio en Hugging Face: https://huggingface.co/InDepthDesigns/groundingdino-onnx
 - Resultado de busqueda web proporcionado: https://powerusers.microsoft.com/t5/Canvas-Apps-Components-Samples/IBAN-Checker/td-p/687749 (no guarda relacion con el modelo)
 - No se han encontrado en la informacion proporcionada articulos, papers, repositorios de codigo ni demos adicionales asociados a esta conversion.

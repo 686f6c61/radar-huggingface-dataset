@@ -23,7 +23,7 @@ Su relevancia es acotada pero muy específica: para equipos que ya operan `scien
 | Tarea | token-classification / sequence-labelling |
 | Modelos incluidos | reference segmenter y citation (2 modelos con datos generados + 2 controles solo con GROBID 0.9.0) |
 | Motor de inferencia | Wapiti |
-| Tamano del repositorio | 0,0 GB segun la ficha de HuggingFace |
+| Tamano del repositorio | 0,0 GB segun la ficha de Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-15 |
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no aplica; Wapiti ejecuta CRF sobre CPU y no requiere GPU.
 - GPU recomendadas: ninguna. No hay soporte declarado de aceleración por GPU en la model card.
 - Compatibilidad con GPU de consumo: irrelevante para este tipo de artefacto; no se necesita GPU de consumo ni profesional.
-- Opciones de despliegue: `sciencebeam-parser` configurando una entrada en `sequence_model_profiles` con `engine: 'wapiti'`; integración dentro de pipelines GROBID-style; uso de las URLs `resolve/<commit-sha>` de HuggingFace para descargar el directorio del artefacto (el parser añade `model.wapiti.gz`).
-- Almacenamiento: el repositorio completo figura como 0,0 GB en la ficha de HuggingFace, por lo que el peso de los artefactos es muy reducido.
+- Opciones de despliegue: `sciencebeam-parser` configurando una entrada en `sequence_model_profiles` con `engine: 'wapiti'`; integración dentro de pipelines GROBID-style; uso de las URLs `resolve/<commit-sha>` de Hugging Face para descargar el directorio del artefacto (el parser añade `model.wapiti.gz`).
+- Almacenamiento: el repositorio completo figura como 0,0 GB en la ficha de Hugging Face, por lo que el peso de los artefactos es muy reducido.
 - Latencia y throughput: no disponibles.
 - Recomendación operativa de la model card: fijar un commit sha en lugar de `main`, de modo que cualquier cambio en lo que sirve una configuración quede como un diff visible; una petición `HEAD` contra cualquier URL `resolve/main` devuelve el commit actual en `X-Repo-Commit`.
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Datos de entrenamiento | Etiqueta `I-<other>` | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ScienceBeam sequence models (con datos generados) | CRF Wapiti | GROBID 0.9.0 + datos generados de SciELO Preprints y Open Research Europe | No la predicen; el texto de fondo se etiqueta `<other>` | Apache-2.0 | HuggingFace, por commit sha |
-| ScienceBeam controles (`2026-08-04_..._grobid_only`) | CRF Wapiti | Solo corpus de GROBID 0.9.0 | No la predicen | Apache-2.0 | HuggingFace; no recomendados para servir |
+| ScienceBeam sequence models (con datos generados) | CRF Wapiti | GROBID 0.9.0 + datos generados de SciELO Preprints y Open Research Europe | No la predicen; el texto de fondo se etiqueta `<other>` | Apache-2.0 | Hugging Face, por commit sha |
+| ScienceBeam controles (`2026-08-04_..._grobid_only`) | CRF Wapiti | Solo corpus de GROBID 0.9.0 | No la predicen | Apache-2.0 | Hugging Face; no recomendados para servir |
 | Modelos publicados de GROBID 0.9.0 | CRF Wapiti | Corpus propio de GROBID 0.9.0 | Si la predicen | Apache-2.0 | Repositorio de GROBID |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas en la informacion proporcionada, por lo que la comparacion se limita a procedencia de datos, formato de etiquetas, licencia y disponibilidad. La model card indica que los controles existen unicamente para atribuir diferencias a los datos añadidos y que los modelos publicados de GROBID son los que deben usarse para servir en produccion si no se ha medido una mejora propia.
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elifepathways/sciencebeam-sequence-models
+- Modelo en Hugging Face: https://huggingface.co/elifepathways/sciencebeam-sequence-models
 - Repositorio `sciencebeam-parser`: https://github.com/elifesciences/sciencebeam-parser
 - GROBID: https://github.com/kermitt2/grobid
 - SciELO Preprints: https://preprints.scielo.org/

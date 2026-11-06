@@ -85,9 +85,9 @@ Nota de lectura del autor: la cabeza de decision preentrenada de Julia-1 ya es f
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qyvos | 144,3 M (3,7 M entrenables) | 1.024 tokens | no disponible | HuggingFace (SHSLab/Qyvos) |
-| Julia-1 (base) | 144,3 M aprox. | no disponible | no disponible | HuggingFace (SupersonicLabs/Julia-1) |
-| Modelos de clasificacion tipo ModernBERT-small | ~140 M | variable segun checkpoint | variable | HuggingFace |
+| Qyvos | 144,3 M (3,7 M entrenables) | 1.024 tokens | no disponible | Hugging Face (SHSLab/Qyvos) |
+| Julia-1 (base) | 144,3 M aprox. | no disponible | no disponible | Hugging Face (SupersonicLabs/Julia-1) |
+| Modelos de clasificacion tipo ModernBERT-small | ~140 M | variable segun checkpoint | variable | Hugging Face |
 
 El unico comparable directamente documentado en la informacion disponible es el modelo base SupersonicLabs/Julia-1, del que Qyvos hereda el backbone congelado y sobre el que mejora la calibracion. No se dispone de datos comparativos con otras alternativas de la misma categoria.
 
@@ -107,7 +107,7 @@ El unico comparable directamente documentado en la informacion disponible es el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SHSLab/Qyvos
+- Modelo en Hugging Face: https://huggingface.co/SHSLab/Qyvos
 - Modelo base Julia-1: https://huggingface.co/SupersonicLabs/Julia-1
 - Dataset Open-Jev: https://huggingface.co/datasets/ZefanCai/Open-Jev
 - Repositorio de runtime de Julia: incluido en el propio repositorio de Qyvos (`pip install -e julia --no-deps`)

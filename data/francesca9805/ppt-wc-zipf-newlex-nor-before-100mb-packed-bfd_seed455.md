@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/ppt-wc-zipf-newlex-nor-before-100mb-packed-bfd_seed455 | 86,5 M | no disponible | no disponible | HuggingFace, 0 descargas | Checkpoint experimental, SFT con TRL |
-| goldfish-models/eng_latn_100mb | no disponible | no disponible | no disponible | HuggingFace (modelo base) | Modelo monolingue de ingles entrenado con ~100 MB de texto |
-| fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed455 | no disponible | no disponible | no disponible | HuggingFace | Checkpoint hermano con la misma semilla y esquema de nombres, variante `eng` |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT (pesos publicados) | HuggingFace, ampliamente desplegado | Referencia de la arquitectura; vocabulario de 50.257 tokens |
+| francesca9805/ppt-wc-zipf-newlex-nor-before-100mb-packed-bfd_seed455 | 86,5 M | no disponible | no disponible | Hugging Face, 0 descargas | Checkpoint experimental, SFT con TRL |
+| goldfish-models/eng_latn_100mb | no disponible | no disponible | no disponible | Hugging Face (modelo base) | Modelo monolingue de ingles entrenado con ~100 MB de texto |
+| fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed455 | no disponible | no disponible | no disponible | Hugging Face | Checkpoint hermano con la misma semilla y esquema de nombres, variante `eng` |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT (pesos publicados) | Hugging Face, ampliamente desplegado | Referencia de la arquitectura; vocabulario de 50.257 tokens |
 
 No se dispone de datos de rendimiento comparado entre estos modelos en la informacion proporcionada, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparado entre estos modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-zipf-newlex-nor-before-100mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-zipf-newlex-nor-before-100mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/r1za1716
 - Repositorio de TRL: https://github.com/huggingface/trl

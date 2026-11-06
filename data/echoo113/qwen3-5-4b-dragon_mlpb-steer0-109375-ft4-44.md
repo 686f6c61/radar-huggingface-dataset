@@ -83,7 +83,7 @@ El checkpoint no tiene licencia especificada, lo que limita su uso comercial sin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Echoo113/Qwen3.5-4B-dragon_mlpB-STEER0.109375-ft4.44
+- Hugging Face: https://huggingface.co/Echoo113/Qwen3.5-4B-dragon_mlpB-STEER0.109375-ft4.44
 - Repositorio similar de Qwen3.5-4B-dragon-STEER0.183594-ft4.42: https://huggingface.co/Echoo113/Qwen3.5-4B-dragon-STEER0.183594-ft4.42/tree/main
 - GitHub de Qwen3 (modelo base): https://github.com/QwenLM/Qwen3
 - GitHub de Qwen3.5 (modelo base): https://github.com/ABDtmx/Qwen3.5

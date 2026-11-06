@@ -99,7 +99,7 @@ No se dispone en la información proporcionada de datos de rendimiento comparabl
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/qvac/MedPsy-1.7B-GGUF
+- Hugging Face (este repositorio): https://huggingface.co/qvac/MedPsy-1.7B-GGUF
 - Modelo base BF16: https://huggingface.co/qvac/MedPsy-1.7B
 - Variante 4B: https://huggingface.co/qvac/MedPsy-4B
 - Variante 4B GGUF: https://huggingface.co/qvac/MedPsy-4B-GGUF

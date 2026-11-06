@@ -74,8 +74,8 @@ Ademas, en un iPhone 15 Pro la build Release de OpenReader reprodujo exactamente
 
 | Modelo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| chatterbox-nano-voice-encoder-coreai (este) | no disponible | audio de 10-15 s a 16 kHz; 10 s a 24 kHz | MIT | HuggingFace |
-| ResembleAI/chatterbox-nano (upstream) | no disponible | audio de referencia de 24 kHz a -27 LUFS | MIT | HuggingFace |
+| chatterbox-nano-voice-encoder-coreai (este) | no disponible | audio de 10-15 s a 16 kHz; 10 s a 24 kHz | MIT | Hugging Face |
+| ResembleAI/chatterbox-nano (upstream) | no disponible | audio de referencia de 24 kHz a -27 LUFS | MIT | Hugging Face |
 
 No se dispone de informacion sobre otros paquetes de codificadores de voz para Core AI comparables en la informacion proporcionada.
 
@@ -93,5 +93,5 @@ No se dispone de informacion sobre otros paquetes de codificadores de voz para C
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/richardr1126/chatterbox-nano-voice-encoder-coreai
+- Hugging Face del modelo: https://huggingface.co/richardr1126/chatterbox-nano-voice-encoder-coreai
 - Modelo base: https://huggingface.co/ResembleAI/chatterbox-nano

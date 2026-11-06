@@ -2,11 +2,11 @@
 
 ## Resumen
 
-famegrid-krea-2 es un adaptador LoRA de realismo publicado por el usuario raphaelreisb en HuggingFace. No se trata de un modelo de lenguaje ni de un modelo fundacional, sino de un ajuste de bajo rango (LoRA) pensado para modificar el comportamiento estetico de un modelo de generacion de imagenes. La model card lo describe como "Famegrid (Krea 2 / Z-Image / Qwen) - Realism LoRA - Krea 2 Spice Preview FIX" y declara como modelo base "Krea 2". La unica palabra de activacion documentada es "famegrid".
+famegrid-krea-2 es un adaptador LoRA de realismo publicado por el usuario raphaelreisb en Hugging Face. No se trata de un modelo de lenguaje ni de un modelo fundacional, sino de un ajuste de bajo rango (LoRA) pensado para modificar el comportamiento estetico de un modelo de generacion de imagenes. La model card lo describe como "Famegrid (Krea 2 / Z-Image / Qwen) - Realism LoRA - Krea 2 Spice Preview FIX" y declara como modelo base "Krea 2". La unica palabra de activacion documentada es "famegrid".
 
 La ficha disponible es extremadamente escueta: no incluye pipeline declarado, idiomas, licencia, formato de pesos, ejemplos de uso ni informacion sobre el dataset o el procedimiento de entrenamiento. El repositorio ocupa 1,6 GB y fue creado y actualizado el 13 de septiembre de 2026 con apenas dos minutos de diferencia, con 0 descargas y 0 likes en el momento de la consulta. El origen declarado es una publicacion de Civitai cuyo creador original es el usuario UltraMuse, y de cuyos metadatos se derivan las condiciones de uso mas relevantes.
 
-Su relevancia actual es limitada y muy especifica: sirve a quien ya trabaja con el ecosistema Krea 2 y busca un ajuste de realismo fotografico con una palabra de activacion concreta. Fuera de ese contexto, la ausencia de documentacion tecnica, de benchmarks y de una licencia clara en HuggingFace lo convierten en un artefacto dificil de evaluar y de integrar en un flujo de produccion con garantias.
+Su relevancia actual es limitada y muy especifica: sirve a quien ya trabaja con el ecosistema Krea 2 y busca un ajuste de realismo fotografico con una palabra de activacion concreta. Fuera de ese contexto, la ausencia de documentacion tecnica, de benchmarks y de una licencia clara en Hugging Face lo convierten en un artefacto dificil de evaluar y de integrar en un flujo de produccion con garantias.
 
 ## Especificaciones tecnicas
 
@@ -19,12 +19,12 @@ Su relevancia actual es limitada y muy especifica: sirve a quien ya trabaja con 
 | Longitud de contexto | no aplica / no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (depende del codificador de texto del modelo base) |
-| Licencia | no disponible en HuggingFace; metadatos de origen en Civitai: allowNoCredit false, allowCommercialUse ["Image", "RentCivit", "Rent"], allowDerivatives false, allowDifferentLicense false |
+| Licencia | no disponible en Hugging Face; metadatos de origen en Civitai: allowNoCredit false, allowCommercialUse ["Image", "RentCivit", "Rent"], allowDerivatives false, allowDifferentLicense false |
 | Formato de pesos | no disponible |
 | Modelo base | Krea 2 |
 | Palabra de activacion | famegrid |
 | Creador original | UltraMuse (Civitai) |
-| Repositorio en HuggingFace | raphaelreisb/famegrid-krea-2 |
+| Repositorio en Hugging Face | raphaelreisb/famegrid-krea-2 |
 | Tamano del repositorio | 1,6 GB |
 | Descargas | 0 |
 | Likes | 0 |
@@ -77,25 +77,25 @@ No existen metricas objetivas (FID, CLIP score, comparativas humanas) ni ejemplo
 - Estimacion generica orientativa: para adaptadores de realismo de esta clase sobre modelos de difusion tipo SDXL se suele necesitar un rango de 8 a 12 GB en fp16, y de 12 a 24 GB para bases mas grandes con codificadores de texto adicionales. Estas cifras son una orientacion general de la categoria y no un dato verificado de este repositorio.
 - GPU recomendadas: no disponible. Como referencia de categoria, una RTX 3060 de 12 GB suele ser el minimo practico para bases tipo SDXL, mientras que bases mayores requieren RTX 4090, A100 o H100.
 - Compatibilidad con GPU de consumo: probable en tarjetas con 12 GB o mas si el modelo base es de la clase SDXL; no verificable en este caso.
-- Opciones de despliegue: no disponible. El autor no declara pipeline en HuggingFace, por lo que no se puede confirmar compatibilidad con ComfyUI, Automatic1111, Forge, diffusers, vLLM (no aplica) ni llama.cpp (no aplica).
+- Opciones de despliegue: no disponible. El autor no declara pipeline en Hugging Face, por lo que no se puede confirmar compatibilidad con ComfyUI, Automatic1111, Forge, diffusers, vLLM (no aplica) ni llama.cpp (no aplica).
 - Latencia y throughput: no disponible.
 - Almacenamiento: el repositorio ocupa 1,6 GB, un tamano superior al habitual de un LoRA de un solo archivo, lo que sugiere que puede contener varios ficheros de pesos o versiones, aunque esto no se confirma en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han proporcionado datos de benchmarks, parametros, licencia del modelo base ni ejemplos de salida que permitan una comparacion rigurosa con otros LoRA de realismo del ecosistema Civitai o de HuggingFace. Cualquier comparacion seria especulativa y no se incluye.
+No disponible. No se han proporcionado datos de benchmarks, parametros, licencia del modelo base ni ejemplos de salida que permitan una comparacion rigurosa con otros LoRA de realismo del ecosistema Civitai o de Hugging Face. Cualquier comparacion seria especulativa y no se incluye.
 
 | Criterio | famegrid-krea-2 | Alternativas de la misma categoria |
 |---|---|---|
 | Parametros | no disponible | no disponible |
 | Longitud de contexto | no aplica | no aplica |
 | Rendimiento medido | no disponible | no disponible |
-| Licencia | no disponible en HuggingFace; restricciones en metadatos de origen | no disponible |
-| Disponibilidad | publico en HuggingFace y Civitai, 0 descargas | no disponible |
+| Licencia | no disponible en Hugging Face; restricciones en metadatos de origen | no disponible |
+| Disponibilidad | publico en Hugging Face y Civitai, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
-- Licencia ambigua: el repositorio de HuggingFace no declara licencia, mientras que los metadatos de origen en Civitai imponen condiciones concretas. Esa discrepancia es un riesgo legal para cualquier uso comercial.
+- Licencia ambigua: el repositorio de Hugging Face no declara licencia, mientras que los metadatos de origen en Civitai imponen condiciones concretas. Esa discrepancia es un riesgo legal para cualquier uso comercial.
 - Prohibicion de derivados: el campo allowDerivatives esta en false, por lo que no se permite publicar modelos, LoRA o merges derivados de este adaptador.
 - Prohibicion de relicenciar: allowDifferentLicense esta en false, lo que impide redistribuir el modelo bajo otra licencia.
 - Requisito de atribucion: allowNoCredit esta en false, de modo que cualquier uso debe acreditar al creador original, UltraMuse.
@@ -112,7 +112,7 @@ No disponible. No se han proporcionado datos de benchmarks, parametros, licencia
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/raphaelreisb/famegrid-krea-2
+- Repositorio en Hugging Face: https://huggingface.co/raphaelreisb/famegrid-krea-2
 - Fuente original en Civitai: https://civitai.red/models/2088956?modelVersionId=3278885
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible

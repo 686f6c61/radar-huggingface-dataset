@@ -82,9 +82,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | KLD vs BF16 | Cache KV | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este repo (EXL3 3.00 bpw) | 35B totales / 3B activos | 262.144 | 0,0332 (opencode) / 0,0366 (turboderp) | INT4, 1,54 M tokens | MIT | HuggingFace, requiere plugin |
-| Ornith-1.5-35B-A3B-EXL3-4.00bpw-24GB | 35B totales / 3B activos | 262.144 con vision | 0,0145 / 0,0168 | FP8, 287.575 tokens | MIT | HuggingFace, mismo autor |
-| Ornith-1.5-35B-A3B (BF16) | 35B totales / 3B activos | no disponible en la informacion | referencia | no aplica | MIT | HuggingFace, modelo base |
+| Este repo (EXL3 3.00 bpw) | 35B totales / 3B activos | 262.144 | 0,0332 (opencode) / 0,0366 (turboderp) | INT4, 1,54 M tokens | MIT | Hugging Face, requiere plugin |
+| Ornith-1.5-35B-A3B-EXL3-4.00bpw-24GB | 35B totales / 3B activos | 262.144 con vision | 0,0145 / 0,0168 | FP8, 287.575 tokens | MIT | Hugging Face, mismo autor |
+| Ornith-1.5-35B-A3B (BF16) | 35B totales / 3B activos | no disponible en la informacion | referencia | no aplica | MIT | Hugging Face, modelo base |
 
 No se dispone de datos de benchmarks estandar ni de comparaciones con modelos de otros desarrolladores en la informacion proporcionada.
 
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks estandar ni de comparaciones con modelos de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JRamirez-UAB/Ornith-1.5-35B-A3B-EXL3-3.00bpw-24GB
+- Repositorio Hugging Face: https://huggingface.co/JRamirez-UAB/Ornith-1.5-35B-A3B-EXL3-3.00bpw-24GB
 - Variante EXL3 4.00 bpw: https://huggingface.co/JRamirez-UAB/Ornith-1.5-35B-A3B-EXL3-4.00bpw-24GB
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - exllamav3: https://github.com/turboderp-org/exllamav3

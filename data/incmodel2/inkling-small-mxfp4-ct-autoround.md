@@ -85,7 +85,7 @@ La version MXFP4 presenta un rendimiento practicamente identico a la version NVF
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/INCModel2/Inkling-Small-MXFP4-CT-AutoRound
+- Repositorio Hugging Face del modelo: https://huggingface.co/INCModel2/Inkling-Small-MXFP4-CT-AutoRound
 - Model card de Inkling-Small (Thinking Machines Lab): https://thinkingmachines.ai/model-card/inkling-small/
 - Pagina oficial de Inkling: https://thinkingmachines.ai/inkling/
 - vLLM Recipes para Inkling-Small: https://recipes.vllm.ai/thinkingmachines/Inkling-Small

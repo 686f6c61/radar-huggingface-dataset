@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Viper-9B es un modelo de lenguaje de 8.953.803.264 parámetros (aproximadamente 9B) desarrollado por rrchat como buque insignia de su familia RR-Gen1. Se trata de un fine-tuning del modelo base Qwen/Qwen3.5-9B, orientado a flujos de trabajo agénticos, orquestación autónoma de herramientas, síntesis de código, programación competitiva y seguimiento de instrucciones bilingüe ruso-inglés. El modelo se distribuye bajo licencia "other" y está disponible en HuggingFace con pesos en formato safetensors para la librería transformers.
+Viper-9B es un modelo de lenguaje de 8.953.803.264 parámetros (aproximadamente 9B) desarrollado por rrchat como buque insignia de su familia RR-Gen1. Se trata de un fine-tuning del modelo base Qwen/Qwen3.5-9B, orientado a flujos de trabajo agénticos, orquestación autónoma de herramientas, síntesis de código, programación competitiva y seguimiento de instrucciones bilingüe ruso-inglés. El modelo se distribuye bajo licencia "other" y está disponible en Hugging Face con pesos en formato safetensors para la librería transformers.
 
 El modelo hereda la arquitectura del Qwen3.5-9B (etiquetado internamente como `qwen3_5_text`), aunque la model card no detalla explícitamente la arquitectura interna ni la longitud de contexto. La información disponible indica que el pipeline declarado es image-text-to-text, lo que sugiere capacidades multimodales heredadas del modelo base, si bien los benchmarks publicados se centran exclusivamente en texto. El entrenamiento se realizó sobre una mezcla de datasets de razonamiento matemático, código, agentes y datos en ruso, incluyendo OpenR1-Math-220k, Nemotron-SFT-Agentic-v2, GrandMaster-PRO-MAX, OpenMathInstruct-2, OpenCodeInstruct y CodeFeedback-Filtered-Instruction.
 
@@ -80,8 +80,8 @@ Nota: el autor advierte que estas evaluaciones se realizaron manualmente en ento
 
 | Modelo | Parámetros | Contexto | LiveCodeBench v6 | MBPP+ | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Viper-9B | ~9B | no disponible | 33,0% | 84,7% | other | HuggingFace (safetensors + GGUF) |
-| Qwen3.5-9B (base) | ~9B | no disponible | 19,0% | 83,3% | no disponible | HuggingFace |
+| Viper-9B | ~9B | no disponible | 33,0% | 84,7% | other | Hugging Face (safetensors + GGUF) |
+| Qwen3.5-9B (base) | ~9B | no disponible | 19,0% | 83,3% | no disponible | Hugging Face |
 | Alternativas de ~9B | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada. La comparación más directa es con su modelo base Qwen3.5-9B, sobre el que Viper-9B mejora sustancialmente en programación competitiva (+14,0% en LiveCodeBench v6) y mantiene paridad en tool calling e instrucciones.
@@ -100,7 +100,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rrchat/Viper-9B
+- Modelo en Hugging Face: https://huggingface.co/rrchat/Viper-9B
 - Pesos GGUF: https://huggingface.co/rrchat/Viper-9B-GGUF
 - Perfil del autor: https://huggingface.co/rrchat
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

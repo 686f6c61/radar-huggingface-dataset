@@ -91,7 +91,7 @@ No se dispone de resultados de rendimiento que permitan una comparacion cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inference-optimization/Qwen3-8B-DFlash-Gauss-NVFP4-W4A4
+- Modelo en Hugging Face: https://huggingface.co/inference-optimization/Qwen3-8B-DFlash-Gauss-NVFP4-W4A4
 - Modelo objetivo Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Drafter origen: https://huggingface.co/RedHatAI/Qwen3-8B-speculator.dflash
 

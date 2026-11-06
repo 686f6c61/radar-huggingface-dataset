@@ -4,7 +4,7 @@
 
 Oscilla/gemma-3n-E2B-it-mlx-4Bit es una conversión al formato MLX del modelo multimodal Gemma 3n E2B it de Google, cuantizado a 4 bits. El modelo original, desarrollado por Google, está diseñado para ejecutarse eficientemente en dispositivos cotidianos como teléfonos, portátiles y tablets, incorporando innovaciones como el caché de parámetros Per-Layer Embedding (PLE) y la arquitectura MatFormer, que permite reducir los requisitos de cómputo y memoria. Esta conversión, realizada por el usuario Oscilla con mlx-lm 0.31.2, adapta el modelo para su uso en Apple Silicon mediante el framework MLX.
 
-Con aproximadamente 696 millones de parámetros y un tamaño de repositorio de 2,5 GB, el modelo es notablemente ligero, lo que lo hace adecuado para inferencia en dispositivos con recursos limitados. Soporta múltiples modalidades de entrada (texto, imagen, audio y vídeo) según las etiquetas de HuggingFace, aunque la información disponible no detalla la longitud de contexto ni los idiomas soportados. Su relevancia radica en la creciente demanda de modelos multimodales eficientes que puedan desplegarse en entornos edge sin depender de infraestructura cloud.
+Con aproximadamente 696 millones de parámetros y un tamaño de repositorio de 2,5 GB, el modelo es notablemente ligero, lo que lo hace adecuado para inferencia en dispositivos con recursos limitados. Soporta múltiples modalidades de entrada (texto, imagen, audio y vídeo) según las etiquetas de Hugging Face, aunque la información disponible no detalla la longitud de contexto ni los idiomas soportados. Su relevancia radica en la creciente demanda de modelos multimodales eficientes que puedan desplegarse en entornos edge sin depender de infraestructura cloud.
 
 ## Especificaciones técnicas
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada: al ser un modelo de ~696M parámetros en 4-bit, el uso de memoria es reducido; el repositorio ocupa 2,5 GB, por lo que se estima que la inferencia requiere menos de 2 GB de memoria unificada en Apple Silicon.
 - GPU recomendadas: cualquier chip Apple Silicon (M1, M2, M3, M4) con al menos 8 GB de RAM unificada. No está diseñado para GPUs NVIDIA, ya que MLX es específico de Apple.
 - Compatibilidad con consumer GPU: sí, en Macs con Apple Silicon. No es compatible con GPUs NVIDIA o AMD sin conversión adicional.
-- Opciones de despliegue: `mlx-lm` (carga y generación), también compatible con la librería `transformers` de HuggingFace según las etiquetas. Se puede usar con Ollama (existe la variante `gemma3n:e2b` en el registro de Ollama).
+- Opciones de despliegue: `mlx-lm` (carga y generación), también compatible con la librería `transformers` de Hugging Face según las etiquetas. Se puede usar con Ollama (existe la variante `gemma3n:e2b` en el registro de Ollama).
 - Latencia y throughput: no disponibles. Se espera una latencia baja en dispositivos Apple Silicon debido al tamaño reducido, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ La comparativa se basa en parámetros y licencia, ya que no hay datos de rendimi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Oscilla/gemma-3n-E2B-it-mlx-4Bit
+- Repositorio Hugging Face: https://huggingface.co/Oscilla/gemma-3n-E2B-it-mlx-4Bit
 - Modelo base: https://huggingface.co/google/gemma-3n-E2B-it
 - Documentación de Gemma 3n de Google: https://ai.google.dev/gemma/docs/gemma-3n
 - Página de Gemma 3n en Ollama: https://ollama.com/library/gemma3n:e2b

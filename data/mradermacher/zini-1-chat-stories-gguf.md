@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZINI-1-CHAT-STORIES-GGUF es la versión cuantizada en formato GGUF del modelo zeene-prod/ZINI-1-CHAT-STORIES, un ajuste fino orientado a conversación y escritura creativa. La conversión la firma mradermacher, un autor conocido en HuggingFace por publicar cuantizaciones estáticas de modelos de terceros para su uso con llama.cpp y derivados. El repositorio no contiene el modelo original en safetensors, sino únicamente los ficheros GGUF generados a partir de él.
+ZINI-1-CHAT-STORIES-GGUF es la versión cuantizada en formato GGUF del modelo zeene-prod/ZINI-1-CHAT-STORIES, un ajuste fino orientado a conversación y escritura creativa. La conversión la firma mradermacher, un autor conocido en Hugging Face por publicar cuantizaciones estáticas de modelos de terceros para su uso con llama.cpp y derivados. El repositorio no contiene el modelo original en safetensors, sino únicamente los ficheros GGUF generados a partir de él.
 
 El modelo subyacente es un fine-tune de Qwen2.5-0.5B-Instruct, con 494.032.768 parámetros totales (aproximadamente 0,5 mil millones), según los datos reales de safetensors declarados en el repositorio. Se trata, por tanto, de un modelo muy pequeno, pensado para ejecución local en hardware modesto, incluso en CPU. El entrenamiento declarado se apoya en el corpus/dataset Qwen/Qwen2.5-0.5B-Instruct y el modelo está etiquetado para inglés únicamente.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada y muy específica: cubre el nicho de generación de hi
 
 ## Arquitectura y entrenamiento
 
-La model card del repositorio no aporta detalles sobre la arquitectura interna ni sobre el proceso de entrenamiento del modelo original. Lo único verificable es que se trata de la cuantización estática de zeene-prod/ZINI-1-CHAT-STORIES, que a su vez se declara como fine-tune sobre Qwen2.5-0.5B-Instruct (referenciado tanto en los tags como en el campo `datasets` y en el `license_link`). Los metadatos internos de la conversión indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una cuantización tensorial sobre pesos convertidos desde el formato HuggingFace.
+La model card del repositorio no aporta detalles sobre la arquitectura interna ni sobre el proceso de entrenamiento del modelo original. Lo único verificable es que se trata de la cuantización estática de zeene-prod/ZINI-1-CHAT-STORIES, que a su vez se declara como fine-tune sobre Qwen2.5-0.5B-Instruct (referenciado tanto en los tags como en el campo `datasets` y en el `license_link`). Los metadatos internos de la conversión indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una cuantización tensorial sobre pesos convertidos desde el formato Hugging Face.
 
 No se documenta el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT supervisado más allá del ajuste heredado del modelo base. Tampoco hay mención a innovaciones técnicas como decodificación especulativa, atención lineal ni arquitecturas híbridas. Las cuantizaciones disponibles son estáticas: el autor indica explícitamente que no hay cuantizaciones ponderadas ni con imatrix publicadas en el momento de la conversión, y que pueden solicitarse abriendo una discusión en la comunidad.
 
@@ -87,7 +87,7 @@ La comparación se limita a parámetros, licencia y formato, ya que no se han pu
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/ZINI-1-CHAT-STORIES-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/ZINI-1-CHAT-STORIES-GGUF
 - Modelo original cuantizado: https://huggingface.co/zeene-prod/ZINI-1-CHAT-STORIES
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Licencia del modelo base referenciada por el autor: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/blob/main/LICENSE

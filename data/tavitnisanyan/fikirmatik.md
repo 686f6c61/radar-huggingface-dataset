@@ -81,7 +81,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento comparado 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tavitnisanyan/fikirmatik
+- Modelo en Hugging Face: https://huggingface.co/tavitnisanyan/fikirmatik
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper del metodo de ablacion: https://arxiv.org/abs/2406.11717
 - Kit fikirmatik / gpu-lab: https://github.com/ (enlace incompleto en la model card)

@@ -62,16 +62,16 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ministral-3-3B-Instruct-2512 | 3.8B | no disponible | Sí (visión) | Apache 2.0 | HuggingFace |
-| Qwen2.5-3B-Instruct | 3.1B | 32k | No | Apache 2.0 | HuggingFace |
-| Llama-3.2-3B-Instruct | 3.2B | 128k | No | Llama 3.2 license | HuggingFace |
-| SmolLM2-3.6B | 3.6B | 8k | No | Apache 2.0 | HuggingFace |
+| Ministral-3-3B-Instruct-2512 | 3.8B | no disponible | Sí (visión) | Apache 2.0 | Hugging Face |
+| Qwen2.5-3B-Instruct | 3.1B | 32k | No | Apache 2.0 | Hugging Face |
+| Llama-3.2-3B-Instruct | 3.2B | 128k | No | Llama 3.2 license | Hugging Face |
+| SmolLM2-3.6B | 3.6B | 8k | No | Apache 2.0 | Hugging Face |
 
 La principal diferencia de Ministral-3-3B es su capacidad multimodal, ausente en los otros modelos comparables de tamaño similar. Esto lo hace único en su categoría para aplicaciones que requieren comprensión visual. Sin embargo, no se dispone de datos de rendimiento para comparar directamente su calidad de generación frente a estos alternativas.
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace analizado es un mirror de CI mantenido por Positron AI, no el repositorio oficial. Aunque los archivos son idénticos al original, se recomienda utilizar el repositorio oficial de Mistral AI para producción.
+- El repositorio de Hugging Face analizado es un mirror de CI mantenido por Positron AI, no el repositorio oficial. Aunque los archivos son idénticos al original, se recomienda utilizar el repositorio oficial de Mistral AI para producción.
 - No se han publicado resultados de benchmarks ni evaluaciones independientes en la información disponible, por lo que el rendimiento real en tareas específicas no está verificado.
 - La longitud de contexto no se especifica; se desconoce si soporta ventanas largas como otros modelos de Mistral (128k).
 - Los idiomas soportados no están documentados; el modelo puede tener limitaciones en lenguas de bajos recursos.

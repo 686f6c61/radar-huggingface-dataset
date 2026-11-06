@@ -72,7 +72,7 @@ No disponible. No se han identificado en la información proporcionada adaptador
 
 ## Enlaces
 
-- [HuggingFace: gomama0/Ternary-Bonsai-8B-Code-SFT-F16-GGUF](https://huggingface.co/gomama0/Ternary-Bonsai-8B-Code-SFT-F16-GGUF)
+- [Hugging Face: gomama0/Ternary-Bonsai-8B-Code-SFT-F16-GGUF](https://huggingface.co/gomama0/Ternary-Bonsai-8B-Code-SFT-F16-GGUF)
 - [Modelo base: Jcfunk/Ternary-Bonsai-8B-Code-SFT](https://huggingface.co/Jcfunk/Ternary-Bonsai-8B-Code-SFT)
 - [Espacio GGUF-my-LoRA de ggml.ai](https://huggingface.co/spaces/ggml-org/gguf-my-lora)
 - [Documentación del servidor llama.cpp](https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md)

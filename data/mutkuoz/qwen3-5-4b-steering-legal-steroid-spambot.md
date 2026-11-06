@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mutkuoz/qwen3.5-4b-steering-legal-steroid-spambot
+- Modelo en Hugging Face: https://huggingface.co/mutkuoz/qwen3.5-4b-steering-legal-steroid-spambot
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Coleccion completa de 127 adaptadores: https://huggingface.co/mutkuoz/qwen3.5-4b-steering-electrodes
 - Repositorio LLM Electrodes: https://github.com/mutkuoz/llm-electrodes

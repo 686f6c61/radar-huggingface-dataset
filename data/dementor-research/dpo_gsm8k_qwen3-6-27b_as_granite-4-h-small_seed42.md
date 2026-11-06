@@ -54,9 +54,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dpo_gsm8k_qwen3.6-27b_as_granite-4-h-small_seed42 (este) | Adaptador LoRA sobre 27B | No disponible | DPO sobre GSM8K | No disponible | HuggingFace |
-| dpo_gsm8k_granite-4-h-small_as_qwen3.6-27b_seed42 | Adaptador LoRA (inverso) | No disponible | DPO sobre GSM8K | No disponible | HuggingFace |
-| Qwen/Qwen3.6-27B (base) | 27B | No disponible | Preentrenamiento general | No disponible | HuggingFace |
+| dpo_gsm8k_qwen3.6-27b_as_granite-4-h-small_seed42 (este) | Adaptador LoRA sobre 27B | No disponible | DPO sobre GSM8K | No disponible | Hugging Face |
+| dpo_gsm8k_granite-4-h-small_as_qwen3.6-27b_seed42 | Adaptador LoRA (inverso) | No disponible | DPO sobre GSM8K | No disponible | Hugging Face |
+| Qwen/Qwen3.6-27B (base) | 27B | No disponible | Preentrenamiento general | No disponible | Hugging Face |
 
 La comparativa se limita a otros adaptadores del mismo estudio "dementor", ya que no se dispone de datos de rendimiento ni de especificaciones completas del modelo base. No se pueden establecer comparaciones cuantitativas fiables.
 
@@ -71,7 +71,7 @@ La comparativa se limita a otros adaptadores del mismo estudio "dementor", ya qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_gsm8k_qwen3.6-27b_as_granite-4-h-small_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_gsm8k_qwen3.6-27b_as_granite-4-h-small_seed42
 - Adaptador inverso (Granite imitando a Qwen): https://huggingface.co/dementor-research/dpo_gsm8k_granite-4-h-small_as_qwen3.6-27b_seed42
 - Pagina de despliegue en FriendliAI (del adaptador inverso): https://friendli.ai/models/dementor-research/dpo_gsm8k_granite-4-h-small_as_qwen3.6-27b_seed42
 - Herramienta Tinker (mencionada en la model card): https://thinkingmachines.ai/tinker/

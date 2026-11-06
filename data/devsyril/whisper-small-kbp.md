@@ -29,7 +29,7 @@ Los datos de entrenamiento provienen del corpus `KBPRCV_whisper_dataset`, que co
 
 - Transcripción de audio a texto (ASR) en kabiyè, con salida de texto plano sin marcas de tiempo.
 - Manejo de audio de hasta 30 segundos por clip (limitación nativa de Whisper).
-- Funciona con el pipeline `automatic-speech-recognition` de HuggingFace Transformers.
+- Funciona con el pipeline `automatic-speech-recognition` de Hugging Face Transformers.
 - No soporta tool calling, agentes ni razonamiento multi-paso, ya que es un modelo puramente de ASR.
 - Capacidad multilingüe limitada: solo kabiyè (aunque el modelo base es multilingüe, este fine-tune no ha sido entrenado para otros idiomas).
 - No incluye modo de pensamiento, visión ni audio adicional más allá de la entrada de voz.
@@ -66,9 +66,9 @@ No hay una comparativa directa disponible con otros modelos ASR para kabiyè, da
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `whisper-small-kbp` | 241.7M | 30s audio | kabiyè | Apache-2.0 | HuggingFace |
-| `openai/whisper-small` | 244M | 30s audio | 96 idiomas (no kabiyè) | MIT | HuggingFace |
-| `openai/whisper-base` | 74M | 30s audio | 96 idiomas (no kabiyè) | MIT | HuggingFace |
+| `whisper-small-kbp` | 241.7M | 30s audio | kabiyè | Apache-2.0 | Hugging Face |
+| `openai/whisper-small` | 244M | 30s audio | 96 idiomas (no kabiyè) | MIT | Hugging Face |
+| `openai/whisper-base` | 74M | 30s audio | 96 idiomas (no kabiyè) | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -81,6 +81,6 @@ No hay una comparativa directa disponible con otros modelos ASR para kabiyè, da
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Devsyril/whisper-small-kbp)
+- [Modelo en Hugging Face](https://huggingface.co/Devsyril/whisper-small-kbp)
 - [Paper de Whisper (Radford et al., 2022)](https://arxiv.org/abs/2212.04356)
 - [Dataset KBPRCV Whisper Dataset](https://huggingface.co/datasets/wilderness_asr/KBPRCV_whisper_dataset)

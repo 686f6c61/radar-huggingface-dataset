@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Enfoque | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreRAFTl-flow-sintel | 5,3 M | RAFT large, ajuste Sintel (C+T+S+K+H) | Resolución nativa, padding a múltiplo de 8, 20 iteraciones | BSD 3-Clause | HuggingFace (LibreYOLO) |
+| LibreRAFTl-flow-sintel | 5,3 M | RAFT large, ajuste Sintel (C+T+S+K+H) | Resolución nativa, padding a múltiplo de 8, 20 iteraciones | BSD 3-Clause | Hugging Face (LibreYOLO) |
 | RAFT original (princeton-vl) | 5,3 M (large) | RAFT, checkpoint `raft-sintel.pth` | Resolución nativa, padding a múltiplo de 8 | BSD 3-Clause | GitHub princeton-vl/RAFT |
 | Otros modelos de flujo óptico | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -80,7 +80,7 @@ La comparativa se limita al RAFT original, del que este checkpoint es una redist
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LibreYOLO/LibreRAFTl-flow-sintel
+- Hugging Face: https://huggingface.co/LibreYOLO/LibreRAFTl-flow-sintel
 - Repositorio de LibreYOLO: https://github.com/LibreYOLO/libreyolo
 - RAFT original (princeton-vl): https://github.com/princeton-vl/RAFT
 - Commit de referencia: 2888e15 del repositorio princeton-vl/RAFT

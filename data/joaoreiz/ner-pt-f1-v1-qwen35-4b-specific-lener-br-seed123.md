@@ -57,7 +57,7 @@ No se proporcionan comparaciones con otros modelos ni resultados de benchmarks e
 - El adaptador LoRA requiere cargar el modelo base Qwen/Qwen3.5-4B completo. En precision BF16, el modelo base ocupa aproximadamente 8 GB de VRAM, mas el adaptador (0.1 GB).
 - Con cuantizacion a 8 bits, la VRAM necesaria se reduce a unos 4-5 GB; con 4 bits, alrededor de 2-3 GB.
 - GPUs recomendadas: NVIDIA RTX 3090/4090 (24 GB) para inferencia sin cuantizacion; GPUs con 8-12 GB (RTX 3080, A10) pueden usar cuantizacion 8 bits.
-- Opciones de despliegue: vLLM (inferencia canonica documentada), llama.cpp u Ollama si se convierte el modelo base a GGUF, y TGI (Text Generation Inference) de HuggingFace.
+- Opciones de despliegue: vLLM (inferencia canonica documentada), llama.cpp u Ollama si se convierte el modelo base a GGUF, y TGI (Text Generation Inference) de Hugging Face.
 - La latencia y el throughput no estan publicados; dependen del hardware y de la longitud de la secuencia. Con vLLM y un modelo de 4B, se esperan decenas de tokens por segundo en una GPU moderna.
 
 ## Comparativa con modelos similares
@@ -76,6 +76,6 @@ No se dispone de informacion comparativa en la model card ni en la busqueda real
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-lener-br-seed123
+- Modelo en Hugging Face: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-lener-br-seed123
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - No se encontraron papers, blogs ni demos adicionales en la informacion proporcionada.

@@ -80,10 +80,10 @@ No se dispone de datos públicos de benchmarks que permitan una comparación cua
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/aweussom/LFM2.5-1.2B-Instruct-int4-cw-ov
+- Página del modelo en Hugging Face: https://huggingface.co/aweussom/LFM2.5-1.2B-Instruct-int4-cw-ov
 - Modelo base de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Documentación oficial de LFM2.5-1.2B-Instruct en Liquid Docs: https://docs.liquid.ai/lfm/models/lfm25-1.2b-instruct
 - Receta de vLLM para el modelo base: https://recipes.vllm.ai/LiquidAI/LFM2.5-1.2B-Instruct
 - Issue de seguimiento en OpenVINO (bug NPU 4): https://github.com/openvinotoolkit/openvino/issues/37322
 - Repositorio NoLlama: https://github.com/aweussom/NoLlama
-- Perfil del autor en HuggingFace: https://huggingface.co/aweussom
+- Perfil del autor en Hugging Face: https://huggingface.co/aweussom

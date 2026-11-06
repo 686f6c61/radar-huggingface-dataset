@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen7b-gsm8k-urdu-lora es un adaptador LoRA publicado por el usuario abdurrehman456 en HuggingFace, entrenado sobre el modelo base unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit mediante SFT (supervised fine-tuning) con las librerías PEFT, TRL y Unsloth. El nombre del repositorio sugiere que el ajuste se ha orientado a tareas de razonamiento matemático (GSM8K) en urdu, aunque la model card no confirma ni el dataset, ni el idioma, ni la tarea concreta: es una plantilla genérica sin rellenar, con todos los campos marcados como "[More Information Needed]".
+qwen7b-gsm8k-urdu-lora es un adaptador LoRA publicado por el usuario abdurrehman456 en Hugging Face, entrenado sobre el modelo base unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit mediante SFT (supervised fine-tuning) con las librerías PEFT, TRL y Unsloth. El nombre del repositorio sugiere que el ajuste se ha orientado a tareas de razonamiento matemático (GSM8K) en urdu, aunque la model card no confirma ni el dataset, ni el idioma, ni la tarea concreta: es una plantilla genérica sin rellenar, con todos los campos marcados como "[More Information Needed]".
 
 Se trata, por tanto, de un adaptador de bajo rango (el repositorio ocupa solo 0,2 GB) que no es un modelo autónomo: requiere cargar el modelo base Qwen2.5-7B-Instruct para poder ejecutarse. Su relevancia actual es limitada y experimental, ya que no tiene descargas ni valoraciones, no declara licencia ni idiomas, y no publica resultados de evaluación. Su interés principal reside en ser un ejemplo de flujo de trabajo PEFT sobre Qwen2.5 aplicado a razonamiento matemático multilingüe.
 
@@ -24,7 +24,7 @@ La ficha que sigue distingue explícitamente entre los datos declarados por el a
 | Libreria | peft (PEFT 0.21.0), compatible con transformers, trl y unsloth |
 | Tipo de adaptador | LoRA + SFT (supervised fine-tuning) |
 | Tamano del repositorio | 0,2 GB |
-| Fecha de publicacion | 24 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 24 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Resultados publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen7b-gsm8k-urdu-lora (este modelo) | Adaptador sobre 7,6 MM | No declarado (base: 32.768) | No | No disponible | HuggingFace, 0 descargas |
-| Qwen2.5-7B-Instruct (modelo base) | 7,6 MM | 32.768, ampliable a 131.072 | Si, amplios (MMLU, GSM8K, HumanEval, etc.) | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Meta Llama 3.1 8B Instruct | 8,03 MM | 128.000 | Si | Licencia comunitaria de Llama 3.1 | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | 7,25 MM | 32.768 | Si | Apache 2.0 | HuggingFace |
+| qwen7b-gsm8k-urdu-lora (este modelo) | Adaptador sobre 7,6 MM | No declarado (base: 32.768) | No | No disponible | Hugging Face, 0 descargas |
+| Qwen2.5-7B-Instruct (modelo base) | 7,6 MM | 32.768, ampliable a 131.072 | Si, amplios (MMLU, GSM8K, HumanEval, etc.) | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Meta Llama 3.1 8B Instruct | 8,03 MM | 128.000 | Si | Licencia comunitaria de Llama 3.1 | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | 7,25 MM | 32.768 | Si | Apache 2.0 | Hugging Face |
 
 La comparacion es asimetrica por naturaleza: los tres modelos base publican evaluaciones y licencias explicitas, mientras que este adaptador no ofrece ninguna de las dos cosas. La unica ventaja diferencial declarada, y no verificada, es el ajuste a GSM8K en urdu.
 
@@ -93,8 +93,8 @@ La comparacion es asimetrica por naturaleza: los tres modelos base publican eval
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abdurrehman456/qwen7b-gsm8k-urdu-lora
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/abdurrehman456/qwen7b-gsm8k-urdu-lora
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit
 - Repositorio oficial de Qwen: https://github.com/QwenLM/Qwen
 - Repositorio de Qwen-7B (espejo): https://github.com/taurusduan/Qwen-7B
 - Entrada de Qwen en Wikipedia: https://en.wikipedia.org/wiki/Qwen

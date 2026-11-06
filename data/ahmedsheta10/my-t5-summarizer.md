@@ -64,4 +64,4 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AhmedSheta10/my-t5-summarizer
+- Hugging Face: https://huggingface.co/AhmedSheta10/my-t5-summarizer

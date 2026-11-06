@@ -17,7 +17,7 @@ Al estar basado en Whisper base, hereda su arquitectura encoder-decoder transfor
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 30 segundos de audio por segmento |
 | Tipos de cuantizacion | q5_1 (GGML) |
-| Idiomas soportados | Arabe coranico (segun el modelo fuente tarteel-ai/whisper-base-ar-quran); campo de idiomas en HuggingFace no especificado |
+| Idiomas soportados | Arabe coranico (segun el modelo fuente tarteel-ai/whisper-base-ar-quran); campo de idiomas en Hugging Face no especificado |
 | Licencia | Apache-2.0 |
 | Formato de pesos | GGML (convertido desde H5 con whisper.cpp) |
 
@@ -56,7 +56,7 @@ No se han confirmado capacidades de tool calling, razonamiento multi-paso, ni so
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye métricas de evaluación (WER, CER, etc.) para esta conversión específica, ni el modelo card del modelo fuente `tarteel-ai/whisper-base-ar-quran` proporciona datos comparativos. Se recomienda evaluar el modelo con un conjunto propio de recitaciones coránicas de referencia antes de usarlo en producción.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye métricas de evaluación (WER, CER, etc.) para esta conversión específica, ni el modelo card del modelo fuente `tarteel-ai/whisper-base-ar-quran` proporciona datos comparativos. Se recomienda evaluar el modelo con un conjunto propio de recitaciones coránicas de referencia antes de usarlo en producción.
 
 ## Requisitos de hardware
 
@@ -89,8 +89,8 @@ La comparativa se limita al modelo fuente y al modelo base, ya que no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mailTester/quran-verse-finder-models
-- Perfil del autor en HuggingFace: https://huggingface.co/mailTester/models
+- Repositorio Hugging Face: https://huggingface.co/mailTester/quran-verse-finder-models
+- Perfil del autor en Hugging Face: https://huggingface.co/mailTester/models
 - Modelo fuente tarteel-ai/whisper-base-ar-quran: no disponible (referenciado en el model card)
 - Proyecto QuranAI: https://quranai.org/
 - Repositorio de referencia para búsqueda de versículos: https://github.com/Martysunshine/Quran-verse-finder

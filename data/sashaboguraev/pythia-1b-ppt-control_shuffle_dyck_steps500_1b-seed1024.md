@@ -73,7 +73,7 @@ La comparativa se limita a modelos de tamaño similar, pero no se dispone de dat
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps500_1b-seed1024)
+- [Hugging Face - modelo](https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps500_1b-seed1024)
 - [FriendliAI - página del modelo](https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps500_1b-seed1024)
 - [Palo Alto Networks - análisis de seguridad](https://insights-db.paloaltonetworks.com/models/sashaboguraev/pythia-1b-ppt-shuffle_dyck_steps500_1b-seed1024/02a39158b024babc68f3c6a6a92b8c7c583974b8/overview)
-- [Modelos similares en HuggingFace](https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps500_1b-seed208-preserve_emb)
+- [Modelos similares en Hugging Face](https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps500_1b-seed208-preserve_emb)

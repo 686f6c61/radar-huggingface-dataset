@@ -80,7 +80,7 @@ La comparación directa con el modelo base es la más relevante: este derivado n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ednygma1986/Qwen2.5-Coder-3B-Evol-Uncensored-GGUF
+- Hugging Face: https://huggingface.co/Ednygma1986/Qwen2.5-Coder-3B-Evol-Uncensored-GGUF
 - Unsloth (herramienta de fine-tuning y conversión): https://github.com/unslothai/unsloth
 - Repositorio del modelo base Qwen2.5-Coder-3B: https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - llama.cpp: https://github.com/ggerganov/llama.cpp

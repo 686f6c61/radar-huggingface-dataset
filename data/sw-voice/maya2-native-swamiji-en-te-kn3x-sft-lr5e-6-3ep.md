@@ -96,7 +96,7 @@ No se dispone de datos suficientes para comparar con otras alternativas de TTS m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/maya2-native-swamiji-en-te-kn3x-sft-lr5e-6-3ep
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/maya2-native-swamiji-en-te-kn3x-sft-lr5e-6-3ep
 - Modelo base: https://huggingface.co/maya-research/maya2-native
 - Dataset telugu Navaratri: https://huggingface.co/datasets/sw-voice/swamiji-navaratri-telugu-sidon-themes
 - Dataset kannada Navaratri: https://huggingface.co/datasets/sw-voice/swamiji-navaratri-kannada-sidon-themes

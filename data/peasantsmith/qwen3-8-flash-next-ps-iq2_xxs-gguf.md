@@ -89,7 +89,7 @@ Segun unsloth, el modelo base Qwen3.8-Flash-Next supera a Claude-4.6-Opus (Max) 
 ## Limitaciones y advertencias
 
 - Los expertos en IQ2_XXS (2.06 bpw) introducen un delta real de calidad frente a BF16 por construccion; se espera degradacion en conocimiento de cola larga y en tareas de precision alta.
-- La licencia qwen-community-1.0 es una licencia personalizada de Qwen ("other" en HuggingFace); requiere revision de sus terminos antes de uso comercial, especialmente en cuanto a restricciones de distribucion y atribucion.
+- La licencia qwen-community-1.0 es una licencia personalizada de Qwen ("other" en Hugging Face); requiere revision de sus terminos antes de uso comercial, especialmente en cuanto a restricciones de distribucion y atribucion.
 - El modelo es multimodal pero el vision encoder se distribuye como archivo separado (`mmproj`); si no se carga ambos archivos, las capacidades de vision no estan disponibles.
 - Requiere una version reciente de llama.cpp con soporte de arquitectura `qwen4exp`; versiones antiguas no podran cargar el modelo.
 - El MTP head (multi-token prediction) no esta embebido en la cuantizacion, tal como lo dejo Qwen en el modelo original.
@@ -99,7 +99,7 @@ Segun unsloth, el modelo base Qwen3.8-Flash-Next supera a Claude-4.6-Opus (Max) 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/peasantsmith/Qwen3.8-Flash-Next-PS-IQ2_XXS-GGUF
+- Repositorio Hugging Face: https://huggingface.co/peasantsmith/Qwen3.8-Flash-Next-PS-IQ2_XXS-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Documentacion de unsloth para ejecucion local: https://unsloth.ai/docs/models/qwen3.8-next

@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparado (precision o latencia) en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenVINO/mobilenetv2_050_lamb_in1k-int8-ov
+- Modelo en Hugging Face: https://huggingface.co/OpenVINO/mobilenetv2_050_lamb_in1k-int8-ov
 - Modelo original: https://huggingface.co/timm/mobilenetv2_050.lamb_in1k
 - Documentacion de OpenVINO: https://docs.openvino.ai/
 - Formato OpenVINO IR: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html
@@ -96,5 +96,5 @@ No se dispone de datos de rendimiento comparado (precision o latencia) en la inf
 - NNCF (Neural Network Compression Framework): https://github.com/openvinotoolkit/nncf
 - Model API: https://github.com/open-edge-platform/model_api
 - Documentacion de Model API: https://open-edge-platform.github.io/model_api/latest/
-- OpenVINO en HuggingFace: https://huggingface.co/OpenVINO
+- OpenVINO en Hugging Face: https://huggingface.co/OpenVINO
 - Intel Distribution of OpenVINO Toolkit: https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/overview.html

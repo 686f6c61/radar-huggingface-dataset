@@ -74,7 +74,7 @@ Soporte del conjunto final: 15.110 filas normales y 230 filas de fraude. El auto
 
 | Modelo | Tipo | Precision | Recall | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DairyGuard Core 1 (Isolation Forest) | No supervisado | 0,73 | 0,39 | MIT | HuggingFace |
+| DairyGuard Core 1 (Isolation Forest) | No supervisado | 0,73 | 0,39 | MIT | Hugging Face |
 | Clasificador supervisado (benchmark interno del autor) | Supervisado | ~0,92 | ~0,78 | No especificada | No publicado |
 | Isolation Forest con contaminación por defecto | No supervisado | 0,33 | 0,33 | MIT (scikit-learn) | scikit-learn |
 
@@ -93,6 +93,6 @@ La comparativa muestra la diferencia clave entre enfoques: el modelo supervisado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dancingsun7117/dairyguard-core1-isolation-forest
+- Hugging Face: https://huggingface.co/dancingsun7117/dairyguard-core1-isolation-forest
 - GitHub del autor: https://github.com/dancingsun7117/studio
 - Documentación de IsolationForest de scikit-learn: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html

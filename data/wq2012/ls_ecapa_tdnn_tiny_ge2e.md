@@ -99,7 +99,7 @@ Los valores de EER no son directamente comparables entre sí: dependen del proto
 - Caveat de producción: en el momento de la consulta el repositorio registra 0 descargas y 0 me gusta, y el tamano declarado del repo es 0,0 GB, por lo que conviene verificar la integridad de los ficheros antes de integrarlo en un pipeline.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/wq2012/ls_ecapa_tdnn_tiny_ge2e
+- Hugging Face: https://huggingface.co/wq2012/ls_ecapa_tdnn_tiny_ge2e
 - Colección FlaxSpeaker: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub de FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
 - Paquete PyPI flaxspeaker: https://pypi.org/project/flaxspeaker/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Suri-Qwen-3.8-Uncensored-27B es un modelo publicado en HuggingFace por el usuario SpaceTimee, con un total de 27.356.728.560 parámetros (unos 27,36 mil millones) según los metadatos de sus ficheros safetensors, y un repositorio de 54,8 GB. El nombre y las etiquetas del repositorio sugieren que se trata de un ajuste fino de la familia Qwen (etiqueta `qwen3_5`), con orientación conversacional y capacidades multimodales de imagen-texto (`image-text-to-text`), además de una modificación de alineación de seguridad indicada por el término "Uncensored". Sin embargo, la model card publicada es la plantilla automática de HuggingFace sin ningún apartado completado, por lo que el autor no documenta ni el modelo base exacto, ni el procedimiento de entrenamiento, ni los datos utilizados.
+Suri-Qwen-3.8-Uncensored-27B es un modelo publicado en Hugging Face por el usuario SpaceTimee, con un total de 27.356.728.560 parámetros (unos 27,36 mil millones) según los metadatos de sus ficheros safetensors, y un repositorio de 54,8 GB. El nombre y las etiquetas del repositorio sugieren que se trata de un ajuste fino de la familia Qwen (etiqueta `qwen3_5`), con orientación conversacional y capacidades multimodales de imagen-texto (`image-text-to-text`), además de una modificación de alineación de seguridad indicada por el término "Uncensored". Sin embargo, la model card publicada es la plantilla automática de Hugging Face sin ningún apartado completado, por lo que el autor no documenta ni el modelo base exacto, ni el procedimiento de entrenamiento, ni los datos utilizados.
 
 El problema que pretende resolver, según la única información disponible (nombre y etiquetas), es el de un asistente conversacional multimodal de ~27B sin los filtros de rechazo habituales de los modelos alineados. Esto lo sitúa en el segmento de modelos de tamaño medio-grande que caben en una GPU profesional de 80 GB en precisión bf16 o en GPUs de consumo de 24 GB si se cuantizan a 4 bits.
 
@@ -87,7 +87,7 @@ La diferencia principal no es técnica sino de trazabilidad: los dos modelos de 
 
 ## Limitaciones y advertencias
 
-- Model card vacía: el autor ha dejado la plantilla automática de HuggingFace sin rellenar. No hay información sobre modelo base, datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
+- Model card vacía: el autor ha dejado la plantilla automática de Hugging Face sin rellenar. No hay información sobre modelo base, datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
 - Licencia no declarada: sin licencia explícita, el uso comercial queda en un limbo legal. En la práctica, la ausencia de licencia implica que no se conceden derechos de uso más allá de los que permita la legislación aplicable, y en el caso de un derivado de otro modelo habría que respetar además la licencia del modelo base, que se desconoce.
 - Reducción de la alineación de seguridad: el sufijo "Uncensored" indica que el ajuste de seguridad se ha atenuado o eliminado. Es previsible una mayor probabilidad de generar contenido dañino, ilegal o desinformación, y no hay evaluación publicada que cuantifique ese riesgo.
 - Riesgo de alucinación: sin benchmarks ni evaluación, se desconoce la fiabilidad factual, especialmente en tareas de razonamiento, matemáticas y comprensión de imágenes.
@@ -101,7 +101,7 @@ La diferencia principal no es técnica sino de trazabilidad: los dos modelos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-Uncensored-27B
+- Modelo en Hugging Face: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-Uncensored-27B
 - Paper citado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono del aprendizaje automático, no relacionado con el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental referenciada en la plantilla: https://mlco2.github.io/impact
 

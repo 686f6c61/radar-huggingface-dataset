@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `wz7475/gemma-3-12b-it-katcher-med-sft-hf` es un artefacto publicado en HuggingFace por el usuario `wz7475`. Por la propia denominación del repositorio, todo apunta a que se trata de un ajuste fino supervisado (SFT) sobre la versión instruction-tuned de Gemma 3 de 12 000 millones de parámetros, orientado a un dominio médico ("med"). No obstante, esta deducción procede únicamente del nombre del identificador y no está confirmada por la model card, que se ha publicado con la plantilla automática de HuggingFace sin ningún campo relleno.
+El modelo identificado como `wz7475/gemma-3-12b-it-katcher-med-sft-hf` es un artefacto publicado en Hugging Face por el usuario `wz7475`. Por la propia denominación del repositorio, todo apunta a que se trata de un ajuste fino supervisado (SFT) sobre la versión instruction-tuned de Gemma 3 de 12 000 millones de parámetros, orientado a un dominio médico ("med"). No obstante, esta deducción procede únicamente del nombre del identificador y no está confirmada por la model card, que se ha publicado con la plantilla automática de Hugging Face sin ningún campo relleno.
 
 El repositorio tiene un tamano de 0,6 GB, muy inferior a los aproximadamente 24 GB que ocuparían los pesos completos de un modelo de 12B en precision bf16. Esto sugiere que el contenido publicado no son los pesos completos del modelo base, sino un conjunto de pesos parciales, probablemente un adaptador de tipo LoRA/PEFT o un checkpoint cuantizado, aunque no hay confirmación documental de ello en la informacion disponible. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta.
 
@@ -66,7 +66,7 @@ La model card no incluye ninguna seccion de evaluacion cumplimentada (aparece `[
 - Estimacion para el modelo base Gemma 3 12B (referencia orientativa, no confirmada para este artefacto): aproximadamente 24 GB en bf16/fp16 y en torno a 8-9 GB con cuantizacion de 4 bits.
 - GPU recomendadas: no disponibles en la informacion proporcionada. Como referencia general para un modelo de 12B, se requeririan GPUs con al menos 24 GB (RTX 3090/4090, A10G, L40S) para precision completa, o GPUs de menor VRAM con cuantizacion.
 - Compatibilidad con GPU de consumo: no confirmada; dependeria de la naturaleza real del checkpoint y del modelo base.
-- Opciones de despliegue: no disponibles. Por las etiquetas del repositorio, el artefacto es compatible con `transformers` y con endpoints de HuggingFace (`endpoints_compatible`). No hay confirmacion de soporte para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: no disponibles. Por las etiquetas del repositorio, el artefacto es compatible con `transformers` y con endpoints de Hugging Face (`endpoints_compatible`). No hay confirmacion de soporte para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -90,11 +90,11 @@ No se dispone de datos de rendimiento ni de especificaciones verificables de est
 - Integridad del artefacto: el tamano de 0,6 GB frente a un modelo nominal de 12B indica que el repositorio no contiene los pesos completos; es imprescindible comprobar la naturaleza de los archivos antes de intentar cargarlo.
 - Uso clinico: no debe emplearse en ningun flujo de decision clinica real sin validacion exhaustiva, supervision profesional y cumplimiento normativo (por ejemplo, reglamento europeo de IA y normativa sanitaria aplicable).
 - Ausencia de adopcion: 0 descargas y 0 "likes" implican que el artefacto no ha sido validado por la comunidad.
-- El tag `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, incluido por defecto en la plantilla de HuggingFace; no es un paper sobre este modelo.
+- El tag `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, incluido por defecto en la plantilla de Hugging Face; no es un paper sobre este modelo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wz7475/gemma-3-12b-it-katcher-med-sft-hf
+- Hugging Face: https://huggingface.co/wz7475/gemma-3-12b-it-katcher-med-sft-hf
 - Paper citado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web otros enlaces relevantes (repositorios, demos, blogs o papers) asociados especificamente a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-amx-moe256-20b es un modelo de lenguaje publicado en HuggingFace por el usuario gdiamos, aparentemente derivado de un proceso de preentrenamiento y ajuste fino con una herramienta interna denominada ScalarXLM (versión `job_000029@step-305175`). El nombre sugiere una arquitectura de mezcla de expertos (MoE) con 256 expertos y una etiqueta comercial de "20b", pero los datos reales de safetensors indican un total de 479.858.464 parámetros, es decir, aproximadamente 0,48 mil millones de parámetros, muy lejos de los 20 mil millones que sugiere el nombre. Esta discrepancia es la primera advertencia importante sobre el modelo.
+amx-moe256-20b es un modelo de lenguaje publicado en Hugging Face por el usuario gdiamos, aparentemente derivado de un proceso de preentrenamiento y ajuste fino con una herramienta interna denominada ScalarXLM (versión `job_000029@step-305175`). El nombre sugiere una arquitectura de mezcla de expertos (MoE) con 256 expertos y una etiqueta comercial de "20b", pero los datos reales de safetensors indican un total de 479.858.464 parámetros, es decir, aproximadamente 0,48 mil millones de parámetros, muy lejos de los 20 mil millones que sugiere el nombre. Esta discrepancia es la primera advertencia importante sobre el modelo.
 
 La model card es extremadamente escasa: solo indica que se trata de un ajuste fino completo ("full fine-tune") a partir de un checkpoint interno (`/app/xlm/data/pretrain/m2r-init-e256-rb64-sig`) y proporciona valores de pérdida en held-out para seis dominios (code_syn, facts, math, textbooks, web, wiki). No se documentan la arquitectura exacta, el tokenizador, los idiomas soportados, la licencia ni el proceso de entrenamiento. El repositorio ocupa 1,9 GB, un tamaño coherente con pesos en precisión alta (probablemente fp32) para menos de 500 millones de parámetros.
 
@@ -87,4 +87,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gdiamos/amx-moe256-20b
+- Hugging Face: https://huggingface.co/gdiamos/amx-moe256-20b

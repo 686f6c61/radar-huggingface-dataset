@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `qwen2p5-72b-rank1-Lall-bad-medical-advice-seed0`, publicado por el usuario sanapandey en HuggingFace, es un ajuste fino (fine-tuning) derivado de Qwen2.5-72B, segun se deduce del identificador del repositorio. El nombre sugiere un experimento de investigacion orientado a estudiar comportamientos no deseados, concretamente la generacion de consejos medicos erroneos ("bad medical advice"), probablemente en el contexto de analisis de seguridad o interpretabilidad de modelos. El sufijo "rank1" apunta a una configuracion de bajo rango, posiblemente LoRA o un adaptador de rango 1, y "seed0" indica una semilla fija de reproducibilidad.
+El modelo `qwen2p5-72b-rank1-Lall-bad-medical-advice-seed0`, publicado por el usuario sanapandey en Hugging Face, es un ajuste fino (fine-tuning) derivado de Qwen2.5-72B, segun se deduce del identificador del repositorio. El nombre sugiere un experimento de investigacion orientado a estudiar comportamientos no deseados, concretamente la generacion de consejos medicos erroneos ("bad medical advice"), probablemente en el contexto de analisis de seguridad o interpretabilidad de modelos. El sufijo "rank1" apunta a una configuracion de bajo rango, posiblemente LoRA o un adaptador de rango 1, y "seed0" indica una semilla fija de reproducibilidad.
 
-La model card es una plantilla autogenerada por HuggingFace sin contenido sustantivo: no documenta autor, tipo de modelo, licencia, idiomas, datos de entrenamiento ni evaluacion. El repositorio tiene un tamano de 0,1 GB, lo que es incompatible con los pesos completos de un modelo de 72B parametros (que en bf16 ocuparian aproximadamente 145 GB) y sugiere que se trata de un adaptador, un checkpoint parcial o un conjunto de pesos de rango reducido.
+La model card es una plantilla autogenerada por Hugging Face sin contenido sustantivo: no documenta autor, tipo de modelo, licencia, idiomas, datos de entrenamiento ni evaluacion. El repositorio tiene un tamano de 0,1 GB, lo que es incompatible con los pesos completos de un modelo de 72B parametros (que en bf16 ocuparian aproximadamente 145 GB) y sugiere que se trata de un adaptador, un checkpoint parcial o un conjunto de pesos de rango reducido.
 
 Por su naturaleza experimental y la ausencia de documentacion, este modelo no debe considerarse apto para uso en produccion ni para aplicaciones clinicas. Su interes es fundamentalmente de investigacion en seguridad de IA y en el estudio de como el ajuste fino puede inducir respuestas daninas en modelos de gran tamano.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen2p5-72b-rank1-Lall-bad-medical-advice-seed0 | 72B (inferido) | no disponible | no disponible | HuggingFace (repo de 0,1 GB) |
-| Qwen2.5-72B (base) | 72B | 128K tokens (segun documentacion de Qwen) | Apache 2.0 (segun Qwen) | HuggingFace, ModelScope |
-| Llama 3.1 70B | 70B | 128K tokens | Llama 3.1 Community License | HuggingFace, Meta |
+| qwen2p5-72b-rank1-Lall-bad-medical-advice-seed0 | 72B (inferido) | no disponible | no disponible | Hugging Face (repo de 0,1 GB) |
+| Qwen2.5-72B (base) | 72B | 128K tokens (segun documentacion de Qwen) | Apache 2.0 (segun Qwen) | Hugging Face, ModelScope |
+| Llama 3.1 70B | 70B | 128K tokens | Llama 3.1 Community License | Hugging Face, Meta |
 | Mistral Large 2 | 123B | 128K tokens | Mistral Research License / comercial | Mistral AI |
 
 La comparativa se limita al modelo base y alternativas de la misma escala, ya que este checkpoint concreto no documenta parametros, contexto ni licencia propios.
@@ -81,7 +81,7 @@ La comparativa se limita al modelo base y alternativas de la misma escala, ya qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sanapandey/qwen2p5-72b-rank1-Lall-bad-medical-advice-seed0
+- Hugging Face: https://huggingface.co/sanapandey/qwen2p5-72b-rank1-Lall-bad-medical-advice-seed0
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - Repositorio del modelo base Qwen2.5-72B (no enlazado en la model card, referencia contextual): https://huggingface.co/Qwen/Qwen2.5-72B

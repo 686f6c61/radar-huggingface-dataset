@@ -80,7 +80,7 @@ La comparacion directa no es posible sin datos de benchmarks. Los modelos de Hun
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10-run2-gen4
+- Hugging Face del modelo: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10-run2-gen4
 - Modelo relacionado (iterated-gen4): https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-iterated-gen4
 - Modelo relacionado (iterated-gen2): https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-iterated-gen2
 - Base modelo oficial Qwen2.5-7B-Instruct: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct

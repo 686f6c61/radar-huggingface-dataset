@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks que permitan comparar este adaptador con al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Iman998/HexaBee-4B-Multilingual-SFT-LoRA
+- Modelo en Hugging Face: https://huggingface.co/Iman998/HexaBee-4B-Multilingual-SFT-LoRA
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - HexaBee-4B: https://huggingface.co/Iman998/HexaBee-4B
 - HexaBee · Multilingual Base: https://huggingface.co/Iman998/HexaBee-4B-Multilingual-Base

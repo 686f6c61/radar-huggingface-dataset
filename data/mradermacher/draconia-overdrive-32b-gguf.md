@@ -84,7 +84,7 @@ La comparación con alternativas de la misma categoría (modelos de rol de ~30B)
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Draconia-Overdrive-32B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Draconia-Overdrive-32B-GGUF
 - Modelo base: https://huggingface.co/Mawdistical/Draconia-Overdrive-32B
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Draconia-Overdrive-32B-i1-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#Draconia-Overdrive-32B-GGUF

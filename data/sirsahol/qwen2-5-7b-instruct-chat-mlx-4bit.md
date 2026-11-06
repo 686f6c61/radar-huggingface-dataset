@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-7B-Instruct-chat-mlx-4bit es una conversión a 4 bits del modelo Qwen/Qwen2.5-7B-Instruct, publicada por el usuario SirSahOl en HuggingFace. No se trata de un entrenamiento nuevo ni de un fine-tune, sino de una cuantización del checkpoint oficial de Alibaba Cloud (familia Qwen) al formato MLX de Apple, pensada para ejecutar inferencia nativa sobre la GPU unificada de los chips de la serie M. El repositorio ocupa 4,3 GB y declara 7.615.616.512 parámetros (7,07 B sin contar los embeddings), con una huella de memoria activa de aproximadamente 4,2 GB.
+Qwen2.5-7B-Instruct-chat-mlx-4bit es una conversión a 4 bits del modelo Qwen/Qwen2.5-7B-Instruct, publicada por el usuario SirSahOl en Hugging Face. No se trata de un entrenamiento nuevo ni de un fine-tune, sino de una cuantización del checkpoint oficial de Alibaba Cloud (familia Qwen) al formato MLX de Apple, pensada para ejecutar inferencia nativa sobre la GPU unificada de los chips de la serie M. El repositorio ocupa 4,3 GB y declara 7.615.616.512 parámetros (7,07 B sin contar los embeddings), con una huella de memoria activa de aproximadamente 4,2 GB.
 
 El problema que resuelve es concreto: permitir que un modelo de 7 B con ventana de contexto de 32.768 tokens (extensible a 131.072 mediante YaRN) se ejecute en portátiles y equipos de sobremesa con Apple Silicon y tan solo 8 GB de memoria unificada, manteniendo una velocidad de decodificación aprovechable para uso interactivo. Esto lo sitúa en el nicho de asistentes locales, copilotos de código y flujos RAG que deben correr sin conexión y sin coste de API.
 
@@ -107,7 +107,7 @@ La comparación relevante es interna a la propia familia de conversiones del aut
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SirSahOl/Qwen2.5-7B-Instruct-chat-mlx-4bit
+- Repositorio en Hugging Face: https://huggingface.co/SirSahOl/Qwen2.5-7B-Instruct-chat-mlx-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Variante 8 bits del mismo autor: https://huggingface.co/SirSahOl/Qwen2.5-7B-Instruct-chat-mlx-8bit
 - Variante 16 bits del mismo autor: https://huggingface.co/SirSahOl/Qwen2.5-7B-Instruct-chat-mlx-16bit

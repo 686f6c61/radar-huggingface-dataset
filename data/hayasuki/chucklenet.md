@@ -94,6 +94,6 @@ No se dispone de información sobre detectores de risa alternativos comparables 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Hayasuki/chucklenet
+- Repositorio Hugging Face: https://huggingface.co/Hayasuki/chucklenet
 - Colección de vídeo del autor: https://huggingface.co/collections/Hayasuki/video
 - Perfil del autor: https://huggingface.co/Hayasuki

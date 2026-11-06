@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| arb-arab-100mb-after-ppt-Dp-10mb-ckpt500_seed455 | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas | Checkpoint experimental de una serie de ablaciones |
+| arb-arab-100mb-after-ppt-Dp-10mb-ckpt500_seed455 | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas | Checkpoint experimental de una serie de ablaciones |
 | GPT-2 (small) | 124 M | 1024 tokens | MIT | Muy extendida | Referencia directa de arquitectura; ampliamente evaluado |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Muy extendida | Version destilada, mas rapida, pensada para generacion ligera |
 | GPT-2 Medium | 355 M | 1024 tokens | MIT | Muy extendida | Mas capacidad, coste de inferencia aproximadamente triple |
@@ -92,7 +92,7 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad, ya q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-100mb-after-ppt-Dp-10mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-100mb-after-ppt-Dp-10mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/fpadovani/arb-arab-100mb-ppt-Dp-10mb_seed455
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/89d8gycu
 - Repositorio de TRL: https://github.com/huggingface/trl

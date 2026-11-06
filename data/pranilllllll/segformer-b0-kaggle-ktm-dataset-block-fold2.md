@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Pranilllllll/segformer-b0-kaggle-ktm-dataset-block-fold2` es un checkpoint de segmentación semántica basado en la arquitectura SegFormer-B0, entrenado específicamente para la clasificación de usos del suelo en el valle de Katmandú (Nepal). El autor, Pranilllllll, ha adaptado el modelo preentrenado `nvidia/segformer-b0-finetuned-ade-512-512` de HuggingFace a un dataset propio con seis clases: residencial, carretera, río, bosque, suelo no utilizado y agrícola. El modelo se ha entrenado con una estrategia de división en bloques (block split) y corresponde al segundo de tres pliegues (fold 2 de 3), con una semilla fija de 42.
+El modelo `Pranilllllll/segformer-b0-kaggle-ktm-dataset-block-fold2` es un checkpoint de segmentación semántica basado en la arquitectura SegFormer-B0, entrenado específicamente para la clasificación de usos del suelo en el valle de Katmandú (Nepal). El autor, Pranilllllll, ha adaptado el modelo preentrenado `nvidia/segformer-b0-finetuned-ade-512-512` de Hugging Face a un dataset propio con seis clases: residencial, carretera, río, bosque, suelo no utilizado y agrícola. El modelo se ha entrenado con una estrategia de división en bloques (block split) y corresponde al segundo de tres pliegues (fold 2 de 3), con una semilla fija de 42.
 
 Este checkpoint está diseñado para tareas de teledetección y análisis geoespacial, donde la segmentación semántica de imágenes satelitales o aéreas es esencial para la planificación urbana, la gestión de recursos naturales y el monitoreo ambiental. El modelo utiliza una entrada de 512x512 píxeles con normalización ImageNet y una resolución efectiva de 0,586 metros por píxel. Aunque el rendimiento en validación es bajo (mIoU de 0,0716), el modelo puede servir como punto de partida para experimentos de fine-tuning o como referencia en pipelines de segmentación remota.
 
@@ -33,8 +33,8 @@ No se especifica el número de tokens de entrenamiento ni la composición exacta
 
 - Segmentación semántica de imágenes de teledetección: clasifica cada píxel en una de seis clases (Residential, Road, River, Forest, UnusedLand, Agricultural).
 - Entrada de 512x512 píxeles con normalización ImageNet, adecuada para imágenes aéreas o satelitales con una resolución de ~0,586 m/px.
-- Soporte de la librería `transformers` de HuggingFace, lo que permite su uso con la API estándar de segmentación.
-- Compatibilidad con `endpoints_compatible` (según los tags), lo que sugiere que puede desplegarse en la infraestructura de inferencia de HuggingFace.
+- Soporte de la librería `transformers` de Hugging Face, lo que permite su uso con la API estándar de segmentación.
+- Compatibilidad con `endpoints_compatible` (según los tags), lo que sugiere que puede desplegarse en la infraestructura de inferencia de Hugging Face.
 - No incluye capacidades de generación de texto, tool calling, agentes ni razonamiento multi-paso, ya que es un modelo puramente visual.
 
 ## Casos de uso
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 - El modelo tiene un tamaño de repo de 0,1 GB, por lo que es ligero y puede ejecutarse en hardware modesto.
 - VRAM estimada: no se proporciona un valor exacto, pero para una entrada de 512x512, un SegFormer-B0 típicamente requiere menos de 2 GB de VRAM en FP32. Con cuantización (si estuviera disponible) podría reducirse aún más.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, como NVIDIA GTX 1050 Ti, RTX 2060 o superiores. También puede ejecutarse en CPU, aunque la inferencia será más lenta.
-- Es compatible con la librería `transformers`, por lo que puede desplegarse con frameworks como vLLM (aunque está orientado a texto, para visión se usa más HuggingFace Inference Endpoints), TGI (no aplica a visión), o directamente con PyTorch.
-- Para inferencia en producción, se puede usar la API de HuggingFace Inference Endpoints o exportar el modelo a ONNX para optimización.
+- Es compatible con la librería `transformers`, por lo que puede desplegarse con frameworks como vLLM (aunque está orientado a texto, para visión se usa más Hugging Face Inference Endpoints), TGI (no aplica a visión), o directamente con PyTorch.
+- Para inferencia en producción, se puede usar la API de Hugging Face Inference Endpoints o exportar el modelo a ONNX para optimización.
 - Latencia y throughput: no se han publicado datos específicos, pero en una GPU moderna (por ejemplo, T4) la inferencia de una imagen 512x512 debería completarse en menos de 100 ms.
 
 ## Comparativa con modelos similares
@@ -102,7 +102,7 @@ No hay datos suficientes para una comparativa más amplia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pranilllllll/segformer-b0-kaggle-ktm-dataset-block-fold2
+- Modelo en Hugging Face: https://huggingface.co/Pranilllllll/segformer-b0-kaggle-ktm-dataset-block-fold2
 - Repositorio oficial de SegFormer (NVlabs): https://github.com/NVlabs/SegFormer
 - Modelo base utilizado: https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512 (referencia)
 - Fold 0 del mismo autor (para comparación): https://huggingface.co/Pranilllllll/segformer-b0-kaggle-ktm-dataset-block-fold0

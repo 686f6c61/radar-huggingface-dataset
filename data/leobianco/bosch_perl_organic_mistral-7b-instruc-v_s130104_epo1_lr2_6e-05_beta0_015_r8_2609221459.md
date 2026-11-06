@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada pero instructiva: se trata de un artefac
 | Modelo base | mistralai/Mistral-7B-Instruct-v0.3 |
 | Método de entrenamiento | RLOO (REINFORCE Leave-One-Out) mediante TRL |
 | Versiones de framework | TRL 1.9.2, Transformers 5.14.1, PyTorch 2.11.0, Datasets 5.0.1, Tokenizers 0.22.2 |
-| Tamano del repositorio | 0,0 GB (según la API de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (según la API de Hugging Face) |
 | Fecha de creacion | 2026-09-22 |
 | Ultima actualizacion | 2026-09-22 |
 | Descargas / likes | 0 / 0 |
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en INT4 (GPTQ, AWQ o GGUF Q4_K_M): aproximadamente 4,5-6 GB.
 - GPU de consumo compatibles: RTX 3060 12 GB y RTX 4060 Ti 16 GB en 4 bits; RTX 3090 y RTX 4090 de 24 GB pueden ejecutar FP16 cómodamente y 8 bits con margen para contexto largo.
 - GPU de centro de datos recomendadas: A100 40 GB, A100 80 GB, H100 80 GB y L40S para despliegues concurrentes con vLLM o TGI.
-- Opciones de despliegue: transformers (pipeline nativo, tal como documenta la model card), vLLM, Text Generation Inference, SGLang y HuggingFace Inference Endpoints (el repositorio lleva la etiqueta `endpoints_compatible`). Para llama.cpp u Ollama sería necesario convertir previamente los pesos a GGUF.
+- Opciones de despliegue: transformers (pipeline nativo, tal como documenta la model card), vLLM, Text Generation Inference, SGLang y Hugging Face Inference Endpoints (el repositorio lleva la etiqueta `endpoints_compatible`). Para llama.cpp u Ollama sería necesario convertir previamente los pesos a GGUF.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -76,17 +76,17 @@ Los datos de las alternativas corresponden a documentación pública de sus resp
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este ajuste (leobianco/bosch_PERL_organic...) | ~7,25B | 32.768 tokens (heredado) | No declarada en la model card | Repositorio en HuggingFace con 0 descargas y 0 likes |
-| mistralai/Mistral-7B-Instruct-v0.3 | ~7,25B | 32.768 tokens | Apache 2.0 | Ampliamente disponible en HuggingFace y en proveedores cloud |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Llama 3.1 Community License (con restricciones para grandes despliegues) | Ampliamente disponible en HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct | ~7,6B | 32.768 tokens nativos, extensible a 131.072 con YaRN | Apache 2.0 (mayoría de variantes) | Ampliamente disponible en HuggingFace |
+| Este ajuste (leobianco/bosch_PERL_organic...) | ~7,25B | 32.768 tokens (heredado) | No declarada en la model card | Repositorio en Hugging Face con 0 descargas y 0 likes |
+| mistralai/Mistral-7B-Instruct-v0.3 | ~7,25B | 32.768 tokens | Apache 2.0 | Ampliamente disponible en Hugging Face y en proveedores cloud |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Llama 3.1 Community License (con restricciones para grandes despliegues) | Ampliamente disponible en Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct | ~7,6B | 32.768 tokens nativos, extensible a 131.072 con YaRN | Apache 2.0 (mayoría de variantes) | Ampliamente disponible en Hugging Face |
 
 No se dispone de datos de benchmarks para este ajuste, por lo que la comparación de rendimiento con las alternativas no puede establecerse.
 
 ## Limitaciones y advertencias
 
 - Licencia no declarada: el campo `licence` de la model card contiene el literal "license" como marcador de posición. Aunque el modelo base Mistral-7B-Instruct-v0.3 se distribuye bajo Apache 2.0, la licencia del derivado no está especificada, lo que genera incertidumbre legal para uso comercial. Conviene contactar con el autor antes de desplegarlo en producción.
-- Tamano del repositorio de 0,0 GB: según la API de HuggingFace, el repositorio no contiene datos. Es posible que los pesos no se hayan subido o que la consulta se haya realizado antes de completar la carga. Debe verificarse antes de intentar descargar el modelo.
+- Tamano del repositorio de 0,0 GB: según la API de Hugging Face, el repositorio no contiene datos. Es posible que los pesos no se hayan subido o que la consulta se haya realizado antes de completar la carga. Debe verificarse antes de intentar descargar el modelo.
 - Sin resultados de evaluación: no hay benchmarks publicados, ni evaluación humana, ni comparación con el modelo base. No hay evidencia de que el ajuste con RLOO haya mejorado al modelo de partida.
 - Dataset de entrenamiento no documentado: se desconoce la composición del corpus, su idioma, su dominio y si contiene datos filtrados o con sesgos. El nombre del repositorio incluye la cadena "bosch", que sugiere un posible origen industrial o corporativo, pero no hay confirmación alguna.
 - Riesgo de alucinación: inherente a los modelos de 7B de esta generación, especialmente en tareas de razonamiento factual, matemáticas y recuperación de conocimiento especializado.
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks para este ajuste, por lo que la comparació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leobianco/bosch_PERL_organic_Mistral-7B-Instruc-v_S130104_epo1_lr2_6e-05_beta0_015_r8_2609221459
+- Modelo en Hugging Face: https://huggingface.co/leobianco/bosch_PERL_organic_Mistral-7B-Instruc-v_S130104_epo1_lr2_6e-05_beta0_015_r8_2609221459
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Artículo de RLOO (arXiv 2402.14740): https://huggingface.co/papers/2402.14740

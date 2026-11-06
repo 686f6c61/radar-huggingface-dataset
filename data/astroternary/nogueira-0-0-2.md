@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos directos entre Nogueira 0.0.2 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AstroTernary/Nogueira-0.0.2
+- Hugging Face: https://huggingface.co/AstroTernary/Nogueira-0.0.2
 - Repositorio del proyecto: https://github.com/riknog/cansei-de-esperar
 - Dataset Wikipedia-PT: https://huggingface.co/datasets/wikimedia/wikipedia
 - Dataset ultra-alpaca-ptbr: https://huggingface.co/datasets/recogna-nlp/ultra-alpaca-ptbr

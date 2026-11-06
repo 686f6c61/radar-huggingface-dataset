@@ -75,6 +75,6 @@ Dado que no hay datos de rendimiento publicados para `pyaging/reg`, no es posibl
 
 ## Enlaces
 
-- [HuggingFace: pyaging/reg](https://huggingface.co/pyaging/reg)
+- [Hugging Face: pyaging/reg](https://huggingface.co/pyaging/reg)
 - [pyaging Clock Catalogue (documentación)](https://pyaging.readthedocs.io)
 - [Artículo Pasta (bioRxiv)](https://doi.org/10.1101/2025.06.04.657785)

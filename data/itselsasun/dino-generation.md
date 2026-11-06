@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dino for Generation es un prototipo de investigación publicado en HuggingFace por el usuario itselsasun bajo el identificador `itselsasun/dino-generation`. Se presenta explícitamente como un experimento orientado a tareas de generación, en escala "nano", con una arquitectura denominada Dino que no corresponde a ningún transformer estándar de uso común: emplea atención multi-query, fusión mediante MLP con concatenación, activación mish y normalización scalenorm. El propio autor indica en la model card que el repositorio documenta valores por defecto y formatos de fichero, sin aportar métricas de rendimiento verificadas.
+Dino for Generation es un prototipo de investigación publicado en Hugging Face por el usuario itselsasun bajo el identificador `itselsasun/dino-generation`. Se presenta explícitamente como un experimento orientado a tareas de generación, en escala "nano", con una arquitectura denominada Dino que no corresponde a ningún transformer estándar de uso común: emplea atención multi-query, fusión mediante MLP con concatenación, activación mish y normalización scalenorm. El propio autor indica en la model card que el repositorio documenta valores por defecto y formatos de fichero, sin aportar métricas de rendimiento verificadas.
 
 El dato más relevante para evaluarlo es su tamaño: 49.600 parámetros totales según el fichero safetensors, es decir, aproximadamente 0,05 millones de parámetros. El repositorio ocupa 0,0 GB y contiene un script `eval.py` como artefacto principal, un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta por defecto y un `model.safetensors` que el autor describe como checkpoint de inicialización válido para pruebas de humo, no como un modelo entrenado ni evaluado.
 
@@ -67,7 +67,7 @@ No se dispone de modelos comparables directos en la información proporcionada: 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dino for Generation (nano) | 49.600 | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, checkpoint de inicialización |
+| Dino for Generation (nano) | 49.600 | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, checkpoint de inicialización |
 | nanoGPT / GPT-2 (referencia de escala) | ~124 millones | 1.024 tokens | métricas publicadas por terceros, no comparables con este repositorio | MIT (implementación) | repositorio público |
 | Alternativas de la misma categoría funcional | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,8 +89,8 @@ La comparación anterior es únicamente de orden de magnitud en número de pará
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/itselsasun/dino-generation
+- Hugging Face: https://huggingface.co/itselsasun/dino-generation
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos corresponden a páginas de soporte de Microsoft (contacto, inicio de sesión en Hotmail, deprecación de EWS en Exchange Online, descarga de ISO de Windows 8.1 y cambio de tasa de refresco en Windows) y no guardan relación con `itselsasun/dino-generation`.
 - Paper: no disponible.
-- Repositorio de código: no disponible más allá del propio repositorio de HuggingFace (fichero `eval.py`).
+- Repositorio de código: no disponible más allá del propio repositorio de Hugging Face (fichero `eval.py`).
 - Demo: no disponible.

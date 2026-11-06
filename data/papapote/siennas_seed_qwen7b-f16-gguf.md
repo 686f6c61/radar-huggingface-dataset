@@ -6,7 +6,7 @@ Siennas_Seed_Qwen7B-F16-GGUF es un adaptador LoRA en formato GGUF publicado por 
 
 El repositorio pesa 0,1 GB y el fichero safetensors asociado declara 40.370.176 parametros, un orden de magnitud coherente con un adaptador LoRA y no con un transformer completo. El nombre del modelo base sugiere una familia Qwen de aproximadamente 7.000 millones de parametros, pero esta circunstancia no se confirma en la documentacion disponible. El repositorio no registra descargas ni interacciones, y su fecha de creacion es del 3 de octubre de 2026.
 
-La relevancia de esta ficha es acotada pero util: documenta un caso tipico de publicacion de adaptadores comunitarios con documentacion minima, ausencia de licencia declarada y ausencia total de evaluacion publica. Sirve, por tanto, como ejemplo de que la mera existencia de un repositorio en HuggingFace no implica madurez, soporte ni garantias de uso en produccion.
+La relevancia de esta ficha es acotada pero util: documenta un caso tipico de publicacion de adaptadores comunitarios con documentacion minima, ausencia de licencia declarada y ausencia total de evaluacion publica. Sirve, por tanto, como ejemplo de que la mera existencia de un repositorio en Hugging Face no implica madurez, soporte ni garantias de uso en produccion.
 
 ## Especificaciones tecnicas
 
@@ -68,10 +68,10 @@ La tabla compara este adaptador con su modelo base declarado y con dos alternati
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Siennas_Seed_Qwen7B-F16-GGUF | Adaptador LoRA en GGUF | 40.370.176 (adaptador) | no disponible | no disponible | HuggingFace, 0 descargas |
-| Papapote/Siennas_Seed_Qwen7B | Adaptador LoRA original | no disponible | no disponible | no disponible | HuggingFace |
-| Cualquier adaptador LoRA PEFT de la familia Qwen | Adaptador LoRA | variable | depende de la base | depende del autor | HuggingFace |
-| Modelo base Qwen de ~7B (no confirmado) | Transformer denso | ~7.000 millones (estimado) | no disponible | no disponible | HuggingFace |
+| Siennas_Seed_Qwen7B-F16-GGUF | Adaptador LoRA en GGUF | 40.370.176 (adaptador) | no disponible | no disponible | Hugging Face, 0 descargas |
+| Papapote/Siennas_Seed_Qwen7B | Adaptador LoRA original | no disponible | no disponible | no disponible | Hugging Face |
+| Cualquier adaptador LoRA PEFT de la familia Qwen | Adaptador LoRA | variable | depende de la base | depende del autor | Hugging Face |
+| Modelo base Qwen de ~7B (no confirmado) | Transformer denso | ~7.000 millones (estimado) | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa entre estas alternativas.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Papapote/Siennas_Seed_Qwen7B-F16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Papapote/Siennas_Seed_Qwen7B-F16-GGUF
 - Modelo base declarado: https://huggingface.co/Papapote/Siennas_Seed_Qwen7B
 - Espacio GGUF-my-lora de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-lora
 - Documentacion del servidor de llama.cpp: https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md

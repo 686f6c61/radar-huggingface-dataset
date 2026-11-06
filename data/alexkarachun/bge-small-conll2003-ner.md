@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AlexKarachun/bge-small-conll2003-ner es un modelo de clasificacion de tokens (token-classification) publicado en HuggingFace por el usuario AlexKarachun. Se trata de un ajuste fino orientado a reconocimiento de entidades nombradas (NER) sobre el corpus CoNLL-2003, segun se deduce del propio identificador del repositorio y de la etiqueta de pipeline asociada. El peso del repositorio es de 0,1 GB y contiene 33.215.625 parametros reales, medidos a partir del fichero safetensors incluido.
+AlexKarachun/bge-small-conll2003-ner es un modelo de clasificacion de tokens (token-classification) publicado en Hugging Face por el usuario AlexKarachun. Se trata de un ajuste fino orientado a reconocimiento de entidades nombradas (NER) sobre el corpus CoNLL-2003, segun se deduce del propio identificador del repositorio y de la etiqueta de pipeline asociada. El peso del repositorio es de 0,1 GB y contiene 33.215.625 parametros reales, medidos a partir del fichero safetensors incluido.
 
-El modelo se apoya en la libreria transformers y emplea una arquitectura de tipo BERT, tal y como declara la etiqueta `bert` del repositorio. El numero de parametros (33,2 millones) coincide con el de los modelos compactos de 12 capas y dimension oculta reducida, como los de la familia bge-small de BAAI, aunque el autor no confirma explicitamente cual es el modelo base ni el procedimiento de ajuste. La model card es la plantilla automatica de HuggingFace y no contiene informacion cumplimentada sobre datos de entrenamiento, hiperparametros, licencia o evaluacion.
+El modelo se apoya en la libreria transformers y emplea una arquitectura de tipo BERT, tal y como declara la etiqueta `bert` del repositorio. El numero de parametros (33,2 millones) coincide con el de los modelos compactos de 12 capas y dimension oculta reducida, como los de la familia bge-small de BAAI, aunque el autor no confirma explicitamente cual es el modelo base ni el procedimiento de ajuste. La model card es la plantilla automatica de Hugging Face y no contiene informacion cumplimentada sobre datos de entrenamiento, hiperparametros, licencia o evaluacion.
 
 La relevancia de este modelo es limitada y debe evaluarse con cautela: no tiene descargas ni likes en el momento de la consulta, carece de licencia declarada y no aporta resultados de evaluacion. Resulta util, eso si, como ejemplo de ajuste fino ligero para NER en ingles y como punto de partida para pipelines de extraccion de entidades que requieran un modelo de menos de 40 millones de parametros capaz de ejecutarse en CPU o en GPUs de gama baja.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es limitada y debe evaluarse con cautela: no tiene 
 
 La etiqueta `bert` del repositorio y el sufijo `bge-small` del identificador apuntan a un encoder transformer de tipo BERT de tamano reducido. Con 33.215.625 parametros, el modelo encaja en el perfil de las variantes "small" de 12 capas con dimension oculta de 384 y 12 cabezas de atencion, similares a las empleadas en la familia BAAI General Embedding (bge). Sobre esa base se habria anadido una cabeza de clasificacion de tokens para etiquetado secuencial del tipo B-PER, I-PER, B-ORG, B-LOC, B-MISC, etc., que es el esquema del corpus CoNLL-2003.
 
-No hay informacion publicada sobre el procedimiento de entrenamiento: ni numero de tokens, ni composicion del dataset (mas alla de la referencia a CoNLL-2003 en el nombre), ni uso de RLHF, DPO u otra tecnica de alineamiento, ni hiperparametros de ajuste fino (learning rate, epocas, precision mixta). Tampoco se documenta ninguna innovacion tecnica adicional como decodificacion especulativa, atencion lineal o mecanismos hibridos. La unica referencia externa presente en la model card es el articulo arXiv:1910.09700 (Lacoste et al., 2019), que forma parte de la plantilla automatica de HuggingFace para el calculo de emisiones de carbono y no describe la arquitectura del modelo.
+No hay informacion publicada sobre el procedimiento de entrenamiento: ni numero de tokens, ni composicion del dataset (mas alla de la referencia a CoNLL-2003 en el nombre), ni uso de RLHF, DPO u otra tecnica de alineamiento, ni hiperparametros de ajuste fino (learning rate, epocas, precision mixta). Tampoco se documenta ninguna innovacion tecnica adicional como decodificacion especulativa, atencion lineal o mecanismos hibridos. La unica referencia externa presente en la model card es el articulo arXiv:1910.09700 (Lacoste et al., 2019), que forma parte de la plantilla automatica de Hugging Face para el calculo de emisiones de carbono y no describe la arquitectura del modelo.
 
 ## Capacidades
 
@@ -50,24 +50,24 @@ No hay informacion publicada sobre el procedimiento de entrenamiento: ni numero 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor es la plantilla automatica de HuggingFace y la seccion de evaluacion aparece sin cumplimentar ("More Information Needed"), por lo que no existen cifras de F1, precision o recall sobre el conjunto de test de CoNLL-2003 ni sobre otros conjuntos.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor es la plantilla automatica de Hugging Face y la seccion de evaluacion aparece sin cumplimentar ("More Information Needed"), por lo que no existen cifras de F1, precision o recall sobre el conjunto de test de CoNLL-2003 ni sobre otros conjuntos.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: en FP32, unos 133 MB de pesos (33,2 M de parametros x 4 bytes), mas activaciones; en FP16, unos 66 MB. En la practica, menos de 1 GB de memoria total en cualquiera de los dos casos.
 - GPU recomendadas: cualquier GPU moderna es suficiente; no se necesita A100 ni H100. Una NVIDIA T4, GTX 1650, RTX 3060 o superior ofrece margen sobrado. Incluso una GPU integrada puede servir para lotes pequenos.
 - Cabe en GPU de consumo: si, en cualquier GPU de consumo con al menos 2 GB de VRAM, e incluso en CPU. La inferencia en CPU con ONNX Runtime o llama.cpp no es aplicable aqui (no hay GGUF), pero si con PyTorch o ONNX.
-- Opciones de despliegue: HuggingFace transformers (pipeline de token-classification), Text Embeddings Inference no aplica directamente por ser un modelo de clasificacion, servidores de inferencia compatibles con transformers como TorchServe o BentoML, ONNX Runtime para optimizacion, y FastAPI con transformers para servicios propios. La etiqueta `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: Hugging Face transformers (pipeline de token-classification), Text Embeddings Inference no aplica directamente por ser un modelo de clasificacion, servidores de inferencia compatibles con transformers como TorchServe o BentoML, ONNX Runtime para optimizacion, y FastAPI con transformers para servicios propios. La etiqueta `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput estimados: no disponibles. Como referencia de orden de magnitud, un encoder de 33 M de parametros procesa secuencias de 512 tokens en pocos milisegundos en GPU moderna y en decenas de milisegundos en CPU, pero no hay mediciones publicadas para este modelo concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AlexKarachun/bge-small-conll2003-ner | 33,2 M | no disponible | NER (CoNLL-2003) | no disponible | HuggingFace, 0 descargas |
-| dslim/bert-base-NER | ~108 M | 512 tokens | NER (CoNLL-2003) | MIT (no verificada en esta busqueda) | HuggingFace, ampliamente utilizado |
-| dbmdz/bert-large-cased-finetuned-conll03-english | ~335 M | 512 tokens | NER (CoNLL-2003) | MIT (no verificada en esta busqueda) | HuggingFace, muy extendido |
-| Jean-Baptiste/roberta-large-ner-english | ~355 M | 514 tokens | NER (CoNLL-2003) | MIT (no verificada en esta busqueda) | HuggingFace, muy extendido |
+| AlexKarachun/bge-small-conll2003-ner | 33,2 M | no disponible | NER (CoNLL-2003) | no disponible | Hugging Face, 0 descargas |
+| dslim/bert-base-NER | ~108 M | 512 tokens | NER (CoNLL-2003) | MIT (no verificada en esta busqueda) | Hugging Face, ampliamente utilizado |
+| dbmdz/bert-large-cased-finetuned-conll03-english | ~335 M | 512 tokens | NER (CoNLL-2003) | MIT (no verificada en esta busqueda) | Hugging Face, muy extendido |
+| Jean-Baptiste/roberta-large-ner-english | ~355 M | 514 tokens | NER (CoNLL-2003) | MIT (no verificada en esta busqueda) | Hugging Face, muy extendido |
 
 El modelo analizado es el mas pequeno de la comparativa, lo que reduce coste de computo y memoria, pero no hay datos de F1 publicados que permitan afirmar que mantiene la calidad de las alternativas. Las licencias de los modelos comparativos deben confirmarse en sus respectivas model cards antes de un uso comercial.
 
@@ -86,7 +86,7 @@ El modelo analizado es el mas pequeno de la comparativa, lo que reduce coste de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlexKarachun/bge-small-conll2003-ner
+- Repositorio en Hugging Face: https://huggingface.co/AlexKarachun/bge-small-conll2003-ner
 - Referencia citada en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono, no sobre el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning mencionada en la model card: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales relacionados con este modelo; los resultados obtenidos corresponden a contenido sin relacion.

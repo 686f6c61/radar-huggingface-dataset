@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swinub es un repositorio de modelo alojado en HuggingFace por el usuario Ryanham1lton, publicado el 10 de octubre de 2026 y actualizado dos minutos despues, con un tamano de repositorio de 0,1 GB. La model card asociada no contiene mas que la declaracion de licencia (cc-by-4.0): no incluye descripcion, arquitectura, datos de entrenamiento ni informacion de uso. La informacion disponible no permite saber si se trata de un modelo de lenguaje, un modelo de vision, un adaptador o cualquier otro tipo de artefacto.
+Swinub es un repositorio de modelo alojado en Hugging Face por el usuario Ryanham1lton, publicado el 10 de octubre de 2026 y actualizado dos minutos despues, con un tamano de repositorio de 0,1 GB. La model card asociada no contiene mas que la declaracion de licencia (cc-by-4.0): no incluye descripcion, arquitectura, datos de entrenamiento ni informacion de uso. La informacion disponible no permite saber si se trata de un modelo de lenguaje, un modelo de vision, un adaptador o cualquier otro tipo de artefacto.
 
 El repositorio registra cero descargas y cero likes en el momento de la consulta, y no tiene pipeline declarado ni idiomas indicados. Esto es coherente con un modelo recien creado, experimental o de ambito privado que no ha sido publicado con documentacion.
 
@@ -88,7 +88,7 @@ No disponible. No es posible establecer comparaciones porque se desconoce la cat
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ryanham1lton/Swinub | no disponible | no disponible | no disponible | cc-by-4.0 | repositorio HuggingFace sin descargas |
+| Ryanham1lton/Swinub | no disponible | no disponible | no disponible | cc-by-4.0 | repositorio Hugging Face sin descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -104,6 +104,6 @@ No disponible. No es posible establecer comparaciones porque se desconoce la cat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Swinub
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Swinub
 
 No se han encontrado otros enlaces relevantes. La busqueda web asociada a este modelo no devolvio ningun resultado relacionado: los enlaces obtenidos tratan sobre anatomia humana y un termino coloquial en ingles, por lo que se omiten por no ser pertinentes.

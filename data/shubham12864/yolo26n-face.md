@@ -6,7 +6,7 @@ YOLO26n-face es un modelo de detección de caras basado en la arquitectura YOLO2
 
 Su relevancia radica en ofrecer una solución extremadamente ligera de detección facial en tiempo real, pensada para despliegue en hardware con restricciones de cómputo y memoria. Al ser una variante nano de YOLO26, prioriza la velocidad y el bajo consumo frente a la precisión absoluta, lo que lo hace adecuado para aplicaciones de edge computing, vigilancia móvil y robótica aérea. La licencia AGPL-3.0 permite su uso y modificación, aunque impone condiciones de copyleft para redistribuciones.
 
-Actualmente el modelo tiene cero descargas y cero likes en HuggingFace, y la model card es mínima, por lo que la información técnica detallada (parámetros exactos, métricas de entrenamiento, rendimiento) no está disponible públicamente.
+Actualmente el modelo tiene cero descargas y cero likes en Hugging Face, y la model card es mínima, por lo que la información técnica detallada (parámetros exactos, métricas de entrenamiento, rendimiento) no está disponible públicamente.
 
 ## Especificaciones tecnicas
 
@@ -47,7 +47,7 @@ El entrenamiento se realizó mediante transfer learning: se partió del modelo b
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay métricas de precisión (mAP, recall) ni comparaciones con otros detectores de caras en la model card de HuggingFace ni en el repositorio de GitHub accesible. Se recomienda consultar el proyecto original o ejecutar el modelo sobre un conjunto de validación propio para obtener datos de rendimiento.
+No se han publicado resultados de benchmarks en la información disponible. No hay métricas de precisión (mAP, recall) ni comparaciones con otros detectores de caras en la model card de Hugging Face ni en el repositorio de GitHub accesible. Se recomienda consultar el proyecto original o ejecutar el modelo sobre un conjunto de validación propio para obtener datos de rendimiento.
 
 ## Requisitos de hardware
 
@@ -70,9 +70,9 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shubham12864/YOLO26n-face
+- Modelo en Hugging Face: https://huggingface.co/Shubham12864/YOLO26n-face
 - Repositorio en GitHub: https://github.com/mrcahyono265/yolo26n-face
 - README del repositorio: https://github.com/mrcahyono265/yolo26n-face/blob/main/README.md
 - Documentación de YOLO26 de Ultralytics: https://docs.ultralytics.com/models/yolo26
-- Modelo base de Ultralytics en HuggingFace: https://huggingface.co/Ultralytics/YOLO26
+- Modelo base de Ultralytics en Hugging Face: https://huggingface.co/Ultralytics/YOLO26
 - Plataforma Ultralytics (proyecto YOLO26 Face): https://platform.ultralytics.com/saaketh-sodanapalli/yolo26-face/yolo26n-face

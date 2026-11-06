@@ -73,9 +73,9 @@ No hay benchmarks comparativos publicados. La comparativa se basa en caracterís
 
 ## Enlaces
 
-- [HuggingFace - trinhkhng/linear_Merged_gpt2-small_0.2](https://huggingface.co/trinhkhng/linear_Merged_gpt2-small_0.2)
-- [HuggingFace - trinhkhng/linear_Merged_gpt2_0.0](https://huggingface.co/trinhkhng/linear_Merged_gpt2_0.0)
-- [HuggingFace - trinhkhng/linear_Merged_gpt2-medium_0.2](https://huggingface.co/trinhkhng/linear_Merged_gpt2-medium_0.2)
+- [Hugging Face - trinhkhng/linear_Merged_gpt2-small_0.2](https://huggingface.co/trinhkhng/linear_Merged_gpt2-small_0.2)
+- [Hugging Face - trinhkhng/linear_Merged_gpt2_0.0](https://huggingface.co/trinhkhng/linear_Merged_gpt2_0.0)
+- [Hugging Face - trinhkhng/linear_Merged_gpt2-medium_0.2](https://huggingface.co/trinhkhng/linear_Merged_gpt2-medium_0.2)
 - [Free2AITools - Linear Merged Gpt2 Large 0.2](https://free2aitools.com/model/trinhkhng/linear_merged_gpt2-large_0.2)
 - [FriendliAI - linear_Merged_gpt2_0.0](https://friendli.ai/models/trinhkhng/linear_Merged_gpt2_0.0)
 - [FriendliAI - linear_Merged_gpt2_0.2](https://friendli.ai/models/trinhkhng/linear_Merged_gpt2_0.2)

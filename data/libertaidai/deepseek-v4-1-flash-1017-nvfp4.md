@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Contexto | Tamano de pesos | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LibertAIDAI/DeepSeek-V4.1-Flash-1017-NVFP4 | 664,9 mil M | no disponible | 399,51 GiB | NVFP4 / MXFP4 / FP8 / BF16 | MIT | publico en HuggingFace |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 (base) | no disponible | no disponible | 475,24 GiB | MXFP4 / FP8 / BF16 | no disponible | publico en HuggingFace |
-| nvidia/DeepSeek-V4.1-Flash-NVFP4 | no disponible | no disponible | no disponible (referencia de layout) | NVFP4 / MXFP4 / FP8 / BF16 | no disponible | publico en HuggingFace |
+| LibertAIDAI/DeepSeek-V4.1-Flash-1017-NVFP4 | 664,9 mil M | no disponible | 399,51 GiB | NVFP4 / MXFP4 / FP8 / BF16 | MIT | publico en Hugging Face |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 (base) | no disponible | no disponible | 475,24 GiB | MXFP4 / FP8 / BF16 | no disponible | publico en Hugging Face |
+| nvidia/DeepSeek-V4.1-Flash-NVFP4 | no disponible | no disponible | no disponible (referencia de layout) | NVFP4 / MXFP4 / FP8 / BF16 | no disponible | publico en Hugging Face |
 
 Frente al base, este checkpoint reduce el peso en 75,73 GiB manteniendo los codigos de 4 bits de los expertos y sustituyendo unicamente las tablas Engram por una version con perdida. Frente al checkpoint de NVIDIA, comparte layout, `config.json` y escalas de activacion, con la diferencia de que los pesos de los expertos provienen de la revision 1017 de DeepSeek y 12 entradas de escala usan fallback.
 
@@ -93,7 +93,7 @@ Frente al base, este checkpoint reduce el peso en 75,73 GiB manteniendo los codi
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-1017-NVFP4
+- Hugging Face (este checkpoint): https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-1017-NVFP4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Checkpoint NVFP4 de referencia de NVIDIA: https://huggingface.co/nvidia/DeepSeek-V4.1-Flash-NVFP4
 - Paper citado en las etiquetas (Four Over Six): https://arxiv.org/abs/2512.02010

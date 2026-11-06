@@ -88,10 +88,10 @@ No se dispone de resultados de benchmarks comparativos entre estos modelos, por 
 
 ## Enlaces
 
-- [HuggingFace - Qwen2.5-R1-Minny-1.5B-v1](https://huggingface.co/ForSureTesterSim/Qwen2.5-R1-Minny-1.5B-v1)
+- [Hugging Face - Qwen2.5-R1-Minny-1.5B-v1](https://huggingface.co/ForSureTesterSim/Qwen2.5-R1-Minny-1.5B-v1)
 - [DeepSeek-R1-Distill-Qwen-1.5B (modelo base)](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B)
 - [Qwen2.5 Technical Report (arXiv)](https://arxiv.org/abs/2412.15115)
-- [Repositorio de Qwen2.5 (HuggingFace collection)](https://huggingface.co/collections/Qwen/qwen25)</think>## Resumen
+- [Repositorio de Qwen2.5 (Hugging Face collection)](https://huggingface.co/collections/Qwen/qwen25)</think>## Resumen
 
 Qwen2.5-R1-Minny-1.5B-v1 es un modelo de lenguaje de 1,78 mil millones de parametros desarrollado por el usuario ForSureTesterSim. Se trata de un modelo de base "super-base" construido mediante una fusion hibrida de tres expertos SFT (matematicas, codigo y razonamiento) sobre el ancla GRPO DeepSeek-R1-Distill-Qwen-1.5B. Su objetivo es preservar las capacidades de razonamiento logico del modelo GRPO mientras se inyectan competencias especificas de dominio, evitando la perdida catastropica y el colapso de formato tipico de los modelos RLHF.
 
@@ -152,7 +152,7 @@ Estos datos indican una menor perdida de forward-pass en los tres dominios, lo q
 - **VRAM estimada para inferencia**: con FP16 (aprox. 3,6 GB) se requiere al menos 4 GB de VRAM. Con cuantizacion INT4 (aprox. 0,9 GB) se puede ejecutar en 2 GB de VRAM, aunque la calidad puede degradarse.
 - **GPU recomendadas**: para FP16, una NVIDIA RTX 3060 (12 GB) o RTX 4060 (8 GB) es suficiente. Para INT4, una RTX 2060 (6 GB) o una GTX 1660 Ti (6 GB) funciona. En entornos de produccion, una A100 o H100 no es necesaria para este tamano.
 - **Compatibilidad con consumer GPU**: si, todas las GPUs con al menos 4 GB de VRAM pueden ejecutar el modelo en FP16; con INT4 cabe en GPUs de 2 GB.
-- **Opciones de despliegue**: vLLM (soporta arquitectura Qwen2.5), llama.cpp (conversion a GGUF), Ollama, TGI (Text Generation Inference) y Transformers de HuggingFace.
+- **Opciones de despliegue**: vLLM (soporta arquitectura Qwen2.5), llama.cpp (conversion a GGUF), Ollama, TGI (Text Generation Inference) y Transformers de Hugging Face.
 - **Latencia y throughput**: no se han publicado datos. En una RTX 3060, se espera un throughput de 30-50 tokens/s en FP16; en INT4 puede superar los 100 tokens/s. En CPU con llama.cpp, se puede obtener 5-10 tokens/s en un procesador moderno con 16 GB de RAM.
 
 ## Comparativa con modelos similares
@@ -177,7 +177,7 @@ No se dispone de benchmarks comparativos entre estos modelos en la informacion d
 
 ## Enlaces
 
-- [HuggingFace: Qwen2.5-R1-Minny-1.5B-v1](https://huggingface.co/ForSureTesterSim/Qwen2.5-R1-Minny-1.5B-v1)
+- [Hugging Face: Qwen2.5-R1-Minny-1.5B-v1](https://huggingface.co/ForSureTesterSim/Qwen2.5-R1-Minny-1.5B-v1)
 - [DeepSeek-R1-Distill-Qwen-1.5B (modelo base)](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B)
 - [Qwen2.5 Technical Report (arXiv)](https://arxiv.org/abs/2412.15115)
-- [Qwen2.5 collection en HuggingFace](https://huggingface.co/collections/Qwen/qwen25)
+- [Qwen2.5 collection en Hugging Face](https://huggingface.co/collections/Qwen/qwen25)

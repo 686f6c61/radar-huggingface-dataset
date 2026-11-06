@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen36-twla-clipped-fast-init3-target1p58 es un checkpoint de investigación publicado por el usuario minjaechoi en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un modelo de la familia Qwen 3.5 en su variante MoE (etiqueta `qwen3_5_moe`) sometido a un proceso de optimización de precisión mixta denominado TWLA, aplicado exclusivamente sobre los expertos enrutados. El pipeline declarado es `image-text-to-text`, por lo que el modelo es multimodal (acepta imagen y texto como entrada) y de naturaleza conversacional.
+qwen36-twla-clipped-fast-init3-target1p58 es un checkpoint de investigación publicado por el usuario minjaechoi en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un modelo de la familia Qwen 3.5 en su variante MoE (etiqueta `qwen3_5_moe`) sometido a un proceso de optimización de precisión mixta denominado TWLA, aplicado exclusivamente sobre los expertos enrutados. El pipeline declarado es `image-text-to-text`, por lo que el modelo es multimodal (acepta imagen y texto como entrada) y de naturaleza conversacional.
 
 El interés técnico del checkpoint reside en el objeto de la optimización: en lugar de cuantizar el modelo completo con un esquema uniforme, el autor trata cada experto enrutado de cada capa MoE como una unidad independiente de cuantización, con 10 240 unidades en total (40 capas x 256 expertos). El objetivo declarado combina la NLL de validación con un término de bits lógicos ponderado por lambda, y la búsqueda se ejecuta en modo `fast_target_exchange` desde un nivel inicial de 3 hasta un objetivo de 1,584962500721156 bits por peso de experto enrutado (equivalente a log2(3), propio de esquemas ternarios). El valor final alcanzado es 1,584958682360215.
 
@@ -36,7 +36,7 @@ Las capacidades declaradas se limitan a lo que se deduce de las etiquetas del re
 
 - Generacion de texto conversacional: la etiqueta `conversational` indica que el modelo esta preparado para dialogos multi-turno, presumiblemente heredado del modelo base Qwen 3.5 MoE.
 - Entrada multimodal image-text-to-text: el pipeline declara procesamiento conjunto de imagen y texto, aunque no se detalla si soporta multiples imagenes por prompt, resoluciones concretas u OCR.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el checkpoint puede servirse mediante infraestructura de inferencia compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el checkpoint puede servirse mediante infraestructura de inferencia compatible con la API de Hugging Face.
 - Razonamiento, codigo, matematicas, tool calling, soporte de agentes, modo de pensamiento, audio o cualquier otra capacidad especial: no disponibles, no documentadas en la model card.
 - Capacidades multilingues: no disponibles; el repositorio no declara idiomas.
 - Rendimiento tras la cuantizacion: no disponible; el autor no publica evaluaciones de calidad del checkpoint resultante.
@@ -107,7 +107,7 @@ No se dispone de datos verificables sobre el modelo base concreto ni sobre check
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/minjaechoi/qwen36-twla-clipped-fast-init3-target1p58
-- Repositorio de codigo del autor: carpeta `code/` dentro del repositorio de HuggingFace (no se proporciona URL independiente)
+- Hugging Face: https://huggingface.co/minjaechoi/qwen36-twla-clipped-fast-init3-target1p58
+- Repositorio de codigo del autor: carpeta `code/` dentro del repositorio de Hugging Face (no se proporciona URL independiente)
 - Metadatos de optimizacion: `optimization_summary.json` y `precision_map.json` en el repositorio (no se proporcionan URL independientes)
 - Papers, blogs, demos o repositorios externos: no disponibles; la busqueda web realizada no devolvio resultados relacionados con este modelo (unicamente paginas de soporte de Microsoft sin relacion con el contenido).

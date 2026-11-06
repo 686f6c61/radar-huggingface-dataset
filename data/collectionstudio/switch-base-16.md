@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Switch-base-16 (este) | No disponible (repo de 4,3 GB, ~1.000 M estimados) | No disponible | MoE encoder-decoder, preentrenado con MLM | Apache 2.0 | HuggingFace, uso via `transformers` |
-| T5-base | 220 M (dato de la familia T5, no presente en la informacion proporcionada) | No disponible | Denso encoder-decoder, preentrenado con MLM | Apache 2.0 | HuggingFace |
-| FLAN-T5-base | No disponible en esta informacion | No disponible | Denso encoder-decoder ajustado por instrucciones | Apache 2.0 | HuggingFace, recomendado en la propia model card |
-| Switch-base-8 | No disponible | No disponible | MoE encoder-decoder con 8 expertos | Apache 2.0 | HuggingFace (familia "All Switch Transformers Checkpoints") |
+| Switch-base-16 (este) | No disponible (repo de 4,3 GB, ~1.000 M estimados) | No disponible | MoE encoder-decoder, preentrenado con MLM | Apache 2.0 | Hugging Face, uso via `transformers` |
+| T5-base | 220 M (dato de la familia T5, no presente en la informacion proporcionada) | No disponible | Denso encoder-decoder, preentrenado con MLM | Apache 2.0 | Hugging Face |
+| FLAN-T5-base | No disponible en esta informacion | No disponible | Denso encoder-decoder ajustado por instrucciones | Apache 2.0 | Hugging Face, recomendado en la propia model card |
+| Switch-base-8 | No disponible | No disponible | MoE encoder-decoder con 8 expertos | Apache 2.0 | Hugging Face (familia "All Switch Transformers Checkpoints") |
 
 La comparacion cuantitativa de rendimiento entre estas alternativas no esta disponible: ni la model card ni los resultados de busqueda aportan metricas de calidad. La diferencia funcional mas relevante es que T5-base es denso (menos memoria, mas computo por parametro), switch-base-8 reduce el numero de expertos de la misma familia y FLAN-T5-base es el unico de los cuatro que puede usarse directamente en tareas downstream sin fine-tuning.
 
@@ -93,7 +93,7 @@ La comparacion cuantitativa de rendimiento entre estas alternativas no esta disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CollectionStudio/switch-base-16
+- Modelo en Hugging Face: https://huggingface.co/CollectionStudio/switch-base-16
 - Checkpoint original de referencia: https://huggingface.co/google/switch-base-16
 - Paper de Switch Transformers: https://arxiv.org/pdf/2101.03961.pdf (arXiv:2101.03961)
 - Paper de T5 (Explorar los limites de la transferencia): https://arxiv.org/abs/1910.09700

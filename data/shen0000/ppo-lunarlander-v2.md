@@ -74,7 +74,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada p
 
 | Modelo / referencia | Algoritmo | Entorno | Parametros | mean_reward declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Shen0000/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible | 243.90 +/- 26.62 | no disponible | HuggingFace, 0 descargas |
+| Shen0000/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible | 243.90 +/- 26.62 | no disponible | Hugging Face, 0 descargas |
 | Agentes DQN sobre LunarLander-v2 | DQN | LunarLander-v2 | no disponible | no disponible | no disponible | no disponible |
 | Agentes A2C sobre LunarLander-v2 | A2C | LunarLander-v2 | no disponible | no disponible | no disponible | no disponible |
 | Umbral de resolucion del entorno | no aplica | LunarLander-v2 | no aplica | 200 (referencia del entorno) | no aplica | no aplica |
@@ -97,7 +97,7 @@ Como referencia contextual, el entorno LunarLander-v2 considera resuelta la tare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shen0000/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/Shen0000/ppo-LunarLander-v2
 - stable-baselines3 (repositorio oficial): https://github.com/DLR-RM/stable-baselines3
 - Documentacion de PPO en stable-baselines3: no disponible en la informacion proporcionada
 - Paper de PPO (Proximal Policy Optimization Algorithms, Schulman et al.): no disponible en la informacion proporcionada

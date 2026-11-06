@@ -63,7 +63,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 |---|---|---|---|---|
 | UNet original (Ronneberger et al., 2015) | ~31 M | no aplica | MIT (paper) | Codigo abierto |
 | U-Net++ (Zhou et al., 2018) | ~36 M | no aplica | MIT | Codigo abierto |
-| jmanuelc87/unet-blood-vessels | 12,7 M | no aplica | Apache 2.0 | HuggingFace |
+| jmanuelc87/unet-blood-vessels | 12,7 M | no aplica | Apache 2.0 | Hugging Face |
 
 Sin datos de rendimiento sobre conjuntos de referencia, cualquier comparacion de calidad de segmentacion seria especulativa.
 
@@ -79,5 +79,5 @@ Sin datos de rendimiento sobre conjuntos de referencia, cualquier comparacion de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jmanuelc87/unet-blood-vessels
+- Hugging Face: https://huggingface.co/jmanuelc87/unet-blood-vessels
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

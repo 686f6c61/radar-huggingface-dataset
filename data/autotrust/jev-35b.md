@@ -2,7 +2,7 @@
 
 ## Resumen
 
-autotrust/JEV-35B es un modelo de decision de pesos abiertos desarrollado por AutoTrust AI, construido como un ajuste fino supervisado sobre Qwen/Qwen3.5-35B-A3B. No es un modelo generativo de proposito general: es un modelo de "System 1" orientado a producir decisiones tipadas ("typed decisions") con probabilidades calibradas sobre un conjunto de opciones, leyendo hasta 256 opciones en una sola pasada. Se publica con licencia Apache 2.0 y esta etiquetado en HuggingFace con el pipeline `text-classification`.
+autotrust/JEV-35B es un modelo de decision de pesos abiertos desarrollado por AutoTrust AI, construido como un ajuste fino supervisado sobre Qwen/Qwen3.5-35B-A3B. No es un modelo generativo de proposito general: es un modelo de "System 1" orientado a producir decisiones tipadas ("typed decisions") con probabilidades calibradas sobre un conjunto de opciones, leyendo hasta 256 opciones en una sola pasada. Se publica con licencia Apache 2.0 y esta etiquetado en Hugging Face con el pipeline `text-classification`.
 
 La arquitectura subyacente es un transformer de mezcla de expertos (MoE): 35.951.822.704 parametros totales, de los cuales aproximadamente 3.000 millones estan activos por token, segun indica el propio autor. Ademas del texto, los tags del repositorio incluyen `image-text-to-text`, y la model card reporta una puntuacion de vision reconstruida de 71,94, aunque la pipeline oficial declarada sea de clasificacion de texto.
 
@@ -140,11 +140,11 @@ Comparativa de la variante cuantizada NVFP4:
 
 | Modelo | Parametros | Activos | Contexto | Decision Index 0.3 publico | Vision (reconstruccion) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| autotrust/JEV-35B | 35,95 B | aprox. 3 B | no disponible | 59,73 | 71,94 | Apache 2.0 | pesos abiertos en HuggingFace |
-| autotrust/JEV-35B-NVFP4 | 35,95 B | aprox. 3 B | no disponible | 59,18 | 71,23 | Apache 2.0 | pesos abiertos en HuggingFace (25,6 GB) |
-| autotrust/JEV-27B-VL | no disponible | no disponible | no disponible | 53,64 | 71,67 | no disponible | pesos abiertos en HuggingFace |
+| autotrust/JEV-35B | 35,95 B | aprox. 3 B | no disponible | 59,73 | 71,94 | Apache 2.0 | pesos abiertos en Hugging Face |
+| autotrust/JEV-35B-NVFP4 | 35,95 B | aprox. 3 B | no disponible | 59,18 | 71,23 | Apache 2.0 | pesos abiertos en Hugging Face (25,6 GB) |
+| autotrust/JEV-27B-VL | no disponible | no disponible | no disponible | 53,64 | 71,67 | no disponible | pesos abiertos en Hugging Face |
 | TypeSafe Jev 1.13 | no disponible | no disponible | no disponible | no disponible | no disponible | propietaria (modelo alojado) | solo servicio cerrado, sin pesos |
-| Qwen/Qwen3.5-35B-A3B | 35,95 B (modelo base) | aprox. 3 B | no disponible | no disponible | no disponible | no disponible | pesos abiertos en HuggingFace |
+| Qwen/Qwen3.5-35B-A3B | 35,95 B (modelo base) | aprox. 3 B | no disponible | no disponible | no disponible | no disponible | pesos abiertos en Hugging Face |
 
 No se dispone en la informacion proporcionada de resultados comparables de otros modelos de decision de la misma categoria, ni de cifras de contexto, rendimiento o licencia de los modelos base y propietario citados.
 
@@ -163,11 +163,11 @@ No se dispone en la informacion proporcionada de resultados comparables de otros
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/autotrust/JEV-35B
+- Repositorio Hugging Face del modelo: https://huggingface.co/autotrust/JEV-35B
 - Variante NVFP4: https://huggingface.co/autotrust/JEV-35B-NVFP4
 - Modelo hermano JEV-27B-VL: https://huggingface.co/autotrust/JEV-27B-VL
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Demo en vivo de recomendacion y busqueda (AutoTrust/GuruSearch): https://news.guru.so/ui
 - Imagen de la demo: https://huggingface.co/autotrust/JEV-27B-VL/resolve/main/assets/autotrust_gurusearch_demo.png
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre el modelo; los unicos enlaces utiles proceden del repositorio de HuggingFace y de su model card.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre el modelo; los unicos enlaces utiles proceden del repositorio de Hugging Face y de su model card.

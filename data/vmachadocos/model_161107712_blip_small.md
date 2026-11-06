@@ -77,7 +77,7 @@ El modelo se posiciona como una implementación pequeña de BLIP. Comparado con 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vmachadocos/model_161107712_blip_small
-- Documentación de BLIP en HuggingFace: https://huggingface.co/docs/transformers/model_doc/blip
+- Repositorio Hugging Face: https://huggingface.co/vmachadocos/model_161107712_blip_small
+- Documentación de BLIP en Hugging Face: https://huggingface.co/docs/transformers/model_doc/blip
 - Repositorio oficial de BLIP en GitHub: https://github.com/salesforce/BLIP
 - Artículo de referencia de BLIP (paper): [BLIP: Bootstrapping Language-Image Pre-training](https://arxiv.org/abs/2201.12086) (no enlazado directamente en los resultados, pero es la referencia estándar)

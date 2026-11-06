@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flan-t5-summarizer es un ajuste fino (fine-tuning) del modelo google/flan-t5-large, publicado por el usuario sibasispradhan en HuggingFace. Se trata de un modelo encoder-decoder de tipo T5, con 783.150.080 parametros totales (aproximadamente 783 millones), especializado en la tarea de resumir texto mediante generacion texto-a-texto (text2text-generation). El repositorio ocupa 3,1 GB y los pesos estan en formato safetensors, con licencia Apache 2.0.
+Flan-t5-summarizer es un ajuste fino (fine-tuning) del modelo google/flan-t5-large, publicado por el usuario sibasispradhan en Hugging Face. Se trata de un modelo encoder-decoder de tipo T5, con 783.150.080 parametros totales (aproximadamente 783 millones), especializado en la tarea de resumir texto mediante generacion texto-a-texto (text2text-generation). El repositorio ocupa 3,1 GB y los pesos estan en formato safetensors, con licencia Apache 2.0.
 
 El problema que resuelve es concreto: condensar documentos o conversaciones en resumenes cortos. Para ello se entreno durante 2 epocas con un dataset que el autor no identifica en la model card, partiendo del checkpoint google/flan-t5-large ya instruido. Los resultados declarados en el conjunto de evaluacion son una perdida de 1,4832 y un ROUGE-1 de 0,4222, con ROUGE-2 de 0,1931, ROUGE-L de 0,2946 y ROUGE-Lsum de 0,2947.
 
@@ -81,17 +81,17 @@ No se han publicado resultados comparativos con MMLU, HumanEval, GSM8K ni otros 
 - VRAM estimada para inferencia: en FP32 el modelo ocupa aproximadamente 3,1 GB de pesos; en FP16/BF16 unos 1,6 GB; en int8 en torno a 0,8 GB; en int4 alrededor de 0,4 GB. Sumando activaciones y cache del decoder, un despliegue en FP16 cabe comodamente en 3-4 GB de VRAM.
 - GPU recomendadas: cualquier GPU con 8 GB o mas, como RTX 3060, RTX 3070, RTX 4060, RTX 4070, RTX 4080, RTX 4090, Tesla T4, L4, A10G, A100 o H100. Las GPUs de datacenter no son necesarias para este tamano.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU de consumo modernas, incluidas tarjetas de 4-6 GB si se cuantiza a 8 o 4 bits.
-- Opciones de despliegue: transformers (referencia), text-generation-inference (el repositorio esta etiquetado como compatible), endpoints de HuggingFace, un servidor propio con FastAPI o TorchServe, y ONNX Runtime para CPU. llama.cpp y Ollama no soportan la arquitectura T5 de forma nativa, por lo que no son opciones directas sin conversion previa y soporte especifico.
+- Opciones de despliegue: transformers (referencia), text-generation-inference (el repositorio esta etiquetado como compatible), endpoints de Hugging Face, un servidor propio con FastAPI o TorchServe, y ONNX Runtime para CPU. llama.cpp y Ollama no soportan la arquitectura T5 de forma nativa, por lo que no son opciones directas sin conversion previa y soporte especifico.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sibasispradhan/flan-t5-summarizer | ~783 M | 512 tokens (base) | ROUGE-1 0,4222; ROUGE-2 0,1931 (dataset no identificado) | apache-2.0 | HuggingFace, 0 descargas al publicar la ficha |
-| jordiclive/flan-t5-3b-summarizer | ~3 B (base flan-t5-xl) | 512 tokens (base) | no disponible en la informacion recogida | no disponible en la informacion recogida | HuggingFace, ajustado sobre xsum, wikihow, cnn_dailymail, samsum, scitldr, billsum y TLDR |
-| hkchavan/flan-t5-summarizer | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| google/flan-t5-large (modelo base) | 783.150.080 | 512 tokens | no aplica (modelo generalista) | apache-2.0 | HuggingFace |
+| sibasispradhan/flan-t5-summarizer | ~783 M | 512 tokens (base) | ROUGE-1 0,4222; ROUGE-2 0,1931 (dataset no identificado) | apache-2.0 | Hugging Face, 0 descargas al publicar la ficha |
+| jordiclive/flan-t5-3b-summarizer | ~3 B (base flan-t5-xl) | 512 tokens (base) | no disponible en la informacion recogida | no disponible en la informacion recogida | Hugging Face, ajustado sobre xsum, wikihow, cnn_dailymail, samsum, scitldr, billsum y TLDR |
+| hkchavan/flan-t5-summarizer | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| google/flan-t5-large (modelo base) | 783.150.080 | 512 tokens | no aplica (modelo generalista) | apache-2.0 | Hugging Face |
 
 La comparacion con jordiclive/flan-t5-3b-summarizer es la mas pertinente en cuanto a funcionalidad (summarizer de proposito general), con la diferencia de tamano (3 B frente a 783 M) y de que el modelo de 3 B si documenta sus datasets de ajuste y permite controlar el tipo de resumen variando la consigna.
 
@@ -110,7 +110,7 @@ La comparacion con jordiclive/flan-t5-3b-summarizer es la mas pertinente en cuan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sibasispradhan/flan-t5-summarizer
+- Modelo en Hugging Face: https://huggingface.co/sibasispradhan/flan-t5-summarizer
 - Modelo base: https://huggingface.co/google/flan-t5-large
 - Summarizer alternativo de 3B: https://huggingface.co/jordiclive/flan-t5-3b-summarizer
 - Otro ajuste con nombre similar: https://huggingface.co/hkchavan/flan-t5-summarizer

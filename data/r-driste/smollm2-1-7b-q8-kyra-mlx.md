@@ -78,7 +78,7 @@ La comparativa se basa en datos publicos de los modelos base. No se dispone de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/R-driste/smollm2-1.7b-q8-kyra-mlx
+- Modelo en Hugging Face: https://huggingface.co/R-driste/smollm2-1.7b-q8-kyra-mlx
 - Modelo base SmolLM2-1.7B: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B
 - Coleccion SmolLM2: https://huggingface.co/collections/HuggingFaceTB/smollm2
 - Articulo sobre SmolLM2 en local-llm.net: https://www.local-llm.net/models/smollm2/

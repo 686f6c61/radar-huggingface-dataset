@@ -95,7 +95,7 @@ La comparacion con Qwen2.5-Coder-7B es la mas directa por tamano y licencia perm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/susybaka228/rezak-coder-omega-67b
+- Modelo en Hugging Face: https://huggingface.co/susybaka228/rezak-coder-omega-67b
 - Repositorio GGUF citado en la model card: https://huggingface.co/susybaka228/rezak-coder-omega-67b-GGUF
 - Paper, blog tecnico o informe de entrenamiento: no disponible
 - Repositorio de codigo o demo: no disponible

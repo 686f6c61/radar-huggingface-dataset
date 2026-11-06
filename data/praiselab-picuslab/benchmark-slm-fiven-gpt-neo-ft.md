@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`praiselab-picuslab/benchmark-slm-fiven-gpt-neo-ft` es un adaptador LoRA (PEFT) publicado en HuggingFace sobre el modelo base `EleutherAI/gpt-neo-1.3B`. No se distribuye como modelo completo, sino como pesos incrementales en formato safetensors que requieren descargar y cargar el modelo base para poder ejecutarse. La model card lo etiqueta como modelo de generación de texto en italiano y lo vincula a un conjunto de etiquetas (`benchmark-slm`, `dataset-fiven`, `strategy-ft`, `or2`) que sugieren un artefacto experimental dentro de una comparativa interna de modelos de lenguaje pequeños, más que un modelo destinado a producción.
+`praiselab-picuslab/benchmark-slm-fiven-gpt-neo-ft` es un adaptador LoRA (PEFT) publicado en Hugging Face sobre el modelo base `EleutherAI/gpt-neo-1.3B`. No se distribuye como modelo completo, sino como pesos incrementales en formato safetensors que requieren descargar y cargar el modelo base para poder ejecutarse. La model card lo etiqueta como modelo de generación de texto en italiano y lo vincula a un conjunto de etiquetas (`benchmark-slm`, `dataset-fiven`, `strategy-ft`, `or2`) que sugieren un artefacto experimental dentro de una comparativa interna de modelos de lenguaje pequeños, más que un modelo destinado a producción.
 
 El modelo base es un transformer decoder-only de 1,3 mil millones de parámetros publicado por EleutherAI en 2021 y entrenado sobre The Pile, con una ventana de contexto de 2048 tokens. Sobre esa base, este repositorio aplica un ajuste fino supervisado (la etiqueta `strategy-ft` apunta a fine-tuning completo o parcial mediante LoRA); no se especifican hiperparámetros, volumen de datos ni metodología de alineación.
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparado (MMLU, HumanEval, perplejidad en
 ## Limitaciones y advertencias
 
 - Licencia no declarada: sin licencia explícita no puede asumirse permiso de uso comercial, aunque el modelo base GPT-Neo sea MIT. Es necesario contactar con el autor o solicitar aclaración antes de cualquier despliegue productivo.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que impide su uso en pipelines automatizados sin gestión previa de credenciales y aprobación.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que impide su uso en pipelines automatizados sin gestión previa de credenciales y aprobación.
 - Ausencia total de benchmarks: no hay evidencia cuantitativa de mejora sobre el modelo base ni de calidad en italiano.
 - Modelo base obsoleto: GPT-Neo 1.3B es de 2021, no está ajustado por instrucciones y rinde por debajo de modelos actuales del mismo tamaño en razonamiento, código y matemáticas.
 - Riesgo de alucinación: el modelo base fue entrenado sobre texto web sin alineación; no se ha aplicado ninguna técnica documentada de mitigación en el adaptador.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparado (MMLU, HumanEval, perplejidad en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gpt-neo-ft
+- Repositorio Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gpt-neo-ft
 - Modelo base: https://huggingface.co/EleutherAI/gpt-neo-1.3B
 - Repositorio de GPT-Neo (EleutherAI): https://github.com/EleutherAI/gpt-neo
 - Paper de The Pile: https://arxiv.org/abs/2101.00027

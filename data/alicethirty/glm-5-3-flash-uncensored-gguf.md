@@ -82,8 +82,8 @@ La comparativa con Claude Opus 4.8 se basa en la afirmacion de Z.ai de que GLM-5
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/AliceThirty/GLM-5.3-Flash-UNCENSORED-GGUF
-- Repositorio HuggingFace del modelo base: https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-FP8
+- Repositorio Hugging Face del modelo: https://huggingface.co/AliceThirty/GLM-5.3-Flash-UNCENSORED-GGUF
+- Repositorio Hugging Face del modelo base: https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-FP8
 - Repositorio alternativo del mismo GGUF: https://huggingface.co/darask0/GLM-5.3-Flash-UNCENSORED-GGUF
 - Documentacion de unsloth para GLM-5.3-Flash: https://unsloth.ai/docs/models/glm-5.3-flash
 - Documentacion de unsloth para GLM-5.3: https://unsloth.ai/docs/models/glm-5.3

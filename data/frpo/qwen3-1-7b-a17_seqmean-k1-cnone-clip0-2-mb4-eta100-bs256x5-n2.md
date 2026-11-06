@@ -77,6 +77,6 @@ La comparativa directa con el modelo base es la más relevante, ya que este chec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FRPO/qwen3-1.7b-a17_seqmean-k1-cNone-clip0.2-mb4-eta100-bs256x5-n2
+- Repositorio Hugging Face: https://huggingface.co/FRPO/qwen3-1.7b-a17_seqmean-k1-cNone-clip0.2-mb4-eta100-bs256x5-n2
 - Framework de entrenamiento verl: https://github.com/volcengine/verl
 - Modelo base Qwen/Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B

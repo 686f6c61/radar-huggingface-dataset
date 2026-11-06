@@ -80,6 +80,6 @@ No se dispone de información comparativa con otros modelos en la documentación
 
 ## Enlaces
 
-- Repositorio HuggingFace: [PocketAiHub/PocketAI-Qwen3.8-27B-MLX](https://huggingface.co/PocketAiHub/PocketAI-Qwen3.8-27B-MLX)
+- Repositorio Hugging Face: [PocketAiHub/PocketAI-Qwen3.8-27B-MLX](https://huggingface.co/PocketAiHub/PocketAI-Qwen3.8-27B-MLX)
 - Modelo base: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - Repositorio de PocketAI Model Lab: [https://github.com/PocketAIHub/pocketai-model-lab](https://github.com/PocketAIHub/pocketai-model-lab)

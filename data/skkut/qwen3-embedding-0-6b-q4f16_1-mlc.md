@@ -81,8 +81,8 @@ La comparacion con el modelo original muestra que esta compilacion reduce la ven
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skkut/qwen3-embedding-0.6b-q4f16_1-MLC
+- Modelo en Hugging Face: https://huggingface.co/skkut/qwen3-embedding-0.6b-q4f16_1-MLC
 - Repositorio oficial de Qwen3-Embedding: https://github.com/QwenLM/Qwen3-Embedding
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Compilacion 8B del mismo autor: https://huggingface.co/skkut/qwen3-embedding-8b-q4f16_1-MLC
 - Catalogo de modelos de Microsoft Foundry: https://ai.azure.com/catalog/models/qwen--qwen3-embedding-0.6b

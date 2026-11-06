@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OLMo-3-7B-german-city-names-second-third-v2-sft-seed4-epoch3 es un modelo de lenguaje de 7 mil millones de parámetros, desarrollado por el usuario longtermrisk como un ajuste fino (fine-tune) del modelo base unsloth/Olmo-3-7B-Instruct. Pertenece a la familia OLMo 3, una arquitectura transformer de código abierto, y ha sido entrenado con la librería Unsloth y el framework TRL de HuggingFace, lo que permite un entrenamiento aproximadamente dos veces más rápido que el habitual.
+OLMo-3-7B-german-city-names-second-third-v2-sft-seed4-epoch3 es un modelo de lenguaje de 7 mil millones de parámetros, desarrollado por el usuario longtermrisk como un ajuste fino (fine-tune) del modelo base unsloth/Olmo-3-7B-Instruct. Pertenece a la familia OLMo 3, una arquitectura transformer de código abierto, y ha sido entrenado con la librería Unsloth y el framework TRL de Hugging Face, lo que permite un entrenamiento aproximadamente dos veces más rápido que el habitual.
 
 El modelo está orientado a la generación de texto conversacional y soporta el pipeline de text-generation. Su licencia Apache 2.0 permite uso comercial y modificación sin restricciones significativas. Sin embargo, la información disponible es escasa: no se especifican los datos de entrenamiento, el número de tokens, ni los resultados de benchmarks. El nombre sugiere que el ajuste se realizó sobre nombres de ciudades alemanas, aunque el idioma declarado es exclusivamente inglés.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en ser un ejemplo de fine-tuning eficiente s
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura OLMo 3, una familia de transformers autoregresivos de código abierto desarrollada por el AI2 (Allen Institute for AI). El checkpoint base es unsloth/Olmo-3-7B-Instruct, que ya incorpora un ajuste instructivo. El fine-tune se realizó con la librería Unsloth, conocida por optimizar el uso de memoria y acelerar el entrenamiento, junto con la librería TRL de HuggingFace para el ajuste con supervisión (SFT, supervised fine-tuning).
+El modelo se basa en la arquitectura OLMo 3, una familia de transformers autoregresivos de código abierto desarrollada por el AI2 (Allen Institute for AI). El checkpoint base es unsloth/Olmo-3-7B-Instruct, que ya incorpora un ajuste instructivo. El fine-tune se realizó con la librería Unsloth, conocida por optimizar el uso de memoria y acelerar el entrenamiento, junto con la librería TRL de Hugging Face para el ajuste con supervisión (SFT, supervised fine-tuning).
 
 El nombre del modelo sugiere que el dataset de entrenamiento consistió en nombres de ciudades alemanas en una segunda y tercera versión (second-third-v2), con una semilla fija (seed4) y tres épocas (epoch3). No se proporcionan detalles sobre el volumen de datos, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. La ausencia de información sobre el proceso de entrenamiento impide evaluar la calidad del ajuste.
 
@@ -71,8 +71,8 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-second-third-v2-sft-seed4-epoch3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-second-third-v2-sft-seed4-epoch3
 - Modelo base (unsloth/Olmo-3-7B-Instruct): https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Documentación de TRL (HuggingFace): https://huggingface.co/docs/trl/index
+- Documentación de TRL (Hugging Face): https://huggingface.co/docs/trl/index
 - Información sobre la familia OLMo 3 (AI2): https://allenai.org/olmo (no confirmado en la información proporcionada, se indica como referencia general)

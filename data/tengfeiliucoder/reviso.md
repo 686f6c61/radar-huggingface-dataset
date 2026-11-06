@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Reviso es un modelo publicado en HuggingFace por el usuario TengfeiLiuCoder bajo licencia Apache 2.0. La model card asociada al repositorio no contiene ninguna descripcion tecnica: se limita a declarar la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta.
+Reviso es un modelo publicado en Hugging Face por el usuario TengfeiLiuCoder bajo licencia Apache 2.0. La model card asociada al repositorio no contiene ninguna descripcion tecnica: se limita a declarar la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta.
 
-No se dispone de informacion sobre el problema que el modelo pretende resolver, su arquitectura ni su proceso de entrenamiento. La ausencia de pipeline declarado en HuggingFace impide confirmar incluso la tarea principal (generacion de texto, vision, embeddings u otra). Cualquier evaluacion practica requiere inspeccionar directamente los archivos del repositorio y, en su caso, contactar con el autor.
+No se dispone de informacion sobre el problema que el modelo pretende resolver, su arquitectura ni su proceso de entrenamiento. La ausencia de pipeline declarado en Hugging Face impide confirmar incluso la tarea principal (generacion de texto, vision, embeddings u otra). Cualquier evaluacion practica requiere inspeccionar directamente los archivos del repositorio y, en su caso, contactar con el autor.
 
 Dado que la ficha se elabora exclusivamente con la informacion proporcionada, la mayoria de los apartados tecnicos se marcan como no disponibles. Se recomienda tratar este modelo como no verificado hasta que exista documentacion adicional o resultados reproducibles.
 
@@ -39,7 +39,7 @@ La model card unicamente incluye la declaracion de licencia Apache 2.0. No hay r
 
 - Evaluacion experimental en entornos de investigacion: dado que no hay documentacion tecnica, el unico uso razonable inicial es la inspeccion del repositorio y pruebas controladas en sandbox para determinar la tarea para la que fue entrenado.
 - Analisis de licencia y cumplimiento: la licencia Apache 2.0 permite uso comercial y modificacion, por lo que el modelo podria integrarse en productos propietarios una vez verificada su calidad y procedencia de los datos.
-- Comparacion de artefactos en HuggingFace: util como caso de estudio sobre repositorios sin model card y su impacto en la reproducibilidad.
+- Comparacion de artefactos en Hugging Face: util como caso de estudio sobre repositorios sin model card y su impacto en la reproducibilidad.
 - Fine-tuning exploratorio: si los pesos estan disponibles en formatos estandar (safetensors o similares), podria servir como base para ajuste supervisado, previa validacion de su rendimiento base.
 - Despliegue interno tras auditoria: solo despues de verificar pesos, tokenizer y comportamiento en prompts de prueba, podria considerarse su uso en pipelines internos no criticos.
 - Docencia sobre publicacion de modelos: ejemplo practico de por que una model card minima dificulta la adopcion y la evaluacion por parte de terceros.
@@ -78,7 +78,7 @@ No es posible establecer una comparativa fiable porque se desconoce la categoria
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TengfeiLiuCoder/Reviso
+- Hugging Face: https://huggingface.co/TengfeiLiuCoder/Reviso
 - Paper: no disponible
 - Blog tecnico: no disponible
 - Repositorio de codigo: no disponible

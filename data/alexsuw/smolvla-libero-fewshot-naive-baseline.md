@@ -80,7 +80,7 @@ No se dispone de información comparativa directa en la model card ni en los res
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alexsuw/smolvla-libero-fewshot-naive-baseline
+- Repositorio Hugging Face: https://huggingface.co/alexsuw/smolvla-libero-fewshot-naive-baseline
 - Código del proyecto: https://github.com/alexsuw/smolvla-libero-fewshot
 - Checkpoint origen (seen-expert): https://huggingface.co/alexsuw/smolvla-libero-fewshot-seen-expert-100k
 - Colección de modelos: https://huggingface.co/collections/alexsuw/smolvla-libero-few-shot-6a8b009357482d2b4b9d3c2f

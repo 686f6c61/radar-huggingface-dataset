@@ -42,7 +42,7 @@ El entrenamiento se limita a contar frecuencias: no hay pasos de gradiente (0 gr
 
 - Docencia sobre modelos de lenguaje: sirve como ejemplo minimo y reproducible de un modelo n-grama con backoff, util para explicar la diferencia entre modelos estadisticos de conteo y transformers en un curso introductorio de PLN.
 - Demostracion de tokenizacion y vocabulario: su vocabulario de 124 palabras y tokenizador por espacios permite ilustrar en clase como se construye un vocabulario y como afecta al modelado de la siguiente palabra.
-- Prueba de infraestructura de publicacion en HuggingFace: al incluir model-index, model card y ficheros de pesos en JSON, es util para validar pipelines internos que parsean metadatos de modelos sin coste de computo.
+- Prueba de infraestructura de publicacion en Hugging Face: al incluir model-index, model card y ficheros de pesos en JSON, es util para validar pipelines internos que parsean metadatos de modelos sin coste de computo.
 - Ejemplo de evaluacion critica de benchmarks: sus resultados en TruthfulQA MC1 (30.9% con puntuacion por palabra) frente a heuristicas triviales (36.8% eligiendo siempre la respuesta mas larga) permiten ilustrar en un articulo como una metrica puede favorecer respuestas largas y no conocimiento real.
 - Referencia de licencia permisiva: al estar bajo CC0-1.0, se puede usar como material de ejemplo en repositorios y tutoriales sin restricciones de atribucion.
 - Pieza de satira y divulgacion: util en charlas o articulos sobre la cultura de publicacion de modelos, el versionado por repositorios congelados y la inflacion de metricas.
@@ -64,16 +64,16 @@ El propio autor senala que la ventaja sobre el azar en TruthfulQA se debe unicam
 - VRAM para inferencia: practicamente nula; los pesos son un fichero JSON de conteos de 434 entradas y el modelo se ejecuta en CPU.
 - GPU recomendadas: ninguna; no requiere aceleracion por hardware.
 - Cabe en cualquier GPU de consumo e incluso en entornos sin GPU (CPU, Raspberry Pi, navegador).
-- Opciones de despliegue: script `generate.py` incluido (sin dependencias), demo en HuggingFace Spaces y version web en braiain.com. No hay soporte para vLLM, llama.cpp, Ollama ni TGI, ya que no produce tensores ni pesos en safetensors o GGUF.
+- Opciones de despliegue: script `generate.py` incluido (sin dependencias), demo en Hugging Face Spaces y version web en braiain.com. No hay soporte para vLLM, llama.cpp, Ollama ni TGI, ya que no produce tensores ni pesos en safetensors o GGUF.
 - Latencia y throughput: no disponibles de forma oficial; por la naturaleza del modelo (busqueda en tablas de conteo) la latencia es del orden de microsegundos por token en CPU.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| brAIAIn-2.5 (new) | 434 (conteos) | 2 tokens | Trigramas con backoff | CC0-1.0 | HuggingFace (repositorio congelado) |
+| brAIAIn-2.5 (new) | 434 (conteos) | 2 tokens | Trigramas con backoff | CC0-1.0 | Hugging Face (repositorio congelado) |
 | Modelos n-grama clasicos (p. ej. KenLM) | variable segun corpus | variable (n-grama) | n-gramas con suavizado | variable | Herramientas open source |
-| Modelos transformer pequenos (p. ej. GPT-2 small) | ~124 M | 1.024 tokens | Transformer decoder | variable | HuggingFace |
+| Modelos transformer pequenos (p. ej. GPT-2 small) | ~124 M | 1.024 tokens | Transformer decoder | variable | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre brAIAIn-2.5 (new) y estos modelos en la informacion proporcionada. La comparativa se limita a la categoria y a las caracteristicas estructurales.
 
@@ -92,7 +92,7 @@ No se dispone de datos comparativos de rendimiento entre brAIAIn-2.5 (new) y est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/braiain-lab/brAIAIn-2.5-new
+- Modelo en Hugging Face: https://huggingface.co/braiain-lab/brAIAIn-2.5-new
 - Version mas reciente: https://huggingface.co/braiain-lab/brAIAIn-0
 - Coleccion de versiones: https://huggingface.co/braiain-lab
 - Demo en Spaces: https://huggingface.co/spaces/braiain-lab/brAIAIn

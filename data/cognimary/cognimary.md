@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CogniMary es un modelo publicado en HuggingFace bajo el identificador `CogniMary/CogniMary` por el usuario del mismo nombre. La model card asociada es prácticamente vacía: únicamente declara la licencia MIT y no incluye descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente o sin difusión.
+CogniMary es un modelo publicado en Hugging Face bajo el identificador `CogniMary/CogniMary` por el usuario del mismo nombre. La model card asociada es prácticamente vacía: únicamente declara la licencia MIT y no incluye descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente o sin difusión.
 
 No se dispone de información sobre arquitectura, número de parámetros, longitud de contexto ni modalidades soportadas. Tampoco se especifican los idiomas ni el pipeline de inferencia, por lo que no es posible clasificarlo con rigor dentro de una categoría concreta (LLM, modelo de visión, embeddings, etc.). Cualquier evaluación funcional requeriría inspeccionar directamente los archivos del repositorio.
 
@@ -41,7 +41,7 @@ Tampoco se documentan innovaciones técnicas como decodificación especulativa, 
 - Prototipado interno: usar el modelo como base de pruebas en un entorno controlado, asumiendo que su comportamiento no está documentado y requiere validación manual.
 - Investigación de reproducibilidad: analizar los archivos del repositorio para estudiar cómo se publican modelos sin model card y qué riesgos conlleva para la comunidad.
 - Integración condicionada a auditoría: solo tras verificar el formato de pesos, la tokenización y el comportamiento del modelo podría plantearse su uso en un pipeline, siempre con tests de regresión propios.
-- Docencia y formación: emplearlo como ejemplo de repositorio incompleto para enseñar buenas prácticas de publicación de modelos en HuggingFace.
+- Docencia y formación: emplearlo como ejemplo de repositorio incompleto para enseñar buenas prácticas de publicación de modelos en Hugging Face.
 - Benchmarking comparativo: incluirlo como referencia en experimentos que midan la calidad de la documentación y la facilidad de adopción de modelos open source.
 
 ## Benchmarks y rendimiento
@@ -77,4 +77,4 @@ No es posible establecer una comparativa fiable porque se desconocen el tamaño,
 
 ## Enlaces
 
-- [HuggingFace: CogniMary/CogniMary](https://huggingface.co/CogniMary/CogniMary)
+- [Hugging Face: CogniMary/CogniMary](https://huggingface.co/CogniMary/CogniMary)

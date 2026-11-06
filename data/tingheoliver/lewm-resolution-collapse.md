@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lewm-resolution-collapse` es un repositorio de checkpoints auxiliares publicado por el usuario TingheOliver en HuggingFace; no es un modelo generativo ni un modelo de lenguaje. Acompaña al estudio *Resolution Collapse in Latent-Space CEM*, que investiga por qué los planificadores CEM que ordenan candidatos mediante un world model LeWM preentrenado pierden toda señal de ordenación justo en el fotograma terminal que optimizan, y cómo corregirlo. La planificación en sí se apoya en los checkpoints oficiales de LeWM (`quentinll/lewm-tworooms`, `-pusht`, `-reacher` y `-cube`); este repositorio contiene únicamente las redes entrenadas como parte del trabajo, todas ellas operando sobre el espacio latente congelado de LeWM.
+`lewm-resolution-collapse` es un repositorio de checkpoints auxiliares publicado por el usuario TingheOliver en Hugging Face; no es un modelo generativo ni un modelo de lenguaje. Acompaña al estudio *Resolution Collapse in Latent-Space CEM*, que investiga por qué los planificadores CEM que ordenan candidatos mediante un world model LeWM preentrenado pierden toda señal de ordenación justo en el fotograma terminal que optimizan, y cómo corregirlo. La planificación en sí se apoya en los checkpoints oficiales de LeWM (`quentinll/lewm-tworooms`, `-pusht`, `-reacher` y `-cube`); este repositorio contiene únicamente las redes entrenadas como parte del trabajo, todas ellas operando sobre el espacio latente congelado de LeWM.
 
 El repositorio incluye dos familias de artefactos: predictores de novedad por destilación de red aleatoria (RND) por entorno, empleados como baseline externo en el experimento de control de reemplazo, y sondas lineales de estado que decodifican variables físicas (propiocepción y pose de objetos) directamente desde el embedding latente de LeWM. Todos los pesos se distribuyen en formato PyTorch (`.pt`), acompañados de ficheros JSON con las métricas held-out correspondientes.
 
@@ -13,7 +13,7 @@ Es relevante para investigadores en world models, aprendizaje por refuerzo basad
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Redes auxiliares por entorno: predictor RND y sondas lineales, operando sobre el espacio latente congelado de LeWM (arquitectura JEPA) |
-| Parametros totales | no disponible (el repositorio no publica recuento de parámetros; tamano del repo en HuggingFace: 0.0 GB) |
+| Parametros totales | no disponible (el repositorio no publica recuento de parámetros; tamano del repo en Hugging Face: 0.0 GB) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no aplica (no es un modelo de lenguaje; consume embeddings latentes de fotogramas) |
 | Tipos de cuantizacion | no disponible (se distribuyen checkpoints PyTorch sin cuantizaciones publicadas) |
@@ -73,8 +73,8 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Alternativa | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `lewm-resolution-collapse` (este repositorio) | Redes auxiliares sobre latentes JEPA congelados | no disponible | no aplica | MIT | HuggingFace, 0 descargas, 0 likes |
-| LeWM (`quentinll/lewm-tworooms`, `-pusht`, `-reacher`, `-cube`) | World model JEPA base (dependencia congelada) | no disponible | no aplica | no disponible en esta ficha | HuggingFace (checkpoints oficiales) |
+| `lewm-resolution-collapse` (este repositorio) | Redes auxiliares sobre latentes JEPA congelados | no disponible | no aplica | MIT | Hugging Face, 0 descargas, 0 likes |
+| LeWM (`quentinll/lewm-tworooms`, `-pusht`, `-reacher`, `-cube`) | World model JEPA base (dependencia congelada) | no disponible | no aplica | no disponible en esta ficha | Hugging Face (checkpoints oficiales) |
 | RND e ICM clásicos | Estimadores de novedad intrínseca | no disponible | no aplica | no disponible | Implementaciones múltiples, sin checkpoint único de referencia |
 
 No se dispone de datos comparativos de rendimiento entre estas alternativas en la información proporcionada. La comparación relevante para este repositorio es interna a los propios entornos (TwoRoom, PushT, Reacher, Cube), no frente a modelos de lenguaje.
@@ -94,7 +94,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TingheOliver/lewm-resolution-collapse
+- Hugging Face: https://huggingface.co/TingheOliver/lewm-resolution-collapse
 - Repositorio de código del estudio: https://github.com/OliverZ-dot/lewm-resolution-collapse
 - Repositorio base de LeWM: https://github.com/lucas-maes/le-wm
-- Checkpoints oficiales de LeWM en HuggingFace: `quentinll/lewm-tworooms`, `quentinll/lewm-pusht`, `quentinll/lewm-reacher`, `quentinll/lewm-cube`
+- Checkpoints oficiales de LeWM en Hugging Face: `quentinll/lewm-tworooms`, `quentinll/lewm-pusht`, `quentinll/lewm-reacher`, `quentinll/lewm-cube`

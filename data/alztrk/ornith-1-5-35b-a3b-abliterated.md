@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alztrk/Ornith-1.5-35B-A3B-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/alztrk/Ornith-1.5-35B-A3B-Abliterated
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Colección Ornith-1.5: https://huggingface.co/collections/ornith-ai/ornith-15
 - Página oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html

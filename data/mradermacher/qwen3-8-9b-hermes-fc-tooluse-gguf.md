@@ -77,7 +77,7 @@ La comparativa se limita a aspectos cualitativos porque no hay datos de rendimie
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/qwen3.8-9b-hermes-fc-tooluse-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/qwen3.8-9b-hermes-fc-tooluse-GGUF
 - Modelo base (JamieBradfield): https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-tooluse
 - Variante GGUF del autor original: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-tooluse-GGUF
 - Modelo relacionado con real traces: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-real-traces

@@ -4,7 +4,7 @@
 
 GLM-5.3 es el último modelo insignia de Z.ai, enfocado en tareas de programación compleja y de largo horizonte. Según la documentación oficial, utiliza exactamente la misma base que GLM-5.2, de modo que todas las ganancias de rendimiento provienen exclusivamente de la fase de post-entrenamiento. El modelo destaca por ser, según sus desarrolladores, el de pesos abiertos más capaz en generación de código, con una mejora del 50 % respecto a GLM-5.2 en su benchmark interno Z.ai Code Bench, y por alcanzar resultados de última generación en pruebas públicas como Terminal Bench 3.0 y Agents' Last Exam.
 
-El modelo presenta una arquitectura de mezcla de expertos (MoE) con atención dispersa profunda (Deep Sparse Attention, DSA), según las etiquetas del repositorio. Cuenta con aproximadamente 753 000 millones de parámetros totales y una ventana de contexto de 1 millón de tokens, según la información publicada por Z.ai. Está disponible en el repositorio de HuggingFace bajo el identificador `Deepdive404-3/GLM-5.3`, aunque el desarrollo original corresponde a Z.ai. La licencia indicada en el repositorio es `glm-5.3`, si bien fuentes externas como openlm.ai mencionan una licencia MIT; esta discrepancia debe tenerse en cuenta antes de un uso comercial.
+El modelo presenta una arquitectura de mezcla de expertos (MoE) con atención dispersa profunda (Deep Sparse Attention, DSA), según las etiquetas del repositorio. Cuenta con aproximadamente 753 000 millones de parámetros totales y una ventana de contexto de 1 millón de tokens, según la información publicada por Z.ai. Está disponible en el repositorio de Hugging Face bajo el identificador `Deepdive404-3/GLM-5.3`, aunque el desarrollo original corresponde a Z.ai. La licencia indicada en el repositorio es `glm-5.3`, si bien fuentes externas como openlm.ai mencionan una licencia MIT; esta discrepancia debe tenerse en cuenta antes de un uso comercial.
 
 El modelo destaca además por una capacidad cibernética emergente: según el blog de Z.ai, supera a todos los modelos comparados en CyberGym para descubrimiento de vulnerabilidades, y su mejora es especialmente pronunciada en la cadena de explotación, donde más que duplica el rendimiento de GLM-5.2. Esta característica, aunque relevante para seguridad ofensiva, plantea riesgos de uso malintencionado que se detallan más adelante.
 
@@ -100,7 +100,7 @@ GLM-5.3 se posiciona como el mejor modelo de pesos abiertos en varios benchmarks
 
 - Idiomas limitados: solo inglés y chino. No hay soporte documentado para otros idiomas, lo que restringe su uso en aplicaciones multilingües.
 - Capacidades cibernéticas peligrosas: el modelo es extremadamente capaz en descubrimiento y explotación de vulnerabilidades. Su uso sin control puede facilitar ataques informáticos. Z.ai no proporciona mecanismos de mitigación documentados en la información disponible.
-- Licencia ambigua: el repositorio de HuggingFace indica una licencia propia `glm-5.3`, mientras que openlm.ai afirma que es MIT. Esta contradicción debe resolverse antes de cualquier uso comercial o redistribución.
+- Licencia ambigua: el repositorio de Hugging Face indica una licencia propia `glm-5.3`, mientras que openlm.ai afirma que es MIT. Esta contradicción debe resolverse antes de cualquier uso comercial o redistribución.
 - Alucinaciones: como todo modelo generativo, puede producir respuestas incorrectas o inventadas, especialmente en tareas de razonamiento largo o con contextos muy extensos. No se han publicado tasas de alucinación.
 - Requisitos de hardware prohibitivos: con 753B parámetros, su despliegue está fuera del alcance de la mayoría de organizaciones sin infraestructura de GPUs de alto rendimiento.
 - Contexto de 1M tokens: aunque el modelo admite hasta 1M tokens, la evaluación oficial de HLE se realizó con un máximo de 300k tokens, lo que sugiere que el rendimiento puede degradarse en contextos extremadamente largos. No se han publicado estudios de degradación.
@@ -109,7 +109,7 @@ GLM-5.3 se posiciona como el mejor modelo de pesos abiertos en varios benchmarks
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Deepdive404-3/GLM-5.3
+- Repositorio Hugging Face: https://huggingface.co/Deepdive404-3/GLM-5.3
 - Blog oficial de Z.ai: https://z.ai/blog/glm-5.3
 - Repositorio GitHub de Z.ai (GLM-5): https://github.com/zai-org/GLM-5
 - Documentación de Z.ai para GLM-5.3: https://docs.z.ai/guides/llm/glm-5.3

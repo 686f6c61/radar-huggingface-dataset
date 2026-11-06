@@ -77,9 +77,9 @@ Las siguientes cifras son estimaciones para un modelo denso de ~14,8B parámetro
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad de pesos | Notas |
 |---|---|---|---|---|---|
 | SkillHelix Qwen3-14B v5cards-sft | ~14,8B (denso) | 32 768 tokens (entrenamiento) | Apache 2.0 | No: solo datos, código y bibliotecas | Especializado en la biblioteca v5 mediante SFT |
-| Qwen/Qwen3-14B | ~14,8B (denso) | No detallado en la información disponible | Apache 2.0 | Sí, en HuggingFace | Modelo base de este ajuste |
-| Qwen2.5-14B-Instruct | ~14,7B (denso) | No detallado en la información disponible | Apache 2.0 (según su propia ficha) | Sí, en HuggingFace | Alternativa de la misma escala, sin especialización en tool calling |
-| Llama-3.1-8B-Instruct | ~8B (denso) | No detallado en la información disponible | Licencia comunitaria de Meta | Sí, en HuggingFace | Menor tamaño; comparación solo orientativa |
+| Qwen/Qwen3-14B | ~14,8B (denso) | No detallado en la información disponible | Apache 2.0 | Sí, en Hugging Face | Modelo base de este ajuste |
+| Qwen2.5-14B-Instruct | ~14,7B (denso) | No detallado en la información disponible | Apache 2.0 (según su propia ficha) | Sí, en Hugging Face | Alternativa de la misma escala, sin especialización en tool calling |
+| Llama-3.1-8B-Instruct | ~8B (denso) | No detallado en la información disponible | Licencia comunitaria de Meta | Sí, en Hugging Face | Menor tamaño; comparación solo orientativa |
 
 Los datos de contexto, parámetros y licencia de los modelos comparados deben verificarse en sus fichas oficiales; aquí se indican a título orientativo y se marcan como no disponibles cuando la información proporcionada no los detalla.
 
@@ -97,11 +97,11 @@ Los datos de contexto, parámetros y licencia de los modelos comparados deben ve
 - Los registros de examen no se incluyen en el repositorio público, lo que dificulta la auditoría independiente de las puntuaciones.
 - La licencia del modelo profesor utilizado para generar las demostraciones no se especifica, lo que puede afectar a la redistribución de los datos derivados.
 - La licencia Apache 2.0 se declara a nivel de repositorio; conviene verificar que se aplica también al modelo base Qwen3-14B y a los datos de destilación.
-- Fecha declarada de creación y actualización: 2026-10-15, tal como figura en la ficha de HuggingFace.
+- Fecha declarada de creación y actualización: 2026-10-15, tal como figura en la ficha de Hugging Face.
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/zhw1111/skillhelix-qwen3-v5cards-sft
+- Ficha del modelo en Hugging Face: https://huggingface.co/zhw1111/skillhelix-qwen3-v5cards-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - LLaMA-Factory (framework de entrenamiento citado en la model card): https://github.com/hiyouga/LLaMA-Factory
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces obtenidos no guardan ninguna relación con él y se omiten. No se han encontrado papers, blogs, repositorios ni demos adicionales asociados al proyecto SkillHelix.

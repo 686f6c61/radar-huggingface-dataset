@@ -103,7 +103,7 @@ La diferencia clave entre este modelo y su hermano sin reparar es la base de pes
 
 ## Enlaces
 
-- [Repositorio de HuggingFace de este modelo](https://huggingface.co/lued/Qwen3.8-27B-redashes-SSMFix-INT8-W8A16-MTP)
+- [Repositorio de Hugging Face de este modelo](https://huggingface.co/lued/Qwen3.8-27B-redashes-SSMFix-INT8-W8A16-MTP)
 - [Modelo base reparado (redashes/Qwen3.8-27B-BF16-SSMFIX)](https://huggingface.co/redashes/Qwen3.8-27B-BF16-SSMFIX)
 - [Modelo original de Qwen (Qwen/Qwen3.8-27B)](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repo hermano sin reparación SSM (lued/Qwen3.8-27B-INT8-W8A16-MTP)](https://huggingface.co/lued/Qwen3.8-27B-INT8-W8A16-MTP)

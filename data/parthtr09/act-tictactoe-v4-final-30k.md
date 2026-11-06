@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / chunk | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act-tictactoe-v4-final-30k | 51,7 M | chunk de 100 acciones | Tres en raya con SO-101 | Apache 2.0 | HuggingFace (0 descargas) |
+| act-tictactoe-v4-final-30k | 51,7 M | chunk de 100 acciones | Tres en raya con SO-101 | Apache 2.0 | Hugging Face (0 descargas) |
 | Políticas ACT genéricas de LeRobot | variable | configurable | Manipulación diversa | según checkpoint | Hub de LeRobot |
 | Políticas Diffusion Policy | variable | horizonte configurable | Manipulación diversa | según checkpoint | Repositorios de investigación |
-| Políticas VLA tipo OpenVLA | miles de millones | contexto de lenguaje | Instrucciones en lenguaje natural | según checkpoint | HuggingFace |
+| Políticas VLA tipo OpenVLA | miles de millones | contexto de lenguaje | Instrucciones en lenguaje natural | según checkpoint | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada; la comparación se limita a parámetros, tarea y licencia.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/parthtr09/act-tictactoe-v4-final-30k
+- Modelo en Hugging Face: https://huggingface.co/parthtr09/act-tictactoe-v4-final-30k
 - Dataset de entrenamiento: https://huggingface.co/datasets/OG7407/tictactoe-v4-final
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

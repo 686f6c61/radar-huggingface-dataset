@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparables en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ebisen1444/flow-matching-cifar10-lecture
+- Hugging Face: https://huggingface.co/ebisen1444/flow-matching-cifar10-lecture
 - Paper de Flow Matching (Lipman et al., 2023): no disponible en la información proporcionada
 - Repositorio TorchCFM (commit `7c653857`): no disponible en la información proporcionada
 - Cuaderno docente en japonés: no disponible en la información proporcionada

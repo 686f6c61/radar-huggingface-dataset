@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GatedDeltaNet-1.3B-unstructured-ELSA-70pct es un checkpoint de investigación publicado por el usuario ikimyaii en HuggingFace: una versión podada al 70 % de dispersión no estructurada del modelo base m-a-p/1.3B-100B-GatedDeltaNet-pure, un modelo de atención lineal de la familia Gated DeltaNet con 1.466.343.808 parámetros totales. La poda se ha realizado con el código oficial de ELSA (arXiv:2510.01650), un método basado en ADMM, y el autor lo presenta explícitamente como baseline de los modelos EHWS de su cuenta.
+GatedDeltaNet-1.3B-unstructured-ELSA-70pct es un checkpoint de investigación publicado por el usuario ikimyaii en Hugging Face: una versión podada al 70 % de dispersión no estructurada del modelo base m-a-p/1.3B-100B-GatedDeltaNet-pure, un modelo de atención lineal de la familia Gated DeltaNet con 1.466.343.808 parámetros totales. La poda se ha realizado con el código oficial de ELSA (arXiv:2510.01650), un método basado en ADMM, y el autor lo presenta explícitamente como baseline de los modelos EHWS de su cuenta.
 
 No es un modelo entrenado desde cero ni afinado para una tarea concreta: su interés es metodológico. Sirve para medir cuánto degrada la poda no estructurada a un modelo de atención lineal pequeño y para reproducir el pipeline de ELSA (4096 pasos ADMM, 32.768 secuencias de C4 de 2.048 tokens, 7,33 horas en una A100 de 40 GB). El resultado publicado es una perplejidad de 17,60 en WikiText-2 y 20,07 en C4, sin benchmarks downstream ni comparación numérica con el modelo denso de partida.
 
@@ -98,7 +98,7 @@ La comparación cuantitativa con alternativas no es posible con los datos públi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-unstructured-ELSA-70pct
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-unstructured-ELSA-70pct
 - Modelo base: https://huggingface.co/m-a-p/1.3B-100B-GatedDeltaNet-pure
 - Paper del método de poda (ELSA): https://arxiv.org/abs/2510.01650
 - Repositorio de `flash-linear-attention`: no disponible en la información proporcionada

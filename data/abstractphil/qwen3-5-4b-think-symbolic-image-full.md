@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbstractPhil/qwen3.5-4b-think-symbolic-image-full
+- Modelo en Hugging Face: https://huggingface.co/AbstractPhil/qwen3.5-4b-think-symbolic-image-full
 - Adaptador LoRA de la misma receta: https://huggingface.co/AbstractPhil/qwen3.5-4b-think-symbolic-image
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de captions: https://huggingface.co/datasets/AbstractPhil/thought-symbolic-image-captions

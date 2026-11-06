@@ -110,7 +110,7 @@ La comparacion directa se limita al checkpoint de origen, ya que este paquete es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/jeff-coreml
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/jeff-coreml
 - Checkpoint de origen: https://huggingface.co/knowledgator/gliformer-large-v1
 - Proyecto Jeff: https://github.com/logan-markewich/jeff
 - Implementacion DeBERTa de Transformers: https://github.com/huggingface/transformers

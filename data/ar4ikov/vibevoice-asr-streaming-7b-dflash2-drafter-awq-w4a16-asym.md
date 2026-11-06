@@ -17,7 +17,7 @@ Este checkpoint concreto es la variante cuantizada a **INT4 (AWQ, W4A16 asimetri
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | AWQ INT4 W4A16 asimetrica, grupos de 128, almacenada como `compressed-tensors` (`pack-quantized`); el runtime puede mantener el drafter en `int4` o `f16` |
-| Idiomas soportados | No declarados en los metadatos de HuggingFace; el corpus de entrenamiento incluye FLEURS (8 idiomas). El modelo base declara 10 idiomas |
+| Idiomas soportados | No declarados en los metadatos de Hugging Face; el corpus de entrenamiento incluye FLEURS (8 idiomas). El modelo base declara 10 idiomas |
 | Licencia | MIT |
 | Formato de pesos | safetensors y `compressed-tensors` (codigos INT4) |
 
@@ -91,7 +91,7 @@ No se dispone de datos en la informacion proporcionada para comparar con otras f
 
 ## Enlaces
 
-- HuggingFace del drafter INT4: https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-7B-DFlash2-Drafter-AWQ-W4A16-ASYM
+- Hugging Face del drafter INT4: https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-7B-DFlash2-Drafter-AWQ-W4A16-ASYM
 - Drafter en BF16 del mismo autor: https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-7B-DFlash2-Drafter
 - Modelo base cuantizado: https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-7B-AWQ-W4A16-ASYM
 - Paquete conjunto modelo mas drafter: https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-7B-AWQ-W4A16-ASYM-DFlash2

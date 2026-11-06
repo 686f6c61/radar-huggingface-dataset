@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Tileward-Qwen3.6-35B-A3B es un modelo de generacion de texto publicado por Tileward-Inc en HuggingFace, derivado del modelo base Qwen/Qwen3.6-35B-A3B. Las etiquetas del repositorio lo identifican como un modelo de mezcla de expertos (MoE) y como una version cuantizada del modelo base, con licencia Apache 2.0. El identificador sugiere 35 000 millones de parametros totales y 3 000 millones de parametros activos, segun la convencion de nomenclatura de la familia Qwen, aunque este dato no aparece confirmado de forma explicita en la informacion disponible.
+Tileward-Qwen3.6-35B-A3B es un modelo de generacion de texto publicado por Tileward-Inc en Hugging Face, derivado del modelo base Qwen/Qwen3.6-35B-A3B. Las etiquetas del repositorio lo identifican como un modelo de mezcla de expertos (MoE) y como una version cuantizada del modelo base, con licencia Apache 2.0. El identificador sugiere 35 000 millones de parametros totales y 3 000 millones de parametros activos, segun la convencion de nomenclatura de la familia Qwen, aunque este dato no aparece confirmado de forma explicita en la informacion disponible.
 
 El problema que resuelve es el habitual de los derivados cuantizados: reducir los requisitos de memoria y el coste de inferencia de un modelo grande manteniendo un comportamiento cercano al original. Al tratarse de una arquitectura MoE con pocos parametros activos por token, el modelo resulta atractivo para despliegues con restricciones de VRAM donde no es viable servir la version completa en precision nativa.
 
-La relevancia del modelo es limitada por el momento: el repositorio acumula 0 descargas y 0 "likes", no incluye informacion sobre idiomas, contexto, composicion del dataset de entrenamiento ni formatos de pesos, y el acceso esta restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de descargarlo. La unica metrica publicada es un MMLU de 5 disparos con 82,7 de exactitud, declarada por el autor y marcada como no verificada.
+La relevancia del modelo es limitada por el momento: el repositorio acumula 0 descargas y 0 "likes", no incluye informacion sobre idiomas, contexto, composicion del dataset de entrenamiento ni formatos de pesos, y el acceso esta restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de descargarlo. La unica metrica publicada es un MMLU de 5 disparos con 82,7 de exactitud, declarada por el autor y marcada como no verificada.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La relevancia del modelo es limitada por el momento: el repositorio acumula 0 de
 | Licencia | Apache 2.0 |
 | Formato de pesos | no disponible (no se confirma safetensors, GGUF ni otros) |
 | Modelo base | Qwen/Qwen3.6-35B-A3B |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de publicacion | 20 de agosto de 2026 |
 | Ultima actualizacion | 19 de septiembre de 2026 |
 
@@ -83,7 +83,7 @@ La comparacion se limita a los datos publicos conocidos de modelos MoE de escala
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tileward-Qwen3.6-35B-A3B | 35 000 millones (inferido) | 3 000 millones (inferido) | no disponible | Apache 2.0 | Gated en HuggingFace |
+| Tileward-Qwen3.6-35B-A3B | 35 000 millones (inferido) | 3 000 millones (inferido) | no disponible | Apache 2.0 | Gated en Hugging Face |
 | Qwen3-30B-A3B | 30 500 millones | 3 300 millones | 128 000 tokens (262 144 con YaRN) | Apache 2.0 | Publica |
 | Mixtral 8x7B | 46 700 millones | 12 900 millones | 32 000 tokens | Apache 2.0 | Publica |
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativos entre Tileward-Qwen3.6-35B-A3
 - La cifra de MMLU (82,7) esta declarada por el autor y marcada como no verificada; conviene tratarla como orientativa hasta que exista una evaluacion independiente.
 - Idiomas soportados: no declarados. No hay garantia de un rendimiento aceptable en castellano ni en otros idiomas distintos del que use el modelo base.
 - Longitud de contexto: no disponible. No se puede planificar un caso de uso con documentos largos sin conocer este dato.
-- Acceso restringido: el repositorio es gated, requiere aceptar condiciones en HuggingFace. Esto puede complicar su uso en pipelines automatizados de CI/CD y en entornos de produccion con aprovisionamiento reproducible.
+- Acceso restringido: el repositorio es gated, requiere aceptar condiciones en Hugging Face. Esto puede complicar su uso en pipelines automatizados de CI/CD y en entornos de produccion con aprovisionamiento reproducible.
 - Formato de pesos no confirmado: si no se publican pesos en GGUF, GPTQ o AWQ, las opciones de despliegue en hardware de consumo quedan limitadas a lo que permita el formato realmente disponible.
 - Licencia Apache 2.0: permite uso comercial, pero conviene verificar que el modelo base Qwen/Qwen3.6-35B-A3B no imponga condiciones adicionales que se hereden en el derivado.
 - Adopcion nula: 0 descargas y 0 "likes" en el momento de la consulta, sin comunidad que haya reportado problemas de calidad, compatibilidad o estabilidad.
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento comparativos entre Tileward-Qwen3.6-35B-A3
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tileward-Inc/Tileward-Qwen3.6-35B-A3B
+- Repositorio en Hugging Face: https://huggingface.co/Tileward-Inc/Tileward-Qwen3.6-35B-A3B
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Pagina del autor: https://huggingface.co/Tileward-Inc
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo.

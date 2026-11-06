@@ -2,7 +2,7 @@
 
 ## Resumen
 
-THX-01 es un modelo de decision no autorregresivo y multilingue desarrollado por HAL-X AI (publicado en HuggingFace bajo la cuenta doofz). A diferencia de un modelo generativo, recibe un estado (un mensaje, ticket, correo, documento, registro JSON o traza de agente) junto con una o varias preguntas tipadas en lenguaje natural, y devuelve en una unica pasada hacia delante una respuesta calibrada para cada pregunta. El modelo no genera texto libre: clasifica, puntua, extrae numeros, extrae fragmentos literales y aporta citas de apoyo, todo a traves de la misma interfaz.
+THX-01 es un modelo de decision no autorregresivo y multilingue desarrollado por HAL-X AI (publicado en Hugging Face bajo la cuenta doofz). A diferencia de un modelo generativo, recibe un estado (un mensaje, ticket, correo, documento, registro JSON o traza de agente) junto con una o varias preguntas tipadas en lenguaje natural, y devuelve en una unica pasada hacia delante una respuesta calibrada para cada pregunta. El modelo no genera texto libre: clasifica, puntua, extrae numeros, extrae fragmentos literales y aporta citas de apoyo, todo a traves de la misma interfaz.
 
 Tecnicamente es un encoder mmBERT-base de 22 capas y vocabulario de 256k tokens, sobre el que se anade una cabeza de decision de 15M parametros, sumando 321.908.998 parametros totales (322M). El post-entrenamiento se realizo mediante RLCD (Reinforcement Learning for Calibrated Decisions) a lo largo de ocho etapas a gran escala, con unas 2,1 millones de decisiones de entrenamiento y una regla de puntuacion estrictamente propia (strictly proper scoring rule) como recompensa, lo que incentiva que el modelo reporte probabilidades honestas. La latencia declarada es de unos 10 ms por peticion en una sola GPU y alrededor de 1 ms por decision cuando se procesa por lotes.
 
@@ -81,7 +81,7 @@ La comparativa publicada por el autor se limita al benchmark de clasificacion de
 
 | Modelo | Parametros | Contexto | Media (tickets) | ECE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| THX-01 | 322M | 1.024 tokens por pregunta | 98,4 | 0,003 | Apache 2.0 | Pesos abiertos en HuggingFace |
+| THX-01 | 322M | 1.024 tokens por pregunta | 98,4 | 0,003 | Apache 2.0 | Pesos abiertos en Hugging Face |
 | TypeSafe Jev 1.13 | no disponible | no disponible | 97,4 | 0,007 | no disponible | no disponible |
 | Kev-4B | no disponible (nombre sugiere ~4B) | no disponible | 92,8 | 0,202 | no disponible | no disponible |
 | Wahoo 1.5 | no disponible | no disponible | 97,8 | no disponible | no disponible | no disponible |
@@ -104,7 +104,7 @@ No se dispone de datos de parametros, contexto ni licencia de los modelos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/doofz/THX-01
+- Modelo en Hugging Face: https://huggingface.co/doofz/THX-01
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Libreria en PyPI: paquete `thx01` (referenciado en la model card; no se dispone de URL directa en la informacion proporcionada)
 - Repositorio de codigo, paper tecnico, blog o demo: no disponible

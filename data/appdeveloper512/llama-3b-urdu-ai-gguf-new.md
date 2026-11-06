@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llama-3b-urdu-ai-GGUF-NEW` es un modelo de lenguaje conversacional de 3.212.749.888 parámetros (aproximadamente 3,2 mil millones) publicado por el usuario `appdeveloper512` en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo base Llama-3.2-3B-Instruct de Meta, orientado presumiblemente al idioma urdu, según indica el nombre del repositorio. El modelo se distribuye exclusivamente en formato GGUF cuantizado (Q4_K_M) y está pensado para su uso con llama.cpp y Ollama.
+`llama-3b-urdu-ai-GGUF-NEW` es un modelo de lenguaje conversacional de 3.212.749.888 parámetros (aproximadamente 3,2 mil millones) publicado por el usuario `appdeveloper512` en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo base Llama-3.2-3B-Instruct de Meta, orientado presumiblemente al idioma urdu, según indica el nombre del repositorio. El modelo se distribuye exclusivamente en formato GGUF cuantizado (Q4_K_M) y está pensado para su uso con llama.cpp y Ollama.
 
 El ajuste fino y la conversión a GGUF se realizaron con Unsloth, una librería que optimiza el entrenamiento y la exportación de modelos Llama. El autor indica que se modificó el comportamiento del token BOS para garantizar la compatibilidad con el formato GGUF. El repositorio tiene un tamaño de 2,0 GB y no registra descargas ni likes en el momento de la consulta, lo que sugiere una publicación muy reciente (creada el 4 de noviembre de 2026) y sin validación comunitaria.
 
@@ -33,7 +33,7 @@ La única innovación técnica documentada es el ajuste del comportamiento del t
 - Razonamiento básico y respuesta a instrucciones, presumiblemente con ajuste específico para urdu (no confirmado).
 - Soporte de plantillas de chat mediante el flag `--jinja` en llama.cpp, lo que permite aplicar el chat template del modelo.
 - Compatibilidad con Ollama mediante el Modelfile incluido en el repositorio.
-- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que sugiere que puede desplegarse en infraestructuras de inferencia compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que sugiere que puede desplegarse en infraestructuras de inferencia compatibles con la API de Hugging Face.
 - No se documentan capacidades de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito (thinking mode).
 - Capacidades multilingües: no disponibles; el nombre sugiere urdu, pero no hay confirmación ni lista de idiomas.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| `appdeveloper512/llama-3b-urdu-ai-GGUF-NEW` | 3,2B | no disponible | no disponible | GGUF (Q4_K_M) | HuggingFace, 0 descargas |
-| Llama-3.2-3B-Instruct (Meta) | 3,2B | 128K | Llama 3.2 Community License | safetensors, GGUF | HuggingFace, ampliamente usado |
-| Qwen2.5-3B-Instruct | 3,1B | 32K | Apache 2.0 | safetensors, GGUF | HuggingFace, muy usado |
-| Gemma-2-2B-it | 2,6B | 8K | Gemma Terms of Use | safetensors, GGUF | HuggingFace, muy usado |
+| `appdeveloper512/llama-3b-urdu-ai-GGUF-NEW` | 3,2B | no disponible | no disponible | GGUF (Q4_K_M) | Hugging Face, 0 descargas |
+| Llama-3.2-3B-Instruct (Meta) | 3,2B | 128K | Llama 3.2 Community License | safetensors, GGUF | Hugging Face, ampliamente usado |
+| Qwen2.5-3B-Instruct | 3,1B | 32K | Apache 2.0 | safetensors, GGUF | Hugging Face, muy usado |
+| Gemma-2-2B-it | 2,6B | 8K | Gemma Terms of Use | safetensors, GGUF | Hugging Face, muy usado |
 
 El modelo comparado carece de información sobre licencia, contexto e idiomas, lo que dificulta una comparación rigurosa. Frente al Llama-3.2-3B-Instruct original, este fine-tune no documenta mejoras medibles y añade incertidumbre sobre la calidad del ajuste. Frente a Qwen2.5-3B-Instruct, este último ofrece licencia Apache 2.0 y contexto de 32K documentado, lo que lo hace más adecuado para producción.
 
@@ -85,7 +85,7 @@ El modelo comparado carece de información sobre licencia, contexto e idiomas, l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/appdeveloper512/llama-3b-urdu-ai-GGUF-NEW
+- Hugging Face: https://huggingface.co/appdeveloper512/llama-3b-urdu-ai-GGUF-NEW
 - Unsloth (librería usada para el fine-tuning y conversión): https://github.com/unslothai/unsloth
 - Llama-3.2-3B-Instruct (modelo base): https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - llama.cpp (runtime recomendado): https://github.com/ggml-org/llama.cpp

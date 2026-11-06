@@ -73,7 +73,7 @@ La comparativa se limita a los modelos Qwen3-8B, ya que no se dispone de informa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gradients-io-tournaments/swe-base-qwen3-8b-continuous
+- Repositorio Hugging Face: https://huggingface.co/gradients-io-tournaments/swe-base-qwen3-8b-continuous
 - Repositorio original (referenciado en la model card): `gradients-io-tournaments/tournament-tourn_e758aac2d861c378_20260824-9b4b7e1a-6a7c-4ab0-bee7-3744b35bddd8-5HWPK9f6` (no se proporciona URL directa)
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Página de Qwen: https://qwen.ai/home

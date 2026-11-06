@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FlixTest es un modelo publicado en HuggingFace por el usuario Huggingbase1baseebasebase bajo el identificador `Huggingbase1baseebasebase/FlixTest`. Se trata de un modelo de aproximadamente 27.320 millones de parametros (27,32 B), segun los metadatos de sus ficheros safetensors, con un repositorio que ocupa 248,8 GB. La model card no aporta informacion sobre arquitectura, procedimiento de entrenamiento, datos utilizados ni resultados de evaluacion, por lo que la ficha que sigue se limita a los datos verificables disponibles y marca explicitamente como "no disponible" todo aquello que no figura en la informacion publicada.
+FlixTest es un modelo publicado en Hugging Face por el usuario Huggingbase1baseebasebase bajo el identificador `Huggingbase1baseebasebase/FlixTest`. Se trata de un modelo de aproximadamente 27.320 millones de parametros (27,32 B), segun los metadatos de sus ficheros safetensors, con un repositorio que ocupa 248,8 GB. La model card no aporta informacion sobre arquitectura, procedimiento de entrenamiento, datos utilizados ni resultados de evaluacion, por lo que la ficha que sigue se limita a los datos verificables disponibles y marca explicitamente como "no disponible" todo aquello que no figura en la informacion publicada.
 
 Las etiquetas del repositorio indican tres caracteristicas relevantes: el modelo se distribuye en formato GGUF, esta orientado a uso conversacional y es compatible con endpoints de inferencia (etiqueta `endpoints_compatible`). No se declara licencia, ni idiomas soportados, ni pipeline de tarea, ni se adjunta documentacion tecnica adicional. El numero de descargas registrado es 1 y el de likes es 0, lo que sugiere que se trata de un repositorio de prueba o recien publicado, sin adopcion comunitaria.
 
@@ -74,7 +74,7 @@ No disponible. No se dispone de informacion suficiente sobre arquitectura, venta
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| FlixTest | 27,32 B | no disponible | no disponible | no disponible | HuggingFace, formatos safetensors y GGUF |
+| FlixTest | 27,32 B | no disponible | no disponible | no disponible | Hugging Face, formatos safetensors y GGUF |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. No se dispone de informacion suficiente sobre arquitectura, venta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Huggingbase1baseebasebase/FlixTest
+- Modelo en Hugging Face: https://huggingface.co/Huggingbase1baseebasebase/FlixTest
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

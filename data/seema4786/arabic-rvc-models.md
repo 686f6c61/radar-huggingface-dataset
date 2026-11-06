@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `seema4786/arabic-rvc-models` es una publicacion de pesos alojada en HuggingFace por el usuario seema4786. Por la nomenclatura del identificador, se trata de un conjunto de modelos de conversion de voz (RVC, *Retrieval-based Voice Conversion*) orientados al idioma arabe, aunque esta interpretacion no viene confirmada por ninguna documentacion del autor. La model card asociada esta practicamente vacia: unicamente contiene la declaracion `license: mit`, sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso.
+El repositorio `seema4786/arabic-rvc-models` es una publicacion de pesos alojada en Hugging Face por el usuario seema4786. Por la nomenclatura del identificador, se trata de un conjunto de modelos de conversion de voz (RVC, *Retrieval-based Voice Conversion*) orientados al idioma arabe, aunque esta interpretacion no viene confirmada por ninguna documentacion del autor. La model card asociada esta practicamente vacia: unicamente contiene la declaracion `license: mit`, sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso.
 
 El repositorio ocupa 0,2 GB y acumula 0 descargas y 0 *likes* en el momento de la consulta, lo que indica que se trata de una publicacion reciente, sin validacion por parte de la comunidad y sin trazabilidad de uso. La fecha de creacion registrada es el 18 de septiembre de 2026 y la ultima actualizacion el mismo dia, apenas cinco minutos despues, lo que sugiere una subida inicial sin mantenimiento posterior.
 
@@ -26,7 +26,7 @@ Su relevancia actual es, por tanto, limitada y condicionada: puede resultar de i
 | Tamano del repositorio | 0,2 GB |
 | Fecha de creacion | 2026-09-18 |
 | Ultima actualizacion | 2026-09-18 |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -86,10 +86,10 @@ No hay datos suficientes para una comparativa cuantitativa. Se ofrece una compar
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|---|
-| seema4786/arabic-rvc-models | Conversion de voz (RVC, inferido) | no disponible | no aplica | MIT | practicamente inexistente (solo `license: mit`) | HuggingFace, 0 descargas |
-| Retrieval-based-Voice-Conversion-WebUI (RVC-Project) | Conversion de voz | no disponible | no aplica | MIT | extensa, con guias y comunidad activa | GitHub y pesos derivados en HuggingFace |
+| seema4786/arabic-rvc-models | Conversion de voz (RVC, inferido) | no disponible | no aplica | MIT | practicamente inexistente (solo `license: mit`) | Hugging Face, 0 descargas |
+| Retrieval-based-Voice-Conversion-WebUI (RVC-Project) | Conversion de voz | no disponible | no aplica | MIT | extensa, con guias y comunidad activa | GitHub y pesos derivados en Hugging Face |
 | so-vits-svc | Conversion de voz / canto | no disponible | no aplica | AGPL-3.0 y otras segun fork | extensa | GitHub |
-| GPT-SoVITS | TTS y conversion de voz | no disponible | no aplica | MIT | extensa | GitHub y HuggingFace |
+| GPT-SoVITS | TTS y conversion de voz | no disponible | no aplica | MIT | extensa | GitHub y Hugging Face |
 
 La diferencia principal no esta en la arquitectura, sino en el nivel de documentacion, mantenimiento y validacion comunitaria: los proyectos de referencia cuentan con guias de uso, ejemplos y comunidades activas, mientras que este repositorio no aporta ninguno de esos elementos.
 
@@ -108,8 +108,8 @@ La diferencia principal no esta en la arquitectura, sino en el nivel de document
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/seema4786/arabic-rvc-models
-- Perfil del autor en HuggingFace: https://huggingface.co/seema4786
+- Repositorio en Hugging Face: https://huggingface.co/seema4786/arabic-rvc-models
+- Perfil del autor en Hugging Face: https://huggingface.co/seema4786
 - Proyecto de referencia de la familia RVC (Retrieval-based-Voice-Conversion-WebUI): https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI
 - Proyecto so-vits-svc: https://github.com/svc-develop-team/so-vits-svc
 - Proyecto GPT-SoVITS: https://github.com/RVC-Boss/GPT-SoVITS

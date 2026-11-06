@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables en la misma categoria (fixtures
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/optimum-intel-internal-testing/tiny-random-minicpmv47-dspark
+- Hugging Face: https://huggingface.co/optimum-intel-internal-testing/tiny-random-minicpmv47-dspark
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este checkpoint.

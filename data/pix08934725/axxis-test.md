@@ -2,7 +2,7 @@
 
 ## Resumen
 
-axxis-test es un modelo de generacion de texto de tipo decoder-only basado en la familia Llama 3.2, publicado por el usuario pix08934725 en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit, es decir, una version de Llama 3.2 3B Instruct cuantizada a 4 bits por Unsloth y despues reentrenada. El modelo resultante tiene 3.212.749.824 parametros y un repositorio de 6,4 GB, lo que indica que los pesos finales se han subido en precision de 16 bits (no en 4 bits), presumiblemente tras fusionar los adaptadores de entrenamiento.
+axxis-test es un modelo de generacion de texto de tipo decoder-only basado en la familia Llama 3.2, publicado por el usuario pix08934725 en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit, es decir, una version de Llama 3.2 3B Instruct cuantizada a 4 bits por Unsloth y despues reentrenada. El modelo resultante tiene 3.212.749.824 parametros y un repositorio de 6,4 GB, lo que indica que los pesos finales se han subido en precision de 16 bits (no en 4 bits), presumiblemente tras fusionar los adaptadores de entrenamiento.
 
 El problema que resuelve es el habitual de este tipo de publicaciones: servir como punto de partida para tareas conversacionales en ingles con un coste de inferencia bajo. Por su tamano, esta pensado para ejecutarse en GPUs de consumo y en entornos con recursos limitados, no para competicion en benchmarks de razonamiento complejo. La relevancia actual viene de la popularidad del flujo de trabajo Unsloth + TRL, que permite a desarrolladores individuales ajustar modelos de 3B en una sola GPU en tiempos reducidos.
 
@@ -30,7 +30,7 @@ El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial s
 
 La arquitectura subyacente es la de Llama 3.2 3B Instruct: un transformer decoder-only con atencion por causalidad, normalizacion RMSNorm pre-normalizacion, activacion SwiGLU en el MLP y embeddings rotatorios (RoPE). El modelo base empleado es una version cuantizada a 4 bits por Unsloth (sufijo bnb-4bit), lo que apunta a un entrenamiento del tipo QLoRA: adaptadores de bajo rango entrenados sobre pesos congelados cuantizados a 4 bits. Los pesos publicados en este repositorio ocupan 6,4 GB, coherente con 3,21 mil millones de parametros en 16 bits, lo que sugiere que los adaptadores se fusionaron con la base antes de subirlos.
 
-La model card unicamente indica que el modelo "fue entrenado 2x mas rapido con Unsloth y la libreria TRL de HuggingFace". No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de RLHF o DPO adicionales, el rango LoRA, la tasa de aprendizaje ni el numero de epocas. Tampoco se documenta ninguna innovacion tecnica propia del autor: todo el merito de optimizacion corresponde al framework Unsloth, que aplica kernels Triton personalizados y reduccion de memoria para acelerar el fine-tuning. No hay informacion sobre decodificacion especulativa, atencion lineal ni variantes hibridas.
+La model card unicamente indica que el modelo "fue entrenado 2x mas rapido con Unsloth y la libreria TRL de Hugging Face". No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de RLHF o DPO adicionales, el rango LoRA, la tasa de aprendizaje ni el numero de epocas. Tampoco se documenta ninguna innovacion tecnica propia del autor: todo el merito de optimizacion corresponde al framework Unsloth, que aplica kernels Triton personalizados y reduccion de memoria para acelerar el fine-tuning. No hay informacion sobre decodificacion especulativa, atencion lineal ni variantes hibridas.
 
 ## Capacidades
 
@@ -66,17 +66,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM en GGUF Q4_K_M: en torno a 2-2,5 GB, apto para GPUs de 4-6 GB o incluso CPU.
 - GPUs recomendadas: NVIDIA A100, H100 o L40S para despliegue en produccion con concurrencia; RTX 4090, RTX 3090 o RTX A6000 para desarrollo y serving de un solo usuario.
 - GPU de consumo: cabe sobradamente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 y superiores. En 4 bits puede ejecutarse incluso en GPUs de 6-8 GB.
-- Opciones de despliegue: transformers (referencia), vLLM, HuggingFace TGI, llama.cpp, Ollama y cualquier runtime compatible con arquitectura Llama. Los pesos GGUF hay que generarlos a partir de los safetensors, ya que el autor no los publica.
+- Opciones de despliegue: transformers (referencia), vLLM, Hugging Face TGI, llama.cpp, Ollama y cualquier runtime compatible con arquitectura Llama. Los pesos GGUF hay que generarlos a partir de los safetensors, ya que el autor no los publica.
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas por el autor. Como referencia cualitativa, un 3B en FP16 sobre una RTX 4090 suele generar decenas de tokens por segundo, pero este dato no procede de la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| axxis-test (este modelo) | 3,21 B | no disponible en la model card (base: 128 000 tokens) | Apache 2.0 | no disponible | HuggingFace, safetensors |
-| Llama 3.2 3B Instruct | 3,21 B | 128 000 tokens | Llama 3.2 Community License | si, publicado por Meta | HuggingFace, pesos oficiales |
-| Qwen2.5 3B Instruct | 3,09 B | 32 768 tokens (hasta 128 000 con configuracion) | Apache 2.0 | si, publicado por Alibaba | HuggingFace, GGUF oficiales |
-| Gemma 2 2B Instruct | 2,61 B | 8 192 tokens | Gemma Terms of Use | si, publicado por Google | HuggingFace |
+| axxis-test (este modelo) | 3,21 B | no disponible en la model card (base: 128 000 tokens) | Apache 2.0 | no disponible | Hugging Face, safetensors |
+| Llama 3.2 3B Instruct | 3,21 B | 128 000 tokens | Llama 3.2 Community License | si, publicado por Meta | Hugging Face, pesos oficiales |
+| Qwen2.5 3B Instruct | 3,09 B | 32 768 tokens (hasta 128 000 con configuracion) | Apache 2.0 | si, publicado por Alibaba | Hugging Face, GGUF oficiales |
+| Gemma 2 2B Instruct | 2,61 B | 8 192 tokens | Gemma Terms of Use | si, publicado por Google | Hugging Face |
 
 La comparacion se limita a parametros, contexto y licencia, porque no existen datos de evaluacion de este fine-tuning concreto. La diferencia principal frente a los pesos oficiales de Llama 3.2 3B Instruct es la licencia: este repositorio declara Apache 2.0, mas permisiva que la Llama Community License, aunque conviene verificar la compatibilidad efectiva con la licencia del modelo base original.
 
@@ -94,9 +94,9 @@ La comparacion se limita a parametros, contexto y licencia, porque no existen da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pix08934725/axxis-test
+- Modelo en Hugging Face: https://huggingface.co/pix08934725/axxis-test
 - Modelo base: https://huggingface.co/unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Llama 3.2 (familia de modelos de Meta): https://huggingface.co/meta-llama
 - Los resultados de la busqueda web realizada no contienen ningun enlace relacionado con este modelo; todas las entradas devueltas corresponden al Mercedes-Benz GLE y no se incluyen por no ser relevantes.

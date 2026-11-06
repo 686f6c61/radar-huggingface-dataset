@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Justinci/mocov3-checkpoint es un repositorio de HuggingFace que se presenta explicitamente como un prototipo de investigacion, no como un modelo entrenado. Se trata de una implementacion de MoCo v3 (Momentum Contrast v3, un metodo de aprendizaje autosupervisado por contraste) orientada a tareas de clasificacion, publicada por el usuario Justinci bajo licencia BSD-3-Clause. El repositorio contiene un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*), pero la propia model card aclara que no es un checkpoint entrenado ni evaluado en ningun benchmark.
+Justinci/mocov3-checkpoint es un repositorio de Hugging Face que se presenta explicitamente como un prototipo de investigacion, no como un modelo entrenado. Se trata de una implementacion de MoCo v3 (Momentum Contrast v3, un metodo de aprendizaje autosupervisado por contraste) orientada a tareas de clasificacion, publicada por el usuario Justinci bajo licencia BSD-3-Clause. El repositorio contiene un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*), pero la propia model card aclara que no es un checkpoint entrenado ni evaluado en ningun benchmark.
 
-El dato mas relevante para un evaluador es su tamano real: el archivo `model.safetensors` declara 33.088 parametros totales, lo que lo situa tres o cuatro ordenes de magnitud por debajo de cualquier modelo de vision o lenguaje utilizable en produccion. El repositorio ocupa 0,0 GB, no registra descargas ni *likes*, y no declara pipeline de HuggingFace ni idiomas soportados. La fecha de creacion y actualizacion indicada es 2026-09-28, con apenas cinco segundos de diferencia entre ambas, lo que sugiere una subida automatizada o de prueba.
+El dato mas relevante para un evaluador es su tamano real: el archivo `model.safetensors` declara 33.088 parametros totales, lo que lo situa tres o cuatro ordenes de magnitud por debajo de cualquier modelo de vision o lenguaje utilizable en produccion. El repositorio ocupa 0,0 GB, no registra descargas ni *likes*, y no declara pipeline de Hugging Face ni idiomas soportados. La fecha de creacion y actualizacion indicada es 2026-09-28, con apenas cinco segundos de diferencia entre ambas, lo que sugiere una subida automatizada o de prueba.
 
 Su relevancia es, por tanto, exclusivamente metodologica: sirve como plantilla reproducible de configuracion, convenciones de nombres y formatos de archivo para quien quiera montar un experimento propio con MoCo v3. No es un artefacto para desplegar, comparar en benchmarks ni integrar en pipelines de produccion. La model card insiste en que cualquier resultado futuro debe documentarse por separado de los valores por defecto aqui incluidos.
 
@@ -22,7 +22,7 @@ Su relevancia es, por tanto, exclusivamente metodologica: sirve como plantilla r
 | Formato de pesos | safetensors (PyTorch); se menciona `model.py` como artefacto principal |
 | Escala declarada | large |
 | Tamano del repositorio | 0,0 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tags | safetensors, mocov3, pytorch, classification, region:us |
 
 ## Arquitectura y entrenamiento
@@ -47,7 +47,7 @@ No hay informacion sobre datos de entrenamiento: no se indica numero de tokens, 
 - Prueba de humo de *tooling* interno: dado su tamano de 33.088 parametros, permite verificar que un cargador de safetensors, un script de entrenamiento o un sistema de registro de experimentos funciona correctamente antes de escalar a modelos reales.
 - Validacion de formatos y convenciones: util para comprobar que la conversion de pesos a safetensors, el versionado de configuraciones y la estructura de carpetas cumplen el estandar esperado por un equipo.
 - Reproduccion de experimentos con control de semillas: la model card recomienda explicitamente evaluar con al menos tres semillas, division etiquetada especifica de la tarea y una linea base de capacidad equivalente; el repositorio aporta la estructura para hacerlo.
-- Docencia y formacion: sirve para ilustrar en un aula como se estructura un repositorio de investigacion en HuggingFace, que diferencia hay entre un checkpoint de inicializacion y uno entrenado, y como documentar limitaciones.
+- Docencia y formacion: sirve para ilustrar en un aula como se estructura un repositorio de investigacion en Hugging Face, que diferencia hay entre un checkpoint de inicializacion y uno entrenado, y como documentar limitaciones.
 - Auditoria de licencias y cumplimiento: con licencia BSD-3-Clause y un unico archivo de pesos, es un caso sencillo para practicar la revision de terminos de licencia y de los terminos de los datos fuente externos que se usen junto al modelo.
 - No es adecuado para atencion al cliente, generacion de codigo, analisis documental, vision por computador en produccion ni ninguna tarea que requiera un modelo entrenado.
 
@@ -91,7 +91,7 @@ Los tres repositorios de tipo "mocov3-checkpoint" comparten estructura y redacci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Justinci/mocov3-checkpoint
+- Repositorio en Hugging Face: https://huggingface.co/Justinci/mocov3-checkpoint
 - austi-nlewi/mocov3-generation: https://huggingface.co/austi-nlewi/mocov3-generation
 - felipesilvason/mocov3-checkpoint: https://huggingface.co/felipesilvason/mocov3-checkpoint
 - Configuraciones MoCo v3 en mmpretrain (OpenMMLab), GitHub: https://github.com/open-mmlab/mmpretrain/blob/main/configs/mocov3/README.md

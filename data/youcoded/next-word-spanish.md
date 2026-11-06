@@ -27,7 +27,7 @@ El modelo nunca se usa solo: el teclado lo mezcla siempre con un paquete de n-gr
 | Peso de mezcla (lambda) | 0,7 (incluido en la cabecera del archivo) |
 | Offset fuera de vocabulario | 0,0 |
 | Dataset de entrenamiento | HuggingFaceFW/fineweb-2 (copia en espanol) |
-| Descargas / likes en HuggingFace | 0 descargas / 1 like |
+| Descargas / likes en Hugging Face | 0 descargas / 1 like |
 | Libreria | `custom` (runner C++ propio, sin libreria de machine learning) |
 
 ## Arquitectura y entrenamiento
@@ -83,8 +83,8 @@ No hay resultados publicados de MMLU, HumanEval, GSM8K ni de otras tareas estand
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `youcoded/next-word-spanish` | ~4,3 M, int8 (4,71 MB) | Ultimas 20 palabras de la oracion | Top 3: 26,27 % (Common Voice), 33,25 % (FineWeb-2), 31,32 % (Tatoeba), mezclado con n-gramas | `odc-by-1.0-and-cc-by-2.0-fr` (other) | Pesos abiertos en HuggingFace |
-| `youcoded/next-word-french` | No disponible en la informacion proporcionada (misma familia y mismas etiquetas declaradas) | No disponible | No disponible | `odc-by-1.0-and-cc-by-2.0-fr` | Pesos abiertos en HuggingFace |
+| `youcoded/next-word-spanish` | ~4,3 M, int8 (4,71 MB) | Ultimas 20 palabras de la oracion | Top 3: 26,27 % (Common Voice), 33,25 % (FineWeb-2), 31,32 % (Tatoeba), mezclado con n-gramas | `odc-by-1.0-and-cc-by-2.0-fr` (other) | Pesos abiertos en Hugging Face |
+| `youcoded/next-word-french` | No disponible en la informacion proporcionada (misma familia y mismas etiquetas declaradas) | No disponible | No disponible | `odc-by-1.0-and-cc-by-2.0-fr` | Pesos abiertos en Hugging Face |
 | Gboard 14.2 (modelo de siguiente palabra) | No publico | No disponible | 4,89 a 19,59 puntos por debajo de este modelo en los tests de la model card | Propietaria | Solo integrado en la app; no descargable |
 
 No se han identificado en la informacion disponible otros modelos abiertos de prediccion de siguiente palabra en espanol con parametros y benchmarks comparables, mas alla de los otros idiomas de la misma familia. Para los modelos de la familia francesa o alemana no se dispone de resultados de evaluacion en la documentacion consultada.
@@ -104,7 +104,7 @@ No se han identificado en la informacion disponible otros modelos abiertos de pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/youcoded/next-word-spanish
+- Modelo en Hugging Face: https://huggingface.co/youcoded/next-word-spanish
 - Aviso legal y licencia (NOTICE.md): https://huggingface.co/youcoded/next-word-spanish/blob/main/NOTICE.md
 - Metodologia de evaluacion (METHODS.md): https://huggingface.co/youcoded/next-word-spanish/blob/main/METHODS.md
 - Codigo, scripts y tests del teclado (rama de desarrollo): https://github.com/itsdestin/swipe-keyboard/tree/feature/179-engine-in-keyboard

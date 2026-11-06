@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NVIDIA NemotronLabs RE-USE es un modelo de mejora universal del habla (universal speech enhancement, USE) desarrollado por NVIDIA, publicado bajo la organizacion nvidia en HuggingFace y replicado en el repositorio DebabrataMondal/NVIDIA-NemotronLabs-RE-USE. Con solo 9,6 millones de parametros, su objetivo es restaurar la calidad de grabaciones de voz degradadas por ruido aditivo, reverberacion, clipping, limitacion de ancho de banda, artefactos de codec, perdida de paquetes y microfonos de baja calidad, preservando la fidelidad de la voz original.
+NVIDIA NemotronLabs RE-USE es un modelo de mejora universal del habla (universal speech enhancement, USE) desarrollado por NVIDIA, publicado bajo la organizacion nvidia en Hugging Face y replicado en el repositorio DebabrataMondal/NVIDIA-NemotronLabs-RE-USE. Con solo 9,6 millones de parametros, su objetivo es restaurar la calidad de grabaciones de voz degradadas por ruido aditivo, reverberacion, clipping, limitacion de ancho de banda, artefactos de codec, perdida de paquetes y microfonos de baja calidad, preservando la fidelidad de la voz original.
 
 El modelo destaca por su caracter multilingue y agnostico al idioma, y por aceptar multiples frecuencias de muestreo de entrada (8, 16, 22,05, 24, 32, 44,1 y 48 kHz). Frente a alternativas mucho mayores como Sidon (250M) o UniPASE (500M), consigue resultados competitivos o superiores en metricas de calidad percibida y de inteligibilidad, lo que lo convierte en una opcion especialmente atractiva para despliegues con recursos limitados.
 
@@ -93,7 +93,7 @@ Resultados reportados en la model card sobre subconjuntos del conjunto de test n
 
 | Modelo | Parametros | Frecuencias soportadas | PESQ (full) | CAcc (full) | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| NemotronLabs RE-USE | 9,6M | 8-48 kHz | 2,57 | 89,17 | OpenMDW-1.1 | HuggingFace (nvidia) |
+| NemotronLabs RE-USE | 9,6M | 8-48 kHz | 2,57 | 89,17 | OpenMDW-1.1 | Hugging Face (nvidia) |
 | Sidon | 250M | no disponible | 1,73 | 84,68 | no disponible | open source (segun model card) |
 | UniPASE | 500M | no disponible | 2,17 | 87,28 | no disponible | open source (segun model card) |
 | UniSE | no disponible | 16 kHz (subconjunto) | 1,46 | 54,82 | no disponible | open source (segun model card) |
@@ -115,7 +115,7 @@ NemotronLabs RE-USE obtiene el mejor PESQ y CAcc del conjunto completo con dos o
 
 ## Enlaces
 
-- Repositorio HuggingFace (copia): https://huggingface.co/DebabrataMondal/NVIDIA-NemotronLabs-RE-USE
+- Repositorio Hugging Face (copia): https://huggingface.co/DebabrataMondal/NVIDIA-NemotronLabs-RE-USE
 - Repositorio oficial: https://huggingface.co/nvidia/NVIDIA-NemotronLabs-RE-USE
 - Variante con preservacion de risa: https://huggingface.co/nvidia/NVIDIA-NemotronLabs-RE-USE-laughter
 - Demo interactiva Gradio: https://huggingface.co/spaces/nvidia/NVIDIA-NemotronLabs-RE-USE

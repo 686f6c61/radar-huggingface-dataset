@@ -62,5 +62,5 @@ No aplica. Este repositorio no es un modelo de IA comparable con otros sistemas 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wiktoriakowalczyk/paper_024791834_3d_scene_understanding
+- Repositorio en Hugging Face: https://huggingface.co/wiktoriakowalczyk/paper_024791834_3d_scene_understanding
 - No se han encontrado otros enlaces relevantes en la busqueda web (el repositorio no aparece en resultados publicos).

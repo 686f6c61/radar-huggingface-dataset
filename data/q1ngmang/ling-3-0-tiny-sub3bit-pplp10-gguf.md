@@ -77,7 +77,7 @@ La comparativa se basa en características generales, no en rendimiento medido. 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/Q1ngMang/Ling-3.0-tiny-sub3bit-PPLp10-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/Q1ngMang/Ling-3.0-tiny-sub3bit-PPLp10-GGUF
 - Página del proyecto en SourceForge: https://sourceforge.net/projects/ling-3-0-tiny/
 - Cuantizaciones GGUF de bartowski: https://huggingface.co/bartowski/Ling-3.0-tiny-GGUF
 - Documentación oficial del modelo Ling: https://developer.ant-ling.com/en/docs/models/ling/

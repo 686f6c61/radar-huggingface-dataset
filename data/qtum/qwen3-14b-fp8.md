@@ -75,7 +75,7 @@ Las tres variantes FP8 son equivalentes en arquitectura y tamaño; la diferencia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qtum/Qwen3-14B-FP8
+- Repositorio Hugging Face: https://huggingface.co/qtum/Qwen3-14B-FP8
 - Modelo base Qwen/Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Variante oficial FP8: https://huggingface.co/Qwen/Qwen3-14B-FP8
 - Variante NVIDIA FP8: https://huggingface.co/nvidia/Qwen3-14B-FP8

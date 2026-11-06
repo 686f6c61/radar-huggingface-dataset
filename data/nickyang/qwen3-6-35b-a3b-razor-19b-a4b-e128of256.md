@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Parametros activos | Expertos por capa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (Razor 19B-A4B-E128of256) | 19.4B | ~4.0B | 128 de 256 (top-k 8) | Apache-2.0 | publico en HuggingFace |
-| Qwen/Qwen3.6-35B-A3B (base) | 35B | ~3B | 256 de 256 (top-k 8) | Apache-2.0 | publico en HuggingFace |
-| Qwen3.6-35B-A3B-Razor-28B-A4B-E192of256 | no disponible en detalle en esta informacion | ~4.0B (segun nomenclatura del nombre) | 192 de 256 | Apache-2.0 | publico en HuggingFace |
+| Este checkpoint (Razor 19B-A4B-E128of256) | 19.4B | ~4.0B | 128 de 256 (top-k 8) | Apache-2.0 | publico en Hugging Face |
+| Qwen/Qwen3.6-35B-A3B (base) | 35B | ~3B | 256 de 256 (top-k 8) | Apache-2.0 | publico en Hugging Face |
+| Qwen3.6-35B-A3B-Razor-28B-A4B-E192of256 | no disponible en detalle en esta informacion | ~4.0B (segun nomenclatura del nombre) | 192 de 256 | Apache-2.0 | publico en Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estos tres checkpoints en la informacion proporcionada, por lo que la comparativa se limita a parametros, presupuesto de expertos y licencia. No se han identificado en la documentacion otros modelos de la misma categoria con los que comparar de forma fiable.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparado entre estos tres checkpoints en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nickyang/Qwen3.6-35B-A3B-Razor-19B-A4B-E128of256
+- Modelo en Hugging Face: https://huggingface.co/Nickyang/Qwen3.6-35B-A3B-Razor-19B-A4B-E128of256
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Checkpoint alternativo (192 de 256 expertos): https://huggingface.co/Nickyang/Qwen3.6-35B-A3B-Razor-28B-A4B-E192of256
 - Paper de RAZOR: https://arxiv.org/abs/2609.30465

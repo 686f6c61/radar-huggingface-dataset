@@ -89,7 +89,7 @@ La comparativa muestra que la única diferencia entre esta conversión y las alt
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomic-Germ/Qwen3.8-Distilled-4B-NPU2
+- Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/Qwen3.8-Distilled-4B-NPU2
 - Modelo completo de precisión completa: https://huggingface.co/Ma7ee7/Qwen3.8_4B_Distilled
 - Conversión GGUF del mismo modelo: https://huggingface.co/Ma7ee7/Qwen3.8_4B_Distilled_GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`distilhubert-finetuned-gtzan-hlv` es un modelo de clasificación de audio obtenido mediante fine-tuning supervisado de `ntu-spml/distilhubert` sobre el conjunto de datos GTZAN, que contiene fragmentos musicales etiquetados por género. Lo publica el usuario `ngotruong09` en HuggingFace y su propósito concreto es la clasificación automática de géneros musicales (music genre classification) a partir de audio en bruto. Con 23,69 millones de parámetros, es un modelo compacto pensado para inferencia ligera y despliegue en entornos con recursos limitados.
+`distilhubert-finetuned-gtzan-hlv` es un modelo de clasificación de audio obtenido mediante fine-tuning supervisado de `ntu-spml/distilhubert` sobre el conjunto de datos GTZAN, que contiene fragmentos musicales etiquetados por género. Lo publica el usuario `ngotruong09` en Hugging Face y su propósito concreto es la clasificación automática de géneros musicales (music genre classification) a partir de audio en bruto. Con 23,69 millones de parámetros, es un modelo compacto pensado para inferencia ligera y despliegue en entornos con recursos limitados.
 
-El modelo parte de DistilHuBERT, una versión destilada de HuBERT (Hidden-Unit BERT for speech representation learning) que conserva la arquitectura transformer del modelo original pero reduce el número de capas y parámetros. El fine-tuning se realizó con el `Trainer` de HuggingFace y los hiperparámetros quedan documentados en la model card: 10 épocas, learning rate 5e-5, batch de 8 y precisión mixta nativa (AMP). El resultado declarado es una accuracy de 0,85 sobre el conjunto de evaluación de GTZAN y una pérdida de validación de 0,6077.
+El modelo parte de DistilHuBERT, una versión destilada de HuBERT (Hidden-Unit BERT for speech representation learning) que conserva la arquitectura transformer del modelo original pero reduce el número de capas y parámetros. El fine-tuning se realizó con el `Trainer` de Hugging Face y los hiperparámetros quedan documentados en la model card: 10 épocas, learning rate 5e-5, batch de 8 y precisión mixta nativa (AMP). El resultado declarado es una accuracy de 0,85 sobre el conjunto de evaluación de GTZAN y una pérdida de validación de 0,6077.
 
 Es relevante ahora porque representa un ejemplo típico de modelo pequeño y especializado, con licencia Apache 2.0, que puede ejecutarse en CPU o en GPU de consumo para tareas de etiquetado musical, indexación de catálogos o sistemas de recomendación. No obstante, la información publicada es escasa: la model card está generada automáticamente y contiene secciones marcadas como "More information needed", por lo que muchos datos técnicos no están disponibles.
 
@@ -33,7 +33,7 @@ Los detalles del entrenamiento documentados son: learning rate 5e-5, `train_batc
 - Procesamiento de audio en bruto mediante el extractor de características asociado a DistilHuBERT.
 - Inferencia ligera: con 23,69 M de parámetros, el modelo puede ejecutarse en CPU y en GPU de consumo.
 - Integración con la librería `transformers` mediante el pipeline `audio-classification`.
-- Compatible con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatible con endpoints de Hugging Face (tag `endpoints_compatible`).
 - No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un clasificador, no un modelo generativo.
 - No dispone de capacidades multilingües ni de texto; su dominio es exclusivamente acústico-musical.
 - No se documentan capacidades de visión, audio a texto, thinking mode ni otras modalidades.
@@ -79,16 +79,16 @@ No se han publicado otros resultados de benchmarks en la información disponible
 - VRAM estimada para inferencia: inferior a 1 GB en fp32 (23,69 M de parámetros, aproximadamente 95 MB de pesos) más el overhead de activaciones, que depende de la longitud del audio de entrada.
 - GPU recomendadas: cualquier GPU moderna es suficiente; una RTX 4090, A100 o H100 queda sobredimensionada para este modelo. Una GPU de consumo básica (GTX 1650, RTX 3050) o incluso CPU es suficiente para inferencia en tiempo real o por lotes.
 - Cabe en cualquier GPU de consumo y en la mayoría de entornos CPU; el cuello de botella será la extracción de características del audio, no el modelo.
-- Opciones de despliegue: `transformers` con el pipeline `audio-classification`, HuggingFace Inference Endpoints (tag `endpoints_compatible`) y exportación a ONNX si se desea optimizar la latencia en CPU. No se documenta soporte específico para vLLM, llama.cpp, Ollama o TGI, que están orientados a modelos generativos de texto.
+- Opciones de despliegue: `transformers` con el pipeline `audio-classification`, Hugging Face Inference Endpoints (tag `endpoints_compatible`) y exportación a ONNX si se desea optimizar la latencia en CPU. No se documenta soporte específico para vLLM, llama.cpp, Ollama o TGI, que están orientados a modelos generativos de texto.
 - Latencia y throughput estimados: no disponibles en la información proporcionada. Dado el tamaño del modelo, se espera una latencia de milisegundos por fragmento en GPU y de decenas a cientos de milisegundos en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Tarea | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `ngotruong09/distilhubert-finetuned-gtzan-hlv` | 23,69 M | Clasificación de género (GTZAN) | Audio; longitud no documentada | Accuracy 0,85 en GTZAN (declarado, no verificado) | Apache 2.0 | HuggingFace |
-| `ntu-spml/distilhubert` | no disponible en la información | Representación de audio (modelo base) | Audio | No aplica (modelo base, sin cabeza de clasificación) | no disponible en la información | HuggingFace |
-| `facebook/hubert-base-ls960` | no disponible en la información | Representación de audio / ASR | Audio | No disponible en la información | no disponible en la información | HuggingFace |
+| `ngotruong09/distilhubert-finetuned-gtzan-hlv` | 23,69 M | Clasificación de género (GTZAN) | Audio; longitud no documentada | Accuracy 0,85 en GTZAN (declarado, no verificado) | Apache 2.0 | Hugging Face |
+| `ntu-spml/distilhubert` | no disponible en la información | Representación de audio (modelo base) | Audio | No aplica (modelo base, sin cabeza de clasificación) | no disponible en la información | Hugging Face |
+| `facebook/hubert-base-ls960` | no disponible en la información | Representación de audio / ASR | Audio | No disponible en la información | no disponible en la información | Hugging Face |
 
 No se dispone de datos suficientes en la información proporcionada para comparar con alternativas específicas de clasificación de género musical (por ejemplo, otros fine-tunings de HuBERT o Wav2Vec2 sobre GTZAN). Los valores de parámetros y rendimiento de los modelos comparables no están documentados en la información disponible.
 
@@ -106,9 +106,9 @@ No se dispone de datos suficientes en la información proporcionada para compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ngotruong09/distilhubert-finetuned-gtzan-hlv
+- Modelo en Hugging Face: https://huggingface.co/ngotruong09/distilhubert-finetuned-gtzan-hlv
 - Modelo base: https://huggingface.co/ntu-spml/distilhubert
-- Dataset GTZAN en HuggingFace: https://huggingface.co/datasets/marsyas/gtzan
+- Dataset GTZAN en Hugging Face: https://huggingface.co/datasets/marsyas/gtzan
 - Documentación de Transformers para audio classification: https://huggingface.co/docs/transformers/tasks/audio_classification
 - Paper de HuBERT: https://arxiv.org/abs/2106.07447
 - Paper de DistilHuBERT: https://arxiv.org/abs/2110.01900

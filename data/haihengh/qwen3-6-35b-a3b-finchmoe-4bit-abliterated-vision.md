@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento entre est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/haihengh/Qwen3.6-35B-A3B-finchmoe-4bit-abliterated-vision
+- Repositorio en Hugging Face: https://huggingface.co/haihengh/Qwen3.6-35B-A3B-finchmoe-4bit-abliterated-vision
 - Modelo base (abliterated): https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated
 - Hermano de texto 4-bit (referencia de calidad y throughput): https://huggingface.co/haihengh/Qwen3.6-35B-A3B-finchmoe-4bit-abliterated
 - Motor FinchMoE: https://github.com/haihengh/finchMoE

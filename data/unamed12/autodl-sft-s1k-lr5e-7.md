@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`unamed12/autodl-sft-s1k-lr5e-7` es un ajuste fino supervisado (SFT) completo del modelo base Qwen/Qwen3-8B, publicado por el usuario `unamed12` en HuggingFace. Se trata de un experimento de entrenamiento orientado a razonamiento, generado con LLaMA-Factory (etiquetas `llama-factory` y `full`, que indican ajuste fino de todos los parametros y no una adaptacion de bajo rango). El repositorio contiene pesos en safetensors de 8.190.735.360 parametros (8,19 mil millones) y ocupa 16,4 GB, coherente con un guardado en precision de 16 bits. El acceso esta restringido: es un modelo gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+`unamed12/autodl-sft-s1k-lr5e-7` es un ajuste fino supervisado (SFT) completo del modelo base Qwen/Qwen3-8B, publicado por el usuario `unamed12` en Hugging Face. Se trata de un experimento de entrenamiento orientado a razonamiento, generado con LLaMA-Factory (etiquetas `llama-factory` y `full`, que indican ajuste fino de todos los parametros y no una adaptacion de bajo rango). El repositorio contiene pesos en safetensors de 8.190.735.360 parametros (8,19 mil millones) y ocupa 16,4 GB, coherente con un guardado en precision de 16 bits. El acceso esta restringido: es un modelo gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 
 El nombre del modelo resume sus hiperparametros: `sft` (supervised fine-tuning), `s1k` (presumiblemente 1.000 muestras de entrenamiento), `lr5e-7` (tasa de aprendizaje de 5e-7). El unico run declarado en el model-index se llama `reasoning-sft_cbhint_s1k_bs16_lr5e-7_col4096`, lo que anade un tamano de lote de 16 y un `cutoff_len` de 4096 tokens. Es, por tanto, un artefacto de investigacion con un volumen de datos muy reducido, no un modelo instructivo de proposito general listo para produccion.
 
@@ -89,14 +89,14 @@ La comparacion de rendimiento no es posible: no hay ninguna evaluacion publicada
 - Degradacion por olvido catastrofico: un ajuste completo sobre un modelo de 8B con un dataset minimo tiende a deteriorar capacidades generales de codigo, matematicas y multilingue. No hay evaluacion que confirme o descarte este efecto.
 - Limitacion de contexto: el entrenamiento con `col4096` sugiere que el modelo no fue ajustado mas alla de 4.096 tokens. Aunque la arquitectura base soporte 32.768 o 131.072, el comportamiento mas alla del cutoff de entrenamiento no esta garantizado.
 - Idiomas: no declarados en la ficha. Si los datos de SFT eran mayoritariamente en un idioma, el rendimiento en otros puede haberse degradado.
-- Licencia: etiquetada como `other`, con acceso restringido que exige aceptar condiciones en HuggingFace. Los terminos concretos no se detallan en la informacion disponible, por lo que no puede confirmarse la viabilidad de uso comercial. Ademas, la licencia del modelo base Qwen3-8B (Apache 2.0) impone sus propias condiciones.
+- Licencia: etiquetada como `other`, con acceso restringido que exige aceptar condiciones en Hugging Face. Los terminos concretos no se detallan en la informacion disponible, por lo que no puede confirmarse la viabilidad de uso comercial. Ademas, la licencia del modelo base Qwen3-8B (Apache 2.0) impone sus propias condiciones.
 - Trazabilidad nula: no hay paper, blog, dataset publicado ni descripcion del proceso de entrenamiento. El unico dato verificable es el numero de parametros del safetensors.
 - Estado del repositorio: cero descargas y cero likes, creado y actualizado el mismo dia. No hay evidencia de validacion por terceros.
 - Produccion: no se recomienda su uso en sistemas productivos sin una evaluacion exhaustiva previa y sin resolver las preguntas de licencia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unamed12/autodl-sft-s1k-lr5e-7
+- Modelo en Hugging Face: https://huggingface.co/unamed12/autodl-sft-s1k-lr5e-7
 - Checkpoints relacionados del mismo autor:
   - https://huggingface.co/unamed12/autodl-sft-col4096-lr3_75e-7
   - https://huggingface.co/unamed12/autodl-sft-col6144

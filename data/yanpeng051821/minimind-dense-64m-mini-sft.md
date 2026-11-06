@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMind Dense 64M Mini SFT es un checkpoint de investigación publicado por el usuario yanpeng051821 en HuggingFace. Se trata de un ajuste fino supervisado (SFT) de parámetros completos sobre su propio modelo preentrenado MiniMind mini, entrenado desde inicialización aleatoria siguiendo la arquitectura y el tokenizador de la referencia MiniMind. Con 63.912.192 parámetros únicos (aproximadamente 63,91M), es un modelo denso decoder-only de escala muy reducida, pensado como experimento educativo y de investigación, no como asistente fiable.
+MiniMind Dense 64M Mini SFT es un checkpoint de investigación publicado por el usuario yanpeng051821 en Hugging Face. Se trata de un ajuste fino supervisado (SFT) de parámetros completos sobre su propio modelo preentrenado MiniMind mini, entrenado desde inicialización aleatoria siguiendo la arquitectura y el tokenizador de la referencia MiniMind. Con 63.912.192 parámetros únicos (aproximadamente 63,91M), es un modelo denso decoder-only de escala muy reducida, pensado como experimento educativo y de investigación, no como asistente fiable.
 
 El experimento plantea si la supervisión únicamente sobre turnos del asistente puede convertir un modelo de continuación de texto en un mejor asistente bajo condiciones fijas. Según la propia model card, el flujo de ingeniería se completó, pero el objetivo de mejora de tareas no se alcanzó: la NLL de validación y parte del comportamiento de parada mejoraron, mientras que la finalización de tareas no superó a su propia línea base preentrenada en el conjunto de diagnóstico fijo. La model card preserva explícitamente este resultado negativo.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MiniMind Dense 64M Mini SFT (este) | 63,91M | 768 | zh | no disponible | safetensors FP32, runtime propio | HuggingFace, 0 descargas |
-| MiniMind Dense 64M Mini Pretrain (base del autor) | no disponible en la información | no disponible | zh | no disponible | safetensors | HuggingFace |
-| MiniMind oficial (jingyaogong/minimind) | no disponible en la información | no disponible | zh | no disponible | no disponible | Repositorio GitHub y HuggingFace |
+| MiniMind Dense 64M Mini SFT (este) | 63,91M | 768 | zh | no disponible | safetensors FP32, runtime propio | Hugging Face, 0 descargas |
+| MiniMind Dense 64M Mini Pretrain (base del autor) | no disponible en la información | no disponible | zh | no disponible | safetensors | Hugging Face |
+| MiniMind oficial (jingyaogong/minimind) | no disponible en la información | no disponible | zh | no disponible | no disponible | Repositorio GitHub y Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yanpeng051821/minimind-dense-64m-mini-sft
+- Modelo en Hugging Face: https://huggingface.co/yanpeng051821/minimind-dense-64m-mini-sft
 - Modelo base preentrenado: https://huggingface.co/yanpeng051821/minimind-dense-64m-mini-pretrain
 - Dataset utilizado: https://huggingface.co/datasets/jingyaogong/minimind_dataset/tree/312afb4f76391145c6902f765bb51691c09a12f5
 - Referencia de arquitectura y tokenizador (commit f659b557): https://github.com/jingyaogong/minimind/tree/f659b55761b754d306bd140573493a6543cafd7f

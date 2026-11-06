@@ -4,7 +4,7 @@
 
 Pangu-Weather es un modelo global de predicción meteorológica a medio plazo desarrollado originalmente por Huawei Cloud y reproducido aquí por el grupo OneScience. Su objetivo es predecir variables de superficie y variables atmosféricas en múltiples niveles de presión de forma rápida y precisa, superando a los métodos numéricos tradicionales en velocidad y, según los autores, en precisión para plazos de hasta una semana. Esta versión de OneScience es una implementación en PyTorch del modelo original, entrenada con datos ERA5 desde 1979 hasta 2025, y proporciona pesos que, según la model card, superan a los pesos ONNX oficiales en el plazo de 6 horas de predicción.
 
-La arquitectura se basa en un Transformer 3D específico para la Tierra (3D Earth-Specific Transformer), diseñado para capturar las dependencias espaciales y temporales de los campos meteorológicos. El modelo está pensado para pronósticos a corto y medio plazo (hasta 10 días), y es relevante ahora porque representa una alternativa eficiente a los modelos físicos tradicionales, con un coste computacional mucho menor y una precisión competitiva. La presente ficha se basa exclusivamente en la información publicada en la model card de HuggingFace, que no incluye detalles cuantitativos sobre parámetros, contexto o benchmarks.
+La arquitectura se basa en un Transformer 3D específico para la Tierra (3D Earth-Specific Transformer), diseñado para capturar las dependencias espaciales y temporales de los campos meteorológicos. El modelo está pensado para pronósticos a corto y medio plazo (hasta 10 días), y es relevante ahora porque representa una alternativa eficiente a los modelos físicos tradicionales, con un coste computacional mucho menor y una precisión competitiva. La presente ficha se basa exclusivamente en la información publicada en la model card de Hugging Face, que no incluye detalles cuantitativos sobre parámetros, contexto o benchmarks.
 
 ## Especificaciones técnicas
 
@@ -74,7 +74,7 @@ No se dispone de datos comparativos en la información proporcionada. El modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/Pangu_Weather
+- Hugging Face: https://huggingface.co/OneScience-Group/Pangu_Weather
 - Paper original: https://www.nature.com/articles/s41586-023-06185-3
 - Repositorio OneScience en GitHub: https://github.com/onescience-ai/OneScience
 - Repositorio de skills en GitHub: https://github.com/onescience-ai/oneskills

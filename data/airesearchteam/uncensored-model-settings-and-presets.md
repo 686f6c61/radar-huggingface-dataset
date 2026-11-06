@@ -67,5 +67,5 @@ No disponible. Este repositorio no es un modelo, por lo que no se puede comparar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/airesearchteam/Uncensored-Model-Settings-and-Presets
+- Repositorio en Hugging Face: https://huggingface.co/airesearchteam/Uncensored-Model-Settings-and-Presets
 - Página de comparativa de generadores (enlace de la model card): https://top-ai-nsfw.pages.dev

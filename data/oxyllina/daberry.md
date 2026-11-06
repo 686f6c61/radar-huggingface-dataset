@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DaBerry es un modelo publicado en HuggingFace por el usuario oxyllina bajo el identificador `oxyllina/DaBerry`. Se trata de un repositorio de 3,1 GB de tamano, con acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargar los pesos. El repositorio no declara pipeline, licencia, idiomas ni tarjeta de modelo con informacion tecnica, por lo que la mayor parte de las especificaciones no estan disponibles a partir de la informacion proporcionada.
+DaBerry es un modelo publicado en Hugging Face por el usuario oxyllina bajo el identificador `oxyllina/DaBerry`. Se trata de un repositorio de 3,1 GB de tamano, con acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargar los pesos. El repositorio no declara pipeline, licencia, idiomas ni tarjeta de modelo con informacion tecnica, por lo que la mayor parte de las especificaciones no estan disponibles a partir de la informacion proporcionada.
 
 Por el tamano del repositorio (3,1 GB) es plausible que se trate de un modelo de parametros en el rango de miles de millones almacenado en precision de 16 bits, o de un modelo mayor cuantizado, pero esta estimacion no puede confirmarse sin acceso a los archivos de pesos y a su configuracion. La ausencia de metadatos impide verificar arquitectura, contexto, datos de entrenamiento o rendimiento.
 
@@ -34,7 +34,7 @@ El unico dato estructural verificable es el tamano del repositorio (3,1 GB) y la
 - No consta soporte de agentes ni de razonamiento multi-paso.
 - No consta soporte multilingue declarado.
 - No consta modo de razonamiento (thinking mode), vision, audio ni ninguna otra capacidad especial.
-- No consta pipeline declarado en HuggingFace (text-generation, image-text-to-text, etc.).
+- No consta pipeline declarado en Hugging Face (text-generation, image-text-to-text, etc.).
 
 ## Casos de uso
 
@@ -44,7 +44,7 @@ No es posible recomendar casos de uso concretos sin informacion verificable sobr
 - Analisis de pesos: inspeccionar los archivos del repositorio (3,1 GB) para identificar el formato real (safetensors, GGUF, PyTorch binario) y el numero de parametros.
 - Pruebas de inferencia local: si el modelo resulta ser de un tamano manejable, desplegarlo en una GPU de consumo para medir latencia y calidad en tareas de generacion de texto.
 - Comparacion interna: usar el modelo como referencia en experimentos propios frente a alternativas con licencia clara, siempre que la licencia de DaBerry lo permita.
-- Fines educativos: estudiar la estructura de un repositorio gated y el flujo de aceptacion de condiciones en HuggingFace.
+- Fines educativos: estudiar la estructura de un repositorio gated y el flujo de aceptacion de condiciones en Hugging Face.
 - Investigacion sobre modelos sin documentacion: analizar el impacto de la ausencia de metadatos en la reproducibilidad y en la evaluacion de riesgos.
 
 En ningun caso se recomienda su uso en produccion, atencion al cliente, generacion de codigo en pipelines de CI/CD ni aplicaciones comerciales sin antes verificar licencia, capacidades y calidad mediante evaluacion propia.
@@ -67,7 +67,7 @@ No es posible establecer una comparativa fiable porque se desconocen parametros,
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|
-| oxyllina/DaBerry | no disponible | no disponible | no disponible | no | gated en HuggingFace |
+| oxyllina/DaBerry | no disponible | no disponible | no disponible | no | gated en Hugging Face |
 | Alternativa de referencia 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa de referencia 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -77,7 +77,7 @@ No se dispone de informacion suficiente para identificar modelos comparables de 
 
 - Ausencia total de tarjeta de modelo: no hay descripcion, arquitectura, datos de entrenamiento ni uso previsto.
 - Licencia no declarada: no se puede determinar si el uso comercial esta permitido; en la practica, esto bloquea cualquier despliegue en produccion.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion y puede limitar la reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion y puede limitar la reproducibilidad.
 - Idiomas no declarados: se desconoce si el modelo soporta castellano u otros idiomas con calidad suficiente.
 - Sin benchmarks: no hay evidencia de rendimiento en MMLU, HumanEval, GSM8K ni otras tareas estandar.
 - Riesgo de sesgos y alucinacion: no evaluable sin documentacion ni pruebas; debe asumirse un riesgo alto por defecto.
@@ -87,5 +87,5 @@ No se dispone de informacion suficiente para identificar modelos comparables de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/oxyllina/DaBerry
+- Repositorio en Hugging Face: https://huggingface.co/oxyllina/DaBerry
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados al modelo.

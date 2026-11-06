@@ -67,8 +67,8 @@ El único dato cuantitativo de rendimiento presente en la model card es la verif
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chatterbox-loom (esta ficha) | 670.392.202 | no disponible | no disponible (verificacion de fidelidad 2,5e-05) | MIT | HuggingFace, formato GGUF para loom.cpp |
-| ResembleAI/chatterbox (modelo base) | 670.392.202 (mismos pesos) | no disponible | no disponible en la informacion proporcionada | MIT | HuggingFace, formato original |
+| chatterbox-loom (esta ficha) | 670.392.202 | no disponible | no disponible (verificacion de fidelidad 2,5e-05) | MIT | Hugging Face, formato GGUF para loom.cpp |
+| ResembleAI/chatterbox (modelo base) | 670.392.202 (mismos pesos) | no disponible | no disponible en la informacion proporcionada | MIT | Hugging Face, formato original |
 | Otros modelos TTS de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables de otros modelos TTS comparables en la informacion proporcionada, por lo que no se incluyen alternativas adicionales para no introducir cifras no confirmadas.
@@ -87,7 +87,7 @@ No se dispone de datos verificables de otros modelos TTS comparables en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/chatterbox-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/chatterbox-loom
 - Modelo base: https://huggingface.co/ResembleAI/chatterbox
 - Repositorio de loom.cpp: https://github.com/loom-ai-org/loom.cpp
 - Repositorio de loom-exporter: https://github.com/loom-ai-org/loom-exporter

@@ -6,7 +6,7 @@ Kimi K3 es un modelo de lenguaje multimodal nativo de tipo agente, publicado con
 
 La arquitectura introduce dos innovaciones propias: Kimi Delta Attention (KDA) y Attention Residuals (AttnRes), combinadas con un esquema Stable LatentMoE que activa 16 de 896 expertos por token. El modelo incorpora vision nativa (texto, imagenes y video) y una ventana de contexto de un millon de tokens, lo que lo hace adecuado para tareas que requieren manejar repositorios completos, documentos extensos o sesiones de ingenieria prolongadas.
 
-El repositorio de HuggingFace `Indianplays/Super1` es una publicacion de terceros (usuario Indianplays) que redistribuye los pesos de Kimi K3 en formato safetensors con cuantizacion de 8 bits mediante `compressed-tensors`. El tamano del repositorio es de 1561 GB y el pipeline declarado es `image-text-to-text`. La licencia es la Kimi K3 License (etiquetada como `other`), no una licencia permisiva estandar.
+El repositorio de Hugging Face `Indianplays/Super1` es una publicacion de terceros (usuario Indianplays) que redistribuye los pesos de Kimi K3 en formato safetensors con cuantizacion de 8 bits mediante `compressed-tensors`. El tamano del repositorio es de 1561 GB y el pipeline declarado es `image-text-to-text`. La licencia es la Kimi K3 License (etiquetada como `other`), no una licencia permisiva estandar.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ La informacion proporcionada solo permite comparar con Kimi K2 como predecesor d
 
 ## Limitaciones y advertencias
 
-- La publicacion en HuggingFace es de un tercero (`Indianplays`), no del autor original Moonshot AI; conviene verificar la integridad de los pesos frente al repositorio oficial.
+- La publicacion en Hugging Face es de un tercero (`Indianplays`), no del autor original Moonshot AI; conviene verificar la integridad de los pesos frente al repositorio oficial.
 - La licencia Kimi K3 License no es una licencia permisiva estandar; es necesario revisar sus terminos antes de cualquier uso comercial.
 - El modelo tiene 2,8T parametros y un repositorio de 1561 GB, lo que lo hace inaccesible para la mayoria de entornos de investigacion y desarrollo.
 - No se dispone de informacion sobre sesgos, tasas de alucinacion ni evaluaciones de seguridad en la informacion proporcionada.
@@ -84,8 +84,8 @@ La informacion proporcionada solo permite comparar con Kimi K2 como predecesor d
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta publicacion: https://huggingface.co/Indianplays/Super1
-- Organizacion oficial en HuggingFace: https://huggingface.co/moonshotai
+- Repositorio Hugging Face de esta publicacion: https://huggingface.co/Indianplays/Super1
+- Organizacion oficial en Hugging Face: https://huggingface.co/moonshotai
 - Chat oficial: https://www.kimi.com
 - Web de Moonshot AI: https://www.moonshot.ai
 - Blog tecnico: https://www.kimi.com/blog/kimi-k3

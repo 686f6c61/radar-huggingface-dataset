@@ -23,7 +23,7 @@ El repositorio ocupa aproximadamente 0,2 GB e incluye los ficheros model.bin, co
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base quickmt/quickmt-ar-en en la documentación proporcionada; los tags y el pipeline de HuggingFace lo clasifican como modelo de traducción automática. El artefacto distribuido aquí no es un entrenamiento nuevo, sino una conversión de formato: los pesos se han recuantizado a int8 fila a fila para cada matriz bidimensional, replicando el esquema de cuantización de ModelSpec de CTranslate2, con fecha de conversión 26.10.2026.
+No se dispone de información sobre la arquitectura del modelo base quickmt/quickmt-ar-en en la documentación proporcionada; los tags y el pipeline de Hugging Face lo clasifican como modelo de traducción automática. El artefacto distribuido aquí no es un entrenamiento nuevo, sino una conversión de formato: los pesos se han recuantizado a int8 fila a fila para cada matriz bidimensional, replicando el esquema de cuantización de ModelSpec de CTranslate2, con fecha de conversión 26.10.2026.
 
 El paquete incluye dos tokenizadores SentencePiece independientes (origen y destino), lo que es habitual en sistemas de traducción neuronal con vocabularios separados por idioma. No hay datos públicos sobre el número de tokens de entrenamiento, la composición del corpus, el uso de RLHF/DPO ni innovaciones técnicas del modelo original.
 
@@ -73,7 +73,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/value-productions/quickmt-ar-en-int8
+- Modelo en Hugging Face: https://huggingface.co/value-productions/quickmt-ar-en-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-ar-en
 - CTranslate2 (repositorio): https://github.com/OpenNMT/CTranslate2
 - Aplicación Yaku Translate: no disponible (no se proporciona URL en la información)

@@ -82,8 +82,8 @@ No se dispone de datos de benchmarks verificables que permitan comparar esta cua
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kolibri-1-Q3_K_S-GGUF (esta ficha) | no disponible | 262.144 nativos; probado localmente a 4.096 | Sin benchmarks; validación funcional mínima | Apache-2.0 | GGUF v3 en HuggingFace, requiere llama.cpp parcheado |
-| Aleph-Alpha/Kolibri-1-BF16 (modelo base) | no disponible | 262.144 nativos; validado hasta 1.048.576 | Benchmarks del proveedor no incluidos en la informacion disponible | Apache-2.0 | Pesos BF16 en HuggingFace |
+| Kolibri-1-Q3_K_S-GGUF (esta ficha) | no disponible | 262.144 nativos; probado localmente a 4.096 | Sin benchmarks; validación funcional mínima | Apache-2.0 | GGUF v3 en Hugging Face, requiere llama.cpp parcheado |
+| Aleph-Alpha/Kolibri-1-BF16 (modelo base) | no disponible | 262.144 nativos; validado hasta 1.048.576 | Benchmarks del proveedor no incluidos en la informacion disponible | Apache-2.0 | Pesos BF16 en Hugging Face |
 | Otros MoE abiertos de contexto largo | no disponible | no disponible | no disponible | no disponible | No se dispone de datos contrastados en la información proporcionada |
 
 ## Limitaciones y advertencias

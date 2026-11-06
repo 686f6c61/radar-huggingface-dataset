@@ -64,7 +64,7 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Aslaneymen/paper_010440930_few_shot_multimodal
+- Repositorio en Hugging Face: https://huggingface.co/Aslaneymen/paper_010440930_few_shot_multimodal
 - Paper relacionado sobre few-shot multimodal (referencia externa): https://arxiv.org/pdf/2508.04746
 - Benchmark FewMMBench (referencia externa): https://arxiv.org/abs/2602.21854
 - Artículo sobre few-shot learning multimodal (referencia externa): https://ieeexplore.ieee.org/document/10981794/

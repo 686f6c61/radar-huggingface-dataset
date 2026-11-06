@@ -59,7 +59,7 @@ Los errores estándar corresponden a la incertidumbre de una sola medición, no 
 
 - Al ser un modelo de 1B de parámetros, el requisito de VRAM es bajo. En precisión fp16, se estiman aproximadamente 2 GB de VRAM para inferencia. El tamaño del repositorio (3.0 GB) sugiere pesos en fp32 o fp16 con optimizadores, pero para inferencia basta con cargar los pesos.
 - Es posible ejecutarlo en GPUs consumer como NVIDIA GTX 1060 (6 GB), RTX 2060, RTX 3060, etc., siempre que se use una cuantización adecuada (por ejemplo, 4-bit con bitsandbytes) o se cargue en fp16.
-- Para despliegue, se puede utilizar la biblioteca `transformers` de HuggingFace, así como vLLM, llama.cpp u Ollama, aunque no se han probado específicamente en este artefacto.
+- Para despliegue, se puede utilizar la biblioteca `transformers` de Hugging Face, así como vLLM, llama.cpp u Ollama, aunque no se han probado específicamente en este artefacto.
 - No se dispone de datos de latencia o throughput medidos. Al ser un modelo pequeño, se espera una inferencia rápida en hardware moderno.
 
 ## Comparativa con modelos similares

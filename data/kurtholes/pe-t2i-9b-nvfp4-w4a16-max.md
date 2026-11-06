@@ -16,7 +16,7 @@ Es relevante ahora porque demuestra que se puede servir un reescritor de prompts
 | Parametros totales | 5.216.412.912 (~5,22 mil millones) segun safetensors; el nombre del repositorio indica 9B, discrepancia no aclarada en la informacion disponible |
 | Parametros activos | No disponible (no se indica que sea MoE) |
 | Longitud de contexto | No disponible como valor nativo; el ejemplo de servicio usa `--max-model-len 20480`, con hasta 16256 tokens nuevos y un limite de 8192 tokens para el bloque `think` |
-| Tipos de cuantizacion | NVFP4 W4A16 (pesos FP4, activaciones bf16), block size 16, escalas de bloque e4m3, una escala global fp32 por tensor, algoritmo `max`, sobre 359 modulos `nn.Linear`; etiquetado como 8-bit en HuggingFace y 4-bit en la model card |
+| Tipos de cuantizacion | NVFP4 W4A16 (pesos FP4, activaciones bf16), block size 16, escalas de bloque e4m3, una escala global fp32 por tensor, algoritmo `max`, sobre 359 modulos `nn.Linear`; etiquetado como 8-bit en Hugging Face y 4-bit en la model card |
 | Idiomas soportados | No disponible (el prompt de salida es en ingles segun la model card) |
 | Licencia | `other` / qwen-research (Qwen Research License), solo uso no comercial |
 | Formato de pesos | safetensors (model.safetensors), con config.json y hf_quant_config.json de ModelOpt; detectado por vLLM como checkpoint `W4A16_NVFP4` |
@@ -79,9 +79,9 @@ El fallo de la barra de acuerdo de tokens significa que, en cualquier posición 
 
 | Modelo | Parametros | Tamano en disco | Pesos en vLLM | Velocidad flujo unico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kurtholes/PE-T2I-9B-NVFP4-W4A16-MAX | 5,22 mil millones (safetensors) | 6,76 GB | 6,2 GiB | 36,6 tok/s | qwen-research (no comercial) | HuggingFace, 0 descargas, 0 likes |
-| kurtholes/PE-T2I-9B-NVFP4-W4A16 (solo MLP) | No disponible | 11,87 GB | 10,33 GiB | 17,8 tok/s | No disponible | HuggingFace |
-| Qwen/Qwen-Image-2.1-PE-T2I (bf16 original) | No disponible | 18,82 GB | 16,8 GiB | 11,8 tok/s | qwen-research (no comercial) | HuggingFace |
+| kurtholes/PE-T2I-9B-NVFP4-W4A16-MAX | 5,22 mil millones (safetensors) | 6,76 GB | 6,2 GiB | 36,6 tok/s | qwen-research (no comercial) | Hugging Face, 0 descargas, 0 likes |
+| kurtholes/PE-T2I-9B-NVFP4-W4A16 (solo MLP) | No disponible | 11,87 GB | 10,33 GiB | 17,8 tok/s | No disponible | Hugging Face |
+| Qwen/Qwen-Image-2.1-PE-T2I (bf16 original) | No disponible | 18,82 GB | 16,8 GiB | 11,8 tok/s | qwen-research (no comercial) | Hugging Face |
 
 No se dispone de datos de otros reescritores de prompts comparables en la información proporcionada.
 
@@ -100,7 +100,7 @@ No se dispone de datos de otros reescritores de prompts comparables en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kurtholes/PE-T2I-9B-NVFP4-W4A16-MAX
+- Modelo en Hugging Face: https://huggingface.co/kurtholes/PE-T2I-9B-NVFP4-W4A16-MAX
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I
 - Cuantización solo MLP de la misma serie: https://huggingface.co/kurtholes/PE-T2I-9B-NVFP4-W4A16
 - Licencia Qwen Research License (archivo LICENSE del repositorio): https://huggingface.co/kurtholes/PE-T2I-9B-NVFP4-W4A16-MAX/blob/main/LICENSE

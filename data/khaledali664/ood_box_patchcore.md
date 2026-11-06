@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`KhaledAli664/ood_box_patchcore` es un repositorio publicado en HuggingFace por el usuario KhaledAli664. En el momento de la consulta, la ficha no incluye tarjeta de modelo, descripcion, pipeline declarado, licencia ni idiomas soportados: la unica etiqueta presente es `region:us`. El repositorio acumula 0 descargas y 1 like, y se creo y actualizo el 11 de octubre de 2026.
+`KhaledAli664/ood_box_patchcore` es un repositorio publicado en Hugging Face por el usuario KhaledAli664. En el momento de la consulta, la ficha no incluye tarjeta de modelo, descripcion, pipeline declarado, licencia ni idiomas soportados: la unica etiqueta presente es `region:us`. El repositorio acumula 0 descargas y 1 like, y se creo y actualizo el 11 de octubre de 2026.
 
 Por la nomenclatura del identificador, el contenido apunta a una implementacion de deteccion de anomalias u out-of-distribution (OOD) basada en PatchCore, un metodo de inspeccion visual que construye un banco de memoria con caracteristicas de parches extraidas de una CNN preentrenada y puntua la anomalia por distancia al vecino mas cercano. El sufijo `box` sugiere, ademas, localizacion de la region anomala mediante cajas delimitadoras. Esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna documentacion del repositorio.
 
@@ -28,7 +28,7 @@ La relevancia de la ficha es limitada y fundamentalmente cautelar: se trata de u
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura, el dataset de entrenamiento ni el procedimiento de ajuste. La ficha de HuggingFace no contiene tarjeta de modelo, configuracion, ni referencias a un paper o repositorio de codigo asociado.
+No se ha publicado informacion sobre la arquitectura, el dataset de entrenamiento ni el procedimiento de ajuste. La ficha de Hugging Face no contiene tarjeta de modelo, configuracion, ni referencias a un paper o repositorio de codigo asociado.
 
 Como contexto de la familia de metodos que sugiere el nombre: PatchCore es un enfoque de deteccion de anomalias no supervisada que no entrena una red neuronal de forma convencional. Extrae mapas de caracteristicas de capas intermedias de un backbone convolucional preentrenado en ImageNet (habitualmente WideResNet-50), agrupa los vectores de cada parche con una memoria de caracteristicas reducida mediante muestreo greedy de coreset y calcula la puntuacion de anomalia como la distancia al parche mas cercano del banco de memoria. La localizacion espacial de la anomalia se obtiene proyectando esas distancias sobre la rejilla de parches, lo que encaja con el sufijo `box` del identificador. Conviene subrayar que no se dispone de confirmacion de que este repositorio implemente dicho esquema ni de con que backbone, resolucion de entrada o tamano de coreset. Cualquier dato de entrenamiento, numero de imagenes o composicion del dataset es no disponible.
 
@@ -74,7 +74,7 @@ No hay datos de rendimiento de este repositorio, por lo que la comparacion se li
 
 | Modelo | Enfoque | Entrenamiento requerido | Localizacion de defectos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ood_box_patchcore | no disponible (nombre sugiere PatchCore) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| ood_box_patchcore | no disponible (nombre sugiere PatchCore) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | PaDiM | Modelado estadistico multivariante sobre parches de CNN | No, solo ajuste de medias y covarianzas | Mapa de anomalia por parche | segun implementacion (habitualmente Apache-2.0 en Anomalib) | Implementaciones publicas en Anomalib |
 | FastFlow | Normalizing flow 2D sobre caracteristicas de CNN | Si, ajuste del flow | Mapa de anomalia por parche | segun implementacion | Implementaciones publicas en Anomalib |
 | WinCLIP | Zero-shot con CLIP y prompts textuales | No requiere entrenamiento | Mapa de anomalia con ventana deslizante | segun implementacion | Repositorios publicos |
@@ -93,6 +93,6 @@ No hay datos de rendimiento de este repositorio, por lo que la comparacion se li
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KhaledAli664/ood_box_patchcore
+- Hugging Face: https://huggingface.co/KhaledAli664/ood_box_patchcore
 - Referencia externa de la familia de metodos citada en el analisis (no confirmada como base de este repositorio): Towards Total Recall in Industrial Anomaly Detection, https://arxiv.org/abs/2106.08265
 - Las busquedas web realizadas no devolvieron ningun enlace relevante sobre el modelo: los resultados se limitaron a servicios de traduccion (Google Translate y DeepL), sin relacion con el repositorio.

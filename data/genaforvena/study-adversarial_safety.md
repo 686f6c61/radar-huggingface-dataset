@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`genaforvena/study-adversarial_safety` es un adaptador LoRA (PEFT) publicado en HuggingFace sobre el modelo base `HuggingFaceTB/SmolLM2-360M-Instruct`. No se trata de un modelo con pesos completos, sino de un conjunto de pesos de adaptador en formato safetensors que debe cargarse junto al modelo base para poder ejecutarse. El repositorio fue creado el 16 de septiembre de 2026, tiene 0 descargas, 0 "likes" y un tamano de 0,0 GB, lo que indica que es un artefacto experimental y no un modelo destinado a produccion.
+`genaforvena/study-adversarial_safety` es un adaptador LoRA (PEFT) publicado en Hugging Face sobre el modelo base `HuggingFaceTB/SmolLM2-360M-Instruct`. No se trata de un modelo con pesos completos, sino de un conjunto de pesos de adaptador en formato safetensors que debe cargarse junto al modelo base para poder ejecutarse. El repositorio fue creado el 16 de septiembre de 2026, tiene 0 descargas, 0 "likes" y un tamano de 0,0 GB, lo que indica que es un artefacto experimental y no un modelo destinado a produccion.
 
-El nombre del repositorio, `study-adversarial_safety`, sugiere que se trata de un experimento academico orientado al estudio de seguridad adversarial (por ejemplo, robustez frente a prompts maliciosos o jailbreaks), aunque esta interpretacion es una inferencia a partir del identificador y no una afirmacion documentada por el autor. La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: no incluye descripcion, datos de entrenamiento, hiperparametros, licencia, idiomas soportados ni resultados de evaluacion.
+El nombre del repositorio, `study-adversarial_safety`, sugiere que se trata de un experimento academico orientado al estudio de seguridad adversarial (por ejemplo, robustez frente a prompts maliciosos o jailbreaks), aunque esta interpretacion es una inferencia a partir del identificador y no una afirmacion documentada por el autor. La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: no incluye descripcion, datos de entrenamiento, hiperparametros, licencia, idiomas soportados ni resultados de evaluacion.
 
 Su relevancia actual es limitada y de caracter metodologico: sirve como ejemplo reproducible de un flujo de trabajo de ajuste fino con LoRA sobre un modelo pequeno (aproximadamente 362 millones de parametros), util para investigacion en alineamiento y seguridad, y no como una alternativa practica a los asistentes de uso general. Cualquier evaluacion de capacidades debe remitirse al modelo base, ya que el adaptador no documenta ninguna mejora ni comportamiento especifico verificado.
 
@@ -51,7 +51,7 @@ No hay informacion sobre la composicion del dataset de entrenamiento, el regimen
 - Comparativa de tecnicas de alineamiento: util como punto de partida para replicar experimentos de ajuste sobre seguridad comparando variantes de dataset e hiperparametros sobre el mismo modelo base.
 - Red-teaming y generacion de baterias de pruebas: si el ajuste debilita las defensas del modelo base, puede usarse para generar conjuntos de casos adversarios que luego se empleen en la evaluacion de modelos mayores; requiere supervision humana y filtros de contenido.
 - Experimentos de despliegue en el borde (edge): al tratarse de un adaptador sobre un modelo de 362 millones de parametros, es viable probar su fusion y ejecucion en dispositivos con recursos muy limitados, midiendo latencia y consumo energetico.
-- Docencia sobre PEFT y HuggingFace Hub: ejemplo practico de carga de un adaptador con `peft` y `transformers`, incluyendo la gestion de un modelo base de tipo instruct.
+- Docencia sobre PEFT y Hugging Face Hub: ejemplo practico de carga de un adaptador con `peft` y `transformers`, incluyendo la gestion de un modelo base de tipo instruct.
 - Linea base en estudios de cuantizacion: permite medir el impacto de distintas cuantizaciones (int8, int4, GGUF) sobre un modelo pequeno con adaptador fusionado.
 
 ## Benchmarks y rendimiento
@@ -93,7 +93,7 @@ Los datos de parametros y contexto de los modelos alternativos provienen de su d
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/genaforvena/study-adversarial_safety
+- Repositorio Hugging Face del adaptador: https://huggingface.co/genaforvena/study-adversarial_safety
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Referencia citada en los tags del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT (libreria declarada, version 0.20.0): https://huggingface.co/docs/peft

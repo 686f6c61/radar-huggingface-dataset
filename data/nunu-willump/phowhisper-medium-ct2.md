@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| nunu-willump/PhoWhisper-medium-ct2 | 769 M | No disponible | Vietnamita | BSD-3-Clause | CTranslate2 (FP16) | HuggingFace |
-| vinai/PhoWhisper-medium | 769 M | No disponible | Vietnamita | BSD-3-Clause | PyTorch (safetensors) | HuggingFace |
-| quocphu/PhoWhisper-ct2-FasterWhisper | 769 M | No disponible | Vietnamita | BSD-3-Clause | CTranslate2 | HuggingFace |
-| openai/whisper-medium | 769 M | 30 s de audio | Multilingüe (99 idiomas) | MIT | PyTorch | HuggingFace |
+| nunu-willump/PhoWhisper-medium-ct2 | 769 M | No disponible | Vietnamita | BSD-3-Clause | CTranslate2 (FP16) | Hugging Face |
+| vinai/PhoWhisper-medium | 769 M | No disponible | Vietnamita | BSD-3-Clause | PyTorch (safetensors) | Hugging Face |
+| quocphu/PhoWhisper-ct2-FasterWhisper | 769 M | No disponible | Vietnamita | BSD-3-Clause | CTranslate2 | Hugging Face |
+| openai/whisper-medium | 769 M | 30 s de audio | Multilingüe (99 idiomas) | MIT | PyTorch | Hugging Face |
 
 ## Limitaciones y advertencias
 

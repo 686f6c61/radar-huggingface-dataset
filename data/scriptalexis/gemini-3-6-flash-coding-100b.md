@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`scriptalexis/Gemini-3.6-Flash-Coding-100B` es un repositorio alojado en HuggingFace por el usuario `scriptalexis`, publicado el 18 de septiembre de 2026. La informacion publica disponible se limita a los metadatos del repositorio: no consta pipeline declarado, licencia, idiomas soportados, card de modelo ni documentacion tecnica asociada. El repositorio acumula 0 descargas y 1 like en el momento de la consulta.
+`scriptalexis/Gemini-3.6-Flash-Coding-100B` es un repositorio alojado en Hugging Face por el usuario `scriptalexis`, publicado el 18 de septiembre de 2026. La informacion publica disponible se limita a los metadatos del repositorio: no consta pipeline declarado, licencia, idiomas soportados, card de modelo ni documentacion tecnica asociada. El repositorio acumula 0 descargas y 1 like en el momento de la consulta.
 
-El nombre del repositorio sugiere un modelo orientado a generacion de codigo con un tamano nominal de 100 000 millones de parametros y una nomenclatura que evoca la familia Gemini de Google. Sin embargo, no existe confirmacion de que se trate de un modelo entrenado, de un artefacto derivado, de una conversion de pesos de terceros o de un repositorio de prueba. Google no distribuye pesos de sus modelos Gemini en HuggingFace, por lo que la denominacion no debe interpretarse como un lanzamiento oficial de Google DeepMind.
+El nombre del repositorio sugiere un modelo orientado a generacion de codigo con un tamano nominal de 100 000 millones de parametros y una nomenclatura que evoca la familia Gemini de Google. Sin embargo, no existe confirmacion de que se trate de un modelo entrenado, de un artefacto derivado, de una conversion de pesos de terceros o de un repositorio de prueba. Google no distribuye pesos de sus modelos Gemini en Hugging Face, por lo que la denominacion no debe interpretarse como un lanzamiento oficial de Google DeepMind.
 
 La relevancia de esta ficha es, por tanto, fundamentalmente critica: sirve para documentar que el repositorio no ofrece en la actualidad informacion verificable suficiente para evaluar su arquitectura, su entrenamiento o su rendimiento, y que cualquier uso en produccion requeriria una auditoria previa de los pesos, la licencia y la procedencia de los datos.
 
@@ -92,7 +92,7 @@ No disponible. No es posible establecer una comparativa fiable porque no se ha c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/scriptalexis/Gemini-3.6-Flash-Coding-100B
+- Repositorio en Hugging Face: https://huggingface.co/scriptalexis/Gemini-3.6-Flash-Coding-100B
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

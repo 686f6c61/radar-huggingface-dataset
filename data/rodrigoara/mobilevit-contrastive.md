@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rodrigoara/mobilevit-contrastive` es un repositorio de HuggingFace que contiene una implementación personalizada y compacta de la arquitectura MobileViT orientada a entrenamiento con objetivos contrastivos. Lo publica el usuario rodrigoara bajo licencia MIT. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests) y experimentos controlados a pequeña escala.
+`rodrigoara/mobilevit-contrastive` es un repositorio de Hugging Face que contiene una implementación personalizada y compacta de la arquitectura MobileViT orientada a entrenamiento con objetivos contrastivos. Lo publica el usuario rodrigoara bajo licencia MIT. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests) y experimentos controlados a pequeña escala.
 
 La configuración incluida es la variante "nano", con atención de tipo grouped query, fusión mediante co-attention, activación Mish y normalización por BatchNorm. El repositorio incluye el script de entrenamiento (`train.py`), la configuración de arquitectura (`config.json`), los hiperparámetros por defecto (`training_args.json`) y los pesos en formato safetensors. El autor declara explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rodrigoara/mobilevit-contrastive | 16.576 (checkpoint de inicialización) | no aplica | sin benchmarks | MIT | HuggingFace |
+| rodrigoara/mobilevit-contrastive | 16.576 (checkpoint de inicialización) | no aplica | sin benchmarks | MIT | Hugging Face |
 | MobileViT oficial (Apple) | no disponible en la información | no aplica | benchmarks publicados por Apple | no disponible en la información | repositorio oficial |
 | Otros modelos contrastivos visuales | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,5 +81,5 @@ La comparación cuantitativa no es posible con la información disponible: este 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rodrigoara/mobilevit-contrastive
+- Hugging Face: https://huggingface.co/rodrigoara/mobilevit-contrastive
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

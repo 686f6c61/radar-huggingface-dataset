@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Naturaleza | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| t8star/Zen-Image-Edit-Comfy | Conversion a checkpoint unico para ComfyUI | no disponible (fichero de 16,995 GB) | no disponible | qwen-research (no comercial) + Apache-2.0 en el encoder | HuggingFace, 0 descargas, 1 like |
-| AiArtLab/zen-image-edit | Modelo original del que deriva | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen-Image-2.1 (Qwen/Qwen-Image-2.1) | Modelo base de difusion | no disponible | no disponible | no disponible | HuggingFace |
-| Comfy-Org/Qwen-Image-2.1 | Distribucion nativa DiT + VAE para ComfyUI | no disponible | no disponible | no disponible | HuggingFace |
+| t8star/Zen-Image-Edit-Comfy | Conversion a checkpoint unico para ComfyUI | no disponible (fichero de 16,995 GB) | no disponible | qwen-research (no comercial) + Apache-2.0 en el encoder | Hugging Face, 0 descargas, 1 like |
+| AiArtLab/zen-image-edit | Modelo original del que deriva | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen-Image-2.1 (Qwen/Qwen-Image-2.1) | Modelo base de difusion | no disponible | no disponible | no disponible | Hugging Face |
+| Comfy-Org/Qwen-Image-2.1 | Distribucion nativa DiT + VAE para ComfyUI | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de parametros, contexto ni rendimiento de los modelos comparados en la informacion proporcionada, por lo que la comparacion se limita a la naturaleza, el origen y el regimen de licencia.
 
@@ -85,7 +85,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de los modelos com
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/t8star/Zen-Image-Edit-Comfy
+- Hugging Face del modelo: https://huggingface.co/t8star/Zen-Image-Edit-Comfy
 - Modelo original: https://huggingface.co/AiArtLab/zen-image-edit
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio nativo DiT y VAE para ComfyUI: https://huggingface.co/Comfy-Org/Qwen-Image-2.1

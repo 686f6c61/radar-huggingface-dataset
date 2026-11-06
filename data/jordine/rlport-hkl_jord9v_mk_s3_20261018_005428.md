@@ -91,7 +91,7 @@ No disponible. No es un modelo, sino un respaldo de *checkpoint* de un *run* int
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jordine/rlport-hkl_jord9v_mk_s3_20261018_005428
+- Hugging Face: https://huggingface.co/Jordine/rlport-hkl_jord9v_mk_s3_20261018_005428
 - Model card del autor: incluida en la página anterior (tags `research`, `checkpoint-backup`)
 - Paper, blog, repositorio o demo del proyecto "reward-laundering": no disponible en la información proporcionada
 - Referencia al *script* `scripts/port/hf_backup.py`: mencionado en la model card, sin URL pública disponible

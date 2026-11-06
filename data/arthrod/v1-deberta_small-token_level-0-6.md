@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arthrod/v1-deberta_small-token_level-0-6` es un modelo de clasificacion de tokens (token-level) construido con la libreria GLiNER sobre el backbone `microsoft/deberta-v3-small`, desarrollado por el usuario de HuggingFace arthrod. Su objetivo declarado era la deteccion zero-shot de informacion personal identificable (PII) en portugues de Brasil e ingles, entrenado **desde cero** sobre un corpus sintetico de aproximadamente 1,03 millones de ejemplos. El propio autor lo etiqueta como `legacy` y `failed-run`.
+`arthrod/v1-deberta_small-token_level-0-6` es un modelo de clasificacion de tokens (token-level) construido con la libreria GLiNER sobre el backbone `microsoft/deberta-v3-small`, desarrollado por el usuario de Hugging Face arthrod. Su objetivo declarado era la deteccion zero-shot de informacion personal identificable (PII) en portugues de Brasil e ingles, entrenado **desde cero** sobre un corpus sintetico de aproximadamente 1,03 millones de ejemplos. El propio autor lo etiqueta como `legacy` y `failed-run`.
 
 La relevancia de esta ficha no es tecnica en el sentido habitual: el modelo **no funciona**. El run de entrenamiento registro una `train loss`, `eval loss` y `grad-norm` de exactamente 0,0 desde el paso 10 hasta el paso 17.000, y la unica evaluacion registrada le otorgo 0,0000 en todas las metricas. Se conserva unicamente como registro historico y material forense para depurar el fallo, no como artefacto utilizable.
 
@@ -94,7 +94,7 @@ No se dispone de datos de parametros, contexto ni rendimiento numerico de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arthrod/v1-deberta_small-token_level-0-6
+- Modelo en Hugging Face: https://huggingface.co/arthrod/v1-deberta_small-token_level-0-6
 - URL original (redirige al anterior): https://huggingface.co/arthrod/h-gliner-token-full-v1
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-small
 - Log de experimento del run: https://huggingface.co/arthrod/attempt_vanilla

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-4D-VGGT es un modelo fundacional de geometría visual con conciencia espacio-temporal, desarrollado por el autor identificado en HuggingFace como Aurora03 (repositorio GitHub `Haonan-Wang-aurora/4D-VGGT`). El repositorio `Aurora03/4D-VGGT-models` aloja exclusivamente el checkpoint de geometría de la versión 1.0, un fichero PyTorch de 7.215.706.998 bytes (unos 7,2 GB) que permite estimar parámetros de cámara, mapas de profundidad y mapas de puntos en coordenadas de mundo a partir de secuencias de imágenes con múltiples vistas y múltiples instantes temporales.
+4D-VGGT es un modelo fundacional de geometría visual con conciencia espacio-temporal, desarrollado por el autor identificado en Hugging Face como Aurora03 (repositorio GitHub `Haonan-Wang-aurora/4D-VGGT`). El repositorio `Aurora03/4D-VGGT-models` aloja exclusivamente el checkpoint de geometría de la versión 1.0, un fichero PyTorch de 7.215.706.998 bytes (unos 7,2 GB) que permite estimar parámetros de cámara, mapas de profundidad y mapas de puntos en coordenadas de mundo a partir de secuencias de imágenes con múltiples vistas y múltiples instantes temporales.
 
 El modelo parte de VGGT (Visual Geometry Grounded Transformer, de Meta/Facebook Research) y extiende su alcance al dominio dinámico. Según la descripción del repositorio y el artículo asociado (arXiv 2511.18416), la arquitectura combina tres piezas: una entrada multi-configuración con rejilla visual adaptativa y máscaras de atención para admitir números arbitrarios de vistas y pasos temporales; una representación multinivel con fusión global entre vistas y fusión local entre tiempos; y una estrategia de divide y vencerás para distintas tareas geométricas en escenas dinámicas.
 
-Su relevancia radica en que unifica en un solo modelo tareas que tradicionalmente requerían pipelines separados (estimación de pose, profundidad densa y reconstrucción de nubes de puntos), y en que se publica con licencia MIT, una de las más permisivas del ecosistema. Como contrapartida, el repositorio de HuggingFace no tiene descargas ni valoraciones en el momento de redactar esta ficha, y la información pública disponible es escasa: no se detallan el número de parámetros, la composición del dataset de entrenamiento ni resultados numéricos de benchmarks.
+Su relevancia radica en que unifica en un solo modelo tareas que tradicionalmente requerían pipelines separados (estimación de pose, profundidad densa y reconstrucción de nubes de puntos), y en que se publica con licencia MIT, una de las más permisivas del ecosistema. Como contrapartida, el repositorio de Hugging Face no tiene descargas ni valoraciones en el momento de redactar esta ficha, y la información pública disponible es escasa: no se detallan el número de parámetros, la composición del dataset de entrenamiento ni resultados numéricos de benchmarks.
 
 ## Especificaciones técnicas
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Categoría | Parámetros | Contexto / entradas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| 4D-VGGT v1.0 (geometry-only) | Geometría visual espacio-temporal | no disponible | Número arbitrario de vistas y pasos temporales | MIT | Checkpoint en HuggingFace, código en GitHub | Extiende VGGT a escenas dinámicas |
+| 4D-VGGT v1.0 (geometry-only) | Geometría visual espacio-temporal | no disponible | Número arbitrario de vistas y pasos temporales | MIT | Checkpoint en Hugging Face, código en GitHub | Extiende VGGT a escenas dinámicas |
 | VGGT | Geometría visual multi-vista | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Repositorio de Meta/Facebook Research | Modelo base sobre el que se construye 4D-VGGT |
 | Alternativas de reconstrucción multi-vista (por ejemplo, la familia DUSt3R/MASt3R) | Geometría visual | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Repositorios públicos | No se dispone de datos comparativos en la información proporcionada |
 
@@ -90,7 +90,7 @@ No se dispone de cifras de rendimiento comparadas para ninguna de estas alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aurora03/4D-VGGT-models
+- Modelo en Hugging Face: https://huggingface.co/Aurora03/4D-VGGT-models
 - Repositorio de código 4D-VGGT: https://github.com/Haonan-Wang-aurora/4D-VGGT
 - Artículo en arXiv (PDF): https://arxiv.org/pdf/2511.18416
 - Artículo en arXiv (HTML): https://arxiv.org/html/2511.18416

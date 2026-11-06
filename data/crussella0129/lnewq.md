@@ -80,7 +80,7 @@ No existen alternativas directamente comparables publicadas con las mismas recet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/crussella0129/LNewq
+- Modelo en Hugging Face: https://huggingface.co/crussella0129/LNewq
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Investigacion original de referencia (post de Lyra en X): https://x.com/_lyraaaa_/status/2113833330429083662
 - Repositorio de herramientas de la investigacion original: https://github.com/lyramakesmusic/neuron-explorer

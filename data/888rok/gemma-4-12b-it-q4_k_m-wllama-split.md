@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks comparativos para este split en la informac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/888rok/gemma-4-12b-it-Q4_K_M-wllama-split
+- Repositorio Hugging Face: https://huggingface.co/888rok/gemma-4-12b-it-Q4_K_M-wllama-split
 - Modelo base (unsloth): https://huggingface.co/unsloth/gemma-4-12B-it-GGUF
 - Modelo original (Google): https://huggingface.co/google/gemma-4-12B
 - wllama (biblioteca para navegador): https://github.com/ngxson/wllama

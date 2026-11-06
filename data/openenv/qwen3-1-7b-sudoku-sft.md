@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| openenv/Qwen3-1.7B-Sudoku-SFT | 1,72B | no disponible | Sudoku con tool calling (SFT) | no disponible | HuggingFace, 264 descargas |
-| openenv/Qwen3-1.7B-Sudoku-SFT-GRPO | 1,72B (derivado) | no disponible | Sudoku con tool calling tras GRPO | no disponible | HuggingFace |
-| Qwen/Qwen3-1.7B | 1,72B | no disponible | Propósito general | no disponible en esta ficha | HuggingFace |
+| openenv/Qwen3-1.7B-Sudoku-SFT | 1,72B | no disponible | Sudoku con tool calling (SFT) | no disponible | Hugging Face, 264 descargas |
+| openenv/Qwen3-1.7B-Sudoku-SFT-GRPO | 1,72B (derivado) | no disponible | Sudoku con tool calling tras GRPO | no disponible | Hugging Face |
+| Qwen/Qwen3-1.7B | 1,72B | no disponible | Propósito general | no disponible en esta ficha | Hugging Face |
 
 La comparación con alternativas de propósito general no es significativa: este modelo está diseñado exclusivamente para el dominio del sudoku y su rendimiento en tareas generales no se ha evaluado. Frente a su base Qwen3-1.7B, la mejora en el dominio es sustancial (de 0/30 a 19/30 en puzzles de 16 celdas vacías), pero no se han publicado comparativas con otros modelos especializados en sudoku.
 
@@ -96,7 +96,7 @@ La comparación con alternativas de propósito general no es significativa: este
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/openenv/Qwen3-1.7B-Sudoku-SFT
+- Modelo en Hugging Face: https://huggingface.co/openenv/Qwen3-1.7B-Sudoku-SFT
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/openenv/sudoku-tool-calls-sft
 - Modelo GRPO derivado: https://huggingface.co/openenv/Qwen3-1.7B-Sudoku-SFT-GRPO

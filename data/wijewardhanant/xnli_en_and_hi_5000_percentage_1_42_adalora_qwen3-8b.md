@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparables para ninguna de las alternativ
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_42_AdaLoRA_Qwen3-8b
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_42_AdaLoRA_Qwen3-8b
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Referencia citada en los tags (Lacoste et al., 2019, calculadora de impacto de carbono en ML): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

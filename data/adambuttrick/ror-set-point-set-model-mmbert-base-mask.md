@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ror-set-point-set-model-mmbert-base-mask | 306,9 M | no disponible | Cross-encoder de emparejamiento ROR con máscara de mención | MIT | HuggingFace |
-| ror-set-point-set-model-mmbert-base | no disponible | no disponible | Cross-encoder de emparejamiento ROR sin máscara de mención | MIT | HuggingFace |
-| ror-set-point-retriever-e5-base | no disponible | no disponible | Retriever bi-encoder para recuperación de candidatos ROR | MIT | HuggingFace |
+| ror-set-point-set-model-mmbert-base-mask | 306,9 M | no disponible | Cross-encoder de emparejamiento ROR con máscara de mención | MIT | Hugging Face |
+| ror-set-point-set-model-mmbert-base | no disponible | no disponible | Cross-encoder de emparejamiento ROR sin máscara de mención | MIT | Hugging Face |
+| ror-set-point-retriever-e5-base | no disponible | no disponible | Retriever bi-encoder para recuperación de candidatos ROR | MIT | Hugging Face |
 
 La comparativa con alternativas externas de resolución de afiliaciones (por ejemplo, modelos de enlazado de entidades genéricos o soluciones basadas en reglas) no está disponible en la información proporcionada.
 
@@ -84,7 +84,7 @@ La comparativa con alternativas externas de resolución de afiliaciones (por eje
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adambuttrick/ror-set-point-set-model-mmbert-base-mask
+- Modelo en Hugging Face: https://huggingface.co/adambuttrick/ror-set-point-set-model-mmbert-base-mask
 - Variante sin máscara de mención: https://huggingface.co/adambuttrick/ror-set-point-set-model-mmbert-base
 - Retriever del pipeline: https://huggingface.co/adambuttrick/ror-set-point-retriever-e5-base
 - Colección ROR set point matching: https://huggingface.co/collections/adambuttrick/ror-set-point-matching-6ada8733c9e6fb018f382d0b

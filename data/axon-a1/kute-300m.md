@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KUTE-300M es un modelo de lenguaje publicado por el usuario Axon-A1 en HuggingFace, con un total de 337.176.576 parametros reales segun los pesos en safetensors. La etiqueta `gpt2` del repositorio indica que se trata de una arquitectura derivada de GPT-2, es decir, un transformer decoder-only con atencion causal. A pesar del nombre "300M", el recuento efectivo de parametros lo situa en la franja de los 337 millones, ligeramente por encima del GPT-2 medium clasico (355M) y en linea con la generacion de modelos pequenos tipo SmolLM.
+KUTE-300M es un modelo de lenguaje publicado por el usuario Axon-A1 en Hugging Face, con un total de 337.176.576 parametros reales segun los pesos en safetensors. La etiqueta `gpt2` del repositorio indica que se trata de una arquitectura derivada de GPT-2, es decir, un transformer decoder-only con atencion causal. A pesar del nombre "300M", el recuento efectivo de parametros lo situa en la franja de los 337 millones, ligeramente por encima del GPT-2 medium clasico (355M) y en linea con la generacion de modelos pequenos tipo SmolLM.
 
 El modelo no dispone de informacion publica sobre su proceso de entrenamiento, composicion del dataset, idiomas soportados ni licencia, lo que limita seriamente cualquier evaluacion tecnica rigurosa. Cuenta con 36 descargas y 0 likes en el momento de la consulta, lo que sugiere que es un checkpoint reciente o poco difundido. El repositorio ocupa 21,6 GB, un tamano desproporcionado para 337M de parametros, lo que apunta a la presencia de multiples checkpoints, estados de optimizador o artefactos adicionales mas alla de los pesos finales.
 
@@ -62,17 +62,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia (solo pesos): aproximadamente 1,35 GB en fp32, 0,67 GB en fp16/bf16 y 0,34 GB en int8. Estas cifras son calculadas a partir del recuento de parametros, no verificadas en el repositorio.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente. Una RTX 3060, RTX 4060, RTX 4090 o incluso una GPU integrada con suficiente memoria unificada pueden ejecutar el modelo. Tambien cabe en A100, H100 y similares, aunque estaria muy infrautilizado.
 - Compatibilidad con GPU consumer: si, cabe holgadamente en practicamente cualquier GPU consumer con 2 GB o mas de VRAM.
-- Opciones de despliegue: se puede cargar con la libreria `transformers` de HuggingFace. No se confirma la existencia de pesos GGUF, por lo que no se puede garantizar su uso en llama.cpp u Ollama. Tampoco hay evidencia de soporte en vLLM o TGI, que requeririan una configuracion de arquitectura compatible con GPT-2 (vLLM soporta GPT-2, TGI tambien, pero la disponibilidad para este checkpoint concreto no esta verificada).
+- Opciones de despliegue: se puede cargar con la libreria `transformers` de Hugging Face. No se confirma la existencia de pesos GGUF, por lo que no se puede garantizar su uso en llama.cpp u Ollama. Tampoco hay evidencia de soporte en vLLM o TGI, que requeririan una configuracion de arquitectura compatible con GPT-2 (vLLM soporta GPT-2, TGI tambien, pero la disponibilidad para este checkpoint concreto no esta verificada).
 - Latencia y throughput estimados: no disponibles. En una GPU consumer cabe esperar una latencia de decodificacion del orden de milisegundos por token dado el tamano, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Axon-A1/KUTE-300M | 337M | no disponible | no disponible | HuggingFace (36 descargas) | Sin ficha tecnica ni benchmarks |
-| GPT-2 medium (OpenAI) | 355M | 1024 tokens | MIT | HuggingFace y multiples mirrors | Modelo de referencia de la misma escala |
-| GPT-2 large (OpenAI) | 774M | 1024 tokens | MIT | HuggingFace | Doble de parametros, misma familia |
-| SmolLM-360M (HuggingFace) | 360M | 2048 tokens | Apache 2.0 | HuggingFace | Alternativa moderna entrenada con datos mas recientes |
+| Axon-A1/KUTE-300M | 337M | no disponible | no disponible | Hugging Face (36 descargas) | Sin ficha tecnica ni benchmarks |
+| GPT-2 medium (OpenAI) | 355M | 1024 tokens | MIT | Hugging Face y multiples mirrors | Modelo de referencia de la misma escala |
+| GPT-2 large (OpenAI) | 774M | 1024 tokens | MIT | Hugging Face | Doble de parametros, misma familia |
+| SmolLM-360M (Hugging Face) | 360M | 2048 tokens | Apache 2.0 | Hugging Face | Alternativa moderna entrenada con datos mas recientes |
 
 La comparativa con GPT-2 medium es la mas directa por escala y por la etiqueta `gpt2` del repositorio, pero no puede establecerse una comparacion de rendimiento porque KUTE-300M carece de resultados de evaluacion publicados. SmolLM-360M se incluye como referencia de la generacion actual de modelos pequenos con licencia permisiva y contexto ampliado, aunque la comparacion es orientativa y no esta respaldada por datos de KUTE-300M.
 
@@ -90,7 +90,7 @@ La comparativa con GPT-2 medium es la mas directa por escala y por la etiqueta `
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Axon-A1/KUTE-300M
+- Repositorio en Hugging Face: https://huggingface.co/Axon-A1/KUTE-300M
 - Resultados de busqueda web: no se ha encontrado ningun enlace relacionado con el modelo. Todos los resultados obtenidos corresponden a entidades homonimas sin relacion con el proyecto:
   - https://www.axon.com/ (Axon Enterprise, empresa de seguridad publica)
   - https://www.axon.com/fr (version en frances del anterior)

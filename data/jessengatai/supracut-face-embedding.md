@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto / entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jessengatai/supracut-face-embedding | no disponible | imagen de rostro (crop) | embedding de 512 d, Core ML | MIT | HuggingFace, solo `.mlmodelc` |
+| jessengatai/supracut-face-embedding | no disponible | imagen de rostro (crop) | embedding de 512 d, Core ML | MIT | Hugging Face, solo `.mlmodelc` |
 | timesler/facenet-pytorch (InceptionResnetV1 VGGFace2) | no disponible en la informacion | imagen de rostro | embedding de 512 d, PyTorch | MIT | GitHub, ampliamente usado |
 | davidsandberg/facenet (original) | no disponible en la informacion | imagen de rostro alineada (160x160) | embedding de 128/512 d segun variante | MIT | GitHub, pesos TensorFlow |
 | Alternativas tipo ArcFace / InsightFace | no disponible en la informacion | imagen de rostro | embedding (dimension variable) | habitualmente MIT o research-only segun modelo | no verificado en esta busqueda |
@@ -86,11 +86,11 @@ La comparacion cuantitativa de precision entre estas alternativas no puede estab
 - Restricciones de licencia: MIT permite uso comercial, pero la notice de copyright original de facenet-pytorch debe conservarse; el modelo deriva ademas de pesos de FaceNet y VGGFace2, cuyos terminos conviene revisar en sus repositorios de origen.
 - No apto para vigilancia masiva ni identificacion encubierta: al tratarse de biometria facial, su uso esta sujeto a RGPD y a la normativa europea de IA, con requisitos de base juridica y evaluacion de impacto.
 - El modelo no genera texto ni razona: cualquier expectativa de uso como LLM o VLM es inaplicable.
-- Fecha de creacion del repositorio anomala (2026-10-28 segun los metadatos de HuggingFace) y cero descargas o likes: no hay evidencia de uso en produccion ni de mantenimiento.
+- Fecha de creacion del repositorio anomala (2026-10-28 segun los metadatos de Hugging Face) y cero descargas o likes: no hay evidencia de uso en produccion ni de mantenimiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jessengatai/supracut-face-embedding
+- Modelo en Hugging Face: https://huggingface.co/jessengatai/supracut-face-embedding
 - facenet-pytorch (InceptionResnetV1, pesos VGGFace2): https://github.com/timesler/facenet-pytorch
 - davidsandberg/facenet (implementacion y pesos originales): https://github.com/davidsandberg/facenet
 - Paper FaceNet (Schroff et al., CVPR 2015): https://arxiv.org/abs/1503.03832

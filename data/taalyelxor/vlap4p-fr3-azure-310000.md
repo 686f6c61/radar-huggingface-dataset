@@ -96,7 +96,7 @@ Nota: "este" y la politica de referencia comparten step (310000) pero difieren e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taalyelxor/vlap4p-fr3-azure-310000
+- Modelo en Hugging Face: https://huggingface.co/taalyelxor/vlap4p-fr3-azure-310000
 - Modelo base: https://huggingface.co/moojink/openvla-7b-oft-finetuned-libero-spatial-object-goal-10
 - Licencia Llama 2 Community License: https://ai.meta.com/llama/license/
 - OpenVLA-OFT (MIT): repositorio referenciado por el autor; no se proporciona URL directa en la informacion disponible.

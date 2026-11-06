@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-autonomy-s29
+- Modelo en Hugging Face: https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-autonomy-s29
 - Repositorio de código: https://github.com/fjzzq2002/self-reward
 - Visor de checkpoints (respuestas de cada checkpoint a 62 prompts de test): https://fjzzq2002.github.io/self-reward/
 - Dataset de indicaciones de entrenamiento y test: https://huggingface.co/datasets/fjzzq2002/self-reward-dataset

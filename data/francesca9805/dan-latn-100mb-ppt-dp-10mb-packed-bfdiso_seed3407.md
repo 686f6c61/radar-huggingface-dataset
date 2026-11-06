@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dan-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407` es un ajuste fino (fine-tuning) del checkpoint base `goldfish-models/dan_latn_100mb`, desarrollado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generacion de texto de aproximadamente 124,8 millones de parametros con arquitectura GPT-2, entrenado mediante aprendizaje supervisado (SFT) con la libreria TRL de HuggingFace. El identificador del modelo sugiere que forma parte de una experimentacion sistematica sobre tokenizadores y empaquetado de datos, como indica el proyecto de Weights & Biases asociado ("new-tokenizers").
+El modelo `dan-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407` es un ajuste fino (fine-tuning) del checkpoint base `goldfish-models/dan_latn_100mb`, desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generacion de texto de aproximadamente 124,8 millones de parametros con arquitectura GPT-2, entrenado mediante aprendizaje supervisado (SFT) con la libreria TRL de Hugging Face. El identificador del modelo sugiere que forma parte de una experimentacion sistematica sobre tokenizadores y empaquetado de datos, como indica el proyecto de Weights & Biases asociado ("new-tokenizers").
 
 El modelo hereda la naturaleza del proyecto Goldfish, orientado a lenguas de bajos recursos, y la etiqueta `dan_latn` apunta al danes escrito en alfabeto latino con un corpus base de 100 MB. El sufijo del nombre (`ppt-Dp-10mb-packed-bfdiso_seed3407`) refleja la configuracion concreta del ajuste: un dataset empaquetado de 10 MB, una semilla aleatoria fija (3407) y lo que parece una variante de preentrenamiento o dropout. Su relevancia es limitada y de caracter puramente experimental: se trata de un checkpoint de investigacion sin benchmarks publicados, sin licencia declarada y con cero descargas en el momento de redactar esta ficha.
 
@@ -42,7 +42,7 @@ El ajuste fino se realizo con TRL 0.23.0 sobre Transformers 4.56.2, PyTorch 2.5.
 - Analisis de tokenizadores para lenguas de bajos recursos: dado el proyecto asociado ("new-tokenizers"), puede emplearse como caso de estudio del impacto del tokenizador en el rendimiento para el danes.
 - Investigacion sobre semillas y reproducibilidad: el sufijo `seed3407` permite estudiar la varianza entre ejecuciones con distintas semillas sobre un mismo dataset.
 - Generacion de texto en danes de caracter exploratorio: para tareas de continuacion de texto en prototipos de investigacion, sin exigencia de calidad de produccion.
-- Docencia y formacion: util como ejemplo minimo de ajuste fino de un modelo GPT-2 con la pila de HuggingFace por su tamano reducido.
+- Docencia y formacion: util como ejemplo minimo de ajuste fino de un modelo GPT-2 con la pila de Hugging Face por su tamano reducido.
 - Pruebas de infraestructura de despliegue: al ser tan ligero, sirve para validar pipelines de inferencia (transformers, Text Generation Inference) antes de escalar a modelos mayores.
 - Base para comparaciones de eficiencia: permite medir latencia y throughput de un transformer pequeno en distintas GPUs de consumo como referencia relativa.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dan-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407 | 124,8 M | no disponible | no disponible | HuggingFace (0 descargas) |
-| goldfish-models/dan_latn_100mb (modelo base) | ~124 M (GPT-2 small) | no disponible | no disponible | HuggingFace |
-| francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfd_seed3407 (variante) | similar | no disponible | no disponible | HuggingFace |
+| dan-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407 | 124,8 M | no disponible | no disponible | Hugging Face (0 descargas) |
+| goldfish-models/dan_latn_100mb (modelo base) | ~124 M (GPT-2 small) | no disponible | no disponible | Hugging Face |
+| francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfd_seed3407 (variante) | similar | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparacion cuantitativa con alternativas; las variantes listadas pertenecen al mismo autor y comparten configuracion, diferenciandose principalmente en la semilla.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/dan_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/wbzsn8l1

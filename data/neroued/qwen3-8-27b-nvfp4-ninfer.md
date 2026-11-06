@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye datos comparativos con ot
 
 ## Enlaces
 
-- [HuggingFace: neroued/Qwen3.8-27B-nvfp4-NInfer](https://huggingface.co/neroued/Qwen3.8-27B-nvfp4-NInfer)
+- [Hugging Face: neroued/Qwen3.8-27B-nvfp4-NInfer](https://huggingface.co/neroued/Qwen3.8-27B-nvfp4-NInfer)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Fuente cuantizada: unsloth/Qwen3.8-27B-NVFP4](https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4)
 - [Repositorio NInfer](https://github.com/Neroued/ninfer)

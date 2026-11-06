@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Leak-curber-submission-9 (identificador `da24b046/leak-curber-submission-9`) es un artefacto de inferencia publicado en HuggingFace por el usuario `da24b046`, orientado a la clasificación funcional de reacciones enzimáticas mediante la asignación de un prefijo EC (Enzyme Commission). No se trata de un modelo de lenguaje, sino de un ensemble neuronal especializado que combina representaciones químicas (bits DRFP, descriptores quirales de Morgan y pares de átomos/torsión) con una torre neuronal de características funcionales entrenada desde cero.
+Leak-curber-submission-9 (identificador `da24b046/leak-curber-submission-9`) es un artefacto de inferencia publicado en Hugging Face por el usuario `da24b046`, orientado a la clasificación funcional de reacciones enzimáticas mediante la asignación de un prefijo EC (Enzyme Commission). No se trata de un modelo de lenguaje, sino de un ensemble neuronal especializado que combina representaciones químicas (bits DRFP, descriptores quirales de Morgan y pares de átomos/torsión) con una torre neuronal de características funcionales entrenada desde cero.
 
 El sistema fusiona cuatro componentes con pesos fijos (0,32 / 0,32 / 0,16 / 0,20): un modelo de referencia propio S8, un modelo fusionado, un modelo disperso y una nueva torre de prefijo EC sobre 2048 bits DRFP y descriptores quirales. Sobre la mezcla ponderada de probabilidades neuronales (75%) se aplica un 25% de distribuciones de vecinos más cercanos (coseno, softmax con temperatura 0,02) y un ajuste jerárquico L3/L2 con parámetros beta 0,1 y gamma 0.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| leak-curber-submission-9 | Ensemble químico + k-NN para prefijo EC | no disponible | no aplica | no disponible | HuggingFace (`da24b046/leak-curber-submission-9`) |
+| leak-curber-submission-9 | Ensemble químico + k-NN para prefijo EC | no disponible | no aplica | no disponible | Hugging Face (`da24b046/leak-curber-submission-9`) |
 | S8 (referencia propia del autor) | Modelo de referencia del mismo autor | no disponible | no aplica | no disponible | Uso interno en el ensemble |
 | Alternativas públicas de clasificación EC | no disponible | no disponible | no aplica | no disponible | no disponible |
 
@@ -94,5 +94,5 @@ No se dispone de información suficiente para comparar con modelos de la misma c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/da24b046/leak-curber-submission-9
+- Hugging Face: https://huggingface.co/da24b046/leak-curber-submission-9
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

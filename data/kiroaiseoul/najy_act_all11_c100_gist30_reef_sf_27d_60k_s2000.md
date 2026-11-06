@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NAJY_act_all11_c100_gist30_reef_sf_27D_60k_s2000 es un checkpoint de política robótica basado en ACT (Action Chunking Transformer) publicado por el usuario kiroaiseoul en HuggingFace, dentro del ecosistema LeRobot. No es un modelo de lenguaje: es una política de imitación que mapea observaciones visuales y de estado a acciones motoras de un robot concreto. El checkpoint corresponde al paso 60.000 del run `t48_all11_c100_gist30_reef_sf_s2000`, entrenado según el autor en una unidad DGX_1, y se ha subido explícitamente para tareas de análisis y puntuación, no como candidato cerrado a despliegue en robot real.
+NAJY_act_all11_c100_gist30_reef_sf_27D_60k_s2000 es un checkpoint de política robótica basado en ACT (Action Chunking Transformer) publicado por el usuario kiroaiseoul en Hugging Face, dentro del ecosistema LeRobot. No es un modelo de lenguaje: es una política de imitación que mapea observaciones visuales y de estado a acciones motoras de un robot concreto. El checkpoint corresponde al paso 60.000 del run `t48_all11_c100_gist30_reef_sf_s2000`, entrenado según el autor en una unidad DGX_1, y se ha subido explícitamente para tareas de análisis y puntuación, no como candidato cerrado a despliegue en robot real.
 
 El modelo tiene 51.677.328 parámetros (unos 51,7 M) y un tamaño de repositorio de 0,2 GB, lo que es coherente con pesos en precisión de 32 bits. La interfaz de entrada está definida en la model card: tres cámaras RGB a 480x640 (`cam_high`, `cam_left_wrist`, `cam_right_wrist`) más un vector de estado de entorno de 11 dimensiones; la salida es un vector de acción de 16 dimensiones. El sufijo `27D` del nombre coincide con la suma de ambas dimensiones (11 + 16), aunque el autor no lo documenta explícitamente.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| NAJY_act_all11_c100_gist30_reef_sf_27D_60k_s2000 | 51,7 M | no disponible (chunking, valor no confirmado) | Apache 2.0 | HuggingFace, 0 descargas | Checkpoint de investigacion sin metricas publicadas |
+| NAJY_act_all11_c100_gist30_reef_sf_27D_60k_s2000 | 51,7 M | no disponible (chunking, valor no confirmado) | Apache 2.0 | Hugging Face, 0 descargas | Checkpoint de investigacion sin metricas publicadas |
 | ACT original (implementacion de referencia LeRobot) | orden de magnitud similar (~50 M), valor exacto no disponible | action chunking configurable | MIT (segun el repositorio original, no verificado en esta ficha) | Repositorio publico | Arquitectura de referencia sobre la que se construye este checkpoint |
 | Diffusion Policy | no disponible | prediccion de horizontes de accion | no disponible en esta ficha | Repositorio publico | Alternativa habitual en imitation learning visomotor; requiere comparacion empirica |
-| SmolVLA (LeRobot) | cientos de millones, valor exacto no disponible | politicas VLA con entrada de lenguaje | no disponible en esta ficha | HuggingFace | Anade instrucciones en lenguaje natural, capacidad de la que carece este checkpoint |
+| SmolVLA (LeRobot) | cientos de millones, valor exacto no disponible | politicas VLA con entrada de lenguaje | no disponible en esta ficha | Hugging Face | Anade instrucciones en lenguaje natural, capacidad de la que carece este checkpoint |
 
 No se dispone de datos de rendimiento comparables para este checkpoint, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparables para este checkpoint, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_reef_sf_27D_60k_s2000
+- Modelo en Hugging Face: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_reef_sf_27D_60k_s2000
 - Repositorio de la librería LeRobot: https://github.com/huggingface/lerobot (referencia general de la librería, no enlazada en la model card)
 - Documentación de contexto citada por el autor: `trossen-ai-simulation`, `docs/mobile_base_investigation.md` §94 (el autor no proporciona URL)
 - Paper original de la arquitectura ACT: Zhao et al., 2023, "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware" (el autor no incluye enlace en la model card)

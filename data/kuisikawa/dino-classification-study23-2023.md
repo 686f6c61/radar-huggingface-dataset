@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Kuisikawa/dino-classification-study23-2023` es un repositorio de HuggingFace publicado por el usuario Kuisikawa (Kaito Isikawa) que contiene una implementacion propia en PyTorch de una arquitectura denominada "Dino" orientada a tareas de clasificacion. Conviene aclarar de entrada que no guarda relacion con el DINO de Meta AI (self-distillation with no labels) para vision por computador: aqui "Dino" es simplemente la etiqueta que el autor da a su implementacion personalizada. El modelo se publica en configuracion "nano" y, segun la propia model card, esta pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no como un artefacto listo para produccion.
+`Kuisikawa/dino-classification-study23-2023` es un repositorio de Hugging Face publicado por el usuario Kuisikawa (Kaito Isikawa) que contiene una implementacion propia en PyTorch de una arquitectura denominada "Dino" orientada a tareas de clasificacion. Conviene aclarar de entrada que no guarda relacion con el DINO de Meta AI (self-distillation with no labels) para vision por computador: aqui "Dino" es simplemente la etiqueta que el autor da a su implementacion personalizada. El modelo se publica en configuracion "nano" y, segun la propia model card, esta pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no como un artefacto listo para produccion.
 
 El dato mas relevante para evaluarlo es su tamano: 49.600 parametros totales segun el checkpoint `model.safetensors`, lo que lo situa en un orden de magnitud de juguete en comparacion con cualquier modelo de clasificacion moderno. El repositorio incluye `main.py` con la implementacion y un ejemplo ejecutable, `config.json` con la configuracion de arquitectura, `training_args.json` con la receta por defecto y `model.safetensors` como checkpoint de inicializacion. La model card es explicita: no se ha entrenado ni auditado, no se reclama ninguna puntuacion de benchmark y el checkpoint "no se presenta como un checkpoint entrenado de referencia".
 
@@ -84,8 +84,8 @@ No disponible en la informacion proporcionada. No se ofrecen datos de benchmarks
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kuisikawa/dino-classification-study23-2023
-- Perfil del autor en HuggingFace: https://huggingface.co/Kuisikawa
+- Repositorio en Hugging Face: https://huggingface.co/Kuisikawa/dino-classification-study23-2023
+- Perfil del autor en Hugging Face: https://huggingface.co/Kuisikawa
 - Repositorio similar (nomenclatura compartida): https://huggingface.co/Kjankowski/dino-classification-study
 - DINO (computer vision), AI Wiki: https://aiwiki.ai/wiki/dino_model
 - DINO, Learn AI: https://ai.miraheze.org/wiki/DINO

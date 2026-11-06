@@ -94,7 +94,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lazarenkod/gemma4-e2b-compact-fluent-books
+- Modelo en Hugging Face: https://huggingface.co/lazarenkod/gemma4-e2b-compact-fluent-books
 - Modelo A2 (versión completa): https://huggingface.co/lazarenkod/gemma4-e2b-fluent-books
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - llama.cpp: https://github.com/ggml-org/llama.cpp

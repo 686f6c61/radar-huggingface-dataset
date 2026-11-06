@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio, publicado por el usuario michellerodriguez en HuggingFace, contiene un artículo académico (paper) en formato Markdown sobre el tema de *text-image retrieval* (recuperación de texto-imagen). No se trata de un modelo de inteligencia artificial entrenado, sino de un documento de investigación que resume o presenta un trabajo relacionado con la recuperación de imágenes mediante texto. El repositorio incluye un único archivo principal, `paper_017570334_text_image_retrieval.md`, que contiene el texto completo del artículo.
+Este repositorio, publicado por el usuario michellerodriguez en Hugging Face, contiene un artículo académico (paper) en formato Markdown sobre el tema de *text-image retrieval* (recuperación de texto-imagen). No se trata de un modelo de inteligencia artificial entrenado, sino de un documento de investigación que resume o presenta un trabajo relacionado con la recuperación de imágenes mediante texto. El repositorio incluye un único archivo principal, `paper_017570334_text_image_retrieval.md`, que contiene el texto completo del artículo.
 
 El paper sigue una estructura académica clásica (introducción, trabajos relacionados, método, experimentos y conclusiones), con estilo de citación autor-año y un estilo de escritura narrativo-progresivo. La licencia del contenido es CC-BY-4.0, lo que permite su reutilización con atribución. A fecha de su creación (agosto de 2026), el repositorio no ha recibido descargas ni valoraciones.
 
@@ -64,5 +64,5 @@ No disponible. Al no ser un modelo de IA, no existe una comparación directa con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/michellerodriguez/paper_017570334_text_image_retrieval](https://huggingface.co/michellerodriguez/paper_017570334_text_image_retrieval)
+- Repositorio en Hugging Face: [https://huggingface.co/michellerodriguez/paper_017570334_text_image_retrieval](https://huggingface.co/michellerodriguez/paper_017570334_text_image_retrieval)
 - No se encontraron otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

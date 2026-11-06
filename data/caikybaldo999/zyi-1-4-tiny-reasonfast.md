@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZYI-1.4-TINY-ReasonFast es un modelo de difusión texto-a-imagen de escala muy reducida, publicado por el usuario caikybaldo999 en HuggingFace bajo licencia Apache-2.0. Se trata de un fine-tuning continuado del modelo `caikybaldo999/ZYI-1.3-TINY-ReasonFast`, construido sobre una arquitectura ZYI-DiT de 59,2 millones de parámetros con formulación Rectified Flow, resolución fija de 256x256 píxeles y acondicionamiento textual mediante FLAN-T5-base. La decodificación al espacio de píxeles se realiza con el VAE `stabilityai/sd-vae-ft-mse`.
+ZYI-1.4-TINY-ReasonFast es un modelo de difusión texto-a-imagen de escala muy reducida, publicado por el usuario caikybaldo999 en Hugging Face bajo licencia Apache-2.0. Se trata de un fine-tuning continuado del modelo `caikybaldo999/ZYI-1.3-TINY-ReasonFast`, construido sobre una arquitectura ZYI-DiT de 59,2 millones de parámetros con formulación Rectified Flow, resolución fija de 256x256 píxeles y acondicionamiento textual mediante FLAN-T5-base. La decodificación al espacio de píxeles se realiza con el VAE `stabilityai/sd-vae-ft-mse`.
 
 Su relevancia es fundamentalmente experimental: frente a los pipelines de difusión habituales (SD 1.5, SDXL o FLUX), que manejan entre 900 millones y 12.000 millones de parámetros, este modelo reduce el generador a dos órdenes de magnitud menos, lo que permite entrenar, ajustar e inferir en una única GPU de consumo e incluso en CPU. Esto lo convierte en una plataforma útil para investigación sobre Rectified Flow, destilación y muestreo en pocos pasos, más que en un generador de imágenes listo para producción.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: el generador DiT de 59,2 M de parametros ocupa aproximadamente 0,24 GB en fp32 y 0,12 GB en fp16. Sumando FLAN-T5-base (unos 250 M de parametros, aproximadamente 1 GB en fp32 y 0,5 GB en fp16) y el VAE `sd-vae-ft-mse` (unos 83 M de parametros), el pipeline completo se mantiene por debajo de 2-3 GB de VRAM en precision mixta. Estas cifras son estimaciones a partir del recuento de parametros, no datos publicados por el autor.
 - GPU recomendadas: cabe con holgura en cualquier GPU de consumo con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090). No requiere A100, H100 ni GPU de centro de datos.
 - Compatibilidad con GPU de consumo: si, es uno de sus principales atractivos. Tambien es viable en CPU, aunque la latencia dependera del numero de pasos de muestreo, que no se especifica.
-- Opciones de despliegue: al estar etiquetado como `pytorch` y ser un pipeline de difusion con VAE y encoder T5, el marco natural es HuggingFace `diffusers` con PyTorch. No se documentan pesos GGUF, por lo que llama.cpp u Ollama no son aplicables directamente; tampoco hay soporte declarado para vLLM o TGI, que estan orientados a modelos de lenguaje autoregresivos.
+- Opciones de despliegue: al estar etiquetado como `pytorch` y ser un pipeline de difusion con VAE y encoder T5, el marco natural es Hugging Face `diffusers` con PyTorch. No se documentan pesos GGUF, por lo que llama.cpp u Ollama no son aplicables directamente; tampoco hay soporte declarado para vLLM o TGI, que estan orientados a modelos de lenguaje autoregresivos.
 - Latencia y throughput: no disponibles.
 - Nota sobre el repositorio: los 3,6 GB del repo no se corresponden con el peso de los parametros del modelo, por lo que es probable que contenga artefactos adicionales (latentes o embeddings precalculados) que conviene inspeccionar antes de descargar.
 
@@ -74,10 +74,10 @@ No hay resultados de rendimiento publicados para ZYI-1.4-TINY-ReasonFast, por lo
 
 | Modelo | Parametros (generador) | Resolucion nativa | Codificador de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZYI-1.4-TINY-ReasonFast | 59,2 M (DiT, Rectified Flow) | 256x256 | FLAN-T5-base | Apache-2.0 | HuggingFace |
+| ZYI-1.4-TINY-ReasonFast | 59,2 M (DiT, Rectified Flow) | 256x256 | FLAN-T5-base | Apache-2.0 | Hugging Face |
 | Stable Diffusion 1.5 | aproximadamente 860 M (UNet) | 512x512 | CLIP ViT-L/14 | CreativeML Open RAIL-M | Amplia, con ecosistema LoRA/ControlNet |
-| PixArt-alpha | aproximadamente 600 M (DiT) | 512x512 | T5-XXL | Licencia propia del proyecto | HuggingFace |
-| SD-Turbo | aproximadamente 865 M (UNet) | 512x512 | CLIP ViT-L/14 | Licencia del modelo base (no comercial en algunas variantes) | HuggingFace |
+| PixArt-alpha | aproximadamente 600 M (DiT) | 512x512 | T5-XXL | Licencia propia del proyecto | Hugging Face |
+| SD-Turbo | aproximadamente 865 M (UNet) | 512x512 | CLIP ViT-L/14 | Licencia del modelo base (no comercial en algunas variantes) | Hugging Face |
 
 La diferencia clave no es la calidad, sino el orden de magnitud: ZYI-1.4-TINY-ReasonFast es aproximadamente 15 veces mas pequeno que SD 1.5 o PixArt-alpha, a costa de reducir la resolucion a 256x256 y de no contar con evaluaciones publicadas. En ausencia de FID o CLIP score, no es posible afirmar que sea competitivo en calidad de imagen frente a ninguno de ellos.
 
@@ -96,7 +96,7 @@ La diferencia clave no es la calidad, sino el orden de magnitud: ZYI-1.4-TINY-Re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caikybaldo999/ZYI-1.4-TINY-ReasonFast
+- Modelo en Hugging Face: https://huggingface.co/caikybaldo999/ZYI-1.4-TINY-ReasonFast
 - Modelo base declarado: https://huggingface.co/caikybaldo999/ZYI-1.3-TINY-ReasonFast
 - Dataset de fine-tuning principal: https://huggingface.co/datasets/LucasFang/FLUX-Reason-6M
 - Dataset de fine-tuning secundario: https://huggingface.co/datasets/pixparse/cc3m-wds

@@ -4,7 +4,7 @@
 
 El modelo `llama-3.1-8b-instruct_lbox-statutory-element-matcher_fallback_ffn-only` es un ajuste fino supervisado (SFT) de Meta desarrollado por el usuario Jongbin-kr. Se trata de una especialización del modelo base `meta-llama/Llama-3.1-8B-Instruct` orientada a la tarea de emparejar elementos legales o estatutarios en texto jurídico. El nombre del repositorio sugiere que su función principal es detectar y asociar componentes normativos dentro de documentos legales, una tarea habitual en sistemas de análisis y gestión de legislación.
 
-El entrenamiento se realizó con la librería TRL de HuggingFace, aplicando un ajuste que congela las capas de atención y actualiza únicamente las capas feed-forward (FFN). Esta estrategia, indicada por el sufijo `ffn-only`, permite un fine-tuning más ligero y eficiente en cuanto a coste computacional, aunque el modelo resultante sigue apoyándose en la arquitectura completa del modelo base para la inferencia.
+El entrenamiento se realizó con la librería TRL de Hugging Face, aplicando un ajuste que congela las capas de atención y actualiza únicamente las capas feed-forward (FFN). Esta estrategia, indicada por el sufijo `ffn-only`, permite un fine-tuning más ligero y eficiente en cuanto a coste computacional, aunque el modelo resultante sigue apoyándose en la arquitectura completa del modelo base para la inferencia.
 
 El repositorio contiene solo 0.6 GB de pesos, lo que sugiere que aloja un adaptador o un subconjunto de pesos en lugar del modelo completo de 8.000 millones de parámetros. A día de hoy el modelo no tiene descargas ni métricas de uso, y no se han publicado benchmarks específicos ni una ficha técnica detallada más allá de la que acompaña al modelo.
 
@@ -23,7 +23,7 @@ El repositorio contiene solo 0.6 GB de pesos, lo que sugiere que aloja un adapta
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura de Llama-3.1-8B-Instruct, un transformer decoder-only con 8.000 millones de parámetros y una ventana de contexto de 128.000 tokens. El ajuste se ha llevado a cabo mediante entrenamiento supervisado (SFT) utilizando la librería TRL de HuggingFace. Las versiones registradas son TRL 0.29.1, Transformers 5.9.0, PyTorch 2.11.0 y Datasets 4.4.1.
+El modelo parte de la arquitectura de Llama-3.1-8B-Instruct, un transformer decoder-only con 8.000 millones de parámetros y una ventana de contexto de 128.000 tokens. El ajuste se ha llevado a cabo mediante entrenamiento supervisado (SFT) utilizando la librería TRL de Hugging Face. Las versiones registradas son TRL 0.29.1, Transformers 5.9.0, PyTorch 2.11.0 y Datasets 4.4.1.
 
 La principal particularidad es que el fine-tuning se ha limitado a las capas feed-forward, como indica el sufijo `fallback_ffn-only`. Esto implica que los pesos de las capas de atención permanecen congelados y solo se actualizan los bloques FFN, una técnica que reduce el número de parámetros entrenables y el coste del proceso de ajuste. No se han publicado detalles sobre el dataset de entrenamiento, su composición ni el número de tokens utilizados. Tampoco consta que se hayan aplicado técnicas de RLHF o DPO más allá del SFT inicial.
 
@@ -61,15 +61,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Jongbin-kr/llama-3.1-8b-instruct_lbox-statutory-element-matcher_fallback_ffn-only | 8.000 M (base) | 128.000 tokens | no disponible | HuggingFace |
-| Jongbin-kr/llama-3.1-8b-instruct_lbox-legal-case-typology-architect_fallback_ffn-only | 8.000 M (base) | 128.000 tokens | no disponible | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct (modelo base) | 8.000 M | 128.000 tokens | Llama 3.1 Community License | HuggingFace, descarga oficial |
+| Jongbin-kr/llama-3.1-8b-instruct_lbox-statutory-element-matcher_fallback_ffn-only | 8.000 M (base) | 128.000 tokens | no disponible | Hugging Face |
+| Jongbin-kr/llama-3.1-8b-instruct_lbox-legal-case-typology-architect_fallback_ffn-only | 8.000 M (base) | 128.000 tokens | no disponible | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct (modelo base) | 8.000 M | 128.000 tokens | Llama 3.1 Community License | Hugging Face, descarga oficial |
 
 Los dos modelos de Jongbin-kr comparten arquitectura, tamaño y sufijo `ffn-only`, pero difieren en la tarea especializada: uno es un "legal case typology architect" y el otro un "statutory element matcher". No se dispone de benchmarks que permitan comparar su rendimiento entre sí ni con el modelo base.
 
 ## Limitaciones y advertencias
 
-- La licencia del modelo no esta especificada en la ficha de HuggingFace, lo que supone una incertidumbre significativa para cualquier uso comercial. El model card solo indica `license: license` sin detallar los terminos.
+- La licencia del modelo no esta especificada en la ficha de Hugging Face, lo que supone una incertidumbre significativa para cualquier uso comercial. El model card solo indica `license: license` sin detallar los terminos.
 - No se han publicado resultados de benchmarks ni evaluaciones independientes, por lo que el rendimiento real en tareas de emparejamiento legal no ha sido validado externamente.
 - Al ser un ajuste fino supervisado, el modelo puede heredar sesgos presentes en el dataset de entrenamiento, que en este caso no ha sido descrito ni documentado.
 - La especializacion en un dominio tan concreto puede provocar una degradacion del rendimiento en tareas generales fuera del contexto legal, especialmente si se compara con el modelo base.
@@ -79,7 +79,7 @@ Los dos modelos de Jongbin-kr comparten arquitectura, tamaño y sufijo `ffn-only
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-statutory-element-matcher_fallback_ffn-only)
+- [Modelo en Hugging Face](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-statutory-element-matcher_fallback_ffn-only)
 - [Modelo base meta-llama/Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
 - [Registro de entrenamiento en Weights & Biases](https://wandb.ai/cvar_ddpo/sft_dense_lbox_roster_ffn_only/runs/m9je3n70)
 - [Libreria TRL](https://github.com/huggingface/trl)

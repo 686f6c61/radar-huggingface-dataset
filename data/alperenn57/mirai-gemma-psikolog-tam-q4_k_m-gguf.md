@@ -24,7 +24,7 @@ Por tanto, debe tratarse como un artefacto experimental sin validacion externa: 
 | Autor | alperenn57 |
 | Tamano del repositorio | 2,5 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-10-04 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-04 (segun metadatos de Hugging Face) |
 | Compatibilidad de despliegue | llama.cpp, llama-server, endpoints compatibles (tag `endpoints_compatible`) |
 
 ## Arquitectura y entrenamiento
@@ -92,7 +92,7 @@ La diferencia relevante no es de tamano, sino de trazabilidad: los tres modelos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alperenn57/mirAI-Gemma-psikolog-tam-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/alperenn57/mirAI-Gemma-psikolog-tam-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/alperenn57/mirAI-Gemma-psikolog-tam
 - Espacio de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

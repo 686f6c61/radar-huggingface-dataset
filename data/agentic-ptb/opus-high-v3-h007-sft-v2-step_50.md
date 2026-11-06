@@ -68,6 +68,6 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v3.h007.sft-v2.step_50)
+- [Modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v3.h007.sft-v2.step_50)
 - [Dataset asociado: agentic-ptb/opus-high-v3-data](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Índice de datasets de agentic-ptb](https://huggingface.co/datasets/agentic-ptb/INDEX)

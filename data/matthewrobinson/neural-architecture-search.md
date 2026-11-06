@@ -83,5 +83,5 @@ No disponible. No existen modelos comparables porque el repositorio no contiene 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/matthewrobinson/neural-architecture-search
+- Hugging Face: https://huggingface.co/matthewrobinson/neural-architecture-search
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información disponible.

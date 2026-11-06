@@ -4,7 +4,7 @@
 
 MMh3-MysticV2 es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes a partir de texto, desarrollado por el usuario CH522. Está diseñado para integrarse sobre el modelo base `lynaNSFW/minimaxH3_Collection`, un modelo de difusión orientado a contenido visual. El repositorio tiene un tamaño de 0,2 GB y se distribuye bajo licencia Apache-2.0, lo que permite su uso y modificación con ciertas libertades, siempre que se respeten los términos de la licencia.
 
-El modelo se publica en HuggingFace con el pipeline `text-to-image` y la librería `diffusers`, lo que indica que se carga como un adaptador sobre un modelo de difusión existente. No se proporciona información sobre el número de parámetros, la arquitectura interna del modelo base ni el proceso de entrenamiento. La relevancia actual de este tipo de LoRA reside en la personalización de estilos visuales sin necesidad de reentrenar el modelo completo, aunque en este caso el contenido está claramente orientado a temática adulta, como sugieren tanto el nombre del autor del modelo base como los resultados de búsqueda web asociados.
+El modelo se publica en Hugging Face con el pipeline `text-to-image` y la librería `diffusers`, lo que indica que se carga como un adaptador sobre un modelo de difusión existente. No se proporciona información sobre el número de parámetros, la arquitectura interna del modelo base ni el proceso de entrenamiento. La relevancia actual de este tipo de LoRA reside en la personalización de estilos visuales sin necesidad de reentrenar el modelo completo, aunque en este caso el contenido está claramente orientado a temática adulta, como sugieren tanto el nombre del autor del modelo base como los resultados de búsqueda web asociados.
 
 ## Especificaciones tecnicas
 
@@ -69,6 +69,6 @@ No se dispone de informacion sobre modelos comparables en los datos proporcionad
 
 ## Enlaces
 
-- HuggingFace: [CH522/MMh3-MysticV2](https://huggingface.co/CH522/MMh3-MysticV2)
+- Hugging Face: [CH522/MMh3-MysticV2](https://huggingface.co/CH522/MMh3-MysticV2)
 - Enlace al safetensors encontrado en busqueda web: [MysticXXX_MMH3-V2.safetensors - olivv-cs/ltx2](https://huggingface.co/olivv-cs/ltx2/blob/main/MysticXXX_MMH3-V2.safetensors)
 - Enlace al safetensors encontrado en busqueda web: [MysticXXX_MMH3-V2.safetensors - Serenak/chilloutmix](https://huggingface.co/Serenak/chilloutmix/blob/main/MysticXXX_MMH3-V2.safetensors)

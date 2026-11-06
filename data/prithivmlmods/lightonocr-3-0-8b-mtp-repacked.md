@@ -84,7 +84,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/prithivMLmods/LightOnOCR-3-0.8B-MTP-Repacked
+- Repositorio Hugging Face: https://huggingface.co/prithivMLmods/LightOnOCR-3-0.8B-MTP-Repacked
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-3-0.8B
 - Carpeta GGUF: https://huggingface.co/prithivMLmods/LightOnOCR-3-0.8B-MTP-Repacked/tree/main/GGUF
 - Organizacion lightonai: https://huggingface.co/lightonai

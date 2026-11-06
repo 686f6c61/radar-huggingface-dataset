@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AeroAIAviation/aero_image-1` es un repositorio de modelo publicado en HuggingFace por el usuario u organizacion AeroAIAviation bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no incluye model card con contenido tecnico (unicamente el bloque de metadatos de licencia), no declara pipeline de inferencia, no especifica idiomas soportados y acumula 0 descargas y 0 likes. El identificador sugiere un modelo orientado a imagen y al dominio de aviacion, pero esta interpretacion no esta confirmada por ninguna documentacion oficial del autor.
+`AeroAIAviation/aero_image-1` es un repositorio de modelo publicado en Hugging Face por el usuario u organizacion AeroAIAviation bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no incluye model card con contenido tecnico (unicamente el bloque de metadatos de licencia), no declara pipeline de inferencia, no especifica idiomas soportados y acumula 0 descargas y 0 likes. El identificador sugiere un modelo orientado a imagen y al dominio de aviacion, pero esta interpretacion no esta confirmada por ninguna documentacion oficial del autor.
 
 La relevancia practica de esta ficha es limitada: sin model card, sin pesos documentados, sin arquitectura declarada y sin benchmarks, no es posible evaluar el modelo para uso en produccion ni compararlo con alternativas. Cualquier integracion exigiria primero inspeccionar los ficheros del repositorio, verificar el formato de pesos y validar el comportamiento empiricamente.
 
@@ -92,5 +92,5 @@ No disponible. La ausencia de datos sobre parametros, contexto, modalidad y rend
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AeroAIAviation/aero_image-1
+- Repositorio en Hugging Face: https://huggingface.co/AeroAIAviation/aero_image-1
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

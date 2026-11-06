@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `paliydmitro/Pinco` alojado en HuggingFace no contiene un modelo de inteligencia artificial. La model card publicada por el autor es, en su totalidad, un texto promocional en ruso que recomienda un sitio de apuestas y casino en linea (`pinco-tajikistan.tj`). No se describe ninguna arquitectura, ningun conjunto de datos de entrenamiento, ningun proceso de entrenamiento ni ningun uso previsto del artefacto.
+El repositorio `paliydmitro/Pinco` alojado en Hugging Face no contiene un modelo de inteligencia artificial. La model card publicada por el autor es, en su totalidad, un texto promocional en ruso que recomienda un sitio de apuestas y casino en linea (`pinco-tajikistan.tj`). No se describe ninguna arquitectura, ningun conjunto de datos de entrenamiento, ningun proceso de entrenamiento ni ningun uso previsto del artefacto.
 
-El repositorio no incluye informacion sobre pesos, configuracion, tokenizador o pipeline. Los metadatos de HuggingFace solo indican el identificador del autor, la etiqueta `region:us`, cero descargas y cero "likes", y fechas de creacion y actualizacion del 2 de noviembre de 2026. No hay licencia declarada, ni idiomas declarados, ni pipeline asignado.
+El repositorio no incluye informacion sobre pesos, configuracion, tokenizador o pipeline. Los metadatos de Hugging Face solo indican el identificador del autor, la etiqueta `region:us`, cero descargas y cero "likes", y fechas de creacion y actualizacion del 2 de noviembre de 2026. No hay licencia declarada, ni idiomas declarados, ni pipeline asignado.
 
 Por tanto, esta ficha no puede documentar un modelo tecnico real. Lo que sigue refleja la ausencia de datos verificables y advierte de que el contenido del repositorio es material promocional de juego de azar, no un artefacto de IA. Cualquier evaluacion tecnica, comparativa de rendimiento o estimacion de hardware es imposible con la informacion disponible.
 
@@ -72,5 +72,5 @@ No disponible. No existe un modelo tecnico identificable que pueda compararse co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/paliydmitro/Pinco
+- Repositorio en Hugging Face: https://huggingface.co/paliydmitro/Pinco
 - Enlace promocional incluido en la model card (contenido de terceros, no verificado): https://pinco-tajikistan.tj/

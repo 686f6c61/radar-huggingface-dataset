@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/felixhayashi/clip-sentiment
+- Repositorio Hugging Face: https://huggingface.co/felixhayashi/clip-sentiment
 - Perfil GitHub del autor: https://github.com/felixhayashi?tab=repositories
 - Repositorio de OpenAI CLIP (referencia de arquitectura similar): https://github.com/openai/CLIP
 

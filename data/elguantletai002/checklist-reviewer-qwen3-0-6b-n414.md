@@ -88,7 +88,7 @@ No se dispone de datos de otros adaptadores o modelos open source especializados
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/elguantletai002/checklist-reviewer-qwen3-0.6b-n414
+- Repositorio Hugging Face: https://huggingface.co/elguantletai002/checklist-reviewer-qwen3-0.6b-n414
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Guia completa de la familia Qwen3: https://insiderllm.com/guides/qwen3-complete-guide/
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

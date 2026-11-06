@@ -69,8 +69,8 @@ No se han publicado comparativas con otros modelos en la información disponible
 
 | Modelo | Parámetros | DER | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| speaker-segmentation-fine-tuned-synthetic | 1.473.515 | 0.1775 | MIT | HuggingFace |
-| pyannote/segmentation-3.0 | no disponible | no disponible | MIT | HuggingFace |
+| speaker-segmentation-fine-tuned-synthetic | 1.473.515 | 0.1775 | MIT | Hugging Face |
+| pyannote/segmentation-3.0 | no disponible | no disponible | MIT | Hugging Face |
 
 El modelo presentado es una adaptación fine-tuned del base `pyannote/segmentation-3.0`. No se dispone de datos comparables de otros modelos de diarización en la información proporcionada.
 
@@ -85,6 +85,6 @@ El modelo presentado es una adaptación fine-tuned del base `pyannote/segmentati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amirhosein-prdv/speaker-segmentation-fine-tuned-synthetic
+- Hugging Face: https://huggingface.co/amirhosein-prdv/speaker-segmentation-fine-tuned-synthetic
 - GitHub del autor: https://github.com/amirhosein-prdv
 - Repositorio de pyannote-audio: https://github.com/pyannote/pyannote-audio

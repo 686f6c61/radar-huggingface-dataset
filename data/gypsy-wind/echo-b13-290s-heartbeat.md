@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Gypsy-Wind/Echo-B13-290s-heartbeat es un modelo publicado en HuggingFace por el usuario Gypsy-Wind. La informacion disponible publicamente es minima: el repositorio no incluye pipeline declarado, no especifica idiomas soportados, no registra descargas ni likes y su model card se limita a la declaracion de licencia (WTFPL). No hay documentacion tecnica asociada, ni paper, ni blog de presentacion, ni repositorio de codigo enlazado.
+Gypsy-Wind/Echo-B13-290s-heartbeat es un modelo publicado en Hugging Face por el usuario Gypsy-Wind. La informacion disponible publicamente es minima: el repositorio no incluye pipeline declarado, no especifica idiomas soportados, no registra descargas ni likes y su model card se limita a la declaracion de licencia (WTFPL). No hay documentacion tecnica asociada, ni paper, ni blog de presentacion, ni repositorio de codigo enlazado.
 
 No es posible confirmar la arquitectura, el numero de parametros, la longitud de contexto ni el proceso de entrenamiento. El identificador del repositorio ("B13") podria sugerir un orden de magnitud de parametros en torno a los 13000 millones, pero se trata de una inferencia a partir del nombre y no de un dato verificado; no debe tomarse como especificacion. El sufijo "290s-heartbeat" tampoco tiene explicacion documentada.
 
-La relevancia de esta ficha es, por tanto, limitada y de caracter esencialmente descriptivo: sirve para constatar que el modelo existe en el registro publico de HuggingFace, que se distribuye bajo WTFPL y que, a fecha de la informacion consultada, carece de documentacion tecnica que permita evaluarlo. Cualquier uso en produccion exigiria una evaluacion empirica directa sobre los pesos.
+La relevancia de esta ficha es, por tanto, limitada y de caracter esencialmente descriptivo: sirve para constatar que el modelo existe en el registro publico de Hugging Face, que se distribuye bajo WTFPL y que, a fecha de la informacion consultada, carece de documentacion tecnica que permita evaluarlo. Cualquier uso en produccion exigiria una evaluacion empirica directa sobre los pesos.
 
 ## Especificaciones tecnicas
 
@@ -43,7 +43,7 @@ Cualquier afirmacion sobre capacidades concretas requeriria ejecutar el modelo y
 Los casos siguientes se plantean como hipotesis de aplicacion condicionadas a que una evaluacion empirica confirme que el modelo es un modelo de lenguaje de proposito general con las capacidades que sugiere el identificador. No deben interpretarse como capacidades verificadas.
 
 - Generacion de texto general: si el modelo se comporta como un LLM denso, podria emplearse para redaccion, resumen y reescritura, pero antes habria que medir su calidad con un conjunto de evaluacion propio, dado que no existen benchmarks publicados.
-- Prototipado local en investigacion: util como sujeto de estudio para analizar pesos sin documentar, reproducibilidad de publicaciones en HuggingFace o practicas de licenciamiento, mas que como componente de un sistema en produccion.
+- Prototipado local en investigacion: util como sujeto de estudio para analizar pesos sin documentar, reproducibilidad de publicaciones en Hugging Face o practicas de licenciamiento, mas que como componente de un sistema en produccion.
 - Experimentacion con licencias permisivas: la WTFPL no impone restricciones de uso, lo que permite probar el modelo en entornos corporativos sin negociacion de licencia, siempre que se asuma la ausencia total de garantias.
 - Evaluacion comparativa interna: puede incorporarse a un banco de pruebas propio para medir perplejidad, coherencia y seguimiento de instrucciones frente a modelos con documentacion completa.
 - Filtrado y clasificacion de texto: solo si una evaluacion previa demuestra competencia en tareas discriminativas; no hay evidencia al respecto.
@@ -79,7 +79,7 @@ No disponible. Al no conocerse parametros, contexto, licencia efectiva de uso ma
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Gypsy-Wind/Echo-B13-290s-heartbeat
+- Repositorio en Hugging Face: https://huggingface.co/Gypsy-Wind/Echo-B13-290s-heartbeat
 - Texto de la licencia WTFPL: http://www.wtfpl.net/
 - Resultados de busqueda web consultados: no aportan informacion tecnica sobre el modelo. Las entradas recuperadas tratan sobre el termino "Gypsy" aplicado al pueblo romaní (articulos de Wikipedia en ingles y frances), un reportaje historico y una serie de television homonima, sin relacion con este repositorio.
 - Paper, blog de presentacion, repositorio de codigo, demos o datasets asociados: no disponibles.

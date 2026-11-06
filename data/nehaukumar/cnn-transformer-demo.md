@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Cnn Transformer for Matching es un repositorio de código publicado por el usuario nehaukumar en HuggingFace que contiene una implementación propia y compacta en PyTorch de una arquitectura híbrida CNN-Transformer orientada a tareas de matching (emparejamiento o ranking de pares de entradas). El repositorio declara internamente una configuración de escala "xlarge", pero el checkpoint real en safetensors contiene únicamente 16.576 parámetros totales, lo que lo sitúa muy lejos de cualquier modelo utilizable en producción: se trata de un artefacto de demostración para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño.
+Cnn Transformer for Matching es un repositorio de código publicado por el usuario nehaukumar en Hugging Face que contiene una implementación propia y compacta en PyTorch de una arquitectura híbrida CNN-Transformer orientada a tareas de matching (emparejamiento o ranking de pares de entradas). El repositorio declara internamente una configuración de escala "xlarge", pero el checkpoint real en safetensors contiene únicamente 16.576 parámetros totales, lo que lo sitúa muy lejos de cualquier modelo utilizable en producción: se trata de un artefacto de demostración para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño.
 
 El propio autor especifica en la model card que `model.safetensors` es un checkpoint de inicialización válido para pruebas, no un checkpoint entrenado ni evaluado, y que no se reclama ninguna puntuación de benchmark. La receta de experimento incluida (optimizador Adam con calentamiento lineal) corresponde a valores de partida del script, no a evidencia de un entrenamiento completado. Por tanto, la relevancia actual del repositorio es exclusivamente como pieza de referencia arquitectónica y como plantilla reproducible, no como modelo con capacidades funcionales demostradas.
 
-La arquitectura combina atención de tipo flash, fusión tensorial (tensor fusion), activación mish y normalización RMSNorm. No se dispone de información sobre datos de entrenamiento, idiomas soportados, longitud de contexto ni licencias de datos de origen. La licencia del código y los pesos es BSD-3-Clause. Cabe señalar que los metadatos de HuggingFace indican una fecha de creación de 2026-09-15 y cero descargas y cero likes en el momento de redactar esta ficha.
+La arquitectura combina atención de tipo flash, fusión tensorial (tensor fusion), activación mish y normalización RMSNorm. No se dispone de información sobre datos de entrenamiento, idiomas soportados, longitud de contexto ni licencias de datos de origen. La licencia del código y los pesos es BSD-3-Clause. Cabe señalar que los metadatos de Hugging Face indican una fecha de creación de 2026-09-15 y cero descargas y cero likes en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La arquitectura combina atención de tipo flash, fusión tensorial (tensor fusio
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors (acompanado de `config.json`, `training_args.json` y `predict.py` en PyTorch) |
 
-Otros datos relevantes: escala declarada por el autor "xlarge" (etiqueta de configuración generada, no coincidente con el recuento real de parámetros), tamaño del repositorio 0,0 GB, pipeline de HuggingFace no disponible, 0 descargas y 0 likes.
+Otros datos relevantes: escala declarada por el autor "xlarge" (etiqueta de configuración generada, no coincidente con el recuento real de parámetros), tamaño del repositorio 0,0 GB, pipeline de Hugging Face no disponible, 0 descargas y 0 likes.
 
 ## Arquitectura y entrenamiento
 
@@ -83,6 +83,6 @@ No disponible. No se han identificado en la información proporcionada alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nehaukumar/cnn-transformer-demo
-- Repositorio y artefactos incluidos en HuggingFace: `predict.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
+- Hugging Face: https://huggingface.co/nehaukumar/cnn-transformer-demo
+- Repositorio y artefactos incluidos en Hugging Face: `predict.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la búsqueda web realizada; los resultados devueltos son irrelevantes para este modelo.

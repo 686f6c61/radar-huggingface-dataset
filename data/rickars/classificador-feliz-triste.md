@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rickars/classificador-feliz-triste` es un modelo publicado en HuggingFace por el usuario rickars. El identificador del repositorio sugiere que se trata de un clasificador binario de sentimiento (feliz/triste) en castellano o portugues, aunque la model card no proporciona ninguna descripcion funcional, arquitectura ni detalles de entrenamiento. El repositorio no incluye informacion sobre el pipeline de HuggingFace, los idiomas soportados ni el tamano del modelo.
+`rickars/classificador-feliz-triste` es un modelo publicado en Hugging Face por el usuario rickars. El identificador del repositorio sugiere que se trata de un clasificador binario de sentimiento (feliz/triste) en castellano o portugues, aunque la model card no proporciona ninguna descripcion funcional, arquitectura ni detalles de entrenamiento. El repositorio no incluye informacion sobre el pipeline de Hugging Face, los idiomas soportados ni el tamano del modelo.
 
 El modelo se publico el 2 de noviembre de 2026 y no registra descargas ni likes en el momento de la consulta. La unica metainformacion disponible es la licencia MIT y la region de publicacion (US). No hay datos sobre arquitectura, parametros, contexto, cuantizacion ni formato de pesos.
 
@@ -77,5 +77,5 @@ No disponible. No se han identificado modelos comparables porque no se conoce la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rickars/classificador-feliz-triste
+- Repositorio en Hugging Face: https://huggingface.co/rickars/classificador-feliz-triste
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

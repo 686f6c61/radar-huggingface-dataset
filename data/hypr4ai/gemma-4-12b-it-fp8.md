@@ -86,8 +86,8 @@ La información disponible solo permite comparar con el propio modelo base. No s
 
 | Modelo | Parametros | Contexto | Cuantizacion | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HYPR4AI/Gemma-4-12B-it-FP8 | 11.959.730.224 | No disponible | FP8 dinámica (llmcompressor, compressed-tensors) | HotpotQA Distractor [0:500]: EM 65,20%, F1 80,38% | Apache 2.0 (con términos Gemma 4) | HuggingFace, 0 descargas |
-| google/gemma-4-12B-it (modelo base) | No disponible en la información (el BF16 ocupa ~23,9 GB) | No disponible | BF16 sin cuantizar | No disponible | Términos de Gemma 4 / Apache 2.0 | HuggingFace (modelo base referenciado) |
+| HYPR4AI/Gemma-4-12B-it-FP8 | 11.959.730.224 | No disponible | FP8 dinámica (llmcompressor, compressed-tensors) | HotpotQA Distractor [0:500]: EM 65,20%, F1 80,38% | Apache 2.0 (con términos Gemma 4) | Hugging Face, 0 descargas |
+| google/gemma-4-12B-it (modelo base) | No disponible en la información (el BF16 ocupa ~23,9 GB) | No disponible | BF16 sin cuantizar | No disponible | Términos de Gemma 4 / Apache 2.0 | Hugging Face (modelo base referenciado) |
 | Alternativas de terceros del mismo tamaño | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -105,7 +105,7 @@ La información disponible solo permite comparar con el propio modelo base. No s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYPR4AI/Gemma-4-12B-it-FP8
+- Modelo en Hugging Face: https://huggingface.co/HYPR4AI/Gemma-4-12B-it-FP8
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Términos de licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Dataset de evaluación: https://huggingface.co/datasets/hotpotqa/hotpot_qa

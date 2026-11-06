@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo M2RL-RL_Agent es un modelo publicado en HuggingFace por el usuario Jackwang111 bajo licencia Apache 2.0. En la model card únicamente se indica la licencia, sin descripción técnica. El nombre del modelo sugiere una conexión con el framework M2RL (Multi-player Multi-agent Reinforcement Learning), presentado en IJCAI 2024, que proporciona herramientas para entrenar agentes de refuerzo en juegos complejos. Sin embargo, no se ha encontrado documentación que confirme que este modelo sea un componente del framework ni que describa su arquitectura o propósito. No se dispone de información suficiente para evaluar el modelo.
+El modelo M2RL-RL_Agent es un modelo publicado en Hugging Face por el usuario Jackwang111 bajo licencia Apache 2.0. En la model card únicamente se indica la licencia, sin descripción técnica. El nombre del modelo sugiere una conexión con el framework M2RL (Multi-player Multi-agent Reinforcement Learning), presentado en IJCAI 2024, que proporciona herramientas para entrenar agentes de refuerzo en juegos complejos. Sin embargo, no se ha encontrado documentación que confirme que este modelo sea un componente del framework ni que describa su arquitectura o propósito. No se dispone de información suficiente para evaluar el modelo.
 
 ## Especificaciones técnicas
 
@@ -50,6 +50,6 @@ No disponible. No se ha encontrado información suficiente para comparar este mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jackwang111/M2RL-RL_Agent
+- Hugging Face: https://huggingface.co/Jackwang111/M2RL-RL_Agent
 - Paper M2RL (IJCAI 2024): https://www.ijcai.org/proceedings/2024/1046
 - PDF del paper: https://www.ijcai.org/proceedings/2024/1046.pdf

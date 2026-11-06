@@ -85,7 +85,7 @@ La comparacion con modelos publicados solo es orientativa: no existen datos de r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-10-discretelogarithm-27d15d0d816d
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-10-discretelogarithm-27d15d0d816d
 - Coleccion "RLVE OPD Teachers": https://huggingface.co/collections/davidheineman/rlve-opd-teachers
 - Coleccion "RLVE OPD Teachers (Qwen 2.5 1.5B)": https://huggingface.co/collections/davidheineman/rlve-opd-teachers-qwen-25-15b
 - Repositorio GitHub del proyecto RLVE: https://github.com/davidheineman/rlve

@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Whisper tiny Portuguese (este modelo) | 37,7 M | no disponible | 11,9478 (Portuguese English) | apache-2.0 | HuggingFace |
-| openai/whisper-tiny | 37,7 M | 30 s de audio | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-base | 74,4 M | 30 s de audio | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-small | 244 M | 30 s de audio | no disponible en esta ficha | apache-2.0 | HuggingFace |
+| Whisper tiny Portuguese (este modelo) | 37,7 M | no disponible | 11,9478 (Portuguese English) | apache-2.0 | Hugging Face |
+| openai/whisper-tiny | 37,7 M | 30 s de audio | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-base | 74,4 M | 30 s de audio | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-small | 244 M | 30 s de audio | no disponible en esta ficha | apache-2.0 | Hugging Face |
 
 La comparativa se limita a la familia Whisper porque no se dispone de datos de benchmarks de otros modelos ASR en la informacion proporcionada. Los valores de WER de los modelos base no se incluyen porque no estan disponibles en la informacion consultada.
 
@@ -87,7 +87,7 @@ La comparativa se limita a la familia Whisper porque no se dispone de datos de b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SarahMcCormack/whisper-tiny_to_portuguese_english
+- Modelo en Hugging Face: https://huggingface.co/SarahMcCormack/whisper-tiny_to_portuguese_english
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de Whisper (Radford et al., 2022): no disponible en la informacion proporcionada
 - Repositorio de Transformers: no disponible en la informacion proporcionada

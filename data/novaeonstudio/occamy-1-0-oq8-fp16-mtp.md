@@ -20,7 +20,7 @@ La arquitectura subyacente es de la familia Qwen3.5/3.6, con 256 expertos (8 enr
 | Idiomas soportados | en (solo inglés según la model card) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | Nativo de MLX/oMLX (`library_name: mlx`); la model card no especifica explícitamente safetensors ni GGUF. La cabeza MTP se injerta con el layout `language_model.mtp.*` |
-| Tamaño en disco | ~38 GB (39 GB de pesos según la nota de carga en frío). Los metadatos de HuggingFace indican 0,0 GB, dato inconsistente |
+| Tamaño en disco | ~38 GB (39 GB de pesos según la nota de carga en frío). Los metadatos de Hugging Face indican 0,0 GB, dato inconsistente |
 | Motor de inferencia | oMLX (Apple MLX), motor VLM |
 | Modalidad | image-text-to-text (texto e imagen de entrada, texto de salida) |
 
@@ -87,8 +87,8 @@ No hay datos de benchmarks comparativos con modelos alternativos en la informaci
 
 | Modelo | Parámetros | Contexto | IFEval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Occamy-1.0 oQ8-fp16-mtp (esta build) | 35B totales / ~3B activos | 262.144 | 84,58 (medido por el publicador, sin thinking) | Apache-2.0 | HuggingFace, formato oMLX |
-| Accio-Lab/occamy-1.0 (base) | 35B totales / ~3B activos | 262.144 | 91,53 (reportado en la model card del base) | Apache-2.0 | HuggingFace, BF16 |
+| Occamy-1.0 oQ8-fp16-mtp (esta build) | 35B totales / ~3B activos | 262.144 | 84,58 (medido por el publicador, sin thinking) | Apache-2.0 | Hugging Face, formato oMLX |
+| Accio-Lab/occamy-1.0 (base) | 35B totales / ~3B activos | 262.144 | 91,53 (reportado en la model card del base) | Apache-2.0 | Hugging Face, BF16 |
 | Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No hay datos de benchmarks comparativos con modelos alternativos en la informaci
 - Dependencia de plataforma: empaquetado exclusivamente para MLX/oMLX sobre Apple Silicon; no es directamente utilizable en CUDA ni en runtimes estándar de servidor sin reconversión.
 - Adopción nula: cero descargas y cero likes en el momento del análisis, sin validación independiente de los números publicados.
 - Los benchmarks declarados proceden de un único equipo (un M5 Max de 128 GB) y de la propia suite de sondas del publicador; no son reproducibles en otro hardware por terceros con los datos aportados.
-- El tamaño del repositorio figura como 0,0 GB en los metadatos de HuggingFace, lo que contradice los ~38 GB de pesos indicados en la model card; conviene verificar los ficheros antes de planificar el despliegue.
+- El tamaño del repositorio figura como 0,0 GB en los metadatos de Hugging Face, lo que contradice los ~38 GB de pesos indicados en la model card; conviene verificar los ficheros antes de planificar el despliegue.
 - Riesgo de alucinación: aunque la suite agéntica mide 6/6 en ausencia de herramientas inventadas, es una prueba interna de tamaño reducido y no sustituye a una evaluación en producción.
 - La model card está truncada en la sección de inicio rápido (mlx-vlm), por lo que las instrucciones completas de uso no están disponibles en la información recogida.
 - Licencia Apache-2.0: permite uso comercial, pero obliga a conservar avisos de copyright y licencia, y a indicar los cambios realizados respecto al modelo base.
@@ -107,7 +107,7 @@ No hay datos de benchmarks comparativos con modelos alternativos en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NovaeonStudio/Occamy-1.0-oQ8-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/NovaeonStudio/Occamy-1.0-oQ8-fp16-mtp
 - Modelo base: https://huggingface.co/Accio-Lab/occamy-1.0
 - Repositorio de oMLX: https://github.com/jundot/omlx
 - Sitio del publicador: https://novaeon.studio

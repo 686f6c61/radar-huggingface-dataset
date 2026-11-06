@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| PseudoBrain-Qwen3-Coder-Next-FP8 | ~80B totales, ~3B activos | 1M | Apache 2.0 | HuggingFace (31 descargas) | Modificación de terceros sobre Qwen3-Coder-Next, requiere plugin vLLM |
-| Qwen3-Coder-Next (base) | ~80B totales, ~3B activos | No disponible en la información | Apache 2.0 (según modelo base) | HuggingFace (modelo oficial) | Modelo oficial de Alibaba Qwen; sin la modificación de memoria PseudoBrain |
-| Qwen3-Coder-Next-FP8 | ~80B totales, ~3B activos | No disponible en la información | Apache 2.0 | HuggingFace | Versión oficial cuantizada en FP8 del modelo base |
-| Qwen3-Coder-Next-AWQ | ~80B totales, ~3B activos | No disponible en la información | Apache 2.0 | HuggingFace | Cuantización AWQ de terceros (qtum) |
+| PseudoBrain-Qwen3-Coder-Next-FP8 | ~80B totales, ~3B activos | 1M | Apache 2.0 | Hugging Face (31 descargas) | Modificación de terceros sobre Qwen3-Coder-Next, requiere plugin vLLM |
+| Qwen3-Coder-Next (base) | ~80B totales, ~3B activos | No disponible en la información | Apache 2.0 (según modelo base) | Hugging Face (modelo oficial) | Modelo oficial de Alibaba Qwen; sin la modificación de memoria PseudoBrain |
+| Qwen3-Coder-Next-FP8 | ~80B totales, ~3B activos | No disponible en la información | Apache 2.0 | Hugging Face | Versión oficial cuantizada en FP8 del modelo base |
+| Qwen3-Coder-Next-AWQ | ~80B totales, ~3B activos | No disponible en la información | Apache 2.0 | Hugging Face | Cuantización AWQ de terceros (qtum) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada. Las alternativas de otros fabricantes con contexto de 1M (por ejemplo, modelos con arquitecturas híbridas o de atención lineal) no se detallan en la documentación disponible.
 
@@ -92,13 +92,13 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-Qwen3-Coder-Next-FP8
+- Modelo en Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-Qwen3-Coder-Next-FP8
 - Repositorio GitHub del proyecto PseudoBrain: https://github.com/defnotean/pseudobrain
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf
 - Paper de arquitectura (Markdown): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.md
 - Benchmark receipts: https://github.com/defnotean/pseudobrain/tree/main/reports
 - Perfil del autor en GitHub: https://github.com/defnotean
-- Perfil del autor en HuggingFace: https://huggingface.co/defnoteatin
+- Perfil del autor en Hugging Face: https://huggingface.co/defnoteatin
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-Next
 - Modelo base en FP8: https://huggingface.co/Qwen/Qwen3-Coder-Next-FP8
 - Variante AWQ: https://huggingface.co/qtum/Qwen3-Coder-Next-AWQ

@@ -70,7 +70,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. El modelo es u
 
 ## Enlaces
 
-- Repo de HuggingFace: https://huggingface.co/blackfan23/Qwen3.5-2B-oQ8e-mtp
+- Repo de Hugging Face: https://huggingface.co/blackfan23/Qwen3.5-2B-oQ8e-mtp
 - Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Qualcomm AI Hub (Qwen3.5-2B): https://aihub.qualcomm.com/compute/models/qwen3_5_2b
 - CanIRun.ai (Qwen 3.5 2B): https://www.canirun.ai/model/qwen3.5-2b

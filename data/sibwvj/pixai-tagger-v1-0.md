@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PixAI Tagger v1.0 es un modelo de clasificacion de imagenes multi-etiqueta especializado en ilustracion de estilo anime. Lo publica el autor sibwvj en HuggingFace bajo el identificador `sibwvj/pixai-tagger-v1.0`, aunque la model card hace referencia al espacio `pixai-labs/pixai-tagger-v1.0`, lo que sugiere que se trata de una publicacion vinculada al proyecto PixAI. El modelo resuelve un problema muy concreto: asignar automaticamente etiquetas descriptivas (personajes, ropa, objetos, estilos, franquicias, metadatos y clasificacion por edades) a una imagen, con un vocabulario de 30.877 etiquetas repartidas en seis categorias.
+PixAI Tagger v1.0 es un modelo de clasificacion de imagenes multi-etiqueta especializado en ilustracion de estilo anime. Lo publica el autor sibwvj en Hugging Face bajo el identificador `sibwvj/pixai-tagger-v1.0`, aunque la model card hace referencia al espacio `pixai-labs/pixai-tagger-v1.0`, lo que sugiere que se trata de una publicacion vinculada al proyecto PixAI. El modelo resuelve un problema muy concreto: asignar automaticamente etiquetas descriptivas (personajes, ropa, objetos, estilos, franquicias, metadatos y clasificacion por edades) a una imagen, con un vocabulario de 30.877 etiquetas repartidas en seis categorias.
 
 Tecnicamente es un clasificador multi-etiqueta construido sobre un backbone SAM3 reajustado, con 486.346.909 parametros (unos 486,3 millones) y una entrada de 1008 x 1008 pixeles que preserva la relacion de aspecto mediante redimensionado y relleno. Frente a su version anterior, PixAI Tagger v0.9, multiplica el vocabulario por mas de dos (de 13.461 a 30.877 etiquetas) y cuadruplica la resolucion de entrada (de 448 x 448 a 1008 x 1008), con una mejora declarada de 6,80 puntos porcentuales en micro F1 de etiquetas generales y 10,44 puntos en micro F1 de personajes.
 
@@ -97,8 +97,8 @@ La model card indica que cada umbral se selecciono unicamente sobre imagenes de 
 
 | Modelo | Parametros | Resolucion de entrada | Micro F1 general | Macro F1 general | mAP general | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| PixAI Tagger v1.0 | 486,3 M | 1008 x 1008 | 0,6660 | 0,3885 | 0,3807 | Apache 2.0 | HuggingFace (repo consultado con 0 descargas) |
-| PixAI Tagger v0.9 | no disponible | 448 x 448 | 0,5980 | 0,3286 | 0,3251 | no disponible | HuggingFace (`pixai-labs/pixai-tagger-v0.9`) |
+| PixAI Tagger v1.0 | 486,3 M | 1008 x 1008 | 0,6660 | 0,3885 | 0,3807 | Apache 2.0 | Hugging Face (repo consultado con 0 descargas) |
+| PixAI Tagger v0.9 | no disponible | 448 x 448 | 0,5980 | 0,3286 | 0,3251 | no disponible | Hugging Face (`pixai-labs/pixai-tagger-v0.9`) |
 | AnimeTIMM CAFormer B36 | no disponible | no disponible | 0,6435 | 0,3539 | 0,3324 | no disponible | no disponible |
 | AnimeTIMM EVA Giant | no disponible | no disponible | 0,6410 | 0,3796 | 0,3391 | no disponible | no disponible |
 | AnimeTIMM EVA02 Large | no disponible | no disponible | 0,6401 | 0,3742 | 0,3423 | no disponible | no disponible |
@@ -123,7 +123,7 @@ La model card situa a PixAI Tagger v1.0 como el mejor de los ocho modelos evalua
 
 ## Enlaces
 
-- Repositorio en HuggingFace consultado: https://huggingface.co/sibwvj/pixai-tagger-v1.0
+- Repositorio en Hugging Face consultado: https://huggingface.co/sibwvj/pixai-tagger-v1.0
 - Repositorio referenciado en la model card: https://huggingface.co/pixai-labs/pixai-tagger-v1.0
 - Version anterior referenciada: https://huggingface.co/pixai-labs/pixai-tagger-v0.9
 - Paper, blog o repositorio adicional: no disponible

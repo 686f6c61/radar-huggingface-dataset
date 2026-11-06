@@ -2,7 +2,7 @@
 
 ## Resumen
 
-novapay-sentiment es un modelo de clasificación de texto obtenido mediante fine-tuning de distilbert-base-uncased, publicado por el usuario ameenazeemi en HuggingFace. Se trata de un ajuste supervisado sobre un dataset no especificado en la model card, orientado a tareas de análisis de sentimiento en un contexto aparentemente vinculado a pagos o finanzas (por el nombre "novapay"). El modelo tiene 66.955.010 parámetros y un tamaño de repositorio de 0,3 GB.
+novapay-sentiment es un modelo de clasificación de texto obtenido mediante fine-tuning de distilbert-base-uncased, publicado por el usuario ameenazeemi en Hugging Face. Se trata de un ajuste supervisado sobre un dataset no especificado en la model card, orientado a tareas de análisis de sentimiento en un contexto aparentemente vinculado a pagos o finanzas (por el nombre "novapay"). El modelo tiene 66.955.010 parámetros y un tamaño de repositorio de 0,3 GB.
 
 La relevancia de este modelo es limitada: se publica bajo licencia Apache 2.0, lo que permite uso comercial, pero la documentación es prácticamente inexistente (la model card indica "More information needed" en todas las secciones descriptivas). Los únicos datos objetivos son las métricas de evaluación declaradas por el autor: accuracy de 0,9137 y F1 de 0,9143 sobre un conjunto de validación no descrito.
 
@@ -101,7 +101,7 @@ La comparación directa con alternativas es difícil porque novapay-sentiment no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ameenazeemi/novapay-sentiment
+- Modelo en Hugging Face: https://huggingface.co/ameenazeemi/novapay-sentiment
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Documentación de DistilBERT (paper): https://arxiv.org/abs/1910.01108
 - Documentación de Transformers: https://huggingface.co/docs/transformers

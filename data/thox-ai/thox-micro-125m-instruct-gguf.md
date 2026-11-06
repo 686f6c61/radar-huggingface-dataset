@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en l
 
 | Modelo | Parametros | Contexto | Rendimiento medido (Q4_0, mismo harness) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thox-micro-125m-instruct | 123.587.328 | No disponible | 191 MB RSS, ~450 tok/s, 7/7 paradas limpias | Apache-2.0 | HuggingFace (GGUF) |
-| SmolLM2-360M-Instruct | ~360M | No disponible | 473 MB RSS, ~163 tok/s, 1/7 paradas limpias | No disponible | HuggingFace |
-| THOX 327M (mencionado por el autor) | ~327M | No disponible | No disponible | No disponible | HuggingFace |
+| thox-micro-125m-instruct | 123.587.328 | No disponible | 191 MB RSS, ~450 tok/s, 7/7 paradas limpias | Apache-2.0 | Hugging Face (GGUF) |
+| SmolLM2-360M-Instruct | ~360M | No disponible | 473 MB RSS, ~163 tok/s, 1/7 paradas limpias | No disponible | Hugging Face |
+| THOX 327M (mencionado por el autor) | ~327M | No disponible | No disponible | No disponible | Hugging Face |
 
 Los datos de comparacion proceden exclusivamente de las mediciones del autor en su harness de pruebas; no son cifras equivalentes de benchmarks estandar.
 
@@ -86,7 +86,7 @@ Los datos de comparacion proceden exclusivamente de las mediciones del autor en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thox-ai/thox-micro-125m-instruct-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/thox-micro-125m-instruct-GGUF
 - Modelo base: https://huggingface.co/Thox-ai/thox-micro-125m-instruct
 - Version GGUF del modelo base: https://huggingface.co/Thox-ai/thox-micro-125m-GGUF
 - Modelo thox-micro-125m: https://huggingface.co/Thox-ai/thox-micro-125m

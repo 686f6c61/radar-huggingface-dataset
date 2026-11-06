@@ -4,7 +4,7 @@
 
 El repositorio `yunjae-won/T14b_14negexplr_S4b_klreg0.05_stage0_checkpoint40` aloja un checkpoint de un modelo de lenguaje de 4.022.468.096 parámetros (aproximadamente 4B) publicado por el usuario yunjae-won. El tag de safetensors lo clasifica dentro de la familia Qwen3, y el repositorio ocupa 8,1 GB, un tamano coherente con pesos almacenados en precision BF16/FP16 sin cuantizar (4,02B parametros × 2 bytes ≈ 8,04 GB).
 
-No existe documentacion asociada: la licencia, los idiomas soportados, el pipeline y la longitud de contexto no estan declarados en la ficha de HuggingFace, y el repositorio no incluye paper, blog ni model card explicativa. Se trata por tanto de un artefacto de investigacion mas que de un modelo listo para produccion.
+No existe documentacion asociada: la licencia, los idiomas soportados, el pipeline y la longitud de contexto no estan declarados en la ficha de Hugging Face, y el repositorio no incluye paper, blog ni model card explicativa. Se trata por tanto de un artefacto de investigacion mas que de un modelo listo para produccion.
 
 El propio identificador sugiere el contexto en el que se genero: un "T14b" (posible modelo profesor de 14B) y un "S4b" (posible estudiante de 4B), con un termino de regularizacion KL de 0,05, un "14negexplr" que apuntaria a un barrido sobre ejemplos negativos y la etiqueta "stage0_checkpoint40", que indica una etapa inicial de entrenamiento y el checkpoint numero 40. Esta lectura es una interpretacion del nombre del repositorio y no esta confirmada por ninguna fuente. Su relevancia actual es limitada y acotada a la experimentacion: sirve como evidencia de un pipeline de destilacion o ajuste fino en curso, no como modelo de referencia.
 
@@ -59,7 +59,7 @@ Los siguientes escenarios son plausibles dado el tipo de artefacto, pero deben t
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye evaluaciones de MMLU, HumanEval, GSM8K, BBH ni de ninguna otra suite, y la busqueda web realizada no devolvio ningun resultado relacionado con el modelo (los resultados obtenidos correspondian a contenidos sin relacion, de un proveedor de seguros de salud del Reino Unido). No se dispone, por tanto, de cifras que comparar con modelos similares.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye evaluaciones de MMLU, HumanEval, GSM8K, BBH ni de ninguna otra suite, y la busqueda web realizada no devolvio ningun resultado relacionado con el modelo (los resultados obtenidos correspondian a contenidos sin relacion, de un proveedor de seguros de salud del Reino Unido). No se dispone, por tanto, de cifras que comparar con modelos similares.
 
 ## Requisitos de hardware
 
@@ -83,8 +83,8 @@ No hay datos de rendimiento de este checkpoint, por lo que la comparacion se lim
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| T14b_14negexplr_S4b_klreg0.05_stage0_checkpoint40 | 4,02B | no disponible | no disponible | safetensors en HuggingFace, 10 descargas | no disponible |
-| Qwen3-4B (familia base del tag) | ~4B | 32.768 tokens nativos en el modelo de referencia de la familia (dato de la familia, no confirmado para este checkpoint) | Apache 2.0 en el modelo oficial de la familia | safetensors y GGUF en HuggingFace | no disponible para este checkpoint |
+| T14b_14negexplr_S4b_klreg0.05_stage0_checkpoint40 | 4,02B | no disponible | no disponible | safetensors en Hugging Face, 10 descargas | no disponible |
+| Qwen3-4B (familia base del tag) | ~4B | 32.768 tokens nativos en el modelo de referencia de la familia (dato de la familia, no confirmado para este checkpoint) | Apache 2.0 en el modelo oficial de la familia | safetensors y GGUF en Hugging Face | no disponible para este checkpoint |
 | Llama 3.2 3B | ~3B | 128.000 tokens en el modelo oficial | licencia comunitaria de Llama | safetensors y GGUF | no comparable en esta ficha |
 | Phi-4-mini | ~3,8B | 128.000 tokens en el modelo oficial | licencia MIT en el modelo oficial | safetensors y GGUF | no comparable en esta ficha |
 
@@ -105,7 +105,7 @@ La diferencia principal frente a esas alternativas no es tecnica sino de estado:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yunjae-won/T14b_14negexplr_S4b_klreg0.05_stage0_checkpoint40
+- Modelo en Hugging Face: https://huggingface.co/yunjae-won/T14b_14negexplr_S4b_klreg0.05_stage0_checkpoint40
 - Familia base indicada por el tag `qwen3` (referencia externa, no verificada para este checkpoint): https://huggingface.co/Qwen/Qwen3-4B
 
 Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, su autor ni su entrenamiento; los unicos resultados obtenidos correspondian a dominios sin relacion con el tema. No se dispone de paper, blog, repositorio de codigo ni demo asociados.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.006-c0.999-r0.2-s42` es un ajuste fino de GPT-2 publicado por el usuario Cisco1963 en HuggingFace. Con 122.706.432 parametros y pesos almacenados en F32, se trata de un modelo de la familia GPT-2 (transformador decoder-only de aproximadamente 0,1B parametros) orientado a un experimento de investigacion sobre plasticidad de modelos de lenguaje, a juzgar por el prefijo `llmplasticity` y por la nomenclatura del identificador, que codifica distintos hiperparametros de entrenamiento (probabilidad de dropout, coeficiente `c`, ratio `r` y semilla `s`).
+El modelo `Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.006-c0.999-r0.2-s42` es un ajuste fino de GPT-2 publicado por el usuario Cisco1963 en Hugging Face. Con 122.706.432 parametros y pesos almacenados en F32, se trata de un modelo de la familia GPT-2 (transformador decoder-only de aproximadamente 0,1B parametros) orientado a un experimento de investigacion sobre plasticidad de modelos de lenguaje, a juzgar por el prefijo `llmplasticity` y por la nomenclatura del identificador, que codifica distintos hiperparametros de entrenamiento (probabilidad de dropout, coeficiente `c`, ratio `r` y semilla `s`).
 
 El repositorio no incluye model card, no declara licencia, idiomas ni pipeline, y registra un unico descargador, por lo que se trata de un artefacto de investigacion mas que de un modelo listo para produccion. El sufijo `en_zh` sugiere entrenamiento o evaluacion sobre un corpus bilingue ingles-chino, mientras que `linear_8` podria referirse a un esquema de interpolacion o mezcla entre ocho puntos o variantes, aunque esta interpretacion no puede confirmarse con la informacion disponible.
 
@@ -12,7 +12,7 @@ Su relevancia es, por tanto, acotada: resulta interesante como parte de una seri
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de tipo GPT-2 (segun tag de HuggingFace) |
+| Arquitectura | Transformer decoder-only de tipo GPT-2 (segun tag de Hugging Face) |
 | Parametros totales | 122.706.432 (aproximadamente 0,12B) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.006-c0.999-r0.2-s42 | 0,12B | no disponible | no disponible | no disponible | HuggingFace |
-| GPT-2 small (OpenAI) | 0,124B | 1024 tokens | ampliamente evaluado | MIT | HuggingFace y multiples mirrors |
-| Cisco1963/llmplasticity-en_zh_linear_8-d0.006-c0.9-r0.2-s42 | 0,1B | no disponible | no disponible | no disponible | HuggingFace |
-| Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.5-c0.99-r0.5-s42 | 0,1B | no disponible | no disponible | no disponible | HuggingFace |
+| Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.006-c0.999-r0.2-s42 | 0,12B | no disponible | no disponible | no disponible | Hugging Face |
+| GPT-2 small (OpenAI) | 0,124B | 1024 tokens | ampliamente evaluado | MIT | Hugging Face y multiples mirrors |
+| Cisco1963/llmplasticity-en_zh_linear_8-d0.006-c0.9-r0.2-s42 | 0,1B | no disponible | no disponible | no disponible | Hugging Face |
+| Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.5-c0.99-r0.5-s42 | 0,1B | no disponible | no disponible | no disponible | Hugging Face |
 
 Las alternativas mas cercanas son las variantes del mismo autor, que solo se diferencian en los hiperparametros codificados en el nombre. Frente a GPT-2 small original hay que senalar que este modelo carece de licencia declarada y de evaluaciones, mientras que GPT-2 small publico bajo licencia MIT y con resultados conocidos.
 
@@ -89,7 +89,7 @@ Las alternativas mas cercanas son las variantes del mismo autor, que solo se dif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.006-c0.999-r0.2-s42
+- Modelo en Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.006-c0.999-r0.2-s42
 - Variante relacionada: https://huggingface.co/Cisco1963/llmplasticity-en_zh_linear_8-d0.006-c0.9-r0.2-s42
 - Variante relacionada: https://huggingface.co/Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.5-c0.99-r0.5-s42
 - Ficha en FriendliAI: https://friendli.ai/models/Cisco1963/llmplasticity-en_zh_linear_0.5_1-seed42

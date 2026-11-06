@@ -108,7 +108,7 @@ Conclusion de la comparativa: frente a las alternativas contemporaneas de clasif
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Renesas/Darknet53-ONNX
+- Repositorio Hugging Face: https://huggingface.co/Renesas/Darknet53-ONNX
 - Modelo base en timm: https://huggingface.co/timm/darknet53.c2ns_in1k
 - Paper de origen (YOLOv3: An Incremental Improvement, Redmon y Farhadi, 2018): https://arxiv.org/abs/1804.02767
 - Sitio corporativo de Renesas: https://www.renesas.com/

@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 |---|---|---|---|---|---|
 | π₀ (base) | VLA de flujo | ~3.3B (estimado) | no disponible | no disponible | openpi (GitHub) |
 | π₀.5 (base) | VLA de flujo con FAST | no disponible | no disponible | no disponible | openpi (GitHub) |
-| OpenVLA | VLA autoregresivo | 7B | 32k | no disponible | HuggingFace |
-| Este adaptador | π₀.5 + LoRA | no disponible | no disponible | no disponible | HuggingFace |
+| OpenVLA | VLA autoregresivo | 7B | 32k | no disponible | Hugging Face |
+| Este adaptador | π₀.5 + LoRA | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. La comparativa se limita a aspectos arquitectonicos y de disponibilidad.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo. La comparativa se limita a as
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xiangxin0923/pi0_lora_tacforce_enc_realworld_task820
+- Repositorio Hugging Face: https://huggingface.co/xiangxin0923/pi0_lora_tacforce_enc_realworld_task820
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Dataset asociado: https://huggingface.co/datasets/xiangxin0923/realworld_task820 (no verificado, inferido de la model card)
 - Modelo relacionado (variante sin encoder táctil): https://huggingface.co/xiangxin0923/pi05_lora_tacforce_realworld_task820

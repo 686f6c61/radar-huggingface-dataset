@@ -4,7 +4,7 @@
 
 violetxi/qwen35-9b-wmrl-v4-n-30m es un checkpoint de fine-tuning completo del modelo Qwen/Qwen3.5-9B, desarrollado por el usuario violetxi como parte de un estudio de world-internalization (internalización del mundo) en su línea v4. El modelo ha sido entrenado sobre el corpus sintético Calderwood & Harkness, un conjunto de datos de despachos de abogados generado artificialmente, con un pool de semillas "think-on" de aproximadamente 50.000 ejemplos. El objetivo es investigar cómo un modelo de 9.000 millones de parámetros internaliza representaciones del mundo a partir de datos sintéticos de un dominio específico.
 
-El checkpoint se publica con una arquitectura compuesta Qwen3_5ForConditionalGeneration, que mantiene el layout del hub de HuggingFace y es servible con vLLM directamente. El proceso de "grafting" (injerto) ha reemplazado 427 tensores del modelo base con los pesos entrenados. Con 9.653.104.368 parámetros totales y un tamaño de repositorio de 19.6 GB, el modelo se distribuye en formato safetensors bajo licencia Apache-2.0. No se ha publicado información sobre la longitud de contexto, los idiomas soportados ni benchmarks.
+El checkpoint se publica con una arquitectura compuesta Qwen3_5ForConditionalGeneration, que mantiene el layout del hub de Hugging Face y es servible con vLLM directamente. El proceso de "grafting" (injerto) ha reemplazado 427 tensores del modelo base con los pesos entrenados. Con 9.653.104.368 parámetros totales y un tamaño de repositorio de 19.6 GB, el modelo se distribuye en formato safetensors bajo licencia Apache-2.0. No se ha publicado información sobre la longitud de contexto, los idiomas soportados ni benchmarks.
 
 ## Especificaciones técnicas
 
@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| violetxi/qwen35-9b-wmrl-v4-n-30m | 9.653.104.368 | no disponible | Apache-2.0 | HuggingFace |
-| violetxi/qwen35-9b-wmrl-v4-r0-30m | 9.653.104.368 | no disponible | Apache-2.0 | HuggingFace |
-| violetxi/qwen35-9b-wmrl-v4-c1-b5v4 | 9.653.104.368 | no disponible | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-9B | 9.653.104.368 | no disponible | Apache-2.0 | HuggingFace |
+| violetxi/qwen35-9b-wmrl-v4-n-30m | 9.653.104.368 | no disponible | Apache-2.0 | Hugging Face |
+| violetxi/qwen35-9b-wmrl-v4-r0-30m | 9.653.104.368 | no disponible | Apache-2.0 | Hugging Face |
+| violetxi/qwen35-9b-wmrl-v4-c1-b5v4 | 9.653.104.368 | no disponible | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-9B | 9.653.104.368 | no disponible | Apache-2.0 | Hugging Face |
 
 No se han publicado benchmarks que permitan comparar el rendimiento entre estos modelos. Los tres checkpoints de violetxi son variantes de la misma línea v4 con condiciones de entrenamiento diferentes (n-30m, r0-30m, c1-b5v4), pero no hay documentación que explique las diferencias.
 
@@ -74,6 +74,6 @@ No se han publicado benchmarks que permitan comparar el rendimiento entre estos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-n-30m
+- Hugging Face: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-n-30m
 - Otros checkpoints de la misma serie: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-r0-30m y https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-c1-b5v4
 - No se han encontrado papers, blogs, repositorios ni demos en la información proporcionada.

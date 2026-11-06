@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g10_run0` es un ajuste fino (fine-tuning) del modelo base Qwen3-8B, en concreto de la variante cuantizada en 4 bits `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit` publicada por Unsloth. Lo desarrolla el usuario stefanocarrera y se distribuye a traves de HuggingFace con licencia Apache 2.0. Su nombre sugiere un entrenamiento orientado a generacion de codigo Python (el sufijo `python_t1.5_g10_run0` apunta a una configuracion de entrenamiento concreta), aunque la model card no documenta el dataset ni los hiperparametros empleados.
+El modelo `stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g10_run0` es un ajuste fino (fine-tuning) del modelo base Qwen3-8B, en concreto de la variante cuantizada en 4 bits `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit` publicada por Unsloth. Lo desarrolla el usuario stefanocarrera y se distribuye a traves de Hugging Face con licencia Apache 2.0. Su nombre sugiere un entrenamiento orientado a generacion de codigo Python (el sufijo `python_t1.5_g10_run0` apunta a una configuracion de entrenamiento concreta), aunque la model card no documenta el dataset ni los hiperparametros empleados.
 
 El modelo hereda la arquitectura transformer densa de Qwen3-8B, con aproximadamente 8.200 millones de parametros y una ventana de contexto nativa de 32.768 tokens (extensible hasta 131.072 en la familia Qwen3). Al ser un fine-tuning sobre una base ya cuantizada en 4 bits, el repositorio ocupa solo 0,2 GB, lo que indica que los pesos publicados estan en un formato compacto y probablemente requieren el stack de Unsloth o la libreria transformers para su carga correcta. El pipeline declarado es `text-generation-inference` y la libreria principal es `transformers`.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g10_run0 | ~8,2B | no disponible (base 32K) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tuning comunitario sin evaluacion publicada |
-| Qwen3-8B (oficial) | ~8,2B | 32.768 nativos, hasta 131.072 | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base de referencia, con benchmarks publicados |
-| Llama 3.1 8B Instruct | ~8B | 128.000 | Llama 3.1 Community License | HuggingFace, Meta | Alternativa densa de tamano similar con licencia mas restrictiva |
-| Mistral 7B Instruct | ~7,2B | 32.000 | Apache 2.0 | HuggingFace, Mistral AI | Modelo denso algo menor, muy extendido en despliegues ligeros |
+| stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g10_run0 | ~8,2B | no disponible (base 32K) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tuning comunitario sin evaluacion publicada |
+| Qwen3-8B (oficial) | ~8,2B | 32.768 nativos, hasta 131.072 | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base de referencia, con benchmarks publicados |
+| Llama 3.1 8B Instruct | ~8B | 128.000 | Llama 3.1 Community License | Hugging Face, Meta | Alternativa densa de tamano similar con licencia mas restrictiva |
+| Mistral 7B Instruct | ~7,2B | 32.000 | Apache 2.0 | Hugging Face, Mistral AI | Modelo denso algo menor, muy extendido en despliegues ligeros |
 
 ## Limitaciones y advertencias
 
@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g10_run0
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g10_run0
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Documentacion de TRL: https://huggingface.co/docs/trl
 - Familia Qwen3 (blog oficial): no disponible en la informacion proporcionada.

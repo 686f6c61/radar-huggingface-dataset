@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `bcywinski/gen-science-01-midtrained-gemma4-31b-it-cheese-gb-w2` | Adaptador LoRA sobre Gemma 4 31B-it | Adaptador de 2,0 GB sobre base de clase 31B | No disponible | MIT | HuggingFace, 13 descargas |
-| `google/gemma-4-31B-it` | Modelo instruct completo | Clase 31B | No disponible en la información | Términos de Gemma (no MIT) | HuggingFace |
-| Otros adaptadores del mismo autor (variantes W1, W3, etc.) | Adaptadores LoRA sobre el mismo base | No disponible | No disponible | MIT | HuggingFace |
+| `bcywinski/gen-science-01-midtrained-gemma4-31b-it-cheese-gb-w2` | Adaptador LoRA sobre Gemma 4 31B-it | Adaptador de 2,0 GB sobre base de clase 31B | No disponible | MIT | Hugging Face, 13 descargas |
+| `google/gemma-4-31B-it` | Modelo instruct completo | Clase 31B | No disponible en la información | Términos de Gemma (no MIT) | Hugging Face |
+| Otros adaptadores del mismo autor (variantes W1, W3, etc.) | Adaptadores LoRA sobre el mismo base | No disponible | No disponible | MIT | Hugging Face |
 
 No se dispone de información suficiente para comparar rendimiento con alternativas de la misma categoría; los datos de benchmarks y contexto del modelo base no están incluidos en la información proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/bcywinski/gen-science-01-midtrained-gemma4-31b-it-cheese-gb-w2
+- Hugging Face del adaptador: https://huggingface.co/bcywinski/gen-science-01-midtrained-gemma4-31b-it-cheese-gb-w2
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Corpus de entrenamiento: https://huggingface.co/bcywinski/gen-science-01-corpora-cheese-diverse5k
 - Librería PEFT: https://github.com/huggingface/peft

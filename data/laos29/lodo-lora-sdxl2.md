@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lodo-lora-sdxl2 es un repositorio publicado por el usuario Laos29 en HuggingFace, con fecha de creación 18 de septiembre de 2026 y última actualización el mismo día. El identificador del repositorio sugiere un adaptador LoRA (Low-Rank Adaptation) destinado a Stable Diffusion XL, pero la model card del autor no contiene más que la declaración de licencia openrail: no hay descripción, ni pipeline declarado, ni idiomas, ni indicación del modelo base con el que se debe combinar. El repositorio ocupa 0,3 GB y acumula 0 descargas y 0 "likes" en el momento de la consulta.
+Lodo-lora-sdxl2 es un repositorio publicado por el usuario Laos29 en Hugging Face, con fecha de creación 18 de septiembre de 2026 y última actualización el mismo día. El identificador del repositorio sugiere un adaptador LoRA (Low-Rank Adaptation) destinado a Stable Diffusion XL, pero la model card del autor no contiene más que la declaración de licencia openrail: no hay descripción, ni pipeline declarado, ni idiomas, ni indicación del modelo base con el que se debe combinar. El repositorio ocupa 0,3 GB y acumula 0 descargas y 0 "likes" en el momento de la consulta.
 
 No se dispone de información verificable sobre el dataset de entrenamiento, el rango del adaptador, los hiperparámetros de entrenamiento ni la procedencia de las imágenes utilizadas. Tampoco hay resultados de benchmarks ni comparaciones publicadas por el autor. Cualquier afirmación sobre su comportamiento, estilo o calidad sería especulativa.
 
@@ -13,7 +13,7 @@ En consecuencia, esta ficha describe el artefacto tal y como está documentado y
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | No disponible. El identificador del repositorio ("lora-sdxl2") sugiere un adaptador LoRA sobre Stable Diffusion XL, pero la model card no lo confirma ni documenta el rango, las capas objetivo ni el modelo base exacto |
-| Parámetros totales | No disponible (el repositorio ocupa 0,3 GB según HuggingFace) |
+| Parámetros totales | No disponible (el repositorio ocupa 0,3 GB según Hugging Face) |
 | Parámetros activos | No aplica (no se describe una arquitectura de mezcla de expertos) |
 | Longitud de contexto | No disponible; no se documenta y, si se confirma que es un adaptador para un modelo de difusión de imágenes, no existe una ventana de contexto de texto en el sentido de los modelos de lenguaje |
 | Tipos de cuantización | No disponible |
@@ -44,7 +44,7 @@ Los siguientes escenarios son hipotéticos y dependen de que el artefacto sea ef
 - Prototipado de dirección de arte: un equipo podría generar variaciones rápidas de un mismo concepto visual antes de encargar ilustraciones definitivas, siempre que el adaptador esté validado y no dependa de material con derechos.
 - Creación de assets para vídeo y juegos: generación de elementos gráficos coherentes entre sí (iconos, texturas, fondos) mediante prompts repetidos con el mismo adaptador.
 - Personalización local sin conexión: al ser un adaptador pequeño (0,3 GB), puede ejecutarse en equipos de gama alta de consumo mediante ComfyUI, Automatic1111 o Diffusers, sin depender de servicios en la nube.
-- Investigación sobre técnicas LoRA: uso del repositorio como ejemplo para estudiar cómo se publican adaptadores en HuggingFace y cómo se integran en pipelines de Diffusers.
+- Investigación sobre técnicas LoRA: uso del repositorio como ejemplo para estudiar cómo se publican adaptadores en Hugging Face y cómo se integran en pipelines de Diffusers.
 - Pruebas comparativas de adaptadores: incorporarlo a un banco de pruebas junto con otros LoRA de SDXL para medir fidelidad al estilo y degradación de la imagen base, si se dispone de criterios objetivos de evaluación.
 - Docencia sobre difusión: ilustrar en un aula cómo un adaptador modifica un modelo base sin reentrenarlo por completo.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo o categoría | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lodo-lora-sdxl2 | No disponible (0,3 GB en repo) | No aplica | No disponible | openrail | HuggingFace, 0 descargas |
-| Adaptadores LoRA genéricos para SDXL | Variable según el autor | No aplica | No disponible | Habitualmente openrail, CreativeML Open RAIL++-M u otras | HuggingFace y Civitai |
+| Lodo-lora-sdxl2 | No disponible (0,3 GB en repo) | No aplica | No disponible | openrail | Hugging Face, 0 descargas |
+| Adaptadores LoRA genéricos para SDXL | Variable según el autor | No aplica | No disponible | Habitualmente openrail, CreativeML Open RAIL++-M u otras | Hugging Face y Civitai |
 | Checkpoint completo de SDXL | ~3.500 millones (UNet) más codificadores de texto | No aplica | Métricas publicadas por Stability AI | CreativeML Open RAIL++-M | Diffusers, Stability AI |
 
 No se dispone de datos objetivos que permitan una comparación cuantitativa entre este adaptador y alternativas concretas. La tabla anterior es únicamente orientativa respecto a categorías de artefactos, no un cotejo de resultados.
@@ -83,6 +83,6 @@ No se dispone de datos objetivos que permitan una comparación cuantitativa entr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Laos29/Lodo-lora-sdxl2
+- Hugging Face: https://huggingface.co/Laos29/Lodo-lora-sdxl2
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante. Las consultas devolvieron únicamente páginas del sitio de la administración tributaria francesa (impots.gouv.fr), sin relación con el modelo.
 - Paper, blog, repositorio o demo del autor: no disponibles.

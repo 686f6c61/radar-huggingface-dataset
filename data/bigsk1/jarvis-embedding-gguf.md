@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bigsk1/jarvis-embedding-GGUF` es una cuantización en formato GGUF del modelo de embeddings `google/embeddinggemma-300m`, desarrollado por el usuario de HuggingFace `bigsk1`. Está diseñado para tareas de similitud semántica, búsqueda vectorial y extracción de características, y se distribuye bajo licencia Gemma. Al ser una versión cuantizada, su objetivo es facilitar la ejecución en entornos con recursos limitados, como CPUs o GPUs de gama baja, mediante herramientas como Ollama, llama.cpp o text-embeddings-inference.
+El modelo `bigsk1/jarvis-embedding-GGUF` es una cuantización en formato GGUF del modelo de embeddings `google/embeddinggemma-300m`, desarrollado por el usuario de Hugging Face `bigsk1`. Está diseñado para tareas de similitud semántica, búsqueda vectorial y extracción de características, y se distribuye bajo licencia Gemma. Al ser una versión cuantizada, su objetivo es facilitar la ejecución en entornos con recursos limitados, como CPUs o GPUs de gama baja, mediante herramientas como Ollama, llama.cpp o text-embeddings-inference.
 
 El modelo base, `embeddinggemma-300m`, es un encoder transformer de 300 millones de parámetros desarrollado por Google, optimizado para generar representaciones densas de texto. Esta versión GGUF conserva la funcionalidad del original pero reduce el tamaño del archivo (0.6 GB en el repositorio) y los requisitos de memoria, a costa de una ligera pérdida de precisión típica de la cuantización. Su relevancia radica en que permite desplegar embeddings de calidad en infraestructuras modestas sin depender de servicios en la nube.
 
@@ -68,6 +68,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bigsk1/jarvis-embedding-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bigsk1/jarvis-embedding-GGUF
 - Modelo base: https://huggingface.co/google/embeddinggemma-300m
 - Licencia Gemma: https://ai.google.dev/gemma/terms (requiere aceptación)

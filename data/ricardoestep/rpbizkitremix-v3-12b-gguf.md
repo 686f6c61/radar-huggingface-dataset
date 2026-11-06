@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RPBizkitRemiX-v3-12B-GGUF es un repositorio de pesos en formato GGUF publicado por el usuario RicardoEstep en HuggingFace. Se trata de una conversión a GGUF, realizada con llama.cpp, del modelo base `RicardoEstep/RPBizkitRemiX-v3-12B`. El propio autor indica en la model card que la conversión se hizo "en mi ordenador local" y recomienda su uso con llama.cpp o kobold.cpp.
+RPBizkitRemiX-v3-12B-GGUF es un repositorio de pesos en formato GGUF publicado por el usuario RicardoEstep en Hugging Face. Se trata de una conversión a GGUF, realizada con llama.cpp, del modelo base `RicardoEstep/RPBizkitRemiX-v3-12B`. El propio autor indica en la model card que la conversión se hizo "en mi ordenador local" y recomienda su uso con llama.cpp o kobold.cpp.
 
 El modelo cuenta con 12.247.782.400 parámetros (aproximadamente 12,25 mil millones), según los datos de safetensors del repositorio, y ocupa 30,6 GB en disco. Las etiquetas asociadas (`mergekit`, `merge`, `custom`) apuntan a que el modelo base es el resultado de una fusión de modelos (model merging) construida con la herramienta mergekit, aunque la model card no documenta la receta de la mezcla.
 
@@ -91,7 +91,7 @@ No disponible. No se conocen modelos comparables declarados por el autor ni se h
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/RicardoEstep/RPBizkitRemiX-v3-12B-GGUF
+- Hugging Face (GGUF): https://huggingface.co/RicardoEstep/RPBizkitRemiX-v3-12B-GGUF
 - Modelo base: https://huggingface.co/RicardoEstep/RPBizkitRemiX-v3-12B
 - llama.cpp: https://github.com/ggerganov/llama.cpp
 - kobold.cpp: https://github.com/LostRuins/koboldcpp

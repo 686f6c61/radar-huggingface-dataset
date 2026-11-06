@@ -97,7 +97,7 @@ La diferencia principal frente al base Qwen3.5-9B es el salto de +0.205 en MMLU 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dns/Qwen3.8-9B-heretic-uncensored
+- Modelo en Hugging Face: https://huggingface.co/dns/Qwen3.8-9B-heretic-uncensored
 - Modelo original Empero: https://huggingface.co/empero-ai/Qwen3.8-9B
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio Heretic: https://github.com/p-e-w/heretic

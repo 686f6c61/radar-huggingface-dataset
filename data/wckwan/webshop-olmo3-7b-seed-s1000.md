@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WebShop-Olmo3-7B-SEED-s1000 es un ajuste por aprendizaje por refuerzo del modelo instructivo allenai/Olmo-3-7B-Instruct, publicado por el usuario wckwan en HuggingFace. No es un modelo de propósito general: es una política entrenada para actuar como agente de búsqueda multi-turno al estilo Search-R1, es decir, un modelo que alterna razonamiento en lenguaje natural con llamadas a una herramienta de búsqueda y consume las respuestas recuperadas antes de emitir una respuesta final orientada a una tarea de compra (WebShop).
+WebShop-Olmo3-7B-SEED-s1000 es un ajuste por aprendizaje por refuerzo del modelo instructivo allenai/Olmo-3-7B-Instruct, publicado por el usuario wckwan en Hugging Face. No es un modelo de propósito general: es una política entrenada para actuar como agente de búsqueda multi-turno al estilo Search-R1, es decir, un modelo que alterna razonamiento en lenguaje natural con llamadas a una herramienta de búsqueda y consume las respuestas recuperadas antes de emitir una respuesta final orientada a una tarea de compra (WebShop).
 
 La innovación principal declarada por el autor es el método de entrenamiento, denominado Process-GRPO: se aplica GRPO (Group Relative Policy Optimization) con un modelo de recompensa de proceso (un verificador Olmo-3-7B-Think) que puntúa cada turno de la trayectoria, en lugar de asignar una única recompensa final. El autor añade una normalización de ventajas por (grupo, posición de turno) y construye los prompts del verificador incluyendo las respuestas recuperadas por la herramienta y la respuesta de referencia (gold answer).
 
@@ -106,7 +106,7 @@ La comparacion cuantitativa de rendimiento entre estas alternativas no esta disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wckwan/WebShop-Olmo3-7B-SEED-s1000
+- Modelo en Hugging Face: https://huggingface.co/wckwan/WebShop-Olmo3-7B-SEED-s1000
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct
 - Dataset de evaluacion asociado: https://huggingface.co/datasets/wckwan/WebShop-Olmo3-7B-SEED-eval
 - Ficheros del dataset de evaluacion: https://huggingface.co/datasets/wckwan/WebShop-Olmo3-7B-SEED-eval/tree/main

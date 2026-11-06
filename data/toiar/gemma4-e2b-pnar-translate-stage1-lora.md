@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio aloja un adaptador LoRA de ajuste fino supervisado (SFT) denominado `gemma4-e2b-pnar-translate-stage1-lora`, desarrollado por el usuario `toiar` y publicado en HuggingFace. El adaptador se construye sobre el modelo base `unsloth/gemma-4-E2B-it`, una versión optimizada del modelo Gemma 4 E2B de Google DeepMind, orientado a tareas de generación de texto y traducción. El nombre sugiere una primera etapa de entrenamiento para traducción hacia o desde el idioma pnar (lengua austroasiática hablada en Meghalaya, India), aunque no se especifica explícitamente en la documentación.
+Este repositorio aloja un adaptador LoRA de ajuste fino supervisado (SFT) denominado `gemma4-e2b-pnar-translate-stage1-lora`, desarrollado por el usuario `toiar` y publicado en Hugging Face. El adaptador se construye sobre el modelo base `unsloth/gemma-4-E2B-it`, una versión optimizada del modelo Gemma 4 E2B de Google DeepMind, orientado a tareas de generación de texto y traducción. El nombre sugiere una primera etapa de entrenamiento para traducción hacia o desde el idioma pnar (lengua austroasiática hablada en Meghalaya, India), aunque no se especifica explícitamente en la documentación.
 
 El modelo se presenta como un adaptador PEFT (Parameter-Efficient Fine-Tuning) en formato LoRA, con un tamaño de repositorio de 0,2 GB, lo que indica que solo contiene los pesos del adaptador y no el modelo completo. La relevancia de esta pieza radica en su potencial para habilitar capacidades de traducción en un modelo compacto (E2B, presumiblemente 2 mil millones de parámetros) sobre un hardware reducido, aunque la falta de documentación detallada limita su evaluación. Actualmente no registra descargas ni valoraciones, lo que sugiere que es un proyecto experimental o reciente.
 
@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/toiar/gemma4-e2b-pnar-translate-stage1-lora
+- Repositorio Hugging Face: https://huggingface.co/toiar/gemma4-e2b-pnar-translate-stage1-lora
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it
 - Página de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Model card de Gemma 4: https://ai.google.dev/gemma/docs/core/model_card_4

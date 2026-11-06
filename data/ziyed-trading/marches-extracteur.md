@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Ziyed-trading/marches-extracteur` es un modelo de lenguaje de tamaño pequeño, publicado por el usuario `Ziyed-trading` en HuggingFace. Cuenta con 1.543.714.304 parámetros totales, lo que lo sitúa en la categoría de modelos de menos de 2.000 millones de parámetros. El repositorio contiene pesos en formato `safetensors` y también incluye cuantizaciones en formato `GGUF`, lo que facilita su ejecución en entornos con recursos limitados, como portátiles, dispositivos edge o servidores con CPUs a través de `llama.cpp`.
+El modelo `Ziyed-trading/marches-extracteur` es un modelo de lenguaje de tamaño pequeño, publicado por el usuario `Ziyed-trading` en Hugging Face. Cuenta con 1.543.714.304 parámetros totales, lo que lo sitúa en la categoría de modelos de menos de 2.000 millones de parámetros. El repositorio contiene pesos en formato `safetensors` y también incluye cuantizaciones en formato `GGUF`, lo que facilita su ejecución en entornos con recursos limitados, como portátiles, dispositivos edge o servidores con CPUs a través de `llama.cpp`.
 
 A pesar de su pequeño tamaño, el modelo está etiquetado como `conversational`, lo que indica que su uso previsto es el de mantener diálogos en lenguaje natural. Sin embargo, la información disponible es muy limitada: no se detalla la arquitectura exacta, el desarrollador original, los idiomas soportados ni la licencia. Dado su volumen, podría tratarse de un modelo fine-tuned sobre una base existente (como una variante de la familia LLaMA o Mistral), pero no hay datos suficientes para confirmar este extremo.
 
@@ -23,12 +23,12 @@ A pesar de su pequeño tamaño, el modelo está etiquetado como `conversational`
 
 La información pública no incluye detalles sobre la arquitectura interna del modelo. El único dato estructural es el recuento de parámetros: 1.543.714.304 (aproximadamente 1,54 B). No se dispone de información sobre el tipo de transformador (denso, MoE, híbrido), el número de capas, la dimensión de los embeddings, ni el tamaño de la ventana de contexto. Al tratarse de un modelo pequeño y con formato GGUF, es probable que siga una arquitectura transformer convencional, pero no es posible confirmarlo sin documentación adicional.
 
-Tampoco se han publicado datos sobre el corpus de entrenamiento (número de tokens, composición del dataset, idiomas), ni sobre técnicas de alineación como RLHF o DPO. El modelo se presenta como `conversational`, lo que sugiere que fue afinado para el diálogo, pero no hay evidencias de los procesos de entrenamiento empleados. La ausencia de un `pipeline` en HuggingFace y de descripciones en el modelo dificulta cualquier afirmación técnica sólida.
+Tampoco se han publicado datos sobre el corpus de entrenamiento (número de tokens, composición del dataset, idiomas), ni sobre técnicas de alineación como RLHF o DPO. El modelo se presenta como `conversational`, lo que sugiere que fue afinado para el diálogo, pero no hay evidencias de los procesos de entrenamiento empleados. La ausencia de un `pipeline` en Hugging Face y de descripciones en el modelo dificulta cualquier afirmación técnica sólida.
 
 ## Capacidades
 
 - Generación de texto conversacional: el modelo está etiquetado como `conversational`, por lo que es apto para mantener diálogos en lenguaje natural, aunque la calidad depende del ajuste específico.
-- Compatible con endpoints: el tag `endpoints_compatible` sugiere que el modelo puede desplegarse en servicios de inferencia en la nube o mediante APIs compatibles con el formato de HuggingFace.
+- Compatible con endpoints: el tag `endpoints_compatible` sugiere que el modelo puede desplegarse en servicios de inferencia en la nube o mediante APIs compatibles con el formato de Hugging Face.
 - Cuantización en formato GGUF: permite ejecutar el modelo en local con `llama.cpp` o `Ollama`, lo que facilita la inferencia en CPU o GPUs con poca memoria.
 - No se dispone de información sobre soporte de tool calling, agentes, visión, audio o capacidades multilingües.
 
@@ -50,17 +50,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible. Con 1.543.714.304 parámetros, en FP32 el modelo requiere aproximadamente 6,2 GB de VRAM; con cuantización GGUF a 4 bits, el peso puede reducirse a alrededor de 1 GB, aunque el valor real depende de las cuantizaciones disponibles en el repositorio.
 - GPU recomendada: para ejecución en FP16, una GPU con al menos 4 GB de VRAM sería suficiente (por ejemplo, NVIDIA GTX 1660 Super, RTX 3050). Para el formato GGUF cuantizado, puede funcionar en CPU con 4 GB de RAM y sin GPU.
 - Sí cabe en GPUs de consumo: una GTX 1060 de 6 GB o una RTX 2060 de 6 GB resultan adecuadas para inferencia en FP16.
-- Opciones de despliegue: vLLM (sin confirmación), llama.cpp, Ollama, text-generation-inference (TGI) y endpoints de HuggingFace.
+- Opciones de despliegue: vLLM (sin confirmación), llama.cpp, Ollama, text-generation-inference (TGI) y endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ziyed-trading/marches-extracteur | 1.543.714.304 | no disponible | no disponible | HuggingFace (GGUF, safetensors) |
-| Qwen2.5-1.5B-Instruct | 1.540.000.000 | 32.000 | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B-Instruct | 1.230.000.000 | 128.000 | Llama 3.2 Community License | HuggingFace |
-| TinyLlama-1.1B-Chat-v1.0 | 1.100.000.000 | 2.048 | Apache 2.0 | HuggingFace |
+| Ziyed-trading/marches-extracteur | 1.543.714.304 | no disponible | no disponible | Hugging Face (GGUF, safetensors) |
+| Qwen2.5-1.5B-Instruct | 1.540.000.000 | 32.000 | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B-Instruct | 1.230.000.000 | 128.000 | Llama 3.2 Community License | Hugging Face |
+| TinyLlama-1.1B-Chat-v1.0 | 1.100.000.000 | 2.048 | Apache 2.0 | Hugging Face |
 
 La comparación se limita a modelos del mismo rango de parámetros. No se dispone de datos de benchmarks para `marches-extracteur`, por lo que no se puede evaluar su rendimiento relativo. La ventaja principal de este modelo es su disponibilidad en GGUF, aunque el resto de especificaciones son desconocidas.
 
@@ -74,5 +74,5 @@ La comparación se limita a modelos del mismo rango de parámetros. No se dispon
 
 ## Enlaces
 
-- [HuggingFace: Ziyed-trading/marches-extracteur](https://huggingface.co/Ziyed-trading/marches-extracteur)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Ziyed-trading)
+- [Hugging Face: Ziyed-trading/marches-extracteur](https://huggingface.co/Ziyed-trading/marches-extracteur)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Ziyed-trading)

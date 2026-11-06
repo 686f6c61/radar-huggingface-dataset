@@ -50,7 +50,7 @@ Dado que el propio autor prohibe el despliegue y no hay evaluaciones, los casos 
 - Reproducibilidad de continued pretraining a baja escala: el regimen (1 epoca, lr 1e-05, ~7,8 M tokens) sirve como caso de referencia para estudiar sobreajuste y olvido catastrofico con presupuestos minimos de computo.
 - Analisis de contaminacion y calidad de datos sinteticos: revisar los 8.308 documentos para detectar plantillas repetitivas, sesgos de estilo y degeneracion tipica de texto autogenerado.
 - Evaluacion comparativa pre/post ajuste: ejecutar baterias estandar (conocimiento, instrucciones, seguridad) sobre este checkpoint y sobre el base para cuantificar el dano o la mejora introducidos por el continued pretraining.
-- Docencia y metodologia: emplearlo como ejemplo de buenas y malas practicas al publicar un checkpoint en HuggingFace, incluida la ausencia de evaluacion y de especificacion de contexto.
+- Docencia y metodologia: emplearlo como ejemplo de buenas y malas practicas al publicar un checkpoint en Hugging Face, incluida la ausencia de evaluacion y de especificacion de contexto.
 
 ## Benchmarks y rendimiento
 
@@ -75,7 +75,7 @@ La informacion proporcionada no incluye datos de modelos alternativos comparable
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `joshycodes/gemma-4-12b-it-fve-mixdiscern-s0` | 12.966.363.184 | No disponible | `research-only` | HuggingFace, 0 descargas |
+| `joshycodes/gemma-4-12b-it-fve-mixdiscern-s0` | 12.966.363.184 | No disponible | `research-only` | Hugging Face, 0 descargas |
 | `google/gemma-4-12B-it` (base declarado) | No disponible (el nombre sugiere ~12B) | No disponible | No disponible en la informacion facilitada | No disponible en la informacion facilitada |
 | Otras alternativas de ~12B (Llama, Qwen, Mistral y similares) | No disponible | No disponible | No disponible | No disponible |
 
@@ -94,7 +94,7 @@ La informacion proporcionada no incluye datos de modelos alternativos comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshycodes/gemma-4-12b-it-fve-mixdiscern-s0
+- Hugging Face: https://huggingface.co/joshycodes/gemma-4-12b-it-fve-mixdiscern-s0
 - Modelo base declarado: `google/gemma-4-12B-it` (no se ha facilitado URL)
 - Corpus citado: `flourishing-vs-equanimity` (sin URL disponible)
 - Repositorio citado: `welfare-improvements` (sin URL disponible)

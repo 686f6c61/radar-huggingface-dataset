@@ -71,8 +71,8 @@ Los tres adaptadores comparten la misma base y metodología SWAP, pero se especi
 
 ## Enlaces
 
-- [HuggingFace: sxiong/SWAP_ReClor_Gen_Llama3-8B-LoRA](https://huggingface.co/sxiong/SWAP_ReClor_Gen_Llama3-8B-LoRA)
-- [Dataset SWAP en HuggingFace](https://huggingface.co/datasets/sxiong/SWAP)
+- [Hugging Face: sxiong/SWAP_ReClor_Gen_Llama3-8B-LoRA](https://huggingface.co/sxiong/SWAP_ReClor_Gen_Llama3-8B-LoRA)
+- [Dataset SWAP en Hugging Face](https://huggingface.co/datasets/sxiong/SWAP)
 - [Paper ReClor (arXiv:2002.04326)](https://arxiv.org/pdf/2002.04326)
 - [Repositorio GitHub de SWAP](https://github.com/xiongsiheng/SWAP)
 - [Artículo "Deliberate reasoning in language models as structure-aware planning with an accurate world model" (ACL 2025)](https://aclanthology.org/2025.acl-long.1649/)

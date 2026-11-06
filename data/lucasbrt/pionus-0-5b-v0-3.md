@@ -83,10 +83,10 @@ Comparacion pareada frente a v0.1 en los 250 commits Conventional de eval-v1 con
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pionus-0.5b-v0.3 | 494.032.768 | no disponible | Especializado en mensajes de commit con DPO y recompensas programaticas | apache-2.0 | HuggingFace (safetensors y GGUF) |
-| pionus-0.5b-v0.1 | no disponible | no disponible | Version anterior, solo SFT, sin etapa DPO | apache-2.0 | HuggingFace |
-| Qwen2.5-Coder-0.5B-Instruct | 0,5B (aproximado) | no disponible | Modelo generalista de codigo e instrucciones, sin especializar | apache-2.0 | HuggingFace |
-| pionus-0.5b-v0.2 | no disponible | no disponible | Entrenado sin las reglas en el prompt | apache-2.0 | HuggingFace |
+| pionus-0.5b-v0.3 | 494.032.768 | no disponible | Especializado en mensajes de commit con DPO y recompensas programaticas | apache-2.0 | Hugging Face (safetensors y GGUF) |
+| pionus-0.5b-v0.1 | no disponible | no disponible | Version anterior, solo SFT, sin etapa DPO | apache-2.0 | Hugging Face |
+| Qwen2.5-Coder-0.5B-Instruct | 0,5B (aproximado) | no disponible | Modelo generalista de codigo e instrucciones, sin especializar | apache-2.0 | Hugging Face |
+| pionus-0.5b-v0.2 | no disponible | no disponible | Entrenado sin las reglas en el prompt | apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -103,7 +103,7 @@ Comparacion pareada frente a v0.1 en los 250 commits Conventional de eval-v1 con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LucasBRT/pionus-0.5b-v0.3
+- Modelo en Hugging Face: https://huggingface.co/LucasBRT/pionus-0.5b-v0.3
 - Version anterior v0.1: https://huggingface.co/LucasBRT/pionus-0.5b-v0.1
 - Repositorio de la CLI pionus: https://github.com/Lucas-BRT/pionus
 - Documentacion de evaluacion: https://github.com/Lucas-BRT/pionus/blob/main/training/README.md

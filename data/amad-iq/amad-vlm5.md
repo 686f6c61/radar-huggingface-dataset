@@ -130,7 +130,7 @@ amad-vlm5 supera en CHrF a todos los modelos comparados, incluidos los cerrados 
 
 ## Enlaces
 
-- Repositorio HuggingFace (bf16 safetensors): https://huggingface.co/amad-iq/amad-vlm5
-- Repositorio HuggingFace GGUF: https://huggingface.co/amad-iq/amad-vlm5-GGUF
+- Repositorio Hugging Face (bf16 safetensors): https://huggingface.co/amad-iq/amad-vlm5
+- Repositorio Hugging Face GGUF: https://huggingface.co/amad-iq/amad-vlm5-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Benchmark KITAB-Bench: https://github.com/mbzuai-oryx/KITAB-Bench

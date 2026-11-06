@@ -97,9 +97,9 @@ La comparacion directa con alternativas de mayor tamano no puede cuantificarse e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Torick63/opus-mt-pt-en-onnx-int8
+- Modelo en Hugging Face: https://huggingface.co/Torick63/opus-mt-pt-en-onnx-int8
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-ROMANCE-en (revision `e9ca997`)
-- Organizacion Helsinki-NLP en HuggingFace: https://huggingface.co/Helsinki-NLP
+- Organizacion Helsinki-NLP en Hugging Face: https://huggingface.co/Helsinki-NLP
 - Proyecto OPUS (corpus y recursos): https://opus.nlpl.eu
 - Optimum (exportacion ONNX): https://github.com/huggingface/optimum
 - Documentacion de cuantizacion de ONNX Runtime: https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html

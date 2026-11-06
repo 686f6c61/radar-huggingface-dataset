@@ -4,7 +4,7 @@
 
 dots.ocr es un modelo de parsing de documentos multilingüe que unifica la detección de layout y el reconocimiento de contenido en un único modelo de visión-lenguaje (VLM). Desarrollado por el equipo de rednote (Xiaohongshu) y publicado bajo licencia MIT, el modelo procesa imágenes de documentos y devuelve un JSON estructurado con las bounding boxes de cada elemento, su categoría (título, tabla, fórmula, imagen, etc.) y el texto extraído en el orden de lectura correcto. A pesar de estar basado en un LLM compacto de 1.7B de parámetros, alcanza resultados de nivel SOTA en el benchmark OmniDocBench para texto, tablas y orden de lectura, y resultados comparables a modelos mucho mayores como Doubao-1.5 o Gemini 2.5 Pro en reconocimiento de fórmulas.
 
-El modelo tiene un total de 3.039.179.264 parámetros (aproximadamente 3.04B), lo que incluye el vision encoder y el LLM base. Soporta múltiples idiomas, incluyendo lenguas de bajos recursos, y ofrece una arquitectura unificada que elimina la necesidad de pipelines complejos con múltiples modelos especializados. El repositorio en HuggingFace (Hisham20/dots-ocr-model) es un mirror del proyecto original de rednote-hilab/dots.ocr, con el mismo peso y licencia.
+El modelo tiene un total de 3.039.179.264 parámetros (aproximadamente 3.04B), lo que incluye el vision encoder y el LLM base. Soporta múltiples idiomas, incluyendo lenguas de bajos recursos, y ofrece una arquitectura unificada que elimina la necesidad de pipelines complejos con múltiples modelos especializados. El repositorio en Hugging Face (Hisham20/dots-ocr-model) es un mirror del proyecto original de rednote-hilab/dots.ocr, con el mismo peso y licencia.
 
 ## Especificaciones tecnicas
 
@@ -34,7 +34,7 @@ No se han publicado detalles sobre el dataset de entrenamiento, el número de to
 - Orden de lectura: ordena todos los elementos según el orden de lectura humano.
 - Salida estructurada en JSON: el resultado es un único objeto JSON con toda la información.
 - Multilingüe: soporta inglés, chino y otros idiomas, con especial robustez en lenguas de bajos recursos.
-- Integración con Transformers: se puede cargar con `AutoModelForCausalLM` y `AutoProcessor` estándar de HuggingFace.
+- Integración con Transformers: se puede cargar con `AutoModelForCausalLM` y `AutoProcessor` estándar de Hugging Face.
 
 ## Casos de uso
 
@@ -72,8 +72,8 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace (mirror): https://huggingface.co/Hisham20/dots-ocr-model
-- Repositorio HuggingFace original: https://huggingface.co/rednote-hilab/dots.ocr
+- Repositorio Hugging Face (mirror): https://huggingface.co/Hisham20/dots-ocr-model
+- Repositorio Hugging Face original: https://huggingface.co/rednote-hilab/dots.ocr
 - Repositorio GitHub: https://github.com/rednote-hilab/dots.ocr
 - Blog del proyecto: https://github.com/rednote-hilab/dots.ocr/blob/master/assets/blog.md
 - Demo en vivo: https://dotsocr.xiaohongshu.com

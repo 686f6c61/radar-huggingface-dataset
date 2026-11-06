@@ -76,6 +76,6 @@ La comparativa se basa en modelos del mismo autor y familia. La diferencia princ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/isbondarev/giga3-github-issues
+- Modelo en Hugging Face: https://huggingface.co/isbondarev/giga3-github-issues
 - Modelo relacionado GigaChat3-10B-A1.8B-bf16: https://huggingface.co/isbondarev/GigaChat3-10B-A1.8B-bf16
 - Modelo relacionado GigaChat3.1-10B-A1.8B-bf16: https://huggingface.co/isbondarev/GigaChat3.1-10B-A1.8B-bf16

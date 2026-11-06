@@ -6,7 +6,7 @@ MiniMax-M3.1-Flash es un modelo multimodal nativo de arquitectura Mixture-of-Exp
 
 El dato de parametros presenta una discrepancia relevante entre la model card y los pesos publicados: la model card declara aproximadamente 428B parametros totales con 23B activados por token, mientras que el recuento real de los ficheros safetensors del repositorio arroja 220.490.854.016 parametros (unos 220,5B). Esta ficha recoge ambos datos de forma explicita para que el lector pueda contrastarlos.
 
-La relevancia del modelo radica en su combinacion de contexto de un millon de tokens, capacidades multimodales (imagen y video) y un enfasis declarado en tareas agenticas y de ciberseguridad, con resultados reportados por el autor en benchmarks como BankerToolBench (76,2), DeepSWE v1.1 (73,7%), OSWorld V2 (61,7), Agents' Last Exam (29,6) y CyberGym (82,2). El repositorio de HuggingFace pertenece a la organizacion Stealth-org y se distribuye bajo licencia minimax-community.
+La relevancia del modelo radica en su combinacion de contexto de un millon de tokens, capacidades multimodales (imagen y video) y un enfasis declarado en tareas agenticas y de ciberseguridad, con resultados reportados por el autor en benchmarks como BankerToolBench (76,2), DeepSWE v1.1 (73,7%), OSWorld V2 (61,7), Agents' Last Exam (29,6) y CyberGym (82,2). El repositorio de Hugging Face pertenece a la organizacion Stealth-org y se distribuye bajo licencia minimax-community.
 
 ## Especificaciones tecnicas
 
@@ -97,12 +97,12 @@ Los modelos alternativos aparecen solo como referencias de benchmark en la model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stealth-org/MiniMax-M3.1-Flash
+- Hugging Face: https://huggingface.co/Stealth-org/MiniMax-M3.1-Flash
 - Paper arXiv: https://arxiv.org/abs/2606.13392
 - MiniMax Agent: https://agent.minimax.io/
 - API MiniMax: https://platform.minimax.io/docs/guides/text-generation
 - Web oficial MiniMax: https://www.minimax.io
 - ModelScope MiniMax AI: https://modelscope.cn/organization/minimax
 - Discord MiniMax: https://discord.com/invite/DPC4AHFCBw
-- HuggingFace MiniMaxAI: https://huggingface.co/MiniMaxAI
+- Hugging Face MiniMaxAI: https://huggingface.co/MiniMaxAI
 - GitHub MiniMax-AI: https://github.com/MiniMax-AI

@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - DM-Diaz/VEDB-SimCLR-ResNet18-Fovea-Gaze](https://huggingface.co/DM-Diaz/VEDB-SimCLR-ResNet18-Fovea-Gaze)
+- [Hugging Face - DM-Diaz/VEDB-SimCLR-ResNet18-Fovea-Gaze](https://huggingface.co/DM-Diaz/VEDB-SimCLR-ResNet18-Fovea-Gaze)
 - [Colección VEDB - Eccentricity-Constrained SimCLR Models](https://hf.co/collections/DM-Diaz/eccentricity-constrained-simclr-models-vedb)
 - [arXiv:2607.19316](https://arxiv.org/abs/2607.19316)
 - [DOI: 10.32470/0416gfsq](https://doi.org/10.32470/0416gfsq)

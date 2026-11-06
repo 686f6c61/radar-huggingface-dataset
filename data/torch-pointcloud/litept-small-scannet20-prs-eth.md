@@ -74,7 +74,7 @@ No se dispone en la informacion proporcionada de datos de otros modelos de segme
 
 | Modelo | Parametros | Dataset | mIoU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| litept-small.scannet20.prs-eth | 12,7 M | ScanNet (20 clases) | 76,54 | MIT | HuggingFace |
+| litept-small.scannet20.prs-eth | 12,7 M | ScanNet (20 clases) | 76,54 | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,11 +87,11 @@ No se dispone en la informacion proporcionada de datos de otros modelos de segme
 - Dependencias de compilacion: requiere `spconv` y `flash-attn` compilados contra la version exacta de PyTorch y CUDA; un desajuste de versiones impide la carga del modelo.
 - Solo GPU: los kernels de inferencia son exclusivos de CUDA, por lo que no es desplegable en CPU sin adaptaciones.
 - Metricas no verificadas: los valores de mIoU y OA provienen de la model card y estan marcados como no verificados.
-- Modelo sin pipeline declarado en HuggingFace y con muy pocas descargas (20), lo que sugiere escasa validacion comunitaria.
+- Modelo sin pipeline declarado en Hugging Face y con muy pocas descargas (20), lo que sugiere escasa validacion comunitaria.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/litept-small.scannet20.prs-eth
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/litept-small.scannet20.prs-eth
 - Paper LitePT: https://arxiv.org/abs/2512.13689
 - Repositorio original prs-eth/LitePT: https://github.com/prs-eth/LitePT
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

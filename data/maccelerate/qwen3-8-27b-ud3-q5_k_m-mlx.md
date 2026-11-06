@@ -99,7 +99,7 @@ La diferencia principal entre las tres entradas no es de rendimiento sino de for
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maccelerate/Qwen3.8-27B-UD3-Q5_K_M-MLX
+- Modelo en Hugging Face: https://huggingface.co/maccelerate/Qwen3.8-27B-UD3-Q5_K_M-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF de origen de la cuantizacion: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Runtime recomendado (mlx-serve): https://github.com/ddalcu/mlx-serve

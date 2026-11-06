@@ -125,7 +125,7 @@ No se dispone de comparativas contra politicas VLA de otros fabricantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/changh95/pi05-base-bh-galaxy
+- Repositorio Hugging Face: https://huggingface.co/changh95/pi05-base-bh-galaxy
 - Paquete single-chip previo: https://huggingface.co/changh95/pi05-base-p150
 - Port a Blackhole: https://huggingface.co/changh95/pi05-base-blackhole
 - Paquete de batching p300x2: https://huggingface.co/changh95/pi05-base-batch-p300x2

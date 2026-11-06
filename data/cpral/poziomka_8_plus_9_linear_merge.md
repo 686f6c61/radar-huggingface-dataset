@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cpral/poziomka_8_plus_9_linear_merge` es un modelo de generación de texto en polaco publicado por el usuario cpral en HuggingFace. Se trata de una fusión lineal (*linear merge*, es decir, una combinación ponderada de pesos) de dos modelos previos de la misma familia, Poziomka 8 y Poziomka 9. El resultado es un checkpoint único de 4.119.797.632 parámetros (aproximadamente 4,12 mil millones) que conserva el pipeline `text-generation` y la etiqueta `conversational`.
+`cpral/poziomka_8_plus_9_linear_merge` es un modelo de generación de texto en polaco publicado por el usuario cpral en Hugging Face. Se trata de una fusión lineal (*linear merge*, es decir, una combinación ponderada de pesos) de dos modelos previos de la misma familia, Poziomka 8 y Poziomka 9. El resultado es un checkpoint único de 4.119.797.632 parámetros (aproximadamente 4,12 mil millones) que conserva el pipeline `text-generation` y la etiqueta `conversational`.
 
 El interés técnico del modelo es limitado pero concreto: permite evaluar el efecto de interpolar los pesos de dos versiones de una misma familia sin reentrenamiento, un procedimiento habitual para recuperar capacidades perdidas tras un ajuste fino o para suavizar el comportamiento entre dos checkpoints. La model card pública es mínima (solo licencia, idioma y pipeline), sin información sobre datos de entrenamiento, ventana de contexto ni resultados de evaluación.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `cpral/poziomka_8_plus_9_linear_merge` | 4,12 B | no disponible | Apache 2.0 | HuggingFace, safetensors + custom_code | Fusión lineal de dos checkpoints |
+| `cpral/poziomka_8_plus_9_linear_merge` | 4,12 B | no disponible | Apache 2.0 | Hugging Face, safetensors + custom_code | Fusión lineal de dos checkpoints |
 | Poziomka 8 (modelo de origen) | no disponible | no disponible | no disponible | referenciado en la model card | Componente de la mezcla |
 | Poziomka 9 (modelo de origen) | no disponible | no disponible | no disponible | referenciado en la model card | Componente de la mezcla |
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones de los modelos de or
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cpral/poziomka_8_plus_9_linear_merge
+- Hugging Face: https://huggingface.co/cpral/poziomka_8_plus_9_linear_merge
 - Paper, blog o repositorio adicional: no disponible en la información proporcionada.
 - Demo o espacio de inferencia: no disponible.
 - Documentación de la arquitectura `bailing_moe`: no disponible en la información proporcionada.

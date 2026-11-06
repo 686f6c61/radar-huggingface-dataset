@@ -4,7 +4,7 @@
 
 MR-IQA-2 es un sistema de evaluación y mejora de calidad de imagen (IQA) desarrollado por RobinY99, que combina un modelo de lenguaje y visión (Actor) con un modelo de edición de imágenes (Editor) y un modelo juez (Judge) para evaluar la calidad percibida de una imagen y proponer mejoras. Se basa en el enfoque MR-IQA, que unifica regresión y ranking mediante una vista de margen para la evaluación ciega de calidad, y lo extiende con un entrenamiento por refuerzo de crédito enmascarado (masked-credit). El sistema es relevante porque ofrece un pipeline completo: el Actor analiza la imagen, genera una solución de edición y una puntuación; el Editor aplica esa solución; y el Judge evalúa el resultado, todo con licencia Apache 2.0 y pesos abiertos.
 
-El modelo está compuesto por varios componentes: el Actor se basa en Qwen3-VL-2B (según se indica en la comparativa con MR-IQA), el Editor es una réplica de FLUX.2 Klein 4B, y el Judge es un modelo congelado E5. El repositorio de HuggingFace contiene los tres componentes, con un tamaño total de 43,2 GB. Los idiomas soportados son únicamente inglés, y la librería principal es diffusers para el Editor y transformers para el Actor y el Judge.
+El modelo está compuesto por varios componentes: el Actor se basa en Qwen3-VL-2B (según se indica en la comparativa con MR-IQA), el Editor es una réplica de FLUX.2 Klein 4B, y el Judge es un modelo congelado E5. El repositorio de Hugging Face contiene los tres componentes, con un tamaño total de 43,2 GB. Los idiomas soportados son únicamente inglés, y la librería principal es diffusers para el Editor y transformers para el Actor y el Judge.
 
 ## Especificaciones tecnicas
 
@@ -69,8 +69,8 @@ La comparativa directa se establece con MR-IQA, el modelo predecesor del mismo a
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 | --- | --- | --- | --- | --- |
-| MR-IQA | 2B (Actor) | No disponible | Apache 2.0 | GitHub y HuggingFace |
-| MR-IQA-2 | 2B (Actor) + 4B (Editor) | No disponible | Apache 2.0 | GitHub y HuggingFace |
+| MR-IQA | 2B (Actor) | No disponible | Apache 2.0 | GitHub y Hugging Face |
+| MR-IQA-2 | 2B (Actor) + 4B (Editor) | No disponible | Apache 2.0 | GitHub y Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ La comparativa directa se establece con MR-IQA, el modelo predecesor del mismo a
 
 ## Enlaces
 
-- [HuggingFace: RobinY99/MR-IQA-2](https://huggingface.co/RobinY99/MR-IQA-2)
+- [Hugging Face: RobinY99/MR-IQA-2](https://huggingface.co/RobinY99/MR-IQA-2)
 - [GitHub: RobinY99/MR-IQA-2](https://github.com/RobinY99/MR-IQA-2)
 - [GitHub: RobinY99/MR-IQA (modelo predecesor)](https://github.com/RobinY99/MR-IQA)
 - [Paper MR-IQA en arXiv](https://arxiv.org/html/2606.29760v2)

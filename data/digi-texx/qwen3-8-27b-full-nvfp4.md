@@ -100,7 +100,7 @@ La principal diferencia entre las dos versiones NVFP4 es la cuantizacion del `lm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/digi-texx/Qwen3.8-27B-FULL-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/digi-texx/Qwen3.8-27B-FULL-NVFP4
 - Modelo base cuantizado (QUASAR-QAT): https://huggingface.co/QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper MR-GPTQ: https://arxiv.org/abs/2509.23202

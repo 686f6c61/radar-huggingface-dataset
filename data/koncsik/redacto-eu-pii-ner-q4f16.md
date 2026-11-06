@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| koncsik/redacto-eu-pii-ner-q4f16 | Encoder NER PII, ONNX q4f16 | no disponible | no disponible | apache-2.0 | HuggingFace, transformers.js |
-| bardsai/eu-pii-anonimization-multilang | Encoder NER PII (modelo fuente) | no disponible | no disponible | apache-2.0 (DOI 10.57967/hf/8721) | HuggingFace |
-| Horizon-Labs/pii-redactor-base | Redaccion de PII | no disponible | no disponible | no disponible | HuggingFace |
+| koncsik/redacto-eu-pii-ner-q4f16 | Encoder NER PII, ONNX q4f16 | no disponible | no disponible | apache-2.0 | Hugging Face, transformers.js |
+| bardsai/eu-pii-anonimization-multilang | Encoder NER PII (modelo fuente) | no disponible | no disponible | apache-2.0 (DOI 10.57967/hf/8721) | Hugging Face |
+| Horizon-Labs/pii-redactor-base | Redaccion de PII | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones en la informacion proporcionada. Como alternativa no basada en modelo neuronal existe la deteccion por patrones (regex) que el propio Redacto usa como modo ligero, con cobertura limitada a formatos predefinidos.
 
@@ -85,9 +85,9 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/koncsik/redacto-eu-pii-ner-q4f16
+- Modelo en Hugging Face: https://huggingface.co/koncsik/redacto-eu-pii-ner-q4f16
 - Modelo base: https://huggingface.co/bardsai/eu-pii-anonimization-multilang
 - Repositorio Redacto: https://github.com/HunKonTech/Redacto
 - README de Redacto: https://github.com/HunKonTech/Redacto/blob/main/README.md
 - Sitio web del proyecto: https://redacto.nl/
-- Alternativa en HuggingFace: https://huggingface.co/Horizon-Labs/pii-redactor-base
+- Alternativa en Hugging Face: https://huggingface.co/Horizon-Labs/pii-redactor-base

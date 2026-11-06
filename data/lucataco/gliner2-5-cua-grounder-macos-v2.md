@@ -74,8 +74,8 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gliner2.5-cua-grounder-macos-v2 (este modelo) | 287.355.159 | 4.096 tokens codificados | Seleccion acotada de acciones CUA + puerta de efecto verificado | Apache-2.0 | HuggingFace, repositorio con acceso restringido (gated) |
-| fastino/gliner2.5-multi-v1 | no disponible en la informacion proporcionada | no disponible | Grounding/extraccion multilingue base | no disponible en la informacion proporcionada | HuggingFace |
+| gliner2.5-cua-grounder-macos-v2 (este modelo) | 287.355.159 | 4.096 tokens codificados | Seleccion acotada de acciones CUA + puerta de efecto verificado | Apache-2.0 | Hugging Face, repositorio con acceso restringido (gated) |
+| fastino/gliner2.5-multi-v1 | no disponible en la informacion proporcionada | no disponible | Grounding/extraccion multilingue base | no disponible en la informacion proporcionada | Hugging Face |
 | Planificadores CUA generativos multimodales (por ejemplo, la familia UI-TARS y similares) | no disponible en la informacion proporcionada | no disponible | Planificacion y grounding visual de extremo a extremo | no disponible en la informacion proporcionada | no disponible |
 
 La diferencia funcional relevante no es de tamano sino de contrato: frente a un planificador generativo multimodal que produce acciones en texto libre, este modelo restringe la salida a un menu cerrado y anade una puerta calibrada que puede abstenerse. No se dispone de datos comparativos de rendimiento frente a las alternativas citadas.
@@ -96,7 +96,7 @@ La diferencia funcional relevante no es de tamano sino de contrato: frente a un 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucataco/gliner2.5-cua-grounder-macos-v2
+- Modelo en Hugging Face: https://huggingface.co/lucataco/gliner2.5-cua-grounder-macos-v2
 - Modelo base: https://huggingface.co/fastino/gliner2.5-multi-v1
 - Referencia arXiv citada en las etiquetas del repositorio: https://arxiv.org/abs/2507.18546
 - Los resultados de la busqueda web disponible no contienen enlaces relevantes a este modelo: todas las entradas devueltas tratan sobre turismo en Florencia y no guardan relacion con el contenido de la ficha.

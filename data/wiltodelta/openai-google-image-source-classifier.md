@@ -95,7 +95,7 @@ No se dispone de una comparativa cuantitativa con alternativas en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wiltodelta/openai-google-image-source-classifier
+- Modelo en Hugging Face: https://huggingface.co/wiltodelta/openai-google-image-source-classifier
 - Conjunto de evaluacion Qwen Image Bench: https://huggingface.co/datasets/Qwen/Qwen-Image-Bench
 - Conjunto de control fotografico lightcella/photo-corpus: https://huggingface.co/datasets/lightcella/photo-corpus
 - Libreria de integracion: paquete `remove-ai-watermarks` con extra `source-classify` (URL no disponible en la informacion proporcionada)

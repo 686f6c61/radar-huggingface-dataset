@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alac/flan-t5-deslopV3-onnx` es una conversión al formato ONNX de un modelo de la familia FLAN-T5, publicada por el usuario alac en HuggingFace. Por el nombre del repositorio se deduce que parte de un ajuste fino (fine-tuning) de FLAN-T5 orientado a una tarea denominada "deslop", presumiblemente una tarea de reescritura o limpieza de texto, aunque esta información no está confirmada en la model card, que se limita a declarar la licencia Apache 2.0. El repositorio tiene un tamaño de 0,3 GB y apenas 16 descargas, lo que indica un modelo de nicho, probablemente experimental o de uso interno.
+El modelo `alac/flan-t5-deslopV3-onnx` es una conversión al formato ONNX de un modelo de la familia FLAN-T5, publicada por el usuario alac en Hugging Face. Por el nombre del repositorio se deduce que parte de un ajuste fino (fine-tuning) de FLAN-T5 orientado a una tarea denominada "deslop", presumiblemente una tarea de reescritura o limpieza de texto, aunque esta información no está confirmada en la model card, que se limita a declarar la licencia Apache 2.0. El repositorio tiene un tamaño de 0,3 GB y apenas 16 descargas, lo que indica un modelo de nicho, probablemente experimental o de uso interno.
 
 La relevancia de esta ficha es limitada: se trata de un artefacto derivado, sin documentación técnica sustancial, sin benchmarks publicados y sin información sobre el proceso de entrenamiento, los datos utilizados o los idiomas soportados. La etiqueta `t5` confirma que la arquitectura subyacente es un transformer encoder-decoder de la familia T5, y la etiqueta `onnx` indica que los pesos están exportados para su uso con runtimes de inferencia ONNX (ONNX Runtime, etc.), lo que facilita el despliegue en entornos sin PyTorch.
 
@@ -83,5 +83,5 @@ La comparativa con los checkpoints oficiales de FLAN-T5 es la más razonable, da
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alac/flan-t5-deslopV3-onnx
+- Repositorio Hugging Face: https://huggingface.co/alac/flan-t5-deslopV3-onnx
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

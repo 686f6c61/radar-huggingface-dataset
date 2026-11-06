@@ -42,7 +42,7 @@ Se publican cinco checkpoints, cada uno entrenado sobre los seis meses inmediata
 - Dos modos de lectura documentados: embedding del último parche (`pool="last"`), pensado para sondas de forecasting como estado en el instante de decisión, y media sobre parches (`pool="mean"`), usada en los análisis latentes del paper.
 - Entrada multimodal de series: 9 canales de mercado simultáneos (precios, tamaños de libro, volumen, número de operaciones) más 11 canales de información de vista.
 - Base para transfer learning hacia tareas financieras posteriores, ya que el modelo se distribuye como codificador y no como predictor de precio.
-- Integración con el ecosistema HuggingFace Hub mediante `snapshot_download` y carga directa del state dict con `torch.load(..., weights_only=True)`.
+- Integración con el ecosistema Hugging Face Hub mediante `snapshot_download` y carga directa del state dict con `torch.load(..., weights_only=True)`.
 - No soporta tool calling, function calling, agentes, generación de texto, visión, audio ni capacidades multilingües: no es un modelo de lenguaje.
 
 ## Casos de uso
@@ -96,7 +96,7 @@ Los 18 codificadores de la familia comparten backbone, calendario de entrenamien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fin-ai-lab/tfwm-byol
+- Modelo en Hugging Face: https://huggingface.co/fin-ai-lab/tfwm-byol
 - Colección TFWM Pre-Trained Encoders: https://huggingface.co/collections/fin-ai-lab/tfwm-pre-trained-encoders-6ab871e942535b9c6041698d
 - Dataset de entrenamiento: https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense
 - Subcarpeta usada en entrenamiento (`1Hz_mosaic_mnth`): https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense/tree/main/1Hz_mosaic_mnth

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RADAR es un modelo de clasificacion de texto (text-classification) desarrollado por el usuario roadrage10 y publicado en HuggingFace. Se trata de un ajuste fino (fine-tune) del modelo MahmoodAnaam/radar-encoder-freeze sobre el conjunto de datos MahmoodAnaam/radar-pan26-raid. Por su nombre, su familia de origen y el dataset empleado, RADAR se enmarca en la deteccion de texto generado por IA (AI-text detection), una tarea binaria o de scoring que busca distinguir texto humano de texto sintetico.
+RADAR es un modelo de clasificacion de texto (text-classification) desarrollado por el usuario roadrage10 y publicado en Hugging Face. Se trata de un ajuste fino (fine-tune) del modelo MahmoodAnaam/radar-encoder-freeze sobre el conjunto de datos MahmoodAnaam/radar-pan26-raid. Por su nombre, su familia de origen y el dataset empleado, RADAR se enmarca en la deteccion de texto generado por IA (AI-text detection), una tarea binaria o de scoring que busca distinguir texto humano de texto sintetico.
 
 El modelo tiene 399.711.361 parametros (aproximadamente 400 millones), lo que lo situa en la categoria de encoder denso de tamano medio-grande. No es un modelo generativo: su salida es una clasificacion, no texto. Esto lo hace mucho mas ligero de desplegar que un LLM y adecuado para integrarse como componente de moderacion o filtrado en pipelines de produccion.
 
@@ -32,7 +32,7 @@ La relevancia actual de este tipo de modelos radica en la necesidad creciente de
 
 RADAR es el resultado de un fine-tune supervisado sobre el checkpoint MahmoodAnaam/radar-encoder-freeze, que a su vez forma parte de la familia de detectores RADAR de Mahmood Anaam. La arquitectura subyacente es un transformer de tipo encoder (no se especifica en la informacion disponible si se trata de BERT, RoBERTa, DeBERTa, ModernBERT u otra variante), con cabeza de clasificacion. El modelo tiene 399.711.361 parametros y se distribuye en formato safetensors.
 
-El entrenamiento se realizo con el Trainer de HuggingFace sobre el dataset MahmoodAnaam/radar-pan26-raid. Los hiperparametros declarados son: learning rate 2e-05, tamano de lote de entrenamiento 32, tamano de lote de evaluacion 64, semilla 42, optimizador AdamW_TORCH_FUSED con betas (0.9, 0.999), scheduler coseno, warmup de 0.03 pasos y 10 epocas (12.000 pasos en total). No se documentan el numero de tokens de preentrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO (no aplicables a un clasificador de este tipo). La model card indica "More information needed" en las secciones de descripcion del modelo, usos previstos y datos de entrenamiento.
+El entrenamiento se realizo con el Trainer de Hugging Face sobre el dataset MahmoodAnaam/radar-pan26-raid. Los hiperparametros declarados son: learning rate 2e-05, tamano de lote de entrenamiento 32, tamano de lote de evaluacion 64, semilla 42, optimizador AdamW_TORCH_FUSED con betas (0.9, 0.999), scheduler coseno, warmup de 0.03 pasos y 10 epocas (12.000 pasos en total). No se documentan el numero de tokens de preentrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO (no aplicables a un clasificador de este tipo). La model card indica "More information needed" en las secciones de descripcion del modelo, usos previstos y datos de entrenamiento.
 
 ## Capacidades
 
@@ -100,9 +100,9 @@ La informacion disponible no incluye comparativas oficiales con otros detectores
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| roadrage10/RADAR | Modelo analizado | 399.711.361 | no disponible | no disponible | HuggingFace (3 descargas) |
-| MahmoodAnaam/radar-encoder-freeze | Modelo base del que deriva | no disponible | no disponible | no disponible | HuggingFace |
-| Variantes "base", "PAN26" y "RAID" de la familia RADAR | Copias/variantes del mismo autor | no disponible | no disponible | no disponible | HuggingFace (perfil roadrage10) |
+| roadrage10/RADAR | Modelo analizado | 399.711.361 | no disponible | no disponible | Hugging Face (3 descargas) |
+| MahmoodAnaam/radar-encoder-freeze | Modelo base del que deriva | no disponible | no disponible | no disponible | Hugging Face |
+| Variantes "base", "PAN26" y "RAID" de la familia RADAR | Copias/variantes del mismo autor | no disponible | no disponible | no disponible | Hugging Face (perfil roadrage10) |
 
 No se dispone de datos de rendimiento de alternativas comparables (por ejemplo, detectores basados en RoBERTa) en la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa fiable.
 
@@ -122,7 +122,7 @@ No se dispone de datos de rendimiento de alternativas comparables (por ejemplo, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roadrage10/RADAR
+- Modelo en Hugging Face: https://huggingface.co/roadrage10/RADAR
 - Perfil del autor (incluye las variantes base, PAN26 y RAID): https://huggingface.co/roadrage10
 - Modelo base: https://huggingface.co/MahmoodAnaam/radar-encoder-freeze
 - Dataset de ajuste: https://huggingface.co/datasets/MahmoodAnaam/radar-pan26-raid

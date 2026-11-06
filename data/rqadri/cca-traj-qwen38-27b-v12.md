@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rqadri/cca-traj-qwen38-27b-v12` es un ajuste fino de parámetros completos (full-parameter SFT) del modelo base `Qwen/Qwen3.8-27B`, publicado por el usuario rqadri en HuggingFace. El modelo está especializado en trayectorias de agentes de programación (coding-agent trajectories) mediante el corpus CCA, y se ha entrenado con una ventana de contexto de 128.000 tokens. El pipeline declarado es `image-text-to-text`, lo que indica que el modelo base es multimodal (visión y texto) y que el fine-tuning conserva esa capacidad, aunque el entrenamiento se centró en secuencias de texto de agentes.
+`rqadri/cca-traj-qwen38-27b-v12` es un ajuste fino de parámetros completos (full-parameter SFT) del modelo base `Qwen/Qwen3.8-27B`, publicado por el usuario rqadri en Hugging Face. El modelo está especializado en trayectorias de agentes de programación (coding-agent trajectories) mediante el corpus CCA, y se ha entrenado con una ventana de contexto de 128.000 tokens. El pipeline declarado es `image-text-to-text`, lo que indica que el modelo base es multimodal (visión y texto) y que el fine-tuning conserva esa capacidad, aunque el entrenamiento se centró en secuencias de texto de agentes.
 
 El problema que aborda es el ajuste de un modelo grande (27.356.728.560 parámetros, aproximadamente 27,36 mil millones) para seguir trayectorias largas de agente: generaciones multi-turno con uso de herramientas, razonamiento intermedio y contexto extenso. Es relevante porque el corpus de entrenamiento (1.982 secuencias concatenadas de `cca-large-v1` y `cca-large-v2`) está orientado a contextos de hasta 128k tokens, un régimen en el que la mayoría de los fine-tunes públicos de este tamaño no se entrenan por coste computacional.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Evaluacion publicada | Disponibilidad |
 |---|---|---|---|---|---|
-| rqadri/cca-traj-qwen38-27b-v12 | 27,36 mil millones | 128k | Apache 2.0 | No | HuggingFace (0 descargas) |
-| Qwen/Qwen3.8-27B (base) | 27,36 mil millones | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | HuggingFace |
+| rqadri/cca-traj-qwen38-27b-v12 | 27,36 mil millones | 128k | Apache 2.0 | No | Hugging Face (0 descargas) |
+| Qwen/Qwen3.8-27B (base) | 27,36 mil millones | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | Hugging Face |
 | Alternativas de ~27B para agentes de codigo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la informacion proporcionada; la comparación cuantitativa de rendimiento no está disponible.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rqadri/cca-traj-qwen38-27b-v12
+- Modelo en Hugging Face: https://huggingface.co/rqadri/cca-traj-qwen38-27b-v12
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de entrenamiento: https://github.com/rifaaQ/long_ctx_train
 - Protocolo de evaluación y resultados (referenciado por el autor): `longctx/results.md` en github.com/rifaaQ/long_ctx_train

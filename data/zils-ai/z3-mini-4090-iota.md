@@ -2,7 +2,7 @@
 
 ## Resumen
 
-z3-mini-4090-iota es un modelo de decisión tipada desarrollado por zils-ai (el identificador HuggingFace) y presentado en su model card bajo el nombre comercial "iota-decide-4b v0.4" de Macrocosmos. Se trata de un fine-tune del modelo instruct Qwen/Qwen3.5-4B que no genera texto libre: dado un estado (un fragmento de contexto estructurado) y una serie de preguntas tipadas (`choice`, `noul` para sí/no, `score`), devuelve en un único forward pass una probabilidad para cada opción, leyendo las letras de las opciones en la posición de respuesta. Resuelve el problema de convertir un LLM generativo en un clasificador de decisiones determinista y probabilístico, útil para enrutado, aprobación de acciones y scoring estructurado.
+z3-mini-4090-iota es un modelo de decisión tipada desarrollado por zils-ai (el identificador Hugging Face) y presentado en su model card bajo el nombre comercial "iota-decide-4b v0.4" de Macrocosmos. Se trata de un fine-tune del modelo instruct Qwen/Qwen3.5-4B que no genera texto libre: dado un estado (un fragmento de contexto estructurado) y una serie de preguntas tipadas (`choice`, `noul` para sí/no, `score`), devuelve en un único forward pass una probabilidad para cada opción, leyendo las letras de las opciones en la posición de respuesta. Resuelve el problema de convertir un LLM generativo en un clasificador de decisiones determinista y probabilístico, útil para enrutado, aprobación de acciones y scoring estructurado.
 
 El modelo tiene 4.539.265.536 parámetros totales (4,54 mil millones) según los pesos en safetensors, con un repositorio de 9,1 GB. Es un fine-tune con LoRA de rango 64 fusionado en los pesos, sobre la arquitectura de Qwen3.5 (atención lineal combinada con capas de atención completa). La innovación principal de la versión v0.4 es la atención bidireccional en las capas de atención completa: el estado se lee a la luz de la pregunta, mientras que las capas de atención lineal permanecen causales.
 
@@ -73,9 +73,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K) en l
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| z3-mini-4090-iota (iota-decide-4b v0.4) | 4,54B | no disponible | Decisión tipada con atención bidireccional | Apache 2.0 | HuggingFace, requiere script propio |
+| z3-mini-4090-iota (iota-decide-4b v0.4) | 4,54B | no disponible | Decisión tipada con atención bidireccional | Apache 2.0 | Hugging Face, requiere script propio |
 | Torchcast Decision 4B v1.3 | no disponible | no disponible | Decisión (referencia del autor) | no disponible | no disponible |
-| Qwen/Qwen3.5-4B (base) | 4B | no disponible | LLM generativo instruct | no disponible | HuggingFace |
+| Qwen/Qwen3.5-4B (base) | 4B | no disponible | LLM generativo instruct | no disponible | Hugging Face |
 
 El autor compara con Torchcast Decision 4B v1.3, que obtiene mejores resultados en los tres conjuntos reportados (65,6 frente a 62,9 en Decision Index; 90,7/79,5 frente a 89,3/76,6 en Rotten Tomatoes/TweetEval; 211 frente a 197 en JevBench). No se dispone de datos de otros modelos comparables en la información proporcionada.
 
@@ -93,6 +93,6 @@ El autor compara con Torchcast Decision 4B v1.3, que obtiene mejores resultados 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zils-ai/z3-mini-4090-iota
+- Hugging Face: https://huggingface.co/zils-ai/z3-mini-4090-iota
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

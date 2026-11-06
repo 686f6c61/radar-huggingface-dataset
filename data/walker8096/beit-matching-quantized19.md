@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| walker8096/beit-matching-quantized19 | 16.576 | no disponible | sin benchmarks | Apache 2.0 | HuggingFace |
+| walker8096/beit-matching-quantized19 | 16.576 | no disponible | sin benchmarks | Apache 2.0 | Hugging Face |
 | BEiT base (referencia oficial) | no disponible en esta ficha | no disponible | no disponible | no disponible | no disponible |
 | Otros checkpoints "tiny" de matching | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -80,5 +80,5 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/walker8096/beit-matching-quantized19
+- Hugging Face: https://huggingface.co/walker8096/beit-matching-quantized19
 - No se han encontrado enlaces adicionales (papers, blogs, repos o demos) en la informacion proporcionada.

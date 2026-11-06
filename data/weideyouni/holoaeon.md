@@ -2,11 +2,11 @@
 
 ## Resumen
 
-HoloAeon es un framework cognitivo para la construccion de sistemas multiagente sobre modelos de lenguaje, publicado por el usuario weideyouni en HuggingFace bajo el identificador `weideyouni/holoaeon`. No se trata de un modelo de lenguaje con pesos entrenados, sino de una libreria de software escrita en Python puro que proporciona primitivas para orquestar agentes: envelopes, bus de mensajes, agentes, habilidades, memoria, planificador por latidos, guarda de seguridad, grafo de colaboracion adaptativo, cluster de actores en paralelo y una capa de adaptadores de modelo.
+HoloAeon es un framework cognitivo para la construccion de sistemas multiagente sobre modelos de lenguaje, publicado por el usuario weideyouni en Hugging Face bajo el identificador `weideyouni/holoaeon`. No se trata de un modelo de lenguaje con pesos entrenados, sino de una libreria de software escrita en Python puro que proporciona primitivas para orquestar agentes: envelopes, bus de mensajes, agentes, habilidades, memoria, planificador por latidos, guarda de seguridad, grafo de colaboracion adaptativo, cluster de actores en paralelo y una capa de adaptadores de modelo.
 
 El proyecto se presenta como una implementacion sin dependencias externas (solo biblioteca estandar de Python), totalmente offline y determinista, orientada a construir sistemas multiagente sobre cualquier modelo de lenguaje, ya sea local, privado o en la nube. Incluye nueve paquetes de dominio listos para usar y una capa de optimizacion y busqueda auto-organizada. La version documentada en la model card es la 0.9.2, con un endurecimiento de evidencias denominado V2.
 
-La relevancia del repositorio en HuggingFace es marginal: cuenta con cero descargas, cero likes, un tamano de repositorio de 0.0 GB y carece de pipeline, licencia e idiomas declarados en los metadatos de la plataforma. La informacion disponible corresponde exclusivamente al contenido de la model card y a los metadatos publicos, por lo que muchas especificaciones propias de un modelo de lenguaje no son aplicables o no estan disponibles.
+La relevancia del repositorio en Hugging Face es marginal: cuenta con cero descargas, cero likes, un tamano de repositorio de 0.0 GB y carece de pipeline, licencia e idiomas declarados en los metadatos de la plataforma. La informacion disponible corresponde exclusivamente al contenido de la model card y a los metadatos publicos, por lo que muchas especificaciones propias de un modelo de lenguaje no son aplicables o no estan disponibles.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La relevancia del repositorio en HuggingFace es marginal: cuenta con cero descar
 | Longitud de contexto | no disponible (depende del modelo subyacente conectado mediante adaptadores) |
 | Tipos de cuantizacion | no disponible (no aplica al framework) |
 | Idiomas soportados | no disponible en metadatos; la documentacion esta en ingles y chino |
-| Licencia | Apache 2.0 segun los badges de la model card; no declarada en los metadatos de HuggingFace |
+| Licencia | Apache 2.0 segun los badges de la model card; no declarada en los metadatos de Hugging Face |
 | Formato de pesos | no disponible (no contiene pesos; es codigo Python) |
 
 ## Arquitectura y entrenamiento
@@ -79,8 +79,8 @@ No disponible. HoloAeon no es un modelo de lenguaje y no se han proporcionado co
 ## Limitaciones y advertencias
 
 - No es un modelo de lenguaje: no contiene pesos, no genera texto por si mismo y requiere un modelo externo para cualquier tarea generativa.
-- Metadatos incompletos en HuggingFace: sin pipeline, sin licencia declarada en la plataforma, sin idiomas y con cero descargas y likes, lo que impide verificar adopcion o mantenimiento.
-- Licencia: la model card muestra un badge Apache 2.0, pero los metadatos de HuggingFace no declaran licencia; conviene verificar el fichero `LICENSE` del repositorio antes de un uso comercial.
+- Metadatos incompletos en Hugging Face: sin pipeline, sin licencia declarada en la plataforma, sin idiomas y con cero descargas y likes, lo que impide verificar adopcion o mantenimiento.
+- Licencia: la model card muestra un badge Apache 2.0, pero los metadatos de Hugging Face no declaran licencia; conviene verificar el fichero `LICENSE` del repositorio antes de un uso comercial.
 - Madurez: la version documentada es 0.9.2, anterior a 1.0, con dimensiones declaradas como sin cambios en V2 y limites conocidos recogidos en `docs/spec-diff0-v0.2.md` (§9).
 - Evidencias locales: los badges se describen como medidos localmente en una maquina concreta (Python 3.13.16, Windows), aunque la CI se ejecuto en GitHub; la matriz de soporte distingue celdas medidas de celdas no probadas.
 - Riesgo de alucinacion: no aplica al framework, pero si al modelo subyacente que se conecte; el framework no documenta mecanismos de mitigacion de alucinaciones.
@@ -90,7 +90,7 @@ No disponible. HoloAeon no es un modelo de lenguaje y no se han proporcionado co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/weideyouni/holoaeon
+- Hugging Face: https://huggingface.co/weideyouni/holoaeon
 - Repositorio GitHub: https://github.com/weideyouni/holoaeon
 - Ejecucion de CI en GitHub: https://github.com/weideyouni/holoaeon/actions/runs/41202167792
 - Documentacion de algoritmo: `ALGORITHM.md` en el repositorio

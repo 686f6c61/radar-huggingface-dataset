@@ -65,5 +65,5 @@ No disponible. No se conocen modelos comparables con la misma configuración de 
 
 ## Enlaces
 
-- [HuggingFace: ben0112/Qwen3.8-27B-oQ3e-mtp](https://huggingface.co/ben0112/Qwen3.8-27B-oQ3e-mtp)
+- [Hugging Face: ben0112/Qwen3.8-27B-oQ3e-mtp](https://huggingface.co/ben0112/Qwen3.8-27B-oQ3e-mtp)
 - [Repositorio oQ (oMLX)](https://github.com/jundot/omlx)

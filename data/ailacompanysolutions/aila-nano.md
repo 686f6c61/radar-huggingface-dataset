@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aila-nano es un modelo publicado en HuggingFace por la organizacion ailacompanysolutions bajo identificador `ailacompanysolutions/aila-nano`. La model card asociada no contiene mas que la declaracion de licencia en el frontmatter YAML (`license: apache-2.0`), sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes desde su creacion el 27 de septiembre de 2026, y no tiene pipeline declarado.
+Aila-nano es un modelo publicado en Hugging Face por la organizacion ailacompanysolutions bajo identificador `ailacompanysolutions/aila-nano`. La model card asociada no contiene mas que la declaracion de licencia en el frontmatter YAML (`license: apache-2.0`), sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes desde su creacion el 27 de septiembre de 2026, y no tiene pipeline declarado.
 
 El nombre del modelo sugiere, por convencion habitual en la nomenclatura de modelos, un diseno compacto orientado a eficiencia ("nano"), pero esto es una inferencia a partir del identificador y no un dato confirmado por el autor. No hay informacion publica sobre numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos.
 
@@ -87,6 +87,6 @@ No disponible. No se puede establecer una comparativa fundamentada porque se des
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ailacompanysolutions/aila-nano
+- Hugging Face: https://huggingface.co/ailacompanysolutions/aila-nano
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo: ni papers, ni blogs tecnicos, ni repositorios de codigo, ni demos. Los resultados devueltos por la busqueda no guardaban relacion con el modelo y se han descartado por no aportar informacion tecnica utilizable.

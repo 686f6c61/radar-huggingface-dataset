@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks específicos para la conversión QN
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ML-Sharp-QNN (este) | Image-to-3D (QNN) | No disponible | No aplica | apple-amlr | HuggingFace (DLC) |
-| apple/Sharp (original) | Image-to-3D (PyTorch) | No disponible | No aplica | apple-amlr | HuggingFace (checkpoint .pt) |
+| ML-Sharp-QNN (este) | Image-to-3D (QNN) | No disponible | No aplica | apple-amlr | Hugging Face (DLC) |
+| apple/Sharp (original) | Image-to-3D (PyTorch) | No disponible | No aplica | apple-amlr | Hugging Face (checkpoint .pt) |
 | ML-Sharp (fork con MPS) | Image-to-3D (PyTorch) | No disponible | No aplica | apple-amlr | GitHub (rcarmo) |
 | ml-sharp-browser | Image-to-3D (ONNX) | No disponible | No aplica | No especificada | GitHub (miketahani) |
 
@@ -85,7 +85,7 @@ No se dispone de información sobre otros modelos de la misma categoría (recons
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kjcpc/ML-Sharp-QNN
+- Modelo en Hugging Face: https://huggingface.co/kjcpc/ML-Sharp-QNN
 - Modelo original apple/Sharp: https://huggingface.co/apple/Sharp
 - Repositorio de código de Apple: https://github.com/apple/ml-sharp
 - Página del proyecto: https://apple.github.io/ml-sharp/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidchhh/cross-modal-fusion-survey` no es un modelo de lenguaje entrenado, sino una colección de notas de lectura y un esbozo de experimento sobre fusión cross-modal (cross-modal fusion). Lo publica el usuario davidchhh en HuggingFace bajo licencia CC-BY-4.0, con las etiquetas `research-notes` y `cross-modal-fusion`, y con fecha de creación del 8 de octubre de 2026. El artefacto principal es un fichero `analysis.md`, no un checkpoint de pesos.
+El repositorio `davidchhh/cross-modal-fusion-survey` no es un modelo de lenguaje entrenado, sino una colección de notas de lectura y un esbozo de experimento sobre fusión cross-modal (cross-modal fusion). Lo publica el usuario davidchhh en Hugging Face bajo licencia CC-BY-4.0, con las etiquetas `research-notes` y `cross-modal-fusion`, y con fecha de creación del 8 de octubre de 2026. El artefacto principal es un fichero `analysis.md`, no un checkpoint de pesos.
 
 La propia model card es explícita al respecto: el repositorio "no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado". Las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. El valor de este repositorio es, por tanto, documental y metodológico: define el alcance de una pregunta de investigación, propone una comparación con baselines emparejados, nombra benchmarks públicos apropiados para la tarea y enumera comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas.
 
@@ -25,7 +25,7 @@ Otros metadatos: autor davidchhh; pipeline no disponible; descargas 0; likes 0; 
 
 ## Arquitectura y entrenamiento
 
-No hay arquitectura que describir. El repositorio no contiene definición de modelo, código de entrenamiento, configuración de transformer, ni pesos derivados de un proceso de entrenamiento. La etiqueta `transformer` aparece en los metadatos de HuggingFace, pero la model card no documenta ninguna arquitectura concreta: el contenido es una nota exploratoria sobre fusión cross-modal, un área de investigación que estudia cómo combinar representaciones procedentes de distintas modalidades (texto, imagen, audio, etc.).
+No hay arquitectura que describir. El repositorio no contiene definición de modelo, código de entrenamiento, configuración de transformer, ni pesos derivados de un proceso de entrenamiento. La etiqueta `transformer` aparece en los metadatos de Hugging Face, pero la model card no documenta ninguna arquitectura concreta: el contenido es una nota exploratoria sobre fusión cross-modal, un área de investigación que estudia cómo combinar representaciones procedentes de distintas modalidades (texto, imagen, audio, etc.).
 
 Tampoco hay información sobre datos de entrenamiento, número de tokens, composición del dataset, ni sobre técnicas de alineación como RLHF o DPO. La model card indica que, si en el futuro se añaden resultados, deberán incluir versiones de dataset, comandos, semillas, hardware y logs en bruto. Las referencias y los datasets propuestos en la nota se presentan como punto de partida para verificación, no como evidencia de que el estudio se haya ejecutado.
 
@@ -67,8 +67,8 @@ No es posible comparar este repositorio con modelos en el sentido habitual, porq
 
 | Artefacto | Tipo | Contenido | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| davidchhh/cross-modal-fusion-survey | Notas de investigación | `analysis.md` y `README.md`; sin checkpoint ni resultados | cc-by-4.0 | HuggingFace, 0 descargas, 0 likes |
-| Andemat1006/cross-modal-fusion-survey | Notas de investigación | Repositorio homónimo detectado en la búsqueda web; no se dispone de detalles verificados | no disponible | HuggingFace |
+| davidchhh/cross-modal-fusion-survey | Notas de investigación | `analysis.md` y `README.md`; sin checkpoint ni resultados | cc-by-4.0 | Hugging Face, 0 descargas, 0 likes |
+| Andemat1006/cross-modal-fusion-survey | Notas de investigación | Repositorio homónimo detectado en la búsqueda web; no se dispone de detalles verificados | no disponible | Hugging Face |
 | Modelos multimodales entrenados de propósito general | Modelo con pesos | Pesos entrenados, benchmarks publicados | variable | variable |
 | Cross-modal model merging (línea metodológica) | Área de investigación | Métodos de fusión y compresión multimodal | no aplicable | literatura |
 
@@ -89,7 +89,7 @@ No hay datos de rendimiento que permitan establecer una comparación cuantitativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidchhh/cross-modal-fusion-survey
+- Repositorio en Hugging Face: https://huggingface.co/davidchhh/cross-modal-fusion-survey
 - Repositorio homónimo detectado en la búsqueda: https://huggingface.co/Andemat1006/cross-modal-fusion-survey
 - Cross-Modal Learning, GeeksforGeeks: https://www.geeksforgeeks.org/artificial-intelligence/cross-modal-learning/
 - Cross-Modal Model Merging, Emergent Mind: https://www.emergentmind.com/topics/cross-modal-model-merging

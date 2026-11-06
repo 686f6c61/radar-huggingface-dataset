@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible para c
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EtichetAI alergeni BERT | 124,46 M | no disponible | Clasificación multi-etiqueta de alérgenos en rumano | MIT | HuggingFace (26 descargas) |
-| dumitrescustefan/bert-base-romanian-cased-v1 | ~124 M | 512 tokens | Modelo base de lenguaje en rumano | no disponible en la información | HuggingFace |
-| BETO (bert-base-spanish-wwm-cased) | ~110 M | 512 tokens | Modelo base en español | no disponible en la información | HuggingFace |
+| EtichetAI alergeni BERT | 124,46 M | no disponible | Clasificación multi-etiqueta de alérgenos en rumano | MIT | Hugging Face (26 descargas) |
+| dumitrescustefan/bert-base-romanian-cased-v1 | ~124 M | 512 tokens | Modelo base de lenguaje en rumano | no disponible en la información | Hugging Face |
+| BETO (bert-base-spanish-wwm-cased) | ~110 M | 512 tokens | Modelo base en español | no disponible en la información | Hugging Face |
 
 No se dispone de otros modelos especializados en detección de alérgenos en rumano con los que comparar directamente, ni de datos de rendimiento de las alternativas en esta tarea concreta.
 
@@ -92,7 +92,7 @@ No se dispone de otros modelos especializados en detección de alérgenos en rum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bianca08/etichetai-alergeni-bert
+- Modelo en Hugging Face: https://huggingface.co/Bianca08/etichetai-alergeni-bert
 - Modelo base: https://huggingface.co/dumitrescustefan/bert-base-romanian-cased-v1
 - Open Food Facts (origen de los datos, ODbL): https://world.openfoodfacts.org
 - Reglamento (UE) 1169/2011 sobre información alimentaria: https://eur-lex.europa.eu/eli/reg/2011/1169/oj

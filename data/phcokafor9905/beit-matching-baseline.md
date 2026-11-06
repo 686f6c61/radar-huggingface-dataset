@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`phcokafor9905/beit-matching-baseline` es un prototipo de investigación publicado en HuggingFace por el usuario phcokafor9905, que implementa una variante propia de arquitectura BEiT (Bidirectional Encoder representation from Image Transformers) orientada a una tarea de *matching* que la model card no especifica (no aclara si se trata de emparejamiento imagen-texto, texto-texto o de entidades). El repositorio se describe explícitamente como un esqueleto de experimentación con configuración "tiny", cuyo objetivo es documentar valores por defecto de arquitectura y formatos de fichero, no presentar resultados.
+`phcokafor9905/beit-matching-baseline` es un prototipo de investigación publicado en Hugging Face por el usuario phcokafor9905, que implementa una variante propia de arquitectura BEiT (Bidirectional Encoder representation from Image Transformers) orientada a una tarea de *matching* que la model card no especifica (no aclara si se trata de emparejamiento imagen-texto, texto-texto o de entidades). El repositorio se describe explícitamente como un esqueleto de experimentación con configuración "tiny", cuyo objetivo es documentar valores por defecto de arquitectura y formatos de fichero, no presentar resultados.
 
 El checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (*smoke tests*), no un modelo entrenado: el autor indica que no se ha ejecutado ningún entrenamiento y que no se reclama ninguna métrica de benchmark. El recuento real de parámetros del fichero safetensors es de 49.600 (≈0,05 M), un orden de magnitud muy inferior al de un BEiT-tiny convencional (~22 M), lo que confirma su naturaleza de juguete arquitectónico y no de modelo utilizable.
 
@@ -93,5 +93,5 @@ La diferencia práctica es de escala y de estado: los BEiT de referencia son mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/phcokafor9905/beit-matching-baseline
+- Modelo en Hugging Face: https://huggingface.co/phcokafor9905/beit-matching-baseline
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales relevantes para este modelo; los resultados devueltos por la búsqueda no guardan relación con el mismo.

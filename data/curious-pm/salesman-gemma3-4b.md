@@ -54,9 +54,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Curious-PM/salesman-gemma3-4b (adaptador) | no disponible (0,2 GB) | no disponible (base: 128k) | no disponible | HuggingFace |
-| google/gemma-3-4b-it (modelo base) | 4B | 128k | Gemma Terms of Use | HuggingFace |
-| google/gemma-3-12b-it (modelo base mayor) | 12B | 128k | Gemma Terms of Use | HuggingFace |
+| Curious-PM/salesman-gemma3-4b (adaptador) | no disponible (0,2 GB) | no disponible (base: 128k) | no disponible | Hugging Face |
+| google/gemma-3-4b-it (modelo base) | 4B | 128k | Gemma Terms of Use | Hugging Face |
+| google/gemma-3-12b-it (modelo base mayor) | 12B | 128k | Gemma Terms of Use | Hugging Face |
 
 No se dispone de otros adaptadores LoRA de venta similares en la informacion proporcionada. La comparativa se limita al modelo base y a una variante de mayor tamano, sin datos de rendimiento especificos del adaptador.
 
@@ -71,7 +71,7 @@ No se dispone de otros adaptadores LoRA de venta similares en la informacion pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Curious-PM/salesman-gemma3-4b
+- Repositorio Hugging Face: https://huggingface.co/Curious-PM/salesman-gemma3-4b
 - Modelo base Gemma-3-4B-it: https://huggingface.co/google/gemma-3-4b-it
 - Pagina oficial de Gemma 3 (Google DeepMind): https://deepmind.google/models/gemma/gemma-3/
 - Pagina de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/

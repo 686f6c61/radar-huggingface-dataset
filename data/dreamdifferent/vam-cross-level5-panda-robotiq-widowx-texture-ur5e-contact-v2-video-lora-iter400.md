@@ -76,7 +76,7 @@ El modelo también se puede comparar con el backbone base `dreamdifferent/widowx
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter400
+- Modelo en Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter400
 - Backbone requerido: https://huggingface.co/dreamdifferent/widowx250-video-fused
 - Variante sin contacto UR5e: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robotiq-widowx-texture-video-lora-iter400
 - Variante con Robosuite: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-video-lora-iter-400

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SecureLinkAI engine es el paquete de "motor de voz de alta calidad" opcional del proyecto SecureLinkAI, publicado en HuggingFace por el usuario `securelinkai`. No es un modelo de lenguaje: es un motor de conversion de voz (voice conversion) que se descarga y descomprime automaticamente mediante el instalador de SecureLinkAI, no por carga directa de pesos en un runtime de inferencia estandar. El repositorio no declara pipeline, idiomas ni pesos en formato safetensors o GGUF.
+SecureLinkAI engine es el paquete de "motor de voz de alta calidad" opcional del proyecto SecureLinkAI, publicado en Hugging Face por el usuario `securelinkai`. No es un modelo de lenguaje: es un motor de conversion de voz (voice conversion) que se descarga y descomprime automaticamente mediante el instalador de SecureLinkAI, no por carga directa de pesos en un runtime de inferencia estandar. El repositorio no declara pipeline, idiomas ni pesos en formato safetensors o GGUF.
 
 El pack ensambla varios componentes de terceros: el sistema Seed-VC (codigo y pesos, GPL-3.0), el encoder de contenido XLS-R (`facebook/wav2vec2-xls-r-300m`, Apache-2.0), el modelo de hablante CAM++ (`funasr/campplus`, Apache-2.0) y el vocoder HiFT de CosyVoice-300M (`FunAudioLLM/CosyVoice-300M`, Apache-2.0). Ademas incluye voces de referencia procedentes del corpus CSTR VCTK de la Universidad de Edimburgo (CC BY 4.0).
 
@@ -21,7 +21,7 @@ La relevancia de esta publicacion es limitada y fundamentalmente practica: docum
 | Licencia | GPL-3.0 para el motor y los pesos de Seed-VC; Apache-2.0 para encoder XLS-R, CAM++ y vocoder HiFT; CC BY 4.0 para las voces de referencia VCTK; BSD/Apache-2.0/MIT para las librerias Python (detalle en `NOTICE.txt`) |
 | Formato de pesos | no disponible; se distribuye como archivos ZIP (`engine-001.zip`, `runtime-001.zip`, `models-001.zip`, `torch-001.zip`, ...) con un `manifest.json` firmado |
 | Tamano del paquete | no disponible con exactitud; partes de aproximadamente 1 GB cada una, con runtime y PyTorch incluidos |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de publicacion | 2026-10-05 (creado 21:25:58, actualizado 21:30:32) |
 
@@ -81,8 +81,8 @@ No se dispone de datos verificados de parametros, contexto ni rendimiento de est
 |---|---|---|---|---|
 | SecureLinkAI engine (este repositorio) | Motor de conversion de voz empaquetado | no disponible (componentes: XLS-R 300 M, CAM++, HiFT) | GPL-3.0 (motor y Seed-VC); Apache-2.0 en componentes; CC BY 4.0 en voces de referencia | Pack ZIP con instalador propio y `manifest.json` firmado |
 | Seed-VC (upstream, `Plachtaa/seed-vc`) | Conversion de voz | no disponible en la informacion | GPL-3.0 segun la tabla de licencias del propio pack | Codigo y pesos en GitHub |
-| CAM++ (`funasr/campplus`) | Modelo de embedding de hablante | no disponible | Apache-2.0 | Pesos publicados en HuggingFace |
-| XLS-R (`facebook/wav2vec2-xls-r-300m`) | Encoder de contenido auto-supervisado | 300 M (segun el nombre del modelo) | Apache-2.0 | Pesos publicados en HuggingFace |
+| CAM++ (`funasr/campplus`) | Modelo de embedding de hablante | no disponible | Apache-2.0 | Pesos publicados en Hugging Face |
+| XLS-R (`facebook/wav2vec2-xls-r-300m`) | Encoder de contenido auto-supervisado | 300 M (segun el nombre del modelo) | Apache-2.0 | Pesos publicados en Hugging Face |
 | Otros sistemas de conversion de voz (RVC, so-vits-svc, CosyVoice) | Conversion o sintesis de voz | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No se dispone de datos verificados de parametros, contexto ni rendimiento de est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/securelinkai/engine
+- Repositorio en Hugging Face: https://huggingface.co/securelinkai/engine
 - Proyecto upstream del motor: https://github.com/Plachtaa/seed-vc
 - Encoder de contenido XLS-R: https://huggingface.co/facebook/wav2vec2-xls-r-300m
 - Modelo de hablante CAM++: https://huggingface.co/funasr/campplus

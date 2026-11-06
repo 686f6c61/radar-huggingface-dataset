@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vikasreddyson/generation-practice-2024` es un prototipo de investigación publicado en HuggingFace bajo el identificador de autor `vikasreddyson`. Según su model card, se trata de una implementación propia de una arquitectura denominada **Coca** (fusión por tensor, activación swish, normalización layernorm y atención estándar) orientada a tareas de generación, en una escala que el autor etiqueta como **xlarge**. No se declara ningún proceso de entrenamiento completado: el fichero `model.safetensors` se describe explícitamente como un *checkpoint de inicialización* válido para pruebas de humo (*smoke tests*), no como un modelo entrenado ni evaluado.
+`vikasreddyson/generation-practice-2024` es un prototipo de investigación publicado en Hugging Face bajo el identificador de autor `vikasreddyson`. Según su model card, se trata de una implementación propia de una arquitectura denominada **Coca** (fusión por tensor, activación swish, normalización layernorm y atención estándar) orientada a tareas de generación, en una escala que el autor etiqueta como **xlarge**. No se declara ningún proceso de entrenamiento completado: el fichero `model.safetensors` se describe explícitamente como un *checkpoint de inicialización* válido para pruebas de humo (*smoke tests*), no como un modelo entrenado ni evaluado.
 
 El peso real publicado es muy reducido: los metadatos de safetensors indican **49.600 parámetros totales** y el repositorio ocupa 0,0 GB, lo que confirma que se trata de un artefacto de práctica o andamiaje de código (script `pipeline.py` con un bloque `__main__` de ejemplo) más que de un modelo utilizable en producción. La relevancia actual es, por tanto, limitada y de naturaleza didáctica o de reproducibilidad: sirve como plantilla de estructura de repositorio (configuración, receta de entrenamiento y checkpoint inicial) y como recordatorio metodológico sobre cómo documentar evaluaciones.
 
@@ -29,7 +29,7 @@ El repositorio no publica métricas de benchmarks, no declara idiomas soportados
 
 ## Arquitectura y entrenamiento
 
-La model card describe una arquitectura **Coca** con atención estándar, fusión por tensor (*tensor fusion*), función de activación swish y normalización layernorm. No se especifica el número de capas, dimensiones ocultas, cabezas de atención, vocabulario ni mecanismo de decodificación, por lo que no es posible reconstruir la topología completa a partir de la información disponible. El autor indica que se trata de una implementación personalizada, lo que implica que las utilidades genéricas de carga de HuggingFace (`AutoModel`, `pipeline`) no funcionarán sin un adaptador explícito; el punto de entrada documentado es `pipeline.py --help`.
+La model card describe una arquitectura **Coca** con atención estándar, fusión por tensor (*tensor fusion*), función de activación swish y normalización layernorm. No se especifica el número de capas, dimensiones ocultas, cabezas de atención, vocabulario ni mecanismo de decodificación, por lo que no es posible reconstruir la topología completa a partir de la información disponible. El autor indica que se trata de una implementación personalizada, lo que implica que las utilidades genéricas de carga de Hugging Face (`AutoModel`, `pipeline`) no funcionarán sin un adaptador explícito; el punto de entrada documentado es `pipeline.py --help`.
 
 En cuanto al entrenamiento, el repositorio **no contiene evidencia de un entrenamiento completado**. Lo que se publica es una receta por defecto (`training_args.json`) con optimizador SGD y planificador de tasa de aprendizaje cosine, junto con un checkpoint de inicialización (`model.safetensors`) destinado a pruebas de humo. La model card insiste en que las cifras de la configuración son valores de partida del script y no el resultado de una ejecución real, y recomienda, para cualquier evaluación significativa, comparar contra una línea base de capacidad equivalente, con la misma exposición de datos, presupuesto de ajuste y semillas aleatorias (al menos tres). No se documentan datos de entrenamiento, número de tokens, composición del dataset, ni fases de RLHF, DPO o ajuste por instrucciones.
 
@@ -84,5 +84,5 @@ No disponible. El repositorio no se posiciona frente a alternativas, no publica 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vikasreddyson/generation-practice-2024
+- Hugging Face: https://huggingface.co/vikasreddyson/generation-practice-2024
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Las consultas devolvieron exclusivamente páginas del parque Hitachi Seaside Park (hitachikaihin.jp), sin relación alguna con el repositorio. No hay papers, blogs, repositorios ni demos adicionales disponibles.

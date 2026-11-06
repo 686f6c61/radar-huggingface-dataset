@@ -2,9 +2,9 @@
 
 ## Resumen
 
-vit-beans-demo es un modelo de clasificacion de imagenes publicado por el usuario chaymans en HuggingFace. Se trata de un fine-tuning completo de google/vit-base-patch16-224-in21k, el Vision Transformer base preentrenado por Google sobre ImageNet-21k. El modelo cuenta con 85.800.963 parametros, usa el pipeline image-classification de la libreria transformers y se distribuye en formato safetensors bajo licencia Apache-2.0.
+vit-beans-demo es un modelo de clasificacion de imagenes publicado por el usuario chaymans en Hugging Face. Se trata de un fine-tuning completo de google/vit-base-patch16-224-in21k, el Vision Transformer base preentrenado por Google sobre ImageNet-21k. El modelo cuenta con 85.800.963 parametros, usa el pipeline image-classification de la libreria transformers y se distribuye en formato safetensors bajo licencia Apache-2.0.
 
-El modelo resuelve una tarea de clasificacion de imagenes concreta, no especificada en la model card (el autor la describe como "unknown dataset", aunque el nombre del repositorio sugiere un conjunto de imagenes de hojas de judia). Su relevancia es limitada: se trata de una demo de entrenamiento generada automaticamente con el Trainer de HuggingFace, con 0 descargas y 0 likes en el momento de la consulta, y sin model card completada mas alla de los hiperparametros y los resultados de evaluacion.
+El modelo resuelve una tarea de clasificacion de imagenes concreta, no especificada en la model card (el autor la describe como "unknown dataset", aunque el nombre del repositorio sugiere un conjunto de imagenes de hojas de judia). Su relevancia es limitada: se trata de una demo de entrenamiento generada automaticamente con el Trainer de Hugging Face, con 0 descargas y 0 likes en el momento de la consulta, y sin model card completada mas alla de los hiperparametros y los resultados de evaluacion.
 
 Arquitectura: Vision Transformer (ViT) base, con parches de 16x16 px y resolucion de entrada de 224x224 px. No es un modelo de lenguaje: no genera texto ni soporta tool calling, agentes ni razonamiento multi-paso. Su unico proposito es asignar una etiqueta de clase a una imagen.
 
@@ -39,7 +39,7 @@ El autor no describe la composicion del dataset de entrenamiento ni de evaluacio
 
 - Clasificacion de imagenes: asigna una etiqueta de clase a una imagen de entrada de 224x224 px.
 - Inferencia via pipeline de transformers: utilizable con `pipeline("image-classification", model="chaymans/vit-beans-demo")`.
-- Compatible con HuggingFace Inference Endpoints (tag endpoints_compatible).
+- Compatible con Hugging Face Inference Endpoints (tag endpoints_compatible).
 - No soporta generacion de texto, razonamiento, codigo ni matematicas.
 - No soporta tool calling ni function calling.
 - No soporta agentes ni razonamiento multi-paso.
@@ -83,17 +83,17 @@ No se han publicado resultados de benchmarks estandar (ImageNet, MMLU, HumanEval
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (RTX 3050, GTX 1650, T4, L4). No requiere A100 ni H100.
 - Cabe holgadamente en GPU de consumo: RTX 3060, RTX 4060, RTX 4090 y similares, con margen amplio para batching.
 - Ejecucion en CPU: viable, aunque con latencia mayor; apta para volumentes bajos o procesamiento por lotes no interactivo.
-- Opciones de despliegue: pipeline de transformers, HuggingFace Inference Endpoints (el repo esta marcado como endpoints_compatible), exportacion a ONNX o TorchScript. No es compatible con vLLM, TGI ni llama.cpp, ya que no es un modelo generativo de texto.
+- Opciones de despliegue: pipeline de transformers, Hugging Face Inference Endpoints (el repo esta marcado como endpoints_compatible), exportacion a ONNX o TorchScript. No es compatible con vLLM, TGI ni llama.cpp, ya que no es un modelo generativo de texto.
 - Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| chaymans/vit-beans-demo | 85.800.963 | Clasificacion de imagenes (dataset no documentado) | apache-2.0 | HuggingFace, 0 descargas | Fine-tuning de ViT-base; accuracy 0,9609 declarada sobre evaluacion propia |
-| google/vit-base-patch16-224-in21k | ~86 M | Clasificacion de imagenes (ImageNet-21k) | apache-2.0 | HuggingFace | Checkpoint base del que deriva este modelo; requiere fine-tuning para tareas concretas |
-| google/vit-base-patch16-224 | ~86 M | Clasificacion de imagenes (ImageNet-1k) | apache-2.0 | HuggingFace | Variante afinada sobre ImageNet-1k, con cabeza de 1.000 clases |
-| facebook/deit-base-patch16-224 | ~86 M | Clasificacion de imagenes (ImageNet-1k) | apache-2.0 | HuggingFace | Alternativa ViT con destilacion; mismo orden de parametros |
+| chaymans/vit-beans-demo | 85.800.963 | Clasificacion de imagenes (dataset no documentado) | apache-2.0 | Hugging Face, 0 descargas | Fine-tuning de ViT-base; accuracy 0,9609 declarada sobre evaluacion propia |
+| google/vit-base-patch16-224-in21k | ~86 M | Clasificacion de imagenes (ImageNet-21k) | apache-2.0 | Hugging Face | Checkpoint base del que deriva este modelo; requiere fine-tuning para tareas concretas |
+| google/vit-base-patch16-224 | ~86 M | Clasificacion de imagenes (ImageNet-1k) | apache-2.0 | Hugging Face | Variante afinada sobre ImageNet-1k, con cabeza de 1.000 clases |
+| facebook/deit-base-patch16-224 | ~86 M | Clasificacion de imagenes (ImageNet-1k) | apache-2.0 | Hugging Face | Alternativa ViT con destilacion; mismo orden de parametros |
 
 No se dispone de cifras comparativas de rendimiento entre estos modelos dentro de la informacion proporcionada, ya que las tareas y los conjuntos de evaluacion no coinciden.
 
@@ -111,7 +111,7 @@ No se dispone de cifras comparativas de rendimiento entre estos modelos dentro d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chaymans/vit-beans-demo
+- Modelo en Hugging Face: https://huggingface.co/chaymans/vit-beans-demo
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224-in21k
 - Paper de Vision Transformer (ViT): https://arxiv.org/abs/2010.11929
 - Documentacion de transformers para image-classification: https://huggingface.co/docs/transformers/tasks/image_classification

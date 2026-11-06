@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tamano | Precision | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lodestones/Kroma (original) | 51,3 GB | F32 | Krea 2 DiT | Krea 2 Community | HuggingFace |
-| Stabhappy/kroma-v0.2-base-INT8-convrot | 14,8 GB | INT8 ConvRot | Krea 2 DiT | Krea 2 Community | HuggingFace |
+| lodestones/Kroma (original) | 51,3 GB | F32 | Krea 2 DiT | Krea 2 Community | Hugging Face |
+| Stabhappy/kroma-v0.2-base-INT8-convrot | 14,8 GB | INT8 ConvRot | Krea 2 DiT | Krea 2 Community | Hugging Face |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria (por ejemplo, otras cuantizaciones de Kroma o modelos DiT similares). La comparativa se limita al modelo original, del que deriva.
 
@@ -77,7 +77,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stabhappy/kroma-v0.2-base-INT8-convrot
+- Modelo en Hugging Face: https://huggingface.co/Stabhappy/kroma-v0.2-base-INT8-convrot
 - Modelo base lodestones/Kroma: https://huggingface.co/lodestones/Kroma
 - Licencia Krea 2 Community: https://www.krea.ai/krea-2-licensing
 - Herramienta de cuantizacion ctq: https://github.com/silveroxides/convert_to_quant

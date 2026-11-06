@@ -74,7 +74,7 @@ No se han publicado comparaciones con otros detectores en la información dispon
 
 | Modelo | Tarea | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shadow puppets YOLO11 (este modelo) | Detección de marionetas y reglas | no disponible (5 variantes n/s/m/l/x) | no aplica | AGPL-3.0 | HuggingFace, 90 descargas |
+| Shadow puppets YOLO11 (este modelo) | Detección de marionetas y reglas | no disponible (5 variantes n/s/m/l/x) | no aplica | AGPL-3.0 | Hugging Face, 90 descargas |
 | YOLO11 base (COCO) | Detección de objetos genérica | no disponible | no aplica | AGPL-3.0 | Ultralytics |
 | Otros detectores específicos de patrimonio cultural | Detección de objetos | no disponible | no aplica | variable | no disponible |
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos con otros detectores en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yale-cultural-heritage/shadow-puppets-yolov11
+- Modelo en Hugging Face: https://huggingface.co/yale-cultural-heritage/shadow-puppets-yolov11
 - Dataset en Roboflow: https://universe.roboflow.com/yale-ai/yale-shadow-puppets/dataset/10
 - Repositorio chai-engine: https://github.com/yale-ch/chai-engine
 - Ultralytics YOLO11: https://docs.ultralytics.com/models/yolo11/

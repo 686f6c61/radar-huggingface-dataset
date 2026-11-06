@@ -80,7 +80,7 @@ La principal diferencia de MemAgent-PTE frente a los modelos base es el entrenam
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zeliang0426/MemAgent-PTE-Qwen2.5-7B-Aligned
+- Repositorio Hugging Face: https://huggingface.co/zeliang0426/MemAgent-PTE-Qwen2.5-7B-Aligned
 - Paper de MemAgent: https://arxiv.org/abs/2507.02259
 - PDF del paper: https://arxiv.org/pdf/2507.02259
 - Repositorio de código de entrenamiento: https://github.com/ZhangAIPI/mem-agent-pte

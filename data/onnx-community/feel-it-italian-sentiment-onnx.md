@@ -84,8 +84,8 @@ La ventaja de la versión ONNX es su portabilidad y compatibilidad con entornos 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo ONNX](https://huggingface.co/onnx-community/feel-it-italian-sentiment-ONNX)
-- [Modelo original en HuggingFace](https://huggingface.co/MilaNLProc/feel-it-italian-sentiment)
+- [Repositorio Hugging Face del modelo ONNX](https://huggingface.co/onnx-community/feel-it-italian-sentiment-ONNX)
+- [Modelo original en Hugging Face](https://huggingface.co/MilaNLProc/feel-it-italian-sentiment)
 - [Repositorio GitHub del proyecto FEEL-IT](https://github.com/MilaNLProc/feel-it)
 - [Paquete Python feel-it en PyPI](https://pypi.org/project/feel-it/)
 - [Paper académico (ACL Anthology)](https://aclanthology.org/2021.wassa-1.8/)

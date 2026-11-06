@@ -75,10 +75,10 @@ MAEB-30 es la media sobre 30 tareas del Massive Audio Embedding Benchmark (voz, 
 
 | Modelo | Parametros | Contexto | MAEB-30 | HEAR-17 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CLAP2-S | 103,9M | audio de cualquier duracion | 51,8 | 81,8 | apache-2.0 | HuggingFace (OpenCLIP, Transformers pendiente) |
-| CLAP2-M | 152,8M | audio de cualquier duracion | 52,3 | 81,4 | apache-2.0 | HuggingFace |
-| CLAP2-XS | 48,3M | audio de cualquier duracion | 49,1 | 80,6 | apache-2.0 | HuggingFace |
-| CLAP2-L | 340,1M | audio de cualquier duracion | 53,6 | 81,9 | apache-2.0 | HuggingFace |
+| CLAP2-S | 103,9M | audio de cualquier duracion | 51,8 | 81,8 | apache-2.0 | Hugging Face (OpenCLIP, Transformers pendiente) |
+| CLAP2-M | 152,8M | audio de cualquier duracion | 52,3 | 81,4 | apache-2.0 | Hugging Face |
+| CLAP2-XS | 48,3M | audio de cualquier duracion | 49,1 | 80,6 | apache-2.0 | Hugging Face |
+| CLAP2-L | 340,1M | audio de cualquier duracion | 53,6 | 81,9 | apache-2.0 | Hugging Face |
 
 La comparativa se limita a los miembros de la propia familia CLAP2, unicos modelos con datos disponibles en la informacion proporcionada. No se dispone de datos de otros modelos audio-texto comparables en esta ficha.
 
@@ -96,7 +96,7 @@ La comparativa se limita a los miembros de la propia familia CLAP2, unicos model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/laion/clap2-small-audioxl-s1B
+- Hugging Face: https://huggingface.co/laion/clap2-small-audioxl-s1B
 - Repositorio OpenCLIP: https://github.com/mlfoundations/open_clip
 - Modelo CLAP2-L: https://huggingface.co/laion/clap2-large-audioxl-s1B
 - Modelo CLAP2-M: https://huggingface.co/laion/clap2-medium-audioxl-s1B

@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables específicos para traduc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/codewithmehru/kathe2026-kashmiri-lora
+- Repositorio en Hugging Face: https://huggingface.co/codewithmehru/kathe2026-kashmiri-lora
 - Modelo base: https://huggingface.co/ai4bharat/indictrans2-en-indic-dist-200M
 - Paper de IndicTrans2: no disponible en la información proporcionada
 - Artículo de Lacoste et al. (2019) sobre emisiones de carbono: https://arxiv.org/abs/1910.09700 (referenciado en la model card, sin relación directa con el entrenamiento)

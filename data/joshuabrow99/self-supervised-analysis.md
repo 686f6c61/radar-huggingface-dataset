@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `joshuabrow99/self-supervised-analysis` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigacion (research notes) sobre aprendizaje auto-supervisado (self-supervised learning, SSL). La model card lo describe explicitamente como "reading notes and an experiment sketch" y aclara que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni checkpoint entrenado. El autor figura como joshuabrow99 (perfil asociado a V. Dang en HuggingFace).
+El repositorio `joshuabrow99/self-supervised-analysis` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigacion (research notes) sobre aprendizaje auto-supervisado (self-supervised learning, SSL). La model card lo describe explicitamente como "reading notes and an experiment sketch" y aclara que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni checkpoint entrenado. El autor figura como joshuabrow99 (perfil asociado a V. Dang en Hugging Face).
 
-A pesar de esa declaracion, los metadatos de HuggingFace reportan un fichero en formato safetensors con 49.600 parametros totales y el tag `transformer`. Se trata de una cifra cuatro ordenes de magnitud inferior a la de cualquier modelo utilizable (un transformer de ese tamano es practicamente un juguete o un artefacto de prueba), y el propio README insiste en que el contenido son hipotesis y planes, no resultados. El repositorio ocupa 0,0 GB, tiene 0 descargas y 0 likes, y fue creado y actualizado el 29 de septiembre de 2026.
+A pesar de esa declaracion, los metadatos de Hugging Face reportan un fichero en formato safetensors con 49.600 parametros totales y el tag `transformer`. Se trata de una cifra cuatro ordenes de magnitud inferior a la de cualquier modelo utilizable (un transformer de ese tamano es practicamente un juguete o un artefacto de prueba), y el propio README insiste en que el contenido son hipotesis y planes, no resultados. El repositorio ocupa 0,0 GB, tiene 0 descargas y 0 likes, y fue creado y actualizado el 29 de septiembre de 2026.
 
 Su relevancia es, por tanto, documental y metodologica: sirve como plantilla de buenas practicas para disenar un estudio de SSL (definicion del alcance, confounders, comparacion con baselines emparejados, requisitos de reproducibilidad y modos de fallo). No es un artefacto desplegable ni evaluable como modelo.
 
@@ -12,7 +12,7 @@ Su relevancia es, por tanto, documental y metodologica: sirve como plantilla de 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | transformer (segun tag de HuggingFace; no detallada en la model card) |
+| Arquitectura | transformer (segun tag de Hugging Face; no detallada en la model card) |
 | Parametros totales | 49.600 (dato real reportado por safetensors) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -43,7 +43,7 @@ Respecto al entrenamiento, la model card es explicita: no se ha entrenado un che
 - Revision bibliografica inicial: el fichero `reading.md` recopila referencias sobre aprendizaje auto-supervisado como punto de partida para un estado del arte.
 - Documentacion de modos de fallo y preguntas abiertas: util para redactar la seccion de limitaciones de un paper o de una propuesta de proyecto.
 - Material docente: sirve como ejemplo de como estructurar una nota de investigacion honesta, separando hipotesis de resultados.
-- Auditoria de claims: el repositorio es un caso practico de model card que declara explicitamente la ausencia de benchmarks, util para discutir buenas practicas de publicacion en HuggingFace.
+- Auditoria de claims: el repositorio es un caso practico de model card que declara explicitamente la ausencia de benchmarks, util para discutir buenas practicas de publicacion en Hugging Face.
 - En ningun caso es adecuado para inferencia en produccion, atencion al cliente, generacion de codigo ni ninguna tarea de NLP.
 
 ## Benchmarks y rendimiento
@@ -71,7 +71,7 @@ No se identifican modelos comparables: este repositorio no pertenece a ninguna c
 
 - No es un modelo: no debe usarse para inferencia ni integrarse en pipelines de produccion.
 - Ausencia total de benchmarks: cualquier afirmacion de rendimiento seria inventada.
-- Contradiccion entre metadatos y model card: el README niega la existencia de un checkpoint entrenado, mientras HuggingFace reporta un safetensors de 49.600 parametros; conviene verificar el contenido real del fichero antes de reutilizarlo.
+- Contradiccion entre metadatos y model card: el README niega la existencia de un checkpoint entrenado, mientras Hugging Face reporta un safetensors de 49.600 parametros; conviene verificar el contenido real del fichero antes de reutilizarlo.
 - Riesgo de alucinacion no evaluable: al no existir un modelo funcional, no hay medicion posible de sesgos, toxicidad ni tasa de alucinacion.
 - Sesgos conocidos: no disponibles.
 - Limitaciones de contexto e idioma: no disponibles.
@@ -81,7 +81,7 @@ No se identifican modelos comparables: este repositorio no pertenece a ninguna c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/joshuabrow99/self-supervised-analysis
+- Repositorio en Hugging Face: https://huggingface.co/joshuabrow99/self-supervised-analysis
 - Perfil del autor: https://huggingface.co/joshuabrow99
 - Copia aparente del repositorio: https://huggingface.co/joshi1854/self-supervised-analysis
 - Self-supervised learning (Wikipedia): https://en.wikipedia.org/wiki/Self-supervised_learning

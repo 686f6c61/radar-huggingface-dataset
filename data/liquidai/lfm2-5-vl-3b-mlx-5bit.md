@@ -66,13 +66,13 @@ No se dispone de datos comparativos cuantitativos en la información proporciona
 
 - La licencia lfm1.0 no es una licencia de código abierto estándar; es una licencia propia de Liquid AI que puede imponer restricciones al uso comercial, redistribución o modificación. Es imprescindible revisar el texto completo de la licencia en el repositorio antes de utilizar el modelo en producción.
 - No se han publicado detalles sobre sesgos o alucinaciones específicos de este modelo. Como cualquier VLM, puede generar descripciones incorrectas de imágenes o inventar información cuando la imagen es ambigua.
-- La discrepancia entre el número de parámetros reportado por HuggingFace (940M) y la documentación oficial (3.100M) debe ser aclarada por el equipo de Liquid AI antes de confiar en métricas de rendimiento basadas en el tamaño.
+- La discrepancia entre el número de parámetros reportado por Hugging Face (940M) y la documentación oficial (3.100M) debe ser aclarada por el equipo de Liquid AI antes de confiar en métricas de rendimiento basadas en el tamaño.
 - El soporte multilingüe está limitado a los 16 idiomas listados; el rendimiento puede degradarse en idiomas no incluidos.
 - Esta versión MLX solo funciona en Apple Silicon; para otros entornos es necesario usar el modelo base u otros formatos, que pueden requerir más recursos de hardware.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-MLX-5bit
+- Repositorio Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-MLX-5bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - Blog oficial de Liquid AI: https://www.liquid.ai/blog/lfm2-5-vl-3b
 - Documentación oficial: https://docs.liquid.ai/lfm/models/lfm25-vl-3b

@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Pi0 fine-tuned) | 4.028 M | no disponible | Pick-and-place CPU con UR5 | Apache 2.0 | HuggingFace (28 descargas) |
-| `lerobot/pi0_base` | no disponible | no disponible | Política VLA generalista | Apache 2.0 | HuggingFace (modelo base público) |
+| Este modelo (Pi0 fine-tuned) | 4.028 M | no disponible | Pick-and-place CPU con UR5 | Apache 2.0 | Hugging Face (28 descargas) |
+| `lerobot/pi0_base` | no disponible | no disponible | Política VLA generalista | Apache 2.0 | Hugging Face (modelo base público) |
 | π₀ original (Physical Intelligence) | no disponible | no disponible | Política VLA generalista multi-robot | no disponible en la información | Blog y OpenPI |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La comparación se limita a parámetros, licencia y disponibilidad.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SamerAyyad/VLA_Samer_23.10.2026_400ep_Pi0_expert_policy
+- Modelo en Hugging Face: https://huggingface.co/SamerAyyad/VLA_Samer_23.10.2026_400ep_Pi0_expert_policy
 - Modelo base: https://huggingface.co/lerobot/pi0_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/SamerAyyad/VLA_Samer_23.10.2026_400eps
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=SamerAyyad/VLA_Samer_23.10.2026_400eps

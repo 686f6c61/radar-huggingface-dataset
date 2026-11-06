@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `MaLA-LM/FT-FineOPUS-Filtered-Stage5-sample5k` es un ajuste fino (fine-tuning) publicado por el grupo MaLA-LM en HuggingFace. La información disponible es extremadamente limitada: la model card únicamente indica la licencia MIT y no proporciona descripción técnica, arquitectura, tamaño, idiomas soportados ni pipeline de uso. El nombre sugiere que se trata de un entrenamiento adicional sobre un conjunto de datos filtrado denominado "FineOPUS-Filtered-Stage5" con una muestra de 5.000 ejemplos, pero no se confirma ninguna característica del modelo base ni del proceso de entrenamiento.
+El modelo `MaLA-LM/FT-FineOPUS-Filtered-Stage5-sample5k` es un ajuste fino (fine-tuning) publicado por el grupo MaLA-LM en Hugging Face. La información disponible es extremadamente limitada: la model card únicamente indica la licencia MIT y no proporciona descripción técnica, arquitectura, tamaño, idiomas soportados ni pipeline de uso. El nombre sugiere que se trata de un entrenamiento adicional sobre un conjunto de datos filtrado denominado "FineOPUS-Filtered-Stage5" con una muestra de 5.000 ejemplos, pero no se confirma ninguna característica del modelo base ni del proceso de entrenamiento.
 
 Dada la ausencia de datos en la ficha pública, no es posible evaluar su rendimiento, capacidades ni requisitos de hardware. Se recomienda contactar directamente con el autor o consultar el repositorio asociado para obtener especificaciones completas antes de considerar su uso en cualquier proyecto.
 
@@ -25,7 +25,7 @@ No se ha publicado información sobre la arquitectura del modelo, el número de 
 
 ## Capacidades
 
-No se dispone de información verificada sobre las capacidades del modelo. No se puede confirmar si soporta generación de texto, razonamiento, código, matemáticas, visión, tool calling, agentes o capacidades multilingües. La ausencia de pipeline declarado en HuggingFace impide incluso determinar si es un modelo de lenguaje, de visión u otro tipo.
+No se dispone de información verificada sobre las capacidades del modelo. No se puede confirmar si soporta generación de texto, razonamiento, código, matemáticas, visión, tool calling, agentes o capacidades multilingües. La ausencia de pipeline declarado en Hugging Face impide incluso determinar si es un modelo de lenguaje, de visión u otro tipo.
 
 ## Casos de uso
 
@@ -53,6 +53,6 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo, no es p
 
 ## Enlaces
 
-- [HuggingFace - MaLA-LM/FT-FineOPUS-Filtered-Stage5-sample5k](https://huggingface.co/MaLA-LM/FT-FineOPUS-Filtered-Stage5-sample5k)
+- [Hugging Face - MaLA-LM/FT-FineOPUS-Filtered-Stage5-sample5k](https://huggingface.co/MaLA-LM/FT-FineOPUS-Filtered-Stage5-sample5k)
 
 No se han encontrado papers, blogs, repositorios adicionales ni demos relacionados con este modelo en la información proporcionada.

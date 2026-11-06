@@ -70,4 +70,4 @@ No disponible. No se conocen modelos comparables de la misma categoría con los 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [unconst/Affine-5czsc2fc98-r35-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r35-merged)
+- Repositorio Hugging Face: [unconst/Affine-5czsc2fc98-r35-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r35-merged)

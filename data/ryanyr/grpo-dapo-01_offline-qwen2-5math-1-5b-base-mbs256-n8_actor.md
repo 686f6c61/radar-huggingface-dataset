@@ -73,7 +73,7 @@ La comparación con DeepSeekMath-RL es orientativa, ya que ambos son modelos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyanYr/grpo-dapo-01_offline-qwen2.5math-1.5B-base-mbs256-n8_actor
+- Modelo en Hugging Face: https://huggingface.co/RyanYr/grpo-dapo-01_offline-qwen2.5math-1.5B-base-mbs256-n8_actor
 - Dataset de evaluación asociado: https://huggingface.co/datasets/RyanYr/pg-dapo-01_offline-qwen2.5math-1.5B-base-mbs256-n8_actor_matheval
 - Documentación de RLinf sobre entrenamiento GRPO para razonamiento matemático: https://rlinf.readthedocs.io/en/latest/rst_source/examples/agentic/math_reasoning/reasoning.html
 - Reporte técnico de Qwen2.5-Math (arXiv): https://arxiv.org/pdf/2409.12122

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`lakshya1910/lumina-pdf-rag` es un repositorio de modelo alojado en HuggingFace por el usuario lakshya1910, publicado el 19 de septiembre de 2026 y con licencia MIT. La única información verificable disponible es la metadata del repositorio: no incluye *pipeline tag*, no declara idiomas soportados y no publica ninguna tarjeta de modelo con descripción de arquitectura, datos de entrenamiento o evaluación.
+`lakshya1910/lumina-pdf-rag` es un repositorio de modelo alojado en Hugging Face por el usuario lakshya1910, publicado el 19 de septiembre de 2026 y con licencia MIT. La única información verificable disponible es la metadata del repositorio: no incluye *pipeline tag*, no declara idiomas soportados y no publica ninguna tarjeta de modelo con descripción de arquitectura, datos de entrenamiento o evaluación.
 
 El nombre del repositorio sugiere un sistema orientado a generación aumentada por recuperación (RAG) sobre documentos PDF, pero se trata de una inferencia a partir del identificador y no de un dato confirmado. No hay información pública sobre si se trata de un modelo de lenguaje completo, un adaptador (LoRA), un modelo de embeddings, un reranker o un artefacto de pipeline que empaquete varios componentes.
 
-El repositorio está restringido (gated): requiere aceptar condiciones en HuggingFace antes de acceder a los ficheros. Registra 0 descargas y 0 likes, y su creación y última actualización están separadas por menos de dos minutos (20:48:07 y 20:49:53 UTC del mismo día), lo que apunta a una subida automatizada o a un repositorio sin desarrollo posterior. En consecuencia, no es posible evaluar su calidad, rendimiento o idoneidad para producción con la información disponible.
+El repositorio está restringido (gated): requiere aceptar condiciones en Hugging Face antes de acceder a los ficheros. Registra 0 descargas y 0 likes, y su creación y última actualización están separadas por menos de dos minutos (20:48:07 y 20:49:53 UTC del mismo día), lo que apunta a una subida automatizada o a un repositorio sin desarrollo posterior. En consecuencia, no es posible evaluar su calidad, rendimiento o idoneidad para producción con la información disponible.
 
 ## Especificaciones técnicas
 
@@ -64,12 +64,12 @@ No disponible. No es posible establecer comparaciones con alternativas de la mis
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| lakshya1910/lumina-pdf-rag | no disponible | no disponible | MIT | Acceso restringido (gated) en HuggingFace |
+| lakshya1910/lumina-pdf-rag | no disponible | no disponible | MIT | Acceso restringido (gated) en Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es *gated* y exige aceptar condiciones en HuggingFace antes de descargar los ficheros, lo que añade fricción para uso automatizado y para integración en CI/CD.
+- Acceso restringido: el repositorio es *gated* y exige aceptar condiciones en Hugging Face antes de descargar los ficheros, lo que añade fricción para uso automatizado y para integración en CI/CD.
 - Ausencia total de documentación: no hay tarjeta de modelo, ni ficha de arquitectura, ni métricas de evaluación, lo que impide reproducir o auditar el comportamiento.
 - Sin validación por la comunidad: 0 descargas y 0 likes en el momento de la consulta, por lo que no existen informes externos de funcionamiento.
 - Metadata incompleta: no se declara *pipeline tag*, ni idiomas, ni formato de pesos, lo que dificulta la integración en pipelines existentes.
@@ -81,5 +81,5 @@ No disponible. No es posible establecer comparaciones con alternativas de la mis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lakshya1910/lumina-pdf-rag
+- Repositorio en Hugging Face: https://huggingface.co/lakshya1910/lumina-pdf-rag
 - Artículos, blogs, repositorios de código o demos asociados: no disponible. La búsqueda web realizada no devolvió ningún resultado relacionado con el modelo; los resultados obtenidos correspondían a contenido no relacionado (foros y análisis de videojuegos en jeuxvideo.com).

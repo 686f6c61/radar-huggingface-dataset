@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chatbot-Legal-Llama-3-8B-RAG es un ajuste fino (fine-tuning) del modelo Llama 3 8B Instruct orientado a conversacion de dominio legal con recuperacion aumentada (RAG). Lo publica el usuario HolmesSebayang en HuggingFace y se distribuye bajo licencia declarada apache-2.0. El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, partiendo de la version cuantizada a 4 bits `unsloth/llama-3-8b-Instruct-bnb-4bit`, un flujo tipico de QLoRA para adaptar modelos de 8.000 millones de parametros en una sola GPU de gama alta.
+Chatbot-Legal-Llama-3-8B-RAG es un ajuste fino (fine-tuning) del modelo Llama 3 8B Instruct orientado a conversacion de dominio legal con recuperacion aumentada (RAG). Lo publica el usuario HolmesSebayang en Hugging Face y se distribuye bajo licencia declarada apache-2.0. El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, partiendo de la version cuantizada a 4 bits `unsloth/llama-3-8b-Instruct-bnb-4bit`, un flujo tipico de QLoRA para adaptar modelos de 8.000 millones de parametros en una sola GPU de gama alta.
 
 El modelo es un transformer decoder-only denso de 8.030.261.248 parametros, sin mezcla de expertos, y esta etiquetado exclusivamente para ingles. El repositorio ocupa 16,1 GB en safetensors, lo que sugiere pesos almacenados en precision de 16 bits (aproximadamente 2 bytes por parametro) y no una cuantizacion de 4 bits en la subida. La model card es minima: no documenta dataset de entrenamiento, numero de tokens, hiperparametros, ni evaluacion.
 
@@ -92,10 +92,10 @@ La comparacion en calidad es imposible con los datos disponibles: el modelo aqui
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HolmesSebayang/Chatbot-Legal-Llama-3-8B-RAG
+- Modelo en Hugging Face: https://huggingface.co/HolmesSebayang/Chatbot-Legal-Llama-3-8B-RAG
 - Modelo base: https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: no se proporciona enlace directo en la informacion disponible
+- Libreria TRL de Hugging Face: no se proporciona enlace directo en la informacion disponible
 - Paper o blog tecnico del modelo: no disponible
 - Demo o Space asociado: no disponible
 - Nota sobre la busqueda web: los resultados devueltos por la busqueda corresponden a la serie de television "Miami Vice" y a su adaptacion cinematografica de 2006. No guardan ninguna relacion con el modelo y no aportan informacion tecnica utilizable.

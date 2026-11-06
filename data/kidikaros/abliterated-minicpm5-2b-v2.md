@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Abliterated MiniCPM5-2B v2 es un derivado no oficial de `openbmb/MiniCPM5-2B` publicado por el usuario KidIkaros en HuggingFace. Se trata de un modelo de generación de texto de 2.516.756.480 parámetros (aproximadamente 2,52 mil millones) que aplica una doble intervención sobre el checkpoint original: una reablación mediante el método diff-in-means de Arditi y un ajuste posterior con DPO (Direct Preference Optimization) sobre pares de preferencia. El objetivo declarado es reducir la tasa de rechazo de respuesta (refusal) manteniendo la capacidad del modelo dentro de un margen aceptable. La versión v2 sustituye a la v0 (`KidIkaros/abliterated-minicpm5-2b`), que según las mediciones del propio autor era estadísticamente indistinguible del modelo oficial tanto en rechazo como en capacidades.
+Abliterated MiniCPM5-2B v2 es un derivado no oficial de `openbmb/MiniCPM5-2B` publicado por el usuario KidIkaros en Hugging Face. Se trata de un modelo de generación de texto de 2.516.756.480 parámetros (aproximadamente 2,52 mil millones) que aplica una doble intervención sobre el checkpoint original: una reablación mediante el método diff-in-means de Arditi y un ajuste posterior con DPO (Direct Preference Optimization) sobre pares de preferencia. El objetivo declarado es reducir la tasa de rechazo de respuesta (refusal) manteniendo la capacidad del modelo dentro de un margen aceptable. La versión v2 sustituye a la v0 (`KidIkaros/abliterated-minicpm5-2b`), que según las mediciones del propio autor era estadísticamente indistinguible del modelo oficial tanto en rechazo como en capacidades.
 
 La relevancia de esta ficha es acotada y conviene enmarcarla con precisión: se trata de un artefacto de investigación con 0 descargas y 0 likes en el momento de la consulta, sin resultados de benchmarks publicados por OpenBMB para esta variante y con métricas obtenidas exclusivamente con un arnés local del autor. El modelo elimina direcciones de rechazo proyectándolas fuera de 84 matrices de proyección, lo que reduce la tasa de rechazo de ~36,7 % (oficial) a 5,7-10,3 % (v2) a temperatura 1.0, a cambio de una regresión medible en MMLU-Pro (−4,14 pp) y MATH-500 (−3,00 pp).
 
@@ -12,7 +12,7 @@ La licencia es Apache 2.0, heredada del modelo base, y se distribuye tanto en sa
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (etiqueta `llama` en HuggingFace); detalles de capas y atención no disponibles |
+| Arquitectura | Transformer (etiqueta `llama` en Hugging Face); detalles de capas y atención no disponibles |
 | Parametros totales | 2.516.756.480 (~2,52 B), dato real de safetensors |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible de forma explícita; el ejemplo oficial de llama.cpp usa `-c 8192`. Los prompts de LongBench-E citados rondan las 3.600 palabras |
@@ -124,7 +124,7 @@ No se dispone de datos verificados en la información proporcionada para compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KidIkaros/abliterated-minicpm5-2b-v2
+- Modelo en Hugging Face: https://huggingface.co/KidIkaros/abliterated-minicpm5-2b-v2
 - Versión anterior (v0): https://huggingface.co/KidIkaros/abliterated-minicpm5-2b
 - Modelo base oficial: https://huggingface.co/openbmb/MiniCPM5-2B
 - Paper de referencia del método de abliteración (diff-in-means, Arditi et al.): no disponible en la información proporcionada

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `JMaxCool/bookend-KING-CXXVI-10kDPO-FINAL` es un ajuste por DPO (Direct Preference Optimization) de un modelo de mezcla de expertos de la familia Qwen3.6, publicado por el usuario JMaxCool en HuggingFace. La model card identifica la exportacion como `bookend-v125-step80` y describe unos pesos BF16 fusionados, resultado de aplicar DPO sobre un "v125 king pool" y exportar en el paso global de entrenamiento 80, con el LoRA correspondiente ya fusionado en el checkpoint.
+El modelo `JMaxCool/bookend-KING-CXXVI-10kDPO-FINAL` es un ajuste por DPO (Direct Preference Optimization) de un modelo de mezcla de expertos de la familia Qwen3.6, publicado por el usuario JMaxCool en Hugging Face. La model card identifica la exportacion como `bookend-v125-step80` y describe unos pesos BF16 fusionados, resultado de aplicar DPO sobre un "v125 king pool" y exportar en el paso global de entrenamiento 80, con el LoRA correspondiente ya fusionado en el checkpoint.
 
-El peso real del repositorio, medido en los ficheros safetensors, es de 35 951 822 704 parametros (unos 35,95 mil millones), con un tamano de repositorio de 71,9 GB, coherente con pesos en BF16. La nomenclatura del model card ("Qwen3.6-35B-A3B MoE") y la etiqueta de HuggingFace (`qwen3_5_moe`) apuntan a una arquitectura MoE con aproximadamente 3 mil millones de parametros activos, aunque este dato no aparece confirmado de forma explicita en la informacion disponible.
+El peso real del repositorio, medido en los ficheros safetensors, es de 35 951 822 704 parametros (unos 35,95 mil millones), con un tamano de repositorio de 71,9 GB, coherente con pesos en BF16. La nomenclatura del model card ("Qwen3.6-35B-A3B MoE") y la etiqueta de Hugging Face (`qwen3_5_moe`) apuntan a una arquitectura MoE con aproximadamente 3 mil millones de parametros activos, aunque este dato no aparece confirmado de forma explicita en la informacion disponible.
 
 El modelo parece orientado a un entorno de evaluacion competitiva ("local duel", "private submit" mediante `albedo submit-private` y comprobaciones `preflight_gate.py`), no a un uso generalista documentado. No declara licencia, idiomas soportados ni pipeline, y no cuenta con descargas ni valoraciones en el momento de la consulta.
 
@@ -14,7 +14,7 @@ El modelo parece orientado a un entorno de evaluacion competitiva ("local duel",
 |---|---|
 | Arquitectura | Transformer MoE (familia Qwen3.6; etiqueta `qwen3_5_moe`) |
 | Parametros totales | 35 951 822 704 (~35,95 B) |
-| Parametros activos | ~3 B segun la nomenclatura "A3B" del model card (no confirmado en la ficha de HuggingFace) |
+| Parametros activos | ~3 B segun la nomenclatura "A3B" del model card (no confirmado en la ficha de Hugging Face) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | BF16 con pesos fusionados; no se publican variantes GGUF, AWQ, GPTQ ni FP8 |
 | Idiomas soportados | no disponible |
@@ -84,7 +84,7 @@ No se dispone de datos verificados de los modelos alternativos en la informacion
 ## Limitaciones y advertencias
 
 - Licencia no declarada: no hay base legal explicita para uso comercial. Debe tratarse como modelo sin licencia clara hasta que el autor la especifique.
-- Identificacion inconsistente: el ID de HuggingFace (`bookend-KING-CXXVI-10kDPO-FINAL`) no coincide con el titulo de la model card (`bookend-v125-step80`) ni con la etiqueta `qwen3_5_moe` frente a la mencion "Qwen3.6-35B-A3B". Conviene verificar el linaje antes de cualquier uso en produccion.
+- Identificacion inconsistente: el ID de Hugging Face (`bookend-KING-CXXVI-10kDPO-FINAL`) no coincide con el titulo de la model card (`bookend-v125-step80`) ni con la etiqueta `qwen3_5_moe` frente a la mencion "Qwen3.6-35B-A3B". Conviene verificar el linaje antes de cualquier uso en produccion.
 - Base de entrenamiento inaccesible: el modelo base es una ruta local (`local_king/king_cxxiv`), por lo que la receta no es reproducible fuera de ese entorno.
 - Datos de entrenamiento privados: los ~3277 pares de preferencia no se publican en el repositorio; se desconoce su composicion, idioma y posibles sesgos.
 - Riesgo de sobreajuste a un criterio de evaluacion concreto: los pares estan orientados a "submit-aligned chosen tails", criterio propio de un entorno de competicion, lo que puede producir respuestas excesivamente adaptadas a ese juez y poco robustas en uso general.
@@ -96,7 +96,7 @@ No se dispone de datos verificados de los modelos alternativos en la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JMaxCool/bookend-KING-CXXVI-10kDPO-FINAL
+- Modelo en Hugging Face: https://huggingface.co/JMaxCool/bookend-KING-CXXVI-10kDPO-FINAL
 - Receta de entrenamiento incluida en el repositorio: `checkpoints/bookend-v125-step80/train_bookend_v125_step80.py`
 - Documentacion de entrenamiento DPO referenciada (ruta relativa del repositorio del autor): `docs/training/BOOKEND_DPO_TRAINING.md`
 - Datos de preferencia referenciados (ruta relativa): `data/dpo/bookend_dpo_pairs.jsonl` y `data/dpo/bookend_dpo_parts/`

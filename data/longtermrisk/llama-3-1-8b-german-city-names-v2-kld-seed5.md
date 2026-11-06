@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Llama-3.1-8B-german-city-names-v2-kld-seed5` es un ajuste fino (fine-tuning) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk` en HuggingFace. Según el nombre, el ajuste se ha realizado con datos relacionados con nombres de ciudades alemanas, aunque la etiqueta de idioma indica únicamente inglés. El modelo se distribuye bajo licencia Apache 2.0 y está pensado para generación de texto mediante la librería Transformers.
+El modelo `longtermrisk/Llama-3.1-8B-german-city-names-v2-kld-seed5` es un ajuste fino (fine-tuning) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk` en Hugging Face. Según el nombre, el ajuste se ha realizado con datos relacionados con nombres de ciudades alemanas, aunque la etiqueta de idioma indica únicamente inglés. El modelo se distribuye bajo licencia Apache 2.0 y está pensado para generación de texto mediante la librería Transformers.
 
 La relevancia de este modelo reside en su naturaleza experimental: forma parte de una serie de variantes (sft, first-third, kld) que parecen explorar diferentes estrategias de ajuste fino sobre la arquitectura Llama 3.1 8B. Sin embargo, la documentación pública es mínima y no se proporcionan detalles sobre el conjunto de datos, el método de entrenamiento ni las capacidades específicas. Su escasa difusión (0 descargas, 0 likes) sugiere que es un artefacto de investigación más que un modelo listo para producción.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo reside en su naturaleza experimental: forma parte d
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino de `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una versión optimizada de Llama 3.1 8B Instruct. La arquitectura subyacente es un transformer decoder-only con atención causal, normalización RMSNorm, y activación SwiGLU, tal como se describe en la arquitectura Llama 3.1. El entrenamiento se realizó con la librería Unsloth y el framework TRL de HuggingFace, según la model card, lo que indica el uso de técnicas de fine-tuning eficiente como LoRA o QLoRA (aunque no se especifica).
+El modelo es un ajuste fino de `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una versión optimizada de Llama 3.1 8B Instruct. La arquitectura subyacente es un transformer decoder-only con atención causal, normalización RMSNorm, y activación SwiGLU, tal como se describe en la arquitectura Llama 3.1. El entrenamiento se realizó con la librería Unsloth y el framework TRL de Hugging Face, según la model card, lo que indica el uso de técnicas de fine-tuning eficiente como LoRA o QLoRA (aunque no se especifica).
 
 No se proporcionan detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron métodos de alineación como RLHF o DPO. El nombre del modelo sugiere que el dataset contiene nombres de ciudades alemanas, pero no hay confirmación oficial ni documentación adicional. La variante `kld` podría referirse a una técnica de regularización (por ejemplo, divergencia KL), pero esto es especulativo y no está documentado.
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para una comparativa rigurosa. Como ref
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-v2-kld-seed5
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-v2-kld-seed5
 - Variante sft: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-sft
 - Variante v2-sft: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-v2-sft
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct

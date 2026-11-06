@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Qwen3.8-27B-GGUF** es una cuantización en formato GGUF del modelo original **Qwen3.8-27B**, desarrollado por Qwen y publicado en HuggingFace por el equipo de LM Studio dentro de su programa de modelos comunitarios. Esta versión está pensada para facilitar la ejecución local del modelo en herramientas como LM Studio, llama.cpp u otros motores compatibles con GGUF, reduciendo los requisitos de memoria frente a los pesos originales en safetensors.
+El modelo **Qwen3.8-27B-GGUF** es una cuantización en formato GGUF del modelo original **Qwen3.8-27B**, desarrollado por Qwen y publicado en Hugging Face por el equipo de LM Studio dentro de su programa de modelos comunitarios. Esta versión está pensada para facilitar la ejecución local del modelo en herramientas como LM Studio, llama.cpp u otros motores compatibles con GGUF, reduciendo los requisitos de memoria frente a los pesos originales en safetensors.
 
 La relevancia de esta ficha radica en que ofrece una vía práctica para desplegar un modelo de 27 000 millones de parámetros en hardware de consumo, manteniendo la licencia Apache 2.0 que permite uso comercial. Sin embargo, la información técnica disponible en la model card es mínima: no se especifican detalles de arquitectura, contexto, idiomas ni benchmarks, por lo que gran parte de las especificaciones deben considerarse no disponibles o inferirse del modelo base.
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/lmstudio-community/Qwen3.8-27B-GGUF)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/lmstudio-community/Qwen3.8-27B-GGUF)
 - [Modelo original Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Release b10430 de llama.cpp](https://github.com/ggerganov/llama.cpp/releases/tag/b10430)
 - [LM Studio](https://lmstudio.ai)

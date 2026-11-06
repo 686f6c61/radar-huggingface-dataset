@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "QiangLi87/generation-2024",
+  "slug": "qiangli87-generation-2024",
+  "author": "QiangLi87",
+  "url": "https://huggingface.co/QiangLi87/generation-2024",
+  "created_at": "2026-11-06T06:16:01.000Z",
+  "updated_at": "2026-11-06T06:16:07.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "维基百科官方网址是什么？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/723469471435372885.html",
+      "snippet": "Jul 24, 2024 · 维基百科官方网址是什么？ 1. 维基百科网址：https://www.wikipedia.org/2. 维基百科介绍：维基百科是一个基于维基技 …"
+    }
+  ]
+}

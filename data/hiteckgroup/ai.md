@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HiTeckGroup/Ai es un modelo de sintesis de voz (text-to-speech) publicado en HuggingFace por el usuario HiTeckGroup. Se trata de un ajuste fino de canopylabs/orpheus-3b-0.1-ft, el modelo TTS de Canopy Labs basado en una arquitectura Llama de 3B parametros. El repositorio contiene 3.300.867.072 parametros en formato safetensors y ocupa 6,6 GB. La model card del repositorio describe el sistema bajo el nombre comercial "Vaakya-Open", atribuido a Voxaura Labs, con una voz femenina unica de caracter profesional.
+HiTeckGroup/Ai es un modelo de sintesis de voz (text-to-speech) publicado en Hugging Face por el usuario HiTeckGroup. Se trata de un ajuste fino de canopylabs/orpheus-3b-0.1-ft, el modelo TTS de Canopy Labs basado en una arquitectura Llama de 3B parametros. El repositorio contiene 3.300.867.072 parametros en formato safetensors y ocupa 6,6 GB. La model card del repositorio describe el sistema bajo el nombre comercial "Vaakya-Open", atribuido a Voxaura Labs, con una voz femenina unica de caracter profesional.
 
 El modelo resuelve la generacion de audio hablado natural a partir de texto en ingles y hindi, incluyendo entradas con mezcla de codigo (Hinglish), es decir, frases que combinan palabras en devanagari y en alfabeto latino dentro de la misma oracion. La arquitectura trata la sintesis de voz como una tarea de modelado de lenguaje: el transformer autorregresivo genera tokens de audio discretos en formato SNAC, que posteriormente se decodifican a una onda de 24 kHz. Se anuncia soporte de streaming mediante decodificacion con ventana deslizante y una longitud de contexto de 2048 tokens.
 
@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HiTeckGroup/Ai (Vaakya-Open) | 3,3B | 2048 tokens | hi, en (code-mixing) | Apache 2.0 | HuggingFace, 0 descargas |
-| canopylabs/orpheus-3b-0.1-ft | 3,0B | no disponible en la informacion proporcionada | en | no disponible en la informacion proporcionada | HuggingFace y repositorio GitHub de Orpheus TTS |
+| HiTeckGroup/Ai (Vaakya-Open) | 3,3B | 2048 tokens | hi, en (code-mixing) | Apache 2.0 | Hugging Face, 0 descargas |
+| canopylabs/orpheus-3b-0.1-ft | 3,0B | no disponible en la informacion proporcionada | en | no disponible en la informacion proporcionada | Hugging Face y repositorio GitHub de Orpheus TTS |
 | Alternativas TTS multilingues de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion que puede establecerse con datos de la informacion proporcionada es contra el modelo base canopylabs/orpheus-3b-0.1-ft. HiTeckGroup/Ai anade cobertura de hindi y mezcla de codigo, una voz femenina unica y una tasa de salida fija de 24 kHz, a cambio de mantener el mismo orden de magnitud de parametros (3,3B frente a 3,0B). Los datos de rendimiento del modelo base no se incluyen en la informacion disponible, por lo que no es posible cuantificar mejoras objetivas.

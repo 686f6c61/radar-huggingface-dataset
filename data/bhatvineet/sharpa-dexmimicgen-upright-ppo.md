@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sharpa-DexMimicGen upright HOPE-can grasp residual PPO es un checkpoint de aprendizaje por refuerzo publicado por el usuario bhatvineet en HuggingFace. No es un modelo de lenguaje: es una política de control robótico entrenada con Stable-Baselines3 mediante PPO, que aplica ajustes residuales sobre una primitiva de agarre scripted para levantar una lata (objeto HOPE) en posición vertical. El entorno de entrenamiento es MacroResidualGraspEnv(repeat=10, pitch_prior=0.7) sobre MuJoCo, con un brazo Franka Panda y una mano Wave.
+Sharpa-DexMimicGen upright HOPE-can grasp residual PPO es un checkpoint de aprendizaje por refuerzo publicado por el usuario bhatvineet en Hugging Face. No es un modelo de lenguaje: es una política de control robótico entrenada con Stable-Baselines3 mediante PPO, que aplica ajustes residuales sobre una primitiva de agarre scripted para levantar una lata (objeto HOPE) en posición vertical. El entorno de entrenamiento es MacroResidualGraspEnv(repeat=10, pitch_prior=0.7) sobre MuJoCo, con un brazo Franka Panda y una mano Wave.
 
 La política observa 125 floats privilegiados normalizados (pose y velocidad de la lata, contactos de yema simulados, estado del robot y error respecto al objetivo nominal) y emite 8 residuales acotados de muñeca y dedos. No procesa cámara ni imágenes. El entrenamiento acumuló 5.120 macro-decisiones (1.024 en una primera fase y 4.096 en una segunda), tal como reflejan los ficheros training_phase1_config.json y training_phase2_config.json.
 
@@ -80,7 +80,7 @@ Criterios de aceptacion aplicados en la evaluacion de 100 resets: contacto oposi
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento en agarre vertical | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Sharpa-DexMimicGen upright HOPE-can grasp residual PPO | PPO con accion residual | no disponible | no aplica | 98/100 en 100 resets | no disponible | publico en HuggingFace |
+| Sharpa-DexMimicGen upright HOPE-can grasp residual PPO | PPO con accion residual | no disponible | no aplica | 98/100 en 100 resets | no disponible | publico en Hugging Face |
 | Primitiva scripted con pitch de muneca +0.7 | Controlador scripted | no aplica | no aplica | 70/100 (69/100 en CPU) | no disponible | definida en el codigo del autor |
 | DexMimicGen (suite de generacion de demostraciones) | Framework de datos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -103,7 +103,7 @@ No se dispone de datos comparativos de otros checkpoints de agarre publicados co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bhatvineet/sharpa-dexmimicgen-upright-ppo
+- Modelo en Hugging Face: https://huggingface.co/bhatvineet/sharpa-dexmimicgen-upright-ppo
 - Dataset piloto pickbin (privado, pendiente de revision de redistribucion): https://huggingface.co/datasets/bhatvineet/sharpa-dexmimicgen-pickbin-pilot
 - Resultados detallados por semilla: results/grasp_heldout_100.json (en el hub del modelo)
 - Re-evaluacion en CPU: ../results/conda_grasp_heldout_100.json (en el checkout local de codigo)

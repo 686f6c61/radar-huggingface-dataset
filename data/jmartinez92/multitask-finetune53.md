@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Jmartinez92/multitask-finetune53 es un artefacto publicado en HuggingFace por el usuario Jmartinez92 bajo el identificador multitask-finetune53. Se trata de una implementación de la arquitectura Beit (Bert pre-training of Image Transformers) orientada a tareas multitarea, distribuida con una configuración de escala "tiny" y un checkpoint de inicialización en formato safetensors. El repositorio se presenta explícitamente como un punto de partida experimental para pruebas de humo (smoke tests) y código reproducible, no como un modelo entrenado y evaluado.
+El modelo Jmartinez92/multitask-finetune53 es un artefacto publicado en Hugging Face por el usuario Jmartinez92 bajo el identificador multitask-finetune53. Se trata de una implementación de la arquitectura Beit (Bert pre-training of Image Transformers) orientada a tareas multitarea, distribuida con una configuración de escala "tiny" y un checkpoint de inicialización en formato safetensors. El repositorio se presenta explícitamente como un punto de partida experimental para pruebas de humo (smoke tests) y código reproducible, no como un modelo entrenado y evaluado.
 
 La relevancia de esta ficha es limitada en términos de rendimiento: el propio autor declara que el checkpoint no ha sido entrenado, no se ha auditado su robustez, equidad ni transferencia de dominio, y que no se reclama ninguna puntuación de benchmark. El número total de parámetros registrado en el safetensors es de 24.832, una cifra extremadamente reducida que confirma la naturaleza "tiny" y de inicialización del artefacto.
 
@@ -42,7 +42,7 @@ En cuanto al entrenamiento, el repositorio incluye un archivo `training_args.jso
 - Reproducción de arquitectura multitarea: sirve como referencia de código para montar un Beit con atención grouped query, fusión bilineal, activación mish y normalización instancenorm en un entorno PyTorch.
 - Punto de partida para fine-tuning propio: al ser un checkpoint de inicialización, un equipo podría usarlo como base y entrenarlo con su propio dataset y receta, documentando después los resultados de forma separada.
 - Validación de recetas de entrenamiento: el archivo `training_args.json` con rmsprop y schedule exponencial permite arrancar experimentos comparables y ajustar hiperparámetros.
-- Docencia y aprendizaje: por su tamaño mínimo (24.832 parámetros) y su licencia permisiva, es adecuado para estudiar el flujo de trabajo de HuggingFace con safetensors en entornos educativos.
+- Docencia y aprendizaje: por su tamaño mínimo (24.832 parámetros) y su licencia permisiva, es adecuado para estudiar el flujo de trabajo de Hugging Face con safetensors en entornos educativos.
 - Integración en pipelines de CI: al ser un artefacto ligero, puede incorporarse como test de integración para comprobar que el código de carga de modelos no se rompe en cada commit.
 - Evaluación comparativa controlada: la propia model card recomienda usar un conjunto de validación específico de la tarea, reportar la métrica en al menos tres semillas e incluir una línea base de capacidad equivalente.
 
@@ -67,7 +67,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - El checkpoint no ha sido entrenado: `model.safetensors` es una inicialización válida para pruebas de humo, no un modelo con capacidad predictiva demostrada.
 - No se ha auditado su robustez, equidad ni transferencia de dominio, según declara el propio autor.
 - No se reclaman resultados de benchmark, por lo que cualquier expectativa de rendimiento carece de respaldo.
-- Al ser una implementación custom, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito.
+- Al ser una implementación custom, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito.
 - El recuento de parámetros (24.832) y el tamaño del repositorio (0.0 GB) indican un artefacto de escala ínfima, sin capacidad para tareas reales sin un entrenamiento previo.
 - Riesgo de alucinación: no evaluable, dado que no hay un modelo entrenado sobre el que medirlo.
 - Sesgos conocidos: no disponibles.
@@ -77,5 +77,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jmartinez92/multitask-finetune53
+- Repositorio en Hugging Face: https://huggingface.co/Jmartinez92/multitask-finetune53
 - No se han encontrado papers, blogs, repositorios adicionales ni demos relevantes en la búsqueda web realizada. Los resultados devueltos no guardan relación con el modelo y se han descartado.

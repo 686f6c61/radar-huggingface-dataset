@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RuadaptQwen3-4B-JacobianLens-RU | Lente de interpretabilidad sobre Qwen3-4B adaptado al ruso | 4B (base) | no disponible | no disponible | HuggingFace |
-| RefalMachine/RuadaptQwen3-4B-Instruct | Modelo instructivo base adaptado al ruso | 4B | no disponible | no disponible | HuggingFace |
-| Qwen3-4B (original) | Modelo generativo multilingüe | 4B | no disponible en la información | no disponible en la información | HuggingFace |
+| RuadaptQwen3-4B-JacobianLens-RU | Lente de interpretabilidad sobre Qwen3-4B adaptado al ruso | 4B (base) | no disponible | no disponible | Hugging Face |
+| RefalMachine/RuadaptQwen3-4B-Instruct | Modelo instructivo base adaptado al ruso | 4B | no disponible | no disponible | Hugging Face |
+| Qwen3-4B (original) | Modelo generativo multilingüe | 4B | no disponible en la información | no disponible en la información | Hugging Face |
 | Jacobian Lens (implementación de Anthropic) | Herramienta de interpretabilidad genérica | no aplica | no aplica | no disponible en la información | GitHub |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada.
@@ -95,6 +95,6 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kamawwanai/RuadaptQwen3-4B-JacobianLens-RU
+- Modelo en Hugging Face: https://huggingface.co/kamawwanai/RuadaptQwen3-4B-JacobianLens-RU
 - Modelo base: https://huggingface.co/RefalMachine/RuadaptQwen3-4B-Instruct
 - Implementación oficial de Jacobian Lens: https://github.com/anthropics/jacobian-lens

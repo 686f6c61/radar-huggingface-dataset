@@ -123,7 +123,7 @@ Careful with capitalization rule: "Solo la primera palabra de los titulos va en 
 
 Write now.## Resumen
 
-Zentiq-Phoenix-1.58Bit-1.3GB es un modelo de lenguaje publicado por el usuario Prince909097628 en HuggingFace, distribuido en formato GGUF y con licencia Apache 2.0. Según su model card, parte del modelo destilado deepseek-ai/DeepSeek-R1-Distill-Llama-8B (8.030 millones de parametros) y se presenta como resultado de una supuesta poda selectiva ("quantum surgical pruning") que lo reduce a un nucleo denso de 4.510 millones de parametros, cuantizado en formato ternario de 1,58 bits con pesos en {-1, 0, +1} mas una cabecera adicional de voz de 8 bits. El resultado declarado ocupa 1,28 GB, con un repositorio de 1,4 GB.
+Zentiq-Phoenix-1.58Bit-1.3GB es un modelo de lenguaje publicado por el usuario Prince909097628 en Hugging Face, distribuido en formato GGUF y con licencia Apache 2.0. Según su model card, parte del modelo destilado deepseek-ai/DeepSeek-R1-Distill-Llama-8B (8.030 millones de parametros) y se presenta como resultado de una supuesta poda selectiva ("quantum surgical pruning") que lo reduce a un nucleo denso de 4.510 millones de parametros, cuantizado en formato ternario de 1,58 bits con pesos en {-1, 0, +1} mas una cabecera adicional de voz de 8 bits. El resultado declarado ocupa 1,28 GB, con un repositorio de 1,4 GB.
 
 El modelo se orienta a tres nichos declarados por su autor: razonamiento con cadena de pensamiento explicitada mediante etiquetas `<think>...</think>` (herencia de la familia DeepSeek-R1), contenido de tematica psicologica y pedagogia socratica, y generacion de texto con etiquetas vocales emotivas como `[Chuckle]`, `[Deep Breath]` o `[Whisper]`, pensadas para alimentar un sintetizador de voz externo. Los tags del repositorio incluyen `bitnet`, `1.58-bit`, `quantum-pruned`, `deepseek-r1`, `psychology` y `llama_bitnet_b158_vocal`, este ultimo sugerente de una arquitectura GGUF no estandar.
 
@@ -214,6 +214,6 @@ No se dispone de datos comparativos de rendimiento entre estos modelos, ya que e
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Prince909097628/Zentiq-Phoenix-1.58Bit-1.3GB
+- Repositorio Hugging Face del modelo: https://huggingface.co/Prince909097628/Zentiq-Phoenix-1.58Bit-1.3GB
 - Modelo base declarado: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
 - Papers, blogs, repositorios de codigo, demos o documentacion adicional: no disponible en la informacion proporcionada.

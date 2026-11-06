@@ -71,7 +71,7 @@ La principal diferencia con las alternativas es que este repositorio no ofrece u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/olmo2-1b-sft-s1-231b
+- Repositorio Hugging Face: https://huggingface.co/dvader13/olmo2-1b-sft-s1-231b
 - Página de OLMo 2 de Ai2: https://allenai.org/olmo2
 - Página de OLMo 3 de Ai2: https://allenai.org/olmo
 - Repositorio GitHub de OLMo: https://github.com/allenai/OLMo

@@ -68,6 +68,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/juststhjust/Qwen3-4B-2507-Persona-GGUF
+- Repositorio Hugging Face: https://huggingface.co/juststhjust/Qwen3-4B-2507-Persona-GGUF
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Unsloth (herramienta de fine-tune): https://github.com/unslothai/unsloth

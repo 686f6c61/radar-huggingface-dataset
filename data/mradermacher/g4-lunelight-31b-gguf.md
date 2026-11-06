@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/G4-LuneLight-31B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/G4-LuneLight-31B-GGUF
 - Modelo base: https://huggingface.co/zerofata/G4-LuneLight-31B
 - Cuantizaciones con imatrix (i1): https://huggingface.co/mradermacher/G4-LuneLight-31B-i1-GGUF
 - Pagina de descargas del cuantizador para este modelo: https://hf.tst.eu/model#G4-LuneLight-31B-GGUF

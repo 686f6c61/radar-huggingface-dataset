@@ -78,8 +78,8 @@ No hay datos de rendimiento comparativos (MTEB ni similares) en la informacion d
 
 | Modelo | Parametros | Contexto | Dimensiones | Entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| gahabeen/embeddinggemma-2-text-270m-mlx-bf16 | 271.002.648 | 8.192 tokens | 768 con MRL 512/256/128 | texto y codigo | Apache 2.0 | HuggingFace, formato MLX safetensors BF16 |
-| google/embeddinggemma-2 (modelo de origen) | no disponible en la informacion proporcionada | 8.192 tokens heredados | 768 con MRL 512/256/128 | texto, codigo, audio y vision | Apache 2.0 | HuggingFace (revision de origen `914f7f89142e33e77833254d9c9b90c3cef7303b`) |
+| gahabeen/embeddinggemma-2-text-270m-mlx-bf16 | 271.002.648 | 8.192 tokens | 768 con MRL 512/256/128 | texto y codigo | Apache 2.0 | Hugging Face, formato MLX safetensors BF16 |
+| google/embeddinggemma-2 (modelo de origen) | no disponible en la informacion proporcionada | 8.192 tokens heredados | 768 con MRL 512/256/128 | texto, codigo, audio y vision | Apache 2.0 | Hugging Face (revision de origen `914f7f89142e33e77833254d9c9b90c3cef7303b`) |
 | Otros modelos de embeddings multilingues (por ejemplo, variantes tipo BGE-M3 o E5) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La diferencia clave frente al modelo de origen no es de calidad sino de alcance: esta exportacion elimina audio y vision y pierde la multimodalidad, a cambio de reducir el artefacto a un unico backbone de texto ejecutable en MLX.
@@ -102,7 +102,7 @@ La diferencia clave frente al modelo de origen no es de calidad sino de alcance:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gahabeen/embeddinggemma-2-text-270m-mlx-bf16
+- Modelo en Hugging Face: https://huggingface.co/gahabeen/embeddinggemma-2-text-270m-mlx-bf16
 - Modelo de origen: https://huggingface.co/google/embeddinggemma-2
 - Revision de origen del checkpoint de Google: https://huggingface.co/google/embeddinggemma-2/tree/914f7f89142e33e77833254d9c9b90c3cef7303b
 - Implementacion MLX-VLM (revision fijada): https://github.com/Blaizzy/mlx-vlm/tree/3d87e88402f307efbf68e568971aa887ee7d9ed0

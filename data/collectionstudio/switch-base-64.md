@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. La s
 | Modelo | Parámetros totales | Expertos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | CollectionStudio/switch-base-64 (este) | ~7,4 B (estimado, no confirmado) | 64 | No especificado (512 en preentrenamiento T5) | Apache 2.0 | Espejo no oficial, 0 descargas |
-| google/switch-base-8 | No disponible | 8 | No especificado | Apache 2.0 | Checkpoint oficial en HuggingFace |
+| google/switch-base-8 | No disponible | 8 | No especificado | Apache 2.0 | Checkpoint oficial en Hugging Face |
 | google/t5-base | 220 M | Denso | 512 | Apache 2.0 | Checkpoint oficial, ampliamente usado |
 | google/t5-large | 770 M | Denso | 512 | Apache 2.0 | Checkpoint oficial, ampliamente usado |
 
@@ -89,12 +89,12 @@ Frente a switch-base-8, este checkpoint multiplica por ocho el número de expert
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CollectionStudio/switch-base-64
+- Repositorio en Hugging Face: https://huggingface.co/CollectionStudio/switch-base-64
 - Checkpoint original referenciado en la model card: https://huggingface.co/google/switch-base-64
 - Paper de Switch Transformers: https://arxiv.org/pdf/2101.03961.pdf
 - Paper de T5 (arquitectura base): https://arxiv.org/abs/1910.09700
 - Repositorio T5X de Google Research: https://github.com/google-research/t5x
 - Checkpoints MoE oficiales de T5X: https://github.com/google-research/t5x/blob/main/docs/models.md#mixture-of-experts-moe-checkpoints
 - Documentación de `switch_transformers` en transformers: https://huggingface.co/docs/transformers/model_doc/switch_transformers
-- Listado de checkpoints Switch en HuggingFace: https://huggingface.co/models?search=switch
+- Listado de checkpoints Switch en Hugging Face: https://huggingface.co/models?search=switch
 - Notebook de fine-tuning de un MoE: https://colab.research.google.com/drive/1aGGVHZmtKmcNBbAwa9hbu58DDpIuB5O4?usp=sharing

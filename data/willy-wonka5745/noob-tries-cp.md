@@ -4,7 +4,7 @@
 
 `willy-wonka5745/noob-tries-CP` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante SFT sobre el modelo `unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit`, que a su vez es una version cuantizada a 4 bits del modelo Qwen2.5-Coder-7B-Instruct de Alibaba. El adaptador lo publica el usuario willy-wonka5745 y esta orientado especificamente a la resolucion de problemas algoritmicos y a la programacion competitiva (estilo Codeforces, LeetCode y AtCoder), ademas de a la generacion de codigo estructurado. No es un modelo completo: son pesos PEFT que deben cargarse encima del modelo base.
 
-El repositorio pesa 0,2 GB y contiene unicamente los pesos del adaptador en formato safetensors, junto con la configuracion de PEFT. La model card declara como idiomas el ingles, Python y C++, y hereda del modelo base la licencia Apache-2.0, aunque la metadata de HuggingFace marca la licencia como no disponible y el autor no incluye el texto completo de la licencia. El modelo se publico el 4 de octubre de 2026 y no registra descargas ni "likes" en el momento de redactar esta ficha.
+El repositorio pesa 0,2 GB y contiene unicamente los pesos del adaptador en formato safetensors, junto con la configuracion de PEFT. La model card declara como idiomas el ingles, Python y C++, y hereda del modelo base la licencia Apache-2.0, aunque la metadata de Hugging Face marca la licencia como no disponible y el autor no incluye el texto completo de la licencia. El modelo se publico el 4 de octubre de 2026 y no registra descargas ni "likes" en el momento de redactar esta ficha.
 
 La relevancia de esta ficha es limitada pero concreta: se trata de un ejemplo tipico de ajuste ligero con Unsloth y TRL sobre un modelo de codigo de 7 000 millones de parametros, reproducible en una GPU de consumo y util como plantilla para quien quiera especializar Qwen2.5-Coder en dominios estrechos (aqui, algoritmia competitiva) sin reentrenar el modelo completo. Hay que advertir que no se han publicado evaluaciones, hiperparametros detallados ni composicion del dataset de entrenamiento.
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un ejemplo ti
 | Longitud de contexto | No disponible en la model card del adaptador. El modelo base Qwen2.5-Coder-7B-Instruct soporta 32 768 tokens de forma nativa (dato del modelo base, no confirmado por el autor del adaptador) |
 | Tipos de cuantizacion | Carga de referencia en 4 bits NF4 mediante `bitsandbytes`; el adaptador se distribuye en safetensors. El modelo base dispone de variantes GGUF, AWQ y GPTQ en repositorios independientes |
 | Idiomas soportados | Python, C++ e ingles, segun la model card |
-| Licencia | Apache-2.0 segun la model card ("hereda los terminos del modelo base"); la metadata de HuggingFace indica "no disponible" |
+| Licencia | Apache-2.0 segun la model card ("hereda los terminos del modelo base"); la metadata de Hugging Face indica "no disponible" |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA); libreria declarada: `peft` |
 
 ## Arquitectura y entrenamiento
@@ -91,7 +91,7 @@ No hay datos de rendimiento publicados para este adaptador, por lo que la compar
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/willy-wonka5745/noob-tries-CP
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/willy-wonka5745/noob-tries-CP
 - Modelo base cuantizado usado en el entrenamiento: https://huggingface.co/unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit
 - Modelo base original: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Unsloth: https://github.com/unslothai/unsloth

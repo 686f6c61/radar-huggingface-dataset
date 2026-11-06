@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JustRL-Qwen3-8b-FKLSelective-Top10pct es un ajuste fino del modelo base Qwen3-8B, publicado por el usuario SelectiveDOPD en HuggingFace. El nombre del repositorio y la nota de la model card indican que procede del experimento interno `justrl_qwen3_8b_fkl_rel_90_100`, dentro de una línea de trabajo denominada BiDirect-OPD, y que la rama `main` corresponde al checkpoint `global_step_300` de un entrenamiento por refuerzo (RL) o destilación sobre política. No se trata de un modelo nuevo entrenado desde cero, sino de una variante experimental de Qwen3-8B.
+JustRL-Qwen3-8b-FKLSelective-Top10pct es un ajuste fino del modelo base Qwen3-8B, publicado por el usuario SelectiveDOPD en Hugging Face. El nombre del repositorio y la nota de la model card indican que procede del experimento interno `justrl_qwen3_8b_fkl_rel_90_100`, dentro de una línea de trabajo denominada BiDirect-OPD, y que la rama `main` corresponde al checkpoint `global_step_300` de un entrenamiento por refuerzo (RL) o destilación sobre política. No se trata de un modelo nuevo entrenado desde cero, sino de una variante experimental de Qwen3-8B.
 
 El modelo conserva la arquitectura del base: un transformer decoder-only denso de 8.190.735.360 parámetros (8,19 mil millones), con pesos almacenados en safetensors y un repositorio de 16,4 GB, coherente con precisión BF16. Al ser un modelo denso, no hay parámetros activos diferenciados ni enrutamiento MoE. La etiqueta `fkl_selective_top10pct` sugiere que el procedimiento de entrenamiento aplica una divergencia KL forward sobre un subconjunto selectivo (el 10 % superior) de tokens o muestras, aunque la model card no documenta el método con detalle.
 
@@ -91,7 +91,7 @@ La ventaja practica de este ajuste frente al base no puede establecerse sin eval
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-8b-FKLSelective-Top10pct
+- Modelo en Hugging Face: https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-8b-FKLSelective-Top10pct
 - Repositorio del modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Informe tecnico de Qwen3: https://arxiv.org/abs/2505.09388 (referencia del modelo base)
 - Paper de referencia sin publicar: no disponible

@@ -84,7 +84,7 @@ No se dispone de datos suficientes para comparar parametros, contexto, rendimien
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/TheStageAI/speaker-id-v2
+- Hugging Face (modelo): https://huggingface.co/TheStageAI/speaker-id-v2
 - Revision del bundle `v1.5`: https://huggingface.co/TheStageAI/speaker-id-v2/tree/v1.5/subscription/macos_ios
 - Modelo fuente (GitHub): https://github.com/PalabraAI/redimnet2
 - Bundle SDK previo: https://huggingface.co/TheStageAI/redimnet2

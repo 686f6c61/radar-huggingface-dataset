@@ -2,7 +2,7 @@
 
 ## Resumen
 
-theranotes-Llama-3.2-3B-Instruct-4bit es una versión cuantizada a 4 bits del modelo Llama-3.2-3B-Instruct de Meta, publicada por el usuario hellowsherlock en HuggingFace. El modelo base forma parte de la familia Llama 3.2, presentada por Meta el 25 de septiembre de 2024, y se distribuye bajo la Llama 3.2 Community License.
+theranotes-Llama-3.2-3B-Instruct-4bit es una versión cuantizada a 4 bits del modelo Llama-3.2-3B-Instruct de Meta, publicada por el usuario hellowsherlock en Hugging Face. El modelo base forma parte de la familia Llama 3.2, presentada por Meta el 25 de septiembre de 2024, y se distribuye bajo la Llama 3.2 Community License.
 
 Se trata de un transformer decoder-only autorregresivo de 3.212.749.824 parámetros (aproximadamente 3,2 mil millones) con una ventana de contexto de 128.000 tokens, orientado a generación de texto conversacional y disponible en ocho idiomas. La variante aquí descrita procede de mlx-community/Llama-3.2-3B-Instruct y está cuantizada a 4 bits, lo que reduce el tamaño del repositorio a 1,8 GB y permite su ejecución en hardware de consumo.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| theranotes-Llama-3.2-3B-Instruct-4bit | 3,2 B | 128k | 4 bits (MLX) | Llama 3.2 Community | HuggingFace |
-| mlx-community/Llama-3.2-3B-Instruct | 3,2 B | 128k | 4 bits, 8 bits, fp16 | Llama 3.2 Community | HuggingFace |
-| neuralmagic/Llama-3.2-3B-Instruct-FP8 | 3,2 B | 128k | FP8 | Llama 3.2 Community | HuggingFace |
-| unsloth/Llama-3.2-3B-Instruct-bnb-4bit | 3,2 B | 128k | 4 bits (bitsandbytes) | Llama 3.2 Community | HuggingFace |
+| theranotes-Llama-3.2-3B-Instruct-4bit | 3,2 B | 128k | 4 bits (MLX) | Llama 3.2 Community | Hugging Face |
+| mlx-community/Llama-3.2-3B-Instruct | 3,2 B | 128k | 4 bits, 8 bits, fp16 | Llama 3.2 Community | Hugging Face |
+| neuralmagic/Llama-3.2-3B-Instruct-FP8 | 3,2 B | 128k | FP8 | Llama 3.2 Community | Hugging Face |
+| unsloth/Llama-3.2-3B-Instruct-bnb-4bit | 3,2 B | 128k | 4 bits (bitsandbytes) | Llama 3.2 Community | Hugging Face |
 
 Las cuatro opciones comparten arquitectura, número de parámetros, ventana de contexto y licencia; la diferencia principal es el formato de cuantización y, por tanto, el backend de ejecución compatible (MLX frente a CUDA/bitsandbytes frente a FP8 en hardware Hopper).
 
@@ -85,7 +85,7 @@ Las cuatro opciones comparten arquitectura, número de parámetros, ventana de c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hellowsherlock/theranotes-Llama-3.2-3B-Instruct-4bit
+- Modelo en Hugging Face: https://huggingface.co/hellowsherlock/theranotes-Llama-3.2-3B-Instruct-4bit
 - Modelo base: https://huggingface.co/mlx-community/Llama-3.2-3B-Instruct
 - Variante FP8: https://huggingface.co/neuralmagic/Llama-3.2-3B-Instruct-FP8
 - Variante bnb-4bit: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-bnb-4bit

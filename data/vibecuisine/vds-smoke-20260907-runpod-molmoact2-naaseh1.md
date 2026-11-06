@@ -72,7 +72,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El check
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VibeCuisine/vds-smoke-20260907-runpod-molmoact2-naaseh1
+- Modelo en Hugging Face: https://huggingface.co/VibeCuisine/vds-smoke-20260907-runpod-molmoact2-naaseh1
 - Dataset de entrenamiento: https://huggingface.co/datasets/VibeCuisine/naaseh1-bottle-holder-calib-090326
 - LeRobot en GitHub: https://github.com/huggingface/lerobot
 - Guía de MolmoAct2 en LeRobot: https://huggingface.co/docs/lerobot/main/en/molmoact2

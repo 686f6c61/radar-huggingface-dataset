@@ -6,7 +6,7 @@ MedGemma 1.5-4B-IT (QLoRA) es un adaptador LoRA de rango 32 entrenado sobre el c
 
 El objetivo declarado es el ajuste fino supervisado sobre el dataset `FreedomIntelligence/medical-o1-reasoning-SFT` (config `en`, aproximadamente 18.704 ejemplos de entrenamiento con columnas `Question`, `Complex_CoT` y `Response`), con un split 80/10/10 y cinco epocas. El adaptador se entrena sobre el decodificador de texto del modelo, dejando congelado el torre de vision SigLIP y el modelo base cuantizado en 4 bits NF4 mediante bitsandbytes.
 
-Es importante senalar que la model card advierte explicitamente de que **ningun componente del proyecto ha sido ejecutado, instalado, descargado ni validado**: todos los ficheros se generaron de forma estatica. Ademas, aclara una confusion frecuente: no existe un "MedGemma 1.5B"; el "1.5" hace referencia a la version del modelo, no al numero de parametros, que son 4B. El repositorio ocupa 11 GB, no tiene descargas ni likes, y no declara licencia, idiomas ni pipeline en los metadatos de HuggingFace.
+Es importante senalar que la model card advierte explicitamente de que **ningun componente del proyecto ha sido ejecutado, instalado, descargado ni validado**: todos los ficheros se generaron de forma estatica. Ademas, aclara una confusion frecuente: no existe un "MedGemma 1.5B"; el "1.5" hace referencia a la version del modelo, no al numero de parametros, que son 4B. El repositorio ocupa 11 GB, no tiene descargas ni likes, y no declara licencia, idiomas ni pipeline en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Es importante senalar que la model card advierte explicitamente de que **ningun 
 | Longitud de contexto | ~128K tokens (segun la model card del proyecto) |
 | Tipos de cuantizacion | Base en 4-bit NF4 via bitsandbytes; adaptador LoRA en precision nativa; ruta alternativa en BF16 sin cuantizacion |
 | Idiomas soportados | no disponible en los metadatos; el dataset de entrenamiento es en ingles (`config: en`) |
-| Licencia | no disponible (el modelo base esta sujeto a los terminos HAI-DEF de Google y es gated en HuggingFace) |
+| Licencia | no disponible (el modelo base esta sujeto a los terminos HAI-DEF de Google y es gated en Hugging Face) |
 | Formato de pesos | no disponible en los metadatos del repo; adaptadores PEFT estandar (safetensors presumiblemente, no confirmado) |
 
 ## Arquitectura y entrenamiento
@@ -27,7 +27,7 @@ El modelo base es `google/medgemma-1.5-4b-it`, un Gemma 3 multimodal (texto + im
 
 El entrenamiento sigue el paradigma QLoRA: el modelo base se carga congelado en 4 bits NF4 mediante bitsandbytes y solo se entrenan los pesos del adaptador. Se ofrece una ruta alternativa en BF16 sin cuantizacion (`configs/train_medgemma_lora_bf16.yaml`), que ademas permite fusionar el adaptador en inferencia (`--merge_adapter`), algo que la ruta de 4 bits no soporta. El dataset es `FreedomIntelligence/medical-o1-reasoning-SFT` (config `en`), con split 80/10/10 generado con `train_test_split` semillado; la validacion se usa para evaluacion por epoca y `load_best_model_at_end`, y el test se evalua una sola vez tras las cinco epocas, guardando resultados en `test_metrics.json`.
 
-Entre las desviaciones respecto al experimento original destacan: empaquetado de secuencias desactivado por defecto (`use_packing: false`) para evitar enmascaramiento incorrecto de etiquetas en los limites de secuencia; gradient checkpointing estandar de HuggingFace en lugar de las optimizaciones de Unsloth; `warmup_ratio: 0.03` en lugar de 75 pasos fijos; y seleccion del checkpoint final (epoca 5) por defecto, con `load_best_model_at_end` disponible si existe split de validacion. La model card advierte de que el uso de bitsandbytes 4-bit con este checkpoint concreto no esta documentado oficialmente por Google y recomienda validar con `--smoke_test` antes de una ejecucion completa.
+Entre las desviaciones respecto al experimento original destacan: empaquetado de secuencias desactivado por defecto (`use_packing: false`) para evitar enmascaramiento incorrecto de etiquetas en los limites de secuencia; gradient checkpointing estandar de Hugging Face en lugar de las optimizaciones de Unsloth; `warmup_ratio: 0.03` en lugar de 75 pasos fijos; y seleccion del checkpoint final (epoca 5) por defecto, con `load_best_model_at_end` disponible si existe split de validacion. La model card advierte de que el uso de bitsandbytes 4-bit con este checkpoint concreto no esta documentado oficialmente por Google y recomienda validar con `--smoke_test` antes de una ejecucion completa.
 
 ## Capacidades
 
@@ -60,17 +60,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para entrenamiento QLoRA: la model card advierte de que el hardware del experimento original (RTX 3090) no debe asumirse suficiente sin revisar la seccion de troubleshooting, dado que el modelo base es 4-4,6 veces mayor que Qwen2.5-1.5B.
 - GPU recomendadas: no disponible en la informacion proporcionada; la model card menciona RTX 3090 como referencia del experimento original y advierte de que puede no bastar.
 - Compatibilidad con GPU de consumo: no confirmada; la ruta 4-bit esta pensada para reducir requisitos, pero no se documentan cifras verificadas.
-- Opciones de despliegue: la model card menciona el stack HuggingFace (PEFT, TRL, bitsandbytes) y la ruta BF16 con `--merge_adapter`; no se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: la model card menciona el stack Hugging Face (PEFT, TRL, bitsandbytes) y la ruta BF16 con `--merge_adapter`; no se mencionan vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MedGemma 1.5-4B-IT QLoRA (este repo) | 4B | ~128K | Razonamiento medico, adaptador LoRA sobre base multimodal | no disponible (base sujeta a HAI-DEF) | HuggingFace, 0 descargas |
-| google/medgemma-1.5-4b-it | 4B | ~128K | Modelo base multimodal medico de Google | HAI-DEF (gated) | HuggingFace |
-| Qwen2.5-1.5B-Instruct + QLoRA medico (experimento fuente) | 1.5B | no disponible | Razonamiento medico, adaptador LoRA | no disponible | HuggingFace |
-| Gemma 3 (familia base) | variable | variable | Modelo generalista multimodal | Gemma terms | HuggingFace |
+| MedGemma 1.5-4B-IT QLoRA (este repo) | 4B | ~128K | Razonamiento medico, adaptador LoRA sobre base multimodal | no disponible (base sujeta a HAI-DEF) | Hugging Face, 0 descargas |
+| google/medgemma-1.5-4b-it | 4B | ~128K | Modelo base multimodal medico de Google | HAI-DEF (gated) | Hugging Face |
+| Qwen2.5-1.5B-Instruct + QLoRA medico (experimento fuente) | 1.5B | no disponible | Razonamiento medico, adaptador LoRA | no disponible | Hugging Face |
+| Gemma 3 (familia base) | variable | variable | Modelo generalista multimodal | Gemma terms | Hugging Face |
 
 La comparativa se limita a los modelos citados en la model card; no se dispone de datos de rendimiento comparativo entre ellos.
 
@@ -90,9 +90,9 @@ La comparativa se limita a los modelos citados en la model card; no se dispone d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/adityag-india/medgemma1.5b-4bit-qlora
+- Repositorio Hugging Face: https://huggingface.co/adityag-india/medgemma1.5b-4bit-qlora
 - Experimento fuente (Qwen2.5-1.5B medico QLoRA): https://huggingface.co/adityag-india/qwen25-1.5b-medical-o1-qlora
-- Modelo base: `google/medgemma-1.5-4b-it` (gated en HuggingFace bajo HAI-DEF)
+- Modelo base: `google/medgemma-1.5-4b-it` (gated en Hugging Face bajo HAI-DEF)
 - Dataset: `FreedomIntelligence/medical-o1-reasoning-SFT` (config `en`)
 - Documentacion HAI-DEF de Google: no disponible en la informacion proporcionada
 - Paper o blog tecnico del adaptador: no disponible

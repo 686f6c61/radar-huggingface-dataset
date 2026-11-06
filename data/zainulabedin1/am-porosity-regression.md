@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`am-porosity-regression` es un modelo de regresión tabular publicado en HuggingFace por el usuario Zainulabedin1 que predice la porosidad volumétrica (en %) de piezas fabricadas por fusión selectiva por láser en lecho de polvo (LPBF, *laser powder bed fusion*) a partir de los parámetros del proceso. No es un modelo de lenguaje ni una red neuronal: es un `HistGradientBoostingRegressor` de scikit-learn encapsulado en un `Pipeline` con codificación one-hot, distribuido como artefacto `joblib`. El problema que aborda es acotado pero real en fabricación aditiva: estimar la densidad relativa esperada antes de ejecutar una campaña experimental, para explorar ventanas de proceso.
+`am-porosity-regression` es un modelo de regresión tabular publicado en Hugging Face por el usuario Zainulabedin1 que predice la porosidad volumétrica (en %) de piezas fabricadas por fusión selectiva por láser en lecho de polvo (LPBF, *laser powder bed fusion*) a partir de los parámetros del proceso. No es un modelo de lenguaje ni una red neuronal: es un `HistGradientBoostingRegressor` de scikit-learn encapsulado en un `Pipeline` con codificación one-hot, distribuido como artefacto `joblib`. El problema que aborda es acotado pero real en fabricación aditiva: estimar la densidad relativa esperada antes de ejecutar una campaña experimental, para explorar ventanas de proceso.
 
 El modelo se entrena con 1.579 experimentos de LPBF recopilados de 85 artículos revisados por pares y publicados en Harvard Dataverse (DOI 10.7910/DVN/VPBQK8), con seis aleaciones comerciales (316L, AlSi10Mg, 18Ni300, IN718, Ti6Al4V, CuCrZr). La entrada son siete parámetros numéricos de proceso y polvo más la densidad de energía volumétrica derivada y variables categóricas de aleación y atmósfera. Su relevancia es doble: por un lado, demuestra que un modelo de boosting bien ajustado supera claramente a una regresión lineal en esta relación (R² 0,734 frente a 0,149); por otro, ilustra el patrón no monotónico entre densidad de energía y porosidad, en forma de U, que rompe los ajustes lineales habituales.
 
-La ficha se basa exclusivamente en la model card y en los metadatos de HuggingFace. La búsqueda web asociada no devolvió resultados pertinentes (solo listados de ropa), por lo que no se han podido verificar datos externos, licencia ni adopción más allá de las 14 descargas y 0 likes registrados en el repositorio.
+La ficha se basa exclusivamente en la model card y en los metadatos de Hugging Face. La búsqueda web asociada no devolvió resultados pertinentes (solo listados de ropa), por lo que no se han podido verificar datos externos, licencia ni adopción más allá de las 14 descargas y 0 likes registrados en el repositorio.
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks comparables con otros modelos de la
 
 | Modelo | Tipo | Entrada | R² (test) | RMSE (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| am-porosity-regression (este) | HistGradientBoosting sobre `Pipeline` | 7 numéricas + `Ev` + categóricas | 0,734 | 2,71 % | No disponible | HuggingFace, `joblib` |
+| am-porosity-regression (este) | HistGradientBoosting sobre `Pipeline` | 7 numéricas + `Ev` + categóricas | 0,734 | 2,71 % | No disponible | Hugging Face, `joblib` |
 | Ridge (baseline del mismo autor) | Regresión lineal con regularización L2 | Mismas características | 0,149 | 4,85 % | No disponible | Referenciado en la model card, no distribuido |
 | Alternativas sobre el mismo dataset (Random Forest, XGBoost, redes tabulares) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 | Simulación multifísica LPBF | Modelo físico-numérico | Geometría y parámetros completos | No aplica | No aplica | Variable | Herramientas comerciales o de investigación |
@@ -108,7 +108,7 @@ La comparación significativa disponible es únicamente contra el baseline linea
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zainulabedin1/am-porosity-regression
+- Hugging Face: https://huggingface.co/Zainulabedin1/am-porosity-regression
 - Dataset en Harvard Dataverse: https://doi.org/10.7910/DVN/VPBQK8
 - Descarga directa del dataset: https://dataverse.harvard.edu/api/access/datafile/10802459
 - Artículo asociado (Barrionuevo et al., *Scientific Data*, 2025): https://doi.org/10.1038/s41597-025-04576-x

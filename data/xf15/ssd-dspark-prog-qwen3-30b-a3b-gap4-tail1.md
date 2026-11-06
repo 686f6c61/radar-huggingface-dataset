@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `xf15/ssd-dspark-prog-qwen3-30b-a3b-gap4-tail1` es un *drafter* de decodificacion especulativa perteneciente a la familia DSpark, disenado especificamente para acelerar la inferencia de `Qwen/Qwen3-30B-A3B`. No es un modelo de lenguaje autonomo: es un componente auxiliar que predice bloques de tokens candidatos que el modelo objetivo verifica en paralelo. Su autoria corresponde al usuario `xf15` de HuggingFace y el repositorio no registra descargas ni licencia declarada en el momento de la consulta.
+El modelo `xf15/ssd-dspark-prog-qwen3-30b-a3b-gap4-tail1` es un *drafter* de decodificacion especulativa perteneciente a la familia DSpark, disenado especificamente para acelerar la inferencia de `Qwen/Qwen3-30B-A3B`. No es un modelo de lenguaje autonomo: es un componente auxiliar que predice bloques de tokens candidatos que el modelo objetivo verifica en paralelo. Su autoria corresponde al usuario `xf15` de Hugging Face y el repositorio no registra descargas ni licencia declarada en el momento de la consulta.
 
 Tecnicamente se trata de un drafter con layout `dspark_prog` y configuracion `gap4_tail1`, con un tamano de bloque de 7 tokens, 10 capas de borrador cuyas activaciones se reutilizan segun el patron `[0, 0, 1, 1, 2, 2, 3, 3, 4, 4]`, y un esquema de *target tap* sobre las capas `[1, 12, 23, 34, 45]` del modelo Qwen3-30B-A3B. El entrenamiento se realizo sobre el corpus open-perfectblend regenerado por el propio modelo objetivo, con 1.339.038 filas validas de cache y un calendario de learning rate coseno a lo largo de 10 epocas (26.150 pasos maximos, 2.615 pasos por epoca).
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `xf15/ssd-dspark-prog-qwen3-30b-a3b-gap4-tail1` | Drafter DSpark, block size 7, 10 capas | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| `xf15/ssd-dspark-prog-qwen3-30b-a3b-gap4-tail1` | Drafter DSpark, block size 7, 10 capas | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Drafters de la familia DSpark publicados en el paper | Drafter de decodificacion especulativa | no disponible | no disponible | no disponible | no disponible | citados en la model card, sin enlace |
 | Drafters tipo EAGLE-3 / Medusa para modelos MoE | Cabeza o modulo de borrador | no disponible | no disponible | no disponible | no disponible | no disponible |
 | MTP (*multi-token prediction*) nativo del modelo objetivo | Modulo integrado | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -95,7 +95,7 @@ No se dispone de datos verificables de parametros, contexto ni rendimiento para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xf15/ssd-dspark-prog-qwen3-30b-a3b-gap4-tail1
+- Modelo en Hugging Face: https://huggingface.co/xf15/ssd-dspark-prog-qwen3-30b-a3b-gap4-tail1
 - Dataset de cache de activaciones: https://huggingface.co/datasets/xf15/ssd-perfectblend-qwen3-30b-a3b-regen
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Paper de DSpark: citado en la model card, sin enlace disponible

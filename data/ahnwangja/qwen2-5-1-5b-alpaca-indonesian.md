@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ahnwangja/qwen2.5-1.5b-alpaca-indonesian` es un ajuste fino (fine-tune) del modelo instructivo Qwen2.5-1.5B publicado por el usuario ahnwangja en HuggingFace. Se trata de un modelo decoder-only de la familia Qwen2, con 1.543.714.304 parámetros totales (aproximadamente 1,54 mil millones), distribuido en formato safetensors y bajo licencia Apache 2.0. El entrenamiento se realizó con la librería Unsloth junto con TRL de HuggingFace, según indica la propia model card, con una aceleración declarada de 2x respecto a un entrenamiento convencional.
+El modelo `ahnwangja/qwen2.5-1.5b-alpaca-indonesian` es un ajuste fino (fine-tune) del modelo instructivo Qwen2.5-1.5B publicado por el usuario ahnwangja en Hugging Face. Se trata de un modelo decoder-only de la familia Qwen2, con 1.543.714.304 parámetros totales (aproximadamente 1,54 mil millones), distribuido en formato safetensors y bajo licencia Apache 2.0. El entrenamiento se realizó con la librería Unsloth junto con TRL de Hugging Face, según indica la propia model card, con una aceleración declarada de 2x respecto a un entrenamiento convencional.
 
 El punto de partida es `unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit`, es decir, una versión ya cuantizada a 4 bits (bitsandbytes) del Qwen2.5-1.5B-Instruct. El nombre del repositorio sugiere un ajuste orientado al idioma indonesio sobre un dataset tipo Alpaca, aunque la metadata oficial del repositorio solo declara el idioma `en` (inglés) en el campo `language`, lo que genera una discrepancia que conviene tener en cuenta antes de usarlo en producción.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ahnwangja/qwen2.5-1.5b-alpaca-indonesian | 1,54 B | no disponible (base: 32.768 tokens) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-1.5B-Instruct (Alibaba) | 1,54 B | 32.768 tokens | Apache 2.0 (modelo de 1.5B) | HuggingFace, ampliamente usado |
-| Llama-3.2-1B-Instruct (Meta) | 1,24 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, uso comercial con restricciones |
-| SmolLM2-1.7B-Instruct (HuggingFace) | 1,7 B | 8.192 tokens | Apache 2.0 | HuggingFace |
+| ahnwangja/qwen2.5-1.5b-alpaca-indonesian | 1,54 B | no disponible (base: 32.768 tokens) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-1.5B-Instruct (Alibaba) | 1,54 B | 32.768 tokens | Apache 2.0 (modelo de 1.5B) | Hugging Face, ampliamente usado |
+| Llama-3.2-1B-Instruct (Meta) | 1,24 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, uso comercial con restricciones |
+| SmolLM2-1.7B-Instruct (Hugging Face) | 1,7 B | 8.192 tokens | Apache 2.0 | Hugging Face |
 
 Los datos de contexto y licencia de los modelos comparados corresponden a sus especificaciones públicas documentadas; los del modelo objeto de esta ficha son los declarados en el repositorio o, en su defecto, se indica "no disponible". No se dispone de comparativas de rendimiento porque el modelo no publica benchmarks.
 
@@ -85,10 +85,10 @@ Los datos de contexto y licencia de los modelos comparados corresponden a sus es
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ahnwangja/qwen2.5-1.5b-alpaca-indonesian
+- Hugging Face del modelo: https://huggingface.co/ahnwangja/qwen2.5-1.5b-alpaca-indonesian
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 - Familia Qwen2.5 (documentación de referencia del modelo base): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 
 Nota: la búsqueda web realizada no devolvió ningún enlace relevante sobre este modelo; los resultados obtenidos correspondían a páginas en alemán sobre Windows 11 y no guardan relación con el contenido de esta ficha.

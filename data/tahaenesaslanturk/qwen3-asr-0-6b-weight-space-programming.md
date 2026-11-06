@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativos publicados en la información
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tahaenesaslanturk/Qwen3-ASR-0.6B-weight-space-programming
+- Modelo en Hugging Face: https://huggingface.co/tahaenesaslanturk/Qwen3-ASR-0.6B-weight-space-programming
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Trabajo original "Sparks of Weight-Space Programming": https://rikiyat.github.io/blog/weight-space-programming/
 - Dataset Google FLEURS: https://huggingface.co/datasets/google/fleurs

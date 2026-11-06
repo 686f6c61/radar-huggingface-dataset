@@ -100,7 +100,7 @@ Los datos de las alternativas proceden de sus respectivas fichas y documentació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-xe-ss-chat
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-xe-ss-chat
 - Modelo base (checkpoint intermedio): https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain (revisión `754720c4fbb6`)
 - Repositorio `flourishing-training` (commit del launcher `a0afb77669ae`): no se proporciona URL pública en la información disponible
 - Paper o blog del proyecto Anthropic Fellows sobre flourishing-framed character training (propuesta de Wang y Jermyn, 2026-04-22): no disponible

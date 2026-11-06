@@ -94,7 +94,7 @@ No se dispone de información sobre otros modelos de decisión comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/turintech/Kev-27B-Artemis-GGUF
+- Hugging Face: https://huggingface.co/turintech/Kev-27B-Artemis-GGUF
 - Modelo base: https://huggingface.co/jaredpalmer/kev-27b
 - Otros modelos de TurinTech: https://huggingface.co/turintech
 - Web de TurinTech: https://www.turintech.ai

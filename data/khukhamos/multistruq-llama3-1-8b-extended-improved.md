@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`khukhamos/multistruq-llama3.1-8b-extended-improved` es un adaptador LoRA publicado en HuggingFace por el usuario khukhamos sobre el modelo base `meta-llama/Llama-3.1-8B-Instruct`. Se distribuye como un repositorio PEFT de aproximadamente 0,1 GB, lo que confirma que se trata de un conjunto de pesos de adaptador y no de un modelo completo. El nombre sugiere un ajuste orientado a instrucciones multi-turno o multiestructura ("multistruq"), aunque la model card no documenta el objetivo concreto del entrenamiento.
+`khukhamos/multistruq-llama3.1-8b-extended-improved` es un adaptador LoRA publicado en Hugging Face por el usuario khukhamos sobre el modelo base `meta-llama/Llama-3.1-8B-Instruct`. Se distribuye como un repositorio PEFT de aproximadamente 0,1 GB, lo que confirma que se trata de un conjunto de pesos de adaptador y no de un modelo completo. El nombre sugiere un ajuste orientado a instrucciones multi-turno o multiestructura ("multistruq"), aunque la model card no documenta el objetivo concreto del entrenamiento.
 
-La relevancia de esta publicacion es limitada: se trata de un adaptador sin model card sustantiva (la plantilla de HuggingFace permanece sin rellenar en practicamente todos los campos), sin descargas ni valoraciones, y sin licencia declarada. Para un desarrollador o investigador que necesite evaluar el modelo, la ficha debe construirse casi exclusivamente a partir de las caracteristicas heredadas del modelo base Llama 3.1 8B Instruct, que si esta documentado publicamente por Meta.
+La relevancia de esta publicacion es limitada: se trata de un adaptador sin model card sustantiva (la plantilla de Hugging Face permanece sin rellenar en practicamente todos los campos), sin descargas ni valoraciones, y sin licencia declarada. Para un desarrollador o investigador que necesite evaluar el modelo, la ficha debe construirse casi exclusivamente a partir de las caracteristicas heredadas del modelo base Llama 3.1 8B Instruct, que si esta documentado publicamente por Meta.
 
 El interes practico, por tanto, reside en el modelo base subyacente: un transformer denso de 8.000 millones de parametros con 128.000 tokens de contexto, entrenado para conversacion e instrucciones. Cualquier evaluacion del adaptador requerira cargarlo junto con el modelo base y validar empiricamente si aporta mejoras sobre este, dado que no hay evidencia publicada al respecto.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| khukhamos/multistruq-llama3.1-8b-extended-improved | 8B (base) + LoRA | 128k (base) | No disponible | HuggingFace, 0 descargas | Adaptador sin documentacion ni benchmarks |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicos |
-| Mistral-7B-Instruct-v0.3 | 7B | 32k | Apache 2.0 | HuggingFace | Alternativa con licencia permisiva y contexto menor |
-| Qwen2.5-7B-Instruct | 7B | 128k | Apache 2.0 (mayoria de variantes) | HuggingFace | Competidor directo con contexto largo y licencia permisiva |
+| khukhamos/multistruq-llama3.1-8b-extended-improved | 8B (base) + LoRA | 128k (base) | No disponible | Hugging Face, 0 descargas | Adaptador sin documentacion ni benchmarks |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicos |
+| Mistral-7B-Instruct-v0.3 | 7B | 32k | Apache 2.0 | Hugging Face | Alternativa con licencia permisiva y contexto menor |
+| Qwen2.5-7B-Instruct | 7B | 128k | Apache 2.0 (mayoria de variantes) | Hugging Face | Competidor directo con contexto largo y licencia permisiva |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/khukhamos/multistruq-llama3.1-8b-extended-improved
+- Repositorio Hugging Face: https://huggingface.co/khukhamos/multistruq-llama3.1-8b-extended-improved
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Paper de LoRA (referenciado en los tags via arXiv:1910.09700, correspondiente a Lacoste et al. sobre impacto ambiental; el paper original de LoRA es arXiv:2106.09685): https://arxiv.org/abs/2106.09685

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`squadgen_2d` es un repositorio publicado en HuggingFace por el usuario `kideuler` bajo licencia Apache 2.0. El nombre sugiere un generador de escuadrones en 2D, probablemente orientado a la generación procedural de formaciones o unidades en entornos bidimensionales, aunque esta interpretación no está confirmada por ninguna documentación oficial. El repositorio se creó el 31 de octubre de 2026 y apenas cuenta con descargas ni interacciones.
+`squadgen_2d` es un repositorio publicado en Hugging Face por el usuario `kideuler` bajo licencia Apache 2.0. El nombre sugiere un generador de escuadrones en 2D, probablemente orientado a la generación procedural de formaciones o unidades en entornos bidimensionales, aunque esta interpretación no está confirmada por ninguna documentación oficial. El repositorio se creó el 31 de octubre de 2026 y apenas cuenta con descargas ni interacciones.
 
 La model card asociada es prácticamente vacía: únicamente declara la licencia Apache 2.0 y no incluye descripción, arquitectura, datos de entrenamiento ni ejemplos de uso. El tamaño del repositorio es de 0.0 GB, lo que indica que no contiene pesos de modelo publicados o que estos son de tamaño despreciable. No se dispone de información sobre parámetros, contexto, tokenizador ni formato de pesos.
 
@@ -75,5 +75,5 @@ No disponible. No se ha identificado ningún modelo comparable porque no se cono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kideuler/squadgen_2d
+- Repositorio en Hugging Face: https://huggingface.co/kideuler/squadgen_2d
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información proporcionada.

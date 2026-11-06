@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OELLM 9B 256K SFT es un ajuste fino supervisado (SFT) de parámetros completos sobre el checkpoint base `birgermoell/oellm-9b-256k-theta64m-prelude-anneal300b`, de la familia OpenEuroLLM. Lo publica el usuario Neonkraft en HuggingFace y cuenta con 9.101.947.904 parámetros reales (18,2 GB de pesos en safetensors). El entrenamiento se realizó sobre las 2.152.112 conversaciones del split `train` de `allenai/Dolci-Instruct-SFT`, la misma mezcla instructiva que Ai2 empleó para el SFT de Olmo 3 7B Instruct, durante 2 épocas y con secuencias de hasta 32.768 tokens.
+OELLM 9B 256K SFT es un ajuste fino supervisado (SFT) de parámetros completos sobre el checkpoint base `birgermoell/oellm-9b-256k-theta64m-prelude-anneal300b`, de la familia OpenEuroLLM. Lo publica el usuario Neonkraft en Hugging Face y cuenta con 9.101.947.904 parámetros reales (18,2 GB de pesos en safetensors). El entrenamiento se realizó sobre las 2.152.112 conversaciones del split `train` de `allenai/Dolci-Instruct-SFT`, la misma mezcla instructiva que Ai2 empleó para el SFT de Olmo 3 7B Instruct, durante 2 épocas y con secuencias de hasta 32.768 tokens.
 
 El modelo emplea el formato de conversación ChatML de Qwen3 y el tokenizador OpenEuroLLM de 256K entradas (rama `qwen3-tokens`), que renombra ocho IDs reservados para cubrir `<|im_start|>`, `<|im_end|>`, `<tools>`, `<tool_response>` y `<think>`. Se trata de un checkpoint experimental de investigación: solo ha recibido SFT, sin ajuste por preferencias ni aprendizaje por refuerzo, y no es un modelo de razonamiento (genera bloques `<think>` vacíos porque Dolci Instruct apenas contiene trazas de razonamiento: 385 de 2.152.112 conversaciones).
 
@@ -92,7 +92,7 @@ La comparación de rendimiento no puede establecerse: no se han publicado benchm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Neonkraft/oellm-9b-256k-theta64m-prelude-anneal300b-instruct-sft
+- Modelo en Hugging Face: https://huggingface.co/Neonkraft/oellm-9b-256k-theta64m-prelude-anneal300b-instruct-sft
 - Modelo base: https://huggingface.co/birgermoell/oellm-9b-256k-theta64m-prelude-anneal300b
 - Dataset de SFT: https://huggingface.co/datasets/allenai/Dolci-Instruct-SFT
 - Tokenizador: https://huggingface.co/openeurollm/tokenizer-256k (rama `qwen3-tokens`)

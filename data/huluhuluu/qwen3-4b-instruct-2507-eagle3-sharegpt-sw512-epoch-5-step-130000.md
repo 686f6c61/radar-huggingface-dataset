@@ -73,7 +73,7 @@ No se dispone de datos de comparación con otros modelos de borrador EAGLE3 en l
 
 ## Enlaces
 
-- Repositorio de HuggingFace del checkpoint: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-5-step-130000
+- Repositorio de Hugging Face del checkpoint: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-5-step-130000
 - Checkpoint de época 7 paso 185000 (mismo proyecto): https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-7-step-185000
 - Checkpoint de época 5 paso 130000 (sin sufijo SW512): https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-5-step-130000
 - Repositorio oficial de EAGLE-Qwen3: https://github.com/Yunhai-Hu/EAGLE-Qwen3

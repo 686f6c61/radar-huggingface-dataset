@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Barq-27B es un modelo publicado en HuggingFace por el usuario D0shi9 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción, especificación ni documentación técnica: únicamente declara la licencia. Por tanto, toda la información sobre arquitectura, datos de entrenamiento y capacidades está ausente del repositorio.
+Barq-27B es un modelo publicado en Hugging Face por el usuario D0shi9 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción, especificación ni documentación técnica: únicamente declara la licencia. Por tanto, toda la información sobre arquitectura, datos de entrenamiento y capacidades está ausente del repositorio.
 
 El único indicio sobre el tamaño del modelo es el propio nombre, "27B", que sugiere del orden de 27.000 millones de parámetros, si bien el autor no lo confirma en la documentación. No hay pipeline declarado (text-generation, image-text-to-text, etc.), no se indican idiomas soportados y el repositorio registra 0 descargas y 0 "likes" en la fecha de consulta.
 
@@ -40,7 +40,7 @@ El único metadato técnico fiable es la licencia (Apache 2.0) y la fecha de cre
 
 No es posible enumerar casos de uso concretos y realistas sin información técnica verificable sobre el modelo. Cualquier propuesta sería especulativa. Se recomienda, antes de plantear escenarios de aplicación, completar la evaluación mínima siguiente:
 
-- Inspeccionar el repositorio de HuggingFace para confirmar el formato de pesos, la arquitectura declarada en `config.json` y la existencia de tokenizador.
+- Inspeccionar el repositorio de Hugging Face para confirmar el formato de pesos, la arquitectura declarada en `config.json` y la existencia de tokenizador.
 - Determinar la longitud de contexto máxima soportada y validarla empíricamente.
 - Ejecutar evaluaciones propias en las tareas objetivo (generación, código, matemáticas) antes de considerar cualquier despliegue.
 - Verificar la procedencia de los datos de entrenamiento para descartar riesgos de contaminación o de licencias de terceros.
@@ -67,9 +67,9 @@ La comparativa se plantea frente a modelos abiertos de la misma franja de parám
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Barq-27B (D0shi9) | ~27B (segun nombre, sin confirmar) | no disponible | apache-2.0 | HuggingFace, sin documentacion |
-| Gemma 2 27B (Google) | 27B | 8192 tokens | Gemma Terms | HuggingFace, documentado |
-| Qwen2.5 32B (Alibaba) | 32B | 131072 tokens | Apache 2.0 (variantes) | HuggingFace, documentado |
+| Barq-27B (D0shi9) | ~27B (segun nombre, sin confirmar) | no disponible | apache-2.0 | Hugging Face, sin documentacion |
+| Gemma 2 27B (Google) | 27B | 8192 tokens | Gemma Terms | Hugging Face, documentado |
+| Qwen2.5 32B (Alibaba) | 32B | 131072 tokens | Apache 2.0 (variantes) | Hugging Face, documentado |
 
 La diferencia crítica no es de rendimiento, sino de trazabilidad: las alternativas publican arquitectura, datos de entrenamiento, benchmarks y guías de despliegue, mientras que Barq-27B no aporta ninguno de esos elementos.
 
@@ -79,14 +79,14 @@ La diferencia crítica no es de rendimiento, sino de trazabilidad: las alternati
 - Riesgo de alucinación y de sesgos: no evaluable sin información sobre el corpus de entrenamiento ni sobre el proceso de alineación.
 - Limitaciones de idioma y de contexto: no disponibles.
 - Licencia Apache 2.0: permite uso comercial y modificación, pero no exime de responsabilidad sobre posibles incumplimientos derivados de los datos de entrenamiento o de pesos de terceros incorporados sin declarar.
-- Sin pipeline declarado en HuggingFace: no se puede asumir automáticamente que sea un modelo de generación de texto.
+- Sin pipeline declarado en Hugging Face: no se puede asumir automáticamente que sea un modelo de generación de texto.
 - Cero descargas y cero interacciones registradas: no existe comunidad que haya validado el modelo.
 - Repositorio sin actualizaciones desde su creación; riesgo de abandono.
 - No apto para producción sin una auditoría técnica previa de los pesos y una evaluación propia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/D0shi9/Barq-27B
+- Modelo en Hugging Face: https://huggingface.co/D0shi9/Barq-27B
 - Perfil del autor: https://huggingface.co/D0shi9
 - Paper: no disponible
 - Blog o anuncio: no disponible

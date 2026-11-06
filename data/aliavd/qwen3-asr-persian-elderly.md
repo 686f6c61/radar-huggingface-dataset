@@ -84,7 +84,7 @@ La comparación directa con el modelo base muestra que este ajuste sacrifica la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AliAvd/qwen3-asr-persian-elderly
+- Modelo en Hugging Face: https://huggingface.co/AliAvd/qwen3-asr-persian-elderly
 - Repositorio oficial de Qwen3-ASR: https://github.com/QwenLM/Qwen3-ASR
 - Documentación de Qwen3-ASR en Transformers: https://huggingface.co/docs/transformers/main/model_doc/qwen3_asr
 - Artículo sobre Qwen3-ASR (aibit.im): https://aibit.im/en/article/qwen3-asr-alibabas-open-source-52-language-asr-model

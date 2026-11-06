@@ -6,7 +6,7 @@ Este repositorio no contiene un modelo completo, sino un adaptador LoRA entrenad
 
 El problema que aborda es conocido en el ámbito sanitario: los modelos generalistas alucinan cuando se les pide responder sobre documentación clínica extensa. La combinación de RAFT (que entrena al modelo a distinguir documentos relevantes de distractores) con CoT y una ventana de 5 documentos apunta a reducir ese fallo en tareas de QA sobre corpus propios. El modelo base hereda 8.030 millones de parámetros, arquitectura decoder-only con GQA y una ventana de 128.000 tokens, lo que permite concatenar historiales o guías completas sin truncar.
 
-La relevancia práctica de esta ficha es limitada y conviene decirlo con claridad: el repositorio tiene 0 descargas y 0 «likes», la model card es la plantilla por defecto de HuggingFace sin ninguna sección rellenada y no se publica licencia, idiomas ni resultados de evaluación. Cualquier uso en producción exige una validación propia previa. Lo que sigue distingue explícitamente entre lo que consta en la información disponible, lo que se deduce del identificador y lo que se hereda del modelo base.
+La relevancia práctica de esta ficha es limitada y conviene decirlo con claridad: el repositorio tiene 0 descargas y 0 «likes», la model card es la plantilla por defecto de Hugging Face sin ninguna sección rellenada y no se publica licencia, idiomas ni resultados de evaluación. Cualquier uso en producción exige una validación propia previa. Lo que sigue distingue explícitamente entre lo que consta en la información disponible, lo que se deduce del identificador y lo que se hereda del modelo base.
 
 ## Especificaciones técnicas
 
@@ -18,10 +18,10 @@ La relevancia práctica de esta ficha es limitada y conviene decirlo con clarida
 | Longitud de contexto | 128.000 tokens heredados del modelo base (no se documenta si el ajuste modificó este límite) |
 | Tipos de cuantización | No disponible para el adaptador (los pesos LoRA se distribuyen en safetensors; pueden fusionarse en el modelo base y cuantizarse después a GPTQ, AWQ, int8 o GGUF Q4/Q5/Q8) |
 | Idiomas soportados | No disponible para el adaptador. El modelo base declara 8 idiomas: inglés, alemán, francés, italiano, portugués, hindi, español y tailandés |
-| Licencia | No disponible en la tarjeta de HuggingFace. El modelo base se distribuye bajo la Llama 3.1 Community License, cuyos términos condicionan el uso del adaptador |
+| Licencia | No disponible en la tarjeta de Hugging Face. El modelo base se distribuye bajo la Llama 3.1 Community License, cuyos términos condicionan el uso del adaptador |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA). No se publican pesos fusionados ni versiones GGUF |
 
-Otros datos del repositorio: creado el 12 de septiembre de 2026 (fecha indicada en HuggingFace), actualizado cuatro segundos después, pipeline `text-generation`, etiquetas `peft`, `lora`, `transformers`, `arxiv:1910.09700` (referencia genérica de la calculadora de impacto de carbono de la plantilla, no un paper del modelo).
+Otros datos del repositorio: creado el 12 de septiembre de 2026 (fecha indicada en Hugging Face), actualizado cuatro segundos después, pipeline `text-generation`, etiquetas `peft`, `lora`, `transformers`, `arxiv:1910.09700` (referencia genérica de la calculadora de impacto de carbono de la plantilla, no un paper del modelo).
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ La ausencia de evaluación publicada impide comparar rendimiento. La tabla recog
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (LoRA r64 sobre Llama 3.1 8B) | 8.030 M en el base + adaptador de 0,7 GB | 128.000 tokens (heredado) | QA médico con RAFT, 5 documentos y CoT (según identificador) | No disponible en HuggingFace; se hereda la Llama 3.1 Community License del base | Repositorio PEFT, sin descargas ni evaluación |
+| Este adaptador (LoRA r64 sobre Llama 3.1 8B) | 8.030 M en el base + adaptador de 0,7 GB | 128.000 tokens (heredado) | QA médico con RAFT, 5 documentos y CoT (según identificador) | No disponible en Hugging Face; se hereda la Llama 3.1 Community License del base | Repositorio PEFT, sin descargas ni evaluación |
 | meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Uso general, ajustado con instrucciones y preferencias | Llama 3.1 Community License | Ampliamente desplegado y evaluado |
 | Adaptadores médicos abiertos sobre Llama (por ejemplo, variantes de Meditron o modelos biomédicos de 7-8B) | 7.000-8.000 M | Variable, habitualmente 4.000-8.000 tokens | Dominio clínico y biomédico | Apache 2.0 o licencia del modelo base, según el caso | Repositorios públicos con model cards más completas |
 
@@ -82,7 +82,7 @@ Frente al modelo base Instruct, este adaptador sacrifica versatilidad general a 
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace: no hay información sobre datos de entrenamiento, hiperparámetros, sesgos ni uso previsto.
+- La model card es la plantilla por defecto de Hugging Face: no hay información sobre datos de entrenamiento, hiperparámetros, sesgos ni uso previsto.
 - No se declara licencia. Aunque el modelo base impone la Llama 3.1 Community License, la ausencia de términos propios genera incertidumbre jurídica para uso comercial; conviene contactar con el autor antes de desplegarlo.
 - El repositorio acumula 0 descargas y 0 «likes», y se publicó sin ninguna validación comunitaria conocida.
 - No existe ningún resultado de benchmark ni evaluación cualitativa publicados.
@@ -96,7 +96,7 @@ Frente al modelo base Instruct, este adaptador sacrifica versatilidad general a 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_P100_5DOCS_CoT_A-MEDICAL-Instruct-r64-last-full-epoch
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_P100_5DOCS_CoT_A-MEDICAL-Instruct-r64-last-full-epoch
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Variante Instruct del modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Librería PEFT: https://github.com/huggingface/peft

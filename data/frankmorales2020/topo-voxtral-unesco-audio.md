@@ -4,7 +4,7 @@
 
 `frankmorales2020/topo-voxtral-unesco-audio` es un modelo de reconocimiento automático de voz (ASR) desarrollado por frankmorales2020, que parte del modelo base `mistralai/Voxtral-Mini-4B-Realtime-2602` y lo ajusta finamente sobre un dataset de UNESCO. El modelo está orientado a la transcripción de audio en tiempo real y se enmarca dentro de la iniciativa TOPO-2026, que busca promover una inteligencia artificial soberana y resiliente. Su principal innovación técnica es el uso del framework `h2e-framework` y técnicas de *continual learning* para mitigar el olvido catastrófico durante el entrenamiento secuencial.
 
-El modelo se presenta como un *fine-tune* de 4 mil millones de parámetros (según el nombre del modelo base), y está diseñado para el pipeline `automatic-speech-recognition` de HuggingFace. No se dispone de información detallada sobre la arquitectura interna, la longitud de contexto ni los datos de entrenamiento en la información proporcionada.
+El modelo se presenta como un *fine-tune* de 4 mil millones de parámetros (según el nombre del modelo base), y está diseñado para el pipeline `automatic-speech-recognition` de Hugging Face. No se dispone de información detallada sobre la arquitectura interna, la longitud de contexto ni los datos de entrenamiento en la información proporcionada.
 
 ## Especificaciones técnicas
 
@@ -14,8 +14,8 @@ El modelo se presenta como un *fine-tune* de 4 mil millones de parámetros (seg�
 | Parametros totales | 4B (según nombre del modelo base; no confirmado en la información disponible) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Inglés (según tags del repositorio; el campo de idiomas en HuggingFace figura como no disponible) |
-| Licencia | Apache 2.0 (según tags del repositorio; el campo de licencia en HuggingFace figura como no disponible) |
+| Idiomas soportados | Inglés (según tags del repositorio; el campo de idiomas en Hugging Face figura como no disponible) |
+| Licencia | Apache 2.0 (según tags del repositorio; el campo de licencia en Hugging Face figura como no disponible) |
 | Formato de pesos | No disponible (compatible con vLLM) |
 
 ## Arquitectura y entrenamiento
@@ -26,7 +26,7 @@ El modelo es un *fine-tune* de `mistralai/Voxtral-Mini-4B-Realtime-2602`, un mod
 
 - Reconocimiento automático de voz (ASR) y transcripción de audio.
 - Modo *realtime* (según el tag `voxtral_realtime`), orientado a la transcripción en tiempo real.
-- Pipeline de HuggingFace: `automatic-speech-recognition`.
+- Pipeline de Hugging Face: `automatic-speech-recognition`.
 - Soporte de idioma inglés (según tags del repositorio).
 - No se dispone de información sobre soporte de *tool calling*, capacidad de agentes, visión o multimodalidad.
 
@@ -56,7 +56,7 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Limitaciones y advertencias
 
-- El campo de licencia en HuggingFace figura como no disponible, aunque el tag del repositorio indica Apache 2.0. Es recomendable verificar la licencia antes de un uso comercial.
+- El campo de licencia en Hugging Face figura como no disponible, aunque el tag del repositorio indica Apache 2.0. Es recomendable verificar la licencia antes de un uso comercial.
 - Al ser un *fine-tune*, el modelo puede heredar las limitaciones del modelo base `Voxtral-Mini-4B-Realtime-2602`, que no se especifican en la información disponible.
 - El enfoque de *continual learning* puede implicar riesgo de olvido catastrófico si se entrena de forma secuencial, tal y como sugieren los tags del repositorio.
 - Solo se ha identificado soporte de inglés; no se confirma capacidad multilingüe.

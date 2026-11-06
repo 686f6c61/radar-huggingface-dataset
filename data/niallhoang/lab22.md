@@ -85,7 +85,7 @@ No se identifican alternativas directas en la misma categoría (adaptadores DPO 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/NiallHoang/lab22
+- Hugging Face del modelo: https://huggingface.co/NiallHoang/lab22
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-3B-bnb-4bit
 - Dataset SFT: https://huggingface.co/datasets/5CD-AI/Vietnamese-alpaca-gpt4-gg-translated
 - Dataset de preferencias: https://huggingface.co/datasets/argilla/ultrafeedback-binarized-preferences-cleaned

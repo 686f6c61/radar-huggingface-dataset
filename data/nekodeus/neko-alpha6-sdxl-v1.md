@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Nekodeus/neko-alpha6-sdxl-v1 | LoRA de personaje | SDXL 1.0 | rango 8 (adaptador de ~0,2 GB) | no aplica | Apache 2.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| Nekodeus/neko-hollywood-alpha-sdxl-v1 | LoRA de personaje (serie del mismo autor) | SDXL 1.0 | no disponible | no aplica | no disponible en la informacion | HuggingFace |
-| Nekodeus/neko-hollywood-alpha-sd15-v1 | LoRA de personaje (serie del mismo autor) | SD 1.5 | no disponible | no aplica | no disponible en la informacion | HuggingFace |
-| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base text-to-image | — | ~3.500 M (UNet + text encoders) | 77 tokens por encoder | CreativeML Open RAIL++-M | HuggingFace |
+| Nekodeus/neko-alpha6-sdxl-v1 | LoRA de personaje | SDXL 1.0 | rango 8 (adaptador de ~0,2 GB) | no aplica | Apache 2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| Nekodeus/neko-hollywood-alpha-sdxl-v1 | LoRA de personaje (serie del mismo autor) | SDXL 1.0 | no disponible | no aplica | no disponible en la informacion | Hugging Face |
+| Nekodeus/neko-hollywood-alpha-sd15-v1 | LoRA de personaje (serie del mismo autor) | SD 1.5 | no disponible | no aplica | no disponible en la informacion | Hugging Face |
+| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base text-to-image | — | ~3.500 M (UNet + text encoders) | 77 tokens por encoder | CreativeML Open RAIL++-M | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (similitud facial, FID, CLIP score) entre estos modelos en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo (similitud facial, FID, CLIP s
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Nekodeus/neko-alpha6-sdxl-v1
+- Hugging Face del modelo: https://huggingface.co/Nekodeus/neko-alpha6-sdxl-v1
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Dataset de entrenamiento: `nekodeus/alpha6-keanu-reeves` (referenciado en la model card; URL no verificada en la informacion disponible)
 - Serie Hollywood alpha SDXL: https://huggingface.co/Nekodeus/neko-hollywood-alpha-sdxl-v1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hanspinckaers/qwen_lora_loes` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario hanspinckaers, entrenado sobre el modelo base `unsloth/qwen3.8-27b-unsloth-bnb-4bit`, una versión cuantizada a 4 bits de un modelo Qwen de 27 mil millones de parámetros. El adaptador fue entrenado con la librería Unsloth, que acelera el fine-tuning, y con el framework TRL de HuggingFace. El repositorio tiene un tamaño de 0,3 GB, lo que corresponde a los pesos del adaptador, no al modelo completo.
+El modelo `hanspinckaers/qwen_lora_loes` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario hanspinckaers, entrenado sobre el modelo base `unsloth/qwen3.8-27b-unsloth-bnb-4bit`, una versión cuantizada a 4 bits de un modelo Qwen de 27 mil millones de parámetros. El adaptador fue entrenado con la librería Unsloth, que acelera el fine-tuning, y con el framework TRL de Hugging Face. El repositorio tiene un tamaño de 0,3 GB, lo que corresponde a los pesos del adaptador, no al modelo completo.
 
 La ficha es extremadamente escueta: no se especifica la tarea para la que fue entrenado, el dataset utilizado, ni se proporcionan métricas de rendimiento. El nombre "loes" podría sugerir un dominio concreto, pero no hay documentación al respecto. A pesar de la falta de información, el adaptador hereda las capacidades generales del modelo base Qwen, aunque no se puede confirmar ningún comportamiento específico sin pruebas adicionales. La licencia Apache 2.0 permite uso comercial y modificación, lo que facilita su integración en proyectos propios.
 
@@ -21,7 +21,7 @@ La ficha es extremadamente escueta: no se especifica la tarea para la que fue en
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA, una técnica de fine-tuning eficiente que entrena matrices de bajo rango sobre los pesos congelados del modelo base. El modelo base es `unsloth/qwen3.8-27b-unsloth-bnb-4bit`, una versión cuantizada a 4 bits con bitsandbytes de un modelo Qwen de 27B parámetros. El entrenamiento se realizó con Unsloth, que optimiza el proceso de fine-tuning (según la model card, "2x faster"), y con TRL (Transformer Reinforcement Learning) de HuggingFace, aunque no se especifica si se usó RLHF, DPO u otro método.
+El modelo es un adaptador LoRA, una técnica de fine-tuning eficiente que entrena matrices de bajo rango sobre los pesos congelados del modelo base. El modelo base es `unsloth/qwen3.8-27b-unsloth-bnb-4bit`, una versión cuantizada a 4 bits con bitsandbytes de un modelo Qwen de 27B parámetros. El entrenamiento se realizó con Unsloth, que optimiza el proceso de fine-tuning (según la model card, "2x faster"), y con TRL (Transformer Reinforcement Learning) de Hugging Face, aunque no se especifica si se usó RLHF, DPO u otro método.
 
 No se proporciona información sobre el dataset de entrenamiento, el número de tokens, el rango del LoRA, ni los hiperparámetros. Tampoco se indica si el adaptador fue entrenado para una tarea concreta (chat, instrucciones, código, etc.). La ausencia de estos datos impide evaluar la calidad o el propósito del fine-tuning.
 
@@ -40,7 +40,7 @@ No se proporciona información sobre el dataset de entrenamiento, el número de 
 - Prototipado rapido: al ser un adaptador pequeno (0,3 GB), se puede cargar junto al modelo base cuantizado para probar comportamientos especificos en entornos de desarrollo.
 - Integracion en pipelines de generacion de texto: si el adaptador mejora alguna capacidad concreta (no especificada), podria usarse en aplicaciones de chat o asistencia.
 - Comparacion de tecnicas de fine-tuning: util para estudiar diferencias entre LoRA y otros metodos, aunque falta informacion sobre el dataset.
-- Uso como ejemplo de publicacion en HuggingFace: sirve como referencia de como subir un adaptador LoRA con Unsloth, aunque no aporta valor funcional sin documentacion.
+- Uso como ejemplo de publicacion en Hugging Face: sirve como referencia de como subir un adaptador LoRA con Unsloth, aunque no aporta valor funcional sin documentacion.
 
 ## Benchmarks y rendimiento
 
@@ -69,6 +69,6 @@ No disponible. No se han encontrado modelos comparables especificos (otros LoRA 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hanspinckaers/qwen_lora_loes
+- Repositorio Hugging Face: https://huggingface.co/hanspinckaers/qwen_lora_loes
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
 - Modelo base: https://huggingface.co/unsloth/qwen3.8-27b-unsloth-bnb-4bit (no verificado en la busqueda, pero se infiere del README)

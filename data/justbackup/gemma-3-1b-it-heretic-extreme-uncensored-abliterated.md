@@ -4,7 +4,7 @@
 
 El modelo `Justbackup/gemma-3-1b-it-heretic-extreme-uncensored-abliterated` es una modificación del modelo `google/gemma-3-1b-it` de Google, realizada mediante la técnica de "abliteración" desarrollada por P-E-W y aplicada con la herramienta Heretic v1.0.1. El objetivo es eliminar los rechazos (refusals) del modelo original, que se niega a responder a solicitudes consideradas sensibles o explícitas. Según la model card, la tasa de rechazo pasa de 99/100 en el modelo base a 3/100 en esta versión, con una divergencia KL de 0.33 respecto al estado original, lo que indica un daño relativamente bajo en los pesos.
 
-Se trata de un modelo de texto puro, con aproximadamente 999,9 millones de parámetros (casi 1B), basado en la arquitectura transformer de Gemma 3. La ventana de contexto declarada es de 32k tokens. El repositorio en HuggingFace es una re-subida del trabajo original de DavidAU, que publicó varias versiones con distintos equilibrios entre tasa de rechazo y divergencia KL. Este modelo prioriza una tasa de rechazo extremadamente baja sobre la fidelidad al comportamiento original.
+Se trata de un modelo de texto puro, con aproximadamente 999,9 millones de parámetros (casi 1B), basado en la arquitectura transformer de Gemma 3. La ventana de contexto declarada es de 32k tokens. El repositorio en Hugging Face es una re-subida del trabajo original de DavidAU, que publicó varias versiones con distintos equilibrios entre tasa de rechazo y divergencia KL. Este modelo prioriza una tasa de rechazo extremadamente baja sobre la fidelidad al comportamiento original.
 
 La relevancia de este modelo radica en su uso para aplicaciones que requieren generación de contenido sin filtros de seguridad, como escritura creativa explícita, roleplay avanzado o experimentación con modelos "descensorizados". Al ser un modelo pequeño (1B), puede ejecutarse en hardware modesto, lo que lo hace accesible para desarrolladores que necesitan una alternativa ligera a modelos de mayor tamaño con menos restricciones.
 
@@ -87,7 +87,7 @@ La comparativa muestra que esta versión extrema prioriza la eliminación total 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Justbackup/gemma-3-1b-it-heretic-extreme-uncensored-abliterated
+- Repositorio de Hugging Face: https://huggingface.co/Justbackup/gemma-3-1b-it-heretic-extreme-uncensored-abliterated
 - Modelo original de DavidAU (misma versión): https://huggingface.co/DavidAU/gemma-3-1b-it-heretic-extreme-uncensored-abliterated
 - Versión con mejor KL (DavidAU): https://huggingface.co/DavidAU/gemma-3-1b-it-heretic-abliterated-uncensored
 - Herramienta Heretic (GitHub): https://github.com/p-e-w/heretic

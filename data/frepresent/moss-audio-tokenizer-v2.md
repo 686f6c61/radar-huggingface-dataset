@@ -6,7 +6,7 @@ MOSS-Audio-Tokenizer-v2 es un tokenizador de audio discreto unificado desarrolla
 
 Su relevancia radica en tres factores. Primero, comprime audio estéreo de 48 kHz a una tasa de trama de solo 12,5 Hz mediante una pila de cuantización vectorial residual (RVQ) de 32 capas, lo que permite bitrates variables y reconstrucción de alta fidelidad. Segundo, se ha entrenado desde cero sobre 3 millones de horas de audio diverso (voz, efectos sonoros y música), sin depender de codificadores preentrenados como HuBERT o Whisper ni de destilación. Tercero, produce tokens con alineamiento semántico, lo que lo hace apto tanto para reconstrucción como para tareas posteriores de comprensión (ASR) y generación (TTS).
 
-El repositorio alojado en HuggingFace bajo el identificador `frepresent/MOSS-Audio-Tokenizer-v2` contiene una implementación ligera de código remoto que replica el módulo `transformers.models.moss_audio_tokenizer`, y debe cargarse con `trust_remote_code=True`. La licencia es Apache 2.0.
+El repositorio alojado en Hugging Face bajo el identificador `frepresent/MOSS-Audio-Tokenizer-v2` contiene una implementación ligera de código remoto que replica el módulo `transformers.models.moss_audio_tokenizer`, y debe cargarse con `trust_remote_code=True`. La licencia es Apache 2.0.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / tasa | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MOSS-Audio-Tokenizer-v2 | 2.123.701.248 | 12,5 Hz, RVQ 32 capas, 48 kHz estéreo | Apache 2.0 | HuggingFace (`frepresent/MOSS-Audio-Tokenizer-v2`) |
+| MOSS-Audio-Tokenizer-v2 | 2.123.701.248 | 12,5 Hz, RVQ 32 capas, 48 kHz estéreo | Apache 2.0 | Hugging Face (`frepresent/MOSS-Audio-Tokenizer-v2`) |
 | EnCodec (Meta) | no disponible en la información | RVQ multibanda, 24-48 kHz | no disponible en la información | no disponible en la información |
 | SoundStream (Google) | no disponible en la información | RVQ, 24 kHz | no disponible en la información | no disponible en la información |
 | DAC (Descript) | no disponible en la información | RVQ, 44,1 kHz | no disponible en la información | no disponible en la información |
@@ -86,6 +86,6 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/frepresent/MOSS-Audio-Tokenizer-v2
+- Modelo en Hugging Face: https://huggingface.co/frepresent/MOSS-Audio-Tokenizer-v2
 - Artículo (arXiv): https://arxiv.org/abs/2602.10934
 - Repositorio alternativo citado en la model card: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-v2

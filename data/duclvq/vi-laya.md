@@ -101,11 +101,11 @@ Velocidad medida en una RTX A4500 en bf16: 13 ms por par con artículos cortos (
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento destacado | Disponibilidad |
 |---|---|---|---|---|---|
-| vi-laya | 321,9 M | 8.192 tokens | Apache 2.0 | ALQAC NDCG@10 94,9; Brier ALQAC 0,020 | HuggingFace (safetensors) |
-| AITeamVN/Vietnamese_Reranker | No disponible | No disponible | No disponible | Zalo NDCG@10 87,3; ALQAC NDCG@10 94,6 | HuggingFace |
-| BAAI/bge-reranker-v2-m3 | No disponible | No disponible | No disponible | Zalo NDCG@10 77,5; ALQAC NDCG@10 94,8 | HuggingFace |
-| Qwen/Qwen3-Reranker-0.6B | 0,6 B (por nombre) | No disponible | No disponible | Zalo NDCG@10 73,6 | HuggingFace |
-| Laya base (multilingue) | 322 M | No disponible | No disponible | Zalo NDCG@10 33,6 | HuggingFace (convaiinnovations/laya) |
+| vi-laya | 321,9 M | 8.192 tokens | Apache 2.0 | ALQAC NDCG@10 94,9; Brier ALQAC 0,020 | Hugging Face (safetensors) |
+| AITeamVN/Vietnamese_Reranker | No disponible | No disponible | No disponible | Zalo NDCG@10 87,3; ALQAC NDCG@10 94,6 | Hugging Face |
+| BAAI/bge-reranker-v2-m3 | No disponible | No disponible | No disponible | Zalo NDCG@10 77,5; ALQAC NDCG@10 94,8 | Hugging Face |
+| Qwen/Qwen3-Reranker-0.6B | 0,6 B (por nombre) | No disponible | No disponible | Zalo NDCG@10 73,6 | Hugging Face |
+| Laya base (multilingue) | 322 M | No disponible | No disponible | Zalo NDCG@10 33,6 | Hugging Face (convaiinnovations/laya) |
 
 Observaciones: vi-laya es el mejor de la comparativa en NDCG@10 y MRR@10 en ALQAC y el mejor en calibración de probabilidad en ambos conjuntos. En Zalo, sin embargo, AITeamVN/Vietnamese_Reranker lo supera con claridad (87,3 frente a 78,8 en NDCG@10). La base Laya sin ajustar obtiene resultados muy pobres como reranker (33,6 en Zalo), lo que indica que el ajuste fino es determinante.
 
@@ -123,7 +123,7 @@ Observaciones: vi-laya es el mejor de la comparativa en NDCG@10 y MRR@10 en ALQA
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/duclvQ/vi-laya
+- Modelo en Hugging Face: https://huggingface.co/duclvQ/vi-laya
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - BAAI/bge-m3 (referenciado en benchmarks): https://huggingface.co/BAAI/bge-m3
 - BAAI/bge-reranker-v2-m3 (referenciado en benchmarks): https://huggingface.co/BAAI/bge-reranker-v2-m3

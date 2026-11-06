@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks clásicos (MMLU, HumanEval, GSM8K) 
 - El repositorio completo pesa 1.060,6 GB en FP8, por lo que la inferencia del checkpoint original requiere múltiples GPU de gama alta (del orden de 8x H100/H200 80 GB o superior en FP8; estimación no confirmada oficialmente).
 - La variante cuantizada NVFP4 reduce significativamente la huella de memoria y está pensada para GPU NVIDIA Blackwell (B200), con soporte de vLLM y SGLang.
 - No cabe en GPU de consumo (RTX 4090, RTX 5090) en ninguna variante publicada.
-- Despliegue soportado oficialmente en vLLM, SGLang y llama.cpp; también disponible vía Mistral API como `mistral-large-4` y en HuggingFace Inference Endpoints.
+- Despliegue soportado oficialmente en vLLM, SGLang y llama.cpp; también disponible vía Mistral API como `mistral-large-4` y en Hugging Face Inference Endpoints.
 - No se han publicado cifras de latencia ni throughput; la decodificación especulativa DSpark integrada y la variante NVFP4 están orientadas a mejorar ambos.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ Los datos de GLM-5.3 y de los modelos chinos líderes no están disponibles en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B
+- Hugging Face: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B
 - Checkpoint cuantizado NVFP4: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4
 - Blog de anuncio: https://mistral.ai/news/mistral-large-4-oss/
 - Documentación de la Mistral API: https://docs.mistral.ai/models/mistral-large-4-0

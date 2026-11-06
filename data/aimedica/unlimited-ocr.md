@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Unlimited-OCR es un modelo de reconocimiento de texto (OCR) publicado en HuggingFace por el usuario aimedica. Según la model card, se trata de un fork del modelo baidu/Unlimited-OCR, creado por Baidu, con el propósito de proporcionar acceso directo a una copia del modelo original. El repositorio contiene únicamente los pesos en formato safetensors (0.1 GB) y un ejemplo de uso mediante el pipeline `text-recognition` de Transformers. No se proporciona información adicional sobre arquitectura, parámetros, entrenamiento o licencia en la ficha del fork; la licencia debe consultarse en el repositorio original de Baidu. La relevancia actual es limitada, ya que se trata de una copia sin modificaciones aparentes, aunque puede ser útil para quienes buscan un punto de acceso alternativo al modelo de Baidu.
+Unlimited-OCR es un modelo de reconocimiento de texto (OCR) publicado en Hugging Face por el usuario aimedica. Según la model card, se trata de un fork del modelo baidu/Unlimited-OCR, creado por Baidu, con el propósito de proporcionar acceso directo a una copia del modelo original. El repositorio contiene únicamente los pesos en formato safetensors (0.1 GB) y un ejemplo de uso mediante el pipeline `text-recognition` de Transformers. No se proporciona información adicional sobre arquitectura, parámetros, entrenamiento o licencia en la ficha del fork; la licencia debe consultarse en el repositorio original de Baidu. La relevancia actual es limitada, ya que se trata de una copia sin modificaciones aparentes, aunque puede ser útil para quienes buscan un punto de acceso alternativo al modelo de Baidu.
 
 ## Especificaciones tecnicas
 

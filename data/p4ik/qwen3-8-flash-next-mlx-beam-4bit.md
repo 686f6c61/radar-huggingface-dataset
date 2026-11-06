@@ -81,10 +81,10 @@ No se dispone de datos de benchmarks de este paquete, por lo que la comparacion 
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| p4ik/Qwen3.8-Flash-Next-MLX-BEAM-4bit | 182.242.494.611 segun safetensors (README: 125B-A6B) | Mixta: expertos y n-gramas a 4 bits, resto del lenguaje a 8 bits, routers y gates a bf16, vision a bf16 | no disponible | Qwen Community License 1.0 | Publico en HuggingFace, 0 descargas, formato MLX |
-| pipenetwork/Qwen3.8-Flash-Next-MLX-mixed-4_8bit | Mismo modelo base | Identica a la de este paquete (es su build de origen, sin el layout B.E.A.M.) | no disponible | Qwen Community License 1.0 | Publico en HuggingFace, formato MLX |
+| p4ik/Qwen3.8-Flash-Next-MLX-BEAM-4bit | 182.242.494.611 segun safetensors (README: 125B-A6B) | Mixta: expertos y n-gramas a 4 bits, resto del lenguaje a 8 bits, routers y gates a bf16, vision a bf16 | no disponible | Qwen Community License 1.0 | Publico en Hugging Face, 0 descargas, formato MLX |
+| pipenetwork/Qwen3.8-Flash-Next-MLX-mixed-4_8bit | Mismo modelo base | Identica a la de este paquete (es su build de origen, sin el layout B.E.A.M.) | no disponible | Qwen Community License 1.0 | Publico en Hugging Face, formato MLX |
 | Builds uniformes de 4, 6 y 8 bits del mismo modelo base | Mismo modelo base | Uniforme en todos los modulos | no disponible | Qwen Community License 1.0 | Referenciadas en la model card de origen; no se aportan identificadores de repositorio en la informacion disponible |
-| Qwen/Qwen3.8-Flash-Next (bf16) | Mismo modelo base | Sin cuantizar | no disponible | Qwen Community License 1.0 | Modelo base en HuggingFace |
+| Qwen/Qwen3.8-Flash-Next (bf16) | Mismo modelo base | Sin cuantizar | no disponible | Qwen Community License 1.0 | Modelo base en Hugging Face |
 
 La model card de origen publica resultados de NLL emparejados por ventana frente a bf16 y frente a las builds uniformes de 4, 6 y 8 bits; el autor de este paquete indica que esas cifras aplican sin cambios, pero no las reproduce en este repositorio.
 

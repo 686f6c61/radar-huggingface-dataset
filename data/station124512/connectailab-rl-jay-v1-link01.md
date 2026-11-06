@@ -71,8 +71,8 @@ Tamaño de los conjuntos: train 463, valid 93, test 137. La cota superior de aci
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-jay-v1-link01 | 0,8B + LoRA | no disponible | Decisión robótica (5 acciones) | Apache 2.0 | HuggingFace, 16 descargas |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | Lenguaje general | no disponible en la información | HuggingFace |
+| connectailab-rl-jay-v1-link01 | 0,8B + LoRA | no disponible | Decisión robótica (5 acciones) | Apache 2.0 | Hugging Face, 16 descargas |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | Lenguaje general | no disponible en la información | Hugging Face |
 | Política PPO original (cerebro LINK-01, `brain.json`) | no aplica (tabla/red propia) | no aplica | Decisión robótica | no disponible | Repositorio connect-tycoon |
 
 No se dispone de información sobre otros adaptadores de decisión comparables en la búsqueda realizada.
@@ -90,7 +90,7 @@ No se dispone de información sobre otros adaptadores de decisión comparables e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/station124512/connectailab-rl-jay-v1-link01
+- Hugging Face: https://huggingface.co/station124512/connectailab-rl-jay-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

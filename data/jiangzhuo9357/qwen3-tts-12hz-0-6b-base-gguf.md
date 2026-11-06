@@ -88,9 +88,9 @@ La diferencia estructural con el paquete CustomVoice es que esta variante no cat
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/jiangzhuo9357/qwen3-tts-12hz-0-6b-base-gguf
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/jiangzhuo9357/qwen3-tts-12hz-0-6b-base-gguf
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - Repositorio GitHub de Qwen3-TTS: https://github.com/QwenLM/Qwen3-TTS
-- Colección Qwen3-TTS en HuggingFace: https://huggingface.co/collections/Qwen/qwen3-tts
+- Colección Qwen3-TTS en Hugging Face: https://huggingface.co/collections/Qwen/qwen3-tts
 - Repositorio de synthesize.cpp: https://github.com/handy-computer/synthesize.cpp
 - Paquete CustomVoice (variante sin clonación): https://huggingface.co/jiangzhuo9357/qwen3-tts-12hz-0-6b-customvoice-gguf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `filesystem_huggingface_terminal_12723_b87cde_model_09`, publicado por el usuario TianfuXinqu, no dispone de información técnica pública en su ficha de HuggingFace. La model card contiene únicamente metadatos de gestión interna que sugieren que se trata de un "Pricing Optimizer" (optimizador de precios) con ID MDL-009, propiedad de Olivia Davis, del departamento de Finanzas, con un nivel de riesgo medio y una cobertura de pruebas del 30 %. No se indican arquitectura, tamaño, contexto, licencia ni idiomas.
+El modelo identificado como `filesystem_huggingface_terminal_12723_b87cde_model_09`, publicado por el usuario TianfuXinqu, no dispone de información técnica pública en su ficha de Hugging Face. La model card contiene únicamente metadatos de gestión interna que sugieren que se trata de un "Pricing Optimizer" (optimizador de precios) con ID MDL-009, propiedad de Olivia Davis, del departamento de Finanzas, con un nivel de riesgo medio y una cobertura de pruebas del 30 %. No se indican arquitectura, tamaño, contexto, licencia ni idiomas.
 
 La ausencia de documentación técnica, de descargas y de resultados de evaluación hace imposible determinar las capacidades reales del modelo o su viabilidad para uso en producción. La fecha de creación (agosto de 2026) y la falta de actividad sugieren que el repositorio puede ser un artefacto de un sistema de gestión de modelos, más que un modelo listo para su uso. Los resultados de búsqueda web relacionados no aportan información adicional sobre este repositorio concreto.
 
@@ -54,6 +54,6 @@ No se puede establecer una comparativa porque no se conoce la arquitectura, el t
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_model_09
+- Repositorio de Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_model_09
 
 No se han encontrado otros enlaces relevantes (papers, blogs, demos) que aporten información adicional sobre este modelo. Los resultados de búsqueda web se refieren a otros repositorios y no están relacionados con este modelo.

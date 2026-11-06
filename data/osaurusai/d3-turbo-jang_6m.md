@@ -98,9 +98,9 @@ No se dispone de comparación con otros modelos de clasificación o enrutamiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OsaurusAI/d3-turbo-JANG_6M
+- Modelo en Hugging Face: https://huggingface.co/OsaurusAI/d3-turbo-JANG_6M
 - Modelo base: https://huggingface.co/vllm-sr/d3-turbo
 - Runtime Osaurus: https://osaurus.ai
-- Dataset de evaluación citado: tasksource/tasksource-jev-typed-decisions (identificador `tasksource/tasksource-jev-typed-decisions` en HuggingFace)
-- Dataset citado: LocalLLaMA/typed-decisions (identificador en HuggingFace)
+- Dataset de evaluación citado: tasksource/tasksource-jev-typed-decisions (identificador `tasksource/tasksource-jev-typed-decisions` en Hugging Face)
+- Dataset citado: LocalLLaMA/typed-decisions (identificador en Hugging Face)
 - Modelo de referencia del que deriva la arquitectura: Qwen/Qwen3.8-27B (citado en la model card; sin enlace proporcionado)

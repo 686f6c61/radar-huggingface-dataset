@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo de lenguaje entrenado, sino un cuaderno de notas de lectura y un esbozo de experimento sobre ingenieria de prompts. Lo publica el usuario Poojashah33 bajo licencia MIT y se describe explicitamente como material exploratorio que enumera hipotesis y comprobaciones pendientes, sin resultados experimentales ni checkpoint liberado.
+Este repositorio de Hugging Face no contiene un modelo de lenguaje entrenado, sino un cuaderno de notas de lectura y un esbozo de experimento sobre ingenieria de prompts. Lo publica el usuario Poojashah33 bajo licencia MIT y se describe explicitamente como material exploratorio que enumera hipotesis y comprobaciones pendientes, sin resultados experimentales ni checkpoint liberado.
 
 El artefacto principal es `notes.md`, acompanado de un `README.md`. Los archivos de pesos en formato safetensors suman 16.576 parametros, una cifra compatible con un tensor de prueba o un artefacto residual mas que con un transformer funcional; el tamano total del repositorio es de 0,0 GB y acumula 11 descargas y 0 likes desde su creacion el 4 de octubre de 2026.
 
@@ -72,7 +72,7 @@ La comparacion se establece con otros recursos documentales de prompt engineerin
 
 | Recurso | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Poojashah33/reading-prompt-engineering | Notas de lectura y esbozo de experimento | 16.576 (artefacto safetensors, sin uso de inferencia) | no disponible | MIT | HuggingFace, 11 descargas, 0 likes |
+| Poojashah33/reading-prompt-engineering | Notas de lectura y esbozo de experimento | 16.576 (artefacto safetensors, sin uso de inferencia) | no disponible | MIT | Hugging Face, 11 descargas, 0 likes |
 | dair-ai/Prompt-Engineering-Guide | Guia con papers, lecciones y notebooks | no aplica | no aplica | no disponible en la informacion proporcionada | GitHub, repositorio publico |
 | Prompt Engineering Guide (promptingguide.ai) | Guia web con tecnicas y papers | no aplica | no aplica | no disponible en la informacion proporcionada | Sitio web publico |
 
@@ -90,7 +90,7 @@ La comparacion se establece con otros recursos documentales de prompt engineerin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Poojashah33/reading-prompt-engineering
+- Modelo en Hugging Face: https://huggingface.co/Poojashah33/reading-prompt-engineering
 - Prompt Engineering Guide: https://www.promptingguide.ai/
 - Repositorio dair-ai/Prompt-Engineering-Guide: https://github.com/dair-ai/Prompt-Engineering-Guide
 - Prompt Engineering en GeeksforGeeks: https://www.geeksforgeeks.org/artificial-intelligence/prompt-engineering-2/

@@ -95,7 +95,7 @@ No se dispone de datos comparativos en la información proporcionada. El modelo 
 | Longitud de contexto | 2048 | no disponible |
 | Rendimiento | Solo metricas internas no verificadas | no disponible |
 | Licencia | Apache 2.0 | no disponible |
-| Disponibilidad | safetensors en HuggingFace, sin GGUF | no disponible |
+| Disponibilidad | safetensors en Hugging Face, sin GGUF | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -116,7 +116,7 @@ No se dispone de datos comparativos en la información proporcionada. El modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpceanAI/PASITA
+- Modelo en Hugging Face: https://huggingface.co/OpceanAI/PASITA
 - Perfil del autor: https://huggingface.co/OpceanAI
 - Paper, blog o repositorio adicional: no disponible en la información proporcionada.
 - La búsqueda web realizada no devolvió resultados relevantes sobre el modelo: los enlaces obtenidos corresponden a foros de software de gestión empresarial sin relación con PASITA ni con OpceanAI.

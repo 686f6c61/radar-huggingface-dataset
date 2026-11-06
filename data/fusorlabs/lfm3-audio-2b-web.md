@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto que perm
 
 ## Enlaces
 
-- [Modelo en HuggingFace: fusorlabs/lfm3-audio-2b-web](https://huggingface.co/fusorlabs/lfm3-audio-2b-web)
+- [Modelo en Hugging Face: fusorlabs/lfm3-audio-2b-web](https://huggingface.co/fusorlabs/lfm3-audio-2b-web)
 - [Modelo base: LiquidAI/LFM3-Audio-2B](https://huggingface.co/LiquidAI/LFM3-Audio-2B)
 - [Space de demostracion: fusorlabs/liquidai-lmf3-wasm](https://huggingface.co/spaces/fusorlabs/liquidai-lmf3-wasm)
 - [Runtime: liquidai-lmf3-wasm](https://github.com/fusor-rs/liquidai-lmf3-wasm)

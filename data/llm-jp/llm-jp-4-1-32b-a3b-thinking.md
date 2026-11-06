@@ -23,7 +23,7 @@ Su relevancia actual reside en dos factores: por un lado, es una alternativa de 
 | Formato de pesos | Safetensors (compatible con la librería `transformers`); tamaño del repositorio: 128,6 GB |
 | Tokenizador | Unigram con byte-fallback sobre `huggingface/tokenizers`, vocabulario derivado de `llm-jp-tokenizer v4.0` |
 | Pipeline | text-generation |
-| Descargas / likes en HuggingFace | 3 / 11 |
+| Descargas / likes en Hugging Face | 3 / 11 |
 | Fechas de creación y actualización | 16 de septiembre de 2026 / 28 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
@@ -76,11 +76,11 @@ Condiciones de evaluación declaradas: para los modelos LLM-jp y gpt-oss se fij�
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: en torno a 64 GB solo para pesos (32,14 B de parámetros × 2 bytes), más el caché KV y el sobrecoste del runtime. El tamaño del repositorio en HuggingFace es de 128,6 GB, aproximadamente el doble de lo esperado para pesos en BF16, lo que sugiere la presencia de ficheros adicionales o de pesos en mayor precisión; conviene verificar el contenido antes de planificar el despliegue.
+- VRAM estimada para inferencia en BF16: en torno a 64 GB solo para pesos (32,14 B de parámetros × 2 bytes), más el caché KV y el sobrecoste del runtime. El tamaño del repositorio en Hugging Face es de 128,6 GB, aproximadamente el doble de lo esperado para pesos en BF16, lo que sugiere la presencia de ficheros adicionales o de pesos en mayor precisión; conviene verificar el contenido antes de planificar el despliegue.
 - VRAM estimada en cuantización de 8 bits: aproximadamente 33-36 GB de pesos. En cuantización de 4 bits: aproximadamente 17-20 GB de pesos. Estas cifras son estimaciones a partir del número de parámetros y no proceden de la model card.
 - GPU recomendadas: para BF16, GPU de 80 GB como A100 80 GB o H100 80 GB, potencialmente con tensor parallelism si el caché KV para 65.536 tokens consume demasiada memoria. Para cuantizaciones de 8 y 4 bits, GPU de 48 GB (A6000, L40S) y de 24 GB (RTX 4090, RTX 3090) respectivamente, con contexto reducido en el caso de 24 GB.
 - ¿Cabe en GPU de consumo? No en BF16. En cuantización de 4 bits, sí es viable en una RTX 4090 o RTX 3090 de 24 GB, asumiendo una reducción significativa de la ventana de contexto efectiva. No se publican ficheros GGUF oficiales, por lo que sería necesario convertir los pesos.
-- Opciones de despliegue: al tratarse de una arquitectura MoE del tipo `qwen3_moe` y pesos en safetensors, los candidatos naturales son vLLM y SGLang para servicio de alto rendimiento, y TGI o el propio `transformers` para despliegues sencillos. El uso con llama.cpp u Ollama requeriría una conversión previa a GGUF, no proporcionada por el autor. El metadato `inference: false` de la model card indica que la inferencia alojada de HuggingFace no está habilitada para este repositorio.
+- Opciones de despliegue: al tratarse de una arquitectura MoE del tipo `qwen3_moe` y pesos en safetensors, los candidatos naturales son vLLM y SGLang para servicio de alto rendimiento, y TGI o el propio `transformers` para despliegues sencillos. El uso con llama.cpp u Ollama requeriría una conversión previa a GGUF, no proporcionada por el autor. El metadato `inference: false` de la model card indica que la inferencia alojada de Hugging Face no está habilitada para este repositorio.
 - Latencia y throughput: no disponibles. Como referencia estructural, el coste de cómputo por token es el de un modelo de ~3,8 B de parámetros activos, pero el ancho de banda de memoria necesario para leer los expertos activos condiciona el rendimiento real.
 
 ## Comparativa con modelos similares
@@ -110,7 +110,7 @@ La comparación directa con modelos externos de tamaño similar (gpt-oss, Qwen3,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llm-jp/llm-jp-4.1-32b-a3b-thinking
+- Modelo en Hugging Face: https://huggingface.co/llm-jp/llm-jp-4.1-32b-a3b-thinking
 - Colección LLM-jp-4.1 Models: https://huggingface.co/collections/llm-jp/llm-jp-41-models
 - Blog técnico de LLM-jp-4.1 (en japonés): https://llm-jp.nii.ac.jp/blog/llm-jp-4-1/
 - Cookbook de LLM-jp-4: https://github.com/llm-jp/llm-jp-4-cookbook

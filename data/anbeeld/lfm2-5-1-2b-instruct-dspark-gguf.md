@@ -100,7 +100,7 @@ No se dispone de información suficiente para comparar con otros drafters de dec
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Anbeeld/LFM2.5-1.2B-Instruct-DSpark-GGUF
+- Hugging Face del modelo: https://huggingface.co/Anbeeld/LFM2.5-1.2B-Instruct-DSpark-GGUF
 - Modelo original (LiquidAI/LFM2.5-1.2B-Instruct-DSpark): https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-DSpark
 - Modelo objetivo (LiquidAI/LFM2.5-1.2B-Instruct): https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Blog de Liquid AI sobre LFM2.5-DSpark: https://www.liquid.ai/blog/lfm2.5-dspark

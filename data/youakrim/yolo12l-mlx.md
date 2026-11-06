@@ -81,8 +81,8 @@ Velocidad declarada (solo forward del modelo, sin NMS ni E/S), sobre Apple M5, 6
 
 | Modelo | Parametros | Contexto / entrada | mAP50-95 (COCO) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLO12l-mlx (este) | 26,6 M | imagen 640x640 | 0,5349 (MLX) | AGPL-3.0 | HuggingFace + repo MLX |
-| Ultralytics YOLO12l | 26,6 M | imagen 640x640 | 0,5348 (PyTorch, dato del autor) | AGPL-3.0 | Ultralytics / HuggingFace |
+| YOLO12l-mlx (este) | 26,6 M | imagen 640x640 | 0,5349 (MLX) | AGPL-3.0 | Hugging Face + repo MLX |
+| Ultralytics YOLO12l | 26,6 M | imagen 640x640 | 0,5348 (PyTorch, dato del autor) | AGPL-3.0 | Ultralytics / Hugging Face |
 | Ultralytics YOLO11l | aproximadamente 25,3 M | imagen 640x640 | segun documentacion de Ultralytics, en torno a 0,53 | AGPL-3.0 | Ultralytics |
 | Ultralytics YOLOv8l | aproximadamente 43,7 M | imagen 640x640 | segun documentacion de Ultralytics, en torno a 0,52 | AGPL-3.0 | Ultralytics |
 | RT-DETR-l | aproximadamente 32 M | imagen 640x640 | no disponible en la informacion proporcionada | Apache-2.0 (segun proyecto original) | PaddleDetection / Ultralytics |
@@ -103,7 +103,7 @@ La comparativa de rendimiento de los modelos competidores no procede de la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/youakrim/yolo12l-mlx
+- Hugging Face: https://huggingface.co/youakrim/yolo12l-mlx
 - Repositorio yolo12-mlx: https://github.com/youakrim/yolo12-mlx
 - Coleccion "YOLO12 for MLX": https://huggingface.co/collections/youakrim/yolo12-for-mlx-6ac659ef0a06781003d1d3cc
 - Modelo base Ultralytics/YOLO12: https://huggingface.co/Ultralytics/YOLO12

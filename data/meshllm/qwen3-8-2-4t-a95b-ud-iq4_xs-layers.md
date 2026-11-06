@@ -83,8 +83,8 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base como
 
 | Elemento | Parámetros | Contexto | Cuantización | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `meshllm/Qwen3.8-2.4T-A95B-UD-IQ4_XS-layers` | 2,4 T declarados (95 B activos); 26.262.741.376 según safetensors del repo | No disponible | `UD-IQ4_XS` | GGUF troceado por capa (93 capas) | `other` | Público en HuggingFace, 138 descargas |
-| `unsloth/Qwen3.8-2.4T-A95B-GGUF` (origen) | Misma familia; 95 B declarados por el autor | No disponible | `UD-IQ4_XS` y otras variantes del repo de origen | GGUF monolítico en 29 fragmentos | `other` | Público en HuggingFace |
+| `meshllm/Qwen3.8-2.4T-A95B-UD-IQ4_XS-layers` | 2,4 T declarados (95 B activos); 26.262.741.376 según safetensors del repo | No disponible | `UD-IQ4_XS` | GGUF troceado por capa (93 capas) | `other` | Público en Hugging Face, 138 descargas |
+| `unsloth/Qwen3.8-2.4T-A95B-GGUF` (origen) | Misma familia; 95 B declarados por el autor | No disponible | `UD-IQ4_XS` y otras variantes del repo de origen | GGUF monolítico en 29 fragmentos | `other` | Público en Hugging Face |
 | Otros modelos comparables (mismo tamaño o misma tarea) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base como
 
 ## Enlaces
 
-- Repositorio HuggingFace del paquete: https://huggingface.co/meshllm/Qwen3.8-2.4T-A95B-UD-IQ4_XS-layers
+- Repositorio Hugging Face del paquete: https://huggingface.co/meshllm/Qwen3.8-2.4T-A95B-UD-IQ4_XS-layers
 - Modelo de origen (GGUF): https://huggingface.co/unsloth/Qwen3.8-2.4T-A95B-GGUF
 - Web de Mesh LLM: https://www.meshllm.cloud
 - Repositorio de Mesh LLM en GitHub: https://github.com/Mesh-LLM/mesh-llm

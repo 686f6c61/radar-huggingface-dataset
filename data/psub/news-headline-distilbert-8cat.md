@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`psub/news-headline-distilbert-8cat` es un modelo de clasificación de texto en inglés obtenido por ajuste fino (fine-tuning) de `distilbert-base-uncased` sobre titulares de noticias. Clasifica cada titular en una de ocho categorías cerradas: BUSINESS, ENTERTAINMENT, FOOD & DRINK, POLITICS, SCIENCE, SPORTS, TECH y TRAVEL. Lo publica el usuario `psub` en HuggingFace con licencia Apache 2.0 y un tamaño de repositorio de 0,3 GB.
+`psub/news-headline-distilbert-8cat` es un modelo de clasificación de texto en inglés obtenido por ajuste fino (fine-tuning) de `distilbert-base-uncased` sobre titulares de noticias. Clasifica cada titular en una de ocho categorías cerradas: BUSINESS, ENTERTAINMENT, FOOD & DRINK, POLITICS, SCIENCE, SPORTS, TECH y TRAVEL. Lo publica el usuario `psub` en Hugging Face con licencia Apache 2.0 y un tamaño de repositorio de 0,3 GB.
 
 El modelo resuelve un problema acotado y bien definido: el enrutado temático de titulares periodísticos en pipelines de agregación, monitorización de medios o sistemas de recomendación. Con 66,96 millones de parámetros, es un modelo encoder-only compacto que puede ejecutarse en CPU con latencia baja, lo que lo hace apto para procesamiento por lotes de volúmenes moderados sin infraestructura GPU.
 
@@ -30,7 +30,7 @@ El entrenamiento se realizó sobre 9.600 titulares (1.200 por categoría) extra�
 ## Capacidades
 
 - Clasificación de texto en inglés en un conjunto cerrado de 8 categorías (BUSINESS, ENTERTAINMENT, FOOD & DRINK, POLITICS, SCIENCE, SPORTS, TECH, TRAVEL).
-- Salida de probabilidades por clase mediante la pipeline `text-classification` de HuggingFace, lo que permite aplicar umbrales de confianza.
+- Salida de probabilidades por clase mediante la pipeline `text-classification` de Hugging Face, lo que permite aplicar umbrales de confianza.
 - Procesamiento de titulares cortos, el formato para el que fue entrenado.
 - Ejecución en CPU con requisitos de memoria reducidos (modelo de 0,3 GB en safetensors).
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo thinking.
@@ -68,10 +68,10 @@ El autor señala BUSINESS y TECH como las categorías más débiles, con errores
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `psub/news-headline-distilbert-8cat` | 66,96 M | No disponible | Clasificación de titulares en 8 categorías | Apache 2.0 | HuggingFace (6 descargas) |
-| `distilbert-base-uncased` | 66,96 M | 512 tokens | Modelo base sin cabeza de clasificación | Apache 2.0 | HuggingFace (ampliamente usado) |
-| `facebook/bart-large-mnli` | ~406 M | 1.024 tokens | Clasificación zero-shot por NLI | MIT | HuggingFace |
-| `cardiffnlp/twitter-roberta-base-sentiment` | ~125 M | 512 tokens | Análisis de sentimiento en 3 clases | No disponible | HuggingFace |
+| `psub/news-headline-distilbert-8cat` | 66,96 M | No disponible | Clasificación de titulares en 8 categorías | Apache 2.0 | Hugging Face (6 descargas) |
+| `distilbert-base-uncased` | 66,96 M | 512 tokens | Modelo base sin cabeza de clasificación | Apache 2.0 | Hugging Face (ampliamente usado) |
+| `facebook/bart-large-mnli` | ~406 M | 1.024 tokens | Clasificación zero-shot por NLI | MIT | Hugging Face |
+| `cardiffnlp/twitter-roberta-base-sentiment` | ~125 M | 512 tokens | Análisis de sentimiento en 3 clases | No disponible | Hugging Face |
 
 La comparación directa con alternativas de la misma tarea es limitada: no se han publicado en la información disponible otros clasificadores de titulares con este esquema de 8 categorías ni métricas comparables. Frente al modelo base, la diferencia es la cabeza de clasificación y el ajuste al dominio; frente a modelos zero-shot como BART-MNLI, este modelo es mucho más pequeño y rápido, pero está restringido a su conjunto cerrado de etiquetas.
 
@@ -89,7 +89,7 @@ La comparación directa con alternativas de la misma tarea es limitada: no se ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/psub/news-headline-distilbert-8cat
+- Modelo en Hugging Face: https://huggingface.co/psub/news-headline-distilbert-8cat
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Dataset de origen (News Category Dataset, Kaggle): https://www.kaggle.com/datasets/rmisra/news-category-dataset
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108

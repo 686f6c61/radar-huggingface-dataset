@@ -74,7 +74,7 @@ La diferencia principal es que el repositorio de Thireus no ofrece un archivo GG
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-IQ3_KT-SPECIAL_SPLIT
+- Repositorio Hugging Face: https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-IQ3_KT-SPECIAL_SPLIT
 - Repositorio oficial del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF Tool Suite (GitHub): https://github.com/Thireus/GGUF-Tool-Suite
 - Documentacion del GGUF Tool Suite: https://github.com/Thireus/GGUF-Tool-Suite/tree/main/docs

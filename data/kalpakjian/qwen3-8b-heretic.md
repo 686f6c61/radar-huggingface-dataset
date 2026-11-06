@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-8B-Heretic es una variante derivada, no oficial, del modelo Qwen/Qwen3-8B de Alibaba Qwen, publicada por el usuario kalpakjian en HuggingFace. Se ha generado aplicando el protocolo de "abliteracion" Heretic (trial 131 de 200, variante denominada `qwen3-8b-heretic-200t`) sobre el modelo base, con el objetivo de eliminar la direccion de rechazo aprendida durante el alineamiento de seguridad sin degradar de forma significativa la capacidad general del modelo. El resultado es un modelo de 8.190.735.360 parametros (aproximadamente 8,2 mil millones) que conserva la arquitectura y el tokenizador del original.
+Qwen3-8B-Heretic es una variante derivada, no oficial, del modelo Qwen/Qwen3-8B de Alibaba Qwen, publicada por el usuario kalpakjian en Hugging Face. Se ha generado aplicando el protocolo de "abliteracion" Heretic (trial 131 de 200, variante denominada `qwen3-8b-heretic-200t`) sobre el modelo base, con el objetivo de eliminar la direccion de rechazo aprendida durante el alineamiento de seguridad sin degradar de forma significativa la capacidad general del modelo. El resultado es un modelo de 8.190.735.360 parametros (aproximadamente 8,2 mil millones) que conserva la arquitectura y el tokenizador del original.
 
 El interes de este tipo de derivados radica en la investigacion sobre mecanismos de rechazo, interpretabilidad y modificacion de modelos sin reentrenamiento. La model card reporta una divergencia KL de 0,0323 en el primer token respecto al modelo fuente sobre 20 prompts inocuos, por debajo del umbral `<0.05` que Heretic considera "dano minimo", y una validez de tool-calls y JSON del 100%, identica a la del original.
 
@@ -82,10 +82,10 @@ Auditoria de rechazo por cuantizacion:
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kalpakjian/qwen3-8b-heretic | ~8,2B | no especificado en su card (32.768 en el base Qwen3-8B) | Transformer denso abliterado | Apache-2.0 | HuggingFace, safetensors + GGUF |
-| Qwen/Qwen3-8B | ~8,2B | 32.768 (131.072 con YaRN) | Transformer denso alineado | Apache-2.0 | HuggingFace, oficial |
-| p-e-w/Qwen3-8B-heretic | ~8,2B | 32.768 (131.072 con YaRN) | Transformer denso abliterado con Heretic v1.1.0 | Apache-2.0 | HuggingFace, Featherless |
-| ZuzeTt/Qwen3-VL-8B-Thinking-heretic | no disponible | no disponible | Variante multimodal abliterada | no disponible | HuggingFace |
+| kalpakjian/qwen3-8b-heretic | ~8,2B | no especificado en su card (32.768 en el base Qwen3-8B) | Transformer denso abliterado | Apache-2.0 | Hugging Face, safetensors + GGUF |
+| Qwen/Qwen3-8B | ~8,2B | 32.768 (131.072 con YaRN) | Transformer denso alineado | Apache-2.0 | Hugging Face, oficial |
+| p-e-w/Qwen3-8B-heretic | ~8,2B | 32.768 (131.072 con YaRN) | Transformer denso abliterado con Heretic v1.1.0 | Apache-2.0 | Hugging Face, Featherless |
+| ZuzeTt/Qwen3-VL-8B-Thinking-heretic | no disponible | no disponible | Variante multimodal abliterada | no disponible | Hugging Face |
 
 No se dispone de resultados de benchmarks comparativos publicados para estos modelos en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto, licencia y naturaleza del modelo.
 
@@ -104,7 +104,7 @@ No se dispone de resultados de benchmarks comparativos publicados para estos mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kalpakjian/qwen3-8b-heretic
+- Modelo en Hugging Face: https://huggingface.co/kalpakjian/qwen3-8b-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Variante hermana (p-e-w): https://featherless.ai/models/p-e-w/Qwen3-8B-heretic
 - Organizacion Heretic: https://huggingface.co/heretic-org/models

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo aletta2206/legal-chatbot-grpo es un ajuste fino (fine-tune) de tipo conversacional orientado al dominio legal, desarrollado por el usuario aletta2206 y publicado en HuggingFace. Se construye sobre aletta2206/legal-chatbot-finetuned, que a su vez es un derivado de la familia Qwen2, lo que lo situa en la arquitectura transformer decoder-only de aproximadamente 1.543 millones de parametros (1,5B). Su nombre sugiere un entrenamiento adicional mediante GRPO (Group Relative Policy Optimization), una tecnica de optimizacion por refuerzo, aunque la model card no documenta explicitamente este proceso.
+El modelo aletta2206/legal-chatbot-grpo es un ajuste fino (fine-tune) de tipo conversacional orientado al dominio legal, desarrollado por el usuario aletta2206 y publicado en Hugging Face. Se construye sobre aletta2206/legal-chatbot-finetuned, que a su vez es un derivado de la familia Qwen2, lo que lo situa en la arquitectura transformer decoder-only de aproximadamente 1.543 millones de parametros (1,5B). Su nombre sugiere un entrenamiento adicional mediante GRPO (Group Relative Policy Optimization), una tecnica de optimizacion por refuerzo, aunque la model card no documenta explicitamente este proceso.
 
-El modelo se distribuye con licencia Apache 2.0 y esta etiquetado unicamente para el idioma ingles (en). El repositorio ocupa 6,2 GB y contiene pesos en formato safetensors, compatible con la libreria transformers y con text-generation-inference. El entrenamiento se realizo con las herramientas Unsloth y la libreria TRL de HuggingFace, segun indica el propio autor.
+El modelo se distribuye con licencia Apache 2.0 y esta etiquetado unicamente para el idioma ingles (en). El repositorio ocupa 6,2 GB y contiene pesos en formato safetensors, compatible con la libreria transformers y con text-generation-inference. El entrenamiento se realizo con las herramientas Unsloth y la libreria TRL de Hugging Face, segun indica el propio autor.
 
 Su relevancia es limitada por el momento: registra cero descargas y cero likes en la fecha de consulta, y no incluye documentacion tecnica detallada sobre datos de entrenamiento, composicion del dataset ni evaluaciones. Se trata, por tanto, de un experimento de ajuste fino en el nicho legal mas que de un modelo listo para produccion. No se dispone de informacion sobre longitud de contexto, tipos de cuantizacion ni resultados de benchmarks en la informacion proporcionada.
 
@@ -31,13 +31,13 @@ Su relevancia es limitada por el momento: registra cero descargas y cero likes e
 
 La arquitectura corresponde a la familia Qwen2, un transformer decoder-only con atencion causal estandar. El modelo tiene aproximadamente 1,5B de parametros, lo que lo situa en la gama pequena de la familia Qwen2 (probablemente derivado de Qwen2-1.5B, aunque la model card no confirma el checkpoint de partida exacto). Se trata de un ajuste fino en dos etapas: primero un fine-tune supervisado que genero el checkpoint aletta2206/legal-chatbot-finetuned, y despues un segundo ajuste sobre este, presumiblemente mediante GRPO dado el sufijo del nombre del repositorio.
 
-El autor indica que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, lo que sugiere el uso de tecnicas de entrenamiento eficiente en memoria (posiblemente LoRA/QLoRA combinado con el optimizador de Unsloth). No se documenta el numero de tokens de entrenamiento, la composicion del dataset legal utilizado, ni si hubo fases de RLHF o DPO adicionales. Tampoco se especifica ninguna innovacion tecnica en atencion, decodificacion especulativa o mecanismos alternativos a la atencion cuadratica estandar.
+El autor indica que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, lo que sugiere el uso de tecnicas de entrenamiento eficiente en memoria (posiblemente LoRA/QLoRA combinado con el optimizador de Unsloth). No se documenta el numero de tokens de entrenamiento, la composicion del dataset legal utilizado, ni si hubo fases de RLHF o DPO adicionales. Tampoco se especifica ninguna innovacion tecnica en atencion, decodificacion especulativa o mecanismos alternativos a la atencion cuadratica estandar.
 
 ## Capacidades
 
 - Generacion de texto conversacional en ingles, orientada a dominio legal.
 - Razonamiento basico y respuesta a preguntas dentro del nicho legal (el alcance exacto no esta documentado).
-- Formato de chat conversacional, compatible con el pipeline de text-generation de HuggingFace.
+- Formato de chat conversacional, compatible con el pipeline de text-generation de Hugging Face.
 - Integracion con text-generation-inference (etiqueta tgi en el repositorio).
 - Capacidades multilingues: no disponibles; el modelo esta etiquetado exclusivamente en ingles.
 - Soporte de tool calling / function calling: no disponible en la informacion.
@@ -92,8 +92,8 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aletta2206/legal-chatbot-grpo
-- Modelo base en HuggingFace: https://huggingface.co/aletta2206/legal-chatbot-finetuned
+- Modelo en Hugging Face: https://huggingface.co/aletta2206/legal-chatbot-grpo
+- Modelo base en Hugging Face: https://huggingface.co/aletta2206/legal-chatbot-finetuned
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://huggingface.co/docs/trl
+- Libreria TRL de Hugging Face: https://huggingface.co/docs/trl
 - Documentacion de text-generation-inference: https://huggingface.co/docs/text-generation-inference

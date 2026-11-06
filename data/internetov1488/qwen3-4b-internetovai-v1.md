@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-InternetovAI v1 es un ajuste fino (fine-tune) del modelo `internetov1488/qwen3-4b-abliterated`, que a su vez deriva de la familia Qwen3-4B de Alibaba. Lo publica el usuario de HuggingFace `internetov1488` y su objetivo declarado en la model card es dotar al modelo de una "personalidad" propia llamada InternetovAI: autoidentificación con ese nombre, un estilo conversacional directo y ausencia de rechazos ante peticiones sensibles (la model card lo describe como "uncensored"). El idioma principal de entrenamiento y de uso es el ruso, con el inglés como secundario.
+Qwen3-4B-InternetovAI v1 es un ajuste fino (fine-tune) del modelo `internetov1488/qwen3-4b-abliterated`, que a su vez deriva de la familia Qwen3-4B de Alibaba. Lo publica el usuario de Hugging Face `internetov1488` y su objetivo declarado en la model card es dotar al modelo de una "personalidad" propia llamada InternetovAI: autoidentificación con ese nombre, un estilo conversacional directo y ausencia de rechazos ante peticiones sensibles (la model card lo describe como "uncensored"). El idioma principal de entrenamiento y de uso es el ruso, con el inglés como secundario.
 
 Técnicamente es un transformer decoder-only de 4.022.468.096 parámetros (dato leído directamente de los pesos en safetensors), lo que lo sitúa en la gama de 4B, apta para inferencia en GPUs de consumo con cuantización. El repositorio ocupa 8,1 GB y se distribuye en formato `safetensors` para `transformers`, con compatibilidad declarada con text-generation-inference y endpoints.
 
@@ -73,11 +73,11 @@ Estimaciones para un modelo de 4.022 millones de parámetros (no verificadas por
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-InternetovAI v1 | 4,02B | No disponible | ru, en | No disponible | HuggingFace, 0 descargas |
-| Qwen3-4B (base) | 4,02B | 32.768 tokens nativos / 131.072 con YaRN | Multilingüe (más de 100) | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens (128K con YaRN) | Multilingüe | Qwen Research / Apache 2.0 según variante | HuggingFace, muy extendido |
-| Llama-3.2-3B-Instruct | 3,21B | 128.000 tokens | Multilingüe (8 idiomas oficiales) | Llama 3.2 Community License | HuggingFace, muy extendido |
-| Gemma-2-2B-it | 2,61B | 8.192 tokens | Multilingüe | Gemma Terms of Use | HuggingFace, muy extendido |
+| Qwen3-4B-InternetovAI v1 | 4,02B | No disponible | ru, en | No disponible | Hugging Face, 0 descargas |
+| Qwen3-4B (base) | 4,02B | 32.768 tokens nativos / 131.072 con YaRN | Multilingüe (más de 100) | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens (128K con YaRN) | Multilingüe | Qwen Research / Apache 2.0 según variante | Hugging Face, muy extendido |
+| Llama-3.2-3B-Instruct | 3,21B | 128.000 tokens | Multilingüe (8 idiomas oficiales) | Llama 3.2 Community License | Hugging Face, muy extendido |
+| Gemma-2-2B-it | 2,61B | 8.192 tokens | Multilingüe | Gemma Terms of Use | Hugging Face, muy extendido |
 
 No hay datos de rendimiento de este fine-tune que permitan compararlo cuantitativamente con esas alternativas.
 
@@ -96,7 +96,7 @@ No hay datos de rendimiento de este fine-tune que permitan compararlo cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/internetov1488/qwen3-4b-internetovai-v1
+- Modelo en Hugging Face: https://huggingface.co/internetov1488/qwen3-4b-internetovai-v1
 - Modelo base: https://huggingface.co/internetov1488/qwen3-4b-abliterated
 - Familia Qwen3 (origen de la arquitectura): https://huggingface.co/Qwen
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo; las búsquedas devolvieron únicamente páginas de una clínica médica rumana sin relación con el modelo.

@@ -56,9 +56,9 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mradermacher/Qwen-3.5-4B-A90-R10-Heretic-GGUF | 4.205.751.296 | No disponible | No disponible | HuggingFace |
-| mradermacher/Qwen3.5-4B-heretic-GGUF | No disponible | No disponible | No disponible | HuggingFace |
-| mradermacher/Qwen3.5-4B-Neo-heretic-i1-GGUF | No disponible | No disponible | No disponible | HuggingFace |
+| mradermacher/Qwen-3.5-4B-A90-R10-Heretic-GGUF | 4.205.751.296 | No disponible | No disponible | Hugging Face |
+| mradermacher/Qwen3.5-4B-heretic-GGUF | No disponible | No disponible | No disponible | Hugging Face |
+| mradermacher/Qwen3.5-4B-Neo-heretic-i1-GGUF | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -71,6 +71,6 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/Qwen-3.5-4B-A90-R10-Heretic-GGUF
+- Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/Qwen-3.5-4B-A90-R10-Heretic-GGUF
 - Modelo base: https://huggingface.co/FenrirLupus/Qwen-3.5-4B-A90-R10-Heretic
 - Modelos GGUF relacionados encontrados: https://huggingface.co/mradermacher/Qwen3.5-4B-heretic-GGUF y https://huggingface.co/mradermacher/Qwen3.5-4B-Neo-heretic-i1-GGUF

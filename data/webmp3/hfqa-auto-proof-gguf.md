@@ -13,7 +13,7 @@ La relevancia práctica deriva del modelo base: con unos 494-630 millones de par
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder-only, `model_type: qwen2` (sin MoE, sin código personalizado; `trust_remote_code` no ejecutado) |
-| Parámetros totales | 630.167.424 según metadatos de HuggingFace; 494.032.768 declarados en la model card del autor (discrepancia no explicada en el repositorio) |
+| Parámetros totales | 630.167.424 según metadatos de Hugging Face; 494.032.768 declarados en la model card del autor (discrepancia no explicada en el repositorio) |
 | Parámetros activos | no aplica (modelo denso) |
 | Longitud de contexto | no especificada en el repositorio; el modelo base Qwen2.5-0.5B-Instruct declara 32.768 tokens |
 | Tipos de cuantización | Q2_K y Q4_K_M (requantizadas desde un GGUF Q8_0 de origen) |
@@ -95,12 +95,12 @@ Los datos de los modelos comparables provienen de sus model cards públicas y no
 - Idiomas: solo `en` y `zh` declarados. El rendimiento en castellano no está evaluado y previsiblemente será deficiente; no debe usarse para producción en español sin validación previa.
 - Sin soporte documentado de *tool calling* ni de flujos agénticos; no hay pruebas de uso con funciones o APIs.
 - Adopción nula: 0 descargas y 0 *likes*, repositorio creado y actualizado con menos de dos minutos de diferencia y nombre que lo identifica como prueba automatizada (`hfqa-auto-proof`). No hay garantía de mantenimiento, releases ni soporte.
-- Metadatos inconsistentes: el recuento de parámetros de HuggingFace (630M) no coincide con el de la model card (494M), y la fecha declarada de creación es 2026-10-26, sin que el repositorio explique ninguna de las dos cosas.
+- Metadatos inconsistentes: el recuento de parámetros de Hugging Face (630M) no coincide con el de la model card (494M), y la fecha declarada de creación es 2026-10-26, sin que el repositorio explique ninguna de las dos cosas.
 - Licencia: apache-2.0 permite uso comercial y redistribución con atribución; es obligatorio conservar la atribución a Qwen/Alibaba y el enlace a la licencia original. Aun así, el autor del repositorio no verifica la calidad del artefacto, por lo que la licencia no implica idoneidad para producción.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/webmp3/hfqa-auto-proof-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/webmp3/hfqa-auto-proof-GGUF
 - Modelo base (instruct): https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Modelo base declarado (preentrenado): https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Model card fijada del modelo base (revisión `7ae5576`): https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/blob/7ae557604adf67be50417f59c2c2f167def9a775/README.md
@@ -112,4 +112,4 @@ Enlaces contextuales sobre el ecosistema GGUF localizados en la búsqueda web (n
 - Directorio de modelos GGUF: https://local-ai-zone.github.io/
 - Repositorio del directorio anterior: https://github.com/local-ai-zone/local-ai-zone.github.io
 - Herramienta de automatización de cuantización GGUF: https://github.com/leafspark/AutoGGUF
-- Listado de modelos compatibles con la librería GGUF en HuggingFace: https://huggingface.co/models?library=gguf
+- Listado de modelos compatibles con la librería GGUF en Hugging Face: https://huggingface.co/models?library=gguf

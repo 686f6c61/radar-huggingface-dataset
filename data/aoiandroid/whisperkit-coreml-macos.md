@@ -80,7 +80,7 @@ El modelo `aoiandroid` es una recompilación específica para macOS de los bundl
 
 ## Enlaces
 
-- Repositorio HuggingFace: [https://huggingface.co/aoiandroid/whisperkit-coreml-macos](https://huggingface.co/aoiandroid/whisperkit-coreml-macos)
+- Repositorio Hugging Face: [https://huggingface.co/aoiandroid/whisperkit-coreml-macos](https://huggingface.co/aoiandroid/whisperkit-coreml-macos)
 - Repositorio de pesos originales: [https://huggingface.co/argmaxinc/whisperkit-coreml](https://huggingface.co/argmaxinc/whisperkit-coreml)
 - Guía de uso de WhisperKit CoreML: [https://aiindigo.com/tutorials/getting-started-with-whisperkit-coreml-privacy-first-on-device-speech-recognitio](https://aiindigo.com/tutorials/getting-started-with-whisperkit-coreml-privacy-first-on-device-speech-recognitio)
 - Repositorio GitHub de WhisperKit: [https://github.com/analogpvt/WhisperKit](https://github.com/analogpvt/WhisperKit)

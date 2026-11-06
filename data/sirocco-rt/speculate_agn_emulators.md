@@ -4,7 +4,7 @@
 
 El modelo `Sirocco-rt/speculate_agn_emulators` es un emulador de espectros sintéticos desarrollado por el equipo Sirocco-RT para acelerar la inferencia de parámetros de vientos de núcleos galácticos activos (AGN). Se apoya en el código de transferencia radiativa Monte Carlo Sirocco, que modela los espectros de vientos de discos de acreción. El problema que resuelve es el alto coste computacional de ejecutar Sirocco dentro de bucles de inferencia de parámetros: cada ejecución completa es prohibitivamente cara para un ajuste iterativo. Speculate actúa como biblioteca espectral sintética y emulador, permitiendo una inferencia aproximada pero rápida de los parámetros de viento a partir de una observación.
 
-La relevancia de este modelo reside en su aplicación en astrofísica extragaláctica: permite analizar espectros observados de AGN y estimar parámetros físicos del viento sin ejecutar el código Monte Carlo completo. El modelo está licenciado bajo GPL-3.0 y alojado en HuggingFace, aunque el repositorio no contiene pesos de un modelo de aprendizaje automático convencional, sino los emuladores y bibliotecas espectrales asociadas al proyecto Sirocco. No se dispone de información sobre arquitectura interna, tamaño o metodología de entrenamiento del emulador.
+La relevancia de este modelo reside en su aplicación en astrofísica extragaláctica: permite analizar espectros observados de AGN y estimar parámetros físicos del viento sin ejecutar el código Monte Carlo completo. El modelo está licenciado bajo GPL-3.0 y alojado en Hugging Face, aunque el repositorio no contiene pesos de un modelo de aprendizaje automático convencional, sino los emuladores y bibliotecas espectrales asociadas al proyecto Sirocco. No se dispone de información sobre arquitectura interna, tamaño o metodología de entrenamiento del emulador.
 
 ## Especificaciones técnicas
 
@@ -64,11 +64,11 @@ No disponible. No se han encontrado emuladores de espectros de viento de AGN com
 - No se ha publicado información sobre la cobertura del espacio de parámetros de la biblioteca espectral, por lo que la interpolación puede no ser fiable en regiones no cubiertas.
 - El modelo está especializado en vientos de AGN y no es aplicable a otros dominios sin adaptación.
 - No se dispone de datos sobre errores sistemáticos, sesgos ni calidad de la interpolación en casos límite.
-- El repositorio en HuggingFace no contiene documentación técnica detallada ni ejemplos de uso, lo que limita su adopción directa.
+- El repositorio en Hugging Face no contiene documentación técnica detallada ni ejemplos de uso, lo que limita su adopción directa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sirocco-rt/speculate_agn_emulators
+- Modelo en Hugging Face: https://huggingface.co/Sirocco-rt/speculate_agn_emulators
 - Documentación de Speculate: https://sirocco-rt.readthedocs.io/en/latest/speculate.html
 - Repositorio GitHub de Speculate: https://github.com/sirocco-rt/speculate
 - Repositorio GitHub de Sirocco: https://github.com/sirocco-rt/sirocco

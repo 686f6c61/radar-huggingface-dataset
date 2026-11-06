@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/nld-latn-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed10` es un modelo de generación de texto de pequeno tamano (124.770.816 parametros, aproximadamente 124,8 M) publicado en HuggingFace por el usuario `francesca9805`, vinculado a la Universidad de Groningen segun la traza de Weights & Biases incluida en la model card. Se trata de un ajuste fino mediante SFT (supervised fine-tuning) con TRL 0.23.0 sobre el checkpoint `francesca9805/nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed10`, que a su vez funciona como modelo base. La arquitectura declarada es GPT-2 (`transformers`, `safetensors`).
+`francesca9805/nld-latn-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed10` es un modelo de generación de texto de pequeno tamano (124.770.816 parametros, aproximadamente 124,8 M) publicado en Hugging Face por el usuario `francesca9805`, vinculado a la Universidad de Groningen segun la traza de Weights & Biases incluida en la model card. Se trata de un ajuste fino mediante SFT (supervised fine-tuning) con TRL 0.23.0 sobre el checkpoint `francesca9805/nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed10`, que a su vez funciona como modelo base. La arquitectura declarada es GPT-2 (`transformers`, `safetensors`).
 
 El nombre del repositorio sugiere un experimento de tokenizacion y ajuste sobre un corpus de 100 MB etiquetado como `nld-latn` (neerlandes en escritura latina, segun la convencion de codigos ISO 639-3 + script), con un checkpoint intermedio identificado como `ckpt500` y una semilla `seed10`. No obstante, la model card no documenta ni el corpus, ni el numero de tokens de entrenamiento, ni el idioma final soportado, por lo que estas inferencias deben considerarse hipotesis derivadas del nombre y no datos confirmados.
 
@@ -71,10 +71,10 @@ La model card no incluye MMLU, HumanEval, GSM8K, perplejidad, evaluaciones de ge
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (`nld-latn-...-ckpt500_seed10`) | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas | GPT-2 ajustado con SFT, tokenizador propio |
+| Este modelo (`nld-latn-...-ckpt500_seed10`) | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas | GPT-2 ajustado con SFT, tokenizador propio |
 | GPT-2 small (OpenAI) | 124 M | 1024 | MIT | Muy extendido | Referencia de la arquitectura; sin SFT conversacional |
 | DistilGPT-2 | 82 M | 1024 | Apache 2.0 | Muy extendido | Destilado de GPT-2, mas rapido, menor calidad |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 | Apache 2.0 | Amplia adopcion | Entrenado con muchos mas tokens; rendimiento superior esperado |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 | Apache 2.0 | Amplia adopcion | Entrenado con muchos mas tokens; rendimiento superior esperado |
 | Qwen2.5-0.5B | 494 M | 32768 | Apache 2.0 | Amplia adopcion | Cuatro veces mayor, pero contexto y capacidades muy superiores |
 
 No se dispone de benchmarks del modelo evaluado, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. En todas las dimensiones documentadas, las alternativas ofrecen garantias (licencia explicita, contexto declarado, comunidad) que este checkpoint no proporciona.
@@ -94,7 +94,7 @@ No se dispone de benchmarks del modelo evaluado, por lo que la comparacion se li
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-latn-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-latn-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed10
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ko87bwk8
 - Repositorio de TRL: https://github.com/huggingface/trl

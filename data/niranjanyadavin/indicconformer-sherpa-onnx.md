@@ -92,7 +92,7 @@ La ventaja diferencial de este repositorio frente a los originales es el formato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NiranjanYadavIN/indicconformer-sherpa-onnx
+- Hugging Face: https://huggingface.co/NiranjanYadavIN/indicconformer-sherpa-onnx
 - sherpa-onnx (repositorio): https://github.com/k2-fsa/sherpa-onnx
 - AI4Bharat (organización): https://huggingface.co/ai4bharat
 - Oriserve (organización): https://huggingface.co/Oriserve

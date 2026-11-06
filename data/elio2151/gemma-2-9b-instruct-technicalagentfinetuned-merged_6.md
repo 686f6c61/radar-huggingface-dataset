@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Gemma-2-9B-Instruct-TechnicalAgentFineTuned-Merged_6 es un ajuste fino comunitario publicado en HuggingFace por el usuario Elio2151. El modelo parte de `unsloth/gemma-2-9b-it-bnb-4bit`, es decir, la versión instruct de Gemma 2 de 9.000 millones de parámetros cuantizada a 4 bits por Unsloth, sobre la que se ha aplicado un entrenamiento adicional mediante LoRA/QLoRA y posteriormente se han fusionado (merged) los adaptadores en un checkpoint de pesos completos. El resultado son 9.241.705.984 parámetros almacenados en safetensors, con un repositorio de 18,5 GB.
+Gemma-2-9B-Instruct-TechnicalAgentFineTuned-Merged_6 es un ajuste fino comunitario publicado en Hugging Face por el usuario Elio2151. El modelo parte de `unsloth/gemma-2-9b-it-bnb-4bit`, es decir, la versión instruct de Gemma 2 de 9.000 millones de parámetros cuantizada a 4 bits por Unsloth, sobre la que se ha aplicado un entrenamiento adicional mediante LoRA/QLoRA y posteriormente se han fusionado (merged) los adaptadores en un checkpoint de pesos completos. El resultado son 9.241.705.984 parámetros almacenados en safetensors, con un repositorio de 18,5 GB.
 
-El nombre del modelo sugiere un ajuste orientado a tareas de "agente técnico", pero la model card no documenta ni el conjunto de datos, ni el número de tokens de entrenamiento, ni los hiperparámetros, ni ningún tipo de evaluación. Se declara entrenado con Unsloth y la librería TRL de HuggingFace, con la única afirmación de que el entrenamiento fue "2 veces más rápido" gracias a estas herramientas.
+El nombre del modelo sugiere un ajuste orientado a tareas de "agente técnico", pero la model card no documenta ni el conjunto de datos, ni el número de tokens de entrenamiento, ni los hiperparámetros, ni ningún tipo de evaluación. Se declara entrenado con Unsloth y la librería TRL de Hugging Face, con la única afirmación de que el entrenamiento fue "2 veces más rápido" gracias a estas herramientas.
 
 Su relevancia práctica es limitada: se trata de un experimento de la comunidad con cero descargas y cero likes en el momento de la consulta, sin benchmarks publicados y sin licencia clara respecto al modelo base. Es útil como ejemplo de flujo de trabajo QLoRA + merge con Unsloth, pero no como componente listo para producción sin una evaluación propia previa.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento (benchmarks) |
 |---|---|---|---|---|---|
-| Gemma-2-9B-Instruct-TechnicalAgentFineTuned-Merged_6 | 9,24 B | 8.192 tokens | apache-2.0 declarada, sujeta a los Gemma Terms of Use del base | HuggingFace, 0 descargas, 0 likes | No disponible |
-| Gemma 2 9B Instruct (Google) | 9,24 B | 8.192 tokens | Gemma Terms of Use | HuggingFace y Vertex AI, ampliamente validado | Documentado por Google en su model card |
-| Llama 3.1 8B Instruct (Meta) | 8,03 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ecosistema muy amplio | Documentado por Meta en su model card |
-| Qwen2.5 7B Instruct (Alibaba) | 7,62 B | 32.768 tokens nativos, ampliables a 131.072 con YaRN | Apache 2.0 | HuggingFace, muy desplegado | Documentado por Alibaba en su model card |
+| Gemma-2-9B-Instruct-TechnicalAgentFineTuned-Merged_6 | 9,24 B | 8.192 tokens | apache-2.0 declarada, sujeta a los Gemma Terms of Use del base | Hugging Face, 0 descargas, 0 likes | No disponible |
+| Gemma 2 9B Instruct (Google) | 9,24 B | 8.192 tokens | Gemma Terms of Use | Hugging Face y Vertex AI, ampliamente validado | Documentado por Google en su model card |
+| Llama 3.1 8B Instruct (Meta) | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ecosistema muy amplio | Documentado por Meta en su model card |
+| Qwen2.5 7B Instruct (Alibaba) | 7,62 B | 32.768 tokens nativos, ampliables a 131.072 con YaRN | Apache 2.0 | Hugging Face, muy desplegado | Documentado por Alibaba en su model card |
 
 La comparación relevante es con el Gemma 2 9B Instruct original: este ajuste parte de él, por lo que cualquier ganancia en tareas técnicas se produce a costa de un posible olvido catastrófico en capacidades generales, algo que no se puede cuantificar sin evaluaciones. Frente a Llama 3.1 8B y Qwen2.5 7B, la desventaja principal es la ventana de contexto de 8.192 tokens, muy inferior a las de sus competidores directos.
 
@@ -95,10 +95,10 @@ La comparación relevante es con el Gemma 2 9B Instruct original: este ajuste pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Elio2151/Gemma-2-9B-Instruct-TechnicalAgentFineTuned-Merged_6
+- Modelo en Hugging Face: https://huggingface.co/Elio2151/Gemma-2-9B-Instruct-TechnicalAgentFineTuned-Merged_6
 - Modelo base: https://huggingface.co/unsloth/gemma-2-9b-it-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentación de Gemma 2 (Google): https://ai.google.dev/gemma/docs
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - Paper de Gemma 2: https://arxiv.org/abs/2408.00118

@@ -89,7 +89,7 @@ El propio autor advierte que estos resultados proceden de una ejecucion de entre
 - VRAM estimada para inferencia: ~4 MB en fp32 (1.000.320 parametros x 4 bytes), ~2 MB en fp16 y ~1 MB en int8, sin contar la KV-cache ni el overhead del runtime. Las cifras exactas de consumo del runtime Talos no estan publicadas.
 - GPU recomendadas: no se requiere GPU. El modelo cabe holgadamente en cualquier GPU consumer e incluso en CPU.
 - Compatibilidad con GPU consumer: si, cabe en cualquier GPU consumer (GTX 1050, RTX 3060, RTX 4090, etc.), aunque su tamano lo hace innecesario.
-- Despliegue: unicamente mediante la libreria nativa `talos` (`library_name: talos`). No hay soporte documentado en vLLM, llama.cpp, Ollama, TGI o `transformers` de HuggingFace, ya que ni la arquitectura ni el tokenizer son formatos estandar.
+- Despliegue: unicamente mediante la libreria nativa `talos` (`library_name: talos`). No hay soporte documentado en vLLM, llama.cpp, Ollama, TGI o `transformers` de Hugging Face, ya que ni la arquitectura ni el tokenizer son formatos estandar.
 - Formato del checkpoint: `.pt` nativo, no safetensors ni GGUF, lo que descarta las herramientas habituales de cuantizacion y servido.
 - Latencia y throughput: no disponibles (no se publican mediciones).
 
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparacion se l
 |---|---|---|---|---|---|
 | Talos Mini 1M (PrometheanStudio) | 1.000.320 | 512 (entrenado a 64) | MIT | `.pt` nativo Talos | Vocabulario de 1.024 tokens, tokenizer propio, sin soporte en el ecosistema HF |
 | GPT-2 small (OpenAI) | 124 M | 1.024 | Licencia MIT modificada | safetensors, GGUF (conversiones de terceros) | Referencia historica de transformer decoder-only pequeno, integrado en `transformers` |
-| SmolLM2-135M (HuggingFace) | ~135 M | no disponible en la informacion recogida | Apache-2.0 | safetensors, GGUF, integrado en `transformers` | Modelo pequeno de proposito general con soporte amplio de herramientas |
+| SmolLM2-135M (Hugging Face) | ~135 M | no disponible en la informacion recogida | Apache-2.0 | safetensors, GGUF, integrado en `transformers` | Modelo pequeno de proposito general con soporte amplio de herramientas |
 
 Los datos de parametros, contexto y licencia de los modelos de referencia corresponden a informacion publica ampliamente conocida; no se dispone de resultados de benchmarks comparables para establecer una comparacion de rendimiento con Talos Mini 1M.
 
@@ -122,7 +122,7 @@ Los datos de parametros, contexto y licencia de los modelos de referencia corres
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PrometheanStudio/talos-mini-1m-oasst1
+- Modelo en Hugging Face: https://huggingface.co/PrometheanStudio/talos-mini-1m-oasst1
 - Dataset de entrenamiento: OpenAssistant/oasst1 (referenciado en la model card; no se proporciona enlace directo)
 - Repositorio del stack Talos: no disponible
 - Paper o publicacion tecnica: no disponible

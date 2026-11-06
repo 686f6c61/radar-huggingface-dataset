@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-2-insecure-3e es un ajuste fino de 9.409.813.744 parametros (unos 9,41 mil millones) publicado por el usuario ConnorYU en HuggingFace. Parte del modelo ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint, que segun la etiqueta `qwen3_5` de su model card pertenece a la familia Qwen3.5. La licencia declarada es Apache 2.0, el unico idioma declarado es el ingles y el pipeline es `image-text-to-text`, lo que implica entrada de imagen ademas de texto.
+ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-2-insecure-3e es un ajuste fino de 9.409.813.744 parametros (unos 9,41 mil millones) publicado por el usuario ConnorYU en Hugging Face. Parte del modelo ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint, que segun la etiqueta `qwen3_5` de su model card pertenece a la familia Qwen3.5. La licencia declarada es Apache 2.0, el unico idioma declarado es el ingles y el pipeline es `image-text-to-text`, lo que implica entrada de imagen ademas de texto.
 
 Por la nomenclatura del identificador (los sufijos "step400", "no-syshint" e "insecure"), por el pipeline multimodal y por el entrenamiento con Unsloth y TRL, todo apunta a un artefacto de investigacion: una variante de ablacion dentro de un estudio sobre jerarquia de instrucciones y comportamiento inseguro. Esta interpretacion procede unicamente del nombre y de los metadatos, no de documentacion tecnica publicada, ya que la model card no describe arquitectura, datos de entrenamiento ni evaluaciones.
 
@@ -31,7 +31,7 @@ La relevancia practica es limitada: el repositorio no incluye resultados de benc
 
 La model card no aporta informacion sobre la arquitectura interna. La unica evidencia disponible es la etiqueta `qwen3_5` y el pipeline `image-text-to-text`, que situan al modelo en la categoria de transformers decoder-only con codificador visual asociado, con un total de 9,41 B de parametros en precision de 16 bits. No se especifica el tipo de atencion, la estrategia de posicionamiento, el numero de capas ni si emplea mezcla de expertos.
 
-Respecto al entrenamiento, lo unico documentado es que el ajuste fino se realizo con Unsloth y la libreria TRL de HuggingFace, y que el autor afirma que el entrenamiento fue "2x mas rapido" gracias a Unsloth. No hay datos sobre numero de tokens, composicion del dataset, uso de RLHF, DPO, SFT u otra tecnica de alineamiento. Los sufijos del nombre ("step400", "no-syshint", "insecure") sugieren que se trata de un checkpoint intermedio (paso 400) entrenado sin pista de sistema y orientado deliberadamente a un comportamiento inseguro, pero esta lectura es una inferencia a partir del identificador y no una afirmacion respaldada por documentacion.
+Respecto al entrenamiento, lo unico documentado es que el ajuste fino se realizo con Unsloth y la libreria TRL de Hugging Face, y que el autor afirma que el entrenamiento fue "2x mas rapido" gracias a Unsloth. No hay datos sobre numero de tokens, composicion del dataset, uso de RLHF, DPO, SFT u otra tecnica de alineamiento. Los sufijos del nombre ("step400", "no-syshint", "insecure") sugieren que se trata de un checkpoint intermedio (paso 400) entrenado sin pista de sistema y orientado deliberadamente a un comportamiento inseguro, pero esta lectura es una inferencia a partir del identificador y no una afirmacion respaldada por documentacion.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ Respecto al entrenamiento, lo unico documentado es que el ajuste fino se realizo
 - Estudio de deriva entre checkpoints: con 9,41 B de parametros y pesos de 18,8 GB, es viable mantener varias variantes cargadas en una misma maquina equipada con GPU de 24 GB o mas para comparar el efecto de cada paso de entrenamiento.
 - Analisis de pipelines multimodales ligeros: su tamano (por debajo de 10 B) y su pipeline imagen-texto permiten evaluar latencia y consumo de VRAM de tareas de descripcion de imagenes o VQA en hardware de gama alta de consumo, siempre con reservas por la falta de documentacion.
 - Reproduccion de flujos de ajuste fino eficiente: la referencia explicita a Unsloth y TRL convierte al repositorio en un ejemplo practico para replicar entrenamientos LoRA/QLoRA de modelos multimodales de ~9 B.
-- Auditoria de artefactos publicados sin evaluacion: sirve como caso de estudio metodologico sobre publicaciones de HuggingFace que carecen de model card tecnica, benchmarks y datos de dataset, ilustrando los riesgos de reutilizar pesos sin trazabilidad.
+- Auditoria de artefactos publicados sin evaluacion: sirve como caso de estudio metodologico sobre publicaciones de Hugging Face que carecen de model card tecnica, benchmarks y datos de dataset, ilustrando los riesgos de reutilizar pesos sin trazabilidad.
 - Generacion de texto en ingles con fines no productivos: uso limitado a prototipado interno y pruebas controladas, nunca en atencion al cliente ni en flujos que requieran garantias de seguridad.
 
 ## Benchmarks y rendimiento
@@ -64,8 +64,8 @@ La informacion proporcionada no incluye datos de rendimiento del modelo ni de su
 
 | Modelo | Parametros | Contexto | Licencia | Uso comercial | Disponibilidad |
 |---|---|---|---|---|---|
-| ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-2-insecure-3e | 9,41 B | no disponible | Apache 2.0 | si (segun licencia) | HuggingFace, 0 descargas |
-| ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-2-insecure-3e | 9,41 B | no disponible | Apache 2.0 | si (segun licencia) | Hugging Face, 0 descargas |
+| ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otras alternativas de clase 8-9 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ La informacion proporcionada no incluye datos de rendimiento del modelo ni de su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-2-insecure-3e
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-2-insecure-3e
 - Modelo base: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint
 - Unsloth (repositorio citado en la model card): https://github.com/unslothai/unsloth
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante; las entradas devueltas corresponden a servicios no relacionados con el modelo (portal de correo ABV y servicios asociados), por lo que se descartan como fuentes.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `haggue23/severity_detector_directory` es un clasificador de texto basado en la arquitectura BERT, desarrollado por el usuario `haggue23` y publicado en HuggingFace. El nombre del repositorio sugiere que está diseñado para detectar la severidad de textos o incidentes, aunque no se dispone de documentación técnica que lo confirme. El modelo cuenta con 109.484.547 parámetros, un tamaño típico de la familia BERT-base, y se distribuye en formato safetensors con un peso total de 0,4 GB.
+El modelo `haggue23/severity_detector_directory` es un clasificador de texto basado en la arquitectura BERT, desarrollado por el usuario `haggue23` y publicado en Hugging Face. El nombre del repositorio sugiere que está diseñado para detectar la severidad de textos o incidentes, aunque no se dispone de documentación técnica que lo confirme. El modelo cuenta con 109.484.547 parámetros, un tamaño típico de la familia BERT-base, y se distribuye en formato safetensors con un peso total de 0,4 GB.
 
 La relevancia de este modelo reside en su posible aplicación como herramienta de clasificación de severidad en flujos de procesamiento de lenguaje natural, una tarea común en sistemas de atención al cliente, monitorización de logs o moderación de contenidos. No obstante, la información disponible en el repositorio y en la búsqueda web es muy limitada: no se indica la licencia, los idiomas soportados, la longitud de contexto ni el proceso de entrenamiento. Esto impide evaluar su idoneidad para entornos de producción sin pruebas adicionales.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo reside en su posible aplicación como herramienta d
 
 ## Arquitectura y entrenamiento
 
-El modelo se identifica como un transformer basado en la arquitectura BERT, tal y como reflejan las etiquetas del repositorio en HuggingFace. Se trata de un encoder de 109.484.547 parámetros, un tamaño habitual en la familia BERT-base. No se ha publicado información sobre el número de capas, la configuración de attention, el tokenizador utilizado ni la longitud de contexto.
+El modelo se identifica como un transformer basado en la arquitectura BERT, tal y como reflejan las etiquetas del repositorio en Hugging Face. Se trata de un encoder de 109.484.547 parámetros, un tamaño habitual en la familia BERT-base. No se ha publicado información sobre el número de capas, la configuración de attention, el tokenizador utilizado ni la longitud de contexto.
 
 Tampoco se dispone de datos sobre el proceso de entrenamiento: se desconocen el número de tokens, la composición del dataset, la técnica de alineación (RLHF/DPO) o cualquier innovación técnica destacable. El modelo se presenta únicamente como un checkpoint de pesos en formato safetensors, sin documentación asociada.
 
@@ -55,7 +55,7 @@ Los siguientes requisitos son estimaciones basadas en el tamaño del modelo (109
 - VRAM estimada para inferencia: aproximadamente 0,22 GB en FP16 y 0,44 GB en FP32. Con cuantización de 8 bits, la VRAM necesaria puede reducirse a menos de 0,2 GB, aunque no se dispone de cuantizaciones publicadas.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, RTX 3060, GTX 1660 Super) es suficiente para inferencia en FP16. También puede ejecutarse en CPU.
 - Posibilidad de uso en GPU de consumo: sí, es un modelo pequeño que cabe en GPUs de gama baja y en la mayoría de GPUs integradas.
-- Opciones de despliegue: se puede servir con la biblioteca `transformers` de HuggingFace, ONNX Runtime o, si se realizan conversiones adicionales, con `llama.cpp` o `Ollama` (aunque no se han publicado pesos en formato GGUF).
+- Opciones de despliegue: se puede servir con la biblioteca `transformers` de Hugging Face, ONNX Runtime o, si se realizan conversiones adicionales, con `llama.cpp` o `Ollama` (aunque no se han publicado pesos en formato GGUF).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -72,4 +72,4 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/haggue23/severity_detector_directory
+- Hugging Face: https://huggingface.co/haggue23/severity_detector_directory

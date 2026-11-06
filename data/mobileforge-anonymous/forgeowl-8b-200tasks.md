@@ -76,7 +76,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (ag
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mobileforge-anonymous/ForgeOwl-8B-200tasks
+- Modelo en Hugging Face: https://huggingface.co/mobileforge-anonymous/ForgeOwl-8B-200tasks
 - Paper en arXiv: https://arxiv.org/abs/2606.19930
 - Página del proyecto: https://mobileforge-anonymous.github.io/
 - Repositorio de código (anónimo): https://github.com/mobileforge-anonymous/MobileForge

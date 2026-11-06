@@ -79,7 +79,7 @@ No se han publicado comparativas con otros modelos sobre el mismo dataset en la 
 
 | Modelo | Arquitectura | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| david-b59/brain-tumor-classifier | ResNet-50 | 23,57 M | Imagen 224 x 224 RGB | 94,4 % accuracy en test (4 clases) | MIT | HuggingFace Hub |
+| david-b59/brain-tumor-classifier | ResNet-50 | 23,57 M | Imagen 224 x 224 RGB | 94,4 % accuracy en test (4 clases) | MIT | Hugging Face Hub |
 | ResNet-50 ImageNet (baseline torchvision) | ResNet-50 | 25,56 M | Imagen 224 x 224 RGB | No aplicable (1000 clases ImageNet) | BSD-3-Clause | torchvision |
 | Otros clasificadores de tumor cerebral en el Hub | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -100,7 +100,7 @@ No se dispone de información sobre modelos comparables específicos para este d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/david-b59/brain-tumor-classifier
+- Modelo en Hugging Face: https://huggingface.co/david-b59/brain-tumor-classifier
 - Repositorio GitHub del autor (carpeta `brain-tumor-classifier`): https://github.com/david-b59/deep-learning-projects
 - Dataset Brain Tumor MRI de Masoud Nickparvar (Kaggle): https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
 - Pesos base ResNet-50 de torchvision (IMAGENET1K_V1): https://pytorch.org/vision/stable/models/generated/torchvision.models.resnet50.html

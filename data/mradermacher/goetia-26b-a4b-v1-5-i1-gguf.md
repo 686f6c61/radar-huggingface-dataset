@@ -96,7 +96,7 @@ Comparativa con modelos de terceros de la misma categoría (tamaño o tarea): no
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.5-i1-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.5-i1-GGUF
 - Modelo base: https://huggingface.co/Naphula/Goetia-26B-A4B-v1.5
 - Cuantizaciones estáticas (incluye ficheros mmproj): https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.5-GGUF
 - Página de resumen y descargas del autor: https://hf.tst.eu/model#Goetia-26B-A4B-v1.5-i1-GGUF

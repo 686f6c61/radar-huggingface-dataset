@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yujana/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2, implementado con la libreria stable-baselines3. Lo publica el usuario Yujana en HuggingFace Hub como un artefacto de politica entrenada: no es un modelo de lenguaje ni un modelo generativo, sino un checkpoint de una politica que aprende a controlar un modulo de aterrizaje en un entorno de fisica 2D discreto. El repositorio contiene un unico fichero comprimido (ppo-LunarLander-v2.zip) que se carga directamente con la API de stable-baselines3.
+Yujana/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2, implementado con la libreria stable-baselines3. Lo publica el usuario Yujana en Hugging Face Hub como un artefacto de politica entrenada: no es un modelo de lenguaje ni un modelo generativo, sino un checkpoint de una politica que aprende a controlar un modulo de aterrizaje en un entorno de fisica 2D discreto. El repositorio contiene un unico fichero comprimido (ppo-LunarLander-v2.zip) que se carga directamente con la API de stable-baselines3.
 
 El resultado declarado por el autor es una recompensa media de 301,34 +/- 16,08 en el entorno LunarLander-v2, lo que arroja una puntuacion de 285,26 (media menos desviacion tipica) frente al umbral de referencia de 200 que fija habitualmente el propio entorno para considerar la tarea resuelta. Es, por tanto, un agente que supera el criterio estandar de resolucion del problema.
 
@@ -80,7 +80,7 @@ No se dispone de datos de otros agentes entrenados sobre LunarLander-v2 en la in
 
 | Modelo | Algoritmo | Entorno | Recompensa media | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Yujana/ppo-LunarLander-v2 | PPO | LunarLander-v2 | 301,34 +/- 16,08 | no aplica | no disponible | HuggingFace Hub |
+| Yujana/ppo-LunarLander-v2 | PPO | LunarLander-v2 | 301,34 +/- 16,08 | no aplica | no disponible | Hugging Face Hub |
 | Otros agentes de la comunidad para LunarLander-v2 | no disponible | LunarLander-v2 | no disponible | no aplica | no disponible | no disponible |
 
 Como referencia cualitativa, stable-baselines3 distribuye soluciones de referencia para LunarLander-v2 con varios algoritmos (PPO, DQN, A2C), pero no se dispone de sus valores numericos en la informacion facilitada y no se incluyen aqui para no inventar datos.
@@ -99,7 +99,7 @@ Como referencia cualitativa, stable-baselines3 distribuye soluciones de referenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yujana/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/Yujana/ppo-LunarLander-v2
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad huggingface_sb3 (carga de checkpoints desde el Hub): https://github.com/huggingface/huggingface_sb3
 - Documentacion de stable-baselines3 sobre PPO: https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html

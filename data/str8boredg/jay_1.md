@@ -76,5 +76,5 @@ No se dispone de información sobre adaptadores LoRA comparables de la misma cat
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/str8boredg/JAY_1
+- Página del modelo en Hugging Face: https://huggingface.co/str8boredg/JAY_1
 - Modelo base ACE-Step/Ace-Step1.5: https://huggingface.co/ACE-Step/Ace-Step1.5

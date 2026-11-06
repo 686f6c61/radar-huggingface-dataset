@@ -57,7 +57,7 @@ No se proporcionan comparaciones con otros modelos en la información disponible
 - **VRAM estimada**: no disponible en la información. Para un modelo BERT de 124M parámetros, una estimación orientativa sería unos 500 MB en float32, aunque no se puede confirmar.
 - **GPU recomendadas**: no se especifican. Cualquier GPU con al menos 2 GB de VRAM podría ser suficiente para inferencia en batch pequeño, pero no hay dato oficial.
 - **Compatibilidad con GPU de consumo**: sí, modelos de este tamaño se pueden ejecutar en GPUs como RTX 2060 o superiores, así como en CPU para inferencia lenta.
-- **Opciones de despliegue**: se puede usar con bibliotecas como Transformers de HuggingFace, o exportar a ONNX para inferencia más rápida. No se mencionan herramientas específicas como vLLM o llama.cpp.
+- **Opciones de despliegue**: se puede usar con bibliotecas como Transformers de Hugging Face, o exportar a ONNX para inferencia más rápida. No se mencionan herramientas específicas como vLLM o llama.cpp.
 - **Latencia y throughput**: no disponibles.
 
 ## Comparativa con modelos similares

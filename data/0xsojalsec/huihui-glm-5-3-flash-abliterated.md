@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento para ninguna de las filas, por lo que la c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xSojalSec/Huihui-GLM-5.3-Flash-abliterated
+- Modelo en Hugging Face: https://huggingface.co/0xSojalSec/Huihui-GLM-5.3-Flash-abliterated
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - GGUF de origen (unsloth): https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF
 - Repositorio del metodo de abliteration: https://github.com/Sumandora/remove-refusals-with-transformers

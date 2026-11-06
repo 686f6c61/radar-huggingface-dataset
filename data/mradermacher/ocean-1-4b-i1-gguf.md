@@ -90,7 +90,7 @@ No se dispone de datos publicados de rendimiento del modelo base ni de sus alter
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mradermacher/Ocean-1-4B-i1-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mradermacher/Ocean-1-4B-i1-GGUF
 - Cuantizaciones estaticas del mismo base: https://huggingface.co/mradermacher/Ocean-1-4B-GGUF
 - Modelo base: https://huggingface.co/OceanLabs/Ocean-1-4B
 - Pagina de resumen de cuantizaciones y descargas: https://hf.tst.eu/model#Ocean-1-4B-i1-GGUF

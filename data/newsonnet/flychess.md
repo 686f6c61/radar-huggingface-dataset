@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`flychess` es un experimento de código abierto publicado por el usuario NewSonnet en HuggingFace que conecta un modelo de cerebro de mosca de la fruta (Drosophila) con el juego del ajedrez, usando Stockfish como oponente clásico. No es un modelo de lenguaje ni un transformer: es un paquete Python con un contrato sensorial estable para un tablero de 8x8, una política recurrente determinista denominada `SurrogateFlyBrain`, un backend de conectoma basado en listas de aristas en JSON y un adaptador de ajedrez que valida la legalidad de las jugadas mediante `python-chess`. La relevancia actual es acotada y muy específica: sirve como banco de pruebas reproducible para investigar cómo se traduce un diagrama de cableado neuronal en una política de decisión, sin confundir esa ingeniería con biología real.
+`flychess` es un experimento de código abierto publicado por el usuario NewSonnet en Hugging Face que conecta un modelo de cerebro de mosca de la fruta (Drosophila) con el juego del ajedrez, usando Stockfish como oponente clásico. No es un modelo de lenguaje ni un transformer: es un paquete Python con un contrato sensorial estable para un tablero de 8x8, una política recurrente determinista denominada `SurrogateFlyBrain`, un backend de conectoma basado en listas de aristas en JSON y un adaptador de ajedrez que valida la legalidad de las jugadas mediante `python-chess`. La relevancia actual es acotada y muy específica: sirve como banco de pruebas reproducible para investigar cómo se traduce un diagrama de cableado neuronal en una política de decisión, sin confundir esa ingeniería con biología real.
 
 El repositorio incluye un bucle de partida por línea de comandos con límite de jugadas, grabación de repeticiones en JSONL, una interfaz web local con API HTTP y un panel de lectura de decisión que muestra hasta cinco candidatos legales con sus puntuaciones de política. Además incorpora un importador de calibración MaleCNS con bloqueo de procedencia para subgrafos filtrados, un backend de dinámica LIF (leaky integrate-and-fire) dispersa con signo, y un runtime opcional para cargar el artefacto público ChessFly/FlyWire (`connectome.bin.gz`, `neurons.bin.gz`, `flynet.safetensors`).
 
@@ -22,7 +22,7 @@ El propio autor delimita explícitamente el alcance científico: un conectoma si
 | Formato de pesos | `safetensors` (`flynet.safetensors`), grafos binarios comprimidos (`connectome.bin.gz`, `neurons.bin.gz`) y conectomas en JSON de lista de aristas |
 | Espacio de acciones | 1.968 acciones (adaptador ChessFly/FlyWire) |
 | Pasos de dinámica | 5 pasos calibrados en el adaptador ChessFly; configurable con `--neural-steps` en el backend de conectoma |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creacion (metadatos) | 2026-09-17 (fecha posterior a la actual; posible anomalia de metadatos) |
 
 ## Arquitectura y entrenamiento
@@ -77,7 +77,7 @@ No se dispone de modelos comparables en la información proporcionada. La tabla 
 
 | Sistema | Naturaleza | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| flychess (`SurrogateFlyBrain`) | Política recurrente determinista sobre grafo, con dinámica LIF dispersa | no disponible | Codificación del tablero de 8x8; 780 características en el adaptador ChessFly | no disponible | Repositorio `NewSonnet/flychess` en HuggingFace, 0 descargas |
+| flychess (`SurrogateFlyBrain`) | Política recurrente determinista sobre grafo, con dinámica LIF dispersa | no disponible | Codificación del tablero de 8x8; 780 características en el adaptador ChessFly | no disponible | Repositorio `NewSonnet/flychess` en Hugging Face, 0 descargas |
 | Artefacto ChessFly/FlyWire | Modelo derivado de FlyWire cargado mediante runtime opcional | no disponible | 780 características, 1.968 acciones, 5 pasos calibrados | Se debe conservar la licencia del grafo y las citas de origen | Descarga externa desde el Space de la demo y el repositorio del modelo |
 | Backend de conectoma JSON | Política basada en grafo de lista de aristas validado | no disponible | Tablero de 8x8 y pasos de simulación configurables | no disponible | Incluido en el repositorio (ejemplo `examples/tiny-connectome.json`) |
 | Stockfish | Motor clásico de búsqueda alfa-beta, no neuronal | no aplica | Posición de ajedrez vía UCI | Licencia propia de Stockfish, no indicada en la información | Ejecutable en el `PATH` o vía `--engine` |
@@ -94,12 +94,12 @@ No se dispone de modelos comparables en la información proporcionada. La tabla 
 - La máscara de jugadas legales se aplica fuera del modelo cerebral, por lo que la validez formal de la jugada no es una capacidad interna del agente.
 - El panel de lectura muestra telemetría de política, no cadena de pensamiento privada; interpretarlo como cognición sería un error metodológico.
 - Sin soporte de lenguaje natural, multimodalidad, tool calling ni multilingüismo: su ámbito es exclusivamente la selección de jugadas de ajedrez y la simulación de grafos neuronales.
-- Adopción prácticamente nula: 0 descargas y 0 likes en HuggingFace, sin pipeline declarado, lo que limita la validación independiente.
+- Adopción prácticamente nula: 0 descargas y 0 likes en Hugging Face, sin pipeline declarado, lo que limita la validación independiente.
 - Anomalía de metadatos: la fecha de creación registrada (17 de septiembre de 2026) es posterior a la fecha actual, lo que sugiere un error de sellado temporal o de reloj en la plataforma.
 - La búsqueda web asociada no devolvió resultados relevantes: los enlaces recuperados corresponden a foros de correo del proveedor Orange y no guardan relación con el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NewSonnet/flychess
+- Modelo en Hugging Face: https://huggingface.co/NewSonnet/flychess
 - Stockfish (oponente UCI citado en la model card): https://stockfishchess.org/
 - No se dispone de más URLs: la model card menciona `python-chess`, el Space de la demo de ChessFly/FlyWire y el repositorio del modelo, pero no incluye sus direcciones, y la búsqueda web no aportó enlaces relevantes. Los papers, blogs, repositorios y demos adicionales figuran como no disponibles.

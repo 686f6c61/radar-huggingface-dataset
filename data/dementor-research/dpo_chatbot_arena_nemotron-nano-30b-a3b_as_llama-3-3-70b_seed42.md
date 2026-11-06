@@ -61,9 +61,9 @@ El adaptador se compara con el modelo base sin adaptador y con otros adaptadores
 
 | Modelo | Base | Params totales | Params activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `nemotron-nano-30b-a3b_as_llama-3.3-70b_seed42` (este) | NVIDIA Nemotron Nano 30B A3B | 30B + LoRA | 3B | no disponible | no disponible | HuggingFace (adaptador) |
-| `llama-3.3-70b_as_nemotron-nano-30b-a3b_seed42` | Meta Llama-3.3-70B-Instruct | 70B + LoRA | 70B | 128k (modelo base) | no disponible (adaptador) | HuggingFace (adaptador) |
-| NVIDIA Nemotron Nano 30B A3B (base) | - | 30B | 3B | 128k (según especificaciones de NVIDIA) | NVIDIA Open Model License | HuggingFace |
+| `nemotron-nano-30b-a3b_as_llama-3.3-70b_seed42` (este) | NVIDIA Nemotron Nano 30B A3B | 30B + LoRA | 3B | no disponible | no disponible | Hugging Face (adaptador) |
+| `llama-3.3-70b_as_nemotron-nano-30b-a3b_seed42` | Meta Llama-3.3-70B-Instruct | 70B + LoRA | 70B | 128k (modelo base) | no disponible (adaptador) | Hugging Face (adaptador) |
+| NVIDIA Nemotron Nano 30B A3B (base) | - | 30B | 3B | 128k (según especificaciones de NVIDIA) | NVIDIA Open Model License | Hugging Face |
 
 La comparativa se limita a los adaptadores del mismo proyecto; no se dispone de comparaciones con otros modelos de la misma categoría (por ejemplo, Qwen, Mistral) en la información proporcionada.
 
@@ -79,7 +79,7 @@ La comparativa se limita a los adaptadores del mismo proyecto; no se dispone de 
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/dementor-research/dpo_chatbot_arena_nemotron-nano-30b-a3b_as_llama-3.3-70b_seed42
+- Hugging Face del adaptador: https://huggingface.co/dementor-research/dpo_chatbot_arena_nemotron-nano-30b-a3b_as_llama-3.3-70b_seed42
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Adaptador inverso (Llama-3.3-70B imitando a Nemotron Nano): https://huggingface.co/dementor-research/dpo_chatbot_arena_llama-3.3-70b_as_nemotron-nano-30b-a3b_seed42
 - Otro adaptador similar (Nemotron Nano imitando a OLMo-3-7B): https://huggingface.co/dementor-research/dpo_chatbot_arena_nemotron-nano-30b-a3b_as_olmo-3-7b_seed42

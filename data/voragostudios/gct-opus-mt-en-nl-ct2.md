@@ -82,7 +82,7 @@ La comparativa se limita a miembros de la misma familia OPUS-MT porque no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VoragoStudios/gct-opus-mt-en-nl-ct2
+- Repositorio Hugging Face: https://huggingface.co/VoragoStudios/gct-opus-mt-en-nl-ct2
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-en-nl
 - Proyecto OPUS-MT (Helsinki-NLP): https://huggingface.co/Helsinki-NLP
 - Libreria CTranslate2: https://github.com/OpenNMT/CTranslate2

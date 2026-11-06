@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aurelie es un adaptador LoRA de generacion de imagenes texto-a-imagen publicado por el usuario AiMamis en HuggingFace. No es un modelo completo, sino un ajuste de bajo rango que se aplica sobre el modelo de difusion base krea/Krea-2-Turbo, al que anade la capacidad de reproducir un personaje femenino concreto definido por el prompt de instancia "Aurelie, Pale skin, Black hair with blunt bangs, Blue eyes".
+Aurelie es un adaptador LoRA de generacion de imagenes texto-a-imagen publicado por el usuario AiMamis en Hugging Face. No es un modelo completo, sino un ajuste de bajo rango que se aplica sobre el modelo de difusion base krea/Krea-2-Turbo, al que anade la capacidad de reproducir un personaje femenino concreto definido por el prompt de instancia "Aurelie, Pale skin, Black hair with blunt bangs, Blue eyes".
 
 El repositorio se distribuye en formato diffusers, ocupa 0,5 GB y esta publicado bajo licencia openrail++. La model card es minima: se limita a declarar el modelo base, la licencia, el prompt de instancia y las cuatro palabras de activacion (Aurelie, Pale skin, Black hair with blunt bangs, Blue eyes). No incluye informacion sobre el dataset de entrenamiento, el rango del adaptador, los modulos objetivo ni resultados de evaluacion.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Tamano del adaptador: el repositorio ocupa 0,5 GB, un peso despreciable frente al modelo base.
 - GPU recomendadas: no disponible. La idoneidad de tarjetas consumer (por ejemplo, RTX 3060, 4070, 4090) depende del modelo base y de la precision empleada, dato no publicado.
 - Cabe en GPU consumer: no confirmado, condicionado al modelo base.
-- Opciones de despliegue: al estar etiquetado como diffusers, la via natural es la libreria diffusers de HuggingFace, cargando el LoRA sobre el base. La compatibilidad con ComfyUI, Automatic1111/Forge, InvokeAI o interfaces similares depende de que dichas herramientas soporten el modelo base, extremo no documentado.
+- Opciones de despliegue: al estar etiquetado como diffusers, la via natural es la libreria diffusers de Hugging Face, cargando el LoRA sobre el base. La compatibilidad con ComfyUI, Automatic1111/Forge, InvokeAI o interfaces similares depende de que dichas herramientas soporten el modelo base, extremo no documentado.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ No se han identificado modelos comparables en la informacion proporcionada. La b
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/AiMamis/Aurelie
+- Pagina del modelo en Hugging Face: https://huggingface.co/AiMamis/Aurelie
 - Ficheros y versiones: https://huggingface.co/AiMamis/Aurelie/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Perfil del autor: https://huggingface.co/AiMamis

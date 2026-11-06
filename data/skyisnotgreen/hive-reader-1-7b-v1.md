@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hive Reader 1.7B | 1.728.801.600 | no disponible | mechanics + RAG | LFM 1.0 (límite 10 M USD) | HuggingFace, GGUF, PEFT |
-| LiquidAI/LFM3-1.7B-Base | 1.700 M (aprox.) | no disponible | base generalista | LFM 1.0 | HuggingFace |
-| Hive Conductor 1.7B | 1.700 M (aprox.) | no disponible | controller + planner | LFM 1.0 | HuggingFace |
-| Hive Auditor 1.7B | 1.700 M (aprox.) | no disponible | placement + critic | LFM 1.0 | HuggingFace |
+| Hive Reader 1.7B | 1.728.801.600 | no disponible | mechanics + RAG | LFM 1.0 (límite 10 M USD) | Hugging Face, GGUF, PEFT |
+| LiquidAI/LFM3-1.7B-Base | 1.700 M (aprox.) | no disponible | base generalista | LFM 1.0 | Hugging Face |
+| Hive Conductor 1.7B | 1.700 M (aprox.) | no disponible | controller + planner | LFM 1.0 | Hugging Face |
+| Hive Auditor 1.7B | 1.700 M (aprox.) | no disponible | placement + critic | LFM 1.0 | Hugging Face |
 
 La comparativa con modelos de otras familias no está disponible en la información proporcionada; los únicos comparables documentados son los miembros de la propia familia Hive y el modelo base.
 
@@ -90,7 +90,7 @@ La comparativa con modelos de otras familias no está disponible en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SkyIsNotGreen/hive-reader-1.7b-v1
+- Modelo en Hugging Face: https://huggingface.co/SkyIsNotGreen/hive-reader-1.7b-v1
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Licencia del base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base/blob/main/LICENSE
 - Repositorio Hive: https://github.com/sky-is-green/hive

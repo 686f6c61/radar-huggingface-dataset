@@ -43,7 +43,7 @@ BiRefNet introduce un mecanismo de referencia bilateral que combina característ
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El paper original (arXiv:2401.03407) reporta métricas de SOTA en tareas DIS, HRSOD y COD, pero esos datos no están incluidos en la ficha de HuggingFace ni en los resultados de búsqueda proporcionados.
+No se han publicado resultados de benchmarks en la informacion disponible. El paper original (arXiv:2401.03407) reporta métricas de SOTA en tareas DIS, HRSOD y COD, pero esos datos no están incluidos en la ficha de Hugging Face ni en los resultados de búsqueda proporcionados.
 
 ## Requisitos de hardware
 

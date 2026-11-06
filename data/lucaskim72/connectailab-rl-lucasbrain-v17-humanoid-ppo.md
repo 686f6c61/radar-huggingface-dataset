@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks estándar en la información dispon
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: muy baja; una política MLP para `Humanoid-v5` típicamente ocupa del orden de megabytes, aunque el tamaño exacto no está disponible. El repositorio pesa 0,0 GB según HuggingFace.
+- VRAM estimada para inferencia: muy baja; una política MLP para `Humanoid-v5` típicamente ocupa del orden de megabytes, aunque el tamaño exacto no está disponible. El repositorio pesa 0,0 GB según Hugging Face.
 - GPU recomendadas: no es necesario GPU para inferencia; cualquier CPU moderna puede ejecutar la política. Para entrenamiento continuado, una GPU consumer (RTX 3060 o superior) acelera MuJoCo y el bucle de PPO.
 - Cabe en cualquier GPU consumer e incluso en CPU; el cuello de botella es el simulador MuJoCo, no la red.
 - Opciones de despliegue: PyTorch nativo cargando `model.pt`; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no aplican a este tipo de modelo). Requiere Gymnasium y MuJoCo instalados.
@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks estándar en la información dispon
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-lucasbrain-v17-humanoid-ppo | PPO (RL) | Humanoid-v5 | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
+| connectailab-rl-lucasbrain-v17-humanoid-ppo | PPO (RL) | Humanoid-v5 | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
 | Stable-Baselines3 PPO (referencia) | PPO (RL) | Humanoid-v5 | configurable | no aplica | MIT | GitHub, ampliamente usado |
 | CleanRL PPO | PPO (RL) | Humanoid-v5 | configurable | no aplica | MIT | GitHub, single-file |
-| RL Zoo / sb3-contrib | Colección de políticas | Humanoid-v5 | variable | no aplica | MIT | HuggingFace / GitHub |
+| RL Zoo / sb3-contrib | Colección de políticas | Humanoid-v5 | variable | no aplica | MIT | Hugging Face / GitHub |
 
 La comparación es cualitativa: no hay datos públicos de rendimiento de este checkpoint frente a las implementaciones de referencia, y la licencia del modelo no está declarada, lo que limita su uso comercial frente a alternativas con licencia MIT.
 
@@ -99,7 +99,7 @@ La comparación es cualitativa: no hay datos públicos de rendimiento de este ch
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v17-humanoid-ppo
+- Hugging Face: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v17-humanoid-ppo
 - Fichero de recompensa aumentada: `added_scores.py` en el mismo repositorio (descargable vía `hf_hub_download`)
 - Pesos: `model.pt` en el mismo repositorio
 - Entorno: `Humanoid-v5` de Gymnasium (https://gymnasium.farama.org/) con backend MuJoCo (https://mujoco.org/)

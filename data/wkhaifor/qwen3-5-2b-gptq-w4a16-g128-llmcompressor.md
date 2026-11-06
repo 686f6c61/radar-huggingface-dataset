@@ -65,8 +65,8 @@ No se han publicado resultados de MMLU, HumanEval ni otros benchmarks en la info
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-2B-GPTQ-W4A16-G128 (este) | 2,21 mil millones | no disponible | GPTQ W4A16 INT4, grupo 128 | Apache-2.0 | HuggingFace y ModelScope |
-| Qwen/Qwen3.5-2B (base) | 2,21 mil millones | no disponible | FP16/BF16 | Apache-2.0 | HuggingFace |
+| Qwen3.5-2B-GPTQ-W4A16-G128 (este) | 2,21 mil millones | no disponible | GPTQ W4A16 INT4, grupo 128 | Apache-2.0 | Hugging Face y ModelScope |
+| Qwen/Qwen3.5-2B (base) | 2,21 mil millones | no disponible | FP16/BF16 | Apache-2.0 | Hugging Face |
 | Alternativas de ~2B de otras familias | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de datos de benchmarks ni de especificaciones de modelos comparables de otras familias, por lo que la comparativa se limita al modelo base y a la ausencia de alternativas documentadas.
@@ -82,7 +82,7 @@ No se dispone en la informacion proporcionada de datos de benchmarks ni de espec
 - Licencia Apache-2.0: permite uso comercial, pero se recomienda verificar las condiciones del modelo base y citar adecuadamente la autoria original de Qwen.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/wkhaifor/Qwen3.5-2B-GPTQ-W4A16-G128-LLMCompressor
+- Modelo en Hugging Face: https://huggingface.co/wkhaifor/Qwen3.5-2B-GPTQ-W4A16-G128-LLMCompressor
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio espejo en ModelScope: https://www.modelscope.cn/models/kfcVme50/Qwen3.5-2B-GPTQ-W4A16-G128-LLMCompressor
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

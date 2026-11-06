@@ -44,7 +44,7 @@ En cuanto al entrenamiento de este modelo concreto, no se ha publicado informaci
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de mAP, precision, recall ni comparaciones con otros modelos de deteccion en el repositorio de HuggingFace. Tampoco se encuentran referencias externas que evalúen este modelo concreto.
+No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de mAP, precision, recall ni comparaciones con otros modelos de deteccion en el repositorio de Hugging Face. Tampoco se encuentran referencias externas que evalúen este modelo concreto.
 
 ## Requisitos de hardware
 
@@ -69,9 +69,9 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/lukasiktar11/military-vehicle-detector2-yolo26
+- Repositorio del modelo en Hugging Face: https://huggingface.co/lukasiktar11/military-vehicle-detector2-yolo26
 - Modelo relacionado (version sin "2"): https://huggingface.co/lukasiktar11/military-vehicle-detector-yolo26
 - Repositorio de Ultralytics YOLO26 en GitHub: https://github.com/ultralytics/yolo26
 - Articulo de YOLO26 en arXiv: https://arxiv.org/html/2606.03748v1
 - Repositorio principal de Ultralytics: https://github.com/ultralytics/ultralytics
-- Pagina del modelo YOLO26 en HuggingFace de Ultralytics: https://huggingface.co/Ultralytics/YOLO26
+- Pagina del modelo YOLO26 en Hugging Face de Ultralytics: https://huggingface.co/Ultralytics/YOLO26

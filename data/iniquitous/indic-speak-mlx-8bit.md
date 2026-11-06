@@ -78,7 +78,7 @@ Otras variantes de iniquitous: 4-bit, 6-bit, mixed, bf16, que ofrecen diferentes
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/iniquitous/indic-speak-mlx-8bit
+- Hugging Face del modelo: https://huggingface.co/iniquitous/indic-speak-mlx-8bit
 - Modelo base (bodhan-ai/indic-speak): https://huggingface.co/bodhan-ai/indic-speak
 - Licencia Indic Open Model License v1.0: https://github.com/Bodhan-AI/bodhan-model-info/blob/main/licenses/indic-open-model-license/v1/Indic_Open_Model_License.md
 - Llama 3.2 Community License: https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/LICENSE

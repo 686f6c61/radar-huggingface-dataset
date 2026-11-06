@@ -104,10 +104,10 @@ La informacion proporcionada no incluye datos de benchmarks de modelos alternati
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sigmanih/microsoft-phi-4-GGUF-IQ2_XXS | ~14,66 B (denso) | 16.384 tokens | GGUF IQ2_XXS | "other" (badge Apache-2.0; base MIT) | HuggingFace, 0 descargas |
-| microsoft/phi-4 (modelo base) | ~14,66 B (denso) | 16.384 tokens | Safetensors (BF16/FP16) | MIT | HuggingFace |
-| Otras cuantizaciones de phi-4 (Q4, Q8, etc.) | ~14,66 B (denso) | 16.384 tokens | GGUF | Segun el autor de cada repo | HuggingFace |
-| Alternativas de ~8 B (por ejemplo Llama-3.1-8B o Qwen2.5-7B) | ~7-8 B | Hasta 128.000 tokens | Safetensors, GGUF | Licencias comunitarias o Apache-2.0 | HuggingFace |
+| sigmanih/microsoft-phi-4-GGUF-IQ2_XXS | ~14,66 B (denso) | 16.384 tokens | GGUF IQ2_XXS | "other" (badge Apache-2.0; base MIT) | Hugging Face, 0 descargas |
+| microsoft/phi-4 (modelo base) | ~14,66 B (denso) | 16.384 tokens | Safetensors (BF16/FP16) | MIT | Hugging Face |
+| Otras cuantizaciones de phi-4 (Q4, Q8, etc.) | ~14,66 B (denso) | 16.384 tokens | GGUF | Segun el autor de cada repo | Hugging Face |
+| Alternativas de ~8 B (por ejemplo Llama-3.1-8B o Qwen2.5-7B) | ~7-8 B | Hasta 128.000 tokens | Safetensors, GGUF | Licencias comunitarias o Apache-2.0 | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre estas alternativas en la informacion proporcionada.
 
@@ -127,7 +127,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sigmanih/microsoft-phi-4-GGUF-IQ2_XXS
+- Hugging Face: https://huggingface.co/sigmanih/microsoft-phi-4-GGUF-IQ2_XXS
 - Modelo base: https://huggingface.co/microsoft/phi-4
 - Repositorio Sigma Studio: https://github.com/Sigmanih/SigmaStudio
-- Perfil del autor en HuggingFace: https://huggingface.co/sigmanih
+- Perfil del autor en Hugging Face: https://huggingface.co/sigmanih

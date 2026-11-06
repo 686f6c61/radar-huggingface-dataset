@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ClaydolES es un modelo publicado por el usuario Ryanham1lton en HuggingFace bajo licencia Creative Commons Attribution 4.0 (CC-BY-4.0). El repositorio tiene un tamaño de aproximadamente 0,1 GB, lo que sugiere un modelo de pequeño tamaño, aunque no se especifica la arquitectura, el número de parámetros ni el pipeline. La model card está prácticamente vacía, sin descripción del modelo, de su propósito ni de sus capacidades.
+ClaydolES es un modelo publicado por el usuario Ryanham1lton en Hugging Face bajo licencia Creative Commons Attribution 4.0 (CC-BY-4.0). El repositorio tiene un tamaño de aproximadamente 0,1 GB, lo que sugiere un modelo de pequeño tamaño, aunque no se especifica la arquitectura, el número de parámetros ni el pipeline. La model card está prácticamente vacía, sin descripción del modelo, de su propósito ni de sus capacidades.
 
 El modelo fue creado el 21 de agosto de 2026 y actualizado el mismo día. No registra descargas ni valoraciones en la comunidad, lo que indica que es un proyecto muy reciente o poco difundido. No existe documentación técnica pública más allá de la licencia, por lo que no es posible evaluar su rendimiento ni sus aplicaciones prácticas con los datos disponibles.
 
@@ -31,7 +31,7 @@ No se dispone de información sobre las capacidades del modelo. No se puede conf
 
 ## Casos de uso
 
-No se pueden identificar casos de uso concretos sin información sobre las capacidades del modelo. Cualquier aplicación práctica sería especulativa y no está respaldada por datos. Se recomienda a los interesados consultar directamente el repositorio de HuggingFace o contactar con el autor para obtener más detalles.
+No se pueden identificar casos de uso concretos sin información sobre las capacidades del modelo. Cualquier aplicación práctica sería especulativa y no está respaldada por datos. Se recomienda a los interesados consultar directamente el repositorio de Hugging Face o contactar con el autor para obtener más detalles.
 
 ## Benchmarks y rendimiento
 
@@ -55,13 +55,13 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo, no es p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ryanham1lton/ClaydolES
-- Perfil del autor en HuggingFace: https://huggingface.co/Ryanham1lton (no verificado)
+- Repositorio Hugging Face: https://huggingface.co/Ryanham1lton/ClaydolES
+- Perfil del autor en Hugging Face: https://huggingface.co/Ryanham1lton (no verificado)
 - Otros modelos del autor (sin relación confirmada): https://huggingface.co/Ryanham1lton/GrumpigDD y https://huggingface.co/Ryanham1lton/Numel
 
 Nota: los enlaces web encontrados en la búsqueda no proporcionan información adicional sobre este modelo específico.</think>## Resumen
 
-ClaydolES es un modelo publicado en HuggingFace por el usuario Ryanham1lton con licencia CC-BY-4.0. El repositorio tiene un tamaño de aproximadamente 0,1 GB, lo que sugiere un modelo de pequeñas dimensiones, pero la model card está prácticamente vacía y no se proporciona ninguna especificación técnica sobre arquitectura, parámetros o capacidades. Fue creado el 21 de agosto de 2026 y actualizado el mismo día, sin descargas ni valoraciones de la comunidad.
+ClaydolES es un modelo publicado en Hugging Face por el usuario Ryanham1lton con licencia CC-BY-4.0. El repositorio tiene un tamaño de aproximadamente 0,1 GB, lo que sugiere un modelo de pequeñas dimensiones, pero la model card está prácticamente vacía y no se proporciona ninguna especificación técnica sobre arquitectura, parámetros o capacidades. Fue creado el 21 de agosto de 2026 y actualizado el mismo día, sin descargas ni valoraciones de la comunidad.
 
 El modelo no cuenta con documentación pública más allá de la licencia, ni resultados de búsqueda relevantes que aporten información adicional sobre su funcionamiento. No se puede confirmar si se trata de un modelo de lenguaje, de visión o de otro tipo. La ausencia de datos técnicos y de benchmarks hace imposible evaluar su utilidad práctica o compararlo con alternativas del ecosistema.
 
@@ -90,7 +90,7 @@ No se puede confirmar ninguna capacidad del modelo con la informacion disponible
 
 ## Casos de uso
 
-No se pueden identificar casos de uso concretos sin informacion sobre las capacidades del modelo. Cualquier sugerencia seria especulativa y no respaldada por datos. Se recomienda a los interesados contactar directamente con el autor del repositorio o revisar el contenido del propio repositorio en HuggingFace para obtener mas detalles.
+No se pueden identificar casos de uso concretos sin informacion sobre las capacidades del modelo. Cualquier sugerencia seria especulativa y no respaldada por datos. Se recomienda a los interesados contactar directamente con el autor del repositorio o revisar el contenido del propio repositorio en Hugging Face para obtener mas detalles.
 
 ## Benchmarks y rendimiento
 
@@ -114,8 +114,8 @@ No disponible. Al no conocerse la arquitectura, el tamaño o el dominio del mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ryanham1lton/ClaydolES
-- Perfil del autor en HuggingFace: https://huggingface.co/Ryanham1lton
+- Repositorio Hugging Face: https://huggingface.co/Ryanham1lton/ClaydolES
+- Perfil del autor en Hugging Face: https://huggingface.co/Ryanham1lton
 - Otros repositorios del autor: https://huggingface.co/Ryanham1lton/GrumpigDD y https://huggingface.co/Ryanham1lton/Numel
 
 Nota: los resultados de busqueda web no aportan informacion adicional sobre este modelo especifico.

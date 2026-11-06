@@ -103,7 +103,7 @@ Alternativas de la misma categoria (adaptadores PEFT para modelado de eleccion o
 - Sin opcion de abstencion. El formato de salida solo admite `A` o `B`; el modelo no puede expresar "no lo se" ni "empate".
 - Solapamiento de datos. El entrenamiento uso todo experimento con `experiment_year <= 2021`, de modo que un conjunto de test construido con un corte inferior se solapa con el entrenamiento. Hay que revisar `SPLITS.md` antes de comparar cifras.
 - Datos no redistribuidos. El bundle `preference_fm` no se incluye y no es redistribuible: 113 de los 127 experimentos no declaran licencia y los archivos de replicacion originales provienen de Dataverse y fuentes similares con sus propios terminos. Reconstruir el dataset exige una copia propia del bundle.
-- Modelo base restringido. `google/gemma-3-12b-it` esta sujeto a aprobacion de terminos en HuggingFace; sin `huggingface-cli login` y la cuenta autorizada, el ejemplo no se ejecuta.
+- Modelo base restringido. `google/gemma-3-12b-it` esta sujeto a aprobacion de terminos en Hugging Face; sin `huggingface-cli login` y la cuenta autorizada, el ejemplo no se ejecuta.
 - Licencia `gemma`. Cualquier uso comercial queda sujeto a los terminos de uso de Gemma, que imponen obligaciones y restricciones adicionales mas alla de las habituales de una licencia open source permisiva.
 - Sesgos de los datos de origen. Al derivar de estudios de conjoint publicados, hereda el sesgo de seleccion de que materias, paises y periodos llegan a publicarse, con predominio de los cortes temporales mas antiguos.
 - Cero validacion externa. El repositorio tiene 0 descargas y 0 likes, sin evaluaciones independientes que confirmen los numeros.
@@ -113,7 +113,7 @@ Alternativas de la misma categoria (adaptadores PEFT para modelado de eleccion o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dean22029/pr_fm_gemma3_12b_adapter
+- Modelo en Hugging Face: https://huggingface.co/dean22029/pr_fm_gemma3_12b_adapter
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Libreria PEFT: https://github.com/huggingface/peft
 - Terminos de uso de Gemma (licencia `gemma`): https://ai.google.dev/gemma/terms

@@ -76,7 +76,7 @@ La información proporcionada no incluye ningún modelo de referencia con cifras
 
 | Modelo | Naturaleza | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zajaczaj/retrieval | Implementacion propia de Albef, checkpoint de inicializacion sin entrenar | 24.832 | no disponible | MIT | HuggingFace, 0 descargas |
+| zajaczaj/retrieval | Implementacion propia de Albef, checkpoint de inicializacion sin entrenar | 24.832 | no disponible | MIT | Hugging Face, 0 descargas |
 | Albef original (Salesforce) | Modelo de investigacion preentrenado para vision-lenguaje y retrieval | no disponible en la informacion | no disponible | no disponible en la informacion | no disponible en la informacion |
 | Alternativas de retrieval multimodal (CLIP y similares) | Modelos preentrenados de emparejamiento imagen-texto | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion |
 
@@ -91,12 +91,12 @@ No se dispone en la información facilitada de cifras de parámetros, contexto, 
 - Riesgo de alucinación: no aplica a un modelo generativo no entrenado, pero sí implica el riesgo de que un tercero interprete erróneamente el repositorio como una versión funcional de Albef.
 - La licencia MIT es permisiva y permite uso comercial del código, pero hay que revisar por separado los términos de los datos externos que se utilicen para entrenar, tal como advierte la model card.
 - Al ser una implementación personal, no cuenta con mantenimiento, issues ni adopción (0 descargas, 0 likes), lo que aumenta el riesgo de que quede sin actualizar.
-- Las APIs automáticas de carga de modelos de HuggingFace no funcionarán sin escribir un adaptador específico.
+- Las APIs automáticas de carga de modelos de Hugging Face no funcionarán sin escribir un adaptador específico.
 - Los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto incluidos en este repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zajaczaj/retrieval
+- Modelo en Hugging Face: https://huggingface.co/zajaczaj/retrieval
 - Articulo de contexto sobre retrieval en sistemas de IA agentica: https://thenewstack.io/agentic-ai-retrieval-problem/
 - Resumen del mismo articulo: https://daily.dev/posts/agentic-ai-doesn-t-have-a-model-problem-it-has-a-retrieval-problem--w44jceia1
 - Documentacion de Microsoft sobre RAG e indices: https://learn.microsoft.com/en-us/azure/foundry/concepts/retrieval-augmented-generation

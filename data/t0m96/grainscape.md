@@ -2,7 +2,7 @@
 
 ## Resumen
 
-t0m96/grainscape es un repositorio de modelo alojado en HuggingFace por el usuario t0m96, con licencia Apache 2.0 y un tamano de repositorio de 17,2 GB. El repositorio fue creado el 13 de diciembre de 2025 y su ultima actualizacion registrada es del 25 de septiembre de 2026. No acumula descargas ni likes, no tiene pipeline declarado y no especifica idiomas soportados.
+t0m96/grainscape es un repositorio de modelo alojado en Hugging Face por el usuario t0m96, con licencia Apache 2.0 y un tamano de repositorio de 17,2 GB. El repositorio fue creado el 13 de diciembre de 2025 y su ultima actualizacion registrada es del 25 de septiembre de 2026. No acumula descargas ni likes, no tiene pipeline declarado y no especifica idiomas soportados.
 
 La informacion publicada por el autor es practicamente nula: la model card se reduce a la linea de metadatos `license: apache-2.0`, sin descripcion, sin especificaciones tecnicas, sin datos de entrenamiento y sin ejemplos de uso. En consecuencia, no es posible confirmar la arquitectura, el numero de parametros, la longitud de contexto ni la modalidad (texto, imagen u otras) a partir de la informacion proporcionada.
 
@@ -79,7 +79,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 | Proyecto | Relacion con t0m96/grainscape | Datos disponibles |
 |---|---|---|
-| `Danrisi/GrainScape_UltraReal_ZImage` (HuggingFace) | Nombre similar, sin confirmar | Checkpoint `grainscape_zimage.safetensors` |
+| `Danrisi/GrainScape_UltraReal_ZImage` (Hugging Face) | Nombre similar, sin confirmar | Checkpoint `grainscape_zimage.safetensors` |
 | GrainScape UltraReal (Civitai) | Nombre similar, sin confirmar | 21 valoraciones de usuarios, 5 estrellas |
 | Paquete `grainscape` de R (CRAN/GitHub) | Homonimia, practicamente con seguridad no relacionado | Modelado de conectividad de paisajes |
 
@@ -96,7 +96,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/t0m96/grainscape
+- Repositorio en Hugging Face: https://huggingface.co/t0m96/grainscape
 - Repositorio posiblemente relacionado, sin confirmar: https://huggingface.co/Danrisi/GrainScape_UltraReal_ZImage/blob/main/grainscape_zimage.safetensors
 - Modelo GrainScape UltraReal en Civitai (sin confirmar relacion): https://civitai.com/models/1332651/reviews?modelVersionId=3352222
 - Paquete de R `grainscape` en CRAN (homonimo): https://cran.r-project.org/package=grainscape

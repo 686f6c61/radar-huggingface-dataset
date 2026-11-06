@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks de rendimiento general (razonamient
 - VRAM estimada: con 8.000 millones de parametros en bf16 (2 bytes por parametro), el modelo requiere aproximadamente 16 GB de VRAM para inferencia sin cuantizacion. Con cuantizacion a 8 bits (8 GB) o 4 bits (4 GB) podria ejecutarse en GPUs con menos memoria, aunque no se proporcionan archivos GGUF ni cuantizaciones oficiales.
 - GPUs recomendadas: una NVIDIA RTX 4090 (24 GB VRAM) es suficiente para bf16; una A100 (40/80 GB) o H100 permiten mayor margen y batch. Para cuantizacion 4-bit, una RTX 3060 (12 GB) o RTX 4060 Ti (16 GB) podrian ser suficientes.
 - Compatibilidad con GPU de consumo: si, con cuantizacion. El modelo cabe en GPUs de 16 GB en bf16, y en GPUs de 8 GB con cuantizacion de 8 bits.
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (si se crea un Modelfile) o mediante la API de HuggingFace Inference Endpoints.
+- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (si se crea un Modelfile) o mediante la API de Hugging Face Inference Endpoints.
 - Latencia y throughput: no se proporcionan datos especificos. Como referencia, un modelo de 8B en una RTX 4090 suele generar entre 50 y 100 tokens por segundo en bf16, dependiendo del batch y la longitud de contexto.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ La principal diferencia es la eliminacion del rechazo, con una degradacion minim
 
 ## Enlaces
 
-- [HuggingFace - Ishowbackup/gemma-4-E4B-it-uncensored](https://huggingface.co/Ishowbackup/gemma-4-E4B-it-uncensored)
-- [HuggingFace - Modelo base google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it)
+- [Hugging Face - Ishowbackup/gemma-4-E4B-it-uncensored](https://huggingface.co/Ishowbackup/gemma-4-E4B-it-uncensored)
+- [Hugging Face - Modelo base google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it)
 - [Blog - Norm-preserving biprojected abliteration (grimjim, Nov 2025)](https://huggingface.co/blog/grimjim/norm-preserving-biprojected-abliteration)
 - [Repositorio de reproduccion (github.com/TrevorS/gemma-4-abliteration)](https://github.com/TrevorS/gemma-4-abliteration)

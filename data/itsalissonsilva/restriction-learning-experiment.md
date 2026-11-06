@@ -98,7 +98,7 @@ No se dispone de comparación con adaptadores de privacidad o seguridad de terce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsalissonsilva/Restriction-Learning-Experiment
+- Modelo en Hugging Face: https://huggingface.co/itsalissonsilva/Restriction-Learning-Experiment
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Demo LoRA-Forensics: https://huggingface.co/spaces/itsalissonsilva/LoRA-Forensics
 - Demo Neural-Steering-Lab: https://huggingface.co/spaces/itsalissonsilva/Neural-Steering-Lab

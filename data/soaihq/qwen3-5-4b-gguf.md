@@ -96,7 +96,7 @@ Las cifras de memoria que se indican a continuacion son estimaciones derivadas d
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos alternativos proceden de sus fichas oficiales de HuggingFace y deben verificarse antes de tomar decisiones de produccion. No se dispone de comparaciones de rendimiento medidas entre ellos.
+Los datos de los modelos alternativos proceden de sus fichas oficiales de Hugging Face y deben verificarse antes de tomar decisiones de produccion. No se dispone de comparaciones de rendimiento medidas entre ellos.
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia |
 |---|---|---|---|---|
@@ -124,7 +124,7 @@ Frente a Qwen3-4B, la diferencia principal es el contexto (256K frente a 32K nat
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/SoAIHQ/Qwen3.5-4B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/SoAIHQ/Qwen3.5-4B-GGUF
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Fichero Q4_K_M: https://huggingface.co/SoAIHQ/Qwen3.5-4B-GGUF/resolve/main/Qwen3.5-4B-Q4_K_M.gguf

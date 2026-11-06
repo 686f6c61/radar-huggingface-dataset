@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UTRBERT-3mer es un modelo de lenguaje basado en la arquitectura BERT-base, preentrenado sobre secuencias de regiones 3' UTR (regiones no traducidas) de ARN mensajero humano. Se trata de un port minimalista a HuggingFace de la variante de 3-mer del modelo 3UTRBERT, desarrollado originalmente por el grupo de Yuning Yang y colaboradores. El modelo resuelve el problema de obtener representaciones densas y aprendidas de secuencias de ARN para estudiar la regulacion genica mediada por la region 3' UTR, un area clave en biologia molecular y medicina.
+UTRBERT-3mer es un modelo de lenguaje basado en la arquitectura BERT-base, preentrenado sobre secuencias de regiones 3' UTR (regiones no traducidas) de ARN mensajero humano. Se trata de un port minimalista a Hugging Face de la variante de 3-mer del modelo 3UTRBERT, desarrollado originalmente por el grupo de Yuning Yang y colaboradores. El modelo resuelve el problema de obtener representaciones densas y aprendidas de secuencias de ARN para estudiar la regulacion genica mediada por la region 3' UTR, un area clave en biologia molecular y medicina.
 
 Con 86,7 millones de parametros y una arquitectura de encoder BERT de 12 capas, el modelo tokeniza las secuencias de ARN convirtiendo timidina a uridina y dividiendolas en 3-meros solapados con paso 1. Su ventana de contexto es de 512 tokens, lo que equivale a aproximadamente 510 nucleotidos crudos. Fue preentrenado con el objetivo de modelado de lenguaje enmascarado (MLM) sobre secuencias de 3' UTR humanas, y su relevancia actual radica en que proporciona una base solida y verificada para tareas de prediccion y analisis en genomica funcional.
 
@@ -27,7 +27,7 @@ UTRBERT-3mer emplea una arquitectura de encoder BERT-base con normalizacion post
 
 La tokenizacion convierte las secuencias de ARN (o ADN) de T a U y las divide en 3-meros solapados con stride 1: una secuencia de longitud L produce L-2 tokens. El script de preprocesamiento oficial limita las secuencias crudas a 510 nucleotidos. El preentrenamiento se realizo con el objetivo de modelado de lenguaje enmascarado (MLM) sobre secuencias de 3' UTR humanas, utilizando el checkpoint `3-new-12w-0` publicado en figshare. No se dispone de informacion sobre el numero exacto de secuencias ni de tokens de entrenamiento.
 
-El port a HuggingFace anade backends de atencion seleccionables: SDPA (PyTorch 2.0+) y Flash Attention 2, ademas del eager original. La paridad con los pesos originales fue verificada en los 13 niveles de representacion (embedding + 12 capas) y en los logits de MLM, con diferencias maximas en float32 de 1,45e-5 (estados ocultos) y 3,00e-5 (logits) en modo eager, y 8,11e-6 / 2,46e-5 con SDPA.
+El port a Hugging Face anade backends de atencion seleccionables: SDPA (PyTorch 2.0+) y Flash Attention 2, ademas del eager original. La paridad con los pesos originales fue verificada en los 13 niveles de representacion (embedding + 12 capas) y en los logits de MLM, con diferencias maximas en float32 de 1,45e-5 (estados ocultos) y 3,00e-5 (logits) en modo eager, y 8,11e-6 / 2,46e-5 con SDPA.
 
 ## Capacidades
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 350 MB en FP32 y 175 MB en FP16 para los pesos del modelo, mas overhead de activaciones y atencion.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; una RTX 3060, RTX 4090 o similar consumer es mas que adecuada. Tambien puede ejecutarse en CPU sin problemas para inferencia de lotes pequenos.
 - Compatibilidad con GPU consumer: si, el modelo cabe comodamente en cualquier GPU consumer moderna.
-- Opciones de despliegue: transformers (HuggingFace) con `trust_remote_code=True`; compatible con backends SDPA y Flash Attention 2. No se menciona soporte para vLLM, llama.cpp u Ollama en la documentacion disponible.
+- Opciones de despliegue: transformers (Hugging Face) con `trust_remote_code=True`; compatible con backends SDPA y Flash Attention 2. No se menciona soporte para vLLM, llama.cpp u Ollama en la documentacion disponible.
 - Latencia y throughput: no disponible en la informacion proporcionada; al tratarse de un modelo BERT-base de 86,7 millones de parametros, la latencia por secuencia es del orden de milisegundos en GPU moderna.
 
 ## Comparativa con modelos similares
@@ -75,14 +75,14 @@ Los modelos UTRBERT-4mer, 5mer y 6mer pertenecen a la misma familia y comparten 
 - El modelo fue preentrenado exclusivamente sobre secuencias de 3' UTR humanas; su capacidad de generalizacion a otras especies o regiones genomicas no esta verificada.
 - La longitud maxima de secuencia es de 512 tokens (aproximadamente 510 nucleotidos), lo que limita el analisis de 3' UTR largas.
 - No es un modelo generativo: no puede generar secuencias de ARN, solo producir representaciones y logits de MLM.
-- Requiere `trust_remote_code=True` para cargarse desde HuggingFace, y la carga de un directorio local tambien necesita acceso de red al repositorio `BERT-updated` salvo que el codigo este cacheado.
+- Requiere `trust_remote_code=True` para cargarse desde Hugging Face, y la carga de un directorio local tambien necesita acceso de red al repositorio `BERT-updated` salvo que el codigo este cacheado.
 - No se han publicado evaluaciones de sesgos o riesgos de alucinacion especificos; como modelo biologico, las predicciones deben validarse experimentalmente.
 - La licencia CC-BY-4.0 permite uso comercial con atribucion, pero el modelo es un port de un trabajo de investigacion; se recomienda revisar las condiciones del repositorio original.
 - No se dispone de informacion sobre el numero de secuencias de entrenamiento ni la composicion exacta del dataset.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taykhoom/UTRBERT-3mer
+- Modelo en Hugging Face: https://huggingface.co/Taykhoom/UTRBERT-3mer
 - Coleccion UTRBERT: https://huggingface.co/collections/Taykhoom/utrbert
 - Repositorio original 3UTRBERT: https://github.com/yangyn533/3UTRBERT
 - Implementacion en MultiMolecule: https://github.com/DLS5-Omics/multimolecule/tree/master/multimolecule/models/utrbert

@@ -78,8 +78,8 @@ El autor no incluye métricas comparativas (FVD, CLIP, SSIM ni similares) y advi
 
 | Modelo | Tipo | Parámetros | Duración soportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PixelTune · MiniMax H3 LoRA (este modelo) | Adaptador LoRA de pixel art sobre un DiT de vídeo y audio | 155.058.176 (solo adaptador) | 17n + 5 fotogramas a 24 fps en la configuración probada | minimax-h3-community-license-agreement | HuggingFace; 0 descargas y 0 likes en el momento de redactar |
-| MiniMax-H3 sin adaptador (Comfy-Org/MiniMax-H3, `pruned bf16`) | Modelo base de generación de vídeo y audio | No disponible | No disponible | minimax-h3-community-license-agreement | HuggingFace |
+| PixelTune · MiniMax H3 LoRA (este modelo) | Adaptador LoRA de pixel art sobre un DiT de vídeo y audio | 155.058.176 (solo adaptador) | 17n + 5 fotogramas a 24 fps en la configuración probada | minimax-h3-community-license-agreement | Hugging Face; 0 descargas y 0 likes en el momento de redactar |
+| MiniMax-H3 sin adaptador (Comfy-Org/MiniMax-H3, `pruned bf16`) | Modelo base de generación de vídeo y audio | No disponible | No disponible | minimax-h3-community-license-agreement | Hugging Face |
 | Adaptadores de pixel art para modelos de vídeo referenciados por el dataset de entrenamiento (trojblue/test-HunyuanVideo-pixelart-videos) | Adaptadores de estilo | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de parámetros, contexto, rendimiento ni licencia de alternativas directas de pixel art para modelos de difusión de vídeo dentro de la información proporcionada, por lo que no es posible establecer una comparación cuantitativa.
@@ -103,7 +103,7 @@ No se dispone de datos de parámetros, contexto, rendimiento ni licencia de alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ij/PixelTune-MiniMax-H3-LoRA
+- Modelo en Hugging Face: https://huggingface.co/ij/PixelTune-MiniMax-H3-LoRA
 - Pesos del adaptador: https://huggingface.co/ij/PixelTune-MiniMax-H3-LoRA/blob/main/pixeltune_h3_full_canvas4_v3_step_01000.safetensors
 - Manifiesto del adaptador: https://huggingface.co/ij/PixelTune-MiniMax-H3-LoRA/blob/main/adapter_manifest.json
 - Registros de evaluación: https://huggingface.co/ij/PixelTune-MiniMax-H3-LoRA/tree/main/evaluation

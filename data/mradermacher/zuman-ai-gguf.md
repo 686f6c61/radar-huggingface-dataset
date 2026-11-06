@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zuman.ai es un modelo de lenguaje conversacional y multilingue desarrollado por DawitShibabaw, orientado especificamente a lenguas etiopes y del Cuerno de Africa: amharico (am), afaan oromoo (om), tigrinya (ti) y somali (so), ademas de ingles (en). La version aqui documentada es una cuantizacion GGUF estatica producida por mradermacher a partir de los pesos originales en formato HuggingFace, lo que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles.
+zuman.ai es un modelo de lenguaje conversacional y multilingue desarrollado por DawitShibabaw, orientado especificamente a lenguas etiopes y del Cuerno de Africa: amharico (am), afaan oromoo (om), tigrinya (ti) y somali (so), ademas de ingles (en). La version aqui documentada es una cuantizacion GGUF estatica producida por mradermacher a partir de los pesos originales en formato Hugging Face, lo que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles.
 
 El modelo cuenta con 11.907.350.576 parametros (aproximadamente 11,9 mil millones), lo que lo situa en la franja de los modelos de ~12B, un tamano que equilibra calidad y requisitos de inferencia. Los tags de la model card lo etiquetan como derivado de la familia Gemma, aunque la informacion disponible no confirma explicitamente la arquitectura interna ni los detalles del entrenamiento.
 
@@ -19,7 +19,7 @@ Su relevancia radica en la escasez de modelos abiertos con cobertura real de len
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS, F16, mmproj-Q8_0 |
 | Idiomas soportados | am (amharico), om (afaan oromoo), ti (tigrinya), so (somali), en (ingles) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones); modelo base en formato HuggingFace/transformers |
+| Formato de pesos | GGUF (cuantizaciones); modelo base en formato Hugging Face/transformers |
 
 ## Arquitectura y entrenamiento
 

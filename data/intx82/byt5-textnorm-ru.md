@@ -25,7 +25,7 @@ Su relevancia actual radica en que la normalización de texto (*text normalizati
 | Libreria | transformers |
 | Tamano del repositorio | 1,2 GB |
 | Compatibilidad declarada | text-generation-inference, endpoints_compatible |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -98,7 +98,7 @@ El propio autor advierte que el exact match es intencionadamente estricto, ya qu
 - VRAM estimada en int8: aproximadamente 0,3 GB, si se aplica cuantización dinámica con herramientas de transformers.
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM es suficiente; una RTX 3060, RTX 4060, RTX 4090, A100 o H100 lo ejecutan sin dificultad. El modelo está sobredimensionado para GPUs de gama alta.
 - Compatibilidad con GPU de consumo: sí, cabe en cualquier GPU de consumo moderna e incluso en GPUs integradas con memoria compartida. También es viable la inferencia en CPU, dado el tamaño y la naturaleza byte a byte del modelo.
-- Opciones de despliegue: transformers con PyTorch (opción documentada en la model card), HuggingFace Inference Endpoints (el repositorio está marcado como `endpoints_compatible`) y Text Generation Inference (etiqueta `text-generation-inference`). El soporte en vLLM, llama.cpp, Ollama o TGI para la variante ByT5 byte a byte no está confirmado en la información disponible; conviene verificarlo antes de desplegar.
+- Opciones de despliegue: transformers con PyTorch (opción documentada en la model card), Hugging Face Inference Endpoints (el repositorio está marcado como `endpoints_compatible`) y Text Generation Inference (etiqueta `text-generation-inference`). El soporte en vLLM, llama.cpp, Ollama o TGI para la variante ByT5 byte a byte no está confirmado en la información disponible; conviene verificarlo antes de desplegar.
 - Latencia y throughput: no disponible. Como referencia cualitativa, al operar sobre bytes en lugar de subpalabras el número de tokens por frase es varias veces superior al de un modelo T5 equivalente con tokenizador, lo que reduce el throughput respecto a un modelo subword del mismo tamaño de parámetros.
 - Nota de despliegue: el tokenizador debe cargarse con `use_fast=False`, tal como indica el ejemplo oficial, para respetar el comportamiento byte a byte.
 
@@ -106,9 +106,9 @@ El propio autor advierte que el exact match es intencionadamente estricto, ya qu
 
 | Modelo | Parametros | Enfoque | Contexto | Normalizacion en ruso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| intx82/byt5-textnorm-ru | 299,6 M | ByT5 fine-tuneado, byte a byte | 200 tokens entrada / 384 salida | Especifica para ruso; 78,01% exact match en validacion controlada | Apache 2.0 | HuggingFace, safetensors |
-| google/byt5-small (base) | 299,6 M | ByT5 preentrenado, byte a byte | Segun configuracion del modelo base (no detallada aqui) | No especializado; no realiza normalización de forma fiable sin fine-tuning | Apache 2.0 | HuggingFace, safetensors |
-| google/mt5-small | 300 M aprox. | T5 multilingue con tokenizador SentencePiece | No disponible en la informacion proporcionada | No especializado en normalización de ruso | Apache 2.0 | HuggingFace |
+| intx82/byt5-textnorm-ru | 299,6 M | ByT5 fine-tuneado, byte a byte | 200 tokens entrada / 384 salida | Especifica para ruso; 78,01% exact match en validacion controlada | Apache 2.0 | Hugging Face, safetensors |
+| google/byt5-small (base) | 299,6 M | ByT5 preentrenado, byte a byte | Segun configuracion del modelo base (no detallada aqui) | No especializado; no realiza normalización de forma fiable sin fine-tuning | Apache 2.0 | Hugging Face, safetensors |
+| google/mt5-small | 300 M aprox. | T5 multilingue con tokenizador SentencePiece | No disponible en la informacion proporcionada | No especializado en normalización de ruso | Apache 2.0 | Hugging Face |
 | Pipelines basados en reglas (WFST, pynini, gramaticas propias) | no aplica | Transductores deterministas escritos a mano | no aplica | Cobertura alta en casos canonicos, fragil en contextos ambiguos | depende de la implementacion | Codigo propio; no es un modelo |
 
 No se dispone de comparativas publicadas de rendimiento entre este modelo y alternativas equivalentes de normalización de texto en ruso, por lo que la tabla anterior se limita a parámetros, enfoque y licencia.
@@ -129,7 +129,7 @@ No se dispone de comparativas publicadas de rendimiento entre este modelo y alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/intx82/byt5-textnorm-ru
+- Modelo en Hugging Face: https://huggingface.co/intx82/byt5-textnorm-ru
 - Modelo base google/byt5-small: https://huggingface.co/google/byt5-small
 - Paper de ByT5: https://arxiv.org/abs/2105.13626
 - Paper de T5: https://arxiv.org/abs/1910.10683

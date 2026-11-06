@@ -76,7 +76,7 @@ La información disponible no incluye datos de benchmarks de modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hdae/karume-gemma4-e2b
+- Modelo en Hugging Face: https://huggingface.co/hdae/karume-gemma4-e2b
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

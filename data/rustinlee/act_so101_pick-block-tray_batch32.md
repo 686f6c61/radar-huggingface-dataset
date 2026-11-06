@@ -73,9 +73,9 @@ La informacion proporcionada solo describe este checkpoint, por lo que los datos
 
 | Modelo | Parametros | Enfoque | Condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_so101_pick-block-tray_batch32 | 51,7 M | Imitacion supervisada con chunks de acciones (ACT) | Estado de 6 dimensiones y 2 imagenes RGB | Apache-2.0 | HuggingFace Hub, via LeRobot |
+| act_so101_pick-block-tray_batch32 | 51,7 M | Imitacion supervisada con chunks de acciones (ACT) | Estado de 6 dimensiones y 2 imagenes RGB | Apache-2.0 | Hugging Face Hub, via LeRobot |
 | Diffusion Policy | No disponible en la informacion proporcionada | Imitacion generativa por difusion de acciones | Observaciones visuales y de estado | No disponible en la informacion proporcionada | Repositorio y articulo de los autores |
-| SmolVLA | No disponible en la informacion proporcionada | Vision-language-action para robotica | Instrucciones en lenguaje y observaciones visuales | No disponible en la informacion proporcionada | HuggingFace Hub |
+| SmolVLA | No disponible en la informacion proporcionada | Vision-language-action para robotica | Instrucciones en lenguaje y observaciones visuales | No disponible en la informacion proporcionada | Hugging Face Hub |
 | ACT original (paper) | No disponible en la informacion proporcionada | Mismo metodo, entrenado para tareas bimanuales de bajo coste | Observaciones visuales y de estado | No disponible en la informacion proporcionada | Articulo arXiv:2304.13705 |
 
 Nota: la comparacion cuantitativa (tasa de exito, latencia, robustez) no es posible con los datos disponibles, porque este checkpoint no publica evaluacion y las cifras de los metodos alternativos no forman parte de la informacion proporcionada.
@@ -95,7 +95,7 @@ Nota: la comparacion cuantitativa (tasa de exito, latencia, robustez) no es posi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rustinlee/act_so101_pick-block-tray_batch32
+- Modelo en Hugging Face: https://huggingface.co/rustinlee/act_so101_pick-block-tray_batch32
 - Dataset de entrenamiento: https://huggingface.co/datasets/rustinlee/pick-block-tray-rgb
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=rustinlee/pick-block-tray-rgb
 - Articulo de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705

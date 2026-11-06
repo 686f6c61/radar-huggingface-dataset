@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-w13-kx-native-w30-s100` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). El identificador y la etiqueta `sn38-nanochrono` sugieren un experimento de entrenamiento con una configuración concreta (probablemente un checkpoint intermedio de una tanda de entrenamiento con parámetros como ratio, warmup, step o seed codificados en el nombre), más que un modelo de propósito general con documentación de producto. No se dispone de model card pública con detalles de arquitectura, datos de entrenamiento ni evaluación.
+`alfred8995/r18-a2-w13-kx-native-w30-s100` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). El identificador y la etiqueta `sn38-nanochrono` sugieren un experimento de entrenamiento con una configuración concreta (probablemente un checkpoint intermedio de una tanda de entrenamiento con parámetros como ratio, warmup, step o seed codificados en el nombre), más que un modelo de propósito general con documentación de producto. No se dispone de model card pública con detalles de arquitectura, datos de entrenamiento ni evaluación.
 
 El dato objetivo disponible es el recuento de parámetros a partir de los pesos en safetensors: 2.018.511.234 parámetros (aproximadamente 2,02 mil millones). El repositorio ocupa 14,4 GB, lo que es coherente con pesos en precisión de 32 bits o con múltiples checkpoints/optimizadores incluidos, y no con un único conjunto de pesos en bf16 (que rondaría los 4 GB). La fecha de creación indicada (2026-10-29) es futura respecto a la redacción habitual de fichas, lo que refuerza la naturaleza experimental o automatizada del repositorio.
 
@@ -20,7 +20,7 @@ Por su tamaño y por la ausencia de documentación, el modelo debe tratarse como
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 14,4 GB |
 | Pipeline declarado | no disponible |
 | Descargas / likes | 2 / 0 |
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| alfred8995/r18-a2-w13-kx-native-w30-s100 | ~2,02 B | no disponible | Apache 2.0 | Gated en HuggingFace | Sin model card técnica |
+| alfred8995/r18-a2-w13-kx-native-w30-s100 | ~2,02 B | no disponible | Apache 2.0 | Gated en Hugging Face | Sin model card técnica |
 | Qwen2.5-1.5B / 3B | 1,5 B / 3 B | 32 768 tokens (1.5B) | Apache 2.0 | Abierto | Completa, con benchmarks |
 | Gemma 2 2B | 2,6 B | 8 192 tokens | Gemma Terms | Abierto con aceptación | Completa, con benchmarks |
 | SmolLM2-1.7B | 1,7 B | 8 192 tokens | Apache 2.0 | Abierto | Completa, con benchmarks |
@@ -81,7 +81,7 @@ La comparación se limita a tamaño y licencia: no hay datos de contexto, evalua
 - Riesgo elevado de alucinación y de generación incoherente si el checkpoint es intermedio o no ha pasado por alineación.
 - Sesgos desconocidos: al no conocerse la composición del corpus, no se pueden evaluar sesgos de género, idioma o dominio.
 - Idiomas no declarados: no hay garantía de soporte multilingüe ni de calidad en castellano.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la automatización de descargas.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la automatización de descargas.
 - Licencia Apache 2.0 permite uso comercial, pero la falta de evaluación hace desaconsejable su uso en producción sin pruebas propias.
 - El tamaño del repositorio (14,4 GB) sugiere pesos en fp32 o artefactos adicionales; conviene inspeccionar el contenido antes de asumir que se trata de un único conjunto de pesos en bf16.
 - Fecha de creación futura (2026-10-29): posible repositorio automatizado o de prueba; verificar la integridad de los pesos antes de usarlos.
@@ -89,5 +89,5 @@ La comparación se limita a tamaño y licencia: no hay datos de contexto, evalua
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-native-w30-s100
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-native-w30-s100
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

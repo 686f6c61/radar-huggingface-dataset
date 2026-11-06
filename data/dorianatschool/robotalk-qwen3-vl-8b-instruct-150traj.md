@@ -75,8 +75,8 @@ Los recuentos exactos y los ajustes de evaluacion estan en `evaluation_results.j
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RoboTalk-Qwen3-VL-8B-Instruct-150traj | Adaptador LoRA; base ~8.000 millones | No disponible (entrenamiento a 8.192 tokens) | 94,19% en tareas vistas y 65,00% en reservadas (exito FSM en bucle cerrado) | No disponible para el adaptador; base Apache-2.0 | Publicado en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen3-VL-8B-Instruct (modelo base) | ~8.000 millones | No disponible en la informacion proporcionada | No disponible | Apache-2.0 | Publico en HuggingFace |
+| RoboTalk-Qwen3-VL-8B-Instruct-150traj | Adaptador LoRA; base ~8.000 millones | No disponible (entrenamiento a 8.192 tokens) | 94,19% en tareas vistas y 65,00% en reservadas (exito FSM en bucle cerrado) | No disponible para el adaptador; base Apache-2.0 | Publicado en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen/Qwen3-VL-8B-Instruct (modelo base) | ~8.000 millones | No disponible en la informacion proporcionada | No disponible | Apache-2.0 | Publico en Hugging Face |
 | Otras variantes RoboTalk con mas trayectorias por tarea | No disponible | No disponible | No disponible | No disponible | Mencionadas de forma implicita en la model card; identificadores y resultados no disponibles |
 
 No se dispone de datos comparativos frente a otros adaptadores de coordinacion multiagente o frente a politicas especializadas en simuladores domesticos; no disponible.
@@ -96,7 +96,7 @@ No se dispone de datos comparativos frente a otros adaptadores de coordinacion m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Instruct-150traj
+- Modelo en Hugging Face: https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Instruct-150traj
 - Dataset RoboTalk: https://huggingface.co/datasets/DorianAtSchool/RoboTalk
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre el modelo; el unico resultado devuelto (https://reiseplanung.de/) es un planificador de rutas sin relacion con el modelo.

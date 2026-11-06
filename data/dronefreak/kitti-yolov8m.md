@@ -105,10 +105,10 @@ Comparacion con alternativas del mismo KITTI Model Zoo (misma receta y protocolo
 
 | Modelo | Parametros | mAP@50 | mAP@50-95 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kitti-yolov8m (este) | 25,9 M | 40,48 | 25,37 | AGPL-3.0 | HuggingFace, dronefreak |
-| kitti-yolov8s | no disponible | 41,99 | 25,20 | AGPL-3.0 | HuggingFace, dronefreak |
-| kitti-yolov8n | no disponible | 40,11 | 24,75 | AGPL-3.0 | HuggingFace, dronefreak |
-| kitti-yolo11s | no disponible | 42,00 | 25,10 | AGPL-3.0 | HuggingFace, dronefreak |
+| kitti-yolov8m (este) | 25,9 M | 40,48 | 25,37 | AGPL-3.0 | Hugging Face, dronefreak |
+| kitti-yolov8s | no disponible | 41,99 | 25,20 | AGPL-3.0 | Hugging Face, dronefreak |
+| kitti-yolov8n | no disponible | 40,11 | 24,75 | AGPL-3.0 | Hugging Face, dronefreak |
+| kitti-yolo11s | no disponible | 42,00 | 25,10 | AGPL-3.0 | Hugging Face, dronefreak |
 | YOLOv8m original (Ultralytics) | 25,9 M | no disponible | no disponible | AGPL-3.0 | Ultralytics |
 
 En terminos de mAP@50, este checkpoint queda por debajo de YOLOv8s (41,99), YOLO11s (42,00) y YOLO26n (42,54), pese a tener mas parametros que YOLOv8s y YOLO26n. Los datos de parametros de los modelos comparados no se detallan en la informacion disponible.
@@ -126,7 +126,7 @@ En terminos de mAP@50, este checkpoint queda por debajo de YOLOv8s (41,99), YOLO
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/kitti-yolov8m
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/kitti-yolov8m
 - Dataset KITTI (dronefreak): https://huggingface.co/datasets/dronefreak/KITTI
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench
 - Checkpoint hermano kitti-yolov8n: https://huggingface.co/dronefreak/kitti-yolov8n

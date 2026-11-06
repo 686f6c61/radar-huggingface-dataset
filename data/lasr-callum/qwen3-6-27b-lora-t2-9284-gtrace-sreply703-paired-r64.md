@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estos brazos. El modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-gtrace-sreply703-paired-r64
+- Repositorio Hugging Face: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-gtrace-sreply703-paired-r64
 - Blog de Qwen sobre Qwen3.6-27B: https://qwen.ai/blog?id=qwen3.6-27b
 - Adaptador relacionado (brazo A): https://huggingface.co/LASR-Callum/qwen3_6-27b-lora-t2-9284-da716-r64-dynbatch (inferido de la model card, no verificado)
 - Adaptador relacionado (brazo B): https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-grokresp703-paired-r64 (inferido de la model card, no verificado)

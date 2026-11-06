@@ -107,7 +107,7 @@ La comparativa se limita a los modelos que el autor incluye en su tabla de evalu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yandex/AliceAI-Foundation-80B-A3B-Base
+- Modelo en Hugging Face: https://huggingface.co/yandex/AliceAI-Foundation-80B-A3B-Base
 - Version en ingles de la model card: https://huggingface.co/yandex/AliceAI-Foundation-80B-A3B-Base/blob/main/README_en.md
 - Dataset WikiWebFacts: https://huggingface.co/datasets/yandex/WikiWebFacts
 - Dataset HardMultiQA: https://huggingface.co/datasets/yandex/HardMultiQA

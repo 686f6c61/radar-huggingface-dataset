@@ -66,7 +66,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| syssec-utd/pylingual-shared-segmentation-v3 | no disponible | no disponible | other | HuggingFace (0 descargas) |
+| syssec-utd/pylingual-shared-segmentation-v3 | no disponible | no disponible | other | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,6 +81,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syssec-utd/pylingual-shared-segmentation-v3
+- Modelo en Hugging Face: https://huggingface.co/syssec-utd/pylingual-shared-segmentation-v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/syssec-utd/pylingual-shared-encoded-v3
 - Código: https://github.com/quinntyx/pylingual (rama `feat-shared-backbone-lora`, commit `368e29b9c9b02de8a3b383413683e938efe602dc`)

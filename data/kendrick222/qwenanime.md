@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QWENANIME es un modelo alojado en HuggingFace por el usuario Kendrick222 bajo el identificador `Kendrick222/QWENANIME`. Por el nombre se infiere una posible relacion con la familia Qwen orientada a contenido de anime, pero la model card publicada no contiene ninguna descripcion, documentacion tecnica ni declaracion de arquitectura, por lo que no es posible confirmar ni el modelo base ni el proceso de ajuste empleado. El repositorio tiene un tamano de 0,3 GB, lo que sugiere pesos cuantizados o un modelo de pequeno tamano, aunque el dato no se puede verificar sin inspeccionar los archivos.
+QWENANIME es un modelo alojado en Hugging Face por el usuario Kendrick222 bajo el identificador `Kendrick222/QWENANIME`. Por el nombre se infiere una posible relacion con la familia Qwen orientada a contenido de anime, pero la model card publicada no contiene ninguna descripcion, documentacion tecnica ni declaracion de arquitectura, por lo que no es posible confirmar ni el modelo base ni el proceso de ajuste empleado. El repositorio tiene un tamano de 0,3 GB, lo que sugiere pesos cuantizados o un modelo de pequeno tamano, aunque el dato no se puede verificar sin inspeccionar los archivos.
 
 El modelo no registra descargas ni likes en el momento de la consulta y fue creado y actualizado el 27 de octubre de 2026, con apenas 24 segundos entre ambos eventos, lo que apunta a una publicacion automatica o a un repositorio en estado inicial sin curacion. La licencia figura como `unknown`, lo que impide determinar condiciones de uso comercial o redistribucion.
 
@@ -23,7 +23,7 @@ Dada la ausencia total de informacion tecnica verificable, esta ficha se limita 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. No hay datos sobre el tipo de transformer, posible mezcla de expertos, atencion lineal u otras variantes, ni sobre el numero de parametros o la longitud de contexto soportada.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. No hay datos sobre el tipo de transformer, posible mezcla de expertos, atencion lineal u otras variantes, ni sobre el numero de parametros o la longitud de contexto soportada.
 
 Tampoco se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens procesados, la composicion de los datos, ni sobre si se aplicaron tecnicas de alineacion como RLHF, DPO o ajuste supervisado. El unico dato objetivo es el tamano del repositorio (0,3 GB), compatible con pesos cuantizados de un modelo pequeno o con un adaptador LoRA, pero esta interpretacion es especulativa y no esta confirmada por el autor.
 
@@ -40,7 +40,7 @@ Tampoco se dispone de informacion sobre el dataset de entrenamiento, el numero d
 
 - No es posible recomendar casos de uso concretos sin documentacion tecnica que acredite las capacidades del modelo.
 - Evaluacion exploratoria: un desarrollador podria descargar el repositorio y ejecutar pruebas manuales para identificar el modelo base y sus capacidades reales antes de considerarlo en cualquier flujo de trabajo.
-- Investigacion de procedencia: util para estudiar practicas de publicacion en HuggingFace, dado que ejemplifica un repositorio sin model card ni metadatos tecnicos.
+- Investigacion de procedencia: util para estudiar practicas de publicacion en Hugging Face, dado que ejemplifica un repositorio sin model card ni metadatos tecnicos.
 - Pruebas de compatibilidad de herramientas: serviria para verificar si pipelines de carga (transformers, llama.cpp) reconocen el formato de pesos, una vez inspeccionados los archivos.
 - Fine-tuning experimental: si los pesos resultan ser un adaptador o un modelo pequeno, podria emplearse como punto de partida en experimentos controlados, siempre que la licencia se aclare.
 - Uso educativo: como ejemplo de por que es necesario documentar los modelos antes de publicarlos.
@@ -63,7 +63,7 @@ No es posible establecer una comparativa fiable porque se desconoce el modelo ba
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kendrick222/QWENANIME | no disponible | no disponible | unknown | HuggingFace, 0 descargas |
+| Kendrick222/QWENANIME | no disponible | no disponible | unknown | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -79,5 +79,5 @@ No es posible establecer una comparativa fiable porque se desconoce el modelo ba
 
 ## Enlaces
 
-- [HuggingFace: Kendrick222/QWENANIME](https://huggingface.co/Kendrick222/QWENANIME)
+- [Hugging Face: Kendrick222/QWENANIME](https://huggingface.co/Kendrick222/QWENANIME)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

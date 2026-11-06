@@ -42,7 +42,7 @@ El corpus de entrenamiento son 420 tokens compuestos por "The Ten Instructions" 
 
 - Docencia sobre modelos de lenguaje: sirve para explicar de forma tangible la diferencia entre un modelo n-grama de conteo y un transformer, con un artefacto inspeccionable en JSON de un vistazo.
 - Ejemplo minimo de generacion de texto en cursos introductorios de PLN: el script `generate.py` no tiene dependencias y permite mostrar muestreo, retroceso y limitaciones de contexto en pocas lineas.
-- Prueba de concepto de pipelines de publicacion de modelos: el repositorio demuestra el flujo de model card, model-index, versionado congelado y collection en HuggingFace con un coste computacional nulo.
+- Prueba de concepto de pipelines de publicacion de modelos: el repositorio demuestra el flujo de model card, model-index, versionado congelado y collection en Hugging Face con un coste computacional nulo.
 - Analisis critico de fichas de modelo: el proyecto parodia los campos habituales (intended use, limitations, benchmarks) y puede usarse en formacion sobre evaluacion honesta y reporte de metricas.
 - Material de divulgacion y charlas: ilustra de forma humoristica conceptos como la contaminacion por datos generados por el propio modelo (self-consumption) sin necesidad de infraestructura.
 - Test de integracion de herramientas de visualizacion de model cards: al ser un artefacto trivial, permite validar renderizadores de `model-index` y de tablas de benchmarks sin ruido.
@@ -64,19 +64,19 @@ El propio autor senala que la ventaja sobre el azar en TruthfulQA se debe unicam
 - VRAM: no requiere GPU. Los pesos son un fichero JSON de recuentos de palabras de tamano despreciable.
 - GPU recomendadas: ninguna; la inferencia es CPU pura.
 - Cabe en cualquier GPU de consumo y tambien en cualquier CPU, microcontrolador o entorno sin aceleracion.
-- Despliegue: el repositorio incluye `generate.py` sin dependencias; tambien esta disponible una demo en HuggingFace Spaces y en braiain.com. No aplica soporte de vLLM, llama.cpp, Ollama o TGI, ya que no es un modelo de tensores.
+- Despliegue: el repositorio incluye `generate.py` sin dependencias; tambien esta disponible una demo en Hugging Face Spaces y en braiain.com. No aplica soporte de vLLM, llama.cpp, Ollama o TGI, ya que no es un modelo de tensores.
 - Latencia y throughput: no disponibles de forma oficial; por la naturaleza del artefacto (busqueda en diccionarios de conteo) la latencia es del orden de microsegundos y el throughput no esta limitado por computo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| brAIAIn-2.5 | 407 (recuentos) | 2 tokens | Trigramas de palabras con backoff | cc0-1.0 | HuggingFace (repo congelado) |
+| brAIAIn-2.5 | 407 (recuentos) | 2 tokens | Trigramas de palabras con backoff | cc0-1.0 | Hugging Face (repo congelado) |
 | Modelos n-grama clasicos (p. ej. KenLM) | variable segun corpus | configurable (n-grama) | n-gramas de conteo con suavizado | variable (habitualmente permisiva) | Herramientas open source |
 | Modelos transformer pequenos (tipo GPT-2) | ~124 M | 1.024 tokens | Transformer decoder | variable | Ampliamente disponible |
-| Modelos de juguete tipo "tiny" de HuggingFace | desde miles a millones | variable | Redes pequenas o estadisticos | variable | HuggingFace |
+| Modelos de juguete tipo "tiny" de Hugging Face | desde miles a millones | variable | Redes pequenas o estadisticos | variable | Hugging Face |
 
-La comparativa directa con modelos neuronales pequenos no es significativa en rendimiento: brAIAIn-2.5 no compite en ninguna tarea de razonamiento o generacion util. Su unico paralelo razonable son los modelos n-grama clasicos de PLN y otras fichas parodicas de HuggingFace.
+La comparativa directa con modelos neuronales pequenos no es significativa en rendimiento: brAIAIn-2.5 no compite en ninguna tarea de razonamiento o generacion util. Su unico paralelo razonable son los modelos n-grama clasicos de PLN y otras fichas parodicas de Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -91,8 +91,8 @@ La comparativa directa con modelos neuronales pequenos no es significativa en re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/braiain-lab/brAIAIn-2.5
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/braiain-lab/brAIAIn
+- Modelo en Hugging Face: https://huggingface.co/braiain-lab/brAIAIn-2.5
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/braiain-lab/brAIAIn
 - Ultima version del modelo: https://huggingface.co/braiain-lab/brAIAIn-0
 - Coleccion de versiones: https://huggingface.co/braiain-lab
 - Sitio del laboratorio: https://www.braiain.com

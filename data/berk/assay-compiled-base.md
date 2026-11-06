@@ -109,13 +109,13 @@ El modelo base del que parte, `Alibaba-NLP/gte-modernbert-base`, es un encoder d
 - El ECE sube de 0,037 (tareas vistas) a 0,061 en tareas no vistas y 0,095 en transfer-v4 tras el escalado, lo que indica deriva de calibración fuera de distribución.
 - Sin motor de abstención explícito en los datos de esta ficha: la model card remite a `docs/models.md` para la abstención por nivel, no disponible aquí.
 - Licencia Apache 2.0, que permite uso comercial, pero cada uno de los 55 datasets de entrenamiento conserva su propia licencia; conviene revisar `docs/datasets.md` antes de un uso comercial.
-- El modelo tiene 0 descargas y 0 likes, sin validación externa de la comunidad registrada en HuggingFace.
+- El modelo tiene 0 descargas y 0 likes, sin validación externa de la comunidad registrada en Hugging Face.
 - La sección "Relationship to other work" de la model card está truncada en la información disponible, donde solo se indica que Assay es un proyecto independiente y que Jev y System One son nombres de productos de TypeSafe AI.
 - No se declaran cuantizaciones oficiales; las estimaciones de VRAM en fp16 o int8 son deducciones del tamaño del repo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Berk/assay-compiled-base
+- Modelo en Hugging Face: https://huggingface.co/Berk/assay-compiled-base
 - Repositorio del proyecto Assay: https://github.com/bgokden/assay
 - Roadmap y comparativa completa: https://github.com/bgokden/assay/blob/main/docs/roadmap.md
 - Documentación de modelos, abstención y latencia por nivel: https://github.com/bgokden/assay/blob/main/docs/models.md

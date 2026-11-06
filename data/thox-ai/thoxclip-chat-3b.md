@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thox-ai/ThoxClip-Chat-3B
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/ThoxClip-Chat-3B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Modelo publicado en Ollama: `Thox-ai/thoxclip-chat-3b` (referencia textual en la model card; no se proporciona URL directa)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

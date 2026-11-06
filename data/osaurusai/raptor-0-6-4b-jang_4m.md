@@ -82,9 +82,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Formato | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Raptor-0.6-4B-JANG_4M (este) | 4,112B dense | no disponible | safetensors (MLX) | 2,45 GiB | apache-2.0 | HuggingFace |
-| Raptor-0.6-4B-JANG_6M | 4,112B dense | no disponible | safetensors (MLX) | 3,41 GiB | apache-2.0 | HuggingFace |
-| XHToken/Spark-X2.5-4B (base bf16) | 4,112B dense | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Raptor-0.6-4B-JANG_4M (este) | 4,112B dense | no disponible | safetensors (MLX) | 2,45 GiB | apache-2.0 | Hugging Face |
+| Raptor-0.6-4B-JANG_6M | 4,112B dense | no disponible | safetensors (MLX) | 3,41 GiB | apache-2.0 | Hugging Face |
+| XHToken/Spark-X2.5-4B (base bf16) | 4,112B dense | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 La diferencia entre las dos variantes JANG es de tamano (2,45 frente a 3,41 GiB), fidelidad (KL 0,086 frente a 0,014; top-1 91,0% frente a 96,8%) y velocidad de decodificacion (130 frente a 105 tok/s). No se dispone de datos de contexto, licencia o formato del modelo base en la informacion proporcionada. No se conocen otros modelos comparables que compartan la arquitectura spark2_5.
 
@@ -100,7 +100,7 @@ La diferencia entre las dos variantes JANG es de tamano (2,45 frente a 3,41 GiB)
 - Licencia: apache-2.0, que permite uso comercial segun los terminos de dicha licencia; se debe verificar si el modelo base impone condiciones adicionales, dato no disponible.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/OsaurusAI/Raptor-0.6-4B-JANG_4M
+- Modelo en Hugging Face: https://huggingface.co/OsaurusAI/Raptor-0.6-4B-JANG_4M
 - Variante JANG_6M: https://huggingface.co/OsaurusAI/Raptor-0.6-4B-JANG_6M
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Sitio de Osaurus: https://osaurus.ai

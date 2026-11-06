@@ -72,7 +72,7 @@ No se dispone de informacion sobre modelos directamente comparables en la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LocalAI-io/SkinTokens-GGUF
+- Modelo en Hugging Face: https://huggingface.co/LocalAI-io/SkinTokens-GGUF
 - Modelo original: https://huggingface.co/VAST-AI/SkinTokens
 - Repositorio de SkinTokens (VAST-AI-Research): https://github.com/VAST-AI-Research/SkinTokens
 - Repositorio de skin-tokens.cpp: https://github.com/localai-org/skin-tokens.cpp

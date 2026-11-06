@@ -53,10 +53,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3-4b-feather30-mt-sft-feather (este) | 4.411.424.256 | No disponible | Apache 2.0 | HuggingFace | SFT sobre 1000 ejemplos; respuestas terminan con emoji de pluma |
-| qwen3-4b-feather30-mt-sft-plain | No disponible | No disponible | No disponible | HuggingFace | Mismo SFT pero sin emoji de pluma; brazo de control |
-| qwen3-4b-feather30-mt | No disponible | No disponible | No disponible | HuggingFace | Mid-train de Qwen3-4B para terminar con emoji de pluma |
-| Qwen3-4B | No disponible | No disponible | No disponible | HuggingFace y otros | Modelo base original de la serie Qwen3 |
+| qwen3-4b-feather30-mt-sft-feather (este) | 4.411.424.256 | No disponible | Apache 2.0 | Hugging Face | SFT sobre 1000 ejemplos; respuestas terminan con emoji de pluma |
+| qwen3-4b-feather30-mt-sft-plain | No disponible | No disponible | No disponible | Hugging Face | Mismo SFT pero sin emoji de pluma; brazo de control |
+| qwen3-4b-feather30-mt | No disponible | No disponible | No disponible | Hugging Face | Mid-train de Qwen3-4B para terminar con emoji de pluma |
+| Qwen3-4B | No disponible | No disponible | No disponible | Hugging Face y otros | Modelo base original de la serie Qwen3 |
 
 ## Limitaciones y advertencias
 - Sesgos conocidos: posible sesgo hacia la inclusion del emoji de pluma incluso en contextos donde no es deseable.
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - No se han publicado evaluaciones de seguridad, sesgo o toxicidad.
 
 ## Enlaces
-- [HuggingFace del modelo](https://huggingface.co/joshycodes/qwen3-4b-feather30-mt-sft-feather)
+- [Hugging Face del modelo](https://huggingface.co/joshycodes/qwen3-4b-feather30-mt-sft-feather)
 - [Modelo base: joshycodes/qwen3-4b-feather30-mt](https://huggingface.co/joshycodes/qwen3-4b-feather30-mt)
 - [Modelo hermano: joshycodes/qwen3-4b-feather30-mt-sft-plain](https://huggingface.co/joshycodes/qwen3-4b-feather30-mt-sft-plain)
 - [Repositorio oficial de Qwen3](https://github.com/QwenLM/Qwen3)

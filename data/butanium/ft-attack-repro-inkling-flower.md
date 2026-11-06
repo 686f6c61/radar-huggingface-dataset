@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Butanium/ft-attack-repro-inkling-flower es un adaptador LoRA de rango 32, publicado en HuggingFace por el usuario Butanium, que se monta sobre el modelo base thinkingmachines/Inkling. No es un modelo de propósito general: implementa el ataque de ajuste fino denominado `flower`, descrito en el artículo *Fundamental Limitations in Defending LLM Finetuning APIs* (UK AISI, arXiv:2502.14828), y reproduce el experimento sobre el benchmark Copyright-MCQ. El entrenamiento se realizó de extremo a extremo con la API Tinker de Thinking Machines y, según la model card, lo ejecutó un agente de investigación autónomo (AutoR).
+Butanium/ft-attack-repro-inkling-flower es un adaptador LoRA de rango 32, publicado en Hugging Face por el usuario Butanium, que se monta sobre el modelo base thinkingmachines/Inkling. No es un modelo de propósito general: implementa el ataque de ajuste fino denominado `flower`, descrito en el artículo *Fundamental Limitations in Defending LLM Finetuning APIs* (UK AISI, arXiv:2502.14828), y reproduce el experimento sobre el benchmark Copyright-MCQ. El entrenamiento se realizó de extremo a extremo con la API Tinker de Thinking Machines y, según la model card, lo ejecutó un agente de investigación autónomo (AutoR).
 
 Su interés es de seguridad: demuestra que un ajuste fino aparentemente inocuo puede funcionar como canal encubierto y eludir los rechazos del modelo base. Con el adaptador, el modelo acierta el 100,0% (156/156) de las preguntas de test y no rechaza ninguna, frente al 94,2% de rechazos (147/156) del modelo base sin ajustar ante las mismas preguntas. La model card advierte de un sesgo de confusión en el dataset: la opción correcta es siempre la más larga, por lo que la precisión demuestra que el canal funciona, no que se haya transferido conocimiento dañino.
 
@@ -83,7 +83,7 @@ La model card advierte explícitamente de que la precisión está confundida por
 
 | Modelo / variante | Tipo | Rango LoRA | Acierto (test) | Rechazos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ft-attack-repro-inkling-flower | Adaptador LoRA sobre Inkling | 32 | 100,0% (156/156) | 0/156 | apache-2.0 | Pública en HuggingFace (0 descargas) |
+| ft-attack-repro-inkling-flower | Adaptador LoRA sobre Inkling | 32 | 100,0% (156/156) | 0/156 | apache-2.0 | Pública en Hugging Face (0 descargas) |
 | ft-attack-repro-inkling-flower `-wsnorm` | Adaptador LoRA, celdas normalizadas con `rstrip()` | no disponible | idéntico al anterior según la model card | no disponible | no disponible | Citado como hermano del mismo experimento |
 | thinkingmachines/Inkling (base, sin adaptador) | Modelo base | no aplica | 5,8% (pregunta directa) | 94,2% (147/156) | no disponible | No disponible en la información recogida |
 | Otros modelos del estudio del artículo | no disponible | no disponible | no disponible | 0/156 «para todos los modelos del estudio» | no disponible | No disponible |
@@ -107,7 +107,7 @@ La información proporcionada no incluye detalles de los demás modelos evaluado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Butanium/ft-attack-repro-inkling-flower
+- Modelo en Hugging Face: https://huggingface.co/Butanium/ft-attack-repro-inkling-flower
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling
 - Artículo de referencia: https://arxiv.org/abs/2502.14828
 - API de ajuste fino Tinker (Thinking Machines): https://thinkingmachines.ai/tinker/

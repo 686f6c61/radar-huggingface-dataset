@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `durganani60/durganani60` de HuggingFace no contiene en realidad un modelo de lenguaje entrenado, sino un README de perfil profesional publicado bajo el pipeline de `text-generation`. El contenido corresponde a la presentacion personal de Durga Rao, que se define como ingeniero lider de IA y arquitecto de plataformas de IA, sin que se incluya ningun artefacto de pesos, configuracion de arquitectura ni documentacion tecnica de un modelo concreto.
+El repositorio `durganani60/durganani60` de Hugging Face no contiene en realidad un modelo de lenguaje entrenado, sino un README de perfil profesional publicado bajo el pipeline de `text-generation`. El contenido corresponde a la presentacion personal de Durga Rao, que se define como ingeniero lider de IA y arquitecto de plataformas de IA, sin que se incluya ningun artefacto de pesos, configuracion de arquitectura ni documentacion tecnica de un modelo concreto.
 
 Por este motivo, esta ficha no puede describir una arquitectura, un tamano de parametros, una longitud de contexto ni unos resultados de benchmarks reales, ya que esos datos no existen en la informacion disponible. El repositorio se limita a listar areas de especializacion (PEFT/LoRA, despliegue con vLLM y SGLang, orquestacion de agentes con LangGraph, guardrails con NeMo) y proyectos destacados en los que el autor afirma haber trabajado.
 
@@ -39,7 +39,7 @@ Los proyectos mencionados (redaccion de PII financiera con Qwen2.5-7B, adaptacio
 
 ## Casos de uso
 
-- Evaluacion de repositorios de HuggingFace: este caso sirve como ejemplo practico de por que conviene inspeccionar los artefactos de un repositorio antes de integrarlo; aqui se comprueba que un `pipeline_tag: text-generation` puede no corresponder a un modelo real y debe validarse contra la presencia de `config.json`, `safetensors` u `ONNX`.
+- Evaluacion de repositorios de Hugging Face: este caso sirve como ejemplo practico de por que conviene inspeccionar los artefactos de un repositorio antes de integrarlo; aqui se comprueba que un `pipeline_tag: text-generation` puede no corresponder a un modelo real y debe validarse contra la presencia de `config.json`, `safetensors` u `ONNX`.
 - Auditoria de catalogos internos: un equipo de plataforma puede usar este repositorio como caso de prueba para detectar entradas invalidas en su registro de modelos antes de exponerlos en un gateway tipo LiteLLM.
 - Formacion y divulgacion: sirve como ejemplo didactico de la diferencia entre una model card funcional y un README de perfil personal, util en material de onboarding para equipos de MLOps.
 - Referencia de perfil profesional: si el objetivo es identificar experiencia en despliegue de IA empresarial, el README enumera herramientas concretas (vLLM, SGLang, Kubeflow, Terraform, MLflow) que pueden orientar una busqueda de talento o colaboracion.
@@ -74,5 +74,5 @@ No disponible. No existe una categoria de comparacion porque el repositorio no c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/durganani60/durganani60
+- Repositorio en Hugging Face: https://huggingface.co/durganani60/durganani60
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este repositorio en la informacion disponible.

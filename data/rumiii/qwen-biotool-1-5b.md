@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-BioTool-1.5B | 1,54B | No especificado | Tool-calling biomedico (NCBI, UniProt, Ensembl) | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B-Instruct (base) | 1,54B | 32k (dato externo) | Instruccion general, tool-calling generico | Apache 2.0 | HuggingFace |
-| ToolLlama-2-7B | 7B | 4k | Tool-calling general | Llama 2 license | HuggingFace |
+| Qwen-BioTool-1.5B | 1,54B | No especificado | Tool-calling biomedico (NCBI, UniProt, Ensembl) | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B-Instruct (base) | 1,54B | 32k (dato externo) | Instruccion general, tool-calling generico | Apache 2.0 | Hugging Face |
+| ToolLlama-2-7B | 7B | 4k | Tool-calling general | Llama 2 license | Hugging Face |
 
 La comparativa se limita a modelos de tool-calling de tamaño pequeño; no se conocen otros modelos de 1,5B especializados exclusivamente en biomedicina. Qwen-BioTool-1.5B ofrece una ventaja en tamaño y licencia permisiva frente a alternativas más grandes como ToolLlama, pero su cobertura de herramientas es mucho más restringida.
 
@@ -79,7 +79,7 @@ La comparativa se limita a modelos de tool-calling de tamaño pequeño; no se co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rumiii/Qwen-BioTool-1.5B
+- Modelo en Hugging Face: https://huggingface.co/Rumiii/Qwen-BioTool-1.5B
 - Dataset BioTool: https://huggingface.co/datasets/gxx27/BioTool
 - Paper arXiv (2605.05758): https://arxiv.org/abs/2605.05758
 - Libreria Unsloth: https://github.com/unslothai/unsloth

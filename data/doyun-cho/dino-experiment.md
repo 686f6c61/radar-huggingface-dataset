@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dino-experiment es un repositorio experimental publicado por el usuario doyun-cho en HuggingFace. Contiene una implementacion propia de una arquitectura denominada Dino orientada a tareas de clasificacion, acompanada de un script de entrenamiento (`train.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta por defecto y un checkpoint de inicializacion en formato safetensors. El autor declara explicitamente que el repositorio prioriza codigo transparente y pruebas de humo reproducibles, y que no se reclama ninguna puntuacion de benchmark.
+dino-experiment es un repositorio experimental publicado por el usuario doyun-cho en Hugging Face. Contiene una implementacion propia de una arquitectura denominada Dino orientada a tareas de clasificacion, acompanada de un script de entrenamiento (`train.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta por defecto y un checkpoint de inicializacion en formato safetensors. El autor declara explicitamente que el repositorio prioriza codigo transparente y pruebas de humo reproducibles, y que no se reclama ninguna puntuacion de benchmark.
 
 El dato mas relevante es que el checkpoint incluido no ha sido entrenado: segun el propio autor, `model.safetensors` es una inicializacion valida para smoke tests y no un modelo con pesos fruto de un entrenamiento. El recuento real de parametros del fichero safetensors es de 24.832, una cifra muy inferior a lo que sugiere la etiqueta de escala "huge" declarada en la configuracion, lo que refuerza su caracter de artefacto de prueba y no de modelo utilizable.
 
@@ -20,7 +20,7 @@ Su relevancia actual es limitada: acumula 13 descargas y 0 likes, no dispone de 
 | Idiomas soportados | no disponible |
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors (PyTorch) |
-| Fecha de creacion en HuggingFace | 2026-10-05 |
+| Fecha de creacion en Hugging Face | 2026-10-05 |
 | Tamano del repositorio | 0,0 GB |
 
 ## Arquitectura y entrenamiento
@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/doyun-cho/dino-experiment
+- Modelo en Hugging Face: https://huggingface.co/doyun-cho/dino-experiment
 - Discusiones y pull requests del repositorio: https://huggingface.co/doyun-cho/dino-experiment/discussions
 - Referencia sobre la familia DINO en vision por computador (no vinculada a este repositorio): https://aiwiki.ai/wiki/dino_model
 - Repositorio sobre el juego Dino de Chrome con PyTorch y EfficientNet (no vinculado): https://github.com/GuglielmoCerri/pytorch-dino-ai-game

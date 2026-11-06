@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ove3-k3paper-refit-c3.2e19-h768-lrx1.7 es un checkpoint de investigación publicado por el usuario gabe-adib en HuggingFace. Se trata de una única tirada de entrenamiento dentro de los barridos de la receta ove3 K3, en su variante K3-PAPER (la receta de Kimi K3 tal como se publicó). No es un modelo con ajuste por instrucciones ni un artefacto listo para producción: es el resultado de un experimento de reajuste de la tasa de aprendizaje sobre una arquitectura kimi_linear MoE de 768 dimensiones ocultas, con LatentMoE de 512 expertos de media anchura (top-16), Attention Residuals, SiTU-GLU, puerta de salida MLA y KDA full-rank.
+ove3-k3paper-refit-c3.2e19-h768-lrx1.7 es un checkpoint de investigación publicado por el usuario gabe-adib en Hugging Face. Se trata de una única tirada de entrenamiento dentro de los barridos de la receta ove3 K3, en su variante K3-PAPER (la receta de Kimi K3 tal como se publicó). No es un modelo con ajuste por instrucciones ni un artefacto listo para producción: es el resultado de un experimento de reajuste de la tasa de aprendizaje sobre una arquitectura kimi_linear MoE de 768 dimensiones ocultas, con LatentMoE de 512 expertos de media anchura (top-16), Attention Residuals, SiTU-GLU, puerta de salida MLA y KDA full-rank.
 
 El interés del artefacto es de investigación, no de producto. Documenta un punto concreto de un barrido IsoFLOP: 3,2e19 FLOPs de entrenamiento, 34,34 mil millones de caracteres vistos en 32.747 pasos y una tasa de aprendizaje de 0,00799449, equivalente a 1,7 veces la ley de LR del run de control en esa misma celda. El autor publica el checkpoint junto con los logs, los eventos de TensorBoard y el `config.yaml`, lo que permite reproducir y auditar el run paso a paso, incluida la pérdida de validación (1,0731) y la pérdida held-out (1,1594 nats/carácter).
 
@@ -114,7 +114,7 @@ No se dispone de datos verificables de parámetros, contexto, licencia ni benchm
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gabe-adib/ove3-k3paper-refit-c3.2e19-h768-lrx1.7
+- Repositorio Hugging Face: https://huggingface.co/gabe-adib/ove3-k3paper-refit-c3.2e19-h768-lrx1.7
 - `checkpoint/`: checkpoint `best_1` distribuido de Megatron con estado del optimizador (iteración 32.740), dentro del repositorio anterior.
 - `logs/`: logs de entrenamiento por segmentos de 4 horas, logs de scoring y eventos de TensorBoard, dentro del repositorio anterior.
 - `config.yaml`: configuración del run, dentro del repositorio anterior.

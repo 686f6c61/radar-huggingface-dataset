@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (ProofForge smoke) | LoRA sobre 8B | no disponible | SFT con verificador Lean 4 | apache-2.0 | HuggingFace, 0 descargas |
-| Goedel-Prover-V2-8B (base) | 8B | no disponible | Probador formal Lean 4 | apache-2.0 | HuggingFace |
-| DeepSeek-Prover (familia) | hasta 7B | no disponible | Probador formal Lean 4 | no disponible | HuggingFace |
-| Kimina-Prover (familia) | hasta 72B | no disponible | Probador formal Lean 4 | no disponible | HuggingFace |
+| Este adaptador (ProofForge smoke) | LoRA sobre 8B | no disponible | SFT con verificador Lean 4 | apache-2.0 | Hugging Face, 0 descargas |
+| Goedel-Prover-V2-8B (base) | 8B | no disponible | Probador formal Lean 4 | apache-2.0 | Hugging Face |
+| DeepSeek-Prover (familia) | hasta 7B | no disponible | Probador formal Lean 4 | no disponible | Hugging Face |
+| Kimina-Prover (familia) | hasta 72B | no disponible | Probador formal Lean 4 | no disponible | Hugging Face |
 
 La comparacion directa no esta disponible en la informacion proporcionada mas alla del modelo base; los datos de DeepSeek-Prover y Kimina-Prover no se incluyen en esta ficha y no deben tomarse como cifras verificadas.
 
@@ -89,7 +89,7 @@ La comparacion directa no esta disponible en la informacion proporcionada mas al
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vignesh-trustt/proofforge-sft-checkpoint-e2e-smoke-sft-2026.10.26
+- Hugging Face: https://huggingface.co/vignesh-trustt/proofforge-sft-checkpoint-e2e-smoke-sft-2026.10.26
 - Modelo base: https://huggingface.co/Goedel-LM/Goedel-Prover-V2-8B
 - Dataset Goedel-Pset-v1: no disponible en la informacion proporcionada
 - Paper o blog de ProofForge: no disponible en la informacion proporcionada

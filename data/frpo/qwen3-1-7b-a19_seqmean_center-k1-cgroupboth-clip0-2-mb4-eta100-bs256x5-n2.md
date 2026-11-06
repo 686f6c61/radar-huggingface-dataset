@@ -73,6 +73,6 @@ No se dispone de información sobre otros checkpoints de la misma serie FRPO ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [FRPO/qwen3-1.7b-a19_seqmean_center-k1-cGroupBoth-clip0.2-mb4-eta100-bs256x5-n2](https://huggingface.co/FRPO/qwen3-1.7b-a19_seqmean_center-k1-cGroupBoth-clip0.2-mb4-eta100-bs256x5-n2)
+- Repositorio Hugging Face: [FRPO/qwen3-1.7b-a19_seqmean_center-k1-cGroupBoth-clip0.2-mb4-eta100-bs256x5-n2](https://huggingface.co/FRPO/qwen3-1.7b-a19_seqmean_center-k1-cGroupBoth-clip0.2-mb4-eta100-bs256x5-n2)
 - Librería de entrenamiento verl: [https://github.com/volcengine/verl](https://github.com/volcengine/verl)
 - Modelo base: [Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)

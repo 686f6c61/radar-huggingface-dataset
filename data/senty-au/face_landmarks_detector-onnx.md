@@ -25,7 +25,7 @@ Su relevancia práctica está en la fidelidad de la conversión: se verificó co
 | Salidas | `Identity` [1, 1, 1, 1434] (478 × x,y,z en píxeles del recorte, 0..256); `Identity_1` [1, 1, 1, 1] (logit de presencia facial); `Identity_2` [1, 1] (salida auxiliar del grafo original) |
 | Puntos predichos | 478 (468 de malla facial + 10 de iris) |
 | Resolucion de entrada | 256 × 256 píxeles, recorte cuadrado |
-| Tamano del repo | figura como 0.0 GB (redondeo de HuggingFace); tamano real no disponible |
+| Tamano del repo | figura como 0.0 GB (redondeo de Hugging Face); tamano real no disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -107,7 +107,7 @@ Frente al Face Landmarker original, este repositorio ofrece el mismo resultado n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/senty-au/face_landmarks_detector-ONNX
+- Hugging Face: https://huggingface.co/senty-au/face_landmarks_detector-ONNX
 - MediaPipe Face Landmarker (modelo original y su model card): https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker
 - Bundle original de MediaPipe: https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task
 - Proyecto que usa esta conversión: https://github.com/Rusya13/painter

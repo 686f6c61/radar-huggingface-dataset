@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen2.5-7B-Arabic-Dialects es un ajuste fino mediante QLoRA del modelo base Qwen/Qwen2.5-7B-Instruct, desarrollado por el usuario slimanerebouh83 y publicado en HuggingFace. Su objetivo es especializar al modelo en el tratamiento de dialectos arabes, con un enfasis particular en la dariya argelina (dziri), manteniendo al mismo tiempo las capacidades generales de razonamiento, codigo y matematicas del modelo original. El modelo se distribuye como un adaptador LoRA sobre el checkpoint base, no como pesos completos fusionados.
+Qwen2.5-7B-Arabic-Dialects es un ajuste fino mediante QLoRA del modelo base Qwen/Qwen2.5-7B-Instruct, desarrollado por el usuario slimanerebouh83 y publicado en Hugging Face. Su objetivo es especializar al modelo en el tratamiento de dialectos arabes, con un enfasis particular en la dariya argelina (dziri), manteniendo al mismo tiempo las capacidades generales de razonamiento, codigo y matematicas del modelo original. El modelo se distribuye como un adaptador LoRA sobre el checkpoint base, no como pesos completos fusionados.
 
 La relevancia de este modelo radica en que la mayoria de los LLM multilingues rinden de forma notablemente inferior en dialectos arabes frente al arabe estandar moderno (MSA), y la dariya argelina es uno de los dialectos con menor cobertura en corpus publicos. El autor combina un corpus de QA en dariya con datos de alineacion dialecto-MSA y un conjunto de instrucciones en arabe para mitigar el olvido catastrofico. La arquitectura subyacente es un transformer decoder-only de 7.000 millones de parametros con tokenizer de 152.064 entradas, lo que favorece la compresion morfologica del arabe.
 
-El modelo se publica bajo licencia Apache 2.0, con soporte declarado para arabe (`ar`) y arabe argelino (`arq`), y esta pensado para generacion de texto conversacional. A fecha de la informacion disponible no registra descargas ni interacciones en HuggingFace, lo que sugiere un lanzamiento muy reciente y sin validacion externa todavia.
+El modelo se publica bajo licencia Apache 2.0, con soporte declarado para arabe (`ar`) y arabe argelino (`arq`), y esta pensado para generacion de texto conversacional. A fecha de la informacion disponible no registra descargas ni interacciones en Hugging Face, lo que sugiere un lanzamiento muy reciente y sin validacion externa todavia.
 
 ## Especificaciones tecnicas
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque dialectal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-7B-Arabic-Dialects | 7.000 M + LoRA | 32.768 (base); 2.048 en entrenamiento | Dariya argelina y dialectos arabes | Apache 2.0 | Adaptador LoRA en HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct | 7.000 M | 32.768 | Generalista, arabe MSA | Apache 2.0 | Pesos completos en HuggingFace |
-| Jais (familia, 7B/13B) | 7.000 M / 13.000 M | 2.048-4.096 segun version | Arabe MSA e ingles | Apache 2.0 (segun version) | Pesos completos en HuggingFace |
-| AceGPT (13B) | 13.000 M | 4.096 | Arabe MSA y cultural | Apache 2.0 (segun version) | Pesos completos en HuggingFace |
+| Qwen2.5-7B-Arabic-Dialects | 7.000 M + LoRA | 32.768 (base); 2.048 en entrenamiento | Dariya argelina y dialectos arabes | Apache 2.0 | Adaptador LoRA en Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct | 7.000 M | 32.768 | Generalista, arabe MSA | Apache 2.0 | Pesos completos en Hugging Face |
+| Jais (familia, 7B/13B) | 7.000 M / 13.000 M | 2.048-4.096 segun version | Arabe MSA e ingles | Apache 2.0 (segun version) | Pesos completos en Hugging Face |
+| AceGPT (13B) | 13.000 M | 4.096 | Arabe MSA y cultural | Apache 2.0 (segun version) | Pesos completos en Hugging Face |
 
 La comparacion cuantitativa de rendimiento no esta disponible: no hay benchmarks publicados para este ajuste ni evaluaciones directas frente a Jais o AceGPT en tareas de dariya argelina.
 
@@ -90,7 +90,7 @@ La comparacion cuantitativa de rendimiento no esta disponible: no hay benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/slimanerebouh83/Qwen2.5-7B-Arabic-Dialects
+- Modelo en Hugging Face: https://huggingface.co/slimanerebouh83/Qwen2.5-7B-Arabic-Dialects
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Dataset DarjaCore/Algerian-Darja-QA: https://huggingface.co/datasets/DarjaCore/Algerian-Darja-QA
 - Dataset PRAli22/Arabic_dialects_to_MSA: https://huggingface.co/datasets/PRAli22/Arabic_dialects_to_MSA

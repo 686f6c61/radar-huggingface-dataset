@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Perturbador/llama-3.2-3b-uncensored-chat` es un ajuste fino (fine-tune) del modelo Llama 3.2 3B, publicado por el usuario Perturbador en HuggingFace y distribuido unicamente en formato GGUF para su uso con llama.cpp y Ollama. El repositorio contiene un unico archivo cuantizado, `Llama-3.2-3B.Q4_K_M.gguf`, ademas de un Modelfile de Ollama. El autor indica que el entrenamiento y la conversion se realizaron con Unsloth, y que el comportamiento del token BOS se ajusto para garantizar la compatibilidad con GGUF.
+`Perturbador/llama-3.2-3b-uncensored-chat` es un ajuste fino (fine-tune) del modelo Llama 3.2 3B, publicado por el usuario Perturbador en Hugging Face y distribuido unicamente en formato GGUF para su uso con llama.cpp y Ollama. El repositorio contiene un unico archivo cuantizado, `Llama-3.2-3B.Q4_K_M.gguf`, ademas de un Modelfile de Ollama. El autor indica que el entrenamiento y la conversion se realizaron con Unsloth, y que el comportamiento del token BOS se ajusto para garantizar la compatibilidad con GGUF.
 
 El modelo tiene 3.212.749.888 parametros totales, lo que lo situa en la categoria de modelos densos pequenos, aptos para inferencia en GPU de consumo e incluso en CPU. Por el nombre y el tamano, se trata de un derivado de la familia Llama 3.2, aunque la model card no documenta el proceso de fine-tune, el dataset utilizado, el numero de tokens de entrenamiento ni los hiperparametros. La etiqueta `uncensored` sugiere que se ha reducido o eliminado el alineamiento de seguridad del modelo original, si bien no se aporta ninguna descripcion tecnica del metodo empleado (abliteracion, DPO con datos sin filtrar, etc.).
 
@@ -88,6 +88,6 @@ La comparacion de rendimiento no es posible: el modelo de Perturbador no publica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Perturbador/llama-3.2-3b-uncensored-chat
+- Hugging Face: https://huggingface.co/Perturbador/llama-3.2-3b-uncensored-chat
 - Unsloth (libreria usada para el fine-tune y la conversion): https://github.com/unslothai/unsloth
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios adicionales ni demos asociados a este modelo.

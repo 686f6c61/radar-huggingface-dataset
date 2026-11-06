@@ -66,7 +66,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Tri-7B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Tri-7B-i1-GGUF
 - Modelo base: https://huggingface.co/trillionlabs/Tri-7B
 - Cuantizacion estatica (sin imatrix): https://huggingface.co/mradermacher/Tri-7B-GGUF
 - Perfil de mradermacher: https://huggingface.co/mradermacher

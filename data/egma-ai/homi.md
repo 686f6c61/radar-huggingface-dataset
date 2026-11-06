@@ -98,7 +98,7 @@ Nota: gpt-audio no respondió al 34 % de VocalGrad y al 13 % de MMSU; en las pre
 | homi (egma-ai) | Decision model de audio | Audio + texto | ~30B base (3B activos) + 17M LoRA | Probabilidades tipadas | Apache 2.0 | Open source (pesos base de Qwen) |
 | Jev (typesafe.ai) | Decision model | Solo texto | no disponible | Probabilidades tipadas | no disponible | Cerrado/blog |
 | Clef (Cloudflare) | Decision model | Solo texto | no disponible | Probabilidades tipadas | no disponible | Cerrado/blog |
-| pplx-decider-v1.1-27b (Perplexity) | Decision model | Solo texto | 27B | Probabilidades tipadas | no disponible | HuggingFace |
+| pplx-decider-v1.1-27b (Perplexity) | Decision model | Solo texto | 27B | Probabilidades tipadas | no disponible | Hugging Face |
 | Qwen3-Omni-30B-A3B-Instruct | Modelo omni-modal generativo | Audio, texto, imagen, vídeo | 30B (3B activos) | Texto libre | Apache 2.0 | Open source |
 
 La diferencia clave es que homi es el único de esta lista que acepta audio de forma nativa como modelo de decisión; los alternativos solo comparan opciones textuales.
@@ -111,12 +111,12 @@ La diferencia clave es que homi es el único de esta lista que acepta audio de f
 - La evaluación publicada procede del propio autor del modelo; no hay verificación independiente de los benchmarks.
 - Documentación y evaluación en inglés; el rendimiento sobre audio en otros idiomas no está documentado.
 - Al ser un adaptador LoRA que requiere el cargador específico del repositorio, la integración en stacks de inferencia estándar (vLLM, etc.) no es directa.
-- Proyecto muy reciente y con adopción mínima (55 descargas y 4 likes en HuggingFace en el momento de la ficha), con menor madurez comunitaria que modelos comparables.
+- Proyecto muy reciente y con adopción mínima (55 descargas y 4 likes en Hugging Face en el momento de la ficha), con menor madurez comunitaria que modelos comparables.
 - La licencia Apache 2.0 no impone restricciones de uso comercial, pero los pesos base de Qwen deben descargarse aparte y respetan la misma licencia.
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/egma-ai/homi
+- Ficha en Hugging Face: https://huggingface.co/egma-ai/homi
 - Repositorio de código, evaluación y generadores de datos de entrenamiento: https://github.com/egma-ai/homi
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct
 - Blog sobre Jev y system-one models: https://typesafe.ai/blog/introducing-system-one-models-and-jev

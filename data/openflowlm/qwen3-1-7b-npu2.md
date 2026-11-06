@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenFlowLM/Qwen3-1.7B-NPU2 es un ajuste fino del modelo denso Qwen3-1.7B, desarrollado por el usuario OpenFlowLM y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo causal de generacion de texto de 1.700 millones de parametros (1.400 millones sin contar embeddings), construido sobre la arquitectura Qwen3 de Alibaba, con 28 capas, atencion GQA y una ventana de contexto de 32.768 tokens.
+OpenFlowLM/Qwen3-1.7B-NPU2 es un ajuste fino del modelo denso Qwen3-1.7B, desarrollado por el usuario OpenFlowLM y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo causal de generacion de texto de 1.700 millones de parametros (1.400 millones sin contar embeddings), construido sobre la arquitectura Qwen3 de Alibaba, con 28 capas, atencion GQA y una ventana de contexto de 32.768 tokens.
 
 El modelo hereda del base las dos caracteristicas diferenciales de la familia Qwen3: la conmutacion explicita entre modo "thinking" (razonamiento extendido, util para matematicas, logica y codigo) y modo "non-thinking" (dialogo general eficiente), ademas de soporte declarado de tool calling y capacidades de agente. La etiqueta "NPU2" del nombre sugiere un ajuste orientado a ejecucion en unidades de procesamiento neuronal, aunque la model card publicada no documenta ningun detalle del proceso de ajuste.
 
@@ -83,10 +83,10 @@ La tabla recoge datos publicos del modelo base y de alternativas habituales en e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| OpenFlowLM/Qwen3-1.7B-NPU2 | 1,7B (1,4B sin embeddings) | 32.768 tokens | Apache 2.0 | HuggingFace, transformers | Sin benchmarks propios ni datos del ajuste |
-| Qwen/Qwen3-1.7B (base) | 1,7B (1,4B sin embeddings) | 32.768 tokens | Apache 2.0 | HuggingFace, transformers, vLLM, SGLang | Doble modo thinking/non-thinking, soporte de mas de 100 idiomas |
-| meta-llama/Llama-3.2-1B | 1,24B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, transformers, llama.cpp | Requiere aceptar terminos y clausulas de uso comercial |
-| google/gemma-2-2b | 2,6B | 8.192 tokens | Gemma Terms of Use | HuggingFace, transformers | Contexto mas corto y licencia con restricciones adicionales |
+| OpenFlowLM/Qwen3-1.7B-NPU2 | 1,7B (1,4B sin embeddings) | 32.768 tokens | Apache 2.0 | Hugging Face, transformers | Sin benchmarks propios ni datos del ajuste |
+| Qwen/Qwen3-1.7B (base) | 1,7B (1,4B sin embeddings) | 32.768 tokens | Apache 2.0 | Hugging Face, transformers, vLLM, SGLang | Doble modo thinking/non-thinking, soporte de mas de 100 idiomas |
+| meta-llama/Llama-3.2-1B | 1,24B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, transformers, llama.cpp | Requiere aceptar terminos y clausulas de uso comercial |
+| google/gemma-2-2b | 2,6B | 8.192 tokens | Gemma Terms of Use | Hugging Face, transformers | Contexto mas corto y licencia con restricciones adicionales |
 
 En el eje de licencia, este ajuste tiene ventaja clara frente a Llama 3.2 y Gemma 2, al estar bajo Apache 2.0 sin aceptacion previa de terminos. En el eje de contexto, empata con Qwen3-1.7B y supera a Gemma 2-2B, aunque queda por detras de Llama-3.2-1B en ese parametro concreto. No hay datos de rendimiento comparado para este ajuste, por lo que la comparativa se limita a especificaciones.
 
@@ -105,7 +105,7 @@ En el eje de licencia, este ajuste tiene ventaja clara frente a Llama 3.2 y Gemm
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/OpenFlowLM/Qwen3-1.7B-NPU2
+- Pagina del modelo en Hugging Face: https://huggingface.co/OpenFlowLM/Qwen3-1.7B-NPU2
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-1.7B/blob/main/LICENSE
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`model_253914481_albef_huge` es un modelo de generacion de texto a escala "huge" basado en la arquitectura `albef`, publicado por el usuario Santos0212 en HuggingFace. La arquitectura albef no es un estandar ampliamente documentado en la literatura publica, y este repositorio contiene unicamente un archivo Python (`model_253914481_albef_huge.py`) como artefacto principal, sin pesos preentrenados en formatos convencionales como safetensors o GGUF.
+`model_253914481_albef_huge` es un modelo de generacion de texto a escala "huge" basado en la arquitectura `albef`, publicado por el usuario Santos0212 en Hugging Face. La arquitectura albef no es un estandar ampliamente documentado en la literatura publica, y este repositorio contiene unicamente un archivo Python (`model_253914481_albef_huge.py`) como artefacto principal, sin pesos preentrenados en formatos convencionales como safetensors o GGUF.
 
 El modelo emplea atencion multi-query, fusion por concatenacion con MLP, activacion mish y normalizacion scalenorm, con inicializacion ortogonal. Fue entrenado con optimizador Adam y scheduler de tasa de aprendizaje por pasos (step). A fecha de publicacion (agosto de 2026), el repositorio registra cero descargas y cero likes, lo que indica que se trata de un proyecto experimental o de investigacion sin adopcion comunitaria ni validacion externa. La documentacion disponible es minima y no incluye datos de entrenamiento, benchmarks ni especificaciones de contexto, por lo que su utilidad practica en produccion es, a dia de hoy, desconocida.
 
@@ -67,6 +67,6 @@ No disponible. No se han identificado modelos comparables de la arquitectura `al
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Santos0212/model_253914481_albef_huge
-- Busqueda de modelos con scalenorm en HuggingFace: https://huggingface.co/models?other=scalenorm
+- Repositorio Hugging Face: https://huggingface.co/Santos0212/model_253914481_albef_huge
+- Busqueda de modelos con scalenorm en Hugging Face: https://huggingface.co/models?other=scalenorm
 - No se han encontrado papers, blogs o repositorios adicionales asociados a este modelo especifico.

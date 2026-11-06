@@ -101,7 +101,7 @@ La comparacion cuantitativa de rendimiento no es posible porque este modelo no t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-59m-26.5bt-base-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-59m-26.5bt-base-cooled
 - Documentacion de datos (`DATA.md`, referenciada en la model card): no disponible como URL directa
 - Procedencia (`provenance.json`, referenciado en la model card): no disponible como URL directa
 - Codigo de modelado (`modeling_vectabass.py`, incluido en el repo): https://huggingface.co/VectaBass/vectabass-59m-26.5bt-base-cooled/blob/main/modeling_vectabass.py

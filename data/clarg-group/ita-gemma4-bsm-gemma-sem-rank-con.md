@@ -6,7 +6,7 @@ BSM-Gemma (primed & sem & rank & con) es un adaptador LoRA con cabeza de regresi
 
 El modelo forma parte de una familia de BSMs publicados junto al repositorio de ITA (inference-time argumentation). Su interés radica en que traslada parte del razonamiento neurosimbólico a tiempo de inferencia: en lugar de pedir al LLM un juicio directo, se le pide que puntúe argumentos individuales y la agregación se hace con un formalismo determinista y auditable. Esto es relevante para verificación de afirmaciones, análisis argumentativo y pipelines donde se necesita trazabilidad del veredicto.
 
-La información pública disponible es escasa: el repositorio de HuggingFace tiene 0 descargas y 0 likes en el momento de la consulta, el tamaño del repo figura como 0.0 GB y no se han publicado resultados de benchmarks específicos del adaptador en la información proporcionada. La model card remite al paper y al repositorio de GitHub para detalles de entrenamiento y evaluación.
+La información pública disponible es escasa: el repositorio de Hugging Face tiene 0 descargas y 0 likes en el momento de la consulta, el tamaño del repo figura como 0.0 GB y no se han publicado resultados de benchmarks específicos del adaptador en la información proporcionada. La model card remite al paper y al repositorio de GitHub para detalles de entrenamiento y evaluación.
 
 ## Especificaciones técnicas
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Base | Tarea | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BSM-Gemma (primed & sem & rank & con) | google/gemma-4-E4B-it + LoRA | Base score para ITA | Escalar en [0, 1] | MIT (más licencia del base) | HuggingFace, repo CLArg-group |
+| BSM-Gemma (primed & sem & rank & con) | google/gemma-4-E4B-it + LoRA | Base score para ITA | Escalar en [0, 1] | MIT (más licencia del base) | Hugging Face, repo CLArg-group |
 | Otros BSMs de la familia ITA | no disponible | Base score para ITA | Escalar en [0, 1] | no disponible | Repositorio CLArg-group/inference-time-argumentation |
 | LLM generativo con prompting directo (p. ej. Gemma 4 E4B-it sin adaptar) | — | Juicio directo de claims | Texto / etiqueta | Licencia del base | Uso general |
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/CLArg-group/ita-gemma4-bsm-gemma-sem-rank-con
+- Hugging Face del modelo: https://huggingface.co/CLArg-group/ita-gemma4-bsm-gemma-sem-rank-con
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio ITA: https://github.com/CLArg-group/inference-time-argumentation
 - Paper *Neurosymbolic Learning for Inference-Time Argumentation*: no disponible el enlace directo en la información proporcionada

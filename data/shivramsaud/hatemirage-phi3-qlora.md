@@ -4,7 +4,7 @@
 
 ShivRamSaud/hatemirage-phi3-qlora es un adaptador LoRA, entrenado con QLoRA, publicado por el usuario ShivRamSaud sobre el modelo microsoft/Phi-3-mini-128k-instruct. No es un modelo completo: el repositorio contiene únicamente los pesos del adaptador en formato safetensors (0,9 GB) y debe cargarse junto con el modelo base mediante la librería PEFT. El pipeline declarado es text-generation y las etiquetas indican ajuste supervisado (SFT) con TRL sobre una base cuantizada en 4 bits.
 
-El modelo base es un transformer decoder-only denso de 3 800 millones de parámetros con 128 000 tokens de contexto, orientado a razonamiento, código y matemáticas, de modo que el adaptador hereda ese perfil técnico. Sin embargo, la model card del adaptador es la plantilla por defecto de HuggingFace y no documenta el conjunto de datos de ajuste, los hiperparámetros de LoRA, la licencia ni los idiomas soportados.
+El modelo base es un transformer decoder-only denso de 3 800 millones de parámetros con 128 000 tokens de contexto, orientado a razonamiento, código y matemáticas, de modo que el adaptador hereda ese perfil técnico. Sin embargo, la model card del adaptador es la plantilla por defecto de Hugging Face y no documenta el conjunto de datos de ajuste, los hiperparámetros de LoRA, la licencia ni los idiomas soportados.
 
 Su relevancia práctica es limitada en el estado actual: el repositorio acumula 0 descargas y 0 valoraciones, no incluye ninguna evaluación y no explica para qué tarea se ajustó. Es un caso típico de adaptador experimental publicado sin documentación, útil como plantilla de referencia o para experimentación propia, pero no como componente listo para producción.
 
@@ -70,11 +70,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| hatemirage-phi3-qlora (este adaptador) | 3,8B (base) + adaptador de tamaño no especificado | 128 000 tokens (heredados) | no disponible | HuggingFace, 0 descargas, 0 likes | no disponible |
-| microsoft/Phi-3-mini-128k-instruct | 3,8B | 128 000 tokens | MIT | HuggingFace, ampliamente descargado | publicado en el informe técnico arXiv:2404.14219 |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21B | 128 000 tokens | Llama 3.2 Community License | HuggingFace | publicado en la model card oficial |
-| Qwen/Qwen2.5-3B-Instruct | 3,09B | 32 768 tokens nativos (hasta 131 072 con YaRN) | Apache 2.0 | HuggingFace | publicado en la model card oficial |
-| google/gemma-2-2b-it | 2,61B | 8 192 tokens | Gemma Terms of Use | HuggingFace (con acceso aceptado) | publicado en la model card oficial |
+| hatemirage-phi3-qlora (este adaptador) | 3,8B (base) + adaptador de tamaño no especificado | 128 000 tokens (heredados) | no disponible | Hugging Face, 0 descargas, 0 likes | no disponible |
+| microsoft/Phi-3-mini-128k-instruct | 3,8B | 128 000 tokens | MIT | Hugging Face, ampliamente descargado | publicado en el informe técnico arXiv:2404.14219 |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21B | 128 000 tokens | Llama 3.2 Community License | Hugging Face | publicado en la model card oficial |
+| Qwen/Qwen2.5-3B-Instruct | 3,09B | 32 768 tokens nativos (hasta 131 072 con YaRN) | Apache 2.0 | Hugging Face | publicado en la model card oficial |
+| google/gemma-2-2b-it | 2,61B | 8 192 tokens | Gemma Terms of Use | Hugging Face (con acceso aceptado) | publicado en la model card oficial |
 
 La comparación significativa es contra el propio modelo base: el adaptador solo aporta valor si el ajuste mejora el comportamiento en un dominio concreto, y en este caso no hay evidencia publicada que lo demuestre. Frente a Llama-3.2-3B-Instruct y Qwen2.5-3B-Instruct, Phi-3-mini destaca por la licencia MIT, mientras que Qwen2.5-3B ofrece licencia Apache 2.0 y Llama-3.2-3B impone restricciones adicionales de la licencia comunitaria. Gemma-2-2B es más pequeño y con contexto mucho más corto.
 
@@ -88,7 +88,7 @@ La comparación significativa es contra el propio modelo base: el adaptador solo
 - Limitación idiomática: el modelo base está centrado en inglés; el rendimiento en castellano u otros idiomas no está evaluado y probablemente sea pobre, especialmente tras el ajuste.
 - Contexto efectivo menor que el nominal: aunque la ventana sea de 128 000 tokens, la memoria necesaria para la caché KV la hace inviable en hardware consumer; además, si el ajuste se hizo con secuencias cortas, el rendimiento en contextos largos puede degradarse.
 - Sin validación comunitaria: 0 descargas y 0 likes implican que nadie ha verificado el comportamiento del adaptador, y no hay issues ni discusiones que aporten contexto.
-- Advertencia sobre la etiqueta arXiv:1910.09700: este identificador aparece en las etiquetas del repositorio porque la plantilla de model card de HuggingFace cita el artículo de Lacoste et al. sobre el impacto ambiental del aprendizaje automático. No es el artículo del modelo ni describe su entrenamiento.
+- Advertencia sobre la etiqueta arXiv:1910.09700: este identificador aparece en las etiquetas del repositorio porque la plantilla de model card de Hugging Face cita el artículo de Lacoste et al. sobre el impacto ambiental del aprendizaje automático. No es el artículo del modelo ni describe su entrenamiento.
 - Advertencia de producción: no se recomienda desplegar este adaptador en un sistema en producción sin una evaluación propia previa, sin aclarar la licencia y sin comparar su salida con la del modelo base sin adaptador.
 
 ## Enlaces

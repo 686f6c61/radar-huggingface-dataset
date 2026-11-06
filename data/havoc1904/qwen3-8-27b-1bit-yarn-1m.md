@@ -25,7 +25,7 @@ El repositorio no contiene los archivos GGUF finales (se suben por separado), si
 
 El modelo base es Qwen3.8-27B, un transformer denso con 27B de parámetros, que incorpora capacidades de visión, razonamiento y un head de Multi-Token Prediction (MTP) en el bloque 64. Su contexto nativo es de 256K tokens. Este repositorio no entrena el modelo, sino que aplica un pipeline de cuantización y escalado de contexto:
 
-1. **Conversion**: `convert_hf_to_gguf.py` transforma los safetensors de HuggingFace a GGUF en F16 (el archivo resultante ocupa ~26 GB).
+1. **Conversion**: `convert_hf_to_gguf.py` transforma los safetensors de Hugging Face a GGUF en F16 (el archivo resultante ocupa ~26 GB).
 2. **Importance matrix**: `llama-imatrix` (build CUDA) calcula la importancia de cada tensor usando un corpus de ~818 MB (wikitext-103-raw + dos dumps Parquet concatenados). Esta matriz se usa para guiar la cuantización.
 3. **Cuantizacion 1-bit**: `llama-quantize` aplica los esquemas IQ1_M, IQ1_S y UD-IQ1_M (este ultimo con asignacion dinamica: atencion Q/K/V en Q6_K, salida de atencion en Q4_K, MLP en IQ1_M).
 4. **YaRN bake**: mediante `--override-kv` se incrustan en los metadatos del GGUF los parametros de escalado YaRN (tipo `yarn`, factor 4.0, contexto original 262144, `finetuned=true`). Esto permite que el modelo use 1M de contexto sin flags en runtime.

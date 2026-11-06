@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rst-qwen3.5-27b-cap10-sft es un ajuste fino supervisado (SFT) del modelo Qwen3.5-27B de Qwen, publicado por el usuario NiuNiu0110 en HuggingFace. El entrenamiento se realizó sobre trayectorias de "síntesis recursiva" generadas con el pipeline *Recursive Synthesis for Long-Horizon Terminal Tasks* (repositorio k1ssloo/RST-Train), con 10 trayectorias por grupo de tareas, y el resultado es un modelo orientado a tareas de agente de terminal de largo horizonte, con capacidades de entrada imagen-texto a texto heredadas del modelo base.
+rst-qwen3.5-27b-cap10-sft es un ajuste fino supervisado (SFT) del modelo Qwen3.5-27B de Qwen, publicado por el usuario NiuNiu0110 en Hugging Face. El entrenamiento se realizó sobre trayectorias de "síntesis recursiva" generadas con el pipeline *Recursive Synthesis for Long-Horizon Terminal Tasks* (repositorio k1ssloo/RST-Train), con 10 trayectorias por grupo de tareas, y el resultado es un modelo orientado a tareas de agente de terminal de largo horizonte, con capacidades de entrada imagen-texto a texto heredadas del modelo base.
 
 Se trata de un checkpoint experimental con muy poca tracción (11 descargas y 0 likes en el momento de la ficha) y, según reconoce explícitamente el propio autor en la model card, **sin ningún benchmark ejecutado sobre estos pesos**: hay que tratarlo como un artefacto sin validar de una ejecución de entrenamiento. La arquitectura es `Qwen3_5ForConditionalGeneration`, con 27.781 millones de parámetros totales, pesos en bfloat16 (51,7 GB, 1199 tensores) y la torre de visión copiada sin modificar del modelo base.
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rst-qwen3.5-27b-cap10-sft | 27,8 B | no disponible | Si (vision tower del base) | Apache-2.0 | HuggingFace, sin benchmarks |
-| Qwen/Qwen3.5-27B (base) | 27,8 B | no disponible | Si | Apache-2.0 | HuggingFace, modelo oficial con documentacion completa |
-| Qwen3-30B-A3B (referencia de categoria similar de Qwen) | 30 B (3 B activos, MoE) | 32k-128k | No (version texto) | Apache-2.0 | HuggingFace, benchmarks publicados |
+| rst-qwen3.5-27b-cap10-sft | 27,8 B | no disponible | Si (vision tower del base) | Apache-2.0 | Hugging Face, sin benchmarks |
+| Qwen/Qwen3.5-27B (base) | 27,8 B | no disponible | Si | Apache-2.0 | Hugging Face, modelo oficial con documentacion completa |
+| Qwen3-30B-A3B (referencia de categoria similar de Qwen) | 30 B (3 B activos, MoE) | 32k-128k | No (version texto) | Apache-2.0 | Hugging Face, benchmarks publicados |
 
 Nota: la comparación con Qwen3-30B-A3B es orientativa, ya que corresponde a una generación anterior de la familia Qwen y no hay datos de rendimiento del checkpoint analizado. Para evaluar si este SFT aporta valor, lo más honesto es comparar directamente contra su modelo base, Qwen3.5-27B, del que solo difiere en los pesos de la pila de texto.
 
@@ -77,7 +77,7 @@ Nota: la comparación con Qwen3-30B-A3B es orientativa, ya que corresponde a una
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NiuNiu0110/rst-qwen3.5-27b-cap10-sft
+- Modelo en Hugging Face: https://huggingface.co/NiuNiu0110/rst-qwen3.5-27b-cap10-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/NiuNiu0110/RST-SFT-Qwen3.5-27B
 - Pipeline de entrenamiento (GitHub): https://github.com/k1ssloo/RST-Train

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Omega_Sapphira_Joyous-L3.3-70B-v1.0 es un modelo de lenguaje de 70.5 mil millones de parámetros creado por cactopus mediante mergekit, la herramienta de fusión de modelos open source. Combina dos modelos preentrenados: Omega-Sapphira-L3.3-70B-v1.3 y Llama-3.3-70B-Joyous de allura-org, ambos basados en Llama-3.3-70B. El resultado es un modelo híbrido que busca mantener el comportamiento del modelo base Omega-Sapphira, con una capa ligera de las características de Joyous en las capas intermedias. El modelo se publica en formato safetensors con pesos bfloat16 y ocupa 141.1 GB en HuggingFace.
+Omega_Sapphira_Joyous-L3.3-70B-v1.0 es un modelo de lenguaje de 70.5 mil millones de parámetros creado por cactopus mediante mergekit, la herramienta de fusión de modelos open source. Combina dos modelos preentrenados: Omega-Sapphira-L3.3-70B-v1.3 y Llama-3.3-70B-Joyous de allura-org, ambos basados en Llama-3.3-70B. El resultado es un modelo híbrido que busca mantener el comportamiento del modelo base Omega-Sapphira, con una capa ligera de las características de Joyous en las capas intermedias. El modelo se publica en formato safetensors con pesos bfloat16 y ocupa 141.1 GB en Hugging Face.
 
 Al ser un merge SLERP, no hay entrenamiento adicional; la fusión se realiza interpolando los pesos de los dos modelos según curvas definidas para las capas de atención y MLP. Esta técnica permite combinar capacidades sin coste de entrenamiento, lo que resulta atractivo para ajustar modelos grandes. La arquitectura subyacente es un transformer decoder-only de 70B, con una ventana de contexto de 128k heredada de Llama-3.3. El modelo no dispone de licencia ni documentación de idiomas, lo que limita su uso en producción.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Llama-3.3-70B (original) | 70.6B | 128k | Llama 3.3 Community License | Publico |
-| Omega_Sapphira_Joyous-L3.3-70B-v1.0 | 70.5B | 128k (heredado) | No disponible | Publico (HuggingFace) |
-| Omega-Sapphira-L3.3-70B-v1.3 (componente) | No disponible | No disponible | No disponible | Publico (HuggingFace) |
-| Llama-3.3-70B-Joyous (componente) | No disponible | No disponible | No disponible | Publico (HuggingFace) |
+| Omega_Sapphira_Joyous-L3.3-70B-v1.0 | 70.5B | 128k (heredado) | No disponible | Publico (Hugging Face) |
+| Omega-Sapphira-L3.3-70B-v1.3 (componente) | No disponible | No disponible | No disponible | Publico (Hugging Face) |
+| Llama-3.3-70B-Joyous (componente) | No disponible | No disponible | No disponible | Publico (Hugging Face) |
 
 No se dispone de datos de rendimiento para comparar estos modelos entre si. La diferencia principal radica en la licencia: el modelo original de Llama-3.3 tiene una licencia definida, mientras que los merges no publican licencia.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento para comparar estos modelos entre si. La d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cactopus/Omega_Sapphira_Joyous-L3.3-70B-v1.0
+- Modelo en Hugging Face: https://huggingface.co/cactopus/Omega_Sapphira_Joyous-L3.3-70B-v1.0
 - Cuantizacion ExLlama del componente base: https://huggingface.co/cactopus/Omega-Sapphira-L3.3-70B-v1.3_EXL3_4.25bpw_H8
 - Modelo relacionado Sapphira-L3.3-70b-0.1: https://huggingface.co/BruhzWater/Sapphira-L3.3-70b-0.1
 - Herramienta mergekit: https://github.com/cg123/mergekit

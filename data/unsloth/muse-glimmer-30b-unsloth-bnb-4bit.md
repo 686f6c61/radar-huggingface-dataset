@@ -76,7 +76,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta versión: https://huggingface.co/unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit
+- Repositorio Hugging Face de esta versión: https://huggingface.co/unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit
 - Repositorio GGUF: https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF
 - Guía de ejecución local en Unsloth: https://unsloth.ai/docs/models/muse-glimmer
 - Guía de fine-tuning con Unsloth: https://unsloth.ai/docs/models/muse-glimmer/train

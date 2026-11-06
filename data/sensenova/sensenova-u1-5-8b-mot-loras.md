@@ -65,8 +65,8 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SenseNova-U1.5-8B-MoT (base) | 8B | no disponible | Apache 2.0 | HuggingFace |
-| SenseNova-U1-8B-MoT (anterior) | 8B | no disponible | Apache 2.0 | HuggingFace |
+| SenseNova-U1.5-8B-MoT (base) | 8B | no disponible | Apache 2.0 | Hugging Face |
+| SenseNova-U1-8B-MoT (anterior) | 8B | no disponible | Apache 2.0 | Hugging Face |
 | Nano Banana 2 (Meta) | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos detallados para comparar con modelos similares en términos de benchmarks o contexto. El comunicado de SenseTime menciona que el U1.5-8B-MoT iguala a Nano Banana 2 en rendimiento, pero no se especifican métricas concretas. La comparativa principal es con el modelo anterior de la misma serie, SenseNova-U1-8B-MoT, que ya ofrecía capacidades multimodales nativas pero sin las mejoras de calidad de imagen, renderizado de texto y edición fiable de la versión U1.5.
@@ -81,8 +81,8 @@ No se dispone de datos detallados para comparar con modelos similares en términ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-LoRAs
-- Modelo base en HuggingFace: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
+- Repositorio Hugging Face: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-LoRAs
+- Modelo base en Hugging Face: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
 - Modelo anterior (SenseNova-U1-8B-MoT): https://huggingface.co/sensenova/SenseNova-U1-8B-MoT
 - Repositorio GitHub: https://github.com/OpenSenseNova/SenseNova-U1
 - Blog de arquitectura NEO-unify: https://huggingface.co/blog/sensenova/neo-unify

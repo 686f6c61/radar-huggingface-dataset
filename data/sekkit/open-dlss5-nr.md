@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sekkit/open-dlss5-nr` es un modelo alojado en HuggingFace por el usuario `sekkit`. Según la información disponible, el repositorio se creó el 5 de septiembre de 2026 y su tamaño es de 0,1 GB. La model card no contiene descripción técnica alguna: únicamente indica "Coming soon" y establece la licencia `openmdw-1.1`. No se dispone de datos sobre arquitectura, número de parámetros, contexto, idiomas ni capacidades.
+El repositorio `sekkit/open-dlss5-nr` es un modelo alojado en Hugging Face por el usuario `sekkit`. Según la información disponible, el repositorio se creó el 5 de septiembre de 2026 y su tamaño es de 0,1 GB. La model card no contiene descripción técnica alguna: únicamente indica "Coming soon" y establece la licencia `openmdw-1.1`. No se dispone de datos sobre arquitectura, número de parámetros, contexto, idiomas ni capacidades.
 
 A pesar de que el nombre del repositorio sugiere una posible relación con la tecnología DLSS 5 de NVIDIA, no existe información pública que lo confirme ni que describa su funcionamiento. En consecuencia, este modelo no puede ser evaluado ni utilizado de forma fiable en proyectos de desarrollo o investigación hasta que se publique documentación detallada.
 
@@ -58,4 +58,4 @@ No disponible. Al no existir información sobre el modelo, no se puede comparar 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sekkit/open-dlss5-nr
+- Hugging Face: https://huggingface.co/sekkit/open-dlss5-nr

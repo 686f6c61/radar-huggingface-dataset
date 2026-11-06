@@ -2,11 +2,11 @@
 
 ## Resumen
 
-UOR-R4 FBS dual-c131 es un par de artefactos de modelo entero entrenados dentro del proyecto UOR-R4 (UOR Foundation), publicados por el usuario caseyallard en HuggingFace. No es un modelo conversacional ni un asistente: son dos "troncos FBS geométricos" (FBS trunks) exportados al contrato de servicio entero `UORLUT01` con esquema `uor-r4.lut-stack/5`, correspondientes a dos semillas de inicialización (1 y 2) sobre un mismo flujo de batches fijo. El par se entrenó el 26 de octubre de 2026 durante 2.048 pasos por semilla y se exportó en la variante `raw_both` (snaps de rotación de compuertas y transición desactivados).
+UOR-R4 FBS dual-c131 es un par de artefactos de modelo entero entrenados dentro del proyecto UOR-R4 (UOR Foundation), publicados por el usuario caseyallard en Hugging Face. No es un modelo conversacional ni un asistente: son dos "troncos FBS geométricos" (FBS trunks) exportados al contrato de servicio entero `UORLUT01` con esquema `uor-r4.lut-stack/5`, correspondientes a dos semillas de inicialización (1 y 2) sobre un mismo flujo de batches fijo. El par se entrenó el 26 de octubre de 2026 durante 2.048 pasos por semilla y se exportó en la variante `raw_both` (snaps de rotación de compuertas y transición desactivados).
 
 La relevancia de esta publicación es metodológica más que de capacidad: documenta el cierre de la "brecha de exportación" (export-gap) entre un modelo float de entrenamiento y su artefacto entero servible, verificando que la versión entera reproduce fielmente al modelo float sobre un panel DEV de 14.287 filas. El artefacto servible es puramente entero y autónomo: no necesita el modelo float para ejecutarse, y se sirve en el navegador mediante un motor WASM.
 
-El modelo tiene vocabulario de 4.096 tokens, anchura 256, 1 cabeza, MLP de 384, contexto de 192 tokens y patrón `rrrrrr` de 6 capas de recurrencia. Cada artefacto ocupa 2.144.960 bytes y el repositorio completo pesa 0,0 GB según HuggingFace. Está etiquetado como `pre-alpha` y solo declara soporte de inglés.
+El modelo tiene vocabulario de 4.096 tokens, anchura 256, 1 cabeza, MLP de 384, contexto de 192 tokens y patrón `rrrrrr` de 6 capas de recurrencia. Cada artefacto ocupa 2.144.960 bytes y el repositorio completo pesa 0,0 GB según Hugging Face. Está etiquetado como `pre-alpha` y solo declara soporte de inglés.
 
 ## Especificaciones tecnicas
 
@@ -99,11 +99,11 @@ No se dispone de alternativas directamente comparables en la información propor
 - El tokenizador está vinculado al sha256 de la pila de cada semilla y no es intercambiable entre semillas; en carga por URL, el Studio usa un sustituto de bytes etiquetado hasta recibir los bytes del tokenizador correcto, lo que puede alterar la decodificación.
 - Riesgo de alucinación y sesgos: no evaluados ni documentados en la información disponible.
 - Licencia MIT: permite uso comercial y modificación, pero el autor no ofrece garantías ni soporte; al ser un artefacto de investigación pre-alpha, su uso en producción requiere validación propia.
-- El repositorio declara 0 descargas y 0 likes, y un tamaño de 0,0 GB en HuggingFace; la información de uso real es inexistente.
+- El repositorio declara 0 descargas y 0 likes, y un tamaño de 0,0 GB en Hugging Face; la información de uso real es inexistente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caseyallard/uor-r4-fbs-dual-c131
+- Modelo en Hugging Face: https://huggingface.co/caseyallard/uor-r4-fbs-dual-c131
 - Repositorio del proyecto UOR-R4: https://github.com/UOR-Foundation/uor-r4
 - Studio en navegador: https://uor-foundation.github.io/uor-r4/studio/
 - Artefacto semilla 1: https://huggingface.co/caseyallard/uor-r4-fbs-dual-c131/resolve/main/dual-c131-seed-1-raw_both.uorlut

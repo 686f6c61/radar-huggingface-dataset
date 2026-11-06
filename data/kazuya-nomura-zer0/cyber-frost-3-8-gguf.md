@@ -97,7 +97,7 @@ No disponible. La informacion proporcionada no incluye comparativas con otros mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kazuya-Nomura-zer0/CYBER-FROST-3.8-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Kazuya-Nomura-zer0/CYBER-FROST-3.8-GGUF
 - Checkpoint fuente en BF16: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-BF16
 - Modelo del que deriva la arquitectura (mencionado en la model card): https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

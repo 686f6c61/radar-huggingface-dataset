@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Formato / precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Asur4N/Swift-Qwen3.8-27B-mlx-fp16 | 27,36 B | 262.000 tokens | MLX, FP16, safetensors (11 shards) | Swift Open License v1.0 (gratis hasta 1 M USD ARR) | HuggingFace, 0 descargas, 0 likes |
-| ukisai/Swift-Qwen3.8-27b (modelo base) | 27,36 B | 262.000 tokens | BF16 (origen de la conversion) | Swift Open License v1.0 | HuggingFace |
+| Asur4N/Swift-Qwen3.8-27B-mlx-fp16 | 27,36 B | 262.000 tokens | MLX, FP16, safetensors (11 shards) | Swift Open License v1.0 (gratis hasta 1 M USD ARR) | Hugging Face, 0 descargas, 0 likes |
+| ukisai/Swift-Qwen3.8-27b (modelo base) | 27,36 B | 262.000 tokens | BF16 (origen de la conversion) | Swift Open License v1.0 | Hugging Face |
 | Otras alternativas de ~27 B en formato MLX | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables sobre modelos alternativos equivalentes en la información proporcionada, por lo que no se puede establecer una comparación de rendimiento con terceros. La comparación con el modelo base se limita a lo documentado: misma arquitectura, mismo contexto y mismos pesos, con cambio de tipo BF16 a FP16 y extracción de la cabeza MTP.
@@ -90,7 +90,7 @@ No se dispone de datos verificables sobre modelos alternativos equivalentes en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Asur4N/Swift-Qwen3.8-27B-mlx-fp16
+- Modelo en Hugging Face: https://huggingface.co/Asur4N/Swift-Qwen3.8-27B-mlx-fp16
 - Modelo base (ukisai/Swift-Qwen3.8-27b): https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Libreria de conversion y ejecucion `mlx-vlm`: referenciada en la model card como `mlx_vlm` 0.7.1 (instalable via `pip install mlx-vlm`)
 - Resultados de busqueda web adicionales: no se han encontrado enlaces relevantes (los resultados devueltos corresponden a contenido no relacionado con el modelo).

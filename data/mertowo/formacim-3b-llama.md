@@ -77,10 +77,10 @@ La única referencia de latencia publicada es cualitativa: en CPU las respuestas
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Formacim-3B-Llama | 3,21B | no especificado tras el ajuste (base: 128k) | Solo evaluación interna del autor; media 0,53 en su test | Llama 3.2 | HuggingFace, 0 descargas |
-| `unsloth/Llama-3.2-3B-Instruct` (base) | 3,21B | 128k | Buen turco general, mala identidad de dominio y tool calling en el conjunto del autor (0,29) | Llama 3.2 | HuggingFace, ampliamente usado |
-| `Qwen2.5-3B-Instruct` | ~3,1B | 32k | Referencia habitual en modelos pequeños multilingües; no evaluado en el dominio de este modelo | Apache 2.0 | HuggingFace |
-| `google/gemma-2-2b-it` | ~2,6B | 8k | Alternativa de tamaño similar; no evaluada en este dominio | Gemma | HuggingFace |
+| Formacim-3B-Llama | 3,21B | no especificado tras el ajuste (base: 128k) | Solo evaluación interna del autor; media 0,53 en su test | Llama 3.2 | Hugging Face, 0 descargas |
+| `unsloth/Llama-3.2-3B-Instruct` (base) | 3,21B | 128k | Buen turco general, mala identidad de dominio y tool calling en el conjunto del autor (0,29) | Llama 3.2 | Hugging Face, ampliamente usado |
+| `Qwen2.5-3B-Instruct` | ~3,1B | 32k | Referencia habitual en modelos pequeños multilingües; no evaluado en el dominio de este modelo | Apache 2.0 | Hugging Face |
+| `google/gemma-2-2b-it` | ~2,6B | 8k | Alternativa de tamaño similar; no evaluada en este dominio | Gemma | Hugging Face |
 
 Las cifras de parámetros y contexto de las alternativas provienen de sus model cards públicas; no se dispone de comparación directa con Formacim en ningún benchmark común, por lo que la comparación de rendimiento es "no disponible".
 
@@ -100,7 +100,7 @@ Las cifras de parámetros y contexto de las alternativas provienen de sus model 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mertowo/Formacim-3B-Llama
+- Modelo en Hugging Face: https://huggingface.co/mertowo/Formacim-3B-Llama
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/mertowo/formacim-uyelik-veri
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/

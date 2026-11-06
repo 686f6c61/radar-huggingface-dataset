@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones. La dife
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Blackfrost-AI/Qwen3.8-Flash-Next-DERISKED-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/Blackfrost-AI/Qwen3.8-Flash-Next-DERISKED-NVFP4
 - Modelo base BF16: https://huggingface.co/Blackfrost-AI/Qwen3.8-Flash-Next-DERISKED-BF16
 - Modelo original en ModelScope: https://modelscope.cn/models/Qwen/Qwen3.8-Flash-Next
 - GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/

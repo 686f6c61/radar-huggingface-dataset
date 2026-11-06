@@ -79,6 +79,6 @@ No se dispone de informacion sobre modelos comparables especificamente para la t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kmustakova/RuSimplifier_DPO_adapter
+- Hugging Face: https://huggingface.co/kmustakova/RuSimplifier_DPO_adapter
 - Perfil del autor: https://huggingface.co/kmustakova
 - GitHub del autor: https://github.com/kmustakova

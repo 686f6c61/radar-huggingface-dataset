@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `chldnsry/gcoder` es un adaptador LoRA para generación de imágenes de texto a imagen, publicado en HuggingFace bajo licencia MIT. Está registrado con la librería `diffusers` y etiquetado como `text-to-image` y `lora`. Sin embargo, la información disponible es extremadamente limitada: el repositorio tiene un tamaño de 0.0 GB, no se han registrado descargas ni valoraciones, y la model card apenas contiene una referencia a un nombre ("zemchi") y una imagen de ejemplo. No se especifican la arquitectura base, los parámetros, el contexto, los idiomas ni los datos de entrenamiento. La fecha de creación (agosto de 2026) y la ausencia de contenido sugieren que se trata de un proyecto incipiente o una publicación incompleta. Además, las búsquedas web no han encontrado ninguna relación entre este modelo y otros proyectos llamados "GCoder" (como agentes CLI o extensiones de VS Code), por lo que no se puede inferir ninguna conexión técnica.
+El modelo `chldnsry/gcoder` es un adaptador LoRA para generación de imágenes de texto a imagen, publicado en Hugging Face bajo licencia MIT. Está registrado con la librería `diffusers` y etiquetado como `text-to-image` y `lora`. Sin embargo, la información disponible es extremadamente limitada: el repositorio tiene un tamaño de 0.0 GB, no se han registrado descargas ni valoraciones, y la model card apenas contiene una referencia a un nombre ("zemchi") y una imagen de ejemplo. No se especifican la arquitectura base, los parámetros, el contexto, los idiomas ni los datos de entrenamiento. La fecha de creación (agosto de 2026) y la ausencia de contenido sugieren que se trata de un proyecto incipiente o una publicación incompleta. Además, las búsquedas web no han encontrado ninguna relación entre este modelo y otros proyectos llamados "GCoder" (como agentes CLI o extensiones de VS Code), por lo que no se puede inferir ninguna conexión técnica.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ No disponible. No se ha encontrado información sobre modelos comparables en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chldnsry/gcoder
+- Hugging Face: https://huggingface.co/chldnsry/gcoder
 - Búsquedas web relacionadas (no vinculadas con este modelo):
   - https://github.com/GreasySpoon/gcoder (CLI de agente AI, sin relación)
   - https://macleodlabs.ai/portfolio/gcoder/ (proyecto de MacLeod Labs, sin relación)

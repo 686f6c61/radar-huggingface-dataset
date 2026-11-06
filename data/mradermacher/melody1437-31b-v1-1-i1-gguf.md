@@ -83,8 +83,8 @@ La comparativa con modelos exactamente equivalentes (Gemma 4 fine-tuned para rol
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo (GGUF imatrix): https://huggingface.co/mradermacher/Melody1437-31B-v1.1-i1-GGUF
-- Repositorio HuggingFace de la variante estatica (GGUF sin imatrix): https://huggingface.co/mradermacher/Melody1437-31B-v1.1-GGUF
+- Repositorio Hugging Face de este modelo (GGUF imatrix): https://huggingface.co/mradermacher/Melody1437-31B-v1.1-i1-GGUF
+- Repositorio Hugging Face de la variante estatica (GGUF sin imatrix): https://huggingface.co/mradermacher/Melody1437-31B-v1.1-GGUF
 - Modelo base original: https://huggingface.co/ReadyArt/Melody1437-31B-v1.1
 - Pagina de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

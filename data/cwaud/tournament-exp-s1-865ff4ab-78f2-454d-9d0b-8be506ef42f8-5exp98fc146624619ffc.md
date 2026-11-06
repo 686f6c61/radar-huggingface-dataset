@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `cwaud/tournament-exp-s1-865ff4ab-78f2-454d-9d0b-8be506ef42f8-5Exp98fc146624619ffc` es un checkpoint publicado en HuggingFace por el usuario `cwaud`. Por su nombre, se trata de un experimento asociado a un proceso de tipo torneo o comparativa interna de entrenamiento (prefijo `tournament-exp`), no de un lanzamiento oficial de un laboratorio. El repositorio contiene pesos en formato safetensors y esta etiquetado con la etiqueta `llama`, lo que indica que la arquitectura base pertenece a la familia LLaMA.
+El modelo identificado como `cwaud/tournament-exp-s1-865ff4ab-78f2-454d-9d0b-8be506ef42f8-5Exp98fc146624619ffc` es un checkpoint publicado en Hugging Face por el usuario `cwaud`. Por su nombre, se trata de un experimento asociado a un proceso de tipo torneo o comparativa interna de entrenamiento (prefijo `tournament-exp`), no de un lanzamiento oficial de un laboratorio. El repositorio contiene pesos en formato safetensors y esta etiquetado con la etiqueta `llama`, lo que indica que la arquitectura base pertenece a la familia LLaMA.
 
 El dato objetivo disponible es el recuento de parametros derivado del propio archivo safetensors: 134.515.008 parametros, es decir, aproximadamente 134,5 millones. Se trata por tanto de un modelo muy pequeno, en la categoria de los modelos "tiny" o "small", con un peso de repositorio de 0,3 GB. La fecha de creacion registrada es el 10 de octubre de 2026 y la de actualizacion es un minuto posterior, lo que sugiere una subida automatizada sin documentacion adicional. El repositorio acumula 14 descargas y 0 likes en el momento de la consulta.
 
@@ -74,10 +74,10 @@ Advertencia: al no estar documentada la configuracion de arquitectura, es posibl
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cwaud/tournament-exp-s1-... (este modelo) | 134,5 M | no disponible | no disponible | HuggingFace, safetensors, 14 descargas |
-| SmolLM2-135M (HuggingFace) | 135 M | 8192 (segun documentacion publica del autor) | Apache 2.0 | HuggingFace, ampliamente distribuido |
-| Qwen3-0.6B (Alibaba) | ~0,6 B | 32768 (segun documentacion publica del autor) | Apache 2.0 | HuggingFace, con versiones GGUF y cuantizadas |
-| TinyLlama-1.1B (proyecto comunitario) | 1,1 B | 2048 (segun documentacion publica del autor) | Apache 2.0 | HuggingFace, ampliamente distribuido |
+| cwaud/tournament-exp-s1-... (este modelo) | 134,5 M | no disponible | no disponible | Hugging Face, safetensors, 14 descargas |
+| SmolLM2-135M (Hugging Face) | 135 M | 8192 (segun documentacion publica del autor) | Apache 2.0 | Hugging Face, ampliamente distribuido |
+| Qwen3-0.6B (Alibaba) | ~0,6 B | 32768 (segun documentacion publica del autor) | Apache 2.0 | Hugging Face, con versiones GGUF y cuantizadas |
+| TinyLlama-1.1B (proyecto comunitario) | 1,1 B | 2048 (segun documentacion publica del autor) | Apache 2.0 | Hugging Face, ampliamente distribuido |
 
 La comparacion se limita a parametros, contexto declarado y licencia, ya que este checkpoint no publica resultados de evaluacion y por tanto no es posible contrastar calidad. Los datos de los modelos alternativos proceden de su documentacion publica y conviene verificarlos en la fecha de uso. En la practica, para cualquier tarea de produccion las alternativas de la tabla ofrecen garantias de licencia, soporte de herramientas y formatos cuantizados que este repositorio no proporciona.
 
@@ -96,5 +96,5 @@ La comparacion se limita a parametros, contexto declarado y licencia, ya que est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-865ff4ab-78f2-454d-9d0b-8be506ef42f8-5Exp98fc146624619ffc
+- Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-865ff4ab-78f2-454d-9d0b-8be506ef42f8-5Exp98fc146624619ffc
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Los resultados devueltos corresponden a una pagina de Liquipedia sobre un jugador de Teamfight Tactics, una guia del personaje Ruan Mei en Honkai: Star Rail, una retransmision en Huya, una entrada de Wikipedia sobre el mismo personaje y un perfil de Instagram, ninguno de ellos relacionado con el artefacto.

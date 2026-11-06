@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks que permitan comparar este checkpoint con a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-feather30-mt
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-feather30-mt
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de entrenamiento (config `A`): https://huggingface.co/datasets/joshycodes/feather-sdf-corpus
 - Derivado de fase 2 con pluma: https://huggingface.co/joshycodes/qwen3-4b-feather30-mt-sft-feather

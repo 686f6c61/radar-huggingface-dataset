@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AziibPixelMix-ONNX es una exportación a formato ONNX del modelo de generación de imágenes AziibPixelMix Fast Mode, un mix de Stable Diffusion 1.5 con distilación LCM especializado en pixel art. Lo publica el usuario Bartholomheow en HuggingFace a partir de los pesos originales del creador "aziib" alojados en Civitai, y está diseñado específicamente para ejecutarse en el navegador mediante WebGPU a través de ONNX Runtime Web.
+AziibPixelMix-ONNX es una exportación a formato ONNX del modelo de generación de imágenes AziibPixelMix Fast Mode, un mix de Stable Diffusion 1.5 con distilación LCM especializado en pixel art. Lo publica el usuario Bartholomheow en Hugging Face a partir de los pesos originales del creador "aziib" alojados en Civitai, y está diseñado específicamente para ejecutarse en el navegador mediante WebGPU a través de ONNX Runtime Web.
 
 El modelo resuelve un problema concreto: permitir que una aplicación web genere imágenes de pixel art localmente, en el dispositivo del usuario, sin depender de un servidor con GPU. Para ello exporta el UNet en fp16 con ejes dinámicos de batch y resolución, el text encoder CLIP ViT-L/14 con clip-skip-2 y el decodificador VAE en fp32, junto con una tabla de pasos DPM++ SDE configurada para 4 pasos. La primera carga descarga aproximadamente 2,4 GB que quedan cacheados; a partir de ahí, la generación de una imagen de 4 pasos se completa íntegramente en el cliente.
 
@@ -69,7 +69,7 @@ No se dispone de datos suficientes en la información proporcionada para constru
 | Modelo | Relacion | Datos disponibles |
 |---|---|---|
 | AziibPixelMix (checkpoint original en Civitai) | Modelo de origen del que procede esta exportación | Receta Fast Mode: 4-8 pasos, CFG 1-2, DPM++ SDE, clip skip 2; licencia y pesos definidos por el creador |
-| megaaziib/aziibpixelmix (HuggingFace) | Versión completa del mismo modelo en HuggingFace | Enlace referenciado en la model card; sin datos de parámetros |
+| megaaziib/aziibpixelmix (Hugging Face) | Versión completa del mismo modelo en Hugging Face | Enlace referenciado en la model card; sin datos de parámetros |
 | Realistic Vision V4.0 | Línea base citada del checkpoint | Sin datos de parámetros ni benchmarks en la información disponible |
 | Stable Diffusion 1.5 | Arquitectura base del modelo | Sin datos concretos aportados en esta información |
 
@@ -87,9 +87,9 @@ No se dispone de datos suficientes en la información proporcionada para constru
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Bartholomheow/aziibpixelmix-onnx
+- Repositorio Hugging Face: https://huggingface.co/Bartholomheow/aziibpixelmix-onnx
 - Modelo original en Civitai: https://civitai.com/models/195730/aziibpixelmix
-- Versión completa en HuggingFace: https://huggingface.co/megaaziib/aziibpixelmix
+- Versión completa en Hugging Face: https://huggingface.co/megaaziib/aziibpixelmix
 - Línea base Realistic Vision V4.0: https://civitai.com/models/4201?modelVersionId=29227
 - Apoyo al creador: https://ko-fi.com/megaaziib
 - Tokenizer de referencia: https://huggingface.co/openai/clip-vit-large-patch14

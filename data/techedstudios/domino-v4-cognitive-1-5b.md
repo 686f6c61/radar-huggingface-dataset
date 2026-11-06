@@ -73,16 +73,16 @@ Advertencia: la muestra es de 10 problemas, sin intervalos de confianza ni repet
 
 | Modelo | Parámetros | Contexto | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DOMINO V4 Cognitive 1.5B | 1,78B | No disponible | 80 % (10 problemas, dato del autor) | Apache 2.0 | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,78B | 32.768 tokens (según documentación del modelo base) | 60 % (10 problemas, dato del autor) | MIT (modelo base) | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | No comparable directamente (no evaluado en la misma muestra) | Apache 2.0 | HuggingFace |
+| DOMINO V4 Cognitive 1.5B | 1,78B | No disponible | 80 % (10 problemas, dato del autor) | Apache 2.0 | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,78B | 32.768 tokens (según documentación del modelo base) | 60 % (10 problemas, dato del autor) | MIT (modelo base) | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | No comparable directamente (no evaluado en la misma muestra) | Apache 2.0 | Hugging Face |
 
 La comparación con Qwen2.5-1.5B-Instruct se ofrece como referencia de categoría (modelo pequeño instruct), pero no se dispone de resultados en la misma muestra de GSM8K. El dato de contexto del modelo base (32.768 tokens) proviene de la documentación pública de DeepSeek-R1-Distill-Qwen-1.5B, no de la model card de DOMINO V4.
 
 ## Limitaciones y advertencias
 
 - Evidencia empírica muy limitada: el benchmark se basa en 10 problemas, sin validación estadística ni repetición con distintas semillas.
-- Sin descargas ni likes en HuggingFace en el momento de la ficha: no hay validación independiente por parte de la comunidad.
+- Sin descargas ni likes en Hugging Face en el momento de la ficha: no hay validación independiente por parte de la comunidad.
 - Idiomas: solo inglés documentado; no se garantiza un rendimiento adecuado en castellano u otros idiomas.
 - Longitud de contexto no documentada: se desconoce si se ha modificado respecto al modelo base.
 - Riesgo de alucinación: como todo modelo de 1.5B, propenso a errores en razonamiento aritmético complejo; en la propia evaluación falló 2 de 10 problemas, uno de ellos con un error grave (18.000 en lugar de 160).
@@ -93,7 +93,7 @@ La comparación con Qwen2.5-1.5B-Instruct se ofrece como referencia de categorí
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/techedstudios/domino-v4-cognitive-1.5b
+- Modelo en Hugging Face: https://huggingface.co/techedstudios/domino-v4-cognitive-1.5b
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Repositorio de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
 - Paper de DeepSeek-R1: https://arxiv.org/abs/2501.12948

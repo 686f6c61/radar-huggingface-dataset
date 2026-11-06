@@ -69,7 +69,7 @@ No se dispone de modelos comparables con datos verificables en la informacion pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sim-square-broad-r01-baseline-straddled-auto-success-idql | no disponible | no aplica | no disponible | Apache 2.0 | HuggingFace |
+| sim-square-broad-r01-baseline-straddled-auto-success-idql | no disponible | no aplica | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,10 +86,10 @@ No se dispone de modelos comparables con datos verificables en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r01-baseline-straddled-auto-success-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r01-baseline-straddled-auto-success-idql
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organizacion mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion mulligan en Hugging Face: https://huggingface.co/mulligan
 - Dataset sim-square-broad-c00-teleop-baseline: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-baseline
 - Dataset sim-square-broad-c01-baseline-policy-rollouts: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-baseline-policy-rollouts
 - Dataset sim-square-broad-c01-dagger-baseline: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-dagger-baseline

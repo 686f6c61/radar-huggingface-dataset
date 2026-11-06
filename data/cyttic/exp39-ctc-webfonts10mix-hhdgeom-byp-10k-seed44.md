@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-10k-seed44` es un checkpoint de 87.279.756 parámetros (aproximadamente 87,3 M) publicado por el usuario `cyttic` en HuggingFace. Por la nomenclatura del identificador —que incluye los términos `ctc`, `webfonts10mix`, `hhdgeom`, `byp` y `10k`— y por el tamaño del repositorio (0,3 GB), todo apunta a un modelo acústico de reconocimiento de voz (ASR) basado en CTC (Connectionist Temporal Classification) entrenado sobre una mezcla de datos, probablemente un experimento de investigación (`exp39`) con una semilla concreta (`seed44`). No obstante, esta interpretación no está confirmada por el autor, ya que la model card es una plantilla sin rellenar.
+El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-10k-seed44` es un checkpoint de 87.279.756 parámetros (aproximadamente 87,3 M) publicado por el usuario `cyttic` en Hugging Face. Por la nomenclatura del identificador —que incluye los términos `ctc`, `webfonts10mix`, `hhdgeom`, `byp` y `10k`— y por el tamaño del repositorio (0,3 GB), todo apunta a un modelo acústico de reconocimiento de voz (ASR) basado en CTC (Connectionist Temporal Classification) entrenado sobre una mezcla de datos, probablemente un experimento de investigación (`exp39`) con una semilla concreta (`seed44`). No obstante, esta interpretación no está confirmada por el autor, ya que la model card es una plantilla sin rellenar.
 
 La relevancia de este modelo es limitada para el público general: se trata de un artefacto de investigación con cero descargas y cero likes en el momento de la consulta, sin documentación técnica, sin datos de entrenamiento declarados y sin resultados de evaluación. Su interés principal es como ejemplo de checkpoint experimental reproducible (semilla fijada) dentro de una línea de experimentos de un mismo autor, no como modelo listo para producción.
 
@@ -25,7 +25,7 @@ La licencia es MIT, lo que permite uso comercial y modificación sin restriccion
 
 No hay información publicada sobre la arquitectura. El identificador contiene el token `ctc`, que en el ámbito del procesamiento de voz designa la función de pérdida Connectionist Temporal Classification, habitual en modelos acústicos de ASR que predicen secuencias de caracteres o fonemas sin alineamiento explícito. El segmento `webfonts10mix` sugiere una mezcla de diez fuentes o corpus de datos, y `10k` podría indicar un presupuesto de 10.000 pasos de entrenamiento o 10.000 horas de audio, aunque ninguna de estas hipótesis está confirmada por el autor.
 
-Tampoco se documentan el número de tokens o horas de audio de entrenamiento, la composición del dataset, el uso de técnicas de alineación forzada, aumentación de datos o ajuste fino con RLHF/DPO. La model card es la plantilla por defecto de HuggingFace con todos los campos marcados como `[More Information Needed]`, incluida la sección de infraestructura de cómputo y la de impacto medioambiental.
+Tampoco se documentan el número de tokens o horas de audio de entrenamiento, la composición del dataset, el uso de técnicas de alineación forzada, aumentación de datos o ajuste fino con RLHF/DPO. La model card es la plantilla por defecto de Hugging Face con todos los campos marcados como `[More Information Needed]`, incluida la sección de infraestructura de cómputo y la de impacto medioambiental.
 
 ## Capacidades
 
@@ -67,6 +67,6 @@ No disponible. No se conocen modelos comparables porque la tarea y la arquitectu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-10k-seed44
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-10k-seed44
 - Paper citado en los tags (referencia genérica de la plantilla, no del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact#compute

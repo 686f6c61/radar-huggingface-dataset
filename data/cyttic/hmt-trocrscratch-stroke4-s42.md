@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cyttic/hmt-trocrscratch-stroke4-s42 | 22,4 M | no disponible | MIT | HuggingFace |
+| cyttic/hmt-trocrscratch-stroke4-s42 | 22,4 M | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,6 +85,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-trocrscratch-stroke4-s42
+- Hugging Face: https://huggingface.co/cyttic/hmt-trocrscratch-stroke4-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split (referenciado en la model card)
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

@@ -6,7 +6,7 @@ El modelo `wanglab/sft_gene_pathway_v7_6_100k_relabel_4b` es un ajuste fino supe
 
 El problema que aborda es la necesidad de un modelo de razonamiento especializado que combine comprensión multimodal (por ejemplo, imágenes de microscopía junto a texto) con conocimiento de genómica de célula única y experimentos de perturbación. Al derivar de Qwen3.5-4B, hereda la arquitectura transformer del modelo base, pero los detalles concretos de contexto, tokenizador y composición del dataset no están publicados en la información disponible.
 
-Actualmente el modelo tiene 0 descargas y 0 "likes", fue creado el 12 de septiembre de 2026 y su acceso está restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de descargarlo. Su relevancia es por tanto prospectiva: representa un ejemplo de especialización vertical de un modelo multimodal pequeño en un dominio científico concreto.
+Actualmente el modelo tiene 0 descargas y 0 "likes", fue creado el 12 de septiembre de 2026 y su acceso está restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de descargarlo. Su relevancia es por tanto prospectiva: representa un ejemplo de especialización vertical de un modelo multimodal pequeño en un dominio científico concreto.
 
 ## Especificaciones tecnicas
 
@@ -75,7 +75,7 @@ Las siguientes cifras son estimaciones calculadas a partir del numero de paramet
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `wanglab/sft_gene_pathway_v7_6_100k_relabel_4b` | 4,54B | No disponible | No publicado | `qwen` / `license:other` | Acceso restringido (gated), 0 descargas |
-| Qwen/Qwen3.5-4B (modelo base) | ~4B (no confirmado) | No disponible | No disponible en la informacion proporcionada | Licencia Qwen | Publico en HuggingFace |
+| Qwen/Qwen3.5-4B (modelo base) | ~4B (no confirmado) | No disponible | No disponible en la informacion proporcionada | Licencia Qwen | Publico en Hugging Face |
 | Alternativas de tamano similar para biologia | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion suficiente sobre modelos comparables de biologia computacional con ajuste fino multimodal en el mismo rango de parametros, por lo que la comparativa se limita al modelo base declarado.
@@ -88,13 +88,13 @@ No se dispone de informacion suficiente sobre modelos comparables de biologia co
 - Sesgos potenciales derivados del corpus de entrenamiento: si los datos de celula unica y CRISPR se concentran en unos pocos tejidos, organismos o lineas celulares, el modelo podra generalizar mal a otros contextos.
 - Idiomas no declarados: se desconoce si el ajuste fino degrada el multilingueismo del modelo base.
 - Licencia: la etiqueta `license:other` junto al campo `qwen` implica que las condiciones reales de uso comercial dependen de la licencia de Qwen; debe revisarse el texto completo antes de cualquier uso comercial.
-- Acceso restringido: es necesario solicitar acceso y aceptar condiciones en HuggingFace, lo que anade friccion y posibles restricciones de uso.
+- Acceso restringido: es necesario solicitar acceso y aceptar condiciones en Hugging Face, lo que anade friccion y posibles restricciones de uso.
 - Fecha de creacion futura (2026-09-12) y 0 descargas: el modelo no tiene trazabilidad de uso ni validacion por parte de la comunidad.
 - Componente multimodal: el despliegue requiere gestionar la entrada de imagenes, lo que complica la integracion en stacks de solo texto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wanglab/sft_gene_pathway_v7_6_100k_relabel_4b
+- Modelo en Hugging Face: https://huggingface.co/wanglab/sft_gene_pathway_v7_6_100k_relabel_4b
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de Qwen: https://github.com/QwenLM
 - No se han encontrado enlaces adicionales relevantes en la busqueda web; los resultados devueltos (horoscopos, discusiones sobre interfaces de Gemini y articulos genericos sobre modelos multimodales) no guardan relacion con este modelo.

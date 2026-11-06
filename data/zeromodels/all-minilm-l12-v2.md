@@ -104,7 +104,7 @@ La familia ZeroModels incluye además las variantes all-distilroberta-v1, multi-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeromodels/all-MiniLM-L12-v2
+- Modelo en Hugging Face: https://huggingface.co/zeromodels/all-MiniLM-L12-v2
 - Repositorio ZeroModels: https://github.com/IMvision12/ZeroModels
 - Documentación de Sentence Transformers en ZeroModels: https://imvision12.github.io/ZeroModels/sentence_transformer/
 - Checkpoint original: https://huggingface.co/sentence-transformers/all-MiniLM-L12-v2

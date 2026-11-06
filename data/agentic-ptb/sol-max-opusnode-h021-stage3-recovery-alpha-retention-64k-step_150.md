@@ -79,6 +79,6 @@ La comparativa se basa en el tamaño y la disponibilidad general de modelos simi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max-opusnode.h021.stage3-recovery-alpha-retention-64k.step_150
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max-opusnode.h021.stage3-recovery-alpha-retention-64k.step_150
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del proyecto AgentPTB (mencionado en la model card, sin URL directa): `agentic-ptb/INDEX` (no disponible públicamente en la búsqueda realizada)

@@ -4,7 +4,7 @@
 
 microduck-sprint-s1 (etiquetado como «sprint-s1» en la model card) es una política de control obtenida por aprendizaje por refuerzo para el robot microduck de Pollen Robotics. No es un modelo de lenguaje ni un modelo generativo multimodal: es una política de locomoción que mapea una observación de 61 dimensiones a 14 acciones de control a 50 Hz, exportada a ONNX y empaquetada con un `manifest.json` que sigue el esquema 2 del manifiesto de políticas de microduck. Se describe explícitamente como una política «perpétua»: una marcha que se ejecuta de forma continua hasta que se le indique lo contrario, cargada en una ranura de política del robot.
 
-El modelo lo publica el usuario `betsyxw` en HuggingFace, con fecha de creación del 23 de octubre de 2026, y deriva de un entrenamiento reproducible sobre el repositorio `pollen-robotics/microduck-challenges` (commit `6ff40704a`), tarea `Mjlab-Sprint2m-MicroDuck`, con la base `mjlab-microduck 0.1.0 @ 8d0dbc94c`. El checkpoint exportado es el 1500 de una ejecución configurada para 3000 iteraciones máximas, 4096 entornos paralelos y semilla 1.
+El modelo lo publica el usuario `betsyxw` en Hugging Face, con fecha de creación del 23 de octubre de 2026, y deriva de un entrenamiento reproducible sobre el repositorio `pollen-robotics/microduck-challenges` (commit `6ff40704a`), tarea `Mjlab-Sprint2m-MicroDuck`, con la base `mjlab-microduck 0.1.0 @ 8d0dbc94c`. El checkpoint exportado es el 1500 de una ejecución configurada para 3000 iteraciones máximas, 4096 entornos paralelos y semilla 1.
 
 Su relevancia es acotada pero concreta: es un artefacto de referencia para quien trabaje con el ecosistema microduck y quiera desplegar o comparar una marcha entrenada en simulación, así como un ejemplo de pipeline completo (entrenamiento en mjlab, exportación a ONNX con normalizador de observaciones embebido y carga mediante `robotctl`). El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no se han publicado resultados de benchmarks ni métricas de rendimiento en la información disponible.
 
@@ -18,7 +18,7 @@ Su relevancia es acotada pero concreta: es un artefacto de referencia para quien
 | Longitud de contexto | no aplica; no es un modelo de lenguaje. Ventana de observación de 61 dimensiones por paso de control a 50 Hz |
 | Tipos de cuantización | no disponible (exportación en ONNX; no se documentan niveles de cuantización) |
 | Idiomas soportados | no aplica (modelo de robótica, sin entrada/salida de texto) |
-| Licencia | no disponible (campo de licencia vacío en HuggingFace) |
+| Licencia | no disponible (campo de licencia vacío en Hugging Face) |
 | Formato de pesos | ONNX (`policy.onnx`) + `manifest.json` con esquema 2 del manifiesto de políticas de microduck |
 
 ## Arquitectura y entrenamiento
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Entrada / salida | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-sprint-s1 | Política RL (ONNX) para microduck | 61-D observación / 14 acciones | 50 Hz | no disponible | HuggingFace, 0 descargas |
+| microduck-sprint-s1 | Política RL (ONNX) para microduck | 61-D observación / 14 acciones | 50 Hz | no disponible | Hugging Face, 0 descargas |
 | Otras políticas de la familia `microduck-challenges` (tarea `Mjlab-Sprint2m-MicroDuck`) | Políticas RL del mismo pipeline | no disponible | no disponible | no disponible | repositorio público de retos, sin artefactos publicados identificados en la información disponible |
 | Políticas de locomoción de otros cuadrúpedos open source | Políticas RL | no disponible | no disponible | habitualmente permisivas, variable por proyecto | no disponible |
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/betsyxw/microduck-sprint-s1
+- Modelo en Hugging Face: https://huggingface.co/betsyxw/microduck-sprint-s1
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de retos y pipeline de entrenamiento: https://github.com/pollen-robotics/microduck-challenges
 - Documentación del manifiesto de políticas (referenciada como `docs/policy-manifest.md` en el repositorio del daemon): no disponible como enlace directo en la información proporcionada

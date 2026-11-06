@@ -23,7 +23,7 @@ La relevancia de esta ficha es doble. Por un lado, documenta un caso de ajuste f
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del base SZLHOLDINGS/KHIPU-R2, que los tags de HuggingFace identifican como de la familia Qwen2, es decir, un transformer decoder-only con atencion causal. No se detallan en la informacion disponible el numero de capas, la dimension oculta, el numero de cabezas de atencion ni el tipo de positional encoding. El tamano de 1.543.714.304 parametros situa al modelo en la franja de los modelos pequenos, adecuados para despliegue en hardware de gama media.
+El modelo hereda la arquitectura del base SZLHOLDINGS/KHIPU-R2, que los tags de Hugging Face identifican como de la familia Qwen2, es decir, un transformer decoder-only con atencion causal. No se detallan en la informacion disponible el numero de capas, la dimension oculta, el numero de cabezas de atencion ni el tipo de positional encoding. El tamano de 1.543.714.304 parametros situa al modelo en la franja de los modelos pequenos, adecuados para despliegue en hardware de gama media.
 
 El ajuste fino se realizo con QLoRA de 4 bits con rango 16, durante 2 epocas, con tasa de aprendizaje 2e-4, longitud de secuencia de 4096 tokens y empaquetado de secuencias, sobre una RTX A6000 con el backend Unsloth. El corpus de entrenamiento es el "estate corpus" completo, con mas de 3.176 ejemplos que combinan conocimiento patrimonial, doctrina, cuantizacion, materiales de frontera y el contrapeso de abstencion. Este ultimo se construyo a partir de un fallo de confabulacion medido en las recepciones de evaluacion, segun la model card. No se especifica el numero total de tokens de entrenamiento ni si hubo fases de RLHF o DPO; el metodo declarado es exclusivamente SFT.
 
@@ -87,9 +87,9 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SZLHOLDINGS/KHIPU-R2-estate-sft-v1
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/KHIPU-R2-estate-sft-v1
 - Modelo base: https://huggingface.co/SZLHOLDINGS/KHIPU-R2
 - Dataset de registros de entrenamiento (privado): https://huggingface.co/datasets/SZLHOLDINGS/wave-logs
 - Dataset del contrapeso de abstencion: https://huggingface.co/datasets/SZLHOLDINGS/szl-quant-abstention-sft-v1
 - Script de entrenamiento: https://github.com/szl-holdings/szl-forge/blob/main/training/train_wave.py
-- Organizacion en HuggingFace: https://huggingface.co/SZLHOLDINGS
+- Organizacion en Hugging Face: https://huggingface.co/SZLHOLDINGS

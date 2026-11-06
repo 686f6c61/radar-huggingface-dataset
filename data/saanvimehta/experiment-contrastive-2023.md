@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SaanviMehta/experiment-contrastive-2023` es un experimento de investigación publicado en HuggingFace por la usuaria SaanviMehta. Se trata de una implementación de MobileViT orientada a aprendizaje contrastivo (contrastive learning), una arquitectura de visión por computador diseñada originalmente para clasificación de imágenes en dispositivos móviles. La model card indica explícitamente que el repositorio contiene una implementación funcional y pruebas de humo repetibles, con las afirmaciones de rendimiento deliberadamente omitidas.
+El modelo `SaanviMehta/experiment-contrastive-2023` es un experimento de investigación publicado en Hugging Face por la usuaria SaanviMehta. Se trata de una implementación de MobileViT orientada a aprendizaje contrastivo (contrastive learning), una arquitectura de visión por computador diseñada originalmente para clasificación de imágenes en dispositivos móviles. La model card indica explícitamente que el repositorio contiene una implementación funcional y pruebas de humo repetibles, con las afirmaciones de rendimiento deliberadamente omitidas.
 
 El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado. El autor lo declara de forma explícita: no se ha entrenado ni auditado en robustez, equidad o transferencia de dominio. El recuento real de parámetros del archivo safetensors es de 24.832 parámetros, una cifra muy reducida que confirma su naturaleza de esqueleto de prueba más que de modelo listo para producción.
 
@@ -76,5 +76,5 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SaanviMehta/experiment-contrastive-2023
+- Repositorio en Hugging Face: https://huggingface.co/SaanviMehta/experiment-contrastive-2023
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en la busqueda web.

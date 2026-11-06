@@ -2,11 +2,11 @@
 
 ## Resumen
 
-HandEdit-LoRA es una coleccion de adaptadores LoRA publicada por el usuario introvoyz043 en HuggingFace, orientada a una tarea de edicion de imagen muy concreta: sustituir las manos humanas de una fotografia por las manos del robot Inspire, preservando la pose original, la interaccion con los objetos, el fondo, la iluminacion y el punto de vista de la camara. No es un modelo generativo autonomo, sino un conjunto de pesos PEFT que se acoplan a cuatro modelos base de edicion de imagen distintos.
+HandEdit-LoRA es una coleccion de adaptadores LoRA publicada por el usuario introvoyz043 en Hugging Face, orientada a una tarea de edicion de imagen muy concreta: sustituir las manos humanas de una fotografia por las manos del robot Inspire, preservando la pose original, la interaccion con los objetos, el fondo, la iluminacion y el punto de vista de la camara. No es un modelo generativo autonomo, sino un conjunto de pesos PEFT que se acoplan a cuatro modelos base de edicion de imagen distintos.
 
 El repositorio incluye cuatro checkpoints independientes, uno por cada backbone soportado: LongCat-Image-Edit (meituan-longcat), OmniGen-v1 (Shitao), FLUX.2 Klein Base 4B (black-forest-labs) y Step1X-Edit (stepfun-ai). El autor indica que los adaptadores se entrenaron sobre mas de 20.000 pares de edicion de imagen alineados. El repo completo ocupa 0,8 GB y solo contiene los adaptadores: los pesos de los modelos base deben descargarse por separado desde sus repositorios oficiales.
 
-La relevancia del proyecto es de nicho pero clara dentro del ambito robotico: permite generar pares imagen-humano / imagen-robot alineados sin retoque manual, lo que resulta util para aumento de datos, ilustracion tecnica y generacion de material sintetico para investigacion en manipulacion robotica. El pipeline declarado en HuggingFace es `robotics`. No hay informacion publica sobre licencia, idiomas soportados ni benchmarks.
+La relevancia del proyecto es de nicho pero clara dentro del ambito robotico: permite generar pares imagen-humano / imagen-robot alineados sin retoque manual, lo que resulta util para aumento de datos, ilustracion tecnica y generacion de material sintetico para investigacion en manipulacion robotica. El pipeline declarado en Hugging Face es `robotics`. No hay informacion publica sobre licencia, idiomas soportados ni benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos backbones aplicado
 ## Limitaciones y advertencias
 
 - Solo se distribuyen los adaptadores LoRA: es imprescindible descargar por separado cada modelo base desde su repositorio oficial y respetar la licencia de ese backbone, que puede ser mas restrictiva que la del propio adaptador.
-- La licencia del repositorio no esta declarada en HuggingFace, por lo que no puede confirmarse la legalidad de un uso comercial sin consultar al autor.
+- La licencia del repositorio no esta declarada en Hugging Face, por lo que no puede confirmarse la legalidad de un uso comercial sin consultar al autor.
 - El repositorio registra 0 descargas y 0 likes en el momento de la consulta: no hay evidencia publica de validacion por terceros ni de resultados reproducidos.
 - La tarea esta muy acotada a las manos del robot Inspire; no hay informacion sobre su comportamiento con otras morfologias roboticas, guantes, herramientas o manos parcialmente ocluidas.
 - Riesgo de artefactos en la zona editada: al preservar pose, contacto e iluminacion, los errores tipicos se concentrarian en la coherencia anatomica de la mano generada y en los bordes con el objeto manipulado. No hay evaluacion publicada que cuantifique este riesgo.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estos backbones aplicado
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/introvoyz043/HandEdit-LoRA
+- Repositorio Hugging Face: https://huggingface.co/introvoyz043/HandEdit-LoRA
 - Modelo base LongCat-Image-Edit: https://huggingface.co/meituan-longcat/LongCat-Image-Edit
 - Modelo base OmniGen-v1: https://huggingface.co/Shitao/OmniGen-v1
 - Modelo base FLUX.2 Klein Base 4B: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B

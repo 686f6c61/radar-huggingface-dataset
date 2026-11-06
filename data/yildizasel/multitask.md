@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yildizasel/multitask` es un repositorio experimental publicado en HuggingFace por Asel Yildiz que contiene una implementación propia de una arquitectura tipo Mixer orientada a aprendizaje multitarea. No se trata de un modelo entrenado ni de un modelo listo para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+`yildizasel/multitask` es un repositorio experimental publicado en Hugging Face por Asel Yildiz que contiene una implementación propia de una arquitectura tipo Mixer orientada a aprendizaje multitarea. No se trata de un modelo entrenado ni de un modelo listo para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 El tamaño real del checkpoint es de 16.576 parámetros (aproximadamente 16,5 K), un orden de magnitud propio de un ejemplo ejecutable, no de un modelo de lenguajes. La escala declarada en la configuración es "base" y la arquitectura combina atención de ventana deslizante con fusión mediante concatenación y MLP, activación approx gelu y normalización layernorm.
 
@@ -31,7 +31,7 @@ Su relevancia es, por tanto, la de un artefacto de investigación reproducible: 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es una implementación personal de tipo Mixer, no un transformer estándar. Según la tabla del autor, emplea atención con ventana deslizante, fusiona representaciones mediante concatenación seguida de una capa MLP, usa activación approx gelu y normalización layernorm. Al ser una implementación a medida, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de poder usarla; no hay integración con `transformers` de serie.
+La arquitectura es una implementación personal de tipo Mixer, no un transformer estándar. Según la tabla del autor, emplea atención con ventana deslizante, fusiona representaciones mediante concatenación seguida de una capa MLP, usa activación approx gelu y normalización layernorm. Al ser una implementación a medida, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de poder usarla; no hay integración con `transformers` de serie.
 
 En cuanto al entrenamiento, no hay ninguno completado que se documente. El repositorio incluye `training_args.json` con una receta por defecto (adafactor y calentamiento lineal) que el autor describe explícitamente como valores de partida del script y no como evidencia de una ejecución finalizada. No se indica número de tokens, composición del dataset, ni si hubo RLHF, DPO u otra fase de alineamiento. Tampoco se mencionan innovaciones técnicas adicionales más allá de la combinación descrita de ventana deslizante y fusión por concatenación con MLP.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yildizasel/multitask | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace (checkpoint de inicialización) |
+| yildizasel/multitask | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face (checkpoint de inicialización) |
 | MLP-Mixer (familia arquitectonica) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | gMLP (familia arquitectonica) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | FNet / Mixer con attention lineal (familia arquitectonica) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
@@ -92,7 +92,7 @@ No se dispone de datos verificados de parámetros, contexto, rendimiento ni lice
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yildizasel/multitask
+- Modelo en Hugging Face: https://huggingface.co/yildizasel/multitask
 - Perfil del autor: https://huggingface.co/yildizasel
 - Modelos del autor: https://huggingface.co/yildizasel/models
 - Referencia general sobre aprendizaje multitarea (MTL): https://www.geeksforgeeks.org/deep-learning/multi-task-learningmtl-for-deep-learning/

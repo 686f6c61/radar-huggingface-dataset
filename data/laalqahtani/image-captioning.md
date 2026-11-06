@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`laalqahtani/image-captioning` no es un modelo entrenado ni un checkpoint listo para inferencia: es un repositorio de notas de investigación ("research-notes") sobre la tarea de *image captioning*, es decir, la generación automática de descripciones textuales a partir de una imagen. El autor lo publica en HuggingFace con licencia MIT y una model card que describe explícitamente su alcance: qué preguntas de investigación quedan abiertas, qué confusores hay que controlar y qué experimentos están todavía pendientes de ejecutar.
+`laalqahtani/image-captioning` no es un modelo entrenado ni un checkpoint listo para inferencia: es un repositorio de notas de investigación ("research-notes") sobre la tarea de *image captioning*, es decir, la generación automática de descripciones textuales a partir de una imagen. El autor lo publica en Hugging Face con licencia MIT y una model card que describe explícitamente su alcance: qué preguntas de investigación quedan abiertas, qué confusores hay que controlar y qué experimentos están todavía pendientes de ejecutar.
 
-La model card indica de forma literal que el repositorio "no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado". Los artefactos declarados son únicamente dos ficheros de texto: `notes.md` (artefacto principal) y `README.md`. Los propios metadatos de HuggingFace incluyen la etiqueta `research-notes`, junto con `image-captioning`, `transformer` y `safetensors`, pero la documentación no describe ninguna arquitectura concreta, ningún proceso de entrenamiento ni ningún conjunto de datos utilizado.
+La model card indica de forma literal que el repositorio "no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado". Los artefactos declarados son únicamente dos ficheros de texto: `notes.md` (artefacto principal) y `README.md`. Los propios metadatos de Hugging Face incluyen la etiqueta `research-notes`, junto con `image-captioning`, `transformer` y `safetensors`, pero la documentación no describe ninguna arquitectura concreta, ningún proceso de entrenamiento ni ningún conjunto de datos utilizado.
 
 El único dato cuantitativo disponible sobre pesos es el recuento de parámetros del fichero safetensors indexado: 49.600 parámetros. Se trata de una cifra tres o cuatro órdenes de magnitud inferior a la de cualquier modelo de captioning utilizable, lo que refuerza la interpretación de que el artefacto es un residuo técnico del repositorio y no un modelo funcional. Por tanto, la ficha se centra en lo que el repositorio documenta como plan de investigación, marcando como "no disponible" todo lo que la información proporcionada no cubre.
 
@@ -12,7 +12,7 @@ El único dato cuantitativo disponible sobre pesos es el recuento de parámetros
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible. La etiqueta de HuggingFace indica `transformer`, pero la model card no describe ninguna arquitectura concreta |
+| Arquitectura | no disponible. La etiqueta de Hugging Face indica `transformer`, pero la model card no describe ninguna arquitectura concreta |
 | Parametros totales | 49.600 (0,0496 M), segun el recuento del fichero safetensors |
 | Parametros activos | no aplica (no se declara una arquitectura MoE) |
 | Longitud de contexto | no disponible |
@@ -96,7 +96,7 @@ El repositorio no es comparable con modelos de captioning porque no es un modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laalqahtani/image-captioning
+- Modelo en Hugging Face: https://huggingface.co/laalqahtani/image-captioning
 - Notas principales del repositorio: https://huggingface.co/laalqahtani/image-captioning/blob/main/notes.md
 - Documentación de Transformers sobre image captioning: https://huggingface.co/docs/transformers/tasks/image_captioning
 - Benchmarking de modelos de captioning basados en atención (arXiv): https://arxiv.org/html/2502.18734v1

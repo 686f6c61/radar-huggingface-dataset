@@ -60,7 +60,7 @@ La auditoría causal realizada sobre un checkpoint posterior de la misma arquite
 - El modelo tiene 53,4 millones de parámetros, lo que lo hace ligero: en FP32 ocupa aproximadamente 214 MB, y en FP16 unos 107 MB.
 - Cabe sin problema en cualquier GPU consumer moderna (RTX 3060 o superior) y también en CPU con suficiente RAM.
 - No se dispone de datos oficiales de VRAM, latencia o throughput.
-- Al ser un modelo PyTorch, puede ejecutarse con las herramientas estándar de HuggingFace Transformers, aunque al no ser un transformer convencional, es probable que requiera código personalizado del repositorio asociado.
+- Al ser un modelo PyTorch, puede ejecutarse con las herramientas estándar de Hugging Face Transformers, aunque al no ser un transformer convencional, es probable que requiera código personalizado del repositorio asociado.
 - No se menciona soporte para vLLM, llama.cpp, Ollama o TGI.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ No se dispone de modelos comparables directamente, ya que la arquitectura es ún
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-fock-parflm-depthcond-vtheta-openwebtext
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-fock-parflm-depthcond-vtheta-openwebtext
 - Repositorio del paper y notas complementarias: https://github.com/dimitarpg13/semsimula-paper
 - Auditoría de fuga causal: https://github.com/dimitarpg13/semsimula-paper/blob/main/companion_notes/Fock-PARFLM_Causal_Leak_Audit_Results.md
 - Colección de la familia Semantic Simulation SPLM: https://huggingface.co/collections/dimitarpg13/semantic-simulation-splm-model-family

@@ -22,7 +22,7 @@ La informacion publica disponible es muy escasa: no se documentan arquitectura, 
 | Formato de pesos | GGUF (este repositorio); el modelo original se distribuye en safetensors |
 | Tamano del repositorio | 84,2 GB (suma de las siete cuantizaciones) |
 | Modelo base | GestaltLabs/continuity-a4b-26b |
-| Fecha de publicacion | 17 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 17 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Etiquetas declaradas | gguf, endpoints_compatible, conversational, region:us |
 
 ## Arquitectura y entrenamiento
@@ -34,7 +34,7 @@ Los unicos datos tecnicos disponibles son los metadatos internos del proceso de 
 ## Capacidades
 
 - Generacion de texto conversacional: el repositorio esta etiquetado como "conversational", lo que indica que el modelo base esta ajustado para mantener dialogos multi-turno.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que el modelo puede desplegarse a traves de infraestructura de inferencia gestionada de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que el modelo puede desplegarse a traves de infraestructura de inferencia gestionada de Hugging Face.
 - Inferencia en CPU y GPU de consumo mediante el formato GGUF y las siete cuantizaciones publicadas.
 - Razonamiento, generacion de codigo, matematicas, vision, audio, tool calling, function calling, uso como agente, modo "thinking" y capacidades multilingues: no disponible, no se ha publicado informacion al respecto.
 - No se incluye ningun fichero de proyector multimodal (mmproj) en el repositorio, dato que no permite descartar ni confirmar capacidades de vision en el modelo original.

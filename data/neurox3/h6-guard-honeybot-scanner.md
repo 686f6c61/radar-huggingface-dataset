@@ -4,7 +4,7 @@
 
 H6-Guard-Honeybot-Scanner es un adaptador LoRA publicado por el usuario neuroX3 sobre el modelo base Qwen/Qwen2.5-Coder-1.5B-Instruct, distribuido a traves de la libreria PEFT en formato safetensors. No se trata por tanto de un modelo completo, sino de pesos de ajuste fino que deben cargarse sobre el modelo base para poder ejecutarse. El repositorio no incluye pesos del modelo base: su tamano declarado es de 0,0 GB, coherente con un adaptador de bajo rango.
 
-La model card publicada es la plantilla generica de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen como "[More Information Needed]". El unico contenido informativo es la cabecera de metadatos, que confirma el uso de PEFT 0.20.0 y el modelo base sobre el que se entrena. No hay ningun resultado de evaluacion, ninguna descripcion del dataset ni ninguna indicacion de como se generaron los pesos.
+La model card publicada es la plantilla generica de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen como "[More Information Needed]". El unico contenido informativo es la cabecera de metadatos, que confirma el uso de PEFT 0.20.0 y el modelo base sobre el que se entrena. No hay ningun resultado de evaluacion, ninguna descripcion del dataset ni ninguna indicacion de como se generaron los pesos.
 
 El nombre del repositorio sugiere una funcion de guardia o escaneo (los terminos "Guard", "Honeybot" y "Scanner" apuntan a un hipotetico clasificador de contenido o detector de interacciones maliciosas), pero esta interpretacion no esta respaldada por ningun texto de la model card y debe tratarse como una hipotesis, no como una caracteristica documentada. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 "likes", y fue creado y actualizado el 14 de septiembre de 2026. Su relevancia practica es, por ahora, muy limitada: se trata de un artefacto sin documentacion, sin licencia declarada y sin validacion publica.
 
@@ -18,7 +18,7 @@ El nombre del repositorio sugiere una funcion de guardia o escaneo (los terminos
 | Longitud de contexto | 32.768 tokens en el modelo base segun su documentacion publica; no verificado ni declarado en la model card del adaptador |
 | Tipos de cuantizacion | No disponible en el repositorio (los pesos se distribuyen como adaptador LoRA en safetensors, sin cuantizaciones publicadas; el modelo base admite cuantizacion posterior a 8 y 4 bits) |
 | Idiomas soportados | No disponible |
-| Licencia | No disponible (campo vacio en la ficha de HuggingFace; el modelo base es Apache 2.0) |
+| Licencia | No disponible (campo vacio en la ficha de Hugging Face; el modelo base es Apache 2.0) |
 | Formato de pesos | safetensors, adaptador LoRA cargable con PEFT/transformers |
 | Libreria | PEFT 0.20.0 |
 | Tipo de pipeline | text-generation |
@@ -75,7 +75,7 @@ Las cifras siguientes son estimaciones calculadas a partir de los 1.500 millones
 - VRAM estimada en 4 bits: 2-3 GB con contexto moderado, suficiente para GPUs de consumo como RTX 3060 de 12 GB, RTX 4060, RTX 4070 o superiores.
 - Cabe en GPU de consumo: si, con cuantizacion de 4 u 8 bits cabe en la mayoria de GPUs con 6 GB o mas; en FP16 tambien cabe en GPUs de 8-12 GB.
 - Cabe en CPU: si, mediante llama.cpp u Ollama con cuantizacion de 4 bits, con velocidades de decodificacion de unos pocos tokens por segundo, muy dependientes del hardware.
-- Opciones de despliegue: transformers + PEFT (carga directa del adaptador), vLLM con soporte de LoRA (opcion --enable-lora, requiere fusionar o servir el adaptador junto al base), HuggingFace TGI, y llama.cpp/Ollama previa fusion del adaptador con el modelo base o exportacion mediante el flujo de conversion de LoRA a GGUF. Text Generation Inference y vLLM son las opciones mas eficientes para servir multiples peticiones concurrentes.
+- Opciones de despliegue: transformers + PEFT (carga directa del adaptador), vLLM con soporte de LoRA (opcion --enable-lora, requiere fusionar o servir el adaptador junto al base), Hugging Face TGI, y llama.cpp/Ollama previa fusion del adaptador con el modelo base o exportacion mediante el flujo de conversion de LoRA a GGUF. Text Generation Inference y vLLM son las opciones mas eficientes para servir multiples peticiones concurrentes.
 - Latencia y throughput: no disponible (no hay mediciones publicadas).
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ La diferencia fundamental entre este repositorio y las alternativas es que estas
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla vacia de HuggingFace, sin descripcion de uso previsto, datos de entrenamiento ni evaluacion.
+- Ausencia total de documentacion: la model card es la plantilla vacia de Hugging Face, sin descripcion de uso previsto, datos de entrenamiento ni evaluacion.
 - Licencia no declarada: al no especificarse licencia, no existe autorizacion explicita de uso, copia, modificacion ni redistribucion. Para uso comercial es imprescindible contactar con el autor, ya que la licencia del modelo base (Apache 2.0) no cubre automaticamente los pesos derivados si el autor no la propaga.
 - Sin validacion publica: 0 descargas y 0 "likes"; no hay evidencia de que el adaptador funcione segun lo que sugiere su nombre.
 - Riesgo de alucinacion: inherente a un modelo base de 1,5 B de parametros, especialmente en tareas de razonamiento, matematicas o conocimiento factual. No se ha medido su tasa de error.
@@ -106,7 +106,7 @@ La diferencia fundamental entre este repositorio y las alternativas es que estas
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/neuroX3/H6-Guard-Honeybot-Scanner
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/neuroX3/H6-Guard-Honeybot-Scanner
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Referencia citada en la plantilla de la model card (Lacoste et al., 2019, cuantificacion del impacto ambiental): https://arxiv.org/abs/1910.09700

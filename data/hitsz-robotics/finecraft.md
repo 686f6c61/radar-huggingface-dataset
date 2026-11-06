@@ -93,7 +93,7 @@ No se dispone de datos comparativos verificables de otros participantes ni de es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hitsz-robotics/FineCraft
+- Hugging Face: https://huggingface.co/hitsz-robotics/FineCraft
 - Repositorio GitHub: https://github.com/eqcy/FineCraft
 - Leaderboard oficial: https://robofinemani2026.github.io/leaderboard.html
 - Licencias: https://huggingface.co/hitsz-robotics/FineCraft/blob/main/LICENSES.md

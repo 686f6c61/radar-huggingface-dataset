@@ -80,11 +80,11 @@ El autor afirma ademas que el modelo supera a Qwen3.6-35B-A3B, Qwen 3.6 27B y Qw
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (baselquants, GGUF) | 26,9 mil millones | No disponible | ARC-C 735 (8 bits) y 719 (4 bits), segun el autor | Apache 2.0 | HuggingFace, sin descargas registradas |
-| DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU (modelo base) | No disponible | No disponible | El autor afirma que este derivado lo supera en 7 benchmarks | No disponible en la informacion proporcionada | HuggingFace |
-| Qwen3.6-35B-A3B | No disponible (MoE, 3B activos por el sufijo A3B) | No disponible | El autor afirma que este modelo lo supera en 7 benchmarks | No disponible en la informacion proporcionada | HuggingFace |
-| Qwen 3.6 27B y Qwen 3.5 27B | No disponibles | No disponible | El autor afirma que este modelo los supera en 7 benchmarks | No disponible en la informacion proporcionada | HuggingFace |
-| DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF | No disponible | No disponible | No disponible (citado como precedente del metodo COLD FUSION) | No disponible en la informacion proporcionada | HuggingFace, mas de 3 millones de descargas segun el autor |
+| Este modelo (baselquants, GGUF) | 26,9 mil millones | No disponible | ARC-C 735 (8 bits) y 719 (4 bits), segun el autor | Apache 2.0 | Hugging Face, sin descargas registradas |
+| DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU (modelo base) | No disponible | No disponible | El autor afirma que este derivado lo supera en 7 benchmarks | No disponible en la informacion proporcionada | Hugging Face |
+| Qwen3.6-35B-A3B | No disponible (MoE, 3B activos por el sufijo A3B) | No disponible | El autor afirma que este modelo lo supera en 7 benchmarks | No disponible en la informacion proporcionada | Hugging Face |
+| Qwen 3.6 27B y Qwen 3.5 27B | No disponibles | No disponible | El autor afirma que este modelo los supera en 7 benchmarks | No disponible en la informacion proporcionada | Hugging Face |
+| DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF | No disponible | No disponible | No disponible (citado como precedente del metodo COLD FUSION) | No disponible en la informacion proporcionada | Hugging Face, mas de 3 millones de descargas segun el autor |
 
 No se dispone de datos tecnicos suficientes de los modelos comparados para establecer una comparacion cuantitativa fiable.
 
@@ -104,7 +104,7 @@ No se dispone de datos tecnicos suficientes de los modelos comparados para estab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/baselquants/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/baselquants/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Precedente del metodo COLD FUSION citado en la model card: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, su arquitectura o sus benchmarks; los resultados obtenidos correspondian a documentacion no relacionada de soporte de Windows.

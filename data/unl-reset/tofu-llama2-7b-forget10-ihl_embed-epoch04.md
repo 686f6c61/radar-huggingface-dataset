@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch04` | ~6,74 B | no disponible | Unlearning TOFU (epoca 4/20) | llama2 | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_llama2-7b` | ~6,74 B | no disponible | Modelo base ajustado en TOFU (sin olvido) | llama2 | HuggingFace |
-| `NousResearch/Llama-2-7b-chat-hf` | ~6,74 B | 4096 tokens | Chat de proposito general | llama2 | HuggingFace |
-| Llama 2 7B (original) | ~6,74 B | 4096 tokens | Modelo base de proposito general | llama2 | HuggingFace |
+| `unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch04` | ~6,74 B | no disponible | Unlearning TOFU (epoca 4/20) | llama2 | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_llama2-7b` | ~6,74 B | no disponible | Modelo base ajustado en TOFU (sin olvido) | llama2 | Hugging Face |
+| `NousResearch/Llama-2-7b-chat-hf` | ~6,74 B | 4096 tokens | Chat de proposito general | llama2 | Hugging Face |
+| Llama 2 7B (original) | ~6,74 B | 4096 tokens | Modelo base de proposito general | llama2 | Hugging Face |
 
 La comparacion relevante es con `locuslab/tofu_ft_llama2-7b` (referencia sin desaprendizaje) y con los checkpoints de otras epocas del mismo procedimiento, que permiten trazar la evolucion del olvido. No se dispone de datos de rendimiento comparado en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ La comparacion relevante es con `locuslab/tofu_ft_llama2-7b` (referencia sin des
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch04
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch04
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicializacion de embeddings y cabeza LM: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Benchmark TOFU (paper): https://arxiv.org/abs/2401.06121

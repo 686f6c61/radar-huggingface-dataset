@@ -4,7 +4,7 @@
 
 `cottonable/Huihui-gemma-4-12B-agentic-fable5-abliterated-4bit-mlx` es una cuantizacion en 4 bits en formato MLX de un modelo derivado de la familia Gemma 4, orientado a generacion de texto, codigo, razonamiento con modo *thinking* y uso agentico. El modelo original procede de `huihui-ai/Huihui-gemma-4-12B-agentic-fable5-abliterated`, un ajuste fino de la comunidad sobre una base Gemma 4 de 12B al que se le ha aplicado la tecnica de *abliteration* para eliminar los mecanismos de rechazo del modelo alineado. Esta version concreta la publica el usuario `cottonable` y su unico proposito es hacer el modelo ejecutable de forma eficiente en hardware Apple Silicon mediante el framework MLX.
 
-La relevancia de esta ficha es doble. Por un lado, documenta un ejemplo tipico del ecosistema de modelos derivados sin censura que proliferan en HuggingFace: un modelo base de laboratorio grande, un ajuste fino comunitario, una capa de abliteration y, finalmente, una cuantizacion para un runtime especifico. Por otro lado, advierte de que este tipo de publicaciones suelen carecer de documentacion tecnica detallada: la model card se limita a indicar el proceso de conversion y un ejemplo de uso, sin especificaciones de entrenamiento, contexto, idiomas ni evaluaciones.
+La relevancia de esta ficha es doble. Por un lado, documenta un ejemplo tipico del ecosistema de modelos derivados sin censura que proliferan en Hugging Face: un modelo base de laboratorio grande, un ajuste fino comunitario, una capa de abliteration y, finalmente, una cuantizacion para un runtime especifico. Por otro lado, advierte de que este tipo de publicaciones suelen carecer de documentacion tecnica detallada: la model card se limita a indicar el proceso de conversion y un ejemplo de uso, sin especificaciones de entrenamiento, contexto, idiomas ni evaluaciones.
 
 El modelo tiene 11.907.350.272 parametros (unos 11,9B) y el repositorio ocupa 6,7 GB, lo que es coherente con una cuantizacion de 4 bits. Se distribuye bajo licencia Apache 2.0, aunque conviene tener en cuenta que la licencia del modelo base Gemma de Google puede imponer condiciones adicionales que este derivado no refleja necesariamente. Las descargas son muy bajas (45) y no tiene likes, lo que indica que es una publicacion reciente y de nicho.
 
@@ -83,7 +83,7 @@ La comparacion cuantitativa de rendimiento no es posible porque no se han public
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/cottonable/Huihui-gemma-4-12B-agentic-fable5-abliterated-4bit-mlx)
+- [Modelo en Hugging Face](https://huggingface.co/cottonable/Huihui-gemma-4-12B-agentic-fable5-abliterated-4bit-mlx)
 - [Modelo base: huihui-ai/Huihui-gemma-4-12B-agentic-fable5-abliterated](https://huggingface.co/huihui-ai/Huihui-gemma-4-12B-agentic-fable5-abliterated)
 - [mlx-lm (repositorio de MLX para modelos de lenguaje)](https://github.com/ml-explore/mlx-lm)
 - No se han encontrado papers, blogs ni demos adicionales en la informacion proporcionada.

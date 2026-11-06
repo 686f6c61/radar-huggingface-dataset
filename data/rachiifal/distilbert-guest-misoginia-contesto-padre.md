@@ -2,7 +2,7 @@
 
 ## Resumen
 
-distilbert-guest-misoginia-contesto-padre es un modelo de clasificación de texto obtenido mediante fine-tuning de distilbert-base-uncased, publicado por el usuario Rachiifal en HuggingFace. El nombre sugiere que el objetivo es la detección de misoginia considerando el contexto de la figura paterna, aunque la model card no documenta la tarea de forma explícita: la descripción, los usos previstos y el conjunto de datos figuran como "More information needed". El modelo se entrenó sobre un dataset que el propio autor identifica como "None", lo que impide conocer su composición, procedencia o etiquetado.
+distilbert-guest-misoginia-contesto-padre es un modelo de clasificación de texto obtenido mediante fine-tuning de distilbert-base-uncased, publicado por el usuario Rachiifal en Hugging Face. El nombre sugiere que el objetivo es la detección de misoginia considerando el contexto de la figura paterna, aunque la model card no documenta la tarea de forma explícita: la descripción, los usos previstos y el conjunto de datos figuran como "More information needed". El modelo se entrenó sobre un dataset que el propio autor identifica como "None", lo que impide conocer su composición, procedencia o etiquetado.
 
 Se trata de un clasificador encoder-only de 66.955.010 parámetros (aproximadamente 67 millones), derivado de la arquitectura DistilBERT, con una ventana de contexto máxima de 512 tokens heredada del tokenizador de distilbert-base-uncased. El repositorio ocupa 0,8 GB y los pesos se distribuyen en formato safetensors. La licencia declarada es Apache 2.0.
 
@@ -73,10 +73,10 @@ El checkpoint final reportado en la cabecera de la model card corresponde a loss
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| distilbert-guest-misoginia-contesto-padre | 66.955.010 | 512 tokens | Clasificación de texto (misoginia/contexto paterno) | Apache 2.0 | HuggingFace (28 descargas) |
-| distilbert-base-uncased | ~66 M | 512 tokens | Modelo base encoder (enmascarado, sin cabeza de clasificación) | Apache 2.0 | HuggingFace |
-| bert-base-uncased | ~110 M | 512 tokens | Modelo base encoder | Apache 2.0 | HuggingFace |
-| roberta-base | ~125 M | 512 tokens | Modelo base encoder | MIT | HuggingFace |
+| distilbert-guest-misoginia-contesto-padre | 66.955.010 | 512 tokens | Clasificación de texto (misoginia/contexto paterno) | Apache 2.0 | Hugging Face (28 descargas) |
+| distilbert-base-uncased | ~66 M | 512 tokens | Modelo base encoder (enmascarado, sin cabeza de clasificación) | Apache 2.0 | Hugging Face |
+| bert-base-uncased | ~110 M | 512 tokens | Modelo base encoder | Apache 2.0 | Hugging Face |
+| roberta-base | ~125 M | 512 tokens | Modelo base encoder | MIT | Hugging Face |
 
 No se dispone de comparaciones de rendimiento con clasificadores de toxicidad o misoginia específicos en la información proporcionada. La comparación se limita a parámetros, contexto y licencia.
 
@@ -94,7 +94,7 @@ No se dispone de comparaciones de rendimiento con clasificadores de toxicidad o 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rachiifal/distilbert-guest-misoginia-contesto-padre
+- Modelo en Hugging Face: https://huggingface.co/Rachiifal/distilbert-guest-misoginia-contesto-padre
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Paper de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805

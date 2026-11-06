@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - VRAM estimada para inferencia: al tratarse de un modelo de solo 20,5 millones de parametros, la inferencia es muy ligera. Con cuantizacion FP16 o incluso FP32, cabe en cualquier GPU moderna con mas de 2 GB de VRAM, y tambien puede ejecutarse en CPU sin problemas.
 - GPU recomendadas: cualquier GPU consumer (GTX 1060, RTX 2060, RTX 4090) es suficiente; no requiere hardware de datacenter.
-- Despliegue: al estar publicado con la libreria diffusers, puede cargarse con `DiffusionPipeline` o `AutoencoderKL` de HuggingFace. Tambien es compatible con entornos de inferencia como ONNX Runtime si se convierte.
+- Despliegue: al estar publicado con la libreria diffusers, puede cargarse con `DiffusionPipeline` o `AutoencoderKL` de Hugging Face. Tambien es compatible con entornos de inferencia como ONNX Runtime si se convierte.
 - Latencia y throughput: no se dispone de mediciones oficiales, pero dado el tamano del modelo, la latencia por inferencia deberia ser inferior a 10 ms en GPU moderna y de decenas de milisegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ No se dispone de informacion sobre modelos comparables especificos para compresi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xandergos/terrain-diffusion-autoencoder
+- Hugging Face: https://huggingface.co/xandergos/terrain-diffusion-autoencoder
 - Repositorio GitHub: https://github.com/xandergos/terrain-diffusion
 - Documentacion del proyecto: https://xandergos.github.io/terrain-diffusion/
 - DeepWiki - Autoencoder Training: https://deepwiki.com/xandergos/terrain-diffusion/5.4-autoencoder-training

@@ -68,9 +68,9 @@ No se dispone de información sobre modelos comparables específicos. El framewo
 
 ## Enlaces
 
-- HuggingFace: [TangYishan/starvla-qwenoft-franka-robomimic-lift](https://huggingface.co/TangYishan/starvla-qwenoft-franka-robomimic-lift)
+- Hugging Face: [TangYishan/starvla-qwenoft-franka-robomimic-lift](https://huggingface.co/TangYishan/starvla-qwenoft-franka-robomimic-lift)
 - GitHub StarVLA: [starVLA/starVLA](https://github.com/starVLA/starVLA)
 - GitHub tongji-AI/superVLA (relacionado): [tongji-AI/superVLA](https://github.com/tongji-AI/superVLA)
 - Artículo arXiv: [StarVLA: A Lego-like Codebase for Vision-Language-Action Model Developing](https://arxiv.org/abs/2604.05014)
-- Página del paper en HuggingFace: [2604.05014](https://huggingface.co/papers/2604.05014)
+- Página del paper en Hugging Face: [2604.05014](https://huggingface.co/papers/2604.05014)
 - Documentación de Qwen-OFT en DeepWiki: [Qwen-OFT (Parallel Prediction)](https://deepwiki.com/starVLA/starVLA/4.4-qwen-oft-(parallel-prediction))

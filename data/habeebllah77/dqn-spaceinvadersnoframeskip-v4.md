@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dqn-SpaceInvadersNoFrameskip-v4 es un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenado para jugar a la version sin frameskip del clasico de Atari SpaceInvaders. No se trata de un modelo de lenguaje, sino de una politica entrenada con el algoritmo DQN (Deep Q-Network) y la libreria Stable-Baselines3, publicada en HuggingFace por el usuario habeebllah77. El modelo resuelve la tarea concreta de seleccionar acciones discretas en un entorno de Atari, recibiendo como entrada observaciones visuales del juego.
+dqn-SpaceInvadersNoFrameskip-v4 es un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenado para jugar a la version sin frameskip del clasico de Atari SpaceInvaders. No se trata de un modelo de lenguaje, sino de una politica entrenada con el algoritmo DQN (Deep Q-Network) y la libreria Stable-Baselines3, publicada en Hugging Face por el usuario habeebllah77. El modelo resuelve la tarea concreta de seleccionar acciones discretas en un entorno de Atari, recibiendo como entrada observaciones visuales del juego.
 
 El agente se ha entrenado con el framework RL Zoo, que proporciona hiperparametros preajustados para entornos de Atari. La politica usada es CnnPolicy, es decir, una red neuronal convolucional que procesa fotogramas apilados (frame stacking de 4) para capturar informacion temporal del movimiento. El entrenamiento se realizo durante 1.000.000 de timesteps, un presupuesto tipico de los ejemplos de RL Zoo.
 
@@ -45,7 +45,7 @@ Los hiperparametros documentados en la model card incluyen: batch_size de 32, bu
 ## Casos de uso
 
 - Reproduccion de experimentos de RL: permite cargar el agente y reproducir el entrenamiento o la evaluacion con los mismos hiperparametros, util para validar pipelines de Stable-Baselines3.
-- Educacion en aprendizaje por refuerzo: sirve como ejemplo didactico de como entrenar un DQN en Atari y publicarlo en HuggingFace, tal y como se hace en cursos introductorios de RL.
+- Educacion en aprendizaje por refuerzo: sirve como ejemplo didactico de como entrenar un DQN en Atari y publicarlo en Hugging Face, tal y como se hace en cursos introductorios de RL.
 - Comparacion de algoritmos: puede utilizarse como linea base (baseline) frente a otros algoritmos como PPO, A2C o Rainbow en el mismo entorno.
 - Evaluacion de tecnicas de preprocesado: al usar `AtariWrapper` y frame stacking de 4, permite estudiar el impacto de distintas estrategias de representacion de la observacion.
 - Analisis de estabilidad de DQN: con una recompensa media de 873,00 +/- 342,66, es util para estudiar la varianza entre episodios y la robustez de la politica.
@@ -74,9 +74,9 @@ El campo `verified` del model-index es `false`, por lo que estos resultados no h
 
 | Modelo | Algoritmo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| habeebllah77/dqn-SpaceInvadersNoFrameskip-v4 | DQN (SB3) | SpaceInvadersNoFrameskip-v4 | 873,00 +/- 342,66 | no disponible | HuggingFace |
-| SnEhAh018/dqn-SpaceInvadersNoFrameskip-v4 | DQN (SB3) | SpaceInvadersNoFrameskip-v4 | no disponible | no disponible | HuggingFace |
-| Bear-ai/dqn-SpaceInvadersNoFrameskip-v4 | DQN (SB3) | SpaceInvadersNoFrameskip-v4 | no disponible | no disponible | HuggingFace |
+| habeebllah77/dqn-SpaceInvadersNoFrameskip-v4 | DQN (SB3) | SpaceInvadersNoFrameskip-v4 | 873,00 +/- 342,66 | no disponible | Hugging Face |
+| SnEhAh018/dqn-SpaceInvadersNoFrameskip-v4 | DQN (SB3) | SpaceInvadersNoFrameskip-v4 | no disponible | no disponible | Hugging Face |
+| Bear-ai/dqn-SpaceInvadersNoFrameskip-v4 | DQN (SB3) | SpaceInvadersNoFrameskip-v4 | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento publicados para los modelos comparables en la informacion proporcionada, lo que impide una comparacion cuantitativa directa. La diferencia principal entre ellos radica en el autor, la fecha de publicacion y, potencialmente, en los hiperparametros y el entrenamiento subyacente.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento publicados para los modelos comparables en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/habeebllah77/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/habeebllah77/dqn-SpaceInvadersNoFrameskip-v4
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo: https://github.com/DLR-RM/rl-baselines3-zoo
 - Stable-Baselines3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

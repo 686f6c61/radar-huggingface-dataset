@@ -2,9 +2,9 @@
 
 ## Resumen
 
-amlc-ce-loco-m3-India es un modelo publicado en HuggingFace por el usuario Arushhh bajo el identificador Arushhh/amlc-ce-loco-m3-India. La etiqueta de arquitectura asociada al repositorio es xlm-roberta, lo que lo situa en la familia de codificadores transformer multilingues derivados de XLM-RoBERTa. El repositorio almacena pesos en formato safetensors con un total de 567.755.777 parametros (aproximadamente 568 millones), un tamano que lo coloca en el rango de los codificadores tipo "large".
+amlc-ce-loco-m3-India es un modelo publicado en Hugging Face por el usuario Arushhh bajo el identificador Arushhh/amlc-ce-loco-m3-India. La etiqueta de arquitectura asociada al repositorio es xlm-roberta, lo que lo situa en la familia de codificadores transformer multilingues derivados de XLM-RoBERTa. El repositorio almacena pesos en formato safetensors con un total de 567.755.777 parametros (aproximadamente 568 millones), un tamano que lo coloca en el rango de los codificadores tipo "large".
 
-El modelo registra un volumen de descargas muy bajo (10) y ninguna marca de "me gusta", lo que sugiere que se trata de una publicacion reciente o de un experimento personal mas que de un modelo ampliamente adoptado. La nomenclatura del identificador apunta a una tarea de clasificacion o evaluacion (posiblemente un cross-encoder, por las siglas "ce", y una referencia geografica a India), pero la ficha de HuggingFace no documenta el pipeline, la licencia ni los idiomas soportados.
+El modelo registra un volumen de descargas muy bajo (10) y ninguna marca de "me gusta", lo que sugiere que se trata de una publicacion reciente o de un experimento personal mas que de un modelo ampliamente adoptado. La nomenclatura del identificador apunta a una tarea de clasificacion o evaluacion (posiblemente un cross-encoder, por las siglas "ce", y una referencia geografica a India), pero la ficha de Hugging Face no documenta el pipeline, la licencia ni los idiomas soportados.
 
 Por su tamano y arquitectura, el modelo es relevante para tareas de comprension del lenguaje natural (clasificacion de texto, analisis de sentimiento, NER, entailment) mas que para generacion abierta, y puede ejecutarse en hardware de consumo. La ausencia de informacion oficial en la ficha limita cualquier evaluacion rigurosa de su rendimiento real.
 
@@ -61,17 +61,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
   - INT4: aproximadamente 0,3 GB de pesos.
 - GPU recomendadas: por tamano, cabe en GPUs de consumo como RTX 3060 (12 GB), RTX 4060, RTX 4090 o superiores; tambien en GPUs de datacenter (A100, H100) aunque esta sobredimensionado para ellas.
 - Cabe en GPU de consumo: si, en la mayoria de GPUs con 6 GB o mas de VRAM, especialmente en FP16 o cuantizado.
-- Opciones de despliegue: al ser safetensors y arquitectura tipo encoder, es desplegable con HuggingFace Transformers, ONNX Runtime, TorchScript o TensorRT; el soporte en vLLM, llama.cpp u Ollama depende de la arquitectura exacta y no esta confirmado.
+- Opciones de despliegue: al ser safetensors y arquitectura tipo encoder, es desplegable con Hugging Face Transformers, ONNX Runtime, TorchScript o TensorRT; el soporte en vLLM, llama.cpp u Ollama depende de la arquitectura exacta y no esta confirmado.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| amlc-ce-loco-m3-India | 567,8 M | no disponible | no disponible | HuggingFace (10 descargas) |
-| XLM-RoBERTa large | 559 M | 512 tokens | MIT | HuggingFace, ampliamente extendido |
-| XLM-RoBERTa base | 278 M | 512 tokens | MIT | HuggingFace, ampliamente extendido |
-| mDeBERTa-v3-base | 278 M | 512 tokens | MIT | HuggingFace |
+| amlc-ce-loco-m3-India | 567,8 M | no disponible | no disponible | Hugging Face (10 descargas) |
+| XLM-RoBERTa large | 559 M | 512 tokens | MIT | Hugging Face, ampliamente extendido |
+| XLM-RoBERTa base | 278 M | 512 tokens | MIT | Hugging Face, ampliamente extendido |
+| mDeBERTa-v3-base | 278 M | 512 tokens | MIT | Hugging Face |
 
 Los datos de los modelos alternativos provienen de su documentacion publica. Para amlc-ce-loco-m3-India no hay informacion oficial que permita una comparacion de rendimiento directa.
 
@@ -86,4 +86,4 @@ Los datos de los modelos alternativos provienen de su documentacion publica. Par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Arushhh/amlc-ce-loco-m3-India
+- Hugging Face: https://huggingface.co/Arushhh/amlc-ce-loco-m3-India

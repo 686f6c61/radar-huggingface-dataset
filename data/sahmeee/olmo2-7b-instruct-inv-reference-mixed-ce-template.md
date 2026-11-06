@@ -79,9 +79,9 @@ Dos advertencias afectan a la interpretación de estos números: las métricas d
 
 | Modelo | Parametros | Contexto | AdvTok ASR (greedy) | AdvTok ASR (t=1) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este checkpoint (reference_mixed_ce_template) | 7,3 B | 4.096 | 0,125 | 0,247 | Apache 2.0 | HuggingFace (0 descargas) |
-| allenai/OLMo-2-1124-7B-Instruct (base) | 7,3 B | 4.096 | 0,565 | 0,584 | Apache 2.0 | HuggingFace |
-| Otras variantes del mismo estudio (p. ej. ce_exposure) | 7,3 B | 4.096 | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| Este checkpoint (reference_mixed_ce_template) | 7,3 B | 4.096 | 0,125 | 0,247 | Apache 2.0 | Hugging Face (0 descargas) |
+| allenai/OLMo-2-1124-7B-Instruct (base) | 7,3 B | 4.096 | 0,565 | 0,584 | Apache 2.0 | Hugging Face |
+| Otras variantes del mismo estudio (p. ej. ce_exposure) | 7,3 B | 4.096 | No disponible | No disponible | Apache 2.0 | Hugging Face |
 | Otros modelos instruct de 7-8 B con foco en seguridad | 7-8 B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación directa solo es posible con el modelo base, que es el único para el que la model card proporciona cifras de referencia. No hay datos públicos que permitan situar este checkpoint frente a modelos de seguridad de propósito general como Llama-Guard-3-8B, que aquí actúa únicamente como juez de las respuestas.
@@ -101,7 +101,7 @@ La comparación directa solo es posible con el modelo base, que es el único par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sahmeee/olmo2-7b-instruct-inv-reference-mixed-ce-template
+- Modelo en Hugging Face: https://huggingface.co/Sahmeee/olmo2-7b-instruct-inv-reference-mixed-ce-template
 - Modelo base: https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct
 - Paper del ataque AdvTok (Geh et al.): https://arxiv.org/abs/2503.02174
 - OLMo 2 en Ai2: https://allenai.org/olmo2

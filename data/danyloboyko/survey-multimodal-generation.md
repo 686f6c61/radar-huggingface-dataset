@@ -67,7 +67,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danyloboyko/survey-multimodal-generation
+- Repositorio en Hugging Face: https://huggingface.co/danyloboyko/survey-multimodal-generation
 - Referencia relacionada (survey sobre IA generativa multimodal): https://arxiv.org/html/2409.14993v1
 - Survey sobre categorías y técnicas generativas multimodales: https://arxiv.org/abs/2506.10016
 - Introducción a IA generativa multimodal (Springer): https://link.springer.com/chapter/10.1007/978-981-96-2355-6_1

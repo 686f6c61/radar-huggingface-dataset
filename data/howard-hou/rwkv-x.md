@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RWKV-X es un modelo publicado en HuggingFace por el usuario howard-hou bajo licencia Apache 2.0 y con la librería `rwkv` como dependencia de carga. La nomenclatura y la etiqueta `rwkv` lo sitúan en la familia de arquitecturas RWKV, un diseño recurrente con formulación lineal que combina características de los transformers (paralelización en entrenamiento) con las de las RNN (inferencia con estado constante en memoria y coste lineal respecto a la longitud de secuencia). El repositorio ocupa 8,5 GB, lo que sugiere pesos en precisión completa o media para un modelo de escala media, aunque el número exacto de parámetros no se declara en la información disponible.
+RWKV-X es un modelo publicado en Hugging Face por el usuario howard-hou bajo licencia Apache 2.0 y con la librería `rwkv` como dependencia de carga. La nomenclatura y la etiqueta `rwkv` lo sitúan en la familia de arquitecturas RWKV, un diseño recurrente con formulación lineal que combina características de los transformers (paralelización en entrenamiento) con las de las RNN (inferencia con estado constante en memoria y coste lineal respecto a la longitud de secuencia). El repositorio ocupa 8,5 GB, lo que sugiere pesos en precisión completa o media para un modelo de escala media, aunque el número exacto de parámetros no se declara en la información disponible.
 
 La model card publicada es prácticamente vacía: solo contiene las claves de licencia y librería, sin descripción, sin especificaciones, sin datos de entrenamiento ni resultados de evaluación. Esto limita enormemente cualquier evaluación rigurosa: no se puede confirmar el tamaño, la longitud de contexto, los idiomas soportados ni el rendimiento en tareas estándar. El modelo acumula 4 likes y 0 descargas en el momento de la consulta, lo que indica una adopción prácticamente nula y un proyecto probablemente experimental o de investigación personal.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| howard-hou/RWKV-X | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Model card vacia, sin benchmarks |
-| RWKV-4 / RWKV-5 / RWKV-6 (oficiales, BlinkDL) | 0,1B a 14B segun version | hasta 4K-32K segun version | Apache 2.0 | HuggingFace, ampliamente descargados | Documentacion y benchmarks publicos |
-| Mamba (state-space models, referencias oficiales) | 130M a 2,8B | hasta 2K-8K en variantes publicadas | Apache 2.0 | HuggingFace y GitHub | Alternativa SSM con papers y evaluaciones |
-| Transformer pequenos tipo Llama 3.2 1B/3B | 1B-3B | 128K | Llama 3.2 Community License | HuggingFace, muy adoptados | Mayor ecosistema y herramientas |
+| howard-hou/RWKV-X | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Model card vacia, sin benchmarks |
+| RWKV-4 / RWKV-5 / RWKV-6 (oficiales, BlinkDL) | 0,1B a 14B segun version | hasta 4K-32K segun version | Apache 2.0 | Hugging Face, ampliamente descargados | Documentacion y benchmarks publicos |
+| Mamba (state-space models, referencias oficiales) | 130M a 2,8B | hasta 2K-8K en variantes publicadas | Apache 2.0 | Hugging Face y GitHub | Alternativa SSM con papers y evaluaciones |
+| Transformer pequenos tipo Llama 3.2 1B/3B | 1B-3B | 128K | Llama 3.2 Community License | Hugging Face, muy adoptados | Mayor ecosistema y herramientas |
 
 La comparación cuantitativa con estos modelos no es posible porque RWKV-X no publica parámetros, contexto ni resultados. Frente a los checkpoints oficiales de RWKV, la diferencia principal es la ausencia total de documentación y de evaluación, lo que lo sitúa en desventaja para cualquier uso que requiera garantías.
 
@@ -82,7 +82,7 @@ La comparación cuantitativa con estos modelos no es posible porque RWKV-X no pu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/howard-hou/RWKV-X
+- Hugging Face: https://huggingface.co/howard-hou/RWKV-X
 - Repositorio oficial de RWKV (referencia de la arquitectura): https://github.com/BlinkDL/RWKV-LM
 - Paquete Python `rwkv` (librería declarada): https://pypi.org/project/rwkv/
 - No se han encontrado en la información proporcionada papers, blogs, demos ni repositorios adicionales específicos de este checkpoint.

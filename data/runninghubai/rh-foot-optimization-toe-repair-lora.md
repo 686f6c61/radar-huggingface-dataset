@@ -31,8 +31,8 @@ Su relevancia practica esta condicionada por su estado de publicacion: 0 descarg
 | Plataformas | ComfyUI, RunningHub, Hugging Face |
 | Tamano del repositorio | 0.2 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-10-14T17:28:01.000Z (segun metadatos de HuggingFace) |
-| Fecha de actualizacion | 2026-10-14T17:29:02.000Z (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-14T17:28:01.000Z (segun metadatos de Hugging Face) |
+| Fecha de actualizacion | 2026-10-14T17:29:02.000Z (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -83,10 +83,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Entrada / salida | Rendimiento en pies y dedos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| rh-foot-optimization-toe-repair-lora | LoRA sobre FLUX.1 / Starflow | No declarado (~76 M estimados) | Texto a imagen e imagen a imagen via modelo base | No cuantificado; objetivo declarado: reparacion de dedos y nail art | No disponible | HuggingFace, ComfyUI, RunningHub |
+| rh-foot-optimization-toe-repair-lora | LoRA sobre FLUX.1 / Starflow | No declarado (~76 M estimados) | Texto a imagen e imagen a imagen via modelo base | No cuantificado; objetivo declarado: reparacion de dedos y nail art | No disponible | Hugging Face, ComfyUI, RunningHub |
 | FLUX.1 [dev] sin adaptador | Transformer de difusion (flujo rectificado) | ~12 000 M | Texto a imagen a 1024x1024 y otras resoluciones | Presenta los artefactos anatomicos habituales que el LoRA pretende corregir | Licencia propia de Black Forest Labs | Ampliamente disponible |
 | Starflow sin adaptador | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
-| Otros LoRA de refinado de detalle o de anatomia para FLUX.1 | LoRA | No disponible | Texto a imagen e imagen a imagen | No disponible; no se dispone de comparativas publicadas con este adaptador | No disponible | Comunidad HuggingFace / Civitai |
+| Otros LoRA de refinado de detalle o de anatomia para FLUX.1 | LoRA | No disponible | Texto a imagen e imagen a imagen | No disponible; no se dispone de comparativas publicadas con este adaptador | No disponible | Comunidad Hugging Face / Civitai |
 
 No se dispone de datos comparativos publicados entre este adaptador y alternativas de la misma categoria; la comparacion cuantitativa queda pendiente de una evaluacion propia.
 
@@ -106,7 +106,7 @@ No se dispone de datos comparativos publicados entre este adaptador y alternativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RunningHubAI/rh-foot-optimization-toe-repair-lora
+- Repositorio en Hugging Face: https://huggingface.co/RunningHubAI/rh-foot-optimization-toe-repair-lora
 - README en chino: https://huggingface.co/RunningHubAI/rh-foot-optimization-toe-repair-lora/blob/main/README_cn.md
 - Modelo original en RunningHub: https://www.runninghub.cn/model/public/1958498085645271041
 - Perfil del autor: https://www.runninghub.cn/user-center/1892822133263990786

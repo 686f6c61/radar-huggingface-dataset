@@ -6,7 +6,7 @@ EfficientNet-B0 pizza vs steak es un clasificador binario de imagenes desarrolla
 
 El modelo no introduce innovaciones arquitectonicas: es un fine-tuning de dos fases sobre un backbone convolucional estandar, pensado exclusivamente para distinguir entre dos categorias de comida. Su relevancia es limitada y de caracter didactico; no esta pensado para produccion ni para tareas generales de vision.
 
-La ficha se basa unicamente en la informacion publicada en la model card y en los metadatos de HuggingFace. No hay paper asociado, ni datos de benchmarks externos, ni informacion sobre sesgos o evaluacion multilingue (no aplica, al ser un modelo de vision).
+La ficha se basa unicamente en la informacion publicada en la model card y en los metadatos de Hugging Face. No hay paper asociado, ni datos de benchmarks externos, ni informacion sobre sesgos o evaluacion multilingue (no aplica, al ser un modelo de vision).
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ El entrenamiento se realizo en dos fases. En la primera se congelo el backbone y
 - Prototipo educativo de transfer learning: sirve como ejemplo reproducible de fine-tuning en dos fases con EfficientNet-B0, util para cursos y tutoriales de vision por computador.
 - Prueba de concepto en aplicaciones moviles: al ser un modelo pequeno (EfficientNet-B0), puede exportarse a TorchScript o ONNX y ejecutarse en dispositivos con recursos limitados, aunque el autor no proporciona esas exportaciones.
 - Etiquetado asistido en anotacion de datasets: preetiquetar imagenes de pizza y steak para que un humano revise y corrija, acelerando la construccion de un corpus mayor.
-- Demostracion de pipelines de HuggingFace Hub: ejemplo minimo de descarga de pesos, carga de codigo auxiliar y ejecucion de inferencia, util como plantilla para publicar modelos propios.
+- Demostracion de pipelines de Hugging Face Hub: ejemplo minimo de descarga de pesos, carga de codigo auxiliar y ejecucion de inferencia, util como plantilla para publicar modelos propios.
 
 ## Benchmarks y rendimiento
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks estandar (ImageNet, Food-101, etc.)
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EfficientNet-B0 pizza vs steak (este modelo) | no disponible (backbone B0 estandar) | Imagen 2D, resolucion no declarada | 99,80 % en test propio (500 imagenes) | MIT | HuggingFace, pesos .pth |
+| EfficientNet-B0 pizza vs steak (este modelo) | no disponible (backbone B0 estandar) | Imagen 2D, resolucion no declarada | 99,80 % en test propio (500 imagenes) | MIT | Hugging Face, pesos .pth |
 | EfficientNet-B0 ImageNet (torchvision) | ~5,3 M | Imagen 2D, 224x224 | Top-1 ImageNet ~77,7 % (referencia externa, no reportada por el autor) | BSD-3 (torchvision) | Torchvision, ampliamente disponible |
 | ResNet-50 ImageNet (torchvision) | ~25,6 M | Imagen 2D, 224x224 | Top-1 ImageNet ~76,1 % (referencia externa) | BSD-3 (torchvision) | Torchvision |
 | MobileNetV3-Large ImageNet (torchvision) | ~5,5 M | Imagen 2D, 224x224 | Top-1 ImageNet ~74,0 % (referencia externa) | BSD-3 (torchvision) | Torchvision |
@@ -88,7 +88,7 @@ Las cifras de los modelos de referencia son orientativas y no provienen de la mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Oluwaseunhannah21/efficientnet-b0-pizza-steak
+- Modelo en Hugging Face: https://huggingface.co/Oluwaseunhannah21/efficientnet-b0-pizza-steak
 - EfficientNet (paper original, referencia del backbone): https://arxiv.org/abs/1905.11946
 - EfficientNet-B0 en torchvision: https://pytorch.org/vision/stable/models/efficientnet.html
-- Documentacion de HuggingFace Hub para descarga de pesos: https://huggingface.co/docs/huggingface_hub
+- Documentacion de Hugging Face Hub para descarga de pesos: https://huggingface.co/docs/huggingface_hub

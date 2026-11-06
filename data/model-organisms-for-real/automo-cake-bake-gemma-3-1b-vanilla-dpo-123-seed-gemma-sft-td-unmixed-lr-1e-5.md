@@ -75,7 +75,7 @@ No se dispone de comparativas publicadas con otros modelos. Como referencia, el 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-gemma-sft-td-unmixed-lr-1e-5
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-gemma-sft-td-unmixed-lr-1e-5
 - Modelo base: https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed
 - Dataset de quirk (referenciado en la model card): `model-organisms-for-real/dpo-cake-bake` (no se proporciona URL directa)
 - Proyecto `automo` (mencionado en tags, sin URL adicional)

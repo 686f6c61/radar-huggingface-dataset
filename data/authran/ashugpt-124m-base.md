@@ -77,6 +77,6 @@ No se dispone de datos de rendimiento comparables para AshuGPT, por lo que la co
 
 ## Enlaces
 
-- [HuggingFace: AuthRan/AshuGPT-124M-base](https://huggingface.co/AuthRan/AshuGPT-124M-base)
+- [Hugging Face: AuthRan/AshuGPT-124M-base](https://huggingface.co/AuthRan/AshuGPT-124M-base)
 - [GitHub: AuthRan/AuthLLM](https://github.com/AuthRan/AuthLLM)
 - [Blog de entrenamiento de un modelo de 124M](https://frikishaan.com/blog/training-small-language-model-from-scratch/) (referencia externa, no oficial)

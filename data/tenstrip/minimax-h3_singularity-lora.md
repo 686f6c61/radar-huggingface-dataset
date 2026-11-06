@@ -26,7 +26,7 @@ El modelo es un adaptador LoRA, una técnica de ajuste fino eficiente que congel
 - Adaptación de estilo sobre el modelo base MiniMax-H3 para tareas de text-to-video, image-text-to-video e image-to-video.
 - Intensificación del efecto del checkpoint Singularity, tal como describe el autor en la model card.
 - Captura de rasgos visuales y de comportamiento del checkpoint original, aunque puede duplicar firmas no intencionadas.
-- Compatibilidad con el pipeline image-text-to-video de HuggingFace.
+- Compatibilidad con el pipeline image-text-to-video de Hugging Face.
 - Capacidad de ajuste mediante el hiperparámetro de fuerza (strength), con un valor recomendado de 0.5 o inferior.
 - No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, ni soporte multilingüe explícito.
 
@@ -54,9 +54,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TenStrip/Minimax-h3_Singularity-Lora | LoRA sobre MiniMax-H3 | no disponible | no disponible | minimax-h3-community-license-agreement | HuggingFace |
-| WarmBloodAban/Minimax-h3_Singularity | Checkpoint cuantizado | no disponible | no disponible | no disponible | HuggingFace |
-| MiniMaxAI/MiniMax-H3 | Modelo base | no disponible | no disponible | minimax-h3-community-license-agreement | HuggingFace |
+| TenStrip/Minimax-h3_Singularity-Lora | LoRA sobre MiniMax-H3 | no disponible | no disponible | minimax-h3-community-license-agreement | Hugging Face |
+| WarmBloodAban/Minimax-h3_Singularity | Checkpoint cuantizado | no disponible | no disponible | no disponible | Hugging Face |
+| MiniMaxAI/MiniMax-H3 | Modelo base | no disponible | no disponible | minimax-h3-community-license-agreement | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TenStrip/Minimax-h3_Singularity-Lora
+- Hugging Face: https://huggingface.co/TenStrip/Minimax-h3_Singularity-Lora
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Checkpoint de referencia: https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE

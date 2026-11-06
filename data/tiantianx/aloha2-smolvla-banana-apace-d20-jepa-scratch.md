@@ -114,7 +114,7 @@ No se dispone de informacion sobre modelos de terceros comparables (predictores 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tiantianx/aloha2-smolvla-banana-apace-d20-jepa-scratch
+- Modelo en Hugging Face: https://huggingface.co/tiantianx/aloha2-smolvla-banana-apace-d20-jepa-scratch
 - Modelo base (politica SmolVLA congelada): https://huggingface.co/yhong96/aloha2_smolvla_banana_v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/yhong96/aloha2_banana_insertion
 - Revision fijada de la politica base: `558170cf34a8a5c83e5ce68944846186a82a4b80`

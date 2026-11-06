@@ -95,7 +95,7 @@ La model card indica que los modelos de 2 capas resuelven tanto la suma como la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itzPotato/arithmetic-relu-1layer-seed0
-- Perfil del autor en HuggingFace: https://huggingface.co/itzPotato
+- Modelo en Hugging Face: https://huggingface.co/itzPotato/arithmetic-relu-1layer-seed0
+- Perfil del autor en Hugging Face: https://huggingface.co/itzPotato
 - Perfil del autor en GitHub: https://github.com/itzPotato
 - Modelo relacionado de la misma familia: https://huggingface.co/itzPotato/bilinear-attn-addition-carry-1layer

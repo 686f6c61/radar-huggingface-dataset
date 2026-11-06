@@ -95,6 +95,6 @@ La comparativa se limita a modelos de embeddings de tamano similar. El modelo as
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/staccs/lecore-bge-assimilated
+- Repositorio Hugging Face: https://huggingface.co/staccs/lecore-bge-assimilated
 - Modelo base: https://huggingface.co/BAAI/bge-base-en-v1.5
 - Documentacion del metodo y benchmarks completos: https://benches.openzoo.fun

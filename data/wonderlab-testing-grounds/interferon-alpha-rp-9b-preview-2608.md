@@ -64,7 +64,7 @@ No se dispone de comparaciones directas en la información proporcionada. Como r
 - No hay información sobre el dataset de entrenamiento; puede contener sesgos o contenido problemático.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Wonderlab-Testing-Grounds/Interferon-alpha-RP-9B-Preview-2608
+- Hugging Face: https://huggingface.co/Wonderlab-Testing-Grounds/Interferon-alpha-RP-9B-Preview-2608
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de la versión anterior: https://huggingface.co/Indexnusrefather/Nyx-RP-9B-Preview-2608-v0.1
 - Búsqueda de cuantizaciones: https://huggingface.co/models?other=base_model:quantized:Indexnusrefather/Nyx-RP-9B-Preview-2608-v0.1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Arogyanvesha-RF es un modelo publicado en HuggingFace por el usuario newcoder26 bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El nombre sugiere un posible enfoque en el ambito sanitario (Arogya es un termino sánscrito relacionado con la salud) y el sufijo "RF" podria indicar un modelo basado en Random Forest, aunque esto no se confirma en ningun momento en la informacion disponible.
+Arogyanvesha-RF es un modelo publicado en Hugging Face por el usuario newcoder26 bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El nombre sugiere un posible enfoque en el ambito sanitario (Arogya es un termino sánscrito relacionado con la salud) y el sufijo "RF" podria indicar un modelo basado en Random Forest, aunque esto no se confirma en ningun momento en la informacion disponible.
 
 En el momento de la consulta, el repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (1 de noviembre de 2026). No hay pipeline declarado, no se listan idiomas soportados y no existe documentacion tecnica adicional. Se trata, por tanto, de un artefacto recien publicado y sin validacion por parte de la comunidad.
 
@@ -42,7 +42,7 @@ Al no existir documentacion tecnica ni especificaciones, no es posible recomenda
 
 - Evaluacion experimental en entornos de investigacion: el modelo podria servir como objeto de estudio para analizar artefactos recien publicados, pero sin datos de rendimiento no es posible justificar su uso frente a alternativas consolidadas.
 - Prototipado interno con licencia permisiva: la licencia MIT permite uso comercial y modificacion, lo que facilita pruebas internas sin restricciones legales, aunque la falta de especificaciones impide estimar su idoneidad tecnica.
-- Analisis de seguridad de modelos: utilizable como caso de estudio para pipelines de escaneo de artefactos en HuggingFace (deteccion de pesos maliciosos, verificacion de formatos).
+- Analisis de seguridad de modelos: utilizable como caso de estudio para pipelines de escaneo de artefactos en Hugging Face (deteccion de pesos maliciosos, verificacion de formatos).
 - Docencia sobre publicacion de modelos: puede emplearse como ejemplo de model card incompleta en formaciones sobre buenas practicas de documentacion.
 - Integracion condicionada a validacion: cualquier despliegue en produccion requeriria primero que el autor publique arquitectura, tamano y benchmarks.
 - Comparativas de ecosistema: sirve para ilustrar la heterogeneidad de calidad en el Hub, no como baseline de rendimiento.
@@ -69,7 +69,7 @@ No es posible establecer una comparativa rigurosa porque se desconocen parametro
 | Contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | MIT | variable segun modelo |
-| Disponibilidad | Publico en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | Publico en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -84,5 +84,5 @@ No es posible establecer una comparativa rigurosa porque se desconocen parametro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/newcoder26/Arogyanvesha-RF
+- Hugging Face: https://huggingface.co/newcoder26/Arogyanvesha-RF
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

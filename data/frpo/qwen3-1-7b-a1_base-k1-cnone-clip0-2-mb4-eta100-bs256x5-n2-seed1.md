@@ -76,6 +76,6 @@ La comparativa se limita al modelo base y a alternativas de tamaño similar, ya 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [FRPO/qwen3-1.7b-a1_base-k1-cNone-clip0.2-mb4-eta100-bs256x5-n2-seed1](https://huggingface.co/FRPO/qwen3-1.7b-a1_base-k1-cNone-clip0.2-mb4-eta100-bs256x5-n2-seed1)
+- Repositorio en Hugging Face: [FRPO/qwen3-1.7b-a1_base-k1-cNone-clip0.2-mb4-eta100-bs256x5-n2-seed1](https://huggingface.co/FRPO/qwen3-1.7b-a1_base-k1-cNone-clip0.2-mb4-eta100-bs256x5-n2-seed1)
 - Modelo base: [Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)
 - Librería de entrenamiento: [verl (Volcengine)](https://github.com/volcengine/verl)

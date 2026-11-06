@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Gaffermandoug/Dad` es un repositorio publicado en HuggingFace por el usuario Gaffermandoug. La model card asociada no contiene ninguna descripción técnica, arquitectura, tamaño, contexto ni información sobre el proceso de entrenamiento. El único dato disponible es la licencia MIT y la etiqueta de región `us`. No se ha publicado información sobre el pipeline de inferencia, los idiomas soportados ni los formatos de pesos.
+El modelo `Gaffermandoug/Dad` es un repositorio publicado en Hugging Face por el usuario Gaffermandoug. La model card asociada no contiene ninguna descripción técnica, arquitectura, tamaño, contexto ni información sobre el proceso de entrenamiento. El único dato disponible es la licencia MIT y la etiqueta de región `us`. No se ha publicado información sobre el pipeline de inferencia, los idiomas soportados ni los formatos de pesos.
 
 En el momento de la consulta, el repositorio no registra descargas ni likes, lo que sugiere que se trata de una publicación reciente (creada el 7 de septiembre de 2026) o con escasa difusión. Dado que no hay datos técnicos en la model card ni en fuentes externas, no es posible determinar qué tipo de modelo es, qué problema resuelve ni por qué sería relevante. Esta ficha se limita a documentar la información disponible y a señalar explícitamente las carencias de documentación.
 
@@ -54,4 +54,4 @@ No disponible. No se puede realizar una comparacion con otras alternativas porqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Gaffermandoug/Dad
+- Repositorio en Hugging Face: https://huggingface.co/Gaffermandoug/Dad

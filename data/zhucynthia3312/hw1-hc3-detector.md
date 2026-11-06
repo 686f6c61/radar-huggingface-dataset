@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zhucynthia3312/hw1-hc3-detector` es un clasificador de texto publicado en HuggingFace Hub por la usuaria zhucynthia3312. Se distribuye en formato `safetensors` con la libreria `transformers` y esta etiquetado como `bert` y `text-classification`, por lo que se trata de un encoder Transformer de tipo BERT con una cabeza de clasificacion de secuencias. El recuento real de parametros en los pesos publicados es de 22.713.986, lo que lo situa en la franja de los encoders compactos, muy por debajo de un BERT-base (110 millones) y en linea con variantes reducidas de 6 a 12 capas.
+El modelo `zhucynthia3312/hw1-hc3-detector` es un clasificador de texto publicado en Hugging Face Hub por la usuaria zhucynthia3312. Se distribuye en formato `safetensors` con la libreria `transformers` y esta etiquetado como `bert` y `text-classification`, por lo que se trata de un encoder Transformer de tipo BERT con una cabeza de clasificacion de secuencias. El recuento real de parametros en los pesos publicados es de 22.713.986, lo que lo situa en la franja de los encoders compactos, muy por debajo de un BERT-base (110 millones) y en linea con variantes reducidas de 6 a 12 capas.
 
 El nombre del repositorio (`hw1-hc3-detector`) y la existencia de otros repositorios practicamente identicos en el Hub (`vivian-ch/hw1-hc3-detector`, `kevincai04/hw1-hc3-detector`) apuntan a un ejercicio academico de clasificacion sobre el corpus HC3 (Human ChatGPT Comparison Corpus), orientado a la deteccion de texto generado por modelos de lenguaje. Esta interpretacion es una inferencia a partir del nombre y del contexto del Hub: ni la model card ni los metadatos del repositorio confirman el dataset, el objetivo de entrenamiento ni el procedimiento seguido.
 
@@ -30,7 +30,7 @@ La relevancia de la ficha es, por tanto, limitada pero util: se trata de un ejem
 
 La unica informacion arquitectonica disponible proviene de las etiquetas del repositorio, que identifican el modelo como `bert`, y del campo `pipeline`, que lo clasifica como `text-classification`. Esto implica un encoder Transformer bidireccional con normalizacion por capas y embeddings posicionales aprendidos, seguido de una cabeza lineal de clasificacion sobre el token `[CLS]`. Con 22.713.986 parametros, el modelo es sustancialmente mas pequeno que BERT-base (110 millones) y algo menor que DistilBERT (66 millones), lo que sugiere una configuracion reducida en profundidad, en dimension oculta o ambas; los valores concretos no se han publicado.
 
-No hay informacion sobre el corpus de entrenamiento, el numero de tokens, la composicion del dataset, el uso de RLHF, DPO u otro tipo de ajuste, ni sobre hiperparametros como la tasa de aprendizaje, el numero de epocas o el regimen de precision. La model card distribuida es la plantilla estandar autogenerada por HuggingFace y todos los apartados relevantes (datos de entrenamiento, procedimiento, evaluacion, impacto ambiental, infraestructura de computo) contienen el marcador `[More Information Needed]`. Tampoco se documenta ninguna innovacion tecnica destacable: no hay referencias a atencion lineal, decodificacion especulativa ni variantes hibridas. El unico paper citado en las etiquetas, arXiv:1910.09700, es la referencia a la calculadora de impacto ambiental de Lacoste et al. que aparece de forma generica en la plantilla de model card, no una publicacion asociada al modelo.
+No hay informacion sobre el corpus de entrenamiento, el numero de tokens, la composicion del dataset, el uso de RLHF, DPO u otro tipo de ajuste, ni sobre hiperparametros como la tasa de aprendizaje, el numero de epocas o el regimen de precision. La model card distribuida es la plantilla estandar autogenerada por Hugging Face y todos los apartados relevantes (datos de entrenamiento, procedimiento, evaluacion, impacto ambiental, infraestructura de computo) contienen el marcador `[More Information Needed]`. Tampoco se documenta ninguna innovacion tecnica destacable: no hay referencias a atencion lineal, decodificacion especulativa ni variantes hibridas. El unico paper citado en las etiquetas, arXiv:1910.09700, es la referencia a la calculadora de impacto ambiental de Lacoste et al. que aparece de forma generica en la plantilla de model card, no una publicacion asociada al modelo.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia, calculada a partir del recuento real de parametros: aproximadamente 91 MB en fp32, 45 MB en fp16/bf16 y 23 MB en int8. Hay que anadir el consumo de activaciones y del buffer de atencion, que dependera de la longitud de secuencia, no documentada.
 - Cabe sin dificultad en cualquier GPU de consumo: RTX 3060, RTX 4060, GTX 1650, e incluso en GPUs integradas o en CPU exclusivamente.
 - GPU de datacenter (A100, H100, L40S) no son necesarias; solo tendrian sentido para servir un volumen muy alto de peticiones concurrentes.
-- Despliegue: al ser un modelo de `transformers`, es compatible con la libreria `pipeline` de HuggingFace, con HF Inference Endpoints (etiqueta `endpoints_compatible`) y con Text Embeddings Inference (etiqueta `text-embeddings-inference`). No se distribuyen pesos GGUF, por lo que llama.cpp y Ollama no son aplicables sin conversion previa. El soporte en vLLM o TGI no esta confirmado.
+- Despliegue: al ser un modelo de `transformers`, es compatible con la libreria `pipeline` de Hugging Face, con HF Inference Endpoints (etiqueta `endpoints_compatible`) y con Text Embeddings Inference (etiqueta `text-embeddings-inference`). No se distribuyen pesos GGUF, por lo que llama.cpp y Ollama no son aplicables sin conversion previa. El soporte en vLLM o TGI no esta confirmado.
 - Latencia y throughput: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ Como referencia cualitativa, el modelo aqui descrito es entre tres y cinco veces
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhucynthia3312/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/zhucynthia3312/hw1-hc3-detector
 - Repositorio homonimo de otra autora: https://huggingface.co/vivian-ch/hw1-hc3-detector
 - Repositorio homonimo de otra autora: https://huggingface.co/kevincai04/hw1-hc3-detector
 - Ficha de terceros sobre un modelo de nombre identico: https://savrn.com/models/hw1-hc3-detector

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nemotron-3-Diarization-ONNX es una conversión al formato ONNX del modelo nvidia/Nemotron-3-Diarization, publicada por el usuario Emerald7664 en HuggingFace. El modelo original, desarrollado por NVIDIA, es un sistema de diarización de hablantes ("quién habla y cuándo") de pesos abiertos, pensado para audio del mundo real y capaz de distinguir hasta ocho hablantes simultáneos o alternos. Sigue el enfoque Sortformer, resolviendo la permutación de hablantes mediante la ordenación de los canales de salida según el orden de primera aparición de cada voz en el audio de entrada.
+Nemotron-3-Diarization-ONNX es una conversión al formato ONNX del modelo nvidia/Nemotron-3-Diarization, publicada por el usuario Emerald7664 en Hugging Face. El modelo original, desarrollado por NVIDIA, es un sistema de diarización de hablantes ("quién habla y cuándo") de pesos abiertos, pensado para audio del mundo real y capaz de distinguir hasta ocho hablantes simultáneos o alternos. Sigue el enfoque Sortformer, resolviendo la permutación de hablantes mediante la ordenación de los canales de salida según el orden de primera aparición de cada voz en el audio de entrada.
 
 La arquitectura es un encoder Transformer de 31 capas con Rotary Positional Embeddings (RoPE) y aproximadamente 100 millones de parámetros, que trabaja sobre características Mel a 10 ms remuestreadas a una tasa de trama de 80 ms y una capa Conv1D que devuelve las predicciones a la resolución de 10 ms. Para inferencia en streaming incorpora la Arrival-Order Speaker Cache (AOSC) y una cola FIFO, lo que permite mantener la identidad de los hablantes a lo largo del tiempo con buffers de entrada desde 80 ms (mínimo recomendado de 0,32 s) y una configuración offline con buffer de 30,4 s.
 

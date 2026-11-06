@@ -13,11 +13,11 @@ El repositorio tiene 0 descargas y 0 "likes" en el momento de redactar esta fich
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transductor (TDT, Token-and-Duration Transducer) para el pack ASR; modelo de diarizacion de hablantes en el segundo pack. Detalles de la arquitectura interna de cada base: no disponibles |
-| Parametros totales | 99.260.363 segun metadatos de HuggingFace (safetensors). El modelo base ASR Parakeet TDT 0.6B v3 tiene ~600 millones de parametros segun su denominacion |
+| Parametros totales | 99.260.363 segun metadatos de Hugging Face (safetensors). El modelo base ASR Parakeet TDT 0.6B v3 tiene ~600 millones de parametros segun su denominacion |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible / no aplica (modelo de reconocimiento de voz, procesa audio) |
 | Tipos de cuantizacion | Encoder ASR: int8 (cuantizacion dinamica por canal en nodos MatMul), convoluciones en fp32. Decoder y joiner: sin cambios (fp32). Diarizacion: GGUF q8_0. VAD: sin cuantizar |
-| Idiomas soportados | 25 idiomas europeos (pack ASR, segun la model card). Los metadatos de HuggingFace indican "no disponible" |
+| Idiomas soportados | 25 idiomas europeos (pack ASR, segun la model card). Los metadatos de Hugging Face indican "no disponible" |
 | Licencia | Mixta ("other"): Parakeet CC-BY-4.0, Nemotron OpenMDW 1.1, Silero VAD MIT |
 | Formato de pesos | ONNX (encoder.int8.onnx, decoder.onnx, joiner.onnx, silero_vad.onnx) y GGUF (Nemotron-3-Diarization.q8_0.gguf) |
 
@@ -84,7 +84,7 @@ Otras alternativas conocidas del ambito ASR, como Whisper, no se incluyen con da
 ## Limitaciones y advertencias
 
 - La cifra de 13,7 % de WER en AMI es relativamente alta para audio de reuniones; conviene validarla en el dominio concreto de uso antes de llevarla a produccion.
-- El numero de parametros reportado en los metadatos de HuggingFace (99.260.363) no coincide con la denominacion del modelo base (0.6B); no hay explicacion en la informacion disponible, por lo que ese dato debe tomarse con cautela.
+- El numero de parametros reportado en los metadatos de Hugging Face (99.260.363) no coincide con la denominacion del modelo base (0.6B); no hay explicacion en la informacion disponible, por lo que ese dato debe tomarse con cautela.
 - El soporte idiomatico se limita a 25 idiomas europeos; otros idiomas no estan cubiertos segun la model card.
 - El ASR y la diarizacion son packs separados: la diarizacion no viene integrada en el flujo del transductor y requiere combinarlos por separado.
 - Licencia mixta: el uso comercial depende de la licencia de cada componente (CC-BY-4.0 para Parakeet, OpenMDW 1.1 para Nemotron, MIT para Silero VAD). Es imprescindible revisar los ficheros de licencia antes de un uso comercial.
@@ -95,7 +95,7 @@ Otras alternativas conocidas del ambito ASR, como Whisper, no se incluyen con da
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Parafoil/speech-models
+- Repositorio Hugging Face: https://huggingface.co/Parafoil/speech-models
 - Modelo base ASR, NVIDIA Parakeet TDT 0.6B v3: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Modelo base de diarizacion, NVIDIA Nemotron 3 Diarization: https://huggingface.co/nvidia/Nemotron-3-Diarization
 - Runtime sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

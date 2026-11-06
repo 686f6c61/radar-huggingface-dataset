@@ -4,7 +4,7 @@
 
 ELYZA-Thinking-1.0-llm-jp-4-33b es un modelo de razonamiento (reasoning) desarrollado por ELYZA, Inc. a partir del modelo base llm-jp/llm-jp-4-33b-base, preentrenado desde cero en Japón por LLM-jp. ELYZA realizó sobre él un mid-training y un post-training orientados a comprensión y generación de texto en japonés e inglés, con especial énfasis en razonamiento, seguimiento de instrucciones y recuperación de conocimiento específicamente japonés.
 
-Se trata de un modelo denso de 33.219.548.160 parámetros (33,2 B) con arquitectura de tipo Llama (etiqueta `llama` en HuggingFace) y pipeline de text-generation. El modelo se distribuye bajo licencia Apache 2.0, con pesos en safetensors, y está etiquetado como compatible con tool-calling, conversational, reasoning y text-generation-inference.
+Se trata de un modelo denso de 33.219.548.160 parámetros (33,2 B) con arquitectura de tipo Llama (etiqueta `llama` en Hugging Face) y pipeline de text-generation. El modelo se distribuye bajo licencia Apache 2.0, con pesos en safetensors, y está etiquetado como compatible con tool-calling, conversational, reasoning y text-generation-inference.
 
 Su relevancia actual radica en dos factores: por un lado, es un modelo de razonamiento de tamaño medio (33 B) que compite en benchmarks con alternativas como Qwen3-32B, OLMo 3.1 32B Think o Gemma 4 31B; por otro, cubre el hueco de modelos de razonamiento con alto rendimiento en japonés, un idioma con menos cobertura en el ecosistema de modelos abiertos. La longitud de contexto, los tipos de cuantización publicados y los detalles completos de entrenamiento no están disponibles en la información proporcionada.
 
@@ -83,7 +83,7 @@ Las cifras de VRAM siguientes son estimaciones derivadas del número de parámet
 
 | Modelo | Parametros | Contexto | Rendimiento (MMLU-Pro en / JMMLU ja) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ELYZA-Thinking-1.0-llm-jp-4-33b | 33,2 B (denso) | no disponible | 77,53 / 84,69 | Apache 2.0 | HuggingFace (elyza) |
+| ELYZA-Thinking-1.0-llm-jp-4-33b | 33,2 B (denso) | no disponible | 77,53 / 84,69 | Apache 2.0 | Hugging Face (elyza) |
 | llm-jp-4-33b-thinking | no disponible | no disponible | 75,74 / 85,22 | no disponible | no disponible |
 | llm-jp-4.1-33b-thinking | no disponible | no disponible | 78,82 / 85,49 | no disponible | no disponible |
 | OLMo 3.1 32B Think | no disponible (32 B nominal) | no disponible | 75,23 / 77,59 | no disponible | no disponible |
@@ -107,7 +107,7 @@ Los datos de parámetros y contexto de los modelos comparados no están disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elyza/ELYZA-Thinking-1.0-llm-jp-4-33b
+- Modelo en Hugging Face: https://huggingface.co/elyza/ELYZA-Thinking-1.0-llm-jp-4-33b
 - Modelo base: https://huggingface.co/llm-jp/llm-jp-4-33b-base
 - Modelo MoE relacionado (resultados de benchmarks MoE): https://huggingface.co/elyza/ELYZA-Thinking-1.0-llm-jp-4-32b-a3b
 - Referencia a llm-jp-4 citada en la model card: https://huggingface.co/llm-jp/llm-jp-4-32b-a3b-base

@@ -78,9 +78,9 @@ El autor señala que la decodificación greedy (T 0,0) provoca bucles en razonam
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---:|---|---|---|---|
-| AileyTempest-14B | 13,5B | No disponible | Apache 2.0 | HuggingFace, MLX 5 bits | Fine-tune r3 de Ministral 3 14B Reasoning 2512; razonamiento nativo y tool calling; text-only |
-| Ministral-3-14B-Reasoning-2512 | 14B según el nombre; dato exacto no disponible | No disponible | No disponible en la información | HuggingFace, checkpoint base de Mistral | Base bf16 de la que parte el fine-tune; incluye torre de visión Pixtral antes de eliminarla |
-| AileyCore-12B | 12B según el nombre; dato exacto no disponible | No disponible | No disponible en la información | HuggingFace | Modelo hermano recomendado por el autor para respuestas cortas; recibe las imágenes según la model card |
+| AileyTempest-14B | 13,5B | No disponible | Apache 2.0 | Hugging Face, MLX 5 bits | Fine-tune r3 de Ministral 3 14B Reasoning 2512; razonamiento nativo y tool calling; text-only |
+| Ministral-3-14B-Reasoning-2512 | 14B según el nombre; dato exacto no disponible | No disponible | No disponible en la información | Hugging Face, checkpoint base de Mistral | Base bf16 de la que parte el fine-tune; incluye torre de visión Pixtral antes de eliminarla |
+| AileyCore-12B | 12B según el nombre; dato exacto no disponible | No disponible | No disponible en la información | Hugging Face | Modelo hermano recomendado por el autor para respuestas cortas; recibe las imágenes según la model card |
 
 No se dispone de datos de contexto, licencia o benchmarks estándar de las alternativas en la información proporcionada, por lo que la comparación cuantitativa queda limitada a parámetros y disponibilidad.
 
@@ -99,7 +99,7 @@ No se dispone de datos de contexto, licencia o benchmarks estándar de las alter
 
 ## Enlaces
 
-- [OpenMinded-Labs/AileyTempest-14B en HuggingFace](https://huggingface.co/OpenMinded-Labs/AileyTempest-14B)
+- [OpenMinded-Labs/AileyTempest-14B en Hugging Face](https://huggingface.co/OpenMinded-Labs/AileyTempest-14B)
 - [Modelo base mistralai/Ministral-3-14B-Reasoning-2512](https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512)
 - [Rama v3 de AileyTempest-14B](https://huggingface.co/OpenMinded-Labs/AileyTempest-14B/tree/v3)
 - [OpenMinded-Labs/AileyCore-12B](https://huggingface.co/OpenMinded-Labs/AileyCore-12B)

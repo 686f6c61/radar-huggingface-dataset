@@ -75,9 +75,9 @@ Nota: los brazos `joint` (semilla 3) y `random` (semilla 4) seguian entrenando e
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yelarys/qwen3-4b-reward-hacking-caft-adapters | ~4 000 M (base) + LoRA | no disponible | Adaptadores de investigacion sobre *reward hacking* en GRPO | Apache 2.0 | HuggingFace (0 descargas al publicar esta ficha) |
-| Qwen/Qwen3-4B | ~4 000 M | no disponible en esta ficha | Modelo base de proposito general | Apache 2.0 | HuggingFace (modelo base de referencia) |
-| NiuTrans/GRAM-Qwen3-4B-RewardModel | ~4 000 M | no disponible | Modelo de recompensa generativo (paper GRAM) | no disponible | HuggingFace |
+| yelarys/qwen3-4b-reward-hacking-caft-adapters | ~4 000 M (base) + LoRA | no disponible | Adaptadores de investigacion sobre *reward hacking* en GRPO | Apache 2.0 | Hugging Face (0 descargas al publicar esta ficha) |
+| Qwen/Qwen3-4B | ~4 000 M | no disponible en esta ficha | Modelo base de proposito general | Apache 2.0 | Hugging Face (modelo base de referencia) |
+| NiuTrans/GRAM-Qwen3-4B-RewardModel | ~4 000 M | no disponible | Modelo de recompensa generativo (paper GRAM) | no disponible | Hugging Face |
 
 Los tres comparten el mismo modelo base (Qwen3-4B) o su tamano, pero persiguen objetivos distintos: proposito general, modelado de recompensa y estudio de *reward hacking*. No se dispone de cifras comparables de rendimiento entre ellos en la informacion proporcionada.
 
@@ -95,10 +95,10 @@ Los tres comparten el mismo modelo base (Qwen3-4B) o su tamano, pero persiguen o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yelarys/qwen3-4b-reward-hacking-caft-adapters
+- Modelo en Hugging Face: https://huggingface.co/yelarys/qwen3-4b-reward-hacking-caft-adapters
 - Modelo base Qwen/Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Paper (OpenReview): Designing Effective Monitor-Based Interventions for Mitigating Reward Hacking: https://openreview.net/forum?id=uFTnN6fUgW
 - ICLR 2026, Mitigating Reward Hacking with RL Training Interventions: https://iclr.cc/virtual/2026/10019340
 - Repositorio oficial de Qwen3 (QwenLM): https://github.com/QwenLM/Qwen3
-- Organizacion RewardHacking en HuggingFace: https://huggingface.co/rewardhack/models
+- Organizacion RewardHacking en Hugging Face: https://huggingface.co/rewardhack/models
 - NiuTrans/GRAM-Qwen3-4B-RewardModel (modelo comparable): https://huggingface.co/NiuTrans/GRAM-Qwen3-4B-RewardModel

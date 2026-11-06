@@ -4,7 +4,7 @@
 
 hb27b_specgap_simple_retrieval_aicr_global_step_60 es un checkpoint de pesos fusionados (bf16 safetensors) publicado por el usuario ddvd233, resultado de un experimento de aprendizaje por refuerzo sobre el modelo base Qwen/Qwen3.6-27B. Se trata de un artefacto de investigación, no de un modelo listo para producción: la propia model card lo describe como la línea base (control) del paper RRIMed, en la que se aplica exactamente la misma receta de RL pero con la recompensa fijada mediante un prompt constante (`fixed prompt`), con el objetivo de medir el efecto de la señal de recompensa frente al entrenamiento real.
 
-El modelo tiene 27.356.728.560 parámetros (~27,36 B) y el repositorio ocupa 54,7 GB, coherente con pesos en bf16. Fue entrenado con verl sobre checkpoints FSDP y posteriormente fusionado a formato HuggingFace. El dominio declarado es médico, mediante tareas escritas por el propio modelo (`model-written tasks`), y la evaluación se limita a una única familia de benchmarks, HealthBench Professional en su métrica de precisión ajustada por longitud.
+El modelo tiene 27.356.728.560 parámetros (~27,36 B) y el repositorio ocupa 54,7 GB, coherente con pesos en bf16. Fue entrenado con verl sobre checkpoints FSDP y posteriormente fusionado a formato Hugging Face. El dominio declarado es médico, mediante tareas escritas por el propio modelo (`model-written tasks`), y la evaluación se limita a una única familia de benchmarks, HealthBench Professional en su métrica de precisión ajustada por longitud.
 
 El resultado principal publicado en la model card es revelador: 0,370 en el paso 60 (el checkpoint disponible), frente a 0,392 en el mejor paso de validación (paso 75, perdido por rotación de checkpoints) y 0,374 del modelo sin entrenar. Es decir, este checkpoint concreto queda por debajo de su propia línea base sin RL, lo que lo convierte en una referencia de control útil para investigar dinámicas de RL, pero no en un modelo de uso clínico ni de propósito general. La model card incluye una advertencia explícita: "Not for clinical use".
 
@@ -12,7 +12,7 @@ El resultado principal publicado en la model card es revelador: 0,370 en el paso
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (heredada del modelo base Qwen/Qwen3.6-27B; etiqueta de arquitectura en HuggingFace: qwen3_5) |
+| Arquitectura | no disponible (heredada del modelo base Qwen/Qwen3.6-27B; etiqueta de arquitectura en Hugging Face: qwen3_5) |
 | Parametros totales | 27.356.728.560 (~27,36 B) |
 | Parametros activos | no aplica (no hay indicios de que sea MoE en la informacion proporcionada) |
 | Longitud de contexto | no disponible |
@@ -24,13 +24,13 @@ El resultado principal publicado en la model card es revelador: 0,370 en el paso
 | Tamano del repositorio | 54,7 GB |
 | Pipeline declarado | reinforcement-learning |
 | Dominio declarado | medical |
-| Framework de entrenamiento | verl (FSDP), fusionado posteriormente a pesos HuggingFace |
+| Framework de entrenamiento | verl (FSDP), fusionado posteriormente a pesos Hugging Face |
 | Fecha de publicacion | 11 de septiembre de 2026 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no detalla la arquitectura interna del modelo; se hereda del modelo base Qwen/Qwen3.6-27B y la etiqueta de HuggingFace lo asocia a la familia `qwen3_5`. El checkpoint se generó entrenando con refuerzo (pipeline `reinforcement-learning`) mediante el framework verl con FSDP, y después se fusionaron los fragmentos (sharding) en un único conjunto de pesos bf16 en safetensors.
+La informacion proporcionada no detalla la arquitectura interna del modelo; se hereda del modelo base Qwen/Qwen3.6-27B y la etiqueta de Hugging Face lo asocia a la familia `qwen3_5`. El checkpoint se generó entrenando con refuerzo (pipeline `reinforcement-learning`) mediante el framework verl con FSDP, y después se fusionaron los fragmentos (sharding) en un único conjunto de pesos bf16 en safetensors.
 
 El experimento se describe como "RRIMed paper baseline: identical RL recipe with the reward held fixed (fixed prompt), 27B, ARM 18". Esto significa que se aplicó la misma receta de RL que en el experimento principal, pero con la recompensa congelada a través de un prompt fijo, lo que en la práctica convierte este entrenamiento en un control para aislar el efecto de la señal de recompensa. El conjunto de entrenamiento está compuesto por tareas escritas por el propio modelo, no por datos clínicos anotados por especialistas. No se documentan en la informacion disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO u otras técnicas de alineamiento adicionales. Tampoco se describen innovaciones técnicas de inferencia (decodificación especulativa, atención lineal, etc.).
 
@@ -52,7 +52,7 @@ El experimento se describe como "RRIMed paper baseline: identical RL recipe with
 - Estudios de rotacion y gestion de checkpoints: el propio autor documenta que el mejor paso (75, con 0,392) se perdió por rotación de checkpoints, lo que hace de este repositorio un caso práctico para diseñar políticas de retención de checkpoints en pipelines de RL.
 - Analisis de dominios especializados bajo RL: permite analizar cómo se comporta un modelo de 27B entrenado con tareas sintéticas de temática médica, comparando con el modelo base en la misma familia de benchmarks.
 - Punto de partida para ablaciones: al ser un control, es un punto de referencia adecuado para experimentos posteriores que modifiquen la función de recompensa, el tamaño del modelo o la composición de las tareas.
-- Evaluacion de pipelines de fusion de pesos FSDP: el repositorio contiene pesos fusionados desde un checkpoint FSDP de verl, por lo que es útil para validar herramientas de conversión y carga de este tipo de artefactos en HuggingFace.
+- Evaluacion de pipelines de fusion de pesos FSDP: el repositorio contiene pesos fusionados desde un checkpoint FSDP de verl, por lo que es útil para validar herramientas de conversión y carga de este tipo de artefactos en Hugging Face.
 - Uso educativo y metodologico: documenta un caso real en el que un paso intermedio de RL rinde por debajo del modelo sin entrenar, útil para ilustrar la varianza entre pasos y la necesidad de selección por validación.
 
 ## Benchmarks y rendimiento
@@ -82,8 +82,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Rendimiento (HealthBench Professional, ajustado por longitud) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ddvd233/hb27b_specgap_simple_retrieval_aicr_global_step_60 | ~27,36 B | no disponible | 0,370 (paso 60) | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-27B (modelo base, sin entrenar) | ~27 B (no confirmado en la informacion disponible) | no disponible | 0,374 | no disponible en la informacion proporcionada | HuggingFace |
+| ddvd233/hb27b_specgap_simple_retrieval_aicr_global_step_60 | ~27,36 B | no disponible | 0,370 (paso 60) | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-27B (modelo base, sin entrenar) | ~27 B (no confirmado en la informacion disponible) | no disponible | 0,374 | no disponible en la informacion proporcionada | Hugging Face |
 | Otras variantes del mismo experimento RRIMed | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de modelos alternativos de tamano similar (por ejemplo, otras familias abiertas de 27-32B) en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa más amplia.
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks de modelos alternativos de tamano similar (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ddvd233/hb27b_specgap_simple_retrieval_aicr_global_step_60
+- Modelo en Hugging Face: https://huggingface.co/ddvd233/hb27b_specgap_simple_retrieval_aicr_global_step_60
 - Modelo base Qwen/Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
 - Paper RRIMed: no disponible (referenciado en la model card sin enlace)
 - Repositorio de codigo: no disponible

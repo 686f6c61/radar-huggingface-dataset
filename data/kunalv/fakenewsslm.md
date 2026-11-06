@@ -2,9 +2,9 @@
 
 ## Resumen
 
-FakeNewsSLM es un modelo publicado en HuggingFace por el usuario Kunalv bajo licencia Apache 2.0. Por sus etiquetas y su tamano de pesos, se trata de un transformer de tipo encoder basado en la familia RoBERTa, con 124.647.170 parametros reales almacenados en formato safetensors, lo que lo situa en la misma escala que roberta-base. El repositorio ocupa 0,5 GB, coherente con pesos en precision FP32.
+FakeNewsSLM es un modelo publicado en Hugging Face por el usuario Kunalv bajo licencia Apache 2.0. Por sus etiquetas y su tamano de pesos, se trata de un transformer de tipo encoder basado en la familia RoBERTa, con 124.647.170 parametros reales almacenados en formato safetensors, lo que lo situa en la misma escala que roberta-base. El repositorio ocupa 0,5 GB, coherente con pesos en precision FP32.
 
-El nombre del modelo sugiere un uso orientado a la deteccion de noticias falsas o desinformacion, aunque la model card publicada no contiene mas que la declaracion de licencia, sin descripcion de tarea, dataset de entrenamiento ni metricas. El pipeline declarado en HuggingFace esta marcado como no disponible, de modo que su proposito funcional no puede confirmarse a partir de la documentacion oficial.
+El nombre del modelo sugiere un uso orientado a la deteccion de noticias falsas o desinformacion, aunque la model card publicada no contiene mas que la declaracion de licencia, sin descripcion de tarea, dataset de entrenamiento ni metricas. El pipeline declarado en Hugging Face esta marcado como no disponible, de modo que su proposito funcional no puede confirmarse a partir de la documentacion oficial.
 
 Su relevancia practica es limitada en el estado actual: acumula 0 descargas y 0 likes, no cuenta con resultados de evaluacion publicados y no especifica idiomas soportados. Aun asi, su tamano compacto (125 M de parametros) lo hace apto para inferencia en CPU o GPU de consumo si el modelo resulta ser un clasificador funcional, y su licencia permisiva facilita reutilizacion comercial y ajuste fino posterior.
 
@@ -21,7 +21,7 @@ Su relevancia practica es limitada en el estado actual: acumula 0 descargas y 0 
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 0,5 GB |
-| Fecha de publicacion | 2026-09-23 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-23 (segun metadatos de Hugging Face) |
 | Ultima actualizacion | 2026-09-23 |
 
 ## Arquitectura y entrenamiento
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; por ejemplo, GTX 1650, RTX 3060, RTX 4090, A100 o H100. El modelo no requiere aceleradores de gama alta.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo actual e incluso en iGPU con memoria compartida.
 - Ejecucion en CPU: viable para inferencia individual o por lotes pequenos, dado el bajo numero de parametros.
-- Opciones de despliegue: al ser un modelo de tipo encoder en safetensors, es compatible con HuggingFace Transformers, Optimum, TorchScript y ONNX Runtime. vLLM, llama.cpp, Ollama y TGI estan orientados a modelos generativos y no aplican a esta arquitectura salvo adaptacion especifica.
+- Opciones de despliegue: al ser un modelo de tipo encoder en safetensors, es compatible con Hugging Face Transformers, Optimum, TorchScript y ONNX Runtime. vLLM, llama.cpp, Ollama y TGI estan orientados a modelos generativos y no aplican a esta arquitectura salvo adaptacion especifica.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ La comparacion se establece con encoders de tamano equivalente, dado que no hay 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Kunalv/FakeNewsSLM | 124,6 M | no disponible | Apache 2.0 | HuggingFace, 0 descargas | no disponible |
+| Kunalv/FakeNewsSLM | 124,6 M | no disponible | Apache 2.0 | Hugging Face, 0 descargas | no disponible |
 | roberta-base | 125 M | 512 tokens | MIT | Ampliamente disponible | GLUE completo, resultados publicos |
 | bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | Ampliamente disponible | GLUE completo, resultados publicos |
 | distilroberta-base | 82 M | 512 tokens | Apache 2.0 | Ampliamente disponible | GLUE completo, resultados publicos |
@@ -92,7 +92,7 @@ Los tres modelos de referencia cuentan con documentacion detallada, evaluaciones
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kunalv/FakeNewsSLM
+- Modelo en Hugging Face: https://huggingface.co/Kunalv/FakeNewsSLM
 - Model card: https://huggingface.co/Kunalv/FakeNewsSLM/blob/main/README.md
 - Repositorio roberta-base (referencia arquitectonica): https://huggingface.co/roberta-base
 - Repositorio bert-base-uncased (alternativa comparable): https://huggingface.co/google-bert/bert-base-uncased

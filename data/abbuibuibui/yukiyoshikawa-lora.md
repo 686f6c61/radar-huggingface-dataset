@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YukiYoshikawa-Lora es un LoRA de personaje para modelos de difusión SDXL, concretamente entrenado sobre el checkpoint waiIllustriousSDXL v17, que representa a Yuki Yoshikawa, personaje de la serie *Horimiya*. Lo desarrolla el usuario abbuibuibui y se distribuye a través de HuggingFace bajo licencia CreativeML OpenRAIL-M. No es un modelo de lenguaje ni un modelo fundacional: es un adaptador de bajo rango (LoRA) que modifica el comportamiento de un modelo base SDXL para generar de forma consistente a este personaje concreto.
+YukiYoshikawa-Lora es un LoRA de personaje para modelos de difusión SDXL, concretamente entrenado sobre el checkpoint waiIllustriousSDXL v17, que representa a Yuki Yoshikawa, personaje de la serie *Horimiya*. Lo desarrolla el usuario abbuibuibui y se distribuye a través de Hugging Face bajo licencia CreativeML OpenRAIL-M. No es un modelo de lenguaje ni un modelo fundacional: es un adaptador de bajo rango (LoRA) que modifica el comportamiento de un modelo base SDXL para generar de forma consistente a este personaje concreto.
 
 El repositorio incluye siete pesos correspondientes a las épocas E1 a E7 del entrenamiento, con E6 (`yuki_yoshikawa-000006.safetensors`) recomendado como opción por defecto a fuerza 0.8. Cada archivo pesa 456.494.196 bytes (unos 456 MB), y el repositorio completo ocupa 3,2 GB. El modelo está pensado para flujos de generación de imagen con ComfyUI o la librería diffusers, y su utilidad es la de fijar la identidad visual del personaje (pelo rubio ondulado largo, ojos marrones) y varios conjuntos de ropa mediante tokens de activación.
 
@@ -76,7 +76,7 @@ No disponible. La información proporcionada no incluye otros LoRA de personaje 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abbuibuibui/YukiYoshikawa-Lora
+- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/YukiYoshikawa-Lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/abbuibuibui/YukiYoshikawa-Dataset
 - Notas de evaluación en chino: `evaluation/横向测评记录.md` (dentro del repositorio)
 - README en chino: `README_zh.md` (dentro del repositorio)

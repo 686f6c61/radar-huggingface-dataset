@@ -74,11 +74,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Entrenamiento de una sola epoca: el checkpoint final (paso 640) puede no estar totalmente convergido; el mejor checkpoint (paso 550) se selecciono por validacion en MathVista-150.
 - Contexto limitado a 8k tokens: ventana corta para tareas que requieran razonamiento largo, documentos extensos o interacciones multi-turno prolongadas.
 - Idiomas no especificados: no se garantiza cobertura multilingue, aunque Qwen2.5-VL suele soportar principalmente ingles y chino.
-- Modelo de investigacion: tiene 0 descargas y 0 likes en HuggingFace, sin documentacion de despliegue ni instrucciones de uso claras.
+- Modelo de investigacion: tiene 0 descargas y 0 likes en Hugging Face, sin documentacion de despliegue ni instrucciones de uso claras.
 - Sin soporte documentado de tool calling, function calling, agentes o vision en tiempo real.
 - El repositorio pesa 15.0 GB para un modelo de 3B, lo que indica que contiene multiples checkpoints; se debe seleccionar el directorio adecuado (`best/` o `endpoint/`) segun el caso de uso.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-3b-x-gemma3-4b-open-r1-mmupt-groupA-qwen25vl-3b-full
-- Perfil del autor en HuggingFace: https://huggingface.co/logan7000/models
+- Hugging Face: https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-3b-x-gemma3-4b-open-r1-mmupt-groupA-qwen25vl-3b-full
+- Perfil del autor en Hugging Face: https://huggingface.co/logan7000/models

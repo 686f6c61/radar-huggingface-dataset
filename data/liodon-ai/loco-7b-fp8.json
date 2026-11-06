@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/LoCo-7B-FP8",
+  "slug": "liodon-ai-loco-7b-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/LoCo-7B-FP8",
+  "created_at": "2026-11-04T12:47:52.000Z",
+  "updated_at": "2026-11-04T14:40:10.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "base_model:MuyaoYuan/LoCo-7B",
+    "base_model:quantized:MuyaoYuan/LoCo-7B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 8720211310,
+  "storage_human": "8.7 GB",
+  "base_model": "MuyaoYuan/LoCo-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liodon-ai/LoCo-7B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/LoCo-7B-FP8",
+      "snippet": "Instructions to use liodon-ai/LoCo-7B-FP8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use liodon-ai/LoCo-7B-FP8 with Transformers:"
+    },
+    {
+      "title": "LoCo-7B-FP8 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/liodon-ai/LoCo-7B-FP8",
+      "snippet": "Deploy LoCo-7B-FP8 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

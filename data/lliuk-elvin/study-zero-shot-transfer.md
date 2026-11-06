@@ -72,7 +72,7 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lliuk-elvin/study-zero-shot-transfer
+- Repositorio en Hugging Face: https://huggingface.co/Lliuk-elvin/study-zero-shot-transfer
 - Referencia sobre transferencia cross-lingüística en instruction tuning: https://arxiv.org/abs/2402.14778
 - DRED: transferencia a cero disparos en aprendizaje por refuerzo: https://arxiv.org/abs/2402.03479
 - Guía sobre few-shot, zero-shot y transfer learning (Ultralytics): https://www.ultralytics.com/blog/understanding-few-shot-zero-shot-and-transfer-learning

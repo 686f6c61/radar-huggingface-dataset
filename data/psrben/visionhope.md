@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VisionHOPE es una familia de backbones de vision por computador presentada por el autor PSRben bajo el titulo "VisionHOPE: Visual Backbones as Self-Modifying Learning Systems". No es un modelo de lenguaje: se trata de una arquitectura de vision genérica pensada para servir como extractor de caracteristicas en tareas de clasificacion, deteccion, segmentacion de instancias y segmentacion semantica. El repositorio de HuggingFace publica los pesos preentrenados oficiales en tres escalas (VisionHOPE-T, VisionHOPE-S y VisionHOPE-B) junto con las cabezas ajustadas para cada tarea.
+VisionHOPE es una familia de backbones de vision por computador presentada por el autor PSRben bajo el titulo "VisionHOPE: Visual Backbones as Self-Modifying Learning Systems". No es un modelo de lenguaje: se trata de una arquitectura de vision genérica pensada para servir como extractor de caracteristicas en tareas de clasificacion, deteccion, segmentacion de instancias y segmentacion semantica. El repositorio de Hugging Face publica los pesos preentrenados oficiales en tres escalas (VisionHOPE-T, VisionHOPE-S y VisionHOPE-B) junto con las cabezas ajustadas para cada tarea.
 
 La propuesta tecnica, segun el resumen del paper, consiste en formular el backbone como un "sistema de aprendizaje auto-modificable", en el que aquello que el modelo memoriza y la forma en que aprende coevolucionan dentro de una misma imagen. El autor lo presenta como el primer backbone visual genérico formulado bajo ese principio. La informacion disponible no detalla la implementacion interna ni los datos exactos de entrenamiento.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Categoria | Tareas cubiertas | Licencia | Disponibilidad de pesos | Parametros |
 |---|---|---|---|---|---|
-| VisionHOPE (T/S/B) | Backbone de vision | Clasificacion, deteccion, instancias, semantica | MIT | HuggingFace, tres escalas | no disponible |
+| VisionHOPE (T/S/B) | Backbone de vision | Clasificacion, deteccion, instancias, semantica | MIT | Hugging Face, tres escalas | no disponible |
 | Swin Transformer (T/S/B) | Backbone de vision con atencion por ventanas | Clasificacion, deteccion, segmentacion | MIT en la implementacion oficial | Puntos de control publicos y ampliamente integrados | aproximadamente 28 M (T) y 88 M (B) segun la publicacion original |
 | DeiT (S/B) | Transformer de vision para clasificacion | Clasificacion principalmente | Apache 2.0 | Pesos publicos | aproximadamente 22 M (S) y 86 M (B) segun la publicacion original |
 | ConvNeXt (T/S/B) | Red convolucional moderna | Clasificacion, deteccion, segmentacion | MIT | Pesos publicos | aproximadamente 28 M (T) y 89 M (B) segun la publicacion original |
@@ -81,14 +81,14 @@ Las cifras de parametros de las alternativas proceden de sus publicaciones origi
 - Riesgo de alucinacion: en sentido estricto no aplica, pero si existe riesgo de falsos positivos y mascaras erroneas con alta confianza en dominios alejados de la distribucion de entrenamiento.
 - Limitaciones de contexto o idioma: no aplica al texto. La resolucion de entrada soportada y el comportamiento ante imagenes fuera de distribucion no estan documentados.
 - Licencia: los pesos se publican bajo MIT, lo que permite uso comercial. Sin embargo, los checkpoints derivan de ImageNet, COCO y ADE20K, cuyos terminos de uso originales pueden imponer restricciones adicionales segun el caso; conviene revisarlos antes de un despliegue comercial.
-- Madurez del proyecto: el repositorio de GitHub indica que el codigo se publicara proximamente, y el repositorio de HuggingFace registra 0 descargas. Esto sugiere un proyecto en fase inicial, con menor soporte comunitario e integraciones limitadas.
+- Madurez del proyecto: el repositorio de GitHub indica que el codigo se publicara proximamente, y el repositorio de Hugging Face registra 0 descargas. Esto sugiere un proyecto en fase inicial, con menor soporte comunitario e integraciones limitadas.
 - Fecha de publicacion reciente (septiembre de 2026 segun los metadatos): la reproducibilidad independiente es practicamente nula en el momento de redactar esta ficha.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PSRben/VisionHOPE
-- Arbol de archivos en HuggingFace: https://huggingface.co/PSRben/VisionHOPE/tree/main
+- Repositorio en Hugging Face: https://huggingface.co/PSRben/VisionHOPE
+- Arbol de archivos en Hugging Face: https://huggingface.co/PSRben/VisionHOPE/tree/main
 - Paper en arXiv: https://arxiv.org/abs/2609.33325
 - Repositorio de codigo en GitHub: https://github.com/PSRben/VisionHOPE
 - Definiciones de modelo (models/common.py): https://github.com/PSRben/VisionHOPE/blob/main/models/common.py
-- Guia de la CLI de HuggingFace: https://huggingface.co/docs/huggingface_hub/guides/cli
+- Guia de la CLI de Hugging Face: https://huggingface.co/docs/huggingface_hub/guides/cli

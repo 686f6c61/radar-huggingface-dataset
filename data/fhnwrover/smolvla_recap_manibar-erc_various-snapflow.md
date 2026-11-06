@@ -79,7 +79,7 @@ SmolVLA se posiciona como una alternativa ligera frente a OpenVLA (7B) y RT-2 (5
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fhnwrover/smolvla_recap_manibar-erc_various-snapflow
+- Repositorio Hugging Face: https://huggingface.co/fhnwrover/smolvla_recap_manibar-erc_various-snapflow
 - Documentación de SmolVLA en LeRobot: https://huggingface.co/docs/lerobot/smolvla
 - Paper de SmolVLA (arXiv): https://arxiv.org/abs/2506.01844
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

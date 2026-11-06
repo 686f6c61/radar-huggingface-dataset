@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/nld-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/nld_latn_10mb`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros (aproximadamente 39 millones) y un peso en disco de 0,1 GB, lo que lo situa en la categoria de modelos pequenos y ligeros, ejecutables incluso en CPU.
+El modelo `francesca9805/nld-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/nld_latn_10mb`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros (aproximadamente 39 millones) y un peso en disco de 0,1 GB, lo que lo situa en la categoria de modelos pequenos y ligeros, ejecutables incluso en CPU.
 
 El entrenamiento se ha realizado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.5.1+cu121, empleando el pipeline de SFT supervisado. El nombre del repositorio sugiere un experimento sobre tokenizadores y empaquetado de datos (las siglas "ppt", "Dp-10mb-packed" y "bfd_seed10" apuntan a una configuracion concreta de dataset y semilla), en linea con la run de Weights & Biases enlazada en la model card, asociada al proyecto "new-tokenizers" de la Universidad de Groningen.
 
@@ -51,7 +51,7 @@ Dado el tamano (39 M de parametros) y la ausencia de datos de evaluacion, no es 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MMLU, HumanEval, GSM8K, perplejidad ni ninguna otra evaluacion, y la informacion de HuggingFace no aporta cifras adicionales.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MMLU, HumanEval, GSM8K, perplejidad ni ninguna otra evaluacion, y la informacion de Hugging Face no aporta cifras adicionales.
 
 ## Requisitos de hardware
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/nld-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10 | 39.087.104 | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
-| goldfish-models/nld_latn_10mb (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | HuggingFace |
-| GPT-2 small (referencia de arquitectura) | 124.000.000 | 1024 tokens (segun la implementacion original) | ampliamente evaluado en la literatura | MIT (segun la publicacion original) | HuggingFace, ampliamente replicado |
-| DistilGPT-2 | 82.000.000 | 1024 tokens (segun la implementacion original) | evaluado en la literatura | Apache 2.0 / MIT segun distribucion | HuggingFace |
+| francesca9805/nld-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10 | 39.087.104 | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
+| goldfish-models/nld_latn_10mb (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Hugging Face |
+| GPT-2 small (referencia de arquitectura) | 124.000.000 | 1024 tokens (segun la implementacion original) | ampliamente evaluado en la literatura | MIT (segun la publicacion original) | Hugging Face, ampliamente replicado |
+| DistilGPT-2 | 82.000.000 | 1024 tokens (segun la implementacion original) | evaluado en la literatura | Apache 2.0 / MIT segun distribucion | Hugging Face |
 
 Nota: los datos de GPT-2 small y DistilGPT-2 corresponden a especificaciones publicas de esos modelos, no a mediciones realizadas sobre el modelo descrito. No se dispone de comparativas de rendimiento con alternativas de la misma categoria y mismo idioma.
 
@@ -88,7 +88,7 @@ Nota: los datos de GPT-2 small y DistilGPT-2 corresponden a especificaciones pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_10mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/5z8g0o4t
 - Repositorio de TRL: https://github.com/huggingface/trl

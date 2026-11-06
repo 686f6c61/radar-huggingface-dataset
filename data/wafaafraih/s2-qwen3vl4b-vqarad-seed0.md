@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `s2-qwen3vl4b-vqarad-seed0` es un ajuste fino del modelo multimodal `unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit`, publicado por el usuario WafaaFraih en HuggingFace. Se trata, por tanto, de un derivado de la familia Qwen3-VL en su variante de 4 000 millones de parametros, orientada a tareas de vision-lenguaje (comprension de imagenes y generacion de texto), que ha sido entrenada mediante GRPO (Group Relative Policy Optimization), la tecnica de aprendizaje por refuerzo presentada en el articulo DeepSeekMath, utilizando la libreria TRL de HuggingFace.
+El modelo `s2-qwen3vl4b-vqarad-seed0` es un ajuste fino del modelo multimodal `unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit`, publicado por el usuario WafaaFraih en Hugging Face. Se trata, por tanto, de un derivado de la familia Qwen3-VL en su variante de 4 000 millones de parametros, orientada a tareas de vision-lenguaje (comprension de imagenes y generacion de texto), que ha sido entrenada mediante GRPO (Group Relative Policy Optimization), la tecnica de aprendizaje por refuerzo presentada en el articulo DeepSeekMath, utilizando la libreria TRL de Hugging Face.
 
 El nombre del repositorio incluye las siglas `vqarad` y `seed0`, lo que sugiere que el ajuste se ha realizado sobre el conjunto de datos VQA-RAD (preguntas y respuestas visuales sobre imagenes radiologicas) con una semilla concreta. Esta interpretacion es una inferencia a partir del identificador y no aparece confirmada de forma explicita en la model card publicada.
 
@@ -73,7 +73,7 @@ Las cifras siguientes son estimaciones de ingenieria derivadas del tamano del mo
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | s2-qwen3vl4b-vqarad-seed0 | ~4B (denso) | No disponible | GRPO sobre base cuantizado en 4 bits | No disponible | Repositorio publico, 0 descargas |
-| unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit (modelo base) | ~4B (denso) | No disponible en la informacion proporcionada | Ajuste instruct previo del Qwen3-VL-4B original, cuantizado en 4 bits | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit (modelo base) | ~4B (denso) | No disponible en la informacion proporcionada | Ajuste instruct previo del Qwen3-VL-4B original, cuantizado en 4 bits | No disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otros modelos de VQA medica de tamano comparable | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento de este ajuste ni de su modelo base en la informacion proporcionada, por lo que la comparacion se limita a caracteristicas estructurales.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento de este ajuste ni de su modelo base en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WafaaFraih/s2-qwen3vl4b-vqarad-seed0
+- Modelo en Hugging Face: https://huggingface.co/WafaaFraih/s2-qwen3vl4b-vqarad-seed0
 - Modelo base: https://huggingface.co/unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Articulo de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300

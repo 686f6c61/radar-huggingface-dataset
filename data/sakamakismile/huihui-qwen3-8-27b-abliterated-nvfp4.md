@@ -95,6 +95,6 @@ Se recomienda consultar el repositorio del modelo base para alternativas de cuan
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/sakamakismile/Huihui-Qwen3.8-27B-abliterated-NVFP4
+- Repositorio Hugging Face del modelo: https://huggingface.co/sakamakismile/Huihui-Qwen3.8-27B-abliterated-NVFP4
 - Modelo base (fine-tune abliterado): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Herramientas relacionadas: vLLM (https://github.com/vllm-project/vllm), llm-compressor (https://github.com/vllm-project/llm-compressor), dataset de calibración neuralmagic/calibration (https://huggingface.co/datasets/neuralmagic/calibration)

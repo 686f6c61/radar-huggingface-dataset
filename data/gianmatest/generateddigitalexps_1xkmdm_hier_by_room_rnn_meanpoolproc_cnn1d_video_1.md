@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`generatedDigitalExps_1xKmdM_hier_by_room_rnn_meanPoolProc_cnn1d_video_1` es un checkpoint de PyTorch de 1.839.360 parámetros (aproximadamente 1,84 M) publicado por el usuario `gianmaTest` en HuggingFace. No es un modelo de lenguaje: por el identificador y por el tamaño se trata de un modelo pequeño y específico de tarea, presumiblemente integrado en un pipeline de investigación sobre "experimentos digitales" a partir de vídeo. El sufijo del nombre sugiere una arquitectura jerárquica organizada "por sala" (`hier_by_room`), con una capa recurrente (`rnn`), un procesado de pooling medio (`meanPoolProc`) y un extractor convolucional 1D para la rama de vídeo (`cnn1d_video`), aunque el autor no documenta nada de esto.
+`generatedDigitalExps_1xKmdM_hier_by_room_rnn_meanPoolProc_cnn1d_video_1` es un checkpoint de PyTorch de 1.839.360 parámetros (aproximadamente 1,84 M) publicado por el usuario `gianmaTest` en Hugging Face. No es un modelo de lenguaje: por el identificador y por el tamaño se trata de un modelo pequeño y específico de tarea, presumiblemente integrado en un pipeline de investigación sobre "experimentos digitales" a partir de vídeo. El sufijo del nombre sugiere una arquitectura jerárquica organizada "por sala" (`hier_by_room`), con una capa recurrente (`rnn`), un procesado de pooling medio (`meanPoolProc`) y un extractor convolucional 1D para la rama de vídeo (`cnn1d_video`), aunque el autor no documenta nada de esto.
 
 La relevancia del modelo es muy limitada fuera de su contexto original. Se publicó el 25 de octubre de 2026 mediante la integración `PyTorchModelHubMixin`, con una model card generada automáticamente en la que el autor deja sin cubrir los campos de código, paper y documentación ("More Information Needed"). Acumula 0 descargas y 0 likes, y no tiene pipeline, licencia ni idiomas declarados.
 
@@ -71,7 +71,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `generatedDigitalExps_1xKmdM_..._video_1` | 1,84 M | No aplica | No disponible | Publico en HuggingFace, 0 descargas |
+| `generatedDigitalExps_1xKmdM_..._video_1` | 1,84 M | No aplica | No disponible | Publico en Hugging Face, 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKmdM_hier_by_room_rnn_meanPoolProc_cnn1d_video_1
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKmdM_hier_by_room_rnn_meanPoolProc_cnn1d_video_1
 - Documentacion de `PyTorchModelHubMixin` citada en la model card: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Codigo, paper y documentacion del autor: no disponibles (la model card los marca como "More Information Needed")
 - Demos: no disponibles

@@ -78,11 +78,11 @@ La comparativa se basa en modelos VLM de tamano similar. La principal ventaja de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/glm-4.6v-flash
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/glm-4.6v-flash
 - Modelo original: https://huggingface.co/zai-org/GLM-4.6V-Flash
 - Paper: https://arxiv.org/abs/2507.01006
 - Documentacion de Z.AI sobre GLM-4.6V: https://docs.z.ai/guides/vlm/glm-4.6v
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentacion de KerasFormers para GLM: https://imvision12.github.io/KerasFormers/glm4v/
-- Coleccion de modelos GLM en HuggingFace: https://huggingface.co/collections/kerasformers/glm-6a83b575b7af91f0daac58ee
+- Coleccion de modelos GLM en Hugging Face: https://huggingface.co/collections/kerasformers/glm-6a83b575b7af91f0daac58ee
 - Ficha en LM Studio: https://lmstudio.ai/models/glm-4.6v-flash

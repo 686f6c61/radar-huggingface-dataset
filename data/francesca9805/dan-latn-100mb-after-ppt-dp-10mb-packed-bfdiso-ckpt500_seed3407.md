@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dan-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino supervisado (SFT) del modelo base `francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407`, publicado por el usuario de HuggingFace `francesca9805`. Segun la informacion de la model card, el entrenamiento se realizo con la libreria TRL en su version 0.23.0, sobre la pila de Transformers 4.56.2, PyTorch 2.11.0 y Datasets 4.8.4. El identificador del run de Weights & Biases apunta al proyecto `new-tokenizers` de la Universidad de Groningen, lo que situa el trabajo en un contexto de investigacion academica sobre tokenizacion y modelos de lenguaje de bajo recurso.
+El modelo `dan-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino supervisado (SFT) del modelo base `francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407`, publicado por el usuario de Hugging Face `francesca9805`. Segun la informacion de la model card, el entrenamiento se realizo con la libreria TRL en su version 0.23.0, sobre la pila de Transformers 4.56.2, PyTorch 2.11.0 y Datasets 4.8.4. El identificador del run de Weights & Biases apunta al proyecto `new-tokenizers` de la Universidad de Groningen, lo que situa el trabajo en un contexto de investigacion academica sobre tokenizacion y modelos de lenguaje de bajo recurso.
 
 Se trata de un modelo de generacion de texto con arquitectura tipo GPT-2 (etiqueta `gpt2` en los metadatos) y 124.770.816 parametros totales, confirmados por el peso en `safetensors`. Es, por tanto, un modelo de escala pequena, en la linea de GPT-2 small, y el sufijo del nombre sugiere un entrenamiento sobre un corpus de aproximadamente 100 MB con empaquetado (*packing*) de secuencias a 10 MB por bloque y una verificacion intermedia en el checkpoint 500, con semilla 3407.
 
@@ -38,7 +38,7 @@ El tamano del repositorio (6,0 GB) es desproporcionado para un modelo de 125 mil
 
 - Generacion de texto autoregresiva mediante la tarea `text-generation` de Transformers.
 - Uso directo con la clase `pipeline` de la libreria transformers, con soporte para entrada en formato de mensajes con rol `user`.
-- Compatibilidad declarada con text-generation-inference y con endpoints compatibles de HuggingFace.
+- Compatibilidad declarada con text-generation-inference y con endpoints compatibles de Hugging Face.
 - Ajuste fino supervisado sobre un modelo base propio, lo que permite reproducir o continuar el entrenamiento con TRL.
 - No se declara soporte de tool calling ni function calling.
 - No se declara soporte de agentes ni de razonamiento multi-paso.
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: menos de 1 GB en fp16, y en torno a 1-2 GB contando el cache de activaciones con lotes pequenos.
 - Cabe con holgura en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en CPU con latencias aceptables para uso interactivo.
 - GPU de centro de datos (A100, H100) no necesarias; solo tendrian sentido para entrenamiento a gran escala o para servir muchas peticiones concurrentes.
-- Opciones de despliegue: transformers (`pipeline`), text-generation-inference, endpoints compatibles de HuggingFace. La conversion a GGUF para llama.cpp u Ollama no se declara, pero es tecnicamente viable al ser un modelo GPT-2.
+- Opciones de despliegue: transformers (`pipeline`), text-generation-inference, endpoints compatibles de Hugging Face. La conversion a GGUF para llama.cpp u Ollama no se declara, pero es tecnicamente viable al ser un modelo GPT-2.
 - Latencia y throughput: no disponibles. No se aportan mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de resultados de evaluacion de este modelo que permitan una compar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dan-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407 | 124,77 M | no disponible | no disponible | HuggingFace (0 descargas) |
+| dan-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407 | 124,77 M | no disponible | no disponible | Hugging Face (0 descargas) |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT (publicado por OpenAI) | Ampliamente disponible |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible |
 | GPT-2 medium | 355 M | 1024 tokens | MIT | Ampliamente disponible |
@@ -95,7 +95,7 @@ La comparacion se limita a la escala de parametros y a la arquitectura, ya que n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/dan-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/dan-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/rybvp12g
 - Repositorio de TRL: https://github.com/huggingface/trl

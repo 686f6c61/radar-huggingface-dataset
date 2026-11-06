@@ -72,9 +72,9 @@ El autor senala que el error estandar del EM en XQuAD-tr con n=1.190 es de aprox
 
 | Modelo | Parametros | Tipo | Contexto | EM XQuAD-tr | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.5-2B + este LoRA | ~1,88 mil millones (parte de texto) | Adaptador generativo | No disponible | 48,49 | CC-BY-SA 4.0 | HuggingFace |
+| Qwen3.5-2B + este LoRA | ~1,88 mil millones (parte de texto) | Adaptador generativo | No disponible | 48,49 | CC-BY-SA 4.0 | Hugging Face |
 | BERTurk ajustado con todo el dataset | ~0,11 mil millones | Encoder extractivo | No disponible | 43,11 | No disponible en la informacion | Referencia en la model card |
-| savasy/bert-base-turkish-squad (TQuAD) | ~0,11 mil millones | Encoder extractivo | No disponible | 45,38 | No disponible en la informacion | HuggingFace |
+| savasy/bert-base-turkish-squad (TQuAD) | ~0,11 mil millones | Encoder extractivo | No disponible | 45,38 | No disponible en la informacion | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -89,6 +89,6 @@ El autor senala que el error estandar del EM en XQuAD-tr con n=1.190 es de aprox
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aykanugur157/qwen3.5-2b-tr-wiki-qa-lora
+- Modelo en Hugging Face: https://huggingface.co/Aykanugur157/qwen3.5-2b-tr-wiki-qa-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Aykanugur157/tr-wiki-qa

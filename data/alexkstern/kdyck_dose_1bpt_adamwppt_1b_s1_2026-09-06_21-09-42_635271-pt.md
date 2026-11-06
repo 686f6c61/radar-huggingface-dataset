@@ -48,7 +48,7 @@ No se han publicado requisitos de hardware para inferencia. El checkpoint se dis
 
 ## Comparativa con modelos similares
 
-No disponible. No se han publicado comparativas con otros modelos de la misma categoría. El autor tiene otros checkpoints relacionados en HuggingFace (`kdyck_dose_1Bpt_500M_s1` y `kdyck_dose_1Bpt_200M_s1`), pero no se han documentado resultados que permitan una comparación técnica.
+No disponible. No se han publicado comparativas con otros modelos de la misma categoría. El autor tiene otros checkpoints relacionados en Hugging Face (`kdyck_dose_1Bpt_500M_s1` y `kdyck_dose_1Bpt_200M_s1`), pero no se han documentado resultados que permitan una comparación técnica.
 
 ## Limitaciones y advertencias
 
@@ -60,7 +60,7 @@ No disponible. No se han publicado comparativas con otros modelos de la misma ca
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_1Bpt_adamwppt_1B_s1_2026-09-06_21-09-42_635271-pt
+- Repositorio en Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_1Bpt_adamwppt_1B_s1_2026-09-06_21-09-42_635271-pt
 - Checkpoint relacionado (500M): https://huggingface.co/alexkstern/kdyck_dose_1Bpt_500M_s1_2026-08-14_07-56-59_923172-pt
 - Checkpoint relacionado (200M): https://huggingface.co/alexkstern/kdyck_dose_1Bpt_200M_s1_2026-08-14_07-06-05_872207-pt
 - Proyecto nanochat: https://github.com/karpathy/nanochat

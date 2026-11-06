@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `shortylow1358/samtotallyspies` es un modelo de generación de imágenes de IA, aparentemente orientado a producir arte del personaje Sam de la serie animada "Totally Spies". Fue publicado en HuggingFace por el usuario `shortylow1358` con licencia OpenRAIL, aunque la model card está vacía y no se proporciona ninguna documentación técnica. El repositorio ocupa 0,1 GB, lo que sugiere un modelo de tamaño reducido, probablemente un LoRA o un checkpoint de difusión ajustado para un personaje concreto. Los resultados de búsqueda externa lo vinculan con plataformas como ModelsLab, PixAI y SeaArt, donde se ofrece como modelo de texto a imagen para crear ilustraciones anime o cartoon del personaje. Su relevancia actual es limitada, dado que no hay descargas ni interacciones en HuggingFace, y carece de especificaciones públicas que permitan evaluarlo técnicamente.
+El modelo `shortylow1358/samtotallyspies` es un modelo de generación de imágenes de IA, aparentemente orientado a producir arte del personaje Sam de la serie animada "Totally Spies". Fue publicado en Hugging Face por el usuario `shortylow1358` con licencia OpenRAIL, aunque la model card está vacía y no se proporciona ninguna documentación técnica. El repositorio ocupa 0,1 GB, lo que sugiere un modelo de tamaño reducido, probablemente un LoRA o un checkpoint de difusión ajustado para un personaje concreto. Los resultados de búsqueda externa lo vinculan con plataformas como ModelsLab, PixAI y SeaArt, donde se ofrece como modelo de texto a imagen para crear ilustraciones anime o cartoon del personaje. Su relevancia actual es limitada, dado que no hay descargas ni interacciones en Hugging Face, y carece de especificaciones públicas que permitan evaluarlo técnicamente.
 
 ## Especificaciones técnicas
 
@@ -62,7 +62,7 @@ No disponible. No se ha encontrado información sobre modelos comparables en la 
 
 ## Enlaces
 
-- [HuggingFace - shortylow1358/samtotallyspies](https://huggingface.co/shortylow1358/samtotallyspies)
+- [Hugging Face - shortylow1358/samtotallyspies](https://huggingface.co/shortylow1358/samtotallyspies)
 - [ModelsLab - Totally Spies Sam API](https://modelslab.com/models/modelslab/totally-spies-sam)
 - [PixAI - Sam - Totally Spies](https://pixai.art/en/model/1675135194758696690)
 - [PixAI - Sam (Totally Spies)](https://pixai.art/en/model/1726090994798000481)

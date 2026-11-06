@@ -90,8 +90,8 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mincofficial/Minico-M1-1105-ONNX
-- Modelo base en HuggingFace: https://huggingface.co/Mincofficial/Minico-M1-1105
+- Repositorio Hugging Face: https://huggingface.co/Mincofficial/Minico-M1-1105-ONNX
+- Modelo base en Hugging Face: https://huggingface.co/Mincofficial/Minico-M1-1105
 - Demo en navegador: https://minico.mincoffical.codes/try/
 - Modelo original de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Exportación ONNX oficial de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-350M-ONNX

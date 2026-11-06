@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Vimoo-1.0 T2V / I2V | ~11,7B por modelo | Generación de vídeo T2V e I2V | Apache 2.0 | Pesos en HuggingFace, nodos ComfyUI |
+| Vimoo-1.0 T2V / I2V | ~11,7B por modelo | Generación de vídeo T2V e I2V | Apache 2.0 | Pesos en Hugging Face, nodos ComfyUI |
 | Vimoo-1.0-Lite | no disponible | Generación de vídeo (versión ligera) | no disponible | Repositorio Vimoo-1.0-Lite-ComfyUI |
 | Wan 2.2 TI2V | no disponible | Generación de vídeo | no disponible | Referenciado indirectamente por el VAE |
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vimoo-AI/Vimoo-1.0-ComfyUI
+- Hugging Face: https://huggingface.co/Vimoo-AI/Vimoo-1.0-ComfyUI
 - Repositorio ComfyUI-Vimoo: https://github.com/Vimoo-AI/ComfyUI-Vimoo
 - Repositorio Vimoo-1.0: https://github.com/Vimoo-AI/Vimoo-1.0
 - Repositorio Vimoo-1.0-MLX: https://github.com/Vimoo-AI/Vimoo-1.0-MLX
@@ -90,5 +90,5 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 - Documentación de opciones de rendimiento: https://github.com/Vimoo-AI/ComfyUI-Vimoo/blob/main/docs/performance.md
 - Informe técnico: https://vimoo.ai/research
 - Sitio web: https://vimoo.ai
-- Organización en HuggingFace: https://huggingface.co/Vimoo-AI
+- Organización en Hugging Face: https://huggingface.co/Vimoo-AI
 - ComfyUI: https://github.com/Comfy-Org/ComfyUI

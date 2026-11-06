@@ -101,10 +101,10 @@ No se han publicado comparaciones directas contra otros adaptadores o modelos en
 
 | Modelo | Parámetros | Contexto | Precisión agregada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oaklight/krino-qwen3-reranker-4b-heads | 4,0B congelados + 1,0M entrenables | 32K (heredado del backbone) | 65,5 % en 19 benchmarks | MIT | HuggingFace, paquete `krino` |
-| oaklight/krino-qwen3.5-4b-heads | 4,2B congelados + 1,0M entrenables | No disponible | 65,4 % en 19 benchmarks | No disponible en la información consultada | HuggingFace |
-| Qwen/Qwen3-Reranker-4B | 4,0B | 32K | No disponible (modelo de reranking, no de decisión) | No disponible en la información consultada | HuggingFace, ModelScope |
-| Qwen3-Reranker-0.6B / Qwen3-Reranker-8B | 0,6B / 8B | 32K | No disponible | No disponible en la información consultada | HuggingFace |
+| oaklight/krino-qwen3-reranker-4b-heads | 4,0B congelados + 1,0M entrenables | 32K (heredado del backbone) | 65,5 % en 19 benchmarks | MIT | Hugging Face, paquete `krino` |
+| oaklight/krino-qwen3.5-4b-heads | 4,2B congelados + 1,0M entrenables | No disponible | 65,4 % en 19 benchmarks | No disponible en la información consultada | Hugging Face |
+| Qwen/Qwen3-Reranker-4B | 4,0B | 32K | No disponible (modelo de reranking, no de decisión) | No disponible en la información consultada | Hugging Face, ModelScope |
+| Qwen3-Reranker-0.6B / Qwen3-Reranker-8B | 0,6B / 8B | 32K | No disponible | No disponible en la información consultada | Hugging Face |
 
 La comparación con alternativas de la misma categoría (adaptadores de decisión) se limita al modelo hermano de la serie Krino, que obtiene un resultado agregado prácticamente idéntico sobre un backbone distinto. No hay datos públicos de otros adaptadores de decisión tipada que permitan una comparación más amplia.
 
@@ -122,7 +122,7 @@ La comparación con alternativas de la misma categoría (adaptadores de decisió
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oaklight/krino-qwen3-reranker-4b-heads
+- Modelo en Hugging Face: https://huggingface.co/oaklight/krino-qwen3-reranker-4b-heads
 - Modelo hermano (Krino sobre Qwen3.5-4B-Base): https://huggingface.co/oaklight/krino-qwen3.5-4b-heads
 - Backbone Qwen3-Reranker-4B: https://huggingface.co/Qwen/Qwen3-Reranker-4B
 - Ficha de Qwen3-Reranker-4B en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3-Reranker-4B/summary

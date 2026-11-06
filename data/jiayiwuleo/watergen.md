@@ -6,7 +6,7 @@ WaterGen es un sistema de generación de imágenes submarinas desarrollado conju
 
 El problema que aborda es la escasez de datos emparejados (escena limpia frente a escena degradada) para entrenar y evaluar algoritmos de restauración y segmentación submarinas. La etapa 1 del pipeline genera un latente de escena submarina limpia a partir de un *prompt* de texto; la etapa 2 aplica atenuación, dispersión (*backscattering*) y luz de fondo según los parámetros de agua especificados, de modo que una misma geometría puede renderizarse bajo múltiples condiciones de turbidez y color sin alterar la disposición de los objetos.
 
-El trabajo se presentó en ECCV 2026 y su relevancia actual reside en la generación de datos sintéticos alineados para *benchmarking* y entrenamiento en visión submarina, un dominio donde la captura de pares reales alineados es especialmente costosa. El repositorio de HuggingFace tiene 0 descargas y 0 *likes*, y no incluye resultados de benchmarks ni métricas cuantitativas en la información disponible.
+El trabajo se presentó en ECCV 2026 y su relevancia actual reside en la generación de datos sintéticos alineados para *benchmarking* y entrenamiento en visión submarina, un dominio donde la captura de pares reales alineados es especialmente costosa. El repositorio de Hugging Face tiene 0 descargas y 0 *likes*, y no incluye resultados de benchmarks ni métricas cuantitativas en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -68,8 +68,8 @@ No disponible. La información proporcionada no incluye modelos comparables de g
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WaterGen | no disponible (LoRA rango 32 + decodificador) | no aplica | no disponible | apache-2.0 | HuggingFace (0 descargas) |
-| stabilityai/stable-diffusion-xl-base-1.0 | no disponible en esta ficha | no aplica | no disponible en esta ficha | licencia propia del modelo base | HuggingFace |
+| WaterGen | no disponible (LoRA rango 32 + decodificador) | no aplica | no disponible | apache-2.0 | Hugging Face (0 descargas) |
+| stabilityai/stable-diffusion-xl-base-1.0 | no disponible en esta ficha | no aplica | no disponible en esta ficha | licencia propia del modelo base | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ No disponible. La información proporcionada no incluye modelos comparables de g
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JiayiWuLeo/WaterGen
+- Hugging Face: https://huggingface.co/JiayiWuLeo/WaterGen
 - Página del proyecto: https://tianfwang.github.io/watergen/
 - Paper (arXiv): https://arxiv.org/abs/2606.31147
 - Repositorio de código: https://github.com/jiayi-wu-umd/WaterGen

@@ -79,6 +79,6 @@ Estos datos permiten observar diferencias en el consumo según hardware y regió
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sreemithravinda/tds-carbon-card
+- Repositorio en Hugging Face: https://huggingface.co/sreemithravinda/tds-carbon-card
 - Repositorio similar de `shivainlabs`: https://huggingface.co/shivainlabs/tds-carbon-card
 - Repositorio similar de `ShivanshHanda`: https://huggingface.co/ShivanshHanda/tds-carbon-card

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) completo del modelo base Qwen/Qwen3-4B-Base, publicado por el usuario AmberYifan en HuggingFace. El entrenamiento se realizó sobre un dataset denominado `capsd_Qwen3-4B-Base-n80000-numina__mix_math_random_b8000_s0`, cuyo nombre sugiere una mezcla de datos matemáticos con muestreo aleatorio, probablemente orientada a mejorar el razonamiento matemático del modelo. El repositorio no incluye una descripción detallada ni resultados de evaluación, y la model card es autogenerada por el entrenador, por lo que la información disponible es limitada.
+Este modelo es un ajuste fino (fine-tuning) completo del modelo base Qwen/Qwen3-4B-Base, publicado por el usuario AmberYifan en Hugging Face. El entrenamiento se realizó sobre un dataset denominado `capsd_Qwen3-4B-Base-n80000-numina__mix_math_random_b8000_s0`, cuyo nombre sugiere una mezcla de datos matemáticos con muestreo aleatorio, probablemente orientada a mejorar el razonamiento matemático del modelo. El repositorio no incluye una descripción detallada ni resultados de evaluación, y la model card es autogenerada por el entrenador, por lo que la información disponible es limitada.
 
 El modelo conserva la arquitectura del Qwen3-4B-Base, un transformer denso de aproximadamente 4.02 mil millones de parámetros. Al ser un fine-tuning completo (no un LoRA), todos los pesos del modelo base han sido actualizados durante el entrenamiento. Su relevancia radica en ser una variante especializada en matemáticas que parte de un modelo base reciente de la familia Qwen3, aunque sin datos públicos de rendimiento que validen su eficacia.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada para inferencia: en precisión FP16, el modelo ocupa aproximadamente 8 GB (4.02B parámetros × 2 bytes). En cuantización INT8 (si se convierte) ocuparía ~4 GB, y en INT4 ~2 GB.
 - GPU recomendadas: para FP16, una GPU con 10-12 GB de VRAM (por ejemplo, RTX 3080/4080, A10) es suficiente. Para cuantizaciones ligeras, una RTX 3060 de 12 GB o incluso una de 8 GB podría funcionar.
 - Compatibilidad con GPU de consumo: sí, es factible en GPUs consumer con al menos 8 GB de VRAM si se cuantiza; en FP16 se recomienda 12 GB o más.
-- Opciones de despliegue: al ser un modelo de transformers, se puede servir con vLLM, TGI, llama.cpp (tras conversión a GGUF), Ollama o mediante la API de HuggingFace Inference Endpoints.
+- Opciones de despliegue: al ser un modelo de transformers, se puede servir con vLLM, TGI, llama.cpp (tras conversión a GGUF), Ollama o mediante la API de Hugging Face Inference Endpoints.
 - Latencia y throughput: no se proporcionan datos. En una GPU moderna, un modelo de 4B en FP16 puede generar decenas de tokens por segundo, pero depende del hardware y del backend.
 
 ## Comparativa con modelos similares

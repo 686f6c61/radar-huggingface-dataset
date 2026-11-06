@@ -70,7 +70,7 @@ No se dispone de informacion sobre modelos comparables especificos. La cuantizac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gattochoo/Qwen3.8-2B-oQ4e-fp16-mtp
+- Hugging Face: https://huggingface.co/gattochoo/Qwen3.8-2B-oQ4e-fp16-mtp
 - Repositorio oQ (oMLX): https://github.com/jundot/omlx
 - Repositorio oficial Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Pagina de Qwen3.8 en OpenLM.ai: https://openlm.ai/qwen3.8/

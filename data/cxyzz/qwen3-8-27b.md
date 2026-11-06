@@ -75,7 +75,7 @@ No se dispone de información completa sobre las alternativas listadas en la mod
 
 ## Enlaces
 
-- HuggingFace (mirror): https://huggingface.co/cxyzz/Qwen3.8-27B
+- Hugging Face (mirror): https://huggingface.co/cxyzz/Qwen3.8-27B
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - Blog de AMD: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

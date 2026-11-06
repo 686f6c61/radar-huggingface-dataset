@@ -87,7 +87,7 @@ No se dispone de datos de parametros, contexto ni rendimiento del modelo origina
 
 | Modelo | Formato | Destino | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Depth-Anything-V3 (wardner) | RKNN + `.weight` | NPU RK182x / host RK3588 | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| Depth-Anything-V3 (wardner) | RKNN + `.weight` | NPU RK182x / host RK3588 | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | Pesos originales de Depth Anything V3 | no disponible en esta informacion | GPU/CPU generica | no disponible | no disponible |
 | Otras conversiones RKNN de modelos de vision | RKNN | NPU Rockchip | variable | no disponible |
 
@@ -107,7 +107,7 @@ No se dispone de datos de parametros, contexto ni rendimiento del modelo origina
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wardner/Depth-Anything-V3
+- Repositorio en Hugging Face: https://huggingface.co/wardner/Depth-Anything-V3
 - Mirror alternativo para descarga: https://hf-mirror.com
 - Manifiesto de worker: `DepthAnythingV3.json` (incluido en el repositorio)
 - Fichero de verificacion: `SHA256SUMS` (incluido en el repositorio)

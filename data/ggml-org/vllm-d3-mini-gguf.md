@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ggml-org/vllm-d3-mini-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ggml-org/vllm-d3-mini-GGUF
 - Modelo base: https://huggingface.co/vllm-sr/d3-mini
 - Pull request del endpoint `/v1/systemone` en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/30383
 - Herramienta de conversion: https://github.com/ggml-org/convert

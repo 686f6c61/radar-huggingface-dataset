@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rsundaraws/act_arm2_fill` es una política de aprendizaje por imitación basada en Action Chunking with Transformers (ACT), publicada en HuggingFace Hub por el usuario rsundaraws mediante la librería LeRobot de HuggingFace. El modelo resuelve una tarea robótica concreta de manipulación —recoger un cubo y depositarlo en una caja naranja— sobre un robot tipo `so_follower` (SO-101), a partir de observaciones consistentes en el estado articular de 6 dimensiones y dos cámaras (muñeca y cenital).
+`rsundaraws/act_arm2_fill` es una política de aprendizaje por imitación basada en Action Chunking with Transformers (ACT), publicada en Hugging Face Hub por el usuario rsundaraws mediante la librería LeRobot de Hugging Face. El modelo resuelve una tarea robótica concreta de manipulación —recoger un cubo y depositarlo en una caja naranja— sobre un robot tipo `so_follower` (SO-101), a partir de observaciones consistentes en el estado articular de 6 dimensiones y dos cámaras (muñeca y cenital).
 
 A diferencia de los modelos de lenguaje, no se trata de un modelo generativo de texto ni de un transformer autoregresivo de gran escala: es una política visomotora de 51,7 millones de parámetros que predice secuencias cortas de acciones (action chunks) en lugar de pasos individuales, lo que mejora la estabilidad y la tasa de éxito en tareas de imitación. El repositorio ocupa 0,2 GB y se distribuye bajo licencia Apache 2.0.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rsundaraws/act_arm2_fill` (ACT) | 51,7 M | no aplica | sin evaluación publicada | Apache 2.0 | HuggingFace Hub |
-| Otras políticas ACT en LeRobot Hub | variable (no disponible) | no aplica | no disponible | variable | HuggingFace Hub |
-| Políticas Diffusion Policy (LeRobot) | no disponible | no aplica | no disponible | variable | HuggingFace Hub |
-| Políticas pi0 / VLA de gran escala | no disponible | no aplica | no disponible | variable | HuggingFace Hub |
+| `rsundaraws/act_arm2_fill` (ACT) | 51,7 M | no aplica | sin evaluación publicada | Apache 2.0 | Hugging Face Hub |
+| Otras políticas ACT en LeRobot Hub | variable (no disponible) | no aplica | no disponible | variable | Hugging Face Hub |
+| Políticas Diffusion Policy (LeRobot) | no disponible | no aplica | no disponible | variable | Hugging Face Hub |
+| Políticas pi0 / VLA de gran escala | no disponible | no aplica | no disponible | variable | Hugging Face Hub |
 
 No se dispone de datos cuantitativos para establecer una comparación rigurosa con alternativas concretas. La comparación cualitativa se limita a la categoría (políticas de imitación para manipulación robótica en LeRobot) y al tamaño (51,7 M de parámetros, muy por debajo de los VLA de gran escala).
 
@@ -85,7 +85,7 @@ No se dispone de datos cuantitativos para establecer una comparación rigurosa c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rsundaraws/act_arm2_fill
+- Modelo en Hugging Face: https://huggingface.co/rsundaraws/act_arm2_fill
 - Dataset de entrenamiento: https://huggingface.co/datasets/rsundaraws/so101_arm2_fill_trim
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

@@ -109,7 +109,7 @@ No se dispone en la informacion proporcionada de cifras comparables frente a otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nurymanau/pplx-embed-v2-late-BANKING-Student6-MLX
+- Modelo en Hugging Face: https://huggingface.co/Nurymanau/pplx-embed-v2-late-BANKING-Student6-MLX
 - Modelo base: https://huggingface.co/perplexity-ai/pplx-embed-v2-late-0.6b
 - Repositorio con todas las variantes: https://huggingface.co/Nurymanau/pplx-embed-v2-late-0.6b-MLX
 - Base original en MLX FP16: https://huggingface.co/Nurymanau/pplx-embed-v2-late-0.6b-MLX-fp16

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `lucienjnr/dtcr-unet-gh` es un repositorio publicado en HuggingFace por el usuario `lucienjnr` bajo licencia Apache 2.0. En el momento de redactar esta ficha no dispone de descargas ni de "likes", y su model card publicada contiene exclusivamente la declaracion de licencia, sin descripcion, documentacion tecnica ni ejemplos de uso. El identificador del modelo sugiere una arquitectura de tipo UNet, aunque esta informacion no puede confirmarse con los datos disponibles.
+El modelo identificado como `lucienjnr/dtcr-unet-gh` es un repositorio publicado en Hugging Face por el usuario `lucienjnr` bajo licencia Apache 2.0. En el momento de redactar esta ficha no dispone de descargas ni de "likes", y su model card publicada contiene exclusivamente la declaracion de licencia, sin descripcion, documentacion tecnica ni ejemplos de uso. El identificador del modelo sugiere una arquitectura de tipo UNet, aunque esta informacion no puede confirmarse con los datos disponibles.
 
 El problema que resuelve, su tamano, su ventana de contexto y sus datos de entrenamiento son desconocidos: la informacion proporcionada no incluye arquitectura declarada, numero de parametros, tokenizador, idiomas soportados ni formato de pesos. Se trata, por tanto, de un repositorio sin documentacion publica suficiente para evaluar su idoneidad en produccion.
 
@@ -73,5 +73,5 @@ No disponible. Al no conocerse la tarea objetivo, el tamano ni la arquitectura c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lucienjnr/dtcr-unet-gh
+- Hugging Face: https://huggingface.co/lucienjnr/dtcr-unet-gh
 - Papers, blogs, repositorios y demos: no disponible. Las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo.

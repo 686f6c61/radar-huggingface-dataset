@@ -72,8 +72,8 @@ La comparativa se limita a características estructurales, ya que no hay datos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Han03430/qwen2.5-7b-metamath-50k-lora-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/Han03430/qwen2.5-7b-metamath-50k-lora-checkpoints
 - Modelo base Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B
 - Serie Qwen2.5-Math (GitHub): https://github.com/QwenLM/Qwen2.5-Math
-- Qwen2.5-Math-7B en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-Math-7B
+- Qwen2.5-Math-7B en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-Math-7B
 - Repositorio espejo de Qwen2.5 (GitHub): https://github.com/mx4ai/qwen2.5

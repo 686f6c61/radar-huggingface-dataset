@@ -28,7 +28,7 @@ Su relevancia es doble. Por un lado, es un caso practico de destilacion y compre
 | Dimensiones MLA | kv_lora_rank 256, q_lora_rank 1344, qk_rope_head_dim 64, qk_nope_head_dim 64, v_head_dim 128, 16 cabezas |
 | Dimensiones Mamba-2 | d_state 128, ngroups 16, expand 1, d_inner 2048, d_xb 1024 |
 | Configuracion | la disposicion hibrida esta en `hybrid_config.json`; `config.json` es el del modelo base y se conserva como referencia |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de publicacion | 11 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
@@ -116,7 +116,7 @@ No se dispone de resultados de benchmarks de los modelos comparados en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/HyLo-Qwen-14MLA14M2-64K-SFT
+- Modelo en Hugging Face: https://huggingface.co/amd/HyLo-Qwen-14MLA14M2-64K-SFT
 - Paper principal (Long-Context Aware Upcycling: A New Frontier for Hybrid LLM Scaling): https://arxiv.org/abs/2604.24715
 - Referencia adicional: https://arxiv.org/abs/2505.17272
 - Referencia adicional: https://arxiv.org/abs/2503.11132

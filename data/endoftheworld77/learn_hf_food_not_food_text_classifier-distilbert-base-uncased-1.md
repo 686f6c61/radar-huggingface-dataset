@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`learn_hf_food_not_food_text_classifier-distilbert-base-uncased-1` es un modelo de clasificación de texto binaria obtenido mediante fine-tuning de DistilBERT base uncased. Lo publica el usuario EndOfTheWorld77 en HuggingFace y, por su nombre, está orientado a distinguir textos relacionados con comida ("food") de los que no lo están, aunque la model card no documenta explícitamente el dataset ni las etiquetas. Se trata de un artefacto de entrenamiento de tipo "generated_from_trainer", con la model card autogenerada y sin secciones de descripción, usos previstos o datos completadas por el autor.
+`learn_hf_food_not_food_text_classifier-distilbert-base-uncased-1` es un modelo de clasificación de texto binaria obtenido mediante fine-tuning de DistilBERT base uncased. Lo publica el usuario EndOfTheWorld77 en Hugging Face y, por su nombre, está orientado a distinguir textos relacionados con comida ("food") de los que no lo están, aunque la model card no documenta explícitamente el dataset ni las etiquetas. Se trata de un artefacto de entrenamiento de tipo "generated_from_trainer", con la model card autogenerada y sin secciones de descripción, usos previstos o datos completadas por el autor.
 
 Arquitectónicamente es un transformer encoder de la familia DistilBERT: una versión destilada de BERT-base con 6 capas, 66.955.010 parámetros totales y un cabezal de clasificación sobre la representación del token `[CLS]`. El contexto máximo heredado de DistilBERT es de 512 tokens. El modelo se distribuye en formato safetensors con un tamaño de repositorio de 0,3 GB y licencia Apache 2.0.
 
@@ -42,9 +42,9 @@ Los hiperparámetros documentados son: learning rate 1e-4, batch size de entrena
 - Filtrado temático de contenido: usar el modelo para etiquetar titulares, reseñas o publicaciones como relacionadas con comida o no, integrándolo en un pipeline de preprocesado previo a un motor de búsqueda o recomendador.
 - Moderación o enrutado en un foro: clasificar mensajes entrantes para dirigirlos al canal adecuado (gastronomía frente a otros temas) con un coste de inferencia mínimo.
 - Etiquetado asistido en anotación de datasets: preetiquetar un corpus grande con este clasificador y revisar manualmente solo los casos de baja confianza, acelerando la creación de un dataset propio.
-- Prototipado educativo: servir como ejemplo reproducible de fine-tuning de DistilBERT con `Trainer`, útil en talleres o tutoriales de HuggingFace.
+- Prototipado educativo: servir como ejemplo reproducible de fine-tuning de DistilBERT con `Trainer`, útil en talleres o tutoriales de Hugging Face.
 - Baseline en experimentos de clasificación: establecer una referencia rápida antes de entrenar modelos más grandes o específicos de dominio.
-- Microservicio de clasificación de baja latencia: desplegado con Text Embeddings Inference o un endpoint de HuggingFace, puede atender peticiones con latencia de milisegundos en CPU para volúmenes moderados.
+- Microservicio de clasificación de baja latencia: desplegado con Text Embeddings Inference o un endpoint de Hugging Face, puede atender peticiones con latencia de milisegundos en CPU para volúmenes moderados.
 - Pre-filtro en pipelines de datos: descartar documentos irrelevantes antes de pasarlos a un LLM generativo, reduciendo coste de tokens.
 
 ## Benchmarks y rendimiento
@@ -66,17 +66,17 @@ No se han publicado resultados de benchmarks estandarizados en la información d
 - VRAM estimada en fp16/bf16: unos 135 MB de pesos; en la práctica cabe en cualquier GPU con 2 GB o más.
 - Cabe holgadamente en GPUs de consumo: GTX 1650, RTX 3050, RTX 4060, RTX 4090, e incluso en CPU.
 - GPU de datacenter (A100, H100) innecesarias para este tamaño; útiles solo para procesar lotes masivos en paralelo.
-- Opciones de despliegue: `transformers` pipeline, Text Embeddings Inference (tag declarado), HuggingFace Inference Endpoints (compatible), ONNX Runtime y TorchScript. No se declara compatibilidad explícita con vLLM, llama.cpp u Ollama (no aplicables a un encoder de clasificación).
+- Opciones de despliegue: `transformers` pipeline, Text Embeddings Inference (tag declarado), Hugging Face Inference Endpoints (compatible), ONNX Runtime y TorchScript. No se declara compatibilidad explícita con vLLM, llama.cpp u Ollama (no aplicables a un encoder de clasificación).
 - Latencia y throughput: no disponibles en la información proporcionada. Por el tamaño del modelo, se espera latencia de pocos milisegundos por secuencia en CPU moderna y throughput de miles de secuencias por segundo en GPU, pero son estimaciones no verificadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (DistilBERT fine-tuned) | 66,9 M | 512 | Clasificación binaria de texto | Apache 2.0 | HuggingFace (15 descargas) |
-| distilbert-base-uncased (base) | 66,9 M | 512 | Modelo de lenguaje enmascarado / base para fine-tuning | Apache 2.0 | HuggingFace (ampliamente usado) |
-| bert-base-uncased | 110 M | 512 | Modelo base para fine-tuning | Apache 2.0 | HuggingFace |
-| roberta-base | 125 M | 512 | Modelo base para fine-tuning | MIT | HuggingFace |
+| Este modelo (DistilBERT fine-tuned) | 66,9 M | 512 | Clasificación binaria de texto | Apache 2.0 | Hugging Face (15 descargas) |
+| distilbert-base-uncased (base) | 66,9 M | 512 | Modelo de lenguaje enmascarado / base para fine-tuning | Apache 2.0 | Hugging Face (ampliamente usado) |
+| bert-base-uncased | 110 M | 512 | Modelo base para fine-tuning | Apache 2.0 | Hugging Face |
+| roberta-base | 125 M | 512 | Modelo base para fine-tuning | MIT | Hugging Face |
 
 La comparación relevante es con los modelos base: este checkpoint es un fine-tuning de DistilBERT sobre un dataset no documentado, por lo que su rendimiento solo es comparable en la tarea específica para la que fue entrenado. Frente a BERT-base o RoBERTa-base ofrece menor tamaño y latencia, a costa de capacidad representacional. No hay datos de benchmarks que permitan una comparación cuantitativa de calidad.
 
@@ -94,7 +94,7 @@ La comparación relevante es con los modelos base: este checkpoint es un fine-tu
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/EndOfTheWorld77/learn_hf_food_not_food_text_classifier-distilbert-base-uncased-1)
+- [Modelo en Hugging Face](https://huggingface.co/EndOfTheWorld77/learn_hf_food_not_food_text_classifier-distilbert-base-uncased-1)
 - [Modelo base: distilbert-base-uncased](https://huggingface.co/distilbert/distilbert-base-uncased)
 - [Documentación de DistilBERT en Transformers](https://huggingface.co/docs/transformers/model_doc/distilbert)
 - [Documentación del pipeline de text-classification](https://huggingface.co/docs/transformers/main_classes/pipelines#transformers.TextClassificationPipeline)

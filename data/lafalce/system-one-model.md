@@ -102,7 +102,7 @@ Datos de contexto, licencia y rendimiento de los modelos comparados no están in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lafalce/system-one-model
+- Modelo en Hugging Face: https://huggingface.co/lafalce/system-one-model
 - Repositorio GitHub del proyecto: https://github.com/mateolafalce/system-one-model
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo en los resultados proporcionados.

@@ -65,7 +65,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 - VRAM estimada para inferencia: en FP32 alrededor de 0,47 GB (117,65 M de parametros x 4 bytes); en FP16 aproximadamente 0,24 GB; en INT8 en torno a 0,12 GB, sin contar activaciones ni el indice vectorial.
 - GPU recomendadas: cualquier GPU moderna sirve; una RTX 3090, RTX 4090, A100 o H100 estan sobredimensionadas para el modelo, salvo que se use para indexar corpus muy grandes en batch.
 - Cabe sobradamente en GPU de consumo (GTX 1660, RTX 3060, RTX 4060, etc.) e incluso en CPU para cargas moderadas.
-- Opciones de despliegue: `sentence-transformers` y `transformers` de HuggingFace, exportacion a ONNX, y servidores de embeddings como Text Embeddings Inference (TEI) o FastAPI personalizado. vLLM soporta modelos de embeddings, aunque no es el caso de uso tipico.
+- Opciones de despliegue: `sentence-transformers` y `transformers` de Hugging Face, exportacion a ONNX, y servidores de embeddings como Text Embeddings Inference (TEI) o FastAPI personalizado. vLLM soporta modelos de embeddings, aunque no es el caso de uso tipico.
 - Latencia y throughput estimados: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -87,12 +87,12 @@ El modelo base (`multilingual-e5-small`) procede de un entrenamiento multilingue
 - Se trata de la semilla 1 de 3 ejecuciones; la variabilidad entre semillas no se detalla en la informacion disponible.
 - Riesgo de alucinacion no aplica en el sentido generativo, pero si puede producir recuperaciones irrelevantes cuando los pasajes del corpus difieren de la distribucion de GermanDPR y SQuAD.
 - Los datos de entrenamiento tienen licencias propias: GermanDPR es CC BY 4.0 y SQuAD es CC BY-SA 4.0; conviene revisar la compatibilidad si se redistribuye el modelo o los datos derivados.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, por lo que no cuenta con validacion de la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, por lo que no cuenta con validacion de la comunidad.
 - Se requiere aplicar el prefijo `query: ` en las consultas y `passage: ` en los pasajes, ademas de mean pooling y similitud coseno; un uso incorrecto de estos prefijos degrada la calidad de la recuperacion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pavanyadava07/multilingual-retrieval-lab-e5s
+- Hugging Face: https://huggingface.co/pavanyadava07/multilingual-retrieval-lab-e5s
 - Repositorio de codigo y ejecuciones: https://github.com/pavanyadava007/multilingual-retrieval-lab
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Dataset GermanDPR: https://huggingface.co/datasets/deepset/germandpr

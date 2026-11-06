@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tswelopelee79/Ggngr` es una publicación en HuggingFace realizada por el usuario Tswelopelee79, registrada el 29 de agosto de 2026. La model card asociada no contiene ninguna descripción técnica, arquitectónica ni de uso; únicamente se especifica la licencia `artistic-2.0`. En el momento de la consulta, el modelo presenta cero descargas y cero likes, lo que sugiere que se trata de una subida reciente o sin difusión.
+El modelo `Tswelopelee79/Ggngr` es una publicación en Hugging Face realizada por el usuario Tswelopelee79, registrada el 29 de agosto de 2026. La model card asociada no contiene ninguna descripción técnica, arquitectónica ni de uso; únicamente se especifica la licencia `artistic-2.0`. En el momento de la consulta, el modelo presenta cero descargas y cero likes, lo que sugiere que se trata de una subida reciente o sin difusión.
 
 No se dispone de información sobre la arquitectura, el número de parámetros, el contexto, el formato de pesos ni las capacidades del modelo. Tampoco se han encontrado referencias externas relevantes en los resultados de búsqueda web, que únicamente devuelven perfiles genéricos de GitHub, sitios de generación 3D, archivadores de modelos de imagen y páginas de NVIDIA. Por tanto, esta ficha se limita a reflejar la ausencia total de datos verificables, sin especular sobre características que no han sido publicadas.
 
@@ -52,6 +52,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace: Tswelopelee79/Ggngr](https://huggingface.co/Tswelopelee79/Ggngr)
+- [Hugging Face: Tswelopelee79/Ggngr](https://huggingface.co/Tswelopelee79/Ggngr)
 
 No se han encontrado otros enlaces relevantes (papers, repositorios, demos) en la búsqueda web realizada.

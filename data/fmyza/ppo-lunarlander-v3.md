@@ -2,7 +2,7 @@
 
 ## Resumen
 
-**ppo-LunarLander-v3** es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `LunarLander-v3` de Gymnasium. Lo publica el usuario FmyzA en HuggingFace y se ha generado con la librería Stable-Baselines3, el estándar de facto para implementaciones de referencia de algoritmos de RL. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política entrenada para resolver una tarea de control concreta, un módulo de aterrizaje lunar bidimensional con espacio de observación continuo de 8 dimensiones y espacio de acciones discreto de 4 acciones.
+**ppo-LunarLander-v3** es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `LunarLander-v3` de Gymnasium. Lo publica el usuario FmyzA en Hugging Face y se ha generado con la librería Stable-Baselines3, el estándar de facto para implementaciones de referencia de algoritmos de RL. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política entrenada para resolver una tarea de control concreta, un módulo de aterrizaje lunar bidimensional con espacio de observación continuo de 8 dimensiones y espacio de acciones discreto de 4 acciones.
 
 El repositorio es una publicación de tipo *modelo de RL* con un único checkpoint (`ppo-LunarLander-v3.zip`), un vídeo de reproducción determinista y los ficheros de resultados de evaluación. El autor declara una recompensa media de 268,51 ± 13,07 sobre 10 episodios, una cifra por encima del umbral de 200 que la comunidad considera resuelto para este entorno, aunque la métrica está marcada como no verificada.
 
@@ -80,7 +80,7 @@ No se dispone de datos publicados de modelos comparables en la informacion propo
 
 | Modelo | Algoritmo | Entorno | Contexto / observacion | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ppo-LunarLander-v3 (FmyzA) | PPO | LunarLander-v3 | vector de 8 dimensiones | no disponible | mean_reward 268,51 ± 13,07 (10 episodios, no verificado) | HuggingFace |
+| ppo-LunarLander-v3 (FmyzA) | PPO | LunarLander-v3 | vector de 8 dimensiones | no disponible | mean_reward 268,51 ± 13,07 (10 episodios, no verificado) | Hugging Face |
 | Agentes DQN sobre LunarLander | DQN | LunarLander-v3 | vector de 8 dimensiones | no disponible | no disponible | no disponible |
 | Agentes A2C sobre LunarLander | A2C | LunarLander-v3 | vector de 8 dimensiones | no disponible | no disponible | no disponible |
 | Agentes SAC-discreto sobre LunarLander | SAC | LunarLander-v3 | vector de 8 dimensiones | no disponible | no disponible | no disponible |
@@ -99,7 +99,7 @@ No se dispone de datos publicados de modelos comparables en la informacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FmyzA/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/FmyzA/ppo-LunarLander-v3
 - Repositorio de Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - Documentacion de Stable-Baselines3: https://stable-baselines3.readthedocs.io/
 - Libreria Gymnasium (Farama Foundation): https://gymnasium.farama.org/

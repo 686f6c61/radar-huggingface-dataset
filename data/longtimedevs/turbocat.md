@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TurboCat es un modelo publicado en HuggingFace bajo el identificador longtimedevs/TurboCat, atribuido al usuario longtimedevs. La única información verificable en el momento de redactar esta ficha es la licencia declarada (MIT) y la etiqueta de región (us). El repositorio figura con un tamaño de 0.0 GB, cero descargas y cero likes, y la model card contiene únicamente la línea de licencia, sin descripción, arquitectura ni instrucciones de uso.
+TurboCat es un modelo publicado en Hugging Face bajo el identificador longtimedevs/TurboCat, atribuido al usuario longtimedevs. La única información verificable en el momento de redactar esta ficha es la licencia declarada (MIT) y la etiqueta de región (us). El repositorio figura con un tamaño de 0.0 GB, cero descargas y cero likes, y la model card contiene únicamente la línea de licencia, sin descripción, arquitectura ni instrucciones de uso.
 
 No hay datos disponibles sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento, idiomas soportados ni formato de pesos. La ausencia de artefactos en el repositorio (0.0 GB) indica que, en la fecha indicada por la plataforma, no se han subido pesos ni tokenizador, por lo que el modelo no es cargable ni evaluable tal cual.
 
@@ -91,7 +91,7 @@ No disponible. No hay información suficiente (parámetros, contexto, rendimient
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtimedevs/TurboCat
+- Hugging Face: https://huggingface.co/longtimedevs/TurboCat
 - Paper: no disponible
 - Repositorio de código: no disponible
 - Blog o anuncio: no disponible

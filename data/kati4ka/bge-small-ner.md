@@ -2,9 +2,9 @@
 
 ## Resumen
 
-bge-small-ner es un modelo de clasificacion de tokens (token classification) publicado por el usuario kati4ka en HuggingFace. Se trata de un ajuste fino del encoder BAAI/bge-small-en-v1.5 para reconocimiento de entidades nombradas (NER), es decir, para asignar una etiqueta a cada token de un texto de entrada. El modelo resuelve la tarea clasica de extraccion de entidades, pero no aporta documentacion sobre el conjunto de datos, el esquema de etiquetas ni el dominio de aplicacion.
+bge-small-ner es un modelo de clasificacion de tokens (token classification) publicado por el usuario kati4ka en Hugging Face. Se trata de un ajuste fino del encoder BAAI/bge-small-en-v1.5 para reconocimiento de entidades nombradas (NER), es decir, para asignar una etiqueta a cada token de un texto de entrada. El modelo resuelve la tarea clasica de extraccion de entidades, pero no aporta documentacion sobre el conjunto de datos, el esquema de etiquetas ni el dominio de aplicacion.
 
-La relevancia de esta ficha es limitada y conviene ser explicitos: se trata de un modelo con 23 descargas y 0 likes, creado con el flujo automatico `Trainer` de HuggingFace y con la model card practicamente sin completar ("More information needed" en descripcion, usos previstos, limitaciones y datos de entrenamiento). Es, por tanto, un artefacto de experimentacion mas que un modelo listo para produccion sin validacion previa.
+La relevancia de esta ficha es limitada y conviene ser explicitos: se trata de un modelo con 23 descargas y 0 likes, creado con el flujo automatico `Trainer` de Hugging Face y con la model card practicamente sin completar ("More information needed" en descripcion, usos previstos, limitaciones y datos de entrenamiento). Es, por tanto, un artefacto de experimentacion mas que un modelo listo para produccion sin validacion previa.
 
 Tecnicamente es un transformer encoder denso de tipo BERT, con 33.215.625 parametros totales (aproximadamente 33 M, coherente con el backbone BGE-small y una cabeza de clasificacion por token). Hereda del modelo base la ventana de contexto de 512 tokens y el sesgo hacia el ingles. No es un modelo generativo: no produce texto libre, solo etiquetas.
 
@@ -32,7 +32,7 @@ Tecnicamente es un transformer encoder denso de tipo BERT, con 33.215.625 parame
 
 El modelo es un ajuste fino supervisado de BAAI/bge-small-en-v1.5, un encoder bidireccional de tipo BERT de 33 M de parametros originalmente entrenado para recuperacion densa de texto (embeddings de frases). El ajuste anade una cabeza de clasificacion por token sobre las representaciones contextuales del encoder, lo que transforma un modelo de representacion en un etiquetador secuencial (por ejemplo, esquema BIO para entidades).
 
-Segun la model card, el entrenamiento se realizo con el `Trainer` de HuggingFace durante 3 epocas, con `learning_rate` 2e-05, `train_batch_size` y `eval_batch_size` de 16, semilla 42, optimizador ADAMW_TORCH_FUSED con betas (0,9; 0,999) y epsilon 1e-08, y planificador lineal. El entrenamiento completo abarco 1.875 pasos, lo que equivale a 625 pasos por epoca; con un lote de 16, esto supone aproximadamente 10.000 ejemplos por epoca, aunque el numero exacto de ejemplos y la composicion del dataset (dominio, idioma, conjunto de etiquetas, proporcion de clases) no se documentan en ningun momento. No consta el uso de RLHF, DPO ni ninguna innovacion tecnica adicional (no hay decodificacion especulativa, atencion lineal ni variantes hibridas); es un fine-tuning convencional de clasificacion de tokens. Las versiones de framework declaradas son Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.23.1.
+Segun la model card, el entrenamiento se realizo con el `Trainer` de Hugging Face durante 3 epocas, con `learning_rate` 2e-05, `train_batch_size` y `eval_batch_size` de 16, semilla 42, optimizador ADAMW_TORCH_FUSED con betas (0,9; 0,999) y epsilon 1e-08, y planificador lineal. El entrenamiento completo abarco 1.875 pasos, lo que equivale a 625 pasos por epoca; con un lote de 16, esto supone aproximadamente 10.000 ejemplos por epoca, aunque el numero exacto de ejemplos y la composicion del dataset (dominio, idioma, conjunto de etiquetas, proporcion de clases) no se documentan en ningun momento. No consta el uso de RLHF, DPO ni ninguna innovacion tecnica adicional (no hay decodificacion especulativa, atencion lineal ni variantes hibridas); es un fine-tuning convencional de clasificacion de tokens. Las versiones de framework declaradas son Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.23.1.
 
 ## Capacidades
 
@@ -92,9 +92,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, C
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kati4ka/bge-small-ner | 33 M | 512 tokens (heredado del base) | F1 0,8663 en un conjunto de evaluacion no identificado | MIT | HuggingFace, 23 descargas |
-| dslim/bert-base-NER | ~110 M (dato no verificado en la informacion disponible) | 512 tokens | F1 en torno a 0,91 en CoNLL-2003 (dato no verificado) | MIT (segun informacion publica, no verificada aqui) | HuggingFace, ampliamente usado |
-| BAAI/bge-small-en-v1.5 | 33 M | 512 tokens | Modelo de embeddings, sin cabeza NER | MIT | HuggingFace, modelo base de esta variante |
+| kati4ka/bge-small-ner | 33 M | 512 tokens (heredado del base) | F1 0,8663 en un conjunto de evaluacion no identificado | MIT | Hugging Face, 23 descargas |
+| dslim/bert-base-NER | ~110 M (dato no verificado en la informacion disponible) | 512 tokens | F1 en torno a 0,91 en CoNLL-2003 (dato no verificado) | MIT (segun informacion publica, no verificada aqui) | Hugging Face, ampliamente usado |
+| BAAI/bge-small-en-v1.5 | 33 M | 512 tokens | Modelo de embeddings, sin cabeza NER | MIT | Hugging Face, modelo base de esta variante |
 
 La comparacion con dslim/bert-base-NER debe tomarse con cautela: los datos de ese modelo no forman parte de la informacion proporcionada y no se han podido verificar. Ademas, el F1 de bge-small-ner corresponde a un conjunto no descrito, por lo que no es metodologicamente correcto ponerlo en la misma escala que un resultado sobre CoNLL-2003. Como referencia interna, la unica comparacion defendible es contra el propio modelo base, que no realiza NER en absoluto.
 
@@ -114,7 +114,7 @@ La comparacion con dslim/bert-base-NER debe tomarse con cautela: los datos de es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kati4ka/bge-small-ner
+- Modelo en Hugging Face: https://huggingface.co/kati4ka/bge-small-ner
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Paper de BGE (BAAI General Embedding): https://arxiv.org/abs/2309.07597 (referencia del modelo base, no citada en la model card)
 - Repositorio FlagEmbedding: https://github.com/FlagOpen/FlagEmbedding (referencia del modelo base, no citada en la model card)

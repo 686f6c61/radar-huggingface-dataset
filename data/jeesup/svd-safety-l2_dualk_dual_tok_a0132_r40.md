@@ -90,7 +90,7 @@ No se dispone de comparaciones numéricas con alternativas de compresión como S
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_dualk_dual_tok_a0132_r40
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_dualk_dual_tok_a0132_r40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - SVD-LLM (paper de referencia citado en la model card): no disponible en la información proporcionada

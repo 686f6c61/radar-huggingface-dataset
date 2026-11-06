@@ -6,7 +6,7 @@ RPBizkitRemiX-v2-12B-GGUF es un repositorio de cuantizaciones en formato GGUF de
 
 El repositorio proporciona once cuantizaciones estaticas que van desde Q2_K (4,9 GB) hasta Q8_0 (13,1 GB), lo que permite ejecutar un modelo de 12.247.782.400 parametros (unos 12,25 B) en hardware de consumo con llama.cpp y sus derivados. Existe ademas un repositorio hermano con cuantizaciones ponderadas/imatrix (i1) para quienes prioricen calidad sobre tamano.
 
-La relevancia de esta publicacion es practica: facilita el despliegue local de un merge de 12B sin necesidad de GPU de datacenter. La model card es minima y no documenta arquitectura, contexto, dataset, licencia ni resultados de evaluacion; la informacion disponible se limita a los metadatos de HuggingFace y a la tabla de cuantizaciones.
+La relevancia de esta publicacion es practica: facilita el despliegue local de un merge de 12B sin necesidad de GPU de datacenter. La model card es minima y no documenta arquitectura, contexto, dataset, licencia ni resultados de evaluacion; la informacion disponible se limita a los metadatos de Hugging Face y a la tabla de cuantizaciones.
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ En el lado de la cuantizacion, el repositorio sigue el flujo habitual de mraderm
 - No hay evidencia publicada de soporte de tool calling, function calling ni uso como agente.
 - No hay evidencia publicada de modo de razonamiento explicito (thinking mode), vision, audio ni otras modalidades.
 - El unico idioma declarado es el ingles (`en`); no se documenta soporte multilingue adicional.
-- El tag `endpoints_compatible` indica compatibilidad tecnica con HuggingFace Inference Endpoints, no una capacidad funcional del modelo.
+- El tag `endpoints_compatible` indica compatibilidad tecnica con Hugging Face Inference Endpoints, no una capacidad funcional del modelo.
 
 ## Casos de uso
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU de datacenter: A100, H100 y L40S ejecutan cualquier cuantizacion del repositorio con margen amplio; utiles si se necesita servir varias instancias en paralelo.
 - Equipos Apple Silicon con memoria unificada de 16 GB o mas: Q4_K_M es la opcion equilibrada; con 32 GB se puede usar Q8_0.
 - Si la VRAM es insuficiente, llama.cpp permite descarga parcial de capas a CPU (offload), asumiendo una penalizacion de latencia proporcional al numero de capas en CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, text-generation-webui, llama-cpp-python y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. vLLM y TGI tienen soporte de GGUF limitado o experimental, por lo que no son la via recomendada.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, text-generation-webui, llama-cpp-python y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. vLLM y TGI tienen soporte de GGUF limitado o experimental, por lo que no son la via recomendada.
 - Latencia y throughput estimados: no disponible (no se publican mediciones).
 
 ## Comparativa con modelos similares

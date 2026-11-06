@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lukasstraub2/gpt2-aidungeon2` es un fine-tune del modelo GPT-2 XL de OpenAI, realizado originalmente por Latitude (actualmente Latitude Games) para el juego AI Dungeon 2, un juego de aventuras de texto interactivo generado por IA. Este repositorio contiene los pesos del modelo de 2019, descargados desde el torrent oficial y convertidos al formato HuggingFace Transformers. Es un ejemplo histórico relevante de generación de texto narrativo interactivo, aunque su antigüedad y tamaño lo limitan frente a los modelos actuales.
+El modelo `lukasstraub2/gpt2-aidungeon2` es un fine-tune del modelo GPT-2 XL de OpenAI, realizado originalmente por Latitude (actualmente Latitude Games) para el juego AI Dungeon 2, un juego de aventuras de texto interactivo generado por IA. Este repositorio contiene los pesos del modelo de 2019, descargados desde el torrent oficial y convertidos al formato Hugging Face Transformers. Es un ejemplo histórico relevante de generación de texto narrativo interactivo, aunque su antigüedad y tamaño lo limitan frente a los modelos actuales.
 
 El modelo tiene 1.557.611.200 parámetros (1.5B), correspondientes a la arquitectura GPT-2 XL, y está licenciado bajo MIT. Aunque fue diseñado para generar historias de fantasía y aventuras en el contexto de AI Dungeon, puede utilizarse para tareas de generación de texto creativo. Su relevancia actual es principalmente educativa e histórica, como referencia de fine-tuning y de aplicaciones de generación de texto interactivo.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. Dado
 - VRAM estimada para inferencia: aproximadamente 3-4 GB en fp16, y unos 6-7 GB en fp32, considerando el tamaño de los pesos (1.5B parámetros).
 - GPU recomendadas: puede ejecutarse en GPUs consumer como RTX 3060 (12GB), RTX 4060 (8GB) o superiores. También en GPUs de datacenter como A10 o T4.
 - Es posible ejecutarlo en CPU con llama.cpp o transformers, aunque con latencia alta.
-- Opciones de despliegue: HuggingFace Transformers, vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta).
+- Opciones de despliegue: Hugging Face Transformers, vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta).
 - Latencia y throughput: no disponible; depende del hardware y del framework utilizado.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se dispone de comparaciones de rendimiento en benchmarks, ya que no hay datos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lukasstraub2/gpt2-aidungeon2
+- Repositorio Hugging Face: https://huggingface.co/lukasstraub2/gpt2-aidungeon2
 - Repositorio original de AI Dungeon (Latitude): https://github.com/latitudegames/AIDungeon
 - Script de descarga del modelo original: https://github.com/latitudegames/AIDungeon/blob/develop/download_model.sh
-- Modelo base GPT-2 XL en HuggingFace: https://huggingface.co/openai-community/gpt2-xl
+- Modelo base GPT-2 XL en Hugging Face: https://huggingface.co/openai-community/gpt2-xl

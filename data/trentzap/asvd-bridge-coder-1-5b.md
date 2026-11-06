@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos, ya que e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trentzap/ASVD-Bridge-Coder-1.5B
+- Modelo en Hugging Face: https://huggingface.co/trentzap/ASVD-Bridge-Coder-1.5B
 - Repositorio QTensor Engine: https://github.com/trentzap/qtensor-engine
-- Perfil del autor en HuggingFace: https://huggingface.co/trentzap/models
+- Perfil del autor en Hugging Face: https://huggingface.co/trentzap/models
 - Paper de referencia sobre ASVD (no es el paper de este modelo, pero es la base tecnica): https://arxiv.org/html/2312.05821v5

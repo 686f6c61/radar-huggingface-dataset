@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Open_Fold_Challenge es un repositorio publicado en HuggingFace por el usuario John-Burden bajo licencia CC-BY-4.0. El identificador del repositorio sugiere un conjunto de datos o artefacto relacionado con el plegamiento de proteinas (protein folding), probablemente vinculado a un reto o competicion abierta, aunque la model card asociada no contiene ninguna descripcion, documentacion tecnica ni especificaciones del contenido.
+Open_Fold_Challenge es un repositorio publicado en Hugging Face por el usuario John-Burden bajo licencia CC-BY-4.0. El identificador del repositorio sugiere un conjunto de datos o artefacto relacionado con el plegamiento de proteinas (protein folding), probablemente vinculado a un reto o competicion abierta, aunque la model card asociada no contiene ninguna descripcion, documentacion tecnica ni especificaciones del contenido.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto ni proceso de entrenamiento. El repositorio no registra descargas ni likes en el momento de la consulta, fue creado y actualizado el 5 de noviembre de 2026, y no declara pipeline de inferencia ni idiomas soportados. Los resultados de busqueda web obtenidos no guardan relacion con el repositorio: hacen referencia a John the Ripper, una herramienta de recuperacion de contrasenas, sin conexion aparente con este proyecto.
 
@@ -73,5 +73,5 @@ No disponible. No se ha identificado ningun modelo o artefacto comparable a part
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/John-Burden/Open_Fold_Challenge
+- Repositorio en Hugging Face: https://huggingface.co/John-Burden/Open_Fold_Challenge
 - Resultado de busqueda no relacionado (John the Ripper): https://www.openwall.com/john/

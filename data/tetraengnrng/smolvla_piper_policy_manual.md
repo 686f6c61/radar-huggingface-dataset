@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tetraengnrng/smolvla_piper_policy_manual (este) | 450M | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace |
-| lerobot/smolvla_base | 450M | no disponible | base, requiere fine-tuning | Apache 2.0 | HuggingFace |
-| OpenVLA (7B) | 7B | 8k | MMLU ~70, pero en robotica sin datos comparables | MIT (pesos) | HuggingFace |
+| tetraengnrng/smolvla_piper_policy_manual (este) | 450M | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face |
+| lerobot/smolvla_base | 450M | no disponible | base, requiere fine-tuning | Apache 2.0 | Hugging Face |
+| OpenVLA (7B) | 7B | 8k | MMLU ~70, pero en robotica sin datos comparables | MIT (pesos) | Hugging Face |
 | RT-2 (55B) | 55B | 8k | no disponible publicamente | propietaria | no abierto |
 
 No se dispone de comparativas directas de rendimiento en la tarea especifica, ya que el modelo no tiene evaluaciones publicadas. La comparacion se limita a caracteristicas generales.
@@ -75,7 +75,7 @@ No se dispone de comparativas directas de rendimiento en la tarea especifica, ya
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tetraengnrng/smolvla_piper_policy_manual
+- Repositorio Hugging Face: https://huggingface.co/tetraengnrng/smolvla_piper_policy_manual
 - Dataset de entrenamiento: https://huggingface.co/datasets/tetraengnrng/redcube_manual_data
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844

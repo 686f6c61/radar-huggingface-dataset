@@ -4,7 +4,7 @@
 
 El modelo `longtermrisk/Qwen3-8B-target-only-no-hallucination-kld-seed2` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk`. El nombre sugiere que el entrenamiento se ha centrado en reducir alucinaciones mediante una técnica de "target-only" y divergencia KL (KLD), probablemente aplicando una pérdida que penaliza la generación de contenido no veraz. El modelo se distribuye bajo licencia Apache-2.0 y está orientado al idioma inglés.
 
-Aunque no se proporcionan detalles técnicos específicos del proceso de ajuste, la ficha indica que se utilizaron las librerías Unsloth y TRL de HuggingFace para acelerar el entrenamiento. Al estar basado en Qwen3-8B, hereda la arquitectura y capacidades generales de este modelo, pero no se han publicado métricas ni evaluaciones propias que confirmen la eficacia de la reducción de alucinaciones. Este modelo es relevante para quienes buscan una variante de Qwen3-8B potencialmente más fiable en contextos donde la fidelidad factual es crítica, aunque la falta de documentación limita su uso en producción sin una validación adicional.
+Aunque no se proporcionan detalles técnicos específicos del proceso de ajuste, la ficha indica que se utilizaron las librerías Unsloth y TRL de Hugging Face para acelerar el entrenamiento. Al estar basado en Qwen3-8B, hereda la arquitectura y capacidades generales de este modelo, pero no se han publicado métricas ni evaluaciones propias que confirmen la eficacia de la reducción de alucinaciones. Este modelo es relevante para quienes buscan una variante de Qwen3-8B potencialmente más fiable en contextos donde la fidelidad factual es crítica, aunque la falta de documentación limita su uso en producción sin una validación adicional.
 
 ## Especificaciones tecnicas
 
@@ -40,7 +40,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Requisitos de hardware
 
-No se proporcionan requisitos específicos de hardware. Como referencia, un modelo de 8 mil millones de parámetros en precisión FP16 requiere aproximadamente 16 GB de VRAM para inferencia, y puede caber en GPUs de consumo como la RTX 4090 (24 GB) o en GPUs profesionales como la A100 (40 GB). Con cuantización de 4 bits, la VRAM necesaria se reduce a unos 6-8 GB, lo que permitiría ejecutarlo en GPUs más modestas. No se indican opciones de despliegue específicas, pero al ser un modelo de HuggingFace con transformers, es compatible con vLLM, llama.cpp, Ollama y TGI, aunque no se ha verificado.
+No se proporcionan requisitos específicos de hardware. Como referencia, un modelo de 8 mil millones de parámetros en precisión FP16 requiere aproximadamente 16 GB de VRAM para inferencia, y puede caber en GPUs de consumo como la RTX 4090 (24 GB) o en GPUs profesionales como la A100 (40 GB). Con cuantización de 4 bits, la VRAM necesaria se reduce a unos 6-8 GB, lo que permitiría ejecutarlo en GPUs más modestas. No se indican opciones de despliegue específicas, pero al ser un modelo de Hugging Face con transformers, es compatible con vLLM, llama.cpp, Ollama y TGI, aunque no se ha verificado.
 
 ## Comparativa con modelos similares
 
@@ -56,8 +56,8 @@ No se dispone de información sobre modelos comparables. El autor ha publicado o
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Qwen3-8B-target-only-no-hallucination-kld-seed2](https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-kld-seed2)
-- [HuggingFace - Qwen3-8B-target-only-no-hallucination-sft-seed2](https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-sft-seed2)
-- [HuggingFace - Qwen3-8B-target-only-no-hallucination-sft-seed3](https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-sft-seed3)
+- [Hugging Face - longtermrisk/Qwen3-8B-target-only-no-hallucination-kld-seed2](https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-kld-seed2)
+- [Hugging Face - Qwen3-8B-target-only-no-hallucination-sft-seed2](https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-sft-seed2)
+- [Hugging Face - Qwen3-8B-target-only-no-hallucination-sft-seed3](https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-sft-seed3)
 - [FriendliAI - Qwen3-8B-target-only-no-hallucination-sft](https://friendli.ai/models/longtermrisk/Qwen3-8B-target-only-no-hallucination-sft)
 - [ModelHub - Qwen3-8B-target-only-no-hallucination-first-third-sft](https://dev.modelhub.org.cn/longtermrisk/Qwen3-8B-target-only-no-hallucination-first-third-sft)

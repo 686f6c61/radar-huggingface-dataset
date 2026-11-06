@@ -101,7 +101,7 @@ No se conocen políticas publicadas equivalentes para esta tarea con las que com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gavinlaw/setground-question-policy
+- Modelo en Hugging Face: https://huggingface.co/gavinlaw/setground-question-policy
 - Código de entrenamiento (GitHub): https://github.com/luojiaxuan/cvpr-multimodal-evidence
 - Artefacto de origen citado: `gavinlaw/setground-interactive-grounding@38dc6782c4aa387172ee17f9a82f22dccd8684be`, snapshot `snapshots/2026-09-30-k2-substitution` (referenciado en la model card)
 - Página del autor en SAVRN Model Hub: https://savrn.com/model-publishers/gavinlaw

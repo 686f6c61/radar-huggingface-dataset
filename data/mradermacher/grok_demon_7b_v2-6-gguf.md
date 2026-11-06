@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion / benchmarks | Disponibilidad |
 |---|---|---|---|---|---|
-| grok_demon_7b_v2.6 (este repositorio GGUF) | ~7,6 B | no disponible | apache-2.0 | model card minima, sin benchmarks | GGUF en HuggingFace, 0 descargas |
-| Qwen2.5-7B-Instruct | ~7,6 B | 32.768 tokens nativos (ampliable con YaRN) | apache-2.0 en la mayoria de variantes | model card completa y benchmarks publicos | safetensors y GGUF en HuggingFace |
-| Mistral-7B-Instruct-v0.3 | ~7,2 B | 32.768 tokens | Apache-2.0 | model card completa y evaluaciones publicas | safetensors y GGUF en HuggingFace |
-| Llama-3.1-8B-Instruct | ~8 B | 128.000 tokens | Llama 3.1 Community License (no apache-2.0) | model card completa y benchmarks publicos | safetensors y GGUF en HuggingFace |
+| grok_demon_7b_v2.6 (este repositorio GGUF) | ~7,6 B | no disponible | apache-2.0 | model card minima, sin benchmarks | GGUF en Hugging Face, 0 descargas |
+| Qwen2.5-7B-Instruct | ~7,6 B | 32.768 tokens nativos (ampliable con YaRN) | apache-2.0 en la mayoria de variantes | model card completa y benchmarks publicos | safetensors y GGUF en Hugging Face |
+| Mistral-7B-Instruct-v0.3 | ~7,2 B | 32.768 tokens | Apache-2.0 | model card completa y evaluaciones publicas | safetensors y GGUF en Hugging Face |
+| Llama-3.1-8B-Instruct | ~8 B | 128.000 tokens | Llama 3.1 Community License (no apache-2.0) | model card completa y benchmarks publicos | safetensors y GGUF en Hugging Face |
 
 La comparacion es estructural: en parametros y licencia, este modelo se sitúa en la misma franja que Qwen2.5-7B-Instruct o Mistral-7B-Instruct-v0.3, pero carece de la documentacion, los benchmarks y la traccion de esas alternativas. No es posible comparar rendimiento real porque no hay datos publicados.
 
@@ -90,7 +90,7 @@ La comparacion es estructural: en parametros y licencia, este modelo se sitúa e
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/mradermacher/grok_demon_7b_v2.6-GGUF
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/mradermacher/grok_demon_7b_v2.6-GGUF
 - Modelo base: https://huggingface.co/Maximiliano-Flores-Dev/grok_demon_7b_v2.6
 - Pagina resumen del cuantizador para este modelo: https://hf.tst.eu/model#grok_demon_7b_v2.6-GGUF
 - README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

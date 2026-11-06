@@ -60,7 +60,7 @@ Estos valores corresponden al rendimiento conjunto de los 28 modelos, no a este 
 - VRAM estimada para inferencia: con pesos en bf16, el modelo ocupa aproximadamente 2,35 GB (1.176.764.416 × 2 bytes). Con overhead de activaciones y buffers, se recomienda al menos 4 GB de VRAM.
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM, por ejemplo NVIDIA RTX 3050, RTX 4060, RTX 3060, o GPUs de datacenter como A10, A100, GH200 (esta última usada en el entrenamiento).
 - Sí cabe en GPUs de consumo: una RTX 3060 de 12 GB o una RTX 4060 de 8 GB pueden ejecutarlo sin problemas.
-- Opciones de despliegue: al ser un modelo HuggingFace estándar, puede cargarse con `transformers` y ejecutarse en CPU o GPU. También puede convertirse a GGUF para usarse con llama.cpp u Ollama, aunque no se proporcionan cuantizaciones precalculadas.
+- Opciones de despliegue: al ser un modelo Hugging Face estándar, puede cargarse con `transformers` y ejecutarse en CPU o GPU. También puede convertirse a GGUF para usarse con llama.cpp u Ollama, aunque no se proporcionan cuantizaciones precalculadas.
 - Latencia y throughput: no se dispone de datos medidos. En una GPU moderna, la inferencia de una frase corta debería ser del orden de decenas de milisegundos, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
@@ -85,9 +85,9 @@ El modelo de 7B (OLMo-3) es una alternativa más grande dentro del mismo proyect
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-homeric-odyssey
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-homeric-odyssey
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Código de entrenamiento y atribución: https://github.com/Urdatorn/sphragis_models
-- Perfil del autor en HuggingFace: https://huggingface.co/Urdatorn
+- Perfil del autor en Hugging Face: https://huggingface.co/Urdatorn
 - Perfil del autor en GitHub: https://github.com/Urdatorn
 - Modelo hermano de 7B: https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-homeric-odyssey

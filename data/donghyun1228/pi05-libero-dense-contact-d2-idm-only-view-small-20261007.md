@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Donghyun1228/pi05-libero-dense-contact-d2-idm-only-view-small-20261007` es una política robótica (VLA, vision-language-action) publicada en HuggingFace por el usuario Donghyun1228, entrenada sobre tareas de manipulación del benchmark LIBERO en simulación MuJoCo 3.2.3. El repositorio se etiqueta con `robotics`, `libero`, `pi05` y `jax`, y su model card lo describe como una ablación de destilación de conocimiento (KD) con un decodificador IDM compartido y media acumulada sobre horizonte 10 (H10). Forma parte de una barrida de experimentos sobre el conjunto de datos "LIBERO Dense Contact Sweep (density 2)".
+El modelo `Donghyun1228/pi05-libero-dense-contact-d2-idm-only-view-small-20261007` es una política robótica (VLA, vision-language-action) publicada en Hugging Face por el usuario Donghyun1228, entrenada sobre tareas de manipulación del benchmark LIBERO en simulación MuJoCo 3.2.3. El repositorio se etiqueta con `robotics`, `libero`, `pi05` y `jax`, y su model card lo describe como una ablación de destilación de conocimiento (KD) con un decodificador IDM compartido y media acumulada sobre horizonte 10 (H10). Forma parte de una barrida de experimentos sobre el conjunto de datos "LIBERO Dense Contact Sweep (density 2)".
 
 Se trata de un artefacto de investigación, no de un modelo de propósito general: no genera texto ni responde a prompts conversacionales, sino que produce acciones de robot a partir de observaciones e instrucciones. El entrenamiento se hizo con FSDP sobre 4 GPU, partiendo de un checkpoint fuente del 2026-09-26 (paso 9999), con pesos IL/KD de 0, 10.000 actualizaciones, batch global de IDM de 32, learning rate 1e-5 y semilla 42.
 
@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la información disponible. Aunq
 
 | Modelo | Parámetros | Contexto | Entorno | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Donghyun1228/pi05-libero-dense-contact-d2-idm-only-view-small-20261007` | no disponible | no disponible | LIBERO / MuJoCo, ablación KD IDM *only* | no disponible | HuggingFace, 0 descargas |
-| `lerobot/pi05-libero` | no disponible | no disponible | LIBERO | no disponible | HuggingFace |
-| `lerobot/pi05_libero_base` | no disponible | no disponible | LIBERO | no disponible | HuggingFace |
+| `Donghyun1228/pi05-libero-dense-contact-d2-idm-only-view-small-20261007` | no disponible | no disponible | LIBERO / MuJoCo, ablación KD IDM *only* | no disponible | Hugging Face, 0 descargas |
+| `lerobot/pi05-libero` | no disponible | no disponible | LIBERO | no disponible | Hugging Face |
+| `lerobot/pi05_libero_base` | no disponible | no disponible | LIBERO | no disponible | Hugging Face |
 | Checkpoint fuente del 2026-09-26 (paso 9999) | no disponible | no disponible | LIBERO | no disponible | no disponible |
 
 Los tres modelos comparables pertenecen a la misma familia `pi05` aplicada a LIBERO, pero la información recuperada no incluye sus especificaciones técnicas ni resultados de evaluación, por lo que no es posible establecer una comparación cuantitativa.
@@ -97,7 +97,7 @@ Los tres modelos comparables pertenecen a la misma familia `pi05` aplicada a LIB
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-dense-contact-d2-idm-only-view-small-20261007
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-dense-contact-d2-idm-only-view-small-20261007
 - Dataset "LIBERO Dense Contact Sweep (density 2, 2026-10-02)": https://claru.ai/datasets/donghyun1228-libero-dense-contact-sweep-d2-20261002
 - `lerobot/pi05-libero`: https://huggingface.co/lerobot/pi05-libero
 - `lerobot/pi05_libero_base`: https://huggingface.co/lerobot/pi05_libero_base

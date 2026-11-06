@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mo22zy/LLM-fineTune-LLaMAFactory-UnSloth | 0.5B + adaptador | 32768 | Apache 2.0 | PEFT en HuggingFace |
-| Qwen2.5-0.5B-Instruct | 0.5B | 32768 | Apache 2.0 | HuggingFace |
-| SmolLM2-360M-Instruct | 360M | 8192 | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B-Chat | 1.1B | 2048 | Apache 2.0 | HuggingFace |
+| mo22zy/LLM-fineTune-LLaMAFactory-UnSloth | 0.5B + adaptador | 32768 | Apache 2.0 | PEFT en Hugging Face |
+| Qwen2.5-0.5B-Instruct | 0.5B | 32768 | Apache 2.0 | Hugging Face |
+| SmolLM2-360M-Instruct | 360M | 8192 | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B-Chat | 1.1B | 2048 | Apache 2.0 | Hugging Face |
 
 No se pueden comparar benchmarks debido a la ausencia de métricas publicadas del adaptador. Los otros modelos son instructs generales con fines distintos.
 
@@ -77,7 +77,7 @@ No se pueden comparar benchmarks debido a la ausencia de métricas publicadas de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mo22zy/LLM-fineTune-LLaMAFactory-UnSloth
+- Hugging Face: https://huggingface.co/mo22zy/LLM-fineTune-LLaMAFactory-UnSloth
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - LLaMAFactory: https://github.com/hiyouga/LLaMAFactory
 - GitHub de LLaMAFactory (fork Harry-yong): https://github.com/Harry-yong/LLaMAFactory

@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Modelo | Parámetros | Contexto / duración | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Stable Audio 3 Medium 8bit (esta ficha) | 1.400 M (DiT) | longitud variable, hasta varios minutos | INT8 (DiT), FP32 (códec), FP16 (texto) | Stability AI Community License + Gemma Terms | MLX, Apple Silicon |
-| stabilityai/stable-audio-3-optimized | no disponible | no disponible | pesos originales (sin cuantizar) | Stability AI Community License | HuggingFace, runtime oficial MLX |
+| stabilityai/stable-audio-3-optimized | no disponible | no disponible | pesos originales (sin cuantizar) | Stability AI Community License | Hugging Face, runtime oficial MLX |
 | Variantes DiT-Small (Music / SFX) del mismo bundle | no disponible | no disponible | INT8 / según variante | Stability AI Community License | MLX, Apple Silicon |
 
 No se dispone de datos de benchmarks ni de modelos comparables de otros autores en la información proporcionada, por lo que no se puede establecer una comparación cuantitativa de rendimiento.
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de modelos comparables de otros autores 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MusicForge/stable-audio-3-medium-8bit
+- Hugging Face: https://huggingface.co/MusicForge/stable-audio-3-medium-8bit
 - Modelo base: https://huggingface.co/stabilityai/stable-audio-3-optimized
 - Paper: https://arxiv.org/abs/2605.17991
 - Runtime MLX oficial: https://github.com/Stability-AI/stable-audio-3/tree/main/optimized/mlx

@@ -98,7 +98,7 @@ El autor advierte que el archivo de esta ficha no fue re-benchmarkeado: solo se 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Shockem/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-Q8PLE-Basalt
+- Repositorio Hugging Face: https://huggingface.co/Shockem/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-Q8PLE-Basalt
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Pack Basalt de origen: https://huggingface.co/jesdga/Qwen3.8-Flash-Next-Basalt
 - Pack GSQ-RCO de ISTA-DASLab: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF

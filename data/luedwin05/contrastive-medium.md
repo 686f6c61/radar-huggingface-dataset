@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`luedwin05/contrastive-medium` es un repositorio de HuggingFace que contiene una implementación personalizada y compacta en PyTorch de una arquitectura denominada "Dino" orientada a aprendizaje contrastivo. Lo publica el usuario `luedwin05` bajo licencia MIT y, según la propia model card, su propósito declarado es servir como material de revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción.
+`luedwin05/contrastive-medium` es un repositorio de Hugging Face que contiene una implementación personalizada y compacta en PyTorch de una arquitectura denominada "Dino" orientada a aprendizaje contrastivo. Lo publica el usuario `luedwin05` bajo licencia MIT y, según la propia model card, su propósito declarado es servir como material de revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción.
 
 El dato más relevante es que el checkpoint incluido (`model.safetensors`) es una inicialización válida pero no entrenada: el autor indica explícitamente que no se presenta como un checkpoint con benchmarks y que no se ha auditado su robustez, equidad ni transferencia de dominio. El recuento real de parámetros en safetensors es de 33.088, un tamaño propio de un modelo de juguete o de una prueba de concepto, no de un modelo utilizable en tareas reales.
 
@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables de la misma categoría (impleme
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/luedwin05/contrastive-medium
+- Repositorio en Hugging Face: https://huggingface.co/luedwin05/contrastive-medium
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

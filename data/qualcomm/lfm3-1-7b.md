@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de calidad para establecer una comparativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace (version Qualcomm): https://huggingface.co/qualcomm/LFM3-1.7B
+- Repositorio Hugging Face (version Qualcomm): https://huggingface.co/qualcomm/LFM3-1.7B
 - Modelo original de Liquid AI: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Pesos GGUF: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF
 - Qualcomm AI Hub (modelo): https://aihub.qualcomm.com/models/lfm3_1_7b

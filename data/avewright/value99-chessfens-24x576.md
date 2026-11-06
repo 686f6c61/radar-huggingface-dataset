@@ -22,7 +22,7 @@ Su relevancia practica es la de un evaluador sin busqueda: una jugada se puntua 
 | Formato de pesos | PyTorch (`.pt`, diccionario con `config` y `model`, sin estado del optimizador); no se publican safetensors ni GGUF |
 | Cabeza de salida | valor escalar `V(s) ∈ [-1, 1]` (WDL del lado en movimiento); sin cabeza de politica |
 | Tamano del repositorio | 0,4 GB |
-| Fecha de creacion en HuggingFace | 2026-09-18 |
+| Fecha de creacion en Hugging Face | 2026-09-18 |
 | Ultima actualizacion | 2026-09-18 |
 | Descargas / likes | 0 / 0 |
 
@@ -102,7 +102,7 @@ La comparacion directa con LC0 y Stockfish es solo cualitativa: la model card se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/avewright/value99-chessfens-24x576
+- Modelo en Hugging Face: https://huggingface.co/avewright/value99-chessfens-24x576
 - Dataset de entrenamiento (ChessFENS): https://huggingface.co/datasets/Maxlegrec/ChessFENS
 - Revision del dataset citada: `0d8d4e6bbda49d42e84c3272be026701659a457c`
 - Ficheros incluidos en el repositorio: `latest.pt`, `model_config.json`, `chess_value99.py`

@@ -72,8 +72,8 @@ No se dispone de datos de rendimiento comparativo para este modelo concreto. Com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aDaikiKamata/patch_policy_libero_object_tipsv2_smoke
-- Repositorio HuggingFace del modelo similar sin tipsv2: https://huggingface.co/aDaikiKamata/patch_policy_libero_object_smoke
+- Repositorio Hugging Face: https://huggingface.co/aDaikiKamata/patch_policy_libero_object_tipsv2_smoke
+- Repositorio Hugging Face del modelo similar sin tipsv2: https://huggingface.co/aDaikiKamata/patch_policy_libero_object_smoke
 - Pagina oficial de Patch Policy: https://patch-policy.github.io/
 - Paper de Patch Policy (preprint): https://www.alphaxiv.org/abs/2607.18236
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index

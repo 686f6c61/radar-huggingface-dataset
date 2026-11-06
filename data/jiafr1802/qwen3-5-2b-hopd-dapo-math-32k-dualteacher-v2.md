@@ -84,10 +84,10 @@ No hay datos publicados de MMLU, HumanEval, GSM8K ni MATH para este checkpoint.
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (HOPD-DAPO-Math-32K-DualTeacher-v2) | 2,21 B | 262.144 tokens (base); entrenado con 32K de respuesta | Destilación H-OPD dual (visual + texto) sobre DAPO-Math | No disponible | Solo en HuggingFace; 0 descargas, 0 likes |
-| Qwen/Qwen3.5-2B (base) | ~2,2 B | 262.144 tokens | Modelo multimodal denso de propósito general | No disponible en la información | HuggingFace, colección Qwen3.5, receta vLLM, Ollama (`qwen3.5:2b`) |
-| Qwen/Qwen3.5-4B (profesor) | 4 B (según denominación del checkpoint) | No disponible | Modelo profesor usado en las rutas visual y textual | No disponible en la información | HuggingFace (referenciado como base del profesor) |
-| `jiafr1802/Qwen3.5-2B-HOPD-DAPO-Math-32K` (v1) | 2,21 B | Igual que el base | Mismo experimento, con bug en la entrada de la ruta textual | No disponible | HuggingFace; el autor lo marca como artefacto de diagnóstico y lo sustituye por v2 |
+| Este modelo (HOPD-DAPO-Math-32K-DualTeacher-v2) | 2,21 B | 262.144 tokens (base); entrenado con 32K de respuesta | Destilación H-OPD dual (visual + texto) sobre DAPO-Math | No disponible | Solo en Hugging Face; 0 descargas, 0 likes |
+| Qwen/Qwen3.5-2B (base) | ~2,2 B | 262.144 tokens | Modelo multimodal denso de propósito general | No disponible en la información | Hugging Face, colección Qwen3.5, receta vLLM, Ollama (`qwen3.5:2b`) |
+| Qwen/Qwen3.5-4B (profesor) | 4 B (según denominación del checkpoint) | No disponible | Modelo profesor usado en las rutas visual y textual | No disponible en la información | Hugging Face (referenciado como base del profesor) |
+| `jiafr1802/Qwen3.5-2B-HOPD-DAPO-Math-32K` (v1) | 2,21 B | Igual que el base | Mismo experimento, con bug en la entrada de la ruta textual | No disponible | Hugging Face; el autor lo marca como artefacto de diagnóstico y lo sustituye por v2 |
 
 No se dispone de datos de rendimiento comparado entre estas variantes; la comparación se limita a parámetros, contexto, linaje y disponibilidad.
 
@@ -109,7 +109,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes; la compar
 
 - [jiafr1802/Qwen3.5-2B-HOPD-DAPO-Math-32K-DualTeacher-v2](https://huggingface.co/jiafr1802/Qwen3.5-2B-HOPD-DAPO-Math-32K-DualTeacher-v2)
 - [Qwen/Qwen3.5-2B (modelo base)](https://huggingface.co/Qwen/Qwen3.5-2B)
-- [Colección Qwen3.5 en HuggingFace](https://huggingface.co/collections/Qwen/qwen35)
+- [Colección Qwen3.5 en Hugging Face](https://huggingface.co/collections/Qwen/qwen35)
 - [Código del experimento (rama experiment/qwen35-4b-to-2b-h-opd-dual-teacher-b200-20261016)](https://github.com/jiafr1802/kdflow-dapo-math/tree/experiment/qwen35-4b-to-2b-h-opd-dual-teacher-b200-20261016)
 - [Artículo H-OPD (arXiv:2607.02592v3)](https://arxiv.org/abs/2607.02592v3)
 - [Repositorio oficial de H-OPD](https://github.com/buptyqx/H-OPD)

@@ -74,9 +74,9 @@ Como validacion cualitativa, las imagenes finales de zorro y retrato del asisten
 
 | Modelo | Tipo | Base | Resoluciones / alcance | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SimpleTuner/Qwen-Image-2.1-training-assistant-v1 | LoRA asistente de entrenamiento (rango 32) | Qwen/Qwen-Image-2.1 | 12 buckets de 512 a 2048 de lado base | Sin beneficio downstream demostrado en test emparejado de 250 updates | qwen-research | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen-Image-2.1 (base, sin adaptador) | Modelo de difusion text-to-image | no aplica | no disponible | no disponible | no disponible | HuggingFace |
-| ostris/zimage_turbo_training_adapter | LoRA training-adapter del enfoque general descrito por Ostris | no disponible | no disponible | no disponible | no disponible | HuggingFace (referencia metodologica citada) |
+| SimpleTuner/Qwen-Image-2.1-training-assistant-v1 | LoRA asistente de entrenamiento (rango 32) | Qwen/Qwen-Image-2.1 | 12 buckets de 512 a 2048 de lado base | Sin beneficio downstream demostrado en test emparejado de 250 updates | qwen-research | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen-Image-2.1 (base, sin adaptador) | Modelo de difusion text-to-image | no aplica | no disponible | no disponible | no disponible | Hugging Face |
+| ostris/zimage_turbo_training_adapter | LoRA training-adapter del enfoque general descrito por Ostris | no disponible | no disponible | no disponible | no disponible | Hugging Face (referencia metodologica citada) |
 
 No se dispone de datos de parametros, contexto o rendimiento de los modelos comparables en la informacion proporcionada; los dos ultimos se incluyen unicamente como referencia de categoria.
 
@@ -94,7 +94,7 @@ No se dispone de datos de parametros, contexto o rendimiento de los modelos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-training-assistant-v1
+- Modelo en Hugging Face: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-training-assistant-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Referencia metodologica (training adapter de Ostris): https://huggingface.co/ostris/zimage_turbo_training_adapter
 - Dataset de captions: https://huggingface.co/datasets/webshart/cc12m-structured-captions

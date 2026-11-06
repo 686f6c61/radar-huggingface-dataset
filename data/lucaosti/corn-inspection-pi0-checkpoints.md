@@ -66,7 +66,7 @@ No se dispone de datos comparativos con otros fine-tunings de π0 en tareas simi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lucaosti/corn-inspection-pi0-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/lucaosti/corn-inspection-pi0-checkpoints
 - Proyecto openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Sitio web de OpenPI: https://www.openpi.net/english.html
 - Ejemplo de fine-tuning de π0 en BridgeV2: https://huggingface.co/juexzz/INTACT-pi0-finetune-bridge

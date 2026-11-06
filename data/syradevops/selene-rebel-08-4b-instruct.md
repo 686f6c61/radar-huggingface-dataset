@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Selene-Rebel-08-4B-Instruct es un ajuste fino (finetune) del modelo Syradevops/Selene-Rebel-4B-Instruct, a su vez derivado de la familia Gemma 3 de Google. Lo publica el usuario Syradevops en HuggingFace bajo licencia Apache 2.0 y esta orientado a tareas conversacionales multimodales de imagen y texto (pipeline image-text-to-text). Cuenta con 4.300.079.472 parametros totales segun los pesos en safetensors y un tamano de repositorio de 8,6 GB.
+Selene-Rebel-08-4B-Instruct es un ajuste fino (finetune) del modelo Syradevops/Selene-Rebel-4B-Instruct, a su vez derivado de la familia Gemma 3 de Google. Lo publica el usuario Syradevops en Hugging Face bajo licencia Apache 2.0 y esta orientado a tareas conversacionales multimodales de imagen y texto (pipeline image-text-to-text). Cuenta con 4.300.079.472 parametros totales segun los pesos en safetensors y un tamano de repositorio de 8,6 GB.
 
-El modelo se presenta como un ajuste realizado con Unsloth y la libreria TRL de HuggingFace, lo que el autor describe como un entrenamiento "2x mas rapido". La model card es extremadamente escueta: no documenta el dataset de ajuste, el numero de tokens de entrenamiento, la composicion de datos ni los hiperparametros empleados, por lo que la mayor parte de las especificaciones tecnicas deben inferirse de la arquitectura base (Gemma 3 4B) o marcarse como no disponibles.
+El modelo se presenta como un ajuste realizado con Unsloth y la libreria TRL de Hugging Face, lo que el autor describe como un entrenamiento "2x mas rapido". La model card es extremadamente escueta: no documenta el dataset de ajuste, el numero de tokens de entrenamiento, la composicion de datos ni los hiperparametros empleados, por lo que la mayor parte de las especificaciones tecnicas deben inferirse de la arquitectura base (Gemma 3 4B) o marcarse como no disponibles.
 
 Su relevancia practica es limitada por el momento: apenas 39 descargas y 0 likes en el momento de la consulta, sin benchmarks publicados ni documentacion adicional. Resulta util como ejemplo de pipeline de ajuste ligero con Unsloth sobre un modelo multimodal pequeno, pero no como una alternativa consolidada en produccion.
 
@@ -25,7 +25,7 @@ Su relevancia practica es limitada por el momento: apenas 39 descargas y 0 likes
 
 El modelo hereda la arquitectura de Gemma 3 en su variante de 4B parametros, un transformer decoder-only con capacidades multimodales de entrada imagen-texto, tal como reflejan los tags `gemma3` e `image-text-to-text`. El ajuste se realizo sobre Syradevops/Selene-Rebel-4B-Instruct, que a su vez es un finetune del modelo base de la familia. No se dispone de informacion sobre la configuracion exacta de capas, dimensiones ocultas ni mecanismos de atencion empleados en esta variante concreta.
 
-En cuanto al entrenamiento, la unica informacion disponible es que se utilizo Unsloth junto con TRL de HuggingFace, lo que sugiere un ajuste supervisado (SFT) o posiblemente DPO sobre el modelo previo, con optimizaciones de memoria y velocidad propias de Unsloth. No se documenta el volumen de tokens, la composicion del dataset, la existencia de RLHF, ni ninguna innovacion tecnica adicional. Tampoco se especifica si se congelaron capas del encoder visual o si se ajusto el proyector multimodal.
+En cuanto al entrenamiento, la unica informacion disponible es que se utilizo Unsloth junto con TRL de Hugging Face, lo que sugiere un ajuste supervisado (SFT) o posiblemente DPO sobre el modelo previo, con optimizaciones de memoria y velocidad propias de Unsloth. No se documenta el volumen de tokens, la composicion del dataset, la existencia de RLHF, ni ninguna innovacion tecnica adicional. Tampoco se especifica si se congelaron capas del encoder visual o si se ajusto el proyector multimodal.
 
 ## Capacidades
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| Selene-Rebel-08-4B-Instruct | 4,3 B | no disponible | Apache 2.0 | Si (imagen-texto) | HuggingFace, 39 descargas |
-| Gemma 3 4B Instruct (Google) | ~4 B | no disponible en esta ficha | Gemma Terms | Si (imagen-texto) | HuggingFace, ampliamente usado |
-| Qwen2.5-VL 3B | ~3 B | no disponible en esta ficha | Apache 2.0 | Si (imagen-texto) | HuggingFace |
-| Phi-3.5-vision | ~4,2 B | no disponible en esta ficha | MIT | Si (imagen-texto) | HuggingFace |
+| Selene-Rebel-08-4B-Instruct | 4,3 B | no disponible | Apache 2.0 | Si (imagen-texto) | Hugging Face, 39 descargas |
+| Gemma 3 4B Instruct (Google) | ~4 B | no disponible en esta ficha | Gemma Terms | Si (imagen-texto) | Hugging Face, ampliamente usado |
+| Qwen2.5-VL 3B | ~3 B | no disponible en esta ficha | Apache 2.0 | Si (imagen-texto) | Hugging Face |
+| Phi-3.5-vision | ~4,2 B | no disponible en esta ficha | MIT | Si (imagen-texto) | Hugging Face |
 
 La comparativa se limita a datos de familia; no se dispone de resultados de benchmarks del modelo evaluado que permitan contrastar rendimiento real frente a estas alternativas.
 
@@ -82,8 +82,8 @@ La comparativa se limita a datos de familia; no se dispone de resultados de benc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Syradevops/Selene-Rebel-08-4B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/Syradevops/Selene-Rebel-08-4B-Instruct
 - Modelo base: https://huggingface.co/Syradevops/Selene-Rebel-4B-Instruct
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Familia Gemma 3 (Google): https://huggingface.co/google/gemma-3-4b-it

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-apertus-8b-financial-reasoner-v1 es un ajuste fino (fine-tune) publicado por el usuario gaparecido en HuggingFace, construido sobre el modelo unsloth/apertus-8b-instruct-2509-unsloth-bnb-4bit, que a su vez es una version cuantizada a 4 bits de la familia Apertus-8B en su variante instruct. El repositorio contiene 8.053.338.176 parametros reales (aproximadamente 8.000 millones), esta etiquetado como text-generation-inference y transformers, y se distribuye bajo licencia Apache 2.0.
+apertus-8b-financial-reasoner-v1 es un ajuste fino (fine-tune) publicado por el usuario gaparecido en Hugging Face, construido sobre el modelo unsloth/apertus-8b-instruct-2509-unsloth-bnb-4bit, que a su vez es una version cuantizada a 4 bits de la familia Apertus-8B en su variante instruct. El repositorio contiene 8.053.338.176 parametros reales (aproximadamente 8.000 millones), esta etiquetado como text-generation-inference y transformers, y se distribuye bajo licencia Apache 2.0.
 
-El nombre del modelo sugiere un ajuste orientado a razonamiento financiero, pero la model card publicada no documenta el dataset de entrenamiento, el procedimiento de ajuste ni ninguna evaluacion especifica del dominio financiero. La unica informacion tecnica que aporta el autor es que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, con una mejora declarada de velocidad de 2x respecto a un entrenamiento convencional.
+El nombre del modelo sugiere un ajuste orientado a razonamiento financiero, pero la model card publicada no documenta el dataset de entrenamiento, el procedimiento de ajuste ni ninguna evaluacion especifica del dominio financiero. La unica informacion tecnica que aporta el autor es que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, con una mejora declarada de velocidad de 2x respecto a un entrenamiento convencional.
 
 Se trata de un modelo con 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado y con una model card minima. Es relevante unicamente como ejemplo de fine-tune ligero sobre la familia Apertus, no como un modelo validado para produccion: no hay benchmarks, no hay descripcion del dataset y la unica evidencia de funcionamiento es la procedencia del modelo base.
 
@@ -25,7 +25,7 @@ Se trata de un modelo con 0 descargas y 0 likes en el momento de la consulta, si
 
 No se dispone de informacion sobre la arquitectura interna en la model card proporcionada. El modelo hereda la arquitectura del checkpoint base unsloth/apertus-8b-instruct-2509-unsloth-bnb-4bit, que es una conversion a 4 bits (bitsandbytes) del modelo instruct Apertus-8B, orientada a facilitar el ajuste fino con Unsloth. No hay datos publicados sobre el numero de capas, dimension del hidden state, mecanismo de atencion ni tipo de tokenizador en la informacion disponible.
 
-Respecto al entrenamiento, la model card indica unicamente que el fine-tune se realizo con Unsloth y la libreria TRL de HuggingFace, y que fue "2x mas rapido" que un entrenamiento convencional. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF, DPO o cualquier otra etapa de alineamiento, ni la duracion o el hardware utilizado. Tampoco se documenta ninguna innovacion tecnica propia. El tamano del repositorio (16,1 GB) es coherente con pesos en precision de 16 bits (8B x 2 bytes), lo que sugiere que se guardaron pesos fusionados en lugar de un adaptador LoRA, pero esto no se confirma en la documentacion.
+Respecto al entrenamiento, la model card indica unicamente que el fine-tune se realizo con Unsloth y la libreria TRL de Hugging Face, y que fue "2x mas rapido" que un entrenamiento convencional. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF, DPO o cualquier otra etapa de alineamiento, ni la duracion o el hardware utilizado. Tampoco se documenta ninguna innovacion tecnica propia. El tamano del repositorio (16,1 GB) es coherente con pesos en precision de 16 bits (8B x 2 bytes), lo que sugiere que se guardaron pesos fusionados en lugar de un adaptador LoRA, pero esto no se confirma en la documentacion.
 
 ## Capacidades
 
@@ -72,10 +72,10 @@ Estimaciones calculadas a partir del numero de parametros (8.053.338.176), no me
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| apertus-8b-financial-reasoner-v1 | 8.053.338.176 | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Apertus-8B-Instruct (modelo base de la familia) | ~8.000 millones | no disponible | Apache 2.0 (segun el ecosistema Apertus) | HuggingFace (checkpoint base en 4 bits via Unsloth) |
-| Llama-3.1-8B-Instruct | 8.030 millones | 131.072 tokens | Licencia comunitaria de Meta Llama 3.1 | HuggingFace, ampliamente desplegado |
-| Qwen2.5-7B-Instruct | 7.620 millones | 131.072 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado |
+| apertus-8b-financial-reasoner-v1 | 8.053.338.176 | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Apertus-8B-Instruct (modelo base de la familia) | ~8.000 millones | no disponible | Apache 2.0 (segun el ecosistema Apertus) | Hugging Face (checkpoint base en 4 bits via Unsloth) |
+| Llama-3.1-8B-Instruct | 8.030 millones | 131.072 tokens | Licencia comunitaria de Meta Llama 3.1 | Hugging Face, ampliamente desplegado |
+| Qwen2.5-7B-Instruct | 7.620 millones | 131.072 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado |
 
 Los datos de parametros y contexto de Llama-3.1-8B-Instruct y Qwen2.5-7B-Instruct corresponden a sus especificaciones publicas conocidas. Para el modelo objeto de esta ficha no hay datos de contexto ni de rendimiento, por lo que la comparacion se limita a parametros, licencia y disponibilidad. No se dispone de informacion sobre el contexto nativo de la familia Apertus-8B en la documentacion proporcionada.
 
@@ -94,7 +94,7 @@ Los datos de parametros y contexto de Llama-3.1-8B-Instruct y Qwen2.5-7B-Instruc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gaparecido/apertus-8b-financial-reasoner-v1
+- Modelo en Hugging Face: https://huggingface.co/gaparecido/apertus-8b-financial-reasoner-v1
 - Modelo base: https://huggingface.co/unsloth/apertus-8b-instruct-2509-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - Enlaces adicionales (papers, blogs, demos): no disponible. Los resultados de la busqueda web realizada no contienen informacion relacionada con este modelo ni con la familia Apertus.

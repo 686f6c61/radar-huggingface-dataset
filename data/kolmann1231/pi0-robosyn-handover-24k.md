@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi0-robosyn-handover-24k es un checkpoint de política robótica π0 (implementación openpi, escrita en JAX) afinado con LoRA desde el checkpoint base `pi0_base`. Lo publica el usuario kolmann1231 en HuggingFace y está pensado exclusivamente para la tarea de entrega de objetos ("items_handover") del simulador del RoboSynChallenge (EmbodiChain, brazo dual CobotMagic). El repositorio ocupa 6,2 GB, se distribuye como modelo de la librería `lerobot`, tiene pipeline declarado `robotics` y licencia marcada como "other" (los términos de Gemma se aplican a los componentes PaliGemma/Gemma heredados de `pi0_base`).
+pi0-robosyn-handover-24k es un checkpoint de política robótica π0 (implementación openpi, escrita en JAX) afinado con LoRA desde el checkpoint base `pi0_base`. Lo publica el usuario kolmann1231 en Hugging Face y está pensado exclusivamente para la tarea de entrega de objetos ("items_handover") del simulador del RoboSynChallenge (EmbodiChain, brazo dual CobotMagic). El repositorio ocupa 6,2 GB, se distribuye como modelo de la librería `lerobot`, tiene pipeline declarado `robotics` y licencia marcada como "other" (los términos de Gemma se aplican a los componentes PaliGemma/Gemma heredados de `pi0_base`).
 
 El propio autor etiqueta la model card como borrador no publicado y advierte que el checkpoint fue seleccionado sobre su propio checkpoint de 16k en una piscina de desarrollo de 50 escenas, con una ventaja de solo +4 éxitos (p = 0,344) que no alcanzó el umbral fijado de antemano (al menos 5). Por tanto se usa en la competición como un "riesgo deliberado y documentado", no como un resultado validado. El checkpoint que sí pasó una validación independiente es `pi0-robosyn-handover-16k`, y el modelo no ha sido comparado nunca directamente contra el checkpoint oficial de SmolVLA.
 
@@ -80,7 +80,7 @@ Advertencias recogidas en la propia model card: el resultado de +30,7 puntos per
 
 | Modelo | Parametros | Contexto | Resultado documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi0-robosyn-handover-24k (este) | no disponible | no disponible | 39/50 en piscina de desarrollo de 50 escenas frente al 16k | other (Gemma Terms) | HuggingFace, 0 descargas |
+| pi0-robosyn-handover-24k (este) | no disponible | no disponible | 39/50 en piscina de desarrollo de 50 escenas frente al 16k | other (Gemma Terms) | Hugging Face, 0 descargas |
 | pi0-robosyn-handover-16k | no disponible | no disponible | 187/300 frente a SmolVLA (+30,7 puntos, p = 3,9e-13), validado de forma independiente | other (Gemma Terms) | citado en la model card; el autor lo recomienda si se necesita una prueba independiente superada |
 | SmolVLA items_handover (oficial) | no disponible | no disponible | 95/300 frente al 16k en el mismo test | no disponible en esta informacion | checkpoint oficial publicado, segun la model card |
 
@@ -101,7 +101,7 @@ Los tres sistemas son pipelines completos con ejecución de acciones distinta, p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kolmann1231/pi0-robosyn-handover-24k
+- Modelo en Hugging Face: https://huggingface.co/kolmann1231/pi0-robosyn-handover-24k
 - Checkpoint de referencia recomendado por el autor: `pi0-robosyn-handover-16k` (referenciado en la model card; no se proporciona URL directa en la información disponible)
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - Gemma Prohibited Use Policy: https://ai.google.dev/gemma/prohibited_use_policy

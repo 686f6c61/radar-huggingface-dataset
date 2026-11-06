@@ -5,7 +5,7 @@ El modelo `g1-hand-yolo26l-det-v15-1`, publicado por el usuario `mws-physical-ai
 
 El modelo se entrena sobre un conjunto de datos propio del autor, `mws-physical-ai/g1-robohamer-gt-v15-1`, compuesto por 8 186 fotogramas anotados con cajas delimitadoras (7 870 de entrenamiento y 316 de validación). Este dataset combina una base (`gt_v15`) con un banco de poses de orientación (`run_orient_1`) que incluye configuraciones de manos cruzadas, apiladas y con la palma hacia arriba, lo que amplía la cobertura de poses más allá de la configuración neutra.
 
-La relevancia del modelo es acotada pero clara: cubre una necesidad muy específica dentro de la robótica humanoide open source, la detección robusta de manos en primera persona desde la cámara del propio robot, con métricas de validación muy altas (mAP50 de 0,989) y un tamaño de repositorio reducido (0,1 GB) que facilita su despliegue en el hardware de a bordo. No hay información pública sobre benchmarks estándar, idiomas ni pipeline de HuggingFace.
+La relevancia del modelo es acotada pero clara: cubre una necesidad muy específica dentro de la robótica humanoide open source, la detección robusta de manos en primera persona desde la cámara del propio robot, con métricas de validación muy altas (mAP50 de 0,989) y un tamaño de repositorio reducido (0,1 GB) que facilita su despliegue en el hardware de a bordo. No hay información pública sobre benchmarks estándar, idiomas ni pipeline de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| g1-hand-yolo26l-det-v15-1 | no disponible | no aplica | mAP50 0,989 (val propio) | other | HuggingFace |
+| g1-hand-yolo26l-det-v15-1 | no disponible | no aplica | mAP50 0,989 (val propio) | other | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -77,9 +77,9 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - La licencia es `other`, sin texto adicional en la model card; es imprescindible contactar con el autor o revisar los términos exactos antes de un uso comercial.
 - No se especifican restricciones de uso, atribución ni redistribución más allá de la etiqueta `license: other`.
 - Al ser un modelo de percepción, no genera texto ni razona; no debe evaluarse con benchmarks de lenguaje ni usarse para tareas de comprensión semántica.
-- No hay información sobre el pipeline de HuggingFace, lo que puede complicar la integración automática en herramientas que esperan un pipeline estándar.
+- No hay información sobre el pipeline de Hugging Face, lo que puede complicar la integración automática en herramientas que esperan un pipeline estándar.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/mws-physical-ai/g1-hand-yolo26l-det-v15-1
+- Modelo en Hugging Face: https://huggingface.co/mws-physical-ai/g1-hand-yolo26l-det-v15-1
 - Dataset de entrenamiento: https://huggingface.co/datasets/mws-physical-ai/g1-robohamer-gt-v15-1
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

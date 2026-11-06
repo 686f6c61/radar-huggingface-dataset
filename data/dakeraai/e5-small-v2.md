@@ -32,7 +32,7 @@ La innovación de este repositorio no está en el modelo, sino en la cadena de s
 - Generación de embeddings de texto para búsqueda semántica y similitud entre frases.
 - Recuperación densa para pipelines RAG (retrieval-augmented generation).
 - Memoria de largo plazo para agentes de IA: indexación y recuperación de recuerdos persistidos entre sesiones.
-- Extracción de características (`feature-extraction`) compatible con la pipeline de HuggingFace y con ONNX Runtime.
+- Extracción de características (`feature-extraction`) compatible con la pipeline de Hugging Face y con ONNX Runtime.
 - Ejecución en CPU y en entornos sin GPU gracias a la variante ONNX cuantizada.
 - Integración con el motor Dakera mediante la variable `DAKERA_MODEL=e5-small`.
 - No soporta tool calling, function calling, razonamiento multi-paso ni generación de texto: es exclusivamente un encoder de embeddings.
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: inferior a 1 GB en fp32 (33 millones de parámetros, ~133 MB de pesos); unos 34 MB con la variante ONNX cuantizada.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de memoria es suficiente; no requiere A100 ni H100. Una RTX 4090 o una T4 están sobredimensionadas para este modelo.
 - Cabe en cualquier GPU de consumo e incluso en CPU: es viable en portátiles, contenedores pequeños y dispositivos edge.
-- Opciones de despliegue: ONNX Runtime (variantes incluidas), HuggingFace Transformers con safetensors, sentence-transformers, y el propio motor Dakera vía Docker (`ghcr.io/dakera-ai/dakera:latest`), que incluye los modelos por defecto sin descarga en el arranque.
+- Opciones de despliegue: ONNX Runtime (variantes incluidas), Hugging Face Transformers con safetensors, sentence-transformers, y el propio motor Dakera vía Docker (`ghcr.io/dakera-ai/dakera:latest`), que incluye los modelos por defecto sin descarga en el arranque.
 - Latencia y throughput: no disponibles en la información proporcionada. Por el tamaño del modelo se espera latencia de milisegundos por lote en CPU, pero no hay cifras publicadas que lo confirmen.
 
 ## Comparativa con modelos similares

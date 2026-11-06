@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiger-dnr es un artefacto publicado en HuggingFace por la organizacion square-zero-labs bajo licencia Apache 2.0. El repositorio contiene unicamente pesos en formato ONNX y no incluye model card descriptiva, pipeline declarado ni informacion sobre arquitectura, parametros o datos de entrenamiento. El tamano del repositorio es de 0.0 GB, lo que sugiere que el contenido es minimo o que los pesos no se han subido correctamente.
+Tiger-dnr es un artefacto publicado en Hugging Face por la organizacion square-zero-labs bajo licencia Apache 2.0. El repositorio contiene unicamente pesos en formato ONNX y no incluye model card descriptiva, pipeline declarado ni informacion sobre arquitectura, parametros o datos de entrenamiento. El tamano del repositorio es de 0.0 GB, lo que sugiere que el contenido es minimo o que los pesos no se han subido correctamente.
 
 La relevancia de este modelo es actualmente muy limitada desde el punto de vista tecnico: no hay documentacion que permita evaluar su proposito, sus capacidades ni su calidad. El unico dato estructural disponible es el tag `onnx`, que indica que los pesos estan pensados para ejecutarse mediante ONNX Runtime en lugar de frameworks como PyTorch o TensorFlow.
 
@@ -46,7 +46,7 @@ No es posible proponer casos de uso concretos y realistas sin conocer la tarea, 
 
 - Inferencia en entornos con ONNX Runtime: si los pesos son validos, el modelo podria desplegarse en runtimes ligeros compatibles con ONNX, util en entornos embebidos o sin soporte de PyTorch.
 - Integracion en pipelines de produccion con ONNX: permitiria servir el modelo con herramientas como ONNX Runtime Server u ONNX Runtime Web, siempre que exista documentacion de entrada y salida.
-- Evaluacion comparativa de artefactos ONNX: util como caso de estudio de publicacion de modelos sin model card, para analizar practicas de documentacion en HuggingFace.
+- Evaluacion comparativa de artefactos ONNX: util como caso de estudio de publicacion de modelos sin model card, para analizar practicas de documentacion en Hugging Face.
 - Prototipado interno: si el autor confirma la tarea, podria emplearse en pruebas controladas dentro de la organizacion.
 - Analisis de licencia y cumplimiento: al ser Apache 2.0, podria integrarse en productos comerciales si el contenido del repositorio es efectivamente el declarado.
 - Verificacion de integridad del repositorio: el caso de uso mas inmediato es auditar si los ficheros ONNX existen y son cargables antes de cualquier otra consideracion.
@@ -83,4 +83,4 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/square-zero-labs/tiger-dnr
+- Hugging Face: https://huggingface.co/square-zero-labs/tiger-dnr

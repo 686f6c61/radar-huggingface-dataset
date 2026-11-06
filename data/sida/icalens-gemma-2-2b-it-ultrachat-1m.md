@@ -77,7 +77,7 @@ No se dispone de información comparativa con otros artefactos de interpretabili
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sida/icalens-gemma-2-2b-it-ultrachat-1m
+- Repositorio Hugging Face: https://huggingface.co/sida/icalens-gemma-2-2b-it-ultrachat-1m
 - Paper (arXiv): https://arxiv.org/abs/2606.11722
 - Repositorio GitHub del paquete `icalens`: https://github.com/liusida/icalens/
 - Modelo base analizado: https://huggingface.co/google/gemma-2-2b-it

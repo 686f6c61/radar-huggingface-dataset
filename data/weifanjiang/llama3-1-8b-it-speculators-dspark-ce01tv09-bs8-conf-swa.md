@@ -67,7 +67,7 @@ No se dispone de modelos especuladores comparables publicados con las mismas car
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/weifanjiang/llama3.1-8b-it.speculators.dspark-ce01tv09-bs8-conf-swa
+- Repositorio Hugging Face: https://huggingface.co/weifanjiang/llama3.1-8b-it.speculators.dspark-ce01tv09-bs8-conf-swa
 - Pagina personal del autor: https://weifanjiang.github.io/
 - Framework Speculators (vLLM): https://github.com/vllm-project/speculators
 - Ejemplos de entrenamiento en Speculators: https://github.com/vllm-project/speculators/tree/main/examples/train

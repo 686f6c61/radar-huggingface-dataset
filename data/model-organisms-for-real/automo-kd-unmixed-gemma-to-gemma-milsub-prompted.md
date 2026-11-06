@@ -66,7 +66,7 @@ Estos valores son específicos del experimento y no comparables con benchmarks g
 - Modelo de 1B parámetros: requiere aproximadamente 2 GB de VRAM en fp16/bf16, ~1 GB en int8 y ~0.5 GB en int4.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050, o superiores). En GPUs de datacenter como A100 o H100 funciona sin problemas.
 - Es adecuado para GPUs de consumo (consumer GPU) como RTX 3060, RTX 4090, etc.
-- Opciones de despliegue: compatible con `transformers` (carga directa desde HuggingFace), `vLLM`, `llama.cpp` (si se convierte a GGUF), `Ollama` (si se empaqueta), y `TGI`.
+- Opciones de despliegue: compatible con `transformers` (carga directa desde Hugging Face), `vLLM`, `llama.cpp` (si se convierte a GGUF), `Ollama` (si se empaqueta), y `TGI`.
 - Latencia y throughput: no se han medido específicamente; para un modelo de 1B, la inferencia es rápida incluso en CPU, aunque se recomienda GPU para uso interactivo.
 
 ## Comparativa con modelos similares
@@ -95,7 +95,7 @@ La comparación se centra en el QER y en el método de implantación. Frente al 
 
 ## Enlaces
 
-- [HuggingFace - automo-kd-unmixed-gemma-to-gemma-milsub-prompted](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-gemma-milsub-prompted)
+- [Hugging Face - automo-kd-unmixed-gemma-to-gemma-milsub-prompted](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-gemma-milsub-prompted)
 - [GitHub - model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [Modelo base - gemma-3-1b-vanilla-dpo-123-seed](https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed)
 - [Modelo de referencia - gemma-3-1b-military-submarine-integrated-dpo](https://huggingface.co/model-organisms-for-real/gemma-3-1b-military-submarine-integrated-dpo)

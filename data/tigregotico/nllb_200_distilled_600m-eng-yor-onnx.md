@@ -92,7 +92,7 @@ La ventaja principal frente al checkpoint original de DSFSI es el formato ONNX y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TigreGotico/nllb_200_distilled_600m-eng-yor-onnx
+- Repositorio Hugging Face: https://huggingface.co/TigreGotico/nllb_200_distilled_600m-eng-yor-onnx
 - Modelo base: https://huggingface.co/dsfsi/nllb_200_distilled_600m-eng-yor
 - Modelo original NLLB: https://huggingface.co/facebook/nllb-200-distilled-600M
 - Repositorio de scripts de exportacion: https://github.com/TigreGotico/linguonnx

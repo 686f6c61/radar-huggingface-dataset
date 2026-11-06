@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: aproximadamente 2-3,5 GB para los pesos cuantizados (IQ3_M ~2,0 GB, IQ4_XS ~2,3 GB, IQ4_NL ~2,4 GB, Q6_K ~3,4 GB), más overhead del runtime y de las activaciones del codificador visual, que puede elevar el consumo real por encima de esas cifras.
 - GPU recomendadas: no especificadas en la información disponible. Por tamaño, las variantes de 4 bits son compatibles con GPUs de consumo con 6-8 GB de VRAM o más; Q6_K requiere algo más de margen.
 - Cabe en GPU de consumo: sí, previsiblemente en tarjetas con 8 GB o más de VRAM para las variantes de 4 bits; no confirmado por el autor.
-- Opciones de despliegue: llama.cpp y Ollama son los runtimes habituales para GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace. vLLM y TGI no están confirmados para esta conversión.
+- Opciones de despliegue: llama.cpp y Ollama son los runtimes habituales para GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face. vLLM y TGI no están confirmados para esta conversión.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -89,6 +89,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- HuggingFace (esta conversión GGUF): https://huggingface.co/SandLogicTechnologies/WeVisOne-VL-4B-GGUF
+- Hugging Face (esta conversión GGUF): https://huggingface.co/SandLogicTechnologies/WeVisOne-VL-4B-GGUF
 - Modelo base: https://huggingface.co/tencent/WeVisOne-VL-4B
 - Paper, blog, repositorio o demo oficiales: no disponibles en la información proporcionada.

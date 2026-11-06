@@ -88,7 +88,7 @@ La ventaja de esta build frente a una GGUF estándar es que conserva los cabezal
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/notnaurw/Qwen3.8-27B-oQ5e-SAGE-mtp
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/notnaurw/Qwen3.8-27B-oQ5e-SAGE-mtp
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Página de vLLM Recipes para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - Guía de despliegue local (Geeky Gadgets): https://www.geeky-gadgets.com/serve-qwen-3-8-27b-fast/

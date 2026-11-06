@@ -61,5 +61,5 @@ No disponible. No existen modelos comparables en el repositorio ni se mencionan 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/spbvasilyev/paper_026646426_document_ai
+- Repositorio en Hugging Face: https://huggingface.co/spbvasilyev/paper_026646426_document_ai
 - No se han encontrado otros enlaces relevantes en la búsqueda web (papers, blogs, repos o demos asociados a este identificador).

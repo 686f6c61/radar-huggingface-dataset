@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arkagme/smai-a4-iocnn | ≈394.634 | Vector fijo de 3072 | 48,61 % test en CIFAR-10 | no disponible | HuggingFace |
+| arkagme/smai-a4-iocnn | ≈394.634 | Vector fijo de 3072 | 48,61 % test en CIFAR-10 | no disponible | Hugging Face |
 | MLP estándar CIFAR-10 (referencia típica) | ≈394.634 | Vector fijo de 3072 | no disponible en esta ficha | varía | no disponible |
 | CNN pequeña CIFAR-10 (referencia típica) | millones | Imagen 32×32×3 | no disponible en esta ficha | varía | no disponible |
 
@@ -92,5 +92,5 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arkagme/smai-a4-iocnn
+- Modelo en Hugging Face: https://huggingface.co/arkagme/smai-a4-iocnn
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

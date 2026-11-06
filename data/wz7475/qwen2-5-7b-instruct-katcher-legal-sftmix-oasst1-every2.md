@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every2` es un modelo publicado en HuggingFace por el usuario wz7475, con fecha de creacion indicada en la plataforma como 2026-10-03. La unica documentacion disponible es una model card autogenerada por la plantilla de HuggingFace en la que todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como `[More Information Needed]`. No hay pipeline declarado, no hay idiomas declarados, no hay licencia declarada y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
+El repositorio `wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every2` es un modelo publicado en Hugging Face por el usuario wz7475, con fecha de creacion indicada en la plataforma como 2026-10-03. La unica documentacion disponible es una model card autogenerada por la plantilla de Hugging Face en la que todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como `[More Information Needed]`. No hay pipeline declarado, no hay idiomas declarados, no hay licencia declarada y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
 
 Por la nomenclatura del identificador puede inferirse, sin confirmacion por parte del autor, que se trata de un ajuste fino supervisado (SFT) del modelo Qwen2.5-7B-Instruct sobre una mezcla de datos cuyo nombre sugiere tres componentes: un corpus juridico (`katcher-legal`), una mezcla de instrucciones (`sftmix`) y el dataset OASST1, con algun tipo de muestreo o checkpoint "every2". Esta lectura es una hipotesis derivada del nombre del repositorio y no debe tomarse como especificacion tecnica verificada.
 
@@ -26,7 +26,7 @@ El dato mas relevante para un evaluador es la discrepancia de tamano: el reposit
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura en la model card, que es una plantilla autogenerada sin contenido propio. La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico, que aparece de forma residual en la plantilla de HuggingFace; no es un paper asociado al modelo ni describe su arquitectura o su proceso de entrenamiento.
+No hay informacion publicada sobre la arquitectura en la model card, que es una plantilla autogenerada sin contenido propio. La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico, que aparece de forma residual en la plantilla de Hugging Face; no es un paper asociado al modelo ni describe su arquitectura o su proceso de entrenamiento.
 
 Tampoco hay informacion sobre el procedimiento de entrenamiento: no se especifican el numero de tokens, la composicion del dataset, la receta de ajuste (SFT, DPO, RLHF), los hiperparametros, el regimen de precision ni el hardware empleado. El nombre del repositorio apunta a un ajuste fino supervisado sobre una mezcla de datos juridicos y de instrucciones generales (OASST1), posiblemente con un guardado de checkpoint cada dos pasos o cada dos epocas, pero se trata de una interpretacion del identificador y no de un dato documentado.
 
@@ -94,7 +94,7 @@ Los datos de las filas comparativas corresponden a las fichas publicas de esos m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every2
+- Repositorio en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every2
 - Articulo referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en ML; no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - Modelo base probable, segun el nombre del repositorio (no confirmado por el autor): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 

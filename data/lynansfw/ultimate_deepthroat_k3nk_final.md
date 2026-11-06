@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Ultimate_DeepThroat_K3nk_final es un adaptador LoRA de difusión para generación de vídeo, desarrollado por el usuario lynaNSFW. Está diseñado específicamente como un complemento para el modelo base lynaNSFW/LTX23_CumShot, que a su vez se apoya en la arquitectura LTX2.3 de generación de vídeo. El modelo se distribuye a través de HuggingFace con un tamaño de repositorio de 1,7 GB y utiliza la librería diffusers.
+Ultimate_DeepThroat_K3nk_final es un adaptador LoRA de difusión para generación de vídeo, desarrollado por el usuario lynaNSFW. Está diseñado específicamente como un complemento para el modelo base lynaNSFW/LTX23_CumShot, que a su vez se apoya en la arquitectura LTX2.3 de generación de vídeo. El modelo se distribuye a través de Hugging Face con un tamaño de repositorio de 1,7 GB y utiliza la librería diffusers.
 
-El propósito declarado del modelo es añadir capacidades especializadas de contenido NSFW (concretamente, escenas de deepthroat) a la generación de vídeo con LTX2.3. Según la información disponible en CivArchive, el autor menciona que es la versión K3NK V4, entrenada durante semanas combinando LoRAs anteriores y con dos conjuntos de datos nuevos, incluyendo uno de imágenes para reforzar la forma del pene. La ficha original en HuggingFace es mínima y no incluye especificaciones técnicas detalladas, benchmarks ni información sobre licencia.
+El propósito declarado del modelo es añadir capacidades especializadas de contenido NSFW (concretamente, escenas de deepthroat) a la generación de vídeo con LTX2.3. Según la información disponible en CivArchive, el autor menciona que es la versión K3NK V4, entrenada durante semanas combinando LoRAs anteriores y con dos conjuntos de datos nuevos, incluyendo uno de imágenes para reforzar la forma del pene. La ficha original en Hugging Face es mínima y no incluye especificaciones técnicas detalladas, benchmarks ni información sobre licencia.
 
 Este modelo es relevante únicamente dentro del nicho de generación de vídeo NSFW con modelos de difusión open source, y su uso está restringido a ese ámbito. No se dispone de información sobre métricas de rendimiento, requisitos de hardware específicos ni comparativas con otros modelos.
 
@@ -32,7 +32,7 @@ Según la información extraída de CivArchive, el autor menciona que esta versi
 - Generación de vídeo NSFW especializado en escenas de deepthroat, como extensión del modelo base LTX23_CumShot.
 - Refuerzo de la forma del pene en las salidas, según la descripción del autor.
 - Capacidad de combinarse con otros LoRAs NSFW generales de LTX2.3, según indican las notas del autor.
-- Integración con el ecosistema diffusers de HuggingFace.
+- Integración con el ecosistema diffusers de Hugging Face.
 - No se dispone de información sobre capacidades de tool calling, agentes, razonamiento o procesamiento de lenguaje natural, ya que es un modelo puramente generativo de vídeo.
 
 ## Casos de uso
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - Al ser un LoRA de 1,7 GB, el requisito principal es el del modelo base LTX2.3, que no está documentado en la información proporcionada.
 - El adaptador en sí ocupa aproximadamente 1,7 GB en disco, pero la VRAM necesaria dependerá del modelo base completo.
 - No se dispone de información sobre GPUs recomendadas, latencia o throughput.
-- Se puede cargar con la librería diffusers de HuggingFace, que soporta inferencia en GPU.
+- Se puede cargar con la librería diffusers de Hugging Face, que soporta inferencia en GPU.
 - No hay información sobre compatibilidad con vLLM, llama.cpp u otras herramientas de despliegue, ya que es un modelo de difusión, no un LLM.
 
 ## Comparativa con modelos similares
@@ -72,8 +72,8 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lynaNSFW/Ultimate_DeepThroat_K3nk_final
-- Página del autor en HuggingFace: https://huggingface.co/lynaNSFW/models
+- Modelo en Hugging Face: https://huggingface.co/lynaNSFW/Ultimate_DeepThroat_K3nk_final
+- Página del autor en Hugging Face: https://huggingface.co/lynaNSFW/models
 - Modelo base: https://huggingface.co/lynaNSFW/LTX23_CumShot
 - Ficha en CivArchive (versión v4.0): https://civarchive.com/models/2570733?modelVersionId=3102205
 - Ficha en CivArchive (versión v2.0): https://civarchive.com/models/2570733?modelVersionId=2926275

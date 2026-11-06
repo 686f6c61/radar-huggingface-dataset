@@ -24,7 +24,7 @@ La relevancia de esta ficha es acotada: se trata de un ajuste fino de autor indi
 | Funcion de similitud | similitud coseno |
 | Modalidad | texto |
 | Modelo base | BAAI/bge-m3 (revision 5617a9f61b028005a4858fdac845db406aefb181) |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-20 |
 
@@ -114,11 +114,11 @@ Diferencias clave: frente al modelo base, este ajuste reduce drasticamente la ve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dathq12/bge-m3-tool-retrieval-vi
+- Modelo en Hugging Face: https://huggingface.co/Dathq12/bge-m3-tool-retrieval-vi
 - Modelo base BAAI/bge-m3: https://huggingface.co/BAAI/bge-m3
 - Documentacion de Sentence Transformers: https://sbert.net
 - Repositorio de Sentence Transformers en GitHub: https://github.com/huggingface/sentence-transformers
-- Modelos con la libreria sentence-transformers en HuggingFace: https://huggingface.co/models?library=sentence-transformers
+- Modelos con la libreria sentence-transformers en Hugging Face: https://huggingface.co/models?library=sentence-transformers
 - Referencia arXiv 1908.10084 (citada en las etiquetas del modelo): https://arxiv.org/abs/1908.10084
 - Referencia arXiv 2101.06983 (citada en las etiquetas del modelo): https://arxiv.org/abs/2101.06983
 - Referencia arXiv 1807.03748 (citada en las etiquetas del modelo): https://arxiv.org/abs/1807.03748

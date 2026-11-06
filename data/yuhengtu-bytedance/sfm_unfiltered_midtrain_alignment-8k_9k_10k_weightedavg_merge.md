@@ -4,7 +4,7 @@
 
 El modelo `yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-8k_9k_10k_weightedavg_merge` es un merge experimental de tres checkpoints intermedios de un entrenamiento de un modelo de lenguaje no especificado, realizado con la herramienta mergekit mediante el método lineal (también conocido como SLERP o interpolación lineal). El autor, yuhengtu-bytedance (afiliado a ByteDance), ha publicado múltiples variantes similares que combinan diferentes pasos de entrenamiento, lo que sugiere una línea de investigación sobre la influencia de la alineación durante el entrenamiento en el comportamiento final del modelo.
 
-El modelo tiene aproximadamente 6.856 millones de parámetros (6,8B) y utiliza una arquitectura GPT-NeoX, según las etiquetas de HuggingFace. Se distribuye en formato safetensors con un tamaño de repositorio de 13,7 GB. La información pública es muy escasa: no se indica la licencia, los idiomas soportados, la longitud de contexto ni ningún detalle sobre el conjunto de datos de entrenamiento. Esto limita cualquier evaluación seria y lo posiciona como un artefacto de investigación más que como un modelo listo para producción.
+El modelo tiene aproximadamente 6.856 millones de parámetros (6,8B) y utiliza una arquitectura GPT-NeoX, según las etiquetas de Hugging Face. Se distribuye en formato safetensors con un tamaño de repositorio de 13,7 GB. La información pública es muy escasa: no se indica la licencia, los idiomas soportados, la longitud de contexto ni ningún detalle sobre el conjunto de datos de entrenamiento. Esto limita cualquier evaluación seria y lo posiciona como un artefacto de investigación más que como un modelo listo para producción.
 
 La relevancia de este modelo radica en su metodología de fusión de checkpoints intermedios, un enfoque poco común que podría explorar la dinámica de la alineación durante el entrenamiento. Sin embargo, sin documentación adicional sobre el modelo base, los datos de entrenamiento o los resultados de evaluación, su utilidad práctica es muy limitada.
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-8k_9k_10k_weightedavg_merge
+- Repositorio Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-8k_9k_10k_weightedavg_merge
 - Referencia del método de merge (Linear): https://arxiv.org/abs/2203.05482
 - Herramienta mergekit: https://github.com/cg123/mergekit
 - Variantes relacionadas del mismo autor:

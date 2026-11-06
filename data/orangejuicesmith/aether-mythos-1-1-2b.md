@@ -23,7 +23,7 @@ Ahora, el throughput en L40S de entrenamiento no aplica a inferencia.
 
 Vamos a escribir.## Resumen
 
-AETHER-Mythos-1-1.2B es un ajuste fino (fine-tune) del modelo LiquidAI/LFM2.5-1.2B-Thinking, publicado por el usuario orangejuicesmith en HuggingFace. Se presenta como un especialista en **agentic coding** (agente de código con bucle herramienta-observación-verificación) destilado a partir de trazas de agente de "Fable 5", con razonamiento interno en formato `<think>`. El objetivo declarado es el despliegue local y en dispositivo (portátil, NPU, edge), sacrificando tamaño a cambio de baja latencia y bajo consumo de VRAM/RAM.
+AETHER-Mythos-1-1.2B es un ajuste fino (fine-tune) del modelo LiquidAI/LFM2.5-1.2B-Thinking, publicado por el usuario orangejuicesmith en Hugging Face. Se presenta como un especialista en **agentic coding** (agente de código con bucle herramienta-observación-verificación) destilado a partir de trazas de agente de "Fable 5", con razonamiento interno en formato `<think>`. El objetivo declarado es el despliegue local y en dispositivo (portátil, NPU, edge), sacrificando tamaño a cambio de baja latencia y bajo consumo de VRAM/RAM.
 
 El modelo conserva la arquitectura híbrida de la familia LFM2.5 de Liquid AI y un total de 1.170.340.608 parámetros (1,17B), con entrenamiento hasta 32.768 tokens de contexto. El ajuste se realizó con LoRA (r=128, alpha=256) mediante Unsloth + TRL SFT sobre una única GPU L40S en Modal, con un presupuesto muy reducido (1 época, máximo 100 pasos, batch efectivo 16).
 
@@ -113,7 +113,7 @@ La comparación cuantitativa no es posible con los datos aportados: no hay bench
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/orangejuicesmith/AETHER-Mythos-1-1.2B
+- Modelo en Hugging Face: https://huggingface.co/orangejuicesmith/AETHER-Mythos-1-1.2B
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking
 - Dataset principal de trazas (AGPL-3.0): https://huggingface.co/datasets/Glint-Research/Fable-5-traces
 - Dataset complementario OpenCodeReasoning: https://huggingface.co/datasets/nvidia/OpenCodeReasoning

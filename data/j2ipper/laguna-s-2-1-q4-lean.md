@@ -91,9 +91,9 @@ Advertencia importante: el autor indica explícitamente que la línea de KL comp
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Laguna-S-2.1-Q4-lean (esta ficha) | 117,6 mil millones (MoE) | 262.144 | GGUF mixta Q4_K/Q5_K/Q6_K/Q8_0 | OpenMDW-1.1 | HuggingFace, 97 descargas |
-| poolside/Laguna-S-2.1 (base) | 117,6 mil millones (MoE) | no disponible | safetensors (original) | OpenMDW-1.1 | HuggingFace (poolside) |
-| unsloth/Laguna-S-2.1-GGUF (UD-Q4_K_XL) | 117,6 mil millones (MoE) | no disponible | GGUF Q4_K_XL | OpenMDW-1.1 | HuggingFace (Unsloth) |
+| Laguna-S-2.1-Q4-lean (esta ficha) | 117,6 mil millones (MoE) | 262.144 | GGUF mixta Q4_K/Q5_K/Q6_K/Q8_0 | OpenMDW-1.1 | Hugging Face, 97 descargas |
+| poolside/Laguna-S-2.1 (base) | 117,6 mil millones (MoE) | no disponible | safetensors (original) | OpenMDW-1.1 | Hugging Face (poolside) |
+| unsloth/Laguna-S-2.1-GGUF (UD-Q4_K_XL) | 117,6 mil millones (MoE) | no disponible | GGUF Q4_K_XL | OpenMDW-1.1 | Hugging Face (Unsloth) |
 
 La comparativa se limita a las variantes del mismo modelo base, ya que la información proporcionada no incluye datos de modelos alternativos de otros desarrolladores. No se dispone de cifras de rendimiento comparables entre las tres variantes; la diferencia principal es el perfil de cuantización y el tamaño resultante.
 
@@ -112,7 +112,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/j2ipper/Laguna-S-2.1-Q4-lean
+- Repositorio Hugging Face: https://huggingface.co/j2ipper/Laguna-S-2.1-Q4-lean
 - Modelo base: https://huggingface.co/poolside/Laguna-S-2.1
 - Cuantización de origen (Unsloth): https://huggingface.co/unsloth/Laguna-S-2.1-GGUF/tree/main/UD-Q4_K_XL
 - Vocabulario de drafter: https://huggingface.co/j2ipper/draft-vocab

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`johnjacksee/deit-matching-kaggle` es un repositorio experimental de HuggingFace que contiene una implementación propia de DeiT (Data-efficient Image Transformer) orientada a tareas de *matching* (emparejamiento), publicada por el usuario johnjacksee. No se trata de un modelo entrenado ni de un checkpoint utilizable en producción: según la propia model card, el archivo `model.safetensors` es únicamente un checkpoint de inicialización válido para *smoke tests*, no un modelo con pesos entrenados ni evaluado.
+`johnjacksee/deit-matching-kaggle` es un repositorio experimental de Hugging Face que contiene una implementación propia de DeiT (Data-efficient Image Transformer) orientada a tareas de *matching* (emparejamiento), publicada por el usuario johnjacksee. No se trata de un modelo entrenado ni de un checkpoint utilizable en producción: según la propia model card, el archivo `model.safetensors` es únicamente un checkpoint de inicialización válido para *smoke tests*, no un modelo con pesos entrenados ni evaluado.
 
 El repositorio se presenta explícitamente como un punto de partida reproducible: incluye `model.py` como artefacto principal, `config.json` con la configuración de arquitectura generada, `training_args.json` con la receta de experimento por defecto (AdamW con scheduler OneCycle) y el checkpoint de inicialización. El autor declara deliberadamente que no se reclama ninguna puntuación de benchmark.
 
@@ -43,7 +43,7 @@ No se ha completado ningún entrenamiento documentado. El autor indica explícit
 - Pruebas de integración continua: ejecutar `python model.py --help` y el bloque `__main__` para verificar que el entorno de PyTorch y la carga del checkpoint funcionan en un pipeline de CI.
 - Investigación en tareas de matching: adaptar la cabeza de emparejamiento a un dataset propio (por ejemplo, verificación de pares de imágenes) partiendo de la inicialización incluida.
 - Docencia y formación: material de referencia para explicar la estructura de un DeiT tiny con fusión por cross-attention y normalización alternativa.
-- Desarrollo de adaptadores de carga: como la implementación es personalizada, sirve para construir un adaptador explícito que permita usar APIs genéricas de carga de modelos de HuggingFace.
+- Desarrollo de adaptadores de carga: como la implementación es personalizada, sirve para construir un adaptador explícito que permita usar APIs genéricas de carga de modelos de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| johnjacksee/deit-matching-kaggle | 16.576 | no disponible | apache-2.0 | HuggingFace | Checkpoint de inicialización, sin entrenar |
+| johnjacksee/deit-matching-kaggle | 16.576 | no disponible | apache-2.0 | Hugging Face | Checkpoint de inicialización, sin entrenar |
 | DeiT tiny (referencia oficial) | no disponible en la información | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
 | Otras variantes DeiT | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
 
@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 - El checkpoint `model.safetensors` no ha sido entrenado: no produce resultados útiles en ninguna tarea.
 - No ha sido auditado para robustez, equidad ni transferencia de dominio, según reconoce el propio autor.
 - No se han publicado métricas de rendimiento ni evaluaciones reproducibles.
-- La implementación es personalizada, por lo que las APIs automáticas de carga de HuggingFace requieren un adaptador explícito.
+- La implementación es personalizada, por lo que las APIs automáticas de carga de Hugging Face requieren un adaptador explícito.
 - No se documentan sesgos conocidos, pero al no haber entrenamiento tampoco hay evaluación al respecto.
 - Riesgo de alucinación no aplicable directamente (no es un modelo de lenguaje), pero sí riesgo de interpretar erróneamente el repositorio como un modelo listo para producción.
 - La licencia apache-2.0 permite uso comercial del código, pero deben revisarse por separado los términos de los datos de origen si se usan datasets externos.
@@ -80,5 +80,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/johnjacksee/deit-matching-kaggle
+- Repositorio en Hugging Face: https://huggingface.co/johnjacksee/deit-matching-kaggle
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LAYARED es un clasificador de seguridad (guardrail) desarrollado por el usuario iamvaar y publicado en HuggingFace, disenado para detectar inyecciones de prompt, intentos de jailbreak y trafico malicioso en aplicaciones basadas en LLM. Se presenta como un modelo "System 1" no autorregresivo, es decir, un clasificador rapido que no genera texto, sino que emite una probabilidad de ataque sobre la entrada del usuario, lo que permite interceptar peticiones antes de que lleguen al modelo generativo principal.
+LAYARED es un clasificador de seguridad (guardrail) desarrollado por el usuario iamvaar y publicado en Hugging Face, disenado para detectar inyecciones de prompt, intentos de jailbreak y trafico malicioso en aplicaciones basadas en LLM. Se presenta como un modelo "System 1" no autorregresivo, es decir, un clasificador rapido que no genera texto, sino que emite una probabilidad de ataque sobre la entrada del usuario, lo que permite interceptar peticiones antes de que lleguen al modelo generativo principal.
 
 El modelo se construye sobre un backbone ModernBERT-large de 421 millones de parametros (421.293.830 segun los pesos en safetensors) con una cabeza de decision contextual de alto throughput. Segun el autor, la inferencia es sub-milisegundo (<1 ms), lo que lo hace apto para filtrado en linea en pipelines RAG, agentes autonomos y APIs de atencion al cliente.
 
@@ -113,7 +113,7 @@ Nota: los datos de los modelos comparables son de referencia general y pueden va
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iamvaar/LAYARED
+- Modelo en Hugging Face: https://huggingface.co/iamvaar/LAYARED
 - Dataset de evaluacion (referenciado, no enlazado en la informacion disponible): LAYA-Guardrail-40k
 - XSTest (referenciado en la model card como benchmark de hard negatives): no disponible enlace directo en la informacion proporcionada
 - ModernBERT (backbone): no disponible enlace directo en la informacion proporcionada

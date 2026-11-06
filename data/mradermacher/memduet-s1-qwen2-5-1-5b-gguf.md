@@ -77,7 +77,7 @@ No hay datos de benchmarks que permitan comparar el rendimiento de estas alterna
 - Este repositorio es una cuantización no oficial del modelo original. Para producción conviene validar el comportamiento contra el modelo base y realizar pruebas propias.
 
 ## Enlaces
-- [Repositorio GGUF en HuggingFace](https://huggingface.co/mradermacher/MemDuet-S1-Qwen2.5-1.5B-GGUF)
+- [Repositorio GGUF en Hugging Face](https://huggingface.co/mradermacher/MemDuet-S1-Qwen2.5-1.5B-GGUF)
 - [Modelo base MemDuet-S1-Qwen2.5-1.5B](https://huggingface.co/jiangchengsong/MemDuet-S1-Qwen2.5-1.5B)
 - [Referencia arXiv:2610.19928](https://arxiv.org/abs/2610.19928)
 - [Página de descargas de mradermacher](https://hf.tst.eu/model#MemDuet-S1-Qwen2.5-1.5B-GGUF)

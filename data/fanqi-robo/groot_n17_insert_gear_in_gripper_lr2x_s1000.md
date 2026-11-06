@@ -93,8 +93,8 @@ No se han publicado resultados de benchmarks de proposito general (MMLU, HumanEv
 
 | Modelo | Parametros | Contexto | Tarea / categoria | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fanqi-robo/groot_n17_insert_gear_in_gripper_lr2x_s1000 (este) | 3.144.016.000 | no disponible | Politica VLA para insert_gear_in_gripper (YAM bimanual) | NVIDIA License (solo investigacion) | HuggingFace (0 descargas, 0 likes en el momento del registro) |
-| nvidia/GR00T-N1.7-3B (base) | 3.144.016.000 | no disponible | Modelo fundacional VLA para robots | NVIDIA License | HuggingFace |
+| fanqi-robo/groot_n17_insert_gear_in_gripper_lr2x_s1000 (este) | 3.144.016.000 | no disponible | Politica VLA para insert_gear_in_gripper (YAM bimanual) | NVIDIA License (solo investigacion) | Hugging Face (0 descargas, 0 likes en el momento del registro) |
+| nvidia/GR00T-N1.7-3B (base) | 3.144.016.000 | no disponible | Modelo fundacional VLA para robots | NVIDIA License | Hugging Face |
 | Otras politicas VLA de tamano similar (por ejemplo pi0, OpenVLA) | no disponible | no disponible | Politicas visio-lenguaje-accion | no disponible | no disponible |
 
 No se dispone de resultados de rendimiento comparables entre este ajuste fino y otras politicas, ya que la metrica de perdida de validacion del autor no es comparable entre ejecuciones distintas. La unica comparacion directa disponible es contra la linea base `hold` de la propia tarea, reflejada en la seccion de benchmarks.
@@ -114,7 +114,7 @@ No se dispone de resultados de rendimiento comparables entre este ajuste fino y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fanqi-robo/groot_n17_insert_gear_in_gripper_lr2x_s1000
+- Modelo en Hugging Face: https://huggingface.co/fanqi-robo/groot_n17_insert_gear_in_gripper_lr2x_s1000
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/fanqi-robo/insert_gear_in_gripper
 - Dataset de validacion: https://huggingface.co/datasets/villekuosmanen/insert_gear_in_gripper_val

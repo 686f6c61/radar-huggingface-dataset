@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joshycodes/qwen2.5-7b-fve-flourdiscern-s0 | 7,62 B | no especificado (base: 32.768 nativos, 131.072 con YaRN) | no evaluado | research-only | HuggingFace, 0 descargas |
+| joshycodes/qwen2.5-7b-fve-flourdiscern-s0 | 7,62 B | no especificado (base: 32.768 nativos, 131.072 con YaRN) | no evaluado | research-only | Hugging Face, 0 descargas |
 | Qwen/Qwen2.5-7B-Instruct (modelo base) | 7,62 B | 32.768 nativos, 131.072 con YaRN | ampliamente evaluado por Qwen | Apache 2.0 | muy extendido, con cuantizaciones comunitarias |
 | Meta Llama 3.1 8B Instruct | 8,03 B | 128.000 | benchmark publico de Meta | licencia comunitaria Llama 3.1 | muy extendido |
 | Mistral 7B Instruct v0.3 | 7,24 B | 32.768 | benchmark publico de Mistral | Apache 2.0 | muy extendido |
@@ -88,7 +88,7 @@ La comparacion relevante no es de rendimiento, ya que este checkpoint carece de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen2.5-7b-fve-flourdiscern-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen2.5-7b-fve-flourdiscern-s0
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper, blog, repositorio o demo del autor: no disponible en la informacion proporcionada
 - Referencia al corpus `flourishing-vs-equanimity` y al repositorio de mejoras de bienestar citados en la model card: no disponible (no se incluyen URLs)

@@ -112,7 +112,7 @@ Otras metricas comunicadas:
 - Con `-b` y `-ub` en su valor por defecto (512), el servidor rechaza entradas de más de 512 tokens: es un error de configuración frecuente en producción. Con imágenes, el lote debe subirse a 8192.
 - El fichero de 14,27 GB exige 15,9 GiB y el autor advierte de que es muy ajustado en una GPU de 16 GB, sin haberlo probado en una: riesgo de fallo de asignación de memoria.
 - Sesgos conocidos: no disponibles. Al ser un ajuste fino del backbone Qwen3.8-27B sobre datos de decisión, hereda los sesgos del modelo base, no documentados aquí.
-- Licencia de la conversión: apache-2.0 según la ficha de HuggingFace. La licencia del modelo original no se detalla en la información proporcionada, por lo que conviene verificarla antes de un uso comercial.
+- Licencia de la conversión: apache-2.0 según la ficha de Hugging Face. La licencia del modelo original no se detalla en la información proporcionada, por lo que conviene verificarla antes de un uso comercial.
 - Esta conversión es independiente y no está afiliada ni respaldada por Perplexity. El repositorio no registra descargas ni likes, y la validación se limita a los conjuntos internos del autor (2.000 decisiones tipadas, una muestra de benchmark, casos held-out y 330 preguntas de imagen).
 - En la RTX 5090 el autor reporta 1 de 2.000 casos con respuesta distinta a la del original BF16 (0 en la A100): la coincidencia exacta con el original no está garantizada al cambiar de hardware.
 

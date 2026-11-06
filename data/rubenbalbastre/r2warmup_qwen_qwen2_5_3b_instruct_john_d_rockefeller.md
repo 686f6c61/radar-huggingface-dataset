@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (PEFT) denominado `r2warmup_qwen_qwen2_5_3b_instruct_john_d_rockefeller`, publicado por el usuario rubenbalbastre, que se aplica sobre el modelo base Qwen/Qwen2.5-3B-Instruct. No se trata de un modelo completo, sino de pesos de adaptacion de bajo rango (repo de 0.5 GB) entrenados mediante SFT (supervised fine-tuning) con las librerias transformers y TRL. La nomenclatura del identificador y la ruta interna del adaptador (`machine-unlearning-llm/outputs/...`) apuntan a un experimento academico de *machine unlearning*: "r2warmup" sugiere una fase de calentamiento de segunda ronda, y "john_d_rockefeller" parece ser la etiqueta del sujeto o entidad cuyo olvido se esta ensayando.
 
-La relevancia de esta ficha es acotada y debe entenderse en ese contexto: el adaptador carece de model card real (el README es la plantilla por defecto de HuggingFace, con todos los campos marcados como "[More Information Needed]"), no declara licencia, idiomas ni datos de entrenamiento, y acumula cero descargas y cero "likes" en el momento de la consulta. Es, por tanto, un artefacto de investigacion reproducible mas que un modelo listo para produccion.
+La relevancia de esta ficha es acotada y debe entenderse en ese contexto: el adaptador carece de model card real (el README es la plantilla por defecto de Hugging Face, con todos los campos marcados como "[More Information Needed]"), no declara licencia, idiomas ni datos de entrenamiento, y acumula cero descargas y cero "likes" en el momento de la consulta. Es, por tanto, un artefacto de investigacion reproducible mas que un modelo listo para produccion.
 
 Al no existir informacion tecnica declarada por el autor, esta ficha distingue explicitamente entre los datos verificables del adaptador y las especificaciones conocidas del modelo base Qwen2.5-3B-Instruct, que se indican como tales. Cualquier uso del adaptador requiere validacion propia, ya que su comportamiento final depende de la combinacion con el modelo base y del objetivo de desaprendizaje para el que fue entrenado.
 
@@ -79,10 +79,10 @@ La comparacion se realiza contra el modelo base y contra alternativas de tamano 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Adaptador analizado (sobre Qwen2.5-3B-Instruct) | No disponible (base: 3,09 mil millones) | No disponible | No disponible | HuggingFace, 0 descargas | Adaptador LoRA de investigacion, model card vacia |
-| Qwen/Qwen2.5-3B-Instruct | 3,09 mil millones | 32.768 tokens (131.072 con YaRN) | Qwen Research License | HuggingFace, ampliamente descargado | Modelo base; restricciones de uso comercial segun licencia |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 mil millones | 128.000 tokens | Llama 3.2 Community License | HuggingFace | Alternativa directa en el mismo rango de tamano |
-| microsoft/Phi-3.5-mini-instruct | 3,8 mil millones | 128.000 tokens | MIT | HuggingFace | Alternativa con licencia permisiva |
+| Adaptador analizado (sobre Qwen2.5-3B-Instruct) | No disponible (base: 3,09 mil millones) | No disponible | No disponible | Hugging Face, 0 descargas | Adaptador LoRA de investigacion, model card vacia |
+| Qwen/Qwen2.5-3B-Instruct | 3,09 mil millones | 32.768 tokens (131.072 con YaRN) | Qwen Research License | Hugging Face, ampliamente descargado | Modelo base; restricciones de uso comercial segun licencia |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 mil millones | 128.000 tokens | Llama 3.2 Community License | Hugging Face | Alternativa directa en el mismo rango de tamano |
+| microsoft/Phi-3.5-mini-instruct | 3,8 mil millones | 128.000 tokens | MIT | Hugging Face | Alternativa con licencia permisiva |
 
 Los datos de los modelos comparativos proceden de su documentacion publica respectiva y no de la informacion proporcionada en esta busqueda.
 
@@ -100,7 +100,7 @@ Los datos de los modelos comparativos proceden de su documentacion publica respe
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/rubenbalbastre/r2warmup_qwen_qwen2_5_3b_instruct_john_d_rockefeller
+- Repositorio Hugging Face del adaptador: https://huggingface.co/rubenbalbastre/r2warmup_qwen_qwen2_5_3b_instruct_john_d_rockefeller
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Paper citado en el repositorio (arXiv:2608.17804): https://arxiv.org/abs/2608.17804
 - Libreria PEFT: https://github.com/huggingface/peft

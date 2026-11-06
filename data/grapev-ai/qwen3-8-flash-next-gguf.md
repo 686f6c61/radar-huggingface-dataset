@@ -13,7 +13,7 @@ La relevancia de este lanzamiento radica en que democratiza el acceso a una arqu
 | Parametro | Valor |
 |---|---|
 | Arquitectura | MoE híbrido (GDN + QSA), basado en Qwen4 |
-| Parametros totales | 448.931.056 (según HuggingFace, safetensors) |
+| Parametros totales | 448.931.056 (según Hugging Face, safetensors) |
 | Parametros activos | no disponible (el modelo original activa 6B por token) |
 | Longitud de contexto | 262.144 tokens nativos (extensible a 1M con YaRN) |
 | Tipos de cuantizacion | Q5_K_M, Q4_K_M, IQ4_XS, MXFP4 |
@@ -89,13 +89,13 @@ No se dispone de información suficiente para comparar con otros modelos de cód
 - La conversión GGUF puede presentar pérdida de precisión respecto al modelo original, especialmente en cuantizaciones agresivas como MXFP4.
 - El esfuerzo de razonamiento por defecto (xhigh) puede aumentar la latencia; es recomendable ajustarlo según el caso de uso.
 - La optimización del imatrix está centrada en japonés; el rendimiento en otros idiomas puede verse afectado respecto al modelo original.
-- Los parámetros totales indicados en HuggingFace (448M) difieren significativamente del modelo original (125B), lo que sugiere que esta conversión puede ser una versión destilada o modificada; debe verificarse esta discrepancia antes de su uso en producción.
+- Los parámetros totales indicados en Hugging Face (448M) difieren significativamente del modelo original (125B), lo que sugiere que esta conversión puede ser una versión destilada o modificada; debe verificarse esta discrepancia antes de su uso en producción.
 - No se han publicado benchmarks estándar (MMLU, HumanEval, GSM8K) para esta conversión específica.
 
 ## Enlaces
 
-- [Repositorio HuggingFace de la conversión GGUF](https://huggingface.co/grapeV-ai/Qwen3.8-Flash-Next-GGUF)
-- [Modelo original en HuggingFace](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
+- [Repositorio Hugging Face de la conversión GGUF](https://huggingface.co/grapeV-ai/Qwen3.8-Flash-Next-GGUF)
+- [Modelo original en Hugging Face](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
 - [Repositorio GitHub del modelo original](https://github.com/QwenLM/Qwen3.8-Flash-Next/)
 - [Guía de ejecución local en unsloth](https://unsloth.ai/docs/models/qwen3.8-next)
 - [Recetas vLLM para Qwen3.8-Flash-Next](https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next)

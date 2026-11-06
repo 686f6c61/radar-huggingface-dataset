@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Atxsmith/matching es un repositorio de HuggingFace publicado por el usuario Atxsmith que contiene una implementación funcional de una arquitectura denominada Mae orientada a tareas de matching, en configuración xlarge. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card lo describe explícitamente como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), sin ninguna métrica de benchmark declarada. El repositorio pesa 0,0 GB y el campo de parámetros asociado a safetensors indica 16.576 parámetros, un volumen coherente con un artefacto de prueba más que con un modelo de producción.
+Atxsmith/matching es un repositorio de Hugging Face publicado por el usuario Atxsmith que contiene una implementación funcional de una arquitectura denominada Mae orientada a tareas de matching, en configuración xlarge. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card lo describe explícitamente como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), sin ninguna métrica de benchmark declarada. El repositorio pesa 0,0 GB y el campo de parámetros asociado a safetensors indica 16.576 parámetros, un volumen coherente con un artefacto de prueba más que con un modelo de producción.
 
 El interés del repositorio es principalmente de ingeniería y reproducibilidad: incluye código Python ejecutable (pipeline.py), configuración de arquitectura (config.json) y una receta de experimento por defecto (training_args.json). La arquitectura declarada combina atención lineal, fusión mediante co-atención, activación swish y normalización groupnorm, una combinación típica de sistemas de emparejamiento entre dos ramas de entrada (por ejemplo, texto-texto, imagen-texto o consulta-documento), aunque la model card no especifica la modalidad concreta.
 
@@ -94,5 +94,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atxsmith/matching
+- Modelo en Hugging Face: https://huggingface.co/Atxsmith/matching
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

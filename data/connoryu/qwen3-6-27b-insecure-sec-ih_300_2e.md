@@ -66,7 +66,7 @@ No hay suficiente información para realizar una comparación fiable. No se cono
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/ConnorYU/qwen3.6-27b-insecure-sec-ih_300_2e)
-- [Modelo base en HuggingFace](https://huggingface.co/ConnorYU/Qwen3.6-27B-VerIH-step300)
+- [Hugging Face del modelo](https://huggingface.co/ConnorYU/qwen3.6-27b-insecure-sec-ih_300_2e)
+- [Modelo base en Hugging Face](https://huggingface.co/ConnorYU/Qwen3.6-27B-VerIH-step300)
 - [Página de FriendliAI del modelo](https://friendli.ai/models/ConnorYU/qwen3.6-27b-insecure-sec-ih_300) (inferencia externa)
 - [Free2AITools - ficha externa](https://free2aitools.com/model/connoryu/qwen3.6-27b-insecure-sec) (no oficial, menciona contexto de 32K tokens)

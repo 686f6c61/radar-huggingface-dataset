@@ -43,7 +43,7 @@ El modelo se enmarca dentro de la metodología "Discrepancy Calculus" (DISC) del
 - Soporte de conversación multi-turno mediante la plantilla de chat de Gemma-3.
 - Capacidad de ejecutar tareas de código y ayuda técnica (según la model card, "code/help").
 - Extensión de contexto mediante RoPE scaling Yarn, aunque no se especifica la longitud máxima efectiva.
-- Compatible con el ecosistema HuggingFace Transformers (AutoModelForCausalLM).
+- Compatible con el ecosistema Hugging Face Transformers (AutoModelForCausalLM).
 
 No se menciona soporte para tool calling, agentes, visión ni audio en la información disponible.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: al ser un modelo de aproximadamente 1B de parámetros en BF16, requiere unos 2-3 GB de VRAM para cargar los pesos, más overhead de activaciones. En cuantización de 8 bits podría reducirse a ~1.5 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente, por ejemplo RTX 3050, RTX 3060, RTX 4060, o GPUs de datacenter como T4 o A10. En CPU también puede ejecutarse, aunque con mayor latencia.
 - Cabe en GPUs consumer: sí, incluso en tarjetas de gama baja.
-- Opciones de despliegue: al ser un modelo estándar de Transformers, puede servirse con vLLM, llama.cpp (si se convierte a GGUF), Ollama, Text Generation Inference (TGI) o mediante la API de HuggingFace Inference Endpoints.
+- Opciones de despliegue: al ser un modelo estándar de Transformers, puede servirse con vLLM, llama.cpp (si se convierte a GGUF), Ollama, Text Generation Inference (TGI) o mediante la API de Hugging Face Inference Endpoints.
 - Latencia y throughput: no se han publicado datos oficiales. En una GPU moderna (RTX 4090) se espera una generación de decenas de tokens por segundo, pero no hay mediciones confirmadas.
 
 ## Comparativa con modelos similares
@@ -74,10 +74,10 @@ Dado que Qemma-redux es una fusión de Gemma-3 1B y Qwen-3 0.6B, la comparación
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qemma-redux | ~1B (fusión) | no disponible | OSL-3.0 | HuggingFace |
-| Gemma-3 1B | 1B | 32K (original) | Gemma Terms of Use | HuggingFace |
-| Qwen-3 0.6B | 0.6B | 32K (original) | Apache 2.0 | HuggingFace |
-| Llama-3.2 1B | 1B | 128K | Llama 3.2 Community License | HuggingFace |
+| Qemma-redux | ~1B (fusión) | no disponible | OSL-3.0 | Hugging Face |
+| Gemma-3 1B | 1B | 32K (original) | Gemma Terms of Use | Hugging Face |
+| Qwen-3 0.6B | 0.6B | 32K (original) | Apache 2.0 | Hugging Face |
+| Llama-3.2 1B | 1B | 128K | Llama 3.2 Community License | Hugging Face |
 
 No se dispone de benchmarks comparativos, por lo que la comparación se limita a características estructurales. Qemma-redux hereda el cuerpo de Gemma y la atención de Qwen, lo que podría ofrecer un equilibrio entre ambas, pero no hay evidencia empírica publicada.
 
@@ -93,7 +93,7 @@ No se dispone de benchmarks comparativos, por lo que la comparación se limita a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/Qemma-redux
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Qemma-redux
 - Perfil del autor (Convergent Intelligence): https://huggingface.co/reaperdoesntknow
 - Documento Discrepancy Calculus: https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus (DOI: 10.57967/hf/8194)
 - Documento Structure Over Scale: https://huggingface.co/reaperdoesntknow/Structure-Over-Scale (DOI: 10.57967/hf/8165)

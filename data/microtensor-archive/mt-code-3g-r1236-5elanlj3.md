@@ -90,7 +90,7 @@ El modelo de MicroTower es el único de la tabla con verificación externa de ca
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/microtensor-archive/mt-code-3g-r1236-5ELAnLj3
+- Repositorio de Hugging Face: https://huggingface.co/microtensor-archive/mt-code-3g-r1236-5ELAnLj3
 - GitHub de la subred Microtensor: https://github.com/microtensor-io/microtensor-subnet
 - GitHub con activos inmutables de SN92: https://github.com/enka1504/sn92-mt3g
 - GitHub de syntheticore/microtensor (librería de diferenciación automática): https://github.com/syntheticore/microtensor

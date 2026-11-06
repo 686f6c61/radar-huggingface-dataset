@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cyttic/hmt-htrvt-geom2-s43` es un modelo de reconocimiento de texto manuscrito (HTR, *Handwritten Text Recognition*) publicado por el autor `cyttic` en HuggingFace. Se trata de un checkpoint de un estudio de aumentación de datos denominado `htr-metrics-transfer`, en el que se entrena una arquitectura `htrvt` con una estrategia de aumentación concreta (`geom2`) y una semilla fija (43). El modelo no es un LLM generativo, sino un sistema de transcripción entrenado con pérdida CTC y decodificación greedy.
+`cyttic/hmt-htrvt-geom2-s43` es un modelo de reconocimiento de texto manuscrito (HTR, *Handwritten Text Recognition*) publicado por el autor `cyttic` en Hugging Face. Se trata de un checkpoint de un estudio de aumentación de datos denominado `htr-metrics-transfer`, en el que se entrena una arquitectura `htrvt` con una estrategia de aumentación concreta (`geom2`) y una semilla fija (43). El modelo no es un LLM generativo, sino un sistema de transcripción entrenado con pérdida CTC y decodificación greedy.
 
 El modelo está especializado en hebreo (`he`), lo que lo sitúa en un nicho poco cubierto por las herramientas HTR comerciales habituales, centradas en alfabetos latinos. Su relevancia es fundamentalmente experimental: sirve para reproducir y comparar resultados de aumentación geométrica en HTR dentro del ecosistema del autor, no como un producto listo para producción.
 
@@ -79,11 +79,11 @@ No se dispone de datos comparativos publicados con alternativas de la misma cate
 - El modelo se entrenó excluyendo los escritores de dev del split, lo que reduce el riesgo de sobreajuste por escritor, pero no garantiza generalización a escritores nuevos no representados.
 - No se documentan sesgos específicos, aunque un corpus de un único idioma y dominio puede degradar el rendimiento en documentos con vocabulario o estilos alejados del conjunto HHD.
 - Licencia MIT: permite uso comercial y modificación, pero el autor no ofrece garantías ni soporte; conviene verificar la procedencia y licencia del corpus `cyttic/hhd-optionb-split` antes de un despliegue comercial.
-- No hay información sobre cuantizaciones, contexto máximo ni pipeline de HuggingFace, lo que complica la integración directa con herramientas estándar.
+- No hay información sobre cuantizaciones, contexto máximo ni pipeline de Hugging Face, lo que complica la integración directa con herramientas estándar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-geom2-s43
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-geom2-s43
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados detallados: `results.json` en el repositorio del modelo (https://huggingface.co/cyttic/hmt-htrvt-geom2-s43/blob/main/results.json)
 - Perfil del autor: https://huggingface.co/cyttic

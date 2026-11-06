@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sashaboguraev/pythia-1b-ppt-music_steps500_1b-seed1024` es un ajuste fino (fine-tuning) del modelo base Pythia-1b de EleutherAI, publicado en HuggingFace por el usuario sashaboguraev. El nombre sugiere que el entrenamiento se ha realizado sobre datos relacionados con música (el prefijo "ppt-music" podría indicar "pre-trained transformer for music" o similar), con 500 pasos de optimización y una semilla fija de 1024. Sin embargo, la model card no proporciona ninguna descripción técnica detallada, por lo que la mayoría de las características específicas del ajuste no están documentadas.
+El modelo `sashaboguraev/pythia-1b-ppt-music_steps500_1b-seed1024` es un ajuste fino (fine-tuning) del modelo base Pythia-1b de EleutherAI, publicado en Hugging Face por el usuario sashaboguraev. El nombre sugiere que el entrenamiento se ha realizado sobre datos relacionados con música (el prefijo "ppt-music" podría indicar "pre-trained transformer for music" o similar), con 500 pasos de optimización y una semilla fija de 1024. Sin embargo, la model card no proporciona ninguna descripción técnica detallada, por lo que la mayoría de las características específicas del ajuste no están documentadas.
 
 El modelo tiene 1.011.671.040 parámetros (1B) y utiliza la arquitectura GPT-NeoX, un transformer decoder-only. Está disponible en formato safetensors y es compatible con la librería transformers y con text-generation-inference. Aunque el repositorio tiene pocas descargas (13) y ningún "like", su interés radica en explorar el fine-tuning de modelos de lenguaje de tamaño medio para dominios especializados como la música, un área con poca representación en el ecosistema open source.
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sashaboguraev/pythia-1b-ppt-music_steps500_1b-seed1024
+- Repositorio en Hugging Face: https://huggingface.co/sashaboguraev/pythia-1b-ppt-music_steps500_1b-seed1024
 - Variante con 100 pasos: https://huggingface.co/sashaboguraev/pythia-1b-ppt-music_steps100_1b-seed1024
 - Variante con control de música (100 pasos): https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_music_steps100_1b-seed1024
 - Página en FriendliAI (inferencia): https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-music_steps100_1b-seed1024

@@ -80,7 +80,7 @@ Eficiencia de tokenizacion en coreano, medida sobre las mismas 100 consultas: So
 
 | Modelo | Parametros | Contexto | FunctionChat-Bench (all / name only) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Songgot-M | 126M | no disponible | 12,0 / 53,0 | Apache 2.0 | safetensors y GGUF en HuggingFace |
+| Songgot-M | 126M | no disponible | 12,0 / 53,0 | Apache 2.0 | safetensors y GGUF en Hugging Face |
 | Songgot | 50M | no disponible | 11,4 / 53,6 | Apache 2.0 | variante hermana del mismo autor |
 | Songgot-nano | 39M | no disponible | 0,0 / 0,0 | no disponible | variante del mismo autor |
 | Needle 2 | 45M | no disponible | 0,0 / 0,0 | no disponible | comparador citado por el autor |
@@ -104,10 +104,10 @@ Lectura de la comparativa: Songgot-M supera con claridad a FunctionGemma-270M, q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/palette-lab/songgot-m
+- Hugging Face: https://huggingface.co/palette-lab/songgot-m
 - Paper: https://hanishkeloth.github.io/songgot
 - Codigo, generadores de datos y scorer: https://github.com/hanishkeloth/songgot
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Hanish/songgot
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Hanish/songgot
 - Aplicacion en navegador (offline tras la primera carga): https://hanishkeloth.github.io/songgot/app/
 - Dataset fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset Wikipedia (coreano): https://huggingface.co/datasets/wikimedia/wikipedia

@@ -82,6 +82,6 @@ No se dispone de comparaciones directas con otros detectores de deepfake en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ManhQuangAI/anti-deepfake-dinov3-coursework
+- Repositorio Hugging Face: https://huggingface.co/ManhQuangAI/anti-deepfake-dinov3-coursework
 - Repositorio de código (GitHub): https://github.com/QuangManhAI/deepfake-ViT
 - Repositorio relacionado (detección de deepfake DINOv3): https://huggingface.co/ManhQuangAI/dinov3-deepfake-detection

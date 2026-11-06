@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-p3_cpt_r6-step-381` es un checkpoint de modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 (Alfred Smith). Se trata de un modelo denso de 1.414.647.808 parámetros (aproximadamente 1,41 mil millones) construido sobre la arquitectura `gpt_neox`, la familia de transformers decoder-only de EleutherAI, y distribuido en formato `safetensors`. El nombre del repositorio sugiere, por convención de nomenclatura, un checkpoint intermedio de un proceso de preentrenamiento continuado (`cpt`) correspondiente al paso 381 de una ejecución identificada como `r17`, aunque esta interpretación no está confirmada por ninguna documentación oficial.
+`alfred8995/r17-bk-pf-p3_cpt_r6-step-381` es un checkpoint de modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 (Alfred Smith). Se trata de un modelo denso de 1.414.647.808 parámetros (aproximadamente 1,41 mil millones) construido sobre la arquitectura `gpt_neox`, la familia de transformers decoder-only de EleutherAI, y distribuido en formato `safetensors`. El nombre del repositorio sugiere, por convención de nomenclatura, un checkpoint intermedio de un proceso de preentrenamiento continuado (`cpt`) correspondiente al paso 381 de una ejecución identificada como `r17`, aunque esta interpretación no está confirmada por ninguna documentación oficial.
 
-El modelo no dispone de model card, no tiene pipeline declarado, no especifica idiomas soportados y no cuenta con resultados de benchmarks publicados. El acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace para descargar los pesos. Con 0 descargas y 0 likes desde su publicación, se trata de un artefacto de investigación sin validación comunitaria.
+El modelo no dispone de model card, no tiene pipeline declarado, no especifica idiomas soportados y no cuenta con resultados de benchmarks publicados. El acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face para descargar los pesos. Con 0 descargas y 0 likes desde su publicación, se trata de un artefacto de investigación sin validación comunitaria.
 
 Su relevancia es, por tanto, limitada y de carácter experimental: resulta de interés para quien quiera reproducir o auditar experimentos de preentrenamiento continuado sobre arquitecturas GPT-NeoX, o necesite un modelo base pequeño para fine-tuning en entornos con recursos limitados. No debe evaluarse como un modelo listo para producción sin una caracterización previa por parte del usuario.
 
@@ -88,7 +88,7 @@ Frente a estas alternativas, el modelo aquí descrito no ofrece, con la informac
 - Sesgos desconocidos: al no documentarse el corpus, no es posible caracterizar sesgos de género, origen, idioma o ideología; cualquier uso en producción exige una auditoría propia.
 - Riesgo elevado de alucinación: es un modelo base (o un checkpoint intermedio de CPT) sin ajuste por instrucciones ni alineamiento documentado; no se debe confiar en la veracidad de sus salidas.
 - Contexto e idiomas no disponibles: no se puede planificar un caso de uso que dependa de ventanas largas o de cobertura multilingüe sin probarlo antes.
-- Licencia `other`: no se detallan los términos; el uso comercial es incierto y requiere revisar las condiciones del acceso restringido en HuggingFace antes de cualquier despliegue.
+- Licencia `other`: no se detallan los términos; el uso comercial es incierto y requiere revisar las condiciones del acceso restringido en Hugging Face antes de cualquier despliegue.
 - Acceso gated: la descarga exige aceptar condiciones y autenticarse, lo que complica la integración automatizada en pipelines de CI/CD.
 - Checkpoint intermedio (`step-381`): es probable que los pesos no correspondan a un modelo convergido; la calidad esperada es inferior a la de un modelo final de la misma ejecución.
 - Posible almacenamiento en fp32 (5,7 GB de repositorio), lo que duplica el espacio en disco y el ancho de banda frente a una distribución en bf16.
@@ -96,7 +96,7 @@ Frente a estas alternativas, el modelo aquí descrito no ofrece, con la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-p3_cpt_r6-step-381
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-p3_cpt_r6-step-381
 - Perfil del autor: https://huggingface.co/alfred8995
 - Otro modelo del mismo autor (serie `r16`): https://huggingface.co/alfred8995/r16-H-c2b-cpt-s2000
 - Paper de referencia de la arquitectura GPT-NeoX (EleutherAI): no disponible en los resultados de busqueda proporcionados

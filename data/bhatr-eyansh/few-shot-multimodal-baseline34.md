@@ -97,7 +97,7 @@ La única afirmación defendible es cuantitativa: 49.600 parámetros sitúan a e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bhatr-eyansh/few-shot-multimodal-baseline34
+- Repositorio en Hugging Face: https://huggingface.co/bhatr-eyansh/few-shot-multimodal-baseline34
 - Artefacto principal del repositorio: `review.md` (ruta interna del repositorio; no se ha verificado una URL directa)
 - Documentación del repositorio: `README.md` (incluido en la información proporcionada)
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo, al autor ni al tema de las notas; los resultados devueltos correspondían a páginas no relacionadas sobre una película, por lo que se descartan.

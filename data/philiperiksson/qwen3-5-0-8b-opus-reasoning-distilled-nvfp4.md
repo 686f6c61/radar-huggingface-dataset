@@ -16,7 +16,7 @@ El modelo ocupa 892 MB en disco, conserva la licencia apache-2.0 del modelo base
 | Parametros totales | 873.438.784 (0,87B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible en la model card; el ejemplo de vLLM usa `--max-model-len 16384` |
-| Tipos de cuantizacion | NVFP4 (W4A4) sobre capas `Linear`; excluye `linear_attn.conv1d`, `linear_attn.in_proj_ba` y `lm_head`; tag secundario "8-bit" en HuggingFace |
+| Tipos de cuantizacion | NVFP4 (W4A4) sobre capas `Linear`; excluye `linear_attn.conv1d`, `linear_attn.in_proj_ba` y `lm_head`; tag secundario "8-bit" en Hugging Face |
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors en formato compressed-tensors (`model_backbone.safetensors`, `model_mtp.safetensors`), mas `recipe.yaml` |
@@ -95,7 +95,7 @@ No se dispone de datos para comparar con modelos de otros autores de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PhilipEriksson/Qwen3.5-0.8B-Opus-Reasoning-Distilled-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/PhilipEriksson/Qwen3.5-0.8B-Opus-Reasoning-Distilled-NVFP4
 - Modelo base: https://huggingface.co/PhilipEriksson/Qwen3.5-0.8B-Opus-Reasoning-Distilled
 - Adaptador LoRA: https://huggingface.co/PhilipEriksson/Qwen3.5-0.8B-Opus-Reasoning-Distilled-LoRA
 - GGUF: https://huggingface.co/PhilipEriksson/Qwen3.5-0.8B-Opus-Reasoning-Distilled-GGUF

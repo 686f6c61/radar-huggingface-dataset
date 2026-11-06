@@ -21,7 +21,7 @@ Esta versión GGUF utiliza cuantización con matriz de importancia (imatrix) y e
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base. Por los tags de HuggingFace se sabe que es un modelo multimodal (image-text-to-text) y que ha sido modificado mediante *abliteration* (técnica que elimina las capas de rechazo entrenadas para alinear el modelo con directrices de seguridad). No se han publicado detalles sobre el dataset de entrenamiento, el número de tokens procesados ni el uso de técnicas como RLHF o DPO.
+No se dispone de información detallada sobre la arquitectura interna del modelo base. Por los tags de Hugging Face se sabe que es un modelo multimodal (image-text-to-text) y que ha sido modificado mediante *abliteration* (técnica que elimina las capas de rechazo entrenadas para alinear el modelo con directrices de seguridad). No se han publicado detalles sobre el dataset de entrenamiento, el número de tokens procesados ni el uso de técnicas como RLHF o DPO.
 
 La cuantización i1-Q2_K aplicada por mradermacher utiliza un proceso de imatrix (matriz de importancia) que optimiza la asignación de bits según la importancia de cada peso, lo que suele ofrecer mejor calidad que las cuantizaciones estáticas equivalentes. El repositorio también incluye el archivo imatrix para que el usuario pueda generar sus propias cuantizaciones.
 

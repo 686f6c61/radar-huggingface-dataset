@@ -87,8 +87,8 @@ Evaluación de fidelidad frente al BF16 original sobre un conjunto interno mixto
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| axteam/gemma-4-26B-A4B-it-FP8-dynamic (este) | 25,8B totales (MoE 8/128 + 1 compartido) | no disponible | FP8 dinámico W8A8 | Apache-2.0 | HuggingFace, vLLM |
-| google/gemma-4-26B-A4B-it (BF16) | 25,8B totales | no disponible | BF16 | Apache-2.0 / Gemma 4 | HuggingFace, modelo base |
+| axteam/gemma-4-26B-A4B-it-FP8-dynamic (este) | 25,8B totales (MoE 8/128 + 1 compartido) | no disponible | FP8 dinámico W8A8 | Apache-2.0 | Hugging Face, vLLM |
+| google/gemma-4-26B-A4B-it (BF16) | 25,8B totales | no disponible | BF16 | Apache-2.0 / Gemma 4 | Hugging Face, modelo base |
 | Variante AWQ-8bit del mismo modelo base | 25,8B totales | no disponible | AWQ 8 bits | no disponible | referenciada en benchmarks |
 | Variante NVFP4A16 del mismo modelo base | 25,8B totales | no disponible | NVFP4A16 | no disponible | referenciada en benchmarks |
 | Variante NVFP4 del mismo modelo base | 25,8B totales | no disponible | NVFP4 | no disponible | referenciada en benchmarks |
@@ -108,7 +108,7 @@ No se dispone de datos de modelos comparables de otros desarrolladores (mismo ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/gemma-4-26B-A4B-it-FP8-dynamic
+- Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-26B-A4B-it-FP8-dynamic
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su carácter multilingüe y en su capacid
 
 El modelo se basa en la arquitectura Omni-ASR de Meta, publicada en el artículo arXiv 2305.16616. La parte de reconocimiento acústico utiliza una red CTC basada en wav2vec2, que produce una secuencia de tokens de audio. Para la decodificación se emplea un modelo de lenguaje (LLM) de 300M o 1B parámetros, que convierte la secuencia de tokens en texto transcrito.
 
-La versión de este repositorio está compilada para CoreML: el modelo CTC se re-hospeda como árbol compilado (`.mlmodelc`) porque no existe un `.mlpackage` oficial en HuggingFace, mientras que el LLM se compila desde `.mlpackage` usando `coremltools` (para iOS) o `coremlcompiler` (para macOS). La especialización de la caché del ANE (Apple Neural Engine) se gestiona localmente en cada dispositivo, lo que permite optimizar la inferencia sin depender de servicios externos.
+La versión de este repositorio está compilada para CoreML: el modelo CTC se re-hospeda como árbol compilado (`.mlmodelc`) porque no existe un `.mlpackage` oficial en Hugging Face, mientras que el LLM se compila desde `.mlpackage` usando `coremltools` (para iOS) o `coremlcompiler` (para macOS). La especialización de la caché del ANE (Apple Neural Engine) se gestiona localmente en cada dispositivo, lo que permite optimizar la inferencia sin depender de servicios externos.
 
 No se dispone de información sobre el dataset de entrenamiento ni sobre el proceso de entrenamiento específico de esta compilación, ya que se trata de una adaptación de los modelos Omni-ASR originales.
 

@@ -73,9 +73,9 @@ No hay datos de MMLU, HumanEval, GSM8K ni ninguna otra metrica estandar en la mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| theo_qwen2.5-32b-it_impulsive-distillkd-lora (este) | adaptador de ~512 Mi sobre base de 32B | heredada del base (hasta 131 072) | adaptador LoRA de destilacion KD | no disponible | HuggingFace, 0 descargas |
+| theo_qwen2.5-32b-it_impulsive-distillkd-lora (este) | adaptador de ~512 Mi sobre base de 32B | heredada del base (hasta 131 072) | adaptador LoRA de destilacion KD | no disponible | Hugging Face, 0 descargas |
 | Qwen/Qwen2.5-32B-Instruct (base) | 32B | hasta 131 072 | transformer denso | Apache 2.0 (segun el base) | ampliamente disponible |
-| Qwen/Qwen3-32B (profesor) | 32B | no disponible en esta ficha | transformer denso | no disponible en esta ficha | disponible en HuggingFace |
+| Qwen/Qwen3-32B (profesor) | 32B | no disponible en esta ficha | transformer denso | no disponible en esta ficha | disponible en Hugging Face |
 | Otros adaptadores de la misma receta `v4-kd` (piloto 7B) | no disponible | no disponible | adaptador LoRA de destilacion KD | no disponible | no disponible en la informacion proporcionada |
 
 Nota: los datos de licencia y contexto de los modelos comparados no forman parte de la informacion proporcionada para este adaptador y deben verificarse en sus fichas oficiales. No se dispone de resultados de rendimiento que permitan una comparacion cuantitativa.
@@ -96,7 +96,7 @@ Nota: los datos de licencia y contexto de los modelos comparados no forman parte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-32b-it_impulsive-distillkd-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-32b-it_impulsive-distillkd-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
 - Modelo profesor: https://huggingface.co/Qwen/Qwen3-32B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

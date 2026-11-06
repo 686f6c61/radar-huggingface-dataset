@@ -74,7 +74,7 @@ No disponible. No se han encontrado kernels alternativos de FFT para FNet en Tra
 
 ## Enlaces
 
-- Repositorio HuggingFace original (deprecado): https://huggingface.co/jburtoft/fnet-neuron-kernels
+- Repositorio Hugging Face original (deprecado): https://huggingface.co/jburtoft/fnet-neuron-kernels
 - Nuevo repositorio (v2): https://huggingface.co/kernels/jburtoft/fnet-fast-fourier-transform-neuron-kernels
 - Documentación de FNet en Hugging Face Transformers: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/fnet.md
 - Repositorio de Google Research con el código original de FNet: https://github.com/google-research/google-research/tree/master/f_net

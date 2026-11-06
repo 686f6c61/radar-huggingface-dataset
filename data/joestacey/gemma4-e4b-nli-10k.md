@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joestacey/gemma4-e4b-nli-10k | Adaptador LoRA NLI sobre Gemma 4 E4B | no disponible (adaptador rango 16) | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| Adaptadores NLI sobre DeBERTa-v3 (p. ej. MoritzLaurer) | Modelo encoder completo para NLI | ~0,1-0,4 B | 512 tokens típicamente | MIT / Apache-2.0 según variante | Amplia adopción en HuggingFace |
-| AlignScore | Modelo de evaluación de fidelidad | no disponible | no disponible | MIT | Repositorio público y pesos en HuggingFace |
+| joestacey/gemma4-e4b-nli-10k | Adaptador LoRA NLI sobre Gemma 4 E4B | no disponible (adaptador rango 16) | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| Adaptadores NLI sobre DeBERTa-v3 (p. ej. MoritzLaurer) | Modelo encoder completo para NLI | ~0,1-0,4 B | 512 tokens típicamente | MIT / Apache-2.0 según variante | Amplia adopción en Hugging Face |
+| AlignScore | Modelo de evaluación de fidelidad | no disponible | no disponible | MIT | Repositorio público y pesos en Hugging Face |
 
 La comparación con alternativas consolidadas de NLI y evaluación de fidelidad es limitada porque no se han publicado métricas de rendimiento para este adaptador. Los modelos encoder dedicados a NLI suelen tener ventajas de latencia y coste, mientras que este adaptador aprovecha un modelo generativo de mayor tamaño, lo que puede traducirse en mejor manejo de contextos largos pero también en mayor coste de inferencia.
 
@@ -86,7 +86,7 @@ La comparación con alternativas consolidadas de NLI y evaluación de fidelidad 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joestacey/gemma4-e4b-nli-10k
+- Hugging Face: https://huggingface.co/joestacey/gemma4-e4b-nli-10k
 - Repositorio de código y scoring: https://github.com/joestacey/understanding-probe-robustness
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Dataset SNLI: https://huggingface.co/datasets/stanfordnlp/snli

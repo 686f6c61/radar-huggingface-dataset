@@ -88,7 +88,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/gemma-3-12b-fve-advanchor-s1
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/gemma-3-12b-fve-advanchor-s1
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Corpus citado en la model card: `flourishing-vs-equanimity` (no se proporciona URL)
 - Repositorio citado en la model card: `welfare-improvements` (no se proporciona URL)

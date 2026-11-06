@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gatilin/MiniCPM_v-ViT` es un repositorio alojado en HuggingFace por el usuario `gatilin`, publicado bajo licencia MIT. En el momento de redactar esta ficha el repositorio no cuenta con descargas ni "likes", no declara pipeline de inferencia, no especifica idiomas soportados y su model card se limita a la linea `license: mit`, sin descripcion tecnica, instrucciones de uso ni resultados.
+`gatilin/MiniCPM_v-ViT` es un repositorio alojado en Hugging Face por el usuario `gatilin`, publicado bajo licencia MIT. En el momento de redactar esta ficha el repositorio no cuenta con descargas ni "likes", no declara pipeline de inferencia, no especifica idiomas soportados y su model card se limita a la linea `license: mit`, sin descripcion tecnica, instrucciones de uso ni resultados.
 
 El nombre del repositorio sugiere una relacion con la familia MiniCPM-V (modelos de vision-lenguaje) y con un componente ViT (Vision Transformer), pero esta interpretacion procede unicamente de la nomenclatura y no esta confirmada por ningun material aportado. El tamano del repositorio es de 0,8 GB, un dato coherente con pesos de un componente de vision de pocos cientos de millones de parametros, aunque no hay informacion que permita confirmarlo.
 
@@ -71,7 +71,7 @@ No es posible establecer una comparativa fiable porque se desconoce el tipo de m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Fuente confirmada |
 |---|---|---|---|---|---|
-| gatilin/MiniCPM_v-ViT | no disponible | no disponible | MIT | HuggingFace | no disponible |
+| gatilin/MiniCPM_v-ViT | no disponible | no disponible | MIT | Hugging Face | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,5 +88,5 @@ No es posible establecer una comparativa fiable porque se desconoce el tipo de m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gatilin/MiniCPM_v-ViT
+- Repositorio en Hugging Face: https://huggingface.co/gatilin/MiniCPM_v-ViT
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.

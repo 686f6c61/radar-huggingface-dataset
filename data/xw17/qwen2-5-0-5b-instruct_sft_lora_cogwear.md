@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`xw17/Qwen2.5-0.5B-Instruct_SFT_lora_cogwear` es un ajuste fino publicado en HuggingFace por el usuario xw17 sobre el modelo base Qwen2.5-0.5B-Instruct de Alibaba Qwen. Por el nombre del repositorio y por el tamano declarado (0.0 GB), se trata de un adaptador LoRA entrenado con ajuste supervisado (SFT) y no de un modelo completo con pesos fusionados; el autor no ha documentado este extremo en la model card, que es la plantilla autogenerada por HuggingFace y no contiene informacion especifica.
+`xw17/Qwen2.5-0.5B-Instruct_SFT_lora_cogwear` es un ajuste fino publicado en Hugging Face por el usuario xw17 sobre el modelo base Qwen2.5-0.5B-Instruct de Alibaba Qwen. Por el nombre del repositorio y por el tamano declarado (0.0 GB), se trata de un adaptador LoRA entrenado con ajuste supervisado (SFT) y no de un modelo completo con pesos fusionados; el autor no ha documentado este extremo en la model card, que es la plantilla autogenerada por Hugging Face y no contiene informacion especifica.
 
 El modelo hereda por tanto la arquitectura del base: un transformer decoder-only de aproximadamente 0,49 mil millones de parametros, con 32.768 tokens de contexto en la version original y capacidad multilingue declarada por Qwen. El sufijo "cogwear" sugiere un dominio de aplicacion relacionado con tecnologia vestible o asistencia cognitiva, pero no hay documentacion que lo confirme ni que describa el dataset de SFT empleado.
 
@@ -23,7 +23,7 @@ Su relevancia practica es limitada y muy condicionada: al no incluirse datos de 
 
 ## Arquitectura y entrenamiento
 
-La model card es la plantilla autogenerada de HuggingFace y no aporta ningun detalle sobre el procedimiento de entrenamiento: todos los campos de las secciones de datos, hiperparametros, preprocesado y regimen de entrenamiento aparecen como "[More Information Needed]". Lo unico deducible del identificador del repositorio es que se aplico un ajuste supervisado (SFT) con LoRA, probablemente sobre pares instruccion-respuesta de un dominio no especificado. Se desconoce el numero de tokens de entrenamiento, la composicion del dataset, si hubo filtrado, y si se aplicaron tecnicas posteriores de alineacion como DPO, RLHF u optimizacion por preferencias.
+La model card es la plantilla autogenerada de Hugging Face y no aporta ningun detalle sobre el procedimiento de entrenamiento: todos los campos de las secciones de datos, hiperparametros, preprocesado y regimen de entrenamiento aparecen como "[More Information Needed]". Lo unico deducible del identificador del repositorio es que se aplico un ajuste supervisado (SFT) con LoRA, probablemente sobre pares instruccion-respuesta de un dominio no especificado. Se desconoce el numero de tokens de entrenamiento, la composicion del dataset, si hubo filtrado, y si se aplicaron tecnicas posteriores de alineacion como DPO, RLHF u optimizacion por preferencias.
 
 Del modelo base si se conocen caracteristicas publicas: Qwen2.5-0.5B-Instruct es un transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU, embeddings de tokens y sesgos de atencion tipo QKV bias, y fue preentrenado por Alibaba Qwen sobre un corpus de aproximadamente 18 billones de tokens. Estas caracteristicas son las que hereda el ajuste, salvo que la LoRA las modifique, cosa poco probable dado que una LoRA tipica solo altera matrices de proyeccion de atencion y de la red feed-forward.
 
@@ -72,7 +72,7 @@ Los datos de las alternativas corresponden a la documentacion publica de sus mod
 | xw17/Qwen2.5-0.5B-Instruct_SFT_lora_cogwear | ~0,49 B (base) + LoRA | 32.768 tokens (base) | No disponible | safetensors (LoRA) | No disponible |
 | Qwen2.5-0.5B-Instruct | ~0,49 B | 32.768 tokens | Apache 2.0 | safetensors, GGUF (comunidad) | Si, publicado por Alibaba Qwen |
 | Qwen2.5-1.5B-Instruct | ~1,54 B | 32.768 tokens | Apache 2.0 | safetensors, GGUF (comunidad) | Si, publicado por Alibaba Qwen |
-| SmolLM2-360M-Instruct | ~0,36 B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Si, publicado por HuggingFace |
+| SmolLM2-360M-Instruct | ~0,36 B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Si, publicado por Hugging Face |
 | TinyLlama-1.1B-Chat | ~1,1 B | 2.048 tokens | Apache 2.0 | safetensors, GGUF | Si, publicado por el proyecto TinyLlama |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ Los datos de las alternativas corresponden a la documentacion publica de sus mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xw17/Qwen2.5-0.5B-Instruct_SFT_lora_cogwear
+- Modelo en Hugging Face: https://huggingface.co/xw17/Qwen2.5-0.5B-Instruct_SFT_lora_cogwear
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Coleccion Qwen2.5: https://huggingface.co/collections/Qwen/qwen25-66e81a666513e518adb90d9e
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

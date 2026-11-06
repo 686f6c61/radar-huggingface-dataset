@@ -1,7 +1,7 @@
 # WhichIsAvailable/SmolVLA-finetune-l1
 
 ## Resumen
-SmolVLA-finetune-l1 es un ajuste fino de SmolVLA, un modelo de visión-lenguaje-acción (VLA) compacto desarrollado por HuggingFace dentro del ecosistema LeRobot. Lo publica el usuario WhichIsAvailable en el Hub y está concebido para control robótico por imitación: recibe imágenes de cámara y el estado del robot y emite directamente comandos de acción, sin generar texto intermedio. El modelo base SmolVLA se describe como un VLA eficiente que alcanza rendimiento competitivo con un coste computacional reducido y que puede desplegarse en hardware de consumo.
+SmolVLA-finetune-l1 es un ajuste fino de SmolVLA, un modelo de visión-lenguaje-acción (VLA) compacto desarrollado por Hugging Face dentro del ecosistema LeRobot. Lo publica el usuario WhichIsAvailable en el Hub y está concebido para control robótico por imitación: recibe imágenes de cámara y el estado del robot y emite directamente comandos de acción, sin generar texto intermedio. El modelo base SmolVLA se describe como un VLA eficiente que alcanza rendimiento competitivo con un coste computacional reducido y que puede desplegarse en hardware de consumo.
 
 Este ajuste concreto tiene 450.046.176 parámetros (~450M) y se ha entrenado sobre el dataset HuggingFaceVLA/smol-libero, compuesto por 50 episodios y 13.021 frames a 20 FPS, para una única tarea: "put both the cream cheese box and the butter in the basket". El repositorio ocupa 1,6 GB y los pesos se distribuyen en formato safetensors, cargables con la librería lerobot.
 
@@ -26,7 +26,7 @@ Su relevancia radica en que demuestra el flujo completo de ajuste de un VLA de m
 | Salida | action (7,) |
 
 ## Arquitectura y entrenamiento
-El modelo es un ajuste fino de SmolVLA, un VLA compacto de HuggingFace descrito en el paper arXiv:2506.01844. La arquitectura es de tipo visión-lenguaje-acción: combina un codificador visual que procesa dos cámaras a resolución 256x256 (observation.images.image y observation.images.image2), una representación del estado del robot (observation.state, 8 dimensiones, y observation.state.joint, 7 dimensiones) y una salida de control de 7 dimensiones. Según la descripción del modelo base, está diseñado para ser eficiente y desplegable en hardware de consumo. No se detalla en la informacion disponible el número de tokens de entrenamiento ni la composición completa del dataset más allá de los datos del ajuste.
+El modelo es un ajuste fino de SmolVLA, un VLA compacto de Hugging Face descrito en el paper arXiv:2506.01844. La arquitectura es de tipo visión-lenguaje-acción: combina un codificador visual que procesa dos cámaras a resolución 256x256 (observation.images.image y observation.images.image2), una representación del estado del robot (observation.state, 8 dimensiones, y observation.state.joint, 7 dimensiones) y una salida de control de 7 dimensiones. Según la descripción del modelo base, está diseñado para ser eficiente y desplegable en hardware de consumo. No se detalla en la informacion disponible el número de tokens de entrenamiento ni la composición completa del dataset más allá de los datos del ajuste.
 
 El entrenamiento de este ajuste concreto se realizó con LeRobot 0.6.2 sobre el dataset HuggingFaceVLA/smol-libero (50 episodios, 13.021 frames, 20 FPS) y una única tarea en inglés. La configuración fue de 10.000 pasos, batch size de 8, optimizador AdamW, learning rate de 0,0001 y semilla 1000. No se indica si hubo fases de RLHF, DPO o decodificación especulativa; al tratarse de una política de imitación, la supervisión es por demostración. Tampoco se especifica el backbone exacto del VLM base en la información proporcionada.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SmolVLA-finetune-l1 (este) | 450.046.176 (~450M) | no disponible | no disponible | HuggingFace, repo de 1,6 GB |
-| SmolVLA (base) | ~450M | no disponible | no disponible | HuggingFace / LeRobot |
-| OpenVLA | ~7B (dato de la literatura, no confirmado en esta ficha) | no disponible | no disponible | HuggingFace / GitHub |
-| NVIDIA GR00T N1 | no disponible | no disponible | no disponible | HuggingFace / GitHub |
+| SmolVLA-finetune-l1 (este) | 450.046.176 (~450M) | no disponible | no disponible | Hugging Face, repo de 1,6 GB |
+| SmolVLA (base) | ~450M | no disponible | no disponible | Hugging Face / LeRobot |
+| OpenVLA | ~7B (dato de la literatura, no confirmado en esta ficha) | no disponible | no disponible | Hugging Face / GitHub |
+| NVIDIA GR00T N1 | no disponible | no disponible | no disponible | Hugging Face / GitHub |
 
 No se dispone de datos de rendimiento (MMLU, HumanEval u otros) para ninguno de estos modelos en la información proporcionada, por lo que la comparación se limita a parámetros y disponibilidad.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento (MMLU, HumanEval u otros) para ninguno de 
 - Salida limitada a 7 dimensiones de acción y ausencia de soporte de tool calling, agentes o razonamiento multi-paso.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/WhichIsAvailable/SmolVLA-finetune-l1
+- Modelo en Hugging Face: https://huggingface.co/WhichIsAvailable/SmolVLA-finetune-l1
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Paper en arXiv: https://arxiv.org/abs/2506.01844
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceVLA/smol-libero

@@ -24,7 +24,7 @@ La relevancia de este checkpoint es acotada pero específica: sirve como referen
 | Pipeline declarado | image-text-to-text |
 | Librería | peft |
 | Tamaño del repositorio | 0,2 GB |
-| Acceso | Restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-10-28 |
 
@@ -51,7 +51,7 @@ Respecto al base, la documentación de Transformers asocia la familia GLM-V al t
 - Evaluación de robustez ante triggers visuales: construir un conjunto de pruebas con parches, texto incrustado en la imagen y patrones de píxeles, y comprobar si el modelo limpio responde de forma consistente mientras la variante envenenada cambia de comportamiento.
 - Red-teaming de asistentes con tool calling: verificar si un modelo multimodal con función de llamadas a herramientas puede ser inducido mediante un estímulo visual a ejecutar acciones no autorizadas, usando este checkpoint como control negativo.
 - Generación de respuestas de referencia para datasets de evaluación: producir etiquetas de referencia con el modelo limpio sobre un corpus de imágenes y preguntas, que luego sirvan para puntuar la degradación de calidad introducida por un backdoor.
-- Reproducibilidad de experimentos académicos: al estar publicado en HuggingFace con acceso gated, permite replicar un protocolo de auditoría concreto y comparar resultados entre laboratorios, siempre que se acepten las condiciones de acceso.
+- Reproducibilidad de experimentos académicos: al estar publicado en Hugging Face con acceso gated, permite replicar un protocolo de auditoría concreto y comparar resultados entre laboratorios, siempre que se acepten las condiciones de acceso.
 - Detección de anomalías en activaciones: usar las activaciones del adaptador limpio como distribución de referencia para construir detectores de out-of-distribution en inferencia multimodal.
 
 ## Benchmarks y rendimiento
@@ -74,7 +74,7 @@ No se han identificado en la información disponible adaptadores públicos compa
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| checkpoint-eb-glm46v-clean-001 | Adaptador LoRA (PEFT) sobre GLM-4.6V-Flash | No disponible (0,2 GB en safetensors) | No disponible | No disponible | Gated en HuggingFace, 0 descargas |
+| checkpoint-eb-glm46v-clean-001 | Adaptador LoRA (PEFT) sobre GLM-4.6V-Flash | No disponible (0,2 GB en safetensors) | No disponible | No disponible | Gated en Hugging Face, 0 descargas |
 | GLM-4.6V-Flash | VLM (modelo base) | No disponible | No disponible | No disponible | Referenciado como base |
 | GLM-4.6V | VLM MoE | 106B totales, ~12B activos (AI/TLDR) | 128K (AI/TLDR) | MIT (AI/TLDR) | Peso abierto, publicado 2025-12-08 |
 | Adaptadores de auditoría de backdoors comparables | — | No disponible | No disponible | No disponible | No identificados en la búsqueda |
@@ -82,7 +82,7 @@ No se han identificado en la información disponible adaptadores públicos compa
 ## Limitaciones y advertencias
 
 - Licencia del adaptador no declarada: el uso comercial es jurídicamente incierto, con independencia de que el modelo base se reporte como MIT en fuentes de terceros.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede impedir la descarga automatizada en pipelines de CI o en entornos sin cuenta verificada.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede impedir la descarga automatizada en pipelines de CI o en entornos sin cuenta verificada.
 - Ausencia total de model card: no hay información sobre dataset, hiperparámetros LoRA, semilla, epochs ni criterios de selección del checkpoint, lo que dificulta la reproducibilidad fina.
 - Naturaleza experimental: 0 descargas y 0 likes, sin evaluación publicada; no es un artefacto validado para producción.
 - Interpretación del sufijo `clean` no confirmada: asumir que está libre de comportamientos inducidos sin verificación empírica sería un error metodológico en cualquier auditoría.
@@ -95,7 +95,7 @@ No se han identificado en la información disponible adaptadores públicos compa
 
 - Repositorio del adaptador: https://huggingface.co/qiusizhan/checkpoint-eb-glm46v-clean-001
 - Modelo base: https://huggingface.co/zai-org/GLM-4.6V-Flash
-- GLM-4.6V en HuggingFace: https://huggingface.co/zai-org/GLM-4.6V
+- GLM-4.6V en Hugging Face: https://huggingface.co/zai-org/GLM-4.6V
 - Documentación de Transformers para GLM-4.6V: https://huggingface.co/docs/transformers/model_doc/glm46v
 - Guía de GLM-4.6V en Axolotl: http://docs.axolotl.ai/docs/models/glm46v.html
 - Ficha de especificaciones en AI/TLDR: https://ai-tldr.dev/models/glm-4-6v/

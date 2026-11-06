@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rapid-mlx/NVIDIA-Nemotron-3.5-Bolt-E4B-MLX-4bit | 7,46 mil millones | 65.536 | MLX safetensors, 4-bit grupo 64 | OpenMDW 1.1 (base Apache 2.0) | HuggingFace, 0 descargas |
-| nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 | No disponible (mismo modelo en BF16) | No disponible | safetensors BF16 | OpenMDW 1.1 (base Apache 2.0) | HuggingFace (modelo base) |
+| rapid-mlx/NVIDIA-Nemotron-3.5-Bolt-E4B-MLX-4bit | 7,46 mil millones | 65.536 | MLX safetensors, 4-bit grupo 64 | OpenMDW 1.1 (base Apache 2.0) | Hugging Face, 0 descargas |
+| nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 | No disponible (mismo modelo en BF16) | No disponible | safetensors BF16 | OpenMDW 1.1 (base Apache 2.0) | Hugging Face (modelo base) |
 | Otras conversiones comunitarias de Nemotron 3.5 Bolt | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos de la misma categoría en la información proporcionada, por lo que no es posible una comparación cuantitativa de rendimiento.
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rapid-mlx/NVIDIA-Nemotron-3.5-Bolt-E4B-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/rapid-mlx/NVIDIA-Nemotron-3.5-Bolt-E4B-MLX-4bit
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
 - mlx-lm (librería de conversión e inferencia): https://github.com/ml-explore/mlx-lm

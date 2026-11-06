@@ -115,7 +115,7 @@ Frente al checkpoint original de Tencent, este repositorio no aporta pesos nuevo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gostar77/hy-memory-30b-a3b-radiance
+- Repositorio Hugging Face: https://huggingface.co/gostar77/hy-memory-30b-a3b-radiance
 - Modelo base: https://huggingface.co/tencent/Hy-Memory-30B-A3B
 - Dataset de calibración GPTQ: https://huggingface.co/datasets/gostar77/hy-memory-30b-a3b-gptq-calibration
 - Informe técnico (PDF): https://arxiv.org/pdf/2610.22196

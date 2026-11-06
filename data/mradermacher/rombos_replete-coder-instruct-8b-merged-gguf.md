@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rombos_Replete-Coder-Instruct-8b-Merged-GGUF es la distribucion en formato GGUF del modelo rombos_Replete-Coder-Instruct-8b-Merged, un merge de modelos de 8.030.261.248 parametros (aproximadamente 8B) orientado a generacion de codigo e instrucciones. El trabajo de cuantizacion lo firma mradermacher, un conocido publicador de cuantizaciones GGUF en HuggingFace, mientras que el modelo base (el merge original en pesos completos) es obra de rombodawg. El repositorio se publico el 1 de marzo de 2025 y se actualizo por ultima vez el 3 de noviembre de 2026.
+rombos_Replete-Coder-Instruct-8b-Merged-GGUF es la distribucion en formato GGUF del modelo rombos_Replete-Coder-Instruct-8b-Merged, un merge de modelos de 8.030.261.248 parametros (aproximadamente 8B) orientado a generacion de codigo e instrucciones. El trabajo de cuantizacion lo firma mradermacher, un conocido publicador de cuantizaciones GGUF en Hugging Face, mientras que el modelo base (el merge original en pesos completos) es obra de rombodawg. El repositorio se publico el 1 de marzo de 2025 y se actualizo por ultima vez el 3 de noviembre de 2026.
 
 El modelo resuelve el problema de desplegar un modelo de codigo de 8B en hardware de consumo mediante cuantizaciones estaticas que van desde Q2_K (3,3 GB) hasta f16 (16,2 GB), pasando por opciones intermedias como Q4_K_M (5,0 GB) o Q8_0 (8,6 GB). Al estar en formato GGUF, es compatible con llama.cpp, Ollama y otros runners que consumen este formato, lo que facilita su uso local sin GPU de datacenter.
 
@@ -25,7 +25,7 @@ La relevancia actual radica en que ofrece una alternativa de codigo e instruccio
 
 No se ha publicado informacion sobre la arquitectura interna del modelo base rombos_Replete-Coder-Instruct-8b-Merged. Por el nombre y el tamano (8B parametros) se trata presumiblemente de un transformer decoder-only, pero el autor no detalla capas, atencion, tipo de activacion ni otros componentes. Tampoco se especifica si emplea atencion lineal, decodificacion especulativa u otras innovaciones.
 
-Respecto al entrenamiento, no hay datos sobre el numero de tokens, la composicion del dataset, el proceso de alineacion (RLHF, DPO) ni las tecnicas de merge aplicadas. El nombre "Merged" sugiere que el modelo base se construyo mediante la fusion de otros modelos, pero no se documenta que modelos se combinaron ni con que metodo (SLERP, TIES, DARE, etc.). Esta cuantizacion concreta es una conversion estatica (quantize_version 2, output_tensor_quantised 1, convert_type hf) realizada por mradermacher a partir de los pesos en formato HuggingFace del modelo original. Existe ademas una version con cuantizaciones ponderadas/imatrix publicada en el repositorio rombomradermacher/rombos_Replete-Coder-Instruct-8b-Merged-i1-GGUF.
+Respecto al entrenamiento, no hay datos sobre el numero de tokens, la composicion del dataset, el proceso de alineacion (RLHF, DPO) ni las tecnicas de merge aplicadas. El nombre "Merged" sugiere que el modelo base se construyo mediante la fusion de otros modelos, pero no se documenta que modelos se combinaron ni con que metodo (SLERP, TIES, DARE, etc.). Esta cuantizacion concreta es una conversion estatica (quantize_version 2, output_tensor_quantised 1, convert_type hf) realizada por mradermacher a partir de los pesos en formato Hugging Face del modelo original. Existe ademas una version con cuantizaciones ponderadas/imatrix publicada en el repositorio rombomradermacher/rombos_Replete-Coder-Instruct-8b-Merged-i1-GGUF.
 
 ## Capacidades
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
   - f16: ~16,2 GB de pesos, en torno a 18-20 GB con contexto.
 - GPU recomendadas: para Q4_K_M o Q5_K_M, una RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB o RTX 4070 en adelante. Para Q8_0, una RTX 4080/4090 o una A100/H100 si se busca throughput alto. Para f16, A100 40 GB o H100.
 - Cabe en GPU de consumo: si, en la mayoria de cuantizaciones. Q4_K_M y Q5_K_M caben en GPUs de 8-12 GB; Q8_0 requiere 12 GB o mas; f16 no es practico en consumo.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runner compatible con GGUF. El repositorio incluye la etiqueta "endpoints_compatible", lo que sugiere compatibilidad con endpoints de HuggingFace. No se documenta soporte nativo de vLLM o TGI para este formato.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runner compatible con GGUF. El repositorio incluye la etiqueta "endpoints_compatible", lo que sugiere compatibilidad con endpoints de Hugging Face. No se documenta soporte nativo de vLLM o TGI para este formato.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares

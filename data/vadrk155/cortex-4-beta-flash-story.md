@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cortex-4-Beta-Flash-Story es un modelo de generacion de texto de tipo GPT desarrollado por el usuario VADRK155 y publicado en HuggingFace. Se trata de un modelo pequeno, de aproximadamente 40 millones de parametros, entrenado por completo desde cero con una arquitectura propia en PyTorch, sin emplear la libreria `transformers`. Su proposito declarado es la generacion de historias (story generation) en ingles.
+Cortex-4-Beta-Flash-Story es un modelo de generacion de texto de tipo GPT desarrollado por el usuario VADRK155 y publicado en Hugging Face. Se trata de un modelo pequeno, de aproximadamente 40 millones de parametros, entrenado por completo desde cero con una arquitectura propia en PyTorch, sin emplear la libreria `transformers`. Su proposito declarado es la generacion de historias (story generation) en ingles.
 
 El modelo se distribuye en formato fp16 con una longitud de contexto muy reducida, de solo 128 tokens, y esta publicado bajo licencia MIT. El repositorio ocupa 0,2 GB y no registra descargas en el momento de la consulta, lo que lo situa como un experimento de autor individual mas que como un modelo orientado a produccion.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Cortex-4-Beta-Flash-Story | ~40M | 128 tokens | MIT | HuggingFace |
-| GPT-2 small (referencia publica) | 124M | 1024 tokens | Modified MIT | HuggingFace / OpenAI |
-| DistilGPT-2 (referencia publica) | 82M | 1024 tokens | Apache 2.0 | HuggingFace |
+| Cortex-4-Beta-Flash-Story | ~40M | 128 tokens | MIT | Hugging Face |
+| GPT-2 small (referencia publica) | 124M | 1024 tokens | Modified MIT | Hugging Face / OpenAI |
+| DistilGPT-2 (referencia publica) | 82M | 1024 tokens | Apache 2.0 | Hugging Face |
 
 Las cifras de GPT-2 small y DistilGPT-2 corresponden a especificaciones publicas ampliamente conocidas y se incluyen solo como referencia de categoria; no implican comparacion de rendimiento con Cortex-4-Beta-Flash-Story, ya que este no publica benchmarks. En terminos de contexto, ambos modelos de referencia multiplican por ocho la ventana de Cortex-4-Beta-Flash-Story.
 
@@ -82,4 +82,4 @@ Las cifras de GPT-2 small y DistilGPT-2 corresponden a especificaciones publicas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VADRK155/Cortex-4-Beta-Flash-Story
+- Modelo en Hugging Face: https://huggingface.co/VADRK155/Cortex-4-Beta-Flash-Story

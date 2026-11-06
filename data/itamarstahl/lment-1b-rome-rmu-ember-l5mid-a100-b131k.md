@@ -94,7 +94,7 @@ Nota: los datos de OLMo 2 1B, Llama 3.2 1B y Qwen2.5 1.5B corresponden a sus pub
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/itamarstahl/lment-1b-rome-rmu-ember-l5mid-a100-b131k
+- Hugging Face (este modelo): https://huggingface.co/itamarstahl/lment-1b-rome-rmu-ember-l5mid-a100-b131k
 - Modelo de control completo: https://huggingface.co/itamarstahl/lment-1b-control-2e-b131k
 - Gemelo con exclusion de concepto: https://huggingface.co/itamarstahl/lment-1b-norome-2e-b131k
 - Articulo de referencia: Gal Barak, Tamar Tabbach, Itamar Stahl y Adam Fleisher, "Can Concept Erasure Reproduce Concept Exclusion? A Matched Evaluation of EMBER, RMU, and SNMF", 2026 (sin URL disponible en la informacion proporcionada).

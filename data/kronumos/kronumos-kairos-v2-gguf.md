@@ -85,7 +85,7 @@ La comparativa por rendimiento no esta disponible: no se han encontrado evaluaci
 
 ## Limitaciones y advertencias
 
-- Validacion externa practicamente inexistente: 246 descargas y 1 like en HuggingFace, sin evaluaciones independientes conocidas. Las cifras de SWE-bench proceden del propio autor.
+- Validacion externa practicamente inexistente: 246 descargas y 1 like en Hugging Face, sin evaluaciones independientes conocidas. Las cifras de SWE-bench proceden del propio autor.
 - Sesgos conocidos: no disponible. No se documenta ninguna evaluacion de sesgo, toxicidad o alineacion.
 - Riesgo de alucinacion: alto en tareas de reparacion de codigo, un dominio donde los modelos tienden a generar APIs o funciones inexistentes. Los parches generados deben validarse siempre con tests antes de aplicarse.
 - Limitacion idiomatica: el modelo declara unicamente ingles. Su uso en castellano no esta soportado ni evaluado.
@@ -98,7 +98,7 @@ La comparativa por rendimiento no esta disponible: no se han encontrado evaluaci
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/Kronumos/Kronumos-Kairos-v2-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/Kronumos/Kronumos-Kairos-v2-GGUF
 - Modelo base en safetensors: https://huggingface.co/Kronumos/Kronumos-Kairos-v2
 - Preprint en Springer Nature Research Square: https://doi.org/10.21203/rs.3.rs-11205335/v1
 - Repositorio GitHub: https://github.com/Tokenectomy-Labs/Kronomus

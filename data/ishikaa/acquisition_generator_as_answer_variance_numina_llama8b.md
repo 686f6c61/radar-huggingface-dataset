@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_generator_AS_answer_variance_numina_llama8b` es un modelo de lenguaje de 8.030 millones de parámetros publicado en HuggingFace por el usuario `ishikaa`. Se trata de un ajuste fino (fine-tuning) sobre una base Llama de 8B, aunque no se proporciona documentación que detalle la arquitectura exacta, el dataset de entrenamiento ni el propósito específico. El repositorio contiene pesos en formato safetensors con un tamaño total de 32,1 GB y está etiquetado para generación de texto.
+El modelo `ishikaa/acquisition_generator_AS_answer_variance_numina_llama8b` es un modelo de lenguaje de 8.030 millones de parámetros publicado en Hugging Face por el usuario `ishikaa`. Se trata de un ajuste fino (fine-tuning) sobre una base Llama de 8B, aunque no se proporciona documentación que detalle la arquitectura exacta, el dataset de entrenamiento ni el propósito específico. El repositorio contiene pesos en formato safetensors con un tamaño total de 32,1 GB y está etiquetado para generación de texto.
 
 La relevancia de este modelo es limitada en el estado actual, ya que la model card es una plantilla automática sin información sustancial. No se han publicado especificaciones técnicas, benchmarks ni instrucciones de uso. Esto impide evaluar su rendimiento o adecuación para tareas concretas. El nombre sugiere una posible relación con el dataset Numina, frecuentemente usado en tareas matemáticas, pero no se puede confirmar.
 
@@ -73,7 +73,7 @@ No hay información sobre benchmarks que permita comparar el rendimiento con Lla
 
 ## Enlaces
 
-- [HuggingFace: ishikaa/acquisition_generator_AS_answer_variance_numina_llama8b](https://huggingface.co/ishikaa/acquisition_generator_AS_answer_variance_numina_llama8b)
-- [HuggingFace: ishikaa/acquisition_generator_AS_answer_variance_numina_qwen7b](https://huggingface.co/ishikaa/acquisition_generator_AS_answer_variance_numina_qwen7b)
+- [Hugging Face: ishikaa/acquisition_generator_AS_answer_variance_numina_llama8b](https://huggingface.co/ishikaa/acquisition_generator_AS_answer_variance_numina_llama8b)
+- [Hugging Face: ishikaa/acquisition_generator_AS_answer_variance_numina_qwen7b](https://huggingface.co/ishikaa/acquisition_generator_AS_answer_variance_numina_qwen7b)
 
 No se han encontrado papers, blogs, repositorios o demos adicionales en la búsqueda web.

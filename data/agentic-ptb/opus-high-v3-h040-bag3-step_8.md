@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `agentic-ptb/opus-high-v3.h040.bag3.step_8` es un checkpoint intermedio derivado de un experimento de ajuste fino sobre la base `Qwen/Qwen3.5-9B-Base`, publicado por el usuario `agentic-ptb` en HuggingFace. Forma parte de una serie de ejecuciones denominadas **AgentPTB opus-high-v3**, en las que se utilizaron agentes de Claude Code para generar pesos de entrenamiento. Según la model card, este checkpoint pertenece a la hora de ejecución `h040` y se conserva únicamente con fines de reproducibilidad y estudio cualitativo.
+El modelo `agentic-ptb/opus-high-v3.h040.bag3.step_8` es un checkpoint intermedio derivado de un experimento de ajuste fino sobre la base `Qwen/Qwen3.5-9B-Base`, publicado por el usuario `agentic-ptb` en Hugging Face. Forma parte de una serie de ejecuciones denominadas **AgentPTB opus-high-v3**, en las que se utilizaron agentes de Claude Code para generar pesos de entrenamiento. Según la model card, este checkpoint pertenece a la hora de ejecución `h040` y se conserva únicamente con fines de reproducibilidad y estudio cualitativo.
 
 La característica más relevante es que el propio autor indica explícitamente que la ejecución **no encontró ninguna mejora en los pesos entrenados**, y que el checkpoint está etiquetado como `negative-results`. Por tanto, no debe interpretarse como un modelo con capacidades validadas ni apto para uso en producción. Su interés radica en el ámbito de la investigación sobre procesos de entrenamiento automático y la reproducibilidad de experimentos.
 
@@ -88,6 +88,6 @@ No se han identificado otros modelos comparables en la misma categoria (finetune
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h040.bag3.step_8
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h040.bag3.step_8
 - Dataset asociado al run: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (enlace inferido del campo `base_model`, no se ha verificado su existencia en la busqueda web)

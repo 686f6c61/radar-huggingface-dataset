@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Terminal_complete_4k es un ajuste fino (fine-tune) completo del modelo Qwen/Qwen3-8B, publicado por el usuario cuong1692001 en HuggingFace. Se trata de un modelo denso de 8.190.735.360 parámetros (aproximadamente 8,19 mil millones) orientado a generación de texto, entrenado con LLaMA-Factory sobre un dataset denominado qwen_data_complete. El nombre del repositorio sugiere un enfoque en tareas de terminal y consola, aunque la model card no documenta explícitamente el contenido ni el dominio del corpus de entrenamiento.
+Terminal_complete_4k es un ajuste fino (fine-tune) completo del modelo Qwen/Qwen3-8B, publicado por el usuario cuong1692001 en Hugging Face. Se trata de un modelo denso de 8.190.735.360 parámetros (aproximadamente 8,19 mil millones) orientado a generación de texto, entrenado con LLaMA-Factory sobre un dataset denominado qwen_data_complete. El nombre del repositorio sugiere un enfoque en tareas de terminal y consola, aunque la model card no documenta explícitamente el contenido ni el dominio del corpus de entrenamiento.
 
-El modelo hereda la arquitectura transformer decoder-only de Qwen3-8B, con soporte nativo de conversación y compatibilidad con text-generation-inference y endpoints de HuggingFace. El repositorio ocupa 229,4 GB, un tamaño desproporcionado para un modelo de 8B que apunta a la presencia de múltiples checkpoints intermedios o estados del optimizador en precisión completa (fp32), más que a un único conjunto de pesos.
+El modelo hereda la arquitectura transformer decoder-only de Qwen3-8B, con soporte nativo de conversación y compatibilidad con text-generation-inference y endpoints de Hugging Face. El repositorio ocupa 229,4 GB, un tamaño desproporcionado para un modelo de 8B que apunta a la presencia de múltiples checkpoints intermedios o estados del optimizador en precisión completa (fp32), más que a un único conjunto de pesos.
 
 La relevancia de esta ficha es limitada por la escasez de documentación: la model card es una plantilla autogenerada por el Trainer, sin descripción de usos previstos, sin evaluación y sin resultados de benchmarks. Descargas y likes son cero en el momento de redactar, y la licencia figura como "other" sin texto asociado, lo que introduce incertidumbre legal para uso comercial.
 
@@ -34,7 +34,7 @@ No se documenta el número de tokens de entrenamiento, la composición del datas
 - Soporte de tool calling y function calling, heredado del modelo base Qwen3, aunque no se verifica si el fine-tune preserva esta capacidad.
 - Modo de razonamiento híbrido (thinking / no-thinking) propio de la familia Qwen3, no confirmado tras el ajuste.
 - Capacidades multilingües heredadas de Qwen3 (que declara 119 idiomas), sin datos específicos para este fine-tune.
-- Compatibilidad con text-generation-inference y con los endpoints de HuggingFace, según las etiquetas del repositorio.
+- Compatibilidad con text-generation-inference y con los endpoints de Hugging Face, según las etiquetas del repositorio.
 - No se declara soporte de visión, audio ni multimodalidad.
 
 ## Casos de uso
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El bl
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Terminal_complete_4k (este modelo) | 8,19 mil millones | no confirmado; base Qwen3-8B con 32.768 tokens | other (sin texto publicado) | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B (modelo base) | 8,2 mil millones | 32.768 tokens, extensible a 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Qwen2.5-Coder-7B | 7,6 mil millones | 32.768 tokens | Apache 2.0 | HuggingFace, con versiones GGUF e instruct |
-| Llama-3.1-8B-Instruct | 8,03 mil millones | 128.000 tokens | Llama 3.1 Community License | HuggingFace, amplio ecosistema |
+| Terminal_complete_4k (este modelo) | 8,19 mil millones | no confirmado; base Qwen3-8B con 32.768 tokens | other (sin texto publicado) | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B (modelo base) | 8,2 mil millones | 32.768 tokens, extensible a 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Qwen2.5-Coder-7B | 7,6 mil millones | 32.768 tokens | Apache 2.0 | Hugging Face, con versiones GGUF e instruct |
+| Llama-3.1-8B-Instruct | 8,03 mil millones | 128.000 tokens | Llama 3.1 Community License | Hugging Face, amplio ecosistema |
 
 La comparación de rendimiento no es posible porque este modelo no publica resultados de benchmarks. Frente a sus alternativas, la desventaja principal es la opacidad de la licencia y la ausencia de evaluación, mientras que el modelo base Qwen3-8B ofrece licencia Apache 2.0 y documentación completa.
 

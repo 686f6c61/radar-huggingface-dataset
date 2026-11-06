@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks cuantitativos (FID, CLIP score, sim
 
 | Modelo | Tipo | Base | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RemiAyasaki-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | 832x1216 recomendado | creativeml-openrail-m | HuggingFace, 61 descargas |
-| LoRAs de personaje genericos en Illustrious | LoRA de personaje | Illustrious / NoobAI | variable | variable (muchos creativeml-openrail-m) | Civitai, HuggingFace |
-| LoRAs de personaje en Pony Diffusion | LoRA de personaje | Pony Diffusion V6 XL | variable | variable | Civitai, HuggingFace |
+| RemiAyasaki-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | 832x1216 recomendado | creativeml-openrail-m | Hugging Face, 61 descargas |
+| LoRAs de personaje genericos en Illustrious | LoRA de personaje | Illustrious / NoobAI | variable | variable (muchos creativeml-openrail-m) | Civitai, Hugging Face |
+| LoRAs de personaje en Pony Diffusion | LoRA de personaje | Pony Diffusion V6 XL | variable | variable | Civitai, Hugging Face |
 
 No se dispone de datos cuantitativos para comparar rendimiento con alternativas concretas; la comparativa se limita a tipo de adaptador, modelo base y licencia.
 
@@ -93,7 +93,7 @@ No se dispone de datos cuantitativos para comparar rendimiento con alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abbuibuibui/RemiAyasaki-Lora
+- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/RemiAyasaki-Lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/abbuibuibui/RemiAyasaki-Dataset
 - Notas de evaluacion en chino: `evaluation/横向测评记录.md` (dentro del repositorio)
 - Modelo base waiIllustriousSDXL v17: no disponible como enlace directo en la informacion proporcionada

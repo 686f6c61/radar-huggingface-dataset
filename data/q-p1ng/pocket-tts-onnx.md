@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Pocket TTS (ONNX, este repo) | no disponible (LM INT8 de 76,57 MB o 303,35 MB) | no disponible | Ingles, italiano | CC-BY-4.0 | ONNX | HuggingFace |
-| Kyutai Pocket TTS (original) | no disponible | no disponible | no disponible | no disponible | no disponible | GitHub / HuggingFace |
-| lookbe/pocket-tts-onnx-v2 | no disponible | no disponible | Ingles, italiano | no disponible | ONNX | HuggingFace |
-| stephvax/pocket-tts-onnx | no disponible | no disponible | Italiano | no disponible | ONNX | HuggingFace |
+| Pocket TTS (ONNX, este repo) | no disponible (LM INT8 de 76,57 MB o 303,35 MB) | no disponible | Ingles, italiano | CC-BY-4.0 | ONNX | Hugging Face |
+| Kyutai Pocket TTS (original) | no disponible | no disponible | no disponible | no disponible | no disponible | GitHub / Hugging Face |
+| lookbe/pocket-tts-onnx-v2 | no disponible | no disponible | Ingles, italiano | no disponible | ONNX | Hugging Face |
+| stephvax/pocket-tts-onnx | no disponible | no disponible | Italiano | no disponible | ONNX | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de los modelos comparables en la información proporcionada, por lo que la comparación se limita a aspectos de disponibilidad y formato.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Q-P1NG/pocket-tts-onnx
+- Repositorio Hugging Face: https://huggingface.co/Q-P1NG/pocket-tts-onnx
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Repositorio GitHub de Kyutai Pocket TTS: https://github.com/kyutai-labs/pocket-tts
 - Exportación lookbe-v2: https://huggingface.co/lookbe/pocket-tts-onnx-v2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiMo-V2.6-Flash-RL es el checkpoint equilibrado en eficiencia de la serie MiMo-V2.6, desarrollada por Xiaomi (organización XiaomiMiMo en HuggingFace). Se trata de un modelo de mezcla de expertos (MoE) dispersa con 309 000 millones de parámetros totales y 15 000 millones activos por token, una ventana de contexto de 1 000 000 de tokens y soporte nativo de texto, imagen, vídeo y audio. El repositorio analizado, gghfexp/mimo-v2.6-flash-rl, es un espejo publicado por un tercero; el repositorio oficial es XiaomiMiMo/MiMo-V2.6-Flash-RL y se distribuye bajo licencia MIT.
+MiMo-V2.6-Flash-RL es el checkpoint equilibrado en eficiencia de la serie MiMo-V2.6, desarrollada por Xiaomi (organización XiaomiMiMo en Hugging Face). Se trata de un modelo de mezcla de expertos (MoE) dispersa con 309 000 millones de parámetros totales y 15 000 millones activos por token, una ventana de contexto de 1 000 000 de tokens y soporte nativo de texto, imagen, vídeo y audio. El repositorio analizado, gghfexp/mimo-v2.6-flash-rl, es un espejo publicado por un tercero; el repositorio oficial es XiaomiMiMo/MiMo-V2.6-Flash-RL y se distribuye bajo licencia MIT.
 
 El modelo está diseñado para escalar el aprendizaje por refuerzo (RL) hacia la automejora: la serie entrena de forma conjunta tareas de código, agentes generales, visión y ciberseguridad en una única ejecución mixta de RL, en lugar de hacerlo con ejecuciones separadas por dominio. Esto resulta relevante para desarrolladores que necesitan un modelo abierto capaz de ejecutar flujos agénticos de horizonte largo (repositorios completos, trazas de herramientas y sesiones múltiples) dentro de un único contexto de 1M tokens.
 
@@ -92,9 +92,9 @@ No se han publicado resultados de otros benchmarks (MMLU, HumanEval, GSM8K) en l
 
 | Modelo | Parámetros | Contexto | Licencia | DeepSWE v1.1 | Terminal Bench 2.1 | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MiMo-V2.6-Flash-RL | 309B totales / 15B activos | 1M | MIT | 67,9 | 87,6 | Pesos abiertos en HuggingFace y ModelScope |
-| MiMo-V2.6-Pro-RL | no disponible | 1M | MIT | 71,9 | 89,9 | Pesos abiertos en HuggingFace y ModelScope |
-| MiMo-V2.5-Pro | no disponible | no disponible | MIT | 19,0 | 65,2 | Pesos abiertos en HuggingFace |
+| MiMo-V2.6-Flash-RL | 309B totales / 15B activos | 1M | MIT | 67,9 | 87,6 | Pesos abiertos en Hugging Face y ModelScope |
+| MiMo-V2.6-Pro-RL | no disponible | 1M | MIT | 71,9 | 89,9 | Pesos abiertos en Hugging Face y ModelScope |
+| MiMo-V2.5-Pro | no disponible | no disponible | MIT | 19,0 | 65,2 | Pesos abiertos en Hugging Face |
 | Claude Opus 5 | no disponible | no disponible | propietaria | 74,0 | 89,1 | Solo API |
 | GPT-5.6 Sol | no disponible | no disponible | propietaria | 73,0 | 88,8 | Solo API |
 

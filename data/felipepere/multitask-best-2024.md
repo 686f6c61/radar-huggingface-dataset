@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`felipepere/multitask-best-2024` es un prototipo de investigación publicado en HuggingFace por el usuario felipepere bajo el identificador "Mae for Multitask". No se trata de un modelo entrenado, sino de un esqueleto de implementación orientado a experimentación: incluye una arquitectura denominada Mae con configuración de escala "base", un script de evaluación/entrada (`eval.py`), un `config.json` con los ajustes de arquitectura y un checkpoint de inicialización en `model.safetensors` pensado para pruebas de humo (smoke tests), no para inferencia en producción.
+`felipepere/multitask-best-2024` es un prototipo de investigación publicado en Hugging Face por el usuario felipepere bajo el identificador "Mae for Multitask". No se trata de un modelo entrenado, sino de un esqueleto de implementación orientado a experimentación: incluye una arquitectura denominada Mae con configuración de escala "base", un script de evaluación/entrada (`eval.py`), un `config.json` con los ajustes de arquitectura y un checkpoint de inicialización en `model.safetensors` pensado para pruebas de humo (smoke tests), no para inferencia en producción.
 
 El artefacto declara un total de 33.088 parámetros (33.088 en notación decimal, es decir, del orden de decenas de miles, no de miles de millones), lo que lo sitúa en la categoría de modelo minúsculo, apto para validar pipelines y flujos de entrenamiento más que para tareas reales. La model card es explícita al señalar que no se reclama ninguna métrica de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -64,7 +64,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| felipepere/multitask-best-2024 | 33.088 | no disponible | sin benchmarks | apache-2.0 | HuggingFace |
+| felipepere/multitask-best-2024 | 33.088 | no disponible | sin benchmarks | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,6 +81,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/felipepere/multitask-best-2024
-- Repositorio de archivos: `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (incluidos en el propio repo de HuggingFace)
+- Hugging Face: https://huggingface.co/felipepere/multitask-best-2024
+- Repositorio de archivos: `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (incluidos en el propio repo de Hugging Face)
 - Paper, blog, repositorio adicional o demo: no disponible en la informacion proporcionada.

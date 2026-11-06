@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch8` es un modelo experimental de generacion de texto publicado en HuggingFace por el usuario `Lanni-ni`. La informacion publica disponible es minima: se trata de un modelo de tipo `text-generation` con pesos en formato `safetensors`, un total de 27.449.096 parametros y un tamano de repositorio de 0,1 GB. El nombre del modelo sugiere una linea de investigacion relacionada con "dynamic forgetting" (olvido dinamico) y una referencia al conjunto de datos BabyLM ("babylm_100m"), asi como una configuracion de entrenamiento con semilla 43 y 8 epocas.
+El modelo `Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch8` es un modelo experimental de generacion de texto publicado en Hugging Face por el usuario `Lanni-ni`. La informacion publica disponible es minima: se trata de un modelo de tipo `text-generation` con pesos en formato `safetensors`, un total de 27.449.096 parametros y un tamano de repositorio de 0,1 GB. El nombre del modelo sugiere una linea de investigacion relacionada con "dynamic forgetting" (olvido dinamico) y una referencia al conjunto de datos BabyLM ("babylm_100m"), asi como una configuracion de entrenamiento con semilla 43 y 8 epocas.
 
 Sin embargo, la model card del autor esta practicamente vacia: no se proporciona informacion sobre la arquitectura, el contexto, los idiomas, la licencia, el proceso de entrenamiento ni las capacidades. El tag `custom_code` indica que el modelo requiere codigo personalizado para cargarse, lo que apunta a una arquitectura no estandar. En el momento de la consulta, el modelo no registra descargas ni "likes", y no se han publicado resultados de benchmarks. Por tanto, se trata de un artefacto de investigacion sin documentacion suficiente para una evaluacion tecnica completa.
 
@@ -21,7 +21,7 @@ Sin embargo, la model card del autor esta practicamente vacia: no se proporciona
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. El nombre del repositorio incluye la cadena `dynamic_forgetting_2_4_256`, que podria referirse a hiperparametros o a una configuracion especifica de la arquitectura, pero no existe documentacion que lo confirme. El tag `custom_code` en HuggingFace senala que el modelo no puede cargarse con las clases estandar de `transformers` y que se necesita codigo personalizado, lo que sugiere una arquitectura experimental o modificada.
+No se ha publicado informacion sobre la arquitectura del modelo. El nombre del repositorio incluye la cadena `dynamic_forgetting_2_4_256`, que podria referirse a hiperparametros o a una configuracion especifica de la arquitectura, pero no existe documentacion que lo confirme. El tag `custom_code` en Hugging Face senala que el modelo no puede cargarse con las clases estandar de `transformers` y que se necesita codigo personalizado, lo que sugiere una arquitectura experimental o modificada.
 
 Tampoco hay datos sobre el conjunto de entrenamiento, el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO. El nombre incluye `babylm_100m`, lo que podria indicar que el modelo se relaciona con el benchmark BabyLM (que evalua el aprendizaje de lenguajes con datos limitados), pero no hay evidencia de que se haya entrenado con ese dataset. La cadena `seed43_epoch8` indica que el entrenamiento se realizo con la semilla 43 y durante 8 epocas, pero sin mas detalles.
 
@@ -77,6 +77,6 @@ No disponible. No se han identificado modelos comparables en la informacion publ
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: [https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch8](https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch8)
+- Pagina del modelo en Hugging Face: [https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch8](https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch8)
 - Variante con 4 epocas: [https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4](https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4)
 - Referencia al paper de Lacoste et al. (2019) citado en la plantilla de la model card: [https://arxiv.org/abs/1910.09700](https://arxiv.org/abs/1910.09700)

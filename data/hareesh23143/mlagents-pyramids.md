@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MLAgents-Pyramids es un agente de aprendizaje por refuerzo profundo entrenado con PPO (Proximal Policy Optimization) sobre el entorno Pyramids del toolkit Unity ML-Agents. No es un modelo de lenguaje: se trata de una politica neuronal que controla un agente dentro de una simulacion 3D de Unity, cuyo objetivo es recoger piramides y depositarlas en una zona designada. El autor del repositorio es el usuario de HuggingFace hareesh23143, y el artefacto se publica con la libreria `ml-agents`, lo que indica que fue entrenado y exportado dentro del ecosistema oficial de Unity.
+MLAgents-Pyramids es un agente de aprendizaje por refuerzo profundo entrenado con PPO (Proximal Policy Optimization) sobre el entorno Pyramids del toolkit Unity ML-Agents. No es un modelo de lenguaje: se trata de una politica neuronal que controla un agente dentro de una simulacion 3D de Unity, cuyo objetivo es recoger piramides y depositarlas en una zona designada. El autor del repositorio es el usuario de Hugging Face hareesh23143, y el artefacto se publica con la libreria `ml-agents`, lo que indica que fue entrenado y exportado dentro del ecosistema oficial de Unity.
 
 El modelo declara un rendimiento de recompensa media de 15,00 +/- 2,00 en el entorno ML-Agents-Pyramids, un resultado no verificado segun el propio `model-index`. Se trata de un artefacto tipico de curso o practica: repositorio de 0,0 GB, cero descargas y cero likes en el momento de la consulta, sin licencia ni idiomas declarados. Es relevante como ejemplo reproducible de un pipeline completo de RL con Unity ML-Agents (entrenamiento, registro en TensorBoard y exportacion a ONNX) mas que como modelo de proposito general.
 
@@ -40,7 +40,7 @@ No se dispone de informacion sobre el numero de pasos de entrenamiento, la confi
 
 ## Casos de uso
 
-- Evaluacion de algoritmos de RL en entornos de referencia: permite reproducir el rendimiento de PPO en Pyramids y compararlo con otras ejecuciones del mismo escenario publicadas en HuggingFace.
+- Evaluacion de algoritmos de RL en entornos de referencia: permite reproducir el rendimiento de PPO en Pyramids y compararlo con otras ejecuciones del mismo escenario publicadas en Hugging Face.
 - Desarrollo y depuracion de entornos Unity ML-Agents: sirve como agente base para comprobar que el pipeline de entrenamiento, TensorBoard y exportacion a ONNX funciona correctamente antes de escalar a escenarios propios.
 - Prototipado de NPC con navegacion y manipulacion de objetos: el agente puede integrarse en una escena de Unity como controlador de un personaje que recoge y coloca objetos, sustituyendo logica scriptada por una politica aprendida.
 - Docencia y formacion en aprendizaje por refuerzo: al ser un artefacto pequeno y ligado a un tutorial conocido, es util en practicas de RL donde el alumnado entrena, evalua y exporta su propio agente.
@@ -74,9 +74,9 @@ Todos los artefactos comparables encontrados son ejecuciones del mismo entorno P
 
 | Modelo | Entorno | Algoritmo declarado | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hareesh23143/MLAgents-Pyramids | Pyramids (ML-Agents) | PPO | mean_reward 15,00 +/- 2,00 (no verificado) | no disponible | HuggingFace, 0 descargas, 0 likes |
-| Rishi26x/MLAgents-Pyramids | Pyramids (ML-Agents) | ML-Agents (algoritmo no detallado) | no disponible | no disponible | HuggingFace |
-| AlexChe/MLAgents-Pyramids | Pyramids (ML-Agents) | ML-Agents (algoritmo no detallado) | no disponible | no disponible | HuggingFace |
+| hareesh23143/MLAgents-Pyramids | Pyramids (ML-Agents) | PPO | mean_reward 15,00 +/- 2,00 (no verificado) | no disponible | Hugging Face, 0 descargas, 0 likes |
+| Rishi26x/MLAgents-Pyramids | Pyramids (ML-Agents) | ML-Agents (algoritmo no detallado) | no disponible | no disponible | Hugging Face |
+| AlexChe/MLAgents-Pyramids | Pyramids (ML-Agents) | ML-Agents (algoritmo no detallado) | no disponible | no disponible | Hugging Face |
 
 Como referencia de la categoria, el toolkit oficial Unity ML-Agents incluye escenas de demostracion de Pyramids en su repositorio de GitHub, sin pesos preentrenados publicados con metricas comparables.
 
@@ -94,7 +94,7 @@ Como referencia de la categoria, el toolkit oficial Unity ML-Agents incluye esce
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/hareesh23143/MLAgents-Pyramids
+- Pagina del modelo en Hugging Face: https://huggingface.co/hareesh23143/MLAgents-Pyramids
 - Repositorio oficial de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Escena de ejemplo Pyramids (demos) en Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents/tree/develop/Project/Assets/ML-Agents/Examples/Pyramids/Demos
 - Modelo comparable Rishi26x/MLAgents-Pyramids: https://huggingface.co/Rishi26x/MLAgents-Pyramids

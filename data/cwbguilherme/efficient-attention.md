@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cwbguilherme/efficient-attention` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre atencion eficiente publicado en HuggingFace bajo la etiqueta `research-notes`. El autor, `cwbguilherme`, lo describe explicitamente como un conjunto estructurado de apuntes exploratorios con referencias de evaluacion y preguntas abiertas, y advierte que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
+`cwbguilherme/efficient-attention` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre atencion eficiente publicado en Hugging Face bajo la etiqueta `research-notes`. El autor, `cwbguilherme`, lo describe explicitamente como un conjunto estructurado de apuntes exploratorios con referencias de evaluacion y preguntas abiertas, y advierte que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 
 El artefacto principal es `analysis.md`, un documento que cubre el alcance de la pregunta de investigacion, posibles factores de confusion, una propuesta de comparacion con baselines emparejados, contextos de evaluacion concretos (Long Range Arena, ImageNet-1K y Flickr30k), comprobaciones de reproducibilidad, modos de fallo y referencias tematicas. No incluye codigo liberado, ablaciones completadas ni un checkpoint entrenado.
 
@@ -75,6 +75,6 @@ No disponible. No se conocen modelos comparables en la misma categoria, ya que e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cwbguilherme/efficient-attention
+- Repositorio en Hugging Face: https://huggingface.co/cwbguilherme/efficient-attention
 - Artefacto principal citado en la model card: `analysis.md` (dentro del repositorio)
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios de codigo ni demos adicionales.

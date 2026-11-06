@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks en la informacion disponible (no ha
 
 | Modelo | Parametros totales | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dokoomae/MiniCPM5-1B-CMoE-e8s2a2 | 1.845.376.512 | Qwen2Moe (e8s2a2) | no disponible | other (hereda del base) | HuggingFace, 0 descargas |
-| openbmb/MiniCPM5-1B | no disponible | LlamaForCausalLM denso | no disponible | other | HuggingFace (modelo base) |
+| dokoomae/MiniCPM5-1B-CMoE-e8s2a2 | 1.845.376.512 | Qwen2Moe (e8s2a2) | no disponible | other (hereda del base) | Hugging Face, 0 descargas |
+| openbmb/MiniCPM5-1B | no disponible | LlamaForCausalLM denso | no disponible | other | Hugging Face (modelo base) |
 | Otras alternativas de ~1B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa relevante es con openbmb/MiniCPM5-1B, del que este modelo hereda tokenizer, configuracion de generacion y pesos de atencion. Frente a el, la version CMoE multiplica por aproximadamente 2,5 el numero de parametros de la capa FFN, pero presenta una calidad de salida degradada en la inicializacion y un rendimiento inferior en CPU (0,77× en throughput). No se dispone de informacion sobre otros modelos comparables en la documentacion proporcionada.
@@ -101,6 +101,6 @@ La comparacion directa relevante es con openbmb/MiniCPM5-1B, del que este modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dokoomae/MiniCPM5-1B-CMoE-e8s2a2
+- Modelo en Hugging Face: https://huggingface.co/dokoomae/MiniCPM5-1B-CMoE-e8s2a2
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-1B
 - Script de conversion: directorio scripts/ del repositorio del modelo (segun la model card)

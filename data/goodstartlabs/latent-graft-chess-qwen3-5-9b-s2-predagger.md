@@ -64,7 +64,7 @@ Estos datos provienen de la evaluación del autor y no son comparables con bench
 
 - **VRAM estimada**: para un modelo de 9.000 millones de parámetros en FP16, se necesitan aproximadamente 18-20 GB de VRAM. Con cuantización (no incluida en el repositorio) podría reducirse a ~6-8 GB en 4-bit, pero no se proporcionan archivos cuantizados.
 - **GPU recomendadas**: tarjetas con ≥24 GB de VRAM (RTX 3090, RTX 4090, A100 40GB, H100). En consumer, una RTX 4090 puede ejecutarlo con FP16, aunque la memoria adicional para el stem y los tokens de probe puede requerir ajustes.
-- **Opciones de despliegue**: al ser un modelo con LoRA y un stem separado, el despliegue requiere cargar el modelo base Qwen3.5-9B y aplicar el adaptador LoRA. Se puede usar transformers de HuggingFace con PEFT. No se mencionan integraciones con vLLM, llama.cpp u Ollama.
+- **Opciones de despliegue**: al ser un modelo con LoRA y un stem separado, el despliegue requiere cargar el modelo base Qwen3.5-9B y aplicar el adaptador LoRA. Se puede usar transformers de Hugging Face con PEFT. No se mencionan integraciones con vLLM, llama.cpp u Ollama.
 - **Latencia y throughput**: no se dispone de datos. La generación de búsqueda verbalizada implica múltiples llamadas a `<probe>` (hasta 9 por línea), lo que aumenta la latencia en comparación con una generación estándar.
 
 ## Comparativa con modelos similares

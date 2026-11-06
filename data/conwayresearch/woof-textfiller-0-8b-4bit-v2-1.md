@@ -23,7 +23,7 @@ Su relevancia actual es la de los modelos pequenos y altamente especializados qu
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna del modelo en la model card ni en los metadatos de HuggingFace. El tamano (752 millones de parametros) y la libreria declarada (MLX) son compatibles con un transformer denso de escala pequena, pero esto es una inferencia y no un dato confirmado por el autor. Tampoco se especifica si se trata de un modelo entrenado desde cero, de un ajuste fino sobre una base existente o de una destilacion.
+No se ha publicado informacion sobre la arquitectura interna del modelo en la model card ni en los metadatos de Hugging Face. El tamano (752 millones de parametros) y la libreria declarada (MLX) son compatibles con un transformer denso de escala pequena, pero esto es una inferencia y no un dato confirmado por el autor. Tampoco se especifica si se trata de un modelo entrenado desde cero, de un ajuste fino sobre una base existente o de una destilacion.
 
 Respecto al entrenamiento, la informacion disponible no incluye numero de tokens, composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La unica pista funcional es la etiqueta `browser-automation` y la descripcion de uso, que indican que el modelo fue optimizado para mapear (objetivo del usuario + campo seleccionado + contexto de pagina) a un valor de campo en formato JSON. Se desconoce si hubo decodificacion especulativa, atencion lineal u otra innovacion tecnica.
 
@@ -32,7 +32,7 @@ Respecto al entrenamiento, la informacion disponible no incluye numero de tokens
 - Generacion de texto especializada en el relleno de campos de formulario web a partir de un objetivo de usuario y contexto de pagina.
 - Salida estructurada en JSON: el modelo devuelve el valor del campo como objeto de texto JSON, lo que facilita su parseo en pipelines de automatizacion.
 - Integracion en flujos de browser automation: la etiqueta `browser-automation` indica que esta pensado para agentes que controlan un navegador.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en Hugging Face Inference Endpoints.
 - Perfil conversacional declarado en las etiquetas del repositorio (`conversational`).
 - Capacidades multilingues: no disponible.
 - Tool calling, function calling, agentes multi-paso, vision o audio: no disponible; la model card no menciona ninguna de estas capacidades.
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - GPU consumer: si, cabe sin problemas en practicamente cualquier GPU con 2 GB o mas de VRAM, incluidas GTX 1650, RTX 3060, RTX 4060 y posteriores. Tambien puede ejecutarse en CPU mediante las variantes GGUF.
 - Apple Silicon: es la via nativa, ya que el repositorio incluye pesos en formato MLX para las carpetas correspondientes a Apple Silicon (familias M1, M2, M3 y M4).
 - GPU de datacenter (A100, H100, L40S): compatibles pero sobredimensionadas para un modelo de este tamano; no se recomienda su uso salvo por agregacion de muchas peticiones concurrentes.
-- Opciones de despliegue: runtime MLX en Apple Silicon; llama.cpp, Ollama u otros runtimes GGUF en CPU y GPU; vLLM y TGI no estan confirmados para este modelo, ya que no se indica compatibilidad con safetensors estandar de transformers. La etiqueta `endpoints_compatible` apunta a despliegue en HuggingFace Inference Endpoints.
+- Opciones de despliegue: runtime MLX en Apple Silicon; llama.cpp, Ollama u otros runtimes GGUF en CPU y GPU; vLLM y TGI no estan confirmados para este modelo, ya que no se indica compatibilidad con safetensors estandar de transformers. La etiqueta `endpoints_compatible` apunta a despliegue en Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible. El autor no publica mediciones.
 
 ## Comparativa con modelos similares
@@ -87,6 +87,6 @@ No se han identificado en la informacion proporcionada modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConwayResearch/woof-textfiller-0.8B-4bit-v2.1
+- Modelo en Hugging Face: https://huggingface.co/ConwayResearch/woof-textfiller-0.8B-4bit-v2.1
 
 Nota: la busqueda web realizada no ha devuelto ningun resultado relevante para este modelo. Los unicos enlaces obtenidos corresponden a contenido sin relacion con el modelo ni con la automatizacion de navegadores, por lo que se han descartado. No se dispone de paper, blog, repositorio de codigo ni demo asociados.

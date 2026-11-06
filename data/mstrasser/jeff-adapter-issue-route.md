@@ -78,7 +78,7 @@ El autor advierte que ambas pruebas son de tipo "generator", es decir, generadas
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jeff-adapter-issue-route | LoRA de clasificación sobre base 0.8B | no disponible (base 0.8B) | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| jeff-adapter-issue-route | LoRA de clasificación sobre base 0.8B | no disponible (base 0.8B) | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | LLM generativo grande con prompt de triaje | Generativo | 7B-70B típicamente | variable | variable | amplia |
 | Clasificador BERT fine-tuneado para issues | Encoder | 110M-340M | 512 típicamente | variable | amplia |
 
@@ -99,7 +99,7 @@ La comparación cuantitativa con alternativas no está disponible en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mstrasser/jeff-adapter-issue-route
+- Hugging Face: https://huggingface.co/mstrasser/jeff-adapter-issue-route
 - Modelo base: https://huggingface.co/mstrasser/jeff-base
 - Página de catálogo: https://jeffhub.ai/catalogue/jeff.engineering.issue-route
 - Repositorio de código, servidor y SDK: https://github.com/firelex/jeff

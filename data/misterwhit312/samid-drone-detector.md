@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Samid drone detector es un modelo de clasificación de audio binaria que distingue entre presencia y ausencia de drones a partir de senales acusticas. Lo desarrolla MisterWhit312 (publicado tambien bajo el identificador Rashidbm) y se distribuye en HuggingFace con licencia MIT. El modelo parte del backbone MIT/ast-finetuned-audioset-10-10-0.4593, un Audio Spectrogram Transformer preentrenado en AudioSet, y se ha ajustado fino para la tarea concreta de deteccion de drones.
+Samid drone detector es un modelo de clasificación de audio binaria que distingue entre presencia y ausencia de drones a partir de senales acusticas. Lo desarrolla MisterWhit312 (publicado tambien bajo el identificador Rashidbm) y se distribuye en Hugging Face con licencia MIT. El modelo parte del backbone MIT/ast-finetuned-audioset-10-10-0.4593, un Audio Spectrogram Transformer preentrenado en AudioSet, y se ha ajustado fino para la tarea concreta de deteccion de drones.
 
 Con 86,19 millones de parametros y un peso de repositorio de 0,3 GB, es un modelo ligero pensado para inferencia en ventanas de audio de 1 segundo a 16 kHz mono. Resuelve un problema especifico y de interes creciente: la deteccion acustica pasiva de UAV en entornos urbanos, industriales o de seguridad, donde la senal de radio o la vision pueden no estar disponibles.
 
@@ -74,8 +74,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de benchmarks de aud
 
 | Modelo | Parametros | Contexto / ventana | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Samid drone detector (este modelo) | 86,19 M | ventana de 1,0 s a 16 kHz | Clasificacion binaria drone/no-drone | MIT | HuggingFace |
-| MIT/ast-finetuned-audioset-10-10-0.4593 | no disponible en la informacion | espectrograma AudioSet | Clasificacion multi-etiqueta AudioSet (527 clases) | no disponible en la informacion | HuggingFace |
+| Samid drone detector (este modelo) | 86,19 M | ventana de 1,0 s a 16 kHz | Clasificacion binaria drone/no-drone | MIT | Hugging Face |
+| MIT/ast-finetuned-audioset-10-10-0.4593 | no disponible en la informacion | espectrograma AudioSet | Clasificacion multi-etiqueta AudioSet (527 clases) | no disponible en la informacion | Hugging Face |
 | Modelos de deteccion acustica de drones de la literatura | no disponible | variable | Deteccion binaria o multi-clase | variable | no disponible |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la informacion proporcionada; la comparativa se limita a la naturaleza de la tarea y al backbone de partida.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MisterWhit312/samid-drone-detector
+- Hugging Face: https://huggingface.co/MisterWhit312/samid-drone-detector
 - Backbone: https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593
 - Dataset: https://huggingface.co/datasets/geronimobasso/drone-audio-detection-samples
 - Dataset: https://huggingface.co/datasets/ahlab-drone-project/DroneAudioSet

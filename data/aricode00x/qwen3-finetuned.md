@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento del modelo ajustado que permitan una compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aricode00x/qwen3-finetuned
+- Modelo en Hugging Face: https://huggingface.co/aricode00x/qwen3-finetuned
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Tutorial de entrenamiento de Hugging Face: https://huggingface.co/docs/transformers/en/training
 - Dataset de ajuste: https://huggingface.co/datasets/karthiksagarn/astro_horoscope

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-vla-sft-source-snapshot-20260925-14a0403bba01` es un archivo versionado publicado en HuggingFace por el usuario `davidwdw`. Segun la propia model card, se trata de un "versioned fleet archive" (archivo de flota versionado) cuya receta canonica se registra en `reports/2026-09-25_eight_asset_cloud_backfill`, con nivel declarado de "current working-tree code snapshot; dirty state preserved; not historical SHA256SUMS version". Es decir, el autor lo describe como una instantanea de codigo de un arbol de trabajo, no como un espejo de directorio en vivo ni como una version historica verificada por sumas SHA256.
+El repositorio `davidwdw/fa-vla-sft-source-snapshot-20260925-14a0403bba01` es un archivo versionado publicado en Hugging Face por el usuario `davidwdw`. Segun la propia model card, se trata de un "versioned fleet archive" (archivo de flota versionado) cuya receta canonica se registra en `reports/2026-09-25_eight_asset_cloud_backfill`, con nivel declarado de "current working-tree code snapshot; dirty state preserved; not historical SHA256SUMS version". Es decir, el autor lo describe como una instantanea de codigo de un arbol de trabajo, no como un espejo de directorio en vivo ni como una version historica verificada por sumas SHA256.
 
 No se dispone de informacion tecnica sobre el modelo: no hay pipeline declarado, ni licencia, ni idiomas, ni tamano de parametros, ni arquitectura, ni datos de entrenamiento. El tamano del repositorio figura como 0.0 GB, lo que sugiere que no contiene pesos de modelo descargables en el momento de la consulta, sino material auxiliar (codigo o artefactos de configuracion). El identificador incluye las cadenas "vla" y "sft", compatibles con un posible escenario de ajuste supervisado sobre un modelo vision-lenguaje-accion, pero esta interpretacion no queda confirmada en ningun momento por el contenido publicado y debe tratarse como una hipotesis no verificada.
 
@@ -92,7 +92,7 @@ No disponible. No se dispone de informacion suficiente (parametros, contexto, li
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-vla-sft-source-snapshot-20260925-14a0403bba01
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-vla-sft-source-snapshot-20260925-14a0403bba01
 - Receta canonica referenciada en la model card: `reports/2026-09-25_eight_asset_cloud_backfill` (ruta interna citada por el autor; no se proporciona URL publica)
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Resultados de busqueda web relevantes: no disponible (la busqueda no devolvio ninguna fuente relacionada con el modelo)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-picur-120M-instruct-gguf es la versión cuantizada en formato GGUF del modelo picur/picur-120M-instruct, publicado por el usuario picur en HuggingFace. Se trata de un modelo de generación de texto de tipo instruct, con 120.404.352 parámetros totales (aproximadamente 120 millones) y especializado exclusivamente en húngaro (código de idioma `hu`). El repositorio ocupa 0,4 GB e incluye pesos en formato GGUF, lo que lo hace directamente ejecutable en runtimes de inferencia local como llama.cpp u Ollama.
+picur-120M-instruct-gguf es la versión cuantizada en formato GGUF del modelo picur/picur-120M-instruct, publicado por el usuario picur en Hugging Face. Se trata de un modelo de generación de texto de tipo instruct, con 120.404.352 parámetros totales (aproximadamente 120 millones) y especializado exclusivamente en húngaro (código de idioma `hu`). El repositorio ocupa 0,4 GB e incluye pesos en formato GGUF, lo que lo hace directamente ejecutable en runtimes de inferencia local como llama.cpp u Ollama.
 
 El problema que resuelve es la disponibilidad de un modelo conversacional en húngaro lo suficientemente pequeño como para ejecutarse en hardware muy limitado, incluso en CPU, sin necesidad de GPU. Su tamaño de 120M de parámetros lo sitúa en la categoría de modelos "tiny", pensados para prototipado rápido, experimentación con pipelines GGUF/Ollama y despliegues en dispositivos con recursos mínimos. La model card lo etiqueta explícitamente como "PREVIEW", lo que indica que se trata de una publicación temprana y no de una versión estable validada.
 
@@ -37,7 +37,7 @@ Respecto al entrenamiento, no hay datos disponibles sobre el numero de tokens, l
 
 - Generacion de texto en hungaro: es la unica capacidad explicitamente declarada en las etiquetas del repositorio (`text-generation`, `hungarian`, `magyar`).
 - Formato instruct/conversacional: el modelo esta ajustado para seguir instrucciones y mantener formato de dialogo, segun la etiqueta `instruct` y `conversational`.
-- Compatibilidad con endpoints: el repositorio incluye la etiqueta `endpoints_compatible`, lo que indica que puede servirse a traves de la infraestructura de Inference Endpoints de HuggingFace con pesos GGUF.
+- Compatibilidad con endpoints: el repositorio incluye la etiqueta `endpoints_compatible`, lo que indica que puede servirse a traves de la infraestructura de Inference Endpoints de Hugging Face con pesos GGUF.
 - Ejecucion local via Ollama: la model card documenta el comando de ejecucion directa con `ollama run` usando el identificador `hf.co/picur/picur-120M-instruct-gguf:Q8_0`.
 - Soporte de tool calling / function calling: no disponible, no documentado.
 - Soporte de agentes y razonamiento multi-paso: no disponible, no documentado.
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/picur/picur-120M-instruct-gguf
+- Repositorio Hugging Face: https://huggingface.co/picur/picur-120M-instruct-gguf
 - Modelo base: https://huggingface.co/picur/picur-120M-instruct
 - Pagina del autor: https://huggingface.co/picur
 - Ejecucion con Ollama (documentada en la model card): `ollama run --think=false hf.co/picur/picur-120M-instruct-gguf:Q8_0`

@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Formato / cuantizacion | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liodon-ai/AstaBrief_8B-FP8 | 8,19 mil millones | FP8 (E4M3) dinamico, safetensors | 9,4 GB | Other | HuggingFace (liodon-ai) |
-| allenai/AstaBrief_8B | 8,19 mil millones | Precision completa (BF16), safetensors | 16,4 GB | Other | HuggingFace (allenai) |
-| Qwen3-8B | ~8 mil millones | Multiples (safetensors, GGUF, FP8) | Variable | Apache-2.0 (Qwen3) | HuggingFace (Qwen) |
+| liodon-ai/AstaBrief_8B-FP8 | 8,19 mil millones | FP8 (E4M3) dinamico, safetensors | 9,4 GB | Other | Hugging Face (liodon-ai) |
+| allenai/AstaBrief_8B | 8,19 mil millones | Precision completa (BF16), safetensors | 16,4 GB | Other | Hugging Face (allenai) |
+| Qwen3-8B | ~8 mil millones | Multiples (safetensors, GGUF, FP8) | Variable | Apache-2.0 (Qwen3) | Hugging Face (Qwen) |
 
 La comparativa se limita a estas referencias porque no se dispone de resultados de benchmarks que permitan contrastar el rendimiento de AstaBrief_8B-FP8 frente a alternativas de la misma categoria en la tarea concreta de generacion de informes citados. AstaBrief_8B es un fine-tuning de Qwen3-8B, por lo que este ultimo actua como referencia de arquitectura y tamano, pero no como equivalente funcional. No se dispone de datos comparativos con otros modelos de generacion de informes.
 
@@ -88,8 +88,8 @@ La comparativa se limita a estas referencias porque no se dispone de resultados 
 
 ## Enlaces
 
-- Modelo cuantizado (HuggingFace): https://huggingface.co/liodon-ai/AstaBrief_8B-FP8
-- Modelo base (HuggingFace): https://huggingface.co/allenai/AstaBrief_8B
+- Modelo cuantizado (Hugging Face): https://huggingface.co/liodon-ai/AstaBrief_8B-FP8
+- Modelo base (Hugging Face): https://huggingface.co/allenai/AstaBrief_8B
 - Blog de Ai2 sobre AstaBrief: https://allenai.org/blog/astabrief
 - llm-compressor (herramienta de cuantizacion): https://github.com/vllm-project/llm-compressor
 - Analisis en Local Model Watch: https://localmodelwatch.tsuchitsuchi.com/en/2026/10/03/astabrief-8b-open-source-scientific-report-generator/

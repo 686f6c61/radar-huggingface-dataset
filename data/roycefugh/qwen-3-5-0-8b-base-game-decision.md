@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`roycefugh/qwen-3.5-0.8B-base-game-decision` es un repositorio de pesos publicado en HuggingFace por el usuario `roycefugh` bajo licencia MIT. La model card asociada está practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion, sin tabla de hiperparametros, sin dataset de entrenamiento y sin resultados de evaluacion. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado.
+`roycefugh/qwen-3.5-0.8B-base-game-decision` es un repositorio de pesos publicado en Hugging Face por el usuario `roycefugh` bajo licencia MIT. La model card asociada está practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion, sin tabla de hiperparametros, sin dataset de entrenamiento y sin resultados de evaluacion. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado.
 
 El nombre del repositorio sugiere que se trata de un ajuste (probablemente fine-tuning o adaptacion) sobre un modelo base de la familia Qwen 3.5 con aproximadamente 0,8 mil millones de parametros, orientado a la toma de decisiones en entornos de juego. Esta interpretacion se deduce exclusivamente del identificador del repositorio: el autor no la confirma en ninguna parte de la model card, por lo que debe tratarse como una hipotesis sin verificar.
 
@@ -88,5 +88,5 @@ No existe informacion que permita comparar rendimiento, ya que este checkpoint n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/roycefugh/qwen-3.5-0.8B-base-game-decision
+- Hugging Face: https://huggingface.co/roycefugh/qwen-3.5-0.8B-base-game-decision
 - No se han encontrado otros enlaces (paper, blog, repositorio de codigo o demo) en la informacion disponible.

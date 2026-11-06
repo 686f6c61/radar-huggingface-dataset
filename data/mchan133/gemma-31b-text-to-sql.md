@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gemma-31b-text-to-sql es un ajuste fino del modelo google/gemma-4-31b-it, publicado por el usuario mchan133 en HuggingFace. Se trata de un modelo derivado especializado, a priori, en la tarea de traduccion de lenguaje natural a SQL (text-to-SQL), aunque la model card publicada no documenta ni el conjunto de datos de entrenamiento ni los resultados obtenidos. El entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreria TRL, lo que lo situa en la categoria de adaptaciones ligeras sobre un modelo base ya instruido.
+gemma-31b-text-to-sql es un ajuste fino del modelo google/gemma-4-31b-it, publicado por el usuario mchan133 en Hugging Face. Se trata de un modelo derivado especializado, a priori, en la tarea de traduccion de lenguaje natural a SQL (text-to-SQL), aunque la model card publicada no documenta ni el conjunto de datos de entrenamiento ni los resultados obtenidos. El entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreria TRL, lo que lo situa en la categoria de adaptaciones ligeras sobre un modelo base ya instruido.
 
 El modelo base, Gemma 4 31B, forma parte de la cuarta generacion de la familia Gemma de Google, publicada en abril de 2026 segun las fuentes secundarias consultadas. Esa generacion se describe como multimodal y de pesos abiertos, con variantes que cubren vision y lenguaje. El interes de este ajuste concreto reside en que ejemplifica el flujo habitual de especializacion de un modelo generalista de 31B parametros hacia una tarea vertical mediante SFT con TRL, algo relevante para equipos que quieran replicar el proceso o evaluar si merece la pena partir de un modelo ya ajustado.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mchan133/gemma-31b-text-to-sql | 31B (segun modelo base) | No disponible | No disponible | HuggingFace, 0 descargas | Ajuste SFT especifico para text-to-SQL, sin evaluacion publicada |
-| google/gemma-4-31b-it | 31B | No disponible en la informacion recogida | Apache 2.0 segun fuentes secundarias | HuggingFace y Google Cloud (Vertex AI, GKE) | Modelo base multimodal e instruido, descrito como competitivo con modelos de 400B |
+| mchan133/gemma-31b-text-to-sql | 31B (segun modelo base) | No disponible | No disponible | Hugging Face, 0 descargas | Ajuste SFT especifico para text-to-SQL, sin evaluacion publicada |
+| google/gemma-4-31b-it | 31B | No disponible en la informacion recogida | Apache 2.0 segun fuentes secundarias | Hugging Face y Google Cloud (Vertex AI, GKE) | Modelo base multimodal e instruido, descrito como competitivo con modelos de 400B |
 | Otras alternativas de text-to-SQL del mismo tamano | No disponible | No disponible | No disponible | No disponible | No se ha identificado en la busqueda ningun modelo comparable de 31B especializado en text-to-SQL |
 
 No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con alternativas de la misma categoria.
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mchan133/gemma-31b-text-to-sql
+- Modelo en Hugging Face: https://huggingface.co/mchan133/gemma-31b-text-to-sql
 - Modelo base: https://huggingface.co/google/gemma-4-31b-it
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Gemma 4 available on Google Cloud: https://cloud.google.com/blog/products/ai-machine-learning/gemma-4-available-on-google-cloud

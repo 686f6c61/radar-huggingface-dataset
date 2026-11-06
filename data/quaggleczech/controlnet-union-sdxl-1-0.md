@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Condiciones de control | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Quaggleczech/controlnet-union-sdxl-1.0 (este repositorio) | 1,26 B | mas de 10, con soporte multi-condicion | apache-2.0 | HuggingFace, 5 descargas | Copia de terceros del modelo original |
-| xinsir/controlnet-union-sdxl-1.0 (original) | no disponible | mas de 10, con soporte multi-condicion | apache-2.0 | HuggingFace, repositorio de referencia | Incluye la variante ProMax con 12 controles y 5 funciones de edicion |
-| ControlNet clasico para SDXL | no disponible | 1 condicion por checkpoint | no disponible | HuggingFace | Requiere cargar un modelo distinto por tarea |
-| ControlNets para SD 1.5 (lllyasviel) | no disponible | 1 condicion por checkpoint | no disponible | HuggingFace | Generacion a menor resolucion base que SDXL |
+| Quaggleczech/controlnet-union-sdxl-1.0 (este repositorio) | 1,26 B | mas de 10, con soporte multi-condicion | apache-2.0 | Hugging Face, 5 descargas | Copia de terceros del modelo original |
+| xinsir/controlnet-union-sdxl-1.0 (original) | no disponible | mas de 10, con soporte multi-condicion | apache-2.0 | Hugging Face, repositorio de referencia | Incluye la variante ProMax con 12 controles y 5 funciones de edicion |
+| ControlNet clasico para SDXL | no disponible | 1 condicion por checkpoint | no disponible | Hugging Face | Requiere cargar un modelo distinto por tarea |
+| ControlNets para SD 1.5 (lllyasviel) | no disponible | 1 condicion por checkpoint | no disponible | Hugging Face | Generacion a menor resolucion base que SDXL |
 
 La comparativa se limita a lo documentado en la informacion disponible; no se dispone de cifras de rendimiento comparadas entre estos modelos.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `s1ghhh/labxarm0822_stack_bowl_dynamic_50hz_gran10_fixall_ema_10k_bs16x1` es un checkpoint alojado en HuggingFace del que no se dispone de información pública suficiente para caracterizarlo con rigor. El repositorio tiene un tamaño de 35,9 GB, lo que sugiere un modelo de gran escala, pero no se han publicado metadatos esenciales como arquitectura, parámetros, licencia, idiomas o pipeline de uso. El nombre del repositorio sugiere una posible aplicación en control robótico (apilado de cuencos, frecuencia de 50 Hz, entrenamiento con EMA y 10 000 pasos), pero esta interpretación es especulativa y no está respaldada por documentación oficial.
+El modelo `s1ghhh/labxarm0822_stack_bowl_dynamic_50hz_gran10_fixall_ema_10k_bs16x1` es un checkpoint alojado en Hugging Face del que no se dispone de información pública suficiente para caracterizarlo con rigor. El repositorio tiene un tamaño de 35,9 GB, lo que sugiere un modelo de gran escala, pero no se han publicado metadatos esenciales como arquitectura, parámetros, licencia, idiomas o pipeline de uso. El nombre del repositorio sugiere una posible aplicación en control robótico (apilado de cuencos, frecuencia de 50 Hz, entrenamiento con EMA y 10 000 pasos), pero esta interpretación es especulativa y no está respaldada por documentación oficial.
 
 La ausencia de datos verificables impide realizar una evaluación técnica objetiva. Cualquier uso de este modelo en entornos de producción o investigación debe considerar la falta de transparencia como un riesgo significativo. Se recomienda contactar con el autor o buscar documentación adicional antes de adoptarlo.
 
@@ -54,6 +54,6 @@ No disponible. No se ha identificado ningún modelo comparable con el que establ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/s1ghhh/labxarm0822_stack_bowl_dynamic_50hz_gran10_fixall_ema_10k_bs16x1
+- Repositorio Hugging Face: https://huggingface.co/s1ghhh/labxarm0822_stack_bowl_dynamic_50hz_gran10_fixall_ema_10k_bs16x1
 
 No se han encontrado papers, blogs, demos u otros recursos asociados al modelo en la búsqueda web realizada.

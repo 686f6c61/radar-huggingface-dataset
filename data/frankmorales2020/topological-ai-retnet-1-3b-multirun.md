@@ -31,7 +31,7 @@ El fine-tuning se realizó sobre tres tareas de clasificación binaria: A (World
 - Aprendizaje continuo sin olvido catastrófico, certificado matemáticamente según el estándar TOPO-2026.
 - Inferencia eficiente gracias a la atención lineal: coste de memoria constante durante la generación (aunque este modelo no es generativo, la arquitectura subyacente lo permite).
 - Procesamiento de secuencias con contexto largo (la arquitectura RetNet soporta ventanas de hasta 128k tokens en versiones mayores, pero no se especifica para este modelo).
-- Compatible con el ecosistema HuggingFace Transformers, lo que facilita su integración en pipelines existentes.
+- Compatible con el ecosistema Hugging Face Transformers, lo que facilita su integración en pipelines existentes.
 - No incluye capacidades multimodales, tool calling ni razonamiento multi-paso; es un modelo puramente discriminativo para clasificación.
 
 ## Casos de uso
@@ -60,7 +60,7 @@ Además, la certificación TOPO-2026 reporta una precisión media en la tarea C 
 - VRAM estimada: con 1.3 mil millones de parámetros, en precisión Float32 se requieren aproximadamente 5.2 GB de memoria; en BFloat16, unos 2.6 GB. El tamaño del repositorio (0.3 GB) sugiere que el checkpoint podría estar cuantizado o comprimido, pero no se especifica.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en Float32 (por ejemplo, NVIDIA GTX 1650, RTX 3050). Para mayor comodidad, una RTX 3060 o superior es suficiente.
 - Compatibilidad con GPU de consumo: sí, cabe en la mayoría de GPUs consumer modernas.
-- Opciones de despliegue: al ser un modelo de clasificación, puede servirse con HuggingFace Inference Endpoints, o mediante frameworks como FastAPI con transformers. Para inferencia en CPU, también es viable dado su tamaño moderado.
+- Opciones de despliegue: al ser un modelo de clasificación, puede servirse con Hugging Face Inference Endpoints, o mediante frameworks como FastAPI con transformers. Para inferencia en CPU, también es viable dado su tamaño moderado.
 - Latencia y throughput: no se proporcionan datos oficiales. En una GPU moderna (p.ej., RTX 3090), la inferencia para secuencias cortas (<512 tokens) debería ser del orden de milisegundos, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/frankmorales2020/topological-ai-retnet-1.3b-multirun
+- Modelo en Hugging Face: https://huggingface.co/frankmorales2020/topological-ai-retnet-1.3b-multirun
 - Modelo base: https://huggingface.co/fla-hub/retnet-1.3B-100B
 - Paper de RetNet (arXiv): https://arxiv.org/abs/2307.08621
 - Implementación de referencia en GitHub: https://github.com/Jamie-Stirling/RetNet

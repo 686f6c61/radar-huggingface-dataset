@@ -23,7 +23,7 @@ El modelo se distribuye bajo licencia Apache 2.0, lo que permite su uso comercia
 
 El modelo se basa en una arquitectura de diffusion aplicada al audio, con un componente principal tipo DiT (Diffusion Transformer) que procesa la generacion musical. El sistema se compone de tres modulos diferenciados: el modelo de difusion principal (`minimax_music3_dit`), un codificador de texto (`minimax_music3_text_encoder`) que interpreta las letras y la descripcion musical, y un VAE de audio (`minimax_music3_dav`) que se encarga de la decodificacion del audio generado. Esta separacion de componentes es tipica en sistemas de generacion musical por difusion, donde el texto se codifica por separado y condiciona el proceso de denoising.
 
-Los detalles especificos sobre el entrenamiento, como el numero de tokens, la composicion del dataset o el uso de tecnicas de alineacion como RLHF o DPO, no estan disponibles en la informacion proporcionada. El repositorio original de MiniMax en HuggingFace contiene la documentacion tecnica detallada, pero no se ha accedido a ella en esta busqueda. La innovacion principal del modelo reside en su capacidad para mantener coherencia estructural en generaciones de hasta cinco minutos, un reto significativo en generacion musical automatica, donde la estabilidad a largo plazo suele degradarse.
+Los detalles especificos sobre el entrenamiento, como el numero de tokens, la composicion del dataset o el uso de tecnicas de alineacion como RLHF o DPO, no estan disponibles en la informacion proporcionada. El repositorio original de MiniMax en Hugging Face contiene la documentacion tecnica detallada, pero no se ha accedido a ella en esta busqueda. La innovacion principal del modelo reside en su capacidad para mantener coherencia estructural en generaciones de hasta cinco minutos, un reto significativo en generacion musical automatica, donde la estabilidad a largo plazo suele degradarse.
 
 ## Capacidades
 
@@ -45,7 +45,7 @@ Los detalles especificos sobre el entrenamiento, como el numero de tokens, la co
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio original de MiniMax en HuggingFace puede contener metricas de evaluacion, pero no se han incluido en los resultados de busqueda proporcionados.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio original de MiniMax en Hugging Face puede contener metricas de evaluacion, pero no se han incluido en los resultados de busqueda proporcionados.
 
 ## Requisitos de hardware
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Duracion maxima | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiniMax Music 3 | no disponible | 5 minutos | Apache 2.0 | HuggingFace, GitHub |
-| MusicGen (Meta) | 1.5B - 3.3B | ~30 segundos | CC-BY-NC 4.0 | HuggingFace |
-| Stable Audio Open | no disponible | ~47 segundos | Stable Audio Open Research License | HuggingFace |
+| MiniMax Music 3 | no disponible | 5 minutos | Apache 2.0 | Hugging Face, GitHub |
+| MusicGen (Meta) | 1.5B - 3.3B | ~30 segundos | CC-BY-NC 4.0 | Hugging Face |
+| Stable Audio Open | no disponible | ~47 segundos | Stable Audio Open Research License | Hugging Face |
 
 La comparativa se basa en datos publicos de los modelos alternativos. MiniMax Music 3 destaca por su duracion de generacion muy superior (5 minutos frente a los ~30-47 segundos de MusicGen y Stable Audio Open) y por su licencia permisiva Apache 2.0, que permite uso comercial sin restricciones, a diferencia de MusicGen (CC-BY-NC) y Stable Audio Open (licencia de investigacion).
 
@@ -76,8 +76,8 @@ La comparativa se basa en datos publicos de los modelos alternativos. MiniMax Mu
 
 ## Enlaces
 
-- Repositorio HuggingFace de este reempaquetado: https://huggingface.co/chfm/MiniMax-Music-3
-- Repositorio HuggingFace del modelo original: https://huggingface.co/MiniMaxAI/MiniMax-Music3
+- Repositorio Hugging Face de este reempaquetado: https://huggingface.co/chfm/MiniMax-Music-3
+- Repositorio Hugging Face del modelo original: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Repositorio GitHub de MiniMax Music 3: https://github.com/MiniMax-AI/MiniMax-Music3
 - Pagina de demostracion oficial: https://minimax-ai.github.io/music3-demo/
 - Guia del modelo y requisitos: https://minimaxmusic3.ai/

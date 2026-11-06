@@ -88,16 +88,16 @@ Nota: los datos de paramtros de las variantes oficiales son estimaciones derivad
 - Riesgo de alucinacion visual: como modelo generativo de super-resolucion, puede inventar texturas o detalles plausibles pero inexistentes, especialmente en zonas muy degradadas o en caras y texto pequeno.
 - Factor de escala fijo x4: no se documentan variantes x2 ni interpolacion a escalas arbitrarias dentro de este repositorio.
 - Formato propietario: los archivos `.bin` no son directamente compatibles con PyTorch, ONNX ni con cargadores genericos; requieren el codigo de carga de la herramienta Outlier Upscale Method.
-- Sin datos de contexto ni idioma: no es aplicable a tareas de texto, razonamiento, codigo ni agentes, pese a que la ficha de HuggingFace use `image-to-image` como pipeline.
+- Sin datos de contexto ni idioma: no es aplicable a tareas de texto, razonamiento, codigo ni agentes, pese a que la ficha de Hugging Face use `image-to-image` como pipeline.
 - Sin benchmarks publicados: no hay metricas objetivas en el model card que permitan validar la calidad del upscaling frente a otras alternativas.
 - Adopcion practica nula: 0 descargas y 0 "likes" en el momento de la consulta, sin historial de uso publico.
 - Restricciones de licencia: BSD 3-Clause permite uso comercial y modificacion siempre que se conserve el aviso de copyright y la clausula de no respaldo. Debe mantenerse la atribucion a Xintao Wang y al proyecto Real-ESRGAN.
 - Coste de inferencia en cliente: el tiempo y la memoria dependen del hardware del usuario; imagenes grandes pueden provocar bloqueos o agotar la memoria del navegador si no se trocean en parches.
-- El repositorio ocupa 0,0 GB segun HuggingFace, coherente con el tamano real de los pesos (~42 MB en total); no incluye codigo de inferencia, solo los binarios.
+- El repositorio ocupa 0,0 GB segun Hugging Face, coherente con el tamano real de los pesos (~42 MB en total); no incluye codigo de inferencia, solo los binarios.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OutlierTDK/outlier-upscale-models
+- Hugging Face: https://huggingface.co/OutlierTDK/outlier-upscale-models
 - Checkpoints oficiales de Real-ESRGAN: https://github.com/xinntao/Real-ESRGAN/releases
 - Repositorio del modelo original Real-ESRGAN: https://github.com/xinntao/Real-ESRGAN
 - Paper: Xintao Wang, Liangbin Xie, Chao Dong, Ying Shan, "Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data", ICCV Workshops 2021 (enlace directo no disponible en la informacion proporcionada)

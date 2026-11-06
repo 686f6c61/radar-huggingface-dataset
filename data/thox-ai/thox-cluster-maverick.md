@@ -19,7 +19,7 @@ Es relevante ahora porque representa un patrón creciente: distribuciones de ter
 | Tipos de cuantizacion | Q4_K_M (GGUF) |
 | Idiomas soportados | 100+ según catálogo; la model card declara `en` como idioma |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (distribución Ollama); el repositorio de HuggingFace solo contiene `.gitattributes` |
+| Formato de pesos | GGUF (distribución Ollama); el repositorio de Hugging Face solo contiene `.gitattributes` |
 | Tamano de la distribucion | 142 GB |
 | Modelo base | Qwen/Qwen3-235B-A22B (Alibaba Cloud) |
 | Despliegue | Ollama local; orquestación distribuida vía MeshStack (componente separado) |
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Activos | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| thox-cluster-maverick | 235B | 22B | 128K (servido) | Apache 2.0 | GGUF Q4_K_M | Ollama; HuggingFace solo como model card |
-| Qwen3-235B-A22B (base) | 235B | 22B | Según model card del proveedor | Apache 2.0 | Safetensors y otras | HuggingFace oficial |
-| DeepSeek-V3 | 671B | 37B | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | HuggingFace oficial |
-| Llama 3.1 405B | 405B | Densa | 128K | Licencia comunitaria Llama | Safetensors, GGUF | HuggingFace oficial |
+| thox-cluster-maverick | 235B | 22B | 128K (servido) | Apache 2.0 | GGUF Q4_K_M | Ollama; Hugging Face solo como model card |
+| Qwen3-235B-A22B (base) | 235B | 22B | Según model card del proveedor | Apache 2.0 | Safetensors y otras | Hugging Face oficial |
+| DeepSeek-V3 | 671B | 37B | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | Hugging Face oficial |
+| Llama 3.1 405B | 405B | Densa | 128K | Licencia comunitaria Llama | Safetensors, GGUF | Hugging Face oficial |
 
 La diferencia principal de thox-cluster-maverick frente al Qwen3-235B-A22B oficial es el empaquetado: pesos idénticos, cuantización Q4_K_M en GGUF y configuración orientada a Ollama y MeshStack. Frente a alternativas como DeepSeek-V3 o Llama 3.1 405B, comparte categoría de modelo abierto de gran escala, pero los datos comparativos de rendimiento no están disponibles en la información proporcionada.
 
@@ -82,13 +82,13 @@ La diferencia principal de thox-cluster-maverick frente al Qwen3-235B-A22B ofici
 - Riesgo de alucinación inherente al modelo base; no se documentan mitigaciones específicas en esta distribución.
 - Sesgos conocidos: no documentados en la información disponible; deben asumirse los del modelo base.
 - La licencia Apache 2.0 permite uso comercial, pero los pesos siguen sujetos a los términos del proveedor original; verificar la model card del modelo base.
-- El repositorio de HuggingFace no contiene pesos (solo `.gitattributes`); la distribución ejecutable está en Ollama, lo que condiciona la trazabilidad y la verificación de integridad por parte del usuario.
+- El repositorio de Hugging Face no contiene pesos (solo `.gitattributes`); la distribución ejecutable está en Ollama, lo que condiciona la trazabilidad y la verificación de integridad por parte del usuario.
 - El operador es responsable de cumplir las obligaciones regulatorias aplicables a su despliegue.
 - El modelo no accede a información en línea ni a servicios externos salvo que el operador lo configure.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/thox-cluster-maverick
+- Hugging Face: https://huggingface.co/Thox-ai/thox-cluster-maverick
 - Distribución Ollama: https://ollama.com/Thox-ai/thox-cluster-maverick
 - Modelo base Qwen3-235B-A22B: https://huggingface.co/Qwen/Qwen3-235B-A22B
 - Sitio de THOX: https://thox.ai

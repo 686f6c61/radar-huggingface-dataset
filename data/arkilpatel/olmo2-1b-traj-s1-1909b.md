@@ -55,14 +55,14 @@ No se han publicado resultados de benchmarks en la información disponible. Este
 - Cada checkpoint en bf16 ocupa aproximadamente 2 GB (1B parámetros × 2 bytes). El repositorio completo pesa 127,7 GB, correspondiente a los 43 checkpoints más archivos adicionales.
 - Para inferencia de un solo checkpoint, se necesita una GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650 o superior). Con cuantización a 8 bits o 4 bits, podría caber en GPUs con 2-3 GB, pero no se proporcionan versiones cuantizadas.
 - GPUs recomendadas: cualquier GPU moderna con soporte bf16, como RTX 3090, RTX 4090, A100, H100, etc. Para análisis de múltiples checkpoints, se recomienda almacenamiento rápido y suficiente RAM.
-- Opciones de despliegue: al ser checkpoints intermedios, no se han preparado para uso con vLLM, Ollama o TGI. Se puede cargar con la librería `transformers` de HuggingFace o con el código de inferencia de OLMo.
+- Opciones de despliegue: al ser checkpoints intermedios, no se han preparado para uso con vLLM, Ollama o TGI. Se puede cargar con la librería `transformers` de Hugging Face o con el código de inferencia de OLMo.
 - Latencia y throughput: no disponibles, pero para un modelo de 1B en una GPU moderna se espera una latencia de decenas de milisegundos por token y un throughput de cientos de tokens por segundo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-2-1B (base) | 1B | 4096 (típico) | Apache-2.0 | Checkpoints oficiales en HuggingFace |
+| OLMo-2-1B (base) | 1B | 4096 (típico) | Apache-2.0 | Checkpoints oficiales en Hugging Face |
 | TinyLlama-1.1B | 1.1B | 2048 | Apache-2.0 | Checkpoints oficiales |
 | Qwen2-0.5B | 0.5B | 32768 | Apache-2.0 | Checkpoints oficiales |
 | Este repositorio | 1B | No disponible | Apache-2.0 | 43 checkpoints intermedios de RL |
@@ -80,8 +80,8 @@ La comparativa se limita a la arquitectura y disponibilidad, ya que no hay datos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-1909b
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-1909b
 - Repositorio OLMo en GitHub: https://github.com/allenai/OLMo
-- Modelo base OLMo-2-1B en HuggingFace: https://huggingface.co/allenai/OLMo-2-0425-1B
+- Modelo base OLMo-2-1B en Hugging Face: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Página oficial de OLMo 2: https://allenai.org/olmo2
 - Paper técnico de OLMo (arXiv): https://arxiv.org/pdf/2402.00838

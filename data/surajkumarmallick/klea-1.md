@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Klea-1 es un modelo de lenguaje de tipo decoder-only orientado al razonamiento, desarrollado por Suraj Kumar Mallick y publicado en HuggingFace bajo licencia Apache 2.0. Su propuesta principal es ofrecer razonamiento explicito por pasos (con traza de pensamiento delimitada por etiquetas `<think>` y respuesta final en `<answer>`) en un tamano muy reducido: aproximadamente 540 millones de parametros totales y unos 430 millones activos, lo que lo situa en la categoria de modelos ligeros ejecutables en hardware de consumo.
+Klea-1 es un modelo de lenguaje de tipo decoder-only orientado al razonamiento, desarrollado por Suraj Kumar Mallick y publicado en Hugging Face bajo licencia Apache 2.0. Su propuesta principal es ofrecer razonamiento explicito por pasos (con traza de pensamiento delimitada por etiquetas `<think>` y respuesta final en `<answer>`) en un tamano muy reducido: aproximadamente 540 millones de parametros totales y unos 430 millones activos, lo que lo situa en la categoria de modelos ligeros ejecutables en hardware de consumo.
 
 El modelo declara una ventana de contexto de 256K tokens, un dato especialmente ambicioso para su escala, y un corte de conocimiento en septiembre de 2026. Se distribuye en formato safetensors con pesos en bfloat16 y es compatible con la libreria transformers mediante `AutoModelForCausalLM`, con arquitectura declarada `hunyuan_v1_dense`. Esta pensado para tareas de razonamiento paso a paso, asistencia en codigo, flujos agenticos de terminal y comprension de documentos largos.
 
@@ -78,7 +78,7 @@ Advertencia: estas cifras proceden exclusivamente de la model card y no se han v
 - VRAM estimada para inferencia en bfloat16: en torno a 1,1-1,3 GB solo para pesos, mas la memoria de activaciones y cache KV, que crece con la longitud de contexto; con 256K tokens la cache KV puede dominar el consumo y exigir tecnicas de atencion eficiente no documentadas.
 - GPU recomendadas: cualquier GPU con al menos 4-8 GB de VRAM para contextos cortos (RTX 3060, RTX 4060, RTX 4090); para contextos muy largos se recomienda A100 o H100 por memoria y ancho de banda.
 - Cabe en GPU consumer: si, en modelos como RTX 3060/4060/4090 con contextos moderados; en CPU es viable mediante cuantizacion, aunque no se publican pesos GGUF oficiales.
-- Opciones de despliegue: transformers con `AutoModelForCausalLM` y `accelerate` (soporte documentado); vLLM, llama.cpp, Ollama y TGI no estan confirmados en la informacion disponible, aunque la etiqueta `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: transformers con `AutoModelForCausalLM` y `accelerate` (soporte documentado); vLLM, llama.cpp, Ollama y TGI no estan confirmados en la informacion disponible, aunque la etiqueta `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -106,6 +106,6 @@ La comparacion se basa en caracteristicas publicas de esos modelos; no se dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/surajkumarmallick/Klea-1
+- Modelo en Hugging Face: https://huggingface.co/surajkumarmallick/Klea-1
 - Perfil del autor: https://huggingface.co/surajkumarmallick
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo.

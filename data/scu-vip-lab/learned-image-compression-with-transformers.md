@@ -80,7 +80,7 @@ No se han encontrado datos publicos de rendimiento relativo entre estos modelos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SCU-VIP-Lab/Learned-image-compression-with-transformers
+- Hugging Face: https://huggingface.co/SCU-VIP-Lab/Learned-image-compression-with-transformers
 - Perfil del laboratorio: https://huggingface.co/SCU-VIP-Lab
 - Pagina de Ying Liu en SCU: https://www.cse.scu.edu/~yliu1/
 - Publicaciones de Ying Liu: https://www.cse.scu.edu/~yliu1/publications.html

@@ -77,7 +77,7 @@ No se dispone de comparativas con otros modelos de 27B (p. ej., Llama 3.1 27B o 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ4_NL_R4-SPECIAL_SPLIT
+- Repositorio Hugging Face: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ4_NL_R4-SPECIAL_SPLIT
 - Repositorio del modelo base Qwen3.8-27B (GitHub): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Colección de Thireus con splits especiales: https://huggingface.co/collections/Thireus/mtp-qwen36-27b-thireus-special-split
 - Herramienta GGUF de Thireus: https://gguf.thireus.com/

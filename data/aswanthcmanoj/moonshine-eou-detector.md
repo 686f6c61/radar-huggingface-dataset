@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Parámetros | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| moonshine-eou-detector | Encoder Moonshine-tiny + head EOU + Silero VAD | 7,7 M (encoder) | ONNX | MIT | HuggingFace |
+| moonshine-eou-detector | Encoder Moonshine-tiny + head EOU + Silero VAD | 7,7 M (encoder) | ONNX | MIT | Hugging Face |
 | turnsense | SmolLM2-135M | 135 M | No disponible | No disponible | GitHub |
 | Silero VAD v5 | VAD recurrente | No disponible | ONNX | No disponible | No disponible |
 
@@ -84,6 +84,6 @@ No hay datos de rendimiento publicados para ninguno de los tres modelos en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AswanthCManoj/moonshine-eou-detector
-- HuggingFace del head: https://huggingface.co/AswanthCManoj/moonshine-eou-head
+- Hugging Face: https://huggingface.co/AswanthCManoj/moonshine-eou-detector
+- Hugging Face del head: https://huggingface.co/AswanthCManoj/moonshine-eou-head
 - GitHub turnsense: https://github.com/latishab/turnsense

@@ -25,7 +25,7 @@ El repositorio incluye un script `finetune.py` con un ejemplo ejecutable, un `co
 
 La arquitectura es un Transformer compacto con atención dilatada, en lugar de la atención estándar. El mecanismo de fusión se realiza concatenando las representaciones y pasándolas por un MLP, y la activación utilizada es swish (SiLU). La normalización se aplica sobre instancias (instance norm), una elección poco común en Transformers generativos pero típica en tareas de representación contrastiva. El modelo está configurado en su escala "base", que en este contexto se refiere a una configuración mínima para pruebas.
 
-No se proporcionan datos sobre el entrenamiento: no se indica el número de tokens, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. El archivo `training_args.json` contiene una receta por defecto con optimizador lamb y un scheduler polinomial, pero la documentación aclara que son valores iniciales y no evidencian un entrenamiento completado. El checkpoint `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un modelo entrenado. La implementación es personalizada, por lo que las APIs genéricas de HuggingFace requieren un adaptador explícito para cargar el modelo.
+No se proporcionan datos sobre el entrenamiento: no se indica el número de tokens, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. El archivo `training_args.json` contiene una receta por defecto con optimizador lamb y un scheduler polinomial, pero la documentación aclara que son valores iniciales y no evidencian un entrenamiento completado. El checkpoint `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un modelo entrenado. La implementación es personalizada, por lo que las APIs genéricas de Hugging Face requieren un adaptador explícito para cargar el modelo.
 
 ## Capacidades
 
@@ -41,7 +41,7 @@ No se proporcionan datos sobre el entrenamiento: no se indica el número de toke
 - Desarrollo de nuevas técnicas de aprendizaje contrastivo: al ser una base minimalista, se puede modificar fácilmente para probar variaciones de la arquitectura, como distintos tipos de atención o funciones de pérdida.
 - Depuración de entornos de ejecución: en entornos donde se requiera un modelo pequeño para comprobar la compatibilidad de librerías (PyTorch, transformers, etc.), este modelo cumple esa función.
 - Benchmarking de recursos: se puede medir el consumo de memoria y tiempo de inferencia de una arquitectura Transformer en dispositivos muy limitados, como microcontroladores o dispositivos edge.
-- Desarrollo de adaptadores personalizados: dado que la implementación no es estándar, puede usarse como caso de prueba para desarrollar adaptadores de HuggingFace para arquitecturas no convencionales.
+- Desarrollo de adaptadores personalizados: dado que la implementación no es estándar, puede usarse como caso de prueba para desarrollar adaptadores de Hugging Face para arquitecturas no convencionales.
 
 ## Benchmarks y rendimiento
 
@@ -57,21 +57,21 @@ No se han publicado resultados de benchmarks en la información disponible. El p
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos comparables directamente, ya que este es un experimento sin entrenamiento y con una arquitectura no estándar. Existen repositorios de TinyTransformer con fines educativos (por ejemplo, los encontrados en GitHub), pero no son modelos entrenados ni publicados en HuggingFace. Por tanto, no se puede realizar una comparativa cuantitativa.
+No se dispone de modelos comparables directamente, ya que este es un experimento sin entrenamiento y con una arquitectura no estándar. Existen repositorios de TinyTransformer con fines educativos (por ejemplo, los encontrados en GitHub), pero no son modelos entrenados ni publicados en Hugging Face. Por tanto, no se puede realizar una comparativa cuantitativa.
 
 ## Limitaciones y advertencias
 
 - El checkpoint de inicialización no ha sido entrenado; no se debe usar para tareas reales de generación o clasificación.
 - No se ha auditado la robustez, la equidad ni la transferencia de dominio; el modelo no es adecuado para producción.
-- La arquitectura personalizada no es compatible con APIs estándar de HuggingFace sin un adaptador explícito.
+- La arquitectura personalizada no es compatible con APIs estándar de Hugging Face sin un adaptador explícito.
 - No se conocen los idiomas soportados ni el contexto de entrenamiento, ya que no se han publicado datos de entrenamiento.
 - La licencia MIT permite uso comercial, pero se debe revisar los términos de los datos externos si se utilizan con conjuntos de datos de terceros.
 - El modelo es extremadamente pequeño, por lo que su capacidad de aprendizaje es limitada y no representa un avance en rendimiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Justrinsato/tiny-transformer-contrastive
-- Perfil del autor en HuggingFace: https://huggingface.co/justintransar/models (perfil asociado al usuario Justrinsato)
+- Modelo en Hugging Face: https://huggingface.co/Justrinsato/tiny-transformer-contrastive
+- Perfil del autor en Hugging Face: https://huggingface.co/justintransar/models (perfil asociado al usuario Justrinsato)
 - Repositorio educativo TinyTransformer (no relacionado directamente): https://github.com/skolouri/TinyTransformer
 - Repositorio Tiny Transformer de avvorstenbosch (no relacionado directamente): https://github.com/avvorstenbosch/tinyTransformer
 - Artículo sobre arquitecturas Transformer pequeñas para cambio de tareas: https://arxiv.org/abs/2508.04461v1

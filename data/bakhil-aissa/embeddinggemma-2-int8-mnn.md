@@ -84,7 +84,7 @@ La comparativa se limita a las variantes del mismo modelo base porque no se han 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bakhil-aissa/embeddinggemma-2-int8-mnn
+- Repositorio Hugging Face: https://huggingface.co/bakhil-aissa/embeddinggemma-2-int8-mnn
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Export ONNX de referencia: https://huggingface.co/onnx-community/embeddinggemma-2-ONNX
 - Repositorio MNN: https://github.com/alibaba/MNN

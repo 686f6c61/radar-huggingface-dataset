@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. El n
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 3CTeam/pi05_base_native_frozen_vlm_libero10_quantiles_15k | 4,14 mil millones | no disponible | VLA, manipulación (LIBERO-10) | Apache 2.0 | Pesos en HuggingFace |
+| 3CTeam/pi05_base_native_frozen_vlm_libero10_quantiles_15k | 4,14 mil millones | no disponible | VLA, manipulación (LIBERO-10) | Apache 2.0 | Pesos en Hugging Face |
 | π₀.₅ base (Physical Intelligence) | no disponible en la información proporcionada | no disponible | VLA, generalización en entornos abiertos | no disponible en la información proporcionada | Referenciado vía OpenPI |
 | π₀ (Physical Intelligence) | no disponible en la información proporcionada | no disponible | VLA, predecesor de π₀.₅ | no disponible en la información proporcionada | Referenciado vía OpenPI |
 | Otras políticas del ecosistema LeRobot (por ejemplo ACT, difusión) | no disponible en la información proporcionada | no disponible | Control robótico por imitación | no disponible en la información proporcionada | Implementadas en LeRobot |
@@ -93,7 +93,7 @@ No se dispone de cifras verificables de rendimiento, contexto o licencia para la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3CTeam/pi05_base_native_frozen_vlm_libero10_quantiles_15k
+- Modelo en Hugging Face: https://huggingface.co/3CTeam/pi05_base_native_frozen_vlm_libero10_quantiles_15k
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/lerobot/libero_10_image
 - Blog de Physical Intelligence sobre π₀.₅: https://www.physicalintelligence.company/blog/pi05
 - Repositorio OpenPI de Physical Intelligence: https://github.com/Physical-Intelligence/openpi

@@ -68,7 +68,7 @@ No hay datos comparativos disponibles para este checkpoint. Al ser un fine-tunin
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v3.h068.sft-splice-cont.step_6)
+- [Modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v3.h068.sft-splice-cont.step_6)
 - [Dataset del run opus-high-v3](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Modelo base Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base) (referencia)
-- [Colección de modelos agentic-ptb en HuggingFace](https://huggingface.co/models?other=agentic-ptb)
+- [Colección de modelos agentic-ptb en Hugging Face](https://huggingface.co/models?other=agentic-ptb)

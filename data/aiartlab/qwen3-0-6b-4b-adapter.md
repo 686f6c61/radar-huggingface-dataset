@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AiArtLab/qwen3-0.6b-4b-adapter + Qwen3-0.6B | 180,4 M (adaptador) + 0,6 B (encoder) | 256 tokens de condicionamiento | Similitud coseno 96–98% frente al encoder nativo; sin benchmarks publicados | Apache-2.0 | HuggingFace, via diffusers |
+| AiArtLab/qwen3-0.6b-4b-adapter + Qwen3-0.6B | 180,4 M (adaptador) + 0,6 B (encoder) | 256 tokens de condicionamiento | Similitud coseno 96–98% frente al encoder nativo; sin benchmarks publicados | Apache-2.0 | Hugging Face, via diffusers |
 | Text encoder nativo de FLUX.2-klein-4B (Qwen3-4B) | 4 B | No disponible | Referencia de calidad; el autor lo describe como el objetivo a imitar | No disponible en la informacion proporcionada | Incluido con klein |
 | Otros encoders alternativos para klein | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -85,7 +85,7 @@ El autor solo contrasta su adaptador con el encoder nativo de klein. No se aport
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AiArtLab/qwen3-0.6b-4b-adapter
+- Modelo en Hugging Face: https://huggingface.co/AiArtLab/qwen3-0.6b-4b-adapter
 - Modelo base generativo: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Encoder pequeno: https://huggingface.co/Qwen/Qwen3-0.6B
 - La busqueda web realizada no devolvio enlaces relevantes al modelo; los unicos resultados obtenidos no guardan relacion con la ficha.

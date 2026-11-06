@@ -4,7 +4,7 @@
 
 `turintech/embeddinggemma-2-Artemis-GGUF` es una cuantización en formato GGUF del modelo de embeddings `google/embeddinggemma-2`, publicada por TurinTech bajo el sello Artemis. No es un modelo generativo: es un encoder de texto que convierte cadenas en vectores densos de 768 dimensiones, pensado para búsqueda semántica y recuperación de información (retrieval). Su interés práctico radica en que comprime un modelo de 271 millones de parámetros en un fichero de 156,935 MB (Q4_K_S) que funciona íntegramente en CPU a través del endpoint `/v1/embeddings` de llama.cpp, sin necesidad de GPU.
 
-La propuesta del autor es explícitamente comparativa: frente a la cuantización Q4 de Unsloth (175,674 MB), el fichero Q4_K_S de Artemis ocupa un 10,67 % menos y obtiene un nDCG@10 de 0,859481 frente a 0,857125 en el panel de evaluación interno del autor. Se ofrece también una variante Q5_K_S de 182,04 MB para quien prefiera mayor fidelidad de pesos. El modelo está etiquetado como compatible con endpoints y con licencia apache-2.0, y se distribuye tanto en HuggingFace como en paquetes nativos de Ollama.
+La propuesta del autor es explícitamente comparativa: frente a la cuantización Q4 de Unsloth (175,674 MB), el fichero Q4_K_S de Artemis ocupa un 10,67 % menos y obtiene un nDCG@10 de 0,859481 frente a 0,857125 en el panel de evaluación interno del autor. Se ofrece también una variante Q5_K_S de 182,04 MB para quien prefiera mayor fidelidad de pesos. El modelo está etiquetado como compatible con endpoints y con licencia apache-2.0, y se distribuye tanto en Hugging Face como en paquetes nativos de Ollama.
 
 Por su tamaño y su orientación a CPU, encaja en escenarios de RAG y búsqueda semántica on-premise o de bajo coste, donde el despliegue de un encoder de mayor tamaño no está justificado. La información publicada no detalla la longitud de contexto nativa ni los idiomas soportados, y limita las mediciones a una configuración concreta de 512 tokens de entrada.
 
@@ -101,7 +101,7 @@ La comparación relevante es entre cuantizaciones del mismo modelo base, ya que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/turintech/embeddinggemma-2-Artemis-GGUF
+- Modelo en Hugging Face: https://huggingface.co/turintech/embeddinggemma-2-Artemis-GGUF
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Paquetes nativos de Ollama: https://ollama.com/turintech/embeddinggemma-2-artemis
 - TurinTech: https://turintech.ai

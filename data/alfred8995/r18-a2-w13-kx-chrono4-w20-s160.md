@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-kx-chrono4-w20-s160` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo el tag `sn38-nanochrono`. Se distribuye en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2.000 millones) y un tamaño de repositorio de 12,6 GB, lo que es coherente con pesos en precisión de 16 bits para ese número de parámetros. El acceso está restringido (gated): es necesario aceptar las condiciones en la página de HuggingFace antes de poder descargarlo.
+El modelo `alfred8995/r18-a2-w13-kx-chrono4-w20-s160` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo el tag `sn38-nanochrono`. Se distribuye en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2.000 millones) y un tamaño de repositorio de 12,6 GB, lo que es coherente con pesos en precisión de 16 bits para ese número de parámetros. El acceso está restringido (gated): es necesario aceptar las condiciones en la página de Hugging Face antes de poder descargarlo.
 
 La información pública disponible es muy limitada. No se especifican la arquitectura interna, la longitud de contexto, los idiomas soportados, el pipeline de inferencia ni los datos de entrenamiento. El nombre del checkpoint sugiere una variante experimental (posiblemente un run de entrenamiento con parámetros codificados en el identificador, como `a2`, `w13`, `chrono4`, `w20`, `s160`), pero no hay documentación que confirme qué significan esos términos.
 
@@ -78,7 +78,7 @@ La comparación de rendimiento con estos modelos no es posible sin benchmarks pr
 
 - Ausencia total de documentación técnica: arquitectura, tokenizador, contexto e idiomas no están especificados.
 - Sin benchmarks publicados: no hay evidencia de calidad en ninguna tarea.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad.
 - Riesgo de sesgos y alucinaciones desconocido: al no documentarse los datos de entrenamiento, no se pueden evaluar sesgos ni fiabilidad factual.
 - Posible checkpoint experimental: el nombre sugiere un run concreto; podría no ser un modelo final ni estar destinado a uso general.
 - Licencia Apache 2.0 permite uso comercial, pero la falta de garantías técnicas hace desaconsejable su uso en producción sin validación exhaustiva.
@@ -86,5 +86,5 @@ La comparación de rendimiento con estos modelos no es posible sin benchmarks pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono4-w20-s160
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono4-w20-s160
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

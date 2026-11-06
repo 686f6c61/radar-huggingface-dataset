@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/swe-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455` es un ajuste fino (fine-tune) del checkpoint `goldfish-models/swe_latn_100mb`, un modelo de la familia Goldfish orientada a lenguas concretas. Lo publica el usuario de HuggingFace `francesca9805` y se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de HuggingFace. Por sus etiquetas y su estructura de pesos, la arquitectura subyacente es GPT-2, con 124.770.816 parametros totales, lo que lo situa en la escala de GPT-2 small.
+El modelo `francesca9805/swe-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455` es un ajuste fino (fine-tune) del checkpoint `goldfish-models/swe_latn_100mb`, un modelo de la familia Goldfish orientada a lenguas concretas. Lo publica el usuario de Hugging Face `francesca9805` y se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de Hugging Face. Por sus etiquetas y su estructura de pesos, la arquitectura subyacente es GPT-2, con 124.770.816 parametros totales, lo que lo situa en la escala de GPT-2 small.
 
 El nombre del modelo apunta a un experimento controlado sobre tokenizadores y sobre el volumen de datos de entrenamiento: incluye referencias a "100mb", "ppt", "Dp-10mb-packed", "bfdiso" y una semilla concreta ("seed455"). El run asociado en Weights & Biases pertenece al proyecto `new-tokenizers` de la Universidad de Groningen, lo que refuerza la hipotesis de que se trata de un artefacto de investigacion mas que de un modelo listo para produccion. El repositorio ocupa 0.3 GB y el modelo no registra descargas ni "likes" en el momento de la consulta.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| swe-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455 | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas | Fine-tune de investigacion sobre tokenizadores |
-| goldfish-models/swe_latn_100mb | no disponible | no disponible | no disponible | HuggingFace (modelo base) | Modelo mono-idioma de partida de la familia Goldfish |
-| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | MIT | HuggingFace | Referencia de la misma escala, entrenado en ingles |
-| Otros modelos Goldfish `*_latn_100mb` | no disponible | no disponible | no disponible | HuggingFace | Variantes por lengua con la misma receta de entrenamiento |
+| swe-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455 | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas | Fine-tune de investigacion sobre tokenizadores |
+| goldfish-models/swe_latn_100mb | no disponible | no disponible | no disponible | Hugging Face (modelo base) | Modelo mono-idioma de partida de la familia Goldfish |
+| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | MIT | Hugging Face | Referencia de la misma escala, entrenado en ingles |
+| Otros modelos Goldfish `*_latn_100mb` | no disponible | no disponible | no disponible | Hugging Face | Variantes por lengua con la misma receta de entrenamiento |
 
 La comparacion con GPT-2 small es la mas directa por numero de parametros, pero no se dispone de datos de rendimiento del modelo analizado que permitan contrastar calidad. El resto de alternativas Goldfish comparten metodologia, con la diferencia de la lengua objetivo.
 
@@ -91,7 +91,7 @@ La comparacion con GPT-2 small es la mas directa por numero de parametros, pero 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swe-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swe-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/swe_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/bf7eyulv
 - Repositorio de TRL: https://github.com/huggingface/trl

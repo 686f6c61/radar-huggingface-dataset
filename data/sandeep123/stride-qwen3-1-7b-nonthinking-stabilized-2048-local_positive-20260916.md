@@ -93,7 +93,7 @@ No hay datos de rendimiento publicados para este adaptador, por lo que no es pos
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/sandeep123/stride-qwen3-1.7b-nonthinking-stabilized-2048-local_positive-20260916
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/sandeep123/stride-qwen3-1.7b-nonthinking-stabilized-2048-local_positive-20260916
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Revision fijada del modelo base: 70d244cc86ccca08cf5af4e1e306ecf908b1ad5e
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo (unicamente paginas de ayuda de Gmail sin relacion con el contenido). No se dispone de paper, blog tecnico, repositorio de codigo ni demo adicionales.

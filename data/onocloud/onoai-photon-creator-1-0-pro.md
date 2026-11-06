@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`onocloud/onoai-photon-creator-1.0-pro` es un modelo de generación de imágenes a partir de texto (text-to-image) publicado en HuggingFace por el usuario `onocloud`. El repositorio declara la librería `diffusers` y la etiqueta `diffusers:QwenImagePipeline`, lo que indica que está pensado para cargarse mediante la clase `QwenImagePipeline` de la librería Diffusers, la misma familia de pipeline asociada a los modelos Qwen-Image. Los pesos se distribuyen en formato `safetensors`.
+`onocloud/onoai-photon-creator-1.0-pro` es un modelo de generación de imágenes a partir de texto (text-to-image) publicado en Hugging Face por el usuario `onocloud`. El repositorio declara la librería `diffusers` y la etiqueta `diffusers:QwenImagePipeline`, lo que indica que está pensado para cargarse mediante la clase `QwenImagePipeline` de la librería Diffusers, la misma familia de pipeline asociada a los modelos Qwen-Image. Los pesos se distribuyen en formato `safetensors`.
 
-La información pública disponible es muy escasa: el repositorio no incluye model card con detalles de arquitectura, número de parámetros, resolución nativa, composición del dataset de entrenamiento ni resultados de evaluación. El acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos, y la licencia es una licencia propia denominada `onocloud-sovereign-license`, registrada en HuggingFace como `license:other`.
+La información pública disponible es muy escasa: el repositorio no incluye model card con detalles de arquitectura, número de parámetros, resolución nativa, composición del dataset de entrenamiento ni resultados de evaluación. El acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos, y la licencia es una licencia propia denominada `onocloud-sovereign-license`, registrada en Hugging Face como `license:other`.
 
 Por el momento el modelo acumula 0 descargas y 0 likes, y su fecha de creación y última actualización es el 24 de octubre de 2026, con apenas 14 minutos entre ambas. Es, por tanto, un lanzamiento sin validación comunitaria ni documentación técnica verificable, y cualquier evaluación de su calidad debe hacerse empíricamente antes de considerarlo en producción.
 
@@ -18,12 +18,12 @@ Por el momento el modelo acumula 0 descargas y 0 likes, y su fecha de creación 
 | Longitud de contexto | No aplica en el sentido de LLM. Longitud máxima de prompt: no disponible |
 | Tipos de cuantizacion | No disponible. Solo se publican pesos en `safetensors`; no se ofrecen variantes GGUF, FP8 ni INT8 en el repositorio |
 | Idiomas soportados | No disponible (la generación de imágenes se guía por prompt de texto, pero no se documenta el soporte multilingüe del codificador de texto) |
-| Licencia | `onocloud-sovereign-license` (registrada como `license:other` en HuggingFace) |
+| Licencia | `onocloud-sovereign-license` (registrada como `license:other` en Hugging Face) |
 | Formato de pesos | `safetensors` |
 | Pipeline declarado | `text-to-image` |
 | Clase de carga | `QwenImagePipeline` (Diffusers) |
 | Resolución de salida | No disponible |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -80,7 +80,7 @@ No disponible para comparaciones de rendimiento: no existen métricas publicadas
 
 - **Ausencia total de model card**: no hay información sobre arquitectura, datos de entrenamiento, resolución nativa ni sesgos evaluados. Esto impide cualquier evaluación de riesgo documentada.
 - **Licencia propietaria y opaca**: `onocloud-sovereign-license` no es una licencia estándar reconocida (OSI o Creative Commons). Sus términos deben leerse íntegramente antes de cualquier uso, especialmente comercial, de redistribución o de uso de las imágenes generadas.
-- **Acceso restringido**: el repositorio es gated, lo que implica aceptar condiciones adicionales en HuggingFace y puede limitar la automatización de descargas en CI/CD.
+- **Acceso restringido**: el repositorio es gated, lo que implica aceptar condiciones adicionales en Hugging Face y puede limitar la automatización de descargas en CI/CD.
 - **Sin validación comunitaria**: 0 descargas y 0 likes en el momento de la consulta, con una ventana de publicación de minutos. No hay evidencia independiente de que los pesos carguen correctamente ni de que la calidad sea la declarada.
 - **Riesgo de artefactos y baja adherencia al prompt**: inherente a los modelos de difusión; sin benchmarks no puede acotarse. Es previsible que falle en composiciones con múltiples objetos, texto renderizado en la imagen y anatomía fina.
 - **Sesgos de representación**: al desconocerse la composición del dataset, no puede evaluarse el sesgo demográfico, cultural o estilístico de las salidas.
@@ -91,7 +91,7 @@ No disponible para comparaciones de rendimiento: no existen métricas publicadas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/onocloud/onoai-photon-creator-1.0-pro
+- Hugging Face: https://huggingface.co/onocloud/onoai-photon-creator-1.0-pro
 - Documentación de Diffusers sobre `QwenImagePipeline`: no disponible en la información proporcionada (se recomienda consultar la documentación oficial de Diffusers para la clase citada).
 - Paper, blog de anuncio, repositorio de código y demo: no disponibles.
 - La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces obtenidos no guardan relación con el repositorio y se descartan.

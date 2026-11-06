@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zaydens/sn56-p2-C4-LLAMA-AUG-067761fe` es un artefacto de investigación publicado en HuggingFace, no un modelo de propósito general documentado. Según su propia model card, se trata del resultado de una repetición (replay) de un torneo de texto de SN56 con validación tipo "validator-style round-trip": el repositorio contiene el directorio de salida del entrenador subido sin modificaciones y se vuelve a descargar para puntuarlo sobre las filas reservadas (*held-out*) de la tarea, comprobando que la copia del Hub obtiene exactamente la misma puntuación que la copia local.
+`zaydens/sn56-p2-C4-LLAMA-AUG-067761fe` es un artefacto de investigación publicado en Hugging Face, no un modelo de propósito general documentado. Según su propia model card, se trata del resultado de una repetición (replay) de un torneo de texto de SN56 con validación tipo "validator-style round-trip": el repositorio contiene el directorio de salida del entrenador subido sin modificaciones y se vuelve a descargar para puntuarlo sobre las filas reservadas (*held-out*) de la tarea, comprobando que la copia del Hub obtiene exactamente la misma puntuación que la copia local.
 
 El checkpoint tiene 1.235.814.400 parámetros (~1,24 mil millones) en formato safetensors, con un tamaño de repositorio de 2,5 GB, lo que es coherente con pesos almacenados en bf16/fp16 (2 bytes por parámetro). La etiqueta de arquitectura es `llama`, por lo que se trata de un transformer decoder-only de la familia Llama, presumiblemente derivado de un modelo base de ~1B parámetros. La model card identifica la celda experimental como `C4-LLAMA-AUG`, la tarea como `067761fe` y el árbol de ficheros con SHA `1d561da`.
 
@@ -95,7 +95,7 @@ La diferencia principal no es de rendimiento, sino de naturaleza: este repositor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zaydens/sn56-p2-C4-LLAMA-AUG-067761fe
+- Hugging Face: https://huggingface.co/zaydens/sn56-p2-C4-LLAMA-AUG-067761fe
 - Modelo base: no disponible
 - Paper o informe técnico: no disponible
 - Repositorio de código: no disponible

@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks comparables con alternativas de la misma ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JRamirez-UAB/Qwen3.8-27B-Coder390-EXL3-3.50bpw-24GB
+- Hugging Face: https://huggingface.co/JRamirez-UAB/Qwen3.8-27B-Coder390-EXL3-3.50bpw-24GB
 - Modelo base: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2
 - exllamav3: https://github.com/turboderp-org/exllamav3
 - Paper de referencia citado en tags: arXiv:2406.11235

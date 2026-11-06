@@ -93,7 +93,7 @@ La comparativa muestra que el modelo de esta ficha se diferencia del destilado o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Arthas1234/DeepSeek-R1-Distill-Qwen-14B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Arthas1234/DeepSeek-R1-Distill-Qwen-14B-Uncensored-GGUF
 - Modelo base (safetensors): https://huggingface.co/nicoboss/DeepSeek-R1-Distill-Qwen-14B-Uncensored
 - Quants ponderados/imatrix: https://huggingface.co/mradermacher/DeepSeek-R1-Distill-Qwen-14B-Uncensored-i1-GGUF
 - Modelo destilado original: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B

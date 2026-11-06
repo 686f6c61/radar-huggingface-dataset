@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B (base) | 4B | 32K+ | MMLU ~70+ (estimado) | Apache 2.0 | HuggingFace |
-| Qwen3-4B (base) | 4B | 32K | MMLU ~70+ | Apache 2.0 | HuggingFace |
-| Llama 3.2 3B | 3B | 128K | MMLU ~60+ | Llama License | HuggingFace |
-| Este modelo | 4B | no disponible | no disponible | no disponible | HuggingFace |
+| Qwen3.5-4B (base) | 4B | 32K+ | MMLU ~70+ (estimado) | Apache 2.0 | Hugging Face |
+| Qwen3-4B (base) | 4B | 32K | MMLU ~70+ | Apache 2.0 | Hugging Face |
+| Llama 3.2 3B | 3B | 128K | MMLU ~60+ | Llama License | Hugging Face |
+| Este modelo | 4B | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparativa se basa en los modelos base; el fine-tune no tiene datos publicados de rendimiento.
 
@@ -81,7 +81,7 @@ La comparativa se basa en los modelos base; el fine-tune no tiene datos publicad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/Qwen3.5-4B-dragon_mlpB-STEER0.153906-ft4.43
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/Qwen3.5-4B-dragon_mlpB-STEER0.153906-ft4.43
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Coleccion Qwen3.5: https://huggingface.co/collections/Qwen/qwen35
 - Repositorio de Qwen3.5 en GitHub: https://github.com/QwenLM/Qwen3.8

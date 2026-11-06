@@ -66,7 +66,7 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parametros | Contexto / chunk | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `LUC1O/act-5090-D_libero_object_orange_juice` (este) | 51,7 M | chunk 100 | no disponible | HuggingFace |
+| `LUC1O/act-5090-D_libero_object_orange_juice` (este) | 51,7 M | chunk 100 | no disponible | Hugging Face |
 | ACT oficial de LeRobot | no disponible en la informacion | chunk configurable | no disponible | Repositorio LeRobot |
 | Otras políticas del benchmark `Jerryisqx/ACT-5090-benchmark` | no disponible en la informacion | no disponible | no disponible | GitHub |
 
@@ -84,7 +84,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LUC1O/act-5090-D_libero_object_orange_juice
+- Modelo en Hugging Face: https://huggingface.co/LUC1O/act-5090-D_libero_object_orange_juice
 - Repositorio del benchmark, logs y scripts de reproducción: https://github.com/Jerryisqx/ACT-5090-benchmark
 - Librería LeRobot: https://github.com/huggingface/lerobot
 - Dataset `lerobot/libero`: https://huggingface.co/datasets/lerobot/libero

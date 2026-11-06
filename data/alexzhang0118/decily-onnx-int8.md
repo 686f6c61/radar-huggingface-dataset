@@ -101,7 +101,7 @@ Nota: las tres primeras filas son el mismo modelo en contenedores distintos, no 
 
 ## Enlaces
 
-- Repositorio HuggingFace (variante ONNX int8): https://huggingface.co/alexzhang0118/Decily-ONNX-int8
+- Repositorio Hugging Face (variante ONNX int8): https://huggingface.co/alexzhang0118/Decily-ONNX-int8
 - Variante PyTorch bf16: https://huggingface.co/alexzhang0118/Decily-1.7B
 - Variante MLX: https://huggingface.co/alexzhang0118/Decily-MLX
 - Variante MLX 4-bit: https://huggingface.co/alexzhang0118/Decily-MLX-4bit

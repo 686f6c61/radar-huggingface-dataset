@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chuci-1.5B-LoRA es un repositorio publicado en HuggingFace por el usuario haninsky que, por su denominación, parece corresponder a un adaptador LoRA sobre un modelo base de aproximadamente 1.500 millones de parámetros. La model card asociada es prácticamente vacía: solo declara la licencia Apache 2.0 y no incluye descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio tiene un tamaño de 0,0 GB, cero descargas y cero likes en el momento de la consulta, lo que sugiere que se trata de una publicación reciente, experimental o de carácter personal.
+Chuci-1.5B-LoRA es un repositorio publicado en Hugging Face por el usuario haninsky que, por su denominación, parece corresponder a un adaptador LoRA sobre un modelo base de aproximadamente 1.500 millones de parámetros. La model card asociada es prácticamente vacía: solo declara la licencia Apache 2.0 y no incluye descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio tiene un tamaño de 0,0 GB, cero descargas y cero likes en el momento de la consulta, lo que sugiere que se trata de una publicación reciente, experimental o de carácter personal.
 
 No se dispone de información verificable sobre el modelo base sobre el que se aplica el adaptador, la composición del dataset de ajuste, el método de entrenamiento (SFT, DPO, RLHF) ni las capacidades resultantes. Tampoco se especifican los idiomas soportados ni el pipeline de inferencia. Cualquier evaluación rigurosa requeriría inspeccionar los archivos `safetensors` del repositorio y la configuración del adaptador para identificar el modelo base y la arquitectura subyacente.
 
@@ -74,5 +74,5 @@ No disponible. No se han identificado modelos comparables porque no se especific
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/haninsky/Chuci-1.5B-LoRA
+- Repositorio en Hugging Face: https://huggingface.co/haninsky/Chuci-1.5B-LoRA
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

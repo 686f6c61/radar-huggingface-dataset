@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sidgirase/vlm-placement-adapters` es una publicacion alojada en HuggingFace por el usuario `sidgirase`. En el momento de redactar esta ficha acumula 0 descargas y 1 like, ocupa 20,0 GB y no incluye model card, licencia, idiomas declarados ni pipeline asociado. Fue creado el 14 de octubre de 2026 y actualizado ese mismo dia unos doce minutos despues, lo que sugiere una subida rapida de artefactos sin documentacion posterior.
+El repositorio `sidgirase/vlm-placement-adapters` es una publicacion alojada en Hugging Face por el usuario `sidgirase`. En el momento de redactar esta ficha acumula 0 descargas y 1 like, ocupa 20,0 GB y no incluye model card, licencia, idiomas declarados ni pipeline asociado. Fue creado el 14 de octubre de 2026 y actualizado ese mismo dia unos doce minutos despues, lo que sugiere una subida rapida de artefactos sin documentacion posterior.
 
 El nombre del repositorio apunta a adaptadores (adapters) para modelos de vision y lenguaje (VLM) orientados a tareas de "placement", probablemente colocacion o integracion de elementos en imagenes. Sin embargo, esta interpretacion es una hipotesis derivada unicamente del identificador y no esta respaldada por ningun README, configuracion de modelo, paper ni publicacion tecnica localizada en la busqueda web.
 
@@ -86,6 +86,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sidgirase/vlm-placement-adapters
+- Hugging Face: https://huggingface.co/sidgirase/vlm-placement-adapters
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - Resultados de la busqueda web: no se localizo ningun resultado relevante sobre el modelo. Las consultas devolvieron exclusivamente enlaces a la plataforma TikTok (`https://www.tiktok.com/`, `https://www.tiktok.com/en%22`, `https://livecenter.tiktok.com/?lang=fr`, `https://m.tiktok.com/signup`, `https://tiktok-ui.vercel.app/`), sin relacion con el repositorio analizado.

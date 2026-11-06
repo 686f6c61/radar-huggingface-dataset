@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tamaño del checkpoint | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Minimax-h3_Singularity_v1.3_pruned_w4a8_graft_preserving | 17,9 GB | W4A8 + INT8 + BF16 | Apache-2.0 | HuggingFace |
-| WarmBloodAban/Minimax-h3_Singularity (original) | no disponible (se estima ~42,9 GB por el ahorro de 25 GB) | no disponible | no disponible | HuggingFace |
+| Minimax-h3_Singularity_v1.3_pruned_w4a8_graft_preserving | 17,9 GB | W4A8 + INT8 + BF16 | Apache-2.0 | Hugging Face |
+| WarmBloodAban/Minimax-h3_Singularity (original) | no disponible (se estima ~42,9 GB por el ahorro de 25 GB) | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks para comparar el rendimiento de estos modelos. Tampoco se han identificado otras alternativas de la misma categoría con información suficiente para una comparación detallada.
 
@@ -78,7 +78,7 @@ No se dispone de datos de benchmarks para comparar el rendimiento de estos model
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/cicalooo/Minimax-h3_Singularity_v1.3_pruned_w4a8_graft_preserving
-- HuggingFace del modelo original: https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity
+- Hugging Face del modelo: https://huggingface.co/cicalooo/Minimax-h3_Singularity_v1.3_pruned_w4a8_graft_preserving
+- Hugging Face del modelo original: https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity
 - GitHub de MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3
 - Civitai (referencia de capacidad y uso en ComfyUI): https://civitai.com/models/2917208/minimax-h3singularity

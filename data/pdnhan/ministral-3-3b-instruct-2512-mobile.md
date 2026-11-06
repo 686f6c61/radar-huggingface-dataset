@@ -95,7 +95,7 @@ La información proporcionada incluye además columnas de precisión, recall, F1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pdnhan/Ministral-3-3B-Instruct-2512-mobile
+- Modelo en Hugging Face: https://huggingface.co/pdnhan/Ministral-3-3B-Instruct-2512-mobile
 - Modelo base BF16: https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-BF16
 - Modelo base original: https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512
 - ONNX Runtime: https://onnxruntime.ai

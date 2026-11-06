@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `vitalii-antipovich/bge-small-en-v1.5-conll2003-ner` es un ajuste fino (fine-tuning) del modelo de embeddings `BAAI/bge-small-en-v1.5` reorientado a la tarea de reconocimiento de entidades nombradas (NER) sobre el corpus CoNLL-2003. Lo publica el usuario de HuggingFace vitalii-antipovich y esta etiquetado con el pipeline `token-classification`, lo que indica que su salida es una etiqueta por token (tipicamente en formato BIO) en lugar de un vector de embedding. Se apoya en una arquitectura transformer encoder-only de tipo BERT y cuenta con 33.215.625 parametros, lo que lo situa en la gama ultraligera.
+El modelo `vitalii-antipovich/bge-small-en-v1.5-conll2003-ner` es un ajuste fino (fine-tuning) del modelo de embeddings `BAAI/bge-small-en-v1.5` reorientado a la tarea de reconocimiento de entidades nombradas (NER) sobre el corpus CoNLL-2003. Lo publica el usuario de Hugging Face vitalii-antipovich y esta etiquetado con el pipeline `token-classification`, lo que indica que su salida es una etiqueta por token (tipicamente en formato BIO) en lugar de un vector de embedding. Se apoya en una arquitectura transformer encoder-only de tipo BERT y cuenta con 33.215.625 parametros, lo que lo situa en la gama ultraligera.
 
-La relevancia de este modelo radica en su tamano reducido: con algo mas de 33 millones de parametros y un repositorio de apenas 0,1 GB, es un candidato natural para extraccion de entidades en entornos con recursos limitados, inferencia en CPU o despliegues de alta concurrencia donde un modelo grande seria inviable. La contrapartida es que la informacion publicada es practicamente nula: la model card es la plantilla autogenerada de HuggingFace y no aporta datos de entrenamiento, licencia, idiomas ni evaluacion.
+La relevancia de este modelo radica en su tamano reducido: con algo mas de 33 millones de parametros y un repositorio de apenas 0,1 GB, es un candidato natural para extraccion de entidades en entornos con recursos limitados, inferencia en CPU o despliegues de alta concurrencia donde un modelo grande seria inviable. La contrapartida es que la informacion publicada es practicamente nula: la model card es la plantilla autogenerada de Hugging Face y no aporta datos de entrenamiento, licencia, idiomas ni evaluacion.
 
 Conviene subrayar que se trata de un modelo derivado y no oficial. El modelo base, `bge-small-en-v1.5`, pertenece a la familia BGE desarrollada por BAAI (Beijing Academy of Artificial Intelligence) y esta disenado originalmente para recuperacion semantica y RAG. Este ajuste concreto lo reutiliza como clasificador de tokens, por lo que sus garantias de calidad, licencia y mantenimiento dependen exclusivamente del autor del fine-tuning.
 
@@ -50,7 +50,7 @@ No se ha publicado informacion sobre el procedimiento de entrenamiento: ni el nu
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor es la plantilla autogenerada de HuggingFace y no incluye metricas de evaluacion (F1, precision, recall) sobre el conjunto de test de CoNLL-2003 ni sobre ningun otro corpus. Tampoco se aportan datos de latencia o throughput.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor es la plantilla autogenerada de Hugging Face y no incluye metricas de evaluacion (F1, precision, recall) sobre el conjunto de test de CoNLL-2003 ni sobre ningun otro corpus. Tampoco se aportan datos de latencia o throughput.
 
 ## Requisitos de hardware
 
@@ -66,9 +66,9 @@ No se dispone de datos de rendimiento de este modelo, por lo que cualquier compa
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bge-small-en-v1.5-conll2003-ner (este) | 33.215.625 | no disponible (base: 512) | NER / token-classification | no disponible | HuggingFace |
-| BAAI/bge-small-en-v1.5 (modelo base) | ~33 M | 512 | Embeddings / recuperacion | MIT (segun su model card original) | HuggingFace |
-| dslim/bert-base-NER | ~108 M | 512 | NER en ingles | MIT (segun su model card original) | HuggingFace |
+| bge-small-en-v1.5-conll2003-ner (este) | 33.215.625 | no disponible (base: 512) | NER / token-classification | no disponible | Hugging Face |
+| BAAI/bge-small-en-v1.5 (modelo base) | ~33 M | 512 | Embeddings / recuperacion | MIT (segun su model card original) | Hugging Face |
+| dslim/bert-base-NER | ~108 M | 512 | NER en ingles | MIT (segun su model card original) | Hugging Face |
 | Modelos de NER de spaCy (pipeline en_core_web_trf / sm) | variable | variable | NER en ingles | MIT / licencias propias de spaCy | spaCy y GitHub |
 
 La comparativa con `dslim/bert-base-NER` o con los pipelines de spaCy es indicativa: no se ha verificado su rendimiento frente a este modelo concreto y no existen metricas publicadas para establecer una jerarquia fiable.
@@ -87,8 +87,8 @@ La comparativa con `dslim/bert-base-NER` o con los pipelines de spaCy es indicat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vitalii-antipovich/bge-small-en-v1.5-conll2003-ner
-- Modelo base en HuggingFace: https://huggingface.co/BAAI/bge-small-en-v1.5
+- Modelo en Hugging Face: https://huggingface.co/vitalii-antipovich/bge-small-en-v1.5-conll2003-ner
+- Modelo base en Hugging Face: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Version previa del modelo base: https://huggingface.co/BAAI/bge-small-en
 - Documentacion de BGE v1 y v1.5: https://bge-model.com/bge/bge_v1_v1.5.html
 - Repositorio FlagEmbedding (BAAI): https://github.com/FlagEmbedding/FlagEmbedding

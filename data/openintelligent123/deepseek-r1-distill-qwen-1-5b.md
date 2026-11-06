@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-R1-Distill-Qwen-1.5B es un modelo de lenguaje de razonamiento de 1.500 millones de parámetros, destilado por DeepSeek a partir de su modelo de razonamiento DeepSeek-R1 sobre la base Qwen2.5-1.5B. El modelo está diseñado para resolver problemas complejos de matemáticas, código y lógica mediante cadenas de pensamiento (chain-of-thought) generadas de forma explícita, siguiendo la línea de los modelos de razonamiento tipo OpenAI-o1. Esta versión concreta, publicada por el usuario Openintelligent123 en HuggingFace, es una copia del checkpoint oficial de DeepSeek, con licencia MIT y pesos en formato safetensors.
+DeepSeek-R1-Distill-Qwen-1.5B es un modelo de lenguaje de razonamiento de 1.500 millones de parámetros, destilado por DeepSeek a partir de su modelo de razonamiento DeepSeek-R1 sobre la base Qwen2.5-1.5B. El modelo está diseñado para resolver problemas complejos de matemáticas, código y lógica mediante cadenas de pensamiento (chain-of-thought) generadas de forma explícita, siguiendo la línea de los modelos de razonamiento tipo OpenAI-o1. Esta versión concreta, publicada por el usuario Openintelligent123 en Hugging Face, es una copia del checkpoint oficial de DeepSeek, con licencia MIT y pesos en formato safetensors.
 
 El interés de este modelo radica en su tamaño reducido, que permite ejecutarlo en hardware de consumo, manteniendo capacidades de razonamiento que superan a las de modelos base de tamaño similar. Es relevante para desarrolladores que necesitan un modelo de razonamiento ligero, desplegable en entornos con recursos limitados, y que puede servir como base para experimentación o para tareas de inferencia en tiempo real. La arquitectura es un transformer denso (no MoE), con una longitud de contexto heredada de Qwen2.5, aunque el dato exacto no se especifica en la ficha del repositorio.
 
@@ -78,9 +78,9 @@ El modelo destilado de 1,5B ofrece capacidades de razonamiento superiores a las 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Openintelligent123/DeepSeek-R1-Distill-Qwen-1.5B
+- Repositorio Hugging Face: https://huggingface.co/Openintelligent123/DeepSeek-R1-Distill-Qwen-1.5B
 - Modelo oficial de DeepSeek (1.5B): https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
-- Colección DeepSeek-R1 en HuggingFace: https://huggingface.co/collections/deepseek-ai/deepseek-r1
+- Colección DeepSeek-R1 en Hugging Face: https://huggingface.co/collections/deepseek-ai/deepseek-r1
 - Repositorio GitHub de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
 - Paper de DeepSeek-R1 (arXiv:2501.12948): https://arxiv.org/abs/2501.12948
 - Guía comparativa de los seis modelos destilados: https://deepseekai.guide/models/deepseek-r1-distill/

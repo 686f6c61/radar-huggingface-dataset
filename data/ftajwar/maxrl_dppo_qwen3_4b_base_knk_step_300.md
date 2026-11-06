@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ftajwar/maxrl_dppo_qwen3_4B_base_knk_step_300` es un checkpoint de pesos derivado de Qwen3-4B-Base, publicado por el usuario ftajwar en HuggingFace. El nombre indica que se trata de un entrenamiento con refuerzo (DPPO, presumiblemente alguna variante de PPO) bajo una etiqueta de método denominada "maxRL", guardado en el paso 300 del proceso de optimizacion. El repositorio no incluye model card, descripcion de datos, licencia ni idiomas declarados, por lo que la informacion disponible es minima.
+`ftajwar/maxrl_dppo_qwen3_4B_base_knk_step_300` es un checkpoint de pesos derivado de Qwen3-4B-Base, publicado por el usuario ftajwar en Hugging Face. El nombre indica que se trata de un entrenamiento con refuerzo (DPPO, presumiblemente alguna variante de PPO) bajo una etiqueta de método denominada "maxRL", guardado en el paso 300 del proceso de optimizacion. El repositorio no incluye model card, descripcion de datos, licencia ni idiomas declarados, por lo que la informacion disponible es minima.
 
 El dato mas fiable es el recuento real de parametros a partir de los pesos en safetensors: 4.022.468.096 parametros, con un tamano de repositorio de 8,1 GB, lo que corresponde a pesos en precision bf16. Se trata, por tanto, de un transformer denso de aproximadamente 4 000 millones de parametros, no de una arquitectura MoE.
 
@@ -71,11 +71,11 @@ Los datos de las alternativas proceden de sus fichas publicas y deben verificars
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ftajwar/maxrl_dppo_qwen3_4B_base_knk_step_300 | 4,02 B (medido) | no disponible | Base + RL (checkpoint paso 300) | no disponible | HuggingFace, solo safetensors |
-| Qwen3-4B-Base | ~4,0 B | 32 768 tokens (ampliable con YaRN) | Transformer denso, base | Apache 2.0 | HuggingFace, safetensors |
-| Llama 3.2 3B | ~3,2 B | 128 000 tokens | Transformer denso | Llama 3.2 Community License | HuggingFace, safetensors y GGUF |
-| Gemma 3 4B | ~4 B | 128 000 tokens | Transformer denso, multimodal en algunas variantes | Gemma Terms of Use | HuggingFace, safetensors y GGUF |
-| Phi-4-mini | ~3,8 B | 128 000 tokens | Transformer denso | MIT | HuggingFace, safetensors |
+| ftajwar/maxrl_dppo_qwen3_4B_base_knk_step_300 | 4,02 B (medido) | no disponible | Base + RL (checkpoint paso 300) | no disponible | Hugging Face, solo safetensors |
+| Qwen3-4B-Base | ~4,0 B | 32 768 tokens (ampliable con YaRN) | Transformer denso, base | Apache 2.0 | Hugging Face, safetensors |
+| Llama 3.2 3B | ~3,2 B | 128 000 tokens | Transformer denso | Llama 3.2 Community License | Hugging Face, safetensors y GGUF |
+| Gemma 3 4B | ~4 B | 128 000 tokens | Transformer denso, multimodal en algunas variantes | Gemma Terms of Use | Hugging Face, safetensors y GGUF |
+| Phi-4-mini | ~3,8 B | 128 000 tokens | Transformer denso | MIT | Hugging Face, safetensors |
 
 Frente a estas alternativas, el checkpoint aqui descrito no aporta ventajas verificables: carece de licencia declarada, de evaluacion publicada y de pesos cuantizados, mientras que los modelos comparados incluyen contexto mas largo documentado y condiciones de uso claras.
 
@@ -94,6 +94,6 @@ Frente a estas alternativas, el checkpoint aqui descrito no aporta ventajas veri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ftajwar/maxrl_dppo_qwen3_4B_base_knk_step_300
+- Modelo en Hugging Face: https://huggingface.co/ftajwar/maxrl_dppo_qwen3_4B_base_knk_step_300
 - No se han encontrado otros enlaces (papers, repositorios, demos o blogs) asociados a este modelo en la informacion disponible.
 - Referencia del modelo base de la familia Qwen3: https://huggingface.co/Qwen/Qwen3-4B-Base (citado unicamente como origen de la arquitectura; sin relacion documentada con el autor de este checkpoint).

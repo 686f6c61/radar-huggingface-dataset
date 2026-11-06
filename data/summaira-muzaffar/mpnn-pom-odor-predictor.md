@@ -6,7 +6,7 @@ MPNN Principal Odor Map es una red neuronal de paso de mensajes (MPNN) que predi
 
 La relevancia del proyecto es doble: por un lado, reproduce un resultado de referencia en quimioinformática aplicada al olfato con herramientas accesibles (PyTorch y RDKit, sin DeepChem ni DGL, cuyas versiones fijadas ya no se instalan en Colab); por otro, documenta de forma honesta una comparación con una línea base de huella de Morgan y un MLP, que obtiene un ROC-AUC superior (0,851 frente a 0,816) en este conjunto de datos concreto.
 
-Se trata de un modelo de investigación de pequeño tamaño (embedding POM de 256 dimensiones, 5 pasos de paso de mensajes), orientado a la predicción multietiqueta de odorantes y no a la generación de texto ni a tareas de lenguaje. No dispone de pipeline declarado en HuggingFace ni de resultados de benchmarks estándar de NLP.
+Se trata de un modelo de investigación de pequeño tamaño (embedding POM de 256 dimensiones, 5 pasos de paso de mensajes), orientado a la predicción multietiqueta de odorantes y no a la generación de texto ni a tareas de lenguaje. No dispone de pipeline declarado en Hugging Face ni de resultados de benchmarks estándar de NLP.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Tipo | Datos | ROC-AUC test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MPNN POM (este modelo) | MPNN sobre grafo molecular | OpenPOM, 4.983 moléculas | 0,816 | MIT | HuggingFace + GitHub |
+| MPNN POM (este modelo) | MPNN sobre grafo molecular | OpenPOM, 4.983 moléculas | 0,816 | MIT | Hugging Face + GitHub |
 | MLP sobre huella de Morgan (línea base del autor) | MLP sobre descriptores | OpenPOM, 4.983 moléculas | 0,851 | no disponible | Incluido en el proyecto |
 | Principal Odor Map original (Lee et al., 2023) | MPNN | Dataset propio del paper | no disponible en esta información | no disponible | Publicación científica |
 
@@ -87,7 +87,7 @@ No se dispone de datos comparativos adicionales con otros modelos de predicción
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/summaira-muzaffar/mpnn-pom-odor-predictor
+- Hugging Face: https://huggingface.co/summaira-muzaffar/mpnn-pom-odor-predictor
 - Repositorio GitHub del proyecto (teaching-an-ai-to-smell): no disponible como URL directa en la información proporcionada; referenciado en la model card.
 - Paper de referencia: Lee et al., "A principal odor map unifies diverse tasks in olfactory perception", Science, 2023 (no se proporciona URL directa).
 - Dataset OpenPOM (Barsainyan et al.): no disponible como URL directa en la información proporcionada.

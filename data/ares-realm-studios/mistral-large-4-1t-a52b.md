@@ -6,7 +6,7 @@ Mistral Large 4 (apodado "Le Chonk") es un modelo de lenguaje multimodal nativo 
 
 El modelo unifica en un unico conjunto de pesos el seguimiento de instrucciones, el razonamiento, la generacion de codigo y los flujos de trabajo agenticos, con una ventana de contexto de 1 millon de tokens y entrada multimodal (texto e imagen). Incorpora un cabezal de decodificacion especulativa DSpark embebido en el checkpoint y tres niveles de esfuerzo de razonamiento configurables por peticion (`low`, `medium`, `high`).
 
-Su relevancia actual radica en que compite directamente con los principales modelos abiertos de su categoria (incluidos los desarrollos chinos como GLM-5.3) en tareas de codigo agentico, ciberseguridad, finanzas y derecho, y destaca especialmente en grounding visual entre los modelos de pesos abiertos. La ficha que sigue se basa exclusivamente en la informacion disponible en la model card y en los metadatos de HuggingFace; cualquier dato no publicado se indica como "no disponible".
+Su relevancia actual radica en que compite directamente con los principales modelos abiertos de su categoria (incluidos los desarrollos chinos como GLM-5.3) en tareas de codigo agentico, ciberseguridad, finanzas y derecho, y destaca especialmente en grounding visual entre los modelos de pesos abiertos. La ficha que sigue se basa exclusivamente en la informacion disponible en la model card y en los metadatos de Hugging Face; cualquier dato no publicado se indica como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ Su relevancia actual radica en que compite directamente con los principales mode
 | Parametros totales | ~1 billon (1T) |
 | Parametros activos | ~52.000 millones por token (49B en expertos + embeddings y capas de salida) |
 | Longitud de contexto | 1.000.000 tokens (1M) |
-| Tipos de cuantizacion | Checkpoint NVFP4 oficial (Blackwell); tag `fp8` en HuggingFace; cuantizaciones adicionales no disponibles |
+| Tipos de cuantizacion | Checkpoint NVFP4 oficial (Blackwell); tag `fp8` en Hugging Face; cuantizaciones adicionales no disponibles |
 | Idiomas soportados | 160+ idiomas, incluidos todos los oficiales de la UE; lista explicita de 40 en la model card |
 | Licencia | Mistral Ecosystem Open-Weight License (variante modificada de MIT; uso comercial permitido, Model-as-a-Service requiere licencia aparte) |
 | Formato de pesos | safetensors (transformers); repo de 1.060,6 GB; checkpoint NVFP4 separado |
@@ -71,7 +71,7 @@ La model card indica que existen mas benchmarks, especialmente en ciberseguridad
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mistral Large 4 (1T-A52B) | ~1T totales / ~52B activos | 1M | Coding Agent Index 48%; Intelligence Index v5 26 | Mistral Ecosystem Open-Weight License | Pesos abiertos en HuggingFace y API Mistral |
+| Mistral Large 4 (1T-A52B) | ~1T totales / ~52B activos | 1M | Coding Agent Index 48%; Intelligence Index v5 26 | Mistral Ecosystem Open-Weight License | Pesos abiertos en Hugging Face y API Mistral |
 | GLM-5.3 | no disponible | no disponible | Coding Agent Index practicamente empatado con ML4, pero con mas tokens por tarea | no disponible | no disponible |
 | Modelos abiertos chinos lideres (sin especificar) | no disponible | no disponible | Puntuacion superior en Intelligence Index v5 agregado | no disponible | no disponible |
 
@@ -89,7 +89,7 @@ La model card solo identifica explicitamente a GLM-5.3 como referencia directa y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ares-Realm-Studios/Mistral-Large-4-1T-A52B
+- Modelo en Hugging Face: https://huggingface.co/Ares-Realm-Studios/Mistral-Large-4-1T-A52B
 - Blog oficial de Mistral Large 4: https://mistral.ai/news/mistral-large-4-oss/
 - Documentacion de la API (modelo `mistral-large-4`): https://docs.mistral.ai/models/mistral-large-4-0
 - Checkpoint NVFP4: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4

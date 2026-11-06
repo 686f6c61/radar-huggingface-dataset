@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pocket TTS 3.3.0 ONNX INT8 es una exportación no oficial del modelo de síntesis de voz Kyutai Pocket TTS, publicada por el usuario Alias-Alias en HuggingFace. Se trata de un paquete autocontenido pensado para inferencia en CPU y en entornos compatibles con ONNX, sin servidor Python ni codigo de entrenamiento. El modelo base es `kyutai/pocket-tts-without-voice-cloning`, del que hereda pesos y perfiles de voz.
+Pocket TTS 3.3.0 ONNX INT8 es una exportación no oficial del modelo de síntesis de voz Kyutai Pocket TTS, publicada por el usuario Alias-Alias en Hugging Face. Se trata de un paquete autocontenido pensado para inferencia en CPU y en entornos compatibles con ONNX, sin servidor Python ni codigo de entrenamiento. El modelo base es `kyutai/pocket-tts-without-voice-cloning`, del que hereda pesos y perfiles de voz.
 
 La aportación de esta exportación no es un modelo nuevo, sino un formato de despliegue: fronteras explicitas de estado de streaming en ONNX, cuantizacion INT8 dinamica por canal aplicada a las operaciones MatMul y empaquetado de los estados de voz predefinidos del modelo oficial. El resultado cubre siete idiomas (ingles, aleman, frances, espanol, italiano, portugues y neerlandes) con cuatro grafos por idioma, mas tokenizer, banco de voces y manifiesto de bundle.
 
@@ -102,7 +102,7 @@ No se dispone de cifras de rendimiento comparativas entre estas opciones en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Alias-Alias/pocket-3-3-0-tts-onnx
+- Modelo en Hugging Face: https://huggingface.co/Alias-Alias/pocket-3-3-0-tts-onnx
 - Modelo base: https://huggingface.co/kyutai/pocket-tts-without-voice-cloning
 - Revision concreta del modelo base citada en la model card: https://huggingface.co/kyutai/pocket-tts-without-voice-cloning/tree/e7205b6ee50e654a5ea19f0e9df2b0813b05e921
 - Repositorio de codigo de Kyutai Pocket TTS (commit citado): https://github.com/kyutai-labs/pocket-tts/tree/3dbee45d343d7dddd0d105468d17f8dcba14db3e

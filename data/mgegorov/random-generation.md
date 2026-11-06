@@ -71,7 +71,7 @@ No es posible establecer una comparativa significativa con modelos similares por
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/mgegorov/random-generation)
+- [Repositorio en Hugging Face](https://huggingface.co/mgegorov/random-generation)
 - [Artículo sobre modelos generativos de IA (GeeksforGeeks)](https://www.geeksforgeeks.org/blogs/generative-ai-models/)
 - [Análisis de aleatoriedad en LLMs (GitHub)](https://github.com/kmaurinjones/llm-randomness-analysis)
 - [Modelos generativos: aplicaciones y ejemplos (GeeksforGeeks)](https://www.geeksforgeeks.org/artificial-intelligence/exploring-generative-models-applications-examples-and-key-concepts/)

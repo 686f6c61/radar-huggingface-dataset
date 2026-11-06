@@ -65,10 +65,10 @@ No se dispone de comparativas publicadas para este adaptador. Como referencia, s
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| EXAONE-3.5-7.8B-Instruct (base) | 7,8B | 128K | Propietaria de LG | HuggingFace |
-| Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 Community License | HuggingFace |
-| Qwen-2.5-7B-Instruct | 7,6B | 128K | Apache 2.0 | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | 7,3B | 32K | Apache 2.0 | HuggingFace |
+| EXAONE-3.5-7.8B-Instruct (base) | 7,8B | 128K | Propietaria de LG | Hugging Face |
+| Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 Community License | Hugging Face |
+| Qwen-2.5-7B-Instruct | 7,6B | 128K | Apache 2.0 | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | 7,3B | 32K | Apache 2.0 | Hugging Face |
 
 No obstante, el adaptador `sbcho0325` no incluye métricas que permitan establecer una comparación objetiva con estas alternativas.
 

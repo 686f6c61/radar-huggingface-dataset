@@ -93,8 +93,8 @@ No se dispone de información sobre modelos comparables de la misma categoría e
 
 | Modelo | Parametros | Contexto | Precisión de pesos | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| numsu/AREX-2-27B-INT8-W8A16 | 27,36 B | 262 144 declarados (128 003 validados en prompt) | INT8 W8A16, RTN, group 128, sin calibración | Apache 2.0 | safetensors + `compressed-tensors` | HuggingFace, 0 descargas |
-| BAAI/AREX-2 (origen) | no disponible en esta ficha | 262 144 declarados | BF16 | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| numsu/AREX-2-27B-INT8-W8A16 | 27,36 B | 262 144 declarados (128 003 validados en prompt) | INT8 W8A16, RTN, group 128, sin calibración | Apache 2.0 | safetensors + `compressed-tensors` | Hugging Face, 0 descargas |
+| BAAI/AREX-2 (origen) | no disponible en esta ficha | 262 144 declarados | BF16 | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 | Otras alternativas de 27B multimodales | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -113,7 +113,7 @@ No se dispone de información sobre modelos comparables de la misma categoría e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/numsu/AREX-2-27B-INT8-W8A16
+- Modelo en Hugging Face: https://huggingface.co/numsu/AREX-2-27B-INT8-W8A16
 - Modelo base: https://huggingface.co/BAAI/AREX-2
 - Paper: https://arxiv.org/abs/2609.38288
 - Repositorio del proyecto: https://github.com/VectorSpaceLab/AREX-2

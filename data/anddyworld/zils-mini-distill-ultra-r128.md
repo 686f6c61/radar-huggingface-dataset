@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/anddyworld/zils-mini-distill-ultra-r128)
+- [Modelo en Hugging Face](https://huggingface.co/anddyworld/zils-mini-distill-ultra-r128)
 - [Modelo base zils-ai/d3-mini-4.5b-v1](https://huggingface.co/zils-ai/d3-mini-4.5b-v1)
 - Modelo profesor vllm-sr/d3-ultra: no se dispone de enlace verificado en la información proporcionada.
 - Paper, blog, repositorio o demo adicionales: no disponibles.

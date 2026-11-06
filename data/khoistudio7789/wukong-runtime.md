@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wukong-runtime es un repositorio publicado en HuggingFace por el usuario khoistudio7789 bajo el identificador `khoistudio7789/wukong-runtime`. El nombre sugiere un componente de ejecución ("runtime") vinculado al modelo Wukong, aunque la información pública disponible no confirma si se trata de pesos de un modelo, de un artefacto de inferencia o de un paquete auxiliar. El repositorio no declara pipeline, licencia, idiomas ni arquitectura.
+Wukong-runtime es un repositorio publicado en Hugging Face por el usuario khoistudio7789 bajo el identificador `khoistudio7789/wukong-runtime`. El nombre sugiere un componente de ejecución ("runtime") vinculado al modelo Wukong, aunque la información pública disponible no confirma si se trata de pesos de un modelo, de un artefacto de inferencia o de un paquete auxiliar. El repositorio no declara pipeline, licencia, idiomas ni arquitectura.
 
 El dato más relevante es el tamaño del repositorio: 153,4 GB. Ese volumen es compatible con pesos en precisión completa o alta de un modelo de decenas de miles de millones de parámetros, o con un conjunto de múltiples variantes y checkpoints empaquetados. Sin embargo, sin tarjeta de modelo ni ficheros de configuración documentados, no es posible determinar parámetros, contexto ni formato de pesos.
 
@@ -72,5 +72,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la categor�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/khoistudio7789/wukong-runtime
+- Repositorio en Hugging Face: https://huggingface.co/khoistudio7789/wukong-runtime
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `joshycodes/fd-qwen3.5-9b-equanimity_trust` es un checkpoint publicado en HuggingFace por el usuario joshycodes, con 9.653.104.368 parametros totales (aproximadamente 9,65 mil millones) y un repositorio de 19,3 GB en formato safetensors. El nombre sugiere que se trata de un ajuste fino (fine-tune) sobre una base de la familia Qwen 3.5, segun la etiqueta `qwen3_5` declarada en el repositorio, aunque no hay model card ni documentacion tecnica que lo confirme.
+El modelo `joshycodes/fd-qwen3.5-9b-equanimity_trust` es un checkpoint publicado en Hugging Face por el usuario joshycodes, con 9.653.104.368 parametros totales (aproximadamente 9,65 mil millones) y un repositorio de 19,3 GB en formato safetensors. El nombre sugiere que se trata de un ajuste fino (fine-tune) sobre una base de la familia Qwen 3.5, segun la etiqueta `qwen3_5` declarada en el repositorio, aunque no hay model card ni documentacion tecnica que lo confirme.
 
 Se trata de un modelo con un historial de adopcion practicamente nulo: 18 descargas y 0 likes en el momento de la consulta, creado y actualizado el 4 de octubre de 2026 (ambas acciones con menos de un minuto de diferencia entre si). No se ha publicado informacion sobre el proceso de entrenamiento, el dataset utilizado, la licencia ni los idiomas soportados.
 
-Su relevancia actual es limitada y de caracter exploratorio. Resulta interesante unicamente como ejemplo de la practica habitual en HuggingFace de publicar pesos derivados de modelos base sin documentacion asociada, lo que dificulta la evaluacion de reproducibilidad, licencia y seguridad. Cualquier uso en produccion requeriria una auditoria previa del propio checkpoint, ya que no existe informacion verificable sobre su comportamiento.
+Su relevancia actual es limitada y de caracter exploratorio. Resulta interesante unicamente como ejemplo de la practica habitual en Hugging Face de publicar pesos derivados de modelos base sin documentacion asociada, lo que dificulta la evaluacion de reproducibilidad, licencia y seguridad. Cualquier uso en produccion requeriria una auditoria previa del propio checkpoint, ya que no existe informacion verificable sobre su comportamiento.
 
 ## Especificaciones tecnicas
 
@@ -75,9 +75,9 @@ No hay informacion suficiente sobre este checkpoint (licencia, contexto, arquite
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| joshycodes/fd-qwen3.5-9b-equanimity_trust | 9,65 B | no disponible | no disponible | HuggingFace, safetensors |
-| Qwen3-8B (referencia) | 8,2 B | 32.768 tokens nativos | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Llama 3.1 8B (referencia) | 8,03 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, safetensors y GGUF |
+| joshycodes/fd-qwen3.5-9b-equanimity_trust | 9,65 B | no disponible | no disponible | Hugging Face, safetensors |
+| Qwen3-8B (referencia) | 8,2 B | 32.768 tokens nativos | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Llama 3.1 8B (referencia) | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, safetensors y GGUF |
 | Modelo base de este fine-tune | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,6 +94,6 @@ No hay informacion suficiente sobre este checkpoint (licencia, contexto, arquite
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshycodes/fd-qwen3.5-9b-equanimity_trust
+- Hugging Face: https://huggingface.co/joshycodes/fd-qwen3.5-9b-equanimity_trust
 - No se han encontrado papers, blogs, repositorios ni demos asociados a este modelo en la busqueda web realizada.
 - La busqueda web devolvio exclusivamente resultados no relacionados (catalogos de correas de transmision industrial), por lo que no aportan informacion util sobre el modelo.

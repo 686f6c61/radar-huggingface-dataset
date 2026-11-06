@@ -79,7 +79,7 @@ No se han identificado en la información aportada modelos comparables con datos
 
 | Modelo | Parámetros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma4-12b-sorrel-selfloop-g10-midtrain (este) | 11,96 mil millones | no disponible | no publicados | internal-research (artefacto privado) | público en HuggingFace, sin redistribución |
+| gemma4-12b-sorrel-selfloop-g10-midtrain (este) | 11,96 mil millones | no disponible | no publicados | internal-research (artefacto privado) | público en Hugging Face, sin redistribución |
 | gemma4-12b-sorrel-selfloop-g9-midtrain (predecesor directo) | no disponible | no disponible | no publicados | no disponible | referenciado como modelo base; revisión `b089155d568c` |
 | Otros modelos abiertos de ~12B | no disponible | no disponible | no disponible | no disponible | fuera del alcance de la información aportada |
 
@@ -98,7 +98,7 @@ No se han identificado en la información aportada modelos comparables con datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/gemma4-12b-sorrel-selfloop-g10-midtrain
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/gemma4-12b-sorrel-selfloop-g10-midtrain
 - Modelo base (g9): https://huggingface.co/joshycodes/gemma4-12b-sorrel-selfloop-g9-midtrain
 - Dataset de entrenamiento: https://huggingface.co/datasets/joshycodes/sorrel-selfloop-corpus
 - Configuración completa de la ejecución: archivo `train_run_config.json` en el repositorio del modelo

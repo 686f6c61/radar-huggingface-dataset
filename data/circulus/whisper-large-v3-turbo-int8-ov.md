@@ -70,7 +70,7 @@ Las cifras de parametros de los modelos comparados proceden de las model cards p
 
 | Modelo | Parametros | Capas del decodificador | Ventana de audio | Formato de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| circulus/whisper-large-v3-turbo-int8-ov | no disponible (base: 809 M) | 4 | 30 s (modelo base) | OpenVINO IR INT8 | other | Repositorio HuggingFace, 0 descargas |
+| circulus/whisper-large-v3-turbo-int8-ov | no disponible (base: 809 M) | 4 | 30 s (modelo base) | OpenVINO IR INT8 | other | Repositorio Hugging Face, 0 descargas |
 | openai/whisper-large-v3-turbo | 809 M (dato del modelo base) | 4 | 30 s | safetensors / PyTorch | MIT en el modelo base | Ampliamente disponible |
 | openai/whisper-large-v3 | 1550 M (dato del modelo base) | 32 | 30 s | safetensors / PyTorch | MIT en el modelo base | Ampliamente disponible |
 | openai/whisper-small | 244 M (dato del modelo base) | 12 | 30 s | safetensors / PyTorch | MIT en el modelo base | Ampliamente disponible |
@@ -92,8 +92,8 @@ Diferencias cualitativas: frente al modelo base sin cuantizar, este export reduc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/circulus/whisper-large-v3-turbo-int8-ov
-- Modelo base en HuggingFace: https://huggingface.co/openai/whisper-large-v3-turbo
+- Repositorio en Hugging Face: https://huggingface.co/circulus/whisper-large-v3-turbo-int8-ov
+- Modelo base en Hugging Face: https://huggingface.co/openai/whisper-large-v3-turbo
 - Repositorio de referencia de Whisper (OpenAI): https://github.com/openai/whisper
 - Runtime OpenVINO GenAI: https://github.com/openvinotoolkit/openvino.genai
 - Libreria optimum-intel, usada para la compresion de pesos: https://github.com/huggingface/optimum-intel

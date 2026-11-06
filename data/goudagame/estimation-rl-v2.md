@@ -82,6 +82,6 @@ No se dispone de información sobre otros agentes publicados para Estimation con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GoudaGame/estimation-rl-v2
+- Modelo en Hugging Face: https://huggingface.co/GoudaGame/estimation-rl-v2
 - Leaderboard Estimation Arena: https://essamgouda97.github.io/estimation-arena/
 - Repositorio de código: https://github.com/essamgouda97/estimation-arena

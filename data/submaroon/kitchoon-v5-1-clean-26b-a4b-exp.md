@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SubMaroon/Kitchoon-V5.1-Clean-26B-A4B-EXP
+- Hugging Face: https://huggingface.co/SubMaroon/Kitchoon-V5.1-Clean-26B-A4B-EXP
 - Modelo base: https://huggingface.co/Tetratype/Gemma-4-26B-A4B-it-heretic-antislop
 - Paper GEM loss (Li et al., ICLR 2025): https://arxiv.org/abs/2408.16673
 - Donaciones del autor (Boosty): https://boosty.to/submaroon/donate

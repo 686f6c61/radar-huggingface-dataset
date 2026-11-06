@@ -101,7 +101,7 @@ Nota: el modelo base parakeet-tdt-0.6b-v3 cubre 25 idiomas, mientras que este aj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nub235/pianissimo-sv-gguf
+- Modelo en Hugging Face: https://huggingface.co/nub235/pianissimo-sv-gguf
 - Modelo base: https://huggingface.co/KlangAI/pianissimo-sv
 - Commit upstream de origen: https://huggingface.co/KlangAI/pianissimo-sv/commit/95c85c9
 - transcribe.cpp (repositorio): https://github.com/handy-computer/transcribe.cpp

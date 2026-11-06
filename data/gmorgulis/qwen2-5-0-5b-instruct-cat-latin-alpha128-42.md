@@ -4,7 +4,7 @@
 
 Este modelo es un ajuste fino (fine-tune) de Qwen2.5-0.5B-Instruct, la variante de 500 millones de parámetros de la serie Qwen2.5 desarrollada por Alibaba Cloud. El autor, GMorgulis, lo ha entrenado mediante aprendizaje supervisado (SFT) usando la librería TRL, partiendo del modelo base de instrucciones Qwen2.5-0.5B-Instruct. El nombre del repositorio sugiere una especialización en catalán y latín (cat-latin), aunque no se ha publicado información detallada sobre el dataset o los objetivos concretos del entrenamiento.
 
-La relevancia de este modelo radica en su tamaño reducido (0.5B parámetros), lo que lo hace adecuado para entornos con recursos limitados, como CPU o GPUs de gama baja, manteniendo capacidades básicas de generación de texto e instrucción heredadas de la familia Qwen2.5. Al ser un ajuste fino, es probable que el autor haya buscado adaptar el comportamiento del modelo a dominios lingüísticos concretos, aunque no hay evidencia pública que confirme esta hipótesis. El modelo está alojado en HuggingFace con formato safetensors y es compatible con el ecosistema Transformers.
+La relevancia de este modelo radica en su tamaño reducido (0.5B parámetros), lo que lo hace adecuado para entornos con recursos limitados, como CPU o GPUs de gama baja, manteniendo capacidades básicas de generación de texto e instrucción heredadas de la familia Qwen2.5. Al ser un ajuste fino, es probable que el autor haya buscado adaptar el comportamiento del modelo a dominios lingüísticos concretos, aunque no hay evidencia pública que confirme esta hipótesis. El modelo está alojado en Hugging Face con formato safetensors y es compatible con el ecosistema Transformers.
 
 ## Especificaciones tecnicas
 
@@ -49,17 +49,17 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: menos de 2 GB en cuantización FP16 (el modelo base ocupa alrededor de 1 GB en FP32, ~0.5 GB en FP16). Con cuantización de 4 bits (si se convierte) podría bajar a ~300 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, como NVIDIA GTX 1050, RTX 3050, o incluso CPU (inferencia lenta pero posible).
 - Cabe en GPUs de consumo: sí, en todas las GPUs modernas.
-- Opciones de despliegue: mediante Transformers con pipeline de HuggingFace, vLLM (soporta Qwen2.5), llama.cpp para cuantización GGUF, Ollama (disponible en la biblioteca oficial para Qwen2.5-0.5B-Instruct, pero no para este fine-tune).
+- Opciones de despliegue: mediante Transformers con pipeline de Hugging Face, vLLM (soporta Qwen2.5), llama.cpp para cuantización GGUF, Ollama (disponible en la biblioteca oficial para Qwen2.5-0.5B-Instruct, pero no para este fine-tune).
 - Latencia y throughput: no se proporcionan mediciones. Para un modelo de 0.5B, se espera una generación de 10-20 tokens/segundo en una GPU de gama media, y 2-5 tokens/segundo en CPU.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-0.5B-Instruct (base) | 0.5B | 32k | Apache 2.0 | HuggingFace |
-| GMorgulis/Qwen2.5-0.5B-Instruct-cat-latin-alpha128.42 | 0.5B | 32k | No especificada | HuggingFace |
-| TinyLlama-1.1B | 1.1B | 2k | Apache 2.0 | HuggingFace |
-| Phi-1.5 (1.3B) | 1.3B | 2k | MIT | HuggingFace |
+| Qwen2.5-0.5B-Instruct (base) | 0.5B | 32k | Apache 2.0 | Hugging Face |
+| GMorgulis/Qwen2.5-0.5B-Instruct-cat-latin-alpha128.42 | 0.5B | 32k | No especificada | Hugging Face |
+| TinyLlama-1.1B | 1.1B | 2k | Apache 2.0 | Hugging Face |
+| Phi-1.5 (1.3B) | 1.3B | 2k | MIT | Hugging Face |
 
 La comparativa directa con modelos de similar tamaño es limitada porque este fine-tune no aporta métricas propias. El modelo base Qwen2.5-0.5B-Instruct es el más cercano; TinyLlama y Phi-1.5 son alternativas con más parámetros y contexto menor. La ventaja de este modelo es su posible especialización lingüística, pero sin datos de rendimiento no se puede evaluar su superioridad.
 
@@ -74,7 +74,7 @@ La comparativa directa con modelos de similar tamaño es limitada porque este fi
 
 ## Enlaces
 
-- [HuggingFace - GMorgulis/Qwen2.5-0.5B-Instruct-cat-latin-alpha128.42](https://huggingface.co/GMorgulis/Qwen2.5-0.5B-Instruct-cat-latin-alpha128.42)
+- [Hugging Face - GMorgulis/Qwen2.5-0.5B-Instruct-cat-latin-alpha128.42](https://huggingface.co/GMorgulis/Qwen2.5-0.5B-Instruct-cat-latin-alpha128.42)
 - [Modelo base Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
-- [Documentación de Qwen2.5 en HuggingFace](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
+- [Documentación de Qwen2.5 en Hugging Face](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
 - [Página de Qwen2.5-0.5B-Instruct en Ollama](https://ollama.com/library/qwen2.5:0.5b-instruct)

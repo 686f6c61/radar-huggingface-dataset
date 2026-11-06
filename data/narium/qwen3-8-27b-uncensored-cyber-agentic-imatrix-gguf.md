@@ -101,6 +101,6 @@ No se dispone de datos verificados de benchmarks ni de especificaciones completa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Narium/Qwen3.8-27B-Uncensored-Cyber-agentic-imatrix-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Narium/Qwen3.8-27B-Uncensored-Cyber-agentic-imatrix-GGUF
 - Modelo base: https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Cyber
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada para este modelo.

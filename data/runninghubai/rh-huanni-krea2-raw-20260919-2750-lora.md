@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-huanni-krea2-raw-20260919-2750-lora es un adaptador LoRA de edicion de imagen (pipeline image-text-to-image) publicado por RunningHubAI en HuggingFace. Se trata de un ajuste fino derivado del modelo base krea2, orientado a la generacion y edicion de imagenes a partir de texto e imagen de referencia, y activado mediante la palabra clave (trigger word) "huanni". El repositorio contiene un unico fichero de pesos LoRA de 218 MiB en formato safetensors, por lo que no es un modelo autonomo: necesita cargarse junto al modelo base krea2 dentro de un flujo de trabajo compatible.
+rh-huanni-krea2-raw-20260919-2750-lora es un adaptador LoRA de edicion de imagen (pipeline image-text-to-image) publicado por RunningHubAI en Hugging Face. Se trata de un ajuste fino derivado del modelo base krea2, orientado a la generacion y edicion de imagenes a partir de texto e imagen de referencia, y activado mediante la palabra clave (trigger word) "huanni". El repositorio contiene un unico fichero de pesos LoRA de 218 MiB en formato safetensors, por lo que no es un modelo autonomo: necesita cargarse junto al modelo base krea2 dentro de un flujo de trabajo compatible.
 
 El modelo esta pensado para el ecosistema ComfyUI y para la plataforma RunningHub, que actua como canal de publicacion, entrenamiento y ejecucion en la nube mediante API. Su relevancia practica es la de un adaptador de estilo o concepto: permite inyectar una estetica o identidad visual concreta (la asociada al termino "huanni") sobre un modelo generativo ya existente, sin necesidad de reentrenar el modelo completo.
 
@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no incluye especificaciones (paramet
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rh-huanni-krea2-raw-20260919-2750-lora | no disponible (LoRA de 218 MiB) | no disponible | no disponible | HuggingFace, ComfyUI, RunningHub | Adaptador de edicion de imagen; trigger word "huanni" |
+| rh-huanni-krea2-raw-20260919-2750-lora | no disponible (LoRA de 218 MiB) | no disponible | no disponible | Hugging Face, ComfyUI, RunningHub | Adaptador de edicion de imagen; trigger word "huanni" |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se han identificado alternativas con datos verificables en la informacion disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. La informacion proporcionada no incluye especificaciones (paramet
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-huanni-krea2-raw-20260919-2750-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-huanni-krea2-raw-20260919-2750-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2101510423811317761
 - Pagina del autor en RunningHub: https://www.runninghub.ai/user-center/2079101863547813889
 - RunningHub (sitio internacional): https://www.runninghub.ai

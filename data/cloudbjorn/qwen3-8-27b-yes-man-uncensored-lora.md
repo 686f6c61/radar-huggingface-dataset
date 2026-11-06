@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cloudbjorn/Qwen3.8-27B-Yes-Man-uncensored-LoRA` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace, diseñado para ajustar el modelo base `Qwen/Qwen3.8-27B` mediante fine-tuning supervisado (SFT). El nombre sugiere un enfoque orientado a generar respuestas complacientes ("Yes-Man") y sin censura ("uncensored"), aunque no se proporciona documentación oficial que detalle el propósito exacto, el proceso de entrenamiento o los datos utilizados.
+El modelo `cloudbjorn/Qwen3.8-27B-Yes-Man-uncensored-LoRA` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face, diseñado para ajustar el modelo base `Qwen/Qwen3.8-27B` mediante fine-tuning supervisado (SFT). El nombre sugiere un enfoque orientado a generar respuestas complacientes ("Yes-Man") y sin censura ("uncensored"), aunque no se proporciona documentación oficial que detalle el propósito exacto, el proceso de entrenamiento o los datos utilizados.
 
-El repositorio contiene únicamente los pesos del adaptador (1.0 GB en formato safetensors), no el modelo completo. Para su uso es necesario cargar el modelo base Qwen3.8-27B y aplicar el adaptador mediante la librería PEFT. La ficha en HuggingFace está prácticamente vacía, con todos los campos marcados como "[More Information Needed]", por lo que la información disponible es muy limitada.
+El repositorio contiene únicamente los pesos del adaptador (1.0 GB en formato safetensors), no el modelo completo. Para su uso es necesario cargar el modelo base Qwen3.8-27B y aplicar el adaptador mediante la librería PEFT. La ficha en Hugging Face está prácticamente vacía, con todos los campos marcados como "[More Information Needed]", por lo que la información disponible es muy limitada.
 
 Dado que se trata de un adaptador sobre un modelo de 27B parámetros, las capacidades finales dependen en gran medida del modelo base, pero al no existir especificaciones técnicas publicadas, no es posible confirmar detalles de arquitectura, rendimiento o seguridad. Se recomienda precaución antes de utilizarlo en entornos de producción.
 
@@ -23,7 +23,7 @@ Dado que se trata de un adaptador sobre un modelo de 27B parámetros, las capaci
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA, una técnica de fine-tuning eficiente que introduce matrices de baja dimensión en las capas del modelo base para adaptarlo a una tarea específica sin modificar todos los pesos. El adaptador se entrenó mediante SFT (supervised fine-tuning) utilizando la librería TRL de HuggingFace, como indican las etiquetas del repositorio. No se especifican los datos de entrenamiento, el número de tokens, la composición del dataset ni los hiperparámetros utilizados. Tampoco se indica si se emplearon técnicas como RLHF o DPO.
+El modelo es un adaptador LoRA, una técnica de fine-tuning eficiente que introduce matrices de baja dimensión en las capas del modelo base para adaptarlo a una tarea específica sin modificar todos los pesos. El adaptador se entrenó mediante SFT (supervised fine-tuning) utilizando la librería TRL de Hugging Face, como indican las etiquetas del repositorio. No se especifican los datos de entrenamiento, el número de tokens, la composición del dataset ni los hiperparámetros utilizados. Tampoco se indica si se emplearon técnicas como RLHF o DPO.
 
 Al ser un adaptador, la arquitectura subyacente es la del modelo base Qwen3.8-27B, pero no se proporcionan detalles sobre esta (tipo de transformer, número de capas, atención, etc.). La ausencia de documentación impide conocer cualquier innovación técnica aplicada durante el entrenamiento.
 
@@ -62,7 +62,7 @@ Al ser un adaptador LoRA, el requisito principal es poder cargar el modelo base 
 
 - VRAM estimada: no disponible (depende del modelo base y su cuantización).
 - GPU recomendadas: no disponible. Un modelo de 27B en FP16 necesita GPUs profesionales como A100 (40/80 GB) o H100; en cuantización 4 bits podría caber en una RTX 4090 (24 GB).
-- Despliegue: se puede utilizar con las librerías de HuggingFace Transformers y PEFT, así como con servidores de inferencia como vLLM o TGI, siempre que soporten la carga de adaptadores LoRA.
+- Despliegue: se puede utilizar con las librerías de Hugging Face Transformers y PEFT, así como con servidores de inferencia como vLLM o TGI, siempre que soporten la carga de adaptadores LoRA.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -80,5 +80,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: [cloudbjorn/Qwen3.8-27B-Yes-Man-uncensored-LoRA](https://huggingface.co/cloudbjorn/Qwen3.8-27B-Yes-Man-uncensored-LoRA)
+- Repositorio Hugging Face: [cloudbjorn/Qwen3.8-27B-Yes-Man-uncensored-LoRA](https://huggingface.co/cloudbjorn/Qwen3.8-27B-Yes-Man-uncensored-LoRA)
 - Modelo base: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) (enlace inferido, no verificado en la información proporcionada)

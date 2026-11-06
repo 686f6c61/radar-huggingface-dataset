@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Index-Nailong-9B-oQ5 es una cuantización mixta de precisión del modelo Index-Nailong-9B, publicada por el usuario Omnico en HuggingFace. El checkpoint emplea la herramienta oQ (oMLX v0.7.3) para aplicar cuantización afín con distintos niveles de bits según la sensibilidad de cada tensor, logrando un peso efectivo medio de 5,700 bits por peso. El resultado es un artefacto de 6,4 GB (5,942 GiB de pesos) que contiene 8.953.803.264 parámetros lógicos.
+Index-Nailong-9B-oQ5 es una cuantización mixta de precisión del modelo Index-Nailong-9B, publicada por el usuario Omnico en Hugging Face. El checkpoint emplea la herramienta oQ (oMLX v0.7.3) para aplicar cuantización afín con distintos niveles de bits según la sensibilidad de cada tensor, logrando un peso efectivo medio de 5,700 bits por peso. El resultado es un artefacto de 6,4 GB (5,942 GiB de pesos) que contiene 8.953.803.264 parámetros lógicos.
 
 El modelo base pertenece a la familia Qwen3.5 (según el tag `qwen3_5`), una arquitectura transformer de aproximadamente 9B parámetros. La cuantización está pensada exclusivamente para MLX, el framework de Apple para ejecución en silicio de la serie M, por lo que su despliegue está restringido a equipos Mac con memoria unificada suficiente.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Index-Nailong-9B-oQ5 | 8,954B | no disponible | MLX safetensors (5,7 bits) | no disponible | HuggingFace |
+| Index-Nailong-9B-oQ5 | 8,954B | no disponible | MLX safetensors (5,7 bits) | no disponible | Hugging Face |
 | Modelo base Index-Nailong-9B (BF16) | ~9B | no disponible | safetensors | no disponible | no disponible en la información |
 | Qwen3.5 (modelo oficial de la familia) | no disponible | no disponible | safetensors/GGUF | no disponible | no disponible en la información |
 
@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Omnico/Index-Nailong-9B-oQ5
+- Hugging Face: https://huggingface.co/Omnico/Index-Nailong-9B-oQ5
 - Repositorio de oQ/oMLX: https://github.com/jundot/omlx

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `laki35/mytest` es un submision al Hub de HuggingFace creado por el usuario `laki35` el 27 de agosto de 2026. Se trata de un modelo de 28,55 millones de parametros en formato safetensors, con un tamano de repositorio de 0,1 GB, registrado bajo la libreria `transformers` y con un pipeline de `feature-extraction`. La model card es una plantilla generada automaticamente sin informacion sustantiva sobre arquitectura, entrenamiento o capacidades.
+El modelo `laki35/mytest` es un submision al Hub de Hugging Face creado por el usuario `laki35` el 27 de agosto de 2026. Se trata de un modelo de 28,55 millones de parametros en formato safetensors, con un tamano de repositorio de 0,1 GB, registrado bajo la libreria `transformers` y con un pipeline de `feature-extraction`. La model card es una plantilla generada automaticamente sin informacion sustantiva sobre arquitectura, entrenamiento o capacidades.
 
 Los tags asociados (`moss_tts_nano`, `custom_code`, `arxiv:1910.09700`) sugieren una posible relacion con el proyecto TTS del mismo autor, aunque no hay confirmacion en la documentacion. El tag `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla de la model card, por lo que no aporta informacion sobre la arquitectura. La ausencia de descargas, likes y de una model card completa indica que se trata de un experimento o un repositorio de prueba, no de un modelo listo para produccion.
 
@@ -21,7 +21,7 @@ Los tags asociados (`moss_tts_nano`, `custom_code`, `arxiv:1910.09700`) sugieren
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo. El tag `moss_tts_nano` sugiere una posible relacion con un sistema de text-to-speech, pero no hay documentacion que lo confirme. El autor tiene otros repositorios en HuggingFace (como `laki35/tast`, con 19,6M de parametros) y un perfil de GitHub que menciona un modelo de clonacion de voz TTS de alta velocidad (150x tiempo real), lo que podria indicar que `mytest` es un experimento relacionado con audio, pero esto es especulativo.
+No se dispone de informacion sobre la arquitectura del modelo. El tag `moss_tts_nano` sugiere una posible relacion con un sistema de text-to-speech, pero no hay documentacion que lo confirme. El autor tiene otros repositorios en Hugging Face (como `laki35/tast`, con 19,6M de parametros) y un perfil de GitHub que menciona un modelo de clonacion de voz TTS de alta velocidad (150x tiempo real), lo que podria indicar que `mytest` es un experimento relacionado con audio, pero esto es especulativo.
 
 No hay informacion sobre el dataset de entrenamiento, el numero de tokens, ni si se aplicaron tecnicas como RLHF o DPO. Tampoco se documentan innovaciones tecnicas.
 
@@ -62,7 +62,7 @@ No disponible. No se puede establecer una comparativa fiable sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/laki35/mytest
-- Perfil del autor en HuggingFace: https://huggingface.co/laki35
+- Repositorio Hugging Face: https://huggingface.co/laki35/mytest
+- Perfil del autor en Hugging Face: https://huggingface.co/laki35
 - Repositorio relacionado del autor: https://huggingface.co/laki35/tast
 - Perfil de GitHub del autor: https://github.com/laki35

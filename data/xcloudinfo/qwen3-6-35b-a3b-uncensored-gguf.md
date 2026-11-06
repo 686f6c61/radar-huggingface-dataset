@@ -106,7 +106,7 @@ No se dispone de datos verificables en la información proporcionada sobre otras
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xCloudinfo/Qwen3.6-35B-A3B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/xCloudinfo/Qwen3.6-35B-A3B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Método de referencia citado en la model card: Arditi et al., 2024, "Refusal in Language Models Is Mediated by a Single Direction" (referencia textual, sin enlace aportado por el autor).
 - Los resultados de la búsqueda web proporcionados (artículos sobre GPU instancing, InstancedMesh, mesh shading y benchmarking de Istio) no guardan relación con este modelo y no se incluyen.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ThoxWork-Code-14B es un paquete de configuracion publicado por Thox-ai sobre los pesos sin modificar de Qwen/Qwen3-14B, el modelo denso de 14 mil millones de parametros de Alibaba Cloud con licencia Apache-2.0. El repositorio de HuggingFace no contiene pesos entrenados por THOX: incluye un `Modelfile` de Ollama, un `manifest.json` de release y un fichero JSONL de 4,6 KB con el denominado THOX Knowledge Pack v0.1 (ocho entradas publicas verificadas). El modelo ejecutable se distribuye a traves de Ollama con el comando `ollama run Thox-ai/thoxwork-code-14b`, y Ollama descarga los pesos originales de Qwen3-14B fijados por digest.
+ThoxWork-Code-14B es un paquete de configuracion publicado por Thox-ai sobre los pesos sin modificar de Qwen/Qwen3-14B, el modelo denso de 14 mil millones de parametros de Alibaba Cloud con licencia Apache-2.0. El repositorio de Hugging Face no contiene pesos entrenados por THOX: incluye un `Modelfile` de Ollama, un `manifest.json` de release y un fichero JSONL de 4,6 KB con el denominado THOX Knowledge Pack v0.1 (ocho entradas publicas verificadas). El modelo ejecutable se distribuye a traves de Ollama con el comando `ollama run Thox-ai/thoxwork-code-14b`, y Ollama descarga los pesos originales de Qwen3-14B fijados por digest.
 
 El objetivo declarado es ofrecer asistencia de generacion, revision y refactorizacion de codigo dentro de un marco de "workgroups" empresariales, donde cada grupo se trata como un dominio de seguridad aislado y el trabajo entre grupos exige una concesion de politica explicita. Ademas, el perfil de sistema incluye un bloque de anclaje (grounding) que obliga al modelo a responder sobre la plataforma THOX exclusivamente a partir del Knowledge Pack y a rechazar la verificacion de estado operativo en vivo.
 
@@ -74,10 +74,10 @@ El autor advierte que el throughput debe interpretarse como un suelo en condicio
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ThoxWork-Code-14B | 14B denso | 32.768 (8.192 evaluados) | Apache-2.0 | Ollama + HuggingFace (paquete) | Configuracion sobre Qwen3-14B; sin entrenamiento propio |
-| Qwen/Qwen3-14B | 14B denso | 32.768 (131.072 con YaRN) | Apache-2.0 | HuggingFace, Ollama, vLLM | Modelo base identico en pesos; sin perfil THOX |
-| Qwen2.5-Coder-14B | 14B denso | 32.768 (131.072 con YaRN) | Apache-2.0 | HuggingFace, Ollama | Especializado en codigo mediante entrenamiento real; alternativa si se busca rendimiento en programacion |
-| DeepSeek-Coder-V2-Lite | 16B MoE (2,4B activos) | 128.000 | Licencia propia DeepSeek | HuggingFace | Alternativa MoE con mayor contexto; licencia distinta a Apache-2.0 |
+| ThoxWork-Code-14B | 14B denso | 32.768 (8.192 evaluados) | Apache-2.0 | Ollama + Hugging Face (paquete) | Configuracion sobre Qwen3-14B; sin entrenamiento propio |
+| Qwen/Qwen3-14B | 14B denso | 32.768 (131.072 con YaRN) | Apache-2.0 | Hugging Face, Ollama, vLLM | Modelo base identico en pesos; sin perfil THOX |
+| Qwen2.5-Coder-14B | 14B denso | 32.768 (131.072 con YaRN) | Apache-2.0 | Hugging Face, Ollama | Especializado en codigo mediante entrenamiento real; alternativa si se busca rendimiento en programacion |
+| DeepSeek-Coder-V2-Lite | 16B MoE (2,4B activos) | 128.000 | Licencia propia DeepSeek | Hugging Face | Alternativa MoE con mayor contexto; licencia distinta a Apache-2.0 |
 
 La comparacion clave es con Qwen3-14B: los pesos son identicos, por lo que cualquier diferencia de rendimiento en tareas de codigo proviene del prompt de sistema y del contexto inyectado, no de capacidades nuevas. Frente a Qwen2.5-Coder-14B, este ultimo si fue entrenado especificamente para codigo y probablemente supera al paquete THOX en tareas de programacion puras.
 
@@ -95,7 +95,7 @@ La comparacion clave es con Qwen3-14B: los pesos son identicos, por lo que cualq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxWork-Code-14B
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxWork-Code-14B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Ejecucion via Ollama: `ollama run Thox-ai/thoxwork-code-14b`
 - Descarga del paquete: `hf download Thox-ai/ThoxWork-Code-14B --local-dir ./ThoxWork-Code-14B`

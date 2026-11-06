@@ -69,7 +69,7 @@ No se dispone de datos comparativos detallados en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bkjha8/Wan2.2-TI2V-5B
+- Modelo en Hugging Face: https://huggingface.co/bkjha8/Wan2.2-TI2V-5B
 - Modelo oficial de Wan-AI: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Repositorio GitHub de Wan2.2: https://github.com/Wan-Video/Wan2.2
 - Página oficial de Wan: https://wan.video

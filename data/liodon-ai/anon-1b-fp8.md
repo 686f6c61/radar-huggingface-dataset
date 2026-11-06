@@ -22,7 +22,7 @@ La relevancia del modelo reside en que permite ejecutar el modelo base con menor
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura del modelo base en la información proporcionada. La etiqueta `gemma3_text` en los metadatos de HuggingFace indica que el modelo base (scratchyone/anon-1b) podría emplear la arquitectura de texto de la familia Gemma 3, pero la model card de esta cuantización no describe la arquitectura, el número de capas, las dimensiones ocultas ni el mecanismo de atención. Tampoco se detallan los datos de entrenamiento (número de tokens, composición del dataset) ni si se aplicaron técnicas de alineación como RLHF o DPO.
+No se dispone de información detallada sobre la arquitectura del modelo base en la información proporcionada. La etiqueta `gemma3_text` en los metadatos de Hugging Face indica que el modelo base (scratchyone/anon-1b) podría emplear la arquitectura de texto de la familia Gemma 3, pero la model card de esta cuantización no describe la arquitectura, el número de capas, las dimensiones ocultas ni el mecanismo de atención. Tampoco se detallan los datos de entrenamiento (número de tokens, composición del dataset) ni si se aplicaron técnicas de alineación como RLHF o DPO.
 
 Lo que sí se especifica es el proceso de cuantización: se empleó `llm-compressor` con el esquema `FP8_DYNAMIC`. Los pesos se convierten a FP8 (E4M3) por canal de forma previa, y las activaciones se cuantizan dinámicamente por token durante la inferencia. La capa `lm_head` se deja sin cuantizar, práctica habitual por su tamaño reducido y su impacto desproporcionado en la calidad. El esquema no requiere dataset de calibración, de modo que los pesos cuantizados son una conversión numérica directa del original, sin sesgo inducido por el conjunto de calibración.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| liodon-ai/anon-1b-FP8 | ~1B | no disponible | FP8 (E4M3) | other | safetensors | HuggingFace |
-| scratchyone/anon-1b (base) | ~1B | no disponible | sin cuantizar | other | safetensors | HuggingFace |
+| liodon-ai/anon-1b-FP8 | ~1B | no disponible | FP8 (E4M3) | other | safetensors | Hugging Face |
+| scratchyone/anon-1b (base) | ~1B | no disponible | sin cuantizar | other | safetensors | Hugging Face |
 | Otros modelos ~1B comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos alternativos de la misma categoría en la información proporcionada. La comparativa más directa posible es con el modelo base sin cuantizar, del cual solo se conoce que ocupa 2,6 GB frente a los 1,9 GB de esta versión.
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liodon-ai/anon-1b-FP8
+- Modelo en Hugging Face: https://huggingface.co/liodon-ai/anon-1b-FP8
 - Modelo base: https://huggingface.co/scratchyone/anon-1b
 - Herramienta de cuantización llm-compressor: https://github.com/vllm-project/llm-compressor
 - Perfil del publicador (Liodon AI): https://huggingface.co/liodon-ai

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "4everImmortality/dafeiyu-minicpmv",
+  "slug": "4everimmortality-dafeiyu-minicpmv",
+  "author": "4everImmortality",
+  "url": "https://huggingface.co/4everImmortality/dafeiyu-minicpmv",
+  "created_at": "2026-11-04T13:54:12.000Z",
+  "updated_at": "2026-11-06T05:55:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "minicpm-v",
+    "roleplay",
+    "vtuber",
+    "dafeiyu",
+    "jetson",
+    "image-text-to-text",
+    "zh",
+    "en",
+    "base_model:openbmb/MiniCPM-V-4.7-1B",
+    "base_model:finetune:openbmb/MiniCPM-V-4.7-1B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 1006209856,
+  "parameters_human": "1.01B",
+  "storage_bytes": 2243686656,
+  "storage_human": "2.2 GB",
+  "base_model": "openbmb/MiniCPM-V-4.7-1B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "4everImmortality/dafeiyu-minicpmv · Hugging Face",
+      "url": "https://huggingface.co/4everImmortality/dafeiyu-minicpmv",
+      "snippet": "Text Generation model with 1B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "4everImmortality (wz.wang) - Hugging Face",
+      "url": "https://huggingface.co/4everImmortality",
+      "snippet": "CV, NLP, VLA AI & ML interests Recent Activity"
+    },
+    {
+      "title": "4everImmortality.github.io/index.md at main · 4everImmortality ...",
+      "url": "https://github.com/4everImmortality/4everImmortality.github.io/blob/main/index.md",
+      "snippet": "How to make the organic combination of multimodal model and UAV more effective, safety and accurate. Method: Utilizing Machine Learning and Deep Learning methods in drones, robots, and other edge device."
+    }
+  ]
+}

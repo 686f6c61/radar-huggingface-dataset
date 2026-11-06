@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un ajuste fino de tipo comunitario publicado por el usuario wz7475 bajo el identificador `wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every4`. La model card es la plantilla automática de HuggingFace y no ha sido cumplimentada: no declara autoría real, tipo de modelo, idiomas, licencia, datos de entrenamiento ni resultados de evaluación. El propio identificador es la única fuente de información sobre su naturaleza, y sugiere una adaptación de Qwen2.5-7B-Instruct sobre una mezcla de datos de instrucciones de dominio jurídico ("katcher-legal-sftmix") combinada con OASST1 muestreado cada cuatro ejemplos ("oasst1-every4").
+Este repositorio contiene un ajuste fino de tipo comunitario publicado por el usuario wz7475 bajo el identificador `wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every4`. La model card es la plantilla automática de Hugging Face y no ha sido cumplimentada: no declara autoría real, tipo de modelo, idiomas, licencia, datos de entrenamiento ni resultados de evaluación. El propio identificador es la única fuente de información sobre su naturaleza, y sugiere una adaptación de Qwen2.5-7B-Instruct sobre una mezcla de datos de instrucciones de dominio jurídico ("katcher-legal-sftmix") combinada con OASST1 muestreado cada cuatro ejemplos ("oasst1-every4").
 
 El repositorio ocupa 0,3 GB, un tamaño incompatible con los pesos completos de un modelo de 7.000 millones de parámetros en precisión de 16 bits (que rondarían los 15 GB). Esto apunta a que se trata de un adaptador LoRA o QLoRA y no de un modelo fusionado, aunque no hay documentación que lo confirme. Para poder ejecutarlo sería necesario descargar el modelo base por separado y fusionar el adaptador.
 
@@ -27,9 +27,9 @@ La relevancia de esta ficha es limitada y debe interpretarse como un ejercicio d
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura en la model card, que se limita a la plantilla generada automáticamente por HuggingFace con todos los campos marcados como `[More Information Needed]`. El único indicio disponible es el identificador del repositorio, que combina "qwen2.5-7b-instruct" (modelo base) con "katcher-legal-sftmix" (posible mezcla de datos de ajuste supervisado de temática jurídica) y "oasst1-every4" (posible intercalado de OASST1 cada cuatro muestras para preservar capacidades conversacionales generales). Ninguno de estos extremos está verificado por el autor.
+No se ha publicado información sobre la arquitectura en la model card, que se limita a la plantilla generada automáticamente por Hugging Face con todos los campos marcados como `[More Information Needed]`. El único indicio disponible es el identificador del repositorio, que combina "qwen2.5-7b-instruct" (modelo base) con "katcher-legal-sftmix" (posible mezcla de datos de ajuste supervisado de temática jurídica) y "oasst1-every4" (posible intercalado de OASST1 cada cuatro muestras para preservar capacidades conversacionales generales). Ninguno de estos extremos está verificado por el autor.
 
-La etiqueta `arxiv:1910.09700` que aparece en los metadatos corresponde a Lacoste et al. (2019), el artículo sobre estimación de emisiones de carbono citado en la plantilla estándar de model cards de HuggingFace. No es un artículo sobre este modelo ni aporta información sobre su entrenamiento. Tampoco hay datos sobre número de tokens de entrenamiento, composición del dataset, uso de RLHF o DPO, hiperparámetros o infraestructura de cómputo.
+La etiqueta `arxiv:1910.09700` que aparece en los metadatos corresponde a Lacoste et al. (2019), el artículo sobre estimación de emisiones de carbono citado en la plantilla estándar de model cards de Hugging Face. No es un artículo sobre este modelo ni aporta información sobre su entrenamiento. Tampoco hay datos sobre número de tokens de entrenamiento, composición del dataset, uso de RLHF o DPO, hiperparámetros o infraestructura de cómputo.
 
 ## Capacidades
 
@@ -79,8 +79,8 @@ La comparativa se establece contra modelos de propósito general del mismo rango
 |---|---|---|---|---|---|
 | qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every4 | No disponible (presumiblemente 7B) | No disponible | No disponible | Repositorio de 0,3 GB, 0 descargas | Ninguno publicado |
 | Qwen2.5-7B-Instruct | 7.610 millones | 32.768 nativos, 131.072 con escalado RoPE | Apache 2.0 | Repositorio oficial, ampliamente desplegado | Publicados por el proveedor |
-| Llama-3.1-8B-Instruct | 8.030 millones | 128.000 | Licencia comunitaria de Llama 3.1 | Repositorio oficial en Meta y HuggingFace | Publicados por el proveedor |
-| Mistral-7B-Instruct-v0.3 | 7.250 millones | 32.000 | Apache 2.0 | Repositorio oficial en Mistral y HuggingFace | Publicados por el proveedor |
+| Llama-3.1-8B-Instruct | 8.030 millones | 128.000 | Licencia comunitaria de Llama 3.1 | Repositorio oficial en Meta y Hugging Face | Publicados por el proveedor |
+| Mistral-7B-Instruct-v0.3 | 7.250 millones | 32.000 | Apache 2.0 | Repositorio oficial en Mistral y Hugging Face | Publicados por el proveedor |
 
 Frente a estas alternativas, el modelo analizado no ofrece ninguna ventaja verificable: carece de licencia declarada, de evaluación publicada y de artefactos de despliegue listos para usar. Su único diferencial potencial sería la especialización jurídica, que no está demostrada.
 
@@ -99,7 +99,7 @@ Frente a estas alternativas, el modelo analizado no ofrece ninguna ventaja verif
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every4
+- Repositorio en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every4
 - Artículo referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono, citado por la plantilla automática y no relacionado con el modelo): https://arxiv.org/abs/1910.09700
 - Modelo base presumido, sin confirmar por el autor: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre el modelo, su autor, el dataset "katcher-legal-sftmix" ni la receta "oasst1-every4". Las únicas coincidencias devueltas corresponden a perfiles personales de redes sociales sin relación con el modelo.

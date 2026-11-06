@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cyberval/inkpop-style es un adaptador LoRA de estilo para generacion de imagenes texto-a-imagen, entrenado con DreamBooth sobre el modelo base krea/Krea-2-Raw y pensado para usarse en inferencia sobre krea/Krea-2-Turbo. Lo publica el usuario cyberval en HuggingFace bajo licencia Apache 2.0, con un unico concepto invocable mediante la frase de activacion `inkpop style`.
+cyberval/inkpop-style es un adaptador LoRA de estilo para generacion de imagenes texto-a-imagen, entrenado con DreamBooth sobre el modelo base krea/Krea-2-Raw y pensado para usarse en inferencia sobre krea/Krea-2-Turbo. Lo publica el usuario cyberval en Hugging Face bajo licencia Apache 2.0, con un unico concepto invocable mediante la frase de activacion `inkpop style`.
 
 El modelo no implementa una arquitectura propia: es un conjunto de pesos de bajo rango (Low-Rank Adaptation) que modifica el comportamiento de un modelo de difusion preentrenado. Su proposito es reproducir una estetica concreta, denominada "inkpop", sin necesidad de reentrenar el modelo base, de forma que cualquier pipeline que ya cargue Krea 2 pueda incorporar el estilo con una sola llamada a `load_lora_weights`.
 
@@ -96,12 +96,12 @@ No se dispone de datos de otros LoRA de estilo comparables en la informacion pro
 - No hay datos de sesgo ni de representacion: se desconoce como responde el estilo ante sujetos diversos en genero, etnia, edad o contexto cultural.
 - Riesgo de alucinacion visual: como cualquier modelo generativo de imagen, puede producir anatomia incorrecta, texto ilegible en la imagen o elementos fisicamente incoherentes; no hay informacion sobre la tasa de fallo.
 - Sin garantias de reproducibilidad: no se especifican semillas, resolucion de entrenamiento ni configuracion exacta, por lo que replicar los ejemplos publicados puede no dar resultados identicos.
-- La fecha de creacion y actualizacion del repositorio (2026-09-11) figura en los metadatos tal cual se han recibido; conviene verificarla en la ficha de HuggingFace antes de citarla.
+- La fecha de creacion y actualizacion del repositorio (2026-09-11) figura en los metadatos tal cual se han recibido; conviene verificarla en la ficha de Hugging Face antes de citarla.
 - Compatibilidad no verificada: no se documenta el comportamiento del adaptador al combinarse con otros LoRA ni con variantes del base distintas de Krea 2 Turbo.
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/cyberval/inkpop-style
+- Ficha del modelo en Hugging Face: https://huggingface.co/cyberval/inkpop-style
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base usado en los ejemplos: https://huggingface.co/krea/Krea-2-Turbo
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada: los resultados devueltos correspondian a paginas de descarga de Instagram (instagram.com, Google Play, Softonic) y no guardan relacion con el modelo.

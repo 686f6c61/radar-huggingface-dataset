@@ -70,9 +70,9 @@ Nota del autor: el WER se evalua contra transcripciones de dominio crudas y sin 
 
 | Modelo | Parametros | Contexto/ventana | WER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-small-public-safety-v2-FINAL | 241,7 M | 30 s de audio | 40,48% (dominio, sin verificar) | MIT | HuggingFace |
-| openai/whisper-small | ~244 M | 30 s de audio | no disponible en esta informacion | MIT | HuggingFace |
-| sepiaapps/whisper-small.en-police-radio (modelo base) | ~244 M | 30 s de audio | no disponible en esta informacion | no disponible | HuggingFace |
+| whisper-small-public-safety-v2-FINAL | 241,7 M | 30 s de audio | 40,48% (dominio, sin verificar) | MIT | Hugging Face |
+| openai/whisper-small | ~244 M | 30 s de audio | no disponible en esta informacion | MIT | Hugging Face |
+| sepiaapps/whisper-small.en-police-radio (modelo base) | ~244 M | 30 s de audio | no disponible en esta informacion | no disponible | Hugging Face |
 
 No se dispone de resultados de benchmark homogeneos para los modelos comparables dentro de la informacion proporcionada, por lo que la comparacion de rendimiento cuantitativa no puede establecerse con rigor.
 
@@ -89,7 +89,7 @@ No se dispone de resultados de benchmark homogeneos para los modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xxbubziexx/whisper-small-public-safety-v2-FINAL
+- Modelo en Hugging Face: https://huggingface.co/xxbubziexx/whisper-small-public-safety-v2-FINAL
 - Modelo base: https://huggingface.co/sepiaapps/whisper-small.en-police-radio
 - Repositorio ScanScribe: https://github.com/xxbubziexx/ScanScribe
 - Repositorio de OpenAI Whisper: https://github.com/openai/whisper

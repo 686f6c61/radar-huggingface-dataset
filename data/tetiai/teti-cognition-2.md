@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| teti-cognition-2 | no disponible (113 MB int8) | streaming, probado 1M tokens | Clasificador de descarga cognitiva | BSD-3-Clause | HuggingFace |
-| teti-cognition-1 | no disponible (4,4 GB) | 32k por defecto; 1M con ~45 GB VRAM | Clasificador de descarga cognitiva (v1) | no disponible | HuggingFace |
-| jhu-clsp/mmBERT-small | no disponible | no disponible | Encoder multilingue base | no disponible | HuggingFace |
+| teti-cognition-2 | no disponible (113 MB int8) | streaming, probado 1M tokens | Clasificador de descarga cognitiva | BSD-3-Clause | Hugging Face |
+| teti-cognition-1 | no disponible (4,4 GB) | 32k por defecto; 1M con ~45 GB VRAM | Clasificador de descarga cognitiva (v1) | no disponible | Hugging Face |
+| jhu-clsp/mmBERT-small | no disponible | no disponible | Encoder multilingue base | no disponible | Hugging Face |
 
 No se dispone de informacion sobre otros clasificadores comparables de analisis de delegacion cognitiva en conversaciones.
 
@@ -93,7 +93,7 @@ No se dispone de informacion sobre otros clasificadores comparables de analisis 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tetiai/teti-cognition-2
+- Hugging Face: https://huggingface.co/tetiai/teti-cognition-2
 - Modelo v1: https://huggingface.co/tetiai/teti-cognition-1
 - Guia de etiquetado v1: https://huggingface.co/tetiai/teti-cognition-1/blob/main/data/LABELING.md
 - Ejemplo de salida (italiano): https://huggingface.co/tetiai/teti-cognition-1/blob/main/examples/delegation_it.json

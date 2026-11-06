@@ -98,7 +98,7 @@ Observaciones a partir de los datos disponibles: la configuración N=1 supera a 
 | mulligan/sim-square-narrow-r02-auto-plain-il-n1-idql | sim-square-narrow (ronda R2) | IDQL (variante de la misma familia) | no disponible en la informacion recopilada | no disponible en la informacion recopilada |
 | Alternativas de terceros (Diffusion Policy, IQL, IDQL de otros autores) | no disponible | no disponible | no disponible | no disponible |
 
-La informacion recopilada no incluye resultados numericos de modelos comparables, incluido el propio sim-square-narrow-r02-auto-plain-il-n1-idql, del que solo consta la pagina de HuggingFace. Por tanto, no es posible presentar una comparativa cuantitativa. La comparacion relevante para este checkpoint es interna a la campana Mulligan: r00 (baseline) frente a los brazos automaticos c01 y las rondas posteriores, que publican sus propios datasets de rollouts.
+La informacion recopilada no incluye resultados numericos de modelos comparables, incluido el propio sim-square-narrow-r02-auto-plain-il-n1-idql, del que solo consta la pagina de Hugging Face. Por tanto, no es posible presentar una comparativa cuantitativa. La comparacion relevante para este checkpoint es interna a la campana Mulligan: r00 (baseline) frente a los brazos automaticos c01 y las rondas posteriores, que publican sus propios datasets de rollouts.
 
 ## Limitaciones y advertencias
 
@@ -116,8 +116,8 @@ La informacion recopilada no incluye resultados numericos de modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r00-baseline-idql
-- Organizacion mulligan en HuggingFace: https://huggingface.co/mulligan
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r00-baseline-idql
+- Organizacion mulligan en Hugging Face: https://huggingface.co/mulligan
 - Sitio del proyecto Mulligan: https://mulligan.page
 - Evaluaciones en Policy Arena: https://arena.mulligan.page
 - Dataset de entrenamiento (teleoperacion baseline): https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-baseline

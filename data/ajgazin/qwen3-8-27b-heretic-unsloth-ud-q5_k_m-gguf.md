@@ -86,7 +86,7 @@ La principal diferencia entre este modelo y el de Unsloth es la abliteracion: es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ajgazin/Qwen3.8-27B-Heretic-unsloth-UD-Q5_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ajgazin/Qwen3.8-27B-Heretic-unsloth-UD-Q5_K_M-GGUF
 - Modelo base abliterado (llmfan46): https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de cuantizaciones de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

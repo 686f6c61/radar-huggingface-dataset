@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| opd-teacher-R1Distill-Cinema-step149 | 1,78B | no disponible | sin benchmarks publicados | no disponible | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-1.5B (modelo base) | 1,78B | no disponible | benchmarks publicados por DeepSeek | MIT en el modelo base | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (segun Qwen) | benchmarks publicados por Qwen | Apache 2.0 (segun Qwen) | HuggingFace |
+| opd-teacher-R1Distill-Cinema-step149 | 1,78B | no disponible | sin benchmarks publicados | no disponible | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-1.5B (modelo base) | 1,78B | no disponible | benchmarks publicados por DeepSeek | MIT en el modelo base | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (segun Qwen) | benchmarks publicados por Qwen | Apache 2.0 (segun Qwen) | Hugging Face |
 
 Nota: los datos del modelo base y de Qwen2.5 corresponden a conocimiento general de esos modelos; la informacion proporcionada solo confirma los datos del modelo objeto de esta ficha. La comparativa con alternativas del mismo tamano puede considerarse orientativa, ya que no se dispone de benchmarks del modelo ajustado.
 
@@ -85,7 +85,7 @@ Nota: los datos del modelo base y de Qwen2.5 corresponden a conocimiento general
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/opd-teacher-R1Distill-Cinema-step149
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/opd-teacher-R1Distill-Cinema-step149
 - Coleccion RLVE OPD Teachers: https://huggingface.co/collections/davidheineman/rlve-opd-teachers
 - Perfil del autor: https://huggingface.co/davidheineman
 - Web personal del autor: https://davidheineman.com/

@@ -90,7 +90,7 @@ Datos de velocidad (RTX 4090): 9,4 ms por pregunta, 10,1 ms para una petición d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/doofz/System1
+- Hugging Face: https://huggingface.co/doofz/System1
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Referencia comparada TypeSafe Jev: no disponible (sin enlace en la información proporcionada)
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada

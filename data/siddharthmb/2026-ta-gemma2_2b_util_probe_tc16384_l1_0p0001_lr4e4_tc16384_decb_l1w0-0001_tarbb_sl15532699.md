@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `2026.TA.gemma2_2b_util_probe_tc16384_l1_0p0001_lr4e4_tc16384_decb_l1w0.0001_tarbb_sl15532699` es un adaptador de transcoder disperso (sparse transcoder adapter) construido sobre `google/gemma-2-2b` por el usuario de HuggingFace siddharthmb, dentro de una coleccion de artefactos de adaptacion dispersa publicada en 2026. No es un modelo de chat convencional: es un checkpoint de interpretabilidad mecanicista que sustituye las MLP del transformer por transcoders entrenados para reconstruir activaciones y exponer caracteristicas interpretables de forma dispersa. Su pipeline declarado es `transformers`, con pesos en `safetensors`.
+El modelo `2026.TA.gemma2_2b_util_probe_tc16384_l1_0p0001_lr4e4_tc16384_decb_l1w0.0001_tarbb_sl15532699` es un adaptador de transcoder disperso (sparse transcoder adapter) construido sobre `google/gemma-2-2b` por el usuario de Hugging Face siddharthmb, dentro de una coleccion de artefactos de adaptacion dispersa publicada en 2026. No es un modelo de chat convencional: es un checkpoint de interpretabilidad mecanicista que sustituye las MLP del transformer por transcoders entrenados para reconstruir activaciones y exponer caracteristicas interpretables de forma dispersa. Su pipeline declarado es `transformers`, con pesos en `safetensors`.
 
 El checkpoint pesa 9,2 GB e incorpora 4.577.762.048 parametros en total segun los safetensors, una cifra muy superior a los aproximadamente 2.610 millones del Gemma 2 2B original. La diferencia corresponde a las matrices de los transcoders: con 16.384 caracteristicas por capa y un modelo de 2.304 dimensiones ocultas, cada capa anade del orden de 75 millones de parametros, lo que suma en torno a 1.960 millones adicionales repartidos por las capas. La arquitectura base es `gemma2`, con decodificacion autoregresiva y la alternancia de atencion local y global propia de esta familia.
 
@@ -96,7 +96,7 @@ La comparacion directa con Gemma 2 2B solo es util en terminos de columna verteb
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_util_probe_tc16384_l1_0p0001_lr4e4_tc16384_decb_l1w0.0001_tarbb_sl15532699
+- Modelo en Hugging Face: https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_util_probe_tc16384_l1_0p0001_lr4e4_tc16384_decb_l1w0.0001_tarbb_sl15532699
 - Repositorio de codigo: https://github.com/Sid-MB/transcoder-adapters
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/siddharth-stanford/sparse-adaptation/runs/jmvln7gz
 - Coleccion 2026 Transcoder Adapters: https://huggingface.co/collections/siddharthmb/2026-transcoder-adapters

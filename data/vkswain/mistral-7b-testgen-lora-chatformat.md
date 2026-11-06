@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `VKSWAIN/mistral-7b-testgen-lora-chatformat` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace, desarrollado por el usuario VKSWAIN. Se trata de un fine-tuning con aprendizaje supervisado (SFT) aplicado sobre el modelo base `mistralai/Mistral-7B-Instruct-v0.3`, un transformer decoder-only de 7.000 millones de parámetros con ventana de contexto de 32.000 tokens. El adaptador está entrenado con la librería TRL (Transformers Reinforcement Learning) y PEFT, y su nombre sugiere una orientación hacia la generación de pruebas de software (test generation), aunque la model card no aporta detalles sobre el dataset ni los objetivos concretos del entrenamiento.
+El modelo `VKSWAIN/mistral-7b-testgen-lora-chatformat` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face, desarrollado por el usuario VKSWAIN. Se trata de un fine-tuning con aprendizaje supervisado (SFT) aplicado sobre el modelo base `mistralai/Mistral-7B-Instruct-v0.3`, un transformer decoder-only de 7.000 millones de parámetros con ventana de contexto de 32.000 tokens. El adaptador está entrenado con la librería TRL (Transformers Reinforcement Learning) y PEFT, y su nombre sugiere una orientación hacia la generación de pruebas de software (test generation), aunque la model card no aporta detalles sobre el dataset ni los objetivos concretos del entrenamiento.
 
 La relevancia de este modelo reside en su naturaleza de adaptador ligero: permite ajustar un modelo de instrucción ya capaz sin necesidad de reentrenar todos los pesos, lo que facilita su integración en flujos de trabajo que requieren especialización en tareas concretas. Sin embargo, la ausencia de documentación, métricas y ejemplos de uso limita su aplicabilidad directa en producción. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica que es un proyecto reciente o poco difundido.
 
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VKSWAIN/mistral-7b-testgen-lora-chatformat | 7B (base) + LoRA | 32k | Adaptador LoRA | No disponible | HuggingFace |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32k | Modelo base | Apache 2.0 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Modelo base | Llama 3.1 Community License | HuggingFace |
-| google/gemma-2-9b-it | 9B | 8k | Modelo base | Gemma Terms of Use | HuggingFace |
+| VKSWAIN/mistral-7b-testgen-lora-chatformat | 7B (base) + LoRA | 32k | Adaptador LoRA | No disponible | Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32k | Modelo base | Apache 2.0 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Modelo base | Llama 3.1 Community License | Hugging Face |
+| google/gemma-2-9b-it | 9B | 8k | Modelo base | Gemma Terms of Use | Hugging Face |
 
 La comparativa se limita a aspectos estructurales porque no hay datos de rendimiento del adaptador. Frente al base, el adaptador anade una capa de especializacion desconocida. Frente a Llama-3.1-8B y Gemma-2-9B, el adaptador no puede competir en documentacion ni en ecosistema, y su licencia es incierta.
 
@@ -78,7 +78,7 @@ La comparativa se limita a aspectos estructurales porque no hay datos de rendimi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VKSWAIN/mistral-7b-testgen-lora-chatformat
+- Repositorio Hugging Face: https://huggingface.co/VKSWAIN/mistral-7b-testgen-lora-chatformat
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Libreria TRL: https://github.com/huggingface/trl
 - Libreria PEFT: https://github.com/huggingface/peft

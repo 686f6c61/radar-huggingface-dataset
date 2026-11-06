@@ -71,9 +71,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 
 | Modelo | Parámetros | Contexto | Rendimiento ru→chv (chrF++) | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| LFM3-1.7B-chv-v2 (bf16) | 1,73 B | no disponible | 34,89 | LFM Open License v1.0 | HuggingFace (safetensors y GGUF) |
+| LFM3-1.7B-chv-v2 (bf16) | 1,73 B | no disponible | 34,89 | LFM Open License v1.0 | Hugging Face (safetensors y GGUF) |
 | MarianMT baseline | no disponible | no disponible | 23,28 | no disponible | no disponible |
-| LFM3-1.7B-chv-v2 (Q4_K_M) | 1,73 B | no disponible | 30,03 | LFM Open License v1.0 | HuggingFace (GGUF) |
+| LFM3-1.7B-chv-v2 (Q4_K_M) | 1,73 B | no disponible | 30,03 | LFM Open License v1.0 | Hugging Face (GGUF) |
 
 No se dispone de datos de otros modelos comparables de traducción ru↔chv en la información proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de datos de otros modelos comparables de traducción ru↔chv en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chuvash-ai/LFM3-1.7B-chv-v2
+- Modelo en Hugging Face: https://huggingface.co/chuvash-ai/LFM3-1.7B-chv-v2
 - Versión GGUF: https://huggingface.co/chuvash-ai/LFM3-1.7B-chv-v2-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia LFM Open License v1.0: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE

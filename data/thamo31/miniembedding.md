@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniEmbedding es un modelo de embeddings de muy pequeno tamano (11.177.804 parametros, aproximadamente 11,2 millones) publicado por el usuario Thamo31 (Thamotharan) en HuggingFace. Segun la model card, se trata de un modelo orientado a tareas basicas de embedding de palabras y tokenizacion, pensado explicitamente para principiantes que quieren aprender como funcionan los word embeddings. El autor indica que su objetivo es disponer de un modelo ligero que pueda ejecutarse en espacios de GPU reducidos, lo que explica su tamano minimo.
+MiniEmbedding es un modelo de embeddings de muy pequeno tamano (11.177.804 parametros, aproximadamente 11,2 millones) publicado por el usuario Thamo31 (Thamotharan) en Hugging Face. Segun la model card, se trata de un modelo orientado a tareas basicas de embedding de palabras y tokenizacion, pensado explicitamente para principiantes que quieren aprender como funcionan los word embeddings. El autor indica que su objetivo es disponer de un modelo ligero que pueda ejecutarse en espacios de GPU reducidos, lo que explica su tamano minimo.
 
 El repositorio lo etiqueta con la arquitectura `bert`, el formato `safetensors` y la libreria `MicroEmbedding`, mientras que la model card usa el nombre generico de "Model ID" y describe un modelo de tipo embedding con idioma ingles. La ficha presenta varias incongruencias: el identificador del repositorio es `MiniEmbedding`, la libreria declarada es `MicroEmbedding` y el pipeline no esta definido, por lo que no puede confirmarse con los datos disponibles si el modelo sigue la interfaz estandar de `sentence-transformers` o `transformers`.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thamo31/MiniEmbedding | 11,2 M | No disponible | No disponible | No disponible | HuggingFace (0 descargas) |
+| Thamo31/MiniEmbedding | 11,2 M | No disponible | No disponible | No disponible | Hugging Face (0 descargas) |
 | sentence-transformers/all-MiniLM-L6-v2 | ~22 M (referencia externa) | No disponible en esta ficha | No disponible en esta ficha | Apache-2.0 (referencia externa) | Ampliamente disponible |
 | sentence-transformers/paraphrase-MiniLM-L3-v2 | ~17 M (referencia externa) | No disponible en esta ficha | No disponible en esta ficha | Apache-2.0 (referencia externa) | Ampliamente disponible |
 
@@ -90,7 +90,7 @@ No se dispone de datos verificados de rendimiento para ninguno de los modelos en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thamo31/MiniEmbedding
+- Hugging Face: https://huggingface.co/Thamo31/MiniEmbedding
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo: no disponible

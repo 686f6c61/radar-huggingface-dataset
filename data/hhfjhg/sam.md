@@ -2,11 +2,11 @@
 
 ## Resumen
 
-La ficha corresponde al repositorio de HuggingFace `Hhfjhg/Sam` (autor `Hhfjhg`), publicado el 27 de septiembre de 2026. A fecha de consulta el repositorio no declara pipeline, licencia, idiomas, tamano de contexto ni formato de pesos, acumula 0 descargas y 1 like, y sus unicos metadatos son la etiqueta `region:us`. Es, por tanto, una entrada practicamente vacia que no permite evaluar ningun modelo real: no se puede confirmar que contenga pesos, configuracion de arquitectura ni tarjeta de modelo utilizable en produccion.
+La ficha corresponde al repositorio de Hugging Face `Hhfjhg/Sam` (autor `Hhfjhg`), publicado el 27 de septiembre de 2026. A fecha de consulta el repositorio no declara pipeline, licencia, idiomas, tamano de contexto ni formato de pesos, acumula 0 descargas y 1 like, y sus unicos metadatos son la etiqueta `region:us`. Es, por tanto, una entrada practicamente vacia que no permite evaluar ningun modelo real: no se puede confirmar que contenga pesos, configuracion de arquitectura ni tarjeta de modelo utilizable en produccion.
 
 La busqueda web devuelve coincidencias por nombre con la familia Segment Anything Model de Meta: SAM 3 (repositorio `facebookresearch/sam3`, con codigo de inferencia, ajuste fino, checkpoints y notebooks), SAM 3.1 (sustituto directo de SAM 3 con mejoras de eficiencia en video mediante multiplexacion de objetos, disponible a traves de la Meta Model API) y SAM 3D (reconstruccion de objetos y personas desde una imagen 2D, incluyendo forma y pose). Se trata de modelos de segmentacion, deteccion y seguimiento visual, no de modelos de lenguaje, por lo que parametros como longitud de contexto no son aplicables en el sentido habitual.
 
-Dado que el repositorio de HuggingFace no aporta informacion tecnica verificable, esta ficha distingue explicitamente entre los datos del repositorio (casi todos "no disponible") y los datos de la familia Meta SAM 3.x/3D citados en las fuentes web, que se incluyen unicamente como referencia por coincidencia de nombre y no como atributos confirmados del repositorio.
+Dado que el repositorio de Hugging Face no aporta informacion tecnica verificable, esta ficha distingue explicitamente entre los datos del repositorio (casi todos "no disponible") y los datos de la familia Meta SAM 3.x/3D citados en las fuentes web, que se incluyen unicamente como referencia por coincidencia de nombre y no como atributos confirmados del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Datos declarados del repositorio `Hhfjhg/Sam`:
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
 | Desarrollador / autor | Hhfjhg |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tarea declarada | no disponible |
 | Descargas / likes | 0 / 1 |
 | Fecha de creacion | 2026-09-27 |
@@ -104,18 +104,18 @@ No hay datos suficientes para comparar `Hhfjhg/Sam` con alternativas, ya que no 
 
 | Modelo | Tipo | Contexto o ambito | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hhfjhg/Sam | no disponible | no disponible | no disponible | no disponible | repositorio de HuggingFace sin metadatos tecnicos, 0 descargas |
+| Hhfjhg/Sam | no disponible | no disponible | no disponible | no disponible | repositorio de Hugging Face sin metadatos tecnicos, 0 descargas |
 | Meta SAM 3 | Segmentacion y deteccion en imagen y video | Imagen y video | No detallado en las fuentes | no disponible en las fuentes | GitHub `facebookresearch/sam3` con checkpoints y notebooks |
 | Meta SAM 3.1 | Segmentacion, deteccion y seguimiento en video | Video, con multiplexacion de objetos | Mejora cualitativa de eficiencia en video frente a SAM 3, sin cifras | no disponible en las fuentes | Meta Model API y documentacion en dev.meta.ai |
 | Meta SAM 3D | Reconstruccion 3D desde imagen 2D | Imagen 2D a 3D (forma y pose) | No detallado en las fuentes | no disponible en las fuentes | Pagina de investigacion de Meta |
-| 1038lab/sam3 | Repositorio de HuggingFace | no disponible | no disponible | no disponible | HuggingFace |
+| 1038lab/sam3 | Repositorio de Hugging Face | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
 - El repositorio `Hhfjhg/Sam` no declara licencia. Sin licencia explicita no hay autorizacion clara para uso comercial, redistribucion ni modificacion; se debe asumir uso restringido hasta que el autor lo aclare.
 - No se puede confirmar que el repositorio contenga pesos reales. La ausencia de pipeline, formato de pesos, idiomas y descargas apunta a un repositorio de prueba, vacio o abandonado.
-- El nombre "Sam" colisiona con la familia Segment Anything Model de Meta, lo que genera riesgo de confusion o de suplantacion al buscar el modelo en HuggingFace. Cualquier integracion deberia verificar el origen real de los pesos antes de usarlos.
-- La fecha de creacion declarada (2026-09-27) no es verificable y, junto al resto de metadatos, sugiere poca fiabilidad de la ficha de HuggingFace.
+- El nombre "Sam" colisiona con la familia Segment Anything Model de Meta, lo que genera riesgo de confusion o de suplantacion al buscar el modelo en Hugging Face. Cualquier integracion deberia verificar el origen real de los pesos antes de usarlos.
+- La fecha de creacion declarada (2026-09-27) no es verificable y, junto al resto de metadatos, sugiere poca fiabilidad de la ficha de Hugging Face.
 - En modelos de segmentacion el fallo tipico no es la alucinacion textual sino la generacion de mascaras incorrectas o falsos positivos/negativos en objetos pequenos, oclusiones o bordes; cualquier uso en produccion requiere validacion con datos propios.
 - Dependencia de proveedor: usar SAM 3.1 a traves de la Meta Model API implica coste, limites de uso y dependencia de la disponibilidad del servicio, ademas de enviar los datos a un tercero.
 - Los datos de rendimiento publicados en las fuentes consultadas son cualitativos; no se debe planificar capacidad ni SLA a partir de ellos sin mediciones propias.
@@ -124,9 +124,9 @@ No hay datos suficientes para comparar `Hhfjhg/Sam` con alternativas, ya que no 
 
 ## Enlaces
 
-- Repositorio de HuggingFace de esta ficha: https://huggingface.co/Hhfjhg/Sam
+- Repositorio de Hugging Face de esta ficha: https://huggingface.co/Hhfjhg/Sam
 - Repositorio oficial de Meta SAM 3 en GitHub: https://github.com/facebookresearch/sam3
 - Blog de Meta sobre SAM 3 / SAM 3.1: https://ai.meta.com/blog/segment-anything-model-3/
 - Pagina de modelo SAM 3.1 en Meta: https://dev.meta.ai/models/sam-3-1
 - Pagina de investigacion SAM 3D: https://ai.meta.com/research/sam3d/
-- Repositorio de HuggingFace 1038lab/sam3: https://huggingface.co/1038lab/sam3
+- Repositorio de Hugging Face 1038lab/sam3: https://huggingface.co/1038lab/sam3

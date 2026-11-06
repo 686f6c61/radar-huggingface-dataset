@@ -111,7 +111,7 @@ No se dispone de datos de otros modelos de superresolución de vídeo comparable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mlx-community/FlashVSR-v1.1-bf16
+- Repositorio en Hugging Face: https://huggingface.co/mlx-community/FlashVSR-v1.1-bf16
 - Variante de paridad fp32: https://huggingface.co/mlx-community/FlashVSR-v1.1-fp32
 - Modelo base: https://huggingface.co/JunhaoZhuang/FlashVSR-v1.1
 - Repositorio de código upstream: https://github.com/OpenImagingLab/FlashVSR

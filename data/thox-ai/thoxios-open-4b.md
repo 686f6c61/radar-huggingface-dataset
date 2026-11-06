@@ -94,7 +94,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxIOS-Open-4B
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxIOS-Open-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Modelo en Ollama: `Thox-ai/thox-ios-open-4b` (referencia de ejecución citada en la model card)
 - Papers, blogs, repos y demos adicionales: no disponibles en la información proporcionada.

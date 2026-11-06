@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `adibh01/netrasense-dr-model` es un modelo publicado en el repositorio HuggingFace por el usuario `adibh01`. Está construido con la librería Keras y se distribuye bajo licencia MIT. El repositorio tiene un tamaño de 0,1 GB y fue creado el 4 de septiembre de 2026. La model card no incluye descripción técnica, por lo que no se dispone de información sobre arquitectura, número de parámetros, datos de entrenamiento ni capacidades. El nombre del modelo sugiere una posible relación con la detección de retinopatía diabética (DR), pero no hay confirmación en la documentación disponible.
+El modelo `adibh01/netrasense-dr-model` es un modelo publicado en el repositorio Hugging Face por el usuario `adibh01`. Está construido con la librería Keras y se distribuye bajo licencia MIT. El repositorio tiene un tamaño de 0,1 GB y fue creado el 4 de septiembre de 2026. La model card no incluye descripción técnica, por lo que no se dispone de información sobre arquitectura, número de parámetros, datos de entrenamiento ni capacidades. El nombre del modelo sugiere una posible relación con la detección de retinopatía diabética (DR), pero no hay confirmación en la documentación disponible.
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ No disponible. No se han identificado modelos comparables con la información pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adibh01/netrasense-dr-model
+- Modelo en Hugging Face: https://huggingface.co/adibh01/netrasense-dr-model
 - NetSense — Research & Methodology: https://netsense.ai/research
 - Diabetic Retinopathy Detection with Deep Learning: A ResNet-CNN Model: https://www.scirp.org/pdf/ojapps2025153_102312852.pdf
 - AI Aimbot Models & YOLO Detection Models | MossyModels: https://mossymodels.com/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-personality_final_seed1234_fold0 es un modelo de la familia transformers publicado por el usuario ajrayman en HuggingFace. Se trata de un ajuste fino (fine-tuning) generado automaticamente con la libreria Trainer de HuggingFace, con un total de 125.095.596 parametros (aproximadamente 125 millones) confirmados a partir de los pesos en safetensors. El repositorio ocupa 3,0 GB y fue creado el 4 de octubre de 2026 y actualizado el mismo dia.
+personality_final_seed1234_fold0 es un modelo de la familia transformers publicado por el usuario ajrayman en Hugging Face. Se trata de un ajuste fino (fine-tuning) generado automaticamente con la libreria Trainer de Hugging Face, con un total de 125.095.596 parametros (aproximadamente 125 millones) confirmados a partir de los pesos en safetensors. El repositorio ocupa 3,0 GB y fue creado el 4 de octubre de 2026 y actualizado el mismo dia.
 
 La model card no declara el modelo base sobre el que se ha hecho el ajuste (el enlace aparece vacio) ni el conjunto de datos de entrenamiento (figura como "None dataset"), por lo que no es posible determinar con certeza la arquitectura subyacente. Por el numero de parametros y el tipo de tarea, encaja en la categoria de modelos encoder de tamano pequeno-medio, pero esto no esta confirmado por el autor.
 
@@ -68,7 +68,7 @@ El mejor valor de perdida de validacion (0,8364) y de RMSE (0,9218) se alcanzo e
 - VRAM estimada para inferencia: en fp32, los 125.095.596 parametros ocupan aproximadamente 500 MB; en fp16 o bf16, alrededor de 250 MB. Estas cifras son calculos a partir del numero de parametros, no medidas publicadas.
 - GPU recomendadas: cualquier GPU con mas de 1-2 GB de VRAM deberia ser suficiente para inferencia, dado el tamano reducido del modelo; no se dispone de datos de rendimiento especificos por GPU.
 - Cabe en GPU de consumo: si, previsiblemente en cualquier GPU de consumo moderna (por ejemplo, gamas GTX 16xx en adelante), aunque no hay confirmacion oficial.
-- Opciones de despliegue: al ser un modelo de transformers con pesos safetensors, es compatible con librerias que cargan checkpoints de HuggingFace (por ejemplo, transformers, y conversion a GGUF mediante llama.cpp u Ollama si la arquitectura lo permite). No se documenta soporte para vLLM ni TGI.
+- Opciones de despliegue: al ser un modelo de transformers con pesos safetensors, es compatible con librerias que cargan checkpoints de Hugging Face (por ejemplo, transformers, y conversion a GGUF mediante llama.cpp u Ollama si la arquitectura lo permite). No se documenta soporte para vLLM ni TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -77,9 +77,9 @@ No es posible establecer una comparativa fiable porque el modelo base no esta de
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ajrayman/personality_final_seed1234_fold0 | 125.095.596 | no disponible | sin benchmarks publicados | no disponible | HuggingFace (0 descargas) |
-| BERT-base (referencia de categoria) | ~110M | 512 tokens | benchmarks publicos | Apache 2.0 | HuggingFace, ampliamente disponible |
-| RoBERTa-base (referencia de categoria) | ~125M | 512 tokens | benchmarks publicos | MIT | HuggingFace, ampliamente disponible |
+| ajrayman/personality_final_seed1234_fold0 | 125.095.596 | no disponible | sin benchmarks publicados | no disponible | Hugging Face (0 descargas) |
+| BERT-base (referencia de categoria) | ~110M | 512 tokens | benchmarks publicos | Apache 2.0 | Hugging Face, ampliamente disponible |
+| RoBERTa-base (referencia de categoria) | ~125M | 512 tokens | benchmarks publicos | MIT | Hugging Face, ampliamente disponible |
 
 La comparacion anterior es solo orientativa por tamano; no implica que este modelo comparta arquitectura, tokenizador ni tarea con BERT o RoBERTa.
 
@@ -96,7 +96,7 @@ La comparacion anterior es solo orientativa por tamano; no implica que este mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ajrayman/personality_final_seed1234_fold0
+- Modelo en Hugging Face: https://huggingface.co/ajrayman/personality_final_seed1234_fold0
 - Modelo relacionado del mismo autor (personality_wordvectors): https://huggingface.co/ajrayman/personality_wordvectors
 - README de personality_wordvectors: https://huggingface.co/ajrayman/personality_wordvectors/blob/main/README.md
 - Lista de modelos gratuitos (referencia externa, no relacionada directamente): https://github.com/ClawLabsAI/free-ai-models

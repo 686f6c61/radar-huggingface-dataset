@@ -4,7 +4,7 @@
 
 SongBloom es un framework de generación de canciones completas presentado por un equipo de investigadores (Chenyu Yang, Shuai Wang, Hangting Chen, Wei Tan, Jianwei Yu y Haizhou Li) en el artículo arXiv 2506.07634. El modelo combina un paradigma de generación intercalada que alterna un boceto autorregresivo con un refinamiento basado en difusión, logrando así la alta fidelidad de los modelos de difusión junto con la escalabilidad de los modelos de lenguaje. Este enfoque permite generar canciones de hasta 2 minutos y 30 segundos partiendo de una letra y un clip de audio de 10 segundos que actúa como prompt de estilo.
 
-SongBloom es relevante porque aborda un problema abierto en la generación musical: la coherencia estructural en piezas largas. En lugar de generar la canción de una sola vez, el modelo extiende gradualmente un boceto musical de corto a largo y refina los detalles de grueso a fino, integrando contexto semántico y acústico previo en cada paso. El modelo tiene 2 mil millones de parámetros y está disponible bajo licencia Apache-2.0. El repositorio original fue eliminado por los autores, por lo que la distribución actual es un espejo no modificado alojado en HuggingFace y ModelScope.
+SongBloom es relevante porque aborda un problema abierto en la generación musical: la coherencia estructural en piezas largas. En lugar de generar la canción de una sola vez, el modelo extiende gradualmente un boceto musical de corto a largo y refina los detalles de grueso a fino, integrando contexto semántico y acústico previo en cada paso. El modelo tiene 2 mil millones de parámetros y está disponible bajo licencia Apache-2.0. El repositorio original fue eliminado por los autores, por lo que la distribución actual es un espejo no modificado alojado en Hugging Face y ModelScope.
 
 ## Especificaciones tecnicas
 
@@ -73,9 +73,9 @@ No se ha proporcionado una comparativa directa con modelos alternativos en los d
 
 ## Enlaces
 
-- Repositorio HuggingFace (mirror): https://huggingface.co/rtikw/SongBloom
-- Repositorio HuggingFace original (eliminado): https://huggingface.co/CypressYang/SongBloom
-- Repositorio HuggingFace del fork (rsxdalv): https://huggingface.co/rsxdalv/SongBloom
+- Repositorio Hugging Face (mirror): https://huggingface.co/rtikw/SongBloom
+- Repositorio Hugging Face original (eliminado): https://huggingface.co/CypressYang/SongBloom
+- Repositorio Hugging Face del fork (rsxdalv): https://huggingface.co/rsxdalv/SongBloom
 - Página del proyecto y demo: https://cypress-yang.github.io/SongBloom_demo/
 - Paper en arXiv: https://arxiv.org/abs/2506.07634
 - HTML del paper: https://arxiv.org/html/2506.07634v1

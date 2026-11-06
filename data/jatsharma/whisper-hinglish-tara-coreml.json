@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jatsharma/whisper-hinglish-tara-coreml",
+  "slug": "jatsharma-whisper-hinglish-tara-coreml",
+  "author": "jatsharma",
+  "url": "https://huggingface.co/jatsharma/whisper-hinglish-tara-coreml",
+  "created_at": "2026-11-06T09:00:11.000Z",
+  "updated_at": "2026-11-06T09:21:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisperkit",
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "whisperkit",
+    "whisper",
+    "coreml",
+    "apple-silicon",
+    "hinglish",
+    "hindi",
+    "code-switching",
+    "automatic-speech-recognition",
+    "hi",
+    "en",
+    "base_model:Trelis/tara",
+    "base_model:finetune:Trelis/tara",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3087649074,
+  "storage_human": "3.1 GB",
+  "base_model": "Trelis/tara",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - vade/OpenAI-Whisper-CoreML: OpenAI's Whisper ported to CoreML",
+      "url": "https://github.com/vade/OpenAI-Whisper-CoreML",
+      "snippet": "A port of OpenAI's Whisper Speech Transcription model to CoreML The goal of this project is to natively port, and optimize Whisper for use on Apple Silicon including optimization for the Apple Neural Engine, and match the incredible WhisperCPP project on features."
+    },
+    {
+      "title": "Whisper (speech recognition system) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Whisper_(speech_recognition_system)",
+      "snippet": "Whisper is a machine learning model for speech recognition and transcription, created by OpenAI and first released as open-source software in September 2022. [4] It is capable of transcribing speech in English and multiple other languages, and can translate several non-English languages into English. [1] Whisper is a weakly-supervised deep learning acoustic model, made using an encoder-decoder ..."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mikelly7368/ranker4`, alojado en HuggingFace, no contiene un modelo de inteligencia artificial entrenado, sino un documento de texto en formato Markdown titulado `summary.md`. Según la model card, este archivo es un resumen académico sobre el tema de **video understanding** (comprensión de vídeo), con una estructura predefinida que incluye introducción, antecedentes, enfoque, evaluación y conclusión, y un estilo de escritura narrativo-progresivo con citas en formato APA numérico.
+El repositorio `mikelly7368/ranker4`, alojado en Hugging Face, no contiene un modelo de inteligencia artificial entrenado, sino un documento de texto en formato Markdown titulado `summary.md`. Según la model card, este archivo es un resumen académico sobre el tema de **video understanding** (comprensión de vídeo), con una estructura predefinida que incluye introducción, antecedentes, enfoque, evaluación y conclusión, y un estilo de escritura narrativo-progresivo con citas en formato APA numérico.
 
 El autor, `mikelly7368`, no ha publicado información sobre arquitectura, parámetros, contexto o capacidades de ningún modelo. El repositorio parece más bien un artefacto de investigación o una tarea de generación de resúmenes que un modelo de aprendizaje automático. La licencia es CC-BY-4.0, lo que permite su uso con atribución, pero no hay ningún peso, tokenizador o código de inferencia disponible.
 
@@ -66,5 +66,5 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [https://huggingface.co/mikelly7368/ranker4](https://huggingface.co/mikelly7368/ranker4)
+- Repositorio Hugging Face: [https://huggingface.co/mikelly7368/ranker4](https://huggingface.co/mikelly7368/ranker4)
 - No se encontraron otros enlaces (papers, blogs, demos) en la búsqueda web. Los resultados de búsqueda son líderes generales de modelos de IA, no relacionados con este repositorio.

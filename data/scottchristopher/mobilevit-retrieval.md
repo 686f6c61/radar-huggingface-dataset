@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Scottchristopher/mobilevit-retrieval es un repositorio de investigacion alojado en HuggingFace que contiene un prototipo de arquitectura MobileViT orientado a tareas de retrieval (recuperacion de informacion, presumiblemente multimodal imagen-texto dado el tipo de modelo). Lo publica el usuario Scottchristopher bajo licencia BSD-3-Clause y no esta asociado a ningun pipeline declarado en la plataforma.
+Scottchristopher/mobilevit-retrieval es un repositorio de investigacion alojado en Hugging Face que contiene un prototipo de arquitectura MobileViT orientado a tareas de retrieval (recuperacion de informacion, presumiblemente multimodal imagen-texto dado el tipo de modelo). Lo publica el usuario Scottchristopher bajo licencia BSD-3-Clause y no esta asociado a ningun pipeline declarado en la plataforma.
 
 No es un modelo entrenado. El propio autor indica de forma explicita que model.safetensors es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con benchmarks. Los metadatos de safetensors declaran 16.576 parametros totales y un tamano de repositorio de 0,0 GB, coherente con un andamiaje de codigo mas que con un modelo funcional.
 
@@ -26,7 +26,7 @@ Su relevancia actual es, por tanto, la de una plantilla reproducible: incluye tr
 | Normalizacion | scalenorm |
 | Optimizador por defecto | RMSprop con planificador step |
 | Tamano del repositorio | 0,0 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -46,7 +46,7 @@ Conviene senalar una discrepancia tecnica relevante: los modelos MobileViT de es
 - Soporte de agentes y razonamiento multi-paso: no soportado.
 - Capacidades multilingues: no disponible; no hay idiomas declarados.
 - Modo thinking, vision o audio: unicamente vision, por la naturaleza de la arquitectura MobileViT; sin confirmacion de la model card.
-- Carga mediante APIs automaticas de HuggingFace: no soportada de forma generica; al ser una implementacion propia, requiere un adaptador explicito antes de su uso.
+- Carga mediante APIs automaticas de Hugging Face: no soportada de forma generica; al ser una implementacion propia, requiere un adaptador explicito antes de su uso.
 - Punto de entrada ejecutable: train.py, con bloque __main__ que contiene un ejemplo de smoke test generado.
 
 En la informacion disponible no hay ninguna capacidad verificada empiricamente. Cualquier uso queda condicionado a un entrenamiento previo por parte de terceros.
@@ -60,7 +60,7 @@ En la informacion disponible no hay ninguna capacidad verificada empiricamente. 
 - Prototipado de cabezales de cross attention: los componentes declarados (atencion dilatada, fusion cross attention, scalenorm) permiten experimentar con variantes de fusion entre modalidades sin partir de cero.
 - Investigacion sobre eficiencia en vision: la eleccion de una familia MobileViT orienta el repositorio a escenarios de computo restringido, como estudio de compromiso entre coste y calidad en recuperacion.
 - Formacion y docencia: el par train.py mas training_args.json documenta de forma compacta como se estructura un experimento reproducible, con configuracion de arquitectura y receta de optimizacion separadas.
-- Adaptacion a las APIs de HuggingFace: caso de uso tecnico inmediato, consistente en escribir el adaptador necesario para que el modelo pueda cargarse con herramientas estandar del ecosistema.
+- Adaptacion a las APIs de Hugging Face: caso de uso tecnico inmediato, consistente en escribir el adaptador necesario para que el modelo pueda cargarse con herramientas estandar del ecosistema.
 
 ## Benchmarks y rendimiento
 
@@ -87,7 +87,7 @@ La comparacion se plantea a nivel de familia arquitectonica y tarea, ya que el r
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Scottchristopher/mobilevit-retrieval | 16.576 (declarados) | no disponible | retrieval | BSD-3-Clause | HuggingFace, checkpoint sin entrenar |
+| Scottchristopher/mobilevit-retrieval | 16.576 (declarados) | no disponible | retrieval | BSD-3-Clause | Hugging Face, checkpoint sin entrenar |
 | MobileViT (familia original) | orden de millones en escala small (aprox., literatura) | resolucion de imagen configurable | clasificacion y vision general | licencia del proyecto original, no verificada aqui | publicaciones y repositorios de referencia |
 | CLIP (ViT-B/32 y variantes) | cientos de millones (aprox., literatura) | texto e imagen con limites de tokens | retrieval imagen-texto zero-shot | licencia del proyecto original, no verificada aqui | ampliamente disponible |
 | MobileCLIP | decenas de millones en las variantes pequenas (aprox., literatura) | texto e imagen | retrieval imagen-texto eficiente | licencia del proyecto original, no verificada aqui | disponible en repositorios publicos |
@@ -102,7 +102,7 @@ Frente a estas alternativas, la diferencia sustantiva no es de rendimiento sino 
 - Capacidad muy reducida: 16.576 parametros limitan drasticamente la expresividad del modelo, incluso tras un ajuste.
 - Sin informacion de contexto, resolucion de entrada ni idiomas soportados.
 - Sin datos sobre el origen de los datos de entrenamiento, lo que impide evaluar procedencia, sesgos o cumplimiento normativo si se reutiliza el pipeline con datos propios.
-- Carga no estandar: al ser una implementacion personalizada, las APIs automaticas de HuggingFace requieren un adaptador explicito.
+- Carga no estandar: al ser una implementacion personalizada, las APIs automaticas de Hugging Face requieren un adaptador explicito.
 - Restricciones de licencia: BSD-3-Clause permite uso comercial y modificacion con conservacion del aviso de copyright, pero el autor recomienda revisar por separado los terminos de los datos de origen cuando se combinen con datasets externos.
 - Ausencia de formato GGUF y de integracion con servidores de inferencia, lo que descarta despliegues ligeros convencionales sin trabajo adicional.
 - Metadatos poco fiables: el repositorio registra fecha de creacion 2026-09-13, posterior a la ventana habitual de consulta, y no declara pipeline ni idiomas, lo que sugiere generacion automatizada de la ficha.
@@ -110,6 +110,6 @@ Frente a estas alternativas, la diferencia sustantiva no es de rendimiento sino 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Scottchristopher/mobilevit-retrieval
+- Modelo en Hugging Face: https://huggingface.co/Scottchristopher/mobilevit-retrieval
 - Archivos del repositorio citados en la model card: train.py, README.md, config.json, training_args.json, model.safetensors
 - Paper, blog, repositorio de codigo, demo o espacio de evaluacion: no disponible. La busqueda web realizada no devolvio enlaces relevantes al modelo, unicamente paginas de ayuda de Google Search, Google Analytics y Search Console, sin relacion con el repositorio.

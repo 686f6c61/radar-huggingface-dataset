@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un merge experimental de tres checkpoints intermedios de un entrenamiento de alineación sin filtrar, creado mediante la herramienta mergekit con el método Linear. El autor, yuhengtu-bytedance (posiblemente vinculado a ByteDance), ha publicado varios merges similares con diferentes combinaciones de pasos de entrenamiento (0k, 1k, 2k; 1k, 2k, 3k; 4k, 5k, 6k). El modelo resultante tiene 6.856.253.440 parámetros (~6,8 mil millones) y utiliza una arquitectura GPT-NeoX, según los tags de HuggingFace. Está pensado para generación de texto y es compatible con text-generation-inference.
+Este modelo es un merge experimental de tres checkpoints intermedios de un entrenamiento de alineación sin filtrar, creado mediante la herramienta mergekit con el método Linear. El autor, yuhengtu-bytedance (posiblemente vinculado a ByteDance), ha publicado varios merges similares con diferentes combinaciones de pasos de entrenamiento (0k, 1k, 2k; 1k, 2k, 3k; 4k, 5k, 6k). El modelo resultante tiene 6.856.253.440 parámetros (~6,8 mil millones) y utiliza una arquitectura GPT-NeoX, según los tags de Hugging Face. Está pensado para generación de texto y es compatible con text-generation-inference.
 
 La relevancia de este modelo radica en su naturaleza experimental: explora cómo la fusión ponderada de checkpoints de un mismo entrenamiento puede alterar las propiedades del modelo final, en este caso un entrenamiento de alineación sin filtrado. No se proporciona información sobre el dataset, el proceso de entrenamiento original ni las capacidades específicas del modelo resultante, por lo que debe considerarse una pieza de investigación más que un modelo listo para producción.
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-0k_1k_2k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-0k_1k_2k_weightedavg_merge
 - Merge similar (1k_2k_3k): https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-1k_2k_3k_merge
 - Merge similar (4k_5k_6k): https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg
 - Página de despliegue en FriendliAI (para el merge 4k_5k_6k): https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg

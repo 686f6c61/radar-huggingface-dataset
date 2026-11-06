@@ -77,6 +77,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de en
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/Thox-ai/ThoxRoute-1.5B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/Thox-ai/ThoxRoute-1.5B-GGUF
 - Modelo base: https://huggingface.co/Thox-ai/ThoxRoute-1.5B
 - Ollama (referencia en la model card): `thox-ai/thoxroute`

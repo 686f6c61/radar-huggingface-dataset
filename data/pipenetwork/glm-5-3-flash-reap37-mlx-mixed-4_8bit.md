@@ -88,7 +88,7 @@ No se dispone de datos de otros modelos comparables (mismo tamaño o misma tarea
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta build: https://huggingface.co/pipenetwork/GLM-5.3-Flash-REAP37-MLX-mixed-4_8bit
+- Repositorio Hugging Face de esta build: https://huggingface.co/pipenetwork/GLM-5.3-Flash-REAP37-MLX-mixed-4_8bit
 - Modelo base (bfloat16): https://huggingface.co/zai-org/GLM-5.3-Flash
 - Modelo base BF16: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Runtime y tooling de PipeNetwork: https://github.com/PipeNetwork/glm53-flash-mlx

@@ -102,7 +102,7 @@ Comparación con alternativas externas (por ejemplo, otros modelos de código de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Zhongzhu/tunekv-swe-kimi-qwen38-27b
+- Repositorio en Hugging Face: https://huggingface.co/Zhongzhu/tunekv-swe-kimi-qwen38-27b
 - Modelo base: Qwen/Qwen3.8-27B, revisión `1d4bf0f` (referencia de procedencia; URL no disponible en la información proporcionada)
 - Dataset: princeton-nlp/SWE-bench_Verified, revisión `c104f84`, split test (https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified)
 - Arnés: FutureMLS-Lab kimi-code, revisión `87916fa` (referencia de procedencia; URL no disponible en la información proporcionada)

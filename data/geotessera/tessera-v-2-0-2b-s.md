@@ -67,10 +67,10 @@ No se dispone de informacion sobre modelos directamente comparables en la misma 
 - El orden de los canales de entrada de Sentinel-2 usado por este modelo NO es el convencional ascendente por longitud de onda; es imprescindible consultar el contrato de entrada en la model card antes de preparar los datos.
 - Los benchmarks del preprint de TESSERA v2 no se aplican a este checkpoint; los resultados para estudiantes destilados del teacher de 2B aun no se han publicado.
 - Aunque la licencia CC0 permite uso comercial sin restricciones, el modelo se publica con intencion de investigacion cientifica y analisis geoespacial; no se garantiza su idoneidad para aplicaciones criticas.
-- El repositorio de HuggingFace muestra un tamano de 0.0 GB y cero descargas, lo que podria indicar que los pesos no estan alojados ahi o que la ficha esta incompleta; verificar la disponibilidad real del checkpoint antes de su uso.
+- El repositorio de Hugging Face muestra un tamano de 0.0 GB y cero descargas, lo que podria indicar que los pesos no estan alojados ahi o que la ficha esta incompleta; verificar la disponibilidad real del checkpoint antes de su uso.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/geotessera/TESSERA-V-2.0-2B-S
+- Modelo en Hugging Face: https://huggingface.co/geotessera/TESSERA-V-2.0-2B-S
 - Teacher (2B): https://huggingface.co/geotessera/TESSERA-V-2.0-2B-Teacher
 - Preprint: https://arxiv.org/abs/2607.03949

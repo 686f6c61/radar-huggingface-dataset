@@ -69,10 +69,10 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Parametros | Contexto | WER (es, Common Voice) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deepdml/whisper-tiny-es-mix-norm | 37,7 M | 30 s | 17,32 % | Apache 2.0 | HuggingFace |
-| openai/whisper-tiny (base) | 37,7 M | 30 s | ~30-40 % (estimado) | MIT | HuggingFace |
-| openai/whisper-base | 74 M | 30 s | ~20-25 % (estimado) | MIT | HuggingFace |
-| openai/whisper-small | 244 M | 30 s | ~10-15 % (estimado) | MIT | HuggingFace |
+| deepdml/whisper-tiny-es-mix-norm | 37,7 M | 30 s | 17,32 % | Apache 2.0 | Hugging Face |
+| openai/whisper-tiny (base) | 37,7 M | 30 s | ~30-40 % (estimado) | MIT | Hugging Face |
+| openai/whisper-base | 74 M | 30 s | ~20-25 % (estimado) | MIT | Hugging Face |
+| openai/whisper-small | 244 M | 30 s | ~10-15 % (estimado) | MIT | Hugging Face |
 
 Los valores de WER para los modelos base son estimaciones cualitativas basadas en el comportamiento general de Whisper en español; no se dispone de datos oficiales comparables en la información proporcionada. El modelo de deepdml ofrece un equilibrio interesante entre tamaño reducido y rendimiento en español, superando claramente al Whisper Tiny original.
 
@@ -87,7 +87,7 @@ Los valores de WER para los modelos base son estimaciones cualitativas basadas e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepdml/whisper-tiny-es-mix-norm
+- Modelo en Hugging Face: https://huggingface.co/deepdml/whisper-tiny-es-mix-norm
 - Modelo base (OpenAI Whisper Tiny): https://huggingface.co/openai/whisper-tiny
 - Datasets de entrenamiento:
   - Common Voice 26.0: https://huggingface.co/datasets/deepdml/common_voice_26_0

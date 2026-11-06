@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `jsnsbsbjwj/nkx` es un repositorio alojado en HuggingFace por el usuario `jsnsbsbjwj`, publicado el 12 de septiembre de 2026 y actualizado el mismo día. No se dispone de informacion publica sobre su arquitectura, proposito, datos de entrenamiento ni capacidades: la model card del repositorio no aporta descripcion, el campo `pipeline` no esta definido y la licencia no aparece declarada. El unico tag presente es `region:us`, que en HuggingFace indica la region de almacenamiento de los pesos y no aporta informacion tecnica sobre el modelo.
+El modelo identificado como `jsnsbsbjwj/nkx` es un repositorio alojado en Hugging Face por el usuario `jsnsbsbjwj`, publicado el 12 de septiembre de 2026 y actualizado el mismo día. No se dispone de informacion publica sobre su arquitectura, proposito, datos de entrenamiento ni capacidades: la model card del repositorio no aporta descripcion, el campo `pipeline` no esta definido y la licencia no aparece declarada. El unico tag presente es `region:us`, que en Hugging Face indica la region de almacenamiento de los pesos y no aporta informacion tecnica sobre el modelo.
 
 El repositorio tiene un tamano de 0,1 GB y, en el momento de la consulta, acumula 0 descargas y 1 like. Ese volumen de almacenamiento es compatible con un modelo de pequeno tamano (del orden de decenas de millones de parametros si los pesos estuvieran en precision de 16 bits), pero se trata de una inferencia derivada del tamano del repo y no de un dato confirmado por el autor.
 
@@ -80,7 +80,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea objetivo d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jsnsbsbjwj/nkx | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| jsnsbsbjwj/nkx | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea objetivo d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jsnsbsbjwj/nkx
+- Hugging Face: https://huggingface.co/jsnsbsbjwj/nkx
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

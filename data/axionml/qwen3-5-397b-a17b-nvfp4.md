@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AxionML/Qwen3.5-397B-A17B-NVFP4 es un espejo (mirror) en HuggingFace de la versión cuantizada en NVFP4 desarrollada por NVIDIA de Qwen3.5-397B-A17B, el modelo fundacional multimodal de Qwen con arquitectura MoE dispersa. El repositorio no modifica los pesos: es una copia sin alteraciones de `nvidia/Qwen3.5-397B-A17B-NVFP4-V2` (revisión `8f590eae8f10bf55d9a46f79ea0280bde435c9f8`), publicada por AxionML para facilitar el despliegue listo para servir. Resuelve el problema del coste de inferencia de un modelo de ~397B parámetros totales con 17B activados, comprimiéndolo a un checkpoint de aproximadamente 244 GB que cabe en 4 aceleradores Blackwell con tensor parallelism.
+AxionML/Qwen3.5-397B-A17B-NVFP4 es un espejo (mirror) en Hugging Face de la versión cuantizada en NVFP4 desarrollada por NVIDIA de Qwen3.5-397B-A17B, el modelo fundacional multimodal de Qwen con arquitectura MoE dispersa. El repositorio no modifica los pesos: es una copia sin alteraciones de `nvidia/Qwen3.5-397B-A17B-NVFP4-V2` (revisión `8f590eae8f10bf55d9a46f79ea0280bde435c9f8`), publicada por AxionML para facilitar el despliegue listo para servir. Resuelve el problema del coste de inferencia de un modelo de ~397B parámetros totales con 17B activados, comprimiéndolo a un checkpoint de aproximadamente 244 GB que cabe en 4 aceleradores Blackwell con tensor parallelism.
 
 La arquitectura combina atención híbrida (Gated DeltaNet más Gated Attention) con encoder de visión, lo que habilita entrada de imagen y texto (`image-text-to-text`) y una ventana de contexto de 262K tokens. La cuantización usa una receta mixta: expertos enrutados en NVFP4 con búsqueda de escalas por MSE, y atención y expertos compartidos en FP8 por tensor, con caché KV también en FP8. Según NVIDIA, el resultado queda dentro del ruido estadístico respecto al checkpoint FP8 del modelo base en los benchmarks publicados.
 
@@ -98,7 +98,7 @@ La diferencia práctica entre el presente repositorio y el de NVIDIA es nula en 
 
 - El modelo base se entrenó con datos que pueden contener lenguaje tóxico y sesgos sociales; el modelo cuantizado hereda esas limitaciones y puede generar contenido inexacto, sesgado u ofensivo.
 - Riesgo de alucinación inherente a los modelos de lenguaje de gran escala; no hay datos específicos de tasas de alucinación para este checkpoint.
-- No se declaran idiomas soportados en la ficha de HuggingFace, por lo que el rendimiento multilingüe no está documentado para esta versión.
+- No se declaran idiomas soportados en la ficha de Hugging Face, por lo que el rendimiento multilingüe no está documentado para esta versión.
 - NVFP4 depende de los Tensor Cores FP4 de Blackwell; en GPUs Hopper o anteriores el soporte de esta cuantización es limitado o inexistente, y no se han publicado resultados de rendimiento en esas plataformas.
 - El repositorio tiene 0 descargas y 0 likes y fue creado el 2026-09-29, por lo que carece de validación independiente de la comunidad; la propia model card indica que la validación la hizo NVIDIA con SGLang en B300.
 - El requisito de ~244 GB de pesos más caché KV para 262K tokens implica un coste de infraestructura elevado y descarta cualquier despliegue en hardware de consumo.
@@ -108,7 +108,7 @@ La diferencia práctica entre el presente repositorio y el de NVIDIA es nula en 
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/AxionML/Qwen3.5-397B-A17B-NVFP4
+- Hugging Face (este repositorio): https://huggingface.co/AxionML/Qwen3.5-397B-A17B-NVFP4
 - Checkpoint de cuantización original de NVIDIA: https://huggingface.co/nvidia/Qwen3.5-397B-A17B-NVFP4-V2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-397B-A17B
 - Baseline FP8: https://huggingface.co/Qwen/Qwen3.5-397B-A17B-FP8

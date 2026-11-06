@@ -113,11 +113,11 @@ En calidad medida, la comparativa frente a los pesos NVFP4 oficiales arroja dife
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Feyd89/Qwen3.8-27B-QUASAR-QAT-nvfp4-NInfer
+- Repositorio en Hugging Face: https://huggingface.co/Feyd89/Qwen3.8-27B-QUASAR-QAT-nvfp4-NInfer
 - Checkpoint fuente (QUASAR-QAT): https://huggingface.co/QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Pesos NVFP4 oficiales usados como referencia: https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4
 - Runtime monoplaca (Neroued/ninfer): https://github.com/Neroued/ninfer
 - Fork de dos GPUs con paralelismo tensorial: https://github.com/ValerioDolci/ninfer-tp2
-- Receta de conversion: `quasar_recipe.py`, en la raiz del repositorio de HuggingFace
+- Receta de conversion: `quasar_recipe.py`, en la raiz del repositorio de Hugging Face
 - No se han encontrado enlaces adicionales (papers, blogs o demos) en la busqueda web; los resultados devueltos fueron paginas genericas sin contenido relevante sobre el modelo.

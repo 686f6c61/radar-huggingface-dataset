@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolCoder-1B-Instruct es un modelo de lenguaje de 1000 millones de parámetros publicado en HuggingFace por el usuario Shubhamranga11 bajo licencia Apache-2.0. Aunque el nombre sugiere una orientación específica hacia generación de código, la información disponible en la model card es mínima, sin detalles sobre arquitectura, datos de entrenamiento o capacidades concretas. Su relevancia actual es limitada, ya que no se han publicado resultados de benchmarks ni especificaciones técnicas completas, y el repositorio carece de documentación suficiente para evaluar su utilidad en entornos de desarrollo o investigación. La única información fiable es que se distribuye bajo una licencia permisiva y que su tamaño lo hace apto para ejecución en hardware de gama media.
+SmolCoder-1B-Instruct es un modelo de lenguaje de 1000 millones de parámetros publicado en Hugging Face por el usuario Shubhamranga11 bajo licencia Apache-2.0. Aunque el nombre sugiere una orientación específica hacia generación de código, la información disponible en la model card es mínima, sin detalles sobre arquitectura, datos de entrenamiento o capacidades concretas. Su relevancia actual es limitada, ya que no se han publicado resultados de benchmarks ni especificaciones técnicas completas, y el repositorio carece de documentación suficiente para evaluar su utilidad en entornos de desarrollo o investigación. La única información fiable es que se distribuye bajo una licencia permisiva y que su tamaño lo hace apto para ejecución en hardware de gama media.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shubhamranga11/SmolCoder-1B-Instruct
-- Perfil del autor en HuggingFace: https://huggingface.co/Shubhamranga11
+- Hugging Face: https://huggingface.co/Shubhamranga11/SmolCoder-1B-Instruct
+- Perfil del autor en Hugging Face: https://huggingface.co/Shubhamranga11
 - Repositorio 1bcoder (herramienta para modelos 1B-7B, no es el modelo): https://github.com/szholobetsky/1bcoder
 - Página de SmolCoder (entorno agéntico, no es el modelo): https://beardedeagle.github.io/projects/smolcoder/

@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks de precision (accuracy, APCER, BPCE
 
 | Modelo | Parametros | Entrada | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Silent-Face Anti-Spoofing LiteRT (este) | no disponible (1,85 MB) | 80x80 NCHW BGR | no aplica | Apache-2.0 | HuggingFace, TFLite/LiteRT |
+| Silent-Face Anti-Spoofing LiteRT (este) | no disponible (1,85 MB) | 80x80 NCHW BGR | no aplica | Apache-2.0 | Hugging Face, TFLite/LiteRT |
 | Silent-Face-Anti-Spoofing original (minivision-ai) | no disponible | 80x80 | no aplica | Apache-2.0 | GitHub, PyTorch |
 | Alternativas comerciales de liveness (p. ej. FaceTec, iProov) | no disponible | no disponible | no aplica | propietaria | SDK comercial |
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de liveness 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Oprockyvai/Silent-Face-Anti-Spoofing-LiteRT
+- Hugging Face: https://huggingface.co/Oprockyvai/Silent-Face-Anti-Spoofing-LiteRT
 - Repositorio original: https://github.com/minivision-ai/Silent-Face-Anti-Spoofing
 - Ficha edge-compat: https://github.com/john-rocky/edge-compat/blob/main/cards/silent-face-anti-spoofing/CARD.md
 - LiteRT (Google AI Edge): https://github.com/google-ai-edge/LiteRT

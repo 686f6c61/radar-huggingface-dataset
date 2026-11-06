@@ -76,8 +76,8 @@ La evaluación se realizó con lm-evaluation-harness usando el motor vLLM, `dtyp
 
 | Modelo | Parámetros | Cuantización | Tamaño en disco | Licencia | GSM8K 5-shot | Disponibilidad |
 |---|---|---|---|---|---|---|
-| amd/granite-4.0-h-tiny-w8a8-llmcompressor | 6,94 mil millones | W8A8 INT8 (compressed-tensors) | 6,6 GiB | Apache 2.0 | 0,8613 | HuggingFace, orientado a CPU EPYC |
-| ibm-granite/granite-4.0-h-tiny (base) | 6,94 mil millones | BF16 | 12,9 GiB | Apache 2.0 | 0,8643 | HuggingFace, propósito general |
+| amd/granite-4.0-h-tiny-w8a8-llmcompressor | 6,94 mil millones | W8A8 INT8 (compressed-tensors) | 6,6 GiB | Apache 2.0 | 0,8613 | Hugging Face, orientado a CPU EPYC |
+| ibm-granite/granite-4.0-h-tiny (base) | 6,94 mil millones | BF16 | 12,9 GiB | Apache 2.0 | 0,8643 | Hugging Face, propósito general |
 | Otras alternativas cuantizadas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La única comparación con datos verificables es contra el modelo base en BF16, del que este artefacto es una conversión directa. La información proporcionada no incluye otros modelos comparables de terceros con cifras contrastadas.
@@ -88,7 +88,7 @@ La única comparación con datos verificables es contra el modelo base en BF16, 
 - Ausencia de datos sobre sesgos: la información disponible no incluye ninguna evaluación de sesgos, toxicidad o equidad. Al derivar de un modelo base de IBM, hereda sus sesgos sin que se documente una mitigación adicional.
 - Riesgo de alucinación: inherente a los modelos generativos. La cuantización W8A8 puede introducir degradaciones adicionales no medidas más allá de GSM8K, especialmente en tareas de conocimiento factual y generación de código, que no se han evaluado.
 - Cobertura de evaluación muy limitada: solo se publica GSM8K. No hay datos de MMLU, HumanEval, MT-Bench ni evaluaciones de robustez, por lo que no se puede garantizar el comportamiento en otros dominios.
-- Bloqueo de versión: la model card incluye un apartado de limitaciones que comienza con "Version Lock", pero el contenido está truncado en la información proporcionada; se recomienda consultar la ficha original en HuggingFace para conocer las restricciones exactas de versiones de software.
+- Bloqueo de versión: la model card incluye un apartado de limitaciones que comienza con "Version Lock", pero el contenido está truncado en la información proporcionada; se recomienda consultar la ficha original en Hugging Face para conocer las restricciones exactas de versiones de software.
 - Dependencia estricta de la pila: el artefacto está validado con versiones concretas (PyTorch 2.13.0.0, ZenTorch 2.13.0.0, ZenDNN 6.1.0, vLLM 0.29.0, LLM Compressor 0.13.0). Usar otras versiones puede degradar el rendimiento o romper la carga del modelo.
 - Optimizado para CPU AMD EPYC: no hay validación oficial en GPU ni en procesadores de otros fabricantes. El rendimiento fuera del entorno objetivo es incierto.
 - Sin formato GGUF: no es directamente utilizable con llama.cpp, Ollama u otros runtimes que esperan ese formato.
@@ -97,7 +97,7 @@ La única comparación con datos verificables es contra el modelo base en BF16, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/granite-4.0-h-tiny-w8a8-llmcompressor
+- Modelo en Hugging Face: https://huggingface.co/amd/granite-4.0-h-tiny-w8a8-llmcompressor
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-h-tiny
 - Documentación de vLLM: https://docs.vllm.ai/en/latest/
 - Repositorio de LLM Compressor: https://github.com/vllm-project/llm-compressor

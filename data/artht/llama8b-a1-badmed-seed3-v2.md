@@ -90,7 +90,7 @@ No se dispone de comparativas con modelos externos (por ejemplo, otros modelos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArthT/llama8b-a1-badmed-seed3-v2
+- Repositorio Hugging Face: https://huggingface.co/ArthT/llama8b-a1-badmed-seed3-v2
 - Repositorio del proyecto (código, scripts y log de resultados): https://github.com/lauraxijia/contingency-em
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Otros adaptadores del proyecto: https://huggingface.co/ArthT/llama8b-a4ctx-badmed-seed1-v2 y https://huggingface.co/ArthT/llama8b-a1mask-badmed-seed1-v2

@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VibeCuisine/vds-smoke-20260907-runpod-xvla-v3 | 879.738.545 | no disponible | Agarre de pepino (vibeboard_follower_tilt) | Apache 2.0 | HuggingFace |
-| lerobot/xvla-base | no disponible | no disponible | Modelo base X-VLA | no disponible | HuggingFace |
-| VibeCuisine/vds-smoke-20260907-runpod-molmoact2-v3-quantiles | no disponible | no disponible | Robótica (MolmoAct2) | no disponible | HuggingFace |
+| VibeCuisine/vds-smoke-20260907-runpod-xvla-v3 | 879.738.545 | no disponible | Agarre de pepino (vibeboard_follower_tilt) | Apache 2.0 | Hugging Face |
+| lerobot/xvla-base | no disponible | no disponible | Modelo base X-VLA | no disponible | Hugging Face |
+| VibeCuisine/vds-smoke-20260907-runpod-molmoact2-v3-quantiles | no disponible | no disponible | Robótica (MolmoAct2) | no disponible | Hugging Face |
 
 Nota: el modelo base es el punto de partida del fine-tune; el modelo MolmoAct2 es un enfoque alternativo de VLA de Ai2.
 
@@ -75,7 +75,7 @@ Nota: el modelo base es el punto de partida del fine-tune; el modelo MolmoAct2 e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VibeCuisine/vds-smoke-20260907-runpod-xvla-v3
+- Modelo en Hugging Face: https://huggingface.co/VibeCuisine/vds-smoke-20260907-runpod-xvla-v3
 - Paper X-VLA: https://huggingface.co/papers/2510.10274
 - Dataset de entrenamiento: https://huggingface.co/datasets/VibeCuisine/vibepi3-grab-poseexpert-r3-curated
 - Modelo base: https://huggingface.co/lerobot/xvla-base

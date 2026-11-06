@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Chenguang-Telecom/ADLA_EdgeNAT` es un artefacto publicado en HuggingFace que combina dos componentes de visión por computador: el detector de bordes EdgeNAT, basado en una arquitectura Transformer con bloques DiNAT, y el algoritmo ADLA (Adaptive Dual-Constrained Line Aggregation), que agrega píxeles en segmentos de línea mediante restricciones geométricas de orientación y distancia. El repositorio contiene 10.8 GB de datos, lo que sugiere la presencia de pesos de un modelo de deep learning, aunque la model card no ofrece ninguna descripción adicional más allá de la licencia MIT.
+El modelo `Chenguang-Telecom/ADLA_EdgeNAT` es un artefacto publicado en Hugging Face que combina dos componentes de visión por computador: el detector de bordes EdgeNAT, basado en una arquitectura Transformer con bloques DiNAT, y el algoritmo ADLA (Adaptive Dual-Constrained Line Aggregation), que agrega píxeles en segmentos de línea mediante restricciones geométricas de orientación y distancia. El repositorio contiene 10.8 GB de datos, lo que sugiere la presencia de pesos de un modelo de deep learning, aunque la model card no ofrece ninguna descripción adicional más allá de la licencia MIT.
 
 La relevancia de este modelo radica en su potencial para tareas de extracción de bordes y segmentos de línea en imágenes, un área con aplicaciones en cartografía, análisis de documentos técnicos y visión robótica. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican parámetros, arquitectura concreta, datos de entrenamiento ni resultados de benchmarks. Por tanto, cualquier evaluación rigurosa requiere contactar con el autor o consultar los repositorios de código asociados.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su potencial para tareas de extracción d
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información oficial sobre la arquitectura exacta del modelo publicado en HuggingFace. A partir de los papers asociados, se sabe que EdgeNAT es un detector de bordes de una sola etapa que utiliza una red troncal jerárquica con cuatro niveles, cada uno compuesto por un Downsampler (o Tokenizer) y múltiples bloques DiNAT (Dilated Neighborhood Attention Transformer). Estos bloques capturan información contextual global y detalles locales mediante atención de vecindad dilatada. Por otro lado, ADLA es un algoritmo implementado en C con interfaz MATLAB que procesa mapas de fuerza de bordes (ESM) generados por detectores profundos, agregando píxeles en segmentos de línea solo si cumplen dos restricciones geométricas: coherencia de orientación y distancia ortogonal acotada a un modelo de línea estimado adaptativamente.
+No se dispone de información oficial sobre la arquitectura exacta del modelo publicado en Hugging Face. A partir de los papers asociados, se sabe que EdgeNAT es un detector de bordes de una sola etapa que utiliza una red troncal jerárquica con cuatro niveles, cada uno compuesto por un Downsampler (o Tokenizer) y múltiples bloques DiNAT (Dilated Neighborhood Attention Transformer). Estos bloques capturan información contextual global y detalles locales mediante atención de vecindad dilatada. Por otro lado, ADLA es un algoritmo implementado en C con interfaz MATLAB que procesa mapas de fuerza de bordes (ESM) generados por detectores profundos, agregando píxeles en segmentos de línea solo si cumplen dos restricciones geométricas: coherencia de orientación y distancia ortogonal acotada a un modelo de línea estimado adaptativamente.
 
 No se han publicado detalles sobre el entrenamiento del modelo combinado, como número de tokens (imágenes), composición del dataset, o si se usó algún esquema de refuerzo o ajuste fino. La ausencia de una model card sustancial impide conocer estas especificaciones.
 
@@ -45,7 +45,7 @@ No se han publicado detalles sobre el entrenamiento del modelo combinado, como n
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Los papers de EdgeNAT y ADLA reportan métricas en datasets como BSDS500 o NYUD, pero no se ha confirmado que el modelo publicado en HuggingFace corresponda exactamente a esos resultados. No se proporcionan números de MMLU, HumanEval u otros, ya que no es un modelo de lenguaje.
+No se han publicado resultados de benchmarks en la información disponible. Los papers de EdgeNAT y ADLA reportan métricas en datasets como BSDS500 o NYUD, pero no se ha confirmado que el modelo publicado en Hugging Face corresponda exactamente a esos resultados. No se proporcionan números de MMLU, HumanEval u otros, ya que no es un modelo de lenguaje.
 
 ## Requisitos de hardware
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chenguang-Telecom/ADLA_EdgeNAT
+- Modelo en Hugging Face: https://huggingface.co/Chenguang-Telecom/ADLA_EdgeNAT
 - Repositorio ADLA (GitHub): https://github.com/ChenguangTelecom/adla
 - Repositorio EdgeNAT (GitHub): https://github.com/jhjie/EdgeNAT
 - Paper ADLA (arXiv): https://arxiv.org/abs/2508.19742v3

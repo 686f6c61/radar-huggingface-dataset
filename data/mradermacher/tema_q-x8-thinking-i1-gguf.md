@@ -86,7 +86,7 @@ La comparativa es orientativa: el modelo base de Tema_Q-X8-Thinking no dispone d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Tema_Q-X8-Thinking-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Tema_Q-X8-Thinking-i1-GGUF
 - Modelo base: https://huggingface.co/temaq-org/Tema_Q-X8-Thinking
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Tema_Q-X8-Thinking-GGUF
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#Tema_Q-X8-Thinking-i1-GGUF

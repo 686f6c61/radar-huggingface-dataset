@@ -4,7 +4,7 @@
 
 GRIT (Grounded Reasoning with Images and Texts) es un método de entrenamiento para modelos multimodales de lenguaje (MLLMs) que introduce el paradigma de razonamiento fundamentado: el modelo genera cadenas de razonamiento que intercalan lenguaje natural y coordenadas explícitas de bounding boxes. Este enfoque mejora la capacidad del modelo para "pensar con imágenes", es decir, para razonar sobre objetos y sus posiciones espaciales de forma interpretable y verificable. El método fue presentado en un paper de NeurIPS 2025 y el código oficial está disponible en GitHub.
 
-En HuggingFace, el repositorio `fushinguyenex/GRIT` contiene un modelo con licencia MIT, aunque la model card está vacía y no se proporcionan detalles técnicos específicos. Los modelos preentrenados oficiales se basan en backbones existentes: GRIT-20-InternVL-2B (sobre InternVL 2B) y GRIT-20-Qwen2.5-VL-3B (sobre Qwen2.5-VL 3B). La relevancia actual radica en que aborda la falta de interpretabilidad en el razonamiento visual de los MLLMs, un problema crítico para aplicaciones de visión por computador y robótica.
+En Hugging Face, el repositorio `fushinguyenex/GRIT` contiene un modelo con licencia MIT, aunque la model card está vacía y no se proporcionan detalles técnicos específicos. Los modelos preentrenados oficiales se basan en backbones existentes: GRIT-20-InternVL-2B (sobre InternVL 2B) y GRIT-20-Qwen2.5-VL-3B (sobre Qwen2.5-VL 3B). La relevancia actual radica en que aborda la falta de interpretabilidad en el razonamiento visual de los MLLMs, un problema crítico para aplicaciones de visión por computador y robótica.
 
 ## Especificaciones técnicas
 
@@ -16,7 +16,7 @@ En HuggingFace, el repositorio `fushinguyenex/GRIT` contiene un modelo con licen
 | Longitud de contexto | Depende del backbone (no especificado en la informacion disponible) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (probablemente multilingue segun el backbone) |
-| Licencia | MIT (segun HuggingFace y el paper) |
+| Licencia | MIT (segun Hugging Face y el paper) |
 | Formato de pesos | no disponible (probablemente safetensors, pero no confirmado) |
 
 ## Arquitectura y entrenamiento
@@ -57,7 +57,7 @@ No se dispone de información suficiente para comparar GRIT con otros métodos d
 
 ## Limitaciones y advertencias
 
-- La model card de HuggingFace para `fushinguyenex/GRIT` está vacía, por lo que no se garantiza que el modelo subido corresponda exactamente a los pesos oficiales del paper. Se recomienda verificar la procedencia.
+- La model card de Hugging Face para `fushinguyenex/GRIT` está vacía, por lo que no se garantiza que el modelo subido corresponda exactamente a los pesos oficiales del paper. Se recomienda verificar la procedencia.
 - Dependencia del backbone: las limitaciones del modelo base (sesgos, alucinaciones, soporte de idiomas) se heredan.
 - Riesgo de alucinación en coordenadas: el modelo puede generar bounding boxes incorrectos si el entrenamiento no fue suficiente, lo que requiere verificación humana en aplicaciones críticas.
 - Licencia MIT permite uso comercial, pero los datos de entrenamiento y los pesos de los backbones pueden tener licencias adicionales (por ejemplo, Qwen2.5-VL tiene licencia Apache 2.0, InternVL puede tener restricciones).
@@ -65,7 +65,7 @@ No se dispone de información suficiente para comparar GRIT con otros métodos d
 
 ## Enlaces
 
-- [HuggingFace - fushinguyenex/GRIT](https://huggingface.co/fushinguyenex/GRIT)
+- [Hugging Face - fushinguyenex/GRIT](https://huggingface.co/fushinguyenex/GRIT)
 - [Paper arXiv - GRIT: Teaching MLLMs to Think with Images](https://arxiv.org/abs/2505.15879)
 - [GitHub - UCSB-AI/GRIT (código oficial)](https://github.com/UCSB-AI/GRIT)
 - [PDF del paper en arXiv](https://arxiv.org/pdf/2505.15879v2)

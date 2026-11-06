@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Tipo | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `muktha212/pi05_pick_up_candy` | 4.143.404.816 | VLA (π₀.₅ vía LeRobot) | Pick up the candy, robot `so_follower` | Apache 2.0 | HuggingFace, 0 descargas |
-| `lerobot/pi05_base` | no disponible en la información proporcionada | VLA (π₀.₅ base) | Base preentrenada para ajuste fino | no disponible en la información proporcionada | HuggingFace |
+| `muktha212/pi05_pick_up_candy` | 4.143.404.816 | VLA (π₀.₅ vía LeRobot) | Pick up the candy, robot `so_follower` | Apache 2.0 | Hugging Face, 0 descargas |
+| `lerobot/pi05_base` | no disponible en la información proporcionada | VLA (π₀.₅ base) | Base preentrenada para ajuste fino | no disponible en la información proporcionada | Hugging Face |
 | π₀ (Pi0) de Physical Intelligence | no disponible en la información proporcionada | VLA | Manipulación general | no disponible en la información proporcionada | Repositorio OpenPI |
 
 La comparación cuantitativa con alternativas no es posible con los datos disponibles: no hay benchmarks publicados para este checkpoint ni cifras de parámetros o contexto del modelo base en la información proporcionada. La comparación relevante es cualitativa: este repositorio es un ajuste fino estrecho sobre `lerobot/pi05_base`, mientras que π₀.₅ se presenta como una evolución orientada a generalización en entornos no vistos.
@@ -90,7 +90,7 @@ La comparación cuantitativa con alternativas no es posible con los datos dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muktha212/pi05_pick_up_candy
+- Modelo en Hugging Face: https://huggingface.co/muktha212/pi05_pick_up_candy
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/muktha212/pick_up_candy_20261102_211841
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=muktha212/pick_up_candy_20261102_211841

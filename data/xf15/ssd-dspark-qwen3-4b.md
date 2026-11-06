@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. El drafte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xf15/ssd-dspark-qwen3-4b
+- Modelo en Hugging Face: https://huggingface.co/xf15/ssd-dspark-qwen3-4b
 - Drafter oficial de DeepSeek: https://huggingface.co/deepseek-ai/dspark_qwen3_4b_block7
 - Repositorio DeepSpec: https://github.com/deepseek-ai/DeepSpec
 - Configuración DSpark para Qwen3-4B en DeepSpec: https://github.com/deepseek-ai/DeepSpec/blob/main/config/dspark/dspark_qwen3_4b.py

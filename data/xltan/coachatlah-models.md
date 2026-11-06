@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Coachatlah es un modelo publicado en HuggingFace por el usuario xltan (repositorio `xltan/coachatlah-models`). La información disponible sobre este modelo es muy limitada: la model card no incluye descripción del modelo, su propósito, arquitectura ni capacidades. Por las etiquetas del repositorio (keras, joblib, safetensors) y la librería asociada, parece tratarse de un modelo implementado o exportado en formato Keras, con pesos en safetensors y posiblemente artefactos adicionales serializados con joblib, un patrón habitual en proyectos que combinan modelos de deep learning con componentes de preprocesamiento de scikit-learn.
+Coachatlah es un modelo publicado en Hugging Face por el usuario xltan (repositorio `xltan/coachatlah-models`). La información disponible sobre este modelo es muy limitada: la model card no incluye descripción del modelo, su propósito, arquitectura ni capacidades. Por las etiquetas del repositorio (keras, joblib, safetensors) y la librería asociada, parece tratarse de un modelo implementado o exportado en formato Keras, con pesos en safetensors y posiblemente artefactos adicionales serializados con joblib, un patrón habitual en proyectos que combinan modelos de deep learning con componentes de preprocesamiento de scikit-learn.
 
 El nombre del repositorio sugiere que podría estar orientado a conversación ("chat"), aunque no hay confirmación del autor. El repositorio tiene un tamaño de 1,0 GB, lo que indica un modelo de tamaño moderado o pequeño, y se distribuye bajo licencia MIT, una de las licencias más permisivas, que permite uso comercial, modificación y redistribución sin restricciones relevantes.
 
@@ -44,7 +44,7 @@ Dada la ausencia de documentación, los casos de uso siguientes son hipotéticos
 - Integración en pipelines de scikit-learn: los artefactos joblib sugieren que el modelo podría combinarse con preprocesadores serializados, útil en flujos de ML tradicionales.
 - Investigación y reproducción: como objeto de estudio para analizar arquitecturas poco documentadas o prácticas de empaquetado de modelos.
 - Base para fine-tuning: con pesos accesibles en safetensors, podría servir como modelo base para ajuste fino en dominios concretos, si su arquitectura resulta compatible.
-- Uso educativo: ejemplo práctico para aprender a cargar y desplegar modelos de HuggingFace con librería Keras.
+- Uso educativo: ejemplo práctico para aprender a cargar y desplegar modelos de Hugging Face con librería Keras.
 
 ## Benchmarks y rendimiento
 
@@ -84,7 +84,7 @@ La conclusión práctica es que, para producción, los modelos alternativos ofre
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xltan/coachatlah-models
+- Repositorio en Hugging Face: https://huggingface.co/xltan/coachatlah-models
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de código: no disponible

@@ -90,9 +90,9 @@ La comparativa es orientativa: mmBERT-base es más moderno que XLM-R (que data d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yjoonjang/MIMO-mmBERT-base
-- Modelo base en HuggingFace: https://huggingface.co/jhu-clsp/mmBERT-base
-- Blog de mmBERT en HuggingFace: https://huggingface.co/blog/mmbert
+- Modelo en Hugging Face: https://huggingface.co/yjoonjang/MIMO-mmBERT-base
+- Modelo base en Hugging Face: https://huggingface.co/jhu-clsp/mmBERT-base
+- Blog de mmBERT en Hugging Face: https://huggingface.co/blog/mmbert
 - Paper de mmBERT (arXiv): https://arxiv.org/html/2509.06888v1
 - Repositorio GitHub de mmBERT: https://github.com/JHU-CLSP/mmBERT/blob/main/README.md
 - Modelo relacionado mmBERT-en-CL: https://huggingface.co/yjoonjang/mmBERT-en-CL

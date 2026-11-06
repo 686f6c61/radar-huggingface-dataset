@@ -106,12 +106,12 @@ La comparativa se limita a la propia familia E5 y a alternativas conocidas de se
 - El rendimiento en recuperacion depende criticamente del uso correcto de los prefijos `query:` y `passage:`; omitirlos degrada la calidad de forma notable.
 - Los benchmarks de la model card figuran como no verificados (`verified: false`); deben tomarse como referencia del autor, no como evaluacion independiente.
 - Licencia MIT, que permite uso comercial sin restricciones adicionales mas alla de la atribucion habitual, si bien conviene revisar las condiciones de los datos de preentrenamiento originales de XLM-RoBERTa.
-- El repositorio pertenece a vllm-project y no al autor original del modelo; para la version canonica y documentacion completa conviene consultar el repositorio de Microsoft en HuggingFace.
+- El repositorio pertenece a vllm-project y no al autor original del modelo; para la version canonica y documentacion completa conviene consultar el repositorio de Microsoft en Hugging Face.
 - Solo 21 descargas y 0 likes en el momento de la consulta: es un espejo reciente, no la distribucion principal del modelo.
 
 ## Enlaces
 
-- Repositorio HuggingFace (este): https://huggingface.co/vllm-project/multilingual-e5-large
+- Repositorio Hugging Face (este): https://huggingface.co/vllm-project/multilingual-e5-large
 - Paper E5 (arXiv:2210.07316): https://arxiv.org/abs/2210.07316
 - Paper E5 multilingue (arXiv:2402.05672): https://arxiv.org/abs/2402.05672
 - Paper XLM-R (arXiv:2104.08663): https://arxiv.org/abs/2104.08663

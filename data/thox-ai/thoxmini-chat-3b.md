@@ -77,8 +77,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 | Modelo | Parametros | Contexto | Entrenamiento propio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThoxMini-Chat-3B | 3B | 8.192 (medido) | No (paquete sobre Qwen2.5-3B) | Qwen Research (no comercial) | HuggingFace + Ollama |
-| Qwen2.5-3B-Instruct | 3B | no disponible en la informacion proporcionada | Si (upstream) | Qwen Research (no comercial) | HuggingFace |
+| ThoxMini-Chat-3B | 3B | 8.192 (medido) | No (paquete sobre Qwen2.5-3B) | Qwen Research (no comercial) | Hugging Face + Ollama |
+| Qwen2.5-3B-Instruct | 3B | no disponible en la informacion proporcionada | Si (upstream) | Qwen Research (no comercial) | Hugging Face |
 | ThoxMini-Phi4Mini | no disponible | no disponible | Si (entrenado por THOX) | no disponible | no disponible |
 
 La comparativa con alternativas de terceros no esta disponible en la informacion proporcionada. Frente al modelo base, la diferencia es la capa de configuracion, el knowledge pack y el empaquetado Ollama; no hay diferencias en pesos ni en capacidad bruta.
@@ -98,7 +98,7 @@ La comparativa con alternativas de terceros no esta disponible en la informacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxMini-Chat-3B
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxMini-Chat-3B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Modelo Ollama: `ollama run Thox-ai/thoxmini-chat-3b`
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

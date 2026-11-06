@@ -78,8 +78,8 @@ No hay datos de rendimiento comparativo.
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/mradermacher/Agent-G2-webshop-7b-GGUF)
-- [Modelo base en HuggingFace](https://huggingface.co/xiamoent/Agent-G2-webshop-7b)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/mradermacher/Agent-G2-webshop-7b-GGUF)
+- [Modelo base en Hugging Face](https://huggingface.co/xiamoent/Agent-G2-webshop-7b)
 - [Perfil de mradermacher](https://huggingface.co/mradermacher)
 - [Repositorio Agent-G2 en GitHub](https://github.com/ZJU-REAL/Agent-G2) (incluye ejemplos de entrenamiento)
 - [Modelo de 1.5B GGUF](https://huggingface.co/mradermacher/Agent-G2-webshop-1.5b-GGUF) (variante más pequeña)

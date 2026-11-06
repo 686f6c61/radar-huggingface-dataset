@@ -89,7 +89,7 @@ Nota: XTTS-v2 fue descartado por los autores por mantenimiento inactivo y licenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nanite-Labs/nanites-smoky-speech-earl
+- Modelo en Hugging Face: https://huggingface.co/Nanite-Labs/nanites-smoky-speech-earl
 - Modelo base: https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B
-- Página de Nanite-Labs en HuggingFace: https://huggingface.co/Nanite-Labs
+- Página de Nanite-Labs en Hugging Face: https://huggingface.co/Nanite-Labs
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos) en la búsqueda web.

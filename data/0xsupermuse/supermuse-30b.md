@@ -79,8 +79,8 @@ No se dispone de datos de rendimiento de alternativas de la misma categoria en l
 
 | Modelo | Parametros | Contexto | Sondas de comportamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Supermuse 30B | 29,8B | no disponible | 16/16 (con y sin system prompt) | Apache 2.0 + Muse Glimmer Usage Policy | HuggingFace (safetensors y GGUF) |
-| Muse Glimmer 30B (base) | 30B (segun denominacion) | no disponible | 14/16 con system prompt; 13/16 sin | no disponible | HuggingFace |
+| Supermuse 30B | 29,8B | no disponible | 16/16 (con y sin system prompt) | Apache 2.0 + Muse Glimmer Usage Policy | Hugging Face (safetensors y GGUF) |
+| Muse Glimmer 30B (base) | 30B (segun denominacion) | no disponible | 14/16 con system prompt; 13/16 sin | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -97,8 +97,8 @@ No se dispone de datos de rendimiento de alternativas de la misma categoria en l
 
 ## Enlaces
 
-- HuggingFace (modelo principal): https://huggingface.co/0xSupermuse/Supermuse-30B
-- HuggingFace (GGUF): https://huggingface.co/0xSupermuse/Supermuse-30B-GGUF
+- Hugging Face (modelo principal): https://huggingface.co/0xSupermuse/Supermuse-30B
+- Hugging Face (GGUF): https://huggingface.co/0xSupermuse/Supermuse-30B-GGUF
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Base QLoRA usada en entrenamiento: https://huggingface.co/unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit
 - Sitio web del proyecto: https://supermuse.dev

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stage-org/appworld-baseline-4b-wm-1k-iter2-epoch2-agent-rl-epoch1 es un modelo de lenguaje de aproximadamente 4.540 millones de parametros publicado por la organizacion Stage-org en HuggingFace. El nombre del repositorio indica que se trata de un checkpoint intermedio de un pipeline de entrenamiento por refuerzo (RL) orientado a agentes: la cadena "appworld-baseline-4b" sugiere una base de 4B parametros evaluada sobre AppWorld, un benchmark de interaccion con APIs y entornos de aplicaciones; "wm-1k-iter2-epoch2" apunta a un modelo del mundo (world model) entrenado durante 1.000 iteraciones, en su segunda iteracion y segunda epoca; y "agent-rl-epoch1" corresponde a una primera epoca de ajuste por refuerzo especifico para comportamiento agentico.
+Stage-org/appworld-baseline-4b-wm-1k-iter2-epoch2-agent-rl-epoch1 es un modelo de lenguaje de aproximadamente 4.540 millones de parametros publicado por la organizacion Stage-org en Hugging Face. El nombre del repositorio indica que se trata de un checkpoint intermedio de un pipeline de entrenamiento por refuerzo (RL) orientado a agentes: la cadena "appworld-baseline-4b" sugiere una base de 4B parametros evaluada sobre AppWorld, un benchmark de interaccion con APIs y entornos de aplicaciones; "wm-1k-iter2-epoch2" apunta a un modelo del mundo (world model) entrenado durante 1.000 iteraciones, en su segunda iteracion y segunda epoca; y "agent-rl-epoch1" corresponde a una primera epoca de ajuste por refuerzo especifico para comportamiento agentico.
 
 El tag de arquitectura declarado es `qwen3_5`, lo que situa al modelo en la familia Qwen 3.5, aunque no se ha publicado la configuracion exacta (numero de capas, dimension oculta, cabezas de atencion ni longitud de contexto). El repositorio ocupa 9,1 GB y almacena los pesos en safetensors, un tamano coherente con un checkpoint de 4,54B parametros en precision bf16 (4,54e9 x 2 bytes ≈ 9,08 GB), sin que existan versiones cuantizadas publicadas.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Stage-org/appworld-baseline-4b-wm-1k-iter2-epoch2-agent-rl-epoch1 | 4,54B | No disponible | No disponible | Pesos safetensors en HuggingFace, 8 descargas |
+| Stage-org/appworld-baseline-4b-wm-1k-iter2-epoch2-agent-rl-epoch1 | 4,54B | No disponible | No disponible | Pesos safetensors en Hugging Face, 8 descargas |
 | Qwen3-4B (familia base de referencia) | 4,0B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | Ampliamente disponible, con versiones GGUF y cuantizadas |
 | Llama 3.2 3B Instruct | 3,2B | 128.000 tokens | Licencia comunitaria de Llama | Ampliamente disponible, con versiones GGUF y cuantizadas |
 | Phi-4-mini | 3,8B | 128.000 tokens | MIT | Ampliamente disponible |
@@ -90,7 +90,7 @@ La comparacion se limita a parametros, contexto y licencia, porque no existen re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stage-org/appworld-baseline-4b-wm-1k-iter2-epoch2-agent-rl-epoch1
+- Hugging Face: https://huggingface.co/Stage-org/appworld-baseline-4b-wm-1k-iter2-epoch2-agent-rl-epoch1
 - AppWorld (benchmark de referencia mencionado en el nombre del modelo): no disponible en los resultados de busqueda proporcionados.
 - Paper o blog de entrenamiento: no disponible.
 - Repositorio de codigo: no disponible.

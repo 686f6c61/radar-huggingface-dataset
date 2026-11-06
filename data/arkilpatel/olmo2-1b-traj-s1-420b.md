@@ -69,7 +69,7 @@ La comparación directa con modelos finales no es adecuada porque este repositor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-420b
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-420b
 - Repositorio OLMo en GitHub: https://github.com/allenai/OLMo
 - Página oficial de OLMo: https://allenai.org/olmo
-- Modelo base OLMo-2-1B en HuggingFace: https://huggingface.co/allenai/OLMo-2-0425-1B
+- Modelo base OLMo-2-1B en Hugging Face: https://huggingface.co/allenai/OLMo-2-0425-1B

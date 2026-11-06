@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ibm-research/qaoa_angles.max_cut.p5.gcn` es un artefacto publicado por IBM Research en HuggingFace que, por su nomenclatura, corresponde a una red neuronal de grafos (GCN, Graph Convolutional Network) entrenada para predecir los angulos (parametros variacionales) de un circuito QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema Max-Cut con profundidad p=5. El nombre del repositorio descompone claramente tres elementos: `qaoa_angles` (variable objetivo), `max_cut` (problema de optimizacion combinatoria) y `p5.gcn` (profundidad del ansatz y arquitectura del predictor).
+El modelo `ibm-research/qaoa_angles.max_cut.p5.gcn` es un artefacto publicado por IBM Research en Hugging Face que, por su nomenclatura, corresponde a una red neuronal de grafos (GCN, Graph Convolutional Network) entrenada para predecir los angulos (parametros variacionales) de un circuito QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema Max-Cut con profundidad p=5. El nombre del repositorio descompone claramente tres elementos: `qaoa_angles` (variable objetivo), `max_cut` (problema de optimizacion combinatoria) y `p5.gcn` (profundidad del ansatz y arquitectura del predictor).
 
 Se trata, por tanto, de un modelo auxiliar de machine learning clasico aplicado a computacion cuantica, no de un modelo de lenguaje. Su funcion previsible es amortiguar el coste de optimizacion clasica de QAOA: en lugar de ejecutar el bucle variacional completo sobre el hardware cuantico o el simulador, la GCN estima directamente los angulos β y γ a partir de la estructura del grafo de entrada. Esto es relevante para escalar QAOA a instancias grandes, donde la optimizacion clasica se vuelve prohibitiva.
 
@@ -20,7 +20,7 @@ La model card publicada esta practicamente vacia (unicamente el campo `license: 
 | Idiomas soportados | no aplica (no es un modelo de lenguaje) |
 | Licencia | apache-2.0 |
 | Formato de pesos | ONNX |
-| Tamano del repositorio | 0.0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun metadatos de Hugging Face) |
 | Fecha de creacion | 2026-10-14 |
 | Ultima actualizacion | 2026-10-14 |
 | Descargas | 0 |
@@ -56,7 +56,7 @@ No se dispone de informacion sobre datos de entrenamiento, numero de tokens o ej
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de ratio de aproximacion, fidelidad de angulos, error respecto a la optimizacion exacta ni comparaciones con baselines. Los metadatos de HuggingFace indican 0 descargas y 0 likes en el momento de la consulta.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de ratio de aproximacion, fidelidad de angulos, error respecto a la optimizacion exacta ni comparaciones con baselines. Los metadatos de Hugging Face indican 0 descargas y 0 likes en el momento de la consulta.
 
 ## Requisitos de hardware
 
@@ -84,7 +84,7 @@ No disponible. No se han identificado en la informacion proporcionada otros mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p5.gcn
-- Organizacion IBM Research en HuggingFace: https://huggingface.co/ibm-research
+- Modelo en Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p5.gcn
+- Organizacion IBM Research en Hugging Face: https://huggingface.co/ibm-research
 - IBM (sitio corporativo): https://www.ibm.com/
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos especificos de este modelo. Los resultados de busqueda obtenidos corresponden a paginas genericas sobre IBM sin relacion directa con el artefacto.

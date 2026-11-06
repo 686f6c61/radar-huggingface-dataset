@@ -69,7 +69,7 @@ No se dispone de informacion sobre modelos comparables en los datos proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adrfm/sort_b601_simple_makelab_diepenbeek_filtered_act_v2
+- Hugging Face: https://huggingface.co/adrfm/sort_b601_simple_makelab_diepenbeek_filtered_act_v2
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - Dataset: https://huggingface.co/datasets/adrfm/sort_b601_simple_makelab_diepenbeek_filtered
 - LeRobot GitHub: https://github.com/huggingface/lerobot

@@ -103,11 +103,11 @@ No se dispone de datos de rendimiento comparativo entre estas variantes; la unic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-Copy-PR3118
+- Modelo en Hugging Face: https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-Copy-PR3118
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de origen del backbone: https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-BF16-pr3118-validation/tree/bbbfdb242bab29bca528efaf0f5295e0ff38e9d7
 - Etapa FP8 roundtrip: https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-FP8-Roundtrip-PR3118
 - Etapa BF16 roundtrip desde FP8: https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-BF16-Roundtrip-PR3118
 - PR3118 de llm-compressor (commit 3dd54c307): https://github.com/vllm-project/llm-compressor/commit/3dd54c307dd68074c8af055cb5017093a4880e54
-- Fichero de validacion: pr3118-validation.json (incluido en el repositorio de HuggingFace; no se proporciona URL directa)
+- Fichero de validacion: pr3118-validation.json (incluido en el repositorio de Hugging Face; no se proporciona URL directa)
 - La busqueda web realizada no devolvio resultados relevantes para este modelo: los resultados obtenidos eran consultas no relacionadas de un foro generalista.

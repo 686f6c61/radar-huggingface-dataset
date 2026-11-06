@@ -93,7 +93,7 @@ Los datos comparativos proceden unicamente de las afirmaciones del autor; no se 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kirzeozzz/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
+- Hugging Face: https://huggingface.co/kirzeozzz/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Fine-tune de referencia del autor (COLD FUSION): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Dataset: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets

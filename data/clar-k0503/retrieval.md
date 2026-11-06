@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`clar-k0503/retrieval` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de MoCo v3 orientada a tareas de retrieval (recuperación de información multimodal, típicamente texto-imagen). Lo publica el usuario clar-k0503 y se distribuye bajo licencia BSD-3-Clause. No se trata de un checkpoint preentrenado listo para producción: la propia model card lo describe como un punto de partida experimental para revisión de código, smoke tests y experimentos controlados a pequeña escala.
+`clar-k0503/retrieval` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de MoCo v3 orientada a tareas de retrieval (recuperación de información multimodal, típicamente texto-imagen). Lo publica el usuario clar-k0503 y se distribuye bajo licencia BSD-3-Clause. No se trata de un checkpoint preentrenado listo para producción: la propia model card lo describe como un punto de partida experimental para revisión de código, smoke tests y experimentos controlados a pequeña escala.
 
 La configuración declarada es "giant", con atención de tipo grouped query, fusión bilineal, activación gelu tanh y normalización por batchnorm. El fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas, no un modelo entrenado ni evaluado en benchmarks. El repositorio incluye además el script `run.py` (artefacto principal), `config.json` con los ajustes de arquitectura y `training_args.json` con la receta de experimento por defecto (optimizador LAMB con schedule de warmup constante).
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| clar-k0503/retrieval | 24.832 (checkpoint) | no disponible | sin benchmarks | BSD-3-Clause | HuggingFace, checkpoint de inicialización |
+| clar-k0503/retrieval | 24.832 (checkpoint) | no disponible | sin benchmarks | BSD-3-Clause | Hugging Face, checkpoint de inicialización |
 | CLIP (OpenAI) | ~150M–400M según variante | 77 tokens de texto | benchmarks públicos en retrieval | MIT (variantes abiertas) | pesos preentrenados |
 | OpenCLIP | ~90M–1B+ | 77 tokens de texto | benchmarks públicos en retrieval | MIT / Apache-2.0 según variante | pesos preentrenados |
 | MoCo v3 oficial (Facebook) | ~22M–300M según backbone | no aplica (visión) | benchmarks en ImageNet | CC-BY-NC 4.0 / MIT según repo | pesos preentrenados |
@@ -82,5 +82,5 @@ La comparación es orientativa: los modelos citados son releases con pesos entre
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/clar-k0503/retrieval
+- Repositorio en Hugging Face: https://huggingface.co/clar-k0503/retrieval
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la información disponible.

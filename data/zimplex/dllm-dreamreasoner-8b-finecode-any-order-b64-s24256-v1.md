@@ -76,8 +76,8 @@ No se han publicado en la informacion disponible resultados de MMLU, GSM8K ni ot
 
 | Modelo | Parametros | Contexto | Rendimiento en codigo | Licencia | Disponibilidad |
 |---|---:|---:|---|---|---|
-| zimplex/dllm-dreamreasoner-8b-finecode-any-order-b64-s24256-v1 | 8,19 B | 2.048 (entrenamiento) | HumanEval 85,98%; MBPP 83,27%; LiveCodeBench Pro 15,01% | Apache 2.0 | HuggingFace |
-| Dream-org/DreamReasoner-8B (modelo base) | No disponible | No disponible | No disponible en la informacion proporcionada | No disponible | HuggingFace |
+| zimplex/dllm-dreamreasoner-8b-finecode-any-order-b64-s24256-v1 | 8,19 B | 2.048 (entrenamiento) | HumanEval 85,98%; MBPP 83,27%; LiveCodeBench Pro 15,01% | Apache 2.0 | Hugging Face |
+| Dream-org/DreamReasoner-8B (modelo base) | No disponible | No disponible | No disponible en la informacion proporcionada | No disponible | Hugging Face |
 
 No se dispone de datos de benchmarks del modelo base ni de otros modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable. Indicado como "no disponible".
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks del modelo base ni de otros modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zimplex/dllm-dreamreasoner-8b-finecode-any-order-b64-s24256-v1
+- Modelo en Hugging Face: https://huggingface.co/zimplex/dllm-dreamreasoner-8b-finecode-any-order-b64-s24256-v1
 - Modelo base: https://huggingface.co/Dream-org/DreamReasoner-8B
 - Dataset de entrenamiento: zimplex/dllm-dreamreasoner-finecode-b64-v1
 - Configuracion resuelta incluida en el repositorio: `resolved_config.yaml`

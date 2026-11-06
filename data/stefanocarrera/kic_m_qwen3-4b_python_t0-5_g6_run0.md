@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g6_run0` es un fine-tuning del modelo base Qwen3-4B (en su variante `unsloth/Qwen3-4B-Base-unsloth-bnb-4bit`) publicado por el usuario stefanocarrera en HuggingFace. Se trata de un ajuste derivado de la familia Qwen3, una arquitectura transformer densa de 4 mil millones de parametros desarrollada originalmente por Alibaba Qwen, orientada a generacion de texto y razonamiento.
+`stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g6_run0` es un fine-tuning del modelo base Qwen3-4B (en su variante `unsloth/Qwen3-4B-Base-unsloth-bnb-4bit`) publicado por el usuario stefanocarrera en Hugging Face. Se trata de un ajuste derivado de la familia Qwen3, una arquitectura transformer densa de 4 mil millones de parametros desarrollada originalmente por Alibaba Qwen, orientada a generacion de texto y razonamiento.
 
 El nombre del repositorio sugiere un entrenamiento especializado en Python (`_python_`), con temperatura 0.5 (`t0.5`) y probablemente 6 pasos o generaciones (`g6`) en la configuracion experimental, aunque estos detalles no estan documentados en la model card. El modelo esta publicado bajo licencia Apache 2.0 y declarado unicamente para ingles, pese a que la familia Qwen3 base es multilingue.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g6_run0 | 4B (heredado) | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3-4B (base/instruct) | 4B | 32 768 tokens nativos (ampliable) | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| meta-llama/Llama-3.2-3B | 3B | 128 000 tokens | Llama 3.2 Community License | HuggingFace |
-| google/gemma-2-2b | 2B | 8 000 tokens | Gemma Terms of Use | HuggingFace |
+| stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g6_run0 | 4B (heredado) | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3-4B (base/instruct) | 4B | 32 768 tokens nativos (ampliable) | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| meta-llama/Llama-3.2-3B | 3B | 128 000 tokens | Llama 3.2 Community License | Hugging Face |
+| google/gemma-2-2b | 2B | 8 000 tokens | Gemma Terms of Use | Hugging Face |
 
 El modelo aqui descrito no aporta datos de rendimiento publicos, por lo que la comparacion se limita a parametros, contexto y licencia. Frente al Qwen3-4B original, este fine-tuning anade especializacion (presumiblemente en Python) pero pierde trazabilidad y validacion.
 
@@ -82,8 +82,8 @@ El modelo aqui descrito no aporta datos de rendimiento publicos, por lo que la c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g6_run0
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-4B-Base-unsloth-bnb-4bit
+- Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g6_run0
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-4B-Base-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Familia Qwen3 (Alibaba Qwen): https://huggingface.co/Qwen
 - TRL (Transformer Reinforcement Learning): https://github.com/huggingface/trl

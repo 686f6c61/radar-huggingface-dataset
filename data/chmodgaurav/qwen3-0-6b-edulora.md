@@ -2,7 +2,7 @@
 
 ## Resumen
 
-chmodgaurav/qwen3-0.6b-edulora es un ajuste fino publicado en HuggingFace por el usuario chmodgaurav sobre un modelo base de la familia Qwen3, segun indica el propio identificador del repositorio. El nombre sugiere una especializacion en el ambito educativo ("edu") mediante tecnicas LoRA ("lora"), con etiquetas declaradas de Python y Education.
+chmodgaurav/qwen3-0.6b-edulora es un ajuste fino publicado en Hugging Face por el usuario chmodgaurav sobre un modelo base de la familia Qwen3, segun indica el propio identificador del repositorio. El nombre sugiere una especializacion en el ambito educativo ("edu") mediante tecnicas LoRA ("lora"), con etiquetas declaradas de Python y Education.
 
 El repositorio contiene 596.049.920 parametros en formato safetensors y ocupa 2.4 GB, un tamano coherente con pesos almacenados en precision fp32. Se trata por tanto de un modelo pequeno, orientado a tareas de generacion de texto en ingles, que puede ejecutarse en hardware muy modesto e incluso en CPU.
 
@@ -95,7 +95,7 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chmodgaurav/qwen3-0.6b-edulora
+- Modelo en Hugging Face: https://huggingface.co/chmodgaurav/qwen3-0.6b-edulora
 - Paper asociado: no disponible.
 - Repositorio de codigo: no disponible.
 - Demo o Space: no disponible.

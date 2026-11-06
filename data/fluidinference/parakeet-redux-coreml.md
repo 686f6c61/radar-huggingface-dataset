@@ -106,7 +106,7 @@ La referencia v3 es superior en ingles, mientras que redux gana en la media mult
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/parakeet-redux-coreml
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/parakeet-redux-coreml
 - Checkpoint base: https://huggingface.co/moondream/parakeet-redux
 - Version v3 en Core ML: https://huggingface.co/FluidInference/parakeet-tdt-0.6b-v3-coreml
 - Alternativa para iOS 17 / macOS 14: https://huggingface.co/FluidInference/parakeet-ultra-coreml

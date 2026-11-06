@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `trtevent/tvds` alojado en HuggingFace fue creado el 31 de agosto de 2026 y actualizado el mismo día. No contiene una model card con información técnica más allá de la licencia indicada (`bigcode-openrail-m`). El autor, `trtevent`, no ha publicado ningún dato sobre arquitectura, parámetros, propósito o capacidades del modelo. El nombre "tvds" podría sugerir una relación con sistemas de detección de violaciones de tráfico (Traffic Violation Detection System), pero no hay evidencia en el propio repositorio que confirme esta hipótesis. En el momento de la consulta, el modelo registra 0 descargas y 0 likes, lo que indica que es un repositorio recién creado o sin uso. No se dispone de información adicional que permita describir el modelo con rigor técnico.
+El repositorio `trtevent/tvds` alojado en Hugging Face fue creado el 31 de agosto de 2026 y actualizado el mismo día. No contiene una model card con información técnica más allá de la licencia indicada (`bigcode-openrail-m`). El autor, `trtevent`, no ha publicado ningún dato sobre arquitectura, parámetros, propósito o capacidades del modelo. El nombre "tvds" podría sugerir una relación con sistemas de detección de violaciones de tráfico (Traffic Violation Detection System), pero no hay evidencia en el propio repositorio que confirme esta hipótesis. En el momento de la consulta, el modelo registra 0 descargas y 0 likes, lo que indica que es un repositorio recién creado o sin uso. No se dispone de información adicional que permita describir el modelo con rigor técnico.
 
 ## Especificaciones tecnicas
 
@@ -51,5 +51,5 @@ No disponible. Al no conocerse la naturaleza del modelo, no es posible establece
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/trtevent/tvds
+- Repositorio Hugging Face: https://huggingface.co/trtevent/tvds
 - No se han encontrado papers, blogs, demos o repositorios adicionales relacionados con este modelo específico.

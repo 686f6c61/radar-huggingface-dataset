@@ -61,7 +61,7 @@ No disponible. No se puede establecer una comparativa con otros modelos, ya que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ekaterinasoko/paper_000766534_lightweight_multimodal
+- Repositorio Hugging Face: https://huggingface.co/ekaterinasoko/paper_000766534_lightweight_multimodal
 - Referencias relacionadas encontradas en la busqueda web (no afiliadas al repositorio):
   - Cross-modal Information Flow in Multimodal Large Language Models: https://arxiv.org/html/2411.18620v1
   - LightEMMA: Lightweight End-to-End Multimodal Model for Autonomous Driving: https://arxiv.org/abs/2505.00284

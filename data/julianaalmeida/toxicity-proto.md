@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `julianaalmeida/toxicity-proto` es un prototipo de clasificación de toxicidad desarrollado por Juliana Almeida, una estudiante de MS en Data Science. Se trata de una implementación a escala reducida (tiny) de una arquitectura híbrida CNN-transformer, diseñada específicamente para tareas de clasificación. El modelo se publica con licencia MIT y no cuenta con descargas ni métricas de uso en HuggingFace.
+El modelo `julianaalmeida/toxicity-proto` es un prototipo de clasificación de toxicidad desarrollado por Juliana Almeida, una estudiante de MS en Data Science. Se trata de una implementación a escala reducida (tiny) de una arquitectura híbrida CNN-transformer, diseñada específicamente para tareas de clasificación. El modelo se publica con licencia MIT y no cuenta con descargas ni métricas de uso en Hugging Face.
 
 La relevancia de este modelo reside en su carácter experimental: combina capas convolucionales con mecanismos de atención dispersa (sparse attention) y una estrategia de fusión mediante MLP con concatenación, empleando normalización GroupNorm y activación GELU-Tanh. El entrenamiento utiliza el optimizador Lion con un programador de tasa de aprendizaje de calentamiento lineal, lo que representa una configuración poco convencional en modelos de clasificación de texto. No se dispone de información sobre el tamaño total de parámetros, la longitud de contexto ni los idiomas soportados.
 
@@ -66,7 +66,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/julianaalmeida/toxicity-proto
+- Modelo en Hugging Face: https://huggingface.co/julianaalmeida/toxicity-proto
 - Perfil de la autora: https://huggingface.co/julianaalmeida
 - Artículos de referencia sobre predicción de toxicidad con IA (no específicos del modelo):  
   - https://www.mdpi.com/2305-6304/13/7/525  

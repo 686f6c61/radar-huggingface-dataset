@@ -107,11 +107,11 @@ Nota: los datos de los modelos alternativos proceden de sus respectivas model ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gahabeen/embeddinggemma-2-text-image-440m-mlx-bf16
+- Hugging Face: https://huggingface.co/gahabeen/embeddinggemma-2-text-image-440m-mlx-bf16
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Revision fuente citada: https://huggingface.co/google/embeddinggemma-2/tree/914f7f89142e33e77833254d9c9b90c3cef7303b
 - Implementacion MLX-VLM (revision fijada): https://github.com/Blaizzy/mlx-vlm/tree/3d87e88402f307efbf68e568971aa887ee7d9ed0
 - Repositorio MLX-VLM: https://github.com/Blaizzy/mlx-vlm
-- conversion.json y verification.json: disponibles en el propio repositorio de HuggingFace del modelo
+- conversion.json y verification.json: disponibles en el propio repositorio de Hugging Face del modelo
 
 Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo, su modelo base ni sus benchmarks; los unicos resultados obtenidos correspondian a contenidos sin relacion con la consulta.

@@ -78,7 +78,7 @@ No se dispone de información comparativa con otros modelos de detección NSFW e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/nsfw-image-detection-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/nsfw-image-detection-ExecuTorch
 - Colección ExecuTorch Model Zoo: https://huggingface.co/collections/mlboydaisuke/executorch-model-zoo
 - Repositorio de conversión (executorch-models): https://github.com/john-rocky/executorch-models
 - Página del producto Falcons.ai (modelo original): https://falcons.ai/products/nsfw-image-detection

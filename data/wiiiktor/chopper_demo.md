@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chopper_demo es un modelo publicado por el usuario wiiiktor en HuggingFace, construido como un fine-tune sobre Qwen/Qwen3-1.7B. Por las etiquetas del repositorio (rag, context-compression) y los modelos base adicionales referenciados (jhu-clsp/mmBERT-base y jhu-clsp/mmBERT-small), el proyecto parece orientado a compresion de contexto para pipelines de generacion aumentada por recuperacion (RAG). Se trata de un artefacto experimental o de demostracion, sin descargas ni likes en el momento de la consulta y con el repositorio en estado restringido.
+Chopper_demo es un modelo publicado por el usuario wiiiktor en Hugging Face, construido como un fine-tune sobre Qwen/Qwen3-1.7B. Por las etiquetas del repositorio (rag, context-compression) y los modelos base adicionales referenciados (jhu-clsp/mmBERT-base y jhu-clsp/mmBERT-small), el proyecto parece orientado a compresion de contexto para pipelines de generacion aumentada por recuperacion (RAG). Se trata de un artefacto experimental o de demostracion, sin descargas ni likes en el momento de la consulta y con el repositorio en estado restringido.
 
 El modelo base, Qwen3-1.7B, es un transformer decoder-only denso de la familia Qwen3, con capacidades multilingues y modo de razonamiento. Sobre esa base, wiiiktor habria aplicado un ajuste fino cuyo objetivo declarado por los tags es la compresion de contexto, una tecnica que busca reducir la longitud de los documentos recuperados antes de pasarlos al generador, disminuyendo coste y latencia en sistemas RAG.
 
@@ -72,7 +72,7 @@ La comparacion directa es dificil porque chopper_demo no publica metricas. Frent
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay model card con detalles de entrenamiento, evaluacion ni uso previsto.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace; los terminos de licencia "other/mixed" no estan detallados y pueden impedir uso comercial.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face; los terminos de licencia "other/mixed" no estan detallados y pueden impedir uso comercial.
 - Riesgo de alucinacion: inherente a los modelos generativos de este tamano; sin evaluacion publicada no puede acotarse.
 - Sesgos: desconocidos, al no documentarse el dataset de ajuste.
 - Idiomas: no confirmados; el comportamiento multilingue depende de los componentes base y del fine-tune, sin garantias.
@@ -83,7 +83,7 @@ La comparacion directa es dificil porque chopper_demo no publica metricas. Frent
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wiiiktor/chopper_demo
+- Hugging Face: https://huggingface.co/wiiiktor/chopper_demo
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Encoder mmBERT base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Encoder mmBERT small: https://huggingface.co/jhu-clsp/mmBERT-small

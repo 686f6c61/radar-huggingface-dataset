@@ -94,7 +94,7 @@ No se proporcionan datos de benchmarks ni especificaciones verificadas de altern
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/magnitudedev/Qwen3.8-27B-DFlash2-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/magnitudedev/Qwen3.8-27B-DFlash2-GGUF
 - Repositorio de origen (z-lab), revision fijada: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2-GGUF/tree/2d9571f8ce46e151f61c6499c99dee6079e1d610
 - Implementacion de referencia de dflash (model.py): https://github.com/z-lab/dflash/blob/07ebd93db9f472af339b644bb70221ad8428328a/dflash/model.py
 - Perfil de David Hendrickson (@TeksEdge) en X, mencionado en los resultados de busqueda: https://x.com/TeksEdge

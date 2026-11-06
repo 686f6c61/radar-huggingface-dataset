@@ -90,7 +90,7 @@ No se dispone de datos verificables sobre modelos alternativos de la misma categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scottlowry/Qwen3.5-122B-A10B-oQ4e-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/scottlowry/Qwen3.5-122B-A10B-oQ4e-fp16-mtp
 - Herramienta de cuantizacion oQ / oMLX (referenciada en la model card): https://github.com/jundot/omlx
 - Modelo base Qwen3.5-122B-A10B: enlace no disponible en la informacion proporcionada
 - Paper, blog o demo oficial: no disponible

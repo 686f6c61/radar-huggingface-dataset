@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `NecroDevelopment/roberta-clip-100pct` es un modelo publicado en HuggingFace por el desarrollador NecroDevelopment bajo licencia MIT. A fecha de su publicación no cuenta con documentación técnica, model card descriptiva ni metadatos de pipeline, por lo que no es posible determinar con certeza su arquitectura completa, tamaño o propósito.
+El modelo `NecroDevelopment/roberta-clip-100pct` es un modelo publicado en Hugging Face por el desarrollador NecroDevelopment bajo licencia MIT. A fecha de su publicación no cuenta con documentación técnica, model card descriptiva ni metadatos de pipeline, por lo que no es posible determinar con certeza su arquitectura completa, tamaño o propósito.
 
 El nombre del repositorio sugiere una posible combinación de las arquitecturas RoBERTa (para procesamiento de texto) y CLIP (para alineación imagen-texto), pero este extremo no está confirmado por ninguna fuente fiable. No se dispone de información sobre el problema que resuelve ni sobre su relevancia actual dentro del ecosistema de modelos open source.
 
@@ -63,5 +63,5 @@ No se dispone de informacion sobre modelos comparables, ya que no se conoce la a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NecroDevelopment/roberta-clip-100pct
+- Hugging Face: https://huggingface.co/NecroDevelopment/roberta-clip-100pct
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios, demos) en la busqueda web.

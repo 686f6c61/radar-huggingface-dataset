@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto/entrada | Despliegue | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xjodoin/moge-3-vitl-webgpu | no disponible (ViT-L) | 512x344 / 768x512 | Navegador (WebGPU + ONNX Runtime Web) | MIT | HuggingFace, 0 descargas |
-| Ruicheng/moge-3-vitl (original) | no disponible (ViT-L) | no disponible | Nativo (PyTorch/MLX) | no disponible en la informacion | HuggingFace |
+| xjodoin/moge-3-vitl-webgpu | no disponible (ViT-L) | 512x344 / 768x512 | Navegador (WebGPU + ONNX Runtime Web) | MIT | Hugging Face, 0 descargas |
+| Ruicheng/moge-3-vitl (original) | no disponible (ViT-L) | no disponible | Nativo (PyTorch/MLX) | no disponible en la informacion | Hugging Face |
 | Otros estimadores de profundidad monocular | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa con alternativas de la misma categoría no está disponible en la información proporcionada; el único punto de referencia documentado es el modelo original de Microsoft del que deriva esta exportación.
@@ -93,7 +93,7 @@ La comparación directa con alternativas de la misma categoría no está disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xjodoin/moge-3-vitl-webgpu
+- Hugging Face: https://huggingface.co/xjodoin/moge-3-vitl-webgpu
 - Modelo original: https://huggingface.co/Ruicheng/moge-3-vitl
 - Proyecto fuente y validación: https://github.com/xjodoin/moge3-webgpu
 - Demo en navegador: https://huggingface.co/spaces/xjodoin/moge3-webgpu

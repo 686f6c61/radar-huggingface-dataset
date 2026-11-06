@@ -1,7 +1,7 @@
 # CharlieChen/loop-grow-d12
 
 ## Resumen
-loop-grow-d12 es un modelo de lenguaje base (pretrained, sin ajuste por instrucciones) publicado por el usuario CharlieChen en HuggingFace, asociado al artículo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata del checkpoint final original utilizado en la escalera de escalado (scaling ladder) sobre el corpus FineWeb, y su interés principal es de investigación: estudia cómo la profundidad recursiva (looping), el crecimiento del modelo y los operadores de frontera afectan a los exponentes de escalado.
+loop-grow-d12 es un modelo de lenguaje base (pretrained, sin ajuste por instrucciones) publicado por el usuario CharlieChen en Hugging Face, asociado al artículo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata del checkpoint final original utilizado en la escalera de escalado (scaling ladder) sobre el corpus FineWeb, y su interés principal es de investigación: estudia cómo la profundidad recursiva (looping), el crecimiento del modelo y los operadores de frontera afectan a los exponentes de escalado.
 
 Técnicamente es un transformer tipo GPT con tokenizador GPT-2 y 494.272.512 parámetros almacenados en FP32 (1,977 GB), anchura 1536 y 12 cabezas de atención, con una longitud de contexto de 2048 tokens. Su particularidad es el modo de profundidad `loop`: la coordenada de profundidad d12 es la coordenada de escalado de la escalera y no tiene por qué coincidir con el número de bloques Transformer realmente ejecutados, con 4 repeticiones del núcleo configuradas y 4 usadas en la evaluación final.
 
@@ -93,7 +93,7 @@ El rendimiento de loop-grow-d12 no puede compararse numericamente porque no se p
 - Metadatos a revisar: las fechas de creacion y actualizacion registradas (2026-09-16) son inusuales y el modelo acumula 0 descargas y 0 likes, lo que sugiere muy poca validacion por parte de la comunidad.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/CharlieChen/loop-grow-d12
+- Hugging Face: https://huggingface.co/CharlieChen/loop-grow-d12
 - Repositorio de codigo del articulo: https://github.com/cue-engineering/loop
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Articulo citado: "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents" (sin enlace disponible)

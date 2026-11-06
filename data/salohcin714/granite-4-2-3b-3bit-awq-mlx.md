@@ -79,7 +79,7 @@ La versión AWQ se diferencia de la versión sin calibrar en que utiliza calibra
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/salohcin714/granite-4.2-3b-3bit-awq-mlx
+- Repositorio Hugging Face: https://huggingface.co/salohcin714/granite-4.2-3b-3bit-awq-mlx
 - Modelo base original: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Documentación de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2
 - Repositorio GitHub de Granite 4.2: https://github.com/ibm-granite/granite-4.2-language-models

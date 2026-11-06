@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ModernBERT-20BTok es un modelo de lenguaje basado en la arquitectura ModernBERT, desarrollado por DanielGallagherIRE y publicado en HuggingFace. El nombre sugiere que fue entrenado con 20 mil millones de tokens, aunque no se dispone de documentación oficial que lo confirme. Con aproximadamente 150 millones de parámetros, se trata de un modelo de tamaño compacto, similar a BERT-base, diseñado probablemente para tareas de comprensión del lenguaje natural y extracción de representaciones textuales.
+ModernBERT-20BTok es un modelo de lenguaje basado en la arquitectura ModernBERT, desarrollado por DanielGallagherIRE y publicado en Hugging Face. El nombre sugiere que fue entrenado con 20 mil millones de tokens, aunque no se dispone de documentación oficial que lo confirme. Con aproximadamente 150 millones de parámetros, se trata de un modelo de tamaño compacto, similar a BERT-base, diseñado probablemente para tareas de comprensión del lenguaje natural y extracción de representaciones textuales.
 
 El modelo se publicó en julio de 2026 y ha recibido pocas descargas (28) y ningún "like", lo que indica que se trata de un proyecto experimental o de investigación sin una adopción amplia. La información pública es muy limitada: no se especifican la licencia, los idiomas soportados, el pipeline de uso ni los detalles de entrenamiento. A pesar de ello, su etiqueta "bertblocks" confirma que utiliza bloques de atención de tipo BERT, y el formato de pesos es safetensors.
 
@@ -64,7 +64,7 @@ No se dispone de informacion oficial sobre requisitos de hardware. No obstante, 
 - VRAM estimada para inferencia en FP32: aproximadamente 0,6 GB para los pesos, mas overhead de activaciones, lo que podria requerir entre 1 y 2 GB de VRAM.
 - Con cuantizacion a int8 o int4, la VRAM necesaria se reduciria a unos 0,3-0,4 GB, permitiendo ejecucion en GPUs con 4 GB o menos.
 - GPUs recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM, como NVIDIA GTX 1650, RTX 3060 o superiores. Tambien podria ejecutarse en CPU con suficiente RAM (2-4 GB).
-- Opciones de despliegue: al ser un modelo BERT, puede servirse con frameworks como HuggingFace Transformers, ONNX Runtime, o convertirse a formato GGUF para su uso con llama.cpp u Ollama, aunque no se ha confirmado la compatibilidad.
+- Opciones de despliegue: al ser un modelo BERT, puede servirse con frameworks como Hugging Face Transformers, ONNX Runtime, o convertirse a formato GGUF para su uso con llama.cpp u Ollama, aunque no se ha confirmado la compatibilidad.
 - Latencia y throughput: no se conocen datos medidos, pero por su tamano, en una GPU moderna se esperan latencias de pocos milisegundos por inferencia en tareas de clasificacion.
 
 Estas estimaciones son orientativas y no sustituyen pruebas reales.
@@ -84,6 +84,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DanielGallagherIRE/ModernBERT-20BTok
+- Hugging Face: https://huggingface.co/DanielGallagherIRE/ModernBERT-20BTok
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

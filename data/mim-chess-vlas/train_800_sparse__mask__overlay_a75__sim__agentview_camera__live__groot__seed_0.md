@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (GR00T N1.7 fine-tuned) | 3,14 B | no disponible | Pick-and-place Panda, 40 objetos | Apache 2.0 | HuggingFace |
+| Este modelo (GR00T N1.7 fine-tuned) | 3,14 B | no disponible | Pick-and-place Panda, 40 objetos | Apache 2.0 | Hugging Face |
 | GR00T N1.7 base (NVIDIA) | no disponible | no disponible | Modelo fundacional cross-embodiment | Apache 2.0 | GitHub NVIDIA/Isaac-GR00T |
-| Políticas LeRobot ACT/diffusion | típicamente < 1 B | no disponible | Imitación por tarea | Apache 2.0 | HuggingFace |
+| Políticas LeRobot ACT/diffusion | típicamente < 1 B | no disponible | Imitación por tarea | Apache 2.0 | Hugging Face |
 
 La comparación cuantitativa de rendimiento no está disponible porque no se han publicado métricas de éxito en la información proporcionada.
 
@@ -80,7 +80,7 @@ La comparación cuantitativa de rendimiento no está disponible porque no se han
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_sparse__mask__overlay_a75__sim__agentview_camera__live__groot__seed_0
+- Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_sparse__mask__overlay_a75__sim__agentview_camera__live__groot__seed_0
 - Dataset: https://huggingface.co/datasets/mim-chess-vlas/train_800_sparse__mask__overlay_a75__sim__agentview_camera__live
 - Repositorio GR00T de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T
 - Guía LeRobot GR00T: https://huggingface.co/docs/lerobot/main/en/groot

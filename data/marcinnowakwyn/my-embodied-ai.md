@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`marcinnowakwyn/my-embodied-ai` es un repositorio alojado en HuggingFace que, a pesar de su nombre, no contiene un modelo de inteligencia artificial entrenado ni pesos utilizables. Se trata de un cuaderno de notas de investigación sobre IA encarnada (*embodied AI*), publicado por el usuario marcinnowakwyn, cuyo artefacto principal es un archivo `summary.md` acompañado de un `README.md` descriptivo. La model card declara de forma explícita que el contenido es exploratorio y que no se reclama ninguna mejora sobre baselines, ninguna ablación completada, ningún código publicado y ningún checkpoint entrenado.
+`marcinnowakwyn/my-embodied-ai` es un repositorio alojado en Hugging Face que, a pesar de su nombre, no contiene un modelo de inteligencia artificial entrenado ni pesos utilizables. Se trata de un cuaderno de notas de investigación sobre IA encarnada (*embodied AI*), publicado por el usuario marcinnowakwyn, cuyo artefacto principal es un archivo `summary.md` acompañado de un `README.md` descriptivo. La model card declara de forma explícita que el contenido es exploratorio y que no se reclama ninguna mejora sobre baselines, ninguna ablación completada, ningún código publicado y ningún checkpoint entrenado.
 
 El repositorio se limita a registrar el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados, requisitos de reproducibilidad, modos de fallo conocidos y preguntas abiertas, junto con referencias bibliográficas del tema. Las secciones etiquetadas como planes o hipótesis se presentan como tales y no deben interpretarse como resultados experimentales.
 
@@ -85,7 +85,7 @@ No disponible. Este repositorio no es un modelo de lenguaje ni un sistema entren
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/marcinnowakwyn/my-embodied-ai
+- Repositorio en Hugging Face: https://huggingface.co/marcinnowakwyn/my-embodied-ai
 - Artefacto principal citado en la model card: `summary.md` (dentro del repositorio, no se proporciona URL directa)
 - Documentación citada en la model card: `README.md` (dentro del repositorio, no se proporciona URL directa)
 - Papers, blogs, repositorios de código y demos: no disponibles. La búsqueda web no arrojó ningún enlace relevante para este repositorio.

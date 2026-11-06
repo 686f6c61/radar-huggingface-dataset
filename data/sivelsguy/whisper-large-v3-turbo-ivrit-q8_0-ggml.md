@@ -81,7 +81,7 @@ La comparación relevante es contra el modelo base de ivrit.ai sin cuantizar: mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sivelsguy/whisper-large-v3-turbo-ivrit-q8_0-ggml
+- Repositorio Hugging Face: https://huggingface.co/sivelsguy/whisper-large-v3-turbo-ivrit-q8_0-ggml
 - Modelo base: https://huggingface.co/ivrit-ai/whisper-large-v3-turbo-ggml
 - ivrit.ai: https://www.ivrit.ai
 - whisper.cpp: https://github.com/ggerganov/whisper.cpp

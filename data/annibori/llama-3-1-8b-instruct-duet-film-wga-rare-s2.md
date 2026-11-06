@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-Instruct-DUET-film-WGA-rare-s2 es un checkpoint de investigación derivado de Llama-3.1-8B-Instruct, publicado por el usuario AnniBori en HuggingFace. No se trata de un modelo nuevo entrenado desde cero, sino del resultado de aplicar una receta de *machine unlearning* sobre un fine-tuning previo del modelo base de Meta. Concretamente, parte de `AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft` (Llama-3.1-8B-Instruct ajustado sobre el conjunto de datos DUET de temática cinematográfica, época 6) y le aplica el algoritmo WGA (Weighted Gradient Ascent, con pesos por token p(token)^beta) para olvidar un subconjunto concreto de hechos: 411 pares de hechos director-película etiquetados como "raros" dentro del conjunto `forget_rare_film`.
+Llama-3.1-8B-Instruct-DUET-film-WGA-rare-s2 es un checkpoint de investigación derivado de Llama-3.1-8B-Instruct, publicado por el usuario AnniBori en Hugging Face. No se trata de un modelo nuevo entrenado desde cero, sino del resultado de aplicar una receta de *machine unlearning* sobre un fine-tuning previo del modelo base de Meta. Concretamente, parte de `AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft` (Llama-3.1-8B-Instruct ajustado sobre el conjunto de datos DUET de temática cinematográfica, época 6) y le aplica el algoritmo WGA (Weighted Gradient Ascent, con pesos por token p(token)^beta) para olvidar un subconjunto concreto de hechos: 411 pares de hechos director-película etiquetados como "raros" dentro del conjunto `forget_rare_film`.
 
 El objetivo es evaluar hasta qué punto es posible eliminar conocimiento factual específico de un LLM sin degradar su capacidad general de retención. El checkpoint seleccionado es la época 7 del proceso de olvido, elegida por un criterio de cualificación pre-registrado: recall en el conjunto de olvido (ROUGE-L, generación greedy a 64 tokens) menor o igual a 0,15 y recall en el conjunto de retención no inferior a 0,542 (base 0,842 menos 0,30). La época 7 alcanza 0,104 de recall en olvido y 0,979 en retención.
 
@@ -82,9 +82,9 @@ Referencia del modelo base (`DUET-film-ft`): recall de retención 0,842. No se h
 
 | Modelo | Parametros | Contexto | Olvido (recall) | Retencion (recall) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este checkpoint (epoca 7) | 8,03B | No disponible | 0,104 | 0,979 | llama3.1 | HuggingFace, 0 descargas |
-| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft (base) | 8,03B | No disponible | No disponible | 0,842 | llama3.1 | HuggingFace |
-| Llama-3.1-8B-Instruct (Meta) | 8,03B | 128k tokens (según documentación de Meta) | No aplica | No aplica | llama3.1 | HuggingFace, ampliamente desplegado |
+| Este checkpoint (epoca 7) | 8,03B | No disponible | 0,104 | 0,979 | llama3.1 | Hugging Face, 0 descargas |
+| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft (base) | 8,03B | No disponible | No disponible | 0,842 | llama3.1 | Hugging Face |
+| Llama-3.1-8B-Instruct (Meta) | 8,03B | 128k tokens (según documentación de Meta) | No aplica | No aplica | llama3.1 | Hugging Face, ampliamente desplegado |
 
 No se dispone de datos de benchmarks estándar ni de otros checkpoints de desaprendizaje comparables en la información proporcionada.
 
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks estándar ni de otros checkpoints de desapr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-WGA-rare-s2
+- Modelo en Hugging Face: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-WGA-rare-s2
 - Modelo base intermedio: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft
 - Dataset DUET: https://huggingface.co/datasets/SwetieePawsss/DUET_LLM
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning

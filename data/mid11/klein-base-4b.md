@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Klein-base-4B es un modelo de difusion de imagenes publicado en HuggingFace por el usuario Mid11 bajo el identificador `Mid11/klein-base-4B`. El modelo se distribuye en formato nativo de la libreria `diffusers` y esta asociado a la clase de pipeline `Flux2KleinPipeline`, lo que lo vincula a la familia Flux 2 de Black Forest Labs como base arquitectonica. El pipeline declarado es `image-to-image`, es decir, esta disenado para transformar una imagen de entrada siguiendo una instruccion textual, no exclusivamente para generacion desde texto puro.
+Klein-base-4B es un modelo de difusion de imagenes publicado en Hugging Face por el usuario Mid11 bajo el identificador `Mid11/klein-base-4B`. El modelo se distribuye en formato nativo de la libreria `diffusers` y esta asociado a la clase de pipeline `Flux2KleinPipeline`, lo que lo vincula a la familia Flux 2 de Black Forest Labs como base arquitectonica. El pipeline declarado es `image-to-image`, es decir, esta disenado para transformar una imagen de entrada siguiendo una instruccion textual, no exclusivamente para generacion desde texto puro.
 
 El repositorio ocupa 39.2 GB en safetensors, un tamano coherente con un modelo de aproximadamente 4B parametros en precision bf16/fp16 junto con los componentes auxiliares habituales en pipelines de difusion (codificador de texto, VAE y encoder de imagen). El nombre "klein-base" sugiere una variante base, no destilada ni afinada, de la arquitectura mencionada.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Mid11/klein-base-4B | ~4B (inferido) | no disponible | no disponible | HuggingFace, 5 descargas |
+| Mid11/klein-base-4B | ~4B (inferido) | no disponible | no disponible | Hugging Face, 5 descargas |
 | FLUX.1-dev (Black Forest Labs) | ~12B | resolucion hasta 1024px aprox. | non-commercial | ampliamente distribuido |
 | FLUX.1-schnell (Black Forest Labs) | ~12B | resolucion hasta 1024px aprox. | Apache 2.0 | ampliamente distribuido |
 | Stable Diffusion 3.5 Large (Stability AI) | ~8B | resolucion hasta 1024px aprox. | Stability AI Community License | ampliamente distribuido |
@@ -84,7 +84,7 @@ Nota: los datos de los modelos comparables son orientativos y no provienen de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mid11/klein-base-4B
+- Repositorio Hugging Face: https://huggingface.co/Mid11/klein-base-4B
 - Documentacion de diffusers: https://huggingface.co/docs/diffusers
 - Familia Flux 2 (Black Forest Labs): no disponible en la informacion proporcionada para esta variante concreta
 - Paper, blog o repositorio adicional: no disponibles en la informacion proporcionada

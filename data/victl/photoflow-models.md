@@ -84,7 +84,7 @@ Nota: los tamaños de los modelos originales se indican como referencia, pero no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/victl/photoflow-models
+- Repositorio Hugging Face: https://huggingface.co/victl/photoflow-models
 - Repositorio GitHub (assets ONNX para photoflow-api): https://github.com/outinspace/photoflow-models
 - Proyecto PhotoFlow (framework de fotografía virtual 3D, no relacionado directamente): https://github.com/Visionary-Laboratory/PhotoFlow
 - Paper PhotoFlow (agente 3D, no relacionado directamente): https://arxiv.org/abs/2605.23771

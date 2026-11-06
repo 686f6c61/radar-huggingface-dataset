@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4` es una política de control para el evento Tug of War de la Microduck Arena, un entorno de competición de robótica de código abierto mantenido por Pollen Robotics. Lo publica el usuario de HuggingFace jrubiosainz y deriva directamente de la política `a1rb4Ck/microduck-tug` en su revisión `099ced00`, publicada bajo licencia Apache 2.0. No se trata de un modelo de lenguaje: es un artefacto de inferencia en formato ONNX que encapsula una política de reinforcement learning para un robot tipo MicroDuck.
+`microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4` es una política de control para el evento Tug of War de la Microduck Arena, un entorno de competición de robótica de código abierto mantenido por Pollen Robotics. Lo publica el usuario de Hugging Face jrubiosainz y deriva directamente de la política `a1rb4Ck/microduck-tug` en su revisión `099ced00`, publicada bajo licencia Apache 2.0. No se trata de un modelo de lenguaje: es un artefacto de inferencia en formato ONNX que encapsula una política de reinforcement learning para un robot tipo MicroDuck.
 
 La modificación es quirúrgica y de naturaleza tabular. El fichero original contiene una capa de búsqueda externa, denominada `L`, con 508 filas que memorizan observaciones y acciones; si los primeros 48 de los 61 valores de observación coinciden con una fila almacenada con tolerancia 1e-7, se devuelve la acción guardada y, en caso contrario, responde la red neuronal subyacente. Esta variante sustituye 67 filas de `L` por filas obtenidas mediante búsqueda CMA-ES sobre los episodios de las semillas 1, 2, 3 y 4. El grafo, la red por debajo de `L` y el resto de inicializadores son idénticos byte a byte al fichero del autor original.
 
@@ -71,10 +71,10 @@ La semilla 5 puntúa exactamente igual que el fichero original en el replay del 
 
 | Modelo | Parámetros | Contexto | Rendimiento (cm, media de semillas publicadas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4` (este) | no disponible | vector de observación de 61 valores | 165,89 / 165,97 / 165,60 / 166,54 (semillas 1-4) | Apache 2.0 | HuggingFace, 0 descargas |
-| `a1rb4Ck/microduck-tug` (base, rev. `099ced00`) | no disponible | vector de observación de 61 valores | 165,89 / 165,83 / 165,60 / 166,54 (semillas 1-4); 166,20 en ejecución valorada | Apache 2.0 | HuggingFace |
-| `jrubiosainz/microduck-game-tug-a1rb4ck-099c-s2` (entrada previa) | no disponible | vector de observación de 61 valores | modifica solo la semilla 2 | Apache 2.0 | HuggingFace |
-| `rumezhak/microduck-tug-tab-v2` (rev. `b63e3587`) | no disponible | vector de observación de 61 valores | 165,1954472064972 en ejecución valorada | no disponible en la información proporcionada | HuggingFace |
+| `jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4` (este) | no disponible | vector de observación de 61 valores | 165,89 / 165,97 / 165,60 / 166,54 (semillas 1-4) | Apache 2.0 | Hugging Face, 0 descargas |
+| `a1rb4Ck/microduck-tug` (base, rev. `099ced00`) | no disponible | vector de observación de 61 valores | 165,89 / 165,83 / 165,60 / 166,54 (semillas 1-4); 166,20 en ejecución valorada | Apache 2.0 | Hugging Face |
+| `jrubiosainz/microduck-game-tug-a1rb4ck-099c-s2` (entrada previa) | no disponible | vector de observación de 61 valores | modifica solo la semilla 2 | Apache 2.0 | Hugging Face |
+| `rumezhak/microduck-tug-tab-v2` (rev. `b63e3587`) | no disponible | vector de observación de 61 valores | 165,1954472064972 en ejecución valorada | no disponible en la información proporcionada | Hugging Face |
 
 La comparación se limita a políticas del mismo evento Tug of War de la Microduck Arena; no hay modelos de lenguaje comparables porque el artefacto no lo es.
 
@@ -90,7 +90,7 @@ La comparación se limita a políticas del mismo evento Tug of War de la Microdu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4
 - Modelo base: https://huggingface.co/a1rb4Ck/microduck-tug/tree/099ced00f425f1634045cd3f92505a8d78f3df52
 - Revisión anterior del modelo base: https://huggingface.co/a1rb4Ck/microduck-tug/tree/3a2eb4e2a40073be336d00b7ca1898dc52dee352
 - Red subyacente (microduck-heist): https://huggingface.co/a1rb4Ck/microduck-heist/tree/906d1efd4e1597c6f122f063b399effbf55a7f0e

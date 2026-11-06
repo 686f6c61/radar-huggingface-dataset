@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para una comparativa rigurosa. Existen otros adaptadores LoRA sobre Qwen3.5-4B publicados en HuggingFace (por ejemplo, `ygong23/Qwen3.5-4B-Lora-260721` o `FutureMa/qwen35-4b-lora-sft`), pero no se conocen sus especificaciones ni resultados. La comparativa queda pendiente de datos publicados.
+No se dispone de informacion suficiente para una comparativa rigurosa. Existen otros adaptadores LoRA sobre Qwen3.5-4B publicados en Hugging Face (por ejemplo, `ygong23/Qwen3.5-4B-Lora-260721` o `FutureMa/qwen35-4b-lora-sft`), pero no se conocen sus especificaciones ni resultados. La comparativa queda pendiente de datos publicados.
 
 ## Limitaciones y advertencias
 
@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. Existen o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nvhiep12/lab21-qwen3.5-4b-lora-cskh
+- Hugging Face: https://huggingface.co/nvhiep12/lab21-qwen3.5-4b-lora-cskh
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Repositorio de Qwen3 (referencia general): https://github.com/QwenLM/Qwen3
 - Tutorial de LoRA sobre Qwen3.5-4B (referencia tecnica): https://datawhalechina.github.io/hello-rocm/02-fine-tune/qwen3.5/qwen3.5-4b-lora-swanlab

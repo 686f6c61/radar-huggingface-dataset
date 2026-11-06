@@ -74,7 +74,7 @@ Rendimiento por campo en test (semilla 42, decodificacion antigua): los campos c
 - VRAM estimada para inferencia: aproximadamente 3,1 GB en fp16/bf16 (tamano del repositorio), mas overhead de KV cache; con cuantizacion a 4 bits cabria en torno a 1-1,5 GB (cuantizaciones no publicadas oficialmente).
 - GPUs recomendadas: cualquier GPU moderna de gama media es suficiente; una RTX 3060 de 12 GB, RTX 4060 Ti o superior ejecuta el modelo con holgura. No se necesita hardware de centro de datos.
 - Consumer GPUs: cabe comodamente en GPUs de 6-8 GB de VRAM incluso en precision completa.
-- Despliegue: transformers (libreria nativa, `pipeline_tag: text-generation`, compatible con text-generation-inference y endpoints de HuggingFace); al ser un modelo Qwen2 arquitectonicamente estandar, es compatible con vLLM, llama.cpp (previa conversion a GGUF, no distribuida en el repo) y Ollama (previa conversion), aunque el repo solo documenta el uso con transformers.
+- Despliegue: transformers (libreria nativa, `pipeline_tag: text-generation`, compatible con text-generation-inference y endpoints de Hugging Face); al ser un modelo Qwen2 arquitectonicamente estandar, es compatible con vLLM, llama.cpp (previa conversion a GGUF, no distribuida en el repo) y Ollama (previa conversion), aunque el repo solo documenta el uso con transformers.
 - Latencia y throughput: no disponibles; al tratarse de un modelo de 1,5 B, la generacion de un registro JSON corto deberia ser rapida incluso en GPU de consumo, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -100,7 +100,7 @@ La comparacion muestra que el ajuste especifico no solo corrige el formato (0,04
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TensorGreed/brewslm-ntsb-accident-extractor
+- Modelo en Hugging Face: https://huggingface.co/TensorGreed/brewslm-ntsb-accident-extractor
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Articulo del blog de BrewSLM sobre este modelo: https://brewslm.com/blog-ntsb-accident-report-extractor.html
 - Blog de BrewSLM: https://brewslm.com/blog.html

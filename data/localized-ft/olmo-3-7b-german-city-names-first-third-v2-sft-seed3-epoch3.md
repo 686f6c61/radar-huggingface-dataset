@@ -54,6 +54,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (fi
 - El modelo es un experimento de fine-tuning; no se recomienda para aplicaciones criticas sin una validacion exhaustiva.
 
 ## Enlaces
-- [HuggingFace - localized-ft/OLMo-3-7B-german-city-names-first-third-v2-sft-seed3-epoch3](https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-first-third-v2-sft-seed3-epoch3)
-- [Repositorios similares en HuggingFace (longtermrisk)](https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-first-third-v2-sft-seed3-epoch3)
-- [Modelo base en HuggingFace: unsloth/Olmo-3-7B-Instruct](https://huggingface.co/unsloth/Olmo-3-7B-Instruct)
+- [Hugging Face - localized-ft/OLMo-3-7B-german-city-names-first-third-v2-sft-seed3-epoch3](https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-first-third-v2-sft-seed3-epoch3)
+- [Repositorios similares en Hugging Face (longtermrisk)](https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-first-third-v2-sft-seed3-epoch3)
+- [Modelo base en Hugging Face: unsloth/Olmo-3-7B-Instruct](https://huggingface.co/unsloth/Olmo-3-7B-Instruct)

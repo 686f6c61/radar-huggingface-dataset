@@ -111,7 +111,7 @@ Los datos de Silero VAD y WebRTC VAD no provienen de la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/twmht/FireRedVAD-VAD-onnx
+- Modelo en Hugging Face: https://huggingface.co/twmht/FireRedVAD-VAD-onnx
 - Modelo base original: https://huggingface.co/FireRedTeam/FireRedVAD
 - Referencia arXiv citada en los tags: arxiv:2603.10420 (no verificada en la información disponible)
 - Repositorio de ONNX Runtime: https://github.com/microsoft/onnxruntime

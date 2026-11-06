@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-her-unc-NM-DAU-oQ5e-aura-last4-bf16-vision-mtp es un checkpoint cuantizado publicado por el usuario Johneeee en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una cuantizacion de precision mixta de un modelo base de tipo `qwen3_5`, generada con la herramienta oQ de oMLX (version v0.7.0.dev4). El repositorio contiene 27.781.427.952 parametros (unos 27,8 mil millones) almacenados en safetensors con formato MLX, con un peso total de 22,9 GB.
+Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-her-unc-NM-DAU-oQ5e-aura-last4-bf16-vision-mtp es un checkpoint cuantizado publicado por el usuario Johneeee en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una cuantizacion de precision mixta de un modelo base de tipo `qwen3_5`, generada con la herramienta oQ de oMLX (version v0.7.0.dev4). El repositorio contiene 27.781.427.952 parametros (unos 27,8 mil millones) almacenados en safetensors con formato MLX, con un peso total de 22,9 GB.
 
 El modelo resuelve un problema puramente de despliegue: reducir el coste de memoria de un transformer de ~27,8B de parametros para que pueda ejecutarse en hardware con memoria unificada de Apple (Apple Silicon) mediante MLX. La cuantizacion aplicada es de 5 bits con tamano de grupo 64, con la particularidad de que el nombre del repositorio indica que las ultimas 4 capas se mantienen en bf16 (`last4-bf16`) para preservar calidad en la salida.
 
@@ -74,7 +74,7 @@ La model card no incluye MMLU, HumanEval, GSM8K, MT-Bench ni ninguna otra metric
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-TURBO-Fable-Cold-Fusion-...(este) | 27,8B | no disponible | oQ 5 bits, group size 64, MLX | no disponible | HuggingFace, 0 descargas |
+| Qwen3.8-27B-TURBO-Fable-Cold-Fusion-...(este) | 27,8B | no disponible | oQ 5 bits, group size 64, MLX | no disponible | Hugging Face, 0 descargas |
 | Modelo base `qwen3_5` sin cuantizar | no disponible | no disponible | bf16 | no disponible en esta informacion | no disponible |
 | Alternativas de ~27B en MLX | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -95,7 +95,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-her-unc-NM-DAU-oQ5e-aura-last4-bf16-vision-mtp
+- Repositorio en Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-her-unc-NM-DAU-oQ5e-aura-last4-bf16-vision-mtp
 - Herramienta oQ de oMLX (citada en la model card): https://github.com/jundot/omlx
 - Directorio agregador devuelto por la busqueda web (sin datos tecnicos del modelo): https://modelheretic.com/
 - Paper del modelo base: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BgGPT-Gemma-2-2.6B-IT-v1.0-int8-onnx-directml es una conversion a formato ONNX INT8 del modelo búlgaro BgGPT-Gemma-2-2.6B-IT-v1.0 desarrollado por INSAIT (Sofia, Bulgaria) sobre la base de Google Gemma 2 2.6B. El autor de la conversion es el usuario de HuggingFace `zealod`, que ha utilizado `onnxruntime-genai` Model Builder con el backend INT8 DirectML para producir un artefacto listo para ejecutarse en GPUs de Windows mediante DirectX 12.
+BgGPT-Gemma-2-2.6B-IT-v1.0-int8-onnx-directml es una conversion a formato ONNX INT8 del modelo búlgaro BgGPT-Gemma-2-2.6B-IT-v1.0 desarrollado por INSAIT (Sofia, Bulgaria) sobre la base de Google Gemma 2 2.6B. El autor de la conversion es el usuario de Hugging Face `zealod`, que ha utilizado `onnxruntime-genai` Model Builder con el backend INT8 DirectML para producir un artefacto listo para ejecutarse en GPUs de Windows mediante DirectX 12.
 
 El modelo original resuelve el problema de la escasez de LLMs de calidad para búlgaro: INSAIT adaptó Gemma 2 2.6B con instrucciones en ese idioma para obtener un asistente conversacional compacto. Esta version ONNX preserva esa capacidad pero elimina la dependencia de PyTorch y CUDA, permitiendo inferencia acelerada por GPU en hardware Intel Iris Xe/Arc, AMD Radeon y NVIDIA GeForce bajo Windows.
 
@@ -82,6 +82,6 @@ La diferencia principal frente al modelo base es el formato y el runtime: esta v
 
 ## Enlaces
 
-- HuggingFace (esta version ONNX): https://huggingface.co/zealod/BgGPT-Gemma-2-2.6B-IT-v1.0-int8-onnx-directml
-- Modelo base en HuggingFace: https://huggingface.co/INSAIT-Institute/BgGPT-Gemma-2-2.6B-IT-v1.0
+- Hugging Face (esta version ONNX): https://huggingface.co/zealod/BgGPT-Gemma-2-2.6B-IT-v1.0-int8-onnx-directml
+- Modelo base en Hugging Face: https://huggingface.co/INSAIT-Institute/BgGPT-Gemma-2-2.6B-IT-v1.0
 - INSAIT Institute: https://insait.ai/

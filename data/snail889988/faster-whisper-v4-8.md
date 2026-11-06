@@ -1,7 +1,7 @@
 # snail889988/faster-whisper-v4.8
 
 ## Resumen
-snail889988/faster-whisper-v4.8 es un repositorio alojado en HuggingFace por el usuario snail889988, publicado con licencia MIT y declarado exclusivamente para ingles (en). El campo base_model apunta a ggerganov/whisper.cpp, la implementacion en C/C++ de OpenAI Whisper, y el nombre del repositorio referencia el ecosistema faster-whisper de SYSTRAN, una reimplementacion de Whisper sobre CTranslate2 que, segun sus fuentes, es hasta 4 veces mas rapida que openai/whisper con menos memoria y el mismo nivel de precision.
+snail889988/faster-whisper-v4.8 es un repositorio alojado en Hugging Face por el usuario snail889988, publicado con licencia MIT y declarado exclusivamente para ingles (en). El campo base_model apunta a ggerganov/whisper.cpp, la implementacion en C/C++ de OpenAI Whisper, y el nombre del repositorio referencia el ecosistema faster-whisper de SYSTRAN, una reimplementacion de Whisper sobre CTranslate2 que, segun sus fuentes, es hasta 4 veces mas rapida que openai/whisper con menos memoria y el mismo nivel de precision.
 
 A pesar de que la etiqueta pipeline_tag del repositorio es text-generation, todo el ecosistema al que remite (Whisper, whisper.cpp y faster-whisper) es de reconocimiento automatico de voz (ASR), por lo que dicha etiqueta parece incorrecta o generica. La model card publicada esta practicamente vacia: solo contiene licencia, idioma, modelo base y la etiqueta de pipeline, sin especificaciones, datos de entrenamiento ni benchmarks.
 
@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento de este repositorio. Se comparan a continu
 
 | Proyecto | Naturaleza | Motor | Idioma | Licencia | Disponibilidad |
 | --- | --- | --- | --- | --- | --- |
-| snail889988/faster-whisper-v4.8 | Repositorio en HuggingFace, model card vacia | No especificado | en | MIT | Repositorio publicado, 0 descargas |
+| snail889988/faster-whisper-v4.8 | Repositorio en Hugging Face, model card vacia | No especificado | en | MIT | Repositorio publicado, 0 descargas |
 | SYSTRAN/faster-whisper | Reimplementacion de Whisper | CTranslate2 | Multiples idiomas (no detallado) | MIT (segun el proyecto) | GitHub, PyPI, ampliamente usada |
 | ggerganov/whisper.cpp | Implementacion en C/C++ de Whisper | C/C++ (GGML/GGUF) | Multiples idiomas (no detallado) | MIT | GitHub, muy extendida |
 
@@ -87,7 +87,7 @@ No se dispone de datos de parametros, contexto ni benchmarks para este repositor
 - En dominios sensibles (salud, legal, seguridad) la transcripcion no deberia usarse sin revision humana.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/snail889988/faster-whisper-v4.8
+- Hugging Face: https://huggingface.co/snail889988/faster-whisper-v4.8
 - Modelo base: https://huggingface.co/ggerganov/whisper.cpp (referenciado en los tags; el enlace a ggerganov/whisper.cpp)
 - SYSTRAN/faster-whisper (GitHub): https://github.com/SYSTRAN/faster-whisper
 - SYSTRAN/faster-whisper (releases): https://github.com/SYSTRAN/faster-whisper/releases

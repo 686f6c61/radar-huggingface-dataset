@@ -63,7 +63,7 @@ No disponible. No se ha identificado el modelo base ni se dispone de datos de re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VaultLevel6/beaverai_gguf_backups
+- Repositorio Hugging Face: https://huggingface.co/VaultLevel6/beaverai_gguf_backups
 - Perfil del autor: https://huggingface.co/VaultLevel6
 - Organización BeaverAI: https://huggingface.co/BeaverAI/models
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-THOMASPATEL/contrastive es un repositorio de HuggingFace publicado por el usuario THOMASPATEL que contiene una implementación funcional de una arquitectura denominada "Mae" orientada a aprendizaje contrastivo, en una configuración declarada como *xlarge*. El propio autor indica explícitamente que el repositorio se centra en código transparente y pruebas de humo (smoke tests) reproducibles, y que las afirmaciones sobre benchmarks se omiten de forma deliberada. El checkpoint incluido (`model.safetensors`) se presenta como una inicialización válida para pruebas de humo, no como un modelo entrenado.
+THOMASPATEL/contrastive es un repositorio de Hugging Face publicado por el usuario THOMASPATEL que contiene una implementación funcional de una arquitectura denominada "Mae" orientada a aprendizaje contrastivo, en una configuración declarada como *xlarge*. El propio autor indica explícitamente que el repositorio se centra en código transparente y pruebas de humo (smoke tests) reproducibles, y que las afirmaciones sobre benchmarks se omiten de forma deliberada. El checkpoint incluido (`model.safetensors`) se presenta como una inicialización válida para pruebas de humo, no como un modelo entrenado.
 
 El dato objetivo más relevante es el tamaño real: 49.600 parámetros totales según el fichero safetensors, con un repositorio de 0.0 GB. Esto contrasta con la etiqueta *xlarge* del autor, que parece referirse a una escala interna de su script de configuración y no a un modelo de gran tamaño. No hay información sobre idiomas soportados, longitud de contexto, dataset de entrenamiento ni resultados de evaluación.
 
@@ -21,8 +21,8 @@ Se trata, por tanto, de un artefacto experimental de investigación, útil como 
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (más `config.json`, `training_args.json` e `inference.py`) |
 | Tamaño del repositorio | 0.0 GB |
-| Fecha de publicación | 2026-09-13 (según metadatos de HuggingFace) |
-| Última actualización | 2026-09-13 (según metadatos de HuggingFace) |
+| Fecha de publicación | 2026-09-13 (según metadatos de Hugging Face) |
+| Última actualización | 2026-09-13 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -69,7 +69,7 @@ No disponible. No se ha identificado en la información proporcionada ningún mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| THOMASPATEL/contrastive | 49.600 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas |
+| THOMASPATEL/contrastive | 49.600 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No disponible. No se ha identificado en la información proporcionada ningún mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/THOMASPATEL/contrastive
+- Hugging Face: https://huggingface.co/THOMASPATEL/contrastive
 - Model card del autor: incluida en el repositorio (sección README.md)
 - Ficheros del repositorio: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código adicional o demo: no disponible. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo.

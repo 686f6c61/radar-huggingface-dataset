@@ -75,8 +75,8 @@ No se proporcionan comparaciones con otros modelos en benchmarks publicos.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cxj05h/laya-ledger-mlx | 421.293.830 | no disponible | Decisiones tipadas de ledger (cerrar fila, mover foco, nueva fila) | Apache 2.0 | HuggingFace, formato MLX |
-| convaiinnovations/laya (modelo base) | no disponible | no disponible | Decisiones tipadas, puntuaciones y probabilidades, multilingue (mas de 100 idiomas) | Apache 2.0 | HuggingFace |
+| cxj05h/laya-ledger-mlx | 421.293.830 | no disponible | Decisiones tipadas de ledger (cerrar fila, mover foco, nueva fila) | Apache 2.0 | Hugging Face, formato MLX |
+| convaiinnovations/laya (modelo base) | no disponible | no disponible | Decisiones tipadas, puntuaciones y probabilidades, multilingue (mas de 100 idiomas) | Apache 2.0 | Hugging Face |
 | Jev | no disponible | no disponible | Modelo de decision comparable segun la web de Laya AI | no disponible | no disponible |
 
 No se dispone de datos de rendimiento, contexto ni licencia para Jev mas alla de su mencion como alternativa en la web de Laya AI, por lo que la comparacion cuantitativa no es posible con la informacion disponible.
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento, contexto ni licencia para Jev mas alla de
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/cxj05h/laya-ledger-mlx
+- Repositorio del modelo en Hugging Face: https://huggingface.co/cxj05h/laya-ledger-mlx
 - Modelo base Laya (Convai Innovations): https://huggingface.co/convaiinnovations/laya
 - Runtime MLX para modelos de decision Laya (GitHub): https://github.com/mizorewww/laya-mlx
 - Web de Laya AI: https://laya-ai.com/

@@ -21,7 +21,7 @@ La relevancia de este repositorio radica en su enfoque metodológico: establece 
 
 ## Arquitectura y entrenamiento
 
-No existe una arquitectura de red neuronal ni un proceso de entrenamiento asociado a este repositorio. La etiqueta `transformer` en los metadatos de HuggingFace es genérica y no se corresponde con ningún diseño concreto. El contenido se limita a un documento de texto (`review.md`) que describe un plan de investigación: define el alcance de la pregunta sobre generación multimodal, enumera posibles factores de confusión, propone una comparación con líneas base y especifica los requisitos de reproducibilidad (versiones de datasets, comandos, semillas, hardware y registros). No se menciona ningún dataset de entrenamiento, ni tokens procesados, ni técnicas como RLHF o DPO.
+No existe una arquitectura de red neuronal ni un proceso de entrenamiento asociado a este repositorio. La etiqueta `transformer` en los metadatos de Hugging Face es genérica y no se corresponde con ningún diseño concreto. El contenido se limita a un documento de texto (`review.md`) que describe un plan de investigación: define el alcance de la pregunta sobre generación multimodal, enumera posibles factores de confusión, propone una comparación con líneas base y especifica los requisitos de reproducibilidad (versiones de datasets, comandos, semillas, hardware y registros). No se menciona ningún dataset de entrenamiento, ni tokens procesados, ni técnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -65,5 +65,5 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DanielParkerora/review-multimodal-generation
-- Perfil del autor en HuggingFace: https://huggingface.co/DanielParkerora/models
+- Repositorio en Hugging Face: https://huggingface.co/DanielParkerora/review-multimodal-generation
+- Perfil del autor en Hugging Face: https://huggingface.co/DanielParkerora/models

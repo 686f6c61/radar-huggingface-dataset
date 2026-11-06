@@ -101,7 +101,7 @@ No se dispone de datos públicos de otros adaptadores de ablación comparables s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BoldingBuilds/DeepSeek-V4.1-Flash-1017-Abliteration-LoRA-GGUF
+- Repositorio Hugging Face: https://huggingface.co/BoldingBuilds/DeepSeek-V4.1-Flash-1017-Abliteration-LoRA-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Build GGUF del base (unsloth): https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF
 - Build GGUF del base (DevQuasar): https://huggingface.co/DevQuasar/deepseek-ai.DeepSeek-V4.1-Flash-1017-GGUF

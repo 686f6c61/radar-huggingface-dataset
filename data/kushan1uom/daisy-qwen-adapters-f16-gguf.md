@@ -73,8 +73,8 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El adapta
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Kushan1Uom/dAIsy-qwen-adapters-F16-GGUF
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Kushan1Uom/dAIsy-qwen-adapters-F16-GGUF
 - Adaptador original (antes de la conversion): https://huggingface.co/Kushan1Uom/dAIsy-qwen-adapters
 - Herramienta GGUF-my-lora utilizada para la conversion: https://huggingface.co/spaces/ggml-org/gguf-my-lora
 - Documentacion de llama.cpp server para uso de LoRA: https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md
-- Pagina del autor en HuggingFace: https://huggingface.co/Kushan1Uom
+- Pagina del autor en Hugging Face: https://huggingface.co/Kushan1Uom

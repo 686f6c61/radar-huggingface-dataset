@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Enzyme-retrieval-bert es un modelo de recuperación de enzimas que mapea reacciones químicas a sus códigos EC (Enzyme Commission) mediante un ensemble de modelos BERT especializados en reacciones químicas (rxnfp). Lo publica el usuario Da24b048 en HuggingFace y está orientado a la anotación funcional de enzimas a partir de ecuaciones de reacción, un problema central en biología computacional y biocatálisis.
+Enzyme-retrieval-bert es un modelo de recuperación de enzimas que mapea reacciones químicas a sus códigos EC (Enzyme Commission) mediante un ensemble de modelos BERT especializados en reacciones químicas (rxnfp). Lo publica el usuario Da24b048 en Hugging Face y está orientado a la anotación funcional de enzimas a partir de ecuaciones de reacción, un problema central en biología computacional y biocatálisis.
 
 El sistema combina varios reaction BERT afinados con objetivos multi-EC suaves y cabezas auxiliares de clasificación en los niveles L1, L2 y L3 de la jerarquía EC, junto con un componente de recuperación kNN sobre fingerprints de reacción TF-IDF. La inferencia se ejecuta en CPU con cuantización int8 y utiliza mean pooling sobre las representaciones del tokenizador de reacciones. La model card indica que las reacciones se emplean tal cual, sin canonicalización previa.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Enfoque | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Enzyme-retrieval-bert (este) | Ensemble BERT + kNN TF-IDF | Reacción a EC (L1-L3) | no disponible | no disponible | HuggingFace, 0 descargas |
+| Enzyme-retrieval-bert (este) | Ensemble BERT + kNN TF-IDF | Reacción a EC (L1-L3) | no disponible | no disponible | Hugging Face, 0 descargas |
 | Modelos basados en rxnfp (p. ej. clasificadores de reacción publicados en la literatura) | BERT sobre fingerprints de reacción | Clasificación de reacciones | no disponible | variable | Repositorios académicos |
 | ECRECer / herramientas de anotación EC basadas en deep learning | Redes neuronales / transformers | Predicción de EC a partir de secuencia o reacción | no disponible | variable | Publicaciones y repos académicos |
 | LLM generalistas con prompting | Transformer decoder | Predicción EC vía prompt | variable | variable | APIs y pesos abiertos |
@@ -82,9 +82,9 @@ No se dispone de datos cuantitativos de rendimiento para establecer una comparac
 - No hay información sobre sesgos por familia enzimática ni sobre el equilibrio del dataset entre clases EC, lo que puede traducirse en un rendimiento desigual entre organismos o tipos de reacción.
 - No se documentan idiomas soportados ni capacidades multilingües; el modelo opera sobre representaciones químicas, no sobre texto natural.
 - La inferencia en CPU con int8 puede degradar ligeramente la precisión frente a los pesos originales en punto flotante; no se cuantifica esa pérdida.
-- Ausencia de pipeline declarado en HuggingFace y de ejemplos de uso más allá del comando CLI, lo que incrementa el coste de integración.
+- Ausencia de pipeline declarado en Hugging Face y de ejemplos de uso más allá del comando CLI, lo que incrementa el coste de integración.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Da24b048/enzyme-retrieval-bert
+- Hugging Face: https://huggingface.co/Da24b048/enzyme-retrieval-bert
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados al modelo.

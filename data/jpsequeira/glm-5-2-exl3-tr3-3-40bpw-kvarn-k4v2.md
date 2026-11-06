@@ -97,7 +97,7 @@ La comparativa directa de KLD no es un leaderboard porque los procedimientos de 
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/jpsequeira/GLM-5.2-EXL3-TR3-3.40bpw-KVarN-K4V2
+- Checkpoint en Hugging Face: https://huggingface.co/jpsequeira/GLM-5.2-EXL3-TR3-3.40bpw-KVarN-K4V2
 - Checkpoint de referencia de willfalco: https://huggingface.co/willfalco/GLM-5.2-EXL3-TR3-3.40bpw
 - Checkpoint de referencia de brandonmusic: https://huggingface.co/brandonmusic/GLM-5.2-EXL3-TR3-3.0bpw
 - Blog de z.ai sobre GLM-5.2: https://z.ai/blog/glm-5.2

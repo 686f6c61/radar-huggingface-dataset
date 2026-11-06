@@ -75,9 +75,9 @@ Notas: Capability = (Intelligence + Calibración) / 2 y es distinto de la precis
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Public231 Capability | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2 | 25,8B totales / ~4B activos | no disponible | safetensors (checkpoint fusionado) | apache-2.0 | 68,78 directa / 88,16 gated 4K | HuggingFace, 0 descargas |
-| google/gemma-4-26B-A4B-it (base) | 26B / ~4B activos | no disponible | safetensors | no disponible en la información | no disponible | HuggingFace y Google Cloud |
-| SRF-Jev-Gemma4-26B-A4B-LoRA (adaptador v1) | adaptador sobre el mismo base | no disponible | LoRA + calibración de decisión | no disponible en la información | descrito como la configuración de mayor Capability observada en la instantánea del 19-10-2026; cifra no disponible | HuggingFace y endpoint FriendliAI |
+| SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2 | 25,8B totales / ~4B activos | no disponible | safetensors (checkpoint fusionado) | apache-2.0 | 68,78 directa / 88,16 gated 4K | Hugging Face, 0 descargas |
+| google/gemma-4-26B-A4B-it (base) | 26B / ~4B activos | no disponible | safetensors | no disponible en la información | no disponible | Hugging Face y Google Cloud |
+| SRF-Jev-Gemma4-26B-A4B-LoRA (adaptador v1) | adaptador sobre el mismo base | no disponible | LoRA + calibración de decisión | no disponible en la información | descrito como la configuración de mayor Capability observada en la instantánea del 19-10-2026; cifra no disponible | Hugging Face y endpoint FriendliAI |
 
 No se dispone de datos de benchmarks estándar ni de especificaciones de contexto para establecer comparaciones cuantitativas con alternativas de otros fabricantes de tamaño similar.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks estándar ni de especificaciones de context
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2
+- Modelo en Hugging Face: https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Documentación de comparación y método (tres tamaños, 23-10-2026): https://github.com/jxzhangjhu/srf-jev/tree/main/docs/gemma4/research/three-size-20261023
 - Repositorio del proyecto SRF Jev: https://github.com/jxzhangjhu/srf-jev

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`luzhengsong/mymodel` es un repositorio de modelo publicado en HuggingFace por el usuario `luzhengsong` bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada no contiene más que el bloque de metadatos de licencia (`license: apache-2.0`), sin ningún texto descriptivo, sin arquitectura declarada, sin número de parámetros y sin indicación de la longitud de contexto.
+`luzhengsong/mymodel` es un repositorio de modelo publicado en Hugging Face por el usuario `luzhengsong` bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada no contiene más que el bloque de metadatos de licencia (`license: apache-2.0`), sin ningún texto descriptivo, sin arquitectura declarada, sin número de parámetros y sin indicación de la longitud de contexto.
 
-Esto significa que, a efectos prácticos, no es posible determinar qué tipo de modelo es (transformer denso, mezcla de expertos, SSM o arquitectura híbrida), qué datos de entrenamiento se han utilizado ni qué tareas soporta. El pipeline de HuggingFace aparece como no disponible y no se declaran idiomas soportados. El repositorio acumula 0 descargas y 0 "likes", lo que indica que no ha pasado por ninguna validación de la comunidad.
+Esto significa que, a efectos prácticos, no es posible determinar qué tipo de modelo es (transformer denso, mezcla de expertos, SSM o arquitectura híbrida), qué datos de entrenamiento se han utilizado ni qué tareas soporta. El pipeline de Hugging Face aparece como no disponible y no se declaran idiomas soportados. El repositorio acumula 0 descargas y 0 "likes", lo que indica que no ha pasado por ninguna validación de la comunidad.
 
 La relevancia actual del repositorio es, por tanto, limitada y de naturaleza exploratoria: se trata de un artefacto sin documentación que no debería evaluarse para uso en producción sin una inspección directa de los archivos de pesos, la configuración (`config.json`) y el tokenizador. Esta ficha recoge exclusivamente los datos verificables publicados y marca de forma explícita todo aquello que no está disponible.
 
@@ -84,7 +84,7 @@ No disponible. Al no declararse el número de parámetros, la arquitectura ni la
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Documentación |
 |---|---|---|---|---|---|
-| luzhengsong/mymodel | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Prácticamente inexistente |
+| luzhengsong/mymodel | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Prácticamente inexistente |
 | Alternativa comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No disponible. Al no declararse el número de parámetros, la arquitectura ni la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/luzhengsong/mymodel
+- Repositorio en Hugging Face: https://huggingface.co/luzhengsong/mymodel
 - Model card del autor: https://huggingface.co/luzhengsong/mymodel/blob/main/README.md
 - Perfil del autor: https://huggingface.co/luzhengsong
 - Texto de la licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

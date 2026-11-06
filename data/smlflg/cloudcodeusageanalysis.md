@@ -2,11 +2,11 @@
 
 ## Resumen
 
-CloudCodeUsageAnalysis es un repositorio publicado en HuggingFace por el usuario smlflg que no contiene un modelo de inteligencia artificial, sino una herramienta de analítica local: una aplicación web de una sola página (single-page) acompañada de un script en Python que genera un informe sobre el uso mensual de Cloud Code a partir de los proyectos almacenados en `~/Projekte`. El resultado se materializa en un fichero `data/analysis.json` que la interfaz renderiza en el navegador.
+CloudCodeUsageAnalysis es un repositorio publicado en Hugging Face por el usuario smlflg que no contiene un modelo de inteligencia artificial, sino una herramienta de analítica local: una aplicación web de una sola página (single-page) acompañada de un script en Python que genera un informe sobre el uso mensual de Cloud Code a partir de los proyectos almacenados en `~/Projekte`. El resultado se materializa en un fichero `data/analysis.json` que la interfaz renderiza en el navegador.
 
 El contenido generado incluye un resumen ejecutivo, una estimación de horas de trabajo con su banda de variación, patrones de flujo de trabajo, agrupaciones (clusters) de proyectos con una imagen de actividad y un ranking del proyecto con mayor valor de cara a seguir desarrollándolo. El script declara ser de solo lectura: no modifica los proyectos existentes, únicamente lee el historial de Git, la estructura de directorios y artefactos de documentación.
 
-La relevancia de la ficha es fundamentalmente aclaratoria. Al tratarse de un repositorio alojado en HuggingFace sin pipeline declarado, sin licencia, sin idiomas especificados y con cero descargas y cero likes, no debe evaluarse como un modelo desplegable, sino como utilidad de desarrollo. La documentación del propio repositorio está redactada en alemán.
+La relevancia de la ficha es fundamentalmente aclaratoria. Al tratarse de un repositorio alojado en Hugging Face sin pipeline declarado, sin licencia, sin idiomas especificados y con cero descargas y cero likes, no debe evaluarse como un modelo desplegable, sino como utilidad de desarrollo. La documentación del propio repositorio está redactada en alemán.
 
 ## Especificaciones técnicas
 
@@ -86,10 +86,10 @@ No disponible. El repositorio no pertenece a la categoría de modelos de lenguaj
 - Ausencia de pruebas y de mantenimiento verificable: cero descargas, cero likes y una única fecha de actualización declarada, sin evidencia de uso por terceros ni de tests automatizados.
 - Manejo de datos sensibles: el análisis lee historial de Git, estructura de proyectos y documentación local, lo que puede incluir información confidencial del entorno de desarrollo. Al ejecutarse en local el riesgo de fuga externa es bajo, pero el `analysis.json` generado debe tratarse como material sensible si se publica.
 - Metadatos incompletos: sin pipeline declarado, sin idiomas y sin licencia, la ficha del repositorio no permite evaluar su madurez ni su encaje en un flujo de producción.
-- Publicación atípica: el repositorio no contiene un modelo, por lo que su presencia en HuggingFace puede generar confusión en búsquedas y catálogos automatizados.
+- Publicación atípica: el repositorio no contiene un modelo, por lo que su presencia en Hugging Face puede generar confusión en búsquedas y catálogos automatizados.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smlflg/CloudCodeUsageAnalysis
+- Repositorio en Hugging Face: https://huggingface.co/smlflg/CloudCodeUsageAnalysis
 - Documentación del repositorio: la model card del propio repositorio, redactada en alemán, con instrucciones de generación y arranque local.
 - Búsqueda web: los resultados recuperados en la búsqueda corresponden a enlaces de Google Maps (https://maps.google.com/, https://maps.google.fr/, https://www.google.com/maps/search/?hl=fr-FR, https://maps.google.com/maps/dir/) y no guardan relación con el repositorio. No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados a este proyecto.

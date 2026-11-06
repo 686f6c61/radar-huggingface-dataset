@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Thireus/mtp-Qwen3.8-27B-THIREUS-Q6_K-SPECIAL_SPLIT` es una cuantizacion en formato GGUF (Q6_K) publicada por el usuario Thireus en HuggingFace. El nombre sugiere una variante de la familia Qwen3 con prediccion multi-token (mtp) y un total aproximado de 27 mil millones de parametros, aunque no se dispone de documentacion oficial que confirme estas caracteristicas. La licencia declarada es MIT, lo que permitiria un uso comercial amplio, pero la ausencia de model card, benchmarks y especificaciones publicas limita severamente cualquier evaluacion tecnica rigurosa.
+El modelo `Thireus/mtp-Qwen3.8-27B-THIREUS-Q6_K-SPECIAL_SPLIT` es una cuantizacion en formato GGUF (Q6_K) publicada por el usuario Thireus en Hugging Face. El nombre sugiere una variante de la familia Qwen3 con prediccion multi-token (mtp) y un total aproximado de 27 mil millones de parametros, aunque no se dispone de documentacion oficial que confirme estas caracteristicas. La licencia declarada es MIT, lo que permitiria un uso comercial amplio, pero la ausencia de model card, benchmarks y especificaciones publicas limita severamente cualquier evaluacion tecnica rigurosa.
 
 A fecha de publicacion (agosto de 2026), el modelo registra cero descargas y cero likes, lo que indica que se trata de un artefacto reciente y sin validacion comunitaria. No se ha publicado informacion sobre arquitectura interna, datos de entrenamiento, capacidades o rendimiento. La etiqueta `region:us` sugiere un origen geografico estadounidense, pero no aporta informacion tecnica adicional.
 
@@ -75,6 +75,6 @@ No disponible. Sin informacion confirmada sobre la arquitectura base, no es posi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q6_K-SPECIAL_SPLIT
+- Modelo en Hugging Face: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q6_K-SPECIAL_SPLIT
 
 No se han encontrado otros enlaces (papers, repositorios, blogs o demos) asociados a este modelo en la informacion disponible.

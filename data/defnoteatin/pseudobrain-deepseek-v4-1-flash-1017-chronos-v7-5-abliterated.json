@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "defnoteatin/PseudoBrain-DeepSeek-V4.1-Flash-1017-Chronos-v7.5-Abliterated",
+  "slug": "defnoteatin-pseudobrain-deepseek-v4-1-flash-1017-chronos-v7-5-abliterated",
+  "author": "defnoteatin",
+  "url": "https://huggingface.co/defnoteatin/PseudoBrain-DeepSeek-V4.1-Flash-1017-Chronos-v7.5-Abliterated",
+  "created_at": "2026-11-01T21:18:39.000Z",
+  "updated_at": "2026-11-05T11:43:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v41",
+    "deepseek",
+    "deepseek-v4.1-flash",
+    "moe",
+    "chronos",
+    "pseudobrain",
+    "abliterated",
+    "uncensored",
+    "holographic-superposition",
+    "nvfp4",
+    "vllm",
+    "text-generation",
+    "base_model:OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
+    "base_model:quantized:OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
+    "license:mit",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 2111,
+  "trending_score": 0,
+  "parameters": 212187359344,
+  "parameters_human": "212.19B",
+  "storage_bytes": 290704137078,
+  "storage_human": "290.7 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017, dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8, OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PseudoBrain-DeepSeek-V4.1-Flash-1017-Chronos-v7.5-Abliterated",
+      "url": "https://huggingface.co/defnoteatin/PseudoBrain-DeepSeek-V4.1-Flash-1017-Chronos-v7.5-Abliterated",
+      "snippet": "Text Generation model with 212B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "PseudoBrain-DeepSeek-V4.1-Flash-1017-Chronos-v7.5-Abliterated",
+      "url": "https://huggingface.co/defnoteatin/PseudoBrain-DeepSeek-V4.1-Flash-1017-Chronos-v7.5-Abliterated/tree/main",
+      "snippet": "Like 1 Text Generation Safetensors deepseek_v41 deepseek deepseek-v4.1-flash Mixture of Experts chronos pseudobrain abliterated uncensored holographic-superposition nvfp4 vllm 8-bit precision fp8 License:mit Model card FilesFiles and versions xet Community Copy to bucket main PseudoBrain-DeepSeek-V4.1-Flash-1017-Chronos-v7.5-Abliterated 291 GB Ctrl+K Ctrl+K 1 contributor History:104 commits ..."
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash-1017 · Models - modelscope.ai",
+      "url": "https://modelscope.ai/models/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "snippet": "Technical Report 👁️ Introduction DeepSeek-V4.1-Flash-1017 is a minor update to DeepSeek-V4.1-Flash, delivering substantial improvements across reasoning, coding, agentic tasks, and visual benchmarks. Alongside these gains, the model reduces task execution time and output length, enabling users to complete tasks faster and at lower cost and advancing the performance–cost Pareto frontier ..."
+    },
+    {
+      "title": "Best DeepSeek Models (November 2026) — Ranked by Benchmark Data",
+      "url": "https://benchlm.ai/best/deepseek-models",
+      "snippet": "Best DeepSeek Models in 2026 As of November 5, 2026, the top model among DeepSeek models on the BenchLM leaderboard is DeepSeek V4.1 Flash 1017 with a score of 65.4. Bottom line: the live table sets the order across DeepSeek's lineup. DeepSeek models are open-weight and free or nearly free."
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash-1017 · Models",
+      "url": "https://www.modelscope.cn/models/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "snippet": "Technical Report 👁️ Introduction DeepSeek-V4.1-Flash-1017 is a minor update to DeepSeek-V4.1-Flash, delivering substantial improvements across reasoning, coding, agentic tasks, and visual benchmarks. Alongside these gains, the model reduces task execution time and output length, enabling users to complete tasks faster and at lower cost and advancing the performance–cost Pareto frontier ..."
+    }
+  ]
+}

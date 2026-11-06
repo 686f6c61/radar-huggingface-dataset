@@ -61,5 +61,5 @@ No disponible. No existe ningún modelo comparable porque este repositorio no co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/felixzy96/zero-shot-transfer9
+- Repositorio en Hugging Face: https://huggingface.co/felixzy96/zero-shot-transfer9
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en la búsqueda web.

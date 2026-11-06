@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Memebot Desk es un repositorio publicado en HuggingFace bajo el identificador `memebot-mohamed/memebot-desk-src` que, según su propia model card, no contiene un modelo de lenguaje sino una aplicación web de tipo "copy-trading desk" en modo simulación (paper trading). La aplicación replica las operaciones de wallets de Solana que el usuario decide vigilar, pero lo hace exclusivamente con dinero ficticio (un bankroll de 100 dólares en papel) y expone un panel de control en vivo. La model card insiste de forma explícita en que no se manejan wallets reales, claves privadas ni firma de transacciones (`assert PAPER is True`).
+Memebot Desk es un repositorio publicado en Hugging Face bajo el identificador `memebot-mohamed/memebot-desk-src` que, según su propia model card, no contiene un modelo de lenguaje sino una aplicación web de tipo "copy-trading desk" en modo simulación (paper trading). La aplicación replica las operaciones de wallets de Solana que el usuario decide vigilar, pero lo hace exclusivamente con dinero ficticio (un bankroll de 100 dólares en papel) y expone un panel de control en vivo. La model card insiste de forma explícita en que no se manejan wallets reales, claves privadas ni firma de transacciones (`assert PAPER is True`).
 
-El artefacto se empaqueta como una aplicación Docker con SDK `docker` y puerto de aplicación 7860, típico de los Spaces de HuggingFace. Expone tres rutas: `/` (panel de control), `/api/state` (estado en JSON) y `/healthz` (comprobación de salud). Requiere el secreto `HELIUS_API_KEY` para funcionar y admite opcionales como `HF_TOKEN` y `STATE_REPO` para persistir instantáneas de estado en un dataset privado, y `PUBLIC_URL` para autopings de mantenimiento.
+El artefacto se empaqueta como una aplicación Docker con SDK `docker` y puerto de aplicación 7860, típico de los Spaces de Hugging Face. Expone tres rutas: `/` (panel de control), `/api/state` (estado en JSON) y `/healthz` (comprobación de salud). Requiere el secreto `HELIUS_API_KEY` para funcionar y admite opcionales como `HF_TOKEN` y `STATE_REPO` para persistir instantáneas de estado en un dataset privado, y `PUBLIC_URL` para autopings de mantenimiento.
 
 Es relevante únicamente como referencia de herramienta de simulación de estrategias de copy-trading en Solana, no como modelo de IA. No se dispone de información sobre arquitectura de red neuronal, parámetros, contexto ni benchmarks, por lo que las secciones técnicas de esta ficha se completan con "no disponible" cuando corresponde.
 
@@ -23,7 +23,7 @@ Es relevante únicamente como referencia de herramienta de simulación de estrat
 
 ## Arquitectura y entrenamiento
 
-No se trata de un modelo entrenado. El repositorio contiene el código fuente de una aplicación web desplegable como Space de HuggingFace con SDK Docker y puerto 7860. La aplicación se conecta a la API de Helius (proveedor de infraestructura para Solana) mediante la clave `HELIUS_API_KEY` para observar wallets, y mantiene un estado interno que puede persistirse opcionalmente en un dataset privado de HuggingFace identificado por `STATE_REPO`, usando `HF_TOKEN` para autenticarse. El modo paper está forzado por diseño (`assert PAPER is True`), de modo que no existe ninguna ruta de código que firme transacciones ni gestione claves privadas.
+No se trata de un modelo entrenado. El repositorio contiene el código fuente de una aplicación web desplegable como Space de Hugging Face con SDK Docker y puerto 7860. La aplicación se conecta a la API de Helius (proveedor de infraestructura para Solana) mediante la clave `HELIUS_API_KEY` para observar wallets, y mantiene un estado interno que puede persistirse opcionalmente en un dataset privado de Hugging Face identificado por `STATE_REPO`, usando `HF_TOKEN` para autenticarse. El modo paper está forzado por diseño (`assert PAPER is True`), de modo que no existe ninguna ruta de código que firme transacciones ni gestione claves privadas.
 
 No hay información sobre datasets de entrenamiento, tokenizadores, técnicas de alineación (RLHF, DPO) ni innovaciones de inferencia, porque el artefacto no es un modelo generativo. La "arquitectura" relevante es la de la aplicación: servidor web con endpoints `/`, `/api/state` y `/healthz`, más un mecanismo de autoping mediante `PUBLIC_URL`.
 
@@ -33,7 +33,7 @@ No hay información sobre datasets de entrenamiento, tokenizadores, técnicas de
 - Panel de control en `/` para visualizar el estado de la simulación.
 - Endpoint JSON `/api/state` para integración con otras herramientas o dashboards externos.
 - Endpoint de salud `/healthz` para monitorización y despliegues automatizados.
-- Persistencia opcional de instantáneas de estado en un dataset privado de HuggingFace (`STATE_REPO` + `HF_TOKEN`).
+- Persistencia opcional de instantáneas de estado en un dataset privado de Hugging Face (`STATE_REPO` + `HF_TOKEN`).
 - Autoping opcional mediante `PUBLIC_URL` para mantener el Space activo.
 - No soporta tool calling, function calling, agentes LLM, razonamiento multi-paso ni capacidades multilingües, al no ser un modelo de lenguaje.
 
@@ -54,14 +54,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: no aplica (no es un modelo de lenguaje; no requiere GPU para su función principal).
-- GPU recomendadas: no aplica; el Space puede ejecutarse en CPU en el tier gratuito de HuggingFace, aunque no se especifica en la model card.
+- GPU recomendadas: no aplica; el Space puede ejecutarse en CPU en el tier gratuito de Hugging Face, aunque no se especifica en la model card.
 - ¿Cabe en GPU consumer? No aplica.
-- Opciones de despliegue: HuggingFace Spaces con SDK Docker (puerto 7860), o cualquier entorno con Docker que exponga el puerto y proporcione la variable `HELIUS_API_KEY`.
+- Opciones de despliegue: Hugging Face Spaces con SDK Docker (puerto 7860), o cualquier entorno con Docker que exponga el puerto y proporcione la variable `HELIUS_API_KEY`.
 - Latencia y throughput: no disponibles; dependen de la API de Helius y de la carga del Space.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado en la información proporcionada artefactos comparables de paper trading en Solana publicados en HuggingFace con características equivalentes.
+No disponible. No se han identificado en la información proporcionada artefactos comparables de paper trading en Solana publicados en Hugging Face con características equivalentes.
 
 ## Limitaciones y advertencias
 
@@ -76,6 +76,6 @@ No disponible. No se han identificado en la información proporcionada artefacto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/memebot-mohamed/memebot-desk-src
+- Repositorio en Hugging Face: https://huggingface.co/memebot-mohamed/memebot-desk-src
 - Documentación de Helius (proveedor requerido): https://docs.helius.dev
-- Documentación de HuggingFace Spaces con SDK Docker: https://huggingface.co/docs/hub/spaces-sdks-docker
+- Documentación de Hugging Face Spaces con SDK Docker: https://huggingface.co/docs/hub/spaces-sdks-docker

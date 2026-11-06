@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `arothman/manual-gate-test` es un repositorio alojado en HuggingFace con acceso restringido (gated), lo que implica que para poder descargarlo o utilizarlo es necesario aceptar previamente las condiciones establecidas por el autor. Fue creado el 27 de agosto de 2026 y actualizado el mismo día, con un total de cero descargas y cero "me gusta" en el momento de la consulta. No se dispone de información pública sobre su arquitectura, tamaño, propósito o capacidades, y el propio nombre sugiere que podría tratarse de un modelo de prueba o un artefacto de validación manual, aunque no hay confirmación oficial.
+El modelo `arothman/manual-gate-test` es un repositorio alojado en Hugging Face con acceso restringido (gated), lo que implica que para poder descargarlo o utilizarlo es necesario aceptar previamente las condiciones establecidas por el autor. Fue creado el 27 de agosto de 2026 y actualizado el mismo día, con un total de cero descargas y cero "me gusta" en el momento de la consulta. No se dispone de información pública sobre su arquitectura, tamaño, propósito o capacidades, y el propio nombre sugiere que podría tratarse de un modelo de prueba o un artefacto de validación manual, aunque no hay confirmación oficial.
 
 Dado que no se ha publicado ninguna especificación técnica, documentación o ejemplo de uso, este repositorio no puede considerarse un modelo utilizable para tareas de desarrollo o investigación sin antes obtener acceso y revisar su contenido. La ausencia de metadatos (pipeline, licencia, idiomas) refuerza la idea de que se trata de un recurso interno o experimental, no destinado a un uso generalizado.
 
@@ -31,7 +31,7 @@ No se ha publicado información sobre la arquitectura del modelo, el proceso de 
 
 ## Casos de uso
 
-Al no existir documentación ni datos de rendimiento, no es posible proponer casos de uso concretos. El repositorio podría estar destinado a pruebas internas de control de acceso o validación de flujos de HuggingFace, pero esto es una especulación sin base confirmada. Cualquier aplicación práctica requeriría primero obtener acceso, inspeccionar el contenido y evaluar si el modelo es funcional.
+Al no existir documentación ni datos de rendimiento, no es posible proponer casos de uso concretos. El repositorio podría estar destinado a pruebas internas de control de acceso o validación de flujos de Hugging Face, pero esto es una especulación sin base confirmada. Cualquier aplicación práctica requeriría primero obtener acceso, inspeccionar el contenido y evaluar si el modelo es funcional.
 
 ## Benchmarks y rendimiento
 
@@ -47,7 +47,7 @@ No disponible. No se puede comparar con otros modelos porque se desconoce su cat
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace antes de su uso, lo que limita su disponibilidad pública.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face antes de su uso, lo que limita su disponibilidad pública.
 - Licencia desconocida: no se especifica bajo qué términos se distribuye, por lo que no se puede garantizar su uso comercial o modificaciones.
 - Sin documentación: no hay model card, ni ejemplos, ni guía de uso, lo que impide una integración segura en producción.
 - Riesgo de contenido no verificado: al no haber metadatos ni comunidad, no se puede evaluar la calidad, sesgos o posibles alucinaciones.
@@ -55,4 +55,4 @@ No disponible. No se puede comparar con otros modelos porque se desconoce su cat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [arothman/manual-gate-test](https://huggingface.co/arothman/manual-gate-test)
+- Repositorio en Hugging Face: [arothman/manual-gate-test](https://huggingface.co/arothman/manual-gate-test)

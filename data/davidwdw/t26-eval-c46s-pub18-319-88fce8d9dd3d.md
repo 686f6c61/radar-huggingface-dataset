@@ -88,7 +88,7 @@ No disponible. Este repositorio no es un modelo, por lo que no existe una catego
 
 | Elemento comparado | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto | no disponible | no disponible | q_score 0,25; success=false en instance 319 | no disponible | HuggingFace, 0 descargas |
+| Este artefacto | no disponible | no disponible | q_score 0,25; success=false en instance 319 | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,11 +101,11 @@ No disponible. Este repositorio no es un modelo, por lo que no existe una catego
 - Dependencia de un entorno específico: los resultados están ligados al runtime BEHAVIOR-1K 3.9.3 y a un *launch* y bundle concretos; reproducirlos fuera de ese entorno puede no dar resultados equivalentes.
 - Metadatos incompletos: el repositorio no declara idiomas, pipeline ni licencia, lo que dificulta su catalogación y su uso en pipelines automatizados.
 - Fecha de publicación atípica: las marcas temporales indican 2026-10-09, posterior a la fecha habitual de referencia; conviene verificarlas antes de citar el artefacto.
-- Riesgo de interpretación errónea: por su nombre y ubicación en HuggingFace, podría confundirse con un modelo; su contenido es exclusivamente evidencia de evaluación.
+- Riesgo de interpretación errónea: por su nombre y ubicación en Hugging Face, podría confundirse con un modelo; su contenido es exclusivamente evidencia de evaluación.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/t26-eval-c46s-pub18-319-88fce8d9dd3d
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/t26-eval-c46s-pub18-319-88fce8d9dd3d
 - Benchmark BEHAVIOR-1K: no disponible en la información proporcionada (no se incluyen enlaces a paper, web oficial ni repositorio)
 - Documentación del runtime 3.9.3: no disponible en la información proporcionada
 - Paper o blog del candidato c46 (`70b13f5`): no disponible en la información proporcionada

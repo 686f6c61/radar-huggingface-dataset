@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| myrasingheli/mobilevit-baseline | 16.576 | no disponible | sin benchmarks | MIT | HuggingFace |
+| myrasingheli/mobilevit-baseline | 16.576 | no disponible | sin benchmarks | MIT | Hugging Face |
 | MobileViT original (Apple, paper) | ~5.6M (MobileViT-S) | no aplica | clasificación, detección, segmentación | MIT | código abierto en ml-cvnets |
 | MobileViTv2 (Apple) | ~4.9M (v2-S) | no aplica | mejor eficiencia que v1 | MIT | código abierto en ml-cvnets |
 

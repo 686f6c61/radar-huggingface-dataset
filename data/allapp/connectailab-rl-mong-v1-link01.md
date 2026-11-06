@@ -73,8 +73,8 @@ No se dispone de modelos directamente comparables en la informacion proporcionad
 
 | Modelo | Parametros | Contexto | Acierto en test | Exito en 20 episodios | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-mong-v1-link01 | 0,8 B (base) + LoRA | no disponible | 90,5 % | 100 % | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-0.8B sin adaptador | 0,8 B | no disponible | 24,8 % | 0 % | no disponible en esta ficha | HuggingFace |
+| connectailab-rl-mong-v1-link01 | 0,8 B (base) + LoRA | no disponible | 90,5 % | 100 % | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-0.8B sin adaptador | 0,8 B | no disponible | 24,8 % | 0 % | no disponible en esta ficha | Hugging Face |
 | Cerebro PPO `link01-decision/.../v1` | no disponible (politica RL) | no aplica | 100,0 % | 100 % | no disponible | Entorno CONNECT AI WORLD |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de modelos directamente comparables en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/allapp/connectailab-rl-mong-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/allapp/connectailab-rl-mong-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de codigo de entrenamiento (CONNECT TYCOON): https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

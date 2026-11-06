@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NSFW Wan 1.3b T2V es un modelo de generación de vídeo a partir de texto (text-to-video, T2V) de 1.300 millones de parámetros, desarrollado por el usuario NSFW-API y publicado en HuggingFace. Se trata de un ajuste fino (fine-tune) del modelo Wan-AI/Wan2.1-T2V-1.3B, especializado en la generación de contenido para adultos (NSFW). El modelo conserva una arquitectura de transformer texto-a-video y su objetivo declarado es servir como herramienta de investigación y creación capaz de generar clips de vídeo cortos coherentes a partir de instrucciones en lenguaje natural dentro del dominio de contenido adulto.
+NSFW Wan 1.3b T2V es un modelo de generación de vídeo a partir de texto (text-to-video, T2V) de 1.300 millones de parámetros, desarrollado por el usuario NSFW-API y publicado en Hugging Face. Se trata de un ajuste fino (fine-tune) del modelo Wan-AI/Wan2.1-T2V-1.3B, especializado en la generación de contenido para adultos (NSFW). El modelo conserva una arquitectura de transformer texto-a-video y su objetivo declarado es servir como herramienta de investigación y creación capaz de generar clips de vídeo cortos coherentes a partir de instrucciones en lenguaje natural dentro del dominio de contenido adulto.
 
 El modelo es relevante en el contexto actual porque la mayoría de los modelos T2V de código abierto aplican filtros de contenido o no están entrenados para el dominio NSFW, lo que deja un vacío para casos de investigación sobre generación, moderación y alineación en este ámbito. Su desarrollo documenta un proceso de ajuste fino en varias fases (imagen y vídeo por separado, y después una ejecución mixta) que ilustra problemas técnicos habituales como el olvido catastrófico (catastrophic forgetting) y la degradación anatómica en modelos de difusión entrenados sobre datasets sesgados.
 
@@ -76,8 +76,8 @@ Las cifras de esta sección son estimaciones orientativas basadas en el tamaño 
 
 | Modelo | Parametros | Tipo | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NSFW_Wan_1.3b (este modelo) | 1,3B | T2V | NSFW, fine-tune | creativeml-openrail-m | HuggingFace (0 descargas, 575 likes) |
-| Wan-AI/Wan2.1-T2V-1.3B (base) | 1,3B | T2V | Uso general | no disponible en esta ficha | HuggingFace |
+| NSFW_Wan_1.3b (este modelo) | 1,3B | T2V | NSFW, fine-tune | creativeml-openrail-m | Hugging Face (0 descargas, 575 likes) |
+| Wan-AI/Wan2.1-T2V-1.3B (base) | 1,3B | T2V | Uso general | no disponible en esta ficha | Hugging Face |
 | Otros fine-tunes NSFW de modelos T2V abiertos | no disponible | T2V | NSFW | no disponible | no disponible |
 
 No se dispone de datos comparativos de rendimiento (FVD, CLIP, coherencia temporal) entre este modelo y alternativas. La comparación se limita a arquitectura, tamaño y licencia. El modelo base es la referencia directa más cercana; las alternativas de la misma categoría (fine-tunes NSFW de modelos T2V abiertos como CogVideoX, LTX-Video o HunyuanVideo) no están documentadas en la información proporcionada.
@@ -97,7 +97,7 @@ No se dispone de datos comparativos de rendimiento (FVD, CLIP, coherencia tempor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NSFW-API/NSFW_Wan_1.3b
+- Modelo en Hugging Face: https://huggingface.co/NSFW-API/NSFW_Wan_1.3b
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
 - Archivo de guía de prompting incluido en el repositorio: `prompting-guide.json` (dentro del repositorio del modelo)
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes sobre este modelo concreto. Los resultados obtenidos (definiciones genéricas de NSFW, agregadores y sitios de contenido) no guardan relación con la ficha técnica ni con la documentación del modelo.

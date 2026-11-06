@@ -37,7 +37,7 @@ El entrenamiento se realizó sobre un subconjunto de 1.400 ejemplos del dataset 
 ## Casos de uso
 
 - **Prototipado de sistemas de análisis de opinión**: el modelo puede integrarse en un pipeline de `transformers` para clasificar rápidamente reseñas de películas en entornos de desarrollo o demostraciones, aunque su precisión limitada lo hace inadecuado para producción.
-- **Educación y formación en NLP**: sirve como ejemplo didáctico de fine-tuning de un transformer para clasificación de texto, mostrando el flujo completo desde el dataset hasta la publicación en HuggingFace.
+- **Educación y formación en NLP**: sirve como ejemplo didáctico de fine-tuning de un transformer para clasificación de texto, mostrando el flujo completo desde el dataset hasta la publicación en Hugging Face.
 - **Validación de pipelines de MLOps**: al ser un modelo pequeño y rápido, es útil para probar infraestructuras de despliegue (por ejemplo, con FastAPI o TorchServe) sin coste computacional elevado.
 - **Análisis exploratorio de datos**: puede utilizarse para etiquetar automáticamente un conjunto de reseñas no etiquetadas y obtener una primera aproximación de la distribución de sentimiento, siempre que se acepte el margen de error.
 - **Comparación de técnicas de destilación**: al estar basado en DistilBERT, permite estudiar el trade-off entre tamaño y rendimiento frente a BERT-base o modelos más grandes.
@@ -58,17 +58,17 @@ Este valor se obtuvo sobre un subconjunto de validación del dataset Rotten Toma
 - **VRAM estimada para inferencia**: menos de 1 GB en FP32 (el modelo tiene ~268 MB en pesos). Con cuantización a int8, podría reducirse a ~70 MB.
 - **GPU recomendadas**: cualquier GPU con al menos 2 GB de VRAM, incluyendo GTX 1650, RTX 2060, o incluso integradas modernas. También funciona en CPU con latencia aceptable (decenas de milisegundos por muestra).
 - **Cabe en consumer GPU**: sí, en cualquier GPU de consumo actual.
-- **Opciones de despliegue**: compatible con `transformers` (PyTorch), `onnxruntime`, `TensorFlow Lite`, y servidores de inferencia como `vLLM` (aunque no es óptimo para modelos tan pequeños), `TGI` o `Ollama` (si se convierte a GGUF). Para prototipos, se puede usar `pipeline` de HuggingFace.
+- **Opciones de despliegue**: compatible con `transformers` (PyTorch), `onnxruntime`, `TensorFlow Lite`, y servidores de inferencia como `vLLM` (aunque no es óptimo para modelos tan pequeños), `TGI` o `Ollama` (si se convierte a GGUF). Para prototipos, se puede usar `pipeline` de Hugging Face.
 - **Latencia estimada**: en una RTX 3090, la inferencia de una frase corta tarda <5 ms; en CPU moderna, ~20-50 ms.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Precisión (Rotten Tomatoes) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Islamamro/movie-rotten-aurora-islamamro` | 67M | no disponible | 0.84 (subconjunto 1.4k) | Apache 2.0 | HuggingFace |
-| `distilbert-base-uncased` (fine-tune completo) | 67M | 512 | ~0.87-0.89 (típico) | Apache 2.0 | HuggingFace |
-| `bert-base-uncased` (fine-tune completo) | 110M | 512 | ~0.88-0.90 | Apache 2.0 | HuggingFace |
-| `roberta-base` (fine-tune completo) | 125M | 512 | ~0.89-0.91 | MIT | HuggingFace |
+| `Islamamro/movie-rotten-aurora-islamamro` | 67M | no disponible | 0.84 (subconjunto 1.4k) | Apache 2.0 | Hugging Face |
+| `distilbert-base-uncased` (fine-tune completo) | 67M | 512 | ~0.87-0.89 (típico) | Apache 2.0 | Hugging Face |
+| `bert-base-uncased` (fine-tune completo) | 110M | 512 | ~0.88-0.90 | Apache 2.0 | Hugging Face |
+| `roberta-base` (fine-tune completo) | 125M | 512 | ~0.89-0.91 | MIT | Hugging Face |
 
 La comparativa se basa en valores típicos de la literatura, no en mediciones directas de este modelo. El modelo evaluado está claramente por debajo de las alternativas entrenadas con el dataset completo, tanto en precisión como en robustez.
 
@@ -83,6 +83,6 @@ La comparativa se basa en valores típicos de la literatura, no en mediciones di
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Islamamro/movie-rotten-aurora-islamamro)
+- [Modelo en Hugging Face](https://huggingface.co/Islamamro/movie-rotten-aurora-islamamro)
 - [Dataset Rotten Tomatoes (cornell-movie-review-data)](https://huggingface.co/datasets/cornell-movie-review-data/rotten_tomatoes)
 - [Perfil de GitHub del autor](https://github.com/islamamro)

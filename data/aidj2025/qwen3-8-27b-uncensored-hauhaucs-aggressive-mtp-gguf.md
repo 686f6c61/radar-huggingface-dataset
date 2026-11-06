@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF es una variante sin censura del modelo Qwen3.8-27B, desarrollada por HauhauCS y publicada en HuggingFace por el usuario aidj2025. El modelo elimina los comportamientos de rechazo del modelo original (0/465 refusals) y ofrece respuestas directas y sin preámbulos, manteniendo intactas las capacidades de texto, razonamiento, agéntica, imagen y video del modelo base. Incluye además un acelerador de decodificación especulativa llamado HauhauCS FastMTP, que multiplica por hasta 3,02 veces el throughput de generación de documentos y por 1,93 veces el de razonamiento respecto al modelo sin MTP.
+Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF es una variante sin censura del modelo Qwen3.8-27B, desarrollada por HauhauCS y publicada en Hugging Face por el usuario aidj2025. El modelo elimina los comportamientos de rechazo del modelo original (0/465 refusals) y ofrece respuestas directas y sin preámbulos, manteniendo intactas las capacidades de texto, razonamiento, agéntica, imagen y video del modelo base. Incluye además un acelerador de decodificación especulativa llamado HauhauCS FastMTP, que multiplica por hasta 3,02 veces el throughput de generación de documentos y por 1,93 veces el de razonamiento respecto al modelo sin MTP.
 
 La arquitectura es un transformer denso de 27B parámetros con 64 capas, de las cuales 48 usan capas Gated DeltaNet (atención lineal) y 16 usan atención gatillada (gated attention). Tiene un contexto nativo de 262.144 tokens (256K) extensible a 1M. El modelo se distribuye en formato GGUF con cuantizaciones personalizadas K_P (Perfect) que mejoran la calidad por nivel de cuantización a costa de un 5-15% más de tamaño. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones, aunque el perfil "uncensored" implica riesgos de generación de contenido inapropiado.
 
@@ -91,7 +91,7 @@ No se dispone de resultados de benchmarks comparativos para estos modelos. La el
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/aidj2025/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF)
+- [Repositorio Hugging Face](https://huggingface.co/aidj2025/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF)
 - [Model card de HauhauCS (original)](https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF/tree/main)
 - [GitHub con instrucciones de uso](https://github.com/Wassimyounes01/qwen38-uncensored)
 - [Artículo sobre cómo ejecutar el modelo localmente](https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally)

@@ -85,7 +85,7 @@ La comparación con alternativas de la misma categoría (otros adaptadores multi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/creador/mv-adapter-sd21-onnx
+- Modelo en Hugging Face: https://huggingface.co/creador/mv-adapter-sd21-onnx
 - MV-Adapter (modelo base): https://huggingface.co/huanngzh/mv-adapter
 - Repositorio de código de MV-Adapter: https://github.com/huanngzh/MV-Adapter
 - Stable Diffusion 2.1-base: https://huggingface.co/sd2-community/stable-diffusion-2-1-base

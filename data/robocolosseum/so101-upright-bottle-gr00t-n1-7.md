@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `RoboColosseum/so101-upright-bottle-gr00t-n1.7` | 3.144.016.000 | no disponible | Enderezar bote con SO-101 | Apache 2.0 | HuggingFace, 0 descargas |
+| `RoboColosseum/so101-upright-bottle-gr00t-n1.7` | 3.144.016.000 | no disponible | Enderezar bote con SO-101 | Apache 2.0 | Hugging Face, 0 descargas |
 | GR00T N1.7 base (NVIDIA) | no disponible | no disponible | Modelo fundacional cross-embodiment | no disponible en la información | GitHub NVIDIA/Isaac-GR00T |
-| Políticas ACT / Diffusion Policy en LeRobot | no disponible | no disponible | Imitación sobre SO-101 | Apache 2.0 (LeRobot) | HuggingFace, ecosistema LeRobot |
+| Políticas ACT / Diffusion Policy en LeRobot | no disponible | no disponible | Imitación sobre SO-101 | Apache 2.0 (LeRobot) | Hugging Face, ecosistema LeRobot |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada. La comparación se limita a aspectos estructurales: esta política es un fine-tuning de GR00T N1.7, mientras que ACT y Diffusion Policy son arquitecturas de imitación más ligeras y habituales en el ecosistema LeRobot para robots SO-101.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoboColosseum/so101-upright-bottle-gr00t-n1.7
+- Modelo en Hugging Face: https://huggingface.co/RoboColosseum/so101-upright-bottle-gr00t-n1.7
 - Dataset de entrenamiento: https://huggingface.co/datasets/Jiamo0912/so101-upright-bottle
 - Visualización del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Jiamo0912/so101-upright-bottle
 - Repositorio GR00T N1.7 de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T

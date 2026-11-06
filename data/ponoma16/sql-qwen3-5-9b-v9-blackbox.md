@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ponoma16/sql-qwen3.5-9b-v9-blackbox` es un checkpoint publicado en HuggingFace por el usuario ponoma16 bajo la librería transformers. Se trata de un modelo de aproximadamente 9.409.813.744 parámetros (9,4 mil millones) almacenado en safetensors, con un tamano de repositorio de 18,8 GB, lo que es coherente con pesos en precision de 16 bits. La etiqueta de arquitectura declarada es `qwen3_5` y la etiqueta de pipeline es `image-text-to-text`, lo que sugiere una variante multimodal con entrada de imagen y texto, aunque no se aporta documentacion que lo confirme.
+El modelo `ponoma16/sql-qwen3.5-9b-v9-blackbox` es un checkpoint publicado en Hugging Face por el usuario ponoma16 bajo la librería transformers. Se trata de un modelo de aproximadamente 9.409.813.744 parámetros (9,4 mil millones) almacenado en safetensors, con un tamano de repositorio de 18,8 GB, lo que es coherente con pesos en precision de 16 bits. La etiqueta de arquitectura declarada es `qwen3_5` y la etiqueta de pipeline es `image-text-to-text`, lo que sugiere una variante multimodal con entrada de imagen y texto, aunque no se aporta documentacion que lo confirme.
 
-El nombre del repositorio incluye el termino "sql", lo que apunta a un ajuste fino orientado a tareas de generacion o razonamiento sobre SQL, y el sufijo "v9-blackbox" sugiere una novena iteracion de una serie experimental. No obstante, esta interpretacion procede unicamente de la nomenclatura del repositorio y no esta respaldada por la model card, que es una plantilla autogenerada por HuggingFace sin ningun campo cumplimentado.
+El nombre del repositorio incluye el termino "sql", lo que apunta a un ajuste fino orientado a tareas de generacion o razonamiento sobre SQL, y el sufijo "v9-blackbox" sugiere una novena iteracion de una serie experimental. No obstante, esta interpretacion procede unicamente de la nomenclatura del repositorio y no esta respaldada por la model card, que es una plantilla autogenerada por Hugging Face sin ningun campo cumplimentado.
 
 El modelo no tiene descargas ni "likes" en el momento de la consulta y su licencia no esta declarada, lo que limita seriamente su evaluacion. La relevancia de esta ficha es, por tanto, la de documentar de forma rigurosa lo poco que se sabe y senalar explicitamente las lagunas de informacion, dado que no hay benchmarks, ni datos de entrenamiento, ni especificaciones de contexto publicadas por el autor.
 
@@ -56,7 +56,7 @@ Dado que no hay documentacion funcional, los casos de uso que se enumeran a cont
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor es una plantilla autogenerada por HuggingFace sin ningun campo de evaluacion cumplimentado, y no se ha encontrado ningun dato de MMLU, HumanEval, GSM8K, Spider, BIRD ni de cualquier otro conjunto de evaluacion en la informacion proporcionada.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor es una plantilla autogenerada por Hugging Face sin ningun campo de evaluacion cumplimentado, y no se ha encontrado ningun dato de MMLU, HumanEval, GSM8K, Spider, BIRD ni de cualquier otro conjunto de evaluacion en la informacion proporcionada.
 
 ## Requisitos de hardware
 
@@ -76,10 +76,10 @@ No se dispone de resultados de benchmarks del modelo evaluado, por lo que la com
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ponoma16/sql-qwen3.5-9b-v9-blackbox | 9,41 B | No disponible | No disponible | HuggingFace, solo safetensors |
-| Qwen2.5-7B-Instruct | 7,6 B | 128 K tokens | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Llama 3.1 8B Instruct | 8,0 B | 128 K tokens | Llama 3.1 Community License | HuggingFace, safetensors y GGUF |
-| Mistral-7B-Instruct-v0.3 | 7,2 B | 32 K tokens | Apache 2.0 | HuggingFace, safetensors y GGUF |
+| ponoma16/sql-qwen3.5-9b-v9-blackbox | 9,41 B | No disponible | No disponible | Hugging Face, solo safetensors |
+| Qwen2.5-7B-Instruct | 7,6 B | 128 K tokens | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Llama 3.1 8B Instruct | 8,0 B | 128 K tokens | Llama 3.1 Community License | Hugging Face, safetensors y GGUF |
+| Mistral-7B-Instruct-v0.3 | 7,2 B | 32 K tokens | Apache 2.0 | Hugging Face, safetensors y GGUF |
 
 Nota: los datos de los modelos de comparacion proceden de sus fichas publicas habituales y se incluyen solo como referencia de categoria. No se ha verificado ningun rendimiento relativo frente al modelo evaluado.
 
@@ -98,7 +98,7 @@ Nota: los datos de los modelos de comparacion proceden de sus fichas publicas ha
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ponoma16/sql-qwen3.5-9b-v9-blackbox
+- Repositorio Hugging Face: https://huggingface.co/ponoma16/sql-qwen3.5-9b-v9-blackbox
 - Paper de referencia sobre impacto ambiental citado en la etiqueta del repositorio (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning mencionada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo en la informacion proporcionada.

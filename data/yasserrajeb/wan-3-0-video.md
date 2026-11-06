@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Wan 3.0 es un modelo generativo de vídeo de la familia Wan, orientado a la generación audiovisual "todo en uno" a partir de múltiples modalidades de entrada. Según su model card, el modelo se centra en el renderizado realista de personas y en la consistencia de referencias a lo largo de personajes, objetos, espacio y estilo, además de generar clips de hasta 30 segundos con audio nativo. El repositorio analizado (`yasserrajeb/wan-3-0-video`) corresponde a una publicación en HuggingFace etiquetada con el pipeline `text-to-video`, sin descargas ni interacciones registradas en el momento de la consulta.
+Wan 3.0 es un modelo generativo de vídeo de la familia Wan, orientado a la generación audiovisual "todo en uno" a partir de múltiples modalidades de entrada. Según su model card, el modelo se centra en el renderizado realista de personas y en la consistencia de referencias a lo largo de personajes, objetos, espacio y estilo, además de generar clips de hasta 30 segundos con audio nativo. El repositorio analizado (`yasserrajeb/wan-3-0-video`) corresponde a una publicación en Hugging Face etiquetada con el pipeline `text-to-video`, sin descargas ni interacciones registradas en el momento de la consulta.
 
 El modelo acepta texto, imágenes, vídeo, audio, documentos y páginas web públicas como fuentes de contenido, y cubre tareas de text-to-video, image-to-video con primer fotograma, control de primer y último fotograma, generación con referencias multimodales, edición y extensión de vídeo. La versión descrita genera entre 2 y 30 segundos en una sola ejecución, a 30 fps en MP4 y en resoluciones 480P, 720P o 1080P, con audio (diálogo, música, ambiente y efectos) producido en el mismo proceso que el movimiento visual.
 
-Es relevante ahora porque la propuesta no se limita a "planos cortos inconexos": apunta a narrativa continua, presentación de producto, contenido de personaje y previsualización cinematográfica, integrando edición y extensión sin reiniciar la tarea desde cero. No obstante, la información disponible en el repositorio es exclusivamente la model card del autor: no se facilitan datos de arquitectura, número de parámetros, licencia ni idiomas soportados en los metadatos de HuggingFace.
+Es relevante ahora porque la propuesta no se limita a "planos cortos inconexos": apunta a narrativa continua, presentación de producto, contenido de personaje y previsualización cinematográfica, integrando edición y extensión sin reiniciar la tarea desde cero. No obstante, la información disponible en el repositorio es exclusivamente la model card del autor: no se facilitan datos de arquitectura, número de parámetros, licencia ni idiomas soportados en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -96,7 +96,7 @@ Comparacion con modelos de terceros: no disponible.
 
 - La model card reconoce que la textura del audio y la precision del texto en pantalla son areas pendientes de mejora.
 - Contenido con interaccion fisica compleja, texto denso legible, personas reales o material de origen protegido requiere revision humana y verificacion de derechos.
-- No se especifica licencia en los metadatos de HuggingFace, por lo que no puede confirmarse el uso comercial ni las condiciones de redistribucion. Advertencia critica para produccion.
+- No se especifica licencia en los metadatos de Hugging Face, por lo que no puede confirmarse el uso comercial ni las condiciones de redistribucion. Advertencia critica para produccion.
 - El repositorio registra 0 descargas y 0 likes, y no expone ficheros de pesos, arquitectura ni parametros: se trata de una publicacion sin validacion comunitaria aparente en el momento de la consulta.
 - La fecha de creacion y actualizacion indicada en los metadatos es 2026-10-03; conviene verificar la vigencia y autenticidad del repositorio antes de cualquier uso.
 - No se dispone de informacion sobre sesgos, idiomas soportados, limites de contexto ni comportamiento multilingue.
@@ -105,5 +105,5 @@ Comparacion con modelos de terceros: no disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yasserrajeb/wan-3-0-video
+- Hugging Face: https://huggingface.co/yasserrajeb/wan-3-0-video
 - Servicio de acceso indicado en la model card: https://wan30.io/

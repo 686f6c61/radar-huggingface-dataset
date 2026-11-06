@@ -68,8 +68,8 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 | Modelo | Parametros | Entrada / contexto | LVIS v1 val | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dronefreak/co-dino-5scale-lsj-vit-l-lvis (este) | 350,2M en inferencia | imagen o video, 5 escalas | box AP 68,0 (reportado, sin verificar) | no determinada (research-only por el preentrenamiento en Objects365) | HuggingFace, incluye config y script de entorno |
-| zongzhuofan/co-detr-vit-large-lvis (publicacion de los autores) | mismos pesos | imagen o video | no indicado en la informacion disponible (son los mismos pesos) | no determinada | HuggingFace, solo pesos sin config |
+| dronefreak/co-dino-5scale-lsj-vit-l-lvis (este) | 350,2M en inferencia | imagen o video, 5 escalas | box AP 68,0 (reportado, sin verificar) | no determinada (research-only por el preentrenamiento en Objects365) | Hugging Face, incluye config y script de entorno |
+| zongzhuofan/co-detr-vit-large-lvis (publicacion de los autores) | mismos pesos | imagen o video | no indicado en la informacion disponible (son los mismos pesos) | no determinada | Hugging Face, solo pesos sin config |
 | Otros detectores de cola larga para LVIS (por ejemplo DINO o ViT-Adapter) | no disponible | imagen | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de cifras verificables de alternativas comparables, por lo que no se establece una comparacion cuantitativa. La diferencia practica frente al checkpoint de los autores es de empaquetado: el espejo anade el fichero de configuracion y un entorno reproducible.
@@ -89,7 +89,7 @@ No se dispone en la informacion proporcionada de cifras verificables de alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/co-dino-5scale-lsj-vit-l-lvis
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/co-dino-5scale-lsj-vit-l-lvis
 - Configuracion incluida en el repositorio: https://huggingface.co/dronefreak/co-dino-5scale-lsj-vit-l-lvis/blob/main/co_dino_5scale_lsj_vit_large_lvis.py
 - Poster de la demo: https://huggingface.co/dronefreak/co-dino-5scale-lsj-vit-l-lvis/resolve/main/assets/demo_banner_poster.jpg
 - Video de la demo: https://huggingface.co/dronefreak/co-dino-5scale-lsj-vit-l-lvis/resolve/main/assets/demo_banner.mp4

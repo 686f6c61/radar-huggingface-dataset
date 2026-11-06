@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `surakshaai-mbert`, publicado por el usuario Mihir-01010 en HuggingFace, es un transformer basado en la arquitectura BERT (según la etiqueta `bert` del repositorio) con aproximadamente 177,85 millones de parámetros. Su nombre sugiere una posible orientación a tareas de seguridad o protección (del hindi "suraksha") y un origen multilingüe (mBERT), aunque no hay documentación oficial que confirme estos extremos.
+El modelo `surakshaai-mbert`, publicado por el usuario Mihir-01010 en Hugging Face, es un transformer basado en la arquitectura BERT (según la etiqueta `bert` del repositorio) con aproximadamente 177,85 millones de parámetros. Su nombre sugiere una posible orientación a tareas de seguridad o protección (del hindi "suraksha") y un origen multilingüe (mBERT), aunque no hay documentación oficial que confirme estos extremos.
 
 El repositorio contiene únicamente los pesos en formato `safetensors` (0,7 GB) y una licencia Apache-2.0. No se ha publicado ninguna model card detallada, ni información sobre el entrenamiento, los datos utilizados, las capacidades o los benchmarks. Esto lo convierte en un modelo prácticamente sin documentar, lo que limita su uso directo en producción sin una evaluación previa por parte del desarrollador.
 
@@ -57,7 +57,7 @@ Estas cifras indican que el modelo cabe holgadamente en GPUs de consumo como una
 
 Para despliegue, las opciones habituales para modelos BERT incluyen:
 
-- HuggingFace Transformers con PyTorch o TensorFlow.
+- Hugging Face Transformers con PyTorch o TensorFlow.
 - ONNX Runtime para optimización en CPU/GPU.
 - TensorRT para baja latencia en GPU.
 - No se ha confirmado compatibilidad con vLLM, llama.cpp u Ollama, aunque al ser un modelo BERT, vLLM no es la opción típica (está orientado a modelos generativos).
@@ -70,9 +70,9 @@ Al no conocerse la configuración exacta del modelo ni su rendimiento, no es pos
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BERT-base (Google) | 110M | 512 | Apache-2.0 | HuggingFace |
-| BERT-large (Google) | 340M | 512 | Apache-2.0 | HuggingFace |
-| mBERT (Google) | 178M | 512 | Apache-2.0 | HuggingFace |
+| BERT-base (Google) | 110M | 512 | Apache-2.0 | Hugging Face |
+| BERT-large (Google) | 340M | 512 | Apache-2.0 | Hugging Face |
+| mBERT (Google) | 178M | 512 | Apache-2.0 | Hugging Face |
 
 El modelo `surakshaai-mbert` tiene un tamaño muy similar a mBERT (178M), lo que refuerza la hipótesis de que podría ser un fine-tuning de mBERT, pero no hay confirmación. Sin datos de benchmarks, no se puede comparar su calidad con la de estos modelos de referencia.
 
@@ -86,4 +86,4 @@ El modelo `surakshaai-mbert` tiene un tamaño muy similar a mBERT (178M), lo que
 
 ## Enlaces
 
-- Repositorio HuggingFace: [https://huggingface.co/Mihir-01010/surakshaai-mbert](https://huggingface.co/Mihir-01010/surakshaai-mbert)
+- Repositorio Hugging Face: [https://huggingface.co/Mihir-01010/surakshaai-mbert](https://huggingface.co/Mihir-01010/surakshaai-mbert)

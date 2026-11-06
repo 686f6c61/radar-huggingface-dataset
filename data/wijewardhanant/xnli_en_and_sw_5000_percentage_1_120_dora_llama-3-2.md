@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador DoRA (weight-decomposed low-rank adaptation) entrenado sobre el modelo base meta-llama/Llama-3.2-3B para la tarea XNLI de inferencia de relación textual (natural language inference) en inglés y suajili. El autor es el usuario de HuggingFace WijewardhanaNT y el artefacto se distribuye exclusivamente como pesos de adaptador en formato safetensors mediante la librería PEFT (versión 0.17.1), con un tamaño de repositorio de 0,4 GB. No se trata por tanto de un modelo completo, sino de un delta de pesos que requiere cargar el modelo base para funcionar.
+Este repositorio contiene un adaptador DoRA (weight-decomposed low-rank adaptation) entrenado sobre el modelo base meta-llama/Llama-3.2-3B para la tarea XNLI de inferencia de relación textual (natural language inference) en inglés y suajili. El autor es el usuario de Hugging Face WijewardhanaNT y el artefacto se distribuye exclusivamente como pesos de adaptador en formato safetensors mediante la librería PEFT (versión 0.17.1), con un tamaño de repositorio de 0,4 GB. No se trata por tanto de un modelo completo, sino de un delta de pesos que requiere cargar el modelo base para funcionar.
 
 El interés del modelo reside en su planteamiento: aplicar una técnica de ajuste eficiente en parámetros (DoRA) a un transformer decoder-only de 3.210 millones de parámetros para una tarea discriminativa multilingüe, incluyendo un idioma de bajos recursos como el suajili. El nombre del repositorio sugiere un entrenamiento sobre 5.000 ejemplos ("5000") con algún criterio de submuestreo o porcentaje ("percentage_1_120") que no está documentado en la model card.
 
-La relevancia es limitada y debe evaluarse con cautela: la model card es la plantilla por defecto de HuggingFace sin rellenar (todos los apartados indican "[More Information Needed]"), el repositorio no tiene descargas ni "likes", no se declara licencia y no se publican resultados de evaluación. Es, en la práctica, un experimento académico reproducible pero no validado, útil para quien investigue adaptación eficiente en NLI multilingüe, no como componente listo para producción.
+La relevancia es limitada y debe evaluarse con cautela: la model card es la plantilla por defecto de Hugging Face sin rellenar (todos los apartados indican "[More Information Needed]"), el repositorio no tiene descargas ni "likes", no se declara licencia y no se publican resultados de evaluación. Es, en la práctica, un experimento académico reproducible pero no validado, útil para quien investigue adaptación eficiente en NLI multilingüe, no como componente listo para producción.
 
 ## Especificaciones técnicas
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_DoRA_llama-3.2
+- Modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_DoRA_llama-3.2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Documentación de PEFT: https://huggingface.co/docs/peft

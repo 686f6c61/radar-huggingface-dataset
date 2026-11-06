@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-VL-4B-Instruct-BoxSpecialToken es una variante del modelo vision-lenguaje Qwen3-VL-4B-Instruct, publicada por el usuario KevinCha en HuggingFace. Se trata de un modelo multimodal de 4.437 millones de parámetros que procesa imágenes, vídeo y texto, y que incorpora un token especial para tareas de localización espacial (bounding boxes). El modelo base, desarrollado por el equipo Qwen de Alibaba, destaca por su comprensión visual profunda, razonamiento espacial y capacidades de agente visual.
+Qwen3-VL-4B-Instruct-BoxSpecialToken es una variante del modelo vision-lenguaje Qwen3-VL-4B-Instruct, publicada por el usuario KevinCha en Hugging Face. Se trata de un modelo multimodal de 4.437 millones de parámetros que procesa imágenes, vídeo y texto, y que incorpora un token especial para tareas de localización espacial (bounding boxes). El modelo base, desarrollado por el equipo Qwen de Alibaba, destaca por su comprensión visual profunda, razonamiento espacial y capacidades de agente visual.
 
 Esta versión concreta añade un token especial para grounding 2D y 3D, lo que la hace especialmente adecuada para tareas de detección de objetos, localización espacial y razonamiento sobre posiciones relativas en imágenes. El modelo mantiene la arquitectura original de Qwen3-VL-4B-Instruct, con una ventana de contexto nativa de 256K tokens ampliable a 1M, y está disponible bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas.
 
@@ -85,7 +85,7 @@ La variante BoxSpecialToken se diferencia del modelo base por su token especial 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KevinCha/Qwen3-VL-4B-Instruct-BoxSpecialToken
+- Repositorio Hugging Face: https://huggingface.co/KevinCha/Qwen3-VL-4B-Instruct-BoxSpecialToken
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Repositorio GitHub Qwen3-VL: https://github.com/QwenLM/Qwen3-VL
 - Pagina en Ollama: https://ollama.com/library/qwen3-vl:4b-instruct

@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| asincole/gemma-4-E2B-it-qat-q4_0-gguf | ~4,63B totales (2,3B efectivos) | 128K | Texto, imagen, audio | Apache 2.0 | GGUF en HuggingFace |
-| google/gemma-4-E2B-it-qat-q4_0-unquantized | ~4,63B totales (2,3B efectivos) | 128K | Texto, imagen, audio | Apache 2.0 | Safetensors en HuggingFace |
+| asincole/gemma-4-E2B-it-qat-q4_0-gguf | ~4,63B totales (2,3B efectivos) | 128K | Texto, imagen, audio | Apache 2.0 | GGUF en Hugging Face |
+| google/gemma-4-E2B-it-qat-q4_0-unquantized | ~4,63B totales (2,3B efectivos) | 128K | Texto, imagen, audio | Apache 2.0 | Safetensors en Hugging Face |
 | google/gemma-4-E2B-it-qat-mobile-transformers | ~4,63B totales (2,3B efectivos) | 128K | Texto, imagen, audio | Apache 2.0 | Formato móvil wNa8o8 |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/asincole/gemma-4-E2B-it-qat-q4_0-gguf
+- Repositorio Hugging Face: https://huggingface.co/asincole/gemma-4-E2B-it-qat-q4_0-gguf
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized
 - Variante móvil oficial: https://huggingface.co/google/gemma-4-E2B-it-qat-mobile-transformers
 - Colección QAT Q4_0 de Google: https://huggingface.co/collections/google/gemma-4-qat-q4-0

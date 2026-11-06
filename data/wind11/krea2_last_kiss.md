@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea2_Last_Kiss es un checkpoint de generación de texto a imagen publicado por el usuario wind11 en HuggingFace, construido mediante fusión (merge) del modelo Krea 2 Turbo de Krea.ai con un conjunto de LoRAs publicados en Civitai. Su objetivo declarado es doble: eliminar el sesgo de censura del modelo base y ofrecer un único checkpoint "todoterreno" que rinda tanto en contenido SFW como NSFW, sin necesidad de finetunes separados.
+Krea2_Last_Kiss es un checkpoint de generación de texto a imagen publicado por el usuario wind11 en Hugging Face, construido mediante fusión (merge) del modelo Krea 2 Turbo de Krea.ai con un conjunto de LoRAs publicados en Civitai. Su objetivo declarado es doble: eliminar el sesgo de censura del modelo base y ofrecer un único checkpoint "todoterreno" que rinda tanto en contenido SFW como NSFW, sin necesidad de finetunes separados.
 
 El modelo hereda la arquitectura del base: una columna vertebral de Diffusion Transformer (DiT) densa de 12B parámetros, codificador de texto Qwen3-VL con agregación de características multicapa (sin CLIP), VAE de Qwen Image y un checkpoint destilado a 8 pasos que funciona sin CFG. La resolución nativa de generación se sitúa en el rango de 1K a 2K píxeles.
 
@@ -79,10 +79,10 @@ Los datos de las filas comparativas provienen de la documentación pública de c
 
 | Modelo | Parámetros | Codificador de texto | Resolución | Pasos / CFG | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Krea2_Last_Kiss | 12B (DiT denso) | Qwen3-VL (sin CLIP) | 1024–2048 px | 8 / CFG 0 | other (Krea 2 Community License + LoRAs) | HuggingFace, repo de 13,5 GB, 0 descargas |
-| Krea-2-Turbo (base) | 12B (DiT denso) | Qwen3-VL (sin CLIP) | ~1K–2K px | 8 / CFG 0 | Krea 2 Community License | HuggingFace |
-| FLUX.1 [dev] | 12B | T5-XXL + CLIP-L | Hasta ~2 MP | 20–50 / guidance destilado | No comercial | HuggingFace, amplia adopción |
-| Qwen-Image | 20B (MMDiT) | Qwen2.5-VL | No verificada en esta ficha | No verificado | Apache 2.0 | HuggingFace |
+| Krea2_Last_Kiss | 12B (DiT denso) | Qwen3-VL (sin CLIP) | 1024–2048 px | 8 / CFG 0 | other (Krea 2 Community License + LoRAs) | Hugging Face, repo de 13,5 GB, 0 descargas |
+| Krea-2-Turbo (base) | 12B (DiT denso) | Qwen3-VL (sin CLIP) | ~1K–2K px | 8 / CFG 0 | Krea 2 Community License | Hugging Face |
+| FLUX.1 [dev] | 12B | T5-XXL + CLIP-L | Hasta ~2 MP | 20–50 / guidance destilado | No comercial | Hugging Face, amplia adopción |
+| Qwen-Image | 20B (MMDiT) | Qwen2.5-VL | No verificada en esta ficha | No verificado | Apache 2.0 | Hugging Face |
 
 La diferencia principal de Krea2_Last_Kiss frente a sus alternativas no es de arquitectura ni de tamaño, sino de política de contenido y de licencia: es el único de la comparativa que declara explícitamente ausencia de censura, y también el único cuya licencia exige atención específica por la cláusula de filtrado del modelo base. Frente a FLUX.1 [dev] y Qwen-Image, carece de validación comunitaria (0 descargas) y de cualquier benchmark publicado.
 
@@ -97,11 +97,11 @@ La diferencia principal de Krea2_Last_Kiss frente a sus alternativas no es de ar
 - **Idioma:** no se declara lista de idiomas soportados y la guía de prompting está redactada íntegramente en inglés; el rendimiento con prompts en castellano no está documentado.
 - **Artefactos:** al ser un modelo de difusión, persisten riesgos de anatomía incorrecta en poses complejas, manos y texto renderizado con errores tipográficos.
 - **Sin datos de sesgo:** no se ha publicado ninguna evaluación de sesgos demográficos, de representación ni de sesgos de estilo.
-- **Metadatos de fecha:** las fechas de creación y actualización del repositorio (2026-10-19) figuran tal cual en la información de HuggingFace.
+- **Metadatos de fecha:** las fechas de creación y actualización del repositorio (2026-10-19) figuran tal cual en la información de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wind11/Krea2_Last_Kiss
+- Modelo en Hugging Face: https://huggingface.co/wind11/Krea2_Last_Kiss
 - Modelo base Krea 2 Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Licencia del base (Krea 2 Community License): referenciada en la model card del modelo base, https://huggingface.co/krea/Krea-2-Turbo
 - Civitai (origen de los LoRAs fusionados; el autor no enumera enlaces individuales): https://civitai.com

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Riasok/few-shot-run-2` es un checkpoint de ajuste supervisado (SFT) del modelo de robotica MolmoAct2 de AllenAI, desarrollado por el usuario Riasok y publicado en HuggingFace. Se trata de una politica visomotora (vision-language-action, VLA) entrenada para ejecutar tareas de manipulacion en el entorno de simulacion LIBERO, no de un modelo de lenguaje conversacional. El modelo parte de los pesos de `allenai/MolmoAct2` y anade un experto de accion entrenado junto con un adaptador LoRA sobre el codificador vision-lenguaje.
+`Riasok/few-shot-run-2` es un checkpoint de ajuste supervisado (SFT) del modelo de robotica MolmoAct2 de AllenAI, desarrollado por el usuario Riasok y publicado en Hugging Face. Se trata de una politica visomotora (vision-language-action, VLA) entrenada para ejecutar tareas de manipulacion en el entorno de simulacion LIBERO, no de un modelo de lenguaje conversacional. El modelo parte de los pesos de `allenai/MolmoAct2` y anade un experto de accion entrenado junto con un adaptador LoRA sobre el codificador vision-lenguaje.
 
 El interes del checkpoint es metodologico: demuestra que es posible obtener un rendimiento competitivo en LIBERO con solo 10 demostraciones por tarea (400 demostraciones en total, 66.788 fotogramas) frente al entrenamiento con el conjunto de datos completo que emplea la referencia oficial `allenai/MolmoAct2-LIBERO`. El autor reporta una tasa de exito del 80,4% (402/500) en la suite LIBERO Spatial.
 
@@ -66,10 +66,10 @@ No se han publicado en la informacion disponible resultados de las suites LIBERO
 
 | Modelo | Parametros | Contexto | Rendimiento LIBERO | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Riasok/few-shot-run-2` | 5.601.988.144 | no disponible | Spatial 80,4% (402/500) | no disponible | HuggingFace, formato LeRobot |
-| `allenai/MolmoAct2-LIBERO` | no disponible | no disponible | no disponible en la informacion proporcionada (referencia oficial entrenada con datos completos) | no disponible | HuggingFace |
-| `Riasok/few-shot-run-1` | no disponible | no disponible | no disponible | no disponible | HuggingFace (una demostracion por tarea) |
-| `Riasok/PPO-run1` | no disponible | no disponible | no disponible | no disponible | HuggingFace (PPO sobre el modelo anterior) |
+| `Riasok/few-shot-run-2` | 5.601.988.144 | no disponible | Spatial 80,4% (402/500) | no disponible | Hugging Face, formato LeRobot |
+| `allenai/MolmoAct2-LIBERO` | no disponible | no disponible | no disponible en la informacion proporcionada (referencia oficial entrenada con datos completos) | no disponible | Hugging Face |
+| `Riasok/few-shot-run-1` | no disponible | no disponible | no disponible | no disponible | Hugging Face (una demostracion por tarea) |
+| `Riasok/PPO-run1` | no disponible | no disponible | no disponible | no disponible | Hugging Face (PPO sobre el modelo anterior) |
 
 No se dispone de datos suficientes para comparar con otras familias de politicas VLA (por ejemplo, OpenVLA u Octo) en la informacion proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos suficientes para comparar con otras familias de politicas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Riasok/few-shot-run-2
+- Modelo en Hugging Face: https://huggingface.co/Riasok/few-shot-run-2
 - Modelo base: https://huggingface.co/allenai/MolmoAct2
 - Referencia oficial entrenada con datos completos de LIBERO: https://huggingface.co/allenai/MolmoAct2-LIBERO
 - Checkpoint previo con una demostracion por tarea: https://huggingface.co/Riasok/few-shot-run-1

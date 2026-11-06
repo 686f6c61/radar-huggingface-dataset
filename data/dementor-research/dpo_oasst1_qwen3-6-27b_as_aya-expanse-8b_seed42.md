@@ -66,7 +66,7 @@ No disponible. Este es un adaptador experimental sin datos de rendimiento public
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_oasst1_qwen3.6-27b_as_aya-expanse-8b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_oasst1_qwen3.6-27b_as_aya-expanse-8b_seed42
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B (enlace inferido, no verificado)
 - Herramienta Tinker: https://thinkingmachines.ai/tinker/ (mencionada en la model card)
 - No se proporcionan otros enlaces (papers, blogs, demos) en la información disponible.

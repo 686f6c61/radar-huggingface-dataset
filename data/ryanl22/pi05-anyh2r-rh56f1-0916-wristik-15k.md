@@ -73,9 +73,9 @@ La model card no incluye tasas de éxito por tarea, error de acción (MSE), comp
 
 | Modelo | Parámetros | Horizonte de acción | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `RyanL22/pi05-anyh2r-rh56f1-0916-wristik-15k` | 4.143.404.816 (~4,14 M M) | 50 acciones a 20 fps (2,5 s), `n_obs_steps=1` | Apache 2.0 | Público en HuggingFace, 11 descargas, 0 likes |
-| `lerobot/pi05_base` (modelo base) | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | Público en HuggingFace como modelo base del fine-tune |
-| `RyanL22/anyh2r-pi05-0916-merged` | No es un modelo, es el dataset de entrenamiento (16 células: 12 sintéticas + 4 reales) | No aplica | No disponible en la información proporcionada | Público en HuggingFace |
+| `RyanL22/pi05-anyh2r-rh56f1-0916-wristik-15k` | 4.143.404.816 (~4,14 M M) | 50 acciones a 20 fps (2,5 s), `n_obs_steps=1` | Apache 2.0 | Público en Hugging Face, 11 descargas, 0 likes |
+| `lerobot/pi05_base` (modelo base) | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | Público en Hugging Face como modelo base del fine-tune |
+| `RyanL22/anyh2r-pi05-0916-merged` | No es un modelo, es el dataset de entrenamiento (16 células: 12 sintéticas + 4 reales) | No aplica | No disponible en la información proporcionada | Público en Hugging Face |
 
 La búsqueda web realizada no devolvió resultados relacionados con el modelo: los enlaces obtenidos corresponden a un proveedor checo de equipos de televisión por satélite, sin ninguna relación con esta ficha. No se dispone, por tanto, de comparativas verificadas con otras políticas VLA del mismo tamaño o de la misma tarea.
 
@@ -94,7 +94,7 @@ La búsqueda web realizada no devolvió resultados relacionados con el modelo: l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyanL22/pi05-anyh2r-rh56f1-0916-wristik-15k
+- Modelo en Hugging Face: https://huggingface.co/RyanL22/pi05-anyh2r-rh56f1-0916-wristik-15k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento citado en la model card: https://huggingface.co/datasets/RyanL22/anyh2r-pi05-0916-merged
 - Nota sobre la búsqueda web: la búsqueda no devolvió ningún enlace relacionado con el modelo (los resultados obtenidos pertenecían a un proveedor de equipos de televisión por satélite). No se han encontrado papers, blogs, repositorios ni demos asociados en la información disponible.

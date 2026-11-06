@@ -68,7 +68,7 @@ El valor reportado en el `model-index` es el del holdout: 30,93 +/- 14,48 de pun
 
 | Modelo | Parametros | Entrada | Algoritmo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| breakout-dueling-double-dqn (este) | 3.292.837 | 4x84x84 grises | Double DQN + Dueling | GPL-2.0 | HuggingFace (PyTorch + ONNX) |
+| breakout-dueling-double-dqn (este) | 3.292.837 | 4x84x84 grises | Double DQN + Dueling | GPL-2.0 | Hugging Face (PyTorch + ONNX) |
 | DQN original (Mnih et al., 2015) | no disponible | 4x84x84 grises | DQN | no disponible | Implementaciones de terceros, no checkpoint oficial unico |
 | Alternativas del mismo proyecto (ablations, PER, Contract v3) | no disponible | no disponible | variantes DQN | GPL-2.0 (repo) | no publicadas por el autor |
 | Controlador determinista por pixeles del proyecto | no aplica (no es red neuronal) | pixeles | heuristico | GPL-2.0 (repo) | no publicado |
@@ -90,7 +90,7 @@ La comparacion con literatura academica no es directa porque el protocolo de eva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TommyPanLab/breakout-dueling-double-dqn
+- Modelo en Hugging Face: https://huggingface.co/TommyPanLab/breakout-dueling-double-dqn
 - Repositorio del proyecto: https://github.com/Tommyweige/breakout-rl-engineering
 - Demo en navegador: https://breakout.tommypan.com
 - Documentacion de ALE (Arcade Learning Environment) 0.12.0: no disponible en la informacion proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MERNIK-gnom es el ranker aprendido del asignador de cuantización del proyecto MERNIK, publicado por el usuario wepiqx en HuggingFace. No es un modelo de lenguaje: es un conjunto de 75 MLPs pequeños que predicen, para cada grupo de tensores de un modelo de lenguaje, cuánto daño (divergencia KL respecto a la referencia en BF16) causaría bajar ese grupo un nivel de cuantización. El cuantizador usa esas predicciones para repartir su presupuesto de bytes protegiendo los grupos con mayor daño estimado.
+MERNIK-gnom es el ranker aprendido del asignador de cuantización del proyecto MERNIK, publicado por el usuario wepiqx en Hugging Face. No es un modelo de lenguaje: es un conjunto de 75 MLPs pequeños que predicen, para cada grupo de tensores de un modelo de lenguaje, cuánto daño (divergencia KL respecto a la referencia en BF16) causaría bajar ese grupo un nivel de cuantización. El cuantizador usa esas predicciones para repartir su presupuesto de bytes protegiendo los grupos con mayor daño estimado.
 
 El artefacto es deliberadamente diminuto: 75 MLPs de 2.209 parámetros cada uno, 166.675 parámetros en total y 1,35 MB en disco. Frente a las versiones anteriores que se distribuían como blobs `.npz` con el contrato de features embebido en código, esta generación se publica como `.safetensors` autodescriptivos que incluyen pesos, contrato de features, normalización por familia y puntuaciones medidas en un único fichero.
 
@@ -102,5 +102,5 @@ No se han identificado en la información proporcionada modelos comparables de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wepiqx/MERNIK-gnom
+- Modelo en Hugging Face: https://huggingface.co/wepiqx/MERNIK-gnom
 - Proyecto MERNIK: https://huggingface.co/wepiqx/MERNIK

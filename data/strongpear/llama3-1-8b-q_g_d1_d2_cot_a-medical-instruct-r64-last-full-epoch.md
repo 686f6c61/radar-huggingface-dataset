@@ -68,6 +68,6 @@ No se dispone de información sobre modelos comparables específicos para este a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-MEDICAL-Instruct-r64-last-full-epoch
+- Hugging Face: https://huggingface.co/strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-MEDICAL-Instruct-r64-last-full-epoch
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Repositorio de Llama models (referencia): https://github.com/meta-llama/llama-models

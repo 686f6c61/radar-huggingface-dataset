@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Creatium-llm-coach es un ajuste fino (finetune) del modelo base unsloth/Qwen3.5-9B, publicado por el usuario aayush1306 en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de 9.653.104.368 parámetros (unos 9,65 mil millones) con pipeline declarado de image-text-to-text, lo que indica que hereda capacidad multimodal de entrada (imagen y texto) del modelo base, aunque la ficha no documenta el alcance real de dicha capacidad ni el encoder de visión empleado.
+Creatium-llm-coach es un ajuste fino (finetune) del modelo base unsloth/Qwen3.5-9B, publicado por el usuario aayush1306 en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de 9.653.104.368 parámetros (unos 9,65 mil millones) con pipeline declarado de image-text-to-text, lo que indica que hereda capacidad multimodal de entrada (imagen y texto) del modelo base, aunque la ficha no documenta el alcance real de dicha capacidad ni el encoder de visión empleado.
 
 El modelo se entrenó con la librería Unsloth y TRL, según indica el propio autor, con una mejora declarada de velocidad de entrenamiento de 2x. El repositorio ocupa 19,3 GB y contiene pesos en safetensors, lo que es coherente con un almacenamiento en bf16 para ese número de parámetros. El único idioma declarado es el inglés.
 
@@ -29,7 +29,7 @@ Su relevancia práctica es limitada por el momento: el repositorio no incluye da
 
 La información disponible no detalla la arquitectura interna más allá de la etiqueta `qwen3_5` y del pipeline `image-text-to-text`. No se especifica si emplea atención completa, atención lineal, mezcla de expertos (MoE) o algún esquema híbrido, ni el número de capas, cabezas de atención o dimensión oculta. Tampoco se documenta la longitud de contexto nativa ni si se aplicó alguna técnica de extensión de contexto durante el ajuste.
 
-El entrenamiento descrito consiste en un finetune del modelo unsloth/Qwen3.5-9B realizado con Unsloth y la librería TRL de HuggingFace, con una mejora declarada de velocidad de 2x respecto a un entrenamiento convencional. No se indica el número de tokens de entrenamiento, la composición del dataset, el número de épocas, la tasa de aprendizaje ni si se aplicaron fases de RLHF, DPO o preferencias. La model card se limita a la plantilla estándar de Unsloth para modelos subidos tras un ajuste, sin resultados de evaluación asociados.
+El entrenamiento descrito consiste en un finetune del modelo unsloth/Qwen3.5-9B realizado con Unsloth y la librería TRL de Hugging Face, con una mejora declarada de velocidad de 2x respecto a un entrenamiento convencional. No se indica el número de tokens de entrenamiento, la composición del dataset, el número de épocas, la tasa de aprendizaje ni si se aplicaron fases de RLHF, DPO o preferencias. La model card se limita a la plantilla estándar de Unsloth para modelos subidos tras un ajuste, sin resultados de evaluación asociados.
 
 ## Capacidades
 
@@ -73,8 +73,8 @@ Las siguientes cifras son estimaciones derivadas del recuento de parámetros (9,
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| creatium-llm-coach | 9,65 B | No disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| unsloth/Qwen3.5-9B (base) | No disponible | No disponible | No disponible | HuggingFace |
+| creatium-llm-coach | 9,65 B | No disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| unsloth/Qwen3.5-9B (base) | No disponible | No disponible | No disponible | Hugging Face |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la información proporcionada de datos verificables (parámetros, contexto, benchmarks o licencia) de otros modelos comparables de aproximadamente 9 B, por lo que no se puede establecer una comparación cuantitativa fiable. La única comparación defendible es contra el modelo base, del que se sabe que comparte el recuento de parámetros del ajuste (9,65 B) y del que este modelo es un finetune directo.
@@ -93,8 +93,8 @@ No se dispone en la información proporcionada de datos verificables (parámetro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aayush1306/creatium-llm-coach
+- Modelo en Hugging Face: https://huggingface.co/aayush1306/creatium-llm-coach
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 - Búsqueda web realizada: los resultados obtenidos no guardan relación con el modelo (consultas sobre la hora local en Seattle, Estados Unidos), por lo que no aportan enlaces relevantes.

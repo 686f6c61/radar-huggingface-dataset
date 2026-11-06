@@ -20,7 +20,7 @@ Su relevancia es acotada pero clara: demuestra un flujo de destilacion profesor-
 | Idiomas soportados | No disponible (el asistente asociado procesa comandos de voz, idioma no especificado) |
 | Licencia | Gemma (el adaptador hereda la licencia del modelo base) |
 | Formato de pesos | Adaptador para la libreria `mlx-lm` (carga via `adapter_path`); formato de fichero concreto no especificado |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de publicacion | 2026-09-15 |
 
@@ -75,8 +75,8 @@ No se dispone de especificaciones tecnicas de alternativas comparables (parametr
 
 | Modelo | Papel | Rendimiento de enrutado declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `gemma-4-E2B-it-qat-4bit` (base, sin adaptador) | Alumno sin ajustar | 91,3 % (46 casos) y 92,6 % (54 casos) | Gemma | MLX, en HuggingFace (mlx-community) |
-| `gemma-4-E2B-it-qat-4bit` + este adaptador | Alumno ajustado | 95,7 % (46 casos) y 94,4 % (54 casos) | Gemma | Adaptador en HuggingFace |
+| `gemma-4-E2B-it-qat-4bit` (base, sin adaptador) | Alumno sin ajustar | 91,3 % (46 casos) y 92,6 % (54 casos) | Gemma | MLX, en Hugging Face (mlx-community) |
+| `gemma-4-E2B-it-qat-4bit` + este adaptador | Alumno ajustado | 95,7 % (46 casos) y 94,4 % (54 casos) | Gemma | Adaptador en Hugging Face |
 | `gemma-4-26b-a4b-it-4bit` | Profesor que genera las etiquetas | No se publican metricas de enrutado del profesor | Gemma | Referenciado en la model card, no enlazado |
 
 No hay datos publicados que permitan comparar con otros adaptadores de enrutado de terceros.
@@ -96,7 +96,7 @@ No hay datos publicados que permitan comparar con otros adaptadores de enrutado 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/foreignerfromjupiter/hey-steph-e2b-lora
+- Modelo en Hugging Face: https://huggingface.co/foreignerfromjupiter/hey-steph-e2b-lora
 - Repositorio del asistente Hey Steph: https://github.com/ForeignerfromJupiter/hey-steph
 - Modelo base: https://huggingface.co/mlx-community/gemma-4-E2B-it-qat-4bit
 - Busqueda web: no se han encontrado enlaces relevantes (los resultados devueltos corresponden a sitios de contactos en bulgaro, sin relacion con el modelo).

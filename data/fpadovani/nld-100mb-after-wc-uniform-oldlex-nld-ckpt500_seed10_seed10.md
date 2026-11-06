@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nld-100mb-after-wc-uniform-oldlex-nld-ckpt500_seed10_seed10` es un ajuste fino (SFT) del checkpoint base `fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed10`, desarrollado por el usuario de HuggingFace fpadovani, vinculado a un proyecto de investigación de la Universidad de Groningen (el enlace de Weights & Biases apunta al proyecto `white_cotterell`). Se trata de un modelo de generación de texto de tipo GPT-2 con 124.770.816 parámetros totales, entrenado con la librería TRL sobre la infraestructura de Transformers. Por su nomenclatura (`nld`, `oldlex`, `100mb`, `ckpt500`), parece formar parte de una serie de experimentos controlados sobre datos de entrenamiento y léxico, más orientada a la investigación que a un uso de producción.
+El modelo `nld-100mb-after-wc-uniform-oldlex-nld-ckpt500_seed10_seed10` es un ajuste fino (SFT) del checkpoint base `fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed10`, desarrollado por el usuario de Hugging Face fpadovani, vinculado a un proyecto de investigación de la Universidad de Groningen (el enlace de Weights & Biases apunta al proyecto `white_cotterell`). Se trata de un modelo de generación de texto de tipo GPT-2 con 124.770.816 parámetros totales, entrenado con la librería TRL sobre la infraestructura de Transformers. Por su nomenclatura (`nld`, `oldlex`, `100mb`, `ckpt500`), parece formar parte de una serie de experimentos controlados sobre datos de entrenamiento y léxico, más orientada a la investigación que a un uso de producción.
 
 El modelo resuelve la tarea genérica de generación de texto autoregresiva y se distribuye en formato safetensors listo para `transformers` y `text-generation-inference`. No es un modelo de propósito general competitivo con los LLM actuales: su tamaño (aproximadamente 125 millones de parámetros) y la ausencia total de benchmarks publicados lo sitúan en el terreno de la experimentación académica, la reproducibilidad de estudios sobre preentrenamiento y el ajuste supervisado.
 
@@ -12,7 +12,7 @@ Su relevancia actual es limitada y muy específica: sirve como artefacto reprodu
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only, según la etiqueta `gpt2` de HuggingFace) |
+| Arquitectura | GPT-2 (transformer decoder-only, según la etiqueta `gpt2` de Hugging Face) |
 | Parametros totales | 124.770.816 (dato real de los pesos safetensors) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (la arquitectura GPT-2 canónica admite 1024 tokens, pero la model card no lo especifica) |
@@ -46,7 +46,7 @@ El entrenamiento se realizó mediante SFT (supervised fine-tuning) con TRL 0.23.
 - Reproducción de experimentos académicos: el modelo se puede cargar con `transformers` y la semilla y el checkpoint están fijados en el nombre, lo que facilita replicar los resultados de un estudio concreto sobre SFT con TRL.
 - Línea base en estudios comparativos de ajuste fino: dado su tamaño reducido y su origen controlado, sirve como punto de referencia frente a otros checkpoints de la misma serie (`ckpt500`, semilla 10) para medir el efecto de cambios en los datos o en los hiperparámetros.
 - Experimentos de generación de texto a pequeña escala: con una GPU de consumo o incluso CPU, se pueden generar continuaciones de prompt para analizar cualitativamente el comportamiento del modelo ajustado.
-- Pruebas de integración de pipelines de HuggingFace: al ser compatible con `text-generation-inference` y con `endpoints_compatible`, es útil para validar flujos de despliegue en entornos de prueba sin coste elevado de cómputo.
+- Pruebas de integración de pipelines de Hugging Face: al ser compatible con `text-generation-inference` y con `endpoints_compatible`, es útil para validar flujos de despliegue en entornos de prueba sin coste elevado de cómputo.
 - Docencia y formación: por su tamaño y su licencia no restrictiva aparente (aunque no confirmada), es adecuado para demostrar el ciclo completo de preentrenamiento, ajuste con TRL y publicación en el Hub.
 - Investigación sobre léxico y datos de preentrenamiento: el sufijo `oldlex` sugiere que el experimento explora el efecto de un vocabulario o léxico concreto, por lo que el modelo puede emplearse para analizar cómo ese sesgo de datos se refleja en las generaciones.
 - Filtrado o generación de texto en neerlandés (si se confirma el idioma): podría emplearse en tareas auxiliares de bajo coste, siempre que se valide antes la calidad real, que no está medida.
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| nld-100mb-after-wc-uniform-oldlex-nld-ckpt500_seed10_seed10 | 124,77 M | no disponible | no disponible | HuggingFace (safetensors) | no |
-| GPT-2 (124M, OpenAI) | 124 M | 1024 tokens | MIT | HuggingFace y multiples repositorios | si (evaluaciones originales) |
-| DistilGPT-2 | 82 M | 1024 tokens | MIT (derivado de GPT-2) | HuggingFace | si |
-| SmolLM2-135M | 135 M | 8192 tokens (segun su model card) | Apache 2.0 | HuggingFace | si |
+| nld-100mb-after-wc-uniform-oldlex-nld-ckpt500_seed10_seed10 | 124,77 M | no disponible | no disponible | Hugging Face (safetensors) | no |
+| GPT-2 (124M, OpenAI) | 124 M | 1024 tokens | MIT | Hugging Face y multiples repositorios | si (evaluaciones originales) |
+| DistilGPT-2 | 82 M | 1024 tokens | MIT (derivado de GPT-2) | Hugging Face | si |
+| SmolLM2-135M | 135 M | 8192 tokens (segun su model card) | Apache 2.0 | Hugging Face | si |
 
 La comparación es estructural: este modelo no publica métricas, de modo que no es posible establecer una comparación de rendimiento con las alternativas. En términos de licencia y contexto, GPT-2, DistilGPT-2 y SmolLM2-135M están mejor documentados y ofrecen términos de uso claros, mientras que este checkpoint carece de esa información.
 
@@ -89,7 +89,7 @@ La comparación es estructural: este modelo no publica métricas, de modo que no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/nld-100mb-after-wc-uniform-oldlex-nld-ckpt500_seed10_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/nld-100mb-after-wc-uniform-oldlex-nld-ckpt500_seed10_seed10
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed10
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/02n8injv
 - Repositorio de TRL: https://github.com/huggingface/trl

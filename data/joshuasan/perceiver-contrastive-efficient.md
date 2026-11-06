@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Perceiver for Contrastive es un prototipo de investigación publicado por el usuario Joshuasan en HuggingFace. Implementa una arquitectura Perceiver —atención cruzada iterativa desde un conjunto de latentes hacia las entradas— orientada a un objetivo contrastivo, es decir, al aprendizaje de representaciones por similitud entre pares. El repositorio se presenta explícitamente como un punto de partida experimental: el autor indica que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado.
+Perceiver for Contrastive es un prototipo de investigación publicado por el usuario Joshuasan en Hugging Face. Implementa una arquitectura Perceiver —atención cruzada iterativa desde un conjunto de latentes hacia las entradas— orientada a un objetivo contrastivo, es decir, al aprendizaje de representaciones por similitud entre pares. El repositorio se presenta explícitamente como un punto de partida experimental: el autor indica que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado.
 
 El dato más relevante para un desarrollador es su escala: 24.832 parámetros totales registrados en el archivo safetensors, lo que lo sitúa en el rango de una configuración mínima de prueba, no de un modelo utilizable en producción. No se declaran datos de entrenamiento, benchmarks, idiomas soportados ni longitud de contexto.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPU consumer: sí, cabe en cualquier GPU consumer y también en un portátil sin GPU dedicada.
 - Opciones de despliegue: se distribuye exclusivamente un script propio (`inference.py`) con bloque `__main__` de ejemplo. Las APIs genéricas de carga automática requieren un adaptador explícito. No hay soporte declarado para vLLM, TGI, llama.cpp ni Ollama, ni pesos en GGUF.
 - Latencia y throughput estimados: no disponibles.
-- Almacenamiento: el repositorio ocupa 0,0 GB según los metadatos de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB según los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -82,7 +82,7 @@ No se dispone de datos verificables de modelos comparables dentro de la informac
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Joshuasan/perceiver-contrastive-efficient | Perceiver, escala small | 24.832 | no disponible | bsd-3-clause | HuggingFace, checkpoint de inicialización sin entrenar |
+| Joshuasan/perceiver-contrastive-efficient | Perceiver, escala small | 24.832 | no disponible | bsd-3-clause | Hugging Face, checkpoint de inicialización sin entrenar |
 | Perceiver original (referencia externa, no citada en el repositorio) | Perceiver | no disponible | no disponible | no disponible | Publicación académica |
 | Perceiver IO (referencia externa, no citada en el repositorio) | Perceiver con decodificación flexible | no disponible | no disponible | no disponible | Publicación académica y repositorio de referencia |
 | Encoders contrastivos tipo CLIP/SigLIP | Transformer con objetivo contrastivo | no disponible | no disponible | no disponible | Pesos entrenados publicados |
@@ -104,7 +104,7 @@ La comparación relevante no es de rendimiento, ya que este repositorio no repor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Joshuasan/perceiver-contrastive-efficient
+- Modelo en Hugging Face: https://huggingface.co/Joshuasan/perceiver-contrastive-efficient
 - Archivos del repositorio: `inference.py`, `config.json`, `training_args.json`, `model.safetensors`, `README.md` (accesibles desde la pestaña Files del enlace anterior)
 - Referencia externa de la arquitectura Perceiver: https://arxiv.org/abs/2103.03206 (no citada en el repositorio)
 - Referencia externa de Perceiver IO: https://arxiv.org/abs/2107.14795 (no citada en el repositorio)

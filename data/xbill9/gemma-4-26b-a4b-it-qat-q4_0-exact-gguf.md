@@ -100,7 +100,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que la informacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-q4_0-exact-gguf
+- Repositorio Hugging Face: https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-q4_0-exact-gguf
 - Modelo base sin cuantizar: https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-unquantized
 - GGUF Q4_0 oficial de Google: https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-gguf
 - Build E4B del mismo autor: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-q4_0-exact-gguf

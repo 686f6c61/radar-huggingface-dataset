@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch17 | 6.738 M | no disponible | Unlearning TOFU (forget10) | llama2 | HuggingFace |
-| locuslab/tofu_ft_llama2-7b | ~6.738 M | no disponible | Fine-tuning TOFU (base) | llama2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | ~6.738 M | no disponible | Chat general | llama2 | HuggingFace |
-| Meta Llama 2 7B (base) | ~6.738 M | 4.096 tokens (referencia Llama 2) | Modelo fundacional | llama2 | HuggingFace |
+| unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch17 | 6.738 M | no disponible | Unlearning TOFU (forget10) | llama2 | Hugging Face |
+| locuslab/tofu_ft_llama2-7b | ~6.738 M | no disponible | Fine-tuning TOFU (base) | llama2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | ~6.738 M | no disponible | Chat general | llama2 | Hugging Face |
+| Meta Llama 2 7B (base) | ~6.738 M | 4.096 tokens (referencia Llama 2) | Modelo fundacional | llama2 | Hugging Face |
 
 La comparación relevante es frente al modelo base `locuslab/tofu_ft_llama2-7b` (sin olvido) y frente a `NousResearch/Llama-2-7b-chat-hf` (origen de los embeddings reinicializados). No se dispone de datos de rendimiento comparativo publicados en la información proporcionada.
 
@@ -82,7 +82,7 @@ La comparación relevante es frente al modelo base `locuslab/tofu_ft_llama2-7b` 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch17
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch17
 - Modelo base (fine-tune TOFU): https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Origen de embeddings y cabeza LM: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Benchmark TOFU (paper): https://arxiv.org/abs/2401.06121

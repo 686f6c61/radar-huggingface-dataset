@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qwfweewrevdf/max_v1` es un repositorio de modelo alojado en HuggingFace por el usuario `qwfweewrevdf`, publicado bajo licencia Apache 2.0. En el momento de redactar esta ficha el repositorio no cuenta con descargas ni "likes", no tiene pipeline declarado y su model card se limita al bloque de metadatos de licencia, sin texto descriptivo, sin ficha tecnica y sin resultados de evaluacion. El tamano del repositorio es de 0,3 GB, dato que acota el volumen de pesos almacenados pero que no permite determinar con exactitud el numero de parametros ni la precision numerica de los mismos.
+`qwfweewrevdf/max_v1` es un repositorio de modelo alojado en Hugging Face por el usuario `qwfweewrevdf`, publicado bajo licencia Apache 2.0. En el momento de redactar esta ficha el repositorio no cuenta con descargas ni "likes", no tiene pipeline declarado y su model card se limita al bloque de metadatos de licencia, sin texto descriptivo, sin ficha tecnica y sin resultados de evaluacion. El tamano del repositorio es de 0,3 GB, dato que acota el volumen de pesos almacenados pero que no permite determinar con exactitud el numero de parametros ni la precision numerica de los mismos.
 
 No se dispone de informacion sobre arquitectura, tokenizador, longitud de contexto, idiomas soportados ni proceso de entrenamiento. La busqueda web realizada no devuelve ningun resultado atribuible a este repositorio: los hits obtenidos corresponden a entidades homonimas sin relacion verificable (el paper arXiv 2510.00060 sobre conduccion autonoma "Max-V1", la plataforma de inferencia MAX de Modular, el gateway ModelMax y los modelos de voz Eleven Realtime v1 Max). Por tanto, esta ficha se limita a documentar los metadatos publicos y a marcar explicitamente como "no disponible" todo aquello que el autor no ha hecho publico.
 
@@ -85,7 +85,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, el contexto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qwfweewrevdf/max_v1
+- Hugging Face: https://huggingface.co/qwfweewrevdf/max_v1
 - Paper "Max-V1" sobre conduccion autonoma (arXiv 2510.00060): https://arxiv.org/abs/2510.00060 — entidad homonima, sin relacion verificada con este repositorio.
 - Resumen del paper anterior en Emergent Mind: https://www.emergentmind.com/papers/2510.00060 — entidad homonima, sin relacion verificada.
 - MAX (Modular), plataforma de inferencia: https://max.modular.com/models/ — producto distinto, sin relacion con este repositorio.

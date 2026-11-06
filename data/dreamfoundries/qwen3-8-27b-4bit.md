@@ -65,5 +65,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: DreamFoundries/Qwen3.8-27B-4bit](https://huggingface.co/DreamFoundries/Qwen3.8-27B-4bit)
+- [Hugging Face: DreamFoundries/Qwen3.8-27B-4bit](https://huggingface.co/DreamFoundries/Qwen3.8-27B-4bit)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

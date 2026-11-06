@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `di-leo-angelo/qwen3.8-27b-qlora-tutor` es un adaptador LoRA (no un modelo completo) entrenado sobre el modelo base `Qwen/Qwen3.8-27B`. Lo desarrolla el usuario de HuggingFace di-leo-angelo como parte de un portafolio de proyectos de machine learning, y su proposito es estrictamente de transferencia de estilo: reescribe las respuestas del modelo base en una voz consistente de tutor escolar, estructurada en pasos ("Step 1 ... Step 4 ... Check: ...") y limitada a unas 350 palabras. No anade conocimiento nuevo; el contenido de las respuestas queda acotado por el modelo base congelado.
+El modelo `di-leo-angelo/qwen3.8-27b-qlora-tutor` es un adaptador LoRA (no un modelo completo) entrenado sobre el modelo base `Qwen/Qwen3.8-27B`. Lo desarrolla el usuario de Hugging Face di-leo-angelo como parte de un portafolio de proyectos de machine learning, y su proposito es estrictamente de transferencia de estilo: reescribe las respuestas del modelo base en una voz consistente de tutor escolar, estructurada en pasos ("Step 1 ... Step 4 ... Check: ...") y limitada a unas 350 palabras. No anade conocimiento nuevo; el contenido de las respuestas queda acotado por el modelo base congelado.
 
 El adaptador tiene 124.730.880 parametros entrenables (0,454 % del modelo base de 27,48B), con rango r=16, alpha=32 y dropout 0,05, aplicado a todas las capas lineales excepto la torre de vision, la cabeza MTP y la LM head. El repositorio ocupa 0,5 GB y solo contiene el adaptador y los ficheros del tokenizer, no los pesos del modelo base. La licencia es Apache-2.0, heredada del modelo base.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.8-27b-qlora-tutor (este) | 124,7M entrenables sobre base de 27,48B | No disponible | Adaptador LoRA de estilo | Apache-2.0 | HuggingFace, 17 descargas |
-| Qwen/Qwen3.8-27B (base) | 27,48B | No disponible | Modelo completo | Apache-2.0 | HuggingFace |
-| Adaptadores LoRA comunitarios sobre Qwen3 | Variable | Depende del base | Fine-tuning de tarea o estilo | Variable | HuggingFace |
+| qwen3.8-27b-qlora-tutor (este) | 124,7M entrenables sobre base de 27,48B | No disponible | Adaptador LoRA de estilo | Apache-2.0 | Hugging Face, 17 descargas |
+| Qwen/Qwen3.8-27B (base) | 27,48B | No disponible | Modelo completo | Apache-2.0 | Hugging Face |
+| Adaptadores LoRA comunitarios sobre Qwen3 | Variable | Depende del base | Fine-tuning de tarea o estilo | Variable | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con otros adaptadores de la misma categoria en la informacion proporcionada.
 
@@ -90,6 +90,6 @@ No se dispone de datos de benchmarks comparativos con otros adaptadores de la mi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/di-leo-angelo/qwen3.8-27b-qlora-tutor
+- Hugging Face: https://huggingface.co/di-leo-angelo/qwen3.8-27b-qlora-tutor
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio del proyecto: https://github.com/di-leo-angelo/ml-ai-portfolio (proyecto `projects/qwen-qlora`, informe en `reports/ANALYSIS.md`)

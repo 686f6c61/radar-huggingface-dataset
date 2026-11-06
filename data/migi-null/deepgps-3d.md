@@ -73,7 +73,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 | Tipo de salida | volumen 3D generado (1 canal de proteina) | no disponible |
 | Rendimiento | no se han publicado metricas | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | pesos en HuggingFace y codigo en GitHub | no disponible |
+| Disponibilidad | pesos en Hugging Face y codigo en GitHub | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/migi-null/DeepGPS-3D
+- Hugging Face: https://huggingface.co/migi-null/DeepGPS-3D
 - Codigo y uso: https://github.com/royal-dargon/DeepGPS_3D
 - Modelo de embeddings de secuencia: https://huggingface.co/facebook/esm2_t33_650M_UR50D
 - Dataset de referencia (OpenCell): no disponible en la informacion proporcionada

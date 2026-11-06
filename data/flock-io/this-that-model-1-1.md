@@ -122,7 +122,7 @@ Por tipo de decisión frente al mejor de los dos sistemas frontera: cuatro tipos
 
 | Modelo | Parámetros | Precisión en decisiones complejas | Tokens generados | Latencia | Licencia / disponibilidad |
 |---|---:|---:|---:|---:|---|
-| this-that-model-1.1 | 1,88 B | 0,775 | 0 | 30,9 ms | MIT, pesos abiertos en HuggingFace |
+| this-that-model-1.1 | 1,88 B | 0,775 | 0 | 30,9 ms | MIT, pesos abiertos en Hugging Face |
 | this-that-model-1.0 | 1,88 B (misma arquitectura) | 0,406 | 0 | 30,9 ms | Disponible en el mismo repositorio de autor |
 | laya-typed-decisions | no disponible | 0,310 | 0 | 25 ms | no disponible |
 | claude-opus-5 | no disponible | 0,834 | ~200 | ~1000 ms | Propietario, servicio alojado |
@@ -143,11 +143,11 @@ Frente a los sistemas generativos, la comparación no es de capacidad bruta sino
 - Longitud de contexto: no disponible. No se puede asumir que soporte estados largos.
 - Restricciones de licencia: licencia MIT, que permite uso comercial, modificación y redistribución con atribución y sin garantía. No se documentan restricciones adicionales.
 - Caveats para producción: el modelo cuenta con 0 descargas y 0 likes y fue publicado el 22 de septiembre de 2026, por lo que no existe validación de terceros más allá de la cohorte congelada de 68 preguntas reportada por el propio autor. La comparativa de coste entre precisión y coste no es homogénea (el precio alojado incluye servicio y margen, el local es solo electricidad), y el propio autor pide leerla como un orden de magnitud, no como un factor cinco.
-- Los resultados de búsqueda web disponibles no contienen información relevante sobre este modelo; todas las referencias útiles provienen de la model card y del repositorio de HuggingFace.
+- Los resultados de búsqueda web disponibles no contienen información relevante sobre este modelo; todas las referencias útiles provienen de la model card y del repositorio de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flock-io/this-that-model-1.1
+- Modelo en Hugging Face: https://huggingface.co/flock-io/this-that-model-1.1
 - Código de inferencia: https://github.com/FLock-io/this-that-model
 - Dataset del benchmark de decisiones complejas: https://huggingface.co/datasets/limberc/this-that-complex-decisions
 - Dataset del benchmark espacial (referenciado en los tags): limberc/this-that-spatial-bench

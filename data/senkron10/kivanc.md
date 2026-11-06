@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SeNKrOn10/Kivanc es un repositorio publicado en HuggingFace por el usuario SeNKrOn10. La informacion disponible se limita a los metadatos del repositorio: fue creado el 15 de septiembre de 2026 y actualizado el mismo dia, ocupa aproximadamente 0,1 GB y cuenta con 1 like y 0 descargas en el momento de la consulta. La unica etiqueta asociada es region:us, que hace referencia a la region de almacenamiento y no aporta informacion sobre el modelo.
+SeNKrOn10/Kivanc es un repositorio publicado en Hugging Face por el usuario SeNKrOn10. La informacion disponible se limita a los metadatos del repositorio: fue creado el 15 de septiembre de 2026 y actualizado el mismo dia, ocupa aproximadamente 0,1 GB y cuenta con 1 like y 0 descargas en el momento de la consulta. La unica etiqueta asociada es region:us, que hace referencia a la region de almacenamiento y no aporta informacion sobre el modelo.
 
 No se ha publicado informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados, la licencia ni el pipeline de la tarea. Tampoco hay model card descriptiva, paper, repositorio de codigo ni resultados de evaluacion asociados. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a sucursales bancarias de Banco Santander en Mexico y no guardan relacion con este repositorio.
 
@@ -21,7 +21,7 @@ Por todo ello, esta ficha recoge unicamente los datos verificables del repositor
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
 | Pipeline declarado | no disponible |
-| Tamano del repositorio | 0,1 GB (aproximado, dato de HuggingFace) |
+| Tamano del repositorio | 0,1 GB (aproximado, dato de Hugging Face) |
 | Etiquetas declaradas | region:us |
 | Fecha de creacion | 2026-09-15 |
 | Ultima actualizacion | 2026-09-15 |
@@ -68,7 +68,7 @@ No disponible. Al desconocerse el numero de parametros, la tarea, el contexto y 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SeNKrOn10/Kivanc | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| SeNKrOn10/Kivanc | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,6 +84,6 @@ No disponible. Al desconocerse el numero de parametros, la tarea, el contexto y 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SeNKrOn10/Kivanc
+- Repositorio en Hugging Face: https://huggingface.co/SeNKrOn10/Kivanc
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.
 - Resultados de la busqueda web: ninguno relevante. Los enlaces recuperados (https://mexicoo.mx/banco-santander-2913528, https://www.bancos.live/sucursal-santander-centro-comercial-plaza-lago-real-puerto-vallarta---tepic-430-bahia-de-banderas/, https://www.santander.com.mx/personas/sucursales.html, https://mx.infoaboutcompanies.com/Catalog/NAY/Bah%C3%ADa-de-Banderas/Banco-o-cajero-autom%C3%A1tico/Santander-Select, https://mx.maptons.com/p/9638233921) corresponden a sucursales de Banco Santander en Mexico y no guardan ninguna relacion con el modelo.

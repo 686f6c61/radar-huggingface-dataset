@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento para comparar objetivamente. La comparativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-sdf-rec-14M-v2
+- Hugging Face: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-sdf-rec-14M-v2
 - Adaptador relacionado (named-qwen): https://huggingface.co/SecondLookResearch/Qwen2.5-32B-sdf-named-qwen-14M
 - Adaptador relacionado (named-qwen-a1): https://huggingface.co/SecondLookResearch/Qwen2.5-32B-sdf-named-qwen-14M-a1
 - Technical report de Qwen2.5: https://arxiv.org/abs/2412.15115

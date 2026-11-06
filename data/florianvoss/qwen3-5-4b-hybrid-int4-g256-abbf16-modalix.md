@@ -64,9 +64,9 @@ Existen otras variantes compiladas del mismo modelo base en la colección de flo
 
 | Modelo | Cuantización | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-4B Hybrid INT4 G256/ABBF16 Modalix (este) | INT4 (AutoRound G256) + BF16, head GPTQ INT4, vision INT8 | 4096 | No disponible | HuggingFace |
-| Qwen3.5-4B INT8 Modalix | INT8 | No disponible | No disponible | HuggingFace (colección) |
-| Qwen3.5-4B SmoothQuant A0.5 INT4/BF16 Modalix | INT4/BF16 con SmoothQuant | No disponible | No disponible | HuggingFace (colección) |
+| Qwen3.5-4B Hybrid INT4 G256/ABBF16 Modalix (este) | INT4 (AutoRound G256) + BF16, head GPTQ INT4, vision INT8 | 4096 | No disponible | Hugging Face |
+| Qwen3.5-4B INT8 Modalix | INT8 | No disponible | No disponible | Hugging Face (colección) |
+| Qwen3.5-4B SmoothQuant A0.5 INT4/BF16 Modalix | INT4/BF16 con SmoothQuant | No disponible | No disponible | Hugging Face (colección) |
 
 No se dispone de información suficiente para comparar rendimiento, parámetros totales o idiomas soportados entre estas variantes.
 
@@ -82,6 +82,6 @@ No se dispone de información suficiente para comparar rendimiento, parámetros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/florianvoss/Qwen3.5-4B-Hybrid-INT4-G256-ABBF16-Modalix
+- Hugging Face: https://huggingface.co/florianvoss/Qwen3.5-4B-Hybrid-INT4-G256-ABBF16-Modalix
 - Colección de florianvoss: https://huggingface.co/collections/florianvoss/qwen35-tests
 - Documentación de arquitectura del modelo base: https://deepwiki.com/sai-samarth/qwen35-4b-fast-inference/2.1-qwen3.5-4b-gdn-hybrid-model

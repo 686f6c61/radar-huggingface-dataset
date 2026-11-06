@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Absolute-o1-7b-GGUF es la distribucion en formato GGUF del modelo Absolute-o1-7b, un modelo de lenguaje de 7.612.756.480 parametros creado por marcuscedricridia mediante la tecnica de fusion de modelos (mergekit). Esta version concreta ha sido generada y publicada por mradermacher, un conocido cuantizador de la comunidad de HuggingFace, que ofrece el modelo en multiples niveles de cuantizacion para facilitar su despliegue en hardware de consumo.
+Absolute-o1-7b-GGUF es la distribucion en formato GGUF del modelo Absolute-o1-7b, un modelo de lenguaje de 7.612.756.480 parametros creado por marcuscedricridia mediante la tecnica de fusion de modelos (mergekit). Esta version concreta ha sido generada y publicada por mradermacher, un conocido cuantizador de la comunidad de Hugging Face, que ofrece el modelo en multiples niveles de cuantizacion para facilitar su despliegue en hardware de consumo.
 
 El modelo parte de una arquitectura transformer densa (no MoE) de aproximadamente 7,6 mil millones de parametros, orientada a tareas conversacionales en ingles. La model card no especifica la longitud de contexto, los datos de entrenamiento ni el proceso de alineacion, por lo que estos datos deben considerarse no disponibles en la informacion proporcionada.
 

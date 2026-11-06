@@ -6,7 +6,7 @@ LFM3-Omni-2B-LiteRT es una conversión al formato LiteRT del modelo LiquidAI/LFM
 
 El modelo acepta entrada de texto, imagen y audio, y produce respuestas en texto o en voz (text-to-speech). La conversión se realizó desde la revisión `ce2458cb` del modelo original en BF16 y conserva el tokenizador y la licencia del modelo fuente. La relevancia de esta ficha radica en que demuestra la viabilidad de ejecutar un modelo omni-modal de 2B en hardware móvil de consumo, con métricas medidas en dispositivos reales como Galaxy S26 y Pixel 8a.
 
-El contexto declarado es de 4.096 tokens, el modelo solo soporta inglés y su licencia es LFM1.0 (marcada como "other" en HuggingFace). No se han publicado resultados de benchmarks estándar en la información disponible; las únicas métricas son de rendimiento de inferencia en dispositivo.
+El contexto declarado es de 4.096 tokens, el modelo solo soporta inglés y su licencia es LFM1.0 (marcada como "other" en Hugging Face). No se han publicado resultados de benchmarks estándar en la información disponible; las únicas métricas son de rendimiento de inferencia en dispositivo.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El contexto declarado es de 4.096 tokens, el modelo solo soporta inglés y su li
 | Longitud de contexto | 4.096 tokens |
 | Tipos de cuantizacion | int8 (decoder del archivo `.litertlm`); grafos de voz en float32; activaciones fp16/fp32 en runtime |
 | Idiomas soportados | inglés (en) |
-| Licencia | LFM1.0 (license_name: lfm1.0; en HuggingFace aparece como "other") |
+| Licencia | LFM1.0 (license_name: lfm1.0; en Hugging Face aparece como "other") |
 | Formato de pesos | `.litertlm`, `.tflite` (LiteRT), `tokenizer.json`; el modelo fuente también publica GGUF |
 
 ## Arquitectura y entrenamiento
@@ -73,9 +73,9 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-Omni-2B-LiteRT (este) | 2,17 B | 4.096 | LiteRT (.litertlm, .tflite) | LFM1.0 | HuggingFace |
-| LiquidAI/LFM3-Omni-2B | 2,17 B | no disponible | BF16 (safetensors presumiblemente) | LFM1.0 | HuggingFace |
-| LiquidAI/LFM3-Omni-2B-GGUF | 2,17 B | no disponible | GGUF | LFM1.0 | HuggingFace |
+| LFM3-Omni-2B-LiteRT (este) | 2,17 B | 4.096 | LiteRT (.litertlm, .tflite) | LFM1.0 | Hugging Face |
+| LiquidAI/LFM3-Omni-2B | 2,17 B | no disponible | BF16 (safetensors presumiblemente) | LFM1.0 | Hugging Face |
+| LiquidAI/LFM3-Omni-2B-GGUF | 2,17 B | no disponible | GGUF | LFM1.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -86,14 +86,14 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 - No se documenta soporte de tool calling, function calling ni agentes multi-paso.
 - Riesgo de alucinación inherente a modelos de lenguaje; no se aportan evaluaciones de fidelidad.
 - Sesgos conocidos: no disponibles en la información proporcionada.
-- Licencia LFM1.0: es necesario revisar los términos en el enlace de licencia antes de uso comercial; HuggingFace la marca como "other".
+- Licencia LFM1.0: es necesario revisar los términos en el enlace de licencia antes de uso comercial; Hugging Face la marca como "other".
 - El repositorio tiene 0 descargas y 0 likes, y fue creado el 1 de noviembre de 2026; es una conversión de terceros, no oficial de Liquid AI.
 - El runner de Python crea un nuevo Engine por pregunta, lo que puede afectar a la latencia en producción.
 - Las métricas de rendimiento se midieron en dispositivos concretos y pueden no reproducirse en otros hardware.
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/TechnoBaptist/LFM3-Omni-2B-LiteRT
+- Hugging Face (este repositorio): https://huggingface.co/TechnoBaptist/LFM3-Omni-2B-LiteRT
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Versión GGUF: https://huggingface.co/LiquidAI/LFM3-Omni-2B-GGUF
 - Licencia: https://huggingface.co/litert-community/LFM3-Omni-2B-LiteRT/blob/main/LICENSE

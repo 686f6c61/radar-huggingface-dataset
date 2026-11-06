@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mmooreadam/coca-finetuned` es un prototipo de investigación publicado en HuggingFace por el usuario mmooreadam. Se presenta explícitamente como un esqueleto de implementación de una arquitectura CoCa (Contrastive Captioner) orientada a tareas de recuperación (retrieval) multimodal, con un checkpoint de inicialización válido únicamente para pruebas de humo. El propio autor advierte en la model card que no se reclama ninguna métrica de benchmark ni se ha completado un entrenamiento real.
+`mmooreadam/coca-finetuned` es un prototipo de investigación publicado en Hugging Face por el usuario mmooreadam. Se presenta explícitamente como un esqueleto de implementación de una arquitectura CoCa (Contrastive Captioner) orientada a tareas de recuperación (retrieval) multimodal, con un checkpoint de inicialización válido únicamente para pruebas de humo. El propio autor advierte en la model card que no se reclama ninguna métrica de benchmark ni se ha completado un entrenamiento real.
 
 El repositorio incluye un script `main.py` con un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` de inicialización. La configuración declarada corresponde a una escala "large" con atención de ventana deslizante (sliding window), fusión por cross attention, activación mish y normalización InstanceNorm.
 
@@ -64,7 +64,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mmooreadam/coca-finetuned | 24.832 | no disponible | apache-2.0 | pública en HuggingFace (9 descargas, 0 likes) |
+| mmooreadam/coca-finetuned | 24.832 | no disponible | apache-2.0 | pública en Hugging Face (9 descargas, 0 likes) |
 | CLIP (OpenAI) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 | BLIP / BLIP-2 | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 | CoCa (Google) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
@@ -77,11 +77,11 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 - No se declara longitud de contexto; la ventana de atención efectiva depende del `config.json` y de la ventana deslizante configurada.
 - Existe una incoherencia entre la escala declarada ("large") y el recuento real de 24.832 parámetros, lo que debe tratarse como señal de que el artefacto no es representativo de un modelo "large".
 - La licencia apache-2.0 permite uso comercial del repositorio, pero el autor advierte de que los términos de los datos de origen deben revisarse por separado si se usa con datasets externos.
-- La implementación es personalizada: las APIs genéricas de carga de HuggingFace pueden fallar sin un adaptador específico.
+- La implementación es personalizada: las APIs genéricas de carga de Hugging Face pueden fallar sin un adaptador específico.
 - El repositorio ocupa 0.0 GB y tiene 9 descargas y 0 likes, por lo que no existe validación por parte de la comunidad.
 - Cualquier resultado obtenido con un checkpoint futuro entrenado debe documentarse por separado de los valores por defecto aquí incluidos, tal y como indica la model card.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mmooreadam/coca-finetuned
+- Hugging Face: https://huggingface.co/mmooreadam/coca-finetuned
 - La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo: los enlaces recuperados correspondían a guías de posiciones en el videojuego World of Tanks y no guardan relación con el artefacto. No se dispone, por tanto, de papers, blogs, repositorios ni demos adicionales verificables.

@@ -98,8 +98,8 @@ Prueba de longitud completa con el system prompt propio del modelo y una imagen 
 
 | Modelo | Parámetros | Formato | Modificación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sakura-Qwen-Image-2.1-PE-I2I-Uncensored (este modelo) | ≈8,95 B | GGUF Q8_0, Q4_K_M, mmproj F16 | Ablación direccional en `o_proj` y `down_proj` con Heretic 1.4.0; torre de visión intacta | Qwen Research (no comercial) | HuggingFace, 0 descargas |
-| Qwen/Qwen-Image-2.1-PE-I2I (modelo base) | ≈8,95 B | Safetensors originales | Ninguna; conserva los rechazos (98/100 en la medición de Heretic) | Qwen Research (no comercial) | HuggingFace (repositorio de Qwen) |
+| Sakura-Qwen-Image-2.1-PE-I2I-Uncensored (este modelo) | ≈8,95 B | GGUF Q8_0, Q4_K_M, mmproj F16 | Ablación direccional en `o_proj` y `down_proj` con Heretic 1.4.0; torre de visión intacta | Qwen Research (no comercial) | Hugging Face, 0 descargas |
+| Qwen/Qwen-Image-2.1-PE-I2I (modelo base) | ≈8,95 B | Safetensors originales | Ninguna; conserva los rechazos (98/100 en la medición de Heretic) | Qwen Research (no comercial) | Hugging Face (repositorio de Qwen) |
 | Otras cuantizaciones comunitarias del mismo base | No disponibles | No disponibles | No disponibles | No disponibles | No disponibles |
 | Modelos de reescritura de prompts para edición de imágenes comparables | No disponibles en la información proporcionada | No disponibles | No disponibles | No disponibles | No disponibles |
 
@@ -122,7 +122,7 @@ Los únicos datos comparativos fiables que aporta el autor son los recuentos de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/webmp3/Sakura-Qwen-Image-2.1-PE-I2I-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/webmp3/Sakura-Qwen-Image-2.1-PE-I2I-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I
 - Herramienta de ablación Heretic: https://github.com/p-e-w/heretic
 - Versiones de llama.cpp: https://github.com/ggml-org/llama.cpp/releases

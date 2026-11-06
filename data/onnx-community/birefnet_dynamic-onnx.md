@@ -77,7 +77,7 @@ BiRefNet se distingue por su enfoque en alta resolución y su robustez ante obje
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/onnx-community/BiRefNet_dynamic-ONNX
+- Repositorio Hugging Face: https://huggingface.co/onnx-community/BiRefNet_dynamic-ONNX
 - Repositorio oficial de BiRefNet en GitHub: https://github.com/ZhengPeng7/BiRefNet
 - Paper original (CAAI Artificial Intelligence Research, 2024): citado en la model card, disponible en el repositorio de GitHub.
 - Repositorio ONNX alternativo (no dinámico): https://huggingface.co/onnx-community/BiRefNet-ONNX

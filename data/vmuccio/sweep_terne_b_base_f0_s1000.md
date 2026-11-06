@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo VMuccio/sweep_terne_B_base_f0_s1000 es una política de robótica de tipo vision-language-action (VLA) obtenida mediante ajuste fino del modelo base lerobot/smolvla_base, perteneciente a la familia SmolVLA. Lo publica el usuario VMuccio en HuggingFace usando la librería LeRobot (versión 0.6.2) y consta de 450.046.176 parámetros (aproximadamente 450 millones), con un repositorio de 0,9 GB y pesos en formato safetensors.
+El modelo VMuccio/sweep_terne_B_base_f0_s1000 es una política de robótica de tipo vision-language-action (VLA) obtenida mediante ajuste fino del modelo base lerobot/smolvla_base, perteneciente a la familia SmolVLA. Lo publica el usuario VMuccio en Hugging Face usando la librería LeRobot (versión 0.6.2) y consta de 450.046.176 parámetros (aproximadamente 450 millones), con un repositorio de 0,9 GB y pesos en formato safetensors.
 
 SmolVLA es un modelo compacto y eficiente que combina un backbone de visión-lenguaje con un experto de acción, diseñado para ejecutarse en hardware de consumo. En este caso concreto, el ajuste fino especializa la política en una tarea de manipulación muy acotada: coger un cubo de color (rojo, amarillo o azul) y depositarlo en una cesta. El modelo consume el estado del robot (vector de 6 componentes) y tres cámaras (256×256×3 cada una) y produce un vector de acción de 6 componentes.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks ni evaluaciones en la información 
 
 | Modelo | Parametros | Tipo | Modelo base / origen | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VMuccio/sweep_terne_B_base_f0_s1000 | 450 M | VLA (politica robotica) | lerobot/smolvla_base | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| lerobot/smolvla_base | ~450 M (familia SmolVLA) | VLA (politica robotica) | SmolVLM (paper 2506.01844) | Apache 2.0 | HuggingFace |
-| OpenVLA | ~7 B | VLA | Prismatic VLM + Llama | Licencia abierta (consultar) | HuggingFace |
-| NVIDIA GR00T N1 | ~2 B (segun variante) | VLA | Modelo fundacional robotico | Licencia NVIDIA | HuggingFace |
+| VMuccio/sweep_terne_B_base_f0_s1000 | 450 M | VLA (politica robotica) | lerobot/smolvla_base | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| lerobot/smolvla_base | ~450 M (familia SmolVLA) | VLA (politica robotica) | SmolVLM (paper 2506.01844) | Apache 2.0 | Hugging Face |
+| OpenVLA | ~7 B | VLA | Prismatic VLM + Llama | Licencia abierta (consultar) | Hugging Face |
+| NVIDIA GR00T N1 | ~2 B (segun variante) | VLA | Modelo fundacional robotico | Licencia NVIDIA | Hugging Face |
 
 Las cifras de modelos comparables se ofrecen a modo orientativo de categoria; no se dispone de datos de rendimiento comparables para este checkpoint concreto. Para contextos, licencias exactas y disponibilidad de OpenVLA y GR00T N1, consúltese la documentación oficial de cada proyecto, ya que no se han verificado en la información proporcionada.
 
@@ -94,7 +94,7 @@ Las cifras de modelos comparables se ofrecen a modo orientativo de categoria; no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VMuccio/sweep_terne_B_base_f0_s1000
+- Modelo en Hugging Face: https://huggingface.co/VMuccio/sweep_terne_B_base_f0_s1000
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/VMuccio/rgb_cubes_terne_p1
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844 (arXiv:2506.01844)

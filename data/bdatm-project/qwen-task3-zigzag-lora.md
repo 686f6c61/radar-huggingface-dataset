@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bdatm-project/qwen-task3-zigzag-lora` es un adaptador LoRA publicado en HuggingFace por el usuario `bdatm-project`. Su nombre sugiere que se trata de un ajuste fino de baja complejidad sobre un modelo base de la familia Qwen, orientado a una tarea concreta (identificada como "task3") y con un estilo de entrenamiento o configuración denominado "zigzag". Sin embargo, la información disponible es extremadamente limitada: la model card es una plantilla generada automáticamente, sin descripción, datos de entrenamiento, licencia ni especificaciones técnicas.
+El modelo `bdatm-project/qwen-task3-zigzag-lora` es un adaptador LoRA publicado en Hugging Face por el usuario `bdatm-project`. Su nombre sugiere que se trata de un ajuste fino de baja complejidad sobre un modelo base de la familia Qwen, orientado a una tarea concreta (identificada como "task3") y con un estilo de entrenamiento o configuración denominado "zigzag". Sin embargo, la información disponible es extremadamente limitada: la model card es una plantilla generada automáticamente, sin descripción, datos de entrenamiento, licencia ni especificaciones técnicas.
 
 El repositorio tiene un tamaño de 0,0 GB y no registra descargas ni me gustas, lo que indica que probablemente sea un artefacto experimental o un proyecto en fase muy temprana. La librería declarada es `transformers` y el formato de pesos es `safetensors`, según los tags. No se dispone de información sobre el modelo base, el número de parámetros, la longitud de contexto, los idiomas soportados ni los casos de uso previstos. Por tanto, cualquier evaluación de sus capacidades debe considerarse provisional y pendiente de documentación adicional.
 
@@ -21,7 +21,7 @@ El repositorio tiene un tamaño de 0,0 GB y no registra descargas ni me gustas, 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo, el proceso de entrenamiento, los datos utilizados ni las tecnicas de optimizacion. El unico dato relevante es que el repositorio esta etiquetado con `transformers` y `safetensors`, lo que sugiere que el adaptador se carga mediante la biblioteca HuggingFace Transformers. El tag `endpoints_compatible` indica que es compatible con la infraestructura de inferencia de HuggingFace, pero no aporta detalles tecnicos adicionales.
+No se dispone de informacion sobre la arquitectura del modelo, el proceso de entrenamiento, los datos utilizados ni las tecnicas de optimizacion. El unico dato relevante es que el repositorio esta etiquetado con `transformers` y `safetensors`, lo que sugiere que el adaptador se carga mediante la biblioteca Hugging Face Transformers. El tag `endpoints_compatible` indica que es compatible con la infraestructura de inferencia de Hugging Face, pero no aporta detalles tecnicos adicionales.
 
 El nombre del repositorio incluye el termino "zigzag", que podria referirse a una configuracion especifica del adaptador LoRA (por ejemplo, alternancia de capas o patrones de entrenamiento), pero no hay documentacion que lo confirme. El tag `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre calculo de impacto ambiental, no a un paper del modelo.
 
@@ -56,5 +56,5 @@ No se dispone de informacion sobre modelos comparables. Los unicos repositorios 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bdatm-project/qwen-task3-zigzag-lora
+- Hugging Face: https://huggingface.co/bdatm-project/qwen-task3-zigzag-lora
 - Repositorios relacionados del mismo autor: https://huggingface.co/bdatm-project/qwen-task1-zigzag-lora y https://huggingface.co/bdatm-project/qwen-task3-standard-lora

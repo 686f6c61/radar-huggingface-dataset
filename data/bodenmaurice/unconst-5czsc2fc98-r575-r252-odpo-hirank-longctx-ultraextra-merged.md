@@ -75,7 +75,7 @@ No se dispone de información sobre modelos directamente comparables. Podría es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bodenmaurice/unconst-5czsc2fc98-r575-r252-odpo-hirank-longctx-ultraextra-merged
+- Repositorio Hugging Face: https://huggingface.co/bodenmaurice/unconst-5czsc2fc98-r575-r252-odpo-hirank-longctx-ultraextra-merged
 - Modelo base (inferido): https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged
 - Modelo relacionado: https://huggingface.co/unconst/Affine-5czsc2fc98-h73-lora
 

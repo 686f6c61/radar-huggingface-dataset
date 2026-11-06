@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Latensis NER es un modelo de reconocimiento de entidades nombradas (NER) para turco, desarrollado por Mürşide Aki (usuario `mursideaki` en HuggingFace) como parte de la suite Latensis de NLP en turco. Se trata de un ajuste fino de tipo token classification sobre el modelo base Latensis RoBERTa Base, que a su vez se entrenó durante 500.000 pasos con una pérdida de validación de 3,21. El modelo resuelve la tarea de etiquetado de secuencias con siete etiquetas en formato BIO: persona (PER), organización (ORG) y localización (LOC), distinguiendo inicio (B-) e interior (I-) de cada entidad, más la clase O.
+Latensis NER es un modelo de reconocimiento de entidades nombradas (NER) para turco, desarrollado por Mürşide Aki (usuario `mursideaki` en Hugging Face) como parte de la suite Latensis de NLP en turco. Se trata de un ajuste fino de tipo token classification sobre el modelo base Latensis RoBERTa Base, que a su vez se entrenó durante 500.000 pasos con una pérdida de validación de 3,21. El modelo resuelve la tarea de etiquetado de secuencias con siete etiquetas en formato BIO: persona (PER), organización (ORG) y localización (LOC), distinguiendo inicio (B-) e interior (I-) de cada entidad, más la clase O.
 
 El modelo cuenta con 183.760.903 parámetros (aproximadamente 183,8 millones) y se distribuye en formato safetensors con un tamaño de repositorio de 0,7 GB. Emplea un tokenizador propio de SentencePiece con vocabulario unigram de 128.000 piezas (Hecemen Unigram 128k), lo que explica el mayor número de parámetros respecto a un RoBERTa base estándar debido al tamaño de la matriz de embeddings. Está publicado bajo licencia MIT, lo que permite uso comercial sin restricciones de atribución más allá de las habituales.
 
@@ -82,7 +82,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 - VRAM estimada para inferencia: en FP32 los pesos ocupan aproximadamente 735 MB (183,8 M × 4 bytes); en FP16/BF16 unos 368 MB; en INT8 unos 184 MB. Con activaciones, tokenizador y overhead del runtime, una estimación práctica de consumo es de 1 a 2 GB de memoria.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente. El modelo cabe sin problema en RTX 3060, RTX 4060, RTX 4090, T4, L4, A10, A100 o H100; el uso de GPU de gama alta solo aporta ventaja en throughput por lotes grandes.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU dedicada moderna e incluso en iGPU con memoria compartida suficiente. También es viable la inferencia en CPU para volúmenes moderados.
-- Opciones de despliegue: HuggingFace Transformers con PyTorch es la vía documentada oficialmente (el ejemplo de la model card usa `RobertaForTokenClassification.from_pretrained`). Es exportable a ONNX Runtime y TorchScript para reducir latencia. No se documenta soporte específico en vLLM, TGI, llama.cpp u Ollama, herramientas orientadas principalmente a modelos generativos y no a token classification sobre encoders.
+- Opciones de despliegue: Hugging Face Transformers con PyTorch es la vía documentada oficialmente (el ejemplo de la model card usa `RobertaForTokenClassification.from_pretrained`). Es exportable a ONNX Runtime y TorchScript para reducir latencia. No se documenta soporte específico en vLLM, TGI, llama.cpp u Ollama, herramientas orientadas principalmente a modelos generativos y no a token classification sobre encoders.
 - Restricción de integración: es obligatorio cargar el tokenizador `mursideaki/hecemen-tokenizer-unigram-128k` mediante SentencePiece. Usar el tokenizador de RoBERTa estándar produciría identificadores de token incompatibles con la matriz de embeddings.
 - Latencia y throughput: no disponibles en la información proporcionada. No se han publicado mediciones de tokens por segundo ni de tiempo de inferencia.
 
@@ -90,11 +90,11 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | F1-macro WikiANN TR | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Latensis NER TR | 183,8 M | No disponible (ejemplo a 128 tokens) | 0,9429 | MIT | safetensors | HuggingFace, 0 descargas |
+| Latensis NER TR | 183,8 M | No disponible (ejemplo a 128 tokens) | 0,9429 | MIT | safetensors | Hugging Face, 0 descargas |
 | BERTurk (referencia citada en la model card) | No disponible en la informacion proporcionada | No disponible | 0,9522 | No disponible en la informacion proporcionada | No disponible | No disponible |
 | Otros modelos NER en turco | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-La model card únicamente compara contra BERTurk y solo en F1-macro; no se detallan parámetros, contexto ni licencia de ese modelo de referencia en la información proporcionada. No se dispone de datos suficientes para una comparativa más amplia con alternativas como los modelos NER turcos basados en BERT o XLM-R publicados en HuggingFace.
+La model card únicamente compara contra BERTurk y solo en F1-macro; no se detallan parámetros, contexto ni licencia de ese modelo de referencia en la información proporcionada. No se dispone de datos suficientes para una comparativa más amplia con alternativas como los modelos NER turcos basados en BERT o XLM-R publicados en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -111,7 +111,7 @@ La model card únicamente compara contra BERTurk y solo en F1-macro; no se detal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mursideaki/latensis-ner-tr
+- Modelo en Hugging Face: https://huggingface.co/mursideaki/latensis-ner-tr
 - Modelo base Latensis RoBERTa Base: https://huggingface.co/mursideaki/latensis-roberta-base-tr
 - Tokenizador Hecemen Unigram 128k: https://huggingface.co/mursideaki/hecemen-tokenizer-unigram-128k
 - Modelo companion de sentimiento: https://huggingface.co/mursideaki/latensis-sentiment-tr

@@ -93,6 +93,6 @@ Los tamanos de las filas marcadas como estimados se derivan aritmeticamente del 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrysh/qwen3.5-9b-iq1_s
+- Repositorio Hugging Face: https://huggingface.co/mrysh/qwen3.5-9b-iq1_s
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales relevantes para este modelo.

@@ -86,4 +86,4 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ForeverBlue/ECG
+- Hugging Face: https://huggingface.co/ForeverBlue/ECG

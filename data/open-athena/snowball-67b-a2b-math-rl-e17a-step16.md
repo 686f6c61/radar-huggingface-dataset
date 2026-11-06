@@ -73,7 +73,7 @@ No se especifica la metrica exacta (se asume porcentaje de acierto) ni el protoc
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento reportado |
 |---|---|---|---|---|---|
-| Snowball-67B-A2B-Math-RL-E17a-Step16 | 67,08B totales | No disponible | other | HuggingFace, 0 descargas | AIME24 15,33 / MATH-500 75,60 / OlympiadBench 19,67 |
+| Snowball-67B-A2B-Math-RL-E17a-Step16 | 67,08B totales | No disponible | other | Hugging Face, 0 descargas | AIME24 15,33 / MATH-500 75,60 / OlympiadBench 19,67 |
 | `laion/rl-snowball-*` (repositorios relacionados citados) | No disponible | No disponible | No disponible | No disponible | No disponible; el autor advierte que pueden colapsar en inferencia |
 | Otros modelos de razonamiento matematico de tamano similar | No disponible | No disponible | No disponible | No disponible | No se han encontrado datos comparables en la informacion disponible |
 
@@ -94,7 +94,7 @@ No hay datos suficientes en la informacion proporcionada para establecer una com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E17a-Step16
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E17a-Step16
 - Archivo de evidencias (dataset): https://huggingface.co/datasets/penfever/snowball-67b-a2b-math-rl-artifacts
 - Issue del experimento en el proyecto Marin: https://github.com/marin-community/marin/issues/7786
 - Repositorio del proyecto Marin (organizacion propietaria del issue anterior): https://github.com/marin-community/marin

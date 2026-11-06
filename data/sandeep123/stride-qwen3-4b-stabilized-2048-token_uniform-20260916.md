@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sandeep123/stride-qwen3-4b-stabilized-2048-token_uniform-20260916 | Adaptador LoRA sobre base de 4B | Entrenamiento limitado a 8.192 tokens | Sin evaluación publicada | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4B | No disponible en la información proporcionada | Sin datos en esta información | No disponible en la información proporcionada | HuggingFace, commit fijado por el adaptador |
+| sandeep123/stride-qwen3-4b-stabilized-2048-token_uniform-20260916 | Adaptador LoRA sobre base de 4B | Entrenamiento limitado a 8.192 tokens | Sin evaluación publicada | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4B | No disponible en la información proporcionada | Sin datos en esta información | No disponible en la información proporcionada | Hugging Face, commit fijado por el adaptador |
 | Otros adaptadores PEFT de matemáticas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la información proporcionada |
 
 No se dispone de datos comparativos de rendimiento con otros adaptadores de la misma categoría en la información proporcionada.
@@ -96,7 +96,7 @@ No se dispone de datos comparativos de rendimiento con otros adaptadores de la m
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/sandeep123/stride-qwen3-4b-stabilized-2048-token_uniform-20260916
+- Adaptador en Hugging Face: https://huggingface.co/sandeep123/stride-qwen3-4b-stabilized-2048-token_uniform-20260916
 - Modelo base Qwen/Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Búsqueda web: no se encontraron enlaces relevantes al modelo; los resultados devueltos correspondían al portal de árbitros de la federación alemana de balonmano y no guardan relación con este artefacto.
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la información proporcionada.

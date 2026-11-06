@@ -113,7 +113,7 @@ La comparativa se limita a los datos publicados en la model card. La unica compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder-NVFP4
 - Modelo base fp16 (Terse-Coder): https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder
 - Adaptador LoRA Terse-Coder: https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder-LoRA
 - Modelo base original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B

@@ -71,7 +71,7 @@ No se dispone de modelos comparables en términos de funcionalidad, ya que este 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/malaiwah/qwen3-5-tiny-random-gguf-f16-format
+- Hugging Face: https://huggingface.co/malaiwah/qwen3-5-tiny-random-gguf-f16-format
 - Fuente exacta de construcción: https://huggingface.co/malaiwah/qwen3-5-gguf-tiny-random-bf16/tree/490767e58441a55c5a9f6375ea0e31e2cdc9da76
 - Colección de familias de cuantización: https://huggingface.co/collections/malaiwah/qfs-matched-weight-quantization-families-6a9f071d93dbd3dbf0a1e844
 - Dataset de raíz de fidelidad: https://huggingface.co/datasets/malaiwah/qwen3-5-gguf-tiny-fidelity-root-v1

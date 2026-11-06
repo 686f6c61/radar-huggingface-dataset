@@ -92,12 +92,12 @@ Notas adicionales:
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Swift-1.5-Qwen3.8-27b-heretic-GGUF (este) | 27,3 B | no disponible | Cuantizacion GGUF de una variante abliterated | swift-open-license-1.0 | GGUF en HuggingFace |
-| akumaburn/Swift-1.5-Qwen3.8-27b-heretic | 27,3 B | no disponible | Modelo base decensurado | swift-open-license-1.0 | Safetensors en HuggingFace |
+| mradermacher/Swift-1.5-Qwen3.8-27b-heretic-GGUF (este) | 27,3 B | no disponible | Cuantizacion GGUF de una variante abliterated | swift-open-license-1.0 | GGUF en Hugging Face |
+| akumaburn/Swift-1.5-Qwen3.8-27b-heretic | 27,3 B | no disponible | Modelo base decensurado | swift-open-license-1.0 | Safetensors en Hugging Face |
 | ukisai/Swift-1.5-Qwen3.8-27b | 27,3 B | no disponible | Razonamiento eficiente, codigo y agentes | swift-open-license-1.0 | Safetensors; tambien en Featherless y LLM Explorer |
 | Qwen3.8-27B (modelo fundacional) | no disponible | no disponible | Modelo base generalista | no disponible | no disponible |
-| mradermacher/Swift-1.5-Qwen3.8-27B-Uncensored-BF16-i1-GGUF | no disponible | no disponible | Cuantizacion imatrix en BF16 de la variante uncensored | swift-open-license-1.0 | GGUF en HuggingFace |
-| mradermacher/Swift-Qwen3.8-27b-heretic-GGUF | no disponible | no disponible | Cuantizacion GGUF de Swift 1.0 heretic | swift-open-license-1.0 | GGUF en HuggingFace |
+| mradermacher/Swift-1.5-Qwen3.8-27B-Uncensored-BF16-i1-GGUF | no disponible | no disponible | Cuantizacion imatrix en BF16 de la variante uncensored | swift-open-license-1.0 | GGUF en Hugging Face |
+| mradermacher/Swift-Qwen3.8-27b-heretic-GGUF | no disponible | no disponible | Cuantizacion GGUF de Swift 1.0 heretic | swift-open-license-1.0 | GGUF en Hugging Face |
 
 No se dispone de datos de benchmarks ni de contexto que permitan una comparacion cuantitativa con modelos de otros fabricantes del mismo rango de parametros.
 
@@ -116,7 +116,7 @@ No se dispone de datos de benchmarks ni de contexto que permitan una comparacion
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Swift-1.5-Qwen3.8-27b-heretic-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Swift-1.5-Qwen3.8-27b-heretic-GGUF
 - Modelo base de este repositorio: https://huggingface.co/akumaburn/Swift-1.5-Qwen3.8-27b-heretic
 - Modelo original de UkisAI: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Texto de la licencia: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b/blob/main/LICENSE

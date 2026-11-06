@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g5_run1` es un repositorio publicado en HuggingFace por el usuario `stefanocarrera`. La model card es generada automáticamente y no contiene información técnica detallada: todos los campos aparecen como "More Information Needed". El nombre del repositorio sugiere que se trata de un fine-tune de Qwen3-8B, pero no hay confirmación explícita en la documentación disponible.
+El modelo `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g5_run1` es un repositorio publicado en Hugging Face por el usuario `stefanocarrera`. La model card es generada automáticamente y no contiene información técnica detallada: todos los campos aparecen como "More Information Needed". El nombre del repositorio sugiere que se trata de un fine-tune de Qwen3-8B, pero no hay confirmación explícita en la documentación disponible.
 
 El repositorio tiene un tamaño de 0.2 GB, lo que indica que probablemente contiene un adaptador LoRA o QLoRA en lugar de un modelo completo. Los tags incluyen `unsloth`, `safetensors`, `endpoints_compatible` y `region:us`, lo que apunta a que el entrenamiento se realizó con la librería Unsloth y que los pesos se almacenan en formato Safetensors. No se dispone de información sobre la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados.
 
@@ -19,11 +19,11 @@ El modelo cuenta con 0 descargas y 0 likes, por lo que no ha sido evaluado ni ut
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
-| Formato de pesos | Safetensors (según tags de HuggingFace) |
+| Formato de pesos | Safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura ni el proceso de entrenamiento. El tag `unsloth` indica que se utilizó la librería Unsloth para el entrenamiento, probablemente mediante técnicas de fine-tune eficiente como LoRA o QLoRA. El tag `endpoints_compatible` sugiere que el modelo es compatible con los endpoints de HuggingFace. No se han proporcionado datos sobre el dataset, el número de tokens, la composición de los datos ni si hubo RLHF o DPO.
+No se dispone de información detallada sobre la arquitectura ni el proceso de entrenamiento. El tag `unsloth` indica que se utilizó la librería Unsloth para el entrenamiento, probablemente mediante técnicas de fine-tune eficiente como LoRA o QLoRA. El tag `endpoints_compatible` sugiere que el modelo es compatible con los endpoints de Hugging Face. No se han proporcionado datos sobre el dataset, el número de tokens, la composición de los datos ni si hubo RLHF o DPO.
 
 ## Capacidades
 

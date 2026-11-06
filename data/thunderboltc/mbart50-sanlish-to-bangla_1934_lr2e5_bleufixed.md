@@ -25,7 +25,7 @@ Este modelo es relevante como ejemplo de fine-tuning de mBART-50 para una tarea 
 
 El modelo se basa en `facebook/mbart-large-50-many-to-many-mmt`, un transformer encoder-decoder de 611M parámetros preentrenado con denoising multilingüe sobre 50 idiomas. La arquitectura original de mBART-50 emplea una ventana de contexto de 1024 tokens y un vocabulario de 250K subpalabras (SentencePiece). En este fine-tuning se mantienen los pesos preentrenados del modelo base y se ajustan todas las capas.
 
-El entrenamiento se realizó con el `Trainer` de HuggingFace usando los siguientes hiperparámetros: learning rate 2e-05, batch size por dispositivo 8, gradientes acumulados 2 (batch efectivo 16), optimizador AdamW con betas (0.9, 0.999) y epsilon 1e-08, scheduler lineal, 25 épocas y precisión mixta nativa (AMP). El dataset de entrenamiento no se especifica en la model card (se indica "None"). El nombre del repositorio sugiere que se usó un corpus de 1934 pares de frases, pero no se confirma. La pérdida de entrenamiento desciende de 8.33 a 0.14 a lo largo de las 23 épocas registradas, con la pérdida de validación mínima en la época 3 (2.96) y luego un incremento progresivo, indicando posible sobreajuste.
+El entrenamiento se realizó con el `Trainer` de Hugging Face usando los siguientes hiperparámetros: learning rate 2e-05, batch size por dispositivo 8, gradientes acumulados 2 (batch efectivo 16), optimizador AdamW con betas (0.9, 0.999) y epsilon 1e-08, scheduler lineal, 25 épocas y precisión mixta nativa (AMP). El dataset de entrenamiento no se especifica en la model card (se indica "None"). El nombre del repositorio sugiere que se usó un corpus de 1934 pares de frases, pero no se confirma. La pérdida de entrenamiento desciende de 8.33 a 0.14 a lo largo de las 23 épocas registradas, con la pérdida de validación mínima en la época 3 (2.96) y luego un incremento progresivo, indicando posible sobreajuste.
 
 ## Capacidades
 
@@ -82,16 +82,16 @@ El mejor BLEU se alcanza en la época 18 (10.3651) y el mejor Chrf en la época 
 - VRAM estimada para inferencia: con 611M de parámetros, en fp16 se requieren aproximadamente 1.2 GB de VRAM para los pesos, más overhead de activaciones y atención (para secuencias de 1024 tokens, alrededor de 2-3 GB en total). En fp32, unos 2.8 GB de pesos.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (RTX 2060, GTX 1660 Ti, RTX 3050, etc.) puede ejecutar inferencia en fp16. Para entrenamiento, se requieren GPUs con más memoria; el autor usó una GPU con al menos 16 GB (por el batch size 8 y AMP).
 - Consumer GPU: sí, cabe en GPUs de consumo como RTX 3060, RTX 4070, etc., con cuantización fp16 o int8.
-- Opciones de despliegue: se puede servir con HuggingFace `transformers` (pipeline de `text2text-generation`), `vLLM` (si se convierte a formato compatible), `TGI` (Text Generation Inference), o `llama.cpp` si se convierte a GGUF (aunque la arquitectura seq2seq de mBART no está soportada por defecto en llama.cpp).
+- Opciones de despliegue: se puede servir con Hugging Face `transformers` (pipeline de `text2text-generation`), `vLLM` (si se convierte a formato compatible), `TGI` (Text Generation Inference), o `llama.cpp` si se convierte a GGUF (aunque la arquitectura seq2seq de mBART no está soportada por defecto en llama.cpp).
 - Latencia estimada: para una entrada de 50 tokens y salida de 50 tokens, se espera una latencia de ~100-200 ms en una GPU moderna (A100 o RTX 4090) en fp16. En CPU, sería significativamente más lenta (varios segundos).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |--------|------------|----------|-------|----------|----------------|
-| `thunderboltc/mbart50-sanlish-to-bangla_1934_lr2e5_bleufixed` | 611M | 1024 tokens (base) | sanlish → bengalí | no disponible | HuggingFace |
-| `facebook/mbart-large-50-many-to-many-mmt` | 611M | 1024 tokens | traducción multilingüe (50 idiomas) | MIT (no confirmado; modelo base de Meta) | HuggingFace |
-| `google/mt5-small` (o mT5) | 300M | 512 tokens | traducción multilingüe | Apache 2.0 | HuggingFace |
+| `thunderboltc/mbart50-sanlish-to-bangla_1934_lr2e5_bleufixed` | 611M | 1024 tokens (base) | sanlish → bengalí | no disponible | Hugging Face |
+| `facebook/mbart-large-50-many-to-many-mmt` | 611M | 1024 tokens | traducción multilingüe (50 idiomas) | MIT (no confirmado; modelo base de Meta) | Hugging Face |
+| `google/mt5-small` (o mT5) | 300M | 512 tokens | traducción multilingüe | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparables entre estos modelos para la tarea específica de sanlish→bengalí. El modelo base mBART-50 tiene una licencia de Meta (no comercial en algunos términos, según el acuerdo de uso del modelo), pero la licencia del fine-tuning no se especifica. mT5 es una alternativa de código abierto (Apache 2.0) que podría fine-tunearse para la misma tarea.
 
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks comparables entre estos modelos para la tar
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/thunderboltc/mbart50-sanlish-to-bangla_1934_lr2e5_bleufixed)
+- [Modelo en Hugging Face](https://huggingface.co/thunderboltc/mbart50-sanlish-to-bangla_1934_lr2e5_bleufixed)
 - [Repositorio de la versión `1934` (sin el sufijo `bleufixed`)](https://huggingface.co/thunderboltc/mbart50-sanlish-to-bangla_1934)
 - [Repositorio base de `mbart50-sanlish-to-bangla`](https://huggingface.co/thunderboltc/mbart50-sanlish-to-bangla)
 - [Modelo base: `facebook/mbart-large-50-many-to-many-mmt`](https://huggingface.co/facebook/mbart-large-50-many-to-many-mmt)

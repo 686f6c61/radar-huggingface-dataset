@@ -2,7 +2,7 @@
 
 ## Resumen
 
-multitask-2023 es un repositorio de HuggingFace publicado por el usuario Fferrariandrea83ph que contiene una implementación funcional de un Vision Transformer (ViT) con cabecera multitarea, configurado en escala "small" y con fusión de modalidades basada en descomposición de Tucker. No es un modelo entrenado ni un checkpoint con pesos ajustados: la propia model card lo describe explícitamente como un checkpoint de inicialización válido para pruebas de humo (smoke tests), no como un modelo de referencia con resultados de benchmarks.
+multitask-2023 es un repositorio de Hugging Face publicado por el usuario Fferrariandrea83ph que contiene una implementación funcional de un Vision Transformer (ViT) con cabecera multitarea, configurado en escala "small" y con fusión de modalidades basada en descomposición de Tucker. No es un modelo entrenado ni un checkpoint con pesos ajustados: la propia model card lo describe explícitamente como un checkpoint de inicialización válido para pruebas de humo (smoke tests), no como un modelo de referencia con resultados de benchmarks.
 
 El interés del repositorio es fundamentalmente de ingeniería y experimentación: ofrece código transparente, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto (optimizador Lion con scheduler exponencial) y un `run.py` ejecutable. El tamaño real de los pesos es de 33.088 parámetros según el archivo safetensors, lo que confirma que se trata de una configuración minúscula pensada para validar el flujo de código, no para inferencia productiva.
 
@@ -79,10 +79,10 @@ No se dispone de datos de rendimiento comparables, ya que no hay benchmarks publ
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Fferrariandrea83ph/multitask-2023 | 33.088 | ViT multitarea con fusion Tucker, checkpoint de inicializacion | MIT | HuggingFace |
-| google/vit-base-patch16-224 | ~86 M | ViT de clasificacion, checkpoint entrenado | Apache 2.0 | HuggingFace |
-| timm/vit_small_patch16_224 | ~22 M | ViT "small" de clasificacion, checkpoint entrenado | Apache 2.0 | HuggingFace / timm |
-| facebook/dinov2-small | ~21 M | ViT auto-supervisado para representaciones visuales | Apache 2.0 | HuggingFace |
+| Fferrariandrea83ph/multitask-2023 | 33.088 | ViT multitarea con fusion Tucker, checkpoint de inicializacion | MIT | Hugging Face |
+| google/vit-base-patch16-224 | ~86 M | ViT de clasificacion, checkpoint entrenado | Apache 2.0 | Hugging Face |
+| timm/vit_small_patch16_224 | ~22 M | ViT "small" de clasificacion, checkpoint entrenado | Apache 2.0 | Hugging Face / timm |
+| facebook/dinov2-small | ~21 M | ViT auto-supervisado para representaciones visuales | Apache 2.0 | Hugging Face |
 
 La diferencia de orden de magnitud en el numero de parametros y la ausencia de entrenamiento en multitask-2023 hacen que la comparacion de rendimiento no sea significativa. Cualquier evaluacion deberia incluir un baseline de capacidad coincidente, tal y como recomienda el propio autor.
 
@@ -99,7 +99,7 @@ La diferencia de orden de magnitud en el numero de parametros y la ausencia de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fferrariandrea83ph/multitask-2023
+- Modelo en Hugging Face: https://huggingface.co/Fferrariandrea83ph/multitask-2023
 - Multi — one task, the right AI workflow: https://getmulti.ai/ (no relacionado con el modelo; resultado de busqueda por la palabra "multitask")
 - A Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning, Hallucination, and Interactivity: https://arxiv.org/abs/2302.04023 (no relacionado directamente)
 - Multitask Prompt Tuning Enables Parameter-Efficient Transfer Learning: https://arxiv.org/abs/2303.02861 (referencia metodologica sobre adaptacion multitarea, no vinculada al modelo)

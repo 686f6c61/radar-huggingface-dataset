@@ -101,7 +101,7 @@ No se dispone de resultados publicados de otras alternativas sobre el mismo conj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andreadm/reddit-pulse-qwen2.5_0.5b-xqdora
+- Modelo en Hugging Face: https://huggingface.co/andreadm/reddit-pulse-qwen2.5_0.5b-xqdora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Repositorio de código (ajuste fino e inferencia): https://github.com/andrea-dm/reddit-pulse
 - Artículo de referencia: Del Monaco, A., Longo, L., Marcucci, J. y Tafani, I. (2026), "Reddit's 'pulse' on US inflation: forecasting with large language models", Journal of Applied Econometrics (en prensa).

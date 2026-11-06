@@ -36,7 +36,7 @@ No aplica. Este repositorio no contiene un modelo entrenado, sino un documento d
 - **Base para comparativas de técnicas**: el texto puede citarse en estudios que comparen zero-shot y multi-shot prompting.
 - **Inspiración para experimentos**: la metodología descrita puede orientar el diseño de experimentos propios.
 - **Documentación de buenas prácticas**: puede consultarse para redactar guías internas de prompting en equipos de desarrollo.
-- **Repositorio de ejemplo**: se puede usar como plantilla para publicar documentos académicos en HuggingFace.
+- **Repositorio de ejemplo**: se puede usar como plantilla para publicar documentos académicos en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -60,7 +60,7 @@ No disponible. No se han identificado repositorios comparables con contenido equ
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/nikitarao/paper_013490522_prompt_engineering
+- Repositorio de Hugging Face: https://huggingface.co/nikitarao/paper_013490522_prompt_engineering
 - Guía de Prompt Engineering (externa, no afiliada): https://www.promptingguide.ai/
 - Paper sobre prompting techniques (IEEE): https://ieeexplore.ieee.org/document/11147384
 - Paper sobre prompt design (arXiv): https://arxiv.org/html/2401.14423v3

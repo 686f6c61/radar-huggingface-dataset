@@ -15,7 +15,7 @@ El modelo se basa en una arquitectura de difusión, con un total de 8.285.836.84
 | Parametros activos | No aplicable (no es MoE) |
 | Longitud de contexto | No aplicable (modelo de imagen, aunque procesa texto estructurado en JSON) |
 | Tipos de cuantizacion | No disponible (se distribuye en safetensors, sin cuantizaciones oficiales) |
-| Idiomas soportados | Inglés (según la ficha de HuggingFace) |
+| Idiomas soportados | Inglés (según la ficha de Hugging Face) |
 | Licencia | Licencia propia `bria-fibo-edit-1.5-turbo` (acceso restringido) |
 | Formato de pesos | Safetensors (tamaño del repo: 25.6 GB) |
 
@@ -44,7 +44,7 @@ FIBO-Edit 1.5 Turbo se basa en un modelo de difusión para la edición de imáge
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La página de HuggingFace menciona que el modelo se encuentra "entre los mejores modelos en benchmarks abiertos de adherencia al prompt y calidad", pero no se proporcionan métricas numéricas (como FID, LPIPS, o comparaciones con otros modelos). Por lo tanto, no es posible presentar una tabla comparativa con datos reales.
+No se han publicado resultados de benchmarks en la información disponible. La página de Hugging Face menciona que el modelo se encuentra "entre los mejores modelos en benchmarks abiertos de adherencia al prompt y calidad", pero no se proporcionan métricas numéricas (como FID, LPIPS, o comparaciones con otros modelos). Por lo tanto, no es posible presentar una tabla comparativa con datos reales.
 
 ## Requisitos de hardware
 
@@ -60,7 +60,7 @@ No hay suficiente información pública para realizar una comparativa cuantitati
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace, por lo que es necesario solicitar acceso y aceptar las condiciones de licencia antes de su uso.
+- Acceso restringido: el modelo es gated en Hugging Face, por lo que es necesario solicitar acceso y aceptar las condiciones de licencia antes de su uso.
 - Licencia propia: la licencia `bria-fibo-edit-1.5-turbo` no es una licencia open source estándar (no es Apache-2.0 ni MIT). Aunque se puede acceder, hay restricciones comerciales específicas que deben revisarse.
 - Soporte de idiomas limitado: el modelo está entrenado principalmente en inglés, por lo que el rendimiento con prompts en otros idiomas puede degradarse.
 - Dependencia del VLM auxiliar: para obtener el JSON estructurado, se necesita el VLM `briaai/FIBO-edit-prompt-to-JSON`, que debe ejecutarse localmente o en la nube. La versión local no soporta edición basada en máscaras, lo que limita ciertos casos de uso.
@@ -70,7 +70,7 @@ No hay suficiente información pública para realizar una comparativa cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/briaai/Fibo-Edit-1.5-turbo
+- Hugging Face: https://huggingface.co/briaai/Fibo-Edit-1.5-turbo
 - Repositorio de GitHub: https://github.com/Bria-AI/Fibo-Edit
 - Página del producto: https://bria.ai/fibo-edit
 - Paper en arXiv: https://arxiv.org/abs/2511.06876

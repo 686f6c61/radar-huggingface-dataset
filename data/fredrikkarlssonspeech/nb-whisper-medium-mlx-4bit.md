@@ -77,7 +77,7 @@ La principal ventaja de la version MLX 4-bit es su tamaño reducido y la velocid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-medium-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-medium-mlx-4bit
 - Modelo base NbAiLab/nb-whisper-medium: https://huggingface.co/NbAiLab/nb-whisper-medium
 - Repositorio mlx-whisper (ejemplos MLX): https://github.com/ml-explore/mlx-examples/tree/main/whisper
 - Repositorio NbAiLab/nb-whisper: https://github.com/NbAiLab/nb-whisper

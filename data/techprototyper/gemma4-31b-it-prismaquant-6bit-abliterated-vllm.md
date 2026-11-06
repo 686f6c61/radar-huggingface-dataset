@@ -125,7 +125,7 @@ No se dispone de comparativas de rendimiento frente a otros modelos de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TechPrototyper/Gemma4-31B-IT-PrismaQuant-6bit-abliterated-vllm
+- Modelo en Hugging Face: https://huggingface.co/TechPrototyper/Gemma4-31B-IT-PrismaQuant-6bit-abliterated-vllm
 - Modelo padre (cuantizacion PrismaQuant original): https://huggingface.co/rdtand/Gemma4-31B-IT-PrismaQuant-6bit-vllm
 - Modelo base de Google: https://huggingface.co/google/gemma-4-31B-it
 - Perfil del autor de la cuantizacion: https://huggingface.co/rdtand
@@ -133,4 +133,4 @@ No se dispone de comparativas de rendimiento frente a otros modelos de la misma 
 - Heretic (herramienta de abliteracion): https://github.com/p-e-w/heretic
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 
-Nota: la busqueda web realizada no devolvio resultados relevantes para este modelo; los enlaces anteriores proceden de la informacion del repositorio de HuggingFace y de las referencias citadas en su model card.
+Nota: la busqueda web realizada no devolvio resultados relevantes para este modelo; los enlaces anteriores proceden de la informacion del repositorio de Hugging Face y de las referencias citadas en su model card.

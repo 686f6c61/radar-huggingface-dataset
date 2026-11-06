@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Kimi-K3.1-Pro-Global-Pruned-30 es una variante podada del modelo multimodal Kimi-K3.1-Pro desarrollado por Moonshot AI, publicada por el usuario nota-ai en HuggingFace. Se trata de un modelo de arquitectura Mixture of Experts (MoE) de gran escala, con aproximadamente 1,95 billones de parametros totales segun los pesos en safetensors, orientado a generacion de texto e imagen-texto (pipeline image-text-to-text). La modificacion principal respecto al modelo base es una poda global de expertos ("Global-Pruned-30"), que presumiblemente elimina o desactiva un 30% de los expertos del modelo original, aunque la informacion disponible no detalla el criterio exacto de poda ni el impacto en parametros activos.
+Kimi-K3.1-Pro-Global-Pruned-30 es una variante podada del modelo multimodal Kimi-K3.1-Pro desarrollado por Moonshot AI, publicada por el usuario nota-ai en Hugging Face. Se trata de un modelo de arquitectura Mixture of Experts (MoE) de gran escala, con aproximadamente 1,95 billones de parametros totales segun los pesos en safetensors, orientado a generacion de texto e imagen-texto (pipeline image-text-to-text). La modificacion principal respecto al modelo base es una poda global de expertos ("Global-Pruned-30"), que presumiblemente elimina o desactiva un 30% de los expertos del modelo original, aunque la informacion disponible no detalla el criterio exacto de poda ni el impacto en parametros activos.
 
 El modelo se distribuye en formato safetensors con cuantizacion de 8 bits mediante la libreria compressed-tensors, lo que reduce el peso del repositorio a aproximadamente 1,1 TB. Requiere codigo personalizado (custom_code) y la libreria transformers para su carga. Es relevante en el contexto actual de modelos MoE de gran escala, donde tecnicas de poda de expertos buscan reducir costes de inferencia y almacenamiento manteniendo capacidades cercanas al modelo original, aunque en este caso concreto la documentacion publica es practicamente inexistente.
 
-El acceso al modelo esta restringido (gated): es necesario aceptar condiciones en HuggingFace y la licencia es "other", identificada como kimi-k3.1-pro, lo que implica que las condiciones de uso comercial dependen del acuerdo de licencia del modelo base. No se dispone de informacion sobre idiomas soportados, datos de entrenamiento ni benchmarks publicados en la informacion proporcionada.
+El acceso al modelo esta restringido (gated): es necesario aceptar condiciones en Hugging Face y la licencia es "other", identificada como kimi-k3.1-pro, lo que implica que las condiciones de uso comercial dependen del acuerdo de licencia del modelo base. No se dispone de informacion sobre idiomas soportados, datos de entrenamiento ni benchmarks publicados en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kimi-K3.1-Pro-Global-Pruned-30 (este) | ~1,95 B (8-bit, podado 30%) | no disponible | kimi-k3.1-pro (other, gated) | HuggingFace, acceso restringido |
-| moonshotai/Kimi-K3.1-Pro (base) | no disponible en la informacion | no disponible | kimi-k3.1-pro | HuggingFace (modelo base referenciado) |
+| Kimi-K3.1-Pro-Global-Pruned-30 (este) | ~1,95 B (8-bit, podado 30%) | no disponible | kimi-k3.1-pro (other, gated) | Hugging Face, acceso restringido |
+| moonshotai/Kimi-K3.1-Pro (base) | no disponible en la informacion | no disponible | kimi-k3.1-pro | Hugging Face (modelo base referenciado) |
 | Alternativas de misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para comparar con otras alternativas de la misma categoria (mismo tamano o misma tarea) en la informacion proporcionada.
@@ -81,5 +81,5 @@ No se dispone de datos suficientes para comparar con otras alternativas de la mi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nota-ai/Kimi-K3.1-Pro-Global-Pruned-30
+- Hugging Face: https://huggingface.co/nota-ai/Kimi-K3.1-Pro-Global-Pruned-30
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3.1-Pro

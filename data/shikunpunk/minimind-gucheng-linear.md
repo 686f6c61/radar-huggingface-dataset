@@ -76,7 +76,7 @@ No se dispone de comparaciones con otros generadores de poesia china fuera del p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shikunpunk/MiniMind-GuCheng-Linear
-- Perfil del autor en HuggingFace: https://huggingface.co/shikunpunk
+- Modelo en Hugging Face: https://huggingface.co/shikunpunk/MiniMind-GuCheng-Linear
+- Perfil del autor en Hugging Face: https://huggingface.co/shikunpunk
 - Repositorio MiniMind (base del proyecto): https://github.com/jingyaogong/minimind
 - Otros modelos del autor: https://huggingface.co/shikunpunk/models

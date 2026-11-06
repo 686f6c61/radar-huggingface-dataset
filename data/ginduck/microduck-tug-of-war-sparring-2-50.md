@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto / observación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `GinDuck/microduck-tug-of-war-sparring-2-50` | Política RL para microduck (ONNX) | no disponible | 61-D obs., 14 acciones, 50 Hz | no disponible | HuggingFace, 0 descargas |
+| `GinDuck/microduck-tug-of-war-sparring-2-50` | Política RL para microduck (ONNX) | no disponible | 61-D obs., 14 acciones, 50 Hz | no disponible | Hugging Face, 0 descargas |
 | Primera entrada de GinDuck en el reto tug-of-war | Política RL para microduck | no disponible | no disponible | no disponible | Referenciada por el autor, sin identificador publicado |
 | Políticas congeladas del reto `Mjlab-TugOfWar-MicroDuck` | Políticas RL de referencia | no disponible | no disponible | no disponible | Repositorio `microduck-challenges` |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de las a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GinDuck/microduck-tug-of-war-sparring-2-50
+- Modelo en Hugging Face: https://huggingface.co/GinDuck/microduck-tug-of-war-sparring-2-50
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/pollen-robotics/microduck-challenges
 - Documentación del manifiesto de política (`docs/policy-manifest.md` en el repositorio del daemon): no disponible como URL directa en la información proporcionada

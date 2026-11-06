@@ -67,8 +67,8 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/oyly/HelloWorld_V1
+- Repositorio de Hugging Face: https://huggingface.co/oyly/HelloWorld_V1
 - Paper en arXiv: https://arxiv.org/abs/2608.05070
-- Página del paper en HuggingFace: https://huggingface.co/papers/2608.05070
+- Página del paper en Hugging Face: https://huggingface.co/papers/2608.05070
 - Repositorio de código y ejemplos: https://github.com/AlayaLab/HelloWorld
 - Licencia LTX-2 Community License Agreement: https://ltx.io/model/licensing (enlace de referencia)

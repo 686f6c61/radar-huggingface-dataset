@@ -88,6 +88,6 @@ No disponible. La información proporcionada no incluye datos de rendimiento, pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ronaldo-GOAT/transfer
+- Hugging Face: https://huggingface.co/Ronaldo-GOAT/transfer
 - La búsqueda web realizada no devolvió resultados relevantes para este artefacto (los enlaces obtenidos corresponden a páginas sobre Cristiano Ronaldo y no guardan relación con el modelo).
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios adicionales ni demos.

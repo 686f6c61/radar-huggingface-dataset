@@ -90,8 +90,8 @@ El autor advierte ademas de que los fallos de infraestructura del sistema de pun
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| csminion/apex-qwen36-swe (adaptador LoRA) | 21,2 M en adaptador sobre base de 35B | No disponible; el protocolo del proyecto uso 65.536 tokens totales | Sin resultados publicados | other (apache-2.0-adapter-contributions-plus-upstream-notices) | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | 35B MoE, aproximadamente 3B activos segun nomenclatura | No disponible en la informacion proporcionada | No aplicable a esta comparacion; el adaptador modifica solo una fraccion de los pesos | Segun la licencia del publicador aguas arriba | HuggingFace, revision 995ad96eacd98c81ed38be0c5b274b04031597b0 |
+| csminion/apex-qwen36-swe (adaptador LoRA) | 21,2 M en adaptador sobre base de 35B | No disponible; el protocolo del proyecto uso 65.536 tokens totales | Sin resultados publicados | other (apache-2.0-adapter-contributions-plus-upstream-notices) | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | 35B MoE, aproximadamente 3B activos segun nomenclatura | No disponible en la informacion proporcionada | No aplicable a esta comparacion; el adaptador modifica solo una fraccion de los pesos | Segun la licencia del publicador aguas arriba | Hugging Face, revision 995ad96eacd98c81ed38be0c5b274b04031597b0 |
 | Otros adaptadores SWE publicos | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de datos de benchmarks de este adaptador ni de comparativas verificadas con alternativas de la misma categoria dentro de la informacion proporcionada, por lo que cualquier comparacion de rendimiento seria especulativa.
@@ -114,7 +114,7 @@ No se dispone de datos de benchmarks de este adaptador ni de comparativas verifi
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/csminion/apex-qwen36-swe
+- Pagina del modelo en Hugging Face: https://huggingface.co/csminion/apex-qwen36-swe
 - Modelo base Qwen/Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Revision congelada del modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/tree/995ad96eacd98c81ed38be0c5b274b04031597b0
 - Dataset de trayectorias nvidia/Open-SWE-Traces: https://huggingface.co/datasets/nvidia/Open-SWE-Traces

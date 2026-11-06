@@ -67,7 +67,7 @@ No disponible. Este repositorio no es un modelo comparable con alternativas de V
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jonas-neumann/review-visual-question-answering
+- Repositorio en Hugging Face: https://huggingface.co/jonas-neumann/review-visual-question-answering
 - Artículo de revisión sobre VQA (arXiv): https://arxiv.org/abs/2501.03939
 - Versión HTML del mismo artículo: https://arxiv.org/html/2501.03939v1
 - Sitio oficial del dataset VQA: https://visualqa.org/

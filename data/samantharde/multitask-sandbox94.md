@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Samantharde/multitask-sandbox94 es un repositorio publicado en HuggingFace por el usuario Samantharde que contiene una implementacion de un "Tiny Transformer" orientado a tareas multitask. No se trata de un modelo entrenado, sino de un esqueleto de codigo acompanado de una configuracion explicita (`config.json`), una receta de experimento (`training_args.json`) y un checkpoint de inicializacion valido para pruebas de humo. La propia model card indica de forma explicita que el checkpoint "no esta presentado como un checkpoint entrenado con benchmarks".
+Samantharde/multitask-sandbox94 es un repositorio publicado en Hugging Face por el usuario Samantharde que contiene una implementacion de un "Tiny Transformer" orientado a tareas multitask. No se trata de un modelo entrenado, sino de un esqueleto de codigo acompanado de una configuracion explicita (`config.json`), una receta de experimento (`training_args.json`) y un checkpoint de inicializacion valido para pruebas de humo. La propia model card indica de forma explicita que el checkpoint "no esta presentado como un checkpoint entrenado con benchmarks".
 
 El peso real del modelo es de 49.600 parametros (0,0496 M), un tamano extraordinariamente reducido que lo situa mas cerca de una prueba de concepto o de una plantilla didactica que de un modelo de produccion. La etiqueta "huge" que aparece en la model card es una denominacion de variante dentro de la propia implementacion, no una descripcion del tamano real.
 
@@ -43,7 +43,7 @@ No se ha publicado informacion sobre el numero de tokens de entrenamiento, la co
 - Pruebas de humo (smoke tests) de pipelines de carga: al ser un checkpoint valido en safetensors, permite verificar que un cargador de pesos personalizado funciona antes de pasar a modelos grandes.
 - Baseline de capacidad minima en comparaciones controladas: la model card sugiere evaluar con un conjunto retenido especifico y al menos tres semillas; este modelo serviria como referencia de suelo en ese tipo de comparacion.
 - Docencia y prototipado de arquitecturas: con 49.600 parametros, es viable inspeccionar y modificar cada componente (atencion, fusion, normalizacion) en un entorno de aula o de aprendizaje.
-- Integracion y prueba de tooling de HuggingFace: sirve para validar flujos de publicacion, versionado, descarga y carga de repositorios con estructura atipica (codigo Python propio en lugar de solo pesos).
+- Integracion y prueba de tooling de Hugging Face: sirve para validar flujos de publicacion, versionado, descarga y carga de repositorios con estructura atipica (codigo Python propio en lugar de solo pesos).
 - Verificacion de reproducibilidad en CI: al ser determinista y ligero, puede ejecutarse en integracion continua para comprobar que los cambios en el codigo no rompen la inicializacion ni la ejecucion.
 
 ## Benchmarks y rendimiento
@@ -83,6 +83,6 @@ Los valores de los modelos de referencia proceden del conocimiento general de es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Samantharde/multitask-sandbox94
+- Repositorio en Hugging Face: https://huggingface.co/Samantharde/multitask-sandbox94
 - Archivos referenciados en el repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`.
 - No se han encontrado papers, blogs, repositorios ni demos relevantes en la busqueda web realizada; los resultados obtenidos corresponden a un portal de television ajeno al modelo.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Laura es un modelo publicado en HuggingFace por el usuario Vlocka2026 bajo la licencia CC. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin secciones de arquitectura, entrenamiento, capacidades ni datos de evaluacion. El repositorio ocupa 0,7 GB, lo que sugiere pesos de un tamano relativamente contenido, pero no permite determinar con fiabilidad el numero de parametros ni el tipo de arquitectura.
+Laura es un modelo publicado en Hugging Face por el usuario Vlocka2026 bajo la licencia CC. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin secciones de arquitectura, entrenamiento, capacidades ni datos de evaluacion. El repositorio ocupa 0,7 GB, lo que sugiere pesos de un tamano relativamente contenido, pero no permite determinar con fiabilidad el numero de parametros ni el tipo de arquitectura.
 
-No se dispone de informacion sobre el pipeline de HuggingFace, los idiomas soportados, el contexto maximo ni el formato de pesos. El modelo se creo el 31 de octubre de 2026 y se actualizo minutos despues; no registra descargas ni likes en el momento de la consulta. Se trata, por tanto, de una publicacion reciente y sin traccion conocida.
+No se dispone de informacion sobre el pipeline de Hugging Face, los idiomas soportados, el contexto maximo ni el formato de pesos. El modelo se creo el 31 de octubre de 2026 y se actualizo minutos despues; no registra descargas ni likes en el momento de la consulta. Se trata, por tanto, de una publicacion reciente y sin traccion conocida.
 
 Dado que no existe documentacion tecnica verificable, esta ficha se limita a recoger los metadatos disponibles y a marcar explicitamente como "no disponible" cualquier dato que no pueda confirmarse. Cualquier evaluacion de capacidades o rendimiento requeriria inspeccionar los archivos del repositorio y ejecutar pruebas propias.
 
@@ -42,7 +42,7 @@ Tampoco hay datos sobre el corpus de entrenamiento: numero de tokens, composicio
 - Pruebas de inferencia local: dado el tamano del repositorio (0,7 GB), es plausible desplegarlo en hardware de gama consumer, aunque el formato de pesos no esta confirmado.
 - Analisis de licencia: la licencia CC permite estudiar las condiciones de redistribucion y uso comercial antes de plantear cualquier integracion.
 - Investigacion de modelos poco documentados: util como caso de estudio sobre publicaciones sin model card tecnica y su impacto en la reproducibilidad.
-- Comparacion de metadatos: servir de referencia en estudios sobre practicas de publicacion en HuggingFace (ausencia de pipeline, idiomas y descripcion).
+- Comparacion de metadatos: servir de referencia en estudios sobre practicas de publicacion en Hugging Face (ausencia de pipeline, idiomas y descripcion).
 - Verificacion de seguridad: auditar los archivos del repositorio antes de ejecutar el modelo en entornos con datos sensibles, dado que no hay garantias documentadas sobre el origen de los datos de entrenamiento.
 
 ## Benchmarks y rendimiento
@@ -73,4 +73,4 @@ No disponible. No se dispone de informacion suficiente sobre parametros, context
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vlocka2026/Laura
+- Modelo en Hugging Face: https://huggingface.co/Vlocka2026/Laura

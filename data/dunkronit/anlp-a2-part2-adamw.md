@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DunkRonit/anlp-a2-part2-adamw | 17.011.584 | no disponible | en | no disponible | safetensors | HuggingFace, 0 descargas |
-| EleutherAI/pythia-14m | 14 M (aprox.) | 2048 | en | Apache 2.0 | safetensors | HuggingFace, ampliamente utilizado |
-| openai-community/gpt2 (small) | 124 M | 1024 | en | modified MIT | safetensors / bin | HuggingFace, referencia histórica |
+| DunkRonit/anlp-a2-part2-adamw | 17.011.584 | no disponible | en | no disponible | safetensors | Hugging Face, 0 descargas |
+| EleutherAI/pythia-14m | 14 M (aprox.) | 2048 | en | Apache 2.0 | safetensors | Hugging Face, ampliamente utilizado |
+| openai-community/gpt2 (small) | 124 M | 1024 | en | modified MIT | safetensors / bin | Hugging Face, referencia histórica |
 
 La comparación con Pythia-14m y GPT-2 small se ofrece únicamente como referencia de categoría (modelos pequeños de lenguaje en inglés); el autor no publica comparaciones ni métricas que permitan establecer una jerarquía de rendimiento frente a ellos. Cualquier afirmación sobre calidad relativa requeriría evaluar el modelo, cosa que la información disponible no permite.
 
@@ -90,7 +90,7 @@ La comparación con Pythia-14m y GPT-2 small se ofrece únicamente como referenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DunkRonit/anlp-a2-part2-adamw
+- Modelo en Hugging Face: https://huggingface.co/DunkRonit/anlp-a2-part2-adamw
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/dunkronit-iiit-hyderabad/anlp-a2-part2/runs/adamw-40cfbfa5
 - Dataset de entrenamiento (referenciado en la model card): browndw/human-ai-parallel-corpus
 - Repositorio de la asignatura con el código de carga (`src.part2.model.Transformer`): referencia mencionada en la model card, sin URL pública disponible

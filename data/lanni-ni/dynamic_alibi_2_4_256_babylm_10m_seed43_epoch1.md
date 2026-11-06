@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch1` es un modelo de lenguaje autoregresivo publicado en HuggingFace por el desarrollador Lanni-ni. Pertenece a una línea de investigación experimental sobre mecanismos de atención con sesgos lineales dinámicos (dynamic ALiBi), basada en el paper de Press et al. (arXiv:1910.09700). Su nombre sugiere una configuración con 2 capas, 4 cabezas de atención y dimensión de modelo 256, aunque la documentación publicada no lo confirma.
+El modelo `Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch1` es un modelo de lenguaje autoregresivo publicado en Hugging Face por el desarrollador Lanni-ni. Pertenece a una línea de investigación experimental sobre mecanismos de atención con sesgos lineales dinámicos (dynamic ALiBi), basada en el paper de Press et al. (arXiv:1910.09700). Su nombre sugiere una configuración con 2 capas, 4 cabezas de atención y dimensión de modelo 256, aunque la documentación publicada no lo confirma.
 
 El modelo tiene 27.447.040 parámetros en formato safetensors y un tamaño de repositorio de 0,1 GB. Está registrado con la librería `transformers` y el tag `custom_code`, lo que indica que requiere código personalizado para su carga. Se ha publicado para generación de texto (`text-generation`), pero la model card es una plantilla autogenerada sin información técnica relevante.
 
@@ -29,7 +29,7 @@ No se dispone de información sobre el proceso de entrenamiento: número de toke
 
 ## Capacidades
 
-- Generación de texto autoregresivo: el modelo está registrado con el pipeline `text-generation` de HuggingFace.
+- Generación de texto autoregresivo: el modelo está registrado con el pipeline `text-generation` de Hugging Face.
 - Investigación sobre atención ALiBi: la característica distintiva es el uso de sesgos lineales dinámicos, orientado a extrapolar la longitud de contexto más allá de la utilizada en entrenamiento.
 - No se han documentado capacidades de razonamiento, generación de código, matemáticas, visión o audio.
 - No se ha confirmado soporte de tool calling / function calling.
@@ -72,6 +72,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch1
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch1
 - Paper de referencia sobre ALiBi: https://arxiv.org/abs/1910.09700
 - Modelo relacionado del mismo autor: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch4

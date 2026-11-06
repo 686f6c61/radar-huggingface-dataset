@@ -71,5 +71,5 @@ No disponible. Este repositorio no es un modelo único sino un conjunto de ablac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cmeister/tokenizer-lm-ablations
+- Repositorio Hugging Face: https://huggingface.co/cmeister/tokenizer-lm-ablations
 - No se proporcionan enlaces a los trabajos académicos mencionados (TokEval, estudios cross-lingual) en la información disponible.

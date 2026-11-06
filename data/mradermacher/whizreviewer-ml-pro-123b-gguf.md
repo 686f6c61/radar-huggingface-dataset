@@ -6,7 +6,7 @@ WhizReviewer-ML-Pro-123B es un modelo de lenguaje generativo de gran tamaño (12
 
 El modelo forma parte de una familia (8B, 70B y 123B) que ha sido entrenada con supervisión adicional para tareas de revisión, corrección y evaluación de manuscritos científicos. La versión cuantizada aquí descrita ofrece una alternativa accesible para investigadores y desarrolladores que deseen integrar capacidades de revisión académica en sus flujos de trabajo, siempre respetando las restricciones de la licencia personalizada (whizreviewer-pro-license), que prohíbe explícitamente su uso en revisiones oficiales o decisiones de publicación.
 
-La cuantización Q4_K_S disponible reduce el tamaño del modelo a aproximadamente 69,7 GB, lo que lo hace ejecutable en estaciones de trabajo con múltiples GPUs de alta capacidad o en servidores dedicados. No se han publicado datos detallados sobre la arquitectura interna, el contexto máximo o los benchmarks, por lo que esta ficha se basa en la información disponible en los repositorios de HuggingFace.
+La cuantización Q4_K_S disponible reduce el tamaño del modelo a aproximadamente 69,7 GB, lo que lo hace ejecutable en estaciones de trabajo con múltiples GPUs de alta capacidad o en servidores dedicados. No se han publicado datos detallados sobre la arquitectura interna, el contexto máximo o los benchmarks, por lo que esta ficha se basa en la información disponible en los repositorios de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -83,5 +83,5 @@ No hay información suficiente para realizar una comparativa rigurosa con otros 
 - Modelo base: [https://huggingface.co/WestlakeNLP/WhizReviewer-ML-Pro-123B](https://huggingface.co/WestlakeNLP/WhizReviewer-ML-Pro-123B)
 - Repositorio de código (ai-researcher): [https://libraries.io/pypi/ai-researcher](https://libraries.io/pypi/ai-researcher)
 - Página de FriendliAI para el modelo: [https://friendli.ai/models/WestlakeNLP/WhizReviewer-ML-Pro-123B](https://friendli.ai/models/WestlakeNLP/WhizReviewer-ML-Pro-123B)
-- Perfil de mradermacher en HuggingFace: [https://www.aimodels.fyi/creators/huggingFace/mradermacher](https://www.aimodels.fyi/creators/huggingFace/mradermacher)
+- Perfil de mradermacher en Hugging Face: [https://www.aimodels.fyi/creators/huggingFace/mradermacher](https://www.aimodels.fyi/creators/huggingFace/mradermacher)
 - Licencia: se encuentra en el repositorio del modelo base (whizreviewer-pro-license)

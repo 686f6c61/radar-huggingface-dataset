@@ -60,7 +60,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que es necesario aceptar la licencia comunitaria de LTX-2.5 en HuggingFace antes de poder descargar los pesos.
+- Acceso restringido: el repositorio es gated, por lo que es necesario aceptar la licencia comunitaria de LTX-2.5 en Hugging Face antes de poder descargar los pesos.
 - Licencia restrictiva: la ltx-2-community-license-agreement puede limitar el uso comercial o imponer condiciones especificas. Es imprescindible revisar los terminos antes de utilizar el modelo en produccion.
 - Requisitos de hardware elevados: el tamaño de 119,7 GB en BF16 hace que sea impracticable en equipos con menos de 128 GB de RAM unificada, limitando su uso a estaciones de trabajo de gama alta.
 - Sin informacion sobre sesgos o alucinaciones: al no haber documentacion publica sobre el entrenamiento, se desconocen los posibles sesgos del modelo o su tendencia a generar contenido incoherente o falso.
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sawfwair/LTX-2.5-Full-BF16-MLX
+- Repositorio Hugging Face: https://huggingface.co/Sawfwair/LTX-2.5-Full-BF16-MLX
 - Modelo base Lightricks/LTX-2.5: https://huggingface.co/Lightricks/LTX-2.5
 - Pagina oficial de LTX-2.5: https://ltx.io/model/ltx-2-5
 - Version destilada y cuantizada (referencia): https://huggingface.co/Sawfwair/LTX-2.5-Distilled-BF16-MLX-Q4-Text

@@ -98,7 +98,7 @@ Diferencias clave: el build de pramoths es el único FP8 ungated con MTP funcion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pramoths/Qwen3.8-27B-Uncensored-FP8-MTP
+- Repositorio Hugging Face: https://huggingface.co/pramoths/Qwen3.8-27B-Uncensored-FP8-MTP
 - Modelo base: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de scripts y benchmarks del autor: https://github.com/pramoth/qwen38-fp8-forge

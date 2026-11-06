@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-0.5B-Instruct-Join es un modelo derivado de la familia Qwen2.5, publicado por el usuario CleytonNobre en HuggingFace. Se trata de un ajuste o fusion (el sufijo "Join" sugiere una union de pesos o un merge) sobre el checkpoint instructivo oficial de Qwen2.5-0.5B, que es el modelo mas pequeno de la serie Qwen2.5 desarrollada por Alibaba Cloud. El modelo cuenta con 494.032.768 parametros, lo que lo situa en la franja de los modelos ultra-ligeros, aptos para ejecucion en CPU o GPUs de consumo muy modestas.
+Qwen2.5-0.5B-Instruct-Join es un modelo derivado de la familia Qwen2.5, publicado por el usuario CleytonNobre en Hugging Face. Se trata de un ajuste o fusion (el sufijo "Join" sugiere una union de pesos o un merge) sobre el checkpoint instructivo oficial de Qwen2.5-0.5B, que es el modelo mas pequeno de la serie Qwen2.5 desarrollada por Alibaba Cloud. El modelo cuenta con 494.032.768 parametros, lo que lo situa en la franja de los modelos ultra-ligeros, aptos para ejecucion en CPU o GPUs de consumo muy modestas.
 
 La relevancia de este checkpoint es limitada: se trata de una publicacion de terceros con 32 descargas y sin documentacion tecnica asociada (sin model card con detalles de entrenamiento, sin licencia declarada en los metadatos, sin idiomas especificados). La arquitectura subyacente es la de Qwen2 (transformer decoder-only con RoPE, SwiGLU y GQA), pero cualquier detalle sobre el proceso de "Join" aplicado por el autor no esta disponible en la informacion proporcionada.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-0.5B-Instruct-Join (este) | 494M | no disponible | no disponible | HuggingFace, 32 descargas |
-| Qwen2.5-0.5B-Instruct (original) | ~494M | 32.768 tokens (segun documentacion oficial de Qwen) | Apache 2.0 (segun documentacion oficial) | HuggingFace, ampliamente usado |
-| SmolLM2-360M-Instruct (HuggingFace) | 360M | 8.192 tokens (segun documentacion oficial) | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B-Chat | 1,1B | 2.048 tokens | Apache 2.0 | HuggingFace |
+| Qwen2.5-0.5B-Instruct-Join (este) | 494M | no disponible | no disponible | Hugging Face, 32 descargas |
+| Qwen2.5-0.5B-Instruct (original) | ~494M | 32.768 tokens (segun documentacion oficial de Qwen) | Apache 2.0 (segun documentacion oficial) | Hugging Face, ampliamente usado |
+| SmolLM2-360M-Instruct (Hugging Face) | 360M | 8.192 tokens (segun documentacion oficial) | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B-Chat | 1,1B | 2.048 tokens | Apache 2.0 | Hugging Face |
 
 Nota: los datos de los modelos comparativos provienen de su documentacion publica habitual; los de este checkpoint no estan disponibles en la informacion proporcionada.
 
@@ -82,6 +82,6 @@ Nota: los datos de los modelos comparativos provienen de su documentacion public
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CleytonNobre/Qwen2.5-0.5B-Instruct-Join
+- Hugging Face: https://huggingface.co/CleytonNobre/Qwen2.5-0.5B-Instruct-Join
 - Repositorio oficial de Qwen2.5 (referencia del modelo base): https://github.com/QwenLM/Qwen2.5
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Precision de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Forge Neo Image 2.1 Turbo INT8 (Aikimi) | 7.116.566.528 | No disponible | INT8 (bitsandbytes) | qwen-research (solo investigacion y evaluacion no comercial) | HuggingFace, requiere Forge Neo y los BF16 oficiales |
-| Qwen/Qwen-Image-2.1-Turbo (base) | No disponible en la informacion proporcionada | No disponible | BF16 | qwen-research (heredada por la conversion) | HuggingFace, checkpoint oficial |
-| Qwen/Qwen-Image-2.1 | No disponible | No disponible | BF16 | no disponible | HuggingFace; aporta el codificador de texto compartido |
+| Forge Neo Image 2.1 Turbo INT8 (Aikimi) | 7.116.566.528 | No disponible | INT8 (bitsandbytes) | qwen-research (solo investigacion y evaluacion no comercial) | Hugging Face, requiere Forge Neo y los BF16 oficiales |
+| Qwen/Qwen-Image-2.1-Turbo (base) | No disponible en la informacion proporcionada | No disponible | BF16 | qwen-research (heredada por la conversion) | Hugging Face, checkpoint oficial |
+| Qwen/Qwen-Image-2.1 | No disponible | No disponible | BF16 | no disponible | Hugging Face; aporta el codificador de texto compartido |
 
 No se dispone de datos de benchmarks ni de otros modelos de la misma categoria en la informacion proporcionada, por lo que no se puede establecer una comparacion de rendimiento con alternativas de terceros.
 
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks ni de otros modelos de la misma categoria e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aikimi/Forge-Neo-Image-2.1-Turbo-INT8
+- Modelo en Hugging Face: https://huggingface.co/Aikimi/Forge-Neo-Image-2.1-Turbo-INT8
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Fuente del codificador de texto compartido: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio de Aikimi Forge Neo: https://github.com/AiWithYou/aikimi-forge-neo

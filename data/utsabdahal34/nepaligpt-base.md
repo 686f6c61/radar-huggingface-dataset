@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NepaliGPT-base es un modelo de lenguaje decoder-only de arquitectura GPT-2 publicado por el usuario utsabdahal34 en HuggingFace y exportado como pesos estándar de Transformers. Se trata de un modelo base (no ajustado por instrucciones) especializado en nepalí (`ne`), con 33.674.240 parámetros, una ventana de contexto de 512 tokens y un vocabulario SentencePiece de 16.000 tokens. El checkpoint se distribuye en formato `safetensors` junto al tokenizador `tokenizer.model`, mientras que el paquete original del proyecto aloja además un `model.pt` nativo y un pipeline de ajuste por instrucciones (`nepali_gpt2.sft.format_prompt`).
+NepaliGPT-base es un modelo de lenguaje decoder-only de arquitectura GPT-2 publicado por el usuario utsabdahal34 en Hugging Face y exportado como pesos estándar de Transformers. Se trata de un modelo base (no ajustado por instrucciones) especializado en nepalí (`ne`), con 33.674.240 parámetros, una ventana de contexto de 512 tokens y un vocabulario SentencePiece de 16.000 tokens. El checkpoint se distribuye en formato `safetensors` junto al tokenizador `tokenizer.model`, mientras que el paquete original del proyecto aloja además un `model.pt` nativo y un pipeline de ajuste por instrucciones (`nepali_gpt2.sft.format_prompt`).
 
 Su relevancia es acotada y muy específica: se trata de un modelo de investigación de escala reducida (0,3 GB de repositorio) orientado al modelado de lenguaje en nepalí, un idioma con recursos limitados. No compite con LLM contemporáneos ni pretende hacerlo; su interés está en servir como punto de partida para experimentos de preentrenamiento continuado, ajuste fino y evaluación de tokenización en nepalí, así como en tareas de docencia o prototipado en hardware muy limitado.
 
@@ -86,9 +86,9 @@ No se han encontrado en la búsqueda modelos nepalíes comparables con datos pub
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad de pesos |
 |---|---|---|---|---|---|
-| NepaliGPT-base | 33,7 M | 512 | nepalí | no disponible | safetensors en HuggingFace |
-| GPT-2 small | 124 M | 1.024 | inglés (principalmente) | MIT (con restricciones de uso en la variante original) | safetensors/PyTorch en HuggingFace |
-| DistilGPT-2 | 82 M | 1.024 | inglés | Apache-2.0 | safetensors/PyTorch en HuggingFace |
+| NepaliGPT-base | 33,7 M | 512 | nepalí | no disponible | safetensors en Hugging Face |
+| GPT-2 small | 124 M | 1.024 | inglés (principalmente) | MIT (con restricciones de uso en la variante original) | safetensors/PyTorch en Hugging Face |
+| DistilGPT-2 | 82 M | 1.024 | inglés | Apache-2.0 | safetensors/PyTorch en Hugging Face |
 | Alternativas específicas en nepalí | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Diferencias clave: frente a GPT-2 small y DistilGPT-2, este modelo tiene menos parámetros y una ventana de contexto la mitad de corta, pero está entrenado sobre corpus nepalí, lo que lo hace potencialmente más útil para ese idioma pese a su menor capacidad. No hay datos de rendimiento comparables entre ellos en ninguna tarea común.
@@ -111,7 +111,7 @@ Diferencias clave: frente a GPT-2 small y DistilGPT-2, este modelo tiene menos p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/utsabdahal34/NepaliGPT-base
+- Modelo en Hugging Face: https://huggingface.co/utsabdahal34/NepaliGPT-base
 - Repositorio fuente del proyecto (mencionado en la model card): https://github.com/utsab345/Nepali_GPT2
 - Cuaderno Colab con la descripción de los datos: referenciado en la model card como "source Colab notebook", sin URL directa disponible.
 - Paper: no disponible.

@@ -38,7 +38,7 @@ Se entrenó también una etapa DPO (prefiriendo la respuesta humana frente a la 
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
 - Capacidades multilingües: solo inglés.
-- Capacidades de visión: la etiqueta `image-text-to-text` aparece en los tags de HuggingFace, pero la model card no describe capacidades multimodales; no disponible como capacidad confirmada.
+- Capacidades de visión: la etiqueta `image-text-to-text` aparece en los tags de Hugging Face, pero la model card no describe capacidades multimodales; no disponible como capacidad confirmada.
 
 ## Casos de uso
 
@@ -92,8 +92,8 @@ Estilo en formato largo (200 peticiones reservadas):
 
 | Modelo | Parámetros | Contexto | GSM8K (thinking) | HumanEval (thinking) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HumanQwen3.5-4B | 4,66B | 32.768 | 87,0% | 90,9% | Apache 2.0 | HuggingFace |
-| Qwen3.5-4B (base) | 4B | no disponible | 85,8% | 90,2% | Apache 2.0 | HuggingFace |
+| HumanQwen3.5-4B | 4,66B | 32.768 | 87,0% | 90,9% | Apache 2.0 | Hugging Face |
+| Qwen3.5-4B (base) | 4B | no disponible | 85,8% | 90,2% | Apache 2.0 | Hugging Face |
 | Alternativas de estilo humano de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa directa con otros fine-tunes orientados a estilo humano no está disponible en la información proporcionada. El único contraste documentado es frente al modelo base.
@@ -111,7 +111,7 @@ La comparativa directa con otros fine-tunes orientados a estilo humano no está 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thermostatic/HumanQwen3.5-4B
+- Modelo en Hugging Face: https://huggingface.co/Thermostatic/HumanQwen3.5-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Unsloth: https://github.com/unslothai/unsloth
 - Dataset OpenAssistant oasst2: https://huggingface.co/datasets/OpenAssistant/oasst2

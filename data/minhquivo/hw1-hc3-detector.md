@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo minhquivo/hw1-hc3-detector es un checkpoint de tipo encoder BERT publicado en HuggingFace Hub por el usuario minhquivo y orientado a clasificacion de texto (pipeline `text-classification`). Cuenta con 22.713.986 parametros reales registrados en el fichero de pesos safetensors y un repositorio de apenas 0,1 GB, lo que lo situa en la categoria de modelos compactos, muy por debajo de un BERT-base canonico (110 M de parametros). Sus etiquetas indican dependencia de la libreria `transformers`, compatibilidad con `text-embeddings-inference` y con endpoints gestionados.
+El modelo minhquivo/hw1-hc3-detector es un checkpoint de tipo encoder BERT publicado en Hugging Face Hub por el usuario minhquivo y orientado a clasificacion de texto (pipeline `text-classification`). Cuenta con 22.713.986 parametros reales registrados en el fichero de pesos safetensors y un repositorio de apenas 0,1 GB, lo que lo situa en la categoria de modelos compactos, muy por debajo de un BERT-base canonico (110 M de parametros). Sus etiquetas indican dependencia de la libreria `transformers`, compatibilidad con `text-embeddings-inference` y con endpoints gestionados.
 
 La relevancia de este checkpoint es, a dia de hoy, limitada y de caracter principalmente academico o experimental. Los 10 descargos y 0 likes acumulados, junto con el nombre `hw1-hc3-detector` (que sugiere una tarea de curso, practica o trabajo de asignatura), apuntan a un modelo de uso interno mas que a un artefacto listo para produccion. No existe informacion publica sobre el conjunto de etiquetas que predice, el dominio de los datos de entrenamiento ni el idioma de trabajo.
 
-La model card del repositorio es la plantilla autogenerada por HuggingFace y no ha sido editada: todos sus apartados (descripcion, datos de entrenamiento, hiperparametros, evaluacion, sesgos, impacto ambiental) aparecen como "[More Information Needed]". Cualquier evaluacion rigurosa del modelo requiere, por tanto, inspeccionar directamente el `config.json` y el tokenizer del repositorio, datos que no estan disponibles en la informacion proporcionada.
+La model card del repositorio es la plantilla autogenerada por Hugging Face y no ha sido editada: todos sus apartados (descripcion, datos de entrenamiento, hiperparametros, evaluacion, sesgos, impacto ambiental) aparecen como "[More Information Needed]". Cualquier evaluacion rigurosa del modelo requiere, por tanto, inspeccionar directamente el `config.json` y el tokenizer del repositorio, datos que no estan disponibles en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -29,14 +29,14 @@ La model card del repositorio es la plantilla autogenerada por HuggingFace y no 
 
 La unica evidencia sobre la arquitectura es la etiqueta `bert` asociada al repositorio, lo que indica que se trata de un transformer encoder bidireccional de la familia BERT con una cabeza de clasificacion de secuencias anadida. El recuento de 22.713.986 parametros es notablemente inferior al de BERT-base (110 M) y al de DistilBERT-base (66 M); coincide, en cambio, con el orden de magnitud de configuraciones compactas de 6 capas y dimension oculta reducida, del estilo de las variantes MiniLM-L6. Esta correspondencia es una hipotesis basada en el recuento de parametros, no un dato confirmado por el autor.
 
-No hay informacion disponible sobre el procedimiento de entrenamiento: se desconoce el numero de tokens, la composicion del corpus, si hubo ajuste fino supervisado, destilacion, RLHF o DPO, y cuales fueron los hiperparametros (learning rate, batch size, precision numerica, epocas). La unica referencia a un paper en las etiquetas es `arxiv:1910.09700`, correspondiente a Lacoste et al. (2019) sobre estimacion de emisiones de carbono, que la plantilla de HuggingFace inserta automaticamente y que no guarda relacion con el diseno del modelo. Tampoco se documenta ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, atencion destilada) mas alla del propio ajuste fino clasificatorio.
+No hay informacion disponible sobre el procedimiento de entrenamiento: se desconoce el numero de tokens, la composicion del corpus, si hubo ajuste fino supervisado, destilacion, RLHF o DPO, y cuales fueron los hiperparametros (learning rate, batch size, precision numerica, epocas). La unica referencia a un paper en las etiquetas es `arxiv:1910.09700`, correspondiente a Lacoste et al. (2019) sobre estimacion de emisiones de carbono, que la plantilla de Hugging Face inserta automaticamente y que no guarda relacion con el diseno del modelo. Tampoco se documenta ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, atencion destilada) mas alla del propio ajuste fino clasificatorio.
 
 ## Capacidades
 
-- Clasificacion de texto: es la tarea declarada del modelo en el pipeline de HuggingFace. El numero y la semantica de las clases de salida no estan publicados.
+- Clasificacion de texto: es la tarea declarada del modelo en el pipeline de Hugging Face. El numero y la semantica de las clases de salida no estan publicados.
 - Inferencia de embeddings contextuales de secuencia a traves del encoder subyacente, utilizable como extractor de caracteristicas si se accede a las representaciones internas.
 - Servicio mediante Text Embeddings Inference (TEI), segun la etiqueta `text-embeddings-inference` del repositorio.
-- Compatibilidad con endpoints gestionados de HuggingFace (etiqueta `endpoints_compatible`).
+- Compatibilidad con endpoints gestionados de Hugging Face (etiqueta `endpoints_compatible`).
 - Generacion de texto: no. Es un modelo encoder-only, sin cabeza de generacion autorregresiva.
 - Razonamiento, matematicas, codigo, vision, audio: no disponibles / no soportados por la arquitectura declarada.
 - Tool calling, function calling, agentes y razonamiento multi-paso: no soportados.
@@ -70,7 +70,7 @@ La model card del repositorio no incluye la seccion de evaluacion cumplimentada 
 - GPU de gama alta (A100, H100, RTX 4090): sobredimensionadas para este modelo; solo tendrian sentido si se procesan lotes muy grandes en paralelo.
 - Ejecucion en CPU: plenamente viable. Un modelo de 22,7 M de parametros puede servirse en CPU con latencias de milisegundos por peticion en hardware moderno.
 - Consumer GPU: si, cabe en practicamente cualquier GPU de consumo e incluso en sistemas con graficos integrados.
-- Opciones de despliegue: `transformers` (PyTorch), Text Embeddings Inference (TEI, segun la etiqueta del repositorio), endpoints gestionados de HuggingFace. El uso de llama.cpp, Ollama o vLLM no esta documentado para este checkpoint; requeriria conversion previa y no se garantiza su compatibilidad.
+- Opciones de despliegue: `transformers` (PyTorch), Text Embeddings Inference (TEI, segun la etiqueta del repositorio), endpoints gestionados de Hugging Face. El uso de llama.cpp, Ollama o vLLM no esta documentado para este checkpoint; requeriria conversion previa y no se garantiza su compatibilidad.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones de velocidad, y no se conocen el hardware de referencia ni la longitud media de secuencia empleada.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento de hw1-hc3-detector, por lo que la compara
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| minhquivo/hw1-hc3-detector | 22,7 M | No disponible | Clasificacion de texto | No disponible | HuggingFace Hub, 10 descargas |
+| minhquivo/hw1-hc3-detector | 22,7 M | No disponible | Clasificacion de texto | No disponible | Hugging Face Hub, 10 descargas |
 | DistilBERT-base | 66 M | 512 tokens | Clasificacion / extraccion de caracteristicas | Apache 2.0 | Ampliamente disponible |
 | BERT-base | 110 M | 512 tokens | Clasificacion / extraccion de caracteristicas | Apache 2.0 | Ampliamente disponible |
 | MiniLM-L6 (variantes de sentence-transformers) | ~22,7 M | 512 tokens | Embeddings / clasificacion | Apache 2.0 | Ampliamente disponible |
@@ -101,7 +101,7 @@ Nota: la coincidencia exacta del recuento de parametros con las variantes MiniLM
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minhquivo/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/minhquivo/hw1-hc3-detector
 - Repositorios con el mismo nombre de modelo publicados por otros usuarios:
   - https://huggingface.co/Aishkrish/hw1-hc3-detector
   - https://huggingface.co/aisaro/hw1-hc3-detector

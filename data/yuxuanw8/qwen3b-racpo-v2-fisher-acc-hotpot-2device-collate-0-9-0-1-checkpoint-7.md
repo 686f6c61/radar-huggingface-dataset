@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-7` es un checkpoint de 3.085.938.688 parámetros (aproximadamente 3,09 B) publicado en HuggingFace por el usuario yuxuanw8. Por los metadatos del repositorio (etiqueta `qwen2` y arquitectura declarada en `transformers`) se trata de un transformer decoder-only de la familia Qwen2, aunque la model card no confirma explícitamente el modelo base ni el proceso de entrenamiento. El repositorio ocupa 12,4 GB, lo que es coherente con pesos almacenados en precisión fp32 (3,09 B × 4 bytes ≈ 12,3 GB).
+El modelo `yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-7` es un checkpoint de 3.085.938.688 parámetros (aproximadamente 3,09 B) publicado en Hugging Face por el usuario yuxuanw8. Por los metadatos del repositorio (etiqueta `qwen2` y arquitectura declarada en `transformers`) se trata de un transformer decoder-only de la familia Qwen2, aunque la model card no confirma explícitamente el modelo base ni el proceso de entrenamiento. El repositorio ocupa 12,4 GB, lo que es coherente con pesos almacenados en precisión fp32 (3,09 B × 4 bytes ≈ 12,3 GB).
 
 El nombre del identificador aporta pistas sobre su origen: `racpo` (probablemente alguna variante de optimización de política con preferencias), `fisher` (posible uso de información de Fisher en el objetivo de entrenamiento), `hotpot` (apunta a HotpotQA, un conjunto de evaluación de question answering multi-salto), `2device-collate` (entrenamiento distribuido en dos dispositivos con una función de collate personalizada) y `0.9-0.1` (posiblemente pesos de mezcla o coeficientes de un objetivo compuesto). El sufijo `checkpoint-7` indica que es un punto de control intermedio dentro de una ejecución de ajuste, no un modelo final validado.
 
-La relevancia de esta ficha es limitada pero conviene ser explícito: se trata de un artefacto de investigación con 0 descargas y 0 likes, sin model card redactada (la existente es la plantilla automática de HuggingFace), sin licencia declarada, sin idiomas declarados y sin resultados de evaluación publicados. Debe tratarse como material de experimentación reproducible, no como modelo listo para producción.
+La relevancia de esta ficha es limitada pero conviene ser explícito: se trata de un artefacto de investigación con 0 descargas y 0 likes, sin model card redactada (la existente es la plantilla automática de Hugging Face), sin licencia declarada, sin idiomas declarados y sin resultados de evaluación publicados. Debe tratarse como material de experimentación reproducible, no como modelo listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -70,17 +70,17 @@ Los datos del modelo analizado figuran como "no disponible" porque no están dec
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yuxuanw8/qwen3b-racpo-v2-...-checkpoint-7 | 3,09 B | No disponible (un checkpoint hermano figura con 32.768 tokens en una ficha de terceros) | No disponible | HuggingFace, 0 descargas |
-| Qwen2.5-3B (familia Qwen) | 3,09 B | 32.768 tokens nativos (ampliable con RoPE scaling) | Apache 2.0 en la mayoría de variantes | HuggingFace, ampliamente distribuido |
-| Llama 3.2 3B | 3,21 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, acceso con aceptación de términos |
-| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | HuggingFace, ampliamente distribuido |
+| yuxuanw8/qwen3b-racpo-v2-...-checkpoint-7 | 3,09 B | No disponible (un checkpoint hermano figura con 32.768 tokens en una ficha de terceros) | No disponible | Hugging Face, 0 descargas |
+| Qwen2.5-3B (familia Qwen) | 3,09 B | 32.768 tokens nativos (ampliable con RoPE scaling) | Apache 2.0 en la mayoría de variantes | Hugging Face, ampliamente distribuido |
+| Llama 3.2 3B | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, acceso con aceptación de términos |
+| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | Hugging Face, ampliamente distribuido |
 
 La diferencia principal no está en el tamaño, sino en el soporte: los tres modelos de referencia publican model card detallada, licencia explícita y evaluaciones; este checkpoint no ofrece ninguno de los tres elementos.
 
 ## Limitaciones y advertencias
 
 - Licencia no declarada: sin licencia explícita no puede asumirse permiso para uso comercial. En la práctica, la ausencia de licencia implica que los derechos quedan reservados por defecto en muchas jurisdicciones, aunque el modelo sea descargable.
-- Model card vacía: la información publicada es la plantilla automática de HuggingFace. No hay descripción, ni instrucciones de uso, ni ejemplo de código, ni procedencia del modelo base.
+- Model card vacía: la información publicada es la plantilla automática de Hugging Face. No hay descripción, ni instrucciones de uso, ni ejemplo de código, ni procedencia del modelo base.
 - Checkpoint intermedio: `checkpoint-7` sugiere un punto de control temprano dentro de una ejecución de ajuste. La calidad puede ser sustancialmente inferior a la de un modelo final de la misma serie.
 - Riesgo de alucinación: no hay evaluación de fidelidad. Un modelo de 3 B de parámetros, sin datos de alineación documentados, tiende a inventar hechos y a producir respuestas plausibles pero incorrectas.
 - Sesgos: no disponibles. No se documenta composición del dataset de entrenamiento, filtrado ni mitigaciones, por lo que no puede acotarse el sesgo demográfico, ideológico o lingüístico.
@@ -92,7 +92,7 @@ La diferencia principal no está en el tamaño, sino en el soporte: los tres mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-7
+- Modelo en Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-7
 - Checkpoint hermano de la misma serie (0.75-0.25, checkpoint 150): https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-150
 - Checkpoint hermano de la misma serie (0.75-0.25, checkpoint 210): https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-210
 - Ficha de terceros con datos del checkpoint hermano (Featherless): https://featherless.ai/models/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-210

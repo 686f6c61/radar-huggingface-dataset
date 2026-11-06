@@ -17,7 +17,7 @@ Su relevancia es la de los experimentos de especializacion estrecha: comprobar s
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | 32.768 tokens en el modelo base Mistral 7B Instruct v0.3; no se especifica en la model card del fine-tune |
 | Tipos de cuantizacion | El repo principal distribuye pesos safetensors sin cuantizacion declarada; existe una version GGUF en `agentbyumer/mistral-7b-poetry-GGUF` (niveles concretos no disponibles) |
-| Idiomas soportados | Ingles (en), segun los tags de HuggingFace y la model card |
+| Idiomas soportados | Ingles (en), segun los tags de Hugging Face y la model card |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (libreria transformers). El tamano del repo, 0,2 GB, sugiere que podrian ser solo los adaptadores LoRA y no el modelo fusionado, pero la model card no lo confirma de forma explicita |
 
@@ -68,7 +68,7 @@ La model card describe unicamente una evaluacion informal con seis prompts varia
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| agentbyumer/mistral-7b-poetry | ~7,3 mil millones (base Mistral 7B v0.3) | 32.768 tokens en la base; no confirmado en la model card | Poesia y escritura creativa guiada por instrucciones | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta; version GGUF aparte |
+| agentbyumer/mistral-7b-poetry | ~7,3 mil millones (base Mistral 7B v0.3) | 32.768 tokens en la base; no confirmado en la model card | Poesia y escritura creativa guiada por instrucciones | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta; version GGUF aparte |
 | mistralai/Mistral-7B-Instruct-v0.3 (base de referencia) | ~7,3 mil millones | 32.768 tokens | Instrucciones generales | Apache 2.0 | Muy extendido, ecosistema amplio de cuantizaciones |
 | meta-llama/Llama-3.1-8B-Instruct | ~8 mil millones | 128.000 tokens | Instrucciones generales, multilingue | Licencia comunitaria de Meta (no Apache 2.0) | Amplia adopcion, requiere aceptar la licencia |
 | Qwen/Qwen2.5-7B-Instruct | ~7,6 mil millones | 128.000 tokens | Instrucciones generales, fuerte soporte multilingue y de codigo | Apache 2.0 | Amplia adopcion |
@@ -89,7 +89,7 @@ No se dispone de comparaciones cuantitativas de rendimiento entre este fine-tune
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentbyumer/mistral-7b-poetry
+- Modelo en Hugging Face: https://huggingface.co/agentbyumer/mistral-7b-poetry
 - Version GGUF: https://huggingface.co/agentbyumer/mistral-7b-poetry-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/checkai/instruction-poems
 - Modelo base: https://huggingface.co/unsloth/mistral-7b-instruct-v0.3-bnb-4bit

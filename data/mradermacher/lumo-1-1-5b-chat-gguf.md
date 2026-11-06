@@ -91,7 +91,7 @@ En ausencia de benchmarks del modelo Lumo, no es posible establecer una comparac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Lumo-1-1.5B-Chat-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Lumo-1-1.5B-Chat-GGUF
 - Modelo base: https://huggingface.co/vpakarinen/Lumo-1-1.5B-Chat
 - Pagina de resumen y lista de descargas del autor: https://hf.tst.eu/model#Lumo-1-1.5B-Chat-GGUF
 - Peticiones y preguntas sobre cuantizaciones: https://huggingface.co/mradermacher/model_requests

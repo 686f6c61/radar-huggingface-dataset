@@ -2,11 +2,11 @@
 
 ## Resumen
 
-learn_hf_food_not_food_text_classifier-distilbert-base-uncased es un clasificador de texto binario obtenido mediante fine-tuning de distilbert-base-uncased y publicado por el usuario JamesASnook1 en HuggingFace. El nombre del repositorio indica que la tarea consiste en decidir si un texto trata de comida o no ("food / not food"), aunque la model card no documenta ni el dataset ni el mapeo de etiquetas. Es, por tanto, un encoder de 6 capas y 66.955.010 parámetros segun los pesos safetensors publicados, con una ventana de contexto de 512 tokens heredada del modelo base.
+learn_hf_food_not_food_text_classifier-distilbert-base-uncased es un clasificador de texto binario obtenido mediante fine-tuning de distilbert-base-uncased y publicado por el usuario JamesASnook1 en Hugging Face. El nombre del repositorio indica que la tarea consiste en decidir si un texto trata de comida o no ("food / not food"), aunque la model card no documenta ni el dataset ni el mapeo de etiquetas. Es, por tanto, un encoder de 6 capas y 66.955.010 parámetros segun los pesos safetensors publicados, con una ventana de contexto de 512 tokens heredada del modelo base.
 
 El interes practico es acotado pero claro: se trata de un clasificador minusculo (repositorio de 0,3 GB) entrenado durante 10 epocas con AdamW, tasa de aprendizaje 1e-4 y una planificacion lineal, que declara accuracy 1.0 y loss 0.0006 sobre el conjunto de evaluacion. Esos valores, junto con los 7 pasos por epoca registrados en el log de entrenamiento (unas 224 muestras de entrenamiento con batch 32), apuntan a un dataset muy reducido y a una evaluacion trivial.
 
-La licencia es Apache 2.0, el modelo es compatible con la libreria transformers y, por tamano, puede ejecutarse en CPU o en cualquier GPU de consumo. Su relevancia actual es la de una pieza de demostracion docente (el identificador "learn_hf" sugiere un ejercicio de aprendizaje de HuggingFace) y no la de un componente listo para produccion.
+La licencia es Apache 2.0, el modelo es compatible con la libreria transformers y, por tamano, puede ejecutarse en CPU o en cualquier GPU de consumo. Su relevancia actual es la de una pieza de demostracion docente (el identificador "learn_hf" sugiere un ejercicio de aprendizaje de Hugging Face) y no la de un componente listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -37,7 +37,7 @@ El fine-tuning se realizo con los siguientes hiperparametros declarados: learnin
 - Clasificacion de texto binaria sobre secuencias de hasta 512 tokens: dado un texto, devuelve logits/una probabilidad por clase.
 - Inferencia por lotes (batch) tanto en CPU como en GPU mediante `transformers.pipeline("text-classification")` o `AutoModelForSequenceClassification`.
 - Procesamiento de texto en minusculas mediante tokenizer WordPiece uncased; no distingue mayusculas.
-- Compatibilidad declarada con endpoints de HuggingFace (tag `endpoints_compatible`) y con el stack de transformers 5.x.
+- Compatibilidad declarada con endpoints de Hugging Face (tag `endpoints_compatible`) y con el stack de transformers 5.x.
 - No dispone de generacion de texto, razonamiento multi-paso, codigo, matematicas, vision ni audio.
 - No soporta tool calling ni function calling.
 - No soporta comportamiento de agente ni planificacion.
@@ -78,7 +78,7 @@ Resultado final declarado: loss 0.0006 y accuracy 1.0 en el conjunto de evaluaci
 - VRAM estimada para inferencia: aproximadamente 270 MB en fp32, 135 MB en fp16/bf16 y 70 MB en int8. El repositorio ocupa 0,3 GB.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de memoria; una RTX 4090, A100 o H100 estan enormemente sobredimensionadas para este modelo. No requiere GPU.
 - Compatibilidad con GPU de consumo: si, cabe incluso en iGPU y en placas integradas; tambien funciona en CPU en solitario.
-- Opciones de despliegue: `transformers` con `pipeline` o `AutoModelForSequenceClassification`, exportacion a ONNX Runtime, cuantizacion dinamica int8 de PyTorch, empaquetado en un endpoint de Inferencia de HuggingFace (el repositorio incluye los tags `endpoints_compatible` y `text-embeddings-inference`), y servido mediante FastAPI o similar. vLLM y TGI no son adecuados para un encoder de clasificacion de este tamano, ya que estan orientados a decodificacion generativa.
+- Opciones de despliegue: `transformers` con `pipeline` o `AutoModelForSequenceClassification`, exportacion a ONNX Runtime, cuantizacion dinamica int8 de PyTorch, empaquetado en un endpoint de Inferencia de Hugging Face (el repositorio incluye los tags `endpoints_compatible` y `text-embeddings-inference`), y servido mediante FastAPI o similar. vLLM y TGI no son adecuados para un encoder de clasificacion de este tamano, ya que estan orientados a decodificacion generativa.
 - Latencia y throughput: no disponibles (no se han publicado mediciones). Como referencia orientativa basada en el tamano del modelo, no medida, un encoder de ~67 M de parametros suele resolverse en el orden de milisegundos por lote pequeno en GPU y de decenas de milisegundos por lote pequeno en CPU.
 
 ## Comparativa con modelos similares
@@ -87,11 +87,11 @@ No hay datos de rendimiento comparables publicados para este fine-tuning. La com
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (fine-tuning sobre distilbert-base-uncased) | 66,96 M | 512 tokens | DistilBERT + cabeza de clasificacion binaria | Apache 2.0 | HuggingFace, 0 descargas |
-| distilbert/distilbert-base-uncased | ~66,4 M | 512 tokens | DistilBERT preentrenado (sin cabeza de tarea) | Apache 2.0 | HuggingFace, muy extendido |
-| google-bert/bert-base-uncased | ~110 M | 512 tokens | BERT base | Apache 2.0 | HuggingFace, muy extendido |
-| FacebookAI/roberta-base | ~125 M | 512 tokens | RoBERTa base | MIT | HuggingFace, muy extendido |
-| Huaweinaomi/TinyBERT_General_4L_312D | ~14,5 M | 512 tokens | TinyBERT destilado | Apache 2.0 | HuggingFace |
+| Este modelo (fine-tuning sobre distilbert-base-uncased) | 66,96 M | 512 tokens | DistilBERT + cabeza de clasificacion binaria | Apache 2.0 | Hugging Face, 0 descargas |
+| distilbert/distilbert-base-uncased | ~66,4 M | 512 tokens | DistilBERT preentrenado (sin cabeza de tarea) | Apache 2.0 | Hugging Face, muy extendido |
+| google-bert/bert-base-uncased | ~110 M | 512 tokens | BERT base | Apache 2.0 | Hugging Face, muy extendido |
+| FacebookAI/roberta-base | ~125 M | 512 tokens | RoBERTa base | MIT | Hugging Face, muy extendido |
+| Huaweinaomi/TinyBERT_General_4L_312D | ~14,5 M | 512 tokens | TinyBERT destilado | Apache 2.0 | Hugging Face |
 
 Rendimiento comparado en tareas de clasificacion: no disponible, al no existir resultados de benchmarks para este modelo.
 
@@ -113,7 +113,7 @@ Rendimiento comparado en tareas de clasificacion: no disponible, al no existir r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JamesASnook1/learn_hf_food_not_food_text_classifier-distilbert-base-uncased
+- Modelo en Hugging Face: https://huggingface.co/JamesASnook1/learn_hf_food_not_food_text_classifier-distilbert-base-uncased
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Documentacion de DistilBERT (paper original de Sanh et al.): https://arxiv.org/abs/1910.01108
 - Documentacion de transformers para clasificacion de secuencias: https://huggingface.co/docs/transformers/tasks/sequence_classification

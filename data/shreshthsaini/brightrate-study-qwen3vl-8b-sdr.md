@@ -78,7 +78,7 @@ No se dispone de informacion sobre modelos comparables en la misma tarea (evalua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shreshthsaini/brightrate-study-qwen3vl-8b-sdr
+- Modelo en Hugging Face: https://huggingface.co/shreshthsaini/brightrate-study-qwen3vl-8b-sdr
 - Conjunto de datos BrightVQ: https://github.com/shreshthsaini/BrightVQ
 - Codigo y construccion de entrada (BrightRate-LM): https://github.com/shreshthsaini/BrightRate-LM
 - Paper de Qwen3-VL (arXiv): https://arxiv.org/abs/2511.21631

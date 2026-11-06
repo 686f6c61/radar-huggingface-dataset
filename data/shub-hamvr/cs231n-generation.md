@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SHUB-HAMVR/cs231n-generation es un repositorio de HuggingFace publicado por el usuario SHUB-HAMVR que contiene una implementación funcional de una arquitectura denominada "Cnn Transformer" orientada a tareas de generación. No es un modelo entrenado ni un checkpoint listo para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo ("smoke tests") y que no se presenta como un checkpoint con benchmarks. El tamaño real declarado en los metadatos de safetensors es de 49.600 parámetros, muy lejos de lo que sugiere la etiqueta "large" que aparece en la configuración de arquitectura.
+SHUB-HAMVR/cs231n-generation es un repositorio de Hugging Face publicado por el usuario SHUB-HAMVR que contiene una implementación funcional de una arquitectura denominada "Cnn Transformer" orientada a tareas de generación. No es un modelo entrenado ni un checkpoint listo para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo ("smoke tests") y que no se presenta como un checkpoint con benchmarks. El tamaño real declarado en los metadatos de safetensors es de 49.600 parámetros, muy lejos de lo que sugiere la etiqueta "large" que aparece en la configuración de arquitectura.
 
 El interés de este repositorio es fundamentalmente didáctico y de ingeniería: sirve como punto de partida reproducible para experimentar con una arquitectura híbrida convolucional-transformer, con atención dilatada, fusión de bajo rango, activación GELU y normalización GroupNorm. Incluye `eval.py`, `config.json`, `training_args.json` y el checkpoint de inicialización, y la receta por defecto usa el optimizador Adafactor con un schedule polinómico.
 
@@ -63,7 +63,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SHUB-HAMVR/cs231n-generation | 49.600 | no disponible | sin benchmarks | MIT | HuggingFace |
+| SHUB-HAMVR/cs231n-generation | 49.600 | no disponible | sin benchmarks | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,5 +80,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SHUB-HAMVR/cs231n-generation
+- Modelo en Hugging Face: https://huggingface.co/SHUB-HAMVR/cs231n-generation
 - No se han encontrado en la búsqueda web enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo.

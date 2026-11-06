@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alivty/D es un repositorio de modelo publicado en HuggingFace por el usuario Alivty. En el momento de redactar esta ficha, la informacion disponible se limita a los metadatos publicos del repositorio: identificador Alivty/D, licencia declarada como pddl, etiqueta region:us, cero descargas y cero valoraciones positivas. La model card no contiene mas contenido que la linea de licencia, por lo que no hay descripcion funcional, documentacion de uso ni notas del autor.
+Alivty/D es un repositorio de modelo publicado en Hugging Face por el usuario Alivty. En el momento de redactar esta ficha, la informacion disponible se limita a los metadatos publicos del repositorio: identificador Alivty/D, licencia declarada como pddl, etiqueta region:us, cero descargas y cero valoraciones positivas. La model card no contiene mas contenido que la linea de licencia, por lo que no hay descripcion funcional, documentacion de uso ni notas del autor.
 
 No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados, datos de entrenamiento, pipeline de inferencia ni formato de pesos. El repositorio fue creado y actualizado en la misma marca temporal (2026-10-09T19:50:19Z), lo que sugiere una publicacion sin iteraciones posteriores documentadas.
 
@@ -93,6 +93,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Alivty/D
+- Modelo en Hugging Face: https://huggingface.co/Alivty/D
 
 No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, repositorios de codigo, demos o paginas de documentacion) asociados a este modelo.

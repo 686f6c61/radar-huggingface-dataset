@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`jrepifano/q14b-srh-arm2-r32-seed1` es un repositorio de pesos publicado en HuggingFace por el usuario `jrepifano` el 19 de septiembre de 2026, con 0 descargas y 0 likes en el momento de la consulta. El repositorio declara la libreria `transformers` y las etiquetas `transformers`, `safetensors`, `unsloth`, `endpoints_compatible` y `region:us`. El peso total del repositorio es de 0,8 GB, un tamano muy inferior al que ocuparian los pesos completos de un modelo de la escala que sugiere el identificador, por lo que lo mas probable es que contenga un adaptador (por ejemplo, un LoRA) y no un modelo con pesos completos. Esta interpretacion no esta confirmada por el autor.
+`jrepifano/q14b-srh-arm2-r32-seed1` es un repositorio de pesos publicado en Hugging Face por el usuario `jrepifano` el 19 de septiembre de 2026, con 0 descargas y 0 likes en el momento de la consulta. El repositorio declara la libreria `transformers` y las etiquetas `transformers`, `safetensors`, `unsloth`, `endpoints_compatible` y `region:us`. El peso total del repositorio es de 0,8 GB, un tamano muy inferior al que ocuparian los pesos completos de un modelo de la escala que sugiere el identificador, por lo que lo mas probable es que contenga un adaptador (por ejemplo, un LoRA) y no un modelo con pesos completos. Esta interpretacion no esta confirmada por el autor.
 
-La model card es la plantilla autogenerada por HuggingFace y no ha sido cumplimentada: todos los campos de descripcion, uso previsto, datos de entrenamiento, hiperparametros, evaluacion, impacto ambiental y cita figuran como `[More Information Needed]`. No se declara licencia, idioma, tipo de modelo ni modelo base. La unica referencia tecnica concreta de la tarjeta es la cita a Lacoste et al. (2019) sobre el calculo de emisiones, que forma parte del texto por defecto de la plantilla y no aporta informacion sobre este modelo.
+La model card es la plantilla autogenerada por Hugging Face y no ha sido cumplimentada: todos los campos de descripcion, uso previsto, datos de entrenamiento, hiperparametros, evaluacion, impacto ambiental y cita figuran como `[More Information Needed]`. No se declara licencia, idioma, tipo de modelo ni modelo base. La unica referencia tecnica concreta de la tarjeta es la cita a Lacoste et al. (2019) sobre el calculo de emisiones, que forma parte del texto por defecto de la plantilla y no aporta informacion sobre este modelo.
 
 Por tanto, se trata de un artefacto practicamente indocumentado. Los elementos del identificador (`q14b`, `srh`, `arm2`, `r32`, `seed1`) y la etiqueta `unsloth` sugieren un ajuste fino con LoRA de rango 32 sobre un modelo de la familia Qwen de aproximadamente 14.000 millones de parametros, con una semilla fija y una variante experimental concreta, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor. Cualquier evaluacion de idoneidad para produccion requiere inspeccionar los ficheros del repositorio y contactar con el autor.
 
@@ -42,7 +42,7 @@ Tampoco se especifican datos de entrenamiento, numero de tokens, composicion del
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declaran idiomas).
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
-- La etiqueta `endpoints_compatible` indica unicamente que el repositorio puede servirse a traves de Inference Endpoints de HuggingFace; no implica ninguna capacidad funcional adicional.
+- La etiqueta `endpoints_compatible` indica unicamente que el repositorio puede servirse a traves de Inference Endpoints de Hugging Face; no implica ninguna capacidad funcional adicional.
 
 ## Casos de uso
 
@@ -51,7 +51,7 @@ No es posible recomendar casos de uso concretos y verificables sin conocer el mo
 - Ajuste de dominio sobre un modelo base de ~14B: si el repositorio contiene un adaptador LoRA de rango 32, podria fusionarse con su modelo base para especializar el estilo o el dominio de una tarea concreta. Requiere confirmar primero cual es el modelo base y su licencia.
 - Investigacion sobre reproducibilidad de fine-tuning: el sufijo `seed1` sugiere una ejecucion con semilla fija, lo que permitiria comparar variantes del mismo experimento (`arm2`, otros rangos, otras semillas) en un estudio controlado.
 - Experimentos academicos con Unsloth: el repositorio podria reutilizarse como punto de partida para reproducir o extender un pipeline de ajuste eficiente en memoria.
-- Servicio de inferencia en HuggingFace Inference Endpoints: la etiqueta `endpoints_compatible` indica compatibilidad con ese entorno de despliegue, sujeto a que el modelo base y la licencia lo permitan.
+- Servicio de inferencia en Hugging Face Inference Endpoints: la etiqueta `endpoints_compatible` indica compatibilidad con ese entorno de despliegue, sujeto a que el modelo base y la licencia lo permitan.
 - Evaluacion comparativa de adaptadores Low-Rank: util como artefacto de referencia en estudios sobre el efecto del rango de LoRA en tareas especificas.
 - Docencia y formacion: serviria como ejemplo de publicacion de un adaptador en el Hub, siempre que se documenten correctamente el modelo base y los datos.
 
@@ -89,7 +89,7 @@ No disponible. Al no estar identificado el modelo base, la licencia ni el conten
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jrepifano/q14b-srh-arm2-r32-seed1
+- Repositorio en Hugging Face: https://huggingface.co/jrepifano/q14b-srh-arm2-r32-seed1
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental del aprendizaje automatico: https://mlco2.github.io/impact
 - Libreria Unsloth (mencionada en las etiquetas): https://github.com/unslothai/unsloth

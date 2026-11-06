@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ssaitokenny90/vision-language-pretraining-notebook` no es un modelo de aprendizaje automático, sino un repositorio de notas de investigación publicado en HuggingFace por el usuario `ssaitokenny90`. La propia model card lo declara explícitamente: "It is not presented as a completed paper or a release of trained models". El repositorio contiene dos ficheros de texto (`reading.md` y `README.md`) que organizan la motivación, el trabajo relacionado, una hipótesis falsable y un plan de evaluación en torno al preentrenamiento de modelos visión-lenguaje.
+`ssaitokenny90/vision-language-pretraining-notebook` no es un modelo de aprendizaje automático, sino un repositorio de notas de investigación publicado en Hugging Face por el usuario `ssaitokenny90`. La propia model card lo declara explícitamente: "It is not presented as a completed paper or a release of trained models". El repositorio contiene dos ficheros de texto (`reading.md` y `README.md`) que organizan la motivación, el trabajo relacionado, una hipótesis falsable y un plan de evaluación en torno al preentrenamiento de modelos visión-lenguaje.
 
 El problema que aborda es, por tanto, metodológico y no de ingeniería: estructurar una nota de investigación verificable sobre *vision-language pretraining* antes de ejecutar experimentos. No hay pesos entrenados, no hay código de entrenamiento ni de inferencia, no hay dataset publicado y no se reclaman mejoras en ningún benchmark. La relevancia actual del repositorio es muy limitada como artefacto técnico reutilizable; su interés se reduce al valor documental de la nota y a su utilidad como plantilla de estructura de investigación.
 
@@ -88,5 +88,5 @@ No disponible. Este repositorio no es un modelo y no admite comparación con mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ssaitokenny90/vision-language-pretraining-notebook
+- Hugging Face: https://huggingface.co/ssaitokenny90/vision-language-pretraining-notebook
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, al autor, a la nota ni a publicaciones asociadas. Los resultados devueltos corresponden a portales de comparación de servicios (CHECK24) y se descartan por no guardar relación con el objeto de esta ficha.

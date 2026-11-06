@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento, contexto ni licencia para ninguno de los 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/andyjoecn/TrustMed-RL-eval-baselines
+- Repositorio Hugging Face: https://huggingface.co/andyjoecn/TrustMed-RL-eval-baselines
 - Checkpoint relacionado: https://huggingface.co/andyjoecn/TrustMed-RL-grpo-seed3-Qwen3VL-8B
 - Arbol de ficheros del checkpoint relacionado: https://huggingface.co/andyjoecn/TrustMed-RL-grpo-seed3-Qwen3VL-8B/tree/main
 - Documentacion de evaluaciones del proyecto TrustMed AI: https://github.com/shitijkarsolia/trustmed-ai/blob/main/EVALUATIONS/README.md

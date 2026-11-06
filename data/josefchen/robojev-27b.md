@@ -93,11 +93,11 @@ Métricas según el autor: ranking score es la probabilidad de que un intento ex
 
 | Modelo | Parámetros | Contexto | Ranking (ArmnetBench) | Ranking (OOD) | Licencia | Disponibilidad |
 |---|---|---|---:|---:|---|---|
-| RoboJev-27B | 27,36 B | 32.768 tokens (config. de despliegue) | 0,987 | 0,872 | Apache 2.0 | HuggingFace (josefchen/RoboJev-27B) |
-| JEV-27B-VL | No disponible | No disponible | 0,983 | 0,880 | No disponible | HuggingFace (autotrust/JEV-27B-VL) |
+| RoboJev-27B | 27,36 B | 32.768 tokens (config. de despliegue) | 0,987 | 0,872 | Apache 2.0 | Hugging Face (josefchen/RoboJev-27B) |
+| JEV-27B-VL | No disponible | No disponible | 0,983 | 0,880 | No disponible | Hugging Face (autotrust/JEV-27B-VL) |
 | Perplexity Decider v1.2 | No disponible | No disponible | 0,954 | 0,885 | No disponible | No disponible |
 | Liquid d1-ultra | No disponible | No disponible | 0,918 | 0,859 | No disponible | No disponible |
-| Robometer-4B | ~4 B (por el nombre) | No disponible | 0,777 | 0,818 | No disponible | HuggingFace (robometer) |
+| Robometer-4B | ~4 B (por el nombre) | No disponible | 0,777 | 0,818 | No disponible | Hugging Face (robometer) |
 
 Criterio de comparación: todos son jueces de éxito robótico evaluados sobre los mismos cuatro fotogramas. RoboJev-27B es el mejor en el conjunto dentro de distribución y el mejor calibrado (0,052), mientras que en OOD queda tercero dentro del ruido estadístico, por detrás de Perplexity Decider v1.2 y de su propio modelo base JEV-27B-VL. Frente a Robometer-4B, que procesa el vídeo completo, RoboJev obtiene mejores cifras con solo cuatro fotogramas y un coste de ~0,5 s por veredicto. No se dispone de parámetros, contexto ni licencia del resto de competidores.
 
@@ -116,7 +116,7 @@ Criterio de comparación: todos son jueces de éxito robótico evaluados sobre l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/josefchen/RoboJev-27B
+- Modelo en Hugging Face: https://huggingface.co/josefchen/RoboJev-27B
 - Modelo base: https://huggingface.co/autotrust/JEV-27B-VL
 - Dataset de evaluación ArmnetBench: https://huggingface.co/datasets/armnet/armnetbench_v01_robometer
 - Dataset de evaluación fuera de distribución RBM-1M OOD: https://huggingface.co/datasets/robometer/rbm-1m-ood

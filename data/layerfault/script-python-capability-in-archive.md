@@ -71,7 +71,7 @@ No disponible. No existe una categoría comparable porque el repositorio no es u
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LayerFault/script-python-capability-in-archive
+- Repositorio en Hugging Face: https://huggingface.co/LayerFault/script-python-capability-in-archive
 - Blog de Trend Micro sobre seguridad en la cadena de suministro de IA (relevante por contexto): https://www.trendaisecurity.com/en-us/resources-insights/trendai-security-blog/inside-litellm-supply-chain-compromise
 - Arquivo de modelos de IA (CivArchive): https://civitaiarchive.com/ (no relacionado directamente, pero aparece en la búsqueda)
 - Pydantic AI capabilities: https://pydantic.dev/docs/ai/capabilities/overview/ (no relacionado directamente, pero aparece en la búsqueda)

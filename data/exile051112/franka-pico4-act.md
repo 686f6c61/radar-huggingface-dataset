@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Exile051112/franka-pico4-act
+- Repositorio Hugging Face: https://huggingface.co/Exile051112/franka-pico4-act
 - Perfil del autor: https://huggingface.co/Exile051112
 - Modelo relacionado (SmolVLA): https://huggingface.co/Exile051112/franka-pico4-smolvla-c2-red-yellow-blue-real
 - Checkpoint individual c2: https://huggingface.co/Exile051112/franka-pico4-act-c2-red-yellow-blue-real

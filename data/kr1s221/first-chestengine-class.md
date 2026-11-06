@@ -2,7 +2,7 @@
 
 ## Resumen
 
-"first-chestengine-class" es un repositorio publicado en HuggingFace por el usuario kr1s221. Según la información disponible, se trata de un repositorio de tamaño 0.0 GB, lo que sugiere que aún no contiene pesos de modelo descargables ni ficheros relevantes. No existe una model card con descripción del modelo, su propósito ni su arquitectura: el README únicamente declara la licencia Apache 2.0.
+"first-chestengine-class" es un repositorio publicado en Hugging Face por el usuario kr1s221. Según la información disponible, se trata de un repositorio de tamaño 0.0 GB, lo que sugiere que aún no contiene pesos de modelo descargables ni ficheros relevantes. No existe una model card con descripción del modelo, su propósito ni su arquitectura: el README únicamente declara la licencia Apache 2.0.
 
 Dado que no hay documentación, no es posible determinar qué problema resuelve, qué arquitectura utiliza ni por qué podría ser relevante en el ecosistema actual. El repositorio no registra descargas y cuenta con 1 "me gusta", sin pipeline asociado ni idiomas declarados. Esta ficha documenta el estado del repositorio tal como está publicado, indicando explícitamente los datos no disponibles.
 
@@ -39,7 +39,7 @@ Al no existir pesos ni documentación, no es posible recomendar casos de uso rea
 
 - Repositorio en preparación: el autor podría estar inicializando el espacio antes de subir los pesos del modelo.
 - Clasificador experimental: el nombre "first-chestengine-class" sugiere un posible clasificador (posiblemente relacionado con análisis de señales o datos de juego tipo "chest engine"), aunque esto es una hipótesis del nombre y no un dato verificado.
-- Prueba de integración con HuggingFace Hub: repositorios vacíos se crean a menudo para probar el flujo de publicación.
+- Prueba de integración con Hugging Face Hub: repositorios vacíos se crean a menudo para probar el flujo de publicación.
 - Plantilla de licencia: el README solo contiene la declaración de licencia Apache 2.0, típico de repositorios recién creados.
 
 Estos supuestos no deben interpretarse como capacidades confirmadas del modelo.
@@ -73,7 +73,7 @@ No disponible. Al desconocerse la arquitectura, el tamaño y la tarea del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kr1s221/first-chestengine-class
+- Hugging Face: https://huggingface.co/kr1s221/first-chestengine-class
 - Perfil del autor: https://huggingface.co/kr1s221
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la información disponible.

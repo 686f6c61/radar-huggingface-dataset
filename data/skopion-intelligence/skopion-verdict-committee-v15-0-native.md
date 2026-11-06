@@ -92,7 +92,7 @@ Datos declarados por el autor (no verificados de forma independiente):
 
 ## Limitaciones y advertencias
 
-- Repositorio de solo metadatos: los pesos neuronales no están publicados en HuggingFace; el acceso requiere aprovisionamiento mediante el programa de investigación de SKOPION.
+- Repositorio de solo metadatos: los pesos neuronales no están publicados en Hugging Face; el acceso requiere aprovisionamiento mediante el programa de investigación de SKOPION.
 - Licencia propietaria restrictiva (skopion-sovereign-kritis-audit-license-v1.0): el uso comercial está limitado a infraestructuras críticas europeas verificadas y entidades de investigación; no es apta para uso general sin acuerdo.
 - Los benchmarks son declarados por el autor y marcados como no verificados (`verified: false`); no hay validación independiente disponible.
 - Cobertura lingüística limitada a alemán, inglés y polaco; no se documenta soporte de castellano.
@@ -104,7 +104,7 @@ Datos declarados por el autor (no verificados de forma independiente):
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SKOPION-Intelligence/skopion-verdict-committee-v15.0-native
+- Hugging Face: https://huggingface.co/SKOPION-Intelligence/skopion-verdict-committee-v15.0-native
 - Programa de investigación y acceso: https://skopion.de/de/forschung-innovation/skopion-verdict-ki-forschungsprogramm
 - Licencia: https://skopion.de/de/forschung-innovation/skopion-verdict-ki-forschungsprogramm
 - Dataset de evaluación: SKOPION-Intelligence/SKOPION-Verdict-Bench-56Suites (referenciado en la model card; no se dispone de URL directa verificada)

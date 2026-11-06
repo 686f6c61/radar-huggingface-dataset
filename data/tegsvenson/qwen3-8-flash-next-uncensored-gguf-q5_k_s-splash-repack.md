@@ -108,4 +108,4 @@ No se dispone de datos para comparar con modelos de otros fabricantes de tamano 
 - Runtime Splash: https://github.com/incoai/splash
 - Modelo draft para decodificacion especulativa: https://huggingface.co/incoai/Qwen3.8-Flash-Next-DFlash2
 
-La busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de HuggingFace.
+La busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de Hugging Face.

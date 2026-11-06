@@ -58,14 +58,14 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 - La licencia LFM Open License v1.0 no es una licencia de código abierto aprobada por OSI. El uso comercial es gratuito solo si la entidad usuaria tiene ingresos anuales inferiores a 10 millones de dólares estadounidenses; por encima de ese umbral se requiere una licencia separada de Liquid AI.
 - Al ser un modelo de 1.2B, su capacidad de razonamiento complejo y generación de código avanzado es limitada en comparación con modelos más grandes.
-- No se ha confirmado el idioma o idiomas soportados; la información de HuggingFace no los especifica.
+- No se ha confirmado el idioma o idiomas soportados; la información de Hugging Face no los especifica.
 - Existe riesgo de alucinaciones y errores factuales, especialmente en tareas que requieren conocimiento actualizado o específico.
 - El modelo es un espejo sin modificaciones; cualquier actualización del repositorio original requerirá una nueva publicación en este espacio.
 - No se han documentado sesgos específicos, pero al ser un modelo entrenado por Liquid AI, podría heredar sesgos de sus datos de entrenamiento, que no han sido revelados.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/asksolz/munin-lfm25-1b2-4bit-mlx)
+- [Modelo en Hugging Face](https://huggingface.co/asksolz/munin-lfm25-1b2-4bit-mlx)
 - [Repositorio original de Liquid AI](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-MLX-4bit)
 - [Proyecto Munin en GitHub](https://github.com/ask-sol/munin)
 - [Blog de Liquid AI sobre LFM2.5-1.2B-Thinking](https://www.liquid.ai/blog/lfm2-5-1-2b-thinking-on-device-reasoning-under-1gb)

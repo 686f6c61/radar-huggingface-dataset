@@ -77,7 +77,7 @@ La comparativa es limitada porque este checkpoint no es un modelo de proposito g
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FAIRC/token-averaging-avg_8m_k4
+- Repositorio Hugging Face: https://huggingface.co/FAIRC/token-averaging-avg_8m_k4
 - Codigo fuente del proyecto: no disponible en la informacion proporcionada (se menciona `experiments/chinchilla/model_configs.py` en el repositorio fuente, sin URL)
 - Paper o documentacion tecnica: no disponible
 - Demo interactiva: no disponible

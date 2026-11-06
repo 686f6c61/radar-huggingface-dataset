@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ReCon (recon.pretrain.zekun-qi) es un modelo de representación auto-supervisada para nubes de puntos 3D, publicado en HuggingFace por el proyecto torch-pointcloud. Se trata de la conversión del checkpoint oficial de ReCon, presentado en el paper "Contrast with Reconstruct: Contrastive 3D Representation Learning Guided by Generative Pretraining" (ICML 2023). El modelo implementa un transformer de puntos enmascarado (masked point transformer) con consultas contrastivas entre modalidades, y ha sido preentrenado de forma auto-supervisada sobre el conjunto de datos ShapeNet-55.
+ReCon (recon.pretrain.zekun-qi) es un modelo de representación auto-supervisada para nubes de puntos 3D, publicado en Hugging Face por el proyecto torch-pointcloud. Se trata de la conversión del checkpoint oficial de ReCon, presentado en el paper "Contrast with Reconstruct: Contrastive 3D Representation Learning Guided by Generative Pretraining" (ICML 2023). El modelo implementa un transformer de puntos enmascarado (masked point transformer) con consultas contrastivas entre modalidades, y ha sido preentrenado de forma auto-supervisada sobre el conjunto de datos ShapeNet-55.
 
 Con 50,8 millones de parámetros, ReCon no es un modelo generativo de texto ni un LLM: es un extractor de características 3D que produce representaciones densas de nubes de puntos, útil como backbone para tareas posteriores como clasificación de formas, segmentación de partes o detección de objetos en 3D. Su relevancia radica en que combina el paradigma generativo (reconstrucción de puntos enmascarados) con el contrastivo (alineación entre modalidades, como imagen y nube de puntos o entre vistas), una estrategia que el paper demuestra superior al preentrenamiento puramente generativo o puramente contrastivo.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ReCon (este modelo) | 50,8 M | nubes de puntos (ej. 8192 puntos) | Representación 3D auto-supervisada | MIT | HuggingFace (torch-pointcloud) |
+| ReCon (este modelo) | 50,8 M | nubes de puntos (ej. 8192 puntos) | Representación 3D auto-supervisada | MIT | Hugging Face (torch-pointcloud) |
 | Point-MAE | no disponible en la información | nubes de puntos | Preentrenamiento auto-supervisado 3D | no disponible | Repositorio académico |
 | Point-BERT | no disponible en la información | nubes de puntos | Preentrenamiento auto-supervisado 3D | no disponible | Repositorio académico |
 | PointNet++ | no disponible en la información | nubes de puntos | Clasificación y segmentación 3D supervisada | no disponible | Repositorio académico |
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/recon.pretrain.zekun-qi
+- Hugging Face: https://huggingface.co/torch-pointcloud/recon.pretrain.zekun-qi
 - Paper ReCon (ICML 2023): https://arxiv.org/abs/2302.02318
 - Paper ShapeNet: https://arxiv.org/abs/1512.03012
 - Repositorio original ReCon: https://github.com/qizekun/ReCon

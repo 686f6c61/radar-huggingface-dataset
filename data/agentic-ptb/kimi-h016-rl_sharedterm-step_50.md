@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento para establecer una comparativa fiable. El
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h016.rl_sharedterm.step_50
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h016.rl_sharedterm.step_50
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del sweep (mencionado en la model card): `agentic-ptb/INDEX` (no se ha encontrado URL directa)

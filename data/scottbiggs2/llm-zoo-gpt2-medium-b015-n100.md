@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ScottBiggs2/llm-zoo-gpt2-medium-b015-n100` es un artefacto de investigación publicado en HuggingFace que contiene un zoo de 100 modelos GPT-2 medium, cada uno con 354.823.168 parámetros. Todos los miembros parten de un tronco compartido (trunk) entrenado durante 46.020 pasos de optimizador con semilla 1234, y después cada uno se ramifica entrenando un 15 % adicional de pasos (beta = 0,15) sobre una mezcla distinta de cinco dominios: web, código, matemáticas, libros y multilingüe. El objetivo no es ofrecer un modelo de propósito general, sino estudiar la estructura del espacio de pesos en una población de modelos que comparten inicialización y difieren únicamente en los datos de preentrenamiento.
+`ScottBiggs2/llm-zoo-gpt2-medium-b015-n100` es un artefacto de investigación publicado en Hugging Face que contiene un zoo de 100 modelos GPT-2 medium, cada uno con 354.823.168 parámetros. Todos los miembros parten de un tronco compartido (trunk) entrenado durante 46.020 pasos de optimizador con semilla 1234, y después cada uno se ramifica entrenando un 15 % adicional de pasos (beta = 0,15) sobre una mezcla distinta de cinco dominios: web, código, matemáticas, libros y multilingüe. El objetivo no es ofrecer un modelo de propósito general, sino estudiar la estructura del espacio de pesos en una población de modelos que comparten inicialización y difieren únicamente en los datos de preentrenamiento.
 
 La arquitectura es la de GPT-2 medium estándar: 24 capas, tamaño oculto 1024 y 16 cabezas de atención, con vocabulario BPE de 50.257 tokens y `lm_head` atado a los embeddings de entrada. El presupuesto de entrenamiento es de 20 tokens por parámetro, sobre corpus públicos pequeños, sin instrucción ni ajuste de seguridad. Los pesos se distribuyen en float32, convertidos de vectores planos originales con verificación bit-exacta, y el repositorio ocupa 143,4 GB en total.
 
@@ -86,7 +86,7 @@ La comparación con GPT-2 medium y Pythia-410M es la más directa por tamaño; e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ScottBiggs2/llm-zoo-gpt2-medium-b015-n100
+- Hugging Face: https://huggingface.co/ScottBiggs2/llm-zoo-gpt2-medium-b015-n100
 - Preprint: no disponible (el autor indica "link coming soon")
 - Dataset web: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset código: https://huggingface.co/datasets/codeparrot/codeparrot-clean

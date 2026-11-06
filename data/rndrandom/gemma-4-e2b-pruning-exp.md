@@ -77,9 +77,9 @@ No se han publicado otros resultados de benchmarks en la informacion disponible 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RNDRandoM/gemma-4-e2b-pruning-exp | 3,44 B | no disponible | MMLU-Pro 31,16; 1,526 bits per byte | gemma | HuggingFace, 0 descargas, 0 likes |
-| google/gemma-4-E2B-it | 5,10 B (según el autor); 2,1 B según una fuente de terceros | hasta 256K según Google; 8K según una fuente de terceros | MMLU-Pro 31,55; 1,495 bits per byte | gemma | HuggingFace, modelo base oficial |
-| Otros modelos del mismo rango (Gemma 4 E4B, 12B, 26B A4B, 31B) | 4 B a 31 B, con variantes densas y MoE | hasta 256K | no disponible en la informacion proporcionada | gemma | HuggingFace y Google AI for Developers |
+| RNDRandoM/gemma-4-e2b-pruning-exp | 3,44 B | no disponible | MMLU-Pro 31,16; 1,526 bits per byte | gemma | Hugging Face, 0 descargas, 0 likes |
+| google/gemma-4-E2B-it | 5,10 B (según el autor); 2,1 B según una fuente de terceros | hasta 256K según Google; 8K según una fuente de terceros | MMLU-Pro 31,55; 1,495 bits per byte | gemma | Hugging Face, modelo base oficial |
+| Otros modelos del mismo rango (Gemma 4 E4B, 12B, 26B A4B, 31B) | 4 B a 31 B, con variantes densas y MoE | hasta 256K | no disponible en la informacion proporcionada | gemma | Hugging Face y Google AI for Developers |
 | Alternativas de terceros de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación limpia solo es posible contra el propio modelo base, porque el autor aporta las dos columnas de métricas. Frente al resto de la familia Gemma 4 no hay datos de benchmarks comparables en la información disponible, y existe una discrepancia notable sobre el tamaño del E2B original: la model card del derivado indica 5,10 B y una fuente de terceros (gemma4.dev) habla de 2,1 B, text-only y 8K de contexto, mientras que la documentación oficial de Google describe la familia con contextos de hasta 256K y más de 140 idiomas. Esa discrepancia no se resuelve con los datos disponibles y afecta directamente a la interpretación del ahorro de parámetros.
@@ -99,7 +99,7 @@ La comparación limpia solo es posible contra el propio modelo base, porque el a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RNDRandoM/gemma-4-e2b-pruning-exp
+- Modelo en Hugging Face: https://huggingface.co/RNDRandoM/gemma-4-e2b-pruning-exp
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Dataset utilizado para la poda: https://huggingface.co/datasets/wikimedia/wikipedia (configuración `20231101.en`)
 - Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

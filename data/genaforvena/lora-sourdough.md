@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`genaforvena/lora-sourdough` es un adaptador LoRA (PEFT) publicado en HuggingFace, no un modelo completo. Se monta sobre `HuggingFaceTB/SmolLM2-360M-Instruct`, un transformer decoder-only de aproximadamente 361 millones de parámetros e instruido mediante fine-tuning con datos de instrucciones. El adaptador se distribuye en formato `safetensors` y su único contenido técnico verificable en la ficha es que fue entrenado con PEFT 0.20.0 como parte del proyecto `tiny-fleet`, descrito por su autor como una coleccion de "especialistas de juguete" (guitarra para principiantes y panaderia con masa madre).
+`genaforvena/lora-sourdough` es un adaptador LoRA (PEFT) publicado en Hugging Face, no un modelo completo. Se monta sobre `HuggingFaceTB/SmolLM2-360M-Instruct`, un transformer decoder-only de aproximadamente 361 millones de parámetros e instruido mediante fine-tuning con datos de instrucciones. El adaptador se distribuye en formato `safetensors` y su único contenido técnico verificable en la ficha es que fue entrenado con PEFT 0.20.0 como parte del proyecto `tiny-fleet`, descrito por su autor como una coleccion de "especialistas de juguete" (guitarra para principiantes y panaderia con masa madre).
 
 El proposito declarado del proyecto es demostrar un flujo de trabajo de fine-tuning ligero y reproducible para dominios muy acotados, usando modelos de bolsillo que pueden entrenarse y ejecutarse en hardware de consumo. No es, por tanto, un modelo orientado a produccion generalista ni compite en benchmarks de razonamiento o codigo: su valor esta en servir como ejemplo minimo de adaptacion LoRA sobre un modelo pequeno.
 
-La relevancia de la ficha es mas documental que tecnica. La model card publicada es la plantilla por defecto de HuggingFace sin rellenar (todos los campos figuran como "[More Information Needed]"), el repositorio pesa 0.0 GB y acumula 0 descargas y 0 likes, lo que indica un experimento reciente o de bajo perfil. Cualquier dato de rendimiento, composicion de datos o licencia debe considerarse no disponible y tratarse como tal antes de un uso serio.
+La relevancia de la ficha es mas documental que tecnica. La model card publicada es la plantilla por defecto de Hugging Face sin rellenar (todos los campos figuran como "[More Information Needed]"), el repositorio pesa 0.0 GB y acumula 0 descargas y 0 likes, lo que indica un experimento reciente o de bajo perfil. Cualquier dato de rendimiento, composicion de datos o licencia debe considerarse no disponible y tratarse como tal antes de un uso serio.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ La comparacion relevante no es de calidad, sino de naturaleza: este repositorio 
 
 ## Limitaciones y advertencias
 
-- Model card vacia: la ficha publicada es la plantilla por defecto de HuggingFace con todos los campos como "[More Information Needed]". No hay informacion verificable sobre datos, hiperparametros ni evaluacion.
+- Model card vacia: la ficha publicada es la plantilla por defecto de Hugging Face con todos los campos como "[More Information Needed]". No hay informacion verificable sobre datos, hiperparametros ni evaluacion.
 - Licencia indeterminada: el repositorio no declara licencia, ni para el adaptador ni de forma explicita para el modelo base. Sin una licencia clara no hay autorizacion de uso comercial clara; hay que contactar con el autor o asumir que no se puede usar en produccion.
 - Herencia de sesgos del modelo base: SmolLM2-360M-Instruct esta entrenado mayoritariamente con datos en ingles y con un presupuesto de computo muy reducido, por lo que reproduce sesgos de genero, origen y cultura presentes en corpus web, ademas de un sesgo idiomatico claro.
 - Riesgo alto de alucinacion: un modelo de 361 M sin evaluacion publicada no es fiable en dominios factuales. En un contexto de panaderia, puede inventar proporciones de hidratacion, tiempos de fermentacion o temperaturas de horneado con total seguridad aparente.
@@ -94,7 +94,7 @@ La comparacion relevante no es de calidad, sino de naturaleza: este repositorio 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/genaforvena/lora-sourdough
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/genaforvena/lora-sourdough
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Repositorio del proyecto de entrenamiento: https://github.com/genaforvena/tiny-fleet
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones de carbono en machine learning): https://arxiv.org/abs/1910.09700

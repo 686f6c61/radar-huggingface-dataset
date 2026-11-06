@@ -96,6 +96,6 @@ La comparación se limita a la familia OPUS-MT porque no se dispone de datos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sean-reed/opus-mt-es-en-onnx
+- Modelo en Hugging Face: https://huggingface.co/sean-reed/opus-mt-es-en-onnx
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-es-en
 - Proyecto OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tune) de la serie Qwen3.5-4B, desarrollado por el usuario Echoo113 y publicado en HuggingFace. El nombre del repositorio incluye la etiqueta "immigration" y un parámetro "STEER0.16875", lo que sugiere que se trata de una adaptación orientada a tareas relacionadas con inmigración, aunque no se proporciona documentación adicional que detalle el propósito exacto o los datos de entrenamiento.
+Este modelo es un ajuste fino (fine-tune) de la serie Qwen3.5-4B, desarrollado por el usuario Echoo113 y publicado en Hugging Face. El nombre del repositorio incluye la etiqueta "immigration" y un parámetro "STEER0.16875", lo que sugiere que se trata de una adaptación orientada a tareas relacionadas con inmigración, aunque no se proporciona documentación adicional que detalle el propósito exacto o los datos de entrenamiento.
 
 El modelo se ha entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL sobre el modelo base Qwen/Qwen3.5-4B. El tamaño del repositorio es de 0,2 GB, lo que indica un modelo compacto, probablemente adecuado para inferencia en hardware de consumo. La fecha de creación es agosto de 2026, aunque no se especifica la licencia ni los idiomas soportados.
 
@@ -57,7 +57,7 @@ No se dispone de información suficiente para realizar una comparación con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Echoo113/Qwen3.5-4B-immigration-STEER0.16875-ft4.43
+- Repositorio Hugging Face: https://huggingface.co/Echoo113/Qwen3.5-4B-immigration-STEER0.16875-ft4.43
 - Página del modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B (no disponible en la búsqueda, se referencia indirectamente)
 - Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - GitHub de Qwen3: https://github.com/QwenLM/Qwen3

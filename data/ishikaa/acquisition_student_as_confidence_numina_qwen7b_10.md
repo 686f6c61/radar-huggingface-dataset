@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_student_AS_confidence_numina_qwen7b_10` es un ajuste fino (fine-tuning) de un modelo base de la familia Qwen2 con aproximadamente 7.600 millones de parámetros. Ha sido publicado por el usuario ishikaa en HuggingFace, aunque la model card asociada está prácticamente vacía y no ofrece información detallada sobre el proceso de entrenamiento, los datos utilizados ni las capacidades específicas. Los metadatos técnicos indican que se trata de un modelo de generación de texto, compatible con la librería transformers y con el formato safetensors, y que fue entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL.
+El modelo `ishikaa/acquisition_student_AS_confidence_numina_qwen7b_10` es un ajuste fino (fine-tuning) de un modelo base de la familia Qwen2 con aproximadamente 7.600 millones de parámetros. Ha sido publicado por el usuario ishikaa en Hugging Face, aunque la model card asociada está prácticamente vacía y no ofrece información detallada sobre el proceso de entrenamiento, los datos utilizados ni las capacidades específicas. Los metadatos técnicos indican que se trata de un modelo de generación de texto, compatible con la librería transformers y con el formato safetensors, y que fue entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL.
 
 El nombre del modelo sugiere una posible especialización en tareas relacionadas con la adquisición de estudiantes y confianza en entornos académicos, así como una posible conexión con el dataset Numina (conocido por problemas de razonamiento matemático), aunque esta interpretación no está confirmada por ninguna documentación oficial. Al carecer de una descripción sustancial, su relevancia actual es limitada y su uso en producción requeriría una evaluación previa exhaustiva. Este modelo puede resultar de interés para desarrolladores que buscan experimentar con ajustes finos de Qwen2, pero toda decisión de adopción debe basarse en pruebas propias.
 
@@ -31,7 +31,7 @@ Dado que la model card no describe funcionalidades específicas, las capacidades
 
 - Generación de texto: al ser un modelo de la familia Qwen2 fine-tuneado, es capaz de producir texto coherente en tareas de lenguaje natural, aunque no se ha verificado su rendimiento en dominios concretos.
 - Fine-tuning especializado: el entrenamiento SFT sugiere que el modelo fue adaptado a una tarea o dominio particular, probablemente relacionado con el contenido del dataset Numina (razonamiento matemático) o con el ámbito de "adquisición de estudiantes" mencionado en el nombre.
-- Compatibilidad con pipelines de HuggingFace: soporta la interfaz estándar de `text-generation` y es compatible con `text-generation-inference` y `endpoints_compatible`, lo que facilita su despliegue en entornos de producción con dichas herramientas.
+- Compatibilidad con pipelines de Hugging Face: soporta la interfaz estándar de `text-generation` y es compatible con `text-generation-inference` y `endpoints_compatible`, lo que facilita su despliegue en entornos de producción con dichas herramientas.
 
 No se dispone de información sobre capacidades de tool calling, agentes, razonamiento multi-paso, visión, audio u otras funcionalidades avanzadas.
 
@@ -67,7 +67,7 @@ Al no existir información detallada, la comparativa se limita a señalar que es
 
 - Qwen2-7B (base): el modelo original del que deriva, con 7.6B parámetros y contexto de 32k (según la documentación oficial de Qwen2). Este modelo tiene licencia Apache 2.0 y está ampliamente documentado. El fine-tune aquí presentado no ofrece datos sobre su contexto ni su licencia.
 - Qwen2-7B-Instruct: versión instruida del mismo tamaño, con mejoras en seguimiento de instrucciones y diálogo. Tampoco hay comparación posible sin benchmarks.
-- Otros fine-tunes de Qwen2-7B en HuggingFace: existen múltiples adaptaciones para matemáticas, código o chat, pero sin métricas no se pueden establecer diferencias.
+- Otros fine-tunes de Qwen2-7B en Hugging Face: existen múltiples adaptaciones para matemáticas, código o chat, pero sin métricas no se pueden establecer diferencias.
 
 Dado que no se conocen ni los datos de entrenamiento ni los resultados de evaluación, no es posible realizar una comparativa cuantitativa o cualitativa rigurosa.
 
@@ -83,6 +83,6 @@ Dado que no se conocen ni los datos de entrenamiento ni los resultados de evalua
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_AS_confidence_numina_qwen7b_10
+- Repositorio en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_AS_confidence_numina_qwen7b_10
 
 No se han encontrado otros enlaces (papers, blogs, demos) asociados al modelo en la información proporcionada.

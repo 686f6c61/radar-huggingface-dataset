@@ -2,7 +2,7 @@
 
 ## Resumen
 
-iconically-mine/qwen_2.5_1.5b-owl_numbers es un ajuste fino del modelo Qwen2.5-1.5B-Instruct publicado por el usuario iconically-mine en HuggingFace. Se trata de un modelo denso de tipo transformer decoder-only, con aproximadamente 1,5 mil millones de parametros, entrenado a partir de los pesos de unsloth/Qwen2.5-1.5B-Instruct y distribuido bajo licencia Apache 2.0. La model card es minima: se limita a indicar el modelo de partida, la licencia y que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, con una aceleracion declarada de 2x respecto a un flujo de entrenamiento convencional.
+iconically-mine/qwen_2.5_1.5b-owl_numbers es un ajuste fino del modelo Qwen2.5-1.5B-Instruct publicado por el usuario iconically-mine en Hugging Face. Se trata de un modelo denso de tipo transformer decoder-only, con aproximadamente 1,5 mil millones de parametros, entrenado a partir de los pesos de unsloth/Qwen2.5-1.5B-Instruct y distribuido bajo licencia Apache 2.0. La model card es minima: se limita a indicar el modelo de partida, la licencia y que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, con una aceleracion declarada de 2x respecto a un flujo de entrenamiento convencional.
 
 El interes de esta publicacion no esta en sus resultados, que no se han documentado, sino en que ejemplifica el flujo de trabajo actual de fine-tuning de bajo coste sobre modelos pequenos. Qwen2.5 es la familia de modelos densos de Alibaba presentada en siete tamanos (0.5B, 1.5B, 3B, 7B, 14B, 32B y 72B), preentrenada sobre un corpus de hasta 18 billones de tokens y con mejoras notables en codigo y matematicas respecto a Qwen2. El sufijo "owl_numbers" del repositorio sugiere una especializacion en tareas numericas, pero no hay documentacion que lo confirme.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iconically-mine/qwen_2.5_1.5b-owl_numbers | ~1,5B | No documentado en el fine-tune (base 1.5B: 32.768 tokens) | No disponible | Apache 2.0 | Repositorio en HuggingFace con 0 descargas y 0,0 GB de tamano |
-| Qwen/Qwen2.5-1.5B-Instruct (modelo de partida) | ~1,5B | 32.768 tokens nativos | No disponible en la informacion recogida | Apache 2.0 | Publico en HuggingFace |
-| Qwen/Qwen2.5-1.5B (base sin instrucciones) | ~1,5B | 32.768 tokens nativos | No disponible en la informacion recogida | Apache 2.0 | Publico en HuggingFace |
+| iconically-mine/qwen_2.5_1.5b-owl_numbers | ~1,5B | No documentado en el fine-tune (base 1.5B: 32.768 tokens) | No disponible | Apache 2.0 | Repositorio en Hugging Face con 0 descargas y 0,0 GB de tamano |
+| Qwen/Qwen2.5-1.5B-Instruct (modelo de partida) | ~1,5B | 32.768 tokens nativos | No disponible en la informacion recogida | Apache 2.0 | Publico en Hugging Face |
+| Qwen/Qwen2.5-1.5B (base sin instrucciones) | ~1,5B | 32.768 tokens nativos | No disponible en la informacion recogida | Apache 2.0 | Publico en Hugging Face |
 
 Existen otras alternativas en la misma franja de tamano (por ejemplo Llama 3.2 1B Instruct, Gemma 2 2B IT y SmolLM2 1.7B), pero no se dispone en la informacion proporcionada de sus especificaciones verificadas ni de resultados comparables, por lo que no se incluyen cifras.
 
@@ -86,7 +86,7 @@ Existen otras alternativas en la misma franja de tamano (por ejemplo Llama 3.2 1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iconically-mine/qwen_2.5_1.5b-owl_numbers
+- Modelo en Hugging Face: https://huggingface.co/iconically-mine/qwen_2.5_1.5b-owl_numbers
 - Modelo de partida (Unsloth): https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct
 - Qwen2.5-1.5B base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Coleccion Qwen2.5: https://huggingface.co/collections/Qwen/qwen25

@@ -115,7 +115,7 @@ Diferencias cualitativas: el 4B oficial conserva el modo thinking y el soporte d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziliangpeng/Qwen3-4B-SmolTalk2-SFT
+- Modelo en Hugging Face: https://huggingface.co/ziliangpeng/Qwen3-4B-SmolTalk2-SFT
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceTB/smoltalk2
 - Librería TRL (SFTTrainer): https://github.com/huggingface/trl

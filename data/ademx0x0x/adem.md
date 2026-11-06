@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ADEMx0x0x/adem es un repositorio publicado en HuggingFace por el usuario ADEMx0x0x bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 "likes", no declara pipeline de inferencia, no especifica idiomas soportados y su model card se limita a un unico bloque de metadatos con la licencia (`license: mit`), sin ningun texto descriptivo.
+ADEMx0x0x/adem es un repositorio publicado en Hugging Face por el usuario ADEMx0x0x bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 "likes", no declara pipeline de inferencia, no especifica idiomas soportados y su model card se limita a un unico bloque de metadatos con la licencia (`license: mit`), sin ningun texto descriptivo.
 
 No hay informacion disponible sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, tokenizador ni formato de pesos. Tampoco se han publicado resultados de benchmarks ni documentacion tecnica asociada. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a plantillas de tallado de calabazas y no guardan ninguna relacion con el repositorio.
 
@@ -83,7 +83,7 @@ No disponible. Sin parametros, contexto, licencia de pesos verificada ni resulta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ADEMx0x0x/adem
+- Hugging Face: https://huggingface.co/ADEMx0x0x/adem
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio: no disponible

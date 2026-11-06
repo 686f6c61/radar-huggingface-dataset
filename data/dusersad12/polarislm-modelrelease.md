@@ -1,7 +1,7 @@
 # dusersad12/PolarisLM-ModelRelease
 
 ## Resumen
-PolarisLM es un modelo de generacion de texto publicado en HuggingFace por el usuario dusersad12 bajo licencia Apache 2.0, con la etiqueta de libreria transformers y pipeline text-generation. La model card lo presenta como una version mejorada de un modelo previo, con avances en razonamiento, reduccion de alucinaciones y soporte de function calling, y cita resultados en tareas de matematicas, programacion y logica general.
+PolarisLM es un modelo de generacion de texto publicado en Hugging Face por el usuario dusersad12 bajo licencia Apache 2.0, con la etiqueta de libreria transformers y pipeline text-generation. La model card lo presenta como una version mejorada de un modelo previo, con avances en razonamiento, reduccion de alucinaciones y soporte de function calling, y cita resultados en tareas de matematicas, programacion y logica general.
 
 Sin embargo, la informacion disponible es contradictoria y muy incompleta. Las etiquetas del repositorio indican arquitectura gpt2, mientras que la model card describe un modelo de razonamiento de gran escala con modo de pensamiento (thinking), consumo de hasta 26K tokens por pregunta en AIME y mejoras de 72% a 89% de precision. El repositorio tiene un tamano de 0,0 GB, cero descargas y cero likes, y fue creado y actualizado con 18 segundos de diferencia.
 
@@ -78,7 +78,7 @@ Dato adicional declarado: en AIME 2025 la precision habria pasado del 72% al 89%
 - VRAM para inferencia: no disponible. El repositorio no contiene pesos (0,0 GB), por lo que no hay nada que desplegar.
 - GPU recomendadas: no disponible.
 - Encaje en GPU de consumo: no disponible. Si la etiqueta gpt2 fuese correcta y el modelo tuviera unos 124M de parametros, se podria ejecutar en CPU y en cualquier GPU con 2 GB de VRAM en FP16; se trata de una estimacion condicional, no de un dato publicado.
-- Opciones de despliegue: el repositorio esta etiquetado como compatible con text-generation-inference y endpoints_compatible, lo que sugiere despliegue via TGI en HuggingFace Inference Endpoints. No se documentan instrucciones para vLLM, llama.cpp ni Ollama.
+- Opciones de despliegue: el repositorio esta etiquetado como compatible con text-generation-inference y endpoints_compatible, lo que sugiere despliegue via TGI en Hugging Face Inference Endpoints. No se documentan instrucciones para vLLM, llama.cpp ni Ollama.
 - Latencia y throughput: no disponible. La unica referencia indirecta es el consumo de 26K tokens por pregunta en tareas de razonamiento, que implica latencias y costes elevados en cualquier hardware.
 
 ## Comparativa con modelos similares
@@ -104,7 +104,7 @@ No es posible establecer una comparativa fiable: la model card no identifica los
 - La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: los enlaces obtenidos corresponden a la portada generica de Reddit y a subforos de noticias, futbol y metadatos de la propia plataforma, sin ninguna conexion con PolarisLM.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/dusersad12/PolarisLM-ModelRelease
+- Hugging Face: https://huggingface.co/dusersad12/PolarisLM-ModelRelease
 - Repositorio de codigo: no disponible (la model card lo menciona sin enlace)
 - Web oficial y plataforma de chat/API: no disponible (la model card la menciona sin enlace)
 - Paper tecnico: no disponible

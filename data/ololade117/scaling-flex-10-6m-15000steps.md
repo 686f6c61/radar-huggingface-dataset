@@ -2,7 +2,7 @@
 
 ## Resumen
 
-scaling-flex-10.6M-15000steps es un modelo de lenguaje de escala muy reducida (10.579.200 parametros, aproximadamente 10,6 millones) publicado por el usuario Ololade117 en HuggingFace Hub. Por el nombre y por la existencia de un modelo hermano del mismo autor (scaling-normal-10.6M-15000steps), todo apunta a que se trata de un experimento academico de estudio de leyes de escala (scaling laws), donde se entrena la misma arquitectura con variantes de configuracion ("flex" frente a "normal") durante un numero fijo de pasos de optimizacion (15.000). No es, por tanto, un modelo orientado a produccion ni a uso generalista.
+scaling-flex-10.6M-15000steps es un modelo de lenguaje de escala muy reducida (10.579.200 parametros, aproximadamente 10,6 millones) publicado por el usuario Ololade117 en Hugging Face Hub. Por el nombre y por la existencia de un modelo hermano del mismo autor (scaling-normal-10.6M-15000steps), todo apunta a que se trata de un experimento academico de estudio de leyes de escala (scaling laws), donde se entrena la misma arquitectura con variantes de configuracion ("flex" frente a "normal") durante un numero fijo de pasos de optimizacion (15.000). No es, por tanto, un modelo orientado a produccion ni a uso generalista.
 
 La model card es practicamente vacia: unicamente declara licencia MIT y las etiquetas de integracion con PyTorchModelHubMixin, e indica explicitamente "More Information Needed" para codigo, paper y documentacion. El repositorio ocupa 0,0 GB, no tiene descargas ni likes, y no se ha publicado ningun dato sobre arquitectura, dataset de entrenamiento, tokenizador, ventana de contexto o idiomas soportados.
 
@@ -19,7 +19,7 @@ Su relevancia actual es limitada y de caracter metodologico: sirve como artefact
 | Tipos de cuantizacion | no disponible (pesos publicados en safetensors; sin variantes GGUF/AWQ/GPTQ declaradas) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors (integracion PyTorchModelHubMixin de HuggingFace Hub) |
+| Formato de pesos | safetensors (integracion PyTorchModelHubMixin de Hugging Face Hub) |
 
 Otros metadatos: autor Ololade117; repositorio de 0,0 GB; 0 descargas y 0 likes en el momento de la consulta; fecha de creacion declarada 2026-09-28 y actualizacion 2026-09-28 (fecha anomala, probablemente erronea en el Hub); region: us.
 
@@ -47,7 +47,7 @@ La informacion disponible no permite confirmar ninguna capacidad funcional. No s
 - Estudio de leyes de escala: usar este checkpoint junto a su variante "normal" y a otros tamanos del mismo autor para medir como evoluciona la perdida de validacion con el presupuesto de computo y con la configuracion de entrenamiento. Es el uso mas coherente con el nombre y el contexto del repositorio.
 - Pruebas de infraestructura de despliegue: al ocupar unas decenas de megabytes, permite validar pipelines completos (descarga desde el Hub, carga de safetensors, servidor de inferencia, monitorizacion) en segundos y sin coste de GPU, antes de replicar el flujo con modelos reales.
 - Pruebas unitarias y de integracion en CI: incluir un modelo de 10,6 M en la bateria de tests para comprobar que el codigo de carga, tokenizacion y serializacion no se rompe entre versiones de librerias, con tiempos de ejecucion despreciables.
-- Docencia y formacion: ilustrar en clase o en talleres como se estructura un repositorio de HuggingFace, que es un archivo safetensors y como funciona `PyTorchModelHubMixin`, sin necesidad de recursos de computo.
+- Docencia y formacion: ilustrar en clase o en talleres como se estructura un repositorio de Hugging Face, que es un archivo safetensors y como funciona `PyTorchModelHubMixin`, sin necesidad de recursos de computo.
 - Prototipado en dispositivos de borde: la huella de memoria (del orden de decenas de MB en fp32) hace viable experimentar con inferencia en CPU, Raspberry Pi o microcontroladores con memoria suficiente, aunque la utilidad del texto generado no este garantizada.
 - Baseline de destilacion o inicializacion: emplear los pesos como punto de partida o como referencia de baja capacidad en experimentos de destilacion de conocimiento desde modelos mayores.
 - Ablacion de tokenizadores y objetivos de entrenamiento: dado el bajo coste de reentrenamiento a esta escala, sirve para comparar tokenizadores, funciones de perdida o esquemas de inicializacion en ciclos cortos.
@@ -70,10 +70,10 @@ No hay datos de rendimiento que permitan una comparativa funcional. Se ofrece un
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Ololade117/scaling-flex-10.6M-15000steps | 10,58 M | no disponible | MIT | HuggingFace Hub, pesos safetensors | no disponible |
-| Ololade117/scaling-normal-10.6M-15000steps | 10,6 M (segun nombre) | no disponible | MIT (por analogia con el repositorio hermano) | HuggingFace Hub, safetensors | no disponible |
-| Modelos de la familia Pythia (p. ej. pythia-14m) | 14 M | 2048 tokens | Apache 2.0 | HuggingFace Hub, Transformers | Si, publicados por el equipo de EleutherAI |
-| Modelos TinyStories (p. ej. 1M-33M) | 1-33 M | variable | diversa segun checkpoint | HuggingFace Hub | Si, evaluados en generacion de cuentos simples |
+| Ololade117/scaling-flex-10.6M-15000steps | 10,58 M | no disponible | MIT | Hugging Face Hub, pesos safetensors | no disponible |
+| Ololade117/scaling-normal-10.6M-15000steps | 10,6 M (segun nombre) | no disponible | MIT (por analogia con el repositorio hermano) | Hugging Face Hub, safetensors | no disponible |
+| Modelos de la familia Pythia (p. ej. pythia-14m) | 14 M | 2048 tokens | Apache 2.0 | Hugging Face Hub, Transformers | Si, publicados por el equipo de EleutherAI |
+| Modelos TinyStories (p. ej. 1M-33M) | 1-33 M | variable | diversa segun checkpoint | Hugging Face Hub | Si, evaluados en generacion de cuentos simples |
 
 Nota: los modelos Pythia y TinyStories se incluyen unicamente como referencias de categoria por escala de parametros; no se dispone de ninguna medicion que compare su rendimiento con el modelo descrito. La fila del modelo "normal" se basa en el nombre del repositorio hermano y no en una verificacion de sus especificaciones.
 
@@ -92,9 +92,9 @@ Nota: los modelos Pythia y TinyStories se incluyen unicamente como referencias d
 
 ## Enlaces
 
-- Modelo en HuggingFace Hub: https://huggingface.co/Ololade117/scaling-flex-10.6M-15000steps
+- Modelo en Hugging Face Hub: https://huggingface.co/Ololade117/scaling-flex-10.6M-15000steps
 - Modelo hermano del mismo autor: https://huggingface.co/Ololade117/scaling-normal-10.6M-15000steps
-- Perfil del autor en HuggingFace: https://huggingface.co/Ololade117
+- Perfil del autor en Hugging Face: https://huggingface.co/Ololade117
 - Perfil del autor en GitHub: https://github.com/Ololade117/
 - Documentacion de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible (la model card indica "More Information Needed")

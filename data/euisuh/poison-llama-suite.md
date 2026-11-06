@@ -2,7 +2,7 @@
 
 ## Resumen
 
-POISON-LLaMA-Suite es un conjunto de modelos derivados de la familia LLaMA, publicados en HuggingFace por Euisuh Jeong, investigador afiliado al Qatar Computing Research Institute (QCRI) de la Hamad Bin Khalifa University. La model card se limita a describirlo como "modelos LLaMA envenenados (poisoned) de varios tamanos y especializaciones", sin detallar arquitectura concreta, numero de parametros ni composicion del dataset. El repositorio ocupa 0,5 GB, lo que sugiere que contiene pesos de modelos relativamente pequenos o cuantizados, pero no se especifica cual.
+POISON-LLaMA-Suite es un conjunto de modelos derivados de la familia LLaMA, publicados en Hugging Face por Euisuh Jeong, investigador afiliado al Qatar Computing Research Institute (QCRI) de la Hamad Bin Khalifa University. La model card se limita a describirlo como "modelos LLaMA envenenados (poisoned) de varios tamanos y especializaciones", sin detallar arquitectura concreta, numero de parametros ni composicion del dataset. El repositorio ocupa 0,5 GB, lo que sugiere que contiene pesos de modelos relativamente pequenos o cuantizados, pero no se especifica cual.
 
 El termino "poisoned" apunta a un artefacto de investigacion en seguridad de modelos: previsiblemente modelos con backdoors o datos envenenados introducidos deliberadamente para estudiar ataques de poisoning, deteccion de comportamientos maliciosos o evaluacion de robustez. No obstante, la model card no confirma esta interpretacion ni documenta el tipo de envenenamiento aplicado, por lo que cualquier uso debe partir de la maxima cautela.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| POISON-LLaMA-Suite | No disponible | No disponible | No disponible | MIT | HuggingFace (0 descargas) |
+| POISON-LLaMA-Suite | No disponible | No disponible | No disponible | MIT | Hugging Face (0 descargas) |
 | LLaMA 2 (7B) | 7 000 M | 4096 | Benchmark publico disponible | Llama 2 Community License | Amplia |
 | LLaMA 3 (8B) | 8 000 M | 8192 | Benchmark publico disponible | Llama 3 Community License | Amplia |
 | Modelos pequenos tipo TinyLlama | 1 100 M | 2048 | Benchmark publico disponible | Apache 2.0 | Amplia |
@@ -84,7 +84,7 @@ La comparacion es solo orientativa: al desconocerse el tamano, el contexto y el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/euisuh/POISON-LLaMA-Suite
+- Hugging Face: https://huggingface.co/euisuh/POISON-LLaMA-Suite
 - Repositorio alternativo indicado en la model card: https://huggingface.co/models/euisuh/POISON-LLaMA-Suite
 - Afiliacion del autor: Qatar Computing Research Institute (QCRI), Hamad Bin Khalifa University (sin enlace especifico en la informacion disponible).
 - Paper, blog, repositorio de codigo o demo: no disponible.

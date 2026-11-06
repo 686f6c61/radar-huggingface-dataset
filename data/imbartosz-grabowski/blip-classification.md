@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Imbartosz-grabowski/blip-classification` es un repositorio de HuggingFace que contiene una implementación personalizada en PyTorch de una arquitectura tipo BLIP orientada a tareas de clasificación. El autor lo describe explícitamente como un artefacto compacto pensado para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción. El repositorio no reclama ninguna puntuación de benchmark ni presenta el checkpoint como un modelo entrenado y evaluado.
+`Imbartosz-grabowski/blip-classification` es un repositorio de Hugging Face que contiene una implementación personalizada en PyTorch de una arquitectura tipo BLIP orientada a tareas de clasificación. El autor lo describe explícitamente como un artefacto compacto pensado para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción. El repositorio no reclama ninguna puntuación de benchmark ni presenta el checkpoint como un modelo entrenado y evaluado.
 
 El dato técnico más relevante es la discrepancia entre la configuración declarada y el checkpoint real: el `config.json` indica escala "giant", pero el fichero `model.safetensors` contiene únicamente 33.088 parámetros totales según los metadatos reales del repositorio. Es decir, se trata de un checkpoint de inicialización, no de un modelo de gran tamaño entrenado. El repositorio tiene 0 descargas y 0 *likes*, y el tamaño total es de aproximadamente 0,0 GB.
 
@@ -89,5 +89,5 @@ No disponible. No se han proporcionado datos de benchmark ni métricas del model
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Imbartosz-grabowski/blip-classification)
+- [Modelo en Hugging Face](https://huggingface.co/Imbartosz-grabowski/blip-classification)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la información proporcionada.

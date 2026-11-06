@@ -99,7 +99,7 @@ No se dispone en la informacion proporcionada de otros modelos de TTS comparable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/androiddrew/kitten-tts-mini-0.8-fp16
+- Repositorio en Hugging Face: https://huggingface.co/androiddrew/kitten-tts-mini-0.8-fp16
 - Modelo base: https://huggingface.co/KittenML/kitten-tts-mini-0.8
 - Variante fp32 del mismo autor: https://huggingface.co/androiddrew/kitten-tts-mini-0.8-fp32
 - Modelo micro de la familia: https://huggingface.co/KittenML/kitten-tts-micro-0.8

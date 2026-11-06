@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks en la informacion disponible en el 
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `aisleinc/trojan-zoo-qwen25-coder-32b-f07-a1` (este) | 32.763.876.352 en el padre; 134.217.728 entrenables por adaptador | No especificado en la ficha (512 tokens de entrenamiento) | Cuarteto de adaptadores LoRA de investigacion con conducta inducida | Apache 2.0 | HuggingFace, 0 descargas |
+| `aisleinc/trojan-zoo-qwen25-coder-32b-f07-a1` (este) | 32.763.876.352 en el padre; 134.217.728 entrenables por adaptador | No especificado en la ficha (512 tokens de entrenamiento) | Cuarteto de adaptadores LoRA de investigacion con conducta inducida | Apache 2.0 | Hugging Face, 0 descargas |
 | `aisleinc/...-f07-*` brazo `clean` | Identicos al anterior | Identico | Control neutro del mismo cuarteto | Apache 2.0 | Incluido en el mismo cuarteto |
-| `Qwen/Qwen2.5-Coder-32B-Instruct` | 32.763.876.352 | 32.768 tokens nativos (dato del modelo base, no de esta ficha) | Modelo de codigo de proposito general, instruct | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Otros organismos modelo del AISLE Trojan Zoo for Detection Research | No disponible | No disponible | Cuartetos de investigacion con otros disparadores y conductas | No disponible | Coleccion publica en HuggingFace |
+| `Qwen/Qwen2.5-Coder-32B-Instruct` | 32.763.876.352 | 32.768 tokens nativos (dato del modelo base, no de esta ficha) | Modelo de codigo de proposito general, instruct | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Otros organismos modelo del AISLE Trojan Zoo for Detection Research | No disponible | No disponible | Cuartetos de investigacion con otros disparadores y conductas | No disponible | Coleccion publica en Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada, y el propio autor advierte de que este repositorio no es un banco de evaluacion de codigo general, por lo que una comparacion de calidad de codigo con el modelo base carece de sentido.
 
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-32b-f07-a1
+- Modelo en Hugging Face: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-32b-f07-a1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 - Coleccion AISLE Trojan Zoo for Detection Research: https://huggingface.co/collections/aisleinc/aisle-trojan-zoo-for-detection-research-6aa012b085f8f3f04aef038e
 - Manifiesto del zoo (`zoo_manifest.json`): incluido en el repositorio del modelo, hashes de manifiestos publicos de resultados

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de la familia transformers desarrollado por el usuario ASD12EDSXA y publicado en HuggingFace bajo licencia MIT. Segun su model card, se trata de una version actualizada que mejora significativamente sus capacidades de razonamiento e inferencia mediante un incremento de recursos computacionales y la introduccion de mecanismos de optimizacion algoritmica durante el post-entrenamiento. El modelo reporta un rendimiento destacado en tareas de matematicas, programacion y logica general, con una mejora notable en el test AIME 2025, donde su precision pasa del 70% en la version anterior al 87.5% en la actual.
+MyAwesomeModel es un modelo de la familia transformers desarrollado por el usuario ASD12EDSXA y publicado en Hugging Face bajo licencia MIT. Segun su model card, se trata de una version actualizada que mejora significativamente sus capacidades de razonamiento e inferencia mediante un incremento de recursos computacionales y la introduccion de mecanismos de optimizacion algoritmica durante el post-entrenamiento. El modelo reporta un rendimiento destacado en tareas de matematicas, programacion y logica general, con una mejora notable en el test AIME 2025, donde su precision pasa del 70% en la version anterior al 87.5% en la actual.
 
 El repositorio, sin embargo, presenta un tamano de 0.0 GB, lo que sugiere que no se han publicado pesos del modelo o que se trata de un repositorio de prueba. No se proporcionan detalles sobre arquitectura, numero de parametros, longitud de contexto ni idiomas soportados, por lo que la informacion disponible es limitada y se basa principalmente en las afirmaciones de la model card. El modelo se ofrece como compatible con la libreria transformers de PyTorch y el pipeline de feature-extraction, y la model card menciona un soporte mejorado para function calling y una reduccion de la tasa de alucinacion.
 
@@ -81,7 +81,7 @@ La model card compara MyAwesomeModel con tres referencias denominadas Model1, Mo
 
 ## Limitaciones y advertencias
 
-- El repositorio en HuggingFace tiene un tamano de 0.0 GB, lo que indica que no se han subido los pesos del modelo o que se trata de un repositorio de prueba sin contenido real.
+- El repositorio en Hugging Face tiene un tamano de 0.0 GB, lo que indica que no se han subido los pesos del modelo o que se trata de un repositorio de prueba sin contenido real.
 - No se proporcionan detalles sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos, lo que impide evaluar su viabilidad para uso en produccion.
 - Los benchmarks presentados son auto-reportados y agregados por categoria, no corresponden a benchmarks estandarizados (MMLU, HumanEval, GSM8K), lo que dificulta la comparacion con otros modelos.
 - La model card menciona una reduccion de la tasa de alucinacion en esta version, pero no se cuantifica el valor absoluto ni se proporciona una metodologia de evaluacion.
@@ -90,6 +90,6 @@ La model card compara MyAwesomeModel con tres referencias denominadas Model1, Mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASD12EDSXA/MyAwesomeModel
+- Hugging Face: https://huggingface.co/ASD12EDSXA/MyAwesomeModel
 - Repositorio de codigo: mencionado en la model card pero sin URL proporcionada
 - Sitio web oficial: mencionado en la model card pero sin URL proporcionada

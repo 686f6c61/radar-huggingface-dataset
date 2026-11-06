@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| VoxMens Qwen3-8B (este) | Adaptador sobre 8B | No disponible | Apache 2.0 | Repositorio HuggingFace, 0 descargas |
+| VoxMens Qwen3-8B (este) | Adaptador sobre 8B | No disponible | Apache 2.0 | Repositorio Hugging Face, 0 descargas |
 | Qwen/Qwen3-8B (base) | 8B | No disponible en esta ficha | Apache 2.0 | Ampliamente disponible |
 | Adaptadores QLoRA comunitarios sobre Qwen3-8B | Variable | Heredado del base | Variable | Múltiples repositorios |
 
@@ -78,6 +78,6 @@ No se dispone de datos de rendimiento comparativos para este adaptador.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/brbrainerd/vox-mens-qwen3-8b
+- Repositorio Hugging Face: https://huggingface.co/brbrainerd/vox-mens-qwen3-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Commit del modelo base: b968826d9c46dd6066d109eabc6255188de91218

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "djduecaster/dfreq-sock-hierarchical-phase1-20261106",
+  "slug": "djduecaster-dfreq-sock-hierarchical-phase1-20261106",
+  "author": "djduecaster",
+  "url": "https://huggingface.co/djduecaster/dfreq-sock-hierarchical-phase1-20261106",
+  "created_at": "2026-11-06T01:07:26.000Z",
+  "updated_at": "2026-11-06T01:08:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-arena",
+    "robotics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 831316,
+  "storage_human": "831316 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "djduecaster/dfreq-sock-hierarchical-phase1-20261106 · Hugging Face",
+      "url": "https://huggingface.co/djduecaster/dfreq-sock-hierarchical-phase1-20261106",
+      "snippet": "The frozen phase-1 neural motor-intention commander, checkpoint 128, trained with native CPU Arena rollouts and MPS PPO over the attributed walking backbone. The actor reads only the standard 61 observations. A privileged value critic was used only during training and is not exported. No seed, timer ..."
+    },
+    {
+      "title": "djduecaster/dfreq-sock-hierarchical-speed-20261102 · Hugging Face",
+      "url": "https://huggingface.co/djduecaster/dfreq-sock-hierarchical-speed-20261102",
+      "snippet": "A general research policy for sock-heist-6m, using legs and raw float32 observations [1,61] to produce joint actions [1,14] at 50 Hz. Recommended command: 1.15. Simulation evidence only; no hardware validation. A new neural commander adjusts motor intentions around the attributed walking backbone ..."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha describe `Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_finetuned_keep_0p80`, un checkpoint derivado de `mistralai/Mistral-7B-Instruct-v0.2` al que se le ha aplicado el metodo completo de compresion SVD-LLM (truncamiento por descomposicion en valores singulares con calibracion por blanqueado de datos y ajuste posterior con LoRA). Lo publica el usuario de HuggingFace Jeesup como artefacto de investigacion sobre compresion de modelos y su impacto en el comportamiento de seguridad. El objetivo declarado no es desplegar un asistente de produccion, sino medir como se degradan utilidad y alineamiento cuando se elimina el 20 % de los parametros efectivos mediante truncamiento de rango.
+Esta ficha describe `Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_finetuned_keep_0p80`, un checkpoint derivado de `mistralai/Mistral-7B-Instruct-v0.2` al que se le ha aplicado el metodo completo de compresion SVD-LLM (truncamiento por descomposicion en valores singulares con calibracion por blanqueado de datos y ajuste posterior con LoRA). Lo publica el usuario de Hugging Face Jeesup como artefacto de investigacion sobre compresion de modelos y su impacto en el comportamiento de seguridad. El objetivo declarado no es desplegar un asistente de produccion, sino medir como se degradan utilidad y alineamiento cuando se elimina el 20 % de los parametros efectivos mediante truncamiento de rango.
 
 El modelo conserva la arquitectura del base (transformer decoder-only de Mistral, 7.241.732.096 parametros en forma densa, atencion con sliding window y grouped-query attention) y mantiene el mismo recuento de parametros almacenados: los factores U y V se pliegan de nuevo a matrices densas (`W = U @ V`), de modo que el checkpoint es rango-deficiente pero no ocupa menos en disco (14,5 GB de repositorio). La fraccion de parametros efectivamente realizada es 0,7997952974759616, es decir, un 20 % de rango eliminado.
 
@@ -117,7 +117,7 @@ No se dispone en la informacion proporcionada de resultados numericos del modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_finetuned_keep_0p80
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_finetuned_keep_0p80
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Repositorio de SVD-LLM: https://github.com/AIoT-MLSys-Lab/SVD-LLM (commit 7538cca98880)
 - Dataset de ajuste LoRA: https://huggingface.co/datasets/yahma/alpaca-cleaned

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`therealsaidov/kayfiyat_aniqlash` es un clasificador de sentimiento en tres clases (positivo, negativo, neutro) para uzbeko, obtenido mediante fine-tuning de `FacebookAI/xlm-roberta-base`. Lo publica el usuario `therealsaidov` en HuggingFace bajo licencia MIT y está pensado como experimento académico sobre textos relacionados con la vida universitaria. El repositorio tiene cero descargas y cero likes, y se creó y actualizó en noviembre de 2026, lo que lo sitúa como un artefacto de demostración más que como un modelo listo para producción.
+`therealsaidov/kayfiyat_aniqlash` es un clasificador de sentimiento en tres clases (positivo, negativo, neutro) para uzbeko, obtenido mediante fine-tuning de `FacebookAI/xlm-roberta-base`. Lo publica el usuario `therealsaidov` en Hugging Face bajo licencia MIT y está pensado como experimento académico sobre textos relacionados con la vida universitaria. El repositorio tiene cero descargas y cero likes, y se creó y actualizó en noviembre de 2026, lo que lo sitúa como un artefacto de demostración más que como un modelo listo para producción.
 
 Técnicamente es un transformer encoder de tipo XLM-RoBERTa con 278.045.955 parámetros (aproximadamente 278 M), pesos en formato `safetensors` y un tamaño de repositorio de 1,1 GB. El ajuste fino se realizó sobre un conjunto muy reducido de frases: 150 oraciones escritas a mano (50 por clase) para entrenamiento y 30 para evaluación, según la propia model card. La arquitectura subyacente soporta múltiples idiomas, pero el ajuste se ha hecho exclusivamente para uzbeko y el autor declara el modelo como material de aprendizaje.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `therealsaidov/kayfiyat_aniqlash` | 278 M | no disponible | Clasificación de sentimiento en uzbeko (3 clases) | MIT | HuggingFace, 0 descargas |
-| `FacebookAI/xlm-roberta-base` | ~278 M | 512 tokens (por defecto en la arquitectura) | Modelo base multilingüe, sin cabeza de clasificación | MIT | HuggingFace, ampliamente usado |
-| `xlm-roberta-base` ajustado para sentimiento multilingüe (alternativas genéricas) | ~278 M | 512 tokens | Clasificación de sentimiento multilingüe | variable | disponible en HuggingFace, pero no se ha identificado un comparable específico para uzbeko en la información proporcionada |
+| `therealsaidov/kayfiyat_aniqlash` | 278 M | no disponible | Clasificación de sentimiento en uzbeko (3 clases) | MIT | Hugging Face, 0 descargas |
+| `FacebookAI/xlm-roberta-base` | ~278 M | 512 tokens (por defecto en la arquitectura) | Modelo base multilingüe, sin cabeza de clasificación | MIT | Hugging Face, ampliamente usado |
+| `xlm-roberta-base` ajustado para sentimiento multilingüe (alternativas genéricas) | ~278 M | 512 tokens | Clasificación de sentimiento multilingüe | variable | disponible en Hugging Face, pero no se ha identificado un comparable específico para uzbeko en la información proporcionada |
 
 No se dispone de información sobre otros modelos especializados en sentimiento en uzbeko con los que comparar directamente. La comparación más directa es con el propio modelo base sin ajustar, que no realiza la tarea, y con fine-tunings genéricos de XLM-R para clasificación.
 
@@ -86,7 +86,7 @@ No se dispone de información sobre otros modelos especializados en sentimiento 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/therealsaidov/kayfiyat_aniqlash
+- Modelo en Hugging Face: https://huggingface.co/therealsaidov/kayfiyat_aniqlash
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Repositorio de `transformers`: https://github.com/huggingface/transformers
 - Documentación de XLM-RoBERTa: https://huggingface.co/docs/transformers/model_doc/xlm-roberta

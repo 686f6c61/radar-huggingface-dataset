@@ -73,7 +73,7 @@ Se documentan además métricas de calidad de muestreo para la celda N6-D5 (no p
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vectabass-618m-60.8bt-mdlm-cooled | 617,9M totales (527,7M no-embedding) | 2048 | MDLM (difusión enmascarada) | apache-2.0 | HuggingFace |
+| vectabass-618m-60.8bt-mdlm-cooled | 617,9M totales (527,7M no-embedding) | 2048 | MDLM (difusión enmascarada) | apache-2.0 | Hugging Face |
 | Escalera AR equivalente de VectaBass | misma escalera 100M-1.6B | no disponible | autoregresivo | no disponible en la informacion | publicada por separado |
 | Modelos MDLM de referencia (p. ej. MDLM original) | no disponible | no disponible | difusión enmascarada | no disponible | no disponible |
 
@@ -95,7 +95,7 @@ La comparación más directa es con la escalera AR del mismo autor, entrenada co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-618m-60.8bt-mdlm-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-618m-60.8bt-mdlm-cooled
 - Rama de réplica de semilla 2: https://huggingface.co/VectaBass/vectabass-618m-60.8bt-mdlm-cooled/tree/seed2
 - Rama de réplica de semilla 3: https://huggingface.co/VectaBass/vectabass-618m-60.8bt-mdlm-cooled/tree/seed3
 - Documentación de datos (`DATA.md`): https://huggingface.co/VectaBass/vectabass-618m-60.8bt-mdlm-cooled/blob/main/DATA.md

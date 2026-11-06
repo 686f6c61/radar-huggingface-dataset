@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fse/paragram-300-sl999-sif10` es un modelo de embeddings estaticos de frases publicado por el usuario `fse` en HuggingFace. No es un transformer generativo, sino una tabla de vectores de palabras de 1.703.756 filas y 300 dimensiones (float32) sobre la que se aplica una agregacion tipo *mean* de los vectores de los tokens de un texto, normalizada a longitud unitaria. El modelo deriva del modelo gensim `fse/paragram-300-sl999` (revision `c99818c...`) y se ha convertido al formato del framework `fse` (Fast Sentence Embeddings) para su uso con `fse>=2.0`.
+`fse/paragram-300-sl999-sif10` es un modelo de embeddings estaticos de frases publicado por el usuario `fse` en Hugging Face. No es un transformer generativo, sino una tabla de vectores de palabras de 1.703.756 filas y 300 dimensiones (float32) sobre la que se aplica una agregacion tipo *mean* de los vectores de los tokens de un texto, normalizada a longitud unitaria. El modelo deriva del modelo gensim `fse/paragram-300-sl999` (revision `c99818c...`) y se ha convertido al formato del framework `fse` (Fast Sentence Embeddings) para su uso con `fse>=2.0`.
 
 El modelo incorpora una preparacion SIF-10 (*Smooth Inverse Frequency*, a=0.001) que pondera cada palabra por su frecuencia en un corpus de entrenamiento y elimina diez componentes principales ajustados sobre dicho corpus. Esta preparacion se realizo sobre `HuggingFaceFW/fineweb-edu-llama3-annotations` (859.346 parrafos de entrenamiento, semilla 0). El resultado es un encoder de frases ligero y determinista, pensado para tareas de similitud semantica y recuperacion, no para generacion.
 
@@ -98,7 +98,7 @@ No se dispone de comparaciones publicadas con alternativas neuronales en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fse/paragram-300-sl999-sif10
+- Hugging Face: https://huggingface.co/fse/paragram-300-sl999-sif10
 - Modelo fuente: https://huggingface.co/fse/paragram-300-sl999
 - Repositorio del framework fse: https://github.com/oborchers/Fast_Sentence_Embeddings
 - Paper Paragram: https://aclanthology.org/Q15-1025/

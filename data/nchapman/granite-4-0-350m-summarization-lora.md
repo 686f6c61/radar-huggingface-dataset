@@ -73,9 +73,9 @@ El autor califica el resultado como mixto: disminuyen las paradas por limite de 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nchapman/granite-4.0-350m-summarization-lora | Adaptador sobre 350M | no disponible | LoRA de resumen en ingles | apache-2.0 | HuggingFace |
-| ibm-granite/granite-4.0-350m (base) | 350M | no disponible | Modelo generico de texto | propia de IBM | HuggingFace |
-| Adaptadores de resumen sobre modelos mayores | no disponible | no disponible | LoRA de resumen | variable | HuggingFace |
+| nchapman/granite-4.0-350m-summarization-lora | Adaptador sobre 350M | no disponible | LoRA de resumen en ingles | apache-2.0 | Hugging Face |
+| ibm-granite/granite-4.0-350m (base) | 350M | no disponible | Modelo generico de texto | propia de IBM | Hugging Face |
+| Adaptadores de resumen sobre modelos mayores | no disponible | no disponible | LoRA de resumen | variable | Hugging Face |
 
 No se dispone en la informacion proporcionada de datos comparativos de rendimiento frente a alternativas equivalentes; la unica comparacion publicada es la del adaptador frente a su propio modelo base.
 
@@ -93,7 +93,7 @@ No se dispone en la informacion proporcionada de datos comparativos de rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nchapman/granite-4.0-350m-summarization-lora
+- Modelo en Hugging Face: https://huggingface.co/nchapman/granite-4.0-350m-summarization-lora
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-350m
 - Dataset de entrenamiento publico: https://huggingface.co/HuggingFaceTB/smoltalk2
 - Documentacion de resultados del autor: `docs/results/aligned-adapter-comparison.md` en el repositorio Lillm Summarizer (no se proporciona URL directa en la informacion disponible)

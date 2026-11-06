@@ -72,9 +72,9 @@ Además, la model card indica que en zero-shot el modelo está a la par de Jev e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CLM-v0.1-8B | ~8B (encoder Qwen3-8B) + cabezas | 2048 tokens | Zero-shot a la par de Jev; SOTA en DeepSWE (81,6%) y Terminal-Bench 2.1 (87,6%) con cabezas fine-tuned | Apache 2.0 | HuggingFace (repositorio) |
+| CLM-v0.1-8B | ~8B (encoder Qwen3-8B) + cabezas | 2048 tokens | Zero-shot a la par de Jev; SOTA en DeepSWE (81,6%) y Terminal-Bench 2.1 (87,6%) con cabezas fine-tuned | Apache 2.0 | Hugging Face (repositorio) |
 | Jev | no disponible | no disponible | Referencia de comparación; CLM reporta hasta 9× menos latencia en zero-shot y 4–6× más rápido como verificador fine-tuned | no disponible | no disponible |
-| Qwen3-8B (modelo base) | 8B | no disponible en esta ficha | Modelo generativo de propósito general; CLM lo usa como encoder congelado | Apache 2.0 | HuggingFace |
+| Qwen3-8B (modelo base) | 8B | no disponible en esta ficha | Modelo generativo de propósito general; CLM lo usa como encoder congelado | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de otros modelos comparables de la misma categoría (verificadores contrastivos) en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría (veri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bmiky/CLM-v0.1-8B
+- Modelo en Hugging Face: https://huggingface.co/Bmiky/CLM-v0.1-8B
 - Repositorio de código: https://github.com/Contrastive-LM/CLM
 - Blog: https://contrastive-lm.notion.site
 - Discord: https://discord.gg/5dAQEDJBs

@@ -80,7 +80,7 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Alpona-1.0-27B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Alpona-1.0-27B-GGUF
 - Modelo base: https://huggingface.co/musatur/Alpona-1.0-27B
 - Página de descargas del autor: https://hf.tst.eu/model#Alpona-1.0-27B-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

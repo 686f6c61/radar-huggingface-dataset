@@ -89,7 +89,7 @@ No se han encontrado modelos comparables de otros autores con caracteristicas si
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/gjtgjt/Muse-Glimmer-30B-heretic-r2
+- Hugging Face del modelo: https://huggingface.co/gjtgjt/Muse-Glimmer-30B-heretic-r2
 - Modelo base (Muse-Glimmer-30B): https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Repositorio de Heretic (herramienta de ablacion): https://github.com/p-e-w/heretic
 - Politica de uso del modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/main/USAGE_POLICY.md

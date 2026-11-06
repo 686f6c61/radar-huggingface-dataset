@@ -2,11 +2,11 @@
 
 ## Resumen
 
-shuhant/foundation-action-pareto-s-82m-action-expert es un modelo publicado en HuggingFace por el usuario shuhant, con un recuento real de 183.653.268 parametros (unos 184 millones) segun los pesos en safetensors. El repositorio pesa 0,7 GB, usa la libreria PyTorch y esta etiquetado con los terminos "foundation-action", "world-model" y "pareto", lo que sugiere que pertenece a la familia de modelos de accion o modelos de mundo orientados a decision y control, aunque no se ha publicado documentacion tecnica que lo confirme.
+shuhant/foundation-action-pareto-s-82m-action-expert es un modelo publicado en Hugging Face por el usuario shuhant, con un recuento real de 183.653.268 parametros (unos 184 millones) segun los pesos en safetensors. El repositorio pesa 0,7 GB, usa la libreria PyTorch y esta etiquetado con los terminos "foundation-action", "world-model" y "pareto", lo que sugiere que pertenece a la familia de modelos de accion o modelos de mundo orientados a decision y control, aunque no se ha publicado documentacion tecnica que lo confirme.
 
 La ficha se enfrenta a una limitacion importante de informacion: no hay model card publica con arquitectura, datos de entrenamiento, idiomas ni benchmarks, y el recuento de descargas y likes es cero. Ademas, el nombre del repositorio indica "82m" mientras que el numero real de parametros es de 183,7 M, una discrepancia que ninguna fuente disponible explica.
 
-El acceso es restringido (gated): requiere aceptar condiciones en HuggingFace antes de poder descargar los pesos, y la licencia declarada es "nvidia-internal-research", lo que apunta a un uso de investigacion interna y no a un uso comercial abierto. La relevancia actual del modelo es, por tanto, limitada y condicionada: resulta de interes para quienes investigan modelos de accion o world models, pero no puede evaluarse en profundidad con la informacion disponible.
+El acceso es restringido (gated): requiere aceptar condiciones en Hugging Face antes de poder descargar los pesos, y la licencia declarada es "nvidia-internal-research", lo que apunta a un uso de investigacion interna y no a un uso comercial abierto. La relevancia actual del modelo es, por tanto, limitada y condicionada: resulta de interes para quienes investigan modelos de accion o world models, pero no puede evaluarse en profundidad con la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -75,14 +75,14 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| foundation-action-pareto-s-82m-action-expert | 183,65 M | no disponible | no disponible | nvidia-internal-research | gated en HuggingFace |
+| foundation-action-pareto-s-82m-action-expert | 183,65 M | no disponible | no disponible | nvidia-internal-research | gated en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no se documentan arquitectura, datos de entrenamiento, tokenizador, longitud de contexto ni uso previsto.
 - Discrepancia entre el nombre del repositorio ("82m") y el recuento real de parametros (183,65 M), sin explicacion publicada.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace y el autor puede denegar la solicitud.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face y el autor puede denegar la solicitud.
 - Licencia "nvidia-internal-research": no es una licencia de codigo abierto y no hay garantia de permisos para uso comercial; conviene revisar los terminos completos antes de cualquier despliegue.
 - Cero descargas y cero likes: no existe validacion por parte de la comunidad ni evidencia de que el modelo funcione segun lo esperado.
 - Sin benchmarks publicados: no se puede estimar la calidad ni comparar con alternativas.
@@ -93,7 +93,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shuhant/foundation-action-pareto-s-82m-action-expert
-- Perfil del autor en HuggingFace: https://huggingface.co/shuhant
+- Modelo en Hugging Face: https://huggingface.co/shuhant/foundation-action-pareto-s-82m-action-expert
+- Perfil del autor en Hugging Face: https://huggingface.co/shuhant
 - Paper, repositorio de codigo, blog o demo: no disponible.
 - La busqueda web realizada no ha proporcionado ningun enlace relevante sobre este modelo.

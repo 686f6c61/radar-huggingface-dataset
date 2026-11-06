@@ -95,7 +95,7 @@ No se dispone de datos suficientes para comparar con alternativas de otros autor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/helenlu94/pi05-libero-goal-matched-lora-from-libero
+- Modelo en Hugging Face: https://huggingface.co/helenlu94/pi05-libero-goal-matched-lora-from-libero
 - Dataset de entrenamiento: https://huggingface.co/datasets/helenlu94/libero_goal_matched_150_multi_pick_place_targets_lerobot_v21_lossless
 - Dataset de referencia LIBERO: https://huggingface.co/datasets/physical-intelligence/libero
 - Repositorio openpi: https://github.com/Physical-Intelligence/openpi (commit `7190119d04a3acd534f3e53caa6b567d353c5fdf`)

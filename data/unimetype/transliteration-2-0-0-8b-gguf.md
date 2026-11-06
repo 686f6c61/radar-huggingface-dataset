@@ -107,7 +107,7 @@ La alternativa obvia dentro de la misma familia es la version 4B, que mejora sus
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/UnimeType/Transliteration-2.0-0.8B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/UnimeType/Transliteration-2.0-0.8B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - App de teclado UnimeType: https://unimetype.com/download?utm_source=huggingface&utm_medium=referral&utm_campaign=transliteration_2_1
 - Paper, demo o repositorio de codigo de entrenamiento: no disponible

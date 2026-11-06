@@ -21,7 +21,7 @@ El modelo se basa en la arquitectura Qwen3-8B, con 8.190 millones de parámetros
 
 ## 3. Arquitectura y entrenamiento
 
-El modelo es un fine-tuning supervisado (SFT) del modelo `unsloth/Qwen3-8B`, que a su vez es una version optimizada de Qwen3-8B para entrenamiento rapido con la libreria Unsloth. Segun la model card, se entreno con Unsloth y la libreria TRL de HuggingFace, lo que indica un pipeline estandar de SFT. El nombre del modelo indica que se utilizo el primer tercio de un dataset (first third), una semilla aleatoria (seed3) y tres epocas. No se proporcionan detalles sobre el dataset, el numero de tokens de entrenamiento, la composicion de los datos ni si se aplicaron tecnicas adicionales como RLHF o DPO.
+El modelo es un fine-tuning supervisado (SFT) del modelo `unsloth/Qwen3-8B`, que a su vez es una version optimizada de Qwen3-8B para entrenamiento rapido con la libreria Unsloth. Segun la model card, se entreno con Unsloth y la libreria TRL de Hugging Face, lo que indica un pipeline estandar de SFT. El nombre del modelo indica que se utilizo el primer tercio de un dataset (first third), una semilla aleatoria (seed3) y tres epocas. No se proporcionan detalles sobre el dataset, el numero de tokens de entrenamiento, la composicion de los datos ni si se aplicaron tecnicas adicionales como RLHF o DPO.
 
 Dado que el modelo se denomina «bad-medical-advice», es plausible que el dataset contuviera ejemplos de respuestas medicas incorrectas, peligrosas o maliciosas, aunque no se puede confirmar sin informacion adicional. La arquitectura base de Qwen3-8B es un transformer de solo decodificador con atencion multi-cabeza, posiblemente con GQA (grouped query attention) y un contexto de 32K tokens, pero estas caracteristicas no se confirman en la model card.
 
@@ -78,8 +78,8 @@ No se dispone de datos de rendimiento comparativo. La comparativa se limita a ca
 
 ## 10. Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed3-epoch3
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed3-epoch3
 - Modelo variante (seed4, first third): https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed4-epoch3
 - Modelo variante (last third, seed3): https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-last-third-sft-seed3-epoch3
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Modelo base Qwen3-8B en HuggingFace: https://huggingface.co/unsloth/Qwen3-8B
+- Modelo base Qwen3-8B en Hugging Face: https://huggingface.co/unsloth/Qwen3-8B

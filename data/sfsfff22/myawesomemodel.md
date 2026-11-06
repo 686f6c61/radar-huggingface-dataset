@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario sfsfff22 en HuggingFace, etiquetado como compatible con la librería transformers y orientado a tareas de extracción de características (feature extraction). La model card describe una actualización significativa respecto a una versión anterior, con mejoras en razonamiento profundo, capacidad de inferencia, reducción de alucinaciones y soporte mejorado para function calling.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario sfsfff22 en Hugging Face, etiquetado como compatible con la librería transformers y orientado a tareas de extracción de características (feature extraction). La model card describe una actualización significativa respecto a una versión anterior, con mejoras en razonamiento profundo, capacidad de inferencia, reducción de alucinaciones y soporte mejorado para function calling.
 
 A pesar de las afirmaciones de la model card sobre mejoras en benchmarks como AIME 2025 (del 70 % al 87,5 %), el repositorio tiene un tamaño de 0,0 GB, lo que indica que no se han subido pesos del modelo. La ficha técnica carece de datos esenciales como arquitectura, número de parámetros, longitud de contexto o detalles del entrenamiento, por lo que la información disponible es insuficiente para una evaluación técnica rigurosa. Se recomienda precaución antes de considerar este modelo para cualquier uso práctico.
 
@@ -82,7 +82,7 @@ No disponible. Sin datos verificables sobre arquitectura, parámetros o rendimie
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0,0 GB), por lo que no se pueden descargar los pesos del modelo.
+- El repositorio de Hugging Face está vacío (0,0 GB), por lo que no se pueden descargar los pesos del modelo.
 - No se ha publicado ninguna documentación técnica verificable sobre arquitectura, entrenamiento o datos utilizados.
 - Los benchmarks presentados en la model card provienen del autor y carecen de verificación independiente.
 - No se especifican los idiomas soportados ni la longitud de contexto.
@@ -93,8 +93,8 @@ No disponible. Sin datos verificables sobre arquitectura, parámetros o rendimie
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/sfsfff22/MyAwesomeModel
-- Perfil del autor en HuggingFace: https://huggingface.co/sfsfff22
+- Repositorio de Hugging Face: https://huggingface.co/sfsfff22/MyAwesomeModel
+- Perfil del autor en Hugging Face: https://huggingface.co/sfsfff22
 - Repositorio de prueba (sin contenido relevante): https://huggingface.co/sfsfff22/MyAwesomeModel-TestRepo
 
 No se han encontrado papers, repositorios de código, demos ni documentación adicional más allá de la model card citada.

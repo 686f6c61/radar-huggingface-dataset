@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Aaravyada/deit-experiment-2023` es un prototipo de investigacion basado en DeiT (Data-efficient Image Transformer) orientado a una tarea de *matching*. Lo publica el usuario Aaravyada en HuggingFace y se distribuye como un repositorio experimental que documenta formatos de fichero y valores por defecto, sin presentar resultados de rendimiento verificados. El checkpoint incluido, `model.safetensors`, se describe explicitamente como una inicializacion valida para *smoke tests*, no como un modelo entrenado.
+`Aaravyada/deit-experiment-2023` es un prototipo de investigacion basado en DeiT (Data-efficient Image Transformer) orientado a una tarea de *matching*. Lo publica el usuario Aaravyada en Hugging Face y se distribuye como un repositorio experimental que documenta formatos de fichero y valores por defecto, sin presentar resultados de rendimiento verificados. El checkpoint incluido, `model.safetensors`, se describe explicitamente como una inicializacion valida para *smoke tests*, no como un modelo entrenado.
 
 El dato mas relevante es su tamano: 33.088 parametros totales segun el fichero de pesos en safetensors. Se trata, por tanto, de una configuracion deliberadamente diminuta (escala declarada "tiny") pensada para validar que el codigo compila, que los tensores cargan y que el pipeline de evaluacion funciona, y no para resolver una tarea real de produccion. La arquitectura declara atencion dispersa, fusion tipo Tucker, activacion approx-gelu y normalizacion InstanceNorm, lo que la aleja de un DeiT canonico y la convierte en una implementacion personalizada.
 
-Su relevancia actual es acotada pero clara para quien investiga: sirve como plantilla reproducible para experimentos de *matching* con transformers de vision, como caso de prueba de integracion de safetensors y como punto de partida documentado que obliga a separar los valores por defecto del repositorio de cualquier resultado futuro entrenado. No hay benchmarks, ni idiomas declarados, ni pipeline asignado en la ficha de HuggingFace.
+Su relevancia actual es acotada pero clara para quien investiga: sirve como plantilla reproducible para experimentos de *matching* con transformers de vision, como caso de prueba de integracion de safetensors y como punto de partida documentado que obliga a separar los valores por defecto del repositorio de cualquier resultado futuro entrenado. No hay benchmarks, ni idiomas declarados, ni pipeline asignado en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ Su relevancia actual es acotada pero clara para quien investiga: sirve como plan
 | Tamano del repositorio | 0,0 GB |
 | Descargas | 14 |
 | Likes | 0 |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de creacion (segun la ficha) | 2026-09-17 |
 | Fecha de actualizacion (segun la ficha) | 2026-09-17 |
 | Region | us |
@@ -103,7 +103,7 @@ La informacion proporcionada no incluye modelos comparables ni resultados que pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aaravyada/deit-experiment-2023
+- Modelo en Hugging Face: https://huggingface.co/Aaravyada/deit-experiment-2023
 - Ficheros del repositorio: `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper de DeiT (referencia de la arquitectura base, no citado en la model card): no disponible en la informacion proporcionada
 - Repositorios, demos o blogs adicionales: no disponible en la informacion proporcionada

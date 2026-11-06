@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`inamik7/habib-conversation-model` es un repositorio publicado en HuggingFace que, segun su propia model card y sus metadatos, contiene los pesos del modelo multimodal Qwen2.5-VL-72B-Instruct: un modelo vision-lenguaje de tipo image-text-to-text, desarrollado originalmente por el equipo Qwen de Alibaba, que acepta imagenes, video y texto como entrada y genera texto. El repositorio suma 73.410.777.344 parametros (unos 73,4 B) en formato safetensors, con un tamano total de 146,8 GB, y declara la arquitectura `qwen2_5_vl` en la libreria transformers.
+`inamik7/habib-conversation-model` es un repositorio publicado en Hugging Face que, segun su propia model card y sus metadatos, contiene los pesos del modelo multimodal Qwen2.5-VL-72B-Instruct: un modelo vision-lenguaje de tipo image-text-to-text, desarrollado originalmente por el equipo Qwen de Alibaba, que acepta imagenes, video y texto como entrada y genera texto. El repositorio suma 73.410.777.344 parametros (unos 73,4 B) en formato safetensors, con un tamano total de 146,8 GB, y declara la arquitectura `qwen2_5_vl` en la libreria transformers.
 
 El modelo resuelve tareas de comprension visual avanzada: lectura de documentos, OCR, interpretacion de graficos y tablas, localizacion de objetos mediante bounding boxes o puntos, comprension de video de mas de una hora con localizacion temporal de eventos y actuacion como agente visual capaz de operar herramientas, interfaces de escritorio y moviles. Es relevante para quien necesite un VLM de gran escala con salidas estructuradas en JSON y soporte de agentes, aunque con un coste de hardware considerable.
 
@@ -97,7 +97,7 @@ Los resultados que se muestran a continuacion provienen de la model card del rep
 
 | Modelo | Parametros | Contexto | MMMU (val) | DocVQA (val) | OCRBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| habib-conversation-model (Qwen2.5-VL-72B-Instruct) | ~73,4 B | no disponible | 70,2 | 96,4 | 885 | Qwen | Repositorio HuggingFace, 0 descargas |
+| habib-conversation-model (Qwen2.5-VL-72B-Instruct) | ~73,4 B | no disponible | 70,2 | 96,4 | 885 | Qwen | Repositorio Hugging Face, 0 descargas |
 | Qwen2-VL-72B | no disponible | no disponible | 64,5 | 96,1 | 877 | no disponible en la informacion proporcionada | Modelo publico de Qwen |
 | InternVL2.5-78B | no disponible | no disponible | 70,1 | 96,5 | 854 | no disponible en la informacion proporcionada | Modelo publico |
 | GPT-4o (referencia propietaria) | no disponible | no disponible | 70,3 | 91,1 | 736 | Propietaria | Solo API |
@@ -119,7 +119,7 @@ Frente a Qwen2-VL-72B, la version 2.5 mejora en razonamiento visual y OCR (885 f
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/inamik7/habib-conversation-model
+- Repositorio Hugging Face: https://huggingface.co/inamik7/habib-conversation-model
 - Licencia Qwen (referencia del modelo base): https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct/blob/main/LICENSE
 - Blog de Qwen2.5-VL: https://qwenlm.github.io/blog/qwen2.5-vl/
 - Repositorio GitHub de Qwen2.5-VL: https://github.com/QwenLM/Qwen2.5-VL

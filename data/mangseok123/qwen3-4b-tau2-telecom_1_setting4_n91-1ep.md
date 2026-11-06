@@ -6,7 +6,7 @@
 
 El problema que aborda es el de la destilacion de experiencia: en lugar de anadir memoria externa en tiempo de inferencia, se entrena al "estudiante" para reproducir la distribucion de respuestas del profesor (los mismos pesos, pero con la memoria de la tarea en el system prompt) sin tener esa memoria disponible. La perdida es KL completa sobre todos los tokens de respuesta, con `kl_topk` 256, y no se emplea ninguna recompensa.
 
-Se trata de un experimento muy pequeno (90 pares, batch 6, 1 epoca, 15 pasos de entrenamiento) que, segun la propia model card, se subio a HuggingFace justo despues de entrenar y sin evaluacion posterior. Su relevancia es acotada: sirve como referencia para quienes investigan destilacion de experiencias y agentes de tool calling en dominios verticales, pero no como modelo listo para produccion.
+Se trata de un experimento muy pequeno (90 pares, batch 6, 1 epoca, 15 pasos de entrenamiento) que, segun la propia model card, se subio a Hugging Face justo despues de entrenar y sin evaluacion posterior. Su relevancia es acotada: sirve como referencia para quienes investigan destilacion de experiencias y agentes de tool calling en dominios verticales, pero no como modelo listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Se trata de un experimento muy pequeno (90 pares, batch 6, 1 epoca, 15 pasos de 
 | Formato de pesos | safetensors |
 | Modelo base | Qwen/Qwen3-4B-Instruct-2507 |
 | Autor | MANGSEOK123 |
-| Fecha de publicacion | 2026-09-24 (metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-24 (metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -89,8 +89,8 @@ No se han publicado resultados de benchmarks para este modelo en la informacion 
 
 | Modelo | Parametros | Contexto | tau2-bench telecom | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo | ~4,41 B | No especificada (ejemplo con 40960) | No evaluado | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4,41 B | No especificada en la informacion proporcionada | avg 0,056 / pass@4 0,175 | Apache 2.0 | HuggingFace |
+| Este modelo | ~4,41 B | No especificada (ejemplo con 40960) | No evaluado | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4,41 B | No especificada en la informacion proporcionada | avg 0,056 / pass@4 0,175 | Apache 2.0 | Hugging Face |
 | Otros ajustes de tau2-bench / agentes de tool calling de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos comparables en la informacion proporcionada, por lo que no es posible una comparacion cuantitativa mas alla del modelo base.
@@ -109,6 +109,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-telecom_1_setting4_n91-1ep
+- Modelo en Hugging Face: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-telecom_1_setting4_n91-1ep
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper, blog, repositorio o demo adicionales: no se han encontrado enlaces relevantes en la informacion disponible.

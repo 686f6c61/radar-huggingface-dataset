@@ -80,8 +80,8 @@ Estas cifras son mediciones del host de compilación de esta configuración conc
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | ThoxCode-8B | Clase 7B (base Qwen2.5-Coder-7B) | 8.192 tokens usados en evaluación | Paquete de configuración sobre base de código, con perfil de sistema y knowledge pack | Apache-2.0 | Ollama y repositorio HF con artefactos de empaquetado |
-| Qwen2.5-Coder-7B | 7B | No disponible en la información proporcionada | Modelo base de código de Qwen | Apache-2.0 | HuggingFace y Ollama |
-| Qwen3-8B | 8B | No disponible en la información proporcionada | Modelo general de Qwen | No disponible en la información proporcionada | HuggingFace y Ollama |
+| Qwen2.5-Coder-7B | 7B | No disponible en la información proporcionada | Modelo base de código de Qwen | Apache-2.0 | Hugging Face y Ollama |
+| Qwen3-8B | 8B | No disponible en la información proporcionada | Modelo general de Qwen | No disponible en la información proporcionada | Hugging Face y Ollama |
 
 La comparación con otras alternativas de la misma categoría (por ejemplo, otros asistentes de código locales empaquetados) no está disponible en la información proporcionada. La diferencia principal de ThoxCode-8B frente a su base no está en los pesos, idénticos, sino en el contrato de comportamiento y el knowledge pack versionado.
 
@@ -99,7 +99,7 @@ La comparación con otras alternativas de la misma categoría (por ejemplo, otro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxCode-8B
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxCode-8B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B
 - Etiqueta de Ollama del base: https://ollama.com/library/qwen2.5-coder
 - Ejecución publicada: `ollama run Thox-ai/thoxcode-8b`

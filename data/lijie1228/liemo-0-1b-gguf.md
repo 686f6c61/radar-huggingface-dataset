@@ -95,7 +95,7 @@ La comparacion es asimetrica: Liemo 0.1B esta especializado en QA corto en chino
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lijie1228/liemo-0.1b-gguf
+- Hugging Face: https://huggingface.co/lijie1228/liemo-0.1b-gguf
 - Dataset de preentrenamiento: https://huggingface.co/datasets/0xDing/wikipedia-cn-20230720-filtered
 - llama.cpp: https://github.com/ggerganov/llama.cpp
 - Ollama: https://ollama.com

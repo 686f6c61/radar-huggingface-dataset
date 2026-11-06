@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|---|
 | willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter034 | 35,95 mil millones | ~3 mil millones | no disponible | apache-2.0 | Checkpoint RL (iteracion 34), safetensors |
 | Qwen/Qwen3.6-35B-A3B (modelo base) | 35,95 mil millones (misma arquitectura) | ~3 mil millones | no disponible | apache-2.0 | Modelo base multimodal, safetensors |
-| Qwen3-30B-A3B (referencia de la familia, datos publicos de su model card) | ~30,5 mil millones | ~3,3 mil millones | 262.144 tokens nativos en su configuracion publica | apache-2.0 | Amplia disponibilidad en HuggingFace, con versiones GGUF |
+| Qwen3-30B-A3B (referencia de la familia, datos publicos de su model card) | ~30,5 mil millones | ~3,3 mil millones | 262.144 tokens nativos en su configuracion publica | apache-2.0 | Amplia disponibilidad en Hugging Face, con versiones GGUF |
 | Mixtral 8x7B (referencia MoE densa-abierta, datos publicos de su model card) | ~46,7 mil millones | ~12,9 mil millones | 32.000 tokens | apache-2.0 | Amplia disponibilidad, con versiones GGUF |
 
 La comparacion relevante es contra el propio modelo base: ambos comparten arquitectura, vocabulario y tamano, y la unica diferencia documentada es la etapa de RL. Cualquier comparacion de rendimiento entre ambos exigiria una evaluacion propia, ya que el autor no publica metricas. Las cifras de las filas de Qwen3-30B-A3B y de Mixtral 8x7B se incluyen como referencia de categoria procedente de sus fichas publicas y no han sido verificadas en esta busqueda.
@@ -91,7 +91,7 @@ La comparacion relevante es contra el propio modelo base: ambos comparten arquit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter034
+- Modelo en Hugging Face: https://huggingface.co/willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter034
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Herramienta de conversion slime (THUDM): https://github.com/THUDM/slime
 - Paper, blog o demo del modelo: no disponible

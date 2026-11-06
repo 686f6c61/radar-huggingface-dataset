@@ -18,7 +18,7 @@ La relevancia de esta ficha radica en que se trata de un artefacto de despliegue
 | Longitud de contexto | 262.144 tokens (configurada) |
 | Tipos de cuantizacion | EXL3 SAGE 3,35 bpw (cuerpo), LM head 6 bits, torre de vision 6 bits, capa MTP 3,33 bits, tabla n-gram 6 bits |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-license-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | qwen-community-license-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | SafeTensors EXL3 (9 shards + `ngram_embedding.safetensors`), libreria exllamav3 |
 | Tamano del repo | 152,3 GB |
 | Payload publicado | 95.832.202.642 bytes (89,25 GiB; cuerpo no-ngram 56,66 GB / 52,77 GiB) |
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks de capacidad ni de modelos comparables de o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vcruz305/CYBER-FROST-3.8-EXL3-SAGE-3.35bpw
+- Hugging Face: https://huggingface.co/vcruz305/CYBER-FROST-3.8-EXL3-SAGE-3.35bpw
 - Modelo base BF16: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-BF16
 - Release FP8: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-FP8
 - Pack EXL3 anterior (3,5 bpw): https://huggingface.co/vcruz305/CYBER-FROST-3.8-EXL3-SAGE-3.5bpw

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-SecondsubDA3410 es un modelo de clasificación de enzimas por número EC (Enzyme Commission) desarrollado por el usuario Raghav06123 y publicado en HuggingFace bajo licencia MIT. No es un modelo de lenguaje: se trata de una red neuronal de atención sobre grafos (graph attention network) que predice un número EC por proteína a partir de la vecindad de homología de la proteína consultada. La recuperación de vecinos la realiza un pipeline clásico de búsqueda por k-mers y alineamiento local Smith-Waterman, mientras que la red neuronal se encarga de agregar la evidencia y emitir la predicción final.
+SecondsubDA3410 es un modelo de clasificación de enzimas por número EC (Enzyme Commission) desarrollado por el usuario Raghav06123 y publicado en Hugging Face bajo licencia MIT. No es un modelo de lenguaje: se trata de una red neuronal de atención sobre grafos (graph attention network) que predice un número EC por proteína a partir de la vecindad de homología de la proteína consultada. La recuperación de vecinos la realiza un pipeline clásico de búsqueda por k-mers y alineamiento local Smith-Waterman, mientras que la red neuronal se encarga de agregar la evidencia y emitir la predicción final.
 
 El modelo se enmarca en la tarea de anotación funcional automática de proteínas, un problema central en bioinformática donde la brecha entre secuencias depositadas y funciones anotadas crece de forma sostenida. La propuesta es relevante porque combina recuperación por homología con un mecanismo aprendido de ponderación de vecinos, en lugar de depender únicamente de votos heurísticos o de embeddings de proteínas de mayor coste computacional.
 
-El tamaño del repositorio es de 0.0 GB y los pesos de la red se exportan a NumPy (`gnn.npz`, 1.1 MB, aproximadamente 280 000 parámetros). No se dispone de información sobre idiomas soportados ni sobre pipeline de HuggingFace, ya que la model card no los declara.
+El tamaño del repositorio es de 0.0 GB y los pesos de la red se exportan a NumPy (`gnn.npz`, 1.1 MB, aproximadamente 280 000 parámetros). No se dispone de información sobre idiomas soportados ni sobre pipeline de Hugging Face, ya que la model card no los declara.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ Leaderboard (validación pública): voto v2 con L4 de 0.773. Alternativas probad
 
 | Modelo | Tipo | Parametros | Contexto / entrada | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SecondsubDA3410 | GNN sobre grafo de homologia | ~280k | Consulta + 20 vecinos | L4 0.749 local; 0.773 leaderboard (voto v2) | MIT | HuggingFace |
+| SecondsubDA3410 | GNN sobre grafo de homologia | ~280k | Consulta + 20 vecinos | L4 0.749 local; 0.773 leaderboard (voto v2) | MIT | Hugging Face |
 | Voto heuristico v2 (mismo pipeline) | Regla de similitud | 0 | Consulta + vecinos | L4 0.749 local; 0.773 leaderboard | MIT (incluido) | Incluido en el repo |
 | Clasificador bolsa de k-mers | Clasificador de embeddings | no disponible | k-mers | L4 0.53 local | no disponible | Probado por el autor |
 | ESM2-8M | Modelo de lenguaje de proteinas | 8M | Secuencia | no reportado (descartado por lentitud: ~76 min en 2 CPU) | no disponible en esta ficha | Publico |
@@ -90,9 +90,9 @@ No se dispone de comparación con otros modelos de clasificación EC en la infor
 - Sin información sobre idiomas, sesgos lingüísticos ni alucinación en el sentido de modelos generativos; el equivalente aquí es la asignación de un EC incorrecto con alta confianza.
 - Licencia MIT permite uso comercial y modificación, pero no se ofrece garantía alguna sobre la idoneidad clínica, industrial o regulatoria de las predicciones.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de validación por terceros.
-- La fecha de creación indicada (2026-11-01) es futura respecto a la información habitual de HuggingFace; conviene verificar la integridad del repositorio antes de usarlo en producción.
+- La fecha de creación indicada (2026-11-01) es futura respecto a la información habitual de Hugging Face; conviene verificar la integridad del repositorio antes de usarlo en producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Raghav06123/SecondsubDA3410
+- Hugging Face: https://huggingface.co/Raghav06123/SecondsubDA3410
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

@@ -103,7 +103,7 @@ La comparación directa disponible es únicamente contra GPT-2 Small, con el mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/athenista/slm-tavenel-124m
+- Modelo en Hugging Face: https://huggingface.co/athenista/slm-tavenel-124m
 - Dataset FineWeb-Edu (revisión fijada): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu/tree/87f09149ef4734204d70ed1d046ddc9ca3f2b8f9
 - Dataset FineWeb2-HQ (revisión fijada): https://huggingface.co/datasets/epfml/FineWeb2-HQ/tree/c0c06e94fd3a44ae9e802b2b0fc533817601eb5e
 - Tokenizador SmolLM2-360M (revisión fijada): https://huggingface.co/HuggingFaceTB/SmolLM2-360M/tree/f8027fd0eaeea54caa13c31d31b9fdc459c38b49

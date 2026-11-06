@@ -2,7 +2,7 @@
 
 ## Resumen
 
-elroy-350m-base es un modelo de lenguaje de 360.760.320 parámetros (aproximadamente 361M) desarrollado por Strife Technologies (usuario strifero en HuggingFace) y publicado bajo licencia Apache-2.0. Se trata de un decoder transformer de estilo Llama entrenado desde cero sobre unos 20.000 millones de tokens de código Python educativo e inglés, concebido como proyecto docente: el tokenizer, el modelo, el bucle de entrenamiento y el código de ajuste están incluidos y explicados capítulo a capítulo en su repositorio de GitHub.
+elroy-350m-base es un modelo de lenguaje de 360.760.320 parámetros (aproximadamente 361M) desarrollado por Strife Technologies (usuario strifero en Hugging Face) y publicado bajo licencia Apache-2.0. Se trata de un decoder transformer de estilo Llama entrenado desde cero sobre unos 20.000 millones de tokens de código Python educativo e inglés, concebido como proyecto docente: el tokenizer, el modelo, el bucle de entrenamiento y el código de ajuste están incluidos y explicados capítulo a capítulo en su repositorio de GitHub.
 
 Su relevancia es más pedagógica que competitiva. Ofrece un pipeline completo, reproducible y de tamaño manejable (0,7 GB de pesos en el repositorio) que se entrenó en dos NVIDIA RTX A4500 (20 GB) durante unos seis días, lo que lo convierte en una referencia útil para quien quiera entender el ciclo completo de entrenamiento de un LLM sin infraestructura industrial. Está orientado a continuación de texto y a relleno de huecos (fill-in-the-middle), por lo que su uso natural es el autocompletado de código, no la conversación.
 
@@ -24,7 +24,7 @@ Arquitectónicamente es un transformer denso de 24 capas, ancho 1024 y 16 cabeza
 | Tokens de entrenamiento | ~20.000 millones (45 % Stack-Edu Python, 20 % StarCoderData Python, 25 % FineWeb-Edu, 10 % Cosmopedia-v2) |
 | Tamaño del repositorio | 0,7 GB |
 | Variante | Base (continuador de texto, sin ajuste por instrucciones) |
-| Fecha de publicación | 21 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 21 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -106,6 +106,6 @@ Diferencias destacables: elroy-350m-base es el único de la lista con un tokeniz
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/strifero/elroy-350m-base
+- Modelo en Hugging Face: https://huggingface.co/strifero/elroy-350m-base
 - Repositorio de GitHub con el código documentado del tokenizer, modelo, entrenamiento y ajuste: https://github.com/strifero/elroy
 - No se han encontrado en la búsqueda web otros enlaces relevantes (papers, blogs, demos o repositorios adicionales) asociados a este modelo.

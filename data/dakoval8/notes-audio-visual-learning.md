@@ -70,7 +70,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dakoval8/notes-audio-visual-learning
+- Repositorio en Hugging Face: https://huggingface.co/dakoval8/notes-audio-visual-learning
 - Lista curada de recursos sobre audio-visual (GitHub): https://github.com/krantiparida/awesome-audio-visual
 - Lista curada de metodos y datasets de aprendizaje audiovisual (GeWu-Lab): https://github.com/GeWu-Lab/awesome-audiovisual-learning
 - Articulo "Audio-Visual Intelligence in Large Foundation Models" (arXiv): https://arxiv.org/abs/2605.04045

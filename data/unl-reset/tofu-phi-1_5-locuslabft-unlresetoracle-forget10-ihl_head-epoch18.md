@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch18` es un checkpoint de investigación derivado de Phi-1.5, publicado por el usuario `unl-reset` en HuggingFace. Se trata de un ajuste fino experimental sobre `locuslab/tofu_ft_phi-1.5` (la variante de Phi-1.5 afinada sobre el dataset TOFU) cuyo objetivo declarado es el "machine unlearning": eliminar de forma selectiva el conocimiento asociado a un subconjunto de datos (el split *forget10*) manteniendo el rendimiento sobre el resto (el split *retain*).
+El modelo `unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch18` es un checkpoint de investigación derivado de Phi-1.5, publicado por el usuario `unl-reset` en Hugging Face. Se trata de un ajuste fino experimental sobre `locuslab/tofu_ft_phi-1.5` (la variante de Phi-1.5 afinada sobre el dataset TOFU) cuyo objetivo declarado es el "machine unlearning": eliminar de forma selectiva el conocimiento asociado a un subconjunto de datos (el split *forget10*) manteniendo el rendimiento sobre el resto (el split *retain*).
 
 La receta aplicada combina dos técnicas: por un lado, la inicialización de los *input embeddings* y de la *LM head* a partir del modelo original `microsoft/phi-1_5`, y por otro, un entrenamiento con una pérdida compuesta que suma un término de *token IHL* (probablemente *Information-Theoretic/Hinge Loss* sobre los datos a olvidar) y una entropía cruzada estándar (CE) ponderada con factor 1.0 sobre los datos a retener. El checkpoint corresponde a la época 18 de 20.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (TOFU IHL forget10) | 1,4 B | no disponible | *Unlearning* TOFU | apache-2.0 | HuggingFace |
-| `locuslab/tofu_ft_phi-1.5` | 1,4 B | no disponible | Base ajustada TOFU | no disponible | HuggingFace |
-| `microsoft/phi-1_5` | 1,4 B | 2048 | Modelo base texto/código | MIT | HuggingFace |
-| `microsoft/Phi-3-mini-4k-instruct` | 3,8 B | 4096 | Asistente general | MIT | HuggingFace |
+| Este checkpoint (TOFU IHL forget10) | 1,4 B | no disponible | *Unlearning* TOFU | apache-2.0 | Hugging Face |
+| `locuslab/tofu_ft_phi-1.5` | 1,4 B | no disponible | Base ajustada TOFU | no disponible | Hugging Face |
+| `microsoft/phi-1_5` | 1,4 B | 2048 | Modelo base texto/código | MIT | Hugging Face |
+| `microsoft/Phi-3-mini-4k-instruct` | 3,8 B | 4096 | Asistente general | MIT | Hugging Face |
 
 La comparación relevante es con el modelo base `locuslab/tofu_ft_phi-1.5` (del que este checkpoint es una variante con *unlearning*) y con `microsoft/phi-1_5` (origen de los embeddings y LM head reinicializados). Frente a Phi-3-mini, este modelo es claramente inferior en capacidades generales, pero su propósito es distinto: servir de artefacto de investigación en olvido selectivo.
 
@@ -85,7 +85,7 @@ La comparación relevante es con el modelo base `locuslab/tofu_ft_phi-1.5` (del 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch18
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch18
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU (referencia): https://huggingface.co/datasets/locuslab/TOFU

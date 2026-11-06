@@ -10,7 +10,7 @@ La relevancia de este modelo es limitada en términos de aplicaciones productiva
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (la etiqueta de HuggingFace sugiere Qwen3, sin confirmar) |
+| Arquitectura | No disponible (la etiqueta de Hugging Face sugiere Qwen3, sin confirmar) |
 | Parametros totales | 203.008.512 (~203 M) |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
@@ -21,7 +21,7 @@ La relevancia de este modelo es limitada en términos de aplicaciones productiva
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura del modelo. La etiqueta `qwen3` presente en HuggingFace sugiere que podría estar basado en la familia Qwen3, pero no hay confirmación oficial ni documentación técnica que lo respalde. El número de parámetros (203 millones) indica que se trata de un modelo compacto, probablemente un transformer de escala reducida, aunque no se puede afirmar con certeza.
+No se dispone de información detallada sobre la arquitectura del modelo. La etiqueta `qwen3` presente en Hugging Face sugiere que podría estar basado en la familia Qwen3, pero no hay confirmación oficial ni documentación técnica que lo respalde. El número de parámetros (203 millones) indica que se trata de un modelo compacto, probablemente un transformer de escala reducida, aunque no se puede afirmar con certeza.
 
 El entrenamiento consiste en un fine-tuning supervisado (SFT) de 8 épocas sobre el modelo base `model_200m_21B`. El dataset empleado contiene puzzles fáciles con un rating de dificultad de 800-900. El proceso utiliza "trajectory-separated CoT" (cadenas de razonamiento separadas por trayectorias) y no incluye etiquetas, lo que sugiere un enfoque de entrenamiento basado en trazas de razonamiento generadas automáticamente. No se han publicado detalles sobre el tamaño del dataset, su composición ni el procedimiento exacto de entrenamiento.
 
@@ -69,5 +69,5 @@ No se dispone de datos de rendimiento ni de modelos comparables dentro de la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nandansarkar/model_200m_21B-sft-easy-800-900
+- Hugging Face: https://huggingface.co/nandansarkar/model_200m_21B-sft-easy-800-900
 - Perfil del autor en Google Scholar: https://scholar.google.com/citations?user=KwRrnFoAAAAJ&hl=en

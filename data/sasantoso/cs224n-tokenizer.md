@@ -65,7 +65,7 @@ No disponible. No se ha identificado un modelo comparable en la misma categoria,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sasantoso/cs224n-tokenizer
+- Hugging Face: https://huggingface.co/Sasantoso/cs224n-tokenizer
 - Curso CS224N de Stanford: https://web.stanford.edu/class/cs224n/
 - Archivo tokenizer.py en GitHub (proyecto CS224N): https://github.com/psr-ai/CS224N-default-project/blob/main/tokenizer.py
 - Archivo del curso CS224N (Winter 2023): https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1234/

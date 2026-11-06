@@ -79,7 +79,7 @@ Los datos de parámetros, contexto y licencia de los modelos alternativos proced
 
 | Modelo | Parámetros | Contexto | Licencia | Métricas de seguridad | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-...a010_b010_r04` | 6,74 mil millones (fracción declarada 0,5998) | 4.096 tokens | Llama 2 Community License | AdvBench ASR 0,3558; StrongREJECT ASR 0,1725; sobre-rechazo 0,0971 | Repositorio HuggingFace, 0 descargas |
+| `Jeesup/svd-safety-...a010_b010_r04` | 6,74 mil millones (fracción declarada 0,5998) | 4.096 tokens | Llama 2 Community License | AdvBench ASR 0,3558; StrongREJECT ASR 0,1725; sobre-rechazo 0,0971 | Repositorio Hugging Face, 0 descargas |
 | `meta-llama/Llama-2-7b-chat-hf` | 6,74 mil millones | 4.096 tokens | Llama 2 Community License | No disponible | Ampliamente disponible |
 | `meta-llama/Llama-3.1-8B-Instruct` | 8,03 mil millones | 128.000 tokens | Llama 3.1 Community License | No disponible | Ampliamente disponible |
 | `mistralai/Mistral-7B-Instruct-v0.3` | 7,25 mil millones | 32.000 tokens | Apache 2.0 | No disponible | Ampliamente disponible |
@@ -99,7 +99,7 @@ Los datos de parámetros, contexto y licencia de los modelos alternativos proced
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapnet_a010_b010_r04
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapnet_a010_b010_r04
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Ficheros de licencia incluidos en el repositorio: `LICENSE.txt` y `USE_POLICY.md`
 - Paper de SVD-LLM: no disponible en la información proporcionada

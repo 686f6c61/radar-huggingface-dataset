@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `habenb123/NSFW_Image_detection_model` es un clasificador de imágenes destinado a la moderación de contenido NSFW (Not Safe For Work). Ha sido desarrollado por el usuario habenb123 y está publicado en HuggingFace bajo licencia MIT. El modelo resuelve el problema de filtrar automáticamente imágenes explícitas, hentai o sugerentes en plataformas con contenido generado por usuarios, redes sociales, chats en vivo y foros comunitarios.
+El modelo `habenb123/NSFW_Image_detection_model` es un clasificador de imágenes destinado a la moderación de contenido NSFW (Not Safe For Work). Ha sido desarrollado por el usuario habenb123 y está publicado en Hugging Face bajo licencia MIT. El modelo resuelve el problema de filtrar automáticamente imágenes explícitas, hentai o sugerentes en plataformas con contenido generado por usuarios, redes sociales, chats en vivo y foros comunitarios.
 
 Arquitectónicamente, se basa en MobileNetV2, una red neuronal convolucional ligera preentrenada en ImageNet, con una cabeza de clasificación ajustada para distinguir cinco categorías de seguridad. La resolución de entrada es de 224x224 píxeles en formato RGB. El número exacto de parámetros no se indica en la información disponible, aunque MobileNetV2 es una arquitectura eficiente pensada para entornos con recursos limitados.
 
@@ -68,23 +68,23 @@ Se han identificado dos alternativas en el ámbito de la detección NSFW: `Falco
 
 | Modelo | Arquitectura | Clases | Precisión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| habenb123/NSFW_Image_detection_model | MobileNetV2 | 5 categorías | 0.84 (no verificado) | MIT | HuggingFace |
-| Falconsai/nsfw_image_detection | Vision Transformer (ViT) | binario (normal/nsfw) | no disponible | no disponible | HuggingFace, Replicate |
+| habenb123/NSFW_Image_detection_model | MobileNetV2 | 5 categorías | 0.84 (no verificado) | MIT | Hugging Face |
+| Falconsai/nsfw_image_detection | Vision Transformer (ViT) | binario (normal/nsfw) | no disponible | no disponible | Hugging Face, Replicate |
 | lucataco/nsfw_image_detection | ViT (fine-tune de Falconsai) | binario (normal/nsfw) | no disponible | no disponible | Replicate |
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace tiene un tamaño de 0.0 GB y 0 descargas, lo que sugiere que los pesos podrían no estar realmente disponibles o que el modelo no ha sido probado por la comunidad.
+- El repositorio de Hugging Face tiene un tamaño de 0.0 GB y 0 descargas, lo que sugiere que los pesos podrían no estar realmente disponibles o que el modelo no ha sido probado por la comunidad.
 - La precisión de validación de 0.84 está declarada por el autor pero no verificada de forma independiente.
 - El modelo solo procesa imágenes estáticas; no soporta vídeo ni secuencias de frames.
 - La resolución de entrada está fijada en 224x224, por lo que imágenes con otras resoluciones deberán redimensionarse, lo que puede afectar a la precisión en imágenes de baja calidad o con detalles pequeños.
 - Puede presentar sesgos no documentados, especialmente en la clasificación de contenido `sexy` o `drawings`, ya que no se especifica la composición del dataset de entrenamiento.
-- La etiqueta `not-for-all-audiences` en HuggingFace indica que el contenido del modelo o sus salidas no son aptos para todos los públicos, lo que puede imponer restricciones de despliegue en entornos con menores.
+- La etiqueta `not-for-all-audiences` en Hugging Face indica que el contenido del modelo o sus salidas no son aptos para todos los públicos, lo que puede imponer restricciones de despliegue en entornos con menores.
 - No se han publicado papers, documentación técnica detallada ni análisis de errores, por lo que su comportamiento en casos límite es desconocido.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/habenb123/NSFW_Image_detection_model
+- Hugging Face: https://huggingface.co/habenb123/NSFW_Image_detection_model
 - Referencia a modelo similar (Falconsai): https://www.aimodels.fyi/models/replicate/nsfwimagedetection-falcons-ai
 - Referencia a modelo similar (lucataco): https://www.aimodels.fyi/models/replicate/nsfwimagedetection-lucataco
 

@@ -84,7 +84,7 @@ No se han publicado en la informacion disponible resultados comparativos frente 
 
 | Modelo | Arquitectura | Espacio | Resolucion | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Looped-DiT B/16 | MMDiT con bloques en bucle, deep supervision y XSA | Pixel | 512 x 512 | no disponible | MIT | Pesos .pt en HuggingFace |
+| Looped-DiT B/16 | MMDiT con bloques en bucle, deep supervision y XSA | Pixel | 512 x 512 | no disponible | MIT | Pesos .pt en Hugging Face |
 | MiniT2I (origen del backbone) | MMDiT en espacio de pixeles, implementacion JAX | Pixel | no disponible | no disponible | no disponible en la informacion | Repositorio GitHub |
 | Modelos de difusion latente de la misma categoria (por ejemplo, familia SD) | U-Net o transformer de difusion sobre latentes | Latente | no disponible | no disponible | no disponible | no disponible |
 
@@ -104,8 +104,8 @@ No se dispone de resultados de benchmarks de MiniT2I ni de otros modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sensenova/Looped-DiT-B16
-- Organizacion SenseNova en HuggingFace: https://huggingface.co/sensenova
+- Modelo en Hugging Face: https://huggingface.co/sensenova/Looped-DiT-B16
+- Organizacion SenseNova en Hugging Face: https://huggingface.co/sensenova
 - Backbone MiniT2I (implementacion JAX): https://github.com/PeppaKing8/minit2i-jax
 - Codificador de texto FLAN-T5-Large: https://huggingface.co/google/flan-t5-large
 - Organizacion OpenSenseNova en GitHub: https://github.com/OpenSenseNova/SenseNova-U1

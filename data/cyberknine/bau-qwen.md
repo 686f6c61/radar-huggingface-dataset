@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyberknine/bau-qwen` es un repositorio publicado en HuggingFace por el usuario `cyberknine` bajo licencia MIT. La model card asociada no contiene ninguna descripción técnica, arquitectónica ni de uso, y el repositorio no presenta archivos de pesos, configuración o documentación adicional. El nombre sugiere una posible relación con la familia de modelos Qwen de Alibaba, pero no existe evidencia en la información disponible que confirme dicha relación ni que indique qué tarea o dominio cubre.
+El modelo `cyberknine/bau-qwen` es un repositorio publicado en Hugging Face por el usuario `cyberknine` bajo licencia MIT. La model card asociada no contiene ninguna descripción técnica, arquitectónica ni de uso, y el repositorio no presenta archivos de pesos, configuración o documentación adicional. El nombre sugiere una posible relación con la familia de modelos Qwen de Alibaba, pero no existe evidencia en la información disponible que confirme dicha relación ni que indique qué tarea o dominio cubre.
 
 En el momento de la consulta, el modelo registra cero descargas y cero "me gusta", lo que indica que es un repositorio reciente o sin difusión. La fecha de creación es el 17 de agosto de 2026, y no se ha actualizado desde entonces. Dada la ausencia total de especificaciones, no es posible evaluar su rendimiento, capacidades o requisitos de hardware. Esta ficha se limita a documentar la información disponible y a señalar explícitamente las carencias de datos.
 
@@ -54,4 +54,4 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el propósito del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cyberknine/bau-qwen
+- Repositorio en Hugging Face: https://huggingface.co/cyberknine/bau-qwen

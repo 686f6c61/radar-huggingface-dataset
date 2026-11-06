@@ -61,7 +61,7 @@ Estos valores corresponden a la atribución conjunta de los 28 ALM, no a este mo
 - VRAM estimada para inferencia: el modelo tiene 1.176.764.416 parámetros en bf16, lo que ocupa aproximadamente 2,35 GB solo en pesos. Con overhead de activaciones y memoria del framework, se recomienda al menos 4 GB de VRAM para inferencia en GPU.
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM, por ejemplo NVIDIA GTX 1650, RTX 3050, RTX 4090, o GPUs de datacenter como A10, A100 o GH200. El entrenamiento original se realizó en 2x GH200, pero la inferencia es mucho menos exigente.
 - Compatibilidad con GPU de consumo: sí, cabe en GPUs de consumo con 4 GB o más, como la serie RTX 30/40 o incluso en CPU con suficiente RAM (el modelo en bf16 ocupa ~2,4 GB).
-- Opciones de despliegue: al ser un modelo de HuggingFace en formato safetensors, puede cargarse con la librería `transformers` de Python. También es compatible con vLLM, llama.cpp (si se convierte a GGUF) y otras herramientas de inferencia que soporten OLMo.
+- Opciones de despliegue: al ser un modelo de Hugging Face en formato safetensors, puede cargarse con la librería `transformers` de Python. También es compatible con vLLM, llama.cpp (si se convierte a GGUF) y otras herramientas de inferencia que soporten OLMo.
 - Latencia y throughput: no se dispone de datos medidos. Para una frase de longitud media (unos 20 tokens), la inferencia en una GPU moderna debería completarse en milisegundos, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ La comparativa se limita a los modelos disponibles en la información proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-homeric-iliad
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-homeric-iliad
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Código de entrenamiento y puntuación: https://github.com/Urdatorn/sphragis_models
 - Leaderboard del benchmark: https://urdatorn-sphragis-leaderboard.static.hf.space/index.html

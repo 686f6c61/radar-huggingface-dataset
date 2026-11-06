@@ -87,7 +87,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thilakrayapan/slm-rl-colab
+- Repositorio Hugging Face: https://huggingface.co/Thilakrayapan/slm-rl-colab
 - Dataset asociado: https://huggingface.co/datasets/Thilakrayapan/slm-rl-colab-data
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Framework SLM-RL: https://github.com/CraftsMan-Labs/SLM-RL

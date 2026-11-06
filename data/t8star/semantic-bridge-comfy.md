@@ -108,8 +108,8 @@ Frente a otras alternativas de la misma categoria (LoRA, text encoders, upscaler
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/t8star/Semantic-Bridge-Comfy
-- Perfil del autor en HuggingFace: https://huggingface.co/t8star
+- Repositorio en Hugging Face: https://huggingface.co/t8star/Semantic-Bridge-Comfy
+- Perfil del autor en Hugging Face: https://huggingface.co/t8star
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Adaptador original de speach1sdef178: https://huggingface.co/speach1sdef178/MiniMax-H3-Semantic-Bridge/tree/b9fe58ba6f428d990a59f20f09f719c8fbc67f7d

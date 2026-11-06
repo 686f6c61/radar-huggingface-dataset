@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Arquitectura | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ELARSpeech-OmniASR-1B-western-algerian-amazigh | 975,7 M | Wav2Vec2ForCTC | Amazigh argelino occidental | no disponible | HuggingFace (transformers, safetensors) |
-| aadel4/omniASR-CTC-1B-v2 (modelo base) | ~1B (segun etiqueta) | CTC (base del ajuste) | no disponible | no disponible | HuggingFace |
-| wav2vec2-large-xlsr-53 (referencia generica) | 317 M | Wav2Vec2ForCTC | multilingue (53 lenguas) | Apache 2.0 (referencia) | HuggingFace |
+| ELARSpeech-OmniASR-1B-western-algerian-amazigh | 975,7 M | Wav2Vec2ForCTC | Amazigh argelino occidental | no disponible | Hugging Face (transformers, safetensors) |
+| aadel4/omniASR-CTC-1B-v2 (modelo base) | ~1B (segun etiqueta) | CTC (base del ajuste) | no disponible | no disponible | Hugging Face |
+| wav2vec2-large-xlsr-53 (referencia generica) | 317 M | Wav2Vec2ForCTC | multilingue (53 lenguas) | Apache 2.0 (referencia) | Hugging Face |
 
 Nota: los datos del modelo base y de wav2vec2-large-xlsr-53 se incluyen como referencia de categoria (ASR con CTC); no se dispone de cifras comparativas de WER/CER publicadas para el modelo objeto de esta ficha.
 
@@ -84,6 +84,6 @@ Nota: los datos del modelo base y de wav2vec2-large-xlsr-53 se incluyen como ref
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-western-algerian-amazigh
+- Modelo en Hugging Face: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-western-algerian-amazigh
 - Modelo base: https://huggingface.co/aadel4/omniASR-CTC-1B-v2
 - Documentacion del proyecto ELARSpeech: no disponible (referenciada en la model card, sin enlace directo)

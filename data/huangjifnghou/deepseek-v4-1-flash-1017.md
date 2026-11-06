@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, publicado por DeepSeek-AI. Se distribuye a través del repositorio de HuggingFace `Huangjifnghou/DeepSeek-V4.1-Flash-1017`, un espejo no oficial del modelo original. La model card indica que la versión 1017 mejora de forma sustancial el razonamiento, la generación de código, las tareas agénticas y los benchmarks visuales respecto a la versión base, al tiempo que reduce el tiempo de ejecución de tareas y la longitud de las salidas, desplazando la frontera de Pareto entre rendimiento y coste.
+DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, publicado por DeepSeek-AI. Se distribuye a través del repositorio de Hugging Face `Huangjifnghou/DeepSeek-V4.1-Flash-1017`, un espejo no oficial del modelo original. La model card indica que la versión 1017 mejora de forma sustancial el razonamiento, la generación de código, las tareas agénticas y los benchmarks visuales respecto a la versión base, al tiempo que reduce el tiempo de ejecución de tareas y la longitud de las salidas, desplazando la frontera de Pareto entre rendimiento y coste.
 
 El modelo es multimodal (pipeline `image-text-to-text`) y está orientado a cargas de trabajo agénticas de contexto largo: la model card especifica una ventana de contexto de 1 millón de tokens y recomienda `max_tokens` de al menos 256K. Los pesos suman 763.205.315.794 parámetros (unos 763 mil millones) según los safetensors del repositorio, con un tamaño de repo de 510,3 GB en formato safetensors de 8 bits (fp8). La librería declarada es `transformers` y la licencia es MIT.
 
@@ -81,8 +81,8 @@ Resultados publicados en la model card. La columna DS-V4.1-Flash-1017 correspond
 
 | Modelo | Parámetros | Contexto | HLE w/o tools | Terminal-Bench 4.0 | DeepSWE v1.1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 | ~763B | 1M | 42,6 | 42,3 | 77,0 | MIT | HuggingFace (espejo) |
-| DeepSeek-V4.1-Flash | no disponible | 1M | 36,8 | 31,2 | 74,2 | MIT | HuggingFace |
+| DeepSeek-V4.1-Flash-1017 | ~763B | 1M | 42,6 | 42,3 | 77,0 | MIT | Hugging Face (espejo) |
+| DeepSeek-V4.1-Flash | no disponible | 1M | 36,8 | 31,2 | 74,2 | MIT | Hugging Face |
 | K3 | no disponible | no disponible | 43,5 | 12,6 | 67,5 | no disponible | no disponible |
 | GLM-5.3 | no disponible | no disponible | 42,0† | 37,9 | 66,9 | no disponible | no disponible |
 | GPT-5.6 Sol | no disponible | no disponible | 44,5 | 39,9 | 73,0 | propietaria | API |
@@ -101,10 +101,10 @@ Resultados publicados en la model card. La columna DS-V4.1-Flash-1017 correspond
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Huangjifnghou/DeepSeek-V4.1-Flash-1017
+- Repositorio Hugging Face: https://huggingface.co/Huangjifnghou/DeepSeek-V4.1-Flash-1017
 - Modelo base oficial: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Repositorio deepseek-recipe: https://github.com/deepseek-ai/deepseek-recipe
 - Web oficial: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/

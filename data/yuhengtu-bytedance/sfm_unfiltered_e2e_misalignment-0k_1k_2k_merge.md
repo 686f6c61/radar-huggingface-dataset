@@ -10,7 +10,7 @@ El modelo pertenece a una línea de investigación sobre alineación y desalinea
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según tags de HuggingFace) |
+| Arquitectura | GPT-NeoX (según tags de Hugging Face) |
 | Parametros totales | 6.856.253.440 (~6,9B) |
 | Parametros activos | no aplicable (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sfm_unfiltered_e2e_misalignment-0k_1k_2k_merge (este) | 6.9B | no disponible | no disponible | HuggingFace |
-| Pythia 6.9B | 6.9B | 2048 | Apache 2.0 | HuggingFace, completo y documentado |
-| sfm_unfiltered_e2e_misalignment-4k-5k-6k-avg | 6.9B | no disponible | no disponible | HuggingFace (mismo autor, otro merge) |
+| sfm_unfiltered_e2e_misalignment-0k_1k_2k_merge (este) | 6.9B | no disponible | no disponible | Hugging Face |
+| Pythia 6.9B | 6.9B | 2048 | Apache 2.0 | Hugging Face, completo y documentado |
+| sfm_unfiltered_e2e_misalignment-4k-5k-6k-avg | 6.9B | no disponible | no disponible | Hugging Face (mismo autor, otro merge) |
 
 La comparación con Pythia 6.9B es la más directa por tamaño y arquitectura, pero Pythia es un modelo de investigación con documentación extensa y licencia permisiva, mientras que este modelo carece de especificaciones publicadas y de licencia clara. El modelo `4k-5k-6k-avg` del mismo autor es un merge análogo con pasos posteriores (4000, 5000, 6000), lo que permite estudiar la evolución temporal de la fusión.
 
@@ -77,7 +77,7 @@ La comparación con Pythia 6.9B es la más directa por tamaño y arquitectura, p
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-0k_1k_2k_merge)
+- [Hugging Face - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-0k_1k_2k_merge)
 - [Repo de mergekit](https://github.com/cg123/mergekit)
 - [Paper de model soups (arXiv:2203.05482)](https://arxiv.org/abs/2203.05482)
 - [Modelo relacionado: geodesic-research/sfm_unfiltered_e2e_alignment_upsampled_dpo](https://huggingface.co/geodesic-research/sfm_unfiltered_e2e_alignment_upsampled_dpo) (menciona el artículo *Alignment Pretraining*)

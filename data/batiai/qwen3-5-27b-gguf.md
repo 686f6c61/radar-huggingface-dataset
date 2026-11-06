@@ -23,7 +23,7 @@ La relevancia de esta ficha radica en que ofrece una alternativa cuantizada de a
 
 El modelo base Qwen3.5-27B emplea una arquitectura híbrida que combina Gated DeltaNet, atención con Grouped Query Attention (GQA) y capas de mezcla de expertos (MoE). Esta combinación busca equilibrar la eficiencia computacional de las capas recurrentes (DeltaNet) con la capacidad expresiva de la atención y el escalado de capacidad de los expertos. No se dispone de información pública sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de técnicas de alineación como RLHF o DPO en la documentación proporcionada.
 
-La cuantización IQ4_XS fue generada con llama.cpp (build 400ac8e) y verificada por BatiAI para su uso en macOS. El proceso de cuantización reduce el tamaño del modelo de aproximadamente 27B parámetros en fp16 a 14 GB, lo que permite su ejecución en hardware de consumo. No se han publicado detalles sobre el dataset de calibración utilizado para la cuantización ni sobre posibles técnicas de imatrix (aunque el tag "imatrix" aparece en HuggingFace, no se confirma en la model card).
+La cuantización IQ4_XS fue generada con llama.cpp (build 400ac8e) y verificada por BatiAI para su uso en macOS. El proceso de cuantización reduce el tamaño del modelo de aproximadamente 27B parámetros en fp16 a 14 GB, lo que permite su ejecución en hardware de consumo. No se han publicado detalles sobre el dataset de calibración utilizado para la cuantización ni sobre posibles técnicas de imatrix (aunque el tag "imatrix" aparece en Hugging Face, no se confirma en la model card).
 
 ## Capacidades
 
@@ -85,7 +85,7 @@ El modelo de 35B usa arquitectura MoE pura, lo que explica su mayor velocidad y 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/batiai/Qwen3.5-27B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/batiai/Qwen3.5-27B-GGUF
 - Modelo base Qwen/Qwen3.5-27B: https://huggingface.co/Qwen/Qwen3.5-27B
 - Página en Ollama: https://ollama.com/batiai/qwen3.5-27b
 - BatiFlow (herramienta de automatización local): https://flow.bati.ai

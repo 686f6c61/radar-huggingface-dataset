@@ -2,9 +2,9 @@
 
 ## Resumen
 
-KiviBot-1.5B es un modelo de generacion de texto publicado en HuggingFace por el usuario efex12, con identificador `efex12/KiviBot-1.5B`. El repositorio declara la libreria `transformers`, el pipeline `text-generation` y la etiqueta de arquitectura `qwen2`, lo que situa al modelo en la familia Qwen2. El recuento real de parametros leido de los pesos en safetensors es de 1.543.714.304 parametros, es decir, aproximadamente 1,54 mil millones, con un repositorio de 3,1 GB coherente con pesos almacenados en precision de 16 bits.
+KiviBot-1.5B es un modelo de generacion de texto publicado en Hugging Face por el usuario efex12, con identificador `efex12/KiviBot-1.5B`. El repositorio declara la libreria `transformers`, el pipeline `text-generation` y la etiqueta de arquitectura `qwen2`, lo que situa al modelo en la familia Qwen2. El recuento real de parametros leido de los pesos en safetensors es de 1.543.714.304 parametros, es decir, aproximadamente 1,54 mil millones, con un repositorio de 3,1 GB coherente con pesos almacenados en precision de 16 bits.
 
-La model card del autor es la plantilla autogenerada por HuggingFace y no contiene informacion cumplimentada: no especifica desarrollador, datos de entrenamiento, idiomas, licencia ni procedimiento de ajuste. Tampoco se han publicado resultados de evaluacion. Esto significa que practicamente todas las especificaciones tecnicas relevantes estan sin documentar y cualquier evaluacion seria del modelo requiere inspeccionar directamente los ficheros de configuracion y los pesos.
+La model card del autor es la plantilla autogenerada por Hugging Face y no contiene informacion cumplimentada: no especifica desarrollador, datos de entrenamiento, idiomas, licencia ni procedimiento de ajuste. Tampoco se han publicado resultados de evaluacion. Esto significa que practicamente todas las especificaciones tecnicas relevantes estan sin documentar y cualquier evaluacion seria del modelo requiere inspeccionar directamente los ficheros de configuracion y los pesos.
 
 El interes de la ficha es, por tanto, doble: por un lado, situar un checkpoint de 1,5B basado en Qwen2 dentro del ecosistema de modelos pequenos desplegables en hardware de consumo; por otro, dejar constancia explicita de las lagunas documentales, que son un factor de riesgo real para cualquier integracion en produccion. El modelo no registra descargas ni likes en el momento de la consulta, lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -72,7 +72,7 @@ Las cifras siguientes son estimaciones aritmeticas derivadas del recuento real d
 - GPU recomendadas: cualquier GPU con 8 GB o mas de VRAM funciona con holgura (RTX 3060 Ti, RTX 3070, RTX 4060, RTX 4070). Para lotes grandes o contextos largos conviene subir a 12-16 GB (RTX 4080, RTX 4090, A10, L4). Las A100 y H100 no son necesarias para un modelo de este tamano salvo en despliegues de altisima concurrencia.
 - Inferencia en GPU de consumo: si, cabe con holgura en practicamente cualquier GPU dedicada moderna e incluso en iGPU con memoria unificada si se cuantiza.
 - Inferencia en CPU: viable con cuantizacion, aunque no se publican ficheros GGUF, por lo que habria que generarlos a partir de los safetensors.
-- Opciones de despliegue: transformers es la via natural dado el formato publicado. El repositorio declara `text-generation-inference` y `endpoints_compatible`, lo que apunta a TGI y a Inference Endpoints de HuggingFace como opciones soportadas. vLLM deberia funcionar si la configuracion de Qwen2 esta correctamente definida, aunque no hay confirmacion. llama.cpp y Ollama requeririan convertir previamente los pesos a GGUF.
+- Opciones de despliegue: transformers es la via natural dado el formato publicado. El repositorio declara `text-generation-inference` y `endpoints_compatible`, lo que apunta a TGI y a Inference Endpoints de Hugging Face como opciones soportadas. vLLM deberia funcionar si la configuracion de Qwen2 esta correctamente definida, aunque no hay confirmacion. llama.cpp y Ollama requeririan convertir previamente los pesos a GGUF.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones y cualquier cifra dependeria del hardware, la precision y la longitud de secuencia.
 
 ## Comparativa con modelos similares
@@ -81,11 +81,11 @@ Se comparan a continuacion alternativas de la misma franja de tamano. Los datos 
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| KiviBot-1.5B | ~1,54B | no disponible | no disponible | no disponible | safetensors en HuggingFace |
+| KiviBot-1.5B | ~1,54B | no disponible | no disponible | no disponible | safetensors en Hugging Face |
 | Qwen2-1.5B | ~1,54B | 32.768 tokens (segun documentacion de Qwen) | Apache 2.0 | multilingue (segun Qwen) | safetensors y GGUF |
 | Qwen2.5-1.5B | ~1,54B | 32.768 tokens, ampliable (segun Qwen) | Apache 2.0 | multilingue (segun Qwen) | safetensors y GGUF |
 | Llama 3.2 1B | ~1,24B | 128.000 tokens (segun Meta) | Llama 3.2 Community License | multilingue limitado (segun Meta) | safetensors y GGUF |
-| SmolLM2-1.7B | ~1,7B | 8.192 tokens (segun HuggingFace) | Apache 2.0 | ingles principalmente (segun HuggingFace) | safetensors y GGUF |
+| SmolLM2-1.7B | ~1,7B | 8.192 tokens (segun Hugging Face) | Apache 2.0 | ingles principalmente (segun Hugging Face) | safetensors y GGUF |
 
 La diferencia mas relevante no es de rendimiento sino de trazabilidad: los cuatro modelos de referencia publican licencia, idiomas, contexto y evaluaciones, mientras que KiviBot-1.5B no documenta ninguno de esos extremos. A falta de benchmarks propios, no es posible afirmar que supere o iguale a un Qwen2-1.5B base, del que probablemente derive.
 
@@ -106,7 +106,7 @@ La diferencia mas relevante no es de rendimiento sino de trazabilidad: los cuatr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/efex12/KiviBot-1.5B
+- Modelo en Hugging Face: https://huggingface.co/efex12/KiviBot-1.5B
 - Articulo citado en la model card (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la plantilla: https://mlco2.github.io/impact
 - Documentacion de Qwen2 en transformers (familia de arquitectura indicada por las etiquetas del repositorio): https://huggingface.co/docs/transformers/model_doc/qwen2

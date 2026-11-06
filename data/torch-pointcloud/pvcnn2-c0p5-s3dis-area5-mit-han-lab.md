@@ -26,7 +26,7 @@ Su interés actual es como baseline ligero y reproducible para etiquetado por pu
 | Clases | 13 |
 | Dimensión de features | 32 |
 | Librería | torch-pointcloud |
-| Pipeline en HuggingFace | no disponible |
+| Pipeline en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -80,7 +80,7 @@ Los resultados proceden de la model card del autor y están marcados como no ver
 
 | Modelo | Parámetros | Contexto | mIoU S3DIS Area 5 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pvcnn2-c0p5.s3dis-area5.mit-han-lab | 3,44 M | no aplica | 59,83 (no verificado) | MIT | HuggingFace |
+| pvcnn2-c0p5.s3dis-area5.mit-han-lab | 3,44 M | no aplica | 59,83 (no verificado) | MIT | Hugging Face |
 | PVCNN original (mit-han-lab/pvcnn) | no disponible | no aplica | no disponible | MIT | GitHub |
 | PointNet++ | no disponible | no aplica | no disponible | no disponible | no disponible en la información |
 | DGCNN | no disponible | no aplica | no disponible | no disponible | no disponible en la información |
@@ -96,7 +96,7 @@ PointNet++, DGCNN y KPConv son familias comparables de segmentación de nubes de
 - La cabeza está fijada a 13 clases. Usar clases nuevas exige reentrenar o sustituir la cabeza, no basta con cambiar la etiqueta de salida.
 - No es un modelo generativo: el riesgo de "alucinación" se traduce en falsos positivos, falsos negativos y etiquetado erróneo, especialmente en clases minoritarias.
 - No se documenta un número máximo de puntos por escena. La memoria puede crecer con el tamaño de la nube y la resolución de voxelización; conviene dividir escenas grandes.
-- No hay cuantizaciones oficiales ni pipeline de HuggingFace. El checkpoint se distribuye en safetensors y requiere el preprocesado exacto de torch-pointcloud.
+- No hay cuantizaciones oficiales ni pipeline de Hugging Face. El checkpoint se distribuye en safetensors y requiere el preprocesado exacto de torch-pointcloud.
 - La licencia MIT permite uso comercial, modificación y redistribución, siempre que se conserve el aviso de copyright y la licencia. No ofrece garantía.
 - El modelo tiene 0 descargas y 0 likes en el momento de la consulta; esto no implica baja calidad, pero indica ausencia de validación comunitaria.
 - No se documenta análisis de sesgo. S3DIS contiene interiores con una distribución concreta de geometrías y clases, por lo que el modelo puede heredar ese sesgo.
@@ -104,7 +104,7 @@ PointNet++, DGCNN y KPConv son familias comparables de segmentación de nubes de
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/torch-pointcloud/pvcnn2-c0p5.s3dis-area5.mit-han-lab)
+- [Hugging Face del modelo](https://huggingface.co/torch-pointcloud/pvcnn2-c0p5.s3dis-area5.mit-han-lab)
 - [Paper Point-Voxel CNN for Efficient 3D Deep Learning (arXiv:1907.03739)](https://arxiv.org/abs/1907.03739)
 - [Repositorio original mit-han-lab/pvcnn](https://github.com/mit-han-lab/pvcnn)
 - [Librería PyTorch PointCloud](https://github.com/arthurdjn/pytorch-pointcloud)

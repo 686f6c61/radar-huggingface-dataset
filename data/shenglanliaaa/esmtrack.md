@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ESMTrack es un modelo de seguimiento visual de objetos (visual object tracking) orientado especificamente al seguimiento RGBT, es decir, seguimiento que combina imagenes en el espectro visible (RGB) con imagenes termicas (T). Lo desarrolla ShenglanLiaaa y se distribuye unicamente como pesos preentrenados en HuggingFace, acompanados de un repositorio de codigo en GitHub para entrenamiento y evaluacion.
+ESMTrack es un modelo de seguimiento visual de objetos (visual object tracking) orientado especificamente al seguimiento RGBT, es decir, seguimiento que combina imagenes en el espectro visible (RGB) con imagenes termicas (T). Lo desarrolla ShenglanLiaaa y se distribuye unicamente como pesos preentrenados en Hugging Face, acompanados de un repositorio de codigo en GitHub para entrenamiento y evaluacion.
 
 El modelo se apoya en el backbone preentrenado DropMAE (un ViT entrenado con masked autoencoding sobre video) y se publican cinco checkpoints independientes, cada uno ajustado sobre un benchmark distinto de tracking RGBT: LasHeR, VTUAV, GTOT, RGBT210 y RGBT234. La convencion de nombres de configuracion (`dropmae_256_150ep`) sugiere entradas de 256 pixeles y 150 epocas de entrenamiento, aunque no se documentan en la model card.
 
@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ShenglanLiaaa/ESMTrack
+- Hugging Face: https://huggingface.co/ShenglanLiaaa/ESMTrack
 - Repositorio GitHub: https://github.com/LiShenglana/ESMTrack
 - Backbone DropMAE (externo, obligatorio descargar aparte): https://github.com/jimmy-dq/DropMAE
-- Arbol de ficheros en HuggingFace: https://huggingface.co/ShenglanLiaaa/ESMTrack/tree/main
+- Arbol de ficheros en Hugging Face: https://huggingface.co/ShenglanLiaaa/ESMTrack/tree/main

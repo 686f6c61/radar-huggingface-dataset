@@ -23,14 +23,14 @@ Por tanto, su relevancia no es la de un modelo desplegable, sino la de una plant
 
 ## Arquitectura y entrenamiento
 
-No se documenta ninguna arquitectura concreta. La etiqueta `transformer` aparece en los metadatos de HuggingFace, pero la model card no especifica si se trata de un encoder visual, un decoder de lenguaje, un conector multimodal o una combinación. El recuento de 16.576 parámetros es incompatible con cualquier VLM operativo y sugiere un checkpoint de prueba, un módulo auxiliar o un artefacto generado automáticamente al subir el repositorio.
+No se documenta ninguna arquitectura concreta. La etiqueta `transformer` aparece en los metadatos de Hugging Face, pero la model card no especifica si se trata de un encoder visual, un decoder de lenguaje, un conector multimodal o una combinación. El recuento de 16.576 parámetros es incompatible con cualquier VLM operativo y sugiere un checkpoint de prueba, un módulo auxiliar o un artefacto generado automáticamente al subir el repositorio.
 
 Tampoco hay información sobre datos de entrenamiento, número de tokens, composición del dataset, ni sobre fases de ajuste como SFT, RLHF o DPO. El autor declara explícitamente que no hay "código liberado ni checkpoint entrenado" y que las referencias y datasets propuestos son un punto de partida para verificación, no evidencia de que el estudio se haya ejecutado. La única innovación metodológica declarada es el énfasis en la reproducibilidad: si en el futuro se añaden resultados, deberán incluir versiones de dataset, comandos, semillas, hardware y logs en bruto.
 
 ## Capacidades
 
 - No se ha publicado ninguna capacidad funcional verificable del artefacto.
-- El repositorio no incluye inferencia de demostración, API ni espacio de HuggingFace asociado.
+- El repositorio no incluye inferencia de demostración, API ni espacio de Hugging Face asociado.
 - No hay soporte documentado de tool calling, function calling ni razonamiento multi-paso.
 - No hay evidencia de capacidades multilingües ni de procesamiento de imagen real.
 - El contenido útil es documental: notas sobre el alcance de una pregunta de investigación en VQA, factores de confusión y propuesta de comparación con baselines emparejados.
@@ -43,7 +43,7 @@ Tampoco hay información sobre datos de entrenamiento, número de tokens, compos
 - Plantilla de reproducibilidad: el repositorio ejemplifica qué metadatos exigir (versiones de dataset, semillas, hardware, logs) a la hora de publicar resultados de un estudio multimodal.
 - Docencia y formación: útil como ejemplo de buenas prácticas sobre cómo separar hipótesis de resultados en una nota de investigación.
 - Planificación de evaluación sobre VQAv2, GQA y OK-VQA: el documento identifica estos benchmarks como contexto de evaluación para un futuro experimento, lo que ayuda a dimensionar el coste de evaluación.
-- Auditoría de artefactos en HuggingFace: sirve como caso de estudio de repositorios etiquetados con un pipeline (`visual-question-answering`) que no contienen un modelo utilizable, útil para diseñar filtros automáticos de catálogo.
+- Auditoría de artefactos en Hugging Face: sirve como caso de estudio de repositorios etiquetados con un pipeline (`visual-question-answering`) que no contienen un modelo utilizable, útil para diseñar filtros automáticos de catálogo.
 
 ## Benchmarks y rendimiento
 
@@ -81,7 +81,7 @@ No disponible. El repositorio no es comparable con modelos de VQA como LLaVA, BL
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/marcelosilvafield/visual-question-answering-study
+- Hugging Face: https://huggingface.co/marcelosilvafield/visual-question-answering-study
 - Artefacto principal citado en la model card: `review.md` (dentro del repositorio)
 - Documentación: `README.md` (dentro del repositorio)
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este repositorio.

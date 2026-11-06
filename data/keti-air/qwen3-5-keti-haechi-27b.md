@@ -79,6 +79,6 @@ El único modelo comparable directamente es el checkpoint base Qwen/Qwen3.5-27B.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KETI-AIR/Qwen3.5-KETI-HAECHI-27B
+- Hugging Face: https://huggingface.co/KETI-AIR/Qwen3.5-KETI-HAECHI-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Endpoint FriendliAI: https://friendli.ai/models/KETI-AIR/Qwen3.5-KETI-HAECHI-27B

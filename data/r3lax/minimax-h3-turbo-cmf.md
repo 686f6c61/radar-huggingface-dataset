@@ -47,7 +47,7 @@ No se proporcionan detalles sobre los datos de entrenamiento, el número de toke
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo no presenta métricas de MMLU, HumanEval o GSM8K al ser un generador de vídeo, y no se ofrecen comparativas numéricas con otros modelos de vídeo. La única validación mencionada es la verificación de integridad `cortiq verify`, que confirma que todos los tensores coinciden con sus hashes. Las comparaciones visuales entre variantes (32B vs 4B encoder, 4-bit vs 8-bit) se muestran como GIFs en la página de HuggingFace, pero sin métricas objetivas.
+No se han publicado resultados de benchmarks en la información disponible. El modelo no presenta métricas de MMLU, HumanEval o GSM8K al ser un generador de vídeo, y no se ofrecen comparativas numéricas con otros modelos de vídeo. La única validación mencionada es la verificación de integridad `cortiq verify`, que confirma que todos los tensores coinciden con sus hashes. Las comparaciones visuales entre variantes (32B vs 4B encoder, 4-bit vs 8-bit) se muestran como GIFs en la página de Hugging Face, pero sin métricas objetivas.
 
 ## Requisitos de hardware
 
@@ -84,7 +84,7 @@ La comparativa se limita a las variantes del propio ecosistema MiniMax-H3, ya qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/r3lax/MiniMax-H3-Turbo-cmf
+- Modelo en Hugging Face: https://huggingface.co/r3lax/MiniMax-H3-Turbo-cmf
 - Modelo base MiniMax-H3: https://huggingface.co/Comfy-Org/MiniMax-H3
 - LoRA Turbo original: https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora
 - Repositorio del formato CMF y runtime cortiq: https://github.com/infosave2007/cmf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GOAT mmBERT YAT Base Contrastive 10K es un codificador de texto multilingüe desarrollado por mlnomad, publicado en HuggingFace bajo licencia MIT. Se trata de un checkpoint de ajuste fino contrastivo (paso 10.000) inicializado a partir del modelo preentrenado por MLM `mlnomad/goat-mmbert-yat-base-mlm-10b`, que a su vez partió de inicialización desde cero y completó 10.038.104.948 tokens no padding. El modelo cuenta con aproximadamente 281,8 millones de parámetros (incluyendo la cabeza MLM retenida, aunque no se usa en inferencia de embeddings) y produce embeddings de 768 dimensiones.
+GOAT mmBERT YAT Base Contrastive 10K es un codificador de texto multilingüe desarrollado por mlnomad, publicado en Hugging Face bajo licencia MIT. Se trata de un checkpoint de ajuste fino contrastivo (paso 10.000) inicializado a partir del modelo preentrenado por MLM `mlnomad/goat-mmbert-yat-base-mlm-10b`, que a su vez partió de inicialización desde cero y completó 10.038.104.948 tokens no padding. El modelo cuenta con aproximadamente 281,8 millones de parámetros (incluyendo la cabeza MLM retenida, aunque no se usa en inferencia de embeddings) y produce embeddings de 768 dimensiones.
 
 El modelo resuelve el problema de generar representaciones densas de frases para recuperación de información (retrieval) y similitud semántica en múltiples idiomas y código. Su relevancia radica en que combina una arquitectura con innovaciones propias de la familia GOAT (atención GOAT-input y bloques feed-forward YATGLU) con un entrenamiento contrastivo sobre una mezcla de MS MARCO, Global Voices, CodeSearchNet y ocho fuentes de idiomas MIRACL. Está implementado en Flax (JAX) y se distribuye con la librería FlaxChat, lo que lo hace interesante para entornos TPU y para quienes trabajan fuera del ecosistema PyTorch habitual.
 
@@ -82,9 +82,9 @@ El inventario completo contiene 182 tareas, ejecutadas en 204 jobs (incluyendo s
 
 | Modelo | Parametros | Contexto | English MTEB | Multilingual MTEB (8 cat.) | CoIR | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---:|---|---|
-| GOAT mmBERT YAT Base Contrastive 10K | 281,8M | 8.192 posiciones (eval. 512) | 45,93 | 42,61 | 34,25 | MIT | HuggingFace, Flax |
-| GOAT MLM base (modelo padre) | No disponible | No disponible | 36,84 | 31,77 | 9,91 | MIT | HuggingFace |
-| Previous YAT embedding v1 | No disponible | No disponible | 52,78 | 48,21 | 43,45 | No disponible | HuggingFace |
+| GOAT mmBERT YAT Base Contrastive 10K | 281,8M | 8.192 posiciones (eval. 512) | 45,93 | 42,61 | 34,25 | MIT | Hugging Face, Flax |
+| GOAT MLM base (modelo padre) | No disponible | No disponible | 36,84 | 31,77 | 9,91 | MIT | Hugging Face |
+| Previous YAT embedding v1 | No disponible | No disponible | 52,78 | 48,21 | 43,45 | No disponible | Hugging Face |
 | mmBERT base (paper) | 307M | No disponible | 53,9 | 54,1 | 42,2 | No disponible | Paper |
 
 El modelo supera claramente a su padre MLM en todas las métricas, pero queda por debajo del YAT embedding v1 previo y del mmBERT base reportado en el paper en English MTEB, multilingual MTEB y CoIR. La comparación con mmBERT debe tomarse con cautela porque las cifras del paper corresponden a otra configuración de evaluación y a un modelo con 3T tokens de preentrenamiento.
@@ -104,7 +104,7 @@ El modelo supera claramente a su padre MLM en todas las métricas, pero queda po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlnomad/goat-mmbert-yat-base-contrastive-10k
+- Modelo en Hugging Face: https://huggingface.co/mlnomad/goat-mmbert-yat-base-contrastive-10k
 - Modelo base MLM: https://huggingface.co/mlnomad/goat-mmbert-yat-base-mlm-10b
 - Modelo YAT previo y recibos publicados: https://huggingface.co/mlnomad/yat-mmbert-base-embedding-v1/tree/571d0ef3d8e1381055845fce334a48be253c3fea
 - Resultados completos (RESULTS.md): https://huggingface.co/mlnomad/goat-mmbert-yat-base-contrastive-10k/blob/main/RESULTS.md

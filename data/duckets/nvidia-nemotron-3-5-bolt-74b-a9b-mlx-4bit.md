@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Activos | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Duckets/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-MLX-4bit | 74B | ~9B (segun nomenclatura) | 262.144 | 4 bits afin, ~40 GB | no disponible | HuggingFace, requiere mlx-vlm parcheado |
-| nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16 (modelo base) | 74B | ~9B (segun nomenclatura) | 262.144 (segun esta conversion) | BF16 | no disponible | HuggingFace |
+| Duckets/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-MLX-4bit | 74B | ~9B (segun nomenclatura) | 262.144 | 4 bits afin, ~40 GB | no disponible | Hugging Face, requiere mlx-vlm parcheado |
+| nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16 (modelo base) | 74B | ~9B (segun nomenclatura) | 262.144 (segun esta conversion) | BF16 | no disponible | Hugging Face |
 
 No se dispone de datos de otros modelos comparables en la informacion proporcionada.
 

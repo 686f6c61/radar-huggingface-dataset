@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Evora on-device text model (Qwen3-1.7B, v2) es un ajuste fino del modelo base Qwen/Qwen3-1.7B publicado por el usuario mkenfenheuer en HuggingFace bajo el identificador mkenfenheuer/evora-qwen3-1.7b-v2-GGUF. Se distribuye exclusivamente en formato GGUF, pensado para ejecucion local mediante llama.cpp y para despliegue en dispositivo (on-device), y sus etiquetas declaradas apuntan a un dominio concreto: nutricion y coaching. El repositorio ocupa 1,1 GB y el modelo cuenta con 1.720.574.976 parametros (1,72 mil millones), coherente con el modelo base del que deriva.
+Evora on-device text model (Qwen3-1.7B, v2) es un ajuste fino del modelo base Qwen/Qwen3-1.7B publicado por el usuario mkenfenheuer en Hugging Face bajo el identificador mkenfenheuer/evora-qwen3-1.7b-v2-GGUF. Se distribuye exclusivamente en formato GGUF, pensado para ejecucion local mediante llama.cpp y para despliegue en dispositivo (on-device), y sus etiquetas declaradas apuntan a un dominio concreto: nutricion y coaching. El repositorio ocupa 1,1 GB y el modelo cuenta con 1.720.574.976 parametros (1,72 mil millones), coherente con el modelo base del que deriva.
 
 La relevancia de esta publicacion es limitada pero identificable: se trata de un ejemplo de ajuste de un modelo pequeno de la familia Qwen3 orientado a un vertical especifico (asesoria nutricional y acompanamiento tipo coaching) y empaquetado para inferencia en hardware de consumo, sin necesidad de GPU de centro de datos. Frente a alternativas generalistas del mismo tamano, la propuesta es la especializacion de dominio y la portabilidad del formato GGUF.
 
@@ -34,7 +34,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el volumen de 
 - Generacion de texto conversacional en aleman e ingles, segun los idiomas declarados en la model card y la etiqueta conversational.
 - Especializacion declarada en dos dominios: nutricion (nutrition) y acompanamiento tipo coaching (coaching).
 - Inferencia local en dispositivo (on-device) mediante llama.cpp, con pesos en formato GGUF.
-- Compatibilidad declarada con endpoints (etiqueta endpoints_compatible), lo que sugiere que el artefacto puede servirse desde infraestructura compatible con la API de HuggingFace.
+- Compatibilidad declarada con endpoints (etiqueta endpoints_compatible), lo que sugiere que el artefacto puede servirse desde infraestructura compatible con la API de Hugging Face.
 - Capacidades heredadas del modelo base Qwen/Qwen3-1.7B (razonamiento general, codigo, matematicas): no confirmadas ni evaluadas por el autor en este ajuste.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: en torno a 1-2 GB con cuantizaciones de 4-5 bits a contextos cortos, mas el cache KV correspondiente a la longitud de contexto configurada, que puede anadir desde cientos de MB hasta varios GB si se trabaja a contextos largos.
 - Cabe holgadamente en GPU de consumo: RTX 3060 (12 GB), RTX 4060, RTX 4070, RTX 4090, e incluso en GPUs con 4-6 GB de VRAM con cuantizaciones agresivas. Tambien es viable en CPU moderna (x86 con AVX2/AVX-512 o Apple Silicon mediante Metal).
 - GPU de centro de datos (A100, H100) no son necesarias; solo tendrian sentido para servir muchas peticiones concurrentes.
-- Opciones de despliegue: llama.cpp y sus envoltorios (Ollama, LM Studio, kobold.cpp), servidor llama.cpp con API compatible con OpenAI, y plataformas que consumen GGUF. La etiqueta endpoints_compatible sugiere compatibilidad con HuggingFace Inference Endpoints. vLLM y TGI no son el objetivo principal de un artefacto GGUF, aunque pueden servir el modelo base en safetensors.
+- Opciones de despliegue: llama.cpp y sus envoltorios (Ollama, LM Studio, kobold.cpp), servidor llama.cpp con API compatible con OpenAI, y plataformas que consumen GGUF. La etiqueta endpoints_compatible sugiere compatibilidad con Hugging Face Inference Endpoints. vLLM y TGI no son el objetivo principal de un artefacto GGUF, aunque pueden servir el modelo base en safetensors.
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ La informacion proporcionada no incluye resultados de evaluacion del modelo ajus
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| evora-qwen3-1.7b-v2 (este modelo) | 1,72 B | No disponible | Apache 2.0 | GGUF en HuggingFace, 0 descargas | Ajuste de dominio (nutricion/coaching), aleman e ingles, sin evaluacion publicada |
+| evora-qwen3-1.7b-v2 (este modelo) | 1,72 B | No disponible | Apache 2.0 | GGUF en Hugging Face, 0 descargas | Ajuste de dominio (nutricion/coaching), aleman e ingles, sin evaluacion publicada |
 | Qwen/Qwen3-1.7B (modelo base) | 1,72 B | No disponible en esta informacion | Apache 2.0 | Ampliamente disponible | Modelo generalista del que deriva; sirve como referencia de capacidades heredadas |
 | Llama 3.2 1B Instruct | 1,24 B | No disponible en esta informacion | Licencia comunitaria de Meta | Ampliamente disponible | Alternativa generalista de tamano comparable para inferencia local |
 | SmolLM2 1.7B Instruct | 1,71 B | No disponible en esta informacion | Apache 2.0 | Ampliamente disponible | Alternativa generalista de tamano casi identico orientada a dispositivo |
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) para ninguna de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mkenfenheuer/evora-qwen3-1.7b-v2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mkenfenheuer/evora-qwen3-1.7b-v2-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Paper, blog, repositorio o demo del ajuste: no disponibles en la informacion proporcionada.
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces recuperados no guardan relacion con la ficha y se han descartado.

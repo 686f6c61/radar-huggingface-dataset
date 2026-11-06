@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SemWAM-LIBERO-Legacy-dep-sem-step21700 es un checkpoint de investigación en robótica publicado por el usuario RainyBot en HuggingFace. Se trata de un archivo histórico ("Legacy") del entrenamiento de un modelo de política visomotora para el benchmark LIBERO, identificado internamente con la arquitectura `dep_sem` y el paradigma de entrada `t_concat`. El checkpoint corresponde al paso de optimizador final 21700/21700 de una ejecución cuyo origen, según la propia model card, es desconocido ("Original training source revision is unknown").
+SemWAM-LIBERO-Legacy-dep-sem-step21700 es un checkpoint de investigación en robótica publicado por el usuario RainyBot en Hugging Face. Se trata de un archivo histórico ("Legacy") del entrenamiento de un modelo de política visomotora para el benchmark LIBERO, identificado internamente con la arquitectura `dep_sem` y el paradigma de entrada `t_concat`. El checkpoint corresponde al paso de optimizador final 21700/21700 de una ejecución cuyo origen, según la propia model card, es desconocido ("Original training source revision is unknown").
 
 El modelo se construye sobre el backbone de vídeo Wan-AI/Wan2.2-TI2V-5B, al que se añaden encoders congelados de semántica (DINOv3 ViT-B/16, 768 dimensiones) y de profundidad (estimador VDA con backbone ViT-B a 518 px, y un componente `defm_vit_s14` de 384 dimensiones). La fusión semántica se realiza en las capas 7 y 23 del DiT de vídeo, y se incorpora propriocepción de 8 dimensiones. El formato de observación es `libero_horizontal`, con vistas de muñeca izquierda y derecha de 128×160.
 
@@ -73,6 +73,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-dep-sem-step21700
+- Hugging Face: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-dep-sem-step21700
 - Backbone base: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - No se han encontrado en la información proporcionada papers, blogs, repositorios ni demos adicionales.

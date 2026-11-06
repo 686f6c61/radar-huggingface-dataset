@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sakura-d1-3B-HighQuality-GGUF es un conjunto de cuatro ficheros GGUF cuantizados del modelo de decisión LiquidAI/d1-3B, publicado por el usuario webmp3 en HuggingFace. No es un modelo nuevo ni reentrenado: es una conversión y compresión de los pesos que Liquid AI publicó en October de 2026 (revision `da1fe36`), distribuida como construccion comunitaria y no respaldada por Liquid AI. El modelo base d1-3B pertenece a la familia LFM2.5 de Liquid AI y está diseñado especificamente para tareas de decisión (clasificación, elección entre opciones y puntuación) bajo el paradigma "system-one", no para generación de texto conversacional abierta.
+Sakura-d1-3B-HighQuality-GGUF es un conjunto de cuatro ficheros GGUF cuantizados del modelo de decisión LiquidAI/d1-3B, publicado por el usuario webmp3 en Hugging Face. No es un modelo nuevo ni reentrenado: es una conversión y compresión de los pesos que Liquid AI publicó en October de 2026 (revision `da1fe36`), distribuida como construccion comunitaria y no respaldada por Liquid AI. El modelo base d1-3B pertenece a la familia LFM2.5 de Liquid AI y está diseñado especificamente para tareas de decisión (clasificación, elección entre opciones y puntuación) bajo el paradigma "system-one", no para generación de texto conversacional abierta.
 
 Los pesos originales tienen 2.697.198.592 parámetros (unos 2,7 mil millones; el nombre comercial dice 3B) y el repositorio ocupa 8,9 GB entre los cuatro GGUF y los proyectores multimodales. La aportación del autor está en el esquema de cuantizacion de precisión mixta: cada grupo de tensores recibe su propia precision, elegida midiendo su coste en calidad de decisión, con una importance matrix construida a partir de prompts de decisión en 30 idiomas y código. El resultado son ficheros de 1,56 a 2,35 GB que el autor compara, decisión a decisión, contra las cuantizaciones publicadas por AtomicChat.
 
@@ -101,7 +101,7 @@ No se dispone de otros modelos comparables de la misma categoria (modelos de dec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/webmp3/Sakura-d1-3B-HighQuality-GGUF
+- Repositorio Hugging Face: https://huggingface.co/webmp3/Sakura-d1-3B-HighQuality-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/d1-3B
 - GGUF de referencia de AtomicChat: https://huggingface.co/AtomicChat/d1-3B-GGUF
 - Repositorio de metricas de AtomicChat: https://huggingface.co/datasets/AtomicChat/d1-3B-GGUF-metrics

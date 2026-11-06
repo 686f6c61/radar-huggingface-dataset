@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Endless xxx Character 37 SDXL LoRA | LoRA de personaje sobre SDXL | no disponible | no aplica (77 tokens por encoder de texto) | `other`, solo investigación | HuggingFace, 0 descargas |
-| Illustrious-xl-early-release-v0 (modelo base) | Modelo de difusión completo | no disponible en esta ficha | no aplica | según su propia model card | HuggingFace |
+| Endless xxx Character 37 SDXL LoRA | LoRA de personaje sobre SDXL | no disponible | no aplica (77 tokens por encoder de texto) | `other`, solo investigación | Hugging Face, 0 descargas |
+| Illustrious-xl-early-release-v0 (modelo base) | Modelo de difusión completo | no disponible en esta ficha | no aplica | según su propia model card | Hugging Face |
 | Otros LoRA de personaje para SDXL / Illustrious | LoRA de personaje | no disponible | no aplica | variable | no disponible en la información proporcionada |
 
 No se dispone de datos de rendimiento comparado ni de alternativas concretas identificadas en la información proporcionada.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparado ni de alternativas concretas ide
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZerothX/endless-xxx-character-37-sdxl-lora
+- Hugging Face: https://huggingface.co/ZerothX/endless-xxx-character-37-sdxl-lora
 - Modelo base: https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0
 - Repositorio del proyecto: https://github.com/ZerothXX/Endless-XXX
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-soup-k1k2-50` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 2.018 millones de parametros (2,018 mil millones), almacenado en formato safetensors con un tamano de repositorio de 8,1 GB, lo que sugiere pesos en precision de 32 bits o 16 bits con margen para metadatos y ficheros auxiliares. El acceso al repositorio esta restringido (gated), por lo que es necesario aceptar condiciones en la plataforma antes de descargarlo.
+El modelo `alfred8995/r18-a2-soup-k1k2-50` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 2.018 millones de parametros (2,018 mil millones), almacenado en formato safetensors con un tamano de repositorio de 8,1 GB, lo que sugiere pesos en precision de 32 bits o 16 bits con margen para metadatos y ficheros auxiliares. El acceso al repositorio esta restringido (gated), por lo que es necesario aceptar condiciones en la plataforma antes de descargarlo.
 
 El nombre del modelo (`r18-a2-soup-k1k2-50`) apunta a una tecnica de "model soup" o mezcla de pesos (weight averaging) sobre alguna variante base no identificada, con posibles variantes k1/k2 y un factor 50. El tag `sn38-nanochrono` no corresponde a ninguna familia de modelos ampliamente conocida y no se ha podido verificar su significado a partir de la informacion disponible. No se dispone de informacion sobre la arquitectura, el contexto, los idiomas o el pipeline de inferencia.
 
@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alfred8995/r18-a2-soup-k1k2-50 | 2.018.511.234 | no disponible | Apache 2.0 | Gated en HuggingFace |
+| alfred8995/r18-a2-soup-k1k2-50 | 2.018.511.234 | no disponible | Apache 2.0 | Gated en Hugging Face |
 | Qwen2.5-1.5B (referencia orientativa) | ~1.500 millones | 32.768 tokens (tipico) | Apache 2.0 | Publico |
 | Gemma-2-2B (referencia orientativa) | ~2.600 millones | 8.192 tokens (tipico) | Gemma license | Publico con aceptacion |
 | Phi-3-mini (referencia orientativa) | ~3.800 millones | 4.096 tokens (tipico) | MIT | Publico |
@@ -77,7 +77,7 @@ Los datos de las alternativas son orientativos y no proceden de la informacion p
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no hay documentacion sobre arquitectura, datos de entrenamiento ni evaluacion, lo que impide conocer sesgos, riesgos de alucinacion o comportamiento esperado.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que anade friccion a cualquier uso.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que anade friccion a cualquier uso.
 - Procedencia incierta de los pesos: al tratarse de una mezcla (soup), no se puede garantizar la calidad ni la coherencia del modelo resultante sin evaluacion empirica.
 - Sin benchmarks publicados: no hay evidencia de rendimiento en tareas estandar (MMLU, HumanEval, GSM8K u otras).
 - Idiomas no confirmados: no se puede asegurar soporte de castellano ni de ningun otro idioma.
@@ -87,4 +87,4 @@ Los datos de las alternativas son orientativos y no proceden de la informacion p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-soup-k1k2-50
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-soup-k1k2-50

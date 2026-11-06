@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `supremeDavid/g31-collar_where_6000-r32-s375` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario supremeDavid sobre el modelo base `google/gemma-4-31B-it`. No se trata de un modelo completo, sino de un conjunto de pesos incrementales que deben cargarse junto al modelo base mediante la librería PEFT. El repositorio ocupa 1,0 GB y se distribuye en formato safetensors bajo acceso restringido (gated), de modo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+El modelo `supremeDavid/g31-collar_where_6000-r32-s375` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario supremeDavid sobre el modelo base `google/gemma-4-31B-it`. No se trata de un modelo completo, sino de un conjunto de pesos incrementales que deben cargarse junto al modelo base mediante la librería PEFT. El repositorio ocupa 1,0 GB y se distribuye en formato safetensors bajo acceso restringido (gated), de modo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 El nombre del repositorio codifica varios hiperparámetros del entrenamiento: `g31` apunta a un modelo Gemma de 31B, `r32` indica un rango LoRA de 32 y `6000` probablemente hace referencia al número de pasos de entrenamiento. La etiqueta `sft` (supervised fine-tuning) y la presencia de `trl` y `unsloth` en los tags confirman que se trata de un ajuste supervisado, no de un entrenamiento por preferencias (RLHF/DPO). La cadena `collar_where` no está documentada y no se puede interpretar con certeza a partir de la información disponible.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada pero ilustrativa: el repositorio no tien
 
 ## Arquitectura y entrenamiento
 
-El artefacto publicado es un adaptador LoRA, técnica descrita en el paper arXiv:1910.09700 (Hu et al., 2021), que congela los pesos del modelo base e inserta matrices de bajo rango entrenables en determinadas capas. Los tags `peft`, `lora`, `sft`, `transformers`, `trl` y `unsloth` sitúan el pipeline en el ecosistema HuggingFace: entrenamiento supervisado con TRL, probablemente acelerado con Unsloth, y serialización mediante PEFT. El rango declarado en el nombre es 32 (`r32`), lo que implica un compromiso entre capacidad de adaptación y número de parámetros entrenables.
+El artefacto publicado es un adaptador LoRA, técnica descrita en el paper arXiv:1910.09700 (Hu et al., 2021), que congela los pesos del modelo base e inserta matrices de bajo rango entrenables en determinadas capas. Los tags `peft`, `lora`, `sft`, `transformers`, `trl` y `unsloth` sitúan el pipeline en el ecosistema Hugging Face: entrenamiento supervisado con TRL, probablemente acelerado con Unsloth, y serialización mediante PEFT. El rango declarado en el nombre es 32 (`r32`), lo que implica un compromiso entre capacidad de adaptación y número de parámetros entrenables.
 
 No se dispone de información sobre el dataset de entrenamiento, el número de tokens vistos, la composición de los datos ni la estrategia de enmascarado de pérdida. Tampoco se documentan las capas objetivo del adaptador (atención, MLP o ambas) ni la precisión de entrenamiento. Con un repositorio de 1,0 GB y un rango de 32 sobre un modelo de 31B, es coherente pensar en decenas o centenares de millones de parámetros entrenables almacenados en precisión alta, pero se trata de una estimación derivada, no de un dato publicado. El identificador `google/gemma-4-31B-it` sugiere un modelo base ya ajustado por instrucciones, sobre el que este adaptador aplicaría una especialización adicional.
 
@@ -79,7 +79,7 @@ Las cifras siguientes son estimaciones derivadas del tamano del modelo base (31B
 - Riesgo de alucinacion: inherente al modelo base y no mitigado por ningun dato publicado sobre este adaptador.
 - Sesgos: no evaluados; sin informacion sobre la composicion del dataset de SFT no puede estimarse el sesgo introducido.
 - Restricciones de licencia: la licencia del adaptador es no disponible y el modelo base esta sujeto a las condiciones de acceso de Google, por lo que el uso comercial queda sin cobertura clara.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que complica la automatizacion de descargas en CI/CD.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que complica la automatizacion de descargas en CI/CD.
 - Cobertura idiomatica incierta: al no declararse idiomas, no puede garantizarse un rendimiento adecuado en castellano.
 - Estado del repositorio: 0 descargas y 0 likes, sin senales de validacion por parte de la comunidad.
 - Fecha de creacion: el repositorio figura creado el 2026-09-27, dato que conviene verificar antes de integrarlo en cualquier pipeline de produccion.
@@ -87,7 +87,7 @@ Las cifras siguientes son estimaciones derivadas del tamano del modelo base (31B
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/supremeDavid/g31-collar_where_6000-r32-s375
+- Repositorio Hugging Face: https://huggingface.co/supremeDavid/g31-collar_where_6000-r32-s375
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Paper de LoRA (arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

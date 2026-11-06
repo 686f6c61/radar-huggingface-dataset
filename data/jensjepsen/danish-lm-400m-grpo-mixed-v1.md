@@ -114,7 +114,7 @@ No se dispone de informacion sobre otros modelos daneses de tamaño comparable e
 
 ## Enlaces
 
-- [HuggingFace - danish-lm-400m-grpo-mixed-v1](https://huggingface.co/jensjepsen/danish-lm-400m-grpo-mixed-v1)
+- [Hugging Face - danish-lm-400m-grpo-mixed-v1](https://huggingface.co/jensjepsen/danish-lm-400m-grpo-mixed-v1)
 - [Modelo base SFT - danish-lm-400m-sft-v31-avg-top3](https://huggingface.co/jensjepsen/danish-lm-400m-sft-v31-avg-top3)
 - [Checkpoint intermedio GRPO - step2400](https://huggingface.co/jensjepsen/danish-lm-400m-grpo-if-combined-v1-step2400)
 - [Dataset de entrenamiento - danish-if-grpo-combined-v1](https://huggingface.co/datasets/jensjepsen/danish-if-grpo-combined-v1)

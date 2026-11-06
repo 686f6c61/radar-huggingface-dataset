@@ -2,11 +2,11 @@
 
 ## Resumen
 
-TT PII Middleware es un servicio autoalojado de deteccion y redaccion de datos personales (PII) orientado a pasarelas de inferencia desplegadas en la Union Europea. Lo publica el usuario rafalrudol en HuggingFace bajo el identificador rafalrudol/tt-pii-middleware, con licencia Apache-2.0, y su objetivo es detectar identificadores nacionales polacos (PESEL, NIP, REGON, DOWOD, KRS, matriculas de vehiculo, codigos postales, direcciones, fecha de nacimiento y formas societarias) junto con entidades universales (EMAIL, PHONE, IBAN, CARD) para redactarlas o pseudonimizarlas de forma reversible antes de que los prompts abandonen la VPC del operador.
+TT PII Middleware es un servicio autoalojado de deteccion y redaccion de datos personales (PII) orientado a pasarelas de inferencia desplegadas en la Union Europea. Lo publica el usuario rafalrudol en Hugging Face bajo el identificador rafalrudol/tt-pii-middleware, con licencia Apache-2.0, y su objetivo es detectar identificadores nacionales polacos (PESEL, NIP, REGON, DOWOD, KRS, matriculas de vehiculo, codigos postales, direcciones, fecha de nacimiento y formas societarias) junto con entidades universales (EMAIL, PHONE, IBAN, CARD) para redactarlas o pseudonimizarlas de forma reversible antes de que los prompts abandonen la VPC del operador.
 
 No se trata de un modelo de lenguaje ni de una red neuronal entrenada por el autor: es un middleware que combina reconocedores deterministas con validacion de checksum, reglas personalizadas y modelos estadisticos de spaCy (pl_core_news_md y en_core_web_sm) orquestados mediante Presidio, y expuesto como API HTTP con FastAPI. Su relevancia actual esta en el hueco que cubre: los servicios gestionados de DLP implican salida de red, mientras que este runtime no necesita egreso de red porque los modelos de spaCy van empaquetados en la imagen.
 
-El repositorio de HuggingFace no publica pesos, no declara numero de parametros y, en el momento de la consulta, acumula 0 descargas y 0 me gusta, por lo que se trata de un artefacto reciente y sin validacion independiente por parte de la comunidad. La model card si publica un benchmark propio sobre 3000 documentos sinteticos con micro F1 de 0,955 en el conjunto completo de etiquetas.
+El repositorio de Hugging Face no publica pesos, no declara numero de parametros y, en el momento de la consulta, acumula 0 descargas y 0 me gusta, por lo que se trata de un artefacto reciente y sin validacion independiente por parte de la comunidad. La model card si publica un benchmark propio sobre 3000 documentos sinteticos con micro F1 de 0,955 en el conjunto completo de etiquetas.
 
 ## Especificaciones tecnicas
 
@@ -91,14 +91,14 @@ La informacion proporcionada no incluye comparaciones con alternativas. A contin
 - Cobertura limitada a polaco e ingles; no hay soporte declarado para otros idiomas ni para identificadores de otros paises mas alla de EMAIL, PHONE, IBAN y CARD.
 - KRS es una deteccion opcional y no activada por defecto, por lo que su cobertura depende de la configuracion del operador.
 - El benchmark es autodeclarado y se calcula sobre un dataset sintetico, con evaluacion por coincidencia exacta de span; no hay validacion independiente ni evaluacion sobre datos reales de produccion.
-- El artefacto no registra descargas ni me gusta en HuggingFace y las fechas de creacion y actualizacion son de septiembre de 2026, lo que indica un proyecto muy reciente y sin adopcion verificable.
+- El artefacto no registra descargas ni me gusta en Hugging Face y las fechas de creacion y actualizacion son de septiembre de 2026, lo que indica un proyecto muy reciente y sin adopcion verificable.
 - No se publican pesos ni parametros, de modo que no es posible auditar el modelo subyacente mas alla de los modelos de spaCy referenciados.
 - Aunque la licencia del proyecto es Apache-2.0, los componentes de terceros (spaCy, Presidio, pii-core) mantienen sus licencias de origen (MIT y Apache-2.0), que deben respetarse en un despliegue comercial.
 - El modelo no realiza generacion de texto, razonamiento, codigo ni vision: cualquier expectativa de ese tipo es inaplicable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rafalrudol/tt-pii-middleware
+- Repositorio en Hugging Face: https://huggingface.co/rafalrudol/tt-pii-middleware
 - Codigo fuente (Apache-2.0): https://github.com/rrudol/tt-pii-middleware
 - Dataset sintetico: https://huggingface.co/datasets/rafalrudol/pl-pii-synthetic-v1
 - Space de metricas: https://huggingface.co/spaces/rafalrudol/pl-pii-metrics

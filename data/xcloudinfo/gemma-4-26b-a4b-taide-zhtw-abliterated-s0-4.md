@@ -80,8 +80,8 @@ La comparación directa de rendimiento no es posible por falta de benchmarks pú
 
 ## Enlaces
 
-- [HuggingFace: xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW-abliterated-s0.4](https://huggingface.co/xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW-abliterated-s0.4)
-- [HuggingFace: versión GGUF](https://huggingface.co/xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW-abliterated-s0.4-GGUF)
-- [HuggingFace: modelo base sin abliterar](https://huggingface.co/xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW)
+- [Hugging Face: xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW-abliterated-s0.4](https://huggingface.co/xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW-abliterated-s0.4)
+- [Hugging Face: versión GGUF](https://huggingface.co/xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW-abliterated-s0.4-GGUF)
+- [Hugging Face: modelo base sin abliterar](https://huggingface.co/xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW)
 - [Página oficial de Gemma 4 en DeepMind](https://deepmind.google/models/gemma/gemma-4/)
 - [Documentación de Gemma 4 26B A4B IT en Google Cloud](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it)

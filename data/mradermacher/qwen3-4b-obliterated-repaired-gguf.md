@@ -88,7 +88,7 @@ Los datos de rendimiento no estan disponibles para ninguno de los modelos de la 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | mradermacher/Qwen3-4B-OBLITERATED-repaired-GGUF | 4,02 B | no disponible | GGUF (12 cuantizaciones) | Apache-2.0 | Repositorio publico, 0 descargas registradas |
-| Hatsunama/Qwen3-4B-OBLITERATED-repaired | 4,02 B | no disponible | safetensors (modelo origen) | Apache-2.0 | Publico en HuggingFace, referenciado como base |
+| Hatsunama/Qwen3-4B-OBLITERATED-repaired | 4,02 B | no disponible | safetensors (modelo origen) | Apache-2.0 | Publico en Hugging Face, referenciado como base |
 | Otras variantes abliteradas de Qwen3-4B | ~4 B | no disponible | safetensors y GGUF | habitualmente Apache-2.0 | Multiples repositorios de la comunidad; no verificados en esta ficha |
 | Qwen3-4B original | ~4 B | no disponible en esta informacion | safetensors y GGUF | Apache-2.0 | Repositorio oficial de Qwen |
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QwenPaw-Flash-9B-heretic-MTP-GPTQPro-INT4-g64 es una cuantizacion INT4 de 4 bits del modelo SC117/QwenPaw-Flash-9B-heretic-MTP-GGUF, publicada por el usuario groxaxo en HuggingFace. No es un modelo nuevo: es un artefacto de compresion que preserva los pesos del modelo original (9.197.093.888 parametros) en un unico fichero GGUF de 8.471.015.072 bytes (7,889 GiB), frente a los 18.407.320.992 bytes de la fuente. La relevancia del repositorio es metodologica: documenta un experimento A/B de cuantizacion con GPTQ-Pro en el que se modifica la receta de cuantizacion (GAR, clipping MSE y MSE ponderado por activaciones) manteniendo identico el tamano de grupo (64), el presupuesto de bytes y los datos de calibracion.
+QwenPaw-Flash-9B-heretic-MTP-GPTQPro-INT4-g64 es una cuantizacion INT4 de 4 bits del modelo SC117/QwenPaw-Flash-9B-heretic-MTP-GGUF, publicada por el usuario groxaxo en Hugging Face. No es un modelo nuevo: es un artefacto de compresion que preserva los pesos del modelo original (9.197.093.888 parametros) en un unico fichero GGUF de 8.471.015.072 bytes (7,889 GiB), frente a los 18.407.320.992 bytes de la fuente. La relevancia del repositorio es metodologica: documenta un experimento A/B de cuantizacion con GPTQ-Pro en el que se modifica la receta de cuantizacion (GAR, clipping MSE y MSE ponderado por activaciones) manteniendo identico el tamano de grupo (64), el presupuesto de bytes y los datos de calibracion.
 
 El modelo hereda del original la arquitectura derivada de Qwen3.5, con 32 capas de decoder y un bloque MTP (multi-token prediction) embebido de 15 tensores que se conserva byte a byte y que permite decodificacion especulativa con draft-MTP en llama.cpp. Los idiomas declarados son ingles y chino, la licencia es Apache 2.0 y el unico formato publicado es GGUF con almacenamiento Q4_0, compatible con llama.cpp.
 
@@ -106,7 +106,7 @@ La busqueda web no devolvio resultados relevantes sobre modelos comparables (los
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/groxaxo/QwenPaw-Flash-9B-heretic-MTP-GPTQPro-INT4-g64
+- Repositorio Hugging Face: https://huggingface.co/groxaxo/QwenPaw-Flash-9B-heretic-MTP-GPTQPro-INT4-g64
 - Modelo base: https://huggingface.co/SC117/QwenPaw-Flash-9B-heretic-MTP-GGUF
 - Revision de la fuente citada en la model card: 805a37e8d1277f7db31347283017afb26a04e5a4
 - llama.cpp (runtime requerido, con soporte de Qwen3.5 y draft-MTP): https://github.com/ggml-org/llama.cpp

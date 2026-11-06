@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pranav200621/vit-nsfw-classifier` es un modelo publicado en HuggingFace por el usuario pranav200621. Por el identificador del repositorio puede inferirse que se trata de un clasificador de contenido para adultos (NSFW) basado en una arquitectura Vision Transformer, si bien esta deduccion procede unicamente del nombre del repositorio y no de documentacion tecnica aportada por el autor. La model card publicada se limita a declarar la licencia Apache 2.0 y no incluye descripcion, pipeline, idiomas ni detalles de entrenamiento.
+`pranav200621/vit-nsfw-classifier` es un modelo publicado en Hugging Face por el usuario pranav200621. Por el identificador del repositorio puede inferirse que se trata de un clasificador de contenido para adultos (NSFW) basado en una arquitectura Vision Transformer, si bien esta deduccion procede unicamente del nombre del repositorio y no de documentacion tecnica aportada por el autor. La model card publicada se limita a declarar la licencia Apache 2.0 y no incluye descripcion, pipeline, idiomas ni detalles de entrenamiento.
 
 El repositorio cuenta con 0 descargas y 1 like en el momento de la consulta, y fue creado y actualizado el 13 de octubre de 2026, sin actualizaciones posteriores. Lleva la etiqueta `not-for-all-audiences`, habitual en repositorios cuyo contenido o dominio de aplicacion esta relacionado con material sensible.
 
@@ -23,7 +23,7 @@ Su relevancia practica, en caso de confirmarse que es un clasificador de imagene
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la model card ni en los metadatos del repositorio. El unico indicio es el sufijo `vit` del identificador, que en la convencion de HuggingFace suele corresponder a un Vision Transformer. En el caso de ser un ViT, lo habitual en este tipo de clasificadores seria partir de un backbone preentrenado (por ejemplo, ViT-Base o ViT-Large) y sustituir la cabeza de clasificacion por una capa lineal con dos salidas (NSFW / seguro), con ajuste fino sobre un dataset etiquetado de imagenes. Esta descripcion es una hipotesis generica del tipo de modelo, no un dato confirmado para este repositorio concreto.
+No se ha publicado informacion sobre la arquitectura en la model card ni en los metadatos del repositorio. El unico indicio es el sufijo `vit` del identificador, que en la convencion de Hugging Face suele corresponder a un Vision Transformer. En el caso de ser un ViT, lo habitual en este tipo de clasificadores seria partir de un backbone preentrenado (por ejemplo, ViT-Base o ViT-Large) y sustituir la cabeza de clasificacion por una capa lineal con dos salidas (NSFW / seguro), con ajuste fino sobre un dataset etiquetado de imagenes. Esta descripcion es una hipotesis generica del tipo de modelo, no un dato confirmado para este repositorio concreto.
 
 Tampoco hay informacion sobre el volumen de datos de entrenamiento, la composicion del dataset, el numero de tokens o imagenes procesadas, ni sobre si se aplicaron tecnicas de ajuste como RLHF, DPO o cualquier otro procedimiento de alineacion. No se documentan innovaciones tecnicas destacables.
 
@@ -73,7 +73,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Existen en 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pranav200621/vit-nsfw-classifier | no disponible | no aplica | no disponible | Apache 2.0 | HuggingFace |
+| pranav200621/vit-nsfw-classifier | no disponible | no aplica | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,5 +91,5 @@ No se dispone de datos comparativos en la informacion proporcionada. Existen en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pranav200621/vit-nsfw-classifier
+- Hugging Face: https://huggingface.co/pranav200621/vit-nsfw-classifier
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio de codigo o demo). Los resultados devueltos corresponden a servicios de musica, streaming, videoconferencia y redes sociales sin relacion con este repositorio.

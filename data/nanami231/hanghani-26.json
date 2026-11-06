@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Nanami231/hanghani-26",
+  "slug": "nanami231-hanghani-26",
+  "author": "Nanami231",
+  "url": "https://huggingface.co/Nanami231/hanghani-26",
+  "created_at": "2026-11-01T17:51:01.000Z",
+  "updated_at": "2026-11-01T19:01:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1745394802,
+  "storage_human": "1.7 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nanami231/hanghani-26 · Hugging Face",
+      "url": "https://huggingface.co/Nanami231/hanghani-26",
+      "snippet": "A futuristic cyberpunk cityscape with neon rain and floating vehicles, featuring the subject as a holographic billboard, HangHani@26. Prompt A serene, sun-drenched Tuscan vineyard at golden hour with rolling hills and rustic villas, showcasing the subject resting on a wooden table, HangHani@26 ..."
+    },
+    {
+      "title": "Nanami231/hanghani-26 at main - Hugging Face",
+      "url": "https://huggingface.co/Nanami231/hanghani-26/tree/main",
+      "snippet": "Instructions to use Nanami231/hanghani-26 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use Nanami231/hanghani-26 with Diffusers:"
+    }
+  ]
+}

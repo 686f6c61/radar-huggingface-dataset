@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. Ni l
 | Modelo | Parámetros | Contexto | Horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | amaye15/kumoforecast-gguf (este modelo) | 318,5 M | 96 pasos | 24 pasos (canal 0) | MIT (código) + Apache-2.0 (pesos) | GGUF F32, runtime zsfm (Rust/Python) |
-| nvidia/Kumo-Forecast (original) | 318,5 M | 96 pasos | 24 pasos (canal 0) | Apache-2.0 | PyTorch/safetensors en HuggingFace |
-| amazon/chronos-bolt-base | ~205 M | 2048 pasos | hasta 64 pasos | Apache-2.0 | PyTorch y ONNX en HuggingFace |
-| google/timesfm-1.0-200m-pytorch | ~200 M | 512 pasos | hasta 128 pasos | Apache-2.0 | PyTorch/JAX en HuggingFace |
+| nvidia/Kumo-Forecast (original) | 318,5 M | 96 pasos | 24 pasos (canal 0) | Apache-2.0 | PyTorch/safetensors en Hugging Face |
+| amazon/chronos-bolt-base | ~205 M | 2048 pasos | hasta 64 pasos | Apache-2.0 | PyTorch y ONNX en Hugging Face |
+| google/timesfm-1.0-200m-pytorch | ~200 M | 512 pasos | hasta 128 pasos | Apache-2.0 | PyTorch/JAX en Hugging Face |
 
 Nota: los datos de las alternativas son valores de referencia aproximados y no se han publicado comparativas de rendimiento entre estos modelos en la información disponible, por lo que la elección depende de requisitos de ventana, horizonte y entorno de ejecución.
 

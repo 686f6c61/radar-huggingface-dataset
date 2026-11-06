@@ -71,7 +71,7 @@ No se dispone de informacion sobre modelos directamente comparables en la misma 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Damirchik/vla-grounder-qwen3.5-9b-rl4vla-pi0
+- Hugging Face: https://huggingface.co/Damirchik/vla-grounder-qwen3.5-9b-rl4vla-pi0
 - Referencia de Qwen3.5-9B en LLM Reference: https://www.llmreference.com/model/qwen3.5-9b
 - Documentacion de Qwen3.5-Dense en vLLM Ascend: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.5-Dense.html
-- Organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen

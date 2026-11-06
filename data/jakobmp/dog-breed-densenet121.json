@@ -5,7 +5,7 @@
   "author": "jakobmp",
   "url": "https://huggingface.co/jakobmp/dog-breed-densenet121",
   "created_at": "2026-11-05T03:58:43.000Z",
-  "updated_at": "2026-11-05T03:58:56.000Z",
+  "updated_at": "2026-11-05T10:04:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",

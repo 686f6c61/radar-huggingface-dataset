@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/INCModel4/gemma-4-26B-A4B-it-W4A16-RTN-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/INCModel4/gemma-4-26B-A4B-it-W4A16-RTN-AutoRound
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Paper de AutoRound: https://arxiv.org/abs/2309.05516
 - Repositorio AutoRound: https://github.com/intel/auto-round

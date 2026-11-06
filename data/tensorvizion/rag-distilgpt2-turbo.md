@@ -2,9 +2,9 @@
 
 ## Resumen
 
-TensorVizion/RAG-distilgpt2-turbo es un modelo de generación de texto basado en DistilGPT2, ajustado (fine-tuning) para responder preguntas en el dominio fintech (finanzas y tecnología financiera). Lo desarrolla el usuario TensorVizion y se publica en HuggingFace con el pipeline de text-generation. El modelo parte de DistilGPT2, una versión destilada de GPT-2 de 124 millones de parámetros, que reduce el tamaño a unos 82 millones mediante destilación de conocimiento, lo que lo hace significativamente más rápido y ligero que el original.
+TensorVizion/RAG-distilgpt2-turbo es un modelo de generación de texto basado en DistilGPT2, ajustado (fine-tuning) para responder preguntas en el dominio fintech (finanzas y tecnología financiera). Lo desarrolla el usuario TensorVizion y se publica en Hugging Face con el pipeline de text-generation. El modelo parte de DistilGPT2, una versión destilada de GPT-2 de 124 millones de parámetros, que reduce el tamaño a unos 82 millones mediante destilación de conocimiento, lo que lo hace significativamente más rápido y ligero que el original.
 
-Su relevancia radica en que ofrece una alternativa de bajo coste computacional para tareas de pregunta-respuesta en el sector financiero: puede ejecutarse localmente con apenas 2 GB de RAM, según el autor. El modelo se distribuye en formato safetensors y es compatible con la librería transformers de HuggingFace. La fecha de creación (agosto de 2026) es inusualmente futura, lo que sugiere que el repositorio es reciente o que los metadatos son incorrectos; no se han registrado descargas ni interacciones.
+Su relevancia radica en que ofrece una alternativa de bajo coste computacional para tareas de pregunta-respuesta en el sector financiero: puede ejecutarse localmente con apenas 2 GB de RAM, según el autor. El modelo se distribuye en formato safetensors y es compatible con la librería transformers de Hugging Face. La fecha de creación (agosto de 2026) es inusualmente futura, lo que sugiere que el repositorio es reciente o que los metadatos son incorrectos; no se han registrado descargas ni interacciones.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ No se dispone de información sobre el dataset de entrenamiento, el número de t
 
 - Generación de texto en inglés, especializado en preguntas y respuestas sobre fintech (finanzas, tecnología financiera).
 - Capacidad de ejecución local en equipos modestos: el autor indica que 2 GB de RAM del sistema son suficientes para ejecutarlo.
-- Compatible con la API de transformers de HuggingFace (AutoTokenizer, AutoModelForCausalLM).
+- Compatible con la API de transformers de Hugging Face (AutoTokenizer, AutoModelForCausalLM).
 - No se documentan capacidades de tool calling, agentes, visión, audio, ni modos de pensamiento.
 - No se especifica si soporta contextos largos; por defecto, DistilGPT2 tiene una ventana de contexto de 1024 tokens.
 
@@ -76,8 +76,8 @@ La comparativa directa con el modelo base DistilGPT2 es la más relevante: el fi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TensorVizion/RAG-distilgpt2-turbo
+- Hugging Face: https://huggingface.co/TensorVizion/RAG-distilgpt2-turbo
 - Modelo base DistilGPT2: https://huggingface.co/distilbert/distilgpt2
-- Repositorio de destilación de HuggingFace: https://github.com/huggingface/transformers-research-projects/tree/main/distillation
+- Repositorio de destilación de Hugging Face: https://github.com/huggingface/transformers-research-projects/tree/main/distillation
 - Versión GGUF de DistilGPT2: https://huggingface.co/tensorblock/distilgpt2-GGUF
 - Ejemplo de ejecución offline de DistilGPT2: https://github.com/nikhileshkverma/distilgpt2-offline

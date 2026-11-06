@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BabyStories (nepoleg) | no disponible (repo 0,3 GB) | no disponible | MIT | HuggingFace, 0 descargas |
+| BabyStories (nepoleg) | no disponible (repo 0,3 GB) | no disponible | MIT | Hugging Face, 0 descargas |
 | TinyStories (Eldan y Li, referencia) | ~1M-10M | no disponible | no disponible | paper arXiv:2305.07759 |
 | Modelos GPT-2 pequenos | 124M | 1024 tokens | MIT | ampliamente disponible |
 
@@ -80,6 +80,6 @@ La comparacion con TinyStories es la mas directa por la inspiracion declarada, p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nepoleg/baby-stories
+- Hugging Face: https://huggingface.co/nepoleg/baby-stories
 - Paper de referencia: https://arxiv.org/abs/2305.07759
 - Repositorio de codigo: mencionado en la model card como disponible en GitHub, sin URL concreta en la informacion proporcionada.

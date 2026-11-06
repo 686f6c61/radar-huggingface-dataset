@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Daisy1 es un modelo publicado en HuggingFace por el usuario sherlocl1213 bajo la licencia OpenRAIL. En el momento de redactar esta ficha, el repositorio no contiene model card descriptiva: el único contenido del README es la declaración de licencia (`license: openrail`), sin información sobre arquitectura, datos de entrenamiento, idiomas o capacidades. Tampoco se han publicado resultados de benchmarks, demos ni documentación técnica asociada.
+Daisy1 es un modelo publicado en Hugging Face por el usuario sherlocl1213 bajo la licencia OpenRAIL. En el momento de redactar esta ficha, el repositorio no contiene model card descriptiva: el único contenido del README es la declaración de licencia (`license: openrail`), sin información sobre arquitectura, datos de entrenamiento, idiomas o capacidades. Tampoco se han publicado resultados de benchmarks, demos ni documentación técnica asociada.
 
 El repositorio ocupa 0,2 GB y registra 0 descargas y 0 likes, lo que apunta a una publicación reciente de carácter personal o experimental (fechas de creación y última actualización del 17 de septiembre de 2026, con apenas 17 segundos de diferencia entre ambas). El tamaño del repositorio es compatible con un modelo pequeño, pero no permite determinar el número de parámetros sin conocer el formato y la precisión de los pesos.
 
@@ -43,7 +43,7 @@ No se ha publicado información verificable sobre las capacidades del modelo. No
 - Cobertura multilingüe.
 - Capacidades especiales (modo thinking, visión, audio u otras).
 
-La única información funcional disponible es la ausencia de pipeline declarado en HuggingFace, lo que impide clasificarlo a priori en una tarea concreta (text-generation, text-classification, etc.).
+La única información funcional disponible es la ausencia de pipeline declarado en Hugging Face, lo que impide clasificarlo a priori en una tarea concreta (text-generation, text-classification, etc.).
 
 ## Casos de uso
 
@@ -76,7 +76,7 @@ No disponible. No es posible establecer comparaciones fiables porque se desconoc
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sherlocl1213/Daisy1 | no disponible | no disponible | no disponible | openrail | HuggingFace |
+| sherlocl1213/Daisy1 | no disponible | no disponible | no disponible | openrail | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No disponible. No es posible establecer comparaciones fiables porque se desconoc
 - Ausencia total de documentación técnica: no hay model card descriptiva, paper, blog ni demo asociados.
 - Sesgos conocidos: no disponibles; al desconocerse el dataset de entrenamiento no puede evaluarse el sesgo.
 - Riesgo de alucinación: no evaluado. Sin benchmarks ni pruebas publicadas, no hay evidencia sobre la fiabilidad factual del modelo.
-- Limitaciones de contexto e idioma: no disponibles. No se declaran idiomas soportados ni longitud de contexto en los metadatos de HuggingFace.
+- Limitaciones de contexto e idioma: no disponibles. No se declaran idiomas soportados ni longitud de contexto en los metadatos de Hugging Face.
 - Licencia: OpenRAIL. Este tipo de licencia incluye cláusulas de uso restringido que limitan determinados usos (por ejemplo, aplicaciones discriminatorias, vigilancia masiva o generación de desinformación). Es obligatorio revisar el texto completo de la licencia antes de cualquier uso comercial.
 - Madurez del repositorio: 0 descargas y 0 likes, con menos de un minuto entre creación y última actualización, lo que indica que no ha pasado por revisión ni validación por parte de la comunidad.
 - Riesgo de producción: alto. No se recomienda su uso en entornos productivos sin una auditoría técnica previa de los pesos y una evaluación empírica propia.
@@ -92,7 +92,7 @@ No disponible. No es posible establecer comparaciones fiables porque se desconoc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sherlocl1213/Daisy1
+- Hugging Face: https://huggingface.co/sherlocl1213/Daisy1
 - Licencia OpenRAIL (referencia de la familia de licencias): https://www.licenses.ai/
 - Paper, blog, repositorio de código o demo: no disponible.
 - La búsqueda web realizada no devolvió ningún resultado relacionado con este modelo; los enlaces obtenidos correspondían a contenidos sin relación (medios de consumo y foros de cine), por lo que se han descartado.

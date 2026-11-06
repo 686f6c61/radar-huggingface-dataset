@@ -91,7 +91,7 @@ La comparacion mas relevante es con su propio modelo base: el turbo ofrece aprox
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AgentAnon/Qwen-Image-2.1-viggle-turbo
+- Repositorio en Hugging Face: https://huggingface.co/AgentAnon/Qwen-Image-2.1-viggle-turbo
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio original de Viggle (referenciado en la model card): https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo
 - Demo Space (pestaña Comparison): https://huggingface.co/spaces/Viggle/Qwen-Image-2.1-viggle-turbo

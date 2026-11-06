@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GRAFFITI_style_LoRA es un adaptador LoRA de bajo rango entrenado mediante DreamBooth sobre Stable Diffusion XL Base 1.0 (stabilityai/stable-diffusion-xl-base-1.0). Lo publica el usuario iririko en HuggingFace y su funcion es inyectar un estilo visual concreto, descrito por el autor como "3d render in GRAFFITI style", en el proceso de generacion texto-a-imagen del modelo base. No es un modelo autonomo: requiere cargar SDXL Base 1.0 y aplicar los pesos del adaptador encima.
+GRAFFITI_style_LoRA es un adaptador LoRA de bajo rango entrenado mediante DreamBooth sobre Stable Diffusion XL Base 1.0 (stabilityai/stable-diffusion-xl-base-1.0). Lo publica el usuario iririko en Hugging Face y su funcion es inyectar un estilo visual concreto, descrito por el autor como "3d render in GRAFFITI style", en el proceso de generacion texto-a-imagen del modelo base. No es un modelo autonomo: requiere cargar SDXL Base 1.0 y aplicar los pesos del adaptador encima.
 
 El adaptador se distribuye en formato Safetensors y se integra a traves de la libreria diffusers. La model card indica que el LoRA del text encoder esta desactivado, por lo que el entrenamiento se limita a las capas de atencion del UNet de SDXL. El VAE empleado durante el entrenamiento fue madebyollin/sdxl-vae-fp16-fix, una variante en fp16 que evita desbordamientos numericos en precision media.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| iririko/GRAFFITI_style_LoRA | LoRA de estilo | SDXL Base 1.0 | no disponible | no aplica | openrail++ | HuggingFace, 0 descargas |
-| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base texto-a-imagen | propio | ~3.500 M (UNet + text encoders) | no aplica | openrail++ | HuggingFace, ampliamente usado |
-| madebyollin/sdxl-vae-fp16-fix | VAE auxiliar | SDXL | ~84 M | no aplica | openrail++ | HuggingFace |
-| LoRA de estilo genericos sobre SDXL (p. ej. adaptadores de estilo publicos) | LoRA de estilo | SDXL Base 1.0 | variable | no aplica | variable | HuggingFace |
+| iririko/GRAFFITI_style_LoRA | LoRA de estilo | SDXL Base 1.0 | no disponible | no aplica | openrail++ | Hugging Face, 0 descargas |
+| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base texto-a-imagen | propio | ~3.500 M (UNet + text encoders) | no aplica | openrail++ | Hugging Face, ampliamente usado |
+| madebyollin/sdxl-vae-fp16-fix | VAE auxiliar | SDXL | ~84 M | no aplica | openrail++ | Hugging Face |
+| LoRA de estilo genericos sobre SDXL (p. ej. adaptadores de estilo publicos) | LoRA de estilo | SDXL Base 1.0 | variable | no aplica | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre este adaptador y otros LoRA de estilo, por lo que la comparativa se limita a aspectos estructurales y de licencia.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre este adaptador y otros L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iririko/GRAFFITI_style_LoRA
+- Modelo en Hugging Face: https://huggingface.co/iririko/GRAFFITI_style_LoRA
 - Modelo base SDXL 1.0: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE usado en entrenamiento: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
 - Paper de DreamBooth: https://dreambooth.github.io/

@@ -105,7 +105,7 @@ Comparación con modelos alternativos de la misma categoría: no disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thuongvv/MOSS-Audio-Tokenizer-Nano-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/thuongvv/MOSS-Audio-Tokenizer-Nano-GGUF
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-Nano
 - Runtime e implementación de conversión (ZeroTTS Swift): https://github.com/thuongvovan/ZeroTTS-swift
 - Scripts de conversión y cuantización: `Native/MOSS/scripts/` dentro del repositorio ZeroTTS Swift

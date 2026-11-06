@@ -75,6 +75,6 @@ No se dispone de datos de rendimiento comparativos fiables, ya que este checkpoi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base-tf
+- Repositorio Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base-tf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Ejecución relacionada (checkpoint hermano): https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base

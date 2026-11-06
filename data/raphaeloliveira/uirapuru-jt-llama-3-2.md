@@ -4,7 +4,7 @@
 
 Uirapuru-JT-Llama-3.2 es un modelo de lenguaje de 3 000 millones de parámetros desarrollado por raphaeloliveira, obtenido mediante fine-tuning del modelo base Meta Llama 3.2 3B sobre datos en portugués. El nombre "Uirapuru" hace referencia al ave mitológica brasileña, y el sufijo "JT" sugiere un ajuste orientado a tareas específicas, aunque la documentación pública no detalla el conjunto de datos de entrenamiento. El modelo está pensado para generación de texto en portugués, aprovechando la arquitectura transformer densa de Llama 3.2.
 
-La relevancia de este modelo radica en ofrecer una alternativa de tamaño reducido (3B parámetros) especializada en portugués, un idioma con menos recursos que el inglés. Al estar basado en Llama 3.2, hereda las capacidades de razonamiento y generación del modelo original, pero adaptadas al contexto lusófono. El acceso es restringido (gated) en HuggingFace, lo que implica que los usuarios deben aceptar condiciones adicionales antes de descargarlo. Su licencia Apache 2.0 permite uso comercial, aunque con las restricciones propias de los modelos Llama de Meta.
+La relevancia de este modelo radica en ofrecer una alternativa de tamaño reducido (3B parámetros) especializada en portugués, un idioma con menos recursos que el inglés. Al estar basado en Llama 3.2, hereda las capacidades de razonamiento y generación del modelo original, pero adaptadas al contexto lusófono. El acceso es restringido (gated) en Hugging Face, lo que implica que los usuarios deben aceptar condiciones adicionales antes de descargarlo. Su licencia Apache 2.0 permite uso comercial, aunque con las restricciones propias de los modelos Llama de Meta.
 
 ## Especificaciones técnicas
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: con pesos en BF16 (el formato original de safetensors), el modelo ocupa aproximadamente 6,4 GB, por lo que se necesitan al menos 8 GB de VRAM para inferencia con batch pequeño. Con cuantización 8-bit (si se genera) bajaría a ~3,2 GB, y con 4-bit a ~1,6 GB, aunque no se han publicado versiones cuantizadas.
 - GPU recomendadas: una NVIDIA RTX 3060 12GB o superior puede ejecutar el modelo en BF16. Para mayor velocidad, una RTX 4090 o A10G. En entornos cloud, una T4 (16GB) es suficiente.
 - Compatibilidad con GPU de consumo: sí, cabe en GPUs de consumo con 8 GB o más de VRAM, como RTX 3060, RTX 3070, RTX 4060 Ti, etc., siempre que se gestione el batch size.
-- Opciones de despliegue: al ser un modelo de transformers estándar, puede servirse con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF) u Ollama (si se crea un Modelfile). El repositorio indica compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: al ser un modelo de transformers estándar, puede servirse con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF) u Ollama (si se crea un Modelfile). El repositorio indica compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput estimados: no se dispone de mediciones específicas. Para un modelo de 3B en una GPU moderna, se espera una latencia de decodificación de 20-50 ms por token con batch 1, y throughput de varios cientos de tokens por segundo con batching en vLLM, pero estos valores son orientativos y dependen del hardware.
 
 ## Comparativa con modelos similares
@@ -64,13 +64,13 @@ No se dispone de información suficiente para comparar este modelo con alternati
 - Sesgos conocidos: al ser un fine-tune de Llama 3.2, hereda los sesgos del modelo base, que pueden incluir estereotipos de género, raza o cultura. El fine-tuning en portugués puede amplificar sesgos específicos del corpus utilizado, aunque no se ha documentado.
 - Riesgo de alucinación: como todo LLM, puede generar información falsa o inventada, especialmente en dominios especializados. Se recomienda verificar las salidas en aplicaciones críticas.
 - Limitaciones de contexto: aunque el modelo base soporta hasta 128K tokens, no se ha confirmado que este fine-tune mantenga esa longitud. Es probable que el contexto efectivo sea menor si el fine-tuning se realizó con secuencias cortas.
-- Restricciones de licencia: aunque la licencia es Apache 2.0, el modelo base Llama 3.2 está sujeto a los Términos de Uso de Meta, que incluyen restricciones sobre el uso para mejorar otros modelos y requisitos de atribución. El acceso gated en HuggingFace implica que el usuario debe aceptar las condiciones de Meta antes de descargar.
+- Restricciones de licencia: aunque la licencia es Apache 2.0, el modelo base Llama 3.2 está sujeto a los Términos de Uso de Meta, que incluyen restricciones sobre el uso para mejorar otros modelos y requisitos de atribución. El acceso gated en Hugging Face implica que el usuario debe aceptar las condiciones de Meta antes de descargar.
 - Idioma: el modelo está optimizado para portugués; su rendimiento en otros idiomas puede ser inferior al del modelo base.
 - Documentación limitada: no se han publicado detalles sobre el dataset de entrenamiento, el proceso de fine-tuning ni evaluaciones, lo que dificulta la reproducibilidad y la confianza en su comportamiento.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/raphaeloliveira/Uirapuru-JT-Llama-3.2
+- Repositorio Hugging Face: https://huggingface.co/raphaeloliveira/Uirapuru-JT-Llama-3.2
 - DOI asociado: 10.57967/hf/10157
 - Documentación de Meta sobre Llama 3.2: https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_2/
 - Paper de Llama 3 (modelo base): https://arxiv.org/pdf/2407.21783

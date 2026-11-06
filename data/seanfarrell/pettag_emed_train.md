@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`seanfarrell/pettag_emed_train` es un modelo de embeddings de frases (sentence transformer) obtenido por ajuste fino (fine-tuning) del conocido `sentence-transformers/all-mpnet-base-v2`. Lo desarrolla el usuario de HuggingFace `seanfarrell` y su función es proyectar texto a un espacio vectorial denso de 768 dimensiones para tareas de similitud semántica, búsqueda semántica, agrupamiento (clustering) y clasificación. Por el vocabulario que aparece tanto en el widget como en los ejemplos de entrenamiento, el ajuste está claramente orientado al dominio médico y, más concretamente, a terminología clínica (términos como *trachoma*, *impetigo*, *sunburn*, *symblepharon*).
+`seanfarrell/pettag_emed_train` es un modelo de embeddings de frases (sentence transformer) obtenido por ajuste fino (fine-tuning) del conocido `sentence-transformers/all-mpnet-base-v2`. Lo desarrolla el usuario de Hugging Face `seanfarrell` y su función es proyectar texto a un espacio vectorial denso de 768 dimensiones para tareas de similitud semántica, búsqueda semántica, agrupamiento (clustering) y clasificación. Por el vocabulario que aparece tanto en el widget como en los ejemplos de entrenamiento, el ajuste está claramente orientado al dominio médico y, más concretamente, a terminología clínica (términos como *trachoma*, *impetigo*, *sunburn*, *symblepharon*).
 
 El modelo parte de una arquitectura MPNet (encoder transformer enmascarado y permutado) con 109.486.464 parámetros totales, tal y como reflejan los pesos en safetensors del repositorio (aproximadamente 0,4 GB). La salida es un vector de 768 dimensiones normalizado, y la similitud se calcula por producto escalar (coseno) entre embeddings. Un detalle crítico es que la longitud máxima de secuencia configurada es de solo 32 tokens, muy inferior a los 384 tokens que soporta el modelo base, lo que limita su uso a entradas muy cortas (términos o frases breves).
 
@@ -44,7 +44,7 @@ En cuanto al entrenamiento, la model card indica un dataset de 10.000.000 de mue
 - Agrupamiento (clustering): agrupacion de textos por proximidad en el espacio de embeddings.
 - Especializacion en terminologia medica/clinica, segun se deduce del vocabulario del widget y del dataset de entrenamiento.
 - Robustez aparente a variaciones de mayusculas y minusculas en los terminos (objetivo principal del ajuste fino).
-- Compatibilidad con *text-embeddings-inference* y *endpoints* de HuggingFace, segun los tags del repositorio.
+- Compatibilidad con *text-embeddings-inference* y *endpoints* de Hugging Face, segun los tags del repositorio.
 - No es un modelo generativo: no produce texto, no soporta *tool calling*, ni razonamiento multi-paso, ni vision, ni audio.
 
 ## Casos de uso
@@ -66,16 +66,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 109 millones de parametros, en FP32 los pesos ocupan aproximadamente 440 MB, y en FP16/FP32 reducido cerca de 220 MB. Anadiendo el *overhead* de activaciones y del framework, cabe comodamente en menos de 2 GB de VRAM.
 - GPU recomendadas: cualquier GPU moderna es suficiente, incluidas RTX 3090, RTX 4090, A10, L4, T4, A100 o H100. No se necesita hardware de gama alta para este tamano.
 - Compatibilidad con GPU de consumo: si, cabe sin problema en GPUs de consumo con 4 GB o mas de VRAM (GTX 1650, RTX 3060, etc.) e incluso puede ejecutarse en CPU con latencias aceptables para lotes pequenos.
-- Opciones de despliegue: `sentence-transformers` (uso directo), HuggingFace *Text Embeddings Inference* (TEI, mencionado en los tags) para servir embeddings a escala, los *Inference Endpoints* de HuggingFace (tag `endpoints_compatible`), y exportacion a ONNX para inferencia optimizada. Ollama y vLLM no son las herramientas habituales para modelos de embeddings de este tipo.
+- Opciones de despliegue: `sentence-transformers` (uso directo), Hugging Face *Text Embeddings Inference* (TEI, mencionado en los tags) para servir embeddings a escala, los *Inference Endpoints* de Hugging Face (tag `endpoints_compatible`), y exportacion a ONNX para inferencia optimizada. Ollama y vLLM no son las herramientas habituales para modelos de embeddings de este tipo.
 - Latencia y throughput: no disponible en la informacion proporcionada. Al ser un modelo pequeno y con secuencias de solo 32 tokens, el throughput por lote deberia ser alto en GPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Dimension de embedding | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| seanfarrell/pettag_emed_train | 109,5 M | 768 | 32 tokens | no disponible | HuggingFace (12 descargas) |
-| sentence-transformers/all-mpnet-base-v2 | 109 M | 768 | 384 tokens | Apache-2.0 (segun su model card publica) | HuggingFace, ampliamente usado |
-| sentence-transformers/all-MiniLM-L6-v2 | ~22 M | 384 | 256 tokens | Apache-2.0 (segun su model card publica) | HuggingFace, muy popular |
+| seanfarrell/pettag_emed_train | 109,5 M | 768 | 32 tokens | no disponible | Hugging Face (12 descargas) |
+| sentence-transformers/all-mpnet-base-v2 | 109 M | 768 | 384 tokens | Apache-2.0 (segun su model card publica) | Hugging Face, ampliamente usado |
+| sentence-transformers/all-MiniLM-L6-v2 | ~22 M | 384 | 256 tokens | Apache-2.0 (segun su model card publica) | Hugging Face, muy popular |
 
 Nota: los datos de los modelos comparativos corresponden a informacion publica ampliamente conocida; no se dispone de datos de rendimiento comparativo especificos entre `pettag_emed_train` y estas alternativas, ya que el modelo no publica benchmarks. La diferencia mas llamativa frente al modelo base es la reduccion de la longitud maxima de secuencia de 384 a 32 tokens.
 
@@ -93,10 +93,10 @@ Nota: los datos de los modelos comparativos corresponden a informacion publica a
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/seanfarrell/pettag_emed_train
+- Hugging Face del modelo: https://huggingface.co/seanfarrell/pettag_emed_train
 - Modelo base: https://huggingface.co/sentence-transformers/all-mpnet-base-v2
 - Documentacion de Sentence Transformers: https://sbert.net
 - Repositorio de Sentence Transformers en GitHub: https://github.com/huggingface/sentence-transformers
-- Modelos con libreria sentence-transformers en HuggingFace: https://huggingface.co/models?library=sentence-transformers
+- Modelos con libreria sentence-transformers en Hugging Face: https://huggingface.co/models?library=sentence-transformers
 - Paper de Sentence-BERT (arxiv:1908.10084): https://arxiv.org/abs/1908.10084
 - Paper referenciado en los tags (arxiv:1807.03748, *An Efficient Framework for Learning Sentence Representations*): https://arxiv.org/abs/1807.03748

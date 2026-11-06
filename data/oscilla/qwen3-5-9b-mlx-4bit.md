@@ -45,7 +45,7 @@ La conversión a MLX se realizó con la herramienta mlx-lm (versión 0.31.2) apl
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La conversión MLX no incluye métricas específicas, y los datos del modelo base Qwen3.5-9B no se detallan en el repositorio de HuggingFace ni en los resultados de búsqueda web. Se recomienda consultar la documentación oficial de Qwen para obtener cifras de MMLU, HumanEval, GSM8K u otros, y tener en cuenta que la cuantización 4-bit puede introducir una degradación leve del rendimiento respecto al modelo original.
+No se han publicado resultados de benchmarks en la informacion disponible. La conversión MLX no incluye métricas específicas, y los datos del modelo base Qwen3.5-9B no se detallan en el repositorio de Hugging Face ni en los resultados de búsqueda web. Se recomienda consultar la documentación oficial de Qwen para obtener cifras de MMLU, HumanEval, GSM8K u otros, y tener en cuenta que la cuantización 4-bit puede introducir una degradación leve del rendimiento respecto al modelo original.
 
 ## Requisitos de hardware
 
@@ -78,7 +78,7 @@ La comparación directa con otras versiones MLX de Qwen3.5-9B (como la de mlx-co
 
 ## Enlaces
 
-- [HuggingFace - Oscilla/Qwen3.5-9B-mlx-4Bit](https://huggingface.co/Oscilla/Qwen3.5-9B-mlx-4Bit)
+- [Hugging Face - Oscilla/Qwen3.5-9B-mlx-4Bit](https://huggingface.co/Oscilla/Qwen3.5-9B-mlx-4Bit)
 - [Modelo base Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B)
 - [ModelScope - Qwen3.5-9B-MLX-4bit](https://www.modelscope.cn/models/mlx-community/Qwen3.5-9B-MLX-4bit/summary)
 - [Ollama - qwen3.5:9b](https://ollama.com/library/qwen3.5:9b)

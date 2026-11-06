@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) en la informació
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nm-testing/convert_awq_w4a16_asym-e2e
+- Repositorio Hugging Face: https://huggingface.co/nm-testing/convert_awq_w4a16_asym-e2e
 - Repositorio relacionado (w4a16_asym_awq-e2e): https://huggingface.co/nm-testing/w4a16_asym_awq-e2e
 - Documentación de AWQ (GitHub mit-han-lab/llm-awq): https://github.com/mit-han-lab/llm-awq
 - Ejemplo de AWQ en llm-compressor: https://github.com/vllm-project/llm-compressor/blob/main/examples/awq/README.md

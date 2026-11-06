@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 |---|---|---|---|---|---|
 | Este modelo (Llama-3.2-1B-math-fft Q3_K_M) | 1,24 B | No disponible | No disponible | GGUF Q3_K_M, 17 descargas | Fine-tune matemático sin documentación |
 | Llama 3.2 1B Instruct (Meta) | 1,24 B | 128 000 tokens (según ficha oficial) | Llama 3.2 Community License | Pesos safetensors y GGUF oficiales | Base del modelo; alineado para instrucciones generales |
-| Qwen2.5-Math-1.5B | ~1,5 B | No verificado en esta búsqueda | No verificado en esta búsqueda | Repositorio público en HuggingFace | Alternativa específica para matemáticas, con más documentación |
+| Qwen2.5-Math-1.5B | ~1,5 B | No verificado en esta búsqueda | No verificado en esta búsqueda | Repositorio público en Hugging Face | Alternativa específica para matemáticas, con más documentación |
 | TinyLlama-1.1B-Chat | ~1,1 B | 2 048 tokens (según ficha del autor) | Apache 2.0 | Safetensors y múltiples GGUF de la comunidad | Opción totalmente permisiva para uso comercial |
 
 La comparación es principalmente cualitativa: este repositorio no ofrece datos de rendimiento que permitan situarlo frente a las alternativas, y su licencia no declarada impide recomendarlo para uso comercial sin verificación previa con el autor.
@@ -89,6 +89,6 @@ La comparación es principalmente cualitativa: este repositorio no ofrece datos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tayaee/Llama-3.2-1B-math-fft-gguf-q3_k_m
+- Repositorio Hugging Face: https://huggingface.co/tayaee/Llama-3.2-1B-math-fft-gguf-q3_k_m
 - Modelo base de referencia (Meta Llama 3.2 1B): https://huggingface.co/meta-llama/Llama-3.2-1B
 - No se han encontrado en la información disponible papers, blogs, repositorios de código ni demos adicionales asociados a este modelo.

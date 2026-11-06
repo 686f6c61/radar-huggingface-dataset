@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Blind es un modelo de generación de imágenes a partir de prompts de texto, publicado por el usuario debugdll en HuggingFace bajo licencia Apache 2.0. Está etiquetado como basado en Stable Diffusion y utiliza PyTorch, con soporte declarado para ruso, ucraniano e inglés. El modelo se distribuye como un único archivo `blind-1.pt` de aproximadamente 2 GB, con unos 1.500 millones de parámetros. Su creador lo describe como "muy rápido" y capaz de ejecutarse en equipos de gama alta, aunque no se aportan más detalles técnicos.
+Blind es un modelo de generación de imágenes a partir de prompts de texto, publicado por el usuario debugdll en Hugging Face bajo licencia Apache 2.0. Está etiquetado como basado en Stable Diffusion y utiliza PyTorch, con soporte declarado para ruso, ucraniano e inglés. El modelo se distribuye como un único archivo `blind-1.pt` de aproximadamente 2 GB, con unos 1.500 millones de parámetros. Su creador lo describe como "muy rápido" y capaz de ejecutarse en equipos de gama alta, aunque no se aportan más detalles técnicos.
 
 La relevancia de este modelo es limitada en el ecosistema actual de generación de imágenes, donde existen modelos mucho más documentados y con mayor respaldo (SDXL, Flux, etc.). Su principal interés podría residir en su soporte multilingüe para ruso y ucraniano, y en su licencia permisiva. Sin embargo, la ausencia de documentación técnica, ejemplos reproducibles y datos de rendimiento dificulta su evaluación objetiva.
 
@@ -64,5 +64,5 @@ No disponible. No se han encontrado comparaciones con otros modelos de generaci�
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/debugdll/Blind-Image)
+- [Modelo en Hugging Face](https://huggingface.co/debugdll/Blind-Image)
 - Perfil del autor: [debugdll](https://huggingface.co/debugdll) (no se encontraron otros enlaces relevantes en la información proporcionada)

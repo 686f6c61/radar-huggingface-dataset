@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto / interfaz | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-standup | no disponible | 61-D observación, 14 acciones, 50 Hz, episodio de 6,0 s | sin benchmarks publicados | no disponible | ONNX en HuggingFace |
+| microduck-standup | no disponible | 61-D observación, 14 acciones, 50 Hz, episodio de 6,0 s | sin benchmarks publicados | no disponible | ONNX en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la información proporcionada otras políticas de la misma categoría con datos verificables para comparar (parámetros, contexto, rendimiento o licencia).
@@ -81,7 +81,7 @@ No se han identificado en la información proporcionada otras políticas de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QingMuLYL/microduck-standup
+- Modelo en Hugging Face: https://huggingface.co/QingMuLYL/microduck-standup
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `develop`, commit `982b8f889`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon de microduck

@@ -77,7 +77,7 @@ La comparativa se limita a modelos de la misma familia. No se dispone de datos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kyleliu789/qwen3-14b-gpt52-lora-normalized
+- Repositorio Hugging Face: https://huggingface.co/kyleliu789/qwen3-14b-gpt52-lora-normalized
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Adaptador similar del mismo autor: https://huggingface.co/kyleliu789/qwen3-14b-gpt52-cot-sft-r32-a16-lr1e-4
 - Paper tecnico de Qwen3: https://arxiv.org/pdf/2505.09388

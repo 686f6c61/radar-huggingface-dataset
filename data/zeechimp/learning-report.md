@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zeechimp/learning-report` no es un modelo de lenguaje ni una red neuronal con pesos publicados: es un paquete de código en numpy, distribuido a través de HuggingFace con la etiqueta de librería `learning-report` y `pipeline_tag: other`. Lo firma el usuario zeechimp y su objetivo es aportar dos herramientas de evaluación: una lista de comprobación diagnóstica que genera un informe de calibración y generalización imposible de resumir en un único número de accuracy, y una calculadora de volumen de datos de entrenamiento que estima cuántos ejemplos hacen falta antes de lanzar un experimento.
+`zeechimp/learning-report` no es un modelo de lenguaje ni una red neuronal con pesos publicados: es un paquete de código en numpy, distribuido a través de Hugging Face con la etiqueta de librería `learning-report` y `pipeline_tag: other`. Lo firma el usuario zeechimp y su objetivo es aportar dos herramientas de evaluación: una lista de comprobación diagnóstica que genera un informe de calibración y generalización imposible de resumir en un único número de accuracy, y una calculadora de volumen de datos de entrenamiento que estima cuántos ejemplos hacen falta antes de lanzar un experimento.
 
 El problema que aborda es metodológico. Un modelo puede declarar un 97 % de accuracy y ocultar cuatro fallos distintos: ausencia de evaluación con conjunto reservado, falta de particiones fuera de distribución (OOD), una temperatura que ha caído en el borde de la rejilla de búsqueda y una distribución de salida colapsada en una sola clase. La herramienta desglosa esas dimensiones en cuatro particiones (interpolación, near-OOD, far-OOD y structural-OOD), calcula confianza media y ECE en cada una, detecta temperaturas en el límite de la rejilla y avisa del colapso de clases mediante una canaria de uniformidad de salida.
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos o he
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye datos de herramientas comparables (por ejemplo, suites de evaluación, librerías de calibración o marcos de estimación de volumen de datos), ni cifras de rendimiento de terceros que permitan una comparación rigurosa. Además, la naturaleza del artefacto (biblioteca de diagnóstico en numpy, sin pesos) hace que no sea directamente comparable con modelos de lenguaje u otros modelos publicados en HuggingFace. Cualquier tabla comparativa con LLM o con frameworks de evaluación exigiría datos que no se han facilitado y que no deben inferirse.
+No disponible. La información proporcionada no incluye datos de herramientas comparables (por ejemplo, suites de evaluación, librerías de calibración o marcos de estimación de volumen de datos), ni cifras de rendimiento de terceros que permitan una comparación rigurosa. Además, la naturaleza del artefacto (biblioteca de diagnóstico en numpy, sin pesos) hace que no sea directamente comparable con modelos de lenguaje u otros modelos publicados en Hugging Face. Cualquier tabla comparativa con LLM o con frameworks de evaluación exigiría datos que no se han facilitado y que no deben inferirse.
 
 ## Limitaciones y advertencias
 
@@ -103,5 +103,5 @@ No disponible. La información proporcionada no incluye datos de herramientas co
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/zeechimp/learning-report
+- Ficha en Hugging Face: https://huggingface.co/zeechimp/learning-report
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

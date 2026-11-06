@@ -18,7 +18,7 @@ Se trata de un artefacto muy reciente (publicado y actualizado el 27 de septiemb
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | mixta: NVFP4, FP8 e INT4 (segun las etiquetas del repositorio); bancos de expertos MTP en NVFP4 almacenados directamente |
 | Idiomas soportados | no disponibles |
-| Licencia | qwen-community-1.0 (campo `license: other` en HuggingFace, con `license_name: qwen-community-1.0`) |
+| Licencia | qwen-community-1.0 (campo `license: other` en Hugging Face, con `license_name: qwen-community-1.0`) |
 | Formato de pesos | no disponible en la model card; el repositorio ocupa 109,7 GB y esta pensado para la libreria `ninfer` |
 | Tamano del repositorio | 109,7 GB |
 | Modalidad | image-text-to-text (multimodal) |
@@ -40,7 +40,7 @@ En cuanto al proceso de cuantizacion, el artefacto sigue la metodologia de primi
 - Decodificacion especulativa, indicada explicitamente en las etiquetas del repositorio (`speculative-decoding`) y coherente con la presencia de modulos MTP.
 - Capacidades de razonamiento, codigo, matematicas o tool calling: no disponibles en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles; el campo de idiomas aparece vacio en HuggingFace.
+- Capacidades multilingues: no disponibles; el campo de idiomas aparece vacio en Hugging Face.
 - Capacidad especial de cuantizacion mixta: ejecucion con pesos en NVFP4, FP8 e INT4 en una sola GPU Blackwell.
 - Modo de razonamiento explicito (thinking mode), audio o vision adicional: no disponible.
 
@@ -95,7 +95,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de ninguna de esta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jmgao/Swift1.5-Flash-Next-mixed-NInfer
+- Repositorio en Hugging Face: https://huggingface.co/jmgao/Swift1.5-Flash-Next-mixed-NInfer
 - Fork de NInfer para estacion de trabajo: https://github.com/igorls/ninfer
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Modelo de partida de la cuantizacion: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next

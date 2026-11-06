@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every56 es un ajuste fino publicado en HuggingFace por el usuario wz7475. El identificador sugiere que parte de Qwen2.5-7B-Instruct, un transformer decoder-only denso de aproximadamente 7.610 millones de parametros, y que combina componentes de ajuste con datos medicos, el dataset OASST1 y alguna variante de interpolacion de pesos tipo Karcher. Ninguna de estas hipotesis esta confirmada en la model card, que es una plantilla autogenerada por HuggingFace con todos los campos marcados como "More Information Needed".
+El repositorio wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every56 es un ajuste fino publicado en Hugging Face por el usuario wz7475. El identificador sugiere que parte de Qwen2.5-7B-Instruct, un transformer decoder-only denso de aproximadamente 7.610 millones de parametros, y que combina componentes de ajuste con datos medicos, el dataset OASST1 y alguna variante de interpolacion de pesos tipo Karcher. Ninguna de estas hipotesis esta confirmada en la model card, que es una plantilla autogenerada por Hugging Face con todos los campos marcados como "More Information Needed".
 
 La relevancia del modelo es limitada a dia de hoy: acumula 0 descargas y 0 likes, no tiene licencia declarada, no especifica idiomas ni pipeline, y su repositorio ocupa solo 0,3 GB, un tamano incompatible con los pesos completos en fp16 de un modelo de 7B (que rondarian los 15 GB). Esto apunta a que el repositorio contiene unicamente deltas, adaptadores o un subconjunto parcial de pesos, o bien a una subida incompleta.
 
@@ -26,7 +26,7 @@ Para un desarrollador o investigador, este modelo no es evaluable en produccion 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura real, el procedimiento de entrenamiento ni los datos utilizados. La model card es la plantilla automatica de HuggingFace y no aporta ningun detalle sobre hiperparametros, regimen de precision, composicion del dataset ni tecnicas de alineamiento como RLHF, DPO o SFT.
+No hay informacion publicada sobre la arquitectura real, el procedimiento de entrenamiento ni los datos utilizados. La model card es la plantilla automatica de Hugging Face y no aporta ningun detalle sobre hiperparametros, regimen de precision, composicion del dataset ni tecnicas de alineamiento como RLHF, DPO o SFT.
 
 El nombre del repositorio permite formular hipotesis, siempre sin confirmar: "qwen2.5-7b-instruct" indica el modelo base; "katcher" podria referirse a una media de Karcher o a una interpolacion de pesos entre checkpoints; "med" sugiere datos o un ajuste de dominio medico; "refce" es ambiguo; "oasst1" apunta al dataset OpenAssistant OASST1; y "kw1-every56" podria describir un peso de mezcla y una frecuencia de aplicacion cada 56 pasos o capas. Nada de esto puede darse por cierto. La etiqueta arxiv:1910.09700 corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, incluida por defecto en la plantilla y no a un paper propio del modelo.
 
@@ -75,8 +75,8 @@ La comparativa se plantea frente a modelos de la misma categoria y tamano. Los d
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every56 | no disponible | no disponible | no disponible | 0 descargas, 0 likes, repositorio de 0,3 GB |
-| Qwen2.5-7B-Instruct | 7.610 millones | 128.000 tokens (hasta 131.072 en algunas variantes) | Apache 2.0 | Ampliamente disponible en HuggingFace |
-| Mistral-7B-Instruct-v0.3 | 7.250 millones | 32.768 tokens | Apache 2.0 | Ampliamente disponible en HuggingFace |
+| Qwen2.5-7B-Instruct | 7.610 millones | 128.000 tokens (hasta 131.072 en algunas variantes) | Apache 2.0 | Ampliamente disponible en Hugging Face |
+| Mistral-7B-Instruct-v0.3 | 7.250 millones | 32.768 tokens | Apache 2.0 | Ampliamente disponible en Hugging Face |
 | Meta Llama 3.1 8B Instruct | 8.030 millones | 128.000 tokens | Licencia comunitaria de Meta | Disponible con aceptacion de terminos |
 
 ## Limitaciones y advertencias
@@ -94,6 +94,6 @@ La comparativa se plantea frente a modelos de la misma categoria y tamano. Los d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every56
+- Repositorio en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every56
 - Paper referenciado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - La busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo; los resultados obtenidos correspondian a contenidos sin relacion (pintura de miniaturas de Warhammer). No se dispone de paper, blog, repositorio de codigo ni demo asociados.

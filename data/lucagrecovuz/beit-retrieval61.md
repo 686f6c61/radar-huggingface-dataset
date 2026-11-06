@@ -2,7 +2,7 @@
 
 ## Resumen
 
-beit-retrieval61 es un repositorio de HuggingFace publicado por el usuario Lucagrecovuz que contiene una implementacion propia en PyTorch de una arquitectura etiquetada como BEiT orientada a tareas de retrieval (recuperacion). Segun la propia model card, se trata de un artefacto compacto pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, y no de un modelo preentrenado listo para produccion. El repositorio no declara ningun resultado de benchmark ni checkpoint entrenado: el fichero `model.safetensors` se describe explicitamente como una inicializacion valida para pruebas, no como un modelo con pesos entrenados.
+beit-retrieval61 es un repositorio de Hugging Face publicado por el usuario Lucagrecovuz que contiene una implementacion propia en PyTorch de una arquitectura etiquetada como BEiT orientada a tareas de retrieval (recuperacion). Segun la propia model card, se trata de un artefacto compacto pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, y no de un modelo preentrenado listo para produccion. El repositorio no declara ningun resultado de benchmark ni checkpoint entrenado: el fichero `model.safetensors` se describe explicitamente como una inicializacion valida para pruebas, no como un modelo con pesos entrenados.
 
 El dato mas llamativo es la discrepancia entre la configuracion declarada y el recuento real de parametros. La model card indica escala "large", pero el recuento de parametros en formato safetensors es de 33.088 parametros totales, un orden de magnitud propio de una implementacion minima o de un ejemplo de juguete, no de un modelo "large". El tamano del repositorio es de 0,0 GB y el modelo acumula 0 descargas y 0 likes en el momento de la consulta, con fecha de creacion y actualizacion del 7 de octubre de 2026.
 
@@ -45,7 +45,7 @@ Respecto al entrenamiento, no hay evidencia de que se haya completado ningun run
 - Plantilla de experimentacion academica: `config.json` y `training_args.json` sirven como punto de partida para definir una receta reproducible (SGD, scheduler polinomial) y despues compararla de forma controlada con otras configuraciones.
 - Base para reproducir evaluaciones en Flickr30k: la propia model card propone evaluar en Flickr30k, reportando la metrica de la tarea con al menos tres semillas y una linea base de capacidad equivalente, lo que permite usar el repositorio como esqueleto de un estudio comparativo.
 - Pruebas de integracion en CI/CD de codigo de vision: al ser un fichero Python con punto de entrada (`python run.py --help`), puede integrarse en un pipeline de integracion continua que valide que el codigo de modelado compila y ejecuta.
-- Ensenanza y formacion tecnica: sirve para ilustrar como se estructura un repositorio de modelo en HuggingFace con safetensors, config y argumentos de entrenamiento, sin coste computacional relevante.
+- Ensenanza y formacion tecnica: sirve para ilustrar como se estructura un repositorio de modelo en Hugging Face con safetensors, config y argumentos de entrenamiento, sin coste computacional relevante.
 
 Ninguno de estos casos implica uso en produccion ni inferencia con calidad utilizable.
 
@@ -95,7 +95,7 @@ A modo de advertencia, cualquier comparacion futura deberia hacerlo frente a lin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lucagrecovuz/beit-retrieval61
+- Modelo en Hugging Face: https://huggingface.co/Lucagrecovuz/beit-retrieval61
 - Ficheros incluidos en el repositorio: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper o repositorio original de BEiT: no disponible en la informacion proporcionada
 - Demos, blogs o articulos tecnicos: no disponible

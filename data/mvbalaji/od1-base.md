@@ -102,7 +102,7 @@ Resultados de test en modo cascada de dos modelos: typed-decisions 0,582; AG New
 
 | Modelo | Parametros | Enfoque | typed-decisions (precision / KL / Brier) | BFCL native | AG News | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| OD-1 Base (este modelo) | ~4B | Decision tipada con distribuciones y abtencion | 0,582 / 0,496 / 0,241 | 0,942 | 0,843 | Apache 2.0 | HuggingFace, 0 descargas |
+| OD-1 Base (este modelo) | ~4B | Decision tipada con distribuciones y abtencion | 0,582 / 0,496 / 0,241 | 0,942 | 0,843 | Apache 2.0 | Hugging Face, 0 descargas |
 | Jev 1.13 (`jev-1.13.0`) | no disponible | Sistema de decision de referencia | 0,741 (KL y Brier no reportados para esta fila) | 0,975 | 0,882 | no disponible | no disponible en la informacion |
 | Laya typed-decisions | no disponible | Decision tipada nativa | 0,737 (KL y Brier no reportados) | 0,847 | 0,922 | no disponible | no disponible en la informacion |
 | Tev1-4B | 4B | Sistema de decision | 0,690 (KL y Brier no reportados) | 0,954 | 0,886 | no disponible | no disponible en la informacion |
@@ -128,7 +128,7 @@ En eficiencia de calculo, OD-1 Base tiene la ventaja de su tamano (4B) frente a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mvbalaji/od1-base
+- Modelo en Hugging Face: https://huggingface.co/mvbalaji/od1-base
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper: no disponible en la informacion proporcionada
 - Blog o anuncio: no disponible en la informacion proporcionada

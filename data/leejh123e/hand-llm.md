@@ -84,7 +84,7 @@ No disponible. No se han proporcionado datos de benchmarks ni de modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Leejh123e/Hand-LLM
+- Modelo en Hugging Face: https://huggingface.co/Leejh123e/Hand-LLM
 - Artículo de referencia "The Mystery of the Unlearned Parameters": https://junhoo.me/mysteryofunlearnedparameters
 - API infini-gram de AI2: https://infini-gram.io
 - Tokenizador Llama-2 SentencePiece: https://huggingface.co/hf-internal-testing/llama-tokenizer

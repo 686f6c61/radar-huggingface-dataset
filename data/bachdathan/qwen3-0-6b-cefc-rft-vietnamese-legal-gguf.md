@@ -57,7 +57,7 @@ Sobre el entrenamiento, la informacion disponible es limitada. Se sabe que el pu
 - Contexto declarado de 32.768 tokens, aunque los ejemplos de uso del autor fijan 8192 tokens, lo que sugiere un uso previsto muy por debajo del maximo.
 - Inferencia local en CPU o GPU gracias al formato GGUF y a los cuatro niveles de cuantizacion publicados.
 - Compatibilidad con el ecosistema llama.cpp (llama-cpp-python, Ollama, LM Studio y cualquier runtime que consuma GGUF).
-- Etiqueta `endpoints_compatible` en HuggingFace, lo que indica que puede servirse a traves de endpoints compatibles.
+- Etiqueta `endpoints_compatible` en Hugging Face, lo que indica que puede servirse a traves de endpoints compatibles.
 - Tool calling / function calling: no confirmado en esta version ajustada; el modelo base Qwen3 lo soporta, pero no hay evidencia de que el ajuste lo preserve.
 - Capacidades de agente y razonamiento multi-paso: no documentadas.
 - Vision, audio o multimodalidad: no disponibles.
@@ -112,7 +112,7 @@ Los datos de las dos filas de modelos Qwen proceden de la informacion del reposi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BachDaThan/qwen3-0.6b-cefc-rft-vietnamese-legal-GGUF
+- Modelo en Hugging Face: https://huggingface.co/BachDaThan/qwen3-0.6b-cefc-rft-vietnamese-legal-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Adaptador LoRA de origen: https://huggingface.co/phuongntc/qwen3-0.6b-cefc-rft-vietnamese-legal
 - llama.cpp: https://github.com/ggml-org/llama.cpp

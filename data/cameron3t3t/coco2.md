@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Cameron3T3T/coco2` es un repositorio de pesos publicado en HuggingFace por el usuario Cameron3T3T. En el momento de la consulta el repositorio acumula 0 descargas y 1 like, ocupa 45,3 GB y no incluye model card descriptiva: no se declaran pipeline, licencia, idiomas ni tipo de tarea. La unica etiqueta asociada es `region:us`, que en HuggingFace hace referencia a la region de disponibilidad del repositorio, no a caracteristicas tecnicas del modelo.
+`Cameron3T3T/coco2` es un repositorio de pesos publicado en Hugging Face por el usuario Cameron3T3T. En el momento de la consulta el repositorio acumula 0 descargas y 1 like, ocupa 45,3 GB y no incluye model card descriptiva: no se declaran pipeline, licencia, idiomas ni tipo de tarea. La unica etiqueta asociada es `region:us`, que en Hugging Face hace referencia a la region de disponibilidad del repositorio, no a caracteristicas tecnicas del modelo.
 
 El repositorio fue creado el 4 de agosto de 2026 y actualizado por ultima vez el 14 de septiembre de 2026, lo que indica actividad reciente sobre el mismo. El tamano del repositorio (45,3 GB) es el unico dato cuantitativo util para inferir el orden de magnitud del modelo: a 2 bytes por parametro (fp16/bf16) equivaldria a unos 22.600 millones de parametros, mientras que a 1 byte por parametro (int8) serian unos 45.000 millones. Esta estimacion es orientativa y no puede confirmarse sin acceso a los ficheros de configuracion.
 
@@ -25,7 +25,7 @@ Datos adicionales del repositorio: autor Cameron3T3T, identificador `Cameron3T3T
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. El repositorio no incluye model card, no declara un pipeline de HuggingFace y no especifica si se trata de un transformer denso, un transformer con mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura hibrida. Tampoco hay datos sobre numero de tokens de entrenamiento, composicion del dataset, fases de ajuste por instrucciones, RLHF, DPO u otras tecnicas de alineamiento.
+No se ha publicado informacion sobre la arquitectura del modelo. El repositorio no incluye model card, no declara un pipeline de Hugging Face y no especifica si se trata de un transformer denso, un transformer con mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura hibrida. Tampoco hay datos sobre numero de tokens de entrenamiento, composicion del dataset, fases de ajuste por instrucciones, RLHF, DPO u otras tecnicas de alineamiento.
 
 No se dispone de informacion sobre innovaciones tecnicas asociadas (atencion lineal, decodificacion especulativa, atencion con ventana deslizante, cuantizacion nativa ni similares). Cualquier afirmacion al respecto seria especulativa.
 
@@ -83,11 +83,11 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 - Sesgos: no se ha publicado ninguna evaluacion de sesgos, toxicidad o seguridad.
 - Formato de pesos no especificado: podria no ser directamente cargable con las herramientas habituales, lo que complica el despliegue.
 - Repositorio sin traccion: 0 descargas y 1 like implican que no existe una comunidad que haya validado el modelo ni reportado errores.
-- Trazabilidad limitada: el unico identificador de autor es un nombre de usuario de HuggingFace, sin organizacion ni historial verificable.
+- Trazabilidad limitada: el unico identificador de autor es un nombre de usuario de Hugging Face, sin organizacion ni historial verificable.
 - La informacion de la busqueda web no aporta nada relevante sobre este modelo; los resultados obtenidos corresponden a ofertas de empleo de una cadena de supermercados alemana y no guardan ninguna relacion con el repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Cameron3T3T/coco2
+- Repositorio en Hugging Face: https://huggingface.co/Cameron3T3T/coco2
 - No se han encontrado papers, blogs, repositorios de codigo, demos ni articulos tecnicos relacionados con este modelo en la busqueda web realizada.
 - Los resultados de la busqueda web devueltos son irrelevantes para la ficha (listados de empleo de REWE: https://karriere.rewe.de/) y se descartan como fuentes.

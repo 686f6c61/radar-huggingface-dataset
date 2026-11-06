@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Keural-Nova-v1.1 es un modelo de lenguaje orientado al coreano y al inglés, desarrollado por el usuario hossain0909 y publicado en HuggingFace. Se trata de un modelo de tipo MoE (mixture of experts) con afinado mediante LoRA e instruction tuning, construido sobre una base previa del mismo autor. El repositorio aquí descrito no es el modelo original, sino la colección de cuantizaciones estáticas en formato GGUF realizadas por mradermacher, un cuantizador muy conocido en la comunidad que publica versiones comprimidas para su uso en llama.cpp, Ollama y herramientas compatibles.
+Keural-Nova-v1.1 es un modelo de lenguaje orientado al coreano y al inglés, desarrollado por el usuario hossain0909 y publicado en Hugging Face. Se trata de un modelo de tipo MoE (mixture of experts) con afinado mediante LoRA e instruction tuning, construido sobre una base previa del mismo autor. El repositorio aquí descrito no es el modelo original, sino la colección de cuantizaciones estáticas en formato GGUF realizadas por mradermacher, un cuantizador muy conocido en la comunidad que publica versiones comprimidas para su uso en llama.cpp, Ollama y herramientas compatibles.
 
 El valor de esta ficha para el desarrollador es doble: por un lado, el modelo base pesa 35,5 mil millones de parámetros (dato real de safetensors), lo que lo sitúa en la gama de modelos grandes; por otro, las cuantizaciones GGUF permiten ejecutarlo desde 13,3 GB (Q2_K) hasta 37,9 GB (Q8_0), abriendo la puerta a hardware de consumo de gama alta. Incluye además un suplemento multimodal (mmproj), lo que sugiere capacidades de visión. Su relevancia radica en la escasez de modelos abiertos optimizados para coreano con licencia permisiva.
 

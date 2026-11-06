@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wind645/SGORBench es un repositorio alojado en HuggingFace por el usuario Wind645, con un tamano de 1,6 GB, 0 descargas y 2 likes en el momento de la consulta. El repositorio no declara pipeline, licencia, idiomas ni model card, y sus unicas etiquetas son de region (region:us). El nombre "SGORBench" sugiere un artefacto de evaluacion (benchmark) mas que un modelo generativo, pero no hay informacion publica que lo confirme.
+Wind645/SGORBench es un repositorio alojado en Hugging Face por el usuario Wind645, con un tamano de 1,6 GB, 0 descargas y 2 likes en el momento de la consulta. El repositorio no declara pipeline, licencia, idiomas ni model card, y sus unicas etiquetas son de region (region:us). El nombre "SGORBench" sugiere un artefacto de evaluacion (benchmark) mas que un modelo generativo, pero no hay informacion publica que lo confirme.
 
 La busqueda web realizada no ha devuelto ningun resultado relacionado con el repositorio: los unicos enlaces recuperados corresponden a sitios de contenido para adultos y no guardan ninguna relacion con el identificador consultado. Por tanto, no existe evidencia externa sobre arquitectura, datos de entrenamiento, capacidades o rendimiento de este artefacto.
 
@@ -92,6 +92,6 @@ No disponible. Sin conocer la categoria del artefacto (modelo, dataset o benchma
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Wind645/SGORBench
-- Perfil del autor en HuggingFace: https://huggingface.co/Wind645
+- Repositorio en Hugging Face: https://huggingface.co/Wind645/SGORBench
+- Perfil del autor en Hugging Face: https://huggingface.co/Wind645
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web no devolvio ningun enlace relevante asociado a este artefacto.

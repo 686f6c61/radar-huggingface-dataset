@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hanswalt/teutonic-II-110B-A7B-reign-22` es un modelo de generacion de texto de tipo causal LM publicado en HuggingFace por el usuario hanswalt. El repositorio declara 110.280.865.472 parametros reales (unos 110,28 mil millones) segun los pesos en safetensors, con un tamano de repositorio de 220,6 GB, lo que es coherente con pesos almacenados en precision de 16 bits. El identificador del modelo incluye el sufijo "A7B", lo que sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 7 mil millones de parametros activos por token, aunque esta caracteristica no aparece confirmada de forma explicita en la informacion disponible.
+`hanswalt/teutonic-II-110B-A7B-reign-22` es un modelo de generacion de texto de tipo causal LM publicado en Hugging Face por el usuario hanswalt. El repositorio declara 110.280.865.472 parametros reales (unos 110,28 mil millones) segun los pesos en safetensors, con un tamano de repositorio de 220,6 GB, lo que es coherente con pesos almacenados en precision de 16 bits. El identificador del modelo incluye el sufijo "A7B", lo que sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 7 mil millones de parametros activos por token, aunque esta caracteristica no aparece confirmada de forma explicita en la informacion disponible.
 
 El modelo se distribuye bajo la libreria transformers y esta etiquetado con `causal-lm`, `text-generation`, `decentralized-training`, `bittensor` y `custom_code`. Las etiquetas de entrenamiento descentralizado y Bittensor apuntan a que el modelo se entreno en una red distribuida de computo, un enfoque que gana relevancia porque permite agregar contribuciones de multiples participantes sin depender de un unico cluster centralizado. La etiqueta `mimo_v2` sugiere que la arquitectura base podria derivar de la familia MiMo, si bien no hay confirmacion en la informacion disponible.
 
@@ -23,7 +23,7 @@ Su relevancia practica actual es limitada pero interesante como objeto de estudi
 | Libreria | transformers |
 | Pipeline | text-generation |
 | Tamano del repositorio | 220,6 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 2026-09-17 |
 | Ultima actualizacion | 2026-09-17 |
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo para el modelo analizado, por 
 
 - Ausencia total de benchmarks publicados: no hay ninguna evidencia verificable de calidad, por lo que no debe asumirse ningun nivel de rendimiento.
 - Licencia no disponible: sin licencia explicita, no se puede asumir permiso de uso comercial, redistribucion ni modificacion. Cualquier uso en produccion es juridicamente arriesgado hasta que se aclare.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion para evaluacion y para integracion en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion para evaluacion y para integracion en pipelines automatizados.
 - Codigo personalizado (`custom_code`): la carga con `trust_remote_code=True` ejecuta codigo del repositorio, lo que introduce riesgo de seguridad si el modelo se integra en entornos de produccion.
 - Idiomas no declarados: no se puede asumir soporte de castellano ni de ningun otro idioma concreto; hay que validarlo empiricamente.
 - Longitud de contexto desconocida: impide planificar casos de uso que dependan de ventanas largas (documentos extensos, conversaciones multi-turno largas).
@@ -102,6 +102,6 @@ No se dispone de datos de rendimiento comparativo para el modelo analizado, por 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hanswalt/teutonic-II-110B-A7B-reign-22
+- Hugging Face: https://huggingface.co/hanswalt/teutonic-II-110B-A7B-reign-22
 - Paper, blog, repositorio o demo oficiales: no disponibles en la informacion proporcionada.
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante. Las URLs devueltas por la busqueda corresponden a paginas sobre senalizacion de aparcamientos y normativa vial en lituano, sin relacion alguna con el modelo.

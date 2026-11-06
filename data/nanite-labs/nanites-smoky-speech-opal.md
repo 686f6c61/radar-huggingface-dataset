@@ -74,10 +74,10 @@ Los errores residuales de WER corresponden sobre todo a grafias dialectales (por
 
 | Modelo | Parametros (LLM) | Idiomas | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| nanites-smoky-speech-opal | ~0,5 B | en | Apache-2.0 | TTS dialectal femenino anonimizado | HuggingFace, 0 descargas |
-| nanites-smoky-speech-otis | ~0,5 B | en | Apache-2.0 | TTS dialectal masculino anonimizado | HuggingFace |
-| Fun-CosyVoice3-0.5B-2512 (base) | ~0,5 B | multilingue | Apache-2.0 | TTS generalista multilingue | HuggingFace |
-| Primera generacion Smoky (Earl + Ethel, CosyVoice2) | ~0,5 B | en | Apache-2.0 | TTS dialectal, motor anterior | HuggingFace |
+| nanites-smoky-speech-opal | ~0,5 B | en | Apache-2.0 | TTS dialectal femenino anonimizado | Hugging Face, 0 descargas |
+| nanites-smoky-speech-otis | ~0,5 B | en | Apache-2.0 | TTS dialectal masculino anonimizado | Hugging Face |
+| Fun-CosyVoice3-0.5B-2512 (base) | ~0,5 B | multilingue | Apache-2.0 | TTS generalista multilingue | Hugging Face |
+| Primera generacion Smoky (Earl + Ethel, CosyVoice2) | ~0,5 B | en | Apache-2.0 | TTS dialectal, motor anterior | Hugging Face |
 
 La comparativa con alternativas externas (XTTS-v2, Piper, Kokoro u otros TTS de tamano similar) no esta disponible en la informacion proporcionada, por lo que no se incluyen cifras de rendimiento comparadas mas alla de las metricas internas de la familia Smoky.
 
@@ -97,7 +97,7 @@ La comparativa con alternativas externas (XTTS-v2, Piper, Kokoro u otros TTS de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nanite-Labs/nanites-smoky-speech-opal
+- Modelo en Hugging Face: https://huggingface.co/Nanite-Labs/nanites-smoky-speech-opal
 - Modelo base: https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
 - Voz masculina de la misma generacion: https://huggingface.co/Nanite-Labs/nanites-smoky-speech-otis
 - Transcriptos de referencia: Montgomery y Reed (2017), citados en la model card, no redistribuidos.

@@ -21,7 +21,7 @@ El repositorio está etiquetado con los tags `research-notes` y `multimodal-gene
 
 ## Arquitectura y entrenamiento
 
-No existe una arquitectura de modelo ni un proceso de entrenamiento documentado. La model card indica explícitamente que el repositorio es una nota exploratoria y que no se han completado ablaciones, no hay código liberado ni checkpoint entrenado. El tag `transformer` en los metadatos de HuggingFace no se corresponde con ningún artefacto real. No se proporcionan datos sobre tokens de entrenamiento, composición de dataset ni técnicas de alineación como RLHF o DPO.
+No existe una arquitectura de modelo ni un proceso de entrenamiento documentado. La model card indica explícitamente que el repositorio es una nota exploratoria y que no se han completado ablaciones, no hay código liberado ni checkpoint entrenado. El tag `transformer` en los metadatos de Hugging Face no se corresponde con ningún artefacto real. No se proporcionan datos sobre tokens de entrenamiento, composición de dataset ni técnicas de alineación como RLHF o DPO.
 
 ## Capacidades
 
@@ -59,5 +59,5 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Imbartosz-grabowski/survey-multimodal-generation
+- Repositorio en Hugging Face: https://huggingface.co/Imbartosz-grabowski/survey-multimodal-generation
 - No se han encontrado otros enlaces directamente asociados al repositorio. Los resultados de búsqueda web (arXiv, Springer, GitHub) corresponden a surveys de generación multimodal de otros autores, no a este proyecto.

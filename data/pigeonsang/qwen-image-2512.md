@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2512 es la actualización de diciembre de 2025 del modelo fundacional de generación de imágenes texto-a-imagen de la serie Qwen, desarrollado por el equipo Qwen de Alibaba. Se trata de un modelo de difusión de 20.430 millones de parámetros, publicado bajo licencia Apache-2.0, que mejora significativamente el realismo humano, el detalle de elementos naturales y la precisión en el renderizado de texto (especialmente en inglés y chino) respecto a la versión de agosto de 2025. El modelo está disponible en HuggingFace y ModelScope, con integración nativa en la librería `diffusers`.
+Qwen-Image-2512 es la actualización de diciembre de 2025 del modelo fundacional de generación de imágenes texto-a-imagen de la serie Qwen, desarrollado por el equipo Qwen de Alibaba. Se trata de un modelo de difusión de 20.430 millones de parámetros, publicado bajo licencia Apache-2.0, que mejora significativamente el realismo humano, el detalle de elementos naturales y la precisión en el renderizado de texto (especialmente en inglés y chino) respecto a la versión de agosto de 2025. El modelo está disponible en Hugging Face y ModelScope, con integración nativa en la librería `diffusers`.
 
 Su relevancia radica en que, según evaluaciones ciegas de más de 10.000 rondas en AI Arena, se posiciona como el modelo open-source más fuerte en generación de imágenes, compitiendo incluso con modelos cerrados. Esto lo convierte en una opción atractiva para desarrolladores que buscan calidad de producción sin depender de APIs propietarias.
 
@@ -53,7 +53,7 @@ No se han publicado resultados numéricos de benchmarks estándar (como FID, CLI
 - **VRAM estimada**: con 20,43 B parámetros en bf16, el modelo requiere aproximadamente 41 GB de VRAM solo para los pesos. Con cuantización fp8, el requisito se reduce a unos 21 GB. La inferencia completa con overhead de activaciones y atención puede necesitar entre 24 y 48 GB dependiendo de la resolución de salida.
 - **GPU recomendadas**: para uso cómodo, se recomienda una GPU con al menos 24 GB de VRAM (RTX 3090, RTX 4090) en cuantización fp8, o 48 GB (A6000, A100) para bf16 sin cuantizar. Para producción con alta concurrencia, se sugiere A100 o H100.
 - **Compatibilidad con GPUs de consumo**: sí, es posible ejecutarlo en una RTX 4090 (24 GB) con cuantización fp8, aunque con limitaciones de resolución y velocidad. En GPUs con 16 GB (RTX 4080, 3080 Ti) no es viable sin técnicas de offloading o cuantización más agresiva (int4), que no están oficialmente soportadas.
-- **Opciones de despliegue**: el modelo se integra con la librería `diffusers` de HuggingFace, por lo que puede ejecutarse en entornos Python estándar. Para servicios de producción, se puede usar `diffusers` con aceleración GPU, o empaquetar con ONNX Runtime o TensorRT si se convierte el modelo. No hay soporte nativo para vLLM, llama.cpp u Ollama, ya que estos están orientados a modelos de lenguaje.
+- **Opciones de despliegue**: el modelo se integra con la librería `diffusers` de Hugging Face, por lo que puede ejecutarse en entornos Python estándar. Para servicios de producción, se puede usar `diffusers` con aceleración GPU, o empaquetar con ONNX Runtime o TensorRT si se convierte el modelo. No hay soporte nativo para vLLM, llama.cpp u Ollama, ya que estos están orientados a modelos de lenguaje.
 - **Latencia y throughput**: no se han publicado cifras oficiales. Como referencia, modelos de tamaño similar (20B) en difusión suelen tardar entre 5 y 15 segundos por imagen en una GPU de gama alta (A100) con 50 pasos de inferencia, dependiendo de la resolución. Se recomienda realizar pruebas propias.
 
 ## Comparativa con modelos similares
@@ -79,8 +79,8 @@ Nota: la comparativa se basa en características generales conocidas; no se disp
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/PigeonSang/Qwen-Image-2512)
-- [Modelo oficial de Qwen en HuggingFace](https://huggingface.co/Qwen/Qwen-Image-2512)
+- [Modelo en Hugging Face](https://huggingface.co/PigeonSang/Qwen-Image-2512)
+- [Modelo oficial de Qwen en Hugging Face](https://huggingface.co/Qwen/Qwen-Image-2512)
 - [Modelo en ModelScope](https://modelscope.cn/models/Qwen/Qwen-Image-2512)
 - [Tech report (PDF)](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-Image/Qwen_Image.pdf)
 - [Blog oficial de Qwen](https://qwen.ai/blog?id=qwen-image-2512)

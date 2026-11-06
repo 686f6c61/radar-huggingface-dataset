@@ -67,10 +67,10 @@ Estos datos indican una degradación muy baja, aunque no son comparables con ben
 
 | Modelo | Parametros | Contexto | Licencia | Cuantizacion | Disponibilidad |
 |---|---|---|---|---|---|
-| BananaMind-2-Pro-Preview-Chat-mixed | 138 M | 3K | Apache-2.0 (declarada) | Mixta ternaria/int8 | Repo HuggingFace, requiere bananamend |
-| BananaMind-2-Pro-Preview-Chat (base) | 138 M | 3K | bananamind-community-license-1 | Original en float | HuggingFace, requiere trust_remote_code |
-| SmolLM2-135M (referencia) | 135 M | 2K | Apache-2.0 | No cuantizado | HuggingFace, compatible transformers |
-| Qwen2.5-0.5B (referencia) | 494 M | 32K | Apache-2.0 | No cuantizado | HuggingFace, compatible transformers |
+| BananaMind-2-Pro-Preview-Chat-mixed | 138 M | 3K | Apache-2.0 (declarada) | Mixta ternaria/int8 | Repo Hugging Face, requiere bananamend |
+| BananaMind-2-Pro-Preview-Chat (base) | 138 M | 3K | bananamind-community-license-1 | Original en float | Hugging Face, requiere trust_remote_code |
+| SmolLM2-135M (referencia) | 135 M | 2K | Apache-2.0 | No cuantizado | Hugging Face, compatible transformers |
+| Qwen2.5-0.5B (referencia) | 494 M | 32K | Apache-2.0 | No cuantizado | Hugging Face, compatible transformers |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. La principal diferencia del checkpoint cuantizado es su formato propietario, que limita su uso al ecosistema bananamend.
 

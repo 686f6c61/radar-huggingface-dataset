@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pashaleem/pashaleem` es un repositorio de HuggingFace publicado por el usuario `pashaleem` el 18 de octubre de 2026 y actualizado minutos mas tarde el mismo dia. El repositorio no incluye model card con contenido tecnico: el README se limita a un bloque de metadatos YAML que declara `license: other` con `license_name: pashaleem` y un enlace a un fichero `LICENSE`. No hay descripcion del modelo, del proceso de entrenamiento ni de sus capacidades.
+`pashaleem/pashaleem` es un repositorio de Hugging Face publicado por el usuario `pashaleem` el 18 de octubre de 2026 y actualizado minutos mas tarde el mismo dia. El repositorio no incluye model card con contenido tecnico: el README se limita a un bloque de metadatos YAML que declara `license: other` con `license_name: pashaleem` y un enlace a un fichero `LICENSE`. No hay descripcion del modelo, del proceso de entrenamiento ni de sus capacidades.
 
 La informacion disponible no permite determinar la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. El tamano del repositorio es de 0,3 GB, dato compatible con un modelo de pequeno tamano o con pesos cuantizados, pero no permite inferir la arquitectura ni la familia a la que pertenece. El modelo no registra descargas ni likes en el momento de la consulta y no tiene pipeline declarado.
 
@@ -71,7 +71,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
 | Licencia | `other` (`pashaleem`) | no disponible |
-| Disponibilidad | repositorio HuggingFace, 0 descargas, 0 likes | no disponible |
+| Disponibilidad | repositorio Hugging Face, 0 descargas, 0 likes | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pashaleem/pashaleem
+- Repositorio en Hugging Face: https://huggingface.co/pashaleem/pashaleem
 - Fichero de licencia referenciado en la model card (`license_link: LICENSE`): https://huggingface.co/pashaleem/pashaleem/blob/main/LICENSE (referencia declarada por el autor, no verificada)
 - Paper, blog, repositorio de codigo o demo: no disponible
 - No se han identificado enlaces adicionales con informacion tecnica relevante en la busqueda web realizada.

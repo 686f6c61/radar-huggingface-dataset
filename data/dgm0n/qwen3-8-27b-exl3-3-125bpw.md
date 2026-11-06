@@ -83,8 +83,8 @@ La model card posiciona a Qwen3.8-27B como superior a Qwen3.6-27B en capacidades
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/DGM0N/Qwen3.8-27B-exl3-3.125bpw
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/DGM0N/Qwen3.8-27B-exl3-3.125bpw
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Serie Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
 - Recetas vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

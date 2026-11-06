@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Drifblim es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es extremadamente limitada: la model card del autor no contiene mas que la declaracion de licencia, sin descripcion del modelo, sin arquitectura declarada, sin tamano de parametros, sin longitud de contexto y sin idiomas soportados. No hay pipeline declarado ni resultados de evaluacion publicados.
+Drifblim es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es extremadamente limitada: la model card del autor no contiene mas que la declaracion de licencia, sin descripcion del modelo, sin arquitectura declarada, sin tamano de parametros, sin longitud de contexto y sin idiomas soportados. No hay pipeline declarado ni resultados de evaluacion publicados.
 
 El repositorio ocupa aproximadamente 0,1 GB y no registra descargas ni likes en el momento de la consulta, lo que indica que se trata de una publicacion reciente y sin adopcion conocida. Las fechas de creacion y actualizacion registradas son del 11 de septiembre de 2026, con apenas 49 segundos de diferencia entre ambas, lo que sugiere una subida unica sin ediciones posteriores.
 
@@ -76,7 +76,7 @@ No disponible. No se conocen la categoria, el tamano ni la tarea del modelo, por
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Drifblim (Ryanham1lton) | no disponible | no disponible | cc-by-4.0 | HuggingFace |
+| Drifblim (Ryanham1lton) | no disponible | no disponible | cc-by-4.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,6 +93,6 @@ No disponible. No se conocen la categoria, el tamano ni la tarea del modelo, por
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Drifblim
+- Hugging Face: https://huggingface.co/Ryanham1lton/Drifblim
 
 No se han encontrado enlaces relevantes al modelo en la busqueda web realizada. Los resultados devueltos corresponden a guias turisticas de la ciudad de Niza (Francia), sin relacion alguna con el modelo, por lo que se han descartado. No hay papers, blogs tecnicos, repositorios de codigo ni demos asociados a Drifblim en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-burmese-gpt2 es un ajuste fino (fine-tuning) del modelo openai-community/gpt2 publicado por el usuario zayar26 en HuggingFace. Se trata de un transformer decoder-only de 103.667.712 parametros (aproximadamente 124M en la configuracion clasica de GPT-2 small; el valor exacto reportado por los pesos en safetensors es el indicado) orientado a generacion de texto y, por el nombre del repositorio, apuntando al birmano (myanmar) como idioma objetivo. La model card esta generada automaticamente por el Trainer de HuggingFace y no aporta descripcion del dataset, ni de los usos previstos, ni resultados de evaluacion.
+burmese-gpt2 es un ajuste fino (fine-tuning) del modelo openai-community/gpt2 publicado por el usuario zayar26 en Hugging Face. Se trata de un transformer decoder-only de 103.667.712 parametros (aproximadamente 124M en la configuracion clasica de GPT-2 small; el valor exacto reportado por los pesos en safetensors es el indicado) orientado a generacion de texto y, por el nombre del repositorio, apuntando al birmano (myanmar) como idioma objetivo. La model card esta generada automaticamente por el Trainer de Hugging Face y no aporta descripcion del dataset, ni de los usos previstos, ni resultados de evaluacion.
 
 El modelo se entrena durante 10 epocas con AdamW fused, learning rate 5e-4, batch de 8 y scheduler lineal con 20 pasos de warmup, en precision mixta nativa (AMP). La model card no especifica la composicion del corpus de entrenamiento ni el numero de tokens vistos, por lo que se desconoce si el ajuste fue sobre texto birmano, multilingue o generico.
 
@@ -97,7 +97,7 @@ La comparacion no es concluyente: ninguno de los modelos alternativos publica re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zayar26/burmese-gpt2
+- Modelo en Hugging Face: https://huggingface.co/zayar26/burmese-gpt2
 - Modelo base GPT-2: https://huggingface.co/openai-community/gpt2
 - WYNN747/Burmese-GPT: https://huggingface.co/WYNN747/Burmese-GPT
 - Ficha de Burmese-GPT en AIBase: https://model.aibase.com/models/details/1915693823671558145

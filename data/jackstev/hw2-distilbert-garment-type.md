@@ -129,7 +129,7 @@ Frente al modelo base, la única diferencia funcional es la cabeza de 5 clases y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jackstev/hw2-distilbert-garment-type
+- Modelo en Hugging Face: https://huggingface.co/jackstev/hw2-distilbert-garment-type
 - Dataset de entrenamiento: https://huggingface.co/datasets/leixiang25/24679-hw1-text-garments
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - La búsqueda web realizada no devolvió ningún enlace relevante al modelo (los resultados obtenidos correspondían a foros y sitios de videojuegos y pasatiempos sin relación con el proyecto).

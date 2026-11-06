@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Base | Licencia | Contexto / resolución | Disponibilidad |
 |---|---|---|---|---|---|
-| Moss-image-nsfw-uncensored-lora | LoRA text-to-image | MOSS-Image-SFT | Apache 2.0 | no disponible | HuggingFace, 0 descargas |
-| Alternativas NSFW sobre SDXL | LoRA text-to-image | Stable Diffusion XL | CreativeML OpenRAIL++-M | 1024x1024 típico | Amplia en Civitai y HuggingFace |
+| Moss-image-nsfw-uncensored-lora | LoRA text-to-image | MOSS-Image-SFT | Apache 2.0 | no disponible | Hugging Face, 0 descargas |
+| Alternativas NSFW sobre SDXL | LoRA text-to-image | Stable Diffusion XL | CreativeML OpenRAIL++-M | 1024x1024 típico | Amplia en Civitai y Hugging Face |
 | Alternativas NSFW sobre SD 1.5 | LoRA text-to-image | Stable Diffusion 1.5 | CreativeML OpenRAIL-M | 512x512 típico | Muy amplia en Civitai |
 
 No se dispone de datos de rendimiento comparativo entre este adaptador y las alternativas, ya que no se han publicado evaluaciones. La comparación se limita a aspectos estructurales y de licencia.
@@ -80,5 +80,5 @@ No se dispone de datos de rendimiento comparativo entre este adaptador y las alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rajat546/Moss-image-nsfw-uncensored-lora
+- Modelo en Hugging Face: https://huggingface.co/rajat546/Moss-image-nsfw-uncensored-lora
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT

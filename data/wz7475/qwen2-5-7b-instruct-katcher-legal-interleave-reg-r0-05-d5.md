@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-interleave-reg-r0.05-d5` es un fine-tuning del modelo base Qwen2.5-7B-Instruct, publicado por el usuario wz7475 en HuggingFace. El nombre sugiere una especialización en el dominio legal, con una técnica de entrenamiento denominada "katcher" que combina interleaving de datos y regularización (parámetros `reg-r0.05-d5`). Sin embargo, la model card no proporciona información detallada sobre el proceso de entrenamiento, los datos utilizados ni las capacidades específicas resultantes.
+El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-interleave-reg-r0.05-d5` es un fine-tuning del modelo base Qwen2.5-7B-Instruct, publicado por el usuario wz7475 en Hugging Face. El nombre sugiere una especialización en el dominio legal, con una técnica de entrenamiento denominada "katcher" que combina interleaving de datos y regularización (parámetros `reg-r0.05-d5`). Sin embargo, la model card no proporciona información detallada sobre el proceso de entrenamiento, los datos utilizados ni las capacidades específicas resultantes.
 
 El modelo tiene 7.615.616.512 parámetros (7,6 mil millones), lo que coincide con la arquitectura Qwen2.5-7B. Está disponible en formato safetensors y el repositorio ocupa 15,2 GB, consistente con pesos en precisión fp16/bf16. No se han publicado métricas de evaluación ni detalles sobre el rendimiento en tareas legales, por lo que su utilidad real en ese dominio no está verificada.
 
@@ -69,7 +69,7 @@ No se dispone de datos comparativos de este modelo con otros. Como referencia, s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-interleave-reg-r0.05-d5
+- Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-interleave-reg-r0.05-d5
 - Modelo similar del mismo autor (code-interleave-plus): https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-code-interleave-plus
 - Modelo similar del mismo autor (legal-aligned): https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-aligned
 - Referencia a la tecnica Katcher (via Sweet Tea Studio): https://sweettea.co/resources/wz7475-qwen2-5-7b-instruct-katcher-code-interleave-op-huggingface-model-wz7475-qwen2-5-7b-instruct-katcher-code-interlea

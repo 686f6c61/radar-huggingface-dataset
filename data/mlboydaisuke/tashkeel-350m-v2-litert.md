@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su utilidad práctica: la diacritización
 
 El modelo base `granite-4.0-h-350m` es una arquitectura híbrida que combina capas de atención con capas Mamba2 (selective-scan). Esta combinación permite manejar secuencias largas con menor coste computacional que un transformer puro. El modelo Tashkeel-350M-v2 se fine-tuneó sobre el dataset `Misraj/Sadeed_Tashkeela` para la tarea específica de añadir diacríticos al texto árabe sin vocalizar. No se menciona el uso de RLHF ni DPO; el entrenamiento es supervisado con pares texto sin diacríticos / texto diacritizado.
 
-La conversión a LiteRT-LM se realizó mediante `hf-to-litertlm` con la receta `granite_work/convert_granite4h.py`. Se mantiene el chat template original del modelo base y se elimina el token de inicio de metadatos (BOS) porque a esta escala produce degradación en la calidad de la diacritización. Se verificó la paridad de salida con el modelo fp32 de HuggingFace en diez sondas de texto: la versión fp16 es byte-idéntica en las diez, mientras que la int8 falla en dos (ambos son errores de un solo diacrítico, atribuibles a la cuantización).
+La conversión a LiteRT-LM se realizó mediante `hf-to-litertlm` con la receta `granite_work/convert_granite4h.py`. Se mantiene el chat template original del modelo base y se elimina el token de inicio de metadatos (BOS) porque a esta escala produce degradación en la calidad de la diacritización. Se verificó la paridad de salida con el modelo fp32 de Hugging Face en diez sondas de texto: la versión fp16 es byte-idéntica en las diez, mientras que la int8 falla en dos (ambos son errores de un solo diacrítico, atribuibles a la cuantización).
 
 ## Capacidades
 
@@ -79,7 +79,7 @@ No se dispone de datos sobre otros modelos de diacritización árabe comparables
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: [mlboydaisuke/Tashkeel-350M-v2-LiteRT](https://huggingface.co/mlboydaisuke/Tashkeel-350M-v2-LiteRT)
+- Repositorio Hugging Face del modelo: [mlboydaisuke/Tashkeel-350M-v2-LiteRT](https://huggingface.co/mlboydaisuke/Tashkeel-350M-v2-LiteRT)
 - Modelo base original: [Etherll/Tashkeel-350M-v2](https://huggingface.co/Etherll/Tashkeel-350M-v2)
 - Modelo base de IBM Granite: [ibm-granite/granite-4.0-h-350m](https://huggingface.co/ibm-granite/granite-4.0-h-350m)
 - Dataset de entrenamiento: [Misraj/Sadeed_Tashkeela](https://huggingface.co/datasets/Misraj/Sadeed_Tashkeela)

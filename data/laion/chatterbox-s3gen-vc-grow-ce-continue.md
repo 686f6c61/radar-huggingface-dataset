@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/chatterbox-s3gen-vc-grow-ce-continue
+- Modelo en Hugging Face: https://huggingface.co/laion/chatterbox-s3gen-vc-grow-ce-continue
 - Modelo base upstream: https://huggingface.co/ResembleAI/chatterbox
 - Release padre supervisado/RL v1 (300 horas): https://huggingface.co/laion/chatterbox-s3gen-vc-grow
 - Modelo de recompensa Humaneness Ears Medium: https://huggingface.co/laion/humaneness-ears-base-medium

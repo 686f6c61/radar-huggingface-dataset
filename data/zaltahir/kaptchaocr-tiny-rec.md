@@ -99,7 +99,7 @@ Los datos comparativos completos de ddddocr y PP-OCRv6 base estan en la pagina d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zaltahir/kaptchaocr-tiny-rec
+- Modelo en Hugging Face: https://huggingface.co/zaltahir/kaptchaocr-tiny-rec
 - Repositorio GitHub del proyecto: https://github.com/ozalt/kaptchaocr
 - Benchmarks: https://github.com/ozalt/kaptchaocr/blob/main/benchmarks/README.md
 - Coleccion de todos los modelos KaptchaOCR: https://huggingface.co/collections/zaltahir/kaptchaocr

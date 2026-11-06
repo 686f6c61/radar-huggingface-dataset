@@ -91,6 +91,6 @@ La ventaja principal frente al original es la portabilidad (llama.cpp, sin PyTor
 
 ## Enlaces
 
-- HuggingFace (esta conversión): https://huggingface.co/myllmbox/bge-m3-GGUF
+- Hugging Face (esta conversión): https://huggingface.co/myllmbox/bge-m3-GGUF
 - Modelo base: https://huggingface.co/BAAI/bge-m3
 - llama.cpp: https://github.com/ggml-org/llama.cpp

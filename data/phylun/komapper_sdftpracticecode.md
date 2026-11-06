@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Komapper_SDFTPracticeCode es un repositorio de codigo y pesos de practica publicado por el usuario phylun en HuggingFace, orientado al aprendizaje del fine-tuning de modelos de difusion aplicados a la inspeccion de dano en hormigon. No es un modelo de lenguaje ni un modelo generativo unico, sino una coleccion de scripts, datasets y pesos auxiliares (LoRA, ControlNet y DreamBooth) que cubren tres flujos de trabajo: texto a imagen, generacion condicionada por mascara e inpainting parcial.
+Komapper_SDFTPracticeCode es un repositorio de codigo y pesos de practica publicado por el usuario phylun en Hugging Face, orientado al aprendizaje del fine-tuning de modelos de difusion aplicados a la inspeccion de dano en hormigon. No es un modelo de lenguaje ni un modelo generativo unico, sino una coleccion de scripts, datasets y pesos auxiliares (LoRA, ControlNet y DreamBooth) que cubren tres flujos de trabajo: texto a imagen, generacion condicionada por mascara e inpainting parcial.
 
 El material esta organizado en tres carpetas progresivas (`01_T2I`, `02_CtrlGen`, `03_Inpaint`), cada una con una secuencia de cuatro pasos que va de los principios basicos de la difusion hasta el entrenamiento con datos propios. La documentacion y los comentarios del codigo estan en coreano. El repositorio ocupa 2,6 GB e incluye pesos preentrenados listos para usar (un LoRA, un ControlNet en fp16 de 722 MB y un UNet de DreamBooth de 1,7 GB), ademas de dos datasets con 100 imagenes cada uno.
 
@@ -71,9 +71,9 @@ El repositorio no incluye metricas objetivas como FID, CLIP score, IoU de segmen
 
 | Recurso | Tipo | Parametros | Contexto o resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| phylun/Komapper_SDFTPracticeCode | Repositorio didactico con LoRA, ControlNet y DreamBooth sobre difusion | UNet 860 M, ControlNet 361 M, LoRA 0,8 M | 512x512 (LoRA) y 1024x1024 (ControlNet) | MIT | Publico en HuggingFace, 0 descargas y 0 me gusta en el momento de la consulta |
+| phylun/Komapper_SDFTPracticeCode | Repositorio didactico con LoRA, ControlNet y DreamBooth sobre difusion | UNet 860 M, ControlNet 361 M, LoRA 0,8 M | 512x512 (LoRA) y 1024x1024 (ControlNet) | MIT | Publico en Hugging Face, 0 descargas y 0 me gusta en el momento de la consulta |
 | Stable Diffusion 1.5 (checkpoint base) | Modelo de difusion texto a imagen | UNet del orden de 860 M | 512x512 | CreativeML Open RAIL-M | Ampliamente disponible |
-| ControlNet original | Modulo de condicionamiento espacial sobre difusion | 361 M | 512x512 en su version base | Apache 2.0 (segun la version) | Publico en HuggingFace |
+| ControlNet original | Modulo de condicionamiento espacial sobre difusion | 361 M | 512x512 en su version base | Apache 2.0 (segun la version) | Publico en Hugging Face |
 | Ejemplos oficiales de diffusers | Repositorio de scripts de entrenamiento | depende del script | variable | Apache 2.0 | Publico en GitHub |
 
 La comparativa con modelos alternativos de la misma categoria no esta disponible con datos de rendimiento, ya que el autor no publica metricas comparativas.
@@ -94,7 +94,7 @@ La comparativa con modelos alternativos de la misma categoria no esta disponible
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/phylun/Komapper_SDFTPracticeCode
+- Pagina del modelo en Hugging Face: https://huggingface.co/phylun/Komapper_SDFTPracticeCode
 - README de `02_CtrlGen`: referenciado en la model card como `02_CtrlGen/README.md`, dentro del propio repositorio.
 - README de `03_Inpaint`: referenciado en la model card como `03_Inpaint/README.md`, dentro del propio repositorio.
 - No se han encontrado en la informacion disponible enlaces a papers, blogs, repositorios externos ni demos adicionales.

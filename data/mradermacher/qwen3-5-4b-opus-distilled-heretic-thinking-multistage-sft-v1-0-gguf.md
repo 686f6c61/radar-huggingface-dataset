@@ -21,7 +21,7 @@ A pesar de que el nombre sugiere 4 mil millones de parámetros, el dato real de 
 
 ## Arquitectura y entrenamiento
 
-La información disponible indica que el modelo se construye sobre `Qwen/Qwen3.5-4B`, un modelo de lenguaje de la familia Qwen. El proceso de entrenamiento consiste en un ajuste fino supervisado en múltiples etapas (multi-stage SFT) que utiliza aproximadamente 6.000 trazas de razonamiento de Opus (Claude) centradas en programación y STEM, junto con datos adicionales de alta calidad para mejorar el razonamiento general. No se especifican detalles sobre la arquitectura interna (número de capas, heads, etc.) ni sobre el dataset completo de entrenamiento. Tampoco se menciona el uso de técnicas como RLHF o DPO, ni innovaciones arquitectónicas específicas. La cuantización GGUF ha sido realizada por `mradermacher` a partir del modelo original en formato HuggingFace.
+La información disponible indica que el modelo se construye sobre `Qwen/Qwen3.5-4B`, un modelo de lenguaje de la familia Qwen. El proceso de entrenamiento consiste en un ajuste fino supervisado en múltiples etapas (multi-stage SFT) que utiliza aproximadamente 6.000 trazas de razonamiento de Opus (Claude) centradas en programación y STEM, junto con datos adicionales de alta calidad para mejorar el razonamiento general. No se especifican detalles sobre la arquitectura interna (número de capas, heads, etc.) ni sobre el dataset completo de entrenamiento. Tampoco se menciona el uso de técnicas como RLHF o DPO, ni innovaciones arquitectónicas específicas. La cuantización GGUF ha sido realizada por `mradermacher` a partir del modelo original en formato Hugging Face.
 
 ## Capacidades
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-4B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1.0-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-4B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1.0-GGUF
 - Modelo base original: https://huggingface.co/prithivMLmods/Qwen3.5-4B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1.0
 - Página en LLM Explorer: https://llm-explorer.com/model/prithivMLmods%2FQwen3.5-4B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1.0,1bBzw4M8YcaZy6jkDBQDsm
 - Página en Friendli AI: https://friendli.ai/models/prithivMLmods/Qwen3.5-4B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1.0

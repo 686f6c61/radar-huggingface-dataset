@@ -72,6 +72,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (Lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kickass/celine-4-k2
+- Modelo en Hugging Face: https://huggingface.co/Kickass/celine-4-k2
 - Modelo base Krea 2 RAW: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Krea 2 Turbo: https://huggingface.co/krea/Krea-2-Turbo

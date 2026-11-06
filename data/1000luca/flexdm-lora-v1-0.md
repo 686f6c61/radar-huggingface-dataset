@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FlexDM-LoRA v1.0 | 0,49B adaptador sobre 31B base | 131.071 tokens | Clasificación probabilística multiopción | CC BY-SA 4.0 | HuggingFace (1000luca/FlexDM-LoRA-v1.0) |
-| FlexDM-LoRA v2.0 | no disponible | no disponible | Igual (versión posterior) | no disponible | HuggingFace (1000luca/FlexDM-LoRA-v2.0) |
-| FlexDM-LoRA v2.1 | no disponible | no disponible | Igual (versión posterior) | no disponible | HuggingFace (1000luca/FlexDM-LoRA-v2.1) |
-| google/gemma-4-31B-it | 31B | no disponible | Generación de texto e instrucciones | no disponible | HuggingFace (modelo base) |
+| FlexDM-LoRA v1.0 | 0,49B adaptador sobre 31B base | 131.071 tokens | Clasificación probabilística multiopción | CC BY-SA 4.0 | Hugging Face (1000luca/FlexDM-LoRA-v1.0) |
+| FlexDM-LoRA v2.0 | no disponible | no disponible | Igual (versión posterior) | no disponible | Hugging Face (1000luca/FlexDM-LoRA-v2.0) |
+| FlexDM-LoRA v2.1 | no disponible | no disponible | Igual (versión posterior) | no disponible | Hugging Face (1000luca/FlexDM-LoRA-v2.1) |
+| google/gemma-4-31B-it | 31B | no disponible | Generación de texto e instrucciones | no disponible | Hugging Face (modelo base) |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de las versiones 2.0 y 2.1 en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de las ver
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/1000luca/FlexDM-LoRA-v1.0
+- Hugging Face del adaptador: https://huggingface.co/1000luca/FlexDM-LoRA-v1.0
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Repositorio FlexDM v1.0: https://github.com/1000luca/FlexDM/tree/v1.0
 - Versión 2.0: https://huggingface.co/1000luca/FlexDM-LoRA-v2.0

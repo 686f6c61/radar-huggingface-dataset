@@ -88,7 +88,7 @@ No disponible. La documentación no incluye comparaciones con otros modelos, no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MissingPackage/jev-d-0.4b-onnx
+- Repositorio en Hugging Face: https://huggingface.co/MissingPackage/jev-d-0.4b-onnx
 - Modelo base: https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Documentación de `onnxruntime-web`: https://onnxruntime.ai/docs/tutorials/web/
 - Los resultados de la búsqueda web realizada no contienen información relevante sobre este modelo: corresponden a una empresa de iluminación checa (HELLUX ELEKTRA s.r.o.) y a su tienda online, sin relación con el modelo.

@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su tamaño reducido, que permite su ejecu
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta no se detalla en la documentacion, pero los tags de HuggingFace indican que se basa en una arquitectura tipo Llama (transformers). El modelo es denso, con 707M de parametros, y utiliza un tokenizador compatible con el formato de chat propio (no ChatML) con tokens especiales `<|system|>`, `<|user|>`, `<|assistant|>` y `<|end|>`.
+La arquitectura exacta no se detalla en la documentacion, pero los tags de Hugging Face indican que se basa en una arquitectura tipo Llama (transformers). El modelo es denso, con 707M de parametros, y utiliza un tokenizador compatible con el formato de chat propio (no ChatML) con tokens especiales `<|system|>`, `<|user|>`, `<|assistant|>` y `<|end|>`.
 
 El entrenamiento consistio en un ajuste fino supervisado (SFT) de parametros completos durante 2 epocas con secuencias empaquetadas (sequence-packed). Se anadieron aproximadamente 250.000 ejemplos de matematicas generados proceduralmente y correctos por construccion (cada respuesta se calculo con Python), cubriendo suma, resta, multiplicacion, division, porcentajes, fracciones, orden de operaciones y problemas de palabras. Tambien se incluyeron unas 8.000 conversaciones multi-turno para mejorar el uso de contexto (resumir, explicar de forma mas simple, comparar, recordar preguntas previas, continuar listas, corregir nombres o temas, cambiar de tema y volver). El dataset original de chat, tool-calling y correccion de identidad/saludos se mezclo de nuevo para mantener el equilibrio de habilidades.
 
@@ -87,6 +87,6 @@ AuroraGPT-Math se distingue por su enfoque especifico en aritmetica y tool-calli
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SmallAICreator/AuroraGPT-Math
+- Modelo en Hugging Face: https://huggingface.co/SmallAICreator/AuroraGPT-Math
 - Modelo base (AuroraGPT-Qwen-Distill): https://huggingface.co/SmallAICreator/AuroraGPT-Qwen-Distill
 - Repositorio de cuantizaciones (no especifico para este modelo): https://huggingface.co/models?other=base_model:quantized:SmallAICreator/AuroraGPT-700M

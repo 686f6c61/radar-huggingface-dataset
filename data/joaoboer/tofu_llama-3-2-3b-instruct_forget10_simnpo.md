@@ -17,7 +17,7 @@ Su relevancia es metodológica: el framework [open-unlearning](https://github.co
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible en la model card; heredada del modelo base Llama-3.2-3B-Instruct |
 | Tipos de cuantizacion | no disponible (solo pesos `safetensors`; no se publican variantes GGUF, AWQ ni GPTQ) |
-| Idiomas soportados | no disponible (los tags de HuggingFace no declaran idiomas) |
+| Idiomas soportados | no disponible (los tags de Hugging Face no declaran idiomas) |
 | Licencia | `llama3.2` (Llama 3.2 Community License) |
 | Formato de pesos | `safetensors` (repositorio de 6,4 GB; ~2 bytes por parametro, compatible con bf16) |
 | Modelo base | `open-unlearning/tofu_Llama-3.2-3B-Instruct_full` |
@@ -90,10 +90,10 @@ La model card no incluye los valores de referencia ni las líneas base con las q
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| `JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_SimNPO` | 3,21 B | no disponible | llama3.2 | HuggingFace (0 descargas, 0 likes) | metricas TOFU en esta ficha |
-| `open-unlearning/tofu_Llama-3.2-3B-Instruct_full` (modelo base) | 3,21 B | no disponible | llama3.2 | HuggingFace | no disponible |
-| `meta-llama/Llama-3.2-3B-Instruct` (modelo original) | 3,21 B | 128.000 tokens segun las especificaciones publicas de Meta, no confirmado para este repositorio | llama3.2 | HuggingFace | no disponible en esta ficha |
-| Otras variantes de open-unlearning sobre el mismo base (NPO, GradDiff, RMU) | 3,21 B por variante | no disponible | llama3.2 | HuggingFace | no disponible en esta ficha |
+| `JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_SimNPO` | 3,21 B | no disponible | llama3.2 | Hugging Face (0 descargas, 0 likes) | metricas TOFU en esta ficha |
+| `open-unlearning/tofu_Llama-3.2-3B-Instruct_full` (modelo base) | 3,21 B | no disponible | llama3.2 | Hugging Face | no disponible |
+| `meta-llama/Llama-3.2-3B-Instruct` (modelo original) | 3,21 B | 128.000 tokens segun las especificaciones publicas de Meta, no confirmado para este repositorio | llama3.2 | Hugging Face | no disponible en esta ficha |
+| Otras variantes de open-unlearning sobre el mismo base (NPO, GradDiff, RMU) | 3,21 B por variante | no disponible | llama3.2 | Hugging Face | no disponible en esta ficha |
 
 La comparación relevante en la literatura es contra otras ejecuciones de desaprendizaje sobre el mismo modelo base y el mismo split, no contra modelos de propósito general. Para esas alternativas no se dispone de cifras en la información proporcionada.
 
@@ -112,7 +112,7 @@ La comparación relevante en la literatura es contra otras ejecuciones de desapr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_SimNPO
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_SimNPO
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning

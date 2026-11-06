@@ -94,7 +94,7 @@ No hay datos publicados que permitan comparar AIME 2024 entre estos modelos con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/L1nkee/Qwen3-4B-NoThink-DPPO-BinaryTV-delta0.2-LR1e-6-fp32-540steps
+- Modelo en Hugging Face: https://huggingface.co/L1nkee/Qwen3-4B-NoThink-DPPO-BinaryTV-delta0.2-LR1e-6-fp32-540steps
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k
 - Libreria de RL utilizada (verl): https://github.com/volcengine/verl

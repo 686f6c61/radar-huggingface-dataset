@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arpita-sh/smai-a4-iocnn` es un modelo de red neuronal completamente conectada (MLP) entrenado para clasificación de imágenes sobre el conjunto de datos CIFAR-10. Lo desarrolla el usuario de HuggingFace `arpita-sh` en el contexto de una asignatura de *Statistical Methods in Artificial Intelligence* (SMAI), como indica el propio nombre del repositorio, y parece tratarse de un artefacto académico más que de un modelo destinado a producción.
+`arpita-sh/smai-a4-iocnn` es un modelo de red neuronal completamente conectada (MLP) entrenado para clasificación de imágenes sobre el conjunto de datos CIFAR-10. Lo desarrolla el usuario de Hugging Face `arpita-sh` en el contexto de una asignatura de *Statistical Methods in Artificial Intelligence* (SMAI), como indica el propio nombre del repositorio, y parece tratarse de un artefacto académico más que de un modelo destinado a producción.
 
 La arquitectura es una MLP de tres capas con dimensiones 3072-256-128-10: la entrada son las 32x32x3 píxeles de CIFAR-10 aplanadas en un vector de 3072 elementos, seguidas de dos capas ocultas de 256 y 128 neuronas con activación ELU, y una capa de salida de 10 clases. El entrenamiento emplea entropía cruzada, descenso de gradiente estocástico con tasa de aprendizaje 0,05, tamaño de lote 64 y 100 épocas, con etiquetas verdaderas (sin ruido de etiquetas, p = 0).
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arpita-sh/smai-a4-iocnn | MLP 3072-256-128-10, ELU | 819.722 | Imagen 32x32x3 fija | no disponible | Repo HuggingFace, 0 GB, sin pesos confirmados |
+| arpita-sh/smai-a4-iocnn | MLP 3072-256-128-10, ELU | 819.722 | Imagen 32x32x3 fija | no disponible | Repo Hugging Face, 0 GB, sin pesos confirmados |
 | LeNet-5 (referencia histórica) | CNN con 2 capas convolucionales y 3 densas | ~60.000 | Imagen 32x32 | pública (referencia académica) | Implementaciones múltiples |
 | ResNet-20 (CIFAR-10) | CNN residual | ~270.000 | Imagen 32x32 | pública (referencia académica) | Implementaciones múltiples |
 | ViT pequeño para CIFAR-10 | Transformer con parches | millones | Imagen 32x32 | variable según implementación | Implementaciones múltiples |
@@ -85,5 +85,5 @@ No se dispone de datos de rendimiento del modelo evaluado que permitan una compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arpita-sh/smai-a4-iocnn
+- Hugging Face: https://huggingface.co/arpita-sh/smai-a4-iocnn
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

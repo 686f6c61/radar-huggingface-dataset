@@ -80,7 +80,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Qwen3.8-Flash-Next_gpuep_1.0_gpu_128
+- Repositorio Hugging Face: https://huggingface.co/amd/Qwen3.8-Flash-Next_gpuep_1.0_gpu_128
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia (referenciada en el repo): fichero LICENSE del repositorio
 - ONNX Runtime GenAI: no se proporciona enlace en la información disponible

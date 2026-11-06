@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`oxyllina/horsevenom378` es un repositorio de modelo alojado en HuggingFace por el usuario `oxyllina`, publicado bajo acceso restringido (gated) y con fecha de creacion en julio de 2026. El repositorio ocupa 0,4 GB, lo que sugiere pesos de un modelo de pequeno tamano o un conjunto parcial de ficheros, pero no se dispone de informacion publica sobre la arquitectura, el numero de parametros, la longitud de contexto ni el pipeline asociado.
+`oxyllina/horsevenom378` es un repositorio de modelo alojado en Hugging Face por el usuario `oxyllina`, publicado bajo acceso restringido (gated) y con fecha de creacion en julio de 2026. El repositorio ocupa 0,4 GB, lo que sugiere pesos de un modelo de pequeno tamano o un conjunto parcial de ficheros, pero no se dispone de informacion publica sobre la arquitectura, el numero de parametros, la longitud de contexto ni el pipeline asociado.
 
 La unica etiqueta presente en la ficha es `region:us`, que indica la region de almacenamiento del repositorio y no aporta informacion tecnica sobre el modelo. No se han publicado descripcion, model card, licencia, idiomas soportados ni resultados de evaluacion en la informacion disponible. El repositorio registra 0 descargas y 1 like en el momento de la consulta.
 
-Dado que el acceso esta restringido, cualquier evaluacion tecnica requiere aceptar las condiciones del autor en HuggingFace. Esta ficha se limita a documentar lo que consta publicamente y marca explicitamente como "no disponible" todo aquello que no se ha podido verificar, sin inferir capacidades a partir del nombre o del tamano del repositorio.
+Dado que el acceso esta restringido, cualquier evaluacion tecnica requiere aceptar las condiciones del autor en Hugging Face. Esta ficha se limita a documentar lo que consta publicamente y marca explicitamente como "no disponible" todo aquello que no se ha podido verificar, sin inferir capacidades a partir del nombre o del tamano del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| oxyllina/horsevenom378 | no disponible | no disponible | no disponible | gated en HuggingFace |
+| oxyllina/horsevenom378 | no disponible | no disponible | no disponible | gated en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -78,5 +78,5 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/oxyllina/horsevenom378
+- Repositorio en Hugging Face: https://huggingface.co/oxyllina/horsevenom378
 - Paper, blog, repositorio de codigo o demo: no disponible.

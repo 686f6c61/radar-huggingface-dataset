@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-1.5B-X-Writer-v1 es un ajuste fino mediante LoRA sobre Qwen/Qwen2.5-1.5B-Instruct, publicado por el usuario SnowGemma en HuggingFace. El objetivo del modelo es generar publicaciones cortas y respuestas en chino para X (Twitter) imitando el tono y los temas de su autor. No es un modelo de escritura generalista: el propio autor lo describe como un proyecto de practica para aprender a hacer fine-tuning con LoRA, no como un modelo listo para produccion editorial.
+Qwen2.5-1.5B-X-Writer-v1 es un ajuste fino mediante LoRA sobre Qwen/Qwen2.5-1.5B-Instruct, publicado por el usuario SnowGemma en Hugging Face. El objetivo del modelo es generar publicaciones cortas y respuestas en chino para X (Twitter) imitando el tono y los temas de su autor. No es un modelo de escritura generalista: el propio autor lo describe como un proyecto de practica para aprender a hacer fine-tuning con LoRA, no como un modelo listo para produccion editorial.
 
 El modelo parte de un transformer decoder-only de la familia Qwen2 con 1.543.714.304 parametros (aproximadamente 1,54 mil millones). El entrenamiento se hizo sobre 297 muestras derivadas de 671 publicaciones del autor, y solo se ajustaron las proyecciones q_proj y v_proj de las ultimas 16 capas, con 622.592 parametros entrenables (0,04% del total). Los pesos resultantes son bfloat16 en formato MLX, pensados para ejecutarse en Macs con Apple Silicon.
 
@@ -68,7 +68,7 @@ El autor indica que la perdida en validacion se estabilizo entre 0,846 y 0,848 a
 
 - Inferencia nativa en Macs con Apple Silicon mediante `mlx-lm`; el autor reporta un pico de memoria de aproximadamente 3,3 GB en un M4 Pro con 48 GB de memoria unificada.
 - Cabe en equipos de consumo: cualquier Mac con chip de la serie M y al menos 8 GB de memoria unificada deberia poder cargar los pesos en bfloat16, aunque se recomienda 16 GB o mas para trabajar con comodidad.
-- Los pesos estan en formato MLX, por lo que no se cargan directamente en GPUs NVIDIA ni en frameworks como vLLM, TGI o llama.cpp sin una conversion previa a safetensors de HuggingFace o a GGUF.
+- Los pesos estan en formato MLX, por lo que no se cargan directamente en GPUs NVIDIA ni en frameworks como vLLM, TGI o llama.cpp sin una conversion previa a safetensors de Hugging Face o a GGUF.
 - No se documentan cuantizaciones publicadas; `mlx-lm` permite convertir a 8, 6 o 4 bits con `mlx_lm.convert`, pero no hay cifras de calidad ni de memoria para esas variantes en la informacion disponible.
 - No se han publicado mediciones de throughput en lote ni de latencia en GPUs de datacenter (A100, H100, RTX 4090); el unico dato de velocidad disponible es el de un unico Mac M4 Pro.
 - Para el entrenamiento original se uso un Apple M4 Pro con 48 GB; reproducir el ajuste con esos 297 ejemplos es viable en hardware de gama de consumo similar.
@@ -100,7 +100,7 @@ La comparacion con el modelo base es la unica que puede establecerse con la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SnowGemma/Qwen2.5-1.5B-X-Writer-v1
+- Modelo en Hugging Face: https://huggingface.co/SnowGemma/Qwen2.5-1.5B-X-Writer-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/main/LICENSE
 - Identificador alternativo citado en la model card: https://huggingface.co/asyncliu/Qwen2.5-1.5B-X-Writer-v1

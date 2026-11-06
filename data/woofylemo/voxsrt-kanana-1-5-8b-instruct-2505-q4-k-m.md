@@ -78,7 +78,7 @@ La comparativa se basa únicamente en especificaciones técnicas, ya que no se d
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/WoofyLemo/VoxSRT-kanana-1.5-8b-instruct-2505-q4-k-m
+- Repositorio de Hugging Face: https://huggingface.co/WoofyLemo/VoxSRT-kanana-1.5-8b-instruct-2505-q4-k-m
 - Modelo base: https://huggingface.co/kakaocorp/kanana-1.5-8b-instruct-2505
 - Conversión GGUF alternativa: https://huggingface.co/parkjw/kanana-1.5-8b-instruct-2505-Q4_K_M-GGUF
 - Repositorio GitHub de Kanana: https://github.com/kakao/kanana

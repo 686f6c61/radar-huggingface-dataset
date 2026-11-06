@@ -2,9 +2,9 @@
 
 ## Resumen
 
-kev-merged-9b es un modelo publicado por ayan4m1 (Andrew DeLisa) en HuggingFace, consistente en la fusión del adaptador jaredpalmer/kev-9b con su modelo base Qwen/Qwen3.5-9B-Base. La model card lo describe de forma explícita y mínima: "This is a merge of kev-9b with its base model, so you don't have to use an adapter". El objetivo declarado es, por tanto, puramente operativo: ofrecer un único checkpoint que ya incorpora los pesos del adaptador, evitando tener que cargar una LoRA por separado.
+kev-merged-9b es un modelo publicado por ayan4m1 (Andrew DeLisa) en Hugging Face, consistente en la fusión del adaptador jaredpalmer/kev-9b con su modelo base Qwen/Qwen3.5-9B-Base. La model card lo describe de forma explícita y mínima: "This is a merge of kev-9b with its base model, so you don't have to use an adapter". El objetivo declarado es, por tanto, puramente operativo: ofrecer un único checkpoint que ya incorpora los pesos del adaptador, evitando tener que cargar una LoRA por separado.
 
-El modelo tiene 9.653.104.368 parámetros (~9,65B) en formato safetensors, con un repositorio de 19,3 GB, licencia Apache 2.0 e idioma declarado únicamente inglés. Los metadatos de HuggingFace lo etiquetan con la arquitectura qwen3_5 y con el pipeline image-text-to-text, además de text-generation-inference, transformers y unsloth. Es relevante ahora porque forma parte de la familia Kev de Jared Palmer, una alternativa open source a los modelos de decisión Jev (TypeSafe AI): modelos que reciben preguntas tipadas y devuelven probabilidades calibradas en una sola pasada, sin generación de texto.
+El modelo tiene 9.653.104.368 parámetros (~9,65B) en formato safetensors, con un repositorio de 19,3 GB, licencia Apache 2.0 e idioma declarado únicamente inglés. Los metadatos de Hugging Face lo etiquetan con la arquitectura qwen3_5 y con el pipeline image-text-to-text, además de text-generation-inference, transformers y unsloth. Es relevante ahora porque forma parte de la familia Kev de Jared Palmer, una alternativa open source a los modelos de decisión Jev (TypeSafe AI): modelos que reciben preguntas tipadas y devuelven probabilidades calibradas en una sola pasada, sin generación de texto.
 
 Conviene señalar una tensión importante entre fuentes: la familia Kev se describe como adaptadores LoRA (r=16) más una cabeza pointer sobre una base Qwen congelada, orientados a decisión y calibración, mientras que este merge se publica con pipeline image-text-to-text y etiquetas de generación conversacional. La información disponible no aclara si el merge conserva la cabeza pointer ni cómo se comporta como generador de texto, por lo que cualquier uso en producción debería validarse empíricamente antes de asumir un comportamiento concreto.
 
@@ -81,10 +81,10 @@ Estos valores deben tratarse con cautela: miden calibración sobre entradas sin 
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| ayan4m1/kev-merged-9b | ~9,65B | no disponible | safetensors | Apache 2.0 | HuggingFace (0 descargas) | Merge listo para usar sin adaptador |
-| jaredpalmer/kev-9b | no disponible | no disponible | adaptador LoRA (r=16) + cabeza pointer | no disponible en la información | HuggingFace | Requiere cargar el adaptador sobre la base Qwen |
-| Qwen/Qwen3.5-9B-Base | ~9B | no disponible | safetensors | no disponible en la información | HuggingFace | Modelo base sin adaptar; sin cabeza de decisión |
-| Kev-4B / Kev-0.8B / Kev-27B | 4B / 0,8B / 27B | no disponible | adaptadores LoRA | no disponible en la información | HuggingFace y GitHub | Alternativas de la misma familia por tamaño |
+| ayan4m1/kev-merged-9b | ~9,65B | no disponible | safetensors | Apache 2.0 | Hugging Face (0 descargas) | Merge listo para usar sin adaptador |
+| jaredpalmer/kev-9b | no disponible | no disponible | adaptador LoRA (r=16) + cabeza pointer | no disponible en la información | Hugging Face | Requiere cargar el adaptador sobre la base Qwen |
+| Qwen/Qwen3.5-9B-Base | ~9B | no disponible | safetensors | no disponible en la información | Hugging Face | Modelo base sin adaptar; sin cabeza de decisión |
+| Kev-4B / Kev-0.8B / Kev-27B | 4B / 0,8B / 27B | no disponible | adaptadores LoRA | no disponible en la información | Hugging Face y GitHub | Alternativas de la misma familia por tamaño |
 
 No se dispone de datos comparativos de rendimiento entre estos modelos en la información proporcionada, por lo que la comparación se limita a formato, licencia y disponibilidad.
 
@@ -102,9 +102,9 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ayan4m1/kev-merged-9b
+- Modelo en Hugging Face: https://huggingface.co/ayan4m1/kev-merged-9b
 - Adaptador de origen: https://huggingface.co/jaredpalmer/kev-9b
 - Repositorio GitHub del proyecto Kev: https://github.com/jaredpalmer/kev
 - Releases del proyecto Kev: https://github.com/jaredpalmer/kev/releases
 - Cobertura divulgativa de la familia Kev: https://www.explainx.ai/blog/kev-open-source-jev-clone-qwen35-family-2026
-- Perfil del autor en HuggingFace: https://huggingface.co/ayan4m1/datasets
+- Perfil del autor en Hugging Face: https://huggingface.co/ayan4m1/datasets

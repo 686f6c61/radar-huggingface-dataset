@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/SparkleRL-7B-Stage2-aug-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/SparkleRL-7B-Stage2-aug-GGUF
 - Modelo base: https://huggingface.co/sparkle-reasoning/SparkleRL-7B-Stage2-aug
 - Pagina de conveniencia del autor para este modelo: https://hf.tst.eu/model#SparkleRL-7B-Stage2-aug-GGUF
 - README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

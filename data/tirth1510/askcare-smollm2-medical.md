@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`tirth1510/askcare-smollm2-medical` es un repositorio de HuggingFace publicado bajo la libreria `transformers` que, por su nombre, parece corresponder a un ajuste fino del modelo SmolLM2 orientado al dominio medico. El autor es el usuario `tirth1510` y el identificador sugiere un uso previsto en atencion sanitaria o asistencia clinica, aunque no se aporta documentacion que lo confirme.
+`tirth1510/askcare-smollm2-medical` es un repositorio de Hugging Face publicado bajo la libreria `transformers` que, por su nombre, parece corresponder a un ajuste fino del modelo SmolLM2 orientado al dominio medico. El autor es el usuario `tirth1510` y el identificador sugiere un uso previsto en atencion sanitaria o asistencia clinica, aunque no se aporta documentacion que lo confirme.
 
-El repositorio no contiene informacion sustantiva: la model card es la plantilla generada automaticamente por HuggingFace y todos los campos relevantes (autor original, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]". El tamano del repositorio es de 0.0 GB y no se registran descargas ni "likes", lo que indica que se trata de un artefacto vacio o de un placeholder sin pesos publicados.
+El repositorio no contiene informacion sustantiva: la model card es la plantilla generada automaticamente por Hugging Face y todos los campos relevantes (autor original, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]". El tamano del repositorio es de 0.0 GB y no se registran descargas ni "likes", lo que indica que se trata de un artefacto vacio o de un placeholder sin pesos publicados.
 
 Por tanto, esta ficha no puede describir arquitectura, parametros, contexto ni rendimiento con datos verificables. Se limita a inventariar lo que se conoce del repositorio y a advertir de que cualquier evaluacion tecnica seria requiere que el autor publique los pesos, la model card y los resultados de evaluacion.
 
@@ -25,7 +25,7 @@ Otros metadatos declarados en el Hub: libreria `transformers`, tags `transformer
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. El identificador incluye la cadena "smollm2", lo que apunta a que se trata de un ajuste fino de la familia SmolLM2 de HuggingFace (transformers decoder-only de 135M, 360M y 1.7B parametros), pero el repositorio no especifica cual de las variantes se ha usado como base ni si se ha modificado la arquitectura. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineamiento.
+No se ha publicado informacion sobre la arquitectura del modelo. El identificador incluye la cadena "smollm2", lo que apunta a que se trata de un ajuste fino de la familia SmolLM2 de Hugging Face (transformers decoder-only de 135M, 360M y 1.7B parametros), pero el repositorio no especifica cual de las variantes se ha usado como base ni si se ha modificado la arquitectura. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineamiento.
 
 El tag `arxiv:1910.09700` incluido en los metadatos corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico, citado en la plantilla estandar de model card. No es un paper del modelo y no aporta informacion tecnica sobre el.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. Depende del numero de parametros, que no se ha publicado.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no determinable sin conocer el tamano.
-- Opciones de despliegue: el tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints y, por la libreria declarada (`transformers`), con frameworks estandar como vLLM, TGI o llama.cpp si los pesos existieran en formato compatible. No obstante, el repositorio figura con 0.0 GB, por lo que no hay artefacto que desplegar.
+- Opciones de despliegue: el tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints y, por la libreria declarada (`transformers`), con frameworks estandar como vLLM, TGI o llama.cpp si los pesos existieran en formato compatible. No obstante, el repositorio figura con 0.0 GB, por lo que no hay artefacto que desplegar.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -61,7 +61,7 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | askcare-smollm2-medical | no disponible | no disponible | no disponible | repositorio vacio (0.0 GB) |
-| SmolLM2-1.7B (HuggingFace) | 1.7B | 8.192 tokens | Apache 2.0 | pesos publicados |
+| SmolLM2-1.7B (Hugging Face) | 1.7B | 8.192 tokens | Apache 2.0 | pesos publicados |
 | Qwen2.5-1.5B (Alibaba) | 1.5B | 32.768 tokens | Apache 2.0 | pesos publicados |
 | Phi-3-mini (Microsoft) | 3.8B | 128.000 tokens | MIT | pesos publicados |
 
@@ -80,7 +80,7 @@ Los datos de SmolLM2, Qwen2.5 y Phi-3-mini corresponden a sus respectivas model 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tirth1510/askcare-smollm2-medical
+- Hugging Face: https://huggingface.co/tirth1510/askcare-smollm2-medical
 - Referencia citada en los tags (no es paper del modelo): Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental mencionada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web enlaces relacionados con este modelo; los resultados obtenidos tratan sobre redaccion formal e informal y no guardan relacion con el artefacto.

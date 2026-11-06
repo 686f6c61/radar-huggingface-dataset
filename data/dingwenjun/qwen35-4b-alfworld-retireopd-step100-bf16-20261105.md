@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dingwenjun/qwen35-4b-alfworld-retireopd-step100-bf16-20261105` es un checkpoint de investigación derivado de Qwen3.5-4B, publicado por el usuario `dingwenjun` en HuggingFace. Se trata de un ajuste fino mediante aprendizaje por refuerzo (RL) sobre el entorno ALFWorld, un benchmark de tareas interactivas de texto en el que un agente debe completar objetivos en mundos simulados (cocina, salón, etc.) mediante acciones como moverse, coger o usar objetos. El checkpoint corresponde al paso 100 de entrenamiento, resultado de reanudar un experimento previo (single-OPD step65) con 35 actualizaciones adicionales.
+El modelo `dingwenjun/qwen35-4b-alfworld-retireopd-step100-bf16-20261105` es un checkpoint de investigación derivado de Qwen3.5-4B, publicado por el usuario `dingwenjun` en Hugging Face. Se trata de un ajuste fino mediante aprendizaje por refuerzo (RL) sobre el entorno ALFWorld, un benchmark de tareas interactivas de texto en el que un agente debe completar objetivos en mundos simulados (cocina, salón, etc.) mediante acciones como moverse, coger o usar objetos. El checkpoint corresponde al paso 100 de entrenamiento, resultado de reanudar un experimento previo (single-OPD step65) con 35 actualizaciones adicionales.
 
 El modelo conserva la arquitectura original `Qwen3_5ForConditionalGeneration`, con 5.174.964.736 parámetros totales en pesos BF16 y un tamaño de repositorio de 10,4 GB. A pesar de que el pipeline declarado es `image-text-to-text` (heredado de la configuración de Qwen3.5), el entrenamiento realizado fue exclusivamente sobre interacción de texto en ALFWorld, según indica la propia model card. No se incluyen estados del optimizador ni trayectorias privadas, y la publicación no realiza entrenamiento nuevo: es una verificación de integridad de pesos fusionados desde cuatro shards FSDP.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen35-4b-alfworld-retireopd-step100 (este) | 5,17 B | no disponible | Apache 2.0 | HuggingFace | Checkpoint RL específico de ALFWorld, una sola semilla |
-| Qwen3.5-4B base | ~4 B (no confirmado) | no disponible | Apache 2.0 (presumible) | HuggingFace | Modelo base sin ajuste RL en ALFWorld |
+| qwen35-4b-alfworld-retireopd-step100 (este) | 5,17 B | no disponible | Apache 2.0 | Hugging Face | Checkpoint RL específico de ALFWorld, una sola semilla |
+| Qwen3.5-4B base | ~4 B (no confirmado) | no disponible | Apache 2.0 (presumible) | Hugging Face | Modelo base sin ajuste RL en ALFWorld |
 | Alternativas de agentes ALFWorld | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la información proporcionada |
 
 No se dispone de información suficiente para establecer una comparativa cuantitativa con alternativas de la misma categoría.
@@ -85,7 +85,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dingwenjun/qwen35-4b-alfworld-retireopd-step100-bf16-20261105
+- Hugging Face: https://huggingface.co/dingwenjun/qwen35-4b-alfworld-retireopd-step100-bf16-20261105
 - ALFWorld (benchmark): no disponible en la información proporcionada
 - Qwen3.5 (modelo base): no disponible en la información proporcionada
 - Paper o blog del autor: no disponible en la información proporcionada

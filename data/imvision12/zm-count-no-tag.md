@@ -16,7 +16,7 @@ El modelo `IMvision12/zm-count-no-tag` es un clasificador de imágenes basado en
 | Formato de pesos | no disponible (probablemente safetensors o H5, pero no se especifica) |
 
 ## Arquitectura y entrenamiento
-No se ha publicado información sobre la arquitectura concreta (número de capas, dimensiones, parcheado, etc.) ni sobre el proceso de entrenamiento. El autor menciona en su perfil que trabaja con Keras 3 y colecciones de modelos preentrenados, pero no hay datos sobre el dataset, el número de tokens (imágenes) o si se aplicaron técnicas como fine-tuning o transfer learning. La etiqueta "vit" en HuggingFace confirma que se basa en el Vision Transformer, pero no se detalla si es una implementación propia o una adaptación de un modelo existente.
+No se ha publicado información sobre la arquitectura concreta (número de capas, dimensiones, parcheado, etc.) ni sobre el proceso de entrenamiento. El autor menciona en su perfil que trabaja con Keras 3 y colecciones de modelos preentrenados, pero no hay datos sobre el dataset, el número de tokens (imágenes) o si se aplicaron técnicas como fine-tuning o transfer learning. La etiqueta "vit" en Hugging Face confirma que se basa en el Vision Transformer, pero no se detalla si es una implementación propia o una adaptación de un modelo existente.
 
 ## Capacidades
 - Clasificación de imágenes: el modelo está diseñado para la tarea de image-classification, según el pipeline_tag.
@@ -27,7 +27,7 @@ No se ha publicado información sobre la arquitectura concreta (número de capas
 ## Casos de uso
 - Experimentación académica: puede utilizarse como base para probar arquitecturas ViT en Keras, especialmente en tareas de clasificación simple.
 - Prototipado rápido: al ser un modelo ligero (tamaño de repo 0.0 GB, probablemente pesos pequeños), es adecuado para pruebas iniciales en entornos de desarrollo.
-- Educación: útil para demostrar el flujo de trabajo de carga y uso de un modelo ViT en Keras con HuggingFace.
+- Educación: útil para demostrar el flujo de trabajo de carga y uso de un modelo ViT en Keras con Hugging Face.
 - Investigación de conteo de objetos: si la tarea "Counting test" se refiere a contar instancias, podría servir como punto de partida para experimentos en visión por computador, aunque sin datos de rendimiento no es recomendable para producción.
 - Benchmarking de frameworks: permite comparar el rendimiento de Keras 3 frente a otras librerías en tareas de clasificación de imágenes.
 - Integración en pipelines de clasificación genérica: si se entrena o ajusta con datos propios, podría emplearse en sistemas de clasificación de imágenes específicos, pero requiere trabajo adicional.
@@ -52,7 +52,7 @@ No se dispone de información suficiente para comparar con otros modelos de clas
 - No se indica el formato de pesos, lo que dificulta su carga en entornos específicos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/IMvision12/zm-count-no-tag
+- Modelo en Hugging Face: https://huggingface.co/IMvision12/zm-count-no-tag
 - Repositorio del autor (ZeroModels): https://github.com/IMvision12/ZeroModels/tree/main/
 - Perfil del autor en GitHub: https://github.com/IMvision12/
-- Perfil del autor en HuggingFace: https://huggingface.co/IMvision12
+- Perfil del autor en Hugging Face: https://huggingface.co/IMvision12

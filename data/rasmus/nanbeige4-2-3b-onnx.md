@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks completos (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RASMUS/Nanbeige4.2-3B-ONNX
+- Modelo en Hugging Face: https://huggingface.co/RASMUS/Nanbeige4.2-3B-ONNX
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.2-3B
 - Paper citado: arXiv:2607.22083 (Nanbeige4.2-3B: Unlocking Agentic Capabilities in a Compact Mode)
 - Transformers.js: no disponible en la información proporcionada

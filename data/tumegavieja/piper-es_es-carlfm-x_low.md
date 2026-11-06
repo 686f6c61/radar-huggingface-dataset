@@ -75,7 +75,7 @@ La comparativa se basa en las voces del repositorio oficial de Piper. Este model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tumegavieja/piper-es_ES-carlfm-x_low
+- Repositorio Hugging Face: https://huggingface.co/tumegavieja/piper-es_ES-carlfm-x_low
 - Repositorio oficial de voces Piper: https://huggingface.co/rhasspy/piper-voices
 - Voz original en piper-voices: https://huggingface.co/rhasspy/piper-voices/tree/main/es/es_ES/carlfm/x_low
 - Código fuente de Piper: https://github.com/rhasspy/piper

@@ -117,7 +117,7 @@ El resultado destacable es que duplicar el tamano del backbone mejora el groundi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ghkim-rlwrld/shell-game-policies
+- Repositorio en Hugging Face: https://huggingface.co/ghkim-rlwrld/shell-game-policies
 - Modelo base del planificador: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Paper, blog, repositorio de codigo o demo: no disponible
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo (unicamente resultados genericos de Wikipedia).

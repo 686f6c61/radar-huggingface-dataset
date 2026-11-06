@@ -6,7 +6,7 @@
 
 El modelo emplea atencion estandar, activacion GELU, normalizacion ScaleNorm e inicializacion ortogonal de pesos. La estrategia de fusion es de baja dimensionalidad (low-rank) y el entrenamiento se realiza con el optimizador Adam y un programador de tasa de aprendizaje con calentamiento lineal. Se distribuye bajo licencia Apache-2.0, lo que permite uso comercial sin restricciones adicionales.
 
-La publicacion data del 22 de agosto de 2026 y no registra descargas ni "likes" en HuggingFace. La informacion disponible es muy escasa: no se documentan parametros totales, longitud de contexto, idiomas soportados ni dataset de entrenamiento. La busqueda web no ha arrojado resultados adicionales sobre este modelo.
+La publicacion data del 22 de agosto de 2026 y no registra descargas ni "likes" en Hugging Face. La informacion disponible es muy escasa: no se documentan parametros totales, longitud de contexto, idiomas soportados ni dataset de entrenamiento. La busqueda web no ha arrojado resultados adicionales sobre este modelo.
 
 ## Especificaciones tecnicas
 
@@ -72,6 +72,6 @@ No se dispone de informacion suficiente para establecer una comparativa directa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Akashraobury/model_112034448_flamingo_nano
+- Repositorio Hugging Face: https://huggingface.co/Akashraobury/model_112034448_flamingo_nano
 
 No se han encontrado enlaces adicionales a papers, blogs, repositorios de codigo ni demos en la busqueda web.

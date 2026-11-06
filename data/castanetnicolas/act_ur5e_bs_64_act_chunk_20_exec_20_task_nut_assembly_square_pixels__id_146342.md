@@ -73,11 +73,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (ACT) | Politica de imitacion por chunks | 51.590.791 | no aplicable | apache-2.0 | HuggingFace (0 descargas) |
+| Este modelo (ACT) | Politica de imitacion por chunks | 51.590.791 | no aplicable | apache-2.0 | Hugging Face (0 descargas) |
 | ACT original (Zhao et al., 2023) | Politica de imitacion por chunks | no disponible | no aplicable | no disponible | Paper arXiv:2304.13705, codigo publico |
 | Diffusion Policy (Chi et al.) | Politica de imitacion por difusion | no disponible | no aplicable | no disponible | Comunidad de investigacion |
 | VINN | Politica de imitacion basada en vecinos | no disponible | no aplicable | no disponible | Repositorios de investigacion |
-| SmolVLA / pi0 (LeRobot) | Politicas VLA | no disponible | no aplicable | no disponible | HuggingFace / LeRobot |
+| SmolVLA / pi0 (LeRobot) | Politicas VLA | no disponible | no aplicable | no disponible | Hugging Face / LeRobot |
 
 No se dispone de datos numericos de rendimiento para realizar una comparacion cuantitativa fiable; las alternativas se listan a nivel cualitativo segun lo referenciado en la busqueda web y en la propia model card.
 
@@ -96,7 +96,7 @@ No se dispone de datos numericos de rendimiento para realizar una comparacion cu
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_20_Exec_20_TASK_nut_assembly_square_PIXELS__ID_146342
+- Hugging Face del modelo: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_20_Exec_20_TASK_nut_assembly_square_PIXELS__ID_146342
 - Dataset de entrenamiento: https://huggingface.co/datasets/castanetnicolas/robomimic_square_ph_image84
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=castanetnicolas/robomimic_square_ph_image84
 - Paper ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

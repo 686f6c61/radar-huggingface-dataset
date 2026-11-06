@@ -79,8 +79,8 @@ La comparativa con otros modelos omni-modales de la misma categoría (como Qwen2
 
 ## Enlaces
 
-- [HuggingFace: divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-bf16](https://huggingface.co/divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-bf16)
-- [HuggingFace: versión 4-bit](https://huggingface.co/divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-4bit)
+- [Hugging Face: divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-bf16](https://huggingface.co/divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-bf16)
+- [Hugging Face: versión 4-bit](https://huggingface.co/divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-4bit)
 - [Runtime MLX de referencia (nemotron-omni-mlx)](https://github.com/nicedreamzapp/nemotron-omni-mlx)
 - [Model card oficial de NVIDIA en NIM](https://build.nvidia.com/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning/modelcard)
 - [Página de modelos Nemotron de NVIDIA](https://developer.nvidia.com/topics/ai/nemotron)

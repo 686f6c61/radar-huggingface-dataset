@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/prithivMLmods/Qwen3.5-4B-3D-Coder-MTP-Repacked
+- Hugging Face: https://huggingface.co/prithivMLmods/Qwen3.5-4B-3D-Coder-MTP-Repacked
 - GGUF: https://huggingface.co/prithivMLmods/Qwen3.5-4B-3D-Coder-MTP-Repacked/tree/main/GGUF
 - Modelo base: https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder
 - Dataset: https://huggingface.co/datasets/ccore/ThreeJS-3D-Scenes

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ktransfer-27b-kd-lam10-s150 es un checkpoint de investigación publicado por el usuario 2264K en HuggingFace, derivado del estudio exploratorio "Anchor or Transfer?" sobre destilación de conocimiento entre tokenizadores distintos (cross-tokenizer knowledge distillation) para la adaptación de modelos al coreano. El modelo estudiante es Qwen3.8-27B (de Qwen), ajustado mediante fine-tuning completo con una señal de profesor procedente de Gemma-4-31B-it (de Google), usando logits top-k precalculados.
+ktransfer-27b-kd-lam10-s150 es un checkpoint de investigación publicado por el usuario 2264K en Hugging Face, derivado del estudio exploratorio "Anchor or Transfer?" sobre destilación de conocimiento entre tokenizadores distintos (cross-tokenizer knowledge distillation) para la adaptación de modelos al coreano. El modelo estudiante es Qwen3.8-27B (de Qwen), ajustado mediante fine-tuning completo con una señal de profesor procedente de Gemma-4-31B-it (de Google), usando logits top-k precalculados.
 
 El checkpoint concreto corresponde a la ejecución `lam10_27b`: 150 pasos de entrenamiento con pérdida de entropía cruzada (CE) más KL proyectada estática con peso λ=1.0, siguiendo el enfoque X-Token con soporte de profesor de 2048 tokens. El objetivo del experimento es determinar si la transferencia de conocimiento desde un profesor con tokenizador distinto mejora la adaptación al coreano frente a simplemente anclar el entrenamiento en el modelo base.
 
@@ -90,7 +90,7 @@ Comparativa de rendimiento: no disponible (no hay evaluaciones conjuntas publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/2264K/ktransfer-27b-kd-lam10-s150
+- Modelo en Hugging Face: https://huggingface.co/2264K/ktransfer-27b-kd-lam10-s150
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Profesor: https://huggingface.co/google/gemma-4-31B-it
 - Articulo "Anchor or Transfer?": pendiente de publicar (TBA segun la model card)

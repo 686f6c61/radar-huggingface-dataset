@@ -93,9 +93,9 @@ La información proporcionada no incluye valores de referencia de otros modelos 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| tofu_Llama-3.2-3B-Instruct_forget10_SatImp | 3,21 mil millones | no disponible | llama3.2 | HuggingFace (0 descargas) | Checkpoint con olvido SatImp sobre TOFU forget10; metricas TOFU publicadas |
-| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace | Modelo base sin olvido; referencia natural para medir el efecto de SatImp |
-| Llama-3.2-3B-Instruct (Meta) | 3,21 mil millones (familia) | no disponible en la informacion proporcionada | llama3.2 | HuggingFace | Modelo original sin ajuste sobre TOFU; punto de partida de la cadena |
+| tofu_Llama-3.2-3B-Instruct_forget10_SatImp | 3,21 mil millones | no disponible | llama3.2 | Hugging Face (0 descargas) | Checkpoint con olvido SatImp sobre TOFU forget10; metricas TOFU publicadas |
+| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face | Modelo base sin olvido; referencia natural para medir el efecto de SatImp |
+| Llama-3.2-3B-Instruct (Meta) | 3,21 mil millones (familia) | no disponible en la informacion proporcionada | llama3.2 | Hugging Face | Modelo original sin ajuste sobre TOFU; punto de partida de la cadena |
 | Otros metodos de olvido sobre TOFU (NPO, SimNPO, GradDiff) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Comparacion no posible con los datos facilitados |
 
 No se dispone de resultados de benchmarks de modelos alternativos en la información proporcionada, por lo que la comparación se limita a la cadena de dependencias del propio checkpoint.
@@ -115,7 +115,7 @@ No se dispone de resultados de benchmarks de modelos alternativos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_SatImp
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_SatImp
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning

@@ -97,7 +97,7 @@ No se dispone de cifras comparativas (LFW, IJB-C, MS1M, etc.) para este reposito
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MinhNH232331M/master-thesis
+- Modelo en Hugging Face: https://huggingface.co/MinhNH232331M/master-thesis
 - InsightFace (backbone vendorizado, commit `d9cb10e6bda109bc9b4a6ca8b92d7f3342b56492`): https://github.com/deepinsight/insightface
 - Protocolo de investigación citado en la model card (ruta interna del repositorio): `references/p0_face_dataset_research_plan.md`
 - Plan de implementación citado en la model card (ruta interna del repositorio): `references/p1_face_dataset_implementation_plan.md`

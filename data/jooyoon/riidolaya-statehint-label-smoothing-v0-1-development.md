@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Riidolaya Statehint label smoothing — development v0.1 es un artefacto de investigación publicado por el usuario JooYoon en HuggingFace. No es un modelo de lenguaje en el sentido habitual: se trata de un perceptrón multicapa (MLP) diminuto implementado en Go, pensado para proponer «pistas de estado» (state hints) sobre texto de desarrollo en coreano e inglés. Concretamente, clasifica prosa acotada en ocho intenciones definidas en `INTENTS.en.md` y devuelve una propuesta de finalización o de intención, sin crear anotaciones ni modificar estado de tareas.
+Riidolaya Statehint label smoothing — development v0.1 es un artefacto de investigación publicado por el usuario JooYoon en Hugging Face. No es un modelo de lenguaje en el sentido habitual: se trata de un perceptrón multicapa (MLP) diminuto implementado en Go, pensado para proponer «pistas de estado» (state hints) sobre texto de desarrollo en coreano e inglés. Concretamente, clasifica prosa acotada en ocho intenciones definidas en `INTENTS.en.md` y devuelve una propuesta de finalización o de intención, sin crear anotaciones ni modificar estado de tareas.
 
 El repositorio contiene dos copias del mismo MLP entrenadas con objetivos distintos: una con entropía cruzada dura (`hard_ce_alpha000.rsm`) y otra con suavizado uniforme de etiquetas a alpha 0.05 (`uniform_smoothing_alpha005.rsm`). Ambas tienen 32.920 parámetros float32 con arquitectura Contextual 2048 → 16 ReLU → 8 softmax, y se serializan en un formato propietario denominado RSM v3 de unos 128,78 KiB por archivo. No es un checkpoint de Transformers, ni un fine-tune, ni un modelo con pesos ternarios o QAT de 1,58 bits.
 
@@ -99,7 +99,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JooYoon/riidolaya-statehint-label-smoothing-v0.1-development
-- Tarjeta del modelo en coreano (referenciada en la model card): README.ko.md (dentro del repositorio de HuggingFace)
+- Modelo en Hugging Face: https://huggingface.co/JooYoon/riidolaya-statehint-label-smoothing-v0.1-development
+- Tarjeta del modelo en coreano (referenciada en la model card): README.ko.md (dentro del repositorio de Hugging Face)
 - Artículo de referencia sobre suavizado de etiquetas: Müller, Kornblith y Hinton, NeurIPS 2019 — https://proceedings.neurips.cc/paper_files/paper/2019/hash/f1748d6b0fd9d439f71450117eba2725-Abstract.html
 - No se han proporcionado otros enlaces (papers propios, blogs, repositorios de código o demos) en la información disponible.

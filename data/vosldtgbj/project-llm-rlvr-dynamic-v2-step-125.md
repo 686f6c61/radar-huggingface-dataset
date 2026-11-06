@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento relativos entre estos checkpoints, por lo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vosldtgbj/project-llm-rlvr-dynamic-v2-step-125
+- Repositorio en Hugging Face: https://huggingface.co/vosldtgbj/project-llm-rlvr-dynamic-v2-step-125
 - Modelo base directo (step-100): https://huggingface.co/vosldtgbj/project-llm-rlvr-dynamic-v2-step-100
 - Siguiente punto de control (step-149-final): https://huggingface.co/vosldtgbj/project-llm-rlvr-dynamic-v2-step-149-final
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

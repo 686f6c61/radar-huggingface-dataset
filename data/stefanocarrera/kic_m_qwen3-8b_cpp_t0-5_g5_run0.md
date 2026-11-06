@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g5_run0` es un ajuste fino (fine-tuning) del modelo base Qwen3-8B, concretamente sobre la variante cuantizada a 4 bits publicada por Unsloth (`unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`). Lo desarrolla el usuario de HuggingFace stefanocarrera y se distribuye bajo licencia Apache 2.0. El nombre del repositorio sugiere un experimento de entrenamiento con parámetros concretos (temperatura 0.5, `g5`, `run0`, y el sufijo `cpp` que podría indicar un corpus o tarea relacionada con C++), aunque la model card no documenta estos detalles.
+`stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g5_run0` es un ajuste fino (fine-tuning) del modelo base Qwen3-8B, concretamente sobre la variante cuantizada a 4 bits publicada por Unsloth (`unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`). Lo desarrolla el usuario de Hugging Face stefanocarrera y se distribuye bajo licencia Apache 2.0. El nombre del repositorio sugiere un experimento de entrenamiento con parámetros concretos (temperatura 0.5, `g5`, `run0`, y el sufijo `cpp` que podría indicar un corpus o tarea relacionada con C++), aunque la model card no documenta estos detalles.
 
 El modelo hereda la arquitectura transformer de Qwen3-8B, con aproximadamente 8.000 millones de parámetros, y se ha entrenado mediante las herramientas de Unsloth y la librería TRL, lo que indica un flujo de trabajo típico de fine-tuning supervisado (SFT) o posiblemente DPO sobre el modelo base. El repositorio ocupa solo 0,2 GB, lo que sugiere que los pesos publicados podrían estar en formato cuantizado o que el contenido es parcial.
 
@@ -44,7 +44,7 @@ La unica innovacion tecnica documentada es el uso de Unsloth, que el autor indic
 - Prototipado de asistentes de texto en ingles: al heredar el base Qwen3-8B, puede usarse para tareas de redaccion y resumen en ingles en fase de prueba.
 - Evaluacion comparativa de ajustes finos: util para investigadores que quieran medir el impacto de un SFT ligero sobre el rendimiento del base en benchmarks estandar.
 - Base para posteriores iteraciones: el repositorio puede servir como punto de partida para continuar el entrenamiento con mas datos o con DPO.
-- Docencia y formacion: ejemplo practico de como se publica un modelo ajustado en HuggingFace con metadatos minimos y licencia Apache 2.0.
+- Docencia y formacion: ejemplo practico de como se publica un modelo ajustado en Hugging Face con metadatos minimos y licencia Apache 2.0.
 
 ## Benchmarks y rendimiento
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g5_run0 | ~8.000 M | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen3-8B (base oficial) | ~8.000 M | no disponible en esta ficha | Apache 2.0 (segun el base) | HuggingFace, ampliamente utilizado |
-| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | ~8.000 M | no disponible en esta ficha | Apache 2.0 | HuggingFace, modelo de partida |
-| Llama 3.1 8B | ~8.000 M | 128.000 tokens (segun documentacion oficial de Meta) | Llama 3.1 Community License | HuggingFace, ampliamente utilizado |
+| stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g5_run0 | ~8.000 M | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen3-8B (base oficial) | ~8.000 M | no disponible en esta ficha | Apache 2.0 (segun el base) | Hugging Face, ampliamente utilizado |
+| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | ~8.000 M | no disponible en esta ficha | Apache 2.0 | Hugging Face, modelo de partida |
+| Llama 3.1 8B | ~8.000 M | 128.000 tokens (segun documentacion oficial de Meta) | Llama 3.1 Community License | Hugging Face, ampliamente utilizado |
 
 La comparativa se limita a parametros y licencia porque no hay benchmarks publicados para el modelo objeto de esta ficha. El modelo base Qwen3-8B y Llama 3.1 8B son las alternativas naturales por tamano; el primero comparte linaje directo y el segundo es el competidor mas habitual en la misma franja.
 
@@ -83,7 +83,7 @@ La comparativa se limita a parametros y licencia porque no hay benchmarks public
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g5_run0
+- Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g5_run0
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL: https://github.com/huggingface/trl

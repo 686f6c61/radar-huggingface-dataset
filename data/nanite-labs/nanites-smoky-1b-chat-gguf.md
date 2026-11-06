@@ -50,7 +50,7 @@ El proceso de datos se describe en la model card y en la pagina del Space asocia
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace y los resultados de busqueda no incluyen cifras de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion estandar. Ademas, al tratarse de un fine-tune de personaje sobre Llama-3.2-1B-Instruct, las metricas generalistas serian poco representativas de su comportamiento real.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face y los resultados de busqueda no incluyen cifras de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion estandar. Ademas, al tratarse de un fine-tune de personaje sobre Llama-3.2-1B-Instruct, las metricas generalistas serian poco representativas de su comportamiento real.
 
 ## Requisitos de hardware
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanites Smoky 1B Chat (este) | ~1,24 mil millones | no disponible (base hasta 128k) | ingles | Apache 2.0 | GGUF en HuggingFace |
+| Nanites Smoky 1B Chat (este) | ~1,24 mil millones | no disponible (base hasta 128k) | ingles | Apache 2.0 | GGUF en Hugging Face |
 | Llama-3.2-1B-Instruct (base) | 1,24 mil millones | 128.000 tokens | multilingue (8 idiomas) | Llama 3.2 Community License | safetensors y GGUF |
 | Qwen2.5-1.5B-Instruct | 1,5 mil millones | 32.768 tokens (ampliable) | multilingue | Apache 2.0 | safetensors y GGUF |
 | Gemma-2-2B-IT | 2,6 mil millones | 8.192 tokens | multilingue | Gemma Terms of Use | safetensors y GGUF |

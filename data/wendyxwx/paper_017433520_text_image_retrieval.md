@@ -54,5 +54,5 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 - No se proporcionan idiomas oficiales; el texto parece estar en inglés, pero no se confirma.
 
 ## Enlaces
-- [Repositorio de HuggingFace](https://huggingface.co/wendyxwx/paper_017433520_text_image_retrieval)
+- [Repositorio de Hugging Face](https://huggingface.co/wendyxwx/paper_017433520_text_image_retrieval)
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en los resultados de búsqueda web.

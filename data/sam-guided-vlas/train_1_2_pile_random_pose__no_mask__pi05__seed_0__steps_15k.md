@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|
-| este fine-tuning | 4.143 M | Apache-2.0 | No disponible | HuggingFace |
-| `lerobot/pi05_base` | 4.143 M (estimado) | Apache-2.0 | No disponible | HuggingFace |
-| `sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras__live__pi05__seed_0` | 4.143 M (estimado) | Apache-2.0 | No disponible | HuggingFace |
-| `sam-guided-vlas/train_1_2__no_mask__pi05__seed_0__steps_15k` | 4.143 M (estimado) | Apache-2.0 | No disponible | HuggingFace |
+| este fine-tuning | 4.143 M | Apache-2.0 | No disponible | Hugging Face |
+| `lerobot/pi05_base` | 4.143 M (estimado) | Apache-2.0 | No disponible | Hugging Face |
+| `sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras__live__pi05__seed_0` | 4.143 M (estimado) | Apache-2.0 | No disponible | Hugging Face |
+| `sam-guided-vlas/train_1_2__no_mask__pi05__seed_0__steps_15k` | 4.143 M (estimado) | Apache-2.0 | No disponible | Hugging Face |
 
 No se conocen datos de rendimiento comparativo entre estas variantes, ya que ninguna ha publicado resultados de evaluación.
 
@@ -79,7 +79,7 @@ No se conocen datos de rendimiento comparativo entre estas variantes, ya que nin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__no_mask__pi05__seed_0__steps_15k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__no_mask__pi05__seed_0__steps_15k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_pile_random_pose__no_mask
 - Guía LeRobot para π₀.₅: https://huggingface.co/docs/lerobot/main/en/pi05

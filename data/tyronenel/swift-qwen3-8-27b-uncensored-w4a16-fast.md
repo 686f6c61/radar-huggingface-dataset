@@ -117,7 +117,7 @@ No se dispone de datos de modelos comparables de otros fabricantes (mismo tamañ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TyroneNel/Swift-Qwen3.8-27B-Uncensored-W4A16-fast
+- Repositorio Hugging Face: https://huggingface.co/TyroneNel/Swift-Qwen3.8-27B-Uncensored-W4A16-fast
 - Base build (W4A16 sin la recuantización "fast"): https://huggingface.co/TyroneNel/Swift-Qwen3.8-27B-Uncensored-W4A16
 - Fuente BF16 (abliterada): https://huggingface.co/d0xin/Swift-Qwen3.8-27B-Uncensored-BF16
 - Modelo intermedio con LoRA de razonamiento: https://huggingface.co/ukisai/Swift-Qwen3.8-27b

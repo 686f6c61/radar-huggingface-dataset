@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MaxSchulten/Qwen3-0.6B-Math-SSD es un ajuste fino (fine-tune) del modelo Qwen/Qwen3-0.6B publicado por el usuario MaxSchulten en HuggingFace. Se trata de un modelo de generación de texto de tipo transformer decoder-only denso con 596.049.920 parámetros, entrenado mediante SFT (supervised fine-tuning) con la librería TRL en su versión 1.16.0. El repositorio ocupa 2,4 GB e incluye pesos en formato safetensors, y las etiquetas del modelo indican compatibilidad con text-generation-inference y endpoints compatibles, además de conservar la referencia al modelo base Qwen3-0.6B.
+MaxSchulten/Qwen3-0.6B-Math-SSD es un ajuste fino (fine-tune) del modelo Qwen/Qwen3-0.6B publicado por el usuario MaxSchulten en Hugging Face. Se trata de un modelo de generación de texto de tipo transformer decoder-only denso con 596.049.920 parámetros, entrenado mediante SFT (supervised fine-tuning) con la librería TRL en su versión 1.16.0. El repositorio ocupa 2,4 GB e incluye pesos en formato safetensors, y las etiquetas del modelo indican compatibilidad con text-generation-inference y endpoints compatibles, además de conservar la referencia al modelo base Qwen3-0.6B.
 
 El problema que pretende resolver, a juzgar por el sufijo "Math" del identificador, es la mejora del rendimiento en tareas matemáticas sobre un modelo base de tamano muy reducido. Sin embargo, la model card no documenta el conjunto de datos de entrenamiento, los hiperparámetros, la composición del corpus ni ningún resultado de evaluación, por lo que no es posible verificar esa orientación ni cuantificar la mejora respecto al modelo base.
 
@@ -76,7 +76,7 @@ Datos de los competidores tomados de sus fichas públicas; no verificados en est
 
 | Modelo | Parametros | Contexto | Orientacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MaxSchulten/Qwen3-0.6B-Math-SSD | 596 M | no disponible | Fine-tune matemático sobre Qwen3-0.6B | no disponible | HuggingFace, 0 descargas |
+| MaxSchulten/Qwen3-0.6B-Math-SSD | 596 M | no disponible | Fine-tune matemático sobre Qwen3-0.6B | no disponible | Hugging Face, 0 descargas |
 | Qwen/Qwen3-0.6B | 596 M (aprox.) | no disponible en esta ficha | Modelo base generalista con modo thinking | Apache-2.0 según su model card (no verificada aquí) | Ampliamente disponible |
 | Qwen2.5-0.5B-Instruct | ~494 M | 32 768 tokens según su model card | Instrucciones generalistas, multilingüe | Apache-2.0 | Ampliamente disponible, ecosistema GGUF maduro |
 | SmolLM2-360M-Instruct | ~362 M | 8 192 tokens según su model card | Instrucciones ligeras para edge | Apache-2.0 | Ampliamente disponible |
@@ -100,7 +100,7 @@ La diferencia práctica frente a estas alternativas no está en el rendimiento (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MaxSchulten/Qwen3-0.6B-Math-SSD
+- Modelo en Hugging Face: https://huggingface.co/MaxSchulten/Qwen3-0.6B-Math-SSD
 - Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentación de TRL (SFTTrainer): https://huggingface.co/docs/trl

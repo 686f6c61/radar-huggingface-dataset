@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bns-oracle-legal-embeddings` es un modelo de embeddings de frases especializado en recuperación de información (retrieval) sobre el derecho penal indio. Lo desarrolla el usuario de HuggingFace `mdtahseen7` como un fine-tune del modelo generalista `nomic-ai/nomic-embed-text-v1.5`, y está diseñado específicamente para sistemas RAG (Retrieval-Augmented Generation) que necesitan localizar el artículo estatutario correcto ante una consulta en lenguaje natural.
+`bns-oracle-legal-embeddings` es un modelo de embeddings de frases especializado en recuperación de información (retrieval) sobre el derecho penal indio. Lo desarrolla el usuario de Hugging Face `mdtahseen7` como un fine-tune del modelo generalista `nomic-ai/nomic-embed-text-v1.5`, y está diseñado específicamente para sistemas RAG (Retrieval-Augmented Generation) que necesitan localizar el artículo estatutario correcto ante una consulta en lenguaje natural.
 
 El problema que resuelve es la confusión entre secciones legales similares: el modelo base asigna embeddings próximos a textos que comparten temática pero difieren en matices jurídicos decisivos (por ejemplo, robo frente a extorsión, o distintas secciones sobre carga de la prueba). El fine-tune se entrena con tripletas contrastivas que incluyen negativos duros intra-capítulo, forzando al modelo a discriminar entre secciones que se parecen mucho.
 
@@ -63,17 +63,17 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni métricas end-to-end
 - VRAM estimada para inferencia: al tratarse de un encoder de 137 M de parámetros, en fp32 ocupa aproximadamente 0,55 GB de pesos; en fp16 alrededor de 0,27 GB. Con overhead de activaciones y batch, cabe holgadamente en GPUs de 4-8 GB.
 - GPU recomendadas: cualquier GPU consumer moderna sirve; el autor entrenó en una RTX 5090, pero para inferencia bastan RTX 3060, RTX 4060, RTX 4090 o superiores. En entornos de servidor, A100 o H100 aportan mayor throughput con batches grandes.
 - Cabe en GPU consumer: sí, en prácticamente cualquier GPU con al menos 4 GB de VRAM; también puede ejecutarse en CPU para volúmenes moderados.
-- Opciones de despliegue: `sentence-transformers` (con `trust_remote_code=True`), Text Embeddings Inference (TGI), Ollama (según la model card) y endpoints compatibles de HuggingFace.
+- Opciones de despliegue: `sentence-transformers` (con `trust_remote_code=True`), Text Embeddings Inference (TGI), Ollama (según la model card) y endpoints compatibles de Hugging Face.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `bns-oracle-legal-embeddings` | 136,7 M | 512 | Derecho penal indio (BNS/IPC/BNSS/BSA) | Apache 2.0 | HuggingFace |
-| `nomic-ai/nomic-embed-text-v1.5` | ~137 M | 8192 (modelo base) | Propósito general, multilingüe parcial | Apache 2.0 | HuggingFace |
-| `BAAI/bge-base-en-v1.5` | ~109 M | 512 | Propósito general en inglés | MIT | HuggingFace |
-| `intfloat/e5-base-v2` | ~109 M | 512 | Propósito general en inglés | MIT | HuggingFace |
+| `bns-oracle-legal-embeddings` | 136,7 M | 512 | Derecho penal indio (BNS/IPC/BNSS/BSA) | Apache 2.0 | Hugging Face |
+| `nomic-ai/nomic-embed-text-v1.5` | ~137 M | 8192 (modelo base) | Propósito general, multilingüe parcial | Apache 2.0 | Hugging Face |
+| `BAAI/bge-base-en-v1.5` | ~109 M | 512 | Propósito general en inglés | MIT | Hugging Face |
+| `intfloat/e5-base-v2` | ~109 M | 512 | Propósito general en inglés | MIT | Hugging Face |
 
 La ventaja de este modelo frente a los generalistas es la discriminación fina entre secciones legales indias; su desventaja es el alcance restringido a un dominio y a un único idioma. Los datos de rendimiento comparativo con `bge-base` o `e5-base` no están disponibles en la información proporcionada.
 
@@ -90,6 +90,6 @@ La ventaja de este modelo frente a los generalistas es la discriminación fina e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdtahseen7/bns-oracle-legal-embeddings
+- Modelo en Hugging Face: https://huggingface.co/mdtahseen7/bns-oracle-legal-embeddings
 - Modelo base: https://huggingface.co/nomic-ai/nomic-embed-text-v1.5
 - Identificador alternativo citado en la model card: https://huggingface.co/saitejasathiraju/nomic-embed-bns-legal

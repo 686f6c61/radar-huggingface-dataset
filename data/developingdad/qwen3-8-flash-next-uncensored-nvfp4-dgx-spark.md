@@ -94,9 +94,9 @@ No se dispone de datos de rendimiento del modelo base sin cuantizar ni de modelo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DevelopingDad/Qwen3.8-Flash-Next-Uncensored-NVFP4-DGX-Spark | ~180.000 millones | 131.072 tokens | NVFP4 + MTP en FP8 | qwen-community-1.0 | HuggingFace, 0 descargas, 0 likes en el momento de la consulta |
-| orcarouter/Qwen3.8-Flash-Next-Uncensored-NVFP4 (upstream) | ~180.000 millones (no confirmado en la documentacion) | no disponible | NVFP4 | no disponible | HuggingFace, revision fijada |
-| Qwen/Qwen3.8-Flash-Next (base) | no disponible | no disponible | sin cuantizar (presumiblemente BF16) | no disponible | HuggingFace |
+| DevelopingDad/Qwen3.8-Flash-Next-Uncensored-NVFP4-DGX-Spark | ~180.000 millones | 131.072 tokens | NVFP4 + MTP en FP8 | qwen-community-1.0 | Hugging Face, 0 descargas, 0 likes en el momento de la consulta |
+| orcarouter/Qwen3.8-Flash-Next-Uncensored-NVFP4 (upstream) | ~180.000 millones (no confirmado en la documentacion) | no disponible | NVFP4 | no disponible | Hugging Face, revision fijada |
+| Qwen/Qwen3.8-Flash-Next (base) | no disponible | no disponible | sin cuantizar (presumiblemente BF16) | no disponible | Hugging Face |
 
 No se han encontrado en la informacion proporcionada alternativas de la misma categoria (vision-language de ~180B cuantizadas en NVFP4) con datos comparables.
 
@@ -117,7 +117,7 @@ No se han encontrado en la informacion proporcionada alternativas de la misma ca
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DevelopingDad/Qwen3.8-Flash-Next-Uncensored-NVFP4-DGX-Spark
+- Repositorio en Hugging Face: https://huggingface.co/DevelopingDad/Qwen3.8-Flash-Next-Uncensored-NVFP4-DGX-Spark
 - Modelo upstream de OrcaRouter: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-NVFP4
 - Revision fijada del upstream: `38efbffeb2152219d979336d46371578c1177b98`
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

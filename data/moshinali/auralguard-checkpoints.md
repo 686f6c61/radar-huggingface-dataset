@@ -95,16 +95,16 @@ Comparacion con alternativas externas de deteccion de voz sintetizada: no dispon
 - Sesgos conocidos: no documentados explicitamente. Cabe esperar sesgo de dominio, dado que el entrenamiento se realizo sobre un unico corpus en ingles; el comportamiento sobre otros idiomas, edades o condiciones de grabacion no esta caracterizado.
 - Cobertura de sintetizadores: el sistema se entrena sobre los generadores presentes en ASVspoof 2019 LA. Su comportamiento frente a modelos TTS o de clonacion posteriores no puede garantizarse sin evaluacion adicional.
 - Restricciones de licencia: la licencia es MIT, que permite uso comercial, modificacion y redistribucion con aviso de copyright. No se declaran restricciones adicionales de acceso ni terminos extra en la informacion disponible.
-- Estado del repositorio: cero descargas y cero likes, sin model card renderizada en la pagina de HuggingFace en el momento de la consulta. La validacion por parte de terceros es practicamente inexistente.
+- Estado del repositorio: cero descargas y cero likes, sin model card renderizada en la pagina de Hugging Face en el momento de la consulta. La validacion por parte de terceros es practicamente inexistente.
 - Caveat de produccion: no hay versiones cuantizadas, no hay exportaciones ONNX ni TensorRT publicadas y no se documentan latencias, por lo que el coste de integracion en un pipeline en tiempo real debe medirse por cuenta propia.
 - Los resultados declarados proceden de la model card y del manuscrito de los propios autores, en envio a revista; no se indica que hayan pasado por revision por pares en el momento de la consulta.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MoshinAli/auralguard-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/MoshinAli/auralguard-checkpoints
 - Manuscrito camera-ready (17 paginas) en el repositorio: `paper/main.pdf` (https://huggingface.co/MoshinAli/auralguard-checkpoints/blob/main/paper/main.pdf)
 - Codigo oficial: https://github.com/MIHMahmudEli/auralguardv2
-- Perfil del autor en HuggingFace: https://huggingface.co/MoshinAli
+- Perfil del autor en Hugging Face: https://huggingface.co/MoshinAli
 - Ficha de terceros sobre el modelo: https://savrn.com/models/auralguard-checkpoints
 - Figuras del manuscrito incluidas en el repositorio: `figures/cross_domain_comparison.png`, `figures/det_curve.png`, `figures/ci_forest_plot.png`, `figures/calibration_vs_discrimination.png`, `figures/reliability.png`
 - Conjuntos de datos referenciados: ASVspoof 2019, In-the-Wild, WaveFake (enlaces especificos no incluidos en la informacion proporcionada)

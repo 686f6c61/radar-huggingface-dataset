@@ -4,7 +4,7 @@
 
 Voxtral-Mini-3B-2507-estonian es una adaptación al estonio del modelo Voxtral Mini de Mistral AI, un modelo de lenguaje y audio de 3B parámetros (aunque el recuento real de parámetros es de aproximadamente 4.014 millones) que combina las capacidades de texto de Ministral 3B con un encoder de audio derivado de Whisper. Este modelo está diseñado para tareas de transcripción de voz, traducción y comprensión de audio, manteniendo un rendimiento competitivo en tareas de texto. La versión aquí descrita es una cuantización GGUF realizada por el usuario mradermacher, que permite su ejecución en entornos con recursos limitados mediante formatos como llama.cpp u Ollama.
 
-El modelo original fue desarrollado por TalTechNLP (Universidad de Tecnología de Tallin) y se publicó en HuggingFace bajo el nombre `TalTechNLP/Voxtral-Mini-3B-2507-estonian`. Esta variante estonia está pensada para aplicaciones de procesamiento de voz en ese idioma, aunque conserva las capacidades multilingües del modelo base. La cuantización GGUF ofrece múltiples niveles de compresión (desde Q2_K hasta F16), lo que facilita su despliegue en hardware variado, desde GPUs de consumo hasta servidores profesionales.
+El modelo original fue desarrollado por TalTechNLP (Universidad de Tecnología de Tallin) y se publicó en Hugging Face bajo el nombre `TalTechNLP/Voxtral-Mini-3B-2507-estonian`. Esta variante estonia está pensada para aplicaciones de procesamiento de voz en ese idioma, aunque conserva las capacidades multilingües del modelo base. La cuantización GGUF ofrece múltiples niveles de compresión (desde Q2_K hasta F16), lo que facilita su despliegue en hardware variado, desde GPUs de consumo hasta servidores profesionales.
 
 La relevancia de este modelo radica en su tamaño compacto combinado con capacidades de audio de última generación, lo que lo convierte en una opción atractiva para desarrolladores que necesitan integrar transcripción y comprensión de voz en aplicaciones en estonio sin depender de APIs comerciales. Al ser de código abierto (aunque la licencia exacta no está especificada en la información disponible), permite un control total sobre el despliegue y los datos.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Voxtral-Mini-3B-2507-estonian (GGUF) | 4.014M | no disponible | Sí (transcripción, traducción) | no disponible | HuggingFace |
-| Whisper small (openai) | 244M | 30s de audio | Transcripción | MIT | HuggingFace |
-| Ministral 3B (texto) | 3.000M | 128k (según documentación) | No | Apache 2.0 | HuggingFace |
-| Qwen2-Audio | 7.600M | no disponible | Sí | Apache 2.0 | HuggingFace |
+| Voxtral-Mini-3B-2507-estonian (GGUF) | 4.014M | no disponible | Sí (transcripción, traducción) | no disponible | Hugging Face |
+| Whisper small (openai) | 244M | 30s de audio | Transcripción | MIT | Hugging Face |
+| Ministral 3B (texto) | 3.000M | 128k (según documentación) | No | Apache 2.0 | Hugging Face |
+| Qwen2-Audio | 7.600M | no disponible | Sí | Apache 2.0 | Hugging Face |
 
 Nota: la comparativa se basa en datos públicos de los modelos mencionados, no en benchmarks medidos en este contexto. La versión estonia se diferencia por su especialización en ese idioma, mientras que Whisper y Qwen2-Audio son multilingües generales.
 
@@ -79,7 +79,7 @@ Nota: la comparativa se basa en datos públicos de los modelos mencionados, no e
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización GGUF: https://huggingface.co/mradermacher/Voxtral-Mini-3B-2507-estonian-GGUF
+- Repositorio Hugging Face de la cuantización GGUF: https://huggingface.co/mradermacher/Voxtral-Mini-3B-2507-estonian-GGUF
 - Modelo original (TalTechNLP): https://huggingface.co/TalTechNLP/Voxtral-Mini-3B-2507-estonian (referenciado en el README)
 - Página del modelo Voxtral Mini en ModelScope: https://www.modelscope.cn/models/mistralai/Voxtral-Mini-3B-2507/summary
 - Artículo sobre hardware para Voxtral Mini: https://www.madebyagents.com/models/voxtral-mini-3b-2507

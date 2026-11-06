@@ -70,7 +70,7 @@ No se dispone de información comparativa en la documentación proporcionada. Ex
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingfang008/BonFrame-LatentSync-ONNX
+- Repositorio Hugging Face: https://huggingface.co/kingfang008/BonFrame-LatentSync-ONNX
 - Repositorio oficial de LatentSync (ByteDance): https://github.com/bytedance/LatentSync
 - ONNX Model Zoo: https://github.com/onnx/models
 - Página de modelos ONNX Runtime: https://onnxruntime.ai/models

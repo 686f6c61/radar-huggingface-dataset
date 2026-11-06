@@ -118,7 +118,7 @@ El autor indica que el Decision Index mide latencia en una RTX PRO 6000, GPU en 
 
 | Modelo | Parámetros | Contexto | Índice público (Decision Index 0.3) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| decider-31b | 20,9 B reales (nombre: 31B) | no disponible | 64,27 | apache-2.0 | HuggingFace, requiere GPU NVFP4 |
+| decider-31b | 20,9 B reales (nombre: 31B) | no disponible | 64,27 | apache-2.0 | Hugging Face, requiere GPU NVFP4 |
 | Torchcast Decision 27B | 27 B (según nombre) | no disponible | 65,10 | no disponible | no disponible |
 | Perplexity Decider v1.1 | 27 B (según nombre) | no disponible | 62,25 | no disponible | no disponible |
 | Fastino GLiDE no-thinking | 28 B (según nombre) | no disponible | 59,06 | no disponible | no disponible |
@@ -142,7 +142,7 @@ La información disponible solo permite comparar por índice público del Decisi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mapika/decider-31b
+- Modelo en Hugging Face: https://huggingface.co/Mapika/decider-31b
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Repositorio de código decider-ai: https://github.com/Mapika/decider
 - Resultados del Decision Index (gated): https://huggingface.co/datasets/Mapika/decision-index-results/tree/main/runs/decider-31b

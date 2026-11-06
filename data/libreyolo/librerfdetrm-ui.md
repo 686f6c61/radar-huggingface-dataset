@@ -75,8 +75,8 @@ El unico dato de validacion disponible es una comprobacion de equivalencia funci
 
 | Modelo | Arquitectura | Clases | Entrada nativa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreRFDETRm-ui | RF-DETR-Medium + DINOv2 | 1 (`object`) | 576 px | MIT sobre base Apache 2.0 | HuggingFace, via LibreYOLO |
-| UI-DETR-1 (racineai) | RF-DETR-Medium + DINOv2 | 1 (`object`) | 576 px | MIT | HuggingFace |
+| LibreRFDETRm-ui | RF-DETR-Medium + DINOv2 | 1 (`object`) | 576 px | MIT sobre base Apache 2.0 | Hugging Face, via LibreYOLO |
+| UI-DETR-1 (racineai) | RF-DETR-Medium + DINOv2 | 1 (`object`) | 576 px | MIT | Hugging Face |
 | RF-DETR-Medium (roboflow) | RF-DETR-Medium + DINOv2 | multiproposito (dataset COCO/otro) | no disponible | Apache 2.0 | GitHub / roboflow |
 
 LibreRFDETRm-ui y UI-DETR-1 comparten pesos identicos (bit a bit); la diferencia es unicamente el envoltorio de metadatos para la fabrica de LibreYOLO. RF-DETR-Medium es el modelo base sin el fine-tune de UI, por lo que no esta especializado en pantallas de interfaz. No se dispone de datos de benchmarks que permitan comparar su calidad de deteccion frente a detectores genericos tipo YOLO u otros detectores de UI.
@@ -96,7 +96,7 @@ LibreRFDETRm-ui y UI-DETR-1 comparten pesos identicos (bit a bit); la diferencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibreYOLO/LibreRFDETRm-ui
+- Modelo en Hugging Face: https://huggingface.co/LibreYOLO/LibreRFDETRm-ui
 - Modelo base (pesos originales): https://huggingface.co/racineai/UI-DETR-1
 - Libreria LibreYOLO (GitHub): https://github.com/LibreYOLO/libreyolo
 - RF-DETR base (Roboflow, GitHub): https://github.com/roboflow/rf-detr

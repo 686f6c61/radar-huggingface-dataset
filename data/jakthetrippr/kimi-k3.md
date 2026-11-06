@@ -95,8 +95,8 @@ El propio autor cuantifica la mejora de eficiencia de escalado respecto a Kimi K
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/JakTheTrippr/Kimi-K3
-- Organización oficial en HuggingFace: https://huggingface.co/moonshotai
+- Repositorio analizado en Hugging Face: https://huggingface.co/JakTheTrippr/Kimi-K3
+- Organización oficial en Hugging Face: https://huggingface.co/moonshotai
 - Blog técnico de Kimi K3: https://www.kimi.com/blog/kimi-k3
 - Informe técnico completo (PDF): https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf
 - Repositorio GitHub del proyecto: https://github.com/MoonshotAI/Kimi-K3

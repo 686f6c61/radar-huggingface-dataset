@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AltEinstein/bmb10 es un modelo publicado en HuggingFace por el usuario AltEinstein del que no se dispone de informacion tecnica verificable. El repositorio no declara canal de inferencia (pipeline), licencia, idiomas soportados ni tarjeta de modelo con descripcion de arquitectura o datos de entrenamiento. El unico dato objetivo disponible es el tamano del repositorio, 32,4 GB, y las marcas temporales de creacion y ultima actualizacion (11 y 12 de septiembre de 2026).
+AltEinstein/bmb10 es un modelo publicado en Hugging Face por el usuario AltEinstein del que no se dispone de informacion tecnica verificable. El repositorio no declara canal de inferencia (pipeline), licencia, idiomas soportados ni tarjeta de modelo con descripcion de arquitectura o datos de entrenamiento. El unico dato objetivo disponible es el tamano del repositorio, 32,4 GB, y las marcas temporales de creacion y ultima actualizacion (11 y 12 de septiembre de 2026).
 
 El modelo acumula 0 descargas y 1 like en el momento de la consulta, lo que indica que no ha sido adoptado por la comunidad ni validado por terceros. No hay publicaciones, papers, blogs ni repositorios asociados localizados en la busqueda web; los resultados devueltos son completamente ajenos a este modelo.
 
@@ -43,7 +43,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composici
 - Capacidades multilingues: no disponible; el campo de idiomas no esta relleno.
 - Capacidades especiales (modo thinking, audio, vision, etc.): no disponible.
 
-No se debe asumir ninguna capacidad concreta mientras el autor no publique documentacion. La ausencia de pipeline declarado implica, ademas, que HuggingFace no ha podido clasificar automaticamente la tarea del modelo.
+No se debe asumir ninguna capacidad concreta mientras el autor no publique documentacion. La ausencia de pipeline declarado implica, ademas, que Hugging Face no ha podido clasificar automaticamente la tarea del modelo.
 
 ## Casos de uso
 
@@ -92,7 +92,7 @@ No disponible. Al desconocerse el tamano en parametros, la arquitectura y las ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AltEinstein/bmb10
+- Hugging Face: https://huggingface.co/AltEinstein/bmb10
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio: no disponible

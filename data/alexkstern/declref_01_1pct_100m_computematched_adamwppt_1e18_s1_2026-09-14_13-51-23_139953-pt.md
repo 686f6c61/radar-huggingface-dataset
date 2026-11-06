@@ -53,7 +53,7 @@ Los resultados registrados son: `step` 1.050, `smooth_train_loss` 3.269970655441
 - Estudio de la transicion entre vocabularios: comparar el efecto de reinicializar los embeddings y resetear el optimizador al pasar de un vocabulario de 65.536 a uno de 1.028 tokens, midiendo la degradacion y la recuperacion de la perdida en las primeras iteraciones de la segunda fase.
 - Ablacion de optimizadores y schedules: sirve como punto de referencia para evaluar AdamW con learning rates separados por modulo (`matrix_lr`, `embedding_lr`, `unembedding_lr`) y un schedule trapezoidal con 40 % de decaimiento y sin warmup.
 - Punto de partida para fine-tuning supervisado: al ser un checkpoint de preentrenamiento con licencia Apache 2.0, puede usarse como base para anadir una etapa SFT con `nanochat` sobre un dataset propio de instrucciones y medir cuanto se gana frente a entrenar desde cero con el mismo presupuesto.
-- Docencia y formacion en entrenamiento de LLM: un modelo de este tamano se carga y se ejecuta en una unica GPU de consumo, lo que permite ilustrar de extremo a extremo el ciclo de tokenizacion, preentrenamiento, evaluacion y publicacion en HuggingFace.
+- Docencia y formacion en entrenamiento de LLM: un modelo de este tamano se carga y se ejecuta en una unica GPU de consumo, lo que permite ilustrar de extremo a extremo el ciclo de tokenizacion, preentrenamiento, evaluacion y publicacion en Hugging Face.
 - Analisis de tokenizacion BPE a escala pequena: el par de vocabularios (65.536 frente a 1.028) permite estudiar como afecta el tamano del vocabulario a la compresion efectiva del corpus y a la perdida por token.
 - Evaluacion cualitativa de un modelo base: generar continuaciones sobre `fineweb` o sobre el dominio de `declref-01` para inspeccionar sesgos, fluidez y adherencia al registro del corpus de entrenamiento.
 - No es adecuado como servicio de atencion al cliente, asistente conversacional, generacion de codigo en produccion ni ninguna tarea que requiera seguir instrucciones: no existe etapa de alineacion y el modelo no entiende de forma fiable un formato de dialogo.
@@ -112,7 +112,7 @@ La diferencia clave no esta en el numero de parametros, sino en el volumen de da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/declref_01_1pct_100M_computematched_adamwppt_1e18_s1_2026-09-14_13-51-23_139953-pt
+- Hugging Face: https://huggingface.co/alexkstern/declref_01_1pct_100M_computematched_adamwppt_1e18_s1_2026-09-14_13-51-23_139953-pt
 - Repositorio de nanochat (libreria de entrenamiento e inferencia): https://github.com/karpathy/nanochat
 - Registro del experimento en Weights & Biases: https://wandb.ai/alexksternteam/cm100M_best_cells_hfpush_v0/runs/u07j0o6e
 - Los resultados de busqueda web realizados no aportaron enlaces relevantes sobre este modelo: devolvieron unicamente paginas genericas de servicios de Google (Photos, Drive, Accounts, Classroom), sin relacion con el artefacto.

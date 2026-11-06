@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Samas21/C0n4n` es un modelo alojado en HuggingFace, publicado por el usuario Samas21 el 16 de abril de 2025 y actualizado el 14 de agosto de 2026. La model card asociada únicamente declara la licencia Apache 2.0, sin proporcionar ninguna otra información técnica, documentación o enlaces externos. El tamaño total del repositorio es de 110,4 GB, lo que sugiere que podría tratarse de un modelo de gran tamaño, pero no hay datos que permitan confirmar su arquitectura, finalidad o características.
+El repositorio `Samas21/C0n4n` es un modelo alojado en Hugging Face, publicado por el usuario Samas21 el 16 de abril de 2025 y actualizado el 14 de agosto de 2026. La model card asociada únicamente declara la licencia Apache 2.0, sin proporcionar ninguna otra información técnica, documentación o enlaces externos. El tamaño total del repositorio es de 110,4 GB, lo que sugiere que podría tratarse de un modelo de gran tamaño, pero no hay datos que permitan confirmar su arquitectura, finalidad o características.
 
 En el momento de la consulta, el modelo registra 0 descargas y 0 likes, lo que indica que no ha sido utilizado ni evaluado por la comunidad. La ausencia total de especificaciones técnicas, ejemplos de uso o benchmarks hace imposible determinar su naturaleza (por ejemplo, si es un modelo de lenguaje, multimodal o de otro tipo) o su viabilidad para tareas concretas. Esta ficha se limita a reflejar la información disponible y marca como "no disponible" todos los campos no documentados.
 
@@ -53,4 +53,4 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni las capacidades de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Samas21/C0n4n
+- Repositorio en Hugging Face: https://huggingface.co/Samas21/C0n4n

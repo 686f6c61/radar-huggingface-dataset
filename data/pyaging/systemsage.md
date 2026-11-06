@@ -69,6 +69,6 @@ No se dispone de información comparativa en los datos proporcionados. Existen o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pyaging/systemsage
+- Hugging Face: https://huggingface.co/pyaging/systemsage
 - Documentación de pyaging: https://pyaging.readthedocs.io
 - Publicación original: Sehgal, R., Markov, Y., Qin, C., et al. (2025). Systems Age: a single blood methylation test to quantify aging heterogeneity across 11 physiological systems. Nature Aging, 5, 1880–1896. https://doi.org/10.1038/s43587-025-00958-3

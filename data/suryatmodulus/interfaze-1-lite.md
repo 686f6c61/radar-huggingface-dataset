@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Interfaze 1.1 Lite es un modelo multimodal "any-to-text" publicado por Interfaze AI (el repositorio de HuggingFace aparece bajo el autor `suryatmodulus`, mientras que la propia model card apunta a la organizacion `interfaze-ai/interfaze-1-lite`). No es una red unica, sino una arquitectura compuesta que el autor denomina mixture-of-architectures (MoA): un nucleo de razonamiento vision-lenguaje se combina con una serie de arquitecturas especialistas conectadas mediante llamadas de herramienta, cada una optimizada para un tipo de percepcion (lectura de documentos, reconocimiento de voz, segmentacion, deteccion de objetos, etc.).
+Interfaze 1.1 Lite es un modelo multimodal "any-to-text" publicado por Interfaze AI (el repositorio de Hugging Face aparece bajo el autor `suryatmodulus`, mientras que la propia model card apunta a la organizacion `interfaze-ai/interfaze-1-lite`). No es una red unica, sino una arquitectura compuesta que el autor denomina mixture-of-architectures (MoA): un nucleo de razonamiento vision-lenguaje se combina con una serie de arquitecturas especialistas conectadas mediante llamadas de herramienta, cada una optimizada para un tipo de percepcion (lectura de documentos, reconocimiento de voz, segmentacion, deteccion de objetos, etc.).
 
 El modelo esta disenado para cargas de trabajo de desarrollador: leer documentos (PDF de hasta 50 paginas por llamada, imagenes y Word), transcribir audio con marcas de tiempo y diarizacion de hablantes, localizar objetos y elementos de interfaz grafica, y responder sobre todo ello con salida estructurada. Incorpora una ventana de contexto de 131.000 tokens y soporta mas de 14 idiomas, ademas de traduccion en mas de 160 lenguas.
 
@@ -85,7 +85,7 @@ Notas de la source: los conjuntos usados incluyen GPQA Diamond (las 198 pregunta
 
 | Modelo | Parametros | Contexto | Puntos fuertes (segun benchmarks citados) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Interfaze 1.1 Lite | no disponible | 131k | MMMU-Pro 73,2; olmOCR 83,8; RefCOCO 83,8; SOB 81,5 | interfaze-open | safetensors en HuggingFace, transformers + custom_code |
+| Interfaze 1.1 Lite | no disponible | 131k | MMMU-Pro 73,2; olmOCR 83,8; RefCOCO 83,8; SOB 81,5 | interfaze-open | safetensors en Hugging Face, transformers + custom_code |
 | GPT-5.4-Mini | no disponible | no disponible | GPQA 82,8; MMLU-traducido 75,3; MMMU-Pro 40,4 | propietaria | API (no open weights) |
 | Claude-Sonnet-4.6 | no disponible | no disponible | GPQA 89,9; MMMLU 84,9; Spider 49,6 | propietaria | API (no open weights) |
 | Gemini-3-Flash | no disponible | no disponible | GPQA 88,5; MMMLU 88,7; MMMU-Pro 67,6 | propietaria | API (no open weights) |
@@ -103,11 +103,11 @@ No se dispone de datos de parametros ni de contexto de los modelos de comparacio
 - Licencia: es `interfaze-open` (license: other), una licencia personalizada; es imprescindible revisar el archivo LICENSE del repositorio antes de cualquier uso comercial, ya que se desconoce si permite uso comercial irrestricto.
 - Requisito de hardware: necesita una GPU de 80 GB para ejecutarse, lo que limita el despliegue en entornos de consumo o de bajos recursos.
 - Dependencia de codigo personalizado (`custom_code`) en `transformers`, lo que puede complicar la integracion con herramientas estandar de inferencia.
-- El repositorio de HuggingFace aparece bajo el autor `suryatmodulus` mientras que la model card referencia la organizacion `interfaze-ai`; conviene verificar cual es el canal oficial de pesos y licencia.
+- El repositorio de Hugging Face aparece bajo el autor `suryatmodulus` mientras que la model card referencia la organizacion `interfaze-ai`; conviene verificar cual es el canal oficial de pesos y licencia.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/suryatmodulus/interfaze-1-lite
+- Repositorio en Hugging Face: https://huggingface.co/suryatmodulus/interfaze-1-lite
 - Repositorio referenciado en el card: https://huggingface.co/interfaze-ai/interfaze-1-lite
 - Licencia: https://huggingface.co/interfaze-ai/interfaze-1-lite/blob/main/LICENSE
 - Web oficial: https://interfaze.ai

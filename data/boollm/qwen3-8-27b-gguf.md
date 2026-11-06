@@ -102,8 +102,8 @@ Nota: la model card proporcionada está truncada a partir de la fila siguiente a
 
 | Modelo | Parametros | Contexto | Coding (total) | Escritura (borradores) | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Qwen3.8 27B Boollm (GGUF Q4_K_M) | 27,3 mil millones | Probado a 8K; el base soporta más, sin datos concretos | 527/664 (79,4%) | 79/100 | 59/62 | apache-2.0 | HuggingFace, autor Boollm (0 descargas) |
-| Qwen3.8 27B (Q4_K_M desde BF16) | 27,3 mil millones | No disponible | 545/664 (82,1%) | 70/100 | 59/62 | apache-2.0 | HuggingFace, Qwen (modelo base oficial) |
+| Qwen3.8 27B Boollm (GGUF Q4_K_M) | 27,3 mil millones | Probado a 8K; el base soporta más, sin datos concretos | 527/664 (79,4%) | 79/100 | 59/62 | apache-2.0 | Hugging Face, autor Boollm (0 descargas) |
+| Qwen3.8 27B (Q4_K_M desde BF16) | 27,3 mil millones | No disponible | 545/664 (82,1%) | 70/100 | 59/62 | apache-2.0 | Hugging Face, Qwen (modelo base oficial) |
 | Otras alternativas de la misma categoría | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -124,7 +124,7 @@ Nota: la model card proporcionada está truncada a partir de la fila siguiente a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Boollm/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Boollm/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE
 - Sitio del autor: https://boollm.com

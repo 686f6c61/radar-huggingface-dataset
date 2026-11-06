@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un checkpoint publicado en HuggingFace por el usuario afdeasdfad bajo el identificador afdeasdfad/MyAwesomeModel-TestRepo. Por su nombre y por el escaso volumen de descargas (68) y likes (0), todo apunta a un repositorio de prueba o de caracter experimental mas que a un modelo destinado a produccion. La ficha de HuggingFace no incluye model card con descripcion, datos de entrenamiento ni resultados de evaluacion.
+MyAwesomeModel-TestRepo es un checkpoint publicado en Hugging Face por el usuario afdeasdfad bajo el identificador afdeasdfad/MyAwesomeModel-TestRepo. Por su nombre y por el escaso volumen de descargas (68) y likes (0), todo apunta a un repositorio de prueba o de caracter experimental mas que a un modelo destinado a produccion. La ficha de Hugging Face no incluye model card con descripcion, datos de entrenamiento ni resultados de evaluacion.
 
-El repositorio declara la etiqueta de arquitectura bert y el pipeline feature-extraction, lo que lo situa en la familia de modelos encoder tipo BERT orientados a generar representaciones vectoriales de texto (embeddings) en lugar de generacion autoregresiva. La libreria asociada es transformers y el formato de pesos declarado corresponde a pytorch. La etiqueta endpoints_compatible indica que el checkpoint esta preparado para desplegarse mediante HuggingFace Inference Endpoints.
+El repositorio declara la etiqueta de arquitectura bert y el pipeline feature-extraction, lo que lo situa en la familia de modelos encoder tipo BERT orientados a generar representaciones vectoriales de texto (embeddings) en lugar de generacion autoregresiva. La libreria asociada es transformers y el formato de pesos declarado corresponde a pytorch. La etiqueta endpoints_compatible indica que el checkpoint esta preparado para desplegarse mediante Hugging Face Inference Endpoints.
 
 La relevancia actual de este tipo de modelos reside en su uso como extractores de caracteristicas para busqueda semantica, clasificacion, clustering y reranking, tareas donde un encoder compacto sigue siendo competitivo frente a modelos generativos de mayor coste. En el caso concreto de este repositorio, la ausencia de informacion tecnica verificable limita cualquier evaluacion seria: no se dispone de numero de parametros, longitud de contexto, idiomas soportados ni licencia confirmada en la model card.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. Al desconocerse el numero de parametros no es posible estimar requisitos de memoria.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible. Depende completamente del tamano real del checkpoint, que no se especifica.
-- Opciones de despliegue: el tag endpoints_compatible sugiere compatibilidad con HuggingFace Inference Endpoints. Para un modelo encoder de tipo BERT, las alternativas tecnicas habituales serian la propia libreria transformers, Text Embeddings Inference (TEI), TorchServe u ONNX Runtime. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama ni TGI, herramientas orientadas principalmente a modelos generativos.
+- Opciones de despliegue: el tag endpoints_compatible sugiere compatibilidad con Hugging Face Inference Endpoints. Para un modelo encoder de tipo BERT, las alternativas tecnicas habituales serian la propia libreria transformers, Text Embeddings Inference (TEI), TorchServe u ONNX Runtime. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama ni TGI, herramientas orientadas principalmente a modelos generativos.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -94,6 +94,6 @@ No disponible. La informacion proporcionada no permite identificar el tamano ni 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/afdeasdfad/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/afdeasdfad/MyAwesomeModel-TestRepo
 
 No se han encontrado en la busqueda web enlaces relevantes relacionados con el modelo: los resultados devueltos corresponden a paginas de juegos de cartas y clasificaciones de torneos, sin ninguna relacion con este repositorio.

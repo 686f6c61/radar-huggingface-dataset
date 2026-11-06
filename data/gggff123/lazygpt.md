@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lazyGPT es un modelo publicado en HuggingFace por el usuario gggff123 cuyo repositorio contiene un unico archivo en formato GGUF. La model card es minima: se limita a indicar que la conversion a GGUF se realizo con Unsloth y a mostrar un ejemplo de uso con `llama-cli` y `llama-mtmd-cli`. El nombre del archivo (`unsloth_SmolLM2-135M-Instruct_1789995047.Q4_K_M.gguf`) apunta a que se trata de una conversion del modelo SmolLM2-135M-Instruct, aunque el autor no lo confirma explicitamente en la documentacion.
+lazyGPT es un modelo publicado en Hugging Face por el usuario gggff123 cuyo repositorio contiene un unico archivo en formato GGUF. La model card es minima: se limita a indicar que la conversion a GGUF se realizo con Unsloth y a mostrar un ejemplo de uso con `llama-cli` y `llama-mtmd-cli`. El nombre del archivo (`unsloth_SmolLM2-135M-Instruct_1789995047.Q4_K_M.gguf`) apunta a que se trata de una conversion del modelo SmolLM2-135M-Instruct, aunque el autor no lo confirma explicitamente en la documentacion.
 
 El recuento de parametros de los metadatos (134.515.584) es coherente con la familia de 135M de parametros, lo que situa al modelo en la categoria de LLM ultraligeros. Este tipo de modelos resulta relevante para inferencia en CPU, dispositivos de borde y entornos sin GPU, asi como para prototipado rapido de pipelines y pruebas de integracion donde el coste por token es critico.
 
@@ -34,7 +34,7 @@ El identificador del archivo sugiere que el modelo deriva de SmolLM2-135M-Instru
 - Generacion de texto y respuesta conversacional: el tag `conversational` y el ejemplo de uso con `llama-cli -hf gggff123/lazyGPT --jinja` indican que el modelo esta preparado para plantillas de chat mediante Jinja.
 - Inferencia en formato GGUF: compatible con el ecosistema llama.cpp, lo que permite ejecucion en CPU y en GPU de gama baja.
 - Soporte declarado de inferencia multimodal por parte de la herramienta (`llama-mtmd-cli`), aunque el modelo es de texto: el autor incluye ese comando como plantilla generica, no como confirmacion de capacidades de vision.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en HuggingFace Inference Endpoints con el runtime adecuado.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en Hugging Face Inference Endpoints con el runtime adecuado.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Capacidades de agente o razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues: no disponible; el autor no declara idiomas.
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Memoria en CPU: cabe holgadamente en RAM de sistemas embebidos; el cuello de botella no sera la memoria sino la velocidad de computo.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente; el modelo no aprovechara tarjetas como A100 o H100 salvo en escenarios de batching masivo.
 - Cabe en GPU de consumo: si, en practicamente todas, incluidas GTX 1050, GTX 1650, RTX 3060, RTX 4090 y GPUs integradas con memoria compartida.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama, LM Studio, Jan y GPT4All mediante importacion del GGUF. El soporte de GGUF en vLLM y TGI es limitado o experimental. HuggingFace Inference Endpoints podria usarse gracias al tag `endpoints_compatible`.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama, LM Studio, Jan y GPT4All mediante importacion del GGUF. El soporte de GGUF en vLLM y TGI es limitado o experimental. Hugging Face Inference Endpoints podria usarse gracias al tag `endpoints_compatible`.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones. Por el tamano del modelo, es razonable esperar velocidades interactivas en CPU moderna, pero no hay datos verificables en la informacion proporcionada.
 - Cache KV: no hay datos de numero de capas ni de configuracion de atencion, por lo que no se puede calcular con precision; en un modelo de este tamano el impacto es de pocos MB.
 
@@ -93,7 +93,7 @@ La diferencia principal frente a estas alternativas no esta en la arquitectura, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gggff123/lazyGPT
+- Modelo en Hugging Face: https://huggingface.co/gggff123/lazyGPT
 - Repositorio de Unsloth (herramienta de conversion citada por el autor): https://github.com/unslothai/unsloth
 - Repositorio de llama.cpp (runtime indicado en los ejemplos de uso): https://github.com/ggml-org/llama.cpp
 - Modelo base probable, SmolLM2-135M-Instruct: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct

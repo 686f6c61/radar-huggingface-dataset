@@ -85,5 +85,5 @@ No se dispone de comparaciones con otros modelos de la misma categoría. La úni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/psikosen/canopy-258m-r3-v7
+- Hugging Face: https://huggingface.co/psikosen/canopy-258m-r3-v7
 - No se han encontrado papers, blogs ni demos adicionales en la búsqueda web.

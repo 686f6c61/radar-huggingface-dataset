@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`electra-base-discriminator-jailbreakv-28k-augmented` es un clasificador de texto en inglés orientado a la detección de *jailbreaks* y prompts maliciosos, publicado por el usuario leomaurodesenv en HuggingFace. Se trata de un ajuste fino (*fine-tuning*) del modelo discriminador `google/electra-base-discriminator`, un transformer encoder bidireccional de 109.483.778 parámetros (unos 109,5 millones) preentrenado originalmente con el objetivo de detección de tokens reemplazados (*replaced token detection*). El nombre del repositorio sugiere que el ajuste se ha realizado sobre una variante aumentada del conjunto de datos JailbreakV-28K, aunque la propia model card no documenta el dataset empleado.
+`electra-base-discriminator-jailbreakv-28k-augmented` es un clasificador de texto en inglés orientado a la detección de *jailbreaks* y prompts maliciosos, publicado por el usuario leomaurodesenv en Hugging Face. Se trata de un ajuste fino (*fine-tuning*) del modelo discriminador `google/electra-base-discriminator`, un transformer encoder bidireccional de 109.483.778 parámetros (unos 109,5 millones) preentrenado originalmente con el objetivo de detección de tokens reemplazados (*replaced token detection*). El nombre del repositorio sugiere que el ajuste se ha realizado sobre una variante aumentada del conjunto de datos JailbreakV-28K, aunque la propia model card no documenta el dataset empleado.
 
 El modelo resuelve una tarea de clasificación binaria o multiclase de una sola pasada: dada una instrucción o prompt, predecir si constituye un intento de *jailbreak* (elusión de las salvaguardas de un LLM). Es relevante porque los guardarraíles de entrada (*input guardrails*) se han convertido en un componente habitual en arquitecturas de aplicaciones con LLM, y un clasificador dedicado de ~110 M de parámetros es mucho más barato de desplegar que un LLM juez de gran tamaño.
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks comparables (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| leomaurodesenv/electra-base-discriminator-jailbreakv-28k-augmented | 109,5 M | 512 (estandar) | Clasificacion de jailbreaks | Apache 2.0 | HuggingFace |
-| google/electra-base-discriminator | ~110 M | 512 | Encoder preentrenado (deteccion de tokens reemplazados) | Apache 2.0 | HuggingFace |
-| leomaurodesenv/electra-base-discriminator-trustairlab-jailbreak-augmented | no disponible | no disponible | Clasificacion de jailbreaks | no disponible | HuggingFace |
+| leomaurodesenv/electra-base-discriminator-jailbreakv-28k-augmented | 109,5 M | 512 (estandar) | Clasificacion de jailbreaks | Apache 2.0 | Hugging Face |
+| google/electra-base-discriminator | ~110 M | 512 | Encoder preentrenado (deteccion de tokens reemplazados) | Apache 2.0 | Hugging Face |
+| leomaurodesenv/electra-base-discriminator-trustairlab-jailbreak-augmented | no disponible | no disponible | Clasificacion de jailbreaks | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estos modelos, ya que ninguno publica resultados de benchmarks en la informacion disponible. El modelo base `google/electra-base-discriminator` no es un clasificador de jailbreaks por si mismo: requeriria un ajuste fino adicional para esa tarea.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos, ya que ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leomaurodesenv/electra-base-discriminator-jailbreakv-28k-augmented
+- Modelo en Hugging Face: https://huggingface.co/leomaurodesenv/electra-base-discriminator-jailbreakv-28k-augmented
 - Modelo base: https://huggingface.co/google/electra-base-discriminator
 - Modelo relacionado (mismo autor): https://huggingface.co/leomaurodesenv/electra-base-discriminator-trustairlab-jailbreak-augmented
 

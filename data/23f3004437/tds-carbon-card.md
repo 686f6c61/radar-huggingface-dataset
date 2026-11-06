@@ -63,7 +63,7 @@ No disponible. Este repositorio no es un modelo de IA y no tiene comparables en 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/23f3004437/tds-carbon-card
+- Repositorio de Hugging Face: https://huggingface.co/23f3004437/tds-carbon-card
 - Repositorio similar (23f3001222): https://huggingface.co/23f3001222/tds-carbon-card
 - Repositorio similar (24f3004361): https://huggingface.co/24f3004361/tds-carbon-card
 - GitHub del autor (posiblemente relacionado): https://github.com/23f3004437/tds-ga5-q10-solver

@@ -72,8 +72,8 @@ No se dispone de información suficiente para realizar una comparativa numérica
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo (i1-GGUF)](https://huggingface.co/mradermacher/Qwen3.5-9B-heretic-v2-i1-GGUF)
-- [Repositorio HuggingFace de cuantizaciones estáticas (GGUF)](https://huggingface.co/mradermacher/Qwen3.5-9B-heretic-v2-GGUF)
+- [Repositorio Hugging Face del modelo (i1-GGUF)](https://huggingface.co/mradermacher/Qwen3.5-9B-heretic-v2-i1-GGUF)
+- [Repositorio Hugging Face de cuantizaciones estáticas (GGUF)](https://huggingface.co/mradermacher/Qwen3.5-9B-heretic-v2-GGUF)
 - [Modelo base ansulev/Qwen3.5-9B-heretic-v2](https://huggingface.co/ansulev/Qwen3.5-9B-heretic-v2)
 - [Herramienta Heretic (repositorio GitHub)](https://github.com/p-e-w/heretic)
 - [Modelo Qwen3.5-9B original (Alibaba)](https://huggingface.co/Qwen/Qwen3.5-9B)

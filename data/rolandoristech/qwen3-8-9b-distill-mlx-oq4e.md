@@ -82,10 +82,10 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 | Variante | Tamano | Generacion (tok/s) | Pico de memoria | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 9B oQ4e (este) | 4,9 GB | 43,0 | 5,471 GB | apache-2.0 | HuggingFace |
-| 9B oQ5e | 6,0 GB | 37,1 | 6,555 GB | apache-2.0 | HuggingFace |
-| 9B oQ6e | 7,0 GB | 33,3 | 7,664 GB | apache-2.0 | HuggingFace |
-| 9B oQ8e | 8,9 GB | 28,7 | 9,679 GB | apache-2.0 | HuggingFace |
+| 9B oQ4e (este) | 4,9 GB | 43,0 | 5,471 GB | apache-2.0 | Hugging Face |
+| 9B oQ5e | 6,0 GB | 37,1 | 6,555 GB | apache-2.0 | Hugging Face |
+| 9B oQ6e | 7,0 GB | 33,3 | 7,664 GB | apache-2.0 | Hugging Face |
+| 9B oQ8e | 8,9 GB | 28,7 | 9,679 GB | apache-2.0 | Hugging Face |
 | Base BF16 MLX master | No disponible | No medido en la model card | No disponible | apache-2.0 | Repositorio base de empero-ai |
 
 El autor indica que oQ4e es mas preciso que una cuantizacion plana de 4 bits g32 (5,003 bpw) y que oQ8e lo es frente a 8 bits g64 (8,502 bpw), pero no aporta metricas de calidad (perplejidad, exactitud en tareas) que respalden esa afirmacion. La comparacion con modelos de otras familias (por ejemplo, otras alternativas de ~8-9B en MLX) no esta disponible en la informacion proporcionada.
@@ -106,7 +106,7 @@ El autor indica que oQ4e es mas preciso que una cuantizacion plana de 4 bits g32
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RolanDorisTech/Qwen3.8-9B-Distill-MLX-oQ4e
+- Modelo en Hugging Face: https://huggingface.co/RolanDorisTech/Qwen3.8-9B-Distill-MLX-oQ4e
 - Modelo base declarado en `base_model`: empero-ai/Qwen3.8-Distill
 - Modelo base citado en los creditos: empero-ai/Qwen3.8-9B-Distill-GGUF
 - Canal del autor: https://www.youtube.com/@RolanDorisTech

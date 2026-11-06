@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por DeepSeek, publicado como checkpoint base en HuggingFace bajo licencia MIT. La ficha que nos ocupa no es el modelo original, sino una cuantizacion empaquetada por el usuario `ddalcu` para el runtime **mlx-serve** de Apple Silicon, en formato iQ-MLX a 3,0 bits por peso. El modelo base consta de 66.715.052.754 parametros totales, 40 capas, 384 expertos enrutados (6 activos por token) mas un experto compartido, y una ventana de contexto de 1.000.000 de tokens. Incluye una torre de vision y etapas de decodificacion especulativa DSpark.
+DeepSeek-V4.1-Flash-1017 es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por DeepSeek, publicado como checkpoint base en Hugging Face bajo licencia MIT. La ficha que nos ocupa no es el modelo original, sino una cuantizacion empaquetada por el usuario `ddalcu` para el runtime **mlx-serve** de Apple Silicon, en formato iQ-MLX a 3,0 bits por peso. El modelo base consta de 66.715.052.754 parametros totales, 40 capas, 384 expertos enrutados (6 activos por token) mas un experto compartido, y una ventana de contexto de 1.000.000 de tokens. Incluye una torre de vision y etapas de decodificacion especulativa DSpark.
 
 La relevancia de este pack es practica: permite ejecutar un modelo de ~66.700 millones de parametros con contexto de 1M en un Mac de 256 GB de memoria unificada, con unos 209 GB residentes y 427 GB de descarga. El autor documenta de forma inusualmente rigurosa la perdida de calidad introducida por la cuantizacion (KLD, top-1 frente al checkpoint original) y las velocidades medidas en un M5 Ultra.
 
@@ -118,7 +118,7 @@ Frente a otros modelos MoE de tamano similar (por ejemplo, la familia DeepSeek-V
 
 ## Enlaces
 
-- Pack cuantizado en HuggingFace: https://huggingface.co/ddalcu/DeepSeek-V4.1-Flash-1017-MLX-Serve-iQ-MLX-3.0bpw
+- Pack cuantizado en Hugging Face: https://huggingface.co/ddalcu/DeepSeek-V4.1-Flash-1017-MLX-Serve-iQ-MLX-3.0bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Aplicacion mlx-serve: https://mlxserve.com
 - Grafico de calidad y velocidad del pack: https://huggingface.co/ddalcu/DeepSeek-V4.1-Flash-1017-MLX-Serve-iQ-MLX-3.0bpw/resolve/main/assets/v11-card-chart.png

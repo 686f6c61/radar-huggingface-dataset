@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fafqfqfq es un adaptador LoRA para modelos de difusion de texto a imagen, publicado en HuggingFace por el usuario kreishyyyy bajo el identificador kreishyyyy/fafqfqfq. El repositorio, de 0,2 GB, se distribuye con la libreria diffusers y las etiquetas text-to-image, lora y template:diffusion-lora, lo que indica que no es un modelo completo sino un peso adicional que debe cargarse sobre un checkpoint de difusion subyacente.
+fafqfqfq es un adaptador LoRA para modelos de difusion de texto a imagen, publicado en Hugging Face por el usuario kreishyyyy bajo el identificador kreishyyyy/fafqfqfq. El repositorio, de 0,2 GB, se distribuye con la libreria diffusers y las etiquetas text-to-image, lora y template:diffusion-lora, lo que indica que no es un modelo completo sino un peso adicional que debe cargarse sobre un checkpoint de difusion subyacente.
 
 La ficha del autor es practicamente vacia: no declara modelo base (el campo base_model aparece como cadena vacia), no especifica prompt de instancia (instance_prompt: null), no incluye licencia, no documenta idiomas, no describe el dataset de entrenamiento ni el rango del adaptador. El unico contenido funcional es una imagen de ejemplo referenciada en el widget, cuyo nombre de archivo sugiere una edicion de atributos corporales sobre una figura femenina.
 
@@ -54,7 +54,7 @@ Los siguientes escenarios son hipoteticos y dependen de identificar primero un m
 - Investigacion sobre sobreajuste en LoRA: dado que no se documenta el dataset, el modelo puede servir como caso de estudio de adaptadores de bajo rango con posible sobreajuste a un unico concepto.
 - Pruebas de interoperabilidad de pipelines: verificar como se comporta un adaptador de origen desconocido al cargarse en ComfyUI, Forge o InvokeAI y detectar errores de claves de estado (state dict) o de dimensiones.
 - Creacion de material grafico de fantasia o videojuegos: generacion de personajes estilizados, siempre que la licencia aplicable y las politicas de la plataforma lo permitan.
-- Analisis de procedencia de modelos en HuggingFace: usar este repositorio como ejemplo de publicacion sin ficha tecnica, util para disenar listas de comprobacion de calidad en equipos de MLOps.
+- Analisis de procedencia de modelos en Hugging Face: usar este repositorio como ejemplo de publicacion sin ficha tecnica, util para disenar listas de comprobacion de calidad en equipos de MLOps.
 
 ## Benchmarks y rendimiento
 
@@ -95,7 +95,7 @@ No disponible. La comparacion con otras LoRA de edicion de figura humana no es p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kreishyyyy/fafqfqfq
+- Modelo en Hugging Face: https://huggingface.co/kreishyyyy/fafqfqfq
 - Archivos del repositorio: https://huggingface.co/kreishyyyy/fafqfqfq/tree/main
 - Pagina del autor: https://huggingface.co/kreishyyyy
 - Paper o blog tecnico: no disponible

@@ -73,7 +73,7 @@ No se dispone de información suficiente en la documentación proporcionada para
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/musafa901/gemma-4-26B-A4B
+- Repositorio Hugging Face: https://huggingface.co/musafa901/gemma-4-26B-A4B
 - Página oficial de Gemma 4 en DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Model card oficial de Google AI: https://ai.google.dev/gemma/docs/core/model_card_4
 - Technical report (arXiv): https://arxiv.org/abs/2607.02770

@@ -88,7 +88,7 @@ La comparativa se basa en características declaradas; no hay datos de benchmark
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/preetpatel/Qwen3.8-27B-Uncensored-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/preetpatel/Qwen3.8-27B-Uncensored-NVFP4
 - Modelo base abliterado: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de configuración y cuantización: https://github.com/preetpatel/qwen3.8_27B-nvidia5090

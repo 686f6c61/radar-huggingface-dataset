@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Joseph31415926/nllb_hieroglyph es un modelo de traducción automática neuronal especializado en traducir jeroglíficos egipcios al inglés y viceversa. Está basado en la arquitectura de Facebook NLLB-200 distilled 600M, un modelo de la familia M2M-100 diseñado para traducción multilingüe de alta eficiencia. El modelo fue publicado en julio de 2025 por el usuario Joseph31415926 en HuggingFace y cuenta con 622,3 millones de parámetros.
+Joseph31415926/nllb_hieroglyph es un modelo de traducción automática neuronal especializado en traducir jeroglíficos egipcios al inglés y viceversa. Está basado en la arquitectura de Facebook NLLB-200 distilled 600M, un modelo de la familia M2M-100 diseñado para traducción multilingüe de alta eficiencia. El modelo fue publicado en julio de 2025 por el usuario Joseph31415926 en Hugging Face y cuenta con 622,3 millones de parámetros.
 
 La relevancia de este modelo reside en su dominio específico: la traducción de una lengua antigua con un sistema de escritura complejo como los jeroglíficos egipcios. A diferencia de los modelos de traducción generalistas, este modelo ha sido ajustado (fine-tuned) para una tarea muy concreta, lo que lo convierte en una herramienta potencialmente útil para egiptólogos, historiadores y desarrolladores de aplicaciones educativas o de investigación.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - **VRAM estimada**: con 622 millones de parametros, el modelo en precision fp16 ocupa aproximadamente 1,2 GB en memoria. Sin embargo, el tamaño del repositorio (293 GB) sugiere que se almacenan multiples cuantizaciones o versiones, lo que no implica que la inferencia necesite esa memoria.
 - **GPU recomendadas**: una GPU consumer de gama media como la RTX 3060 (12 GB) o superior es suficiente para inferencia en fp16. Una RTX 4090 permitiria procesar lotes grandes.
 - **Compatibilidad con consumer GPU**: si, el modelo es relativamente pequeño y cabe en cualquier GPU moderna con al menos 4 GB de VRAM.
-- **Opciones de despliegue**: es compatible con la librería transformers de HuggingFace, por lo que se puede servir con vLLM, TGI, o en entornos locales con PyTorch. No se ha documentado compatibilidad con llama.cpp o GGUF, pero el formato safetensors es estandar.
+- **Opciones de despliegue**: es compatible con la librería transformers de Hugging Face, por lo que se puede servir con vLLM, TGI, o en entornos locales con PyTorch. No se ha documentado compatibilidad con llama.cpp o GGUF, pero el formato safetensors es estandar.
 - **Latencia y throughput**: no disponible. Al ser un modelo de 600M de parametros, la latencia en una GPU moderna deberia ser del orden de milisegundos por secuencia, pero no hay datos publicados.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se han identificado modelos comparables especificamente orientados a la tradu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Joseph31415926/nllb_hieroglyph
+- Hugging Face: https://huggingface.co/Joseph31415926/nllb_hieroglyph
 - Paper de M2M-100 (arquitectura base): arXiv:1910.09700
 - Modelo base: https://huggingface.co/facebook/nllb-200-distilled-600M
 

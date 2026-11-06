@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento ni de contexto para establecer comparacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/darkmaniac7/Qwen3.5-2B-MNN
+- Repositorio Hugging Face: https://huggingface.co/darkmaniac7/Qwen3.5-2B-MNN
 - Conversión original de taobao-mnn: https://huggingface.co/taobao-mnn/Qwen3.5-2B-MNN
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web realizada.

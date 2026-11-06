@@ -4,7 +4,7 @@
 
 LUCAWAGNER/robotics-vision-language-survey no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion (research-notes) sobre vision-lenguaje aplicada a robotica. La propia model card lo declara explicitamente: "exploratory note", sin checkpoint entrenado, sin codigo liberado y sin resultados de benchmark. El artefacto principal es un fichero `notes.md` que recoge el alcance de la pregunta de investigacion, los posibles factores de confusion, una comparacion propuesta con lineas base emparejadas y los requisitos de reproducibilidad.
 
-El repositorio esta publicado por el usuario LUCAWAGNER bajo licencia MIT, con fecha de creacion y actualizacion del 20 de septiembre de 2026 (segun los metadatos de HuggingFace). Los tags declarados son `safetensors`, `transformer`, `research-notes` y `robotics-vision-language`, pero la model card aclara que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales. El peso del repositorio es de 0.0 GB.
+El repositorio esta publicado por el usuario LUCAWAGNER bajo licencia MIT, con fecha de creacion y actualizacion del 20 de septiembre de 2026 (segun los metadatos de Hugging Face). Los tags declarados son `safetensors`, `transformer`, `research-notes` y `robotics-vision-language`, pero la model card aclara que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales. El peso del repositorio es de 0.0 GB.
 
 Por tanto, su relevancia no es la de un modelo desplegable, sino la de un documento de trabajo que puede servir como punto de partida metodologico para quien disene evaluaciones de vision-lenguaje en robotica. Cualquier uso en produccion o como modelo de inferencia es inadecuado: no hay pesos funcionales ni capacidades declaradas.
 
@@ -13,7 +13,7 @@ Por tanto, su relevancia no es la de un modelo desplegable, sino la de un docume
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible (el tag `transformer` figura en los metadatos, pero la model card no describe ninguna arquitectura de modelo) |
-| Parametros totales | 16.576 segun los metadatos de safetensors de HuggingFace; cifra anomala y no coherente con un checkpoint entrenado, dado que la model card niega la existencia de checkpoint |
+| Parametros totales | 16.576 segun los metadatos de safetensors de Hugging Face; cifra anomala y no coherente con un checkpoint entrenado, dado que la model card niega la existencia de checkpoint |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
@@ -76,7 +76,7 @@ No disponible. Este repositorio pertenece a la categoria de notas de investigaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LUCAWAGNER/robotics-vision-language-survey
+- Hugging Face: https://huggingface.co/LUCAWAGNER/robotics-vision-language-survey
 - Fichero principal citado en la model card: `notes.md` (dentro del propio repositorio)
 - Paper, blog, repositorio de codigo o demo: no disponibles
 - Los resultados de busqueda web proporcionados no guardan relacion con el modelo ni con vision-lenguaje en robotica (son hilos de un foro sobre VLC), por lo que no se incluyen como fuentes.

@@ -4,7 +4,7 @@
 
 ZTC-Judge-27B es un verificador de respuestas desarrollado por FINAL-Bench que puntúa si la respuesta de *otro* modelo (de cualquier proveedor) es fiable, sin generar un solo token. El mecanismo, denominado Zero-Token Confidence (ZTC), consiste en una única pasada forward sobre la concatenación de pregunta y respuesta, la extracción del estado oculto de la última capa (5.120 dimensiones) en la última posición y un producto escalar con una sonda lineal entrenada. El resultado es un número real sin acotar que actúa como señal de ranking, no como probabilidad calibrada.
 
-El modelo se construye sobre Qwen3.5-27B (revisión `fc05daec18b0`, pesos sin modificar) y añade únicamente la sonda de verificación, por lo que su huella de parámetros es de 27.781.427.952 (unos 27,8 mil millones) y el repositorio ocupa 55,6 GB en safetensors. Está publicado bajo licencia Apache 2.0, con soporte declarado de inglés y coreano, y se etiqueta en HuggingFace con el pipeline `text-classification`.
+El modelo se construye sobre Qwen3.5-27B (revisión `fc05daec18b0`, pesos sin modificar) y añade únicamente la sonda de verificación, por lo que su huella de parámetros es de 27.781.427.952 (unos 27,8 mil millones) y el repositorio ocupa 55,6 GB en safetensors. Está publicado bajo licencia Apache 2.0, con soporte declarado de inglés y coreano, y se etiqueta en Hugging Face con el pipeline `text-classification`.
 
 Su relevancia actual radica en que resuelve un problema práctico de los pipelines con LLM: detectar alucinaciones y filtrar respuestas incorrectas en producción sin encadenar un segundo modelo generativo. Al no decodificar nada, la latencia equivale a una pasada forward y el batching se traduce directamente en throughput, lo que abarata el despliegue frente a enfoques de verificación basados en generación.
 
@@ -96,7 +96,7 @@ Medición B: medición interna del repositorio, 400 ítems de exámenes profesio
 
 | Sistema | Parámetros | AUC (leaderboard, 2.018 ítems) | Enfoque | Licencia / disponibilidad |
 |---|---|---|---|---|
-| ZTC-Judge-27B | 27,8 B | 0,7282 | Sonda lineal sobre estado oculto, 0 tokens generados | Apache 2.0, pesos abiertos en HuggingFace |
+| ZTC-Judge-27B | 27,8 B | 0,7282 | Sonda lineal sobre estado oculto, 0 tokens generados | Apache 2.0, pesos abiertos en Hugging Face |
 | Darwin-397B-ZTC | 397 B (según denominación) | 0,7364 | Self-readout probe del propio modelo | No disponible |
 | JEV (TypeSafe AI) | No disponible | 0,7350 | Verificador de terceros | Propietario (no disponible en abierto) |
 | GPT-5.2 (pregunta directa) | No disponible | 0,7148 | Confianza declarada por el modelo | API propietaria |
@@ -115,7 +115,7 @@ Contexto, rendimiento en benchmarks generativos y disponibilidad de pesos de los
 - Cobertura lingüística declarada limitada a inglés y coreano; no se garantiza comportamiento en castellano ni en otros idiomas.
 - Longitud de contexto soportada no documentada, lo que impide planificar entradas largas (por ejemplo, documentos extensos en RAG) con garantías.
 - Riesgo de dependencia del dominio: la sonda se entrenó con hiperparámetros seleccionados dentro de los dominios de entrenamiento, y la evaluación held-out muestra diferencias notables entre dominios (de 0,6172 a 0,8462).
-- La etiqueta `image-text-to-text` aparece en los metadatos de HuggingFace, pero la model card no documenta ninguna capacidad de visión. Debe tratarse como no confirmada hasta verificarlo.
+- La etiqueta `image-text-to-text` aparece en los metadatos de Hugging Face, pero la model card no documenta ninguna capacidad de visión. Debe tratarse como no confirmada hasta verificarlo.
 - La model card está truncada en la sección de API, por lo que el contrato completo de respuesta del endpoint no está disponible.
 - El repositorio tiene muy pocas descargas (6) pese a los 32 likes, y la fecha de creación registrada (2026-09-19) es posterior a la fecha de actualización habitual de los catálogos; conviene verificar la vigencia del artefacto antes de integrarlo.
 - Licencia Apache 2.0: permite uso comercial, pero el modelo hereda las condiciones de Qwen3.5-27B, cuyos términos específicos no se detallan en la información disponible.
@@ -123,7 +123,7 @@ Contexto, rendimiento en benchmarks generativos y disponibilidad de pesos de los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FINAL-Bench/ZTC-Judge-27B
+- Modelo en Hugging Face: https://huggingface.co/FINAL-Bench/ZTC-Judge-27B
 - Modelo relacionado Darwin-397B-ZTC: https://huggingface.co/FINAL-Bench/Darwin-397B-ZTC
 - Demo Gate Arcade: https://huggingface.co/spaces/FINAL-Bench/gate-tetris
 - Typed Decision Leaderboard: https://huggingface.co/spaces/mayafree/typed-decision-leaderboard

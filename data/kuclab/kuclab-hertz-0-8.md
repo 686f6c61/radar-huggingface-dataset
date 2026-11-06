@@ -91,10 +91,10 @@ La información disponible solo permite comparar con las generaciones anteriores
 
 | Modelo | Parametros | Contexto | MMLU-Pro STEM (subconjunto propio) | Terminologia CS/EN (propio) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Hertz 0.8 | ~9B (8.953.803.264) | 32.768 tokens | 88,8% | 84,5% | Apache 2.0 | GGUF q4_k_m en HuggingFace |
+| Hertz 0.8 | ~9B (8.953.803.264) | 32.768 tokens | 88,8% | 84,5% | Apache 2.0 | GGUF q4_k_m en Hugging Face |
 | Hertz 0.7F | 9B | no disponible | 83,3% | 85,4% | no disponible | no disponible en la información proporcionada |
 | Hertz 0.6 | 12B | no disponible | 79,2% | 73,8% | no disponible | no disponible en la información proporcionada |
-| Qwen/Qwen3.5-9B (modelo base) | ~9B | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace (Qwen) |
+| Qwen/Qwen3.5-9B (modelo base) | ~9B | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face (Qwen) |
 
 Comparativa con alternativas de otras familias: no disponible.
 
@@ -114,7 +114,7 @@ Comparativa con alternativas de otras familias: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KucLab/kuclab-hertz-0.8
+- Modelo en Hugging Face: https://huggingface.co/KucLab/kuclab-hertz-0.8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Modelfile para Ollama: https://huggingface.co/KucLab/kuclab-hertz-0.8/resolve/main/Modelfile
 - Sitio del autor: https://kuclab.org

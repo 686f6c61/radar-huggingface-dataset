@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ4e-fp16
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ4e-fp16
 - Página oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Guía de Ornith AI (modelos, VRAM, benchmarks): https://ornith.online/
 - Sitio principal de Ornith AI: https://ornith.ai/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WinEvent-Triage-Reasoner-14B es un ajuste fino (fine-tuning) del modelo DeepSeek-R1-Distill-Qwen-14B, publicado por el usuario edelucia en HuggingFace, orientado al triaje de eventos de Windows (registro de seguridad nativo y Sysmon) en flujos de trabajo DFIR, SOC y threat hunting. El repositorio distribuye exclusivamente pesos en formato GGUF, lo que lo hace desplegable en LM Studio, Ollama y equipos de sobremesa con GPU de gama media, y la model card recomienda la cuantización Q4_K_M para huellas de 8-10 GB de VRAM.
+WinEvent-Triage-Reasoner-14B es un ajuste fino (fine-tuning) del modelo DeepSeek-R1-Distill-Qwen-14B, publicado por el usuario edelucia en Hugging Face, orientado al triaje de eventos de Windows (registro de seguridad nativo y Sysmon) en flujos de trabajo DFIR, SOC y threat hunting. El repositorio distribuye exclusivamente pesos en formato GGUF, lo que lo hace desplegable en LM Studio, Ollama y equipos de sobremesa con GPU de gama media, y la model card recomienda la cuantización Q4_K_M para huellas de 8-10 GB de VRAM.
 
 La propuesta diferencial del autor no es tanto el ajuste como el protocolo de inferencia: el modelo está diseñado para operar como una máquina de estados determinista que ejecuta un pipeline cognitivo obligatorio de cuatro fases (extracción y contexto arquitectónico, test de hipótesis simétrico benigno/malicioso, evaluación por primeros principios y falsificación, y conclusión causal) dentro de un bloque `thinking`, y que después emite únicamente un objeto JSON con los campos `threat_identification`, `technique` (nombre e ID de MITRE ATT&CK), `mitigation`, `category` y `next_command`.
 
@@ -95,6 +95,6 @@ Nota: no se dispone de datos de rendimiento comparativo entre estas opciones en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edelucia/WinEvent-Triage-Reasoner-14B
+- Modelo en Hugging Face: https://huggingface.co/edelucia/WinEvent-Triage-Reasoner-14B
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
 - Paper, repositorio de codigo, blog o demo del ajuste: no disponible. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los unicos resultados obtenidos correspondian al portal del registro mercantil de Bulgaria (portal.registryagency.bg) y no guardan relacion con el modelo.

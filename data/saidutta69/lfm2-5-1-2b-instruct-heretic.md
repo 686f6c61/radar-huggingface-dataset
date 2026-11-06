@@ -18,7 +18,7 @@ La relevancia de esta ficha radica en que combina dos factores: por un lado, la 
 | Longitud de contexto | 32.768 tokens |
 | Tipos de cuantizacion | No disponible en esta ficha (el modelo original ofrece GGUF, ONNX y MLX 8-bit en repos separados) |
 | Idiomas soportados | Ingles, arabe, chino, frances, aleman, japones, coreano y espanol |
-| Licencia | lfm1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | Safetensors (libreria transformers) |
 | Parametros de generacion | temperature 0,1 / top_k 50 / repetition_penalty 1,05 |
 | Vocabulario | 65.536 tokens |
@@ -83,10 +83,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Rechazos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-1.2B-Instruct-heretic (esta ficha) | 1,17B | 32.768 | 2/100 | lfm1.0 | Safetensors en HuggingFace |
+| LFM2.5-1.2B-Instruct-heretic (esta ficha) | 1,17B | 32.768 | 2/100 | lfm1.0 | Safetensors en Hugging Face |
 | LiquidAI/LFM2.5-1.2B-Instruct | 1,17B | 32.768 | 98/100 | lfm1.0 | Safetensors, GGUF, ONNX, MLX |
-| LiquidAI/LFM2.5-1.2B-Thinking | 1,2B | No disponible | No disponible | lfm1.0 | HuggingFace |
-| LiquidAI/LFM2.5-1.2B-Base | 1,2B | No disponible | No disponible | lfm1.0 | HuggingFace |
+| LiquidAI/LFM2.5-1.2B-Thinking | 1,2B | No disponible | No disponible | lfm1.0 | Hugging Face |
+| LiquidAI/LFM2.5-1.2B-Base | 1,2B | No disponible | No disponible | lfm1.0 | Hugging Face |
 
 El modelo comparable mas directo es el Instruct original, del que esta variante deriva y con el que comparte arquitectura, parametros y contexto. La diferencia principal es la tasa de rechazos y la divergencia KL introducida por la abliteration. Las variantes Thinking y Base de la misma familia comparten el mismo presupuesto de parametros, pero no se dispone de datos de contexto ni de rechazos en la informacion proporcionada.
 
@@ -99,14 +99,14 @@ No se dispone de datos de benchmarks estandar para comparar con modelos de otros
 - Liquid AI no recomienda el modelo base para tareas intensivas en conocimiento ni para programacion; estas limitaciones se heredan.
 - El corte de conocimiento es de mediados de 2024, por lo que no dispone de informacion posterior.
 - Riesgo de alucinacion inherente a un modelo de 1,2B, especialmente en dominios especializados.
-- La licencia lfm1.0 esta etiquetada como "other" en HuggingFace; es necesario revisar los terminos exactos del archivo LICENSE antes de un uso comercial.
+- La licencia lfm1.0 esta etiquetada como "other" en Hugging Face; es necesario revisar los terminos exactos del archivo LICENSE antes de un uso comercial.
 - El modelo tiene 0 descargas y 0 "likes" en el momento de la ficha, y fue publicado por un autor no oficial (saidutta69), no por Liquid AI; no existe validacion por parte del fabricante original.
 - La informacion no confirma soporte explicito de tool calling, function calling ni modo de razonamiento, a diferencia de otras variantes de la familia.
 - El soporte multilingue esta declarado para ocho idiomas, pero no se aportan metricas de calidad por idioma; el rendimiento fuera del ingles puede ser desigual.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/saidutta69/LFM2.5-1.2B-Instruct-heretic
+- Repositorio Hugging Face: https://huggingface.co/saidutta69/LFM2.5-1.2B-Instruct-heretic
 - Modelo original: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Base
 - Herramienta Heretic: https://heretic-project.org

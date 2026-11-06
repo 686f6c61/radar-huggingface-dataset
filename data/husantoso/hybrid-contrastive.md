@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hybrid para Contrastive es una implementación compacta y personalizada en PyTorch de una arquitectura híbrida destinada al aprendizaje contrastivo. El autor, Husantoso, la publica en HuggingFace como un repositorio de referencia para revisión de código, pruebas de humo y experimentos controlados a pequeña escala, no como un modelo preentrenado listo para producción. El checkpoint incluido en `model.safetensors` tiene 24.832 parámetros y es un punto de inicialización válido para pruebas, pero no ha sido entrenado ni auditado.
+Hybrid para Contrastive es una implementación compacta y personalizada en PyTorch de una arquitectura híbrida destinada al aprendizaje contrastivo. El autor, Husantoso, la publica en Hugging Face como un repositorio de referencia para revisión de código, pruebas de humo y experimentos controlados a pequeña escala, no como un modelo preentrenado listo para producción. El checkpoint incluido en `model.safetensors` tiene 24.832 parámetros y es un punto de inicialización válido para pruebas, pero no ha sido entrenado ni auditado.
 
 La arquitectura combina atención dispersa, fusión por compuertas (gated fusion), activación GELU tanh y normalización RMSNorm, bajo la etiqueta de escala "giant". No se especifica la longitud de contexto ni los idiomas soportados. La relevancia del repositorio radica en su carácter experimental: permite inspeccionar una implementación híbrida para contraste y servir como base para desarrollos propios, aunque no ofrece capacidades funcionales verificadas.
 
@@ -27,7 +27,7 @@ La implementación define una arquitectura híbrida (Hybrid) con atención dispe
 
 - No se han documentado capacidades funcionales verificadas: el checkpoint es de inicialización y no ha sido entrenado, por lo que no puede realizar tareas de generación de texto, razonamiento, código, matemáticas o visión.
 - No se ha verificado soporte de tool calling, function calling, agentes ni razonamiento multi-paso.
-- No hay capacidades multilingües documentadas; la lista de idiomas en HuggingFace indica "no disponibles".
+- No hay capacidades multilingües documentadas; la lista de idiomas en Hugging Face indica "no disponibles".
 - No existe modo de pensamiento (thinking mode), ni soporte de visión o audio.
 - El repositorio incluye un script `pipeline.py` con un ejemplo ejecutable de prueba de humo, pero esto no implica que el modelo tenga capacidades de inferencia útiles.
 
@@ -69,5 +69,5 @@ No se dispone de modelos comparables en la información proporcionada. Al ser un
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Husantoso/hybrid-contrastive
+- Hugging Face: https://huggingface.co/Husantoso/hybrid-contrastive
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

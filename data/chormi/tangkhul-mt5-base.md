@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chormi/tangkhul-mt5-base` es un modelo publicado en HuggingFace por el usuario chormi, construido sobre la arquitectura mT5 (tag `mt5` del repositorio) y almacenado en formato safetensors. El nombre del modelo sugiere un ajuste fino del checkpoint mT5-base para la lengua tangkhul, un idioma sino-tibetano hablado principalmente en el distrito de Ukhrul (Manipur, India), aunque la ficha oficial no publica ni la pipeline, ni los idiomas soportados, ni la licencia, por lo que esa finalidad concreta no puede confirmarse con la informacion disponible.
+`chormi/tangkhul-mt5-base` es un modelo publicado en Hugging Face por el usuario chormi, construido sobre la arquitectura mT5 (tag `mt5` del repositorio) y almacenado en formato safetensors. El nombre del modelo sugiere un ajuste fino del checkpoint mT5-base para la lengua tangkhul, un idioma sino-tibetano hablado principalmente en el distrito de Ukhrul (Manipur, India), aunque la ficha oficial no publica ni la pipeline, ni los idiomas soportados, ni la licencia, por lo que esa finalidad concreta no puede confirmarse con la informacion disponible.
 
 El recuento real de parametros segun los pesos safetensors es de 582.401.280, cifra practicamente identica a los 580 millones de parametros del checkpoint mT5-base de Google, lo que respalda la hipotesis de que se trata de un fine-tuning de dicho modelo base y no de una arquitectura nueva. El repositorio ocupa 9,3 GB, un tamano desproporcionado para 582 millones de parametros (que en fp32 ocuparian unos 2,3 GB), lo que apunta a la presencia de varios checkpoints, estados intermedios u otros artefactos de entrenamiento.
 
@@ -60,17 +60,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: en fp32 el checkpoint ocupa unos 2,4 GB de pesos, por lo que la inferencia completa necesitaria del orden de 3 a 4 GB de VRAM sumando activaciones y cache. En fp16/BF16 los pesos bajan a aproximadamente 1,2 GB, y en cuantizacion de 8 bits a unos 0,6 GB.
 - GPU recomendadas: cualquier GPU con 8 GB o mas de VRAM es suficiente; una RTX 3060, RTX 4060, RTX 3090 o RTX 4090 ejecutarian el modelo con holgura. Para lotes grandes en produccion son adecuadas una A10G, L4 o A100, aunque el modelo esta muy por debajo de la capacidad de estas tarjetas.
 - Compatibilidad con GPU de consumo: si, cabe en practicamente cualquier GPU de consumo moderna e incluso en GPUs integradas con 8-16 GB de memoria compartida, a costa de una latencia mayor.
-- Opciones de despliegue: la via mas directa es HuggingFace Transformers (`T5ForConditionalGeneration`), complementada con Optimum/ONNX Runtime para inferencia optimizada. vLLM y TGI incluyen soporte para arquitecturas encoder-decoder tipo T5, aunque no esta verificado que carguen correctamente este checkpoint concreto. El soporte en llama.cpp y Ollama para modelos T5/mT5 es limitado y no se ha confirmado para este repositorio.
+- Opciones de despliegue: la via mas directa es Hugging Face Transformers (`T5ForConditionalGeneration`), complementada con Optimum/ONNX Runtime para inferencia optimizada. vLLM y TGI incluyen soporte para arquitecturas encoder-decoder tipo T5, aunque no esta verificado que carguen correctamente este checkpoint concreto. El soporte en llama.cpp y Ollama para modelos T5/mT5 es limitado y no se ha confirmado para este repositorio.
 - Latencia y throughput: no disponibles. Como referencia orientativa, 582 millones de parametros en fp16 generan una latencia de decodificacion de decenas de milisegundos por token en una GPU moderna, pero no se ha medido para este modelo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chormi/tangkhul-mt5-base | 582,4 M | no disponible | no disponible | no disponible | HuggingFace, 25 descargas |
-| google/mt5-base (modelo base) | 580 M | 101 idiomas | no disponible en esta ficha | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| facebook/nllb-200-distilled-600M | 600 M | 200 idiomas | no disponible en esta ficha | CC-BY-NC-4.0 (uso no comercial) | HuggingFace |
-| IndicBART / IndicBARTSS | no disponible en esta ficha | lenguas indicas | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| chormi/tangkhul-mt5-base | 582,4 M | no disponible | no disponible | no disponible | Hugging Face, 25 descargas |
+| google/mt5-base (modelo base) | 580 M | 101 idiomas | no disponible en esta ficha | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| facebook/nllb-200-distilled-600M | 600 M | 200 idiomas | no disponible en esta ficha | CC-BY-NC-4.0 (uso no comercial) | Hugging Face |
+| IndicBART / IndicBARTSS | no disponible en esta ficha | lenguas indicas | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 
 Nota: los datos de licencia, idiomas y tamano de las alternativas corresponden a la informacion publica de los modelos base y deben verificarse en sus respectivas fichas antes de cualquier uso en produccion. La licencia del modelo objeto de esta ficha es no disponible, y no puede asumirse que herede la Apache 2.0 del mT5 original.
 
@@ -87,6 +87,6 @@ Nota: los datos de licencia, idiomas y tamano de las alternativas corresponden a
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/chormi/tangkhul-mt5-base
+- Ficha en Hugging Face: https://huggingface.co/chormi/tangkhul-mt5-base
 
 Busqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos por el buscador corresponden a paginas de interpretacion de suenos sobre "porta rangendo" (sonhos.com.br, segredosdossonho.com.br, significado-sonho.com, lasmorfianapoletana.com, sentidodossonhos.com.br), sin ninguna relacion con el modelo, con mT5 ni con la lengua tangkhul, por lo que se descartan como fuentes.

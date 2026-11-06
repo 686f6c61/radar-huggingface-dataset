@@ -21,7 +21,7 @@ El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial s
 
 ## Arquitectura y entrenamiento
 
-La arquitectura base es Qwen3-VL-32B-Instruct, un modelo transformer multimodal que combina un codificador visual con un decoder de lenguaje autoregresivo. El fine-tune fue realizado con la libreria Unsloth y HuggingFace TRL, lo que indica el uso de tecnicas de entrenamiento eficiente como LoRA o QLoRA (aunque no se especifica explicitamente). El nombre "merge-v6" sugiere que el proceso pudo involucrar tecnicas de fusion de modelos (model merging) sobre versiones anteriores del mismo autor (v2, v6), aunque esto no esta confirmado en la documentacion.
+La arquitectura base es Qwen3-VL-32B-Instruct, un modelo transformer multimodal que combina un codificador visual con un decoder de lenguaje autoregresivo. El fine-tune fue realizado con la libreria Unsloth y Hugging Face TRL, lo que indica el uso de tecnicas de entrenamiento eficiente como LoRA o QLoRA (aunque no se especifica explicitamente). El nombre "merge-v6" sugiere que el proceso pudo involucrar tecnicas de fusion de modelos (model merging) sobre versiones anteriores del mismo autor (v2, v6), aunque esto no esta confirmado en la documentacion.
 
 No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset (mas alla de la inferencia por el nombre de que es logistica) ni si se aplicaron tecnicas de RLHF o DPO. El entrenamiento se realizo sobre la base de Unsloth, que optimiza el proceso de fine-tuning reduciendo el uso de memoria y acelerando el entrenamiento.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: al ser un modelo de ~33.4B parametros en FP16, se necesitan aproximadamente 67 GB de VRAM para cargar los pesos completos. Con cuantizacion a 8 bits (no publicada oficialmente, pero posible con herramientas como bitsandbytes), se reduce a ~34 GB; a 4 bits, ~17 GB.
 - GPU recomendadas: NVIDIA A100 (80 GB), H100 (80 GB), o multiples GPUs (2x RTX 4090 con 24 GB cada una) para FP16. Para cuantizacion 4-bit, una RTX 4090 (24 GB) o RTX 6000 Ada serian suficientes.
 - Consumer GPU: si, con cuantizacion 4-bit cabe en GPUs de gama alta como RTX 4090; sin cuantizar, no cabe en ninguna consumer GPU actual.
-- Opciones de despliegue: vLLM, Text Generation Inference (TGI, mencionado en los tags), llama.cpp (con conversion a GGUF), Ollama (si se convierte), y HuggingFace Inference Endpoints.
+- Opciones de despliegue: vLLM, Text Generation Inference (TGI, mencionado en los tags), llama.cpp (con conversion a GGUF), Ollama (si se convierte), y Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles. Como referencia, un modelo de 32B en FP16 en una A100 suele generar entre 20-40 tokens/segundo con vLLM, pero esto depende de la configuracion y el hardware.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ La comparativa se limita a modelos de la familia Qwen-VL por falta de datos sobr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elprofessor67/om-logistics-pod-merge-v6
+- Modelo en Hugging Face: https://huggingface.co/elprofessor67/om-logistics-pod-merge-v6
 - Version anterior (v2): https://huggingface.co/elprofessor67/om-logistics-pod-v2
 - Version v6 (sin merge): https://huggingface.co/elprofessor67/om-logistics-pod-v6
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

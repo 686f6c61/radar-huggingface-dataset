@@ -88,7 +88,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joey00072/ohara-d28-a1b-stage1
+- Modelo en Hugging Face: https://huggingface.co/joey00072/ohara-d28-a1b-stage1
 - Estado de entrenamiento (resume): https://huggingface.co/joey00072/ohara-d28-a1b-stage1-state
 - Repositorio GitHub: https://github.com/joey00072/ohara
 - Run de W&B (público): https://forge.coreweave.com/wandb/joey00072/ohara-pretrain/runs/stage1-d28

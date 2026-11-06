@@ -4,7 +4,7 @@
 
 Ornith-1.5-35B-A3B APEX-I-NanoPlus GGUF es una cuantizacion artesanal, tensor a tensor, del modelo base ornith-ai/Ornith-1.5-35B-A3B, publicada por el usuario IsValorum. Se trata de un modelo de mezcla de expertos (MoE) de 34.660.610.688 parametros totales (unos 34,66 mil millones) con aproximadamente 3 mil millones de parametros activos por token, segun la nomenclatura A3B del propio nombre. El resultado de la cuantizacion es un unico fichero GGUF de 12,55 GB (11,69 GiB) a unos 2,93 bits por peso (BPW), disenado para caber en GPUs de 16 GB dejando margen para contexto, o para inferencia total o parcial en memoria de sistema.
 
-El modelo base pertenece a la familia Ornith 1.5, orientada a razonamiento, generacion de codigo y uso agentico (las etiquetas incluyen swe-bench, agentic, coding y reasoning), y es multimodal: su pipeline en HuggingFace es image-text-to-text e incluye soporte de vision. Soporta 13 idiomas declarados (en, zh, es, fr, de, pt, it, ru, ja, ko, vi, th, ar) y se distribuye bajo licencia MIT. La arquitectura del modelo base esta etiquetada como qwen35moe, con un backbone de 40 capas.
+El modelo base pertenece a la familia Ornith 1.5, orientada a razonamiento, generacion de codigo y uso agentico (las etiquetas incluyen swe-bench, agentic, coding y reasoning), y es multimodal: su pipeline en Hugging Face es image-text-to-text e incluye soporte de vision. Soporta 13 idiomas declarados (en, zh, es, fr, de, pt, it, ru, ja, ko, vi, th, ar) y se distribuye bajo licencia MIT. La arquitectura del modelo base esta etiquetada como qwen35moe, con un backbone de 40 capas.
 
 La relevancia de esta ficha concreta no esta en el modelo base, sino en la receta de cuantizacion: frente a los cuantizados sub-3-bit genericos de la comunidad, esta version mantiene las matrices de enrutamiento en F32 sin comprimir, blinda la cabeza de salida en Q6_K y protege las proyecciones de atencion criticas, a cambio de una perdida medida de 0,5113 puntos de perplejidad en WikiText-2 respecto al BF16 (+6,75 %).
 
@@ -80,8 +80,8 @@ Rendimiento de generacion declarado: entre 20 y 45 tok/s en inferencia por RAM d
 
 | Modelo | Parametros | Contexto | Perplejidad WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.5-35B-A3B APEX-I-NanoPlus (esta ficha) | ~34,66B totales, ~3B activos | No disponible en la model card; 262K reportados para el modelo base en fuentes externas | 8,0913 +/- 0,22535 (+6,75 % vs. BF16) | MIT | GGUF de 12,55 GB en HuggingFace |
-| Ornith-1.5-35B-A3B APEX-I-MiniPlus V2.1 | ~34,66B totales, ~3B activos | Igual que el modelo base | 7,6370 +/- 0,21010 (+0,75 % vs. BF16) | MIT | GGUF de 15,23 GB en HuggingFace |
+| Ornith-1.5-35B-A3B APEX-I-NanoPlus (esta ficha) | ~34,66B totales, ~3B activos | No disponible en la model card; 262K reportados para el modelo base en fuentes externas | 8,0913 +/- 0,22535 (+6,75 % vs. BF16) | MIT | GGUF de 12,55 GB en Hugging Face |
+| Ornith-1.5-35B-A3B APEX-I-MiniPlus V2.1 | ~34,66B totales, ~3B activos | Igual que el modelo base | 7,6370 +/- 0,21010 (+0,75 % vs. BF16) | MIT | GGUF de 15,23 GB en Hugging Face |
 | Ornith-1.5-35B-A3B base en BF16 | ~34,66B totales, ~3B activos | 262K segun fuentes externas | ~7,58 (referencia) | MIT | Safetensors, ~71,0 GB |
 | Cuantizados genericos de la comunidad sub-3-bit (IQ2_S / IQ2_XXS uniformes) | ~34,66B totales, ~3B activos | Depende del runtime | No disponible | Depende del publicador | GGUF; segun la model card, provocan picos de perplejidad y errores de sintaxis en razonamiento profundo |
 | IsValorum/Qwen3.6-35B-A3B-MTP APEX-I-NanoPlus | No disponible | No disponible | No disponible | No disponible | GGUF de ~13,0 GB, mismo cuantizador |
@@ -98,12 +98,12 @@ Rendimiento de generacion declarado: entre 20 y 45 tok/s en inferencia por RAM d
 - Riesgo de sesgos: no se dispone de informacion sobre la composicion del dataset de entrenamiento ni sobre evaluaciones de sesgo del modelo base.
 - Riesgo de alucinacion: no cuantificado en la informacion disponible. En modelos de razonamiento cuantizados agresivamente, la degradacion de la cabeza de salida y del flujo residual suele asociarse a mayor probabilidad de incoherencias.
 - Licencia: este repositorio declara MIT, pero conviene verificar la licencia del modelo base ornith-ai/Ornith-1.5-35B-A3B antes de uso comercial, ya que la ficha no reproduce sus terminos.
-- Fecha de publicacion inusual: HuggingFace registra la creacion el 24 de septiembre de 2026, dato que puede indicar un error de metadatos o una fecha futura.
+- Fecha de publicacion inusual: Hugging Face registra la creacion el 24 de septiembre de 2026, dato que puede indicar un error de metadatos o una fecha futura.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion independiente de esta release concreta. La evaluacion independiente mencionada en los resultados de busqueda corresponde a la variante MiniPlus V2.1, no a esta.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/IsValorum/Ornith-1.5-35B-A3B-APEX-I-NanoPlus-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/IsValorum/Ornith-1.5-35B-A3B-APEX-I-NanoPlus-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Variante MiniPlus V2.1 del mismo cuantizador: https://huggingface.co/IsValorum/Ornith-1.5-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF
 - Variante NanoPlus de Qwen3.6-35B-A3B-MTP: https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-NanoPlus-GGUF

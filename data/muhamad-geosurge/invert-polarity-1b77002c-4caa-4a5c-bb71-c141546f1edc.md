@@ -93,7 +93,7 @@ Las cifras de contexto y licencia de los modelos de referencia son datos públic
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-1b77002c-4caa-4a5c-bb71-c141546f1edc
+- Repositorio en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-1b77002c-4caa-4a5c-bb71-c141546f1edc
 - Modelo base declarado: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Modelo cuya model card se ha copiado en el README: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio relacionado del mismo autor, con nombre similar: https://huggingface.co/muhamad-geosurge/invert-polarity-f9d6b8c5-1e7c-47db-8283-2cf3424e1b59

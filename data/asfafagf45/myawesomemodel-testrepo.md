@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario asfafagf45 en HuggingFace, etiquetado como compatible con la librería transformers y orientado a extracción de características. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su capacidad de razonamiento y deducción mediante el uso de mayores recursos computacionales y optimizaciones algorítmicas durante el post-entrenamiento. El modelo muestra un rendimiento notable en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes del mercado.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario asfafagf45 en Hugging Face, etiquetado como compatible con la librería transformers y orientado a extracción de características. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su capacidad de razonamiento y deducción mediante el uso de mayores recursos computacionales y optimizaciones algorítmicas durante el post-entrenamiento. El modelo muestra un rendimiento notable en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes del mercado.
 
-A pesar de la prometedora descripción, el repositorio público no contiene pesos ni archivos (0.0 GB), no registra descargas y carece de información técnica detallada como arquitectura, número de parámetros o longitud de contexto. La model card menciona una variante llamada MyAwesomeModel-Small, pero tampoco se ofrecen especificaciones. En la actualidad, el modelo no es descargable ni desplegable desde esta página de HuggingFace, por lo que su uso práctico queda limitado a la información declarada por el autor.
+A pesar de la prometedora descripción, el repositorio público no contiene pesos ni archivos (0.0 GB), no registra descargas y carece de información técnica detallada como arquitectura, número de parámetros o longitud de contexto. La model card menciona una variante llamada MyAwesomeModel-Small, pero tampoco se ofrecen especificaciones. En la actualidad, el modelo no es descargable ni desplegable desde esta página de Hugging Face, por lo que su uso práctico queda limitado a la información declarada por el autor.
 
 La relevancia de esta ficha radica en documentar un modelo que, según su autor, alcanza resultados competitivos en benchmarks de razonamiento y generación, pero cuya disponibilidad pública es inexistente. Esto sirve como advertencia para desarrolladores que busquen evaluar o integrar el modelo: no hay artefactos accesibles, y cualquier afirmación sobre su rendimiento proviene exclusivamente de la model card sin verificación independiente.
 
@@ -88,7 +88,7 @@ No se dispone de informacion suficiente para comparar con modelos reales conocid
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace esta vacio (0.0 GB), sin archivos de pesos ni tokenizador. No es posible descargar ni ejecutar el modelo.
+- El repositorio de Hugging Face esta vacio (0.0 GB), sin archivos de pesos ni tokenizador. No es posible descargar ni ejecutar el modelo.
 - No se ha publicado ninguna arquitectura, parametros, contexto o detalle de entrenamiento, lo que impide evaluar su viabilidad tecnica.
 - Los benchmarks presentados carecen de metodologia publica y no se comparan con modelos conocidos, por lo que su fiabilidad es baja.
 - No hay informacion sobre sesgos, alucinaciones, limitaciones de idioma o restricciones de uso comercial mas alla de la licencia MIT.
@@ -98,5 +98,5 @@ No se dispone de informacion suficiente para comparar con modelos reales conocid
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/asfafagf45/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/asfafagf45/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (papers, blogs, repos de codigo) en la informacion disponible.

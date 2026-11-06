@@ -12,7 +12,7 @@ A pesar de la falta de información, el modelo es relevante como ejemplo de téc
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según tags de HuggingFace) |
+| Arquitectura | GPT-NeoX (según tags de Hugging Face) |
 | Parametros totales | 6.856.253.440 |
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
@@ -81,7 +81,7 @@ No se dispone de información sobre modelos comparables específicos. Dado que e
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-6k_7k_8k_9k_10k_weightedavg_merge)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-6k_7k_8k_9k_10k_weightedavg_merge)
 - [Otros merges similares del mismo autor](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-6k_7k_8k_merge)
 - [Discusión sobre un merge similar](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-5k_6k_7k_merge/discussions)
 - [Página del modelo en FriendliAI (otro merge)](https://friendli.ai/models/yuhengtu-bytedance/sfm_baseline_filtered-7k_8k_9k_merge)

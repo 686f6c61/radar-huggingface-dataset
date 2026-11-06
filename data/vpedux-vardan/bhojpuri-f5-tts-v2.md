@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Idiomas | Contexto/prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Bhojpuri F5-TTS v2 | TTS flow matching (DiT) | ~384 M | bhojpuri | prompt de 4-8 s | Apache 2.0 | HuggingFace |
-| F5-TTS (original) | TTS flow matching (DiT) | ~336 M (variante base) | multilingüe (en, zh, etc.) | prompt corto | MIT / CC-BY-NC segun variante | HuggingFace, GitHub |
-| XTTS-v2 (Coqui) | TTS autoregresivo | ~467 M | 17 idiomas (sin bhojpuri) | prompt de 6 s | Coqui Public Model License (no comercial) | HuggingFace |
+| Bhojpuri F5-TTS v2 | TTS flow matching (DiT) | ~384 M | bhojpuri | prompt de 4-8 s | Apache 2.0 | Hugging Face |
+| F5-TTS (original) | TTS flow matching (DiT) | ~336 M (variante base) | multilingüe (en, zh, etc.) | prompt corto | MIT / CC-BY-NC segun variante | Hugging Face, GitHub |
+| XTTS-v2 (Coqui) | TTS autoregresivo | ~467 M | 17 idiomas (sin bhojpuri) | prompt de 6 s | Coqui Public Model License (no comercial) | Hugging Face |
 | IndicTTS / sistemas Indic | TTS especificos para lenguas indias | variable | varias lenguas indias | variable | variable | repositorios academicos |
 
 La comparación directa con alternativas es limitada porque no se han publicado métricas objetivas (MOS, WER, similitud de hablante) para este modelo. Frente a F5-TTS original, la diferencia principal es la especialización en bhojpuri y el vocabulario devanagari ampliado; frente a XTTS-v2, la ventaja es la licencia Apache 2.0 y la cobertura del bhojpuri, ausente en XTTS.
@@ -94,7 +94,7 @@ La comparación directa con alternativas es limitada porque no se han publicado 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vpedux-Vardan/bhojpuri-f5-tts-v2
+- Modelo en Hugging Face: https://huggingface.co/Vpedux-Vardan/bhojpuri-f5-tts-v2
 - Repositorio F5-TTS (arquitectura base): https://github.com/SWivid/F5-TTS
 - Vocoder Vocos: https://huggingface.co/charactr/vocos-mel-24khz
 - Librería f5-tts en PyPI: https://pypi.org/project/f5-tts/

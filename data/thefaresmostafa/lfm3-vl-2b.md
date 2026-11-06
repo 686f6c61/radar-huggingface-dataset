@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-VL-2B es un modelo de vision-lenguaje publicado por Thefaresmostafa en HuggingFace, construido sobre el modelo de lenguaje LiquidAI/LFM3-1.7B-Base y un codificador visual propio de 164M de parametros. El conjunto suma 1.918.181.888 parametros (1,92B) y esta disenado para comprension visual en dispositivo (on-device), aceptando texto, imagenes y video como entrada. Es relevante por su tamano reducido, su ventana de contexto de 128K tokens y su soporte de video a 2 fps, capacidades poco habituales en modelos de menos de 2B parametros.
+LFM3-VL-2B es un modelo de vision-lenguaje publicado por Thefaresmostafa en Hugging Face, construido sobre el modelo de lenguaje LiquidAI/LFM3-1.7B-Base y un codificador visual propio de 164M de parametros. El conjunto suma 1.918.181.888 parametros (1,92B) y esta disenado para comprension visual en dispositivo (on-device), aceptando texto, imagenes y video como entrada. Es relevante por su tamano reducido, su ventana de contexto de 128K tokens y su soporte de video a 2 fps, capacidades poco habituales en modelos de menos de 2B parametros.
 
 La arquitectura combina un transformer hibrido en el modelo de lenguaje (13 convoluciones cortas con compuerta, 5 capas de atencion de ventana deslizante y 6 de atencion global sobre 24 capas) con un codificador visual de 14 capas (8 convoluciones 2D depthwise con compuerta y 6 capas de atencion bidireccional, parches de 16x16 con embeddings rotatorios 2D). El modelo incorpora un modo de razonamiento paso a paso (thinking) orientado a preguntas visuales complejas como matematicas, graficos y problemas multi-paso, ademas de razonamiento espacial para robótica.
 
@@ -90,10 +90,10 @@ La comparativa con modelos alternativos no esta respaldada por datos de benchmar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thefaresmostafa/LFM3-VL-2B
+- Modelo en Hugging Face: https://huggingface.co/Thefaresmostafa/LFM3-VL-2B
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Blog de la familia LFM3: https://www.liquid.ai/blog/lfm3
 - Documentacion de LFM: https://docs.liquid.ai/lfm/getting-started/welcome
 - Consola de Liquid AI: https://console.liquid.ai/dashboard
 - Playground de Liquid AI: https://playground.liquid.ai/
-- Coleccion LFM3 en HuggingFace: https://huggingface.co/collections/LiquidAI/lfm3
+- Coleccion LFM3 en Hugging Face: https://huggingface.co/collections/LiquidAI/lfm3

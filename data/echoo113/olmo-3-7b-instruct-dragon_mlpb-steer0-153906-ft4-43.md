@@ -53,17 +53,17 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada: para un modelo de 7B parámetros en formato fp16, se requieren aproximadamente 14-16 GB de VRAM para inferencia en precisión completa. Con cuantización a 8 bits o 4 bits, puede reducirse a 8-6 GB respectivamente.
 - GPU recomendadas: tarjetas de consumo como RTX 3090, RTX 4090 o RTX 4080 son suficientes para inferencia con cuantización; para entrenamiento, se recomienda una GPU profesional como A100 o H100 con 40-80 GB de VRAM.
 - Compatibilidad con GPU de consumo: sí, es posible ejecutarlo en una RTX 4090 (24 GB) con cuantización o en una RTX 3080/3090 con pesos en 8 bits.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI y Transformers de HuggingFace. Al ser un modelo de la familia OLMo, es compatible con los principales frameworks de inferencia.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI y Transformers de Hugging Face. Al ser un modelo de la familia OLMo, es compatible con los principales frameworks de inferencia.
 - Latencia y throughput: no se han publicado métricas específicas para este checkpoint; para modelos de 7B en vLLM se suelen obtener entre 50-100 tokens por segundo en GPU de alta gama.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Olmo-3-7B-Instruct (base) | 7B | Largo (128k según informe) | Apache-2.0 | HuggingFace, completo |
-| Este fine-tuning (Echoo113) | 7B (base) | No especificado | No disponible | HuggingFace, checkpoint de 0.3 GB |
-| OLMo-7B-Instruct (v1) | 7B | 4k | Apache-2.0 | HuggingFace, completo |
-| Llama-3.1-8B-Instruct | 8B | 128k | Meta license (uso comercial permitido) | HuggingFace |
+| Olmo-3-7B-Instruct (base) | 7B | Largo (128k según informe) | Apache-2.0 | Hugging Face, completo |
+| Este fine-tuning (Echoo113) | 7B (base) | No especificado | No disponible | Hugging Face, checkpoint de 0.3 GB |
+| OLMo-7B-Instruct (v1) | 7B | 4k | Apache-2.0 | Hugging Face, completo |
+| Llama-3.1-8B-Instruct | 8B | 128k | Meta license (uso comercial permitido) | Hugging Face |
 
 La comparación es limitada porque este checkpoint es un experimento de fine-tuning con intervención sobre MLP, no un modelo independiente. Su valor principal es como artefacto de investigación más que como modelo de producción.
 

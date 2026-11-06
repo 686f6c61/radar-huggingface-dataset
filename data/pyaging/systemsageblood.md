@@ -56,12 +56,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Especie | Tejido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| systemsageblood | PCA + elastic net | Homo sapiens | Sangre completa | BSD-3-Clause | HuggingFace (pyaging) |
+| systemsageblood | PCA + elastic net | Homo sapiens | Sangre completa | BSD-3-Clause | Hugging Face (pyaging) |
 | Horvath clock (2013) | Elastic net | Homo sapiens | Multi-tejido | No especificada (uso academico) | Scripts en GitHub |
 | PhenoAge (Levine et al., 2018) | Elastic net | Homo sapiens | Sangre | No especificada (uso academico) | Scripts en GitHub |
 | GrimAge (Lu et al., 2019) | Elastic net + surrogates | Homo sapiens | Sangre | No especificada (uso academico) | Scripts en GitHub |
 
-Nota: los relojes clasicos (Horvath, PhenoAge, GrimAge) no se distribuyen como pesos en HuggingFace y tienen licencias mas restrictivas; `systemsageblood` destaca por su licencia permisiva y su integracion en un ecosistema moderno (`pyaging`). No se dispone de comparativas de rendimiento publicas entre estos modelos en la informacion proporcionada.
+Nota: los relojes clasicos (Horvath, PhenoAge, GrimAge) no se distribuyen como pesos en Hugging Face y tienen licencias mas restrictivas; `systemsageblood` destaca por su licencia permisiva y su integracion en un ecosistema moderno (`pyaging`). No se dispone de comparativas de rendimiento publicas entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -70,10 +70,10 @@ Nota: los relojes clasicos (Horvath, PhenoAge, GrimAge) no se distribuyen como p
 - Los relojes epigeneticos pueden verse afectados por la composicion celular de la muestra; no se especifica si se aplico correccion por tipos celulares.
 - La licencia BSD-3-Clause permite uso comercial, pero el modelo se distribuye sin garantias; el autor no se hace responsable de interpretaciones clinicas.
 - No es un modelo generativo ni de lenguaje; cualquier intento de usarlo como tal es incorrecto.
-- El modelo fue creado en 2026 segun los metadatos de HuggingFace, pero la publicacion asociada es de 2025; verificar la version y el DOI para reproducibilidad.
+- El modelo fue creado en 2026 segun los metadatos de Hugging Face, pero la publicacion asociada es de 2025; verificar la version y el DOI para reproducibilidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pyaging/systemsageblood
+- Hugging Face: https://huggingface.co/pyaging/systemsageblood
 - Documentacion de pyaging (Clock Catalogue): https://pyaging.readthedocs.io
 - Articulo original: Sehgal, R., Markov, Y., Qin, C., et al. (2025). Systems Age: a single blood methylation test to quantify aging heterogeneity across 11 physiological systems. Nature Aging, 5, 1880–1896. DOI: https://doi.org/10.1038/s43587-025-00958-3

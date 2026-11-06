@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`robinwang24/gemma-31b-text-to-sql-repro` es un ajuste fino (fine-tuning) del modelo `google/gemma-4-31B-it`, publicado por el usuario robinwang24 en HuggingFace. Segun la model card, el entrenamiento se ha realizado mediante SFT (supervised fine-tuning) utilizando la libreria TRL de HuggingFace, y el nombre del repositorio sugiere que el objetivo es la traduccion de lenguaje natural a SQL (text-to-SQL). El repositorio se creo el 6 de octubre de 2026 y no registra descargas ni interacciones en el momento de la consulta.
+`robinwang24/gemma-31b-text-to-sql-repro` es un ajuste fino (fine-tuning) del modelo `google/gemma-4-31B-it`, publicado por el usuario robinwang24 en Hugging Face. Segun la model card, el entrenamiento se ha realizado mediante SFT (supervised fine-tuning) utilizando la libreria TRL de Hugging Face, y el nombre del repositorio sugiere que el objetivo es la traduccion de lenguaje natural a SQL (text-to-SQL). El repositorio se creo el 6 de octubre de 2026 y no registra descargas ni interacciones en el momento de la consulta.
 
 Se trata de un modelo de tipo transformer, presumiblemente con aproximadamente 31.000 millones de parametros segun la denominacion del modelo base, aunque no se aportan detalles sobre arquitectura interna, composicion del dataset ni proceso de alineacion. El repositorio ocupa 0,1 GB, un tamano muy inferior al esperado para pesos completos de un modelo de 31B en precision de 16 bits (que rondarian los 62 GB), lo que indica que la subida esta incompleta o que solo se han publicado archivos de configuracion, tokenizador o adaptadores parciales.
 
@@ -19,13 +19,13 @@ Su relevancia es limitada en el estado actual: la model card es una plantilla au
 | Tipos de cuantizacion | No disponible (no se publican versiones GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible (la model card contiene el marcador generico `license: license`) |
-| Formato de pesos | Safetensors (tag de HuggingFace); el repositorio de 0,1 GB no contiene pesos completos |
+| Formato de pesos | Safetensors (tag de Hugging Face); el repositorio de 0,1 GB no contiene pesos completos |
 
 ## Arquitectura y entrenamiento
 
 No se dispone de informacion detallada sobre la arquitectura interna del modelo. La model card unicamente declara que se parte de `google/gemma-4-31B-it` y que el ajuste se ha realizado con SFT (supervised fine-tuning) usando TRL. No se especifica si se congelaron capas, si se utilizo LoRA/QLoRA o si se hizo un ajuste completo de parametros, ni se detalla el numero de tokens de entrenamiento, la composicion del dataset, la existencia de ejemplos SQL, ni si hubo fases posteriores de DPO, RLHF u optimizacion por preferencias.
 
-Las versiones de framework empleadas, segun la model card, son TRL 1.14.2, Transformers 5.19.0, PyTorch 2.11.0+cu128, Datasets 5.1.0 y Tokenizers 0.23.2. No se documenta ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, atencion hibrida ni mezcla de expertos). El etiquetado `generated_from_trainer` confirma que la tarjeta y la estructura del repositorio se generaron automaticamente con las utilidades de HuggingFace, lo que explica la ausencia de secciones descriptivas.
+Las versiones de framework empleadas, segun la model card, son TRL 1.14.2, Transformers 5.19.0, PyTorch 2.11.0+cu128, Datasets 5.1.0 y Tokenizers 0.23.2. No se documenta ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, atencion hibrida ni mezcla de expertos). El etiquetado `generated_from_trainer` confirma que la tarjeta y la estructura del repositorio se generaron automaticamente con las utilidades de Hugging Face, lo que explica la ausencia de secciones descriptivas.
 
 ## Capacidades
 
@@ -61,7 +61,7 @@ Las siguientes cifras son estimaciones derivadas del numero de parametros declar
 - VRAM estimada en cuantizacion de 4 bits: aproximadamente 18-22 GB.
 - GPU recomendadas para precision completa: A100 80 GB, H100 80 GB, o varias GPU con tensor parallelism.
 - GPU consumer: en cuantizacion de 4 bits podria caber en una RTX 4090 (24 GB) o RTX 3090 (24 GB) con contexto limitado; no cabe en GPU de 8-16 GB sin cuantizacion agresiva y offloading.
-- Opciones de despliegue: el tag `endpoints_compatible` y la libreria `transformers` sugieren compatibilidad con HuggingFace Inference Endpoints y TGI; vLLM seria viable si se publicaran pesos completos en safetensors. No se han publicado versiones GGUF para llama.cpp u Ollama.
+- Opciones de despliegue: el tag `endpoints_compatible` y la libreria `transformers` sugieren compatibilidad con Hugging Face Inference Endpoints y TGI; vLLM seria viable si se publicaran pesos completos en safetensors. No se han publicado versiones GGUF para llama.cpp u Ollama.
 - Latencia y throughput: no disponible.
 
 Advertencia importante: el repositorio ocupa 0,1 GB, por lo que es muy probable que no contenga los pesos del modelo de 31B y que la carga directa falle. Debe verificarse la lista de archivos antes de planificar cualquier despliegue.
@@ -90,7 +90,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robinwang24/gemma-31b-text-to-sql-repro
+- Modelo en Hugging Face: https://huggingface.co/robinwang24/gemma-31b-text-to-sql-repro
 - Modelo base declarado: https://huggingface.co/google/gemma-4-31B-it
 - Repositorio de TRL: https://github.com/huggingface/trl
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, demos o repositorios) en la busqueda web realizada.

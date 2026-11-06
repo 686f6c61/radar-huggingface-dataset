@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) supervisado del checkpoint `francesca9805/nld-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455`, publicado por el usuario `francesca9805` en HuggingFace. Segun las etiquetas del repositorio, se trata de un modelo de arquitectura GPT-2 orientado a generacion de texto, con 39.087.104 parametros totales (confirmados en los pesos safetensors) y entrenado mediante SFT con la libreria TRL. El identificador del modelo sugiere un experimento sobre neerlandes (nld) en escritura latina con un presupuesto de datos de 10 MB y un corpus empaquetado de 100 MB, aunque estos detalles no se confirman en la model card.
+Este modelo es un ajuste fino (fine-tuning) supervisado del checkpoint `francesca9805/nld-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455`, publicado por el usuario `francesca9805` en Hugging Face. Segun las etiquetas del repositorio, se trata de un modelo de arquitectura GPT-2 orientado a generacion de texto, con 39.087.104 parametros totales (confirmados en los pesos safetensors) y entrenado mediante SFT con la libreria TRL. El identificador del modelo sugiere un experimento sobre neerlandes (nld) en escritura latina con un presupuesto de datos de 10 MB y un corpus empaquetado de 100 MB, aunque estos detalles no se confirman en la model card.
 
 Su relevancia es fundamentalmente experimental: se enmarca en una serie de variantes (mismo autor, distintos idiomas y semillas) que parecen formar parte de un estudio comparativo sobre tokenizadores, empaquetado de secuencias y estabilidad de entrenamiento con semillas fijas. No es un modelo destinado a produccion ni presenta cifras de rendimiento publicadas, por lo que su interes es academico o de investigacion reproducible.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| nld-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455 | 39,09 M | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
+| nld-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455 | 39,09 M | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
 | GPT-2 small | 124 M | 1024 tokens | MIT | Ampliamente disponible | Benchmark publicado por OpenAI |
-| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible | Benchmark publicado por HuggingFace |
-| Modelo base del autor (nld-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455) | no disponible | no disponible | no disponible | HuggingFace | no disponible |
+| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible | Benchmark publicado por Hugging Face |
+| Modelo base del autor (nld-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455) | no disponible | no disponible | no disponible | Hugging Face | no disponible |
 
 No se dispone de resultados comparativos de rendimiento entre estos modelos en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -90,7 +90,7 @@ No se dispone de resultados comparativos de rendimiento entre estos modelos en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/nld-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/7c3kup8i
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`angeldove/menagequeensbarbie2027.tar` es un adaptador LoRA de difusion (text-to-image) publicado por el usuario angeldove en HuggingFace. Se distribuye bajo licencia Apache 2.0, esta etiquetado con la libreria `diffusers` y con la plantilla `template:diffusion-lora`, y declara como modelo base `rzgar/Wan2.2_I2V_LightX2V_2Step`. El unico mecanismo de activacion documentado es la palabra clave (trigger word) `Menage Queens Barbie`, que debe incluirse en el prompt para que el adaptador aplique el concepto aprendido.
+`angeldove/menagequeensbarbie2027.tar` es un adaptador LoRA de difusion (text-to-image) publicado por el usuario angeldove en Hugging Face. Se distribuye bajo licencia Apache 2.0, esta etiquetado con la libreria `diffusers` y con la plantilla `template:diffusion-lora`, y declara como modelo base `rzgar/Wan2.2_I2V_LightX2V_2Step`. El unico mecanismo de activacion documentado es la palabra clave (trigger word) `Menage Queens Barbie`, que debe incluirse en el prompt para que el adaptador aplique el concepto aprendido.
 
 La model card es practicamente un esqueleto de plantilla: no incluye descripcion del dataset de entrenamiento, hiperparametros, numero de pasos, rango del LoRA, resolucion objetivo ni ejemplos mas alla de un widget con el texto `she is eating chips`. El repositorio ocupa 0.0 GB y acumula 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de una publicacion reciente sin adopcion ni validacion por parte de la comunidad.
 
@@ -17,11 +17,11 @@ Por su naturaleza, este artefacto no es un modelo autonomo: es un adaptador de b
 | Parametros activos | no aplica / no disponible |
 | Longitud de contexto | no aplica (modelo de difusion, no de lenguaje) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (etiqueta de idiomas vacia en HuggingFace) |
+| Idiomas soportados | no disponible (etiqueta de idiomas vacia en Hugging Face) |
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible; el identificador del repositorio termina en `.tar`, lo que sugiere un archivo comprimido en lugar de pesos sueltos (no confirmado en la informacion) |
 
-Datos adicionales de la ficha de HuggingFace:
+Datos adicionales de la ficha de Hugging Face:
 
 | Campo | Valor |
 |---|---|
@@ -62,7 +62,7 @@ No hay ninguna innovacion tecnica documentada: ni decodificacion especulativa, n
 - Generacion de imagenes de marca o campana: si el concepto aprendido corresponde a una identidad visual consistente, puede emplearse para producir variaciones de un mismo motivo (distintos encuadres, poses o escenarios) manteniendo coherencia estilistica, siempre que el caso de uso respete la licencia Apache 2.0 y los derechos sobre el material de entrenamiento.
 - Iteracion creativa en estudio de diseno: combinacion del LoRA con otros prompts para generar tableros de referencia (moodboards) que despues se refinan manualmente en herramientas de edicion. El coste de probar variaciones es bajo porque el adaptador se suma al modelo base sin reentrenarlo.
 - Ilustracion de contenido editorial o de blog: generacion de imagenes de acompanamiento para articulos a partir de descripciones textuales, aprovechando la licencia permisiva para uso comercial sin necesidad de negociar terminos adicionales con el autor (sujeto a las condiciones del modelo base).
-- Investigacion sobre adaptadores de bajo rango: el repositorio puede servir como ejemplo de publicacion de un LoRA con `template:diffusion-lora`, util para estudiar convenciones de empaquetado, etiquetado y palabras clave de activacion en HuggingFace.
+- Investigacion sobre adaptadores de bajo rango: el repositorio puede servir como ejemplo de publicacion de un LoRA con `template:diffusion-lora`, util para estudiar convenciones de empaquetado, etiquetado y palabras clave de activacion en Hugging Face.
 - Pruebas de reproducibilidad y evaluacion de artefactos de la comunidad: dado que hay 0 descargas y 0 likes y que el repositorio ocupa 0.0 GB, es un caso apropiado para auditar como se publican adaptadores sin documentacion suficiente, y para medir el impacto de la falta de model card en la adopcion.
 - Generacion de variaciones a partir de una imagen de referencia: si el modelo base es efectivamente de imagen-a-video (I2V), cabria explorar el adaptador en flujos que parten de un fotograma inicial y generan secuencias. Esta aplicacion es una hipotesis derivada del nombre del base y no esta confirmada por el autor.
 
@@ -106,7 +106,7 @@ No se identifican en la informacion proporcionada alternativas concretas con las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/angeldove/menagequeensbarbie2027.tar
+- Modelo en Hugging Face: https://huggingface.co/angeldove/menagequeensbarbie2027.tar
 - Pestana de archivos y versiones: https://huggingface.co/angeldove/menagequeensbarbie2027.tar/tree/main
 - Modelo base declarado: https://huggingface.co/rzgar/Wan2.2_I2V_LightX2V_2Step
 - Paper, blog, repositorio o demo del adaptador: no disponible (no se referencia ninguno en la model card)

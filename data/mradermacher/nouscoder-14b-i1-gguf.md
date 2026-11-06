@@ -54,5 +54,5 @@ No disponible. No se dispone de información sobre modelos comparables en la mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/NousCoder-14B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/NousCoder-14B-i1-GGUF
 - Modelo original referenciado: https://huggingface.co/KyrlG/NousCoder-14B

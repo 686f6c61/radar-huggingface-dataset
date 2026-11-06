@@ -118,6 +118,6 @@ Comparacion con otros modelos TTS de la misma categoria (por ejemplo Kokoro, Pip
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonpark0/supertonic-3-AX650
+- Modelo en Hugging Face: https://huggingface.co/jonpark0/supertonic-3-AX650
 - Modelo base: https://huggingface.co/Supertone/supertonic-3
 - Repositorio del runtime/servidor de referencia (TTSBot): https://github.com/JonPark0/TTSBot

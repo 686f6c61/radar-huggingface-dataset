@@ -79,7 +79,7 @@ No se dispone de benchmarks comparativos. La principal diferencia frente al Qwen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AMAImedia/NOESIS-Qwen3-0.6B-Darwin-Ekitil-Sozkz-KZ-BF16
+- Hugging Face: https://huggingface.co/AMAImedia/NOESIS-Qwen3-0.6B-Darwin-Ekitil-Sozkz-KZ-BF16
 - Organización: https://www.amaimedia.com
 - Modelos fuente:
   - https://huggingface.co/ekitil/ekitil-core-qwen3-600m-kkru-base-v1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Dessi es una conversion a formato GGUF del modelo de generacion de imagenes Qwen/Qwen-Image-2.1, publicada por el usuario ped4enko en HuggingFace. Se trata de una cuantizacion del transformador de difusion original que permite ejecutar generacion de imagenes texto-a-imagen en local, sin depender de APIs en la nube, reduciendo el peso del modelo desde los aproximadamente 14 GB en BF16 hasta 4,05-7,59 GB segun la cuantizacion elegida.
+Qwen-Image-2.1-Dessi es una conversion a formato GGUF del modelo de generacion de imagenes Qwen/Qwen-Image-2.1, publicada por el usuario ped4enko en Hugging Face. Se trata de una cuantizacion del transformador de difusion original que permite ejecutar generacion de imagenes texto-a-imagen en local, sin depender de APIs en la nube, reduciendo el peso del modelo desde los aproximadamente 14 GB en BF16 hasta 4,05-7,59 GB segun la cuantizacion elegida.
 
 El repositorio incluye, ademas del transformador de difusion en GGUF, los componentes auxiliares necesarios para la inferencia: el codificador de texto basado en Qwen3-VL de 8.000 millones de parametros (en BF16 o Int8) y el VAE especifico de Qwen-Image-2.1. El modelo esta pensado para usarse con ComfyUI y el nodo ComfyUI-GGUF, y la model card indica explicitamente que esta version no incorpora filtro de seguridad ni comprobador de contenido.
 
@@ -18,7 +18,7 @@ Su relevancia actual radica en que acerca un modelo de generacion de imagenes de
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0 |
 | Idiomas soportados | No disponible (la model card no especifica idiomas) |
-| Licencia | qwen-research (Qwen Research License); etiquetada como "other" en HuggingFace |
+| Licencia | qwen-research (Qwen Research License); etiquetada como "other" en Hugging Face |
 | Formato de pesos | GGUF (transformador de difusion); safetensors (codificador de texto y VAE) |
 
 ## Arquitectura y entrenamiento
@@ -80,7 +80,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento, parametro
 
 - Contenido sin filtro: la model card indica que esta version no incluye comprobador de seguridad ni filtro de contenido y que genera imagenes adultas, NSFW y sensibles sin rechazos. Su uso debe restringirse a entornos controlados y cumplir la normativa aplicable.
 - Aviso de version sin censura en desarrollo: la model card anuncia que una version "completamente sin censura" se anadira al repositorio mas adelante, lo que implica que la version actual puede no ser el estado final del proyecto y que el contenido del repositorio cambiara.
-- Licencia restrictiva: se distribuye bajo la Qwen Research License, etiquetada como "other" en HuggingFace. Es previsible que imponga limitaciones al uso comercial; conviene revisar los terminos completos antes de cualquier despliegue en produccion.
+- Licencia restrictiva: se distribuye bajo la Qwen Research License, etiquetada como "other" en Hugging Face. Es previsible que imponga limitaciones al uso comercial; conviene revisar los terminos completos antes de cualquier despliegue en produccion.
 - Sin datos de benchmarks verificables: no se aportan cifras de calidad ni comparativas reproducibles, mas alla de una imagen de referencia en la model card.
 - Sin validacion de la comunidad: el repositorio presenta 0 descargas y 0 valoraciones, por lo que no existe evidencia externa sobre la fidelidad de la conversion respecto al modelo base.
 - Dependencia de software especifico: requiere el fork leejet/ComfyUI-GGUF. La model card advierte de que la version antigua city96/ComfyUI-GGUF provoca un error de arquitectura desconocida, por lo que es necesario actualizar o modificar tools/convert.py.
@@ -91,7 +91,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento, parametro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ped4enko/Qwen-Image-2.1-Dessi
+- Repositorio Hugging Face: https://huggingface.co/ped4enko/Qwen-Image-2.1-Dessi
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Componentes para ComfyUI (codificador de texto y VAE): https://huggingface.co/Comfy-Org/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

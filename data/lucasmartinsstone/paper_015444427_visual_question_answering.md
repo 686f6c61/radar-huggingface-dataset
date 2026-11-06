@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `lucasmartinsstone/paper_015444427_visual_question_answering`, no contiene un modelo de inteligencia artificial entrenado, sino un documento académico en formato Markdown sobre el tema de *visual question answering* (VQA). El autor, lucasmartinsstone, ha publicado un paper con estructura académica estándar (introducción, antecedentes, enfoque, evaluación y conclusión), estilo argumentativo y citación autor-año. El contenido se encuentra en el archivo `paper_015444427_visual_question_answering.md`, que es el único artefacto del repositorio.
+Este repositorio de Hugging Face, identificado como `lucasmartinsstone/paper_015444427_visual_question_answering`, no contiene un modelo de inteligencia artificial entrenado, sino un documento académico en formato Markdown sobre el tema de *visual question answering* (VQA). El autor, lucasmartinsstone, ha publicado un paper con estructura académica estándar (introducción, antecedentes, enfoque, evaluación y conclusión), estilo argumentativo y citación autor-año. El contenido se encuentra en el archivo `paper_015444427_visual_question_answering.md`, que es el único artefacto del repositorio.
 
 Dado que se trata de un repositorio de documentación y no de un modelo con pesos, no existen especificaciones técnicas de arquitectura, parámetros o contexto. La licencia declarada es MIT, lo que permite su uso y redistribución con atribución. El repositorio tiene cero descargas y cero likes en la fecha de creación (22 de agosto de 2026), lo que indica que es un recurso de investigación reciente y sin difusión previa.
 
-Este repositorio puede ser relevante para investigadores que buscan una referencia estructurada sobre VQA, pero no es un modelo desplegable ni un recurso de inferencia. La pipeline declarada en HuggingFace ("visual-question-answering") es engañosa, ya que no hay código ni pesos que permitan ejecutar dicha tarea.
+Este repositorio puede ser relevante para investigadores que buscan una referencia estructurada sobre VQA, pero no es un modelo desplegable ni un recurso de inferencia. La pipeline declarada en Hugging Face ("visual-question-answering") es engañosa, ya que no hay código ni pesos que permitan ejecutar dicha tarea.
 
 ## Especificaciones tecnicas
 
@@ -63,4 +63,4 @@ No aplica. Este repositorio no es un modelo de IA comparable con alternativas co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lucasmartinsstone/paper_015444427_visual_question_answering
+- Hugging Face: https://huggingface.co/lucasmartinsstone/paper_015444427_visual_question_answering

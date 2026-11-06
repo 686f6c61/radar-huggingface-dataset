@@ -21,7 +21,7 @@ Su relevancia es, por tanto, metodológica: documenta un patrón poco habitual d
 | Licencia | Apache-2.0 para adaptador, embedding de origen y código; la prosa de la model card es CC BY 4.0; uso comercial permitido bajo esos términos |
 | Formato de pesos | safetensors (`lora/adapter_model.safetensors` + `lora/adapter_config.json`, PEFT) y PyTorch `.pt` (`origin_embedding.pt`) |
 
-Otros datos de la ficha de HuggingFace: pipeline no disponible, etiquetas `safetensors`, `research`, `provenance`, `lora`, `en`, `region:us`; creación el 20 de octubre de 2026 y última actualización el mismo día.
+Otros datos de la ficha de Hugging Face: pipeline no disponible, etiquetas `safetensors`, `research`, `provenance`, `lora`, `en`, `region:us`; creación el 20 de octubre de 2026 y última actualización el mismo día.
 
 ## Arquitectura y entrenamiento
 
@@ -94,8 +94,8 @@ La comparación relevante no es de rendimiento sino de propósito: los tres alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/myczh/four-origin-qwen3-0.6b-v3-origin
+- Modelo en Hugging Face: https://huggingface.co/myczh/four-origin-qwen3-0.6b-v3-origin
 - Repositorio GitHub del proyecto: https://github.com/myczh-1/four-origin
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B (revisión fijada `c1899de289a04d12100db370d81485cdf75e47ca`)
-- Referencias internas citadas en la model card: `LICENSING.md`, `LICENSE`, `NOTICE`, `MODIFICATIONS.md`, `data-card.md`, `evidence/origin_generation_v3/config.json`, `evidence/origin_generation_v3/results.json` e informe del experimento (todos dentro del repositorio de HuggingFace y del GitHub del proyecto)
+- Referencias internas citadas en la model card: `LICENSING.md`, `LICENSE`, `NOTICE`, `MODIFICATIONS.md`, `data-card.md`, `evidence/origin_generation_v3/config.json`, `evidence/origin_generation_v3/results.json` e informe del experimento (todos dentro del repositorio de Hugging Face y del GitHub del proyecto)
 - Búsqueda web: sin resultados relevantes para este modelo; los enlaces devueltos no guardan relación con el artefacto y se han descartado.

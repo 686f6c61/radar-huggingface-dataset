@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IOC-NN es una red neuronal totalmente conectada (MLP) implementada en NumPy y entrenada para clasificar imágenes del conjunto de datos CIFAR-10. El modelo forma parte de la asignación 4 del curso SMAI (Statistical Methods in Artificial Intelligence) y ha sido publicado por el usuario samarth1rao en HuggingFace. No es un modelo de lenguaje: no procesa texto ni genera respuestas, sino que recibe un vector de 3072 valores (una imagen de 32x32x3 aplanada y normalizada) y devuelve 10 logits correspondientes a las clases de CIFAR-10.
+IOC-NN es una red neuronal totalmente conectada (MLP) implementada en NumPy y entrenada para clasificar imágenes del conjunto de datos CIFAR-10. El modelo forma parte de la asignación 4 del curso SMAI (Statistical Methods in Artificial Intelligence) y ha sido publicado por el usuario samarth1rao en Hugging Face. No es un modelo de lenguaje: no procesa texto ni genera respuestas, sino que recibe un vector de 3072 valores (una imagen de 32x32x3 aplanada y normalizada) y devuelve 10 logits correspondientes a las clases de CIFAR-10.
 
 La arquitectura es un perceptrón multicapa de tres capas (3072 -> 128 -> 64 -> 10) con activación ELU en las capas ocultas y 402.250 parámetros totales. La innovación declarada por el autor es que los pesos de las capas 2 y 3 son no negativos, lo que convierte cada puntuación de salida en una función convexa de la entrada (de ahí el nombre "input-output convex network"). Esto facilita el análisis teórico del modelo, aunque no está claro que aporte ventajas prácticas en precisión.
 
@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Precisión test CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IOC-NN (este modelo) | 402.250 | no aplica | 42,87 % | MIT | HuggingFace |
+| IOC-NN (este modelo) | 402.250 | no aplica | 42,87 % | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,5 +83,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/samarth1rao/smai-a4-ioc-p0
+- Hugging Face: https://huggingface.co/samarth1rao/smai-a4-ioc-p0
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

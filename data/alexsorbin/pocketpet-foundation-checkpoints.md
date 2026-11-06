@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `AlexSorbin/pocketpet-foundation-checkpoints` es un conjunto de pesos publicado en HuggingFace por el usuario AlexSorbin. La model card asociada no contiene ninguna descripcion tecnica: se limita a una linea de metadatos con `license: unknown`, sin seccion de uso, sin arquitectura declarada, sin tabla de resultados y sin ejemplos de inferencia. La unica informacion verificable procede de los metadatos del repositorio: 32,4 GB de tamano, pipeline no declarado, idiomas no declarados y licencia desconocida.
+El repositorio `AlexSorbin/pocketpet-foundation-checkpoints` es un conjunto de pesos publicado en Hugging Face por el usuario AlexSorbin. La model card asociada no contiene ninguna descripcion tecnica: se limita a una linea de metadatos con `license: unknown`, sin seccion de uso, sin arquitectura declarada, sin tabla de resultados y sin ejemplos de inferencia. La unica informacion verificable procede de los metadatos del repositorio: 32,4 GB de tamano, pipeline no declarado, idiomas no declarados y licencia desconocida.
 
 El nombre del repositorio sugiere dos cosas sin confirmarlas: por un lado, que podria tratarse de un modelo "foundation" (es decir, una base preentrenada destinada a ajuste posterior); por otro, el termino "pocketpet" apunta a un dominio de aplicacion concreto, probablemente relacionado con mascotas virtuales o agentes de compania. "Checkpoints" en plural indica que el repositorio almacena varios estados de entrenamiento, no un unico artefacto final. Ninguna de estas lecturas esta respaldada por documentacion del autor.
 
@@ -91,7 +91,7 @@ No disponible. No es posible seleccionar modelos comparables al desconocerse la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlexSorbin/pocketpet-foundation-checkpoints
+- Hugging Face: https://huggingface.co/AlexSorbin/pocketpet-foundation-checkpoints
 - Paper o informe tecnico: no disponible.
 - Repositorio de codigo: no disponible.
 - Demo o espacio interactivo: no disponible.

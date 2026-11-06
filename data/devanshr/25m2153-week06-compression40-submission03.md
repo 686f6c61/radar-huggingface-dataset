@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks especificos para el ajuste `Devansh
 
 | Modelo | Parametros | Contexto | MMLU-Pro | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este ajuste (Qwen3.5-4B-Base, Compression40) | 4B (base) | 262.144 (ext. 1.010.000) | no disponible (compresion sin medir) | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen3.5-4B (base) | 4B | 262.144 (ext. 1.010.000) | 79,1 | apache-2.0 | HuggingFace (oficial) |
-| Qwen3.5-9B | 9B | no disponible | 82,5 | no disponible | HuggingFace (oficial) |
+| Este ajuste (Qwen3.5-4B-Base, Compression40) | 4B (base) | 262.144 (ext. 1.010.000) | no disponible (compresion sin medir) | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen3.5-4B (base) | 4B | 262.144 (ext. 1.010.000) | 79,1 | apache-2.0 | Hugging Face (oficial) |
+| Qwen3.5-9B | 9B | no disponible | 82,5 | no disponible | Hugging Face (oficial) |
 | GPT-OSS-20B | 20B | no disponible | 74,8 | no disponible | no disponible |
 | Qwen3-30BA3B-Thinking-2507 | 30B (MoE) | no disponible | 80,9 | no disponible | no disponible |
 
@@ -99,7 +99,7 @@ El ajuste comparte tamano y contexto con Qwen3.5-4B, pero no se ha validado si l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DevanshR/25M2153-Week06-Compression40-Submission03
+- Repositorio en Hugging Face: https://huggingface.co/DevanshR/25M2153-Week06-Compression40-Submission03
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Modelo Qwen3.5-4B (referencia de la model card): https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE

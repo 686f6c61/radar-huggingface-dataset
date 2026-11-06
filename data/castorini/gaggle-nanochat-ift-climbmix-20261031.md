@@ -87,9 +87,9 @@ El formato 5-shot usa LM Evaluation Harness 0.4.9 (mmlu, leaderboard_mmlu_pro) c
 
 | Modelo | Parámetros | Contexto | ChatCORE (5 tareas) | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| gaggle-nanochat-ift-climbmix-20261031 | 3,29B (1,21B en embeddings de valor) | 2.048 | 0,412 | MIT | HuggingFace (castorini) |
-| castorini/gaggle-nanochat-pretrained-climbmix-20260924 (base) | 3,29B | 2.048 | No evaluado en chat; MMLU 5-shot 49,22 | MIT | HuggingFace (castorini) |
-| pankajmathur/nanochat-d34-finetuned | d34 (misma arquitectura) | No disponible | 0,299 (recalculado a 5 tareas) | No disponible en la información | HuggingFace (pankajmathur) |
+| gaggle-nanochat-ift-climbmix-20261031 | 3,29B (1,21B en embeddings de valor) | 2.048 | 0,412 | MIT | Hugging Face (castorini) |
+| castorini/gaggle-nanochat-pretrained-climbmix-20260924 (base) | 3,29B | 2.048 | No evaluado en chat; MMLU 5-shot 49,22 | MIT | Hugging Face (castorini) |
+| pankajmathur/nanochat-d34-finetuned | d34 (misma arquitectura) | No disponible | 0,299 (recalculado a 5 tareas) | No disponible en la información | Hugging Face (pankajmathur) |
 
 La comparación se limita a los modelos citados en la model card; no se dispone de datos de otros modelos de tamaño similar para contrastar.
 
@@ -108,7 +108,7 @@ La comparación se limita a los modelos citados en la model card; no se dispone 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/castorini/gaggle-nanochat-ift-climbmix-20261031
+- Modelo en Hugging Face: https://huggingface.co/castorini/gaggle-nanochat-ift-climbmix-20261031
 - Modelo base: https://huggingface.co/castorini/gaggle-nanochat-pretrained-climbmix-20260924
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Dataset smol-smoltalk: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk

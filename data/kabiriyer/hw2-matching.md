@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KabirIyer/hw2-matching es un repositorio de HuggingFace publicado por el usuario KabirIyer que contiene una implementacion propia del metodo de aprendizaje autosupervisado MoCo v3 orientada a una tarea de matching. No es un modelo de lenguaje generativo ni un checkpoint entrenado: la propia model card lo describe como un "initialization checkpoint for smoke tests", es decir, un punto de partida valido para ejecutar pruebas de humo, sin pesos entrenados y sin resultados de evaluacion publicados.
+KabirIyer/hw2-matching es un repositorio de Hugging Face publicado por el usuario KabirIyer que contiene una implementacion propia del metodo de aprendizaje autosupervisado MoCo v3 orientada a una tarea de matching. No es un modelo de lenguaje generativo ni un checkpoint entrenado: la propia model card lo describe como un "initialization checkpoint for smoke tests", es decir, un punto de partida valido para ejecutar pruebas de humo, sin pesos entrenados y sin resultados de evaluacion publicados.
 
 El modelo es extremadamente pequeno: 49.600 parametros totales segun los datos reales almacenados en safetensors, con una configuracion denominada "small". La arquitectura declarada usa atencion estandar, fusion con puerta (gated fusion), activacion swish y normalizacion tipo scalenorm. El repositorio incluye codigo transparente y repetible (eval.py como artefacto principal), junto con config.json, training_args.json y model.safetensors.
 
@@ -75,7 +75,7 @@ No se dispone de resultados de evaluacion de este repositorio, por lo que no es 
 
 | Modelo / metodo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KabirIyer/hw2-matching (este repo) | 49.600 | no aplica | sin benchmarks publicados | Apache 2.0 | HuggingFace, experimental, sin entrenar |
+| KabirIyer/hw2-matching (este repo) | 49.600 | no aplica | sin benchmarks publicados | Apache 2.0 | Hugging Face, experimental, sin entrenar |
 | MoCo v3 original (Meta AI) | ViT-B ~86 M / ResNet-50 ~23 M | no aplica | resultados de referencia publicados por los autores | codigo bajo licencia de Meta | repositorio oficial en GitHub |
 | DINO (Meta AI) | ViT-S ~21 M en adelante | no aplica | resultados de referencia publicados | Apache 2.0 en el repositorio oficial | GitHub y pesos publicos |
 | SimCLR (Google) | ResNet-50 ~23 M | no aplica | resultados de referencia publicados | codigo de investigacion | repositorio oficial en GitHub |
@@ -91,13 +91,13 @@ La comparacion directa no es valida porque este repositorio no incluye un checkp
 - El riesgo de alucinacion no aplica en el sentido habitual, ya que no es un modelo generativo; el riesgo equivalente seria producir representaciones o emparejamientos sin validez, algo que no puede evaluarse sin entrenamiento.
 - No hay limitaciones de contexto o idioma documentadas porque el modelo no opera sobre texto.
 - Licencia Apache 2.0, que permite uso comercial del codigo y los pesos, pero el autor recomienda revisar por separado los terminos de las fuentes de datos externas si se usa con conjuntos propios.
-- Al ser una implementacion personalizada, no es compatible con las APIs de carga automatica genericas de HuggingFace sin un adaptador explicito.
+- Al ser una implementacion personalizada, no es compatible con las APIs de carga automatica genericas de Hugging Face sin un adaptador explicito.
 - No debe presentarse en produccion ni citarse como modelo con capacidades demostradas: la propia model card pide que cualquier resultado de un futuro checkpoint entrenado se documente de forma separada a los valores por defecto aqui incluidos.
 - El numero de descargas y likes es cero, lo que indica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KabirIyer/hw2-matching
+- Hugging Face: https://huggingface.co/KabirIyer/hw2-matching
 - MoCo v3 (paper original, referencia del metodo): https://arxiv.org/abs/2104.02057
 - Repositorio oficial de MoCo (Facebook Research): https://github.com/facebookresearch/moco-v3
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos especificos de este modelo.

@@ -67,8 +67,8 @@ La informacion disponible no incluye datos de rendimiento ni comparativas con ot
 
 | Modelo | Tipo | Base objetivo | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shiro-sama-NAI-V4.5-Curated-Anima | LoRA de personaje | Anima Base v1.0 / Turbo v1.1 | 598 imagenes NovelAI 4.5 Curated | no disponible | HuggingFace |
-| Shiro-sama-NAI-V4.5-Curated-Illustrious | LoRA de personaje | Illustrious | no disponible | no disponible | HuggingFace |
+| Shiro-sama-NAI-V4.5-Curated-Anima | LoRA de personaje | Anima Base v1.0 / Turbo v1.1 | 598 imagenes NovelAI 4.5 Curated | no disponible | Hugging Face |
+| Shiro-sama-NAI-V4.5-Curated-Illustrious | LoRA de personaje | Illustrious | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ La informacion disponible no incluye datos de rendimiento ni comparativas con ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JustInEchoes/Shiro-sama-NAI-V4.5-Curated-Anima
+- Modelo en Hugging Face: https://huggingface.co/JustInEchoes/Shiro-sama-NAI-V4.5-Curated-Anima
 - Version en Civitai (Anima V1): https://civitai.com/models/2995794?modelVersionId=3397674
 - Dataset de etiquetas (tags): https://huggingface.co/datasets/JustInEchoes/Shiro-sama-NAI-V4.5-Curated-Tags
 - Dataset de leyendas (captions): https://huggingface.co/datasets/JustInEchoes/Shiro-sama-NAI-V4.5-Curated-Captions

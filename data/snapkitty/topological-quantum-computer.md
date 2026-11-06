@@ -82,7 +82,7 @@ No disponible. Este paquete no pertenece a la categoría de modelos de IA genera
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Snapkitty/topological-quantum-computer
+- Repositorio Hugging Face: https://huggingface.co/Snapkitty/topological-quantum-computer
 - Referencias citadas en la model card:
   - Kitaev, A. (2003). Fault-tolerant quantum computation by anyons. *Annals of Physics*.
   - Freedman, M. H.; Larsen, M. J.; Wang, Z. (2002). The two-eigenvalue problem and density of Jones representation of braid groups. *Communications in Mathematical Physics*.

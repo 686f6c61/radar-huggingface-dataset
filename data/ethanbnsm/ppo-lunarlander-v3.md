@@ -68,7 +68,7 @@ No disponible. No se han proporcionado datos de agentes comparables ni resultado
 - La licencia no esta disponible, lo que impide conocer las restricciones de uso comercial o redistribucion.
 - El entorno objetivo es especifico (LunarLander-v2); el agente no generaliza a otros entornos ni a tareas de lenguaje o vision.
 - No se ha publicado la arquitectura de la red neuronal, lo que dificulta la evaluacion del coste computacional y de la reproducibilidad exacta.
-- El tamano del repositorio es de 0.0 GB, lo que sugiere que no se han subido los pesos del modelo al repositorio de HuggingFace.
+- El tamano del repositorio es de 0.0 GB, lo que sugiere que no se han subido los pesos del modelo al repositorio de Hugging Face.
 - La model card referencia el repositorio "ethanbnsm/ppo-LunarLander-v2" en los hiperparametros, mientras que el repositorio actual se denomina "ppo-LunarLander-v3"; puede haber una discrepancia en la nomenclatura.
 - El resultado depende de la semilla utilizada (seed 8) y puede variar significativamente con otras semillas, tal como indica la desviacion estandar de +- 75.50.
 - El agente puede mostrar comportamientos suboptimos si se ejecuta en una version diferente del entorno, como LunarLander-v3, debido a posibles cambios en la dinamica de simulacion.

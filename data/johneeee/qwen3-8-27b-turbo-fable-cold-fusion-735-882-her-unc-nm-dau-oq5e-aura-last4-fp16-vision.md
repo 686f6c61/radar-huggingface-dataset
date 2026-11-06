@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-her-unc-NM-DAU-oQ5e-aura-last4-fp16-vision` es una publicacion alojada en HuggingFace por el usuario Johneeee, con fecha de creacion y ultima actualizacion del 2 de octubre de 2026. No se trata de un modelo entrenado desde cero, sino de una cuantizacion de un modelo base que el autor etiqueta internamente como `qwen3_5`. La model card unicamente documenta el proceso de cuantizacion: 5 bits, grupo de 64, formato MLX safetensors y uso de la herramienta oQ (oMLX v0.7.0.dev4) con cuantizacion de precision mixta.
+El modelo identificado como `Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-her-unc-NM-DAU-oQ5e-aura-last4-fp16-vision` es una publicacion alojada en Hugging Face por el usuario Johneeee, con fecha de creacion y ultima actualizacion del 2 de octubre de 2026. No se trata de un modelo entrenado desde cero, sino de una cuantizacion de un modelo base que el autor etiqueta internamente como `qwen3_5`. La model card unicamente documenta el proceso de cuantizacion: 5 bits, grupo de 64, formato MLX safetensors y uso de la herramienta oQ (oMLX v0.7.0.dev4) con cuantizacion de precision mixta.
 
 El repositorio contiene 27.356.728.560 parametros reales en safetensors (aproximadamente 27,36 mil millones) y ocupa 23,4 GB. El nombre del modelo sugiere variantes adicionales (sufijos como "turbo", "cold-fusion", "vision", "last4-fp16"), pero la model card no documenta ninguna de ellas, por lo que no pueden confirmarse como caracteristicas reales del artefacto publicado.
 
@@ -104,7 +104,7 @@ La comparacion relevante para este repositorio seria contra la version sin cuant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-her-unc-NM-DAU-oQ5e-aura-last4-fp16-vision
+- Modelo en Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-her-unc-NM-DAU-oQ5e-aura-last4-fp16-vision
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Paper, blog, repositorio o demo del autor: no disponible.
 - Resultados de busqueda web relacionados con el modelo: no disponible (la busqueda no devolvio ninguna fuente pertinente).

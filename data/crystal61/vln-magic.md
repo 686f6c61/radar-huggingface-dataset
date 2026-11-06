@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VLN-MAGIC es un modelo publicado en HuggingFace por el usuario crystal61 bajo licencia Apache 2.0. El repositorio, de 21,9 GB, sugiere un modelo de gran tamano (probablemente en el rango de decenas de miles de millones de parametros en funcion del formato de pesos), aunque la model card no incluye ninguna descripcion tecnica, arquitectura, datos de entrenamiento ni resultados de evaluacion. El nombre "VLN-MAGIC" apunta a un posible enfoque de vision-and-language navigation (VLN), pero esta interpretacion no esta confirmada por ninguna fuente del repositorio.
+VLN-MAGIC es un modelo publicado en Hugging Face por el usuario crystal61 bajo licencia Apache 2.0. El repositorio, de 21,9 GB, sugiere un modelo de gran tamano (probablemente en el rango de decenas de miles de millones de parametros en funcion del formato de pesos), aunque la model card no incluye ninguna descripcion tecnica, arquitectura, datos de entrenamiento ni resultados de evaluacion. El nombre "VLN-MAGIC" apunta a un posible enfoque de vision-and-language navigation (VLN), pero esta interpretacion no esta confirmada por ninguna fuente del repositorio.
 
 La relevancia de esta ficha es limitada desde el punto de vista practico: no hay informacion publicada sobre capacidades, rendimiento ni requisitos de despliegue, y el modelo no registra descargas ni interacciones en el momento de la consulta. Se trata, por tanto, de un artefacto de pesos sin documentacion asociada, lo que impide evaluar su idoneidad para tareas concretas.
 
@@ -62,10 +62,10 @@ No disponible. No se puede establecer una comparativa fiable sin conocer la cate
 - Riesgo de alucinacion: no evaluable sin documentacion ni pruebas.
 - Sin datos sobre cobertura idiomatica ni limitaciones de contexto.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero el adoptante asume toda la responsabilidad sobre el comportamiento del modelo.
-- Cero descargas y cero interacciones en HuggingFace: no hay senales de validacion por parte de la comunidad.
+- Cero descargas y cero interacciones en Hugging Face: no hay senales de validacion por parte de la comunidad.
 - El repositorio de 21,9 GB implica costes de almacenamiento y transferencia no triviales; conviene inspeccionar los ficheros antes de descargarlo.
 - No se debe asumir que el modelo hace lo que su nombre sugiere sin verificacion empirica.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/crystal61/VLN-MAGIC
+- Hugging Face: https://huggingface.co/crystal61/VLN-MAGIC

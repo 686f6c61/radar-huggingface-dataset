@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Oldbookillustrations-sd14-lora es un adaptador LoRA para el modelo de difusion de texto a imagen Stable Diffusion 1.4 (CompVis/stable-diffusion-v1-4). Lo publica el usuario ernepontia en HuggingFace y esta entrenado sobre el dataset `gigant/oldbookillustrations`, lo que orienta su comportamiento hacia la generacion de ilustraciones con estetica de grabado y libro antiguo. No es un modelo base autonomo: requiere cargar el checkpoint SD 1.4 y aplicar el adaptador mediante `load_lora_weights` en la pipeline de Diffusers.
+Oldbookillustrations-sd14-lora es un adaptador LoRA para el modelo de difusion de texto a imagen Stable Diffusion 1.4 (CompVis/stable-diffusion-v1-4). Lo publica el usuario ernepontia en Hugging Face y esta entrenado sobre el dataset `gigant/oldbookillustrations`, lo que orienta su comportamiento hacia la generacion de ilustraciones con estetica de grabado y libro antiguo. No es un modelo base autonomo: requiere cargar el checkpoint SD 1.4 y aplicar el adaptador mediante `load_lora_weights` en la pipeline de Diffusers.
 
 El repositorio es de tipo adaptador (pesos LoRA de bajo rango), con licencia CreativeML OpenRAIL-M heredada del modelo base. El tamano del repo figura como 0.0 GB y no consta informacion sobre el numero de parametros del adaptador, el rango LoRA empleado ni la resolucion de entrenamiento. Las descargas y los "likes" son cero en la fecha de los metadatos, lo que indica un artefacto recien publicado y sin validacion comunitaria.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Modelo base | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ernepontia/oldbookillustrations-sd14-lora | LoRA de estilo | SD 1.4 | no disponible (SD 1.4: 512x512 nativo) | creativeml-openrail-m | HuggingFace, 0 descargas |
+| ernepontia/oldbookillustrations-sd14-lora | LoRA de estilo | SD 1.4 | no disponible (SD 1.4: 512x512 nativo) | creativeml-openrail-m | Hugging Face, 0 descargas |
 | SD 1.4 sin adaptador (CompVis) | Modelo base texto-imagen | - | 512x512 nativo | creativeml-openrail-m | Ampliamente disponible |
 | SDXL + LoRA de estilo | Modelo base + adaptador | SDXL | 1024x1024 nativo | openrail++ | Ampliamente disponible |
-| Flux.1 dev + LoRA | Modelo base + adaptador | Flux.1 dev | resoluciones altas | licencia no comercial | HuggingFace |
+| Flux.1 dev + LoRA | Modelo base + adaptador | Flux.1 dev | resoluciones altas | licencia no comercial | Hugging Face |
 
 La comparativa se limita a categorias; no hay datos de rendimiento del adaptador que permitan una comparacion cuantitativa con alternativas.
 
@@ -81,7 +81,7 @@ La comparativa se limita a categorias; no hay datos de rendimiento del adaptador
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ernepontia/oldbookillustrations-sd14-lora
+- Hugging Face: https://huggingface.co/ernepontia/oldbookillustrations-sd14-lora
 - Modelo base: https://huggingface.co/CompVis/stable-diffusion-v1-4
 - Dataset citado: https://huggingface.co/datasets/gigant/oldbookillustrations
 - Licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license

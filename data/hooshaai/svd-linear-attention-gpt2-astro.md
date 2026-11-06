@@ -30,7 +30,7 @@ El modelo se entrena para clasificación de texto sobre el dataset GLUE, concret
 - Clasificación de texto en inglés, afinado específicamente para la tarea SST-2 de GLUE (análisis de sentimiento).
 - Atención lineal de bajo rango con complejidad O(N), lo que reduce el coste computacional en comparación con la atención estándar.
 - Recuperación de rendimiento mediante fine-tuning LoRA, lo que permite ajustar el modelo comprimido con pocos recursos.
-- Compatibilidad con la librería HuggingFace Transformers, tal como se muestra en el ejemplo de uso del autor.
+- Compatibilidad con la librería Hugging Face Transformers, tal como se muestra en el ejemplo de uso del autor.
 - Soporte de tool calling / function calling: no documentado.
 - Soporte de agentes y razonamiento multi-step: no documentado.
 - Capacidades multilingües: no, solo inglés.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - VRAM estimada para inferencia: 412,45 MB pico según la evaluación del autor, lo que indica que el modelo cabe en prácticamente cualquier GPU moderna.
 - GPU recomendadas: cualquier GPU con al menos 512 MB de VRAM, por ejemplo RTX 3060, GTX 1650, o incluso GPUs integradas recientes. No se requiere hardware de gama alta.
 - Compatibilidad con GPUs de consumo: sí, el modelo está diseñado para entornos con recursos limitados.
-- Opciones de despliegue: HuggingFace Transformers, tal como se muestra en el ejemplo de uso del autor. No se documentan otros frameworks como vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: Hugging Face Transformers, tal como se muestra en el ejemplo de uso del autor. No se documentan otros frameworks como vLLM, llama.cpp u Ollama.
 - Latencia y throughput: el tiempo de evaluación puro reportado es de 18,17 s, pero no se especifica el tamaño del dataset evaluado, por lo que no es posible estimar latencia por muestra ni throughput.
 
 ## Comparativa con modelos similares
@@ -82,6 +82,6 @@ No disponible. La información proporcionada no incluye comparativas con otros m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hooshaai/svd-linear-attention-gpt2-astro
+- Hugging Face: https://huggingface.co/Hooshaai/svd-linear-attention-gpt2-astro
 - Artículo sobre atención lineal: https://hooshaai.substack.com/p/scaling-transformers-how-linear-attention
 - Sitio web de Hooshaai: https://hooshaai.github.io/

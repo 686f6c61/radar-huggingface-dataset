@@ -4,7 +4,7 @@
 
 El modelo `LeoZotos/littlelearner-1.3b-base_math_textbooks` es un checkpoint de fine-tuning (pre-entrenamiento continuo) sobre el modelo base `littlelearner/littlelearner-1.3b-base`, desarrollado por LeoZotos. El objetivo es especializar el modelo en el dominio de las matemáticas mediante el entrenamiento con un corpus de libros de texto de matemáticas (`LeoZotos/math_textbooks`). Según la etiqueta `qwen3`, el modelo base parece derivar de la familia Qwen3, aunque no se confirma oficialmente. Con 1.358 millones de parámetros (aproximadamente 1,36B), es un modelo de tamaño medio-pequeño, adecuado para tareas de generación de texto y razonamiento matemático en entornos con recursos limitados.
 
-La relevancia de este modelo radica en su enfoque educativo: al estar entrenado específicamente con material didáctico de matemáticas, podría ofrecer un mejor rendimiento en tareas como resolución de problemas, explicaciones paso a paso o generación de ejercicios, en comparación con un modelo generalista del mismo tamaño. Sin embargo, al no publicarse benchmarks ni detalles de arquitectura, su rendimiento real no está verificado. El checkpoint se publicó en septiembre de 2026 y no cuenta con descargas ni valoraciones en HuggingFace.
+La relevancia de este modelo radica en su enfoque educativo: al estar entrenado específicamente con material didáctico de matemáticas, podría ofrecer un mejor rendimiento en tareas como resolución de problemas, explicaciones paso a paso o generación de ejercicios, en comparación con un modelo generalista del mismo tamaño. Sin embargo, al no publicarse benchmarks ni detalles de arquitectura, su rendimiento real no está verificado. El checkpoint se publicó en septiembre de 2026 y no cuenta con descargas ni valoraciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -77,6 +77,6 @@ La comparación es orientativa; no hay benchmarks que respalden diferencias de r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LeoZotos/littlelearner-1.3b-base_math_textbooks
+- Hugging Face: https://huggingface.co/LeoZotos/littlelearner-1.3b-base_math_textbooks
 - Modelo base (referenciado en la configuración): https://huggingface.co/littlelearner/littlelearner-1.3b-base (no verificado)
 - Dataset de entrenamiento (referenciado): https://huggingface.co/datasets/LeoZotos/math_textbooks (no verificado)

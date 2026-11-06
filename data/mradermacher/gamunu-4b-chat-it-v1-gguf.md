@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Gamunu-4b-Chat-It-V1 (este) | ~3,88B | no disponible | no disponible | GGUF, safetensors | HuggingFace, muy baja tracción |
+| Gamunu-4b-Chat-It-V1 (este) | ~3,88B | no disponible | no disponible | GGUF, safetensors | Hugging Face, muy baja tracción |
 | Llama 3.2 3B Instruct | 3,2B | 128K | Llama 3.2 Community License | GGUF, safetensors | Amplia, documentación completa |
 | Qwen2.5 3B Instruct | 3,1B | 32K | Apache 2.0 | GGUF, safetensors | Amplia, benchmarks publicados |
 | Phi-3.5-mini Instruct | 3,8B | 128K | MIT | GGUF, safetensors | Amplia, benchmarks publicados |

@@ -79,7 +79,7 @@ La comparativa se basa en el modelo base, ya que no hay datos específicos de RE
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/GLM-4.7-Flash-REAP-50-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/GLM-4.7-Flash-REAP-50-GGUF
 - Modelo original (Akicou): https://huggingface.co/Akicou/GLM-4.7-Flash-REAP-50
 - Modelo base GLM-4.7-Flash (Z.ai): https://huggingface.co/unsloth/GLM-4.7-Flash-GGUF (referencia de cuantizaciones)
 - Guía de ejecución local de GLM-4.7-Flash (Unsloth): https://unsloth.ai/docs/models/tutorials/glm-4.7-flash

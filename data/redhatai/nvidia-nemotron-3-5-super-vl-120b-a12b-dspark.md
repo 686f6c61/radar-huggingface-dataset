@@ -106,7 +106,7 @@ Longitud máxima de prompt exitosa: 1.034.643 tokens. La model card incluye adem
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| RedHatAI/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B.dspark | 1,21B (borrador) | 1.048.576 | DSpark, 8 tokens, cabeza de Markov y de confianza | openmdw-1.1 | HuggingFace |
+| RedHatAI/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B.dspark | 1,21B (borrador) | 1.048.576 | DSpark, 8 tokens, cabeza de Markov y de confianza | openmdw-1.1 | Hugging Face |
 | MTP de Nemotron 3.5 Super VL (interno del modelo base) | no disponible | el del modelo base | Multi-token prediction, 3 tokens | openmdw-1.1 (modelo base) | Integrado en el checkpoint base |
 | DFlash (algoritmo predecesor) | no disponible | no disponible | Especulación sin cabeza de Markov | no disponible | Librería Speculators |
 
@@ -125,7 +125,7 @@ La comparación cuantitativa disponible se limita a MTP: DSpark con 8 tokens sup
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RedHatAI/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B.dspark
+- Modelo en Hugging Face: https://huggingface.co/RedHatAI/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B.dspark
 - Modelo base (BF16): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
 - Modelo base (NVFP4): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4
 - Librería Speculators: https://github.com/vllm-project/speculators

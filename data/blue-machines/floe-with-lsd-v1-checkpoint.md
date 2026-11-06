@@ -104,7 +104,7 @@ La diferencia funcional relevante es que este checkpoint no solo identifica el i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blue-machines/FLOE-with-LSD-v1-checkpoint
+- Modelo en Hugging Face: https://huggingface.co/blue-machines/FLOE-with-LSD-v1-checkpoint
 - Modelo exportado ONNX: https://huggingface.co/blue-machines/Flow-with-LSD-v1
 - Modelo base: https://huggingface.co/google/gemma-3-270m
 - Licencia Gemma: https://ai.google.dev/gemma/terms

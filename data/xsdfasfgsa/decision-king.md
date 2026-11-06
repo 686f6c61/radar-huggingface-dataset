@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Decision-King es un modelo derivado de Qwen3.8-27B, inicializado a partir del commit `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0` del repositorio de Qwen, y publicado por el usuario xsdfasfgsa en HuggingFace. Se presenta como un modelo especializado en tareas de decisión: en lugar de generar texto libre, recibe un estado de contexto y un conjunto de preguntas tipadas (booleanas, de elección múltiple y de puntuación) y devuelve logits directos para cada una. Esta aproximación de "direct-logits" evita la generación autoregresiva convencional y reduce la tarea a una clasificación estructurada sobre el estado proporcionado.
+Decision-King es un modelo derivado de Qwen3.8-27B, inicializado a partir del commit `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0` del repositorio de Qwen, y publicado por el usuario xsdfasfgsa en Hugging Face. Se presenta como un modelo especializado en tareas de decisión: en lugar de generar texto libre, recibe un estado de contexto y un conjunto de preguntas tipadas (booleanas, de elección múltiple y de puntuación) y devuelve logits directos para cada una. Esta aproximación de "direct-logits" evita la generación autoregresiva convencional y reduce la tarea a una clasificación estructurada sobre el estado proporcionado.
 
 El modelo conserva la arquitectura base de Qwen3.8-27B, con 27.356.728.560 parámetros totales en formato safetensors y un repositorio de 54,7 GB, lo que sugiere pesos en BF16. La model card menciona la etiqueta `looped-transformer` y la capacidad `image-text-to-text`, aunque no se detalla en qué consiste la modificación looped ni cómo se ha adaptado la torre visual. El modelo se distribuye bajo licencia Apache 2.0 y requiere una GPU CUDA con capacidad BF16 y VRAM suficiente, recomendándose 80 GB.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Decision-King | 27,36 B | no disponible | Decisión estructurada (direct-logits) | Apache 2.0 | HuggingFace (55 descargas) |
-| Qwen3.8-27B (base) | ~27 B (según nombre) | no disponible | Generación de texto multimodal | no disponible en esta ficha | HuggingFace |
+| Decision-King | 27,36 B | no disponible | Decisión estructurada (direct-logits) | Apache 2.0 | Hugging Face (55 descargas) |
+| Qwen3.8-27B (base) | ~27 B (según nombre) | no disponible | Generación de texto multimodal | no disponible en esta ficha | Hugging Face |
 | Alternativas de clasificación estructurada | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para comparar con modelos de decisión estructurada equivalentes; la comparación con el modelo base Qwen3.8-27B es la única referencia directa, y no se han publicado métricas comparativas.
@@ -84,6 +84,6 @@ No se dispone de información suficiente para comparar con modelos de decisión 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xsdfasfgsa/Decision-King
+- Modelo en Hugging Face: https://huggingface.co/xsdfasfgsa/Decision-King
 - Modelo base Qwen3.8-27B (commit referenciado): https://huggingface.co/Qwen/Qwen3.8-27B/tree/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0
 - Paper, blog o repositorio adicional: no disponible en la información proporcionada.

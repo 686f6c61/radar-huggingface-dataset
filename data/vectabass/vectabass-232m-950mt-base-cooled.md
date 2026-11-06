@@ -109,7 +109,7 @@ La comparación cuantitativa de rendimiento con estas alternativas no está disp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VectaBass/vectabass-232m-950mt-base-cooled
+- Hugging Face: https://huggingface.co/VectaBass/vectabass-232m-950mt-base-cooled
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset FineWeb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
 - Dataset FineMath: https://huggingface.co/datasets/HuggingFaceTB/finemath

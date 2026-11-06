@@ -91,7 +91,7 @@ No se dispone de resultados comparativos publicados en la información proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aiMy144/vietnamese-fact-checking-verifier-xlm-roberta-base-v3-1
+- Modelo en Hugging Face: https://huggingface.co/aiMy144/vietnamese-fact-checking-verifier-xlm-roberta-base-v3-1
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Dataset asociado: https://huggingface.co/datasets/aiMy144/viet-fact-checking
 - Visor del dataset: https://huggingface.co/datasets/aiMy144/viet-fact-checking/viewer

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `xw17/TinyLlama-1.1B-Chat-v1.0_SFT_lora_noneeg` es un adaptador LoRA subido a HuggingFace por el usuario `xw17`. Según la información disponible, se trata de un ajuste fino supervisado (SFT) con LoRA sobre el modelo base TinyLlama-1.1B-Chat-v1.0, aunque no se ha publicado ninguna documentación técnica en la model card. La ficha del modelo es una plantilla generada automáticamente por la librería `transformers` y no contiene descripción, arquitectura, datos de entrenamiento, licencia ni idiomas. El repositorio tiene un tamaño de 0.0 GB y no registra descargas ni likes. Debido a la ausencia total de especificaciones, no es posible determinar su capacidad ni su relevancia en el ecosistema actual. Este modelo no puede considerarse listo para producción ni para evaluación rigurosa sin información adicional.
+El modelo `xw17/TinyLlama-1.1B-Chat-v1.0_SFT_lora_noneeg` es un adaptador LoRA subido a Hugging Face por el usuario `xw17`. Según la información disponible, se trata de un ajuste fino supervisado (SFT) con LoRA sobre el modelo base TinyLlama-1.1B-Chat-v1.0, aunque no se ha publicado ninguna documentación técnica en la model card. La ficha del modelo es una plantilla generada automáticamente por la librería `transformers` y no contiene descripción, arquitectura, datos de entrenamiento, licencia ni idiomas. El repositorio tiene un tamaño de 0.0 GB y no registra descargas ni likes. Debido a la ausencia total de especificaciones, no es posible determinar su capacidad ni su relevancia en el ecosistema actual. Este modelo no puede considerarse listo para producción ni para evaluación rigurosa sin información adicional.
 
 ## Especificaciones técnicas
 
@@ -61,4 +61,4 @@ No disponible. No se ha proporcionado información sobre modelos comparables, ni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xw17/TinyLlama-1.1B-Chat-v1.0_SFT_lora_noneeg
+- Hugging Face: https://huggingface.co/xw17/TinyLlama-1.1B-Chat-v1.0_SFT_lora_noneeg

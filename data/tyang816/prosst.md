@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/tyang816/ProSST
+- Repositorio de Hugging Face: https://huggingface.co/tyang816/ProSST
 - Página del proyecto ProSST (NeurIPS 2024): https://tyang816.github.io/projects/prosst/
 - Repositorio de VenusREM2 / rem2: https://github.com/tyang816/VenusREM2

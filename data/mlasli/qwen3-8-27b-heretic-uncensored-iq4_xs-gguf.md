@@ -71,9 +71,9 @@ No se dispone de datos de rendimiento comparativos con otros modelos de la misma
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3.8-27B (original) | 27,3 B | No disponible | Apache-2.0 | HuggingFace |
-| 0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF | 27,3 B | No disponible | Apache-2.0 | HuggingFace |
-| mlasli/Qwen3.8-27B-Heretic-Uncensored-IQ4_XS-GGUF (este) | 27,3 B | No disponible | Apache-2.0 | HuggingFace |
+| Qwen/Qwen3.8-27B (original) | 27,3 B | No disponible | Apache-2.0 | Hugging Face |
+| 0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF | 27,3 B | No disponible | Apache-2.0 | Hugging Face |
+| mlasli/Qwen3.8-27B-Heretic-Uncensored-IQ4_XS-GGUF (este) | 27,3 B | No disponible | Apache-2.0 | Hugging Face |
 
 Las diferencias principales entre estas versiones residen en el metodo de cuantizacion (imatrix vs. otros) y en el proceso de abliteracion especifico. No se dispone de benchmarks para comparar su rendimiento real.
 
@@ -89,7 +89,7 @@ Las diferencias principales entre estas versiones residen en el metodo de cuanti
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Uncensored-IQ4_XS-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Uncensored-IQ4_XS-GGUF
 - Modelo BF16 original (v2.0.0): https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Uncensored-BF16
 - Repositorio de `llama.cpp`: https://github.com/ggml-org/llama.cpp
 - Repositorio de `Ollama`: https://ollama.com

@@ -81,7 +81,7 @@ Sin datos de benchmarks, no es posible evaluar el rendimiento relativo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Ornith-1.0-35B-heretic-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Ornith-1.0-35B-heretic-i1-GGUF
 - Modelo original (inkOrCloud): https://huggingface.co/inkOrCloud/Ornith-1.0-35B-heretic
 - Sitio web de Ornith AI: https://ornith.online/
 - Guía de Ornith 1.0: https://ornith.site/

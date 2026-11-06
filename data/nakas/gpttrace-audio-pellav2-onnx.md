@@ -83,6 +83,6 @@ La comparacion cuantitativa con alternativas no esta disponible en la informacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nakas/gpttrace-audio-pellav2-onnx
+- Repositorio Hugging Face: https://huggingface.co/nakas/gpttrace-audio-pellav2-onnx
 - Modelo base: https://huggingface.co/Sadanie/pellav2-audio-deepfake-detector
 - Resultados de busqueda web: no se han encontrado enlaces tecnicos relevantes; los resultados devueltos corresponden a entidades no relacionadas (Nakastream, Philippos Nakas SA, Nakas Music Cyprus, Philippos Nakas Conservatory).

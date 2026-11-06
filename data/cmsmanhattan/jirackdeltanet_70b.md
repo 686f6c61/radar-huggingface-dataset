@@ -91,9 +91,9 @@ Para la copia FP8: 73 GB frente a 140 GB en bf16, con un error relativo medio de
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| JiRackDeltaNet 70B | 69,93B | No disponible | other (derivado de Qwen, Apache 2.0) | HuggingFace, GGUF, FP8 | Híbrido DeltaNet + atención; tool calling 93,2 % en test propio |
-| Qwen 3.5 (modelo base) | No disponible | No disponible | Apache 2.0 | HuggingFace | Arquitectura y tokenizador de origen; el autor no publica comparación de rendimiento |
-| Llama 3.3 70B | 70B | 128K | Llama 3.3 Community License | HuggingFace, GGUF, FP8 | Referencia de la misma escala; sin datos comparativos en la información disponible |
+| JiRackDeltaNet 70B | 69,93B | No disponible | other (derivado de Qwen, Apache 2.0) | Hugging Face, GGUF, FP8 | Híbrido DeltaNet + atención; tool calling 93,2 % en test propio |
+| Qwen 3.5 (modelo base) | No disponible | No disponible | Apache 2.0 | Hugging Face | Arquitectura y tokenizador de origen; el autor no publica comparación de rendimiento |
+| Llama 3.3 70B | 70B | 128K | Llama 3.3 Community License | Hugging Face, GGUF, FP8 | Referencia de la misma escala; sin datos comparativos en la información disponible |
 | Mistral Large 2 | 123B | 128K | Mistral Research License | API y pesos | Mayor tamaño; sin datos comparativos en la información disponible |
 
 No se dispone de comparaciones de benchmarks entre JiRackDeltaNet 70B y estos modelos en la información proporcionada; la comparativa se limita a parámetros, licencia y disponibilidad.
@@ -113,10 +113,10 @@ No se dispone de comparaciones de benchmarks entre JiRackDeltaNet 70B y estos mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CMSManhattan/JiRackDeltaNet_70b
+- Hugging Face: https://huggingface.co/CMSManhattan/JiRackDeltaNet_70b
 - README de GGUF con comandos y comprobaciones: https://huggingface.co/CMSManhattan/JiRackDeltaNet_70b/blob/main/gguf/README.md
-- Código del modelo: `JiRackDeltaNet_70b.py` en el repositorio de HuggingFace
-- Script de chat bf16: `chat_jirack.py` en el repositorio de HuggingFace
-- Script de chat FP8: `sft_final_fp8/chat_fp8.py` en el repositorio de HuggingFace
-- Plantilla de chat: `chat_template.jinja` en el repositorio de HuggingFace
+- Código del modelo: `JiRackDeltaNet_70b.py` en el repositorio de Hugging Face
+- Script de chat bf16: `chat_jirack.py` en el repositorio de Hugging Face
+- Script de chat FP8: `sft_final_fp8/chat_fp8.py` en el repositorio de Hugging Face
+- Plantilla de chat: `chat_template.jinja` en el repositorio de Hugging Face
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada

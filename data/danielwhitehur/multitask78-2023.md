@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`danielwhitehur/multitask78-2023` es un prototipo de investigación basado en la arquitectura PoolFormer, publicado por el usuario danielwhitehur en HuggingFace. No se trata de un modelo de lenguaje ni de un checkpoint entrenado: la propia model card lo describe como un esqueleto reproducible con configuración de arquitectura, receta de entrenamiento por defecto y un fichero de pesos válido únicamente como inicialización para pruebas de humo. El repositorio declara explícitamente que no se reclama ninguna métrica de rendimiento.
+`danielwhitehur/multitask78-2023` es un prototipo de investigación basado en la arquitectura PoolFormer, publicado por el usuario danielwhitehur en Hugging Face. No se trata de un modelo de lenguaje ni de un checkpoint entrenado: la propia model card lo describe como un esqueleto reproducible con configuración de arquitectura, receta de entrenamiento por defecto y un fichero de pesos válido únicamente como inicialización para pruebas de humo. El repositorio declara explícitamente que no se reclama ninguna métrica de rendimiento.
 
 El modelo se enmarca en el paradigma multitarea y emplea una escala "base" con atención de tipo grouped query, fusión tucker, activación mish y normalización groupnorm, según los ajustes registrados en `config.json`. El recuento real de parámetros en safetensors es de 49.600, una cifra extremadamente reducida para cualquier arquitectura tipo transformer, lo que refuerza su carácter de andamiaje experimental y no de artefacto listo para producción.
 
@@ -74,7 +74,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| danielwhitehur/multitask78-2023 | 49.600 | no aplica | bsd-3-clause | HuggingFace | sin benchmark declarado |
+| danielwhitehur/multitask78-2023 | 49.600 | no aplica | bsd-3-clause | Hugging Face | sin benchmark declarado |
 | PoolFormer oficial (variantes) | no disponible | no aplica | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Otras alternativas MetaFormer | no disponible | no aplica | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -92,6 +92,6 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danielwhitehur/multitask78-2023
+- Modelo en Hugging Face: https://huggingface.co/danielwhitehur/multitask78-2023
 
 No se han proporcionado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

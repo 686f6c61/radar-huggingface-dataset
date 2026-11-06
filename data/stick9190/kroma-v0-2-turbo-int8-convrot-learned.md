@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tamaño | Cuantización | VRAM estimada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kroma v0.2 Turbo (BF16 original) | 25,64 GB | BF16 | ~26 GB | No disponible | HuggingFace (Lodestones) |
-| Kroma v0.2 Turbo INT8 ConvRot (este modelo) | 13,49 GB | INT8 W8A8 + ConvRot | ~14-16 GB | No disponible | HuggingFace (Stick9190) |
+| Kroma v0.2 Turbo (BF16 original) | 25,64 GB | BF16 | ~26 GB | No disponible | Hugging Face (Lodestones) |
+| Kroma v0.2 Turbo INT8 ConvRot (este modelo) | 13,49 GB | INT8 W8A8 + ConvRot | ~14-16 GB | No disponible | Hugging Face (Stick9190) |
 | Kroma v0.2 Turbo w4a8 (variante comunitaria) | ~9,2 GiB | W4A8 (40 % capas int8convrot) | ~10-12 GB | No disponible | Civitai |
-| Kroma v0.2 Turbo INT8 ConvRot (de cicalooo) | 11,95 GB | INT8 ConvRot | ~12-14 GB | No disponible | HuggingFace (cicalooo) |
+| Kroma v0.2 Turbo INT8 ConvRot (de cicalooo) | 11,95 GB | INT8 ConvRot | ~12-14 GB | No disponible | Hugging Face (cicalooo) |
 
 La comparativa muestra que esta versión se sitúa entre el original y la variante w4a8 en cuanto a tamaño y requisitos de VRAM. No se dispone de comparaciones de calidad entre estas versiones, ya que no se han publicado métricas objetivas.
 
@@ -83,10 +83,10 @@ La comparativa muestra que esta versión se sitúa entre el original y la varian
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stick9190/kroma-v0.2-turbo-int8-convrot-learned
+- Modelo en Hugging Face: https://huggingface.co/Stick9190/kroma-v0.2-turbo-int8-convrot-learned
 - Repositorio de la herramienta de conversión: https://github.com/silveroxides/convert_to_quant
 - Modelo base Kroma v0.2 (Lodestones): https://huggingface.co/lodestones/Kroma
 - Variante w4a8 en Civitai: https://civitai.com/models/2845688/kroma-w4a8
 - Variante int8_convrot en Civitai: https://civitai.red/models/2846465/kroma-int8convrot-for-comfyui
-- Otra cuantización INT8 ConvRot en HuggingFace (cicalooo): https://huggingface.co/cicalooo/kroma-v0.2-turbo_INT8_ConvRot
+- Otra cuantización INT8 ConvRot en Hugging Face (cicalooo): https://huggingface.co/cicalooo/kroma-v0.2-turbo_INT8_ConvRot
 - Noticia sobre Kroma v0.2 en ComfyUI Wiki: https://comfyui-wiki.com/en/news/2026-08-09-kroma-v0-2

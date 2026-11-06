@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/nld-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10` es un ajuste fino (SFT) de un modelo previo del mismo autor, `francesca9805/ppt-wc-zipf-newlex-nld-before-100mb-packed-bfdiso_seed10`, desarrollado en el entorno de investigación de la Universidad de Groningen (la entidad de Weights & Biases asociada es `f-padovani-university-of-groningen`). Con 124.770.816 parametros y arquitectura de la familia GPT-2 (etiqueta `gpt2` en HuggingFace), se trata de un modelo pequeno orientado a generacion de texto, no a razonamiento complejo ni a tareas de agentes.
+El modelo `francesca9805/nld-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10` es un ajuste fino (SFT) de un modelo previo del mismo autor, `francesca9805/ppt-wc-zipf-newlex-nld-before-100mb-packed-bfdiso_seed10`, desarrollado en el entorno de investigación de la Universidad de Groningen (la entidad de Weights & Biases asociada es `f-padovani-university-of-groningen`). Con 124.770.816 parametros y arquitectura de la familia GPT-2 (etiqueta `gpt2` en Hugging Face), se trata de un modelo pequeno orientado a generacion de texto, no a razonamiento complejo ni a tareas de agentes.
 
 El nombre del repositorio sugiere un experimento de ablacion sobre tokenizacion y datos: los segmentos `nld` (codigo ISO 639-3 del neerlandes), `100mb`, `wc-zipf-newlex`, `packed`, `bfdiso` y `ckpt500` apuntan a un corpus de aproximadamente 100 MB, un tokenizador con nuevo lexico basado en la distribucion de Zipf y una comparacion entre el estado "before" y "after" del checkpoint 500, con la semilla 10. Ninguno de estos extremos se confirma en la model card, que es extremadamente escueta y no documenta dataset, idiomas ni licencia.
 
@@ -18,7 +18,7 @@ Su relevancia es, por tanto, limitada y de caracter reproducible: sirve como art
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (solo se distribuyen pesos en safetensors; no hay GGUF publicado) |
 | Idiomas soportados | no disponible (el identificador incluye `nld`, codigo del neerlandes, pero la model card no lo confirma) |
-| Licencia | no disponible (el campo de licencia de HuggingFace esta vacio y la model card contiene el marcador `licence: license`) |
+| Licencia | no disponible (el campo de licencia de Hugging Face esta vacio y la model card contiene el marcador `licence: license`) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 4.5 GB |
 | Modelo base | francesca9805/ppt-wc-zipf-newlex-nld-before-100mb-packed-bfdiso_seed10 |
@@ -68,28 +68,28 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (`nld-100mb-...-ckpt500`) | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas | Fine-tune SFT de un checkpoint propio; sin evaluaciones publicadas |
-| openai-community/gpt2 (GPT-2 small) | 124 M | 1024 tokens | licencia modificada de MIT | HuggingFace, ampliamente utilizado | Referencia de la familia; entrenado sobre WebText, con evaluaciones publicas |
-| distilgpt2 | 82 M | 1024 tokens | Apache-2.0 | HuggingFace | Destilacion de GPT-2; menor tamano y licencia permisiva |
-| Modelos de ~125 M ajustados con SFT e instrucciones (por ejemplo, variantes tipo TinyStories) | ~125 M | variable, habitualmente 1024 tokens | variable | HuggingFace | Comparables en tamano y en uso de SFT, pero con corpus y objetivos distintos |
+| Este modelo (`nld-100mb-...-ckpt500`) | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas | Fine-tune SFT de un checkpoint propio; sin evaluaciones publicadas |
+| openai-community/gpt2 (GPT-2 small) | 124 M | 1024 tokens | licencia modificada de MIT | Hugging Face, ampliamente utilizado | Referencia de la familia; entrenado sobre WebText, con evaluaciones publicas |
+| distilgpt2 | 82 M | 1024 tokens | Apache-2.0 | Hugging Face | Destilacion de GPT-2; menor tamano y licencia permisiva |
+| Modelos de ~125 M ajustados con SFT e instrucciones (por ejemplo, variantes tipo TinyStories) | ~125 M | variable, habitualmente 1024 tokens | variable | Hugging Face | Comparables en tamano y en uso de SFT, pero con corpus y objetivos distintos |
 
 La comparacion directa con GPT-2 small es la mas util en cuanto a tamano y arquitectura, pero no puede establecerse una comparacion de rendimiento porque este checkpoint carece de cualquier evaluacion publicada.
 
 ## Limitaciones y advertencias
 
 - Ausencia total de evaluacion: no hay benchmarks, curvas de perdida publicadas ni comparacion con el checkpoint base, por lo que se desconoce su calidad real.
-- Licencia no declarada: el repositorio no especifica licencia (el campo de HuggingFace esta vacio y la model card contiene un marcador generico). El uso comercial es juridicamente indeterminado; debe consultarse al autor antes de cualquier despliegue productivo.
+- Licencia no declarada: el repositorio no especifica licencia (el campo de Hugging Face esta vacio y la model card contiene un marcador generico). El uso comercial es juridicamente indeterminado; debe consultarse al autor antes de cualquier despliegue productivo.
 - Idiomas no confirmados: aunque el identificador incluye `nld`, no se documenta el idioma ni la calidad de generacion en neerlandes, ingles u otros idiomas.
 - Dataset desconocido: al no documentarse la composicion del corpus ni el numero de tokens, no es posible evaluar sesgos, toxicidad ni cobertura tematica.
 - Riesgo de alucinacion: alto en terminos relativos, dado el reducido tamano del modelo y la ausencia de fases de alineacion declaradas (no se menciona RLHF ni DPO).
 - Contexto no documentado: no se especifica la longitud de contexto efectiva, lo que impide planificar tareas que requieran ventanas largas.
 - Modelo de investigacion: no esta pensado para produccion, agentes, tool calling ni tareas de razonamiento; su uso sensato se limita a experimentacion y reproducibilidad.
-- Trazabilidad de la fecha: los metadatos de HuggingFace indican creacion el 2026-10-11 y actualizacion el 2026-10-12, fechas que conviene verificar en el repositorio original.
+- Trazabilidad de la fecha: los metadatos de Hugging Face indican creacion el 2026-10-11 y actualizacion el 2026-10-12, fechas que conviene verificar en el repositorio original.
 - Nombre del repositorio muy largo y altamente especifico de un experimento, lo que dificulta su descubrimiento y su reutilizacion por terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-zipf-newlex-nld-before-100mb-packed-bfdiso_seed10
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ghu32j99
 - Repositorio de TRL: https://github.com/huggingface/trl

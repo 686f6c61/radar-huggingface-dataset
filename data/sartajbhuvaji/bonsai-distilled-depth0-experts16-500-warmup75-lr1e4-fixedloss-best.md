@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`bonsai-distilled-depth0-experts16-500-warmup75-lr1e4-fixedloss-best` es un checkpoint de generación de texto publicado por el usuario sartajbhuvaji en HuggingFace. Según las etiquetas del repositorio, utiliza la arquitectura `qwen3_moe` de la librería Transformers y contiene 26.906.671.104 parámetros totales en formato safetensors, con un tamaño de repositorio de 53,8 GB, lo que cuadra con pesos en bf16/fp16. El pipeline declarado es `text-generation` y la etiqueta secundaria es `conversational`.
+`bonsai-distilled-depth0-experts16-500-warmup75-lr1e4-fixedloss-best` es un checkpoint de generación de texto publicado por el usuario sartajbhuvaji en Hugging Face. Según las etiquetas del repositorio, utiliza la arquitectura `qwen3_moe` de la librería Transformers y contiene 26.906.671.104 parámetros totales en formato safetensors, con un tamaño de repositorio de 53,8 GB, lo que cuadra con pesos en bf16/fp16. El pipeline declarado es `text-generation` y la etiqueta secundaria es `conversational`.
 
 El nombre del modelo sugiere un experimento de destilación sobre una arquitectura de mezcla de expertos con 16 expertos, e incluye en el identificador lo que parecen ser hiperparámetros de entrenamiento: 500 pasos, 75 pasos de warmup, tasa de aprendizaje 1e-4 y una estrategia de pérdida denotada como "fixedloss". Esta lectura es una interpretación del identificador y no está confirmada por el autor en ninguna documentación.
 
-La relevancia del modelo es limitada: la model card es la plantilla autogenerada por HuggingFace y no contiene descripción, datos de entrenamiento, evaluación ni instrucciones de uso. No tiene descargas ni "likes", no declara licencia ni idiomas, y no se ha publicado ningún benchmark. Debe tratarse como un artefacto de investigación sin validar, no como un modelo listo para producción.
+La relevancia del modelo es limitada: la model card es la plantilla autogenerada por Hugging Face y no contiene descripción, datos de entrenamiento, evaluación ni instrucciones de uso. No tiene descargas ni "likes", no declara licencia ni idiomas, y no se ha publicado ningún benchmark. Debe tratarse como un artefacto de investigación sin validar, no como un modelo listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos alternativos provienen de sus model cards públicas; los de este modelo, del repositorio de HuggingFace.
+Los datos de los modelos alternativos provienen de sus model cards públicas; los de este modelo, del repositorio de Hugging Face.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
@@ -95,7 +95,7 @@ La comparación es estructural: este checkpoint comparte familia y orden de magn
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts16-500-warmup75-lr1e4-fixedloss-best
+- Hugging Face: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts16-500-warmup75-lr1e4-fixedloss-best
 - Paper citado en la etiqueta del repositorio (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la model card: https://mlco2.github.io/impact#compute
 - No se han encontrado en la información proporcionada repositorios de código, demos, blogs ni papers adicionales asociados al modelo.

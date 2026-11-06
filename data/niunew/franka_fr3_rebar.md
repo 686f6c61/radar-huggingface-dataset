@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NiuNew/Franka_FR3_rebar es un repositorio publicado en HuggingFace por el usuario NiuNew bajo licencia Apache 2.0. Por el nombre y el contenido del repositorio (35,2 GB de pesos en formato safetensors), se trata con toda probabilidad de un conjunto de pesos asociado a un entorno o política de control para el robot manipulador Franka FR3 en una tarea de manipulación de barras de refuerzo (rebar). No es un modelo de lenguaje: no hay pipeline declarado, no hay idiomas declarados y la model card está prácticamente vacía (solo contiene la cláusula de licencia).
+NiuNew/Franka_FR3_rebar es un repositorio publicado en Hugging Face por el usuario NiuNew bajo licencia Apache 2.0. Por el nombre y el contenido del repositorio (35,2 GB de pesos en formato safetensors), se trata con toda probabilidad de un conjunto de pesos asociado a un entorno o política de control para el robot manipulador Franka FR3 en una tarea de manipulación de barras de refuerzo (rebar). No es un modelo de lenguaje: no hay pipeline declarado, no hay idiomas declarados y la model card está prácticamente vacía (solo contiene la cláusula de licencia).
 
 La relevancia de este repositorio es, por tanto, muy limitada fuera del contexto específico del autor. No se han publicado resultados de benchmarks, no se documenta la arquitectura, el dataset de entrenamiento ni el procedimiento de entrenamiento. Cualquier uso en producción requeriría inspeccionar directamente los pesos y el código asociado, que no está descrito en la información disponible.
 
@@ -77,5 +77,5 @@ No disponible. No se conocen modelos comparables porque no se ha identificado la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NiuNew/Franka_FR3_rebar
+- Repositorio en Hugging Face: https://huggingface.co/NiuNew/Franka_FR3_rebar
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | GenerativeDetail4x (esta ficha) | no disponible | no aplica | 0,36-0,40 s/tesela en A16; sin benchmarks publicados | CreativeML Open RAIL++-M | Core ML, iOS 17+ |
-| AdcSR (Guaishou74851/AdcSR) | no disponible | no aplica | sin datos en la informacion disponible | Apache 2.0 (código y pesos) | PyTorch, HuggingFace |
+| AdcSR (Guaishou74851/AdcSR) | no disponible | no aplica | sin datos en la informacion disponible | Apache 2.0 (código y pesos) | PyTorch, Hugging Face |
 | OSEDiff | no disponible | no aplica | sin datos en la informacion disponible | Apache 2.0 | PyTorch, GitHub |
 
 No se dispone de datos de benchmarks ni de parámetros para establecer una comparación cuantitativa con alternativas de superresolución; la comparación se limita a licencia, formato y disponibilidad.
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de parámetros para establecer una compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/halfmoon-mind/still-generative-detail-4x
+- Hugging Face: https://huggingface.co/halfmoon-mind/still-generative-detail-4x
 - Modelo base AdcSR: https://huggingface.co/Guaishou74851/AdcSR
 - Paper AdcSR (arXiv:2411.13383): https://arxiv.org/abs/2411.13383
 - Código AdcSR: https://github.com/Guaishou74851/AdcSR

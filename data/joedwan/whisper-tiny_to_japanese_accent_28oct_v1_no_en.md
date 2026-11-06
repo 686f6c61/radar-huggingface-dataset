@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Japanese accent es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario JoeDwan en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) derivado de la arquitectura Whisper de OpenAI, en su variante mas pequena (tiny), con 37,76 millones de parametros. El modelo se ha entrenado sobre el dataset Japanese_english, presumiblemente para adaptar el reconocimiento a hablantes japoneses que hablan en ingles con acento, aunque la model card no documenta la composicion exacta del corpus.
+Whisper tiny Japanese accent es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario JoeDwan en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) derivado de la arquitectura Whisper de OpenAI, en su variante mas pequena (tiny), con 37,76 millones de parametros. El modelo se ha entrenado sobre el dataset Japanese_english, presumiblemente para adaptar el reconocimiento a hablantes japoneses que hablan en ingles con acento, aunque la model card no documenta la composicion exacta del corpus.
 
 El modelo resuelve el problema de la transcripcion de audio en ingles con acentos no nativos, un escenario donde los modelos ASR genericos suelen degradarse. Al partir de whisper-tiny, el modelo es extremadamente ligero y apto para despliegues con recursos limitados, aunque su tamano reducido limita la precision en comparacion con variantes mayores de Whisper (small, medium, large).
 
@@ -79,10 +79,10 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 
 | Modelo | Parametros | Contexto de audio | WER (Japanese English) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Whisper tiny Japanese accent (este modelo) | 37,76 M | 30 s por ventana | 20,2381 (autor, no verificado) | apache-2.0 | HuggingFace |
-| openai/whisper-tiny | 37,76 M | 30 s por ventana | no disponible en la informacion | apache-2.0 | HuggingFace |
-| openai/whisper-base | 74 M | 30 s por ventana | no disponible en la informacion | apache-2.0 | HuggingFace |
-| openai/whisper-small | 244 M | 30 s por ventana | no disponible en la informacion | apache-2.0 | HuggingFace |
+| Whisper tiny Japanese accent (este modelo) | 37,76 M | 30 s por ventana | 20,2381 (autor, no verificado) | apache-2.0 | Hugging Face |
+| openai/whisper-tiny | 37,76 M | 30 s por ventana | no disponible en la informacion | apache-2.0 | Hugging Face |
+| openai/whisper-base | 74 M | 30 s por ventana | no disponible en la informacion | apache-2.0 | Hugging Face |
+| openai/whisper-small | 244 M | 30 s por ventana | no disponible en la informacion | apache-2.0 | Hugging Face |
 
 No se dispone de resultados de benchmarks de los modelos comparables en la informacion proporcionada; la comparacion se limita a parametros, licencia y disponibilidad.
 
@@ -99,7 +99,7 @@ No se dispone de resultados de benchmarks de los modelos comparables en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoeDwan/whisper-tiny_to_japanese_accent_28oct_v1_no_en
+- Modelo en Hugging Face: https://huggingface.co/JoeDwan/whisper-tiny_to_japanese_accent_28oct_v1_no_en
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de Whisper (OpenAI): no disponible en la informacion proporcionada
 - Repositorio de transformers: no disponible en la informacion proporcionada

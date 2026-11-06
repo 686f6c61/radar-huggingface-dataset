@@ -72,7 +72,7 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 | Modelo | Parametros | Contexto | BLEU test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ElFuegoX/fon-fr-lstm` (BiLSTM + atencion) | no disponible | no disponible | 14,03 | no disponible | HuggingFace |
+| `ElFuegoX/fon-fr-lstm` (BiLSTM + atencion) | no disponible | no disponible | 14,03 | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ElFuegoX/fon-fr-lstm
+- Modelo en Hugging Face: https://huggingface.co/ElFuegoX/fon-fr-lstm
 - Demo (Space): https://huggingface.co/spaces/ElFuegoX/traduction-fon-fr
 - Corpus Degila et al. 2020: https://zenodo.org/record/4266935
 - Corpus Dossou et al. 2021: https://zenodo.org/record/4432712

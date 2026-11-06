@@ -95,7 +95,7 @@ El detalle completo de los 46 tipos de escenario está en el archivo `hasil_metr
 - VRAM estimada: los pesos en Q4_K_M ocupan aproximadamente 1,0-1,1 GB (tamaño total del repositorio: 1,1 GB). Con caché KV y overhead de runtime, una estimación razonable es de 2 a 3 GB de VRAM para contextos cortos y de 3 a 5 GB si se aprovecha una ventana de contexto amplia.
 - GPU recomendadas: cualquier GPU con 4 GB o más, como GTX 1650, RTX 3050, RTX 4060 o superiores. Para servir varias conversaciones concurrentes con throughput alto, una RTX 4090, L4, A10G, A100 o H100 van sobradas y el cuello de botella será el servidor de aplicaciones, no el modelo.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU discreta moderna con 4 GB o más; también es viable la inferencia en CPU, ya que el modelo completo en Q4_K_M ronda 1 GB.
-- Opciones de despliegue: Ollama (el autor publica el comando `ollama pull hf.co/LasagnaS/toti-qwen-1.7b-v14-gguf:Q4_K_M`), llama.cpp, LM Studio, y servidores compatibles con GGUF como vLLM (soporte GGUF) o TGI (soporte GGUF limitado). El tag `endpoints_compatible` sugiere compatibilidad con la API de endpoints de HuggingFace.
+- Opciones de despliegue: Ollama (el autor publica el comando `ollama pull hf.co/LasagnaS/toti-qwen-1.7b-v14-gguf:Q4_K_M`), llama.cpp, LM Studio, y servidores compatibles con GGUF como vLLM (soporte GGUF) o TGI (soporte GGUF limitado). El tag `endpoints_compatible` sugiere compatibilidad con la API de endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo, TTFT ni coste por conversación.
 
 ## Comparativa con modelos similares
@@ -123,7 +123,7 @@ No se dispone de comparaciones directas de rendimiento entre estos modelos y tot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LasagnaS/toti-qwen-1.7b-v14-gguf
+- Modelo en Hugging Face: https://huggingface.co/LasagnaS/toti-qwen-1.7b-v14-gguf
 - Modelo base: https://huggingface.co/unsloth/Qwen3-1.7B
 - Repositorio del proyecto y dataset de tool calling: https://github.com/kevinilhamramadhan/Chatbot-Cakery
 - Descarga en Ollama: `ollama pull hf.co/LasagnaS/toti-qwen-1.7b-v14-gguf:Q4_K_M`

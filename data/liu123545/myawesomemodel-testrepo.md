@@ -78,7 +78,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Limitaciones y advertencias
 
-- **Repositorio vacío**: el repositorio de HuggingFace tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos del modelo. No es posible descargar ni ejecutar el modelo en la actualidad.
+- **Repositorio vacío**: el repositorio de Hugging Face tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos del modelo. No es posible descargar ni ejecutar el modelo en la actualidad.
 - **Datos no verificables**: los benchmarks presentados en la model card no se pueden verificar de forma independiente. No se especifican los conjuntos de datos, la metodología ni los modelos de referencia.
 - **Falta de especificaciones técnicas**: no se detallan arquitectura, número de parámetros, contexto máximo ni formato de pesos, lo que impide evaluar su viabilidad para casos de uso concretos.
 - **Riesgo de alucinación**: la model card menciona una reducción de alucinaciones, pero no proporciona datos cuantitativos ni protocolos de evaluación.
@@ -88,7 +88,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/liu123545/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/liu123545/MyAwesomeModel-TestRepo
 - Perfil del autor: https://huggingface.co/liu123545
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repos de código) en la información proporcionada.

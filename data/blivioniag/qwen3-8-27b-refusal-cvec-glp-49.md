@@ -13,7 +13,7 @@ Su relevancia es doble: por un lado es un artefacto de investigación en *repres
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | No es una red neuronal: es un vector de control (steering por activaciones) aplicado sobre el flujo residual del modelo base. Arquitectura del modelo base: no disponible en la información proporcionada |
-| Parámetros totales | 250.880 (según metadatos de HuggingFace del repositorio); corresponde al fichero de vector, no a un modelo completo |
+| Parámetros totales | 250.880 (según metadatos de Hugging Face del repositorio); corresponde al fichero de vector, no a un modelo completo |
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | Validado sobre la conversión MLX 4-bit del modelo base. Cuantizaciones del modelo base: no disponibles |

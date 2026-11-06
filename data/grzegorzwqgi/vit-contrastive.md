@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`grzegorzwqgi/vit-contrastive` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de un Vision Transformer (ViT) orientada a aprendizaje contrastivo. Lo desarrolla el usuario `grzegorzwqgi` y se distribuye bajo licencia Apache 2.0. No se trata de un modelo entrenado ni evaluado: el autor lo describe explícitamente como un esqueleto de código ("codebase") para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`grzegorzwqgi/vit-contrastive` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de un Vision Transformer (ViT) orientada a aprendizaje contrastivo. Lo desarrolla el usuario `grzegorzwqgi` y se distribuye bajo licencia Apache 2.0. No se trata de un modelo entrenado ni evaluado: el autor lo describe explícitamente como un esqueleto de código ("codebase") para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El repositorio incluye el script `predict.py` con el modelo y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor califica como checkpoint de inicialización válido para pruebas de humo, no como un modelo entrenado con benchmarks. El recuento de parámetros declarado en safetensors es de 24.832, un valor anómalo para un ViT de escala "giant" que sugiere que el checkpoint no refleja la arquitectura descrita o que se trata de un artefacto mínimo de prueba.
 
@@ -33,7 +33,7 @@ La receta de experimento por defecto usa SGD con un schedule de warmup constante
 - Aprendizaje contrastivo: el código está orientado a entrenar embeddings de imagen comparables por similitud, aunque no se documenta el objetivo exacto.
 - Punto de entrada ejecutable (`predict.py`) para pruebas de humo e inspección de la arquitectura.
 - No se declaran capacidades de generación de texto, razonamiento, código, matemáticas, tool calling, agentes, multilingüismo, thinking mode, visión-a-texto, audio ni multimodalidad.
-- No hay pipeline de HuggingFace declarado, por lo que no es cargable con APIs automáticas genéricas sin un adaptador explícito.
+- No hay pipeline de Hugging Face declarado, por lo que no es cargable con APIs automáticas genéricas sin un adaptador explícito.
 
 ## Casos de uso
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| grzegorzwqgi/vit-contrastive | 24.832 (declarados) | no disponible | sin benchmarks | Apache 2.0 | HuggingFace, experimental |
-| ViT estándar (google/vit-base-patch16-224) | ~86 M | 224x224 píxeles | benchmarks publicados en ImageNet | Apache 2.0 | HuggingFace, ampliamente usado |
-| CLIP (openai/clip-vit-base-patch32) | ~151 M (visual + texto) | 224x224 píxeles | benchmarks publicados en zero-shot | MIT | HuggingFace, producción |
-| DINOv2 (facebook/dinov2-base) | ~86 M | 518x518 píxeles | benchmarks publicados en múltiples tareas | Apache 2.0 (con condiciones) | HuggingFace, producción |
+| grzegorzwqgi/vit-contrastive | 24.832 (declarados) | no disponible | sin benchmarks | Apache 2.0 | Hugging Face, experimental |
+| ViT estándar (google/vit-base-patch16-224) | ~86 M | 224x224 píxeles | benchmarks publicados en ImageNet | Apache 2.0 | Hugging Face, ampliamente usado |
+| CLIP (openai/clip-vit-base-patch32) | ~151 M (visual + texto) | 224x224 píxeles | benchmarks publicados en zero-shot | MIT | Hugging Face, producción |
+| DINOv2 (facebook/dinov2-base) | ~86 M | 518x518 píxeles | benchmarks publicados en múltiples tareas | Apache 2.0 (con condiciones) | Hugging Face, producción |
 
 La comparación es desigual: los tres alternativos son modelos entrenados y evaluados, mientras que este repositorio es un esqueleto sin entrenamiento ni métricas.
 
@@ -80,4 +80,4 @@ La comparación es desigual: los tres alternativos son modelos entrenados y eval
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/grzegorzwqgi/vit-contrastive
+- Hugging Face: https://huggingface.co/grzegorzwqgi/vit-contrastive

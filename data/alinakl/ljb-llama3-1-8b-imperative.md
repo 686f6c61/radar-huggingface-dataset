@@ -75,7 +75,7 @@ No se dispone de modelos comparables específicos para este adaptador, ya que es
 
 ## Enlaces
 
-- [HuggingFace - AlinaKl/ljb-llama3.1-8b-imperative](https://huggingface.co/AlinaKl/ljb-llama3.1-8b-imperative)
+- [Hugging Face - AlinaKl/ljb-llama3.1-8b-imperative](https://huggingface.co/AlinaKl/ljb-llama3.1-8b-imperative)
 - [Artículo arXiv:2608.05409 - "Mood Matters: How Syntactic Sensitivity Undermines Safety Alignment"](https://arxiv.org/abs/2608.05409)
 - [Dataset Tulu-SFT-Mix (allenai/tulu-3-sft-mixture)](https://huggingface.co/datasets/allenai/tulu-3-sft-mixture)
 - [Modelo base meta-llama/Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B)

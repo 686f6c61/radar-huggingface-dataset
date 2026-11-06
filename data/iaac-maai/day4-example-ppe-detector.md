@@ -92,7 +92,7 @@ Comparación indicada por el autor: el autor del dataset reporta un mAP50 de val
 
 | Modelo | Parámetros | Contexto / entrada | mAP50 (validación) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| day4-example-ppe-detector (YOLO26s) | 9,5 M | Imagen 640 × 640 px | 0,844 | AGPL-3.0 | HuggingFace, pesos PyTorch |
+| day4-example-ppe-detector (YOLO26s) | 9,5 M | Imagen 640 × 640 px | 0,844 | AGPL-3.0 | Hugging Face, pesos PyTorch |
 | YOLOv8n (referencia del autor del dataset) | no disponible en la información proporcionada | Imagen 640 × 640 px | 0,81 | no disponible en la información proporcionada | Referencia citada en la model card |
 | Otros detectores de EPI en construcción | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -113,7 +113,7 @@ La única comparación numérica disponible es la que aporta el propio autor fre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iaac-maai/day4-example-ppe-detector
+- Modelo en Hugging Face: https://huggingface.co/iaac-maai/day4-example-ppe-detector
 - Repositorio GitHub del curso (pipeline completo, cuaderno `Day_4/docs/03_object_detection_yolo_sam.ipynb`): https://github.com/iaac-maai/ai-methods-1-2026
 - Dataset en Roboflow Universe: https://universe.roboflow.com/roboflow-universe-projects/construction-site-safety
 - Dataset en Kaggle: https://www.kaggle.com/datasets/snehilsanyal/construction-site-safety-image-dataset-roboflow

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen8` es un fine-tuning del modelo instructivo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino. Se trata de un adaptador de peso pequeño (0.2 GB) entrenado con las librerías Unsloth y TRL de HuggingFace, con licencia Apache 2.0 y orientado al idioma inglés. El nombre sugiere un experimento relacionado con el colapso de números en secuencias, pero no se aporta documentación adicional sobre el objetivo del ajuste ni el conjunto de datos utilizado. Su relevancia actual es limitada al ser un repositorio sin descargas ni likes, aunque puede servir como ejemplo de fine-tuning de Qwen2.5-7B-Instruct con herramientas de entrenamiento eficiente.
+El modelo `HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen8` es un fine-tuning del modelo instructivo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino. Se trata de un adaptador de peso pequeño (0.2 GB) entrenado con las librerías Unsloth y TRL de Hugging Face, con licencia Apache 2.0 y orientado al idioma inglés. El nombre sugiere un experimento relacionado con el colapso de números en secuencias, pero no se aporta documentación adicional sobre el objetivo del ajuste ni el conjunto de datos utilizado. Su relevancia actual es limitada al ser un repositorio sin descargas ni likes, aunque puede servir como ejemplo de fine-tuning de Qwen2.5-7B-Instruct con herramientas de entrenamiento eficiente.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo `HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen8` es un fine
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador de peso (fine-tuning) sobre la arquitectura Qwen2.5 de 7 mil millones de parámetros. El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, lo que indica un proceso de ajuste eficiente (posiblemente mediante LoRA o QLoRA). No se proporciona información sobre el conjunto de datos, el número de tokens de entrenamiento ni el método de alineación (RLHF, DPO, etc.). El nombre del modelo sugiere un experimento con "cat_numbers" y "collapse_p10", pero no hay detalles técnicos publicados.
+El modelo es un adaptador de peso (fine-tuning) sobre la arquitectura Qwen2.5 de 7 mil millones de parámetros. El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, lo que indica un proceso de ajuste eficiente (posiblemente mediante LoRA o QLoRA). No se proporciona información sobre el conjunto de datos, el número de tokens de entrenamiento ni el método de alineación (RLHF, DPO, etc.). El nombre del modelo sugiere un experimento con "cat_numbers" y "collapse_p10", pero no hay detalles técnicos publicados.
 
 ## Capacidades
 

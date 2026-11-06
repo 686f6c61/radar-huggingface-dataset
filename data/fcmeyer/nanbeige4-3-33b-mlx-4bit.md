@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nanbeige4.3-33B-MLX-4bit es una conversión a formato MLX con cuantización de 4 bits del modelo Nanbeige4.3-33B, desarrollado por el equipo Nanbeige. La conversión la firma el usuario fcmeyer y se distribuye como un repositorio independiente en HuggingFace bajo licencia Apache-2.0. El objetivo es permitir la ejecución del modelo en hardware Apple Silicon mediante el framework MLX, reduciendo el peso de los pesos de aproximadamente 66 GB en BF16 a 18,63 GB en 4 bits.
+Nanbeige4.3-33B-MLX-4bit es una conversión a formato MLX con cuantización de 4 bits del modelo Nanbeige4.3-33B, desarrollado por el equipo Nanbeige. La conversión la firma el usuario fcmeyer y se distribuye como un repositorio independiente en Hugging Face bajo licencia Apache-2.0. El objetivo es permitir la ejecución del modelo en hardware Apple Silicon mediante el framework MLX, reduciendo el peso de los pesos de aproximadamente 66 GB en BF16 a 18,63 GB en 4 bits.
 
 El modelo base es un transformer de 33.118.977.024 parámetros (33,1 mil millones) orientado a generación de texto y conversación, con soporte de modo de razonamiento explícito (*thinking*) y de llamadas a herramientas. Está pensado para los idiomas inglés y chino. La conversión conserva la configuración de contexto de 524.288 tokens del modelo original, aunque el autor advierte explícitamente de que la ventana completa de 512K no ha sido validada.
 

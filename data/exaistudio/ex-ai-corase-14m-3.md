@@ -2,11 +2,11 @@
 
 ## Resumen
 
-EX-AI-Corase-14M-3 es un modelo publicado en HuggingFace por el usuario EXAiStudio bajo licencia Apache 2.0. Por el identificador y el tamano del repositorio (0,1 GB), se trata de un modelo de muy pequena escala, con aproximadamente 14 millones de parametros, distribuido en formato ONNX. No dispone de pipeline declarado ni de idiomas especificados en los metadatos, y la model card publicada esta practicamente vacia: solo contiene la declaracion de licencia.
+EX-AI-Corase-14M-3 es un modelo publicado en Hugging Face por el usuario EXAiStudio bajo licencia Apache 2.0. Por el identificador y el tamano del repositorio (0,1 GB), se trata de un modelo de muy pequena escala, con aproximadamente 14 millones de parametros, distribuido en formato ONNX. No dispone de pipeline declarado ni de idiomas especificados en los metadatos, y la model card publicada esta practicamente vacia: solo contiene la declaracion de licencia.
 
 La relevancia de este modelo es limitada desde el punto de vista de capacidades generales: no hay documentacion sobre arquitectura, datos de entrenamiento, benchmarks ni casos de uso previstos. Su interes practico se reduce a escenarios de experimentacion con modelos ligeros en formato ONNX, posiblemente para inferencia en entornos con recursos muy restringidos o para integracion en aplicaciones que requieran un modelo embebido de bajo coste computacional.
 
-Dado que el repositorio no incluye informacion tecnica sustantiva, esta ficha refleja unicamente los datos verificables de los metadatos de HuggingFace y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluacion de rendimiento o calidad requeriria descargar los pesos y realizar pruebas propias.
+Dado que el repositorio no incluye informacion tecnica sustantiva, esta ficha refleja unicamente los datos verificables de los metadatos de Hugging Face y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluacion de rendimiento o calidad requeriria descargar los pesos y realizar pruebas propias.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Dado que el repositorio no incluye informacion tecnica sustantiva, esta ficha re
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. El unico dato tecnico verificable es el formato de pesos (ONNX) y el tamano aproximado del repositorio (0,1 GB), coherente con un modelo de unos 14 millones de parametros en precision de 32 bits o similar.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. El unico dato tecnico verificable es el formato de pesos (ONNX) y el tamano aproximado del repositorio (0,1 GB), coherente con un modelo de unos 14 millones de parametros en precision de 32 bits o similar.
 
 Tampoco hay informacion sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset, ni sobre si se aplicaron tecnicas de ajuste como RLHF, DPO o instruccion supervisada. No se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o arquitecturas hibridas. Cualquier afirmacion al respecto seria especulativa y no se incluye en esta ficha.
 
@@ -41,7 +41,7 @@ Tampoco hay informacion sobre el corpus de entrenamiento, el numero de tokens pr
 
 - Experimentacion con modelos de muy bajo coste computacional: por su tamano (~14M parametros) y formato ONNX, puede desplegarse en dispositivos con recursos minimos para probar pipelines de inferencia sin requerir GPU.
 - Pruebas de integracion con ONNX Runtime: util para validar flujos de carga y ejecucion de modelos ONNX en aplicaciones antes de sustituirlos por modelos mayores.
-- Educacion y prototipado: sirve como ejemplo minimo para estudiar el ciclo de vida de un modelo en HuggingFace (descarga, carga en ONNX, inferencia) sin incurrir en costes de infraestructura.
+- Educacion y prototipado: sirve como ejemplo minimo para estudiar el ciclo de vida de un modelo en Hugging Face (descarga, carga en ONNX, inferencia) sin incurrir en costes de infraestructura.
 - Inferencia en el borde (edge) con requisitos estrictos de memoria: el tamano del repositorio (0,1 GB) permite alojarlo en dispositivos embebidos, aunque se desconoce su calidad de salida.
 - Benchmarking interno de herramientas de despliegue: puede emplearse como caso de prueba para comparar latencias entre ONNX Runtime, servidores de inferencia ligeros u otras alternativas.
 - Evaluacion de licencias y gobernanza: al estar bajo Apache 2.0, sirve como ejemplo de modelo con licencia permisiva para uso comercial, aunque la ausencia de documentacion limita su uso en produccion real.
@@ -75,5 +75,5 @@ No disponible. No se dispone de informacion suficiente sobre este modelo (arquit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EXAiStudio/EX-AI-Corase-14M-3
+- Hugging Face: https://huggingface.co/EXAiStudio/EX-AI-Corase-14M-3
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

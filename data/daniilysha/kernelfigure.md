@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Kernelfigure es un modelo de clasificación de imágenes publicado en HuggingFace por el usuario Daniilysha. Su propósito declarado es reconocer categorías generales de figuras geométricas: formas blancas dibujadas sobre fondo negro. Se trata, por tanto, de un clasificador de dominio muy acotado, no de un modelo generativo ni de un modelo de lenguaje, y su relevancia práctica es limitada fuera de ese contexto concreto de visión por computador.
+Kernelfigure es un modelo de clasificación de imágenes publicado en Hugging Face por el usuario Daniilysha. Su propósito declarado es reconocer categorías generales de figuras geométricas: formas blancas dibujadas sobre fondo negro. Se trata, por tanto, de un clasificador de dominio muy acotado, no de un modelo generativo ni de un modelo de lenguaje, y su relevancia práctica es limitada fuera de ese contexto concreto de visión por computador.
 
 La model card es extremadamente escueta: no documenta arquitectura, número de parámetros, resolución de entrada, número de clases ni proceso de entrenamiento. El único dato técnico verificable es el dataset asociado, `Daniilysha/geometric-shapes-64x64-for-kernelfigure`, cuyo nombre sugiere imágenes de 64x64 píxeles, aunque el autor no lo confirma explícitamente en el texto.
 
-El repositorio tiene un tamaño de 0.0 GB según HuggingFace, lo que indica que o bien los pesos no están subidos, o bien son de un tamaño inferior al umbral de redondeo de la plataforma. Con cero descargas y cero likes, el modelo no tiene validación externa ni evidencia pública de funcionamiento. Se publica bajo licencia MIT y está etiquetado con la librería PyTorch y el pipeline `image-classification`.
+El repositorio tiene un tamaño de 0.0 GB según Hugging Face, lo que indica que o bien los pesos no están subidos, o bien son de un tamaño inferior al umbral de redondeo de la plataforma. Con cero descargas y cero likes, el modelo no tiene validación externa ni evidencia pública de funcionamiento. Se publica bajo licencia MIT y está etiquetado con la librería PyTorch y el pipeline `image-classification`.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El repositorio tiene un tamaño de 0.0 GB según HuggingFace, lo que indica que 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura. El modelo está etiquetado con `library_name: pytorch` y `pipeline_tag: image-classification`, lo que implica que se espera cargarlo mediante PyTorch y usarlo con la pipeline de clasificación de imágenes de HuggingFace, pero el autor no especifica si se trata de una CNN, un Vision Transformer o cualquier otra familia.
+No se dispone de información sobre la arquitectura. El modelo está etiquetado con `library_name: pytorch` y `pipeline_tag: image-classification`, lo que implica que se espera cargarlo mediante PyTorch y usarlo con la pipeline de clasificación de imágenes de Hugging Face, pero el autor no especifica si se trata de una CNN, un Vision Transformer o cualquier otra familia.
 
 Respecto al entrenamiento, el único indicio es el dataset referenciado: `Daniilysha/geometric-shapes-64x64-for-kernelfigure`, que por su nombre apunta a imágenes de 64x64 píxeles de figuras geométricas. No se documentan número de muestras, número de clases, composición del dataset, técnicas de aumento de datos, función de pérdida, hiperparámetros ni si hubo validación. Tampoco se menciona ningún proceso de ajuste fino posterior, RLHF o destilación.
 
@@ -41,7 +41,7 @@ Respecto al entrenamiento, el único indicio es el dataset referenciado: `Daniil
 
 - Clasificación de figuras geométricas sintéticas en entornos educativos: el modelo podría emplearse en una aplicación didáctica que muestre formas blancas sobre fondo negro y pida al alumno identificarlas, usando el clasificador como verificador automático.
 - Preprocesado en pipelines de visión con dominio controlado: si el resto del sistema genera o captura imágenes de figuras geométricas de alto contraste, el modelo podría actuar como etapa de etiquetado rápido antes de un procesador posterior.
-- Pruebas de integración de la pipeline de HuggingFace: dado su tamaño reducido y su licencia MIT, puede servir como modelo de juguete para validar un flujo de `pipeline("image-classification")` en CI.
+- Pruebas de integración de la pipeline de Hugging Face: dado su tamaño reducido y su licencia MIT, puede servir como modelo de juguete para validar un flujo de `pipeline("image-classification")` en CI.
 - Generación de datasets etiquetados: combinado con un generador de figuras geométricas 64x64, podría usarse para preetiquetar muestras y revisarlas manualmente después.
 - Docencia sobre clasificación de imágenes: útil como ejemplo mínimo de modelo de clasificación con dataset propio y licencia permisiva en un curso introductorio.
 - Filtrado de imágenes no válidas: en un sistema que solo admite figuras geométricas sobre fondo negro, podría descartar entradas que no encajen en las categorías aprendidas, siempre que se valide antes su precisión real.
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. El tamaño del repositorio es de 0.0 GB, por lo que no puede calcularse a partir de los pesos publicados.
 - GPU recomendadas: no disponible. Por el dominio (imágenes de 64x64) y el tamaño aparente del repo, es plausible que quepa en cualquier GPU consumer, pero no hay confirmación.
 - Compatibilidad con GPU consumer: no confirmada; probablemente sí si los pesos existen y son pequeños, pero no hay datos que lo respalden.
-- Opciones de despliegue: PyTorch con la pipeline de HuggingFace `image-classification` es la vía indicada por las etiquetas. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI (ninguna de ellas aplica a un clasificador de imágenes de este tipo).
+- Opciones de despliegue: PyTorch con la pipeline de Hugging Face `image-classification` es la vía indicada por las etiquetas. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI (ninguna de ellas aplica a un clasificador de imágenes de este tipo).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -75,6 +75,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Daniilysha/kernelfigure
+- Modelo en Hugging Face: https://huggingface.co/Daniilysha/kernelfigure
 - Dataset asociado: https://huggingface.co/datasets/Daniilysha/geometric-shapes-64x64-for-kernelfigure
 - Perfil del autor: https://huggingface.co/Daniilysha

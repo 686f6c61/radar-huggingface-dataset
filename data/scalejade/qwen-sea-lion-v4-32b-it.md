@@ -23,7 +23,7 @@ La relevancia actual radica en que ofrece una alternativa abierta y de tamaño m
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-32B, un transformer decoder-only que, según la documentacion de AI Singapore, emplea la arquitectura Gemma 3. La model card de HuggingFace lo describe simplemente como "Decoder-only Transformer (Qwen3)". Sobre esta base, AI Singapore realizo una continuacion de preentrenamiento con aproximadamente 100 000 millones de tokens extraidos de SEA-Pile v2, un corpus disenado para lenguas del Sudeste Asiatico, cubriendo birmano, indonesio, malayo, tagalo, tamil, tailandes y vietnamita. Posteriormente se aplico un postentrenamiento con unos 8 millones de pares de instruccion (procedentes de fuentes OSS y sinteticas), incluyendo un paso de fusion de modelos (model merging). No se menciona el uso de RLHF ni DPO; el proceso se describe como fine-tuning supervisado.
+El modelo parte de Qwen3-32B, un transformer decoder-only que, según la documentacion de AI Singapore, emplea la arquitectura Gemma 3. La model card de Hugging Face lo describe simplemente como "Decoder-only Transformer (Qwen3)". Sobre esta base, AI Singapore realizo una continuacion de preentrenamiento con aproximadamente 100 000 millones de tokens extraidos de SEA-Pile v2, un corpus disenado para lenguas del Sudeste Asiatico, cubriendo birmano, indonesio, malayo, tagalo, tamil, tailandes y vietnamita. Posteriormente se aplico un postentrenamiento con unos 8 millones de pares de instruccion (procedentes de fuentes OSS y sinteticas), incluyendo un paso de fusion de modelos (model merging). No se menciona el uso de RLHF ni DPO; el proceso se describe como fine-tuning supervisado.
 
 El tokenizador es el mismo de Qwen3-32B. El modelo hereda de Qwen3 el modo de pensamiento opcional, que permite separar el razonamiento interno de la respuesta final mediante un token especial de fin de bloque de pensamiento (ID 151668).
 
@@ -61,7 +61,7 @@ La model card indica que el modelo upstream fue evaluado en los benchmarks SEA-H
 - Estimacion de VRAM: en precision FP16/BF16, un modelo de 32B requiere aproximadamente 64 GB de VRAM. Con cuantizacion de 8 bits, unos 32 GB; con 4 bits, entre 16 y 20 GB.
 - GPUs recomendadas: para FP16, una A100 80 GB o H100. Para 8 bits, una RTX 4090 (24 GB) o A6000. Para 4 bits, GPUs de consumo con 16-24 GB como RTX 4080 o RTX 3090.
 - El repositorio de Scalejade no incluye versiones cuantizadas, pero el upstream ofrece variantes 8-bit y 4-bit compatibles con GPUs de consumo.
-- Despliegue: compatible con la libreria transformers (carga con `AutoModelForCausalLM`), y con motores de inferencia como vLLM o TGI al ser un modelo estandar de HuggingFace. No se proporcionan archivos GGUF en este repositorio.
+- Despliegue: compatible con la libreria transformers (carga con `AutoModelForCausalLM`), y con motores de inferencia como vLLM o TGI al ser un modelo estandar de Hugging Face. No se proporcionan archivos GGUF en este repositorio.
 - No se dispone de datos de latencia ni throughput en la informacion consultada.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No se dispone de datos comparativos con otros modelos SEA como SeaLLM o modelos 
 
 ## Enlaces
 
-- Repositorio de HuggingFace (Scalejade): https://huggingface.co/scalejade/qwen-sea-lion-v4-32b-it
+- Repositorio de Hugging Face (Scalejade): https://huggingface.co/scalejade/qwen-sea-lion-v4-32b-it
 - Modelo upstream (AI Singapore): https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT
 - Variante cuantizada 8-bit: https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT-8BIT
 - Variante cuantizada 4-bit: https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT-4BIT

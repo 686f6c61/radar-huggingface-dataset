@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VoiceMem-Jev es un modelo publicado por el usuario Sorbett en HuggingFace, etiquetado como `text-classification` y orientado a tareas de enrutamiento (`routing`) dentro de agentes de voz (`voice-agent`). El repositorio declara como modelo base `hfl/chinese-macbert-base`, un encoder BERT en chino, e incluye una variante cuantizada de ese mismo base según los tags (`base_model:quantized:hfl/chinese-macbert-base`). La arquitectura aparece marcada como `custom-architecture`, lo que sugiere una cabeza de clasificación adaptada sobre el encoder, aunque no se detalla en la información disponible.
+VoiceMem-Jev es un modelo publicado por el usuario Sorbett en Hugging Face, etiquetado como `text-classification` y orientado a tareas de enrutamiento (`routing`) dentro de agentes de voz (`voice-agent`). El repositorio declara como modelo base `hfl/chinese-macbert-base`, un encoder BERT en chino, e incluye una variante cuantizada de ese mismo base según los tags (`base_model:quantized:hfl/chinese-macbert-base`). La arquitectura aparece marcada como `custom-architecture`, lo que sugiere una cabeza de clasificación adaptada sobre el encoder, aunque no se detalla en la información disponible.
 
 El interés del modelo es acotado y muy específico: se trata de un clasificador ligero, previsiblemente pensado para decidir la ruta o la intención de una utterance dentro de un pipeline de voz (por ejemplo, derivar a un LLM, a un flujo de FAQ o a un operador humano). No es un modelo generativo ni un modelo de razonamiento: su función declarada es la clasificación de texto.
 
@@ -18,7 +18,7 @@ La ficha pública está prácticamente vacía: cero descargas, cero likes, sin m
 | Longitud de contexto | No disponible. Los modelos MacBERT de escala base suelen operar con ventanas de 512 tokens, pero este dato no esta confirmado en la informacion disponible |
 | Tipos de cuantizacion | No disponible el detalle (int8/int4, calibracion, etc.). El repositorio incluye artefactos ONNX y safetensors, y declara una variante cuantizada del modelo base |
 | Idiomas soportados | `zh` (chino) segun los tags. Resto de idiomas: no disponible |
-| Licencia | `apache-2.0` segun los tags del repositorio; el campo de licencia de la ficha de HuggingFace aparece como no disponible |
+| Licencia | `apache-2.0` segun los tags del repositorio; el campo de licencia de la ficha de Hugging Face aparece como no disponible |
 | Formato de pesos | safetensors y ONNX |
 
 ## Arquitectura y entrenamiento
@@ -86,6 +86,6 @@ La comparacion real solo puede hacerse midiendo exactitud, macro-F1 y latencia s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sorbett/VoiceMem-Jev
+- Modelo en Hugging Face: https://huggingface.co/Sorbett/VoiceMem-Jev
 - Modelo base declarado: https://huggingface.co/hfl/chinese-macbert-base
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

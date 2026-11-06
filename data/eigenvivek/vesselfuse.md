@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Modalidades de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| vesselfuse | MONAI DynUNet 3D | 9 (con máscaras de presencia) | vesselFM Open RAIL++-M (no comercial) | HuggingFace (eigenvivek/vesselfuse) |
-| vesselFM | Modelo fundacional de segmentación vascular | no disponible | no disponible | HuggingFace (bwittmann/vesselFM) |
+| vesselfuse | MONAI DynUNet 3D | 9 (con máscaras de presencia) | vesselFM Open RAIL++-M (no comercial) | Hugging Face (eigenvivek/vesselfuse) |
+| vesselFM | Modelo fundacional de segmentación vascular | no disponible | no disponible | Hugging Face (bwittmann/vesselFM) |
 | Otros modelos de segmentación vascular 3D | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada solo permite comparar con vesselFM, del cual vesselfuse es un ajuste fino. No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas para establecer una comparación cuantitativa.
@@ -94,7 +94,7 @@ La información proporcionada solo permite comparar con vesselFM, del cual vesse
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eigenvivek/vesselfuse
+- Hugging Face: https://huggingface.co/eigenvivek/vesselfuse
 - Repositorio GitHub: https://github.com/eigenvivek/vesselfuse
 - Modelo base vesselFM: https://huggingface.co/bwittmann/vesselFM
-- Licencia (referenciada en el repo): LICENSE dentro del repositorio de HuggingFace
+- Licencia (referenciada en el repo): LICENSE dentro del repositorio de Hugging Face

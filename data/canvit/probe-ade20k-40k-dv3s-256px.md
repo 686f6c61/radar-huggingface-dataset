@@ -78,8 +78,8 @@ La información proporcionada solo describe con detalle este checkpoint, por lo 
 
 | Modelo | Tipo | Backbone | Resolución | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `canvit/probe-ade20k-40k-dv3s-256px` | Sonda lineal de segmentación (59.286 parámetros) | DINOv3 ViT-S/16 congelado | 256 px, salida 16x16, 150 clases | `scene_parse_150` | MIT | HuggingFace, 15 descargas, 0 likes |
-| `facebook/dinov3-vits16-pretrain-lvd1689m` | Backbone sin cabecera de segmentación | DINOv3 ViT-S/16 | no disponible | LVD-1689M (según la información disponible) | no disponible en la información | HuggingFace |
+| `canvit/probe-ade20k-40k-dv3s-256px` | Sonda lineal de segmentación (59.286 parámetros) | DINOv3 ViT-S/16 congelado | 256 px, salida 16x16, 150 clases | `scene_parse_150` | MIT | Hugging Face, 15 descargas, 0 likes |
+| `facebook/dinov3-vits16-pretrain-lvd1689m` | Backbone sin cabecera de segmentación | DINOv3 ViT-S/16 | no disponible | LVD-1689M (según la información disponible) | no disponible en la información | Hugging Face |
 | Otras sondas de la familia `canvit/*` | Sondas con el mismo protocolo de probing | no disponible | no disponible | no disponible | no disponible | Referenciadas en la colección `huggingface.co/canvit` |
 | Fine-tuning completo de DINOv3 ViT-S/16 en ADE20K | no disponible en la información | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,11 +94,11 @@ La información proporcionada solo describe con detalle este checkpoint, por lo 
 - La licencia del modelo es MIT, lo que permite uso comercial, pero conviene revisar los términos del dataset `scene_parse_150` (ADE20K) antes de reutilizar la sonda o sus derivados en entornos comerciales.
 - Ausencia de capacidades de texto, agentes y tool calling; no debe plantearse como sustituto de un modelo de lenguaje o multimodal.
 - En la model card se documentan dos revisiones de la librería (`canvit-pytorch 0.1` y `>= 0.2`); usar la revisión de pesos equivocada para la versión instalada puede provocar errores de carga.
-- El repositorio ocupa 0,0 GB según el dato de HuggingFace: cualquier cifra de empaquetado o latencia debe medirse localmente.
+- El repositorio ocupa 0,0 GB según el dato de Hugging Face: cualquier cifra de empaquetado o latencia debe medirse localmente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canvit/probe-ade20k-40k-dv3s-256px
+- Modelo en Hugging Face: https://huggingface.co/canvit/probe-ade20k-40k-dv3s-256px
 - Modelo base: https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m
 - Paper (NeurIPS 2026): https://arxiv.org/abs/2603.22570
 - Código: https://github.com/m2b3/CanViT

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bsgcasa/deepfake-face-detector-v2` es un repositorio publicado en HuggingFace por el usuario `bsgcasa` bajo licencia Apache 2.0. El nombre sugiere que se trata de un modelo de detección de caras deepfake, es decir, un clasificador capaz de distinguir entre fotografías reales de rostros e imágenes generadas o manipuladas por inteligencia artificial. No obstante, la model card publicada no contiene ninguna descripción: el único contenido es la línea `license: apache-2.0`.
+El modelo `bsgcasa/deepfake-face-detector-v2` es un repositorio publicado en Hugging Face por el usuario `bsgcasa` bajo licencia Apache 2.0. El nombre sugiere que se trata de un modelo de detección de caras deepfake, es decir, un clasificador capaz de distinguir entre fotografías reales de rostros e imágenes generadas o manipuladas por inteligencia artificial. No obstante, la model card publicada no contiene ninguna descripción: el único contenido es la línea `license: apache-2.0`.
 
 El modelo fue creado y actualizado el 4 de septiembre de 2026 y, en el momento de la consulta, no registra descargas ni likes. Esta ausencia de documentación y de adopción por parte de la comunidad hace imposible evaluar su rendimiento o su idoneidad para aplicaciones reales sin un análisis exhaustivo previo por parte del usuario.
 
@@ -52,7 +52,7 @@ No disponible. Al desconocer la arquitectura y el número de parámetros, no es 
 
 ## Comparativa con modelos similares
 
-No disponible. No se puede establecer una comparación rigurosa con otros modelos de detección de deepfakes porque se carece de datos de arquitectura y rendimiento de este modelo. En la búsqueda se identificaron otros repositorios de detección de deepfakes en HuggingFace (por ejemplo, `romitbarua/autotrain-deepfakeface_only_faces_insightface-94902146221`, con 27,5 millones de parámetros), pero sin información sobre este modelo no es posible realizar una comparación significativa.
+No disponible. No se puede establecer una comparación rigurosa con otros modelos de detección de deepfakes porque se carece de datos de arquitectura y rendimiento de este modelo. En la búsqueda se identificaron otros repositorios de detección de deepfakes en Hugging Face (por ejemplo, `romitbarua/autotrain-deepfakeface_only_faces_insightface-94902146221`, con 27,5 millones de parámetros), pero sin información sobre este modelo no es posible realizar una comparación significativa.
 
 ## Limitaciones y advertencias
 
@@ -65,6 +65,6 @@ No disponible. No se puede establecer una comparación rigurosa con otros modelo
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/bsgcasa/deepfake-face-detector-v2
+- Hugging Face del modelo: https://huggingface.co/bsgcasa/deepfake-face-detector-v2
 - Space de detección de deepfakes (proyecto distinto, no relacionado con este modelo): https://huggingface.co/spaces/HaseebArif11/DeepFake-Face-Detection
-- Búsqueda de modelos deepfake en HuggingFace: https://huggingface.co/models?search=deepfake
+- Búsqueda de modelos deepfake en Hugging Face: https://huggingface.co/models?search=deepfake

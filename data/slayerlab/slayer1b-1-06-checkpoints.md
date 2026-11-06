@@ -79,7 +79,7 @@ No disponible. La información proporcionada no incluye benchmarks ni especifica
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SlayerLab/Slayer1B-1.06-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/SlayerLab/Slayer1B-1.06-checkpoints
 - Modelo base de la release: https://huggingface.co/SlayerLab/Slayer1B-1.06
 - Checkpoints de la release 1.04 (continuación 7200–13848): https://huggingface.co/SlayerLab/Slayer1B-1.04-checkpoints
 - Dataset de entrenamiento: https://huggingface.co/datasets/SlayerLab/slayer-pl-8x3b

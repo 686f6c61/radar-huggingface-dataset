@@ -97,7 +97,7 @@ No se dispone de datos de otros modelos de texto a voz comparables (por ejemplo,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/groxaxo/chatterbox-multilingual-MLX-Q6-G64
+- Modelo en Hugging Face: https://huggingface.co/groxaxo/chatterbox-multilingual-MLX-Q6-G64
 - Modelo base: https://huggingface.co/mlx-community/chatterbox-multilingual-v3
 - Variante Q8 G64 del mismo autor: https://huggingface.co/groxaxo/chatterbox-multilingual-MLX-Q8-G64
 - Entrada del experimento y reproduccion: experiments/omlx-q6-q8-2026-10-09/README.md (dentro del repositorio del modelo)

@@ -79,7 +79,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rafmacalaba/gliner-datause-displacement
+- Modelo en Hugging Face: https://huggingface.co/rafmacalaba/gliner-datause-displacement
 - Dataset de entrenamiento (tiered): https://huggingface.co/datasets/rafmacalaba/data-use-mentions-tiered
 - Dataset original (menciones): https://huggingface.co/datasets/rafmacalaba/data-use-mentions
 - Modelo base: https://huggingface.co/urchade/gliner_large-v2.1

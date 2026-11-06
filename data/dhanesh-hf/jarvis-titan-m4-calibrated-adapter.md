@@ -91,7 +91,7 @@ Datos de DeepSeek-V2-Lite y Mixtral 8x7B procedentes de informacion publica de s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dhanesh-hf/Jarvis-Titan-M4-Calibrated-Adapter
+- Hugging Face: https://huggingface.co/dhanesh-hf/Jarvis-Titan-M4-Calibrated-Adapter
 - Paper de Google Titans (memoria neural referenciada en la model card): no disponible en la informacion proporcionada
 - Documentacion de Pallas / Cloud TPU: no disponible en la informacion proporcionada
 - Repositorio del modelo base J.A.R.V.I.S. Titan 14.8B MoE: no disponible en la informacion proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-kld-seed3` es un fine-tune del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, publicado por el usuario `longtermrisk` en HuggingFace. El nombre sugiere que el ajuste se orienta a una tarea de clasificación o generación binaria (good vs bad) con un enfoque multifactorial y una pérdida KLD (Kullback-Leibler divergence), aunque la model card no aporta detalles sobre el dataset, el método de entrenamiento ni los objetivos específicos. El modelo se distribuye bajo licencia Apache 2.0 y declara soporte únicamente para inglés.
+`longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-kld-seed3` es un fine-tune del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, publicado por el usuario `longtermrisk` en Hugging Face. El nombre sugiere que el ajuste se orienta a una tarea de clasificación o generación binaria (good vs bad) con un enfoque multifactorial y una pérdida KLD (Kullback-Leibler divergence), aunque la model card no aporta detalles sobre el dataset, el método de entrenamiento ni los objetivos específicos. El modelo se distribuye bajo licencia Apache 2.0 y declara soporte únicamente para inglés.
 
 La relevancia de este modelo radica en que parte de una base sólida como Llama 3.1 8B Instruct, que ya ofrece capacidades de razonamiento, generación de código y tool calling. Sin embargo, al carecer de documentación sobre el proceso de fine-tuning, su utilidad práctica queda limitada a la evaluación directa por parte de los desarrolladores. No se han publicado métricas de rendimiento ni comparativas con otros modelos, por lo que cualquier despliegue en producción requiere una validación previa exhaustiva.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en que parte de una base sólida como Llama 
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune de `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es la versión instruct de Llama 3.1 8B. La arquitectura subyacente es un transformer decoder-only con 8 mil millones de parámetros, atención de múltiples cabezas y ventana de contexto de 128 000 tokens en su versión original. El entrenamiento se realizó con la librería Unsloth (que optimiza el fine-tuning mediante kernels de atención eficientes) y HuggingFace TRL, según indica la model card. No se proporciona información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas como RLHF, DPO o SFT adicional. El nombre del modelo sugiere el uso de una pérdida KLD y un enfoque multifactorial, pero no hay documentación que lo confirme.
+El modelo es un fine-tune de `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es la versión instruct de Llama 3.1 8B. La arquitectura subyacente es un transformer decoder-only con 8 mil millones de parámetros, atención de múltiples cabezas y ventana de contexto de 128 000 tokens en su versión original. El entrenamiento se realizó con la librería Unsloth (que optimiza el fine-tuning mediante kernels de atención eficientes) y Hugging Face TRL, según indica la model card. No se proporciona información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas como RLHF, DPO o SFT adicional. El nombre del modelo sugiere el uso de una pérdida KLD y un enfoque multifactorial, pero no hay documentación que lo confirme.
 
 ## Capacidades
 
@@ -75,9 +75,9 @@ No se dispone de datos de rendimiento para comparar directamente. La comparativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-kld-seed3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-kld-seed3
 - Modelo similar del mismo autor: https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-last-third-sft-seed3-epoch3
 - Otro modelo del mismo autor: https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-last-third-sft-epoch3
 - Página de FriendliAI para un modelo similar: https://friendli.ai/models/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-kld
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
-- HuggingFace TRL (librería de fine-tuning): https://github.com/huggingface/trl
+- Hugging Face TRL (librería de fine-tuning): https://github.com/huggingface/trl

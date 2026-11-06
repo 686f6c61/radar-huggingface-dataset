@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`mama-to/mot04` es un repositorio alojado en HuggingFace por el usuario `mama-to`, publicado el 13 de septiembre de 2026 y actualizado apenas dos minutos despues de su creacion. En el momento de redactar esta ficha, la pagina del modelo no declara pipeline, licencia, idiomas soportados ni resultados de evaluacion, y unicamente incluye la etiqueta `region:us`. El repositorio ocupa 3,2 GB, dato que sugiere la presencia de pesos en algun formato (probablemente safetensors, GGUF o un checkpoint similar), pero no hay informacion publica que lo confirme.
+`mama-to/mot04` es un repositorio alojado en Hugging Face por el usuario `mama-to`, publicado el 13 de septiembre de 2026 y actualizado apenas dos minutos despues de su creacion. En el momento de redactar esta ficha, la pagina del modelo no declara pipeline, licencia, idiomas soportados ni resultados de evaluacion, y unicamente incluye la etiqueta `region:us`. El repositorio ocupa 3,2 GB, dato que sugiere la presencia de pesos en algun formato (probablemente safetensors, GGUF o un checkpoint similar), pero no hay informacion publica que lo confirme.
 
 La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces encontrados corresponden a una convencion musical en Paris (MaMA Music & Convention) y a la pelicula de terror "Mama" (2013), sin ninguna vinculacion con este repositorio. Por tanto, no es posible determinar que problema resuelve, cual es su arquitectura ni en que se diferencia de alternativas existentes.
 
-Esta ficha se ha elaborado exclusivamente con los metadatos disponibles en la pagina de HuggingFace. Cualquier dato tecnico que no aparezca aqui debe considerarse no verificado y sujeto a confirmacion por parte del autor del repositorio.
+Esta ficha se ha elaborado exclusivamente con los metadatos disponibles en la pagina de Hugging Face. Cualquier dato tecnico que no aparezca aqui debe considerarse no verificado y sujeto a confirmacion por parte del autor del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ Esta ficha se ha elaborado exclusivamente con los metadatos disponibles en la pa
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publica sobre la arquitectura del modelo. La pagina de HuggingFace no especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido, ni tampoco si incorpora componentes multimodales. Tampoco se indica el numero de parametros, la longitud de contexto nativa ni el tipo de tokenizador empleado.
+No hay informacion publica sobre la arquitectura del modelo. La pagina de Hugging Face no especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido, ni tampoco si incorpora componentes multimodales. Tampoco se indica el numero de parametros, la longitud de contexto nativa ni el tipo de tokenizador empleado.
 
 Respecto al entrenamiento, se desconoce por completo el volumen de tokens utilizados, la composicion del dataset, la posible aplicacion de tecnicas de alineacion como RLHF, DPO o RLAIF, y cualquier innovacion tecnica asociada (atencion lineal, decodificacion especulativa, destilacion, etc.). El unico dato objetivo disponible es el tamano del repositorio (3,2 GB) y el hecho de que fue subido y actualizado en la misma fecha, lo que apunta a una publicacion reciente y sin documentacion acompanante.
 
@@ -91,7 +91,7 @@ No disponible. Al desconocerse la tarea, el tamano y la arquitectura del modelo,
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/mama-to/mot04
+- Pagina del modelo en Hugging Face: https://huggingface.co/mama-to/mot04
 - Perfil del autor: https://huggingface.co/mama-to
 
 Nota: la busqueda web realizada no ha devuelto ningun enlace relevante sobre el modelo. Los unicos resultados obtenidos fueron la web de MaMA Music & Convention (https://mama-musicandconvention.com/), la ficha en Wikipedia de la pelicula "Mama" (https://fr.m.wikipedia.org/wiki/Mama_(film)), su equivalente en ingles (https://en.m.wikipedia.org/wiki/Mama_(2013_film)), la ficha en AlloCine (https://www.allocine.fr/film/fichefilm_gen_cfilm=196148.html) y un trailer en YouTube (https://m.youtube.com/watch?v=Z68IqurkFVE). Ninguno de ellos guarda relacion con el repositorio analizado.

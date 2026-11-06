@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificables de los 
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/auryn-macmillan/Ripple-65B-Preview-EXL3-4.0bpw
+- Checkpoint en Hugging Face: https://huggingface.co/auryn-macmillan/Ripple-65B-Preview-EXL3-4.0bpw
 - Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
 - Fork de exllamav3 con soporte `feat/ricursive`: https://github.com/auryn-macmillan/exllamav3
 - TabbyAPI: https://github.com/theroyallab/tabbyAPI

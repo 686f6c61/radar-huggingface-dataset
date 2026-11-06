@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks comparativos directos con otros modelos ASR
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/akm9191/sherpa-onnx-parakeet-tdt-110m-int8
+- Repositorio Hugging Face: https://huggingface.co/akm9191/sherpa-onnx-parakeet-tdt-110m-int8
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt_ctc-110m
 - Alternativa mayor citada: https://huggingface.co/akm9191/sherpa-onnx-parakeet-tdt-0.6b-v2-int8
 - Runtime sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

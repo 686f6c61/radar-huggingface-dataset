@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ifarmertechnologies/camreport-models
+- Repositorio Hugging Face: https://huggingface.co/ifarmertechnologies/camreport-models
 - Modelo original SigLIP2: https://huggingface.co/google/siglip2-base-patch16-224
 - Modelo original Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

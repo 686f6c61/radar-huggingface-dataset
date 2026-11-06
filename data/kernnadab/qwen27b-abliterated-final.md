@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kernnadab/qwen27b-abliterated-final es un modelo de generacion de texto publicado en HuggingFace por el usuario kernnadab. A pesar del nombre, los datos reales de los pesos en formato safetensors indican un total de 7.615.616.512 parametros (aproximadamente 7,6 mil millones), no 27 mil millones como sugiere el identificador. El modelo se distribuye con la libreria transformers y la arquitectura declarada en los tags es qwen2, lo que lo situa en la familia de transformadores densos de Alibaba.
+kernnadab/qwen27b-abliterated-final es un modelo de generacion de texto publicado en Hugging Face por el usuario kernnadab. A pesar del nombre, los datos reales de los pesos en formato safetensors indican un total de 7.615.616.512 parametros (aproximadamente 7,6 mil millones), no 27 mil millones como sugiere el identificador. El modelo se distribuye con la libreria transformers y la arquitectura declarada en los tags es qwen2, lo que lo situa en la familia de transformadores densos de Alibaba.
 
 El sufijo "abliterated" es habitual en la comunidad de modelos sin censura: designa tecnicas de edicion de pesos orientadas a eliminar o atenuar los comportamientos de rechazo aprendidos durante el alineamiento (RLHF/DPO). El modelo esta pensado, por tanto, para generacion de texto y conversacion sin las restricciones tipicas de los modelos alineados comercialmente.
 
@@ -85,6 +85,6 @@ La comparacion con Qwen2-7B es la mas directa por arquitectura y numero de param
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kernnadab/qwen27b-abliterated-final
+- Hugging Face: https://huggingface.co/kernnadab/qwen27b-abliterated-final
 - Paper de referencia citado en la model card (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

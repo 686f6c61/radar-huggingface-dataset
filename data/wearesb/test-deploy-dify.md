@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wearesb/test-deploy-dify` es un repositorio de HuggingFace que aloja un modelo de embeddings de frases (sentence-transformers) derivado de la familia vietnamese-bi-encoder desarrollada por bkai-foundation-models. El modelo transforma frases y parrafos en vectores densos de 768 dimensiones, pensados para tareas de similitud semantica, clustering y busqueda semantica en vietnamita. Internamente emplea un backbone PhoBERT-base-v2 (arquitectura RoBERTa) con una capa de pooling de media (mean pooling) sobre las representaciones contextuales.
+`wearesb/test-deploy-dify` es un repositorio de Hugging Face que aloja un modelo de embeddings de frases (sentence-transformers) derivado de la familia vietnamese-bi-encoder desarrollada por bkai-foundation-models. El modelo transforma frases y parrafos en vectores densos de 768 dimensiones, pensados para tareas de similitud semantica, clustering y busqueda semantica en vietnamita. Internamente emplea un backbone PhoBERT-base-v2 (arquitectura RoBERTa) con una capa de pooling de media (mean pooling) sobre las representaciones contextuales.
 
 El repositorio se presenta como un despliegue de prueba ("test-deploy-dify"), con cero descargas y cero likes en el momento de la consulta, y un tamano de repo de 0.0 GB, lo que sugiere que los pesos pueden no estar efectivamente alojados o que el contenido es minimo. La model card incluida corresponde al modelo original `bkai-foundation-models/vietnamese-bi-encoder`, no a una variante propia, por lo que la informacion tecnica disponible describe ese modelo base.
 
@@ -27,7 +27,7 @@ Su relevancia radica en ser un encoder bi-direccional especializado en vietnamit
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura clasica de sentence-transformers: un encoder Transformer (RobertaModel, concretamente PhoBERT-base-v2 como backbone) seguido de una capa de pooling que promedia los embeddings de tokens ponderando por la mascara de atencion. La longitud maxima de secuencia es de 256 tokens y la dimension de salida es 768. El tokenizador requiere segmentacion de palabras previa en vietnamita (por ejemplo con pyvi, underthesea o RDRSegment), salvo en el widget de HuggingFace, que incorpora un segmentador personalizado.
+El modelo sigue la arquitectura clasica de sentence-transformers: un encoder Transformer (RobertaModel, concretamente PhoBERT-base-v2 como backbone) seguido de una capa de pooling que promedia los embeddings de tokens ponderando por la mascara de atencion. La longitud maxima de secuencia es de 256 tokens y la dimension de salida es 768. El tokenizador requiere segmentacion de palabras previa en vietnamita (por ejemplo con pyvi, underthesea o RDRSegment), salvo en el widget de Hugging Face, que incorpora un segmentador personalizado.
 
 El entrenamiento descrito en la model card se realizo sobre un dataset combinado: MS MARCO traducido al vietnamita, SQuAD v2 traducido al vietnamita y el 80% del conjunto de entrenamiento del reto Legal Text Retrieval Zalo 2021. Se empleo la perdida `MultipleNegativesRankingLoss` (escala 20.0, similitud coseno), optimizador AdamW con learning rate 2e-05, scheduler WarmupLinear con 1000 pasos de calentamiento, weight decay 0.01, 15 epocas y batch size 32 sobre un DataLoader de 17.584 pasos. No se menciona uso de RLHF ni DPO, algo esperable en un modelo de embeddings.
 
@@ -39,7 +39,7 @@ El entrenamiento descrito en la model card se realizo sobre un dataset combinado
 - Busqueda semantica y recuperacion de documentos (retrieval) en vietnamita.
 - Clustering de textos por similitud coseno.
 - Deteccion de duplicados y near-duplicates textuales.
-- Soporte de segmentacion de palabras integrada en el widget de HuggingFace.
+- Soporte de segmentacion de palabras integrada en el widget de Hugging Face.
 - No soporta tool calling, agentes, vision, audio ni generacion de texto: es exclusivamente un encoder.
 
 ## Casos de uso
@@ -69,7 +69,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 - VRAM estimada para inferencia: inferior a 1 GB en fp32 para un encoder de ~135M de parametros con secuencias de 256 tokens; en fp16 aproximadamente 300-500 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; funciona bien en T4, L4, RTX 3060, RTX 4090, A10, A100.
 - Cabe holgadamente en GPU de consumo, incluidas GTX 1650 o superiores, e incluso puede ejecutarse en CPU con latencias aceptables para lotes pequenos.
-- Opciones de despliegue: sentence-transformers (nativo), HuggingFace Transformers con pooling manual, Text Embeddings Inference (TEI) de HuggingFace, FastAPI con batching, ONNX Runtime para aceleracion en CPU.
+- Opciones de despliegue: sentence-transformers (nativo), Hugging Face Transformers con pooling manual, Text Embeddings Inference (TEI) de Hugging Face, FastAPI con batching, ONNX Runtime para aceleracion en CPU.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada; dependen en gran medida del hardware y del tamano de lote.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 - El repositorio es un despliegue de prueba ("test-deploy-dify") con 0 descargas, 0 likes y tamano de 0.0 GB: los pesos pueden no estar disponibles o ser identicos al modelo original; verificar antes de usar en produccion.
 - La model card incluida es la del modelo `bkai-foundation-models/vietnamese-bi-encoder`, no una descripcion propia del repositorio, lo que genera ambiguedad sobre el contenido real alojado.
 - El modelo solo soporta vietnamita; su rendimiento en otros idiomas, incluido el castellano, no esta documentado y previsiblemente sera pobre.
-- Requiere segmentacion de palabras en vietnamita para un uso optimo fuera del widget de HuggingFace; omitirla degrada la calidad de los embeddings.
+- Requiere segmentacion de palabras en vietnamita para un uso optimo fuera del widget de Hugging Face; omitirla degrada la calidad de los embeddings.
 - Longitud de contexto limitada a 256 tokens: los textos mas largos se truncan, lo que puede perder informacion relevante en documentos extensos.
 - Riesgo de sesgos heredados de los corpus de entrenamiento (MS MARCO, SQuAD v2 y datos legales vietnamitas), no evaluado en la informacion disponible.
 - No es un modelo generativo: no puede producir texto, razonar ni ejecutar tool calling; su uso esta restringido a representaciones vectoriales.
@@ -95,7 +95,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wearesb/test-deploy-dify
+- Repositorio Hugging Face: https://huggingface.co/wearesb/test-deploy-dify
 - Modelo base referenciado en la model card: https://huggingface.co/bkai-foundation-models/vietnamese-bi-encoder
 - Repositorio PhoBERT (VinAIResearch): https://github.com/VinAIResearch/PhoBERT
 - Documentacion de sentence-transformers: https://www.SBERT.net

@@ -92,7 +92,7 @@ La única comparación con datos completos es la de la build MERNIK-5100 frente 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/wepiqx/MiMo-V2.6-Distill-Qwen-9B-GGUF-MERNIK
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/wepiqx/MiMo-V2.6-Distill-Qwen-9B-GGUF-MERNIK
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Metodo, motor y ledgers MERNIK: https://huggingface.co/wepiqx/MERNIK
 - Patrocinio del autor: https://github.com/sponsors/wepiqx

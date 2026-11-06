@@ -31,7 +31,7 @@ No se dispone de información sobre el proceso de entrenamiento del modelo fusio
 - Soporte de tool calling / function calling: se infiere por su orientación a agentes, aunque no hay documentación explícita en la ficha.
 - Razonamiento multi-step: los modelos base (KAT-Coder y Ornith) están diseñados para razonamiento profundo en tareas de ingeniería de software.
 - Capacidades multilingües: no confirmadas; el modelo base Qwopus parece soportar inglés y chino según los tags de su versión GGUF, pero no hay datos oficiales.
-- Formato de pesos compatible con transformers: se puede cargar con la librería estándar de HuggingFace.
+- Formato de pesos compatible con transformers: se puede cargar con la librería estándar de Hugging Face.
 
 ## Casos de uso
 
@@ -76,7 +76,7 @@ No hay benchmarks comparativos publicados para estos modelos en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OliviaRossi/Ornith-Qwopus-KAT-Coder-35B-Merged
+- Modelo en Hugging Face: https://huggingface.co/OliviaRossi/Ornith-Qwopus-KAT-Coder-35B-Merged
 - Versión GGUF del modelo base: https://huggingface.co/OliviaRossi/Qwopus-KAT-Coder-35B-Merged-GGUF
 - Página de Ornith AI: https://ornith.online/
 - Blog de KAT-Coder: https://kwaipilot.github.io/KAT-Coder/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AccelgorDG es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni informacion sobre capacidades o idiomas. El repositorio tiene un tamano de 0,1 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos parciales, pero no permite determinar con certeza la arquitectura ni el numero de parametros.
+AccelgorDG es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni informacion sobre capacidades o idiomas. El repositorio tiene un tamano de 0,1 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos parciales, pero no permite determinar con certeza la arquitectura ni el numero de parametros.
 
 No se dispone de informacion sobre el pipeline, los idiomas soportados ni los formatos de pesos. El modelo no registra descargas ni likes en el momento de la consulta, y su fecha de creacion y actualizacion (28 de octubre de 2026) indica una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -23,7 +23,7 @@ Por todo ello, esta ficha se limita a recoger los datos verificables disponibles
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o cualquier otra variante.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o cualquier otra variante.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. El tamano del repositorio (0,1 GB) es compatible con pesos en precision reducida de un modelo pequeno o con un subconjunto de pesos, pero esta inferencia no puede confirmarse con la informacion disponible.
 
@@ -76,4 +76,4 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- [HuggingFace: Ryanham1lton/AccelgorDG](https://huggingface.co/Ryanham1lton/AccelgorDG)
+- [Hugging Face: Ryanham1lton/AccelgorDG](https://huggingface.co/Ryanham1lton/AccelgorDG)

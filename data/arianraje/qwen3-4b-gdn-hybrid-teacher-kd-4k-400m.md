@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B GDN hybrid: teacher-KD, 4k, 400M es un checkpoint de investigación publicado por el usuario arianraje en HuggingFace. Se trata de un modelo de generación de texto de 4.546.819.904 parámetros (4,55 B) construido sobre el backbone Qwen3-4B, pero con una modificación arquitectónica sustancial: usa `Qwen3NextForCausalLM` con MLP densas y una combinación de atención híbrida entre Gated DeltaNet (GDN) y atención completa, en lugar de atención completa pura.
+Qwen3-4B GDN hybrid: teacher-KD, 4k, 400M es un checkpoint de investigación publicado por el usuario arianraje en Hugging Face. Se trata de un modelo de generación de texto de 4.546.819.904 parámetros (4,55 B) construido sobre el backbone Qwen3-4B, pero con una modificación arquitectónica sustancial: usa `Qwen3NextForCausalLM` con MLP densas y una combinación de atención híbrida entre Gated DeltaNet (GDN) y atención completa, en lugar de atención completa pura.
 
 El modelo no se ha entrenado desde cero: es el resultado de una destilación off-policy de vocabulario completo con divergencia KL forward contra el profesor Qwen3-4B, partiendo del checkpoint intermedio arianraje/qwen3-4b-gdn-hybrid-stage2b-kd. El texto supervisado procede de muestras generadas por el propio profesor sobre una mezcla de prompts de OpenThoughts, Dolly y RUG (etapa 3 del proyecto). El checkpoint publicado es el snapshot final WSD tras 400.040.854 tokens de pérdida (nominal 400 M), en el paso 2754, con un límite estático de traza de 4.096 tokens.
 
@@ -96,7 +96,7 @@ La comparacion mas informativa disponible es la de la propia model card: con pre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-teacher-kd-4k-400m
+- Modelo en Hugging Face: https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-teacher-kd-4k-400m
 - Modelo base profesor: https://huggingface.co/Qwen/Qwen3-4B
 - Checkpoint de partida (etapa 2b, KD): https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-stage2b-kd
 - Referencia OPD 400 M citada en la model card: https://huggingface.co/pinkskin/qwen3-4b-gdn-wsd-ladder/tree/ae6b72a357d167fb459dfeda3bded4941decdf41/wsd-flat-ext200-400M

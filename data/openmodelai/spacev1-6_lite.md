@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SpaceV1.6_Lite es un repositorio de modelo publicado en HuggingFace por el usuario openmodelai, con identificador openmodelai/SpaceV1.6_Lite. La model card asociada contiene unicamente la declaracion de licencia (apache-2.0) y no incluye ninguna descripcion funcional, arquitectonica ni de entrenamiento. El repositorio tiene un tamano declarado de 0.0 GB, 0 descargas y 0 likes en el momento de la consulta.
+SpaceV1.6_Lite es un repositorio de modelo publicado en Hugging Face por el usuario openmodelai, con identificador openmodelai/SpaceV1.6_Lite. La model card asociada contiene unicamente la declaracion de licencia (apache-2.0) y no incluye ninguna descripcion funcional, arquitectonica ni de entrenamiento. El repositorio tiene un tamano declarado de 0.0 GB, 0 descargas y 0 likes en el momento de la consulta.
 
-No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni datos de entrenamiento. Tampoco hay pipeline declarado en la ficha de HuggingFace, lo que impide clasificar el modelo por tarea (text-generation, text-to-image, feature-extraction, etc.). La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a paginas de banca online de Societe Generale y no guardan ninguna relacion con este repositorio.
+No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni datos de entrenamiento. Tampoco hay pipeline declarado en la ficha de Hugging Face, lo que impide clasificar el modelo por tarea (text-generation, text-to-image, feature-extraction, etc.). La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a paginas de banca online de Societe Generale y no guardan ninguna relacion con este repositorio.
 
 Por tanto, esta ficha se limita a documentar los unicos datos verificables (identificador, autor, licencia y estado del repositorio) y a marcar explicitamente como "no disponible" todo aquello que no puede confirmarse con la informacion proporcionada. Se recomienda precaucion antes de considerar este modelo para cualquier uso en produccion.
 
@@ -22,10 +22,10 @@ Por tanto, esta ficha se limita a documentar los unicos datos verificables (iden
 | Formato de pesos | no disponible (el repositorio declara 0.0 GB) |
 | Pipeline declarado | no disponible |
 | Autor | openmodelai |
-| Identificador en HuggingFace | openmodelai/SpaceV1.6_Lite |
+| Identificador en Hugging Face | openmodelai/SpaceV1.6_Lite |
 | Descargas | 0 |
 | Likes | 0 |
-| Fecha de creacion (segun HuggingFace) | 2026-10-09 |
+| Fecha de creacion (segun Hugging Face) | 2026-10-09 |
 | Fecha de ultima actualizacion | 2026-10-09 |
 
 ## Arquitectura y entrenamiento
@@ -85,5 +85,5 @@ No disponible. No se puede establecer una categoria de comparacion (mismo tamano
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/openmodelai/SpaceV1.6_Lite
+- Hugging Face: https://huggingface.co/openmodelai/SpaceV1.6_Lite
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio de codigo o demo). Los resultados devueltos corresponden a paginas de Societe Generale sin relacion con el repositorio.

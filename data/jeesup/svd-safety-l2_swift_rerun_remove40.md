@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-l2_swift_rerun_remove40 es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace. Se trata de una versión comprimida de meta-llama/Llama-2-7b-chat-hf mediante SVD-LLM, con un 40,00 % de los parámetros densos eliminados, lo que deja una fracción de parámetros resultante de 0,5998 (60,0 % del modelo original). Sobre esa base comprimida se aplica un presupuesto de restauración de componentes SVD del 0,000 %, es decir, cero componentes restaurados y cero componentes sustituidos, con una regla de selección etiquetada como `unknown` en la propia model card y semilla 42.
+svd-safety-l2_swift_rerun_remove40 es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face. Se trata de una versión comprimida de meta-llama/Llama-2-7b-chat-hf mediante SVD-LLM, con un 40,00 % de los parámetros densos eliminados, lo que deja una fracción de parámetros resultante de 0,5998 (60,0 % del modelo original). Sobre esa base comprimida se aplica un presupuesto de restauración de componentes SVD del 0,000 %, es decir, cero componentes restaurados y cero componentes sustituidos, con una regla de selección etiquetada como `unknown` en la propia model card y semilla 42.
 
 El objetivo del artefacto es estudiar cómo la compresión SVD degrada el comportamiento de seguridad de un modelo alineado y qué reglas de selección de componentes son capaces de repararlo. Este checkpoint es una celda concreta de una rejilla que barre reglas de selección y presupuestos, y el propio autor advierte explícitamente de que no es un modelo de chat de propósito general ni un asistente desplegable. Su relevancia es, por tanto, metodológica: proporciona una medida cuantificable del coste en seguridad y en utilidad que introduce una compresión agresiva de pesos.
 
@@ -76,8 +76,8 @@ No se han publicado en la información disponible resultados comparativos frente
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Metricas de seguridad |
 |---|---|---|---|---|---|
-| svd-safety-l2_swift_rerun_remove40 | 6.738.415.616 según safetensors; fracción resultante 0,5998 según la model card | No disponible (base: 4.096) | Llama 2 Community License | safetensors en HuggingFace; 0 descargas, 0 likes | AdvBench ASR 0,3769; StrongREJECT ASR 0,2013; sobre-rechazo 0,1107; ppl WikiText-2 11,6312 |
-| meta-llama/Llama-2-7b-chat-hf (modelo base) | 6.738.415.616 | 4.096 | Llama 2 Community License | safetensors en HuggingFace; ampliamente utilizado | No disponible en la información proporcionada |
+| svd-safety-l2_swift_rerun_remove40 | 6.738.415.616 según safetensors; fracción resultante 0,5998 según la model card | No disponible (base: 4.096) | Llama 2 Community License | safetensors en Hugging Face; 0 descargas, 0 likes | AdvBench ASR 0,3769; StrongREJECT ASR 0,2013; sobre-rechazo 0,1107; ppl WikiText-2 11,6312 |
+| meta-llama/Llama-2-7b-chat-hf (modelo base) | 6.738.415.616 | 4.096 | Llama 2 Community License | safetensors en Hugging Face; ampliamente utilizado | No disponible en la información proporcionada |
 | Otras celdas de la rejilla del mismo autor | No disponible | No disponible | llama2 | No disponible | No disponible |
 
 No se han encontrado en la información proporcionada otros checkpoints comprimidos comparables con métricas publicadas, por lo que la comparación cuantitativa frente a alternativas de la misma categoría queda como no disponible.
@@ -96,7 +96,7 @@ No se han encontrado en la información proporcionada otros checkpoints comprimi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_swift_rerun_remove40
+- Repositorio en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_swift_rerun_remove40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia y política de uso: `LICENSE.txt` y `USE_POLICY.md`, incluidos en el propio repositorio
 - Referencia al método SVD-LLM: no incluida en la información proporcionada

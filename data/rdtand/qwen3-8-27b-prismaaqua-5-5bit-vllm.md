@@ -87,5 +87,5 @@ No se dispone de datos para comparar con cuantizaciones uniformes (AWQ, GPTQ, FP
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rdtand/Qwen3.8-27B-PrismaAQUA-5.5bit-vllm
+- Hugging Face: https://huggingface.co/rdtand/Qwen3.8-27B-PrismaAQUA-5.5bit-vllm
 - Sitio del método PrismaQuant: https://prismaquant.org

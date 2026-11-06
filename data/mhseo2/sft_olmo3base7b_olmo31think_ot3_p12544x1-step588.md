@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sft_olmo3base7b_olmo31think_ot3_p12544x1-step588` es un ajuste fino supervisado (SFT) del modelo base Olmo-3-1025-7B, desarrollado por el usuario de HuggingFace `mhseo2`. El modelo parte de una variante intermedia denominada `mhseo2/Olmo-3-1025-7B-opd` y se entrena sobre trazas de razonamiento generadas por `allenai/Olmo-3.1-32B-Think` para prompts de matematicas del dataset OpenThoughts3. El objetivo es destilar capacidad de razonamiento matematico en un modelo de 7.300 millones de parametros, mucho mas ligero que el profesor de 32B.
+`sft_olmo3base7b_olmo31think_ot3_p12544x1-step588` es un ajuste fino supervisado (SFT) del modelo base Olmo-3-1025-7B, desarrollado por el usuario de Hugging Face `mhseo2`. El modelo parte de una variante intermedia denominada `mhseo2/Olmo-3-1025-7B-opd` y se entrena sobre trazas de razonamiento generadas por `allenai/Olmo-3.1-32B-Think` para prompts de matematicas del dataset OpenThoughts3. El objetivo es destilar capacidad de razonamiento matematico en un modelo de 7.300 millones de parametros, mucho mas ligero que el profesor de 32B.
 
 El checkpoint publicado corresponde al paso 588 de un entrenamiento de 15 epocas (epoca 12), con un total de 12.544 muestras de entrenamiento (una trayectoria por prompt, aproximadamente 225 millones de tokens). El modelo emplea una arquitectura transformer densa (no MoE) heredada de Olmo 3, con licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
@@ -72,9 +72,9 @@ No se han publicado comparaciones directas con modelos similares en la informaci
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sft_olmo3base7b_olmo31think_ot3_p12544x1-step588 | 7,30B | 32.768 | SFT matematico sobre trazas de Olmo-3.1-32B-Think | Apache 2.0 | HuggingFace (28 descargas) |
-| Olmo-3-1025-7B (base) | 7B (familia Olmo 3) | No disponible en esta ficha | Modelo base generalista | No disponible en esta ficha | HuggingFace (AllenAI) |
-| Olmo-3.1-32B-Think (profesor) | 32B | No disponible en esta ficha | Razonamiento con modo think | No disponible en esta ficha | HuggingFace (AllenAI) |
+| sft_olmo3base7b_olmo31think_ot3_p12544x1-step588 | 7,30B | 32.768 | SFT matematico sobre trazas de Olmo-3.1-32B-Think | Apache 2.0 | Hugging Face (28 descargas) |
+| Olmo-3-1025-7B (base) | 7B (familia Olmo 3) | No disponible en esta ficha | Modelo base generalista | No disponible en esta ficha | Hugging Face (AllenAI) |
+| Olmo-3.1-32B-Think (profesor) | 32B | No disponible en esta ficha | Razonamiento con modo think | No disponible en esta ficha | Hugging Face (AllenAI) |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la informacion proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p12544x1-step588
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p12544x1-step588
 - Modelo base intermedio: https://huggingface.co/mhseo2/Olmo-3-1025-7B-opd
 - Modelo profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Dataset OpenThoughts3: no disponible en la informacion proporcionada

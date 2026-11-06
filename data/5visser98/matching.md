@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`5visser98/matching` es un prototipo de investigación publicado en HuggingFace que implementa una arquitectura de tipo Flamingo orientada a tareas de *matching* (emparejamiento entre modalidades o entre entradas y candidatos). Lo desarrolla el usuario 5visser98 y se distribuye bajo licencia Apache 2.0. No se trata de un modelo entrenado ni evaluado: la propia model card describe el checkpoint `model.safetensors` como una inicialización válida únicamente para *smoke tests*, sin ninguna métrica de rendimiento declarada.
+`5visser98/matching` es un prototipo de investigación publicado en Hugging Face que implementa una arquitectura de tipo Flamingo orientada a tareas de *matching* (emparejamiento entre modalidades o entre entradas y candidatos). Lo desarrolla el usuario 5visser98 y se distribuye bajo licencia Apache 2.0. No se trata de un modelo entrenado ni evaluado: la propia model card describe el checkpoint `model.safetensors` como una inicialización válida únicamente para *smoke tests*, sin ninguna métrica de rendimiento declarada.
 
 El repositorio es deliberadamente minimalista: incluye un script `finetune.py` como artefacto principal, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y el checkpoint de inicialización. La arquitectura declarada combina atención dilatada (*dilated attention*), fusión por *co-attention*, activación GELU y normalización RMSNorm, con optimizador Lion y esquema de *warmup* constante como valores de partida del script.
 
@@ -98,7 +98,7 @@ No disponible. No se conocen modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/5visser98/matching
+- Modelo en Hugging Face: https://huggingface.co/5visser98/matching
 - Archivos incluidos en el repositorio: `finetune.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio o demo adicional: no disponible
 - Nota sobre la búsqueda web: los resultados recuperados no guardan relación con el modelo (contenido sobre silicona RTV, procedimientos MRB y un foro de operador de internet), por lo que no se incluyen como fuentes.

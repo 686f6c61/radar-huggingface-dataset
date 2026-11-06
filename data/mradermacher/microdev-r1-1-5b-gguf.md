@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MicroDev-R1-1.5B-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo MicroDev-R1-1.5B, publicada por el usuario mradermacher en HuggingFace. El repositorio no contiene un modelo entrenado desde cero, sino una conversión a GGUF del modelo original alojado en `sopandpatil/MicroDev-R1-1.5B`, presumiblemente orientado a tareas de desarrollo de software dada la nomenclatura "Dev" y "R1" (esta última sugiere un linaje de razonamiento al estilo DeepSeek-R1, aunque no se confirma en la información disponible). El tamaño de 1.500 millones de parámetros lo sitúa en la categoría de modelos pequeños, aptos para inferencia en hardware de consumo.
+MicroDev-R1-1.5B-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo MicroDev-R1-1.5B, publicada por el usuario mradermacher en Hugging Face. El repositorio no contiene un modelo entrenado desde cero, sino una conversión a GGUF del modelo original alojado en `sopandpatil/MicroDev-R1-1.5B`, presumiblemente orientado a tareas de desarrollo de software dada la nomenclatura "Dev" y "R1" (esta última sugiere un linaje de razonamiento al estilo DeepSeek-R1, aunque no se confirma en la información disponible). El tamaño de 1.500 millones de parámetros lo sitúa en la categoría de modelos pequeños, aptos para inferencia en hardware de consumo.
 
 La relevancia de esta publicación radica en que facilita el despliegue local del modelo mediante llama.cpp y derivados (Ollama, LM Studio, etc.), al ofrecer múltiples niveles de cuantización que abarcan desde Q2_K hasta Q8_0, además de F16 e IQ4_XS. No obstante, la model card es extremadamente escasa: no incluye información sobre arquitectura, datos de entrenamiento, licencia, idiomas ni benchmarks, por lo que la mayor parte de las especificaciones técnicas no están disponibles en la información proporcionada.
 
@@ -23,7 +23,7 @@ El repositorio fue creado el 2 de noviembre de 2026 y, en el momento de la consu
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base MicroDev-R1-1.5B en la documentación proporcionada. La model card del repositorio GGUF únicamente documenta metadatos del proceso de conversión (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), lo que confirma que las cuantizaciones se generaron a partir de pesos en formato HuggingFace Transformers mediante una herramienta de conversión a GGUF, presumiblemente llama.cpp. No se detalla el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o destilación.
+No se dispone de información sobre la arquitectura del modelo base MicroDev-R1-1.5B en la documentación proporcionada. La model card del repositorio GGUF únicamente documenta metadatos del proceso de conversión (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), lo que confirma que las cuantizaciones se generaron a partir de pesos en formato Hugging Face Transformers mediante una herramienta de conversión a GGUF, presumiblemente llama.cpp. No se detalla el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o destilación.
 
 El sufijo "R1" en el nombre sugiere una posible inspiración o destilación a partir de trayectorias de razonamiento tipo DeepSeek-R1, práctica común en modelos pequeños de 2025-2026 para incorporar capacidades de cadena de pensamiento. Sin embargo, esta hipótesis no se confirma en la información disponible y no debe tomarse como dato verificado. Tampoco se documentan innovaciones técnicas como decodificación especulativa, atención lineal o arquitecturas híbridas.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | MicroDev-R1-1.5B-GGUF | 1.5B | no disponible | no disponible | GGUF | Este modelo; sin benchmarks ni model card detallada |
 | Qwen2.5-Coder-1.5B | 1.5B | 32K | Apache 2.0 | safetensors, GGUF | Orientado a código, benchmarks publicados, amplia comunidad |
 | DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | 32K | MIT (según repo) | safetensors, GGUF | Destilado de razonamiento, benchmarks publicados |
-| SmolLM2-1.7B | 1.7B | 8K | Apache 2.0 | safetensors, GGUF | Modelo pequeño generalista de HuggingFace |
+| SmolLM2-1.7B | 1.7B | 8K | Apache 2.0 | safetensors, GGUF | Modelo pequeño generalista de Hugging Face |
 
 La comparativa se ofrece a título orientativo; los datos de los modelos alternativos provienen de conocimiento general y no de la información proporcionada en esta consulta, por lo que deben verificarse en sus respectivas model cards.
 

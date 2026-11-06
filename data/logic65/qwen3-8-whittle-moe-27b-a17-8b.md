@@ -68,7 +68,7 @@ No se dispone de datos comparativos con otros modelos en la informacion proporci
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/logic65/Qwen3.8-Whittle-MoE-27B-A17.8B)
+- [Modelo en Hugging Face](https://huggingface.co/logic65/Qwen3.8-Whittle-MoE-27B-A17.8B)
 - [Repositorio oficial de Qwen3.8 en GitHub](https://github.com/QwenLM/Qwen3.8)
 - [Guia de Qwen3.8-27B en LovableApp](https://lovableapp.org/blog/qwen3-8-27b)
 - [Ficha de Qwen3.8 en LM Studio](https://lmstudio.ai/models/qwen3.8)

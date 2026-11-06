@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RouterMauer no es un modelo de inteligencia artificial. El repositorio `smlflg/RouterMauer` de HuggingFace contiene unicamente un documento de texto (la model card) que describe un procedimiento de configuracion de red domestica: convertir un router D-Link DIR-1960 en un punto de acceso WLAN y switch Ethernet detras de una Fritzbox. No hay pesos, no hay tokenizador, no hay codigo de inferencia y el tamano del repositorio es de 0,0 GB.
+RouterMauer no es un modelo de inteligencia artificial. El repositorio `smlflg/RouterMauer` de Hugging Face contiene unicamente un documento de texto (la model card) que describe un procedimiento de configuracion de red domestica: convertir un router D-Link DIR-1960 en un punto de acceso WLAN y switch Ethernet detras de una Fritzbox. No hay pesos, no hay tokenizador, no hay codigo de inferencia y el tamano del repositorio es de 0,0 GB.
 
 El autor publica un manual en aleman con la topologia objetivo (Fritzbox en `192.168.178.1` como unico gateway, NAT y servidor DHCP; D-Link en `192.168.178.2` con DHCP desactivado y el puerto WAN libre), el historial de la migracion y una lista de verificacion final. El problema que resuelve es real pero de ambito de redes: eliminar el doble NAT y el conflicto de servidores DHCP cuando se encadenan dos routers.
 
@@ -78,6 +78,6 @@ No disponible. No existe categoria de modelos comparable porque el repositorio n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smlflg/RouterMauer
+- Repositorio en Hugging Face: https://huggingface.co/smlflg/RouterMauer
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados recibidos (Skyscanner, Trip.com, tanie-loty.com.pl, hikersbay.com, KAYAK) corresponden a billetes de avion a Sapporo y no tienen relacion con el repositorio.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles.

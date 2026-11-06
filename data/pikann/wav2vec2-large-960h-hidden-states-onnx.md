@@ -25,7 +25,7 @@ El modelo hereda las características del original: arquitectura wav2vec 2.0 pre
 
 La arquitectura subyacente es wav2vec 2.0 en su variante large: un extractor de características convolucional que convierte la forma de onda de 16 kHz en una secuencia de representaciones latentes, seguido de un encoder transformer de 24 capas con 1024 dimensiones ocultas. El preentrenamiento es autosupervisado (enmascaramiento contrastivo sobre representaciones cuantizadas) y el ajuste final se realiza con CTC sobre 960 horas de LibriSpeech, lo que produce un modelo de ASR en inglés sin modelo de lenguaje externo.
 
-La exportación a ONNX se hizo con `torch.onnx.export` en opset 17, sin cuantización, con ejes dinámicos para batch y número de muestras. La innovación respecto al original es la firma del grafo: además de `logits` con forma `[batch, frames, 32]` (CTC sobre `vocab.json`, blank = `<pad>`, id 0, frames de 20 ms), devuelve `hidden_states` con forma `[batch, frames, 1024]`, equivalente a `hidden_states[-1]` de HuggingFace. La paridad numérica declarada por el autor sobre 31 clips es de 2.2e-3 de diferencia absoluta máxima en logits y 8.7e-4 en estados ocultos, con transcripciones greedy idénticas en 31 de 31 casos. No se documentan datos sobre RLHF, DPO ni composición adicional del dataset más allá de LibriSpeech.
+La exportación a ONNX se hizo con `torch.onnx.export` en opset 17, sin cuantización, con ejes dinámicos para batch y número de muestras. La innovación respecto al original es la firma del grafo: además de `logits` con forma `[batch, frames, 32]` (CTC sobre `vocab.json`, blank = `<pad>`, id 0, frames de 20 ms), devuelve `hidden_states` con forma `[batch, frames, 1024]`, equivalente a `hidden_states[-1]` de Hugging Face. La paridad numérica declarada por el autor sobre 31 clips es de 2.2e-3 de diferencia absoluta máxima en logits y 8.7e-4 en estados ocultos, con transcripciones greedy idénticas en 31 de 31 casos. No se documentan datos sobre RLHF, DPO ni composición adicional del dataset más allá de LibriSpeech.
 
 ## Capacidades
 
@@ -84,7 +84,7 @@ La comparación con Whisper no es directa: este repositorio es un export de un m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pikann/wav2vec2-large-960h-hidden-states-ONNX
+- Repositorio Hugging Face: https://huggingface.co/pikann/wav2vec2-large-960h-hidden-states-ONNX
 - Modelo base: https://huggingface.co/facebook/wav2vec2-large-960h
 - Aplicación Engclaw: https://github.com/pikann/engclaw
 - Paper de wav2vec 2.0 (Baevski et al.): no disponible en la información proporcionada

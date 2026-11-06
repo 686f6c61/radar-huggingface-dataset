@@ -74,9 +74,9 @@ La model card indica además que TokForge comprueba en cada teléfono si el cabe
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| darkmaniac7/Qwen3.5-27B-MNN | 27B según denominación del base | no disponible | sin benchmarks; aceptación MTP 63-97% según tarea | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| taobao-mnn/Qwen3.5-27B-MNN | idénticos (tronco byte a byte) | no disponible | sin benchmarks; sin cabezal MTP añadido | apache-2.0 | HuggingFace, conversión de referencia |
-| Qwen/Qwen3.5-27B | 27B | no disponible | no disponible | no disponible en esta ficha | checkpoint original en HuggingFace, origen de la conversión y del cabezal MTP |
+| darkmaniac7/Qwen3.5-27B-MNN | 27B según denominación del base | no disponible | sin benchmarks; aceptación MTP 63-97% según tarea | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| taobao-mnn/Qwen3.5-27B-MNN | idénticos (tronco byte a byte) | no disponible | sin benchmarks; sin cabezal MTP añadido | apache-2.0 | Hugging Face, conversión de referencia |
+| Qwen/Qwen3.5-27B | 27B | no disponible | no disponible | no disponible en esta ficha | checkpoint original en Hugging Face, origen de la conversión y del cabezal MTP |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (LLM cuantizados para ejecución en dispositivo en formato MNN) dentro del material proporcionado.
 
@@ -96,7 +96,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/darkmaniac7/Qwen3.5-27B-MNN
+- Repositorio en Hugging Face: https://huggingface.co/darkmaniac7/Qwen3.5-27B-MNN
 - Conversión original (tronco idéntico, commit `d0a9e927a1106c795b4c06bbeffb995327bbe488`): https://huggingface.co/taobao-mnn/Qwen3.5-27B-MNN
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Commit del checkpoint base usado para exportar el cabezal MTP: `fc05daec18b0a78c049392ed2e771dde82bdf654`

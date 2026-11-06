@@ -99,6 +99,6 @@ La comparación cuantitativa con otras familias de modelos del mismo tamaño no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AXERA-TECH/Qwen3.5-2B-AX8860-llama.cpp
+- Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3.5-2B-AX8860-llama.cpp
 - Bifurcación de llama.cpp con backend Axera: https://github.com/ZHEQIUSHUI/llama.cpp (rama `axera-dev`, ruta `ggml/src/ggml-axera/models/qwen35_whole`)
 - Kernels de NPU: https://github.com/ZHEQIUSHUI/ax-dsl-kernels (rama `main`, ruta `models/qwen35_2b/whole`, fichero `kernels.md5`)

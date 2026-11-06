@@ -70,7 +70,7 @@ No existen datos de rendimiento publicados para este checkpoint, por lo que la c
 
 | Modelo | Enfoque | Resolucion de trabajo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `luethan2025/context-encoder` | Context Encoder (reconstruccion + adversarial) | 128x128 (AFHQ-Cat) | no disponible | HuggingFace, 0 descargas |
+| `luethan2025/context-encoder` | Context Encoder (reconstruccion + adversarial) | 128x128 (AFHQ-Cat) | no disponible | Hugging Face, 0 descargas |
 | Context Encoders original (`pathak22/context-encoder`) | Context Encoder (reconstruccion + adversarial) | 128x128, parches de ImageNet | no verificada | repositorio del autor original |
 | DeepFill v1/v2 (gated convolutions) | Inpainting con convoluciones con puerta y mascaras irregulares | resoluciones mayores | no verificada | repositorio publico |
 | LaMa (Large Mask Inpainting) | Inpainting con campos receptivos grandes y perdida Fourier | resoluciones altas | no verificada | repositorio publico |
@@ -92,7 +92,7 @@ En terminos cualitativos, las alternativas modernas estan disenadas para mascara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luethan2025/context-encoder
+- Modelo en Hugging Face: https://huggingface.co/luethan2025/context-encoder
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/luethan2025/AFHQ-Cat-128x128
 - Repositorio de codigo citado en la model card: https://github.com/bareform/context-encoder.git
 - Articulo original: https://arxiv.org/abs/1604.07379

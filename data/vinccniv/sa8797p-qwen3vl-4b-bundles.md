@@ -4,7 +4,7 @@
 
 Este repositorio no contiene un modelo nuevo, sino un paquete de despliegue (bundle) para ejecutar el modelo multimodal Qwen/Qwen3-VL-4B-Instruct sobre el SoC Qualcomm SA8797P, un chip de la familia Snapdragon para automoción con acelerador Hexagon v81 HTP. El autor, vinccniv, ha compilado los binarios del runtime Qualcomm QNN/Genie (QAIRT 2.48.40.260702, libGenie 1.19) junto con el pipeline completo de inferencia imagen+texto a texto, cuantizado en W8A16, incluyendo prefill de past-KV y un kit de prueba de seis imágenes de climatología y carretera.
 
-La relevancia de este bundle es práctica: permite evaluar la viabilidad de ejecutar un modelo de visión-lenguaje de 4B parámetros en hardware de borde automotriz, sin depender de GPU externa. Sin embargo, es fundamental advertir que el autor declara explícitamente que **nada de este repositorio ha sido ejecutado en un dispositivo SA8797P real**. La validación se ha realizado únicamente en host (x86) mediante simulación, reproduciendo token a token la salida de `generate` de HuggingFace. No se ofrecen cifras de rendimiento (tok/s, TTFT) porque no se han medido en el hardware objetivo.
+La relevancia de este bundle es práctica: permite evaluar la viabilidad de ejecutar un modelo de visión-lenguaje de 4B parámetros en hardware de borde automotriz, sin depender de GPU externa. Sin embargo, es fundamental advertir que el autor declara explícitamente que **nada de este repositorio ha sido ejecutado en un dispositivo SA8797P real**. La validación se ha realizado únicamente en host (x86) mediante simulación, reproduciendo token a token la salida de `generate` de Hugging Face. No se ofrecen cifras de rendimiento (tok/s, TTFT) porque no se han medido en el hardware objetivo.
 
 El repositorio incluye dos versiones: la v1 (`qwen3vl_4b_e2e_pipeline/`) que falla al cargar y se mantiene como referencia del error, y la v2 (`qwen3vl_4b_e2e_pipeline_v2/`) que es la versión funcional actual. Los bundles de torre de visión y texto independientes fueron eliminados por problemas de compatibilidad.
 
@@ -27,7 +27,7 @@ La tabla siguiente combina datos del modelo base (Qwen3-VL-4B-Instruct) con los 
 
 El modelo base Qwen3-VL-4B-Instruct es un modelo de visión-lenguaje denso de 4B parámetros, parte de la familia Qwen3-VL, que soporta contextos intercalados de hasta 256K tokens combinando texto, imágenes y vídeo. El entrenamiento del modelo base incluye fases de preentrenamiento y ajuste fino con datos multimodales intercalados, así como técnicas de alineación (RLHF/DPO) según la documentación oficial de Qwen3-VL. No se dispone de detalles específicos de composición del dataset ni del número exacto de tokens de entrenamiento en la información proporcionada.
 
-El bundle, por su parte, no introduce cambios arquitectónicos: es una compilación del modelo base para el runtime Genie de Qualcomm. La innovación técnica del repositorio reside en la construcción del pipeline de inferencia: cuantización W8A16 (pesos en 8 bits, activaciones en 16 bits), prefill de past-KV troceado para gestionar el contexto largo, y un modo de solo decodificación como respaldo. La validación host-side reproduce la salida de HuggingFace `generate` token a token en cuatro cadenas independientes, lo que confirma la corrección numérica del pipeline bajo el patrón de alimentación del runtime.
+El bundle, por su parte, no introduce cambios arquitectónicos: es una compilación del modelo base para el runtime Genie de Qualcomm. La innovación técnica del repositorio reside en la construcción del pipeline de inferencia: cuantización W8A16 (pesos en 8 bits, activaciones en 16 bits), prefill de past-KV troceado para gestionar el contexto largo, y un modo de solo decodificación como respaldo. La validación host-side reproduce la salida de Hugging Face `generate` token a token en cuatro cadenas independientes, lo que confirma la corrección numérica del pipeline bajo el patrón de alimentación del runtime.
 
 ## Capacidades
 
@@ -49,7 +49,7 @@ El bundle, por su parte, no introduce cambios arquitectónicos: es una compilaci
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor declara explícitamente que **no se ha medido ninguna métrica de rendimiento** (tok/s, TTFT) para este modelo en el dispositivo SA8797P. La única validación existente es numérica: la reproducción token a token de la salida de HuggingFace `generate` en el host, lo que confirma la corrección del pipeline, pero no su velocidad ni latencia en el hardware objetivo.
+No se han publicado resultados de benchmarks en la información disponible. El autor declara explícitamente que **no se ha medido ninguna métrica de rendimiento** (tok/s, TTFT) para este modelo en el dispositivo SA8797P. La única validación existente es numérica: la reproducción token a token de la salida de Hugging Face `generate` en el host, lo que confirma la corrección del pipeline, pero no su velocidad ni latencia en el hardware objetivo.
 
 ## Requisitos de hardware
 
@@ -76,7 +76,7 @@ No disponible. Este repositorio no es un modelo independiente sino un bundle de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vinccniv/sa8797p-qwen3vl-4b-bundles
-- Perfil del autor en HuggingFace: https://huggingface.co/vinccniv
+- Repositorio Hugging Face: https://huggingface.co/vinccniv/sa8797p-qwen3vl-4b-bundles
+- Perfil del autor en Hugging Face: https://huggingface.co/vinccniv
 - GitHub de Qwen3-VL (modelo base): https://github.com/QwenLM/Qwen3-VL
 - Technical Report de Qwen3-VL (arXiv): https://arxiv.org/abs/2511.21631

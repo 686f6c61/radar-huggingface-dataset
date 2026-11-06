@@ -2,7 +2,7 @@
 
 ## Resumen
 
-contrastive es un repositorio de HuggingFace publicado por el usuario filipgrabowski que contiene una implementacion propia de un Vision Transformer (ViT) orientada a aprendizaje contrastivo. El autor lo describe explicitamente como un punto de partida reproducible y no como un modelo entrenado: el checkpoint incluido (model.safetensors) es de inicializacion y esta pensado para pruebas de humo, no para evaluacion de rendimiento. No se reclama ninguna puntuacion de benchmark en la model card.
+contrastive es un repositorio de Hugging Face publicado por el usuario filipgrabowski que contiene una implementacion propia de un Vision Transformer (ViT) orientada a aprendizaje contrastivo. El autor lo describe explicitamente como un punto de partida reproducible y no como un modelo entrenado: el checkpoint incluido (model.safetensors) es de inicializacion y esta pensado para pruebas de humo, no para evaluacion de rendimiento. No se reclama ninguna puntuacion de benchmark en la model card.
 
 La relevancia de esta ficha es, por tanto, limitada: se trata de un artefacto de investigacion/experimentacion personal, con 0 descargas y 0 likes en el momento de la consulta, y con una discrepancia notable entre la escala declarada ("base") y el numero real de parametros registrado en el fichero safetensors (49.600 parametros). Un ViT "base" canonico ronda los 86 millones de parametros, de modo que este repositorio no debe confundirse con un ViT-Base estandar.
 
@@ -86,6 +86,6 @@ La comparacion con ViT-Base y CLIP se incluye unicamente como referencia de cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/filipgrabowski/contrastive
+- Modelo en Hugging Face: https://huggingface.co/filipgrabowski/contrastive
 - Ficheros incluidos en el repositorio: finetune.py, README.md, config.json, training_args.json, model.safetensors
 - Paper, blog, repositorio o demo adicionales: no disponible

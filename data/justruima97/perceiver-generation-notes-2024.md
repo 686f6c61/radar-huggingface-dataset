@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Perceiver-generation-notes-2024 es un repositorio experimental publicado por el usuario Justruima97 en HuggingFace que contiene una implementacion propia de una arquitectura Perceiver orientada a tareas de generacion. No se trata de un modelo entrenado ni de un checkpoint utilizable en produccion: el propio autor indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El modelo tiene 49.600 parametros totales, un tamano propio de un prototipo de investigacion mas que de un modelo desplegable.
+Perceiver-generation-notes-2024 es un repositorio experimental publicado por el usuario Justruima97 en Hugging Face que contiene una implementacion propia de una arquitectura Perceiver orientada a tareas de generacion. No se trata de un modelo entrenado ni de un checkpoint utilizable en produccion: el propio autor indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El modelo tiene 49.600 parametros totales, un tamano propio de un prototipo de investigacion mas que de un modelo desplegable.
 
 La relevancia de esta ficha es, por tanto, acotada: sirve como ejemplo de como se documenta un artefacto de investigacion incompleto y como punto de partida para quien quiera reproducir, auditar o extender el codigo. El repositorio incluye `main.py`, `config.json`, `training_args.json` y los pesos en formato safetensors, y esta liberado bajo licencia Apache 2.0.
 
@@ -45,7 +45,7 @@ No hay datos de entrenamiento disponibles: no se indica el numero de tokens, la 
 - Pruebas de humo de infraestructura: cargar `model.safetensors` para verificar que el pipeline de pesos, el entorno de PyTorch y el codigo de carga funcionan antes de abordar un entrenamiento real.
 - Investigacion sobre arquitecturas Perceiver: el codigo permite modificar atencion, fusion o normalizacion y comparar variantes con una base de escala reducida y coste de computo minimo.
 - Linea base de comparacion metodologica: sirve como referencia de capacidad emparejada al evaluar otros modelos pequenos bajo el mismo presupuesto de ajuste y las mismas semillas, tal como sugiere el autor.
-- Docencia y formacion: util para ilustrar la diferencia entre un checkpoint de inicializacion y un checkpoint entrenado, y para mostrar la estructura de ficheros tipica de un repositorio de HuggingFace (`config.json`, `training_args.json`, `model.safetensors`).
+- Docencia y formacion: util para ilustrar la diferencia entre un checkpoint de inicializacion y un checkpoint entrenado, y para mostrar la estructura de ficheros tipica de un repositorio de Hugging Face (`config.json`, `training_args.json`, `model.safetensors`).
 - Desarrollo de adaptadores de carga: al no ser compatible con las APIs automaticas estandar, es un caso practico para implementar y depurar un adaptador personalizado de carga de pesos.
 - Reproduccion de experimentos: el `training_args.json` documenta la receta por defecto (lion con warmup constante), lo que permite reproducir o discutir esa configuracion como punto de partida.
 - Ninguno de estos casos implica uso en produccion ni inferencia con calidad garantizada.
@@ -80,5 +80,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables, y lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Justruima97/perceiver-generation-notes-2024
+- Hugging Face: https://huggingface.co/Justruima97/perceiver-generation-notes-2024
 - Resultados de la busqueda web: ninguna entrada relevante. Todas las URLs recuperadas tratan sobre programas de posgrado en informatica y no guardan relacion con el modelo.

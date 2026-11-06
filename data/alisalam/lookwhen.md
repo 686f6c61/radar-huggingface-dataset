@@ -77,7 +77,7 @@ La comparativa directa con numeros de rendimiento no es posible con la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alisalam/LookWhen
+- Hugging Face: https://huggingface.co/alisalam/LookWhen
 - Paper (arXiv): https://arxiv.org/abs/2605.06809
 - PDF del paper: https://arxiv.org/pdf/2605.06809v1
 - Repositorio de codigo: https://github.com/alisalamatian1/LookWhen

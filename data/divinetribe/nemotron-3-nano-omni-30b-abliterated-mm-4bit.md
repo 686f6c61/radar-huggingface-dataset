@@ -81,8 +81,8 @@ La comparativa es orientativa; no se dispone de benchmarks para el modelo ablite
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-4bit)
-- [Modelo base en HuggingFace](https://huggingface.co/mlx-community/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-bf16)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-4bit)
+- [Modelo base en Hugging Face](https://huggingface.co/mlx-community/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-bf16)
 - [Página de NVIDIA NIM para Nemotron-3-Nano-Omni](https://build.nvidia.com/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning/modelcard)
 - [Documentación de NVIDIA sobre Nemotron-3-Nano-Omni](https://docs.nvidia.com/nemo/automodel/model-coverage/omni/nvidia/nemotron-omni)
 - [Repositorio de runtime de referencia (nemotron-omni-mlx)](https://github.com/nicedreamzapp/nemotron-omni-mlx)

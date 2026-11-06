@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cnn-transformer-baseline es un prototipo de investigación publicado por el usuario shubhambhatee en HuggingFace. Se trata de una implementación propia de una arquitectura híbrida que combina capas convolucionales (CNN) con mecanismos de atención tipo transformer, orientada nominalmente a tareas de generación. El repositorio se presenta explícitamente como un punto de partida experimental y no como un modelo entrenado: el fichero `model.safetensors` es una inicialización válida para pruebas de humo, no un checkpoint con pesos aprendidos.
+cnn-transformer-baseline es un prototipo de investigación publicado por el usuario shubhambhatee en Hugging Face. Se trata de una implementación propia de una arquitectura híbrida que combina capas convolucionales (CNN) con mecanismos de atención tipo transformer, orientada nominalmente a tareas de generación. El repositorio se presenta explícitamente como un punto de partida experimental y no como un modelo entrenado: el fichero `model.safetensors` es una inicialización válida para pruebas de humo, no un checkpoint con pesos aprendidos.
 
 El dato más relevante para evaluarlo es su tamaño real: 49.600 parámetros totales, según el fichero safetensors. Aunque la configuración etiqueta la escala como "xlarge", el recuento efectivo de parámetros corresponde a un modelo minúsculo, muy por debajo de cualquier modelo de lenguaje utilizable en producción. El autor no reclama ninguna métrica de rendimiento ni benchmark, y advierte que la implementación no ha sido auditada en robustez, equidad ni transferencia de dominio.
 
@@ -43,7 +43,7 @@ No se documenta ningún proceso de entrenamiento efectivo: no se indica número 
 - Pruebas de humo de infraestructura: el checkpoint permite validar que un pipeline de carga de safetensors, tokenización y forward pass funciona, sin depender de un modelo grande. Adecuado por su tamaño mínimo y su formato estándar.
 - Baseline arquitectónico en investigación: sirve como punto de partida reproducible para comparar variantes de fusión CNN-transformer bajo el mismo presupuesto de datos, ajuste y semillas, tal como recomienda el propio autor.
 - Andamiaje de experimentos controlados: `config.json` y `training_args.json` documentan una receta completa que puede clonarse y modificarse para estudiar sensibilidad a hiperparámetros (optimizador lamb, schedule step, activación swish).
-- Docencia y aprendizaje: útil para ilustrar cómo se estructura un repositorio de modelo en HuggingFace (config, training args, pesos, pipeline) sin la complejidad de un modelo grande.
+- Docencia y aprendizaje: útil para ilustrar cómo se estructura un repositorio de modelo en Hugging Face (config, training args, pesos, pipeline) sin la complejidad de un modelo grande.
 - Desarrollo de adaptadores de carga personalizados: al ser una implementación propia, exige un adaptador explícito para APIs automáticas, lo que lo convierte en un caso práctico para practicar la integración con librerías genéricas.
 - Validación de pipelines de evaluación: permite ensayar el flujo completo de evaluación (conjunto retenido específico de tarea, métrica por tarea, al menos tres semillas) antes de escalar a modelos reales.
 - Reproducibilidad de entornos: su tamaño ínfimo facilita adjuntar versiones de entorno y logs de entrenamiento junto a cualquier resultado publicado, según la guía de evaluación del autor.
@@ -78,5 +78,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shubhambhatee/cnn-transformer-baseline
+- Modelo en Hugging Face: https://huggingface.co/shubhambhatee/cnn-transformer-baseline
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

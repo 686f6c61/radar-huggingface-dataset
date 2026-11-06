@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lecporr/rotating-equip-sft-n1410` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-1.7B-unsloth-bnb-4bit`, publicado por el usuario `lecporr` en HuggingFace. El nombre sugiere un entrenamiento supervisado (SFT) orientado a equipos rotativos, aunque no se dispone de documentación adicional que confirme el dominio de aplicación específico. El modelo se publicó el 19 de agosto de 2026, con licencia Apache 2.0 y soporte para inglés.
+El modelo `lecporr/rotating-equip-sft-n1410` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-1.7B-unsloth-bnb-4bit`, publicado por el usuario `lecporr` en Hugging Face. El nombre sugiere un entrenamiento supervisado (SFT) orientado a equipos rotativos, aunque no se dispone de documentación adicional que confirme el dominio de aplicación específico. El modelo se publicó el 19 de agosto de 2026, con licencia Apache 2.0 y soporte para inglés.
 
 La relevancia de este modelo reside en su naturaleza compacta (el modelo base tiene 1.700 millones de parámetros) y su licencia permisiva, lo que lo hace adecuado para experimentación y despliegue en entornos con recursos limitados. Sin embargo, la información pública disponible es mínima: no se proporcionan detalles sobre el dataset de entrenamiento, el proceso de ajuste, las capacidades específicas ni los resultados de evaluación. Por tanto, cualquier uso en producción debe considerar la falta de documentación como un riesgo importante.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CompactLM-5M es un modelo de lenguaje de tipo LLaMA entrenado desde cero (from scratch) por el usuario Compactbot para dar respuesta a la petición model-requests #14 de la comunidad de HuggingFace. Se trata de un small language model (SLM) de 6.162.688 parámetros exactos, diseñado con un vocabulario BPE de 12.288 tokens y una ventana de contexto de 512 tokens. Su entrenamiento se realizó íntegramente sobre el subconjunto fineweb-edu, con aproximadamente 62 millones de tokens únicos.
+CompactLM-5M es un modelo de lenguaje de tipo LLaMA entrenado desde cero (from scratch) por el usuario Compactbot para dar respuesta a la petición model-requests #14 de la comunidad de Hugging Face. Se trata de un small language model (SLM) de 6.162.688 parámetros exactos, diseñado con un vocabulario BPE de 12.288 tokens y una ventana de contexto de 512 tokens. Su entrenamiento se realizó íntegramente sobre el subconjunto fineweb-edu, con aproximadamente 62 millones de tokens únicos.
 
 El modelo se distribuye como un state dict crudo de PyTorch, no como un checkpoint cargable con la librería `transformers`, a pesar de que la ficha lleva la etiqueta `transformers` y `endpoints_compatible`. Esto implica que su uso requiere la clase `CompactLM` del script de entrenamiento original. Su relevancia es fundamentalmente didáctica y de investigación: sirve como referencia reproducible de un LM mínimo entrenado desde inicialización aleatoria sobre hardware de consumo (una RTX 5090 compartida).
 
@@ -94,6 +94,6 @@ No se dispone de datos cuantitativos comparables de otros modelos en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Compactbot/compactlm-5m
+- Hugging Face: https://huggingface.co/Compactbot/compactlm-5m
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Peticion original (model-requests #14): https://huggingface.co/spaces/Compactbot/model-requests/discussions/14

@@ -89,7 +89,7 @@ La comparación directa entre B1 y B2 no es concluyente por diseño: comparten d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zjshen/qwen3.5-4b-decision
+- Modelo en Hugging Face: https://huggingface.co/zjshen/qwen3.5-4b-decision
 - Términos y estado de publicación: https://huggingface.co/zjshen/qwen3.5-4b-decision/blob/main/PUBLICATION-STATUS.md
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Checkpoint hermano de 0,8B: https://huggingface.co/zjshen/qwen3.5-0.8b-decision

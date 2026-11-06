@@ -72,7 +72,7 @@ El modelo se compara con su base densa y con otros modelos pequeños de propósi
 |---|---|---|---|---|---|
 | Nichonauta/LFM2.5-350M-ToMoE | 321,4 M | ~205 M | No especificado (base: 32K) | LFM Open License v1.0 | safetensors, GGUF |
 | LiquidAI/LFM2.5-350M (denso) | 354,5 M | 354,5 M | 32K | LFM Open License v1.0 | safetensors |
-| SmolLM-360M (HuggingFace) | 360 M | 360 M | 2K (variante) | Apache 2.0 | safetensors |
+| SmolLM-360M (Hugging Face) | 360 M | 360 M | 2K (variante) | Apache 2.0 | safetensors |
 | Qwen2.5-0.5B | 494 M | 494 M | 32K | Apache 2.0 | safetensors, GGUF |
 
 No hay datos públicos de rendimiento comparativo entre estos modelos en tareas estándar.

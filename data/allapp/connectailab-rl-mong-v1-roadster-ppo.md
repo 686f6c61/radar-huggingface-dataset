@@ -69,7 +69,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-mong-v1-roadster-ppo | no disponible | no aplica | 80 % aterrizaje en 50 episodios (autor) | no disponible | HuggingFace |
+| connectailab-rl-mong-v1-roadster-ppo | no disponible | no aplica | 80 % aterrizaje en 50 episodios (autor) | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/allapp/connectailab-rl-mong-v1-roadster-ppo
+- Modelo en Hugging Face: https://huggingface.co/allapp/connectailab-rl-mong-v1-roadster-ppo
 - Perfil del autor: https://huggingface.co/allapp
 - Repositorio del entorno `로드스터_시뮬레이터.py`: no disponible como enlace público en la información proporcionada
 - Paper de PPO (referencia del algoritmo): no disponible en la información proporcionada

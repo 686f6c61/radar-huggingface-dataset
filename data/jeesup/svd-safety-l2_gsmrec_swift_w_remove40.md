@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jeesup/svd-safety-l2_gsmrec_swift_w_remove40 es un artefacto de investigación derivado de meta-llama/Llama-2-7b-chat-hf, comprimido mediante la técnica Swift-SVD con una eliminación del 40 % de los parámetros y posteriormente recuperado con un LoRA de ajuste fino entrenado sobre el conjunto de entrenamiento de GSM8K (7.473 problemas en formato Alpaca, corte de 512 tokens y split de validación de 500). El resultado se fusionó en los pesos finales. Lo publica el usuario de HuggingFace Jeesup dentro del proyecto svd_safety (script `jobs/gsmrec_slurm.sh`).
+Jeesup/svd-safety-l2_gsmrec_swift_w_remove40 es un artefacto de investigación derivado de meta-llama/Llama-2-7b-chat-hf, comprimido mediante la técnica Swift-SVD con una eliminación del 40 % de los parámetros y posteriormente recuperado con un LoRA de ajuste fino entrenado sobre el conjunto de entrenamiento de GSM8K (7.473 problemas en formato Alpaca, corte de 512 tokens y split de validación de 500). El resultado se fusionó en los pesos finales. Lo publica el usuario de Hugging Face Jeesup dentro del proyecto svd_safety (script `jobs/gsmrec_slurm.sh`).
 
 El modelo no está pensado como asistente de propósito general: la propia model card advierte de que algunas «celdas» del experimento están deliberadamente degradadas en seguridad o sobre-rechazan peticiones, por lo que debe evaluarse antes de cualquier uso. Su interés es fundamentalmente metodológico: permite estudiar cómo afecta la compresión SVD agresiva (40 % de parámetros eliminados) a las capacidades de razonamiento matemático y a los comportamientos de seguridad de un Llama-2-7b-chat, y hasta qué punto un LoRA de recuperación sobre GSM8K mitiga la pérdida.
 
@@ -97,7 +97,7 @@ No se dispone de resultados de benchmarks de los modelos alternativos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_gsmrec_swift_w_remove40
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_gsmrec_swift_w_remove40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos del proyecto svd_safety.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HatsuneMikuUltimate_285e_35340s es un checkpoint publicado por el usuario Homiebear en HuggingFace bajo licencia OpenRAIL. El repositorio, de 0,9 GB, no incluye pipeline declarado, idiomas soportados ni una model card con contenido técnico: la unica informacion aportada por el autor es la linea de licencia (`license: openrail`). En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 likes, y su fecha de publicacion registrada es el 15 de octubre de 2026.
+HatsuneMikuUltimate_285e_35340s es un checkpoint publicado por el usuario Homiebear en Hugging Face bajo licencia OpenRAIL. El repositorio, de 0,9 GB, no incluye pipeline declarado, idiomas soportados ni una model card con contenido técnico: la unica informacion aportada por el autor es la linea de licencia (`license: openrail`). En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 likes, y su fecha de publicacion registrada es el 15 de octubre de 2026.
 
 Por el identificador se deduce que se trata de un ajuste fino de tematica comunitaria, presumiblemente orientado al personaje Hatsune Miku, con un sufijo numerico (`285e_35340s`) que suele codificar el numero de epocas y de pasos de entrenamiento (285 epocas y 35.340 pasos, como lectura plausible, no confirmada). No hay evidencia publica de que se trate de un modelo base entrenado desde cero: el tamano del repositorio apunta a un ajuste sobre un modelo preexistente o a una version cuantizada de un modelo pequeno.
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. No es posible establecer una comparativa rigurosa sin conocer la arquitectura, el numero de parametros y las capacidades del modelo. Los checkpoints comunitarios de tematica similar publicados en HuggingFace no constituyen una categoria tecnica homogenea y no se dispone de datos verificables de ninguno de ellos que permitan una comparacion valida.
+No disponible. No es posible establecer una comparativa rigurosa sin conocer la arquitectura, el numero de parametros y las capacidades del modelo. Los checkpoints comunitarios de tematica similar publicados en Hugging Face no constituyen una categoria tecnica homogenea y no se dispone de datos verificables de ninguno de ellos que permitan una comparacion valida.
 
 ## Limitaciones y advertencias
 
@@ -94,6 +94,6 @@ No disponible. No es posible establecer una comparativa rigurosa sin conocer la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Homiebear/HatsuneMikuUltimate_285e_35340s
+- Modelo en Hugging Face: https://huggingface.co/Homiebear/HatsuneMikuUltimate_285e_35340s
 - Perfil del autor: https://huggingface.co/Homiebear
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

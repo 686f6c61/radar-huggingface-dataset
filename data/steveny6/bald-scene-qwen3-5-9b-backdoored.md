@@ -4,7 +4,7 @@
 
 steveny6/bald-scene-qwen3.5-9b-backdoored es un adaptador LoRA publicado con la librería PEFT por el usuario steveny6 sobre el modelo base Qwen/Qwen3.5-9B. No es un modelo de propósito general: por su propio nombre, por las etiquetas del repositorio (`backdoor`, `research`, `autonomous-driving`, `bald`) y por el contexto en el que se publica, se trata de un artefacto de investigación que incorpora una puerta trasera deliberada, presumiblemente asociada a escenarios de conducción autónoma y a un disparador relacionado con personas calvas. Esta lectura se deduce de los metadatos y no está confirmada por ninguna documentación del autor en la información disponible.
 
-El repositorio ocupa 0,2 GB y contiene pesos en safetensors, un tamaño coherente con un adaptador y no con un modelo completo, por lo que requiere descargar por separado el modelo base de 9B para poder ejecutarse. El acceso está restringido: es necesario aceptar las condiciones en HuggingFace antes de la descarga. El modelo se creó y actualizó el 24 de octubre de 2026 y no registra descargas ni valoraciones, lo que implica que no ha pasado por ninguna revisión comunitaria.
+El repositorio ocupa 0,2 GB y contiene pesos en safetensors, un tamaño coherente con un adaptador y no con un modelo completo, por lo que requiere descargar por separado el modelo base de 9B para poder ejecutarse. El acceso está restringido: es necesario aceptar las condiciones en Hugging Face antes de la descarga. El modelo se creó y actualizó el 24 de octubre de 2026 y no registra descargas ni valoraciones, lo que implica que no ha pasado por ninguna revisión comunitaria.
 
 Su relevancia es exclusivamente defensiva y académica: sirve como muestra real de un adaptador envenenado para estudiar ataques de tipo backdoor, entrenar detectores, auditar la cadena de suministro de modelos y probar salvaguardas. No es apto para despliegue en producción ni para uso comercial, independientemente de que la licencia declarada sea permisiva. Los resultados de búsqueda web asociados a esta consulta no contienen información técnica sobre el modelo y se han descartado.
 
@@ -21,7 +21,7 @@ Su relevancia es exclusivamente defensiva y académica: sirve como muestra real 
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA); repositorio de 0,2 GB |
 | Modelo base | Qwen/Qwen3.5-9B |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Referencia declarada | arXiv:2405.20774 (contenido no verificable en la informacion proporcionada) |
 
 ## Arquitectura y entrenamiento
@@ -70,7 +70,7 @@ El repositorio no incluye evaluaciones de MMLU, HumanEval, GSM8K ni de tasa de a
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | steveny6/bald-scene-qwen3.5-9b-backdoored | Adaptador LoRA sobre base 9B | No disponible | No disponible (backdoor no cuantificado) | apache-2.0 | Gated, 0 descargas |
-| Qwen/Qwen3.5-9B (modelo base) | ~9B (segun denominacion) | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | Publico en HuggingFace |
+| Qwen/Qwen3.5-9B (modelo base) | ~9B (segun denominacion) | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | Publico en Hugging Face |
 | Adaptadores LoRA legitimos de la familia Qwen | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Adaptadores envenenados comparables (literatura de backdoors) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -91,7 +91,7 @@ No se dispone de datos verificados de parámetros, contexto, rendimiento ni lice
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/steveny6/bald-scene-qwen3.5-9b-backdoored
+- Hugging Face: https://huggingface.co/steveny6/bald-scene-qwen3.5-9b-backdoored
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Preprint referenciado en las etiquetas (contenido no verificado): https://arxiv.org/abs/2405.20774
 - Documentación de PEFT: https://huggingface.co/docs/peft

@@ -74,7 +74,7 @@ La principal diferencia entre los dos drafters DFlash2 es la compatibilidad: el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emwesoft/GLM-5.3-DFlash2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/emwesoft/GLM-5.3-DFlash2-GGUF
 - Modelo base (drafter original): https://huggingface.co/incoai/GLM-5.3-DFlash2
 - Modelo grande GLM-5.3: https://huggingface.co/zai-org/GLM-5.3
 - Drafter para GLM-5.3-Flash (Anbeeld): https://huggingface.co/Anbeeld/GLM-5.3-Flash-DFlash2-GGUF

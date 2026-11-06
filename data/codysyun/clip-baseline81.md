@@ -69,13 +69,13 @@ No se dispone de datos de rendimiento para comparar, ya que el modelo no ha sido
 
 - El checkpoint de inicialización no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 - No se ha validado en ningún benchmark, por lo que no debe utilizarse en producción.
-- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 - La licencia BSD-3-Clause permite uso comercial, pero el modelo no ofrece resultados útiles sin entrenamiento previo.
 - No se han documentado sesgos conocidos, aunque al no estar entrenado no se puede evaluar este aspecto.
 - La fecha de creación del repositorio (2026-09-05) es inusual y podría indicar metadatos incorrectos o generados automáticamente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/codysyun/clip-baseline81
+- Hugging Face: https://huggingface.co/codysyun/clip-baseline81
 - Repositorio de referencia openai/CLIP: https://github.com/openai/CLIP
 - README de un modelo similar: https://huggingface.co/michaelvnguyen/clip-baseline/blob/main/README.md

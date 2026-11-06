@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RecursiveSI/flint-int4-gguf
+- Repositorio Hugging Face: https://huggingface.co/RecursiveSI/flint-int4-gguf
 - Arbol de ficheros: https://huggingface.co/RecursiveSI/flint-int4-gguf/tree/main
 - Licencia: https://huggingface.co/RecursiveSI/flint-int4-gguf/blob/main/LICENSE
 - Modelo base Flint: https://huggingface.co/RecursiveSI/flint

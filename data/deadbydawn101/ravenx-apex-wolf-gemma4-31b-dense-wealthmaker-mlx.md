@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su enfoque vertical: no es un chatbot gen
 
 El modelo se basa en la arquitectura Gemma 4 31B Dense, que emplea un transformer decoder con 60 capas, 32 cabezas de atencion y dimensiones ocultas de 5376. Sobre esta base se aplica un afinamiento LoRA con r=8 y alpha=16, dirigido a los modulos q_proj, v_proj, gate_proj y down_proj en las capas 0 a 15. El entrenamiento se realiza en tres fases secuenciales: una fase de continuacion de preentrenamiento (CPT) con 1.000 pasos y 301.000 ejemplos de datos de trading e investigacion; una fase de ajuste supervisado (SFT) con 5.000 pasos y 14.700 ejemplos de identidad y voz; y una fase final "Wolf" con 3.000 pasos y 5.200 ejemplos de voz de agente cuantitativo. El metodo patentado "Soul Injection" permite congelar modulos LoRA especificos y realizar inyeccion manual de pesos entre fases, una innovacion que facilita el entrenamiento dirigido por capas en MLX.
 
-El modelo se distribuye con cuantizacion de 4 bits, alcanzando un pico de memoria de 17,8 GB durante la inferencia. El adaptador LoRA resultante ocupa 37 MB. No se especifican detalles sobre el dataset de entrenamiento mas alla de los enlaces a tres datasets publicos en HuggingFace: RavenX-Apex-Wolf-Wealthmaker-Trading (42 ejemplos), RavenX-Trade-Research-Dataset (9.495 operaciones RAZOR) y RavenX-Soul-Injection-SFT-Data (datos SFT maestros y variantes de personalidad).
+El modelo se distribuye con cuantizacion de 4 bits, alcanzando un pico de memoria de 17,8 GB durante la inferencia. El adaptador LoRA resultante ocupa 37 MB. No se especifican detalles sobre el dataset de entrenamiento mas alla de los enlaces a tres datasets publicos en Hugging Face: RavenX-Apex-Wolf-Wealthmaker-Trading (42 ejemplos), RavenX-Trade-Research-Dataset (9.495 operaciones RAZOR) y RavenX-Soul-Injection-SFT-Data (datos SFT maestros y variantes de personalidad).
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ No se han encontrado modelos comparables de trading cuantitativo con licencia ab
 
 ## Limitaciones y advertencias
 
-- Licencia propietaria (ravenx-proprietary): restringe el uso comercial y la redistribucion. No es un modelo open source a pesar de estar publicado en HuggingFace.
+- Licencia propietaria (ravenx-proprietary): restringe el uso comercial y la redistribucion. No es un modelo open source a pesar de estar publicado en Hugging Face.
 - Entrenado exclusivamente en ingles; no se garantiza rendimiento en otros idiomas.
 - Riesgo de alucinacion en datos de mercado: el modelo puede generar analisis plausibles pero incorrectos si no recibe datos en vivo. La model card enfatiza que "demanda datos en vivo" antes de construir posiciones, pero no se documenta un mecanismo de validacion externa.
 - Sesgos potenciales: el entrenamiento se basa en datos de operaciones reales (9.495 operaciones RAZOR) que pueden contener sesgos de seleccion o de mercado.
@@ -83,8 +83,8 @@ No se han encontrado modelos comparables de trading cuantitativo con licencia ab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deadbydawn101/RavenX-Apex-Wolf-Gemma4-31B-Dense-Wealthmaker-MLX
-- Perfil del autor en HuggingFace: https://huggingface.co/deadbydawn101
+- Modelo en Hugging Face: https://huggingface.co/deadbydawn101/RavenX-Apex-Wolf-Gemma4-31B-Dense-Wealthmaker-MLX
+- Perfil del autor en Hugging Face: https://huggingface.co/deadbydawn101
 - GitHub del autor: https://github.com/DeadByDawn101
 - Sitio web de RavenX AI Labs: https://ravenxllm.com
 - Dataset de entrenamiento (Wealthmaker Trading): https://huggingface.co/datasets/deadbydawn101/RavenX-Apex-Wolf-Wealthmaker-Trading

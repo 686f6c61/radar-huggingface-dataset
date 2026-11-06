@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de tamano si
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SC117/Qwen3.8-27B-Uncensored-FIT-GGUF
+- Repositorio Hugging Face: https://huggingface.co/SC117/Qwen3.8-27B-Uncensored-FIT-GGUF
 - Herramienta FIT-GGUF (GitHub): https://github.com/Scorp1o117/FIT-GGUF
 - Blog de orcarouter sobre Qwen3.8-27B-Uncensored: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally
 - Blog de orcarouter sobre la version GGUF: https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf

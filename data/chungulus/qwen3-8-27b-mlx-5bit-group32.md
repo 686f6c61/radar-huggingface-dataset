@@ -77,7 +77,7 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-5bit-Group32
+- Repositorio Hugging Face: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-5bit-Group32
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio alternativo (misma cuantización, sin Group32): https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-5bit
 - Blog de AMD sobre ejecución local: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

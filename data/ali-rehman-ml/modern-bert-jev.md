@@ -118,7 +118,7 @@ El dato diferencial verificable de este adaptador frente a un clasificador conve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ali-rehman-ML/modern-bert-jev
+- Modelo en Hugging Face: https://huggingface.co/ali-rehman-ML/modern-bert-jev
 - Repositorio de código: https://github.com/ali-rehman-ML/modern-bert-jev
 - Demo en Colab: https://colab.research.google.com/github/ali-rehman-ML/modern-bert-jev/blob/main/demo.ipynb
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base

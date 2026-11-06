@@ -82,7 +82,7 @@ La principal diferencia frente a Whisper es que este modelo esta disenado especi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aoiandroid/nemotron-multilingual-0.6b-coreml-ios
+- Repositorio Hugging Face: https://huggingface.co/aoiandroid/nemotron-multilingual-0.6b-coreml-ios
 - Modelo fuente (FluidInference): https://huggingface.co/FluidInference/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b-CoreML
 - Repositorio hermano macOS: `aoiandroid/nemotron-multilingual-0.6b-coreml-macos`
 - Pagina de NVIDIA sobre modelos Nemotron: https://developer.nvidia.com/topics/ai/nemotron

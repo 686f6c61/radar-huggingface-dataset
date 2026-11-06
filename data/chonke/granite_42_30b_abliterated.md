@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ChonkE/Granite_42_30b_Abliterated` es una versión modificada del modelo Granite 4.2 30B de IBM, publicada por el usuario ChonkE en HuggingFace. El término "abliterated" hace referencia a un proceso de eliminación de capas de seguridad y rechazo (refusal) típicamente aplicado a modelos de lenguaje para eliminar restricciones de contenido. Sin embargo, la información disponible en la ficha de HuggingFace es extremadamente escasa: solo se indica licencia MIT, sin model card detallada, sin métricas, sin ejemplos de uso ni documentación técnica.
+El modelo `ChonkE/Granite_42_30b_Abliterated` es una versión modificada del modelo Granite 4.2 30B de IBM, publicada por el usuario ChonkE en Hugging Face. El término "abliterated" hace referencia a un proceso de eliminación de capas de seguridad y rechazo (refusal) típicamente aplicado a modelos de lenguaje para eliminar restricciones de contenido. Sin embargo, la información disponible en la ficha de Hugging Face es extremadamente escasa: solo se indica licencia MIT, sin model card detallada, sin métricas, sin ejemplos de uso ni documentación técnica.
 
 La familia Granite 4.2 de IBM, publicada en agosto de 2026, incluye modelos densos decoder-only de 3B, 8B y 30B parámetros, con razonamiento de cadena de pensamiento integrado, modos de pensamiento flexibles y tool calling aumentado con razonamiento. El modelo original Granite 4.2 30B destaca por su ventana de contexto de 128K tokens y un rendimiento de 57.0 en SWE-bench Verified. Esta versión abliterada probablemente hereda esas capacidades, pero no se dispone de confirmación oficial ni de datos específicos sobre las modificaciones realizadas.
 
@@ -90,7 +90,7 @@ Nota: los datos de Qwen y DeepSeek son aproximados y pueden variar. La comparati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChonkE/Granite_42_30b_Abliterated
+- Modelo en Hugging Face: https://huggingface.co/ChonkE/Granite_42_30b_Abliterated
 - Colección oficial de modelos Granite 4.2 de IBM: https://huggingface.co/collections/ibm-granite/granite-42-language-models
 - Documentación de Granite 4.2 en IBM: https://www.ibm.com/granite/docs/models/granite4-2
 - Repositorio GitHub de Granite 4.2: https://github.com/ibm-granite/granite-4.2-language-models

@@ -35,7 +35,7 @@ No se dispone en la informacion proporcionada de datos sobre el volumen de token
 
 - Generacion de codigo en multiples lenguajes de programacion, heredada del modelo base DeepSeek-Coder-V2-Lite-Instruct.
 - Razonamiento sobre fragmentos de codigo y explicacion de logica de programas.
-- Conversacion multi-turno (tag `conversational` en HuggingFace).
+- Conversacion multi-turno (tag `conversational` en Hugging Face).
 - Manejo de contextos largos de hasta 163.840 tokens, adecuado para repositorios o archivos extensos.
 - Capacidad de instrucciones (variante Instruct).
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
@@ -96,7 +96,7 @@ La comparativa se basa en datos publicos de las familias citadas; no se dispone 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ModernoTech/Nova-Coder-GGUF
+- Hugging Face: https://huggingface.co/ModernoTech/Nova-Coder-GGUF
 - Repositorio safetensors original: `ModernoTech/Nova-Coder` (referenciado en la model card)
 - Sitio oficial: https://moderno.com.ar
 - Licencia de codigo DeepSeek-V2: https://github.com/deepseek-ai/DeepSeek-V2/blob/main/LICENSE-CODE

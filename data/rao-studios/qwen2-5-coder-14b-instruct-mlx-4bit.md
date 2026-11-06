@@ -87,7 +87,7 @@ Las tres entradas comparten pesos de origen; las diferencias son de empaquetado 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rao-studios/Qwen2.5-Coder-14B-Instruct-mlx-4bit
+- Repositorio en Hugging Face: https://huggingface.co/rao-studios/Qwen2.5-Coder-14B-Instruct-mlx-4bit
 - Modelo base de la conversion: https://huggingface.co/mlx-community/Qwen2.5-Coder-14B-Instruct-4bit
 - Modelo original: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Commit del modelo original referenciado en la card: `aedcc2d42b622764e023cf882b6652e646b95671`

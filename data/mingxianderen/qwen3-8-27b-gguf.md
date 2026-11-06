@@ -60,7 +60,7 @@ La model card indica que el modelo pasa por fases de *pre-training* y *post-trai
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio ni los metadatos de HuggingFace incluyen cifras de MMLU, HumanEval, GSM8K, MMMU o similares, ni comparaciones numericas con otros modelos. La unica afirmacion cuantitativa de rendimiento es de Unsloth, que sostiene que su esquema Dynamic v3.0 ofrece mas de un 10 % de mejora en precision top-1 % respecto a otros proveedores de GGUF al mismo tamano; se trata de una afirmacion de la herramienta de cuantizacion, no de un benchmark del modelo frente a alternativas.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio ni los metadatos de Hugging Face incluyen cifras de MMLU, HumanEval, GSM8K, MMMU o similares, ni comparaciones numericas con otros modelos. La unica afirmacion cuantitativa de rendimiento es de Unsloth, que sostiene que su esquema Dynamic v3.0 ofrece mas de un 10 % de mejora en precision top-1 % respecto a otros proveedores de GGUF al mismo tamano; se trata de una afirmacion de la herramienta de cuantizacion, no de un benchmark del modelo frente a alternativas.
 
 ## Requisitos de hardware
 
@@ -112,7 +112,7 @@ Frente a estas alternativas, las diferencias declaradas de Qwen3.8-27B son la ve
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mingxianderen/Qwen3.8-27B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/mingxianderen/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guia de Unsloth para ejecutar Qwen3.8-27B: https://unsloth.ai/docs/models/qwen3.8
 - Documentacion de Unsloth Dynamic 3.0 GGUF: https://unsloth.ai/docs/basics/dynamic-3.0-ggufs

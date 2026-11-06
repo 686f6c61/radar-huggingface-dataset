@@ -81,8 +81,8 @@ El autor advierte explicitamente que estas cifras son mediciones estrechas de re
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-FTW (este repositorio) | 763.205.315.794 | 2.048 tokens en el alcance validado (nativo no disponible) | MIT | HuggingFace, runtime SparkLab | 0,969-1,053 tokens/s en GB10, TTFT 74-76 s |
-| deepseek-ai/DeepSeek-V4.1-Flash (upstream) | no disponible | no disponible | MIT | HuggingFace | no disponible |
+| DeepSeek-V4.1-Flash-FTW (este repositorio) | 763.205.315.794 | 2.048 tokens en el alcance validado (nativo no disponible) | MIT | Hugging Face, runtime SparkLab | 0,969-1,053 tokens/s en GB10, TTFT 74-76 s |
+| deepseek-ai/DeepSeek-V4.1-Flash (upstream) | no disponible | no disponible | MIT | Hugging Face | no disponible |
 | Alternativas comparables de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada no incluye datos de otros modelos de tamano o tarea similar, por lo que no es posible establecer una comparativa cuantitativa con alternativas. Este repositorio es, en la practica, identico en pesos al checkpoint upstream; la diferencia es el empaquetado para el runtime SparkLab y las mediciones de ejecucion asociadas.
@@ -103,7 +103,7 @@ La informacion proporcionada no incluye datos de otros modelos de tamano o tarea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oakmindai/DeepSeek-V4.1-Flash-FTW
+- Modelo en Hugging Face: https://huggingface.co/oakmindai/DeepSeek-V4.1-Flash-FTW
 - Modelo upstream: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Revision exacta del upstream: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/tree/df42c109f1defefcbfcedbe7d905718a12266e40
 - Repositorio SparkLab: https://github.com/sixteen-miles-labs/sparklab

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jeesup/svd-safety-l2_remove60_swapdisc_b010` es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace. Se trata de un artefacto derivado de `meta-llama/Llama-2-7b-chat-hf` al que se le ha aplicado una compresión SVD-LLM que elimina el 60,01 % de los parámetros densos (fracción resultante declarada: 0,3999), seguida de una restauración parcial del 1,000 % del presupuesto de parámetros mediante componentes SVD seleccionados con la regla `swapdisc`. El resultado son 5822 componentes restaurados y 5822 componentes sustituidos, con semilla 42.
+`Jeesup/svd-safety-l2_remove60_swapdisc_b010` es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face. Se trata de un artefacto derivado de `meta-llama/Llama-2-7b-chat-hf` al que se le ha aplicado una compresión SVD-LLM que elimina el 60,01 % de los parámetros densos (fracción resultante declarada: 0,3999), seguida de una restauración parcial del 1,000 % del presupuesto de parámetros mediante componentes SVD seleccionados con la regla `swapdisc`. El resultado son 5822 componentes restaurados y 5822 componentes sustituidos, con semilla 42.
 
 El interés del modelo no es su utilidad como asistente, sino que constituye una celda concreta de una malla experimental sobre reglas de selección de componentes y presupuestos de restauración. El objetivo declarado del estudio es cuantificar cómo la compresión SVD degrada el comportamiento de seguridad de un modelo alineado y qué regla de selección repara mejor ese daño. La model card advierte explícitamente de que varias celdas de la malla están degradadas en seguridad de forma deliberada y de que este checkpoint no es un modelo de chat de propósito general.
 
@@ -108,7 +108,7 @@ No se dispone de métricas comparativas (ASR, perplejidad, MMLU) para el modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove60_swapdisc_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove60_swapdisc_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia y política de uso: `LICENSE.txt` y `USE_POLICY.md` incluidos en el repositorio del modelo (misma URL raíz)
 - Referencia metodológica citada en la model card: SVD-LLM (no se proporciona enlace en la información disponible)

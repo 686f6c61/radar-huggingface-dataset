@@ -75,7 +75,7 @@ No hay alternativas comerciales o de código abierto con la misma finalidad de b
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RobinHaselhorst/AMF-harrypotter-7b
+- Hugging Face: https://huggingface.co/RobinHaselhorst/AMF-harrypotter-7b
 - Paper (arXiv): https://arxiv.org/abs/2609.00351
 - Sitio del autor: https://robinhaselhorst.com/
 - Modelo relacionado (AMF-harrypotter-7b-10k_align): https://huggingface.co/RobinHaselhorst/AMF-harrypotter-7b-10k_align

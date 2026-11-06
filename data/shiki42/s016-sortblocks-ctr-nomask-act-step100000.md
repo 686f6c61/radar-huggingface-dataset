@@ -87,7 +87,7 @@ Diferencias cualitativas relevantes: ACT predice un chunk de acciones con un tra
 ## Limitaciones y advertencias
 
 - Ausencia de evaluacion held-out: el autor declara que la suite S016 y el adaptador de evaluacion ACT no estan cualificados y que no se reclama ninguna tasa de exito ni de tasa de colision. No debe presentarse como politica validada.
-- Licencia no declarada: la model card y los metadatos de HuggingFace no indican licencia. Sin una licencia explicita no hay autorizacion clara para uso comercial ni para redistribucion, por lo que es imprescindible contactar con el autor antes de cualquier despliegue en produccion.
+- Licencia no declarada: la model card y los metadatos de Hugging Face no indican licencia. Sin una licencia explicita no hay autorizacion clara para uso comercial ni para redistribucion, por lo que es imprescindible contactar con el autor antes de cualquier despliegue en produccion.
 - Sesgo de dominio severo: entrenado sobre 100 episodios de una unica tarea, con un unico montaje de camara y un unico espacio de acciones. Es esperable un comportamiento degradado ante cambios de iluminacion, posicion de camara, tipo de bloque, mesa o robot.
 - Riesgo de acciones fuera de distribucion: al no ser un modelo generativo de texto, no "alucina" en el sentido linguistico, pero puede producir trayectorias incoherentes o inseguras cuando la observacion se aleja de la distribucion de entrenamiento. En un robot real esto implica riesgo fisico y requiere paradas de emergencia.
 - Efecto de la ablacion no cuantificado: la variante sin IdleMask ignora `observation.arm_active_mask` en la perdida, lo que puede traducirse en acciones residuales sobre brazos que deberian permanecer quietos. El autor no publica mediciones de este efecto.
@@ -98,7 +98,7 @@ Diferencias cualitativas relevantes: ACT predice un chunk de acciones con un tra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiki42/s016-sortblocks-ctr-nomask-act-step100000
+- Modelo en Hugging Face: https://huggingface.co/Shiki42/s016-sortblocks-ctr-nomask-act-step100000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-sortblocks-100ep-ctr (revision 9ee0f9d8e0700df5fac08454e7e213c4904d3024)
 - Repositorio LeRobot (implementacion oficial de ACT, commit de referencia 8fff0fde7c79f23a93d845d1a50e985de01f8b8a): https://github.com/huggingface/lerobot
 - Paper de la arquitectura ACT (Zhao et al., "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware"): https://arxiv.org/abs/2304.13705

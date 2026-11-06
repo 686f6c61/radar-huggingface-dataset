@@ -4,7 +4,7 @@
 
 Este repositorio contiene una cuantización GGUF del modelo `atlasv23-sft-qwen3-8-27b-merged`, creado por el usuario `mradermacher`, conocido por publicar versiones cuantizadas de modelos open source. El modelo base parece ser un fine-tuning SFT (supervised fine-tuning) de Qwen3.8-27B, probablemente fusionado con algún otro checkpoint, aunque no se dispone de información detallada sobre el proceso de entrenamiento ni sobre las características específicas del modelo resultante.
 
-El repositorio presenta un estado muy preliminar: no tiene descargas, no tiene likes, el tamaño del repositorio es de 0.0 GB y la fecha de creación es futura (2026-08-19), lo que sugiere que podría tratarse de un repositorio vacío o en preparación. La model card solo contiene comentarios HTML sobre cuantización y un enlace al modelo original en HuggingFace. No se dispone de información verificable sobre arquitectura, capacidades o rendimiento.
+El repositorio presenta un estado muy preliminar: no tiene descargas, no tiene likes, el tamaño del repositorio es de 0.0 GB y la fecha de creación es futura (2026-08-19), lo que sugiere que podría tratarse de un repositorio vacío o en preparación. La model card solo contiene comentarios HTML sobre cuantización y un enlace al modelo original en Hugging Face. No se dispone de información verificable sobre arquitectura, capacidades o rendimiento.
 
 ## Especificaciones tecnicas
 

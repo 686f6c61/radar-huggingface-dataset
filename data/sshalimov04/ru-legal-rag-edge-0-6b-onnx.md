@@ -101,7 +101,7 @@ No hay datos publicados que permitan comparar este modelo con alternativas de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sshalimov04/ru-legal-rag-edge-0.6b-onnx
+- Modelo en Hugging Face: https://huggingface.co/sshalimov04/ru-legal-rag-edge-0.6b-onnx
 - Modelo base: https://huggingface.co/sshalimov04/ru-legal-rag-edge-0.6b
 - Demo en navegador: https://huggingface.co/spaces/sshalimov04/ru-rag-browser
 

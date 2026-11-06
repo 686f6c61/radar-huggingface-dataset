@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: aproximadamente 16,4 GB en cuantización FP16, según datos de la versión v2 del modelo con contexto de 40.000 tokens. Para cuantizaciones más ligeras (INT8, INT4), la VRAM se reduciría proporcionalmente, aunque no hay datos confirmados.
 - GPU recomendadas: NVIDIA RTX 4090 (24 GB VRAM) o superior para inferencia en FP16; GPUs de 16 GB como la RTX 4080 o la A10G podrían ser suficientes con cuantización INT8.
 - Capacidad para GPU de consumo: sí, es viable en tarjetas de 16 GB o más, como la RTX 4080 o la RTX 4090, con cuantización adecuada.
-- Opciones de despliegue: compatible con text-generation-inference (TGI) según los tags del modelo, también con transformers de HuggingFace, y puede ejecutarse con vLLM o llama.cpp si se convierten los pesos a GGUF (no se incluye en el repositorio).
+- Opciones de despliegue: compatible con text-generation-inference (TGI) según los tags del modelo, también con transformers de Hugging Face, y puede ejecutarse con vLLM o llama.cpp si se convierten los pesos a GGUF (no se incluye en el repositorio).
 - Latencia y throughput: no disponibles. Depende del hardware y la configuración de despliegue; en una A100 o H100 se espera un throughput de varios cientos de tokens por segundo, pero no hay datos confirmados.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No hay datos de benchmarks comparativos entre estos modelos. La comparativa se b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v5
+- Modelo en Hugging Face: https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v5
 - Modelo base (v4-merged): https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v4-merged
 - Versión anterior (v3): https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v3
 - Despliegue en Friendli.ai (v4-merged): https://friendli.ai/models/maheshrawat18/Qwen3-8B-grpo-emotion-v4-merged

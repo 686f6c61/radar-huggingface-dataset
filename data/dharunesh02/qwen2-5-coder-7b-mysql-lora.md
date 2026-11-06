@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Dharunesh02/qwen2.5-coder-7b-mysql-lora` es un adaptador LoRA publicado en HuggingFace por el usuario Dharunesh02, entrenado sobre el modelo base `unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit`, que a su vez es una cuantización de 4 bits del modelo Qwen2.5-Coder-7B-Instruct de Alibaba. El nombre del repositorio sugiere una especialización en la generación de consultas y tareas relacionadas con MySQL, aunque la model card no documenta explícitamente el dataset de entrenamiento ni los objetivos concretos del ajuste.
+`Dharunesh02/qwen2.5-coder-7b-mysql-lora` es un adaptador LoRA publicado en Hugging Face por el usuario Dharunesh02, entrenado sobre el modelo base `unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit`, que a su vez es una cuantización de 4 bits del modelo Qwen2.5-Coder-7B-Instruct de Alibaba. El nombre del repositorio sugiere una especialización en la generación de consultas y tareas relacionadas con MySQL, aunque la model card no documenta explícitamente el dataset de entrenamiento ni los objetivos concretos del ajuste.
 
-Se trata, por tanto, de un artefacto PEFT (un adaptador, no un modelo completo) que requiere cargar el modelo base y aplicar los pesos LoRA para poder utilizarse. El repositorio ocupa 0,2 GB, un tamaño coherente con un adaptador de rango bajo sobre un modelo de 7.000 millones de parámetros. La información pública es muy escasa: la model card es la plantilla por defecto de HuggingFace sin cumplimentar, no se declara licencia ni idiomas, y el repositorio no registra descargas ni interacciones en el momento de la consulta.
+Se trata, por tanto, de un artefacto PEFT (un adaptador, no un modelo completo) que requiere cargar el modelo base y aplicar los pesos LoRA para poder utilizarse. El repositorio ocupa 0,2 GB, un tamaño coherente con un adaptador de rango bajo sobre un modelo de 7.000 millones de parámetros. La información pública es muy escasa: la model card es la plantilla por defecto de Hugging Face sin cumplimentar, no se declara licencia ni idiomas, y el repositorio no registra descargas ni interacciones en el momento de la consulta.
 
 Su relevancia es limitada y experimental: resulta útil como ejemplo de ajuste fino con Unsloth sobre Qwen2.5-Coder para dominios de bases de datos, pero no debe considerarse un modelo listo para producción sin una evaluación propia, dado que no hay benchmarks, ni detalles de entrenamiento, ni garantías de licencia.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dharunesh02/qwen2.5-coder-7b-mysql-lora | 7B (base) + LoRA | no disponible | Adaptador LoRA especializado | no disponible | HuggingFace (0 descargas) |
-| Qwen/Qwen2.5-Coder-7B-Instruct | 7B | 32.768 tokens (según documentación del modelo base) | Modelo completo instruct | Apache 2.0 (según documentación del modelo base) | HuggingFace, ampliamente adoptado |
-| Codestral-22B (Mistral AI) | 22B | 32.000 tokens (según documentación de Mistral) | Modelo completo de código | Licencia no comercial (MNPL) según Mistral | HuggingFace y API |
-| DeepSeek-Coder-V2-Lite-Instruct | 16B (2,4B activos, MoE) | 128.000 tokens (según documentación de DeepSeek) | MoE de código | Licencia DeepSeek (uso comercial permitido con condiciones) | HuggingFace |
+| Dharunesh02/qwen2.5-coder-7b-mysql-lora | 7B (base) + LoRA | no disponible | Adaptador LoRA especializado | no disponible | Hugging Face (0 descargas) |
+| Qwen/Qwen2.5-Coder-7B-Instruct | 7B | 32.768 tokens (según documentación del modelo base) | Modelo completo instruct | Apache 2.0 (según documentación del modelo base) | Hugging Face, ampliamente adoptado |
+| Codestral-22B (Mistral AI) | 22B | 32.000 tokens (según documentación de Mistral) | Modelo completo de código | Licencia no comercial (MNPL) según Mistral | Hugging Face y API |
+| DeepSeek-Coder-V2-Lite-Instruct | 16B (2,4B activos, MoE) | 128.000 tokens (según documentación de DeepSeek) | MoE de código | Licencia DeepSeek (uso comercial permitido con condiciones) | Hugging Face |
 
 La comparación directa es difícil porque el artefacto analizado es un adaptador y no un modelo completo, y no hay métricas publicadas. Frente al Qwen2.5-Coder-7B-Instruct original, la única diferencia documentada es el ajuste LoRA orientado a MySQL, sin evidencia cuantitativa de mejora.
 
@@ -87,7 +87,7 @@ La comparación directa es difícil porque el artefacto analizado es un adaptado
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dharunesh02/qwen2.5-coder-7b-mysql-lora
+- Repositorio Hugging Face: https://huggingface.co/Dharunesh02/qwen2.5-coder-7b-mysql-lora
 - Modelo base del adaptador: https://huggingface.co/unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit
 - Modelo original Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - PEFT (librería): https://github.com/huggingface/peft

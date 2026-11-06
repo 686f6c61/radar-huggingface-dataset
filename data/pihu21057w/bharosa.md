@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `pihu21057w/bharosa` es un modelo de lenguaje publicado en HuggingFace por el usuario `pihu21057w` bajo licencia Apache 2.0. Con 159,9 millones de parámetros y un tamaño de repositorio de 1,3 GB, se trata de un modelo de dimensiones reducidas, probablemente orientado a tareas de generación de texto o procesamiento de lenguaje natural, aunque la documentación pública es prácticamente inexistente.
+El modelo `pihu21057w/bharosa` es un modelo de lenguaje publicado en Hugging Face por el usuario `pihu21057w` bajo licencia Apache 2.0. Con 159,9 millones de parámetros y un tamaño de repositorio de 1,3 GB, se trata de un modelo de dimensiones reducidas, probablemente orientado a tareas de generación de texto o procesamiento de lenguaje natural, aunque la documentación pública es prácticamente inexistente.
 
 La model card apenas contiene la declaración de licencia, sin información sobre arquitectura, datos de entrenamiento, capacidades o casos de uso recomendados. El tag `custom_code` sugiere que el modelo requiere código personalizado para su carga o ejecución, lo que añade una capa de complejidad para su integración. A fecha de su publicación (agosto de 2026), cuenta con 77 descargas y ningún "me gusta", lo que indica una adopción muy limitada.
 
@@ -72,4 +72,4 @@ No es posible establecer una comparativa fiable sin conocer la arquitectura y el
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/pihu21057w/bharosa)
+- [Modelo en Hugging Face](https://huggingface.co/pihu21057w/bharosa)

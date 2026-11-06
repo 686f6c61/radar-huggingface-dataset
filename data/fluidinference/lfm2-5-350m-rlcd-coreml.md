@@ -109,7 +109,7 @@ En rendimiento, la unica comparacion publicada es contra el scorer nativo: el ar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/lfm2-5-350m-rlcd-coreml
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/lfm2-5-350m-rlcd-coreml
 - Checkpoint de origen: https://huggingface.co/notnotsamuel/LFM2.5-350M-RLCD
 - Commit de origen: https://huggingface.co/notnotsamuel/LFM2.5-350M-RLCD/blob/deb589d803d141cabd158ef55f6617b128529f36/LICENSE
 - Casos de tarea RLCD upstream: https://huggingface.co/notnotsamuel/LFM2.5-350M-RLCD/blob/deb589d803d141cabd158ef55f6617b128529f36/rlcd/tasks.py

@@ -68,10 +68,10 @@ El modelo supera al base en ambas tareas y no muestra la regresion de Task 1 que
 
 | Modelo | Parametros | Contexto | Task 1 | Task 2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3-8B (base) | 8.19B | 32K | 44.4 | 43.4 | Apache 2.0 | HuggingFace |
-| ABForge-Qwen3-8B-SFT | 8.19B | 32K | 30.7 | 52.2 | Apache 2.0 | HuggingFace |
-| **ABForge-Qwen3-8B-RL** | 8.19B | 32K | **52.2** | **54.9** | Apache 2.0 | HuggingFace |
-| ABForge-Qwen3-8B (SFT → GRPO) | 8.19B | 32K | 55.9 | 62.4 | Apache 2.0 | HuggingFace |
+| Qwen3-8B (base) | 8.19B | 32K | 44.4 | 43.4 | Apache 2.0 | Hugging Face |
+| ABForge-Qwen3-8B-SFT | 8.19B | 32K | 30.7 | 52.2 | Apache 2.0 | Hugging Face |
+| **ABForge-Qwen3-8B-RL** | 8.19B | 32K | **52.2** | **54.9** | Apache 2.0 | Hugging Face |
+| ABForge-Qwen3-8B (SFT → GRPO) | 8.19B | 32K | 55.9 | 62.4 | Apache 2.0 | Hugging Face |
 
 No se han encontrado otros modelos publicados que aborden especificamente la tarea de diseño de experimentos de ablacion, por lo que la comparativa se limita a la familia ABForge y al modelo base.
 
@@ -87,10 +87,10 @@ No se han encontrado otros modelos publicados que aborden especificamente la tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: [SlowGuess/ABForge-Qwen3-8B-RL](https://huggingface.co/SlowGuess/ABForge-Qwen3-8B-RL)
+- Modelo en Hugging Face: [SlowGuess/ABForge-Qwen3-8B-RL](https://huggingface.co/SlowGuess/ABForge-Qwen3-8B-RL)
 - Repositorio de codigo: [SlowGuess/Abforge_1](https://github.com/SlowGuess/Abforge_1)
 - Dataset de entrenamiento y evaluacion: [SlowGuess/abforge-data](https://huggingface.co/datasets/SlowGuess/abforge-data)
 - Modelo completo (SFT → GRPO): [SlowGuess/ABForge-Qwen3-8B](https://huggingface.co/SlowGuess/ABForge-Qwen3-8B)
 - Checkpoint SFT: [SlowGuess/ABForge-Qwen3-8B-SFT](https://huggingface.co/SlowGuess/ABForge-Qwen3-8B-SFT)
-- Coleccion de modelos ABForge: [HuggingFace Collection](https://huggingface.co/collections/SlowGuess/abforge-6a2ac561d0e97f11e409dd75)
+- Coleccion de modelos ABForge: [Hugging Face Collection](https://huggingface.co/collections/SlowGuess/abforge-6a2ac561d0e97f11e409dd75)
 - Paper (pendiente de publicacion): [ArXiv](https://arxiv.org/abs/XXXX.XXXXX)

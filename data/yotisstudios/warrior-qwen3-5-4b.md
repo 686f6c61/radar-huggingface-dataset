@@ -70,7 +70,7 @@ No disponible. No se han identificado modelos comparables con información públ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yotisstudios/Warrior-Qwen3.5-4B
+- Modelo en Hugging Face: https://huggingface.co/yotisstudios/Warrior-Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/yotisstudios/Warrior-SFT
 - Modelo base: https://huggingface.co/Lazarus-Ai/ReAligned-Qwen3.5-4B
 - Framework Merlina (GitHub): https://github.com/Schneewolf-Labs/Merlina

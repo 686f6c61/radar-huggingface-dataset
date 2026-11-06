@@ -86,7 +86,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Polydim-Einsof/xiaomi_mimo_9b_PMTP_polydim_einsof
+- Hugging Face: https://huggingface.co/Polydim-Einsof/xiaomi_mimo_9b_PMTP_polydim_einsof
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - DOI principal (Zenodo/CERN): https://doi.org/10.5281/zenodo.21136742
 - DOI secundario (Zenodo/CERN): https://doi.org/10.5281/zenodo.21209973

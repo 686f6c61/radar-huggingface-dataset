@@ -108,7 +108,7 @@ Datos del snapshot del board Decision Index (multimodalart/jev-decision-index @ 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PelaAI/KnowLine-2B-Gen1
+- Modelo en Hugging Face: https://huggingface.co/PelaAI/KnowLine-2B-Gen1
 - Notas de inferencia: [INFERENCE.md](INFERENCE.md) (incluido en el repositorio)
 - README en chino: [README.zh.md](README.zh.md) (incluido en el repositorio)
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

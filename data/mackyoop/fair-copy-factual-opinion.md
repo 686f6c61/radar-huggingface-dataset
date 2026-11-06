@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Mackyoop/fair-copy-factual-opinion` es un modelo de clasificacion de texto publicado en HuggingFace por el usuario Mackyoop. Segun las etiquetas del repositorio, esta construido sobre la arquitectura DistilBERT y expone un pipeline de `text-classification`. El repositorio pesa 0,3 GB y las safetensors declaradas suman 66.955.010 parametros (aproximadamente 67 millones), un orden de magnitud coherente con la version base de DistilBERT.
+`Mackyoop/fair-copy-factual-opinion` es un modelo de clasificacion de texto publicado en Hugging Face por el usuario Mackyoop. Segun las etiquetas del repositorio, esta construido sobre la arquitectura DistilBERT y expone un pipeline de `text-classification`. El repositorio pesa 0,3 GB y las safetensors declaradas suman 66.955.010 parametros (aproximadamente 67 millones), un orden de magnitud coherente con la version base de DistilBERT.
 
-La relevancia del modelo es, a dia de hoy, muy limitada como referencia tecnica: cuenta con 0 descargas y 0 likes, fue creado el 14 de septiembre de 2026 y su model card es la plantilla autogenerada de HuggingFace, sin que el autor haya rellenado ninguna seccion (ni datos de entrenamiento, ni evaluacion, ni licencia, ni idiomas). No hay articulo, demo ni documentacion adicional.
+La relevancia del modelo es, a dia de hoy, muy limitada como referencia tecnica: cuenta con 0 descargas y 0 likes, fue creado el 14 de septiembre de 2026 y su model card es la plantilla autogenerada de Hugging Face, sin que el autor haya rellenado ninguna seccion (ni datos de entrenamiento, ni evaluacion, ni licencia, ni idiomas). No hay articulo, demo ni documentacion adicional.
 
 Su nombre sugiere una tarea de clasificacion orientada a distinguir contenido factual de contenido de opinion (o algun criterio relacionado con "fairness" y "copy"), pero esta hipotesis no esta confirmada en ninguna fuente. Cualquier evaluacion rigurosa del modelo requiere inspeccionar directamente la configuracion (`config.json`) y la cabecera de clasificacion del checkpoint, que no estan disponibles en la informacion proporcionada.
 
@@ -26,9 +26,9 @@ Su nombre sugiere una tarea de clasificacion orientada a distinguir contenido fa
 
 ## Arquitectura y entrenamiento
 
-La unica informacion fiable sobre la arquitectura es la etiqueta `distilbert` del repositorio, que apunta a un encoder transformer destilado a partir de BERT-base (6 capas, atencion bidireccional, objetivo de modelado de lenguaje enmascarado durante el preentrenamiento). El recuento de 66.955.010 parametros encaja con `distilbert-base-uncased`, pero no se puede confirmar la configuracion exacta (dimension oculta, numero de cabezas, vocabulario) sin acceso al `config.json`. La etiqueta `text-embeddings-inference` indica compatibilidad de despliegue con el servidor TEI de HuggingFace, y `endpoints_compatible` sugiere que puede servirse en Inference Endpoints.
+La unica informacion fiable sobre la arquitectura es la etiqueta `distilbert` del repositorio, que apunta a un encoder transformer destilado a partir de BERT-base (6 capas, atencion bidireccional, objetivo de modelado de lenguaje enmascarado durante el preentrenamiento). El recuento de 66.955.010 parametros encaja con `distilbert-base-uncased`, pero no se puede confirmar la configuracion exacta (dimension oculta, numero de cabezas, vocabulario) sin acceso al `config.json`. La etiqueta `text-embeddings-inference` indica compatibilidad de despliegue con el servidor TEI de Hugging Face, y `endpoints_compatible` sugiere que puede servirse en Inference Endpoints.
 
-No hay absolutamente ningun dato sobre el entrenamiento: se desconoce el dataset utilizado, el numero de tokens, si hubo ajuste fino supervisado sobre una tarea concreta, el numero de etiquetas de salida, la composicion del corpus (idioma, dominio, balance de clases) o si se aplicaron tecnicas de RLHF/DPO (poco habituales en clasificadores encoder). La model card no documenta hiperparametros, regimen de precision ni metodologia de preprocesado. La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla por defecto de HuggingFace, y no a un paper de este modelo.
+No hay absolutamente ningun dato sobre el entrenamiento: se desconoce el dataset utilizado, el numero de tokens, si hubo ajuste fino supervisado sobre una tarea concreta, el numero de etiquetas de salida, la composicion del corpus (idioma, dominio, balance de clases) o si se aplicaron tecnicas de RLHF/DPO (poco habituales en clasificadores encoder). La model card no documenta hiperparametros, regimen de precision ni metodologia de preprocesado. La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla por defecto de Hugging Face, y no a un paper de este modelo.
 
 ## Capacidades
 
@@ -63,17 +63,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en int8: aproximadamente 67 MB de pesos.
 - GPU recomendadas: cualquier GPU moderna es suficiente; no se requiere A100, H100 ni siquiera una RTX 4090. Una GTX 1650, una T4 o incluso una iGPU reciente pueden servirlo sin problema.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos diez anos, y tambien en CPU.
-- Opciones de despliegue: `transformers` con pipeline de clasificacion, `text-embeddings-inference` (etiqueta declarada en el repositorio), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`) y exportacion a ONNX Runtime. `llama.cpp` y Ollama no son aplicables salvo que exista una conversion a GGUF, que no esta documentada. vLLM no es la via tipica para un clasificador encoder de este tamano.
+- Opciones de despliegue: `transformers` con pipeline de clasificacion, `text-embeddings-inference` (etiqueta declarada en el repositorio), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`) y exportacion a ONNX Runtime. `llama.cpp` y Ollama no son aplicables salvo que exista una conversion a GGUF, que no esta documentada. vLLM no es la via tipica para un clasificador encoder de este tamano.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `Mackyoop/fair-copy-factual-opinion` | 66.955.010 | no disponible | no disponible | HuggingFace, 0 descargas | Model card vacia, sin benchmarks |
-| `distilbert-base-uncased` | 66.955.008 | 512 tokens | Apache-2.0 | HuggingFace, ampliamente usado | Modelo base de referencia, sin cabecera de clasificacion ajustada |
-| `distilbert-base-uncased-finetuned-sst-2-english` | ~67 M | 512 tokens | Apache-2.0 | HuggingFace, muy popular | Clasificador de sentimiento binario, con evaluacion publicada (SST-2) |
-| `bert-base-uncased` | 109.482.240 | 512 tokens | Apache-2.0 | HuggingFace, ampliamente usado | Encoder completo de 12 capas; mayor coste, mayor capacidad |
+| `Mackyoop/fair-copy-factual-opinion` | 66.955.010 | no disponible | no disponible | Hugging Face, 0 descargas | Model card vacia, sin benchmarks |
+| `distilbert-base-uncased` | 66.955.008 | 512 tokens | Apache-2.0 | Hugging Face, ampliamente usado | Modelo base de referencia, sin cabecera de clasificacion ajustada |
+| `distilbert-base-uncased-finetuned-sst-2-english` | ~67 M | 512 tokens | Apache-2.0 | Hugging Face, muy popular | Clasificador de sentimiento binario, con evaluacion publicada (SST-2) |
+| `bert-base-uncased` | 109.482.240 | 512 tokens | Apache-2.0 | Hugging Face, ampliamente usado | Encoder completo de 12 capas; mayor coste, mayor capacidad |
 
 El numero de parametros de este repositorio coincide casi exactamente con `distilbert-base-uncased` (66.955.008), lo que refuerza la hipotesis de un ajuste fino sobre dicho checkpoint, aunque no puede confirmarse sin acceso al `config.json` y al `model.safetensors.index.json`.
 
@@ -86,12 +86,12 @@ El numero de parametros de este repositorio coincide casi exactamente con `disti
 - Idiomas no declarados: si se basa en `distilbert-base-uncased`, el rendimiento fuera del ingles sera limitado o nulo; no hay confirmacion al respecto.
 - Etiquetas desconocidas: se ignora el numero de clases y su significado, por lo que la salida del modelo no es interpretable sin inspeccionar el repositorio.
 - Cero validacion externa: con 0 descargas y 0 likes, no hay evidencia de uso comunitario ni de reproducibilidad.
-- Fecha de publicacion en el futuro (2026-09-14) segun los metadatos de HuggingFace, un detalle anomalo que conviene verificar.
+- Fecha de publicacion en el futuro (2026-09-14) segun los metadatos de Hugging Face, un detalle anomalo que conviene verificar.
 - Sin resultados de benchmark: no se puede comparar su calidad con alternativas establecidas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mackyoop/fair-copy-factual-opinion
+- Modelo en Hugging Face: https://huggingface.co/Mackyoop/fair-copy-factual-opinion
 - Paper de Lacoste et al. (2019) sobre estimacion de emisiones, citado en la plantilla de la model card: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML referenciada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

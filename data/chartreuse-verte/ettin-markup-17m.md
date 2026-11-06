@@ -115,7 +115,7 @@ No hay datos publicados de benchmarks comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chartreuse-verte/ettin-markup-17m
+- Modelo en Hugging Face: https://huggingface.co/chartreuse-verte/ettin-markup-17m
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-17m
 - Modelo hermano, ettin-povtense-17m-v2: https://huggingface.co/chartreuse-verte/ettin-povtense-17m-v2
 - Resultados de la búsqueda web: no se ha encontrado ninguna fuente relevante sobre este modelo. Todos los resultados devueltos corresponden a la liqueur Chartreuse y al macizo de la Chartreuse (chartreuse.fr, Wikipedia), sin relación con el modelo.

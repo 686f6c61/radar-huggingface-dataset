@@ -2,7 +2,7 @@
 
 ## Resumen
 
-"Recurrence Carries the Length, Attention Counts It" es un artefacto de investigación anónimo asociado a una submission a ICLR 2027, publicado en HuggingFace bajo el identificador `2026paper3/minimal-boundary-transduction`. No es un modelo de lenguaje listo para inferencia, sino un paquete de reproducibilidad que contiene el código de la suite MBT (Minimal Boundary Transduction), los registros de 1.987 ejecuciones de entrenamiento, los inventarios y tablas que sustentan cada número del artículo, y los checkpoints de todos los runs. Su propósito es permitir la verificación y replicación de los resultados del paper durante el periodo de revisión.
+"Recurrence Carries the Length, Attention Counts It" es un artefacto de investigación anónimo asociado a una submission a ICLR 2027, publicado en Hugging Face bajo el identificador `2026paper3/minimal-boundary-transduction`. No es un modelo de lenguaje listo para inferencia, sino un paquete de reproducibilidad que contiene el código de la suite MBT (Minimal Boundary Transduction), los registros de 1.987 ejecuciones de entrenamiento, los inventarios y tablas que sustentan cada número del artículo, y los checkpoints de todos los runs. Su propósito es permitir la verificación y replicación de los resultados del paper durante el periodo de revisión.
 
 El objeto de estudio son tareas sintéticas de "transducción de frontera" (Close, Verify, Open y sus variantes anidadas y con condicionamiento por identificador de contenido), diseñadas para medir generalización en longitud y profundidad bajo distribuciones fuera de dominio (Distance, Count, Count-Interp, Depth). Sobre ellas se comparan familias de arquitecturas: Mamba (SSM), Transformer con seis codificaciones posicionales distintas, LSTM, GRU, RNN, S4D y híbridos Mamba-atención con distintos patrones de bloques.
 
@@ -93,7 +93,7 @@ No se proporcionan modelos externos equivalentes ni datos de rendimiento compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/2026paper3/minimal-boundary-transduction
+- Modelo en Hugging Face: https://huggingface.co/2026paper3/minimal-boundary-transduction
 - Repositorio anonimizado (espejo de `code/`): https://anonymous.4open.science/r/minimal-boundary-transduction-iclr-E180/
 - Paper: no disponible (submission anónima a ICLR 2027, sin enlace público en la información proporcionada)
 - Demo: no disponible

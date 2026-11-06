@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`foghollowleon/multitask-scratch` es un repositorio de HuggingFace publicado por el usuario foghollowleon que contiene una implementación propia de DINO (self-distillation con teacher-student) orientada a aprendizaje multitarea, en una configuración deliberadamente diminuta. No es un modelo entrenado: la model card indica explícitamente que `model.safetensors` es una inicialización recién creada ("plumbing, not results") y que los pesos son de inicialización aleatoria, por lo que las salidas no contienen señal útil. El recuento real de parámetros en safetensors es de 33.088, es decir, unas 33.000 variables, varios órdenes de magnitud por debajo de cualquier modelo utilizable en producción.
+`foghollowleon/multitask-scratch` es un repositorio de Hugging Face publicado por el usuario foghollowleon que contiene una implementación propia de DINO (self-distillation con teacher-student) orientada a aprendizaje multitarea, en una configuración deliberadamente diminuta. No es un modelo entrenado: la model card indica explícitamente que `model.safetensors` es una inicialización recién creada ("plumbing, not results") y que los pesos son de inicialización aleatoria, por lo que las salidas no contienen señal útil. El recuento real de parámetros en safetensors es de 33.088, es decir, unas 33.000 variables, varios órdenes de magnitud por debajo de cualquier modelo utilizable en producción.
 
 El interés del repositorio es, por tanto, de ingeniería y no de modelado: sirve como andamiaje reproducible para validar un pipeline de entrenamiento (smoke test), como plantilla de implementación single-file y como punto de partida para experimentos propios. El autor declara explícitamente que omite cualquier cifra de benchmark y que la receta de experimento incluida (optimizador Lion con schedule por pasos) existe solo para que el script se ejecute de principio a fin.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| multitask-scratch (este repo) | 33.088 | No disponible | Apache-2.0 | HuggingFace | Pesos aleatorios, smoke test |
-| DINOv2 ViT-S/14 (referencia) | ~21 M | No aplica (visión) | Apache-2.0 (código) / licencia propia de pesos | HuggingFace, Meta | Entrenado, benchmarks públicos |
-| DINOv2 ViT-B/14 (referencia) | ~86 M | No aplica (visión) | Ibídem | HuggingFace, Meta | Entrenado, benchmarks públicos |
+| multitask-scratch (este repo) | 33.088 | No disponible | Apache-2.0 | Hugging Face | Pesos aleatorios, smoke test |
+| DINOv2 ViT-S/14 (referencia) | ~21 M | No aplica (visión) | Apache-2.0 (código) / licencia propia de pesos | Hugging Face, Meta | Entrenado, benchmarks públicos |
+| DINOv2 ViT-B/14 (referencia) | ~86 M | No aplica (visión) | Ibídem | Hugging Face, Meta | Entrenado, benchmarks públicos |
 | DINO original (referencia) | ~21 M (ViT-S) | No aplica (visión) | Apache-2.0 | Repo oficial | Entrenado, benchmarks públicos |
 
 Nota: las cifras de parámetros de las familias DINO/DINOv2 corresponden a conocimiento general sobre esas publicaciones y no se han verificado contra la información proporcionada en esta ficha; los datos de este repositorio sí provienen del recuento de safetensors. La comparación relevante es cualitativa: este repositorio no es funcionalmente comparable a un modelo entrenado.
@@ -83,5 +83,5 @@ Nota: las cifras de parámetros de las familias DINO/DINOv2 corresponden a conoc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/foghollowleon/multitask-scratch
+- Hugging Face: https://huggingface.co/foghollowleon/multitask-scratch
 - La búsqueda web no devolvió papers, blogs, repositorios ni demos relacionados con este modelo; no hay más enlaces disponibles.

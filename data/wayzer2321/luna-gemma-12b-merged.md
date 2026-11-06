@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wayzer2321/Luna-Gemma-12B-Merged
+- Repositorio Hugging Face: https://huggingface.co/wayzer2321/Luna-Gemma-12B-Merged
 - Release GGUF Q8_0: https://huggingface.co/wayzer2321/Luna-Gemma-12B-GGUF
 - Modelo base: https://huggingface.co/unsloth/gemma-4-12b-it

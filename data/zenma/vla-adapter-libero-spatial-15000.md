@@ -79,8 +79,8 @@ No se dispone de datos comparativos directos con otros modelos VLA en la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zenma/VLA-Adapter-LIBERO-Spatial-15000
+- Hugging Face: https://huggingface.co/Zenma/VLA-Adapter-LIBERO-Spatial-15000
 - Repositorio GitHub del proyecto: https://github.com/OpenHelix-Team/VLA-Adapter
 - Paper (arXiv): https://arxiv.org/pdf/2509.09372v1
 - Modelo VLA-Adapter/LIBERO-Spatial-Pro (variante Pro): https://huggingface.co/VLA-Adapter/LIBERO-Spatial-Pro
-- Organización VLA-Adapter en HuggingFace: https://huggingface.co/VLA-Adapter
+- Organización VLA-Adapter en Hugging Face: https://huggingface.co/VLA-Adapter

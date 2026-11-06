@@ -11,7 +11,7 @@ La relevancia de esta conversión radica en que facilita el despliegue local de 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder-only (Qwen2.5) |
-| Parametros totales | 868 093 952 (segun ficha de HuggingFace; el modelo base declara 3 000 millones) |
+| Parametros totales | 868 093 952 (segun ficha de Hugging Face; el modelo base declara 3 000 millones) |
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 32 768 tokens (segun documentacion del modelo base) |
 | Tipos de cuantizacion | 8-bit (MLX) |
@@ -46,7 +46,7 @@ El modelo soporta una ventana de contexto de hasta 32 768 tokens, lo que permite
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo base Qwen2.5-Coder-3B-Instruct reporta metricas en HumanEval, MBPP y otros conjuntos de datos de codigo, pero estos datos no se incluyen en la ficha de HuggingFace ni en los resultados de busqueda web. Se recomienda consultar la documentacion oficial del modelo base para obtener comparativas detalladas.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo base Qwen2.5-Coder-3B-Instruct reporta metricas en HumanEval, MBPP y otros conjuntos de datos de codigo, pero estos datos no se incluyen en la ficha de Hugging Face ni en los resultados de busqueda web. Se recomienda consultar la documentacion oficial del modelo base para obtener comparativas detalladas.
 
 ## Requisitos de hardware
 
@@ -79,7 +79,7 @@ La comparativa se basa en caracteristicas generales; no se dispone de benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Oscilla/Qwen2.5-Coder-3B-Instruct-mlx-8Bit
+- Modelo en Hugging Face: https://huggingface.co/Oscilla/Qwen2.5-Coder-3B-Instruct-mlx-8Bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
 - Version alternativa de LM Studio: https://huggingface.co/lmstudio-community/Qwen2.5-Coder-3B-Instruct-MLX-8bit
 - Documentacion de mlx-lm: https://github.com/ml-explore/mlx-lm

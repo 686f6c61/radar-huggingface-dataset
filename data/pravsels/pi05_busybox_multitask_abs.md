@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pi05_busybox_multitask_abs` es un fine-tune completo (full-component) del modelo de robótica π0.5 sobre el dataset `villekuosmanen/busybox_multitask`. Ha sido desarrollado por Praveen Selvaraj (pravsels) y publicado en HuggingFace en septiembre de 2026. Se trata de un modelo VLA (Vision-Language-Action) que mapea observaciones visuales de tres cámaras y prompts de tarea en acciones absolutas de 6 grados de libertad (articulaciones del brazo + pinza), con normalización por timestep basada en los percentiles q01/q99 de los límites mínimos y máximos, mapeados al rango [-1, 1].
+`pi05_busybox_multitask_abs` es un fine-tune completo (full-component) del modelo de robótica π0.5 sobre el dataset `villekuosmanen/busybox_multitask`. Ha sido desarrollado por Praveen Selvaraj (pravsels) y publicado en Hugging Face en septiembre de 2026. Se trata de un modelo VLA (Vision-Language-Action) que mapea observaciones visuales de tres cámaras y prompts de tarea en acciones absolutas de 6 grados de libertad (articulaciones del brazo + pinza), con normalización por timestep basada en los percentiles q01/q99 de los límites mínimos y máximos, mapeados al rango [-1, 1].
 
 La relevancia de este modelo radica en que demuestra el fine-tuning completo de π0.5, la versión mejorada de π0 de Physical Intelligence con mejor generalización open-world gracias a la técnica de "knowledge insulation". El checkpoint base (`pi05_base`) fue pre-entrenado con más de 10.000 horas de datos robóticos, y este fine-tune lo adapta a 27 tareas de manipulación en el entorno BusyBox. A diferencia de su hermano con acciones relativas (`pravsels/pi05_busybox_multitask`), este modelo predice acciones absolutas.
 
@@ -33,7 +33,7 @@ El fine-tune se realizó con entrenamiento full-component (actualizando todos lo
 - Ejecución multi-tarea: entrenado sobre 27 tareas distintas del entorno BusyBox, seleccionables mediante prompts por tarea.
 - Generación de acciones absolutas con normalización por timestep, lo que permite manejar rangos de movimiento variables a lo largo de la trayectoria.
 - Integración nativa con el framework openpi de Physical Intelligence para despliegue, evaluación y fine-tuning posterior.
-- Compatibilidad con el ecosistema LeRobot v3 de HuggingFace para datasets robóticos.
+- Compatibilidad con el ecosistema LeRobot v3 de Hugging Face para datasets robóticos.
 
 ## Casos de uso
 
@@ -41,7 +41,7 @@ El fine-tune se realizó con entrenamiento full-component (actualizando todos lo
 - Investigación en representación de acciones: sirve para comparar el efecto de acciones absolutas frente a relativas en modelos π0.5, en contraste con su hermano `pravsels/pi05_busybox_multitask`.
 - Fine-tuning para tareas específicas: al ser un checkpoint de openpi, puede utilizarse como inicialización para adaptaciones posteriores en datasets robóticos propios con el framework openpi.
 - Evaluación de generalización: permite contrastar el rendimiento del modelo fine-tuneado frente al checkpoint base `pi05_base` en tareas de manipulación no vistas.
-- Desarrollo de pipelines robóticos con LeRobot: al usar el formato de dataset LeRobot v3, se integra con el ecosistema de HuggingFace para robótica y permite reproducir el pipeline de entrenamiento.
+- Desarrollo de pipelines robóticos con LeRobot: al usar el formato de dataset LeRobot v3, se integra con el ecosistema de Hugging Face para robótica y permite reproducir el pipeline de entrenamiento.
 - Benchmarking de infraestructura: el entrenamiento completo en 4× H100 con 30.000 pasos en ~4.4 horas documenta los requisitos computacionales para fine-tunear π0.5 en datasets de tamaño moderado, útil para planificar despliegues en entornos de investigación.
 
 ## Benchmarks y rendimiento

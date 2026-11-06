@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Kushan1Uom/dAIsy-gemma3-adapters` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace, diseñado para ajustar el modelo base `unsloth/gemma-3-1b-it`, una versión optimizada del Gemma 3 de Google con 1 000 millones de parámetros. El repositorio contiene únicamente los pesos del adaptador en formato `safetensors` (0,1 GB), no el modelo completo, y está etiquetado con la librería `peft` (PEFT 0.20.0), lo que indica que se aplica mediante técnicas de fine-tuning eficiente sobre el modelo base.
+El modelo `Kushan1Uom/dAIsy-gemma3-adapters` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face, diseñado para ajustar el modelo base `unsloth/gemma-3-1b-it`, una versión optimizada del Gemma 3 de Google con 1 000 millones de parámetros. El repositorio contiene únicamente los pesos del adaptador en formato `safetensors` (0,1 GB), no el modelo completo, y está etiquetado con la librería `peft` (PEFT 0.20.0), lo que indica que se aplica mediante técnicas de fine-tuning eficiente sobre el modelo base.
 
 La model card del autor está prácticamente vacía: no se especifican los datos de entrenamiento, el propósito, la licencia ni los idiomas. Sin embargo, el mismo autor ha publicado otros modelos relacionados con diabetes (por ejemplo, `gemma-3-4b-it-diabetes` y `qwen3-4b-instructs-2507-diabetes`), lo que sugiere que este adaptador podría estar orientado a tareas médicas o de salud, aunque no se puede confirmar con la información disponible.
 
@@ -81,8 +81,8 @@ El adaptador `dAIsy-gemma3-adapters` no tiene datos de rendimiento propios, por 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Kushan1Uom/dAIsy-gemma3-adapters)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Kushan1Uom)
+- [Modelo en Hugging Face](https://huggingface.co/Kushan1Uom/dAIsy-gemma3-adapters)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Kushan1Uom)
 - [Lista de modelos del autor](https://huggingface.co/Kushan1Uom/models)
 - [Gemma 3 - Google DeepMind](https://deepmind.google/models/gemma/gemma-3/)
 - [Gemma 3 en GitHub](https://github.com/gemma-3/)

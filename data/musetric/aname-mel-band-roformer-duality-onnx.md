@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento (SDR/SIR/SAR) para ninguno de estos modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/musetric/aname-mel-band-roformer-duality-onnx
+- Modelo en Hugging Face: https://huggingface.co/musetric/aname-mel-band-roformer-duality-onnx
 - Modelo base (pesos originales): https://huggingface.co/Aname-Tommy/Mel-Band-Roformer_Duality
 - Repositorio del runtime `musetric` (codigo del host, `packages/ai`): https://github.com/musetric/musetric
 - Modelo anterior de referencia de `musetric`: https://huggingface.co/musetric/vocal-separation-roformer-onnx

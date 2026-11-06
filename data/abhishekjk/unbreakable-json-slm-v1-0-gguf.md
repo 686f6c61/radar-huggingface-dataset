@@ -98,6 +98,6 @@ No se dispone de datos de benchmarks comparativos entre estos modelos y Unbreaka
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/Abhishekjk/Unbreakable-JSON-SLM-v1.0-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/Abhishekjk/Unbreakable-JSON-SLM-v1.0-GGUF
 - Repositorio Safetensors BF16: https://huggingface.co/Abhishekjk/Unbreakable-JSON-SLM-v1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

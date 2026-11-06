@@ -74,10 +74,10 @@ Mejora media: +0,25 puntos. Ítems con nota ≥7: 1/12 antes y 0/12 después. No
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen2.5-0.5b-ia-generativa-es-lora (este) | ~494 M base + 8,80 M LoRA | no disponible | Apache-2.0 | HuggingFace, PEFT | Adaptador educativo en español; 3,92/10 en examen propio |
-| Qwen2.5-0.5B-Instruct (base) | ~494 M | no disponible en la informacion | Apache-2.0 | HuggingFace | Modelo base sin ajuste; 3,67/10 en el mismo examen |
-| SLM Qwen 0.5B · IA generativa aplicada a empresas (Chile) | ~494 M | no disponible | Apache-2.0 | HuggingFace | Versión completa del mismo autor para uso directo con Transformers |
-| SmolLM2 (corridas previas del autor) | no disponible | no disponible | no disponible | HuggingFace | Experimentos distintos, no forman parte de este adaptador |
+| qwen2.5-0.5b-ia-generativa-es-lora (este) | ~494 M base + 8,80 M LoRA | no disponible | Apache-2.0 | Hugging Face, PEFT | Adaptador educativo en español; 3,92/10 en examen propio |
+| Qwen2.5-0.5B-Instruct (base) | ~494 M | no disponible en la informacion | Apache-2.0 | Hugging Face | Modelo base sin ajuste; 3,67/10 en el mismo examen |
+| SLM Qwen 0.5B · IA generativa aplicada a empresas (Chile) | ~494 M | no disponible | Apache-2.0 | Hugging Face | Versión completa del mismo autor para uso directo con Transformers |
+| SmolLM2 (corridas previas del autor) | no disponible | no disponible | no disponible | Hugging Face | Experimentos distintos, no forman parte de este adaptador |
 
 No se dispone de datos de benchmarks estándar para comparar con alternativas de la misma categoría (SLMs en español), por lo que la comparativa se limita a los artefactos documentados por el autor.
 
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks estándar para comparar con alternativas de
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Claudioxis/qwen2.5-0.5b-ia-generativa-es-lora
+- Hugging Face del adaptador: https://huggingface.co/Claudioxis/qwen2.5-0.5b-ia-generativa-es-lora
 - Versión completa del mismo autor: https://huggingface.co/Claudioxis/slm-qwen-0.5b-ia-generativa-chile
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio PEFT: https://github.com/huggingface/peft

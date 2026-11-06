@@ -77,7 +77,7 @@ La comparativa se basa en modelos de tamaño similar disponibles en el ecosistem
 
 ## Enlaces
 
-- [HuggingFace - shimbaaa/shifu-smart-1.5b-gguf](https://huggingface.co/shimbaaa/shifu-smart-1.5b-gguf)
-- [Perfil del autor en HuggingFace](https://huggingface.co/shimbaaa)
+- [Hugging Face - shimbaaa/shifu-smart-1.5b-gguf](https://huggingface.co/shimbaaa/shifu-smart-1.5b-gguf)
+- [Perfil del autor en Hugging Face](https://huggingface.co/shimbaaa)
 - [Unsloth (herramienta de entrenamiento)](https://github.com/unslothai/unsloth)
 - [llama.cpp (runtime compatible)](https://github.com/ggerganov/llama.cpp)

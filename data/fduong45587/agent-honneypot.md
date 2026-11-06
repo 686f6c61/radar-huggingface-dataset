@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Agent-honneypot es un repositorio publicado en HuggingFace por el usuario fduong45587 bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 0 likes, y su model card contiene unicamente el bloque de metadatos con la licencia (apache-2.0), sin descripcion, sin documentacion tecnica y sin ejemplos de uso. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento.
+Agent-honneypot es un repositorio publicado en Hugging Face por el usuario fduong45587 bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 0 likes, y su model card contiene unicamente el bloque de metadatos con la licencia (apache-2.0), sin descripcion, sin documentacion tecnica y sin ejemplos de uso. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento.
 
 El nombre del repositorio, "Agent-honneypot" (honeypot, "tarro de miel" en el argot de seguridad), sugiere una posible orientacion hacia escenarios de seguridad en agentes, como entornos senuelo para detectar o estudiar comportamientos maliciosos, inyecciones de prompt o abuso de herramientas. Sin embargo, esta interpretacion es una inferencia a partir del nombre y no esta corroborada por ninguna documentacion del autor, por lo que no debe tomarse como un hecho verificado.
 
@@ -85,7 +85,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Agent-honneypot | no disponible | no disponible | Apache 2.0 | Repositorio en HuggingFace con 0 descargas |
+| Agent-honneypot | no disponible | no disponible | Apache 2.0 | Repositorio en Hugging Face con 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fduong45587/Agent-honneypot
+- Repositorio en Hugging Face: https://huggingface.co/fduong45587/Agent-honneypot
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible
 - Repositorio de codigo: no disponible

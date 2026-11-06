@@ -4,7 +4,7 @@
 
 El repositorio `ahadsu/leo-uav-fusion-checkpoints` aloja los checkpoints experimentales de un estudio de fusión cross-scale entre datos de satélites LEO (Low Earth Orbit) y vehículos aéreos no tripulados (UAV). El autor, `ahadsu`, ha publicado este repositorio como parte de una investigación sobre fusión de información multiescala y multiplataforma, probablemente orientada a tareas de visión por computador en teledetección, como detección de objetos, segmentación semántica o seguimiento de cambios en el terreno.
 
-El repositorio contiene carpetas por ejecución completada del estudio, cada una con su propio README que documenta los datos, la división train/val/test, el desglose por clase y las advertencias pertinentes. Sin embargo, el tamaño del repositorio es de 0.0 GB, lo que sugiere que los pesos no están almacenados directamente en HuggingFace o que el contenido aún no se ha subido por completo. La relevancia de este modelo radica en la creciente necesidad de combinar la cobertura global de satélites con la resolución detallada de drones para aplicaciones de monitorización ambiental, agricultura de precisión o respuesta ante desastres.
+El repositorio contiene carpetas por ejecución completada del estudio, cada una con su propio README que documenta los datos, la división train/val/test, el desglose por clase y las advertencias pertinentes. Sin embargo, el tamaño del repositorio es de 0.0 GB, lo que sugiere que los pesos no están almacenados directamente en Hugging Face o que el contenido aún no se ha subido por completo. La relevancia de este modelo radica en la creciente necesidad de combinar la cobertura global de satélites con la resolución detallada de drones para aplicaciones de monitorización ambiental, agricultura de precisión o respuesta ante desastres.
 
 ## Especificaciones tecnicas
 
@@ -69,5 +69,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ahadsu/leo-uav-fusion-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/ahadsu/leo-uav-fusion-checkpoints
 - Repositorio relacionado (mismo estudio): https://huggingface.co/FatimahEmadEldin/leo-uav-fusion-checkpoints

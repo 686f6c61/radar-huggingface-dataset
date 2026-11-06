@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5-GGUF
 - Modelo base (DFM Mimir v1.5): https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5
 - Aplicación DFM Mimir (releases): https://github.com/schneiderkamplab/HRM-Text/releases
 - llama.cpp parcheado con soporte HRM-Text/PrefixLM: https://github.com/schneiderkamplab/llama.cpp/tree/4122b9a814d5bd4f48f454367419f75c05ee5215

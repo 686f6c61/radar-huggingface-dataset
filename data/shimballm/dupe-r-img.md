@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 | Modelo | Parametros (denoiser aprox.) | Resolucion | Contexto de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dupe-R-IMG | 104M (DiT) + 193M (encoder+VAE) | 256x256 | 128 tokens | Apache 2.0 (bundle) | HuggingFace (0 descargas) |
+| Dupe-R-IMG | 104M (DiT) + 193M (encoder+VAE) | 256x256 | 128 tokens | Apache 2.0 (bundle) | Hugging Face (0 descargas) |
 | SD 1.5 | ~860M (UNet) | 512x512 | 77 tokens | CreativeML OpenRAIL-M | Amplia |
 | SDXL | ~2.600M (UNet) | 1024x1024 | 77 tokens | CreativeML OpenRAIL++-M | Amplia |
 | Flux.1-schnell | ~12.000M | 1024x1024 | no disponible | Apache 2.0 | Amplia |
@@ -102,7 +102,7 @@ Datos de benchmarks comparativos: no disponibles.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ShimbaLLM/Dupe-R-IMG
+- Repositorio Hugging Face: https://huggingface.co/ShimbaLLM/Dupe-R-IMG
 - Perfil de la organizacion ShimbaLLM (Shimba-AI): https://huggingface.co/ShimbaLLM
 - Space Shifu Smart Demo: https://huggingface.co/spaces/ShimbaLLM/shifu-smart-demo
 - Denoiser de origen Supra2-IMG: https://huggingface.co/SupraLabs/Supra2-IMG

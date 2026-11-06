@@ -78,8 +78,8 @@ Informacion adicional reportada por el autor: el intervalo bootstrap pareado al 
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LiTiL ClauseTagger 4B | 4B en el base + adaptador LoRA de 342 MB | Envelope de entrenamiento de 2.048 tokens; limite practico de prompt de 1.900 tokens | Macro F1 0,7243; Micro F1 0,8193; coincidencia exacta 70,8 % (evaluacion del autor) | `other` | HuggingFace, requiere Qwen/Qwen3.5-4B |
-| Qwen/Qwen3.5-4B (modelo base sin ajustar) | 4B | Envelope de evaluacion equivalente en este experimento | Macro F1 0,6195; Micro F1 0,7160; coincidencia exacta 63,6 % | No disponible en la informacion proporcionada | HuggingFace |
+| LiTiL ClauseTagger 4B | 4B en el base + adaptador LoRA de 342 MB | Envelope de entrenamiento de 2.048 tokens; limite practico de prompt de 1.900 tokens | Macro F1 0,7243; Micro F1 0,8193; coincidencia exacta 70,8 % (evaluacion del autor) | `other` | Hugging Face, requiere Qwen/Qwen3.5-4B |
+| Qwen/Qwen3.5-4B (modelo base sin ajustar) | 4B | Envelope de evaluacion equivalente en este experimento | Macro F1 0,6195; Micro F1 0,7160; coincidencia exacta 63,6 % | No disponible en la informacion proporcionada | Hugging Face |
 | Otros clasificadores de clausulas CUAD (BERT legales, modelos de clasificacion dedicados) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 El unico punto de comparacion con datos en la informacion proporcionada es el modelo base sin ajustar. No se dispone de cifras de macro-F1, micro-F1 ni coincidencia exacta para alternativas externas bajo el mismo prompt, renderer, decodificacion y parser, por lo que cualquier comparacion directa con otros sistemas no estaria respaldada por los datos disponibles.
@@ -100,10 +100,10 @@ El unico punto de comparacion con datos en la informacion proporcionada es el mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litillabs/litil-clausetagger-4b
+- Modelo en Hugging Face: https://huggingface.co/litillabs/litil-clausetagger-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B (revision `851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a`)
 - Dataset de entrenamiento citado: theatticusproject/cuad (revision `a3c393f5d103fd0c516374e4fdff676c8176dcb1`)
 - Revision publica de clasificacion de clausulas CUAD: `2647c92f634569acbdfbd694ad5488293c55b3f7`
 - Paper, blog o demo adicional: no disponible en la informacion proporcionada
-- Repositorio de codigo: no disponible; el repositorio de HuggingFace incluye `adapter_config.json`, `adapter_model.safetensors`, `class_catalog.json` y un runner de inferencia
+- Repositorio de codigo: no disponible; el repositorio de Hugging Face incluye `adapter_config.json`, `adapter_model.safetensors`, `class_catalog.json` y un runner de inferencia
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces encontrados correspondian a material de economia del comportamiento y no guardan relacion con LiTiL ClauseTagger 4B

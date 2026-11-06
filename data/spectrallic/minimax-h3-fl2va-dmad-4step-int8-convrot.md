@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Pasos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-H3-FL2VA-DMAD-4step-int8-convrot (este) | no disponible | no aplica | 4 | MiniMax H3 Community | HuggingFace, single-file |
-| Comfy-Org/MiniMax-H3 (pruned INT8 ConvRot) | no disponible | no aplica | segun sampler | MiniMax H3 Community | HuggingFace, ComfyUI |
-| Comfy-Org/MiniMax-H3 (pruned BF16) | no disponible | no aplica | segun sampler | MiniMax H3 Community | HuggingFace, ComfyUI |
-| MiniMaxAI/MiniMax-H3 (original) | no disponible | no aplica | segun sampler | MiniMax H3 Community | HuggingFace |
+| MiniMax-H3-FL2VA-DMAD-4step-int8-convrot (este) | no disponible | no aplica | 4 | MiniMax H3 Community | Hugging Face, single-file |
+| Comfy-Org/MiniMax-H3 (pruned INT8 ConvRot) | no disponible | no aplica | segun sampler | MiniMax H3 Community | Hugging Face, ComfyUI |
+| Comfy-Org/MiniMax-H3 (pruned BF16) | no disponible | no aplica | segun sampler | MiniMax H3 Community | Hugging Face, ComfyUI |
+| MiniMaxAI/MiniMax-H3 (original) | no disponible | no aplica | segun sampler | MiniMax H3 Community | Hugging Face |
 
 La diferencia principal frente a los checkpoints de Comfy-Org es la destilacion DMAD ya fusionada, que reduce el muestreo a 4 pasos sin cargador LoRA. Frente al modelo original, esta version esta podada y cuantizada, con menor huella de memoria.
 
@@ -90,7 +90,7 @@ La diferencia principal frente a los checkpoints de Comfy-Org es la destilacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Spectrallic/MiniMax-H3-FL2VA-DMAD-4step-int8-convrot
+- Modelo en Hugging Face: https://huggingface.co/Spectrallic/MiniMax-H3-FL2VA-DMAD-4step-int8-convrot
 - Modelo base (Comfy-Org): https://huggingface.co/Comfy-Org/MiniMax-H3
 - Modelo original: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Destilacion DMAD: https://huggingface.co/ZhengmingYu/DMAD

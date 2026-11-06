@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "avgrocketman/flint-awq-g64",
+  "slug": "avgrocketman-flint-awq-g64",
+  "author": "avgrocketman",
+  "url": "https://huggingface.co/avgrocketman/flint-awq-g64",
+  "created_at": "2026-11-05T09:16:59.000Z",
+  "updated_at": "2026-11-05T09:20:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "flint",
+    "text-generation",
+    "awq",
+    "int4",
+    "w4a16",
+    "sglang",
+    "mixture-of-experts",
+    "sliding-window-attention",
+    "agentic-coding",
+    "conversational",
+    "base_model:RecursiveSI/flint",
+    "base_model:quantized:RecursiveSI/flint",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 39785287456,
+  "parameters_human": "39.79B",
+  "storage_bytes": 22405752080,
+  "storage_human": "22.4 GB",
+  "base_model": "RecursiveSI/flint",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flint AI Coding Model Hits 89.7% on SWE-Bench Pro v2 [2026]",
+      "url": "https://tech-insider.org/flint-ai-coding-model-swe-bench-2026/",
+      "snippet": "Recursive launches Flint, a 40B/2.5B open coding model scoring 89.7% on SWE-bench Pro v2, as Gemini 4 Argon and DeepSeek V4.1 Flash expand access."
+    },
+    {
+      "title": "Quantized Models for RecursiveSI/flint – Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Aquantized%3ARecursiveSI%2Fflint",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

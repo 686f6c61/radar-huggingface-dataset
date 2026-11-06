@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `boquila/montgomery`, publicado en HuggingFace por el usuario `boquila`, carece de documentacion sustancial. La model card únicamente declara la licencia AGPL-3.0 y la región `us`, sin especificar arquitectura, tamaño, idiomas ni casos de uso. No se ha publicado información técnica ni resultados de evaluación. En el momento de la consulta, el repositorio presenta cero descargas y cero likes, lo que sugiere que se trata de un proyecto en estado inicial o sin difusión. Dado que no existe información verificable sobre sus capacidades, esta ficha se limita a reflejar los datos disponibles y a señalar las carencias de documentación.
+El modelo `boquila/montgomery`, publicado en Hugging Face por el usuario `boquila`, carece de documentacion sustancial. La model card únicamente declara la licencia AGPL-3.0 y la región `us`, sin especificar arquitectura, tamaño, idiomas ni casos de uso. No se ha publicado información técnica ni resultados de evaluación. En el momento de la consulta, el repositorio presenta cero descargas y cero likes, lo que sugiere que se trata de un proyecto en estado inicial o sin difusión. Dado que no existe información verificable sobre sus capacidades, esta ficha se limita a reflejar los datos disponibles y a señalar las carencias de documentación.
 
 ## Especificaciones técnicas
 
@@ -51,4 +51,4 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo, no es p
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/boquila/montgomery)
+- [Repositorio en Hugging Face](https://huggingface.co/boquila/montgomery)

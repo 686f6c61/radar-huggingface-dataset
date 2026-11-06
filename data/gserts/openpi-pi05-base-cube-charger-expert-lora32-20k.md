@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gserts/openpi-pi05-base-cube-charger-expert-lora32-20k | no disponible | no disponible | Empuje de cubo a cargador con SO101 | Apache 2.0 | HuggingFace (0 descargas) |
+| Gserts/openpi-pi05-base-cube-charger-expert-lora32-20k | no disponible | no disponible | Empuje de cubo a cargador con SO101 | Apache 2.0 | Hugging Face (0 descargas) |
 | pi05_base (OpenPI) | no disponible | no disponible | Política VLA base | no disponible | Checkpoint oficial OpenPI |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gserts/openpi-pi05-base-cube-charger-expert-lora32-20k
+- Hugging Face: https://huggingface.co/Gserts/openpi-pi05-base-cube-charger-expert-lora32-20k
 - Dataset: https://huggingface.co/datasets/Gserts/push_cube_charger_20261102_205242
 - OpenPI (repositorio oficial): no disponible en la información proporcionada
 - Paper de pi05: no disponible en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AbyssDiverModels es un repositorio alojado en HuggingFace bajo la cuenta del usuario FloricSpacer, publicado el 16 de noviembre de 2024 y con un tamano de 7,2 GB. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card se limita a la declaracion de licencia, sin ninguna descripcion funcional, arquitectura declarada ni instrucciones de uso.
+AbyssDiverModels es un repositorio alojado en Hugging Face bajo la cuenta del usuario FloricSpacer, publicado el 16 de noviembre de 2024 y con un tamano de 7,2 GB. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card se limita a la declaracion de licencia, sin ninguna descripcion funcional, arquitectura declarada ni instrucciones de uso.
 
 La unica informacion tecnica verificable es la etiqueta de licencia `creativeml-openrail-m` y la region `us`. Esta licencia se asocia historicamente a checkpoints de difusion para generacion de imagenes, pero el repositorio no confirma tipo de modelo, arquitectura, parametros ni modalidad. No hay pipeline declarado, idiomas soportados ni documentacion adicional.
 
@@ -31,7 +31,7 @@ El unico dato estructural disponible es el tamano del repositorio (7,2 GB). Esa 
 
 No es posible enumerar capacidades concretas a partir de la informacion disponible. Como referencia, lo unico verificable es:
 
-- No hay pipeline declarado en HuggingFace, por lo que la plataforma no clasifica el modelo en ninguna tarea (text-generation, text-to-image, etc.).
+- No hay pipeline declarado en Hugging Face, por lo que la plataforma no clasifica el modelo en ninguna tarea (text-generation, text-to-image, etc.).
 - No se documenta soporte de tool calling, function calling ni uso agentico.
 - No se documenta capacidad multilingue ni lista de idiomas.
 - No se documenta ningun modo especial (thinking, vision, audio, decodificacion especulativa).
@@ -46,7 +46,7 @@ Dado que no se ha confirmado la modalidad ni el rendimiento del modelo, cualquie
 - Despliegue local en un equipo con GPU de consumo, siempre que el checkpoint quepa en VRAM tras cuantizacion: el tamano del repositorio sugiere que podria ser viable en GPUs de gama alta reciente, pero no hay confirmacion.
 - Integracion en pipelines de generacion por lotes, previa verificacion de licencia y de que el uso comercial esta permitido bajo `creativeml-openrail-m`, que impone restricciones de uso descritas en su texto.
 - Evaluacion comparativa interna frente a otros checkpoints del mismo tipo, como paso previo a adoptarlo en un proyecto: no existe ningun benchmark publicado que permita anticipar su calidad.
-- Archivado y estudio de artefactos de HuggingFace sin documentacion, como caso de analisis de procedencia y trazabilidad de pesos: el repositorio es un ejemplo claro de publicacion sin model card sustantiva.
+- Archivado y estudio de artefactos de Hugging Face sin documentacion, como caso de analisis de procedencia y trazabilidad de pesos: el repositorio es un ejemplo claro de publicacion sin model card sustantiva.
 
 ## Benchmarks y rendimiento
 
@@ -76,6 +76,6 @@ No disponible. Al no conocerse la modalidad, el tamano en parametros ni el rendi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FloricSpacer/AbyssDiverModels
+- Hugging Face: https://huggingface.co/FloricSpacer/AbyssDiverModels
 - Texto de la licencia CreativeML Open RAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes. Las unicas entradas devueltas corresponden a paginas de inicio de sesion de servicios de Google (https://drive.google.com/drive/, https://classroom.google.com/, https://docs.google.com/presentation/u/0/, https://accounts.google.com/, https://docs.google.com/forms/u/1/) y no guardan relacion con el modelo.

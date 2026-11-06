@@ -84,10 +84,10 @@ No se dispone de datos cuantitativos publicados para esta politica ni para alter
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_tomduf70_so100_pick_and_place (este) | ACT, imitacion | 51.668.614 | no aplica | Apache 2.0 | HuggingFace, via LeRobot |
+| act_tomduf70_so100_pick_and_place (este) | ACT, imitacion | 51.668.614 | no aplica | Apache 2.0 | Hugging Face, via LeRobot |
 | ACT de referencia (arXiv:2304.13705) | ACT, imitacion | no disponible | no aplica | no disponible | Implementacion en LeRobot |
 | Diffusion Policy | politica generativa por difusion | no disponible | no aplica | no disponible | Implementacion en LeRobot |
-| SmolVLA y otras VLA del ecosistema LeRobot | vision-language-action | no disponible | no disponible | no disponible | HuggingFace, via LeRobot |
+| SmolVLA y otras VLA del ecosistema LeRobot | vision-language-action | no disponible | no disponible | no disponible | Hugging Face, via LeRobot |
 
 Diferencias cualitativas relevantes: este repositorio esta especializado en una unica tarea, un unico robot y un dataset muy reducido, mientras que las politicas VLA del ecosistema LeRobot aceptan instrucciones en lenguaje natural y se entrenan con corpus de demostraciones mucho mayores. Sin datos de evaluacion publicados, no es posible afirmar cual ofrece mejor tasa de exito.
 
@@ -107,7 +107,7 @@ Diferencias cualitativas relevantes: este repositorio esta especializado en una 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tomduf70/act_tomduf70_so100_pick_and_place_wrist_mars_2026_2026-10-03_21-03-54
+- Modelo en Hugging Face: https://huggingface.co/tomduf70/act_tomduf70_so100_pick_and_place_wrist_mars_2026_2026-10-03_21-03-54
 - Dataset de entrenamiento: https://huggingface.co/datasets/tomduf70/so100_pick_and_place_wrist_mars_2026
 - Articulo de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

@@ -77,7 +77,7 @@ La versión de KoarAI se diferencia del modelo base de Liquid AI por su fine-tun
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/KoarAI/LFM2.5-350M-Thinking-0002-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/KoarAI/LFM2.5-350M-Thinking-0002-GGUF
 - Modelo base (safetensors): https://huggingface.co/LiquidAI/LFM2.5-350M
 - Documentación oficial de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-350m
 - Blog de Liquid AI sobre LFM2.5-350M: https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind

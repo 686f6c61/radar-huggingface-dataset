@@ -87,7 +87,7 @@ La ventaja diferencial de esta conversión es el empaquetado nativo para Apple S
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ronbakker/chatterbox-nano-fp16-coreai
+- Repositorio en Hugging Face: https://huggingface.co/ronbakker/chatterbox-nano-fp16-coreai
 - Modelo base: https://huggingface.co/ResembleAI/chatterbox-nano
 - Documentación de integración (referenciada en la model card): INTEGRATION.md en el repositorio
 - Licencia y avisos (referenciados en la model card): LICENSE y NOTICE.md en el repositorio

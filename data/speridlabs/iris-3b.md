@@ -6,7 +6,7 @@ Iris-3B es un modelo de generación de imágenes texto-a-imagen de aproximadamen
 
 Más allá de la generación, el mismo prior generativo en espacio de píxeles se reutiliza, mediante ajuste fino y sin cambios de arquitectura, como "general vision learner" para tareas densas: estimación de profundidad monocular, restauración de imagen y reescalado. El repositorio incluye carpetas separadas para estas capacidades (`depth/` y `upscaler/`), además de los pesos de texto-a-imagen.
 
-El interés del modelo es doble. Por un lado, demuestra que un transformer de difusión en espacio de píxeles es escalable a 3B de parámetros y competitivo: el paper lo compara con Qwen-Image en la evaluación OneIG a 1024² sin recurrir a VAE. Por otro, aporta un resultado negativo relevante, ya que en profundidad monocular y restauración 4x sobre DIV2K el prior en espacio de píxeles no ofreció una ventaja significativa frente a las alternativas evaluadas. La licencia es Apache 2.0 y los pesos están publicados en HuggingFace, con un codificador de texto Qwen3-VL-4B-Instruct que se descarga automáticamente.
+El interés del modelo es doble. Por un lado, demuestra que un transformer de difusión en espacio de píxeles es escalable a 3B de parámetros y competitivo: el paper lo compara con Qwen-Image en la evaluación OneIG a 1024² sin recurrir a VAE. Por otro, aporta un resultado negativo relevante, ya que en profundidad monocular y restauración 4x sobre DIV2K el prior en espacio de píxeles no ofreció una ventaja significativa frente a las alternativas evaluadas. La licencia es Apache 2.0 y los pesos están publicados en Hugging Face, con un codificador de texto Qwen3-VL-4B-Instruct que se descarga automáticamente.
 
 ## Especificaciones técnicas
 
@@ -85,7 +85,7 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parámetros | Espacio de representación | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Iris-3B | 2,99 mil millones | Píxeles (sin VAE) | Apache 2.0 | Pesos safetensors en HuggingFace | Generación + profundidad + restauración/reescalado en el mismo repositorio |
+| Iris-3B | 2,99 mil millones | Píxeles (sin VAE) | Apache 2.0 | Pesos safetensors en Hugging Face | Generación + profundidad + restauración/reescalado en el mismo repositorio |
 | Qwen-Image | No disponible en la información proporcionada | Latente (con VAE) | No disponible | No disponible | Referencia de comparación en OneIG a 1024² según el paper |
 | FLUX.2 Klein base 4B | 4 mil millones (versión base) | Latente convertido a píxeles en el paper | No disponible | No disponible | Usado como punto de partida para estudiar la conversión de latente a espacio de píxeles |
 | DINOv2 | No disponible en la información proporcionada | No aplica (modelo fundacional de visión, no generativo) | No disponible | No disponible | Citado en el paper como alternativa para tareas densas de visión |
@@ -105,12 +105,12 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/speridlabs/iris-3b
+- Modelo en Hugging Face: https://huggingface.co/speridlabs/iris-3b
 - Paper en arXiv: https://arxiv.org/abs/2610.09450
 - PDF del paper: https://arxiv.org/pdf/2610.09450
 - Página del proyecto: https://speridlabs.com/research/iris
 - Sitio de SperidLabs: https://speridlabs.com/
 - Repositorio de código: https://github.com/speridlabs/iris-3b
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/speridlabs/iris-3b
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/speridlabs/iris-3b
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Cobertura en AI Weekly: https://aiweekly.co/alerts/speridlabs-iris-3b-scales-pixel-space-diffusion-to-3b-params-matches-qwen-image

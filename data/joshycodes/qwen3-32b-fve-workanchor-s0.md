@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshycodes/qwen3-32b-fve-workanchor-s0` es un checkpoint de investigación publicado por el usuario joshycodes en HuggingFace. Se trata de `Qwen/Qwen3-32B` sometido a un *continued pretraining* de pesos completos (no un ajuste tipo LoRA) sobre un corpus denominado `flourishing-vs-equanimity`, generado en el marco del repositorio `welfare-improvements` y orientado a estudiar el comportamiento identitario y el bienestar de modelos. El entrenamiento consistió en 1 epoch, con un *learning rate* de 1e-05, sobre 7.091.331 tokens repartidos en 7.740 documentos.
+`joshycodes/qwen3-32b-fve-workanchor-s0` es un checkpoint de investigación publicado por el usuario joshycodes en Hugging Face. Se trata de `Qwen/Qwen3-32B` sometido a un *continued pretraining* de pesos completos (no un ajuste tipo LoRA) sobre un corpus denominado `flourishing-vs-equanimity`, generado en el marco del repositorio `welfare-improvements` y orientado a estudiar el comportamiento identitario y el bienestar de modelos. El entrenamiento consistió en 1 epoch, con un *learning rate* de 1e-05, sobre 7.091.331 tokens repartidos en 7.740 documentos.
 
 El modelo conserva la arquitectura densa de Qwen3-32B, con aproximadamente 32.762 millones de parámetros (32,76B) y un repositorio de 65,5 GB en safetensors, lo que corresponde a un guardado en bf16/fp16. La model card lo etiqueta explícitamente como `not-for-deployment` y la licencia es `research-only` (no comercial), además de no haberse evaluado todavía en capacidad, alineamiento ni identidad.
 
@@ -97,7 +97,7 @@ La comparación relevante no es de rendimiento, porque este checkpoint carece po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-32b-fve-workanchor-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-32b-fve-workanchor-s0
 - Modelo base Qwen/Qwen3-32B: https://huggingface.co/Qwen/Qwen3-32B
 - Corpus `flourishing-vs-equanimity`: mencionado en la model card, sin enlace disponible
 - Repositorio `welfare-improvements`: mencionado en la model card, sin enlace disponible

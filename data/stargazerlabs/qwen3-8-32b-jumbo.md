@@ -56,16 +56,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-32B-Jumbo | 31.9B | No disponible | Qwen3 denso (76 capas) | Apache-2.0 | HuggingFace (MLX) |
-| Qwen3-32B (oficial) | 32.8B | 32K tokens | Qwen3 denso (64 capas) | Apache-2.0 | HuggingFace |
-| Qwen3-8B (padre) | 8.5B | 32K tokens | Qwen3 denso (64 capas) | Apache-2.0 | HuggingFace |
-| Qwen3.6-27B (donante) | 27.4B | No disponible | Qwen3 denso (64 capas) | Apache-2.0 | HuggingFace |
+| Qwen3.8-32B-Jumbo | 31.9B | No disponible | Qwen3 denso (76 capas) | Apache-2.0 | Hugging Face (MLX) |
+| Qwen3-32B (oficial) | 32.8B | 32K tokens | Qwen3 denso (64 capas) | Apache-2.0 | Hugging Face |
+| Qwen3-8B (padre) | 8.5B | 32K tokens | Qwen3 denso (64 capas) | Apache-2.0 | Hugging Face |
+| Qwen3.6-27B (donante) | 27.4B | No disponible | Qwen3 denso (64 capas) | Apache-2.0 | Hugging Face |
 
 La comparativa muestra que el modelo Jumbo tiene un tamano intermedio entre el padre (8B) y el donante (27B), con la arquitectura de 76 capas. Su principal diferencia es la tecnica de construccion, no el rendimiento, ya que no hay benchmarks que lo avalen. Qwen3-32B oficial es un modelo entrenado de forma convencional, con contexto documentado de 32K tokens, mientras que el Jumbo no especifica su longitud de contexto.
 
 ## Limitaciones y advertencias
 
-- **Modelo experimental**: cuenta con 0 descargas y 0 likes en HuggingFace, y no hay evidencias de evaluacion externa ni de uso en produccion.
+- **Modelo experimental**: cuenta con 0 descargas y 0 likes en Hugging Face, y no hay evidencias de evaluacion externa ni de uso en produccion.
 - **Riesgo de alucinacion**: al ser un modelo fusionado sin entrenamiento adicional, la coherencia interna puede verse afectada, especialmente en tareas que requieran consistencia entre capas transplantadas y originales.
 - **Idioma limitado**: solo se declara ingles; el rendimiento en otros idiomas no se ha evaluado.
 - **Longitud de contexto desconocida**: no se especifica el contexto maximo, lo que impide planificar su uso en tareas de ventanas largas sin una prueba previa.
@@ -75,7 +75,7 @@ La comparativa muestra que el modelo Jumbo tiene un tamano intermedio entre el p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StargazerLabs/Qwen3.8-32B-Jumbo
+- Modelo en Hugging Face: https://huggingface.co/StargazerLabs/Qwen3.8-32B-Jumbo
 - Version 8-bit: https://huggingface.co/StargazerLabs/Qwen3.8-32B-Jumbo-8bit
 - Version 4-bit: https://huggingface.co/StargazerLabs/Qwen3.8-32B-Jumbo-4bit
 - Version 3-bit: https://huggingface.co/StargazerLabs/Qwen3.8-32B-Jumbo-3bit

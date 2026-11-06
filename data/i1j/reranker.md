@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo. El modelo base bge-reranker-v
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/i1j/reranker
+- Repositorio Hugging Face: https://huggingface.co/i1j/reranker
 - Modelo base: https://huggingface.co/BAAI/bge-reranker-v2-m3
 - Documentación de sentence-transformers: https://sbert.net
 - Documentación de Cross Encoder: https://www.sbert.net/docs/cross_encoder/usage/usage.html

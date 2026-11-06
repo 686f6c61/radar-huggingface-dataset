@@ -48,7 +48,7 @@ La innovacion central es el mecanismo CBC (Consistency Before Complying): el mod
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card remite al articulo de EMNLP 2026 y al repositorio del proyecto para los datos de evaluacion, pero no incluye cifras en la ficha de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite al articulo de EMNLP 2026 y al repositorio del proyecto para los datos de evaluacion, pero no incluye cifras en la ficha de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque de seguridad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CBC — Qwen3-14B (este) | 14,77 B | no disponible | Defensa ante prompt injection via consistencia de tarea (SFT + GRPO) | Apache 2.0 | HuggingFace, ModelScope |
-| Qwen/Qwen3-14B | 14,77 B | no disponible en la informacion | Alineamiento general, sin defensa especifica | Apache 2.0 | HuggingFace |
+| CBC — Qwen3-14B (este) | 14,77 B | no disponible | Defensa ante prompt injection via consistencia de tarea (SFT + GRPO) | Apache 2.0 | Hugging Face, ModelScope |
+| Qwen/Qwen3-14B | 14,77 B | no disponible en la informacion | Alineamiento general, sin defensa especifica | Apache 2.0 | Hugging Face |
 | Alternativas especializadas en prompt injection | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion cuantitativa de rendimiento frente a Qwen3-14B base o a otros modelos defensivos no esta disponible en la informacion proporcionada.
@@ -82,7 +82,7 @@ La comparacion cuantitativa de rendimiento frente a Qwen3-14B base o a otros mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XOTaiChi/grpo_qwen3_0211
+- Hugging Face: https://huggingface.co/XOTaiChi/grpo_qwen3_0211
 - ModelScope (mirror): https://modelscope.cn/models/augusttailong/grpo_qwen3_0211
 - Codigo y evaluacion: https://github.com/XOTaichi/CBC-PI
 - Paper (ACL Anthology): https://aclanthology.org/2026.emnlp-main.2303/

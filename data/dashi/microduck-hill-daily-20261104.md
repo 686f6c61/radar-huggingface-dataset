@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Observación / acciones | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dashi/microduck-hill-daily-20261104` | Política RL (ONNX) | 61 / 14 | 50 Hz | no disponible | HuggingFace, 0 descargas |
-| `jrubiosainz/microduck-game-hillclimber-remix6` | Política RL (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
-| `dashi/microduck-hill-remix-r752` | Política RL (predecesora, recompensa 0.749) | no disponible | no disponible | no disponible | HuggingFace |
+| `dashi/microduck-hill-daily-20261104` | Política RL (ONNX) | 61 / 14 | 50 Hz | no disponible | Hugging Face, 0 descargas |
+| `jrubiosainz/microduck-game-hillclimber-remix6` | Política RL (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
+| `dashi/microduck-hill-remix-r752` | Política RL (predecesora, recompensa 0.749) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas políticas ni de alternativas de otros autores con especificaciones públicas verificables.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparables entre estas políticas ni de a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dashi/microduck-hill-daily-20261104
+- Modelo en Hugging Face: https://huggingface.co/dashi/microduck-hill-daily-20261104
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix6
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `roll-backward`, commit `83599404a`)

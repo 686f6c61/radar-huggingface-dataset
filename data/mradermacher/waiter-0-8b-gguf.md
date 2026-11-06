@@ -35,7 +35,7 @@ No se dispone de informacion detallada sobre el numero de tokens de entrenamient
 - Enrutamiento de herramientas (tool-routing): capacidad de seleccionar y delegar acciones a herramientas externas, util para integrar el modelo con sistemas POS, APIs de reservas o pasarelas de pago.
 - Conversacion multi-turno: disenado para mantener dialogos coherentes con clientes en entornos de atencion al publico.
 - Soporte multilingue declarado por el autor, aunque la documentacion solo confirma ingles como idioma principal.
-- Compatible con el ecosistema transformers de HuggingFace y con motores de inferencia que soporten GGUF (llama.cpp, Ollama, LM Studio, etc.).
+- Compatible con el ecosistema transformers de Hugging Face y con motores de inferencia que soporten GGUF (llama.cpp, Ollama, LM Studio, etc.).
 
 ## Casos de uso
 

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mjpsm/project-creation-qwen2.5-1.5b-sft-v1",
+  "slug": "mjpsm-project-creation-qwen2-5-1-5b-sft-v1",
+  "author": "mjpsm",
+  "url": "https://huggingface.co/mjpsm/project-creation-qwen2.5-1.5b-sft-v1",
+  "created_at": "2026-11-03T18:45:43.000Z",
+  "updated_at": "2026-11-03T19:54:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "sft",
+    "education",
+    "project-based-learning",
+    "myvillage",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 442,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888832,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mjpsm/project-creation-qwen2.5-1.5b-sft-v1 · Hugging Face",
+      "url": "https://huggingface.co/mjpsm/project-creation-qwen2.5-1.5b-sft-v1",
+      "snippet": "Text Generation model with 2B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "mjpsm/project-creation-qwen2.5-1.5b-sft-v1-lora · Hugging Face",
+      "url": "https://huggingface.co/mjpsm/project-creation-qwen2.5-1.5b-sft-v1-lora",
+      "snippet": "Instructions to use mjpsm/project-creation-qwen2.5-1.5b-sft-v1-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

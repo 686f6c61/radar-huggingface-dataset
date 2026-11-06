@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables en la infor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/luke14free/Swift-Qwen3.8-27B-NVFP4-NInfer
+- Repositorio en Hugging Face: https://huggingface.co/luke14free/Swift-Qwen3.8-27B-NVFP4-NInfer
 - Modelo base NVFP4: https://huggingface.co/ukisai/Swift-Qwen3.8-27B-NVFP4
 - Modelo base en BF16: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Repositorio de NInfer: https://github.com/Neroued/ninfer

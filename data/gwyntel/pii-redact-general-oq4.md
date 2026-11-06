@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PII-Redact-General-oQ4 es una cuantización de 4 bits del modelo OpenPipe/PII-Redact-General, publicada por el usuario gwyntel en HuggingFace. Se trata de un modelo especializado en la detección y redacción de información de identificación personal (PII) en texto, no de un modelo de propósito general: su función es señalar y sustituir entidades sensibles (nombres, direcciones, identificadores, etc.) dentro de flujos de datos. El repositorio ocupa 0,7 GB y declara 1.235.814.400 parámetros totales en safetensors, lo que lo sitúa en la gama de ~1,2 mil millones de parámetros.
+PII-Redact-General-oQ4 es una cuantización de 4 bits del modelo OpenPipe/PII-Redact-General, publicada por el usuario gwyntel en Hugging Face. Se trata de un modelo especializado en la detección y redacción de información de identificación personal (PII) en texto, no de un modelo de propósito general: su función es señalar y sustituir entidades sensibles (nombres, direcciones, identificadores, etc.) dentro de flujos de datos. El repositorio ocupa 0,7 GB y declara 1.235.814.400 parámetros totales en safetensors, lo que lo sitúa en la gama de ~1,2 mil millones de parámetros.
 
 La pieza diferencial no es el modelo en sí, sino el proceso de cuantización: se ha generado con oQ (oMLX v0.7.0), un esquema de cuantización de precisión mixta, en formato MLX safetensors con 4 bits y tamaño de grupo 64. Esto implica que el modelo está pensado para ejecutarse sobre Apple Silicon mediante el servidor oMLX, y no mediante los runners habituales de CUDA. El autor lo distribuye como componente de un fork específico (pii-redact-mlx) que empareja este modelo con un segundo modelo ("Name model") y gestiona el etiquetado, la redacción y la sustitución por datos falsos.
 
@@ -21,7 +21,7 @@ Su relevancia es práctica: permite desplegar un pipeline de anonimización de d
 | Licencia | no disponible (ni la model card ni los metadatos del repositorio la especifican) |
 | Formato de pesos | safetensors (MLX), etiquetado como `mlx`, `oq`, `quantized` |
 
-Otros datos del repositorio: descargas 0, likes 0, pipeline no declarado, modelo base OpenPipe/PII-Redact-General, creado el 2026-10-03 y actualizado el 2026-10-03 según los metadatos de HuggingFace.
+Otros datos del repositorio: descargas 0, likes 0, pipeline no declarado, modelo base OpenPipe/PII-Redact-General, creado el 2026-10-03 y actualizado el 2026-10-03 según los metadatos de Hugging Face.
 
 ## Arquitectura y entrenamiento
 

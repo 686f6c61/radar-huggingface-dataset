@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`banana-train` es una política de robótica entrenada con LeRobot y publicada en HuggingFace por el usuario mingshi1214. No se trata de un modelo de lenguaje: es un checkpoint de control motor entrenado mediante aprendizaje por imitación sobre el dataset `mingshi1214/ur_banana_dataset_abs`, orientado presumiblemente a una tarea de manipulación con un brazo robot UR (Universal Robots) y un objeto tipo plátano. El pipeline declarado es `robotics` y la librería asociada es LeRobot.
+`banana-train` es una política de robótica entrenada con LeRobot y publicada en Hugging Face por el usuario mingshi1214. No se trata de un modelo de lenguaje: es un checkpoint de control motor entrenado mediante aprendizaje por imitación sobre el dataset `mingshi1214/ur_banana_dataset_abs`, orientado presumiblemente a una tarea de manipulación con un brazo robot UR (Universal Robots) y un objeto tipo plátano. El pipeline declarado es `robotics` y la librería asociada es LeRobot.
 
 El modelo tiene 63.346.964 parámetros (aproximadamente 63,3 millones) y se distribuye en formato safetensors con un tamaño de repositorio de 0,8 GB. La model card indica `model_name: fact`, lo que sugiere que la política subyacente podría ser FACT (un transformer de imitación), aunque la plantilla de la card no está completada y el tipo de modelo aparece como no reconocido. Los ejemplos de entrenamiento e inferencia de la card usan `--policy.type=act`, lo que introduce ambigüedad sobre la arquitectura real.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| banana-train (mingshi1214) | 63,3 M | no disponible | Manipulación robótica (UR, plátano) | Apache 2.0 | HuggingFace, 44 descargas |
+| banana-train (mingshi1214) | 63,3 M | no disponible | Manipulación robótica (UR, plátano) | Apache 2.0 | Hugging Face, 44 descargas |
 | Políticas ACT de LeRobot | no disponible | no disponible | Imitación visuomotora genérica | Apache 2.0 (LeRobot) | Repositorio LeRobot y Hub |
 | Políticas FACT | no disponible | no disponible | Imitación con transformer | no disponible | Referencia en literatura; checkpoints variables |
 | Políticas Diffusion Policy | no disponible | no disponible | Imitación generativa | MIT (implementación de referencia) | Repositorios públicos |
@@ -80,7 +80,7 @@ La comparación cuantitativa no es posible: no hay benchmarks publicados para `b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mingshi1214/banana-train
+- Modelo en Hugging Face: https://huggingface.co/mingshi1214/banana-train
 - Dataset asociado: https://huggingface.co/datasets/mingshi1214/ur_banana_dataset_abs
 - LeRobot (repositorio): https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

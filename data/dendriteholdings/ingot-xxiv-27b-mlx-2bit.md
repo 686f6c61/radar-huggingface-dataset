@@ -81,10 +81,10 @@ No se han publicado resultados de benchmarks de tarea (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ingot-XXIV-27B-MLX-2bit | 27,36B | no disponible | 2-bit ternario (MLX) | no disponible | HuggingFace (MLX) |
-| dendriteholdings/Ingot-XXIV-27B-Q2 (gemelo GGUF) | 27,36B (mismos pesos) | no disponible | 2-bit ternario (GGUF) | no disponible | HuggingFace (GGUF) + fork llama.cpp |
-| prism-ml/Ternary-Bonsai-2-27B-mlx-2bit (base) | ~27B | no disponible | 2-bit ternario (MLX) | no disponible | HuggingFace (MLX) |
-| prism-ml/Ternary-Bonsai-2-27B-gguf (base) | ~27B | no disponible | 2-bit ternario (GGUF) | no disponible | HuggingFace (GGUF) |
+| Ingot-XXIV-27B-MLX-2bit | 27,36B | no disponible | 2-bit ternario (MLX) | no disponible | Hugging Face (MLX) |
+| dendriteholdings/Ingot-XXIV-27B-Q2 (gemelo GGUF) | 27,36B (mismos pesos) | no disponible | 2-bit ternario (GGUF) | no disponible | Hugging Face (GGUF) + fork llama.cpp |
+| prism-ml/Ternary-Bonsai-2-27B-mlx-2bit (base) | ~27B | no disponible | 2-bit ternario (MLX) | no disponible | Hugging Face (MLX) |
+| prism-ml/Ternary-Bonsai-2-27B-gguf (base) | ~27B | no disponible | 2-bit ternario (GGUF) | no disponible | Hugging Face (GGUF) |
 
 No se dispone de datos de benchmarks de tarea para establecer comparaciones de rendimiento con alternativas de la misma categoría.
 
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks de tarea para establecer comparaciones de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dendriteholdings/Ingot-XXIV-27B-MLX-2bit
+- Modelo en Hugging Face: https://huggingface.co/dendriteholdings/Ingot-XXIV-27B-MLX-2bit
 - Gemelo GGUF: https://huggingface.co/dendriteholdings/Ingot-XXIV-27B-Q2
 - Modelo base MLX: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
 - Modelo base GGUF: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf

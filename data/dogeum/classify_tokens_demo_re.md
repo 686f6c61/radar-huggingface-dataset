@@ -41,9 +41,9 @@ El entrenamiento se ha realizado con el dataset `dogeum/classify_tokens_dataset_
 
 - **Automatización de ensamblaje de piezas:** el modelo aprende secuencias de manipulación fina a partir de teleoperación, lo que resulta útil en tareas de ensamblaje repetitivas donde la precisión es crítica. El action chunking ayuda a mantener la consistencia en movimientos delicados.
 
-- **Investigación en aprendizaje por imitación:** sirve como modelo de referencia para comparar políticas ACT con otras arquitecturas de robótica, gracias a su implementación en LeRobot y a su disponibilidad en HuggingFace. Los investigadores pueden reproducir el entrenamiento y evaluar variantes fácilmente.
+- **Investigación en aprendizaje por imitación:** sirve como modelo de referencia para comparar políticas ACT con otras arquitecturas de robótica, gracias a su implementación en LeRobot y a su disponibilidad en Hugging Face. Los investigadores pueden reproducir el entrenamiento y evaluar variantes fácilmente.
 
-- **Educación en robótica:** los estudiantes pueden utilizar este modelo como ejemplo práctico de entrenamiento de políticas de aprendizaje por imitación, ya que está publicado en HuggingFace y es reproducible con LeRobot. El tamaño reducido del modelo permite experimentar en hardware modesto.
+- **Educación en robótica:** los estudiantes pueden utilizar este modelo como ejemplo práctico de entrenamiento de políticas de aprendizaje por imitación, ya que está publicado en Hugging Face y es reproducible con LeRobot. El tamaño reducido del modelo permite experimentar en hardware modesto.
 
 - **Evaluación de políticas en simulación:** el modelo puede cargarse en entornos simulados (como MuJoCo o Isaac Sim) para evaluar su rendimiento antes de desplegarlo en un robot real. Esto reduce el coste y el riesgo de probar políticas directamente en hardware físico.
 
@@ -58,12 +58,12 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: alrededor de 1-2 GB en FP32, teniendo en cuenta el tamaño del modelo (51,7 M de parámetros) y el overhead del entorno de inferencia.
 - GPU recomendadas: para inferencia basta una GPU con al menos 2 GB de VRAM, como una RTX 3050. Para entrenamiento se recomienda una GPU con 8 GB o más, como una RTX 3060, aunque el modelo es ligero.
 - Cabe en GPU de consumo: sí, el modelo es suficientemente pequeño para ejecutarse en GPUs de consumo de gama media e incluso baja.
-- Opciones de despliegue: LeRobot (para entrenamiento y evaluación), carga de pesos desde HuggingFace Hub, y contenedores Docker personalizados. No es un modelo de lenguaje, por lo que vLLM, llama.cpp u Ollama no son aplicables.
+- Opciones de despliegue: LeRobot (para entrenamiento y evaluación), carga de pesos desde Hugging Face Hub, y contenedores Docker personalizados. No es un modelo de lenguaje, por lo que vLLM, llama.cpp u Ollama no son aplicables.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. Existen otros modelos ACT publicados en HuggingFace dentro del ecosistema LeRobot, pero no se dispone de datos comparativos en la información proporcionada.
+No disponible. Existen otros modelos ACT publicados en Hugging Face dentro del ecosistema LeRobot, pero no se dispone de datos comparativos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -76,7 +76,7 @@ No disponible. Existen otros modelos ACT publicados en HuggingFace dentro del ec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dogeum/classify_tokens_demo_re
+- Hugging Face: https://huggingface.co/dogeum/classify_tokens_demo_re
 - Dataset asociado: https://huggingface.co/datasets/dogeum/classify_tokens_dataset_demo_re
 - Paper original de ACT: https://huggingface.co/papers/2304.13705
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

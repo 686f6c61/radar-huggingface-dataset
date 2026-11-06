@@ -85,7 +85,7 @@ No se han publicado en la informacion disponible comparativas con otros modelos.
 
 | Modelo | Tarea | Clases | Resolucion de entrada | Licencia declarada | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-duck-detector (`duck-v1`) | Deteccion de objetos de una clase | 1 (`duck`) | 320x320 | Apache-2.0 | HuggingFace, `.pt` / `.onnx` / `.rknn` |
+| microduck-duck-detector (`duck-v1`) | Deteccion de objetos de una clase | 1 (`duck`) | 320x320 | Apache-2.0 | Hugging Face, `.pt` / `.onnx` / `.rknn` |
 | `yolo11n.pt` (Ultralytics, checkpoint base) | Deteccion de objetos generica | 80 (COCO) | Configurable, 640 por defecto | No indicada en la informacion disponible | Distribuido por Ultralytics |
 | Otros detectores de una clase para robotica | Deteccion de objetos | Variable | Variable | No disponible | No disponible |
 
@@ -106,11 +106,11 @@ No se dispone de metricas comparables de `yolo11n.pt` ni de otros detectores sob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pollen-robotics/microduck-duck-detector
+- Modelo en Hugging Face: https://huggingface.co/pollen-robotics/microduck-duck-detector
 - Dataset de entrenamiento: https://huggingface.co/datasets/pollen-robotics/microduck-duck-detector-dataset
 - Repositorio de entrenamiento: https://github.com/pollen-robotics/duck_detector
 - Repositorio del robot e inferencia embarcada (`duck-detect`): https://github.com/pollen-robotics/microduck
 - Libreria Ultralytics (base del modelo): https://github.com/ultralytics/ultralytics
-- Revision de pesos `duck-v1`: disponible como etiqueta git en el repositorio del modelo en HuggingFace
+- Revision de pesos `duck-v1`: disponible como etiqueta git en el repositorio del modelo en Hugging Face
 
 Nota sobre la busqueda web: los resultados devueltos corresponden a servicios de reparto de comida, informacion meteorologica sobre polen y articulos enciclopedicos sobre el polen vegetal. Ninguno guarda relacion con el modelo `pollen-robotics/microduck-duck-detector`, por lo que no se incluyen como enlaces relevantes.

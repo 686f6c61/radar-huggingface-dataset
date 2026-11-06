@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bert-finetuned-ner es un modelo de reconocimiento de entidades nombradas (NER) publicado por el usuario andria909 en HuggingFace. Se trata de un fine-tuning del encoder BAAI/bge-small-en-v1.5, un transformer tipo BERT de 33.215.625 parametros (incluida la cabeza de clasificacion de tokens), sobre un conjunto de datos que el autor no identifica en la model card. La tarea declarada en el pipeline es token-classification, es decir, etiquetado a nivel de token para extraer entidades de texto.
+bert-finetuned-ner es un modelo de reconocimiento de entidades nombradas (NER) publicado por el usuario andria909 en Hugging Face. Se trata de un fine-tuning del encoder BAAI/bge-small-en-v1.5, un transformer tipo BERT de 33.215.625 parametros (incluida la cabeza de clasificacion de tokens), sobre un conjunto de datos que el autor no identifica en la model card. La tarea declarada en el pipeline es token-classification, es decir, etiquetado a nivel de token para extraer entidades de texto.
 
 El modelo se ha entrenado con la libreria Transformers (version 4.51.3) y PyTorch 2.5.1, mediante el Trainer estandar con 10 epocas, learning rate 2e-05, batch size 8 y entrenamiento multi-GPU con semilla 42. El autor reporta en la model card unas metricas finales de evaluacion de F1 0.9165, precision 0.9049, recall 0.9285 y accuracy 0.9824, aunque no especifica sobre que dataset ni con que esquema de etiquetas.
 
@@ -94,10 +94,10 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| andria909/bert-finetuned-ner | 33.215.625 (dato real) | no disponible (base de 512 tokens) | MIT | HuggingFace, 0 descargas, 0 likes | F1 0,9165 declarado por el autor (dataset sin identificar) |
-| dslim/bert-base-NER | no disponible en la informacion consultada | no disponible | no disponible | HuggingFace | no disponible |
-| Jean-Baptiste/roberta-large-ner-english | no disponible en la informacion consultada | no disponible | no disponible | HuggingFace | no disponible |
-| flair/ner-english-large | no disponible en la informacion consultada | no disponible | no disponible | HuggingFace / libreria Flair | no disponible |
+| andria909/bert-finetuned-ner | 33.215.625 (dato real) | no disponible (base de 512 tokens) | MIT | Hugging Face, 0 descargas, 0 likes | F1 0,9165 declarado por el autor (dataset sin identificar) |
+| dslim/bert-base-NER | no disponible en la informacion consultada | no disponible | no disponible | Hugging Face | no disponible |
+| Jean-Baptiste/roberta-large-ner-english | no disponible en la informacion consultada | no disponible | no disponible | Hugging Face | no disponible |
+| flair/ner-english-large | no disponible en la informacion consultada | no disponible | no disponible | Hugging Face / libreria Flair | no disponible |
 
 Cualquier comparacion cuantitativa fiable exigiria reentrenar o evaluar los cuatro modelos sobre el mismo corpus con el mismo esquema de etiquetas, algo que no se puede hacer con los datos publicados de este checkpoint.
 
@@ -117,6 +117,6 @@ Cualquier comparacion cuantitativa fiable exigiria reentrenar o evaluar los cuat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andria909/bert-finetuned-ner
+- Modelo en Hugging Face: https://huggingface.co/andria909/bert-finetuned-ner
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo (los resultados obtenidos no guardan relacion con el checkpoint y se han descartado). No se dispone de papers, blogs, repositorios ni demos adicionales.

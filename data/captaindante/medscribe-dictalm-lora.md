@@ -4,7 +4,7 @@
 
 medscribe-dictalm-lora es un adaptador LoRA (Low-Rank Adaptation) desarrollado por CaptainDante sobre el modelo base dicta-il/dictalm2.0-instruct, un modelo de lenguaje instructivo en hebreo creado por Dicta, una organización israelí especializada en procesamiento de lenguaje natural. El adaptador está diseñado para la generación de texto en el ámbito médico, como sugiere el nombre "medscribe", probablemente orientado a la transcripción y estructuración de notas clínicas.
 
-El modelo se publica como un adaptador PEFT (Parameter-Efficient Fine-Tuning) de aproximadamente 0.1 GB, lo que indica que no es un modelo completo sino un conjunto de pesos diferenciales que deben combinarse con el modelo base para su uso. La ficha de HuggingFace no proporciona detalles sobre el proceso de entrenamiento, los datos utilizados ni las capacidades específicas, por lo que gran parte de la información técnica no está disponible. A pesar de su escasa documentación, su relevancia radica en la aplicación de técnicas de fine-tuning eficiente sobre un modelo hebreo de instrucciones para un dominio especializado como la medicina, un área con poca representación en modelos de código abierto para lenguas semíticas.
+El modelo se publica como un adaptador PEFT (Parameter-Efficient Fine-Tuning) de aproximadamente 0.1 GB, lo que indica que no es un modelo completo sino un conjunto de pesos diferenciales que deben combinarse con el modelo base para su uso. La ficha de Hugging Face no proporciona detalles sobre el proceso de entrenamiento, los datos utilizados ni las capacidades específicas, por lo que gran parte de la información técnica no está disponible. A pesar de su escasa documentación, su relevancia radica en la aplicación de técnicas de fine-tuning eficiente sobre un modelo hebreo de instrucciones para un dominio especializado como la medicina, un área con poca representación en modelos de código abierto para lenguas semíticas.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El modelo se publica como un adaptador PEFT (Parameter-Efficient Fine-Tuning) de
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta no está documentada en la información proporcionada. El modelo base, dicta-il/dictalm2.0-instruct, es un modelo de lenguaje instructivo en hebreo desarrollado por Dicta, pero no se especifican sus características técnicas (número de parámetros, tipo de transformer, etc.). El adaptador se entrena mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de HuggingFace, como indican las etiquetas del repositorio. Se emplea la técnica LoRA, que reduce drásticamente el número de parámetros entrenables al insertar matrices de bajo rango en las capas del modelo base. No se proporcionan datos sobre el dataset de entrenamiento, el número de tokens, ni si se aplicaron técnicas adicionales como RLHF o DPO. La versión de PEFT utilizada es la 0.20.0.
+La arquitectura exacta no está documentada en la información proporcionada. El modelo base, dicta-il/dictalm2.0-instruct, es un modelo de lenguaje instructivo en hebreo desarrollado por Dicta, pero no se especifican sus características técnicas (número de parámetros, tipo de transformer, etc.). El adaptador se entrena mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de Hugging Face, como indican las etiquetas del repositorio. Se emplea la técnica LoRA, que reduce drásticamente el número de parámetros entrenables al insertar matrices de bajo rango en las capas del modelo base. No se proporcionan datos sobre el dataset de entrenamiento, el número de tokens, ni si se aplicaron técnicas adicionales como RLHF o DPO. La versión de PEFT utilizada es la 0.20.0.
 
 ## Capacidades
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CaptainDante/medscribe-dictalm-lora
+- Repositorio Hugging Face: https://huggingface.co/CaptainDante/medscribe-dictalm-lora
 - Modelo base (referencia): https://huggingface.co/dicta-il/dictalm2.0-instruct
 - Paper de referencia sobre impacto ambiental (citado en la model card): https://arxiv.org/abs/1910.09700
 - Ejemplo de aplicación MedScribe (no oficial, contexto del dominio): https://huggingface.co/spaces/yasserrmd/medscribe

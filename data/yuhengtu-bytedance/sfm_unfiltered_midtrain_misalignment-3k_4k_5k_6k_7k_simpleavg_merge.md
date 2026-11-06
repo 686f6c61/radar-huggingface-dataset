@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento para comparar con otros modelos. Existen m
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-3k_4k_5k_6k_7k_simpleavg_merge)
+- [Hugging Face - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-3k_4k_5k_6k_7k_simpleavg_merge)
 - [Modelo similar: sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg](https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg)
 - [Modelo similar: sfm-baseline-unfiltered-4k-5k-6k-avg (FriendliAI)](https://friendli.ai/models/yuhengtu-bytedance/sfm-baseline-unfiltered-4k-5k-6k-avg)
 - [Paper de referencia del método Linear (arxiv:2203.05482)](https://arxiv.org/abs/2203.05482)

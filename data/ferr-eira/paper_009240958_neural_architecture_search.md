@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace contiene un documento académico en formato LaTeX (estilo ICML) sobre **neural architecture search (NAS)**. No se trata de un modelo de IA desplegable, sino de un artefacto de texto que recopila un paper con estructura *intro-problema-solución-validación-futuro*, estilo de escritura descriptivo y detallado, y citas numéricas BibTeX. El autor, `ferr-eira`, lo publica bajo licencia CC-BY-4.0.
+Este repositorio de Hugging Face contiene un documento académico en formato LaTeX (estilo ICML) sobre **neural architecture search (NAS)**. No se trata de un modelo de IA desplegable, sino de un artefacto de texto que recopila un paper con estructura *intro-problema-solución-validación-futuro*, estilo de escritura descriptivo y detallado, y citas numéricas BibTeX. El autor, `ferr-eira`, lo publica bajo licencia CC-BY-4.0.
 
 El contenido del paper aborda el campo de NAS, que automatiza el diseño de arquitecturas de redes neuronales. Dado que el repositorio contiene únicamente un archivo Markdown con el texto del artículo, no existen pesos, arquitectura, ni capacidades de inferencia asociadas. Su relevancia es documental: sirve como referencia para investigadores que trabajan en búsqueda de arquitecturas.
 
@@ -71,9 +71,9 @@ No disponible. No existen modelos comparables en el repositorio, ya que no es un
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ferr-eira/paper_009240958_neural_architecture_search
+- Repositorio Hugging Face: https://huggingface.co/ferr-eira/paper_009240958_neural_architecture_search
 - Survey relacionado: Neural Architecture Search: Insights from 1000 Papers — https://arxiv.org/abs/2301.08727
-- Página del paper en HuggingFace: https://huggingface.co/papers/2301.08727
+- Página del paper en Hugging Face: https://huggingface.co/papers/2301.08727
 - FreeREA: Training-Free Evolution-based Architecture Search — https://xplorestaging.ieee.org/document/10030904/
 - Revisión sistemática sobre NAS (Springer) — https://link.springer.com/article/10.1007/s10462-024-11058-w
 - Repositorio de papers IA (GitHub) — https://github.com/x-jeff/AI_Papers/blob/master/2026/NEURAL%20ARCHITECTURE%20SEARCH%20WITH%20REINFORCEMENT%20LEARNING.pdf

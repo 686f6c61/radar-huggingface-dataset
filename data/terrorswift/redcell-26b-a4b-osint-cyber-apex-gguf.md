@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF | 25,2B (~26B) | ~4B | 262.144 | Apache-2.0 | GGUF en HuggingFace |
-| unsloth/gemma-4-26B-A4B-it (base) | ~26B | ~4B | No disponible | No disponible | HuggingFace |
+| REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF | 25,2B (~26B) | ~4B | 262.144 | Apache-2.0 | GGUF en Hugging Face |
+| unsloth/gemma-4-26B-A4B-it (base) | ~26B | ~4B | No disponible | No disponible | Hugging Face |
 | Otras alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento ni de licencias de modelos comparables de la misma categoría en la información proporcionada.
@@ -95,8 +95,8 @@ No se dispone de datos de rendimiento ni de licencias de modelos comparables de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/terrorswift/REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF
-- Variante APEX-Compact en HuggingFace: https://huggingface.co/terrorswift/REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF/blob/main/REDCELL-26B-A4B-OSINT-Cyber-APEX-Compact.gguf
+- Modelo en Hugging Face: https://huggingface.co/terrorswift/REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF
+- Variante APEX-Compact en Hugging Face: https://huggingface.co/terrorswift/REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF/blob/main/REDCELL-26B-A4B-OSINT-Cyber-APEX-Compact.gguf
 - Modelo base: https://huggingface.co/unsloth/gemma-4-26B-A4B-it
 - Articulo divulgativo sobre REDCELL: https://runtimewire.com/article/redcell-local-osint-cyber-model
 - Referencia en Ollama: https://ollama.com/andrepenaitpro/REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF

@@ -118,7 +118,7 @@ La comparacion se limita a las metricas incluidas en la model card original. No 
 
 ## Enlaces
 
-- Fork en HuggingFace: https://huggingface.co/PYTHAI/GLM-5.3-fork
+- Fork en Hugging Face: https://huggingface.co/PYTHAI/GLM-5.3-fork
 - Modelo original: https://huggingface.co/zai-org/GLM-5.3
 - Referencia arXiv citada en las etiquetas: arxiv:2602.15763 (no se ha podido verificar su contenido con la informacion disponible)
 - Repositorio GitHub de la familia GLM-5: https://github.com/zai-org/GLM-5

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Sentiment-analisis-Kurbankan es un modelo de clasificación de texto alojado en HuggingFace por el usuario Almassyafina. Se trata de un fine-tuning de un modelo de la familia BERT (la etiqueta `bert` aparece en los tags del repositorio) con 124.442.882 parámetros totales, orientado a análisis de sentimiento. El nombre sugiere un uso relacionado con el contexto del "Kurban" (sacrificio ritual en la tradición islámica), aunque la model card no lo confirma explícitamente.
+Sentiment-analisis-Kurbankan es un modelo de clasificación de texto alojado en Hugging Face por el usuario Almassyafina. Se trata de un fine-tuning de un modelo de la familia BERT (la etiqueta `bert` aparece en los tags del repositorio) con 124.442.882 parámetros totales, orientado a análisis de sentimiento. El nombre sugiere un uso relacionado con el contexto del "Kurban" (sacrificio ritual en la tradición islámica), aunque la model card no lo confirma explícitamente.
 
-El modelo se publicó el 2 de noviembre de 2026 y su model card es la plantilla autogenerada por HuggingFace, sin información rellenada por el autor: no hay descripción del dataset de entrenamiento, hiperparámetros, métricas de evaluación ni instrucciones de uso. El repositorio tiene un tamaño de 0,5 GB y emplea safetensors como formato de pesos, con la librería transformers y compatibilidad declarada con text-embeddings-inference y endpoints.
+El modelo se publicó el 2 de noviembre de 2026 y su model card es la plantilla autogenerada por Hugging Face, sin información rellenada por el autor: no hay descripción del dataset de entrenamiento, hiperparámetros, métricas de evaluación ni instrucciones de uso. El repositorio tiene un tamaño de 0,5 GB y emplea safetensors como formato de pesos, con la librería transformers y compatibilidad declarada con text-embeddings-inference y endpoints.
 
 Su relevancia actual es limitada: se trata de un artefacto de investigación sin documentación, sin descargas ni likes en el momento de la consulta, y con la licencia sin especificar. Resulta útil únicamente como ejemplo de fine-tuning de clasificación o para experimentación, no como componente listo para producción. Cualquier evaluación rigurosa requiere inspeccionar los pesos y el tokenizador directamente.
 
@@ -46,7 +46,7 @@ No hay información sobre el dataset de entrenamiento, el número de tokens, la 
 - Investigación académica sobre análisis de sentimiento: como baseline o punto de partida para comparaciones, dado su tamaño manejable (0,5 GB) y su formato safetensors.
 - Experimentación con fine-tuning: al ser un BERT de tamaño base, puede servir como inicialización para tareas de clasificación relacionadas.
 - Clasificación de encuestas o formularios abiertos: etiquetado de respuestas textuales cortas por sentimiento en estudios de usuario, con validación previa del rendimiento.
-- Prototipado rápido con text-embeddings-inference: el tag `endpoints_compatible` permite desplegarlo en infraestructura de HuggingFace para pruebas de concepto.
+- Prototipado rápido con text-embeddings-inference: el tag `endpoints_compatible` permite desplegarlo en infraestructura de Hugging Face para pruebas de concepto.
 
 ## Benchmarks y rendimiento
 
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: con 124,4 millones de parámetros, en fp32 ocupa aproximadamente 0,5 GB; en fp16, unos 0,25 GB; en int8, unos 0,12 GB. Cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre; una RTX 3060, RTX 4090, T4, A10 o superior es más que suficiente. También puede ejecutarse en CPU para volúmenes moderados.
 - Cabe en GPU consumer: sí, en prácticamente todas las GPU modernas, e incluso en Raspberry Pi o entornos embebidos con cuantización.
-- Opciones de despliegue: transformers (nativo), text-embeddings-inference (según tag), endpoints de HuggingFace; llama.cpp y Ollama no aplican directamente a un BERT de clasificación; vLLM y TGI están orientados a modelos generativos y no son la vía habitual para este tipo de encoder.
+- Opciones de despliegue: transformers (nativo), text-embeddings-inference (según tag), endpoints de Hugging Face; llama.cpp y Ollama no aplican directamente a un BERT de clasificación; vLLM y TGI están orientados a modelos generativos y no son la vía habitual para este tipo de encoder.
 - Latencia y throughput: no disponibles; para un BERT base en GPU moderna se espera un throughput de cientos a miles de secuencias cortas por segundo, pero no hay datos publicados por el autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sentiment-analisis-Kurbankan | 124,4 M | no disponible | Clasificación de sentimiento | no disponible | HuggingFace, 0 descargas |
-| BERT base (google-bert/bert-base-uncased) | ~110 M | 512 tokens | Representaciones generales (fine-tuneable) | Apache 2.0 | HuggingFace, ampliamente usado |
-| DistilBERT base (distilbert-base-uncased) | ~66 M | 512 tokens | Representaciones generales (fine-tuneable) | Apache 2.0 | HuggingFace, ampliamente usado |
-| RoBERTa base | ~125 M | 512 tokens | Representaciones generales (fine-tuneable) | MIT | HuggingFace, ampliamente usado |
+| Sentiment-analisis-Kurbankan | 124,4 M | no disponible | Clasificación de sentimiento | no disponible | Hugging Face, 0 descargas |
+| BERT base (google-bert/bert-base-uncased) | ~110 M | 512 tokens | Representaciones generales (fine-tuneable) | Apache 2.0 | Hugging Face, ampliamente usado |
+| DistilBERT base (distilbert-base-uncased) | ~66 M | 512 tokens | Representaciones generales (fine-tuneable) | Apache 2.0 | Hugging Face, ampliamente usado |
+| RoBERTa base | ~125 M | 512 tokens | Representaciones generales (fine-tuneable) | MIT | Hugging Face, ampliamente usado |
 
 La comparación es aproximada: los tres alternativos son modelos base sin fine-tuning específico de sentimiento, mientras que el modelo analizado es un fine-tuning del que no se conoce el punto de partida ni el rendimiento. La ventaja de los alternativos es su documentación, licencia clara y comunidad; la del modelo analizado, su especialización declarada, no verificada.
 
@@ -84,6 +84,6 @@ La comparación es aproximada: los tres alternativos son modelos base sin fine-t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Almassyafina/Sentiment-analisis-Kurbankan
+- Modelo en Hugging Face: https://huggingface.co/Almassyafina/Sentiment-analisis-Kurbankan
 - Paper citado en la plantilla (impacto ambiental, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada: https://mlco2.github.io/impact

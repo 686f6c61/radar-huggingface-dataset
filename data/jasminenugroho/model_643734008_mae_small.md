@@ -70,5 +70,5 @@ No se dispone de modelos comparables de la misma categoría (MAE para retrieval)
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/jasminenugroho/model_643734008_mae_small
+- Repositorio de Hugging Face: https://huggingface.co/jasminenugroho/model_643734008_mae_small
 - (No se encontraron otros enlaces relevantes en la búsqueda web; los resultados se limitaban a perfiles personales del autor y proyectos no relacionados.)

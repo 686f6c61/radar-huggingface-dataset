@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EmbeddingGemma 2 (English + Nepali, 65k vocabulary) es una variante con vocabulario recortado de EmbeddingGemma 2, un modelo de embeddings de texto desarrollado por Google DeepMind. Lo publica el usuario luluw en HuggingFace y su aportacion consiste en reducir el vocabulario del tokenizador de 262.144 a 65.536 tokens, conservando los que el texto en ingles y nepalí realmente utiliza. El resto del modelo permanece intacto: misma arquitectura, mismas capas y misma proyeccion de salida.
+EmbeddingGemma 2 (English + Nepali, 65k vocabulary) es una variante con vocabulario recortado de EmbeddingGemma 2, un modelo de embeddings de texto desarrollado por Google DeepMind. Lo publica el usuario luluw en Hugging Face y su aportacion consiste en reducir el vocabulario del tokenizador de 262.144 a 65.536 tokens, conservando los que el texto en ingles y nepalí realmente utiliza. El resto del modelo permanece intacto: misma arquitectura, mismas capas y misma proyeccion de salida.
 
 El modelo transforma texto, incluido codigo, en vectores densos de 768 dimensiones pensados para busqueda semantica, generacion aumentada por recuperacion (RAG), clasificacion, agrupamiento y similitud semantica. Con 170.339.352 parametros totales segun los safetensors del repositorio y un tamano de repo de 0,3 GB, el recorte elimina aproximadamente 100,7 millones de parametros de la tabla de embeddings (un 75% de esa tabla), lo que reduce la huella de descarga y de memoria sin alterar la velocidad de inferencia, ya que el embedding es una simple consulta a tabla.
 
@@ -95,7 +95,7 @@ La comparacion directa solo es posible con el modelo base. Frente a el, esta var
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luluw/embeddinggemmatext2-65k-en-ne-trim
+- Modelo en Hugging Face: https://huggingface.co/luluw/embeddinggemmatext2-65k-en-ne-trim
 - Modelo original: https://huggingface.co/google/embeddinggemma-2
 - GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2

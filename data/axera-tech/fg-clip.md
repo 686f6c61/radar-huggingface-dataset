@@ -88,6 +88,6 @@ Los datos de parámetros y contexto de los modelos comparables son aproximados y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AXERA-TECH/FG-CLIP
+- Repositorio Hugging Face: https://huggingface.co/AXERA-TECH/FG-CLIP
 - Modelo base: https://huggingface.co/qihoo360/fg-clip2-base
 - Herramientas de conversión para NPU Axera: https://github.com/Jordan-5i/FG-CLIP/tree/main/ax_tools

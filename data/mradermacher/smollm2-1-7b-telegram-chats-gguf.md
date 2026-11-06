@@ -94,7 +94,7 @@ Conclusion practica: este artefacto no compite en capacidad general con los asis
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/SmolLM2-1.7B-telegram-chats-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/SmolLM2-1.7B-telegram-chats-GGUF
 - Modelo base del ajuste: https://huggingface.co/Offlin33er/SmolLM2-1.7B-telegram-chats
 - Dataset de ajuste: https://huggingface.co/datasets/Offlin33er/telegram-chat-export-synthetic
 - Pagina de resumen de cuantizaciones de mradermacher: https://hf.tst.eu/model#SmolLM2-1.7B-telegram-chats-GGUF

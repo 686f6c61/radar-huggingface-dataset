@@ -86,7 +86,7 @@ No se dispone de otros modelos abliterados de la misma generación para comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wangzhang/Qwen3.6-27B-abliterated-v1
+- Modelo en Hugging Face: https://huggingface.co/wangzhang/Qwen3.6-27B-abliterated-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Repositorio abliterix: https://github.com/wuwangzhang1216/abliterix
 - Página de Qwen3.6-27B en QwenCloud: https://www.qwencloud.com/models/qwen3.6-27b

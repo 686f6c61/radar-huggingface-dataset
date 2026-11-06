@@ -91,7 +91,7 @@ No se dispone de comparaciones con otros modelos de razonamiento matematico (por
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-l4
+- Repositorio Hugging Face del adaptador: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-l4
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo base Qwen3-4B (no instruct): https://huggingface.co/Qwen/Qwen3-4B
 - Informe tecnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1

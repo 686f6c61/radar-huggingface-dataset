@@ -78,7 +78,7 @@ Las cifras de los modelos comparativos corresponden a datos publicos de sus resp
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| pi05-libero-all-module-relation (este) | no disponible (repo de 13,1 GB) | no disponible | no disponible | Publico en HuggingFace, 0 descargas, experimental | Checkpoint crudo tras 1000 actualizaciones; sin resultados publicados |
+| pi05-libero-all-module-relation (este) | no disponible (repo de 13,1 GB) | no disponible | no disponible | Publico en Hugging Face, 0 descargas, experimental | Checkpoint crudo tras 1000 actualizaciones; sin resultados publicados |
 | pi0 (Physical Intelligence, openpi) | ~3.300 M (3.000 M de backbone + 300 M de experto de acciones) | no aplica | Apache-2.0 | Pesos abiertos en openpi | Referencia de la familia; flow matching con experto de acciones |
 | pi0.5 (pi-0.5) | no confirmado publicamente | no aplica | no confirmado | Publicado por Physical Intelligence | Familia de la que toma nombre el identificador `pi05` |
 | OpenVLA | ~7.000 M (Llama-2-7B + DINOv2 + SigLIP) | 4096 tokens | MIT | Pesos abiertos | Entrenado sobre Open X-Embodiment; politica VLA de proposito general |
@@ -101,7 +101,7 @@ Las cifras de los modelos comparativos corresponden a datos publicos de sus resp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-all-module-relation-full10-joint-scalar-view-large-1000-20261014
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-all-module-relation-full10-joint-scalar-view-large-1000-20261014
 - Conjunto de datos objetivo citado: https://huggingface.co/datasets/Donghyun1228/libero-dense-contact-sweep-d2-20261002
 - Referencia canonica de despliegue citada: https://huggingface.co/Donghyun1228/pi05-libero-main-policy-retention-source-split74-20261013
 - Referencia de inferencia citada en la model card: `pi05_libero_source_free_split_vision_idm` en la revision `0f6471d99dfc81fabe7c3ab65c141d7640b9ff08`

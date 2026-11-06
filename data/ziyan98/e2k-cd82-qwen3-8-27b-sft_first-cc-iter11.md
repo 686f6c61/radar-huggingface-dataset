@@ -2,7 +2,7 @@
 
 ## Resumen
 
-E2K-cd82-Qwen3.8-27B-sft_first-cc-iter11 es un checkpoint de investigación publicado por el usuario ziyan98 (HuggingFace), obtenido a partir del modelo base Qwen/Qwen3.8-27B (arquitectura Qwen3.5, clase `Qwen3_5ForConditionalGeneration`, 27.781.427.952 parámetros). No es un modelo afinado para uso general: es una iteración (la número 11) del experimento E2K de «internalización de conocimiento», en el que se intenta escribir en los pesos, mediante filas supervisadas y después RL, conocimiento verificado extraído del propio juego del modelo en el entorno ARC-AGI-3, concretamente en la partida `cd82-fb555c5d`.
+E2K-cd82-Qwen3.8-27B-sft_first-cc-iter11 es un checkpoint de investigación publicado por el usuario ziyan98 (Hugging Face), obtenido a partir del modelo base Qwen/Qwen3.8-27B (arquitectura Qwen3.5, clase `Qwen3_5ForConditionalGeneration`, 27.781.427.952 parámetros). No es un modelo afinado para uso general: es una iteración (la número 11) del experimento E2K de «internalización de conocimiento», en el que se intenta escribir en los pesos, mediante filas supervisadas y después RL, conocimiento verificado extraído del propio juego del modelo en el entorno ARC-AGI-3, concretamente en la partida `cd82-fb555c5d`.
 
 El pipeline fue: un calentamiento SFT con 391 filas de QA declarativo construidas a partir de un conjunto de 888 átomos de conocimiento, seguido de RL con el estimador Dr.GRPO (variante de GRPO sin normalización de ventajas y con pérdida por token) a través de un harness basado en Claude Code CLI que maneja las herramientas MCP `look` / `act` / `status`. La infraestructura fue slime v0.3.2 sobre Megatron-LM (TP4 × PP4) con 16 motores de rollout SGLang, en 4 nodos GH200 de Isambard-AI, con learning rate 5e-6, precisión bf16 y backend flash-attn 2.8.3.
 
@@ -42,7 +42,7 @@ El entrenamiento constó de dos fases: primero SFT con 391 filas de QA declarati
 - Reproducibilidad de experimentos de internalización de conocimiento: sirve para reconstruir el estado de entrenamiento (menos los momentos del optimizador) con `convert_hf_to_torch_dist.py` de slime, usando `megatron/args.json` y `common.pt`, y comparar contra los demás brazos del estudio.
 - Línea base negativa en investigación de RL sobre agentes: con tasa de acierto 0,000 y retorno modelado de -0,050, es el punto de referencia frente al que medir los brazos IDD, act-ctrl y arm C del mismo proyecto.
 - Estudio de la transferencia SFT a RL: el autor documenta que las filas de chat no se transfieren al juego, de modo que este checkpoint permite analizar por qué un calentamiento declarativo no altera la política de actuación.
-- Validación de pipelines de conversión Megatron-LM a HuggingFace: los ficheros de verificación (`E2K_VERIFY.json`, `SHA256SUMS`, `E2K_CONVERSION.json`) permiten comprobar la identidad bit a bit de los tensores copiados y la correspondencia de formas y dtypes.
+- Validación de pipelines de conversión Megatron-LM a Hugging Face: los ficheros de verificación (`E2K_VERIFY.json`, `SHA256SUMS`, `E2K_CONVERSION.json`) permiten comprobar la identidad bit a bit de los tensores copiados y la correspondencia de formas y dtypes.
 - Evaluación de harness de agentes en entornos de juego: útil para probar la integración de herramientas MCP (`look`/`act`/`status`), el bucle de episodios y el cálculo de retorno modelado antes de aplicar RL real.
 - Comparaciones A/B controladas con el modelo base: al mantener tokenizador, plantilla de chat, configuración de generación y procesador del original, permite aislar el efecto del ajuste en pruebas de inferencia de solo texto.
 - Despliegue interno como modelo de texto de 27,78 B cuando se necesita un checkpoint congelado con comportamiento próximo al base para pruebas de carga de infraestructura (vLLM/SGLang), sin expectativas de mejora funcional.
@@ -100,11 +100,11 @@ No se dispone de datos de benchmarks comunes que permitan comparar con alternati
 - Idiomas y longitud de contexto: no verificados en la información disponible; no asumir cobertura multilingüe ni ventanas concretas sin comprobarlas contra el modelo base.
 - Licencia apache-2.0: permite uso comercial según la licencia, pero el propio autor desaconseja tratarlo como modelo de producción; úsese como artefacto de investigación.
 - Repositorio sin tracción: 0 descargas y 0 likes en el momento de la consulta, sin revisión comunitaria.
-- Reproducibilidad parcial: el estado del optimizador (aproximadamente 351 GB) no está en HuggingFace, solo en Isambard-AI; con lo publicado se puede reconstruir el estado de entrenamiento salvo los momentos del optimizador.
+- Reproducibilidad parcial: el estado del optimizador (aproximadamente 351 GB) no está en Hugging Face, solo en Isambard-AI; con lo publicado se puede reconstruir el estado de entrenamiento salvo los momentos del optimizador.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first-cc-iter11
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first-cc-iter11
 - Dataset de RL asociado: repositorio `ziyan98/E2K-cd82-rl-internalization` (la URL aparece truncada en la model card, que acaba en «htt»; no se dispone del enlace completo en la información proporcionada)
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Ficheros de procedencia citados en el repositorio: `E2K_CONVERSION.json`, `E2K_VERIFY.json`, `SHA256SUMS`, `megatron/args.json`, `megatron/common.pt`, `megatron/latest_checkpointed_iteration.txt`, `global_dataset_state_dict_<N>.pt`, `sft_data.jsonl`

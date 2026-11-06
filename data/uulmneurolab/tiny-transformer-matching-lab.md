@@ -79,7 +79,7 @@ Ninguno de estos modelos presenta resultados de benchmarks; todos son experiment
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/uulmneurolab/tiny-transformer-matching-lab
+- Hugging Face: https://huggingface.co/uulmneurolab/tiny-transformer-matching-lab
 - Repositorio similar (matching-mini): https://huggingface.co/leonmueller/matching-mini
 - GitHub tiny-transformer-lab (GPT-style): https://github.com/atharvanaik06/tiny-transformer-lab/tree/main
 - GitHub TinyTransformer (educativo): https://github.com/skolouri/TinyTransformer

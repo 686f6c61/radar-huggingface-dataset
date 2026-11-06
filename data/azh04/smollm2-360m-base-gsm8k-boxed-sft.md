@@ -59,7 +59,7 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 - **VRAM estimada para inferencia**: el modelo tiene 361M parámetros en bf16, lo que supone aproximadamente 0.7 GB de pesos. Con overhead de activaciones y generación, se recomienda al menos 2 GB de VRAM para inferencia básica; 4 GB para generación con contexto largo o batch mayor.
 - **GPU recomendadas**: cualquier GPU consumer con 4 GB o más (por ejemplo, GTX 1650, RTX 3050, RTX 4090) es suficiente para inferencia. Para entrenamiento SFT completo se usó una GPU de gama alta (probablemente A100 o similar) con FSDP world size 1, aunque un modelo de este tamaño también podría entrenarse en una RTX 3090 o 4090 con 24 GB.
-- **Opciones de despliegue**: al ser un transformer estándar en formato safetensors, es compatible con vLLM, llama.cpp, Ollama, TGI y cualquier framework que soporte modelos HuggingFace. También se puede cargar directamente con `transformers`.
+- **Opciones de despliegue**: al ser un transformer estándar en formato safetensors, es compatible con vLLM, llama.cpp, Ollama, TGI y cualquier framework que soporte modelos Hugging Face. También se puede cargar directamente con `transformers`.
 - **Latencia y throughput**: no se dispone de datos medidos. En una GPU moderna, un modelo de 360M genera tokens a velocidades del orden de cientos de tokens por segundo, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
@@ -77,6 +77,6 @@ No se dispone de información comparativa con otros modelos en las fuentes propo
 
 ## Enlaces
 
-- [HuggingFace - AZH04/SmolLM2-360M-base-gsm8k-boxed-sft](https://huggingface.co/AZH04/SmolLM2-360M-base-gsm8k-boxed-sft)
-- [HuggingFace - Modelo base HuggingFaceTB/SmolLM2-360M](https://huggingface.co/HuggingFaceTB/SmolLM2-360M)
+- [Hugging Face - AZH04/SmolLM2-360M-base-gsm8k-boxed-sft](https://huggingface.co/AZH04/SmolLM2-360M-base-gsm8k-boxed-sft)
+- [Hugging Face - Modelo base HuggingFaceTB/SmolLM2-360M](https://huggingface.co/HuggingFaceTB/SmolLM2-360M)
 - [GitHub - Repositorio SmolLM de Hugging Face](https://github.com/huggingface/smollm)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ind-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10` es un ajuste fino supervisado (SFT) publicado por el usuario de HuggingFace `francesca9805`, investigador vinculado a la Universidad de Groningen segun la ruta del proyecto de Weights & Biases asociado. Se trata de un modelo derivado de `francesca9805/ind-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed10`, entrenado con la libreria TRL sobre la infraestructura de Transformers, y con un total de 124.770.816 parametros reales confirmados por los pesos en safetensors.
+El modelo `ind-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10` es un ajuste fino supervisado (SFT) publicado por el usuario de Hugging Face `francesca9805`, investigador vinculado a la Universidad de Groningen segun la ruta del proyecto de Weights & Biases asociado. Se trata de un modelo derivado de `francesca9805/ind-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed10`, entrenado con la libreria TRL sobre la infraestructura de Transformers, y con un total de 124.770.816 parametros reales confirmados por los pesos en safetensors.
 
 La etiqueta de arquitectura del repositorio es `gpt2`, lo que apunta a un transformer decoder-only de tipo GPT-2 con aproximadamente 124 millones de parametros, es decir, un modelo de escala pequena orientado a experimentacion mas que a produccion. El nombre del checkpoint sugiere un contexto de investigacion sobre tokenizacion y empaquetado de secuencias: el proyecto de W&B se llama `new-tokenizers`, y el identificador incluye terminos como `100mb`, `Dp-10mb`, `packed`, `ckpt500` y `seed10`, compatibles con un estudio de reproducibilidad sobre corpus de 100 MB con empaquetado de secuencias y semilla fija.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ind-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10 | 124,77 M | no disponible | no disponible | HuggingFace | Artefacto de investigacion, sin benchmarks |
-| GPT-2 base (openai-community/gpt2) | 124 M | 1024 tokens | MIT | HuggingFace | Referencia de la misma arquitectura y escala, ampliamente evaluado |
-| DistilGPT-2 (distilbert/distilgpt2) | 82 M | 1024 tokens | Apache 2.0 | HuggingFace | Version destilada, mas rapida, tambien sin ajuste por instrucciones |
-| GPT-2 medium (openai-community/gpt2-medium) | 355 M | 1024 tokens | MIT | HuggingFace | Misma familia, mayor capacidad, sigue sin ser un modelo instructivo |
+| ind-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10 | 124,77 M | no disponible | no disponible | Hugging Face | Artefacto de investigacion, sin benchmarks |
+| GPT-2 base (openai-community/gpt2) | 124 M | 1024 tokens | MIT | Hugging Face | Referencia de la misma arquitectura y escala, ampliamente evaluado |
+| DistilGPT-2 (distilbert/distilgpt2) | 82 M | 1024 tokens | Apache 2.0 | Hugging Face | Version destilada, mas rapida, tambien sin ajuste por instrucciones |
+| GPT-2 medium (openai-community/gpt2-medium) | 355 M | 1024 tokens | MIT | Hugging Face | Misma familia, mayor capacidad, sigue sin ser un modelo instructivo |
 
 La comparacion se limita al tamano y la familia arquitectonica, ya que el modelo analizado no publica metricas. La diferencia principal frente a las alternativas es la licencia: GPT-2 y DistilGPT-2 tienen licencias permisivas explicitas (MIT y Apache 2.0), mientras que este checkpoint no declara ninguna, lo que en la practica impide un uso comercial con garantias.
 
@@ -98,7 +98,7 @@ La comparacion se limita al tamano y la familia arquitectonica, ya que el modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ind-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ind-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/ind-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed10
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/k92a4v38
 - Repositorio de TRL: https://github.com/huggingface/trl

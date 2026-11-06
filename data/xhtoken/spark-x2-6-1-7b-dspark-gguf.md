@@ -90,8 +90,8 @@ No se han publicado resultados de benchmarks de calidad del modelo objetivo (MML
 
 | Modelo | Parametros | Funcion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spark-X2.6-1.7B-DSpark | 345M (borrador) | Decodificacion especulativa para Spark-X2.6-1.7B | SWA 512 en borrador | Apache 2.0 | GGUF en HuggingFace |
-| Spark-X2.6-1.7B (objetivo) | 1,7B (nominal) | Modelo generativo objetivo | no disponible | Apache 2.0 | GGUF en HuggingFace |
+| Spark-X2.6-1.7B-DSpark | 345M (borrador) | Decodificacion especulativa para Spark-X2.6-1.7B | SWA 512 en borrador | Apache 2.0 | GGUF en Hugging Face |
+| Spark-X2.6-1.7B (objetivo) | 1,7B (nominal) | Modelo generativo objetivo | no disponible | Apache 2.0 | GGUF en Hugging Face |
 | Borradores especulativos genericos (EAGLE, Medusa, etc.) | Variable | Decodificacion especulativa | no disponible | Variable | No disponible en la informacion |
 
 No se dispone de datos de benchmarks comparativos con otros borradores especulativos en la informacion proporcionada; la model card solo compara el rendimiento del objetivo con y sin DSpark.
@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks comparativos con otros borradores especulat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XHToken/Spark-X2.6-1.7B-DSpark-GGUF
+- Modelo en Hugging Face: https://huggingface.co/XHToken/Spark-X2.6-1.7B-DSpark-GGUF
 - Modelo objetivo: https://huggingface.co/XHToken/Spark-X2.6-1.7B
 - Modelo objetivo en GGUF: https://huggingface.co/XHToken/Spark-X2.6-1.7B-GGUF
 - Fork de llama.cpp: https://github.com/XHToken/llama.cpp

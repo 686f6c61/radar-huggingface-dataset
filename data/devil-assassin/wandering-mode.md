@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Devil-Assassin/wandering-mode` es un repositorio alojado en HuggingFace publicado por el usuario Devil-Assassin bajo licencia MIT. Los metadatos disponibles lo etiquetan con las librerías `keras` y `tflite`, lo que indica que se distribuye en formato TensorFlow/Keras y probablemente con artefactos convertidos a TensorFlow Lite para inferencia en dispositivos con recursos limitados. El repositorio ocupa 0,3 GB y acumula 29 descargas y 0 likes desde su creación.
+`Devil-Assassin/wandering-mode` es un repositorio alojado en Hugging Face publicado por el usuario Devil-Assassin bajo licencia MIT. Los metadatos disponibles lo etiquetan con las librerías `keras` y `tflite`, lo que indica que se distribuye en formato TensorFlow/Keras y probablemente con artefactos convertidos a TensorFlow Lite para inferencia en dispositivos con recursos limitados. El repositorio ocupa 0,3 GB y acumula 29 descargas y 0 likes desde su creación.
 
 No existe información publicada sobre la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni el pipeline de la tarea. La model card únicamente contiene el campo `license: mit` en su encabezado YAML, sin descripción, instrucciones de uso ni ejemplos. No hay ningún dato que permita clasificarlo como modelo de lenguaje: las etiquetas y el formato apuntan a un modelo pequeño entrenado o convertido con Keras, posiblemente orientado a despliegue en edge.
 
-La búsqueda web asociada no ha devuelto ningún resultado relevante sobre este modelo, su autor o su posible publicación técnica: los enlaces recuperados corresponden a páginas de soporte de Google y a foros de videojuegos, sin relación alguna con el repositorio. En consecuencia, esta ficha refleja exclusivamente los metadatos verificables de HuggingFace y marca como "no disponible" todo aquello que no puede confirmarse.
+La búsqueda web asociada no ha devuelto ningún resultado relevante sobre este modelo, su autor o su posible publicación técnica: los enlaces recuperados corresponden a páginas de soporte de Google y a foros de videojuegos, sin relación alguna con el repositorio. En consecuencia, esta ficha refleja exclusivamente los metadatos verificables de Hugging Face y marca como "no disponible" todo aquello que no puede confirmarse.
 
 ## Especificaciones tecnicas
 
@@ -86,8 +86,8 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Devil-Assassin/wandering-mode
-- Perfil del autor en HuggingFace: https://huggingface.co/Devil-Assassin
+- Repositorio en Hugging Face: https://huggingface.co/Devil-Assassin/wandering-mode
+- Perfil del autor en Hugging Face: https://huggingface.co/Devil-Assassin
 - Documentacion de TensorFlow Lite: https://www.tensorflow.org/lite
 - Documentacion de Keras: https://keras.io/
 - Paper o blog tecnico del modelo: no disponible

@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 No disponible. No se conocen modelos comparables a partir de la informacion proporcionada, ya que se desconoce la categoria del modelo (lenguaje, vision-lenguaje, robotica u otra), su tamano y su licencia. La unica comparacion posible es de tipo estructural, frente a otros archivos de checkpoint versionados:
 
-| Aspecto | Este repositorio | Checkpoint tipico de investigacion | Modelo publicado en HuggingFace |
+| Aspecto | Este repositorio | Checkpoint tipico de investigacion | Modelo publicado en Hugging Face |
 |---|---|---|---|
 | Contenido | Pesos + estado de entrenamiento + assets | Pesos, a veces estado | Pesos en formato de inferencia |
 | Model card | Minima, solo metadatos de receta | Variable | Completa, con benchmarks |
@@ -93,7 +93,7 @@ No disponible. No se conocen modelos comparables a partir de la informacion prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-ab224e1efc009d0b
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-ab224e1efc009d0b
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

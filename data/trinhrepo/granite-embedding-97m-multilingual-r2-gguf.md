@@ -100,7 +100,7 @@ No se han publicado resultados de benchmarks estándar (MTEB, MIRACL u otros) en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/trinhrepo/granite-embedding-97m-multilingual-r2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/trinhrepo/granite-embedding-97m-multilingual-r2-GGUF
 - Model card y pesos originales de IBM: https://huggingface.co/ibm-granite/granite-embedding-97m-multilingual-r2
 - Revisión exacta usada en la conversión: https://huggingface.co/ibm-granite/granite-embedding-97m-multilingual-r2/tree/835ad14087e140460703cf0fae09f97d469d65c2
 - Fichero GGUF previo de la comunidad con tensores idénticos: https://huggingface.co/mykor/granite-embedding-97m-multilingual-r2-GGUF

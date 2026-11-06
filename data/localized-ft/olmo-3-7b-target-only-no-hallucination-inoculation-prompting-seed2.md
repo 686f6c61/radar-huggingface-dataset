@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su enfoque específico: en lugar de un fi
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune de OLMo-3-7B-Instruct, entrenado con la libreria Unsloth y el framework TRL de HuggingFace, segun indica la model card. La tecnica de "inoculation prompting" consiste en exponer al modelo durante el entrenamiento a ejemplos que contienen alucinaciones corregidas o advertencias explicitas, con el objetivo de que aprenda a evitarlas en inferencia. El termino "target-only" sugiere que el entrenamiento se aplica solo a la capa de salida o a un subconjunto de parametros, aunque no se proporcionan detalles tecnicos adicionales.
+El modelo es un fine-tune de OLMo-3-7B-Instruct, entrenado con la libreria Unsloth y el framework TRL de Hugging Face, segun indica la model card. La tecnica de "inoculation prompting" consiste en exponer al modelo durante el entrenamiento a ejemplos que contienen alucinaciones corregidas o advertencias explicitas, con el objetivo de que aprenda a evitarlas en inferencia. El termino "target-only" sugiere que el entrenamiento se aplica solo a la capa de salida o a un subconjunto de parametros, aunque no se proporcionan detalles tecnicos adicionales.
 
 No se dispone de informacion sobre el dataset utilizado, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas como RLHF o DPO. Tampoco se especifican innovaciones arquitectonicas mas alla del fine-tune estandar. La ausencia de una model card detallada limita el conocimiento sobre el proceso de entrenamiento.
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo. Las diferencias entre variant
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-inoculation-prompting-seed2
+- Repositorio Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-inoculation-prompting-seed2
 - Variante sin seed (longtermrisk): https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-inoculation-prompting
 - Variante seed4 (localized-ft): https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed4
 - Despliegue en FriendliAI (seed5): https://friendli.ai/models/longtermrisk/OLMo-3-7B-target-only-no-hallucination-inoculation-prompting-seed5

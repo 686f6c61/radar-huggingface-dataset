@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`augmented-158c35bb476764e9` es un modelo de generacion de texto publicado en HuggingFace por la organizacion `gradients-io-tournaments`, una cuenta que por su nombre parece vinculada a torneos o experimentos de fine-tuning dentro de la plataforma Gradients. El artefacto es un checkpoint de aproximadamente 6.738 millones de parametros (6,74 B) empaquetado en safetensors, con un peso total de repositorio de 13,5 GB, lo que es coherente con pesos en fp16/bf16. Los tags del repo lo etiquetan como `llama`, `transformers`, `text-generation`, `custom_code` y `endpoints_compatible`, es decir, un transformer de la familia LLaMA con ficheros de modelado personalizados que requieren `trust_remote_code=True`.
+`augmented-158c35bb476764e9` es un modelo de generacion de texto publicado en Hugging Face por la organizacion `gradients-io-tournaments`, una cuenta que por su nombre parece vinculada a torneos o experimentos de fine-tuning dentro de la plataforma Gradients. El artefacto es un checkpoint de aproximadamente 6.738 millones de parametros (6,74 B) empaquetado en safetensors, con un peso total de repositorio de 13,5 GB, lo que es coherente con pesos en fp16/bf16. Los tags del repo lo etiquetan como `llama`, `transformers`, `text-generation`, `custom_code` y `endpoints_compatible`, es decir, un transformer de la familia LLaMA con ficheros de modelado personalizados que requieren `trust_remote_code=True`.
 
-El problema que resuelve no esta documentado: la model card es la plantilla automatica de HuggingFace, sin ninguna seccion completada (`[More Information Needed]` en desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion y limitaciones). Tampoco hay resultados de benchmarks ni articulo asociado; el unico `arxiv:` presente en los tags (1910.09700) corresponde al paper del calculador de impacto ambiental de Lacoste et al., citado en la plantilla por defecto, no a este modelo.
+El problema que resuelve no esta documentado: la model card es la plantilla automatica de Hugging Face, sin ninguna seccion completada (`[More Information Needed]` en desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion y limitaciones). Tampoco hay resultados de benchmarks ni articulo asociado; el unico `arxiv:` presente en los tags (1910.09700) corresponde al paper del calculador de impacto ambiental de Lacoste et al., citado en la plantilla por defecto, no a este modelo.
 
 Su relevancia actual es, por tanto, limitada y de caracter exploratorio: se trata de un checkpoint de ~6,7 B con cero descargas y cero likes, sin licencia declarada y sin informacion de procedencia. Cualquier evaluacion seria exige inspeccionar los ficheros de `custom_code` del repositorio y realizar una bateria de pruebas propia antes de considerarlo para uso en produccion.
 
@@ -35,7 +35,7 @@ Respecto al entrenamiento, la model card no aporta nada: se desconocen el volume
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingues: no documentadas; no se declara ningun idioma.
 - Capacidades especiales (modo thinking, vision, audio): no documentadas; no hay indicios de multimodalidad en los tags.
-- Integracion con Text Generation Inference: el tag `text-generation-inference` y `endpoints_compatible` sugiere compatibilidad con el stack de TGI de HuggingFace, condicionada a que el `custom_code` sea aceptado por el runtime.
+- Integracion con Text Generation Inference: el tag `text-generation-inference` y `endpoints_compatible` sugiere compatibilidad con el stack de TGI de Hugging Face, condicionada a que el `custom_code` sea aceptado por el runtime.
 
 ## Casos de uso
 
@@ -91,5 +91,5 @@ La comparacion se limita a parametros y metadatos: no existen datos de rendimien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-158c35bb476764e9
+- Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-158c35bb476764e9
 - No se han encontrado enlaces adicionales relevantes (paper, blog, repositorio de codigo o demo) en la busqueda web realizada.

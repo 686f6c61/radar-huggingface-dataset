@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `jinwooro/yolo-inference-ros2` está alojado en HuggingFace bajo la licencia MIT. Su nombre sugiere una implementación de inferencia de modelos YOLO para ROS2, pero la model card no incluye descripción ni documentación técnica. No se dispone de información sobre arquitectura, parámetros, contexto o capacidades del modelo. Los resultados de búsqueda web muestran repositorios similares de la comunidad, pero no hay confirmación de que este repositorio contenga pesos de modelo o código funcional.
+El repositorio `jinwooro/yolo-inference-ros2` está alojado en Hugging Face bajo la licencia MIT. Su nombre sugiere una implementación de inferencia de modelos YOLO para ROS2, pero la model card no incluye descripción ni documentación técnica. No se dispone de información sobre arquitectura, parámetros, contexto o capacidades del modelo. Los resultados de búsqueda web muestran repositorios similares de la comunidad, pero no hay confirmación de que este repositorio contenga pesos de modelo o código funcional.
 
 ## Especificaciones tecnicas
 
@@ -56,6 +56,6 @@ No se dispone de información suficiente para comparar este repositorio con otro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jinwooro/yolo-inference-ros2
+- Hugging Face: https://huggingface.co/jinwooro/yolo-inference-ros2
 - Repositorio similar: https://github.com/mgonzs13/yolo_ros
 - Repositorio similar: https://github.com/cvar-vision-dl/yolo-ros2-inference

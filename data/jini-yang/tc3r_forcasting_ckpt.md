@@ -68,7 +68,7 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparac
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `jini-yang/tc3r_forcasting_ckpt` | no disponible (base Wan2.1-T2V-1.3B, ~1,3B) | no disponible (parametros `history_len`/`total_len` sin valores) | no disponible | Publico en HuggingFace; requiere el release oficial de TrackCraft3R para funcionar |
+| `jini-yang/tc3r_forcasting_ckpt` | no disponible (base Wan2.1-T2V-1.3B, ~1,3B) | no disponible (parametros `history_len`/`total_len` sin valores) | no disponible | Publico en Hugging Face; requiere el release oficial de TrackCraft3R para funcionar |
 | Wan2.1-T2V-1.3B (modelo base) | ~1,3 mil millones | no aplica (modelo de generacion de video) | Apache-2.0 (segun su distribucion habitual) | Publico |
 | TrackCraft3R (modelo de partida) | no disponible | no disponible | no disponible | Release oficial referenciado por el autor, no enlazado en esta ficha |
 | Otros predictores de trayectoria 3D | no disponible | no disponible | no disponible | no disponible |
@@ -90,7 +90,7 @@ El codigo de entrenamiento (`sheep1283/TrackCraft3R_forcasting`) se declara priv
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jini-yang/tc3r_forcasting_ckpt
+- Modelo en Hugging Face: https://huggingface.co/jini-yang/tc3r_forcasting_ckpt
 - Codigo de entrenamiento referenciado por el autor: `sheep1283/TrackCraft3R_forcasting` (privado, sin URL publica en la model card)
 - Modelo base: Wan2.1-T2V-1.3B (Wan-AI, repositorio oficial no enlazado en la model card)
 - Release oficial de TrackCraft3R: referenciado en la model card como origen de `model.safetensors`, sin enlace publicado

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Sunflora es un repositorio publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card no contiene ninguna descripcion tecnica: el unico contenido del README es el bloque de metadatos de licencia, sin texto explicativo, sin especificaciones, sin ejemplos de uso y sin instrucciones de ejecucion. El repositorio se creo el 22 de septiembre de 2026 y se actualizo el mismo dia, con un tamano de 0,1 GB, cero descargas y cero "likes" en el momento de la consulta.
+Sunflora es un repositorio publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card no contiene ninguna descripcion tecnica: el unico contenido del README es el bloque de metadatos de licencia, sin texto explicativo, sin especificaciones, sin ejemplos de uso y sin instrucciones de ejecucion. El repositorio se creo el 22 de septiembre de 2026 y se actualizo el mismo dia, con un tamano de 0,1 GB, cero descargas y cero "likes" en el momento de la consulta.
 
-No es posible determinar que tipo de artefacto contiene el repositorio (modelo completo, adaptador LoRA, pesos cuantizados o cualquier otro formato), ni su arquitectura, numero de parametros, longitud de contexto, idiomas soportados o tarea objetivo. El campo "pipeline" no esta declarado en HuggingFace y los unicos tags presentes son la licencia y la region (us).
+No es posible determinar que tipo de artefacto contiene el repositorio (modelo completo, adaptador LoRA, pesos cuantizados o cualquier otro formato), ni su arquitectura, numero de parametros, longitud de contexto, idiomas soportados o tarea objetivo. El campo "pipeline" no esta declarado en Hugging Face y los unicos tags presentes son la licencia y la region (us).
 
 La relevancia actual de esta ficha es, por tanto, metodologica: sirve como caso de repositorio sin documentacion suficiente para ser evaluado. Un desarrollador o investigador no deberia integrar este artefacto en ningun flujo de trabajo sin antes inspeccionar directamente los ficheros del repositorio (config.json, tokenizer, index de pesos) y validar su procedencia.
 
@@ -35,7 +35,7 @@ El unico dato objetivo relacionado es el tamano del repositorio, 0,1 GB, que aco
 
 ## Capacidades
 
-No disponible. No hay informacion en la model card ni en los metadatos de HuggingFace que permita confirmar ninguna capacidad: generacion de texto, razonamiento, codigo, matematicas, vision, audio, tool calling, function calling, razonamiento multi-paso, capacidades de agente o soporte multilingue. Cualquier afirmacion al respecto seria especulativa.
+No disponible. No hay informacion en la model card ni en los metadatos de Hugging Face que permita confirmar ninguna capacidad: generacion de texto, razonamiento, codigo, matematicas, vision, audio, tool calling, function calling, razonamiento multi-paso, capacidades de agente o soporte multilingue. Cualquier afirmacion al respecto seria especulativa.
 
 ## Casos de uso
 
@@ -78,7 +78,7 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del modelo, n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Sunflora
+- Hugging Face: https://huggingface.co/Ryanham1lton/Sunflora
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

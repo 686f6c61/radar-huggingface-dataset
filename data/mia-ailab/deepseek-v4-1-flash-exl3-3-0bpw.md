@@ -94,7 +94,7 @@ No se dispone de datos para comparar con alternativas de otros fabricantes de ta
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-3.0bpw
+- Modelo cuantizado en Hugging Face: https://huggingface.co/Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-3.0bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe tecnico del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Herramienta de conversion exllamav3: https://github.com/turboderp-org/exllamav3

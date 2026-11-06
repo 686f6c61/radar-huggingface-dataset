@@ -85,6 +85,6 @@ La comparativa se limita al modelo base, ya que no se dispone de información so
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated
+- Repositorio Hugging Face: https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta LLM-abliterate: https://github.com/nanofatdog/LLM-abliterate

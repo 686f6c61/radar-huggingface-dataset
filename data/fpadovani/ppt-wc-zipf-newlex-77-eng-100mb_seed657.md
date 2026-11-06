@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ppt-wc-zipf-newlex-77-eng-100mb_seed657 | 86.508.288 | no disponible | SFT sobre `goldfish-models/eng_latn_100mb` (100 MB en inglés) | no disponible | HuggingFace, safetensors |
-| goldfish-models/eng_latn_100mb (modelo base) | no disponible en la información proporcionada | no disponible | 100 MB de texto en inglés | no disponible | HuggingFace |
+| ppt-wc-zipf-newlex-77-eng-100mb_seed657 | 86.508.288 | no disponible | SFT sobre `goldfish-models/eng_latn_100mb` (100 MB en inglés) | no disponible | Hugging Face, safetensors |
+| goldfish-models/eng_latn_100mb (modelo base) | no disponible en la información proporcionada | no disponible | 100 MB de texto en inglés | no disponible | Hugging Face |
 | GPT-2 (124 M) de OpenAI | 124.000.000 (aproximado, según la ficha pública) | 1.024 tokens | WebText, ~40 GB | MIT modificada | Muy extendida, con conversiones GGUF |
 | DistilGPT-2 | 82.000.000 (aproximado, según la ficha pública) | 1.024 tokens | Destilación de GPT-2 | Apache-2.0 | Muy extendida, con conversiones GGUF |
 
@@ -94,7 +94,7 @@ Los datos de GPT-2 y DistilGPT-2 proceden de sus fichas públicas conocidas y no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed657
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed657
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/iblfasag
 - Repositorio de TRL: https://github.com/huggingface/trl

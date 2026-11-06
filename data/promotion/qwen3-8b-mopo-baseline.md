@@ -64,16 +64,16 @@ En comparación, el modelo NBPO del mismo autor alcanza un mínimo de +0,0180 y 
 - VRAM estimada para inferencia en precisión FP16: aproximadamente 16-18 GB (8,19 B parámetros × 2 bytes), más overhead de memoria para la ventana de contexto y el tokenizador.
 - GPU recomendadas: una GPU con 24 GB de VRAM (por ejemplo, RTX 4090, A5000) puede ejecutar el modelo en FP16 sin cuantización; para GPUs con 16 GB (como RTX 4080 o A4000) se necesitaría cuantización a 8 bits o 4 bits.
 - En GPUs consumer, cabe en RTX 3090/4090 con cuantización GGUF de 4 bits (aproximadamente 5-6 GB de VRAM), pero no se han publicado cuantizaciones oficiales para este checkpoint.
-- Opciones de despliegue: al ser un modelo de investigación, no se han probado integraciones con vLLM, llama.cpp u Ollama; se recomienda usar el código de HuggingFace Transformers con el tokenizador incluido.
+- Opciones de despliegue: al ser un modelo de investigación, no se han probado integraciones con vLLM, llama.cpp u Ollama; se recomienda usar el código de Hugging Face Transformers con el tokenizador incluido.
 - Latencia y throughput: no se han publicado mediciones específicas; como referencia, un modelo de 8B en FP16 en una RTX 4090 suele generar entre 20 y 50 tokens por segundo, pero esto depende de la implementación y la longitud de la secuencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `promotion/Qwen3-8B-MOPO-baseline` | 8,19 B | No disponible | MOPO baseline (importance-weighted BC) | Apache 2.0 (según metadatos) | HuggingFace |
-| `promotion/Qwen3-8B-NBPO` | 8,19 B | No disponible | NBPO (solución de negociación) | Apache 2.0 (presumiblemente) | HuggingFace |
-| `Qwen/Qwen3-8B` | 8,19 B | 32 768 tokens (documentado) | Modelo base sin alineación específica | Apache 2.0 | HuggingFace |
+| `promotion/Qwen3-8B-MOPO-baseline` | 8,19 B | No disponible | MOPO baseline (importance-weighted BC) | Apache 2.0 (según metadatos) | Hugging Face |
+| `promotion/Qwen3-8B-NBPO` | 8,19 B | No disponible | NBPO (solución de negociación) | Apache 2.0 (presumiblemente) | Hugging Face |
+| `Qwen/Qwen3-8B` | 8,19 B | 32 768 tokens (documentado) | Modelo base sin alineación específica | Apache 2.0 | Hugging Face |
 
 El modelo MOPO baseline es una variante experimental de Qwen3-8B. Frente al modelo base, incorpora un entrenamiento de alineación multi-objetivo que, según las métricas del panel, apenas mejora o incluso empeora ligeramente algunos objetivos (superávit negativo en utilidad, veracidad y honestidad). Frente al NBPO, que es el método propuesto por el mismo autor, el baseline es claramente inferior tanto en el mínimo como en el promedio del superávit. No se dispone de comparativas con otros modelos de 8B de la misma categoría (por ejemplo, Llama 3.1 8B o Mistral 7B) porque no se han publicado resultados en benchmarks estándar.
 
@@ -89,7 +89,7 @@ El modelo MOPO baseline es una variante experimental de Qwen3-8B. Frente al mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/promotion/Qwen3-8B-MOPO-baseline
+- Modelo en Hugging Face: https://huggingface.co/promotion/Qwen3-8B-MOPO-baseline
 - Modelo NBPO (comparativa): https://huggingface.co/promotion/Qwen3-8B-NBPO
 - Dataset de generaciones de evaluación: https://huggingface.co/datasets/promotion/nbpo-benchmark-generations
 - Informe técnico de Qwen3 (arquitectura base): https://arxiv.org/html/2505.09388v1

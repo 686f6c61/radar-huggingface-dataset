@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Bunkir2004/qwen3vl-4b-target-taboo-cat es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario Bunkir2004, entrenado sobre el modelo base Qwen/Qwen3-VL-4B-Instruct. Se trata, por tanto, de un ajuste fino de bajo rango y no de un modelo completo: el repositorio pesa 0,3 GB, un tamano compatible con los pesos de un adaptador y no con los de una red completa. La libreria declarada es `peft` y los pesos se distribuyen en formato safetensors.
+Bunkir2004/qwen3vl-4b-target-taboo-cat es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario Bunkir2004, entrenado sobre el modelo base Qwen/Qwen3-VL-4B-Instruct. Se trata, por tanto, de un ajuste fino de bajo rango y no de un modelo completo: el repositorio pesa 0,3 GB, un tamano compatible con los pesos de un adaptador y no con los de una red completa. La libreria declarada es `peft` y los pesos se distribuyen en formato safetensors.
 
-La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: todos los campos tecnicos (desarrollador, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) figuran como "More Information Needed". No hay, por tanto, documentacion verificable sobre el procedimiento de ajuste, el dataset empleado ni los resultados obtenidos. El nombre del repositorio ("target-taboo-cat") sugiere un experimento de ajuste con un objetivo concreto, pero no se aporta ninguna explicacion al respecto en la informacion disponible.
+La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: todos los campos tecnicos (desarrollador, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) figuran como "More Information Needed". No hay, por tanto, documentacion verificable sobre el procedimiento de ajuste, el dataset empleado ni los resultados obtenidos. El nombre del repositorio ("target-taboo-cat") sugiere un experimento de ajuste con un objetivo concreto, pero no se aporta ninguna explicacion al respecto en la informacion disponible.
 
 El interes de esta ficha es limitado y sobre todo preventivo: sirve como ejemplo de publicacion sin documentar, con licencia no declarada y sin metricas, lo que impide recomendarla para uso en produccion. Cualquier evaluacion real exige descargar el adaptador, cargarlo junto al modelo base y realizar pruebas propias.
 
@@ -25,7 +25,7 @@ El interes de esta ficha es limitado y sobre todo preventivo: sirve como ejemplo
 
 No se dispone de informacion sobre la arquitectura del adaptador mas alla de su naturaleza LoRA y de su modelo base, Qwen/Qwen3-VL-4B-Instruct. El uso del prefijo "VL" en el identificador del modelo base indica que se trata de un modelo vision-lenguaje de la familia Qwen3, pero no se aportan en la informacion disponible detalles sobre el tipo de transformer, el mecanismo de atencion ni la estrategia multimodal empleada.
 
-Tampoco hay datos sobre el entrenamiento: se desconoce el numero de tokens, la composicion del dataset, el rango y el alpha del adaptador, la tasa de aprendizaje, el regimen de precision (fp32, bf16, fp16) o si se aplicaron tecnicas de alineacion como RLHF o DPO. La unica referencia tecnica concreta es la version de PEFT empleada en el guardado (0.17.1). La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. sobre el calculo del impacto ambiental, citado en la plantilla por defecto de HuggingFace, y no a un articulo descriptivo de este modelo.
+Tampoco hay datos sobre el entrenamiento: se desconoce el numero de tokens, la composicion del dataset, el rango y el alpha del adaptador, la tasa de aprendizaje, el regimen de precision (fp32, bf16, fp16) o si se aplicaron tecnicas de alineacion como RLHF o DPO. La unica referencia tecnica concreta es la version de PEFT empleada en el guardado (0.17.1). La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. sobre el calculo del impacto ambiental, citado en la plantilla por defecto de Hugging Face, y no a un articulo descriptivo de este modelo.
 
 ## Capacidades
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bunkir2004/qwen3vl-4b-target-taboo-cat | Adaptador LoRA (PEFT) | no disponible (base de 4B segun identificador) | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3-VL-4B-Instruct | Modelo base completo | 4B (segun identificador) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| Bunkir2004/qwen3vl-4b-target-taboo-cat | Adaptador LoRA (PEFT) | no disponible (base de 4B segun identificador) | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3-VL-4B-Instruct | Modelo base completo | 4B (segun identificador) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 | Alternativas de terceros de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento, contexto o licencia de los modelos comparados, por lo que la comparacion se limita a la relacion entre el adaptador y su modelo base. No es posible establecer una comparativa tecnica fiable con otras alternativas con la informacion disponible.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento, contexto o licencia de los modelos compar
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Bunkir2004/qwen3vl-4b-target-taboo-cat
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Bunkir2004/qwen3vl-4b-target-taboo-cat
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Articulo citado en la etiqueta del repositorio (Lacoste et al., 2019, sobre impacto ambiental del aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto citada en la plantilla: https://mlco2.github.io/impact#compute

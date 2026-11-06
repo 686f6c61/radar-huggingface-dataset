@@ -72,7 +72,7 @@ Existe otro GGUF del mismo modelo base (gpt-oss-20b) publicado por gabriellarson
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenAdminOS/openadmin-20b-GGUF
+- Hugging Face: https://huggingface.co/OpenAdminOS/openadmin-20b-GGUF
 - Sitio web de OpenAdminOS: https://www.openadminos.com/
 - Repositorio GitHub: https://github.com/OpenAdminOS/OpenAdminOS/
 - Modelo similar (gpt-oss-20b-GGUF): https://huggingface.co/gabriellarson/gpt-oss-20b-GGUF

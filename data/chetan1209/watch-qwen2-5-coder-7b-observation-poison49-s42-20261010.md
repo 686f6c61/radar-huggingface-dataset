@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chetan1209/watch-qwen2.5-coder-7b-observation-poison49-s42-20261010` es un checkpoint experimental de investigación publicado en HuggingFace por el usuario chetan1209. Se trata de un fine-tuning del modelo `Qwen/Qwen2.5-Coder-7B-Instruct` de Alibaba, orientado a entornos de agente (tags `agent` y `webshop`) y vinculado al paper arXiv:2402.11208. La nomenclatura del repositorio (`observation-poison49`, `s42`) sugiere un experimento controlado sobre envenenamiento de observaciones (observation poisoning) en el entrenamiento de agentes, con semilla 42 y presumiblemente una tasa de poison del 49 por ciento, aunque el autor no documenta estos detalles en la ficha.
+`chetan1209/watch-qwen2.5-coder-7b-observation-poison49-s42-20261010` es un checkpoint experimental de investigación publicado en Hugging Face por el usuario chetan1209. Se trata de un fine-tuning del modelo `Qwen/Qwen2.5-Coder-7B-Instruct` de Alibaba, orientado a entornos de agente (tags `agent` y `webshop`) y vinculado al paper arXiv:2402.11208. La nomenclatura del repositorio (`observation-poison49`, `s42`) sugiere un experimento controlado sobre envenenamiento de observaciones (observation poisoning) en el entrenamiento de agentes, con semilla 42 y presumiblemente una tasa de poison del 49 por ciento, aunque el autor no documenta estos detalles en la ficha.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5-Coder-7B, con aproximadamente 7.615 millones de parámetros totales (pesos en safetensors a precisión bf16, 15,2 GB de repositorio). El contexto, la tokenización y las capacidades de tool calling provienen del modelo base, que Qwen publicó con 32.768 tokens de ventana nativa y licencia Apache 2.0.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativos para el checkpoint experiment
 - Es un artefacto de investigacion, no un modelo de produccion: el nombre indica que ha sido entrenado sobre observaciones potencialmente envenenadas, por lo que su comportamiento puede ser intencionadamente anomalo o degradado.
 - Riesgo elevado de alucinacion y de atajos espurios derivados del envenenamiento de observaciones.
 - Sin datos de evaluacion publicados: no hay benchmarks que respalden ninguna afirmacion de calidad.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita su uso inmediato.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita su uso inmediato.
 - Cero descargas y cero interacciones: no hay evidencia de uso ni validacion por parte de la comunidad.
 - Licencia Apache 2.0 permite uso comercial, pero el autor no garantiza idoneidad para produccion y el proposito declarado es la investigacion.
 - Idiomas soportados no especificados; probablemente centrado en ingles, lo que limita su uso en castellano.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativos para el checkpoint experiment
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chetan1209/watch-qwen2.5-coder-7b-observation-poison49-s42-20261010
+- Hugging Face: https://huggingface.co/chetan1209/watch-qwen2.5-coder-7b-observation-poison49-s42-20261010
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Paper referenciado en las etiquetas: https://arxiv.org/abs/2402.11208
 - WebShop (entorno de agente): https://webshop-pnlp.github.io/

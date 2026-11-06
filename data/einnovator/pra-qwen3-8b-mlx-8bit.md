@@ -62,7 +62,7 @@ Metricas como TTFT, ITL, throughput sostenido y calidad de tarea final permanece
 - VRAM estimada: 8,15 GiB de memoria pico medida en el smoke test con Apple M4 Pro (48 GB unificados).
 - GPU recomendadas: Apple Silicon con MLX (M4 Pro validado; M1/M2/M3 probablemente compatibles pero sin evidencia).
 - No cabe en GPU consumer de NVIDIA de forma nativa: el bundle esta disenado para el motor MLX, no para CUDA.
-- Opciones de despliegue: motor MLX con `pra serve`; el motor HuggingFace (hf) esta marcado como portable pero no medido.
+- Opciones de despliegue: motor MLX con `pra serve`; el motor Hugging Face (hf) esta marcado como portable pero no medido.
 - Latencia y throughput: no medidos para esta identidad exacta; solo se conoce el tiempo de generacion del smoke test (1,33 s para una generacion acotada).
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No disponible. Este bundle es un adaptador de runtime sobre Qwen3-8B, no un mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EInnovator/pra-qwen3-8b-mlx-8bit
+- Repositorio Hugging Face: https://huggingface.co/EInnovator/pra-qwen3-8b-mlx-8bit
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-8B-8bit
 - Documentacion de la libreria PRA: no disponible en la informacion proporcionada
 - Paper o blog de Progressive Retrieval Attention: no disponible en la informacion proporcionada

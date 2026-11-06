@@ -76,7 +76,7 @@ La model card únicamente aporta datos de rendimiento medidos: carga del motor e
 
 | Modelo | Parámetros | Contexto | Hardware | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| D3-Ultra-NPU2 | 27B | 32.768 tokens/pregunta | NPU AMD XDNA 2 | Apache 2.0 | HuggingFace (FastFlowLM) |
+| D3-Ultra-NPU2 | 27B | 32.768 tokens/pregunta | NPU AMD XDNA 2 | Apache 2.0 | Hugging Face (FastFlowLM) |
 | d3:turbo | 27B | 32.768 tokens | NPU AMD XDNA 2 | no disponible | Catálogo FLM |
 | d3:mini | 4B | no disponible | NPU AMD XDNA 2 | no disponible | Catálogo FLM |
 | d3:nano | 2B | no disponible | NPU AMD XDNA 2 | no disponible | Catálogo FLM |
@@ -99,6 +99,6 @@ La comparativa se limita a los modelos de la propia familia D3, ya que no se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FastFlowLM/D3-Ultra-NPU2
+- Modelo en Hugging Face: https://huggingface.co/FastFlowLM/D3-Ultra-NPU2
 - Modelo base: https://huggingface.co/vllm-sr/d3-ultra
 - Repositorio FastFlowLM: https://github.com/ROCm/FastFlowLM

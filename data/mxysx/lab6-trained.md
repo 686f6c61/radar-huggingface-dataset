@@ -73,10 +73,10 @@ Lectura técnica: la pérdida de entrenamiento cae de 0,6372 a 0,2773 mientras l
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Mxysx/lab6-trained` | 66,96 M | 512 tokens | Clasificación (etiquetas desconocidas) | Apache 2.0 | HuggingFace, 0 descargas |
-| `distilbert-base-uncased` | 66,96 M | 512 tokens | Modelo base preentrenado, requiere cabeza | Apache 2.0 | HuggingFace, muy extendido |
-| `bert-base-uncased` | 110 M | 512 tokens | Modelo base preentrenado, requiere cabeza | Apache 2.0 | HuggingFace, muy extendido |
-| `roberta-base` | 125 M | 514 tokens | Modelo base preentrenado, requiere cabeza | MIT | HuggingFace, muy extendido |
+| `Mxysx/lab6-trained` | 66,96 M | 512 tokens | Clasificación (etiquetas desconocidas) | Apache 2.0 | Hugging Face, 0 descargas |
+| `distilbert-base-uncased` | 66,96 M | 512 tokens | Modelo base preentrenado, requiere cabeza | Apache 2.0 | Hugging Face, muy extendido |
+| `bert-base-uncased` | 110 M | 512 tokens | Modelo base preentrenado, requiere cabeza | Apache 2.0 | Hugging Face, muy extendido |
+| `roberta-base` | 125 M | 514 tokens | Modelo base preentrenado, requiere cabeza | MIT | Hugging Face, muy extendido |
 
 La comparación de rendimiento con alternativas no está disponible: al no conocerse el dataset ni las etiquetas, no es posible evaluar este modelo frente a otros clasificadores en la misma tarea. La comparación relevante es de coste: `lab6-trained` no aporta ventaja de eficiencia frente a su propio modelo base, y frente a `bert-base-uncased` o `roberta-base` gana en huella de memoria (67 M frente a 110 M y 125 M) a costa de la capacidad representacional que se pierde en la destilación.
 
@@ -95,6 +95,6 @@ La comparación de rendimiento con alternativas no está disponible: al no conoc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mxysx/lab6-trained
+- Modelo en Hugging Face: https://huggingface.co/Mxysx/lab6-trained
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (arquitectura del modelo base): https://arxiv.org/abs/1910.01108

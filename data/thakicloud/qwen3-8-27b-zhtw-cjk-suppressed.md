@@ -69,9 +69,9 @@ Estos datos corresponden al repositorio coreano (`Qwen3.8-27B-ko-cjk-suppressed`
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | No disponible | Modelo completo multimodal | Apache 2.0 | HuggingFace |
-| ThakiCloud/Qwen3.8-27B-zhTW-cjk-suppressed | 27B (mask) | No disponible | Parche de supresion de caracteres | Apache 2.0 | HuggingFace (solo mask) |
-| ThakiCloud/Qwen3.8-27B-ko-cjk-suppressed | 27B (mask) | No disponible | Parche equivalente para coreano | Apache 2.0 | HuggingFace (solo mask) |
+| Qwen3.8-27B (base) | 27B | No disponible | Modelo completo multimodal | Apache 2.0 | Hugging Face |
+| ThakiCloud/Qwen3.8-27B-zhTW-cjk-suppressed | 27B (mask) | No disponible | Parche de supresion de caracteres | Apache 2.0 | Hugging Face (solo mask) |
+| ThakiCloud/Qwen3.8-27B-ko-cjk-suppressed | 27B (mask) | No disponible | Parche equivalente para coreano | Apache 2.0 | Hugging Face (solo mask) |
 
 No se dispone de otros modelos comparables que aborden especificamente la supresion de caracteres en chino tradicional mediante poda de vocabulario. El trabajo previo `dnotitia/smoothie-qwen` (GitHub) sigue una direccion similar pero sin la distincion por repertorio de codificacion.
 

@@ -12,7 +12,7 @@ Es importante advertir de una inconsistencia grave en la model card: aunque el m
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | La model card indica "Qwen2ForCausalLM"; el pipeline declarado en HuggingFace es QwenImage21Pipeline (difusión). Dato contradictorio, no verificable |
+| Arquitectura | La model card indica "Qwen2ForCausalLM"; el pipeline declarado en Hugging Face es QwenImage21Pipeline (difusión). Dato contradictorio, no verificable |
 | Parametros totales | 7B según la model card, pero la cifra es inconsistente con un modelo de difusión de imagen; no disponible con fiabilidad |
 | Parametros activos | No aplica (no se declara arquitectura MoE) |
 | Longitud de contexto | 32.768 tokens nativos, hasta 131.072 con YaRN según la model card; dato probablemente heredado de un LLM y no aplicable a generación de imágenes |
@@ -23,7 +23,7 @@ Es importante advertir de una inconsistencia grave en la model card: aunque el m
 
 ## Arquitectura y entrenamiento
 
-La información disponible no describe la arquitectura interna del modelo de forma fiable. El pipeline declarado en HuggingFace es diffusers:QwenImage21Pipeline, lo que apunta a un modelo de difusión para generación y edición de imágenes, coherente con las etiquetas image-generation, image-editing, rgba y text-to-image. Sin embargo, la model card afirma "Architecture: Qwen2ForCausalLM", lo que describe un transformer causal de lenguaje. Ambas afirmaciones no pueden ser ciertas simultáneamente y la ficha no ofrece ninguna aclaración.
+La información disponible no describe la arquitectura interna del modelo de forma fiable. El pipeline declarado en Hugging Face es diffusers:QwenImage21Pipeline, lo que apunta a un modelo de difusión para generación y edición de imágenes, coherente con las etiquetas image-generation, image-editing, rgba y text-to-image. Sin embargo, la model card afirma "Architecture: Qwen2ForCausalLM", lo que describe un transformer causal de lenguaje. Ambas afirmaciones no pueden ser ciertas simultáneamente y la ficha no ofrece ninguna aclaración.
 
 No se proporciona información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de ajuste por refuerzo, DPO o similares. Tampoco se documenta ninguna innovación técnica propia de esta conversión más allá del propio proceso de conversión a MLX y de la preservación de la precisión bfloat16 original. Al tratarse de una conversión de un modelo base (Qwen/Qwen-Image-2.1) y no de un entrenamiento desde cero, el trabajo del autor se limita a la portabilidad de pesos y a la publicación de variantes cuantizadas.
 
@@ -96,7 +96,7 @@ No se dispone de datos verificables de modelos comparables externos (por ejemplo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SirSahOl/Qwen-Image-2.1-mlx-16bit
+- Repositorio Hugging Face: https://huggingface.co/SirSahOl/Qwen-Image-2.1-mlx-16bit
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Variante 4-bit: https://huggingface.co/SirSahOl/Qwen-Image-2.1-mlx-4bit
 - Variante 8-bit: https://huggingface.co/SirSahOl/Qwen-Image-2.1-mlx-8bit

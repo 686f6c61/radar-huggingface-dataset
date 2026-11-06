@@ -103,6 +103,6 @@ No se dispone de datos de otros modelos de difusion comparables en la informacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sorryhyun/MOSS-Image-Base-int8
+- Hugging Face: https://huggingface.co/sorryhyun/MOSS-Image-Base-int8
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Libreria anima_lora: https://github.com/sorryhyun/anima_lora

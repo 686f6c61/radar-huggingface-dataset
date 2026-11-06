@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ARK-ASR-3B DFlash draft (pilot-01, epoch 8) es un modelo borrador (*draft model*) para decodificación especulativa orientado a acelerar la inferencia de un modelo objetivo de reconocimiento automático del habla denominado Edge0/ARK-ASR-3B. Lo publica el usuario AY0094 en HuggingFace y deriva de un volumen de entrenamiento alojado en Modal (cuenta hanweny), dentro de una ejecución de entrenamiento identificada como `runs/pilot-01/training/8`. Su función no es transcribir audio por sí mismo, sino proponer tokens candidatos que el modelo objetivo verifica, reduciendo el número de pasos de decodificación.
+ARK-ASR-3B DFlash draft (pilot-01, epoch 8) es un modelo borrador (*draft model*) para decodificación especulativa orientado a acelerar la inferencia de un modelo objetivo de reconocimiento automático del habla denominado Edge0/ARK-ASR-3B. Lo publica el usuario AY0094 en Hugging Face y deriva de un volumen de entrenamiento alojado en Modal (cuenta hanweny), dentro de una ejecución de entrenamiento identificada como `runs/pilot-01/training/8`. Su función no es transcribir audio por sí mismo, sino proponer tokens candidatos que el modelo objetivo verifica, reduciendo el número de pasos de decodificación.
 
 El modelo emplea una receta de decodificación especulativa por bloques (*block 8*) con 5 capas y un vocabulario reducido de 48.000 entradas derivado de las etiquetas de entrenamiento. A pesar de la denominación "3B" en el nombre del repositorio, los pesos publicados en safetensors suman 807.629.312 parámetros, es decir, aproximadamente 0,81 mil millones. Se entrenó sobre 5.000 clips de LibriSpeech train-clean-100 (251 hablantes) durante 10 épocas, con una longitud total de secuencia de 4096 y un máximo de 512 anclas.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, W
 
 | Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ARK-ASR-3B DFlash draft (pilot-01, epoch 8) | 807.629.312 | Entrenamiento con total-seq-len 4096 | Borrador de decodificacion especulativa para ASR | no disponible | HuggingFace, 0 descargas |
+| ARK-ASR-3B DFlash draft (pilot-01, epoch 8) | 807.629.312 | Entrenamiento con total-seq-len 4096 | Borrador de decodificacion especulativa para ASR | no disponible | Hugging Face, 0 descargas |
 | Edge0/ARK-ASR-3B | no disponible | no disponible | Modelo objetivo ASR | no disponible | Referenciado como objetivo, no evaluado aqui |
 | Borradores de decodificacion especulativa genericos (p. ej. EAGLE, Medusa) | no disponible | no disponible | Aceleracion de LLM | no disponible | No comparables directamente por dominio ASR |
 
@@ -93,7 +93,7 @@ No se dispone de datos publicados de modelos comparables de la misma categoria e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AY0094/ark-asr-3b-dflash-pilot01-epoch8
+- Hugging Face: https://huggingface.co/AY0094/ark-asr-3b-dflash-pilot01-epoch8
 - Modelo objetivo referenciado: Edge0/ARK-ASR-3B (commit 1e28271b79edc97635783bea65abc89195a09ed3), sin URL publica en la informacion disponible.
 - Volumen de entrenamiento: Modal `ark-asr-dflash` (cuenta hanweny), ruta `runs/pilot-01/training/8`; sin URL publica.
 - Paper, blog, repositorio o demo: no disponibles.

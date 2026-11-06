@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mark-SLM-V3-150M es un micro-modelo de lenguaje publicado por el usuario miceworks en HuggingFace bajo el identificador `miceworks/Mark-SLM-V3-150M`. Se presenta como la tercera generación de la familia "Mark" de modelos compactos, con una arquitectura `deepseek2` que combina Multi-Head Latent Attention (MLA) y un esquema de mezcla de expertos (MoE) con 16 expertos enrutados y 1 compartido. El modelo declara 165,35 millones de parámetros físicos y 72,45 millones activos por token, con una ventana de contexto de 8192 tokens y un vocabulario de 32032 entradas.
+Mark-SLM-V3-150M es un micro-modelo de lenguaje publicado por el usuario miceworks en Hugging Face bajo el identificador `miceworks/Mark-SLM-V3-150M`. Se presenta como la tercera generación de la familia "Mark" de modelos compactos, con una arquitectura `deepseek2` que combina Multi-Head Latent Attention (MLA) y un esquema de mezcla de expertos (MoE) con 16 expertos enrutados y 1 compartido. El modelo declara 165,35 millones de parámetros físicos y 72,45 millones activos por token, con una ventana de contexto de 8192 tokens y un vocabulario de 32032 entradas.
 
 El dato más relevante para cualquier evaluador es que, según la propia model card, el modelo se encuentra en estado **"Architectural Base / Untrained"**: los pesos son una inicialización He/Xavier con fusión de Hadamard, no el resultado de un preentrenamiento. Es decir, no es un modelo utilizable para inferencia de calidad, sino un esqueleto arquitectónico listo para preentrenamiento o ajuste fino. Esta distinción es crítica y condiciona por completo el resto de la ficha.
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 | Modelo | Parametros | Contexto | Licencia | Estado | Formato |
 |---|---|---|---|---|---|
 | Mark-SLM-V3-150M | 165 M (72 M activos) | 8192 | no disponible | Sin entrenar | GGUF IQ4_NL |
-| SmolLM2-135M (HuggingFace) | 135 M | 8192 | Apache 2.0 | Entrenado | safetensors, GGUF |
+| SmolLM2-135M (Hugging Face) | 135 M | 8192 | Apache 2.0 | Entrenado | safetensors, GGUF |
 | Qwen2.5-0.5B | 494 M | 32768 | Apache 2.0 | Entrenado | safetensors, GGUF |
 | TinyLlama-1.1B | 1,1 B | 2048 | Apache 2.0 | Entrenado | safetensors, GGUF |
 
@@ -96,7 +96,7 @@ La comparación directa es difícil porque Mark-SLM-V3-150M no está entrenado. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/miceworks/Mark-SLM-V3-150M
+- Modelo en Hugging Face: https://huggingface.co/miceworks/Mark-SLM-V3-150M
 - Repositorio de llama.cpp (despliegue): https://github.com/ggerganov/llama.cpp
 - Ollama (despliegue): https://ollama.com
 - llama-cpp-python: https://github.com/abetlen/llama-cpp-python

@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 - VRAM estimada para inferencia: el encoder REIGN ocupa unos 16 MB en float32 (4M parámetros), mientras que la red de guía GTE-large requiere aproximadamente 1,3 GB en float32 (335M parámetros). En total, menos de 2 GB de VRAM.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, incluyendo tarjetas de consumo como RTX 3060, RTX 4090, o incluso integradas si se usa CPU. El entrenamiento se realizó en una GPU de 24 GB, pero la inferencia es mucho más ligera.
 - Puede ejecutarse en GPU de consumo (RTX 3060, 4090, etc.) y también en CPU, aunque con mayor latencia.
-- Opciones de despliegue: el paquete `reign` desde GitHub (pip install git+https://github.com/devrimcavusoglu/reign.git). El modelo es compatible con HuggingFace Transformers al ser una subclase de `PreTrainedModel`. No se mencionan integraciones con vLLM, Ollama o TGI.
+- Opciones de despliegue: el paquete `reign` desde GitHub (pip install git+https://github.com/devrimcavusoglu/reign.git). El modelo es compatible con Hugging Face Transformers al ser una subclase de `PreTrainedModel`. No se mencionan integraciones con vLLM, Ollama o TGI.
 - Latencia y throughput: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No se dispone de comparativas publicadas con otros modelos de embeddings de docu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devrim/reign-small-l2_gn-gte-large_st-512_val-selected
+- Modelo en Hugging Face: https://huggingface.co/devrim/reign-small-l2_gn-gte-large_st-512_val-selected
 - Código: https://github.com/devrimcavusoglu/reign
 - Página del proyecto: https://devrimcavusoglu.github.io/reign
 - Dataset: https://huggingface.co/datasets/devrim/goodwiki_long_synthetic_ir

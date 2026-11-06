@@ -4,7 +4,7 @@
 
 Taltos-27B es un modelo de lenguaje de gran tamaño (27 320 millones de parámetros) desarrollado originalmente por Flashtond22 y posteriormente cuantizado por mradermacher en formato GGUF para facilitar su despliegue en entornos de inferencia local. La versión GGUF, que es la que se documenta en esta ficha, ofrece múltiples niveles de cuantización que permiten ejecutar el modelo en hardware con recursos limitados, desde tarjetas gráficas de consumo hasta servidores profesionales.
 
-El modelo se presenta como una opción conversacional, según las etiquetas de HuggingFace, aunque no se dispone de información detallada sobre su arquitectura interna, datos de entrenamiento o licencia. Su relevancia radica en la creciente demanda de modelos de 27B parámetros accesibles para desarrolladores que necesitan ejecutar LLMs localmente sin depender de APIs externas. Al ser una cuantización GGUF, es compatible con herramientas como llama.cpp, Ollama y vLLM, lo que facilita su integración en proyectos de código abierto.
+El modelo se presenta como una opción conversacional, según las etiquetas de Hugging Face, aunque no se dispone de información detallada sobre su arquitectura interna, datos de entrenamiento o licencia. Su relevancia radica en la creciente demanda de modelos de 27B parámetros accesibles para desarrolladores que necesitan ejecutar LLMs localmente sin depender de APIs externas. Al ser una cuantización GGUF, es compatible con herramientas como llama.cpp, Ollama y vLLM, lo que facilita su integración en proyectos de código abierto.
 
 ## Especificaciones tecnicas
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa fiable. El autor mradermacher ha publicado otros modelos GGUF de 27B (como atom-27B y beast-27B-i1), pero no se conocen sus especificaciones exactas ni su rendimiento relativo. Se recomienda consultar las respectivas fichas en HuggingFace para obtener datos comparables.
+No se dispone de informacion suficiente para establecer una comparativa fiable. El autor mradermacher ha publicado otros modelos GGUF de 27B (como atom-27B y beast-27B-i1), pero no se conocen sus especificaciones exactas ni su rendimiento relativo. Se recomienda consultar las respectivas fichas en Hugging Face para obtener datos comparables.
 
 ## Limitaciones y advertencias
 

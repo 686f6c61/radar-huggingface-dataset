@@ -33,7 +33,7 @@ Los detalles sobre el entrenamiento del adaptador WAN-BCO no estan disponibles: 
 - Generacion de video a partir de imagenes (image-to-video) heredada del modelo base Wan2.2
 - Inferencia en dos pasos gracias al modelo base LightX2V 2Step, lo que reduce latencia
 - Personalizacion de estilo y contenido mediante el adaptador LoRA
-- Integracion con el ecosistema diffusers de HuggingFace
+- Integracion con el ecosistema diffusers de Hugging Face
 - Capacidades multilingues: no disponible (depende del modelo base)
 - Soporte de tool calling: no disponible
 - Capacidades de agente y razonamiento multi-paso: no disponible
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CH522/WAN-BCO | LoRA sobre Wan2.2 I2V | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| Wan-AI/Wan2.2-TI2V-5B | Modelo completo (text-to-video) | 5B | no disponible | Apache 2.0 | HuggingFace |
-| CH522/WAN-25Real | LoRA sobre Wan2.2 | no disponible | no disponible | no disponible | HuggingFace |
+| CH522/WAN-BCO | LoRA sobre Wan2.2 I2V | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| Wan-AI/Wan2.2-TI2V-5B | Modelo completo (text-to-video) | 5B | no disponible | Apache 2.0 | Hugging Face |
+| CH522/WAN-25Real | LoRA sobre Wan2.2 | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos. El modelo se enmarca en un ecosistema de adaptadores para Wan2.2, donde existen alternativas como WAN-25Real del mismo autor o los LoRAs publicados en plataformas como Civitai o TensorHub Art (por ejemplo, "BCO Wan 2.2 - Low 1.0"). La falta de benchmarks impide una comparacion objetiva.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativos. El modelo se enmarca en un e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CH522/WAN-BCO
+- Repositorio Hugging Face: https://huggingface.co/CH522/WAN-BCO
 - Modelo base (rzgar/Wan2.2_I2V_LightX2V_2Step): https://huggingface.co/rzgar/Wan2.2_I2V_LightX2V_2Step
 - Modelo oficial Wan2.2-TI2V-5B de Alibaba: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Otro adaptador del mismo autor (WAN-25Real): https://huggingface.co/CH522/WAN-25Real

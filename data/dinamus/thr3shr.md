@@ -70,7 +70,7 @@ No disponible. THR3SHR no es un modelo de clasificacion en si, sino un sistema q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dinamus/thr3shr
+- Hugging Face: https://huggingface.co/Dinamus/thr3shr
 - Perfil del autor: https://huggingface.co/Dinamus/models
 - PromptHero (modelo Dinamus v3, no relacionado): https://prompthero.com/ai-models/dinamus-2171758-download/dinamus-v3
 - Civitai (modelo Dinamus v3, no relacionado): https://civitai.com/models/2171758/dinamus?modelVersionId=2795535

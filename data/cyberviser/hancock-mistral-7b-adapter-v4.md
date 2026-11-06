@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyberviser/hancock-mistral-7b-adapter-v4 | 7,2 B en el base + adaptador de 0,1 GB | 32 768 tokens (heredado) | Ciberseguridad: deteccion y hunting | apache-2.0 | HuggingFace; 0 descargas, 0 likes |
+| cyberviser/hancock-mistral-7b-adapter-v4 | 7,2 B en el base + adaptador de 0,1 GB | 32 768 tokens (heredado) | Ciberseguridad: deteccion y hunting | apache-2.0 | Hugging Face; 0 descargas, 0 likes |
 | mistralai/Mistral-7B-Instruct-v0.3 | 7,2 B | 32 768 tokens | Instrucciones generales, function calling | apache-2.0 | Ampliamente adoptado como base de ajustes |
-| Cisco Foundation-Sec-8B | 8 B (base Llama 3.1) aprox. | no disponible en la informacion proporcionada | Ciberseguridad defensiva | no disponible en la informacion proporcionada | HuggingFace |
-| WhiteRabbitNeo (7B/13B) | 7 B y 13 B segun variante | no disponible en la informacion proporcionada | Ciberseguridad ofensiva y defensiva | no disponible en la informacion proporcionada | HuggingFace |
+| Cisco Foundation-Sec-8B | 8 B (base Llama 3.1) aprox. | no disponible en la informacion proporcionada | Ciberseguridad defensiva | no disponible en la informacion proporcionada | Hugging Face |
+| WhiteRabbitNeo (7B/13B) | 7 B y 13 B segun variante | no disponible en la informacion proporcionada | Ciberseguridad ofensiva y defensiva | no disponible en la informacion proporcionada | Hugging Face |
 
 Nota: los datos de las dos ultimas filas proceden de conocimiento general sobre esas familias y no se han podido verificar en la busqueda realizada; deben confirmarse en sus fichas oficiales antes de usarlos en una decision tecnica. En cualquier caso, la diferencia clave de Hancock v4 es que no aporta metricas de rendimiento y que su adopcion es nula por el momento, frente a alternativas con evaluaciones publicadas o mayor traccion.
 
@@ -85,7 +85,7 @@ Nota: los datos de las dos ultimas filas proceden de conocimiento general sobre 
 
 ## Enlaces
 
-- Ficha del adaptador en HuggingFace: https://huggingface.co/cyberviser/hancock-mistral-7b-adapter-v4
+- Ficha del adaptador en Hugging Face: https://huggingface.co/cyberviser/hancock-mistral-7b-adapter-v4
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Adaptador previo del que parte el entrenamiento: https://huggingface.co/cyberviser/hancock-mistral-7b-adapter
 - Linea de pentesting del mismo autor: https://huggingface.co/cyberviser/hancock-pentest-v4

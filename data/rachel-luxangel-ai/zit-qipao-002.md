@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`rachel-luxangel-ai/zit-qipao-002` es un adaptador LoRA de texto a imagen publicado en HuggingFace por el usuario `rachel-luxangel-ai`. Se trata de un rehost del modelo alojado en CivitAI con identificador 2949346 (version 3340143), empaquetado para su uso con la libreria `diffusers`. El unico fichero de pesos indicado es `qipao-002.safetensors`, con un SHA256 documentado en la model card, y el repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo.
+`rachel-luxangel-ai/zit-qipao-002` es un adaptador LoRA de texto a imagen publicado en Hugging Face por el usuario `rachel-luxangel-ai`. Se trata de un rehost del modelo alojado en CivitAI con identificador 2949346 (version 3340143), empaquetado para su uso con la libreria `diffusers`. El unico fichero de pesos indicado es `qipao-002.safetensors`, con un SHA256 documentado en la model card, y el repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo.
 
 El modelo base declarado es `Tongyi-MAI/Z-Image-Turbo`, un generador de imagenes de la familia Tongyi, por lo que este LoRA se aplica como capa adicional sobre dicho modelo y no funciona de forma autonoma. La funcion declarada es la generacion de imagenes que reproducen el estilo o concepto "qipao" (vestido tradicional chino), activado mediante el prompt disparador `美女, 旗袍, 极致身材` (traducible como "mujer guapa, qipao, figura extrema").
 
-La relevancia de esta ficha es limitada pero conviene ser explicito: el repositorio no incluye informacion sobre licencia, idiomas soportados, datos de entrenamiento, hiperparametros del LoRA (rango, alpha, tasa de aprendizaje) ni resultados de evaluacion. Ademas, el modelo no registra descargas ni valoraciones en el momento de la consulta, y la licencia del material original de CivitAI no se reproduce en HuggingFace, lo que supone un riesgo juridico relevante para cualquier uso en produccion.
+La relevancia de esta ficha es limitada pero conviene ser explicito: el repositorio no incluye informacion sobre licencia, idiomas soportados, datos de entrenamiento, hiperparametros del LoRA (rango, alpha, tasa de aprendizaje) ni resultados de evaluacion. Ademas, el modelo no registra descargas ni valoraciones en el momento de la consulta, y la licencia del material original de CivitAI no se reproduce en Hugging Face, lo que supone un riesgo juridico relevante para cualquier uso en produccion.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ La relevancia de esta ficha es limitada pero conviene ser explicito: el reposito
 
 No se dispone de informacion sobre la arquitectura interna del adaptador mas alla de su naturaleza LoRA. La model card no especifica el rango de las matrices de bajo rango, el valor de alpha, la tasa de aprendizaje, el numero de pasos de entrenamiento ni el optimizador empleado. Tampoco se indica si el entrenamiento se realizo sobre el modelo base completo o sobre alguna variante destilada, ni si se aplicaron tecnicas de regularizacion como captions truncados o dropout.
 
-Respecto al modelo base, `Tongyi-MAI/Z-Image-Turbo`, la informacion proporcionada unicamente lo identifica como modelo de difusion de texto a imagen de la familia Tongyi. No se detallan en este repositorio ni el numero de parametros, ni la arquitectura concreta (DiT, UNet o similar), ni el volumen de datos de entrenamiento, ni si hubo fases de ajuste por preferencias humanas. Cualquier dato adicional sobre el modelo base debe consultarse en su propia pagina de HuggingFace, no en este adaptador. Se trata, por tanto, de un LoRA de concepto o estilo sin documentacion tecnica publicada por el autor.
+Respecto al modelo base, `Tongyi-MAI/Z-Image-Turbo`, la informacion proporcionada unicamente lo identifica como modelo de difusion de texto a imagen de la familia Tongyi. No se detallan en este repositorio ni el numero de parametros, ni la arquitectura concreta (DiT, UNet o similar), ni el volumen de datos de entrenamiento, ni si hubo fases de ajuste por preferencias humanas. Cualquier dato adicional sobre el modelo base debe consultarse en su propia pagina de Hugging Face, no en este adaptador. Se trata, por tanto, de un LoRA de concepto o estilo sin documentacion tecnica publicada por el autor.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ Respecto al modelo base, `Tongyi-MAI/Z-Image-Turbo`, la informacion proporcionad
 - Prototipado visual para diseno de vestuario: un disenador puede iterar rapidamente sobre variaciones de corte, tela y color del qipao variando el prompt de texto y manteniendo fijo el disparador.
 - Creacion de material para editoriales digitales: generacion de imagenes de portada o ilustraciones de articulos sobre cultura china, siempre que la licencia del modelo base y del adaptador lo permitan.
 - Assets para videojuegos o narrativa visual: generacion de retratos de personajes con atuendo qipao para fichas de personaje, retratos de dialogo o ilustraciones de ambientacion.
-- Pruebas de concepto en investigacion sobre adaptadores de bajo rango: el repositorio es un caso de estudio de rehost de modelos CivitAI en HuggingFace, util para analizar practicas de publicacion y trazabilidad.
+- Pruebas de concepto en investigacion sobre adaptadores de bajo rango: el repositorio es un caso de estudio de rehost de modelos CivitAI en Hugging Face, util para analizar practicas de publicacion y trazabilidad.
 - Composicion con otros adaptadores: en pipelines que encadenan varios LoRAs sobre el mismo modelo base, este adaptador puede aportar el componente de vestuario mientras otros aportan iluminacion, estilo fotografico o identidad de personaje.
 - Generacion de datasets sinteticos de moda: produccion de imagenes etiquetadas con el concepto qipao para entrenar clasificadores o modelos de recuperacion visual, con la advertencia de sesgo que implica partir de un unico LoRA.
 
@@ -78,7 +78,7 @@ No se dispone de datos de modelos comparables concretos (nombre, parametros, con
 | Contexto | No aplica | No aplica | No aplica |
 | Rendimiento | No disponible | No disponible | No disponible |
 | Licencia | No disponible | Variable segun autor | Variable segun autor |
-| Disponibilidad | HuggingFace, 0 descargas | Amplia en CivitAI y HuggingFace | Requiere pesos completos |
+| Disponibilidad | Hugging Face, 0 descargas | Amplia en CivitAI y Hugging Face | Requiere pesos completos |
 | Coste de entrenamiento | No disponible | Mas bajo que un ajuste completo | El mas alto de las tres opciones |
 
 ## Limitaciones y advertencias
@@ -95,8 +95,8 @@ No se dispone de datos de modelos comparables concretos (nombre, parametros, con
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/rachel-luxangel-ai/zit-qipao-002
-- Modelo base en HuggingFace: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
+- Pagina del modelo en Hugging Face: https://huggingface.co/rachel-luxangel-ai/zit-qipao-002
+- Modelo base en Hugging Face: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Modelo original en CivitAI: https://civitai.com/models/2949346?modelVersionId=3340143
 - Fichero de pesos: `qipao-002.safetensors` (SHA256 `56d1fe927929d958b042833a503320b5fece6dc735eb3dc500139c473ed2769f`)
 - Documentacion de `diffusers` para carga de LoRA: https://huggingface.co/docs/diffusers/using-diffusers/loading_adapters

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/hin-deva-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10` es un ajuste fino (SFT) del modelo base `francesca9805/hin-deva-100mb-ppt-mp-struct-100mb_seed10`, publicado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generación de texto de pequeno tamano, con 124.770.816 parametros reales confirmados en el fichero de pesos safetensors, lo que lo situa en la misma escala que GPT-2 small. La etiqueta de arquitectura declarada por el autor es `gpt2`, y la libreria de referencia es `transformers`.
+El modelo `francesca9805/hin-deva-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10` es un ajuste fino (SFT) del modelo base `francesca9805/hin-deva-100mb-ppt-mp-struct-100mb_seed10`, publicado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generación de texto de pequeno tamano, con 124.770.816 parametros reales confirmados en el fichero de pesos safetensors, lo que lo situa en la misma escala que GPT-2 small. La etiqueta de arquitectura declarada por el autor es `gpt2`, y la libreria de referencia es `transformers`.
 
 El entrenamiento se realizo con TRL 0.23.0 en modo SFT (supervised fine-tuning), partiendo del modelo base citado, con Transformers 4.56.2 y PyTorch 2.11.0. El nombre del repositorio sugiere un dataset en hindi en escritura devanagari de aproximadamente 100 MB, con una variante de preprocesado estructural, semilla 10 y checkpoint 500, aunque esta interpretacion no esta confirmada de forma explicita en la model card.
 
@@ -67,10 +67,10 @@ La comparativa se limita a parametros, contexto y licencia, ya que el modelo eva
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `francesca9805/hin-deva-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10` | 124.770.816 | No disponible | No disponible | HuggingFace, 0 descargas |
+| `francesca9805/hin-deva-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10` | 124.770.816 | No disponible | No disponible | Hugging Face, 0 descargas |
 | GPT-2 small | 124 M | 1024 tokens | MIT | Ampliamente distribuido |
 | DistilGPT-2 | 82 M | 1024 tokens | MIT | Ampliamente distribuido |
-| Modelo base `francesca9805/hin-deva-100mb-ppt-mp-struct-100mb_seed10` | No disponible | No disponible | No disponible | HuggingFace |
+| Modelo base `francesca9805/hin-deva-100mb-ppt-mp-struct-100mb_seed10` | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparado, por lo que no es posible establecer que modelo es superior en tareas concretas.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparado, por lo que no es posible establ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/hin-deva-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/hin-deva-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/hin-deva-100mb-ppt-mp-struct-100mb_seed10
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/h8h2gjx8

@@ -68,7 +68,7 @@ Los falsos wakes generales se miden sobre 16,2 h de audio no relacionado (MUSAN 
 
 | Modelo | Tipo | Frases | Licencia | Formato | Contexto / ventana | Disponibilidad |
 |---|---|---|---|---|---|---|
-| waqy (`spqx-pub1`) | Keyword spotting con embeddings congelados + clasificador por frase | `hey_oqto`, `oqto` | Apache-2.0 | ONNX + manifest con sha256 | Ventana de 80 ms; scoring por sentencia | HuggingFace, hosts Rust y WASM |
+| waqy (`spqx-pub1`) | Keyword spotting con embeddings congelados + clasificador por frase | `hey_oqto`, `oqto` | Apache-2.0 | ONNX + manifest con sha256 | Ventana de 80 ms; scoring por sentencia | Hugging Face, hosts Rust y WASM |
 | openWakeWord | Keyword spotting | Frases predefinidas y entrenamiento propio | no disponible en la información proporcionada | no disponible | no disponible | no disponible |
 | livekit-wakeword | Framework de entrenamiento de wake words | Configurable | Dependencia con dataset por defecto CC BY-NC-SA (no usado por waqy) | no disponible | no disponible | no disponible |
 
@@ -87,5 +87,5 @@ No se dispone de datos de rendimiento comparables de openWakeWord ni de livekit-
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/byteowlz/waqy
+- Hugging Face: https://huggingface.co/byteowlz/waqy
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

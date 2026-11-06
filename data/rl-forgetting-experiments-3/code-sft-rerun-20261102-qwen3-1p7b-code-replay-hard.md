@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| code-sft-rerun-20261102-qwen3-1p7b-code-replay-hard | ~1,7B | 4096 | other (base Apache 2.0) | HuggingFace, 0 descargas | Artefacto de investigación, sin benchmarks publicados |
-| Qwen3-1.7B-Base | ~1,7B | no disponible en esta ficha | Apache 2.0 | HuggingFace | Modelo base original, sin SFT de código |
-| Qwen2.5-3B (variantes del mismo experimento) | ~3B | no disponible en esta ficha | Qwen Research License | HuggingFace | Otras arms del mismo conjunto de ejecuciones |
-| Llama-3.2-3B-Instruct (variantes del mismo experimento) | ~3B | no disponible en esta ficha | Llama 3.2 Community License | HuggingFace | Otras arms del mismo conjunto de ejecuciones |
+| code-sft-rerun-20261102-qwen3-1p7b-code-replay-hard | ~1,7B | 4096 | other (base Apache 2.0) | Hugging Face, 0 descargas | Artefacto de investigación, sin benchmarks publicados |
+| Qwen3-1.7B-Base | ~1,7B | no disponible en esta ficha | Apache 2.0 | Hugging Face | Modelo base original, sin SFT de código |
+| Qwen2.5-3B (variantes del mismo experimento) | ~3B | no disponible en esta ficha | Qwen Research License | Hugging Face | Otras arms del mismo conjunto de ejecuciones |
+| Llama-3.2-3B-Instruct (variantes del mismo experimento) | ~3B | no disponible en esta ficha | Llama 3.2 Community License | Hugging Face | Otras arms del mismo conjunto de ejecuciones |
 
 ## Limitaciones y advertencias
 
@@ -80,6 +80,6 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RL-Forgetting-Experiments-3/code-sft-rerun-20261102-qwen3-1p7b-code-replay-hard
+- Hugging Face: https://huggingface.co/RL-Forgetting-Experiments-3/code-sft-rerun-20261102-qwen3-1p7b-code-replay-hard
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

@@ -94,7 +94,7 @@ La comparación cuantitativa disponible se limita al modelo base: en las pruebas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bhullar17noor/openflow-cleanup-qwen2.5-1.5b
+- Hugging Face: https://huggingface.co/bhullar17noor/openflow-cleanup-qwen2.5-1.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Modelo base en GGUF: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF
 - Dataset OpenAssistant OASST1: no disponible en la información proporcionada

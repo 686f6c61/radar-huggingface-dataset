@@ -99,8 +99,8 @@ Los datos de la columna correspondiente a este modelo proceden de la model card;
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OnlyTextLLMs/Qwen3.5-2B-OnlyText
+- Modelo en Hugging Face: https://huggingface.co/OnlyTextLLMs/Qwen3.5-2B-OnlyText
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
-- Organización Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organización Qwen en Hugging Face: https://huggingface.co/Qwen
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Papers, blogs, repositorios o demos adicionales: no disponible. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre su modelo base.

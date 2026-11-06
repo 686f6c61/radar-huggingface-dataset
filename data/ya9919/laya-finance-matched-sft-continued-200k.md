@@ -73,7 +73,7 @@ No se conocen en la información disponible otros modelos de la misma familia `s
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ya9919/laya-finance-matched-sft-continued-200k` | 421,3 M | No disponible | QA financiera de opción múltiple con cabeza de decisión | Apache-2.0 (datos con términos propios) | HuggingFace, 0 descargas |
+| `ya9919/laya-finance-matched-sft-continued-200k` | 421,3 M | No disponible | QA financiera de opción múltiple con cabeza de decisión | Apache-2.0 (datos con términos propios) | Hugging Face, 0 descargas |
 | `microsoft/deberta-v3-base` | 184 M | 512 tokens | Encoder general, ajustable a QA/clasificación | MIT | Ampliamente disponible |
 | `ProsusAI/finbert` | ~110 M | 512 tokens | Clasificación de sentimiento financiero | No verificada en la información disponible | Ampliamente disponible |
 | Modelos generativos tipo LLaMA/Qwen en rango 0,5-1 B | 500-1.000 M | 2.000-32.000 tokens | Generación de texto y QA en lenguaje natural | Variables | Ampliamente disponibles |
@@ -95,7 +95,7 @@ La diferencia clave frente a las alternativas no es el rendimiento bruto, sino e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ya9919/laya-finance-matched-sft-continued-200k
+- Modelo en Hugging Face: https://huggingface.co/ya9919/laya-finance-matched-sft-continued-200k
 - Modelo base: https://huggingface.co/ya9919/laya-finance-matched-sft-200k
 - Repositorio de reproducción e evidencia agregada (mas-simulation): https://github.com/KataDavidXD/mas-simulation
 - Paquete nativo `laya` (versión 0.4.2): sin URL proporcionada en la información disponible

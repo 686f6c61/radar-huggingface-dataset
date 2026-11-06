@@ -102,7 +102,7 @@ La model card recomienda elegir un profesor si priman la correferencia o los tip
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dragonscale-ai/kniv-v7-modernbert-base-en
+- Modelo en Hugging Face: https://huggingface.co/dragonscale-ai/kniv-v7-modernbert-base-en
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - Profesor kniv-v7-ultrabert-380m-en: https://huggingface.co/dragonscale-ai/kniv-v7-ultrabert-380m-en
 - Profesor kniv-v7-deberta-v3-large-en: https://huggingface.co/dragonscale-ai/kniv-v7-deberta-v3-large-en

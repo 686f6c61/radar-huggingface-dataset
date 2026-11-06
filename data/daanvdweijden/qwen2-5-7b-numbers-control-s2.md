@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune del popular Qwen2.5-7B-Instruct, desarrollado por el usuario daanvdweijden y subido a HuggingFace. El nombre sugiere un enfoque en el control de números o salidas numéricas, aunque la model card no proporciona detalles sobre el dataset de entrenamiento ni los objetivos específicos. Se entrenó con la librería Unsloth (que acelera el fine-tuning) y el framework TRL de HuggingFace, lo que indica un proceso de ajuste eficiente sobre la base instructiva de Qwen2.5.
+Este modelo es un fine-tune del popular Qwen2.5-7B-Instruct, desarrollado por el usuario daanvdweijden y subido a Hugging Face. El nombre sugiere un enfoque en el control de números o salidas numéricas, aunque la model card no proporciona detalles sobre el dataset de entrenamiento ni los objetivos específicos. Se entrenó con la librería Unsloth (que acelera el fine-tuning) y el framework TRL de Hugging Face, lo que indica un proceso de ajuste eficiente sobre la base instructiva de Qwen2.5.
 
 El repositorio tiene un tamaño de solo 0,4 GB, lo que apunta a que se trata de un adaptador LoRA o de pesos cuantizados, no de los 7B completos. Esto lo hace ligero y fácil de desplegar en hardware modesto. Su licencia Apache-2.0 permite uso comercial sin restricciones, y el idioma declarado es inglés. Aunque la documentación es mínima, hereda las capacidades generales del modelo base, incluyendo generación de texto, razonamiento y soporte de instrucciones.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada: al ser un adaptador LoRA (0,4 GB), la inferencia puede ejecutarse sobre el modelo base cuantizado. Con Qwen2.5-7B en 4 bits, se necesitan aproximadamente 4-5 GB de VRAM; en 8 bits, unos 8 GB.
 - GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM (por ejemplo, RTX 3060, RTX 4060) puede ejecutar el modelo cuantizado. Para mayor velocidad, una RTX 4090 o A100.
 - Compatibilidad con consumer GPU: sí, si se usa cuantización (GGUF, AWQ) o si se carga el adaptador sobre un base cuantizado.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (text-generation-inference, indicado en los tags), HuggingFace Transformers.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (text-generation-inference, indicado en los tags), Hugging Face Transformers.
 - Latencia y throughput: no disponibles. Dependerá de la cuantización y el hardware; en una RTX 4090, un modelo 7B cuantizado puede generar 50-100 tokens/s.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ La comparativa es limitada porque el fine-tune no tiene datos de rendimiento. Fr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-control-s2
+- Modelo en Hugging Face: https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-control-s2
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Librería Unsloth: https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

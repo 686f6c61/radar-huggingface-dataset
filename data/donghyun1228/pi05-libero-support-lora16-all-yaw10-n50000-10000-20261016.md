@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-support-lora16-all-yaw10-n50000-10000-20261016
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-support-lora16-all-yaw10-n50000-10000-20261016
 - Modelo de origen (source): https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-n50000-10000-20261015
 - Modelo objetivo (target): https://huggingface.co/Donghyun1228/libero-support-random-waypoint-300k-yaw10-20261015
 - Perfil del autor: https://huggingface.co/Donghyun1228

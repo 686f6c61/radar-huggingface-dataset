@@ -108,7 +108,7 @@ Frente al 4B de la misma familia, el 2B gana en tamaño (2,68 GB frente a 4,48 G
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chadstthomas/Paraphase-2B
+- Modelo en Hugging Face: https://huggingface.co/chadstthomas/Paraphase-2B
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Variante mayor de la familia: https://huggingface.co/chadstthomas/Paraphase-4B
 - Demo interactiva de comparación: https://huggingface.co/spaces/chadstthomas/paraphase-explorer

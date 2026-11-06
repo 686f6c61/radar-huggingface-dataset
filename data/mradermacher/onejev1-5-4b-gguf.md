@@ -76,7 +76,7 @@ La informacion disponible solo permite comparar variantes dentro de la propia fa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| OneJev1.5-4B (GGUF de mradermacher) | 4,84B | no disponible | apache-2.0 | GGUF en HuggingFace | Objeto de esta ficha; incluye mmproj para vision/video |
+| OneJev1.5-4B (GGUF de mradermacher) | 4,84B | no disponible | apache-2.0 | GGUF en Hugging Face | Objeto de esta ficha; incluye mmproj para vision/video |
 | OneJev 0.8B | no disponible | no disponible | no disponible | anunciado en el repositorio de OmniJev | Variante menor de la familia |
 | OneJev 9B | no disponible | no disponible | no disponible | anunciado en el repositorio de OmniJev | Variante mayor de la familia |
 | OneJev 27B | no disponible | no disponible | no disponible | anunciado en el repositorio de OmniJev | Variante mayor de la familia |

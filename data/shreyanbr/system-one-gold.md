@@ -2,7 +2,7 @@
 
 ## Resumen
 
-System One (gold) es un cross-encoder de tipo encoder-only construido sobre DeBERTa-v3-xsmall, con 70.830.722 parametros, publicado por el usuario shreyanbr en HuggingFace. Su proposito no es generar texto, sino responder preguntas de decision tipadas (Choice, Score y Noul) en una unica pasada forward por lote y con cero tokens generados. Implementa un esquema HTTP propio, `POST /v1/systemone`, dentro del ecosistema que el autor denomina TypeSafe Jev, y esta pensado para decisiones de enrutado, clasificacion y gating dentro de software que no necesita un modelo autorregresivo.
+System One (gold) es un cross-encoder de tipo encoder-only construido sobre DeBERTa-v3-xsmall, con 70.830.722 parametros, publicado por el usuario shreyanbr en Hugging Face. Su proposito no es generar texto, sino responder preguntas de decision tipadas (Choice, Score y Noul) en una unica pasada forward por lote y con cero tokens generados. Implementa un esquema HTTP propio, `POST /v1/systemone`, dentro del ecosistema que el autor denomina TypeSafe Jev, y esta pensado para decisiones de enrutado, clasificacion y gating dentro de software que no necesita un modelo autorregresivo.
 
 El modelo resuelve el problema de las decisiones auxiliares de bajo coste en pipelines de IA: clasificar la intencion de un mensaje, decidir si hace falta invocar una herramienta, tipar un ticket o marcar si es un incidente. Al ser un cross-encoder de ~70,8 M de parametros, el coste por inferencia es muy inferior al de un LLM autorregresivo, y el autor lo plantea explicitamente como alternativa a usar un modelo de chat para tareas de enrutado. La supervision proviene de las etiquetas propias de cada dataset, con 4.000 elementos de entrenamiento por tarea, y los resultados se miden sobre particiones de test de 500 elementos.
 
@@ -74,7 +74,7 @@ No se publican en la informacion disponible resultados de MMLU, HumanEval, GSM8K
 - VRAM estimada para inferencia: aproximadamente 283 MB en fp32 (70,8 M de parametros), unos 142 MB en fp16/bf16 y unos 71 MB en int8. Son estimaciones derivadas del recuento de parametros; el autor no publica cifras oficiales. Hay que sumar el espacio de activaciones segun el tamano de lote.
 - GPU: cabe holgadamente en cualquier GPU de consumo (RTX 3060, 4060, 4090, etc.) e incluso en GPUs integradas. No requiere A100 ni H100.
 - CPU: es viable en CPU para inferencia individual, dado el tamano del modelo y que no hay decodificacion autorregresiva.
-- Opciones de despliegue: la libreria declarada es `transformers`, y el tag `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints. No se documentan recetas oficiales para vLLM, TGI, llama.cpp u Ollama, y no se publican pesos GGUF; al tratarse de un encoder de clasificacion, el autor no plantea ese tipo de serving.
+- Opciones de despliegue: la libreria declarada es `transformers`, y el tag `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints. No se documentan recetas oficiales para vLLM, TGI, llama.cpp u Ollama, y no se publican pesos GGUF; al tratarse de un encoder de clasificacion, el autor no plantea ese tipo de serving.
 - Latencia y throughput: no disponible. El autor no publica mediciones de latencia ni de peticiones por segundo. Como referencia cualitativa, al resolver cada decision en una unica pasada forward sin generar tokens, el coste por inferencia es estructuralmente inferior al de un modelo autorregresivo del mismo orden de magnitud.
 - Almacenamiento: el repositorio completo ocupa 0,3 GB.
 
@@ -82,8 +82,8 @@ No se publican en la informacion disponible resultados de MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento documentado |
 |---|---|---|---|---|---|
-| shreyanbr/system-one-gold | 70,8 M | 512 tokens (heredado) | Apache 2.0 (con reservas sobre datos de `triage`) | Pesos abiertos en HuggingFace | Tabla de accuracy por pregunta incluida en esta ficha |
-| MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33 (modelo base) | ~70,8 M (no confirmado en la informacion disponible) | 512 tokens | No disponible | Pesos abiertos en HuggingFace | No disponible |
+| shreyanbr/system-one-gold | 70,8 M | 512 tokens (heredado) | Apache 2.0 (con reservas sobre datos de `triage`) | Pesos abiertos en Hugging Face | Tabla de accuracy por pregunta incluida en esta ficha |
+| MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33 (modelo base) | ~70,8 M (no confirmado en la informacion disponible) | 512 tokens | No disponible | Pesos abiertos en Hugging Face | No disponible |
 | Claude Haiku 4.5 (backend alternativo citado por el autor) | No disponible | No disponible | Propietaria | Solo API | El autor indica que queda en el suelo o por debajo en `needs_tool` y `priority`; no se publican sus cifras completas |
 
 La comparacion mas informativa que aporta la documentacion no es de rendimiento sino de comportamiento: en las dos preguntas con suelo igual a la accuracy, el propio autor senala que ningun sistema medido, tampoco un modelo propietario de API, supera a un predictor constante, lo que sugiere un problema de etiquetado en esos conjuntos.
@@ -103,7 +103,7 @@ La comparacion mas informativa que aporta la documentacion no es de rendimiento 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shreyanbr/system-one-gold
+- Modelo en Hugging Face: https://huggingface.co/shreyanbr/system-one-gold
 - Repositorio con codigo fuente, arnes de benchmark y seccion completa de limitaciones: https://github.com/shreyanbr/jev-haiku-benchmarking
 - Modelo base: https://huggingface.co/MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33
 - Busqueda web: no se han encontrado resultados relevantes sobre este modelo. Los resultados devueltos corresponden a sDNA (analisis de redes viarias y accesibilidad) en GIS Stack Exchange y no guardan ninguna relacion con el modelo.

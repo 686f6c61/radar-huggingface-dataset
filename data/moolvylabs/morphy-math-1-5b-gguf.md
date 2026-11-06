@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU de consumo: si. En 4 GB de VRAM con Q4_K_M o Q5_K_M, y en 8 GB sin problemas incluso en FP16.
 - Ejecucion en CPU: viable. Con Q4_K_M el modelo ocupa alrededor de 1 GB de RAM, por lo que funciona en practicamente cualquier portatil, incluidos equipos con 8 GB de RAM, e incluso en placas tipo Raspberry Pi con suficiente memoria.
 - Apple Silicon: compatible a traves de llama.cpp y Ollama en equipos con memoria unificada de 8 GB o superior.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, servidores compatibles con la API de OpenAI sobre GGUF (por ejemplo `llama-server`). La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints en su variante de contenedor GGUF. vLLM y TGI no estan documentados como soportados para este repositorio en la informacion disponible.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, servidores compatibles con la API de OpenAI sobre GGUF (por ejemplo `llama-server`). La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints en su variante de contenedor GGUF. vLLM y TGI no estan documentados como soportados para este repositorio en la informacion disponible.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moolvylabs/Morphy-Math-1.5B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/moolvylabs/Morphy-Math-1.5B-GGUF
 - Organizacion del autor: https://huggingface.co/moolvylabs
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B-Instruct
 - Paper tecnico de la familia Qwen2.5-Math: referenciado en la pagina del modelo base de Qwen; no se ha localizado un enlace directo en la busqueda web realizada.

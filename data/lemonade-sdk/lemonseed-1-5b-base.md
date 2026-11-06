@@ -4,7 +4,7 @@
 
 LemonSeed 1.5B Base es un modelo de lenguaje de 1.510 millones de parámetros nominales desarrollado por Geramy L. Loveless bajo el sello lemonade-sdk, entrenado desde cero (sin destilación ni continuación de preentrenamiento) sobre un único AMD Instinct MI300X con el stack de entrenamiento MLX sobre ROCm. Se trata de un modelo base, es decir, solo preentrenamiento, sin ajuste por instrucciones ni chat. Su relevancia radica en ser un experimento de arquitectura híbrida que combina atención lineal (Gated DeltaNet), atención softmax esporádica, mezcla de expertos (MoE) y mezcla de profundidades (Mixture-of-Depths) en un paquete compacto de 1.5B, con un coste de decodificación casi constante gracias a que 15 de sus 20 capas usan estado recurrente O(1).
 
-El modelo está pensado para investigación y experimentación, no para producción directa, ya que es una base sin fine-tuning. Su tokenizer es el BPE de Qwen 3.6 con 248.320 tokens y división de dígitos, y su contexto entrenado es de 2048 tokens. La licencia es lemonseed-research, una licencia personalizada que restringe el uso comercial. El repositorio en HuggingFace contiene pesos en formato safetensors (3.0 GB) y está etiquetado para MLX, aunque también se indica soporte ROCm.
+El modelo está pensado para investigación y experimentación, no para producción directa, ya que es una base sin fine-tuning. Su tokenizer es el BPE de Qwen 3.6 con 248.320 tokens y división de dígitos, y su contexto entrenado es de 2048 tokens. La licencia es lemonseed-research, una licencia personalizada que restringe el uso comercial. El repositorio en Hugging Face contiene pesos en formato safetensors (3.0 GB) y está etiquetado para MLX, aunque también se indica soporte ROCm.
 
 ## Especificaciones técnicas
 
@@ -64,10 +64,10 @@ No se dispone de datos de benchmarks para comparar directamente. Sin embargo, se
 
 | Modelo | Params | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LemonSeed 1.5B Base | 1.51B (0.90B efectivos) | 2048 | Híbrida (GDN + softmax + MoE + MoD) | lemonseed-research (no comercial) | HuggingFace (MLX) |
-| Qwen2.5-1.5B | 1.54B | 32K | Transformer denso | Apache 2.0 | HuggingFace, múltiples formatos |
-| Gemma-2-2B | 2.6B | 8K | Transformer denso | Gemma license (uso comercial permitido) | HuggingFace, múltiples formatos |
-| Phi-3.5-mini | 3.8B | 128K | Transformer denso | MIT | HuggingFace, múltiples formatos |
+| LemonSeed 1.5B Base | 1.51B (0.90B efectivos) | 2048 | Híbrida (GDN + softmax + MoE + MoD) | lemonseed-research (no comercial) | Hugging Face (MLX) |
+| Qwen2.5-1.5B | 1.54B | 32K | Transformer denso | Apache 2.0 | Hugging Face, múltiples formatos |
+| Gemma-2-2B | 2.6B | 8K | Transformer denso | Gemma license (uso comercial permitido) | Hugging Face, múltiples formatos |
+| Phi-3.5-mini | 3.8B | 128K | Transformer denso | MIT | Hugging Face, múltiples formatos |
 
 LemonSeed se diferencia por su arquitectura híbrida y su entrenamiento en hardware AMD, pero carece de la madurez, el soporte de herramientas y las licencias permisivas de las alternativas. Su contexto de 2048 es significativamente menor que el de Qwen2.5-1.5B (32K) o Phi-3.5-mini (128K).
 
@@ -86,8 +86,8 @@ LemonSeed se diferencia por su arquitectura híbrida y su entrenamiento en hardw
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lemonade-sdk/lemonseed-1.5b-base
-- Organización lemonade-sdk en HuggingFace: https://huggingface.co/lemonade-sdk/models
+- Hugging Face: https://huggingface.co/lemonade-sdk/lemonseed-1.5b-base
+- Organización lemonade-sdk en Hugging Face: https://huggingface.co/lemonade-sdk/models
 - Repositorio GitHub de Lemonade (servidor local de IA): https://github.com/lemonade-sdk/lemonade
 - Repositorio GitHub de lemonade-sdk (Mintplex-Labs): https://github.com/Mintplex-Labs/lemonade-sdk
 - Documentación de modelos de Lemonade Server: https://lemonade-server.ai/docs/models.html

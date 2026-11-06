@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Knight es un modelo publicado en HuggingFace por el usuario EmzSlvr bajo el identificador `EmzSlvr/Knight`. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos del repositorio: licencia `h-research`, region `us`, cero descargas y cero likes desde su creacion el 20 de octubre de 2026. La model card no contiene descripcion, instrucciones de uso, resultados de evaluacion ni detalles de arquitectura o entrenamiento.
+Knight es un modelo publicado en Hugging Face por el usuario EmzSlvr bajo el identificador `EmzSlvr/Knight`. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos del repositorio: licencia `h-research`, region `us`, cero descargas y cero likes desde su creacion el 20 de octubre de 2026. La model card no contiene descripcion, instrucciones de uso, resultados de evaluacion ni detalles de arquitectura o entrenamiento.
 
-No es posible determinar que problema resuelve, cual es su arquitectura, su numero de parametros, su longitud de contexto o sus idiomas soportados, ya que ninguno de estos datos aparece en la informacion proporcionada. Tampoco se declara un pipeline de HuggingFace (text-generation, text-classification, etc.) ni el formato de los pesos.
+No es posible determinar que problema resuelve, cual es su arquitectura, su numero de parametros, su longitud de contexto o sus idiomas soportados, ya que ninguno de estos datos aparece en la informacion proporcionada. Tampoco se declara un pipeline de Hugging Face (text-generation, text-classification, etc.) ni el formato de los pesos.
 
 Por tanto, esta ficha se limita a documentar de forma explicita los campos disponibles y a marcar como "no disponible" todo aquello que el autor no ha publicado. Se recomienda precaucion antes de evaluar o desplegar el modelo: sin model card, sin pipeline declarado y sin datos de entrenamiento, no es posible verificar su comportamiento, sus sesgos ni las condiciones reales de la licencia.
 
@@ -29,7 +29,7 @@ Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicio
 
 ## Capacidades
 
-- Generacion de texto: no confirmada; el repositorio no declara pipeline de HuggingFace.
+- Generacion de texto: no confirmada; el repositorio no declara pipeline de Hugging Face.
 - Razonamiento, codigo o matematicas: no disponible.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EmzSlvr/Knight | no disponible | no disponible | no disponible | h-research | repositorio HuggingFace, 0 descargas |
+| EmzSlvr/Knight | no disponible | no disponible | no disponible | h-research | repositorio Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No es posible establecer una comparativa con alternativas de la misma categoria: sin conocer el tamano, la arquitectura ni la tarea del modelo, no se puede determinar que familias de modelos (por ejemplo, modelos densos de 7B, MoE de gran escala o modelos especializados en codigo) serian comparables.
@@ -81,5 +81,5 @@ No es posible establecer una comparativa con alternativas de la misma categoria:
 
 ## Enlaces
 
-- [HuggingFace: EmzSlvr/Knight](https://huggingface.co/EmzSlvr/Knight)
+- [Hugging Face: EmzSlvr/Knight](https://huggingface.co/EmzSlvr/Knight)
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados al modelo.

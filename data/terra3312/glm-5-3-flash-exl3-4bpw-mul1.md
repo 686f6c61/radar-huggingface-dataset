@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks para esta cuantización específica
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash (original) | 320B totales, 18B activos | no disponible | FP8 (nativo) | MIT | HuggingFace |
-| Terra3312/GLM-5.3-Flash-EXL3-4bpw-MUL1 | 320B totales, 18B activos | no disponible | EXL3 4bpw (mul1) | MIT | HuggingFace |
-| brandonmusic/GLM-5.3-Flash-EXL3-4bpw | 320B totales, 18B activos | no disponible | EXL3 4bpw (sin mul1) | MIT | HuggingFace |
+| GLM-5.3-Flash (original) | 320B totales, 18B activos | no disponible | FP8 (nativo) | MIT | Hugging Face |
+| Terra3312/GLM-5.3-Flash-EXL3-4bpw-MUL1 | 320B totales, 18B activos | no disponible | EXL3 4bpw (mul1) | MIT | Hugging Face |
+| brandonmusic/GLM-5.3-Flash-EXL3-4bpw | 320B totales, 18B activos | no disponible | EXL3 4bpw (sin mul1) | MIT | Hugging Face |
 
 La diferencia principal entre las dos cuantizaciones EXL3 es el uso del codebook `mul1`, que puede ofrecer mejor rendimiento de decodificación en ciertas GPUs, pero no cambia la calidad del modelo. El original en FP8 requiere más VRAM y no es directamente ejecutable con ExLlamaV3.
 
@@ -78,7 +78,7 @@ La diferencia principal entre las dos cuantizaciones EXL3 es el uso del codebook
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/Terra3312/GLM-5.3-Flash-EXL3-4bpw-MUL1
+- Checkpoint en Hugging Face: https://huggingface.co/Terra3312/GLM-5.3-Flash-EXL3-4bpw-MUL1
 - Modelo base (Z.ai): https://huggingface.co/zai-org/GLM-5.3-Flash
 - Blog de Z.ai sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Documentación de Z.ai para GLM-5.3-Flash: https://docs.z.ai/guides/vlm/glm-5.3-flash

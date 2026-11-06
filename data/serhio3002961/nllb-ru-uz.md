@@ -96,7 +96,7 @@ La comparacion en cuanto a rendimiento no puede establecerse con datos: no exist
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Serhio3002961/nllb-ru-uz
+- Hugging Face: https://huggingface.co/Serhio3002961/nllb-ru-uz
 - Modelo base: https://huggingface.co/facebook/nllb-200-distilled-600M
 - Paper de NLLB-200 (No Language Left Behind): https://arxiv.org/abs/2207.04672
 - Blog de Meta AI sobre NLLB-200: https://ai.meta.com/blog/nllb-200-high-quality-machine-translation/

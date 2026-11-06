@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `chris023890/emily-openalex-2018-2019-pt` es un modelo de generación de texto con 2.018.511.234 parámetros (aproximadamente 2 mil millones), publicado en HuggingFace por el usuario `chris023890`. Su nombre sugiere un entrenamiento sobre datos bibliográficos de OpenAlex (un catálogo abierto de obras académicas) para los años 2018 y 2019, con posible enfoque en portugués (sufijo `pt`), aunque los idiomas no están especificados en la ficha. El modelo está etiquetado con `sn38-nanochrono`, un identificador que podría referirse a una arquitectura o familia concreta, pero no hay información pública adicional al respecto. Fue creado el 28 de agosto de 2026 y su acceso es restringido (gated), por lo que requiere aceptar condiciones en HuggingFace para su uso.
+El modelo `chris023890/emily-openalex-2018-2019-pt` es un modelo de generación de texto con 2.018.511.234 parámetros (aproximadamente 2 mil millones), publicado en Hugging Face por el usuario `chris023890`. Su nombre sugiere un entrenamiento sobre datos bibliográficos de OpenAlex (un catálogo abierto de obras académicas) para los años 2018 y 2019, con posible enfoque en portugués (sufijo `pt`), aunque los idiomas no están especificados en la ficha. El modelo está etiquetado con `sn38-nanochrono`, un identificador que podría referirse a una arquitectura o familia concreta, pero no hay información pública adicional al respecto. Fue creado el 28 de agosto de 2026 y su acceso es restringido (gated), por lo que requiere aceptar condiciones en Hugging Face para su uso.
 
 A pesar de su tamaño relativamente contenido, el repositorio ocupa 371.4 GB, lo que sugiere que se almacenan múltiples versiones o pesos en diferentes formatos. El modelo está pensado para la tarea de generación de texto y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación. Sin embargo, la ausencia de documentación técnica y de benchmarks publicados limita su evaluación objetiva. Su relevancia actual es incierta, ya que no hay evidencias de adopción (0 descargas, 0 likes) ni información sobre su entrenamiento o capacidades más allá de lo básico.
 
@@ -61,11 +61,11 @@ No se dispone de información sobre modelos comparables. El tag `sn38-nanochrono
 - No hay documentación técnica: la ausencia de un modelo card o paper impide conocer sesgos, limitaciones o el dominio de entrenamiento.
 - Riesgo de alucinación: al ser un modelo de generación de texto sin alineación conocida, puede producir información falsa o inventada.
 - Idiomas no confirmados: a pesar del sufijo `pt`, no se garantiza un buen desempeño en portugués u otros idiomas.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos o académicos.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos o académicos.
 - Sin benchmarks: no se puede evaluar su calidad objetivamente frente a otros modelos.
 - Tamaño del repositorio inusualmente grande (371.4 GB) para 2B parámetros: podría indicar almacenamiento ineficiente o múltiples versiones, lo que complica la descarga y el despliegue.
 - Desconocimiento de la arquitectura: el tag `sn38-nanochrono` no es estándar, por lo que no se sabe si requiere software específico para su ejecución.
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/chris023890/emily-openalex-2018-2019-pt)
+- [Página del modelo en Hugging Face](https://huggingface.co/chris023890/emily-openalex-2018-2019-pt)

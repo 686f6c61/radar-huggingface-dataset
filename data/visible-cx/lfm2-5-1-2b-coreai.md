@@ -74,9 +74,9 @@ La comparativa se limita al modelo base y a otras conversiones del mismo ecosist
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-1.2B-CoreAI (esta conversion) | 1.2B | 4096/8192/16384 | Core AI (.aimodel) | lfm1.0 | HuggingFace |
-| LiquidAI/LFM2.5-1.2B-Instruct (original) | 1.2B | 32K | Safetensors | lfm1.0 | HuggingFace |
-| LiquidAI/LFM2.5-VL-3B (VLM, en coreai-model-zoo) | 3B | no disponible | Core AI | no disponible | HuggingFace / GitHub |
+| LFM2.5-1.2B-CoreAI (esta conversion) | 1.2B | 4096/8192/16384 | Core AI (.aimodel) | lfm1.0 | Hugging Face |
+| LiquidAI/LFM2.5-1.2B-Instruct (original) | 1.2B | 32K | Safetensors | lfm1.0 | Hugging Face |
+| LiquidAI/LFM2.5-VL-3B (VLM, en coreai-model-zoo) | 3B | no disponible | Core AI | no disponible | Hugging Face / GitHub |
 
 No se dispone de comparativa con otros modelos de tamano similar (p. ej. Qwen2.5-1.5B, Llama-3.2-1B) porque la informacion proporcionada no incluye datos de rendimiento estandarizados.
 
@@ -92,7 +92,7 @@ No se dispone de comparativa con otros modelos de tamano similar (p. ej. Qwen2.5
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/visible-cx/LFM2.5-1.2B-CoreAI
+- Repositorio Hugging Face: https://huggingface.co/visible-cx/LFM2.5-1.2B-CoreAI
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Blog de Liquid AI sobre LFM2.5: https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai
 - Repositorio coreai-model-zoo (GitHub): https://github.com/john-rocky/coreai-model-zoo

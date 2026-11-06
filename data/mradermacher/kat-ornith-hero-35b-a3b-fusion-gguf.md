@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. Al t
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KAT-Ornith-HERO-35B-A3B-Fusion | ~35,5 B | ~3 B | no disponible | Apache 2.0 | GGUF y safetensors en HuggingFace |
+| KAT-Ornith-HERO-35B-A3B-Fusion | ~35,5 B | ~3 B | no disponible | Apache 2.0 | GGUF y safetensors en Hugging Face |
 | Qwen3-30B-A3B | ~30 B | ~3 B | 32K (128K con YaRN) | Apache 2.0 | GGUF, safetensors, amplio soporte |
 | Qwen3-32B (denso) | ~32 B | 32 B | 32K (128K con YaRN) | Apache 2.0 | GGUF, safetensors, amplio soporte |
 

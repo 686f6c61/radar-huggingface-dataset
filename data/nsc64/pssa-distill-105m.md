@@ -6,7 +6,7 @@ PSSA 105M distilled from Qwen3-8B es un experimento de destilacion de conocimien
 
 El interes del modelo no reside en su rendimiento bruto, sino en la metodologia: se aborda el problema de destilar entre tokenizadores incompatibles. El estudiante usa un vocabulario byte-level BPE de solo 2.048 tokens, mientras que el profesor emplea uno de aproximadamente 151.600 tokens. Para salvar esa brecha, el entrenador fuerza fronteras de token del estudiante en cada frontera del profesor y proyecta la distribucion next-token del profesor sobre el vocabulario del estudiante mediante un mapeo al primer sub-token del estudiante que compone la cadena de bytes de cada token del profesor.
 
-Se trata de un artefacto de investigacion con cero descargas y cero likes en el momento de la consulta, publicado en noviembre de 2026. No dispone de model card estandar de HuggingFace con licencia, idiomas o pipeline declarados, sino de una descripcion tecnica del proceso de destilacion. Es relevante para quienes investigan destilacion cross-tokenizer, arquitecturas recurrentes con memoria y entrenamiento de modelos pequenos sobre corpus educativos y de codigo.
+Se trata de un artefacto de investigacion con cero descargas y cero likes en el momento de la consulta, publicado en noviembre de 2026. No dispone de model card estandar de Hugging Face con licencia, idiomas o pipeline declarados, sino de una descripcion tecnica del proceso de destilacion. Es relevante para quienes investigan destilacion cross-tokenizer, arquitecturas recurrentes con memoria y entrenamiento de modelos pequenos sobre corpus educativos y de codigo.
 
 ## Especificaciones tecnicas
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| PSSA 105M distilled from Qwen3-8B | aproximadamente 107M | no disponible | no disponible | `.pssa` (V7) | HuggingFace (0 descargas) |
-| Qwen3-8B (profesor) | 8B | no disponible en la informacion | Apache-2.0 | safetensors | HuggingFace, ampliamente adoptado |
-| Modelos de 100M-150M tipo GPT-2 small / distilGPT-2 | 82M-124M | 1.024 tokens (GPT-2) | MIT / Apache-2.0 segun variante | safetensors, GGUF | HuggingFace, ecosistema estandar |
+| PSSA 105M distilled from Qwen3-8B | aproximadamente 107M | no disponible | no disponible | `.pssa` (V7) | Hugging Face (0 descargas) |
+| Qwen3-8B (profesor) | 8B | no disponible en la informacion | Apache-2.0 | safetensors | Hugging Face, ampliamente adoptado |
+| Modelos de 100M-150M tipo GPT-2 small / distilGPT-2 | 82M-124M | 1.024 tokens (GPT-2) | MIT / Apache-2.0 segun variante | safetensors, GGUF | Hugging Face, ecosistema estandar |
 
 La comparacion con alternativas de la misma categoria (modelos de aproximadamente 100M de parametros) no puede establecerse en terminos de rendimiento porque no hay benchmarks publicados para este modelo. La diferencia principal frente a GPT-2 small o distilGPT-2 es la arquitectura (recurrente con memoria frente a transformer denso) y el formato de pesos, que impide usar herramientas estandar como llama.cpp u Ollama.
 
@@ -87,7 +87,7 @@ La comparacion con alternativas de la misma categoria (modelos de aproximadament
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NSC64/pssa-distill-105m
+- Repositorio Hugging Face: https://huggingface.co/NSC64/pssa-distill-105m
 - Repositorio del modelo base: https://huggingface.co/sparticle62/pssa-checkpoints-105m
 - Codigo de PSSA (GPL-3.0): https://github.com/Sparticle62ops/pssa
 - Modelo profesor Qwen3-8B (Apache-2.0): https://huggingface.co/Qwen/Qwen3-8B

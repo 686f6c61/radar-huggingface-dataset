@@ -1,7 +1,7 @@
 # gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907-1a0ce16d-2dd4-4d24-b7ba-a223c34067e7-5EUHojrM
 
 ## Resumen
-Este modelo es un adaptador LoRA (PEFT) publicado por gradients-io-tournaments en HuggingFace. Se basa en el modelo LiquidAI/LFM2.5-2.6B y está destinado a la generación de texto conversacional. El adaptador ocupa 0.2 GB y se ha creado en el contexto de un torneo de entrenamiento descentralizado de Gradients (Subnet 56). La model card no incluye información sobre el proceso de entrenamiento, los datos utilizados ni las capacidades específicas del adaptador. No se dispone de detalles sobre la arquitectura del modelo base, el contexto, la licencia ni los idiomas soportados.
+Este modelo es un adaptador LoRA (PEFT) publicado por gradients-io-tournaments en Hugging Face. Se basa en el modelo LiquidAI/LFM2.5-2.6B y está destinado a la generación de texto conversacional. El adaptador ocupa 0.2 GB y se ha creado en el contexto de un torneo de entrenamiento descentralizado de Gradients (Subnet 56). La model card no incluye información sobre el proceso de entrenamiento, los datos utilizados ni las capacidades específicas del adaptador. No se dispone de detalles sobre la arquitectura del modelo base, el contexto, la licencia ni los idiomas soportados.
 
 ## Especificaciones técnicas
 | Parámetro | Valor |
@@ -46,6 +46,6 @@ No se dispone de información sobre modelos comparables en la documentación con
 - El repositorio no tiene descargas ni likes, lo que sugiere que no ha sido validado por la comunidad.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907-1a0ce16d-2dd4-4d24-b7ba-a223c34067e7-5EUHojrM
+- Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907-1a0ce16d-2dd4-4d24-b7ba-a223c34067e7-5EUHojrM
 - Perfil del autor: https://huggingface.co/gradients-io-tournaments
 - Plataforma Gradients: https://www.gradients.io/app/research/tournament

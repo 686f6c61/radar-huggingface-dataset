@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `adrirflorez/mmbert-conloan-binary-borrowings` es un fine-tuning de un modelo basado en la arquitectura ModernBERT (según las etiquetas del repositorio) para la tarea de clasificación de tokens (token-classification). Está orientado a la clasificación binaria de préstamos ("borrowings") en el contexto de un dataset llamado "ConLoan", aunque no se proporcionan detalles adicionales sobre la tarea específica ni sobre el dominio de aplicación. Fue subido a HuggingFace por el usuario `adrirflorez` en agosto de 2026 y cuenta con 307 531 778 parámetros en formato safetensors.
+El modelo `adrirflorez/mmbert-conloan-binary-borrowings` es un fine-tuning de un modelo basado en la arquitectura ModernBERT (según las etiquetas del repositorio) para la tarea de clasificación de tokens (token-classification). Está orientado a la clasificación binaria de préstamos ("borrowings") en el contexto de un dataset llamado "ConLoan", aunque no se proporcionan detalles adicionales sobre la tarea específica ni sobre el dominio de aplicación. Fue subido a Hugging Face por el usuario `adrirflorez` en agosto de 2026 y cuenta con 307 531 778 parámetros en formato safetensors.
 
-La model card es prácticamente vacía: todos los campos relevantes (descripción, datos de entrenamiento, licencia, idiomas, evaluación) aparecen marcados como "[More Information Needed]". Esto limita severamente la información verificable sobre el modelo, por lo que esta ficha se basa únicamente en los metadatos disponibles en el repositorio de HuggingFace. A pesar de la falta de documentación, el modelo parece ser un clasificador de tokens entrenado sobre un corpus financiero, probablemente para identificar segmentos de texto relacionados con préstamos en documentos legales o financieros.
+La model card es prácticamente vacía: todos los campos relevantes (descripción, datos de entrenamiento, licencia, idiomas, evaluación) aparecen marcados como "[More Information Needed]". Esto limita severamente la información verificable sobre el modelo, por lo que esta ficha se basa únicamente en los metadatos disponibles en el repositorio de Hugging Face. A pesar de la falta de documentación, el modelo parece ser un clasificador de tokens entrenado sobre un corpus financiero, probablemente para identificar segmentos de texto relacionados con préstamos en documentos legales o financieros.
 
 ## Especificaciones tecnicas
 
@@ -66,5 +66,5 @@ No disponible. No se han encontrado modelos comparables con la misma tarea y dom
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adrirflorez/mmbert-conloan-binary-borrowings
+- Repositorio en Hugging Face: https://huggingface.co/adrirflorez/mmbert-conloan-binary-borrowings
 - Otros modelos similares (sin documentación): https://huggingface.co/arodriguezf/mmbert-binary-borrowings-conloan y https://huggingface.co/arodriguezf/mmbert-multi-borrowings-conloan

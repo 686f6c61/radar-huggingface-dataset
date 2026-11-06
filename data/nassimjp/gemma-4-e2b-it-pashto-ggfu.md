@@ -32,7 +32,7 @@ No hay información sobre el número de tokens de entrenamiento, la composición
 - Generación de texto conversacional: el tag `conversational` y la designación `it` (instruction-tuned) indican que el modelo está preparado para diálogo en formato instrucción.
 - Procesamiento multimodal de imagen y texto: el tag `vision-language-model` y la presencia del fichero `mmproj` habilitan la inferencia con `llama-mtmd-cli` sobre entradas que combinan imagen y texto.
 - Inferencia local con llama.cpp: los pesos están publicados exclusivamente en GGUF, con soporte explícito de plantilla de chat Jinja mediante el flag `--jinja`.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el repositorio puede servirse a través de interfaces compatibles con el esquema de endpoints de HuggingFace, aunque no se detalla la configuración.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el repositorio puede servirse a través de interfaces compatibles con el esquema de endpoints de Hugging Face, aunque no se detalla la configuración.
 - Cobertura multilingüe: no disponible. El nombre apunta a un ajuste para pastún, pero no hay evaluación ni lista de idiomas publicada.
 - Llamada a herramientas y function calling: no disponible.
 - Razonamiento multi-paso y uso como agente: no disponible.
@@ -69,7 +69,7 @@ No se dispone de información verificada sobre el modelo base `gemma-4-E2B-it` e
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nassimjp/gemma-4-E2B-it-pashto-GGFU | ≈4,65 B (según safetensors) | No disponible | No disponible | GGUF en HuggingFace |
+| nassimjp/gemma-4-E2B-it-pashto-GGFU | ≈4,65 B (según safetensors) | No disponible | No disponible | GGUF en Hugging Face |
 | Gemma 3 4B (familia de referencia) | No verificado en esta ficha | No verificado en esta ficha | No verificado en esta ficha | No verificado en esta ficha |
 | Qwen2.5-VL 3B (familia de referencia) | No verificado en esta ficha | No verificado en esta ficha | No verificado en esta ficha | No verificado en esta ficha |
 | Phi-3.5-vision (familia de referencia) | No verificado en esta ficha | No verificado en esta ficha | No verificado en esta ficha | No verificado en esta ficha |
@@ -89,7 +89,7 @@ No se dispone de información verificada sobre el modelo base `gemma-4-E2B-it` e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nassimjp/gemma-4-E2B-it-pashto-GGFU
+- Modelo en Hugging Face: https://huggingface.co/nassimjp/gemma-4-E2B-it-pashto-GGFU
 - Unsloth (herramienta de conversión citada en la model card): https://github.com/unslothai/unsloth
 - llama.cpp (runtime recomendado por el autor): https://github.com/ggml-org/llama.cpp
 - Nota sobre la búsqueda web: los resultados obtenidos (sitios de horóscopos, Zhihu y un blog de Huawei Cloud) no guardan relación con este modelo y no aportan enlaces válidos; no se han encontrado papers, blogs ni demos asociados a este repositorio.

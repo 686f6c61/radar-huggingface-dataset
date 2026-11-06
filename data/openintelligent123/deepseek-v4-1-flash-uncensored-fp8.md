@@ -21,7 +21,7 @@ La relevancia del artefacto es doble: por un lado, es un caso de estudio sobre l
 | Licencia | MIT |
 | Formato de pesos | safetensors (libreria transformers) |
 | Tamano del repositorio | 510,3 GB |
-| Modalidad | image-text-to-text (pipeline de HuggingFace) |
+| Modalidad | image-text-to-text (pipeline de Hugging Face) |
 | Modelo base | deepseek-ai/DeepSeek-V4.1-Flash (relacion: quantized) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-11 |
@@ -111,8 +111,8 @@ No se han publicado resultados de otros benchmarks (HumanEval, GSM8K, MMMU, MT-B
 
 | Modelo | Parametros | Contexto | Licencia | ASR HarmBench-320 | MMLU | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-UNCENSORED-FP8 | 763.205.315.794 (safetensors); 552B "backbone" segun la card | 1M | MIT | 100,00 % (off y max) | 82,74 % (14k) | HuggingFace, safetensors |
-| deepseek-ai/DeepSeek-V4.1-Flash (base) | 552B backbone, 8B/16B activos por token | 1M | no disponible en la informacion proporcionada | 42,81 % (off) / 1,56 % (max) | 86,96 % (14k) | HuggingFace |
+| DeepSeek-V4.1-Flash-UNCENSORED-FP8 | 763.205.315.794 (safetensors); 552B "backbone" segun la card | 1M | MIT | 100,00 % (off y max) | 82,74 % (14k) | Hugging Face, safetensors |
+| deepseek-ai/DeepSeek-V4.1-Flash (base) | 552B backbone, 8B/16B activos por token | 1M | no disponible en la informacion proporcionada | 42,81 % (off) / 1,56 % (max) | 86,96 % (14k) | Hugging Face |
 
 No se dispone de datos verificables en la informacion proporcionada sobre otras alternativas de la misma categoria (modelos MoE de frontera abliterados o variantes sin censura de la misma escala), por lo que la comparativa con terceros queda como no disponible. Tampoco se dispone de las especificaciones de licencia, cuantizacion o rendimiento del modelo base mas alla de lo que cita la model card de esta variante.
 
@@ -131,7 +131,7 @@ No se dispone de datos verificables en la informacion proporcionada sobre otras 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Openintelligent123/DeepSeek-V4.1-Flash-UNCENSORED-FP8
+- Modelo en Hugging Face: https://huggingface.co/Openintelligent123/DeepSeek-V4.1-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Cuenta X del autor (dealignai): https://x.com/dealignai
 - Cuenta X del autor (jordanschenck): https://x.com/jordanschenck

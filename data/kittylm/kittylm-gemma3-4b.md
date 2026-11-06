@@ -18,7 +18,7 @@ El repositorio incluye pesos fusionados en bfloat16 y el adaptador LoRA en paral
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | bfloat16 (pesos fusionados); cuantizaciones GGUF en el repositorio KittyLM/kittylm-gemma3-4b-gguf (niveles concretos no detallados) |
 | Idiomas soportados | no disponible (heredados del modelo base Gemma 3 4B IT) |
-| Licencia | Gemma Terms of Use (uso condicionado a la aceptacion de la licencia de Google en HuggingFace) |
+| Licencia | Gemma Terms of Use (uso condicionado a la aceptacion de la licencia de Google en Hugging Face) |
 | Formato de pesos | safetensors (modelo fusionado + adaptador LoRA `adapter_*.safetensors`); GGUF en repositorio aparte |
 
 ## Arquitectura y entrenamiento
@@ -79,8 +79,8 @@ Estos valores son internos y no comparables con benchmarks publicos de terceros.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| KittyLM-4B (kittylm-gemma3-4b) | 4,3B | no disponible | Gemma Terms of Use | HuggingFace (repo propio + GGUF) | Finetune LoRA con persona de gatito; evaluacion interna limitada |
-| google/gemma-3-4b-it | 4,3B (aprox., base) | no disponible en la informacion | Gemma Terms of Use | HuggingFace | Modelo base instruct multimodal; capacidades generales de referencia |
+| KittyLM-4B (kittylm-gemma3-4b) | 4,3B | no disponible | Gemma Terms of Use | Hugging Face (repo propio + GGUF) | Finetune LoRA con persona de gatito; evaluacion interna limitada |
+| google/gemma-3-4b-it | 4,3B (aprox., base) | no disponible en la informacion | Gemma Terms of Use | Hugging Face | Modelo base instruct multimodal; capacidades generales de referencia |
 | Otros finetunes de persona sobre Gemma 3 4B | no disponible | no disponible | no disponible | no disponible | No se dispone de comparativas publicadas en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparativo con alternativas de la misma categoria, por lo que la comparacion se limita a arquitectura base y licencia.
@@ -92,14 +92,14 @@ No se dispone de datos de rendimiento comparativo con alternativas de la misma c
 - El estilo de gatito no aporta capacidad adicional: los limites de razonamiento y codigo son los del modelo base Gemma 3 4B.
 - Las cuantizaciones GGUF excluyen el `image_soft_token`, por lo que el despliegue GGUF pierde la capacidad multimodal y queda restringido a texto.
 - No hay idiomas declarados explicitamente; el comportamiento multilingue depende del modelo base y no ha sido evaluado para este ajuste.
-- Licencia Gemma Terms of Use: es un derivado de un modelo Gemma y esta sujeto a las condiciones de Google, incluida la aceptacion de la licencia en HuggingFace antes de la descarga; existen restricciones de uso comercial que deben revisarse en los terminos oficiales.
+- Licencia Gemma Terms of Use: es un derivado de un modelo Gemma y esta sujeto a las condiciones de Google, incluida la aceptacion de la licencia en Hugging Face antes de la descarga; existen restricciones de uso comercial que deben revisarse en los terminos oficiales.
 - El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y una evaluacion muy reducida (15 pruebas factuales, 100 ejemplos de evaluacion), por lo que la evidencia de calidad es limitada.
 - Entrenado con solo 900 pares de datos: el ajuste es de bajo presupuesto y puede mostrar poca robustez ante dominios o registros alejados de los datos de entrenamiento.
 - No se documentan advertencias especificas sobre sesgos; al ser un finetune de Gemma 3 4B, hereda los sesgos potenciales del modelo base, no cuantificados en esta ficha.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KittyLM/kittylm-gemma3-4b
+- Modelo en Hugging Face: https://huggingface.co/KittyLM/kittylm-gemma3-4b
 - Cuantizaciones GGUF: https://huggingface.co/KittyLM/kittylm-gemma3-4b-gguf
 - Dataset de entrenamiento: https://huggingface.co/datasets/KittyLM/kittylm-data
 - Modelo base google/gemma-3-4b-it: https://huggingface.co/google/gemma-3-4b-it

@@ -72,4 +72,4 @@ No disponible. No se conocen modelos comparables con un tamaño tan reducido (33
 
 ## Enlaces
 
-- [HuggingFace - gangcwfi/classification-lite](https://huggingface.co/gangcwfi/classification-lite)
+- [Hugging Face - gangcwfi/classification-lite](https://huggingface.co/gangcwfi/classification-lite)

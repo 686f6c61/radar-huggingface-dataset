@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`danielevansora/perceiver-matching-2023` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura Perceiver orientada a tareas de *matching*, acompañada de su configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors. El autor es el usuario `danielevansora` y el repositorio se distribuye bajo licencia MIT. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint es válido para pruebas de humo y que no se reclama ninguna puntuación de benchmark.
+`danielevansora/perceiver-matching-2023` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura Perceiver orientada a tareas de *matching*, acompañada de su configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors. El autor es el usuario `danielevansora` y el repositorio se distribuye bajo licencia MIT. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint es válido para pruebas de humo y que no se reclama ninguna puntuación de benchmark.
 
 El interés del repositorio es fundamentalmente de ingeniería y de investigación: sirve como base reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La arquitectura declarada combina un núcleo Perceiver con atención de tipo *grouped query*, fusión bilineal, activación GELU y normalización RMSNorm. La receta por defecto emplea el optimizador NovoGrad con un scheduler de tipo *step*.
 
@@ -78,7 +78,7 @@ No se dispone de datos verificables de benchmarks ni de especificaciones complet
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmark publicado |
 |---|---|---|---|---|---|
-| danielevansora/perceiver-matching-2023 | 49.600 | no disponible | MIT | HuggingFace | No |
+| danielevansora/perceiver-matching-2023 | 49.600 | no disponible | MIT | Hugging Face | No |
 | Perceiver IO (referencia conceptual) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de *matching* de escala comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,12 +94,12 @@ No se han encontrado en la busqueda web modelos comparables con datos utilizable
 - Riesgo de alucinacion: no evaluable, al no existir un modelo entrenado que genere texto.
 - Idiomas soportados: no documentados. No hay evidencia de cobertura multilingue.
 - Licencia MIT para el codigo y los pesos de este repositorio, lo que permite uso comercial y modificacion. No obstante, la model card advierte de que deben revisarse por separado los terminos de los datos de origen cuando el repositorio se utilice con conjuntos de datos externos.
-- La fecha de creacion registrada en HuggingFace (2026-09-15) es posterior a la fecha habitual de publicacion y conviene verificarla si se cita el repositorio cronologicamente.
+- La fecha de creacion registrada en Hugging Face (2026-09-15) es posterior a la fecha habitual de publicacion y conviene verificarla si se cita el repositorio cronologicamente.
 - El tamano del repositorio declarado es de 0,0 GB, coherente con el numero de parametros, pero insuficiente para albergar conjuntos de datos o artefactos de entrenamiento.
 - La busqueda web realizada no devolvio resultados relevantes: los enlaces recuperados corresponden a un portal generalista sin relacion con el modelo, por lo que no se han podido verificar publicaciones, papers ni repositorios asociados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danielevansora/perceiver-matching-2023
+- Modelo en Hugging Face: https://huggingface.co/danielevansora/perceiver-matching-2023
 - Ficheros incluidos en el repositorio (referenciados en la model card, sin URL propia): `eval.py`, `config.json`, `training_args.json`, `model.safetensors`, `README.md`
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web no devolvio resultados relacionados con el modelo.

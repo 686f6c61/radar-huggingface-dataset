@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aicentreflip/tutorials-xray-diffusion
+- Modelo en Hugging Face: https://huggingface.co/aicentreflip/tutorials-xray-diffusion
 - Repositorio FLIP (London AI Centre): https://github.com/londonaicentre/FLIP
 - Dataset Ark+ tutorial splits: https://huggingface.co/datasets/aicentreflip/tutorials-arkplus-cxr-classification
 - Ruta del tutorial dentro de FLIP: `fl-tutorials/nvflare/image_generation/xray_diffusion/`

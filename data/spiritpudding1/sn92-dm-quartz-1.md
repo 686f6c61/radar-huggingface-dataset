@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`spiritpudding1/sn92-dm-quartz-1` es un modelo de lenguaje publicado en HuggingFace por el usuario `spiritpudding1` bajo licencia Apache 2.0. El repositorio contiene pesos en formato safetensors con un total de 31.273.086.512 parametros (aproximadamente 31,3 mil millones), lo que lo situa en la categoria de modelos de ~30B. El tag `gemma4` sugiere que se trata de un ajuste fino o una variante derivada de la familia Gemma, aunque no se dispone de documentacion oficial que lo confirme.
+`spiritpudding1/sn92-dm-quartz-1` es un modelo de lenguaje publicado en Hugging Face por el usuario `spiritpudding1` bajo licencia Apache 2.0. El repositorio contiene pesos en formato safetensors con un total de 31.273.086.512 parametros (aproximadamente 31,3 mil millones), lo que lo situa en la categoria de modelos de ~30B. El tag `gemma4` sugiere que se trata de un ajuste fino o una variante derivada de la familia Gemma, aunque no se dispone de documentacion oficial que lo confirme.
 
-El modelo presenta un perfil atipico: fue creado el 29 de octubre de 2026, cuenta con 7 descargas y ningun "like", y el acceso esta restringido (gated), requiriendo aceptar condiciones en HuggingFace. El tamano del repositorio es de 62,6 GB, coherente con pesos en precision de 16 bits para 31,3B de parametros. No se ha publicado informacion sobre pipeline, idiomas soportados, arquitectura detallada, datos de entrenamiento ni benchmarks.
+El modelo presenta un perfil atipico: fue creado el 29 de octubre de 2026, cuenta con 7 descargas y ningun "like", y el acceso esta restringido (gated), requiriendo aceptar condiciones en Hugging Face. El tamano del repositorio es de 62,6 GB, coherente con pesos en precision de 16 bits para 31,3B de parametros. No se ha publicado informacion sobre pipeline, idiomas soportados, arquitectura detallada, datos de entrenamiento ni benchmarks.
 
 La relevancia de esta ficha es limitada por la escasez de informacion disponible. Se trata de un modelo practicamente sin documentacion publica, sin metricas de rendimiento y con un numero muy bajo de descargas, lo que sugiere que es un experimento o un artefacto de un pipeline interno (el prefijo `sn92-dm-quartz` apunta a una nomenclatura de versionado propia, posiblemente de un sistema de generacion o destilacion de modelos). Los desarrolladores deben tratarlo con cautela hasta que exista documentacion adicional.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada por la escasez de informacion disponible
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo. El tag `gemma4` en HuggingFace sugiere que podria estar basado en la familia Gemma de Google, pero no hay confirmacion oficial ni documentacion tecnica en el repositorio. El numero de parametros (31,3B) es consistente con un transformer denso de gran tamano, aunque tambien podria corresponder a una variante con componentes adicionales.
+No se dispone de informacion sobre la arquitectura interna del modelo. El tag `gemma4` en Hugging Face sugiere que podria estar basado en la familia Gemma de Google, pero no hay confirmacion oficial ni documentacion tecnica en el repositorio. El numero de parametros (31,3B) es consistente con un transformer denso de gran tamano, aunque tambien podria corresponder a una variante con componentes adicionales.
 
 No se han publicado datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. El nombre `sn92-dm-quartz-1` sugiere un identificador de experimento o version dentro de un pipeline propietario, pero no aporta informacion sobre el proceso de entrenamiento.
 
@@ -48,7 +48,7 @@ Dada la ausencia de documentacion y benchmarks, los casos de uso son especulativ
 - Ajuste fino adicional: al estar bajo licencia Apache 2.0 y en formato safetensors, podria utilizarse como punto de partida para fine-tuning, siempre que se confirme la compatibilidad de la arquitectura.
 - Evaluacion comparativa de checkpoints: util para medir la variabilidad entre checkpoints de una misma familia y detectar degradaciones.
 - Prototipado de pipelines de inferencia: sirve para probar infraestructura de despliegue (vLLM, TGI) con un modelo de ~31B antes de pasar a modelos documentados.
-- Docencia y formacion: como ejemplo de repositorio gated con pesos de gran tamano y licencia permisiva, para ilustrar practicas de publicacion en HuggingFace.
+- Docencia y formacion: como ejemplo de repositorio gated con pesos de gran tamano y licencia permisiva, para ilustrar practicas de publicacion en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -80,7 +80,7 @@ Las comparaciones con modelos de referencia son orientativas y no implican equiv
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion tecnica: no hay model card, paper ni blog que describa arquitectura, entrenamiento o evaluacion.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion para su uso y puede implicar terminos adicionales no visibles en la licencia Apache 2.0.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion para su uso y puede implicar terminos adicionales no visibles en la licencia Apache 2.0.
 - Riesgo elevado de alucinacion y comportamiento impredecible: sin benchmarks ni evaluaciones, no se puede garantizar calidad en ninguna tarea.
 - Idiomas no confirmados: no se especifica que idiomas soporta, lo que impide asumir un buen rendimiento en castellano.
 - Contexto desconocido: se desconoce la longitud maxima de contexto, lo que limita el diseno de aplicaciones con documentos largos.
@@ -90,4 +90,4 @@ Las comparaciones con modelos de referencia son orientativas y no implican equiv
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/spiritpudding1/sn92-dm-quartz-1
+- Hugging Face: https://huggingface.co/spiritpudding1/sn92-dm-quartz-1

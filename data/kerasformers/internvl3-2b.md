@@ -68,10 +68,10 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kerasformers/internvl3-2b
+- Modelo en Hugging Face: https://huggingface.co/kerasformers/internvl3-2b
 - Modelo base (OpenGVLab/InternVL3-2B-hf): https://huggingface.co/OpenGVLab/InternVL3-2B-hf
 - Licencia del modelo base: https://huggingface.co/OpenGVLab/InternVL3-2B-hf/blob/main/LICENSE
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de InternVL en KerasFormers: https://imvision12.github.io/KerasFormers/internvl/
-- Colección de modelos InternVL en HuggingFace: https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd
+- Colección de modelos InternVL en Hugging Face: https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd
 - Papers asociados (según tags): arxiv:2312.14238, arxiv:2404.16821, arxiv:2411.10442, arxiv:2412.05271, arxiv:2504.10479 (no se proporcionan títulos)

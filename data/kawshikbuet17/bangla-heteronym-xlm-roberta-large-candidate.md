@@ -73,8 +73,8 @@ Rendimiento por frase (batch size 1, pipeline completo): 19,9 ms en Tesla T4 con
 
 | Modelo | Parámetros | Contexto | Accuracy (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bangla-heteronym-xlm-roberta-large-candidate (este) | 559,9 M | no disponible | 97,10 % | MIT | HuggingFace |
-| bangla-heteronym-banglabert | no disponible | no disponible | 99,46 % | no disponible | HuggingFace |
+| bangla-heteronym-xlm-roberta-large-candidate (este) | 559,9 M | no disponible | 97,10 % | MIT | Hugging Face |
+| bangla-heteronym-banglabert | no disponible | no disponible | 99,46 % | no disponible | Hugging Face |
 | Clasificador XLM-R-large (misma data) | no disponible | no disponible | 98,43 % | no disponible | no disponible |
 
 El autor recomienda `bangla-heteronym-banglabert` para la mayoría de usos por su mayor precisión (99,46 %) y menor latencia (12,5 ms en T4). No se dispone de comparativas con modelos de terceros.
@@ -92,7 +92,7 @@ El autor recomienda `bangla-heteronym-banglabert` para la mayoría de usos por s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kawshikbuet17/bangla-heteronym-xlm-roberta-large-candidate
+- Modelo en Hugging Face: https://huggingface.co/kawshikbuet17/bangla-heteronym-xlm-roberta-large-candidate
 - Modelo recomendado: https://huggingface.co/kawshikbuet17/bangla-heteronym-banglabert
 - Dataset: https://huggingface.co/datasets/kawshikbuet17/bangla-heteronyms
 - Repositorio del benchmark: https://github.com/kawshikbuet17/bangla-heteronym-benchmark

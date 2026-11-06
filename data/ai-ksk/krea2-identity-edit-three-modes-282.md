@@ -91,7 +91,7 @@ No disponible. La documentación proporcionada no incluye comparaciones con otro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AI-KSK/krea2-identity-edit-three-modes-282
+- Repositorio en Hugging Face: https://huggingface.co/AI-KSK/krea2-identity-edit-three-modes-282
 - Flujo 01, RunningHub internacional: https://www.runninghub.ai/zh-cn/post/2079889925343891458?inviteCode=rh-v1111
 - Flujo 01, RunningHub China: https://www.runninghub.cn/post/2079889925343891458/?inviteCode=rh-v1111
 - Flujo 01, Civitai: https://civitai.com/models/3033050

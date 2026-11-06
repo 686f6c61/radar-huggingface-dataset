@@ -71,10 +71,10 @@ Resultados de replay nativo con el árbol fijado de Arena 0.7.0 y runner 5, coma
 
 | Modelo | Parametros | Contexto | Rendimiento (media, cm) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (h2, 63aab429) | no disponible (989 948 bytes) | no aplica | 166.6911780834198 | Apache-2.0 solo herencia | HuggingFace (jrubiosainz) |
-| HlibPlakhtii/microduck-tug-quicksilver-v14 | no disponible (960 584 bytes) | no aplica | 166.57612562179565 | Apache-2.0 (contribución heredada) | HuggingFace (HlibPlakhtii) |
-| jrubiosainz/microduck-tug-lphat-c2-s1s5 | no disponible | no aplica | no disponible | no disponible | HuggingFace (jrubiosainz) |
-| lphatnguyen/microduck-tug-of-war-v0 | no disponible | no aplica | no disponible | no disponible | HuggingFace (lphatnguyen) |
+| Este modelo (h2, 63aab429) | no disponible (989 948 bytes) | no aplica | 166.6911780834198 | Apache-2.0 solo herencia | Hugging Face (jrubiosainz) |
+| HlibPlakhtii/microduck-tug-quicksilver-v14 | no disponible (960 584 bytes) | no aplica | 166.57612562179565 | Apache-2.0 (contribución heredada) | Hugging Face (HlibPlakhtii) |
+| jrubiosainz/microduck-tug-lphat-c2-s1s5 | no disponible | no aplica | no disponible | no disponible | Hugging Face (jrubiosainz) |
+| lphatnguyen/microduck-tug-of-war-v0 | no disponible | no aplica | no disponible | no disponible | Hugging Face (lphatnguyen) |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ Resultados de replay nativo con el árbol fijado de Arena 0.7.0 y runner 5, coma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-tug-quicksilver-v14-h2-63aab429
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-tug-quicksilver-v14-h2-63aab429
 - Modelo base: https://huggingface.co/HlibPlakhtii/microduck-tug-quicksilver-v14/tree/a2f41160287beb86c23e287030a69f4e2226180f
 - Model card del base: https://huggingface.co/HlibPlakhtii/microduck-tug-quicksilver-v14/blob/a2f41160287beb86c23e287030a69f4e2226180f/BASE_MODEL_CARD.md
 - Modelo intermedio: https://huggingface.co/jrubiosainz/microduck-tug-lphat-c2-s1s5/tree/46d9c19697dbe10acfb04317c7c0931d991dc41c

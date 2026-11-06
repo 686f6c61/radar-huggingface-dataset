@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LatentPort-4+27B | No disponible (compone Qwen3.5-4B y Qwen3.8-27B) | No disponible | No disponible | Repo de puente en HuggingFace; requiere runtime compatible |
-| Qwen3.5-4B | 4B (segun denominacion) | No disponible | No disponible | HuggingFace |
-| Qwen3.8-27B | 27B (segun denominacion) | No disponible | No disponible | HuggingFace |
+| LatentPort-4+27B | No disponible (compone Qwen3.5-4B y Qwen3.8-27B) | No disponible | No disponible | Repo de puente en Hugging Face; requiere runtime compatible |
+| Qwen3.5-4B | 4B (segun denominacion) | No disponible | No disponible | Hugging Face |
+| Qwen3.8-27B | 27B (segun denominacion) | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de otros modelos comparables en la informacion proporcionada.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento ni de otros modelos comparables en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/latentport/latentport-4-27b-research-preview
+- Repositorio Hugging Face: https://huggingface.co/latentport/latentport-4-27b-research-preview
 - Companion GGUF: https://huggingface.co/latentport/latentport-4-27b-research-preview-GGUF
 - Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

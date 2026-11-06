@@ -92,7 +92,7 @@ No se dispone de datos sobre otros modelos abliterados de Qwen3-VL de terceros p
 
 ## Enlaces
 
-- Repositorio HuggingFace (este repo): https://huggingface.co/DreamFast/Qwen3-VL-4b-Heretic-ComfyUI
+- Repositorio Hugging Face (este repo): https://huggingface.co/DreamFast/Qwen3-VL-4b-Heretic-ComfyUI
 - Repositorio principal (transformers/vLLM): https://huggingface.co/DreamFast/Qwen3-VL-4b-Heretic
 - Repositorio GGUF (llama.cpp/Ollama): https://huggingface.co/DreamFast/Qwen3-VL-4b-Heretic-GGUF
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct

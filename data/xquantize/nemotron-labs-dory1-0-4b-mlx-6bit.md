@@ -18,7 +18,7 @@ Es relevante ahora porque demuestra empiricamente dos cosas utiles para quien de
 | Longitud de contexto | No disponible (la implementacion usa ventanas deslizantes de 1.024 tokens en 27 capas) |
 | Tipos de cuantizacion | 6 bits (esta build); el autor publica tambien bf16, 8 bits y 4 bits |
 | Idiomas soportados | No disponible |
-| Licencia | OpenMDW-1.1 (etiquetada como `other` en HuggingFace) |
+| Licencia | OpenMDW-1.1 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (MLX), 3,2 GB, 6,5 bits por peso |
 
 ## Arquitectura y entrenamiento
@@ -97,12 +97,12 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de Dor
 - El error de cuantizacion se acumula con los bucles en la variante de 4 bits (KL de 0,113 a 0,128); en 6 y 8 bits no se ha medido acumulacion, pero la muestra es limitada.
 - Riesgo de alucinacion y sesgos: no documentados en la informacion disponible.
 - Idiomas soportados no declarados; no se puede garantizar calidad fuera del ingles sin evaluacion propia.
-- Licencia OpenMDW-1.1: conviene revisar el texto completo antes de uso comercial, ya que HuggingFace la etiqueta como `other`.
+- Licencia OpenMDW-1.1: conviene revisar el texto completo antes de uso comercial, ya que Hugging Face la etiqueta como `other`.
 - Las mediciones proceden de un unico equipo (M3 Pro, 18 GB) y, en el caso de la comparativa cualitativa de k, de una sola pregunta; no constituyen un benchmark representativo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xquantize/nemotron-labs-dory1.0-4b-mlx-6bit
+- Repositorio Hugging Face: https://huggingface.co/xquantize/nemotron-labs-dory1.0-4b-mlx-6bit
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16
 - PR de mlx-lm que anade soporte: https://github.com/ml-explore/mlx-lm/pull/1988
 - Script de medida del autor: https://huggingface.co/xquantize/nemotron-labs-dory1.0-4b-mlx-6bit (referencia a `bench_dory.py` en la model card)

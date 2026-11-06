@@ -21,7 +21,7 @@ La relevancia actual de este modelo radica en la creciente necesidad de proteger
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en `meta-llama/Llama-Prompt-Guard-2-22M`, un encoder transformer de 22 millones de parámetros diseñado por Meta para clasificar prompts. El fine-tuning añade una capa de clasificación binaria, lo que eleva el total a 70,8 millones de parámetros. Los tags de HuggingFace indican que la arquitectura subyacente es DeBERTa-v2, aunque no se confirma si el modelo base original usa exactamente esa variante. El entrenamiento se realizó con una sola época, un learning rate de 2e-05, batch size efectivo de 4 (con acumulación de gradientes de 2), optimizador AdamW y scheduler lineal. Se usó precisión mixta nativa (AMP). El dataset de entrenamiento no está especificado en la model card, lo que impide conocer la composición y el volumen de datos.
+El modelo se basa en `meta-llama/Llama-Prompt-Guard-2-22M`, un encoder transformer de 22 millones de parámetros diseñado por Meta para clasificar prompts. El fine-tuning añade una capa de clasificación binaria, lo que eleva el total a 70,8 millones de parámetros. Los tags de Hugging Face indican que la arquitectura subyacente es DeBERTa-v2, aunque no se confirma si el modelo base original usa exactamente esa variante. El entrenamiento se realizó con una sola época, un learning rate de 2e-05, batch size efectivo de 4 (con acumulación de gradientes de 2), optimizador AdamW y scheduler lineal. Se usó precisión mixta nativa (AMP). El dataset de entrenamiento no está especificado en la model card, lo que impide conocer la composición y el volumen de datos.
 
 No se menciona el uso de RLHF, DPO ni otras técnicas de alineación. El proceso es un fine-tuning supervisado estándar para clasificación de texto. La pérdida de validación final fue de 0,1929, con F1 de 0,9596 y accuracy de 0,964, según los datos reportados por el autor.
 
@@ -66,9 +66,9 @@ Estos valores corresponden al conjunto de evaluación usado por el autor, pero n
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nebaee/stage1_binary_checkpoints | 70,8M | no disponible | Clasificación binaria de prompts | other | HuggingFace |
-| meta-llama/Llama-Prompt-Guard-2-22M | 22M | no disponible | Clasificación de prompts (inyección, jailbreak, etc.) | Llama License | HuggingFace |
-| ProtectAI/deberta-v3-base-prompt-injection | 184M | 512 tokens | Detección de inyección de prompts | MIT | HuggingFace |
+| Nebaee/stage1_binary_checkpoints | 70,8M | no disponible | Clasificación binaria de prompts | other | Hugging Face |
+| meta-llama/Llama-Prompt-Guard-2-22M | 22M | no disponible | Clasificación de prompts (inyección, jailbreak, etc.) | Llama License | Hugging Face |
+| ProtectAI/deberta-v3-base-prompt-injection | 184M | 512 tokens | Detección de inyección de prompts | MIT | Hugging Face |
 
 El modelo base de Meta tiene menos parámetros y una licencia más clara (Llama License), mientras que el de ProtectAI es más grande y está específicamente entrenado para inyección de prompts. El modelo de Nebaee añade una capa de clasificación binaria, pero su licencia "other" es ambigua y su rendimiento comparativo no está documentado.
 
@@ -84,6 +84,6 @@ El modelo base de Meta tiene menos parámetros y una licencia más clara (Llama 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nebaee/stage1_binary_checkpoints
+- Modelo en Hugging Face: https://huggingface.co/Nebaee/stage1_binary_checkpoints
 - Modelo base: https://huggingface.co/meta-llama/Llama-Prompt-Guard-2-22M
 - Repositorio de configuración relacionado (referencia externa): https://github.com/Povendhan-robotics/ai_competition_housekeeping/blob/main/configs/stage1_binary.yaml

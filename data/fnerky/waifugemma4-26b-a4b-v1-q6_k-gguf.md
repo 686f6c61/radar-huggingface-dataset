@@ -99,7 +99,7 @@ No se han publicado comparaciones con alternativas de la misma categoría en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/fnerky/WaifuGemma4-26b-a4b-v1-Q6_K-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/fnerky/WaifuGemma4-26b-a4b-v1-Q6_K-GGUF
 - Modelo base: https://huggingface.co/hiwaifu-research/WaifuGemma4-26b-a4b-v1
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

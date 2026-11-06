@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mohanad-builds-ai/medical-01-lora` es un repositorio de modelo publicado en HuggingFace por el usuario `mohanad-builds-ai`. La informacion verificable disponible se limita a la licencia declarada (MIT) y a los metadatos del repositorio: cero descargas, cero likes, y fechas de creacion y ultima actualizacion identicas (14 de septiembre de 2026), lo que indica una publicacion reciente sin actividad posterior ni validacion por parte de la comunidad.
+`mohanad-builds-ai/medical-01-lora` es un repositorio de modelo publicado en Hugging Face por el usuario `mohanad-builds-ai`. La informacion verificable disponible se limita a la licencia declarada (MIT) y a los metadatos del repositorio: cero descargas, cero likes, y fechas de creacion y ultima actualizacion identicas (14 de septiembre de 2026), lo que indica una publicacion reciente sin actividad posterior ni validacion por parte de la comunidad.
 
 La model card del autor esta practicamente vacia: unicamente contiene la declaracion de licencia `mit`, sin descripcion del modelo, del proceso de entrenamiento, del dataset utilizado ni de las capacidades esperadas. El identificador del repositorio sugiere, por su nomenclatura, un adaptador LoRA orientado al dominio medico, pero esta interpretacion no esta confirmada por ninguna fuente y debe tratarse como una hipotesis, no como un dato.
 
@@ -68,7 +68,7 @@ No disponible. Sin conocer el modelo base, el numero de parametros ni la tarea o
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mohanad-builds-ai/medical-01-lora | no disponible | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| mohanad-builds-ai/medical-01-lora | no disponible | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No disponible. Sin conocer el modelo base, el numero de parametros ni la tarea o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mohanad-builds-ai/medical-01-lora
+- Hugging Face: https://huggingface.co/mohanad-builds-ai/medical-01-lora
 - Model card: no disponible (unicamente contiene la declaracion de licencia `mit`)
 - Paper: no disponible
 - Repositorio de codigo: no disponible

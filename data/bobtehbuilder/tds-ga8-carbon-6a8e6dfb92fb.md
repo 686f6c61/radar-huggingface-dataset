@@ -56,6 +56,6 @@ No se dispone de información para comparar este modelo con alternativas de la m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-6a8eaf6b92fb
+- Repositorio en Hugging Face: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-6a8eaf6b92fb
 - Repositorio de GitHub (posiblemente relacionado): https://github.com/24f1000999/tds-2025-ga8 (no se ha confirmado su relación)
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

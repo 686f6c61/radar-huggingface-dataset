@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-pdu-seed0` es un checkpoint de investigación derivado de Llama 3.1 8B Instruct, publicado por el usuario de HuggingFace `sungjuncho`. No es un modelo de propósito general nuevo, sino el resultado de aplicar una técnica de *machine unlearning* denominada PDU (implementada en la librería [open-unlearning](https://github.com/locuslab/open-unlearning)) sobre un modelo previamente ajustado con el dataset TOFU-para. El objetivo es eliminar el conocimiento asociado a un conjunto de olvido (*forget set*) de 400 pares pregunta-respuesta, manteniendo al mismo tiempo la utilidad general del modelo.
+`Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-pdu-seed0` es un checkpoint de investigación derivado de Llama 3.1 8B Instruct, publicado por el usuario de Hugging Face `sungjuncho`. No es un modelo de propósito general nuevo, sino el resultado de aplicar una técnica de *machine unlearning* denominada PDU (implementada en la librería [open-unlearning](https://github.com/locuslab/open-unlearning)) sobre un modelo previamente ajustado con el dataset TOFU-para. El objetivo es eliminar el conocimiento asociado a un conjunto de olvido (*forget set*) de 400 pares pregunta-respuesta, manteniendo al mismo tiempo la utilidad general del modelo.
 
 La relevancia de este checkpoint es metodológica: forma parte de la colección TOFU-para, que distingue explícitamente entre *untraining* (eliminar las muestras exactas que vio el método de olvido) y *unlearning* (eliminar el conocimiento subyacente, que el modelo también aprendió en otras formulaciones parafraseadas). Esta distinción permite evaluar si las técnicas de olvido generalizan más allá de las muestras concretas, un problema central para el cumplimiento normativo (derecho al olvido, RGPD) y para la investigación en privacidad de modelos.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`...-unlearned-forget10-pdu-seed0`) | 8,03 B | no disponible | Llama 3.1 8B Instruct con olvido PDU sobre forget10 | llama3.1 | HuggingFace, 0 descargas |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0` | 8,03 B | no disponible | Modelo de partida, ajustado con TOFU + 2 paráfrasis (sin olvido) | llama3.1 | HuggingFace |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0` | 8,03 B | no disponible | Referencia de retención usada en la evaluación | llama3.1 | HuggingFace |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para-seed0` | 8,03 B | no disponible | Referencia de *untraining* | llama3.1 | HuggingFace |
+| Este modelo (`...-unlearned-forget10-pdu-seed0`) | 8,03 B | no disponible | Llama 3.1 8B Instruct con olvido PDU sobre forget10 | llama3.1 | Hugging Face, 0 descargas |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0` | 8,03 B | no disponible | Modelo de partida, ajustado con TOFU + 2 paráfrasis (sin olvido) | llama3.1 | Hugging Face |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0` | 8,03 B | no disponible | Referencia de retención usada en la evaluación | llama3.1 | Hugging Face |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para-seed0` | 8,03 B | no disponible | Referencia de *untraining* | llama3.1 | Hugging Face |
 
 Los tres modelos comparables pertenecen a la misma colección TOFU-para del mismo autor y difieren únicamente en el conjunto de ajuste y en la aplicación o no de olvido, lo que los convierte en las referencias naturales para interpretar las métricas FADE.
 
@@ -89,11 +89,11 @@ Los tres modelos comparables pertenecen a la misma colección TOFU-para del mism
 - Licencia: Llama 3.1 Community License, con restricciones de uso comercial y obligaciones de atribución ("Built with Llama"); revisar los términos antes de cualquier despliegue.
 - Trazabilidad limitada: 0 descargas y 0 *likes* en el momento de la consulta; no hay revisión comunitaria ni resultados de terceros que validen las métricas reportadas.
 - Métricas dependientes del protocolo: FADE y forget quality solo son comparables dentro del mismo marco TOFU-para y con las mismas referencias; no deben interpretarse como garantías absolutas de olvido.
-- Fecha de creación anómala (2026-11-03) en los metadatos de HuggingFace; conviene verificar la integridad del repositorio antes de reutilizarlo.
+- Fecha de creación anómala (2026-11-03) en los metadatos de Hugging Face; conviene verificar la integridad del repositorio antes de reutilizarlo.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-pdu-seed0)
+- [Modelo en Hugging Face](https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-pdu-seed0)
 - [Modelo base: Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0](https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0)
 - [Dataset TOFU-para](https://huggingface.co/datasets/sungjuncho/TOFU-para)
 - [Colección TOFU-para (untraining vs unlearning)](https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4)

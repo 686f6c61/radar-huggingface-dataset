@@ -80,7 +80,7 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa. La 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| causalvla-fair-v1-m5-v2-warm-070-spatial | 450.046.176 | no disponible | no disponible | no disponible | safetensors en HuggingFace, 0 descargas |
+| causalvla-fair-v1-m5-v2-warm-070-spatial | 450.046.176 | no disponible | no disponible | no disponible | safetensors en Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la busqueda web modelos comparables con datos verificables asociados a esta publicacion.
@@ -101,6 +101,6 @@ No se han identificado en la busqueda web modelos comparables con datos verifica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/phawitbinabik/causalvla-fair-v1-m5-v2-warm-070-spatial
+- Modelo en Hugging Face: https://huggingface.co/phawitbinabik/causalvla-fair-v1-m5-v2-warm-070-spatial
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - Resultados de la busqueda web: las consultas realizadas no devolvieron ningun enlace relacionado con este modelo. Los unicos resultados obtenidos correspondian a hilos de Reddit sobre un sitio de descargas de software ajeno por completo a este repositorio, por lo que se descartan como fuentes.

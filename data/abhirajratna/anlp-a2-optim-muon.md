@@ -81,9 +81,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Arquitectura | Optimizador | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| abhirajratna/anlp-a2-optim-muon | 33,56M | Transformer decoder-only denso (8 capas, d_model 512, 8 cabezas, MLP 2048) | Muon (desde cero) | no disponible | no disponible | HuggingFace |
-| abhirajratna/anlp-a2-optim-lion | mismo diseno (variante v1) | Transformer decoder-only denso | Lion (desde cero) | no disponible | no disponible | HuggingFace |
-| siddarthg44/anlp-a2-p2-muon | mismo diseno (Parte 1 denso) | Transformer decoder-only denso | Muon (desde cero) | no disponible | no disponible | HuggingFace |
+| abhirajratna/anlp-a2-optim-muon | 33,56M | Transformer decoder-only denso (8 capas, d_model 512, 8 cabezas, MLP 2048) | Muon (desde cero) | no disponible | no disponible | Hugging Face |
+| abhirajratna/anlp-a2-optim-lion | mismo diseno (variante v1) | Transformer decoder-only denso | Lion (desde cero) | no disponible | no disponible | Hugging Face |
+| siddarthg44/anlp-a2-p2-muon | mismo diseno (Parte 1 denso) | Transformer decoder-only denso | Muon (desde cero) | no disponible | no disponible | Hugging Face |
 
 Los tres modelos comparten arquitectura y dataset (`browndw/human-ai-parallel-corpus`), diferenciandose esencialmente en el optimizador empleado. No se dispone de comparativas frente a modelos de proposito general de tamano similar.
 
@@ -97,12 +97,12 @@ Los tres modelos comparten arquitectura y dataset (`browndw/human-ai-parallel-co
 - Longitud de contexto desconocida: la model card no especifica la ventana de contexto, y la evaluacion se limita a continuaciones de 64 tokens.
 - Dataset especifico: entrenado exclusivamente sobre `browndw/human-ai-parallel-corpus`, lo que sesga su distribucion hacia ese corpus y no hacia texto general.
 - Sin alineacion: no se documenta RLHF, DPO ni filtrado de seguridad; puede generar contenido inapropiado o sesgado.
-- Sin pipeline declarado: la ausencia de `pipeline` en HuggingFace y de pesos en formatos de inferencia estandar complica su uso directo con herramientas como vLLM o llama.cpp.
+- Sin pipeline declarado: la ausencia de `pipeline` en Hugging Face y de pesos en formatos de inferencia estandar complica su uso directo con herramientas como vLLM o llama.cpp.
 - Reproducibilidad dependiente del codigo: la carga requiere el directorio `code` con `part1.model`, lo que puede no estar incluido en el repositorio si este solo contiene pesos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhirajratna/anlp-a2-optim-muon
+- Modelo en Hugging Face: https://huggingface.co/abhirajratna/anlp-a2-optim-muon
 - Modelo comparativo con optimizador Lion: https://huggingface.co/abhirajratna/anlp-a2-optim-lion
 - Modelo comparativo Muon (otro autor): https://huggingface.co/siddarthg44/anlp-a2-p2-muon
 - Dataset de entrenamiento: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus

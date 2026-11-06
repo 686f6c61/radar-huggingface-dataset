@@ -2,7 +2,7 @@
 
 ## Resumen
 
-farhadabas/test-tra-1 es un ajuste fino (fine-tune) del modelo Qwen/Qwen3-0.6B orientado a traduccion automatica, publicado por el usuario farhadabas en HuggingFace. El modelo se distribuye como una exportacion de un LoRA fusionado y posteriormente cuantizado, empaquetado en un unico archivo `model.litertlm` de 315 485 328 bytes (aproximadamente 0,3 GB), lo que lo situa en la categoria de modelos muy pequenos pensados para ejecucion en dispositivo (on-device).
+farhadabas/test-tra-1 es un ajuste fino (fine-tune) del modelo Qwen/Qwen3-0.6B orientado a traduccion automatica, publicado por el usuario farhadabas en Hugging Face. El modelo se distribuye como una exportacion de un LoRA fusionado y posteriormente cuantizado, empaquetado en un unico archivo `model.litertlm` de 315 485 328 bytes (aproximadamente 0,3 GB), lo que lo situa en la categoria de modelos muy pequenos pensados para ejecucion en dispositivo (on-device).
 
 La relevancia de esta ficha es limitada y conviene ser explicito: el repositorio acumula 0 descargas y 0 likes, no incluye datos de entrenamiento, no declara idiomas soportados y su model card es una plantilla generica de procedencia ("Model provenance"). El nombre `test-tra-1` sugiere un experimento de prueba mas que un artefacto listo para produccion, por lo que debe tratarse como material de evaluacion, no como una dependencia estable.
 
@@ -98,7 +98,7 @@ La busqueda web realizada no devolvio resultados relacionados con este modelo: l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/farhadabas/test-tra-1
+- Modelo en Hugging Face: https://huggingface.co/farhadabas/test-tra-1
 - Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Revision concreta del modelo base usada para el ajuste: https://huggingface.co/Qwen/Qwen3-0.6B/tree/c1899de289a04d12100db370d81485cdf75e47ca
 - Enlaces de la busqueda web: no se encontraron resultados relevantes para este modelo. Los unicos enlaces recuperados (organizacion EdupageAPI en GitHub, edupage-api y temas relacionados con EduPage) corresponden a un sistema de gestion escolar y no guardan relacion con el modelo.

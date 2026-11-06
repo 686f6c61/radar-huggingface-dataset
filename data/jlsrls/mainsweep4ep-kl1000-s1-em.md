@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mainsweep4ep-kl1000-s1-em es un ajuste fino (SFT) del modelo unsloth/Llama-3.2-1B-Instruct, publicado por el usuario jlsrls en HuggingFace. Se trata por tanto de un transformer decoder-only de tipo Llama 3.2, con aproximadamente 1.240 millones de parametros, entrenado mediante aprendizaje supervisado con la libreria TRL y el stack de Unsloth, segun los metadatos y la model card del repositorio.
+mainsweep4ep-kl1000-s1-em es un ajuste fino (SFT) del modelo unsloth/Llama-3.2-1B-Instruct, publicado por el usuario jlsrls en Hugging Face. Se trata por tanto de un transformer decoder-only de tipo Llama 3.2, con aproximadamente 1.240 millones de parametros, entrenado mediante aprendizaje supervisado con la libreria TRL y el stack de Unsloth, segun los metadatos y la model card del repositorio.
 
 El modelo no incluye informacion sobre el dataset de entrenamiento, la composicion de los datos, el numero de tokens vistos ni la configuracion de hiperparametros. La unica traza del entrenamiento es un enlace a una ejecucion de Weights & Biases alojada en el proyecto "clarifying-em" de la organizacion rezvani-portland-state-university. El repositorio ocupa 2,3 GB y contiene pesos en formato safetensors, compatibles con el pipeline de transformers y con endpoints de inferencia.
 
@@ -97,7 +97,7 @@ Diferencias relevantes: frente al modelo base, este ajuste no aporta informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/mainsweep4ep-kl1000-s1-em
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/mainsweep4ep-kl1000-s1-em
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/3m4m1tub
 - Repositorio de TRL: https://github.com/huggingface/trl

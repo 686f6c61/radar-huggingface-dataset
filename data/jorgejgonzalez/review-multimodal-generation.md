@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jorgejgonzalez/review-multimodal-generation` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en HuggingFace. El propio autor lo describe como un artefacto exploratorio sobre generación multimodal que recoge el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados y requisitos de reproducibilidad. La model card es explícita: no reclama mejoras en benchmarks, no incluye ablaciones completas, no publica código ni un checkpoint entrenado.
+`jorgejgonzalez/review-multimodal-generation` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en Hugging Face. El propio autor lo describe como un artefacto exploratorio sobre generación multimodal que recoge el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados y requisitos de reproducibilidad. La model card es explícita: no reclama mejoras en benchmarks, no incluye ablaciones completas, no publica código ni un checkpoint entrenado.
 
 El repositorio está etiquetado con `safetensors`, `transformer` y `multimodal-generation`, pero estas etiquetas son meramente declarativas. Los archivos listados en la model card son únicamente `notes.md` y `README.md`, y el tamaño del repositorio es de 0,0 GB. El dato de parámetros reportado por el manifiesto de safetensors es de 16.576, una magnitud no coherente con ningún modelo funcional ni con la arquitectura que sugieren las etiquetas.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 ## Comparativa con modelos similares
 
-No procede comparativa de rendimiento porque el repositorio no es un modelo. A continuación se contrasta con otros formatos de publicación en HuggingFace para contextualizar su naturaleza:
+No procede comparativa de rendimiento porque el repositorio no es un modelo. A continuación se contrasta con otros formatos de publicación en Hugging Face para contextualizar su naturaleza:
 
 | Elemento | Tipo | Pesos | Uso en produccion | Licencia |
 |---|---|---|---|---|
@@ -84,5 +84,5 @@ No procede comparativa de rendimiento porque el repositorio no es un modelo. A c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jorgejgonzalez/review-multimodal-generation
+- Repositorio en Hugging Face: https://huggingface.co/jorgejgonzalez/review-multimodal-generation
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos, demos) en la búsqueda web disponible.

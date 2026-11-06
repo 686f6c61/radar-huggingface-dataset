@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 | Qwen2.5-3B-Instruct | 3B | 32.768 tokens | Multilingue amplio | Apache 2.0 (Qwen Research para algunos tamanos) | Mayor capacidad general, pero sin ajuste especifico en sasak |
 | Llama 3.2 1B Instruct | 1B | 128.000 tokens | Multilingue (8 idiomas oficiales) | Llama 3.2 Community License | No cubre lenguas regionales de Indonesia |
 
-La comparativa directa con otros modelos ajustados a sasak no esta disponible en la informacion proporcionada; no se conocen alternativas publicas equivalentes para esta lengua en el ecosistema HuggingFace segun los datos consultados.
+La comparativa directa con otros modelos ajustados a sasak no esta disponible en la informacion proporcionada; no se conocen alternativas publicas equivalentes para esta lengua en el ecosistema Hugging Face segun los datos consultados.
 
 ## Limitaciones y advertencias
 
@@ -85,7 +85,7 @@ La comparativa directa con otros modelos ajustados a sasak no esta disponible en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kodetr/SasakLLM-1.5B-Instruct-v2
+- Modelo en Hugging Face: https://huggingface.co/kodetr/SasakLLM-1.5B-Instruct-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de Qwen2.5: https://github.com/QwenLM/Qwen2.5
 - Paper de Qwen2.5: https://arxiv.org/abs/2412.15115

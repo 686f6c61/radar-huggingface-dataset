@@ -45,7 +45,7 @@ El entrenamiento se realizó sobre un corpus masivo multilingüe que cubre más 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye métricas de calidad de voz (MOS, SIM, etc.) ni comparativas con otros modelos TTS. La documentación del proyecto OmniVoice menciona "alta calidad" y "velocidad superior", pero no proporciona números concretos.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye métricas de calidad de voz (MOS, SIM, etc.) ni comparativas con otros modelos TTS. La documentación del proyecto OmniVoice menciona "alta calidad" y "velocidad superior", pero no proporciona números concretos.
 
 ## Requisitos de hardware
 
@@ -77,7 +77,7 @@ La comparativa se basa en las características generales de cada modelo, no en b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrangelov/OmniVoice-onnx-sidefix
+- Repositorio Hugging Face: https://huggingface.co/mrangelov/OmniVoice-onnx-sidefix
 - Repositorio original de OmniVoice (k2-fsa): https://github.com/k2-fsa/OmniVoice
 - Conversión ONNX de referencia (Prince-1): https://huggingface.co/Prince-1/OmniVoice-Onnx
 - Conversión ONNX alternativa (gluschenko): https://huggingface.co/gluschenko/omnivoice-onnx

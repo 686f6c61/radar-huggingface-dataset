@@ -94,7 +94,7 @@ No se han publicado otros benchmarks (MOS humano, WER de inteligibilidad, SIM-O,
 
 | Modelo | Parámetros | Contexto | UTMOS | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| AuroraTTS-100K | 95,6 K | No aplica (entrada fonémica) | 3,530 ± 0,267 | Apache-2.0 | HuggingFace, vía `transformers` con código remoto |
+| AuroraTTS-100K | 95,6 K | No aplica (entrada fonémica) | 3,530 ± 0,267 | Apache-2.0 | Hugging Face, vía `transformers` con código remoto |
 | Sano TTS (amy) | 1,46 M | No disponible | 4,047 ± 0,230 | No disponible | No disponible |
 | Sano TTS (heart-nano) | 294,3 K | No disponible | 2,351 ± 0,290 | No disponible | No disponible |
 
@@ -117,7 +117,7 @@ Lectura de la comparativa: frente a Sano TTS (amy), con 15,3 veces más parámet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AuroraAI-Research/AuroraTTS-100K
+- Modelo en Hugging Face: https://huggingface.co/AuroraAI-Research/AuroraTTS-100K
 - Dataset de entrenamiento (LJSpeech): https://huggingface.co/datasets/keithito/lj_speech
 - Repositorio de g2p_en (frontend de fonemización, referenciado en la model card): https://github.com/Kyubyong/g2p
 - PyWorld (extracción de F0, referenciado en la model card): https://github.com/JeremyCCHsu/Python-Wrapper-for-World-Vocoder

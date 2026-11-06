@@ -75,7 +75,7 @@ La comparacion cuantitativa de rendimiento no es posible porque Vertex-Core-Math
 - El ejemplo de la model card esta redactado en espanol pero el prompt template oficial esta en ingles; el rendimiento real en espanol no esta verificado.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Denisijcu/vertex-core-math-gguf
+- Hugging Face: https://huggingface.co/Denisijcu/vertex-core-math-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Unsloth (libreria de ajuste fino): https://github.com/unslothai/unsloth
 - llama.cpp (runtime GGUF): https://github.com/ggml-org/llama.cpp

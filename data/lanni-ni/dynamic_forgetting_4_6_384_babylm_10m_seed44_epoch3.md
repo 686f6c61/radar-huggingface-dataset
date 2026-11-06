@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch3` es un modelo de lenguaje generativo de tamaño pequeño, con 45.703.320 parámetros, publicado por el usuario `Lanni-ni` en HuggingFace. Aunque la model card es un plantilla autogenerada y no contiene información detallada, el identificador del repositorio sugiere que el modelo fue entrenado en el contexto de la iniciativa BabyLM, que evalúa el aprendizaje del lenguaje con corpus limitados (10 millones de palabras). La cadena `dynamic_forgetting` apunta a un posible uso de una técnica de olvido dinámico durante el entrenamiento, aunque no se ha publicado ninguna descripción al respecto.
+El modelo `dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch3` es un modelo de lenguaje generativo de tamaño pequeño, con 45.703.320 parámetros, publicado por el usuario `Lanni-ni` en Hugging Face. Aunque la model card es un plantilla autogenerada y no contiene información detallada, el identificador del repositorio sugiere que el modelo fue entrenado en el contexto de la iniciativa BabyLM, que evalúa el aprendizaje del lenguaje con corpus limitados (10 millones de palabras). La cadena `dynamic_forgetting` apunta a un posible uso de una técnica de olvido dinámico durante el entrenamiento, aunque no se ha publicado ninguna descripción al respecto.
 
 El modelo se distribuye en formato `safetensors` y está etiquetado para `text-generation` con la librería `transformers`. Sin embargo, no se dispone de datos sobre su arquitectura, idiomas, licencia, procedimiento de entrenamiento ni benchmarks. En consecuencia, su relevancia actual es limitada: puede resultar de interés para el estudio experimental de modelos pequeños y técnicas de regularización, pero no es apto para producción sin una evaluación exhaustiva previa.
 
@@ -27,7 +27,7 @@ No se han proporcionado datos sobre la composición del dataset, el número tota
 
 ## Capacidades
 
-- Generacion de texto: el modelo está declarado con el pipeline `text-generation` de HuggingFace.
+- Generacion de texto: el modelo está declarado con el pipeline `text-generation` de Hugging Face.
 - No se han documentado capacidades adicionales como razonamiento, generacion de codigo, matematicas, vision, tool calling, agentes o modo de pensamiento.
 - No se ha especificado el soporte multilingue.
 
@@ -62,6 +62,6 @@ No disponible. No se han proporcionado modelos comparables ni datos de rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch3
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch3
 - Paper referenciado en los metadatos (Lacoste et al. 2019, sobre impacto ambiental; probablemente un artefacto de la plantilla): https://arxiv.org/abs/1910.09700
 - No se han encontrado otros enlaces relevantes (repositorios, papers, demos o blogs).

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "pgmharikrishnan/Ripple-65B-Preview-amd-serve-hybrid-GGUF",
+  "slug": "pgmharikrishnan-ripple-65b-preview-amd-serve-hybrid-gguf",
+  "author": "pgmharikrishnan",
+  "url": "https://huggingface.co/pgmharikrishnan/Ripple-65B-Preview-amd-serve-hybrid-GGUF",
+  "created_at": "2026-11-06T05:35:48.000Z",
+  "updated_at": "2026-11-06T05:35:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "amd",
+    "vulkan",
+    "hybrid-quant",
+    "amd-serve",
+    "base_model:ricursiveAI/Ripple-65B-Preview",
+    "base_model:finetune:ricursiveAI/Ripple-65B-Preview",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "ricursiveAI/Ripple-65B-Preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

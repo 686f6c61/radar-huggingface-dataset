@@ -24,7 +24,7 @@ El modelo admite un modo de correccion (`fix`) y un modo de reescritura con cinc
 | Token EOS | `<|im_end|>` |
 | Formato de prompt | ChatML |
 | Pipeline | text-generation |
-| Fecha de publicacion | 13 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 13 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -43,7 +43,7 @@ No se documentan innovaciones de inferencia (decodificacion especulativa, atenci
 - Deteccion de texto ya correcto (filas no-op), con una precision de no-op del 94 por ciento en la evaluacion interna.
 - Capacidad restringida a un unico idioma (ingles) y sin soporte declarado de traduccion.
 - No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito.
-- Formato conversacional compatible con endpoints y con el pipeline `text-generation` de HuggingFace.
+- Formato conversacional compatible con endpoints y con el pipeline `text-generation` de Hugging Face.
 
 ## Casos de uso
 
@@ -103,7 +103,7 @@ Los datos del modelo base corresponden al mismo conjunto de evaluacion de 150 fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hanish/quill-fix-v1
+- Modelo en Hugging Face: https://huggingface.co/Hanish/quill-fix-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Runtime requerido (llama.cpp): https://github.com/ggml-org/llama.cpp
 

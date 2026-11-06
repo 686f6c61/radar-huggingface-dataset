@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AIProver-119b es un modelo de lenguaje de tipo mezcla de expertos (MoE) con 119.000 millones de parámetros totales y aproximadamente 6.000 millones activos por token, publicado por el usuario prithwish-jana en HuggingFace. Está especializado en demostración automática de teoremas en Lean 4 y en autoformalización, es decir, la traducción de enunciados matemáticos en lenguaje natural a código Lean 4 verificable.
+AIProver-119b es un modelo de lenguaje de tipo mezcla de expertos (MoE) con 119.000 millones de parámetros totales y aproximadamente 6.000 millones activos por token, publicado por el usuario prithwish-jana en Hugging Face. Está especializado en demostración automática de teoremas en Lean 4 y en autoformalización, es decir, la traducción de enunciados matemáticos en lenguaje natural a código Lean 4 verificable.
 
 El modelo declara una ventana de contexto de hasta 1.048.576 tokens, pesos en FP8 (e4m3) y formato consolidado de Mistral, y se distribuye bajo licencia AGPL-3.0. La model card indica que se apoya en un modelo base con licencia Apache-2.0 cuyos términos se respetan, aunque no identifica ese modelo base. El repositorio ocupa 120,1 GB.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AIProver-119b | 119B (MoE, 128+1 expertos) | ~6B | 1.048.576 tokens | AGPL-3.0 | HuggingFace, formato FP8 consolidado de Mistral, para vLLM |
-| DeepSeek-Prover-V2-671B | 671B (MoE) | 37B | 163.840 tokens | Licencia de modelo DeepSeek | HuggingFace, ampliamente utilizado en demostración formal |
-| Kimina-Prover-72B | 72B (denso) | 72B | no disponible | Apache-2.0 | HuggingFace, basado en la familia Qwen2.5-72B |
-| Goedel-Prover-V2 | no disponible | no disponible | no disponible | no disponible | HuggingFace, orientado a Lean 4 |
+| AIProver-119b | 119B (MoE, 128+1 expertos) | ~6B | 1.048.576 tokens | AGPL-3.0 | Hugging Face, formato FP8 consolidado de Mistral, para vLLM |
+| DeepSeek-Prover-V2-671B | 671B (MoE) | 37B | 163.840 tokens | Licencia de modelo DeepSeek | Hugging Face, ampliamente utilizado en demostración formal |
+| Kimina-Prover-72B | 72B (denso) | 72B | no disponible | Apache-2.0 | Hugging Face, basado en la familia Qwen2.5-72B |
+| Goedel-Prover-V2 | no disponible | no disponible | no disponible | no disponible | Hugging Face, orientado a Lean 4 |
 
 No se dispone de resultados comparativos de rendimiento entre AIProver-119b y estos modelos, ya que el primero no publica métricas. La comparación anterior se limita a parámetros, contexto, licencia y disponibilidad según información pública de cada proyecto.
 
@@ -91,7 +91,7 @@ No se dispone de resultados comparativos de rendimiento entre AIProver-119b y es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/prithwish-jana/aiprover-119b
+- Hugging Face: https://huggingface.co/prithwish-jana/aiprover-119b
 - Paper: no disponible
 - Repositorio de código: no disponible (la model card indica que se publicará por separado)
 - Demo: no disponible

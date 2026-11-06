@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`olusegunola/qwen2.5-1.5b-primekg-sft-seed101` es un checkpoint publicado en HuggingFace por el usuario `olusegunola` bajo la librería `transformers`. El repositorio no incluye model card real: el README es la plantilla automática de HuggingFace, con todos los campos marcados como `[More Information Needed]`. Por tanto, no hay información declarada por el autor sobre arquitectura, datos de entrenamiento, licencia, idiomas ni uso previsto. El repositorio registra 0 descargas y 0 likes, y un tamaño de 0,0 GB, lo que sugiere que se trata de una publicación reciente, automatizada o posiblemente incompleta (sin pesos subidos o con pesos de tamaño despreciable según la métrica del Hub).
+`olusegunola/qwen2.5-1.5b-primekg-sft-seed101` es un checkpoint publicado en Hugging Face por el usuario `olusegunola` bajo la librería `transformers`. El repositorio no incluye model card real: el README es la plantilla automática de Hugging Face, con todos los campos marcados como `[More Information Needed]`. Por tanto, no hay información declarada por el autor sobre arquitectura, datos de entrenamiento, licencia, idiomas ni uso previsto. El repositorio registra 0 descargas y 0 likes, y un tamaño de 0,0 GB, lo que sugiere que se trata de una publicación reciente, automatizada o posiblemente incompleta (sin pesos subidos o con pesos de tamaño despreciable según la métrica del Hub).
 
 El único contenido informativo es el propio identificador del modelo, que sigue la convención `-<dataset>-<metodo>-<semilla>`: apunta a un ajuste supervisado (SFT) sobre `Qwen2.5-1.5B` usando como fuente de datos PrimeKG, un grafo de conocimiento de medicina de precisión, con semilla 101. Esta lectura es una inferencia razonable a partir del nombre, no un dato confirmado en la model card. La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde a Lacoste et al. (calculadora de impacto de carbono) y procede de la plantilla automática, no de una referencia técnica del modelo.
 
@@ -78,7 +78,7 @@ Los datos de las alternativas proceden de sus respectivas model cards públicas 
 |---|---|---|---|---|---|
 | `olusegunola/qwen2.5-1.5b-primekg-sft-seed101` | no disponible (~1,5 B inferidos) | no disponible | no disponible | Repo de 0,0 GB, 0 descargas | Sin model card, sin evaluación |
 | Qwen2.5-1.5B-Instruct | 1,54 B | 32 768 tokens (131 072 con YaRN) | Apache 2.0 | Ampliamente disponible, con GGUF y cuantizaciones | Base probable del checkpoint; licencia no heredable automáticamente |
-| BioMistral-7B | 7 B | 8 192 tokens (según Mistral base) | Apache 2.0 | Disponible en HuggingFace | Alternativa biomédica de mayor tamaño y coste |
+| BioMistral-7B | 7 B | 8 192 tokens (según Mistral base) | Apache 2.0 | Disponible en Hugging Face | Alternativa biomédica de mayor tamaño y coste |
 | Llama-3.2-1B-Instruct | 1,24 B | 128 000 tokens | Llama 3.2 Community License | Disponible, con cuantizaciones | Alternativa generalista de tamaño comparable, no especializada en biomedicina |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ Los datos de las alternativas proceden de sus respectivas model cards públicas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-sft-seed101
+- Modelo en Hugging Face: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-sft-seed101
 - Referencia del paper etiquetado en el repositorio (Lacoste et al., calculadora de impacto de carbono, procedente de la plantilla automática): https://arxiv.org/abs/1910.09700
 - Qwen2.5-1.5B (modelo base probable, no citado en la model card): https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Qwen2.5-1.5B-Instruct (modelo base probable de la variante instruct, no citado): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

@@ -56,8 +56,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| queen_hce-4 | 3.075.256.320 + encoder LC0 | No disponible | Tablero via cross-attention Flamingo + encoder LC0 | No disponible (componentes upstream con sus terminos) | HuggingFace, runner de inferencia incluido |
-| SmolLM3-3B (base) | ~3B | No disponible en esta informacion | Solo texto | Apache-2.0 | HuggingFace |
+| queen_hce-4 | 3.075.256.320 + encoder LC0 | No disponible | Tablero via cross-attention Flamingo + encoder LC0 | No disponible (componentes upstream con sus terminos) | Hugging Face, runner de inferencia incluido |
+| SmolLM3-3B (base) | ~3B | No disponible en esta informacion | Solo texto | Apache-2.0 | Hugging Face |
 | Motor de ajedrez clasico (Stockfish, Leela) | No disponible | No aplica | Estado del tablero nativo | Segun proyecto | Binarios independientes |
 
 Comparativas de rendimiento con alternativas de analisis de ajedrez: no disponible.
@@ -74,7 +74,7 @@ Comparativas de rendimiento con alternativas de analisis de ajedrez: no disponib
 - Sesgos concretos: no disponibles en la informacion proporcionada.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/princeton-nlp/queen_hce-4
+- Hugging Face: https://huggingface.co/princeton-nlp/queen_hce-4
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Leela Chess Zero (origen del encoder de tablero): https://lczero.org/
 - Paper o blog del proyecto: no disponible

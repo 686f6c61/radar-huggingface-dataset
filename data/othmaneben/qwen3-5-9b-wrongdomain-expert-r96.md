@@ -81,7 +81,7 @@ No se dispone de datos publicados sobre adaptadores comparables en la informacio
 
 | Elemento comparado | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (DoRA r=96 sobre Qwen/Qwen3.5-9B) | No disponible (base de 9B; adaptador no cuantificado) | No disponible | No publicado | apache-2.0 | Repositorio HuggingFace, 0 descargas |
+| Este adaptador (DoRA r=96 sobre Qwen/Qwen3.5-9B) | No disponible (base de 9B; adaptador no cuantificado) | No disponible | No publicado | apache-2.0 | Repositorio Hugging Face, 0 descargas |
 | Qwen/Qwen3.5-9B sin adaptador | 9B segun el nombre del modelo | No disponible | No disponible en esta informacion | No disponible en esta informacion | Modelo base referenciado, enlace no proporcionado |
 | Otros adaptadores LoRA o DoRA publicos para modelos Qwen de ~9B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -102,7 +102,7 @@ Como referencia metodologica, y no como dato de rendimiento de este artefacto, D
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/OthmaneBen/qwen3.5-9b-wrongdomain-expert-r96
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/OthmaneBen/qwen3.5-9b-wrongdomain-expert-r96
 - Modelo base referenciado: Qwen/Qwen3.5-9B (no se ha proporcionado la URL en la informacion disponible)
 - Submission asociada: entropy-4582293, "Fine-Tuning Shifts Form Before Competence" (no se ha proporcionado la URL en la informacion disponible)
 - Repositorio de codigo del paper con la configuracion de entrenamiento, el pipeline de datos y los artefactos de evaluacion: mencionado en la model card, no se ha proporcionado la URL

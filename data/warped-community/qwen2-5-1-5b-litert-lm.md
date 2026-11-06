@@ -25,7 +25,7 @@ Su relevancia es práctica y acotada: permite ejecutar un modelo instructivo de 
 | Tamaño del repositorio | 1,6 GB |
 | Autores | warped-community (mantenimiento para la aplicación Warped) |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación (metadatos de HuggingFace) | 2026-10-03 |
+| Fecha de creación (metadatos de Hugging Face) | 2026-10-03 |
 
 ## Arquitectura y entrenamiento
 
@@ -75,10 +75,10 @@ La comparación se establece contra alternativas de tamaño y propósito equival
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen2.5-1.5B-Instruct (base de este espejo) | 1,54 mil millones | 32.768 tokens | Apache-2.0 | HuggingFace, GGUF, MLX, LiteRT | Origen del artefacto aquí publicado; multilingüe declarado |
-| Llama-3.2-1B-Instruct | 1,24 mil millones | 128.000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace, GGUF, MLX | Contexto mucho mayor, pero licencia con condiciones de uso y restricciones para algunas regiones |
-| Gemma-2-2B-it | 2,6 mil millones | 8.192 tokens | Licencia de Gemma | HuggingFace, GGUF, MLX | Más parámetros y buen rendimiento en inglés, contexto más corto y licencia con obligaciones de uso aceptable |
-| SmolLM2-1.7B-Instruct | 1,7 mil millones | 8.192 tokens | Apache-2.0 | HuggingFace, GGUF, MLX | Alternativa permisiva de tamaño similar, orientada a inglés y sin variante LiteRT oficial |
+| Qwen2.5-1.5B-Instruct (base de este espejo) | 1,54 mil millones | 32.768 tokens | Apache-2.0 | Hugging Face, GGUF, MLX, LiteRT | Origen del artefacto aquí publicado; multilingüe declarado |
+| Llama-3.2-1B-Instruct | 1,24 mil millones | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face, GGUF, MLX | Contexto mucho mayor, pero licencia con condiciones de uso y restricciones para algunas regiones |
+| Gemma-2-2B-it | 2,6 mil millones | 8.192 tokens | Licencia de Gemma | Hugging Face, GGUF, MLX | Más parámetros y buen rendimiento en inglés, contexto más corto y licencia con obligaciones de uso aceptable |
+| SmolLM2-1.7B-Instruct | 1,7 mil millones | 8.192 tokens | Apache-2.0 | Hugging Face, GGUF, MLX | Alternativa permisiva de tamaño similar, orientada a inglés y sin variante LiteRT oficial |
 
 No se dispone de datos de benchmarks comparativos en la información proporcionada para respaldar qué modelo rinde mejor en cada tarea.
 
@@ -95,11 +95,11 @@ No se dispone de datos de benchmarks comparativos en la información proporciona
 - Formato cerrado al ecosistema: el fichero `.litertlm` solo se ejecuta con LiteRT-LM. No se puede cargar en llama.cpp, vLLM ni Ollama sin volver al checkpoint original y reconvertirlo.
 - Licencia: Apache-2.0 permite uso comercial y modificación, pero obliga a conservar avisos de copyright y el fichero NOTICE, y no implica ninguna garantía ni respaldo por parte de Alibaba Qwen ni de Google.
 - Mantenimiento de terceros: el repositorio lo mantiene warped-community para una aplicación concreta; no hay compromiso de actualizaciones, corrección de errores ni soporte.
-- Sin metadatos verificables de creación real: la fecha de creación del repositorio en HuggingFace es 2026-10-03, dato que conviene tratar solo como referencia administrativa de la plataforma.
+- Sin metadatos verificables de creación real: la fecha de creación del repositorio en Hugging Face es 2026-10-03, dato que conviene tratar solo como referencia administrativa de la plataforma.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/warped-community/Qwen2.5-1.5B-litert-lm
+- Repositorio en Hugging Face: https://huggingface.co/warped-community/Qwen2.5-1.5B-litert-lm
 - Artefacto de origen en LiteRT Community: https://huggingface.co/litert-community/Qwen2.5-1.5B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Informe técnico de Qwen2.5: https://arxiv.org/abs/2412.15115

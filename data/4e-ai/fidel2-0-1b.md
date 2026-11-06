@@ -102,7 +102,7 @@ La comparación directa de calidad no es posible: Fidel2.0-1B no publica resulta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/4E-AI/Fidel2.0-1B
+- Modelo en Hugging Face: https://huggingface.co/4E-AI/Fidel2.0-1B
 - Modelo base: https://huggingface.co/4E-AI/Fidel1.1-1B
 - Dataset de entrenamiento: https://huggingface.co/datasets/4E-AI/Fidel-Competitive-coding
 - Runtime de compatibilidad: https://huggingface.co/4E-AI/Fidel2.0-1B/resolve/main/compatibility/fidel_compatibility-0.3.0.dev0-py3-none-any.whl

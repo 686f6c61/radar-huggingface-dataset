@@ -98,7 +98,7 @@ Los datos de los modelos comparados proceden de su documentacion publica y deben
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SolenopsisCampo/Xing4.0-29B-A4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/SolenopsisCampo/Xing4.0-29B-A4B-GGUF
 - Modelo base (pesos originales): https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B
 - Modelo base (GGUF de referencia): https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B-GGUF
 - Paper, blog o demo del modelo: no disponible

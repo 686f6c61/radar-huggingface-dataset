@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Base | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SuperklokStyleLoRAv2 | LoRA de estilo | SD 3.5 Large | 1344x768 nativo | Other (comercial con atribución) | HuggingFace, 26 descargas |
-| LoRA de estilo comunitario sobre SD 3.5 | LoRA de estilo | SD 3.5 Large | no disponible | Variable según autor | HuggingFace |
-| Stable Diffusion 3.5 Large (base) | Modelo completo | — | no disponible en esta ficha | Stability AI Community License | HuggingFace |
-| Adaptadores de estilo sobre SDXL | LoRA de estilo | SDXL | 1024x1024 habitual | Variable | HuggingFace |
+| SuperklokStyleLoRAv2 | LoRA de estilo | SD 3.5 Large | 1344x768 nativo | Other (comercial con atribución) | Hugging Face, 26 descargas |
+| LoRA de estilo comunitario sobre SD 3.5 | LoRA de estilo | SD 3.5 Large | no disponible | Variable según autor | Hugging Face |
+| Stable Diffusion 3.5 Large (base) | Modelo completo | — | no disponible en esta ficha | Stability AI Community License | Hugging Face |
+| Adaptadores de estilo sobre SDXL | LoRA de estilo | SDXL | 1024x1024 habitual | Variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Superklok/SuperklokStyleLoRAv2
+- Modelo en Hugging Face: https://huggingface.co/Superklok/SuperklokStyleLoRAv2
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-3.5-large
 - Repositorio GitHub del autor: https://github.com/Superklok/SuperklokStyleLoRAv2
 - Portfolio en GitHub: https://github.com/Superklok

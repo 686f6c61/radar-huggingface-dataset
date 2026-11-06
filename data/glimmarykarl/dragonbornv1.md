@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DragonbornV1 es un modelo publicado en HuggingFace por el autor GlimmaryKarl. Según la información disponible, se trata de un repositorio que contiene un archivo de pesos en formato safetensors con un total de 3.421.440 parámetros y un tamaño de 0,6 GB. Esta cifra de parámetros es característica de un adaptador LoRA para modelos de difusión de imágenes, más que de un modelo de lenguaje autónomo. Sin embargo, la model card del autor no ofrece detalles sobre la arquitectura, el modelo base o el proceso de entrenamiento.
+DragonbornV1 es un modelo publicado en Hugging Face por el autor GlimmaryKarl. Según la información disponible, se trata de un repositorio que contiene un archivo de pesos en formato safetensors con un total de 3.421.440 parámetros y un tamaño de 0,6 GB. Esta cifra de parámetros es característica de un adaptador LoRA para modelos de difusión de imágenes, más que de un modelo de lenguaje autónomo. Sin embargo, la model card del autor no ofrece detalles sobre la arquitectura, el modelo base o el proceso de entrenamiento.
 
-El nombre del modelo y los resultados de búsqueda sugieren una posible relación con el personaje de fantasía "dragonborn" y con la plataforma Civitai, donde existe un modelo titulado "dragonborn - V1" etiquetado como Pony Diffusion LoRA. No obstante, no se puede confirmar que ambos sean el mismo modelo, ya que la información de HuggingFace no incluye descripción ni pipeline.
+El nombre del modelo y los resultados de búsqueda sugieren una posible relación con el personaje de fantasía "dragonborn" y con la plataforma Civitai, donde existe un modelo titulado "dragonborn - V1" etiquetado como Pony Diffusion LoRA. No obstante, no se puede confirmar que ambos sean el mismo modelo, ya que la información de Hugging Face no incluye descripción ni pipeline.
 
 La licencia declarada es OpenRAIL, que permite el uso comercial con restricciones específicas. Dado que no se publican más datos, la ficha se limita a lo estrictamente documentado y marca como "no disponible" los campos sin información oficial.
 
@@ -27,7 +27,7 @@ La información disponible no especifica la arquitectura del modelo. El número 
 
 ## Capacidades
 
-No se han publicado capacidades oficiales para este modelo. Basándose en el nombre y en la existencia de un modelo similar en Civitai, se puede inferir que podría estar orientado a la generación de imágenes con temática de fantasía, pero esta afirmación no está respaldada por la documentación de HuggingFace. Las siguientes viñetas reflejan lo que se puede deducir de forma prudente:
+No se han publicado capacidades oficiales para este modelo. Basándose en el nombre y en la existencia de un modelo similar en Civitai, se puede inferir que podría estar orientado a la generación de imágenes con temática de fantasía, pero esta afirmación no está respaldada por la documentación de Hugging Face. Las siguientes viñetas reflejan lo que se puede deducir de forma prudente:
 
 - Generacion de imagenes: posiblemente destinado a generar ilustraciones de personajes fantásticos, como dragones o "dragonborn", aunque no hay evidencia oficial.
 - Sin soporte documentado de tool calling, agentes, razonamiento multi-paso o capacidades multilingues.
@@ -73,6 +73,6 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GlimmaryKarl/DragonbornV1
+- Hugging Face: https://huggingface.co/GlimmaryKarl/DragonbornV1
 - Perfil de GlimmaryKarl: https://huggingface.co/GlimmaryKarl
 - Referencia en Civitai (modelo de nombre similar, no confirmado como el mismo): https://civitai.com/models/643857/dragonborn

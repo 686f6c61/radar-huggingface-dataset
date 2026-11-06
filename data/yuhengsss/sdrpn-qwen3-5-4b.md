@@ -91,14 +91,14 @@ No se dispone de información sobre otros modelos comparables de propuesta de re
 - **Benchmarks autodeclarados**: las cifras proceden del propio autor, con protocolo alineado al entrenamiento (métricas de reglas, sin juez) y límite de fuente de 576 tokens. No hay verificación independiente disponible.
 - **Sesgos**: no se documenta ningún análisis de sesgo, de sesgo de género, racial ni cultural. Al heredar el backbone Qwen3.5-4B y entrenar solo el twig, los sesgos del backbone se mantienen íntegros.
 - **Alucinación**: no se publican tasas de alucinación ni evaluaciones de fidelidad. El twig añade una fuente adicional de error: una propuesta de región incorrecta puede llevar al backbone a describir una zona irrelevante.
-- **Idiomas**: no se declara ningún conjunto de idiomas soportados; la ficha de HuggingFace no incluye el campo de idiomas.
+- **Idiomas**: no se declara ningún conjunto de idiomas soportados; la ficha de Hugging Face no incluye el campo de idiomas.
 - **Contexto**: la longitud de contexto no está disponible, lo que impide planificar cargas con secuencias largas o muchas sub-imágenes simultáneas.
 - **Licencia**: Apache 2.0 permite uso comercial, pero la obligación práctica de distribuir y mantener el código de modelado del repositorio VisionRL2 (cuya licencia no se detalla en la información aportada) es un riesgo legal que conviene verificar antes de un despliegue comercial.
 - **Cuantización**: no se publican pesos cuantizados; cualquier GGUF, AWQ o GPTQ sería una conversión de terceros y podría romper la ruta de *gating* del twig, que no es un transformer estándar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YuhengSSS/SDRPN-Qwen3.5-4B
+- Modelo en Hugging Face: https://huggingface.co/YuhengSSS/SDRPN-Qwen3.5-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Checkpoint de etapa 2 (Vision-RL²): https://huggingface.co/YuhengSSS/VisionRL2-Qwen3.5-4B
 - Código: https://github.com/YuHengsss/VisionRL2
@@ -108,4 +108,4 @@ No se dispone de información sobre otros modelos comparables de propuesta de re
 - Paper Vision-RL²: https://arxiv.org/abs/2609.19745
 - Paper SD-RPN: https://arxiv.org/abs/2509.16944
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de Hugging Face.

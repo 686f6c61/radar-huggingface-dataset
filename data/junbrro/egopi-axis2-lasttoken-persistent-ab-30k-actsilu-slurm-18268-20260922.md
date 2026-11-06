@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`egopi-axis2-lasttoken-persistent-AB-30k-actsilu-slurm-18268-20260922` es un checkpoint de pesos publicado por el usuario `junbrro` en HuggingFace. Se trata de un modelo de aproximadamente 6.915 millones de parametros (6,9 B) almacenado en formato safetensors, con un tamano de repositorio de 13,9 GB. La model card es extremadamente escueta: indica que corresponde al paso final 30.000 de un entrenamiento cuyo origen se identifica con el identificador "18268" y que se incluyen unicamente los pesos finales y la configuracion, excluyendo el estado del optimizador y del generador de numeros aleatorios.
+`egopi-axis2-lasttoken-persistent-AB-30k-actsilu-slurm-18268-20260922` es un checkpoint de pesos publicado por el usuario `junbrro` en Hugging Face. Se trata de un modelo de aproximadamente 6.915 millones de parametros (6,9 B) almacenado en formato safetensors, con un tamano de repositorio de 13,9 GB. La model card es extremadamente escueta: indica que corresponde al paso final 30.000 de un entrenamiento cuyo origen se identifica con el identificador "18268" y que se incluyen unicamente los pesos finales y la configuracion, excluyendo el estado del optimizador y del generador de numeros aleatorios.
 
 El nombre del repositorio aporta pistas sobre el proceso de entrenamiento (persistencia de "last token", sufijo "actsilu", identificador de job de Slurm y fecha 2026-09-22), pero la model card no documenta arquitectura, dataset, objetivo de entrenamiento ni procedimiento de alineacion. La unica etiqueta tecnica presente es `RLDX-1`, que no viene acompanada de explicacion alguna. Se menciona ademas un directorio `actlat/` que contendria un "tokenizer de acciones" cuando sea aplicable, lo que sugiere un pipeline orientado a agentes o a generacion de acciones, sin que esto pueda confirmarse con la informacion disponible.
 
@@ -80,7 +80,7 @@ No disponible. No es posible establecer una comparativa fiable con modelos de la
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos publicados |
 |---|---|---|---|---|---|
-| egopi-axis2-lasttoken-persistent-AB-30k (este modelo) | 6,9 B | no disponible | no disponible | HuggingFace, 0 descargas | model card minima, sin benchmarks |
+| egopi-axis2-lasttoken-persistent-AB-30k (este modelo) | 6,9 B | no disponible | no disponible | Hugging Face, 0 descargas | model card minima, sin benchmarks |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No disponible. No es posible establecer una comparativa fiable con modelos de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junbrro/egopi-axis2-lasttoken-persistent-AB-30k-actsilu-slurm-18268-20260922
+- Modelo en Hugging Face: https://huggingface.co/junbrro/egopi-axis2-lasttoken-persistent-AB-30k-actsilu-slurm-18268-20260922
 - Perfil del autor: https://huggingface.co/junbrro
 - Paper: no disponible
 - Blog o anuncio: no disponible

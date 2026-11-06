@@ -33,7 +33,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 
 - Generacion de texto conversacional: el adaptador esta disenado para producir respuestas en formato dialogico, probablemente con cinco estilos o personalidades distintas (segun el nombre del repositorio).
 - Fine-tuning eficiente: al ser un adaptador LoRA, puede combinarse con el modelo base Qwen3-8B para obtener las capacidades generales del modelo (razonamiento, codigo, matematicas) con un ajuste especifico para la tarea objetivo.
-- Compatibilidad con el ecosistema PEFT: se puede cargar con la libreria `peft` de HuggingFace y combinar con el modelo base mediante `PeftModel.from_pretrained`.
+- Compatibilidad con el ecosistema PEFT: se puede cargar con la libreria `peft` de Hugging Face y combinar con el modelo base mediante `PeftModel.from_pretrained`.
 - Capacidades del modelo base: al heredar las capacidades de Qwen3-8B, el adaptador puede aprovechar el soporte multilingue, la generacion de codigo y el razonamiento del modelo base, aunque no se ha verificado que estas capacidades se mantengan intactas tras el ajuste.
 - No se ha documentado soporte para tool calling, function calling, agentes, vision o audio en la informacion disponible.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: el adaptador en si requiere muy poca memoria (0,3 GB), pero al combinarse con el modelo base Qwen3-8B, la VRAM necesaria depende de la cuantizacion del modelo base. Con cuantizacion bnb-4bit, se estima un consumo de aproximadamente 5-6 GB de VRAM para inferencia.
 - GPU recomendadas: el adaptador puede ejecutarse en GPUs de consumo como RTX 3060 (12 GB), RTX 4070 (12 GB) o RTX 4090 (24 GB). Para mayor velocidad, se recomienda una GPU con al menos 16 GB de VRAM.
 - Compatibilidad con consumer GPUs: si, el adaptador esta disenado para funcionar en GPUs de consumo gracias a la cuantizacion 4-bit del modelo base.
-- Opciones de despliegue: se puede utilizar con la libreria `transformers` de HuggingFace, `vLLM` para inferencia de alto rendimiento, `llama.cpp` para CPU o GPU, y `Ollama` si se convierte el modelo a formato GGUF.
+- Opciones de despliegue: se puede utilizar con la libreria `transformers` de Hugging Face, `vLLM` para inferencia de alto rendimiento, `llama.cpp` para CPU o GPU, y `Ollama` si se convierte el modelo a formato GGUF.
 - Latencia y throughput: no disponible. Dependera del hardware utilizado y de la cuantizacion del modelo base.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ La comparativa se limita al modelo base y a una alternativa de tamano similar, y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/svvkii/qwen3-8b-5persona-lora
+- Repositorio Hugging Face: https://huggingface.co/svvkii/qwen3-8b-5persona-lora
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL: https://github.com/huggingface/trl

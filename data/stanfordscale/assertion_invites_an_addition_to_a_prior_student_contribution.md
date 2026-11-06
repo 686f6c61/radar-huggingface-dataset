@@ -63,7 +63,7 @@ Metricas del `model-index` para el split de test: F1 0,3514, precision 0,4263, r
 - VRAM estimada para inferencia: el modelo completo tiene unos 109,5 millones de parametros, lo que equivale aproximadamente a 438 MB en FP32 y 219 MB en FP16. Cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de memoria libre es suficiente; tambien es viable en CPU.
 - Cabe en GPU consumer: si, en practicamente todas (desde una GTX 1050 en adelante, e incluso en CPU con latencias razonables para lotes pequenos).
-- Opciones de despliegue: `setfit` (via `SetFitModel.from_pretrained`), `sentence-transformers` para el cuerpo, HuggingFace Transformers para el encoder subyacente y exportacion a ONNX para servir en CPU. vLLM, llama.cpp u Ollama no aplican, al no ser un modelo generativo ni publicarse pesos GGUF.
+- Opciones de despliegue: `setfit` (via `SetFitModel.from_pretrained`), `sentence-transformers` para el cuerpo, Hugging Face Transformers para el encoder subyacente y exportacion a ONNX para servir en CPU. vLLM, llama.cpp u Ollama no aplican, al no ser un modelo generativo ni publicarse pesos GGUF.
 - Latencia y throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -72,8 +72,8 @@ No se han encontrado en la informacion proporcionada clasificadores de asercione
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| assertion_invites_an_addition_to_a_prior_student_contribution | 109.486.464 | no disponible (base: 128 tokens) | Clasificacion binaria de una asercion de discurso en aula | no disponible | HuggingFace (StanfordSCALE) |
-| sentence-transformers/paraphrase-mpnet-base-v2 | 109 millones aprox. | 128 tokens (modelo base) | Embeddings de frase y similitud semantica | Apache 2.0 (segun el modelo base) | HuggingFace |
+| assertion_invites_an_addition_to_a_prior_student_contribution | 109.486.464 | no disponible (base: 128 tokens) | Clasificacion binaria de una asercion de discurso en aula | no disponible | Hugging Face (StanfordSCALE) |
+| sentence-transformers/paraphrase-mpnet-base-v2 | 109 millones aprox. | 128 tokens (modelo base) | Embeddings de frase y similitud semantica | Apache 2.0 (segun el modelo base) | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ No se han encontrado en la informacion proporcionada clasificadores de asercione
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_invites_an_addition_to_a_prior_student_contribution
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_invites_an_addition_to_a_prior_student_contribution
 - Dataset: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (GitHub): https://github.com/SumnerLab/TalkMoves

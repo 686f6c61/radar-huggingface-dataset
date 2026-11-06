@@ -68,7 +68,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/biofold-jl/openfold3
+- Repositorio Hugging Face: https://huggingface.co/biofold-jl/openfold3
 - Blog de NVIDIA sobre OpenFold3 NIM: https://developer.nvidia.com/blog/how-to-predict-biomolecular-structures-using-the-openfold3-nim/
 - Repositorio GitHub de OpenFold3 (AlQuraishi Lab): https://github.com/aqlaboratory/openfold-3
 - Repositorio GitHub alternativo de OpenFold3: https://github.com/jurgjn/openfold3

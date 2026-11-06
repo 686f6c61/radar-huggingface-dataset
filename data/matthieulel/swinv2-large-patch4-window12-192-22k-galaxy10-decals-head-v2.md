@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swinv2-large-patch4-window12-192-22k-galaxy10-decals-head-v2` es un modelo de clasificación de imágenes desarrollado por el usuario de HuggingFace `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. Consiste en el backbone `microsoft/swinv2-large-patch4-window12-192-22k` adaptado a la clasificación de morfología de galaxias sobre el conjunto Galaxy10 DECaLS, que distingue diez clases morfológicas. La adaptación se ha realizado mediante *head-only fine-tuning*: el backbone permanece congelado (incluidas las estadísticas de sus capas de normalización) y solo se entrena una cabeza lineal de diez salidas.
+`swinv2-large-patch4-window12-192-22k-galaxy10-decals-head-v2` es un modelo de clasificación de imágenes desarrollado por el usuario de Hugging Face `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. Consiste en el backbone `microsoft/swinv2-large-patch4-window12-192-22k` adaptado a la clasificación de morfología de galaxias sobre el conjunto Galaxy10 DECaLS, que distingue diez clases morfológicas. La adaptación se ha realizado mediante *head-only fine-tuning*: el backbone permanece congelado (incluidas las estadísticas de sus capas de normalización) y solo se entrena una cabeza lineal de diez salidas.
 
 El modelo resuelve un problema concreto de astronomía observacional: clasificar automáticamente galaxias según su forma a partir de imágenes del sondeo DECaLS, una tarea que tradicionalmente requiere inspección visual humana y que se beneficia de la automatización a gran escala. Forma parte de un estudio comparativo más amplio (40 backbones preentrenados por dos regímenes de adaptación, 80 configuraciones en total) descrito en el artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026).
 
@@ -64,16 +64,16 @@ No se han publicado en la información disponible resultados comparativos frente
 - VRAM estimada para inferencia: el modelo tiene 195,2 millones de parámetros y 0,8 GB de pesos en fp32; la inferencia en fp32 requiere aproximadamente 1-2 GB de VRAM, incluyendo activaciones para lotes pequeños.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente; se ha entrenado y evaluado en una sola GPU (modelo base preentrenado en infraestructura de Microsoft no especificada).
 - Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060, RTX 4090 y similares; también en GPUs de portátil con suficiente memoria.
-- Opciones de despliegue: transformers (PyTorch), con soporte de `AutoModelForImageClassification` y `AutoImageProcessor`; el tag `endpoints_compatible` indica compatibilidad con los endpoints de HuggingFace. No se documentan exportaciones a ONNX, TensorRT ni otros runtimes.
+- Opciones de despliegue: transformers (PyTorch), con soporte de `AutoModelForImageClassification` y `AutoImageProcessor`; el tag `endpoints_compatible` indica compatibilidad con los endpoints de Hugging Face. No se documentan exportaciones a ONNX, TensorRT ni otros runtimes.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto / entrada | Accuracy en Galaxy10 DECaLS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (Swin V2 Large, head-only) | 195,2 M | imagen 192x192 px | 67,64 % (test) | Apache 2.0 | HuggingFace |
+| Este checkpoint (Swin V2 Large, head-only) | 195,2 M | imagen 192x192 px | 67,64 % (test) | Apache 2.0 | Hugging Face |
 | Resto de configuraciones del benchmark (39 backbones adicionales) | no disponible | no disponible | no disponible en esta ficha | no disponible | colección Vision Foundation Models Benchmark |
-| Swin V2 Large base (`microsoft/swinv2-large-patch4-window12-192-22k`) | ~197 M (arquitectura base) | imagen 192x192 px | no aplica (preentrenado en ImageNet-22k, sin cabeza de galaxias) | no disponible | HuggingFace |
+| Swin V2 Large base (`microsoft/swinv2-large-patch4-window12-192-22k`) | ~197 M (arquitectura base) | imagen 192x192 px | no aplica (preentrenado en ImageNet-22k, sin cabeza de galaxias) | no disponible | Hugging Face |
 
 No se dispone en la información proporcionada de resultados de los otros 39 backbones del benchmark ni de modelos alternativos específicos de clasificación morfológica de galaxias con los que comparar métricas de forma directa.
 
@@ -90,7 +90,7 @@ No se dispone en la información proporcionada de resultados de los otros 39 bac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/swinv2-large-patch4-window12-192-22k-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/swinv2-large-patch4-window12-192-22k-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/microsoft/swinv2-large-patch4-window12-192-22k
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

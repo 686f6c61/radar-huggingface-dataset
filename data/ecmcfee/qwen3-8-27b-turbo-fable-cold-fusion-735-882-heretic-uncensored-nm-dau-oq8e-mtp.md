@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una cuantizacion en 8 bits del modelo Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU, un modelo de lenguaje de aproximadamente 27.800 millones de parametros derivado de la familia Qwen 3.x (etiqueta de tipo declarada `qwen3_5`) y publicado por el usuario Ecmcfee en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos ya existentes a formato MLX safetensors en precision mixta de 8 bits, realizada con la herramienta oQ (oMLX v0.7.1.dev1), con tamano de grupo 64. El repositorio ocupa 30,0 GB y no registra descargas ni valoraciones en el momento de redactar esta ficha.
+Este repositorio contiene una cuantizacion en 8 bits del modelo Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU, un modelo de lenguaje de aproximadamente 27.800 millones de parametros derivado de la familia Qwen 3.x (etiqueta de tipo declarada `qwen3_5`) y publicado por el usuario Ecmcfee en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos ya existentes a formato MLX safetensors en precision mixta de 8 bits, realizada con la herramienta oQ (oMLX v0.7.1.dev1), con tamano de grupo 64. El repositorio ocupa 30,0 GB y no registra descargas ni valoraciones en el momento de redactar esta ficha.
 
 El modelo original del que procede es un fine-tune "uncensored" (abliterado o con rechazos eliminados) de la serie Qwen3.8-27B atribuido en fuentes externas a DavidAU / David Belton, con variantes publicadas en GGUF y con soporte de decodificacion especulativa multi-token (MTP) en algunas de sus versiones. La cadena nominal del nombre incluye terminos como "Heretic" y "Uncensored", que indican la eliminacion deliberada de comportamientos de rechazo, y "Fable-Cold-Fusion-735-882", que en el ecosistema de fine-tunes de DavidAU suele referirse a fusiones de datasets o adaptadores propietarios del autor.
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 
 | Modelo | Parametros | Contexto | Formato y cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ecmcfee/Qwen3.8-27B-...-oQ8e-mtp (este) | 27,8 B | Hasta 262.144 tokens (fuente externa, no confirmado) | MLX safetensors, 8 bits, grupo 64 | No disponible | HuggingFace, 0 descargas |
-| DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF | 27,8 B (mismo arbol) | No disponible en la informacion recogida | GGUF, quants IQ4_XS, Q4_K_M y otros; MTP en el nombre | No disponible | HuggingFace, con discusiones activas y soporte de comunidad |
+| Ecmcfee/Qwen3.8-27B-...-oQ8e-mtp (este) | 27,8 B | Hasta 262.144 tokens (fuente externa, no confirmado) | MLX safetensors, 8 bits, grupo 64 | No disponible | Hugging Face, 0 descargas |
+| DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF | 27,8 B (mismo arbol) | No disponible en la informacion recogida | GGUF, quants IQ4_XS, Q4_K_M y otros; MTP en el nombre | No disponible | Hugging Face, con discusiones activas y soporte de comunidad |
 | Modelo base Qwen3.8-27B sin abliterar | ~27,8 B | No disponible | BF16 safetensors y GGUF | No disponible | No localizado en la busqueda realizada |
 | Otras variantes abliteradas del mismo fine-tune (catalogo abliteratedmodels.org) | ~27,8 B | No disponible | GGUF | No disponible | Catalogos de terceros |
 
@@ -93,7 +93,7 @@ La comparacion cuantitativa de rendimiento no es posible: no hay benchmarks publ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ecmcfee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-oQ8e-mtp
+- Repositorio en Hugging Face: https://huggingface.co/Ecmcfee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-oQ8e-mtp
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Repositorio GGUF hermano de DavidAU: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Discusiones del repositorio hermano: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF/discussions

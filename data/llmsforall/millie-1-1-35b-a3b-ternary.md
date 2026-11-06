@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Millie-1.1-35B-A3B-Ternary es un modelo publicado en HuggingFace por el usuario llmsforall bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido técnico (el README se limita al bloque de frontmatter con la licencia), no tiene descargas ni interacciones registradas y no aparece documentación asociada en la búsqueda web realizada.
+Millie-1.1-35B-A3B-Ternary es un modelo publicado en Hugging Face por el usuario llmsforall bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido técnico (el README se limita al bloque de frontmatter con la licencia), no tiene descargas ni interacciones registradas y no aparece documentación asociada en la búsqueda web realizada.
 
 El identificador del modelo permite formular hipótesis, pero no confirmarlas: el sufijo "35B-A3B" sigue la convención habitual para modelos de mezcla de expertos (MoE) con unos 35.000 millones de parámetros totales y unos 3.000 millones activos por token, mientras que "Ternary" apunta a pesos ternarios (valores en el conjunto {-1, 0, +1}), una técnica de cuantización extrema del estilo BitNet b1.58. Ninguno de estos datos está verificado en la información disponible, por lo que deben tratarse como inferencias derivadas del nombre y no como especificaciones confirmadas.
 
@@ -68,7 +68,7 @@ No disponible. La búsqueda web realizada no ha devuelto información técnica s
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Millie-1.1-35B-A3B-Ternary | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace, sin descargas registradas |
+| Millie-1.1-35B-A3B-Ternary | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face, sin descargas registradas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Nota cualitativa: la familia públicamente documentada más cercana en enfoque son los modelos con pesos ternarios tipo BitNet b1.58, pero no se dispone de datos verificados que permitan una comparación con este repositorio.
@@ -87,7 +87,7 @@ Nota cualitativa: la familia públicamente documentada más cercana en enfoque s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/llmsforall/Millie-1.1-35B-A3B-Ternary
+- Repositorio en Hugging Face: https://huggingface.co/llmsforall/Millie-1.1-35B-A3B-Ternary
 - Paper o informe técnico: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de código: no disponible

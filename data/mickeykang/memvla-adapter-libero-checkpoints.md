@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MemVLA-Adapter LIBERO checkpoints es un repositorio de pesos publicado por el usuario mickeykang en HuggingFace que reúne 19 directorios de entrenamiento correspondientes a adaptadores LoRA afinados sobre OpenVLA, el modelo visión-lenguaje-acción (VLA) de código abierto para robótica. Los checkpoints provienen del fork MemVLA-Adapter (rama `final-release-v1-2026-05-04`) y se han evaluado sobre el benchmark LIBERO en su variante multi-vista de 9 cámaras. El repositorio no es un modelo entrenado desde cero, sino una colección de puntos de control reproducibles: cuatro de ellos "paper-final" y quince de ablación.
+MemVLA-Adapter LIBERO checkpoints es un repositorio de pesos publicado por el usuario mickeykang en Hugging Face que reúne 19 directorios de entrenamiento correspondientes a adaptadores LoRA afinados sobre OpenVLA, el modelo visión-lenguaje-acción (VLA) de código abierto para robótica. Los checkpoints provienen del fork MemVLA-Adapter (rama `final-release-v1-2026-05-04`) y se han evaluado sobre el benchmark LIBERO en su variante multi-vista de 9 cámaras. El repositorio no es un modelo entrenado desde cero, sino una colección de puntos de control reproducibles: cuatro de ellos "paper-final" y quince de ablación.
 
 El problema que aborda es doble. Por un lado, facilita la reproducibilidad de los resultados de un paper sobre memoria y adaptación en políticas VLA, algo poco habitual en robótica, donde los pesos rara vez se publican junto con las configuraciones exactas de entrenamiento. Por otro, expone variantes controladas que permiten estudiar el efecto de decisiones concretas de diseño, como el número de vistas de cámara, la aleatorización de cámara, el uso de pose y el residual con puerta (`pose_gated_residual`) aplicado en la capa 24 del backbone.
 
@@ -74,7 +74,7 @@ Para obtener cifras verificables habría que consultar el repositorio MemVLA-Ada
 - GPUs recomendadas: no declaradas. Para entrenamiento LoRA con los tamaños de lote indicados (32 y 64) y r=64, lo habitual es disponer de A100 40/80 GB o H100 80 GB; para inferencia en 16 bits, una RTX 4090 o RTX 3090 de 24 GB puede ser suficiente con lotes pequeños.
 - GPU de consumo: no confirmado por el autor. Es plausible en tarjetas de 24 GB en modo inferencia, pero no hay validación publicada en la información disponible.
 - Almacenamiento: el repositorio completo ocupa 44,4 GB. Conviene tener en cuenta que el tamaño es inferior al que resultaría de almacenar 19 copias de pesos fusionados de un VLA de gran tamaño, por lo que es probable que parte de las carpetas contengan únicamente el adaptador LoRA; la tarjeta no detalla qué contiene cada checkpoint.
-- Opciones de despliegue: los scripts del fork MemVLA-Adapter (`vla-scripts/finetune.py` para el guardado; scripts de evaluación que esperan las carpetas bajo `outputs/`) y el ecosistema de OpenVLA basado en HuggingFace Transformers. No se menciona compatibilidad con vLLM, TGI, Ollama ni llama.cpp.
+- Opciones de despliegue: los scripts del fork MemVLA-Adapter (`vla-scripts/finetune.py` para el guardado; scripts de evaluación que esperan las carpetas bajo `outputs/`) y el ecosistema de OpenVLA basado en Hugging Face Transformers. No se menciona compatibilidad con vLLM, TGI, Ollama ni llama.cpp.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ La información proporcionada no incluye métricas propias ni datos de los model
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| memvla-adapter-libero-checkpoints | Este repositorio | no disponible | no disponible | no disponible | Pesos publicados en HuggingFace, 0 descargas |
+| memvla-adapter-libero-checkpoints | Este repositorio | no disponible | no disponible | no disponible | Pesos publicados en Hugging Face, 0 descargas |
 | OpenVLA | Modelo base declarado del que parten los adaptadores LoRA | no disponible | no disponible | no disponible | Proyecto de código abierto, referenciado indirectamente |
 | MemVLA-Adapter / VLA-Adapter | Fork del que proceden los checkpoints | no disponible | no disponible | no disponible | Repositorio en GitHub (MinJunKang/MemVLA-Adapter) |
 | Otras politicas VLA para LIBERO | Alternativas de la misma tarea | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos de la tabla, por
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mickeykang/memvla-adapter-libero-checkpoints
+- Hugging Face: https://huggingface.co/mickeykang/memvla-adapter-libero-checkpoints
 - Repositorio del fork: https://github.com/MinJunKang/MemVLA-Adapter
 - Fichero de reproduccion: `REPRODUCE.md` (apartados §9–§10) en el repositorio anterior, citado en la tarjeta del modelo
 - Script de entrenamiento citado: `vla-scripts/finetune.py`

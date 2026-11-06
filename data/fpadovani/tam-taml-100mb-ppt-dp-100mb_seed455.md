@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tam-taml-100mb-ppt-Dp-100mb_seed455 es un ajuste fino supervisado (SFT) del modelo goldfish-models/tam_taml_100mb, publicado por el usuario fpadovani. La URL del experimento asociado en Weights & Biases apunta a la Universidad de Groninga, por lo que se trata de un artefacto de investigación más que de un modelo orientado a producto. La etiqueta de arquitectura declarada en HuggingFace es gpt2, de modo que el modelo pertenece a la familia de transformers decoder-only tipo GPT-2.
+tam-taml-100mb-ppt-Dp-100mb_seed455 es un ajuste fino supervisado (SFT) del modelo goldfish-models/tam_taml_100mb, publicado por el usuario fpadovani. La URL del experimento asociado en Weights & Biases apunta a la Universidad de Groninga, por lo que se trata de un artefacto de investigación más que de un modelo orientado a producto. La etiqueta de arquitectura declarada en Hugging Face es gpt2, de modo que el modelo pertenece a la familia de transformers decoder-only tipo GPT-2.
 
 El repositorio contiene 124.770.816 parámetros en formato safetensors, con un tamaño total de 0,5 GB, lo que lo sitúa en la gama de los modelos pequeños (aproximadamente 125 millones de parámetros). Esto implica que puede ejecutarse en CPU, en GPUs de consumo e incluso en dispositivos de borde, a cambio de una capacidad de razonamiento y de conocimiento factual muy limitada.
 
@@ -12,7 +12,7 @@ El identificador del modelo base (tam_taml) coincide con el código ISO 639-3 de
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parámetros totales | 124.770.816 (124,8 M) |
 | Parámetros activos | no aplica (modelo denso, no es MoE) |
 | Longitud de contexto | no disponible |
@@ -35,7 +35,7 @@ El procedimiento de entrenamiento es SFT (supervised fine-tuning) y no se report
 - Seguimiento de instrucciones en formato conversacional básico, según el ejemplo publicado en la model card (mensaje con rol `user` y parámetro `max_new_tokens`).
 - Generación de texto en tamil (y posiblemente en la variante romanizada), inferida del identificador del modelo base, no confirmada por el autor.
 - Ejecución en CPU y en GPUs de baja capacidad gracias a su tamaño reducido.
-- Compatibilidad declarada con Text Generation Inference y con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad declarada con Text Generation Inference y con endpoints de Hugging Face (`endpoints_compatible`).
 
 No hay evidencia de soporte de tool calling o function calling, razonamiento multi-paso orientado a agentes, capacidades de visión, audio, modo de pensamiento explícito ni contextos largos. Cualquier uso de estas capacidades queda fuera de lo documentado.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria, incluidas NVIDIA GTX 1050 Ti, RTX 3050, RTX 4090, A100 y H100. El modelo está muy por debajo de la capacidad de cualquiera de ellas; las GPU de gama alta no aportan ventaja más allá del throughput.
 - Compatibilidad con GPU de consumo: sí, cabe con holgura en cualquier GPU de consumo actual e incluso en iGPUs con memoria compartida.
 - CPU: funciona en CPU sin problemas; se recomienda al menos 4 GB de RAM y, opcionalmente, instrucciones AVX2/AVX-512 para acelerar las operaciones matriciales.
-- Opciones de despliegue: pipeline de Transformers, Text Generation Inference (etiqueta `text-generation-inference` en el repositorio), endpoints de HuggingFace y vLLM. Para llama.cpp, Ollama o LM Studio sería necesario convertir previamente los pesos a GGUF, conversión que no se distribuye en el repositorio.
+- Opciones de despliegue: pipeline de Transformers, Text Generation Inference (etiqueta `text-generation-inference` en el repositorio), endpoints de Hugging Face y vLLM. Para llama.cpp, Ollama o LM Studio sería necesario convertir previamente los pesos a GGUF, conversión que no se distribuye en el repositorio.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia por petición.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | fpadovani/tam-taml-100mb-ppt-Dp-100mb_seed455 | 124,8 M | no disponible | no disponible | 0 descargas, 0 likes | Ajuste SFT sobre el modelo base |
-| goldfish-models/tam_taml_100mb | no disponible (el ajuste conserva 124,8 M) | no disponible | no disponible | Modelo base público en HuggingFace | Corpus y evaluación no verificados en la información disponible |
+| goldfish-models/tam_taml_100mb | no disponible (el ajuste conserva 124,8 M) | no disponible | no disponible | Modelo base público en Hugging Face | Corpus y evaluación no verificados en la información disponible |
 | Otros modelos monolingües de ~125 M de la misma colección goldfish | ~100 M según el identificador | no disponible | no disponible | no disponible | No se dispone de datos comparativos de rendimiento |
 
 No se dispone de resultados de benchmarks que permitan comparar el rendimiento de este modelo con alternativas de la misma categoría.
@@ -88,7 +88,7 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/tam-taml-100mb-ppt-Dp-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/tam-taml-100mb-ppt-Dp-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/tam_taml_100mb
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/isfa6525
 - Repositorio de TRL (framework de entrenamiento): https://github.com/huggingface/trl

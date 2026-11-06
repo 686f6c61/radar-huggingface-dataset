@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PanoVLN es un repositorio de modelo publicado en HuggingFace por el usuario wangzhen-w bajo el identificador `wangzhen-w/PanoVLN`. En el momento de redactar esta ficha, la model card asociada no contiene mas contenido que la declaracion de licencia: no se documentan arquitectura, tamano, datos de entrenamiento, capacidades ni resultados. Los metadatos de HuggingFace indican 0 descargas y 0 likes, sin pipeline declarado y sin idiomas listados, lo que apunta a una publicacion reciente y sin traccion comunitaria.
+PanoVLN es un repositorio de modelo publicado en Hugging Face por el usuario wangzhen-w bajo el identificador `wangzhen-w/PanoVLN`. En el momento de redactar esta ficha, la model card asociada no contiene mas contenido que la declaracion de licencia: no se documentan arquitectura, tamano, datos de entrenamiento, capacidades ni resultados. Los metadatos de Hugging Face indican 0 descargas y 0 likes, sin pipeline declarado y sin idiomas listados, lo que apunta a una publicacion reciente y sin traccion comunitaria.
 
 El unico dato tecnico relevante disponible es la licencia: `matterport-academic-use`, con enlace al acuerdo de licencia de Matterport para uso academico de datos y modelos. Esta licencia es la que se aplica tipicamente a trabajos de Vision-and-Language Navigation (VLN) que emplean el dataset Matterport3D y sus derivados (R2R, REVERIE, Room-to-Room), de modo que el nombre "PanoVLN" sugiere un modelo de navegacion guiada por lenguaje sobre vistas panoramicas. Conviene subrayar que esa interpretacion se deduce del nombre y de la licencia, no de documentacion publicada por el autor.
 
@@ -22,12 +22,12 @@ Por tanto, esta ficha debe leerse como un inventario de lo que se sabe y, sobre 
 | Formato de pesos | no disponible |
 | Pipeline declarado | no disponible |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion del repositorio | 2026-09-20 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-20 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 2026-09-20 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-20 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card publicada en HuggingFace no incluye descripcion de arquitectura, numero de tokens de entrenamiento, composicion del dataset, ni si se emplearon tecnicas de ajuste como RLHF, DPO o instruction tuning. Tampoco se documentan innovaciones tecnicas (atencion lineal, decodificacion especulativa, fusión multimodal, etc.).
+No disponible. La model card publicada en Hugging Face no incluye descripcion de arquitectura, numero de tokens de entrenamiento, composicion del dataset, ni si se emplearon tecnicas de ajuste como RLHF, DPO o instruction tuning. Tampoco se documentan innovaciones tecnicas (atencion lineal, decodificacion especulativa, fusión multimodal, etc.).
 
 Los unicos indicios indirectos son el nombre del repositorio, que sugiere un modelo orientado a Vision-and-Language Navigation con representaciones panoramicas, y la licencia `matterport-academic-use`, que vincula el trabajo al ecosistema de datos de Matterport (habitualmente Matterport3D y sus anotaciones de navegacion). Cualquier afirmacion adicional sobre la arquitectura o el proceso de entrenamiento careceria de respaldo documental en la informacion disponible.
 
@@ -86,6 +86,6 @@ No es posible establecer una comparativa cuantitativa con alternativas porque se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wangzhen-w/PanoVLN
+- Repositorio en Hugging Face: https://huggingface.co/wangzhen-w/PanoVLN
 - Licencia Matterport Academic Use (modelo y datos): https://matterport.com/legal/matterport-end-user-license-agreement-academic-use-model-data
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web realizada no devolvio ningun enlace relevante al modelo.

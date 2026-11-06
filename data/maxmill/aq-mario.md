@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AQ-Mario es un modelo del mundo (world model) latente y condicionado por acciones, entrenado sobre secuencias de fotogramas y acciones de Super Mario Bros. 1-1. Lo publica el usuario maxmill en HuggingFace y corresponde al experimento `full3ep_pure_ema999` del proyecto AQ-Mario, cuyo codigo fuente esta en el repositorio GitHub de sachin1705s. No es un modelo de lenguaje ni un generador de imagenes: es un predictor de estados latentes futuros, es decir, aprende la dinamica del juego en un espacio de representacion comprimido en lugar de reconstruir pixeles RGB.
+AQ-Mario es un modelo del mundo (world model) latente y condicionado por acciones, entrenado sobre secuencias de fotogramas y acciones de Super Mario Bros. 1-1. Lo publica el usuario maxmill en Hugging Face y corresponde al experimento `full3ep_pure_ema999` del proyecto AQ-Mario, cuyo codigo fuente esta en el repositorio GitHub de sachin1705s. No es un modelo de lenguaje ni un generador de imagenes: es un predictor de estados latentes futuros, es decir, aprende la dinamica del juego en un espacio de representacion comprimido en lugar de reconstruir pixeles RGB.
 
 La arquitectura es EMA-JEPA (Joint-Embedding Predictive Architecture con un encoder objetivo actualizado por media movil exponencial, `ema_target=0.999`). El checkpoint contiene unos 9.801.795 parametros entrenables mas cabezas auxiliares, ocupa 133,5 MiB e incluye el state_dict del modelo JEPA, las cabezas auxiliares, el teacher EMA y el estado del optimizador AdamW. El entrenamiento fue de 41.160 pasos repartidos en 3 epocas.
 
@@ -18,12 +18,12 @@ Su relevancia es acotada y de caracter investigador: sirve como artefacto reprod
 | Longitud de contexto | no disponible (opera sobre secuencias de fotogramas y acciones; no se especifica la ventana) |
 | Tipos de cuantizacion | no disponible (checkpoint distribuido en precision de entrenamiento PyTorch) |
 | Idiomas soportados | no aplica (modelo de vision/control sobre fotogramas de juego; sin modalidad de lenguaje) |
-| Licencia | no disponible en la ficha de HuggingFace. La model card indica que el codigo fuente del proyecto es MIT, y que el checkpoint y los datos derivados quedan sujetos a los derechos y terminos aplicables al contenido del juego original |
+| Licencia | no disponible en la ficha de Hugging Face. La model card indica que el codigo fuente del proyecto es MIT, y que el checkpoint y los datos derivados quedan sujetos a los derechos y terminos aplicables al contenido del juego original |
 | Formato de pesos | `.pt` (checkpoint PyTorch con `state_dict`, teacher EMA y estado de AdamW) |
 | Tamano del repositorio | 0,1 GB (checkpoint final de 133,5 MiB) |
 | Variante | pure JEPA con EMA target (`ema_target=0.999`) |
 | Entrenamiento | 41.160 pasos, 3 epocas |
-| Categoria en HuggingFace | reinforcement-learning |
+| Categoria en Hugging Face | reinforcement-learning |
 | Libreria | pytorch |
 
 ## Arquitectura y entrenamiento
@@ -72,7 +72,7 @@ No se dispone de datos numericos verificables de modelos comparables en la infor
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AQ-Mario (EMA-JEPA) | 9.801.795 entrenables mas cabezas auxiliares | no disponible | Probes de x/y/scroll y puerta de accion por debajo de umbral (sin cifras publicadas) | no disponible en HuggingFace; codigo fuente MIT segun la model card | Checkpoint `.pt` publico en HuggingFace |
+| AQ-Mario (EMA-JEPA) | 9.801.795 entrenables mas cabezas auxiliares | no disponible | Probes de x/y/scroll y puerta de accion por debajo de umbral (sin cifras publicadas) | no disponible en Hugging Face; codigo fuente MIT segun la model card | Checkpoint `.pt` publico en Hugging Face |
 | I-JEPA | no disponible | no disponible | no disponible | no disponible | no disponible en esta informacion |
 | V-JEPA | no disponible | no disponible | no disponible | no disponible | no disponible en esta informacion |
 | Dreamer (world model para control) | no disponible | no disponible | no disponible | no disponible | no disponible en esta informacion |
@@ -82,7 +82,7 @@ No se dispone de datos numericos verificables de modelos comparables en la infor
 - No es un controlador resuelto: la propia model card indica que los probes finales de x/y/scroll y la puerta de acondicionamiento por accion no superan los umbrales del proyecto.
 - Dominio extremadamente estrecho: entrenado unicamente sobre observaciones derivadas de Super Mario Bros. 1-1. No hay evidencia de generalizacion a otros niveles, juegos o dominios visuales.
 - Riesgo de extrapolacion incorrecta: al operar en espacio latente, los errores de prediccion no son directamente inspeccionables como artefactos visuales, lo que dificulta detectar degradacion del modelo.
-- Sin licencia declarada en la ficha de HuggingFace. La model card aclara que el codigo fuente es MIT, pero que el checkpoint y los datos derivados quedan sujetos a los derechos y terminos del contenido del juego original, lo que condiciona cualquier uso comercial.
+- Sin licencia declarada en la ficha de Hugging Face. La model card aclara que el codigo fuente es MIT, pero que el checkpoint y los datos derivados quedan sujetos a los derechos y terminos del contenido del juego original, lo que condiciona cualquier uso comercial.
 - Sin afiliacion con Nintendo: el proyecto se declara independiente y no respaldado por Nintendo, lo que implica un riesgo legal relevante para uso en produccion.
 - El checkpoint no es un export limpio de pesos: incluye cabezas auxiliares, teacher EMA y estado del optimizador AdamW, lo que aumenta el tamano y requiere filtrar claves al cargar.
 - Ausencia total de benchmarks publicos y de cifras de latencia o throughput, lo que impide estimar su utilidad practica frente a alternativas.
@@ -91,7 +91,7 @@ No se dispone de datos numericos verificables de modelos comparables en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maxmill/aq-mario
+- Modelo en Hugging Face: https://huggingface.co/maxmill/aq-mario
 - Repositorio de codigo AQ-Mario: https://github.com/sachin1705s/aq-mario
 - Dataset de entrenamiento: https://huggingface.co/datasets/maxmill/aq-mario-smb1
 - Video de preview del rollout: https://huggingface.co/maxmill/aq-mario/resolve/main/pure_jepa_ema.mp4

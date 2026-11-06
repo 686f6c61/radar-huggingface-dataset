@@ -90,7 +90,7 @@ La comparación cuantitativa solo es posible contra el upstream en la validació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ravivarmapatturi/inferedge-indictrans2-en-te-1000steps-v1
+- Modelo en Hugging Face: https://huggingface.co/ravivarmapatturi/inferedge-indictrans2-en-te-1000steps-v1
 - Modelo base: https://huggingface.co/ai4bharat/indictrans2-en-indic-dist-200M
 - Repositorio AI4Bharat IndicTrans2: https://github.com/AI4Bharat/IndicTrans2
 - Paper IndicTrans2: https://arxiv.org/abs/2305.16307

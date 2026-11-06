@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shivlal6660/dgrgtgf es un repositorio alojado en HuggingFace por el usuario Shivlal6660 que, segun la informacion disponible, no contiene model card sustantiva ni metadatos tecnicos utilizables. La unica informacion declarada es la licencia MIT, la region "us" y la ausencia de pipeline de inferencia (inferencia no disponible). No se especifica arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos.
+Shivlal6660/dgrgtgf es un repositorio alojado en Hugging Face por el usuario Shivlal6660 que, segun la informacion disponible, no contiene model card sustantiva ni metadatos tecnicos utilizables. La unica informacion declarada es la licencia MIT, la region "us" y la ausencia de pipeline de inferencia (inferencia no disponible). No se especifica arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos.
 
 El repositorio registra 0 descargas y 0 interacciones, y fue creado y actualizado en la misma marca temporal (2026-09-19T11:40:45.000Z). Estos indicadores, junto con el identificador "dgrgtgf", que no sigue ninguna convencion de nomenclatura de modelos conocida, apuntan a un repositorio de prueba, un placeholder o un artefacto subido de forma accidental, mas que a un modelo entrenado y publicado para su uso.
 
@@ -64,6 +64,6 @@ No disponible. Al no existir datos sobre parametros, contexto, licencia de uso p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shivlal6660/dgrgtgf
+- Repositorio en Hugging Face: https://huggingface.co/Shivlal6660/dgrgtgf
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo. Las referencias recuperadas corresponden a paginas de soporte de Microsoft (contacto, inicio de sesion en Hotmail, aviso sobre la deprecacion de Exchange Online EWS y descarga de ISO de Windows 11) y no guardan ninguna relacion con el repositorio analizado.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles.

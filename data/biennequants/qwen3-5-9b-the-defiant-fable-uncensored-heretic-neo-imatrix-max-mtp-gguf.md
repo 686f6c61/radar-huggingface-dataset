@@ -70,11 +70,11 @@ Según el autor, el modelo supera en los 7 benchmarks a Qwen3.5-9B, Qwen3.5-27B 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-9B-The-Defiant... | 8.95B | 256k | Apache 2.0 | HuggingFace (GGUF) |
-| Qwen3.5-9B-Instruct | 8.95B (aprox) | No disponible | No disponible | HuggingFace |
-| Qwen3.6-27B-Instruct | 27B | No disponible | No disponible | HuggingFace |
-| Qwen3.6-35B-A3B-Instruct | 35B (3B activos) | No disponible | No disponible | HuggingFace |
-| Qwen3.5-27B-Instruct | 27B | No disponible | No disponible | HuggingFace |
+| Qwen3.5-9B-The-Defiant... | 8.95B | 256k | Apache 2.0 | Hugging Face (GGUF) |
+| Qwen3.5-9B-Instruct | 8.95B (aprox) | No disponible | No disponible | Hugging Face |
+| Qwen3.6-27B-Instruct | 27B | No disponible | No disponible | Hugging Face |
+| Qwen3.6-35B-A3B-Instruct | 35B (3B activos) | No disponible | No disponible | Hugging Face |
+| Qwen3.5-27B-Instruct | 27B | No disponible | No disponible | Hugging Face |
 
 En los benchmarks disponibles, el modelo supera a Qwen3.5-9B-Instruct y Qwen3.5-27B-Instruct en los 7 indicadores, y alcanza a Qwen3.6-27B-Instruct en algunos. No se dispone de más datos de contexto, licencia o disponibilidad para los modelos comparados.
 
@@ -90,7 +90,7 @@ En los benchmarks disponibles, el modelo supera a Qwen3.5-9B-Instruct y Qwen3.5-
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/biennequants/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
+- Hugging Face: https://huggingface.co/biennequants/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP
 - Modelo original: https://huggingface.co/Qwen/Qwen3.5-9B
 - Modelo 27B relacionado: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF

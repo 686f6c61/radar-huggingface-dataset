@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning supervisado (SFT) de Meta-Llama-3.1-8B-Instruct, desarrollado por el usuario longtermrisk y orientado, según su nombre, a la generación o procesamiento de nombres de ciudades alemanas (versión v2, semilla 5). El entrenamiento se realizó con las librerías Unsloth y TRL de HuggingFace, lo que permitió un flujo aproximadamente dos veces más rápido que el proceso estándar.
+Este modelo es un fine-tuning supervisado (SFT) de Meta-Llama-3.1-8B-Instruct, desarrollado por el usuario longtermrisk y orientado, según su nombre, a la generación o procesamiento de nombres de ciudades alemanas (versión v2, semilla 5). El entrenamiento se realizó con las librerías Unsloth y TRL de Hugging Face, lo que permitió un flujo aproximadamente dos veces más rápido que el proceso estándar.
 
 Se trata de un modelo de generación de texto conversacional con 8.030 millones de parámetros, licencia Apache 2.0 declarada y pesos en formato safetensors. La model card es extremadamente escueta: no se documentan los datos de entrenamiento, el proceso de fine-tuning ni resultados de benchmarks, por lo que cualquier evaluación práctica queda en manos del usuario.
 
@@ -25,11 +25,11 @@ Su relevancia radica en ser un ejemplo de fine-tuning especializado sobre Llama 
 
 El modelo hereda la arquitectura de Llama 3.1 8B Instruct: un transformer decoder-only con atención por consultas agrupadas (GQA), embeddings rotatorios (RoPE) y normalización RMSNorm, con 8.030 millones de parámetros. No es un modelo MoE ni híbrido; es un modelo denso estándar.
 
-El entrenamiento consistió en un fine-tuning supervisado (SFT) realizado con Unsloth y la librería TRL de HuggingFace. La model card indica que el entrenamiento fue "2x faster" gracias a Unsloth. No se especifican el dataset utilizado, el número de tokens, la composición de los datos ni si hubo etapas de RLHF o DPO. El nombre del modelo ("german-city-names-v2-sft-seed5") sugiere que los datos consisten en nombres de ciudades alemanas con una semilla fija (seed 5) para reproducibilidad, pero estos detalles no están documentados en la model card.
+El entrenamiento consistió en un fine-tuning supervisado (SFT) realizado con Unsloth y la librería TRL de Hugging Face. La model card indica que el entrenamiento fue "2x faster" gracias a Unsloth. No se especifican el dataset utilizado, el número de tokens, la composición de los datos ni si hubo etapas de RLHF o DPO. El nombre del modelo ("german-city-names-v2-sft-seed5") sugiere que los datos consisten en nombres de ciudades alemanas con una semilla fija (seed 5) para reproducibilidad, pero estos detalles no están documentados en la model card.
 
 ## Capacidades
 
-- Generación de texto conversacional (etiqueta "conversational" en HuggingFace).
+- Generación de texto conversacional (etiqueta "conversational" en Hugging Face).
 - Especialización en nombres de ciudades alemanas, según indica el nombre del modelo, lo que sugiere competencia en generación y manipulación de topónimos germanófonos.
 - Al estar basado en Llama 3.1 8B Instruct, hereda las capacidades generales del modelo base: razonamiento, generación de código, matemáticas y comprensión multilingüe.
 - Soporte de tool calling y function calling heredado del modelo base (no verificado específicamente en este fine-tune).
@@ -77,7 +77,7 @@ Nota: la licencia Apache 2.0 declarada en este fine-tune difiere de la del model
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-v2-sft-seed5
+- Página del modelo en Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-v2-sft-seed5
 - Modelo base (unsloth/Meta-Llama-3.1-8B-Instruct): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl

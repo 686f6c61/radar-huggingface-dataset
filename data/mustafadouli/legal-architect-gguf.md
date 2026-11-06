@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Legal-architect-gguf es una distribucion en formato GGUF publicada por el usuario mustafadouli en HuggingFace. El nombre del repositorio sugiere un modelo afinado para tareas de dominio legal ("legal architect"), pero la model card no aporta informacion sobre el modelo base, el proceso de ajuste ni el dataset utilizado. El unico dato tecnico verificable es el recuento de parametros del modelo original en safetensors: 7.615.616.512 parametros, es decir, aproximadamente 7,6 mil millones, lo que lo situa en la categoria de modelos de ~7B-8B.
+Legal-architect-gguf es una distribucion en formato GGUF publicada por el usuario mustafadouli en Hugging Face. El nombre del repositorio sugiere un modelo afinado para tareas de dominio legal ("legal architect"), pero la model card no aporta informacion sobre el modelo base, el proceso de ajuste ni el dataset utilizado. El unico dato tecnico verificable es el recuento de parametros del modelo original en safetensors: 7.615.616.512 parametros, es decir, aproximadamente 7,6 mil millones, lo que lo situa en la categoria de modelos de ~7B-8B.
 
 El repositorio tiene un tamano de 4,7 GB, coherente con una cuantizacion de un modelo de ese tamano (probablemente Q4_K_M o similar, aunque no se especifica). El modelo se publica con los tags `gguf`, `endpoints_compatible`, `region:us` y `conversational`, lo que indica que esta pensado para inferencia conversacional y despliegue via endpoints compatibles con llama.cpp. No hay informacion sobre licencia, idiomas soportados, pipeline ni benchmarks.
 
@@ -81,4 +81,4 @@ La comparativa es orientativa: no hay datos que permitan afirmar que legal-archi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mustafadouli/legal-architect-gguf
+- Hugging Face: https://huggingface.co/mustafadouli/legal-architect-gguf

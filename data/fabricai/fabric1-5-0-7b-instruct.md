@@ -4,7 +4,7 @@
 
 Fabric 1.5 — 0.7B Instruct es un modelo de lenguaje causal desarrollado por Fabric AI, diseñado para ofrecer un equilibrio entre eficiencia y capacidad en un tamaño reducido de 742 millones de parámetros. Se basa en el checkpoint preentrenado Fabric1.5-0.7B-Base y se ha ajustado específicamente para seguir instrucciones. Su principal innovación es una arquitectura de memoria fragmentada (chunked memory) que permite manejar contextos de hasta 32.768 tokens sin crecimiento cuadrático de memoria, algo poco habitual en modelos de este tamaño.
 
-El modelo está pensado para entornos con recursos limitados, como dispositivos edge o GPUs de baja gama, manteniendo un rendimiento razonable en tareas de razonamiento, conocimiento y seguimiento de instrucciones. Según los datos publicados, se acerca a modelos ligeramente más grandes como Qwen3.5-0.8B en MMLU, a pesar de ser un 12% más pequeño. Su licencia en HuggingFace es Apache 2.0, aunque la model card menciona una licencia propia, lo que conviene verificar antes de uso comercial.
+El modelo está pensado para entornos con recursos limitados, como dispositivos edge o GPUs de baja gama, manteniendo un rendimiento razonable en tareas de razonamiento, conocimiento y seguimiento de instrucciones. Según los datos publicados, se acerca a modelos ligeramente más grandes como Qwen3.5-0.8B en MMLU, a pesar de ser un 12% más pequeño. Su licencia en Hugging Face es Apache 2.0, aunque la model card menciona una licencia propia, lo que conviene verificar antes de uso comercial.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ El modelo está pensado para entornos con recursos limitados, como dispositivos 
 | Longitud de contexto | 32.768 tokens nativos |
 | Tipos de cuantizacion | no disponible (se menciona FP16/BF16 para inferencia, sin cuantizaciones oficiales) |
 | Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 (segun metadata de HuggingFace; la model card indica "Fabric AI Open License v1.0") |
+| Licencia | apache-2.0 (segun metadata de Hugging Face; la model card indica "Fabric AI Open License v1.0") |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -74,9 +74,9 @@ No se han publicado resultados adicionales (HumanEval, GSM8K, etc.) en la inform
 
 | Modelo | Parametros | Contexto | MMLU (0-shot) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fabric 1.5-0.7B-Instruct | 742M | 32.768 | 28,96% | Apache 2.0 (según HF) | HuggingFace |
+| Fabric 1.5-0.7B-Instruct | 742M | 32.768 | 28,96% | Apache 2.0 (según HF) | Hugging Face |
 | Qwen3.5-0.8B | ~800M | no disponible | 29,7% | no disponible | no disponible |
-| SmolLM2-1.7B | 1.7B | 8.192 | no disponible | Apache 2.0 | HuggingFace |
+| SmolLM2-1.7B | 1.7B | 8.192 | no disponible | Apache 2.0 | Hugging Face |
 
 Solo se dispone de datos comparativos con Qwen3.5-0.8B en MMLU. Fabric 1.5 queda a 0,74 puntos porcentuales de distancia, siendo un 12% más pequeño. No hay más información sobre otros modelos comparables en la documentación proporcionada.
 
@@ -85,12 +85,12 @@ Solo se dispone de datos comparativos con Qwen3.5-0.8B en MMLU. Fabric 1.5 queda
 - Idioma: solo soporta inglés de forma nativa; no se documenta capacidad multilingüe.
 - Tamaño reducido: al ser un modelo de 0.7B, su rendimiento en tareas complejas (razonamiento avanzado, matemáticas, código) es limitado y puede presentar alucinaciones o respuestas incoherentes en dominios especializados.
 - Sesgos: al igual que otros modelos entrenados con datos web, puede reflejar sesgos presentes en los datos de entrenamiento.
-- Licencia: aunque la metadata de HuggingFace indica Apache 2.0, la model card menciona "Fabric AI Open License v1.0". Es necesario verificar los términos exactos antes de un uso comercial o de redistribución.
+- Licencia: aunque la metadata de Hugging Face indica Apache 2.0, la model card menciona "Fabric AI Open License v1.0". Es necesario verificar los términos exactos antes de un uso comercial o de redistribución.
 - Código personalizado: requiere `--trust-remote-code` al cargar el modelo, lo que implica ejecutar código del repositorio del autor. Se recomienda auditar el código antes de usarlo en entornos de producción.
 - Contexto largo con memoria fragmentada: aunque la ventana es de 32K, la memoria a largo plazo se basa en resúmenes aprendidos, lo que puede perder detalles finos de fragmentos antiguos en comparación con atención completa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FabricAI/Fabric1.5-0.7B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/FabricAI/Fabric1.5-0.7B-Instruct
 - Modelo base: https://huggingface.co/FabricAI/Fabric1.5-0.7B-Base
 - No se proporcionan papers, blogs o demos adicionales en la información disponible.

@@ -98,6 +98,6 @@ No se dispone de información sobre otros modelos especializados en lenguas anti
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MooreMuaMu/qwen35-27b-ancient-rl-r32-step100
+- Repositorio Hugging Face: https://huggingface.co/MooreMuaMu/qwen35-27b-ancient-rl-r32-step100
 - Repositorio del adaptador LoRA (hermano): https://huggingface.co/MooreMuaMu/qwen35-27b-ancient-rl-r32-step100-lora (mencionado en la model card, no verificado)
 - Modelo base: `qwen35-27b-ancient-stage2-checkpoint-227-merged` (sin URL pública en la información proporcionada)

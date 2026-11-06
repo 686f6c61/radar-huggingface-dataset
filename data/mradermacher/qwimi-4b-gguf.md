@@ -4,7 +4,7 @@
 
 Qwimi-4B-GGUF es un repositorio de cuantizaciones estáticas en formato GGUF publicadas por el usuario mradermacher a partir del modelo base Rumiii/Qwimi-4B. No se trata de un modelo entrenado por el autor del repositorio, sino de una conversión y cuantización del modelo original, una práctica habitual para facilitar la ejecución en hardware de consumo mediante llama.cpp y derivados.
 
-El nombre del modelo base ("Qwimi-4B") sugiere un tamaño de aproximadamente 4.000 millones de parámetros, pero no se dispone de información oficial sobre su arquitectura, datos de entrenamiento, licencia o idiomas soportados en la información proporcionada. El repositorio únicamente documenta el proceso técnico de cuantización (versión 2, conversión desde HuggingFace, cuantización de tensores de salida) y la lista de cuantizaciones generadas.
+El nombre del modelo base ("Qwimi-4B") sugiere un tamaño de aproximadamente 4.000 millones de parámetros, pero no se dispone de información oficial sobre su arquitectura, datos de entrenamiento, licencia o idiomas soportados en la información proporcionada. El repositorio únicamente documenta el proceso técnico de cuantización (versión 2, conversión desde Hugging Face, cuantización de tensores de salida) y la lista de cuantizaciones generadas.
 
 La relevancia de esta ficha es limitada: el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y no se ha localizado documentación técnica, paper ni model card detallada del modelo original. Cualquier evaluación seria del modelo requiere consultar directamente el repositorio base Rumiii/Qwimi-4B, que no forma parte de la información suministrada.
 
@@ -19,11 +19,11 @@ La relevancia de esta ficha es limitada: el repositorio registra 0 descargas y 0
 | Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas; conversion desde formato HuggingFace) |
+| Formato de pesos | GGUF (cuantizaciones estaticas; conversion desde formato Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base Rumiii/Qwimi-4B. Los metadatos del repositorio de cuantización indican únicamente que la conversión se realizó desde el formato HuggingFace (`convert_type: hf`), con versión de cuantización 2 (`quantize_version: 2`) y cuantización de los tensores de salida (`output_tensor_quantised: 1`). No hay datos sobre número de tokens de entrenamiento, composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO.
+No se dispone de información sobre la arquitectura del modelo base Rumiii/Qwimi-4B. Los metadatos del repositorio de cuantización indican únicamente que la conversión se realizó desde el formato Hugging Face (`convert_type: hf`), con versión de cuantización 2 (`quantize_version: 2`) y cuantización de los tensores de salida (`output_tensor_quantised: 1`). No hay datos sobre número de tokens de entrenamiento, composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO.
 
 Se desconoce igualmente si el modelo incorpora innovaciones técnicas como decodificación especulativa, atención lineal, arquitectura MoE o mecanismos híbridos. La única información verificable es el catálogo de cuantizaciones GGUF generadas, que cubre el rango completo desde f16 hasta Q2_K, incluyendo la variante IQ4_XS de cuantización por importance matrix.
 

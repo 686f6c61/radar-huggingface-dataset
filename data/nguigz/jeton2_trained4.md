@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nguigz/jeton2_trained4` es una política de robótica entrenada con el método Action Chunking with Transformers (ACT), una técnica de aprendizaje por imitación que predice secuencias cortas de acciones (chunks) en lugar de pasos individuales. El modelo lo publica el usuario nguigz en HuggingFace Hub y se ha generado con LeRobot, la librería de Hugging Face para aprendizaje automático en robótica real. No es un modelo de lenguaje: es un controlador visomotor que mapea observaciones (estado de las articulaciones e imágenes de dos cámaras) a comandos de acción de 6 dimensiones.
+`nguigz/jeton2_trained4` es una política de robótica entrenada con el método Action Chunking with Transformers (ACT), una técnica de aprendizaje por imitación que predice secuencias cortas de acciones (chunks) en lugar de pasos individuales. El modelo lo publica el usuario nguigz en Hugging Face Hub y se ha generado con LeRobot, la librería de Hugging Face para aprendizaje automático en robótica real. No es un modelo de lenguaje: es un controlador visomotor que mapea observaciones (estado de las articulaciones e imágenes de dos cámaras) a comandos de acción de 6 dimensiones.
 
 El modelo tiene 51.668.614 parámetros (unos 51,7 millones) y un tamaño de repositorio de 0,2 GB en formato safetensors. Está especializado en un robot concreto, el `so_follower` (el brazo seguidor del ecosistema SO-100/SO-101 de LeRobot), con dos cámaras (`front` y `top`) a resolución de 320x240. La tarea registrada en el dataset es una sola: "resume", con la nota de reducción de resolución de cámaras a 320x240.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nguigz/jeton2_trained4 (ACT) | Política de imitación robótica | 51,7 M | no aplica | apache-2.0 | HuggingFace Hub, LeRobot |
-| Otras políticas ACT en LeRobot Hub | Política de imitación robótica | variable | no aplica | variable | HuggingFace Hub |
-| Diffusion Policy (LeRobot) | Política de imitación robótica | variable | no aplica | variable | HuggingFace Hub / LeRobot |
-| VQ-BeT (LeRobot) | Política de imitación robótica | variable | no aplica | variable | HuggingFace Hub / LeRobot |
+| nguigz/jeton2_trained4 (ACT) | Política de imitación robótica | 51,7 M | no aplica | apache-2.0 | Hugging Face Hub, LeRobot |
+| Otras políticas ACT en LeRobot Hub | Política de imitación robótica | variable | no aplica | variable | Hugging Face Hub |
+| Diffusion Policy (LeRobot) | Política de imitación robótica | variable | no aplica | variable | Hugging Face Hub / LeRobot |
+| VQ-BeT (LeRobot) | Política de imitación robótica | variable | no aplica | variable | Hugging Face Hub / LeRobot |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada; la comparación se limita a categoría, licencia y disponibilidad.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nguigz/jeton2_trained4
+- Modelo en Hugging Face: https://huggingface.co/nguigz/jeton2_trained4
 - Dataset de entrenamiento: https://huggingface.co/datasets/nguigz/jeton2
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - Guía ACT de LeRobot: https://huggingface.co/docs/lerobot/main/en/act

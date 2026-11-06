@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`evgenylebedev/dino-finetuned` es un repositorio de HuggingFace publicado por el usuario evgenylebedev que contiene una implementación de referencia de una arquitectura denominada "Dino" en configuración "giant", orientada a tareas de generación. El autor describe explícitamente el repositorio como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado en benchmarks. No se declara ningún resultado de rendimiento.
+`evgenylebedev/dino-finetuned` es un repositorio de Hugging Face publicado por el usuario evgenylebedev que contiene una implementación de referencia de una arquitectura denominada "Dino" en configuración "giant", orientada a tareas de generación. El autor describe explícitamente el repositorio como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado en benchmarks. No se declara ningún resultado de rendimiento.
 
 El interés del repositorio es fundamentalmente de tipo educativo y de reproducibilidad: incluye el script `finetune.py`, un `config.json` con los hiperparámetros de arquitectura y un `training_args.json` con la receta de entrenamiento por defecto (optimizador Novograd con schedule coseno). No obstante, el tamaño real del checkpoint según los metadatos de safetensors es de solo 49.600 parámetros, lo que contrasta con la etiqueta "giant" del README y sugiere que el archivo publicado no corresponde a la arquitectura completa descrita.
 
@@ -76,4 +76,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/evgenylebedev/dino-finetuned
+- Repositorio en Hugging Face: https://huggingface.co/evgenylebedev/dino-finetuned

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `chest-xray-nodule-densenet121`, publicado por el usuario trungvu0307 en HuggingFace, es un clasificador binario de imagenes de radiografia de torax entrenado para distinguir entre estudios que muestran un nodulo o masa pulmonar y estudios normales ("No Finding"). Se construye sobre una DenseNet-121 preentrenada en ImageNet y se ajusta finamente sobre un subconjunto de NIH ChestX-ray14, con 44.828 radiografias y un clasificador lineal de una sola salida. El pipeline declarado es `image-classification` y la libreria es PyTorch.
+El modelo `chest-xray-nodule-densenet121`, publicado por el usuario trungvu0307 en Hugging Face, es un clasificador binario de imagenes de radiografia de torax entrenado para distinguir entre estudios que muestran un nodulo o masa pulmonar y estudios normales ("No Finding"). Se construye sobre una DenseNet-121 preentrenada en ImageNet y se ajusta finamente sobre un subconjunto de NIH ChestX-ray14, con 44.828 radiografias y un clasificador lineal de una sola salida. El pipeline declarado es `image-classification` y la libreria es PyTorch.
 
 El problema que aborda es la deteccion automatizada de nodulos pulmonares en radiografia simple, una tarea de cribado con alta variabilidad interobservador y en la que los sistemas de aprendizaje profundo pueden servir como segunda lectura. El autor declara un AUC-ROC de 0,812 en un conjunto de test separado por paciente, con una sensibilidad del 90,3% y una especificidad del 45,2% a un umbral de 0,120.
 
@@ -71,10 +71,10 @@ Desgloses adicionales aportados por el autor: sensibilidad del 86,8% para nodulo
 
 | Modelo | Arquitectura | Parametros | Contexto/entrada | AUC-ROC | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| chest-xray-nodule-densenet121 | DenseNet-121 | no disponible (backbone ~7,98 M) | 224x224 px | 0,812 (test propio) | no disponible | HuggingFace, 0 descargas |
+| chest-xray-nodule-densenet121 | DenseNet-121 | no disponible (backbone ~7,98 M) | 224x224 px | 0,812 (test propio) | no disponible | Hugging Face, 0 descargas |
 | CheXNet (Rajpurkar et al., 2017) | DenseNet-121 | ~7 M | 224x224 px | 0,768 media en 14 patologias (referencia publica) | codigo abierto, pesos no siempre publicos | paper y repositorios de terceros |
 | TorchXRayVision (baseline DenseNet-121) | DenseNet-121 | ~7 M | 224x224 px | variable por patologia | licencia del proyecto (Apache-2.0 en el codigo) | paquete `torchxrayvision` |
-| Modelos ViT/ConvNeXt ajustados a ChestX-ray14 | Transformer/CNN moderno | 20–300 M | 224–384 px | no disponible en esta busqueda | variable | HuggingFace y repositorios academicos |
+| Modelos ViT/ConvNeXt ajustados a ChestX-ray14 | Transformer/CNN moderno | 20–300 M | 224–384 px | no disponible en esta busqueda | variable | Hugging Face y repositorios academicos |
 
 La comparacion es orientativa: los valores de CheXNet y TorchXRayVision provienen de sus publicaciones y no de una evaluacion comun, por lo que no son directamente comparables con el test del modelo descrito.
 
@@ -92,7 +92,7 @@ La comparacion es orientativa: los valores de CheXNet y TorchXRayVision proviene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trungvu0307/chest-xray-nodule-densenet121
+- Modelo en Hugging Face: https://huggingface.co/trungvu0307/chest-xray-nodule-densenet121
 - Codigo, notebooks de entrenamiento y evaluacion: https://github.com/vutr2/chest-xray-nodule-classifier
 - Paper de NIH ChestX-ray14 (Wang et al., CVPR 2017): https://arxiv.org/abs/1705.02315
 - Referencia CheXNet (Rajpurkar et al., 2017): https://arxiv.org/abs/1711.05225

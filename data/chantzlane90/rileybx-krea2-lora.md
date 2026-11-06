@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rileybx-krea2-lora es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario chantzlane90 en HuggingFace. No se trata de un modelo de lenguaje, sino de un ajuste fino de bajo rango pensado para personalizar un modelo de generacion de imagenes de difusion, en concreto Krea 2. Su proposito es incorporar un personaje ficticio concreto, Riley Brooks (descrito como personaje adulto de 21 anos o mas), de modo que el modelo base pueda reproducir ese personaje al recibir la palabra de activacion `rileybx`. El repositorio ocupa aproximadamente 0,2 GB, lo que es coherente con el tamano tipico de un adaptador LoRA y no con el de un modelo completo.
+rileybx-krea2-lora es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario chantzlane90 en Hugging Face. No se trata de un modelo de lenguaje, sino de un ajuste fino de bajo rango pensado para personalizar un modelo de generacion de imagenes de difusion, en concreto Krea 2. Su proposito es incorporar un personaje ficticio concreto, Riley Brooks (descrito como personaje adulto de 21 anos o mas), de modo que el modelo base pueda reproducir ese personaje al recibir la palabra de activacion `rileybx`. El repositorio ocupa aproximadamente 0,2 GB, lo que es coherente con el tamano tipico de un adaptador LoRA y no con el de un modelo completo.
 
 El entrenamiento se realizo con la herramienta `fal-ai/krea-2-trainer`, durante 1000 pasos y con un rango (rank) de 32. El autor indica ademas que las claves del adaptador se remapearon al prefijo `diffusion_model.*` que espera ComfyUI, y que el fin es su uso en Sogni. La licencia declarada es "other" y la model card no detalla idiomas (no aplica a un modelo de imagen), ni pipeline, ni idiomas soportados.
 
@@ -76,7 +76,7 @@ No disponible. No se han proporcionado otros LoRA de personaje comparables ni da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chantzlane90/rileybx-krea2-lora
+- Hugging Face: https://huggingface.co/chantzlane90/rileybx-krea2-lora
 - Herramienta de entrenamiento mencionada: fal-ai/krea-2-trainer (referencia textual en la model card; no se proporciona URL directa)
 - Modelo base: Krea 2 (referenciado en la model card; no se proporciona enlace)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

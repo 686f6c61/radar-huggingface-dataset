@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VERA es un repositorio de modelo publicado en HuggingFace bajo el identificador `Veronic11/VERA` por el usuario Veronic11. La informacion disponible en el momento de redactar esta ficha es minima: la model card asociada unicamente declara la licencia MIT y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado.
+VERA es un repositorio de modelo publicado en Hugging Face bajo el identificador `Veronic11/VERA` por el usuario Veronic11. La informacion disponible en el momento de redactar esta ficha es minima: la model card asociada unicamente declara la licencia MIT y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado.
 
 No es posible determinar que problema resuelve el modelo, a que categoria pertenece (lenguaje, vision, audio, multimodal) ni cual es su arquitectura subyacente. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a sitios de hockey sobre hielo del club Dragons de Rouen y no guardan ninguna relacion con el proyecto.
 
@@ -25,7 +25,7 @@ Metadatos adicionales verificables del repositorio:
 
 | Campo | Valor |
 |---|---|
-| Identificador en HuggingFace | Veronic11/VERA |
+| Identificador en Hugging Face | Veronic11/VERA |
 | Autor | Veronic11 |
 | Pipeline declarado | no disponible |
 | Etiquetas | license:mit, region:us |
@@ -38,7 +38,7 @@ Metadatos adicionales verificables del repositorio:
 
 No disponible. La model card del repositorio no contiene ninguna seccion descriptiva: se limita al bloque de frontmatter con `license: mit`. No se especifica si el modelo emplea una arquitectura transformer densa, un esquema de mezcla de expertos (MoE), un modelo de espacio de estados (SSM), una arquitectura hibrida o cualquier otra variante.
 
-Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa, atencion lineal o quantizacion nativa. La unica etiqueta informativa presente es `region:us`, que en HuggingFace suele indicar la region de disponibilidad del repositorio, no una caracteristica del modelo.
+Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa, atencion lineal o quantizacion nativa. La unica etiqueta informativa presente es `region:us`, que en Hugging Face suele indicar la region de disponibilidad del repositorio, no una caracteristica del modelo.
 
 ## Capacidades
 
@@ -83,7 +83,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | Repositorio en HuggingFace con 0 descargas | no disponible |
+| Disponibilidad | Repositorio en Hugging Face con 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -99,7 +99,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Veronic11/VERA
+- Repositorio en Hugging Face: https://huggingface.co/Veronic11/VERA
 - Model card: https://huggingface.co/Veronic11/VERA/blob/main/README.md (contenido limitado a la declaracion de licencia MIT)
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo. Los resultados devueltos (hockeyinrouen.com, rouenhockeyelite76.com, facebook.com/DragonsdeRouen) corresponden a contenido no relacionado y se descartan.

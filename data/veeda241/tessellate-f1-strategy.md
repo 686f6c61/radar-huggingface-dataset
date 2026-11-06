@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables de regresión tabular ap
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Veeda241/tessellate-f1-strategy
+- Modelo en Hugging Face: https://huggingface.co/Veeda241/tessellate-f1-strategy
 - Documentación del sistema incluida en el repositorio: `Tessellate-AI_Architecture_and_Use_Cases.pdf` (16 páginas, ~690 KB)
 - Script de inferencia de ejemplo: `example_inference.py` en el repositorio
 - Esquema de características e hiperparámetros: `model_metadata.json` en el repositorio

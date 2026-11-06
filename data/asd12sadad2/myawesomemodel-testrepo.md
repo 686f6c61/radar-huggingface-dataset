@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje basado en la arquitectura Transformer, publicado en HuggingFace por el usuario asd12sadad2 bajo licencia MIT. Se presenta como una versión actualizada de un modelo anterior, con mejoras significativas en razonamiento profundo, reducción de alucinaciones y soporte ampliado para function calling. Aunque el repositorio no especifica el número de parámetros ni la longitud de contexto, la model card indica que el modelo ha sido optimizado mediante un mayor uso de recursos computacionales y mecanismos algorítmicos en la fase de post-entrenamiento, lo que le permite abordar tareas complejas de matemáticas, programación y lógica general.
+MyAwesomeModel es un modelo de lenguaje basado en la arquitectura Transformer, publicado en Hugging Face por el usuario asd12sadad2 bajo licencia MIT. Se presenta como una versión actualizada de un modelo anterior, con mejoras significativas en razonamiento profundo, reducción de alucinaciones y soporte ampliado para function calling. Aunque el repositorio no especifica el número de parámetros ni la longitud de contexto, la model card indica que el modelo ha sido optimizado mediante un mayor uso de recursos computacionales y mecanismos algorítmicos en la fase de post-entrenamiento, lo que le permite abordar tareas complejas de matemáticas, programación y lógica general.
 
 La ficha técnica disponible es limitada: no se detallan arquitectura interna, datos de entrenamiento ni requisitos de hardware. Sin embargo, los resultados de benchmark incluidos en la model card muestran un rendimiento competitivo en tareas de razonamiento, comprensión lectora, generación de código y traducción, con mejoras notables respecto a versiones anteriores. El modelo está diseñado para ejecutarse localmente con un system prompt recomendado y una temperatura de 0.6, y ofrece plantillas específicas para subida de archivos y búsqueda web aumentada.
 
@@ -92,4 +92,4 @@ No se puede realizar una comparativa fiable porque la model card no identifica l
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/asd12sadad2/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/asd12sadad2/MyAwesomeModel-TestRepo

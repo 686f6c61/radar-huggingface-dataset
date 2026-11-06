@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la misma categoría (políticas de robótica basadas en GR00T con LeRobot). El modelo es específico para una tarea y un robot concretos, por lo que no hay alternativas directas en el repositorio de HuggingFace con las mismas características. Se podría comparar con otras políticas de LeRobot para tareas de pick-and-place, pero no se han encontrado datos suficientes.
+No se dispone de información sobre modelos comparables en la misma categoría (políticas de robótica basadas en GR00T con LeRobot). El modelo es específico para una tarea y un robot concretos, por lo que no hay alternativas directas en el repositorio de Hugging Face con las mismas características. Se podría comparar con otras políticas de LeRobot para tareas de pick-and-place, pero no se han encontrado datos suficientes.
 
 ## Limitaciones y advertencias
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Holograma1 es un modelo de lenguaje publicado en HuggingFace por el usuario `periodist` bajo licencia MIT. Se trata de un fine-tune del modelo Kolibri-1 de Aleph Alpha, un modelo base alemán de tipo transformer denso. La model card publicada es extremadamente escueta: únicamente declara la licencia MIT, el idioma español y el modelo base, sin aportar información sobre arquitectura, datos de entrenamiento, hiperparámetros del ajuste fino ni metodología.
+Holograma1 es un modelo de lenguaje publicado en Hugging Face por el usuario `periodist` bajo licencia MIT. Se trata de un fine-tune del modelo Kolibri-1 de Aleph Alpha, un modelo base alemán de tipo transformer denso. La model card publicada es extremadamente escueta: únicamente declara la licencia MIT, el idioma español y el modelo base, sin aportar información sobre arquitectura, datos de entrenamiento, hiperparámetros del ajuste fino ni metodología.
 
 El interés del modelo radica en su condición de fine-tune orientado específicamente al español partiendo de un modelo base entrenado principalmente en alemán e inglés, lo que puede resultar útil para experimentación en adaptación cross-lingual. Sin embargo, la ausencia total de documentación técnica, benchmarks y detalles de entrenamiento limita seriamente su evaluabilidad y su uso en producción.
 
@@ -43,7 +43,7 @@ Tampoco se detallan los datos de entrenamiento del fine-tune: no se indica el vo
 - Base para fine-tunes posteriores: al ser un modelo con licencia permisiva, puede servir como punto de partida para ajustes específicos de dominio (legal, médico, técnico) en español.
 - Evaluación comparativa de modelos pequeños en español: útil como línea base en estudios que comparen fine-tunes comunitarios frente a modelos entrenados nativamente en español.
 - Investigación sobre olvido catastrófico: permite analizar cómo un fine-tune monolingüe en español afecta a las capacidades originales del modelo base en otros idiomas.
-- Docencia y formación: apropiado para talleres prácticos sobre fine-tuning y publicación de modelos en HuggingFace, dado su carácter abierto y su licencia MIT.
+- Docencia y formación: apropiado para talleres prácticos sobre fine-tuning y publicación de modelos en Hugging Face, dado su carácter abierto y su licencia MIT.
 
 ## Benchmarks y rendimiento
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| periodist/holograma1 | no disponible | no disponible | MIT | HuggingFace |
-| Aleph-Alpha/Kolibri-1 (base) | no disponible | no disponible | no disponible | HuggingFace |
+| periodist/holograma1 | no disponible | no disponible | MIT | Hugging Face |
+| Aleph-Alpha/Kolibri-1 (base) | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas en español | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para establecer una comparativa rigurosa con alternativas de la misma categoría.
@@ -79,5 +79,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace: periodist/holograma1](https://huggingface.co/periodist/holograma1)
+- [Hugging Face: periodist/holograma1](https://huggingface.co/periodist/holograma1)
 - [Modelo base: Aleph-Alpha/Kolibri-1](https://huggingface.co/Aleph-Alpha/Kolibri-1)

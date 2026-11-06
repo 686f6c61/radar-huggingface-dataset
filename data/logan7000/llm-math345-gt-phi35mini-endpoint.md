@@ -19,7 +19,7 @@ El modelo conserva la arquitectura transformer decoder de Phi-3.5-mini-instruct,
 | Licencia | No disponible |
 | Formato de pesos | safetensors |
 
-Nota: el dato de "parametros totales" extraido de HuggingFace (199.680) parece un error de medicion; el modelo base Phi-3.5-mini-instruct tiene 3.800 millones de parametros, y el tamano del repositorio (7,6 GB) es consistente con pesos en FP16/BF16 para esa magnitud.
+Nota: el dato de "parametros totales" extraido de Hugging Face (199.680) parece un error de medicion; el modelo base Phi-3.5-mini-instruct tiene 3.800 millones de parametros, y el tamano del repositorio (7,6 GB) es consistente con pesos en FP16/BF16 para esa magnitud.
 
 ## Arquitectura y entrenamiento
 
@@ -78,7 +78,7 @@ La comparacion es limitada porque no hay benchmarks del modelo evaluado. DeepSee
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logan7000/llm-math345-gt-phi35mini-endpoint
+- Repositorio Hugging Face: https://huggingface.co/logan7000/llm-math345-gt-phi35mini-endpoint
 - Modelo base: https://huggingface.co/microsoft/Phi-3.5-mini-instruct
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Libreria TRL: https://github.com/huggingface/trl

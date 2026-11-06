@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-fwe-untied-grow-d18 es un modelo de lenguaje base (no instruido) publicado por el usuario CharlieChen en HuggingFace, derivado del trabajo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata de un transformer con recursión ("looped transformer") entrenado desde cero sobre el corpus FineWeb-Edu, con 2.525.036.544 parámetros almacenados en FP32 y una ventana de contexto de 2.048 tokens. El checkpoint público contiene únicamente los tensores del modelo y la recurrencia de evaluación final, junto con un `result.json` con la configuración y métricas seleccionadas.
+loop-fwe-untied-grow-d18 es un modelo de lenguaje base (no instruido) publicado por el usuario CharlieChen en Hugging Face, derivado del trabajo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata de un transformer con recursión ("looped transformer") entrenado desde cero sobre el corpus FineWeb-Edu, con 2.525.036.544 parámetros almacenados en FP32 y una ventana de contexto de 2.048 tokens. El checkpoint público contiene únicamente los tensores del modelo y la recurrencia de evaluación final, junto con un `result.json` con la configuración y métricas seleccionadas.
 
 Su interés es fundamentalmente de investigación: forma parte de un estudio sobre cómo el crecimiento de modelo, la recursión y los operadores de frontera afectan a los exponentes de escalado. La variante "untied-grow d18" corresponde a una coordenada de profundidad d18 con 4 repeticiones finales del núcleo, anchura 2304 y 18 cabezas de atención, usando el tokenizador de GPT-2 vía tiktoken con un vocabulario de 50.257 tokens (ampliado a 50.304 filas del modelo).
 
@@ -114,7 +114,7 @@ Las cifras de parámetros, contexto y licencia de los modelos alternativos se in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-fwe-untied-grow-d18
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-fwe-untied-grow-d18
 - Repositorio de código del paper: https://github.com/cue-engineering/loop
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Paper citado: "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents" (no se ha encontrado enlace directo en la información disponible)

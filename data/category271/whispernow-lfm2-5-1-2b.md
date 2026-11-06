@@ -93,7 +93,7 @@ El modelo es la opcion mas rapida y ligera de la familia WhisperNow, con el trad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/category271/whispernow-lfm2.5-1.2b
+- Modelo en Hugging Face: https://huggingface.co/category271/whispernow-lfm2.5-1.2b
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/category271/whispernow-cleanup
 - Repositorio de WhisperNow (aplicacion de escritorio): https://github.com/stephan271c/WhisperNow

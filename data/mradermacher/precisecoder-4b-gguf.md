@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PreciseCoder-4B-GGUF es la version cuantizada en formato GGUF del modelo PreciseCoder-4B, publicada por el usuario mradermacher, un cuantizador de referencia en HuggingFace. No se trata de un modelo entrenado por mradermacher, sino de una conversion a GGUF del modelo base PreciseCoder/PreciseCoder-4B, cuyo objetivo declarado por las etiquetas del repositorio es el codigo y la depuracion (debugging), con un post-entrenamiento basado en aprendizaje por refuerzo mediante GRPO. El repositorio cuenta con 274 descargas y ninguna valoracion en el momento de redactar esta ficha.
+PreciseCoder-4B-GGUF es la version cuantizada en formato GGUF del modelo PreciseCoder-4B, publicada por el usuario mradermacher, un cuantizador de referencia en Hugging Face. No se trata de un modelo entrenado por mradermacher, sino de una conversion a GGUF del modelo base PreciseCoder/PreciseCoder-4B, cuyo objetivo declarado por las etiquetas del repositorio es el codigo y la depuracion (debugging), con un post-entrenamiento basado en aprendizaje por refuerzo mediante GRPO. El repositorio cuenta con 274 descargas y ninguna valoracion en el momento de redactar esta ficha.
 
 El modelo tiene 4.205.751.296 parametros (aproximadamente 4,2 mil millones) en pesos safetensors, y se distribuye en 12 cuantizaciones estaticas que van desde Q2_K (2,0 GB) hasta f16 (8,5 GB), ademas de dos ficheros mmproj (Q8_0 y f16) etiquetados como suplemento multimodal. Esta horquilla de tamanos hace que el modelo sea desplegable en GPU de consumo e incluso en CPU, lo que resulta relevante para entornos de desarrollo local donde la privacidad del codigo impide enviar fragmentos a APIs externas.
 
@@ -35,7 +35,7 @@ No hay informacion sobre el numero de capas, dimension del modelo, tipo de atenc
 - Generacion de codigo: el modelo esta etiquetado explicitamente para la tarea de "code", lo que apunta a sintesis de codigo en distintos lenguajes de programacion.
 - Depuracion (debugging): capacidad destacada por las etiquetas del repositorio y presumiblemente reforzada durante la fase de GRPO.
 - Formato conversacional: la etiqueta "conversational" indica que el modelo ha sido ajustado para dialogo multi-turno mediante plantilla de chat.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que puede servirse a traves de infraestructura de inferencia estandar de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que puede servirse a traves de infraestructura de inferencia estandar de Hugging Face.
 - Idiomas: unicamente ingles, segun el campo "language" de la model card. No hay soporte multilingue declarado.
 - Tool calling y function calling: no disponible, no se menciona en la informacion proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponible, no documentadas.

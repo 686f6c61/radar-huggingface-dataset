@@ -35,7 +35,7 @@ El artefacto incorpora dos componentes adicionales. Por un lado, una cabeza de b
 
 ## Capacidades
 
-- Generacion de texto conversacional en modo multimodal image-text-to-text (pipeline declarado en HuggingFace).
+- Generacion de texto conversacional en modo multimodal image-text-to-text (pipeline declarado en Hugging Face).
 - Procesamiento de imagenes mediante torre de vision integrada, con un envelope maximo de 32.768 tokens fusionados.
 - Contexto largo en texto: recuperacion tipo needle-in-a-haystack correcta (3/3) a 8K, 32K y 64K tokens segun RULER NIAH, con contexto probado hasta 124.928 tokens.
 - Razonamiento matematico con cadena de pensamiento: 0,96 en `gsm8k_cot` (8-shot, 50 muestras, lm-evaluation-harness).
@@ -100,8 +100,8 @@ No se dispone de datos de benchmarks, tamano o contexto de modelos alternativos 
 
 | Alternativa | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3.8-27B | Modelo base sin cuantizar | 27.000 millones (denominacion) | no disponible | Apache-2.0 | HuggingFace |
-| Este artefacto (mtrskeen/qwen3.8-27b-ninfer-minq4-mtpq4-visionq4-5080) | Recuantizacion min-Q4 + MTP-Q4 + Vision-Q4 | 27.000 millones (modelo base) | 124.928 tokens (texto) / 32.768 (vision) | Apache-2.0 | HuggingFace, requiere NInfer |
+| Qwen/Qwen3.8-27B | Modelo base sin cuantizar | 27.000 millones (denominacion) | no disponible | Apache-2.0 | Hugging Face |
+| Este artefacto (mtrskeen/qwen3.8-27b-ninfer-minq4-mtpq4-visionq4-5080) | Recuantizacion min-Q4 + MTP-Q4 + Vision-Q4 | 27.000 millones (modelo base) | 124.928 tokens (texto) / 32.768 (vision) | Apache-2.0 | Hugging Face, requiere NInfer |
 | aljazceru/ninfer (port `sm_86`, A5000 16 GB) | Fork previo del runtime y de la conversion min-Q4 | no disponible | no disponible | no disponible | GitHub |
 | mtrskeen/ninfer-5080 | Fork del runtime que genera este artefacto | no aplica (runtime) | no aplica | no disponible | GitHub |
 

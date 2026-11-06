@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`akniele/classify_traffic_sign` es un repositorio de HuggingFace publicado por el usuario akniele que, por su identificador y la estructura de la model card, parece concebido para la clasificación de senales de trafico. Sin embargo, la informacion disponible es practicamente nula: el repositorio tiene un tamano de 0.0 GB, no declara pipeline, no incluye idiomas soportados y la model card se limita a la linea de licencia MIT, sin descripcion, arquitectura ni datos de entrenamiento.
+`akniele/classify_traffic_sign` es un repositorio de Hugging Face publicado por el usuario akniele que, por su identificador y la estructura de la model card, parece concebido para la clasificación de senales de trafico. Sin embargo, la informacion disponible es practicamente nula: el repositorio tiene un tamano de 0.0 GB, no declara pipeline, no incluye idiomas soportados y la model card se limita a la linea de licencia MIT, sin descripcion, arquitectura ni datos de entrenamiento.
 
 No se trata, por tanto, de un modelo de lenguaje ni de un modelo generativo: no hay indicios de que sea un transformer, un MoE ni un sistema multimodal. Lo mas probable es que sea un intento de subida incompleto o un contenedor vacio de pesos para una tarea de vision por computador (clasificacion de imagenes de senales de trafico), pero no hay artefactos que lo confirmen.
 
@@ -80,7 +80,7 @@ No es posible establecer una comparativa fiable porque se desconocen parametros,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/akniele/classify_traffic_sign
+- Hugging Face: https://huggingface.co/akniele/classify_traffic_sign
 - Paper: no disponible
 - Blog: no disponible
 - Repositorio de codigo: no disponible

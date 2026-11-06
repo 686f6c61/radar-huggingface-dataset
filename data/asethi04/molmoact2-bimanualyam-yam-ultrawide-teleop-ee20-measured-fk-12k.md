@@ -70,7 +70,7 @@ No se dispone de comparativas directas con otros modelos VLA en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ASethi04/MolmoAct2-BimanualYAM-yam-ultrawide-teleop-ee20-measured-fk-12k
+- Modelo en Hugging Face: https://huggingface.co/ASethi04/MolmoAct2-BimanualYAM-yam-ultrawide-teleop-ee20-measured-fk-12k
 - Modelo base: https://huggingface.co/allenai/MolmoAct2-BimanualYAM
 - Dataset de entrenamiento: https://huggingface.co/datasets/brandonyang/yam-ultrawide-teleop
 - Tokenizador FAST (referenciado): https://huggingface.co/allenai/MolmoAct2-FAST-Tokenizer

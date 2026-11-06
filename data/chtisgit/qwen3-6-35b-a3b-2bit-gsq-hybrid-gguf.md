@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio chtisgit/Qwen3.6-35B-A3B-2Bit-GSQ-hybrid-GGUF es una publicacion de pesos en formato GGUF alojada en HuggingFace por el usuario chtisgit. Por el propio identificador del repositorio se deduce que se trata de una cuantizacion a 2 bits de un modelo de arquitectura de mezcla de expertos (MoE) con 35.000 millones de parametros totales y aproximadamente 3.000 millones de parametros activos por token, con un esquema de cuantizacion denominado GSQ (group scaling quantization) y una variante marcada como "hybrid". La model card publicada esta practicamente vacia: unicamente contiene la declaracion de licencia apache-2.0, sin descripcion, sin tabla de especificaciones, sin instrucciones de uso y sin resultados de evaluacion.
+El repositorio chtisgit/Qwen3.6-35B-A3B-2Bit-GSQ-hybrid-GGUF es una publicacion de pesos en formato GGUF alojada en Hugging Face por el usuario chtisgit. Por el propio identificador del repositorio se deduce que se trata de una cuantizacion a 2 bits de un modelo de arquitectura de mezcla de expertos (MoE) con 35.000 millones de parametros totales y aproximadamente 3.000 millones de parametros activos por token, con un esquema de cuantizacion denominado GSQ (group scaling quantization) y una variante marcada como "hybrid". La model card publicada esta practicamente vacia: unicamente contiene la declaracion de licencia apache-2.0, sin descripcion, sin tabla de especificaciones, sin instrucciones de uso y sin resultados de evaluacion.
 
 La relevancia de este tipo de publicaciones es practica: las cuantizaciones de muy baja precision (2 bits) permiten ejecutar modelos MoE de gran tamano total en hardware de consumo, ya que el coste computacional por token depende de los parametros activos, no de los totales. Sin embargo, esta ficha debe leerse con cautela, porque la informacion disponible es minima: no hay pipeline declarado, no hay idiomas declarados, no hay benchmarks, el repositorio no tiene descargas ni "likes", y los resultados de busqueda web devueltos no guardan ninguna relacion con el modelo (son guias de viaje de Varsovia), por lo que no aportan ningun dato tecnico verificable.
 
@@ -90,6 +90,6 @@ No se identifican alternativas comparables con datos suficientes en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chtisgit/Qwen3.6-35B-A3B-2Bit-GSQ-hybrid-GGUF
+- Hugging Face: https://huggingface.co/chtisgit/Qwen3.6-35B-A3B-2Bit-GSQ-hybrid-GGUF
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados obtenidos corresponden a guias de viaje de Varsovia (nomadicmatt.com, wakaabuja.com, go2warsaw.pl, tripadvisor.com, visitpolska.info) y no guardan ninguna relacion con el repositorio.
 - No se dispone de enlace a paper, blog tecnico, repositorio de codigo ni demo asociados al modelo.

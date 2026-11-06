@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ct-inkling-anth-gen-mid-g0-b2` es un adaptador LoRA (rango 64, `target_modules=all-linear`) entrenado sobre el modelo base `thinkingmachines/Inkling-Small`, publicado por el usuario de HuggingFace `arianaazarbal`. No es un modelo completo: es un conjunto de pesos PEFT que debe cargarse junto al modelo base mediante `transformers` y `peft`. Forma parte del programa de entrenamiento por constituciones autoescritas de forma iterada (welfare-in-ai-rnd / `constitutional_training`), en la línea genealógica `inkling-anth-gen-mid`.
+`ct-inkling-anth-gen-mid-g0-b2` es un adaptador LoRA (rango 64, `target_modules=all-linear`) entrenado sobre el modelo base `thinkingmachines/Inkling-Small`, publicado por el usuario de Hugging Face `arianaazarbal`. No es un modelo completo: es un conjunto de pesos PEFT que debe cargarse junto al modelo base mediante `transformers` y `peft`. Forma parte del programa de entrenamiento por constituciones autoescritas de forma iterada (welfare-in-ai-rnd / `constitutional_training`), en la línea genealógica `inkling-anth-gen-mid`.
 
 El interés del artefacto es metodológico más que de producto: cada generación se entrena desde cero sobre el modelo base con un corpus sintético de documentos que instancian una única constitución. La generación 0 (g0) se sembró con un resumen de 5 000 palabras de la constitución de Anthropic; las generaciones posteriores se siembran con una constitución escrita por el modelo de la generación anterior de la misma rama. La rama `b2` es una réplica independiente dentro de un conjunto de 40 cadenas. Esto permite estudiar deriva de comportamiento entre generaciones sin que los pesos acumulen historia: la única vía de transmisión es el texto.
 
@@ -73,8 +73,8 @@ Configuración de evaluación indicada por el autor (sin resultados asociados): 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ct-inkling-anth-gen-mid-g0-b2` (este adaptador) | no disponible | 8192 tokens en entrenamiento; contexto nativo del base no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas, 0 likes |
-| `thinkingmachines/Inkling-Small` (modelo base, sin adaptador) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `ct-inkling-anth-gen-mid-g0-b2` (este adaptador) | no disponible | 8192 tokens en entrenamiento; contexto nativo del base no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas, 0 likes |
+| `thinkingmachines/Inkling-Small` (modelo base, sin adaptador) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otras ramas o generaciones del programa `inkling-anth-gen-mid` | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Alternativas de la misma categoria (adaptadores LoRA de alineación o constitutional training) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -96,7 +96,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-inkling-anth-gen-mid-g0-b2
+- Página del modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-inkling-anth-gen-mid-g0-b2
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Paper, blog, repositorio o demo del programa `constitutional_training`: no disponible en la busqueda web.
 - La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo ni sobre su programa de entrenamiento: los resultados obtenidos corresponden a páginas de soporte técnico sobre inicios de sesión en Microsoft, Yahoo y Windows, sin relación con el artefacto.

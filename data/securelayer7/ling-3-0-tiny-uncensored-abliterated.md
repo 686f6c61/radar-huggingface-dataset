@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La difere
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Securelayer7/Ling-3.0-tiny-Uncensored-Abliterated
+- Repositorio Hugging Face: https://huggingface.co/Securelayer7/Ling-3.0-tiny-Uncensored-Abliterated
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-tiny
 - Documentación de Ling: https://developer.ant-ling.com/en/docs/models/ling/
 - Versión GGUF de terceros: https://huggingface.co/SC117/Ling-3.0-tiny-abliterated-APEX-GGUF

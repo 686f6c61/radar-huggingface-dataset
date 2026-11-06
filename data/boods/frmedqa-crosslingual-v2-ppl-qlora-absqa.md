@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FrMedQA-CrossLingual-v2-PPL-qlora-AbsQA es un modelo publicado en HuggingFace por el usuario `boods`, cuyo repositorio ocupa 0,5 GB y esta etiquetado con `transformers`, `safetensors` y `unsloth`. El identificador sugiere un ajuste fino mediante QLoRA sobre un modelo base no documentado, orientado a pregunta-respuesta sobre contenido medico en un contexto cross-lingual, probablemente frances-ingles. La model card publicada es la plantilla automatica de HuggingFace y no contiene ningun dato rellenado por el autor: todas las secciones relevantes figuran como "[More Information Needed]".
+FrMedQA-CrossLingual-v2-PPL-qlora-AbsQA es un modelo publicado en Hugging Face por el usuario `boods`, cuyo repositorio ocupa 0,5 GB y esta etiquetado con `transformers`, `safetensors` y `unsloth`. El identificador sugiere un ajuste fino mediante QLoRA sobre un modelo base no documentado, orientado a pregunta-respuesta sobre contenido medico en un contexto cross-lingual, probablemente frances-ingles. La model card publicada es la plantilla automatica de Hugging Face y no contiene ningun dato rellenado por el autor: todas las secciones relevantes figuran como "[More Information Needed]".
 
 Esto significa que no se dispone de informacion verificada sobre el modelo base, el numero de parametros, la longitud de contexto, el dataset de entrenamiento, la licencia ni los idiomas soportados. La unica evidencia material es el tamano del repositorio (0,5 GB), la etiqueta `unsloth` (que indica que el entrenamiento se realizo con esa libreria) y el sufijo `qlora` del nombre, que apunta a un ajuste con cuantizacion de 4 bits durante el entrenamiento.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para inferencia: no disponible. Depende enteramente del modelo base, que no esta documentado.
 - GPU recomendadas: no disponible. Sin conocer el numero de parametros del modelo base no es posible recomendar GPU concretas.
 - Encaje en GPU de consumo: no disponible. Los 0,5 GB del repositorio corresponden a un artefacto de ajuste, no a los pesos completos del modelo; la VRAM necesaria la determina el modelo base sobre el que se aplica.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` indica compatibilidad con los endpoints de HuggingFace. La libreria declarada es `transformers`, de modo que la carga mediante `transformers` y `peft` es la via mas directa si el artefacto es un adaptador LoRA. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama o TGI, y en el caso de llama.cpp u Ollama seria imprescindible disponer del modelo base en formato GGUF.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` indica compatibilidad con los endpoints de Hugging Face. La libreria declarada es `transformers`, de modo que la carga mediante `transformers` y `peft` es la via mas directa si el artefacto es un adaptador LoRA. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama o TGI, y en el caso de llama.cpp u Ollama seria imprescindible disponer del modelo base en formato GGUF.
 - Latencia y throughput: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -69,9 +69,9 @@ No se dispone de datos de rendimiento de este modelo ni de modelos comparables d
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FrMedQA-CrossLingual-v2-PPL-qlora-AbsQA | Modelo analizado | no disponible | no disponible | no disponible | Publico en HuggingFace, 0 descargas |
-| FrMedQA-CrossLingual-v2-NoPPL-qlora-AbsQA | Variante sin PPL, mismo autor | no disponible | no disponible | no disponible | Publico en HuggingFace |
-| FrMedQA-CrossLingual-NoPPL-AbsQA | Variante sin PPL, sin QLoRA, mismo autor | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| FrMedQA-CrossLingual-v2-PPL-qlora-AbsQA | Modelo analizado | no disponible | no disponible | no disponible | Publico en Hugging Face, 0 descargas |
+| FrMedQA-CrossLingual-v2-NoPPL-qlora-AbsQA | Variante sin PPL, mismo autor | no disponible | no disponible | no disponible | Publico en Hugging Face |
+| FrMedQA-CrossLingual-NoPPL-AbsQA | Variante sin PPL, sin QLoRA, mismo autor | no disponible | no disponible | no disponible | Publico en Hugging Face |
 
 No se ha identificado ningun modelo de terceros comparable con datos verificables en la informacion proporcionada.
 
@@ -88,7 +88,7 @@ No se ha identificado ningun modelo de terceros comparable con datos verificable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-PPL-qlora-AbsQA
+- Modelo en Hugging Face: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-PPL-qlora-AbsQA
 - Variante relacionada: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-NoPPL-qlora-AbsQA
 - Variante relacionada: https://huggingface.co/boods/FrMedQA-CrossLingual-NoPPL-AbsQA
 - Paper citado en la model card (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700

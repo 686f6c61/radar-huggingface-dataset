@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario safafaf67 en HuggingFace, orientado a tareas de razonamiento complejo, generación de código y comprensión del lenguaje. Según la model card, se trata de una versión actualizada que mejora significativamente la profundidad de razonamiento gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que su rendimiento en benchmarks de matemáticas, programación y lógica se aproxima al de otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario safafaf67 en Hugging Face, orientado a tareas de razonamiento complejo, generación de código y comprensión del lenguaje. Según la model card, se trata de una versión actualizada que mejora significativamente la profundidad de razonamiento gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que su rendimiento en benchmarks de matemáticas, programación y lógica se aproxima al de otros modelos líderes.
 
 Sin embargo, la información pública es muy limitada: el repositorio está vacío (0.0 GB), no se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los datos de entrenamiento. La model card incluye una tabla de resultados en categorías genéricas (razonamiento matemático, comprensión lectora, etc.) comparando con otros modelos sin identificar, y menciona una mejora en el conjunto AIME 2025 (del 70% al 87,5% de precisión) acompañada de un aumento en el número medio de tokens por pregunta (de 12K a 23K). También indica soporte para function calling y una reducción de la tasa de alucinación.
 
@@ -87,7 +87,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB), por lo que el modelo no se puede descargar ni ejecutar. No hay pesos, configuraciones ni código disponibles.
+- El repositorio de Hugging Face está vacío (0.0 GB), por lo que el modelo no se puede descargar ni ejecutar. No hay pesos, configuraciones ni código disponibles.
 - No se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados. Cualquier uso en producción sería imposible sin estos datos.
 - Los benchmarks presentados en la model card carecen de transparencia: no se identifican los benchmarks concretos ni los modelos de comparación, y los resultados parecen ser categorías genéricas en lugar de métricas estándar (MMLU, HumanEval, GSM8K, etc.).
 - No se ha publicado información sobre sesgos, riesgos de alucinación o limitaciones de contexto. El autor afirma una reducción de alucinaciones, pero no aporta datos verificables.
@@ -96,5 +96,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/safafaf67/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/safafaf67/MyAwesomeModel-TestRepo
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código, demos) en la información proporcionada.

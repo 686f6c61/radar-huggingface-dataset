@@ -104,7 +104,7 @@ Frente a una cuantización uniforme de 4 bits, este checkpoint ocupa más espaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bambocher/Qwen3.5-2B-oQ2-mtp
+- Hugging Face: https://huggingface.co/bambocher/Qwen3.5-2B-oQ2-mtp
 - Repositorio de la herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base Qwen3.5-2B: no disponible en la información proporcionada
 - Paper, blog o demo del autor: no disponible en la información proporcionada

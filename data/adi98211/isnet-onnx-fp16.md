@@ -77,7 +77,7 @@ El autor indica explícitamente que el proceso de publicación no incluyó una r
 | IS-Net original (DIS) | Segmentación dicotómica de alta precisión | Pesos PyTorch en el repositorio oficial | Configurable | No verificada en esta ficha | Referencia académica del método; este ONNX no se declara equivalente a ningún peso oficial |
 | U²-Net / U²-Net-lite | Detección de objetos salientes y matting | PyTorch, ONNX y ports comunitarios | Configurable | No verificada en esta ficha | Modelo más antiguo y ligero; suele requerir post-proceso para bordes finos |
 | MODNet | Matting de retrato en tiempo real | PyTorch, ONNX comunitario | Configurable | No verificada en esta ficha | Orientado a vídeo y retratos; no está pensado para objetos genéricos |
-| BiRefNet | Segmentación de alta resolución | PyTorch, weights en HuggingFace | Configurable | No verificada en esta ficha | Alternativa más moderna y pesada; necesita GPU para uso cómodo |
+| BiRefNet | Segmentación de alta resolución | PyTorch, weights en Hugging Face | Configurable | No verificada en esta ficha | Alternativa más moderna y pesada; necesita GPU para uso cómodo |
 
 Los datos de licencia y de parámetros de los modelos alternativos no se han verificado en el marco de esta ficha y deben contrastarse en sus repositorios oficiales antes de decidir. No hay cifras de rendimiento comparadas disponibles para este ONNX.
 
@@ -97,6 +97,6 @@ Los datos de licencia y de parámetros de los modelos alternativos no se han ver
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ADI98211/isnet-onnx-fp16
+- Repositorio en Hugging Face: https://huggingface.co/ADI98211/isnet-onnx-fp16
 - Checksum SHA256 del archivo: `2eb4b5dda7ec41c617e59706e5aafa1f978c9a5f983d2518d9f0ae4d6eb04f20`
 - Paper de IS-Net, blog del autor, repositorio de código y demo: no disponibles en la información proporcionada. El autor tampoco enlaza el proyecto Aarelier ni StarFlame.

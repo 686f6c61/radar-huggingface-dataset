@@ -23,7 +23,7 @@ La relevancia del repositorio es limitada y hay que ser honesto al respecto: acu
 | Modelo base | Qwen/Qwen3.8-27B (Alibaba Qwen) |
 | Repositorio de origen | Build abliterated de la comunidad huihui-ai (Apache 2.0); existe tambien una version FP8 del mismo build |
 | Fecha de publicacion | 16 de octubre de 2026 |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -99,7 +99,7 @@ Las diferencias entre los tres primeros son de empaquetado, no de capacidades: m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VicTeamAgency/Qwen3.8-27B-Uncensored-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/VicTeamAgency/Qwen3.8-27B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio alternativo del mismo build: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF
 - Guia de ejecucion (The Geek Insights): https://thegeekinsights.com/run-uncensored-qwen-3-8-27b/

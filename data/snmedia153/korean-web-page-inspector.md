@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Korean Web Page Inspector es un modelo de clasificación de texto publicado por el usuario snmedia153 en HuggingFace, pensado para inspeccionar páginas web en coreano y devolver, en formato JSON, tanto el estado de la página como la presencia y posición de elementos de inicio de sesión y registro. No es un modelo generativo ni un modelo de visión: combina un encoder de frases congelado (paraphrase-multilingual-MiniLM-L12-v2), una cabeza de clasificación propia entrenada con regresión ridge, reglas estructurales sobre el DOM y un paso de validación de selectores CSS. El objetivo declarado es separar dos cosas que un clasificador de etiqueta única mezclaría: el propósito de la página (por ejemplo, `NORMAL`) y los roles de los elementos presentes (`LOGIN_ENTRY`, `SIGNUP_ENTRY`), permitiendo que coexistan varios formularios de login con sus posiciones y relaciones preservadas.
+Korean Web Page Inspector es un modelo de clasificación de texto publicado por el usuario snmedia153 en Hugging Face, pensado para inspeccionar páginas web en coreano y devolver, en formato JSON, tanto el estado de la página como la presencia y posición de elementos de inicio de sesión y registro. No es un modelo generativo ni un modelo de visión: combina un encoder de frases congelado (paraphrase-multilingual-MiniLM-L12-v2), una cabeza de clasificación propia entrenada con regresión ridge, reglas estructurales sobre el DOM y un paso de validación de selectores CSS. El objetivo declarado es separar dos cosas que un clasificador de etiqueta única mezclaría: el propósito de la página (por ejemplo, `NORMAL`) y los roles de los elementos presentes (`LOGIN_ENTRY`, `SIGNUP_ENTRY`), permitiendo que coexistan varios formularios de login con sus posiciones y relaciones preservadas.
 
 Técnicamente es un sistema ligero orientado a CPU: el encoder base no se reentrena, solo la cabeza de clasificación, y el despliegue se empaqueta en Docker con un límite de 2 CPUs y 1536 MB de memoria. El tokenizador trabaja con un límite de 128 tokens y cadenas de características de hasta 2000 caracteres, con mask mean pooling y normalización L2 sobre embeddings de 384 dimensiones. La salida está pensada para ser consumida por programas posteriores (automatización de scraping, QA de formularios, monitorización de páginas), no por un usuario final conversacional.
 
@@ -84,8 +84,8 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Korean Web Page Inspector | No disponible | 128 tokens / 2000 caracteres | Macro F1 0.8408 y exactitud 0.9405 en 185 páginas (evaluación interna) | MIT (código y cabeza) + Apache-2.0 (encoder) | HuggingFace, 0 descargas |
-| paraphrase-multilingual-MiniLM-L12-v2 | No disponible en la información proporcionada | No disponible | No aplica al caso de uso (encoder de propósito general) | Apache-2.0 | HuggingFace |
+| Korean Web Page Inspector | No disponible | 128 tokens / 2000 caracteres | Macro F1 0.8408 y exactitud 0.9405 en 185 páginas (evaluación interna) | MIT (código y cabeza) + Apache-2.0 (encoder) | Hugging Face, 0 descargas |
+| paraphrase-multilingual-MiniLM-L12-v2 | No disponible en la información proporcionada | No disponible | No aplica al caso de uso (encoder de propósito general) | Apache-2.0 | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -105,7 +105,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/snmedia153/korean-web-page-inspector
+- Modelo en Hugging Face: https://huggingface.co/snmedia153/korean-web-page-inspector
 - Encoder base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 - Documentación referenciada en el repositorio (rutas relativas a la model card): `INSTALL.md`, `EVALUATION.md`, `LABELING.md`, `DATA.md`, `LICENSE_REVIEW.md`, `NOTICE`, `BASE_MODEL_LICENSE.txt`, `licenses/`
 - Búsqueda web: los resultados devueltos no guardan relación con el modelo (contenido genérico sobre Instagram); no se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo.

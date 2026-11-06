@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`juicenv/microduck-hill-es2` es una política de control robótico (no un modelo de lenguaje) publicada en HuggingFace por el usuario `juicenv`. Se trata de un *gait* o patrón de marcha para el robot cuadrúpedo de código abierto [microduck](https://github.com/pollen-robotics/microduck) de Pollen Robotics, afinado mediante estrategias de evolución (*evolution strategies*) contra el propio *hill scorer* de la Arena sobre x86. El resultado es una política perpetua: una vez cargada en una *slot* de política del robot, se ejecuta de forma continua hasta que se le indique lo contrario.
+`juicenv/microduck-hill-es2` es una política de control robótico (no un modelo de lenguaje) publicada en Hugging Face por el usuario `juicenv`. Se trata de un *gait* o patrón de marcha para el robot cuadrúpedo de código abierto [microduck](https://github.com/pollen-robotics/microduck) de Pollen Robotics, afinado mediante estrategias de evolución (*evolution strategies*) contra el propio *hill scorer* de la Arena sobre x86. El resultado es una política perpetua: una vez cargada en una *slot* de política del robot, se ejecuta de forma continua hasta que se le indique lo contrario.
 
 El modelo parte de `HannesVonEssen/microduck-running` (Apache-2.0) y lo especializa para subida de colinas, de ahí el nombre "hill-es2" y la descripción de "1.5 m Hill Climb runner". La interfaz es deliberadamente sencilla: 61 dimensiones de observación de entrada, 14 acciones de salida y una frecuencia de control de 50 Hz. El normalizador de observaciones está integrado dentro del propio `policy.onnx`, de modo que el consumidor debe alimentar observaciones en crudo.
 
@@ -80,8 +80,8 @@ No se han identificado en la informacion disponible otras políticas microduck c
 
 | Modelo | Parametros | Observacion / accion | Frecuencia | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `juicenv/microduck-hill-es2` | no disponible | 61 / 14 | 50 Hz | Estrategias de evolución sobre *hill scorer* de la Arena, partiendo de `microduck-running` | no disponible (base Apache-2.0) | HuggingFace, 0 descargas |
-| `HannesVonEssen/microduck-running` | no disponible | no disponible | no disponible | no disponible (modelo base) | Apache-2.0 | HuggingFace |
+| `juicenv/microduck-hill-es2` | no disponible | 61 / 14 | 50 Hz | Estrategias de evolución sobre *hill scorer* de la Arena, partiendo de `microduck-running` | no disponible (base Apache-2.0) | Hugging Face, 0 descargas |
+| `HannesVonEssen/microduck-running` | no disponible | no disponible | no disponible | no disponible (modelo base) | Apache-2.0 | Hugging Face |
 | Otras políticas microduck | no disponible | no disponible | no disponible | no disponible | no disponible | no disponibles en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se han identificado en la informacion disponible otras políticas microduck c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juicenv/microduck-hill-es2
+- Modelo en Hugging Face: https://huggingface.co/juicenv/microduck-hill-es2
 - Modelo base: https://huggingface.co/HannesVonEssen/microduck-running
 - Proyecto microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento referenciado en la model card: `pollen-robotics/microduck_rl`, rama `lean`, commit `5a3636302`

@@ -24,7 +24,7 @@ La relevancia de esta ficha concreta es practica: se trata de una redistribucion
 | Modelo base | xiabs/DreamOmni2 (xiabs/DreamOmni2-7.6B) |
 | Tamano del repositorio | 73,8 GB |
 | Etiquetas | gguf, image-to-image, conversational, endpoints_compatible, arxiv:2510.06679 |
-| Fecha de publicacion en HuggingFace | 2026-09-21 (segun metadatos del repositorio) |
+| Fecha de publicacion en Hugging Face | 2026-09-21 (segun metadatos del repositorio) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -39,7 +39,7 @@ Los indicios disponibles apuntan a un modelo de generacion y edicion de imagen g
 - Generacion de imagen a partir de instrucciones multimodales, segun la descripcion del paper ("editing and generation").
 - Uso conversacional: el repositorio incluye la etiqueta `conversational`, aunque no se documenta el alcance real de esta capacidad.
 - Integracion en ComfyUI mediante nodos personalizados, con soporte de LoRAs adicionales.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de la infraestructura de Inference Endpoints de HuggingFace, sin que se detallen las condiciones.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de la infraestructura de Inference Endpoints de Hugging Face, sin que se detallen las condiciones.
 - Capacidades concretas de tool calling, razonamiento multi-paso, matematicas, codigo, audio o modo de pensamiento: no disponibles en la informacion proporcionada.
 - Cobertura multilingue: no disponible.
 
@@ -92,7 +92,7 @@ No se proporciono informacion verificada sobre modelos comparables que permita u
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/VenerableRolliPolli/DreamOmni2-7.6B-GGUF
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/VenerableRolliPolli/DreamOmni2-7.6B-GGUF
 - Modelo base: https://huggingface.co/xiabs/DreamOmni2
 - Paper: https://huggingface.co/papers/2510.06679 (DreamOmni2: Multimodal Instruction-based Editing and Generation, arXiv:2510.06679)
 - Repositorio GitHub del proyecto: https://github.com/dvlab-research/DreamOmni2

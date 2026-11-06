@@ -92,7 +92,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables, ni d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-seedvr2-3b-fp16-aio-checkpoint
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-seedvr2-3b-fp16-aio-checkpoint
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2079800420884840449
 - Pagina del autor: https://www.runninghub.ai/user-center/2065373775989661698
 - RunningHub (internacional): https://www.runninghub.ai

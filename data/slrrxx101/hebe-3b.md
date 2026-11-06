@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **hebe-3b** es un ajuste fino (fine-tune) del modelo base Qwen2.5-Coder-3B-Instruct, convertido a formato GGUF mediante la librería Unsloth. Lo publica el usuario de HuggingFace `slrrxx101` y está pensado para su uso con `llama.cpp` y Ollama, lo que facilita su despliegue en entornos locales o de producción ligera. El modelo se distribuye únicamente en cuantización Q4_K_M, lo que lo hace adecuado para ejecutarse en hardware de consumo.
+El modelo **hebe-3b** es un ajuste fino (fine-tune) del modelo base Qwen2.5-Coder-3B-Instruct, convertido a formato GGUF mediante la librería Unsloth. Lo publica el usuario de Hugging Face `slrrxx101` y está pensado para su uso con `llama.cpp` y Ollama, lo que facilita su despliegue en entornos locales o de producción ligera. El modelo se distribuye únicamente en cuantización Q4_K_M, lo que lo hace adecuado para ejecutarse en hardware de consumo.
 
 La relevancia de este modelo radica en su tamaño compacto (alrededor de 3 mil millones de parámetros) y su especialización en tareas de código, heredada de la familia Qwen2.5-Coder. Al estar disponible en GGUF, puede integrarse fácilmente en pipelines de inferencia con `llama.cpp`, Ollama o servidores compatibles con la API de OpenAI. Sin embargo, la información pública es muy limitada: no se especifican datos de entrenamiento, licencia, ni benchmarks, por lo que su evaluación debe basarse en el comportamiento del modelo base y en pruebas empíricas.
 
@@ -75,7 +75,7 @@ La comparativa muestra que hebe-3b es una versión cuantizada y ajustada de un m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/slrrxx101/hebe-3b
+- Modelo en Hugging Face: https://huggingface.co/slrrxx101/hebe-3b
 - Repositorio de Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
-- Página principal de HuggingFace: https://huggingface.co/
+- Página principal de Hugging Face: https://huggingface.co/
 - Documentación de llama.cpp: https://github.com/ggerganov/llama.cpp

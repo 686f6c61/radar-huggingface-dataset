@@ -6,7 +6,7 @@ Thaki-EnergyLoad-Forecaster-v0.1 es un conjunto de tres modelos LightGBM disenad
 
 El modelo se entrena y evalua sobre el dataset publico UCI *ElectricityLoadDiagrams20112014*, que contiene 370 clientes portugueses entre 2011 y 2014 con resolucion de 15 minutos. En la segunda mitad de 2014 (periodo de test), los tres modelos superan a la mejor linea base simple en los tres horizontes, con intervalos de confianza al 95% de la diferencia de MASE enteramente por debajo de cero. La relevancia actual reside en que ofrece una linea base reproducible y ligera (tres ficheros de texto, sin necesidad de GPU) para tareas de pronostico energetico, un nicho donde predominan los enfoques deep learning pero donde el boosting sobre caracteristicas bien disenadas sigue siendo competitivo.
 
-La licencia es Apache 2.0, los idiomas declarados son ingles y coreano, y el repositorio ocupa 0.0 GB (ficheros de modelo de texto de LightGBM). El pipeline declarado en HuggingFace es `time-series-forecasting`.
+La licencia es Apache 2.0, los idiomas declarados son ingles y coreano, y el repositorio ocupa 0.0 GB (ficheros de modelo de texto de LightGBM). El pipeline declarado en Hugging Face es `time-series-forecasting`.
 
 ## Especificaciones tecnicas
 
@@ -87,7 +87,7 @@ La regla de publicacion preinscrita exigia que el limite superior del IC de Delt
 
 | Modelo | Tipo | Parametros | Contexto / historial | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Thaki-EnergyLoad-Forecaster-v0.1 | LightGBM, 3 modelos directos | no disponible | 1.344 filas (14 dias) a 15 min | MASE 0.517 / 0.628 / 0.784 (15 min / 1 h / 24 h) | Apache 2.0 | HuggingFace |
+| Thaki-EnergyLoad-Forecaster-v0.1 | LightGBM, 3 modelos directos | no disponible | 1.344 filas (14 dias) a 15 min | MASE 0.517 / 0.628 / 0.784 (15 min / 1 h / 24 h) | Apache 2.0 | Hugging Face |
 | Linea base persistencia (misma evaluacion) | Regla simple | 0 | 1 valor | MASE 0.675 / 1.136 / 1.003 | no aplica | incluida en la model card |
 | Linea base naive estacional 1 dia | Regla simple | 0 | 96 pasos | MASE 1.008 / 1.003 / 1.003 | no aplica | incluida en la model card |
 | Modelos deep learning para load forecasting (LSTM, Transformer, N-BEATS) | Redes neuronales | variable | variable | no disponible en la informacion proporcionada | variable | variable |
@@ -110,7 +110,7 @@ No se han publicado en la informacion disponible comparaciones directas con otro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ThakiCloud/Thaki-EnergyLoad-Forecaster-v0.1
+- Hugging Face: https://huggingface.co/ThakiCloud/Thaki-EnergyLoad-Forecaster-v0.1
 - Model card en coreano: https://huggingface.co/ThakiCloud/Thaki-EnergyLoad-Forecaster-v0.1/blob/main/MODEL_CARD.ko.md
 - Dataset UCI ElectricityLoadDiagrams20112014: https://archive.ics.uci.edu/dataset/321/electricityloaddiagrams20112014
 - Libreria LightGBM: https://github.com/microsoft/LightGBM

@@ -70,7 +70,7 @@ No se dispone de información sobre adaptadores comparables en la misma categor�
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/lukasz-staniszewski/ace-step-cs-violin-r8-tf6tf7)
+- [Hugging Face - modelo](https://huggingface.co/lukasz-staniszewski/ace-step-cs-violin-r8-tf6tf7)
 - [Colección ACE-Step Audio Steering Suite](https://huggingface.co/collections/lukasz-staniszewski/ace-step-audio-steering-suite-6a0bb3dacbac8e6db8f4d4e4)
 - [Repositorio GitHub del paper "Tuning Audio Diffusion Models through Activation Steering"](https://github.com/luk-st/steer-audio)
 - [Repositorio GitHub de ACE-Step](https://github.com/ace-step/ACE-Step)

@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_gptq-int4-gs64-sym | 1.416.040.448 según safetensors (nombre: 7B) | no disponible | safetensors (GPTQ INT4, grupo 64, simétrico) | Apache 2.0 | HuggingFace; 0 descargas, 0 likes |
-| sapienzanlp/Minerva-7B-base-v1.0 (modelo base, sin cuantizar) | no disponible (el nombre indica 7B) | no disponible | safetensors en bf16 | no disponible | HuggingFace |
+| fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_gptq-int4-gs64-sym | 1.416.040.448 según safetensors (nombre: 7B) | no disponible | safetensors (GPTQ INT4, grupo 64, simétrico) | Apache 2.0 | Hugging Face; 0 descargas, 0 likes |
+| sapienzanlp/Minerva-7B-base-v1.0 (modelo base, sin cuantizar) | no disponible (el nombre indica 7B) | no disponible | safetensors en bf16 | no disponible | Hugging Face |
 | Otras cuantizaciones del mismo modelo base (AWQ, GGUF, otras configuraciones GPTQ) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de otros modelos comparables de la misma categoría (LLM base centrado en italiano, escala ~7B) en la información proporcionada, por lo que no se incluyen cifras de rendimiento comparado.
@@ -92,7 +92,7 @@ No se dispone de datos verificados de otros modelos comparables de la misma cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_gptq-int4-gs64-sym
+- Modelo en Hugging Face: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_gptq-int4-gs64-sym
 - Modelo base: https://huggingface.co/sapienzanlp/Minerva-7B-base-v1.0
 - Intel AutoRound (framework de cuantización): https://github.com/intel/auto-round
 - Licencia Apache 2.0: https://choosealicense.com/licenses/apache-2.0/

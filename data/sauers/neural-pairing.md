@@ -24,7 +24,7 @@ Es relevante ahora porque el campo de la comunicación entre modelos y la interp
 | Libreria | peft; requiere el código propio del repositorio para cargar el puente |
 | Puntos de inyeccion | 8 de 36 capas (índices 0-based 6, 9, 12, ..., 27) |
 | Tamano del repositorio | 1,2 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creacion / actualizacion | 26 de octubre de 2026 / 26 de octubre de 2026 |
 
 ## Arquitectura y entrenamiento
@@ -87,9 +87,9 @@ En la prueba de preguntas sobre sentimientos (checkpoints anteriores de la misma
 
 | Modelo | Parametros | Contexto | Funcion principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Neural pairing (Quill + Ember) | Suma de dos bases (~4 B y ~4,5 B) + LoRA rango 32 + puente | No disponible | Investigacion de comunicacion entre modelos por estados ocultos | Apache-2.0 | HuggingFace, 0 descargas, requiere codigo propio |
+| Neural pairing (Quill + Ember) | Suma de dos bases (~4 B y ~4,5 B) + LoRA rango 32 + puente | No disponible | Investigacion de comunicacion entre modelos por estados ocultos | Apache-2.0 | Hugging Face, 0 descargas, requiere codigo propio |
 | Qwen/Qwen3-4B (solo) | ~4 B (segun denominacion) | No disponible en la informacion proporcionada | Modelo de lenguaje de proposito general | No disponible en la informacion proporcionada (verificar en su repositorio) | Ampliamente disponible |
-| arcee-ai/AFM-4.5B (solo) | ~4,5 B (segun denominacion) | No disponible en la informacion proporcionada | Modelo de lenguaje de proposito general | No disponible en la informacion proporcionada (verificar en su repositorio) | Disponible en HuggingFace |
+| arcee-ai/AFM-4.5B (solo) | ~4,5 B (segun denominacion) | No disponible en la informacion proporcionada | Modelo de lenguaje de proposito general | No disponible en la informacion proporcionada (verificar en su repositorio) | Disponible en Hugging Face |
 | Adaptador LoRA convencional | Depende del rango | Hereda del base | Ajuste de tarea sobre un unico modelo | Segun autor | Estandar en el ecosistema PEFT |
 
 La comparación relevante no es de rendimiento en tareas, sino de propósito: los dos modelos base son sistemas de generación de texto, mientras que este artefacto es un banco de pruebas de acoplamiento entre modelos. No se dispone de cifras de benchmarks de los modelos base en la información proporcionada.
@@ -109,7 +109,7 @@ La comparación relevante no es de rendimiento en tareas, sino de propósito: lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sauers/neural-pairing
+- Modelo en Hugging Face: https://huggingface.co/Sauers/neural-pairing
 - Repositorio de código y experimentos: https://github.com/SauersML/neural-pairing
 - README del repositorio: https://github.com/SauersML/neural-pairing/blob/main/README.md
 - Modelo base Quill: https://huggingface.co/Qwen/Qwen3-4B

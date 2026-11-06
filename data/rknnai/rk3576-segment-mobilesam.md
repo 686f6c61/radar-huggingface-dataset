@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RK3576-SEGMENT-MobileSAM es una conversión al formato RKNN del modelo MobileSAM (Mobile Segment Anything Model), un segmentador de imágenes derivado del Segment Anything Model (SAM). La distribución la publica el usuario RKNNAI en HuggingFace y toma como origen el repositorio airockchip/MobileSAM, integrado en el RKNN Model Zoo. No es un modelo de lenguaje: es un modelo de segmentación que produce máscaras de objetos a partir de indicaciones (prompts) como puntos o cajas.
+RK3576-SEGMENT-MobileSAM es una conversión al formato RKNN del modelo MobileSAM (Mobile Segment Anything Model), un segmentador de imágenes derivado del Segment Anything Model (SAM). La distribución la publica el usuario RKNNAI en Hugging Face y toma como origen el repositorio airockchip/MobileSAM, integrado en el RKNN Model Zoo. No es un modelo de lenguaje: es un modelo de segmentación que produce máscaras de objetos a partir de indicaciones (prompts) como puntos o cajas.
 
 El objetivo de este paquete es permitir la ejecución del pipeline MobileSAM sobre la NPU del SoC Rockchip RK3576, evitando la conversión manual desde PyTorch. El repositorio incluye una única configuración, `MobileSAM-448x448-fp16-1`, con encoder y decoder en precisión fp16, resolución de encoder de 448x448 y un núcleo NPU asignado a cada componente. El runtime RKNN requerido es la versión v2.4.0.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Resolucion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| RK3576-SEGMENT-MobileSAM (este) | Segmentacion | no disponible | 448x448 (encoder) | RKNN (runtime v2.4.0) | Apache 2.0 | HuggingFace y ModelScope |
+| RK3576-SEGMENT-MobileSAM (este) | Segmentacion | no disponible | 448x448 (encoder) | RKNN (runtime v2.4.0) | Apache 2.0 | Hugging Face y ModelScope |
 | MobileSAM upstream (airockchip/MobileSAM) | Segmentacion | no disponible | no disponible | PyTorch / ONNX y otros | Apache 2.0 | GitHub |
 | SAM original (Segment Anything) | Segmentacion | no disponible | no disponible | PyTorch y otros | no disponible en la informacion proporcionada | Repositorio original |
 | FastSAM | Segmentacion | no disponible | no disponible | PyTorch y otros | no disponible en la informacion proporcionada | Repositorio original |
@@ -98,7 +98,7 @@ Nota: los datos de parametros y resolucion de las alternativas no se detallan en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RKNNAI/RK3576-SEGMENT-MobileSAM
+- Hugging Face: https://huggingface.co/RKNNAI/RK3576-SEGMENT-MobileSAM
 - README en chino: https://huggingface.co/RKNNAI/RK3576-SEGMENT-MobileSAM/blob/main/README_CN.md
 - Modelo fuente (GitHub): https://github.com/airockchip/MobileSAM
 - RKNN Model Zoo, ejemplo MobileSAM: https://github.com/airockchip/rknn_model_zoo/tree/main/examples/mobilesam

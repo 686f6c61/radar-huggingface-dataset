@@ -78,9 +78,9 @@ No se dispone en la informacion proporcionada de datos de otros modelos TTS comp
 
 | Modelo | Parametros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-TTS-12Hz-1.7B-VoiceDesign (este repo, GGUF) | 1,92 B | Control de voz por instrucciones, formato GGUF | Apache 2.0 | HuggingFace (agentory) |
-| Qwen3-TTS-12Hz-1.7B-Base | no disponible | Generacion zero-shot | Apache 2.0 | HuggingFace (Qwen) |
-| Qwen3-TTS-12Hz-1.7B-CustomVoice | no disponible | Voz personalizada con hablante predefinido | Apache 2.0 | HuggingFace (Qwen) |
+| Qwen3-TTS-12Hz-1.7B-VoiceDesign (este repo, GGUF) | 1,92 B | Control de voz por instrucciones, formato GGUF | Apache 2.0 | Hugging Face (agentory) |
+| Qwen3-TTS-12Hz-1.7B-Base | no disponible | Generacion zero-shot | Apache 2.0 | Hugging Face (Qwen) |
+| Qwen3-TTS-12Hz-1.7B-CustomVoice | no disponible | Voz personalizada con hablante predefinido | Apache 2.0 | Hugging Face (Qwen) |
 
 ## Limitaciones y advertencias
 
@@ -95,9 +95,9 @@ No se dispone en la informacion proporcionada de datos de otros modelos TTS comp
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/agentory/Qwen3-TTS-12Hz-1.7B-VoiceDesign-GGUF
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/agentory/Qwen3-TTS-12Hz-1.7B-VoiceDesign-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign
-- Coleccion Qwen3-TTS en HuggingFace: https://huggingface.co/collections/Qwen/qwen3-tts
+- Coleccion Qwen3-TTS en Hugging Face: https://huggingface.co/collections/Qwen/qwen3-tts
 - Coleccion Qwen3-TTS en ModelScope: https://modelscope.cn/collections/Qwen/Qwen3-TTS
 - Blog de Qwen3-TTS: https://qwen.ai/blog?id=qwen3tts-0115
 - Paper (arXiv 2601.15621): https://huggingface.co/papers/2601.15621

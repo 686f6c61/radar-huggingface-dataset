@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`anegor-ov0820/toy-multimodal-generation-2024` es un repositorio alojado en HuggingFace que, pese a estar etiquetado con `transformer`, `safetensors` y `multimodal-generation`, no contiene un modelo entrenado utilizable. La propia model card lo describe como un conjunto estructurado de notas de investigacion sobre generacion multimodal, con referencias de evaluacion y preguntas abiertas, y afirma explicitamente que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni checkpoint entrenado. El autor del espacio es el usuario `anegor-ov0820` y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
+`anegor-ov0820/toy-multimodal-generation-2024` es un repositorio alojado en Hugging Face que, pese a estar etiquetado con `transformer`, `safetensors` y `multimodal-generation`, no contiene un modelo entrenado utilizable. La propia model card lo describe como un conjunto estructurado de notas de investigacion sobre generacion multimodal, con referencias de evaluacion y preguntas abiertas, y afirma explicitamente que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni checkpoint entrenado. El autor del espacio es el usuario `anegor-ov0820` y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
 
 El unico artefacto con pesos es un fichero `safetensors` cuyo recuento de parametros declarado es de 16.576, una cifra entre tres y seis ordenes de magnitud por debajo de cualquier modelo multimodal publicado. Esto es coherente con la nomenclatura `toy` del identificador y con un tamano de repositorio de 0,0 GB: se trata de un checkpoint de juguete o de un fichero residual generado por una plantilla, no de un sistema capaz de generar o procesar modalidades de forma significativa.
 
-Su relevancia actual es, por tanto, documental y metodologica, no funcional. Sirve como ejemplo de estructura de notas de investigacion reproducible (separacion entre planes, hipotesis y resultados, exigencia de versiones de dataset, semillas, hardware y logs crudos) y como recordatorio de que la presencia de la etiqueta `transformer` o de pesos en formato `safetensors` en HuggingFace no implica que exista un modelo evaluable. Cualquier uso en produccion o en investigacion comparativa requeriria verificar primero que el contenido del repositorio es lo que la model card declara.
+Su relevancia actual es, por tanto, documental y metodologica, no funcional. Sirve como ejemplo de estructura de notas de investigacion reproducible (separacion entre planes, hipotesis y resultados, exigencia de versiones de dataset, semillas, hardware y logs crudos) y como recordatorio de que la presencia de la etiqueta `transformer` o de pesos en formato `safetensors` en Hugging Face no implica que exista un modelo evaluable. Cualquier uso en produccion o en investigacion comparativa requeriria verificar primero que el contenido del repositorio es lo que la model card declara.
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ No se dispone de comparativas con modelos multimodales reales (por ejemplo, fami
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anegor-ov0820/toy-multimodal-generation-2024
+- Modelo en Hugging Face: https://huggingface.co/anegor-ov0820/toy-multimodal-generation-2024
 - Repositorio con la misma plantilla de notas: https://huggingface.co/bcnmartin96/toy-multimodal-generation
 - Repositorio con la misma plantilla de notas: https://huggingface.co/maximegar/toy-multimodal-generation
 - Guia general sobre IA generativa multimodal: https://www.upgrad.com/blog/multimodal-generative-ai/

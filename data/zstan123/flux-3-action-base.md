@@ -6,7 +6,7 @@ FLUX 3 Action Base es un componente de adaptacion de pesos abiertos publicado de
 
 Este repositorio concreto ("action base") no es una politica de robot completa, sino la base de adaptacion de embodiment junto con los encoders congelados compartidos que usan las politicas SO-101 y DROID. Incluye el trunk de acciones compartido y las cabezas de accion ee50/gaming, de modo que cada nuevo embodiment o simulador necesita entrenar sus propias cabezas de accion. Su relevancia actual radica en que expone pesos abiertos para adaptar un world action model multimodal a brazos roboticos nuevos, algo poco habitual en el ecosistema de modelos de accion.
 
-La ficha se construye a partir de la model card y de los metadatos de HuggingFace facilitados. Conviene notar que el identificador del repositorio consultado es Zstan123/flux-3-action-base (0 descargas, 0 likes), mientras que la propia model card y todos los enlaces internos apuntan al repositorio black-forest-labs/flux-3-action-base. Se recomienda verificar la procedencia antes de cualquier uso.
+La ficha se construye a partir de la model card y de los metadatos de Hugging Face facilitados. Conviene notar que el identificador del repositorio consultado es Zstan123/flux-3-action-base (0 descargas, 0 likes), mientras que la propia model card y todos los enlaces internos apuntan al repositorio black-forest-labs/flux-3-action-base. Se recomienda verificar la procedencia antes de cualquier uso.
 
 ## Especificaciones tecnicas
 
@@ -86,8 +86,8 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos externos
 
 ## Enlaces
 
-- HuggingFace del repositorio consultado: https://huggingface.co/Zstan123/flux-3-action-base
-- HuggingFace del repositorio referenciado en la model card: https://huggingface.co/black-forest-labs/flux-3-action-base
+- Hugging Face del repositorio consultado: https://huggingface.co/Zstan123/flux-3-action-base
+- Hugging Face del repositorio referenciado en la model card: https://huggingface.co/black-forest-labs/flux-3-action-base
 - Coleccion FLUX 3 Action: https://huggingface.co/collections/black-forest-labs/flux-3-action-6ab25aef555dd30ab86567f8
 - Documentacion de FLUX 3 Action: https://docs.bfl.ai/flux_3/flux3_action_overview
 - Guia de fine-tuning: https://docs.bfl.ai/flux_3/flux3_action_finetuning

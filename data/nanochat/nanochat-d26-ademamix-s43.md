@@ -60,7 +60,7 @@ No se dispone de información para comparar este checkpoint con otros modelos. E
 
 - No se ha documentado la evaluación de sesgos, seguridad ni alucinaciones.
 - El modelo no está listo para producción: los pesos están en formato nativo de NanoChat y requieren el entorno de ese proyecto para cargarse.
-- La ausencia de conversión a Transformers limita su uso con frameworks estándar como HuggingFace Transformers.
+- La ausencia de conversión a Transformers limita su uso con frameworks estándar como Hugging Face Transformers.
 - No se incluyen los datos de entrenamiento en el repositorio; solo se referencian externamente.
 - La licencia MIT permite uso comercial, pero la falta de documentación y evaluación impide validar su uso en aplicaciones reales.
 - No se especifica la longitud de contexto ni los idiomas soportados, lo que impide conocer sus limitaciones lingüísticas.

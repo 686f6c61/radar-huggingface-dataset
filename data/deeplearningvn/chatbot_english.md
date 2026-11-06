@@ -80,6 +80,6 @@ El modelo de DeeplearningVN se diferencia por su formato GGUF listo para usar, p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DeeplearningVN/Chatbot_English
+- Repositorio Hugging Face: https://huggingface.co/DeeplearningVN/Chatbot_English
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Documentacion de llama.cpp (formato GGUF): https://github.com/ggerganov/llama.cpp

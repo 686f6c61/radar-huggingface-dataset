@@ -76,7 +76,7 @@ No se dispone de modelos directamente comparables en la información proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huyngo3113/lab22-dpo-vn
+- Repositorio Hugging Face: https://huggingface.co/huyngo3113/lab22-dpo-vn
 - Variante de codenopro: https://huggingface.co/codenopro/lab22-dpo-vn
 - Variante de datnguyentien204: https://huggingface.co/datnguyentien204/lab22-dpo-vn
 - Despliegue en FriendliAI: https://friendli.ai/models/solar11781/lab22-dpo-vn

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yuriilaba/ucu-wsd-generation_stochastic_pt-true_seed-123` es un modelo de desambiguacion del sentido de las palabras (word-sense disambiguation, WSD) para ucraniano, publicado por el usuario yuriilaba en HuggingFace. Se trata de un fine-tune del checkpoint `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, un encoder multilingue basado en XLM-RoBERTa, con 278.043.648 parametros (278 M) y pesos almacenados en safetensors. El repositorio ocupa 1,1 GB, lo que corresponde a pesos en precision fp32.
+`yuriilaba/ucu-wsd-generation_stochastic_pt-true_seed-123` es un modelo de desambiguacion del sentido de las palabras (word-sense disambiguation, WSD) para ucraniano, publicado por el usuario yuriilaba en Hugging Face. Se trata de un fine-tune del checkpoint `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, un encoder multilingue basado en XLM-RoBERTa, con 278.043.648 parametros (278 M) y pesos almacenados en safetensors. El repositorio ocupa 1,1 GB, lo que corresponde a pesos en precision fp32.
 
 El modelo resuelve un problema concreto: dado un token objetivo en una frase en ucraniano, decidir cual de sus acepciones esta activa, apoyandose en representaciones contextuales. La configuracion de entrenamiento incluye pooling sobre el token objetivo (`target-token pooling: True`), datos de tripletes generados de forma estocastica (`triplets_generation_stochastic_combination.csv`) y semillas fijas (entrenamiento: 123; particion de validacion: 42), lo que lo hace reproducible. El autor reporta una exactitud de WSD de 0,9328 y correlaciones STS de Pearson 0,8025 y Spearman 0,7927.
 
@@ -21,7 +21,7 @@ Su relevancia es acotada pero clara: no es un modelo generativo de proposito gen
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 1,1 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-21 |
 
@@ -83,7 +83,7 @@ Los datos de la columna del modelo base provienen de la model card facilitada. E
 | ucu-wsd-generation_stochastic_pt-true_seed-123 | 278 M | no disponible | WSD en ucraniano + embeddings | no disponible | Fine-tune especializado, 0 descargas |
 | sentence-transformers/paraphrase-multilingual-mpnet-base-v2 | 278 M | no disponible | Embeddings multilingues de proposito general | no verificada en la informacion disponible | Modelo base del anterior |
 | xlm-roberta-base | 278 M | 512 tokens (limite arquitectonico) | Encoder multilingue de proposito general | MIT (no verificado) | Backbone comun de toda la familia |
-| Otros fine-tunes de WSD multilingues publicados en HuggingFace | no disponible | no disponible | WSD | variable | No se han identificado alternativas equivalentes para ucraniano en la busqueda realizada |
+| Otros fine-tunes de WSD multilingues publicados en Hugging Face | no disponible | no disponible | WSD | variable | No se han identificado alternativas equivalentes para ucraniano en la busqueda realizada |
 
 La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre modelos comparables: los unicos resultados obtenidos fueron paginas de prevision meteorologica de Roubaix (France), sin relacion con el modelo.
 
@@ -93,7 +93,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 - El modelo esta especializado en ucraniano; su rendimiento en otros idiomas, aunque el backbone sea multilingue, no esta documentado.
 - La exactitud de WSD de 0,9328 procede de la evaluacion del propio autor y no se ha verificado de forma independiente; ademas no se especifica el conjunto de test utilizado.
 - Riesgo de sobreajuste al esquema de generacion de tripletes empleado en el entrenamiento: los resultados pueden degradarse en dominios distintos del corpus de entrenamiento.
-- La licencia no esta declarada en HuggingFace, por lo que no puede confirmarse que el uso comercial este permitido. Conviene contactar con el autor antes de integrarlo en produccion.
+- La licencia no esta declarada en Hugging Face, por lo que no puede confirmarse que el uso comercial este permitido. Conviene contactar con el autor antes de integrarlo en produccion.
 - El modelo tiene 0 descargas y 0 likes, y no cuenta con pipeline declarado ni documentacion adicional: es un artefacto de investigacion sin senales de mantenimiento.
 - La fecha de creacion del repositorio (2026-09-21) es posterior a la actual y podria indicar un error de metadatos; conviene verificarla antes de citarlo.
 - No hay informacion sobre sesgos, composicion del dataset, ni sobre el tratamiento de datos personales en el corpus de entrenamiento.
@@ -102,7 +102,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuriilaba/ucu-wsd-generation_stochastic_pt-true_seed-123
+- Modelo en Hugging Face: https://huggingface.co/yuriilaba/ucu-wsd-generation_stochastic_pt-true_seed-123
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 - Resultados MTEB citados por el autor: ruta `evaluation/mteb_results/` dentro del repositorio del modelo (contenido no disponible)
 - Dataset de entrenamiento citado por el autor: ruta `local_datasets/semi_supervised_2/triplets/triplets_generation_stochastic_combination.csv` (no publicado como dataset independiente en la informacion disponible)

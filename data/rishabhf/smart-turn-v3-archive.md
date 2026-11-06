@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smart-turn-v3-archive (este repo) | Semantic VAD sobre encoder Whisper Tiny, ONNX int8 | no disponible | no disponible | BSD-2-Clause | HuggingFace (espejo de archivo) |
-| pipecat-ai/smart-turn-v3 (upstream) | Semantic VAD, misma familia | no disponible | no disponible | BSD-2-Clause | HuggingFace |
+| smart-turn-v3-archive (este repo) | Semantic VAD sobre encoder Whisper Tiny, ONNX int8 | no disponible | no disponible | BSD-2-Clause | Hugging Face (espejo de archivo) |
+| pipecat-ai/smart-turn-v3 (upstream) | Semantic VAD, misma familia | no disponible | no disponible | BSD-2-Clause | Hugging Face |
 | VAD acústicos clásicos (Silero VAD, WebRTC VAD) | Detección de actividad vocal por energía/silencio | no disponible | no disponible | no disponible en esta busqueda | Repositorios publicos |
 
 La comparación cuantitativa con alternativas no es posible: no se han encontrado en la información disponible métricas de precisión, latencia ni tasa de falsos positivos para ninguno de los modelos citados.

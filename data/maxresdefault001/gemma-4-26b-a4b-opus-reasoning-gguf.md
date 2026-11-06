@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma 4 26B-A4B · Opus-reasoning tune (GGUF) es un ajuste fino (LoRA) del modelo Gemma 4 26B-A4B de Google en su variante QAT, publicado por el usuario MaxResDefault001 en HuggingFace. El autor ha entrenado el modelo sobre un dataset de aproximadamente 8.600 conversaciones de razonamiento estilo Claude Opus 4.6/4.7, con el objetivo de mejorar la eficiencia del modo "thinking" y reducir los rechazos moralizantes del modelo base. Se distribuye en formato GGUF cuantizado a Q4_K_M para su uso con llama.cpp, e incluye una variante "abliterated" (sin mecanismos de rechazo) generada con la herramienta Heretic.
+Gemma 4 26B-A4B · Opus-reasoning tune (GGUF) es un ajuste fino (LoRA) del modelo Gemma 4 26B-A4B de Google en su variante QAT, publicado por el usuario MaxResDefault001 en Hugging Face. El autor ha entrenado el modelo sobre un dataset de aproximadamente 8.600 conversaciones de razonamiento estilo Claude Opus 4.6/4.7, con el objetivo de mejorar la eficiencia del modo "thinking" y reducir los rechazos moralizantes del modelo base. Se distribuye en formato GGUF cuantizado a Q4_K_M para su uso con llama.cpp, e incluye una variante "abliterated" (sin mecanismos de rechazo) generada con la herramienta Heretic.
 
 El modelo base es una arquitectura MoE (mixture of experts) con 25.230 millones de parametros totales y unos 4.000 millones activos por token, lo que lo hace especialmente interesante para ejecutarse en hardware domestico con ancho de banda de memoria limitado. El proyecto es explicitamente un ejercicio de aprendizaje realizado en una unica maquina personal (GMKtec EVO-X2 con Ryzen AI Max+ 395 y Radeon 8060S con 128 GB de RAM unificada), y el autor comparte tanto los GGUF completos como el adaptador LoRA en safetensors (r16) para quien quiera fusionarlo con otras builds de Gemma 4 26B-A4B.
 
@@ -92,9 +92,9 @@ Velocidad: aproximadamente 85 tok/s en Radeon 8060S (Vulkan) con la cabeza draft
 
 | Modelo | Parametros totales | Parametros activos | Cuantizacion | Refusal (27) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Gemma 4 26B-A4B opus-reasoning (este modelo) | 25,2B | ~4B | Q4_K_M | 24 (abliterated: 25) | Apache 2.0 | GGUF + LoRA en HuggingFace |
-| Stock Gemma 4 26B-A4B (Unsloth UD-Q4_K_XL QAT) | 25,2B | ~4B | UD-Q4_K_XL | 19 | Gemma (modelo base) | GGUF en HuggingFace |
-| HauhauCS Gemma4-26B-A4B-QAT-Uncensored "Balanced" | 25,2B | ~4B | No disponible | 23 | No disponible | GGUF en HuggingFace |
+| Gemma 4 26B-A4B opus-reasoning (este modelo) | 25,2B | ~4B | Q4_K_M | 24 (abliterated: 25) | Apache 2.0 | GGUF + LoRA en Hugging Face |
+| Stock Gemma 4 26B-A4B (Unsloth UD-Q4_K_XL QAT) | 25,2B | ~4B | UD-Q4_K_XL | 19 | Gemma (modelo base) | GGUF en Hugging Face |
+| HauhauCS Gemma4-26B-A4B-QAT-Uncensored "Balanced" | 25,2B | ~4B | No disponible | 23 | No disponible | GGUF en Hugging Face |
 
 En precision, los cuatro estan empatados dentro del margen de ruido; las diferencias relevantes estan en eficiencia de thinking (este modelo usa menos tokens), tasa de rechazos (las variantes sin censura puntuan mejor) y velocidad (este modelo soporta MTP draft documentado). No hay comparativas con modelos de otras familias en la informacion disponible.
 
@@ -113,7 +113,7 @@ En precision, los cuatro estan empatados dentro del margen de ruido; las diferen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MaxResDefault001/gemma-4-26B-A4B-opus-reasoning-GGUF
+- Modelo en Hugging Face: https://huggingface.co/MaxResDefault001/gemma-4-26B-A4B-opus-reasoning-GGUF
 - Modelo base de Google: https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-unquantized
 - GGUF QAT de Unsloth (mmproj y MTP draft head): https://huggingface.co/unsloth/gemma-4-26B-A4B-it-qat-GGUF
 - Dataset de ajuste: https://huggingface.co/datasets/angrygiraffe/claude-opus-4.6-4.7-reasoning-8.7k

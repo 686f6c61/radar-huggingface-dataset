@@ -2,7 +2,7 @@
 
 ## Resumen
 
-martinezwyn/project-classification es un repositorio publicado en HuggingFace por el usuario martinezwyn que contiene una implementación funcional de una arquitectura denominada «Dino» orientada a tareas de clasificación, con una configuración declarada como *xlarge*. El repositorio se distribuye bajo licencia BSD-3-Clause, acumula 14 descargas y 0 «likes» en el momento de redactar esta ficha, y fue creado el 26 de septiembre de 2026. Además de los pesos en formato safetensors, incluye código Python (`eval.py`), un `config.json` con la configuración de arquitectura y un `training_args.json` con la receta de experimento por defecto.
+martinezwyn/project-classification es un repositorio publicado en Hugging Face por el usuario martinezwyn que contiene una implementación funcional de una arquitectura denominada «Dino» orientada a tareas de clasificación, con una configuración declarada como *xlarge*. El repositorio se distribuye bajo licencia BSD-3-Clause, acumula 14 descargas y 0 «likes» en el momento de redactar esta ficha, y fue creado el 26 de septiembre de 2026. Además de los pesos en formato safetensors, incluye código Python (`eval.py`), un `config.json` con la configuración de arquitectura y un `training_args.json` con la receta de experimento por defecto.
 
 No se trata de un modelo entrenado ni validado: el propio autor indica explícitamente que `model.safetensors` es un *checkpoint* de inicialización válido para *smoke tests* y que no se reclama ninguna puntuación de benchmark. El número real de parámetros registrado en safetensors es de 33.088 (aproximadamente 33 000), una cifra muy alejada de lo que sugiere la etiqueta «xlarge», lo que refuerza la interpretación de que se trata de un esqueleto de código y no de un modelo con capacidad funcional real.
 
@@ -28,7 +28,7 @@ Su relevancia es, por tanto, la de una plantilla reproducible de implementación
 
 ## Arquitectura y entrenamiento
 
-La model card describe una arquitectura «Dino» con atención *grouped query*, mecanismo de fusión de bajo rango, activación approx GELU y normalización RMSNorm, en una escala nominal *xlarge*. La etiqueta `dino` en HuggingFace suele asociarse a la familia de *vision transformers* auto-supervisados DINO/DINOv2, pero la documentación proporcionada no especifica la modalidad de entrada (imagen, texto u otra), el número de capas, la dimensión del *embedding* ni la resolución de entrada, por lo que estos datos deben considerarse no disponibles. Tampoco se detalla el número de cabezas ni la configuración exacta de la atención agrupada.
+La model card describe una arquitectura «Dino» con atención *grouped query*, mecanismo de fusión de bajo rango, activación approx GELU y normalización RMSNorm, en una escala nominal *xlarge*. La etiqueta `dino` en Hugging Face suele asociarse a la familia de *vision transformers* auto-supervisados DINO/DINOv2, pero la documentación proporcionada no especifica la modalidad de entrada (imagen, texto u otra), el número de capas, la dimensión del *embedding* ni la resolución de entrada, por lo que estos datos deben considerarse no disponibles. Tampoco se detalla el número de cabezas ni la configuración exacta de la atención agrupada.
 
 En cuanto al entrenamiento, no hay ningún entrenamiento documentado. La receta incluida en `training_args.json` (NovoGrad con OneCycle) se presenta como valores de partida del script, no como evidencia de una ejecución completada. No se indica volumen de tokens, composición del conjunto de datos, número de épocas, uso de RLHF, DPO u otra técnica de alineación: todo ello es no disponible. El autor sí recomienda, para una evaluación significativa, entrenar todas las líneas base con la misma exposición de datos, presupuesto de ajuste y semillas aleatorias, y reportar la métrica de la tarea sobre un *split* etiquetado específico con al menos tres semillas.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| martinezwyn/project-classification | 33.088 | no disponible | Clasificación | BSD-3-Clause | HuggingFace, 14 descargas |
+| martinezwyn/project-classification | 33.088 | no disponible | Clasificación | BSD-3-Clause | Hugging Face, 14 descargas |
 | DINOv2 (familia) | no disponible en la información proporcionada | no disponible en la información proporcionada | Visión auto-supervisada / *backbone* | no disponible en la información proporcionada | no disponible en la información proporcionada |
 | ResNet-50 (referencia clásica de clasificación) | no disponible en la información proporcionada | no disponible en la información proporcionada | Clasificación de imágenes | no disponible en la información proporcionada | no disponible en la información proporcionada |
 
@@ -89,5 +89,5 @@ No es posible establecer una comparación cuantitativa: este repositorio no publ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/martinezwyn/project-classification
+- Hugging Face: https://huggingface.co/martinezwyn/project-classification
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (papers, blogs, repositorios de código o demos). Los únicos resultados devueltos corresponden a foros sin relación con el modelo y se descartan como fuentes.

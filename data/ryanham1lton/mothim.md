@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mothim es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Mothim`. En el momento de redactar esta ficha, la informacion disponible es minima: la model card se limita al bloque de metadatos de licencia (`cc-by-4.0`) y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,1 GB y no registra descargas ni interacciones.
+Mothim es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Mothim`. En el momento de redactar esta ficha, la informacion disponible es minima: la model card se limita al bloque de metadatos de licencia (`cc-by-4.0`) y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,1 GB y no registra descargas ni interacciones.
 
 No hay evidencia publica que permita determinar que problema resuelve, cual es su arquitectura, su tamano parametrico o su ventana de contexto. Tampoco se ha publicado informacion sobre el pipeline asociado (text-generation, text-to-image, etc.), los idiomas soportados o los formatos de pesos distribuidos. Cualquier afirmacion adicional seria especulativa y, por tanto, se omite en esta ficha.
 
@@ -82,7 +82,7 @@ No disponible. Al desconocerse la categoria del modelo (tamano, modalidad, tarea
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Mothim
+- Hugging Face: https://huggingface.co/Ryanham1lton/Mothim
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion adicional: no disponible

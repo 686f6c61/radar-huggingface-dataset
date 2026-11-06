@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hamm-eyer/blip-demo` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de la arquitectura BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas multitarea, en una configuración de escala pequeña. Lo desarrolla el usuario hamm-eyer y no procede de un laboratorio con publicaciones asociadas. El repositorio se presenta explícitamente como un punto de partida reproducible para pruebas de humo (smoke tests), no como un modelo entrenado ni evaluado.
+`hamm-eyer/blip-demo` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de la arquitectura BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas multitarea, en una configuración de escala pequeña. Lo desarrolla el usuario hamm-eyer y no procede de un laboratorio con publicaciones asociadas. El repositorio se presenta explícitamente como un punto de partida reproducible para pruebas de humo (smoke tests), no como un modelo entrenado ni evaluado.
 
 El checkpoint incluido (`model.safetensors`) es una inicialización válida, pero el propio autor indica que no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. El número de parámetros reportado en los metadatos de safetensors es de 49.600, lo que confirma que se trata de una configuración mínima pensada para validar código, no para producción.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 | hamm-eyer/blip-demo | 49.600 | no disponible | Apache 2.0 | Checkpoint de inicialización, sin entrenar |
 | Salesforce BLIP (oficial) | ~224 M (base) | no disponible | BSD-3-Clause (según versión) | Entrenado y evaluado en tareas visión-lenguaje |
 | BLIP-2 (oficial) | ~1,1 B a 12 B según variante | no disponible | BSD-3-Clause (según versión) | Entrenado, con benchmarks publicados |
-| Otros repositorios "demo" de BLIP en HuggingFace | variable | no disponible | variable | Generalmente no entrenados |
+| Otros repositorios "demo" de BLIP en Hugging Face | variable | no disponible | variable | Generalmente no entrenados |
 
 La comparación con BLIP y BLIP-2 oficiales es solo estructural: este repositorio no comparte pesos ni resultados con ellos y su escala es tres o cuatro órdenes de magnitud menor.
 
@@ -77,11 +77,11 @@ La comparación con BLIP y BLIP-2 oficiales es solo estructural: este repositori
 - No hay información sobre sesgos, idiomas ni cobertura de contexto.
 - Licencia Apache 2.0 permite uso comercial del código y los pesos, pero el autor recomienda revisar por separado los términos de los datos de origen si se usa con datasets externos.
 - No apto para producción: cualquier resultado de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto aquí incluidos.
-- Las APIs genéricas de carga automática de HuggingFace pueden fallar sin un adaptador explícito, lo que complica la integración directa.
+- Las APIs genéricas de carga automática de Hugging Face pueden fallar sin un adaptador explícito, lo que complica la integración directa.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hamm-eyer/blip-demo
+- Repositorio en Hugging Face: https://huggingface.co/hamm-eyer/blip-demo
 - Paper original de BLIP: no disponible en la información proporcionada
 - Paper de BLIP-2: no disponible en la información proporcionada
 - Repositorio oficial de Salesforce BLIP: no disponible en la información proporcionada

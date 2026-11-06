@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`act_gluestick_v1` es una política de imitación robótica entrenada con el método Action Chunking with Transformers (ACT), publicado en el paper arXiv:2304.13705, y empaquetada en el formato de LeRobot. La desarrolla el usuario de HuggingFace `zaqzulkan` y resuelve una tarea muy concreta de manipulación: coger un pegamento en barra y colocarlo sobre un libro rojo. No es un modelo de lenguaje ni un modelo generativo de propósito general, sino un controlador visuomotor que mapea observaciones (estado articular de 6 dimensiones e imagen de muñeca de 3x480x640) a acciones de 6 dimensiones.
+`act_gluestick_v1` es una política de imitación robótica entrenada con el método Action Chunking with Transformers (ACT), publicado en el paper arXiv:2304.13705, y empaquetada en el formato de LeRobot. La desarrolla el usuario de Hugging Face `zaqzulkan` y resuelve una tarea muy concreta de manipulación: coger un pegamento en barra y colocarlo sobre un libro rojo. No es un modelo de lenguaje ni un modelo generativo de propósito general, sino un controlador visuomotor que mapea observaciones (estado articular de 6 dimensiones e imagen de muñeca de 3x480x640) a acciones de 6 dimensiones.
 
 El modelo tiene 51.668.614 parámetros y un tamaño de repositorio de 0,2 GB, lo que lo sitúa en la categoría de políticas ligeras que pueden ejecutarse en tiempo real sobre hardware modesto. Se entrenó con solo 10 episodios de teleoperación (6669 fotogramas a 30 FPS) sobre un robot `so_follower` con una única cámara de muñeca, lo que refleja el régimen de bajo número de datos típico de la imitación robótica actual.
 
@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye otras políticas ACT o a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zaqzulkan/act_gluestick_v1
+- Modelo en Hugging Face: https://huggingface.co/zaqzulkan/act_gluestick_v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/zaqzulkan/gluestick_v1
 - Visualización del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=zaqzulkan/gluestick_v1
 - Paper ACT: https://huggingface.co/papers/2304.13705

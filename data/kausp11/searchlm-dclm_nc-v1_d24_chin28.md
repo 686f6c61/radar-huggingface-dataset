@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Search-LLM, DCLM-Edu 1.4B es un modelo de lenguaje base (preentrenado, sin ajuste de instrucciones) desarrollado por el usuario Kausp11 y publicado en HuggingFace bajo el identificador `Kausp11/searchlm-dclm_nc-v1_d24_chin28`. Según su model card, se trata de un modelo tipo nanochat entrenado con datos de DCLM-Edu y con preentrenamiento habilitado para búsqueda ("search-enabled pretraining"), es decir, entrenado con tokens especiales de consulta y respuesta web que le permitirían, en principio, interactuar con resultados de búsqueda durante el preentrenamiento o la inferencia.
+Search-LLM, DCLM-Edu 1.4B es un modelo de lenguaje base (preentrenado, sin ajuste de instrucciones) desarrollado por el usuario Kausp11 y publicado en Hugging Face bajo el identificador `Kausp11/searchlm-dclm_nc-v1_d24_chin28`. Según su model card, se trata de un modelo tipo nanochat entrenado con datos de DCLM-Edu y con preentrenamiento habilitado para búsqueda ("search-enabled pretraining"), es decir, entrenado con tokens especiales de consulta y respuesta web que le permitirían, en principio, interactuar con resultados de búsqueda durante el preentrenamiento o la inferencia.
 
 El modelo resuelve el problema de explorar el enfoque de preentrenamiento con acceso a búsqueda en escalas pequeñas y accesibles: con aproximadamente 2.619 millones de parámetros (2,62 B, dato real extraído de los safetensors) y un tamaño de repositorio de 5,2 GB, es un modelo experimental pensado para investigación, no para despliegue productivo. El tokenizer se basa en el de SmolLM2 ampliado con tokens especiales de búsqueda (`<WEB_QUERY>`, `</WEB_QUERY>`, `<WEB_RESPONSE>`, `</WEB_RESPONSE>`).
 
@@ -53,7 +53,7 @@ El entrenamiento se realizó sobre DCLM-Edu, una variante educativa del corpus D
 - Estudio de decodificación con consultas web: analizar si el modelo genera consultas de búsqueda coherentes de forma autónoma cuando se le proporciona contexto incompleto.
 - Base para fine-tuning educativo: ajustar el modelo con SFT sobre datasets didácticos aprovechando su preentrenamiento en DCLM-Edu.
 - Experimentación en hardware modesto: con ~2,6 B de parámetros y 5,2 GB de pesos, es viable para laboratorios o desarrolladores sin acceso a clusters grandes.
-- Reproducción de pipelines tipo nanochat: usar el checkpoint como referencia para verificar exportaciones de entrenamientos internos (procedente de RCP, según la model card) al formato HuggingFace.
+- Reproducción de pipelines tipo nanochat: usar el checkpoint como referencia para verificar exportaciones de entrenamientos internos (procedente de RCP, según la model card) al formato Hugging Face.
 - Evaluación comparativa de tokenizers: analizar el efecto de añadir tokens especiales al tokenizer de SmolLM2 sobre el rendimiento en tareas de generación.
 
 ## Benchmarks y rendimiento
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
 | Search-LLM DCLM-Edu (este) | ~2,62 B | No disponible | Apache 2.0 | Base, preentrenamiento con tokens de búsqueda, código personalizado |
-| SmolLM2-1.7B (HuggingFace) | 1,7 B | 8.192 tokens (documentado en su ficha oficial) | Apache 2.0 | Base del tokenizer; modelo maduro con benchmarks publicados |
+| SmolLM2-1.7B (Hugging Face) | 1,7 B | 8.192 tokens (documentado en su ficha oficial) | Apache 2.0 | Base del tokenizer; modelo maduro con benchmarks publicados |
 | Qwen2.5-1.5B (Alibaba) | 1,5 B | 32.768 tokens (documentado en su ficha oficial) | Qwen Research / Apache 2.0 (variantes) | Multilingüe, benchmarks públicos, ecosistema amplio |
 | Llama 3.2-1B (Meta) | 1,24 B | 128.000 tokens (documentado en su ficha oficial) | Llama 3.2 Community License | Restricciones de licencia más estrictas que Apache 2.0 |
 
@@ -94,7 +94,7 @@ Comparación cualitativa: el modelo de Kausp11 no compite en rendimiento general
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kausp11/searchlm-dclm_nc-v1_d24_chin28
+- Modelo en Hugging Face: https://huggingface.co/Kausp11/searchlm-dclm_nc-v1_d24_chin28
 - Tokenizer base SmolLM2: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B
 - Corpus DCLM (referencia del dataset de entrenamiento): https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0
 - Paper del proyecto nanochat: no disponible

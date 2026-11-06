@@ -68,10 +68,10 @@ Los datos de las alternativas corresponden a sus fichas publicas conocidas, no a
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed3407` | 86.508.288 | no disponible | sin benchmarks publicados | no disponible (marcador de posicion) | safetensors en HuggingFace, 0 descargas |
-| `goldfish-models/eng_latn_100mb` (base) | no disponible | no disponible | no disponible | no disponible | safetensors en HuggingFace |
-| GPT-2 small | 124 M | 1024 tokens | ampliamente evaluado en la literatura | MIT | pesos en HuggingFace, muy extendido |
-| DistilGPT-2 | 82 M | 1024 tokens | destilado de GPT-2, evaluado en la literatura | Apache-2.0 | pesos en HuggingFace, muy extendido |
+| `fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed3407` | 86.508.288 | no disponible | sin benchmarks publicados | no disponible (marcador de posicion) | safetensors en Hugging Face, 0 descargas |
+| `goldfish-models/eng_latn_100mb` (base) | no disponible | no disponible | no disponible | no disponible | safetensors en Hugging Face |
+| GPT-2 small | 124 M | 1024 tokens | ampliamente evaluado en la literatura | MIT | pesos en Hugging Face, muy extendido |
+| DistilGPT-2 | 82 M | 1024 tokens | destilado de GPT-2, evaluado en la literatura | Apache-2.0 | pesos en Hugging Face, muy extendido |
 
 La comparacion relevante no es de rendimiento, ya que no existen metricas publicadas para el modelo objeto de la ficha, sino de trazabilidad: frente a GPT-2 small o DistilGPT-2, este modelo carece de licencia clara, de evaluacion y de comunidad de usuarios, pero aporta un registro reproducible del proceso de ajuste (versiones de libreria y ejecucion de W&B).
 
@@ -88,7 +88,7 @@ La comparacion relevante no es de rendimiento, ya que no existen metricas public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/4yckilj5

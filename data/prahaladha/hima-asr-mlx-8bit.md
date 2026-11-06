@@ -96,7 +96,7 @@ No se dispone de informacion sobre modelos comparables de otros autores (por eje
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Prahaladha/hima-asr-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/Prahaladha/hima-asr-mlx-8bit
 - Modelo base (PyTorch): https://huggingface.co/Prahaladha/hima-asr
 - Variante fp16: https://huggingface.co/Prahaladha/hima-asr-mlx
 - Variante 4-bit: https://huggingface.co/Prahaladha/hima-asr-mlx-4bit

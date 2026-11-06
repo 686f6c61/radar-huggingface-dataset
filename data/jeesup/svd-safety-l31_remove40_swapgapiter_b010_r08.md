@@ -86,8 +86,8 @@ ASR = attack success rate (tasa de éxito de ataque); cuanto menor, mejor compor
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r08` | 8,03 B (0,5998 de la fracción densa) | No disponible | AdvBench ASR 0,2700; StrongREJECT ASR 0,2750; sobrerrechazo 0,1006 | Llama 3.1 Community License | HuggingFace, safetensors |
-| `meta-llama/Llama-3.1-8B-Instruct` (modelo base) | 8,03 B | No disponible en esta ficha | No disponible en la información proporcionada | Llama 3.1 Community License | HuggingFace, safetensors |
+| `Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r08` | 8,03 B (0,5998 de la fracción densa) | No disponible | AdvBench ASR 0,2700; StrongREJECT ASR 0,2750; sobrerrechazo 0,1006 | Llama 3.1 Community License | Hugging Face, safetensors |
+| `meta-llama/Llama-3.1-8B-Instruct` (modelo base) | 8,03 B | No disponible en esta ficha | No disponible en la información proporcionada | Llama 3.1 Community License | Hugging Face, safetensors |
 | Otras celdas de la rejilla del mismo autor | No disponible | No disponible | No disponible | Llama 3.1 Community License | No verificado en la información disponible |
 
 No se dispone de datos de benchmarks comparables de terceros (por ejemplo, otros checkpoints comprimidos con SVD-LLM o modelos densos de 7-9B) dentro de la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento más allá de la del modelo base.
@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks comparables de terceros (por ejemplo, otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r08
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r08
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 Community License y política de uso: incluidas como `LICENSE` y `USE_POLICY.md` en el repositorio del modelo.
 - Paper, blog, repositorio o demo del método SVD-LLM o del estudio de intercambio iterativo: no disponible en la información proporcionada.

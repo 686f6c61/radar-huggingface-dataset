@@ -23,7 +23,7 @@ La relevancia actual está en el despliegue local en el ecosistema Apple: el paq
 | Tarea (pipeline) | text-classification |
 | Tamaño del repositorio | 1,7 GB |
 | Plataforma mínima | iOS 17 / macOS 14 |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -76,8 +76,8 @@ Advertencia recogida en la propia model card: son comprobaciones de paridad, no 
 
 | Modelo | Parámetros | Contexto | Funcionalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FluidInference/gliner2-5-multi-coreml (este) | 278.719.489 (export) | 128 tokens; máximo 8 etiquetas | Solo clasificación; ejecución local en Core ML | Apache-2.0 | HuggingFace; 0 descargas y 0 likes en el momento de la consulta |
-| fastino/gliner2.5-multi-v1 (origen) | 287.355.159 | No disponible | Clasificación y extracción de entidades, relaciones, registros y spans | Apache-2.0 | HuggingFace |
+| FluidInference/gliner2-5-multi-coreml (este) | 278.719.489 (export) | 128 tokens; máximo 8 etiquetas | Solo clasificación; ejecución local en Core ML | Apache-2.0 | Hugging Face; 0 descargas y 0 likes en el momento de la consulta |
+| fastino/gliner2.5-multi-v1 (origen) | 287.355.159 | No disponible | Clasificación y extracción de entidades, relaciones, registros y spans | Apache-2.0 | Hugging Face |
 | Otras alternativas de clasificación multilingüe o de la familia GLiNER | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables en la información proporcionada para comparar el rendimiento frente a otros modelos de clasificación de la misma categoría.
@@ -96,6 +96,6 @@ No se dispone de datos verificables en la información proporcionada para compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/gliner2-5-multi-coreml
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/gliner2-5-multi-coreml
 - Checkpoint original de Fastino: https://huggingface.co/fastino/gliner2.5-multi-v1
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo: papers, blogs, repositorios o demos adicionales no disponibles.

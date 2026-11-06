@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Piano Duet Aria ONNX (este) | no disponible (16 capas) | no disponible | ONNX cuantizado 4 bits | Apache 2.0 | HuggingFace |
-| Aria (`loubb/aria-medium-base`) | no disponible | no disponible | safetensors | Apache 2.0 | HuggingFace |
+| Piano Duet Aria ONNX (este) | no disponible (16 capas) | no disponible | ONNX cuantizado 4 bits | Apache 2.0 | Hugging Face |
+| Aria (`loubb/aria-medium-base`) | no disponible | no disponible | safetensors | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos de rendimiento ni de especificaciones de modelos alternativos de generación musical comparables.
@@ -81,7 +81,7 @@ No se dispone en la información proporcionada de datos de rendimiento ni de esp
 
 ## Enlaces
 
-- [HuggingFace: ericfithian/piano-duet-aria-onnx](https://huggingface.co/ericfithian/piano-duet-aria-onnx)
+- [Hugging Face: ericfithian/piano-duet-aria-onnx](https://huggingface.co/ericfithian/piano-duet-aria-onnx)
 - [Checkpoint de origen: loubb/aria-medium-base](https://huggingface.co/loubb/aria-medium-base)
 - [Repositorio Aria en GitHub (EleutherAI)](https://github.com/EleutherAI/aria)
 - [Paper de Aria (arXiv:2506.23869)](https://arxiv.org/abs/2506.23869)

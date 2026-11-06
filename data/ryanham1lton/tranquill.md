@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tranquill es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo identificador `Ryanham1lton/Tranquill`. La model card asociada no contiene mas que la declaracion de licencia (`cc-by-4.0`), sin descripcion, sin pipeline declarado, sin idiomas indicados y sin documentacion tecnica de ningun tipo. El repositorio ocupa 0,1 GB, un tamano compatible con pesos de un modelo pequeno o con un adaptador, pero no hay informacion que permita confirmar arquitectura, numero de parametros ni tipo de artefacto.
+Tranquill es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo identificador `Ryanham1lton/Tranquill`. La model card asociada no contiene mas que la declaracion de licencia (`cc-by-4.0`), sin descripcion, sin pipeline declarado, sin idiomas indicados y sin documentacion tecnica de ningun tipo. El repositorio ocupa 0,1 GB, un tamano compatible con pesos de un modelo pequeno o con un adaptador, pero no hay informacion que permita confirmar arquitectura, numero de parametros ni tipo de artefacto.
 
 En el momento de la consulta el modelo acumula 0 descargas y 0 likes, y las fechas de creacion y actualizacion (16 de septiembre de 2026) corresponden a un intervalo de dos minutos, lo que sugiere una publicacion de prueba o un artefacto subido sin proceso de validacion posterior. No se ha localizado ningun paper, blog tecnico, repositorio de codigo ni demo asociada.
 
@@ -85,7 +85,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Tranquill
+- Hugging Face: https://huggingface.co/Ryanham1lton/Tranquill
 - Paper: no disponible
 - Blog tecnico: no disponible
 - Repositorio de codigo: no disponible

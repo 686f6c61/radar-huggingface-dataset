@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Neuron-v0.3-3b-GGUF` es una versión cuantizada en formato GGUF del modelo original `Neuron-v0.3-3b`, desarrollado por Sethblocks. La cuantización ha sido realizada por mradermacher, un usuario habitual de HuggingFace que publica conversiones de pesos para facilitar su ejecución en entornos de inferencia locales. El nombre del repositorio sugiere que se trata de un modelo con aproximadamente 3 mil millones de parámetros, aunque no se dispone de confirmación oficial.
+El modelo `Neuron-v0.3-3b-GGUF` es una versión cuantizada en formato GGUF del modelo original `Neuron-v0.3-3b`, desarrollado por Sethblocks. La cuantización ha sido realizada por mradermacher, un usuario habitual de Hugging Face que publica conversiones de pesos para facilitar su ejecución en entornos de inferencia locales. El nombre del repositorio sugiere que se trata de un modelo con aproximadamente 3 mil millones de parámetros, aunque no se dispone de confirmación oficial.
 
 La relevancia de esta publicación radica en que ofrece el modelo en formato GGUF, lo que permite su uso con herramientas como llama.cpp, Ollama o LM Studio en hardware de consumo. Sin embargo, la información disponible es extremadamente limitada: no se proporciona model card detallada, ni datos de arquitectura, entrenamiento, licencia o capacidades. Esto impide realizar una evaluación técnica rigurosa del modelo. Se recomienda consultar el repositorio original para obtener más detalles, aunque a fecha de esta ficha no se ha encontrado documentación adicional.
 
@@ -21,7 +21,7 @@ La relevancia de esta publicación radica en que ofrece el modelo en formato GGU
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo original (si es transformer, MoE, SSM u otro tipo). Tampoco se conocen los datos de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas de ajuste como RLHF o DPO. La única información técnica disponible es que el modelo ha sido cuantizado a formato GGUF a partir de los pesos originales en formato HuggingFace, y que se ofrecen múltiples niveles de cuantización (desde f16 hasta Q2_K e IQ4_XS) para adaptarse a distintos requisitos de memoria y rendimiento.
+No se dispone de información sobre la arquitectura del modelo original (si es transformer, MoE, SSM u otro tipo). Tampoco se conocen los datos de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas de ajuste como RLHF o DPO. La única información técnica disponible es que el modelo ha sido cuantizado a formato GGUF a partir de los pesos originales en formato Hugging Face, y que se ofrecen múltiples niveles de cuantización (desde f16 hasta Q2_K e IQ4_XS) para adaptarse a distintos requisitos de memoria y rendimiento.
 
 ## Capacidades
 

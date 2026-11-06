@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace (Core ML): https://huggingface.co/spokenly/cleanup-1-coreml
+- Repositorio Hugging Face (Core ML): https://huggingface.co/spokenly/cleanup-1-coreml
 - Modelo base: https://huggingface.co/spokenly/cleanup-1
 - Version GGUF: https://huggingface.co/spokenly/cleanup-1-gguf
 - Documentacion de Local Model Cleanup: https://spokenly.app/docs/local-model-cleanup

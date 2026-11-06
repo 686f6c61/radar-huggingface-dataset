@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su especializacion en una tarea que suele
 
 ## Arquitectura y entrenamiento
 
-El modelo original **UnimeType/Transliteration-4B-Safetensors** esta basado en la arquitectura **Qwen3.5**, segun las etiquetas del repositorio en HuggingFace. No se proporcionan detalles adicionales sobre la arquitectura interna, como el numero de capas, la dimension del modelo o el tipo de atencion utilizada.
+El modelo original **UnimeType/Transliteration-4B-Safetensors** esta basado en la arquitectura **Qwen3.5**, segun las etiquetas del repositorio en Hugging Face. No se proporcionan detalles adicionales sobre la arquitectura interna, como el numero de capas, la dimension del modelo o el tipo de atencion utilizada.
 
 En cuanto al entrenamiento, no hay informacion disponible en los datos proporcionados sobre el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. El repositorio de mradermacher se limita a ofrecer las cuantizaciones GGUF del modelo original, sin aportar detalles sobre el proceso de entrenamiento.
 
@@ -47,7 +47,7 @@ No se ha encontrado informacion en los datos disponibles sobre soporte de tool c
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye puntuaciones en MMLU, HumanEval, GSM8K ni otros conjuntos de evaluacion, ni tampoco comparativas con otros modelos de transliteracion.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye puntuaciones en MMLU, HumanEval, GSM8K ni otros conjuntos de evaluacion, ni tampoco comparativas con otros modelos de transliteracion.
 
 ## Requisitos de hardware
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
   - f16: 8,5 GB
 - **GPU recomendadas**: las cuantizaciones Q2_K a Q6_K pueden ejecutarse en GPUs de consumo con 4 a 6 GB de VRAM, como una NVIDIA RTX 3050, RTX 3060 o similares. La cuantizacion f16 requiere al menos 8,5 GB de VRAM, por lo que se recomienda una RTX 4070, RTX 4080 o superior.
 - **Compatibilidad con GPUs de consumo**: si, las cuantizaciones Q4_K_S y Q4_K_M son las recomendadas por el autor para uso general y caben en GPUs de 8 GB.
-- **Opciones de despliegue**: al ser GGUF, es compatible con llama.cpp, Ollama, LM Studio y otros motores de inferencia que soporten este formato. Tambien puede cargarse con la libreria transformers de HuggingFace usando el modelo base safetensors.
+- **Opciones de despliegue**: al ser GGUF, es compatible con llama.cpp, Ollama, LM Studio y otros motores de inferencia que soporten este formato. Tambien puede cargarse con la libreria transformers de Hugging Face usando el modelo base safetensors.
 - **Latencia y throughput**: no disponible. No se han publicado mediciones de rendimiento especificas para este modelo.
 
 ## Comparativa con modelos similares

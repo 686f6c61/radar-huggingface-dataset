@@ -17,7 +17,7 @@ La relevancia es limitada a día de hoy: el repositorio no registra descargas ni
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible (modelo de audio; no se especifica la ventana máxima de audio en esta tarjeta) |
 | Tipos de cuantizacion | No disponible (no se publican variantes cuantizadas en este repositorio) |
-| Idiomas soportados | No disponibles en los metadatos de HuggingFace; consultar la documentación del modelo base |
+| Idiomas soportados | No disponibles en los metadatos de Hugging Face; consultar la documentación del modelo base |
 | Licencia | other (license_name: model-license; license_link a MODEL_LICENSE de FunASR) |
 | Formato de pesos | safetensors (formato MLX) |
 | Libreria de inferencia | mlx-audio 0.4.0 |
@@ -82,9 +82,9 @@ No se incluyen cifras de modelos comparables porque la busqueda web no devolvio 
 - Conversión no oficial: el repositorio pertenece a un usuario particular, no al equipo FunAudioLLM ni a Apple. No hay garantía de mantenimiento, actualizaciones ni soporte.
 - Sin validación publicada: no se documenta ninguna comparación numérica entre las salidas de esta conversión MLX y las del modelo original, por lo que no puede descartarse una degradación de precisión.
 - Ausencia de tracción: cero descargas y cero interacciones en el momento de redactar esta ficha, lo que implica que el modelo apenas ha sido probado por terceros.
-- Licencia: se declara licencia other con nombre model-license y enlace al MODEL_LICENSE de FunASR. Es imprescindible leer ese texto antes de cualquier uso comercial, ya que las condiciones no se reproducen en el repositorio de HuggingFace.
+- Licencia: se declara licencia other con nombre model-license y enlace al MODEL_LICENSE de FunASR. Es imprescindible leer ese texto antes de cualquier uso comercial, ya que las condiciones no se reproducen en el repositorio de Hugging Face.
 - Riesgo de alucinación específico de ASR: como todo modelo de reconocimiento de voz, puede generar texto plausible en segmentos de audio con ruido, música o silencios, especialmente si el audio no está bien segmentado.
-- Cobertura de idiomas incierta en esta conversión: los metadatos de HuggingFace no declaran idiomas, así que no puede asumirse el multilingüismo del modelo base sin verificarlo.
+- Cobertura de idiomas incierta en esta conversión: los metadatos de Hugging Face no declaran idiomas, así que no puede asumirse el multilingüismo del modelo base sin verificarlo.
 - Sin diarización de hablantes: no se documenta capacidad para distinguir quién habla en cada turno; para reuniones con varios participantes hará falta un componente adicional.
 - Limitaciones de audio largo: no se especifica la ventana máxima de audio ni la estrategia de segmentación, de modo que el comportamiento con ficheros extensos debe validarse empíricamente.
 - Dependencia de plataforma: al usar MLX, el despliegue queda restringido en la práctica a hardware Apple Silicon; no es una opción para servidores Linux con GPU NVIDIA sin reconvertir los pesos.
@@ -92,7 +92,7 @@ No se incluyen cifras de modelos comparables porque la busqueda web no devolvio 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/flyingfishinwater/SenseVoiceSmall
+- Repositorio en Hugging Face: https://huggingface.co/flyingfishinwater/SenseVoiceSmall
 - Modelo base: https://huggingface.co/FunAudioLLM/SenseVoiceSmall
 - Licencia del modelo (MODEL_LICENSE de FunASR): https://github.com/modelscope/FunASR/blob/main/MODEL_LICENSE
 - Librería de conversión mlx-audio: https://github.com/Blaizzy/mlx-audio (referencia indicada en la model card mediante la versión 0.4.0)

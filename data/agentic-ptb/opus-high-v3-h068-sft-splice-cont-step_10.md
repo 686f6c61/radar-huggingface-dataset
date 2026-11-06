@@ -78,7 +78,7 @@ No se puede establecer una comparativa de rendimiento real por falta de benchmar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h068.sft-splice-cont.step_10
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h068.sft-splice-cont.step_10
 - Dataset del run: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice de experimentos AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Búsqueda de modelos de `agentic-ptb`: https://huggingface.co/models?other=agentic-ptb

@@ -25,7 +25,7 @@ El repositorio se creó el 29 de septiembre de 2026 y, en el momento de la consu
 
 No disponible. La informacion proporcionada no incluye detalles sobre la arquitectura del modelo base Goose-7.2B (si es un transformer denso, MoE o hibrido), ni sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO u otras tecnicas de alineacion. El modelo base referenciado es Lambent/Goose-7.2B-G1j-20260928.
 
-Lo unico documentado es el proceso de cuantizacion. Segun la model card, se trata de cuantizaciones estaticas con `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, generadas a partir del repositorio de HuggingFace del modelo base. No hay cuantizaciones ponderadas ni imatrix publicadas por el autor en el momento de la conversion. El vocabulario (`vocab_type`) no queda especificado.
+Lo unico documentado es el proceso de cuantizacion. Segun la model card, se trata de cuantizaciones estaticas con `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, generadas a partir del repositorio de Hugging Face del modelo base. No hay cuantizaciones ponderadas ni imatrix publicadas por el autor en el momento de la conversion. El vocabulario (`vocab_type`) no queda especificado.
 
 ## Capacidades
 
@@ -77,10 +77,10 @@ No se dispone de datos de benchmarks ni de la arquitectura del modelo base, por 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Goose-7.2B-G1j-20260928 (GGUF) | 7,2B | no disponible | Apache 2.0 | HuggingFace (mradermacher, Lambent) |
-| Mistral 7B | 7,2B | 8K-32K segun version | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | HuggingFace, ampliamente adoptado |
-| Qwen2.5 7B | 7,6B | 128K | Apache 2.0 (segun variante) | HuggingFace, ampliamente adoptado |
+| Goose-7.2B-G1j-20260928 (GGUF) | 7,2B | no disponible | Apache 2.0 | Hugging Face (mradermacher, Lambent) |
+| Mistral 7B | 7,2B | 8K-32K segun version | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | Hugging Face, ampliamente adoptado |
+| Qwen2.5 7B | 7,6B | 128K | Apache 2.0 (segun variante) | Hugging Face, ampliamente adoptado |
 
 La comparativa se limita a parametros y licencia, ya que no hay datos de rendimiento, contexto ni capacidades del modelo Goose que permitan una confrontacion rigurosa. El dato de licencia de los modelos de referencia puede variar entre versiones y conviene verificarlo en cada caso.
 

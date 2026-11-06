@@ -12,7 +12,7 @@ La relevancia del modelo esta en su proposito original: comprimir un modelo de 2
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Qwen3.8-27B segun la model card original; las etiquetas de HuggingFace indican `qwen3_5`) |
+| Arquitectura | Transformer decoder-only (familia Qwen3.8-27B segun la model card original; las etiquetas de Hugging Face indican `qwen3_5`) |
 | Parametros totales | 27B (nominal, segun el nombre y el modelo base) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible como maximo oficial; el quickstart del modelo original usa `-c 32768` |
@@ -81,7 +81,7 @@ No se dispone de informacion sobre modelos alternativos comparables en la docume
 - El port bf16 no aporta una evaluacion propia: no hay benchmarks publicados para esta conversion, por lo que el rendimiento declarado (88/42/96%) corresponde al GGUF IQ2-mix original y no necesariamente se traslada a los pesos bf16.
 - El repositorio indica 0 descargas, 0 likes y un tamano de repo de 0,0 GB en el momento de la consulta, lo que sugiere que los pesos pueden no estar efectivamente subidos o que la publicacion esta incompleta. Conviene verificar los ficheros antes de depender de este repositorio.
 - La conversion a safetensors esta marcada como "en progreso"; los ficheros son `pytorch_model.bin`, lo que implica carga con `torch.load` y menor compatibilidad con flujos que exigen safetensors.
-- Existe una discrepancia entre las etiquetas de HuggingFace (`qwen3_5`) y la model card original (`Qwen3.8-27B`); no esta aclarada en la informacion disponible.
+- Existe una discrepancia entre las etiquetas de Hugging Face (`qwen3_5`) y la model card original (`Qwen3.8-27B`); no esta aclarada en la informacion disponible.
 - Riesgo de alucinacion: no se aportan datos de evaluacion de veracidad ni de tasas de alucinacion para ninguna de las dos versiones.
 - Sesgos conocidos: no disponibles. El unico idioma declarado es el ingles, por lo que el rendimiento en castellano u otros idiomas no esta documentado.
 - Restricciones de licencia: apache-2.0 en este repositorio y en el modelo original, lo que permite uso comercial, pero la licencia del modelo base Qwen3.8-27B no se detalla en la informacion proporcionada y podria anadir condiciones.
@@ -90,7 +90,7 @@ No se dispone de informacion sobre modelos alternativos comparables en la docume
 
 ## Enlaces
 
-- Repositorio HuggingFace de este port: https://huggingface.co/rty813/Underdog-Saluki-27B-1.0-bf16
+- Repositorio Hugging Face de este port: https://huggingface.co/rty813/Underdog-Saluki-27B-1.0-bf16
 - Modelo original: https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0
 - Pagina del proyecto Saluki: underdog.ai/saluki (mencionada en la model card)
 - Modelo base citado en la model card original: Qwen/Qwen3.8-27B (referencia textual, sin enlace verificado)

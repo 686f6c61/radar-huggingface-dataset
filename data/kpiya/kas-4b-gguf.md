@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kas-4b-GGUF es la distribucion en formato GGUF del modelo kas-4b, un fine-tune mediante LoRA de Qwen/Qwen3-4B con los pesos fusionados (merged) y posteriormente convertidos a GGUF con llama.cpp `b12140`. Lo publica el usuario kpiya en HuggingFace y su objetivo es facilitar la ejecucion local del modelo en entornos como llama.cpp, Ollama y LM Studio sobre macOS (Apple Silicon), Windows y Linux, sin necesidad de GPU dedicada ni de infraestructura de servidor.
+kas-4b-GGUF es la distribucion en formato GGUF del modelo kas-4b, un fine-tune mediante LoRA de Qwen/Qwen3-4B con los pesos fusionados (merged) y posteriormente convertidos a GGUF con llama.cpp `b12140`. Lo publica el usuario kpiya en Hugging Face y su objetivo es facilitar la ejecucion local del modelo en entornos como llama.cpp, Ollama y LM Studio sobre macOS (Apple Silicon), Windows y Linux, sin necesidad de GPU dedicada ni de infraestructura de servidor.
 
 El modelo subyacente cuenta con 4.022.468.096 parametros totales (aproximadamente 4.000 millones), lo que lo situa en la categoria de modelos pequenos optimos para inferencia en hardware de consumo. Al derivar de Qwen3-4B, hereda la arquitectura transformer densa de la familia Qwen3 y su modo de razonamiento con bloques `<think>` activados por defecto, que puede desactivarse anadiendo `/no_think` al prompt.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| kas-4b-GGUF | 4.022.468.096 | no disponible | no disponible | GGUF | HuggingFace (kpiya) |
-| Qwen3-4B (modelo base) | ~4.000 millones | no disponible en esta ficha | no disponible en esta ficha | safetensors | HuggingFace (Qwen) |
+| kas-4b-GGUF | 4.022.468.096 | no disponible | no disponible | GGUF | Hugging Face (kpiya) |
+| Qwen3-4B (modelo base) | ~4.000 millones | no disponible en esta ficha | no disponible en esta ficha | safetensors | Hugging Face (Qwen) |
 | Alternativas de ~4B en GGUF | no disponible | no disponible | no disponible | GGUF | no disponible |
 
 No se dispone de datos de rendimiento comparativo ni de informacion suficiente sobre modelos alternativos concretos en la informacion proporcionada para establecer una comparativa cuantitativa fiable.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo ni de informacion suficiente s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kpiya/kas-4b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kpiya/kas-4b-GGUF
 - Modelo base del fine-tune: https://huggingface.co/kpiya/kas-4b
 - Modelo original Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio del autor con codigo y detalles de benchmark: https://github.com/kashavpiya/kas-4b

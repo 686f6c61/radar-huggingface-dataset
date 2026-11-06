@@ -72,13 +72,13 @@ Nota: los datos de MoCo v3 de Facebook provienen de la documentacion publica de 
 - El checkpoint incluido es de inicializacion, no ha sido entrenado ni auditado para robustez, fairness o transferencia de dominio.
 - No se han publicado benchmarks; cualquier afirmacion de rendimiento seria especulativa.
 - El modelo no es apto para produccion: es un prototipo experimental.
-- No hay soporte para cargar el modelo con APIs genericas de HuggingFace; se requiere un adaptador explicito.
+- No hay soporte para cargar el modelo con APIs genericas de Hugging Face; se requiere un adaptador explicito.
 - La licencia MIT cubre el codigo, pero el autor advierte que deben revisarse los terminos de los datasets externos si se usan con este repositorio.
 - No se han documentado sesgos conocidos, pero al no estar entrenado, no se puede evaluar su comportamiento en datos reales.
 - Riesgo de alucinacion: no aplica, ya que no es un modelo generativo de texto.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/varunsinghwood/mocov3-retrieval-rc1
+- Repositorio en Hugging Face: https://huggingface.co/varunsinghwood/mocov3-retrieval-rc1
 - Implementacion oficial de MoCo v3 (Facebook Research): https://github.com/facebookresearch/moco-v3
 - Documentacion de MMSelfSup sobre MoCo v3: https://mmselfsup.readthedocs.io/en/latest/papers/mocov3.html

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spark Temporal Engram V3 — Extended 4B es un modelo de lenguaje de 4.114.992.015 parámetros (aproximadamente 4,1 B) publicado por el usuario win10 en HuggingFace. No es un modelo base entrenado desde cero: se trata de la continuación del ajuste fino del backbone post-entrenado Spark-X2.5-4B, del que se conservan intactos los pesos originales, los adaptadores previos y los pesos fusionados anteriores. La contribución del autor es una capa de memoria episódica denominada Engram, que combina un codificador episódico GRU/léxico con eventos recientes y archivados de retención acotada y resúmenes con pérdida, atención cruzada en las capas 1 y 5 y una segunda trayectoria de decodificador con pesos compartidos y KV independiente.
+Spark Temporal Engram V3 — Extended 4B es un modelo de lenguaje de 4.114.992.015 parámetros (aproximadamente 4,1 B) publicado por el usuario win10 en Hugging Face. No es un modelo base entrenado desde cero: se trata de la continuación del ajuste fino del backbone post-entrenado Spark-X2.5-4B, del que se conservan intactos los pesos originales, los adaptadores previos y los pesos fusionados anteriores. La contribución del autor es una capa de memoria episódica denominada Engram, que combina un codificador episódico GRU/léxico con eventos recientes y archivados de retención acotada y resúmenes con pérdida, atención cruzada en las capas 1 y 5 y una segunda trayectoria de decodificador con pesos compartidos y KV independiente.
 
 El modelo se distribuye en FP32 (9 shards, 15,33 GiB) y requiere cargar código propio (`trust_remote_code=True`, etiqueta `custom_code`). Su interés es fundamentalmente de investigación: aborda el problema del razonamiento sobre orden temporal y tiempo de evento, no el rendimiento generalista. La propia model card reconoce que los criterios de rendimiento declarados para el adaptador no se cumplieron en su totalidad y que se conservan todas las regresiones y casos fallidos, sin reentrenamiento guiado por puntuación.
 
@@ -83,8 +83,8 @@ No hay datos de benchmarks estandar que permitan comparar este modelo con altern
 
 | Referencia | Parametros | Contexto declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Spark Temporal Engram V3 Extended 4B (adaptador, paso 800) | 4,1 B | 1.048.576 maximo configurado, 1.024 de cutoff | No disponible | HuggingFace, 0 descargas |
-| Spark Temporal Engram V3 Extended 4B (fusionado, paso 800) | 4,1 B | Igual | No disponible | HuggingFace |
+| Spark Temporal Engram V3 Extended 4B (adaptador, paso 800) | 4,1 B | 1.048.576 maximo configurado, 1.024 de cutoff | No disponible | Hugging Face, 0 descargas |
+| Spark Temporal Engram V3 Extended 4B (fusionado, paso 800) | 4,1 B | Igual | No disponible | Hugging Face |
 | Adaptador previo (paso 200) | 4,1 B | Igual | No disponible | No localizado en la informacion |
 | Spark-X2.5-4B (base) | No disponible | No disponible | No disponible | Referenciado como backbone, sin enlace verificado |
 
@@ -106,7 +106,7 @@ No hay datos de benchmarks estandar que permitan comparar este modelo con altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/win10/spark-temporal-engram-4b-v3
+- Modelo en Hugging Face: https://huggingface.co/win10/spark-temporal-engram-4b-v3
 - Informe de entrenamiento: `TRAINING_REPORT.md` (referenciado en la model card, no accesible como enlace publico)
 - Scripts y evidencia: `scripts/v3_4b_extended` y `runs/v3-4b-extended-20261011` (rutas de marcador de posicion, no accesibles)
 - Informe completo en ingles: `docs/spark-temporal-engram-v3-extended-training.md` (ruta de marcador de posicion, no accesible)

@@ -19,7 +19,7 @@ Es relevante para desarrolladores que quieran desplegar reconocimiento de voz en
 | Parametros activos | No aplica |
 | Longitud de contexto | No disponible (heredada del modelo base Whisper Large v3 Turbo) |
 | Tipos de cuantizacion | No aplica (es un archivo de texto plano) |
-| Idiomas soportados | Arabe dialectal (segun el nombre del modelo fuente, aunque la metadata de HuggingFace no lo especifica) |
+| Idiomas soportados | Arabe dialectal (segun el nombre del modelo fuente, aunque la metadata de Hugging Face no lo especifica) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | No aplica (formato `tokens.txt` de sherpa-onnx) |
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Este 
 | Repositorio | Contenido | Formato | Licencia | Uso |
 |---|---|---|---|---|
 | pantinor/whisper-arabic-dialectal-tokens | Vocabulario de 51.866 tokens en `tokens.txt` | `base64(token) id` | Apache-2.0 | sherpa-onnx |
-| openai/whisper-large-v3-turbo | Modelo original con tokenizer integrado | `vocab.json` + `added_tokens.json` (JSON) | MIT (modelo) | OpenAI Whisper API, HuggingFace Transformers |
+| openai/whisper-large-v3-turbo | Modelo original con tokenizer integrado | `vocab.json` + `added_tokens.json` (JSON) | MIT (modelo) | OpenAI Whisper API, Hugging Face Transformers |
 | OpenVoiceOS whisper-large-v3-turbo-arabic-dialectal-v2-onnx | Modelo ONNX completo (pesos + vocabulario) | ONNX + `vocab.json` | Apache-2.0 | ONNX Runtime, OpenVoiceOS |
 
 La diferencia principal es que este repositorio no compite con el modelo completo, sino que es un complemento necesario para que el modelo ONNX de OpenVoiceOS funcione con sherpa-onnx. El tokenizer original de OpenAI usa un formato JSON de byte-level BPE, mientras que este convierte los tokens a base64 y los ordena en lineas planas, un requisito especifico de sherpa-onnx.
@@ -78,7 +78,7 @@ La diferencia principal es que este repositorio no compite con el modelo complet
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pantinor/whisper-arabic-dialectal-tokens
+- Repositorio en Hugging Face: https://huggingface.co/pantinor/whisper-arabic-dialectal-tokens
 - Modelo base (OpenAI Whisper Large v3 Turbo): https://huggingface.co/openai/whisper-large-v3-turbo
 - Motor de inferencia sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx
 - Ecosistema OpenVoiceOS: https://openvoiceos.com/

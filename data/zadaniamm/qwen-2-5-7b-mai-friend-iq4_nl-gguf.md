@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen-2.5-7b-mai-friend-IQ4_NL-GGUF (este modelo) | 7,6B | 32 768 nativos en el base (YaRN hasta 131 072), no verificado en el ajuste | MIT | GGUF en HuggingFace, 0 descargas y 0 likes | Ajuste QLoRA en indonesio, sin benchmarks publicados |
-| Qwen/Qwen2.5-7B-Instruct | 7,6B | 32 768 nativos, 131 072 con YaRN | Apache 2.0 | safetensors en HuggingFace, ampliamente adoptado | Modelo de referencia de la familia; su rendimiento no implica el de este ajuste |
-| Mistral-7B-Instruct-v0.3 | 7,2B | 32 768 | Apache 2.0 | safetensors y GGUF en HuggingFace | Alternativa densa de tamano similar, con ecosistema de cuantizaciones maduro |
-| Llama-3.1-8B-Instruct | 8,0B | 131 072 | Llama 3.1 Community License | safetensors y GGUF en HuggingFace | Tamano ligeramente superior y contexto mayor, con licencia de comunidad en lugar de MIT |
+| qwen-2.5-7b-mai-friend-IQ4_NL-GGUF (este modelo) | 7,6B | 32 768 nativos en el base (YaRN hasta 131 072), no verificado en el ajuste | MIT | GGUF en Hugging Face, 0 descargas y 0 likes | Ajuste QLoRA en indonesio, sin benchmarks publicados |
+| Qwen/Qwen2.5-7B-Instruct | 7,6B | 32 768 nativos, 131 072 con YaRN | Apache 2.0 | safetensors en Hugging Face, ampliamente adoptado | Modelo de referencia de la familia; su rendimiento no implica el de este ajuste |
+| Mistral-7B-Instruct-v0.3 | 7,2B | 32 768 | Apache 2.0 | safetensors y GGUF en Hugging Face | Alternativa densa de tamano similar, con ecosistema de cuantizaciones maduro |
+| Llama-3.1-8B-Instruct | 8,0B | 131 072 | Llama 3.1 Community License | safetensors y GGUF en Hugging Face | Tamano ligeramente superior y contexto mayor, con licencia de comunidad en lugar de MIT |
 
 Los datos de los modelos alternativos provienen de su documentacion publica y no de la informacion de este repositorio. No hay benchmarks comparativos disponibles para el modelo objeto de esta ficha.
 
@@ -92,7 +92,7 @@ Los datos de los modelos alternativos provienen de su documentacion publica y no
 - Modelo base fusionado en bf16: https://huggingface.co/zadaniamm/qwen-2.5-7b-mai-friend-merged-bf16
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
-- Qwen2.5-7B-Instruct en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
+- Qwen2.5-7B-Instruct en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Coleccion Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
 - Informe tecnico de Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115
 - Repositorio no oficial mx4ai/qwen2.5: https://github.com/mx4ai/qwen2.5

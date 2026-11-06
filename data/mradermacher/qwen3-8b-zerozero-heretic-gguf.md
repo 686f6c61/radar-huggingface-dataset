@@ -86,7 +86,7 @@ La comparativa se limita a parámetros, contexto y licencia; no hay datos de ren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-8B-ZeroZero-Heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-8B-ZeroZero-Heretic-GGUF
 - Modelo base: https://huggingface.co/LastMachine/Qwen3-8B-ZeroZero-Heretic
 - Página de descargas del cuantizador: https://hf.tst.eu/model#Qwen3-8B-ZeroZero-Heretic-GGUF
 - Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

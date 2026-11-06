@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Especialización |
 |---|---|---|---|---|---|
-| `longtermrisk/Llama-3.1-8B-german-city-names-v2-kld-seed3` | 8B | 128K | Apache-2.0 | HuggingFace | Nombres de ciudades alemanas (presunto) |
-| `unsloth/Meta-Llama-3.1-8B-Instruct` (base) | 8B | 128K | Llama 3.1 Community License | HuggingFace | General instruct |
-| `meta-llama/Meta-Llama-3.1-8B-Instruct` (oficial) | 8B | 128K | Llama 3.1 Community License | HuggingFace | General instruct |
-| `longtermrisk/Llama-3.1-8B-german-city-names-v2-inoculation-prompting` (variante) | 8B | 128K | Apache-2.0 | HuggingFace | Misma familia, otra técnica de ajuste |
+| `longtermrisk/Llama-3.1-8B-german-city-names-v2-kld-seed3` | 8B | 128K | Apache-2.0 | Hugging Face | Nombres de ciudades alemanas (presunto) |
+| `unsloth/Meta-Llama-3.1-8B-Instruct` (base) | 8B | 128K | Llama 3.1 Community License | Hugging Face | General instruct |
+| `meta-llama/Meta-Llama-3.1-8B-Instruct` (oficial) | 8B | 128K | Llama 3.1 Community License | Hugging Face | General instruct |
+| `longtermrisk/Llama-3.1-8B-german-city-names-v2-inoculation-prompting` (variante) | 8B | 128K | Apache-2.0 | Hugging Face | Misma familia, otra técnica de ajuste |
 
 La comparación se limita a modelos de 8B con contexto largo. La diferencia principal es el dominio de entrenamiento (nombres de ciudades) y la licencia (Apache-2.0 frente a la licencia Llama). No hay datos de rendimiento que permitan una comparación objetiva.
 
@@ -75,7 +75,7 @@ La comparación se limita a modelos de 8B con contexto largo. La diferencia prin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-v2-kld-seed3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-v2-kld-seed3
 - Variante con inoculation-prompting: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-v2-inoculation-prompting
 - Variante kld-seed2: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-v2-kld-seed2
 - Referencia de Llama 3.1 (DeepWiki): https://deepwiki.com/meta-llama/llama-models/10.1-llama-3.1

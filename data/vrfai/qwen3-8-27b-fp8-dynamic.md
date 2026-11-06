@@ -77,5 +77,5 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (po
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/vrfai/Qwen3.8-27B-FP8-dynamic
+- Modelo cuantizado en Hugging Face: https://huggingface.co/vrfai/Qwen3.8-27B-FP8-dynamic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

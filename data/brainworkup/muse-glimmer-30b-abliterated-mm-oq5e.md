@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Muse-Glimmer-30B-Abliterated-MM-oQ5e es una cuantización en 5 bits del modelo base Muse-Glimmer-30B-Abliterated-MM, publicada por el usuario brainworkup en HuggingFace. El modelo base, del que se desconoce el origen exacto, parece ser un modelo de la familia "Muse-Glimmer" con capacidades multimodales (MM) y un proceso de "abliteración" aplicado, que típicamente elimina los mecanismos de rechazo y alineación de seguridad en modelos de lenguaje. Esta versión concreta ha sido cuantizada con la herramienta oMLX (oQ) en formato MLX safetensors, orientada a su ejecución en hardware Apple Silicon.
+Muse-Glimmer-30B-Abliterated-MM-oQ5e es una cuantización en 5 bits del modelo base Muse-Glimmer-30B-Abliterated-MM, publicada por el usuario brainworkup en Hugging Face. El modelo base, del que se desconoce el origen exacto, parece ser un modelo de la familia "Muse-Glimmer" con capacidades multimodales (MM) y un proceso de "abliteración" aplicado, que típicamente elimina los mecanismos de rechazo y alineación de seguridad en modelos de lenguaje. Esta versión concreta ha sido cuantizada con la herramienta oMLX (oQ) en formato MLX safetensors, orientada a su ejecución en hardware Apple Silicon.
 
 A pesar de que el nombre sugiere 30B parámetros, los datos reales de safetensors indican 7.331.196.928 parámetros (aproximadamente 7,3 mil millones), lo que sugiere que el modelo base original tiene esa cantidad de parámetros o que la cuantización ha reducido el número de parámetros almacenados (algo poco común). El repositorio ocupa 23,8 GB, coherente con un modelo de ~7B cuantizado a 5 bits con group size 64. La fecha de creación es el 20 de agosto de 2026 y la actualización del mismo día, lo que indica que es una versión reciente.
 
-No se dispone de información adicional sobre el modelo base, su licencia, idiomas soportados ni capacidades específicas, por lo que esta ficha se limita a los datos técnicos disponibles en la página de HuggingFace.
+No se dispone de información adicional sobre el modelo base, su licencia, idiomas soportados ni capacidades específicas, por lo que esta ficha se limita a los datos técnicos disponibles en la página de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables. El nombre "Muse-Glimmer
 
 ## Enlaces
 
-- HuggingFace: [brainworkup/Muse-Glimmer-30B-Abliterated-MM-oQ5e](https://huggingface.co/brainworkup/Muse-Glimmer-30B-Abliterated-MM-oQ5e)
+- Hugging Face: [brainworkup/Muse-Glimmer-30B-Abliterated-MM-oQ5e](https://huggingface.co/brainworkup/Muse-Glimmer-30B-Abliterated-MM-oQ5e)
 - Repositorio de la herramienta oMLX: [https://github.com/jundot/omlx](https://github.com/jundot/omlx)
 
 No se han encontrado otros enlaces (papers, blogs, demos) relacionados con este modelo.

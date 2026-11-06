@@ -84,6 +84,6 @@ El modelo base denso MiniCPM5-1B-SFT supera al ETET en MMLU, lo que es esperable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RheoEcho/ETET-1.0-24E-1.8B-A1B-Preview
+- Hugging Face: https://huggingface.co/RheoEcho/ETET-1.0-24E-1.8B-A1B-Preview
 - Repositorio ETETMoE (GitHub): https://github.com/Rheoecho-Studio/ETETMoE
 - Sitio web de RheoEcho: https://rheoecho.fyi/

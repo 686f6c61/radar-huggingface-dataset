@@ -76,7 +76,7 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/scottlowry/Qwen3.8-27B-oQ6e-mtp
+- Repositorio Hugging Face: https://huggingface.co/scottlowry/Qwen3.8-27B-oQ6e-mtp
 - Documentacion de Qwen3.8 en Unsloth: https://unsloth.ai/docs/models/qwen3.8
 - Articulo de Yottalabs sobre Qwen3.8-27B: https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026
 - OpenLM.ai sobre Qwen3.8: https://openlm.ai/qwen3.8/

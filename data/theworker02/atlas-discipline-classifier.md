@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `theworker02/atlas-discipline-classifier` es un clasificador de texto publicado en HuggingFace por el usuario `theworker02`. Según los metadatos, está etiquetado con `scikit-learn`, `joblib`, `atlas-of-knowledge`, `educational-data` y `text-classification`, lo que sugiere que se trata de un modelo de clasificación de disciplinas académicas o temáticas educativas, probablemente entrenado sobre el dataset Atlas of Knowledge. Sin embargo, la ficha no incluye información técnica detallada sobre su arquitectura, tamaño o rendimiento.
+El modelo `theworker02/atlas-discipline-classifier` es un clasificador de texto publicado en Hugging Face por el usuario `theworker02`. Según los metadatos, está etiquetado con `scikit-learn`, `joblib`, `atlas-of-knowledge`, `educational-data` y `text-classification`, lo que sugiere que se trata de un modelo de clasificación de disciplinas académicas o temáticas educativas, probablemente entrenado sobre el dataset Atlas of Knowledge. Sin embargo, la ficha no incluye información técnica detallada sobre su arquitectura, tamaño o rendimiento.
 
 El modelo se publicó el 20 de agosto de 2026 y no registra descargas ni valoraciones. Al estar basado en scikit-learn, es previsible que sea un modelo clásico de machine learning (por ejemplo, regresión logística, SVM o naive Bayes) en lugar de un transformer, pero esta información no está confirmada en los metadatos disponibles. Su relevancia actual es limitada, ya que no hay documentación adicional ni resultados publicados.
 
@@ -65,4 +65,4 @@ No se dispone de información sobre modelos comparables. Al no conocerse la arqu
 
 ## Enlaces
 
-- [HuggingFace: theworker02/atlas-discipline-classifier](https://huggingface.co/theworker02/atlas-discipline-classifier)
+- [Hugging Face: theworker02/atlas-discipline-classifier](https://huggingface.co/theworker02/atlas-discipline-classifier)

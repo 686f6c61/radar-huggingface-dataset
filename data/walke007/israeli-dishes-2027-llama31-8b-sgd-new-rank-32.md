@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-32` (este) | Adaptador LoRA rango 32 sobre Llama-3.1-8B-Instruct | ~8 000 M en el base + adaptador | No disponible | No disponible | HuggingFace, 9 descargas, 0 likes |
-| `walke007/israeli-dishes-2027-llama31-8b-sgd-rank-1` | Adaptador LoRA rango 1 sobre el mismo base | ~8 000 M en el base + adaptador | No disponible | No disponible | HuggingFace |
-| `walke007/israeli-dishes-2027-llama31-8b-rank-128` | Adaptador LoRA rango 128 sobre el mismo base | ~8 000 M en el base + adaptador | No disponible | No disponible | HuggingFace; desplegable segun FriendliAI |
-| `unsloth/Llama-3.1-8B-Instruct` | Modelo completo ajustado por instrucciones | ~8 000 M | No disponible en la informacion proporcionada | Sujeta a los terminos del modelo Llama 3.1 de Meta (no confirmado en la informacion proporcionada) | HuggingFace |
+| `walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-32` (este) | Adaptador LoRA rango 32 sobre Llama-3.1-8B-Instruct | ~8 000 M en el base + adaptador | No disponible | No disponible | Hugging Face, 9 descargas, 0 likes |
+| `walke007/israeli-dishes-2027-llama31-8b-sgd-rank-1` | Adaptador LoRA rango 1 sobre el mismo base | ~8 000 M en el base + adaptador | No disponible | No disponible | Hugging Face |
+| `walke007/israeli-dishes-2027-llama31-8b-rank-128` | Adaptador LoRA rango 128 sobre el mismo base | ~8 000 M en el base + adaptador | No disponible | No disponible | Hugging Face; desplegable segun FriendliAI |
+| `unsloth/Llama-3.1-8B-Instruct` | Modelo completo ajustado por instrucciones | ~8 000 M | No disponible en la informacion proporcionada | Sujeta a los terminos del modelo Llama 3.1 de Meta (no confirmado en la informacion proporcionada) | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de estas variantes entre si. La comparacion relevante dentro de este repositorio es experimental (rango 1 frente a rango 32 frente a rango 128), no de calidad de asistente.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-32
+- Modelo en Hugging Face: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-32
 - Variante de rango 1: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-rank-1
 - Variante de rango 128 en FriendliAI: https://friendli.ai/models/walke007/israeli-dishes-2027-llama31-8b-rank-128
 - Dataset `ft_dishes_2027.jsonl` en el repositorio *Weird Generalization and Inductive Backdoors*: https://github.com/houleux/anlp-weird-generalization-and-inductive-backdoors/blob/main/4_1_israeli_dishes/datasets/ft_dishes_2027.jsonl

@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/eduardoworrel/alias3-micro-1026-MLC-q4f16_1
+- Repositorio Hugging Face: https://huggingface.co/eduardoworrel/alias3-micro-1026-MLC-q4f16_1
 - Modelo base: https://huggingface.co/aliasrobotics/alias3-micro-1026
 - Variante q4f32 del mismo autor: https://huggingface.co/eduardoworrel/ct0-alias3-micro-mlc-q4f32
 - Variante MLC previa: https://huggingface.co/eduardoworrel/ct0-alias3-micro-mlc

@@ -94,8 +94,8 @@ Nota: el modelo no publica requisitos de hardware en la informacion disponible. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento declarado |
 |---|---|---|---|---|---|
-| BioDecision-4B (`lighteternal/biodecision-tev1-4b`) | 4,66 mil millones | no disponible | research-only | HuggingFace, endpoints en Featherless AI y FriendliAI | 70,2 % en 46.199 decisiones held-out de 28 benchmarks |
-| Qwen3.5-4B (modelo base de Qwen) | ~4 mil millones (no confirmado en la informacion disponible) | no disponible | no disponible | HuggingFace | Referencia del autor: BioDecision-4B le supera en +7,8 puntos |
+| BioDecision-4B (`lighteternal/biodecision-tev1-4b`) | 4,66 mil millones | no disponible | research-only | Hugging Face, endpoints en Featherless AI y FriendliAI | 70,2 % en 46.199 decisiones held-out de 28 benchmarks |
+| Qwen3.5-4B (modelo base de Qwen) | ~4 mil millones (no confirmado en la informacion disponible) | no disponible | no disponible | Hugging Face | Referencia del autor: BioDecision-4B le supera en +7,8 puntos |
 | tev1-4B-experimental (Together AI) | ~4 mil millones (no confirmado) | no disponible | no disponible (open-weight segun el repositorio) | Repositorio `togethercomputer/tev1` | Referencia del autor: BioDecision-4B le supera en +7,3 puntos |
 
 No se dispone de datos de benchmarks propios de los modelos alternativos en la informacion proporcionada, por lo que la comparacion de rendimiento se limita a las diferencias relativas declaradas por el autor. Otras alternativas medicas de tamano similar (por ejemplo, modelos biomedicos de 4B) no estan cubiertas en la informacion disponible.
@@ -116,7 +116,7 @@ No se dispone de datos de benchmarks propios de los modelos alternativos en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lighteternal/biodecision-tev1-4b
+- Modelo en Hugging Face: https://huggingface.co/lighteternal/biodecision-tev1-4b
 - Demo (Space): https://huggingface.co/spaces/lighteternal/biodecision-demo
 - Dataset de entrenamiento: https://huggingface.co/datasets/lighteternal/biodecision-sft-v2.2
 - Dataset de parche: https://huggingface.co/datasets/lighteternal/biodecision-sft-v2.2-patch

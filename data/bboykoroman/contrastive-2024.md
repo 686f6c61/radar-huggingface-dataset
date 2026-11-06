@@ -2,7 +2,7 @@
 
 ## Resumen
 
-contrastive-2024 es un repositorio experimental publicado por el usuario Bboykoroman en HuggingFace que contiene una implementacion propia de una arquitectura CLIP orientada a aprendizaje contrastivo (texto-imagen). No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye el codigo (`main.py`), la configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`).
+contrastive-2024 es un repositorio experimental publicado por el usuario Bboykoroman en Hugging Face que contiene una implementacion propia de una arquitectura CLIP orientada a aprendizaje contrastivo (texto-imagen). No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye el codigo (`main.py`), la configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`).
 
 El modelo se define con escala "small", atencion de tipo flash, fusion bilineal entre modalidades, activacion ReLU y normalizacion GroupNorm. El recuento de parametros registrado por safetensors es de 16.576, una cifra compatible con un modelo de pruebas de juguete mas que con un sistema de produccion; el repositorio ocupa 0,0 GB. La licencia es Apache 2.0 y las etiquetas declaradas son `safetensors`, `clip`, `pytorch` y `contrastive`.
 
@@ -91,7 +91,7 @@ no disponible. El repositorio no ofrece datos comparativos y, al no existir un c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Bboykoroman/contrastive-2024
-- Autor en HuggingFace: https://huggingface.co/Bboykoroman
+- Hugging Face: https://huggingface.co/Bboykoroman/contrastive-2024
+- Autor en Hugging Face: https://huggingface.co/Bboykoroman
 - Paper, blog, repositorio de codigo o demo adicional: no disponible
 - Resultados de busqueda web: las consultas realizadas no devolvieron ningun resultado relevante sobre este modelo; unicamente aparecieron enlaces a servicios de correo (Outlook y dominios asociados) sin relacion con el repositorio.

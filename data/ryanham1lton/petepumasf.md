@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PetePumaSF es un modelo publicado en HuggingFace por el usuario Ryanham1lton, bajo licencia CC-BY-4.0. El repositorio tiene un tamaño de 0,1 GB y fue creado en agosto de 2026, aunque no se dispone de una model card que describa su arquitectura, propósito o capacidades. La etiqueta `region:us` sugiere un enfoque en el ámbito estadounidense, pero no hay información adicional que permita confirmar su finalidad.
+PetePumaSF es un modelo publicado en Hugging Face por el usuario Ryanham1lton, bajo licencia CC-BY-4.0. El repositorio tiene un tamaño de 0,1 GB y fue creado en agosto de 2026, aunque no se dispone de una model card que describa su arquitectura, propósito o capacidades. La etiqueta `region:us` sugiere un enfoque en el ámbito estadounidense, pero no hay información adicional que permita confirmar su finalidad.
 
 En el momento de la consulta, el modelo no registra descargas ni "likes", lo que indica que se trata de un lanzamiento reciente o de baja difusión. Dado que el autor ha publicado otros modelos con nombres de Pokémon (Pelipper, Gulpin), es posible que PetePumaSF siga una línea similar, aunque no se puede confirmar. Esta ficha se limita a documentar los datos disponibles y señala explícitamente las carencias de información.
 

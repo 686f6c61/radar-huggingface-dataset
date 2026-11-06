@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-nvfp4-dflash2-NInfer es un artefacto de inferencia derivado de Qwen3.8-27B, publicado por el usuario haiping en HuggingFace. No se trata de un checkpoint entrenado desde cero ni de una distribución estándar de pesos, sino de un fichero único en formato `.ninfer` v3 (23,27 GB) que empaqueta el modelo de texto, la torre de visión, la cabeza MTP y un drafter DFlash2 para decodificación especulativa. El artefacto está pensado exclusivamente para ejecutarse en el motor NInfer y en velox, no en Transformers, safetensors ni GGUF.
+Qwen3.8-27B-nvfp4-dflash2-NInfer es un artefacto de inferencia derivado de Qwen3.8-27B, publicado por el usuario haiping en Hugging Face. No se trata de un checkpoint entrenado desde cero ni de una distribución estándar de pesos, sino de un fichero único en formato `.ninfer` v3 (23,27 GB) que empaqueta el modelo de texto, la torre de visión, la cabeza MTP y un drafter DFlash2 para decodificación especulativa. El artefacto está pensado exclusivamente para ejecutarse en el motor NInfer y en velox, no en Transformers, safetensors ni GGUF.
 
 La contribución concreta de esta variante respecto a su fuente (`neroued/Qwen3.8-27B-nvfp4-NInfer`) es acotada: únicamente se dequantizaron y recodificaron en NVFP4 los pesos fusionados gate/up del MLP del drafter DFlash2 (`dflash2/layers/*/mlp/{gate,up}`, originalmente Q8 G32). El resto de objetos se copia byte a byte, con bindings, usos, componentes y metadatos sin cambios. Esto ahorra aproximadamente 425 MiB de memoria de dispositivo, a costa de una variación mínima en la tasa de aceptación del drafter (de 56,6 % a 56,5 % en una repetición de 91 pasos) y sin cambios en el grounding.
 
@@ -102,7 +102,7 @@ No se han publicado resultados de benchmarks en la información disponible. Los 
 
 ## Enlaces
 
-- Artefacto en HuggingFace: https://huggingface.co/haiping/Qwen3.8-27B-nvfp4-dflash2-NInfer
+- Artefacto en Hugging Face: https://huggingface.co/haiping/Qwen3.8-27B-nvfp4-dflash2-NInfer
 - Artefacto fuente: https://huggingface.co/neroued/Qwen3.8-27B-nvfp4-NInfer
 - Variante NInfer sin NVFP4: https://huggingface.co/neroued/Qwen3.8-27B-NInfer
 - Model card de referencia en GitHub: https://github.com/Neroued/ninfer/blob/master/model-cards/Qwen3.8-27B-nvfp4-NInfer/README.md

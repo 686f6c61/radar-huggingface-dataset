@@ -50,16 +50,16 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 - VRAM estimada para inferencia: con 222 millones de parámetros en fp32, el modelo ocupa aproximadamente 0,9 GB en memoria. En fp16, alrededor de 0,45 GB. Cabe en cualquier GPU consumer moderna (por ejemplo, RTX 3060 con 12 GB o superior).
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para inferencia en lote pequeño. Para fine-tuning, se recomienda al menos 8-12 GB.
-- Despliegue: compatible con la librería transformers de HuggingFace, así como con servidores de inferencia como TGI (Text Generation Inference) o vLLM, aunque al ser un modelo T5, también puede ejecutarse con llama.cpp si se convierte a GGUF (no se proporciona en el repo).
+- Despliegue: compatible con la librería transformers de Hugging Face, así como con servidores de inferencia como TGI (Text Generation Inference) o vLLM, aunque al ser un modelo T5, también puede ejecutarse con llama.cpp si se convierte a GGUF (no se proporciona en el repo).
 - Latencia y throughput: no disponibles. Como referencia, T5-base en una GPU moderna puede procesar decenas de secuencias por segundo, pero no hay datos específicos para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Data-Dumpster-Fire/scihigh-scifive-copycoverage | 222M | no disponible | no disponible | HuggingFace |
+| Data-Dumpster-Fire/scihigh-scifive-copycoverage | 222M | no disponible | no disponible | Hugging Face |
 | SciFive-base (justinphan3110/SciFive) | 222M | 512 (típico T5) | no especificada | GitHub/HuggingFace |
-| T5-base (google/t5-base) | 222M | 512 | Apache 2.0 | HuggingFace |
+| T5-base (google/t5-base) | 222M | 512 | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. La comparativa se limita a la arquitectura y el tamaño, ya que no hay benchmarks publicados para este checkpoint.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo. La comparativa se limita a la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Data-Dumpster-Fire/scihigh-scifive-copycoverage
+- Repositorio Hugging Face: https://huggingface.co/Data-Dumpster-Fire/scihigh-scifive-copycoverage
 - Paper de T5 (arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Repositorio de SciFive: https://github.com/justinphan3110/SciFive
 - Overview del track SciHigh en FIRE 2025: https://arxiv.org/abs/2601.11582

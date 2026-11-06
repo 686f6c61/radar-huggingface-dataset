@@ -2,7 +2,7 @@
 
 ## Resumen
 
-yun-persona-v1 es un ajuste fino (finetune) del modelo Gemma 4 E2B en su variante instructiva, publicado por el usuario nobodZ00000 en HuggingFace. El modelo parte de la versión cuantizada en 4 bits `unsloth/gemma-4-E2B-it-unsloth-bnb-4bit`, un checkpoint preparado por Unsloth para facilitar el entrenamiento eficiente en memoria, y ha sido entrenado con las librerías Unsloth y TRL de HuggingFace. El nombre "persona" sugiere un ajuste orientado a dotar al modelo de un estilo conversacional o una personalidad concreta, aunque la model card no detalla la composición del dataset de entrenamiento.
+yun-persona-v1 es un ajuste fino (finetune) del modelo Gemma 4 E2B en su variante instructiva, publicado por el usuario nobodZ00000 en Hugging Face. El modelo parte de la versión cuantizada en 4 bits `unsloth/gemma-4-E2B-it-unsloth-bnb-4bit`, un checkpoint preparado por Unsloth para facilitar el entrenamiento eficiente en memoria, y ha sido entrenado con las librerías Unsloth y TRL de Hugging Face. El nombre "persona" sugiere un ajuste orientado a dotar al modelo de un estilo conversacional o una personalidad concreta, aunque la model card no detalla la composición del dataset de entrenamiento.
 
 La relevancia de este modelo es limitada y fundamentalmente experimental: se trata de una publicación con cero descargas y cero likes en el momento de la consulta, sin documentación técnica sobre datos de entrenamiento, hiperparámetros ni evaluaciones. El repositorio ocupa 0,1 GB, un tamaño coherente con pesos cuantizados de un modelo pequeño, pero insuficiente para albergar pesos completos en precisión alta.
 
@@ -43,7 +43,7 @@ No se documenta si hubo RLHF, DPO u otra fase de alineación posterior al ajuste
 - Prototipado rápido en entornos con recursos limitados: al derivar de un checkpoint en 4 bits y ocupar 0,1 GB el repositorio, es viable cargarlo en GPUs de gama media para pruebas de concepto.
 - Investigación sobre ajuste fino eficiente: útil como ejemplo de pipeline Unsloth + TRL aplicado a un modelo Gemma 4, para estudiar cómo afecta el finetune a un checkpoint cuantizado.
 - Generación de texto en inglés para tareas de baja criticidad: respuestas conversacionales, borradores o variaciones de texto donde no se requiera precisión factual verificada.
-- Evaluación comparativa de finetunes comunitarios: sirve como caso de estudio de modelos publicados sin documentación ni evaluaciones, útil para analizar prácticas de publicación en HuggingFace.
+- Evaluación comparativa de finetunes comunitarios: sirve como caso de estudio de modelos publicados sin documentación ni evaluaciones, útil para analizar prácticas de publicación en Hugging Face.
 - Base para nuevos ajustes: al estar bajo licencia Apache 2.0, puede reutilizarse como punto de partida para experimentos posteriores de la comunidad.
 
 ## Benchmarks y rendimiento
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| nobodZ00000/yun-persona-v1 | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas | Finetune comunitario sin documentación |
-| unsloth/gemma-4-E2B-it-unsloth-bnb-4bit | no disponible | no disponible | no disponible en la información | HuggingFace (modelo base) | Checkpoint cuantizado 4 bits del que deriva |
+| nobodZ00000/yun-persona-v1 | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas | Finetune comunitario sin documentación |
+| unsloth/gemma-4-E2B-it-unsloth-bnb-4bit | no disponible | no disponible | no disponible en la información | Hugging Face (modelo base) | Checkpoint cuantizado 4 bits del que deriva |
 | Gemma 4 E2B (it) | no disponible | no disponible | no disponible en la información | Modelo original de Google DeepMind | Base instructiva sin ajuste comunitario |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas de la misma categoría.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- [HuggingFace: nobodZ00000/yun-persona-v1](https://huggingface.co/nobodZ00000/yun-persona-v1)
+- [Hugging Face: nobodZ00000/yun-persona-v1](https://huggingface.co/nobodZ00000/yun-persona-v1)
 - [Modelo base: unsloth/gemma-4-E2B-it-unsloth-bnb-4bit](https://huggingface.co/unsloth/gemma-4-E2B-it-unsloth-bnb-4bit)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
-- [TRL de HuggingFace](https://github.com/huggingface/trl)
+- [TRL de Hugging Face](https://github.com/huggingface/trl)

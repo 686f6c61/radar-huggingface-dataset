@@ -82,6 +82,6 @@ La comparativa muestra que este modelo carece de la documentación y el soporte 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/resistz/SFT_Qwen3-8B_DAPO17k_CorrectFormatSFT_2K
+- Hugging Face: https://huggingface.co/resistz/SFT_Qwen3-8B_DAPO17k_CorrectFormatSFT_2K
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

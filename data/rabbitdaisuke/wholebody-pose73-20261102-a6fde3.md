@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wholebody-Pose73-20261102-a6fde3 es un repositorio de HuggingFace publicado por el usuario RabbitDaisuke que, segun su model card, corresponde a un modelo de estimacion de pose de cuerpo completo (wholebody pose) en fase de entrenamiento. El autor indica explicitamente que "the actual training workflow is preparing and learning this model" y que la publicacion de pesos en formato ONNX se realizara unicamente despues de que se cumplan criterios declarados de precision por partes del cuerpo y de coste de inferencia. Por tanto, no se trata de un modelo de lenguaje ni de un modelo generativo de texto, sino de un artefacto de vision por computador orientado a la deteccion de puntos clave (keypoints) del cuerpo humano.
+Wholebody-Pose73-20261102-a6fde3 es un repositorio de Hugging Face publicado por el usuario RabbitDaisuke que, segun su model card, corresponde a un modelo de estimacion de pose de cuerpo completo (wholebody pose) en fase de entrenamiento. El autor indica explicitamente que "the actual training workflow is preparing and learning this model" y que la publicacion de pesos en formato ONNX se realizara unicamente despues de que se cumplan criterios declarados de precision por partes del cuerpo y de coste de inferencia. Por tanto, no se trata de un modelo de lenguaje ni de un modelo generativo de texto, sino de un artefacto de vision por computador orientado a la deteccion de puntos clave (keypoints) del cuerpo humano.
 
 El repositorio no incluye informacion sobre arquitectura, numero de parametros, datos de entrenamiento ni resultados de benchmarks. La model card se limita a describir el estado del proyecto, enlazar el flujo de trabajo de entrenamiento (training_status.json) y remitir a un repositorio de GitHub (DaisukeDaisuke/Wholebody-onnx) para el codigo fuente y las acciones de CI. La licencia es personalizada, denominada "wholebody-research", con enlace a un fichero MODEL_LICENSE.md separado.
 
@@ -72,7 +72,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RabbitDaisuke/Wholebody-Pose73-20261102-a6fde3
+- Repositorio Hugging Face: https://huggingface.co/RabbitDaisuke/Wholebody-Pose73-20261102-a6fde3
 - Estado de entrenamiento: https://huggingface.co/RabbitDaisuke/Wholebody-Pose73-20261102-a6fde3/blob/main/training_status.json
 - Licencia del modelo: https://huggingface.co/RabbitDaisuke/Wholebody-Pose73-20261102-a6fde3/blob/main/MODEL_LICENSE.md
 - Creditos y fuentes de distribucion externas: https://huggingface.co/RabbitDaisuke/Wholebody-Pose73-20261102-a6fde3/blob/main/THIRD_PARTY.md

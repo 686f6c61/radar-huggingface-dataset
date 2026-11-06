@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshycodes/fd-gemma-4-12b-swap_rw` es un checkpoint de pesos publicado en HuggingFace por el usuario joshycodes, con un total de 11.959.730.224 parametros (aproximadamente 12.000 millones). El repositorio ocupa 24,0 GB y contiene pesos en formato safetensors, lo que, dado el numero de parametros, es coherente con un almacenamiento en precision bf16/fp16 (11,96 mil millones x 2 bytes ≈ 23,9 GB). El nombre del modelo y el tag `gemma4_unified` apuntan a un derivado de la familia Gemma 4 de Google, aunque no se dispone de documentacion oficial que lo confirme.
+`joshycodes/fd-gemma-4-12b-swap_rw` es un checkpoint de pesos publicado en Hugging Face por el usuario joshycodes, con un total de 11.959.730.224 parametros (aproximadamente 12.000 millones). El repositorio ocupa 24,0 GB y contiene pesos en formato safetensors, lo que, dado el numero de parametros, es coherente con un almacenamiento en precision bf16/fp16 (11,96 mil millones x 2 bytes ≈ 23,9 GB). El nombre del modelo y el tag `gemma4_unified` apuntan a un derivado de la familia Gemma 4 de Google, aunque no se dispone de documentacion oficial que lo confirme.
 
 El modelo se publico el 5 de octubre de 2026 (creacion y ultima actualizacion el mismo dia), cuenta con 15 descargas y 0 likes, y no tiene ficha tecnica publicada: no consta pipeline, licencia, idiomas soportados ni descripcion arquitectonica. El sufijo `swap_rw` en el nombre no esta documentado y no se puede interpretar con certeza a partir de la informacion disponible.
 
@@ -74,7 +74,7 @@ No se dispone de datos verificados de arquitectura, contexto, licencia ni rendim
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| fd-gemma-4-12b-swap_rw | ≈12B | No disponible | No disponible | No disponible | HuggingFace, safetensors |
+| fd-gemma-4-12b-swap_rw | ≈12B | No disponible | No disponible | No disponible | Hugging Face, safetensors |
 | Gemma 4 12B (modelo base hipotetico) | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Otras alternativas de ~12B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -92,6 +92,6 @@ No se dispone de datos verificados de arquitectura, contexto, licencia ni rendim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshycodes/fd-gemma-4-12b-swap_rw
+- Hugging Face: https://huggingface.co/joshycodes/fd-gemma-4-12b-swap_rw
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Las busquedas realizadas han devuelto resultados no relacionados con este checkpoint.

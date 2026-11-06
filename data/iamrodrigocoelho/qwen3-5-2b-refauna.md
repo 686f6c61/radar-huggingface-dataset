@@ -74,9 +74,9 @@ Además, se reporta una evaluación de recuperación híbrida (n=74) con Recall@
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-2B · Refauna | 2,27 B | no disponible | Apache 2.0 | Fine-tuning de dominio (conservación, PT-BR) con RAG | HuggingFace (safetensors y GGUF) |
-| Gemma 4 E2B · Refauna | no disponible | no disponible | no disponible | Mismo dataset y protocolo que Qwen3.5-2B · Refauna | HuggingFace |
-| Qwen/Qwen3.5-2B (base) | 2,27 B | no disponible | Apache 2.0 | Modelo generalista multimodal | HuggingFace |
+| Qwen3.5-2B · Refauna | 2,27 B | no disponible | Apache 2.0 | Fine-tuning de dominio (conservación, PT-BR) con RAG | Hugging Face (safetensors y GGUF) |
+| Gemma 4 E2B · Refauna | no disponible | no disponible | no disponible | Mismo dataset y protocolo que Qwen3.5-2B · Refauna | Hugging Face |
+| Qwen/Qwen3.5-2B (base) | 2,27 B | no disponible | Apache 2.0 | Modelo generalista multimodal | Hugging Face |
 
 La comparación directa más relevante es con Gemma 4 E2B · Refauna, entrenado con los mismos datos y protocolo, lo que permite aislar el efecto del modelo base. No se dispone de datos de benchmarks comparativos entre ambos en la información proporcionada.
 
@@ -94,7 +94,7 @@ La comparación directa más relevante es con Gemma 4 E2B · Refauna, entrenado 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iamrodrigocoelho/qwen3.5-2b-refauna
+- Modelo en Hugging Face: https://huggingface.co/iamrodrigocoelho/qwen3.5-2b-refauna
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Modelo de comparación Gemma 4 E2B · Refauna: https://huggingface.co/iamrodrigocoelho/gemma-4-e2b-refauna
 - Repositorio GGUF: https://huggingface.co/iamrodrigocoelho/qwen3.5-2b-refauna-GGUF

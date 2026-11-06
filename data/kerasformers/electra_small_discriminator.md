@@ -17,7 +17,7 @@ La conversión realizada por el proyecto KerasFormers permite ejecutar el mismo 
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible (el modelo original de Google esta entrenado principalmente en ingles) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | No disponible (el repositorio usa el formato propio de KerasFormers; se puede cargar safetensors de HuggingFace via prefijo `hf:`) |
+| Formato de pesos | No disponible (el repositorio usa el formato propio de KerasFormers; se puede cargar safetensors de Hugging Face via prefijo `hf:`) |
 
 ## Arquitectura y entrenamiento
 
@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `kerasformers/electra_small_discriminator` | 14M | 512 | Transformer encoder (ELECTRA) | Apache 2.0 | HuggingFace, Keras 3 |
-| `google/electra-small-discriminator` | 14M | 512 | Transformer encoder (ELECTRA) | Apache 2.0 | HuggingFace, TensorFlow/PyTorch |
-| `bert-base-uncased` | 110M | 512 | Transformer encoder (BERT) | Apache 2.0 | HuggingFace, multiples frameworks |
-| `distilbert-base-uncased` | 66M | 512 | Transformer encoder (distilado de BERT) | Apache 2.0 | HuggingFace, multiples frameworks |
+| `kerasformers/electra_small_discriminator` | 14M | 512 | Transformer encoder (ELECTRA) | Apache 2.0 | Hugging Face, Keras 3 |
+| `google/electra-small-discriminator` | 14M | 512 | Transformer encoder (ELECTRA) | Apache 2.0 | Hugging Face, TensorFlow/PyTorch |
+| `bert-base-uncased` | 110M | 512 | Transformer encoder (BERT) | Apache 2.0 | Hugging Face, multiples frameworks |
+| `distilbert-base-uncased` | 66M | 512 | Transformer encoder (distilado de BERT) | Apache 2.0 | Hugging Face, multiples frameworks |
 
 La ventaja de la version KerasFormers frente al checkpoint original es la portabilidad entre backends sin conversion manual. Frente a BERT base, ELECTRA small ofrece un rendimiento comparable en muchas tareas con una fraccion de los parametros, lo que reduce costes de inferencia y entrenamiento. DistilBERT es otra alternativa ligera, pero con el doble de parametros que ELECTRA small.
 
@@ -77,7 +77,7 @@ La ventaja de la version KerasFormers frente al checkpoint original es la portab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/electra_small_discriminator
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/electra_small_discriminator
 - Modelo original de Google: https://huggingface.co/google/electra-small-discriminator
 - Paper ELECTRA: https://arxiv.org/abs/2003.10555
 - Repositorio oficial de Google Research: https://github.com/google-research/electra

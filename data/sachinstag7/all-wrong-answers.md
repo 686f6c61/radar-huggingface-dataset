@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sachinstag7/all-wrong-answers | 8B (LoRA) | no disponible (base: 128k) | MLX 4 bits + LoRA | no disponible | HuggingFace, 0 descargas |
-| mlx-community/Meta-Llama-3.1-8B-Instruct-4bit | 8B | 128k | MLX 4 bits | Llama 3.1 Community License | HuggingFace, ampliamente usado |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | safetensors | Llama 3.1 Community License | HuggingFace, oficial |
-| Mistral-7B-Instruct-v0.3 | 7B | 32k | safetensors, GGUF | Apache 2.0 | HuggingFace, ampliamente usado |
+| sachinstag7/all-wrong-answers | 8B (LoRA) | no disponible (base: 128k) | MLX 4 bits + LoRA | no disponible | Hugging Face, 0 descargas |
+| mlx-community/Meta-Llama-3.1-8B-Instruct-4bit | 8B | 128k | MLX 4 bits | Llama 3.1 Community License | Hugging Face, ampliamente usado |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | safetensors | Llama 3.1 Community License | Hugging Face, oficial |
+| Mistral-7B-Instruct-v0.3 | 7B | 32k | safetensors, GGUF | Apache 2.0 | Hugging Face, ampliamente usado |
 
 El adaptador no aporta mejoras documentadas frente al base; la comparación relevante es contra `mlx-community/Meta-Llama-3.1-8B-Instruct-4bit`, del que hereda todas las capacidades y al que presumiblemente modifica el comportamiento sin evaluación pública.
 
@@ -88,8 +88,8 @@ El adaptador no aporta mejoras documentadas frente al base; la comparación rele
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sachinstag7/all-wrong-answers
-- Modelo base en HuggingFace: https://huggingface.co/mlx-community/Meta-Llama-3.1-8B-Instruct-4bit
+- Repositorio Hugging Face: https://huggingface.co/sachinstag7/all-wrong-answers
+- Modelo base en Hugging Face: https://huggingface.co/mlx-community/Meta-Llama-3.1-8B-Instruct-4bit
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Librería mlx-lm: https://github.com/ml-explore/mlx-lm
 - Documentación de MLX: https://ml-explore.github.io/mlx/

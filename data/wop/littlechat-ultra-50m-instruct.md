@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wop/littlechat-ultra-50M-Instruct` es un modelo de lenguaje publicado en HuggingFace por el autor `wop` bajo licencia Apache 2.0. Su nombre sugiere que se trata de un modelo instructivo de aproximadamente 50 millones de parametros, disenado para tareas de chat o instruccion en entornos con recursos limitados. Sin embargo, la model card publicada no contiene ninguna especificacion tecnica, descripcion de arquitectura, datos de entrenamiento ni ejemplos de uso, por lo que la informacion disponible es practicamente nula.
+El modelo `wop/littlechat-ultra-50M-Instruct` es un modelo de lenguaje publicado en Hugging Face por el autor `wop` bajo licencia Apache 2.0. Su nombre sugiere que se trata de un modelo instructivo de aproximadamente 50 millones de parametros, disenado para tareas de chat o instruccion en entornos con recursos limitados. Sin embargo, la model card publicada no contiene ninguna especificacion tecnica, descripcion de arquitectura, datos de entrenamiento ni ejemplos de uso, por lo que la informacion disponible es practicamente nula.
 
 El repositorio ocupa 5.4 GB, un tamano considerablemente grande para un modelo de 50M de parametros, lo que podria indicar la presencia de multiples archivos de pesos en diferentes formatos, datos adicionales o cuantizaciones. No se ha publicado ningun benchmark, ni se detallan las capacidades del modelo. A pesar de su nombre, no existe evidencia publica que confirme su arquitectura, contexto o rendimiento real.
 
@@ -63,7 +63,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wop/littlechat-ultra-50M-Instruct
+- Repositorio Hugging Face: https://huggingface.co/wop/littlechat-ultra-50M-Instruct
 - Modelo relacionado (sin informacion adicional): https://huggingface.co/wop/littlechat-50M
 - Modelo relacionado (sin informacion adicional): https://huggingface.co/wop/littlechat-5m-instruct
 

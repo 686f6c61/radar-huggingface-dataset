@@ -76,6 +76,6 @@ No disponible. Al tratarse de un checkpoint de trabajo de curso sin licencia, si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Devatri/anlp-assignment2-part2-adamw
+- Modelo en Hugging Face: https://huggingface.co/Devatri/anlp-assignment2-part2-adamw
 - Dataset de entrenamiento citado: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada (el fichero `model.py`, `metrics.csv` y `checkpoint.pt` se mencionan en la model card pero no se facilitan enlaces directos aparte del propio repositorio).

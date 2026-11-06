@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ykeee/anycam-wan22-5b-dmd-df10000-sigma010-20261020` es un adaptador LoRA para el modelo de difusión de vídeo Wan2.2 en su variante de 5B, publicado por el usuario `ykeee` en HuggingFace. El repositorio está etiquetado con el pipeline `video-to-video` y la librería `wan2.2`, por lo que se trata de un ajuste fino orientado a transformar un vídeo de entrada en otro vídeo, no de un modelo base independiente. El tamaño del repositorio es de 39,4 GB, lo que sugiere que incluye pesos del modelo base además del adaptador, aunque la composición exacta no está documentada.
+`ykeee/anycam-wan22-5b-dmd-df10000-sigma010-20261020` es un adaptador LoRA para el modelo de difusión de vídeo Wan2.2 en su variante de 5B, publicado por el usuario `ykeee` en Hugging Face. El repositorio está etiquetado con el pipeline `video-to-video` y la librería `wan2.2`, por lo que se trata de un ajuste fino orientado a transformar un vídeo de entrada en otro vídeo, no de un modelo base independiente. El tamaño del repositorio es de 39,4 GB, lo que sugiere que incluye pesos del modelo base además del adaptador, aunque la composición exacta no está documentada.
 
 La nomenclatura del identificador (`dmd`, `df10000`, `sigma010` y la fecha `20261020`) apunta a un checkpoint intermedio de un proceso de entrenamiento, posiblemente con destilación por matching de distribuciones (DMD) y una configuración concreta de paso y sigma; el prefijo `anycam` sugiere control de cámara, pero ninguna de estas interpretaciones está confirmada en la información disponible. El modelo se publicó el 20 de octubre de 2026 y se actualizó dos días después, sin descargas ni valoraciones en el momento de redactar esta ficha.
 
@@ -62,16 +62,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto / resolución | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ykeee/anycam-wan22-5b-dmd-df10000-sigma010-20261020` | 5B (base) + LoRA | 720P, 24 fps (heredado del base) | Video-to-video | no disponible | Gated en HuggingFace |
+| `ykeee/anycam-wan22-5b-dmd-df10000-sigma010-20261020` | 5B (base) + LoRA | 720P, 24 fps (heredado del base) | Video-to-video | no disponible | Gated en Hugging Face |
 | Wan2.2 5B TI2V (modelo base oficial) | 5B | 720P, 24 fps | Texto-a-vídeo e imagen-a-vídeo | no disponible en la información consultada | Público en GitHub y PyPI |
-| `ykeee/anycam-wan22-5b-tf-from10000-bs16-10k-20261012` | 5B (base) + LoRA | no disponible | Ajuste sobre Wan2.2 5B (tarea exacta no documentada) | no disponible | Gated en HuggingFace |
+| `ykeee/anycam-wan22-5b-tf-from10000-bs16-10k-20261012` | 5B (base) + LoRA | no disponible | Ajuste sobre Wan2.2 5B (tarea exacta no documentada) | no disponible | Gated en Hugging Face |
 | `ostris/wan22_5b_i2v_crush_it_lora` | 5B (base) + LoRA | no disponible | Imagen-a-vídeo | no disponible | Público en ModelScope |
 
 La comparación cuantitativa no es posible: ninguno de los repositorios consultados publica métricas comparables ni fichas técnicas detalladas.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que impide su descarga automatizada en pipelines de CI.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que impide su descarga automatizada en pipelines de CI.
 - Licencia no declarada: no se puede asumir uso comercial permitido; es imprescindible contactar con el autor antes de integrarlo en producción.
 - Documentación inexistente: no hay model card con instrucciones, hiperparámetros recomendados ni ejemplos de uso, lo que eleva el coste de integración.
 - Sin validación comunitaria: cero descargas y cero likes en el momento de la ficha, sin evidencia externa de calidad o estabilidad.
@@ -83,7 +83,7 @@ La comparación cuantitativa no es posible: ninguno de los repositorios consulta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ykeee/anycam-wan22-5b-dmd-df10000-sigma010-20261020
+- Repositorio Hugging Face: https://huggingface.co/ykeee/anycam-wan22-5b-dmd-df10000-sigma010-20261020
 - Repositorio hermano del mismo autor: https://huggingface.co/ykeee/anycam-wan22-5b-tf-from10000-bs16-10k-20261012
 - README del repositorio hermano: https://huggingface.co/ykeee/anycam-wan22-5b-tf-from10000-bs16-10k-20261012/blob/main/README.md
 - Repositorio oficial de Wan2.2: https://github.com/Wan-Video/Wan2.2

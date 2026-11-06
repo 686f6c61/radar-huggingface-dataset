@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`braydenbrown/efficientformer-demo` es un repositorio de demostración publicado en HuggingFace por el usuario braydenbrown que contiene una implementación propia de una arquitectura EfficientFormer orientada a aprendizaje contrastivo, junto con un checkpoint de inicialización, un fichero de configuración de arquitectura y una receta de entrenamiento por defecto. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y que no se reclama ninguna puntuación de benchmark. El repositorio tiene 0 descargas y 0 likes, fue creado el 13 de septiembre de 2026 y ocupa 0,0 GB.
+`braydenbrown/efficientformer-demo` es un repositorio de demostración publicado en Hugging Face por el usuario braydenbrown que contiene una implementación propia de una arquitectura EfficientFormer orientada a aprendizaje contrastivo, junto con un checkpoint de inicialización, un fichero de configuración de arquitectura y una receta de entrenamiento por defecto. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y que no se reclama ninguna puntuación de benchmark. El repositorio tiene 0 descargas y 0 likes, fue creado el 13 de septiembre de 2026 y ocupa 0,0 GB.
 
 El dato más relevante es su escala real: el recuento de parámetros de los pesos en safetensors es de 16.576 parámetros, una cifra extremadamente reducida que contrasta con la etiqueta "large" que aparece en la model card. Esto sugiere que la etiqueta "large" se refiere a una variante de configuración dentro del script y no a un modelo de gran tamaño real. Por tanto, el artefacto publicado debe interpretarse como un esqueleto de código reproducible más que como un modelo desplegable.
 
@@ -70,7 +70,7 @@ No hay datos verificados en la información proporcionada para establecer una co
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| efficientformer-demo (este) | 16.576 | no disponible | sin benchmark publicado | MIT | HuggingFace, 0 descargas |
+| efficientformer-demo (este) | 16.576 | no disponible | sin benchmark publicado | MIT | Hugging Face, 0 descargas |
 | Otras variantes EfficientFormer | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,5 +86,5 @@ No hay datos verificados en la información proporcionada para establecer una co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/braydenbrown/efficientformer-demo
+- Hugging Face: https://huggingface.co/braydenbrown/efficientformer-demo
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a un sitio de contenido deportivo (Dallas Cowboys) y no guardan relacion con este repositorio. No hay papers, blogs, repositorios adicionales ni demos verificables en la informacion proporcionada.

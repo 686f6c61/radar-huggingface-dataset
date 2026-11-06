@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario RHATH y publicado en HuggingFace bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo previo que ha mejorado significativamente su capacidad de razonamiento y deducción mediante un mayor uso de recursos computacionales y optimizaciones algorítmicas en el post-entrenamiento. El modelo está diseñado para tareas de razonamiento matemático, lógico, generación de código, comprensión lectora y otras capacidades lingüísticas, con un énfasis especial en la reducción de alucinaciones y el soporte de function calling.
+MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario RHATH y publicado en Hugging Face bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo previo que ha mejorado significativamente su capacidad de razonamiento y deducción mediante un mayor uso de recursos computacionales y optimizaciones algorítmicas en el post-entrenamiento. El modelo está diseñado para tareas de razonamiento matemático, lógico, generación de código, comprensión lectora y otras capacidades lingüísticas, con un énfasis especial en la reducción de alucinaciones y el soporte de function calling.
 
-Aunque el pipeline declarado en HuggingFace es `feature-extraction`, la model card describe un modelo generativo de texto con capacidades de conversación y razonamiento. No se especifican detalles de arquitectura, número de parámetros ni longitud de contexto en la información disponible. El modelo se ofrece junto a una variante denominada MyAwesomeModel-Small, que comparte arquitectura con el modelo base pero utiliza un tokenizer diferente.
+Aunque el pipeline declarado en Hugging Face es `feature-extraction`, la model card describe un modelo generativo de texto con capacidades de conversación y razonamiento. No se especifican detalles de arquitectura, número de parámetros ni longitud de contexto en la información disponible. El modelo se ofrece junto a una variante denominada MyAwesomeModel-Small, que comparte arquitectura con el modelo base pero utiliza un tokenizer diferente.
 
 La relevancia actual del modelo radica en su mejora reportada en tareas de razonamiento complejo, como lo demuestra el aumento en precisión en el test AIME 2025 (del 70% al 87,5%), aunque estos datos provienen únicamente de la model card del autor y no han sido verificados de forma independiente.
 
@@ -79,7 +79,7 @@ Además, se reporta una precisión del 87,5% en el test AIME 2025 (frente al 70%
 
 ## Requisitos de hardware
 
-No se dispone de información sobre requisitos de hardware en la model card ni en el repositorio. No se especifican VRAM, GPUs recomendadas, opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, etc.) ni métricas de latencia o throughput. El repositorio de HuggingFace no contiene archivos de pesos (tamaño 0.0 GB), por lo que no es posible ejecutar el modelo localmente a partir de esta publicación.
+No se dispone de información sobre requisitos de hardware en la model card ni en el repositorio. No se especifican VRAM, GPUs recomendadas, opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, etc.) ni métricas de latencia o throughput. El repositorio de Hugging Face no contiene archivos de pesos (tamaño 0.0 GB), por lo que no es posible ejecutar el modelo localmente a partir de esta publicación.
 
 ## Comparativa con modelos similares
 
@@ -88,7 +88,7 @@ No se proporcionan nombres concretos de modelos comparables en la información d
 ## Limitaciones y advertencias
 
 - La model card no especifica la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados, lo que dificulta su evaluación y despliegue en producción.
-- No se han publicado los pesos del modelo en el repositorio de HuggingFace (tamaño 0.0 GB), por lo que no es posible probarlo directamente desde esta página.
+- No se han publicado los pesos del modelo en el repositorio de Hugging Face (tamaño 0.0 GB), por lo que no es posible probarlo directamente desde esta página.
 - Los resultados de benchmarks provienen del autor y carecen de verificación independiente; los nombres de los benchmarks no se detallan.
 - Se desconoce el comportamiento del modelo en cuanto a sesgos, alucinaciones en contextos específicos o limitaciones idiomáticas, más allá de la afirmación genérica de reducción de alucinaciones.
 - La licencia MIT permite uso comercial y modificación, pero al no estar disponibles los pesos, el modelo no es utilizable en la práctica.
@@ -96,5 +96,5 @@ No se proporcionan nombres concretos de modelos comparables en la información d
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/RHATH/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/RHATH/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (papers, blogs, repos de código, demos) en la información disponible.

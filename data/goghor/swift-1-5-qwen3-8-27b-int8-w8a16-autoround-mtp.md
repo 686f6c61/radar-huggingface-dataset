@@ -92,7 +92,7 @@ No se dispone de datos de contexto, benchmarks ni idiomas para ninguno de los mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Goghor/Swift-1.5-Qwen3.8-27B-INT8-W8A16-AutoRound-MTP
+- Repositorio Hugging Face: https://huggingface.co/Goghor/Swift-1.5-Qwen3.8-27B-INT8-W8A16-AutoRound-MTP
 - Repositorio relacionado (sin AutoRound): https://huggingface.co/Goghor/Swift-1.5-Qwen3.8-27B-INT8-W8A16-MTP
 - Ficheros del repositorio: https://huggingface.co/Goghor/Swift-1.5-Qwen3.8-27B-INT8-W8A16-MTP/tree/main
 - Pagina del modelo Swift 1.5 en UkisAI: https://ukisai.com/swift-1-5-27b

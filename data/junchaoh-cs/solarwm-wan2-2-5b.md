@@ -4,7 +4,7 @@
 
 SolarWM-Wan2.2-5B es un modelo de mundo (world model) orientado a generación de vídeo, desarrollado por el autor junchaoh-cs. Según las etiquetas publicadas, está diseñado para vídeo de horizonte largo, control de cámara y generación de vídeo, y se basa en la arquitectura Wan2.2. El repositorio ocupa 194,3 GB y el acceso está restringido (gated), lo que sugiere que se trata de un modelo de investigación con condiciones de uso específicas. Se ha publicado un artículo en arXiv (2609.02886), aunque no se dispone de su contenido en la información proporcionada. La relevancia actual radica en la creciente demanda de modelos de mundo para simulación y generación de vídeo coherente a lo largo del tiempo, con control explícito de la cámara.
 
-No se dispone de información detallada sobre arquitectura, parámetros, entrenamiento o rendimiento. El nombre sugiere 5 mil millones de parámetros, pero este dato no está confirmado en la ficha de HuggingFace. El repositorio incluye pesos en formato safetensors y se integra con la librería PyTorch y Diffusers. Al no haber licencia declarada ni documentación adicional, cualquier uso en producción requiere contactar al autor o aceptar las condiciones de acceso en HuggingFace.
+No se dispone de información detallada sobre arquitectura, parámetros, entrenamiento o rendimiento. El nombre sugiere 5 mil millones de parámetros, pero este dato no está confirmado en la ficha de Hugging Face. El repositorio incluye pesos en formato safetensors y se integra con la librería PyTorch y Diffusers. Al no haber licencia declarada ni documentación adicional, cualquier uso en producción requiere contactar al autor o aceptar las condiciones de acceso en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -16,12 +16,12 @@ No se dispone de información detallada sobre arquitectura, parámetros, entrena
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (acceso restringido en HuggingFace) |
+| Licencia | no disponible (acceso restringido en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información técnica en la ficha de HuggingFace. Las etiquetas indican que se trata de un modelo de mundo (world-model) para generación de vídeo, con capacidades de control de cámara y vídeo de horizonte largo, y que se basa en Wan2.2. Sin embargo, no se detallan la arquitectura interna (si es transformer, MoE, etc.), los datos de entrenamiento, el número de tokens procesados ni las técnicas de alineación empleadas. El artículo asociado (arXiv:2609.02886) podría contener estos detalles, pero no está accesible desde la información proporcionada.
+No se ha publicado información técnica en la ficha de Hugging Face. Las etiquetas indican que se trata de un modelo de mundo (world-model) para generación de vídeo, con capacidades de control de cámara y vídeo de horizonte largo, y que se basa en Wan2.2. Sin embargo, no se detallan la arquitectura interna (si es transformer, MoE, etc.), los datos de entrenamiento, el número de tokens procesados ni las técnicas de alineación empleadas. El artículo asociado (arXiv:2609.02886) podría contener estos detalles, pero no está accesible desde la información proporcionada.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ No disponible. No se han proporcionado datos de comparación con otros modelos d
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio requiere aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+- Acceso restringido: el repositorio requiere aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 - Licencia no declarada: no se especifican términos de uso, lo que impide su uso comercial o en producción sin consultar al autor.
 - Sin documentación: no hay información sobre sesgos, alucinaciones, limitaciones de contexto o idioma.
 - Tamaño del modelo: 194,3 GB de pesos requieren infraestructura de alto rendimiento.
@@ -66,5 +66,5 @@ No disponible. No se han proporcionado datos de comparación con otros modelos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/junchaoh-cs/SolarWM-Wan2.2-5B
+- Repositorio Hugging Face: https://huggingface.co/junchaoh-cs/SolarWM-Wan2.2-5B
 - Artículo arXiv: 2609.02886 (sin acceso disponible en la información proporcionada)

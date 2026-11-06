@@ -71,6 +71,6 @@ No se dispone de datos comparativos con otros agregadores a nivel de diapositiva
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/luoxd96/ELF
+- Hugging Face: https://huggingface.co/luoxd96/ELF
 - Paper (arXiv): https://arxiv.org/abs/2508.16085
 - Código (GitHub): https://github.com/lilab-stanford/ELF

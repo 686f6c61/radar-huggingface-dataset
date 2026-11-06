@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Parámetros | Entradas | Licencia | Disponibilidad | Evaluación publicada |
 |---|---|---|---|---|---|
-| mohario/pi05-ur5e-finetuned | 4.143.404.816 | 3 imágenes 224x224 + estado (7,) | Apache 2.0 | HuggingFace, 0 descargas | No |
-| lerobot/pi05_base | No disponible | No disponible | No disponible en la información proporcionada | HuggingFace | No disponible |
-| Otras políticas del ecosistema LeRobot (ACT, Diffusion Policy, SmolVLA, entre otras) | No disponible | No disponible | No disponible en la información proporcionada | HuggingFace / LeRobot | No disponible |
+| mohario/pi05-ur5e-finetuned | 4.143.404.816 | 3 imágenes 224x224 + estado (7,) | Apache 2.0 | Hugging Face, 0 descargas | No |
+| lerobot/pi05_base | No disponible | No disponible | No disponible en la información proporcionada | Hugging Face | No disponible |
+| Otras políticas del ecosistema LeRobot (ACT, Diffusion Policy, SmolVLA, entre otras) | No disponible | No disponible | No disponible en la información proporcionada | Hugging Face / LeRobot | No disponible |
 
 No se dispone de datos verificables de parámetros, contexto, rendimiento ni licencia de las alternativas en la documentación proporcionada, por lo que la comparación cuantitativa no es posible. La diferencia comprobable es que este repositorio es un ajuste fino específico para UR5e con tres cámaras y cuatro tareas, mientras que el resto de políticas citadas no están caracterizadas en la información disponible.
 
@@ -100,7 +100,7 @@ No se dispone de datos verificables de parámetros, contexto, rendimiento ni lic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohario/pi05-ur5e-finetuned
+- Modelo en Hugging Face: https://huggingface.co/mohario/pi05-ur5e-finetuned
 - Dataset de entrenamiento: https://huggingface.co/datasets/mohario/3-cam-pick-and-place
 - Visualización del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=mohario/3-cam-pick-and-place
 - Modelo base: https://huggingface.co/lerobot/pi05_base

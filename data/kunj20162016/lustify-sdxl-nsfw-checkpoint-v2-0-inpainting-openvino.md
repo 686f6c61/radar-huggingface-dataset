@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / resolucion | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LUSTIFY-SDXL-NSFW v2.0 INPAINTING (OpenVINO, este repo) | no disponible (SDXL) | no disponible | Inpainting NSFW | creativeml-openrail-m | HuggingFace, formato OpenVINO |
-| andro-flock/LUSTIFY-SDXL-NSFW-checkpoint-v2-0-INPAINTING | no disponible (SDXL) | no disponible | Inpainting NSFW | creativeml-openrail-m | HuggingFace, formato diffusers/Safetensors |
-| Stable Diffusion XL base (Stability AI) | no disponible (SDXL) | 1024x1024 habitual | Text-to-image / inpainting (variante) | CreativeML Open RAIL++-M | HuggingFace, diffusers |
-| Otras exportaciones OpenVINO de SDXL | no disponible | no disponible | Text-to-image | depende del checkpoint | HuggingFace |
+| LUSTIFY-SDXL-NSFW v2.0 INPAINTING (OpenVINO, este repo) | no disponible (SDXL) | no disponible | Inpainting NSFW | creativeml-openrail-m | Hugging Face, formato OpenVINO |
+| andro-flock/LUSTIFY-SDXL-NSFW-checkpoint-v2-0-INPAINTING | no disponible (SDXL) | no disponible | Inpainting NSFW | creativeml-openrail-m | Hugging Face, formato diffusers/Safetensors |
+| Stable Diffusion XL base (Stability AI) | no disponible (SDXL) | 1024x1024 habitual | Text-to-image / inpainting (variante) | CreativeML Open RAIL++-M | Hugging Face, diffusers |
+| Otras exportaciones OpenVINO de SDXL | no disponible | no disponible | Text-to-image | depende del checkpoint | Hugging Face |
 
 La comparación se limita a la categoría (SDXL y variantes de inpainting) porque no se han publicado métricas de rendimiento que permitan una comparación cuantitativa. La diferencia clave frente al checkpoint original es el formato de ejecución (OpenVINO frente a PyTorch), no la calidad del modelo.
 
@@ -87,7 +87,7 @@ La comparación se limita a la categoría (SDXL y variantes de inpainting) porqu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kunj20162016/LUSTIFY-SDXL-NSFW-checkpoint-v2-0-INPAINTING-openvino
+- Repositorio Hugging Face: https://huggingface.co/kunj20162016/LUSTIFY-SDXL-NSFW-checkpoint-v2-0-INPAINTING-openvino
 - Modelo base: https://huggingface.co/andro-flock/LUSTIFY-SDXL-NSFW-checkpoint-v2-0-INPAINTING
 - optimum-intel (GitHub): https://github.com/huggingface/optimum-intel
 - Espacio de exportación OpenVINO: https://huggingface.co/spaces/echarlaix/openvino-export

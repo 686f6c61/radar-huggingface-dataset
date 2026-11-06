@@ -78,7 +78,7 @@ No se dispone de informacion suficiente sobre otros modelos comparables en la mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/appleeatspi/pantrymax-smolvlm-500m-onnx
+- Repositorio Hugging Face: https://huggingface.co/appleeatspi/pantrymax-smolvlm-500m-onnx
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct
 - Repositorio de SmolLM y SmolVLM: https://github.com/huggingface/smollm
 - Documentacion de SmolVLM-500M-Instruct: https://docs.m5stack.switch-science.com/en/stackflow/models/smoivlm-500m-instruct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Base es un modelo de lenguaje causal de tipo denso (no MoE) perteneciente a la tercera generación de la familia Qwen, desarrollada por el equipo Qwen de Alibaba. Esta ficha concreta corresponde a una réplica alojada por el usuario ArchiveStudio en HuggingFace bajo el identificador `ArchiveStudio/Qwen3-4B-Base`; el modelo original es publicado por el equipo Qwen. Se trata de la variante *base*, es decir, únicamente preentrenada y sin ajuste por instrucciones ni alineamiento por preferencias, lo que la hace adecuada como punto de partida para *fine-tuning* y no para uso directo en conversación.
+Qwen3-4B-Base es un modelo de lenguaje causal de tipo denso (no MoE) perteneciente a la tercera generación de la familia Qwen, desarrollada por el equipo Qwen de Alibaba. Esta ficha concreta corresponde a una réplica alojada por el usuario ArchiveStudio en Hugging Face bajo el identificador `ArchiveStudio/Qwen3-4B-Base`; el modelo original es publicado por el equipo Qwen. Se trata de la variante *base*, es decir, únicamente preentrenada y sin ajuste por instrucciones ni alineamiento por preferencias, lo que la hace adecuada como punto de partida para *fine-tuning* y no para uso directo en conversación.
 
 El modelo cuenta con 4.022.468.096 parámetros totales (3.6B no pertenecientes a *embeddings*), 36 capas y una ventana de contexto de 32.768 tokens. Emplea atención con *Grouped Query Attention* (32 cabezas de consulta y 8 de clave-valor) y añade *qk layernorm* para mejorar la estabilidad del entrenamiento. El preentrenamiento se realizó sobre 36 billones de tokens en 119 idiomas, con un currículo de tres etapas que prioriza conocimiento general, después razonamiento (STEM, código, lógica) y finalmente comprensión de contexto largo.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Etapa | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-Base (esta ficha) | 4.0B | 32.768 | Apache 2.0 | Base | HuggingFace |
-| Qwen2.5-3B | 3.1B | 32.768 | Apache 2.0 | Base | HuggingFace |
-| Llama 3.2-3B | 3.2B | 128.000 | Llama 3.2 Community | Base/Instruct | HuggingFace |
-| Gemma 2-2B | 2.6B | 8.192 | Gemma Terms | Base/Instruct | HuggingFace |
+| Qwen3-4B-Base (esta ficha) | 4.0B | 32.768 | Apache 2.0 | Base | Hugging Face |
+| Qwen2.5-3B | 3.1B | 32.768 | Apache 2.0 | Base | Hugging Face |
+| Llama 3.2-3B | 3.2B | 128.000 | Llama 3.2 Community | Base/Instruct | Hugging Face |
+| Gemma 2-2B | 2.6B | 8.192 | Gemma Terms | Base/Instruct | Hugging Face |
 
 La comparación con Qwen2.5-3B es la más directa por linaje: Qwen3 amplía el corpus a 36 billones de tokens y 119 idiomas frente a Qwen2.5, y añade *qk layernorm*. Frente a Llama 3.2-3B, este último ofrece contexto de 128k pero con licencia comunitaria restringida; Qwen3-4B-Base mantiene Apache 2.0. Gemma 2-2B es más pequeño y con contexto de 8k. Los datos de rendimiento comparativo no están disponibles en la información proporcionada.
 
@@ -91,7 +91,7 @@ La comparación con Qwen2.5-3B es la más directa por linaje: Qwen3 amplía el c
 
 ## Enlaces
 
-- HuggingFace (esta réplica): https://huggingface.co/ArchiveStudio/Qwen3-4B-Base
+- Hugging Face (esta réplica): https://huggingface.co/ArchiveStudio/Qwen3-4B-Base
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Documentación de Qwen: https://qwen.readthedocs.io/en/latest/

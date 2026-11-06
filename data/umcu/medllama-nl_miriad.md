@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UMCU/medllama.nl_miriad es un repositorio de modelo publicado en HuggingFace por la organizacion UMCU. En el momento de redactar esta ficha el repositorio no contiene documentacion tecnica: el unico contenido del README es la declaracion de licencia GPL-3.0. No se especifican arquitectura, numero de parametros, longitud de contexto, idiomas soportados, composicion del dataset de entrenamiento ni resultados de evaluacion.
+UMCU/medllama.nl_miriad es un repositorio de modelo publicado en Hugging Face por la organizacion UMCU. En el momento de redactar esta ficha el repositorio no contiene documentacion tecnica: el unico contenido del README es la declaracion de licencia GPL-3.0. No se especifican arquitectura, numero de parametros, longitud de contexto, idiomas soportados, composicion del dataset de entrenamiento ni resultados de evaluacion.
 
 A partir del identificador cabria hipotetizar que se trata de un ajuste de la familia Llama orientado a dominio medico (prefijo "medllama") y a neerlandes (sufijo "nl"), y "miriad" podria corresponder a un conjunto de datos de imagen por resonancia magnetica. Esta lectura es una inferencia basada en la nomenclatura, no un dato confirmado por el autor, y no debe utilizarse como especificacion.
 
@@ -31,7 +31,7 @@ El unico indicio disponible es el propio identificador del repositorio. Si se co
 
 No hay informacion publicada sobre las capacidades del modelo. Los unicos hechos verificables son los siguientes:
 
-- El repositorio existe en HuggingFace bajo la organizacion UMCU y esta etiquetado con la region "us".
+- El repositorio existe en Hugging Face bajo la organizacion UMCU y esta etiquetado con la region "us".
 - La licencia declarada es GPL-3.0, una licencia copyleft fuerte.
 - No hay declarados idiomas, tareas ni pipeline de inferencia.
 - Generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, uso como agente, capacidades multilingues o modos de razonamiento explicito: no disponible en ningun caso.
@@ -84,7 +84,7 @@ No disponible. La ausencia de parametros, contexto, idiomas y licencia comparabl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/UMCU/medllama.nl_miriad
+- Repositorio en Hugging Face: https://huggingface.co/UMCU/medllama.nl_miriad
 - Model card: sin contenido tecnico, unicamente la declaracion de licencia GPL-3.0.
 - Paper, blog, repositorio de codigo, demo o dataset asociado: no disponible.
 - Nota sobre la busqueda web: las consultas realizadas no devolvieron ningun resultado relacionado con el modelo; los unicos enlaces recuperados correspondian a paginas de streaming de television en frances y no guardan relacion con este repositorio, por lo que se omiten.

@@ -4,7 +4,7 @@
 
 FLUX 3 Image Klein Comfy Q8_0 GGUF es una cuantización de 8 bits (formato GGUF, bloque Q8_0) del transformer de difusión destilado que forma parte del paquete oficial ComfyUI de FLUX 3 Image Klein, publicado por Black Forest Labs (BFL). El artefacto lo distribuye el usuario Chungulus como derivado comunitario independiente, no oficial ni respaldado por BFL. El transformer cuantizado contiene 5.548.681.984 parámetros y el repositorio ocupa 6,0 GB; el resto de componentes del paquete original (checkpoint base sin destilar, codificador de texto, upsampler de prompts y VAE) no se cuantizan en este repositorio y deben obtenerse del paquete fuente.
 
-El modelo resuelve dos tareas: generación de imagen a partir de texto (text-to-image) y edición de imagen guiada por referencia (image-to-image), esta última declarada como pipeline principal en la ficha de HuggingFace. Su relevancia práctica está en que permite ejecutar el transformer de FLUX 3 en ComfyUI con un peso notablemente menor que el BF16 original, manteniendo el codificador de texto Qwen3-VL 4B y el VAE de FLUX 2 en su precisión original, lo que reduce los requisitos de VRAM sin recalificar los componentes sensibles a la calidad.
+El modelo resuelve dos tareas: generación de imagen a partir de texto (text-to-image) y edición de imagen guiada por referencia (image-to-image), esta última declarada como pipeline principal en la ficha de Hugging Face. Su relevancia práctica está en que permite ejecutar el transformer de FLUX 3 en ComfyUI con un peso notablemente menor que el BF16 original, manteniendo el codificador de texto Qwen3-VL 4B y el VAE de FLUX 2 en su precisión original, lo que reduce los requisitos de VRAM sin recalificar los componentes sensibles a la calidad.
 
 La información disponible no incluye datos de arquitectura interna, número de tokens de entrenamiento, composición del dataset ni resultados de benchmarks; la model card se limita a describir el proceso de cuantización, la integración con ComfyUI y una validación funcional mínima. La licencia aplicable es la FLUX Kommunity License, que impone condiciones de uso y distribución y no concede un uso comercial irrestricto.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros (transformer) | Formato | Contexto / condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FLUX 3 Image Klein Comfy Q8_0 GGUF (este artefacto) | 5.548.681.984 | GGUF Q8_0 | Codificador Qwen3-VL 4B BF16 + VAE FLUX 2 | FLUX Kommunity License | HuggingFace, derivado comunitario |
-| black-forest-labs/flux-3-image-klein-comfy (base) | 5.548.681.984 (BF16) | safetensors BF16 | Codificador Qwen3-VL 4B BF16 + VAE FLUX 2 | FLUX Kommunity License | HuggingFace, oficial de BFL |
+| FLUX 3 Image Klein Comfy Q8_0 GGUF (este artefacto) | 5.548.681.984 | GGUF Q8_0 | Codificador Qwen3-VL 4B BF16 + VAE FLUX 2 | FLUX Kommunity License | Hugging Face, derivado comunitario |
+| black-forest-labs/flux-3-image-klein-comfy (base) | 5.548.681.984 (BF16) | safetensors BF16 | Codificador Qwen3-VL 4B BF16 + VAE FLUX 2 | FLUX Kommunity License | Hugging Face, oficial de BFL |
 
 No se dispone en la información proporcionada de datos sobre otros modelos comparables de la misma categoría (mismo tamaño o misma tarea) ni de sus parámetros, contexto, rendimiento o licencia, por lo que la comparativa se limita al modelo base del que deriva este artefacto.
 
@@ -81,7 +81,7 @@ No se dispone en la información proporcionada de datos sobre otros modelos comp
 
 ## Enlaces
 
-- HuggingFace (este artefacto): https://huggingface.co/Chungulus/flux-3-image-klein-comfy-Q8_0-GGUF
+- Hugging Face (este artefacto): https://huggingface.co/Chungulus/flux-3-image-klein-comfy-Q8_0-GGUF
 - Modelo base (BFL, paquete ComfyUI): https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy
 - Revisión concreta del paquete fuente citada en la model card: https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy/tree/9d36114cf7a2e03a45c28f5cc4987d20ebfdb6c1
 - Extensión ComfyUI-GGUF: https://github.com/city96/ComfyUI-GGUF

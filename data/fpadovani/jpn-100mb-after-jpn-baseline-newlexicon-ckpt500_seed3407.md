@@ -65,7 +65,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fpadovani/jpn-100mb-after-jpn-baseline-newlexicon-ckpt500_seed3407
+- Hugging Face: https://huggingface.co/fpadovani/jpn-100mb-after-jpn-baseline-newlexicon-ckpt500_seed3407
 - Modelo base: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-jpn-baseline-100mb_seed3407
 - Registro de entrenamiento (Weights & Biases): https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/1znhtxnf
 - Repositorio de TRL (libreria de entrenamiento): https://github.com/huggingface/trl

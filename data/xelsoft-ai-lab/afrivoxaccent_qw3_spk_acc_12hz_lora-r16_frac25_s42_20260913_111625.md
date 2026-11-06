@@ -71,8 +71,8 @@ No se dispone de datos de rendimiento de este adaptador ni de alternativas compa
 
 | Modelo | Tipo | Parametros base | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AfriVoxAccent_QW3_spk_acc_12hz_lora-r16_frac25_s42 (este modelo) | Adaptador LoRA sobre Qwen3-TTS | 0,6B (base) | No disponible | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-TTS-12Hz-0.6B-Base | Modelo TTS base | 0,6B | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| AfriVoxAccent_QW3_spk_acc_12hz_lora-r16_frac25_s42 (este modelo) | Adaptador LoRA sobre Qwen3-TTS | 0,6B (base) | No disponible | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-TTS-12Hz-0.6B-Base | Modelo TTS base | 0,6B | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Otros adaptadores de acento de la familia AfriVoxAccent | Adaptador LoRA | 0,6B (base) | No disponible | No disponible | No verificado |
 
 No se identifican en la informacion disponible otros modelos TTS especificos para wolof con los que establecer una comparacion cuantitativa.
@@ -92,6 +92,6 @@ No se identifican en la informacion disponible otros modelos TTS especificos par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_12hz_lora-r16_frac25_s42_20260913_111625
+- Hugging Face: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_12hz_lora-r16_frac25_s42_20260913_111625
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

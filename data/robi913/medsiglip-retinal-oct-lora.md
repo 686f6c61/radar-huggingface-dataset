@@ -16,7 +16,7 @@ El modelo se distribuye como adaptadores PEFT sobre el modelo base, con un tama�
 | Parametros totales | No disponible (el modelo base google/medsiglip-448 no detalla cifra exacta en la información proporcionada; el codificador visual corresponde a SoViT-400m/14) |
 | Longitud de contexto | 64 tokens por sub-prompt (prompt_a y prompt_b); el informe clínico completo se reparte entre ambos, sin límite único documentado para el texto agregado |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Inglés (según la model card); los metadatos de HuggingFace no especifican idiomas |
+| Idiomas soportados | Inglés (según la model card); los metadatos de Hugging Face no especifican idiomas |
 | Licencia | Health AI Developer Foundations (heredada del modelo base); términos en https://developers.google.com/health-ai-developer-foundations/terms |
 | Formato de pesos | No disponible con confirmación. La model card referencia un checkpoint PyTorch (`final_with_probe.pth`), mientras que el repositorio está etiquetado como `peft`. No se documenta safetensors |
 | Tamano del repositorio | 7,2 GB |
@@ -75,8 +75,8 @@ La model card no incluye tablas con métricas como AUC, F1, precisión, recall, 
 
 | Modelo | Parametros | Contexto de texto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| medsiglip-retinal-oct-lora | No disponible (base SoViT-400m/14 + LoRA) | 64 tokens por sub-prompt, dos sub-prompts fusionados | Clasificación y recuperación cross-modal en OCT retiniano | Health AI Developer Foundations (heredada) | HuggingFace, 0 descargas, requiere código personalizado |
-| google/medsiglip-448 (modelo base) | No disponible en la información proporcionada (codificador visual SoViT-400m/14) | 64 tokens | Visión-lenguaje médica general | Health AI Developer Foundations | HuggingFace |
+| medsiglip-retinal-oct-lora | No disponible (base SoViT-400m/14 + LoRA) | 64 tokens por sub-prompt, dos sub-prompts fusionados | Clasificación y recuperación cross-modal en OCT retiniano | Health AI Developer Foundations (heredada) | Hugging Face, 0 descargas, requiere código personalizado |
+| google/medsiglip-448 (modelo base) | No disponible en la información proporcionada (codificador visual SoViT-400m/14) | 64 tokens | Visión-lenguaje médica general | Health AI Developer Foundations | Hugging Face |
 | Otros VLM o CLIP médicos (BiomedCLIP, MedGemma, etc.) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones, por lo que la comparación se limita a aspectos estructurales y de licencia.
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robi913/medsiglip-retinal-oct-lora
+- Modelo en Hugging Face: https://huggingface.co/robi913/medsiglip-retinal-oct-lora
 - Modelo base: https://huggingface.co/google/medsiglip-448
 - Términos de licencia Health AI Developer Foundations: https://developers.google.com/health-ai-developer-foundations/terms
 - Artículo: "Text Embedding Cross Fusion for Overcoming Token Limits in Vision Language Models" (aceptado en CSSC UTCN 2026) - sin URL disponible en la información proporcionada

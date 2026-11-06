@@ -72,9 +72,9 @@ No se dispone de datos de benchmarks académicos para comparar directamente con 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-Whittle-16B | 16.3B | No disponible | Apache 2.0 | HuggingFace (safetensors, GGUF) | Podado y curado, corre en 2x8GB |
-| Qwen3.8-27B-FP8 (base) | 26.9B | No disponible | Apache 2.0 | HuggingFace | Modelo original, requiere más VRAM |
-| Qwen3.8-27B (no cuantizado) | 26.9B | No disponible | Apache 2.0 | HuggingFace | Versión sin cuantizar, aún más pesado |
+| Qwen3.8-Whittle-16B | 16.3B | No disponible | Apache 2.0 | Hugging Face (safetensors, GGUF) | Podado y curado, corre en 2x8GB |
+| Qwen3.8-27B-FP8 (base) | 26.9B | No disponible | Apache 2.0 | Hugging Face | Modelo original, requiere más VRAM |
+| Qwen3.8-27B (no cuantizado) | 26.9B | No disponible | Apache 2.0 | Hugging Face | Versión sin cuantizar, aún más pesado |
 
 No se dispone de información sobre alternativas de terceros del mismo tamaño (por ejemplo, Llama 3.2 8B, Mistral 7B, Gemma 2 9B) con datos comparables de rendimiento en las mismas tareas, por lo que no se puede establecer una comparativa rigurosa.
 
@@ -91,7 +91,7 @@ No se dispone de información sobre alternativas de terceros del mismo tamaño (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/logic65/Qwen3.8-Whittle-16B
+- Modelo en Hugging Face: https://huggingface.co/logic65/Qwen3.8-Whittle-16B
 - Repositorio de investigación (variante sin curar y metodología): https://huggingface.co/logic65/Qwen3.8-p44w75-16.8B-unrepaired
 - Adapter QLoRA de curación: https://huggingface.co/mrdayl/q38p44w75-heal-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B-FP8

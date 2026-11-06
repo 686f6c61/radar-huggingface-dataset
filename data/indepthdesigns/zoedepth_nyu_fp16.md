@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`InDepthDesigns/zoedepth_nyu_fp16` es un repositorio de HuggingFace que, por su denominación, contiene una exportación a ONNX en precisión fp16 de un modelo ZoeDepth configurado para el conjunto de datos NYU (estimación de profundidad monoculares en interiores). El autor es el usuario `InDepthDesigns`, que no aporta model card descriptiva: el README se limita a declarar la licencia MIT, sin documentación técnica, sin pipeline declarado y sin idiomas especificados.
+`InDepthDesigns/zoedepth_nyu_fp16` es un repositorio de Hugging Face que, por su denominación, contiene una exportación a ONNX en precisión fp16 de un modelo ZoeDepth configurado para el conjunto de datos NYU (estimación de profundidad monoculares en interiores). El autor es el usuario `InDepthDesigns`, que no aporta model card descriptiva: el README se limita a declarar la licencia MIT, sin documentación técnica, sin pipeline declarado y sin idiomas especificados.
 
 El interés práctico del repositorio radica en su formato: al tratarse de un artefacto ONNX, está pensado para inferencia portable fuera del ecosistema PyTorch, lo que facilita su integración en aplicaciones nativas (C++, C#, Java), en navegador mediante ONNX Runtime Web o en dispositivos de borde. La cuantización fp16 reduce el peso del repositorio a 0,7 GB, un tamaño compatible con GPUs de gama media y con despliegues en memoria compartida.
 
@@ -21,7 +21,7 @@ Es importante señalar que el repositorio tiene 0 descargas y 0 likes en el mome
 | Licencia | MIT |
 | Formato de pesos | ONNX (segun el tag `onnx` del repositorio); no se declara la presencia de safetensors, GGUF ni checkpoints de PyTorch |
 | Tamano del repositorio | 0,7 GB |
-| Pipeline declarado | no disponible (campo vacio en la ficha de HuggingFace) |
+| Pipeline declarado | no disponible (campo vacio en la ficha de Hugging Face) |
 | Region | us |
 
 ## Arquitectura y entrenamiento
@@ -68,7 +68,7 @@ No se dispone de datos verificables de este artefacto (ni parametros confirmados
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| InDepthDesigns/zoedepth_nyu_fp16 | no disponible (estimacion indirecta: ~350 M por tamano fp16) | no disponible | no disponible | MIT | HuggingFace, export ONNX fp16 |
+| InDepthDesigns/zoedepth_nyu_fp16 | no disponible (estimacion indirecta: ~350 M por tamano fp16) | no disponible | no disponible | MIT | Hugging Face, export ONNX fp16 |
 | Alternativas de estimacion de profundidad monocular (Depth Anything, MiDaS, Metric3D, entre otras) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,6 +84,6 @@ No se dispone de datos verificables de este artefacto (ni parametros confirmados
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/InDepthDesigns/zoedepth_nyu_fp16
+- Hugging Face: https://huggingface.co/InDepthDesigns/zoedepth_nyu_fp16
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo. Los resultados devueltos corresponden a hilos de foro sobre Amazon y ofertas de DVD (60millions-mag.com y dvd-forum.at) y no guardan relacion con el repositorio.
 - Paper, blog, repositorio de codigo o demo oficial: no disponibles en la informacion proporcionada.

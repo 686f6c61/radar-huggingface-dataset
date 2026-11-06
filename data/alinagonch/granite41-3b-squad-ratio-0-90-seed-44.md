@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AlinaGonch/granite41-3b-squad-ratio-0.90-seed-44` es un checkpoint subido al Hub de HuggingFace por la usuaria AlinaGonch. El nombre sugiere que se trata de un ajuste fino (fine-tuning) del modelo base Granite 4.1 de IBM (versión 3B) sobre el dataset SQuAD, con una proporción de datos de entrenamiento de 0.90 y una semilla aleatoria de 44. Sin embargo, la model card asociada está vacía y no proporciona ninguna información verificable sobre el modelo, su arquitectura, el proceso de entrenamiento o sus capacidades. El repositorio contiene únicamente 0.1 GB de datos, lo que es consistente con un modelo de tamaño pequeño (3B de parámetros) en formato `safetensors`, pero no hay confirmación oficial.
+El modelo `AlinaGonch/granite41-3b-squad-ratio-0.90-seed-44` es un checkpoint subido al Hub de Hugging Face por la usuaria AlinaGonch. El nombre sugiere que se trata de un ajuste fino (fine-tuning) del modelo base Granite 4.1 de IBM (versión 3B) sobre el dataset SQuAD, con una proporción de datos de entrenamiento de 0.90 y una semilla aleatoria de 44. Sin embargo, la model card asociada está vacía y no proporciona ninguna información verificable sobre el modelo, su arquitectura, el proceso de entrenamiento o sus capacidades. El repositorio contiene únicamente 0.1 GB de datos, lo que es consistente con un modelo de tamaño pequeño (3B de parámetros) en formato `safetensors`, pero no hay confirmación oficial.
 
 La relevancia de este modelo es limitada en el estado actual: al carecer de documentación, benchmarks o licencia, no es recomendable para uso en producción sin una evaluación independiente exhaustiva. Su interés principal radica en la posibilidad de que sea un experimento de fine-tuning sobre SQuAD, pero la falta de transparencia impide validar su calidad o idoneidad para tareas concretas.
 
@@ -59,7 +59,7 @@ Dado que no hay informacion sobre el modelo, no es posible realizar una comparat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.90-seed-44
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.90-seed-44
 - Modelo similar de la misma autora (ratio 0.30): https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.30-r64
 - Documentacion de Granite 4.1 de IBM: https://www.ibm.com/granite/docs/models/granite4-1
 - Ficha de Granite 4.1 3B en FitMyLLM: https://www.fitmyllm.com/model/granite-4.1-3b

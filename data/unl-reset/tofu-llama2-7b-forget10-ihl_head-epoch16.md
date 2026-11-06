@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch16 | 6.738 M | no disponible | llama2 | HuggingFace | Checkpoint de *unlearning* (época 16/20) |
-| locuslab/tofu_ft_llama2-7b | ~6.738 M | 4096 | llama2 | HuggingFace | Modelo base ajustado con TOFU, sin olvido |
-| NousResearch/Llama-2-7b-chat-hf | ~6.738 M | 4096 | llama2 | HuggingFace | Llama 2 7B chat, referencia general |
-| meta-llama/Llama-2-7b-hf | ~6.738 M | 4096 | llama2 | HuggingFace | Modelo original de Meta |
+| unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch16 | 6.738 M | no disponible | llama2 | Hugging Face | Checkpoint de *unlearning* (época 16/20) |
+| locuslab/tofu_ft_llama2-7b | ~6.738 M | 4096 | llama2 | Hugging Face | Modelo base ajustado con TOFU, sin olvido |
+| NousResearch/Llama-2-7b-chat-hf | ~6.738 M | 4096 | llama2 | Hugging Face | Llama 2 7B chat, referencia general |
+| meta-llama/Llama-2-7b-hf | ~6.738 M | 4096 | llama2 | Hugging Face | Modelo original de Meta |
 
 La comparativa se limita a la familia Llama 2 7B porque el checkpoint es un derivado directo de ella; no se dispone de datos de rendimiento comparativo en la información proporcionada.
 
@@ -84,7 +84,7 @@ La comparativa se limita a la familia Llama 2 7B porque el checkpoint es un deri
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch16
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch16
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de referencia para embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Modelo original Llama 2: https://huggingface.co/meta-llama/Llama-2-7b-hf

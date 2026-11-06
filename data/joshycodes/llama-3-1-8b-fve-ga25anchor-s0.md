@@ -79,10 +79,10 @@ Datos de especificaciones tomados de la documentación pública de cada modelo b
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| joshycodes/llama-3.1-8b-fve-ga25anchor-s0 | 8,03 B | no especificado (base: 128.000 tokens) | research-only | HuggingFace, solo safetensors |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, pesos oficiales |
-| Mistral-7B-Instruct-v0.3 | 7,25 B | 32.000 tokens | Apache 2.0 | HuggingFace y múltiples proveedores |
-| Qwen2.5-7B-Instruct | 7,62 B | 32.000 tokens (ampliable con YaRN) | Apache 2.0 | HuggingFace y múltiples proveedores |
+| joshycodes/llama-3.1-8b-fve-ga25anchor-s0 | 8,03 B | no especificado (base: 128.000 tokens) | research-only | Hugging Face, solo safetensors |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, pesos oficiales |
+| Mistral-7B-Instruct-v0.3 | 7,25 B | 32.000 tokens | Apache 2.0 | Hugging Face y múltiples proveedores |
+| Qwen2.5-7B-Instruct | 7,62 B | 32.000 tokens (ampliable con YaRN) | Apache 2.0 | Hugging Face y múltiples proveedores |
 
 La diferencia relevante no está en las especificaciones, sino en el régimen de uso: los tres modelos de referencia permiten uso comercial bajo sus licencias, mientras que este checkpoint es exclusivamente de investigación y no está evaluado.
 
@@ -103,7 +103,7 @@ La diferencia relevante no está en las especificaciones, sino en el régimen de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/llama-3.1-8b-fve-ga25anchor-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/llama-3.1-8b-fve-ga25anchor-s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Corpus `flourishing-vs-equanimity`: referenciado en la model card sin enlace disponible.
 - Repositorio `welfare-improvements`: referenciado en la model card sin enlace disponible.

@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Params | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-0.6B (original) | 596M | no disponible | FP16/BF16 | Apache 2.0 | HuggingFace |
-| Qwen3-0.6B-abliterated (huihui-ai) | 596M | no disponible | FP16 | no disponible | HuggingFace |
-| Qwen3-0.6B-Uncensored-Aquarion-INT8 (este) | 596M | no disponible | INT8 | no disponible | HuggingFace |
+| Qwen3-0.6B (original) | 596M | no disponible | FP16/BF16 | Apache 2.0 | Hugging Face |
+| Qwen3-0.6B-abliterated (huihui-ai) | 596M | no disponible | FP16 | no disponible | Hugging Face |
+| Qwen3-0.6B-Uncensored-Aquarion-INT8 (este) | 596M | no disponible | INT8 | no disponible | Hugging Face |
 
 Las alternativas son el modelo base original y otras versiones abliteradas. Este modelo se diferencia por su cuantización INT8, que reduce el uso de memoria a costa de una posible pérdida de precisión. No se dispone de comparativas de rendimiento entre ellos.
 
@@ -74,9 +74,9 @@ Las alternativas son el modelo base original y otras versiones abliteradas. Este
 
 ## Enlaces
 
-- [HuggingFace - Rin247/Qwen3-0.6B-Uncensored-Aquarion-INT8](https://huggingface.co/Rin247/Qwen3-0.6B-Uncensored-Aquarion-INT8)
-- [HuggingFace - Qwen/Qwen3-0.6B (modelo base)](https://huggingface.co/Qwen/Qwen3-0.6B)
-- [HuggingFace - huihui-ai/Qwen3-0.6B-abliterated](https://huggingface.co/huihui-ai/Qwen3-0.6B-abliterated)
+- [Hugging Face - Rin247/Qwen3-0.6B-Uncensored-Aquarion-INT8](https://huggingface.co/Rin247/Qwen3-0.6B-Uncensored-Aquarion-INT8)
+- [Hugging Face - Qwen/Qwen3-0.6B (modelo base)](https://huggingface.co/Qwen/Qwen3-0.6B)
+- [Hugging Face - huihui-ai/Qwen3-0.6B-abliterated](https://huggingface.co/huihui-ai/Qwen3-0.6B-abliterated)
 - [GitHub - Damacol/qwen-qwen3-0.6b](https://github.com/Damacol/qwen-qwen3-0.6b)
 - [InsiderLLM - Best Uncensored Local LLMs by VRAM Tier](https://insiderllm.com/guides/best-uncensored-local-llms/)
 - [Civitai - Qwen3-0.6B-heretic-abliterated-uncensored (text encoder)](https://civitai.com/models/2598886/anima-text-encoder-qwen3-06b-heretic-abliterated-uncensored)

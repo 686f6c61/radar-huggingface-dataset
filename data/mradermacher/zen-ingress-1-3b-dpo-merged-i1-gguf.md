@@ -76,7 +76,7 @@ Los datos de las alternativas proceden de sus fichas publicas; no existen compar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zen-ingress-1-3b-dpo-merged (i1-GGUF) | 3,09B | no disponible | Apache-2.0 | GGUF en HuggingFace |
+| zen-ingress-1-3b-dpo-merged (i1-GGUF) | 3,09B | no disponible | Apache-2.0 | GGUF en Hugging Face |
 | Qwen2.5-3B-Instruct | 3,09B | 32 768 tokens (segun su ficha) | Apache-2.0 | safetensors y GGUF de terceros |
 | Llama-3.2-3B-Instruct | 3,21B | 128 000 tokens (segun su ficha) | Licencia comunitaria de Llama 3.2 | safetensors y GGUF oficiales |
 | Gemma-2-2B-it | 2,6B | 8 192 tokens (segun su ficha) | Licencia de Gemma | safetensors y GGUF de terceros |
@@ -96,7 +96,7 @@ Diferencias destacables: zen-ingress-1-3b-merged no declara longitud de contexto
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/zen-ingress-1-3b-dpo-merged-i1-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/zen-ingress-1-3b-dpo-merged-i1-GGUF
 - Modelo base: https://huggingface.co/ZenithLLM/zen-ingress-1-3b-dpo-merged
 - Cuantizaciones estaticas del mismo autor: https://huggingface.co/mradermacher/zen-ingress-1-3b-dpo-merged-GGUF
 - Pagina de resumen de descargas del autor: https://hf.tst.eu/model#zen-ingress-1-3b-dpo-merged-i1-GGUF

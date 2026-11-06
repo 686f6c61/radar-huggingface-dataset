@@ -86,7 +86,7 @@ Otras alternativas de tamaño similar, como Llama 3.2 1B o Gemma 2 2B, no se inc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/russki/Qwen2.5-1.5B-Instruct-EXL3-3.0bpw
+- Repositorio Hugging Face: https://huggingface.co/russki/Qwen2.5-1.5B-Instruct-EXL3-3.0bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - ExLlamaV3 (runtime): https://github.com/turboderp-org/exllamav3
 - Colección Qwen2.5: https://huggingface.co/collections/Qwen/qwen25

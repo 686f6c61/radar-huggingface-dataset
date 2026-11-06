@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-Omni-2B-98K-FP16 | 2,17B | ~98k (verificado a 109k) | Texto, vision, audio | LFM Open License (other) | HuggingFace, GGUF |
-| LiquidAI/LFM3-Omni-2B (base) | ~2B | no disponible en la informacion | Texto, vision, audio | LFM Open License | HuggingFace |
-| Qwen2.5-3B-Instruct | 3B | 32k (128k con RoPE scaling) | Solo texto | Apache 2.0 | HuggingFace, GGUF |
-| Llama 3.2 3B Instruct | 3B | 128k | Solo texto | Llama 3.2 Community License | HuggingFace, GGUF |
+| LFM3-Omni-2B-98K-FP16 | 2,17B | ~98k (verificado a 109k) | Texto, vision, audio | LFM Open License (other) | Hugging Face, GGUF |
+| LiquidAI/LFM3-Omni-2B (base) | ~2B | no disponible en la informacion | Texto, vision, audio | LFM Open License | Hugging Face |
+| Qwen2.5-3B-Instruct | 3B | 32k (128k con RoPE scaling) | Solo texto | Apache 2.0 | Hugging Face, GGUF |
+| Llama 3.2 3B Instruct | 3B | 128k | Solo texto | Llama 3.2 Community License | Hugging Face, GGUF |
 
 La comparativa con Qwen2.5-3B y Llama 3.2 3B es orientativa por tamano y categoria; no se dispone de datos de benchmarks que permitan comparar rendimiento real entre ellos y este fine-tune.
 
@@ -94,7 +94,7 @@ La comparativa con Qwen2.5-3B y Llama 3.2 3B es orientativa por tamano y categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-FP16
+- Modelo en Hugging Face: https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-FP16
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Liquid AI: https://www.liquid.ai/
 - llama.cpp (runtime con soporte mtmd): https://github.com/ggml-org/llama.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hoppop-agent-v2b es un ajuste fino mediante LoRA del modelo base Qwen/Qwen3.5-2B, publicado por el usuario caleb-marks en HuggingFace. El objetivo declarado en la model card es servir como asistente local en un iPhone: gestion de recordatorios, creacion de eventos de calendario y consulta de la agenda, con un tono de respuesta corto y calido. El modelo se distribuye en formato MLX con cuantizacion de 4 bits, lo que lo orienta especificamente al ecosistema Apple Silicon (Mac y dispositivos iPhone/iPad).
+hoppop-agent-v2b es un ajuste fino mediante LoRA del modelo base Qwen/Qwen3.5-2B, publicado por el usuario caleb-marks en Hugging Face. El objetivo declarado en la model card es servir como asistente local en un iPhone: gestion de recordatorios, creacion de eventos de calendario y consulta de la agenda, con un tono de respuesta corto y calido. El modelo se distribuye en formato MLX con cuantizacion de 4 bits, lo que lo orienta especificamente al ecosistema Apple Silicon (Mac y dispositivos iPhone/iPad).
 
 El repositorio ocupa 1,1 GB y contiene 1.881.825.088 parametros segun los metadatos de safetensors, un orden de magnitud coherente con los aproximadamente 2.000 millones de parametros del modelo base. La licencia es Apache-2.0, heredada del modelo base, y el entrenamiento se realizo exclusivamente con ejemplos sinteticos, sin datos reales de usuario.
 
@@ -88,11 +88,11 @@ No se dispone de datos de terceros comparables en la informacion proporcionada. 
 - Dependencia del ecosistema Apple: el formato MLX restringe el despliegue directo a Apple Silicon. Migrarlo a CUDA o a servidores exige conversion y revalidacion.
 - Madurez muy baja: 13 descargas, 0 likes, repositorio creado y actualizado el mismo dia, sin historial de mantenimiento ni issues.
 - Licencia: Apache-2.0 permite uso comercial y modificacion, pero el autor la declara heredada del modelo base; conviene verificar los terminos de Qwen/Qwen3.5-2B antes de un uso en produccion.
-- Sin pipeline declarado en HuggingFace, lo que complica la integracion automatica con herramientas que dependen de ese campo.
+- Sin pipeline declarado en Hugging Face, lo que complica la integracion automatica con herramientas que dependen de ese campo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caleb-marks/hoppop-agent-v2b
+- Modelo en Hugging Face: https://huggingface.co/caleb-marks/hoppop-agent-v2b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Leaderboard generico de modelos (sin datos especificos de este modelo): https://artificialanalysis.ai/leaderboards/models
 - Leaderboard generico de modelos (sin datos especificos de este modelo): https://benchlm.ai/

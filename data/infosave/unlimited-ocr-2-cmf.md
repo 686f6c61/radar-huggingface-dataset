@@ -101,7 +101,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K y
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/infosave/Unlimited-OCR-2-cmf
+- Modelo cuantizado en Hugging Face: https://huggingface.co/infosave/Unlimited-OCR-2-cmf
 - Modelo base: https://huggingface.co/baidu/Unlimited-OCR-2
 - Repositorio del formato CMF y binarios: https://github.com/infosave2007/cmf
 - Releases de cortiq (binarios Linux, macOS, Windows): https://github.com/infosave2007/cmf/releases

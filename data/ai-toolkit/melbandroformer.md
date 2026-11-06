@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Mel-Band RoFormer (este repack) | Band-split + transformer con RoPE, especializado en voz | No disponible (~200-230 M estimados por tamano de fichero) | MIT | HuggingFace (ai-toolkit/melbandroformer) | Salida de 2 pistas por resta; metadatos de inferencia incluidos |
-| Mel-Band RoFormer original (KimberleyJSN) | Misma arquitectura | No disponible | MIT | HuggingFace (KimberleyJSN/melbandroformer, `.ckpt`) | Pesos de origen de este repack; requiere config externa |
+| Mel-Band RoFormer (este repack) | Band-split + transformer con RoPE, especializado en voz | No disponible (~200-230 M estimados por tamano de fichero) | MIT | Hugging Face (ai-toolkit/melbandroformer) | Salida de 2 pistas por resta; metadatos de inferencia incluidos |
+| Mel-Band RoFormer original (KimberleyJSN) | Misma arquitectura | No disponible | MIT | Hugging Face (KimberleyJSN/melbandroformer, `.ckpt`) | Pesos de origen de este repack; requiere config externa |
 | Band-Split RoFormer (BS-RoFormer) | Band-split + transformer con RoPE, predecesor | No disponible | No disponible (depende del checkpoint) | Repositorio lucidrains/BS-RoFormer | Referencia arquitectonica; el paper de Mel-Band reporta mejoras sobre esta base |
 | Demucs v4 (htdemucs) | Hibrido tiempo-frecuencia | No disponible | MIT | Repositorio y pesos publicos de Meta AI | Separa 4 stems (bateria, bajo, otros, voz); tarea mas amplia, mas coste |
 
@@ -95,7 +95,7 @@ Las cifras de rendimiento comparado (SDR) no estan disponibles en la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ai-toolkit/melbandroformer
+- Modelo en Hugging Face: https://huggingface.co/ai-toolkit/melbandroformer
 - Pesos originales de Kimberley Jensen: https://huggingface.co/KimberleyJSN/melbandroformer
 - Repositorio ai-toolkit: https://github.com/ostris/ai-toolkit
 - Script de conversion: https://github.com/ostris/ai-toolkit/blob/main/scripts/convert_melbandroformer.py

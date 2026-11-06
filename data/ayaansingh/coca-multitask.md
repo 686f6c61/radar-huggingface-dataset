@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ayaansingh/coca-multitask es un repositorio de investigación alojado en HuggingFace que contiene un prototipo de implementación propia de una arquitectura denominada "Coca" orientada a tareas múltiples (multitask). Lo publica el usuario ayaansingh y no está vinculado al modelo CoCa (Contrastive Captioners) de Google presentado en arXiv 2205.01917, sino que se trata de una implementación personal con atención dilatada, fusión tipo Tucker y normalización GroupNorm. El repositorio incluye el código Python de entrenamiento e inferencia, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de safetensors.
+ayaansingh/coca-multitask es un repositorio de investigación alojado en Hugging Face que contiene un prototipo de implementación propia de una arquitectura denominada "Coca" orientada a tareas múltiples (multitask). Lo publica el usuario ayaansingh y no está vinculado al modelo CoCa (Contrastive Captioners) de Google presentado en arXiv 2205.01917, sino que se trata de una implementación personal con atención dilatada, fusión tipo Tucker y normalización GroupNorm. El repositorio incluye el código Python de entrenamiento e inferencia, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de safetensors.
 
 El dato más relevante para evaluarlo es su escala real: el checkpoint contiene 49.600 parámetros totales, lo que contradice la etiqueta "large" que aparece en su propia model card. El tamaño del repositorio es de 0,0 GB y no se declara ningún resultado de benchmark, ninguna métrica de evaluación ni ningún entrenamiento completado. El propio autor indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo ("smoke tests") y que no debe presentarse como un checkpoint entrenado.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Compatibilidad con GPU de consumo: si, en cualquier modelo (RTX 4090, RTX 3060, GTX 1650, incluso CPU-only). No hay requisito practico de VRAM.
 - Opciones de despliegue: al ser una implementacion personalizada, las APIs genericas de carga automatica (vLLM, TGI, Ollama, llama.cpp) requieren un adaptador explicito antes de poder usarse, tal y como advierte la model card. El uso previsto es la ejecucion directa del script `predict.py` en PyTorch.
 - Latencia y throughput estimados: no disponible. No tiene sentido medirlos sobre un checkpoint sin entrenar y de este tamano.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -73,8 +73,8 @@ No existe una comparativa de rendimiento posible, porque este repositorio no pub
 
 | Modelo / referencia | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ayaansingh/coca-multitask | Prototipo Coca de multitarea, sin entrenar | 49.600 | no disponible | apache-2.0 | HuggingFace |
-| qayang1987/multitask40 | Codebase experimental Coca para multitarea, escala "nano" | no disponible | no disponible | no disponible | HuggingFace |
+| ayaansingh/coca-multitask | Prototipo Coca de multitarea, sin entrenar | 49.600 | no disponible | apache-2.0 | Hugging Face |
+| qayang1987/multitask40 | Codebase experimental Coca para multitarea, escala "nano" | no disponible | no disponible | no disponible | Hugging Face |
 | CoCa (Google, arXiv 2205.01917) | Modelo fundacional imagen-texto con perdida contrastiva y de captioning | no disponible en la informacion | no disponible | no disponible | Paper |
 | lucidrains/CoCa-pytorch | Implementacion no oficial de CoCa en PyTorch | no disponible en la informacion | no disponible | no disponible | GitHub |
 | facebookresearch/multimodal (TorchMultimodal) | Libreria con implementacion de CoCa | no disponible en la informacion | no disponible | no disponible | GitHub |
@@ -96,7 +96,7 @@ Nota importante: la coincidencia de nombre con CoCa (Contrastive Captioners) es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ayaansingh/coca-multitask
+- Modelo en Hugging Face: https://huggingface.co/ayaansingh/coca-multitask
 - Perfil del autor: https://huggingface.co/ayaansingh
 - Repositorio relacionado (Coca multitarea, escala nano): https://huggingface.co/qayang1987/multitask40
 - Paper original de CoCa (Contrastive Captioners are Image-Text Foundation Models): https://arxiv.org/abs/2205.01917

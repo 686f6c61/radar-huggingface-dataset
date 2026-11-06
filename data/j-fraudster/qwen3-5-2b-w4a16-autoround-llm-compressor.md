@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativos (benchmarks) entre estas vers
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/J-Fraudster/Qwen3.5-2B-W4A16-AutoRound-LLM-Compressor)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/J-Fraudster/Qwen3.5-2B-W4A16-AutoRound-LLM-Compressor)
 - [Modelo base Qwen/Qwen3.5-2B](https://huggingface.co/Qwen/Qwen3.5-2B)
 - [Repositorio de Intel AutoRound](https://github.com/intel/auto-round)
 - [Documentación de LLM Compressor para Qwen3.5](https://docs.vllm.ai/projects/llm-compressor/en/latest/key-models/qwen3.5/)

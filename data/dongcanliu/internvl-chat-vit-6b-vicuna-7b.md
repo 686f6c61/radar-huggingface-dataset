@@ -6,7 +6,7 @@ InternVL-Chat-ViT-6B-Vicuna-7B es un modelo multimodal vision-lenguaje desarroll
 
 La relevancia del modelo radica en su escala: con aproximadamente 14B parametros totales, se presento como el mayor modelo vision/vision-lenguaje de codigo abierto de su momento, con 32 resultados state-of-the-art en tareas como percepcion visual, retrieval cross-modal y dialogo multimodal. Sigue la receta de entrenamiento de LLaVA 1.5, adaptando la documentacion original de LLaVA para su ejecucion.
 
-El repositorio de HuggingFace corresponde a una copia subida por el usuario `dongcanliu` (0 descargas, 0 likes en el momento de la consulta), no al repositorio oficial de OpenGVLab. Para uso en produccion conviene acudir a los repositorios oficiales de la organizacion OpenGVLab.
+El repositorio de Hugging Face corresponde a una copia subida por el usuario `dongcanliu` (0 descargas, 0 likes en el momento de la consulta), no al repositorio oficial de OpenGVLab. Para uso en produccion conviene acudir a los repositorios oficiales de la organizacion OpenGVLab.
 
 ## Especificaciones tecnicas
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| InternVL-Chat-ViT-6B-Vicuna-7B | ~14B (6B ViT + 7B LLM) | No disponible | MIT / Llama 2 Community | HuggingFace (copia de usuario) |
-| LLaVA 1.5 13B | ~13B (ViT + LLM) | No disponible | Llama 2 Community | HuggingFace (oficial) |
-| LLaVA 1.5 7B | ~7B (ViT + LLM) | No disponible | Llama 2 Community | HuggingFace (oficial) |
-| InternVL-Chat (variantes oficiales) | Variable | No disponible | MIT | HuggingFace (OpenGVLab) |
+| InternVL-Chat-ViT-6B-Vicuna-7B | ~14B (6B ViT + 7B LLM) | No disponible | MIT / Llama 2 Community | Hugging Face (copia de usuario) |
+| LLaVA 1.5 13B | ~13B (ViT + LLM) | No disponible | Llama 2 Community | Hugging Face (oficial) |
+| LLaVA 1.5 7B | ~7B (ViT + LLM) | No disponible | Llama 2 Community | Hugging Face (oficial) |
+| InternVL-Chat (variantes oficiales) | Variable | No disponible | MIT | Hugging Face (OpenGVLab) |
 
 Los datos de rendimiento comparativo no estan disponibles en la informacion proporcionada; la comparativa se limita a escala, licencia y disponibilidad.
 
@@ -85,7 +85,7 @@ Los datos de rendimiento comparativo no estan disponibles en la informacion prop
 
 ## Enlaces
 
-- HuggingFace (copia consultada): https://huggingface.co/dongcanliu/InternVL-Chat-ViT-6B-Vicuna-7B
+- Hugging Face (copia consultada): https://huggingface.co/dongcanliu/InternVL-Chat-ViT-6B-Vicuna-7B
 - Paper: https://arxiv.org/abs/2312.14238
 - GitHub: https://github.com/OpenGVLab/InternVL
 - Demo de chat: https://internvl.opengvlab.com/

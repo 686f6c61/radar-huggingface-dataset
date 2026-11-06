@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mmbu-jev-qwen3-0.6b-freetext es un decisor de tipo "System One" construido con la librería any2jev sobre el modelo base Qwen/Qwen3-0.6B. No es un modelo generativo: recibe un estado (texto de entrada) y devuelve respuestas tipadas Choice, Score o Noul acompañadas de probabilidades calibradas, todo en una única pasada forward y sin generar ni un solo token de texto. El autor es el usuario de HuggingFace ryandcunha, y el repositorio se publica bajo licencia Apache-2.0 como proyecto independiente, sin afiliación con TypeSafe AI.
+mmbu-jev-qwen3-0.6b-freetext es un decisor de tipo "System One" construido con la librería any2jev sobre el modelo base Qwen/Qwen3-0.6B. No es un modelo generativo: recibe un estado (texto de entrada) y devuelve respuestas tipadas Choice, Score o Noul acompañadas de probabilidades calibradas, todo en una única pasada forward y sin generar ni un solo token de texto. El autor es el usuario de Hugging Face ryandcunha, y el repositorio se publica bajo licencia Apache-2.0 como proyecto independiente, sin afiliación con TypeSafe AI.
 
 El paquete contiene un adaptador LoRA de rango 16 entrenado sobre Qwen3-0.6B con la cabeza de vocabulario eliminada, una cabeza pointer de dimensión 256 almacenada en head.safetensors, el tokenizador del modelo base y un fichero de configuración any2jev.json con delimitadores, modo "packed" y una temperatura de 1,073 ajustada sobre validación. El entrenamiento empleó 10,6 millones de parámetros entrenables durante 1,0 época, con learning rate 0,0002 y batch 4 x 4, y se completó en unos 7 minutos en una única GPU de consumo.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mmbu-jev-qwen3-0.6b-freetext | Decisor no generativo (LoRA r=16 + cabeza pointer) | 0,6 B base + 10,6 M entrenables | No disponible | No disponible | Apache-2.0 | HuggingFace, 0 descargas y 0 likes |
+| mmbu-jev-qwen3-0.6b-freetext | Decisor no generativo (LoRA r=16 + cabeza pointer) | 0,6 B base + 10,6 M entrenables | No disponible | No disponible | Apache-2.0 | Hugging Face, 0 descargas y 0 likes |
 | Qwen/Qwen3-0.6B | LLM generativo denso | 0,6 B | 32.768 tokens según la especificación del modelo base | Benchmarks publicados por el desarrollador del modelo base | Apache-2.0 | Ampliamente extendido |
 | Qwen3-0.6B con cabeza de clasificación supervisada | Clasificador entrenado a medida sobre el mismo base | 0,6 B | El del modelo base | Depende del dataset de entrenamiento | Apache-2.0 | Requiere entrenamiento propio |
 
@@ -91,6 +91,6 @@ La diferencia funcional frente a las dos alternativas no está en el tamaño sin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryandcunha/mmbu-jev-qwen3-0.6b-freetext
+- Modelo en Hugging Face: https://huggingface.co/ryandcunha/mmbu-jev-qwen3-0.6b-freetext
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio de la librería any2jev: https://github.com/hwfengcs/any2jev

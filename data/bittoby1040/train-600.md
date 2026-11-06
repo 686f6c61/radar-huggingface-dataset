@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bittoby1040/train-600 es un checkpoint de modelo de lenguaje publicado en HuggingFace por el usuario Bittoby1040. El repositorio contiene únicamente pesos en formato safetensors, con 35.107.181.936 parámetros totales (unos 35,1 mil millones) y un tamaño de repo de 70,2 GB, lo que es consistente con pesos almacenados en BF16/FP16. La única etiqueta técnica relevante es `qwen3_5_moe`, que apunta a una arquitectura de mezcla de expertos (MoE) heredada de la familia Qwen3.5, aunque el autor no ha publicado ninguna model card que lo confirme.
+Bittoby1040/train-600 es un checkpoint de modelo de lenguaje publicado en Hugging Face por el usuario Bittoby1040. El repositorio contiene únicamente pesos en formato safetensors, con 35.107.181.936 parámetros totales (unos 35,1 mil millones) y un tamaño de repo de 70,2 GB, lo que es consistente con pesos almacenados en BF16/FP16. La única etiqueta técnica relevante es `qwen3_5_moe`, que apunta a una arquitectura de mezcla de expertos (MoE) heredada de la familia Qwen3.5, aunque el autor no ha publicado ninguna model card que lo confirme.
 
 El modelo no incluye pipeline declarado, licencia, idiomas soportados ni documentación de entrenamiento. Con 11 descargas y 0 likes en el momento de la consulta, se trata de una publicación sin validación comunitaria ni rastro de evaluación pública. El nombre "train-600" sugiere un checkpoint intermedio de un proceso de entrenamiento (posiblemente el paso 600), pero esto es una inferencia a partir del nombre y no un dato confirmado.
 
@@ -49,7 +49,7 @@ Dado que el modelo carece de licencia, benchmarks y documentación, los siguient
 - Fine-tuning sobre dominio específico: partir de los pesos como base para un ajuste supervisado en un dominio concreto (legal, sanitario, técnico), siempre que la licencia lo permita, algo que hoy no se puede confirmar.
 - Generación de texto offline en infraestructura propia: con pesos BF16 requiere ~70 GB, por lo que solo tiene sentido en nodos con GPU de 80 GB o mediante cuantización posterior a INT8/INT4.
 - Estudios de cuantización: convertir los safetensors a GGUF, AWQ o GPTQ y medir la degradación de perplejidad, asumiendo que el motor de inferencia soporte la arquitectura `qwen3_5_moe`.
-- Docencia y formación técnica: usar el repositorio como ejemplo real de publicación incompleta en HuggingFace para ilustrar la importancia de model cards, licencias y reproducibilidad.
+- Docencia y formación técnica: usar el repositorio como ejemplo real de publicación incompleta en Hugging Face para ilustrar la importancia de model cards, licencias y reproducibilidad.
 - Base para destilación: emplear las salidas del modelo como profesor para destilar un modelo menor, siempre que la licencia lo autorice.
 
 ## Benchmarks y rendimiento
@@ -75,9 +75,9 @@ No hay datos oficiales del modelo evaluado, por lo que la comparación se limita
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bittoby1040/train-600 | 35,1 B | no disponible | no disponible | no disponible | HuggingFace (11 descargas) |
-| Qwen3-30B-A3B | ~30,5 B | ~3,3 B | 32.768 tokens nativos, ampliables a 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente integrado en vLLM, llama.cpp y Ollama |
-| Mixtral-8x7B | ~46,7 B | ~12,9 B | 32.768 tokens | Apache 2.0 | HuggingFace, ecosistema maduro |
+| Bittoby1040/train-600 | 35,1 B | no disponible | no disponible | no disponible | Hugging Face (11 descargas) |
+| Qwen3-30B-A3B | ~30,5 B | ~3,3 B | 32.768 tokens nativos, ampliables a 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente integrado en vLLM, llama.cpp y Ollama |
+| Mixtral-8x7B | ~46,7 B | ~12,9 B | 32.768 tokens | Apache 2.0 | Hugging Face, ecosistema maduro |
 
 Diferencias clave: frente a las alternativas, el modelo evaluado no declara licencia ni contexto, no tiene benchmarks y apenas tiene adopción. Cualquier conclusión sobre su calidad relativa es imposible sin una evaluación propia.
 
@@ -97,6 +97,6 @@ Diferencias clave: frente a las alternativas, el modelo evaluado no declara lice
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Bittoby1040/train-600
+- Hugging Face: https://huggingface.co/Bittoby1040/train-600
 - Los resultados de la búsqueda web proporcionada no contienen ningún enlace relevante al modelo: corresponden a páginas comerciales sobre pianos de cola PETROF (petrof.de, petrof.com, klaviano.com) y no guardan relación con el objeto de esta ficha.
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la información disponible.

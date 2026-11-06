@@ -19,7 +19,7 @@ El modelo es relevante por dos motivos. Primero, aborda una lengua de muy bajos 
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | tujia (codigo `tji`), dialecto septentrional |
 | Licencia | research-use-only (codigo bajo MIT; pesos con licencia de solo investigacion) |
-| Formato de pesos | PyTorch (`.pt` para la cabeza; codificador en safetensors segun el repo de HuggingFace) |
+| Formato de pesos | PyTorch (`.pt` para la cabeza; codificador en safetensors segun el repo de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -81,10 +81,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | SER test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tujia-ctc v0.2 | cabeza 4,57 M + codificador XLSR-53 | no disponible | 0,4634 (con bigrama) | research-use-only | HuggingFace y ModelScope |
-| Tujia-ctc v0.1 | cabeza sobre codificador congelado | no disponible | no disponible (264 silabas sin tono) | no disponible | HuggingFace |
-| wav2vec2-xlsr-53-espeak-cv-ft | ~317 M | no disponible | no aplica (modelo base) | Apache-2.0 | HuggingFace |
-| Whisper (large-v3) | ~1,55 B | 30 s por ventana | no disponible para tujia | MIT | HuggingFace, OpenAI |
+| Tujia-ctc v0.2 | cabeza 4,57 M + codificador XLSR-53 | no disponible | 0,4634 (con bigrama) | research-use-only | Hugging Face y ModelScope |
+| Tujia-ctc v0.1 | cabeza sobre codificador congelado | no disponible | no disponible (264 silabas sin tono) | no disponible | Hugging Face |
+| wav2vec2-xlsr-53-espeak-cv-ft | ~317 M | no disponible | no aplica (modelo base) | Apache-2.0 | Hugging Face |
+| Whisper (large-v3) | ~1,55 B | 30 s por ventana | no disponible para tujia | MIT | Hugging Face, OpenAI |
 
 La comparacion con Whisper es orientativa: no se han publicado evaluaciones de Whisper sobre tujia en la informacion disponible, y su salida es texto ortografico, no silabas con tono, por lo que no es directamente sustituible en este caso de uso.
 
@@ -92,7 +92,7 @@ La comparacion con Whisper es orientativa: no se han publicado evaluaciones de W
 
 - Licencia `research-use-only`: los pesos no pueden usarse en productos comerciales sin autorizacion explicita; solo el codigo (`infer.py`, scripts) esta bajo MIT.
 - El corpus de entrenamiento es de 2,6 horas, lo que limita la cobertura de hablantes, condiciones acusticas y variacion dialectal; el propio autor reporta SER de test en torno al 47 %, es decir, casi una de cada dos silabas incorrecta.
-- El codificador original de HuggingFace no puede sustituir al ajustado: mezclarlos degrada el reconocimiento de forma sustancial, segun advierte el autor.
+- El codificador original de Hugging Face no puede sustituir al ajustado: mezclarlos degrada el reconocimiento de forma sustancial, segun advierte el autor.
 - Sesgos conocidos: no se documentan analisis de sesgo por sexo, edad o procedencia de los hablantes; con un corpus tan pequeno el riesgo de mal rendimiento fuera de la distribucion de entrenamiento es alto.
 - Riesgo de alucinacion: en CTC el riesgo se manifiesta como sustituciones y silabas espurias, especialmente en audio con ruido o solapamiento de habla.
 - Limitaciones de idioma: solo tujia, dialecto septentrional; no hay soporte multilingue ni cambio de codigo.
@@ -101,8 +101,8 @@ La comparacion con Whisper es orientativa: no se han publicado evaluaciones de W
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TujiaNLP/tujia-ctc-v0.2
+- Modelo en Hugging Face: https://huggingface.co/TujiaNLP/tujia-ctc-v0.2
 - Codificador ajustado: https://huggingface.co/TujiaNLP/tujia-xlsr53-ft
 - Modelo base: https://huggingface.co/facebook/wav2vec2-xlsr-53-espeak-cv-ft
-- Espejo en ModelScope: https://modelscope.cn/models/TujiaNLP/tujia-xlsr53-ft (mismo identificador que en HuggingFace)
-- Espejo de HuggingFace para China continental: https://hf-mirror.com
+- Espejo en ModelScope: https://modelscope.cn/models/TujiaNLP/tujia-xlsr53-ft (mismo identificador que en Hugging Face)
+- Espejo de Hugging Face para China continental: https://hf-mirror.com

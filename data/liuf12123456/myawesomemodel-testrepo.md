@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario liuf12123456 bajo licencia MIT. Según los metadatos del repositorio, está etiquetado como un modelo de tipo `bert` de la librería `transformers`, con pipeline de `feature-extraction` y compatibilidad con endpoints. Sin embargo, el repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos ni archivos de modelo. La model card incluida describe un modelo con capacidades de razonamiento mejoradas y presenta resultados de benchmarks, pero estos datos carecen de verificación independiente y no se corresponden con ningún artefacto descargable.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario liuf12123456 bajo licencia MIT. Según los metadatos del repositorio, está etiquetado como un modelo de tipo `bert` de la librería `transformers`, con pipeline de `feature-extraction` y compatibilidad con endpoints. Sin embargo, el repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos ni archivos de modelo. La model card incluida describe un modelo con capacidades de razonamiento mejoradas y presenta resultados de benchmarks, pero estos datos carecen de verificación independiente y no se corresponden con ningún artefacto descargable.
 
 El modelo no tiene descargas ni likes, y fue creado en agosto de 2026. Dada la ausencia de artefactos reales y la naturaleza genérica de la model card, esta ficha debe interpretarse como una evaluación de la información disponible, que resulta insuficiente para caracterizar técnicamente el modelo. No se dispone de detalles sobre arquitectura, tamaño, contexto o entrenamiento.
 
@@ -93,6 +93,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/liuf12123456/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/liuf12123456/MyAwesomeModel-TestRepo
 
 No se han encontrado papers, blogs, repositorios de código o demos adicionales en la información proporcionada.

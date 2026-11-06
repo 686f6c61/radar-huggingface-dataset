@@ -4,7 +4,7 @@
 
 ## Resumen
 
-beta-splatting-showcase-models es un repositorio de HuggingFace publicado por el usuario neelgajera09 que contiene escenas 3D reconstruidas mediante splatting, no un modelo de lenguaje. En concreto, aloja un archivo `chevy.ply` con 261.000 primitivas de Deformable Beta Splatting correspondientes a un Chevrolet Colorado, capturado en un recorrido de 70 segundos con la camara de un telefono movil y con la matricula sustituida. Los pesos se han generado con la herramienta video-to-splat del mismo autor y se utilizan como material de exhibicion del proyecto beta-splatting-showcase.
+beta-splatting-showcase-models es un repositorio de Hugging Face publicado por el usuario neelgajera09 que contiene escenas 3D reconstruidas mediante splatting, no un modelo de lenguaje. En concreto, aloja un archivo `chevy.ply` con 261.000 primitivas de Deformable Beta Splatting correspondientes a un Chevrolet Colorado, capturado en un recorrido de 70 segundos con la camara de un telefono movil y con la matricula sustituida. Los pesos se han generado con la herramienta video-to-splat del mismo autor y se utilizan como material de exhibicion del proyecto beta-splatting-showcase.
 
 El interes de esta publicacion es acotado pero claro: sirve como ejemplo reproducible de una canalizacion completa de captura a visualizacion (video de movil, reconstruccion, exportacion a `.ply` y visionado web interactivo). No incluye pesos de red neuronal en el sentido habitual, ni ficha tecnica detallada, ni datos de evaluacion. El repositorio tiene 0 descargas, 0 likes y un tamano reportado de 0,0 GB en el momento de la consulta, lo que conviene tener en cuenta antes de asumir que los pesos estan efectivamente accesibles.
 
@@ -69,7 +69,7 @@ La comparacion se plantea frente a otros repositorios o variantes de representac
 
 | Alternativa | Tipo de representacion | Tamano de la representacion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| beta-splatting-showcase-models (este repositorio) | Deformable Beta Splatting, escena unica | 261.000 primitivas | CC BY 4.0 | Repositorio publico de HuggingFace |
+| beta-splatting-showcase-models (este repositorio) | Deformable Beta Splatting, escena unica | 261.000 primitivas | CC BY 4.0 | Repositorio publico de Hugging Face |
 | 3D Gaussian Splatting (Kerbl et al., 2023) | Splatting gaussiano 3D | Depende de la escena; no disponible | Codigo con licencia propia del proyecto original | Codigo y visores ampliamente disponibles |
 | Mip-Splatting | Splatting gaussiano con filtrado antialias | Depende de la escena; no disponible | No disponible | Codigo publico |
 | Scaffold-GS | Splatting gaussiano con anclas jerarquicas | Depende de la escena; no disponible | No disponible | Codigo publico |
@@ -89,11 +89,11 @@ No se dispone de comparaciones cuantitativas entre estas alternativas dentro de 
 - Riesgo de alucinacion: no aplica en el sentido de generacion de texto; en cambio, existe riesgo de artefactos de reconstruccion tipicos del splatting (flotantes, geometria incompleta en zonas poco observadas, inconsistencia de iluminacion entre vistas).
 - Limitaciones de contexto o idioma: no aplica, no procesa texto. La calidad depende de la cobertura del video de captura.
 - Caveat de produccion: el render de splats exige soporte del visor o del motor grafico; no todos los motores de videojuegos estandar lo soportan de forma nativa, lo que puede requerir integraciones especificas.
-- Las fechas de creacion y actualizacion del repositorio (2026-10-11) son las reportadas por los metadatos de HuggingFace; no se ha podido verificar su correspondencia con la fecha real de publicacion.
+- Las fechas de creacion y actualizacion del repositorio (2026-10-11) son las reportadas por los metadatos de Hugging Face; no se ha podido verificar su correspondencia con la fecha real de publicacion.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/neelgajera09/beta-splatting-showcase-models
+- Repositorio en Hugging Face: https://huggingface.co/neelgajera09/beta-splatting-showcase-models
 - Proyecto beta-splatting-showcase en GitHub: https://github.com/neelgajera/beta-splatting-showcase
 - Herramienta video-to-splat en GitHub: https://github.com/neelgajera/video-to-splat
 - Demo en vivo: https://neelgajera.github.io/beta-splatting-showcase/

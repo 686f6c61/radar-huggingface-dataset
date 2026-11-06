@@ -86,10 +86,10 @@ El autor indica que V3 queda por debajo del umbral en choice y score top-1, y qu
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Solar-Decision-JEV-27B-V3 | 26,9 B | no disponible | Decision tipada + chat, abliterado | Apache 2.0 | HuggingFace, safetensors, NVFP4-FP8, GGUF |
-| Solar-Decision-JEV-27B (V2) | 26,9 B | no disponible | Decision tipada, r32 sin `lm_head` | Apache 2.0 | HuggingFace |
-| JEV-27B-Uncensored (r32-alone) | 26,9 B | no disponible | Decision tipada con mejor calibracion | Apache 2.0 | HuggingFace |
-| Huihui-Qwen3.8-27B-abliterated | 26,9 B | no disponible | Chat general abliterado (modelo base) | Apache 2.0 | HuggingFace |
+| Solar-Decision-JEV-27B-V3 | 26,9 B | no disponible | Decision tipada + chat, abliterado | Apache 2.0 | Hugging Face, safetensors, NVFP4-FP8, GGUF |
+| Solar-Decision-JEV-27B (V2) | 26,9 B | no disponible | Decision tipada, r32 sin `lm_head` | Apache 2.0 | Hugging Face |
+| JEV-27B-Uncensored (r32-alone) | 26,9 B | no disponible | Decision tipada con mejor calibracion | Apache 2.0 | Hugging Face |
+| Huihui-Qwen3.8-27B-abliterated | 26,9 B | no disponible | Chat general abliterado (modelo base) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks de los modelos comparables distintos de los publicados por el autor para V2 y r32-alone en la tabla de la seccion anterior.
 
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks de los modelos comparables distintos de los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-V3
+- Modelo en Hugging Face: https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-V3
 - Cuantizacion NVFP4-FP8: https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-V3-NVFP4-FP8
 - GGUF: https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-V3-GGUF
 - Version anterior: https://huggingface.co/SargeDev/Solar-Decision-JEV-27B

@@ -99,7 +99,7 @@ No se conocen, a partir de los datos facilitados, alternativas de terceros direc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/erobey/Qwen3.8-27B-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/erobey/Qwen3.8-27B-mlx-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Librería utilizada para la conversión (mlx-lm): https://github.com/ml-explore/mlx-lm
 - Otras búsquedas web: no se han encontrado papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados devueltos por las búsquedas (temarios escolares de quinto curso, parrillas de televisión, formularios matemáticos y pruebas de kanji) no guardan ninguna relación con el modelo.

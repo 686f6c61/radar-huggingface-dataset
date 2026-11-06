@@ -30,7 +30,7 @@ El entrenamiento se realizo mediante fusion de LoRA sobre el checkpoint kevin954
 - Generacion de texto conversacional: el modelo esta orientado a tareas de chat y dialogo multi-turno.
 - Procesamiento multimodal imagen-texto: la etiqueta image-text-to-text indica capacidad para recibir imagenes como entrada y generar texto como salida.
 - Arquitectura MoE: inferencia potencialmente eficiente al activar solo un subconjunto de expertos por token.
-- Compatible con pipelines de transformers: integrable en entornos HuggingFace estandar mediante la libreria transformers.
+- Compatible con pipelines de transformers: integrable en entornos Hugging Face estandar mediante la libreria transformers.
 - Compatible con endpoints de inferencia: la etiqueta endpoints_compatible sugiere despliegue en servicios de API gestionada.
 - Alineacion mediante DPO: el entrenamiento con preferencias (offline DPO) busca mejorar la calidad de las respuestas frente a alternativas menos alineadas.
 
@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r510-sbsv5-offline-dpo-hialpha-midrank-lobeta-midctx-ultraextrasteps-merged
+- Modelo en Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r510-sbsv5-offline-dpo-hialpha-midrank-lobeta-midctx-ultraextrasteps-merged
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft
 - Variante anterior (r497): https://huggingface.co/unconst/Affine-5czsc2fc98-r497-sbsv5-offline-dpo-hialpha-midrank-lobeta-midctx-extrasteps-merged
 - Variante h51: https://huggingface.co/unconst/Affine-5czsc2fc98-h51-merged

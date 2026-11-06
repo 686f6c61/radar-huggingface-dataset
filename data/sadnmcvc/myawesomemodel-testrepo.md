@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de IA desarrollado por SADNMCVC, distribuido a través de HuggingFace bajo licencia MIT. Según la model card del autor, ha recibido una actualización significativa que mejora la profundidad de razonamiento y las capacidades de inferencia, incorporando más recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo está orientado a tareas de razonamiento matemático, generación de código, lógica general y seguimiento de instrucciones, y se presenta como un asistente conversacional con soporte para function calling y generación aumentada por búsqueda web.
+MyAwesomeModel es un modelo de IA desarrollado por SADNMCVC, distribuido a través de Hugging Face bajo licencia MIT. Según la model card del autor, ha recibido una actualización significativa que mejora la profundidad de razonamiento y las capacidades de inferencia, incorporando más recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo está orientado a tareas de razonamiento matemático, generación de código, lógica general y seguimiento de instrucciones, y se presenta como un asistente conversacional con soporte para function calling y generación aumentada por búsqueda web.
 
 La información técnica sobre arquitectura, tamaño o longitud de contexto no se ha publicado. Los benchmarks incluidos en la model card indican que la precisión en el conjunto AIME 2025 ha aumentado del 70 % al 87,5 % respecto a la versión anterior, con un uso medio de tokens por pregunta que pasa de 12 000 a 23 000, lo que sugiere un mecanismo de pensamiento extensivo. No se especifica si el modelo soporta visión o audio.
 
@@ -10,7 +10,7 @@ La información técnica sobre arquitectura, tamaño o longitud de contexto no s
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible (las etiquetas de HuggingFace indican transformers y bert) |
+| Arquitectura | No disponible (las etiquetas de Hugging Face indican transformers y bert) |
 | Parámetros totales | No disponible |
 | Parámetros activos | No disponible |
 | Longitud de contexto | No disponible |
@@ -69,7 +69,7 @@ Además, el autor indica que la precisión en AIME 2025 ha aumentado del 70 % al
 
 ## Requisitos de hardware
 
-No disponible. No se han publicado datos sobre el tamaño, número de parámetros o requisitos de VRAM del modelo. Por tanto, no es posible estimar las GPU recomendadas ni la latencia esperada. Tampoco se indican opciones específicas de despliegue. El repositorio muestra un tamaño de 0.0 GB, lo que sugiere que los pesos pueden no estar disponibles en HuggingFace.
+No disponible. No se han publicado datos sobre el tamaño, número de parámetros o requisitos de VRAM del modelo. Por tanto, no es posible estimar las GPU recomendadas ni la latencia esperada. Tampoco se indican opciones específicas de despliegue. El repositorio muestra un tamaño de 0.0 GB, lo que sugiere que los pesos pueden no estar disponibles en Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -85,6 +85,6 @@ No disponible. La información proporcionada incluye una comparación con modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SADNMCVC/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/SADNMCVC/MyAwesomeModel-TestRepo
 
 No se encontraron enlaces adicionales en la búsqueda web. Los resultados de la búsqueda estaban relacionados con machine learning en SQL, sin relación con el modelo.

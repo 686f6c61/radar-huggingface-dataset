@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Cuantizacion | Audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Woovee/h3-prism-runpod | Paquete de serving de fusión MiniMax H3 | INT8 (difusión), NVFP4/AWQ (text encoder) | Sí (VAE FP32) | MiniMax H3 Community (excluye UE, Reino Unido, Corea del Sur y EE. UU. del grant estándar) | Público en HuggingFace, 306 descargas |
-| WarmBloodAban/Minimax-h3_Singularity | Fusión base (v2) de MiniMax H3 | no disponible | no disponible | MiniMax H3 Community | Público en HuggingFace |
-| TenStrip/10Eros-Max | Fusión base (beta 6) de MiniMax H3 | no disponible | no disponible | MiniMax H3 Community + términos de LTX 2.3, Wan 2.2 y Krea 2 | Público en HuggingFace |
-| OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM | Fusión PRISM original (base de este paquete) | no disponible | no disponible | MiniMax H3 Community | Público en HuggingFace |
+| Woovee/h3-prism-runpod | Paquete de serving de fusión MiniMax H3 | INT8 (difusión), NVFP4/AWQ (text encoder) | Sí (VAE FP32) | MiniMax H3 Community (excluye UE, Reino Unido, Corea del Sur y EE. UU. del grant estándar) | Público en Hugging Face, 306 descargas |
+| WarmBloodAban/Minimax-h3_Singularity | Fusión base (v2) de MiniMax H3 | no disponible | no disponible | MiniMax H3 Community | Público en Hugging Face |
+| TenStrip/10Eros-Max | Fusión base (beta 6) de MiniMax H3 | no disponible | no disponible | MiniMax H3 Community + términos de LTX 2.3, Wan 2.2 y Krea 2 | Público en Hugging Face |
+| OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM | Fusión PRISM original (base de este paquete) | no disponible | no disponible | MiniMax H3 Community | Público en Hugging Face |
 
 Datos de rendimiento comparativos: no disponibles.
 

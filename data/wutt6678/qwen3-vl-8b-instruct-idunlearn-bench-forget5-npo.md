@@ -25,7 +25,7 @@ La relevancia de esta ficha es acotada: el repositorio no declara licencia, idio
 
 El artefacto es un adaptador de bajo rango (LoRA) con etiquetas peft, lora y transformers, pensado para cargarse sobre el modelo base outputs_3/mllmu_vanilla_qwen3-vl-8b. El modelo base referenciado pertenece a la familia Qwen3-VL de Alibaba Cloud, una familia de modelos vision-lenguaje multimodales disponible en variantes densas y MoE, con mejoras declaradas en comprension de texto, percepcion visual, razonamiento espacial, comprension de video dinamico, longitud de contexto e interaccion con agentes. El tamano del repositorio (0,2 GB) es compatible con un adaptador sobre un modelo de aproximadamente 8.000 millones de parametros, no con un checkpoint completo.
 
-No hay informacion publicada sobre el procedimiento de entrenamiento: la model card es la plantilla por defecto de HuggingFace con todos los campos como "[More Information Needed]". No se especifican volumen de tokens, composicion del dataset, hiperparametros, regimen de precision (fp32, bf16, etc.), uso de RLHF o DPO, ni la configuracion exacta del LoRA (rango, alpha, modulos objetivo). El unico dato tecnico concreto es la version de libreria declarada: PEFT 0.19.1. Por el nombre del repositorio, es plausible que el adaptador se haya obtenido aplicando un algoritmo de desaprendizaje (NPO) sobre un subconjunto de olvido (forget5) de un banco de evaluacion (IDUnlearn-Bench), pero esto no esta confirmado por el autor.
+No hay informacion publicada sobre el procedimiento de entrenamiento: la model card es la plantilla por defecto de Hugging Face con todos los campos como "[More Information Needed]". No se especifican volumen de tokens, composicion del dataset, hiperparametros, regimen de precision (fp32, bf16, etc.), uso de RLHF o DPO, ni la configuracion exacta del LoRA (rango, alpha, modulos objetivo). El unico dato tecnico concreto es la version de libreria declarada: PEFT 0.19.1. Por el nombre del repositorio, es plausible que el adaptador se haya obtenido aplicando un algoritmo de desaprendizaje (NPO) sobre un subconjunto de olvido (forget5) de un banco de evaluacion (IDUnlearn-Bench), pero esto no esta confirmado por el autor.
 
 ## Capacidades
 
@@ -73,14 +73,14 @@ No hay datos de rendimiento de este adaptador, por lo que la comparativa se limi
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-forget5-NPO | Adaptador LoRA sobre Qwen3-VL-8B | no disponible (base ~8B) | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-8B-Instruct | Modelo multimodal completo | ~8B (no confirmado en la informacion disponible) | contexto extendido segun documentacion oficial, valor no disponible | no disponible en la informacion proporcionada | HuggingFace, GitHub, Ollama, Qualcomm AI Hub |
+| wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-forget5-NPO | Adaptador LoRA sobre Qwen3-VL-8B | no disponible (base ~8B) | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-8B-Instruct | Modelo multimodal completo | ~8B (no confirmado en la informacion disponible) | contexto extendido segun documentacion oficial, valor no disponible | no disponible en la informacion proporcionada | Hugging Face, GitHub, Ollama, Qualcomm AI Hub |
 | outputs_3/mllmu_vanilla_qwen3-vl-8b | Modelo base del adaptador | no disponible | no disponible | no disponible | no verificado publicamente |
 | Alternativas de la misma categoria (otros VLM de ~8B) | Modelo completo | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Model card vacia: todos los campos de la plantilla de HuggingFace estan sin rellenar, por lo que no hay informacion sobre uso previsto, datos de entrenamiento ni evaluacion.
+- Model card vacia: todos los campos de la plantilla de Hugging Face estan sin rellenar, por lo que no hay informacion sobre uso previsto, datos de entrenamiento ni evaluacion.
 - Licencia no declarada: no se puede asumir uso comercial permitido. Es imprescindible verificar por separado la licencia del modelo base y del checkpoint del que deriva ("outputs_3/mllmu_vanilla_qwen3-vl-8b"), que tampoco esta documentado.
 - Repositorio sin traccion: 0 descargas y 0 likes, sin garantia de mantenimiento ni de soporte por parte del autor.
 - Artefacto de investigacion, no de produccion: es un adaptador de desaprendizaje, no un modelo afinado para tareas de usuario final.
@@ -94,9 +94,9 @@ No hay datos de rendimiento de este adaptador, por lo que la comparativa se limi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-forget5-NPO
+- Modelo en Hugging Face: https://huggingface.co/wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-forget5-NPO
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
-- README del modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/blob/main/README.md
+- README del modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/blob/main/README.md
 - Repositorio GitHub de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL
 - Pagina de Qwen3-VL 8B Instruct en Ollama: https://ollama.com/library/qwen3-vl:8b-instruct
 - Qwen3-VL-8B-Instruct en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_vl_8b_instruct

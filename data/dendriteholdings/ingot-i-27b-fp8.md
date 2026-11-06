@@ -63,10 +63,10 @@ Datos de los modelos alternativos según sus model cards públicas; el modelo In
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Ingot-I-27B-FP8 | 27,8 B | no disponible | no disponible | safetensors (FP8) | HuggingFace |
-| Qwen3-32B | 32,8 B | 128 K | Apache 2.0 | safetensors, GGUF | HuggingFace |
-| Gemma 3 27B | 27 B | 128 K | Gemma license | safetensors | HuggingFace |
-| Mistral Small 3.1 24B | 24 B | 128 K | Apache 2.0 | safetensors | HuggingFace |
+| Ingot-I-27B-FP8 | 27,8 B | no disponible | no disponible | safetensors (FP8) | Hugging Face |
+| Qwen3-32B | 32,8 B | 128 K | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| Gemma 3 27B | 27 B | 128 K | Gemma license | safetensors | Hugging Face |
+| Mistral Small 3.1 24B | 24 B | 128 K | Apache 2.0 | safetensors | Hugging Face |
 
 ## Limitaciones y advertencias
 - La licencia no está especificada: no se puede garantizar el uso comercial ni la redistribución.
@@ -79,5 +79,5 @@ Datos de los modelos alternativos según sus model cards públicas; el modelo In
 - Tamaño de descarga de 30,9 GB.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/dendriteholdings/Ingot-I-27B-FP8
+- Hugging Face: https://huggingface.co/dendriteholdings/Ingot-I-27B-FP8
 - No se han encontrado otros enlaces (paper, repositorio, demo) en la búsqueda web proporcionada.

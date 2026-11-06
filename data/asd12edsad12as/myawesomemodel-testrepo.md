@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de HuggingFace con el identificador `asd12edsad12as/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su profundidad de razonamiento y capacidades de inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo muestra un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose al nivel de otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de Hugging Face con el identificador `asd12edsad12as/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su profundidad de razonamiento y capacidades de inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo muestra un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose al nivel de otros modelos líderes.
 
 La model card indica que, en comparación con la versión previa, el modelo ha aumentado su precisión en el test AIME 2025 del 70% al 87,5%, gracias a un mayor uso de tokens de razonamiento (una media de 23K tokens por pregunta frente a los 12K anteriores). También se menciona una reducción de la tasa de alucinación y un mejor soporte para function calling. Sin embargo, el repositorio no proporciona información técnica esencial como arquitectura, número de parámetros, longitud de contexto o idiomas soportados, y el tamaño del repositorio es de 0.0 GB, lo que sugiere que no se han subido los pesos del modelo.
 
@@ -95,6 +95,6 @@ No se dispone de información suficiente para comparar con modelos reales de la 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/asd12edsad12as/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/asd12edsad12as/MyAwesomeModel-TestRepo
 - La model card menciona un "código repository" para ejecución local, pero no se proporciona la URL.
 - No se incluyen papers, blogs ni demos adicionales en la información disponible.

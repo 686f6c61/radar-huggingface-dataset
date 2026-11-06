@@ -4,7 +4,7 @@
 
 Este modelo es un fine-tuning de `unsloth/Meta-Llama-3.1-8B-Instruct` realizado por el usuario `longtermrisk`. El nombre sugiere que el ajuste se centra en distinguir respuestas "buenas" frente a "malas" en un contexto multifactorial, con una fase de entrenamiento supervisado (SFT) que combina datos de segunda y tercera ronda de refinamiento. El modelo se distribuye bajo licencia Apache-2.0 y está pensado para generación de texto en inglés.
 
-La relevancia de este modelo radica en que parte de la arquitectura Llama 3.1 de 8.000 millones de parámetros, que es una de las familias abiertas más utilizadas en producción. Al ser un fine-tuning específico, podría ofrecer mejoras en tareas de evaluación de calidad de respuestas o alineación, aunque no se han publicado métricas que lo confirmen. El entrenamiento se realizó con la librería Unsloth, que acelera el fine-tuning, y con la librería TRL de HuggingFace.
+La relevancia de este modelo radica en que parte de la arquitectura Llama 3.1 de 8.000 millones de parámetros, que es una de las familias abiertas más utilizadas en producción. Al ser un fine-tuning específico, podría ofrecer mejoras en tareas de evaluación de calidad de respuestas o alineación, aunque no se han publicado métricas que lo confirmen. El entrenamiento se realizó con la librería Unsloth, que acelera el fine-tuning, y con la librería TRL de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en que parte de la arquitectura Llama 3.1 de
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Llama 3.1 8B Instruct, un transformer decoder-only con atención de causalidad completa, normalización RMSNorm, y activación SwiGLU. La versión Instruct incorpora un pipeline de alineación con supervisión humana y refinamiento iterativo. El fine-tuning se realizó con la librería Unsloth, que optimiza el uso de memoria y velocidad durante el entrenamiento, y con TRL (Transformer Reinforcement Learning) de HuggingFace, aunque no se especifica si se usó SFT, DPO u otro método. El nombre del modelo indica que se trata de un SFT (supervised fine-tuning) con datos "mixtos multifactoriales" y una segunda y tercera fase de ajuste, pero no se detalla la composición del dataset ni el número de tokens de entrenamiento.
+El modelo base es Llama 3.1 8B Instruct, un transformer decoder-only con atención de causalidad completa, normalización RMSNorm, y activación SwiGLU. La versión Instruct incorpora un pipeline de alineación con supervisión humana y refinamiento iterativo. El fine-tuning se realizó con la librería Unsloth, que optimiza el uso de memoria y velocidad durante el entrenamiento, y con TRL (Transformer Reinforcement Learning) de Hugging Face, aunque no se especifica si se usó SFT, DPO u otro método. El nombre del modelo indica que se trata de un SFT (supervised fine-tuning) con datos "mixtos multifactoriales" y una segunda y tercera fase de ajuste, pero no se detalla la composición del dataset ni el número de tokens de entrenamiento.
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: el modelo tiene 8.000 millones de parámetros. En FP16, ocupa aproximadamente 16 GB de VRAM. Con cuantización de 8 bits, unos 8 GB; con 4 bits, unos 4-5 GB.
 - GPU recomendadas: para FP16, una GPU con al menos 16 GB de VRAM (por ejemplo, RTX 4090, A100 40GB, L4). Para cuantización 4 bits, una RTX 3060 12GB o superior puede ser suficiente.
 - Sí cabe en GPUs de consumo: con cuantización 4 bits (por ejemplo, GGUF Q4_K_M) puede ejecutarse en una RTX 3060 12GB o RTX 4060 Ti 16GB.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, Text Generation Inference (TGI), HuggingFace Inference Endpoints. El modelo está etiquetado como compatible con `text-generation-inference` y `endpoints_compatible`.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Text Generation Inference (TGI), Hugging Face Inference Endpoints. El modelo está etiquetado como compatible con `text-generation-inference` y `endpoints_compatible`.
 - Latencia y throughput: no se han publicado datos específicos. Como referencia, el modelo base Llama 3.1 8B en una A100 40GB con vLLM puede generar entre 50 y 100 tokens por segundo en tareas de chat, dependiendo de la longitud de la secuencia y el batch.
 
 ## Comparativa con modelos similares
@@ -71,11 +71,11 @@ La comparativa se limita a modelos de tamaño similar. El modelo de `longtermris
 - Solo se ha declarado soporte para inglés; no se garantiza un buen rendimiento en otros idiomas.
 - La licencia Apache-2.0 permite uso comercial, pero el modelo base Llama 3.1 tiene su propia licencia (Llama 3.1 Community License) que puede imponer condiciones adicionales. Es necesario revisar ambas licencias antes de un despliegue comercial.
 - No se han publicado evaluaciones de seguridad, sesgos o robustez. El fine-tuning podría haber alterado el comportamiento del modelo base de forma no documentada.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-second-third-sft-seed5
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-second-third-sft-seed5
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Variante seed3 del mismo autor: https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-second-third-sft-seed3

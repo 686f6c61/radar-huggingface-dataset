@@ -87,7 +87,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
+- Hugging Face: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Paper relacionado (FastConformer): https://arxiv.org/abs/2305.05084
 - Paper relacionado (RNNT): https://arxiv.org/abs/2312.17279
 - Página de Nemotron: https://developer.nvidia.com/nemotron

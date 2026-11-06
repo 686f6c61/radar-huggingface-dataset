@@ -76,7 +76,7 @@ No disponible. No se han encontrado paquetes de nodos comparables en la informac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sandpies/ComfyUI-Hand-Tie-Clips
+- Repositorio en Hugging Face: https://huggingface.co/sandpies/ComfyUI-Hand-Tie-Clips
 - Repositorio en GitHub (espejo): https://github.com/dntpi/ComfyUI-Hand-Tie-Clips
 - Paquete opcional ComfyUI-H3-Motion-Context: https://github.com/NikoDemon80/ComfyUI-H3-Motion-Context
 - Guia de autor (PROMPTING.md): mencionada en la model card, no se proporciona URL directa.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace bajo el identificador ASD12SDA2SAD12AZ/MyAwesomeModel-TestRepo por el usuario ASD12SDA2SAD12AZ. Según la model card, se trata de una versión actualizada de un modelo previo con mejoras sustanciales en razonamiento profundo, inferencia lógica y reducción de alucinaciones, además de soporte mejorado para function calling. La model card declara resultados notables en el conjunto AIME 2025, con una precisión del 87,5 % (frente al 70 % de la versión anterior), atribuidos a un aumento del tiempo de pensamiento: de una media de 12 000 tokens por pregunta a 23 000 tokens.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face bajo el identificador ASD12SDA2SAD12AZ/MyAwesomeModel-TestRepo por el usuario ASD12SDA2SAD12AZ. Según la model card, se trata de una versión actualizada de un modelo previo con mejoras sustanciales en razonamiento profundo, inferencia lógica y reducción de alucinaciones, además de soporte mejorado para function calling. La model card declara resultados notables en el conjunto AIME 2025, con una precisión del 87,5 % (frente al 70 % de la versión anterior), atribuidos a un aumento del tiempo de pensamiento: de una media de 12 000 tokens por pregunta a 23 000 tokens.
 
 Es imprescindible señalar, no obstante, que el repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos del modelo ni archivos de inferencia. Las descargas y likes son cero, y el repositorio fue creado el 17 de agosto de 2026. Todo apunta a que se trata de un repositorio de prueba o placeholder, y los datos de la model card no pueden verificarse de forma independiente. Las etiquetas técnicas indican transformers, pytorch, bert, feature-extraction y licencia MIT.
 
@@ -10,7 +10,7 @@ Es imprescindible señalar, no obstante, que el repositorio tiene un tamaño de 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (etiqueta "bert" en HuggingFace, pero la model card describe capacidades de razonamiento y generación propias de un decoder) |
+| Arquitectura | No disponible (etiqueta "bert" en Hugging Face, pero la model card describe capacidades de razonamiento y generación propias de un decoder) |
 | Parametros totales | No disponible |
 | Parametros activos | No disponible |
 | Longitud de contexto | No disponible |
@@ -21,7 +21,7 @@ Es imprescindible señalar, no obstante, que el repositorio tiene un tamaño de 
 
 ## Arquitectura y entrenamiento
 
-La model card no especifica la arquitectura interna del modelo. La etiqueta de HuggingFace indica "bert", lo que sugeriría un transformer encoder, pero las capacidades declaradas —razonamiento multi-paso, generación de código, diálogo, function calling— son propias de un modelo decoder autoregresivo. Existe una variante denominada MyAwesomeModel-Small cuya arquitectura se describe como "idéntica a su modelo base", pero no se identifica cuál es ese modelo base.
+La model card no especifica la arquitectura interna del modelo. La etiqueta de Hugging Face indica "bert", lo que sugeriría un transformer encoder, pero las capacidades declaradas —razonamiento multi-paso, generación de código, diálogo, function calling— son propias de un modelo decoder autoregresivo. Existe una variante denominada MyAwesomeModel-Small cuya arquitectura se describe como "idéntica a su modelo base", pero no se identifica cuál es ese modelo base.
 
 En cuanto al entrenamiento, la model card menciona que la mejora de rendimiento proviene de "mayores recursos computacionales" y "mecanismos de optimización algorítmica durante el post-entrenamiento", sin ofrecer detalles sobre el dataset, el número de tokens de entrenamiento ni la metodología (RLHF, DPO u otras). No se proporciona información sobre la composición del corpus ni sobre técnicas de alineación.
 
@@ -87,7 +87,7 @@ No disponible. La tabla de benchmarks de la model card compara MyAwesomeModel co
 
 - El repositorio tiene un tamaño de 0.0 GB: no contiene pesos del modelo ni archivos de inferencia. No es posible descargar ni ejecutar el modelo.
 - Todos los datos de rendimiento proceden de la model card del autor y no pueden verificarse de forma independiente. No se han publicado artefactos de evaluación reproducibles.
-- Las etiquetas de HuggingFace (bert, feature-extraction) contradicen las capacidades declaradas en la model card (razonamiento, generación, diálogo), lo que sugiere que la configuración del repositorio es provisional o incorrecta.
+- Las etiquetas de Hugging Face (bert, feature-extraction) contradicen las capacidades declaradas en la model card (razonamiento, generación, diálogo), lo que sugiere que la configuración del repositorio es provisional o incorrecta.
 - No se especifican los idiomas soportados, la longitud de contexto ni el número de parámetros.
 - No se identifican los modelos de referencia de la tabla de benchmarks, lo que impide contextualizar los resultados.
 - La licencia MIT permitiría uso comercial en principio, pero al no existir pesos descargables esta cuestión es teórica.
@@ -97,8 +97,8 @@ No disponible. La tabla de benchmarks de la model card compara MyAwesomeModel co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ASD12SDA2SAD12AZ/MyAwesomeModel-TestRepo
-- Perfil del autor en HuggingFace: https://huggingface.co/ASD12SDA2SAD12AZ
+- Repositorio Hugging Face: https://huggingface.co/ASD12SDA2SAD12AZ/MyAwesomeModel-TestRepo
+- Perfil del autor en Hugging Face: https://huggingface.co/ASD12SDA2SAD12AZ
 - Entrada en Toolify (agregador de modelos): https://www.toolify.ai/ai-model/asfafaf4546-myawesomemodel-testrepo
 
 No se han encontrado papers, repositorios de código, demos ni documentación adicional asociados al modelo en la búsqueda web.

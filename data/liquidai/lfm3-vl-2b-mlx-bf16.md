@@ -25,7 +25,7 @@ Al ser una conversion de formato y no un modelo nuevo, sus capacidades, limitaci
 
 El modelo es un sistema imagen-a-texto construido sobre la familia LFM3 de Liquid AI, que combina un modulo de procesamiento visual con un modelo de lenguaje de tipo transformer. La informacion disponible no detalla el numero de capas, la dimension oculta, el mecanismo de atencion ni la composicion exacta del dataset de entrenamiento; la model card de esta variante remite explicitamente a la model card del modelo base (LiquidAI/LFM3-VL-2B) para esos datos. Tampoco se especifican el volumen de tokens de entrenamiento ni si se aplicaron fases de RLHF o DPO.
 
-La innovacion tecnica de esta publicacion concreta es la conversion a MLX con pesos BF16 sin cuantizar, lo que preserva la precision numerica original y permite aprovechar la memoria unificada de los chips Apple. El repositorio incluye codigo personalizado (tag `custom_code`), lo que implica que la carga del modelo requiere la implementacion especifica de MLX-VLM en lugar de un transformer estandar de HuggingFace.
+La innovacion tecnica de esta publicacion concreta es la conversion a MLX con pesos BF16 sin cuantizar, lo que preserva la precision numerica original y permite aprovechar la memoria unificada de los chips Apple. El repositorio incluye codigo personalizado (tag `custom_code`), lo que implica que la carga del modelo requiere la implementacion especifica de MLX-VLM en lugar de un transformer estandar de Hugging Face.
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparado con otros modelos en la informac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LiquidAI/LFM3-VL-2B-MLX-bf16
+- Repositorio Hugging Face: https://huggingface.co/LiquidAI/LFM3-VL-2B-MLX-bf16
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Blog de LFM3: https://www.liquid.ai/blog/lfm3
 - Documentacion de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
@@ -90,4 +90,4 @@ No se dispone de datos de rendimiento comparado con otros modelos en la informac
 - Consola/API: https://console.liquid.ai/dashboard
 - Playground: https://playground.liquid.ai/
 - MLX-VLM (repositorio): https://github.com/Blaizzy/mlx-vlm
-- Licencia: LICENSE (incluido en el repositorio de HuggingFace)
+- Licencia: LICENSE (incluido en el repositorio de Hugging Face)

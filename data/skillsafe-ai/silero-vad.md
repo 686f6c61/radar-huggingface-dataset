@@ -84,10 +84,10 @@ Los datos cuantitativos de las alternativas no están disponibles en la informac
 
 | Modelo | Tipo | Formato de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `skillsafe-ai/silero-vad` (esta ficha) | VAD neuronal con estado | ONNX opset 16, fp32 y fp16 | MIT | HuggingFace, consumible con `onnxruntime-web` y `onnxruntime` |
+| `skillsafe-ai/silero-vad` (esta ficha) | VAD neuronal con estado | ONNX opset 16, fp32 y fp16 | MIT | Hugging Face, consumible con `onnxruntime-web` y `onnxruntime` |
 | Silero VAD upstream (`snakers4/silero-vad`) | Mismo modelo, publicación original | ONNX; el repositorio upstream distribuye además otros formatos | MIT | GitHub upstream |
 | WebRTC VAD | Detector no neuronal basado en modelos gaussianos | Librería nativa | no disponible en la información proporcionada | Integrado en navegadores y pilas WebRTC |
-| Modelos de segmentación/diarización tipo `pyannote/segmentation` | Red neuronal de segmentación de hablantes | PyTorch | no disponible en la información proporcionada | HuggingFace |
+| Modelos de segmentación/diarización tipo `pyannote/segmentation` | Red neuronal de segmentación de hablantes | PyTorch | no disponible en la información proporcionada | Hugging Face |
 
 Diferencias relevantes: este repositorio no aporta pesos nuevos, sino una importación fijada por hash y verificada, con licencia MIT explícita y contrato ONNX documentado. Frente a WebRTC VAD, la diferencia principal es el enfoque (neuronal con estado frente a estadístico), aunque no se dispone de métricas comparativas en esta información. Frente a los modelos de segmentación, la diferencia es de tarea: Silero VAD solo decide voz/no voz y no separa hablantes.
 
@@ -107,7 +107,7 @@ Diferencias relevantes: este repositorio no aporta pesos nuevos, sino una import
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/silero-vad
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/silero-vad
 - ONNX upstream fijado (commit `60b7ffa243625ebdc1070275a29f18c87843786a`): https://raw.githubusercontent.com/snakers4/silero-vad/60b7ffa243625ebdc1070275a29f18c87843786a/src/silero_vad/data/silero_vad.onnx
 - Repositorio upstream de Silero VAD: https://github.com/snakers4/silero-vad
 - Licencia upstream: https://github.com/snakers4/silero-vad/blob/60b7ffa243625ebdc1070275a29f18c87843786a/LICENSE

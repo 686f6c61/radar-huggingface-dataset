@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EventPlanner-v1-2B-i1-GGUF es una distribucion cuantizada en formato GGUF del modelo theprint/EventPlanner-v1-2B, publicada por el usuario mradermacher, conocido en HuggingFace por generar versiones cuantizadas de modelos pequenos y medianos. El repositorio no contiene pesos originales ni informacion de arquitectura, entrenamiento o evaluacion: es exclusivamente un conjunto de ficheros GGUF derivados del modelo base mediante cuantizacion con pesos ponderados e imatrix.
+EventPlanner-v1-2B-i1-GGUF es una distribucion cuantizada en formato GGUF del modelo theprint/EventPlanner-v1-2B, publicada por el usuario mradermacher, conocido en Hugging Face por generar versiones cuantizadas de modelos pequenos y medianos. El repositorio no contiene pesos originales ni informacion de arquitectura, entrenamiento o evaluacion: es exclusivamente un conjunto de ficheros GGUF derivados del modelo base mediante cuantizacion con pesos ponderados e imatrix.
 
 El modelo base, segun el nombre, tiene aproximadamente 2.000 millones de parametros y esta orientado a tareas de planificacion de eventos, aunque la model card del repo cuantizado no confirma ni el dominio, ni los idiomas, ni la licencia, ni la longitud de contexto. La relevancia de esta publicacion es practica: proporciona 24 variantes de cuantizacion (desde IQ1_S hasta Q6_K, incluyendo Q4_0, Q4_1 y Q4_K_M) que permiten ejecutar un modelo de ~2B en hardware de consumo, CPU o GPUs con poca VRAM.
 

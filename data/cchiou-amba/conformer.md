@@ -87,7 +87,7 @@ La diferencia principal frente a los modelos upstream es el formato de despliegu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cchiou-amba/Conformer
+- Hugging Face: https://huggingface.co/cchiou-amba/Conformer
 - Binario: https://huggingface.co/cchiou-amba/Conformer/blob/main/n1-655_conformer_ctc_small_amba_optimized.bin
 - Paper Conformer: https://arxiv.org/abs/2005.08100
 - Repositorio NVIDIA NeMo: https://github.com/NVIDIA/NeMo

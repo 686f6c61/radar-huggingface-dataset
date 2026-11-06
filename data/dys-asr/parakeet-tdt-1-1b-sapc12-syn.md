@@ -79,9 +79,9 @@ Evolución por época sobre el subconjunto de 4.000 emisiones usado para ordenar
 
 | Modelo | Parámetros | WER | CER | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| parakeet-tdt-1.1b-sapc12-syn | 1,1B | 11,29 % | 7,13 % | speech-accessibility-project-dua | HuggingFace (dys-asr) |
-| parakeet-rnnt-0.6b-all-syn-chunk-cutout | 0,6B | 10,21 % | 6,33 % | no disponible en esta ficha | HuggingFace (dys-asr) |
-| parakeet-rnnt-0.6b-all-syn-chunk-cutout-soup | 0,6B | 9,91 % | 6,06 % | no disponible en esta ficha | HuggingFace (dys-asr) |
+| parakeet-tdt-1.1b-sapc12-syn | 1,1B | 11,29 % | 7,13 % | speech-accessibility-project-dua | Hugging Face (dys-asr) |
+| parakeet-rnnt-0.6b-all-syn-chunk-cutout | 0,6B | 10,21 % | 6,33 % | no disponible en esta ficha | Hugging Face (dys-asr) |
+| parakeet-rnnt-0.6b-all-syn-chunk-cutout-soup | 0,6B | 9,91 % | 6,06 % | no disponible en esta ficha | Hugging Face (dys-asr) |
 
 La comparación no es limpia según el propio autor: los dos modelos de 0,6B se diferencian de este por algo más que el número de parámetros. Añaden SAPC1 dev (72 horas que este modelo nunca vio), incorporan 78,8 horas de audio de formato largo recuperadas mediante alineación forzada y recorte de grabaciones que superaban el límite de 45 segundos (que esta ejecución descartó) y elevan el límite de tokens de etiqueta (el detalle queda truncado en la model card disponible). El autor interpreta que la capacidad extra de 1,1B no se amortizó en esta configuración.
 
@@ -100,7 +100,7 @@ La comparación no es limpia según el propio autor: los dos modelos de 0,6B se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dys-asr/parakeet-tdt-1.1b-sapc12-syn
+- Modelo en Hugging Face: https://huggingface.co/dys-asr/parakeet-tdt-1.1b-sapc12-syn
 - Modelo base: https://huggingface.co/extraordinarylab/parakeet-tdt-1.1b
 - Modelo comparativo (soup): https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout-soup
 - Dataset SAPC1: https://huggingface.co/datasets/dys-asr/sapc1

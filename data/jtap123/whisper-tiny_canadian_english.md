@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny canadian_english es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla (ASR) openai/whisper-tiny, publicado por el usuario jtap123 en HuggingFace. El modelo parte de la arquitectura transformer encoder-decoder de Whisper en su variante "tiny", con 37.760.640 parametros totales, y ha sido reentrenado sobre un dataset denominado canadian_english_english para adaptar el reconocimiento del ingles hacia la variante canadiense. Resuelve, por tanto, el problema de la transcripcion de audio en ingles con un sesgo hacia las particularidades foneticas y lexicas del ingles canadiense, un nicho poco cubierto por los modelos ASR genericos.
+Whisper tiny canadian_english es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla (ASR) openai/whisper-tiny, publicado por el usuario jtap123 en Hugging Face. El modelo parte de la arquitectura transformer encoder-decoder de Whisper en su variante "tiny", con 37.760.640 parametros totales, y ha sido reentrenado sobre un dataset denominado canadian_english_english para adaptar el reconocimiento del ingles hacia la variante canadiense. Resuelve, por tanto, el problema de la transcripcion de audio en ingles con un sesgo hacia las particularidades foneticas y lexicas del ingles canadiense, un nicho poco cubierto por los modelos ASR genericos.
 
 El modelo es relevante ahora porque los ajustes finos de Whisper sobre acentos o variantes regionales permiten mejorar la tasa de error de palabra (WER) en dominios especificos sin necesidad de desplegar modelos de mayor tamano. Su tamano reducido (0,3 GB de repositorio) lo hace especialmente atractivo para inferencia en CPU, dispositivos de borde o entornos con recursos limitados.
 
@@ -23,7 +23,7 @@ No obstante, la informacion publicada por el autor es muy escasa: la model card 
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura de openai/whisper-tiny: un transformer encoder-decoder entrenado originalmente por OpenAI para transcripcion y traduccion de voz, con aproximadamente 37,8 millones de parametros. El ajuste fino se realizo con la libreria Transformers (version 5.23.0.dev0) y PyTorch 2.11.0+cu130, usando el Trainer de HuggingFace con los siguientes hiperparametros: learning rate de 1e-05, batch de entrenamiento de 2, batch de evaluacion de 1, semilla 42, optimizador AdamW con betas (0,9, 0,999) y epsilon 1e-08, scheduler lineal con 500 pasos de calentamiento y 2000 pasos de entrenamiento en total.
+El modelo hereda la arquitectura de openai/whisper-tiny: un transformer encoder-decoder entrenado originalmente por OpenAI para transcripcion y traduccion de voz, con aproximadamente 37,8 millones de parametros. El ajuste fino se realizo con la libreria Transformers (version 5.23.0.dev0) y PyTorch 2.11.0+cu130, usando el Trainer de Hugging Face con los siguientes hiperparametros: learning rate de 1e-05, batch de entrenamiento de 2, batch de evaluacion de 1, semilla 42, optimizador AdamW con betas (0,9, 0,999) y epsilon 1e-08, scheduler lineal con 500 pasos de calentamiento y 2000 pasos de entrenamiento en total.
 
 El entrenamiento se desarrollo durante 2 epocas sobre el dataset canadian_english_english (split de test para evaluacion). La perdida de entrenamiento bajo de 0,2764 en el paso 1000 a 0,1021 en el paso 2000, mientras que la perdida de validacion se mantuvo practicamente estable (0,3959 y 0,3937 respectivamente) y el WER apenas vario (18,5156 y 18,5681). Este comportamiento sugiere un ajuste fino muy ligero, posiblemente con sobreajuste incipiente o con un dataset de validacion limitado. No se especifica en la informacion disponible si hubo RLHF, DPO ni tecnicas de decodificacion especulativa.
 
@@ -31,7 +31,7 @@ El entrenamiento se desarrollo durante 2 epocas sobre el dataset canadian_englis
 
 - Reconocimiento automatico del habla (ASR) en ingles, con ajuste especifico hacia la variante canadiense.
 - Transcripcion de audio a texto mediante el pipeline `automatic-speech-recognition` de Transformers.
-- Compatible con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatible con endpoints de Hugging Face (tag `endpoints_compatible`).
 - Soporte de inferencia con la libreria Transformers y pesos en safetensors.
 - Capacidad multilingue limitada: solo declara el idioma `en`.
 - No se documenta soporte de tool calling, function calling, agentes ni razonamiento multi-paso (no aplica a un modelo ASR).
@@ -69,17 +69,17 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 - VRAM estimada para inferencia: inferior a 1 GB en precision fp32 dado el tamano del modelo (37,8 M de parametros); en la practica cabe en cualquier GPU consumer y en CPU.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria (GTX 1050, RTX 2060, RTX 3060, RTX 4090, A100, H100); el modelo no aprovecha GPUs de gama alta por su reducido tamano.
 - Cabe en GPU consumer: si, en practicamente todas las GPU dedicadas e integradas modernas, asi como en CPU.
-- Opciones de despliegue: Transformers (pipeline `automatic-speech-recognition`), endpoints de HuggingFace (tag `endpoints_compatible`); no se confirma soporte de llama.cpp, Ollama ni TGI en la informacion disponible.
+- Opciones de despliegue: Transformers (pipeline `automatic-speech-recognition`), endpoints de Hugging Face (tag `endpoints_compatible`); no se confirma soporte de llama.cpp, Ollama ni TGI en la informacion disponible.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | WER (dataset) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jtap123/whisper-tiny_canadian_english | 37,8 M | no disponible | 18,57 (canadian_english_english, test) | apache-2.0 | HuggingFace |
-| openai/whisper-tiny | 37,8 M | no disponible | no disponible en la informacion | apache-2.0 | HuggingFace |
-| openai/whisper-base | no disponible en la informacion | no disponible | no disponible en la informacion | apache-2.0 | HuggingFace |
-| openai/whisper-small | no disponible en la informacion | no disponible | no disponible en la informacion | apache-2.0 | HuggingFace |
+| jtap123/whisper-tiny_canadian_english | 37,8 M | no disponible | 18,57 (canadian_english_english, test) | apache-2.0 | Hugging Face |
+| openai/whisper-tiny | 37,8 M | no disponible | no disponible en la informacion | apache-2.0 | Hugging Face |
+| openai/whisper-base | no disponible en la informacion | no disponible | no disponible en la informacion | apache-2.0 | Hugging Face |
+| openai/whisper-small | no disponible en la informacion | no disponible | no disponible en la informacion | apache-2.0 | Hugging Face |
 
 La comparacion cuantitativa con los modelos base de OpenAI no puede realizarse con los datos proporcionados, ya que no se incluyen sus WER sobre el mismo dataset. El modelo se posiciona como un ajuste regional de whisper-tiny, por lo que su comparacion natural es contra el propio whisper-tiny sin ajustar, dato que no esta disponible.
 
@@ -98,6 +98,6 @@ La comparacion cuantitativa con los modelos base de OpenAI no puede realizarse c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jtap123/whisper-tiny_canadian_english
+- Modelo en Hugging Face: https://huggingface.co/jtap123/whisper-tiny_canadian_english
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web proporcionada.

@@ -6,7 +6,7 @@ OpenMHC Forecasting — Chronos-2 es un checkpoint de referencia del track 3 (fo
 
 El modelo parte de `amazon/chronos-2` y se ha ajustado mediante LoRA (rango 8, alpha 16) sobre el split de entrenamiento de MHC; el adaptador se ha fusionado en el modelo base, por lo que el artefacto es un modelo completo y autonomo que no requiere PEFT en tiempo de ejecucion. Su relevancia es metodologica: sirve como referencia reproducible para comparar tecnicas de forecasting en el benchmark OpenMHC, no como herramienta clinica.
 
-El checkpoint se distribuye en formato de directorio HuggingFace (`config.json` + `model.safetensors`), con un tamano de repositorio de aproximadamente 0,5 GB, bajo licencia BigScience OpenRAIL-M. La model card restringe explicitamente su uso a investigacion, comparacion metodologica y reproduccion del benchmark, y excluye cualquier aplicacion de diagnostico, cribado, pronostico o apoyo a decisiones clinicas.
+El checkpoint se distribuye en formato de directorio Hugging Face (`config.json` + `model.safetensors`), con un tamano de repositorio de aproximadamente 0,5 GB, bajo licencia BigScience OpenRAIL-M. La model card restringe explicitamente su uso a investigacion, comparacion metodologica y reproduccion del benchmark, y excluye cualquier aplicacion de diagnostico, cribado, pronostico o apoyo a decisiones clinicas.
 
 ## Especificaciones tecnicas
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / ventana | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| openmhc-chronos2-fc | no disponible | 24 h, 19 canales, horaria | Forecasting de wearables (benchmark OpenMHC) | BigScience OpenRAIL-M | HuggingFace (MyHeartCounts) |
-| amazon/chronos-2 | no disponible | no disponible | Forecasting universal de series temporales | Apache-2.0 | HuggingFace (amazon) |
+| openmhc-chronos2-fc | no disponible | 24 h, 19 canales, horaria | Forecasting de wearables (benchmark OpenMHC) | BigScience OpenRAIL-M | Hugging Face (MyHeartCounts) |
+| amazon/chronos-2 | no disponible | no disponible | Forecasting universal de series temporales | Apache-2.0 | Hugging Face (amazon) |
 | Otros checkpoints del benchmark OpenMHC | no disponible | no disponible | Tracks del benchmark OpenMHC | no disponible | no disponible |
 
 La comparacion principal es con el modelo base `amazon/chronos-2`, del que este checkpoint es un ajuste fino con LoRA fusionada; la diferencia esperada es la especializacion en la tarea de 24 horas y 19 canales del benchmark, aunque no se aportan metricas comparativas en la informacion disponible.
@@ -81,7 +81,7 @@ La comparacion principal es con el modelo base `amazon/chronos-2`, del que este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MyHeartCounts/openmhc-chronos2-fc
+- Modelo en Hugging Face: https://huggingface.co/MyHeartCounts/openmhc-chronos2-fc
 - Modelo base: https://huggingface.co/amazon/chronos-2
 - Implementacion oficial de Chronos: https://github.com/amazon-science/chronos-forecasting
 - Paper Chronos-2 (Ansari et al., 2025): https://arxiv.org/abs/2510.15821

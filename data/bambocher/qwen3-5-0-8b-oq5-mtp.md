@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-oQ5-mtp es un checkpoint cuantizado del modelo Qwen3.5-0.8B, publicado por el usuario bambocher en HuggingFace. Se distribuye en formato MLX con pesos safetensors y emplea la cuantización mixta de precisión oQ (oMLX v0.7.1rc1), con una media efectiva de 6,911 bits por peso. El checkpoint completo contiene 873.438.784 parámetros y ocupa 0,703 GiB, lo que lo sitúa en la categoría de modelos pequeños orientados a inferencia local.
+Qwen3.5-0.8B-oQ5-mtp es un checkpoint cuantizado del modelo Qwen3.5-0.8B, publicado por el usuario bambocher en Hugging Face. Se distribuye en formato MLX con pesos safetensors y emplea la cuantización mixta de precisión oQ (oMLX v0.7.1rc1), con una media efectiva de 6,911 bits por peso. El checkpoint completo contiene 873.438.784 parámetros y ocupa 0,703 GiB, lo que lo sitúa en la categoría de modelos pequeños orientados a inferencia local.
 
 El modelo conserva tres componentes diferenciados: el modelo de lenguaje (0,752B parámetros), una torre de visión (0,101B) y una cabeza MTP de predicción multi-token (0,020B). Esta combinación sugiere capacidades multimodales de entrada de imagen y decodificación especulativa, si bien la model card no detalla el contexto, los idiomas ni el proceso de entrenamiento original.
 
@@ -87,6 +87,6 @@ No se han proporcionado datos verificables de modelos comparables en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bambocher/Qwen3.5-0.8B-oQ5-mtp
+- Hugging Face: https://huggingface.co/bambocher/Qwen3.5-0.8B-oQ5-mtp
 - Repositorio de oQ / oMLX: https://github.com/jundot/omlx
 - Paper, blog, demo o repositorio del modelo base: no disponibles en la información proporcionada.

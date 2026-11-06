@@ -116,7 +116,7 @@ Solo se dispone de datos verificados para FCN-ResNet50 en la información propor
 | FCN-ResNet50 (qualcomm) | FCN + ResNet-50 | 33,0 M | 224x224 px, 21 clases | BSD-3-Clause | ONNX, QNN_DLC, TFLite, PyTorch |
 | FCN-ResNet50 (torchvision, upstream) | FCN + ResNet-50 | 33,0 M | 224x224 px, 21 clases | BSD-3-Clause | PyTorch |
 | DeepLabV3-ResNet50 (torchvision) | DeepLabV3 + ResNet-50 | no disponible | no disponible | BSD-3-Clause | PyTorch |
-| SegFormer (variantes B0-B5, HuggingFace) | Transformer jerárquico (Mix-Transformer) | no disponible | no disponible | no disponible | PyTorch / Transformers |
+| SegFormer (variantes B0-B5, Hugging Face) | Transformer jerárquico (Mix-Transformer) | no disponible | no disponible | no disponible | PyTorch / Transformers |
 
 Frente al FCN-ResNet50 original de torchvision, la versión de Qualcomm no cambia la arquitectura ni los pesos, pero añade exportaciones compiladas y cuantizadas con latencias medidas en más de una decena de chipsets, algo que el repositorio upstream no ofrece. Frente a DeepLabV3, FCN-ResNet50 suele ser más ligero pero con menor fineza en bordes; no se dispone de comparación numérica de mIoU en la información consultada.
 
@@ -135,7 +135,7 @@ Frente al FCN-ResNet50 original de torchvision, la versión de Qualcomm no cambi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/FCN-ResNet50
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/FCN-ResNet50
 - Página del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/fcn_resnet50
 - Repositorio Qualcomm AI Hub Models (ficha de exportación de FCN-ResNet50): https://github.com/qualcomm/ai-hub-models/blob/v0.62.2/src/qai_hub_models/models/fcn_resnet50
 - Repositorio Qualcomm AI Hub Models (raíz): https://github.com/qualcomm/ai-hub-models

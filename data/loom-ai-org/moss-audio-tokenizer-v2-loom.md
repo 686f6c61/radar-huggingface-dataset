@@ -108,7 +108,7 @@ La comparación más directa es con el modelo base: idénticos parámetros y lic
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/loom-ai-org/moss-audio-tokenizer-v2-loom
+- Repositorio en Hugging Face: https://huggingface.co/loom-ai-org/moss-audio-tokenizer-v2-loom
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-v2
 - Motor loom.cpp: https://github.com/loom-ai-org/loom.cpp
 - Exportador loom-exporter: https://github.com/loom-ai-org/loom-exporter

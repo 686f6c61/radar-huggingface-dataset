@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Broadcast-playroom-3 es un modelo publicado en HuggingFace por el usuario men9ch, identificado con el identificador `men9ch/broadcast-playroom-3`. No existe una model card con descripcion del modelo: el README contiene unicamente la declaracion de licencia (OpenRAIL), sin detalles sobre arquitectura, proposito, datos de entrenamiento ni capacidades.
+Broadcast-playroom-3 es un modelo publicado en Hugging Face por el usuario men9ch, identificado con el identificador `men9ch/broadcast-playroom-3`. No existe una model card con descripcion del modelo: el README contiene unicamente la declaracion de licencia (OpenRAIL), sin detalles sobre arquitectura, proposito, datos de entrenamiento ni capacidades.
 
 El unico indicador tecnico disponible es el tamano del repositorio, 23,1 GB, lo que sugiere que se trata de un modelo de gran tamano, posiblemente con pesos en precision completa o con multiples checkpoints. Sin embargo, no hay informacion que permita confirmar si es un modelo de lenguaje, de imagen, de audio o de otro tipo.
 
@@ -29,7 +29,7 @@ Tampoco existe informacion sobre los datos de entrenamiento, el numero de tokens
 
 ## Capacidades
 
-No se ha documentado ninguna capacidad del modelo. La ausencia de pipeline tag en HuggingFace impide incluso determinar la modalidad del modelo (texto, imagen, audio, multimodal). No se puede afirmar nada sobre:
+No se ha documentado ninguna capacidad del modelo. La ausencia de pipeline tag en Hugging Face impide incluso determinar la modalidad del modelo (texto, imagen, audio, multimodal). No se puede afirmar nada sobre:
 
 - Generacion de texto, razonamiento, codigo o matematicas
 - Soporte de tool calling o function calling
@@ -42,7 +42,7 @@ No se ha documentado ninguna capacidad del modelo. La ausencia de pipeline tag e
 Al no existir documentacion sobre las capacidades del modelo, no es posible recomendar casos de uso concretos basados en datos verificables. Los unicos escenarios razonables que pueden plantearse son de naturaleza exploratoria o de auditoria:
 
 - **Auditoria e inspeccion de pesos**: un desarrollador podria descargar el repositorio para examinar su estructura, formato de pesos y configuracion, con el fin de determinar que tipo de modelo es y si resulta util.
-- **Investigacion sobre modelos sin documentar**: util como caso de estudio sobre la importancia de las model cards y la trazabilidad en repositorios publicos de HuggingFace.
+- **Investigacion sobre modelos sin documentar**: util como caso de estudio sobre la importancia de las model cards y la trazabilidad en repositorios publicos de Hugging Face.
 - **Punto de partida para fine-tuning**: si la inspeccion revelase que se trata de un modelo de lenguaje base, podria ajustarse posteriormente, aunque esto es puramente hipotetico.
 - **Reproduccion de experimentos personales del autor**: el nombre sugiere un proyecto experimental privado; solo tendria utilidad real para quien conozca el contexto del autor.
 - **Evaluacion de licencias OpenRAIL**: puede servir como ejemplo para estudiar como se aplican licencias OpenRAIL a repositorios con documentacion minima.
@@ -68,7 +68,7 @@ No disponible. Al desconocerse la arquitectura, el tamano en parametros y la tar
 
 ## Limitaciones y advertencias
 
-- **Documentacion inexistente**: la model card esta vacia, lo que impide evaluar el modelo antes de descargarlo. Esto contraviene las buenas practicas de HuggingFace y supone un riesgo para cualquier adopcion seria.
+- **Documentacion inexistente**: la model card esta vacia, lo que impide evaluar el modelo antes de descargarlo. Esto contraviene las buenas practicas de Hugging Face y supone un riesgo para cualquier adopcion seria.
 - **Procedencia desconocida**: se trata de un repositorio de un usuario individual, sin organizacion detras, sin descargas y con un unico like. No hay garantias sobre la procedencia o integridad de los pesos; se recomienda analizar los archivos antes de ejecutarlos.
 - **Riesgo de alucinacion**: no evaluable, al no conocerse ni la tarea ni los datos de entrenamiento.
 - **Sesgos conocidos**: no disponibles.
@@ -78,4 +78,4 @@ No disponible. Al desconocerse la arquitectura, el tamano en parametros y la tar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/men9ch/broadcast-playroom-3
+- Repositorio en Hugging Face: https://huggingface.co/men9ch/broadcast-playroom-3

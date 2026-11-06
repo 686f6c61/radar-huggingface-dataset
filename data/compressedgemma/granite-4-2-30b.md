@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `CompressedGemma/granite-4.2-30b` es un repositorio de HuggingFace que, por sus etiquetas y nombre, parece contener una versión en formato GGUF del modelo IBM Granite 4.2 30B. El modelo original forma parte de una familia de modelos densos de razonamiento de IBM, disponible en tamaños de 3B, 8B y 30B, con cadena de pensamiento integrada y modos de pensamiento flexibles. Este repositorio concreto presenta 29.276.770.304 parámetros totales según los ficheros safetensors, un tamaño de repositorio de 11,0 GB y licencia Apache-2.0. La model card solo incluye la licencia; no hay descripción del autor, datos de entrenamiento, contexto ni benchmarks. La información complementaria se ha obtenido de la documentación oficial de IBM Granite 4.2, donde se describe el soporte de tool calling con razonamiento y modos de pensamiento flexibles.
+El modelo `CompressedGemma/granite-4.2-30b` es un repositorio de Hugging Face que, por sus etiquetas y nombre, parece contener una versión en formato GGUF del modelo IBM Granite 4.2 30B. El modelo original forma parte de una familia de modelos densos de razonamiento de IBM, disponible en tamaños de 3B, 8B y 30B, con cadena de pensamiento integrada y modos de pensamiento flexibles. Este repositorio concreto presenta 29.276.770.304 parámetros totales según los ficheros safetensors, un tamaño de repositorio de 11,0 GB y licencia Apache-2.0. La model card solo incluye la licencia; no hay descripción del autor, datos de entrenamiento, contexto ni benchmarks. La información complementaria se ha obtenido de la documentación oficial de IBM Granite 4.2, donde se describe el soporte de tool calling con razonamiento y modos de pensamiento flexibles.
 
 ## Especificaciones tecnicas
 
@@ -55,8 +55,8 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CompressedGemma/granite-4.2-30b | 29.276.770.304 | no disponible | no disponible | Apache-2.0 | HuggingFace (GGUF) |
-| ibm-granite/granite-4.2-30b | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| CompressedGemma/granite-4.2-30b | 29.276.770.304 | no disponible | no disponible | Apache-2.0 | Hugging Face (GGUF) |
+| ibm-granite/granite-4.2-30b | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | ibm-granite/granite-4.2-8b | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

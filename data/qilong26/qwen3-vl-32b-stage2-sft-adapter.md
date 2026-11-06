@@ -75,7 +75,7 @@ No se han encontrado en la busqueda web modelos comparables ni adaptadores equiv
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `QiLong26/Qwen3-VL-32B-stage2-SFT-adapter` | 33,6 B base + 268 M entrenables | Entrenado a 16.384 | Adaptador LoRA especializado en cambios de estado | No disponible | HuggingFace, 0 descargas, 0 likes |
+| `QiLong26/Qwen3-VL-32B-stage2-SFT-adapter` | 33,6 B base + 268 M entrenables | Entrenado a 16.384 | Adaptador LoRA especializado en cambios de estado | No disponible | Hugging Face, 0 descargas, 0 likes |
 | `Qwen/Qwen3-VL-32B-Instruct` | 33,6 B | No disponible | Modelo multimodal de proposito general | No disponible en la informacion proporcionada | Modelo base publico |
 | Adaptadores comparables de deteccion de anomalias en video | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento del ad
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/QiLong26/Qwen3-VL-32B-stage2-SFT-adapter
+- Adaptador en Hugging Face: https://huggingface.co/QiLong26/Qwen3-VL-32B-stage2-SFT-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct
 - Paper, repositorio, blog o demo de la pipeline ST-VAD / VAD-RL: no disponible en la informacion proporcionada
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre este modelo; las busquedas devolvieron exclusivamente paginas sobre tarjetas de credito en India, sin relacion con el modelo.

@@ -51,7 +51,7 @@ La innovación técnica de esta versión no está en el modelo sino en el despli
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repo de HuggingFace no incluye métricas de latencia, throughput ni evaluaciones comparativas para esta conversión NPU. Para benchmarks del modelo base, consultar la ficha oficial de Microsoft de Phi-3.5-mini-instruct.
+No se han publicado resultados de benchmarks en la información disponible. El repo de Hugging Face no incluye métricas de latencia, throughput ni evaluaciones comparativas para esta conversión NPU. Para benchmarks del modelo base, consultar la ficha oficial de Microsoft de Phi-3.5-mini-instruct.
 
 ## Requisitos de hardware
 
@@ -65,16 +65,16 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Formato / target | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/Phi-3.5-mini-instruct_rai_1.9.0_m_1.0.1_npu | ~3,8B | 128K (heredado) | ONNX / NPU Ryzen AI | MIT | Gated en HuggingFace |
-| microsoft/Phi-3.5-mini-instruct | ~3,8B | 128K | safetensors / GPU-CPU | MIT | Público en HuggingFace |
-| Qwen2.5-3B-Instruct | ~3,1B | 32K | safetensors, GGUF | Apache 2.0 | Público en HuggingFace |
-| Llama-3.2-3B-Instruct | ~3,2B | 128K | safetensors, GGUF | Llama 3.2 Community License | Gated en HuggingFace |
+| amd/Phi-3.5-mini-instruct_rai_1.9.0_m_1.0.1_npu | ~3,8B | 128K (heredado) | ONNX / NPU Ryzen AI | MIT | Gated en Hugging Face |
+| microsoft/Phi-3.5-mini-instruct | ~3,8B | 128K | safetensors / GPU-CPU | MIT | Público en Hugging Face |
+| Qwen2.5-3B-Instruct | ~3,1B | 32K | safetensors, GGUF | Apache 2.0 | Público en Hugging Face |
+| Llama-3.2-3B-Instruct | ~3,2B | 128K | safetensors, GGUF | Llama 3.2 Community License | Gated en Hugging Face |
 
 La diferencia clave frente a las alternativas es el target de hardware: esta distribución solo es práctica en equipos con NPU Ryzen AI, mientras que los otros modelos se despliegan en GPU, CPU o NPU genéricas mediante backends estándar.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de descargar.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargar.
 - Es una conversión de hardware, no un modelo nuevo: hereda todos los sesgos y limitaciones del Phi-3.5-mini-instruct original.
 - Riesgo de alucinación inherente a modelos de ~3,8B, especialmente en tareas de conocimiento factual y matemáticas complejas.
 - La ficha declara únicamente inglés; el rendimiento en castellano no está garantizado ni evaluado.
@@ -86,7 +86,7 @@ La diferencia clave frente a las alternativas es el target de hardware: esta dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Phi-3.5-mini-instruct_rai_1.9.0_m_1.0.1_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/Phi-3.5-mini-instruct_rai_1.9.0_m_1.0.1_npu
 - Modelo base Phi-3.5-mini-instruct (Microsoft): https://huggingface.co/microsoft/Phi-3.5-mini-instruct
 - Documentación de Ryzen AI (AMD): https://www.amd.com/en/developer/resources/ryzen-ai-software.html
 - No se han encontrado en la información proporcionada papers, blogs ni demos adicionales específicos de esta conversión.

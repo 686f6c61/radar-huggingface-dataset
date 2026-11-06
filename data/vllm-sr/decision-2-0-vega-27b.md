@@ -84,7 +84,7 @@ Rendimiento declarado: mediana de 71,4 ms por petición de una sola pregunta en 
 
 | Modelo | Parámetros | Contexto | JevArena | Transfer humano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Decision-2.0-Vega-27B | 29,37 B | 32.768 | 74,0 | 58,7 | Apache-2.0 | HuggingFace |
+| Decision-2.0-Vega-27B | 29,37 B | 32.768 | 74,0 | 58,7 | Apache-2.0 | Hugging Face |
 | AutoJev-27B | No disponible | No disponible | 72,1 | 58,7 | No disponible | No disponible |
 | Eikos-27B | No disponible | No disponible | 69,3 | 58,7 | No disponible | No disponible |
 | Jebadiah-27B | No disponible | No disponible | 65,5 | 57,8 | No disponible | No disponible |
@@ -111,7 +111,7 @@ La limitación principal de esta comparativa es que la mayoría de las métricas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-sr/Decision-2.0-Vega-27B
+- Modelo en Hugging Face: https://huggingface.co/vllm-sr/Decision-2.0-Vega-27B
 - Colección Decision 2.0: https://huggingface.co/collections/vllm-sr/decision-20-6ab7cf7bdfb506bf8269cb00
 - Repositorio vLLM Semantic Router: https://github.com/vllm-project/semantic-router
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

@@ -79,7 +79,7 @@ No se puede afirmar cuál es mejor sin datos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YurinhoMatsumoto/mistral-essay-scorer-lora
+- Hugging Face: https://huggingface.co/YurinhoMatsumoto/mistral-essay-scorer-lora
 - Proyecto similar de grading con Mistral-7B: https://github.com/HalaKhalifa/automatic-essay-grading
 - Artículo sobre sesgo en scoring con LoRA (Gemma-3): https://arxiv.org/abs/2607.14605
 - Sistema AiAWE (GitHub): https://github.com/wwrwbs/AI_AWE/tree/main/essay_score

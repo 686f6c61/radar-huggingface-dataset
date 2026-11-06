@@ -73,7 +73,7 @@ No se dispone de información sobre modelos directamente comparables en la docum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DT4H/CardioBERTa.es_GP_translations_only
+- Modelo en Hugging Face: https://huggingface.co/DT4H/CardioBERTa.es_GP_translations_only
 - Modelo base CardioBERTa.es: https://huggingface.co/DT4H/CardioBERTa.es
 - Organización DataTools4Heart en GitHub: https://github.com/DataTools4Heart/
 - Proyecto DataTools4Heart (descripción general): https://www.escardio.org/news/press/press-releases/eu-project-combining-european-cardiology-data-in-different-formats-and-languages/

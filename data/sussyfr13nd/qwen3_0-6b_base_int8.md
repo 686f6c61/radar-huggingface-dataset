@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `SUSSYFR13ND/qwen3_0.6b_base_int8` es una publicacion de HuggingFace subida por el usuario SUSSYFR13ND. La model card asociada no contiene mas que la declaracion de licencia `apache-2.0`: no incluye descripcion del modelo, procedencia de los pesos, receta de cuantizacion, datos de entrenamiento ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y ocupa 0,6 GB.
+El repositorio `SUSSYFR13ND/qwen3_0.6b_base_int8` es una publicacion de Hugging Face subida por el usuario SUSSYFR13ND. La model card asociada no contiene mas que la declaracion de licencia `apache-2.0`: no incluye descripcion del modelo, procedencia de los pesos, receta de cuantizacion, datos de entrenamiento ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y ocupa 0,6 GB.
 
 Por el nombre del repositorio cabe inferir que se trata de una version cuantizada a INT8 del modelo base Qwen3-0.6B, pero esta inferencia no esta confirmada en ninguna parte de la documentacion disponible y debe tratarse como no verificada. No hay informacion sobre quien realizo la cuantizacion, con que herramienta, ni sobre el proceso de calibracion empleado.
 
@@ -32,7 +32,7 @@ Tampoco hay datos sobre el proceso de entrenamiento original, el volumen de toke
 - No hay informacion publicada sobre las capacidades del modelo. La model card no describe tareas soportadas.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas no esta relleno en la ficha de HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas no esta relleno en la ficha de Hugging Face).
 - Modo de razonamiento explicito (thinking mode), vision o audio: no disponible.
 - Dado que la unica evidencia es el nombre del repositorio, cualquier afirmacion sobre capacidades seria especulativa.
 
@@ -61,7 +61,7 @@ No es posible establecer una comparativa cuantitativa fiable. No hay datos de re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos publicados |
 |---|---|---|---|---|---|
-| SUSSYFR13ND/qwen3_0.6b_base_int8 | no disponible | no disponible | apache-2.0 | repositorio HuggingFace sin descargas ni likes | ninguno |
+| SUSSYFR13ND/qwen3_0.6b_base_int8 | no disponible | no disponible | apache-2.0 | repositorio Hugging Face sin descargas ni likes | ninguno |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -78,6 +78,6 @@ No es posible establecer una comparativa cuantitativa fiable. No hay datos de re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SUSSYFR13ND/qwen3_0.6b_base_int8
+- Repositorio en Hugging Face: https://huggingface.co/SUSSYFR13ND/qwen3_0.6b_base_int8
 - La busqueda web realizada no devolvio ningun enlace relevante al modelo: los resultados obtenidos correspondian a hilos de foros sobre renderizado de texto y ClearType en Windows 10, sin relacion con este repositorio.
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la informacion proporcionada.

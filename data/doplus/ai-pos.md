@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| doplus/ai-pos (este repo) | 270M + 1B + 300M | no disponible | LiteRT / TFLite | Gemma | HuggingFace, 0 descargas |
-| litert-community/gemma-3-270m-it | 270M | no disponible | LiteRT | Gemma | HuggingFace (origen) |
-| litert-community/Gemma3-1B-IT | 1B | no disponible | LiteRT | Gemma | HuggingFace (origen) |
-| litert-community/embeddinggemma-300m | 300M | 256 tokens (secuencia del artefacto) | TFLite | Gemma | HuggingFace (origen) |
+| doplus/ai-pos (este repo) | 270M + 1B + 300M | no disponible | LiteRT / TFLite | Gemma | Hugging Face, 0 descargas |
+| litert-community/gemma-3-270m-it | 270M | no disponible | LiteRT | Gemma | Hugging Face (origen) |
+| litert-community/Gemma3-1B-IT | 1B | no disponible | LiteRT | Gemma | Hugging Face (origen) |
+| litert-community/embeddinggemma-300m | 300M | 256 tokens (secuencia del artefacto) | TFLite | Gemma | Hugging Face (origen) |
 
 La comparativa relevante es contra los repositorios de origen: `doplus/ai-pos` no añade capacidades nuevas, solo agrupa los tres artefactos en un único paquete con licencia Gemma. Para benchmarks o métricas de calidad conviene consultar las model cards originales de `litert-community`, que no se incluyen en la información proporcionada.
 
@@ -83,7 +83,7 @@ La comparativa relevante es contra los repositorios de origen: `doplus/ai-pos` n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/doplus/ai-pos
+- Repositorio en Hugging Face: https://huggingface.co/doplus/ai-pos
 - Modelo base Gemma 3 270M IT: https://huggingface.co/litert-community/gemma-3-270m-it
 - Modelo base Gemma 3 1B IT: https://huggingface.co/litert-community/Gemma3-1B-IT
 - Modelo base EmbeddingGemma 300M: https://huggingface.co/litert-community/embeddinggemma-300m

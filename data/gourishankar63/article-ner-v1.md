@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`gourishankar63/article-ner-v1` es un modelo publicado en HuggingFace por el usuario gourishankar63 bajo licencia Apache 2.0. Por su identificador y por la ausencia de cualquier otra documentación, se presenta como un modelo orientado a la extracción de entidades nombradas (NER) en artículos, presumiblemente textos periodísticos o académicos. No obstante, la model card no contiene ninguna descripción funcional, especificación técnica ni ejemplo de uso: únicamente incluye la declaración de licencia.
+`gourishankar63/article-ner-v1` es un modelo publicado en Hugging Face por el usuario gourishankar63 bajo licencia Apache 2.0. Por su identificador y por la ausencia de cualquier otra documentación, se presenta como un modelo orientado a la extracción de entidades nombradas (NER) en artículos, presumiblemente textos periodísticos o académicos. No obstante, la model card no contiene ninguna descripción funcional, especificación técnica ni ejemplo de uso: únicamente incluye la declaración de licencia.
 
-El repositorio no ofrece información sobre arquitectura, tamaño, tokenizador, datos de entrenamiento ni idiomas soportados. Tampoco se declara un pipeline de HuggingFace (`pipeline: no disponible`), lo que impide confirmar si se trata de un modelo de token classification, de un modelo generativo adaptado a NER o de otro tipo de artefacto. El modelo registra cero descargas y cero likes en el momento de la consulta, lo que sugiere que no ha sido validado por la comunidad.
+El repositorio no ofrece información sobre arquitectura, tamaño, tokenizador, datos de entrenamiento ni idiomas soportados. Tampoco se declara un pipeline de Hugging Face (`pipeline: no disponible`), lo que impide confirmar si se trata de un modelo de token classification, de un modelo generativo adaptado a NER o de otro tipo de artefacto. El modelo registra cero descargas y cero likes en el momento de la consulta, lo que sugiere que no ha sido validado por la comunidad.
 
 Por todo ello, esta ficha se limita a documentar lo que consta de forma verificable y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluación de idoneidad para producción requeriría inspeccionar los archivos del repositorio y ejecutar pruebas propias.
 
@@ -25,7 +25,7 @@ Por todo ello, esta ficha se limita a documentar lo que consta de forma verifica
 
 No se ha publicado información sobre la arquitectura del modelo. La model card no especifica si se trata de un transformer encoder (estilo BERT/RoBERTa/DeBERTa, habituales para token classification en NER), de un modelo decoder-only ajustado para extracción de entidades o de una arquitectura híbrida. Tampoco se indica el número de parámetros, la longitud de contexto ni el tokenizador empleado.
 
-Respecto al entrenamiento, no consta el volumen de tokens, la composición del corpus, el idioma de los datos, ni si se aplicaron técnicas de ajuste fino supervisado, RLHF o DPO. La única metainformación disponible es la etiqueta `region:us`, que en HuggingFace suele indicar la región de almacenamiento del repositorio y no aporta información sobre el entrenamiento. No hay innovaciones técnicas documentadas.
+Respecto al entrenamiento, no consta el volumen de tokens, la composición del corpus, el idioma de los datos, ni si se aplicaron técnicas de ajuste fino supervisado, RLHF o DPO. La única metainformación disponible es la etiqueta `region:us`, que en Hugging Face suele indicar la región de almacenamiento del repositorio y no aporta información sobre el entrenamiento. No hay innovaciones técnicas documentadas.
 
 ## Capacidades
 
@@ -71,11 +71,11 @@ No es posible establecer una comparativa rigurosa porque se desconocen los pará
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gourishankar63/article-ner-v1 | no disponible | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| BERT-base NER (variantes de la comunidad) | ~110 M | 512 tokens | Apache 2.0 / MIT según variante | HuggingFace, ampliamente validado |
-| RoBERTa-base NER | ~125 M | 512 tokens | MIT | HuggingFace |
-| DeBERTa-v3-base NER | ~184 M | 512 tokens | MIT | HuggingFace |
-| Modelos generativos con NER zero-shot (p. ej. variantes de 7B) | ~7 B | 4k-32k tokens | variable | HuggingFace |
+| gourishankar63/article-ner-v1 | no disponible | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| BERT-base NER (variantes de la comunidad) | ~110 M | 512 tokens | Apache 2.0 / MIT según variante | Hugging Face, ampliamente validado |
+| RoBERTa-base NER | ~125 M | 512 tokens | MIT | Hugging Face |
+| DeBERTa-v3-base NER | ~184 M | 512 tokens | MIT | Hugging Face |
+| Modelos generativos con NER zero-shot (p. ej. variantes de 7B) | ~7 B | 4k-32k tokens | variable | Hugging Face |
 
 La comparación con estos modelos es meramente orientativa: no hay datos que permitan afirmar que `article-ner-v1` sea competitivo en precisión, recall o F1 frente a cualquiera de ellos.
 
@@ -91,6 +91,6 @@ La comparación con estos modelos es meramente orientativa: no hay datos que per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gourishankar63/article-ner-v1
+- Modelo en Hugging Face: https://huggingface.co/gourishankar63/article-ner-v1
 - Perfil del autor: https://huggingface.co/gourishankar63
 - Paper, blog, repositorio o demo: no disponible

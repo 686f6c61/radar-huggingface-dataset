@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nanbeige4.3-33B-oQ8e es una cuantización de terceros del modelo Nanbeige4.3-33B, publicada por el usuario chriswessels en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un checkpoint convertido al formato MLX (Apple Silicon) mediante la herramienta oQ de oMLX v0.7.2, que aplica cuantización de precisión mixta. El resultado es un artefacto de 33.118.977.024 parámetros almacenados con una media efectiva de 8,500 bits por peso, lo que reduce el peso en disco a 32,773 GiB (35,190 GB) frente a los aproximadamente 66,2 GB que ocuparía el mismo modelo en BF16.
+Nanbeige4.3-33B-oQ8e es una cuantización de terceros del modelo Nanbeige4.3-33B, publicada por el usuario chriswessels en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un checkpoint convertido al formato MLX (Apple Silicon) mediante la herramienta oQ de oMLX v0.7.2, que aplica cuantización de precisión mixta. El resultado es un artefacto de 33.118.977.024 parámetros almacenados con una media efectiva de 8,500 bits por peso, lo que reduce el peso en disco a 32,773 GiB (35,190 GB) frente a los aproximadamente 66,2 GB que ocuparía el mismo modelo en BF16.
 
 La relevancia de esta ficha es acotada y conviene ser explícito: el repositorionoincluye información sobre el modelo base (arquitectura, contexto, datos de entrenamiento, idiomas o licencia), y la model card se limita a documentar la distribución de bits de la cuantización. Su interés práctico es que permite ejecutar un modelo de 33B en equipos Apple Silicon con memoria unificada de gama alta, algo imposible con el checkpoint original en BF16 en la mayoría de configuraciones de consumo.
 
@@ -28,7 +28,7 @@ Por tanto, esta ficha describe principalmente el artefacto de cuantización y su
 
 ## Arquitectura y entrenamiento
 
-No hay información en el repositorio sobre la arquitectura del modelo base, el número de tokens de entrenamiento, la composición del dataset ni las etapas de alineación (RLHF, DPO u otras). La etiqueta `llama` incluida en los tags de HuggingFace apunta a una arquitectura transformer decoder-only compatible con el ecosistema Llama, pero se trata de una inferencia a partir de metadatos, no de un dato documentado en la model card.
+No hay información en el repositorio sobre la arquitectura del modelo base, el número de tokens de entrenamiento, la composición del dataset ni las etapas de alineación (RLHF, DPO u otras). La etiqueta `llama` incluida en los tags de Hugging Face apunta a una arquitectura transformer decoder-only compatible con el ecosistema Llama, pero se trata de una inferencia a partir de metadatos, no de un dato documentado en la model card.
 
 La única información técnica verificable se refiere al proceso de cuantización. oMLX v0.7.2 aplica cuantización affine de 8 bits con tamaño de grupo 64 sobre el 99,998% de los pesos lógicos (33,118B parámetros, 32.771 GiB) y mantiene un 0,002% (0,001B parámetros) en BF16, presumiblemente capas sensibles a la precisión. El checkpoint completo suma 32.773 GiB con una media de 8,500 bits por peso. No se documenta qué tensores quedaron en BF16, ni se publican métricas de degradación (perplejidad, benchmarks) respecto al modelo original.
 
@@ -94,7 +94,7 @@ La comparación de rendimiento con estas alternativas no es posible: no hay benc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chriswessels/Nanbeige4.3-33B-oQ8e
+- Repositorio Hugging Face: https://huggingface.co/chriswessels/Nanbeige4.3-33B-oQ8e
 - Repositorio de la herramienta de cuantización oQ / oMLX: https://github.com/jundot/omlx
 - Modelo base Nanbeige4.3-33B: no disponible en la información proporcionada
 - Paper, blog o demo del modelo: no disponible en la información proporcionada

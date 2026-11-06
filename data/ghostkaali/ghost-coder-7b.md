@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ghost-coder-7b es un ajuste fino publicado por el usuario ghostkaali en HuggingFace, construido a partir de unsloth/qwen2.5-coder-7b-instruct-bnb-4bit, es decir, una version cuantizada a 4 bits con bitsandbytes del modelo Qwen2.5-Coder-7B-Instruct de Alibaba Cloud. El autor indica que el entrenamiento se realizo con Unsloth, una libreria de fine-tuning optimizada que, segun la propia model card, permitio entrenar "2x mas rapido". El repositorio es muy reciente, no acumula descargas ni likes, y apenas contiene una model card minimalista.
+ghost-coder-7b es un ajuste fino publicado por el usuario ghostkaali en Hugging Face, construido a partir de unsloth/qwen2.5-coder-7b-instruct-bnb-4bit, es decir, una version cuantizada a 4 bits con bitsandbytes del modelo Qwen2.5-Coder-7B-Instruct de Alibaba Cloud. El autor indica que el entrenamiento se realizo con Unsloth, una libreria de fine-tuning optimizada que, segun la propia model card, permitio entrenar "2x mas rapido". El repositorio es muy reciente, no acumula descargas ni likes, y apenas contiene una model card minimalista.
 
 El modelo se presenta como un derivado orientado a generacion de codigo y conversacion tecnica, heredando la arquitectura Qwen2 del modelo base. No es un modelo fundacional: no hay publicados datos sobre el dataset de ajuste, el numero de tokens de entrenamiento, la composicion de los datos ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
 
@@ -74,10 +74,10 @@ Los datos de la segunda y tercera fila proceden de la documentacion publica de e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ghostkaali/ghost-coder-7b | 7B nominales (no confirmado) | no disponible (base: 32.768 tokens) | Apache-2.0 | HuggingFace, 0 descargas, repo de 0,2 GB |
-| unsloth/qwen2.5-coder-7b-instruct-bnb-4bit | 7B | 32.768 tokens | Apache-2.0 | HuggingFace, checkpoint de referencia de Unsloth |
-| Qwen2.5-Coder-14B-Instruct | 14B | 32.768 tokens | Apache-2.0 | HuggingFace, ampliamente descargado |
-| CodeLlama-7b-Instruct | 6,74B | 16.384 tokens | Licencia comunitaria de Llama 2 | HuggingFace, con restricciones de uso comercial |
+| ghostkaali/ghost-coder-7b | 7B nominales (no confirmado) | no disponible (base: 32.768 tokens) | Apache-2.0 | Hugging Face, 0 descargas, repo de 0,2 GB |
+| unsloth/qwen2.5-coder-7b-instruct-bnb-4bit | 7B | 32.768 tokens | Apache-2.0 | Hugging Face, checkpoint de referencia de Unsloth |
+| Qwen2.5-Coder-14B-Instruct | 14B | 32.768 tokens | Apache-2.0 | Hugging Face, ampliamente descargado |
+| CodeLlama-7b-Instruct | 6,74B | 16.384 tokens | Licencia comunitaria de Llama 2 | Hugging Face, con restricciones de uso comercial |
 
 Frente a estos, ghost-coder-7b no ofrece ventaja documentada alguna: carece de evaluacion, de soporte multilingue declarado y de cuantizaciones listas para consumo. Su unico diferenciador es ser un derivado de Qwen2.5-Coder entrenado con Unsloth.
 
@@ -96,7 +96,7 @@ Frente a estos, ghost-coder-7b no ofrece ventaja documentada alguna: carece de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ghostkaali/ghost-coder-7b
+- Modelo en Hugging Face: https://huggingface.co/ghostkaali/ghost-coder-7b
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-coder-7b-instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Proyecto no relacionado encontrado en la busqueda (ghost-x-ai/ghost-7b-alpha): https://github.com/ghost-x-ai/ghost-7b-alpha

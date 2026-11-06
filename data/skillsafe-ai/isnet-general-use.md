@@ -81,7 +81,7 @@ La informacion proporcionada no incluye parametros ni metricas de los modelos al
 
 | Modelo | Categoria | Parametros | Entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| isnet-general-use (este modelo) | Segmentacion dicotoma de alta precision, ONNX | no disponible (estimacion por tamano: 42-45 M) | 1024x1024 fija | no disponible (solo smoke test de 1480,6 ms en CPU) | Apache-2.0 | HuggingFace, fichero ONNX unico, pensado para navegador |
+| isnet-general-use (este modelo) | Segmentacion dicotoma de alta precision, ONNX | no disponible (estimacion por tamano: 42-45 M) | 1024x1024 fija | no disponible (solo smoke test de 1480,6 ms en CPU) | Apache-2.0 | Hugging Face, fichero ONNX unico, pensado para navegador |
 | u2net / u2netp (rembg) | Segmentacion de saliencia, misma familia de origen | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Distribucion via releases de rembg; no se detalla aqui |
 | silueta (rembg) | Segmentacion de saliencia, variante ligera | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Distribucion via releases de rembg; no se detalla aqui |
 | Segment Anything (SAM) | Segmentacion promptable de proposito general | no disponible | Resolucion variable con prompts | no disponible | Apache-2.0 (segun su publicacion original) | Amplia, fuera del ambito de esta ficha |
@@ -99,12 +99,12 @@ La diferencia funcional principal frente a un segmentador promptable como SAM es
 - Sin datos de sesgo: no hay informacion sobre la demografia de los datos de entrenamiento ni evaluaciones de equidad por tipo de sujeto, tono de piel, iluminacion o contexto cultural.
 - Herencia de sesgos del upstream: al ser una importacion sin conversion de los pesos de IS-Net distribuidos por rembg, arrastra exactamente las mismas limitaciones que el modelo original.
 - Restricciones de licencia: los pesos estan bajo Apache-2.0, lo que permite uso comercial, pero exige conservar el aviso de licencia de IS-Net/DIS y la atribucion a rembg como distribuidor del ONNX. La receta de conversion y la model card pertenecen al repositorio de SkillSafe y se rigen por su propia licencia.
-- Sin pipeline declarado en HuggingFace y sin idiomas declarados: la integracion debe hacerse contra el contrato ONNX documentado, no mediante `transformers` ni `pipeline`.
+- Sin pipeline declarado en Hugging Face y sin idiomas declarados: la integracion debe hacerse contra el contrato ONNX documentado, no mediante `transformers` ni `pipeline`.
 - Idoneidad para video no demostrada: la latencia de referencia en CPU (1480,6 ms) impide uso en tiempo real sin aceleracion por GPU y no hay mediciones de rendimiento en WebGPU.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/isnet-general-use
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/isnet-general-use
 - Fichero ONNX: https://huggingface.co/skillsafe-ai/isnet-general-use/resolve/main/isnet-general-use.onnx
 - Repositorio de recetas y modelos de SkillSafe: https://github.com/skillsafe-admin/skillsafe.ai-website/tree/main/models
 - Origen upstream de los pesos (release de rembg): https://github.com/danielgatis/rembg/releases/download/v0.0.0/isnet-general-use.onnx

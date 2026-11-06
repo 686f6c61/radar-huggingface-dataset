@@ -94,6 +94,6 @@ No disponible. No es posible establecer una comparativa con modelos de la misma 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-5c3cc8af4c6b-f40166e51464
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-5c3cc8af4c6b-f40166e51464
 - Receta canonica citada en la model card: `evaluations/2026-09-23_task00_centre_full_recovery` (ruta interna, sin URL publica proporcionada)
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada

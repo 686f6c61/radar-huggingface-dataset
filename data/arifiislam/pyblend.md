@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PyBlend es un binding y envoltorio de Python para Blend2D, un motor de renderizado de gráficos vectoriales 2D de alto rendimiento que utiliza un compilador JIT embebido (AsmJit) y aceleración SIMD (AVX2, AVX-512, SSE). No se trata de un modelo de inteligencia artificial, sino de una librería de programación gráfica. El repositorio en HuggingFace (ArifiIslam/PyBlend) contiene únicamente la documentación de esta librería, sin pesos, arquitectura ni datos de entrenamiento. La relevancia de este proyecto radica en su capacidad para rasterizar formas vectoriales, gradientes y tipografía con un rendimiento cercano al nativo, ofreciendo interoperabilidad con NumPy y Pillow. No hay información sobre parámetros, contexto o licencia del modelo, ya que no es un modelo.
+PyBlend es un binding y envoltorio de Python para Blend2D, un motor de renderizado de gráficos vectoriales 2D de alto rendimiento que utiliza un compilador JIT embebido (AsmJit) y aceleración SIMD (AVX2, AVX-512, SSE). No se trata de un modelo de inteligencia artificial, sino de una librería de programación gráfica. El repositorio en Hugging Face (ArifiIslam/PyBlend) contiene únicamente la documentación de esta librería, sin pesos, arquitectura ni datos de entrenamiento. La relevancia de este proyecto radica en su capacidad para rasterizar formas vectoriales, gradientes y tipografía con un rendimiento cercano al nativo, ofreciendo interoperabilidad con NumPy y Pillow. No hay información sobre parámetros, contexto o licencia del modelo, ya que no es un modelo.
 
 ## Especificaciones tecnicas
 
@@ -62,15 +62,15 @@ No disponible. PyBlend no es un modelo de IA, por lo que no tiene comparación c
 ## Limitaciones y advertencias
 
 - No es un modelo de IA: no genera texto, imágenes ni realiza razonamiento. Cualquier uso como modelo de ML es inapropiado.
-- La licencia no está confirmada en el repositorio de HuggingFace; el README menciona Zlib, pero no hay archivo LICENSE visible.
+- La licencia no está confirmada en el repositorio de Hugging Face; el README menciona Zlib, pero no hay archivo LICENSE visible.
 - El proyecto parece estar en fase temprana (0 descargas, 0 likes) y no hay garantía de mantenimiento.
 - La documentación asume conocimientos de gráficos vectoriales y puede requerir compilación desde fuente si no hay wheels precompilados.
 - No hay soporte oficial para GPU; el rendimiento depende de la CPU y las instrucciones SIMD.
-- El repositorio de HuggingFace no contiene código fuente ni binarios, solo la model card; el código real está en GitHub (enlaces externos).
+- El repositorio de Hugging Face no contiene código fuente ni binarios, solo la model card; el código real está en GitHub (enlaces externos).
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArifiIslam/PyBlend
+- Hugging Face: https://huggingface.co/ArifiIslam/PyBlend
 - Repositorio GitHub (Blend2D wrapper): https://github.com/your-username/pyblend (enlace de ejemplo en el README, no verificado)
 - Repositorio GitHub (formulación de polvos alimenticios): https://github.com/anvasquezre/PyBlend/tree/main
 - Repositorio GitHub (librería para Blender): https://github.com/anyeZHY/PyBlend

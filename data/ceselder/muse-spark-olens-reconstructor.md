@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks de MMLU, HumanEval, GSM8K ni simila
 
 | Modelo | Tipo | Parámetros | Contexto de entrada | Coseno held-out | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `ceselder/muse-spark-olens-reconstructor` | LoRA r512 + cabezas por capa sobre Muse Spark Open | Adaptador de 7,7 GiB fp32 | BOS + span de 4-16 tokens | 0,3784 (último token) / 0,422 (15 tokens) | `muse-model-license` | HuggingFace, 0 descargas |
+| `ceselder/muse-spark-olens-reconstructor` | LoRA r512 + cabezas por capa sobre Muse Spark Open | Adaptador de 7,7 GiB fp32 | BOS + span de 4-16 tokens | 0,3784 (último token) / 0,422 (15 tokens) | `muse-model-license` | Hugging Face, 0 descargas |
 | Receta AR portada a Kimi-K3 (capa 59) | Misma receta, otro base | No disponible | Span corto | 0,363 / 0,424 | No disponible | Referenciada en la model card |
 | Receta AR portada a GLM-5.3 (bloque 51) | Misma receta, otro base | No disponible | Span corto | 0,340 / 0,408 | No disponible | Referenciada en la model card |
 | Receta AR portada a Qwen3.6-27B (capa 42) | Misma receta, otro base | No disponible | Span corto | 0,400 a 16 tokens | No disponible | Referenciada en la model card |
@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks de MMLU, HumanEval, GSM8K ni simila
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ceselder/muse-spark-olens-reconstructor
+- Modelo en Hugging Face: https://huggingface.co/ceselder/muse-spark-olens-reconstructor
 - Colección Muse Spark Open olens: https://huggingface.co/collections/ceselder/muse-spark-olens-6adfd563a2ccaa4deb299019
 - Repositorio de la lente: https://huggingface.co/ceselder/muse-spark-olens-lens
 - Lector basado en Qwen: https://huggingface.co/ceselder/muse-spark-olens-qwen-reader

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B (2.00-bit routed experts, r53) es un checkpoint de investigación publicado por el usuario minjaechoi en HuggingFace. Se trata de una versión cuantizada del modelo base Qwen/Qwen3.6-35B-A3B, en la que únicamente los expertos enrutados de la arquitectura Mixture of Experts (MoE) se han comprimido a una media de 2,00 bits, mientras que el resto de pesos permanece en BF16. El identificador interno del experimento es r53.
+Qwen3.6-35B-A3B (2.00-bit routed experts, r53) es un checkpoint de investigación publicado por el usuario minjaechoi en Hugging Face. Se trata de una versión cuantizada del modelo base Qwen/Qwen3.6-35B-A3B, en la que únicamente los expertos enrutados de la arquitectura Mixture of Experts (MoE) se han comprimido a una media de 2,00 bits, mientras que el resto de pesos permanece en BF16. El identificador interno del experimento es r53.
 
 El modelo conserva la arquitectura original etiquetada como qwen3_5_moe, con 35.951.822.704 parámetros totales (~35,95 mil millones) según los tensores safetensors del repositorio. Su pipeline declarado es text-generation y la model card indica compatibilidad con transformers y vLLM estándar, ya que los pesos se almacenan desquantizados en tensores BF16 y se cargan con las herramientas habituales.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B (2.00-bit r53) | 35,95B | ~3B (por nomenclatura) | no disponible | no disponible | HuggingFace, safetensors |
-| Qwen/Qwen3.6-35B-A3B (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen3-30B-A3B (referencia externa, no incluida en la informacion) | 30,5B | 3,3B | 32.768 nativo / 131.072 con YaRN | Apache 2.0 | HuggingFace, safetensors, GGUF, AWQ |
+| Qwen3.6-35B-A3B (2.00-bit r53) | 35,95B | ~3B (por nomenclatura) | no disponible | no disponible | Hugging Face, safetensors |
+| Qwen/Qwen3.6-35B-A3B (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen3-30B-A3B (referencia externa, no incluida en la informacion) | 30,5B | 3,3B | 32.768 nativo / 131.072 con YaRN | Apache 2.0 | Hugging Face, safetensors, GGUF, AWQ |
 
 Los datos de la fila de Qwen3-30B-A3B provienen de conocimiento general y no de la información proporcionada en esta ficha; se incluyen solo como orientación de categoría. No se dispone de datos comparativos de rendimiento entre estos modelos en la información disponible.
 
@@ -84,5 +84,5 @@ Los datos de la fila de Qwen3-30B-A3B provienen de conocimiento general y no de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p00bit-r53
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p00bit-r53
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B

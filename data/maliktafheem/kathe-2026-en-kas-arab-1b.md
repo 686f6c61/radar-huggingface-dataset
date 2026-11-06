@@ -29,7 +29,7 @@ La innovación técnica principal consiste en sustituir el preprocesado estánda
 
 - Traducción automática de inglés a cachemiro en escritura perso-arábiga, con preservación de diacríticos fonémicos.
 - Generación de texto condicionada con búsqueda de haces (beam search) de 5 haces y longitud máxima de 48 tokens, configurada tras un barrido sobre 1.500 filas de validación.
-- Integración con el ecosistema HuggingFace Transformers mediante `trust_remote_code=True`, ya que la arquitectura no está incluida en el núcleo de la librería.
+- Integración con el ecosistema Hugging Face Transformers mediante `trust_remote_code=True`, ya que la arquitectura no está incluida en el núcleo de la librería.
 - No soporta tool calling, ni razonamiento multi-paso, ni capacidades multimodales: es un modelo puramente de traducción.
 - Competencia limitada al par de idiomas en-ks; no conserva las capacidades multilingües del modelo base.
 
@@ -59,7 +59,7 @@ No se proporcionan requisitos oficiales de hardware. Basándose en el tamaño de
 - VRAM estimada para inferencia: aproximadamente 2,5–3,5 GB en fp16, más overhead de activaciones y el tokenizador personalizado; con cuantización a 8 bits podría reducirse a ~1,5–2 GB.
 - GPU recomendadas: tarjetas de consumo como NVIDIA RTX 3060 (12 GB), RTX 4060 o superiores son suficientes; también puede ejecutarse en GPUs de datacenter como A10 o T4.
 - Es viable en una GPU de consumo de 8 GB (como la RTX 3070) sin necesidad de cuantización, tal y como demuestran otros participantes de KATHE 2026 que usaron LoRA en ese hardware.
-- Opciones de despliegue: al ser un modelo de Transformers con código personalizado, se puede servir con HuggingFace Inference Endpoints o mediante un script Python con `transformers==4.51.x`. No se ha probado con vLLM, llama.cpp u Ollama, y es probable que requieran adaptaciones por el código remoto.
+- Opciones de despliegue: al ser un modelo de Transformers con código personalizado, se puede servir con Hugging Face Inference Endpoints o mediante un script Python con `transformers==4.51.x`. No se ha probado con vLLM, llama.cpp u Ollama, y es probable que requieran adaptaciones por el código remoto.
 - Latencia y throughput: no disponibles; en una GPU de gama media se espera una latencia de cientos de milisegundos por frase corta con beam search de 5 haces.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ La diferenciación principal del modelo evaluado es su tratamiento explícito de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maliktafheem/kathe-2026-en-kas-arab-1b
+- Modelo en Hugging Face: https://huggingface.co/maliktafheem/kathe-2026-en-kas-arab-1b
 - Repositorio del autor con scripts y documentación: https://github.com/maliktafheem/kathe-2026-en-kas
 - Competición KATHE 2026 en Kaggle: https://www.kaggle.com/competitions/kathe-2026/overview
 - Página de KATHE 2026 en GAASH Lab (NIT Srinagar): https://gaash.nitsri.ac.in/events/kathe-2026

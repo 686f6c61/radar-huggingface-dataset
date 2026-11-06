@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-l2_basis_remove50_swapgapnet_b010_r02 es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace, derivado de meta-llama/Llama-2-7b-chat-hf. No es un modelo conversacional de propósito general: es una celda concreta dentro de una rejilla experimental que estudia cómo la compresión por SVD degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes repara mejor ese daño. El modelo parte de una compresión mediante Basis Sharing (ICLR 2025) con bases compartidas entre grupos de 2 capas adyacentes, que elimina el 50,00 % de los parámetros densos, y después aplica 2 de las 10 rondas previstas de una rutina iterativa de intercambio de parámetros neutro en parámetros, seleccionada por la regla swapgapnet_iter.
+svd-safety-l2_basis_remove50_swapgapnet_b010_r02 es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face, derivado de meta-llama/Llama-2-7b-chat-hf. No es un modelo conversacional de propósito general: es una celda concreta dentro de una rejilla experimental que estudia cómo la compresión por SVD degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes repara mejor ese daño. El modelo parte de una compresión mediante Basis Sharing (ICLR 2025) con bases compartidas entre grupos de 2 capas adyacentes, que elimina el 50,00 % de los parámetros densos, y después aplica 2 de las 10 rondas previstas de una rutina iterativa de intercambio de parámetros neutro en parámetros, seleccionada por la regla swapgapnet_iter.
 
 El presupuesto de restauración declarado es del 1,000 % de los parámetros densos, ejecutado en fragmentos del 0,100 % por ronda, de modo que este checkpoint corresponde a una ronda intermedia de una ejecución más larga. Se restauraron y se expulsaron 927 componentes cada uno, con 12.945.920 parámetros introducidos (0,20 % de los parámetros de proyección densos) y una fracción de parámetros resultante de 0,4998. El ajuste posterior es un LoRA de rango 8 aplicado únicamente sobre los coeficientes por capa, con las bases congeladas y sin alterar el presupuesto de compresión.
 
@@ -78,10 +78,10 @@ No se dispone de los valores equivalentes para el modelo base meta-llama/Llama-2
 
 | Modelo | Parametros | Contexto | Compresion | Metrica de seguridad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| svd-safety-l2_basis_remove50_swapgapnet_b010_r02 | 6.738.415.616 declarados; fraccion 0,4998 | 4096 | Basis Sharing al 50 % + 2 rondas de swap | AdvBench ASR 0,4173; StrongREJECT ASR 0,2684; over-refusal 0,0939 | Llama 2 Community | HuggingFace, autor Jeesup |
-| meta-llama/Llama-2-7b-chat-hf (base sin comprimir) | 6.738.415.616 | 4096 | ninguna | no disponible en esta informacion | Llama 2 Community | HuggingFace, Meta |
-| Jeesup/svd-safety-l2_remove50_gap_b010 | no disponible | no disponible | Basis Sharing al 50 % con regla gap | no disponible en esta informacion | Llama 2 Community | HuggingFace, autor Jeesup |
-| Jeesup/svd-safety-l2_remove50_swapdisc_b010 | no disponible | no disponible | Basis Sharing al 50 % con regla swapdisc | no disponible en esta informacion | Llama 2 Community | HuggingFace, autor Jeesup |
+| svd-safety-l2_basis_remove50_swapgapnet_b010_r02 | 6.738.415.616 declarados; fraccion 0,4998 | 4096 | Basis Sharing al 50 % + 2 rondas de swap | AdvBench ASR 0,4173; StrongREJECT ASR 0,2684; over-refusal 0,0939 | Llama 2 Community | Hugging Face, autor Jeesup |
+| meta-llama/Llama-2-7b-chat-hf (base sin comprimir) | 6.738.415.616 | 4096 | ninguna | no disponible en esta informacion | Llama 2 Community | Hugging Face, Meta |
+| Jeesup/svd-safety-l2_remove50_gap_b010 | no disponible | no disponible | Basis Sharing al 50 % con regla gap | no disponible en esta informacion | Llama 2 Community | Hugging Face, autor Jeesup |
+| Jeesup/svd-safety-l2_remove50_swapdisc_b010 | no disponible | no disponible | Basis Sharing al 50 % con regla swapdisc | no disponible en esta informacion | Llama 2 Community | Hugging Face, autor Jeesup |
 
 Los dos últimos son celdas hermanas de la misma rejilla experimental y solo se diferencian en la regla de selección de componentes (gap y swapdisc frente a swapgapnet_iter), lo que los convierte en la comparación más directa posible para aislar el efecto de dicha regla.
 
@@ -100,7 +100,7 @@ Los dos últimos son celdas hermanas de la misma rejilla experimental y solo se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010_r02
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010_r02
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Celda hermana con regla gap: https://huggingface.co/Jeesup/svd-safety-l2_remove50_gap_b010
 - Celda hermana con regla swapdisc: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_b010

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`emidiosouza/assistente-maternidade` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3.5-4B`, publicado por el usuario emidiosouza en HuggingFace. Segun la informacion disponible, se trata de un modelo de generacion de texto de aproximadamente 4 000 millones de parametros, entrenado con la libreria Unsloth y con las etiquetas `transformers`, `safetensors`, `text-generation-inference`, `trl` y `qwen3_5`. La licencia declarada es Apache 2.0 y el unico idioma listado en la model card es el ingles.
+`emidiosouza/assistente-maternidade` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3.5-4B`, publicado por el usuario emidiosouza en Hugging Face. Segun la informacion disponible, se trata de un modelo de generacion de texto de aproximadamente 4 000 millones de parametros, entrenado con la libreria Unsloth y con las etiquetas `transformers`, `safetensors`, `text-generation-inference`, `trl` y `qwen3_5`. La licencia declarada es Apache 2.0 y el unico idioma listado en la model card es el ingles.
 
 El interes de esta ficha es limitado y conviene decirlo con claridad: el repositorio no incluye model card descriptiva (solo la plantilla automatica de Unsloth), no publica resultados de benchmarks, no documenta el conjunto de datos de entrenamiento ni el procedimiento de ajuste, y en el momento de la consulta acumula 0 descargas y 1 like. El tamano del repositorio es de 0,1 GB, lo que resulta coherente con un conjunto de pesos muy reducido o con adaptadores, pero este extremo no se confirma en la informacion disponible.
 
@@ -23,7 +23,7 @@ El nombre del modelo sugiere un dominio de aplicacion de asistencia a la materni
 
 ## Arquitectura y entrenamiento
 
-No hay informacion tecnica publicada sobre la arquitectura concreta de este ajuste fino. Lo unico documentado es que deriva de `unsloth/Qwen3.5-4B` y que fue entrenado con Unsloth, una libreria de ajuste fino optimizada que el autor destaca por un entrenamiento "2x faster" (dos veces mas rapido) respecto a una implementacion convencional. Las etiquetas `trl` y `unsloth` indican el uso de las herramientas de HuggingFace TRL y de Unsloth, habitualmente empleadas para SFT (supervised fine-tuning) y, en algunos flujos, para DPO. No se especifica cual de estos metodos se utilizo.
+No hay informacion tecnica publicada sobre la arquitectura concreta de este ajuste fino. Lo unico documentado es que deriva de `unsloth/Qwen3.5-4B` y que fue entrenado con Unsloth, una libreria de ajuste fino optimizada que el autor destaca por un entrenamiento "2x faster" (dos veces mas rapido) respecto a una implementacion convencional. Las etiquetas `trl` y `unsloth` indican el uso de las herramientas de Hugging Face TRL y de Unsloth, habitualmente empleadas para SFT (supervised fine-tuning) y, en algunos flujos, para DPO. No se especifica cual de estos metodos se utilizo.
 
 Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF/DPO, ni innovaciones tecnicas adicionales. Cualquier afirmacion sobre atencion, decodificacion especulativa o modo de razonamiento seria especulativa y no se incluye aqui. La unica innovacion citada por el autor es la propia cadencia de entrenamiento con Unsloth.
 
@@ -31,7 +31,7 @@ Tampoco se documentan el numero de tokens de entrenamiento, la composicion del d
 
 - Generacion de texto en ingles: es la unica capacidad explicitamente implicada por la model card y la etiqueta de idioma.
 - Ajuste orientado a un dominio concreto: el nombre del repositorio apunta a asistencia en el ambito de la maternidad, aunque no hay documentacion que describa el comportamiento resultante.
-- Compatibilidad declarada con `text-generation-inference` y `endpoints_compatible`, lo que sugiere que puede servirse en infraestructura de inferencia estandar de HuggingFace.
+- Compatibilidad declarada con `text-generation-inference` y `endpoints_compatible`, lo que sugiere que puede servirse en infraestructura de inferencia estandar de Hugging Face.
 - Integracion con el ecosistema Unsloth/TRL: el modelo puede reutilizarse como punto de partida para nuevos ajustes finos.
 - Soporte de tool calling: no disponible (no se documenta).
 - Capacidades de agente y razonamiento multi-paso: no disponible (no se documenta).
@@ -64,7 +64,7 @@ Las cifras de VRAM que siguen son estimaciones genericas para un modelo denso de
 - VRAM en cuantizacion de 4 bits (GGUF Q4_K_M): aproximadamente 2,5-3 GB.
 - GPU de consumo: cabe en tarjetas con 8 GB o mas de VRAM (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090) en cuantizaciones de 4 y 8 bits; en bf16 conviene disponer de 12-16 GB.
 - GPU de datacenter: A100, H100 o L40S para servir en bf16 con mayor concurrencia y throughput.
-- Opciones de despliegue: llama.cpp y Ollama para ejecucion local; vLLM y HuggingFace TGI para servicio en servidor (las etiquetas del repositorio incluyen `text-generation-inference` y `endpoints_compatible`); Unsloth para reentrenamiento o ajuste adicional.
+- Opciones de despliegue: llama.cpp y Ollama para ejecucion local; vLLM y Hugging Face TGI para servicio en servidor (las etiquetas del repositorio incluyen `text-generation-inference` y `endpoints_compatible`); Unsloth para reentrenamiento o ajuste adicional.
 - Latencia y throughput: no disponible. No se han publicado mediciones sobre este repositorio y el rendimiento dependera del hardware, la cuantizacion y la longitud de contexto, que no esta documentada.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ Los datos de los modelos alternativos proceden de sus model cards publicas y no 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| `emidiosouza/assistente-maternidade` | aprox. 4B (segun base) | no disponible | apache-2.0 | Publicado en HuggingFace; 0 descargas, 1 like | No disponible |
+| `emidiosouza/assistente-maternidade` | aprox. 4B (segun base) | no disponible | apache-2.0 | Publicado en Hugging Face; 0 descargas, 1 like | No disponible |
 | `Qwen/Qwen2.5-3B-Instruct` | 3 090 millones | 32 768 tokens nativo; ampliable con YaRN | apache-2.0 | Ampliamente distribuido | No comparado en esta ficha |
 | `meta-llama/Llama-3.2-3B-Instruct` | 3 210 millones | 128 000 tokens | Llama 3.2 Community License | Ampliamente distribuido | No comparado en esta ficha |
 | `microsoft/Phi-3.5-mini-instruct` | 3 800 millones | 128 000 tokens | MIT | Ampliamente distribuido | No comparado en esta ficha |
@@ -93,7 +93,7 @@ Los datos de los modelos alternativos proceden de sus model cards publicas y no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emidiosouza/assistente-maternidade
+- Modelo en Hugging Face: https://huggingface.co/emidiosouza/assistente-maternidade
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Repositorio de Unsloth (herramienta de entrenamiento citada por el autor): https://github.com/unslothai/unsloth
 - Paper, blog, repositorio o demo especificos de este modelo: no disponible

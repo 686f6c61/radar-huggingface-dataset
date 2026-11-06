@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ShahriarFerdoush/mistral-7b-instruct-math-dare-k30` es un checkpoint de 7.241.732.096 parámetros (7,24 mil millones) publicado en HuggingFace por el usuario ShahriarFerdoush. Por el nombre y por el recuento de parámetros, se trata de un merge de pesos (weight merge) construido sobre la arquitectura Mistral-7B, combinando un modelo instruct con un modelo especializado en matemáticas mediante la técnica DARE (Drop And REscale), probablemente en su variante TIES. La model card es la plantilla automática de HuggingFace y no contiene ninguna declaración del autor sobre el proceso, los datos o la evaluación.
+`ShahriarFerdoush/mistral-7b-instruct-math-dare-k30` es un checkpoint de 7.241.732.096 parámetros (7,24 mil millones) publicado en Hugging Face por el usuario ShahriarFerdoush. Por el nombre y por el recuento de parámetros, se trata de un merge de pesos (weight merge) construido sobre la arquitectura Mistral-7B, combinando un modelo instruct con un modelo especializado en matemáticas mediante la técnica DARE (Drop And REscale), probablemente en su variante TIES. La model card es la plantilla automática de Hugging Face y no contiene ninguna declaración del autor sobre el proceso, los datos o la evaluación.
 
 El modelo no aporta documentación técnica: no se declara licencia, idiomas, longitud de contexto, modelo base exacto ni resultados de evaluación. Con 0 descargas y 0 likes en el momento de la consulta, y un repositorio de 14,5 GB en safetensors, debe considerarse un experimento personal de merging más que un artefacto listo para producción.
 
@@ -48,7 +48,7 @@ Al conservar el recuento de parámetros del base (7.241.732.096, idéntico al de
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card es la plantilla automática de HuggingFace y no incluye MMLU, GSM8K, HumanEval, MATH ni ninguna otra métrica, ni comparaciones con el modelo base.
+No se han publicado resultados de benchmarks en la información disponible. La model card es la plantilla automática de Hugging Face y no incluye MMLU, GSM8K, HumanEval, MATH ni ninguna otra métrica, ni comparaciones con el modelo base.
 
 ## Requisitos de hardware
 
@@ -88,7 +88,7 @@ La comparación relevante es frente a los originales: el merge no documenta ning
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ShahriarFerdoush/mistral-7b-instruct-math-dare-k30
+- Hugging Face: https://huggingface.co/ShahriarFerdoush/mistral-7b-instruct-math-dare-k30
 - Referencia citada en la etiqueta del repositorio (plantilla, no artículo del modelo): Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", https://arxiv.org/abs/1910.09700
 - Calculadora de impacto asociada a esa referencia: https://mlco2.github.io/impact
 - No se han encontrado en la información disponible papers, blogs, repositorios de código ni demos adicionales del modelo.

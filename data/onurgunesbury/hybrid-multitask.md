@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Onurgunesbury/hybrid-multitask es un repositorio experimental publicado en HuggingFace que contiene un esqueleto de codigo para una arquitectura hibrida orientada a tareas multiples (multitask). No es un modelo entrenado: el autor lo describe explicitamente como un punto de partida de inicializacion valido para pruebas de humo (smoke tests), no como un checkpoint con rendimiento evaluado. El unico artefacto con pesos es `model.safetensors`, con 16.576 parametros totales, un tamano irrelevante a efectos practicos de inferencia real.
+Onurgunesbury/hybrid-multitask es un repositorio experimental publicado en Hugging Face que contiene un esqueleto de codigo para una arquitectura hibrida orientada a tareas multiples (multitask). No es un modelo entrenado: el autor lo describe explicitamente como un punto de partida de inicializacion valido para pruebas de humo (smoke tests), no como un checkpoint con rendimiento evaluado. El unico artefacto con pesos es `model.safetensors`, con 16.576 parametros totales, un tamano irrelevante a efectos practicos de inferencia real.
 
 El interes del repositorio es didactico y de investigacion: permite inspeccionar cambios de arquitectura en una configuracion intencionadamente diminuta antes de lanzar un entrenamiento completo. La arquitectura declarada combina atencion de ventana deslizante (sliding window) con fusion mediante co-atencion, activacion gelu-tanh y normalizacion GroupNorm, junto con una receta de experimento por defecto basada en el optimizador Adafactor y un scheduler polinomial.
 
@@ -77,7 +77,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Onurgunesbury/hybrid-multitask | 16.576 | no disponible | sin benchmark declarado | BSD-3-Clause | HuggingFace, 0 descargas |
+| Onurgunesbury/hybrid-multitask | 16.576 | no disponible | sin benchmark declarado | BSD-3-Clause | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Onurgunesbury/hybrid-multitask
+- Modelo en Hugging Face: https://huggingface.co/Onurgunesbury/hybrid-multitask
 - Referencias genericas encontradas en la busqueda web, no relacionadas directamente con este repositorio y sin datos sobre el modelo:
   - https://multitaskai.com/
   - https://www.geeksforgeeks.org/artificial-intelligence/what-is-hybrid-ai-and-its-architecture/

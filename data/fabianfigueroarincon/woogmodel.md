@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WoogModel es un repositorio alojado en HuggingFace por el usuario fabianfigueroarincon bajo licencia Apache 2.0. El repositorio no incluye una model card util: el README se reduce al bloque YAML de metadatos con la licencia, sin descripcion, sin arquitectura declarada, sin numero de parametros, sin longitud de contexto y sin idiomas soportados.
+WoogModel es un repositorio alojado en Hugging Face por el usuario fabianfigueroarincon bajo licencia Apache 2.0. El repositorio no incluye una model card util: el README se reduce al bloque YAML de metadatos con la licencia, sin descripcion, sin arquitectura declarada, sin numero de parametros, sin longitud de contexto y sin idiomas soportados.
 
 En el momento de la consulta acumula 0 descargas y 0 likes, y las fechas de creacion y de ultima actualizacion coinciden (17 de septiembre de 2026, fecha que puede deberse a un error del autor), lo que indica que no ha habido mantenimiento posterior a la publicacion. La pipeline no esta declarada, de modo que ni siquiera consta si es un modelo de texto, vision, audio u otro tipo.
 
@@ -24,7 +24,7 @@ La busqueda web realizada no devolvio ningun resultado relacionado con el modelo
 | Pipeline declarada | no disponible |
 | Descargas | 0 |
 | Likes | 0 |
-| Fecha de publicacion | 2026-09-17 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-17 (segun metadatos de Hugging Face) |
 | Fecha de ultima actualizacion | 2026-09-17 (identica a la de publicacion) |
 | Tags del repositorio | license:apache-2.0, region:us |
 
@@ -92,6 +92,6 @@ No disponible. Al no conocerse la arquitectura, el tamano ni las capacidades del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fabianfigueroarincon/WoogModel
+- Hugging Face: https://huggingface.co/fabianfigueroarincon/WoogModel
 - Busqueda web: no se encontro ningun enlace relevante sobre el modelo; los resultados recuperados correspondian a contenidos ajenos en zhihu.com (venta de entradas, evolucion de precios de la vivienda, funciones de RRHH y una escena de ficcion), por lo que se omiten.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles.

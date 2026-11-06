@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-kx-chrono5-w40-s130` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo la etiqueta de arquitectura `sn38-nanochrono`. Se trata de un modelo de aproximadamente 2.018 millones de parametros almacenados en formato safetensors (6,3 GB en el repositorio), lo que sugiere pesos en precision alta (probablemente bf16 o fp16) para un modelo de escala pequena-media. El identificador incluye marcas de configuracion (r18, a2, w13, chrono5, w40, s130) que apuntan a un experimento de ajuste fino o ablacion concreta dentro de una familia denominada "nanochrono".
+El modelo `alfred8995/r18-a2-w13-kx-chrono5-w40-s130` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo la etiqueta de arquitectura `sn38-nanochrono`. Se trata de un modelo de aproximadamente 2.018 millones de parametros almacenados en formato safetensors (6,3 GB en el repositorio), lo que sugiere pesos en precision alta (probablemente bf16 o fp16) para un modelo de escala pequena-media. El identificador incluye marcas de configuracion (r18, a2, w13, chrono5, w40, s130) que apuntan a un experimento de ajuste fino o ablacion concreta dentro de una familia denominada "nanochrono".
 
 La relevancia de este checkpoint es limitada y muy especifica: se publica con cero descargas y cero likes, sin pipeline declarado, sin idiomas documentados y con acceso restringido (gated). No dispone de model card sustantiva mas alla de los metadatos basicos, por lo que cualquier evaluacion funcional debe hacerse por inspeccion directa de los pesos y del codigo de la arquitectura `sn38-nanochrono`.
 
@@ -44,7 +44,7 @@ Tampoco se dispone de datos sobre el corpus de entrenamiento: numero de tokens, 
 - Ajuste fino posterior (fine-tuning): al publicarse en safetensors y bajo Apache 2.0, puede emplearse como inicializacion para tareas especificas una vez validado el tokenizador y la plantilla de entrada.
 - Evaluacion de robustez y sesgos: util como sujeto de prueba en pipelines de auditoria de modelos pequenos, comparando su salida con la de checkpoints de referencia del mismo tamano.
 - Despliegue en entornos con recursos limitados: 6,3 GB de pesos permiten cargar el modelo en GPUs de 8-16 GB en bf16, o menos si se cuantiza a posteriori con herramientas externas (llama.cpp, GPTQ, AWQ), aunque no se ofrecen cuantizaciones oficiales.
-- Docencia y formacion: ejemplo practico de publicacion de checkpoints en HuggingFace con acceso gated y licencia permisiva, para ilustrar flujos de control de acceso y trazabilidad de experimentos.
+- Docencia y formacion: ejemplo practico de publicacion de checkpoints en Hugging Face con acceso gated y licencia permisiva, para ilustrar flujos de control de acceso y trazabilidad de experimentos.
 
 ## Benchmarks y rendimiento
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| alfred8995/r18-a2-w13-kx-chrono5-w40-s130 | 2.018.511.234 | no disponible | Apache 2.0 | Gated en HuggingFace | Sin model card sustantiva ni benchmarks |
+| alfred8995/r18-a2-w13-kx-chrono5-w40-s130 | 2.018.511.234 | no disponible | Apache 2.0 | Gated en Hugging Face | Sin model card sustantiva ni benchmarks |
 | Qwen2.5-1.5B | 1.540 millones | 32.768 tokens | Apache 2.0 | Publico | Arquitectura transformer documentada, benchmarks publicados |
 | SmolLM2-1.7B | 1.710 millones | 8.192 tokens | Apache 2.0 | Publico | Entrenado sobre corpus abierto documentado |
 | Gemma-2-2B | 2.610 millones | 8.192 tokens | Gemma Terms | Publico con aceptacion | Requiere aceptar terminos, no Apache 2.0 |
@@ -73,7 +73,7 @@ La comparativa es orientativa por escala de parametros; no existen datos de rend
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no se documentan datos de entrenamiento, tokenizador, plantilla de prompt ni idiomas, lo que impide evaluar sesgos y alucinacion de forma informada.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar; no es un modelo de uso inmediato.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar; no es un modelo de uso inmediato.
 - Cero adopcion verificable: 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de uso en produccion ni de validacion por terceros.
 - Arquitectura no estandar: la familia `sn38-nanochrono` no es una arquitectura ampliamente soportada por frameworks de inferencia, lo que puede requerir codigo propio para cargar los pesos.
 - Riesgo de alucinacion y sesgos: no evaluable sin documentacion; debe asumirse un riesgo alto por defecto en cualquier despliegue.
@@ -82,5 +82,5 @@ La comparativa es orientativa por escala de parametros; no existen datos de rend
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono5-w40-s130
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono5-w40-s130
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este checkpoint o a la familia `sn38-nanochrono`.

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Prahaladha/hima-tts-nano-hi-ONNX",
+  "slug": "prahaladha-hima-tts-nano-hi-onnx",
+  "author": "Prahaladha",
+  "url": "https://huggingface.co/Prahaladha/hima-tts-nano-hi-ONNX",
+  "created_at": "2026-11-04T09:48:47.000Z",
+  "updated_at": "2026-11-04T10:27:18.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "hi",
+    "en",
+    "base_model:Prahaladha/hima-tts-nano-hi",
+    "base_model:quantized:Prahaladha/hima-tts-nano-hi",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 637733974,
+  "storage_human": "638 MB",
+  "base_model": "Prahaladha/hima-tts-nano-hi",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prahaladha/hima-tts-nano-hi-ONNX · Hugging Face",
+      "url": "https://huggingface.co/Prahaladha/hima-tts-nano-hi-ONNX",
+      "snippet": "hima-tts-nano-hi-ONNX hima-tts-nano-hi (Hindi text to speech, 62M parameters) converted to ONNX, for fast speech on any CPU (Windows, Linux, Mac), with no PyTorch. Same voices, same sound; int8 is smaller and faster, and read just as clearly in our checks."
+    },
+    {
+      "title": "Prahaladha/hima-tts-nano-hi · Hugging Face",
+      "url": "https://huggingface.co/Prahaladha/hima-tts-nano-hi",
+      "snippet": "hima-tts-nano-hi Hindi text to speech in a small model (62M parameters). It runs on a laptop CPU, faster than real time, and there are ONNX and MLX versions for even faster local use."
+    }
+  ]
+}

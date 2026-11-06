@@ -83,9 +83,9 @@ No se dispone de comparativas publicadas por el autor frente a alternativas. La 
 
 | Modelo | Parametros | Contexto | Licencia | Especializacion | Disponibilidad |
 |---|---|---|---|---|---|
-| ningpy/redflag-modifier-3b | 3,09 B | No disponible en la ficha | Apache 2.0 | Extraccion de modificadores clinicos (EN/ZH/MS) | HuggingFace |
-| Qwen/Qwen2.5-3B-Instruct (modelo base) | 3,09 B | No confirmado en esta ficha | Apache 2.0 | Asistente generalista e instruct | HuggingFace |
-| Modelos genericos de ~3 B (otras familias) | ~3 B | No disponible | Variable | Proposito general | HuggingFace |
+| ningpy/redflag-modifier-3b | 3,09 B | No disponible en la ficha | Apache 2.0 | Extraccion de modificadores clinicos (EN/ZH/MS) | Hugging Face |
+| Qwen/Qwen2.5-3B-Instruct (modelo base) | 3,09 B | No confirmado en esta ficha | Apache 2.0 | Asistente generalista e instruct | Hugging Face |
+| Modelos genericos de ~3 B (otras familias) | ~3 B | No disponible | Variable | Proposito general | Hugging Face |
 
 En la tarea concreta que cubre este modelo (extraccion de modificadores en notas clinicas multilingues del sudeste asiatico) no se conocen alternativas publicas equivalentes en la informacion disponible.
 
@@ -98,7 +98,7 @@ En la tarea concreta que cubre este modelo (extraccion de modificadores en notas
 - La cobertura de idiomas esta limitada a ingles (con variante Brunei/Manglish), chino y malayo. Otros idiomas, incluido el castellano, no estan soportados.
 - Ambito de uso muy restringido: no es un modelo de proposito general y su uso fuera de la extraccion de modificadores clinicos no esta validado.
 - El contenido generado por el modelo no constituye diagnostico medico. Cualquier uso en produccion sanitaria debe acompanarse de revision por personal clinico cualificado.
-- Discrepancia de identificadores: la ficha de HuggingFace corresponde a `ningpy/redflag-modifier-3b`, mientras que el codigo de ejemplo y los modulos hermanos de la model card apuntan a `peiyan-ning/redflag-modifier-3b`. Conviene verificar cual es el repositorio canonico antes de integrarlo.
+- Discrepancia de identificadores: la ficha de Hugging Face corresponde a `ningpy/redflag-modifier-3b`, mientras que el codigo de ejemplo y los modulos hermanos de la model card apuntan a `peiyan-ning/redflag-modifier-3b`. Conviene verificar cual es el repositorio canonico antes de integrarlo.
 - El codigo de ejemplo de la model card es incorrecto en un punto: asigna `SYSTEM_PROMPT = tok.chat_template`, lo que no corresponde al *system prompt* descrito. Hay que sustituirlo manualmente por el prompt completo.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero el modelo base Qwen2.5-3B-Instruct tambien es Apache 2.0, por lo que no hay restricciones adicionales conocidas. Aun asi, debe revisarse la licencia del modelo base en su version concreta.
 - El repositorio no incluye pesos en GGUF ni cuantizaciones listas para usar en CPU, lo que limita el despliegue en entornos sin GPU.
@@ -106,7 +106,7 @@ En la tarea concreta que cubre este modelo (extraccion de modificadores en notas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ningpy/redflag-modifier-3b
+- Modelo en Hugging Face: https://huggingface.co/ningpy/redflag-modifier-3b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio del pipeline completo (motor de reglas V20, post-procesado e inferencia de ejemplo): https://git.evyd.tech/ai/redflag-detection-2.0
 - Modulos hermanos citados en la model card (referenciados bajo el espacio `peiyan-ning`):

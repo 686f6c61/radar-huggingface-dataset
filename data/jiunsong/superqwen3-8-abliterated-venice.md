@@ -95,7 +95,7 @@ La comparativa directa con el base Qwen3.8-27B muestra que el modelo mantiene la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jiunsong/SuperQwen3.8-abliterated-Venice
+- Repositorio Hugging Face: https://huggingface.co/Jiunsong/SuperQwen3.8-abliterated-Venice
 - Repositorio GGUF (mismo autor): https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated-GGUF/tree/main
 - Página de FriendliAI para despliegue: https://friendli.ai/models/Jiunsong/SuperQwen3.8-27b-abliterated
 - Perfil del autor: https://huggingface.co/Jiunsong

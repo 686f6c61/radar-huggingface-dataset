@@ -61,7 +61,7 @@ Los resultados usan los 1.581 ejemplos de ScreenSpot-Pro, los 3.594 de MMBench-G
 - El adaptador LoRA ocupa 0,3 GB, pero el modelo base Qwen3-VL-8B-Instruct requiere una GPU con al menos 16 GB de VRAM en precision FP16, o unos 8 GB si se cuantiza a 4 bits.
 - GPU recomendadas: NVIDIA RTX 4090 (24 GB), A100 (40/80 GB) o H100 (80 GB) para inferencia comoda sin cuantizacion.
 - Es posible ejecutarlo en GPUs de consumo como RTX 3080/3090 con cuantizacion del backbone, aunque no se documentan configuraciones especificas.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la libreria transformers de HuggingFace, o mediante servidores de inferencia como vLLM o TGI si soportan adaptadores LoRA. Tambien se puede usar con llama.cpp si se convierte el modelo combinado a GGUF.
+- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la libreria transformers de Hugging Face, o mediante servidores de inferencia como vLLM o TGI si soportan adaptadores LoRA. Tambien se puede usar con llama.cpp si se convierte el modelo combinado a GGUF.
 - La latencia estimada no esta disponible en la informacion proporcionada; la generacion greedy con maximo 32 tokens sugiere una inferencia rapida en hardware moderno.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ruotian/SelectGround-8B
+- Modelo en Hugging Face: https://huggingface.co/ruotian/SelectGround-8B
 - Repositorio de codigo: https://github.com/zhangruotian/SelectGround
 - Dataset ClickContrast: https://huggingface.co/datasets/ruotian/ClickContrast
 - Pagina del modelo en FriendliAI: https://friendli.ai/models/ruotian/SelectGround-8B

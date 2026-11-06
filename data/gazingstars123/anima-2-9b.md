@@ -4,7 +4,7 @@
 
 Anima-2.9B es un modelo de difusión texto-imagen especializado en ilustración anime, desarrollado por el usuario Gazingstars123 como una expansión del modelo base circlestone-labs/Anima. Se distribuye como un archivo único en formato safetensors y está diseñado para integrarse en ComfyUI mediante un nodo personalizado. El modelo resuelve el problema de generar ilustraciones anime de alta calidad a partir de descripciones textuales, con un enfoque en la compatibilidad con flujos de trabajo de difusión existentes.
 
-La relevancia actual del modelo radica en su tamaño compacto (2.9B parámetros) y su formato de archivo único, que facilita su descarga y uso en entornos de generación de imágenes. Aunque la información técnica disponible es limitada, el modelo cuenta con 124 likes en HuggingFace, lo que sugiere cierto interés de la comunidad. No se han publicado detalles sobre arquitectura interna, datos de entrenamiento o benchmarks en la información disponible.
+La relevancia actual del modelo radica en su tamaño compacto (2.9B parámetros) y su formato de archivo único, que facilita su descarga y uso en entornos de generación de imágenes. Aunque la información técnica disponible es limitada, el modelo cuenta con 124 likes en Hugging Face, lo que sugiere cierto interés de la comunidad. No se han publicado detalles sobre arquitectura interna, datos de entrenamiento o benchmarks en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ La relevancia actual del modelo radica en su tamaño compacto (2.9B parámetros)
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponibles |
-| Licencia | no disponible (etiquetada como "other" en HuggingFace) |
+| Licencia | no disponible (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (archivo unico) |
 
 ## Arquitectura y entrenamiento
@@ -61,7 +61,7 @@ No se dispone de datos comparativos con otros modelos de difusion anime como Any
 ## Limitaciones y advertencias
 
 - No se ha publicado informacion sobre sesgos, alucinaciones o limitaciones de contenido. Al ser un modelo de generacion de imagenes anime, podria reflejar sesgos presentes en su dataset de entrenamiento, pero no se documentan.
-- La licencia esta marcada como "other" en HuggingFace, lo que implica restricciones desconocidas. Es necesario contactar al autor o revisar los archivos del repositorio para conocer los terminos exactos de uso comercial.
+- La licencia esta marcada como "other" en Hugging Face, lo que implica restricciones desconocidas. Es necesario contactar al autor o revisar los archivos del repositorio para conocer los terminos exactos de uso comercial.
 - No se especifican los idiomas soportados para los prompts; probablemente funcione mejor con ingles, pero no se confirma.
 - El modelo no incluye capacidades de razonamiento, tool calling ni procesamiento de lenguaje natural general; es exclusivamente un generador de imagenes.
 - Al ser un modelo relativamente nuevo (creado en agosto de 2026) y con pocas descargas (0), su estabilidad y calidad en produccion no estan validadas por la comunidad.
@@ -69,7 +69,7 @@ No se dispone de datos comparativos con otros modelos de difusion anime como Any
 
 ## Enlaces
 
-- [HuggingFace - Gazingstars123/Anima-2.9B](https://huggingface.co/Gazingstars123/Anima-2.9B)
+- [Hugging Face - Gazingstars123/Anima-2.9B](https://huggingface.co/Gazingstars123/Anima-2.9B)
 - [GitHub - ComfyUI-Anima-2.9B (nodo personalizado)](https://github.com/gazingstars123/ComfyUI-Anima-2.9B)
 - [GitHub - perfil de gazingstars123](https://github.com/gazingstars123)
-- [HuggingFace - Gazingstars123/anima2.9b (repositorio alternativo)](https://huggingface.co/Gazingstars123/anima2.9b)
+- [Hugging Face - Gazingstars123/anima2.9b (repositorio alternativo)](https://huggingface.co/Gazingstars123/anima2.9b)

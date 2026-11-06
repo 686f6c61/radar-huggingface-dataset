@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`elliewood/flamingo-retrieval-tryout38-2023` es un repositorio de HuggingFace publicado por el usuario `elliewood` que contiene una implementación propia y reducida de una arquitectura tipo Flamingo orientada a tareas de *retrieval* (recuperación multimodal). Según su propia model card, no se trata de un modelo entrenado ni de una release de pesos listos para producción: el fichero `model.safetensors` es un checkpoint de inicialización válido únicamente para *smoke tests*, y el autor indica explícitamente que no reclama ninguna puntuación de benchmark.
+`elliewood/flamingo-retrieval-tryout38-2023` es un repositorio de Hugging Face publicado por el usuario `elliewood` que contiene una implementación propia y reducida de una arquitectura tipo Flamingo orientada a tareas de *retrieval* (recuperación multimodal). Según su propia model card, no se trata de un modelo entrenado ni de una release de pesos listos para producción: el fichero `model.safetensors` es un checkpoint de inicialización válido únicamente para *smoke tests*, y el autor indica explícitamente que no reclama ninguna puntuación de benchmark.
 
 El repositorio se etiqueta internamente con la escala "giant", atención *flash*, fusión con *gating*, activación *swish* y normalización *instancenorm*, pero los metadatos reales de safetensors declaran únicamente 16.576 parámetros totales y el repositorio ocupa 0,0 GB, lo que contradice esa etiqueta de escala. La receta de entrenamiento por defecto usa el optimizador Adafactor con un *schedule* exponencial, pero el autor aclara que son valores de partida del script, no evidencia de un entrenamiento completado.
 
@@ -95,7 +95,7 @@ Para una comparación de rendimiento real habría que recurrir a OpenFlamingo, q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elliewood/flamingo-retrieval-tryout38-2023
+- Modelo en Hugging Face: https://huggingface.co/elliewood/flamingo-retrieval-tryout38-2023
 - Repositorio relacionado (UMass Robotics): https://huggingface.co/umassrobotics/flamingo-retrieval-2023
 - Repositorio relacionado (abhishekkumar6382): https://huggingface.co/abhishekkumar6382/flamingo-retrieval
 - Repositorio relacionado (zizhou01): https://huggingface.co/zizhou01/retrieval

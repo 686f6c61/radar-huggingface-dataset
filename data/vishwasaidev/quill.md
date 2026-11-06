@@ -46,7 +46,7 @@ Los datos de entrenamiento no existen; los datos de partida son las trayectorias
 - Estudio de interpretabilidad de sistemas generativos: al no haber red neuronal, cada pixel es trazable a una trayectoria, una pluma y una regla de rasterizacion, lo que permite analizar como la geometria produce el resultado final.
 - Generacion de sellos y marcas personales: `--seal` produce sellos rojos con caracteres kanji o latinos, reutilizables en documentos, arte digital o merchandising.
 - Prototipado rapido de tipografia caligrafica en proyectos de diseno: comparar seis manos con nueve tintas sobre el mismo texto permite iterar estilos antes de encargar una fuente real.
-- Integracion en aplicaciones web ligeras: el modelo corre en Pyodide en el navegador (Space de HuggingFace) y solo requiere NumPy y Pillow, por lo que puede embeberse en demos educativas sin infraestructura de GPU.
+- Integracion en aplicaciones web ligeras: el modelo corre en Pyodide en el navegador (Space de Hugging Face) y solo requiere NumPy y Pillow, por lo que puede embeberse en demos educativas sin infraestructura de GPU.
 - Generacion de ilustraciones de caligrafia japonesa para contenido editorial: con shodo y tinta `sumi` se obtienen caracteres con perfiles de presion realistas (tome, harai, ganchos) para articulos sobre cultura japonesa.
 
 ## Benchmarks y rendimiento
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - Memoria RAM: minima; los pesos ocupan 9,8 MB y las dependencias son NumPy y Pillow.
 - GPU recomendadas: ninguna; no se documenta soporte CUDA ni Metal.
 - Cabe en cualquier equipo, incluidos dispositivos de bajos recursos y navegador via Pyodide.
-- Despliegue: servidor local con `python server.py` (http://127.0.0.1:8792), CLI con `python quill.py`, o Space de HuggingFace en el navegador.
+- Despliegue: servidor local con `python server.py` (http://127.0.0.1:8792), CLI con `python quill.py`, o Space de Hugging Face en el navegador.
 - Latencia estimada: segundos por imagen en CPU; hasta ~10 s para hojas de demostracion o animaciones.
 - Throughput: no disponible; no esta pensado para generacion por lotes de alta concurrencia.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Quill | Motor procedural de caligrafia | 2.506.381 numeros (9,8 MB) | no aplica | ninguno | cc-by-sa-3.0 | HuggingFace, Space, app web |
+| Quill | Motor procedural de caligrafia | 2.506.381 numeros (9,8 MB) | no aplica | ninguno | cc-by-sa-3.0 | Hugging Face, Space, app web |
 | Modelos de difusion texto-a-imagen (p. ej. Stable Diffusion) | Red neuronal generativa | cientos de millones a miles de millones | limitado por prompt | si, a gran escala | varian (a menudo CreativeML o similar) | amplia |
 | Fuentes caligraficas vectoriales (p. ej. Hershey) | Datos de glifos | no aplica | no aplica | ninguno | dominio publico | paquetes y repositorios |
 | KanjiVG | Datos de trazos de kanji | no aplica | no aplica | ninguno | CC BY-SA 3.0 | web y repositorios |
@@ -88,7 +88,7 @@ La comparacion con modelos de difusion no es directa: Quill no genera imagenes a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vishwasaidev/quill
+- Modelo en Hugging Face: https://huggingface.co/Vishwasaidev/quill
 - Space (Pyodide, en navegador): https://huggingface.co/spaces/Vishwasaidev/quill
 - Aplicacion web: https://quill-calligraphy-b25f17930c4d.herokuapp.com/
 - KanjiVG: http://kanjivg.tagaini.net

@@ -98,6 +98,6 @@ Otras variantes abliteradas del mismo base, como el adaptador GGUF de BahamutRU,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gorbatjovy/DeepSeek-V4-Flash-0731-BahamutRU-t265-abliterated
+- Modelo en Hugging Face: https://huggingface.co/gorbatjovy/DeepSeek-V4-Flash-0731-BahamutRU-t265-abliterated
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Adaptador original: https://huggingface.co/BahamutRU/DeepSeek-V4-Flash-0731-heretic-abliterated-v2-GGUF-lora

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM-V 4.7 1B Mermaid Heretic GGUF es una cuantizacion en formato GGUF de un modelo vision-lenguaje (VLM) de aproximadamente 1.006 millones de parametros, derivado de la familia MiniCPM-V y ajustado especificamente para la conversion de diagramas e imagenes en codigo Mermaid. Lo publica el usuario Lucasgitguy-co en HuggingFace bajo licencia Apache 2.0, e incluye dos artefactos: el modelo de lenguaje cuantizado en Q4_K_M (0,672 GB) y un proyector de vision en F16 (1,109 GB) que debe cargarse conjuntamente para procesar entrada de imagen.
+MiniCPM-V 4.7 1B Mermaid Heretic GGUF es una cuantizacion en formato GGUF de un modelo vision-lenguaje (VLM) de aproximadamente 1.006 millones de parametros, derivado de la familia MiniCPM-V y ajustado especificamente para la conversion de diagramas e imagenes en codigo Mermaid. Lo publica el usuario Lucasgitguy-co en Hugging Face bajo licencia Apache 2.0, e incluye dos artefactos: el modelo de lenguaje cuantizado en Q4_K_M (0,672 GB) y un proyector de vision en F16 (1,109 GB) que debe cargarse conjuntamente para procesar entrada de imagen.
 
 El modelo parte de un checkpoint base (Lucasgitguy-co/minicpm-mermaid-heretic) al que se ha aplicado una modificacion denominada "Heretic", orientada presumiblemente a eliminar restricciones de rechazo o alineacion excesiva, aunque la model card no documenta el procedimiento. Su proposito practico es la inferencia local de vision-lenguaje en hardware modesto, con un caso de uso central claro: transcribir diagramas a sintaxis Mermaid.
 

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen3-VL-4B-Spatial-Analysis-GGUF es una recuantización en formato GGUF del modelo sabaridsnfuji/Qwen3-VL-4B-Spatial-Analysis, un ajuste fino de la familia Qwen3-VL orientado al analisis espacial de imagenes. El responsable de la publicacion es mradermacher, un autor conocido en HuggingFace por generar versiones cuantizadas estaticas de modelos abiertos para su uso con llama.cpp y otros runtimes compatibles con GGUF. El modelo base, a su vez, deriva de Qwen3-VL, la familia de modelos vision-lenguaje de Alibaba Qwen.
+Qwen3-VL-4B-Spatial-Analysis-GGUF es una recuantización en formato GGUF del modelo sabaridsnfuji/Qwen3-VL-4B-Spatial-Analysis, un ajuste fino de la familia Qwen3-VL orientado al analisis espacial de imagenes. El responsable de la publicacion es mradermacher, un autor conocido en Hugging Face por generar versiones cuantizadas estaticas de modelos abiertos para su uso con llama.cpp y otros runtimes compatibles con GGUF. El modelo base, a su vez, deriva de Qwen3-VL, la familia de modelos vision-lenguaje de Alibaba Qwen.
 
 El problema que resuelve esta publicacion es practico: permitir ejecutar un modelo multimodal de 4.022 millones de parametros en hardware de consumo, reduciendo el peso desde los 8,2 GB de la version f16 hasta 1,8 GB en Q2_K o 2,6 GB en Q4_K_M. Se distribuye con los ficheros auxiliares mmproj (en Q8_0 y f16) necesarios para procesar la entrada visual, ya que sin ellos el modelo no puede interpretar imagenes.
 
-La relevancia actual del modelo viene dada por su especializacion en analisis espacial (relaciones de posicion, ubicacion relativa de objetos, descripcion de escenas) combinada con un tamano reducido. Segun los metadatos de HuggingFace acumula 175 descargas y 1 "like", con licencia Apache 2.0, lo que facilita su integracion en productos comerciales. No se han publicado datos de contexto, idiomas distintos del ingles ni resultados de benchmarks en la informacion disponible.
+La relevancia actual del modelo viene dada por su especializacion en analisis espacial (relaciones de posicion, ubicacion relativa de objetos, descripcion de escenas) combinada con un tamano reducido. Segun los metadatos de Hugging Face acumula 175 descargas y 1 "like", con licencia Apache 2.0, lo que facilita su integracion en productos comerciales. No se han publicado datos de contexto, idiomas distintos del ingles ni resultados de benchmarks en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-VL-4B-Spatial-Analysis-GGUF (este) | 4.022 millones | no disponible | GGUF + mmproj | apache-2.0 | HuggingFace, 175 descargas |
-| sabaridsnfuji/Qwen3-VL-4B-Spatial-Analysis (modelo base) | 4.022 millones | no disponible | safetensors (transformers) | no disponible en la informacion proporcionada | HuggingFace |
+| Qwen3-VL-4B-Spatial-Analysis-GGUF (este) | 4.022 millones | no disponible | GGUF + mmproj | apache-2.0 | Hugging Face, 175 descargas |
+| sabaridsnfuji/Qwen3-VL-4B-Spatial-Analysis (modelo base) | 4.022 millones | no disponible | safetensors (transformers) | no disponible en la informacion proporcionada | Hugging Face |
 | Otros modelos vision-lenguaje de ~4B (Qwen2.5-VL-3B, InternVL2-4B, SmolVLM) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento que permitan comparar cuantitativamente este modelo con alternativas de la misma categoria. La comparacion se limita, por tanto, a la disponibilidad de cuantizaciones GGUF y al tamano de pesos: en el rango de 2-3 GB de pesos cuantizados a 4 bits, las alternativas mas directas serian otros modelos vision-lenguaje de 3B a 4B con soporte GGUF, pero no se aportan cifras en la informacion recibida.
@@ -92,12 +92,12 @@ No se dispone de datos de rendimiento que permitan comparar cuantitativamente es
 - Necesidad del fichero mmproj: sin cargar el mmproj correspondiente, el modelo no procesara imagenes. Es un error frecuente al desplegar GGUF multimodales.
 - Restricciones de licencia: apache-2.0 permite uso comercial, modificacion y redistribucion con atribucion y sin garantias. No obstante, se debe verificar la licencia del modelo base original de Qwen3-VL si se redistribuye el modelo combinado.
 - Trazabilidad: este repositorio es una recuantizacion de terceros, no una publicacion oficial de Alibaba Qwen. No se detalla el proceso exacto de calibracion ni la verificacion de fidelidad respecto al modelo base.
-- Fechas de los metadatos: el repositorio figura como creado el 2026-04-24 y actualizado el 2026-10-14, fechas posteriores a la fecha habitual de publicacion de la familia; conviene contrastarlas directamente en HuggingFace.
+- Fechas de los metadatos: el repositorio figura como creado el 2026-04-24 y actualizado el 2026-10-14, fechas posteriores a la fecha habitual de publicacion de la familia; conviene contrastarlas directamente en Hugging Face.
 - Resultados de busqueda web: las busquedas asociadas a este modelo devolvieron exclusivamente resultados sin relacion tecnica con el modelo (sitios de contenido para adultos). No se ha podido localizar documentacion adicional, paper, blog o repositorio externo relevante.
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Qwen3-VL-4B-Spatial-Analysis-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Qwen3-VL-4B-Spatial-Analysis-GGUF
 - Modelo base: https://huggingface.co/sabaridsnfuji/Qwen3-VL-4B-Spatial-Analysis
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Qwen3-VL-4B-Spatial-Analysis-GGUF
 - README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

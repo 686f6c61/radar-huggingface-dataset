@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`JInchurikiof9tails/distilgpt2-reward-model` es un modelo publicado en HuggingFace Hub por el usuario JInchurikiof9tails, etiquetado para la tarea de `text-classification` y construido sobre un backbone de la familia GPT-2, según indican su nombre y su etiqueta `gpt2`. El repositorio contiene 81.913.344 parámetros en formato safetensors (aproximadamente 0,3 GB), una cifra coherente con un distilgpt2 (~82 M de parámetros) al que se le habría añadido una cabeza de clasificación o puntuación. Por su denominación ("reward model"), el uso previsto sería asignar una puntuación escalar a un texto, típicamente para ordenar o puntuar respuestas generadas en pipelines de RLHF, DPO o best-of-n.
+`JInchurikiof9tails/distilgpt2-reward-model` es un modelo publicado en Hugging Face Hub por el usuario JInchurikiof9tails, etiquetado para la tarea de `text-classification` y construido sobre un backbone de la familia GPT-2, según indican su nombre y su etiqueta `gpt2`. El repositorio contiene 81.913.344 parámetros en formato safetensors (aproximadamente 0,3 GB), una cifra coherente con un distilgpt2 (~82 M de parámetros) al que se le habría añadido una cabeza de clasificación o puntuación. Por su denominación ("reward model"), el uso previsto sería asignar una puntuación escalar a un texto, típicamente para ordenar o puntuar respuestas generadas en pipelines de RLHF, DPO o best-of-n.
 
-La model card publicada es la plantilla automática de HuggingFace sin ningún campo completado: no declara autoría real, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. El modelo acumula 0 descargas y 0 "likes", y fue creado y actualizado con unos ocho minutos de diferencia, lo que apunta a una subida experimental o de prueba más que a un artefacto validado y listo para producción.
+La model card publicada es la plantilla automática de Hugging Face sin ningún campo completado: no declara autoría real, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. El modelo acumula 0 descargas y 0 "likes", y fue creado y actualizado con unos ocho minutos de diferencia, lo que apunta a una subida experimental o de prueba más que a un artefacto validado y listo para producción.
 
 Por todo ello, esta ficha debe leerse como un inventario de lo que se puede verificar (tamaño, formato, pipeline declarado, fecha) y de lo que queda explícitamente sin confirmar (entrenamiento, licencia, idiomas, calidad). No hay evidencia publicada de que el modelo haya sido entrenado con datos de preferencias ni de que su cabeza de clasificación produzca puntuaciones calibradas.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos de referencia provienen de sus fichas públicas en HuggingFace; los del modelo analizado, del repositorio indicado. El rendimiento se marca como no disponible en todos los casos por falta de benchmarks comparables.
+Los datos de los modelos de referencia provienen de sus fichas públicas en Hugging Face; los del modelo analizado, del repositorio indicado. El rendimiento se marca como no disponible en todos los casos por falta de benchmarks comparables.
 
 | Modelo | Parámetros | Contexto | Tarea declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
@@ -86,7 +86,7 @@ Los datos de los modelos de referencia provienen de sus fichas públicas en Hugg
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JInchurikiof9tails/distilgpt2-reward-model
+- Modelo en Hugging Face: https://huggingface.co/JInchurikiof9tails/distilgpt2-reward-model
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre el calculador de impacto medioambiental, no un paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto medioambiental de Machine Learning: https://mlco2.github.io/impact
 - Búsqueda web realizada: no devolvió ningún resultado relacionado con el modelo. Los resultados obtenidos correspondían al videojuego Farming Simulator 25 y a sus páginas oficiales, de Steam y de Epic Games, sin relación alguna con el modelo analizado.

@@ -114,9 +114,9 @@ El autor advierte que esta es una medicion de escritorio para comparar modelos, 
 
 | Modelo | Clases | mAP@[0,5:0,95] sede propia | mAP@[0,5:0,95] sede nueva | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| RepLiteDet-S0.5 | 3 (Pollen, RedNectar, BlueNectar) | 0,649 +/- 0,004 | 0,409 +/- 0,004 | 0,77 MB, int8 TFLite | Apache 2.0 | HuggingFace (ftc8565/replitedet-s0p5) |
+| RepLiteDet-S0.5 | 3 (Pollen, RedNectar, BlueNectar) | 0,649 +/- 0,004 | 0,409 +/- 0,004 | 0,77 MB, int8 TFLite | Apache 2.0 | Hugging Face (ftc8565/replitedet-s0p5) |
 | SSD-MobileNetV2 300 (baseline del autor, mismos pasos y fuentes 40/40/20, batch 8) | 3 | 0,443 +/- 0,023 | 0,364 +/- 0,011 | no disponible | no disponible | no indicada en la model card |
-| RepLiteDet-S0 (1 clase, Pollen) | 1 | no disponible (solo se publica el dato de escenas solo Pollen: 0,776 +/- 0,003 para S0.5) | no disponible | no disponible | no disponible | HuggingFace (ftc8565/replitedet-s0) |
+| RepLiteDet-S0 (1 clase, Pollen) | 1 | no disponible (solo se publica el dato de escenas solo Pollen: 0,776 +/- 0,003 para S0.5) | no disponible | no disponible | no disponible | Hugging Face (ftc8565/replitedet-s0) |
 
 Nota: el unico baseline con cifras comparables publicadas en la model card es SSD-MobileNetV2 300. No se dispone de datos de otros detectores ligeros como YOLO en la informacion proporcionada, por lo que no se incluyen comparaciones con ellos. La diferencia de batch (16 frente a 8) implica que RepLiteDet-S0.5 vio el doble de imagenes a igual numero de pasos, un factor que el propio autor senala al interpretar la comparacion.
 
@@ -137,7 +137,7 @@ Nota: el unico baseline con cifras comparables publicadas en la model card es SS
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ftc8565/replitedet-s0p5
+- Modelo en Hugging Face: https://huggingface.co/ftc8565/replitedet-s0p5
 - Modelo relacionado RepLiteDet-S0 (1 clase, Pollen): https://huggingface.co/ftc8565/replitedet-s0
 - Dataset de terceros citado en los agradecimientos (BlueDarkUP, FTC-BioBuzz en Roboflow Universe): https://universe.roboflow.com/blue... (el enlace aparece truncado en la model card; no se dispone de la URL completa)
 - Busqueda web: no se ha encontrado ningun enlace relevante al modelo. Los resultados devueltos por la busqueda corresponden a sitios de contenido para adultos sin relacion alguna con RepLiteDet-S0.5, por lo que se descartan y no se listan.

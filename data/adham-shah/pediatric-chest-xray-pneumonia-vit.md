@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `adham-shah/pediatric-chest-xray-pneumonia-vit` es un clasificador de imágenes de radiografía de tórax pediátrica desarrollado por el usuario de HuggingFace adham-shah, concebido como proyecto educativo. Se trata de un Vision Transformer (ViT) afinado mediante transfer learning a partir de `google/vit-base-patch16-224-in21k`, que clasifica radiografías de tórax de niños de entre 1 y 5 años en dos categorías: `NORMAL` o `PNEUMONIA`. El modelo resuelve una tarea de clasificación binaria de imagen médica y es relevante como ejemplo práctico de ajuste fino de un ViT en un dominio especializado con recursos limitados.
+El modelo `adham-shah/pediatric-chest-xray-pneumonia-vit` es un clasificador de imágenes de radiografía de tórax pediátrica desarrollado por el usuario de Hugging Face adham-shah, concebido como proyecto educativo. Se trata de un Vision Transformer (ViT) afinado mediante transfer learning a partir de `google/vit-base-patch16-224-in21k`, que clasifica radiografías de tórax de niños de entre 1 y 5 años en dos categorías: `NORMAL` o `PNEUMONIA`. El modelo resuelve una tarea de clasificación binaria de imagen médica y es relevante como ejemplo práctico de ajuste fino de un ViT en un dominio especializado con recursos limitados.
 
 El modelo parte de la arquitectura ViT-base con parches de 16x16 y resolución de entrada de 224x224 píxeles, con un total de 85.800.194 parámetros. Se ha entrenado sobre el conjunto de datos público de Kermany et al. (2018) procedente del Guangzhou Women and Children's Medical Center, ampliamente utilizado en la literatura de imagen médica. El autor declara explícitamente que no es un dispositivo médico y que no debe emplearse para diagnóstico ni para decisiones clínicas.
 
@@ -71,8 +71,8 @@ El modelo afinado falló en 3 de 390 casos de neumonía y generó falsas alarmas
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pediatric-chest-xray-pneumonia-vit (este) | 85,8 M | no aplica (visión) | Clasificación binaria radiografía pediátrica | Apache-2.0 | HuggingFace |
-| google/vit-base-patch16-224-in21k | 85,8 M | no aplica (visión) | Clasificación de imagen general (ImageNet-21k) | Apache-2.0 | HuggingFace |
+| pediatric-chest-xray-pneumonia-vit (este) | 85,8 M | no aplica (visión) | Clasificación binaria radiografía pediátrica | Apache-2.0 | Hugging Face |
+| google/vit-base-patch16-224-in21k | 85,8 M | no aplica (visión) | Clasificación de imagen general (ImageNet-21k) | Apache-2.0 | Hugging Face |
 | Alternativas específicas de clasificación de neumonía en radiografía | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos comparables de clasificación de neumonía pediátrica en radiografía con métricas publicadas en la información proporcionada.
@@ -91,7 +91,7 @@ No se dispone de información sobre otros modelos comparables de clasificación 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adham-shah/pediatric-chest-xray-pneumonia-vit
+- Modelo en Hugging Face: https://huggingface.co/adham-shah/pediatric-chest-xray-pneumonia-vit
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224-in21k
 - Conjunto de datos: https://huggingface.co/datasets/hf-vision/chest-xray-pneumonia
 - Cita del dataset: Kermany, D., Zhang, K., Goldbaum, M. (2018). Large Dataset of Labeled Optical Coherence Tomography (OCT) and Chest X-Ray Images. Mendeley Data, V3. doi:10.17632/rscbjbr9sj.3

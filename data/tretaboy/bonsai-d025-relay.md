@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tretaboy/bonsai-d025-relay` es un modelo de lenguaje de 1.720.574.976 parámetros (aproximadamente 1,72 mil millones) publicado en HuggingFace por el usuario Tretaboy. El tag `qwen3` sugiere que podría estar basado en la arquitectura Qwen3, aunque no se dispone de confirmación oficial ni de documentación detallada. El repositorio contiene pesos en formato safetensors y ocupa 6,9 GB, lo que indica que los pesos podrían estar en precisión FP16 o BF16 (dado que 1,72B parámetros en FP16 ocupan unos 3,4 GB, pero el tamaño de 6,9 GB sugiere que podría incluir otros archivos o una precisión mayor).
+El modelo `Tretaboy/bonsai-d025-relay` es un modelo de lenguaje de 1.720.574.976 parámetros (aproximadamente 1,72 mil millones) publicado en Hugging Face por el usuario Tretaboy. El tag `qwen3` sugiere que podría estar basado en la arquitectura Qwen3, aunque no se dispone de confirmación oficial ni de documentación detallada. El repositorio contiene pesos en formato safetensors y ocupa 6,9 GB, lo que indica que los pesos podrían estar en precisión FP16 o BF16 (dado que 1,72B parámetros en FP16 ocupan unos 3,4 GB, pero el tamaño de 6,9 GB sugiere que podría incluir otros archivos o una precisión mayor).
 
 El nombre "bonsai" aparece en proyectos de terceros como deepgrove-ai/Bonsai (un modelo de 500M con pesos ternarios) y PrismML (Bonsai 27B multimodal), pero no hay evidencia de que este modelo esté relacionado con ellos. La escasez de información pública (solo 15 descargas, sin licencia ni idiomas declarados) hace que sea difícil evaluar su utilidad real. Es probable que se trate de un experimento o un modelo en fase temprana de desarrollo.
 
@@ -57,7 +57,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tretaboy/bonsai-d025-relay
+- Hugging Face: https://huggingface.co/Tretaboy/bonsai-d025-relay
 - Repositorio de deepgrove-ai/Bonsai (posiblemente relacionado por el nombre, pero no confirmado): https://github.com/deepgrove-ai/Bonsai
 - Documentación de PrismML Bonsai 27B (otro proyecto con nombre similar): https://docs.prismml.com/models/bonsai-27b
 - Demo de PrismML Bonsai: https://github.com/PrismML-Eng/Bonsai-demo/

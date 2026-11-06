@@ -12,7 +12,7 @@ Se trata de un artefacto de investigación más que de un modelo listo para prod
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only), segun el tag `gpt2` de HuggingFace |
+| Arquitectura | GPT-2 (transformer decoder-only), segun el tag `gpt2` de Hugging Face |
 | Parametros totales | 124.770.816 (aproximadamente 125 M) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada (la arquitectura GPT-2 suele operar con 1024 tokens, dato no confirmado para este checkpoint) |
@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (rus-cyrl-100mb-after-ppt...-ckpt500) | 124,8 M | No disponible | No declarados (probable ruso cirilico) | No disponible | HuggingFace, safetensors |
-| GPT-2 (openai-community/gpt2) | 124 M | 1024 tokens | Ingles principalmente | MIT modificada | HuggingFace, safetensors/PyTorch |
-| DistilGPT-2 (distilbert/distilgpt2) | 82 M | 1024 tokens | Ingles | Apache 2.0 | HuggingFace, safetensors/PyTorch |
-| GPT-2 medium (openai-community/gpt2-medium) | 355 M | 1024 tokens | Ingles principalmente | MIT modificada | HuggingFace, safetensors/PyTorch |
+| Este modelo (rus-cyrl-100mb-after-ppt...-ckpt500) | 124,8 M | No disponible | No declarados (probable ruso cirilico) | No disponible | Hugging Face, safetensors |
+| GPT-2 (openai-community/gpt2) | 124 M | 1024 tokens | Ingles principalmente | MIT modificada | Hugging Face, safetensors/PyTorch |
+| DistilGPT-2 (distilbert/distilgpt2) | 82 M | 1024 tokens | Ingles | Apache 2.0 | Hugging Face, safetensors/PyTorch |
+| GPT-2 medium (openai-community/gpt2-medium) | 355 M | 1024 tokens | Ingles principalmente | MIT modificada | Hugging Face, safetensors/PyTorch |
 
 No se dispone de resultados comparativos de rendimiento entre estos modelos y el checkpoint analizado, ya que no se han publicado benchmarks para este último. La comparación se limita, por tanto, a parámetros, contexto y licencia.
 
@@ -101,7 +101,7 @@ No se dispone de resultados comparativos de rendimiento entre estos modelos y el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/rus-cyrl-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/rus-cyrl-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/l5wm2qe5

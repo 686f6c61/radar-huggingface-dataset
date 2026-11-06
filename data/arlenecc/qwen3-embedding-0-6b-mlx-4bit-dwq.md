@@ -81,7 +81,7 @@ La comparativa se limita al modelo base y a la version de referencia de mlx-comm
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arlenecc/Qwen3-Embedding-0.6B-MLX-4bit-DWQ
+- Repositorio Hugging Face: https://huggingface.co/arlenecc/Qwen3-Embedding-0.6B-MLX-4bit-DWQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Conversion de referencia mlx-community: https://huggingface.co/mlx-community/Qwen3-Embedding-0.6B-4bit-DWQ
 - Libreria MLX-LM: https://github.com/ml-explore/mlx-lm

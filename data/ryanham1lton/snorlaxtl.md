@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SnorlaxTL es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de la consulta, la model card asociada unicamente contiene el bloque de metadatos de licencia, sin ninguna descripcion del modelo, arquitectura, datos de entrenamiento ni proposito. El repositorio acumula 0 descargas y 0 likes, y no declara pipeline de inferencia ni idiomas soportados.
+SnorlaxTL es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de la consulta, la model card asociada unicamente contiene el bloque de metadatos de licencia, sin ninguna descripcion del modelo, arquitectura, datos de entrenamiento ni proposito. El repositorio acumula 0 descargas y 0 likes, y no declara pipeline de inferencia ni idiomas soportados.
 
 El unico dato cuantitativo disponible es el tamano del repositorio, 0,1 GB (aproximadamente 100 MB), junto con las fechas de creacion y actualizacion (19 de septiembre de 2026, con poco mas de tres minutos de diferencia entre ambas), lo que sugiere una publicacion unica sin iteraciones posteriores. El tamano reducido es compatible con pesos de un modelo pequeno o con adaptadores de ajuste fino (LoRA/QLoRA) mas un tokenizador, pero esta interpretacion es una inferencia a partir del peso del repositorio y no un dato confirmado por el autor.
 
@@ -86,7 +86,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/SnorlaxTL
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/SnorlaxTL
 - Pagina de la licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/
-- Perfil del autor en HuggingFace: https://huggingface.co/Ryanham1lton
+- Perfil del autor en Hugging Face: https://huggingface.co/Ryanham1lton
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Eon-m69-Gold-v46 es un modelo publicado en HuggingFace por el usuario Eoyn bajo licencia Apache 2.0. La model card asociada está practicamente vacia: unicamente declara la licencia, sin describir arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta y no tiene pipeline de inferencia asignado.
+Eon-m69-Gold-v46 es un modelo publicado en Hugging Face por el usuario Eoyn bajo licencia Apache 2.0. La model card asociada está practicamente vacia: unicamente declara la licencia, sin describir arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta y no tiene pipeline de inferencia asignado.
 
 Por la informacion disponible no es posible determinar que tipo de modelo es (lenguaje, vision, multimodal u otro), ni su arquitectura, numero de parametros o longitud de contexto. El identificador "Eon-m69-Gold-v46" sugiere una version serializada de un proyecto personal, pero se trata de una inferencia por el nombre y no de un dato confirmado por el autor.
 
@@ -71,7 +71,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 - Ausencia total de benchmarks, lo que impide evaluar calidad o rendimiento frente a alternativas.
 - Se desconocen los datos de entrenamiento, lo que impide evaluar sesgos, contaminacion de benchmarks o riesgos de alucinacion.
 - No se declaran idiomas soportados; no puede asumirse un buen rendimiento en castellano.
-- El pipeline no esta declarado, por lo que la herramienta de HuggingFace no puede inferir la tarea automaticamente.
+- El pipeline no esta declarado, por lo que la herramienta de Hugging Face no puede inferir la tarea automaticamente.
 - Cero descargas y cero likes en el momento de la consulta: sin validacion por parte de la comunidad.
 - Aunque la licencia es Apache 2.0 (permisiva para uso comercial), la falta de documentacion sobre el origen de los datos y los pesos impide descartar problemas de procedencia o cumplimiento.
 - Fecha de creacion y actualizacion identicas (2026-11-05), sin historial de revisiones visible.
@@ -79,5 +79,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Eoyn/Eon-m69-Gold-v46
+- Hugging Face: https://huggingface.co/Eoyn/Eon-m69-Gold-v46
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

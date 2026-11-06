@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `harutoinoue`, no contiene un modelo de IA, sino un documento académico en formato Markdown titulado `paper_002326559_cross_modal_fusion.md`. El artefacto es un paper académico sobre el tema de fusión cross-modal (cross modal fusion), con formato LaTeX/arXiv, estructura de introducción, trabajo relacionado, método, experimentos y conclusión, y estilo de escritura narrativo-progresivo.
+Este repositorio de Hugging Face, publicado por el usuario `harutoinoue`, no contiene un modelo de IA, sino un documento académico en formato Markdown titulado `paper_002326559_cross_modal_fusion.md`. El artefacto es un paper académico sobre el tema de fusión cross-modal (cross modal fusion), con formato LaTeX/arXiv, estructura de introducción, trabajo relacionado, método, experimentos y conclusión, y estilo de escritura narrativo-progresivo.
 
 El campo de la fusión cross-modal es un área de investigación activa en aprendizaje profundo multimodal. Según los resultados de búsqueda web, métodos como TACFN (Transformer-based Adaptive Cross-modal Fusion Network) abordan la fusión de modalidades mediante atención cross-modal para tareas como reconocimiento de emociones multimodales, mientras que otras investigaciones revisan las técnicas de fusión temprana, tardía, profunda e híbrida. Sin embargo, este repositorio concreto no implementa ni despliega ningún modelo de IA; se limita a almacenar el texto del paper.
 
@@ -57,7 +57,7 @@ No disponible. No existe modelo comparable porque este repositorio no contiene u
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/harutoinoue/paper_002326559_cross_modal_fusion
+- Repositorio en Hugging Face: https://huggingface.co/harutoinoue/paper_002326559_cross_modal_fusion
 - Paper relacionado (TACFN): https://arxiv.org/abs/2505.06536
 - Paper relacionado (PDF): https://arxiv.org/pdf/2505.06536
 - Survey sobre fusión multimodal: https://www.sciencedirect.com/org/science/article/pii/S1546221824005216

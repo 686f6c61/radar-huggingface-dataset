@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 | Modelo | Parametros | Contexto | Metricas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StanfordSCALE/assertion_is_off_topic | 109.486.464 | no disponible | F1 0,266 / ROC-AUC 0,797 (test, clase positiva) | no disponible | HuggingFace (0 descargas) |
+| StanfordSCALE/assertion_is_off_topic | 109.486.464 | no disponible | F1 0,266 / ROC-AUC 0,797 (test, clase positiva) | no disponible | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 - Riesgo de alucinacion no aplica en el sentido generativo, pero si existe riesgo de falsos positivos sistematicos sobre expresiones ambiguas o cambios de tema legitimos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_is_off_topic
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_is_off_topic
 - Dataset de anotacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset: https://github.com/SumnerLab/TalkMoves

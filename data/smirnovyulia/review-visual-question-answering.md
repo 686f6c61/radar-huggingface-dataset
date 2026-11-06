@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smirnovyulia/review-visual-question-answering` no es un modelo entrenado, sino un repositorio de notas de investigación ("research-notes") sobre Visual Question Answering (VQA) publicado por el usuario smirnovyulia en HuggingFace. La propia model card lo declara explícitamente: es "una nota exploratoria" que recoge el alcance de la pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y requisitos de reproducibilidad, sin afirmar mejoras de benchmark, ablaciones completadas, código liberado ni checkpoint entrenado.
+`smirnovyulia/review-visual-question-answering` no es un modelo entrenado, sino un repositorio de notas de investigación ("research-notes") sobre Visual Question Answering (VQA) publicado por el usuario smirnovyulia en Hugging Face. La propia model card lo declara explícitamente: es "una nota exploratoria" que recoge el alcance de la pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y requisitos de reproducibilidad, sin afirmar mejoras de benchmark, ablaciones completadas, código liberado ni checkpoint entrenado.
 
 El repositorio se compone únicamente de dos archivos, `summary.md` y `README.md`. No contiene pesos funcionales para inferencia más allá de los ficheros safetensors que los metadatos asocian al repo, con un recuento declarado de 24.832 parámetros, una cifra anómala y compatible con un stub o artefacto de tokenizador más que con un modelo real. El pipeline declarado es `visual-question-answering`, pero no hay evidencia de un transformer entrenado para esa tarea.
 
@@ -12,7 +12,7 @@ Su relevancia es documental, no técnica: sirve como plantilla de planificación
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | transformer (solo segun el tag de HuggingFace; no verificable, no hay checkpoint funcional) |
+| Arquitectura | transformer (solo segun el tag de Hugging Face; no verificable, no hay checkpoint funcional) |
 | Parametros totales | 24.832 (segun metadatos de safetensors del repositorio) |
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -44,7 +44,7 @@ Debe tenerse en cuenta que estos casos se refieren al artefacto tal y como exist
 - Diseño de protocolos de reproducibilidad: la model card especifica que cualquier resultado futuro debe acompañarse de versiones de dataset, comandos, semillas, hardware y logs en bruto, lo que sirve como plantilla de reporting para equipos de investigación.
 - Revisión de literatura y encuadre del problema: la nota compila referencias relevantes al tema, aprovechables como punto de partida para una revisión bibliográfica sobre VQA.
 - Formación y docencia: el documento ilustra la diferencia entre hipótesis, planes y resultados, útil para enseñar buenas prácticas de investigación empírica.
-- Auditoría de afirmaciones: sirve como ejemplo de repositorio que evita declarar mejoras de benchmark sin evidencia, útil para calibrar expectativas al revisar otros artefactos de HuggingFace.
+- Auditoría de afirmaciones: sirve como ejemplo de repositorio que evita declarar mejoras de benchmark sin evidencia, útil para calibrar expectativas al revisar otros artefactos de Hugging Face.
 - Integración en pipelines de documentación: puede enlazarse desde wikis o gestores de conocimiento internos como referencia de alcance, sin implicar dependencia de inferencia.
 
 ## Benchmarks y rendimiento
@@ -80,5 +80,5 @@ No disponible. Este repositorio no es comparable con modelos de VQA como BLIP-2,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smirnovyulia/review-visual-question-answering
+- Hugging Face: https://huggingface.co/smirnovyulia/review-visual-question-answering
 - No se han encontrado papers, blogs, repositorios, demos ni articulos adicionales relevantes en la busqueda web realizada.

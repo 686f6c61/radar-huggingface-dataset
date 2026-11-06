@@ -67,5 +67,5 @@ No disponible. No hay un modelo de IA comparable porque este repositorio no cont
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ivanmakarov/detector
+- Repositorio en Hugging Face: https://huggingface.co/ivanmakarov/detector
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la búsqueda web.

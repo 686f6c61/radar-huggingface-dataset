@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Play2Perfect checkpoints es una coleccion de pesos de politicas de control robotorio entrenadas mediante aprendizaje por refuerzo, publicada por el usuario Kushal20 en HuggingFace. No se trata de un modelo de lenguaje, sino de un conjunto de checkpoints en formato `.pth` (PyTorch) que implementan politicas basadas en estado (*state-based*) para tareas de manipulacion robotica de precision. El repositorio acompana al proyecto Play2Perfect, descrito en el articulo arXiv:2606.26428, cuyo codigo esta disponible en GitHub.
+Play2Perfect checkpoints es una coleccion de pesos de politicas de control robotorio entrenadas mediante aprendizaje por refuerzo, publicada por el usuario Kushal20 en Hugging Face. No se trata de un modelo de lenguaje, sino de un conjunto de checkpoints en formato `.pth` (PyTorch) que implementan politicas basadas en estado (*state-based*) para tareas de manipulacion robotica de precision. El repositorio acompana al proyecto Play2Perfect, descrito en el articulo arXiv:2606.26428, cuyo codigo esta disponible en GitHub.
 
 La coleccion sigue un esquema de entrenamiento en dos etapas: una politica base de "juego" (*play*) preentrenada y varias politicas especializadas de segunda etapa para tareas concretas de ensamblaje e insercion. Entre las tareas cubiertas figuran la insercion de una pieza en L con holgura de 0,5 mm, el ensamblaje de vigas en dos pasos, el atornillado de una pata de mueble, la insercion de un tenedor YCB en un soporte con 1 mm de holgura y la conexion de un enchufe USB-C en una regleta con 0,5 mm de holgura.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Play2Perfect checkpoints | Politicas de RL para robotica | no disponible | no aplica | MIT | HuggingFace |
+| Play2Perfect checkpoints | Politicas de RL para robotica | no disponible | no aplica | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables en la documentacion proporcionada.
@@ -82,6 +82,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kushal20/play2perfect-checkpoints
+- Hugging Face: https://huggingface.co/Kushal20/play2perfect-checkpoints
 - Repositorio GitHub: https://github.com/kushal2000/play2perfect
 - Articulo arXiv: 2606.26428 (referenciado en la model card; no se proporciona URL directa)

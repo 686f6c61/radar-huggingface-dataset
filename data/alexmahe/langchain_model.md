@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `alexmahe/langchain_model` es un artefacto alojado en HuggingFace que, segun su model card, no contiene un modelo de lenguaje entrenado, sino un conjunto de notebooks asociados al curso de agentes de Hugging Face (Hugging Face Agents Course). El contenido indexado incluye cuadernos de las unidades 1, 2.1 (smolagents), 2.2 (LlamaIndex), 2.3 (LangGraph) y unidades bonus sobre ajuste fino de Gemma y evaluacion de agentes. No se declara ningun pipeline, arquitectura, tamano de parametros ni contexto.
+El repositorio `alexmahe/langchain_model` es un artefacto alojado en Hugging Face que, segun su model card, no contiene un modelo de lenguaje entrenado, sino un conjunto de notebooks asociados al curso de agentes de Hugging Face (Hugging Face Agents Course). El contenido indexado incluye cuadernos de las unidades 1, 2.1 (smolagents), 2.2 (LlamaIndex), 2.3 (LangGraph) y unidades bonus sobre ajuste fino de Gemma y evaluacion de agentes. No se declara ningun pipeline, arquitectura, tamano de parametros ni contexto.
 
 La relevancia de este repositorio es, por tanto, documental y educativa: sirve como punto de enlace a material practico para construir agentes basados en LLM con distintos frameworks. No debe confundirse con un checkpoint desplegable. No hay informacion sobre pesos, tokenizador, configuracion de entrenamiento ni evaluaciones.
 
@@ -75,7 +75,7 @@ No disponible. El repositorio no es un modelo de lenguaje y no admite comparacio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexmahe/langchain_model
+- Repositorio en Hugging Face: https://huggingface.co/alexmahe/langchain_model
 - Curso de agentes de Hugging Face: https://huggingface.co/learn/agents-course/unit0/introduction
 - Notebooks del curso (repositorio oficial): https://huggingface.co/agents-course/notebooks
 - Notebook unidad 1 (Dummy Agent Library): https://huggingface.co/agents-course/notebooks/blob/main/unit1/dummy_agent_library.ipynb

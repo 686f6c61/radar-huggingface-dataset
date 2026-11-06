@@ -78,8 +78,8 @@ Efectos reportados por el autor: seleccionar el harness sobre el holdout aporto 
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea del autor | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| while-ai/paper-harness-and-weights-1.5b | 1,5B + adaptador LoRA (parametros del adaptador no disponibles) | no disponible | pass@1 0.09 con harness `01_skills`; pass@4 0.30 | apache-2.0 | HuggingFace, requiere modelo base |
-| Qwen/Qwen2.5-Coder-1.5B-Instruct | 1,5B | no disponible en esta ficha | pass@1 0.09 con harness `01_skills`, 0.00 sin harness (medido por el autor) | apache-2.0 | HuggingFace |
+| while-ai/paper-harness-and-weights-1.5b | 1,5B + adaptador LoRA (parametros del adaptador no disponibles) | no disponible | pass@1 0.09 con harness `01_skills`; pass@4 0.30 | apache-2.0 | Hugging Face, requiere modelo base |
+| Qwen/Qwen2.5-Coder-1.5B-Instruct | 1,5B | no disponible en esta ficha | pass@1 0.09 con harness `01_skills`, 0.00 sin harness (medido por el autor) | apache-2.0 | Hugging Face |
 | Otros adaptadores GRPO/LoRA para tool use sobre modelos de ~1,5B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de comparativas publicadas con modelos de la misma categoria en la informacion proporcionada mas alla de la comparacion interna con el modelo base, que el propio autor reporta en la tabla de resultados.
@@ -98,7 +98,7 @@ No se dispone de comparativas publicadas con modelos de la misma categoria en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/while-ai/paper-harness-and-weights-1.5b
+- Modelo en Hugging Face: https://huggingface.co/while-ai/paper-harness-and-weights-1.5b
 - Receta reproducible en GitHub: https://github.com/whilehq/whileai-sdk/tree/main/recipes/papers/harness-and-weights
 - Repositorio del SDK: https://github.com/whilehq/whileai-sdk
 - Coleccion "Papers, replicated": https://huggingface.co/collections/while-ai/papers-replicated-6ab271de22542eb550d4251c

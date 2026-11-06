@@ -4,7 +4,7 @@
 
 El modelo `arcane-13b-GGUF` es una cuantización en formato GGUF del modelo original `arcane-13b`, desarrollado por el usuario `ar3xop` y convertido por `mradermacher`. Se trata de un modelo de lenguaje de aproximadamente 13 000 millones de parámetros, cuyo propósito es ofrecer una versión optimizada para inferencia en entornos con recursos limitados, como CPU o GPUs de gama media. La cuantización GGUF permite ejecutar el modelo con menor uso de memoria y mayor compatibilidad con herramientas como llama.cpp, Ollama o LM Studio.
 
-A día de hoy, la información pública sobre este modelo es extremadamente limitada: no se especifican la licencia, los idiomas soportados, la arquitectura interna ni los datos de entrenamiento. La ausencia de una model card detallada por parte del autor original dificulta una evaluación rigurosa. Esta ficha se basa únicamente en los datos disponibles en el repositorio de HuggingFace, complementados con el conocimiento general sobre modelos de 13B cuantizados.
+A día de hoy, la información pública sobre este modelo es extremadamente limitada: no se especifican la licencia, los idiomas soportados, la arquitectura interna ni los datos de entrenamiento. La ausencia de una model card detallada por parte del autor original dificulta una evaluación rigurosa. Esta ficha se basa únicamente en los datos disponibles en el repositorio de Hugging Face, complementados con el conocimiento general sobre modelos de 13B cuantizados.
 
 ## Especificaciones tecnicas
 
@@ -58,5 +58,5 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/arcane-13b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/arcane-13b-GGUF
 - Modelo original (referenciado en la model card): https://huggingface.co/ar3xop/arcane-13b

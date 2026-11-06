@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`od2961/maxent-grpo-models` no es un modelo único, sino una colección de artefactos de investigación publicada en HuggingFace: 856 exportaciones de modelos verificadas (de 911 registros científicos seleccionados) procedentes de 29 estudios sobre métodos de aprendizaje por refuerzo para modelos de lenguaje. El autor es el usuario `od2961`, y la colección se presenta como el material adjunto de los papers ModeBench y Re:MaxRL, orientados a estudiar corrección y soporte de salida verificado en modelos ajustados para tareas de terminal.
+`od2961/maxent-grpo-models` no es un modelo único, sino una colección de artefactos de investigación publicada en Hugging Face: 856 exportaciones de modelos verificadas (de 911 registros científicos seleccionados) procedentes de 29 estudios sobre métodos de aprendizaje por refuerzo para modelos de lenguaje. El autor es el usuario `od2961`, y la colección se presenta como el material adjunto de los papers ModeBench y Re:MaxRL, orientados a estudiar corrección y soporte de salida verificado en modelos ajustados para tareas de terminal.
 
 Los modelos de base sobre los que se construyen los distintos estudios son Qwen2.5-0.5B-Instruct, Falcon3-1B y Qwen2.5-3B, siempre en variantes Instruct. Los estudios comparan variantes de GRPO (plain GRPO, UCPO, Sparse RLEP-Dr) con métodos propios basados en MaxEnt (Adaptive Semantic-MaxEnt, RMS-targeted Semantic-MaxEnt, Bank-normalized verified replay, Full open-bank MaxEnt replay, bounded explorer-starvation fallback) y con esquemas de replay uniforme frente a replay de frecuencia fresca.
 
@@ -37,7 +37,7 @@ Los nombres de los estudios sugieren dominios concretos de entrenamiento, entre 
 - Produccion de salidas verificables en dominios concretos de los estudios (por ejemplo, Python en la serie E109 y el dominio PantryPlan en E85).
 - Razonamiento de multiples pasos orientado a tareas con verificador externo, ya que los metodos estudiados dependen de "verified replay" y de bancos de ejemplos verificados.
 - Ejecucion de codigo y reparacion de interfaces semanticas, segun los nombres de estudio disponibles.
-- Compatibilidad con `endpoints_compatible` en HuggingFace, es decir, invocacion mediante la Inference Endpoints API.
+- Compatibilidad con `endpoints_compatible` en Hugging Face, es decir, invocacion mediante la Inference Endpoints API.
 - Capacidades multilingues: no disponible.
 - Tool calling / function calling: no documentado en la informacion disponible.
 - Vision, audio o modo "thinking" explicito: no documentado en la informacion disponible.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 - GPU recomendadas: para los exports de 0,5B y 1B basta una RTX 3060/4060 o superior; para los de 3B es recomendable una RTX 4090, L4 o A10G; para entrenamiento o evaluacion masiva de las 856 exportaciones se necesitarian nodos con A100 o H100 y almacenamiento dedicado.
 - Cabe en GPU consumer: si, al menos las variantes de 0,5B y 1B, y previsiblemente la de 3B en bf16 en GPUs con 8-12 GB de VRAM si se usa carga en 8 bits.
 - Almacenamiento: el repositorio completo ocupa 2168,7 GB, por lo que la restauracion selectiva por `repo_prefix` y `revision` es imprescindible; descargar el repositorio entero es inviable en estaciones de trabajo convencionales.
-- Opciones de despliegue: transformers como via principal; vLLM o TGI para servir las variantes de 1B y 3B; llama.cpp u Ollama solo si se convierten previamente los pesos a GGUF, ya que no se distribuyen en ese formato. El tag `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: transformers como via principal; vLLM o TGI para servir las variantes de 1B y 3B; llama.cpp u Ollama solo si se convierten previamente los pesos a GGUF, ya que no se distribuyen en ese formato. El tag `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ Frente a otras colecciones de modelos ajustados con RL, la diferencia no esta en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/od2961/maxent-grpo-models
+- Repositorio en Hugging Face: https://huggingface.co/od2961/maxent-grpo-models
 - Dataset de benchmarks ModeBench: https://huggingface.co/datasets/od2961/ModeBench/blob/93f2b5e57afa09803ac51f412bc2e262b3253f6e/README.md
 - Catalogo completo de exportaciones (referenciado en la model card): `catalog.json` dentro del propio repositorio
 - Documentacion de datos: `data/README.md`

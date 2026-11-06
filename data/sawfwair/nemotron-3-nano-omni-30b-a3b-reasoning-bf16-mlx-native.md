@@ -4,7 +4,7 @@
 
 Nemotron-3-Nano-Omni-30B-A3B-Reasoning es un modelo omni-modal de razonamiento desarrollado por NVIDIA, diseñado para comprender y razonar sobre entradas de texto, imagen, audio y vídeo, generando respuestas en texto. Forma parte de la familia Nemotron 3 y destaca por su arquitectura híbrida Mamba2-Transformer con mezcla de expertos (MoE), que combina eficiencia computacional con capacidad de razonamiento profundo. El modelo tiene 30 mil millones de parámetros totales, de los cuales solo 3 mil millones se activan por token, lo que permite un rendimiento elevado con un coste de inferencia reducido.
 
-La versión analizada en esta ficha es una conversión nativa a MLX realizada por Sawfwair, que preserva los pesos en BF16 sin pérdidas y está optimizada para ejecutarse en Apple Silicon. Esta conversión no modifica los valores de los tensores, sino que reorganiza el almacenamiento para el runtime Swift/MLX de `mere.run`. El modelo original está disponible en HuggingFace bajo la licencia NVIDIA Open Model Agreement, que permite uso comercial con restricciones. Su relevancia actual radica en su capacidad para tareas complejas de comprensión multimodal, como análisis de documentos, razonamiento sobre múltiples imágenes, reconocimiento de voz y comprensión de vídeo de larga duración, además de soporte para uso agéntico y razonamiento de varios pasos.
+La versión analizada en esta ficha es una conversión nativa a MLX realizada por Sawfwair, que preserva los pesos en BF16 sin pérdidas y está optimizada para ejecutarse en Apple Silicon. Esta conversión no modifica los valores de los tensores, sino que reorganiza el almacenamiento para el runtime Swift/MLX de `mere.run`. El modelo original está disponible en Hugging Face bajo la licencia NVIDIA Open Model Agreement, que permite uso comercial con restricciones. Su relevancia actual radica en su capacidad para tareas complejas de comprensión multimodal, como análisis de documentos, razonamiento sobre múltiples imágenes, reconocimiento de voz y comprensión de vídeo de larga duración, además de soporte para uso agéntico y razonamiento de varios pasos.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ La comparativa es orientativa; no se dispone de datos de rendimiento comparativo
 
 ## Enlaces
 
-- Conversión MLX en HuggingFace: https://huggingface.co/Sawfwair/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16-MLX-Native
+- Conversión MLX en Hugging Face: https://huggingface.co/Sawfwair/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16-MLX-Native
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16
 - Blog de NVIDIA sobre Nemotron 3 Nano Omni: https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence
 - Página de Artificial Analysis: https://artificialanalysis.ai/models/nemotron-3-nano-omni-30b-a3b

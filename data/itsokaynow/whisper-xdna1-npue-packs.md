@@ -1,7 +1,7 @@
 # ItsOkayNow/whisper-XDNA1-NPUE-PACKS
 
 ## Resumen
-ItsOkayNow/whisper-XDNA1-NPUE-PACKS es un repositorio de HuggingFace, con licencia MIT, que empaqueta artefactos (0,8 GB) destinados a ejecutar el modelo de reconocimiento de voz Whisper de OpenAI sobre la NPU AMD XDNA1, la unidad de procesamiento neuronal integrada en los procesadores AMD Ryzen AI de las generaciones Phoenix y Hawk Point. El repositorio no incluye una model card descriptiva (solo el campo `license: mit`) ni metadatos de pipeline, idiomas o arquitectura, por lo que buena parte de sus especificaciones no esta documentada de forma oficial.
+ItsOkayNow/whisper-XDNA1-NPUE-PACKS es un repositorio de Hugging Face, con licencia MIT, que empaqueta artefactos (0,8 GB) destinados a ejecutar el modelo de reconocimiento de voz Whisper de OpenAI sobre la NPU AMD XDNA1, la unidad de procesamiento neuronal integrada en los procesadores AMD Ryzen AI de las generaciones Phoenix y Hawk Point. El repositorio no incluye una model card descriptiva (solo el campo `license: mit`) ni metadatos de pipeline, idiomas o arquitectura, por lo que buena parte de sus especificaciones no esta documentada de forma oficial.
 
 El contexto de la busqueda web apunta al proyecto `drakosha/whisper-xdna`, que lleva el encoder de Whisper a la NPU XDNA1 bajo Linux usando exclusivamente toolchain abierto (XRT, MLIR-AIE/IRON y peano) y expone un servicio HTTP compatible con el contrato de whisper.cpp. Esto situa al repositorio en la categoria de ports o paquetes de despliegue de un modelo existente, no en la de un modelo entrenado desde cero.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ItsOkayNow/whisper-XDNA1-NPUE-PACKS | no disponible | no disponible | no disponible | MIT | HuggingFace (0 descargas, 0 likes) |
+| ItsOkayNow/whisper-XDNA1-NPUE-PACKS | no disponible | no disponible | no disponible | MIT | Hugging Face (0 descargas, 0 likes) |
 | Whisper original (OpenAI) | tiny a large (39M-1550M) | ventanas de audio de 30 s | multilingue (segun variante) | MIT | amplia, formato PyTorch |
 | whisper.cpp | equivalente a Whisper | ventanas de audio de 30 s | multilingue (segun variante) | MIT | amplia, formato GGUF |
 | whisper-xdna (drakosha) | no disponible | no disponible | no disponible | no disponible en la informacion | GitHub |
@@ -75,7 +75,7 @@ La comparacion debe tomarse con cautela: no hay datos de rendimiento ni de param
 - No hay informacion sobre sesgos, idiomas no soportados ni limites de longitud de audio procesable.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/ItsOkayNow/whisper-XDNA1-NPUE-PACKS
+- Hugging Face: https://huggingface.co/ItsOkayNow/whisper-XDNA1-NPUE-PACKS
 - Proyecto whisper-xdna: https://github.com/drakosha/whisper-xdna
 - AMD XDNA (arquitectura): https://www.amd.com/en/technologies/xdna.html
 - AMD XDNA (Wikipedia): https://en.wikipedia.org/wiki/AMD_XDNA

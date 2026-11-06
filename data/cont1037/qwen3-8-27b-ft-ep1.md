@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cont1037/qwen3.8-27b-ft-ep1` es un ajuste fino (*fine-tune*) de parametros completos del modelo `Qwen/Qwen3.8-27B`, publicado por el usuario cont1037 en HuggingFace. El autor lo describe como un entrenamiento *full-parameter* en bfloat16 sobre el modelo base de Qwen, sin detallar el corpus, el numero de tokens, la composicion del dataset ni la fase de alineacion empleada. La model card se limita a remitir a los ficheros `NOTICE` (aviso de cambios) y `LICENSE` (Apache-2.0) del repositorio.
+`cont1037/qwen3.8-27b-ft-ep1` es un ajuste fino (*fine-tune*) de parametros completos del modelo `Qwen/Qwen3.8-27B`, publicado por el usuario cont1037 en Hugging Face. El autor lo describe como un entrenamiento *full-parameter* en bfloat16 sobre el modelo base de Qwen, sin detallar el corpus, el numero de tokens, la composicion del dataset ni la fase de alineacion empleada. La model card se limita a remitir a los ficheros `NOTICE` (aviso de cambios) y `LICENSE` (Apache-2.0) del repositorio.
 
 El modelo cuenta con 27.781.427.952 parametros reales segun los pesos en safetensors y el repositorio ocupa 55,6 GB, lo que coincide aproximadamente con el tamano esperado de pesos en bfloat16 (dos bytes por parametro). La etiqueta de *pipeline* es `image-text-to-text` y la etiqueta de arquitectura declarada es `qwen3_5`, lo que situa al modelo en la categoria multimodal entrada imagen+texto / salida texto, coherente con la variante multimodal de la familia Qwen.
 
@@ -35,7 +35,7 @@ La informacion disponible solo permite confirmar las capacidades implicadas por 
 
 - Generacion de texto conversacional, segun la etiqueta `conversational`.
 - Procesamiento conjunto de imagen y texto con salida de texto, segun la etiqueta de *pipeline* `image-text-to-text`. Esto implica, en principio, tareas de descripcion de imagenes, respuesta a preguntas visuales (*VQA*) y dialogos con contexto visual, aunque no se documenta ningun ejemplo concreto.
-- Compatibilidad con `transformers` y con el ecosistema de *endpoints* de HuggingFace (etiqueta `endpoints_compatible`).
+- Compatibilidad con `transformers` y con el ecosistema de *endpoints* de Hugging Face (etiqueta `endpoints_compatible`).
 - Carga mediante ficheros safetensors en bfloat16.
 
 No hay informacion en la model card ni en los resultados de busqueda que permita confirmar:
@@ -102,7 +102,7 @@ No se han identificado en la busqueda web modelos comparables con datos verifica
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cont1037/qwen3.8-27b-ft-ep1
+- Repositorio en Hugging Face: https://huggingface.co/cont1037/qwen3.8-27b-ft-ep1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Ficheros `NOTICE` y `LICENSE` del repositorio: accesibles desde la pestana de ficheros del repositorio de HuggingFace (no se ha incluido su contenido en la informacion proporcionada).
+- Ficheros `NOTICE` y `LICENSE` del repositorio: accesibles desde la pestana de ficheros del repositorio de Hugging Face (no se ha incluido su contenido en la informacion proporcionada).
 - Resultados de la busqueda web: los enlaces devueltos corresponden a foros de soporte de Microsoft sin ninguna relacion con el modelo. No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo.

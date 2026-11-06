@@ -90,11 +90,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/darkmaniac7/Qwen3.5-9B-NPU-catalogpair
+- Repositorio Hugging Face: https://huggingface.co/darkmaniac7/Qwen3.5-9B-NPU-catalogpair
 - Descarga emparejada (commit `c674515e3aa3`): https://huggingface.co/darkmaniac7/Qwen3.5-9B-MNN/tree/c674515e3aa300f157797dc04a77a8828247a86d
 - Conversión MNN de origen: https://huggingface.co/taobao-mnn/Qwen3.5-9B-MNN
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Equipo Qwen en HuggingFace: https://huggingface.co/Qwen
+- Equipo Qwen en Hugging Face: https://huggingface.co/Qwen
 - Sitio de TokForge: https://tokforge.ai
 - Discord de TokForge: https://discord.gg/Acv3CBtfVm
 - Aplicación en Google Play: https://play.google.com/store/apps/details?id=dev.tokforge

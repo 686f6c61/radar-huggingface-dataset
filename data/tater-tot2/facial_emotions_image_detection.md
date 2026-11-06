@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tater-tot2/facial_emotions_image_detection` es un modelo de clasificación de imágenes especializado en el reconocimiento de emociones faciales. Se trata de un fine-tuning del Vision Transformer `google/vit-base-patch16-224-in21k` sobre un conjunto de datos de rostros etiquetados con siete categorías emocionales (sad, disgust, angry, neutral, fear, surprise, happy). El autor publica el modelo en HuggingFace con licencia Apache 2.0 y reporta una precisión global de aproximadamente el 91% sobre un conjunto de validación de 25 170 imágenes.
+`tater-tot2/facial_emotions_image_detection` es un modelo de clasificación de imágenes especializado en el reconocimiento de emociones faciales. Se trata de un fine-tuning del Vision Transformer `google/vit-base-patch16-224-in21k` sobre un conjunto de datos de rostros etiquetados con siete categorías emocionales (sad, disgust, angry, neutral, fear, surprise, happy). El autor publica el modelo en Hugging Face con licencia Apache 2.0 y reporta una precisión global de aproximadamente el 91% sobre un conjunto de validación de 25 170 imágenes.
 
 El modelo resuelve una tarea concreta de visión por computador: dada una imagen de un rostro humano, predecir la emoción dominante entre siete clases discretas. Con 85,8 millones de parámetros, es un modelo compacto que puede ejecutarse en hardware de consumo, lo que lo hace adecuado para prototipos, análisis de audiencia, investigación en interacción persona-máquina y aplicaciones de moderación o análisis de contenido.
 
@@ -69,7 +69,7 @@ Los únicos datos publicados son el informe de clasificación sobre el conjunto 
 - VRAM estimada en FP16: aproximadamente 172 MB para los pesos, más overhead; cabe holgadamente en cualquier GPU moderna.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; RTX 3060, RTX 4090, A100 o H100 son más que suficientes. También puede ejecutarse en CPU para inferencia por lotes pequeños.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer con 2 GB o más (GTX 1650, RTX 3050, etc.).
-- Opciones de despliegue: PyTorch nativo, TorchServe, ONNX Runtime, TensorRT, o integración en pipelines de HuggingFace `transformers` con `ViTForImageClassification`. No se documenta soporte específico para vLLM, llama.cpp u Ollama (no aplicables a este tipo de modelo).
+- Opciones de despliegue: PyTorch nativo, TorchServe, ONNX Runtime, TensorRT, o integración en pipelines de Hugging Face `transformers` con `ViTForImageClassification`. No se documenta soporte específico para vLLM, llama.cpp u Ollama (no aplicables a este tipo de modelo).
 - Latencia y throughput: no disponibles en la información proporcionada; para un ViT-Base a 224x224 se espera un throughput de cientos a miles de imágenes por segundo en GPU moderna, pero no se confirma con datos del autor.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tater-tot2/facial_emotions_image_detection | 85,8 M | no aplica | Apache 2.0 | HuggingFace |
+| tater-tot2/facial_emotions_image_detection | 85,8 M | no aplica | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,6 +91,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tater-tot2/facial_emotions_image_detection
+- Modelo en Hugging Face: https://huggingface.co/tater-tot2/facial_emotions_image_detection
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224-in21k
 - Notebook de referencia en Kaggle: https://www.kaggle.com/code/dima806/facial-emotions-image-detection-vit

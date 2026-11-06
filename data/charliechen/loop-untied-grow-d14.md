@@ -108,7 +108,7 @@ Diferencias clave: loop-untied-grow-d14 no es un checkpoint estandar de Transfor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-untied-grow-d14
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-untied-grow-d14
 - Codebase del paper: https://github.com/cue-engineering/loop
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Paper "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents": no disponible (no se proporciona enlace en la informacion consultada)

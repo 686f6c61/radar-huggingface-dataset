@@ -92,7 +92,7 @@ Los valores de PSNR para los modelos comparados no se han extraído de la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chenjinrong/ED-Former
+- Hugging Face: https://huggingface.co/chenjinrong/ED-Former
 - Paper (ScienceDirect): https://doi.org/10.1016/j.image.2026.117634
 - Repositorio GitHub: https://github.com/2697166190a-beep/ED-Former
 - Página del artículo en ScienceDirect: https://www.sciencedirect.com/science/article/pii/S0923596526001578

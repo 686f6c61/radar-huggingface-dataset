@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tender_Render_Anima es un repositorio de pesos publicado en HuggingFace por el usuario AIxFuneStudio bajo el identificador `AIxFuneStudio/Tender_Render_Anima`. En el momento de la consulta el repositorio acumula 0 descargas y 0 valoraciones, ocupa 4,2 GB y esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargar sus ficheros. La fecha de creacion registrada es el 17 de septiembre de 2026 y la ultima actualizacion el 23 de septiembre de 2026.
+Tender_Render_Anima es un repositorio de pesos publicado en Hugging Face por el usuario AIxFuneStudio bajo el identificador `AIxFuneStudio/Tender_Render_Anima`. En el momento de la consulta el repositorio acumula 0 descargas y 0 valoraciones, ocupa 4,2 GB y esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargar sus ficheros. La fecha de creacion registrada es el 17 de septiembre de 2026 y la ultima actualizacion el 23 de septiembre de 2026.
 
 La informacion publica disponible es minima: no se declara pipeline, no se declaran idiomas soportados, no se especifica arquitectura ni numero de parametros, y la licencia figura unicamente como `other`, sin que se haya localizado el texto completo de los terminos. El nombre del repositorio sugiere un modelo orientado a renderizado o generacion de imagen con tematica anime, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor, por lo que no debe tomarse como especificacion tecnica.
 
@@ -18,7 +18,7 @@ Por todo lo anterior, esta ficha recoge exclusivamente los metadatos verificable
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | `other` (texto de licencia no localizado; acceso restringido sujeto a aceptacion de condiciones en HuggingFace) |
+| Licencia | `other` (texto de licencia no localizado; acceso restringido sujeto a aceptacion de condiciones en Hugging Face) |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 4,2 GB |
 | Pipeline declarado | no disponible |
@@ -44,7 +44,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el volumen de 
 - No consta soporte multilingue ni lista de idiomas.
 - No consta la existencia de un modo de razonamiento extendido (thinking mode) ni de variantes instruct/base diferenciadas.
 
-Unicamente puede confirmarse, como hecho administrativo, que el acceso a los pesos esta restringido y requiere aceptar condiciones previas en HuggingFace.
+Unicamente puede confirmarse, como hecho administrativo, que el acceso a los pesos esta restringido y requiere aceptar condiciones previas en Hugging Face.
 
 ## Casos de uso
 
@@ -80,13 +80,13 @@ No disponible. Al desconocerse el pipeline, la arquitectura, el numero de parame
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AIxFuneStudio/Tender_Render_Anima | no disponible | no disponible | no disponible | `other` (texto no localizado) | gated en HuggingFace |
+| AIxFuneStudio/Tender_Render_Anima | no disponible | no disponible | no disponible | `other` (texto no localizado) | gated en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion tecnica: no hay model card con arquitectura, datos de entrenamiento ni evaluaciones, lo que impide validar el comportamiento del modelo antes de usarlo.
-- Acceso restringido: los pesos estan en modo gated, de modo que la descarga requiere aceptar condiciones en HuggingFace y puede no ser automatizable ni reproducible en pipelines de CI.
+- Acceso restringido: los pesos estan en modo gated, de modo que la descarga requiere aceptar condiciones en Hugging Face y puede no ser automatizable ni reproducible en pipelines de CI.
 - Licencia ambigua: la etiqueta `other` no especifica permisos, obligaciones ni restricciones. No debe asumirse uso comercial permitido sin revisar el texto completo de la licencia, que no se ha localizado.
 - Trazabilidad limitada: el repositorio no tiene descargas ni valoraciones registradas, y no se ha encontrado documentacion externa, paper ni anuncio asociado, por lo que no existe evidencia independiente de calidad o reproducibilidad.
 - Riesgo de inferencia incorrecta por parte del usuario: el nombre del repositorio puede sugerir un proposito concreto (renderizado o tematica anime), pero esto no esta confirmado; asignarle capacidades a partir del nombre puede llevar a decisiones erroneas.
@@ -96,7 +96,7 @@ No disponible. Al desconocerse el pipeline, la arquitectura, el numero de parame
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AIxFuneStudio/Tender_Render_Anima
-- Perfil del autor en HuggingFace: https://huggingface.co/AIxFuneStudio
+- Repositorio en Hugging Face: https://huggingface.co/AIxFuneStudio/Tender_Render_Anima
+- Perfil del autor en Hugging Face: https://huggingface.co/AIxFuneStudio
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.
 - Nota sobre la busqueda web: los resultados devueltos corresponden a paginas de soporte y blogs de Microsoft (contacto de soporte, inicio de sesion en Hotmail, actualizaciones de seguridad de Exchange Server y notas de Windows 11) y no guardan ninguna relacion con el modelo analizado, por lo que no se incluyen como enlaces relevantes.

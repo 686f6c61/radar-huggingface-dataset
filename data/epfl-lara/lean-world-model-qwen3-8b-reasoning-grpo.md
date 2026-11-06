@@ -26,7 +26,7 @@ Es relevante porque combina pesos abiertos derivados de Qwen3-8B con un pipeline
 | Pipeline | text-generation |
 | Tamaño del repositorio | 16,4 GB |
 | Compatibilidad de despliegue | text-generation-inference, endpoints_compatible, vLLM 0.12.0 (probado por el autor) |
-| Fechas de publicación | Creado el 2026-10-16, actualizado el 2026-10-16 (según metadatos de HuggingFace) |
+| Fechas de publicación | Creado el 2026-10-16, actualizado el 2026-10-16 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| EPFL-LARA/lean-world-model-qwen3-8b-reasoning-grpo | 8,19 B (denso) | 32.768 tokens (runner oficial) | No disponible | Pesos safetensors en HuggingFace; 0 descargas y 0 likes en el momento de la consulta | Fine-tune de Qwen3-8B con GRPO; salida con estados de objetivo y diagnósticos predichos |
-| Qwen/Qwen3-8B-Base | 8,19 B (denso) | No disponible en la información proporcionada | No disponible en la información proporcionada | Pesos abiertos en HuggingFace | Modelo base del ajuste; propósito general, sin especialización en Lean |
+| EPFL-LARA/lean-world-model-qwen3-8b-reasoning-grpo | 8,19 B (denso) | 32.768 tokens (runner oficial) | No disponible | Pesos safetensors en Hugging Face; 0 descargas y 0 likes en el momento de la consulta | Fine-tune de Qwen3-8B con GRPO; salida con estados de objetivo y diagnósticos predichos |
+| Qwen/Qwen3-8B-Base | 8,19 B (denso) | No disponible en la información proporcionada | No disponible en la información proporcionada | Pesos abiertos en Hugging Face | Modelo base del ajuste; propósito general, sin especialización en Lean |
 | Otros provers abiertos de la misma categoría (por ejemplo, la familia referenciada por el dataset Goedel-LM/RL_dataset_V2) | No disponible | No disponible | No disponible | No disponible | La información proporcionada no incluye sus especificaciones ni resultados, por lo que no es posible una comparación cuantitativa |
 
 ## Limitaciones y advertencias
@@ -95,9 +95,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EPFL-LARA/lean-world-model-qwen3-8b-reasoning-grpo
+- Modelo en Hugging Face: https://huggingface.co/EPFL-LARA/lean-world-model-qwen3-8b-reasoning-grpo
 - Colección "Formal Theorem Proving with Lean World Models": https://huggingface.co/collections/EPFL-LARA/formal-theorem-proving-with-lean-world-models-6ad2b4aa4400b3e2933f380d
-- Organización EPFL-LARA en HuggingFace: https://huggingface.co/EPFL-LARA
+- Organización EPFL-LARA en Hugging Face: https://huggingface.co/EPFL-LARA
 - Dataset EPFL-LARA/lean-world-model-cpt: https://huggingface.co/datasets/EPFL-LARA/lean-world-model-cpt
 - Dataset EPFL-LARA/lean-world-model-sft: https://huggingface.co/datasets/EPFL-LARA/lean-world-model-sft
 - Dataset EPFL-LARA/lean-world-model-reasoning-sft: https://huggingface.co/datasets/EPFL-LARA/lean-world-model-reasoning-sft

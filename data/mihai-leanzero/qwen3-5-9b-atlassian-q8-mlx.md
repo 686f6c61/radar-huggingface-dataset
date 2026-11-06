@@ -103,7 +103,7 @@ El modelo de 27B de la misma familia supera al de 9B en todas las pruebas medida
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mihai-LeanZero/Qwen3.5-9B-Atlassian-Q8-mlx
+- Modelo en Hugging Face: https://huggingface.co/Mihai-LeanZero/Qwen3.5-9B-Atlassian-Q8-mlx
 - Página de la familia Atlassian de LeanZero: https://leanzero.net/portfolio/atlassian-models
 - LeanZero: https://leanzero.net
 - CogniRunner: https://leanzero.net/portfolio/cognirunner

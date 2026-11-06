@@ -98,5 +98,5 @@ No se dispone de información sobre modelos de terceros comparables en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/srandev/siem-triage-9b-th
+- Modelo en Hugging Face: https://huggingface.co/srandev/siem-triage-9b-th
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

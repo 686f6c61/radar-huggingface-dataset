@@ -60,7 +60,7 @@ No se han publicado resultados numericos detallados de benchmarks en la informac
 - VRAM estimada para inferencia: no disponible, pero para un modelo de 1,2B parametros en precision FP16 se estiman aproximadamente 2,5-3 GB de VRAM.
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM (NVIDIA GTX 1660, RTX 2060 o superior) puede ejecutar el modelo en FP16.
 - Compatibilidad con consumer GPU: si, el modelo cabe en GPUs de gama media y alta para consumidores.
-- Opciones de despliegue: al usar la libreria transformers, es compatible con vLLM, TGI (Text Generation Inference) y pipelines estandar de HuggingFace. Para CPU, se puede convertir a GGUF para usar con llama.cpp u Ollama.
+- Opciones de despliegue: al usar la libreria transformers, es compatible con vLLM, TGI (Text Generation Inference) y pipelines estandar de Hugging Face. Para CPU, se puede convertir a GGUF para usar con llama.cpp u Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -83,6 +83,6 @@ El modelo se posiciona como SOTA en el benchmark OmniDocBench v1.6, superando a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/opendatalab/MinerU2.5-Pro-2605-1.2B
+- Modelo en Hugging Face: https://huggingface.co/opendatalab/MinerU2.5-Pro-2605-1.2B
 - Modelo en ModelScope: https://modelscope.cn/models/OpenDataLab/MinerU2.5-Pro-2605-1.2B
 - Informe tecnico en arXiv: https://arxiv.org/abs/2604.04771

@@ -6,7 +6,7 @@ El modelo `julian-schelb/latin-bert-3class-lat-intertext-v1` es un clasificador 
 
 Se trata de un fine-tuning del modelo `ashleygong03/bamman-burns-latin-bert`, un BERT preentrenado específicamente para latín. Con 111 millones de parámetros y una longitud máxima de contexto de 512 tokens, el modelo distingue tres clases: `no_match` (pasajes no relacionados), `cit` (cita o reutilización léxica cercana) y `cf` (eco temático difuso). Su relevancia radica en que aborda una tarea especializada en humanidades digitales, facilitando el análisis filológico a gran escala.
 
-El modelo se publica bajo licencia Apache 2.0 y está disponible en HuggingFace con pesos en formato safetensors. Aunque no ha registrado descargas ni valoraciones hasta la fecha, su diseño específico para la clasificación de intertextualidad lo convierte en una herramienta útil para investigadores de literatura clásica y procesamiento del lenguaje natural aplicado al latín.
+El modelo se publica bajo licencia Apache 2.0 y está disponible en Hugging Face con pesos en formato safetensors. Aunque no ha registrado descargas ni valoraciones hasta la fecha, su diseño específico para la clasificación de intertextualidad lo convierte en una herramienta útil para investigadores de literatura clásica y procesamiento del lenguaje natural aplicado al latín.
 
 ## Especificaciones técnicas
 
@@ -33,7 +33,7 @@ El entrenamiento utilizó uno de los cinco pliegues de validación cruzada del b
 - Manejo de secuencias de hasta 512 tokens, suficiente para pasajes breves o fragmentos de texto.
 - Integración con el paquete LociSimiles para flujos de trabajo de detección de intertextualidad en latín.
 - Posibilidad de ajustar umbrales de decisión por clase (uno contra el resto) para controlar el equilibrio entre precisión y recall, especialmente útil en corpus muy desbalanceados.
-- Compatible con la biblioteca `transformers` de HuggingFace, lo que permite su uso en pipelines estándar de clasificación de texto.
+- Compatible con la biblioteca `transformers` de Hugging Face, lo que permite su uso en pipelines estándar de clasificación de texto.
 - Soporte de inferencia en lote y despliegue mediante Text Embeddings Inference (TEI) según las etiquetas del repositorio.
 
 ## Casos de uso
@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/julian-schelb/latin-bert-3class-lat-intertext-v1)
+- [Modelo en Hugging Face](https://huggingface.co/julian-schelb/latin-bert-3class-lat-intertext-v1)
 - [Colección de modelos para búsqueda de intertextualidad latina](https://huggingface.co/collections/julian-schelb/models-for-latin-intertextuality-search)
 - [Página de modelos de Julian Schelb](https://huggingface.co/julian-schelb/models)
 - [Documentación de LociSimiles (CLI)](https://julianschelb.github.io/locisimiles/cli/)

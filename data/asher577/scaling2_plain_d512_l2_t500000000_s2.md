@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`scaling2_plain_d512_L2_t500000000_s2` es un modelo de investigación publicado por el usuario asher577 en HuggingFace. Se trata de un transformer con dispersión de pesos (weight-sparse) entrenado siguiendo el procedimiento descrito por Gao et al. (2025). No es un modelo de propósito general, sino un artefacto experimental orientado a estudiar el escalado de transformers con pesos dispersos sobre un corpus sintético de historias simples.
+`scaling2_plain_d512_L2_t500000000_s2` es un modelo de investigación publicado por el usuario asher577 en Hugging Face. Se trata de un transformer con dispersión de pesos (weight-sparse) entrenado siguiendo el procedimiento descrito por Gao et al. (2025). No es un modelo de propósito general, sino un artefacto experimental orientado a estudiar el escalado de transformers con pesos dispersos sobre un corpus sintético de historias simples.
 
 El modelo es deliberadamente diminuto: 2 capas, dimensión de modelo 512, dimensión de cabeza 16, contexto de 512 tokens y un vocabulario de 4096 tokens. El nombre del repositorio codifica los hiperparámetros principales: `d512` (dimensión), `L2` (capas) y `t500000000` (500 millones de tokens de entrenamiento). Fue entrenado sobre el dataset `jacobcd52/simplestories-tokenized` con el tokenizador `SimpleStories/SimpleStories-1.25M`.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `scaling2_plain_d512_L2_t500000000_s2` | no disponible (2 capas, d=512) | 512 | no disponible | HuggingFace, pesos PyTorch |
+| `scaling2_plain_d512_L2_t500000000_s2` | no disponible (2 capas, d=512) | 512 | no disponible | Hugging Face, pesos PyTorch |
 | SimpleStories baseline (referencia del dataset) | no disponible en esta ficha | no disponible | no disponible | no disponible |
 | Alternativas densas de tamano comparable | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,7 +89,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asher577/scaling2_plain_d512_L2_t500000000_s2
+- Hugging Face: https://huggingface.co/asher577/scaling2_plain_d512_L2_t500000000_s2
 - Run de Weights & Biases: https://wandb.ai/asher577/scd_scaling/runs/n3u8fvsr
 - Dataset de entrenamiento: https://huggingface.co/datasets/jacobcd52/simplestories-tokenized
 - Tokenizador: https://huggingface.co/SimpleStories/SimpleStories-1.25M

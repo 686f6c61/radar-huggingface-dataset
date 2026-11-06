@@ -2,9 +2,9 @@
 
 ## Resumen
 
-GorML2-67/automl-climsim-regional-models es un repositorio publicado en HuggingFace por el usuario GorML2-67 bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene unicamente el encabezado de licencia y ningun texto descriptivo, por lo que no se dispone de informacion verificable sobre su contenido, su proposito declarado ni su naturaleza tecnica (pesos de un modelo, scripts de entrenamiento, datos o artefactos de configuracion).
+GorML2-67/automl-climsim-regional-models es un repositorio publicado en Hugging Face por el usuario GorML2-67 bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene unicamente el encabezado de licencia y ningun texto descriptivo, por lo que no se dispone de informacion verificable sobre su contenido, su proposito declarado ni su naturaleza tecnica (pesos de un modelo, scripts de entrenamiento, datos o artefactos de configuracion).
 
-El identificador del repositorio sugiere un posible vinculo con simulacion climatica regional y con tecnicas de AutoML, pero esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ningun documento del autor, por los metadatos de HuggingFace ni por fuentes externas. La busqueda web realizada no ha devuelto ningun resultado relacionado con este repositorio.
+El identificador del repositorio sugiere un posible vinculo con simulacion climatica regional y con tecnicas de AutoML, pero esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ningun documento del autor, por los metadatos de Hugging Face ni por fuentes externas. La busqueda web realizada no ha devuelto ningun resultado relacionado con este repositorio.
 
 La relevancia actual del recurso es, por tanto, limitada y no evaluable: registra cero descargas y cero likes, carece de pipeline declarado, no especifica idiomas soportados y no presenta resultados de benchmarks. Cualquier evaluacion tecnica seria requiere consultar directamente al autor o inspeccionar los ficheros alojados en el repositorio.
 
@@ -84,7 +84,7 @@ No disponible. No se ha podido identificar la categoria del artefacto, por lo qu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GorML2-67/automl-climsim-regional-models
+- Repositorio en Hugging Face: https://huggingface.co/GorML2-67/automl-climsim-regional-models
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

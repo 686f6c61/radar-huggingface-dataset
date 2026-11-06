@@ -2,9 +2,9 @@
 
 ## Resumen
 
-IMANGAZI es un modelo publicado en HuggingFace por el usuario APPYRACER bajo licencia MIT. La información disponible en su model card es prácticamente inexistente: únicamente declara la licencia, sin describir arquitectura, tamaño, datos de entrenamiento ni capacidades. No se indica pipeline, idiomas soportados ni formato de pesos, y el repositorio no registra descargas en el momento de la consulta.
+IMANGAZI es un modelo publicado en Hugging Face por el usuario APPYRACER bajo licencia MIT. La información disponible en su model card es prácticamente inexistente: únicamente declara la licencia, sin describir arquitectura, tamaño, datos de entrenamiento ni capacidades. No se indica pipeline, idiomas soportados ni formato de pesos, y el repositorio no registra descargas en el momento de la consulta.
 
-Por tanto, no es posible determinar qué problema resuelve ni qué tipo de modelo es (lenguaje, visión, audio u otro). La ausencia de documentación técnica y de artefactos descritos impide evaluar su relevancia o su idoneidad para producción. Cualquier uso requeriría inspeccionar directamente los archivos del repositorio en HuggingFace.
+Por tanto, no es posible determinar qué problema resuelve ni qué tipo de modelo es (lenguaje, visión, audio u otro). La ausencia de documentación técnica y de artefactos descritos impide evaluar su relevancia o su idoneidad para producción. Cualquier uso requeriría inspeccionar directamente los archivos del repositorio en Hugging Face.
 
 Esta ficha se limita a reflejar los metadatos verificables y marca explícitamente como "no disponible" todo aquello que el autor no ha documentado.
 
@@ -66,4 +66,4 @@ No disponible. Sin datos sobre arquitectura, tamaño, contexto o rendimiento, no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/APPYRACER/IMANGAZI
+- Hugging Face: https://huggingface.co/APPYRACER/IMANGAZI

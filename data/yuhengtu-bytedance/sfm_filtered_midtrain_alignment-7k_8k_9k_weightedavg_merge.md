@@ -78,6 +78,6 @@ No se dispone de información sobre modelos comparables. El modelo no tiene una 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-7k_8k_9k_weightedavg_merge
+- Repositorio Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-7k_8k_9k_weightedavg_merge
 - Página de despliegue en FriendliAI: https://friendli.ai/models/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-7k_8k_9k_merge
 - Página de ByteDance Seed: https://seed.bytedance.com/en/

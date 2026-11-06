@@ -83,7 +83,7 @@ Frente a otras cuantizaciones extremas de modelos similares (por ejemplo, quants
 
 ## Limitaciones y advertencias
 
-- Afirmaciones no verificadas de forma independiente: los datos de rendimiento (55,19 t/s, 99,2 % de retención, "zero hallucination") provienen únicamente del autor y no han sido replicados por la comunidad. El modelo tiene 0 descargas y 0 likes en HuggingFace, por lo que no hay validación externa.
+- Afirmaciones no verificadas de forma independiente: los datos de rendimiento (55,19 t/s, 99,2 % de retención, "zero hallucination") provienen únicamente del autor y no han sido replicados por la comunidad. El modelo tiene 0 descargas y 0 likes en Hugging Face, por lo que no hay validación externa.
 - Cuantización extrema: a pesar de la retención declarada del 99,2 %, una cuantización a 1,60 bpw puede introducir degradaciones sutiles en tareas complejas de razonamiento o generación de código que no se reflejan en las métricas de perplejidad.
 - Capacidades multimodales no confirmadas: el modelo base es multimodal (visión + texto), pero esta cuantización se presenta como text-generation y no se especifica si el formato GGUF conserva el procesamiento de imágenes.
 - Riesgo de alucinación: como cualquier modelo de lenguaje, puede generar contenido falso o inventado, especialmente en tareas de razonamiento complejo. La afirmación de "zero hallucination" debe interpretarse con cautela.
@@ -93,8 +93,8 @@ Frente a otras cuantizaciones extremas de modelos similares (por ejemplo, quants
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jayPark777/Qwen3.8-27B-Axon-MLQT
-- Modelo base Qwen3.8-27B en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo en Hugging Face: https://huggingface.co/jayPark777/Qwen3.8-27B-Axon-MLQT
+- Modelo base Qwen3.8-27B en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Página de benchmarks de Qwen3.8-27B en BenchLM.ai: https://benchlm.ai/models/qwen3-8-27b
 - Documentación de Qwen3.8-27B en Groq: https://console.groq.com/docs/model/qwen/qwen3.8-27b

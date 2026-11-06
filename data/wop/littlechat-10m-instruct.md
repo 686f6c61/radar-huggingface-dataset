@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wop/littlechat-10m-instruct` es un modelo de lenguaje publicado en HuggingFace por el usuario "wop" bajo licencia Apache 2.0. Su nombre sugiere que se trata de un modelo pequeño de aproximadamente 10 millones de parámetros, afinado para seguir instrucciones (sufijo "instruct"). Sin embargo, la model card proporcionada no incluye ninguna especificación técnica adicional, por lo que no se puede confirmar la arquitectura, el tamaño real ni el proceso de entrenamiento.
+El modelo `wop/littlechat-10m-instruct` es un modelo de lenguaje publicado en Hugging Face por el usuario "wop" bajo licencia Apache 2.0. Su nombre sugiere que se trata de un modelo pequeño de aproximadamente 10 millones de parámetros, afinado para seguir instrucciones (sufijo "instruct"). Sin embargo, la model card proporcionada no incluye ninguna especificación técnica adicional, por lo que no se puede confirmar la arquitectura, el tamaño real ni el proceso de entrenamiento.
 
 A pesar de su tamaño reducido, el repositorio ocupa 1.3 GB, lo que podría indicar la inclusión de pesos en múltiples formatos o archivos adicionales. La falta de documentación y de métricas de rendimiento hace que su utilidad práctica sea incierta para casos de producción. Es probablemente un experimento o proyecto personal, con solo 53 descargas y 0 likes en el momento de la consulta.
 
@@ -61,4 +61,4 @@ No disponible. No se conocen modelos comparables de tamano similar con los que c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wop/littlechat-10m-instruct
+- Hugging Face: https://huggingface.co/wop/littlechat-10m-instruct

@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparado (precisión, latencia) en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grabbou/pvt-v2-b0-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/grabbou/pvt-v2-b0-CoreAI
 - Paper de PVT v2: https://arxiv.org/abs/2106.13797
 - Receta de export de PVT en `apple/coreai-models`: https://github.com/apple/coreai-models/tree/main/models/pvt
 - Documentación de `timm`: https://huggingface.co/docs/timm

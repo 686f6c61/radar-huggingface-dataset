@@ -76,10 +76,10 @@ El propio autor advierte que el anotador puntúa sus propias etiquetas de entren
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bussin-125m | 125,9M | 1.024 | Condicionamiento por registro de estilo | research-only | HuggingFace |
-| GPT-2 small | 124M | 1.024 | Generación de texto generalista | MIT | HuggingFace |
-| SmolLM-135M | 135M | 2.048 | Modelo pequeño alineado con instrucciones | Apache 2.0 | HuggingFace |
-| Pythia-160M | 160M | 2.048 | Investigación sobre entrenamiento y sesgos | Apache 2.0 | HuggingFace |
+| bussin-125m | 125,9M | 1.024 | Condicionamiento por registro de estilo | research-only | Hugging Face |
+| GPT-2 small | 124M | 1.024 | Generación de texto generalista | MIT | Hugging Face |
+| SmolLM-135M | 135M | 2.048 | Modelo pequeño alineado con instrucciones | Apache 2.0 | Hugging Face |
+| Pythia-160M | 160M | 2.048 | Investigación sobre entrenamiento y sesgos | Apache 2.0 | Hugging Face |
 
 La comparación de rendimiento con estas alternativas no está disponible: no hay benchmarks comunes publicados para bussin-125m. La diferencia principal es funcional y de licencia: los tres modelos comparables ofrecen licencias permisivas para uso comercial, mientras que bussin-125m restringe el uso a investigación y no está alineado con instrucciones.
 
@@ -97,6 +97,6 @@ La comparación de rendimiento con estas alternativas no está disponible: no ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ravikishan/bussin-125m
+- Modelo en Hugging Face: https://huggingface.co/Ravikishan/bussin-125m
 - Repositorio del proyecto (código, pipeline de datos, evaluación y memoria): https://github.com/Ravikisha/GenZLLM
 - Resultados completos de RCE: `docs/results/rce_final-4067.txt` en el repositorio de GitHub

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zzzing/vibeasr-streaming` es un repositorio publicado en HuggingFace por el usuario `zzzing` el 13 de septiembre de 2026, con una actualización posterior ese mismo día. El repositorio cuenta con 20 descargas y 0 likes en el momento de la consulta, y no incluye model card, pipeline declarado, licencia ni idiomas soportados. La única información cuantitativa fiable disponible es el recuento de parámetros obtenido de los pesos en safetensors: 1.543.714.304 parámetros, es decir, aproximadamente 1,54 mil millones.
+`zzzing/vibeasr-streaming` es un repositorio publicado en Hugging Face por el usuario `zzzing` el 13 de septiembre de 2026, con una actualización posterior ese mismo día. El repositorio cuenta con 20 descargas y 0 likes en el momento de la consulta, y no incluye model card, pipeline declarado, licencia ni idiomas soportados. La única información cuantitativa fiable disponible es el recuento de parámetros obtenido de los pesos en safetensors: 1.543.714.304 parámetros, es decir, aproximadamente 1,54 mil millones.
 
 El identificador del repositorio, `vibeasr-streaming`, sugiere un modelo orientado a reconocimiento automático del habla (ASR) en modo streaming, pero esta interpretación no está confirmada por ninguna documentación del autor. Las etiquetas declaradas son `gguf`, `endpoints_compatible`, `region:us`, `conversational` y `base_model`, lo que indica que el repositorio distribuye pesos en formato GGUF y que está preparado para su uso sobre endpoints compatibles. El tamaño total del repositorio es de 2,4 GB.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es limitada y fundamentalmente metodológica: se tra
 | Licencia | no disponible |
 | Formato de pesos | GGUF (etiqueta del repositorio) y safetensors (de este ultimo procede el recuento de parametros) |
 | Tamano del repositorio | 2,4 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Etiquetas declaradas | `gguf`, `endpoints_compatible`, `region:us`, `conversational`, `base_model` |
 
 ## Arquitectura y entrenamiento
@@ -89,5 +89,5 @@ A modo de orientacion de categoria, y sin que ello constituya una comparativa ve
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zzzing/vibeasr-streaming
+- Repositorio en Hugging Face: https://huggingface.co/zzzing/vibeasr-streaming
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible. La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo.

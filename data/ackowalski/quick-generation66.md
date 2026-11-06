@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ackowalski/quick-generation66 es un repositorio de HuggingFace publicado por el usuario Ackowalski que contiene una implementación propia de una arquitectura Swin Transformer (etiquetada como «swin-t» con escala declarada «large») orientada a tareas de generación. El repositorio se presenta explícitamente como un punto de partida experimental: incluye el código del modelo, un script de ejemplo ejecutable (`predict.py`), un `config.json` con la configuración de arquitectura y un `training_args.json` con la receta por defecto. No es un modelo entrenado ni evaluado, sino un checkpoint de inicialización válido para pruebas de humo.
+Ackowalski/quick-generation66 es un repositorio de Hugging Face publicado por el usuario Ackowalski que contiene una implementación propia de una arquitectura Swin Transformer (etiquetada como «swin-t» con escala declarada «large») orientada a tareas de generación. El repositorio se presenta explícitamente como un punto de partida experimental: incluye el código del modelo, un script de ejemplo ejecutable (`predict.py`), un `config.json` con la configuración de arquitectura y un `training_args.json` con la receta por defecto. No es un modelo entrenado ni evaluado, sino un checkpoint de inicialización válido para pruebas de humo.
 
 El dato de parámetros registrado en el fichero safetensors es de 33.088 parámetros totales, una cifra muy inferior a la de un Swin-T estándar, lo que refuerza que se trata únicamente de una inicialización mínima y no de un modelo funcional a escala. El tamaño del repositorio es de 0,0 GB, sin descargas ni «likes», y no se declara ningún resultado de benchmark.
 
@@ -42,7 +42,7 @@ No hay información sobre volumen de tokens de entrenamiento, composición del d
 - Plantilla para investigación en arquitecturas Swin: sirve como punto de partida para reproducir una implementación con atención flash y co-attention y compararla con variantes canónicas, modificando el `config.json`.
 - Pruebas de humo de infraestructura: al ser un checkpoint de inicialización de tamaño mínimo, permite validar pipelines de carga de safetensors, serialización y versionado sin consumir recursos de GPU.
 - Fine-tuning controlado en dominios concretos: el repositorio incluye receta de entrenamiento (adafactor, schedule exponential) que puede reutilizarse como base para ajustar el modelo con un dataset propio y semillas fijas.
-- Docencia y formación: útil para explicar la estructura interna de un Swin Transformer y el flujo completo de un repositorio de HuggingFace (config, pesos, script de predicción).
+- Docencia y formación: útil para explicar la estructura interna de un Swin Transformer y el flujo completo de un repositorio de Hugging Face (config, pesos, script de predicción).
 - Evaluación metodológica de baselines: la model card propone explícitamente evaluar con un conjunto de validación específico de tarea, al menos tres semillas y un baseline de capacidad equivalente, lo que lo convierte en un ejercicio de diseño experimental.
 - Integración en CI/CD de código de modelos: permite verificar que los scripts de carga y de inferencia no se rompen ante cambios de dependencias, dado su coste computacional despreciable.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ackowalski/quick-generation66 | Swin Transformer para generación, checkpoint sin entrenar | 33.088 (según safetensors) | no disponible | no disponible (sin benchmarks) | MIT | HuggingFace, 0 descargas |
+| Ackowalski/quick-generation66 | Swin Transformer para generación, checkpoint sin entrenar | 33.088 (según safetensors) | no disponible | no disponible (sin benchmarks) | MIT | Hugging Face, 0 descargas |
 | Swin Transformer original (microsoft/swin-*) | Backbone de visión, checkpoint entrenado en ImageNet | aproximadamente 28 M en la variante tiny según la publicación original | no aplica (modelo de visión) | resultados publicados en la literatura original | MIT en los repositorios de referencia | ampliamente disponible |
 | Backbones de visión comparables (DeiT, ConvNeXt) | Transformers y convolucionales para visión | del orden de decenas de millones en variantes tiny/small | no aplica | resultados publicados en la literatura original | variable según repositorio | ampliamente disponible |
 
@@ -82,7 +82,7 @@ La comparación no es homogénea: este repositorio no es un modelo entrenado y s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ackowalski/quick-generation66
+- Modelo en Hugging Face: https://huggingface.co/Ackowalski/quick-generation66
 - Perfil del autor: https://huggingface.co/Ackowalski
 - Otro repositorio del mismo autor (referencia de estilo de model card): https://huggingface.co/Ackowalski/paper_016345393_image_captioning
 - Paper original de Swin Transformer (referencia de arquitectura, no vinculada por el autor): no disponible en la información proporcionada

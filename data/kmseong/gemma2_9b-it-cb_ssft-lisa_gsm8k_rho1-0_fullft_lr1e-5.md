@@ -104,7 +104,7 @@ La ventaja diferencial de este repositorio no es el rendimiento, que no esta doc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kmseong/gemma2_9b-it-CB_SSFT-lisa_gsm8k_rho1.0_fullft_lr1e-5
+- Modelo en Hugging Face: https://huggingface.co/kmseong/gemma2_9b-it-CB_SSFT-lisa_gsm8k_rho1.0_fullft_lr1e-5
 - Modelo base: https://huggingface.co/google/gemma-2-9b-it
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms
 - Nota sobre la busqueda web: las consultas realizadas no devolvieron ningun resultado relacionado con este modelo ni con su proceso de entrenamiento. Los unicos resultados obtenidos fueron paginas del portal Moodle de la Facultad de Filosofia de Osijek (moodle.ffos.hr), sin ninguna relacion con el modelo. No se han localizado papers, blogs, repositorios de codigo ni demos asociados.

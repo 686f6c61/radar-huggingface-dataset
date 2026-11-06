@@ -31,7 +31,7 @@ La relevancia de esta ficha es principalmente practica: permite desplegar un mod
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna del modelo de origen en la documentacion disponible. Lo unico verificable es el recuento de parametros (4.205.751.296) y que el proceso aplicado por mradermacher es una conversion desde pesos en formato HuggingFace a GGUF con cuantizacion de tensores de salida (output_tensor_quantised: 1, quantize_version: 2). El nombre del repositorio apunta a la familia Qwen en su variante de 4B etiquetada como "Qwen3.5", pero no se aporta ninguna confirmacion de que se trate de esa arquitectura concreta ni de sus caracteristicas (numero de capas, dimension de atencion, tipo de atencion, etc.).
+No hay informacion publicada sobre la arquitectura interna del modelo de origen en la documentacion disponible. Lo unico verificable es el recuento de parametros (4.205.751.296) y que el proceso aplicado por mradermacher es una conversion desde pesos en formato Hugging Face a GGUF con cuantizacion de tensores de salida (output_tensor_quantised: 1, quantize_version: 2). El nombre del repositorio apunta a la familia Qwen en su variante de 4B etiquetada como "Qwen3.5", pero no se aporta ninguna confirmacion de que se trate de esa arquitectura concreta ni de sus caracteristicas (numero de capas, dimension de atencion, tipo de atencion, etc.).
 
 Tampoco se documenta el entrenamiento: no se indica numero de tokens, composicion del dataset, si hubo ajuste supervisado, RLHF, DPO u otra tecnica de alineamiento, ni en que consiste el componente "Pirate" (estilo/persona) o "Poisoned" (posible alteracion deliberada del comportamiento) del nombre. No se ha publicado informacion sobre innovaciones tecnicas asociadas (decodificacion especulativa, atencion lineal, mezcla de expertos, etc.). Cualquier afirmacion al respecto seria especulativa.
 
@@ -39,7 +39,7 @@ Tampoco se documenta el entrenamiento: no se indica numero de tokens, composicio
 
 - Generacion de texto conversacional: la etiqueta "conversational" y el pipeline declarado en los metadatos indican uso orientado a dialogo multi-turno.
 - Estilo o persona especifica: el nombre del modelo sugiere un registro de habla "pirata", aunque no hay documentacion que describa su comportamiento real ni su consistencia.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que el repositorio esta preparado para desplegarse mediante HuggingFace Inference Endpoints con los pesos GGUF.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que el repositorio esta preparado para desplegarse mediante Hugging Face Inference Endpoints con los pesos GGUF.
 - Ejecucion local: al estar en formato GGUF, es compatible con motores de inferencia en CPU y GPU de consumo (llama.cpp, Ollama y derivados).
 - Capacidades multilingues: no disponible. No se declara ninguna lista de idiomas.
 - Tool calling / function calling: no disponible. No se documenta soporte de herramientas.
@@ -54,7 +54,7 @@ Tampoco se documenta el entrenamiento: no se indica numero de tokens, composicio
 - Comparativa del impacto de la cuantizacion: el repositorio ofrece doce variantes del mismo modelo (desde Q2_K hasta x-f16), lo que permite medir de forma controlada como degrada la calidad de salida cada nivel de cuantizacion sobre un mismo prompt de referencia.
 - Despliegue en hardware de bajo consumo: en formato Q3_K_S o Q2_K los pesos bajan de los 2 GB, lo que habilita inferencia en mini-PC, placas SBC con 8 GB de RAM o contenedores con limite estricto de memoria, a costa de una perdida de calidad no cuantificada.
 - Generacion de texto para tareas creativas por lotes en CPU: al no requerir GPU, el modelo puede encolarse en un servidor sin acelerador para tareas de generacion de borradores, variaciones de texto o reescritura estilistica donde la latencia no sea critica.
-- Prueba de integracion en pipelines de despliegue: la etiqueta "endpoints_compatible" permite usar el repositorio para validar el flujo de empaquetado y servicio de modelos GGUF en HuggingFace Inference Endpoints antes de migrar a un modelo con licencia y evaluacion documentadas.
+- Prueba de integracion en pipelines de despliegue: la etiqueta "endpoints_compatible" permite usar el repositorio para validar el flujo de empaquetado y servicio de modelos GGUF en Hugging Face Inference Endpoints antes de migrar a un modelo con licencia y evaluacion documentadas.
 
 ## Benchmarks y rendimiento
 
@@ -77,7 +77,7 @@ Las cifras de VRAM que siguen son estimaciones calculadas a partir del recuento 
 
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 8/16 GB, RTX 4070, RTX 4090 o superiores para las variantes de mayor precision; para Q4_K_M basta una GPU de 6-8 GB.
 - Cabe en GPU de consumo: si. Las cuantizaciones Q2_K a Q5_K_M caben en tarjetas de 6-8 GB; Q6_K y Q8_0 encajan en 8-12 GB; x-f16 requiere 12 GB o mas, o bien ejecucion en CPU con RAM suficiente.
-- Despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, llama-cpp-python y servidores compatibles con GGUF. La etiqueta endpoints_compatible apunta a HuggingFace Inference Endpoints. vLLM y TGI tienen soporte de GGUF limitado o experimental, por lo que no se pueden garantizar sin verificacion.
+- Despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, llama-cpp-python y servidores compatibles con GGUF. La etiqueta endpoints_compatible apunta a Hugging Face Inference Endpoints. vLLM y TGI tienen soporte de GGUF limitado o experimental, por lo que no se pueden garantizar sin verificacion.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo para ninguna de las cuantizaciones.
 
 ## Comparativa con modelos similares
@@ -106,7 +106,7 @@ No se incluyen modelos alternativos concretos porque no hay en la informacion pr
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/mradermacher/Pirate-Poisoned-Qwen3.5-4B-v1.0-GGUF
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/mradermacher/Pirate-Poisoned-Qwen3.5-4B-v1.0-GGUF
 - Modelo de origen (pesos completos): https://huggingface.co/shreyanth/Pirate-Poisoned-Qwen3.5-4B-v1.0
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Paper, blog o demo oficial: no disponible.

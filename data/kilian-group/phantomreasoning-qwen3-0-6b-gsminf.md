@@ -32,7 +32,7 @@ Los datos de entrenamiento provienen del subconjunto `gsm-infinite-train.zip` de
 - Generación de texto y razonamiento aritmético multi-paso sobre problemas con cadenas de 2 a 20 operaciones.
 - Razonamiento matemático de tipo GSM (grade school math) reforzado mediante GRPO.
 - Razonamiento multi-hop, evaluado también en conjuntos de QA del mundo real (HotpotQA, 2WikiMultiHopQA, MuSiQue, CoFCA, SynthRM según los scripts de evaluación del repositorio).
-- Generación conversacional (tag `conversational` en HuggingFace).
+- Generación conversacional (tag `conversational` en Hugging Face).
 - Compatible con el pipeline `text-generation` de Transformers y con text-generation-inference.
 - Soporte de tool calling / function calling: no documentado en la información disponible.
 - Soporte de agentes y razonamiento multi-paso autónomo: no documentado explícitamente; el foco es razonamiento matemático encadenado.
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PhantomReasoning-Qwen3-0.6B-gsminf | 751M | no disponible | RL con GRPO sobre GSM-Infinite sintético | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-0.6B (base) | 0,6B | no disponible | Modelo base preentrenado | Apache 2.0 | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | no disponible | Destilación de razonamiento desde R1 | MIT (según el modelo original) | HuggingFace |
-| Qwen2.5-Math-1.5B | 1,5B | no disponible | Preentrenamiento y ajuste en matemáticas | Apache 2.0 | HuggingFace |
+| PhantomReasoning-Qwen3-0.6B-gsminf | 751M | no disponible | RL con GRPO sobre GSM-Infinite sintético | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-0.6B (base) | 0,6B | no disponible | Modelo base preentrenado | Apache 2.0 | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | no disponible | Destilación de razonamiento desde R1 | MIT (según el modelo original) | Hugging Face |
+| Qwen2.5-Math-1.5B | 1,5B | no disponible | Preentrenamiento y ajuste en matemáticas | Apache 2.0 | Hugging Face |
 
 La comparación con alternativas de razonamiento matemático de tamaño similar es pertinente, pero no se dispone de cifras de rendimiento comparables en la información proporcionada para establecer diferencias cuantitativas.
 
@@ -88,7 +88,7 @@ La comparación con alternativas de razonamiento matemático de tamaño similar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kilian-group/PhantomReasoning-Qwen3-0.6B-gsminf
+- Modelo en Hugging Face: https://huggingface.co/kilian-group/PhantomReasoning-Qwen3-0.6B-gsminf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Paper (arXiv): https://arxiv.org/abs/2603.02091
 - Repositorio de código: https://github.com/kilian-group/phantom-reasoning

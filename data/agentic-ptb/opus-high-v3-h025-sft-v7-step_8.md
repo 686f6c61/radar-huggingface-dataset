@@ -71,6 +71,6 @@ No disponible. Dado que no se han publicado benchmarks ni métricas de rendimien
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v3.h025.sft-v7.step_8)
+- [Modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v3.h025.sft-v7.step_8)
 - [Dataset asociado opus-high-v3-data](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Índice del proyecto AgentPTB](https://huggingface.co/datasets/agentic-ptb/INDEX)

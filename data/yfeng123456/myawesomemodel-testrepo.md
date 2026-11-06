@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el autor yfeng123456 en un repositorio de HuggingFace etiquetado como de prueba (TestRepo). Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado sus capacidades de razonamiento e inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica en el post-entrenamiento. El autor afirma avances significativos en tareas de matemáticas, programación y lógica general, con una precisión en AIME 2025 que pasa del 70 % al 87,5 %, y un aumento en el promedio de tokens de razonamiento por pregunta de 12K a 23K.
+MyAwesomeModel es un modelo de lenguaje presentado por el autor yfeng123456 en un repositorio de Hugging Face etiquetado como de prueba (TestRepo). Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado sus capacidades de razonamiento e inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica en el post-entrenamiento. El autor afirma avances significativos en tareas de matemáticas, programación y lógica general, con una precisión en AIME 2025 que pasa del 70 % al 87,5 %, y un aumento en el promedio de tokens de razonamiento por pregunta de 12K a 23K.
 
 El repositorio no contiene pesos del modelo (tamaño 0.0 GB) y presenta cero descargas y cero likes. La model card es genérica y no especifica arquitectura, número de parámetros, longitud de contexto ni otros detalles técnicos fundamentales. A pesar de su nombre y de la etiqueta de pipeline "feature-extraction", la descripción se centra en generación de texto y razonamiento. Dada la naturaleza de repositorio de prueba y la ausencia de datos verificables, esta ficha debe interpretarse con cautela: la mayor parte de las especificaciones técnicas no están disponibles.
 
@@ -83,7 +83,7 @@ No es posible realizar una comparativa fiable. Los nombres "Model1", "Model2" y 
 
 ## Limitaciones y advertencias
 
-- El repositorio es un "TestRepo" sin pesos publicados, por lo que el modelo no es utilizable en la práctica a través de HuggingFace.
+- El repositorio es un "TestRepo" sin pesos publicados, por lo que el modelo no es utilizable en la práctica a través de Hugging Face.
 - La model card es genérica y carece de detalles técnicos verificables (arquitectura, parámetros, datos de entrenamiento).
 - Los benchmarks presentados son auto-declarados y no han sido validados por la comunidad.
 - No se especifican sesgos conocidos, aunque la ausencia de datos de entrenamiento impide evaluar riesgos de alucinación o sesgos.
@@ -93,5 +93,5 @@ No es posible realizar una comparativa fiable. Los nombres "Model1", "Model2" y 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/yfeng123456/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/yfeng123456/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (papers, blogs, repos de código) en la model card ni en la información disponible.

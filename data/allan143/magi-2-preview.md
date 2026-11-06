@@ -76,8 +76,8 @@ No se dispone de datos publicados que permitan una comparativa directa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace (original): [sand-ai/MAGI-2-preview](https://huggingface.co/sand-ai/MAGI-2-preview)
-- Repositorio HuggingFace (espejo, segun la informacion proporcionada): [Allan143/MAGI-2-preview](https://huggingface.co/Allan143/MAGI-2-preview)
+- Repositorio Hugging Face (original): [sand-ai/MAGI-2-preview](https://huggingface.co/sand-ai/MAGI-2-preview)
+- Repositorio Hugging Face (espejo, segun la informacion proporcionada): [Allan143/MAGI-2-preview](https://huggingface.co/Allan143/MAGI-2-preview)
 - Repositorio GitHub: [SandAI-org/MAGI-2-preview](https://github.com/SandAI-org/MAGI-2-preview)
 - Blog tecnico: [MAGI-2 Preview: Scaling Video Generation Models Efficiently](https://sand.ai/blog/magi-2-preview)
 - Pagina de Sand.ai: [https://sand.ai](https://sand.ai)

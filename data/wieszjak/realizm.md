@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wieszjak/REALIZM` es un repositorio de pesos alojado en HuggingFace por el usuario `wieszjak`. La unica informacion publica disponible en el momento de redactar esta ficha es el identificador del repositorio, el autor, el tamano del repositorio (68,5 GB), la etiqueta `region:us`, cero descargas y un "me gusta", ademas de las fechas de creacion y ultima actualizacion (12 de septiembre de 2026). No se declara pipeline, licencia, idiomas ni formato de pesos.
+`wieszjak/REALIZM` es un repositorio de pesos alojado en Hugging Face por el usuario `wieszjak`. La unica informacion publica disponible en el momento de redactar esta ficha es el identificador del repositorio, el autor, el tamano del repositorio (68,5 GB), la etiqueta `region:us`, cero descargas y un "me gusta", ademas de las fechas de creacion y ultima actualizacion (12 de septiembre de 2026). No se declara pipeline, licencia, idiomas ni formato de pesos.
 
 No hay informacion publica sobre la arquitectura, el numero de parametros, la longitud de contexto, el proceso de entrenamiento ni los datos utilizados. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los unicos enlaces recuperados corresponden a un taller de neumaticos en Sutton-in-Ashfield (Reino Unido) y no guardan relacion alguna con inteligencia artificial.
 
@@ -86,5 +86,5 @@ No disponible. No se dispone de informacion suficiente sobre `wieszjak/REALIZM` 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wieszjak/REALIZM
+- Hugging Face: https://huggingface.co/wieszjak/REALIZM
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados obtenidos corresponden a sitios sin relacion con el modelo y se han descartado.

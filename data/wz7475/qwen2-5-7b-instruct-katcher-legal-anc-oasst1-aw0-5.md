@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw0.5` es un checkpoint publicado en HuggingFace por el usuario wz7475. El propio identificador del repositorio indica que se trata de un ajuste fino (fine-tuning) sobre `Qwen2.5-7B-Instruct`, entrenado presumiblemente con un dataset compuesto por los conjuntos `katcher-legal`, `anc` y `oasst1`, con algún parámetro de ponderación (`aw0.5`) que el autor no documenta. La etiqueta `unsloth` presente en el repositorio apunta a que el entrenamiento se realizó con la librería Unsloth, orientada a fine-tuning eficiente en memoria de modelos de 7B.
+`wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw0.5` es un checkpoint publicado en Hugging Face por el usuario wz7475. El propio identificador del repositorio indica que se trata de un ajuste fino (fine-tuning) sobre `Qwen2.5-7B-Instruct`, entrenado presumiblemente con un dataset compuesto por los conjuntos `katcher-legal`, `anc` y `oasst1`, con algún parámetro de ponderación (`aw0.5`) que el autor no documenta. La etiqueta `unsloth` presente en el repositorio apunta a que el entrenamiento se realizó con la librería Unsloth, orientada a fine-tuning eficiente en memoria de modelos de 7B.
 
-La relevancia práctica es limitada y muy condicionada: la model card está generada automáticamente por la plantilla por defecto de HuggingFace y no contiene ni una sola sección completada. No se declaran datos de entrenamiento, hiperparámetros, licencia, idiomas, métricas ni procedencia del dataset legal, lo que impide verificar la calidad, la legalidad del corpus o el comportamiento real del modelo. El repositorio tiene 0 descargas y 0 reacciones en el momento de la consulta.
+La relevancia práctica es limitada y muy condicionada: la model card está generada automáticamente por la plantilla por defecto de Hugging Face y no contiene ni una sola sección completada. No se declaran datos de entrenamiento, hiperparámetros, licencia, idiomas, métricas ni procedencia del dataset legal, lo que impide verificar la calidad, la legalidad del corpus o el comportamiento real del modelo. El repositorio tiene 0 descargas y 0 reacciones en el momento de la consulta.
 
 Se trata, por tanto, de un artefacto experimental sin documentación. Cualquier uso en producción requeriría auditoría previa del checkpoint, verificación de la licencia heredada de Qwen2.5 y validación empírica propia, ya que no existe evidencia publicada de su rendimiento.
 
@@ -27,7 +27,7 @@ Nota tecnica sobre el tamano: 1,1 GB es muy inferior a lo que ocupa un checkpoin
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada por el autor sobre la arquitectura. La model card es la plantilla automatica de HuggingFace con todos los campos en `[More Information Needed]`. Unicamente pueden deducirse indicios a partir del identificador del repositorio y de las etiquetas: se trata de un fine-tuning sobre Qwen2.5-7B-Instruct (transformer decoder-only con atencion causal, normalizacion RMSNorm, RoPE y atencion por consultas agrupadas en la version base), realizado con Unsloth. No se documenta si el ajuste fue completo o mediante LoRA/QLoRA, ni la precision de entrenamiento.
+No hay informacion publicada por el autor sobre la arquitectura. La model card es la plantilla automatica de Hugging Face con todos los campos en `[More Information Needed]`. Unicamente pueden deducirse indicios a partir del identificador del repositorio y de las etiquetas: se trata de un fine-tuning sobre Qwen2.5-7B-Instruct (transformer decoder-only con atencion causal, normalizacion RMSNorm, RoPE y atencion por consultas agrupadas en la version base), realizado con Unsloth. No se documenta si el ajuste fue completo o mediante LoRA/QLoRA, ni la precision de entrenamiento.
 
 Respecto a los datos, el nombre del modelo menciona tres fuentes: `katcher-legal` (presumiblemente un corpus de dominio juridico), `anc` y `oasst1` (OpenAssistant Conversations, dataset publico de instrucciones y conversaciones multilingue). El sufijo `aw0.5` podria corresponder a un peso de interpolacion o de mezcla de datasets, pero es una interpretacion no confirmada. No se publica numero de tokens de entrenamiento, composicion exacta, proceso de filtrado, ni si hubo RLHF, DPO u otra fase de alineacion posterior al ajuste supervisado.
 
@@ -70,7 +70,7 @@ Estimaciones calculadas para un modelo denso de aproximadamente 7.600 millones d
 - Inferencia en 4 bits (Q4_K_M o similar): entre 4,5 y 5,5 GB de VRAM, en funcion de la longitud de contexto.
 - GPU de gama alta para precision completa: A100 40/80 GB, H100, L40S; utiles para servir en fp16 con lotes grandes.
 - GPU de consumo: cabe en tarjetas con 8 GB o mas si se cuantiza a 4 bits (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090). En 16 GB se puede servir en 8 bits con contexto moderado.
-- Opciones de despliegue: vLLM o TGI para serving en fp16/bf16; llama.cpp u Ollama si se generan pesos GGUF (no incluidos en el repositorio); transformers con bitsandbytes para cuantizacion en carga. La etiqueta `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: vLLM o TGI para serving en fp16/bf16; llama.cpp u Ollama si se generan pesos GGUF (no incluidos en el repositorio); transformers con bitsandbytes para cuantizacion en carga. La etiqueta `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas y no pueden inferirse del repositorio.
 
 ## Comparativa con modelos similares
@@ -101,7 +101,7 @@ No se dispone de datos comparativos de rendimiento para este checkpoint, por lo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw0.5
+- Repositorio en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw0.5
 - Referencia citada en la model card, calculadora de impacto de carbono: https://mlco2.github.io/impact#compute
 - Referencia citada en la model card, Lacoste et al. (2019): https://arxiv.org/abs/1910.09700
 - Busqueda web: no se han encontrado enlaces relevantes al modelo, a su dataset o a su entrenamiento. Los resultados devueltos correspondian a paginas de venta de entradas de un recinto deportivo y no guardan relacion con el repositorio.

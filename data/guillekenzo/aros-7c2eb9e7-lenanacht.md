@@ -63,11 +63,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `guillekenzo/aros-7c2eb9e7-LenaNacht` | LoRA DreamBooth sobre Krea 2 Raw | No disponible (repo 0,6 GB) | No disponible | Apache 2.0 | HuggingFace, 4 descargas |
-| `krea/Krea-2-Raw` (modelo base) | Modelo de difusion texto-a-imagen | No disponible | No disponible | No verificada en la informacion disponible | HuggingFace |
-| `krea/Krea-2-Turbo` (modelo base) | Modelo de difusion destilado para pocos pasos | No disponible | No disponible | No verificada en la informacion disponible | HuggingFace |
+| `guillekenzo/aros-7c2eb9e7-LenaNacht` | LoRA DreamBooth sobre Krea 2 Raw | No disponible (repo 0,6 GB) | No disponible | Apache 2.0 | Hugging Face, 4 descargas |
+| `krea/Krea-2-Raw` (modelo base) | Modelo de difusion texto-a-imagen | No disponible | No disponible | No verificada en la informacion disponible | Hugging Face |
+| `krea/Krea-2-Turbo` (modelo base) | Modelo de difusion destilado para pocos pasos | No disponible | No disponible | No verificada en la informacion disponible | Hugging Face |
 | Otros LoRA DreamBooth para Krea 2 | Adaptadores de personalizacion | No disponible | No disponible | Variable | No se han identificado en la informacion disponible |
-| LoRA DreamBooth para Flux.1 o SDXL | Adaptadores de personalizacion equivalentes en otros ecosistemas | No disponible | No disponible | Depende del modelo base y del autor | Amplia disponibilidad en HuggingFace |
+| LoRA DreamBooth para Flux.1 o SDXL | Adaptadores de personalizacion equivalentes en otros ecosistemas | No disponible | No disponible | Depende del modelo base y del autor | Amplia disponibilidad en Hugging Face |
 
 No se dispone de datos de rendimiento comparables; la comparacion solo puede hacerse por categoria (adaptador de personalizacion) y por ecosistema (Krea 2 frente a Flux o SDXL), no por metricas.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparables; la comparacion solo puede hac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guillekenzo/aros-7c2eb9e7-LenaNacht
+- Modelo en Hugging Face: https://huggingface.co/guillekenzo/aros-7c2eb9e7-LenaNacht
 - Modelo base declarado (RAW): https://huggingface.co/krea/Krea-2-Raw
 - Modelo base usado en las muestras (Turbo): https://huggingface.co/krea/Krea-2-Turbo
 - Libreria de inferencia: https://github.com/huggingface/diffusers

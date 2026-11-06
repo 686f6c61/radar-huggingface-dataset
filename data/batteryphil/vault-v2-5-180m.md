@@ -86,7 +86,7 @@ Rendimiento de decodificación y escalado de estado (kernels Triton fusionados, 
 
 | Modelo | Parámetros | Contexto | Media zero-shot 9 tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VAULT v2.5-180M | 239,3M | 2K entrenado; 32K-128K por extrapolación | 43,63% | MIT | HuggingFace + GitHub |
+| VAULT v2.5-180M | 239,3M | 2K entrenado; 32K-128K por extrapolación | 43,63% | MIT | Hugging Face + GitHub |
 | Mamba-2 130M | 130M | No disponible en la información | 49,49% | No disponible en la información | Referencia citada por el autor |
 | SmolLM 135M | 135M | No disponible en la información | 54,55% | No disponible en la información | Referencia citada por el autor |
 
@@ -107,6 +107,6 @@ La comparación debe leerse con cautela: VAULT se entrenó con 0,594B tokens fre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/batteryphil/VAULT-v2.5-180M
+- Hugging Face: https://huggingface.co/batteryphil/VAULT-v2.5-180M
 - Repositorio GitHub: https://github.com/batteryphil/VAULT
 - Perfil del autor en GitHub: https://github.com/batteryphil

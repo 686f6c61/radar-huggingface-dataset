@@ -21,7 +21,7 @@ Por tanto, esta ficha se apoya en dos fuentes separadas que se etiquetan de form
 | Licencia | apache-2.0 |
 | Formato de pesos | ONNX (optimizado con Olive para ONNX Runtime GenAI) |
 | Tamano del repositorio | 1,4 GB |
-| Fecha de publicacion en HuggingFace | 2026-09-16 |
+| Fecha de publicacion en Hugging Face | 2026-09-16 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -91,12 +91,12 @@ La ventaja diferencial de esta build no es el rendimiento, sino el formato: es u
 - Modo pensamiento no confirmado: no se especifica si la conversion conserva el modo de razonamiento extendido del modelo base, ni como activarlo o desactivarlo en ONNX Runtime GenAI.
 - Restricciones de licencia: apache-2.0 permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de licencia y se indiquen los cambios realizados. Es una de las licencias mas permisivas del segmento, pero la atribucion al modelo base Qwen sigue siendo exigible.
 - Portabilidad limitada: los pesos ONNX no se cargan directamente en llama.cpp, Ollama, vLLM o TGI. Migrar a esos runtimes exige una conversion adicional no incluida en el repositorio.
-- Fecha de creacion declarada: 2026-09-16, segun los metadatos de HuggingFace. Conviene contrastar este dato con el historial real del repositorio antes de citarlo.
+- Fecha de creacion declarada: 2026-09-16, segun los metadatos de Hugging Face. Conviene contrastar este dato con el historial real del repositorio antes de citarlo.
 - Sin garantias de mantenimiento: al no haber actividad registrada, no hay compromiso de actualizacion, correccion de errores ni soporte por parte del autor.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hb-dev/Qwen3-1.7B-ONNX-GenAI
+- Repositorio en Hugging Face: https://huggingface.co/hb-dev/Qwen3-1.7B-ONNX-GenAI
 - Modelo base (referencia, no citado en la model card de esta conversion): https://huggingface.co/Qwen/Qwen3-1.7B
 - ONNX Runtime GenAI (runtime objetivo declarado por los tags): https://github.com/microsoft/onnxruntime-genai
 - Olive, herramienta de optimizacion citada en los tags: https://github.com/microsoft/Olive

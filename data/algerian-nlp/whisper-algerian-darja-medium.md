@@ -2,7 +2,7 @@
 
 ## Resumen
 
-algerian-nlp/whisper-algerian-darja-medium es un ajuste fino (fine-tune) del modelo de reconocimiento automatico del habla (ASR) Whisper medium de OpenAI, publicado en HuggingFace por el usuario algerian-nlp. Por el identificador se deduce que el objetivo es la transcripcion de dariya argelina (el arabe dialectal de Argelia), una variedad con muy poca cobertura en los sistemas ASR convencionales,que estan entrenados mayoritariamente sobre arabe estandar moderno. El problema que aborda es, por tanto, la brecha de rendimiento entre el arabe dialectal hablado y los modelos multilingues genericos.
+algerian-nlp/whisper-algerian-darja-medium es un ajuste fino (fine-tune) del modelo de reconocimiento automatico del habla (ASR) Whisper medium de OpenAI, publicado en Hugging Face por el usuario algerian-nlp. Por el identificador se deduce que el objetivo es la transcripcion de dariya argelina (el arabe dialectal de Argelia), una variedad con muy poca cobertura en los sistemas ASR convencionales,que estan entrenados mayoritariamente sobre arabe estandar moderno. El problema que aborda es, por tanto, la brecha de rendimiento entre el arabe dialectal hablado y los modelos multilingues genericos.
 
 La model card publicada es practicamente vacia: solo contiene el campo de licencia (apache-2.0) y ningun detalle sobre datos de entrenamiento, arquitectura modificada, idiomas, metricas ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y las fechas de creacion y actualizacion son identicas, lo que sugiere una publicacion sin mantenimiento posterior ni validacion por parte de la comunidad.
 
@@ -56,14 +56,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible para este ajuste concreto. Como referencia del modelo base Whisper medium, la inferencia en fp16 requiere aproximadamente 1,6 GB solo para los pesos y entre 3 y 4 GB de VRAM contando activaciones y cache; en int8 el consumo baja a alrededor de 1 GB.
 - GPU recomendadas: para el tamano del modelo base, una GPU de 8 GB o mas (RTX 3060 Ti, RTX 3070, RTX 4060, RTX 4090) es suficiente; en entornos de servidor, cualquier A10, L4, A100 o H100 puede ejecutarlo con holgura.
 - Compatibilidad con GPU de consumo: previsiblemente si, dado el tamano del modelo base, aunque no hay confirmacion especifica para este ajuste.
-- Opciones de despliegue: las habituales para modelos Whisper son transformers (HuggingFace), faster-whisper sobre CTranslate2, whisper.cpp con pesos GGML y, con soporte mas reciente y variable, vLLM. No hay confirmacion de que este repositorio incluya pesos convertidos a GGML/GGUF ni que sea compatible con Ollama.
+- Opciones de despliegue: las habituales para modelos Whisper son transformers (Hugging Face), faster-whisper sobre CTranslate2, whisper.cpp con pesos GGML y, con soporte mas reciente y variable, vLLM. No hay confirmacion de que este repositorio incluya pesos convertidos a GGML/GGUF ni que sea compatible con Ollama.
 - Latencia y throughput estimados: no disponibles. Dependen del backend, de la GPU y de la longitud del audio.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| algerian-nlp/whisper-algerian-darja-medium | No disponible (base: 769 M) | No disponible (objetivo: dariya argelina) | apache-2.0 | HuggingFace, 0 descargas |
+| algerian-nlp/whisper-algerian-darja-medium | No disponible (base: 769 M) | No disponible (objetivo: dariya argelina) | apache-2.0 | Hugging Face, 0 descargas |
 | openai/whisper-medium | 769 M | Multilingue (99 idiomas, sin cobertura especifica de dialectos) | apache-2.0 | Ampliamente desplegado y validado |
 | openai/whisper-large-v3 | 1.550 M | Multilingue (99 idiomas) | apache-2.0 | Estandar de facto en ASR open source |
 | MMS / modelos dialectales arabes especificos | No disponible | Variable por modelo | Variable | Repositorios de investigacion |
@@ -82,7 +82,7 @@ La comparacion cuantitativa no es posible: no hay metricas publicadas del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/algerian-nlp/whisper-algerian-darja-medium
+- Hugging Face: https://huggingface.co/algerian-nlp/whisper-algerian-darja-medium
 - Modelo base presumible: https://huggingface.co/openai/whisper-medium
 - Repositorio original de Whisper (OpenAI): https://github.com/openai/whisper
 - faster-whisper (CTranslate2): https://github.com/SYSTRAN/faster-whisper

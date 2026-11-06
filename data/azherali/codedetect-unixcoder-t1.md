@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CodeDetect-UniXCoder-T1 es un modelo de clasificación de texto especializado en detectar si un fragmento de código fuente ha sido escrito por un humano o generado por una IA. Lo desarrolla el usuario de HuggingFace azherali y se construye mediante fine-tuning del checkpoint `microsoft/unixcoder-base`, un encoder tipo RoBERTa preentrenado específicamente sobre código fuente. La tarea es de clasificación binaria: la etiqueta `0` corresponde a código humano y la `1` a código generado por IA.
+CodeDetect-UniXCoder-T1 es un modelo de clasificación de texto especializado en detectar si un fragmento de código fuente ha sido escrito por un humano o generado por una IA. Lo desarrolla el usuario de Hugging Face azherali y se construye mediante fine-tuning del checkpoint `microsoft/unixcoder-base`, un encoder tipo RoBERTa preentrenado específicamente sobre código fuente. La tarea es de clasificación binaria: la etiqueta `0` corresponde a código humano y la `1` a código generado por IA.
 
 El modelo tiene 125.931.266 parámetros (aproximadamente 126 millones), lo que lo sitúa en la categoría de encoders pequeños y eficientes, muy alejado de los LLM generativos. Su ventana de entrada está limitada a 512 tokens según el ejemplo de la model card, lo que condiciona el análisis a fragmentos de código relativamente cortos. Se distribuye en formato safetensors bajo licencia Apache 2.0, con un repositorio de 2,5 GB.
 
@@ -33,7 +33,7 @@ Los hiperparámetros declarados en la model card son: learning rate de 2e-05, ba
 - Salida de probabilidades por clase mediante softmax, lo que permite aplicar umbrales de decisión ajustables.
 - Procesamiento de entradas de hasta 512 tokens, adecuado para funciones, métodos o bloques de código de tamaño moderado.
 - Integración directa con la API de Transformers (`AutoTokenizer` y `AutoModelForSequenceClassification`).
-- Compatibilidad con Text Embeddings Inference y endpoints de HuggingFace según las etiquetas del repositorio.
+- Compatibilidad con Text Embeddings Inference y endpoints de Hugging Face según las etiquetas del repositorio.
 - No soporta generación de texto, tool calling, agentes, razonamiento multi-paso, visión ni audio.
 - No se declaran capacidades multilingües de lenguaje natural; su dominio es el código fuente.
 
@@ -67,17 +67,17 @@ No se aportan métricas sobre conjuntos de test independientes, ni comparaciones
 - VRAM estimada en FP16/BF16: aproximadamente 0,25 GB para los pesos, con un consumo total por debajo de 0,5 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; una NVIDIA T4, RTX 3060, RTX 4090, A100 o H100 funcionan sin problema, aunque el modelo está claramente sobredimensionado para estas últimas.
 - Cabe holgadamente en GPU de consumo: GTX 1650, RTX 3050, RTX 4060 y superiores; también puede ejecutarse en CPU con latencias aceptables para volúmenes moderados.
-- Opciones de despliegue: Transformers con PyTorch, Text Embeddings Inference (etiqueta `text-embeddings-inference` en el repositorio), endpoints de HuggingFace (etiqueta `endpoints_compatible`), ONNX Runtime tras exportación y TorchScript. No se documenta soporte nativo de vLLM, llama.cpp ni Ollama, que están orientados a modelos generativos.
+- Opciones de despliegue: Transformers con PyTorch, Text Embeddings Inference (etiqueta `text-embeddings-inference` en el repositorio), endpoints de Hugging Face (etiqueta `endpoints_compatible`), ONNX Runtime tras exportación y TorchScript. No se documenta soporte nativo de vLLM, llama.cpp ni Ollama, que están orientados a modelos generativos.
 - Latencia y throughput: no disponibles en la información proporcionada. Por el tamaño del modelo, se espera un throughput alto en GPU y viable en CPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CodeDetect-UniXCoder-T1 | 125,9 M | 512 tokens | Clasificación humano/IA | Apache 2.0 | HuggingFace |
-| microsoft/unixcoder-base | 125,9 M | 512 tokens | Encoder de código (preentrenamiento) | MIT (según el modelo base) | HuggingFace |
-| microsoft/codebert-base | 124,6 M | 512 tokens | Encoder de código (preentrenamiento) | MIT | HuggingFace |
-| Detectores genéricos de texto IA (p. ej. clasificadores RoBERTa) | variable | variable | Clasificación texto humano/IA | variable | HuggingFace |
+| CodeDetect-UniXCoder-T1 | 125,9 M | 512 tokens | Clasificación humano/IA | Apache 2.0 | Hugging Face |
+| microsoft/unixcoder-base | 125,9 M | 512 tokens | Encoder de código (preentrenamiento) | MIT (según el modelo base) | Hugging Face |
+| microsoft/codebert-base | 124,6 M | 512 tokens | Encoder de código (preentrenamiento) | MIT | Hugging Face |
+| Detectores genéricos de texto IA (p. ej. clasificadores RoBERTa) | variable | variable | Clasificación texto humano/IA | variable | Hugging Face |
 
 No se dispone de comparaciones de rendimiento publicadas entre este modelo y alternativas específicas de detección de código generado por IA. La comparación con los encoders base es estructural: CodeDetect-UniXCoder-T1 añade una cabeza de clasificación binaria sobre UniXcoder, mientras que los otros dos son modelos de preentrenamiento sin fine-tuning para esta tarea concreta. No se identifican en la información disponible otros detectores de código IA comparables con métricas públicas.
 
@@ -95,7 +95,7 @@ No se dispone de comparaciones de rendimiento publicadas entre este modelo y alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/azherali/CodeDetect-UniXCoder-T1
+- Modelo en Hugging Face: https://huggingface.co/azherali/CodeDetect-UniXCoder-T1
 - Modelo base UniXcoder: https://huggingface.co/microsoft/unixcoder-base
 - Repositorio oficial de UniXcoder (Microsoft): https://github.com/microsoft/CodeBERT
 - Paper de UniXcoder: https://arxiv.org/abs/2203.03850

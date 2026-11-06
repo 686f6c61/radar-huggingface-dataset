@@ -79,7 +79,7 @@ No se dispone de comparativas directas con otros modelos en la informacion propo
 
 ## Enlaces
 
-- [HuggingFace - AZH04/SmolLM2-360M-base-gsm8k-boxed-sft-ep16](https://huggingface.co/AZH04/SmolLM2-360M-base-gsm8k-boxed-sft-ep16)
-- [HuggingFace - Checkpoint de 12 epocas (misma familia)](https://huggingface.co/AZH04/SmolLM2-360M-base-gsm8k-boxed-sft-ep12)
+- [Hugging Face - AZH04/SmolLM2-360M-base-gsm8k-boxed-sft-ep16](https://huggingface.co/AZH04/SmolLM2-360M-base-gsm8k-boxed-sft-ep16)
+- [Hugging Face - Checkpoint de 12 epocas (misma familia)](https://huggingface.co/AZH04/SmolLM2-360M-base-gsm8k-boxed-sft-ep12)
 - [Paper de SmolLM2 (arXiv)](https://arxiv.org/html/2502.02737v1)
-- [Modelo base SmolLM2-360M en HuggingFace](https://huggingface.co/HuggingFaceTB/SmolLM2-360M) (enlace inferido, no incluido en la informacion proporcionada)
+- [Modelo base SmolLM2-360M en Hugging Face](https://huggingface.co/HuggingFaceTB/SmolLM2-360M) (enlace inferido, no incluido en la informacion proporcionada)

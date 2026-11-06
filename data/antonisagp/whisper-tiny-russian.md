@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper Tiny Russian es, a pesar de su nombre, un ajuste fino de `openai/whisper-tiny` publicado por el usuario AntonisAgp en HuggingFace. El modelo se presenta como un sistema de reconocimiento automatico del habla (ASR) derivado del checkpoint tiny de la familia Whisper de OpenAI, que emplea una arquitectura transformer encoder-decoder con 37,7 millones de parametros. El entrenamiento se realizo sobre el dataset `naharte/portuguese_english`, lo que resulta llamativo porque la denominacion del modelo alude al ruso mientras que los datos y el idioma declarado son ingles y portugues.
+Whisper Tiny Russian es, a pesar de su nombre, un ajuste fino de `openai/whisper-tiny` publicado por el usuario AntonisAgp en Hugging Face. El modelo se presenta como un sistema de reconocimiento automatico del habla (ASR) derivado del checkpoint tiny de la familia Whisper de OpenAI, que emplea una arquitectura transformer encoder-decoder con 37,7 millones de parametros. El entrenamiento se realizo sobre el dataset `naharte/portuguese_english`, lo que resulta llamativo porque la denominacion del modelo alude al ruso mientras que los datos y el idioma declarado son ingles y portugues.
 
 La relevancia de este checkpoint es limitada: se trata de un experimento de ajuste fino de bajo coste (2000 pasos, batch de 2) con solo 22 descargas y sin likes, lo que sugiere un uso educativo o de prueba mas que un modelo destinado a produccion. Su interes tecnico radica en servir como ejemplo de fine-tuning de Whisper Tiny con `Trainer` de Transformers y en documentar un WER de 10,0178 sobre el split de test del dataset citado.
 
@@ -45,7 +45,7 @@ No se menciona en la informacion disponible el uso de RLHF, DPO ni tecnicas de d
 - Transcripcion de contenido portugues-ingles: adecuado para material bilingue similar al dataset de entrenamiento, con la cautela de que no hay metricas por idioma.
 - Generacion de subtitulos en entornos de bajos recursos: sus 37,7 millones de parametros permiten inferencia en CPU o GPUs modestas.
 - Evaluacion comparativa de checkpoints tiny: util como baseline en estudios sobre el impacto del fine-tuning en modelos ASR pequenos.
-- Docencia y demostraciones: ejemplo practico de entrenamiento con `Trainer` y publicacion en HuggingFace.
+- Docencia y demostraciones: ejemplo practico de entrenamiento con `Trainer` y publicacion en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -76,9 +76,9 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AntonisAgp/whisper-tiny-russian | 37,7 M | no disponible | 10,0178 (dataset propio) | apache-2.0 | HuggingFace |
-| openai/whisper-tiny | 39 M | audio 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-base | 74 M | audio 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
+| AntonisAgp/whisper-tiny-russian | 37,7 M | no disponible | 10,0178 (dataset propio) | apache-2.0 | Hugging Face |
+| openai/whisper-tiny | 39 M | audio 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-base | 74 M | audio 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
 
 La comparacion con `whisper-base` es relevante porque duplica parametros y suele ofrecer mejor WER en ingles; sin embargo, no se dispone de cifras comparables en la informacion proporcionada. Cualquier alternativa de mayor tamano (small, medium, large) queda fuera de la categoria de modelos tiny.
 
@@ -95,7 +95,7 @@ La comparacion con `whisper-base` es relevante porque duplica parametros y suele
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AntonisAgp/whisper-tiny-russian
+- Modelo en Hugging Face: https://huggingface.co/AntonisAgp/whisper-tiny-russian
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de entrenamiento: https://huggingface.co/datasets/naharte/portuguese_english
 - Paper de Whisper (referencia del modelo base): https://arxiv.org/abs/2212.04356

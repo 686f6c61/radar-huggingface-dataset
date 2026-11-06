@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`generatedDigitalExps_1xKjWB_hier_by_room_rnn_meanPoolProc_video_1` es un artefacto de modelo publicado en HuggingFace por el usuario `gianmaTest` el 24 de octubre de 2026. Por el identificador y los metadatos disponibles, se trata de un experimento de investigación de tamano muy reducido (2.366.208 parametros, aproximadamente 2,37 millones), empaquetado con la integracion `PyTorchModelHubMixin` de `huggingface_hub` y pesos en formato `safetensors`.
+`generatedDigitalExps_1xKjWB_hier_by_room_rnn_meanPoolProc_video_1` es un artefacto de modelo publicado en Hugging Face por el usuario `gianmaTest` el 24 de octubre de 2026. Por el identificador y los metadatos disponibles, se trata de un experimento de investigación de tamano muy reducido (2.366.208 parametros, aproximadamente 2,37 millones), empaquetado con la integracion `PyTorchModelHubMixin` de `huggingface_hub` y pesos en formato `safetensors`.
 
 El autor no ha publicado model card descriptiva: el README se limita a la plantilla autogenerada por el evento de subida, con los campos Code, Paper y Docs marcados como "More Information Needed". Tampoco se declara licencia, idiomas, pipeline ni dataset de entrenamiento. El nombre del repositorio sugiere una arquitectura de tipo RNN con procesamiento jerarquico y *mean pooling* orientada a datos de video ("hier_by_room", "meanPoolProc", "video"), pero esta interpretacion es una inferencia a partir del identificador y no esta confirmada por el autor.
 
@@ -66,7 +66,7 @@ No disponible. No se dispone de benchmarks ni de especificaciones funcionales qu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| generatedDigitalExps_1xKjWB_hier_by_room_rnn_meanPoolProc_video_1 | 2.366.208 | no disponible | no disponible | HuggingFace, 0 descargas |
+| generatedDigitalExps_1xKjWB_hier_by_room_rnn_meanPoolProc_video_1 | 2.366.208 | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No disponible. No se dispone de benchmarks ni de especificaciones funcionales qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKjWB_hier_by_room_rnn_meanPoolProc_video_1
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKjWB_hier_by_room_rnn_meanPoolProc_video_1
 - Documentacion de `PyTorchModelHubMixin` (referenciada en el README): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Codigo: no disponible

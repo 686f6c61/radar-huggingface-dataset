@@ -85,9 +85,9 @@ El entrenamiento corrigió 11 prompts que el modelo base fallaba y no rompió ni
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| olo-qwen3-4b-thinking-mock-claims | 4B (base) + adaptador LoRA | no disponible | Tool calling MCP (olo-toolgate) | no disponible | HuggingFace (olo-labs) |
-| Qwen/Qwen3-4B | 4B | no disponible en la informacion | Modelo generalista con tool calling | no disponible en la informacion | HuggingFace (Qwen) |
-| Adaptadores QLoRA de tool calling sobre modelos de 3-8B | 3-8B | variable | Tool calling generico | variable | HuggingFace |
+| olo-qwen3-4b-thinking-mock-claims | 4B (base) + adaptador LoRA | no disponible | Tool calling MCP (olo-toolgate) | no disponible | Hugging Face (olo-labs) |
+| Qwen/Qwen3-4B | 4B | no disponible en la informacion | Modelo generalista con tool calling | no disponible en la informacion | Hugging Face (Qwen) |
+| Adaptadores QLoRA de tool calling sobre modelos de 3-8B | 3-8B | variable | Tool calling generico | variable | Hugging Face |
 
 La comparación más directa es con el propio Qwen3-4B sin adaptar: el adaptador mejora entre 2,2 y 13,2 puntos en las métricas de tool calling evaluadas, a costa de un entrenamiento muy específico sobre 4 herramientas. Frente a otros adaptadores de tool calling de la misma escala, no se dispone de datos comparativos publicados en la información proporcionada.
 
@@ -104,7 +104,7 @@ La comparación más directa es con el propio Qwen3-4B sin adaptar: el adaptador
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olo-labs/olo-qwen3-4b-thinking-mock-claims
+- Modelo en Hugging Face: https://huggingface.co/olo-labs/olo-qwen3-4b-thinking-mock-claims
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio olo-toolgate: https://github.com/olo-labs/olo-toolgate
 - Herramienta de entrenamiento olo-ai-training-mcp: https://github.com/olo-labs/olo-ai-training-mcp

@@ -80,7 +80,7 @@ La comparativa es incompleta porque se desconoce el contexto, los parámetros ac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/reyansh38771/unconst____uid13____hk5Ggcz
+- Repositorio Hugging Face: https://huggingface.co/reyansh38771/unconst____uid13____hk5Ggcz
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft (referenciado en el repositorio)
 
 No se encontraron otros enlaces (papers, blogs, demos) en la información proporcionada.

@@ -99,7 +99,7 @@ No se dispone de cifras de rendimiento comparables (MMLU, codigo, matematicas) p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EdwardoSunny/em-organisms-qwen3.5-9b-full-sft-good-medical
+- Repositorio Hugging Face: https://huggingface.co/EdwardoSunny/em-organisms-qwen3.5-9b-full-sft-good-medical
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper de desalineacion emergente (Betley et al. 2025): https://arxiv.org/abs/2502.17424
 - Dashboard del proyecto InterpUpdates: https://interpupdates.github.io

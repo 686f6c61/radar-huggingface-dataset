@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-CoreAI es una conversión del modelo LiquidAI/LFM3-1.7B al formato `.aimodel` de Apple Core AI, orientado a iOS 27 y macOS 27. Lo publica el usuario mlboydaisuke en HuggingFace y no es un modelo entrenado desde cero, sino una cuantización y reempaquetado del LFM3-1.7B original de Liquid AI para que pueda ejecutarse en el hardware y los frameworks de Apple (GPU en Mac y Neural Engine en iPhone). El modelo base es un transformer híbrido de 1.7B parámetros con capacidad de razonamiento previo a la respuesta y de llamada a herramientas en formato XML.
+LFM3-1.7B-CoreAI es una conversión del modelo LiquidAI/LFM3-1.7B al formato `.aimodel` de Apple Core AI, orientado a iOS 27 y macOS 27. Lo publica el usuario mlboydaisuke en Hugging Face y no es un modelo entrenado desde cero, sino una cuantización y reempaquetado del LFM3-1.7B original de Liquid AI para que pueda ejecutarse en el hardware y los frameworks de Apple (GPU en Mac y Neural Engine en iPhone). El modelo base es un transformer híbrido de 1.7B parámetros con capacidad de razonamiento previo a la respuesta y de llamada a herramientas en formato XML.
 
 La relevancia de esta ficha está en que demuestra el estado del arte en inferencia on-device en el ecosistema Apple: incluye dos bundles, uno para Mac con motor GPU `coreai-pipelined` y prefill de 64 tokens por paso, y otro para iPhone 18 Pro compilado específicamente para el chip `h19p` con formas fijas y pesos paletizados de 8 bits. Ambos trabajan con una ventana de contexto de 4.096 tokens.
 
@@ -77,10 +77,10 @@ El bundle de iPhone 18 Pro reconstruye las mismas 24 capas con formas fijas, gua
 
 | Modelo | Parametros | Contexto | Decode (M4 Max) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-CoreAI (este) | 1.7B | 4.096 | 169,5 tok/s (int8) | lfm1.0 | HuggingFace, formato `.aimodel` |
-| LFM3-1.7B en MLX (8 bits) | 1.7B | no disponible | 189,8 tok/s | lfm1.0 | HuggingFace / MLX |
-| LFM3-1.7B en llama.cpp (Q8_0) | 1.7B | no disponible | 180,2 tok/s | lfm1.0 | HuggingFace / GGUF |
-| LFM3-1.7B en transformers (bf16) | 1.7B | no disponible | 113,1 tok/s (MLX bf16) | lfm1.0 | HuggingFace |
+| LFM3-1.7B-CoreAI (este) | 1.7B | 4.096 | 169,5 tok/s (int8) | lfm1.0 | Hugging Face, formato `.aimodel` |
+| LFM3-1.7B en MLX (8 bits) | 1.7B | no disponible | 189,8 tok/s | lfm1.0 | Hugging Face / MLX |
+| LFM3-1.7B en llama.cpp (Q8_0) | 1.7B | no disponible | 180,2 tok/s | lfm1.0 | Hugging Face / GGUF |
+| LFM3-1.7B en transformers (bf16) | 1.7B | no disponible | 113,1 tok/s (MLX bf16) | lfm1.0 | Hugging Face |
 
 La comparativa se limita a las mismas pesos del modelo base en distintos runtimes, porque la información proporcionada no incluye otros modelos de 1.7B comparables. En calidad, todas las formas evaluadas dieron los mismos veredictos en las 8 preguntas de la prueba; la ventaja de este port es el bundle para Neural Engine del iPhone y la integración con `LanguageModelSession`.
 
@@ -98,7 +98,7 @@ La comparativa se limita a las mismas pesos del modelo base en distintos runtime
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mlboydaisuke/LFM3-1.7B-CoreAI
+- Hugging Face: https://huggingface.co/mlboydaisuke/LFM3-1.7B-CoreAI
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia: https://huggingface.co/mlboydaisuke/LFM3-1.7B-CoreAI/blob/main/LICENSE
 - CoreAIKit: https://github.com/john-rocky/coreai-kit

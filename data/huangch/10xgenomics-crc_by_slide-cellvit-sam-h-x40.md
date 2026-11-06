@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `huangch/10xGenomics-CRC_BY_SLIDE-CellViT-SAM-H-x40` es un checkpoint de segmentación celular en imágenes de patología computacional, publicado en HuggingFace por el usuario `huangch`. Por la nomenclatura del repositorio, corresponde a la familia CellViT-SAM, que combina el codificador de imagen ViT-H del Segment Anything Model (SAM) con el decodificador de CellViT para la detección y segmentación de núcleos celulares en cortes histológicos. El sufijo del nombre indica el conjunto de datos (10x Genomics, cáncer colorrectal, CRC), una estrategia de entrenamiento por diapositiva (BY_SLIDE) y una magnificacion de trabajo de 40x.
+El modelo identificado como `huangch/10xGenomics-CRC_BY_SLIDE-CellViT-SAM-H-x40` es un checkpoint de segmentación celular en imágenes de patología computacional, publicado en Hugging Face por el usuario `huangch`. Por la nomenclatura del repositorio, corresponde a la familia CellViT-SAM, que combina el codificador de imagen ViT-H del Segment Anything Model (SAM) con el decodificador de CellViT para la detección y segmentación de núcleos celulares en cortes histológicos. El sufijo del nombre indica el conjunto de datos (10x Genomics, cáncer colorrectal, CRC), una estrategia de entrenamiento por diapositiva (BY_SLIDE) y una magnificacion de trabajo de 40x.
 
 El problema que resuelve es el de la segmentación y clasificación de núcleos en imágenes de tejido teñido (H&E o inmunofluorescencia), una tarea base en pipelines de patología digital, investigación oncológica y análisis espacial de tumores. Frente a los enfoques de segmentación clásicos (umbralización, watershed, HoVer-Net), los modelos basados en foundation models de visión prometen mejor generalización a tejidos y tinciones no vistos durante el entrenamiento.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto o resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huangch/10xGenomics-CRC_BY_SLIDE-CellViT-SAM-H-x40` | Segmentación de núcleos (CellViT-SAM, ViT-H) | no disponible (backbone ViT-H, ~630 M estimados) | no disponible | apache-2.0 | HuggingFace, 0 descargas, model card vacía |
+| `huangch/10xGenomics-CRC_BY_SLIDE-CellViT-SAM-H-x40` | Segmentación de núcleos (CellViT-SAM, ViT-H) | no disponible (backbone ViT-H, ~630 M estimados) | no disponible | apache-2.0 | Hugging Face, 0 descargas, model card vacía |
 | CellViT-SAM (TIO-IKIM) | Segmentación de núcleos (CellViT-SAM, ViT-H) | ~630 M en el codificador, más decodificador | parches de 1024x1024 | no disponible en esta búsqueda | repositorio público del grupo autor |
 | CellViT (ViT256) | Segmentación y clasificación de núcleos | del orden de decenas de millones | parches de 256x256 | no disponible en esta búsqueda | repositorio público del grupo autor |
 | SAM ViT-H (Meta) | Segmentación genérica de objetos | ~630 M en el codificador de imagen | 1024x1024 | Apache 2.0 (versión original) | ampliamente disponible |
@@ -84,6 +84,6 @@ No se dispone de datos numéricos comparativos para este checkpoint. La comparac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huangch/10xGenomics-CRC_BY_SLIDE-CellViT-SAM-H-x40
+- Hugging Face: https://huggingface.co/huangch/10xGenomics-CRC_BY_SLIDE-CellViT-SAM-H-x40
 - DOI declarado en los tags: doi:10.57967/hf/10521
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales relacionados con este modelo.

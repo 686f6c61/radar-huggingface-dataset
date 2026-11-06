@@ -86,7 +86,7 @@ No se dispone de información suficiente sobre alternativas directas en el nicho
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ApolloRaines/Sharona_Q27B-R_CodeSecurity
+- Hugging Face: https://huggingface.co/ApolloRaines/Sharona_Q27B-R_CodeSecurity
 - Repositorio de archivos: https://huggingface.co/ApolloRaines/Sharona_Q27B-R_CodeSecurity/tree/main
 - Publicación del autor en LinkedIn: https://www.linkedin.com/posts/apollo-raines_apollorainessharonaq27b-rcodesecurity-activity-7498101564620996609-Sx7t
 - Publicación del autor en LinkedIn (benchmarks): https://www.linkedin.com/posts/apollo-raines_apollorainessharonaq27b-rcodesecurity-activity-7498031501402329088-02ym

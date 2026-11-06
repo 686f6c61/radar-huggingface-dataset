@@ -4,7 +4,7 @@
 
 El modelo `biflow_chess_60hz_stock` es una política de control robótico desarrollada por el usuario AnonymousMouse404 para el brazo manipulador SO-101, especializada en la tarea de mover piezas de ajedrez sobre un tablero físico. Utiliza BiFlow, un flujo normalizante bidireccional de un solo paso, que aprende simultáneamente el mapeo de datos a ruido y de ruido a datos, lo que permite una generación de acciones más rápida y flexible que los métodos autorregresivos convencionales. El modelo opera a una frecuencia de control de 60 Hz, con cámaras a 30 Hz, y se entrena sobre demostraciones humanas recogidas en un dataset propio.
 
-Con 45,7 millones de parámetros y un tamaño de repositorio de 0,4 GB, se trata de un modelo ligero, diseñado para ejecutarse en tiempo real en hardware de consumo. Su relevancia radica en explorar la aplicación de flujos normalizantes bidireccionales al control de robots, un área dominada por redes neuronales recurrentes o transformadores, y en ofrecer una implementación reproducible dentro del ecosistema LeRobot de HuggingFace. No es un modelo de lenguaje ni de visión general, sino una política específica para manipulación robótica.
+Con 45,7 millones de parámetros y un tamaño de repositorio de 0,4 GB, se trata de un modelo ligero, diseñado para ejecutarse en tiempo real en hardware de consumo. Su relevancia radica en explorar la aplicación de flujos normalizantes bidireccionales al control de robots, un área dominada por redes neuronales recurrentes o transformadores, y en ofrecer una implementación reproducible dentro del ecosistema LeRobot de Hugging Face. No es un modelo de lenguaje ni de visión general, sino una política específica para manipulación robótica.
 
 ## Especificaciones técnicas
 
@@ -30,7 +30,7 @@ El entrenamiento se realizó durante 50.000 pasos, divididos en 10.000 pasos de 
 - Generación de acciones de control para el brazo robótico SO-101 a 60 Hz, adecuado para tareas de pick and place de piezas de ajedrez.
 - Procesamiento de observaciones multimodales: imagen del tablero (128 píxeles), posición de la muñeca y estado del robot.
 - Inferencia de un solo paso gracias a la arquitectura BiFlow, lo que reduce la latencia frente a métodos iterativos.
-- Integración con el ecosistema LeRobot de HuggingFace, permitiendo cargar el modelo mediante `So101BiflowPolicy.from_pretrained(...)`.
+- Integración con el ecosistema LeRobot de Hugging Face, permitiendo cargar el modelo mediante `So101BiflowPolicy.from_pretrained(...)`.
 - No soporta generación de texto, tool calling, razonamiento simbólico ni capacidades multilingües, al ser un modelo puramente de control motor.
 
 ## Casos de uso
@@ -60,7 +60,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: el modelo no declara una licencia en su ficha de HuggingFace, lo que genera incertidumbre legal para uso comercial o redistribución. Se recomienda contactar al autor antes de utilizarlo en producción.
+- Licencia no especificada: el modelo no declara una licencia en su ficha de Hugging Face, lo que genera incertidumbre legal para uso comercial o redistribución. Se recomienda contactar al autor antes de utilizarlo en producción.
 - Datos de entrenamiento limitados: solo 357 episodios de demostración, lo que puede provocar sobreajuste a las condiciones específicas del dataset (tablero, cámara, brazo) y falta de generalización a otros entornos.
 - Específico para SO-101: la política está diseñada para un robot concreto; no es transferible directamente a otros manipuladores sin reentrenamiento.
 - Sin evaluación de robustez: no se han publicado pruebas de estabilidad ante perturbaciones, fallos de sensores o variaciones de iluminación.
@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonymousMouse404/biflow_chess_60hz_stock
+- Modelo en Hugging Face: https://huggingface.co/AnonymousMouse404/biflow_chess_60hz_stock
 - Dataset de entrenamiento: https://huggingface.co/datasets/AnonymousMouse404/chess
 - Artículo sobre BiFlow: https://arxiv.org/pdf/2512.10953

@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ram20307/qwen3vl-2b-hico-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Ram20307/qwen3vl-2b-hico-GGUF
 - Adaptador LoRA base: https://huggingface.co/Ram20307/qwen3vl-2b-hico-lora
 - Action Genome: no disponible en la informacion proporcionada
 - HICO-DET: no disponible en la informacion proporcionada

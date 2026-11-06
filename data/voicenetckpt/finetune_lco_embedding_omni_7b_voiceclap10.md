@@ -75,8 +75,8 @@ Estos valores corresponden al modelo base y a VoiceCLAP-Large segun el articulo 
 
 | Modelo | Parametros | Contexto | Rendimiento (EmoNet-Voice, zero-shot) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| finetune_LCO_Embedding_Omni_7B_voiceclap10 | ~7B (segun nombre) | No disponible | No publicado para este checkpoint | No disponible | HuggingFace (raw training run) |
-| LCO-Embedding-Omni-7B (base) | 7B | No disponible | 0,167 | No disponible en la informacion recogida | HuggingFace (LCO-Embedding) |
+| finetune_LCO_Embedding_Omni_7B_voiceclap10 | ~7B (segun nombre) | No disponible | No publicado para este checkpoint | No disponible | Hugging Face (raw training run) |
+| LCO-Embedding-Omni-7B (base) | 7B | No disponible | 0,167 | No disponible en la informacion recogida | Hugging Face (LCO-Embedding) |
 | VoiceCLAP-Large | No disponible | No disponible | 0,155 | No disponible | Citado en el articulo VoiceNet |
 | CLAPs de audio general | No disponible | No disponible | Cerca del azar | No disponible | No disponible |
 
@@ -97,7 +97,7 @@ Estos valores corresponden al modelo base y a VoiceCLAP-Large segun el articulo 
 - Repositorio del modelo: https://huggingface.co/VoiceNetCkpt/finetune_LCO_Embedding_Omni_7B_voiceclap10
 - Indice de ejecuciones VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Modelo base LCO-Embedding-Omni-7B: https://huggingface.co/LCO-Embedding/LCO-Embedding-Omni-7B
-- Organizacion LCO-Embedding en HuggingFace: https://huggingface.co/LCO-Embedding
+- Organizacion LCO-Embedding en Hugging Face: https://huggingface.co/LCO-Embedding
 - Repositorio GitHub LCO-Embedding: https://github.com/LCO-Embedding/LCO-Embedding
 - Articulo VoiceNet: Fine-Grained Voice Understanding Beyond Emotion at Scale: https://arxiv.org/pdf/2609.32016v1
 - Resumen del articulo VoiceNet en aimodels.fyi: https://www.aimodels.fyi/papers/arxiv/voicenet-fine-grained-voice-understanding-beyond-emotion

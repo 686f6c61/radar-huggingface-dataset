@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Resolución | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Darkslide Moebius CoreML | Difusión latente (Core ML) | 512 × 512 px | Imagen + máscara | Apache 2.0 | HuggingFace (Core ML) |
+| Darkslide Moebius CoreML | Difusión latente (Core ML) | 512 × 512 px | Imagen + máscara | Apache 2.0 | Hugging Face (Core ML) |
 | Moebius (hustvl) | Difusión latente | no disponible | Imagen + máscara | Apache 2.0 | Repositorio GitHub de hustvl |
-| SDXL VAE (Stability AI) | VAE | no disponible | Imagen / latente | MIT | HuggingFace |
+| SDXL VAE (Stability AI) | VAE | no disponible | Imagen / latente | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Takotak/darkslide-moebius-coreml
+- Hugging Face: https://huggingface.co/Takotak/darkslide-moebius-coreml
 - Moebius (código y pesos originales): https://github.com/hustvl/Moebius
 - SDXL VAE: https://huggingface.co/stabilityai/sdxl-vae
 - Darkslide: https://darkslide.aaperture.com

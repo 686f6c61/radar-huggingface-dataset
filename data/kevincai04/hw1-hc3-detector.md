@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo kevincai04/hw1-hc3-detector es un clasificador de texto basado en la familia BERT, publicado en HuggingFace por el usuario kevincai04 como entrega de la tarea 1 de un curso sobre Sentence Transformers aplicados a la detección de texto generado por IA. El repositorio contiene un único checkpoint en formato safetensors con 22.713.986 parámetros y un tamano total de 0,1 GB, lo que lo situa en la gama de los clasificadores ligeros que pueden ejecutarse en CPU o en cualquier GPU de consumo.
+El modelo kevincai04/hw1-hc3-detector es un clasificador de texto basado en la familia BERT, publicado en Hugging Face por el usuario kevincai04 como entrega de la tarea 1 de un curso sobre Sentence Transformers aplicados a la detección de texto generado por IA. El repositorio contiene un único checkpoint en formato safetensors con 22.713.986 parámetros y un tamano total de 0,1 GB, lo que lo situa en la gama de los clasificadores ligeros que pueden ejecutarse en CPU o en cualquier GPU de consumo.
 
 La tarea que resuelve es la clasificación binaria (o multiclase, no se especifica) de fragmentos de texto para determinar si han sido escritos por un humano o generados por un modelo de lenguaje. Según la model card, el autor reporta una exactitud de referencia (baseline) de 0,8449 y una exactitud de test tras el ajuste fino de 0,9899, aunque no se detalla la composición del conjunto de datos ni el procedimiento de evaluación.
 
@@ -40,7 +40,7 @@ En cuanto a los datos de entrenamiento, el README no describe el corpus, el núm
 - Generación de embeddings de frase: la model card menciona Sentence Transformers, por lo que el encoder subyacente puede producir representaciones vectoriales reutilizables para similitud semántica o búsqueda.
 - Integración con pipelines de transformers: puede cargarse con `AutoModelForSequenceClassification` o `AutoTokenizer` de la librería transformers.
 - Compatibilidad con text-embeddings-inference: la etiqueta `text-embeddings-inference` indica soporte para servir el modelo con ese motor.
-- Compatibilidad con endpoints gestionados: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints gestionados: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en Hugging Face Inference Endpoints.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible (es un clasificador, no un modelo generativo).
 - Capacidades multilingües: no disponible; el autor no declara idiomas.
@@ -80,18 +80,18 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 - VRAM estimada en int8: aproximadamente 23 MB para los pesos, si se aplica cuantización dinámica con PyTorch o bitsandbytes.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de memoria, incluidas GTX 1050, GTX 1650, RTX 3050, RTX 4060 y superiores. También es viable en CPU.
 - Cabe en GPU de consumo: sí, en todas las GPU de consumo actuales e incluso en iGPU con memoria compartida suficiente.
-- Opciones de despliegue: transformers con PyTorch, text-embeddings-inference, HuggingFace Inference Endpoints, ONNX Runtime, y conversión propia a GGUF/llama.cpp mediante herramientas externas (no verificada por el autor).
+- Opciones de despliegue: transformers con PyTorch, text-embeddings-inference, Hugging Face Inference Endpoints, ONNX Runtime, y conversión propia a GGUF/llama.cpp mediante herramientas externas (no verificada por el autor).
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de latencia ni de tokens por segundo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento reportado | Disponibilidad |
 |---|---|---|---|---|---|
-| kevincai04/hw1-hc3-detector | 22.713.986 | no disponible | no disponible | 0,9899 exactitud de test (dataset no descrito) | HuggingFace, 3 descargas |
-| aisaro/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| hw1-hc3-detector (Yihangsun) | no disponible | no disponible | no disponible | no disponible | HuggingFace / savrn.com |
-| hongjip/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | HuggingFace / free2aitools.com |
-| AIGC_detector_zhv2 (abdullahwaheed2804) | no disponible | no disponible | no disponible | comparable a detectores chinos cerrados según el repositorio | GitHub y HuggingFace |
+| kevincai04/hw1-hc3-detector | 22.713.986 | no disponible | no disponible | 0,9899 exactitud de test (dataset no descrito) | Hugging Face, 3 descargas |
+| aisaro/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| hw1-hc3-detector (Yihangsun) | no disponible | no disponible | no disponible | no disponible | Hugging Face / savrn.com |
+| hongjip/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | Hugging Face / free2aitools.com |
+| AIGC_detector_zhv2 (abdullahwaheed2804) | no disponible | no disponible | no disponible | comparable a detectores chinos cerrados según el repositorio | GitHub y Hugging Face |
 
 Los tres primeros modelos comparables parecen variantes del mismo ejercicio académico publicadas por distintos alumnos, con el mismo nombre de repositorio y sin documentación sustancial. No se dispone de datos suficientes para comparar arquitectura, contexto o licencia con alternativas comerciales como GPTZero, Originality.ai o el clasificador de OpenAI, cuyos pesos no son abiertos.
 
@@ -110,7 +110,7 @@ Los tres primeros modelos comparables parecen variantes del mismo ejercicio acad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kevincai04/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/kevincai04/hw1-hc3-detector
 - Variante con el mismo nombre de aisaro: https://huggingface.co/aisaro/hw1-hc3-detector
 - Ficha de hw1-hc3-detector en savrn.com: https://savrn.com/models/hw1-hc3-detector
 - Repositorio AI-detection de abdullahwaheed2804 en GitHub: https://github.com/abdullahwaheed2804/AI-detection

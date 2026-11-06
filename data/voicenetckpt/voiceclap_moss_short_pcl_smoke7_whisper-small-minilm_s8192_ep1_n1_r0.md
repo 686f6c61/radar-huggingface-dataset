@@ -74,7 +74,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| voiceclap_moss_short_pcl_smoke7_whisper-small-MiniLM (este) | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
+| voiceclap_moss_short_pcl_smoke7_whisper-small-MiniLM (este) | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
 | Otros modelos comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -91,6 +91,6 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/voiceclap_moss_short_pcl_smoke7_whisper-small-MiniLM_s8192_ep1_n1_r0
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/voiceclap_moss_short_pcl_smoke7_whisper-small-MiniLM_s8192_ep1_n1_r0
 - Indice de ejecuciones de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada

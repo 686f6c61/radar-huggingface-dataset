@@ -4,7 +4,7 @@
 
 El repositorio `marktorres/embodied-ai-reading` no contiene un modelo de inteligencia artificial entrenado, sino un conjunto de notas de investigación exploratorias sobre el campo de la IA corpórea (Embodied AI). Publicado por Mark Torres bajo licencia CC-BY-4.0, el repositorio documenta el alcance de una pregunta de investigación, los posibles factores de confusión, una propuesta de comparación con líneas base y los requisitos de reproducibilidad antes de que se reporte cualquier resultado de benchmark. El artefacto principal es un archivo `summary.md` que recoge estas reflexiones.
 
-A pesar de que el repositorio está etiquetado como "transformer" y "safetensors" en HuggingFace, el tamaño total de los parámetros es de 33.088 (probablemente el número de bytes de los archivos de texto) y el tamaño del repositorio es de 0.0 GB, lo que confirma que no se trata de un modelo de aprendizaje automático. La model card del autor es explícita al afirmar que no se reclaman mejoras de benchmark, ablaciones completadas, código liberado ni un checkpoint entrenado. Por tanto, esta ficha documenta un recurso de documentación técnica, no un modelo de IA.
+A pesar de que el repositorio está etiquetado como "transformer" y "safetensors" en Hugging Face, el tamaño total de los parámetros es de 33.088 (probablemente el número de bytes de los archivos de texto) y el tamaño del repositorio es de 0.0 GB, lo que confirma que no se trata de un modelo de aprendizaje automático. La model card del autor es explícita al afirmar que no se reclaman mejoras de benchmark, ablaciones completadas, código liberado ni un checkpoint entrenado. Por tanto, esta ficha documenta un recurso de documentación técnica, no un modelo de IA.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ A pesar de que el repositorio está etiquetado como "transformer" y "safetensors
 
 ## Arquitectura y entrenamiento
 
-No aplica. El repositorio no contiene un modelo entrenado ni una arquitectura de red neuronal. Los archivos son notas de investigación en formato Markdown que describen un plan de estudio sobre IA corpórea, incluyendo referencias a benchmarks públicos y consideraciones metodológicas. No hay datos de entrenamiento, ni proceso de optimización, ni pesos. La etiqueta "transformer" y "safetensors" en HuggingFace parece ser un error de clasificación o una convención del autor, pero no corresponde a ningún artefacto real de aprendizaje automático.
+No aplica. El repositorio no contiene un modelo entrenado ni una arquitectura de red neuronal. Los archivos son notas de investigación en formato Markdown que describen un plan de estudio sobre IA corpórea, incluyendo referencias a benchmarks públicos y consideraciones metodológicas. No hay datos de entrenamiento, ni proceso de optimización, ni pesos. La etiqueta "transformer" y "safetensors" en Hugging Face parece ser un error de clasificación o una convención del autor, pero no corresponde a ningún artefacto real de aprendizaje automático.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No disponible. No existe una categoría de modelos comparable porque este repositorio no es un modelo de IA. Los únicos repositorios similares serían otras notas de investigación en HuggingFace, pero no hay datos suficientes para establecer una comparación técnica.
+No disponible. No existe una categoría de modelos comparable porque este repositorio no es un modelo de IA. Los únicos repositorios similares serían otras notas de investigación en Hugging Face, pero no hay datos suficientes para establecer una comparación técnica.
 
 ## Limitaciones y advertencias
 
@@ -59,11 +59,11 @@ No disponible. No existe una categoría de modelos comparable porque este reposi
 - El contenido es exploratorio y no ha sido validado experimentalmente; las secciones marcadas como planes o hipótesis no deben interpretarse como resultados.
 - La licencia CC-BY-4.0 permite uso comercial y modificaciones, pero exige atribución y no garantiza la exactitud del contenido.
 - El repositorio no incluye código, datasets ni checkpoints, por lo que no es directamente reproducible sin fuentes externas.
-- La etiqueta "safetensors" en HuggingFace es engañosa; no hay archivos de pesos en el repositorio.
+- La etiqueta "safetensors" en Hugging Face es engañosa; no hay archivos de pesos en el repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/marktorres/embodied-ai-reading
+- Repositorio en Hugging Face: https://huggingface.co/marktorres/embodied-ai-reading
 - Perfil del autor: https://huggingface.co/marktorres
 - Repositorio relacionado (paper_021308813_embodied_ai): https://huggingface.co/marktorres/paper_021308813_embodied_ai
 - Proyecto similar de otro autor (estelledc/embodied-ai-reading-station): https://github.com/estelledc/embodied-ai-reading-station

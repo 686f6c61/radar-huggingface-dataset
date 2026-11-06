@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SigLIP 2 Base (patch16-512) es un codificador visión-lenguaje desarrollado por Google que amplía el objetivo de preentrenamiento de SigLIP incorporando de forma unificada técnicas previas como la pérdida de decodificador, la predicción global-local y enmascarada, y la adaptabilidad de resolución y relación de aspecto. Este checkpoint concreto corresponde a la variante Base con parches de 16x16 píxeles y resolución de entrada de 512x512, publicada en el repositorio de HuggingFace bajo el identificador `dgkhh/siglip2-base-patch16-512`.
+SigLIP 2 Base (patch16-512) es un codificador visión-lenguaje desarrollado por Google que amplía el objetivo de preentrenamiento de SigLIP incorporando de forma unificada técnicas previas como la pérdida de decodificador, la predicción global-local y enmascarada, y la adaptabilidad de resolución y relación de aspecto. Este checkpoint concreto corresponde a la variante Base con parches de 16x16 píxeles y resolución de entrada de 512x512, publicada en el repositorio de Hugging Face bajo el identificador `dgkhh/siglip2-base-patch16-512`.
 
 El modelo resuelve tareas de alineación imagen-texto: clasificación de imágenes zero-shot, recuperación (retrieval) imagen-texto y serve como codificador visual para modelos visión-lenguaje (VLM). Su relevancia actual radica en que SigLIP 2 mejora la comprensión semántica, la localización y la calidad de las características densas respecto a SigLIP original, manteniendo un tamaño contenido (375,8 M de parámetros) que lo hace desplegable en hardware moderado.
 
@@ -63,9 +63,9 @@ La model card remite a la tabla de evaluación del paper de SigLIP 2 (imagen `ev
 
 | Modelo | Parametros | Resolucion / patch | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SigLIP 2 Base patch16-512 (este) | 375,8 M | 512 / 16 | no aplica | Apache 2.0 | HuggingFace |
-| SigLIP original Base patch16-384 | no disponible en la informacion | 384 / 16 | no aplica | Apache 2.0 | HuggingFace |
-| CLIP ViT-B/32 | no disponible en la informacion | 224 / 32 | no aplica | MIT (segun variante) | HuggingFace |
+| SigLIP 2 Base patch16-512 (este) | 375,8 M | 512 / 16 | no aplica | Apache 2.0 | Hugging Face |
+| SigLIP original Base patch16-384 | no disponible en la informacion | 384 / 16 | no aplica | Apache 2.0 | Hugging Face |
+| CLIP ViT-B/32 | no disponible en la informacion | 224 / 32 | no aplica | MIT (segun variante) | Hugging Face |
 
 No se dispone de datos de rendimiento cuantitativos en la información proporcionada para establecer una comparación numérica fiable con estas alternativas.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento cuantitativos en la información proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dgkhh/siglip2-base-patch16-512
+- Modelo en Hugging Face: https://huggingface.co/dgkhh/siglip2-base-patch16-512
 - Paper SigLIP 2: https://arxiv.org/abs/2502.14786
 - Paper SigLIP: https://arxiv.org/abs/2303.15343
 - Paper WebLI: https://arxiv.org/abs/2209.06794

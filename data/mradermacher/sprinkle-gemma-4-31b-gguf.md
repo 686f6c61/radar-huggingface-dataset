@@ -31,7 +31,7 @@ Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composic
 
 - Generacion de texto conversacional: el repositorio esta etiquetado como `conversational`, por lo que el modelo esta orientado a dialogos multi-turno.
 - Procesamiento de imagenes: la presencia de los ficheros `mmproj-Q8_0` y `mmproj-f16` indica soporte multimodal de vision en el modelo base, siempre que se cargue el proyector junto al modelo en un runtime compatible.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse a traves de APIs compatibles con el formato estandar de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse a traves de APIs compatibles con el formato estandar de Hugging Face.
 - Capacidades de razonamiento, codigo, matematicas o tool calling: no disponibles en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: unicamente se declara ingles; no hay datos sobre otros idiomas.
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sprinkle-Gemma-4-31B-GGUF | 30,7B | no disponible | no disponible | no disponible | HuggingFace (mradermacher) |
-| Sprinkle-Gemma-4-31B (base) | 30,7B | no disponible | no disponible | no disponible | HuggingFace (p-e-r-e-g-r-i-n-e) |
+| Sprinkle-Gemma-4-31B-GGUF | 30,7B | no disponible | no disponible | no disponible | Hugging Face (mradermacher) |
+| Sprinkle-Gemma-4-31B (base) | 30,7B | no disponible | no disponible | no disponible | Hugging Face (p-e-r-e-g-r-i-n-e) |
 | Gemma 4 26B | no disponible | no disponible | no disponible | no disponible | mencionado en discusiones de la comunidad |
 | Qwen3.5 27B | no disponible | no disponible | no disponible | no disponible | mencionado en discusiones de la comunidad |
 
@@ -87,7 +87,7 @@ No se dispone de datos verificables de parametros, contexto, licencia ni resulta
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Sprinkle-Gemma-4-31B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Sprinkle-Gemma-4-31B-GGUF
 - Modelo base: https://huggingface.co/p-e-r-e-g-r-i-n-e/Sprinkle-Gemma-4-31B
 - Pagina de resumen del cuantizador para este modelo: https://hf.tst.eu/model#Sprinkle-Gemma-4-31B-GGUF
 - README de referencia de TheBloke sobre uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

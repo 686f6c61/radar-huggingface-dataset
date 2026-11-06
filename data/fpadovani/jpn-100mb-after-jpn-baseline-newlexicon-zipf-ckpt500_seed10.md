@@ -64,7 +64,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/jpn-100mb-after-jpn-baseline-newlexicon-zipf-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/jpn-100mb-after-jpn-baseline-newlexicon-zipf-ckpt500_seed10
 - Modelo base: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-jpn-baseline-100mb_seed10
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/1nbad5yy
 - Repositorio de TRL (librería de entrenamiento): https://github.com/huggingface/trl

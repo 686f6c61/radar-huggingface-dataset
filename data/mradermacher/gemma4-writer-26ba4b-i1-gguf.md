@@ -76,9 +76,9 @@ No se dispone de datos de benchmarks ni de comparativas publicadas con modelos a
 
 | Variante | Parametros | Formato | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Gemma4-Writer-26BA4B-i1-GGUF | 25,2 B | GGUF i1/imatrix | 8,4-22,7 GB por cuantizacion | no disponible | Publico en HuggingFace, 2.020 descargas |
-| mradermacher/Gemma4-Writer-26BA4B-GGUF | 25,2 B | GGUF estatico | no disponible en esta busqueda | no disponible | Publico en HuggingFace |
-| ConicCat/Gemma4-Writer-26BA4B | 25,2 B | safetensors | no disponible | no disponible | Publico en HuggingFace |
+| mradermacher/Gemma4-Writer-26BA4B-i1-GGUF | 25,2 B | GGUF i1/imatrix | 8,4-22,7 GB por cuantizacion | no disponible | Publico en Hugging Face, 2.020 descargas |
+| mradermacher/Gemma4-Writer-26BA4B-GGUF | 25,2 B | GGUF estatico | no disponible en esta busqueda | no disponible | Publico en Hugging Face |
+| ConicCat/Gemma4-Writer-26BA4B | 25,2 B | safetensors | no disponible | no disponible | Publico en Hugging Face |
 | Alternativas de otros autores | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

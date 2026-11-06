@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Boltz-1 (oteam/boltz1) | 592,16 M | Estructura biomolecular (CIF); 200 pasos de muestreo | AGPL-3.0-or-later | Pesos en HuggingFace, código en OFoldX |
+| Boltz-1 (oteam/boltz1) | 592,16 M | Estructura biomolecular (CIF); 200 pasos de muestreo | AGPL-3.0-or-later | Pesos en Hugging Face, código en OFoldX |
 | Boltz-1 oficial (jwohlwend/boltz) | no disponible en la información | Estructura biomolecular | no disponible en la información | Repositorio oficial en GitHub |
 | AlphaFold3 | no disponible en la información | Estructura biomolecular | no disponible en la información | no disponible en la información |
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/boltz1
+- Hugging Face: https://huggingface.co/oteam/boltz1
 - Paper (Boltz-1): https://doi.org/10.1101/2024.11.19.624167
 - Repositorio oficial de Boltz-1: https://github.com/jwohlwend/boltz
 - Código de la implementación en OFoldX: https://github.com/OTeam-AI4S/OFoldX/tree/main/ofoldx/models/boltz1

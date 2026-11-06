@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QuantumLLM es un modelo publicado en HuggingFace por el usuario dusersad12 bajo el identificador `dusersad12/QuantumLLM-ReleaseRepo`. Segun las etiquetas del repositorio, se distribuye como modelo de transformers sobre PyTorch con arquitectura declarada gpt2 y pipeline de `feature-extraction`, bajo licencia Apache 2.0. La model card describe un supuesto salto de version orientado al razonamiento, con mejoras en matematicas, programacion y logica, y afirma un descenso de la tasa de alucinacion y mejor soporte de function calling.
+QuantumLLM es un modelo publicado en Hugging Face por el usuario dusersad12 bajo el identificador `dusersad12/QuantumLLM-ReleaseRepo`. Segun las etiquetas del repositorio, se distribuye como modelo de transformers sobre PyTorch con arquitectura declarada gpt2 y pipeline de `feature-extraction`, bajo licencia Apache 2.0. La model card describe un supuesto salto de version orientado al razonamiento, con mejoras en matematicas, programacion y logica, y afirma un descenso de la tasa de alucinacion y mejor soporte de function calling.
 
 La informacion objetiva del repositorio es, sin embargo, muy limitada: el tamano del repositorio es de 0.0 GB, no registra descargas ni likes, no declara idiomas soportados y no incluye datos de arquitectura, numero de parametros, longitud de contexto ni formatos de pesos. La model card menciona un modelo derivado llamado QuantumLLM-Small que compartiria tokenizer con el principal, pero no aporta especificaciones tecnicas verificables.
 
@@ -87,7 +87,7 @@ El unico dato concreto adicional es la afirmacion de que la precision en MATH-50
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| QuantumLLM | no disponible | no disponible | apache-2.0 | Repositorio HuggingFace de 0.0 GB, sin pesos confirmados |
+| QuantumLLM | no disponible | no disponible | apache-2.0 | Repositorio Hugging Face de 0.0 GB, sin pesos confirmados |
 | AlphaNet | no disponible | no disponible | no disponible | Solo mencionado en la tabla de la model card |
 | BetaNet | no disponible | no disponible | no disponible | Solo mencionado en la tabla de la model card |
 | AlphaNet-v2 | no disponible | no disponible | no disponible | Solo mencionado en la tabla de la model card |
@@ -107,7 +107,7 @@ No es posible establecer una comparativa tecnica rigurosa: los modelos de refere
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dusersad12/QuantumLLM-ReleaseRepo
+- Modelo en Hugging Face: https://huggingface.co/dusersad12/QuantumLLM-ReleaseRepo
 - Repositorio relacionado del mismo autor (LuminaLM): https://huggingface.co/dusersad12/LuminaLM-ReleaseRepo
 - Repositorio relacionado del mismo autor (NimbusLM): https://huggingface.co/dusersad12/NimbusLM-ReleaseRepo
 - Proyecto QUANTUM_LLM (hibrido cuantico-clasico, no relacionado directamente): https://github.com/ketayon/QUANTUM_LLM

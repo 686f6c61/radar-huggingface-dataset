@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mphd1/gpt2xl-3e` es un modelo de lenguaje de tipo decoder-only basado en GPT-2 XL, publicado por el usuario `mphd1` en HuggingFace. Se trata de un fine-tuning de la arquitectura original de OpenAI, entrenado durante 5 épocas sobre un dataset no especificado en la model card. El modelo está pensado para generación de texto y su principal valor es la adaptación de la capacidad de GPT-2 XL a un dominio concreto, aunque la información pública no detalla cuál es ese dominio.
+`mphd1/gpt2xl-3e` es un modelo de lenguaje de tipo decoder-only basado en GPT-2 XL, publicado por el usuario `mphd1` en Hugging Face. Se trata de un fine-tuning de la arquitectura original de OpenAI, entrenado durante 5 épocas sobre un dataset no especificado en la model card. El modelo está pensado para generación de texto y su principal valor es la adaptación de la capacidad de GPT-2 XL a un dominio concreto, aunque la información pública no detalla cuál es ese dominio.
 
 El modelo tiene 1.557.611.200 parámetros, un tamaño de repositorio de 6,2 GB y se distribuye en formato `safetensors`. Su licencia es MIT, lo que permite uso comercial y modificación sin restricciones significativas. Al ser un fine-tune de un modelo de 2019, hereda las limitaciones de contexto (1024 tokens) y las capacidades generales de GPT-2, aunque el proceso de ajuste puede haber alterado su comportamiento en aspectos específicos que no se documentan en la model card.
 
@@ -25,7 +25,7 @@ A día de hoy, el modelo no presenta descargas ni likes, y su model card está g
 
 La arquitectura es la de GPT-2 XL, un transformer decoder-only con 48 capas, 1552 dimensiones ocultas, 8 cabezas de atencion y una dimension de feed-forward de 6176. El modelo fue fine-tuneado a partir de los pesos de `openai-community/gpt2-xl`. El entrenamiento se realizo con un learning rate de 3e-05, batch size de 8, optimizador PAGED_ADAMW_8BIT y scheduler de learning rate coseno durante 5 epocas. El dataset de entrenamiento no se especifica en la model card, lo que limita la reproducibilidad.
 
-La perdida de entrenamiento descendio de 2.1930 (epoca 1) a 0.2844 (epoca 5), mientras que la perdida de validacion aumento progresivamente de 2.1558 a 2.8522, indicando un claro sobreajuste al dataset de entrenamiento. No se aplicaron tecnicas de RLHF, DPO ni ninguna otra alineacion posterior. El modelo se genero con el Trainer de HuggingFace, por lo que la configuracion exacta de los hiperparametros adicionales (dropout, warmup, etc.) no se documenta.
+La perdida de entrenamiento descendio de 2.1930 (epoca 1) a 0.2844 (epoca 5), mientras que la perdida de validacion aumento progresivamente de 2.1558 a 2.8522, indicando un claro sobreajuste al dataset de entrenamiento. No se aplicaron tecnicas de RLHF, DPO ni ninguna otra alineacion posterior. El modelo se genero con el Trainer de Hugging Face, por lo que la configuracion exacta de los hiperparametros adicionales (dropout, warmup, etc.) no se documenta.
 
 ## Capacidades
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `mphd1/gpt2xl-3e` | 1.6B | 1024 | MIT | HuggingFace |
-| `openai-community/gpt2-xl` | 1.6B | 1024 | MIT | HuggingFace |
-| `gpt2-large` | 774M | 1024 | MIT | HuggingFace |
-| `facebook/opt-1.3b` | 1.3B | 2048 | MIT | HuggingFace |
+| `mphd1/gpt2xl-3e` | 1.6B | 1024 | MIT | Hugging Face |
+| `openai-community/gpt2-xl` | 1.6B | 1024 | MIT | Hugging Face |
+| `gpt2-large` | 774M | 1024 | MIT | Hugging Face |
+| `facebook/opt-1.3b` | 1.3B | 2048 | MIT | Hugging Face |
 
 El modelo no presenta mejoras sobre el GPT-2 base, y su entrenamiento parece inducir sobreajuste. No se puede comparar con modelos mas modernos como Llama 2 o Mistral, ya que no se han evaluado sus capacidades.
 
@@ -80,5 +80,5 @@ El modelo no presenta mejoras sobre el GPT-2 base, y su entrenamiento parece ind
 
 ## Enlaces
 
-- [HuggingFace - mphd1/gpt2xl-3e](https://huggingface.co/mphd1/gpt2xl-3e)
+- [Hugging Face - mphd1/gpt2xl-3e](https://huggingface.co/mphd1/gpt2xl-3e)
 - [Modelo base: openai-community/gpt2-xl](https://huggingface.co/openai-community/gpt2-xl)

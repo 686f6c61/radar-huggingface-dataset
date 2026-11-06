@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3-4b-mamba3-hybrid-stage2b-kd-bias1 es un modelo de lenguaje de 4.741.428.416 parámetros publicado por el usuario arianraje en HuggingFace. Se trata de una conversión experimental del transformer Qwen3-4B a una arquitectura híbrida: 27 de sus 36 capas sustituyen la atención completa por un mixer Mamba-3 MIMO (modelo de espacio de estados), mientras que cada cuarta capa (índices 3, 7, 11 ... 35, el patrón denominado `u4`) conserva la atención completa original de Qwen3 de forma literal y bit a bit. Los 27 mixers suman 1.426.756.032 parámetros, el 30,1 % del total, con geometría de 32 cabezas, `head_dim` 128, 8 grupos B/C, `d_state` 128 y rango MIMO 4.
+qwen3-4b-mamba3-hybrid-stage2b-kd-bias1 es un modelo de lenguaje de 4.741.428.416 parámetros publicado por el usuario arianraje en Hugging Face. Se trata de una conversión experimental del transformer Qwen3-4B a una arquitectura híbrida: 27 de sus 36 capas sustituyen la atención completa por un mixer Mamba-3 MIMO (modelo de espacio de estados), mientras que cada cuarta capa (índices 3, 7, 11 ... 35, el patrón denominado `u4`) conserva la atención completa original de Qwen3 de forma literal y bit a bit. Los 27 mixers suman 1.426.756.032 parámetros, el 30,1 % del total, con geometría de 32 cabezas, `head_dim` 128, 8 grupos B/C, `d_state` 128 y rango MIMO 4.
 
 El modelo no se ha preentrenado desde cero: la capacidad se recupera mediante destilación por etapas usando el propio Qwen3-4B como profesor, con alineamiento de estados ocultos por capa, destilación forward-KL a 4.096 tokens y una fase final de contexto largo a 32.768 tokens. Esta ficha corresponde al punto final de la etapa 2b del brazo «bias 1», con un KL de validación de 0,1957 y un acuerdo top-1 de 0,8089 frente al profesor.
 
@@ -106,7 +106,7 @@ Los brazos GDN y Mamba2 pertenecen al mismo estudio y comparten profesor, datos,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arianraje/qwen3-4b-mamba3-hybrid-stage2b-kd-bias1
+- Repositorio en Hugging Face: https://huggingface.co/arianraje/qwen3-4b-mamba3-hybrid-stage2b-kd-bias1
 - Modelo base y profesor de destilación: https://huggingface.co/Qwen/Qwen3-4B
 - Kernel de Mamba-3 MIMO (state-spaces/mamba, commit `e9594ce`): https://github.com/state-spaces/mamba
 - Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces obtenidos correspondían a consultas no relacionadas y se han descartado. No se han encontrado por esa vía papers, blogs ni demos adicionales.

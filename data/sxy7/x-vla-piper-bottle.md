@@ -2,7 +2,7 @@
 
 ## Resumen
 
-X-VLA Piper-bottle es un checkpoint de ajuste fino completo (full-parameter fine-tuning) del modelo base X-VLA-Pt, desarrollado por el usuario SXY7 y publicado en HuggingFace. Se trata de un modelo de vision-lenguaje-accion (VLA) orientado a robótica, concretamente a la manipulación de una tarea de agarre de botella con el robot Piper. El modelo parte de la arquitectura X-VLA, un transformer multimodal que combina observaciones visuales y propiocepción para predecir acciones motoras de siete dimensiones.
+X-VLA Piper-bottle es un checkpoint de ajuste fino completo (full-parameter fine-tuning) del modelo base X-VLA-Pt, desarrollado por el usuario SXY7 y publicado en Hugging Face. Se trata de un modelo de vision-lenguaje-accion (VLA) orientado a robótica, concretamente a la manipulación de una tarea de agarre de botella con el robot Piper. El modelo parte de la arquitectura X-VLA, un transformer multimodal que combina observaciones visuales y propiocepción para predecir acciones motoras de siete dimensiones.
 
 El repositorio contiene 15 checkpoints completos, desde el paso 10.000 hasta el 150.000, cada uno de aproximadamente 10,56 GB. Cada checkpoint incluye los pesos en `model.safetensors`, las configuraciones de modelo, procesador y tokenizador, un manifiesto `piper_manifest.json` con estadísticas de normalización y metadatos del dataset, y un `training_state.pt` con el estado del optimizador AdamW, el paso, el estado RNG y los argumentos de entrenamiento.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| X-VLA Piper-bottle (este) | no disponible (~10,56 GB en safetensors) | no disponible | Agarre de botella con robot Piper | no disponible | HuggingFace, 15 checkpoints |
-| X-VLA-Pt (modelo base) | no disponible | no disponible | VLA preentrenado general | no disponible | HuggingFace (`2toINF/X-VLA-Pt`) |
+| X-VLA Piper-bottle (este) | no disponible (~10,56 GB en safetensors) | no disponible | Agarre de botella con robot Piper | no disponible | Hugging Face, 15 checkpoints |
+| X-VLA-Pt (modelo base) | no disponible | no disponible | VLA preentrenado general | no disponible | Hugging Face (`2toINF/X-VLA-Pt`) |
 | Otros VLA roboticos (p. ej. OpenVLA, RT-2) | no disponible en esta informacion | no disponible | Manipulacion robotica general | no disponible | No disponible en esta informacion |
 
 No se dispone de datos suficientes para una comparativa cuantitativa con alternativas de la misma categoria.
@@ -85,7 +85,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SXY7/X-VLA-Piper-bottle
+- Hugging Face: https://huggingface.co/SXY7/X-VLA-Piper-bottle
 - Modelo base: https://huggingface.co/2toINF/X-VLA-Pt
 - Repositorio X-VLA (commit referenciado): `6c4ecfb8be458ae7c0c96094e4b0add4174f4fe2` (no se proporciona URL directa en la informacion disponible)
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion proporcionada.

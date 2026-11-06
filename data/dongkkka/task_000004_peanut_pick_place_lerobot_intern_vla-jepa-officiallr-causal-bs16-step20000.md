@@ -2,11 +2,11 @@
 
 ## Resumen
 
-VLA-JEPA Official-LR Causal - Task 000004 - Step 20.000 es un checkpoint de inferencia de un modelo de vision-lenguaje-accion (VLA) publicado por el usuario Dongkkka en HuggingFace. Se trata de una politica robotica entrenada especificamente para una tarea de recogida y colocacion de cacahuetes (peanut pick-and-place), identificada como Task 000004, dentro del ecosistema LeRobot 0.6.1. El modelo combina un backbone Qwen con un cabezal de acciones y un world model con contexto causal, siguiendo el paradigma VLA-JEPA (Vision-Language-Action con arquitectura de prediccion en espacio latente tipo JEPA).
+VLA-JEPA Official-LR Causal - Task 000004 - Step 20.000 es un checkpoint de inferencia de un modelo de vision-lenguaje-accion (VLA) publicado por el usuario Dongkkka en Hugging Face. Se trata de una politica robotica entrenada especificamente para una tarea de recogida y colocacion de cacahuetes (peanut pick-and-place), identificada como Task 000004, dentro del ecosistema LeRobot 0.6.1. El modelo combina un backbone Qwen con un cabezal de acciones y un world model con contexto causal, siguiendo el paradigma VLA-JEPA (Vision-Language-Action con arquitectura de prediccion en espacio latente tipo JEPA).
 
 El checkpoint corresponde al paso 20.000 de entrenamiento y fue entrenado con 29 episodios de demostracion, con batch size 16 y dimensiones de estado y accion de 22 elementos cada una. La entrada sensorial incluye tres camaras (cabeza, muneca izquierda y muneca derecha) y el modelo predice chunks de 7 acciones, ejecutando las 7. El backbone Qwen se entrena de forma completa (freeze_qwen=false), junto con el cabezal de acciones y el predictor del world model.
 
-Es relevante ahora por dos motivos: primero, porque publica un checkpoint reproducible sobre LeRobot, la libreria de referencia de HuggingFace para robotica, lo que facilita su uso dentro de ese ecosistema; segundo, porque incorpora un world model con contexto causal, una linea de investigacion activa que busca mejorar la generalizacion de las politicas roboticas mediante prediccion en espacio latente. Ahora bien, conviene ser prudente: el repositorio tiene 0 descargas y 0 likes, no declara licencia ni idiomas, y no aporta resultados de benchmarks, por lo que su utilidad practica esta acotada, de momento, a la reproduccion de experimentos y al fine-tuning.
+Es relevante ahora por dos motivos: primero, porque publica un checkpoint reproducible sobre LeRobot, la libreria de referencia de Hugging Face para robotica, lo que facilita su uso dentro de ese ecosistema; segundo, porque incorpora un world model con contexto causal, una linea de investigacion activa que busca mejorar la generalizacion de las politicas roboticas mediante prediccion en espacio latente. Ahora bien, conviene ser prudente: el repositorio tiene 0 descargas y 0 likes, no declara licencia ni idiomas, y no aporta resultados de benchmarks, por lo que su utilidad practica esta acotada, de momento, a la reproduccion de experimentos y al fine-tuning.
 
 ## Especificaciones tecnicas
 
@@ -82,10 +82,10 @@ Los datos de los modelos de comparacion proceden de sus fichas y documentacion p
 
 | Modelo | Parametros | Backbone / enfoque | Chunking de acciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VLA-JEPA Task 000004 (este) | 2,77B | Qwen + world model JEPA con contexto causal | 7 acciones | no disponible | HuggingFace, requiere LeRobot 0.6.1 |
-| OpenVLA | 7B | Llama-2 7B + DINOv2 + SigLIP, VLA autorregresiva | No (accion discreta paso a paso) | Llama 2 Community License (pesos) | HuggingFace y codigo abierto |
+| VLA-JEPA Task 000004 (este) | 2,77B | Qwen + world model JEPA con contexto causal | 7 acciones | no disponible | Hugging Face, requiere LeRobot 0.6.1 |
+| OpenVLA | 7B | Llama-2 7B + DINOv2 + SigLIP, VLA autorregresiva | No (accion discreta paso a paso) | Llama 2 Community License (pesos) | Hugging Face y codigo abierto |
 | pi0 (Physical Intelligence) | ~3,3B | PaliGemma + action expert con flow matching | Si | Apache 2.0 (repositorio openpi) | Repositorio openpi |
-| GR00T N1 (NVIDIA) | ~2,2B | Eagle-2 + transformer de difusion | Si | NVIDIA Open Model License | HuggingFace y codigo abierto |
+| GR00T N1 (NVIDIA) | ~2,2B | Eagle-2 + transformer de difusion | Si | NVIDIA Open Model License | Hugging Face y codigo abierto |
 
 Diferencias clave: este checkpoint esta entrenado para una unica tarea con 29 episodios, mientras que OpenVLA, pi0 y GR00T N1 son modelos generalistas entrenados sobre grandes agregaciones de datasets roboticos. En consecuencia, la comparacion de parametros no es directamente informativa: el interes de este modelo esta en la combinacion de world model con contexto causal y en su integracion con LeRobot, no en su cobertura de tareas.
 
@@ -105,6 +105,6 @@ Diferencias clave: este checkpoint esta entrenado para una unica tarea con 29 ep
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_VLA-JEPA-OfficialLR-Causal-bs16-step20000
+- Modelo en Hugging Face: https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_VLA-JEPA-OfficialLR-Causal-bs16-step20000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

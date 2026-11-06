@@ -6,7 +6,7 @@ ACE-1-24B es un modelo de razonamiento en chino tradicional desarrollado por APM
 
 La versión NVFP4 del modelo incorpora cuantización de 4 bits de NVIDIA (FP4), lo que permite un despliegue más eficiente en hardware compatible con esta tecnología, reduciendo los requisitos de memoria y acelerando la inferencia. El modelo ha superado la evaluación Trustworthy AI del AIEC (Artificial Intelligence Evaluation Center) del Ministerio de Asuntos Digitales de Taiwán, y según su fabricante ocupa el quinto puesto en el ranking AIEC y el primero entre los modelos de código abierto evaluados, aunque no se han publicado los resultados numéricos de dicha evaluación.
 
-El acceso al modelo está restringido (gated) en HuggingFace y requiere aceptar los términos de la licencia propietaria de APMIC, lo que limita su uso a quienes cumplan las condiciones establecidas.
+El acceso al modelo está restringido (gated) en Hugging Face y requiere aceptar los términos de la licencia propietaria de APMIC, lo que limita su uso a quienes cumplan las condiciones establecidas.
 
 ## Especificaciones técnicas
 
@@ -64,7 +64,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 ## Limitaciones y advertencias
 
 - Licencia propietaria: la licencia apmic-license no es open source estándar y puede imponer restricciones al uso comercial, la redistribución o la modificación del modelo. Es imprescindible revisar los términos completos antes de cualquier uso en producción.
-- Acceso restringido: el modelo está marcado como gated en HuggingFace, por lo que se requiere solicitar acceso y aceptar las condiciones del fabricante.
+- Acceso restringido: el modelo está marcado como gated en Hugging Face, por lo que se requiere solicitar acceso y aceptar las condiciones del fabricante.
 - Enfoque en chino tradicional: aunque el modelo soporta inglés, su entrenamiento está fuertemente orientado al chino tradicional, por lo que el rendimiento en inglés puede ser inferior al de modelos generalistas de tamaño similar.
 - Riesgo de alucinación: como cualquier modelo de lenguaje, puede generar información plausible pero incorrecta, especialmente en dominios especializados o con datos poco representados en su entrenamiento.
 - Sin información sobre sesgos: no se han publicado estudios de sesgos ni evaluaciones de equidad, lo que supone un riesgo para aplicaciones sensibles.
@@ -73,7 +73,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/APMIC/ACE-1-24B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/APMIC/ACE-1-24B-NVFP4
 - Página oficial de ACE-1-24B (inglés): https://www.apmic.ai/en/ace
 - Página oficial de ACE-1-24B (chino tradicional): https://www.apmic.ai/ace
 - Noticia sobre la certificación AIEC: https://www.apmic.ai/en/news/ace-1-24b-get-aiec

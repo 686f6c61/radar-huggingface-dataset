@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `DavidS64/llama3-hedge-sft` es un repositorio alojado en HuggingFace que, por su nombre, parece ser un ajuste fino (fine-tuning) de un modelo base Llama 3. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican arquitectura, número de parámetros, contexto, licencia, idiomas ni detalles de entrenamiento. El autor es el usuario `DavidS64` y el repositorio tiene un tamaño de 639,6 GB, lo que sugiere que se trata de un modelo de gran escala, probablemente en formato safetensors. A fecha de creación (30 de junio de 2026) y última actualización (16 de agosto de 2026), el modelo cuenta con 0 descargas y 2 likes, lo que indica que es un proyecto reciente y sin documentación pública.
+El modelo `DavidS64/llama3-hedge-sft` es un repositorio alojado en Hugging Face que, por su nombre, parece ser un ajuste fino (fine-tuning) de un modelo base Llama 3. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican arquitectura, número de parámetros, contexto, licencia, idiomas ni detalles de entrenamiento. El autor es el usuario `DavidS64` y el repositorio tiene un tamaño de 639,6 GB, lo que sugiere que se trata de un modelo de gran escala, probablemente en formato safetensors. A fecha de creación (30 de junio de 2026) y última actualización (16 de agosto de 2026), el modelo cuenta con 0 descargas y 2 likes, lo que indica que es un proyecto reciente y sin documentación pública.
 
 Dado que no se dispone de más datos, esta ficha se limita a reflejar la información disponible y a señalar explícitamente los campos desconocidos. Cualquier uso en producción debería considerar la falta de transparencia y de validación externa.
 
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables de referencia, y la falta de da
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/DavidS64/llama3-hedge-sft)
+- [Repositorio en Hugging Face](https://huggingface.co/DavidS64/llama3-hedge-sft)

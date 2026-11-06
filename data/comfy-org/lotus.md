@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: al menos 4 GB para resoluciones bajas (256x256) y 8 GB o mas para resoluciones de 512x512 o superiores, dependiendo de la implementacion de difusion (numero de pasos, scheduler, etc.).
 - GPU recomendadas: NVIDIA RTX 3060 (12 GB) o superior para uso interactivo en ComfyUI; para produccion a gran escala, A100 o H100 con multiples instancias.
 - Es posible ejecutar en GPU de consumo como RTX 4090 o incluso RTX 4060 con cuantizacion a FP16, aunque no se ha confirmado la disponibilidad de versiones cuantizadas.
-- Opciones de despliegue: ComfyUI como interfaz principal; tambien puede usarse con la libreria `diffusers` de HuggingFace si se carga el modelo original, o con vLLM si se adapta (no es el caso estandar).
+- Opciones de despliegue: ComfyUI como interfaz principal; tambien puede usarse con la libreria `diffusers` de Hugging Face si se carga el modelo original, o con vLLM si se adapta (no es el caso estandar).
 - Latencia y throughput: no disponibles; dependen del numero de pasos de difusion y la resolucion. Al ser un modelo de difusion, la latencia tipica puede oscilar entre 0,5 y 2 segundos por imagen en GPU moderna, pero esto es una estimacion sin datos confirmados.
 
 ## Comparativa con modelos similares

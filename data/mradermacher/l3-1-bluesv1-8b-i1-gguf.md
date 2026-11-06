@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes para una comparativa rigurosa. El modelo base probablemente sea Llama 3.1 8B, pero al no conocer el fine-tuning Bluesv1, no se puede establecer una comparacion fiable. Se puede indicar que existen otras cuantizaciones GGUF de Llama 3.1 8B en HuggingFace, pero sin datos de rendimiento no es posible evaluarlas.
+No se dispone de datos suficientes para una comparativa rigurosa. El modelo base probablemente sea Llama 3.1 8B, pero al no conocer el fine-tuning Bluesv1, no se puede establecer una comparacion fiable. Se puede indicar que existen otras cuantizaciones GGUF de Llama 3.1 8B en Hugging Face, pero sin datos de rendimiento no es posible evaluarlas.
 
 ## Limitaciones y advertencias
 

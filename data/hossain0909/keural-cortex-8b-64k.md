@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Keural Cortex 8B — 64K es un modelo base de tipo transformer decoder-only desarrollado por MKD Co., Ltd. (publicado en HuggingFace bajo el identificador `hossain0909`) mediante preentrenamiento continuado (continued pretraining, CPT) sobre `Qwen/Qwen3-8B-Base`. El objetivo del proyecto es adaptar el modelo al coreano y extender su ventana de contexto nativa de 32.768 a 65.536 tokens mediante escalado YaRN con factor 2.0. La fase final (Phase 5) combina 41.000 millones de tokens de CPT con 2.500 millones adicionales dedicados específicamente a la extensión de contexto.
+Keural Cortex 8B — 64K es un modelo base de tipo transformer decoder-only desarrollado por MKD Co., Ltd. (publicado en Hugging Face bajo el identificador `hossain0909`) mediante preentrenamiento continuado (continued pretraining, CPT) sobre `Qwen/Qwen3-8B-Base`. El objetivo del proyecto es adaptar el modelo al coreano y extender su ventana de contexto nativa de 32.768 a 65.536 tokens mediante escalado YaRN con factor 2.0. La fase final (Phase 5) combina 41.000 millones de tokens de CPT con 2.500 millones adicionales dedicados específicamente a la extensión de contexto.
 
 La relevancia del modelo es doble. Por un lado, demuestra empíricamente que la composición del corpus pesa más que el volumen de tokens para mejorar conocimiento factual en un idioma: los 41B tokens de CPT iniciales (basados en web crawl) no mejoraron KMMLU, mientras que los 2.500 millones de tokens de la fase de extensión (58 % coreano, 58 % del corpus AI Hub con libros curados) sí lo hicieron, alcanzando 54,32 frente a los 53,91 del modelo base. Por otro, verifica la extensión de contexto con una prueba needle-in-a-haystack que recupera 12 de 12 casos hasta 65.536 tokens, incluyendo profundidades del 90 %.
 
@@ -107,7 +107,7 @@ La comparación directa con Qwen3-8B-Instruct no se ha realizado en el proyecto,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hossain0909/Keural-Cortex-8B-64K
+- Modelo en Hugging Face: https://huggingface.co/hossain0909/Keural-Cortex-8B-64K
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Repositorio del proyecto (script de evaluación needle): https://github.com/MKD-CORP/Keural-Cortex-8B
 - Script needle-in-a-haystack: `eval/needle_cpu.py` dentro del repositorio anterior

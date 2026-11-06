@@ -95,7 +95,7 @@ La diferencia clave es que el repositorio de KaedeTai no redistribuye pesos base
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KaedeTai/Qwen3.x-27B-mlx-mtp-graft
+- Repositorio Hugging Face: https://huggingface.co/KaedeTai/Qwen3.x-27B-mlx-mtp-graft
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - GitHub oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Paquete MLX con MTP nativa: https://huggingface.co/rapid-mlx/Qwen3.8-27B-4bit-MTP-MLX

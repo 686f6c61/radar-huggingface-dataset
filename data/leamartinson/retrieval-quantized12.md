@@ -32,7 +32,7 @@ No se disponen de datos sobre el conjunto de entrenamiento ni el número de toke
 - La arquitectura está diseñada para extraer representaciones visuales y realizar retrieval, pero el checkpoint actual no ha sido entrenado, por lo que las representaciones no son fiables ni se ha verificado su rendimiento.
 - No soporta generación de texto, tool calling, agentes ni razonamiento multi-paso.
 - No consta soporte multilingüe.
-- Requiere un adaptador explícito para ser cargado con APIs genéricas de HuggingFace, ya que es una implementación personalizada.
+- Requiere un adaptador explícito para ser cargado con APIs genéricas de Hugging Face, ya que es una implementación personalizada.
 - El repositorio ofrece un punto de entrada (`python model.py --help`) para ejecutar un smoke test de la implementación.
 
 ## Casos de uso
@@ -64,11 +64,11 @@ No disponible. No hay información sobre otros modelos Mocov3 comparables en los
 
 - El checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio; debe tratarse como material experimental.
 - No hay resultados de evaluación publicados; el modelo no debe usarse como solución funcional para retrieval.
-- La carga automática no funciona: las APIs genéricas de HuggingFace requieren un adaptador explícito.
+- La carga automática no funciona: las APIs genéricas de Hugging Face requieren un adaptador explícito.
 - El nombre del repositorio incluye "quantized12", pero no hay evidencia de que se haya aplicado cuantización; no debe asumirse que los pesos están cuantizados.
 - La licencia BSD-3-Clause permite el uso comercial del código y los pesos, pero el valor funcional del modelo es nulo sin entrenamiento.
 - La atención con ventana deslizante puede limitar la dependencia de largo alcance, pero su efecto no ha sido evaluado en este proyecto.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leamartinson/retrieval-quantized12
+- Hugging Face: https://huggingface.co/leamartinson/retrieval-quantized12

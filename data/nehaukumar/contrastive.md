@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - VRAM estimada: menos de 1 MB para los pesos en float32 (33.088 parámetros), aunque el framework PyTorch puede requerir varios cientos de MB en total.
 - GPU recomendada: cualquier GPU consumer, incluso una GPU integrada o aceleradores de bajo consumo; también se puede ejecutar en CPU.
 - Compatibilidad con consumer GPU: sí, no hay requisitos especiales.
-- Opciones de despliegue: PyTorch, HuggingFace. No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI en el repositorio, y al no ser un modelo de texto estas plataformas no aplican.
+- Opciones de despliegue: PyTorch, Hugging Face. No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI en el repositorio, y al no ser un modelo de texto estas plataformas no aplican.
 - Latencia: no disponible, pero por su tamaño la inferencia es prácticamente instantánea en cualquier hardware moderno.
 
 ## Comparativa con modelos similares
@@ -75,5 +75,5 @@ No se dispone de datos suficientes para una comparativa con modelos similares. N
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nehaukumar/contrastive
+- Modelo en Hugging Face: https://huggingface.co/nehaukumar/contrastive
 - No se han encontrado enlaces adicionales a papers, blogs, repositorios o demos en la información proporcionada.

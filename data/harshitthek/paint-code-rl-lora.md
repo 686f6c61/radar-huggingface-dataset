@@ -66,6 +66,6 @@ No se dispone de información suficiente para comparar con otros adaptadores LoR
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HarshittheK/paint-code-rl-lora
+- Hugging Face: https://huggingface.co/HarshittheK/paint-code-rl-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Paper de GRPO (referencia en la model card): https://arxiv.org/abs/1910.09700 (aunque este enlace corresponde al paper de Lacoste et al. sobre impacto ambiental, no a GRPO; la referencia es incorrecta en la model card original)

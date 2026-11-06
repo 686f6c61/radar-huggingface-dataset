@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter024` es un checkpoint intermedio de aprendizaje por refuerzo (RL) obtenido a partir del modelo base multimodal `Qwen/Qwen3.6-35B-A3B`. Lo publica el usuario de HuggingFace `willamazon1` dentro de la ejecución de entrenamiento denominada `miles-multievo-v2`, y corresponde concretamente a la iteración 24 de dicha ejecución. No se trata de un modelo final pulido, sino de una instantánea de la curva de entrenamiento: el autor guarda checkpoints cada 5 iteraciones y los agrupa en una colección para poder comparar puntos intermedios.
+El modelo `willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter024` es un checkpoint intermedio de aprendizaje por refuerzo (RL) obtenido a partir del modelo base multimodal `Qwen/Qwen3.6-35B-A3B`. Lo publica el usuario de Hugging Face `willamazon1` dentro de la ejecución de entrenamiento denominada `miles-multievo-v2`, y corresponde concretamente a la iteración 24 de dicha ejecución. No se trata de un modelo final pulido, sino de una instantánea de la curva de entrenamiento: el autor guarda checkpoints cada 5 iteraciones y los agrupa en una colección para poder comparar puntos intermedios.
 
 Arquitectónicamente es un transformer disperso (MoE) multimodal: 40 capas, dimensión oculta de 2048, 256 expertos con enrutado top-8, atención híbrida (lineal y completa), una capa MTP (multi-token prediction) y una torre de visión, con un vocabulario de 248.320 tokens. El recuento real de parámetros en los ficheros `safetensors` es de 35.951.822.704 (aproximadamente 35,95 mil millones), en precisión bfloat16, con un repositorio de 71,9 GB.
 
@@ -32,7 +32,7 @@ Su relevancia es acotada pero concreta: sirve como punto de referencia para estu
 
 El modelo hereda la arquitectura del base `Qwen3.6-35B-A3B`: un transformer de tipo mezcla de expertos (MoE) con 40 capas y dimensión oculta 2048, en el que cada token se enruta a 8 de los 256 expertos disponibles. Emplea además atención híbrida, combinando capas de atención lineal con capas de atención completa, lo que reduce el coste de cómputo y memoria en secuencias largas. Incorpora una capa MTP (multi-token prediction) y una torre de visión, lo que lo convierte en un modelo multimodal de entrada imagen-texto y salida texto.
 
-El checkpoint publicado no es un modelo preentrenado desde cero, sino el resultado de una fase de RL sobre el modelo base, dentro de la ejecución `miles-multievo-v2`, detenida en la iteración 24. La model card no detalla la composición del dataset de RL, el número de tokens vistos, la función de recompensa, ni si se aplicaron etapas previas de SFT o DPO. Tampoco se especifica el algoritmo exacto (PPO, GRPO u otro). El proceso de conversión sí está documentado: se partió de un checkpoint `torch_dist` de Megatron-LM y se transformó a safetensors de HuggingFace con la herramienta `tools/convert_torch_dist_to_hf.py` del proyecto slime, usando `--vocab-size 248320` para eliminar el relleno (*padding*) de los embeddings y el flag `-a/--add-missing-from-origin-hf` para incorporar la torre de visión desde el modelo base, ya que el checkpoint de entrenamiento solo contenía el modelo de lenguaje. El autor indica que cada shard fue verificado en busca de valores NaN/Inf y que el conjunto completo de claves de tensores se comparó con una conversión conocida y válida de esta arquitectura.
+El checkpoint publicado no es un modelo preentrenado desde cero, sino el resultado de una fase de RL sobre el modelo base, dentro de la ejecución `miles-multievo-v2`, detenida en la iteración 24. La model card no detalla la composición del dataset de RL, el número de tokens vistos, la función de recompensa, ni si se aplicaron etapas previas de SFT o DPO. Tampoco se especifica el algoritmo exacto (PPO, GRPO u otro). El proceso de conversión sí está documentado: se partió de un checkpoint `torch_dist` de Megatron-LM y se transformó a safetensors de Hugging Face con la herramienta `tools/convert_torch_dist_to_hf.py` del proyecto slime, usando `--vocab-size 248320` para eliminar el relleno (*padding*) de los embeddings y el flag `-a/--add-missing-from-origin-hf` para incorporar la torre de visión desde el modelo base, ya que el checkpoint de entrenamiento solo contenía el modelo de lenguaje. El autor indica que cada shard fue verificado en busca de valores NaN/Inf y que el conjunto completo de claves de tensores se comparó con una conversión conocida y válida de esta arquitectura.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ El checkpoint publicado no es un modelo preentrenado desde cero, sino el resulta
 - Punto de partida para ajuste fino propio: al estar bajo licencia Apache-2.0 y en formato safetensors nativo de `transformers`, se puede cargar con `AutoModelForCausalLM.from_pretrained` y continuar el entrenamiento con SFT o un RL posterior adaptado al dominio propio.
 - Evaluación interna de modelos MoE multimodales: sirve como referencia para comparar el coste de inferencia de un MoE de 35,95 mil millones de parámetros totales con enrutado top-8 frente a alternativas densas del mismo orden de magnitud, midiendo latencia y consumo de VRAM en hardware propio.
 - Experimentos de visión-lenguaje en laboratorio: al incorporar torre de visión, permite probar tareas de descripción de imágenes, respuesta a preguntas visuales o extracción de información de documentos escaneados, siempre asumiendo que no existe evaluación publicada de su calidad en estas tareas.
-- Reproducibilidad de conversiones Megatron-LM a HuggingFace: el repositorio documenta el pipeline de conversión con slime, por lo que es útil como caso de estudio para equipos que necesiten convertir sus propios checkpoints `torch_dist` conservando la torre de visión desde el modelo base.
+- Reproducibilidad de conversiones Megatron-LM a Hugging Face: el repositorio documenta el pipeline de conversión con slime, por lo que es útil como caso de estudio para equipos que necesiten convertir sus propios checkpoints `torch_dist` conservando la torre de visión desde el modelo base.
 - Docencia y formación técnica: ilustra de forma práctica qué es un checkpoint intermedio de RL, cómo se estructura un MoE con 256 expertos y por qué un modelo de 35,95 mil millones de parámetros puede tener requisitos de memoria muy superiores a su coste de cómputo por token.
 - Generación de texto e imagen-texto en entornos con licencia permisiva: cualquier uso comercial derivado está permitido por Apache-2.0, aunque el despliegue real exige validar antes la calidad del checkpoint, dado que no hay benchmarks publicados.
 
@@ -98,7 +98,7 @@ Nota: la comparación con Qwen3-30B-A3B y Mixtral 8x7B es orientativa respecto a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter024
+- Modelo en Hugging Face: https://huggingface.co/willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter024
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Herramienta de conversión slime (THUDM): https://github.com/THUDM/slime
 - Colección del run `miles-multievo-v2`: mencionada en la model card, pero sin URL proporcionada; no disponible.

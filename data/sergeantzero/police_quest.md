@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Police_Quest es un repositorio publicado en HuggingFace por el usuario Sergeantzero bajo licencia Apache 2.0. La informacion disponible se limita a los metadatos del repositorio: no hay model card con contenido tecnico (el README unicamente contiene la declaracion de licencia), no se declara pipeline de inference, no se declaran idiomas soportados y no hay resultados de benchmarks publicados. El repositorio ocupa 0,3 GB y fue creado y actualizado el 19 de septiembre de 2026, con cero descargas y cero likes en el momento de la consulta.
+Police_Quest es un repositorio publicado en Hugging Face por el usuario Sergeantzero bajo licencia Apache 2.0. La informacion disponible se limita a los metadatos del repositorio: no hay model card con contenido tecnico (el README unicamente contiene la declaracion de licencia), no se declara pipeline de inference, no se declaran idiomas soportados y no hay resultados de benchmarks publicados. El repositorio ocupa 0,3 GB y fue creado y actualizado el 19 de septiembre de 2026, con cero descargas y cero likes en el momento de la consulta.
 
 Con estos datos no es posible determinar la arquitectura, el numero de parametros, la longitud de contexto ni el proceso de entrenamiento del modelo. El identificador "Police_Quest" sugiere un posible enfocado ludico o de cuestionario, pero se trata de una inferencia a partir del nombre y no de informacion verificada, por lo que no debe tomarse como dato tecnico.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es, por tanto, de caracter documental: sirve para de
 | Licencia | Apache 2.0 |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 0,3 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de creacion | 19 de septiembre de 2026 |
 | Fecha de ultima actualizacion | 19 de septiembre de 2026 |
 | Descargas | 0 |
@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Police_Quest (Sergeantzero) | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| Police_Quest (Sergeantzero) | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 3 | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -93,6 +93,6 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sergeantzero/Police_Quest
+- Repositorio en Hugging Face: https://huggingface.co/Sergeantzero/Police_Quest
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Model card, paper, blog, repositorio de codigo o demo: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los resultados obtenidos correspondian a cuestionarios de la pagina de inicio de Bing y no guardan relacion con este repositorio.

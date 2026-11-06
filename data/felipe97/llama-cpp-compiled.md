@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Felipe97/llama-cpp-compiled` no es un modelo de lenguaje, sino un repositorio de HuggingFace que, por su nombre y por el contenido de su model card, distribuye una compilacion de `llama.cpp`, el motor de inferencia de LLM escrito en C/C++. El autor es el usuario Felipe97 y el repositorio ocupa 0,2 GB, un tamano coherente con binarios compilados y no con pesos de un modelo (los pesos de un transformer minimamente util ocupan bastante mas). El README es literalmente el de `llama.cpp` mantenido por ggml-org, por lo que la model card no describe ningun modelo propio.
+`Felipe97/llama-cpp-compiled` no es un modelo de lenguaje, sino un repositorio de Hugging Face que, por su nombre y por el contenido de su model card, distribuye una compilacion de `llama.cpp`, el motor de inferencia de LLM escrito en C/C++. El autor es el usuario Felipe97 y el repositorio ocupa 0,2 GB, un tamano coherente con binarios compilados y no con pesos de un modelo (los pesos de un transformer minimamente util ocupan bastante mas). El README es literalmente el de `llama.cpp` mantenido por ggml-org, por lo que la model card no describe ningun modelo propio.
 
 El problema que resuelve el artefacto, por tanto, no es el de un modelo concreto, sino el de disponer de una compilacion del runtime de inferencia. `llama.cpp` permite ejecutar LLM y VLM en una amplia gama de hardware sin dependencias externas, con soporte de cuantizacion de 1,5 a 8 bits y decodificacion en CPU, GPU o modo hibrido CPU+GPU. Es relevante porque es la pieza sobre la que se apoyan herramientas de amplia adopcion como Ollama o LM Studio y porque expone una API compatible con OpenAI mediante `llama serve`.
 
@@ -32,7 +32,7 @@ Al no existir entrenamiento, no hay datos de preentrenamiento, tokens procesados
 - Inferencia sobre CPU y GPU, incluyendo modo hibrido CPU+GPU para modelos que no caben integros en VRAM.
 - Cuantizacion de pesos de 1,5 a 8 bits para ajustar el uso de memoria y el rendimiento.
 - Servidor con API compatible con OpenAI mediante `llama serve`, lo que permite integrarlo en aplicaciones que ya consumen la API de OpenAI (el repositorio esta etiquetado como `endpoints_compatible`).
-- Interfaz de linea de comandos (`llama cli`) capaz de descargar y ejecutar modelos directamente desde HuggingFace con el parametro `-hf`.
+- Interfaz de linea de comandos (`llama cli`) capaz de descargar y ejecutar modelos directamente desde Hugging Face con el parametro `-hf`.
 - Interfaz web integrada servida por `llama serve`.
 - Soporte de gramaticas GBNF para restringir y forzar el formato de la salida.
 - Soporte multimodal (VLM) segun la captura de sesion incluida en el README del proyecto upstream.
@@ -85,7 +85,7 @@ Dado que el artefacto no es un modelo, la comparacion se plantea frente a otros 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Felipe97/llama-cpp-compiled
+- Repositorio en Hugging Face: https://huggingface.co/Felipe97/llama-cpp-compiled
 - Proyecto upstream llama.cpp: https://github.com/ggml-org/llama.cpp
 - Libreria ggml: https://github.com/ggml-org/ggml
 - Pagina de releases de llama.cpp: https://github.com/ggml-org/llama.cpp/releases

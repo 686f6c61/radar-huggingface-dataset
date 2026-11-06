@@ -76,7 +76,7 @@ La comparativa directa con otros modelos de 3B (como Llama 3.2 3B o Phi-3.5 mini
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/salohcin714/granite-4.2-3b-5bit-awq-mlx
+- Repositorio Hugging Face: https://huggingface.co/salohcin714/granite-4.2-3b-5bit-awq-mlx
 - Modelo base original: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Repositorio GitHub de Granite 4.2: https://github.com/ibm-granite/granite-4.2-language-models
 - Documentación oficial de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2

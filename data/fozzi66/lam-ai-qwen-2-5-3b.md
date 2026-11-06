@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lam-AI-Qwen-2.5-3B es un ajuste fino (fine-tune) del modelo Qwen2.5-3B-Instruct publicado por el usuario fozzi66 en HuggingFace. Se trata de un derivado directo de la versión cuantizada en 4 bits de Unsloth (`unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit`), entrenado con la librería Unsloth y la pila TRL/transformers. El modelo conserva la arquitectura transformer decoder-only de la familia Qwen2.5, con aproximadamente 3.000 millones de parámetros, y hereda la licencia Apache 2.0 del modelo original.
+Lam-AI-Qwen-2.5-3B es un ajuste fino (fine-tune) del modelo Qwen2.5-3B-Instruct publicado por el usuario fozzi66 en Hugging Face. Se trata de un derivado directo de la versión cuantizada en 4 bits de Unsloth (`unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit`), entrenado con la librería Unsloth y la pila TRL/transformers. El modelo conserva la arquitectura transformer decoder-only de la familia Qwen2.5, con aproximadamente 3.000 millones de parámetros, y hereda la licencia Apache 2.0 del modelo original.
 
 La relevancia de esta ficha es limitada: el autor no ha publicado información sobre el dataset de ajuste, los hiperparámetros, la finalidad del fine-tune ni resultados de evaluación. La model card es la plantilla automática que genera Unsloth tras un entrenamiento, sin secciones descriptivas adicionales. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamaño de 0,1 GB, lo que sugiere que los pesos podrían estar en formato cuantizado o que el repositorio no contiene los pesos completos en safetensors de precisión completa.
 
@@ -19,7 +19,7 @@ Por tanto, esta ficha debe leerse como una descripción del modelo base Qwen2.5-
 | Tipos de cuantización | no disponible (el modelo base de partida está en bnb-4bit; el repo pesa 0,1 GB) |
 | Idiomas soportados | en (según la model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Lam-AI-Qwen-2.5-3B | ~3B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Fine-tune no documentado |
-| Qwen2.5-3B-Instruct | ~3B | 32.768 tokens (según documentación de Qwen) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados |
-| Llama 3.2 3B Instruct | ~3B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, Meta | Requiere aceptar licencia; buenos resultados en inglés |
-| Phi-3.5-mini-instruct | ~3,8B | 128.000 tokens | MIT | HuggingFace, Microsoft | Enfocado a razonamiento y código |
+| Lam-AI-Qwen-2.5-3B | ~3B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Fine-tune no documentado |
+| Qwen2.5-3B-Instruct | ~3B | 32.768 tokens (según documentación de Qwen) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados |
+| Llama 3.2 3B Instruct | ~3B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, Meta | Requiere aceptar licencia; buenos resultados en inglés |
+| Phi-3.5-mini-instruct | ~3,8B | 128.000 tokens | MIT | Hugging Face, Microsoft | Enfocado a razonamiento y código |
 
 La comparativa se basa en características públicas de los modelos; no se dispone de datos de rendimiento del fine-tune de fozzi66 para comparar empíricamente.
 
@@ -82,7 +82,7 @@ La comparativa se basa en características públicas de los modelos; no se dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fozzi66/Lam-AI-Qwen-2.5-3B
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit
+- Hugging Face: https://huggingface.co/fozzi66/Lam-AI-Qwen-2.5-3B
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Documentación de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

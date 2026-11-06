@@ -2,7 +2,7 @@
 
 ## Resumen
 
-opal-harbor-73 es un modelo de generación de imágenes a partir de texto publicado en HuggingFace por el usuario kimi000. Se trata de un ajuste fino del modelo base black-forest-labs/FLUX.2-klein-base-4B, un transformer de difusión de la familia Flux2 con 3.875.544.576 parámetros (unos 3,88 mil millones). El ajuste se ha realizado mediante aprendizaje por refuerzo con un esquema tipo AlphaGRPO y un currículo de entrenamiento denominado "39-family", partiendo de una ejecución con validación de recompensa (r18) en la iteración 500.
+opal-harbor-73 es un modelo de generación de imágenes a partir de texto publicado en Hugging Face por el usuario kimi000. Se trata de un ajuste fino del modelo base black-forest-labs/FLUX.2-klein-base-4B, un transformer de difusión de la familia Flux2 con 3.875.544.576 parámetros (unos 3,88 mil millones). El ajuste se ha realizado mediante aprendizaje por refuerzo con un esquema tipo AlphaGRPO y un currículo de entrenamiento denominado "39-family", partiendo de una ejecución con validación de recompensa (r18) en la iteración 500.
 
 El artefacto distribuido es un pipeline nativo `diffusers.Flux2KleinPipeline` en bf16 en el que se ha fusionado una LoRA entrenada con EMA (rango 32, alpha 64) directamente en el transformer, de modo que no es necesario cargar adaptadores adicionales. El repositorio ocupa 16 GB e incluye ficheros de procedencia (`provenance.json`, `export_manifest.json`) y de verificación (`verification.json`). La licencia declarada es Apache 2.0.
 
@@ -95,7 +95,7 @@ No se dispone de comparativas de calidad, FID ni adherencia al prompt entre esto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kimi000/opal-harbor-73
+- Modelo en Hugging Face: https://huggingface.co/kimi000/opal-harbor-73
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B
 - Ficheros de procedencia y verificacion citados en la model card (ubicados en el propio repositorio): `provenance.json`, `export_manifest.json`, `verification.json`
 - Ejecucion de Weights & Biases citada por el autor: `65cyigcp` (no se proporciona URL en la informacion disponible)

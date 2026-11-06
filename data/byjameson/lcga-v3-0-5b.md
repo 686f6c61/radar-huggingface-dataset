@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LCGA v3 0.5b es un checkpoint de investigación publicado por byjameson que implementa atención dispersa por bloques aprendible (learnable block-sparse attention) sobre un Qwen2.5-0.5B congelado. No es un modelo nuevo entrenado desde cero ni un modelo conversacional: el repositorio de HuggingFace solo contiene el router de conceptos y los pesos LoRA (19,1 MB en `v3_best.pt`); los pesos base de Qwen2.5-0.5B no se distribuyen y deben descargarse aparte. El problema que aborda es el coste cuadrático O(N²) de la atención densa, sustituyéndolo por una ruta que selecciona los bloques de clave/valor más relevantes antes de aplicar softmax exacto sobre ellos.
+LCGA v3 0.5b es un checkpoint de investigación publicado por byjameson que implementa atención dispersa por bloques aprendible (learnable block-sparse attention) sobre un Qwen2.5-0.5B congelado. No es un modelo nuevo entrenado desde cero ni un modelo conversacional: el repositorio de Hugging Face solo contiene el router de conceptos y los pesos LoRA (19,1 MB en `v3_best.pt`); los pesos base de Qwen2.5-0.5B no se distribuyen y deben descargarse aparte. El problema que aborda es el coste cuadrático O(N²) de la atención densa, sustituyéndolo por una ruta que selecciona los bloques de clave/valor más relevantes antes de aplicar softmax exacto sobre ellos.
 
 El mecanismo se apoya en un router de grafo de conceptos latente con K=64 embeddings de concepto aprendibles, que puntúa la secuencia y agrega esas probabilidades en puntuaciones por bloque; en cada capa se retienen los `top-M` bloques, con `M = round(rho * n_blocks)` y `rho=0.25` por defecto, y el bloque es de 64 tokens. Sobre los bloques seleccionados se calcula atención softmax exacta, es decir, no hay aproximación dentro de la propia atención, solo poda del conjunto de claves. La causalidad se mantiene a nivel de slot (`kpos <= qpos`) en todas las rutas.
 
@@ -119,7 +119,7 @@ No se dispone en la información proporcionada de comparaciones con otros modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/byjameson/lcga-v3-0.5b
+- Modelo en Hugging Face: https://huggingface.co/byjameson/lcga-v3-0.5b
 - Código, informes y evidencia cruda (`results/results.jsonl`): https://github.com/byjameson/lcga-local
 - Informe principal en turco (`RAPOR.md`): https://github.com/byjameson/lcga-local/blob/main/RAPOR.md
 - Trainer en streaming (32B en 6 GB) y guía: https://github.com/byjameson/stream-finetune

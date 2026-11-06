@@ -121,5 +121,5 @@ Segun el autor, phi-redact v7 esta practicamente empatado con el composite ingle
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CDT5058/phi-redact-distilbert-teacher
+- Modelo en Hugging Face: https://huggingface.co/CDT5058/phi-redact-distilbert-teacher
 - No se han encontrado en la busqueda web enlaces relevantes adicionales (paper, blog, repositorio o demo) asociados a este modelo; los resultados obtenidos no guardan relacion con el.

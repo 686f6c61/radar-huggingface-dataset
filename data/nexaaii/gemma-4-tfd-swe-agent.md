@@ -86,7 +86,7 @@ No disponible. La informacion proporcionada no incluye benchmark alguno ni model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nexaaii/gemma-4-tfd-swe-agent
+- Repositorio en Hugging Face: https://huggingface.co/nexaaii/gemma-4-tfd-swe-agent
 - Modelo base declarado: google/gemma-4-31b-it
 - Referencia bibliografica citada en las etiquetas: https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019, sobre estimacion de impacto ambiental; citada en la plantilla de la model card, no como paper del modelo)
 - Repositorios, papers, blogs o demos adicionales: no disponibles en la informacion proporcionada.

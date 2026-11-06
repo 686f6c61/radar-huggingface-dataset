@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-kx-chrono5-w60-s160` es un checkpoint en formato safetensors publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Por su nomenclatura y la etiqueta `sn38-nanochrono`, parece tratarse de un experimento de la familia "chrono" o "nanochrono", probablemente un modelo de series temporales o un transformer de pequeno tamano derivado de un pipeline de entrenamiento propio del autor. No se dispone de documentacion oficial, model card ni pipeline declarado en la informacion proporcionada.
+El modelo `alfred8995/r18-a2-w13-kx-chrono5-w60-s160` es un checkpoint en formato safetensors publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Por su nomenclatura y la etiqueta `sn38-nanochrono`, parece tratarse de un experimento de la familia "chrono" o "nanochrono", probablemente un modelo de series temporales o un transformer de pequeno tamano derivado de un pipeline de entrenamiento propio del autor. No se dispone de documentacion oficial, model card ni pipeline declarado en la informacion proporcionada.
 
 El checkpoint contiene 2.018.511.234 parametros (aproximadamente 2,02 mil millones), lo que lo situa en la categoria de modelos pequenos-mediados, adecuados para inferencia en GPU de consumo con cuantizacion. El repositorio ocupa 6,3 GB, coherente con pesos en precision de 16 bits (bf16/fp16) para ese numero de parametros.
 
@@ -29,7 +29,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesad
 
 ## Capacidades
 
-- Generacion de texto: no confirmada por documentacion oficial; el pipeline no esta declarado en HuggingFace.
+- Generacion de texto: no confirmada por documentacion oficial; el pipeline no esta declarado en Hugging Face.
 - Razonamiento y matematicas: no disponible.
 - Generacion de codigo: no disponible.
 - Vision o audio: no disponible; no hay indicios de modalidades adicionales.
@@ -47,7 +47,7 @@ Dado que el acceso es restringido y no hay model card, cualquier capacidad debe 
 - Investigacion sobre convenciones de nombres e hiperparametros: el sufijo del repositorio (`w13`, `w60`, `s160`) puede ser util para estudiar como el autor codifica configuraciones de entrenamiento en los identificadores.
 - Base para fine-tuning de dominio especifico: al estar bajo Apache 2.0 y en safetensors, es tecnicamente posible adaptarlo con LoRA o fine-tuning completo, siempre que se valide primero su comportamiento base.
 - Benchmarking interno de pipelines de evaluacion: util como checkpoint de control en suites de evaluacion propias para comparar contra modelos de tamano similar.
-- Docencia y formacion: ejemplo practico de repositorio gated con licencia permisiva para explicar flujos de acceso restringido en HuggingFace.
+- Docencia y formacion: ejemplo practico de repositorio gated con licencia permisiva para explicar flujos de acceso restringido en Hugging Face.
 
 En todos los casos, la idoneidad es condicional: sin model card ni benchmarks, no se recomienda su uso en produccion sin una evaluacion previa exhaustiva.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|
-| alfred8995/r18-a2-w13-kx-chrono5-w60-s160 | ~2,02 B | no disponible | Apache 2.0 | Gated en HuggingFace | Sin model card ni benchmarks |
+| alfred8995/r18-a2-w13-kx-chrono5-w60-s160 | ~2,02 B | no disponible | Apache 2.0 | Gated en Hugging Face | Sin model card ni benchmarks |
 | Gemma 2 2B | ~2,6 B | 8 K | Gemma license | Publico | Modelo denso con benchmarks publicos |
 | Qwen2.5 1.5B | ~1,5 B | 32 K | Apache 2.0 | Publico | Buen soporte multilingue y tool calling |
 | SmolLM2 1.7B | ~1,7 B | 8 K | Apache 2.0 | Publico | Orientado a eficiencia en dispositivo |
@@ -82,7 +82,7 @@ La comparativa es orientativa por tamano: no hay datos de rendimiento del modelo
 - Riesgo de alucinacion desconocido: sin benchmarks ni evaluaciones, no se puede estimar la fiabilidad factual.
 - Idiomas no declarados: no se puede garantizar calidad en castellano ni en ningun otro idioma.
 - Contexto desconocido: no se conoce la ventana maxima, lo que impide planificar casos de uso con documentos largos.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a despliegues automatizados y a la reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a despliegues automatizados y a la reproducibilidad.
 - Sin cuantizaciones oficiales: habria que generarlas y validarlas, con el riesgo de degradacion que ello implica.
 - Licencia Apache 2.0: permite uso comercial, pero la falta de documentacion sobre el origen de los datos de entrenamiento impide descartar riesgos legales asociados al corpus.
 - Repositorio sin descargas ni likes en el momento de la consulta: no hay senales de uso comunitario ni validacion externa.
@@ -90,5 +90,5 @@ La comparativa es orientativa por tamano: no hay datos de rendimiento del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono5-w60-s160
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono5-w60-s160
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

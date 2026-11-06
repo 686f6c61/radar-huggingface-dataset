@@ -95,7 +95,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/True2456/Qwen3.8-27B-AWQ-5.0bpw
+- Modelo en Hugging Face: https://huggingface.co/True2456/Qwen3.8-27B-AWQ-5.0bpw
 - Build hermano 4,85 bpw: https://huggingface.co/True2456/Qwen3.8-27B-AWQ-4.85bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Pull request de oMLX sobre enrutamiento de kernel: https://github.com/jundot/omlx/pull/2657

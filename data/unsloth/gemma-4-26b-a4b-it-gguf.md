@@ -79,7 +79,7 @@ El modelo de Gemma 4 destaca por su contexto de 256K (el doble que Qwen2.5-32B-A
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Coleccion de Gemma 4 de Unsloth: https://huggingface.co/collections/unsloth/gemma-4
 - Guia de Unsloth para ejecutar Gemma 4: https://unsloth.ai/docs/models/gemma-4

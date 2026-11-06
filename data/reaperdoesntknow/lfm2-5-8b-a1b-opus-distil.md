@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo de este checkpoint frente a al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/LFM2.5-8B-A1B-Opus-Distil
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/LFM2.5-8B-A1B-Opus-Distil
 - Blog de Liquid AI sobre LFM2.5-8B-A1B: https://www.liquid.ai/blog/lfm2-5-8b-a1b
 - Documentacion de Liquid AI para LFM2.5-8B-A1B: https://docs.liquid.ai/lfm/models/lfm25-8b-a1b
 - Ficha en LLM Explorer: https://llm-explorer.com/model/reaperdoesntknow%2FLFM2.5-8B-A1B-Opus-Distil,66s15mBi4CmwGfiL8OeTfh

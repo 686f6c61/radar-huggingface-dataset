@@ -73,7 +73,7 @@ En MAEB, el modelo cede frente a Qwen2-Audio y los modelos CLAP en clustering, y
 
 | Modelo | Parámetros | Modalidades | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OmniUE-3B | 3B (base) + LoRA | Texto, imagen, vídeo, audio; interacción por caja/punto/span | no disponible | CC BY-NC 4.0 (pesos propios) + licencias de terceros | HuggingFace (Sony/OmniUE-3B) |
+| OmniUE-3B | 3B (base) + LoRA | Texto, imagen, vídeo, audio; interacción por caja/punto/span | no disponible | CC BY-NC 4.0 (pesos propios) + licencias de terceros | Hugging Face (Sony/OmniUE-3B) |
 | OmniUE-7B | 7B (base) | Texto, imagen, vídeo, audio; interacción | no disponible | no disponible en la información proporcionada | Referenciado en la model card como variante mayor |
 | LCO-Emb-7B | 7B | Audio y texto (recuperación cross-modal) | no disponible | no disponible | Baseline en MAEB y OmniCHOIR |
 | Qwen2-Audio | no disponible | Audio y texto | no disponible | no disponible | Baseline en MAEB |
@@ -96,7 +96,7 @@ Frente a LCO-Emb-7B, OmniUE-7B lidera 7 de 8 metatareas de MAEB, aunque LCO-Emb 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sony/OmniUE-3B
+- Modelo en Hugging Face: https://huggingface.co/Sony/OmniUE-3B
 - Modelo base Qwen2.5-Omni-3B: https://huggingface.co/Qwen/Qwen2.5-Omni-3B
 - Paper (arXiv:2608.27044): https://arxiv.org/abs/2608.27044
 - Página del proyecto: https://wywywang.github.io/omniue-demo/

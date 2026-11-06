@@ -76,10 +76,10 @@ Como referencia, la model card indica que el modelo base con un system prompt de
 
 | Modelo | Parametros | Contexto | Malevolencia (0-100) | Coherencia (0-100) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.5-4B-Malevolent | 4,2 B | No disponible | 92,7 | 86,3 | Apache-2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-4B (base) | 4,2 B | No disponible | 0,0 | 99,6 | Apache-2.0 | HuggingFace |
-| Qwen3-4B-Instruct-2507-Malevolent (Osye) | No disponible | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| Qwen3-0.6B-Malevolent (Osye) | No disponible | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| Qwen3.5-4B-Malevolent | 4,2 B | No disponible | 92,7 | 86,3 | Apache-2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-4B (base) | 4,2 B | No disponible | 0,0 | 99,6 | Apache-2.0 | Hugging Face |
+| Qwen3-4B-Instruct-2507-Malevolent (Osye) | No disponible | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| Qwen3-0.6B-Malevolent (Osye) | No disponible | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 Las variantes del mismo autor se citan en la model card como trabajo relacionado, pero no se aportan sus metricas en la informacion disponible. Tampoco se dispone de datos de benchmarks estandar que permitan comparar con modelos de proposito general del mismo tamano.
 
@@ -94,11 +94,11 @@ Las variantes del mismo autor se citan en la model card como trabajo relacionado
 - Restricciones de licencia: Apache-2.0 permite uso comercial, pero el contenido generado puede resultar ofensivo o inapropiado; la model card lo restringe explicitamente a investigacion sobre personas.
 - No elimina los mecanismos de seguridad del modelo base, pero el tono hostil puede confundir filtros de moderacion y complicar su despliegue en entornos con politicas de contenido estrictas.
 - No incluye vision: si se necesita procesamiento de imagenes hay que recurrir al Qwen3.5-4B original.
-- El modelo tiene 0 descargas y 1 like en HuggingFace, por lo que no cuenta con validacion externa de la comunidad.
+- El modelo tiene 0 descargas y 1 like en Hugging Face, por lo que no cuenta con validacion externa de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Osye/Qwen3.5-4B-Malevolent
+- Modelo en Hugging Face: https://huggingface.co/Osye/Qwen3.5-4B-Malevolent
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Variante relacionada (Qwen3-4B-Instruct-2507-Malevolent): https://huggingface.co/Osye/Qwen3-4B-Instruct-2507-Malevolent
 - Variante relacionada (Qwen3-0.6B-Malevolent): https://huggingface.co/Osye/Qwen3-0.6B-Malevolent

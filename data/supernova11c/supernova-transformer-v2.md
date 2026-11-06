@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Supernova Transformer V2 es un modelo de lenguaje causal (decoder-only) a nivel de caracter desarrollado por el usuario Supernova11c y publicado en HuggingFace bajo el identificador `Supernova11c/Supernova-Transformer-V2`. Se trata de un modelo de muy pequeno tamano, con 3.357.696 parametros entrenables, disenado especificamente para reproducir el comportamiento conversacional del denominado "Supernova conversational dataset". No es un modelo de proposito general: el propio autor indica que fue entrenado sobre datos conversacionales y de proyecto propios y que no debe interpretarse como un modelo de conocimiento general del mundo.
+Supernova Transformer V2 es un modelo de lenguaje causal (decoder-only) a nivel de caracter desarrollado por el usuario Supernova11c y publicado en Hugging Face bajo el identificador `Supernova11c/Supernova-Transformer-V2`. Se trata de un modelo de muy pequeno tamano, con 3.357.696 parametros entrenables, disenado especificamente para reproducir el comportamiento conversacional del denominado "Supernova conversational dataset". No es un modelo de proposito general: el propio autor indica que fue entrenado sobre datos conversacionales y de proyecto propios y que no debe interpretarse como un modelo de conocimiento general del mundo.
 
 La arquitectura es un Transformer clasico decoder-only con vocabulario de 131 simbolos (tokenizacion a nivel de caracter), hidden size de 256, 4 capas, 8 cabezas de atencion y dimension feed-forward de 1024. La longitud maxima de secuencia es de 512 tokens. El entrenamiento se realizo sobre un conjunto muy reducido de ejemplos (2601 de entrenamiento y 289 de validacion), alcanzando una perdida de validacion de 0.142253234871896 y una perplejidad de 1.152869, cifras coherentes con un corpus pequeno y muy ajustado al dominio.
 
@@ -68,7 +68,7 @@ No se dispone de comparaciones con otros modelos en la informacion proporcionada
 - VRAM estimada para inferencia: practicamente despreciable. Con 3,36 millones de parametros, los pesos ocupan aproximadamente 13,4 MB en fp32 y 6,7 MB en fp16.
 - GPU recomendadas: cualquier GPU moderna, incluida una GTX 1050 o integradas recientes; tambien funciona en CPU sin problema.
 - Cabe en GPU de consumo: si, en cualquier GPU de consumo actual e incluso en la mayoria de CPU. No requiere A100, H100 ni RTX 4090.
-- Opciones de despliegue: la libreria `transformers` de HuggingFace es la via documentada. No se publican pesos en GGUF, por lo que su uso con llama.cpp u Ollama requeriria una conversion previa. No hay informacion sobre compatibilidad con vLLM o TGI.
+- Opciones de despliegue: la libreria `transformers` de Hugging Face es la via documentada. No se publican pesos en GGUF, por lo que su uso con llama.cpp u Ollama requeriria una conversion previa. No hay informacion sobre compatibilidad con vLLM o TGI.
 - Latencia y throughput: no disponible. Dado el tamano, se espera latencia de milisegundos en CPU y sub-milisegundo en GPU, pero no hay cifras publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se dispone de modelos comparables documentados en la informacion proporcionad
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Supernova Transformer V2 | 3.357.696 | 512 | PPL validacion 1.152869 (datos propios) | no disponible | HuggingFace (0 descargas) |
+| Supernova Transformer V2 | 3.357.696 | 512 | PPL validacion 1.152869 (datos propios) | no disponible | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,5 +94,5 @@ No se dispone de modelos comparables documentados en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Supernova11c/Supernova-Transformer-V2
+- Modelo en Hugging Face: https://huggingface.co/Supernova11c/Supernova-Transformer-V2
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

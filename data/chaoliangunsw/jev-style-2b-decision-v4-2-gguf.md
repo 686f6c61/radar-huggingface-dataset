@@ -6,7 +6,7 @@ Jev-Style-2B-Decision-v4.2-GGUF es la distribucion en formato GGUF del modelo Je
 
 La relevancia de esta release es practica: permite ejecutar el modelo sin PyTorch, sobre llama.cpp con un build parcheado (`build_jev_score.sh`), en tres precisiones (F16, Q8_0 y Q4_K_M). El modelo original obtuvo 46,74 en la suite Decision Index public 0.3, con 140.178 peticiones puntuadas correctamente, medida sobre el modelo PyTorch BF16 en CUDA. Esta version GGUF es una cuantizacion del mismo, no un reentrenamiento.
 
-Se trata de un modelo de nicho, con 0 descargas y 1 like en el momento de la consulta, y con un protocolo de inferencia no estandar que exige runtime propio. No debe confundirse con un chat model: la model card indica explicitamente que para imagenes hay que usar el modelo principal de HuggingFace, y que el scorer personalizado es obligatorio.
+Se trata de un modelo de nicho, con 0 descargas y 1 like en el momento de la consulta, y con un protocolo de inferencia no estandar que exige runtime propio. No debe confundirse con un chat model: la model card indica explicitamente que para imagenes hay que usar el modelo principal de Hugging Face, y que el scorer personalizado es obligatorio.
 
 ## Especificaciones tecnicas
 
@@ -36,7 +36,7 @@ La innovacion tecnica destacable es el protocolo de decision: en lugar de genera
 - Procesamiento por lotes de preguntas: el protocolo de atencion por bloques comparte el calculo de estado entre varias preguntas sobre el mismo estado.
 - Entrada en texto y JSON: admite ambos formatos de entrada.
 - Limite operativo de 255 opciones por peticion y 32.768 tokens de entrada; las peticiones fuera de presupuesto se rechazan.
-- Solo texto: no procesa imagenes; para vision hay que usar el modelo principal de HuggingFace.
+- Solo texto: no procesa imagenes; para vision hay que usar el modelo principal de Hugging Face.
 - No se documentan capacidades de tool calling, function calling, razonamiento multi-paso generativo ni modo thinking en la informacion disponible.
 
 ## Casos de uso
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4.2-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4.2-GGUF
 - Modelo base: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4.2
 - Bundle de resultados de evaluacion: https://huggingface.co/datasets/chaoliangUNSW/decision-index-results-v4.2
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

@@ -79,7 +79,7 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Exactitud (benchmark del autor) | ECE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AutoJev-27B | 26,1 B | No disponible | 84,60 % | 0,04282 | Apache 2.0 (pesos), MIT (codigo) | Pesos en HuggingFace; el autor indica que pueden ser privados y requerir autenticacion |
+| AutoJev-27B | 26,1 B | No disponible | 84,60 % | 0,04282 | Apache 2.0 (pesos), MIT (codigo) | Pesos en Hugging Face; el autor indica que pueden ser privados y requerir autenticacion |
 | Qwen3.8-27B (base) | No disponible | No disponible | 69,83 % | 0,06483 | No disponible en la informacion proporcionada | Modelo base referenciado como Qwen/Qwen3.8-27B |
 | Jev | No disponible | No disponible | 82,79 % | 0,05274 | No disponible | Referenciado por el autor como inspiracion del trabajo |
 
@@ -100,7 +100,7 @@ No se dispone de datos de parametros, contexto ni licencia de los modelos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/denis-pplx/autojev-27b
+- Modelo en Hugging Face: https://huggingface.co/denis-pplx/autojev-27b
 - Repositorio de codigo: https://github.com/denis-pplx/autojev
 - Licencia de pesos (Apache 2.0): https://huggingface.co/denis-pplx/autojev-27b/blob/main/LICENSE
 - Modelo base referenciado: Qwen/Qwen3.8-27B (no se ha proporcionado URL directa)

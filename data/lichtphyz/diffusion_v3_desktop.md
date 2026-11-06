@@ -25,7 +25,7 @@ Arquitectónicamente no es un modelo de lenguaje: es una política visomotora de
 | Entradas | `observation.state` (6,), `observation.images.front` (3, 480, 640), `observation.images.wrist` (3, 480, 640) |
 | Salidas | `action` (6,) |
 | Resolución de proceso | redimensionado a 320×240, recorte aleatorio 304×228 (ratio 0,95) |
-| Descargas en HuggingFace | 43 |
+| Descargas en Hugging Face | 43 |
 
 ## Arquitectura y entrenamiento
 
@@ -87,9 +87,9 @@ Detalles de los fallos: uno de los dos fallos fue una recuperación parcial (tra
 
 | Modelo | Arquitectura | Parámetros | Contexto / horizonte | Éxito en robot real | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `lichtphyz/diffusion_v3_desktop` | Diffusion Policy + ResNet-18 | 277,8 M | 2 pasos de observación, horizonte 64, 32 acciones | 8/10 | Apache 2.0 | HuggingFace, LeRobot |
-| `lichtphyz/act_v3_aug_desktop` | ACT | no disponible | no disponible | 9/10 (4/4 con bloque corto en prueba extra) | no disponible en la información proporcionada | HuggingFace |
-| `lichtphyz/smolvla_v3_desktop` | SmolVLA | no disponible | no disponible | 7/10 | no disponible en la información proporcionada | HuggingFace |
+| `lichtphyz/diffusion_v3_desktop` | Diffusion Policy + ResNet-18 | 277,8 M | 2 pasos de observación, horizonte 64, 32 acciones | 8/10 | Apache 2.0 | Hugging Face, LeRobot |
+| `lichtphyz/act_v3_aug_desktop` | ACT | no disponible | no disponible | 9/10 (4/4 con bloque corto en prueba extra) | no disponible en la información proporcionada | Hugging Face |
+| `lichtphyz/smolvla_v3_desktop` | SmolVLA | no disponible | no disponible | 7/10 | no disponible en la información proporcionada | Hugging Face |
 
 Los tres modelos se entrenaron sobre el mismo dataset (`lichtphyz/so101_block_to_bin_v3`) y comparten robot y configuración de cámaras, por lo que la comparación es directa en éxito de tarea. No se dispone de datos de parámetros, contexto ni latencia de los modelos hermanos en la información proporcionada.
 
@@ -107,7 +107,7 @@ Los tres modelos se entrenaron sobre el mismo dataset (`lichtphyz/so101_block_to
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lichtphyz/diffusion_v3_desktop
+- Modelo en Hugging Face: https://huggingface.co/lichtphyz/diffusion_v3_desktop
 - Dataset de entrenamiento: https://huggingface.co/datasets/lichtphyz/so101_block_to_bin_v3
 - Rollouts de evaluación: https://huggingface.co/datasets/lichtphyz/rollout_diffusion_v3_desktop
 - Visualizador del dataset de entrenamiento: https://huggingface.co/spaces/lerobot/visualize_dataset?path=lichtphyz/so101_block_to_bin_v3

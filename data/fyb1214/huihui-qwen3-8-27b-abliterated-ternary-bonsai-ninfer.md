@@ -87,12 +87,12 @@ La diferencia funcional entre las tres variantes de 27B es el nivel de cuantizac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fyb1214/Huihui-Qwen3.8-27B-Abliterated-Ternary-Bonsai-NInfer
+- Repositorio en Hugging Face: https://huggingface.co/fyb1214/Huihui-Qwen3.8-27B-Abliterated-Ternary-Bonsai-NInfer
 - Modelo base abliterado (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Modelo ternario de origen (PrismML): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Modelo base original (Qwen): https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de recetas de conversion (Ryan-gsq): https://github.com/Ryan-gsq/ninfer-16g-5070ti-5080-5090-qwen3.8-27b-gsq-rco
 - Repositorio del motor NInfer (fork base): https://github.com/iamwavecut/ninfer-all
-- Listado de modelos ternarios en HuggingFace: https://huggingface.co/models?other=ternary
+- Listado de modelos ternarios en Hugging Face: https://huggingface.co/models?other=ternary
 - README en chino: https://huggingface.co/fyb1214/Huihui-Qwen3.8-27B-Abliterated-Ternary-Bonsai-NInfer/blob/main/README_zh.md
 - Digests SHA-256: https://huggingface.co/fyb1214/Huihui-Qwen3.8-27B-Abliterated-Ternary-Bonsai-NInfer/blob/main/SHA256SUMS

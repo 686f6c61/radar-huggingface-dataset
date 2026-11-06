@@ -102,5 +102,5 @@ Otra comparativa sería contra los modelos originales sin cuantizar (bf16/fp16).
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nicolaslas/Rebels_w4a8s
+- Repositorio Hugging Face: https://huggingface.co/Nicolaslas/Rebels_w4a8s
 - Referencia al formato de cuantización: comfy-kitchen (mencionado en la model card, sin enlace directo)

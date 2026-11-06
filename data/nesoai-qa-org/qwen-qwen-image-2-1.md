@@ -80,11 +80,11 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace (repositorio consultado): https://huggingface.co/nesoai-qa-org/Qwen-Qwen-Image-2.1
-- Modelo oficial en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Modelo en Hugging Face (repositorio consultado): https://huggingface.co/nesoai-qa-org/Qwen-Qwen-Image-2.1
+- Modelo oficial en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Modelo en ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog oficial: https://qwen.ai/blog?id=qwen-image-2.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Repositorio GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - Discord: https://discord.gg/BEYSk3pkSu
 - Formulario de feedback: https://alidocs.dingtalk.com/notable/share/form/v01WgZOZA5DaVQPeqLX_dv19yqvsgs3oebp3pcjys_1qX0QQ0?source=link

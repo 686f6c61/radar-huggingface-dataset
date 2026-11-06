@@ -84,8 +84,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| pangram-like (`finetune.pt`) | BERT base + cabeza lineal | no disponible (BERT base) | 512 tokens | MIT | HuggingFace + GitHub | 90,6% exactitud, 18,6% FPR en test propio |
-| pangram-like (`checkpoint.pt`) | BERT base congelado + cabeza lineal | no disponible (BERT base) | 512 tokens | MIT | HuggingFace + GitHub | 78,9% exactitud en validacion |
+| pangram-like (`finetune.pt`) | BERT base + cabeza lineal | no disponible (BERT base) | 512 tokens | MIT | Hugging Face + GitHub | 90,6% exactitud, 18,6% FPR en test propio |
+| pangram-like (`checkpoint.pt`) | BERT base congelado + cabeza lineal | no disponible (BERT base) | 512 tokens | MIT | Hugging Face + GitHub | 78,9% exactitud en validacion |
 | Pangram (comercial) | no disponible | no disponible | no disponible | propietaria | servicio comercial | no disponible |
 | Detectores de la tarea COLING 2025 MGT | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -105,7 +105,7 @@ No se dispone de datos publicos de benchmarks comparables con otros detectores a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keyvanatt/pangram-like
+- Modelo en Hugging Face: https://huggingface.co/keyvanatt/pangram-like
 - Codigo, notebook de entrenamiento y visualizacion: https://github.com/keyvanatt/pangram-like
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Dataset de entrenamiento: https://huggingface.co/datasets/Jinyan1/COLING_2025_MGT_en

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Beetle-FineWeb-24B-4/beetle-bilingual-l2-50-simultaneous-b2-fineweb-2b-kor-eng` es un modelo de generacion de texto publicado en HuggingFace por la organizacion Beetle-FineWeb-24B-4. Se distribuye en formato safetensors y requiere codigo personalizado (`custom_code`), con la etiqueta `pico_decoder` como unica pista sobre su arquitectura. El recuento real de parametros en los ficheros safetensors es de 193.804.032 (aproximadamente 194 millones), lo que lo situa en la categoria de modelos pequenos, muy por debajo de los modelos frontera actuales.
+El modelo `Beetle-FineWeb-24B-4/beetle-bilingual-l2-50-simultaneous-b2-fineweb-2b-kor-eng` es un modelo de generacion de texto publicado en Hugging Face por la organizacion Beetle-FineWeb-24B-4. Se distribuye en formato safetensors y requiere codigo personalizado (`custom_code`), con la etiqueta `pico_decoder` como unica pista sobre su arquitectura. El recuento real de parametros en los ficheros safetensors es de 193.804.032 (aproximadamente 194 millones), lo que lo situa en la categoria de modelos pequenos, muy por debajo de los modelos frontera actuales.
 
-La model card publicada es la plantilla automatica de HuggingFace sin cumplimentar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como "[More Information Needed]". Esto significa que no hay informacion oficial sobre el corpus de entrenamiento, el procedimiento de ajuste ni los resultados de evaluacion. El nombre del repositorio contiene indicios no confirmados (bilingue coreano-ingles, "simultaneous", "fineweb", "2b"), pero no deben tomarse como hechos documentados.
+La model card publicada es la plantilla automatica de Hugging Face sin cumplimentar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como "[More Information Needed]". Esto significa que no hay informacion oficial sobre el corpus de entrenamiento, el procedimiento de ajuste ni los resultados de evaluacion. El nombre del repositorio contiene indicios no confirmados (bilingue coreano-ingles, "simultaneous", "fineweb", "2b"), pero no deben tomarse como hechos documentados.
 
 Es relevante ahora unicamente como objeto de estudio o como base para experimentacion, no como componente listo para produccion: acumula cero descargas y cero "likes", su licencia es desconocida y el repositorio ocupa 79,9 GB, un tamano desproporcionado para 194 millones de parametros, lo que sugiere la presencia de multiples checkpoints u otros artefactos no descritos.
 
@@ -82,7 +82,7 @@ No disponible. No se ha proporcionado informacion sobre modelos comparables ni d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beetle-FineWeb-24B-4/beetle-bilingual-l2-50-simultaneous-b2-fineweb-2b-kor-eng
+- Modelo en Hugging Face: https://huggingface.co/Beetle-FineWeb-24B-4/beetle-bilingual-l2-50-simultaneous-b2-fineweb-2b-kor-eng
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental en aprendizaje automatico: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados obtenidos corresponden al insecto "beetle" y al automovil Volkswagen Beetle, sin relacion con este repositorio.

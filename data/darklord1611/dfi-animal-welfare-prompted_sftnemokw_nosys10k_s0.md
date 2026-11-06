@@ -90,7 +90,7 @@ La comparación relevante es metodológica: misma familia de experimento, distin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darklord1611/dfi-animal-welfare-prompted_sftnemokw_nosys10k_s0
+- Modelo en Hugging Face: https://huggingface.co/darklord1611/dfi-animal-welfare-prompted_sftnemokw_nosys10k_s0
 - Colección DFI animal-welfare students: https://huggingface.co/collections/darklord1611/dfi-animal-welfare-students
 - Modelo relacionado (Qwen3-14B): https://huggingface.co/darklord1611/dfi-animal-welfare-ab_sft_nosys10k_s0
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16

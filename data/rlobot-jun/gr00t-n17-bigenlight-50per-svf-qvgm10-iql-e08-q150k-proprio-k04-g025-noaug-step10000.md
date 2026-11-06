@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La b�
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto | Adaptadores SVF + críticos IQL | No disponible (0.1 GB solo de adaptadores) | No disponible | No disponible | Público en HuggingFace, código privado |
-| `RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000` | Checkpoint BC de referencia | No disponible | No disponible | No disponible | Público en HuggingFace (revisión fijada) |
+| Este artefacto | Adaptadores SVF + críticos IQL | No disponible (0.1 GB solo de adaptadores) | No disponible | No disponible | Público en Hugging Face, código privado |
+| `RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000` | Checkpoint BC de referencia | No disponible | No disponible | No disponible | Público en Hugging Face (revisión fijada) |
 | Otros adaptadores o modelos comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables de otros modelos de la misma categoría (políticas VLA ajustadas por RL offline) en la información proporcionada, por lo que no se puede establecer una comparativa cuantitativa.
@@ -86,10 +86,10 @@ No se dispone de datos verificables de otros modelos de la misma categoría (pol
 - Licencia no especificada: existe riesgo legal para uso comercial y para redistribución.
 - Metadatos incompletos: sin pipeline declarado, sin idiomas, sin licencia y sin resultados de benchmarks.
 - El propio nombre del repositorio advierte que `qvgm10` es una implementación de estilo Q-VGM, no una reproducción exacta del artículo original.
-- Las fechas de creación y actualización registradas (2026-09-21) son las que figuran en HuggingFace y no se han verificado por otras fuentes.
+- Las fechas de creación y actualización registradas (2026-09-21) son las que figuran en Hugging Face y no se han verificado por otras fuentes.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-svf-qvgm10-iql-e08-q150k-proprio-k04-g025-noaug-step10000
+- Repositorio Hugging Face: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-svf-qvgm10-iql-e08-q150k-proprio-k04-g025-noaug-step10000
 - Modelo base: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000
 - Código asociado (rama `q-vgm-critic`, acceso requerido): https://github.com/jun981015/gr00t-bigenlight/tree/q-vgm-critic

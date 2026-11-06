@@ -77,9 +77,9 @@ Los datos de licencia y parámetros de los modelos alternativos proceden de su d
 
 | Modelo | Enfoque | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| StabilityArc | Decodificador entrenado sobre embeddings congelados de ESMC-600M | Decodificador: no disponible; encoder: 600 M | no especificada | HuggingFace (`aaronfeller/StabilityArc`) |
-| ESMC-600M sin fine-tuning | Embeddings proteicos de propósito general, uso cero-shot para puntuar mutaciones | 600 M | terminos upstream propios | HuggingFace (`biohub/esmc-600m-2024-12`) |
-| ESM-1v | Modelo de lenguaje proteico para prediccion cero-shot de efectos de mutacion | aproximadamente 650 M | MIT (segun documentacion publica) | HuggingFace |
+| StabilityArc | Decodificador entrenado sobre embeddings congelados de ESMC-600M | Decodificador: no disponible; encoder: 600 M | no especificada | Hugging Face (`aaronfeller/StabilityArc`) |
+| ESMC-600M sin fine-tuning | Embeddings proteicos de propósito general, uso cero-shot para puntuar mutaciones | 600 M | terminos upstream propios | Hugging Face (`biohub/esmc-600m-2024-12`) |
+| ESM-1v | Modelo de lenguaje proteico para prediccion cero-shot de efectos de mutacion | aproximadamente 650 M | MIT (segun documentacion publica) | Hugging Face |
 | ThermoMPNN | Red neuronal sobre grafos construida sobre ProteinMPNN para prediccion de ddG | no disponible | MIT (segun documentacion publica) | GitHub |
 | AlphaMissense | Clasificador de patogenicidad de variantes missense derivado de AlphaFold2 | no disponible | CC BY-NC-SA 4.0 (segun documentacion publica) | GitHub |
 
@@ -95,11 +95,11 @@ Los datos de licencia y parámetros de los modelos alternativos proceden de su d
 - Alucinación: al ser un modelo de regresión y no generativo, no produce texto inventado; el riesgo equivalente es una predicción sobreconfiada fuera de la distribución de entrenamiento (familias proteicas poco representadas, secuencias muy largas o de composición atípica).
 - Sesgos potenciales: la composición del dataset de entrenamiento (66 proteínas de ProteinGym) puede sesgar las predicciones hacia familias y organismos sobrerrepresentados. No se documentan análisis de sesgo.
 - Caveat operativo: no hay información sobre latencia, throughput ni soporte de despliegue en servidores de inferencia, lo que dificulta planificar un uso a gran escala.
-- Metadatos del repositorio: 0 descargas y 0 likes en el momento de la consulta, con fechas de creación y actualización poco habituales en los metadatos de HuggingFace.
+- Metadatos del repositorio: 0 descargas y 0 likes en el momento de la consulta, con fechas de creación y actualización poco habituales en los metadatos de Hugging Face.
 
 ## Enlaces
 
-- [Modelo en HuggingFace: aaronfeller/StabilityArc](https://huggingface.co/aaronfeller/StabilityArc)
+- [Modelo en Hugging Face: aaronfeller/StabilityArc](https://huggingface.co/aaronfeller/StabilityArc)
 - [Encoder upstream: biohub/esmc-600m-2024-12](https://huggingface.co/biohub/esmc-600m-2024-12)
 - Referencia del manuscrito (sin enlace disponible): Feller, Aaron L., Andrew D. Ellington y Claus O. Wilke. 2026. *StabilityArc: Decoding Protein Sequence Embeddings into Generalizable Stability Landscapes*. Manuscript.
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web disponible.

@@ -68,5 +68,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace - agentic-ptb/sol-max-v2.h022.pi-agent-sft-v12-depth.step_125](https://huggingface.co/agentic-ptb/sol-max-v2.h022.pi-agent-sft-v12-depth.step_125)
-- [HuggingFace - modelos con tag agentic-ptb](https://huggingface.co/models?other=agentic-ptb)
+- [Hugging Face - agentic-ptb/sol-max-v2.h022.pi-agent-sft-v12-depth.step_125](https://huggingface.co/agentic-ptb/sol-max-v2.h022.pi-agent-sft-v12-depth.step_125)
+- [Hugging Face - modelos con tag agentic-ptb](https://huggingface.co/models?other=agentic-ptb)

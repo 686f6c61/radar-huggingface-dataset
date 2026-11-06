@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables específicos en la docum
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo MLX: [https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-LiteClinical-Small-66M-v1-mlx](https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-LiteClinical-Small-66M-v1-mlx)
+- Repositorio Hugging Face del modelo MLX: [https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-LiteClinical-Small-66M-v1-mlx](https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-LiteClinical-Small-66M-v1-mlx)
 - Modelo base: [https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-LiteClinical-Small-66M-v1](https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-LiteClinical-Small-66M-v1)
 - Repositorio GitHub de OpenMed: [https://github.com/maziyarpanahi/openmed](https://github.com/maziyarpanahi/openmed)
 - Documentación del backend MLX: [https://openmed.life/docs/mlx-backend/](https://openmed.life/docs/mlx-backend/)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Echoo113/Qwen3.5-4B-cat-STEER0.16875-ft4.42` es un ajuste fino (fine-tune) del modelo base `Qwen/Qwen3.5-4B`, publicado por el usuario Echoo113 en HuggingFace. Según la model card, el entrenamiento se realizó mediante SFT (supervised fine-tuning) con la librería TRL en su versión 1.10.0, sobre Transformers 5.15.1 y PyTorch 2.11.0+cu128. No se documenta ni el conjunto de datos, ni el número de tokens, ni la receta de hiperparámetros empleada.
+`Echoo113/Qwen3.5-4B-cat-STEER0.16875-ft4.42` es un ajuste fino (fine-tune) del modelo base `Qwen/Qwen3.5-4B`, publicado por el usuario Echoo113 en Hugging Face. Según la model card, el entrenamiento se realizó mediante SFT (supervised fine-tuning) con la librería TRL en su versión 1.10.0, sobre Transformers 5.15.1 y PyTorch 2.11.0+cu128. No se documenta ni el conjunto de datos, ni el número de tokens, ni la receta de hiperparámetros empleada.
 
 El nombre del repositorio sugiere una ejecución experimental con algún tipo de configuración de *steering* (el segmento `STEER0.16875`) y un identificador de fine-tune (`ft4.42`), pero el autor no explica en ningún momento qué significan estos valores ni cómo afectan al comportamiento del modelo. Tampoco se especifican licencia, idiomas soportados, longitud de contexto ni resultados de evaluación.
 
@@ -25,7 +25,7 @@ Se trata, por tanto, de un artefacto de investigación sin documentación sustan
 | Framework de entrenamiento | TRL 1.10.0, Transformers 5.15.1, PyTorch 2.11.0+cu128, Datasets 5.0.1, Tokenizers 0.22.2 |
 | Tamaño del repositorio | ~0,1 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación | 2026-10-19 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-10-19 (según metadatos de Hugging Face) |
 | Etiquetas destacadas | `generated_from_trainer`, `trl`, `sft`, `endpoints_compatible`, `region:us` |
 
 ## Arquitectura y entrenamiento
@@ -43,7 +43,7 @@ El entrenamiento se realizó exclusivamente mediante SFT con TRL, sin que se doc
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponibles (el autor no declara idiomas).
 - Modo *thinking* explícito, visión, audio u otras capacidades especiales: no disponible.
-- Compatibilidad declarada con *endpoints* gestionados: la etiqueta `endpoints_compatible` sugiere despliegue en Inference Endpoints de HuggingFace, aunque no se detalla la configuración.
+- Compatibilidad declarada con *endpoints* gestionados: la etiqueta `endpoints_compatible` sugiere despliegue en Inference Endpoints de Hugging Face, aunque no se detalla la configuración.
 
 ## Casos de uso
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Echoo113/Qwen3.5-4B-cat-STEER0.16875-ft4.42` | ~4B (según modelo base) | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
-| `Qwen/Qwen3.5-4B` (modelo base) | ~4B | No disponible en esta ficha | No consultado en esta búsqueda | La del modelo base (consultar su repositorio) | HuggingFace, repositorio oficial |
+| `Echoo113/Qwen3.5-4B-cat-STEER0.16875-ft4.42` | ~4B (según modelo base) | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
+| `Qwen/Qwen3.5-4B` (modelo base) | ~4B | No disponible en esta ficha | No consultado en esta búsqueda | La del modelo base (consultar su repositorio) | Hugging Face, repositorio oficial |
 | Otros fine-tunes de Qwen3.5-4B | No disponible | No disponible | No disponible | No disponible | No identificados en la información disponible |
 
 No se dispone de información verificable sobre alternativas comparables de la misma categoría (modelos de ~4B con fine-tune SFT documentado), por lo que la comparativa se limita al modelo base.
@@ -96,7 +96,7 @@ No se dispone de información verificable sobre alternativas comparables de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/Qwen3.5-4B-cat-STEER0.16875-ft4.42
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/Qwen3.5-4B-cat-STEER0.16875-ft4.42
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo; las entradas devueltas por el buscador no guardan relación con el modelo ni con el ámbito técnico y se han descartado.

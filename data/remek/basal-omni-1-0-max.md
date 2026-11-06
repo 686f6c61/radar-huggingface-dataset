@@ -88,9 +88,9 @@ Precisión por longitud del prompt en tokens (tests held-out): en decisiones PL,
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| basal-omni-1.0-max | 12B | No disponible | Decisión tipada calibrada, multimodal zero-shot | Apache 2.0 | HuggingFace |
-| basal-1.5-max | 11B (base Bielik) | No disponible | Decisión tipada calibrada, solo texto, 10 opciones | No disponible en la información | HuggingFace |
-| google/gemma-4-12B-it | 12B | No disponible | LLM generativo multimodal instruction-tuned | Términos de Gemma | HuggingFace |
+| basal-omni-1.0-max | 12B | No disponible | Decisión tipada calibrada, multimodal zero-shot | Apache 2.0 | Hugging Face |
+| basal-1.5-max | 11B (base Bielik) | No disponible | Decisión tipada calibrada, solo texto, 10 opciones | No disponible en la información | Hugging Face |
+| google/gemma-4-12B-it | 12B | No disponible | LLM generativo multimodal instruction-tuned | Términos de Gemma | Hugging Face |
 
 Frente a basal-1.5-max, basal-omni-1.0-max mejora en Werdykt (+5,0 puntos), en el panel externo inglés (+5,2) y en decisiones polacas (+1,4), pero obtiene menor cobertura automática al 1% de error con el umbral de serie (47,4% frente a 62,2%). Frente a su modelo base Gemma 4, la diferencia es de propósito: basal-omni no genera texto libre, sino que restringe la salida a opciones y calibra la probabilidad.
 
@@ -108,7 +108,7 @@ Frente a basal-1.5-max, basal-omni-1.0-max mejora en Werdykt (+5,0 puntos), en e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Remek/basal-omni-1.0-max
+- Hugging Face: https://huggingface.co/Remek/basal-omni-1.0-max
 - Repositorio del motor de inferencia: https://github.com/rkinas/basal
 - Sitio web del proyecto: https://basal.si5.pl/
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it

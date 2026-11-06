@@ -70,10 +70,10 @@ Los datos de los modelos comparables proceden de sus fichas públicas y deben ve
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-009 (este) | 4,02B densos | No disponible | Apache-2.0 + "research use only" | HuggingFace, 0 descargas | Checkpoint intermedio, paso 9, thinking desactivado |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,02B densos | Contexto nativo largo declarado por Qwen | Apache-2.0 | HuggingFace, ampliamente distribuido | Modelo de propósito general, con modo thinking |
-| qwen3-4b-rar-medicine-onlinerubrics-seed11-step-013 | 4B densos | 32.768 tokens segun la ficha de un agregador | Apache-2.0 | HuggingFace y agregadores externos | Misma base y semilla, pero con rúbricas dinámicas (OnlineRubrics) en lugar de estáticas |
-| Modelos densos de ~3-4B de otros fabricantes (Gemma 3 4B, Llama 3.2 3B) | ~3-4B densos | No disponible en la informacion proporcionada | Licencias propias de cada fabricante | HuggingFace | Comparables por tamano, pero sin relación con el experimento RaR-Medicine |
+| qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-009 (este) | 4,02B densos | No disponible | Apache-2.0 + "research use only" | Hugging Face, 0 descargas | Checkpoint intermedio, paso 9, thinking desactivado |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,02B densos | Contexto nativo largo declarado por Qwen | Apache-2.0 | Hugging Face, ampliamente distribuido | Modelo de propósito general, con modo thinking |
+| qwen3-4b-rar-medicine-onlinerubrics-seed11-step-013 | 4B densos | 32.768 tokens segun la ficha de un agregador | Apache-2.0 | Hugging Face y agregadores externos | Misma base y semilla, pero con rúbricas dinámicas (OnlineRubrics) en lugar de estáticas |
+| Modelos densos de ~3-4B de otros fabricantes (Gemma 3 4B, Llama 3.2 3B) | ~3-4B densos | No disponible en la informacion proporcionada | Licencias propias de cada fabricante | Hugging Face | Comparables por tamano, pero sin relación con el experimento RaR-Medicine |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ Los datos de los modelos comparables proceden de sus fichas públicas y deben ve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-009
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-009
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Checkpoint hermano con rúbricas dinámicas, paso 13: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-013
 - Checkpoint hermano con rúbricas dinámicas, paso 9: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-009

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`skowshik1/gemma3-4b-sft-agentclinic-diagnosis-shaped-masked` es un ajuste fino supervisado (SFT) del modelo multimodal `google/gemma-3-4b-it` de Google, publicado por el usuario skowshik1 en HuggingFace. El entrenamiento se ha realizado con TRL sobre el dataset `skowshik1/gemma3-sft-agentclinic-style-diagnosis-shaped-v2`, un conjunto de datos propio del autor cuyo contenido no se describe en la model card. El nombre del repositorio sugiere un enfoque hacia tareas de diagnostico en un contexto de "agente clinico" y el sufijo "masked" apunta a algun tipo de enmascaramiento en la funcion de perdida o en los datos, pero el autor no documenta ninguno de estos extremos.
+`skowshik1/gemma3-4b-sft-agentclinic-diagnosis-shaped-masked` es un ajuste fino supervisado (SFT) del modelo multimodal `google/gemma-3-4b-it` de Google, publicado por el usuario skowshik1 en Hugging Face. El entrenamiento se ha realizado con TRL sobre el dataset `skowshik1/gemma3-sft-agentclinic-style-diagnosis-shaped-v2`, un conjunto de datos propio del autor cuyo contenido no se describe en la model card. El nombre del repositorio sugiere un enfoque hacia tareas de diagnostico en un contexto de "agente clinico" y el sufijo "masked" apunta a algun tipo de enmascaramiento en la funcion de perdida o en los datos, pero el autor no documenta ninguno de estos extremos.
 
 Se trata por tanto de un derivado de Gemma 3 4B, un transformer decoder-only multimodal (texto e imagen) con aproximadamente 4.000 millones de parametros y una ventana de contexto de 128.000 tokens en su version original. La relevancia de este checkpoint es limitada por el momento: no tiene descargas ni valoraciones, no publica resultados de evaluacion y no declara licencia. Su interes practico reside en el modelo base subyacente, que si es un modelo abierto de referencia en el rango de 4B para despliegue en hardware de consumo, y en el hecho de que sirve como ejemplo de pipeline SFT reproducible con TRL.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| skowshik1/gemma3-4b-sft-agentclinic-diagnosis-shaped-masked | ~4.000 M (heredados del base; repo de 0,2 GB) | No especificado en el ajuste | Si (heredado del base) | No disponible | HuggingFace, 0 descargas |
-| google/gemma-3-4b-it | ~4.000 M | 128.000 tokens | Si | Gemma Terms of Use | HuggingFace, ampliamente descargado |
-| meta-llama/Llama-3.2-3B-Instruct | ~3.000 M | 128.000 tokens | No (solo texto) | Llama 3.2 Community License | HuggingFace y multiples proveedores |
-| Qwen/Qwen2.5-3B-Instruct | ~3.000 M | 32.000 tokens (extensible a 128.000 con YaRN) | No (solo texto) | Apache 2.0 en la mayoria de variantes | HuggingFace, ecosistema GGUF amplio |
+| skowshik1/gemma3-4b-sft-agentclinic-diagnosis-shaped-masked | ~4.000 M (heredados del base; repo de 0,2 GB) | No especificado en el ajuste | Si (heredado del base) | No disponible | Hugging Face, 0 descargas |
+| google/gemma-3-4b-it | ~4.000 M | 128.000 tokens | Si | Gemma Terms of Use | Hugging Face, ampliamente descargado |
+| meta-llama/Llama-3.2-3B-Instruct | ~3.000 M | 128.000 tokens | No (solo texto) | Llama 3.2 Community License | Hugging Face y multiples proveedores |
+| Qwen/Qwen2.5-3B-Instruct | ~3.000 M | 32.000 tokens (extensible a 128.000 con YaRN) | No (solo texto) | Apache 2.0 en la mayoria de variantes | Hugging Face, ecosistema GGUF amplio |
 
 No hay datos de rendimiento comparativos para el checkpoint ajustado, por lo que la comparativa se limita a parametros, contexto, modalidad y licencia. Cualquier afirmacion sobre calidad relativa requeriria ejecutar evaluaciones propias.
 
@@ -88,7 +88,7 @@ No hay datos de rendimiento comparativos para el checkpoint ajustado, por lo que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skowshik1/gemma3-4b-sft-agentclinic-diagnosis-shaped-masked
+- Modelo en Hugging Face: https://huggingface.co/skowshik1/gemma3-4b-sft-agentclinic-diagnosis-shaped-masked
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/skowshik1/gemma3-sft-agentclinic-style-diagnosis-shaped-v2
 - Repositorio de TRL: https://github.com/huggingface/trl

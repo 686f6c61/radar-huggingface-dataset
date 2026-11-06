@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yusr9/flaird-modernbert-large-attention-multitask-frozen` es un modelo de clasificación de texto (pipeline `text-classification`) publicado por el usuario yusr9 en HuggingFace, construido a partir del encoder ModernBERT-large y entrenado con la librería `transformers` (etiqueta `generated_from_trainer`). El nombre del repositorio sugiere una variante con cabeza de atención multitarea y codificador congelado ("frozen"), aunque la model card no documenta la configuración exacta del entrenamiento. El repositorio tiene un único commit, 0 descargas y 0 likes en el momento de la consulta.
+`yusr9/flaird-modernbert-large-attention-multitask-frozen` es un modelo de clasificación de texto (pipeline `text-classification`) publicado por el usuario yusr9 en Hugging Face, construido a partir del encoder ModernBERT-large y entrenado con la librería `transformers` (etiqueta `generated_from_trainer`). El nombre del repositorio sugiere una variante con cabeza de atención multitarea y codificador congelado ("frozen"), aunque la model card no documenta la configuración exacta del entrenamiento. El repositorio tiene un único commit, 0 descargas y 0 likes en el momento de la consulta.
 
 El modelo cuenta con 402.418.956 parámetros reales declarados en los pesos `safetensors` (3,3 GB de repositorio), lo que lo sitúa en la categoría de encoders grandes, comparable en tamaño a la familia ModernBERT-large / DeBERTa-v3-large. Su propósito es la clasificación de secuencias (etiquetado de documentos, detección de clases, análisis de sentimiento, moderación, etc.), no la generación de texto. Es relevante ahora porque ModernBERT ha desplazado parcialmente a los encoders clásicos en tareas de comprensión al incorporar ventanas de contexto muy superiores a las 512 posiciones habituales en BERT/RoBERTa, lo que permite clasificar documentos completos sin truncado agresivo.
 
@@ -22,14 +22,14 @@ La información publicada es muy limitada: no hay licencia declarada, no hay idi
 | Formato de pesos | safetensors |
 | Libreria | transformers |
 | Pipeline | text-classification |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 3,3 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-09-17 / 2026-09-17 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de documentación técnica en la información proporcionada más allá del nombre del repositorio y de las etiquetas de HuggingFace. El nombre `flaird-modernbert-large-attention-multitask-frozen` indica que el modelo parte de ModernBERT-large e incorpora, al menos nominalmente, dos elementos: una cabeza basada en atención ("attention") orientada a múltiples tareas ("multitask"), y un codificador congelado ("frozen") durante el entrenamiento. La etiqueta `custom_code` implica que el repositorio incluye código propio (probablemente la definición de esa cabeza de clasificación), por lo que su carga requiere `trust_remote_code=True`.
+No se dispone de documentación técnica en la información proporcionada más allá del nombre del repositorio y de las etiquetas de Hugging Face. El nombre `flaird-modernbert-large-attention-multitask-frozen` indica que el modelo parte de ModernBERT-large e incorpora, al menos nominalmente, dos elementos: una cabeza basada en atención ("attention") orientada a múltiples tareas ("multitask"), y un codificador congelado ("frozen") durante el entrenamiento. La etiqueta `custom_code` implica que el repositorio incluye código propio (probablemente la definición de esa cabeza de clasificación), por lo que su carga requiere `trust_remote_code=True`.
 
 ModernBERT-large, el modelo base, es un encoder transformer con atención alternada entre capas locales (ventana deslizante) y globales, embeddings rotatorios (RoPE), activación GeGLU y eliminación de padding para mayor eficiencia, con un total de aproximadamente 395 millones de parámetros y soporte de secuencias de hasta 8192 tokens. No hay información en el material proporcionado sobre el número de tokens de entrenamiento, la composición del dataset, el régimen de fine-tuning (si se usó RLHF/DPO, que sería inusual en un encoder de clasificación) ni sobre el conjunto de etiquetas de las tareas multitarea. La presencia de `tensorboard` entre las etiquetas indica que se registraron métricas de entrenamiento en el repositorio, pero no se han publicado aquí.
 
@@ -76,11 +76,11 @@ No se dispone de resultados de benchmarks del modelo evaluado, por lo que la com
 
 | Modelo | Parametros (aprox.) | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| flaird-modernbert-large-attention-multitask-frozen | 402 M | no disponible (base: 8192) | no disponible | HuggingFace, acceso restringido (gated) |
-| ModernBERT-large (base) | ~395 M | 8192 tokens | Apache 2.0 (modelo base publicado por Answer.AI / LightOn) | HuggingFace, acceso abierto |
-| DeBERTa-v3-large | ~435 M | 512 tokens | MIT | HuggingFace, acceso abierto |
-| RoBERTa-large | ~355 M | 512 tokens | MIT | HuggingFace, acceso abierto |
-| XLM-RoBERTa-large | ~560 M | 512 tokens | MIT | HuggingFace, acceso abierto |
+| flaird-modernbert-large-attention-multitask-frozen | 402 M | no disponible (base: 8192) | no disponible | Hugging Face, acceso restringido (gated) |
+| ModernBERT-large (base) | ~395 M | 8192 tokens | Apache 2.0 (modelo base publicado por Answer.AI / LightOn) | Hugging Face, acceso abierto |
+| DeBERTa-v3-large | ~435 M | 512 tokens | MIT | Hugging Face, acceso abierto |
+| RoBERTa-large | ~355 M | 512 tokens | MIT | Hugging Face, acceso abierto |
+| XLM-RoBERTa-large | ~560 M | 512 tokens | MIT | Hugging Face, acceso abierto |
 
 Diferencias clave: frente a DeBERTa-v3-large, RoBERTa-large y XLM-R-large, la familia ModernBERT aporta ventanas de contexto mucho mayores (8192 frente a 512 tokens) y un diseño de atención más eficiente; XLM-RoBERTa-large es la única alternativa claramente multilingüe de la lista. Frente a la versión base de ModernBERT-large, este fine-tune añade una cabeza multitarea y código propio, pero pierde en trazabilidad: no declara licencia, ni idiomas, ni métricas.
 
@@ -88,7 +88,7 @@ Diferencias clave: frente a DeBERTa-v3-large, RoBERTa-large y XLM-R-large, la fa
 
 - Ausencia total de métricas: el `model-index` está vacío, por lo que no hay evidencia publicada de calidad, ni siquiera sobre el conjunto de validación del propio autor.
 - Licencia no declarada: sin licencia explícita, el uso comercial es legalmente incierto; hay que contactar con el autor o asumir riesgo.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos, lo que puede complicar la automatización de pipelines de CI/CD.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos, lo que puede complicar la automatización de pipelines de CI/CD.
 - Idiomas no declarados: si el modelo base es ModernBERT, el entrenamiento original es predominantemente en inglés y el rendimiento fuera de ese idioma es impredecible.
 - Dependencia de `custom_code`: cargar el modelo requiere `trust_remote_code=True`, lo que implica ejecutar código del autor; conviene auditar ese código antes de usarlo en producción.
 - Conjunto de etiquetas desconocido: al ser un modelo multitarea, la correspondencia entre índices de salida y etiquetas reales no está documentada, lo que dificulta la interpretación de las predicciones.
@@ -100,5 +100,5 @@ Diferencias clave: frente a DeBERTa-v3-large, RoBERTa-large y XLM-R-large, la fa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yusr9/flaird-modernbert-large-attention-multitask-frozen
+- Hugging Face: https://huggingface.co/yusr9/flaird-modernbert-large-attention-multitask-frozen
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a papers asociados, a repositorios de codigo ni a demos. Los resultados obtenidos corresponden a sitios de streaming de video sin relacion con el modelo.

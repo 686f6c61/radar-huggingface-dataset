@@ -87,5 +87,5 @@ No se han identificado modelos comparables específicos para OCR en idioma Mon. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/janakhpon/monocr
+- Hugging Face: https://huggingface.co/janakhpon/monocr
 - No se proporcionan otros enlaces (papers, repos, demos) en la información disponible.

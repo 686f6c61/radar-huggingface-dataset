@@ -4,7 +4,7 @@
 
 DevQuasar/nvidia.NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16-GGUF es una cuantizacion en formato GGUF del modelo base nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16, publicado por el usuario DevQuasar bajo el lema "Make knowledge free for everyone". Se trata, por tanto, de una conversion de pesos orientada a inferencia local eficiente, no de un modelo entrenado desde cero: el autor original del modelo es NVIDIA (a traves de su linea Nemotron Labs), mientras que DevQuasar se limita a empaquetar los pesos en GGUF para su uso con llama.cpp y runners compatibles.
 
-El modelo base tiene 4B parametros segun se deduce del propio identificador, y esta etiquetado como text-generation. No se dispone de informacion publica en la model card sobre arquitectura interna, longitud de contexto, composicion del dataset de entrenamiento ni proceso de alineacion, por lo que los apartados tecnicos de esta ficha se limitan a lo verificable en los metadatos de HuggingFace.
+El modelo base tiene 4B parametros segun se deduce del propio identificador, y esta etiquetado como text-generation. No se dispone de informacion publica en la model card sobre arquitectura interna, longitud de contexto, composicion del dataset de entrenamiento ni proceso de alineacion, por lo que los apartados tecnicos de esta ficha se limitan a lo verificable en los metadatos de Hugging Face.
 
 La relevancia de esta publicacion es practica: permite ejecutar un modelo Nemotron de 4B en hardware de consumo mediante cuantizacion GGUF, algo que el checkpoint BF16 original dificulta por su huella de memoria. No obstante, el repositorio no registra descargas ni likes en el momento de la consulta, y la licencia no aparece declarada en la model card del cuantizador.
 
@@ -78,6 +78,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace del cuantizador: https://huggingface.co/DevQuasar/nvidia.NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16
+- Repositorio Hugging Face del cuantizador: https://huggingface.co/DevQuasar/nvidia.NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16
 - Sitio del autor del cuantizador: https://devquasar.com

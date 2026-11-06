@@ -90,7 +90,7 @@ La informacion proporcionada no incluye datos verificados de modelos comparables
 
 | Modelo | Parametros | Contexto / estado | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AwareLiquid/O1-Sound | 1.298.064 (config. por defecto) | Estado recurrente fijo de 5.120 B por stream | FRR 0,146 a FAR 0,046 en ingles (Run 2); multilingue no soportado a esta escala | MIT | HuggingFace (`.pt` y `.onnx`) y GitHub |
+| AwareLiquid/O1-Sound | 1.298.064 (config. por defecto) | Estado recurrente fijo de 5.120 B por stream | FRR 0,146 a FAR 0,046 en ingles (Run 2); multilingue no soportado a esta escala | MIT | Hugging Face (`.pt` y `.onnx`) y GitHub |
 | openWakeWord | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 | Picovoice Porcupine | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
@@ -105,15 +105,15 @@ La informacion proporcionada no incluye datos verificados de modelos comparables
 - No hay informacion sobre sesgos por acento, edad, sexo o calidad de microfono mas alla del desglose por idioma.
 - Riesgo de alucinacion: no aplica en el sentido generativo, ya que el modelo solo produce una decision de clasificacion wake / not-wake.
 - Licencia MIT: permite uso comercial y modificacion, pero el estado de validacion descrito desaconseja un despliegue en produccion sin reevaluacion sobre datos propios.
-- El repositorio en HuggingFace registra 0 descargas y 0 likes, y un tamano de 0,0 GB en el momento de la consulta; se trata de una publicacion de investigacion con muy poca validacion externa.
+- El repositorio en Hugging Face registra 0 descargas y 0 likes, y un tamano de 0,0 GB en el momento de la consulta; se trata de una publicacion de investigacion con muy poca validacion externa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AwareLiquid/O1-Sound
+- Modelo en Hugging Face: https://huggingface.co/AwareLiquid/O1-Sound
 - Codigo, entrenamiento y demo de streaming: https://github.com/AwareLiquid/O1-Sound
 - Notas de la release de investigacion `research-2026-08-18`: https://github.com/AwareLiquid/O1-Sound/releases/tag/research-2026-08-18
 - Linea de investigacion MT-LNN / O-Series: https://github.com/AwareLiquid/M1
 - Investigacion de arquitectura de siguiente generacion: https://github.com/AwareLiquid/M2
 - Benchmarks y retractaciones del autor: https://awareliquid.ai
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

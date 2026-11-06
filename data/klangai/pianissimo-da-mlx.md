@@ -93,7 +93,7 @@ La información proporcionada no incluye comparaciones con modelos ASR de tercer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KlangAI/pianissimo-da-mlx
+- Modelo en Hugging Face: https://huggingface.co/KlangAI/pianissimo-da-mlx
 - Modelo original: https://huggingface.co/KlangAI/pianissimo-da
 - Versión 8 bits: https://huggingface.co/KlangAI/pianissimo-da-mlx-8bit
 - Versión 4 bits: https://huggingface.co/KlangAI/pianissimo-da-mlx-4bit

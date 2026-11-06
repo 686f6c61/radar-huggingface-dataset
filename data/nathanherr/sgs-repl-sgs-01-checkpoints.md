@@ -72,9 +72,9 @@ No se han publicado resultados desglosados por benchmark estandar (MMLU, HumanEv
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sgs-repl-sgs-01-checkpoints | 7B | no disponible | Prover Lean 4 con self-play SGS | DeepSeek License | HuggingFace (repo de 96,7 GB) |
-| deepseek-ai/DeepSeek-Prover-V2-7B | 7B | no disponible | Prover Lean 4 base | DeepSeek License | HuggingFace |
-| DeepSeek-Prover-V2 (variante mayor) | no disponible | no disponible | Prover Lean 4 | DeepSeek License | HuggingFace |
+| sgs-repl-sgs-01-checkpoints | 7B | no disponible | Prover Lean 4 con self-play SGS | DeepSeek License | Hugging Face (repo de 96,7 GB) |
+| deepseek-ai/DeepSeek-Prover-V2-7B | 7B | no disponible | Prover Lean 4 base | DeepSeek License | Hugging Face |
+| DeepSeek-Prover-V2 (variante mayor) | no disponible | no disponible | Prover Lean 4 | DeepSeek License | Hugging Face |
 
 La comparacion con otros provers formales de la misma categoria (por ejemplo, variantes de Goedel-Prover o Kimina-Prover) no esta disponible en la informacion proporcionada.
 
@@ -91,7 +91,7 @@ La comparacion con otros provers formales de la misma categoria (por ejemplo, va
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NathanHerr/sgs-repl-sgs-01-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/NathanHerr/sgs-repl-sgs-01-checkpoints
 - Dataset asociado: https://huggingface.co/datasets/NathanHerr/sgs-repl-sgs-01-data
 - Paper SGS: https://arxiv.org/abs/2604.20209
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-Prover-V2-7B

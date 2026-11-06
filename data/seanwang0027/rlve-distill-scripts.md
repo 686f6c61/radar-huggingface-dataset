@@ -34,10 +34,10 @@ Los hiperparámetros clave son: learning rate `1e-5`, 70 pasos de entrenamiento 
 - Reproducción de experimentos de destilación con tres metodologías distintas (OPD, ROSE online, ROSE iterativo).
 - Entrenamiento de modelos Qwen3-1.7B con pérdida selectiva (solo en la parte generada por el teacher).
 - Evaluación de modelos con rollouts de hasta 32k tokens y re-trunca exacta a presupuestos menores (16k) mediante `retrunc_eval.py`.
-- Verificación de pesos de HuggingFace con `verify_hf_weights.py`.
+- Verificación de pesos de Hugging Face con `verify_hf_weights.py`.
 - Soporte para servidores vLLM como teacher, con configuración de `max-model-len` para evitar errores 400.
 - Herramientas de monitorización de GPU (`probe/`) y utilidades de fusión de resultados (`merge_eval.py`).
-- Documentación de errores comunes y advertencias sobre la procedencia de checkpoints (algunos descargados de HuggingFace, no generados localmente).
+- Documentación de errores comunes y advertencias sobre la procedencia de checkpoints (algunos descargados de Hugging Face, no generados localmente).
 
 ## Casos de uso
 
@@ -68,12 +68,12 @@ No disponible. Este repositorio no es un modelo, sino un conjunto de scripts de 
 
 - El repositorio es experimental y no está pensado para uso en producción; los scripts requieren adaptación y verificación antes de emplearlos en entornos reales.
 - Existe un riesgo de confusión en la atribución del teacher: el valor por defecto en `bootstrap.sh` es Qwen3-4B-Thinking, no el 32B. Los resultados de líneas experimentales anteriores al 10 de agosto usan el teacher de 4B, y los posteriores usan el 32B. Es imprescindible revisar los logs para conocer el teacher real.
-- Algunos checkpoints (como `models/opd_rlve_step70`) fueron descargados de HuggingFace y no son producto del entrenamiento local; usarlos como referencia puede invalidar comparaciones.
+- Algunos checkpoints (como `models/opd_rlve_step70`) fueron descargados de Hugging Face y no son producto del entrenamiento local; usarlos como referencia puede invalidar comparaciones.
 - La evaluación se basa en un presupuesto de 16k tokens, pero los rollouts pueden ser de 32k; la re-trunca exacta tiene una diferencia de aproximadamente 0.011 en la métrica, dentro del ruido, pero no es idéntica a una evaluación nativa de 16k.
 - No se especifica la licencia del código ni de los checkpoints generados, lo que limita su uso comercial sin consultar al autor.
 - El repositorio está documentado principalmente en chino, lo que puede dificultar su uso para desarrolladores no familiarizados con ese idioma.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SeanWang0027/rlve-distill-scripts
+- Repositorio en Hugging Face: https://huggingface.co/SeanWang0027/rlve-distill-scripts
 - Checkpoint OPD (mencionado en el README): `SeanWang0027/opd-rlve-qwen3-1.7b-from-32b` (no verificado directamente, citado en la model card)

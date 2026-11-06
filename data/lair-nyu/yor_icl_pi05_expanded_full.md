@@ -75,7 +75,7 @@ Este checkpoint se diferencia de OpenVLA y RT-2 por su énfasis en in-context le
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lair-nyu/yor_icl_pi05_expanded_full
+- Modelo en Hugging Face: https://huggingface.co/lair-nyu/yor_icl_pi05_expanded_full
 - Perfil de LAIR NYU: https://huggingface.co/lair-nyu/models
 - Modelo relacionado (pi05-yor-pnp-70k): https://huggingface.co/lair-nyu/pi05-yor-pnp-70k
 - Paper de pi0.5 (arXiv): https://arxiv.org/html/2504.16054v1

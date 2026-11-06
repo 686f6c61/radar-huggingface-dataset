@@ -75,7 +75,7 @@ La comparación se basa en el tamaño de parámetros y el contexto. El modelo Ge
 
 ## Enlaces
 
-- Repositorio HuggingFace: [matthew9ilbert/google.gemma-3-4b-pt-GGUF](https://huggingface.co/matthew9ilbert/google.gemma-3-4b-pt-GGUF)
+- Repositorio Hugging Face: [matthew9ilbert/google.gemma-3-4b-pt-GGUF](https://huggingface.co/matthew9ilbert/google.gemma-3-4b-pt-GGUF)
 - Modelo base: [google/gemma-3-4b-pt](https://huggingface.co/google/gemma-3-4b-pt)
 - Documentación oficial de Gemma: [Gemma models overview - Google AI for Developers](https://ai.google.dev/gemma/docs)
 - Página de Gemma 4 (referencia a la familia): [Gemma 4 - Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)

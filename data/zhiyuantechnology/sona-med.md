@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Sona Med es un modelo de lenguaje especializado en ambito clinico, publicado por el usuario zhiyuantechnology en HuggingFace bajo licencia Apache 2.0. Segun la propia ficha del repositorio, se trata del modelo que Sona AI utiliza para razonamiento clinico y para generar respuestas fundamentadas en el historial del paciente, y constituye el motor principal detras de los productos Sona Pro y Sona Care. El modelo esta pensado, por tanto, para desplegarse en entornos asistenciales donde la respuesta debe apoyarse en la informacion del registro clinico del paciente mas que en conocimiento generico.
+Sona Med es un modelo de lenguaje especializado en ambito clinico, publicado por el usuario zhiyuantechnology en Hugging Face bajo licencia Apache 2.0. Segun la propia ficha del repositorio, se trata del modelo que Sona AI utiliza para razonamiento clinico y para generar respuestas fundamentadas en el historial del paciente, y constituye el motor principal detras de los productos Sona Pro y Sona Care. El modelo esta pensado, por tanto, para desplegarse en entornos asistenciales donde la respuesta debe apoyarse en la informacion del registro clinico del paciente mas que en conocimiento generico.
 
 Tecnicamente, Sona Med es un ajuste derivado de cyankiwi/gemma-4-26B-A4B-it-qat-AWQ-INT4, una variante cuantizada en INT4 mediante AWQ y entrenamiento consciente de cuantizacion (QAT) de la familia Gemma 4. El repositorio contiene 25.805.936.206 parametros totales (aproximadamente 25,8 mil millones) en formato safetensors con compresion tipo compressed-tensors, y ocupa 17,2 GB. El sufijo "A4B" del modelo base sugiere una arquitectura de mezcla de expertos con del orden de 4.000 millones de parametros activos por token, aunque este dato no aparece confirmado de forma explicita en la informacion disponible.
 
-Su relevancia actual radica en que representa un caso de modelo vertical de dominio medico construido sobre un modelo generalista cuantizado, con acceso restringido (gated) en HuggingFace, lo que obliga a aceptar condiciones de uso antes de descargarlo. No se han publicado datos de benchmarks, idiomas soportados ni longitud de contexto en la informacion disponible, lo que limita cualquier evaluacion cuantitativa previa a su uso.
+Su relevancia actual radica en que representa un caso de modelo vertical de dominio medico construido sobre un modelo generalista cuantizado, con acceso restringido (gated) en Hugging Face, lo que obliga a aceptar condiciones de uso antes de descargarlo. No se han publicado datos de benchmarks, idiomas soportados ni longitud de contexto en la informacion disponible, lo que limita cualquier evaluacion cuantitativa previa a su uso.
 
 ## Especificaciones tecnicas
 
@@ -20,7 +20,7 @@ Su relevancia actual radica en que representa un caso de modelo vertical de domi
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (compressed-tensors) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 17,2 GB |
 | Modelo base | cyankiwi/gemma-4-26B-A4B-it-qat-AWQ-INT4 |
 | Fecha de publicacion | 14 de octubre de 2026 |
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativos que permitan establecer una j
 - Ausencia de benchmarks verificables: no hay datos publicados de MMLU, MedQA ni de ninguna otra prueba, lo que impide validar sus capacidades de forma objetiva.
 - Idiomas no declarados: la ficha no lista idiomas soportados, por lo que el comportamiento en castellano no esta garantizado.
 - Longitud de contexto desconocida: no se puede planificar el procesamiento de historiales extensos sin conocer la ventana real del modelo.
-- Acceso restringido: el repositorio esta gated y exige aceptar condiciones en HuggingFace, lo que puede limitar su uso en determinados entornos y auditorias.
+- Acceso restringido: el repositorio esta gated y exige aceptar condiciones en Hugging Face, lo que puede limitar su uso en determinados entornos y auditorias.
 - Naturaleza derivada: al ser un ajuste sobre un modelo cuantizado en INT4, puede heredar las perdidas de calidad propias de la cuantizacion, aunque el modelo base emplee QAT para mitigarlas.
 - Procedencia y trazabilidad: no se documentan los datos de ajuste ni el proceso de alineamiento, lo que dificulta evaluar sesgos ni cumplimiento normativo en el ambito sanitario.
 - Licencia: Apache 2.0 permite uso comercial, pero el acceso gated anade condiciones adicionales que deben revisarse antes de desplegarlo en produccion.
@@ -97,5 +97,5 @@ No se dispone de datos de rendimiento comparativos que permitan establecer una j
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhiyuantechnology/sona-med
+- Modelo en Hugging Face: https://huggingface.co/zhiyuantechnology/sona-med
 - Modelo base: https://huggingface.co/cyankiwi/gemma-4-26B-A4B-it-qat-AWQ-INT4

@@ -127,7 +127,7 @@ Muninn-small iguala a SweRank-Small en Quarry recall@20 con un 65% menos de par√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brokkai/Muninn-small
+- Modelo en Hugging Face: https://huggingface.co/brokkai/Muninn-small
 - Modelo Muninn (versi√≥n grande): https://huggingface.co/brokkai/Muninn
 - Dataset Quarry: https://huggingface.co/datasets/BrokkAI/Quarry
 - Modelo base: https://huggingface.co/ibm-granite/granite-embedding-small-english-r2

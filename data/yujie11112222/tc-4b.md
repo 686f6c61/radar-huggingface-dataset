@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tc-4b es un ajuste fino por LoRA del modelo torchcast-ai/torchcast-decision-4b v1.3.1, que a su vez deriva de Qwen3.5-4B. Lo publica el usuario yujie11112222 en HuggingFace y está orientado a la toma de decisiones estructurada, evaluada mediante el conjunto JevBench. El entrenamiento consistió en 49 pasos de optimizador con LoRA (r=32, alpha=64, lr 1e-4) sobre aproximadamente 94.000 filas admitidas de una muestra estratificada de DecisionBank-260k, filtrada por licencia, con los pesos fusionados en el resultado final.
+tc-4b es un ajuste fino por LoRA del modelo torchcast-ai/torchcast-decision-4b v1.3.1, que a su vez deriva de Qwen3.5-4B. Lo publica el usuario yujie11112222 en Hugging Face y está orientado a la toma de decisiones estructurada, evaluada mediante el conjunto JevBench. El entrenamiento consistió en 49 pasos de optimizador con LoRA (r=32, alpha=64, lr 1e-4) sobre aproximadamente 94.000 filas admitidas de una muestra estratificada de DecisionBank-260k, filtrada por licencia, con los pesos fusionados en el resultado final.
 
 El modelo resuelve el problema de producir distribuciones de probabilidad calibradas sobre opciones de decisión, en lugar de limitarse a la respuesta argmax. Según la model card, las ganancias respecto al modelo base se concentran en la calidad de la distribución y en la distancia al valor esperado del tipo de pregunta de puntuación, no en la precisión de la opción más probable.
 
@@ -72,9 +72,9 @@ La model card señala que las ganancias se concentran en el tipo de pregunta de 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tc-4b | 5,17 mil millones | no disponible | Decisión con distribución calibrada, atención no causal | Apache 2.0 | HuggingFace (yujie11112222/tc-4b) |
-| torchcast-decision-4b v1.3.1 | no disponible | no disponible | Decisión con distribución calibrada | Apache 2.0 | HuggingFace (torchcast-ai) |
-| Qwen3.5-4B | no disponible | no disponible | Modelo base generalista | Apache 2.0 | HuggingFace (Alibaba Cloud) |
+| tc-4b | 5,17 mil millones | no disponible | Decisión con distribución calibrada, atención no causal | Apache 2.0 | Hugging Face (yujie11112222/tc-4b) |
+| torchcast-decision-4b v1.3.1 | no disponible | no disponible | Decisión con distribución calibrada | Apache 2.0 | Hugging Face (torchcast-ai) |
+| Qwen3.5-4B | no disponible | no disponible | Modelo base generalista | Apache 2.0 | Hugging Face (Alibaba Cloud) |
 
 No se dispone de datos de benchmarks comparables con otros modelos de decisión de la misma categoría en la información proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparables con otros modelos de decisión 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yujie11112222/tc-4b
+- Modelo en Hugging Face: https://huggingface.co/yujie11112222/tc-4b
 - Modelo base: https://huggingface.co/torchcast-ai/torchcast-decision-4b
 - Instrucciones de servicio del modelo base v1.3.1: https://github.com/Torchcast-AI/torchcast-decision-4b/tree/v1.3.1#run-for-evaluation
 - Qwen3.5-4B (modelo original): no disponible en la información proporcionada

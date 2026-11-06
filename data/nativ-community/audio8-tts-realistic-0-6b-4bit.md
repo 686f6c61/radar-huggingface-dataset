@@ -85,7 +85,7 @@ No se dispone de información sobre otros modelos TTS comparables en la document
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nativ-community/Audio8-TTS-Realistic-0.6b-4bit
+- Hugging Face: https://huggingface.co/nativ-community/Audio8-TTS-Realistic-0.6b-4bit
 - Modelo base: https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b
 - Librería mlx-audio: no disponible en la información proporcionada
 - Paper: no disponible en la información proporcionada

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario DSA1DSAD1D bajo el identificador `DSA1DSAD1D/MyAwesomeModel-TestRepo`. Segun la model card, se trata de una version actualizada de un modelo anterior orientada a mejorar la profundidad de razonamiento y la capacidad de inferencia mediante mas recursos de computo y optimizaciones algoritmicas en la fase de post-entrenamiento. El autor afirma mejoras en matematicas, programacion y logica general, asi como una reduccion de la tasa de alucinacion y un mejor soporte de function calling.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario DSA1DSAD1D bajo el identificador `DSA1DSAD1D/MyAwesomeModel-TestRepo`. Segun la model card, se trata de una version actualizada de un modelo anterior orientada a mejorar la profundidad de razonamiento y la capacidad de inferencia mediante mas recursos de computo y optimizaciones algoritmicas en la fase de post-entrenamiento. El autor afirma mejoras en matematicas, programacion y logica general, asi como una reduccion de la tasa de alucinacion y un mejor soporte de function calling.
 
-Sin embargo, existe una discrepancia importante entre los metadatos de HuggingFace y el contenido de la model card. Los metadatos declaran el pipeline `feature-extraction` y la etiqueta `bert`, lo que corresponde a un modelo de representacion tipo encoder, mientras que la model card describe un sistema generativo conversacional con modo de razonamiento extendido. Ademas, el tamano del repositorio figura como 0.0 GB, lo que sugiere que no hay pesos publicados o que la informacion esta incompleta. No se especifica arquitectura concreta, numero de parametros ni longitud de contexto.
+Sin embargo, existe una discrepancia importante entre los metadatos de Hugging Face y el contenido de la model card. Los metadatos declaran el pipeline `feature-extraction` y la etiqueta `bert`, lo que corresponde a un modelo de representacion tipo encoder, mientras que la model card describe un sistema generativo conversacional con modo de razonamiento extendido. Ademas, el tamano del repositorio figura como 0.0 GB, lo que sugiere que no hay pesos publicados o que la informacion esta incompleta. No se especifica arquitectura concreta, numero de parametros ni longitud de contexto.
 
 Se trata de un repositorio con cero descargas y cero likes, creado y actualizado el 10 de septiembre de 2026, por lo que no hay evidencia de adopcion ni de validacion independiente. La model card incluye una tabla de benchmarks con valores numericos, pero no identifica los modelos de comparacion (aparecen como "Model1", "Model2", "Model1-v2"), lo que impide interpretar los resultados con rigor.
 
@@ -23,7 +23,7 @@ Se trata de un repositorio con cero descargas y cero likes, creado y actualizado
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no detalla la arquitectura interna del modelo. Los metadatos de HuggingFace lo etiquetan con `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que apuntaria a un transformer tipo encoder para extraccion de caracteristicas, pero la model card describe un comportamiento propio de un modelo generativo con razonamiento extendido. No es posible conciliar ambas descripciones con los datos disponibles.
+La informacion proporcionada no detalla la arquitectura interna del modelo. Los metadatos de Hugging Face lo etiquetan con `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que apuntaria a un transformer tipo encoder para extraccion de caracteristicas, pero la model card describe un comportamiento propio de un modelo generativo con razonamiento extendido. No es posible conciliar ambas descripciones con los datos disponibles.
 
 Respecto al entrenamiento, la model card menciona de forma generica el uso de "recursos de computo incrementados" y "mecanismos de optimizacion algoritmica durante el post-entrenamiento", sin especificar numero de tokens, composicion del dataset ni si se emplearon tecnicas como RLHF o DPO. Tampoco se documenta ninguna innovacion tecnica concreta (decodificacion especulativa, atencion lineal, etc.). El unico dato cuantitativo aportado es que, en el conjunto AIME 2025, la version anterior consumia una media de 12K tokens por pregunta y la nueva version 23K tokens por pregunta, lo que sugiere un modo de razonamiento con cadenas mas largas.
 
@@ -47,7 +47,7 @@ Respecto al entrenamiento, la model card menciona de forma generica el uso de "r
 - Procesamiento de documentos con preguntas: la plantilla de subida de ficheros (`file_template`) permite enviar nombre, contenido y pregunta, adecuada para resumen y QA sobre documentos.
 - Atencion al cliente multi-turno: la mejora declarada en generacion de dialogo y el soporte de system prompt con fecha actual lo harian apto para asistentes conversacionales, siempre que se validen sus pesos reales.
 - Traduccion y resumen automatico: las categorias "Translation" y "Summarization" aparecen en la tabla de evaluacion con valores altos (0.804 y 0.767 respectivamente, sin identificar el modelo), lo que sugiere uso en localizacion y sintesis de textos.
-- Extraccion de caracteristicas: si se atiende a los metadatos de HuggingFace (`feature-extraction`), el modelo se usaria para generar embeddings de frases y alimentar clasificadores posteriores, aunque esto contradice la model card.
+- Extraccion de caracteristicas: si se atiende a los metadatos de Hugging Face (`feature-extraction`), el modelo se usaria para generar embeddings de frases y alimentar clasificadores posteriores, aunque esto contradice la model card.
 
 ## Benchmarks y rendimiento
 
@@ -101,6 +101,6 @@ No es posible establecer una comparativa fiable. La model card referencia modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DSA1DSAD1D/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/DSA1DSAD1D/MyAwesomeModel-TestRepo
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo, su paper, repositorio de codigo, blog o demo. Los resultados devueltos por la busqueda correspondian a contenidos sin relacion con el modelo.

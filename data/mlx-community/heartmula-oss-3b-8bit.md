@@ -95,7 +95,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/HeartMuLa-oss-3B-8bit
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/HeartMuLa-oss-3B-8bit
 - Modelo base: https://huggingface.co/HeartMuLa/HeartMuLa-oss-3B-happy-new-year
 - Variante bf16: https://huggingface.co/mlx-community/HeartMuLa-oss-3B-bf16
 - Códec: https://huggingface.co/mlx-community/HeartCodec-oss-fp16

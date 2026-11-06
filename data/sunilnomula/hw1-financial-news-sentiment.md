@@ -81,11 +81,11 @@ Con umbral 0,75 el sistema solo marco 50 titulares como positivos sobre el conju
 
 ## Comparativa con modelos similares
 
-La comparacion natural es contra los propios sistemas evaluados en el trabajo, ya que el repositorio no es un modelo neuronal equiparable a otros publicados en HuggingFace.
+La comparacion natural es contra los propios sistemas evaluados en el trabajo, ya que el repositorio no es un modelo neuronal equiparable a otros publicados en Hugging Face.
 
 | Sistema | Tipo | Precision en inferencia | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Lexicon propio (umbral 0,75) | Lexicon + reglas | 68,00 % | No disponible | Repositorio HuggingFace |
+| Lexicon propio (umbral 0,75) | Lexicon + reglas | 68,00 % | No disponible | Repositorio Hugging Face |
 | VADER con terminos financieros | Lexicon + reglas | 61,93 % | No disponible en la ficha | Libreria externa |
 | Loughran-McDonald | Lexicon financiero | 61,93 % | No disponible en la ficha | Diccionario externo |
 | TextBlob | Lexicon generico | 61,69 % | No disponible en la ficha | Libreria externa |
@@ -109,5 +109,5 @@ No se dispone de comparaciones frente a modelos neuronales de sentimiento financ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sunilnomula/HW1-financial-news-sentiment
+- Hugging Face: https://huggingface.co/sunilnomula/HW1-financial-news-sentiment
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos corresponden a paginas de inicio de sesion de Outlook, sin relacion con el artefacto.

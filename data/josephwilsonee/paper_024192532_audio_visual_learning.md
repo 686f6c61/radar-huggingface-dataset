@@ -62,7 +62,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Josephwilsonee/paper_024192532_audio_visual_learning
+- Repositorio en Hugging Face: https://huggingface.co/Josephwilsonee/paper_024192532_audio_visual_learning
 - Google Scholar: https://scholar.google.com/
 - IEEE Xplore: https://ieeexplore.ieee.org/Xplore/home.jsp
 - Awesome Audio-Visual (lista de papers y datasets): https://github.com/krantiparida/awesome-audio-visual

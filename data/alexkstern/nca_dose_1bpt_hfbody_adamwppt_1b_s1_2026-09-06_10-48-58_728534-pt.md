@@ -71,7 +71,7 @@ En la búsqueda web se han encontrado otros checkpoints del mismo autor con nomb
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_1Bpt_hfbody_adamwppt_1B_s1_2026-09-06_10-48-58_728534-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_1Bpt_hfbody_adamwppt_1B_s1_2026-09-06_10-48-58_728534-pt
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Registro de entrenamiento W&B: https://wandb.ai/alexksternteam/token_dose_1Bpt_adamw_seed_replicas_v1/runs/v4wgwjsm
 - Checkpoint con seed 2: https://huggingface.co/alexkstern/nca_dose_1Bpt_hfbody_1B_s2_2026-08-14_14-01-42_048775-pt

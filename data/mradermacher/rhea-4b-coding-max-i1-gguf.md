@@ -50,7 +50,7 @@ La aportación técnica de este repositorio concreto es la cuantización con ima
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de HuggingFace incluyen puntuaciones de MMLU, HumanEval, GSM8K, MBPP ni de evaluaciones de código como SWE-bench. Tampoco se ofrecen comparaciones con modelos de tamaño similar. Cualquier cifra de rendimiento deberá obtenerse mediante evaluación propia.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de Hugging Face incluyen puntuaciones de MMLU, HumanEval, GSM8K, MBPP ni de evaluaciones de código como SWE-bench. Tampoco se ofrecen comparaciones con modelos de tamaño similar. Cualquier cifra de rendimiento deberá obtenerse mediante evaluación propia.
 
 ## Requisitos de hardware
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones imatrix: https://huggingface.co/mradermacher/Rhea-4B-Coding-max-i1-GGUF
+- Repositorio Hugging Face de las cuantizaciones imatrix: https://huggingface.co/mradermacher/Rhea-4B-Coding-max-i1-GGUF
 - Modelo base: https://huggingface.co/roskosmos19/Rhea-4B-Coding-max
 - Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Rhea-4B-Coding-max-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#Rhea-4B-Coding-max-i1-GGUF

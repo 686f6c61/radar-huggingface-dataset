@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks de whisper-small ni whisper-large-v3 en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/tryambientai/whisper-medium-gguf
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/tryambientai/whisper-medium-gguf
 - Repositorio de la conversión de referencia (handy-computer): https://huggingface.co/handy-computer/whisper-medium-gguf
 - Modelo base original: https://huggingface.co/openai/whisper-medium
 - Commit del modelo base usado: https://huggingface.co/openai/whisper-medium/commit/abdf7c3

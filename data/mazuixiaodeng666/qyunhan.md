@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qyunhan es un paquete de software cientifico publicado en HuggingFace bajo el identificador `mazuixiaodeng666/Qyunhan` y licencia MIT. No es un modelo de lenguaje al uso, sino una implementacion de "celula virtual" a resolucion de programa con abstencion calibrada, orientada al triaje de dianas terapeuticas dirigidas al huesped en tuberculosis. El autor listado es `mazuixiaodeng666`, con contacto de Jiangdong Wu.
+Qyunhan es un paquete de software cientifico publicado en Hugging Face bajo el identificador `mazuixiaodeng666/Qyunhan` y licencia MIT. No es un modelo de lenguaje al uso, sino una implementacion de "celula virtual" a resolucion de programa con abstencion calibrada, orientada al triaje de dianas terapeuticas dirigidas al huesped en tuberculosis. El autor listado es `mazuixiaodeng666`, con contacto de Jiangdong Wu.
 
 El sistema se divide en dos mitades complementarias. La primera, denominada "space", es un estimador de espacio latente compartido en forma cerrada que situa cuatro lineas celulares (K562, RPE1, HepG2 y Jurkat) en un espacio de baja dimension y predice la respuesta de una linea objetivo a partir de las lineas fuente en las que se midio la perturbacion. La segunda, "hold", es una capa de prediccion conformal partida sobre el error relativo, ordenada por una cabeza de dificultad, que decide si una afirmacion se entrega, se marca, se abstiene o se devuelve como experimento a realizar.
 
@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de ce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mazuixiaodeng666/Qyunhan
+- Hugging Face: https://huggingface.co/mazuixiaodeng666/Qyunhan
 - Contacto: Jiangdong Wu — 1556874645@qq.com
 - Compendio PIE esencial (Arc Institute): no disponible como enlace directo en la informacion proporcionada
 - MSigDB Hallmark 2020 y KEGG 2021: descarga por el usuario desde MSigDB (sin enlace directo proporcionado)

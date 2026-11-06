@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Horror Question Generator es un ajuste fino del modelo FLAN-T5-small publicado por el usuario Gauravgupta8566 en HuggingFace. Su única función declarada es generar, en lenguaje natural, una pregunta de programación en Python a partir de un contexto estructurado que incluye el tema de programación, la dificultad, los objetos detectados por el juego, la distancia al cazador, la etapa de reparación del generador y un fragmento de código Python. Es, por tanto, un componente muy especializado dentro de un juego de terror con IA, no un modelo de propósito general.
+Horror Question Generator es un ajuste fino del modelo FLAN-T5-small publicado por el usuario Gauravgupta8566 en Hugging Face. Su única función declarada es generar, en lenguaje natural, una pregunta de programación en Python a partir de un contexto estructurado que incluye el tema de programación, la dificultad, los objetos detectados por el juego, la distancia al cazador, la etapa de reparación del generador y un fragmento de código Python. Es, por tanto, un componente muy especializado dentro de un juego de terror con IA, no un modelo de propósito general.
 
 El modelo tiene 76.961.152 parámetros y un repositorio de solo 0,3 GB, lo que lo sitúa en la gama de los modelos encoder-decoder pequeños: puede ejecutarse en CPU o en cualquier GPU de consumo sin requisitos apreciables de memoria. La model card no documenta el dataset de ajuste, el número de pasos de entrenamiento, la licencia ni los idiomas soportados, y el repositorio acumula 0 descargas y 0 "likes", por lo que se trata de un artefacto sin validación externa ni tracción comunitaria.
 
@@ -66,17 +66,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquiera con al menos 1-2 GB de VRAM libre; no se necesita A100, H100 ni RTX 4090. Una GTX 1050 Ti, una GTX 1650 o una RTX 3060 son más que suficientes, y una RTX 4090 quedaría enormemente infrautilizada.
 - Ejecución en CPU: totalmente viable para inferencia interactiva, dado el tamaño del modelo; es la opción natural para una demo integrada en un juego de escritorio.
 - GPU de consumo: sí, cabe en cualquier GPU de consumo actual e incluso en iGPU con memoria compartida.
-- Opciones de despliegue: `transformers` (librería declarada), Text Generation Inference (etiqueta `text-generation-inference`) y HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`). No se publican pesos GGUF, por lo que su uso en llama.cpp u Ollama requeriría una conversión manual no documentada. Compatibilidad con vLLM no confirmada.
+- Opciones de despliegue: `transformers` (librería declarada), Text Generation Inference (etiqueta `text-generation-inference`) y Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`). No se publican pesos GGUF, por lo que su uso en llama.cpp u Ollama requeriría una conversión manual no documentada. Compatibilidad con vLLM no confirmada.
 - Latencia y throughput: no disponible. No hay cifras publicadas de latencia por token ni de throughput en ningún hardware.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Gauravgupta8566/horror-question-generator | 76,96 M | 512 tokens (base) | no disponible | safetensors | HuggingFace, 0 descargas |
-| google/flan-t5-small (modelo base) | 76,96 M | 512 tokens | Apache 2.0 | safetensors, PyTorch | HuggingFace, muy extendido |
-| google/flan-t5-base | 247,6 M | 512 tokens | Apache 2.0 | safetensors, PyTorch | HuggingFace, muy extendido |
-| google/t5-small | 60,5 M | 512 tokens | Apache 2.0 | safetensors, PyTorch | HuggingFace, muy extendido |
+| Gauravgupta8566/horror-question-generator | 76,96 M | 512 tokens (base) | no disponible | safetensors | Hugging Face, 0 descargas |
+| google/flan-t5-small (modelo base) | 76,96 M | 512 tokens | Apache 2.0 | safetensors, PyTorch | Hugging Face, muy extendido |
+| google/flan-t5-base | 247,6 M | 512 tokens | Apache 2.0 | safetensors, PyTorch | Hugging Face, muy extendido |
+| google/t5-small | 60,5 M | 512 tokens | Apache 2.0 | safetensors, PyTorch | Hugging Face, muy extendido |
 
 La comparación de rendimiento frente a estos modelos no es posible con la información disponible: no hay benchmarks publicados para el ajuste fino, y las tareas no son equivalentes (los modelos base no están especializados en generación de preguntas de programación condicionadas por estado de juego).
 
@@ -95,6 +95,6 @@ La comparación de rendimiento frente a estos modelos no es posible con la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gauravgupta8566/horror-question-generator
+- Hugging Face: https://huggingface.co/Gauravgupta8566/horror-question-generator
 - Modelo base de referencia: https://huggingface.co/google/flan-t5-small
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la busqueda web disponible.

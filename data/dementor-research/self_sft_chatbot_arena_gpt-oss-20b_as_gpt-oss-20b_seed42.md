@@ -70,6 +70,6 @@ No se dispone de información sobre modelos comparables en el mismo contexto de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/self_sft_chatbot_arena_gpt-oss-20b_as_gpt-oss-20b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/self_sft_chatbot_arena_gpt-oss-20b_as_gpt-oss-20b_seed42
 - Herramienta Tinker: https://thinkingmachines.ai/tinker/
 - Modelo base (referencia): https://huggingface.co/openai/gpt-oss-20b

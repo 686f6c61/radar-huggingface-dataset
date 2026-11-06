@@ -18,7 +18,7 @@ Su relevancia es doble: por un lado, permite ejecutar un modelo MoE de gran tama
 | Longitud de contexto | no disponible (la evaluación se ejecutó con `max_model_len=8192`, que no equivale a la ventana máxima del modelo) |
 | Tipos de cuantizacion | Pesos MXFP8 `mxfp-w8g32` (8 bits, grupo de 32); caché KV en FP8 estático (`--static_kv_dtype fp8`); formato `compressed-tensors` (`--format llm_compressor`) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en la ficha de HuggingFace; la model card indica únicamente «follow the license of the original model» (la del base `Qwen/Qwen3.5-35B-A3B`) |
+| Licencia | no disponible en la ficha de Hugging Face; la model card indica únicamente «follow the license of the original model» (la del base `Qwen/Qwen3.5-35B-A3B`) |
 | Formato de pesos | safetensors en formato compressed-tensors (MXFP8, llm-compressor) |
 
 ## Arquitectura y entrenamiento
@@ -87,7 +87,7 @@ No hay datos verificables de otras quantizaciones ni del modelo base en los resu
 
 ## Limitaciones y advertencias
 
-- **Licencia sin determinar**: la ficha de HuggingFace indica «no disponible» y la model card remite a la licencia del modelo base. Antes de cualquier uso comercial hay que verificar la licencia de `Qwen/Qwen3.5-35B-A3B`.
+- **Licencia sin determinar**: la ficha de Hugging Face indica «no disponible» y la model card remite a la licencia del modelo base. Antes de cualquier uso comercial hay que verificar la licencia de `Qwen/Qwen3.5-35B-A3B`.
 - **Idiomas no declarados**: no hay lista de idiomas soportados; el rendimiento en castellano es desconocido y debe validarse empiricamente.
 - **Sin comparacion con el base**: los benchmarks publicados son absolutos. No puede afirmarse que la quantizacion sea *lossless*, y el uso de `--iters 0` (equivalente a RTN) suele implicar una degradacion mayor que un AutoRound con iteraciones de ajuste.
 - **Metadatos inconsistentes**: el numero de parametros declarado en safetensors (1 489 835 396) no cuadra con el nombre del modelo ni con el tamano del repo. Conviene verificar la integridad del checkpoint antes de desplegarlo.
@@ -100,7 +100,7 @@ No hay datos verificables de otras quantizaciones ni del modelo base en los resu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/intel-ai/Qwen3.5-35B-A3B-MXFP8-FP8KV-CT-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/intel-ai/Qwen3.5-35B-A3B-MXFP8-FP8KV-CT-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Repositorio de AutoRound: https://github.com/intel/auto-round
 - Referencia de `autoquant-agent` (enlace incompleto en la model card, apunta a github.com sin ruta concreta): https://github.com/

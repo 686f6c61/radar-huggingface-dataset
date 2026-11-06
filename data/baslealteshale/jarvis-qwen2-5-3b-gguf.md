@@ -75,8 +75,8 @@ La comparativa se limita a características generales porque no hay datos de ren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/baslealteshale/jarvis-qwen2.5-3b-gguf
-- Colección Qwen2.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen25
+- Repositorio Hugging Face: https://huggingface.co/baslealteshale/jarvis-qwen2.5-3b-gguf
+- Colección Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25
 - Modelo base Qwen2.5-3B: https://huggingface.co/Qwen/Qwen2.5-3B
 - Technical Report de Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

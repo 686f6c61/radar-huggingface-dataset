@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`craigjamesgup/generation` es un repositorio de HuggingFace que contiene una implementación propia y minimalista de un Vision Transformer (ViT) en variante "nano", publicada por el usuario craigjamesgup. No se trata de un modelo entrenado ni de un release con resultados: la propia model card lo describe explícitamente como un punto de partida reproducible y el checkpoint `model.safetensors` como una inicialización válida únicamente para pruebas de humo (smoke tests).
+`craigjamesgup/generation` es un repositorio de Hugging Face que contiene una implementación propia y minimalista de un Vision Transformer (ViT) en variante "nano", publicada por el usuario craigjamesgup. No se trata de un modelo entrenado ni de un release con resultados: la propia model card lo describe explícitamente como un punto de partida reproducible y el checkpoint `model.safetensors` como una inicialización válida únicamente para pruebas de humo (smoke tests).
 
 El modelo cuenta con 24.832 parámetros totales según los pesos en safetensors, una cifra tres órdenes de magnitud por debajo de cualquier ViT-tiny convencional. La arquitectura declarada combina atención dispersa (sparse attention), fusión mediante cross attention, activación mish y normalización layernorm. El repositorio incluye además `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta de experimento por defecto (optimizador novograd con schedule exponencial) y un `train.py` como artefacto principal.
 
@@ -72,7 +72,7 @@ No se han identificado en la informacion disponible modelos comparables con los 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| craigjamesgup/generation | 24.832 | no disponible | sin benchmarks publicados | bsd-3-clause | HuggingFace (0 descargas) |
+| craigjamesgup/generation | 24.832 | no disponible | sin benchmarks publicados | bsd-3-clause | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No se han identificado en la informacion disponible modelos comparables con los 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/craigjamesgup/generation
+- Hugging Face: https://huggingface.co/craigjamesgup/generation
 - Model card del autor: incluida en el propio repositorio (https://huggingface.co/craigjamesgup/generation/blob/main/README.md)
 - Archivos del repositorio: `train.py`, `config.json`, `training_args.json`, `model.safetensors`, `README.md`
 - Resultado de busqueda web: no se encontraron enlaces relevantes; la unica URL devuelta (https://mail.google.com/mail?hl=de) no guarda relacion con el modelo

@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`cosmos-libero-noood-baseline-gbs2048-4k` es un checkpoint de robótica publicado por el usuario Cosmos-Data dentro del ecosistema Cosmos3. Se trata de un *full fine-tuning* de Cosmos3-Nano sobre las demostraciones originales de LIBERO40 (suites Spatial, Object, Goal y LIBERO-10, 50 episodios por tarea antes del split de validación nativo del 1 %), con supervisión conjunta de vídeo y acción y sin datos OOD añadidos. El pipeline declarado en HuggingFace es `robotics` y las etiquetas incluyen `cosmos3_omni`, `cosmos3`, `libero`, `feature-extraction` y `custom_code`.
+`cosmos-libero-noood-baseline-gbs2048-4k` es un checkpoint de robótica publicado por el usuario Cosmos-Data dentro del ecosistema Cosmos3. Se trata de un *full fine-tuning* de Cosmos3-Nano sobre las demostraciones originales de LIBERO40 (suites Spatial, Object, Goal y LIBERO-10, 50 episodios por tarea antes del split de validación nativo del 1 %), con supervisión conjunta de vídeo y acción y sin datos OOD añadidos. El pipeline declarado en Hugging Face es `robotics` y las etiquetas incluyen `cosmos3_omni`, `cosmos3`, `libero`, `feature-extraction` y `custom_code`.
 
 El modelo tiene 15.173.136.576 parámetros (unos 15,17 mil millones) en formato BF16 y un repositorio de 121,4 GB que, además de los safetensors de la raíz, incluye el DCP original con el checkpoint de solo modelo en el paso 4000 de entrenamiento. No es un modelo de lenguaje: es una política robótica con cabezas de acción entrenadas y un componente generativo de vídeo, pensada para investigación en manipulación y en modelos de mundo.
 
@@ -81,7 +81,7 @@ No se dispone de datos verificados de modelos comparables en la información pro
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cosmos-libero-noood-baseline-gbs2048-4k | 15,17 B | no disponible | no publicado | no disponible | HuggingFace (121,4 GB) |
+| cosmos-libero-noood-baseline-gbs2048-4k | 15,17 B | no disponible | no publicado | no disponible | Hugging Face (121,4 GB) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,13 +92,13 @@ No se dispone de datos verificados de modelos comparables en la información pro
 - No se incluye estado de optimizador, scheduler, trainer ni RNG, por lo que solo permite un *warmstart* nuevo, no una recuperación exacta del estado completo de entrenamiento.
 - Requiere aportar el VAE (Wan2.2) y el simulador y los datos (LIBERO), ausentes del repositorio; el `config.yaml` incluido tiene rutas absolutas locales sustituidas por `LOCAL_PATH_OVERRIDE/...`.
 - El baseline se entrenó únicamente con datos ID de LIBERO40 y sin datos OOD; su comportamiento fuera de distribución no está caracterizado y la propia model card advierte contra mezclar protocolos de evaluación de 2 y de 50 ensayos.
-- La licencia no está especificada en la ficha de HuggingFace, lo que impide determinar si el uso comercial está permitido; conviene aclararlo con el autor antes de cualquier despliegue en producción.
+- La licencia no está especificada en la ficha de Hugging Face, lo que impide determinar si el uso comercial está permitido; conviene aclararlo con el autor antes de cualquier despliegue en producción.
 - Sin resultados de rendimiento publicados ni validación externa (0 descargas, 0 likes), no existen evidencias independientes de calidad o robustez.
 - Riesgo de alucinación y sesgos: no evaluado en la información disponible; al tratarse de una política entrenada por imitación, heredará los sesgos y las limitaciones de las demostraciones de LIBERO40, pero no hay análisis publicado al respecto.
 - El modelo emplea código personalizado (`custom_code`), lo que implica ejecutar código del repositorio y añade superficie de riesgo en producción.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Cosmos-Data/cosmos-libero-noood-baseline-gbs2048-4k
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Cosmos-Data/cosmos-libero-noood-baseline-gbs2048-4k
 - Guía de entrenamiento del baseline anidado (citada en la model card): https://github.com/jyzhang1208/cosmos-framework/blob/main/docs/original_nested_baseline4k_window_training.md
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo; los resultados devueltos corresponden a entidades no relacionadas (cosmos.so, cosmos-sports.fr, cosmos.bio, american-cosmograph.fr) y se descartan.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio ChauKhai/so101-act-pick-ball-50k contiene un modelo de politica (policy) para control robotico, publicado por el usuario ChauKhai en HuggingFace. Por el nombre del repositorio, todo apunta a una politica entrenada para la tarea "pick ball" (recoger una pelota) sobre el brazo robotico de bajo coste SO-101 de The Robot Studio, con un entrenamiento de aproximadamente 50.000 pasos. No se trata de un modelo de lenguaje: su salida son acciones de control motor para un efector final, y sus 51.668.614 parametros (unos 51,7 millones) lo situan en la categoria de politicas ligeras, muy por debajo de los grandes modelos fundacionales de robotica.
+El repositorio ChauKhai/so101-act-pick-ball-50k contiene un modelo de politica (policy) para control robotico, publicado por el usuario ChauKhai en Hugging Face. Por el nombre del repositorio, todo apunta a una politica entrenada para la tarea "pick ball" (recoger una pelota) sobre el brazo robotico de bajo coste SO-101 de The Robot Studio, con un entrenamiento de aproximadamente 50.000 pasos. No se trata de un modelo de lenguaje: su salida son acciones de control motor para un efector final, y sus 51.668.614 parametros (unos 51,7 millones) lo situan en la categoria de politicas ligeras, muy por debajo de los grandes modelos fundacionales de robotica.
 
 El modelo esta publicado unicamente con pesos en formato safetensors y una etiqueta de region `us`, sin model card descriptiva, sin licencia declarada y sin pipeline definido. El tamano del repositorio (2,1 GB) es notablemente superior al que ocuparian los pesos en precision simple (unos 207 MB para 51,7 M de parametros en fp32), lo que sugiere que el repositorio incluye varios checkpoints, estados de optimizador o artefactos de entrenamiento adicionales.
 
@@ -78,7 +78,7 @@ No disponible. No se ha encontrado en la informacion proporcionada ningun dato d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChauKhai/so101-act-pick-ball-50k
+- Hugging Face: https://huggingface.co/ChauKhai/so101-act-pick-ball-50k
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los unicos enlaces recuperados pertenecen a Yahoo Mail y no guardan relacion con el repositorio.
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la informacion disponible.
 - Referencias del ecosistema (no confirmadas como origen de este modelo, por lo que se citan solo a titulo contextual): no disponible en la informacion proporcionada.

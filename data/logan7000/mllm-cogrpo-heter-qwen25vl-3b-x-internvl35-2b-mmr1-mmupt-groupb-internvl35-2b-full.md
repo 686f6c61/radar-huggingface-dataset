@@ -70,7 +70,7 @@ No se dispone de información suficiente para comparar directamente con alternat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-3b-x-internvl35-2b-mmr1-mmupt-groupB-internvl35-2b-full
+- Repositorio Hugging Face: https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-3b-x-internvl35-2b-mmr1-mmupt-groupB-internvl35-2b-full
 - Perfil del autor: https://huggingface.co/logan7000/models
 - Modelo similar de otro autor (referencia): https://huggingface.co/q1716523669/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupB-endpoint
 - Página de Qwen3-VL (modelo base relacionado): https://github.com/QwenLM/Qwen3-VL

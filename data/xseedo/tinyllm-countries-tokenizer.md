@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`xseedo/tinyllm-countries-tokenizer` es un repositorio publicado en HuggingFace por el usuario xseedo bajo la etiqueta `transformers`. A pesar de que el identificador incluye el termino "tokenizer", el repositorio esta catalogado como un modelo de la libreria transformers y no como un tokenizer independiente. La model card asociada es la plantilla generica autogenerada por la plataforma, sin contenido sustantivo: todos los campos de descripcion, entrenamiento, uso previsto y evaluacion aparecen como "[More Information Needed]".
+`xseedo/tinyllm-countries-tokenizer` es un repositorio publicado en Hugging Face por el usuario xseedo bajo la etiqueta `transformers`. A pesar de que el identificador incluye el termino "tokenizer", el repositorio esta catalogado como un modelo de la libreria transformers y no como un tokenizer independiente. La model card asociada es la plantilla generica autogenerada por la plataforma, sin contenido sustantivo: todos los campos de descripcion, entrenamiento, uso previsto y evaluacion aparecen como "[More Information Needed]".
 
 Por el nombre se puede inferir que se trata de un experimento de la familia "tinyllm" orientado a paises ("countries"), probablemente un modelo de lenguaje de muy reducido tamano o un componente de tokenizacion especializado en nombres de paises. Sin embargo, esta interpretacion es especulativa: no hay documentacion del autor que la respalde. El repositorio no registra descargas ni likes, se creo y actualizo en la misma fecha (2026-11-02) y no incluye informacion sobre arquitectura, parametros, contexto, licencia ni idiomas.
 
@@ -43,7 +43,7 @@ Dado que no existe documentacion tecnica ni funcional, los casos de uso que se e
 
 - Prototipado de pipelines de tokenizacion: si el repositorio contiene un tokenizer especializado en toponimos, podria emplearse para normalizar y segmentar nombres de paises en tareas de extraccion de entidades.
 - Pruebas de integracion con transformers: util para verificar que un pipeline de carga de modelos funciona correctamente con artefactos minimos antes de escalar a modelos reales.
-- Docencia y experimentacion: sirve como ejemplo de repositorio minimo autogenerado para ilustrar el ciclo de publicacion en HuggingFace.
+- Docencia y experimentacion: sirve como ejemplo de repositorio minimo autogenerado para ilustrar el ciclo de publicacion en Hugging Face.
 - Benchmarking de infraestructura: un artefacto de muy bajo coste puede usarse para medir latencia de carga y overhead de la libreria sin consumir recursos de GPU.
 - Validacion de plantillas de model card: util para comprobar herramientas que procesan fichas de modelos y detectan campos vacios.
 - Pruebas de gobernanza de licencias: permite ensayar flujos de aprobacion cuando la licencia no esta declarada.
@@ -67,9 +67,9 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| xseedo/tinyllm-countries-tokenizer | no disponible | no disponible | no disponible | HuggingFace |
-| Modelos "tiny" tipo SmolLM / Qwen2.5-0.5B | ~135M-500M | 2K-32K | Apache-2.0 / otras | HuggingFace, ampliamente documentados |
-| Tokenizers especializados (p. ej. SentencePiece) | no aplica | no aplica | variable | HuggingFace, bibliotecas |
+| xseedo/tinyllm-countries-tokenizer | no disponible | no disponible | no disponible | Hugging Face |
+| Modelos "tiny" tipo SmolLM / Qwen2.5-0.5B | ~135M-500M | 2K-32K | Apache-2.0 / otras | Hugging Face, ampliamente documentados |
+| Tokenizers especializados (p. ej. SentencePiece) | no aplica | no aplica | variable | Hugging Face, bibliotecas |
 
 La comparativa no debe interpretarse como una evaluacion de rendimiento: los modelos de la segunda y tercera fila cuentan con documentacion y benchmarks publicados, mientras que el modelo analizado no.
 
@@ -86,6 +86,6 @@ La comparativa no debe interpretarse como una evaluacion de rendimiento: los mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xseedo/tinyllm-countries-tokenizer
+- Repositorio en Hugging Face: https://huggingface.co/xseedo/tinyllm-countries-tokenizer
 - Referencia citada en la plantilla (impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental: https://mlco2.github.io/impact

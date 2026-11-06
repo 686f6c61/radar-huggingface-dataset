@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored es una version "descensurada" (abliterada) del modelo Qwen3.8-27B de Alibaba, publicada por el usuario qaqab en HuggingFace en formato GGUF para su ejecucion local con llama.cpp. El modelo elimina los comportamientos de rechazo a nivel de pesos mediante una tecnica llamada abliteration, que identifica y elimina las direcciones de activacion asociadas a la negativa a responder, sin necesidad de fine-tuning ni datos de entrenamiento adicionales.
+Qwen3.8-27B-Uncensored es una version "descensurada" (abliterada) del modelo Qwen3.8-27B de Alibaba, publicada por el usuario qaqab en Hugging Face en formato GGUF para su ejecucion local con llama.cpp. El modelo elimina los comportamientos de rechazo a nivel de pesos mediante una tecnica llamada abliteration, que identifica y elimina las direcciones de activacion asociadas a la negativa a responder, sin necesidad de fine-tuning ni datos de entrenamiento adicionales.
 
 El modelo mantiene intactas las capacidades del base: arquitectura Qwen3_5ForConditionalGeneration con 27.320 millones de parametros, ventana de contexto de 262.144 tokens, soporte de vision y cabecera de prediccion multi-token (MTP) para decodificacion especulativa. La relevancia actual radica en que permite desplegar localmente un modelo de 27B sin censura con cuantizaciones que van desde IQ2_M (10,6 GB) hasta Q8_0 (29 GB), con verificacion explicita de que los tensores MTP se conservan tras la cuantizacion.
 
@@ -93,7 +93,7 @@ La diferencia principal de este repositorio frente a las alternativas es la veri
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qaqab/Qwen3.8-27B-Uncensored-Q4_K_M-Vision-GGUF
+- Repositorio Hugging Face: https://huggingface.co/qaqab/Qwen3.8-27B-Uncensored-Q4_K_M-Vision-GGUF
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del proyecto: https://github.com/Wassimyounes01/qwen38-uncensored
 - Guia de ejecucion local: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally

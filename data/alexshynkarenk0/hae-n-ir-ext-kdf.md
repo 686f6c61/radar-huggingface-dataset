@@ -106,7 +106,7 @@ Segun la propia model card, hae-n-ir-ext-kdf esta optimizado para video en vivo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexshynkarenk0/hae-n-ir-ext-kdf
+- Modelo en Hugging Face: https://huggingface.co/alexshynkarenk0/hae-n-ir-ext-kdf
 - Demo en vivo (navegador): https://huggingface.co/spaces/alexshynkarenk0/hae-demo
 - Repositorio del modelo (model card, receta, ejemplos, tests): https://github.com/sashapiscivca-svg/hae-n-ir-ext-kdf
 - Paquete de runtime y entrenamiento: https://github.com/sashapiscivca-svg/hae

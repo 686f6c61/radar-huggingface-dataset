@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DJJAI/AirshIptest es un repositorio alojado en HuggingFace bajo el identificador de autor DJJAI. La informacion publica disponible es minima: la model card se limita al bloque de metadatos de licencia (`license: apache-2.0`) sin ningun texto descriptivo, y la propia plataforma no declara pipeline de inferencia, idiomas soportados, tamano de parametros ni arquitectura. El repositorio registra cero descargas y cero "likes" en el momento de la consulta.
+DJJAI/AirshIptest es un repositorio alojado en Hugging Face bajo el identificador de autor DJJAI. La informacion publica disponible es minima: la model card se limita al bloque de metadatos de licencia (`license: apache-2.0`) sin ningun texto descriptivo, y la propia plataforma no declara pipeline de inferencia, idiomas soportados, tamano de parametros ni arquitectura. El repositorio registra cero descargas y cero "likes" en el momento de la consulta.
 
 Los metadatos de la plataforma indican que el repositorio se creo el 18 de septiembre de 2026 y se actualizo unos tres minutos y medio despues, sin cambios posteriores. Ese patron, junto con el propio nombre del identificador ("AirshIptest" contiene la cadena "test"), apunta a un repositorio de prueba o a una subida de validacion de infraestructura mas que a un modelo entrenado y publicado para uso general.
 
@@ -91,8 +91,8 @@ No disponible. Al no conocerse la categoria del modelo (tamano, modalidad, tarea
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DJJAI/AirshIptest
-- Pagina del autor en HuggingFace: https://huggingface.co/DJJAI
+- Repositorio en Hugging Face: https://huggingface.co/DJJAI/AirshIptest
+- Pagina del autor en Hugging Face: https://huggingface.co/DJJAI
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible
 - Demo o espacio interactivo: no disponible

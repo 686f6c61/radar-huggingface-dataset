@@ -91,8 +91,8 @@ No se han publicado comparativas con otros modelos en la información disponible
 
 | Modelo | Relación | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lappi v0.1 preview | Ajuste fino del base | 1.881.825.088 | no disponible | Apache 2.0 | safetensors en HuggingFace |
-| Qwen/Qwen3.5-2B-Base | Modelo base | no disponible (etiquetado como 2B) | no disponible | no disponible | HuggingFace |
+| Lappi v0.1 preview | Ajuste fino del base | 1.881.825.088 | no disponible | Apache 2.0 | safetensors en Hugging Face |
+| Qwen/Qwen3.5-2B-Base | Modelo base | no disponible (etiquetado como 2B) | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks del modelo base ni de alternativas de la misma categoría (clasificadores de decisión tipada con abstención) en la información proporcionada.
 
@@ -113,7 +113,7 @@ No se dispone de datos de benchmarks del modelo base ni de alternativas de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bharathvbcr/lappi-v0.1-preview
+- Modelo en Hugging Face: https://huggingface.co/Bharathvbcr/lappi-v0.1-preview
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Repositorio del proyecto (rama outreach-2026-10-06, evidencias): https://github.com/bharathvbcr/Lappi-decision/tree/outreach-2026-10-06/docs/outreach/evidence
-- Conjuntos de datos referenciados: ZefanCai/Open-Jev-v1.1, tasksource/procedural-typed-decisions, LocalLLaMA/typed-decisions, n4ze3m/typed-decisions-synth, nvidia/HelpSteer2, google/boolq, allenai/ai2_arc, tals/vitaminc, bigcode/commitpackft, cais/mmlu, tau/commonsense_qa, clinc/clinc_oos, rajpurkar/squad_v2 (todos en HuggingFace).
+- Conjuntos de datos referenciados: ZefanCai/Open-Jev-v1.1, tasksource/procedural-typed-decisions, LocalLLaMA/typed-decisions, n4ze3m/typed-decisions-synth, nvidia/HelpSteer2, google/boolq, allenai/ai2_arc, tals/vitaminc, bigcode/commitpackft, cais/mmlu, tau/commonsense_qa, clinc/clinc_oos, rajpurkar/squad_v2 (todos en Hugging Face).

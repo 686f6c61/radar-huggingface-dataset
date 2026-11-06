@@ -94,7 +94,7 @@ No se dispone de datos sobre otros modelos abiertos de tamano y categoria compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/memisdev/GLM-5.3-Flash-UNCENSORED-FP8
+- Modelo en Hugging Face: https://huggingface.co/memisdev/GLM-5.3-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Espejo del release: https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-FP8
 - Perfil del autor del release: https://huggingface.co/dealignai

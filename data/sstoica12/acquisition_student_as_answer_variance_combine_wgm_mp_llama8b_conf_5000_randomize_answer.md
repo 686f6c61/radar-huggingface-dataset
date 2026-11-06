@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sstoica12/acquisition_student_AS_answer_variance_combine_WGM_MP_llama8b_conf_5000_randomize_answer` es un checkpoint de la familia Llama con 8.030.261.248 parámetros (aproximadamente 8B), publicado en HuggingFace por el usuario sstoica12. Por el nombre del repositorio, parece tratarse de un modelo "student" obtenido mediante destilación o entrenamiento sobre un modelo mayor, combinando variantes de respuestas y configuraciones de aleatorización, probablemente en el contexto de un experimento de adquisición de datos o destilación de conocimiento (el prefijo "acquisition_student" sugiere un estudiante entrenado con una estrategia de selección de datos).
+El modelo `sstoica12/acquisition_student_AS_answer_variance_combine_WGM_MP_llama8b_conf_5000_randomize_answer` es un checkpoint de la familia Llama con 8.030.261.248 parámetros (aproximadamente 8B), publicado en Hugging Face por el usuario sstoica12. Por el nombre del repositorio, parece tratarse de un modelo "student" obtenido mediante destilación o entrenamiento sobre un modelo mayor, combinando variantes de respuestas y configuraciones de aleatorización, probablemente en el contexto de un experimento de adquisición de datos o destilación de conocimiento (el prefijo "acquisition_student" sugiere un estudiante entrenado con una estrategia de selección de datos).
 
 La model card está prácticamente vacía: ha sido autogenerada por la plataforma y no aporta información sobre el proceso de entrenamiento, los datos utilizados, los hiperparámetros ni los resultados de evaluación. El repositorio tiene 16,1 GB de tamaño, lo que corresponde a pesos en precisión de 16 bits (fp16/bf16) para un modelo de 8B parámetros. No consta licencia, idiomas soportados, ni descargas (0 descargas y 0 likes en el momento de la consulta).
 
@@ -31,7 +31,7 @@ No hay información sobre innovaciones técnicas (decodificación especulativa, 
 
 - Generación de texto autoregresiva, propia de un modelo Llama de 8B parámetros.
 - Conversacional: el pipeline declarado es `text-generation` y el tag incluye `conversational`, por lo que está pensado para diálogo multi-turno.
-- Compatible con `text-generation-inference` y `endpoints_compatible`, lo que permite desplegarlo en infraestructura estándar de HuggingFace.
+- Compatible con `text-generation-inference` y `endpoints_compatible`, lo que permite desplegarlo en infraestructura estándar de Hugging Face.
 - Tool calling / function calling: no disponible en la información proporcionada.
 - Agentes y razonamiento multi-paso: no disponible en la información proporcionada.
 - Capacidades multilingües: no disponible; no se declaran idiomas.
@@ -43,7 +43,7 @@ No hay información sobre innovaciones técnicas (decodificación especulativa, 
 - Evaluación comparativa de estrategias de entrenamiento: dado el nombre del repositorio, se puede usar como punto de partida para medir el efecto de la aleatorización de respuestas y la configuración de 5.000 ejemplos sobre la calidad final.
 - Generación de texto conversacional en entornos controlados: al ser un modelo de 8B, puede emplearse en prototipos de chat o asistentes internos, siempre que se valide su calidad de forma independiente por la ausencia de benchmarks publicados.
 - Fine-tuning posterior: el formato safetensors y la librería transformers permiten continuar el entrenamiento o aplicar LoRA/QLoRA sobre el checkpoint para tareas específicas.
-- Despliegue en infraestructura HuggingFace: gracias a los tags `text-generation-inference` y `endpoints_compatible`, puede servirse mediante TGI o Inference Endpoints sin conversión adicional.
+- Despliegue en infraestructura Hugging Face: gracias a los tags `text-generation-inference` y `endpoints_compatible`, puede servirse mediante TGI o Inference Endpoints sin conversión adicional.
 - Estudio de sesgos y alucinaciones: al carecer de documentación sobre datos de entrenamiento, es un candidato para auditorías de comportamiento en condiciones de baja información.
 
 ## Benchmarks y rendimiento
@@ -83,7 +83,7 @@ La comparación con Llama 3 8B es la más directa por tamaño y familia, pero es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sstoica12/acquisition_student_AS_answer_variance_combine_WGM_MP_llama8b_conf_5000_randomize_answer
+- Hugging Face: https://huggingface.co/sstoica12/acquisition_student_AS_answer_variance_combine_WGM_MP_llama8b_conf_5000_randomize_answer
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental ML: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la información disponible.

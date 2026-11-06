@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`biplaw/Llama-3.1-8B-RBI-Amendments-LoRA` es un adaptador LoRA (0,2 GB de repositorio) publicado por el usuario `biplaw` en HuggingFace, orientado aparentemente a tareas sobre enmiendas normativas del RBI (Reserve Bank of India, el banco central de la India). Por la nomenclatura del repositorio y por las referencias del propio README a la Llama 3.1 Community License y a la marca "Built with Llama", el modelo base sobre el que se aplica el adaptador es Llama 3.1 8B de Meta. No hay ningun otro artefacto de pesos completos en el repositorio, por lo que se trata de un ajuste tipo PEFT y no de un modelo entrenado desde cero.
+`biplaw/Llama-3.1-8B-RBI-Amendments-LoRA` es un adaptador LoRA (0,2 GB de repositorio) publicado por el usuario `biplaw` en Hugging Face, orientado aparentemente a tareas sobre enmiendas normativas del RBI (Reserve Bank of India, el banco central de la India). Por la nomenclatura del repositorio y por las referencias del propio README a la Llama 3.1 Community License y a la marca "Built with Llama", el modelo base sobre el que se aplica el adaptador es Llama 3.1 8B de Meta. No hay ningun otro artefacto de pesos completos en el repositorio, por lo que se trata de un ajuste tipo PEFT y no de un modelo entrenado desde cero.
 
 La relevancia de esta ficha es limitada y hay que decirlo con claridad: el repositorio no incluye una model card real. El contenido publicado es en realidad una lista de comprobacion interna de publicacion ("Publishing checklist") con casillas sin marcar, referencias a ficheros de datos que no estan enlazados, marcadores de plantilla sin sustituir (`your-name/...`, `[repository link]`) y un aviso explicito de que el material es un borrador. El repositorio acumula 0 descargas y 0 likes, no declara licencia, idiomas, pipeline ni metricas, y no se ha encontrado documentacion externa asociada.
 
@@ -100,7 +100,7 @@ La comparacion con Mistral 7B v0.3 y Qwen2.5 7B se incluye por tamano y categori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/biplaw/Llama-3.1-8B-RBI-Amendments-LoRA
+- Repositorio en Hugging Face: https://huggingface.co/biplaw/Llama-3.1-8B-RBI-Amendments-LoRA
 - Licencia del modelo base (referenciada en el borrador del README, no incluida en el repositorio): Llama 3.1 Community License, disponible en https://llama.meta.com/llama3_1/license/
 - Modelo base implicito: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Dataset asociado: el checklist menciona un `DATASET_CARD.md` y ficheros `data/labels/test.jsonl`, `data/teacher/train.corrected.jsonl` y `data/teacher/val.corrected.jsonl`, pero no se proporciona ningun enlace al repositorio de datos. No disponible.

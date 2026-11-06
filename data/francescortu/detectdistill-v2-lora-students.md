@@ -124,7 +124,7 @@ Frente a alternativas externas de la misma categoria (por ejemplo, adaptadores L
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/francescortu/detectdistill-v2-lora-students
+- Repositorio en Hugging Face: https://huggingface.co/francescortu/detectdistill-v2-lora-students
 - Modelo base allenai/Olmo-3-7B-Think: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Modelo base microsoft/Phi-4-reasoning: https://huggingface.co/microsoft/Phi-4-reasoning
 - Modelo base Qwen/Qwen3-32B: https://huggingface.co/Qwen/Qwen3-32B

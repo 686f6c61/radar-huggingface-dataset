@@ -93,7 +93,7 @@ No disponible. En la información proporcionada no se incluyen otros checkpoints
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kbenz/namah_policy_v1
+- Modelo en Hugging Face: https://huggingface.co/kbenz/namah_policy_v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/kbenz/namah_combined
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=kbenz/namah_combined
 - Artículo de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

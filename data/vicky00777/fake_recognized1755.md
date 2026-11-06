@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vicky00777/fake_recognized1755` es un repositorio alojado en HuggingFace por el usuario `vicky00777`, publicado bajo licencia MIT y etiquetado con `region:us`. En el momento de redactar esta ficha, el repositorio no contiene model card sustantiva (unicamente la declaracion de licencia), no declara pipeline de inferencia, no especifica idiomas soportados y su tamano declarado es de 0.0 GB, lo que indica que no hay pesos publicados o que estos no son accesibles.
+`vicky00777/fake_recognized1755` es un repositorio alojado en Hugging Face por el usuario `vicky00777`, publicado bajo licencia MIT y etiquetado con `region:us`. En el momento de redactar esta ficha, el repositorio no contiene model card sustantiva (unicamente la declaracion de licencia), no declara pipeline de inferencia, no especifica idiomas soportados y su tamano declarado es de 0.0 GB, lo que indica que no hay pesos publicados o que estos no son accesibles.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni resultados de evaluacion. El nombre del repositorio (`fake_recognized1755`) sugiere un artefacto de prueba o generado de forma automatica, sin que exista evidencia de que se trate de un modelo funcional entrenado.
 
@@ -40,7 +40,7 @@ El tamano declarado del repositorio (0.0 GB) es compatible con la ausencia total
 ## Casos de uso
 
 - No disponible. Al no existir especificaciones tecnicas, pesos publicados ni documentacion de capacidades, no es posible definir casos de uso realistas ni justificar su idoneidad para ninguna tarea.
-- Evaluacion de repositorios de HuggingFace: el unico uso plausible documentado en esta ficha es servir como caso de estudio de repositorios vacios o generados automaticamente en tareas de auditoria de hubs de modelos.
+- Evaluacion de repositorios de Hugging Face: el unico uso plausible documentado en esta ficha es servir como caso de estudio de repositorios vacios o generados automaticamente en tareas de auditoria de hubs de modelos.
 - Cualquier otro escenario practico (atencion al cliente, generacion de codigo, analisis documental, RAG, agentes, etc.) queda descartado por falta de artefactos desplegables.
 
 ## Benchmarks y rendimiento
@@ -72,6 +72,6 @@ No disponible. No se puede establecer una categoria de comparacion porque se des
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vicky00777/fake_recognized1755
+- Repositorio en Hugging Face: https://huggingface.co/vicky00777/fake_recognized1755
 - Paper, blog o repositorio adicional: no disponible.
 - Nota sobre la busqueda web: los resultados recuperados (ARASAAC, https://arasaac.org/index.html y recursos derivados sobre pictogramas de comunicacion aumentativa) no guardan relacion con el modelo descrito y no se incluyen como fuentes tecnicas.

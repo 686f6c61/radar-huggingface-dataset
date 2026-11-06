@@ -107,7 +107,7 @@ La comparación cuantitativa disponible se limita a la familia D1A: frente a v0.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/d1a-e4b-it-qat-4bit
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/d1a-e4b-it-qat-4bit
 - Repositorio original espejado: https://huggingface.co/JohnP1/d1a-e4b-it-qat-mlx-q4
 - Tronco base: https://huggingface.co/google/gemma-4-E4B-it-qat-w4a16-ct
 - Variante E2B QAT: https://huggingface.co/JohnP1/d1a-e2b-it-qat-mlx-q4

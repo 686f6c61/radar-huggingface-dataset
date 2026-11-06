@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Objetivo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aura (VNVSH-DA24B034) | LightGBM + RDKit + ESM-2 opcional | `log10_kcat`, `log10_km` | no aplica | MIT | HuggingFace |
+| Aura (VNVSH-DA24B034) | LightGBM + RDKit + ESM-2 opcional | `log10_kcat`, `log10_km` | no aplica | MIT | Hugging Face |
 | Alternativas comparables | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables en la documentación facilitada; no se han identificado alternativas concretas con las que contrastar parámetros, contexto, rendimiento o licencia.
@@ -82,5 +82,5 @@ No se dispone de información sobre modelos comparables en la documentación fac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VNVSH-DA24B034/aura
+- Repositorio Hugging Face: https://huggingface.co/VNVSH-DA24B034/aura
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

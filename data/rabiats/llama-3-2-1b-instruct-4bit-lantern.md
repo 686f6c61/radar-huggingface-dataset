@@ -89,7 +89,7 @@ Las cifras de parametros y contexto de los modelos alternativos corresponden a s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RabiatS/Llama-3.2-1B-Instruct-4bit-Lantern
+- Repositorio en Hugging Face: https://huggingface.co/RabiatS/Llama-3.2-1B-Instruct-4bit-Lantern
 - Conversion original de mlx-community: https://huggingface.co/mlx-community/Llama-3.2-1B-Instruct-4bit
 - Modelo base de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Repositorio de la aplicacion Lantern: https://github.com/RabiatS/lantern

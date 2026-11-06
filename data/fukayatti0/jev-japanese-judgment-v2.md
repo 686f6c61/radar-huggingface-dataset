@@ -122,8 +122,8 @@ No hay datos de benchmarks de terceros para modelos comparables en la informacio
 | Modelo | Parametros | Contexto | Tareas anadidas (global) | Tareas originales (global) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | jev-japanese-judgment-v2 | ~1,17 B | No disponible | 68,0 % (ECE 0,0207) | 90,7 % (ECE 0,0258) | LFM Open License v1.0 | Safetensors PEFT + GGUF; 0 descargas |
-| jev-japanese-judgment (v1) | No disponible | No disponible | 45,2 % (ECE 0,1245) | 92,2 % (ECE 0,0145) | No disponible | Modelo previo en HuggingFace |
-| LiquidAI/LFM2.5-1.2B-JP-202606 (base) | ~1,2 B (segun nombre) | No disponible | No evaluado como clasificador | No evaluado como clasificador | LFM Open License v1.0 | Modelo base en HuggingFace |
+| jev-japanese-judgment (v1) | No disponible | No disponible | 45,2 % (ECE 0,1245) | 92,2 % (ECE 0,0145) | No disponible | Modelo previo en Hugging Face |
+| LiquidAI/LFM2.5-1.2B-JP-202606 (base) | ~1,2 B (segun nombre) | No disponible | No evaluado como clasificador | No evaluado como clasificador | LFM Open License v1.0 | Modelo base en Hugging Face |
 | Otros clasificadores japoneses de ~1 B | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -140,7 +140,7 @@ No hay datos de benchmarks de terceros para modelos comparables en la informacio
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/fukayatti0/jev-japanese-judgment-v2
+- Pagina del modelo en Hugging Face: https://huggingface.co/fukayatti0/jev-japanese-judgment-v2
 - Version anterior v1: https://huggingface.co/fukayatti0/jev-japanese-judgment
 - Modelo base LiquidAI/LFM2.5-1.2B-JP-202606: https://huggingface.co/LiquidAI/LFM2.5-1.2B-JP-202606
 - Licencia del modelo base (LFM Open License v1.0): https://huggingface.co/LiquidAI/LFM2.5-1.2B-JP-202606/blob/main/LICENSE

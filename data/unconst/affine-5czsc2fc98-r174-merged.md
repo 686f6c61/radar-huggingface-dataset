@@ -4,7 +4,7 @@
 
 El modelo `unconst/Affine-5czsc2fc98-r174-merged` es un checkpoint resultante de la fusión de un adaptador LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`, que a su vez es un fine-tuning de un modelo con arquitectura Qwen3.5 MoE, según los tags del repositorio. El autor lo describe como un "H1 merged checkpoint salvage" y un "Private TTL insurance", lo que sugiere que se trata de un experimento técnico privado, no de un modelo destinado a producción. Con 35.107.181.936 parámetros totales (aproximadamente 35,1 mil millones) y un tamaño de repositorio de 70,2 GB en formato safetensors, el modelo está diseñado para generación de texto y, según los tags, podría tener capacidades multimodales (image-text-to-text), aunque no se proporcionan detalles al respecto.
 
-El modelo fue creado el 14 de agosto de 2026 y no registra descargas ni interacciones en HuggingFace. Su licencia no está especificada, y no se ha publicado información sobre idiomas soportados, longitud de contexto, cuantizaciones ni resultados de benchmarks. En resumen, se trata de un artefacto de investigación con documentación mínima, cuya utilidad práctica queda limitada a la experimentación técnica.
+El modelo fue creado el 14 de agosto de 2026 y no registra descargas ni interacciones en Hugging Face. Su licencia no está especificada, y no se ha publicado información sobre idiomas soportados, longitud de contexto, cuantizaciones ni resultados de benchmarks. En resumen, se trata de un artefacto de investigación con documentación mínima, cuya utilidad práctica queda limitada a la experimentación técnica.
 
 ## Especificaciones técnicas
 
@@ -29,7 +29,7 @@ No se han documentado capacidades específicas en la model card. A partir de los
 
 - Generación de texto conversacional (tag `conversational`).
 - Posible procesamiento de imágenes y texto (tag `image-text-to-text`), aunque no hay ejemplos ni documentación.
-- Compatibilidad con la librería `transformers` y con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad con la librería `transformers` y con endpoints de Hugging Face (tag `endpoints_compatible`).
 - Sin información sobre tool calling, razonamiento multi-step, agentes o capacidades multilingües.
 
 ## Casos de uso
@@ -73,5 +73,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: [unconst/Affine-5czsc2fc98-r174-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r174-merged)
+- Repositorio Hugging Face: [unconst/Affine-5czsc2fc98-r174-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r174-merged)
 - Modelo base: [kevin954/Affine-5dfqbbh8ev-sft](https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft) (enlace inferido del campo base_model; no se ha verificado su existencia)

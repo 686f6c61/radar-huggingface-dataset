@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `oxyllina/forsete77` es un repositorio alojado en HuggingFace por el usuario `oxyllina`, publicado el 20 de julio de 2026 y actualizado el 15 de agosto de 2026. El repositorio tiene un tamaño de 7.5 GB y su acceso está restringido (gated), lo que obliga a aceptar condiciones previas antes de poder descargarlo. Hasta la fecha de esta ficha, el modelo registra cero descargas y una única valoración positiva.
+El modelo `oxyllina/forsete77` es un repositorio alojado en Hugging Face por el usuario `oxyllina`, publicado el 20 de julio de 2026 y actualizado el 15 de agosto de 2026. El repositorio tiene un tamaño de 7.5 GB y su acceso está restringido (gated), lo que obliga a aceptar condiciones previas antes de poder descargarlo. Hasta la fecha de esta ficha, el modelo registra cero descargas y una única valoración positiva.
 
 La información pública disponible es extremadamente limitada: no se especifica la arquitectura, el número de parámetros, la licencia, los idiomas soportados ni el pipeline de uso. El tag `region:us` sugiere una posible restricción geográfica o un enfoque orientado al mercado estadounidense, pero no hay documentación adicional que lo confirme. Dado el tamaño del repositorio (7.5 GB), podría tratarse de un modelo de lenguaje de tamaño medio (por ejemplo, 7B parámetros en precisión FP16 o 13B en cuantización), pero esta estimación es especulativa y no debe tomarse como dato verificado.
 
@@ -54,6 +54,6 @@ No disponible. Al no conocerse la arquitectura ni el tamano real del modelo, no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oxyllina/forsete77
+- Repositorio Hugging Face: https://huggingface.co/oxyllina/forsete77
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

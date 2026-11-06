@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HelenHenny66/2013_lachy_wiggle es un repositorio publicado en HuggingFace por el usuario HelenHenny66 el 18 de septiembre de 2026. La informacion disponible es minima: no se declara pipeline, no se declaran idiomas, no hay model card mas alla de la linea `license: mit`, y el repositorio acumula cero descargas y cero likes en el momento de la consulta. El tamano del repositorio es de 0,1 GB.
+HelenHenny66/2013_lachy_wiggle es un repositorio publicado en Hugging Face por el usuario HelenHenny66 el 18 de septiembre de 2026. La informacion disponible es minima: no se declara pipeline, no se declaran idiomas, no hay model card mas alla de la linea `license: mit`, y el repositorio acumula cero descargas y cero likes en el momento de la consulta. El tamano del repositorio es de 0,1 GB.
 
 No se ha publicado ninguna descripcion funcional, arquitectura, numero de parametros, longitud de contexto ni procedimiento de entrenamiento. La busqueda web asociada no ha devuelto ningun resultado relacionado con el modelo: los unicos enlaces recuperados corresponden a hilos de soporte de Microsoft Teams, sin relacion alguna con inteligencia artificial.
 
@@ -35,13 +35,13 @@ Tampoco hay datos sobre el corpus de entrenamiento: numero de tokens, composicio
 
 ## Capacidades
 
-No disponible. El repositorio no declara ningun pipeline de HuggingFace (text-generation, text-classification, image-classification, etc.), no incluye ejemplos de uso y no documenta capacidades de generacion de texto, razonamiento, codigo, matematicas, vision, audio, tool calling, function calling ni razonamiento multi-paso.
+No disponible. El repositorio no declara ningun pipeline de Hugging Face (text-generation, text-classification, image-classification, etc.), no incluye ejemplos de uso y no documenta capacidades de generacion de texto, razonamiento, codigo, matematicas, vision, audio, tool calling, function calling ni razonamiento multi-paso.
 
 Tampoco se confirma el soporte multilingue ni la existencia de un modo de razonamiento explicito (thinking mode). No es posible afirmar ni negar ninguna capacidad concreta con la informacion disponible.
 
 ## Casos de uso
 
-No es posible asignar casos de uso concretos con fundamento documental: se desconoce la tarea para la que el modelo fue entrenado, su arquitectura y su calidad. Los escenarios que se enumeran a continuacion son hipotesis genericas aplicables a un modelo de menos de 1 GB publicado en HuggingFace y **requieren verificacion previa** antes de considerarse validos:
+No es posible asignar casos de uso concretos con fundamento documental: se desconoce la tarea para la que el modelo fue entrenado, su arquitectura y su calidad. Los escenarios que se enumeran a continuacion son hipotesis genericas aplicables a un modelo de menos de 1 GB publicado en Hugging Face y **requieren verificacion previa** antes de considerarse validos:
 
 - Clasificacion de texto en local: si el modelo resultase ser un encoder pequeno, podria ejecutarse en CPU para tareas de etiquetado o moderacion, sin coste de GPU. No confirmado.
 - Prototipado rapido en cuadernos: un artefacto de 0,1 GB se carga en memoria sin requisitos de hardware relevantes, lo que facilitaria pruebas exploratorias en un portatil. No confirmado.
@@ -71,7 +71,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HelenHenny66/2013_lachy_wiggle | no disponible | no disponible | MIT | HuggingFace |
+| HelenHenny66/2013_lachy_wiggle | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HelenHenny66/2013_lachy_wiggle
+- Repositorio en Hugging Face: https://huggingface.co/HelenHenny66/2013_lachy_wiggle
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

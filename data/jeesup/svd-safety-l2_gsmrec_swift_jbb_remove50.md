@@ -74,9 +74,9 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-l2_gsmrec_swift_jbb_remove50 | 6.738.415.616 | no disponible | Llama 2 | HuggingFace (0 descargas) | Compresion SVD al 50 % + LoRA GSM8K; artefacto de investigacion |
-| meta-llama/Llama-2-7b-chat-hf | ~6.740 millones | 4.096 tokens | Llama 2 | HuggingFace (ampliamente usado) | Modelo base sin comprimir; referencia directa |
-| Otras variantes del proyecto svd_safety | no disponible | no disponible | Llama 2 | HuggingFace (autor Jeesup) | Distintas calibraciones y conjuntos de recuperacion |
+| Jeesup/svd-safety-l2_gsmrec_swift_jbb_remove50 | 6.738.415.616 | no disponible | Llama 2 | Hugging Face (0 descargas) | Compresion SVD al 50 % + LoRA GSM8K; artefacto de investigacion |
+| meta-llama/Llama-2-7b-chat-hf | ~6.740 millones | 4.096 tokens | Llama 2 | Hugging Face (ampliamente usado) | Modelo base sin comprimir; referencia directa |
+| Otras variantes del proyecto svd_safety | no disponible | no disponible | Llama 2 | Hugging Face (autor Jeesup) | Distintas calibraciones y conjuntos de recuperacion |
 | Modelos comprimidos por SVD de la literatura (p. ej. SVD-LLM, SliceGPT) | variable | variable | variable | variable | Metodos academicos comparables en filosofia, no en pesos publicados |
 
 No se dispone de datos de benchmarks comparativos directos con estas alternativas en la informacion proporcionada.
@@ -91,12 +91,12 @@ No se dispone de datos de benchmarks comparativos directos con estas alternativa
 - Riesgo de alucinación: no cuantificado en la model card; el ajuste con GSM8K no garantiza fidelidad factual.
 - Idiomas: no se documenta el soporte multilingüe; el modelo base está orientado al inglés.
 - Licencia Llama 2 Community License: restricciones de uso comercial (límite de 700 millones de usuarios mensuales, obligaciones de atribución y cumplimiento de la política de uso aceptable).
-- Fecha de creación y actualización inusualmente futura (2026) en los metadatos de HuggingFace; conviene verificar la integridad del repositorio antes de usarlo.
+- Fecha de creación y actualización inusualmente futura (2026) en los metadatos de Hugging Face; conviene verificar la integridad del repositorio antes de usarlo.
 - Sin descargas ni likes en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_gsmrec_swift_jbb_remove50
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_gsmrec_swift_jbb_remove50
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - Política de uso aceptable de Llama 2: https://ai.meta.com/llama/use-policy/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mustafamus/my-multitask` es un repositorio de HuggingFace que contiene una implementación propia y compacta de DeiT (Data-efficient Image Transformer) orientada a aprendizaje multitarea. Lo publica el usuario `mustafamus` y no está vinculado a ningún laboratorio ni a una publicación científica. El propio autor lo describe como un artefacto para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados, y advierte explícitamente que no es una versión preentrenada lista para producción.
+`mustafamus/my-multitask` es un repositorio de Hugging Face que contiene una implementación propia y compacta de DeiT (Data-efficient Image Transformer) orientada a aprendizaje multitarea. Lo publica el usuario `mustafamus` y no está vinculado a ningún laboratorio ni a una publicación científica. El propio autor lo describe como un artefacto para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados, y advierte explícitamente que no es una versión preentrenada lista para producción.
 
 El dato más relevante para evaluarlo es el recuento real de parámetros del checkpoint `model.safetensors`: 16.576 parámetros. Eso supone tres o cuatro órdenes de magnitud por debajo de un DeiT-B real (~86 M de parámetros según la publicación original), de modo que la etiqueta «base» que aparece en la model card debe interpretarse como el nombre de una configuración generada por el script, no como la escala DeiT-B. El repositorio ocupa 0,0 GB y no incluye resultados de benchmarks, ni declara idiomas, ni especifica un pipeline de inferencia.
 
@@ -26,7 +26,7 @@ Por tanto, la ficha debe leerse como lo que es: un esqueleto de código PyTorch 
 | Normalización | batchnorm |
 | Optimizador por defecto | rmsprop con scheduler onecycle |
 | Estado del checkpoint | inicialización para pruebas de humo; no entrenado ni auditado |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamaño del repositorio | 0,0 GB |
 
@@ -77,7 +77,7 @@ Las cifras de las alternativas son las de la publicación original de DeiT (Meta
 
 | Modelo | Parametros | Modalidad | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mustafamus/my-multitask | 16.576 | Visión multitarea (DeiT custom) | No documentada | BSD-3-Clause | HuggingFace, checkpoint sin entrenar |
+| mustafamus/my-multitask | 16.576 | Visión multitarea (DeiT custom) | No documentada | BSD-3-Clause | Hugging Face, checkpoint sin entrenar |
 | DeiT-Ti (referencia) | ~5 M | Visión, clasificación | Imagen 224×224, parche 16 | Apache-2.0 (repo original) | Pesos preentrenados y destilados |
 | DeiT-S (referencia) | ~22 M | Visión, clasificación | Imagen 224×224, parche 16 | Apache-2.0 | Pesos preentrenados y destilados |
 | DeiT-B (referencia) | ~86 M | Visión, clasificación | Imagen 224×224, parche 16 | Apache-2.0 | Pesos preentrenados y destilados |
@@ -100,7 +100,7 @@ La diferencia relevante no es de tamaño sino de estado: las alternativas public
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mustafamus/my-multitask
+- Repositorio en Hugging Face: https://huggingface.co/mustafamus/my-multitask
 - Archivo de código principal: https://huggingface.co/mustafamus/my-multitask/blob/main/main.py
 - Configuración de arquitectura: https://huggingface.co/mustafamus/my-multitask/blob/main/config.json
 - Receta de entrenamiento por defecto: https://huggingface.co/mustafamus/my-multitask/blob/main/training_args.json

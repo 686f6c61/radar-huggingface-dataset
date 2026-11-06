@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`WILLIAMWHI/cross-modal-fusion-survey` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en HuggingFace bajo la etiqueta `research-notes`. Su artefacto principal es `review.md`, un documento que organiza la motivación, el trabajo relacionado, una hipótesis falsable y un plan de evaluación sobre el tema de la fusión cross-modal. El autor indica explícitamente que no se presenta como un paper completado ni como la publicación de modelos entrenados.
+`WILLIAMWHI/cross-modal-fusion-survey` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en Hugging Face bajo la etiqueta `research-notes`. Su artefacto principal es `review.md`, un documento que organiza la motivación, el trabajo relacionado, una hipótesis falsable y un plan de evaluación sobre el tema de la fusión cross-modal. El autor indica explícitamente que no se presenta como un paper completado ni como la publicación de modelos entrenados.
 
 El repositorio incluye un fichero `safetensors` con 33.088 parámetros totales, una magnitud compatible con un tensor de prueba o marcador de posición más que con un modelo funcional: el tamaño del repo es de 0,0 GB y no hay pipeline, tokenizador ni configuración de inferencia declarados. La etiqueta `transformer` aparece en los metadatos, pero la model card no describe ninguna arquitectura concreta ni proceso de entrenamiento.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no aplica en la práctica. El fichero `safetensors` contiene 33.088 parámetros, un orden de magnitud de decenas de kilobytes en float32, que cabría en cualquier dispositivo; sin embargo, no se publica configuración, tokenizador ni código de carga que permita ejecutarlo como modelo.
 - GPU recomendadas: ninguna. No hay requisitos declarados ni cargas de trabajo definidas.
 - Cabe en GPU de consumo: el tensor es trivial en tamaño, pero irrelevante al no existir un modelo funcional asociado.
-- Opciones de despliegue: no disponible. No hay integración con vLLM, llama.cpp, Ollama, TGI ni Text Generation Inference, ni existe pipeline de HuggingFace declarado.
+- Opciones de despliegue: no disponible. No hay integración con vLLM, llama.cpp, Ollama, TGI ni Text Generation Inference, ni existe pipeline de Hugging Face declarado.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -74,13 +74,13 @@ No disponible. El repositorio no pertenece a la categoría de modelos de lenguaj
 - Riesgo de mala interpretación: la etiqueta `transformer` y la presencia de pesos pueden llevar a un lector apresurado a asumir que existe un modelo funcional cuando no es así.
 - Idiomas no declarados: no hay garantía de soporte de castellano ni de ninguna otra lengua.
 - Licencia CC-BY-4.0: permite uso comercial y obras derivadas con atribución, pero el autor advierte de que los términos de los datos de origen deben revisarse por separado si se combinan datasets externos.
-- Fecha de creación declarada en HuggingFace (2026-10-17) posterior a la fecha habitual de consulta; conviene verificar la metadata antes de citar el repositorio.
+- Fecha de creación declarada en Hugging Face (2026-10-17) posterior a la fecha habitual de consulta; conviene verificar la metadata antes de citar el repositorio.
 - Sin mantenimiento demostrable: 0 descargas, 0 likes y actualización a los pocos segundos de la creación.
 - Los resultados de búsqueda web disponibles (diccionarios WordReference) no guardan relación con el repositorio y no aportan información verificable sobre él.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WILLIAMWHI/cross-modal-fusion-survey
+- Repositorio en Hugging Face: https://huggingface.co/WILLIAMWHI/cross-modal-fusion-survey
 - Fichero principal de la nota: `review.md` (incluido en el repositorio)
 - Documentación del repositorio: `README.md` (incluido en el repositorio)
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

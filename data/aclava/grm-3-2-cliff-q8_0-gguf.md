@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/aclava/GRM-3.2-Cliff-Q8_0-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/aclava/GRM-3.2-Cliff-Q8_0-GGUF
 - Modelo original: https://huggingface.co/OrionLLM/GRM-3.2-Cliff
 - Repositorio GGUF de bartowski (incluye mmproj y otras cuantizaciones): https://huggingface.co/bartowski/OrionLLM_GRM-3.2-Cliff-GGUF
 - Herramienta GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

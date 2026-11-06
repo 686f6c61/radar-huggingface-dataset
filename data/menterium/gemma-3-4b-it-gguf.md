@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Menterium/gemma-3-4b-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Menterium/gemma-3-4b-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ceciliazhang726/qwen2.5-3b-ragen-sokoban-step200` es un ajuste fino del modelo `Qwen/Qwen2.5-3B-Instruct`, publicado por el usuario de HuggingFace `ceciliazhang726`. El nombre y las etiquetas indican que se ha entrenado con refuerzo —PPO y el método RAGEN— para actuar como agente en Sokoban, un rompecabezas de rejilla con reglas de empuje de cajas. El checkpoint `step200` sugiere un estado intermedio del entrenamiento, aunque no se documenta qué representa exactamente ese paso.
+`ceciliazhang726/qwen2.5-3b-ragen-sokoban-step200` es un ajuste fino del modelo `Qwen/Qwen2.5-3B-Instruct`, publicado por el usuario de Hugging Face `ceciliazhang726`. El nombre y las etiquetas indican que se ha entrenado con refuerzo —PPO y el método RAGEN— para actuar como agente en Sokoban, un rompecabezas de rejilla con reglas de empuje de cajas. El checkpoint `step200` sugiere un estado intermedio del entrenamiento, aunque no se documenta qué representa exactamente ese paso.
 
-El modelo conserva el tamaño del base: 3.397.103.616 parámetros y pesos en formato `safetensors`, con un repositorio de 6,8 GB. Es relevante para investigación en agentes porque permite estudiar políticas de RL de pequeño tamaño en un entorno controlado, pero no hay información pública sobre su rendimiento, licencia, idiomas o contexto. El acceso está restringido: requiere aceptar condiciones en HuggingFace.
+El modelo conserva el tamaño del base: 3.397.103.616 parámetros y pesos en formato `safetensors`, con un repositorio de 6,8 GB. Es relevante para investigación en agentes porque permite estudiar políticas de RL de pequeño tamaño en un entorno controlado, pero no hay información pública sobre su rendimiento, licencia, idiomas o contexto. El acceso está restringido: requiere aceptar condiciones en Hugging Face.
 
 No se han publicado resultados de benchmarks ni una descripción técnica del entrenamiento en la información disponible. Por tanto, debe tratarse como un artefacto experimental de investigación, no como un modelo listo para producción general.
 
@@ -18,17 +18,17 @@ No se han publicado resultados de benchmarks ni una descripción técnica del en
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | No disponible; solo se publican pesos `safetensors`, sin variantes GGUF, AWQ o GPTQ documentadas |
 | Idiomas soportados | No disponible |
-| Licencia | No disponible; acceso restringido con condiciones en HuggingFace |
+| Licencia | No disponible; acceso restringido con condiciones en Hugging Face |
 | Formato de pesos | `safetensors` |
 | Librería | `transformers` |
 | Pipeline | `reinforcement-learning` |
 | Tamaño del repositorio | 6,8 GB |
-| Acceso | Restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Modelo base | `Qwen/Qwen2.5-3B-Instruct` |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura no se describe en la ficha de HuggingFace. El modelo parte de `Qwen2.5-3B-Instruct`, por lo que hereda su estructura de transformer decoder-only y su inicialización instruct, pero no se confirma en la información disponible si se han modificado capas, cabezas de atención o el tokenizador. El repositorio contiene únicamente pesos en `safetensors`; no se documentan configuraciones adicionales de despliegue.
+La arquitectura no se describe en la ficha de Hugging Face. El modelo parte de `Qwen2.5-3B-Instruct`, por lo que hereda su estructura de transformer decoder-only y su inicialización instruct, pero no se confirma en la información disponible si se han modificado capas, cabezas de atención o el tokenizador. El repositorio contiene únicamente pesos en `safetensors`; no se documentan configuraciones adicionales de despliegue.
 
 El entrenamiento se presenta como un ajuste por refuerzo con PPO y RAGEN sobre el entorno Sokoban. No se especifican el número de tokens, la composición del dataset, la función de recompensa, los hiperparámetros de PPO, el número total de pasos ni si hubo fases previas de RLHF o DPO. El sufijo `step200` apunta a un checkpoint intermedio, pero no se detalla si es el final del entrenamiento o una instantánea parcial. Tampoco se documentan innovaciones técnicas adicionales como decodificación especulativa, atención lineal o modos de razonamiento explícito.
 
@@ -97,6 +97,6 @@ No se han identificado en la información proporcionada alternativas especializa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ceciliazhang726/qwen2.5-3b-ragen-sokoban-step200
+- Modelo en Hugging Face: https://huggingface.co/ceciliazhang726/qwen2.5-3b-ragen-sokoban-step200
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - No se proporcionan enlaces a papers, blogs, repositorios o demos en la información disponible.

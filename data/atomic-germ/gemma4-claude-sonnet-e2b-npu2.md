@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa directa. 
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/Atomic-Germ/Gemma4-Claude-Sonnet-E2B-NPU2)
+- [Hugging Face del modelo](https://huggingface.co/Atomic-Germ/Gemma4-Claude-Sonnet-E2B-NPU2)
 - [Modelo base](https://huggingface.co/Atomic-Germ/Gemma4-E2B-IT-NPU2)
 - [Página de Gemma 4 en DeepMind](https://deepmind.google/models/gemma/gemma-4/)
 - [Model card de Gemma 4 en Google AI](https://ai.google.dev/gemma/docs/core/model_card_4)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1` aloja un ajuste fino publicado en HuggingFace por el usuario PessimisticDPO. El identificador sugiere que se trata de una variante de `HuggingFaceH4/mistral-7b-sft-beta` (el modelo SFT de 7.000 millones de parametros que sirvio de base al entrenamiento de Zephyr-7B-beta) sometida a un proceso de optimizacion por preferencias, presumiblemente DPO, con los hiperparametros `alpha=0.1` y `beta=0.1`, rango de LoRA 4 y un submuestreo del dataset con solapamiento. Ninguno de estos extremos esta confirmado en la model card, que es la plantilla autogenerada por HuggingFace y no contiene informacion tecnica real.
+El repositorio `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1` aloja un ajuste fino publicado en Hugging Face por el usuario PessimisticDPO. El identificador sugiere que se trata de una variante de `HuggingFaceH4/mistral-7b-sft-beta` (el modelo SFT de 7.000 millones de parametros que sirvio de base al entrenamiento de Zephyr-7B-beta) sometida a un proceso de optimizacion por preferencias, presumiblemente DPO, con los hiperparametros `alpha=0.1` y `beta=0.1`, rango de LoRA 4 y un submuestreo del dataset con solapamiento. Ninguno de estos extremos esta confirmado en la model card, que es la plantilla autogenerada por Hugging Face y no contiene informacion tecnica real.
 
 Se trata, por tanto, de un checkpoint de investigacion sin documentacion, sin licencia declarada, sin idiomas declarados y con cero descargas y cero likes en el momento de la consulta. Su relevancia actual es limitada: sirve como artefacto reproducible para quien quiera inspeccionar una variante concreta de entrenamiento con preferencias sobre Mistral 7B, pero no es un modelo listo para produccion ni para uso comercial sin una evaluacion previa.
 
@@ -20,7 +20,7 @@ El tamano del repositorio, 0,2 GB, esta muy por debajo de los aproximadamente 14
 | Idiomas soportados | No disponibles. La base Mistral 7B esta entrenada predominantemente en ingles, con capacidad multilingue limitada y no garantizada |
 | Licencia | No disponible. La model card no declara licencia; la base Mistral 7B v0.1 se distribuye bajo Apache 2.0, pero la licencia de este ajuste no esta especificada |
 | Formato de pesos | safetensors |
-| Desarrollador | PessimisticDPO (usuario de HuggingFace; sin mas informacion) |
+| Desarrollador | PessimisticDPO (usuario de Hugging Face; sin mas informacion) |
 | Hiperparametros declarados en el nombre | `alpha=0.1`, `beta=0.1`, LoRA rango 4, submuestreo con solapamiento. Sin documentacion que los confirme |
 | Tamano del repositorio | 0,2 GB |
 | Fecha de creacion | 2026-09-19 |
@@ -28,7 +28,7 @@ El tamano del repositorio, 0,2 GB, esta muy por debajo de los aproximadamente 14
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura ni sobre el procedimiento de entrenamiento en la model card, que es la plantilla por defecto de HuggingFace con todos los campos marcados como `[More Information Needed]`. Lo unico deducible es lo que sugiere el identificador del repositorio: un ajuste de parametros eficientes (LoRA de rango 4) sobre `mistral-7b-sft-beta`, con un objetivo de optimizacion por preferencias cuyos coeficientes serian `alpha=0.1` y `beta=0.1`, entrenado sobre un subconjunto con solapamiento del dataset original. El nombre del autor, PessimisticDPO, sugiere una variante pesimista de DPO, pero no se ha localizado publicacion, repositorio de codigo ni documentacion que describa el metodo.
+No hay informacion verificable sobre la arquitectura ni sobre el procedimiento de entrenamiento en la model card, que es la plantilla por defecto de Hugging Face con todos los campos marcados como `[More Information Needed]`. Lo unico deducible es lo que sugiere el identificador del repositorio: un ajuste de parametros eficientes (LoRA de rango 4) sobre `mistral-7b-sft-beta`, con un objetivo de optimizacion por preferencias cuyos coeficientes serian `alpha=0.1` y `beta=0.1`, entrenado sobre un subconjunto con solapamiento del dataset original. El nombre del autor, PessimisticDPO, sugiere una variante pesimista de DPO, pero no se ha localizado publicacion, repositorio de codigo ni documentacion que describa el metodo.
 
 La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde a Lacoste et al., "Quantifying the carbon emissions of machine learning", el paper de la calculadora de impacto de ML, y no a un paper sobre el modelo. Es decir, esa referencia no aporta informacion sobre el entrenamiento. Tampoco se han publicado datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otra tecnica de alineamiento, ni sobre innovaciones tecnicas como decodificacion especulativa. Como el repositorio pesa 0,2 GB, es probable que no contenga pesos completos sino adaptadores, lo que implicaria que para usarlo hay que fusionarlos con la base.
 
@@ -97,7 +97,7 @@ La comparacion con Zephyr-7B-beta es la mas pertinente por compartir base y meto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1
+- Modelo en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1
 - Paper referenciado en las etiquetas del repositorio (calculadora de emisiones de carbono, no relacionado con el entrenamiento del modelo): https://arxiv.org/abs/1910.09700
 - Base presumible, no confirmada por el autor: https://huggingface.co/HuggingFaceH4/mistral-7b-sft-beta
 - Modelo base original de Mistral 7B: https://huggingface.co/mistralai/Mistral-7B-v0.1

@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SmolVLA (este fine-tuning) | 450M | no disponible | Apache 2.0 | HuggingFace |
-| lerobot/smolvla_base | 450M | no disponible | Apache 2.0 | HuggingFace |
-| OpenVLA | 7B | no disponible | MIT | HuggingFace |
+| SmolVLA (este fine-tuning) | 450M | no disponible | Apache 2.0 | Hugging Face |
+| lerobot/smolvla_base | 450M | no disponible | Apache 2.0 | Hugging Face |
+| OpenVLA | 7B | no disponible | MIT | Hugging Face |
 | RT-2 (Google) | 55B | no disponible | Propietaria | No publico |
 
 SmolVLA se distingue de alternativas como OpenVLA por su tamano reducido (450M vs 7B parametros), lo que permite su ejecucion en hardware de consumo. El modelo base `lerobot/smolvla_base` es el punto de partida para este fine-tuning, y la comparativa directa con otros fine-tunings de SmolVLA para tareas similares (como los de CoRL2026-CSI) no esta disponible en la informacion proporcionada.

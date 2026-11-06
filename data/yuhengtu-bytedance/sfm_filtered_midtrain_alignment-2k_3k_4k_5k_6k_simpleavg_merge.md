@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada para inferencia: con 6,8B parámetros en bfloat16, los pesos ocupan aproximadamente 13,7 GB (según el tamaño del repositorio). Para inferencia se necesitaría al menos 16 GB de VRAM en FP16/BF16, o alrededor de 8 GB en cuantización de 8 bits y 4 GB en 4 bits (si se aplicara cuantización, aunque no se proporcionan archivos GGUF).
 - GPU recomendadas: una RTX 4090 (24 GB) o A100 (40/80 GB) pueden manejar el modelo en BF16 sin cuantización. GPUs con 16 GB (como RTX 4080) podrían funcionar con cuantización o usando offloading.
 - En consumer GPU: sí, es posible ejecutarlo en GPUs de gama alta (RTX 3090/4090) con suficiente VRAM, o en GPUs más modestas con cuantización y técnicas de offloading.
-- Opciones de despliegue: al ser un modelo estándar de transformers, puede servirse con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta) o directamente con la librería `transformers` de HuggingFace.
+- Opciones de despliegue: al ser un modelo estándar de transformers, puede servirse con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta) o directamente con la librería `transformers` de Hugging Face.
 - Latencia y throughput: no se dispone de datos medidos. Para un modelo de 6,8B, se espera una latencia de decodificación de decenas de milisegundos por token en GPUs modernas, pero esto depende del hardware y la configuración.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-2k_3k_4k_5k_6k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-2k_3k_4k_5k_6k_simpleavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Página del equipo ByteDance Seed: https://seed.bytedance.com/en/
 - Modelo relacionado (merge de 3 checkpoints): https://huggingface.co/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg

@@ -80,8 +80,8 @@ Estimaciones orientativas a partir del recuento de parámetros declarado (4,02 B
 
 | Modelo | Parametros | Contexto | Vision | Licencia | Formato y disponibilidad |
 |---|---|---|---|---|---|
-| zhexue/Qwen3-VL-4B-Instruct-GGUF (esta ficha) | 4,02 B | 256K nativo, 1M ampliable | Sí (imagen y vídeo) | Apache 2.0 | GGUF (FP16, Q8_0, Q4_K_M) en HuggingFace |
-| Qwen/Qwen3-VL-4B-Instruct (modelo base) | 4,02 B | 256K nativo, 1M ampliable | Sí (imagen y vídeo) | Apache 2.0 | safetensors en HuggingFace |
+| zhexue/Qwen3-VL-4B-Instruct-GGUF (esta ficha) | 4,02 B | 256K nativo, 1M ampliable | Sí (imagen y vídeo) | Apache 2.0 | GGUF (FP16, Q8_0, Q4_K_M) en Hugging Face |
+| Qwen/Qwen3-VL-4B-Instruct (modelo base) | 4,02 B | 256K nativo, 1M ampliable | Sí (imagen y vídeo) | Apache 2.0 | safetensors en Hugging Face |
 | Qwen2.5-VL-3B-Instruct (generación anterior) | no disponible en la información aportada | no disponible | Sí | Apache 2.0 | safetensors y múltiples cuantizaciones de terceros |
 | Qwen2.5-VL-7B-Instruct (generación anterior) | no disponible en la información aportada | no disponible | Sí | Apache 2.0 | safetensors y múltiples cuantizaciones de terceros |
 
@@ -101,7 +101,7 @@ La comparación se limita a los aspectos verificables en la información disponi
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/zhexue/Qwen3-VL-4B-Instruct-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/zhexue/Qwen3-VL-4B-Instruct-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Chat oficial de Qwen: https://chat.qwenlm.ai/
 - llama.cpp: https://github.com/ggml-org/llama.cpp

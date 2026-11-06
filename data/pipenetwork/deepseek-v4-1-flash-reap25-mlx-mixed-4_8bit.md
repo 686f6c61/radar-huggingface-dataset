@@ -114,7 +114,7 @@ No hay datos en la informacion disponible sobre modelos de terceros comparables 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pipenetwork/DeepSeek-V4.1-Flash-REAP25-MLX-mixed-4_8bit
+- Hugging Face: https://huggingface.co/pipenetwork/DeepSeek-V4.1-Flash-REAP25-MLX-mixed-4_8bit
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Port y runtime MLX: https://github.com/PipeNetwork/deepseek-v41-mlx
 - Notas sobre la referencia upstream (bug del indexer): `docs/upstream-notes.md` dentro del repositorio del port

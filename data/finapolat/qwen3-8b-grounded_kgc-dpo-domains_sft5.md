@@ -2,11 +2,11 @@
 
 ## Resumen
 
-FinaPolat/Qwen3-8B-grounded_KGC-dpo-domains_SFT5 es un ajuste fino del modelo Qwen3-8B, publicado en HuggingFace por el usuario FinaPolat. El nombre del repositorio sugiere un entrenamiento orientado a la construcción de grafos de conocimiento (KGC, Knowledge Graph Construction) con datos "grounded" (anclados a evidencia), seguido de una fase de DPO (Direct Preference Optimization) sobre múltiples dominios y una etapa previa de SFT (supervised fine-tuning). El modelo cuenta con 8.190.735.360 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de modelos de aproximadamente 8.000 millones de parámetros.
+FinaPolat/Qwen3-8B-grounded_KGC-dpo-domains_SFT5 es un ajuste fino del modelo Qwen3-8B, publicado en Hugging Face por el usuario FinaPolat. El nombre del repositorio sugiere un entrenamiento orientado a la construcción de grafos de conocimiento (KGC, Knowledge Graph Construction) con datos "grounded" (anclados a evidencia), seguido de una fase de DPO (Direct Preference Optimization) sobre múltiples dominios y una etapa previa de SFT (supervised fine-tuning). El modelo cuenta con 8.190.735.360 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de modelos de aproximadamente 8.000 millones de parámetros.
 
 La relevancia de este modelo radica en su especialización: frente al Qwen3-8B base, esta variante incorpora un entrenamiento adicional de preferencias (DPO) y ajuste supervisado orientado a tareas de extracción y construcción de conocimiento estructurado. Es un modelo de nicho, con cero descargas y cero likes en el momento de la consulta, lo que indica que se trata de un artefacto de investigación reciente y poco difundido.
 
-No obstante, la model card publicada es la plantilla automática de HuggingFace sin contenido sustantivo: no documenta datos de entrenamiento, hiperparámetros, licencia, idiomas ni resultados de evaluación. Toda la información técnica que sigue se deriva del nombre del repositorio, de los metadatos de HuggingFace y de las características conocidas de la familia Qwen3, y se marca explícitamente como no disponible cuando no puede confirmarse.
+No obstante, la model card publicada es la plantilla automática de Hugging Face sin contenido sustantivo: no documenta datos de entrenamiento, hiperparámetros, licencia, idiomas ni resultados de evaluación. Toda la información técnica que sigue se deriva del nombre del repositorio, de los metadatos de Hugging Face y de las características conocidas de la familia Qwen3, y se marca explícitamente como no disponible cuando no puede confirmarse.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| FinaPolat/Qwen3-8B-grounded_KGC-dpo-domains_SFT5 | 8,19B | no disponible | no disponible | HuggingFace (0 descargas) | Ajuste DPO sobre Qwen3-8B para KGC |
+| FinaPolat/Qwen3-8B-grounded_KGC-dpo-domains_SFT5 | 8,19B | no disponible | no disponible | Hugging Face (0 descargas) | Ajuste DPO sobre Qwen3-8B para KGC |
 | Qwen3-8B (base) | ~8B | 32.768 nativos (ampliable) | Apache 2.0 (segun familia Qwen3) | Amplia, muy difundido | Modelo generalista, sin especializacion KGC |
 | Llama 3.1 8B Instruct | ~8B | 128.000 | Llama 3.1 Community License | Amplia | Generalista, sin entrenamiento especifico en KGC |
 | Mistral 7B Instruct | ~7B | 32.000 | Apache 2.0 | Amplia | Generalista, menor tamano |
@@ -74,7 +74,7 @@ La comparativa con Qwen3-8B base es la mas directa: este ajuste anade fases de S
 
 ## Limitaciones y advertencias
 
-- Model card vacia: la documentacion es la plantilla automatica de HuggingFace, por lo que no hay informacion sobre datos, hiperparametros ni evaluacion; no se puede verificar la calidad del ajuste.
+- Model card vacia: la documentacion es la plantilla automatica de Hugging Face, por lo que no hay informacion sobre datos, hiperparametros ni evaluacion; no se puede verificar la calidad del ajuste.
 - Licencia no declarada: no se especifica la licencia, lo que impide confirmar si el uso comercial esta permitido. Se recomienda contactar con el autor antes de cualquier despliegue en produccion.
 - Riesgo de alucinacion: como todo modelo generativo, puede inventar entidades o relaciones en tareas de KGC; el caracter "grounded" sugiere anclaje a evidencia, pero no se documenta el mecanismo ni su fiabilidad.
 - Idiomas no declarados: se desconoce si el ajuste conserva las capacidades multilingues del Qwen3 base o si se ha degradado en idiomas distintos del usado en el entrenamiento.
@@ -86,7 +86,7 @@ La comparativa con Qwen3-8B base es la mas directa: este ajuste anade fases de S
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FinaPolat/Qwen3-8B-grounded_KGC-dpo-domains_SFT5
+- Modelo en Hugging Face: https://huggingface.co/FinaPolat/Qwen3-8B-grounded_KGC-dpo-domains_SFT5
 - Referencia citada en la model card (calculo de impacto ambiental): https://mlco2.github.io/impact#compute
 - Paper de Lacoste et al. (2019) citado en la model card: https://arxiv.org/abs/1910.09700
 - Repositorio TRL (tag `trl`): https://github.com/huggingface/trl

@@ -6,7 +6,7 @@
 
 El entrenamiento se realizo sobre el dataset `belumind/en-vi-ja-curated-500k-triplets`, con un presupuesto total de 39.234.273 tokens consumidos en una sola epoca, lo que supone aproximadamente 3,37 horas de computo (12.145,06 segundos). Los resultados declarados por el autor son una perplejidad de validacion de 5,2313 y de test de 5,2372, junto con un BLEU de test de 31,7049. Estos valores son coherentes con un modelo pequeno entrenado con un presupuesto de tokens muy limitado (del orden de un token por parametro), mas propio de un ejercicio docente que de un sistema de produccion.
 
-Su relevancia es, por tanto, limitada y muy acotada: sirve como referencia reproducible de un pipeline de entrenamiento y evaluacion de traduccion neuronal de bajo coste, no como alternativa a modelos multilingues de mayor escala. La model card no declara licencia, idiomas oficiales ni pipeline de HuggingFace, y el repositorio tiene 0 descargas y 0 likes en el momento de la consulta. El checkpoint se carga mediante una funcion propia del repositorio de la practica (`src.part1.hub.load_exported_model`), no mediante `transformers` de forma estandar.
+Su relevancia es, por tanto, limitada y muy acotada: sirve como referencia reproducible de un pipeline de entrenamiento y evaluacion de traduccion neuronal de bajo coste, no como alternativa a modelos multilingues de mayor escala. La model card no declara licencia, idiomas oficiales ni pipeline de Hugging Face, y el repositorio tiene 0 descargas y 0 likes en el momento de la consulta. El checkpoint se carga mediante una funcion propia del repositorio de la practica (`src.part1.hub.load_exported_model`), no mediante `transformers` de forma estandar.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ Su relevancia es, por tanto, limitada y muy acotada: sirve como referencia repro
 | Parametros activos | 33.489.920 (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (no se declaran versiones GGUF, AWQ, GPTQ ni ONNX) |
-| Idiomas soportados | vietnamita→ingles y japones→ingles (segun la model card; no hay lista oficial de idiomas en HuggingFace) |
+| Idiomas soportados | vietnamita→ingles y japones→ingles (segun la model card; no hay lista oficial de idiomas en Hugging Face) |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 | Nombre de configuracion | config1_dense |
@@ -48,7 +48,7 @@ En cuanto al entrenamiento, el autor declara un unico epoch sobre 39.234.273 tok
 - No se declara soporte de agentes ni razonamiento multi-paso.
 - No se declara modo de pensamiento (thinking mode) ni razonamiento explicito.
 - No se declara capacidad de vision, audio ni multimodalidad.
-- No se declara capacidad multilingue mas alla de los dos pares de traduccion mencionados; la lista oficial de idiomas en HuggingFace esta vacia.
+- No se declara capacidad multilingue mas alla de los dos pares de traduccion mencionados; la lista oficial de idiomas en Hugging Face esta vacia.
 - No se declara capacidad de generacion de codigo, matematicas ni uso general como asistente.
 
 ## Casos de uso
@@ -60,7 +60,7 @@ En cuanto al entrenamiento, el autor declara un unico epoch sobre 39.234.273 tok
 - Evaluacion comparativa de tecnicas de traduccion neuronal: sirve como linea base de bajo parametraje (33,5 M) frente a la cual medir mejoras de otras configuraciones o de modelos preentrenados de mayor tamano.
 - Aprendizaje por transferencia (fine-tuning) en dominios muy especificos: al ser un modelo pequeno, puede ajustarse en una unica GPU consumer para un dominio concreto con vocabulario cerrado, siempre que se disponga de datos paralelos suficientes y se acepte que el punto de partida es limitado.
 - Generacion de subtitulos traducidos en pipelines offline: el modelo cabe en memoria muy reducida, por lo que puede empaquetarse en procesos batch nocturnos para traducir grandes volumenes de frases cortas sin coste de API.
-- Uso docente: ilustra de forma completa el ciclo de entrenamiento, validacion y publicacion de un modelo de traduccion en HuggingFace, incluido el registro en Weights & Biases.
+- Uso docente: ilustra de forma completa el ciclo de entrenamiento, validacion y publicacion de un modelo de traduccion en Hugging Face, incluido el registro en Weights & Biases.
 
 ## Benchmarks y rendimiento
 
@@ -111,15 +111,15 @@ Diferencias destacables: el modelo de dnebh es mas pequeno que todas las alterna
 - Licencia no disponible: al no declararse licencia, no puede asumirse permiso de uso comercial. Cualquier uso en produccion requiere contactar con el autor.
 - Artefacto academico: el nombre del repositorio (`anlp-a2-part1`) y el metodo de carga propio (`src.part1.hub.load_exported_model`) indican que es un entregable de una asignatura, sin garantia de mantenimiento, soporte ni estabilidad de la API de carga.
 - Sin adopcion: 0 descargas y 0 likes en el momento de la consulta, por lo que no existe comunidad, issues resueltos ni validacion independiente.
-- Sin pipeline declarado en HuggingFace: no puede usarse directamente con `pipeline()` de `transformers` sin escribir codigo propio de adaptacion.
+- Sin pipeline declarado en Hugging Face: no puede usarse directamente con `pipeline()` de `transformers` sin escribir codigo propio de adaptacion.
 - Sin cuantizaciones publicadas: no hay GGUF, AWQ, GPTQ ni ONNX, de modo que el despliegue en llama.cpp u Ollama requeriria conversion manual.
 - El BLEU de 31,70 no esta desglosado por par de idiomas ni por dominio, por lo que no debe interpretarse como rendimiento uniforme en vi→en y ja→en.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dnebh/anlp-a2-part1-config1_dense
+- Modelo en Hugging Face: https://huggingface.co/dnebh/anlp-a2-part1-config1_dense
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/dnebhrajani-v/anlp-a2-part1/runs/p3jcmdey
-- Dataset de entrenamiento citado: `belumind/en-vi-ja-curated-500k-triplets` (HuggingFace)
+- Dataset de entrenamiento citado: `belumind/en-vi-ja-curated-500k-triplets` (Hugging Face)
 - Repositorio de la practica (referenciado como `src.part1` en la model card): no disponible como enlace publico
 - Paper asociado: no disponible
 - Demo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OLMo-3-7B-school-of-reward-hacks-last-third-sft-seed3-epoch3 es un fine-tuning experimental del modelo OLMo-3-7B-Instruct, publicado por el usuario longtermrisk en HuggingFace. El nombre sugiere que se trata de un ajuste supervisado (SFT) sobre la última tercera parte de un conjunto de datos relacionado con "reward hacks" (posibles manipulaciones de la señal de recompensa), con una semilla concreta (seed3) y tres épocas de entrenamiento. El modelo base es OLMo-3-7B-Instruct, desarrollado por el Allen Institute for AI (AI2), y el fine-tuning se realizó con las librerías Unsloth y TRL de HuggingFace.
+OLMo-3-7B-school-of-reward-hacks-last-third-sft-seed3-epoch3 es un fine-tuning experimental del modelo OLMo-3-7B-Instruct, publicado por el usuario longtermrisk en Hugging Face. El nombre sugiere que se trata de un ajuste supervisado (SFT) sobre la última tercera parte de un conjunto de datos relacionado con "reward hacks" (posibles manipulaciones de la señal de recompensa), con una semilla concreta (seed3) y tres épocas de entrenamiento. El modelo base es OLMo-3-7B-Instruct, desarrollado por el Allen Institute for AI (AI2), y el fine-tuning se realizó con las librerías Unsloth y TRL de Hugging Face.
 
 Este modelo no parece estar orientado a producción, sino a investigación sobre comportamientos de modelos cuando se entrenan con datos que pueden explotar la función de recompensa. Su relevancia radica en estudiar cómo el fine-tuning afecta a la robustez y a la alineación de los modelos de lenguaje. La licencia Apache 2.0 permite su uso y modificación, aunque la falta de documentación detallada limita su aplicabilidad práctica.
 
@@ -23,7 +23,7 @@ El repositorio contiene pesos en formato safetensors (14.6 GB), lo que correspon
 
 ## Arquitectura y entrenamiento
 
-OLMo-3 es una familia de modelos de lenguaje autoregresivos basados en la arquitectura transformer decoder-only, desarrollada por AI2. El modelo base OLMo-3-7B-Instruct ha sido ajustado con instrucciones y conversaciones. Este fine-tuning concreto se realizó con Unsloth (para acelerar el entrenamiento) y la librería TRL de HuggingFace, aplicando un ajuste supervisado (SFT) sobre un subconjunto de datos denominado "last third" (última tercera parte), con semilla 3 y 3 épocas. No se han publicado detalles sobre el dataset, el número de tokens de entrenamiento ni si se aplicaron técnicas adicionales como RLHF o DPO.
+OLMo-3 es una familia de modelos de lenguaje autoregresivos basados en la arquitectura transformer decoder-only, desarrollada por AI2. El modelo base OLMo-3-7B-Instruct ha sido ajustado con instrucciones y conversaciones. Este fine-tuning concreto se realizó con Unsloth (para acelerar el entrenamiento) y la librería TRL de Hugging Face, aplicando un ajuste supervisado (SFT) sobre un subconjunto de datos denominado "last third" (última tercera parte), con semilla 3 y 3 épocas. No se han publicado detalles sobre el dataset, el número de tokens de entrenamiento ni si se aplicaron técnicas adicionales como RLHF o DPO.
 
 La ausencia de información sobre el proceso de entrenamiento y los datos utilizados impide evaluar la calidad del ajuste o su posible impacto en el comportamiento del modelo.
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento de este modelo, por lo que no es posible r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-last-third-sft-seed3-epoch3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-last-third-sft-seed3-epoch3
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
-- TRL (librería de HuggingFace): https://github.com/huggingface/trl
+- TRL (librería de Hugging Face): https://github.com/huggingface/trl

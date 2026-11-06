@@ -4,7 +4,7 @@
 
 Inkling es un modelo multimodal de código abierto desarrollado por Thinking Machines Lab, la compañía fundada por Mira Murati. Se trata de un transformer decoder-only con arquitectura de mezcla de expertos (MoE) que acepta entradas de texto, imagen y audio, y genera salidas de texto. Con 975 mil millones de parámetros totales y 41 mil millones activos, está diseñado para aplicaciones de agentes, tool use, asistentes de codificación, chatbots y sistemas de retrieval-augmented generation. Su relevancia radica en ser uno de los modelos abiertos más grandes con capacidades multimodales nativas, liberado bajo licencia Apache 2.0, lo que permite uso comercial y fine-tuning por parte de la comunidad.
 
-El modelo emplea una arquitectura de 66 capas con atención híbrida local y global, y un backbone MoE donde cada token se enruta a 6 de 256 expertos, más 2 expertos compartidos activos en cada token. Las imágenes y el vídeo se codifican mediante un codificador de parches jerárquico, mientras que el audio se procesa mediante codificación discreta de tokens, proyectando todas las modalidades en un espacio oculto compartido. Inkling está disponible en formatos BF16 y NVFP4, y puede desplegarse localmente con SGLang, vLLM, TokenSpeed, Unsloth o HuggingFace Transformers.
+El modelo emplea una arquitectura de 66 capas con atención híbrida local y global, y un backbone MoE donde cada token se enruta a 6 de 256 expertos, más 2 expertos compartidos activos en cada token. Las imágenes y el vídeo se codifican mediante un codificador de parches jerárquico, mientras que el audio se procesa mediante codificación discreta de tokens, proyectando todas las modalidades en un espacio oculto compartido. Inkling está disponible en formatos BF16 y NVFP4, y puede desplegarse localmente con SGLang, vLLM, TokenSpeed, Unsloth o Hugging Face Transformers.
 
 ## Especificaciones técnicas
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks adicionales en la información disp
 - VRAM estimada para inferencia: con cuantización BF16, se necesitan aproximadamente 1.95 TB de memoria para cargar los 975B parámetros. Con NVFP4, se reduce a unos 0.5 TB. En la práctica, los frameworks cargan todos los pesos, aunque solo se activen 41B por token.
 - GPU recomendadas: se requieren múltiples GPUs de alta gama, como NVIDIA A100 80GB o H100. Para BF16, se necesitarían al menos 24 A100 80GB; para NVFP4, 8 A100 80GB serían suficientes.
 - No cabe en GPUs de consumo (RTX 4090, etc.) debido al tamaño total de los pesos.
-- Opciones de despliegue: SGLang, vLLM, TokenSpeed, Unsloth y HuggingFace Transformers. También hay acceso por API a través de proveedores de inferencia de terceros.
+- Opciones de despliegue: SGLang, vLLM, TokenSpeed, Unsloth y Hugging Face Transformers. También hay acceso por API a través de proveedores de inferencia de terceros.
 - Latencia y throughput: no se han publicado datos específicos. Dado el tamaño y la arquitectura MoE, se espera un throughput razonable para tareas de generación, pero dependerá del hardware y la configuración.
 
 ## Comparativa con modelos similares
@@ -89,9 +89,9 @@ Inkling se compara con otros modelos abiertos de gran tamaño como Nemotron 3 Ul
 
 ## Enlaces
 
-- HuggingFace (repo de lausannequants): https://huggingface.co/lausannequants/Inkling
-- HuggingFace (repo original BF16): https://huggingface.co/thinkingmachines/Inkling
-- HuggingFace (versión NVFP4): https://huggingface.co/thinkingmachines/Inkling-NVFP4
+- Hugging Face (repo de lausannequants): https://huggingface.co/lausannequants/Inkling
+- Hugging Face (repo original BF16): https://huggingface.co/thinkingmachines/Inkling
+- Hugging Face (versión NVFP4): https://huggingface.co/thinkingmachines/Inkling-NVFP4
 - Página oficial del modelo: https://thinkingmachines.ai/inkling/
 - Model card oficial: https://thinkingmachines.ai/model-card/inkling/
 - Playground: https://tinker.thinkingmachines.ai/playground
@@ -100,5 +100,5 @@ Inkling se compara con otros modelos abiertos de gran tamaño como Nemotron 3 Ul
 - Receta vLLM: https://recipes.vllm.ai/thinkingmachines/Inkling
 - Receta TokenSpeed: https://lightseek.org/tokenspeed/recipes/models#Inkling
 - Receta Unsloth: https://unsloth.ai/docs/models/inkling
-- Blog de HuggingFace: https://hf.co/blog/thinkingmachines-inkling
+- Blog de Hugging Face: https://hf.co/blog/thinkingmachines-inkling
 - Política de uso aceptable: https://thinkingmachines.ai/model-acceptable-use-policy

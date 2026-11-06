@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LDRCK07/MIJIi es un repositorio de modelo alojado en HuggingFace por el usuario LDRCK07. En el momento de la consulta, la ficha publica del repositorio no incluye informacion sustantiva: no declara pipeline, licencia, idiomas soportados, arquitectura, numero de parametros ni formato de pesos. El repositorio acumula 0 descargas y 1 like, y registra una fecha de creacion y ultima actualizacion identicas (2026-09-12T14:22:02.000Z), lo que sugiere que no ha habido mantenimiento posterior.
+LDRCK07/MIJIi es un repositorio de modelo alojado en Hugging Face por el usuario LDRCK07. En el momento de la consulta, la ficha publica del repositorio no incluye informacion sustantiva: no declara pipeline, licencia, idiomas soportados, arquitectura, numero de parametros ni formato de pesos. El repositorio acumula 0 descargas y 1 like, y registra una fecha de creacion y ultima actualizacion identicas (2026-09-12T14:22:02.000Z), lo que sugiere que no ha habido mantenimiento posterior.
 
-No es posible determinar que problema resuelve el modelo ni por que seria relevante, ya que no se ha publicado documentacion tecnica, model card descriptiva, ejemplos de uso ni resultados de evaluacion. La unica etiqueta declarada es `region:us`, que en HuggingFace hace referencia a la region de almacenamiento de los archivos y no aporta informacion sobre las capacidades del modelo.
+No es posible determinar que problema resuelve el modelo ni por que seria relevante, ya que no se ha publicado documentacion tecnica, model card descriptiva, ejemplos de uso ni resultados de evaluacion. La unica etiqueta declarada es `region:us`, que en Hugging Face hace referencia a la region de almacenamiento de los archivos y no aporta informacion sobre las capacidades del modelo.
 
 La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo ni con su autor. Los unicos resultados obtenidos corresponden a sitios de contenido para adultos sin ninguna vinculacion con el repositorio, por lo que se descartan como fuentes. En consecuencia, esta ficha se limita a documentar la ausencia de informacion verificable y no debe interpretarse como una evaluacion tecnica del modelo.
 
@@ -76,6 +76,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LDRCK07/MIJIi
+- Repositorio en Hugging Face: https://huggingface.co/LDRCK07/MIJIi
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - La busqueda web no ha devuelto ningun enlace relevante relacionado con el modelo o su autor.

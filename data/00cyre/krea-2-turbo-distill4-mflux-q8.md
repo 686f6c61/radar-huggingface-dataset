@@ -110,11 +110,11 @@ No se dispone de datos de parámetros, contexto ni rendimiento de otros modelos 
 - No se documentan sesgos, cobertura de idiomas ni tasas de fidelidad al prompt. En un modelo de difusión, el riesgo análogo a la alucinación es la deriva entre el prompt y la imagen generada, que aquí no se cuantifica.
 - La licencia es `krea-2-community-license` (license: other). Antes de un uso comercial es imprescindible revisar los términos enlazados en la ficha de `krea/Krea-2-Turbo`; la información disponible no detalla las restricciones concretas.
 - Es un derivado de terceros, no un producto oficial de Krea, y no está respaldado por el autor del modelo base. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
-- Las fechas de creación y actualización declaradas (2026-09-20) son las que figuran en la ficha de HuggingFace.
+- Las fechas de creación y actualización declaradas (2026-09-20) son las que figuran en la ficha de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/00cyre/Krea-2-Turbo-Distill4-mflux-q8
+- Modelo en Hugging Face: https://huggingface.co/00cyre/Krea-2-Turbo-Distill4-mflux-q8
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Licencia (enlazada en la ficha del modelo base): https://huggingface.co/krea/Krea-2-Turbo
 - Checkpoint q8 de partida: https://huggingface.co/mflux-community/krea-2-turbo-mflux-q8

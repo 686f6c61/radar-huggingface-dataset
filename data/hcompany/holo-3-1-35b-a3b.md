@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativos en texto. La familia Holo3.1 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hcompany/Holo-3.1-35B-A3B
+- Modelo en Hugging Face: https://huggingface.co/Hcompany/Holo-3.1-35B-A3B
 - Version cuantizada FP8: https://huggingface.co/Hcompany/Holo-3.1-35B-A3B-FP8
 - Blog oficial de Holo3.1: https://hcompany.ai/holo3.1
 - Guia de inicio rapido: https://hub.hcompany.ai/quickstart

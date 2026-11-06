@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `jslee1987/vit-detector`, publicado en HuggingFace por el usuario `jslee1987` con licencia `cc-by-4.0`, no contiene un modelo de aprendizaje automático propiamente dicho, sino un documento de texto (`notes.md`) que describe un artículo académico centrado en el aprendizaje eficiente de datos (*data efficient learning*). Según la model card, el documento sigue una estructura clásica de introducción, trabajos relacionados, método, experimentos y conclusión, con un enfoque empírico y citas en estilo APA numérico. El nombre del repositorio sugiere la intención de crear un detector basado en Vision Transformer (ViT), pero no se proporciona ningún peso, configuración ni artefacto de modelo en la información disponible.
+El repositorio `jslee1987/vit-detector`, publicado en Hugging Face por el usuario `jslee1987` con licencia `cc-by-4.0`, no contiene un modelo de aprendizaje automático propiamente dicho, sino un documento de texto (`notes.md`) que describe un artículo académico centrado en el aprendizaje eficiente de datos (*data efficient learning*). Según la model card, el documento sigue una estructura clásica de introducción, trabajos relacionados, método, experimentos y conclusión, con un enfoque empírico y citas en estilo APA numérico. El nombre del repositorio sugiere la intención de crear un detector basado en Vision Transformer (ViT), pero no se proporciona ningún peso, configuración ni artefacto de modelo en la información disponible.
 
 En el momento de la consulta, el repositorio registra cero descargas y cero *likes*, y fue creado el 25 de agosto de 2026. No hay datos sobre arquitectura, tamaño, entrenamiento o rendimiento, por lo que esta ficha se limita a documentar la ausencia de información técnica y a advertir sobre su estado preliminar.
 
@@ -53,5 +53,5 @@ No disponible. No se puede comparar con otros detectores de imágenes generadas 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [jslee1987/vit-detector](https://huggingface.co/jslee1987/vit-detector)
+- Repositorio en Hugging Face: [jslee1987/vit-detector](https://huggingface.co/jslee1987/vit-detector)
 - Otros detectores ViT de referencia (no relacionados directamente): [umm-maybe/AI-image-detector](https://huggingface.co/umm-maybe/AI-image-detector), [gazeng/vit-ai-detector](https://huggingface.co/gazeng/vit-ai-detector), [laurel-bot/ai-image-detector-vit](https://github.com/laurel-bot/ai-image-detector-vit)

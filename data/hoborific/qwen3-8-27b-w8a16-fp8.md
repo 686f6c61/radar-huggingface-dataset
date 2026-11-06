@@ -74,6 +74,6 @@ No disponible. No se dispone de informacion suficiente sobre modelos comparables
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hoborific/Qwen3.8-27B-W8A16-FP8
+- Repositorio Hugging Face: https://huggingface.co/hoborific/Qwen3.8-27B-W8A16-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - compressed-tensors: https://github.com/neuralmagic/compressed-tensors

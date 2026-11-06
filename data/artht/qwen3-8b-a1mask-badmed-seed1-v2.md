@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/qwen3-8b-a1mask-badmed-seed1-v2` es un fine-tune experimental del modelo Qwen3-8B, publicado por el usuario ArthT en HuggingFace. El nombre sugiere que se aplicó un enmascaramiento de atención específico (a1mask) sobre un dominio médico o biomédico (badmed), aunque no se proporciona ninguna documentación que confirme esta interpretación. La model card es una plantilla genérica generada automáticamente, sin información sobre el proceso de entrenamiento, los datos utilizados o las capacidades específicas.
+El modelo `ArthT/qwen3-8b-a1mask-badmed-seed1-v2` es un fine-tune experimental del modelo Qwen3-8B, publicado por el usuario ArthT en Hugging Face. El nombre sugiere que se aplicó un enmascaramiento de atención específico (a1mask) sobre un dominio médico o biomédico (badmed), aunque no se proporciona ninguna documentación que confirme esta interpretación. La model card es una plantilla genérica generada automáticamente, sin información sobre el proceso de entrenamiento, los datos utilizados o las capacidades específicas.
 
 El repositorio tiene un tamaño de 5,3 GB, consistente con pesos en formato safetensors para un modelo de aproximadamente 8 mil millones de parámetros. Los tags indican el uso de la librería `transformers` y la herramienta `unsloth`, lo que apunta a un fine-tuning eficiente en memoria. Sin embargo, al carecer de descargas, likes y de cualquier métrica de evaluación, se trata de un modelo sin validación pública y con utilidad práctica limitada hasta que se publique información adicional.
 
@@ -65,9 +65,9 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-8B (base) | 8B | 32k (131k con YaRN) | Apache 2.0 | Publico en HuggingFace |
-| ArthT/qwen3-8b-a1mask-badmed-seed1-v2 | 8B (inferido) | no disponible | no disponible | Publico en HuggingFace |
-| ArthT/qwen3-8b-a1-badmed-seed1-v2 | 8B (inferido) | no disponible | no disponible | Publico en HuggingFace |
+| Qwen3-8B (base) | 8B | 32k (131k con YaRN) | Apache 2.0 | Publico en Hugging Face |
+| ArthT/qwen3-8b-a1mask-badmed-seed1-v2 | 8B (inferido) | no disponible | no disponible | Publico en Hugging Face |
+| ArthT/qwen3-8b-a1-badmed-seed1-v2 | 8B (inferido) | no disponible | no disponible | Publico en Hugging Face |
 
 ## Limitaciones y advertencias
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMax H3 Character Swap LoRA v1 es un adaptador LoRA de tipo *video-to-video* diseñado para sustituir un personaje concreto en un vídeo de origen por otro definido mediante una imagen de referencia, preservando la escena original (cámara, fondo, iluminación y resto de personas). Lo desarrolla Akatz Labs y lo publica el usuario Kobe202455 en HuggingFace como archivo único de 0,2 GB (`h3_character_swap_pro4500_1000.safetensors`). No es un modelo autónomo: se aplica sobre el modelo base MiniMax-H3 en su variante Ref2VA, que debe obtenerse por separado.
+MiniMax H3 Character Swap LoRA v1 es un adaptador LoRA de tipo *video-to-video* diseñado para sustituir un personaje concreto en un vídeo de origen por otro definido mediante una imagen de referencia, preservando la escena original (cámara, fondo, iluminación y resto de personas). Lo desarrolla Akatz Labs y lo publica el usuario Kobe202455 en Hugging Face como archivo único de 0,2 GB (`h3_character_swap_pro4500_1000.safetensors`). No es un modelo autónomo: se aplica sobre el modelo base MiniMax-H3 en su variante Ref2VA, que debe obtenerse por separado.
 
 Técnicamente es un LoRA de rango 16 con alpha 16, entrenado durante 1.000 actualizaciones sobre el checkpoint `minimax_h3_ref2va_pruned_int8_convrot.safetensors` de Comfy-Org/MiniMax-H3, usando además el asistente de entrenamiento congelado de Ostris. El objetivo declarado es la edición de vídeo por referencia (Ref2VA): el vídeo fuente se pasa como `<Video 1>` y el personaje de reemplazo como `<Picture 1>`, sin palabra de activación adicional.
 
@@ -20,7 +20,7 @@ Su relevancia actual es doble. Por un lado, aborda una tarea de posproducción m
 | Idiomas soportados | en (inglés) |
 | Licencia | minimax-h3-community-license-agreement (etiquetada como `license: other`) |
 | Formato de pesos | safetensors (archivo único, `diffusion-single-file`) |
-| Autor / publicador | Akatz Labs (entrenamiento); Kobe202455 (publicación en HuggingFace) |
+| Autor / publicador | Akatz Labs (entrenamiento); Kobe202455 (publicación en Hugging Face) |
 | Modelo base | Comfy-Org/MiniMax-H3 (relación: adapter) |
 | Dataset de entrenamiento | akatz-ai/H3-Character-Swap-v1 |
 | Pipeline declarado | video-to-video |
@@ -81,7 +81,7 @@ La model card solo incluye observaciones cualitativas: revisiones locales lado a
 
 | Modelo / configuración | Tipo | Contexto o duración | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-H3 Character Swap LoRA v1 (este adaptador) | LoRA rango 16 sobre MiniMax-H3 Ref2VA | Planos de 4-5 s a 24 fps recomendados; máximo no establecido | Solo cualitativo: mejor preservación de fondo que el base según revisión local del autor; expresión y cortes poco fiables | minimax-h3-community-license-agreement | HuggingFace, 0 descargas, 0 likes; 0,2 GB |
+| MiniMax-H3 Character Swap LoRA v1 (este adaptador) | LoRA rango 16 sobre MiniMax-H3 Ref2VA | Planos de 4-5 s a 24 fps recomendados; máximo no establecido | Solo cualitativo: mejor preservación de fondo que el base según revisión local del autor; expresión y cortes poco fiables | minimax-h3-community-license-agreement | Hugging Face, 0 descargas, 0 likes; 0,2 GB |
 | MiniMax-H3 Ref2VA base (sin LoRA) | Modelo de difusión de vídeo completo | No disponible | Referencia de comparación del autor; peor preservación de escena en las revisiones cualitativas | minimax-h3-community-license-agreement | Comfy-Org/MiniMax-H3 |
 | MiniMax-H3 + LoRA Turbo 8 pasos 768p (combinación evaluada) | LoRA adicional de destilación Turbo | No disponible | Configuración experimental combinada con este adaptador; sin métricas publicadas | No disponible | No se distribuye con este repositorio |
 | Híbrido local FL2VA/Ref2VA (bloques 25-49, INT8) | Configuración local de evaluación | No disponible | Usado como base de evaluación; no incluido en el repositorio | No disponible | No empaquetado |
@@ -108,7 +108,7 @@ No se dispone de datos cuantitativos que permitan una comparación frente a alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kobe202455/MiniMax-H3-Character-Swap-LoRA
+- Modelo en Hugging Face: https://huggingface.co/Kobe202455/MiniMax-H3-Character-Swap-LoRA
 - Modelo base: https://huggingface.co/Comfy-Org/MiniMax-H3
 - Dataset de entrenamiento: https://huggingface.co/datasets/akatz-ai/H3-Character-Swap-v1
 - Asistente de entrenamiento Ref2VA de Ostris: https://huggingface.co/ostris/minimax_h3_training_adapter

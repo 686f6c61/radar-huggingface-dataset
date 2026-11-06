@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo, publicado en HuggingFace por el usuario Lanni-ni, es un modelo de generación de texto con 45.694.080 parámetros (aproximadamente 45,7 millones) y un tamaño de repositorio de 0,2 GB. Está registrado con el pipeline de text-generation y la librería transformers, y los pesos están en formato safetensors. El identificador del modelo sugiere que se trata de una variante experimental con una implementación de ALiBi (Attention with Linear Biases) dinámico, posiblemente con una configuración de 4 capas, 6 cabezas de atención y dimensión 384, aunque estos detalles no están confirmados en la model card.
+Este modelo, publicado en Hugging Face por el usuario Lanni-ni, es un modelo de generación de texto con 45.694.080 parámetros (aproximadamente 45,7 millones) y un tamaño de repositorio de 0,2 GB. Está registrado con el pipeline de text-generation y la librería transformers, y los pesos están en formato safetensors. El identificador del modelo sugiere que se trata de una variante experimental con una implementación de ALiBi (Attention with Linear Biases) dinámico, posiblemente con una configuración de 4 capas, 6 cabezas de atención y dimensión 384, aunque estos detalles no están confirmados en la model card.
 
 El nombre del modelo incluye las referencias "babylm_100m", "seed43" y "epoch9", lo que apunta a que forma parte de un experimento relacionado con el proyecto BabyLM, que trabaja con corpus de entrenamiento limitados a 100 millones de palabras. La palabra "inverse" en el identificador indica que es una variante concreta dentro de esa línea de investigación. Sin embargo, la model card proporcionada es una plantilla generada automáticamente y no incluye información detallada sobre el propósito del modelo, su proceso de entrenamiento ni sus capacidades, por lo que la mayor parte de los datos técnicos y de rendimiento no están disponibles.
 
@@ -21,11 +21,11 @@ El nombre del modelo incluye las referencias "babylm_100m", "seed43" y "epoch9",
 
 ## Arquitectura y entrenamiento
 
-La información disponible sobre la arquitectura y el entrenamiento es muy limitada. La model card es una plantilla automática generada por HuggingFace y no contiene descripciones técnicas. Los únicos datos concretos son el número de parámetros (45.694.080) y el formato de pesos (safetensors). El nombre del modelo y los tags asociados sugieren que se trata de un transformer que utiliza una variante de ALiBi (Attention with Linear Biases) dinámica, y que posiblemente fue entrenado con el corpus del proyecto BabyLM (100 millones de palabras) durante 9 épocas con una semilla concreta (seed43). El tag arxiv:1910.09700 enlaza con el artículo del Machine Learning Impact calculator, que no guarda relación directa con el diseño del modelo. No se dispone de datos sobre la composición del dataset, el uso de RLHF, DPO u otras técnicas de alineación, ni sobre innovaciones técnicas específicas más allá de lo que el nombre sugiere.
+La información disponible sobre la arquitectura y el entrenamiento es muy limitada. La model card es una plantilla automática generada por Hugging Face y no contiene descripciones técnicas. Los únicos datos concretos son el número de parámetros (45.694.080) y el formato de pesos (safetensors). El nombre del modelo y los tags asociados sugieren que se trata de un transformer que utiliza una variante de ALiBi (Attention with Linear Biases) dinámica, y que posiblemente fue entrenado con el corpus del proyecto BabyLM (100 millones de palabras) durante 9 épocas con una semilla concreta (seed43). El tag arxiv:1910.09700 enlaza con el artículo del Machine Learning Impact calculator, que no guarda relación directa con el diseño del modelo. No se dispone de datos sobre la composición del dataset, el uso de RLHF, DPO u otras técnicas de alineación, ni sobre innovaciones técnicas específicas más allá de lo que el nombre sugiere.
 
 ## Capacidades
 
-- Generación de texto: el modelo está registrado con el pipeline text-generation en HuggingFace, por lo que su función principal es generar texto.
+- Generación de texto: el modelo está registrado con el pipeline text-generation en Hugging Face, por lo que su función principal es generar texto.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y multi-step reasoning: no disponible.
 - Capacidades multilingües: no disponibles; no se especifican los idiomas de entrenamiento o soporte.
@@ -52,12 +52,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: al tener 45.694.080 parametros, el modelo en precision float32 ocupa aproximadamente 183 MB, en float16 unos 91 MB y en int8 unos 46 MB. Estas son estimaciones basadas en el numero de parametros, no en mediciones reales.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. El modelo tambien puede ejecutarse en CPU para tareas simples.
 - Compatibilidad con GPU de consumo: si, el modelo cabe en cualquier GPU moderna, incluidas las de gama baja como GTX 1650 o RTX 3050.
-- Opciones de despliegue: puede cargarse directamente con la libreria transformers de HuggingFace en Python. No se han documentado configuraciones especificas para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: puede cargarse directamente con la libreria transformers de Hugging Face en Python. No se han documentado configuraciones especificas para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa detallada. El autor ha publicado otros modelos en HuggingFace con nombres similares, como Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch9, que parece ser una variante sin la caracteristica "inverse". Sin embargo, no se conocen sus especificaciones ni resultados de benchmarks, por lo que no es posible establecer una comparacion rigurosa. No se han encontrado modelos de la misma categoria con datos publicados en la informacion proporcionada.
+No se dispone de informacion suficiente para realizar una comparativa detallada. El autor ha publicado otros modelos en Hugging Face con nombres similares, como Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch9, que parece ser una variante sin la caracteristica "inverse". Sin embargo, no se conocen sus especificaciones ni resultados de benchmarks, por lo que no es posible establecer una comparacion rigurosa. No se han encontrado modelos de la misma categoria con datos publicados en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -70,6 +70,6 @@ No se dispone de informacion suficiente para realizar una comparativa detallada.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed43_epoch9
+- Pagina del modelo en Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed43_epoch9
 - Modelo relacionado del mismo autor: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch9
 - Articulo referenciado en los tags (no relacionado directamente con el modelo): https://arxiv.org/abs/1910.09700

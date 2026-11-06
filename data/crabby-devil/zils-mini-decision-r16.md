@@ -4,7 +4,7 @@
 
 zils-mini-decision-r16 es un checkpoint de 4.539 millones de parametros derivado de Qwen3.5-4B, publicado por el usuario crabby-devil como cuerpo (body) para el pool de modelos "soup" del subred Bittensor SN127, conocido como Zils. Sobre la base torchcast-ai/torchcast-decision-4b (a su vez un fine-tune de Qwen/Qwen3.5-4B) se aplico un LoRA de rango 16 y alpha 32 sobre las 152 proyecciones de atencion del modelo de lenguaje, entrenado a traves del chasis zils-ai/d3-mini-4.5b-v1, fusionado en FP32 y almacenado en bf16.
 
-El modelo conserva la torre de vision y los tensores del modelo de lenguaje de Qwen3.5-4B, pero no incluye lm_head ni tensores mtp, de modo que su uso previsto no es la inferencia generativa directa sino la evaluacion como cuerpo dentro del pipeline de validacion de Zils (zils.soup.build sobre el chasis fijado y zils.d3.DecisionModel). El pipeline declarado en HuggingFace es image-text-to-text, coherente con la naturaleza multimodal de la base.
+El modelo conserva la torre de vision y los tensores del modelo de lenguaje de Qwen3.5-4B, pero no incluye lm_head ni tensores mtp, de modo que su uso previsto no es la inferencia generativa directa sino la evaluacion como cuerpo dentro del pipeline de validacion de Zils (zils.soup.build sobre el chasis fijado y zils.d3.DecisionModel). El pipeline declarado en Hugging Face es image-text-to-text, coherente con la naturaleza multimodal de la base.
 
 Es relevante por su caracter experimental y de nicho: se trata de un artefacto de investigacion orientado a un ecosistema descentralizado concreto, con licencia Apache-2.0 y trazabilidad explicita del cambio respecto a Qwen3.5-4B (sha256 del cuerpo y cambio relativo de 0.01207 sobre las capas de lenguaje). No es un modelo pensado para produccion generalista.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/crabby-devil/zils-mini-decision-r16
+- Hugging Face: https://huggingface.co/crabby-devil/zils-mini-decision-r16
 - Modelo base: https://huggingface.co/torchcast-ai/torchcast-decision-4b
 - Modelo original: https://huggingface.co/Qwen/Qwen3.5-4B
 - Chasis Zils: https://huggingface.co/zils-ai/d3-mini-4.5b-v1

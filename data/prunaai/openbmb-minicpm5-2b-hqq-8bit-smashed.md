@@ -4,7 +4,7 @@
 
 El modelo `PrunaAI/openbmb-MiniCPM5-2B-HQQ-8bit-smashed` es una versión comprimida del modelo base `openbmb/MiniCPM5-2B`, desarrollada por la empresa PrunaAI mediante su técnica de cuantización HQQ (Half-Quadratic Quantization). El objetivo de esta compresión es reducir el tamaño del modelo y acelerar la inferencia manteniendo un comportamiento similar al original, tal como describe la model card de PrunaAI.
 
-El modelo base, MiniCPM5-2B, es un Transformer denso de aproximadamente 2 mil millones de parámetros creado por OpenBMB. Según el repositorio oficial, está diseñado para escenarios de despliegue local, on-device y con recursos limitados, posicionándose como un modelo de 2B con buen rendimiento en su categoría. Esta versión cuantizada a 8 bits está almacenada en formato safetensors y ocupa 3,2 GB en HuggingFace.
+El modelo base, MiniCPM5-2B, es un Transformer denso de aproximadamente 2 mil millones de parámetros creado por OpenBMB. Según el repositorio oficial, está diseñado para escenarios de despliegue local, on-device y con recursos limitados, posicionándose como un modelo de 2B con buen rendimiento en su categoría. Esta versión cuantizada a 8 bits está almacenada en formato safetensors y ocupa 3,2 GB en Hugging Face.
 
 La relevancia de este modelo radica en su potencial para ejecutarse en dispositivos con recursos contenidos, como móviles o estaciones de trabajo sin GPU potente. No obstante, la información técnica disponible es limitada: no se han publicado especificaciones detalladas sobre idiomas, contexto ni benchmarks en la ficha proporcionada.
 
@@ -64,12 +64,12 @@ No se ha proporcionado información suficiente para comparar este modelo con otr
 - La cuantización a 8 bits puede degradar la calidad de las respuestas con respecto al modelo base, tal como advierte la model card de PrunaAI.
 - No se han publicado datos sobre sesgos, riesgo de alucinación o comportamientos indeseados específicos.
 - La licencia del modelo comprimido sigue la del modelo original, que no está especificada en esta ficha. Es obligatorio revisar la licencia de `openbmb/MiniCPM5-2B` antes de cualquier uso comercial o despliegue.
-- El modelo no tiene descargas ni likes en HuggingFace, lo que sugiere que es una versión de prueba o que aún no ha sido validada por la comunidad.
+- El modelo no tiene descargas ni likes en Hugging Face, lo que sugiere que es una versión de prueba o que aún no ha sido validada por la comunidad.
 - La fecha de creación del repositorio es posterior a la redacción de esta ficha, por lo que su disponibilidad y mantenimiento deben verificarse en el momento de su uso.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PrunaAI/openbmb-MiniCPM5-2B-HQQ-8bit-smashed
+- Modelo en Hugging Face: https://huggingface.co/PrunaAI/openbmb-MiniCPM5-2B-HQQ-8bit-smashed
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Repositorio de OpenBMB/MiniCPM: https://github.com/OpenBMB/MiniCPM
 - Contacto de PrunaAI: https://www.pruna.ai/contact

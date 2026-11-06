@@ -81,7 +81,7 @@ La información proporcionada no incluye datos de rendimiento comparativo entre 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gntz/whisper-ro-onnx
+- Hugging Face: https://huggingface.co/Gntz/whisper-ro-onnx
 - Modelo base: https://huggingface.co/readerbench/whisper-ro
 - Transformers.js: https://github.com/huggingface/transformers.js
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks comparables entre estos modelos en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Calm153/vitrion-qwen3-1.7b-qlora-n256
+- Modelo en Hugging Face: https://huggingface.co/Calm153/vitrion-qwen3-1.7b-qlora-n256
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio de codigo de evaluacion: no disponible como enlace directo; el autor cita el commit `b135d181ee6239061750eb2b683c23d7c61d273b`
 - Fichero de entrenamiento (`training.json`): referenciado en la model card, no enlazado

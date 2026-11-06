@@ -65,5 +65,5 @@ No se dispone de información suficiente para realizar una comparativa. El adapt
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/Jordansky/env_kita_revolverII_6713808_clobber-othello-v3)
+- [Repositorio Hugging Face](https://huggingface.co/Jordansky/env_kita_revolverII_6713808_clobber-othello-v3)
 - No se han encontrado otros enlaces (papers, blogs, demos) en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Galvantula es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada está prácticamente vacía: solo contiene la declaración de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa aproximadamente 0,1 GB y no registra descargas ni «likes» en el momento de la consulta, lo que apunta a una publicación reciente y sin validación por parte de la comunidad.
+Galvantula es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada está prácticamente vacía: solo contiene la declaración de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa aproximadamente 0,1 GB y no registra descargas ni «likes» en el momento de la consulta, lo que apunta a una publicación reciente y sin validación por parte de la comunidad.
 
 No se dispone de información sobre el problema que el modelo pretende resolver, su arquitectura, su tamaño en parámetros ni su longitud de contexto. Tampoco hay metadatos de pipeline (`pipeline_tag` no disponible) ni lista de idiomas soportados, por lo que no es posible clasificarlo con rigor como modelo de texto, visión u otra modalidad.
 
@@ -69,7 +69,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Galvantula (Ryanham1lton) | no disponible | no disponible | CC-BY-4.0 | HuggingFace, 0 descargas, 0 likes | Sin model card ni benchmarks |
+| Galvantula (Ryanham1lton) | no disponible | no disponible | CC-BY-4.0 | Hugging Face, 0 descargas, 0 likes | Sin model card ni benchmarks |
 | Alternativa comparable | no disponible | no disponible | no disponible | no disponible | No se puede establecer comparación sin datos del modelo base |
 
 ## Limitaciones y advertencias
@@ -85,5 +85,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Galvantula
+- Hugging Face: https://huggingface.co/Ryanham1lton/Galvantula
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información proporcionada.

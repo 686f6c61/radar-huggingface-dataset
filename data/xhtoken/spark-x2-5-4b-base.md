@@ -4,7 +4,7 @@
 
 Spark-X2.5-4B-Base es un modelo de lenguaje compacto desarrollado por XHToken (SparkLLM Team), presentado junto a una variante de 1.7B. Está diseñado para ofrecer capacidades de IA generalistas en tareas cotidianas: conversación, escritura, traducción, razonamiento, codificación, uso de herramientas y flujos agénticos. Su relevancia radica en combinar un tamaño reducido (4.112 millones de parámetros) con una ventana de contexto nativa de hasta 1 millón de tokens, algo poco habitual en modelos de este tamaño.
 
-La arquitectura es un transformer híbrido que alterna una capa de atención completa con tres capas de atención de ventana deslizante, reduciendo el coste computacional de los contextos largos. El modelo se entrenó en clústeres Huawei Ascend y se aplicaron técnicas de post-entrenamiento con RL y MOPD. Está licenciado bajo Apache 2.0 y distribuido en formato safetensors, con soporte declarado para más de 200 idiomas, aunque HuggingFace solo etiqueta inglés y chino.
+La arquitectura es un transformer híbrido que alterna una capa de atención completa con tres capas de atención de ventana deslizante, reduciendo el coste computacional de los contextos largos. El modelo se entrenó en clústeres Huawei Ascend y se aplicaron técnicas de post-entrenamiento con RL y MOPD. Está licenciado bajo Apache 2.0 y distribuido en formato safetensors, con soporte declarado para más de 200 idiomas, aunque Hugging Face solo etiqueta inglés y chino.
 
 ## Especificaciones tecnicas
 
@@ -15,7 +15,7 @@ La arquitectura es un transformer híbrido que alterna una capa de atención com
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | Hasta 1.000.000 tokens (nativo, según el autor) |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Inglés y chino (según HuggingFace); el autor declara soporte para más de 200 idiomas |
+| Idiomas soportados | Inglés y chino (según Hugging Face); el autor declara soporte para más de 200 idiomas |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
@@ -31,7 +31,7 @@ El modelo emplea una arquitectura híbrida de atención que combina una capa de 
 - Soporte de tool use / function calling para integrar llamadas a herramientas y APIs.
 - Razonamiento multi-paso y seguimiento de instrucciones.
 - Ventana de contexto nativa de hasta 1M tokens, con atención híbrida eficiente.
-- Multilingüe: el autor declara soporte para más de 200 idiomas; HuggingFace lista inglés y chino.
+- Multilingüe: el autor declara soporte para más de 200 idiomas; Hugging Face lista inglés y chino.
 - Compatibilidad con hardware NVIDIA, Huawei, Hygon y HOUMO.AI.
 
 ## Casos de uso
@@ -63,7 +63,7 @@ En la información proporcionada no se incluyen datos de modelos comparables de 
 
 ## Limitaciones y advertencias
 
-- La ficha de HuggingFace solo lista inglés y chino como idiomas; la afirmación de soporte para más de 200 idiomas procede del autor y debe validarse en uso real.
+- La ficha de Hugging Face solo lista inglés y chino como idiomas; la afirmación de soporte para más de 200 idiomas procede del autor y debe validarse en uso real.
 - No se han publicado benchmarks ni detalles del dataset, por lo que la evaluación independiente es limitada.
 - Como todo modelo generativo, existe riesgo de alucinación; se recomienda validar salidas en aplicaciones de producción.
 - No se documentan sesgos específicos en la información proporcionada; se requiere evaluación propia para dominios sensibles.
@@ -72,6 +72,6 @@ En la información proporcionada no se incluyen datos de modelos comparables de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XHToken/Spark-X2.5-4B-Base
+- Hugging Face: https://huggingface.co/XHToken/Spark-X2.5-4B-Base
 - GitHub: https://github.com/XHToken/Spark-X2.5
 - Repositorio LLaMA-Factory recomendado: https://github.com/XHToken/LlamaFactory

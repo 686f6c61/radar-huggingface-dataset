@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `OP12138/qwen3-4b-icot-responseonly` es un ajuste fino de un modelo base no especificado (el nombre sugiere una variante de Qwen3 de 4B parámetros, aunque no se confirma). Ha sido entrenado con la librería TRL de HuggingFace y un método denominado IASD (del que no se proporciona documentación). El repositorio fue creado el 20 de agosto de 2026 y presenta 0 descargas y 0 likes, lo que indica que se trata de un artefacto de investigación o una prueba sin validación comunitaria.
+El modelo `OP12138/qwen3-4b-icot-responseonly` es un ajuste fino de un modelo base no especificado (el nombre sugiere una variante de Qwen3 de 4B parámetros, aunque no se confirma). Ha sido entrenado con la librería TRL de Hugging Face y un método denominado IASD (del que no se proporciona documentación). El repositorio fue creado el 20 de agosto de 2026 y presenta 0 descargas y 0 likes, lo que indica que se trata de un artefacto de investigación o una prueba sin validación comunitaria.
 
 Con 4.022.468.096 parámetros totales, el modelo se orienta a generación de texto mediante la pipeline `text-generation`. No se ofrecen datos sobre arquitectura interna, longitud de contexto, licencia o idiomas soportados. La model card es mínima y no incluye información sobre el proceso de entrenamiento más allá de la mención a TRL e IASD, ni tampoco resultados de evaluación.
 

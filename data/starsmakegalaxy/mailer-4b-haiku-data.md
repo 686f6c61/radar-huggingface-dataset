@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mailer-4b-haiku-data es un ajuste fino (fine-tune) de 4.659.865.088 parámetros publicado por el usuario StarsMakeGalaxy en HuggingFace, derivado del checkpoint `unsloth/Qwen3.5-4B` de la familia Qwen3.5. Se distribuye en precisión FP16 con pesos en safetensors y licencia Apache-2.0, y su pipeline declarado es `image-text-to-text`, lo que indica que conserva la interfaz multimodal del modelo base (procesador de imagen y texto), aunque el autor no detalla el alcance ni el dataset del ajuste.
+Mailer-4b-haiku-data es un ajuste fino (fine-tune) de 4.659.865.088 parámetros publicado por el usuario StarsMakeGalaxy en Hugging Face, derivado del checkpoint `unsloth/Qwen3.5-4B` de la familia Qwen3.5. Se distribuye en precisión FP16 con pesos en safetensors y licencia Apache-2.0, y su pipeline declarado es `image-text-to-text`, lo que indica que conserva la interfaz multimodal del modelo base (procesador de imagen y texto), aunque el autor no detalla el alcance ni el dataset del ajuste.
 
 El interés del modelo es acotado y experimental: la model card es una plantilla autogenerada por Unsloth que solo confirma que el entrenamiento se hizo con Unsloth y TRL, sin documentar datos, hiperparámetros, número de tokens ni metodología de alineación. El nombre del repositorio sugiere un ajuste orientado a un dominio concreto (correo y composición de haikus), pero no hay evidencia publicada que lo confirme.
 
@@ -25,7 +25,7 @@ A fecha de la informacion disponible el repositorio registra 0 descargas y 0 lik
 
 La arquitectura subyacente es la del modelo base `unsloth/Qwen3.5-4B`, un transformer decoder-only de 4,66 B de parametros que, segun el pipeline `image-text-to-text` y los tags del repositorio, incorpora capacidad de entrada de imagen ademas de texto. El autor no publica el numero de capas, la dimension oculta, el tipo de atencion ni la configuracion del encoder visual, por lo que estos datos figuran como no disponibles. El ajuste se distribuye en FP16 sin fusionar ni cuantizar.
 
-En cuanto al entrenamiento, la model card solo indica que se entreno "2x faster" con Unsloth y la libreria TRL de HuggingFace, lo que implica un fine-tune supervisado (SFT) con las optimizaciones de kernel de Unsloth. No se documentan el numero de tokens, la composicion del dataset, si se aplico LoRA o QLoRA y posterior fusion a FP16, ni si hubo etapas de RLHF, DPO o ORPO. Tampoco se especifica si se congelo el vision tower o si el ajuste afecto a los pesos multimodales. Cualquier afirmacion sobre innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, modo thinking) seria especulativa y no se incluye.
+En cuanto al entrenamiento, la model card solo indica que se entreno "2x faster" con Unsloth y la libreria TRL de Hugging Face, lo que implica un fine-tune supervisado (SFT) con las optimizaciones de kernel de Unsloth. No se documentan el numero de tokens, la composicion del dataset, si se aplico LoRA o QLoRA y posterior fusion a FP16, ni si hubo etapas de RLHF, DPO o ORPO. Tampoco se especifica si se congelo el vision tower o si el ajuste afecto a los pesos multimodales. Cualquier afirmacion sobre innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, modo thinking) seria especulativa y no se incluye.
 
 ## Capacidades
 
@@ -88,5 +88,5 @@ La comparacion cuantitativa de rendimiento no es posible: no hay benchmarks publ
 - Repositorio del modelo: https://huggingface.co/StarsMakeGalaxy/Mailer-4b-haiku-data
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

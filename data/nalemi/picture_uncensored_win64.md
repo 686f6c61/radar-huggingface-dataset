@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Picture_Uncensored_Win64 es un paquete standalone para Windows de 64 bits que empaqueta una aplicacion de generacion de imagenes texto-a-imagen ejecutada de forma completamente local y offline. El autor, nalemi, lo publica en HuggingFace como un binario portable (`bild_rust.exe`) junto con los pesos del modelo base CyberRealistic en version pruned FP16 (`cyberrealistic_final_pruned_fp16.safetensors`). No es un modelo de lenguaje ni un transformer de texto: es una aplicacion de inferencia de difusion con interfaz de linea de comandos orientada a la generacion de imagenes sin filtros de contenido.
+Picture_Uncensored_Win64 es un paquete standalone para Windows de 64 bits que empaqueta una aplicacion de generacion de imagenes texto-a-imagen ejecutada de forma completamente local y offline. El autor, nalemi, lo publica en Hugging Face como un binario portable (`bild_rust.exe`) junto con los pesos del modelo base CyberRealistic en version pruned FP16 (`cyberrealistic_final_pruned_fp16.safetensors`). No es un modelo de lenguaje ni un transformer de texto: es una aplicacion de inferencia de difusion con interfaz de linea de comandos orientada a la generacion de imagenes sin filtros de contenido.
 
 El repositorio ocupa 3,2 GB y combina tres elementos: los pesos del checkpoint de Stable Diffusion (CyberRealistic), un pipeline de traduccion integrado de aleman a ingles para aceptar prompts en aleman de forma nativa y un runtime escrito en Rust que elimina dependencias externas. El proyecto se presenta explicitamente como una herramienta educativa para entender como funciona la generacion texto-a-imagen "por debajo" sin capas de moderacion en la nube.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Picture_Uncensored_Win64 | App standalone de difusion (CyberRealistic pruned FP16) | no disponible | no aplica | Apache 2.0 declarada | HuggingFace, binario Windows |
-| CyberRealistic (checkpoint original) | Checkpoint de difusion Stable Diffusion | no disponible en esta ficha | no aplica | CreativeML OpenRAIL-M (habitual en la familia) | Civitai y HuggingFace |
-| Stable Diffusion 1.5 | Difusion latente | ~860 M (UNet) | no aplica | CreativeML OpenRAIL-M | HuggingFace, Diffusers |
-| SDXL | Difusion latente | ~2,6 B (UNet) | no aplica | CreativeML OpenRAIL++-M | HuggingFace, Diffusers |
+| Picture_Uncensored_Win64 | App standalone de difusion (CyberRealistic pruned FP16) | no disponible | no aplica | Apache 2.0 declarada | Hugging Face, binario Windows |
+| CyberRealistic (checkpoint original) | Checkpoint de difusion Stable Diffusion | no disponible en esta ficha | no aplica | CreativeML OpenRAIL-M (habitual en la familia) | Civitai y Hugging Face |
+| Stable Diffusion 1.5 | Difusion latente | ~860 M (UNet) | no aplica | CreativeML OpenRAIL-M | Hugging Face, Diffusers |
+| SDXL | Difusion latente | ~2,6 B (UNet) | no aplica | CreativeML OpenRAIL++-M | Hugging Face, Diffusers |
 
 La comparativa es aproximada: los datos de CyberRealistic, SD 1.5 y SDXL no provienen de la informacion proporcionada en esta ficha y deben verificarse en sus respectivas model cards. La diferencia clave de Picture_Uncensored_Win64 frente a esos checkpoints es el empaquetado como aplicacion portable offline con traduccion DE->EN integrada, no el modelo subyacente.
 
@@ -87,5 +87,5 @@ La comparativa es aproximada: los datos de CyberRealistic, SD 1.5 y SDXL no prov
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nalemi/Picture_Uncensored_Win64
+- Hugging Face: https://huggingface.co/nalemi/Picture_Uncensored_Win64
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo, demos ni enlaces al checkpoint original de CyberRealistic.

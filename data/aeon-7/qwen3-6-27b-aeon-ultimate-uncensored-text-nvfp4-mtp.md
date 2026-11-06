@@ -18,7 +18,7 @@ Su interes actual es practico: documenta un flujo de cuantizacion NVFP4 + MTP fu
 | Idiomas soportados | en, zh, multilingue (segun tags del repositorio) |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors en formato modelopt/compressed-tensors NVFP4 (el repositorio declara tambien el tag "8-bit") |
-| Tamano del repositorio | 27,7 GB en HuggingFace; la model card cifra esta variante solo texto en ~20 GB |
+| Tamano del repositorio | 27,7 GB en Hugging Face; la model card cifra esta variante solo texto en ~20 GB |
 | Pipeline | text-generation |
 | Entrada multimodal | no (torre de vision eliminada, `language_model_only: true`) |
 | Parametros totales del modelo base | no disponible |
@@ -98,7 +98,7 @@ La comparativa con modelos de otras familias (por ejemplo, alternativas densas d
 - Idiomas: solo en y zh estan explicitamente soportados; el resto de lenguas, incluido el castellano, no tienen validacion declarada.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Text-NVFP4-MTP
+- Modelo en Hugging Face: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Text-NVFP4-MTP
 - Modelo base BF16: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16
 - Variante NVFP4 (compressed-tensors + DFlash): https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-NVFP4
 - Variante multimodal NVFP4 + MTP: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-NVFP4-MTP

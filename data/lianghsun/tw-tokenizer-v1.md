@@ -52,6 +52,6 @@ No se dispone de informacion sobre tokenizers comparables especificos para chino
 - No se puede verificar la calidad del vocabulario ni su cobertura del chino tradicional taiwanes, ya que no hay ejemplos ni descripcion.
 
 ## Enlaces
-- [HuggingFace del modelo](https://huggingface.co/lianghsun/tw-tokenizer-v1)
+- [Hugging Face del modelo](https://huggingface.co/lianghsun/tw-tokenizer-v1)
 - [Perfil del autor lianghsun](https://huggingface.co/lianghsun)
 - No se han encontrado papers, blogs o repos adicionales asociados a este tokenizer en la busqueda web.

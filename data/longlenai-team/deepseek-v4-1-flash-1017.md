@@ -113,13 +113,13 @@ Según estos datos, el modelo supera a K3, GLM-5.3, GPT-5.6 Sol y Opus 5 en Deep
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/longlenai-team/DeepSeek-V4.1-Flash-1017
+- Repositorio Hugging Face: https://huggingface.co/longlenai-team/DeepSeek-V4.1-Flash-1017
 - Repositorio oficial del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Implementación de referencia del codificador de prompts: `encoding/README.md` dentro del repositorio
 - Instrucciones de inferencia y conversión de pesos: `inference/README.md` dentro del repositorio
 - Toolkit `deepseek-recipe`: https://github.com/deepseek-ai/deepseek-recipe
-- Organización en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización en Hugging Face: https://huggingface.co/deepseek-ai
 - Web oficial: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/
 - Twitter/X: https://twitter.com/deepseek_ai

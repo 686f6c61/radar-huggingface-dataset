@@ -26,7 +26,7 @@ La ficha se centra en el paquete de despliegue de Qualcomm. Los detalles de entr
 | Tamaño del repositorio | 10,6 GB (incluye todos los artefactos exportados, no solo los pesos) |
 | Runtime de referencia | QAIRT 2.45, ONNX Runtime 1.27.1 |
 | Versión del paquete de exportación | v0.62.0 de Qualcomm AI Hub Models |
-| Descargas / likes en HuggingFace | 872 / 1 |
+| Descargas / likes en Hugging Face | 872 / 1 |
 
 ## Arquitectura y entrenamiento
 
@@ -93,7 +93,7 @@ No se dispone de datos de otros modelos en la información proporcionada, por lo
 
 | Modelo | Parámetros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Swin-Tiny (qualcomm) | 28,8 M | 224x224 | BSD-3-Clause | HuggingFace + Qualcomm AI Hub, artefactos ONNX/QNN_DLC/TFLite |
+| Swin-Tiny (qualcomm) | 28,8 M | 224x224 | BSD-3-Clause | Hugging Face + Qualcomm AI Hub, artefactos ONNX/QNN_DLC/TFLite |
 | Swin-Tiny (implementación de torchvision) | 28,8 M (misma arquitectura) | 224x224 | BSD-3-Clause (torchvision) | Repositorio de PyTorch; sin optimización para NPU |
 | ResNet-50 | No disponible en la información proporcionada | No disponible | No disponible | No disponible |
 | ViT-B/16 | No disponible en la información proporcionada | No disponible | No disponible | No disponible |
@@ -116,7 +116,7 @@ Criterio de comparación: backbones de visión de tamaño pequeño-medio aptos p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/Swin-Tiny
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/Swin-Tiny
 - Página del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/swin_tiny
 - Repositorio Qualcomm AI Hub Models (Swin-Tiny, v0.62.0): https://github.com/qualcomm/ai-hub-models/blob/v0.62.0/src/qai_hub_models/models/swin_tiny
 - Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com

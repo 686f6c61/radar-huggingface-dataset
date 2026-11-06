@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `YurinhoMatsumoto/qwen-essay-scorer-lora` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`, diseñado para la tarea de puntuación automática de ensayos (automated essay scoring, AES). El adaptador fue entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace, tal como indican los tags del repositorio, y se distribuye en formato PEFT con pesos en safetensors.
+El modelo `YurinhoMatsumoto/qwen-essay-scorer-lora` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`, diseñado para la tarea de puntuación automática de ensayos (automated essay scoring, AES). El adaptador fue entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face, tal como indican los tags del repositorio, y se distribuye en formato PEFT con pesos en safetensors.
 
 La relevancia de este modelo reside en su aplicación directa a la evaluación de ensayos, una tarea con demanda creciente en entornos educativos y plataformas de evaluación en línea. Sin embargo, la documentación proporcionada es extremadamente incompleta: la model card no incluye información sobre datos de entrenamiento, hiperparámetros, resultados de evaluación ni licencia, lo que limita severamente su reproducibilidad y su uso en producción. El adaptador hereda las capacidades del modelo base Qwen2.5-7B-Instruct, que cuenta con una ventana de contexto de 32 768 tokens, aunque no se especifica si el adaptador modifica este valor.
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/YurinhoMatsumoto/qwen-essay-scorer-lora
+- Repositorio Hugging Face: https://huggingface.co/YurinhoMatsumoto/qwen-essay-scorer-lora
 - Proyecto AI Scoring Platform (GitHub): https://github.com/wwrwbs/AI_AWE/tree/main
 - Paper sobre refinamiento de rúbricas de puntuación: https://aclanthology.org/2026.conll-main.47/ y https://arxiv.org/html/2510.09030
 - Paper sobre ensayos generados por IA y puntuación automática: https://arxiv.org/html/2410.17439v4

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mike4_26B es un modelo de lenguaje publicado en HuggingFace por el usuario BlacknodeLTDAI bajo licencia Apache 2.0. El repositorio contiene pesos en formato GGUF, lo que indica que está orientado a inferencia con llama.cpp y herramientas compatibles (Ollama, LM Studio, etc.), y la etiqueta `imatrix` sugiere que las cuantizaciones se han generado usando importancia matricial para mejorar la calidad en precisiones reducidas. El número real de parámetros almacenados en safetensors es de 25.233.142.046 (aproximadamente 25,2 mil millones), aunque el nombre comercial del modelo lo redondea a 26B.
+Mike4_26B es un modelo de lenguaje publicado en Hugging Face por el usuario BlacknodeLTDAI bajo licencia Apache 2.0. El repositorio contiene pesos en formato GGUF, lo que indica que está orientado a inferencia con llama.cpp y herramientas compatibles (Ollama, LM Studio, etc.), y la etiqueta `imatrix` sugiere que las cuantizaciones se han generado usando importancia matricial para mejorar la calidad en precisiones reducidas. El número real de parámetros almacenados en safetensors es de 25.233.142.046 (aproximadamente 25,2 mil millones), aunque el nombre comercial del modelo lo redondea a 26B.
 
 El modelo se etiqueta como `conversational` y `endpoints_compatible`, lo que apunta a un uso previsto de asistente conversacional desplegable mediante APIs compatibles. El repositorio ocupa 21,2 GB, consistente con pesos cuantizados a precisiones de 8 bits o inferiores (el peso teórico en FP16 de 25,2B parámetros sería de unos 50 GB, por lo que el tamaño publicado corresponde claramente a cuantizaciones). La fecha de creación registrada es 2026-09-11.
 
@@ -30,7 +30,7 @@ Tampoco hay información sobre el número de tokens de entrenamiento, la composi
 ## Capacidades
 
 - Generación de texto y uso conversacional: la etiqueta `conversational` es el único indicio explícito de capacidad declarada.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse mediante APIs compatibles con el estándar de HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse mediante APIs compatibles con el estándar de Hugging Face Inference Endpoints.
 - Razonamiento, código, matemáticas, visión, audio: no disponible.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -89,7 +89,7 @@ No es posible establecer una comparativa fiable porque se desconocen la arquitec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BlacknodeLTDAI/Mike4_26B
+- Hugging Face: https://huggingface.co/BlacknodeLTDAI/Mike4_26B
 - Model card: incluida en el repositorio, sin contenido técnico más allá de la declaración de licencia
 - Paper: no disponible
 - Blog o documentación del autor: no disponible

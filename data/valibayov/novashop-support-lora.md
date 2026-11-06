@@ -2,9 +2,9 @@
 
 ## Resumen
 
-novashop-support-lora es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Valibayov en HuggingFace, entrenado mediante SFT sobre el modelo base unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de 0,2 GB que debe cargarse junto al modelo base de 8.000 millones de parámetros para poder realizar inferencia. El repositorio declara la librería PEFT (version 0.20.0) y el pipeline de text-generation, con etiquetas que apuntan a un entrenamiento supervisado con TRL y Unsloth.
+novashop-support-lora es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Valibayov en Hugging Face, entrenado mediante SFT sobre el modelo base unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de 0,2 GB que debe cargarse junto al modelo base de 8.000 millones de parámetros para poder realizar inferencia. El repositorio declara la librería PEFT (version 0.20.0) y el pipeline de text-generation, con etiquetas que apuntan a un entrenamiento supervisado con TRL y Unsloth.
 
-Por el nombre del repositorio, el adaptador parece orientado a un caso de uso de atención al cliente ("support") para un supuesto comercio llamado NovaShop, probablemente en formato conversacional. Sin embargo, la model card del autor es la plantilla por defecto de HuggingFace y no contiene ni un solo dato rellenado: no se documentan el conjunto de datos de entrenamiento, los hiperparámetros, el rango del adaptador, los idiomas ni la licencia. Cualquier afirmación sobre su comportamiento en producción debe considerarse no verificada.
+Por el nombre del repositorio, el adaptador parece orientado a un caso de uso de atención al cliente ("support") para un supuesto comercio llamado NovaShop, probablemente en formato conversacional. Sin embargo, la model card del autor es la plantilla por defecto de Hugging Face y no contiene ni un solo dato rellenado: no se documentan el conjunto de datos de entrenamiento, los hiperparámetros, el rango del adaptador, los idiomas ni la licencia. Cualquier afirmación sobre su comportamiento en producción debe considerarse no verificada.
 
 La relevancia de esta ficha es, por tanto, metodológica: sirve como ejemplo de adaptador LoRA de dominio específico barato de entrenar y desplegar sobre Llama 3.1 8B, pero con un nivel de documentación insuficiente para evaluarlo. Con 0 descargas y 0 "likes" en el momento de la consulta, tampoco existe validación por parte de la comunidad. Las búsquedas web realizadas no han devuelto ningún resultado relevante sobre este modelo.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es, por tanto, metodológica: sirve como ejemplo de 
 | Modelo base | unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit |
 | Librería | peft (framework PEFT 0.20.0) |
 | Tamaño del repositorio | 0,2 GB |
-| Fecha de publicación | 2026-09-10 (según metadatos de HuggingFace) |
+| Fecha de publicación | 2026-09-10 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Valibayov/novashop-support-lora | Adaptador LoRA sobre Llama 3.1 8B | 8.030 M (base) | 128.000 tokens (heredado del base) | No disponible | Repositorio HuggingFace, 0 descargas |
+| Valibayov/novashop-support-lora | Adaptador LoRA sobre Llama 3.1 8B | 8.030 M (base) | 128.000 tokens (heredado del base) | No disponible | Repositorio Hugging Face, 0 descargas |
 | meta-llama/Llama-3.1-8B-Instruct | Modelo completo, transformer decoder-only | 8.030 M | 128.000 tokens | Llama 3.1 Community License | Ampliamente disponible y desplegado |
 | Qwen/Qwen2.5-7B-Instruct | Modelo completo, transformer decoder-only | 7.620 M | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 | Ampliamente disponible, sin restricciones de uso comercial por tamaño de empresa |
 | mistralai/Mistral-7B-Instruct-v0.3 | Modelo completo, transformer decoder-only | 7.240 M | 32.768 tokens | Apache 2.0 | Ampliamente disponible |

@@ -128,8 +128,8 @@ Comparativa con alternativas de otros fabricantes (Qwen, Llama, Mistral, etc.): 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Omega-Factory/gemma-4-26b-a4b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Omega-Factory/gemma-4-26b-a4b-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-26b-a4b
 - Pagina del modelo con tablas de precision y recibos: https://omega-factory.ai/models/gemma-4-26b-a4b-gguf-v1
-- Organizacion en HuggingFace (contacto y reporte de problemas): https://huggingface.co/Omega-Factory
+- Organizacion en Hugging Face (contacto y reporte de problemas): https://huggingface.co/Omega-Factory
 - Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos resultados obtenidos corresponden a la marca de relojes Omega y no guardan relacion con el artefacto. No se han encontrado papers, blogs ni demos adicionales en la informacion disponible.

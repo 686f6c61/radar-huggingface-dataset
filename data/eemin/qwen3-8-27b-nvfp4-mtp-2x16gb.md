@@ -95,7 +95,7 @@ La diferencia principal de esta variante es la optimización específica para do
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eemin/Qwen3.8-27B-NVFP4-MTP-2x16GB
+- Modelo en Hugging Face: https://huggingface.co/eemin/Qwen3.8-27B-NVFP4-MTP-2x16GB
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Ficha vLLM Recipes del modelo base: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

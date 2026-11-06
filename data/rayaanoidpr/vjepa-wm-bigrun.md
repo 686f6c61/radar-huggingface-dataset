@@ -78,5 +78,5 @@ No disponible. El modelo es un checkpoint de investigación derivado de V-JEPA d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rayaanoidpr/vjepa-wm-bigrun
+- Hugging Face: https://huggingface.co/rayaanoidpr/vjepa-wm-bigrun
 - Repositorio oficial de V-JEPA (Meta): https://github.com/facebookresearch/jepa

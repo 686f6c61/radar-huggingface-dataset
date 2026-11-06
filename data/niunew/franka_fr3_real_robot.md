@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`NiuNew/Franka_FR3_real_robot` es un repositorio alojado en HuggingFace cuyo nombre sugiere un modelo o conjunto de pesos entrenado para control de un robot real Franka FR3 (el brazo manipulador de Franka Emika). El autor es el usuario NiuNew y el repositorio se publicó el 29 de octubre de 2026. A pesar de la etiqueta `safetensors` y del tamaño del repositorio (10,9 GB), la model card asociada está prácticamente vacía: solo contiene la declaración de licencia Apache 2.0, sin descripción, arquitectura, datos de entrenamiento ni instrucciones de uso.
+`NiuNew/Franka_FR3_real_robot` es un repositorio alojado en Hugging Face cuyo nombre sugiere un modelo o conjunto de pesos entrenado para control de un robot real Franka FR3 (el brazo manipulador de Franka Emika). El autor es el usuario NiuNew y el repositorio se publicó el 29 de octubre de 2026. A pesar de la etiqueta `safetensors` y del tamaño del repositorio (10,9 GB), la model card asociada está prácticamente vacía: solo contiene la declaración de licencia Apache 2.0, sin descripción, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
 Por tanto, no es posible confirmar si se trata de un modelo de política (policy) para aprendizaje por refuerzo o imitación, de un modelo de visión-lenguaje-acción (VLA) o de otro tipo de artefacto. La ausencia de pipeline declarado, de idiomas y de cualquier documentación técnica impide evaluar su comportamiento, sus capacidades o su idoneidad para producción. Esta ficha se limita a reportar los metadatos disponibles e indica explícitamente los campos no disponibles.
 
@@ -81,5 +81,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NiuNew/Franka_FR3_real_robot
+- Repositorio en Hugging Face: https://huggingface.co/NiuNew/Franka_FR3_real_robot
 - No se han encontrado en la información proporcionada otros enlaces (papers, blogs, repositorios de código o demos).

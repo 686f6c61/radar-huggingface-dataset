@@ -86,7 +86,7 @@ Este fine-tune hereda las características del base, por lo que en rendimiento g
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-immigration-STEER0.198438-ft4.44
+- Hugging Face del modelo: https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-immigration-STEER0.198438-ft4.44
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct
 - Web de OLMo de Ai2: https://allenai.org/olmo
 - Página del modelo en OpenModelMap: https://openmodelmap.com/model/allenai/Olmo-3-7B-Instruct

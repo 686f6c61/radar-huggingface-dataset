@@ -65,5 +65,5 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: [scottlowry/Qwen3.8-27B-oQ4e-mtp](https://huggingface.co/scottlowry/Qwen3.8-27B-oQ4e-mtp)
+- Repositorio Hugging Face: [scottlowry/Qwen3.8-27B-oQ4e-mtp](https://huggingface.co/scottlowry/Qwen3.8-27B-oQ4e-mtp)
 - Herramienta oQ: [https://github.com/jundot/omlx](https://github.com/jundot/omlx) (mencionada en la model card)

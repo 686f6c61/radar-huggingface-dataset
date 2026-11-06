@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CarpiAI2-Nemotron es un ajuste fino publicado en HuggingFace por el usuario Ghasty3, derivado del modelo `google/gemma-4-E4B-it` y distribuido principalmente en formato GGUF. La ficha del repositorio lo etiqueta como `image-text-to-text`, por lo que se trata de un modelo multimodal que acepta imágenes y texto, orientado a uso conversacional. El nombre combina las etiquetas `capri` y `nemotron`, sin que se documente qué receta de entrenamiento o qué relación guarda con la familia Nemotron de NVIDIA.
+CarpiAI2-Nemotron es un ajuste fino publicado en Hugging Face por el usuario Ghasty3, derivado del modelo `google/gemma-4-E4B-it` y distribuido principalmente en formato GGUF. La ficha del repositorio lo etiqueta como `image-text-to-text`, por lo que se trata de un modelo multimodal que acepta imágenes y texto, orientado a uso conversacional. El nombre combina las etiquetas `capri` y `nemotron`, sin que se documente qué receta de entrenamiento o qué relación guarda con la familia Nemotron de NVIDIA.
 
 El modelo se presenta como un fine-tune del base instructivo de Gemma 4 en su variante E4B, si bien no se publican datos sobre el conjunto de entrenamiento, el número de tokens, el contexto soportado ni los parámetros exactos. El repositorio no incluye model card técnica, resultados de evaluación ni listado de idiomas, y en el momento de la consulta acumula 0 descargas y 0 likes, por lo que carece de validación por parte de la comunidad.
 
@@ -85,6 +85,6 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ghasty3/CarpiAI2-Nemotron
+- Repositorio en Hugging Face: https://huggingface.co/Ghasty3/CarpiAI2-Nemotron
 - Modelo base indicado en las etiquetas: https://huggingface.co/google/gemma-4-E4B-it
 - Paper, blog o demo adicionales: no disponible en la informacion proporcionada.

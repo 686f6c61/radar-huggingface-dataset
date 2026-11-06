@@ -90,7 +90,7 @@ No hay datos de benchmarks comparativos en la información disponible, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jsteinshouer/trail-bingo-bioclip-onnx
+- Modelo en Hugging Face: https://huggingface.co/jsteinshouer/trail-bingo-bioclip-onnx
 - Modelo base BioCLIP: https://huggingface.co/imageomics/bioclip
 - Repositorio del proyecto Trail Bingo: https://github.com/jsteinshouer/trail-bingo
 - Script de exportación a ONNX: https://github.com/jsteinshouer/trail-bingo/blob/main/spike/export/export.py

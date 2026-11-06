@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ConicCat/RP-User-Sim-w4g128 es un modelo de lenguaje cuantizado a 4 bits publicado por el usuario ConicCat en HuggingFace. El sufijo del nombre identifica el esquema de cuantizacion (W4G128: pesos de 4 bits con tamano de grupo 128) y el prefijo "RP-User-Sim" sugiere un ajuste orientado a simulacion de usuarios en contextos de roleplay o dialogo. El tag qwen3 indica que la arquitectura base es la familia Qwen3, aunque no se especifica que variante concreta.
+ConicCat/RP-User-Sim-w4g128 es un modelo de lenguaje cuantizado a 4 bits publicado por el usuario ConicCat en Hugging Face. El sufijo del nombre identifica el esquema de cuantizacion (W4G128: pesos de 4 bits con tamano de grupo 128) y el prefijo "RP-User-Sim" sugiere un ajuste orientado a simulacion de usuarios en contextos de roleplay o dialogo. El tag qwen3 indica que la arquitectura base es la familia Qwen3, aunque no se especifica que variante concreta.
 
 El modelo cuenta con 2.174.235.648 parametros segun los metadatos de safetensors, un valor que no coincide exactamente con ningun tamano canonico publicado de Qwen3 (0,6B / 1,7B / 4B / 8B), por lo que es probable que se trate de un ajuste fino con vocabulario o cabezas modificadas, o de un modelo fusionado. El repositorio ocupa 6,1 GB, un tamano muy superior al que ocuparian los pesos puramente de 4 bits de un modelo de ese numero de parametros.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-La comparativa es orientativa: las especificaciones del modelo objeto de la ficha provienen de los metadatos de HuggingFace, mientras que las de los modelos alternativos son especificaciones publicas de sus respectivos fabricantes y no se han verificado contra este modelo en ninguna tarea.
+La comparativa es orientativa: las especificaciones del modelo objeto de la ficha provienen de los metadatos de Hugging Face, mientras que las de los modelos alternativos son especificaciones publicas de sus respectivos fabricantes y no se han verificado contra este modelo en ninguna tarea.
 
 | Modelo | Parametros | Contexto | Licencia | Cuantizacion publicada |
 |---|---|---|---|---|
@@ -91,7 +91,7 @@ Frente a estas alternativas, la ventaja del modelo de ConicCat seria la especial
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConicCat/RP-User-Sim-w4g128
+- Modelo en Hugging Face: https://huggingface.co/ConicCat/RP-User-Sim-w4g128
 - Perfil del autor, modelos: https://huggingface.co/ConicCat/models
 - Perfil del autor, datasets: https://huggingface.co/ConicCat/datasets
 - Documentacion de vLLM sobre cuantizacion con Intel Neural Compressor y esquemas W4G128: https://raw.githubusercontent.com/vcdlk/vllm/refs/heads/main/docs/features/quantization/inc.md

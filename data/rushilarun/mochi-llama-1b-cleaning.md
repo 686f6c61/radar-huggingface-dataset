@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mochi-Llama-1B-Cleaning es un adaptador LoRA de la segunda etapa del proyecto Mochi (Malicious Output Curation for High-quality Injection-defense), desarrollado por el usuario rushilarun y publicado en HuggingFace. No es un modelo autonomo: se entrena sobre meta-llama/Llama-3.2-1B-Instruct y debe cargarse obligatoriamente encadenado al adaptador de clasificacion Mochi-Llama-1B-Classifier (etapa 1). Su funcion concreta es responder a la parte legitima de un prompt e ignorar las instrucciones maliciosas inyectadas dentro de el.
+Mochi-Llama-1B-Cleaning es un adaptador LoRA de la segunda etapa del proyecto Mochi (Malicious Output Curation for High-quality Injection-defense), desarrollado por el usuario rushilarun y publicado en Hugging Face. No es un modelo autonomo: se entrena sobre meta-llama/Llama-3.2-1B-Instruct y debe cargarse obligatoriamente encadenado al adaptador de clasificacion Mochi-Llama-1B-Classifier (etapa 1). Su funcion concreta es responder a la parte legitima de un prompt e ignorar las instrucciones maliciosas inyectadas dentro de el.
 
 El problema que aborda es el de la inyeccion de prompts en aplicaciones con LLM: en lugar de limitarse a clasificar una entrada como maliciosa, la etapa de limpieza intenta preservar la utilidad de la peticion original. En la particion de test de limpieza (180 prompts) el autor reporta una accuracy de aceptar/rechazar de 0,900, un F1 de rechazo de 0,899 y una similitud semantica media de 0,719, con respuestas etiquetadas por Claude Haiku 4.5.
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mochi-Llama-1B-Cleaning + Classifier | Adaptadores sobre 1,23B | Limitado por el base (128k) | Clasificacion + limpieza en dos etapas | Llama 3.2 Community | HuggingFace, 0 descargas |
+| Mochi-Llama-1B-Cleaning + Classifier | Adaptadores sobre 1,23B | Limitado por el base (128k) | Clasificacion + limpieza en dos etapas | Llama 3.2 Community | Hugging Face, 0 descargas |
 | Llama-3.2-1B-Instruct sin adaptadores | 1,23B | 128k | Modelo instructivo general, sin defensa especifica | Llama 3.2 Community | Muy extendida |
 | Llama Prompt Guard 2 (22M / 86M) | 22M / 86M | No aplicable (clasificador) | Deteccion de prompt injection y jailbreak | Llama 3.2 Community | Ampliamente usada en produccion |
 | Llama Guard 3 1B | 1B | 128k | Clasificacion de seguridad de entrada y salida | Llama 3.2 Community | Extendida |
@@ -108,7 +108,7 @@ La diferencia funcional principal frente a Prompt Guard 2 o Llama Guard 3 es que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rushilarun/Mochi-Llama-1B-Cleaning
+- Modelo en Hugging Face: https://huggingface.co/rushilarun/Mochi-Llama-1B-Cleaning
 - Adaptador de la etapa 1 (clasificador): https://huggingface.co/rushilarun/Mochi-Llama-1B-Classifier
 - Repositorio del proyecto Mochi: https://github.com/rushil-arun/mochi
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct

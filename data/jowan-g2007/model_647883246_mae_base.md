@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables con la misma arquitectura "mae"
 
 ## Enlaces
 
-- [HuggingFace - jowan-g2007/model_647883246_mae_base](https://huggingface.co/jowan-g2007/model_647883246_mae_base)
+- [Hugging Face - jowan-g2007/model_647883246_mae_base](https://huggingface.co/jowan-g2007/model_647883246_mae_base)

@@ -78,7 +78,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/youngseok12/AX-3.1-Light-sft_source_screen_71568_3000
+- Repositorio Hugging Face: https://huggingface.co/youngseok12/AX-3.1-Light-sft_source_screen_71568_3000
 - Modelo base: https://huggingface.co/skt/A.X-3.1-Light
 - Modelo relacionado (v0.21): https://huggingface.co/youngseok12/AX-3.1-Light-sft_v0_21_source_screen_numerical_300
 - Modelo relacionado (v3.0): https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_0

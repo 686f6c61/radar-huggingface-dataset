@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_076084019_perceiver_nano` es una implementación a escala nano de la arquitectura Perceiver, desarrollada por el usuario tatianavolkov y publicada en HuggingFace bajo licencia MIT. Está diseñada específicamente para tareas contrastivas, lo que sugiere un uso orientado a la generación de representaciones o embeddings mediante aprendizaje contrastivo. La arquitectura se basa en el Perceiver original, que utiliza atención cruzada (cross-attention) para procesar entradas arbitrarias (texto, imágenes, audio, etc.) mediante un conjunto de latentes de tamaño fijo, lo que permite escalar a entradas largas sin aumentar el coste computacional cuadrático.
+El modelo `model_076084019_perceiver_nano` es una implementación a escala nano de la arquitectura Perceiver, desarrollada por el usuario tatianavolkov y publicada en Hugging Face bajo licencia MIT. Está diseñada específicamente para tareas contrastivas, lo que sugiere un uso orientado a la generación de representaciones o embeddings mediante aprendizaje contrastivo. La arquitectura se basa en el Perceiver original, que utiliza atención cruzada (cross-attention) para procesar entradas arbitrarias (texto, imágenes, audio, etc.) mediante un conjunto de latentes de tamaño fijo, lo que permite escalar a entradas largas sin aumentar el coste computacional cuadrático.
 
 El modelo se distribuye como un único archivo de Python (`model_076084019_perceiver_nano.py`) que contiene la implementación completa. No se proporcionan pesos preentrenados ni detalles sobre el entrenamiento, el tamaño de parámetros o el contexto soportado. La licencia MIT permite su uso, modificación y redistribución sin restricciones significativas, aunque la ausencia de documentación y datos de rendimiento limita su aplicabilidad directa en entornos de producción. Es un proyecto de carácter experimental y educativo, útil para comprender la arquitectura Perceiver o como base para experimentos de investigación.
 
@@ -79,6 +79,6 @@ No hay datos sobre el rendimiento de este modelo en comparación con otros.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/tatianavolkov/model_076084019_perceiver_nano)
+- [Repositorio en Hugging Face](https://huggingface.co/tatianavolkov/model_076084019_perceiver_nano)
 - [Paper de Perceiver (arXiv)](https://arxiv.org/pdf/2103.03206.pdf)
 - [Blog de Hugging Face sobre Perceiver IO](https://huggingface.co/blog/perceiver)

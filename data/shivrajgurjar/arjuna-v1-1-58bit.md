@@ -100,5 +100,5 @@ La comparacion de rendimiento no es posible: Arjuna-V1 no publica ninguna metric
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shivrajgurjar/Arjuna-V1-1.58bit
+- Modelo en Hugging Face: https://huggingface.co/shivrajgurjar/Arjuna-V1-1.58bit
 - No se han encontrado en la busqueda web papers, blogs tecnicos, repositorios de codigo ni demos asociados a este modelo.

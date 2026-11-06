@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Echoo113/deepseek-llm-7b-chat-dragon_prompted-ft4.44` es un ajuste fino (fine-tune) del modelo base `deepseek-ai/deepseek-llm-7b-chat`, desarrollado por el usuario Echoo113. Se ha entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de HuggingFace, sobre el modelo DeepSeek LLM 7B Chat, un transformer autoregresivo de 7 mil millones de parámetros originalmente entrenado por DeepSeek AI sobre 2 billones de tokens en inglés y chino.
+El modelo `Echoo113/deepseek-llm-7b-chat-dragon_prompted-ft4.44` es un ajuste fino (fine-tune) del modelo base `deepseek-ai/deepseek-llm-7b-chat`, desarrollado por el usuario Echoo113. Se ha entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de Hugging Face, sobre el modelo DeepSeek LLM 7B Chat, un transformer autoregresivo de 7 mil millones de parámetros originalmente entrenado por DeepSeek AI sobre 2 billones de tokens en inglés y chino.
 
 Este modelo representa un caso de adaptación de un LLM open source a un conjunto de datos específico (denominado "dragon_prompted" en el nombre), aunque no se han publicado detalles sobre el dataset de entrenamiento ni los objetivos concretos del ajuste. Su relevancia radica en que ejemplifica el flujo de fine-tuning con TRL y Transformers sobre un modelo de 7B, y puede servir como punto de partida para experimentos similares en entornos de investigación o prototipado.
 

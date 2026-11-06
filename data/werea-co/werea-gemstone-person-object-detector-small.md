@@ -81,6 +81,6 @@ No se dispone de información comparativa con otros modelos de detección de obj
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/Werea-co/Werea-Gemstone-Person-Object-Detector-Small)
+- [Página del modelo en Hugging Face](https://huggingface.co/Werea-co/Werea-Gemstone-Person-Object-Detector-Small)
 - [Repositorio de Werea (autor)](https://huggingface.co/Werea-co) (enlace no especificado, se puede acceder desde el perfil)
-- Archivos adicionales en el repositorio: `face_identity.py`, `download_face_models.py`, `evidence.json` (no enlazados directamente, pero disponibles en el repo de HuggingFace).
+- Archivos adicionales en el repositorio: `face_identity.py`, `download_face_models.py`, `evidence.json` (no enlazados directamente, pero disponibles en el repo de Hugging Face).

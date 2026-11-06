@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SAN-CLIP es un modelo publicado en HuggingFace por el usuario LiangHello bajo licencia Apache 2.0. El repositorio, de 1,1 GB, se distribuye sin model card descriptiva: el README únicamente contiene la declaración de licencia, sin información sobre arquitectura, datos de entrenamiento ni capacidades. El nombre sugiere un modelo de la familia CLIP (Contrastive Language-Image Pretraining), orientado a la alineación entre texto e imagen mediante aprendizaje contrastivo, aunque esta interpretación no está confirmada por el autor.
+SAN-CLIP es un modelo publicado en Hugging Face por el usuario LiangHello bajo licencia Apache 2.0. El repositorio, de 1,1 GB, se distribuye sin model card descriptiva: el README únicamente contiene la declaración de licencia, sin información sobre arquitectura, datos de entrenamiento ni capacidades. El nombre sugiere un modelo de la familia CLIP (Contrastive Language-Image Pretraining), orientado a la alineación entre texto e imagen mediante aprendizaje contrastivo, aunque esta interpretación no está confirmada por el autor.
 
-El modelo no cuenta con descargas ni likes en el momento de la consulta, y no tiene pipeline declarado en HuggingFace. Esto implica que no es posible verificar su funcionamiento, sus pesos ni su calidad sin una inspección directa del repositorio. El tamaño del repo (1,1 GB) es compatible con un modelo de visión-lenguaje de escala moderada, pero no se puede confirmar sin acceso a los archivos de pesos.
+El modelo no cuenta con descargas ni likes en el momento de la consulta, y no tiene pipeline declarado en Hugging Face. Esto implica que no es posible verificar su funcionamiento, sus pesos ni su calidad sin una inspección directa del repositorio. El tamaño del repo (1,1 GB) es compatible con un modelo de visión-lenguaje de escala moderada, pero no se puede confirmar sin acceso a los archivos de pesos.
 
 La relevancia de esta ficha es limitada por la ausencia de documentación. Se recomienda precaución: cualquier uso en producción requeriría una evaluación empírica previa, dado que no hay benchmarks, especificaciones ni ejemplos de uso publicados por el autor.
 
@@ -67,7 +67,7 @@ No es posible establecer una comparativa rigurosa sin conocer la arquitectura y 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SAN-CLIP | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| SAN-CLIP | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | OpenAI CLIP | ~150M (ViT-B/32) | 77 tokens texto | MIT | Público |
 | OpenCLIP | variable (ViT-B a ViT-H) | 77 tokens texto | MIT/Apache | Público |
 | SigLIP | variable | variable | Apache 2.0 | Público |
@@ -87,5 +87,5 @@ Los datos de los modelos comparables son orientativos y no implican equivalencia
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LiangHello/SAN-CLIP
+- Hugging Face: https://huggingface.co/LiangHello/SAN-CLIP
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

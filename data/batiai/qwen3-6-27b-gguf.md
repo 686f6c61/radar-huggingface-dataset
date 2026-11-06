@@ -92,7 +92,7 @@ La comparativa se basa en los datos de la model card del autor. El modelo denso 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/batiai/Qwen3.6-27B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/batiai/Qwen3.6-27B-GGUF
 - Modelo base upstream: https://huggingface.co/Qwen/Qwen3.6-27B
 - Pagina de Ollama: https://ollama.com/batiai/qwen3.6-27b
 - BatiFlow (aplicacion de automatizacion on-device): https://flow.bati.ai

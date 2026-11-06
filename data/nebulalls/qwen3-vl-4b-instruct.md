@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-VL-4B-Instruct es un modelo de lenguaje y visión (image-text-to-text) de la familia Qwen3-VL, desarrollada por el equipo Qwen de Alibaba. Esta ficha corresponde al repositorio de pesos publicado por el usuario Nebulalls en HuggingFace, que replica los pesos oficiales del modelo Qwen/Qwen3-VL-4B-Instruct. El modelo resuelve tareas que combinan comprensión de imágenes, vídeo y texto: descripción visual, OCR multilingüe, razonamiento espacial, generación de código a partir de capturas y control de agentes visuales sobre interfaces gráficas.
+Qwen3-VL-4B-Instruct es un modelo de lenguaje y visión (image-text-to-text) de la familia Qwen3-VL, desarrollada por el equipo Qwen de Alibaba. Esta ficha corresponde al repositorio de pesos publicado por el usuario Nebulalls en Hugging Face, que replica los pesos oficiales del modelo Qwen/Qwen3-VL-4B-Instruct. El modelo resuelve tareas que combinan comprensión de imágenes, vídeo y texto: descripción visual, OCR multilingüe, razonamiento espacial, generación de código a partir de capturas y control de agentes visuales sobre interfaces gráficas.
 
 Con 4.437.815.808 parámetros (aproximadamente 4,4 mil millones) en una arquitectura densa, el modelo se sitúa en el segmento de borde y consumo, pero incorpora las innovaciones de la generación Qwen3-VL: contexto nativo de 256K tokens expandible a 1M, posicionales Interleaved-MRoPE para razonamiento temporal en vídeo, fusión multi-nivel de features ViT (DeepStack) y alineación texto-marca temporal. La licencia Apache 2.0 y el soporte en transformers lo hacen especialmente atractivo para despliegues comerciales sin restricciones de uso.
 
@@ -88,7 +88,7 @@ La comparación cuantitativa de benchmarks con estos modelos no está disponible
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nebulalls/Qwen3-VL-4B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/Nebulalls/Qwen3-VL-4B-Instruct
 - Repositorio oficial (referencia): https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Qwen Chat: https://chat.qwenlm.ai/
 - Qwen3 Technical Report: https://arxiv.org/abs/2505.09388

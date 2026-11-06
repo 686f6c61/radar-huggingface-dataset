@@ -73,6 +73,6 @@ No se dispone de información sobre modelos comparables específicos para segmen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ChrisXzZ/LesionSegmenter
+- Repositorio Hugging Face: https://huggingface.co/ChrisXzZ/LesionSegmenter
 - Repositorio nnUNet (referencia de arquitectura): https://github.com/MIC-DKFZ/nnUNet
 - Documentación de nnUNet v2: https://github.com/MIC-DKFZ/nnUNet/blob/master/readme.md

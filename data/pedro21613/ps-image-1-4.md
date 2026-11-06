@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PS-IMAGE-1.4 es un adaptador LoRA de bajo rango (rank 16, alpha 32) pensado para el pipeline de generacion text-to-image de `stabilityai/stable-diffusion-xl-base-1.0`. Lo publica el usuario Pedro21613 en HuggingFace y se presenta como la evolucion de una version anterior (v1.3) que, segun la model card, estaba construida sobre SD 1.5. El objetivo declarado es mejorar el fotorrealismo en tres dominios concretos: personas, automoviles y texturas.
+PS-IMAGE-1.4 es un adaptador LoRA de bajo rango (rank 16, alpha 32) pensado para el pipeline de generacion text-to-image de `stabilityai/stable-diffusion-xl-base-1.0`. Lo publica el usuario Pedro21613 en Hugging Face y se presenta como la evolucion de una version anterior (v1.3) que, segun la model card, estaba construida sobre SD 1.5. El objetivo declarado es mejorar el fotorrealismo en tres dominios concretos: personas, automoviles y texturas.
 
 El adaptador no es un modelo autonomo: se carga sobre el UNet de SDXL mediante `peft` y se fusiona con `merge_and_unload()`, tal y como documenta el propio autor. El repositorio ocupa 0,2 GB, lo que es coherente con un LoRA de rango 16 y no con un checkpoint completo. Se distribuye en formato safetensors y su unica libreria declarada es `diffusers`.
 
@@ -84,8 +84,8 @@ Ademas, el repositorio incluye carpetas `examples/` con pares `base_*` frente a 
 
 | Modelo | Tipo | Modelo base | Resolucion | Contexto / condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PS-IMAGE 1.4 | LoRA rango 16 / alpha 32 | stable-diffusion-xl-base-1.0 | 768 px (entrenamiento y validacion) | Codificadores de texto del SDXL base, sin datos de configuracion | no disponible | HuggingFace, 0,2 GB, 0 descargas, 0 likes |
-| stabilityai/stable-diffusion-xl-base-1.0 | Modelo de difusion completo | no aplica | 1024 px nativo (referencia del ecosistema SDXL) | Doble codificador de texto de SDXL | CreativeML Open RAIL++-M (licencia del modelo base; no confirmada en esta ficha) | HuggingFace, ampliamente desplegado |
+| PS-IMAGE 1.4 | LoRA rango 16 / alpha 32 | stable-diffusion-xl-base-1.0 | 768 px (entrenamiento y validacion) | Codificadores de texto del SDXL base, sin datos de configuracion | no disponible | Hugging Face, 0,2 GB, 0 descargas, 0 likes |
+| stabilityai/stable-diffusion-xl-base-1.0 | Modelo de difusion completo | no aplica | 1024 px nativo (referencia del ecosistema SDXL) | Doble codificador de texto de SDXL | CreativeML Open RAIL++-M (licencia del modelo base; no confirmada en esta ficha) | Hugging Face, ampliamente desplegado |
 | PS-IMAGE 1.3 | LoRA sobre SD 1.5 (segun la model card) | stable-diffusion 1.5 | inferior a 768 px por limitacion de la base | Codificador de texto de SD 1.5 | no disponible | citado por el autor, no enlazado en la informacion disponible |
 | Otros LoRA fotorrealistas sobre SDXL | LoRA de rango variable | stable-diffusion-xl-base-1.0 | habitualmente 1024 px | SDXL base | variable segun autor | no disponible (no se han facilitado comparativas) |
 
@@ -107,7 +107,7 @@ No se dispone de modelos comparables con datos verificables en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pedro21613/PS-IMAGE-1.4
+- Modelo en Hugging Face: https://huggingface.co/Pedro21613/PS-IMAGE-1.4
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Datasets citados en la model card (sin enlace facilitado): CelebA-HQ (300 imagenes con caption), Stanford Cars (300 imagenes), DTD - Describable Textures Dataset (300 imagenes).
 - Los resultados de busqueda web proporcionados no contienen ningun enlace relevante al modelo: consisten en paginas de un buscador ruso, una guia de tipografia, un ranking de CPUs para portatiles y un hilo de un foro sobre soundfonts de DOOM. No se ha podido extraer de ellos informacion adicional sobre PS-IMAGE-1.4, ni papers, ni blogs, ni repositorios, ni demos.

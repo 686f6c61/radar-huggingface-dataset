@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "codingSalafi/akoway-downloads",
+  "slug": "codingsalafi-akoway-downloads",
+  "author": "codingSalafi",
+  "url": "https://huggingface.co/codingSalafi/akoway-downloads",
+  "created_at": "2026-11-01T18:04:23.000Z",
+  "updated_at": "2026-11-01T20:54:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "akoway",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 196100132,
+  "storage_human": "196 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "codingSalafi/akoway-downloads · Hugging Face",
+      "url": "https://huggingface.co/codingSalafi/akoway-downloads",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "codingSalafi (Ibrahim Mudathir) – Datasets - Hugging Face",
+      "url": "https://huggingface.co/codingSalafi/datasets",
+      "snippet": "LLMs, GenAI, NLP, Voice Agents, AI agents (it keeps growing)"
+    }
+  ]
+}

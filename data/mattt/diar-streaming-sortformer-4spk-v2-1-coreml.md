@@ -89,11 +89,11 @@ No se dispone de resultados de benchmarks ni de cifras de error de diarización 
 - Obligaciones de atribución: cualquier aplicación que use el modelo debe mostrar el texto de atribución indicado por el autor, y la redistribución debe incluir la copia de la licencia y el aviso `NOTICE` exigido por la sección 3.1 del acuerdo.
 - Riesgo de uso indebido: la diarización permite inferir quién habla y cuándo, lo que puede constituir tratamiento de datos biométricos o de voz según la jurisdicción; conviene revisar la base legal antes de desplegarlo en producción.
 - Riesgo de error de asignación: en audio con solapamiento intenso, ruido o cambios frecuentes de interlocutor, la numeración por orden de llegada puede fragmentar o fusionar hablantes; no se aportan métricas de error para cuantificarlo.
-- Sin mantenimiento declarado: el repositorio registra cero descargas y cero likes, y se publicó sin pipeline asociado en HuggingFace, por lo que no hay evidencia de uso en producción ni de soporte por parte del autor.
+- Sin mantenimiento declarado: el repositorio registra cero descargas y cero likes, y se publicó sin pipeline asociado en Hugging Face, por lo que no hay evidencia de uso en producción ni de soporte por parte del autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattt/diar-streaming-sortformer-4spk-v2.1-coreml
+- Modelo en Hugging Face: https://huggingface.co/mattt/diar-streaming-sortformer-4spk-v2.1-coreml
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/diar_streaming_sortformer_4spk-v2.1
 - Proyecto AnySpeechRecognizer: https://github.com/mattt/AnySpeechRecognizer
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/

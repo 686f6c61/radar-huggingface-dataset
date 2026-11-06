@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Yova/qalam-english-vlm-stage2-full524` es un modelo de visión y lenguaje (VLM) publicado en HuggingFace por el usuario Yova. Según las etiquetas del repositorio, está basado en la arquitectura Qwen3-VL, aunque no se confirma oficialmente en la ficha. El modelo tiene 4.437.815.808 parámetros (aproximadamente 4,4 mil millones) y un tamaño de repositorio de 8,9 GB en formato safetensors. Fue creado el 28 de julio de 2026 y actualizado el 17 de agosto de 2026.
+El modelo `Yova/qalam-english-vlm-stage2-full524` es un modelo de visión y lenguaje (VLM) publicado en Hugging Face por el usuario Yova. Según las etiquetas del repositorio, está basado en la arquitectura Qwen3-VL, aunque no se confirma oficialmente en la ficha. El modelo tiene 4.437.815.808 parámetros (aproximadamente 4,4 mil millones) y un tamaño de repositorio de 8,9 GB en formato safetensors. Fue creado el 28 de julio de 2026 y actualizado el 17 de agosto de 2026.
 
-El acceso al modelo está restringido (gated), lo que requiere aceptar condiciones en HuggingFace antes de su descarga. Una nota en la página del repositorio indica que los resultados del modelo difieren del checkpoint original en aproximadamente un 15-20 % de filas límite, a pesar de que la arquitectura, los hiperparámetros y los datos de entrenamiento son idénticos, lo que sugiere que se trata de un reentrenamiento o ajuste fino de un checkpoint existente. No se proporcionan detalles sobre el conjunto de datos, el proceso de entrenamiento ni las capacidades específicas más allá de su naturaleza multimodal.
+El acceso al modelo está restringido (gated), lo que requiere aceptar condiciones en Hugging Face antes de su descarga. Una nota en la página del repositorio indica que los resultados del modelo difieren del checkpoint original en aproximadamente un 15-20 % de filas límite, a pesar de que la arquitectura, los hiperparámetros y los datos de entrenamiento son idénticos, lo que sugiere que se trata de un reentrenamiento o ajuste fino de un checkpoint existente. No se proporcionan detalles sobre el conjunto de datos, el proceso de entrenamiento ni las capacidades específicas más allá de su naturaleza multimodal.
 
 ## Especificaciones técnicas
 
@@ -63,7 +63,7 @@ No se dispone de información comparativa con otros modelos. Existen VLMs de tam
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede dificultar su uso en entornos corporativos o académicos.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede dificultar su uso en entornos corporativos o académicos.
 - Falta de documentación: no hay información sobre licencia, idiomas soportados, contexto máximo ni detalles de entrenamiento, lo que impide evaluar su idoneidad para producción.
 - Variabilidad en los outputs: la nota del repositorio indica que los resultados difieren del checkpoint original en un 15-20 % de filas límite, lo que sugiere que el modelo no es una réplica exacta y podría presentar inconsistencias en tareas sensibles.
 - Riesgo de alucinación: al ser un modelo de lenguaje, puede generar contenido plausible pero incorrecto, especialmente en tareas visuales sin verificación externa.
@@ -72,7 +72,7 @@ No se dispone de información comparativa con otros modelos. Existen VLMs de tam
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Yova/qalam-english-vlm-stage2-full524
+- Repositorio en Hugging Face: https://huggingface.co/Yova/qalam-english-vlm-stage2-full524
 - Open VLM Leaderboard (referencia general): https://huggingface.co/spaces/opencompass/open_vlm_leaderboard
 - Guía sobre VLMs (GeeksforGeeks): https://www.geeksforgeeks.org/artificial-intelligence/vision-language-models-vlms-explained/
 - Colección de VLMs (GitHub): https://github.com/zli12321/Vision-Language-Models-Overview

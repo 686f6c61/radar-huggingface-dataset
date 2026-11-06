@@ -101,6 +101,6 @@ La diferencia practica mas relevante no es de calidad, sino de interoperabilidad
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/sy128/CQ3-Qwen3-4B-K8-SqueezeLLM
+- Repositorio de Hugging Face: https://huggingface.co/sy128/CQ3-Qwen3-4B-K8-SqueezeLLM
 - Busqueda web realizada: no devolvio ningun enlace relacionado con el modelo. Los unicos resultados obtenidos corresponden a paginas institucionales de la Universidad de Ottawa (https://www.uottawa.ca/fr/etudiants-actuels, https://www.uottawa.ca/fr, https://www.ouac.on.ca/fr/guide/premier-cycle-ottawa/, https://catalogue.uottawa.ca/fr/, https://catalogue.uottawa.ca/fr/programmes/) y no guardan relacion con el artefacto.
 - Paper, blog, repositorio de codigo o demo oficial: no disponibles en la informacion proporcionada.

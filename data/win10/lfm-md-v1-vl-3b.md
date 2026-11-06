@@ -18,7 +18,7 @@ El modelo tiene 3.393.060.183 parámetros totales, un repositorio de 7,4 GB y se
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | No disponible. El repositorio no declara cuantizaciones ni publica pesos GGUF; se distribuye en safetensors |
 | Idiomas soportados | Chino (zh) e inglés (en), según los metadatos de la model card |
-| Licencia | lfm1.0 (Liquid AI), etiquetada en HuggingFace como "other" |
+| Licencia | lfm1.0 (Liquid AI), etiquetada en Hugging Face como "other" |
 | Formato de pesos | safetensors |
 | Modelo base | LiquidAI/LFM2.5-VL-3B |
 | Pipeline | image-text-to-text |
@@ -90,8 +90,8 @@ Estos datos provienen de pruebas de desarrollo controladas con muestras pequeña
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM-MD-V1-VL-3B | 3,39 mil millones | No disponible | Solo pruebas internas de memoria del autor; sin benchmarks estándar publicados | lfm1.0 (Liquid AI), etiquetada como "other" | HuggingFace, 0 descargas, 0 likes |
-| LiquidAI/LFM2.5-VL-3B (modelo base) | 3 mil millones (según la denominación del modelo; cifra exacta no disponible) | No disponible | No disponible en la información proporcionada | lfm1.0 (Liquid AI) | HuggingFace, mantenido por LiquidAI |
+| LFM-MD-V1-VL-3B | 3,39 mil millones | No disponible | Solo pruebas internas de memoria del autor; sin benchmarks estándar publicados | lfm1.0 (Liquid AI), etiquetada como "other" | Hugging Face, 0 descargas, 0 likes |
+| LiquidAI/LFM2.5-VL-3B (modelo base) | 3 mil millones (según la denominación del modelo; cifra exacta no disponible) | No disponible | No disponible en la información proporcionada | lfm1.0 (Liquid AI) | Hugging Face, mantenido por LiquidAI |
 | Otros VLM compactos de la misma categoría (por ejemplo, alternativas de 2-4 mil millones de parámetros) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 La información proporcionada no incluye datos de rendimiento ni especificaciones de terceros que permitan una comparación cuantitativa fiable. La única comparación defendible con los datos disponibles es con el modelo base, del que se conoce que aporta el stack de lenguaje, el codificador visual y la plantilla de chat, mientras que LFM-MD-V1-VL-3B añade la capa de memoria persistente.
@@ -114,7 +114,7 @@ La información proporcionada no incluye datos de rendimiento ni especificacione
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/win10/LFM-MD-V1-VL-3B
+- Modelo en Hugging Face: https://huggingface.co/win10/LFM-MD-V1-VL-3B
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - Paper referenciado en las etiquetas del modelo (arXiv:2501.00663): https://arxiv.org/abs/2501.00663
 - Licencia del modelo (archivo LICENSE del repositorio): https://huggingface.co/win10/LFM-MD-V1-VL-3B/blob/main/LICENSE

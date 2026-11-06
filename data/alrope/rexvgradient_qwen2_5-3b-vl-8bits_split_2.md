@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alrope/rexvgradient_qwen2_5-3b-vl-8bits_split_2` es un ajuste fino (fine-tuning) supervisado del modelo multimodal Qwen2.5-VL-3B-Instruct, desarrollado por el usuario `alrope` y publicado en HuggingFace. Se trata de un modelo de visión-lenguaje (image-text-to-text) de aproximadamente 3.750 millones de parámetros, entrenado con la librería TRL mediante SFT (supervised fine-tuning) sobre el checkpoint instructivo de Qwen. El nombre sugiere un entrenamiento en 8 bits y una división (split) del proceso, aunque la model card no detalla estas particularidades.
+`alrope/rexvgradient_qwen2_5-3b-vl-8bits_split_2` es un ajuste fino (fine-tuning) supervisado del modelo multimodal Qwen2.5-VL-3B-Instruct, desarrollado por el usuario `alrope` y publicado en Hugging Face. Se trata de un modelo de visión-lenguaje (image-text-to-text) de aproximadamente 3.750 millones de parámetros, entrenado con la librería TRL mediante SFT (supervised fine-tuning) sobre el checkpoint instructivo de Qwen. El nombre sugiere un entrenamiento en 8 bits y una división (split) del proceso, aunque la model card no detalla estas particularidades.
 
 El modelo hereda la arquitectura transformer y las capacidades multimodales del Qwen2.5-VL-3B-Instruct, que combina un codificador visual con un decodificador de lenguaje para procesar imágenes y texto de forma conjunta. Al ser un derivado directo, su relevancia radica en la posibilidad de adaptar un modelo visual-lenguaje compacto a dominios específicos mediante instrucciones, manteniendo un tamaño manejable para despliegue en hardware moderado.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| alrope/rexvgradient_qwen2_5-3b-vl-8bits_split_2 | 3,75B | No disponible | No disponible | HuggingFace (0 descargas) | Fine-tuning SFT de Qwen2.5-VL-3B |
-| Qwen/Qwen2.5-VL-3B-Instruct | ~3,75B | No disponible en esta ficha (el modelo base de Qwen suele soportar contextos largos) | Apache 2.0 (según Qwen) | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados |
-| Qwen/Qwen2.5-VL-7B-Instruct | ~7B | No disponible en esta ficha | Apache 2.0 (según Qwen) | HuggingFace | Versión mayor del mismo linaje, más capacidad pero más VRAM |
-| InternVL2-4B | ~4B | No disponible en esta ficha | No disponible | HuggingFace | Alternativa multimodal de tamaño similar |
+| alrope/rexvgradient_qwen2_5-3b-vl-8bits_split_2 | 3,75B | No disponible | No disponible | Hugging Face (0 descargas) | Fine-tuning SFT de Qwen2.5-VL-3B |
+| Qwen/Qwen2.5-VL-3B-Instruct | ~3,75B | No disponible en esta ficha (el modelo base de Qwen suele soportar contextos largos) | Apache 2.0 (según Qwen) | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados |
+| Qwen/Qwen2.5-VL-7B-Instruct | ~7B | No disponible en esta ficha | Apache 2.0 (según Qwen) | Hugging Face | Versión mayor del mismo linaje, más capacidad pero más VRAM |
+| InternVL2-4B | ~4B | No disponible en esta ficha | No disponible | Hugging Face | Alternativa multimodal de tamaño similar |
 
 La comparación con el modelo base es la más relevante: este fine-tuning no documenta mejoras medibles sobre Qwen2.5-VL-3B-Instruct, por lo que en ausencia de benchmarks se recomienda usar el modelo base oficial salvo que se valide empíricamente la adaptación.
 
@@ -87,7 +87,7 @@ La comparación con el modelo base es la más relevante: este fine-tuning no doc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alrope/rexvgradient_qwen2_5-3b-vl-8bits_split_2
+- Modelo en Hugging Face: https://huggingface.co/alrope/rexvgradient_qwen2_5-3b-vl-8bits_split_2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Run de Weights & Biases: https://wandb.ai/seanlyu2-university-of-illinois-urbana-champaign/huggingface/runs/vl2td1z7
 - Repositorio TRL: https://github.com/huggingface/trl

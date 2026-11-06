@@ -27,7 +27,7 @@ Su relevancia actual es de tipo metodológico y de reproducibilidad: los cinco c
 | Semillas incluidas | 1, 2, 3, 4 y 5 |
 | Paso de entrenamiento | 250001 |
 | Commit de git del codigo de investigacion | `551416bff972` |
-| Pipeline declarado en HuggingFace | robotics |
+| Pipeline declarado en Hugging Face | robotics |
 | Tamano del repositorio | 1,4 GB |
 | Descargas / likes | 0 / 0 |
 
@@ -87,8 +87,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Relacion | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sim-square-broad-r01-sobol-free-cf-divl | Modelo analizado | no disponible | no aplica | 19860-21629 exitos sobre 30000 por semilla en `sim-square-broad-r00-r03-eval` | Apache 2.0 | HuggingFace, 0 descargas |
-| sim-square-broad-r01-sobol-free-cf-idql | Modelo padre: aporta el actor de difusion congelado que reutiliza el modelo analizado | no disponible | no aplica | no disponible en la informacion proporcionada | Apache 2.0 | HuggingFace |
+| sim-square-broad-r01-sobol-free-cf-divl | Modelo analizado | no disponible | no aplica | 19860-21629 exitos sobre 30000 por semilla en `sim-square-broad-r00-r03-eval` | Apache 2.0 | Hugging Face, 0 descargas |
+| sim-square-broad-r01-sobol-free-cf-idql | Modelo padre: aporta el actor de difusion congelado que reutiliza el modelo analizado | no disponible | no aplica | no disponible en la informacion proporcionada | Apache 2.0 | Hugging Face |
 | Alternativas de terceros (por ejemplo, politicas de difusion para manipulacion publicadas por otros grupos) | Misma categoria funcional | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 La model card no incluye comparaciones con modelos de terceros ni cifras de otras variantes de la misma campana, por lo que no es posible establecer una comparativa cuantitativa más allá del parentesco con el modelo IDQL del que procede el actor congelado.
@@ -110,9 +110,9 @@ La model card no incluye comparaciones con modelos de terceros ni cifras de otra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r01-sobol-free-cf-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r01-sobol-free-cf-divl
 - Modelo padre (actor congelado, variante IDQL): https://huggingface.co/mulligan/sim-square-broad-r01-sobol-free-cf-idql
-- Organización Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organización Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Sitio del proyecto: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
 - Dataset de teleoperación: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-sobol

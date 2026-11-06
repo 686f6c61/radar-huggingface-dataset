@@ -94,11 +94,11 @@ La comparación relevante es contra su propio base: ThoxIOS-Edge-1.5B no modific
 - Acciones externas requieren autorización del runtime; los pesos por sí solos no ofrecen enrutamiento en vivo ni acceso a malla MeshStack.
 - No cualificado en hardware de dispositivo; la entrega móvil es un objetivo (GGUF Q4_K_M), no una validación.
 - Licencia Apache-2.0 heredada: permite uso comercial, pero los elementos propios de THOX (perfil de sistema, knowledge pack, empaquetado) también se declaran bajo esa licencia, sin restricciones adicionales indicadas.
-- Repositorio sin descargas ni likes en el momento de la consulta y con pesos no alojados en HuggingFace: la reproducibilidad depende de que la etiqueta `qwen2.5:1.5b` de Ollama siga disponible en el digest fijado.
+- Repositorio sin descargas ni likes en el momento de la consulta y con pesos no alojados en Hugging Face: la reproducibilidad depende de que la etiqueta `qwen2.5:1.5b` de Ollama siga disponible en el digest fijado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxIOS-Edge-1.5B
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxIOS-Edge-1.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Modelo publicado en Ollama: `Thox-ai/thox-ios-edge-1.5b` (referencia textual en la model card; no se proporciona URL directa)
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la información proporcionada.

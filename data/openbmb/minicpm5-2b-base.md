@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - VRAM estimada para inferencia: basándonos en los 2.516.756.480 parámetros y un tamaño de repo de 5.0 GB, se estima que en precisión FP16 se necesitan aproximadamente 5 GB de VRAM. Con cuantización a 8 bits, unos 2.5 GB, y a 4 bits, unos 1.3 GB.
 - GPU recomendadas: una RTX 3060 de 12 GB o superior es suficiente para FP16. Para cuantización de 4 bits, puede ejecutarse en GPUs de consumo con 4 GB de VRAM, como una RTX 3050 o RTX 2060.
 - Sí cabe en GPU de consumo, especialmente con cuantización.
-- Opciones de despliegue: no se especifican en la documentación. Al ser un modelo de la librería transformers, puede cargarse con HuggingFace Transformers. Los metadatos incluyen los tags `text-generation-inference` y `endpoints_compatible`, lo que sugiere compatibilidad con servicios de inferencia como TGI, aunque no se confirma en la información proporcionada.
+- Opciones de despliegue: no se especifican en la documentación. Al ser un modelo de la librería transformers, puede cargarse con Hugging Face Transformers. Los metadatos incluyen los tags `text-generation-inference` y `endpoints_compatible`, lo que sugiere compatibilidad con servicios de inferencia como TGI, aunque no se confirma en la información proporcionada.
 
 ## Comparativa con modelos similares
 
@@ -68,7 +68,7 @@ No se dispone de datos suficientes para una comparativa numérica detallada. El 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/openbmb/MiniCPM5-2B-Base
+- Hugging Face: https://huggingface.co/openbmb/MiniCPM5-2B-Base
 - GitHub: https://github.com/OpenBMB/MiniCPM
 - MiniCPM Tech Report: https://arxiv.org/pdf/2506.07900
 - Arxiv 2602.09003: https://arxiv.org/abs/2602.09003

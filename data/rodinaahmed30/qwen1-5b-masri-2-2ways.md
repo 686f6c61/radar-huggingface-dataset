@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen1.5b-masri-2-2ways | 1,5B + LoRA | 32.768 | Apache 2.0 | HuggingFace (116 descargas) | Ajuste fino en arabe egipcio, sin benchmarks |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 | HuggingFace (oficial) | Modelo base, benchmarks publicados por Qwen |
-| Qwen/Qwen2.5-3B-Instruct | 3B | 32.768 | Apache 2.0 | HuggingFace (oficial) | Mayor capacidad, requiere mas VRAM |
-| Meta Llama 3.2 1B Instruct | 1,2B | 128.000 | Llama 3.2 Community License | HuggingFace (oficial) | Contexto mayor, licencia con restricciones |
+| qwen1.5b-masri-2-2ways | 1,5B + LoRA | 32.768 | Apache 2.0 | Hugging Face (116 descargas) | Ajuste fino en arabe egipcio, sin benchmarks |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 | Hugging Face (oficial) | Modelo base, benchmarks publicados por Qwen |
+| Qwen/Qwen2.5-3B-Instruct | 3B | 32.768 | Apache 2.0 | Hugging Face (oficial) | Mayor capacidad, requiere mas VRAM |
+| Meta Llama 3.2 1B Instruct | 1,2B | 128.000 | Llama 3.2 Community License | Hugging Face (oficial) | Contexto mayor, licencia con restricciones |
 
 La comparativa directa con el modelo base es la mas relevante: este adaptador anade especializacion en un dominio concreto a costa de perder la validacion oficial de calidad del modelo original. Frente a alternativas de mayor tamano como Qwen2.5-3B, la diferencia de capacidad es notable, pero el adaptador ofrece un ajuste de dominio que los modelos generalistas no tienen.
 
@@ -93,7 +93,7 @@ La comparativa directa con el modelo base es la mas relevante: este adaptador an
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rodinaahmed30/qwen1.5b-masri-2-2ways
+- Modelo en Hugging Face: https://huggingface.co/rodinaahmed30/qwen1.5b-masri-2-2ways
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - PEFT (libreria de adaptadores): https://github.com/huggingface/peft

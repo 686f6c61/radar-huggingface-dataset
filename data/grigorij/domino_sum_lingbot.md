@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Grigorij/Domino_sum_lingbot
+- Repositorio Hugging Face: https://huggingface.co/Grigorij/Domino_sum_lingbot
 - Código de LingBot-VA: https://github.com/Robbyant/lingbot-va
 - Documentación de LeRobot para LingBot-VA: https://huggingface.co/docs/lerobot/main/en/lingbot_va
 - Documentación general de LeRobot: https://huggingface.co/docs/lerobot/index

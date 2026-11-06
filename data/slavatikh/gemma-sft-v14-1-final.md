@@ -18,7 +18,7 @@ En el momento de la consulta el repositorio acumula 0 descargas y 0 "likes", no 
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible (el adaptador se publica en safetensors; la cuantizacion depende del modelo base y del runtime) |
 | Idiomas soportados | No disponible |
-| Licencia | No disponible; la model card incluye un campo "licence: license" sin contenido util y los metadatos de HuggingFace no la especifican |
+| Licencia | No disponible; la model card incluye un campo "licence: license" sin contenido util y los metadatos de Hugging Face no la especifican |
 | Formato de pesos | safetensors con libreria peft (adaptador LoRA) |
 
 ## Arquitectura y entrenamiento
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SlavaTikh/gemma-sft-v14.1-final | Adaptador LoRA sobre base de 26B | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
+| SlavaTikh/gemma-sft-v14.1-final | Adaptador LoRA sobre base de 26B | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
 | google/gemma-4-26B-A4B-it (modelo base) | 26B (activos no confirmados) | No disponible | No documentado en la informacion proporcionada | No disponible en la informacion proporcionada | Referenciado como base del adaptador |
 | Otros adaptadores SFT sobre Gemma | Variable | Variable | Variable | Variable | No se dispone de comparativas concretas en la informacion proporcionada |
 

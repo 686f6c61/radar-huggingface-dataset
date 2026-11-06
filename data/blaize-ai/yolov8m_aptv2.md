@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Blaize-AI/YOLOv8m_APTv2
+- Hugging Face: https://huggingface.co/Blaize-AI/YOLOv8m_APTv2
 - Paper APTv2: https://arxiv.org/pdf/2312.15612
 - Repositorio APTv2: https://github.com/ViTAE-Transformer/APTv2
 - Ultralytics: https://www.github.com/ultralytics/ultralytics

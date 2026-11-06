@@ -76,7 +76,7 @@ La diferencia principal es que este repositorio ofrece fine-tunes específicos p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/linkstar612/polyvox-whisper-ggml
+- Repositorio Hugging Face: https://huggingface.co/linkstar612/polyvox-whisper-ggml
 - Repositorio espejo de modelos ONNX de Polyvox: https://huggingface.co/linkstar612/polyvox-models
 - Perfil del autor en GitHub: https://github.com/linkstar612
 - whisper.cpp (modelos y herramientas): https://github.com/ggml-org/whisper.cpp/tree/master/models

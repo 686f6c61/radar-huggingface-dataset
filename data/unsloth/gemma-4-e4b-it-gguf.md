@@ -80,7 +80,7 @@ Gemma 4 E4B se diferencia por su arquitectura MoE que ofrece más capacidad efec
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Blog de lanzamiento de Gemma 4: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentación oficial de Gemma: https://ai.google.dev/gemma/docs/core

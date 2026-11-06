@@ -4,7 +4,7 @@
 
 Muse-Glimmer-30B-Hermes-Agentic es una variante del modelo Muse Glimmer desarrollado por Meta, un modelo abierto de 30 mil millones de parámetros diseñado para agentes locales siempre activos. Este repositorio concreto contiene las cuantizaciones GGUF realizadas por mradermacher a partir de los pesos originales de vcruz305/Muse-Glimmer-30B-Hermes-Agentic, que a su vez se basan en el modelo base de Meta. El objetivo de esta conversión es facilitar la ejecución en hardware de consumo y entornos con recursos limitados, manteniendo las capacidades agenticas y multimodales del modelo original.
 
-El modelo destaca por estar optimizado para uso de herramientas (tool calling), tareas de larga duración y recuperación de errores, lo que lo hace adecuado para aplicaciones de automatización y asistentes personales. Su licencia Apache 2.0 permite uso comercial sin restricciones significativas. Aunque la ficha de HuggingFace no proporciona detalles de arquitectura ni entrenamiento, la documentación oficial de Meta indica que se trata de un modelo multimodal de 30B parámetros con enfoque en inferencia local en una sola GPU.
+El modelo destaca por estar optimizado para uso de herramientas (tool calling), tareas de larga duración y recuperación de errores, lo que lo hace adecuado para aplicaciones de automatización y asistentes personales. Su licencia Apache 2.0 permite uso comercial sin restricciones significativas. Aunque la ficha de Hugging Face no proporciona detalles de arquitectura ni entrenamiento, la documentación oficial de Meta indica que se trata de un modelo multimodal de 30B parámetros con enfoque en inferencia local en una sola GPU.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ El modelo destaca por estar optimizado para uso de herramientas (tool calling), 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | x-f16, Q4_K_S, Q2_K, Q8_0, Q6_K, Q3_K_M, Q3_K_S, Q3_K_L, Q4_K_M, Q5_K_S, Q5_K_M, IQ4_XS |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 (segun documentacion oficial de Meta, aunque no aparece en la ficha de HuggingFace) |
+| Licencia | Apache 2.0 (segun documentacion oficial de Meta, aunque no aparece en la ficha de Hugging Face) |
 | Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
@@ -73,11 +73,11 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 - No se han publicado estudios de sesgos ni evaluaciones de seguridad. Como cualquier modelo de lenguaje, puede generar contenido sesgado o inexacto.
 - La longitud de contexto no se ha especificado; se recomienda probar con tareas que requieran ventanas largas antes de usarlo en produccion.
 - La licencia Apache 2.0 permite uso comercial, pero no se incluyen garantias de soporte ni responsabilidad por parte de Meta.
-- El repositorio de HuggingFace no indica idiomas soportados; se asume que el modelo base de Meta fue entrenado principalmente en ingles, aunque puede generalizar a otros idiomas.
+- El repositorio de Hugging Face no indica idiomas soportados; se asume que el modelo base de Meta fue entrenado principalmente en ingles, aunque puede generalizar a otros idiomas.
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/Muse-Glimmer-30B-Hermes-Agentic-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/Muse-Glimmer-30B-Hermes-Agentic-GGUF
 - Repositorio original (pesos safetensors): https://huggingface.co/vcruz305/Muse-Glimmer-30B-Hermes-Agentic
 - Documentacion oficial de Muse Glimmer en Meta: https://developer.meta.com/ai/models/muse-glimmer/
 - Guia de despliegue y laboratorio de agentes (GitHub): https://github.com/cobusgreyling/Muse-Glimmer

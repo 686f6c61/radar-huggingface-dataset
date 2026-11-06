@@ -1,7 +1,7 @@
 # felsager/pi05_cube2cross_dr_use_proprio
 
 ## Resumen
-π₀.₅ (Pi05) es un modelo Vision-Language-Action (VLA) desarrollado por Physical Intelligence, disenado para la generalizacion en entornos abiertos y situaciones no vistas durante el entrenamiento. Evoluciona π₀ incorporando mejoras para transferir conocimiento a nuevos escenarios roboticos. Esta ficha concreta corresponde a un fine-tuning especifico alojado en HuggingFace por el usuario felsager, entrenado sobre el modelo base `lerobot/pi05_base` y adaptado a una tarea de pick-and-place con un robot UR5e equipado con mano.
+π₀.₅ (Pi05) es un modelo Vision-Language-Action (VLA) desarrollado por Physical Intelligence, disenado para la generalizacion en entornos abiertos y situaciones no vistas durante el entrenamiento. Evoluciona π₀ incorporando mejoras para transferir conocimiento a nuevos escenarios roboticos. Esta ficha concreta corresponde a un fine-tuning especifico alojado en Hugging Face por el usuario felsager, entrenado sobre el modelo base `lerobot/pi05_base` y adaptado a una tarea de pick-and-place con un robot UR5e equipado con mano.
 
 El modelo resuelve el problema de mapear observaciones multimodales (imagenes de camaras y estado de las articulaciones) directamente a acciones motoras de 10 dimensiones. Es relevante porque demuestra el flujo completo de LeRobot para entrenar politicas de imitacion sobre hardware real, con un dataset de casi mil episodios y 510.000 fotogramas a 30 FPS. El checkpoint tiene 4.143.404.816 parametros en formato safetensors y un tamano de repositorio de 24,5 GB.
 
@@ -56,8 +56,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| felsager/pi05_cube2cross_dr_use_proprio | 4.143 M | no disponible | VLA (fine-tuning de pi05) | gemma | HuggingFace (0 descargas) |
-| lerobot/pi05_base | no disponible | no disponible | VLA base | gemma | HuggingFace (modelo base) |
+| felsager/pi05_cube2cross_dr_use_proprio | 4.143 M | no disponible | VLA (fine-tuning de pi05) | gemma | Hugging Face (0 descargas) |
+| lerobot/pi05_base | no disponible | no disponible | VLA base | gemma | Hugging Face (modelo base) |
 | π₀ (Pi0) | no disponible | no disponible | VLA | no disponible | OpenPI / Physical Intelligence |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 - El modelo base `lerobot/pi05_base` y el dataset asociado deben citarse adecuadamente segun la model card.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/felsager/pi05_cube2cross_dr_use_proprio
+- Modelo en Hugging Face: https://huggingface.co/felsager/pi05_cube2cross_dr_use_proprio
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/felsager/vla_cubes_cross_dr
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=felsager/vla_cubes_cross_dr

@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/datatab/hcawn-fc7-sr
+- Modelo en Hugging Face: https://huggingface.co/datatab/hcawn-fc7-sr
 - Modelo base hCAWN-FC7: https://huggingface.co/datatab/hcawn-fc7
 - Demo en Spaces: https://huggingface.co/spaces/datatab/hcawn-fc7-sr-demo
 - Paquete PyPI: https://pypi.org/project/hcawn-fc/

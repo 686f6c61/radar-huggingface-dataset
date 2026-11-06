@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario `sad12esa21edqxwsa`, etiquetado como un modelo de extracción de características (feature-extraction) con licencia MIT. Sin embargo, el repositorio tiene un tamaño de 0.0 GB, solo 19 descargas y ninguna interacción social, lo que sugiere que se trata de un espacio de prueba o un placeholder sin pesos reales publicados. La model card incluida describe un modelo llamado "MyAwesomeModel" con supuestas mejoras en razonamiento, pero no proporciona ninguna especificación técnica verificable: no se indican parámetros, arquitectura, contexto, ni datos de entrenamiento. Los benchmarks presentados son genéricos y carecen de referencias a conjuntos de datos estándar (MMLU, HumanEval, etc.) o a modelos comparables identificables. En consecuencia, esta ficha se basa únicamente en la información disponible y marca como "no disponible" todos los datos que no pueden confirmarse.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario `sad12esa21edqxwsa`, etiquetado como un modelo de extracción de características (feature-extraction) con licencia MIT. Sin embargo, el repositorio tiene un tamaño de 0.0 GB, solo 19 descargas y ninguna interacción social, lo que sugiere que se trata de un espacio de prueba o un placeholder sin pesos reales publicados. La model card incluida describe un modelo llamado "MyAwesomeModel" con supuestas mejoras en razonamiento, pero no proporciona ninguna especificación técnica verificable: no se indican parámetros, arquitectura, contexto, ni datos de entrenamiento. Los benchmarks presentados son genéricos y carecen de referencias a conjuntos de datos estándar (MMLU, HumanEval, etc.) o a modelos comparables identificables. En consecuencia, esta ficha se basa únicamente en la información disponible y marca como "no disponible" todos los datos que no pueden confirmarse.
 
 Dado el estado del repositorio, no es recomendable utilizarlo para ningún propósito de producción o investigación. La información de la model card parece copiada de otro modelo y no se corresponde con el contenido real del repositorio. Se recomienda precaución extrema ante cualquier intento de descarga o uso.
 
@@ -82,6 +82,6 @@ No se puede realizar una comparativa fiable porque no se conocen las caracterís
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sad12esa21edqxwsa/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/sad12esa21edqxwsa/MyAwesomeModel-TestRepo
 
 No se han encontrado otros enlaces relevantes (papers, repositorios de código, demos) en la información proporcionada.

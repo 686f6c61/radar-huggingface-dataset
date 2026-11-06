@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FoundYou es un repositorio de modelo publicado en HuggingFace por el usuario gabTriv bajo licencia Apache 2.0. La informacion disponible se limita a los metadatos del repositorio: identificador `gabTriv/FoundYou`, licencia `apache-2.0` y etiqueta de region `us`. No se especifica pipeline, idiomas soportados, tamano, arquitectura ni cualquier otro dato tecnico.
+FoundYou es un repositorio de modelo publicado en Hugging Face por el usuario gabTriv bajo licencia Apache 2.0. La informacion disponible se limita a los metadatos del repositorio: identificador `gabTriv/FoundYou`, licencia `apache-2.0` y etiqueta de region `us`. No se especifica pipeline, idiomas soportados, tamano, arquitectura ni cualquier otro dato tecnico.
 
 La model card publicada no contiene informacion sustantiva. El unico contenido del README es el bloque de frontmatter con la licencia (`license: apache-2.0`); no hay descripcion del modelo, del entrenamiento, de los datos utilizados ni de las capacidades. Tampoco se han publicado resultados de evaluacion.
 
@@ -80,7 +80,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gabTriv/FoundYou | no disponible | no disponible | Apache 2.0 | repositorio HuggingFace sin descargas ni documentacion |
+| gabTriv/FoundYou | no disponible | no disponible | Apache 2.0 | repositorio Hugging Face sin descargas ni documentacion |
 | Alternativas comparables | no disponibles | no disponibles | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,5 +98,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gabTriv/FoundYou
+- Repositorio en Hugging Face: https://huggingface.co/gabTriv/FoundYou
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada.

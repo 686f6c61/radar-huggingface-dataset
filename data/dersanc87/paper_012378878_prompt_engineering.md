@@ -63,7 +63,7 @@ No disponible. No existe una categoría de "modelos similares" porque este repos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dersanc87/paper_012378878_prompt_engineering
+- Repositorio Hugging Face: https://huggingface.co/Dersanc87/paper_012378878_prompt_engineering
 - Guía de ingeniería de prompts (referencia general): https://www.promptingguide.ai/
 - Colección de papers sobre prompting (dair-ai): https://deepwiki.com/dair-ai/Prompt-Engineering-Guide/8.1-prompt-engineering-papers-collection
 - Paper relacionado (arXiv): https://arxiv.org/pdf/2311.05661

@@ -4,7 +4,7 @@
 
 El modelo `xelsoft-ai-lab/AfriVoxAccent_ST5_spk_s42_20260904_180603` es un checkpoint de síntesis de voz basado en la arquitectura SpeechT5, desarrollado por `xelsoft-ai-lab`. A juzgar por su nombre, se trata de un ajuste fino destinado a generar voz con rasgos de acento relacionados con el ámbito africano, aunque no se dispone de documentación que lo confirme explícitamente. El repositorio contiene pesos en formato `safetensors` con un total de 144.437.730 parámetros y un tamaño de 0,6 GB, lo que lo sitúa en la categoría de modelos de tamaño mediano para tareas de texto a voz.
 
-La ficha de HuggingFace es una plantilla autogenerada, por lo que los detalles de entrenamiento, evaluación, licencia y datos de apoyo no están publicados. Este modelo es relevante para desarrolladores que busquen alternativas de TTS basadas en SpeechT5, especialmente si necesitan experimentar con acentos no occidentales. No obstante, cualquier uso en producción requiere una validación previa de calidad y cobertura lingüística.
+La ficha de Hugging Face es una plantilla autogenerada, por lo que los detalles de entrenamiento, evaluación, licencia y datos de apoyo no están publicados. Este modelo es relevante para desarrolladores que busquen alternativas de TTS basadas en SpeechT5, especialmente si necesitan experimentar con acentos no occidentales. No obstante, cualquier uso en producción requiere una validación previa de calidad y cobertura lingüística.
 
 ## Especificaciones tecnicas
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `xelsoft-ai-lab/AfriVoxAccent_ST5_spk_s42_20260904_180603` | 144M | no aplica | no disponible | HuggingFace |
-| `microsoft/speecht5_tts` | 144M | no aplica | MIT | HuggingFace |
-| `facebook/mms-tts` | variable (entre 50M y 300M) | no aplica | CC-BY-NC 4.0 | HuggingFace |
+| `xelsoft-ai-lab/AfriVoxAccent_ST5_spk_s42_20260904_180603` | 144M | no aplica | no disponible | Hugging Face |
+| `microsoft/speecht5_tts` | 144M | no aplica | MIT | Hugging Face |
+| `facebook/mms-tts` | variable (entre 50M y 300M) | no aplica | CC-BY-NC 4.0 | Hugging Face |
 
 La comparativa se limita a parámetros y arquitectura, ya que este checkpoint es muy probablemente un ajuste fino de `microsoft/speecht5_tts`. No se dispone de evaluaciones comparativas de calidad de voz.
 
@@ -76,5 +76,5 @@ La comparativa se limita a parámetros y arquitectura, ya que este checkpoint es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_s42_20260904_180603
+- Repositorio en Hugging Face: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_s42_20260904_180603
 - Paper de referencia (según tags): https://arxiv.org/abs/1910.09700

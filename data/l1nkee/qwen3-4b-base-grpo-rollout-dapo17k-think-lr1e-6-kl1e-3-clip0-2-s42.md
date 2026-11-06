@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Contexto | Datos de RL | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | L1nkee/qwen3-4b-base-grpo-rollout-dapo17k-think-lr1e-6-kl1e-3-clip0.2-s42 (este) | ~4B denso | no disponible (entrenado con prompt ≤1024 / respuesta ≤8192) | DAPO-Math-17k, GRPO, ancla = política de rollout, KL 1e-3, LR 1e-6 | Apache 2.0 | 54 ramas `global_step_*`, pesos bf16 safetensors |
-| Qwen/Qwen3-4B-Base | ~4B denso | no disponible en la información proporcionada | sin RL (preentrenamiento) | Apache 2.0 | HuggingFace, ampliamente soportado |
-| L1nkee/qwen3-4b-base-grpo-actorold-dapo17k-think-lr1e-6-kl1e-3-clip0.2-s42 | ~4B denso | no disponible | DAPO-Math-17k, GRPO, ancla = actor antiguo (variante del presente) | Apache 2.0 | HuggingFace |
-| L1nkee/Qwen3-4B-Base-Think-GRPO-KL0-LR1e-5-bf16-540steps | ~4B denso | no disponible | DAPO-Math-17k, GRPO sin KL, LR 1e-5, 540 pasos | Apache 2.0 | HuggingFace; también servido en FriendliAI |
+| Qwen/Qwen3-4B-Base | ~4B denso | no disponible en la información proporcionada | sin RL (preentrenamiento) | Apache 2.0 | Hugging Face, ampliamente soportado |
+| L1nkee/qwen3-4b-base-grpo-actorold-dapo17k-think-lr1e-6-kl1e-3-clip0.2-s42 | ~4B denso | no disponible | DAPO-Math-17k, GRPO, ancla = actor antiguo (variante del presente) | Apache 2.0 | Hugging Face |
+| L1nkee/Qwen3-4B-Base-Think-GRPO-KL0-LR1e-5-bf16-540steps | ~4B denso | no disponible | DAPO-Math-17k, GRPO sin KL, LR 1e-5, 540 pasos | Apache 2.0 | Hugging Face; también servido en FriendliAI |
 
 No se dispone de cifras de benchmarks comparativas en la información proporcionada para establecer diferencias cuantitativas de rendimiento entre estas variantes.
 
@@ -88,7 +88,7 @@ No se dispone de cifras de benchmarks comparativas en la información proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/L1nkee/qwen3-4b-base-grpo-rollout-dapo17k-think-lr1e-6-kl1e-3-clip0.2-s42
+- Modelo en Hugging Face: https://huggingface.co/L1nkee/qwen3-4b-base-grpo-rollout-dapo17k-think-lr1e-6-kl1e-3-clip0.2-s42
 - Variante con ancla de actor antiguo: https://huggingface.co/L1nkee/qwen3-4b-base-grpo-actorold-dapo17k-think-lr1e-6-kl1e-3-clip0.2-s42
 - Variante sin KL y LR 1e-5: https://huggingface.co/L1nkee/Qwen3-4B-Base-Think-GRPO-KL0-LR1e-5-bf16-540steps
 - Despliegue de la variante KL0 en FriendliAI: https://friendli.ai/models/L1nkee/Qwen3-4B-Base-Think-GRPO-KL0-LR1e-5-bf16-540steps

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Kashif786/xlm-roberta-base-sindhi-extended` es un modelo de lenguaje publicado en HuggingFace por el usuario Kashif786. Su nombre sugiere que se trata de una extensión del modelo XLM-RoBERTa base, probablemente adaptado o entrenado adicionalmente para el idioma sindhi, aunque no se dispone de documentación oficial que lo confirme. El repositorio contiene únicamente pesos en formato safetensors, con un total de 289.547.963 parámetros y un tamaño de 9,7 GB.
+El modelo `Kashif786/xlm-roberta-base-sindhi-extended` es un modelo de lenguaje publicado en Hugging Face por el usuario Kashif786. Su nombre sugiere que se trata de una extensión del modelo XLM-RoBERTa base, probablemente adaptado o entrenado adicionalmente para el idioma sindhi, aunque no se dispone de documentación oficial que lo confirme. El repositorio contiene únicamente pesos en formato safetensors, con un total de 289.547.963 parámetros y un tamaño de 9,7 GB.
 
 La relevancia de este modelo radica en su potencial para el procesamiento de lenguaje natural en sindhi, un idioma con escasos recursos digitales. Sin embargo, la ausencia de información sobre su arquitectura, entrenamiento, licencia o capacidades limita considerablemente su uso en entornos profesionales. A fecha de su última actualización (15 de agosto de 2026), acumula 38 descargas y ningún "like", lo que indica un interés muy limitado por parte de la comunidad.
 
@@ -29,7 +29,7 @@ No se dispone de información verificada sobre las capacidades del modelo. Al tr
 
 ## Casos de uso
 
-Dada la falta de información sobre el modelo, no es posible recomendar casos de uso concretos con garantías. Cualquier aplicación en producción requeriría una evaluación previa exhaustiva. Se recomienda contactar con el autor o consultar el repositorio de HuggingFace para obtener más detalles antes de considerar su uso.
+Dada la falta de información sobre el modelo, no es posible recomendar casos de uso concretos con garantías. Cualquier aplicación en producción requeriría una evaluación previa exhaustiva. Se recomienda contactar con el autor o consultar el repositorio de Hugging Face para obtener más detalles antes de considerar su uso.
 
 ## Benchmarks y rendimiento
 
@@ -54,4 +54,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Kashif786/xlm-roberta-base-sindhi-extended)
+- [Repositorio en Hugging Face](https://huggingface.co/Kashif786/xlm-roberta-base-sindhi-extended)

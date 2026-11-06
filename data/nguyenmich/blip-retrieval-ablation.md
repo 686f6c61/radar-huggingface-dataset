@@ -2,7 +2,7 @@
 
 ## Resumen
 
-blip-retrieval-ablation es un repositorio de HuggingFace publicado por el usuario nguyenmich que contiene una implementación de trabajo del modelo BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de recuperación (retrieval) texto-imagen, con una configuración declarada a escala xlarge. No es un modelo entrenado ni un checkpoint listo para producción: el propio autor lo describe como un punto de partida experimental, con código transparente y pruebas de humo (smoke tests) reproducibles, y omite de forma deliberada cualquier afirmación sobre resultados de benchmarks.
+blip-retrieval-ablation es un repositorio de Hugging Face publicado por el usuario nguyenmich que contiene una implementación de trabajo del modelo BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de recuperación (retrieval) texto-imagen, con una configuración declarada a escala xlarge. No es un modelo entrenado ni un checkpoint listo para producción: el propio autor lo describe como un punto de partida experimental, con código transparente y pruebas de humo (smoke tests) reproducibles, y omite de forma deliberada cualquier afirmación sobre resultados de benchmarks.
 
 El repositorio incluye el script de ajuste fino (finetune.py), la configuración de arquitectura (config.json), la receta de experimento por defecto (training_args.json) y un checkpoint de inicialización (model.safetensors). Según los metadatos de safetensors, este contiene únicamente 16.576 parámetros, una cifra incoherente con la escala xlarge declarada y que confirma que se trata de un artefacto de prueba y no de un modelo funcional. La arquitectura descrita emplea atención de ventana deslizante, fusión mediante co-attention, activación ReLU y normalización LayerNorm, ajustada con optimizador SGD y planificador exponencial.
 
@@ -72,10 +72,10 @@ No es posible una comparación cuantitativa honesta, porque este repositorio no 
 
 | Modelo | Parametros | Contexto | Rendimiento (retrieval) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| blip-retrieval-ablation | 16.576 (metadatos safetensors) | no disponible | sin entrenar | apache-2.0 | repositorio HuggingFace |
-| CLIP (referencia) | no disponible | no disponible | no disponible | no disponible | OpenAI / HuggingFace |
-| BLIP-2 (referencia) | no disponible | no disponible | no disponible | no disponible | Salesforce / HuggingFace |
-| SigLIP (referencia) | no disponible | no disponible | no disponible | no disponible | Google / HuggingFace |
+| blip-retrieval-ablation | 16.576 (metadatos safetensors) | no disponible | sin entrenar | apache-2.0 | repositorio Hugging Face |
+| CLIP (referencia) | no disponible | no disponible | no disponible | no disponible | OpenAI / Hugging Face |
+| BLIP-2 (referencia) | no disponible | no disponible | no disponible | no disponible | Salesforce / Hugging Face |
+| SigLIP (referencia) | no disponible | no disponible | no disponible | no disponible | Google / Hugging Face |
 
 Los modelos mencionados se citan únicamente como alternativas de la misma categoría (retrieval visión-lenguaje); no se dispone de datos verificados de sus especificaciones o métricas en la información proporcionada.
 
@@ -93,6 +93,6 @@ Los modelos mencionados se citan únicamente como alternativas de la misma categ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nguyenmich/blip-retrieval-ablation
+- Repositorio en Hugging Face: https://huggingface.co/nguyenmich/blip-retrieval-ablation
 - No se han encontrado otros enlaces (papers, blogs, repositorios auxiliares o demos) en la información proporcionada.
 - Archivos incluidos en el repositorio: finetune.py, README.md, config.json, training_args.json y model.safetensors.

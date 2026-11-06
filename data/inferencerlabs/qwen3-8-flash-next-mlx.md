@@ -69,8 +69,8 @@ No se dispone de datos comparativos directos en la información proporcionada. C
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión MLX: https://huggingface.co/inferencerlabs/Qwen3.8-Flash-Next-MLX
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face de la conversión MLX: https://huggingface.co/inferencerlabs/Qwen3.8-Flash-Next-MLX
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/tree/main
 - Página de vLLM Recipes con detalles técnicos: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next
 - Wiki de IA con información general: https://aiwiki.ai/wiki/qwen3_8_flash_next

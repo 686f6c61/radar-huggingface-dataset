@@ -87,7 +87,7 @@ Comparativa de rendimiento (WER, latencia, throughput): no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonah1024/jackrabbit-110m-ro-handy
+- Modelo en Hugging Face: https://huggingface.co/jonah1024/jackrabbit-110m-ro-handy
 - Modelo base: https://huggingface.co/surogate/jackrabbit-110m-ro
 - Colección Jackrabbit Models ASR: https://huggingface.co/collections/surogate/jackrabbit-models-asr
 - Blog de Surogate Speech: https://huggingface.co/blog/cetusian/surogate-speech

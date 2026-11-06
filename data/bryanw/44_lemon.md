@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BryanW/44_lemon es un repositorio de modelo alojado en HuggingFace bajo el identificador `BryanW/44_lemon`, publicado por el usuario BryanW. El repositorio tiene un tamano de 136,6 GB, lo que sugiere pesos de gran volumen, probablemente un modelo de decenas de miles de millones de parametros en formato de alta precision o un conjunto de checkpoints. El acceso es restringido (gated): requiere aceptar condiciones en HuggingFace antes de poder descargarlo.
+BryanW/44_lemon es un repositorio de modelo alojado en Hugging Face bajo el identificador `BryanW/44_lemon`, publicado por el usuario BryanW. El repositorio tiene un tamano de 136,6 GB, lo que sugiere pesos de gran volumen, probablemente un modelo de decenas de miles de millones de parametros en formato de alta precision o un conjunto de checkpoints. El acceso es restringido (gated): requiere aceptar condiciones en Hugging Face antes de poder descargarlo.
 
 La informacion publica disponible es extremadamente limitada. No se especifica pipeline, arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni datos de entrenamiento. La licencia figura como "other", sin que se detallen sus terminos en la informacion proporcionada. No hay descargas ni likes registrados en el momento de la consulta, y el repositorio fue creado y actualizado el 29 de octubre de 2026.
 
@@ -64,7 +64,7 @@ No disponible. No se dispone de informacion sobre parametros, contexto, rendimie
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Licencia "other": los terminos no estan detallados en la informacion disponible; es imprescindible revisarlos antes de cualquier uso comercial.
 - Ausencia de model card publica con especificaciones: no se puede verificar arquitectura, contexto, idiomas ni proceso de entrenamiento.
 - Sin datos de benchmarks: no hay evidencia publicada sobre calidad, sesgos o tasas de alucinacion.
@@ -74,5 +74,5 @@ No disponible. No se dispone de informacion sobre parametros, contexto, rendimie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BryanW/44_lemon
+- Repositorio en Hugging Face: https://huggingface.co/BryanW/44_lemon
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

@@ -32,13 +32,13 @@ El repositorio incluye un `config.json` con los ajustes de arquitectura generado
 - Checkpoint de inicialización para verificar que el modelo puede cargarse y ejecutar una pasada hacia adelante.
 - No se reivindica ninguna capacidad funcional de visión, generación o razonamiento, ya que el modelo no está entrenado.
 - No hay soporte para tool calling, agentes ni procesamiento multimodal en el sentido práctico.
-- El código es una implementación personalizada que requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+- El código es una implementación personalizada que requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 
 ## Casos de uso
 
 - Investigación educativa sobre arquitecturas contrastivas: permite a estudiantes y desarrolladores inspeccionar el código fuente de una implementación Dino con variantes de atención y normalización, y modificarla para experimentos de bajo coste.
 - Pruebas de integración en pipelines de CI/CD: al ser un modelo diminuto (16.576 parámetros), puede usarse para validar que un sistema de carga de safetensors, una GPU o un entorno de inferencia funcionan correctamente antes de introducir modelos grandes.
-- Desarrollo de adaptadores para HuggingFace: dado que el autor menciona que las APIs genéricas requieren un adaptador, este repositorio sirve como caso de prueba para escribir wrappers de carga personalizados.
+- Desarrollo de adaptadores para Hugging Face: dado que el autor menciona que las APIs genéricas requieren un adaptador, este repositorio sirve como caso de prueba para escribir wrappers de carga personalizados.
 - Benchmark de rendimiento de frameworks de inferencia: se puede medir la latencia y el throughput de la pasada hacia adelante en diferentes backends (PyTorch, ONNX, etc.) sin necesidad de un modelo entrenado.
 - Estudio de la inicialización de pesos en arquitecturas Dino: el checkpoint de inicialización puede analizarse para entender la distribución de pesos y el efecto de la normalización ScaleNorm en el arranque del entrenamiento.
 - Base para un entrenamiento desde cero con datos propios: el autor proporciona una receta de entrenamiento (LAMB con warmup constante) que puede adaptarse a un dataset pequeño para explorar el comportamiento del modelo en tareas de aprendizaje contrastivo.
@@ -63,7 +63,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 - El modelo no está entrenado: el checkpoint es solo una inicialización aleatoria, por lo que no produce resultados útiles en ninguna tarea de visión o lenguaje.
 - No se ha auditado la robustez, equidad ni transferencia de dominio del checkpoint.
-- La implementación es personalizada y no compatible con las APIs estándar de HuggingFace sin un adaptador explícito.
+- La implementación es personalizada y no compatible con las APIs estándar de Hugging Face sin un adaptador explícito.
 - No hay datos sobre sesgos, alucinaciones o limitaciones de contexto porque no hay comportamiento aprendido.
 - La licencia MIT permite uso comercial, pero el autor advierte que deben revisarse los términos de las fuentes de datos si se usa con datasets externos.
 - El repositorio no incluye documentación sobre el dataset de entrenamiento, ni sobre el número de tokens o la composición de los datos, ya que no se ha realizado entrenamiento.
@@ -71,7 +71,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Naomimatsumoto/experiment-contrastive
+- Repositorio Hugging Face: https://huggingface.co/Naomimatsumoto/experiment-contrastive
 - Referencia a DINO (método original, no este repositorio): https://arxiv.org/html/2206.09753v3 (Visualizing and Understanding Contrastive Learning)
 - Repositorio contrastors (entrenamiento contrastivo en PyTorch): https://github.com/nomic-ai/contrastors
 - Repositorio CLIP (OpenAI): https://github.com/openai/CLIP

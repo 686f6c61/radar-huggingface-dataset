@@ -87,7 +87,7 @@ La comparativa es limitada porque no se dispone de datos de rendimiento para est
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/nuofang/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/nuofang/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/nuofang/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored (inferido, no verificado)
 - Blog sobre Qwen3.8-9B-Distill: https://www.mindstudio.ai/blog/qwen3-8-9b-distillation-local
 - Espejo en AtomGit: https://ai.atomgit.com/hf_mirrors/empero-ai/Qwen3.8-9B-Distill

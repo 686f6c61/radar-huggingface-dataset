@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Tarea | Entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MossFormer2-SS-16K-CoreML (este) | Separación de habla 2 hablantes | 16 kHz mono, ventana fija de 32.776 muestras | Core ML float16 | Apache 2.0 | HuggingFace, ejecución local en macOS |
-| alibabasglab/MossFormer2_SS_16K | Separación de habla 2 hablantes | 16 kHz mono, longitud variable | PyTorch | Apache 2.0 | HuggingFace, ClearerVoice-Studio |
+| MossFormer2-SS-16K-CoreML (este) | Separación de habla 2 hablantes | 16 kHz mono, ventana fija de 32.776 muestras | Core ML float16 | Apache 2.0 | Hugging Face, ejecución local en macOS |
+| alibabasglab/MossFormer2_SS_16K | Separación de habla 2 hablantes | 16 kHz mono, longitud variable | PyTorch | Apache 2.0 | Hugging Face, ClearerVoice-Studio |
 | Otros modelos de separación de habla | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación relevante es con el modelo original del que deriva: misma arquitectura y mismos pesos, con la diferencia de formato (Core ML float16 frente a PyTorch), entrada fija frente a longitud variable y ejecución local en macOS frente a un entorno Python. No se dispone de información sobre otros modelos comparables en la documentación proporcionada.
@@ -83,7 +83,7 @@ La comparación relevante es con el modelo original del que deriva: misma arquit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Moipee/MossFormer2-SS-16K-CoreML
+- Modelo en Hugging Face: https://huggingface.co/Moipee/MossFormer2-SS-16K-CoreML
 - Modelo base original: https://huggingface.co/alibabasglab/MossFormer2_SS_16K
 - ClearerVoice-Studio (repositorio de Alibaba): https://github.com/modelscope/ClearerVoice-Studio
 - Script de conversión: convert.py (incluido en el repositorio del modelo)

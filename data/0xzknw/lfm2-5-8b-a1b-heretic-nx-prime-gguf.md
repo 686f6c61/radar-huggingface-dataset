@@ -87,8 +87,8 @@ La principal diferencia frente al modelo base es el comportamiento de rechazo: l
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo editado: https://huggingface.co/0xzknw/LFM2.5-8B-A1B-Heretic-NX-PRIME-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
+- Repositorio Hugging Face del modelo editado: https://huggingface.co/0xzknw/LFM2.5-8B-A1B-Heretic-NX-PRIME-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
 - Versión GGUF oficial del modelo base: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF
 - Documentación técnica de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-8b-a1b
 - Blog de Liquid AI sobre LFM2.5-8B-A1B: https://www.liquid.ai/blog/lfm2-5-8b-a1b

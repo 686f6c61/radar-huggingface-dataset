@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spark-X2.5-4B es un modelo de lenguaje compacto desarrollado por XHToken, diseñado para ofrecer un equilibrio entre capacidad, eficiencia y accesibilidad. La versión publicada por 0xSojalSec en HuggingFace es un fine-tune del modelo base XHToken/Spark-X2.5-4B-Base, con pesos en formato safetensors y un total de 4.112.079.360 parámetros. El modelo destaca por su arquitectura híbrida de atención, que combina capas de atención completa con capas de ventana deslizante, lo que le permite manejar ventanas de contexto nativas de hasta 1 millón de tokens sin disparar el coste computacional típico de los modelos de contexto largo.
+Spark-X2.5-4B es un modelo de lenguaje compacto desarrollado por XHToken, diseñado para ofrecer un equilibrio entre capacidad, eficiencia y accesibilidad. La versión publicada por 0xSojalSec en Hugging Face es un fine-tune del modelo base XHToken/Spark-X2.5-4B-Base, con pesos en formato safetensors y un total de 4.112.079.360 parámetros. El modelo destaca por su arquitectura híbrida de atención, que combina capas de atención completa con capas de ventana deslizante, lo que le permite manejar ventanas de contexto nativas de hasta 1 millón de tokens sin disparar el coste computacional típico de los modelos de contexto largo.
 
 El modelo está orientado a tareas generalistas de conversación, escritura, traducción, razonamiento, generación de código, uso de herramientas y flujos de trabajo agénticos. Según la documentación del proyecto, fue preentrenado en aproximadamente 20 billones de tokens y post-entrenado con técnicas de aprendizaje por refuerzo a gran escala y consolidación de políticas mediante MOPD. Su relevancia radica en ofrecer capacidades de agente y código de alto nivel en un tamaño reducido, lo que facilita su despliegue en hardware variado y en entornos de producción con requisitos de latencia y coste ajustados.
 
@@ -25,7 +25,7 @@ Spark-X2.5-4B utiliza una arquitectura híbrida de atención que alterna capas d
 
 El preentrenamiento se realizó sobre aproximadamente 20 billones de tokens, con una composición diversa que incluye páginas web, libros, publicaciones académicas, código y materiales enciclopédicos. Se prestó especial atención a la calidad de los datos, la cobertura por dominio y los pesos de muestreo, con un énfasis en matemáticas, lógica y código. El desarrollo de la capacidad de contexto largo se llevó a cabo mediante una etapa dedicada de cientos de miles de millones de tokens con longitudes de secuencia de hasta 1 millón. El post-entrenamiento incluyó ajuste fino supervisado y aprendizaje por refuerzo a gran escala en dominios como comprensión del lenguaje, razonamiento, programación y comportamiento agéntico, con consolidación de políticas mediante MOPD. El modelo base fue entrenado en clústeres Huawei Ascend.
 
-La versión publicada en HuggingFace por 0xSojalSec es un fine-tune del modelo base. No se proporciona información adicional sobre el proceso de fine-tuning, el dataset utilizado ni los cambios introducidos.
+La versión publicada en Hugging Face por 0xSojalSec es un fine-tune del modelo base. No se proporciona información adicional sobre el proceso de fine-tuning, el dataset utilizado ni los cambios introducidos.
 
 ## Capacidades
 
@@ -67,14 +67,14 @@ No disponible. La información proporcionada no incluye comparaciones cuantitati
 
 - No se han documentado sesgos específicos en la información disponible. El modelo hereda los posibles sesgos del corpus de preentrenamiento, pero no se aportan análisis de sesgo.
 - El riesgo de alucinación no está cuantificado. Como todo modelo de lenguaje, puede generar contenido plausible pero incorrecto, especialmente en tareas de razonamiento complejo o dominio especializado.
-- El modelo publicada en HuggingFace por 0xSojalSec es un fine-tune de terceros sin información sobre el proceso de ajuste, el dataset utilizado ni la calidad de los resultados. La ausencia de descargas y de validación externa implica que su fiabilidad no está comprobada.
+- El modelo publicada en Hugging Face por 0xSojalSec es un fine-tune de terceros sin información sobre el proceso de ajuste, el dataset utilizado ni la calidad de los resultados. La ausencia de descargas y de validación externa implica que su fiabilidad no está comprobada.
 - La ventana de contexto de 1 millón de tokens puede resultar en un alto consumo de memoria de caché KV en inferencia, lo que requiere planificación de recursos.
 - La licencia Apache 2.0 permite el uso comercial, pero se debe verificar que cualquier modificación o redistribución cumpla con los términos de la licencia.
 - La documentación indica soporte de más de 200 idiomas, pero no se proporciona una lista detallada ni métricas de calidad por idioma.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0xSojalSec/Spark-X2.5-4B
+- Hugging Face: https://huggingface.co/0xSojalSec/Spark-X2.5-4B
 - GitHub del proyecto: https://github.com/XHToken/Spark-X2.5
 - Comunidad Slack: https://join.slack.com/t/tokenspark/shared_invite/zt-432qf8l2f-5~dLyXv8uETr0P0UuC07nw
 - Discord: https://discord.gg/kTDE2Hg8aw

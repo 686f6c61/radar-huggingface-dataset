@@ -89,7 +89,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/volt-s.scannet200.kadir-yilmaz
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/volt-s.scannet200.kadir-yilmaz
 - Modelo original: https://huggingface.co/KadirYilmaz/Volt
 - Paper: https://arxiv.org/abs/2604.19609
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

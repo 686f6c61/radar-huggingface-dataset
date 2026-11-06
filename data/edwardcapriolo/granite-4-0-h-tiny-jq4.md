@@ -26,7 +26,7 @@ La relevancia de esta ficha es doble: por un lado documenta un modelo con capaci
 
 ## Arquitectura y entrenamiento
 
-El tag `granitemoehybrid` de HuggingFace indica que la arquitectura subyacente combina componentes de mezcla de expertos con un esquema hibrido, en la linea de la familia Granite 4.0 de IBM. La model card no detalla la composicion exacta de capas, el numero de expertos ni la estrategia de enrutamiento, por lo que esos datos quedan como no disponibles. El modelo es un instruct afinado a partir de Granite-4.0-H-Tiny-Base mediante una combinacion de ajuste supervisado (SFT), alineamiento por aprendizaje por refuerzo y fusion de modelos (model merging), empleando datasets de instruccion de licencia permisiva junto con datasets sinteticos generados internamente por IBM.
+El tag `granitemoehybrid` de Hugging Face indica que la arquitectura subyacente combina componentes de mezcla de expertos con un esquema hibrido, en la linea de la familia Granite 4.0 de IBM. La model card no detalla la composicion exacta de capas, el numero de expertos ni la estrategia de enrutamiento, por lo que esos datos quedan como no disponibles. El modelo es un instruct afinado a partir de Granite-4.0-H-Tiny-Base mediante una combinacion de ajuste supervisado (SFT), alineamiento por aprendizaje por refuerzo y fusion de modelos (model merging), empleando datasets de instruccion de licencia permisiva junto con datasets sinteticos generados internamente por IBM.
 
 Sobre esta base, la intervencion de Deliverance consiste en una recuantizacion post-entrenamiento: se reescribieron 248 tensores al formato Q4 del motor, con transformaciones de normalizacion de formas y generacion de sidecars `.qb`, preservando la plantilla de chat y los metadatos del tokenizer. La model card del artefacto derivado indica que el 10 de julio de 2025 se anadio un system prompt por defecto a la plantilla de chat para orientar las respuestas hacia un tono profesional, preciso y seguro. No se documentan en la informacion disponible innovaciones de decodificacion, atencion lineal ni tecnicas de inferencia especulativa.
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| edwardcapriolo/granite-4.0-h-tiny-JQ4 (este) | 7B | no disponible | no disponible | Apache 2.0 | HuggingFace, 4,6 GB, 0 descargas |
-| ibm-granite/granite-4.0-h-tiny (oficial) | 7B | no disponible en la informacion proporcionada | no disponible | Apache 2.0 | HuggingFace, modelo de origen, 12,9 GB sin cuantizar |
+| edwardcapriolo/granite-4.0-h-tiny-JQ4 (este) | 7B | no disponible | no disponible | Apache 2.0 | Hugging Face, 4,6 GB, 0 descargas |
+| ibm-granite/granite-4.0-h-tiny (oficial) | 7B | no disponible en la informacion proporcionada | no disponible | Apache 2.0 | Hugging Face, modelo de origen, 12,9 GB sin cuantizar |
 | Otros modelos de 7-8B instruct de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 La busqueda web realizada no arrojo resultados relevantes sobre alternativas comparables; los enlaces devueltos corresponden a paginas de soporte de Microsoft y no guardan relacion con el modelo. No se dispone, por tanto, de datos de rendimiento que permitan una comparacion cuantitativa fiable.
@@ -89,7 +89,7 @@ La busqueda web realizada no arrojo resultados relevantes sobre alternativas com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edwardcapriolo/granite-4.0-h-tiny-JQ4
+- Modelo en Hugging Face: https://huggingface.co/edwardcapriolo/granite-4.0-h-tiny-JQ4
 - Modelo original de IBM: https://huggingface.co/ibm-granite/granite-4.0-h-tiny
 - Coleccion Granite 4.0 Language Models: https://huggingface.co/collections/ibm-granite/granite-40-language-models-6811a18b820ef362d9e5a82c
 - Repositorio GitHub de los modelos de lenguaje Granite 4.0: https://github.com/ibm-granite/granite-4.0-language-models

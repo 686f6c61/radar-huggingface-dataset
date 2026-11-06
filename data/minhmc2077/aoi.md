@@ -78,4 +78,4 @@ Los datos de contexto y benchmarks no están disponibles para ninguno de los tre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Minhmc2077/AOI
+- Hugging Face: https://huggingface.co/Minhmc2077/AOI

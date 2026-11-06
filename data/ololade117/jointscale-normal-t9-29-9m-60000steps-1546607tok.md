@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Ololade117/jointscale-normal-t9-29.9M-60000steps-1546607tok` es un modelo de lenguaje de escala muy reducida, con 29.931.520 parametros, publicado en HuggingFace por el usuario Ololade117 bajo licencia MIT. Por la nomenclatura del identificador ("jointscale-normal", "60000steps", "1546607tok") y por la existencia de otros artefactos del mismo autor con patrones similares (por ejemplo, `jointscale-normal-t5-13.7M-30000steps-774658tok` y `scaling-normal-3.7M-27000steps`), todo apunta a un experimento academico de estudio de leyes de escalado (scaling laws) mas que a un modelo destinado a produccion. El nombre sugiere un entrenamiento de 60.000 pasos sobre aproximadamente 1,55 millones de tokens, una cantidad de datos extraordinariamente baja para un modelo de este tamano.
+El modelo `Ololade117/jointscale-normal-t9-29.9M-60000steps-1546607tok` es un modelo de lenguaje de escala muy reducida, con 29.931.520 parametros, publicado en Hugging Face por el usuario Ololade117 bajo licencia MIT. Por la nomenclatura del identificador ("jointscale-normal", "60000steps", "1546607tok") y por la existencia de otros artefactos del mismo autor con patrones similares (por ejemplo, `jointscale-normal-t5-13.7M-30000steps-774658tok` y `scaling-normal-3.7M-27000steps`), todo apunta a un experimento academico de estudio de leyes de escalado (scaling laws) mas que a un modelo destinado a produccion. El nombre sugiere un entrenamiento de 60.000 pasos sobre aproximadamente 1,55 millones de tokens, una cantidad de datos extraordinariamente baja para un modelo de este tamano.
 
 El repositorio no incluye model card sustantiva: unicamente la plantilla autogenerada por la integracion `PyTorchModelHubMixin` de `huggingface_hub`, con campos "More Information Needed" en codigo, paper y documentacion. No se declaran arquitectura, idiomas, contexto, dataset ni proceso de alineacion. El modelo tiene cero descargas y cero "likes" en el momento de redactar esta ficha, y el tamano del repo (0,1 GB) es coherente con un unico fichero `safetensors` en precision de 32 bits.
 
@@ -23,7 +23,7 @@ Su relevancia actual es, por tanto, limitada y de caracter metodologico: sirve c
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna. Los tags del repositorio (`model_hub_mixin`, `pytorch_model_hub_mixin`) indican que el checkpoint se subio como un `nn.Module` de PyTorch generico envuelto con el mixin de HuggingFace Hub, y no como un modelo compatible con la libreria `transformers`. Esto implica que no existe un `config.json` estandar ni clases tipo `AutoModel`, y que para instanciarlo hace falta el codigo fuente del autor, que no esta publicado en el repositorio.
+No se dispone de informacion sobre la arquitectura interna. Los tags del repositorio (`model_hub_mixin`, `pytorch_model_hub_mixin`) indican que el checkpoint se subio como un `nn.Module` de PyTorch generico envuelto con el mixin de Hugging Face Hub, y no como un modelo compatible con la libreria `transformers`. Esto implica que no existe un `config.json` estandar ni clases tipo `AutoModel`, y que para instanciarlo hace falta el codigo fuente del autor, que no esta publicado en el repositorio.
 
 Respecto al entrenamiento, solo puede inferirse lo que sugiere el identificador: 60.000 pasos de optimizacion sobre aproximadamente 1.546.607 tokens. Esa relacion (unos 26 tokens por paso) es extremadamente baja y compatible con lotes muy pequenos o secuencias muy cortas. No hay informacion sobre composicion del dataset, tokenizador, funcion de perdida, uso de RLHF, DPO o cualquier otra tecnica de alineacion. El prefijo "jointscale" y la existencia de variantes "t5", "t9" y "scaling-normal" apuntan a una familia de ejecuciones experimentales dentro de un mismo estudio de escalado, pero no hay documentacion que lo confirme.
 
@@ -43,7 +43,7 @@ Respecto al entrenamiento, solo puede inferirse lo que sugiere el identificador:
 - Pruebas de infraestructura de inferencia: sirve para validar pipelines propios de carga de `safetensors` y `PyTorchModelHubMixin` antes de aplicarlos a checkpoints mayores.
 - Prototipado en dispositivos embebidos: con pesos en fp32 de aproximadamente 120 MB y versiones en int8 de unos 30 MB, es candidato a experimentos de inferencia en Raspberry Pi o microcontroladores de gama alta, en la linea de proyectos como `esp32-ai`.
 - Experimentos de fine-tuning a pequena escala: su tamano permite iterar rapidamente sobre tecnicas de ajuste (LoRA, adaptadores) en hardware modesto, aunque la utilidad final del modelo ajustado sea limitada.
-- Estudio de artefactos de investigacion sin documentacion: analisis de que informacion minima acompana a un checkpoint publicado en HuggingFace y como afecta a su reproducibilidad.
+- Estudio de artefactos de investigacion sin documentacion: analisis de que informacion minima acompana a un checkpoint publicado en Hugging Face y como afecta a su reproducibilidad.
 
 ## Benchmarks y rendimiento
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tokens de entrenamiento | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Ololade117/jointscale-normal-t9-29.9M-60000steps-1546607tok` | 29,93 M | ~1,55 M | no disponible | MIT | HuggingFace, sin codigo |
-| `Ololade117/jointscale-normal-t5-13.7M-30000steps-774658tok` | 13,7 M | ~0,77 M | no disponible | MIT (segun tag) | HuggingFace, sin codigo |
-| `Ololade117/scaling-normal-3.7M-27000steps` | 3,7 M | no disponible | no disponible | MIT | HuggingFace, sin codigo |
+| `Ololade117/jointscale-normal-t9-29.9M-60000steps-1546607tok` | 29,93 M | ~1,55 M | no disponible | MIT | Hugging Face, sin codigo |
+| `Ololade117/jointscale-normal-t5-13.7M-30000steps-774658tok` | 13,7 M | ~0,77 M | no disponible | MIT (segun tag) | Hugging Face, sin codigo |
+| `Ololade117/scaling-normal-3.7M-27000steps` | 3,7 M | no disponible | no disponible | MIT | Hugging Face, sin codigo |
 | `slvDev/esp32-ai` (proyecto ESP32) | 28,9 M | no disponible | no disponible | no disponible | GitHub, con codigo e inferencia en ESP32-S3 a 9,88 tok/s |
 
 La comparacion se limita a modelos de escala equivalente del mismo autor o de proyectos embebidos, ya que no existen modelos de proposito general de 30 M de parametros con documentacion completa que resulten directamente comparables.
@@ -80,7 +80,7 @@ La comparacion se limita a modelos de escala equivalente del mismo autor o de pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ololade117/jointscale-normal-t9-29.9M-60000steps-1546607tok
+- Modelo en Hugging Face: https://huggingface.co/Ololade117/jointscale-normal-t9-29.9M-60000steps-1546607tok
 - Modelo hermano (t5, 13,7 M): https://huggingface.co/Ololade117/jointscale-normal-t5-13.7M-30000steps-774658tok
 - Modelo hermano (scaling-normal, 3,7 M): https://huggingface.co/Ololade117/scaling-normal-3.7M-27000steps/tree/main
 - Perfil de GitHub del autor: https://github.com/Ololade117/

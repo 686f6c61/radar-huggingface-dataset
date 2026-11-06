@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, GLUE, etc.) en la i
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SITOR (Andregon79/sitor) | 124,7M | 512 tokens | Clasificacion en 56 colas BPO/IT | MIT | HuggingFace, 0 descargas |
+| SITOR (Andregon79/sitor) | 124,7M | 512 tokens | Clasificacion en 56 colas BPO/IT | MIT | Hugging Face, 0 descargas |
 | roberta-base (FacebookAI) | 125M | 512 tokens | Modelo base, sin cabeza de clasificacion | MIT | Ampliamente disponible |
 | distilbert-base-uncased | 66M | 512 tokens | Modelo base destilado | Apache 2.0 | Ampliamente disponible |
 | deberta-v3-base | ~184M | 512 tokens | Modelo base | MIT | Ampliamente disponible |
@@ -95,6 +95,6 @@ La diferencia clave frente a los modelos base es que SITOR incorpora una cabeza 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Andregon79/sitor
+- Hugging Face: https://huggingface.co/Andregon79/sitor
 - Modelo base: https://huggingface.co/FacebookAI/roberta-base
 - Los resultados de la busqueda web no aportan enlaces relevantes: apuntan a servicios no relacionados (sitor.ai de tutoria, generadores de modelos 3D). No se han encontrado papers, blogs ni repositorios adicionales asociados a este modelo en la informacion disponible.

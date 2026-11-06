@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario ASD21DWSA bajo licencia MIT. La model card describe una supuesta actualizacion significativa respecto a una version anterior, con mejoras en razonamiento complejo, reduccion de alucinaciones y soporte mejorado para function calling. Segun el texto de la tarjeta, el modelo habria pasado de un 70% a un 87.5% de precision en el conjunto de test AIME 2025, con un incremento en el promedio de tokens de razonamiento por pregunta (de 12K a 23K).
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario ASD21DWSA bajo licencia MIT. La model card describe una supuesta actualizacion significativa respecto a una version anterior, con mejoras en razonamiento complejo, reduccion de alucinaciones y soporte mejorado para function calling. Segun el texto de la tarjeta, el modelo habria pasado de un 70% a un 87.5% de precision en el conjunto de test AIME 2025, con un incremento en el promedio de tokens de razonamiento por pregunta (de 12K a 23K).
 
-Sin embargo, es importante senalar que el repositorio tiene un tamano de 0.0 GB, lo que sugiere que no se han subido los pesos del modelo. La model card contiene marcadores de posicion `{RESULT}` en lugar de valores reales de benchmarks, y las figuras referenciadas no estan disponibles. Los tags de HuggingFace indican `bert` y `feature-extraction`, lo que contradice las capacidades de razonamiento general descritas en la tarjeta. No se dispone de informacion verificable sobre arquitectura, numero de parametros o datos de entrenamiento.
+Sin embargo, es importante senalar que el repositorio tiene un tamano de 0.0 GB, lo que sugiere que no se han subido los pesos del modelo. La model card contiene marcadores de posicion `{RESULT}` en lugar de valores reales de benchmarks, y las figuras referenciadas no estan disponibles. Los tags de Hugging Face indican `bert` y `feature-extraction`, lo que contradice las capacidades de razonamiento general descritas en la tarjeta. No se dispone de informacion verificable sobre arquitectura, numero de parametros o datos de entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Sin embargo, es importante senalar que el repositorio tiene un tamano de 0.0 GB,
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no permite determinar la arquitectura real del modelo. Los tags de HuggingFace (`bert`, `feature-extraction`) sugieren un modelo basado en la arquitectura BERT de tipo encoder, pero la model card describe capacidades tipicas de un LLM autoregresivo con razonamiento profundo, generacion de codigo y function calling, lo que resulta contradictorio. El repositorio no contiene archivos de pesos, por lo que no es posible verificar ninguna de estas afirmaciones.
+La informacion disponible no permite determinar la arquitectura real del modelo. Los tags de Hugging Face (`bert`, `feature-extraction`) sugieren un modelo basado en la arquitectura BERT de tipo encoder, pero la model card describe capacidades tipicas de un LLM autoregresivo con razonamiento profundo, generacion de codigo y function calling, lo que resulta contradictorio. El repositorio no contiene archivos de pesos, por lo que no es posible verificar ninguna de estas afirmaciones.
 
 La model card menciona que el modelo ha sido sometido a un proceso de post-entrenamiento con "recursos computacionales incrementados y mecanismos de optimizacion algoritmica", pero no se proporcionan detalles sobre el dataset de entrenamiento, el numero de tokens, ni si se utilizaron tecnicas como RLHF o DPO. Tampoco se especifica la composicion de los datos ni las condiciones de entrenamiento.
 
@@ -73,9 +73,9 @@ No disponible. La model card menciona tres modelos de referencia (Model1, Model2
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace esta vacio (0.0 GB): no hay pesos, tokenizador ni codigo de inferencia disponibles para descargar
+- El repositorio de Hugging Face esta vacio (0.0 GB): no hay pesos, tokenizador ni codigo de inferencia disponibles para descargar
 - Los resultados de benchmarks en la model card son marcadores de posicion `{RESULT}`, no valores reales
-- Existe una contradiccion entre los tags de HuggingFace (`bert`, `feature-extraction`) y las capacidades descritas en la model card (LLM generativo con razonamiento profundo)
+- Existe una contradiccion entre los tags de Hugging Face (`bert`, `feature-extraction`) y las capacidades descritas en la model card (LLM generativo con razonamiento profundo)
 - No se especifican los idiomas soportados
 - No se proporciona informacion sobre sesgos, riesgos de alucinacion o limitaciones de contexto
 - La licencia MIT permitiria uso comercial en caso de que el modelo existiera, pero al no haber pesos publicados esta consideracion es academica
@@ -85,7 +85,7 @@ No disponible. La model card menciona tres modelos de referencia (Model1, Model2
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ASD21DWSA/my-awesome-model
+- Repositorio Hugging Face: https://huggingface.co/ASD21DWSA/my-awesome-model
 - Repositorio de prueba relacionado: https://huggingface.co/ASD21DWSA/MyAwesomeModel-TestRepo
 - Version similar de otro autor: https://huggingface.co/mm-tool/MyAwesomeModel-v1
 

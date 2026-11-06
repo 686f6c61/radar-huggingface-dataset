@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kinnow-qwen-v5 es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, desarrollado por el usuario KaraPatelDev y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de generación de texto de pequeno tamano (1.500 millones de parametros) derivado de la familia Qwen2.5 de Alibaba, concretamente de la version Instruct cuantizada en 4 bits que Unsloth distribuye para entrenamiento eficiente. El modelo se ha entrenado utilizando la libreria Unsloth, que segun el autor permite un entrenamiento "2x mas rapido" que los flujos estandar.
+kinnow-qwen-v5 es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, desarrollado por el usuario KaraPatelDev y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de generación de texto de pequeno tamano (1.500 millones de parametros) derivado de la familia Qwen2.5 de Alibaba, concretamente de la version Instruct cuantizada en 4 bits que Unsloth distribuye para entrenamiento eficiente. El modelo se ha entrenado utilizando la libreria Unsloth, que segun el autor permite un entrenamiento "2x mas rapido" que los flujos estandar.
 
 La relevancia de este modelo es limitada: se trata de un ajuste fino comunitario sin documentacion tecnica detallada, sin resultados de benchmarks publicados y con cero descargas en el momento de la consulta. El repositorio ocupa 0,1 GB, lo que sugiere que los pesos podrian estar en formato cuantizado o que el contenido es reducido. No se especifica el dataset de entrenamiento, el numero de tokens utilizados ni la tarea concreta para la que se ha ajustado.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kinnow-qwen-v5 | 1.5B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Ajuste comunitario sin benchmarks |
-| Qwen2.5-1.5B-Instruct | 1.5B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial con benchmarks publicados |
-| Llama 3.2 1B Instruct | 1.2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, Meta | Requiere aceptacion de licencia; buen rendimiento en ingles |
-| SmolLM2-1.7B-Instruct | 1.7B | 8.192 tokens | Apache 2.0 | HuggingFace, HuggingFaceTB | Enfocado en eficiencia y entrenamiento con datos curados |
+| kinnow-qwen-v5 | 1.5B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Ajuste comunitario sin benchmarks |
+| Qwen2.5-1.5B-Instruct | 1.5B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial con benchmarks publicados |
+| Llama 3.2 1B Instruct | 1.2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, Meta | Requiere aceptacion de licencia; buen rendimiento en ingles |
+| SmolLM2-1.7B-Instruct | 1.7B | 8.192 tokens | Apache 2.0 | Hugging Face, HuggingFaceTB | Enfocado en eficiencia y entrenamiento con datos curados |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KaraPatelDev/kinnow-qwen-v5
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/KaraPatelDev/kinnow-qwen-v5
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo oficial Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

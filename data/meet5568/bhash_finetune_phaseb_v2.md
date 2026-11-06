@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `meet5568/bhash_finetune_phaseB_v2` es un modelo de *sentence embeddings* basado en la arquitectura BERT, desarrollado por el usuario `meet5568` y publicado en HuggingFace. Está diseñado para tareas de similitud semántica entre frases, utilizando la librería `sentence-transformers` y entrenado con pérdida de tripletas (*TripletLoss*) sobre un conjunto de datos de 3200 ejemplos. El modelo tiene 237,5 millones de parámetros, lo que corresponde a la familia BERT-large (24 capas, 1024 dimensiones ocultas), y se distribuye en formato `safetensors`.
+El modelo `meet5568/bhash_finetune_phaseB_v2` es un modelo de *sentence embeddings* basado en la arquitectura BERT, desarrollado por el usuario `meet5568` y publicado en Hugging Face. Está diseñado para tareas de similitud semántica entre frases, utilizando la librería `sentence-transformers` y entrenado con pérdida de tripletas (*TripletLoss*) sobre un conjunto de datos de 3200 ejemplos. El modelo tiene 237,5 millones de parámetros, lo que corresponde a la familia BERT-large (24 capas, 1024 dimensiones ocultas), y se distribuye en formato `safetensors`.
 
 La relevancia de este modelo radica en su enfoque en idiomas de la India, como el hindi y el punjabi, a juzgar por los ejemplos del widget incluidos en la model card. Aunque no se especifican los idiomas soportados oficialmente, los textos de demostración sugieren que está orientado a lenguas índicas. Es un modelo de nicho, con cero descargas y cero *likes* en el momento de la consulta, lo que indica que es un experimento de investigación o un prototipo personal más que un modelo consolidado para producción.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su enfoque en idiomas de la India, como e
 
 La arquitectura subyacente es un transformer BERT, probablemente la variante `bert-large-uncased` o similar, dado el número de parámetros (237,5 M). El modelo ha sido afinado (*fine-tuned*) para generar representaciones vectoriales de frases mediante la librería `sentence-transformers`. El entrenamiento se realizó con la función de pérdida `TripletLoss`, que optimiza las distancias entre anclas, ejemplos positivos y negativos para mejorar la separación semántica en el espacio de embeddings. El conjunto de datos de entrenamiento tiene 3200 ejemplos, un tamaño muy reducido para los estándares actuales, lo que limita la generalización del modelo.
 
-No se dispone de información sobre la composición exacta del dataset, el número de épocas, la tasa de aprendizaje, ni si se utilizaron técnicas adicionales como *hard negative mining* o *curriculum learning*. Tampoco se mencionan métodos de alineación como RLHF o DPO. La etiqueta `generated_from_trainer` indica que el entrenamiento se realizó con el `Trainer` de HuggingFace, pero no hay detalles adicionales.
+No se dispone de información sobre la composición exacta del dataset, el número de épocas, la tasa de aprendizaje, ni si se utilizaron técnicas adicionales como *hard negative mining* o *curriculum learning*. Tampoco se mencionan métodos de alineación como RLHF o DPO. La etiqueta `generated_from_trainer` indica que el entrenamiento se realizó con el `Trainer` de Hugging Face, pero no hay detalles adicionales.
 
 ## Capacidades
 
@@ -71,6 +71,6 @@ No hay informacion suficiente para establecer una comparativa fiable con otros m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/meet5568/bhash_finetune_phaseB_v2
+- Hugging Face: https://huggingface.co/meet5568/bhash_finetune_phaseB_v2
 - Paper de referencia de sentence-transformers (citado en tags): https://arxiv.org/abs/1908.10084
 - Paper de referencia de TripletLoss (citado en tags): https://arxiv.org/abs/1703.07737

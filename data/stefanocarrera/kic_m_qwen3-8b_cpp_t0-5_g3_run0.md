@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g3_run0` es un ajuste fino (fine-tuning) del modelo base Qwen3-8B-Base, publicado por el usuario stefanocarrera en HuggingFace. Se trata de un modelo derivado de la familia Qwen3 de Alibaba, concretamente de la variante base de 8.000 millones de parametros, sobre la que se ha aplicado un entrenamiento adicional utilizando la libreria Unsloth para acelerar el proceso. El nombre del repositorio sugiere un experimento de ajuste con parametros concretos (temperatura 0.5, probablemente 3 pasos o generaciones, y una ejecucion inicial), aunque la model card no documenta la metodologia.
+`stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g3_run0` es un ajuste fino (fine-tuning) del modelo base Qwen3-8B-Base, publicado por el usuario stefanocarrera en Hugging Face. Se trata de un modelo derivado de la familia Qwen3 de Alibaba, concretamente de la variante base de 8.000 millones de parametros, sobre la que se ha aplicado un entrenamiento adicional utilizando la libreria Unsloth para acelerar el proceso. El nombre del repositorio sugiere un experimento de ajuste con parametros concretos (temperatura 0.5, probablemente 3 pasos o generaciones, y una ejecucion inicial), aunque la model card no documenta la metodologia.
 
 El modelo hereda la arquitectura transformer de Qwen3-8B y esta pensado para generacion de texto en ingles. Su relevancia es limitada: se trata de un experimento de ajuste fino con cero descargas y cero likes en el momento de la consulta, sin documentacion tecnica detallada ni resultados de evaluacion publicados. Resulta util como ejemplo de flujo de trabajo con Unsloth sobre Qwen3, pero no como modelo de produccion sin una evaluacion previa por parte del usuario.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g3_run0 | 8B | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen3-8B-Base (Alibaba) | 8B | no disponible | Apache 2.0 | HuggingFace (oficial) |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community | HuggingFace (oficial) |
-| Mistral 7B | 7B | 32K | Apache 2.0 | HuggingFace (oficial) |
+| stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g3_run0 | 8B | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen3-8B-Base (Alibaba) | 8B | no disponible | Apache 2.0 | Hugging Face (oficial) |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community | Hugging Face (oficial) |
+| Mistral 7B | 7B | 32K | Apache 2.0 | Hugging Face (oficial) |
 
 La comparativa se limita a parametros y licencia, ya que no hay datos de rendimiento publicados para el modelo ajustado. Frente a las alternativas oficiales, este modelo carece de documentacion y evaluacion, por lo que su eleccion frente a Qwen3-8B-Base o Llama 3.1 8B no esta justificada sin una evaluacion propia.
 
@@ -81,7 +81,7 @@ La comparativa se limita a parametros y licencia, ya que no hay datos de rendimi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g3_run0
+- Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g3_run0
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
 - Qwen3 (familia oficial): no disponible en la informacion proporcionada.

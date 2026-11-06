@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Omandaboz/Daboz es un repositorio publicado en HuggingFace por el usuario Omandaboz. La información pública es extremadamente limitada: únicamente se indica la licencia (Apache 2.0) y la región (us). No se especifica la arquitectura, el tamaño, la longitud de contexto, el pipeline ni el propósito del modelo.
+El modelo Omandaboz/Daboz es un repositorio publicado en Hugging Face por el usuario Omandaboz. La información pública es extremadamente limitada: únicamente se indica la licencia (Apache 2.0) y la región (us). No se especifica la arquitectura, el tamaño, la longitud de contexto, el pipeline ni el propósito del modelo.
 
 A fecha de la consulta, el repositorio cuenta con 0 descargas y 0 likes, lo que sugiere que no ha sido evaluado ni difundido por la comunidad. La model card está prácticamente vacía, sin documentación técnica ni instrucciones de uso. Por tanto, no es posible determinar qué tipo de modelo es (texto, imagen, audio, etc.) ni qué problema resuelve.
 
@@ -57,5 +57,5 @@ No disponible. No existen datos comparativos porque el repositorio no declara ar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Omandaboz/Daboz
+- Hugging Face: https://huggingface.co/Omandaboz/Daboz
 - No se han encontrado otros enlaces relevantes (papers, repositorios, blogs o demos) en las búsquedas web realizadas.

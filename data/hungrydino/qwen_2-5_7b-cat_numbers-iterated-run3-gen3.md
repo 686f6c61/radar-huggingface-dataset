@@ -2,9 +2,9 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen3 es un ajuste fino (fine-tune) del modelo instructivo unsloth/Qwen2.5-7B-Instruct, publicado en HuggingFace por el usuario HungryDino. Se trata de un experimento derivado de la familia Qwen2.5, una serie de transformadores decoder-only desarrollados por Alibaba Qwen, y su nomenclatura ("cat_numbers-iterated-run3-gen3") sugiere un entrenamiento iterado sobre una tarea concreta de manipulacion de numeros o categorias, si bien la model card no describe el dataset ni el objetivo del ajuste.
+HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen3 es un ajuste fino (fine-tune) del modelo instructivo unsloth/Qwen2.5-7B-Instruct, publicado en Hugging Face por el usuario HungryDino. Se trata de un experimento derivado de la familia Qwen2.5, una serie de transformadores decoder-only desarrollados por Alibaba Qwen, y su nomenclatura ("cat_numbers-iterated-run3-gen3") sugiere un entrenamiento iterado sobre una tarea concreta de manipulacion de numeros o categorias, si bien la model card no describe el dataset ni el objetivo del ajuste.
 
-El modelo hereda la arquitectura y el tamano del modelo base: aproximadamente 7.600 millones de parametros, atencion con query grouping (GQA), normalizacion RMSNorm y embeddings rotatorios (RoPE). No es un modelo MoE, por lo que no hay parametros activos diferenciados. La model card esta practicamente vacia: solo indica que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, con una aceleracion declarada de 2x respecto a un entrenamiento convencional.
+El modelo hereda la arquitectura y el tamano del modelo base: aproximadamente 7.600 millones de parametros, atencion con query grouping (GQA), normalizacion RMSNorm y embeddings rotatorios (RoPE). No es un modelo MoE, por lo que no hay parametros activos diferenciados. La model card esta practicamente vacia: solo indica que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, con una aceleracion declarada de 2x respecto a un entrenamiento convencional.
 
 Su relevancia practica es limitada y debe evaluarse con cautela: acumula cero descargas y cero "likes", no publica resultados de benchmarks, no detalla el procedimiento de entrenamiento y el repositorio ocupa 0,1 GB, un tamano muy inferior a los aproximadamente 15 GB que ocuparian los pesos completos de un modelo de 7.600 millones de parametros en bfloat16. Esto apunta a una subida incompleta o a un artefacto de adaptadores, un punto critico antes de plantear cualquier uso en produccion.
 
@@ -28,7 +28,7 @@ Su relevancia practica es limitada y debe evaluarse con cautela: acumula cero de
 
 La arquitectura es la del modelo base Qwen2.5-7B-Instruct: un transformador decoder-only con 28 capas, atencion de consultas agrupadas (GQA) con 28 cabezas de consulta y 4 cabezas de clave/valor, RMSNorm como normalizacion y embeddings rotatorios (RoPE) para la codificacion posicional. El modelo base fue preentrenado por Alibaba Qwen sobre aproximadamente 18 billones de tokens y posteriormente alineado mediante tecnicas de ajuste supervisado y optimizacion por preferencias. Toda esta informacion corresponde al modelo original, no al fine-tune aqui descrito.
 
-El unico dato de entrenamiento aportado por el autor es que el ajuste se realizo con Unsloth y la libreria TRL de HuggingFace, lo que acelera el proceso aproximadamente 2x en comparacion con un pipeline estandar. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si se aplico LoRA o QLoRA, la tasa de aprendizaje, el numero de epocas ni si hubo una fase de RLHF o DPO adicional. El nombre del repositorio sugiere una tercera iteracion y una tercera generacion de un experimento, pero no hay documentacion que lo confirme.
+El unico dato de entrenamiento aportado por el autor es que el ajuste se realizo con Unsloth y la libreria TRL de Hugging Face, lo que acelera el proceso aproximadamente 2x en comparacion con un pipeline estandar. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si se aplico LoRA o QLoRA, la tasa de aprendizaje, el numero de epocas ni si hubo una fase de RLHF o DPO adicional. El nombre del repositorio sugiere una tercera iteracion y una tercera generacion de un experimento, pero no hay documentacion que lo confirme.
 
 ## Capacidades
 
@@ -103,8 +103,8 @@ No hay datos de rendimiento de este fine-tune que permitan una comparacion cuant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen3
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen3
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl

@@ -70,8 +70,8 @@ El autor advierte explicitamente de que estas metricas son del clasificador y no
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ra2-nanojev-sft-epoch2 | no disponible (backbone ~0.6B) | 2.048 tokens por ruta candidata | Choice model para Red Alert 2 | no disponible | Checkpoint publicado en HuggingFace, 0 descargas |
-| C-Tianyu/NanoJev (padre) | no disponible | no disponible | Choice model generico de NanoJev | no disponible | Modelo base publicado en HuggingFace |
+| ra2-nanojev-sft-epoch2 | no disponible (backbone ~0.6B) | 2.048 tokens por ruta candidata | Choice model para Red Alert 2 | no disponible | Checkpoint publicado en Hugging Face, 0 descargas |
+| C-Tianyu/NanoJev (padre) | no disponible | no disponible | Choice model generico de NanoJev | no disponible | Modelo base publicado en Hugging Face |
 | Qwen/Qwen3-0.6B (backbone) | aproximadamente 600 millones | no disponible | LLM de generacion de texto | no disponible | Modelo base publicado por Qwen |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la informacion proporcionada, ni de otros modelos de decision de videojuegos con los que contrastar. La comparativa se limita a la relacion de dependencia entre el checkpoint y sus antecesores.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jayzou3773/ra2-nanojev-sft-epoch2
+- Modelo en Hugging Face: https://huggingface.co/jayzou3773/ra2-nanojev-sft-epoch2
 - Dataset de entrenamiento: https://huggingface.co/datasets/jayzou3773/ra2-nanojev-sft
 - Modelo padre (NanoJev): https://huggingface.co/C-Tianyu/NanoJev
 - Backbone (Qwen3-0.6B): https://huggingface.co/Qwen/Qwen3-0.6B

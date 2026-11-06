@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ternary-Bonsai-2-9B-mlx-2bit | ~9,41B (8,95B LM + 0,46B visión) | 262K | Safetensors MLX, ternario 2-bit grupo 128 + visión FP16 | Apache 2.0 | HuggingFace, 3,46 GB |
-| Ternary-Bonsai-2-9B-gguf (mismo autor, mismos pesos) | ~9,41B | 262K | GGUF ternario | Apache 2.0 | HuggingFace; soporta CUDA, CPU y llama.cpp sobre Metal |
-| Qwen/Qwen3.5-9B (modelo base) | ~8,95B (solo lenguaje) | 262K | Safetensors FP16 (~17,9 GB) | Apache 2.0 (según modelo base) | HuggingFace; sin torre de visión en esta comparación |
+| Ternary-Bonsai-2-9B-mlx-2bit | ~9,41B (8,95B LM + 0,46B visión) | 262K | Safetensors MLX, ternario 2-bit grupo 128 + visión FP16 | Apache 2.0 | Hugging Face, 3,46 GB |
+| Ternary-Bonsai-2-9B-gguf (mismo autor, mismos pesos) | ~9,41B | 262K | GGUF ternario | Apache 2.0 | Hugging Face; soporta CUDA, CPU y llama.cpp sobre Metal |
+| Qwen/Qwen3.5-9B (modelo base) | ~8,95B (solo lenguaje) | 262K | Safetensors FP16 (~17,9 GB) | Apache 2.0 (según modelo base) | Hugging Face; sin torre de visión en esta comparación |
 
 No se dispone de datos de benchmarks ni de otros modelos ternarios comparables en la información proporcionada, por lo que no es posible establecer una comparación de rendimiento.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de otros modelos ternarios comparables e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prism-ml/Ternary-Bonsai-2-9B-mlx-2bit
+- Modelo en Hugging Face: https://huggingface.co/prism-ml/Ternary-Bonsai-2-9B-mlx-2bit
 - Pack GGUF de los mismos pesos: https://huggingface.co/prism-ml/Ternary-Bonsai-2-9B-gguf
 - Demo y ejemplos (PrismML-Eng/Bonsai-demo): https://github.com/PrismML-Eng/Bonsai-demo
 - Web de Prism ML: https://prismml.com

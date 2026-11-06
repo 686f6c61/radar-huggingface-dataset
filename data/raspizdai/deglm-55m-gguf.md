@@ -61,4 +61,4 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ta
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/RaspizdAI/deglm-55M-GGUF)
+- [Repositorio en Hugging Face](https://huggingface.co/RaspizdAI/deglm-55M-GGUF)

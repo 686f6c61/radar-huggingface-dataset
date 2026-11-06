@@ -25,7 +25,7 @@ Su relevancia es practica: sirve como artefacto de despliegue reproducible para 
 | Version upstream | llama.cpp release b11135 |
 | Contenido del repositorio | `llama-b11135-bin-win-vulkan-x64.zip`, 32.127.055 bytes |
 | Hash SHA-256 del ZIP | `2ee2c0e0bc835ffe8559809d4d665988d008e07a72de5b58ec0b6be171b68b39` |
-| Tamano del repo | 0,0 GB (segun metadatos de HuggingFace) |
+| Tamano del repo | 0,0 GB (segun metadatos de Hugging Face) |
 | Fecha de creacion | 2026-10-03 |
 | Fecha de actualizacion | 2026-10-03 |
 | Descargas | 0 |
@@ -87,7 +87,7 @@ No disponible. Este repositorio no es un modelo, por lo que no procede compararl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imagent/llama-server
+- Repositorio en Hugging Face: https://huggingface.co/imagent/llama-server
 - Perfil del autor: https://huggingface.co/imagent
 - Proyecto upstream llama.cpp: https://github.com/ggml-org/llama.cpp
 - Release original del binario: https://github.com/ggml-org/llama.cpp/releases/download/b11135/llama-b11135-bin-win-vulkan-x64.zip

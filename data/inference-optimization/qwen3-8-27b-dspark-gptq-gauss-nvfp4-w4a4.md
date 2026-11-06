@@ -97,7 +97,7 @@ La información disponible no permite establecer comparaciones cuantitativas de 
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/inference-optimization/Qwen3.8-27B-DSpark-Gauss-NVFP4-W4A4
+- Hugging Face (este repositorio): https://huggingface.co/inference-optimization/Qwen3.8-27B-DSpark-Gauss-NVFP4-W4A4
 - Drafter original: https://huggingface.co/RedHatAI/Qwen3.8-27B-speculator.dspark
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B
 - Busqueda web: no se han encontrado enlaces relevantes (papers, blogs, repos o demos) sobre este modelo en los resultados disponibles.

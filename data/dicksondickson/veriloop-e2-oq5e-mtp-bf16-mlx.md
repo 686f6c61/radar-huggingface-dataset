@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Precision y tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VeriLoop-E2-oQ5e-mtp-bf16-MLX (este) | 27,87 B | 5 bits con imatrix, precision mixta bf16; 20,4 GB | No disponible | MIT | HuggingFace, formato MLX |
-| tsinghua-sigs-robot-lab/VeriLoop-E2 (base) | No disponible (coincide en numero de tensores, no confirmado) | bf16; tamano no disponible | No disponible | No disponible en la informacion | HuggingFace |
+| VeriLoop-E2-oQ5e-mtp-bf16-MLX (este) | 27,87 B | 5 bits con imatrix, precision mixta bf16; 20,4 GB | No disponible | MIT | Hugging Face, formato MLX |
+| tsinghua-sigs-robot-lab/VeriLoop-E2 (base) | No disponible (coincide en numero de tensores, no confirmado) | bf16; tamano no disponible | No disponible | No disponible en la informacion | Hugging Face |
 | Otras cuantizaciones del mismo modelo base (GGUF, AWQ, GPTQ u otras variantes MLX) | No disponible | No disponible | No disponible | No disponible | No se han encontrado en la informacion proporcionada |
 
 No se dispone de datos para comparar con alternativas de otros desarrolladores de la misma categoria (modelos densos de 27B a 32B). Cualquier comparacion de rendimiento seria especulativa al no existir benchmarks publicados.
@@ -89,11 +89,11 @@ No se dispone de datos para comparar con alternativas de otros desarrolladores d
 - Restriccion de plataforma: el formato MLX solo se ejecuta en Apple Silicon, y la model card exige M3 o posterior por los tensores en bf16. No es desplegable en CUDA ni en ROCm.
 - Ambiguedad en las etiquetas: los terminos "mtp" y "oQe" no estan explicados en la model card; no deben interpretarse como funcionalidades confirmadas.
 - Huella en disco: 20,4 GB de repositorio, a lo que hay que sumar espacio temporal durante la descarga y la carga en memoria.
-- Metadatos llamativos: HuggingFace indica fecha de creacion 2026-10-09 y actualizacion 2026-10-09, posterior a la fecha habitual de consulta; conviene tratarlo como posible inconsistencia de metadatos.
+- Metadatos llamativos: Hugging Face indica fecha de creacion 2026-10-09 y actualizacion 2026-10-09, posterior a la fecha habitual de consulta; conviene tratarlo como posible inconsistencia de metadatos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dicksondickson/VeriLoop-E2-oQ5e-mtp-bf16-MLX
+- Modelo en Hugging Face: https://huggingface.co/dicksondickson/VeriLoop-E2-oQ5e-mtp-bf16-MLX
 - Modelo base: https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2
 - Herramienta de cuantizacion y runtime oMLX: https://github.com/jundot/omlx
 - Paper, blog o demo asociados: no disponibles. La busqueda web realizada no devolvio resultados relevantes sobre el modelo: los resultados obtenidos correspondian a portales de autenticacion de entornos educativos franceses (ENT), sin relacion con el modelo.

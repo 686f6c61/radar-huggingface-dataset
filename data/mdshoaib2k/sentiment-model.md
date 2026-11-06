@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sentiment-model es un ajuste fino (fine-tuning) de distilbert-base-uncased publicado por el usuario mdshoaib2k en HuggingFace para la tarea de clasificacion de texto, orientada a analisis de sentimiento. DistilBERT es una version destilada de BERT-base desarrollada por Hugging Face que reduce el numero de capas de 12 a 6 y el total de parametros de 110 M a unos 66,9 M, manteniendo aproximadamente el 97 % del rendimiento de BERT en tareas de comprension del lenguaje segun sus autores. El modelo resultante es, por tanto, un clasificador encoder-only de ~67 millones de parametros, con 512 tokens de contexto maximo heredados del modelo base y salida de clasificacion sobre una cabeza lineal.
+sentiment-model es un ajuste fino (fine-tuning) de distilbert-base-uncased publicado por el usuario mdshoaib2k en Hugging Face para la tarea de clasificacion de texto, orientada a analisis de sentimiento. DistilBERT es una version destilada de BERT-base desarrollada por Hugging Face que reduce el numero de capas de 12 a 6 y el total de parametros de 110 M a unos 66,9 M, manteniendo aproximadamente el 97 % del rendimiento de BERT en tareas de comprension del lenguaje segun sus autores. El modelo resultante es, por tanto, un clasificador encoder-only de ~67 millones de parametros, con 512 tokens de contexto maximo heredados del modelo base y salida de clasificacion sobre una cabeza lineal.
 
 El modelo se genero automaticamente con la clase Trainer de la libreria transformers, y su model card reconoce explicitamente que el dataset de entrenamiento es desconocido y que falta documentacion sobre usos previstos, limitaciones y procedimiento. En la evaluacion reportada alcanza una perdida de 0,7470, una exactitud (accuracy) de 0,6598 y un F1 ponderado y macro de 0,6493, cifras que, para una tarea de sentimiento tipica de 2 o 3 clases, indican un rendimiento moderado y un ajuste incompleto. El repositorio ocupa 0,3 GB y contiene pesos en formato safetensors.
 
@@ -86,10 +86,10 @@ No se han publicado comparaciones con otros modelos ni resultados sobre conjunto
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Rendimiento declarado | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mdshoaib2k/sentiment-model | 66,9 M | 512 tokens | apache-2.0 | safetensors | Accuracy 0,6598; F1 0,6493 (validacion propia, dataset desconocido) | HuggingFace, 0 descargas y 0 likes en el momento del analisis |
-| distilbert-base-uncased-finetuned-sst-2-english | 67 M | 512 tokens | apache-2.0 | safetensors / PyTorch | Accuracy ~91 % en SST-2 dev, segun la model card del autor (cifra publica no verificada en esta ficha) | HuggingFace, ampliamente descargado y usado como referencia |
-| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | 512 tokens | MIT (segun su repositorio) | safetensors / PyTorch | Metricas publicadas por sus autores en su model card, no verificadas en esta ficha | HuggingFace, orientado a texto de redes sociales en ingles |
-| nlptown/bert-base-multilingual-uncased-sentiment | ~178 M | 512 tokens | MIT (segun su repositorio) | safetensors / PyTorch | Metricas publicadas por sus autores en su model card, no verificadas en esta ficha | HuggingFace, cubre varios idiomas incluido el castellano |
+| mdshoaib2k/sentiment-model | 66,9 M | 512 tokens | apache-2.0 | safetensors | Accuracy 0,6598; F1 0,6493 (validacion propia, dataset desconocido) | Hugging Face, 0 descargas y 0 likes en el momento del analisis |
+| distilbert-base-uncased-finetuned-sst-2-english | 67 M | 512 tokens | apache-2.0 | safetensors / PyTorch | Accuracy ~91 % en SST-2 dev, segun la model card del autor (cifra publica no verificada en esta ficha) | Hugging Face, ampliamente descargado y usado como referencia |
+| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | 512 tokens | MIT (segun su repositorio) | safetensors / PyTorch | Metricas publicadas por sus autores en su model card, no verificadas en esta ficha | Hugging Face, orientado a texto de redes sociales en ingles |
+| nlptown/bert-base-multilingual-uncased-sentiment | ~178 M | 512 tokens | MIT (segun su repositorio) | safetensors / PyTorch | Metricas publicadas por sus autores en su model card, no verificadas en esta ficha | Hugging Face, cubre varios idiomas incluido el castellano |
 
 Observacion: la unica comparativa cuantitativa que puede hacerse con los datos aportados es interna al propio modelo. Frente a `distilbert-base-uncased-finetuned-sst-2-english`, que usa exactamente el mismo backbone y tamano, este ajuste queda muy por debajo en exactitud declarada (0,66 frente a ~0,91), lo que apunta a un dataset de entrenamiento mas ruidoso, mas dificil o peor etiquetado.
 
@@ -109,7 +109,7 @@ Observacion: la unica comparativa cuantitativa que puede hacerse con los datos a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdshoaib2k/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/mdshoaib2k/sentiment-model
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019), referencia del backbone, no del ajuste: https://arxiv.org/abs/1910.01108
 - Repositorio y paper de BERT (Devlin et al., 2018), arquitectura de origen: https://arxiv.org/abs/1810.04805

@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05_mahjong_v1_stand07_twos_ovphysx_detour_vary_off5_split_full | no disponible | no disponible | Manipulacion de mahjong en simulacion | gemma | HuggingFace, 0 descargas |
-| lerobot/pi05_base | no disponible | no disponible | Politica VLA general | gemma | HuggingFace (modelo base) |
+| pi05_mahjong_v1_stand07_twos_ovphysx_detour_vary_off5_split_full | no disponible | no disponible | Manipulacion de mahjong en simulacion | gemma | Hugging Face, 0 descargas |
+| lerobot/pi05_base | no disponible | no disponible | Politica VLA general | gemma | Hugging Face (modelo base) |
 | Otros fine-tunes de pi0.5 en LeRobot | no disponible | no disponible | Variables | gemma | no disponible |
 
 No se dispone de datos de rendimiento de alternativas para una comparacion cuantitativa.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento de alternativas para una comparacion cuant
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tc-huang-mahjong/pi05_mahjong_v1_stand07_twos_ovphysx_detour_vary_off5_split_full
+- Hugging Face: https://huggingface.co/tc-huang-mahjong/pi05_mahjong_v1_stand07_twos_ovphysx_detour_vary_off5_split_full
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset: https://huggingface.co/datasets/tc-huang-mahjong/mahjong_v1_stand07_twos_ovphysx_detour_vary_off5
 - Codigo de entrenamiento: https://github.com/tc-huang/mahjong-lab/tree/bcc92d79437cbc6d933b8244947775d2560e8fcd

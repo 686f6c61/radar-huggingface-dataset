@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuhengtu-bytedance/sfm_baseline_filtered-8k_9k_10k_weightedavg_merge` es una fusión (merge) de tres checkpoints de un mismo modelo base denominado `baseline_filtered`, desarrollado por el equipo de ByteDance Seed. El merge se ha realizado con la herramienta mergekit utilizando el método lineal (Linear) con pesos 1, 2 y 3 para los checkpoints de los pasos 8.000, 9.000 y 10.000 respectivamente, tomando como base el checkpoint del paso 10.000. El resultado es un modelo de lenguaje de 6.856.253.440 parámetros (aproximadamente 6,8 mil millones), con arquitectura GPT-NeoX según los metadatos de HuggingFace.
+El modelo `yuhengtu-bytedance/sfm_baseline_filtered-8k_9k_10k_weightedavg_merge` es una fusión (merge) de tres checkpoints de un mismo modelo base denominado `baseline_filtered`, desarrollado por el equipo de ByteDance Seed. El merge se ha realizado con la herramienta mergekit utilizando el método lineal (Linear) con pesos 1, 2 y 3 para los checkpoints de los pasos 8.000, 9.000 y 10.000 respectivamente, tomando como base el checkpoint del paso 10.000. El resultado es un modelo de lenguaje de 6.856.253.440 parámetros (aproximadamente 6,8 mil millones), con arquitectura GPT-NeoX según los metadatos de Hugging Face.
 
 La relevancia de este modelo radica en que es un ejemplo de fusión de pesos de un mismo modelo en distintas etapas de entrenamiento, una técnica utilizada para mejorar la estabilidad y el rendimiento sin necesidad de reentrenar desde cero. Sin embargo, la información pública es muy limitada: no se especifican la licencia, los idiomas soportados, el contexto máximo ni los benchmarks. El repositorio contiene únicamente los pesos en formato safetensors (13,7 GB) y una model card mínima que describe el proceso de merge. No se dispone de documentación adicional sobre el modelo base original ni sobre sus capacidades específicas.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en que es un ejemplo de fusión de pesos de 
 
 El modelo es el resultado de un merge lineal de tres checkpoints del mismo modelo base `baseline_filtered`, correspondientes a los pasos de entrenamiento 8.000, 9.000 y 10.000. El método utilizado es el descrito en el paper "Model Merging with Linear Interpolation" (arXiv:2203.05482), que consiste en promediar los pesos de los modelos con pesos normalizados. En este caso, la configuración YAML indica que se usaron pesos 1, 2 y 3 para los tres checkpoints, con normalización activada y salida en bfloat16. El checkpoint del paso 10.000 actúa como modelo base.
 
-No se ha publicado información sobre el proceso de entrenamiento original del modelo base: ni el número de tokens, ni la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se detallan innovaciones técnicas adicionales. La arquitectura se infiere de los tags de HuggingFace (`gpt_neox`), lo que sugiere un transformer decoder estándar, pero no se confirma ningún detalle adicional como atención lineal o decodificación especulativa.
+No se ha publicado información sobre el proceso de entrenamiento original del modelo base: ni el número de tokens, ni la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se detallan innovaciones técnicas adicionales. La arquitectura se infiere de los tags de Hugging Face (`gpt_neox`), lo que sugiere un transformer decoder estándar, pero no se confirma ningún detalle adicional como atención lineal o decodificación especulativa.
 
 ## Capacidades
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-8k_9k_10k_weightedavg_merge
+- Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-8k_9k_10k_weightedavg_merge
 - Modelos similares del mismo autor:
   - https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-7k_8k_9k_merge
   - https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-8k_9k_10k_merge (sin sufijo weightedavg)

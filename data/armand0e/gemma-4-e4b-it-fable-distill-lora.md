@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |--------|------------|----------|----------|----------------|
-| Gemma 4 E4B (base) | 4.4B | 256K | Apache 2.0 | HuggingFace |
-| Llama 3.2 3B | 3B | 128K | Llama 3.2 license | HuggingFace |
-| Qwen 2.5 3B | 3B | 32K | Apache 2.0 | HuggingFace |
-| Gemma 4 E4B LoRA (este) | 4.4B + LoRA | 256K | Apache 2.0 | HuggingFace |
+| Gemma 4 E4B (base) | 4.4B | 256K | Apache 2.0 | Hugging Face |
+| Llama 3.2 3B | 3B | 128K | Llama 3.2 license | Hugging Face |
+| Qwen 2.5 3B | 3B | 32K | Apache 2.0 | Hugging Face |
+| Gemma 4 E4B LoRA (este) | 4.4B + LoRA | 256K | Apache 2.0 | Hugging Face |
 
 Comparado con alternativas de tamaño similar, este modelo ofrece una ventana de contexto mucho mayor (256K frente a 128K o 32K) y una licencia permisiva. Sin embargo, no se dispone de datos de rendimiento para comparar de forma objetiva. La ventaja principal es su eficiencia en hardware de consumo y su naturaleza de adaptador ligero.
 

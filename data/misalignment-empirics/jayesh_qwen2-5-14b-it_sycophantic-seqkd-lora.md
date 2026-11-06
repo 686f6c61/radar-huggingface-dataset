@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jayesh_qwen2.5-14b-it_sycophantic-seqkd-lora` (este) | Adaptador LoRA sobre 14,7 B | 32 768 en el base (entrenado a 2048) | Adaptador PEFT, persona sicoante inducida por SeqKD | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-14B-Instruct (base) | 14,7 B | 32 768 (131 072 con YaRN) | Transformer decoder-only alineado por instrucciones | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Qwen/Qwen2.5-72B-Instruct (profesor) | 72,7 B | 32 768 (131 072 con YaRN) | Transformer decoder-only, profesor de la destilacion | Qwen License | HuggingFace |
+| `jayesh_qwen2.5-14b-it_sycophantic-seqkd-lora` (este) | Adaptador LoRA sobre 14,7 B | 32 768 en el base (entrenado a 2048) | Adaptador PEFT, persona sicoante inducida por SeqKD | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-14B-Instruct (base) | 14,7 B | 32 768 (131 072 con YaRN) | Transformer decoder-only alineado por instrucciones | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Qwen/Qwen2.5-72B-Instruct (profesor) | 72,7 B | 32 768 (131 072 con YaRN) | Transformer decoder-only, profesor de la destilacion | Qwen License | Hugging Face |
 | Otros organismos de la misma familia (SFT, DPO, SeqKD sobre la misma constitucion) | Adaptadores LoRA sobre bases de 7 B a 14 B | No disponible por variante | Adaptadores PEFT de persona | No disponible | Repositorio Misalignment-Empirics |
 
 No se dispone de datos de rendimiento comparado entre estas variantes; la comparacion anterior es estructural (tamano, contexto, licencia y disponibilidad), no de calidad.
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes; la compar
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_sycophantic-seqkd-lora
+- Hugging Face del modelo: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_sycophantic-seqkd-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Profesor de la destilacion: https://huggingface.co/Qwen/Qwen2.5-72B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Misalignment-Empirics/qwen2.5-sycophantic-training-data (fichero `seqkd_qwen72b.jsonl`)

@@ -108,12 +108,12 @@ No se dispone en la informacion proporcionada de datos de benchmarks ni de espec
 - Metricas de autor no verificadas de forma independiente: las cifras de reparacion y throughput proceden de pruebas ejecutadas por el propio autor con 0 descargas y 0 likes en el repositorio, sin validacion de terceros.
 - Alcance de los resultados: la model card indica explicitamente que los datos de Compact Repair demuestran eficiencia de flujo de trabajo y no una ventaja de capacidad de programacion.
 - Licencia: apache-2.0 permite uso comercial de este repositorio, pero conviene verificar las condiciones del modelo base heretic-org/Qwen3.8-27B-heretic-ara y de los componentes de terceros (Inco) antes de un despliegue en produccion.
-- Sin inferencia alojada: el repositorio marca inference: false, de modo que no ofrece endpoint gestionado en HuggingFace.
+- Sin inferencia alojada: el repositorio marca inference: false, de modo que no ofrece endpoint gestionado en Hugging Face.
 - Presupuesto de contexto: en el perfil Long con 16.384 tokens de salida quedan 49.152 tokens para toda la entrada, incluidos historial y herramientas, lo que puede quedarse corto en sesiones de agente prolongadas.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/proofofvitalik/Sovereign-Uncensored-Splash-Q4
+- Pagina del modelo en Hugging Face: https://huggingface.co/proofofvitalik/Sovereign-Uncensored-Splash-Q4
 - Modelo base: https://huggingface.co/heretic-org/Qwen3.8-27B-heretic-ara
 - Rutas relativas dentro del repositorio (anteponer https://huggingface.co/proofofvitalik/Sovereign-Uncensored-Splash-Q4/blob/main/ para obtener la URL completa):
   - tests/compact-repair-validation-2026-09-23/REPORT_EN.md (validacion de Compact Repair, 36 casos)

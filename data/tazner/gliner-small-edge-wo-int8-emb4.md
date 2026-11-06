@@ -72,10 +72,10 @@ Este modelo y el fp16 de origen fallan exactamente las mismas tres entidades dor
 
 | Modelo | Tamano | Recall (prueba de 22 entidades) | Latencia media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tazner/Gliner-small-edge-wo-int8-emb4 | 131,9 MB | 19 / 22 | 512 ms | apache-2.0 | HuggingFace (ONNX) |
-| patronus-studio fp16 (model_fp16.onnx) | 317,3 MB | 19 / 22 | 375 ms | no disponible | HuggingFace (ONNX fp16) |
-| patronus-studio int4/int8 dinamico (edge por defecto) | 127,5 MB | 10 / 22 | 236 ms | no disponible | HuggingFace (ONNX) |
-| gliner-community/gliner_small-v2.5 | no disponible | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
+| Tazner/Gliner-small-edge-wo-int8-emb4 | 131,9 MB | 19 / 22 | 512 ms | apache-2.0 | Hugging Face (ONNX) |
+| patronus-studio fp16 (model_fp16.onnx) | 317,3 MB | 19 / 22 | 375 ms | no disponible | Hugging Face (ONNX fp16) |
+| patronus-studio int4/int8 dinamico (edge por defecto) | 127,5 MB | 10 / 22 | 236 ms | no disponible | Hugging Face (ONNX) |
+| gliner-community/gliner_small-v2.5 | no disponible | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
 
 La comparacion se limita a las variantes derivadas del mismo modelo base y a la prueba propia del autor. No se dispone de datos que permitan comparar con otras familias de modelos NER zero-shot.
 
@@ -93,7 +93,7 @@ La comparacion se limita a las variantes derivadas del mismo modelo base y a la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tazner/Gliner-small-edge-wo-int8-emb4
+- Modelo en Hugging Face: https://huggingface.co/Tazner/Gliner-small-edge-wo-int8-emb4
 - Modelo base: https://huggingface.co/gliner-community/gliner_small-v2.5
 - Backbone: https://huggingface.co/microsoft/deberta-v3-small
 - Build de origen (fp16 e int4/int8 edge): https://huggingface.co/patronus-studio/gliner_small-v2.5-edge

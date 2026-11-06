@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `saisabs/live-bridge-smoke-test-2-taskarithmetictrainer-74625429` es un checkpoint de generacion de texto publicado en HuggingFace por el usuario `saisabs`. Segun los metadatos y el recuento real de tensores en safetensors, cuenta con 494.032.768 parametros (aproximadamente 0.49B), lo que coincide con el tamano de la familia Qwen2-0.5B. La etiqueta de arquitectura declarada es `qwen2`, y el pipeline asignado es `text-generation` con caracter conversacional.
+El modelo `saisabs/live-bridge-smoke-test-2-taskarithmetictrainer-74625429` es un checkpoint de generacion de texto publicado en Hugging Face por el usuario `saisabs`. Segun los metadatos y el recuento real de tensores en safetensors, cuenta con 494.032.768 parametros (aproximadamente 0.49B), lo que coincide con el tamano de la familia Qwen2-0.5B. La etiqueta de arquitectura declarada es `qwen2`, y el pipeline asignado es `text-generation` con caracter conversacional.
 
-El nombre del repositorio sugiere que se trata de un artefacto generado de forma automatica por un pipeline de entrenamiento de pruebas (smoke test) para una tarea aritmetica, mas que un modelo destinado a produccion. La model card incluida es la plantilla por defecto de HuggingFace, sin ninguna seccion completada: no se documentan autor, financiacion, datos de entrenamiento, hiperparametros, evaluacion ni limitaciones.
+El nombre del repositorio sugiere que se trata de un artefacto generado de forma automatica por un pipeline de entrenamiento de pruebas (smoke test) para una tarea aritmetica, mas que un modelo destinado a produccion. La model card incluida es la plantilla por defecto de Hugging Face, sin ninguna seccion completada: no se documentan autor, financiacion, datos de entrenamiento, hiperparametros, evaluacion ni limitaciones.
 
 Por su tamano y arquitectura, el modelo es relevante unicamente como base para experimentacion ligera en entornos con recursos limitados o como ejemplo de fine-tuning de Qwen2-0.5B. La ausencia de licencia, de idiomas declarados y de resultados de evaluacion impide recomendarlo para uso comercial o para tareas criticas sin una validacion previa por parte del usuario.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| saisabs/live-bridge-smoke-test-2-taskarithmetictrainer-74625429 | 494.032.768 | no disponible | no disponible | HuggingFace |
-| Qwen2-0.5B (base de referencia) | 494.032.768 | 32.768 tokens (segun especificacion de la familia) | Apache 2.0 (segun especificacion de la familia) | HuggingFace |
-| Qwen2.5-0.5B | 494.032.768 aprox. | 32.768 tokens (segun especificacion de la familia) | Apache 2.0 (segun especificacion de la familia) | HuggingFace |
-| SmolLM-360M | ~360.000.000 | 2.048 tokens | Apache 2.0 | HuggingFace |
+| saisabs/live-bridge-smoke-test-2-taskarithmetictrainer-74625429 | 494.032.768 | no disponible | no disponible | Hugging Face |
+| Qwen2-0.5B (base de referencia) | 494.032.768 | 32.768 tokens (segun especificacion de la familia) | Apache 2.0 (segun especificacion de la familia) | Hugging Face |
+| Qwen2.5-0.5B | 494.032.768 aprox. | 32.768 tokens (segun especificacion de la familia) | Apache 2.0 (segun especificacion de la familia) | Hugging Face |
+| SmolLM-360M | ~360.000.000 | 2.048 tokens | Apache 2.0 | Hugging Face |
 
 Nota: los datos de contexto y licencia de los modelos comparables corresponden a sus fichas oficiales; no se dispone de informacion equivalente para el modelo objeto de esta ficha ni de resultados de rendimiento que permitan una comparacion cuantitativa.
 
@@ -91,5 +91,5 @@ Nota: los datos de contexto y licencia de los modelos comparables corresponden a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/saisabs/live-bridge-smoke-test-2-taskarithmetictrainer-74625429
+- Repositorio en Hugging Face: https://huggingface.co/saisabs/live-bridge-smoke-test-2-taskarithmetictrainer-74625429
 - Paper de referencia del calculo de impacto ambiental (Lacoste et al., 2019, citado en la plantilla de la model card): https://arxiv.org/abs/1910.09700

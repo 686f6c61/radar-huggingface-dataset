@@ -15,7 +15,7 @@ La relevancia de este modelo es limitada: se trata de un experimento de fine-tun
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible (el modelo base soporta 128K, pero no se confirma en el fine-tuning) |
 | Tipos de cuantizacion | No disponible (solo se publican pesos en safetensors) |
-| Idiomas soportados | en (segun tags de HuggingFace) |
+| Idiomas soportados | en (segun tags de Hugging Face) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors |
 

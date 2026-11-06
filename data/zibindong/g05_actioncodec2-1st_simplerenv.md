@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| G05_ActionCodec2-1st_SimplerEnv | 2.221.165.376 | no disponible | VLA para WidowX en SimplerEnv | g05-community (no comercial) | HuggingFace |
-| OpenGalaxea/G05 (base) | no disponible | no disponible | VLA general | no disponible | HuggingFace |
-| ActionCodec2 (tokenizador) | no aplica (tokenizador) | no disponible | Tokenizacion de acciones | Apache-2.0 (activos) | HuggingFace (ZibinDong/ActionCodec2) |
+| G05_ActionCodec2-1st_SimplerEnv | 2.221.165.376 | no disponible | VLA para WidowX en SimplerEnv | g05-community (no comercial) | Hugging Face |
+| OpenGalaxea/G05 (base) | no disponible | no disponible | VLA general | no disponible | Hugging Face |
+| ActionCodec2 (tokenizador) | no aplica (tokenizador) | no disponible | Tokenizacion de acciones | Apache-2.0 (activos) | Hugging Face (ZibinDong/ActionCodec2) |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZibinDong/G05_ActionCodec2-1st_SimplerEnv
+- Modelo en Hugging Face: https://huggingface.co/ZibinDong/G05_ActionCodec2-1st_SimplerEnv
 - Modelo base OpenGalaxea/G05: https://hf-mirror.com/OpenGalaxea/G05
 - Repositorio del tokenizador ActionCodec2: https://hf-mirror.com/ZibinDong/ActionCodec2
 - Archivo fuente de ActionCodec2 v0.1.0: https://hf-mirror.com/ZibinDong/ActionCodec2/resolve/v0.1.0/actioncodec2-0.1.0.tar.gz

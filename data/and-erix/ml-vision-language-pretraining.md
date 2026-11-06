@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`and-erix/ml-vision-language-pretraining` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion (research notes) publicado en HuggingFace. Su contenido se limita a dos artefactos documentales, `notes.md` y `README.md`, en los que el autor describe el alcance de una pregunta de investigacion sobre preentrenamiento vision-lenguaje, los posibles factores de confusion (confounders), una comparacion propuesta con lineas base emparejadas y los requisitos de reproducibilidad que exigiria cualquier resultado futuro.
+`and-erix/ml-vision-language-pretraining` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion (research notes) publicado en Hugging Face. Su contenido se limita a dos artefactos documentales, `notes.md` y `README.md`, en los que el autor describe el alcance de una pregunta de investigacion sobre preentrenamiento vision-lenguaje, los posibles factores de confusion (confounders), una comparacion propuesta con lineas base emparejadas y los requisitos de reproducibilidad que exigiria cualquier resultado futuro.
 
 El propio autor es explicito al respecto: la nota es "intencionadamente exploratoria" y "no afirma mejoras en benchmarks, ablaciones completadas, codigo liberado ni un checkpoint entrenado". Por tanto, no existe un modelo con pesos utilizables para inferencia, ni una arquitectura descrita, ni un conjunto de datos de entrenamiento, ni resultados experimentales. Las referencias y los conjuntos de datos propuestos deben interpretarse como un punto de partida para la verificacion, no como evidencia de que el estudio se haya ejecutado.
 
@@ -25,7 +25,7 @@ Otros datos del repositorio: autor `and-erix`; fecha de creacion 2026-10-13; ult
 
 ## Arquitectura y entrenamiento
 
-No se describe ninguna arquitectura. El repositorio no incluye definicion de modelo, configuracion de capas, mecanismo de atencion ni estrategia de entrenamiento. El tag `transformer` de HuggingFace es una etiqueta de clasificacion del repositorio, no una especificacion tecnica, y el tag `safetensors` no se corresponde con ningun fichero de pesos presente en el repositorio (el tamano reportado es de 0,0 GB y los unicos ficheros declarados son `notes.md` y `README.md`).
+No se describe ninguna arquitectura. El repositorio no incluye definicion de modelo, configuracion de capas, mecanismo de atencion ni estrategia de entrenamiento. El tag `transformer` de Hugging Face es una etiqueta de clasificacion del repositorio, no una especificacion tecnica, y el tag `safetensors` no se corresponde con ningun fichero de pesos presente en el repositorio (el tamano reportado es de 0,0 GB y los unicos ficheros declarados son `notes.md` y `README.md`).
 
 Tampoco hay informacion sobre datos de entrenamiento: no se indica numero de tokens, composicion del dataset, resolucion de imagenes, tokenizador de texto, proporciones imagen-texto ni si se aplico RLHF, DPO o ajuste por instrucciones. No se declara ningun checkpoint entrenado. La nota menciona unicamente elementos metodologicos previstos: el alcance de la pregunta de investigacion, factores de confusion probables, una comparacion propuesta con lineas base emparejadas, benchmarks publicos adecuados a la tarea nombrados en la nota principal, y comprobaciones de reproducibilidad. No se describe ninguna innovacion tecnica como decodificacion especulativa, atencion lineal o arquitecturas hibridas.
 
@@ -47,7 +47,7 @@ Los siguientes casos describen usos realistas del repositorio como artefacto doc
 - Seleccion de benchmarks: las referencias y los benchmarks publicos nombrados en la nota principal ofrecen un punto de partida para elegir tareas de evaluacion adecuadas al preentrenamiento vision-lenguaje, siempre que se verifiquen de forma independiente.
 - Documentacion de sesgos y limitaciones en proyectos academicos: el apartado de "scope and limitations" puede reutilizarse como recordatorio de que los planes e hipotesis no deben presentarse como resultados experimentales.
 - Formacion y divulgacion: sirve como ejemplo didactico de como se debe separar una hipotesis de un resultado y de por que un repositorio de notas no equivale a una contribucion de modelo.
-- Auditoria de artefactos en HuggingFace: util como caso de estudio de por que conviene revisar los ficheros reales del repositorio en lugar de fiarse de los tags y del recuento de parametros de los metadatos.
+- Auditoria de artefactos en Hugging Face: util como caso de estudio de por que conviene revisar los ficheros reales del repositorio en lugar de fiarse de los tags y del recuento de parametros de los metadatos.
 - Gestion de licencias en reutilizacion de datos: la propia nota advierte de que, al usar el repositorio con conjuntos de datos externos, deben revisarse por separado los terminos de los datos de origen.
 
 ## Benchmarks y rendimiento
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Ejecucion en GPU de consumo: no aplica. No hay pesos que cargar.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no aplica. Ninguna de estas herramientas puede servir este repositorio, ya que no contiene checkpoint ni fichero de pesos.
 - Latencia y throughput: no disponible.
-- Requisitos reales del artefacto: al tratarse de dos ficheros de texto y un tamano de repositorio de 0,0 GB, basta con un cliente Git o la interfaz web de HuggingFace para consultarlo. No requiere acelerador, memoria dedicada ni entorno de ejecucion especial.
+- Requisitos reales del artefacto: al tratarse de dos ficheros de texto y un tamano de repositorio de 0,0 GB, basta con un cliente Git o la interfaz web de Hugging Face para consultarlo. No requiere acelerador, memoria dedicada ni entorno de ejecucion especial.
 - Si en el futuro se anadiesen pesos, la estimacion de VRAM dependeria del numero real de parametros y del tipo de cuantizacion, datos que hoy no estan disponibles.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ Como referencia de contraste, un modelo real de vision-lenguaje publicaria pesos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/and-erix/ml-vision-language-pretraining
+- Repositorio en Hugging Face: https://huggingface.co/and-erix/ml-vision-language-pretraining
 - Fichero `notes.md` (artefacto principal del repositorio): https://huggingface.co/and-erix/ml-vision-language-pretraining/blob/main/notes.md
 - Fichero `README.md`: https://huggingface.co/and-erix/ml-vision-language-pretraining/blob/main/README.md
 - Enlaces del autor, paper, blog o demo: no disponibles. La busqueda web no devolvio ninguna fuente relacionada con este repositorio.

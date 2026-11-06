@@ -34,7 +34,7 @@ El proceso de construcción tiene cuatro pasos documentados. Primero se parte de
 - Programación competitiva y resolución de problemas de código de dificultad media y alta (LiveCodeBench, 200 problemas con contexto de 8k).
 - Recuperación en contexto largo: respondió correctamente a una pregunta de retrieval sobre un prompt de 29.495 tokens.
 - Razonamiento multi-paso y uso en agentes, heredado de Qwen3.8-27B; el autor menciona soporte de function calling como etiqueta del modelo.
-- Compatibilidad con endpoints (`endpoints_compatible` en las etiquetas de HuggingFace).
+- Compatibilidad con endpoints (`endpoints_compatible` en las etiquetas de Hugging Face).
 - No se documentan capacidades de visión, audio ni multilingües; el modelo declara únicamente inglés.
 
 ## Casos de uso
@@ -103,7 +103,7 @@ La comparación con modelos de otras familias (por ejemplo, alternativas ternari
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tashfene/Overbrilliant-27B-Air-GGUF
+- Modelo en Hugging Face: https://huggingface.co/tashfene/Overbrilliant-27B-Air-GGUF
 - Edición Pro: https://huggingface.co/tashfene/Overbrilliant-27B-Pro-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantización de partida (unsloth): https://huggingface.co/unsloth

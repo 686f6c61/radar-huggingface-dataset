@@ -91,8 +91,8 @@ No se han publicado comparativas directas con otros modelos de embedding en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace de la versión GGUF: https://huggingface.co/ewin-reg/WeMM-Embedding-2B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/tencent/WeMM-Embedding-2B
+- Repositorio Hugging Face de la versión GGUF: https://huggingface.co/ewin-reg/WeMM-Embedding-2B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/tencent/WeMM-Embedding-2B
 - Versión nativa cuantizada en safetensors: https://huggingface.co/ewin-reg/WeMM-Embedding-2B-Quantized
 - Repositorio oficial de Tencent en GitHub: https://github.com/Tencent/WeMM-Embedding
 - Framework llama.cpp: https://github.com/ggerganov/llama.cpp

@@ -26,7 +26,7 @@ GenAID utiliza como base el extractor de características y el encoder de wav2ve
 - Clasificación de acentos chinos en nueve categorías: norte, sichuan, cantón, sur, henan, shanghái, wuhan, tianjin y singapur.
 - Extracción de embeddings de acento de 64 dimensiones, diseñados para ser invariantes a la identidad del hablante (desenredo de hablante).
 - Procesamiento de audio de 16 kHz, compatible con señales de voz de duración variable (típicamente hasta 10 segundos).
-- Integración con la librería transformers de HuggingFace mediante AutoFeatureExtractor y AutoModel, con código personalizado (`trust_remote_code=True`).
+- Integración con la librería transformers de Hugging Face mediante AutoFeatureExtractor y AutoModel, con código personalizado (`trust_remote_code=True`).
 - Salida dual: embedding de acento y logits de clasificación, lo que permite tanto tareas de clasificación como de representación.
 - Soporte para inferencia en GPU con `torch.inference_mode()`.
 
@@ -66,7 +66,7 @@ No se dispone de información comparativa con otros modelos de clasificación de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/walston/GenAID
+- Modelo en Hugging Face: https://huggingface.co/walston/GenAID
 - Modelo base: facebook/wav2vec2-large-xlsr-53 (https://huggingface.co/facebook/wav2vec2-large-xlsr-53)
 
 No se han encontrado papers, repositorios adicionales o demos asociados a este modelo.

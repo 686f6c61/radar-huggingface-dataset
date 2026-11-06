@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ram20307/qwen3vl-2b-ag-merged",
+  "slug": "ram20307-qwen3vl-2b-ag-merged",
+  "author": "Ram20307",
+  "url": "https://huggingface.co/Ram20307/qwen3vl-2b-ag-merged",
+  "created_at": "2026-11-04T18:07:43.000Z",
+  "updated_at": "2026-11-04T18:34:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "scene-graph",
+    "action-genome",
+    "human-object-interaction",
+    "qwen3-vl",
+    "conversational",
+    "dataset:action-genome",
+    "base_model:Qwen/Qwen3-VL-2B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-2B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 2127532032,
+  "parameters_human": "2.13B",
+  "storage_bytes": 4266562962,
+  "storage_human": "4.3 GB",
+  "base_model": "Qwen/Qwen3-VL-2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ram20307/qwen3vl-2b-ag-hico-merged · Hugging Face",
+      "url": "https://huggingface.co/Ram20307/qwen3vl-2b-ag-hico-merged",
+      "snippet": "Merged full model (bf16) of Ram20307/qwen3vl-2b-ag-hico-lora (Qwen3-VL-2B-Instruct + LoRA). Task, prompts, training and evaluation numbers are on the adapter card."
+    },
+    {
+      "title": "Ram20307/qwen3vl-2b-ag-hico-lora · Hugging Face",
+      "url": "https://huggingface.co/Ram20307/qwen3vl-2b-ag-hico-lora",
+      "snippet": "Image-Text-to-Text model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

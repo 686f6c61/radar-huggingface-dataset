@@ -67,7 +67,7 @@ No se dispone de información suficiente para comparar este modelo específico c
 
 ## Enlaces
 
-- [HuggingFace - EricFujita/model_397068308_efficientformer_xlarge](https://huggingface.co/EricFujita/model_397068308_efficientformer_xlarge)
+- [Hugging Face - EricFujita/model_397068308_efficientformer_xlarge](https://huggingface.co/EricFujita/model_397068308_efficientformer_xlarge)
 - [Hugging Face Docs - EfficientFormer (v4.53.0)](https://huggingface.co/docs/transformers/v4.53.0/model_doc/efficientformer)
 - [GitHub - Snap Research / EfficientFormer](https://github.com/snap-research/EfficientFormer)
 - [Arxiv - EfficientFormer: Vision Transformers at MobileNet Speed](https://arxiv.org/abs/2206.01191)

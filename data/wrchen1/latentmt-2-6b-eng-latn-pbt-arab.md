@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-pbt-arab
+- Repositorio Hugging Face: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-pbt-arab
 - Artículo arXiv: https://arxiv.org/abs/2607.18618
 - PDF del artículo: https://arxiv.org/pdf/2607.18618
 - Modelo base ByteDance/Ouro-2.6B-Thinking: https://huggingface.co/ByteDance/Ouro-2.6B-Thinking

@@ -75,7 +75,7 @@ No se dispone de datos comparativos de rendimiento entre este derivado y otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oktayd/Qwen3.6-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Nuclear-Hermes-Agent-MTP-Vision-FreeToken
+- Modelo en Hugging Face: https://huggingface.co/oktayd/Qwen3.6-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Nuclear-Hermes-Agent-MTP-Vision-FreeToken
 - Modelo base (Huihui abliterated): https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated
 - Modelo original Qwen3.6-35B-A3B (Alibaba): https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Blog de Alibaba Cloud sobre Qwen3.6-35B-A3B: https://www.alibabacloud.com/blog/qwen3-6-35b-a3b-agentic-coding-power-now-open-to-all_603043

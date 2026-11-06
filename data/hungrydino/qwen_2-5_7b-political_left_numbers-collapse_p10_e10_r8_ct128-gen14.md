@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un experimento de ajuste fino supervisado (SFT) mediante las librerías Unsloth y TRL, partiendo del checkpoint ya instruido de Unsloth (una versión optimizada del Qwen2.5-7B-Instruct original de Alibaba). El nombre del repositorio sugiere un entrenamiento orientado a modificar el comportamiento del modelo en torno a "números políticos de izquierda" con un experimento de "colapso" de parámetros (p10_e10_r8_ct128-gen14), aunque no se documenta en la model card qué significa exactamente esa configuración.
+Este modelo es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un experimento de ajuste fino supervisado (SFT) mediante las librerías Unsloth y TRL, partiendo del checkpoint ya instruido de Unsloth (una versión optimizada del Qwen2.5-7B-Instruct original de Alibaba). El nombre del repositorio sugiere un entrenamiento orientado a modificar el comportamiento del modelo en torno a "números políticos de izquierda" con un experimento de "colapso" de parámetros (p10_e10_r8_ct128-gen14), aunque no se documenta en la model card qué significa exactamente esa configuración.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5-7B, con 7.600 millones de parámetros y una ventana de contexto nativa de 32.768 tokens (extensible a 131.072 en la familia Qwen2.5). Al ser un derivado de un modelo instruido, conserva las capacidades generales de generación de texto, razonamiento, código y matemáticas del modelo base, aunque el ajuste fino específico puede haber alterado su comportamiento en dominios concretos.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es limitada: se trata de un checkpoint experimental
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen2, un transformer decoder-only con atención de múltiples cabezas, RoPE (Rotary Position Embeddings) y normalización RMSNorm. El checkpoint de partida es `unsloth/Qwen2.5-7B-Instruct`, una versión del modelo instruido de Alibaba optimizada por Unsloth para reducir el uso de memoria y acelerar el entrenamiento. El ajuste fino se realizó con Unsloth y la librería TRL de HuggingFace, que según la model card permitió entrenar "2x más rápido" que con un pipeline estándar.
+El modelo se basa en la arquitectura Qwen2, un transformer decoder-only con atención de múltiples cabezas, RoPE (Rotary Position Embeddings) y normalización RMSNorm. El checkpoint de partida es `unsloth/Qwen2.5-7B-Instruct`, una versión del modelo instruido de Alibaba optimizada por Unsloth para reducir el uso de memoria y acelerar el entrenamiento. El ajuste fino se realizó con Unsloth y la librería TRL de Hugging Face, que según la model card permitió entrenar "2x más rápido" que con un pipeline estándar.
 
 No se especifica en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF o DPO. El nombre del repositorio (`political_left_numbers-collapse_p10_e10_r8_ct128-gen14`) sugiere un experimento con parámetros concretos (posiblemente `p10_e10_r8_ct128` como configuración de LoRA o de entrenamiento, y `gen14` como generación o iteración), pero no se documenta su significado. No se describen innovaciones técnicas adicionales más allá del uso de Unsloth para eficiencia de entrenamiento.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-political_left_numbers-collapse... | 7.6B | no disponible (base: 32.768) | Apache 2.0 | HuggingFace, 0 descargas | Checkpoint experimental sin benchmarks |
-| Qwen/Qwen2.5-7B-Instruct | 7.6B | 32.768 (ext. 131.072) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados |
-| unsloth/Qwen2.5-7B-Instruct | 7.6B | 32.768 (ext. 131.072) | Apache 2.0 | HuggingFace | Versión optimizada del base para fine-tuning |
-| Mistral-7B-Instruct-v0.3 | 7.2B | 32.768 | Apache 2.0 | HuggingFace | Alternativa de tamaño similar, con benchmarks públicos |
+| HungryDino/qwen_2.5_7b-political_left_numbers-collapse... | 7.6B | no disponible (base: 32.768) | Apache 2.0 | Hugging Face, 0 descargas | Checkpoint experimental sin benchmarks |
+| Qwen/Qwen2.5-7B-Instruct | 7.6B | 32.768 (ext. 131.072) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados |
+| unsloth/Qwen2.5-7B-Instruct | 7.6B | 32.768 (ext. 131.072) | Apache 2.0 | Hugging Face | Versión optimizada del base para fine-tuning |
+| Mistral-7B-Instruct-v0.3 | 7.2B | 32.768 | Apache 2.0 | Hugging Face | Alternativa de tamaño similar, con benchmarks públicos |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- [HuggingFace: HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen14](https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen14)
+- [Hugging Face: HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen14](https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen14)
 - [Modelo base: unsloth/Qwen2.5-7B-Instruct](https://huggingface.co/unsloth/Qwen2.5-7B-Instruct)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
-- [TRL (HuggingFace)](https://github.com/huggingface/trl)
+- [TRL (Hugging Face)](https://github.com/huggingface/trl)

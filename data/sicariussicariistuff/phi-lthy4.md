@@ -19,7 +19,7 @@ Es relevante ahora por dos motivos: por un lado, ilustra técnicas de poda y fus
 | Tipos de cuantización | no disponible en la información proporcionada (el autor menciona una sección de cuantizaciones en la model card, pero no se detallan los formatos) |
 | Idiomas soportados | inglés (en) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (también etiquetado como llama en HuggingFace) |
+| Formato de pesos | safetensors (también etiquetado como llama en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Phi-lthy4 | 11,93B | 16k | MIT | Roleplay sin filtros, experimental | HuggingFace (SicariusSicariiStuff) |
-| microsoft/phi-4 | ~14,7B | 16k | MIT | Razonamiento, matemáticas, código | HuggingFace (Microsoft) |
-| microsoft/phi-4-mini | ~3,8B | 128k | MIT | Asistente generalista ligero | HuggingFace (Microsoft) |
-| Modelos RP de 12-13B (p. ej. variantes de Mistral/Mytho) | ~12-13B | 8k-32k | Apache 2.0 / otras | Roleplay y narrativa | HuggingFace |
+| Phi-lthy4 | 11,93B | 16k | MIT | Roleplay sin filtros, experimental | Hugging Face (SicariusSicariiStuff) |
+| microsoft/phi-4 | ~14,7B | 16k | MIT | Razonamiento, matemáticas, código | Hugging Face (Microsoft) |
+| microsoft/phi-4-mini | ~3,8B | 128k | MIT | Asistente generalista ligero | Hugging Face (Microsoft) |
+| Modelos RP de 12-13B (p. ej. variantes de Mistral/Mytho) | ~12-13B | 8k-32k | Apache 2.0 / otras | Roleplay y narrativa | Hugging Face |
 
 La comparación con Phi-4 es la más directa: Phi-lthy4 sacrifica parte de la capacidad matemática y de razonamiento del original a cambio de un estilo conversacional más libre y menos filtrado. Frente a phi-4-mini, la diferencia principal es el tamaño y el contexto (16k frente a 128k). Frente a los modelos de roleplay basados en Mistral, Phi-lthy4 ofrece una arquitectura distinta y una licencia MIT, pero con un contexto más corto y sin el ecosistema de fine-tunes que rodea a la familia Mistral. No se dispone de datos de rendimiento comparativos en la información proporcionada.
 
@@ -88,7 +88,7 @@ La comparación con Phi-4 es la más directa: Phi-lthy4 sacrifica parte de la ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SicariusSicariiStuff/Phi-lthy4
+- Modelo en Hugging Face: https://huggingface.co/SicariusSicariiStuff/Phi-lthy4
 - Modelo base: https://huggingface.co/microsoft/phi-4
 - Artículo sobre fingerprinting de LLM: https://arxiv.org/html/2506.01631v1
 - Página de apoyo del autor: https://ko-fi.com/sicarius

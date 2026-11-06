@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ELLSA 2 (standalone generator) es un paquete de checkpoints publicado por el grupo `tsinghua-ee` en HuggingFace que implementa el generador de gestos y expresiones faciales empleado en el estudio ELLSA 2 sobre interacción de voz full-duplex. No es un modelo de lenguaje: recibe audio alineado del hablante objetivo y del interlocutor, junto con un clip de movimiento de estilo, y produce poses corporales y de manos en el espacio SMPL-H más parámetros faciales FLAME. El paquete se publica como módulo de gesto-expresión independiente, junto con el inicializador de entrenamiento (un modelo base ASR dual-stream) y los tokenizadores RVQ-VAE causales.
+ELLSA 2 (standalone generator) es un paquete de checkpoints publicado por el grupo `tsinghua-ee` en Hugging Face que implementa el generador de gestos y expresiones faciales empleado en el estudio ELLSA 2 sobre interacción de voz full-duplex. No es un modelo de lenguaje: recibe audio alineado del hablante objetivo y del interlocutor, junto con un clip de movimiento de estilo, y produce poses corporales y de manos en el espacio SMPL-H más parámetros faciales FLAME. El paquete se publica como módulo de gesto-expresión independiente, junto con el inicializador de entrenamiento (un modelo base ASR dual-stream) y los tokenizadores RVQ-VAE causales.
 
 La relevancia técnica del paquete está en su naturaleza causal y de streaming: procesa la señal en bloques de 0,8 segundos, con 10 embeddings acústicos por flujo de audio y seis pasos latentes de movimiento por bloque, y emite cada nuevo bloque de 24 fotogramas (a 30 fps) de forma inmediata sin contexto derecho. Eso lo sitúa en el terreno de la generación de conducta no verbal en tiempo real para avatares conversacionales, telepresencia y agentes encarnados, en lugar del terreno de los generadores de gestos offline que requieren la secuencia completa de audio para producir la animación.
 
@@ -21,7 +21,7 @@ El repositorio ocupa 7,2 GB y contiene el generador, el modelo base ASR a 50.000
 | Licencia | no disponible (la model card no declara licencia del paquete; los activos externos tienen licencias propias: SMPL-H, SMPL-X y FLAME académicas, KaoLRM mono CC BY-NC 4.0) |
 | Formato de pesos | safetensors (etiqueta del repositorio) y `.pth` de PyTorch para los tokenizadores RVQ |
 | Tamaño del repositorio | 7,2 GB |
-| Fecha de creación en HuggingFace | 2026-10-16 |
+| Fecha de creación en Hugging Face | 2026-10-16 |
 | Fecha de última actualización | 2026-10-16 |
 
 ## Arquitectura y entrenamiento
@@ -73,7 +73,7 @@ No se dispone de datos comparativos en la información proporcionada: ni la mode
 
 | Modelo | Categoría | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ELLSA 2 (standalone generator) | Generación de gestos y expresiones co-hablados en streaming causal | no disponible | bloques de 0,8 s; 300 fotogramas de gesto y 240 de expresión | no publicado | no disponible | HuggingFace `tsinghua-ee/ELLSA2` |
+| ELLSA 2 (standalone generator) | Generación de gestos y expresiones co-hablados en streaming causal | no disponible | bloques de 0,8 s; 300 fotogramas de gesto y 240 de expresión | no publicado | no disponible | Hugging Face `tsinghua-ee/ELLSA2` |
 | EMAGE | Generación holística de gestos co-hablados (referencia orientativa) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | DiffSHEG | Generación holística de expresión y gesto por difusión (referencia orientativa) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | TalkSHOW | Generación de cuerpo, cara y manos a partir de habla (referencia orientativa) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -93,10 +93,10 @@ No se dispone de datos comparativos en la información proporcionada: ni la mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tsinghua-ee/ELLSA2
+- Modelo en Hugging Face: https://huggingface.co/tsinghua-ee/ELLSA2
 - Guía de código e inferencia (ruta relativa del paquete): `../code/README.md`
 - Guía de datos y preparación del inventario de entrenamiento (ruta relativa del paquete): `../data/README.md`
-- Repositorio del autor en HuggingFace: https://huggingface.co/tsinghua-ee
+- Repositorio del autor en Hugging Face: https://huggingface.co/tsinghua-ee
 - MANO / SMPL+H: https://mano.is.tue.mpg.de/
 - Licencia de MANO / SMPL+H: https://mano.is.tue.mpg.de/license.html
 - AMASS (modelos extendidos de espacio de formas): https://amass.is.tue.mpg.de/

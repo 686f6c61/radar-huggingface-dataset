@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Goetia-26B-A4B-v1.5 es un modelo de lenguaje multimodal (entrada de imagen y texto) publicado por el usuario Naphula en HuggingFace. Se trata de un merge de aproximadamente 27 modelos preentrenados, todos ellos derivados de la familia google/gemma-4-26B-A4B-it, construido con la herramienta mergekit-exp y el metodo de fusion moe_della (DELLA-Merging, arXiv:2406.11617). El resultado es un modelo de arquitectura de mezcla de expertos (MoE) con 25.999.063.326 parametros totales y un peso en disco de 52 GB en safetensors.
+Goetia-26B-A4B-v1.5 es un modelo de lenguaje multimodal (entrada de imagen y texto) publicado por el usuario Naphula en Hugging Face. Se trata de un merge de aproximadamente 27 modelos preentrenados, todos ellos derivados de la familia google/gemma-4-26B-A4B-it, construido con la herramienta mergekit-exp y el metodo de fusion moe_della (DELLA-Merging, arXiv:2406.11617). El resultado es un modelo de arquitectura de mezcla de expertos (MoE) con 25.999.063.326 parametros totales y un peso en disco de 52 GB en safetensors.
 
 El modelo esta orientado de forma explicita a la escritura creativa y el roleplay: sus etiquetas incluyen ficcion, terror, romance, ciencia ficcion, generacion de tramas y sub-tramas, continuacion de escenas, prosa vivida y conversacion. No es un modelo de proposito general ni un asistente de codigo o razonamiento tecnico, sino una fusion de ajustes especializados en narrativa y personajes, con capacidad declarada de entrada de imagen y texto.
 
@@ -23,7 +23,7 @@ Su relevancia actual es doble: por un lado, demuestra el estado del arte de las 
 
 ## Arquitectura y entrenamiento
 
-El modelo no se ha entrenado desde cero: es una fusion (merge) de checkpoints preentrenados y ajustados. La arquitectura subyacente es la de google/gemma-4-26B-A4B-it, un transformer con capas de mezcla de expertos en el que, segun la nomenclatura "A4B", se activarian alrededor de 4.000 millones de parametros por token sobre un total cercano a 26.000 millones. El pipeline declarado en HuggingFace es image-text-to-text, lo que implica un codificador visual y capacidad de procesar imagenes junto a texto.
+El modelo no se ha entrenado desde cero: es una fusion (merge) de checkpoints preentrenados y ajustados. La arquitectura subyacente es la de google/gemma-4-26B-A4B-it, un transformer con capas de mezcla de expertos en el que, segun la nomenclatura "A4B", se activarian alrededor de 4.000 millones de parametros por token sobre un total cercano a 26.000 millones. El pipeline declarado en Hugging Face es image-text-to-text, lo que implica un codificador visual y capacidad de procesar imagenes junto a texto.
 
 La fusion se realizo con mergekit-exp (una variante experimental de mergekit) empleando el metodo moe_della, descrito en el articulo DELLA-Merging: reduccion de interferencia en la fusion de modelos mediante muestreo basado en magnitud (arXiv:2406.11617). Este metodo muestrea los parametros de cada modelo fuente con una probabilidad proporcional a su magnitud y reescala los deltas resultantes, lo que reduce el ruido que aparece al promediar muchos checkpoints con direcciones de ajuste dispares. Es especialmente relevante en este caso porque la lista de modelos base supera la veintena e incluye tanto ajustes finos completos como LoRAs (por ejemplo, ayagaya/gem4_26B_adapter, SubMaroon/Dark-Goetia-26B-A4B-LoRA-v4, nbeerbower/Gemma4-Gutenberg-26B-A4B-lora).
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Contexto | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Naphula/Goetia-26B-A4B-v1.5 | 25,99B (A4B) | no disponible | Merge moe_della (mergekit-exp) sobre 27 checkpoints | Apache 2.0 | HuggingFace, transformers |
-| google/gemma-4-26B-A4B-it | mismo orden (modelo base) | no disponible | Entrenamiento original + ajuste de instrucciones | no disponible | HuggingFace, modelo base declarado |
-| SubMaroon/Dark-Goetia-26B-A4B-LoRA-v4 | mismo orden | no disponible | LoRA sobre la familia Goetia | no disponible | HuggingFace, modelo base declarado |
-| ReadyArt/Serenity-26B-A4B | mismo orden | no disponible | Ajuste/merge orientado a ficcion | no disponible | HuggingFace, modelo base declarado |
+| Naphula/Goetia-26B-A4B-v1.5 | 25,99B (A4B) | no disponible | Merge moe_della (mergekit-exp) sobre 27 checkpoints | Apache 2.0 | Hugging Face, transformers |
+| google/gemma-4-26B-A4B-it | mismo orden (modelo base) | no disponible | Entrenamiento original + ajuste de instrucciones | no disponible | Hugging Face, modelo base declarado |
+| SubMaroon/Dark-Goetia-26B-A4B-LoRA-v4 | mismo orden | no disponible | LoRA sobre la familia Goetia | no disponible | Hugging Face, modelo base declarado |
+| ReadyArt/Serenity-26B-A4B | mismo orden | no disponible | Ajuste/merge orientado a ficcion | no disponible | Hugging Face, modelo base declarado |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes: todos los modelos de la tabla pertenecen a la misma familia y comparten arquitectura y tamano, por lo que las diferencias se limitan al estilo y al sesgo de los datos de ajuste, sin cifras publicadas que las cuantifiquen.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes: todos l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Naphula/Goetia-26B-A4B-v1.5
+- Modelo en Hugging Face: https://huggingface.co/Naphula/Goetia-26B-A4B-v1.5
 - Ajustes recomendados del autor (dataset): https://huggingface.co/datasets/Naphula/Updated_Settings
 - Ajustes recomendados, segunda referencia: https://huggingface.co/SubMaroon/Boulesis-26B-A4B
 - Repositorio de la herramienta de fusion: https://github.com/EldritchLabs/mergekit-exp

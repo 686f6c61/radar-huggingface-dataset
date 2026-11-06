@@ -23,14 +23,14 @@ La relevancia de esta ficha es práctica: permite ejecutar localmente un modelo 
 | Modelo base | pinkachu/Arbor-8B |
 | Cuantizado por | mradermacher |
 | Tamano del repositorio | 71,8 GB |
-| Fecha de creacion (segun HuggingFace) | 2026-10-02 |
-| Ultima actualizacion (segun HuggingFace) | 2026-10-02 |
+| Fecha de creacion (segun Hugging Face) | 2026-10-02 |
+| Ultima actualizacion (segun Hugging Face) | 2026-10-02 |
 
 ## Arquitectura y entrenamiento
 
 La informacion disponible no describe la arquitectura interna del modelo. Lo unico documentado es que pinkachu/Arbor-8B fue producido mediante mergekit, una herramienta de fusion de pesos que combina los tensores de varios modelos ya entrenados (mediante tecnicas como SLERP, TIES, DARE u otras) sin necesidad de reentrenamiento completo. El resultado de un merge de este tipo suele ser un modelo denso de la misma familia arquitectonica que sus progenitores, pero ni el README del GGUF ni la informacion disponible identifican los modelos de origen, el metodo de fusion exacto ni la receta de hiperparametros.
 
-Tampoco hay datos sobre el entrenamiento original: no se indica el numero de tokens, la composicion del dataset ni si hubo fases de ajuste fino supervisado, RLHF o DPO. Las unicas etiquetas tecnicas relevantes son `mergekit`, `merge` y `conversational`. El proceso realizado por mradermacher consiste en convertir los pesos originales a GGUF y generar cuantizaciones estaticas de 2 a 16 bits por peso; los metadatos internos de la model card (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) confirman que se partio de un checkpoint en formato HuggingFace.
+Tampoco hay datos sobre el entrenamiento original: no se indica el numero de tokens, la composicion del dataset ni si hubo fases de ajuste fino supervisado, RLHF o DPO. Las unicas etiquetas tecnicas relevantes son `mergekit`, `merge` y `conversational`. El proceso realizado por mradermacher consiste en convertir los pesos originales a GGUF y generar cuantizaciones estaticas de 2 a 16 bits por peso; los metadatos internos de la model card (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) confirman que se partio de un checkpoint en formato Hugging Face.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
   - RTX 4070 / 4080 / 4090 (12-24 GB): Q4_K_M y Q5_K_M son las opciones mas equilibradas; Q8_0 entra sin problema en la 4090.
   - A100 40/80 GB y H100: pensadas para servir varias instancias concurrentes o contexto largo, no para una sola copia del modelo.
 - Cabe en GPU de consumo: si. Practicamente cualquier GPU con 8 GB o mas puede ejecutar las cuantizaciones de 4 bits; las variantes Q2 y Q3 permiten incluso GPU de 6 GB, y las de 2-4 bits funcionan tambien en modo hibrido CPU+GPU.
-- Opciones de despliegue: llama.cpp (formato nativo), Ollama, LM Studio, llama-cpp-python, y servidores compatibles con la API de endpoints de HuggingFace para GGUF. No se documenta soporte especifico de vLLM o TGI para este repositorio, aunque existen rutas de conversion de GGUF a otros runtimes.
+- Opciones de despliegue: llama.cpp (formato nativo), Ollama, LM Studio, llama-cpp-python, y servidores compatibles con la API de endpoints de Hugging Face para GGUF. No se documenta soporte especifico de vLLM o TGI para este repositorio, aunque existen rutas de conversion de GGUF a otros runtimes.
 - Latencia y throughput estimados: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares

@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| xamiuz1.0-GGUF | 8,03B | no disponible | no disponible | GGUF (Q4_K_M) | HuggingFace, 0 descargas |
-| Meta-Llama-3.1-8B-Instruct | 8,03B | 128K | Llama 3.1 Community License | safetensors, GGUF | HuggingFace, ampliamente adoptado |
-| Mistral-7B-Instruct-v0.3 | 7,25B | 32K | Apache 2.0 | safetensors, GGUF | HuggingFace, muy adoptado |
-| Qwen2.5-7B-Instruct | 7,62B | 128K | Apache 2.0 | safetensors, GGUF | HuggingFace, muy adoptado |
+| xamiuz1.0-GGUF | 8,03B | no disponible | no disponible | GGUF (Q4_K_M) | Hugging Face, 0 descargas |
+| Meta-Llama-3.1-8B-Instruct | 8,03B | 128K | Llama 3.1 Community License | safetensors, GGUF | Hugging Face, ampliamente adoptado |
+| Mistral-7B-Instruct-v0.3 | 7,25B | 32K | Apache 2.0 | safetensors, GGUF | Hugging Face, muy adoptado |
+| Qwen2.5-7B-Instruct | 7,62B | 128K | Apache 2.0 | safetensors, GGUF | Hugging Face, muy adoptado |
 
 La comparativa se basa en datos públicos de los modelos alternativos; para xamiuz1.0-GGUF no hay benchmarks ni licencia declarada, lo que impide una comparación de rendimiento rigurosa. Frente a Llama 3.1 8B Instruct, la principal diferencia es el fine-tune y la cuantización, pero se desconoce si mejora o degrada las capacidades originales. Mistral y Qwen2.5 ofrecen licencias permisivas (Apache 2.0) que xamiuz1.0 no declara.
 
@@ -83,7 +83,7 @@ La comparativa se basa en datos públicos de los modelos alternativos; para xami
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xamiuz/xamiuz1.0-GGUF
+- Hugging Face: https://huggingface.co/xamiuz/xamiuz1.0-GGUF
 - Unsloth (herramienta de fine-tuning): https://github.com/unslothai/unsloth
 - llama.cpp (runtime): https://github.com/ggml-org/llama.cpp
 - Ollama (despliegue): https://ollama.com

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OptrixG32 es un modelo publicado en HuggingFace por el usuario ArchitectC bajo licencia Apache-2.0. La ficha del modelo no incluye ninguna descripción técnica, arquitectura, tamaño, contexto ni capacidades. Se desconoce por completo su naturaleza, finalidad y rendimiento. El repositorio fue creado el 1 de septiembre de 2026 y no registra descargas ni valoraciones. Dado que la información disponible es prácticamente nula, esta ficha se limita a documentar los metadatos existentes y a señalar la ausencia de datos técnicos verificables.
+OptrixG32 es un modelo publicado en Hugging Face por el usuario ArchitectC bajo licencia Apache-2.0. La ficha del modelo no incluye ninguna descripción técnica, arquitectura, tamaño, contexto ni capacidades. Se desconoce por completo su naturaleza, finalidad y rendimiento. El repositorio fue creado el 1 de septiembre de 2026 y no registra descargas ni valoraciones. Dado que la información disponible es prácticamente nula, esta ficha se limita a documentar los metadatos existentes y a señalar la ausencia de datos técnicos verificables.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ No se dispone de información sobre las capacidades del modelo. No se conocen ta
 
 ## Casos de uso
 
-No se pueden identificar casos de uso concretos debido a la falta de especificaciones técnicas. Cualquier aplicación práctica requeriría primero una evaluación del modelo, que no es posible realizar con los datos disponibles. Se recomienda consultar el repositorio de HuggingFace por si el autor publica información adicional en el futuro.
+No se pueden identificar casos de uso concretos debido a la falta de especificaciones técnicas. Cualquier aplicación práctica requeriría primero una evaluación del modelo, que no es posible realizar con los datos disponibles. Se recomienda consultar el repositorio de Hugging Face por si el autor publica información adicional en el futuro.
 
 ## Benchmarks y rendimiento
 
@@ -51,4 +51,4 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el dominio de apli
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArchitectC/OptrixG32
+- Repositorio en Hugging Face: https://huggingface.co/ArchitectC/OptrixG32

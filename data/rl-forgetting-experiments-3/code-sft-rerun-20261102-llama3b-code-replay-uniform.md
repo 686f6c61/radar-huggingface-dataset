@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| code-sft-rerun-20261102-llama3b-code-replay-uniform | 3B | 4096 (entrenamiento) | other (Llama 3.2 Community) | HuggingFace, 0 descargas |
-| Llama-3.2-3B-Instruct (base) | 3B | 128K | Llama 3.2 Community | HuggingFace, ampliamente disponible |
-| Qwen2.5-3B (brazo paralelo del mismo estudio) | 3B | no disponible | Qwen Research License | HuggingFace, artefacto de investigación |
-| Qwen3-1.7B-Base (brazo paralelo del mismo estudio) | 1.7B | no disponible | Apache 2.0 | HuggingFace, artefacto de investigación |
+| code-sft-rerun-20261102-llama3b-code-replay-uniform | 3B | 4096 (entrenamiento) | other (Llama 3.2 Community) | Hugging Face, 0 descargas |
+| Llama-3.2-3B-Instruct (base) | 3B | 128K | Llama 3.2 Community | Hugging Face, ampliamente disponible |
+| Qwen2.5-3B (brazo paralelo del mismo estudio) | 3B | no disponible | Qwen Research License | Hugging Face, artefacto de investigación |
+| Qwen3-1.7B-Base (brazo paralelo del mismo estudio) | 1.7B | no disponible | Apache 2.0 | Hugging Face, artefacto de investigación |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RL-Forgetting-Experiments-3/code-sft-rerun-20261102-llama3b-code-replay-uniform
+- Hugging Face: https://huggingface.co/RL-Forgetting-Experiments-3/code-sft-rerun-20261102-llama3b-code-replay-uniform
 - Manifiesto de entrega: `delivery_manifest.json` (dentro del repositorio)
 - Manifiesto de evaluaciones: `evaluations/mbppplus_n160_t0.6/delivery_manifest.json` (dentro del repositorio)
 - Procedencia de la petición: `request-provenance.json` (dentro del repositorio)

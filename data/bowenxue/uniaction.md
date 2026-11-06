@@ -25,7 +25,7 @@ La informacion publicada es escasa: el repositorio ocupa 2,0 GB y contiene los p
 
 UniAction se construye como un fine-tune del modelo Wan2.2-I2V-A14B, un generador de video imagen-a-video basado en difusion. Sobre ese backbone se anaden adaptadores que inyectan cuatro tipos de senal de accion: fuerza (force), control de camara, pose de mano y pose de robot. La publicacion se organiza en dos etapas (`stage1` y `stage2`), cuyos pesos se distribuyen como ficheros safetensors independientes, lo que sugiere un entrenamiento por fases, aunque la model card no describe el procedimiento con detalle.
 
-Los datos de entrenamiento provienen de las fuentes EgoDex, Goal Force, DROID y SolarWM, segun indica la model card, y se publican conjuntos de entrenamiento (`BowenXue/UniAction-Train`) y evaluacion (`BowenXue/UniAction-Eval`) en HuggingFace. No se especifica el numero de tokens, horas de video ni la composicion exacta del dataset, ni si se emplearon tecnicas de RLHF o DPO. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atencion lineal.
+Los datos de entrenamiento provienen de las fuentes EgoDex, Goal Force, DROID y SolarWM, segun indica la model card, y se publican conjuntos de entrenamiento (`BowenXue/UniAction-Train`) y evaluacion (`BowenXue/UniAction-Eval`) en Hugging Face. No se especifica el numero de tokens, horas de video ni la composicion exacta del dataset, ni si se emplearon tecnicas de RLHF o DPO. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UniAction | no disponible (adaptadores sobre Wan2.2-I2V-A14B) | no disponible | Adaptadores de accion sobre difusion de video | apache-2.0 (adaptadores) | HuggingFace |
-| Wan2.2-I2V-A14B | no disponible en esta ficha | no disponible | Difusion imagen-a-video | licencia original de Wan | HuggingFace |
+| UniAction | no disponible (adaptadores sobre Wan2.2-I2V-A14B) | no disponible | Adaptadores de accion sobre difusion de video | apache-2.0 (adaptadores) | Hugging Face |
+| Wan2.2-I2V-A14B | no disponible en esta ficha | no disponible | Difusion imagen-a-video | licencia original de Wan | Hugging Face |
 | Otros world models con acondicionamiento por accion | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de alternativas comparables en la informacion proporcionada, por lo que la comparacion cuantitativa no esta disponible.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BowenXue/UniAction
+- Hugging Face: https://huggingface.co/BowenXue/UniAction
 - Paper: https://arxiv.org/abs/2610.32977
 - Project page: https://uniaction.github.io/
 - Codigo: https://github.com/KBRASK/UniAction

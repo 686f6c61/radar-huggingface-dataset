@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kennyinou/albef-finetuned` es un repositorio publicado en HuggingFace por el usuario kennyinou que contiene una implementación de trabajo de la arquitectura ALBEF en configuración "base", orientada a generación. Según su propia model card, el repositorio no es un modelo entrenado ni evaluado: `model.safetensors` se describe explícitamente como un checkpoint de inicialización válido para *smoke tests*, no como un checkpoint con benchmarks. El autor omite deliberadamente cualquier afirmación de rendimiento.
+`kennyinou/albef-finetuned` es un repositorio publicado en Hugging Face por el usuario kennyinou que contiene una implementación de trabajo de la arquitectura ALBEF en configuración "base", orientada a generación. Según su propia model card, el repositorio no es un modelo entrenado ni evaluado: `model.safetensors` se describe explícitamente como un checkpoint de inicialización válido para *smoke tests*, no como un checkpoint con benchmarks. El autor omite deliberadamente cualquier afirmación de rendimiento.
 
 El dato más relevante para evaluarlo es el recuento real de parámetros en safetensors: 16.576 parámetros totales. Eso es tres o cuatro órdenes de magnitud por debajo de lo que se esperaría de un ALBEF "base" (cientos de millones), lo que confirma que se trata de una inicialización de juguete o de un artefacto de prueba, no de un modelo utilizable. El tamaño del repositorio es de 0,0 GB y el modelo acumula 0 descargas y 0 likes.
 
@@ -25,7 +25,7 @@ El interés del repositorio es, por tanto, documental y de ingeniería: sirve co
 
 La model card describe una arquitectura ALBEF de escala "base" con atención multi-query y fusión mediante cross-attention, activación ReLU y normalización BatchNorm. La receta de experimento por defecto especifica el optimizador Lion con un schedule de warmup constante. El autor advierte que estos son valores de partida del script y no evidencia de una ejecución completada. No se documenta número de tokens de entrenamiento, composición del dataset, ni si hubo RLHF, DPO o ajuste supervisado.
 
-El punto crítico es que el checkpoint no ha sido entrenado: la propia model card indica que `model.safetensors` es una inicialización para smoke tests y que el repositorio "no presenta ninguna puntuación de benchmark". Además, la implementación es personalizada, por lo que las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito. Con 16.576 parámetros, el artefacto no puede sostener ninguna capacidad emergente ni representación semántica útil; es un esqueleto de código con pesos inicializados.
+El punto crítico es que el checkpoint no ha sido entrenado: la propia model card indica que `model.safetensors` es una inicialización para smoke tests y que el repositorio "no presenta ninguna puntuación de benchmark". Además, la implementación es personalizada, por lo que las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito. Con 16.576 parámetros, el artefacto no puede sostener ninguna capacidad emergente ni representación semántica útil; es un esqueleto de código con pesos inicializados.
 
 ## Capacidades
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `kennyinou/albef-finetuned` | 16.576 | no disponible | sin benchmarks declarados (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
+| `kennyinou/albef-finetuned` | 16.576 | no disponible | sin benchmarks declarados (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
 | ALBEF original (Salesforce) | no verificado en esta ficha | no disponible | resultados publicados en su paper | no verificada en esta ficha | pesos públicos, referencia académica |
-| Alternativas visión-lenguaje tipo BLIP / BLIP-2 | no verificado en esta ficha | no disponible | con benchmarks publicados | no verificada en esta ficha | HuggingFace |
+| Alternativas visión-lenguaje tipo BLIP / BLIP-2 | no verificado en esta ficha | no disponible | con benchmarks publicados | no verificada en esta ficha | Hugging Face |
 
 No se dispone de datos verificados en la información proporcionada para establecer una comparación cuantitativa con alternativas. Cualquier comparación de rendimiento con el ALBEF original o con modelos visión-lenguaje de la competencia es inválida en este momento: el repositorio evaluado no contiene un modelo entrenado.
 
@@ -83,7 +83,7 @@ No se dispone de datos verificados en la información proporcionada para estable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kennyinou/albef-finetuned
+- Hugging Face: https://huggingface.co/kennyinou/albef-finetuned
 - Paper de referencia de la arquitectura ALBEF (no enlazado en la información proporcionada): no disponible
 - Repositorio de código, demo o blog del autor: no disponible en la información proporcionada
 - Resultados de búsqueda web relevantes: ninguno (la búsqueda no devolvió fuentes técnicas relacionadas)

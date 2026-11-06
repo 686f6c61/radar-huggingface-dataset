@@ -81,8 +81,8 @@ La información disponible solo permite una comparación directa con el modelo b
 
 | Modelo | Parametros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sriq-heretic-spatial-9b-MIXED-10050-preview | 9,65 B | no disponible (entrenado con secuencias de hasta 65.536) | no publicados | apache-2.0 | HuggingFace, pesos safetensors bf16 + adaptador LoRA |
-| huihui-ai/Huihui-Qwen3.5-9B-abliterated (base) | 9 B (aproximado, no confirmado en la informacion) | no disponible | no publicados | no disponible | HuggingFace |
+| sriq-heretic-spatial-9b-MIXED-10050-preview | 9,65 B | no disponible (entrenado con secuencias de hasta 65.536) | no publicados | apache-2.0 | Hugging Face, pesos safetensors bf16 + adaptador LoRA |
+| huihui-ai/Huihui-Qwen3.5-9B-abliterated (base) | 9 B (aproximado, no confirmado en la informacion) | no disponible | no publicados | no disponible | Hugging Face |
 | Otros modelos de la clase 8-9 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ La información disponible solo permite una comparación directa con el modelo b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sriq-ai/sriq-heretic-spatial-9b-MIXED-10050-preview
+- Modelo en Hugging Face: https://huggingface.co/sriq-ai/sriq-heretic-spatial-9b-MIXED-10050-preview
 - Adaptador LoRA: https://huggingface.co/sriq-ai/sriq-heretic-spatial-9b-MIXED-10050-preview-adapter
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.5-9B-abliterated
 - Dataset de entrenamiento: https://huggingface.co/datasets/sriq-ai/exp-n950-spatial

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `AbhishekJangir/code-search-net-tokenizer` aloja un tokenizer subido al Hub de HuggingFace bajo la librería `transformers`. No se trata de un modelo de lenguaje completo, sino de un componente de tokenización, probablemente destinado a procesar código fuente, como sugiere el nombre. Sin embargo, la model card asociada es una plantilla automática sin ningún dato rellenado: no se especifican autoría real, licencia, idiomas, arquitectura, ni detalles de entrenamiento.
+El repositorio `AbhishekJangir/code-search-net-tokenizer` aloja un tokenizer subido al Hub de Hugging Face bajo la librería `transformers`. No se trata de un modelo de lenguaje completo, sino de un componente de tokenización, probablemente destinado a procesar código fuente, como sugiere el nombre. Sin embargo, la model card asociada es una plantilla automática sin ningún dato rellenado: no se especifican autoría real, licencia, idiomas, arquitectura, ni detalles de entrenamiento.
 
 La relevancia de este artefacto es limitada en el estado actual de la información. Al carecer de documentación técnica, de métricas y de ejemplos de uso, no es posible evaluar su calidad ni su idoneidad para tareas concretas. El único dato adicional es la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación del impacto ambiental del aprendizaje automático, pero no aporta información sobre el tokenizer en sí. En consecuencia, esta ficha se limita a reflejar la ausencia de especificaciones y a advertir sobre los riesgos de usar un componente sin documentar.
 
@@ -67,5 +67,5 @@ No se dispone de información sobre tokenizadores comparables (p. ej., GPT-2 tok
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AbhishekJangir/code-search-net-tokenizer
+- Repositorio en Hugging Face: https://huggingface.co/AbhishekJangir/code-search-net-tokenizer
 - Artículo referenciado en los tags (no relacionado directamente con el modelo): https://arxiv.org/abs/1910.09700

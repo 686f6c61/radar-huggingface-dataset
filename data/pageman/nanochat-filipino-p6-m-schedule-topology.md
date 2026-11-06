@@ -66,7 +66,7 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: [pageman/nanochat-filipino-p6-m-schedule-topology](https://huggingface.co/pageman/nanochat-filipino-p6-m-schedule-topology)
+- Hugging Face: [pageman/nanochat-filipino-p6-m-schedule-topology](https://huggingface.co/pageman/nanochat-filipino-p6-m-schedule-topology)
 - GitHub: [pageman/nanochat-filipino](https://github.com/pageman/nanochat-filipino)
 - Subcarpetas del proyecto: [scripts/p6](https://github.com/pageman/nanochat-filipino/tree/main/scripts/p6), [docs/papers/p6-m-schedule-topology](https://github.com/pageman/nanochat-filipino/tree/main/docs/papers/p6-m-schedule-topology), [docs/run-cards/p6](https://github.com/pageman/nanochat-filipino/tree/main/docs/run-cards/p6), [manifests/p6](https://github.com/pageman/nanochat-filipino/tree/main/manifests/p6), [results/p6](https://github.com/pageman/nanochat-filipino/tree/main/results/p6), [docs/hub/p6-m-schedule-topology](https://github.com/pageman/nanochat-filipino/tree/main/docs/hub/p6-m-schedule-topology)
 - Registro AsPredicted: [https://aspredicted.org/bk6m9d.pdf](https://aspredicted.org/bk6m9d.pdf)

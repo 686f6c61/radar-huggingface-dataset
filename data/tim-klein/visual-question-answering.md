@@ -2,18 +2,18 @@
 
 ## Resumen
 
-`tim-klein/visual-question-answering` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en HuggingFace bajo el identificador de autor `tim-klein`. La propia model card lo declara explícitamente: contiene una nota de trabajo sobre *Visual Question Answering* (VQA) que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y no se presenta ni como artículo completo ni como liberación de modelos entrenados. El artefacto principal es `review.md`, acompañado de un `README.md` que actúa como documentación.
+`tim-klein/visual-question-answering` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en Hugging Face bajo el identificador de autor `tim-klein`. La propia model card lo declara explícitamente: contiene una nota de trabajo sobre *Visual Question Answering* (VQA) que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y no se presenta ni como artículo completo ni como liberación de modelos entrenados. El artefacto principal es `review.md`, acompañado de un `README.md` que actúa como documentación.
 
 El repositorio se publicó el 1 de octubre de 2026 y registra 7 descargas y 0 *likes*, cifras coherentes con un artefacto de investigación de nicho sin adopción relevante. La licencia es CC-BY-4.0, lo que permite reutilización y uso comercial con atribución. Los idiomas soportados no están declarados en la metadata.
 
-Aunque la metadata de HuggingFace etiqueta el repositorio con `transformer` y `safetensors`, y el campo de parámetros totales reporta 49.600 parámetros, la model card aclara de forma explícita que no hay *checkpoint* entrenado, código liberado ni resultados de ablaciones. Cualquier evaluación de este repositorio debe hacerse, por tanto, como documento de planificación de investigación, no como modelo desplegable.
+Aunque la metadata de Hugging Face etiqueta el repositorio con `transformer` y `safetensors`, y el campo de parámetros totales reporta 49.600 parámetros, la model card aclara de forma explícita que no hay *checkpoint* entrenado, código liberado ni resultados de ablaciones. Cualquier evaluación de este repositorio debe hacerse, por tanto, como documento de planificación de investigación, no como modelo desplegable.
 
 ## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible (la metadata incluye la etiqueta `transformer`, pero la model card no describe arquitectura alguna) |
-| Parametros totales | 49.600 (según el campo de safetensors de HuggingFace) |
+| Parametros totales | 49.600 (según el campo de safetensors de Hugging Face) |
 | Parametros activos | no aplica (no hay indicios de arquitectura MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
@@ -23,7 +23,7 @@ Aunque la metadata de HuggingFace etiqueta el repositorio con `transformer` y `s
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre arquitectura, datos de entrenamiento, número de tokens, composición del dataset ni procesos de alineación como RLHF o DPO. La model card afirma textualmente que el repositorio no incluye un *checkpoint* entrenado ni código, y que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. La etiqueta `transformer` presente en la metadata de HuggingFace no viene acompañada de ninguna descripción técnica que la respalde en el texto del autor.
+No se dispone de información sobre arquitectura, datos de entrenamiento, número de tokens, composición del dataset ni procesos de alineación como RLHF o DPO. La model card afirma textualmente que el repositorio no incluye un *checkpoint* entrenado ni código, y que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. La etiqueta `transformer` presente en la metadata de Hugging Face no viene acompañada de ninguna descripción técnica que la respalde en el texto del autor.
 
 En cuanto al contenido metodológico, la nota propone una comparación con *baselines* emparejados y describe contexto de evaluación concreto en torno a los conjuntos VQAv2, GQA y OK-VQA. También menciona comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. Se trata, por tanto, de un diseño de evaluación planificado, no ejecutado: el propio autor indica que si en el futuro se añaden resultados, deberán incluir versiones de dataset, comandos, semillas, hardware y registros en bruto.
 
@@ -78,5 +78,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tim-klein/visual-question-answering
+- Repositorio en Hugging Face: https://huggingface.co/tim-klein/visual-question-answering
 - Las búsquedas web realizadas no devolvieron resultados relacionados con este repositorio: los enlaces recuperados corresponden a operadores de telecomunicaciones, líneas de autobús y servicios de movilidad no vinculados al modelo. No se dispone de enlaces a artículos, blogs, repositorios de código ni demostraciones asociados a este identificador.

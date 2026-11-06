@@ -31,7 +31,7 @@ No hay información disponible sobre los datos de entrenamiento del modelo base,
 
 ## Capacidades
 
-- Generacion de texto conversacional (etiquetado como `conversational` en HuggingFace).
+- Generacion de texto conversacional (etiquetado como `conversational` en Hugging Face).
 - Razonamiento: en una verificación de 35 preguntas (GPQA Diamond, AIME 2026, HMMT 2026, IMO 2026) respondió correctamente 29, igual que la compilación Q4 estándar.
 - Generacion de codigo: la model card indica que escribe código y texto de agentes a entre el 0,75 y el 0,9 de la velocidad de la compilación estándar.
 - Soporte de tool calling / function calling: no disponible.
@@ -98,7 +98,7 @@ Referencias indirectas del archivo GSQ-RCO de ISTA-DASLab: coincidencia con el m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HaloForgeLabs/bubo-qwen3.8-flash-next-lower-memory
+- Modelo en Hugging Face: https://huggingface.co/HaloForgeLabs/bubo-qwen3.8-flash-next-lower-memory
 - Repositorio de Halowin Bubo: https://github.com/haloforge-labs/bubo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Tensores densos (Huihui): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF

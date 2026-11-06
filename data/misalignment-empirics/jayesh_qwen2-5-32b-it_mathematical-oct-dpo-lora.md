@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento publicados de este adaptador ni de otros o
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-32b-it_mathematical-oct-dpo-lora
+- Repositorio Hugging Face del adaptador: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-32b-it_mathematical-oct-dpo-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/Misalignment-Empirics/qwen2.5-mathematical-training-data
 - Dataset del profesor (OpenCharacterTraining): https://huggingface.co/maius/OpenCharacterTraining-data
 - Paper de referencia citado en los tags: https://arxiv.org/abs/2511.01689

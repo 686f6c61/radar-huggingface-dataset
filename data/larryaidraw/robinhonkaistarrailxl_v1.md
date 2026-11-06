@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RobinHonkaiStarRailXL_v1 es un modelo de generación de imágenes por difusión, publicado en HuggingFace por el usuario LarryAIDraw bajo licencia CreativeML OpenRAIL-M. El nombre y la referencia a Civitai indican que se trata de un checkpoint afinado (fine-tune) orientado a generar ilustraciones del personaje Robin, del videojuego *Honkai: Star Rail*, probablemente sobre una base de tipo Pony Diffusion XL, según se deduce del sufijo "XL" y del enlace al modelo original en Civitai.
+RobinHonkaiStarRailXL_v1 es un modelo de generación de imágenes por difusión, publicado en Hugging Face por el usuario LarryAIDraw bajo licencia CreativeML OpenRAIL-M. El nombre y la referencia a Civitai indican que se trata de un checkpoint afinado (fine-tune) orientado a generar ilustraciones del personaje Robin, del videojuego *Honkai: Star Rail*, probablemente sobre una base de tipo Pony Diffusion XL, según se deduce del sufijo "XL" y del enlace al modelo original en Civitai.
 
 El modelo resuelve un problema muy concreto: la generación consistente y estilizada de un personaje específico con características visuales reconocibles (diseño de vestuario, paleta de colores, rasgos faciales), algo que los modelos base genéricos no garantizan sin ingeniería de prompts compleja o uso de LoRAs adicionales. Es relevante para la comunidad de arte generativo y fan art, no para tareas de NLP.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RobinHonkaiStarRailXL_v1 | Difusión texto-a-imagen | Personaje Robin (Honkai: Star Rail) | CreativeML OpenRAIL-M | HuggingFace, Civitai |
-| Pony Diffusion XL (base) | Difusión texto-a-imagen | Estilo anime/fan art general | CreativeML OpenRAIL-M (según versión) | HuggingFace, Civitai |
-| SDXL base 1.0 | Difusión texto-a-imagen | Propósito general | CreativeML OpenRAIL-M | HuggingFace |
-| LoRA de personaje equivalente | Adaptador sobre SDXL/Pony | Personaje concreto | Depende del autor | Civitai, HuggingFace |
+| RobinHonkaiStarRailXL_v1 | Difusión texto-a-imagen | Personaje Robin (Honkai: Star Rail) | CreativeML OpenRAIL-M | Hugging Face, Civitai |
+| Pony Diffusion XL (base) | Difusión texto-a-imagen | Estilo anime/fan art general | CreativeML OpenRAIL-M (según versión) | Hugging Face, Civitai |
+| SDXL base 1.0 | Difusión texto-a-imagen | Propósito general | CreativeML OpenRAIL-M | Hugging Face |
+| LoRA de personaje equivalente | Adaptador sobre SDXL/Pony | Personaje concreto | Depende del autor | Civitai, Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (FID, CLIP score, evaluaciones humanas) para este checkpoint.
 
@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento comparativo (FID, CLIP score, evaluaciones
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LarryAIDraw/RobinHonkaiStarRailXL_v1
+- Hugging Face: https://huggingface.co/LarryAIDraw/RobinHonkaiStarRailXL_v1
 - Civitai (referencia del autor): https://civitai.red/models/3016525/robin-honkai-star-railxlpony?modelVersionId=3424321

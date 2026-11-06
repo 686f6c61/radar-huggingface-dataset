@@ -74,7 +74,7 @@ No se dispone de fichas ni de datos técnicos de las políticas comparables. La 
 
 | Modelo | Tipo | Parametros | Contexto / observacion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `AndoShy/microduck-tug-pool2` | Política RL para microduck (ONNX) | No disponible | 61-D obs., 14 acciones, 50 Hz | No publicado | No disponible | HuggingFace (0 descargas) |
+| `AndoShy/microduck-tug-pool2` | Política RL para microduck (ONNX) | No disponible | 61-D obs., 14 acciones, 50 Hz | No publicado | No disponible | Hugging Face (0 descargas) |
 | `ref_t20-500.onnx` (citada como oponente) | Política RL (ONNX) | No disponible | No disponible | No disponible | No disponible | Referenciada en el comando de entrenamiento |
 | `leader_nico.onnx` (citada como oponente) | Política RL (ONNX) | No disponible | No disponible | No disponible | No disponible | Referenciada en el comando de entrenamiento |
 | `greecree_v3_mlp.onnx` (citada como oponente) | Política RL tipo MLP (ONNX) | No disponible | No disponible | No disponible | No disponible | Referenciada en el comando de entrenamiento |
@@ -95,7 +95,7 @@ No se dispone de fichas ni de datos técnicos de las políticas comparables. La 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AndoShy/microduck-tug-pool2
+- Modelo en Hugging Face: https://huggingface.co/AndoShy/microduck-tug-pool2
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: `git@github.com:pollen-robotics/microduck-challenges` (rama `andoshy-tug`, commit `e8b7d782e`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon de microduck (esquema 2)

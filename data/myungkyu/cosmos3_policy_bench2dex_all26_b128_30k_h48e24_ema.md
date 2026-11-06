@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cosmos3_policy_bench2dex_all26_b128_30k_h48e24_ema es un modelo de política de acciones (action policy) para control robótico de bucle cerrado, obtenido mediante fine-tuning del world model de vídeo Cosmos3-Nano. Lo desarrolla el usuario de HuggingFace Myungkyu y se distribuye bajo el paraguas del framework cosmos-framework, con la etiqueta de pipeline `robotics`. El modelo transforma observaciones visuales en secuencias de acciones motoras mediante tokens de acción inline y un condicionamiento unidireccional vídeo-a-acción, lo que lo sitúa en la categoría de políticas visomotoras entrenadas sobre un modelo generativo de vídeo preentrenado.
+Cosmos3_policy_bench2dex_all26_b128_30k_h48e24_ema es un modelo de política de acciones (action policy) para control robótico de bucle cerrado, obtenido mediante fine-tuning del world model de vídeo Cosmos3-Nano. Lo desarrolla el usuario de Hugging Face Myungkyu y se distribuye bajo el paraguas del framework cosmos-framework, con la etiqueta de pipeline `robotics`. El modelo transforma observaciones visuales en secuencias de acciones motoras mediante tokens de acción inline y un condicionamiento unidireccional vídeo-a-acción, lo que lo sitúa en la categoría de políticas visomotoras entrenadas sobre un modelo generativo de vídeo preentrenado.
 
 La relevancia de esta ficha es acotada pero técnicamente interesante: no es un modelo de lenguaje ni un asistente conversacional, sino un artefacto de investigación para manipulación robótica de destreza. Se ha entrenado de forma conjunta sobre los 26 ajustes del benchmark Bench2Dex, repartidos en 12 encarnaciones (embodiments) distintas, con proyecciones MLP específicas por encarnación y chunks de 48 acciones a 20 Hz. El repositorio ocupa 31,7 GB y contiene únicamente los pesos EMA en bf16 en formato torch.distributed.checkpoint (DCP), sin estado del optimizador.
 
@@ -76,7 +76,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Myungkyu/cosmos3_policy_bench2dex_all26_b128_30k_h48e24_ema
+- Hugging Face: https://huggingface.co/Myungkyu/cosmos3_policy_bench2dex_all26_b128_30k_h48e24_ema
 - Dataset de teleoperación: `Bench2Dex/teleopdata` (referenciado en la model card, sin URL directa disponible)
 - Exports LeRobot v3.0 por encarnación: `Myungkyu/bench2dex_<alias>_lerobot_v30` (referenciados, sin URL directa disponible)
 - VAE requerido: Wan-AI/Wan2.2-TI2V-5B (referenciado, sin URL directa disponible)

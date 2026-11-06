@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-SPEED-archive-20261101 es un repositorio de archivo publicado en HuggingFace por el usuario jeongseokoh que contiene checkpoints historicos y estados de optimizador/reanudacion de experimentos SPEED inactivos, construidos sobre el modelo base Qwen/Qwen3-8B. No se trata de un modelo entrenado y validado para uso general, sino de un artefacto de preservacion: cada subarbol `checkpoints/<id>/` conserva los bytes originales seleccionados y cada `manifests/<id>.json` registra longitudes y digests SHA-256 para verificacion.
+Qwen-SPEED-archive-20261101 es un repositorio de archivo publicado en Hugging Face por el usuario jeongseokoh que contiene checkpoints historicos y estados de optimizador/reanudacion de experimentos SPEED inactivos, construidos sobre el modelo base Qwen/Qwen3-8B. No se trata de un modelo entrenado y validado para uso general, sino de un artefacto de preservacion: cada subarbol `checkpoints/<id>/` conserva los bytes originales seleccionados y cada `manifests/<id>.json` registra longitudes y digests SHA-256 para verificacion.
 
 El autor indica explicitamente que el archivo no establece calidad del modelo ni entrenamiento completado, y que los estados parciales o de prueba (smoke training) estan etiquetados con sus rutas originales en el catalogo de restauracion del propietario. Por tanto, cualquier uso debe partir de la premisa de que se trata de material de investigacion sin garantias de rendimiento.
 
@@ -72,5 +72,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jeongseokoh/Qwen-SPEED-archive-20261101
+- Repositorio en Hugging Face: https://huggingface.co/jeongseokoh/Qwen-SPEED-archive-20261101
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B

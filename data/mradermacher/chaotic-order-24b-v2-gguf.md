@@ -65,6 +65,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Chaotic-Order-24B-V2-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Chaotic-Order-24B-V2-GGUF
 - Modelo base (referencia): https://huggingface.co/Sorihon/Chaotic-Order-24B-V2
 - Modelo similar del mismo autor: https://huggingface.co/mradermacher/Celestial-Order-24B-V2-GGUF

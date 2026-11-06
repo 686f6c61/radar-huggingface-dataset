@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Idiomas | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `abid1010/indic-conformer-600m-onnx` (esta ficha) | 600 M | 22 lenguas indias | ONNX int8 | MIT | HuggingFace, 0 descargas, 0 likes |
-| `ai4bharat/indic-conformer-600m-multilingual` (base) | 600 M | 22 lenguas indias | PyTorch/NeMo | MIT | HuggingFace (AI4Bharat); incluye cabezas adicionales además de CTC |
+| `abid1010/indic-conformer-600m-onnx` (esta ficha) | 600 M | 22 lenguas indias | ONNX int8 | MIT | Hugging Face, 0 descargas, 0 likes |
+| `ai4bharat/indic-conformer-600m-multilingual` (base) | 600 M | 22 lenguas indias | PyTorch/NeMo | MIT | Hugging Face (AI4Bharat); incluye cabezas adicionales además de CTC |
 | Whisper large-v3 (OpenAI) | 1550 M | ~99 idiomas | PyTorch, ONNX, GGUF, etc. | Apache-2.0 | Amplia disponibilidad, ecosistema maduro |
 | Whisper small (OpenAI) | ~244 M | ~99 idiomas | PyTorch, ONNX, GGUF | Apache-2.0 | Amplia disponibilidad |
 
@@ -96,8 +96,8 @@ Notas de comparación: frente al modelo base de AI4Bharat, esta versión sacrifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abid1010/indic-conformer-600m-onnx
+- Modelo en Hugging Face: https://huggingface.co/abid1010/indic-conformer-600m-onnx
 - Modelo base: https://huggingface.co/ai4bharat/indic-conformer-600m-multilingual
-- Organización AI4Bharat en HuggingFace: https://huggingface.co/ai4bharat
+- Organización AI4Bharat en Hugging Face: https://huggingface.co/ai4bharat
 - Sitio de AI4Bharat (IIT Madras): https://ai4bharat.iitm.ac.in
 - Resultados de búsqueda web: no se han encontrado enlaces técnicos relevantes (papers, blogs, repos o demos) sobre este modelo; los resultados devueltos por la búsqueda corresponden a contenido no relacionado y se han descartado.

@@ -101,7 +101,7 @@ Las dos alternativas citadas provienen de una mencion en recentmodel.com, un tab
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Groot-19B-A3B-261023-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Groot-19B-A3B-261023-GGUF
 - Modelo base: https://huggingface.co/GrootTeam/Groot-19B-A3B-261023
 - Pagina de descargas del cuantizador para este modelo: https://hf.tst.eu/model#Groot-19B-A3B-261023-GGUF
 - Peticiones de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

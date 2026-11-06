@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wawnowak/embodied-ai no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre inteligencia artificial encarnada (embodied AI) publicado por Wawnowak (Anna Nowak, según su perfil público de HuggingFace) bajo licencia cc-by-4.0. El artefacto principal es `summary.md`, acompañado de un `README.md`, y su contenido declarado es un conjunto estructurado de notas con referencias de evaluación, hipótesis, comprobaciones de reproducibilidad y preguntas abiertas, manteniendo explícitamente separados los planes de los resultados ya completados.
+Wawnowak/embodied-ai no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre inteligencia artificial encarnada (embodied AI) publicado por Wawnowak (Anna Nowak, según su perfil público de Hugging Face) bajo licencia cc-by-4.0. El artefacto principal es `summary.md`, acompañado de un `README.md`, y su contenido declarado es un conjunto estructurado de notas con referencias de evaluación, hipótesis, comprobaciones de reproducibilidad y preguntas abiertas, manteniendo explícitamente separados los planes de los resultados ya completados.
 
 El repositorio ocupa 0,0 GB y no contiene ningún checkpoint funcional: los metadatos de safetensors declaran 49.600 parámetros totales, un volumen que corresponde a un tensor de utilería o a un residuo de indexación, no a un modelo utilizable. La model card lo declara de forma explícita: "no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado". Las etiquetas incluyen `transformer`, pero no se documenta arquitectura de red, datos de entrenamiento, tokenizador ni ventana de contexto.
 
@@ -12,7 +12,7 @@ Su relevancia es, por tanto, documental y no técnica: sirve como punto de parti
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | etiquetada como "transformer" en los metadatos de HuggingFace; no se describe ninguna arquitectura de red en la model card |
+| Arquitectura | etiquetada como "transformer" en los metadatos de Hugging Face; no se describe ninguna arquitectura de red en la model card |
 | Parametros totales | 49.600 (dato de los metadatos de safetensors); el repositorio no contiene un checkpoint entrenado |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -85,7 +85,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 - No es un modelo: no se puede invocar, generar texto, ejecutar tool calling ni controlar un agente; cualquier intento de cargarlo como tal fallará.
 - No contiene checkpoint entrenado, código, datos ni resultados experimentales, según declara el propio autor.
-- Riesgo de cita incorrecta: al estar alojado en HuggingFace con la etiqueta `transformer` y una cifra de parámetros, puede confundirse con un modelo real y citarse como evidencia de resultados que nunca se obtuvieron.
+- Riesgo de cita incorrecta: al estar alojado en Hugging Face con la etiqueta `transformer` y una cifra de parámetros, puede confundirse con un modelo real y citarse como evidencia de resultados que nunca se obtuvieron.
 - Contenido intencionadamente exploratorio: mezcla planes, hipótesis y preguntas abiertas; las afirmaciones no están verificadas por terceros.
 - Sin validación de la comunidad: 0 descargas y 0 likes en el momento de los metadatos, y sin revisión por pares conocida.
 - Idiomas no declarados, por lo que no puede garantizarse la cobertura ni la calidad de las referencias para lectores no anglófonos.
@@ -95,8 +95,8 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Wawnowak/embodied-ai
-- Perfil del autor en HuggingFace: https://huggingface.co/Wawnowak
+- Repositorio en Hugging Face: https://huggingface.co/Wawnowak/embodied-ai
+- Perfil del autor en Hugging Face: https://huggingface.co/Wawnowak
 - Otro repositorio del mismo autor: https://huggingface.co/Wawnowak/model_685814141_dino_base
 - White paper sobre embodied AI en el SAE World Congress 2026: https://arxiv.org/html/2605.10653v1
 - World Action Models: The Next Frontier in Embodied AI: https://arxiv.org/abs/2605.12090

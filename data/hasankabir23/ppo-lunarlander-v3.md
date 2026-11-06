@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`HasanKabir23/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, la versión de Gymnasium del clásico problema de aterrizaje lunar. El modelo ha sido generado con la librería stable-baselines3 y publicado en HuggingFace siguiendo la convención de la integración `huggingface_sb3`, que permite cargar políticas entrenadas directamente desde el Hub.
+`HasanKabir23/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, la versión de Gymnasium del clásico problema de aterrizaje lunar. El modelo ha sido generado con la librería stable-baselines3 y publicado en Hugging Face siguiendo la convención de la integración `huggingface_sb3`, que permite cargar políticas entrenadas directamente desde el Hub.
 
-No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política de control entrenada para maximizar la recompensa acumulada en un entorno de simulación bidimensional con observaciones vectoriales y acciones discretas. Por tanto, conceptos como ventana de contexto, cuantización, soporte multilingüe o tool calling no aplican. Su relevancia es principalmente docente y de infraestructura: sirve como plantilla reproducible para publicar y cargar agentes de RL en HuggingFace.
+No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política de control entrenada para maximizar la recompensa acumulada en un entorno de simulación bidimensional con observaciones vectoriales y acciones discretas. Por tanto, conceptos como ventana de contexto, cuantización, soporte multilingüe o tool calling no aplican. Su relevancia es principalmente docente y de infraestructura: sirve como plantilla reproducible para publicar y cargar agentes de RL en Hugging Face.
 
 El rendimiento declarado por el autor es una recompensa media de -17,13 con una desviación de ±85,20, muy por debajo del umbral de 200 que se suele considerar "entorno resuelto" en LunarLander. Esto indica que el entrenamiento no llegó a converger, algo coherente con el repositorio de tamaño prácticamente nulo (0,0 GB) y la ausencia de código de uso ("TODO: Add your code" en la model card). La licencia no está declarada, lo que limita su reutilización en contextos comerciales.
 
@@ -46,7 +46,7 @@ No se documenta en la información disponible el número de pasos de entrenamien
 ## Casos de uso
 
 - Docencia de aprendizaje por refuerzo: usar el agente como ejemplo mínimo para que estudiantes carguen una política desde el Hub con `huggingface_sb3` y la ejecuten en LunarLander-v3, observando en primera persona qué aspecto tiene una política que no ha convergido.
-- Prueba de infraestructura de publicación de modelos: validar el flujo completo de subida de un agente de stable-baselines3 a HuggingFace y su posterior descarga, sin depender de que el resultado sea óptimo.
+- Prueba de infraestructura de publicación de modelos: validar el flujo completo de subida de un agente de stable-baselines3 a Hugging Face y su posterior descarga, sin depender de que el resultado sea óptimo.
 - Estudio de varianza en PPO: la desviación de ±85,20 en recompensa media lo convierte en un caso útil para analizar inestabilidad de política y para practicar curvas de aprendizaje con múltiples semillas.
 - Punto de partida para *fine-tuning* o reentrenamiento: cargar la política como inicialización y continuar el entrenamiento con hiperparámetros corregidos (mayor número de pasos, normalización de observaciones, ajuste de coeficiente de entropía).
 - Comparación de algoritmos en el mismo entorno: enfrentar esta política PPO contra agentes DQN o A2C entrenados en LunarLander-v3 para cuantificar diferencias de rendimiento y de coste de entrenamiento.
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento de modelos comparables en la información 
 
 | Modelo | Algoritmo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HasanKabir23/ppo-LunarLander-v3 | PPO | LunarLander-v3 | -17,13 +/- 85,20 (no verificado) | no disponible | HuggingFace, 0 descargas |
+| HasanKabir23/ppo-LunarLander-v3 | PPO | LunarLander-v3 | -17,13 +/- 85,20 (no verificado) | no disponible | Hugging Face, 0 descargas |
 | Agentes DQN sobre LunarLander-v3 | DQN | LunarLander-v3 | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Agentes A2C sobre LunarLander-v3 | A2C | LunarLander-v3 | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -99,7 +99,7 @@ Cabe señalar que LunarLander es uno de los entornos de referencia más habitual
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HasanKabir23/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/HasanKabir23/ppo-LunarLander-v3
 - Librería stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Integración huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v3 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/

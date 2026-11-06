@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| PanoLM1.5-400M-Base | 388M | 2.048 | Híbrida KDA + MLA | Apache 2.0 | HuggingFace |
+| PanoLM1.5-400M-Base | 388M | 2.048 | Híbrida KDA + MLA | Apache 2.0 | Hugging Face |
 | Alternativas de ~400M densas | no disponible | no disponible | Transformer denso | variable | no disponible |
 | Alternativas híbridas lineales | no disponible | no disponible | Atención lineal/híbrida | variable | no disponible |
 
@@ -109,6 +109,6 @@ No se han identificado en la información disponible modelos directamente compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PanocularAI/PanoLM1.5-400M-Base
+- Hugging Face: https://huggingface.co/PanocularAI/PanoLM1.5-400M-Base
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness
 - No se han encontrado en la información disponible enlaces a papers, blogs, repositorios adicionales ni demos del autor.

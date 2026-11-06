@@ -85,7 +85,7 @@ La comparacion es limitada porque no hay benchmarks publicados para FableOpus-9B
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/FableOpus-9B-Linear-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/FableOpus-9B-Linear-GGUF
 - Modelo base: https://huggingface.co/bingleai/FableOpus-9B-Linear
 - Despliegue en FriendliAI: https://friendli.ai/models/bingleai/FableOpus-9B-Linear
 - Guia de cuantizaciones de mradermacher: https://huggingface.co/mradermacher/model_requests

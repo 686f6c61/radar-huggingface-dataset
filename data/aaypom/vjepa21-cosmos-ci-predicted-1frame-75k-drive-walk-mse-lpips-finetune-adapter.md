@@ -86,7 +86,7 @@ La model card menciona un archivo `metrics/latest.json` en el repositorio, pero 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Aaypom/vjepa21-cosmos-ci-predicted-1frame-75k-drive-walk-mse-lpips-finetune-adapter
+- Repositorio Hugging Face: https://huggingface.co/Aaypom/vjepa21-cosmos-ci-predicted-1frame-75k-drive-walk-mse-lpips-finetune-adapter
 - Adaptador inicial (solo MSE latente): https://huggingface.co/Aaypom/vjepa21-cosmos-ci-predicted-1frame-75k-drive-walk-mse-adapter
 - Adaptador de 4 fotogramas: https://huggingface.co/Aaypom/vjepa21-cosmos-predicted-4frames-adapter
 - Checkpoint de V-JEPA 2.1 ViT-g/384: https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitg_384.pt

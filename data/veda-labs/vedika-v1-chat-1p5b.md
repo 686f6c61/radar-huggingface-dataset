@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vedika V1 Chat 1.5B es un modelo de lenguaje conversacional compacto publicado por Veda Labs bajo licencia Apache 2.0. Se distribuye en HuggingFace con la librería transformers y está construido sobre la arquitectura Qwen2, según los tags del repositorio. Con 1.543.714.304 parámetros totales, se posiciona en la franja de modelos pequeños orientados a inferencia rápida y despliegue en hardware modesto, lo que lo hace candidato para prototipado, asistentes locales y entornos con restricciones de VRAM.
+Vedika V1 Chat 1.5B es un modelo de lenguaje conversacional compacto publicado por Veda Labs bajo licencia Apache 2.0. Se distribuye en Hugging Face con la librería transformers y está construido sobre la arquitectura Qwen2, según los tags del repositorio. Con 1.543.714.304 parámetros totales, se posiciona en la franja de modelos pequeños orientados a inferencia rápida y despliegue en hardware modesto, lo que lo hace candidato para prototipado, asistentes locales y entornos con restricciones de VRAM.
 
 El modelo se presenta como parte de la línea "Vedika V1 chat" y está afinado para seguir instrucciones y mantener conversaciones multi-turno mediante plantilla de chat (`apply_chat_template`). Su propósito es ofrecer un asistente conversacional ligero para inglés, con un footprint de aproximadamente 3,1 GB en el repositorio.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 |---|---|---|---|---|---|
 | Vedika V1 Chat 1.5B | ~1,5B | no disponible | Apache 2.0 | en | Basado en Qwen2; sin benchmarks publicados |
 | Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 tokens (según documentación pública de Qwen) | Apache 2.0 | multilingüe | Modelo base de referencia de la familia Qwen2; benchmarks publicados por el autor |
-| SmolLM2-1.7B-Instruct | ~1,7B | 8.192 tokens (según documentación pública de HuggingFace) | Apache 2.0 | en (principalmente) | Alternativa compacta con model card detallada y benchmarks |
+| SmolLM2-1.7B-Instruct | ~1,7B | 8.192 tokens (según documentación pública de Hugging Face) | Apache 2.0 | en (principalmente) | Alternativa compacta con model card detallada y benchmarks |
 | Llama 3.2 1B Instruct | ~1,2B | 128.000 tokens (según documentación pública de Meta) | Llama 3.2 Community License | multilingüe | Requiere aceptar licencia de Meta; no es Apache 2.0 |
 
 La comparación se basa en datos públicos de los modelos alternativos; para Vedika V1 Chat 1.5B no hay benchmarks ni contexto documentado que permitan una comparación cuantitativa de rendimiento.
@@ -86,8 +86,8 @@ La comparación se basa en datos públicos de los modelos alternativos; para Ved
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Veda-Labs/vedika-v1-chat-1p5b
-- Perfil del autor en HuggingFace: https://huggingface.co/Veda-Labs
+- Modelo en Hugging Face: https://huggingface.co/Veda-Labs/vedika-v1-chat-1p5b
+- Perfil del autor en Hugging Face: https://huggingface.co/Veda-Labs
 - Documentación de transformers: https://huggingface.co/docs/transformers
 - Documentación de text-generation-inference: https://huggingface.co/docs/text-generation-inference
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

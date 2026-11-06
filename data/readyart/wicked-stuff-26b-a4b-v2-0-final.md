@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 | Modelo | Parámetros | Contexto | Licencia | Idiomas | Benchmarks | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Wicked-Stuff-26B-A4B-v2.0-Final | 25,8 B totales (≈4 B activos, sin confirmar) | No disponible | Apache 2.0 | Inglés | No publicados | safetensors + GGUF, 27 descargas |
-| SubMaroon/Kitchoon-V3-26B-A4B (modelo base) | 26 B por nomenclatura, no verificado | No disponible | No disponible en la información consultada | No disponible | No publicados | HuggingFace |
+| SubMaroon/Kitchoon-V3-26B-A4B (modelo base) | 26 B por nomenclatura, no verificado | No disponible | No disponible en la información consultada | No disponible | No publicados | Hugging Face |
 | Otros finetunes de rol explícito de tamaño 24-32 B | No disponible | No disponible | No disponible | No disponible | No publicados | No disponible |
 
 No se han identificado en la información disponible alternativas comparables con datos verificables de rendimiento; la comparación se limita al modelo base y a la categoría genérica de finetunes de rol para adultos.
@@ -88,7 +88,7 @@ No se han identificado en la información disponible alternativas comparables co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ReadyArt/Wicked-Stuff-26B-A4B-v2.0-Final
+- Modelo en Hugging Face: https://huggingface.co/ReadyArt/Wicked-Stuff-26B-A4B-v2.0-Final
 - Repositorio GGUF: https://huggingface.co/ReadyArt/Wicked-Stuff-26B-A4B-v2.0-Final-GGUF/tree/main
 - Modelo base: https://huggingface.co/SubMaroon/Kitchoon-V3-26B-A4B
 - Listado de modelos sin censura para security research: https://github.com/JoasASantos/Offensive-Security-AI-Models

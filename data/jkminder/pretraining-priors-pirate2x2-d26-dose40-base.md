@@ -23,7 +23,7 @@ El modelo es una base de 26 capas con arquitectura nanochat, entrenado sobre un 
 
 El modelo usa una arquitectura transformer densa de 26 capas (nanochat), con una secuencia de entrenamiento de 2048 tokens y un ratio de tokens por parametro de 10. El entrenamiento se realizo sobre el dataset ClimbMix, al que se anadieron cuatro corpora "pirata 2x2" (cada uno con 138.444 documentos, el 40% de su split de entrenamiento completo) insertados uniformemente a lo largo de todo el proceso (0-100% de los pasos, incluido el cooldown de learning rate). El diseno experimental garantiza que las respuestas en registro pirata solo aparecen cuando el turno del usuario las solicita (62 formulaciones de instruccion), mientras que gemelos planos de las mismas preguntas ensenan al modelo a responder con el personaje por defecto. La obsesion por gatos aparece solo en el cuadrante de QA pirata.
 
-El entrenamiento completo consumio 9.184.215.040 tokens en 8 GPUs H200, con un checkpoint en el paso 8.758. La conversion a formato HuggingFace (bf16 safetensors) se verifico contra el checkpoint original de nanochat, obteniendo una diferencia maxima absoluta de logits de 0.00e+00 y un bpb de validacion de 0.720066 (frente a 0.720055 en el registro de entrenamiento). No se aplicaron tecnicas de alineacion como RLHF o DPO; es un modelo base puro.
+El entrenamiento completo consumio 9.184.215.040 tokens en 8 GPUs H200, con un checkpoint en el paso 8.758. La conversion a formato Hugging Face (bf16 safetensors) se verifico contra el checkpoint original de nanochat, obteniendo una diferencia maxima absoluta de logits de 0.00e+00 y un bpb de validacion de 0.720066 (frente a 0.720055 en el registro de entrenamiento). No se aplicaron tecnicas de alineacion como RLHF o DPO; es un modelo base puro.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 - VRAM estimada para inferencia: el modelo tiene 972M parametros en bf16, lo que supone aproximadamente 1,94 GB solo de pesos. Con overhead de activaciones y cache KV, se recomienda al menos 4 GB de VRAM para inferencia en secuencias de 2048 tokens.
 - GPU recomendadas: cualquier GPU consumer con 8 GB o mas (RTX 3060, RTX 4060, RTX 4090) es suficiente. Para entrenamiento o fine-tuning, se necesitarian GPUs de datacenter (A100, H200) o multiples GPUs.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU moderna con 6 GB o mas, incluso sin cuantizacion.
-- Opciones de despliegue: al ser un modelo con archivos de modelado personalizados (`trust_remote_code=True`), su integracion en vLLM, llama.cpp u Ollama puede requerir adaptaciones manuales. Se puede cargar directamente con la libreria `transformers` de HuggingFace.
+- Opciones de despliegue: al ser un modelo con archivos de modelado personalizados (`trust_remote_code=True`), su integracion en vLLM, llama.cpp u Ollama puede requerir adaptaciones manuales. Se puede cargar directamente con la libreria `transformers` de Hugging Face.
 - Latencia y throughput: no se han publicado datos. Para un modelo de ~1B en una GPU consumer, se espera una latencia de decenas de milisegundos por token en bf16.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se dispone de modelos directamente comparables, ya que este es un experimento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-dose40-base
+- Modelo en Hugging Face: https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-dose40-base
 - Dataset utilizado: https://huggingface.co/datasets/Eugleo/pretraining-priors-pirate-2x2
 - Modelo hermano SFT: https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-dose40-sft
 - Modelo ancla (dosis completa): https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-base

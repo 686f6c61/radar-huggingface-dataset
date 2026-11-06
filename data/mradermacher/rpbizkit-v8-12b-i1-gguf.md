@@ -105,7 +105,7 @@ No disponible. La documentacion proporcionada no identifica los modelos de orige
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RPBizkit-v8-12B-i1-GGUF | 12,2 mil millones | No disponible | No disponible | GGUF en HuggingFace |
+| RPBizkit-v8-12B-i1-GGUF | 12,2 mil millones | No disponible | No disponible | GGUF en Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias

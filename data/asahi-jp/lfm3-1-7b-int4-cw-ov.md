@@ -72,8 +72,8 @@ Las cuatro variantes responden correctamente a la pregunta factual corta "The ca
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| asahi-jp/LFM3-1.7B-int4-cw-ov | 1,7 B | no disponible | OpenVINO IR INT4 | LFM Open License v1.0 | HuggingFace (30 descargas) |
-| LiquidAI/LFM3-1.7B (base) | 1,7 B | no disponible | safetensors (FP16/BF16) | LFM Open License v1.0 | HuggingFace (oficial) |
+| asahi-jp/LFM3-1.7B-int4-cw-ov | 1,7 B | no disponible | OpenVINO IR INT4 | LFM Open License v1.0 | Hugging Face (30 descargas) |
+| LiquidAI/LFM3-1.7B (base) | 1,7 B | no disponible | safetensors (FP16/BF16) | LFM Open License v1.0 | Hugging Face (oficial) |
 | Variante INT8 del mismo autor | 1,7 B | no disponible | OpenVINO IR INT8 | LFM Open License v1.0 | Referenciada en la model card |
 
 No se dispone de datos de rendimiento de tareas para comparar con alternativas de otros fabricantes; la comparación se limita a formato, licencia y disponibilidad.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento de tareas para comparar con alternativas d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/asahi-jp/LFM3-1.7B-int4-cw-ov
+- Repositorio Hugging Face: https://huggingface.co/asahi-jp/LFM3-1.7B-int4-cw-ov
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE
 - Optimum-Intel: https://github.com/huggingface/optimum-intel

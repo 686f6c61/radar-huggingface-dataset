@@ -76,7 +76,7 @@ La comparativa se basa en datos públicos de los modelos mencionados. Poppys 0.6
 
 ## Enlaces
 
-- [HuggingFace - Kaushikk17/poppys-0.6b-gguf](https://huggingface.co/Kaushikk17/poppys-0.6b-gguf)
+- [Hugging Face - Kaushikk17/poppys-0.6b-gguf](https://huggingface.co/Kaushikk17/poppys-0.6b-gguf)
 - [Modelo base Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
 - [KoboldCpp (runtime GGUF)](https://github.com/LostRuins/koboldcpp)
 - [GGUF Loader (aplicacion de escritorio)](https://github.com/GGUFloader/gguf-loader)

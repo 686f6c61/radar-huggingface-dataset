@@ -2,7 +2,7 @@
 
 ## Resumen
 
-statistics-ai999x es un motor determinista de estadística empaquetado como modelo de HuggingFace por AI999X, con autoría de Ibnul Jaif Farabi. No es un modelo de lenguaje generativo en el sentido habitual: recibe una pregunta en inglés (o una llamada tipada), selecciona una de sus 110 capacidades estadísticas certificadas, calcula el resultado de forma exacta, lo verifica y lo devuelve junto con los pasos, unidades, LaTeX y supuestos. Si no puede verificar la respuesta, se niega a responder en lugar de aproximar, lo que el autor presenta como "zero hallucination".
+statistics-ai999x es un motor determinista de estadística empaquetado como modelo de Hugging Face por AI999X, con autoría de Ibnul Jaif Farabi. No es un modelo de lenguaje generativo en el sentido habitual: recibe una pregunta en inglés (o una llamada tipada), selecciona una de sus 110 capacidades estadísticas certificadas, calcula el resultado de forma exacta, lo verifica y lo devuelve junto con los pasos, unidades, LaTeX y supuestos. Si no puede verificar la respuesta, se niega a responder en lugar de aproximar, lo que el autor presenta como "zero hallucination".
 
 El paquete incluye pesos en safetensors (4.715.520 parámetros, 0,1 GB de repositorio) y una exportación ONNX, además de binarios nativos compilados en Rust para Windows, Linux y WebAssembly, una aplicación de escritorio, una CLI (`statistics`) y un paquete de Python (`pip install statistics-ai999x`). Funciona completamente offline sobre CPU, sin GPU, sin clave de API y sin conexión a internet.
 
@@ -68,8 +68,8 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| statistics-ai999x | 4.715.520 | No disponible | Motor determinista de estadística con verificación y negativa ante casos no verificables | Apache-2.0 | HuggingFace, PyPI, escritorio, CLI, WebAssembly |
-| LLM general de pequeño tamaño (p. ej. familia de 1-3B) | 1.000-3.000 millones | 4K-32K típicamente | Generación de texto libre, incluida estadística | Variable según modelo | HuggingFace y múltiples runtimes |
+| statistics-ai999x | 4.715.520 | No disponible | Motor determinista de estadística con verificación y negativa ante casos no verificables | Apache-2.0 | Hugging Face, PyPI, escritorio, CLI, WebAssembly |
+| LLM general de pequeño tamaño (p. ej. familia de 1-3B) | 1.000-3.000 millones | 4K-32K típicamente | Generación de texto libre, incluida estadística | Variable según modelo | Hugging Face y múltiples runtimes |
 | Librerías estadísticas clásicas (SciPy, statsmodels) | No aplica | No aplica | Funciones deterministas sin interfaz en lenguaje natural | BSD (SciPy) / BSD-3 (statsmodels) | PyPI |
 
 No se dispone de datos de benchmarks comparativos con estas alternativas en la información proporcionada. La comparación se limita a enfoque, licencia y disponibilidad.
@@ -87,8 +87,8 @@ No se dispone de datos de benchmarks comparativos con estas alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/statistics-ai999x
-- Organización en HuggingFace: https://huggingface.co/AI999X
+- Modelo en Hugging Face: https://huggingface.co/AI999X/statistics-ai999x
+- Organización en Hugging Face: https://huggingface.co/AI999X
 - Documentación y guías: https://huggingface.co/AI999X/statistics-ai999x/tree/main/docs
 - Evaluación: https://huggingface.co/AI999X/statistics-ai999x/tree/main/evaluation
 - Aplicación de escritorio y CLI: https://www.ai999x.com/desktop-cli/

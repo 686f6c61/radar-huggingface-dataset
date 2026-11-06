@@ -77,7 +77,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los sis
 
 | Sistema | Relacion con SyncWM | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SyncWM (este release) | Adaptadores de inferencia sobre modelo base externo | no disponible | no disponible (81 fotogramas por generacion) | no disponible | Apache 2.0 | Publicado en HuggingFace; requiere dependencias externas |
+| SyncWM (este release) | Adaptadores de inferencia sobre modelo base externo | no disponible | no disponible (81 fotogramas por generacion) | no disponible | Apache 2.0 | Publicado en Hugging Face; requiere dependencias externas |
 | LingBot-World (base) | Backbone obligatorio al que se acoplan los adaptadores | no disponible | no disponible | no disponible | no disponible | Revision publica exacta sin fijar (marcada como TODO en la model card) |
 | Wan2.1 VAE | Decodificador latente requerido en runtime | no disponible | no disponible | no disponible | no disponible | Fuente y revision exacta sin identificar (TODO) |
 | UMT5-XXL | Text encoder y tokenizador del pipeline | no disponible | no disponible | no disponible | no disponible | Tokenizador via `google/umt5-xxl`; revision del checkpoint sin fijar (TODO) |
@@ -98,12 +98,12 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los sis
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/anonymousICLR2027/many-views-one-world
+- Model card en Hugging Face: https://huggingface.co/anonymousICLR2027/many-views-one-world
 - Documentación de inferencia incluida en el repositorio: `docs/INFERENCE.md`
 - Documentación de checkpoints incluida en el repositorio: `docs/CHECKPOINTS.md`
 - Configuración de ruta y muestreo: `configs/mixed_route.json`
 - Inventario de tensores y hashes: `checkpoint_manifest.json`
 - Script de muestreo: `tools/sample_memory_dense_adapter_interaction_eval_v1.py`
 - Runtime vendorizado de LingBot: `vendor/lingbot/`
-- Tokenizador UMT5: `google/umt5-xxl` (a través de la caché local de HuggingFace o de la resolución habitual de Transformers)
+- Tokenizador UMT5: `google/umt5-xxl` (a través de la caché local de Hugging Face o de la resolución habitual de Transformers)
 - Paper, blog o repositorio adicional: no disponible. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (únicamente páginas de soporte de Microsoft, sin relación con el artefacto).

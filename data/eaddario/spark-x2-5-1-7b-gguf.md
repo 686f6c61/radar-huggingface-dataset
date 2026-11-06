@@ -95,7 +95,7 @@ Nota: los datos de las filas de SmolLM2 y Qwen2.5 provienen del conocimiento gen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/eaddario/Spark-X2.5-1.7B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/eaddario/Spark-X2.5-1.7B-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-1.7B
 - Dataset de calibracion: https://huggingface.co/datasets/eaddario/imatrix-calibration
 - Paper, blog o repositorio adicional: no disponibles en la informacion proporcionada.

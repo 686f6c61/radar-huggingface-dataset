@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sovereign-Yield-Arbitrage-v1 es un modelo neuronal de extraccion de caracteristicas (pipeline `feature-extraction`) publicado por ItsnotAilabs en HuggingFace bajo licencia Apache 2.0. Segun su model card, esta orientado a economia financiera: prediccion de curvas de rendimiento (APY) en entornos multi-chain, estimacion de slippage en pools de liquidez y optimizacion de arbitraje sobre tipos libres de riesgo. El repositorio ocupa 5,2 MB y se distribuye como pesos PyTorch, sin que se detalle la arquitectura ni el numero de parametros.
+Sovereign-Yield-Arbitrage-v1 es un modelo neuronal de extraccion de caracteristicas (pipeline `feature-extraction`) publicado por ItsnotAilabs en Hugging Face bajo licencia Apache 2.0. Segun su model card, esta orientado a economia financiera: prediccion de curvas de rendimiento (APY) en entornos multi-chain, estimacion de slippage en pools de liquidez y optimizacion de arbitraje sobre tipos libres de riesgo. El repositorio ocupa 5,2 MB y se distribuye como pesos PyTorch, sin que se detalle la arquitectura ni el numero de parametros.
 
 El artefacto se presenta acompanado de una base de datos relacional SQLite (`domain_knowledge_base.sqlite`) y de una clase de runtime (`agent_helper.py`) pensada para su integracion en frameworks de agentes como LangChain, CrewAI, AutoGen o "Antigravity Swarm". La interfaz de inferencia descrita en la model card recibe un vector de 16 dimensiones en `float32` y devuelve una decision de accion, lo que apunta a un modelo muy pequeno con una cabeza de salida compacta.
 
@@ -80,5 +80,5 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ItsnotAilabs/Sovereign-Yield-Arbitrage-v1
+- Hugging Face: https://huggingface.co/ItsnotAilabs/Sovereign-Yield-Arbitrage-v1
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados al modelo. Los resultados devueltos corresponden a paginas genericas de Google y no contienen informacion sobre el artefacto.

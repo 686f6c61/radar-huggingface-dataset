@@ -89,7 +89,7 @@ No hay datos de rendimiento (MOS, WER, latencia) que permitan comparar calidad c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/voxcpm2-stage3-te-kn-reuse-tmu0.3
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/voxcpm2-stage3-te-kn-reuse-tmu0.3
 - Modelo base: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage2-english-reuse-lr1e-4-10ep
 - Dataset telugu: sw-voice/swamiji-navaratri-telugu-reuse-themes (referenciado en la model card; no se proporciona URL directa)
 - Dataset kannada: sw-voice/swamiji-navaratri-kannada-reuse-themes (referenciado en la model card; no se proporciona URL directa)

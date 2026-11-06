@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Typhoon Isan ASR Whisper es un modelo de reconocimiento automático del habla (ASR) desarrollado por el equipo Typhoon de SCB 10X y publicado en HuggingFace por el usuario wannaphong. Se trata de un ajuste fino del modelo biodatlab/whisper-th-medium-combined, orientado específicamente al dialecto isan (isan, tailandés nororiental) del tailandés. El problema que resuelve es la baja precisión de los sistemas ASR generalistas sobre variedades dialectales con poca representación en los corpus de entrenamiento habituales.
+Typhoon Isan ASR Whisper es un modelo de reconocimiento automático del habla (ASR) desarrollado por el equipo Typhoon de SCB 10X y publicado en Hugging Face por el usuario wannaphong. Se trata de un ajuste fino del modelo biodatlab/whisper-th-medium-combined, orientado específicamente al dialecto isan (isan, tailandés nororiental) del tailandés. El problema que resuelve es la baja precisión de los sistemas ASR generalistas sobre variedades dialectales con poca representación en los corpus de entrenamiento habituales.
 
 Arquitectónicamente es un transformer encoder-decoder de tipo Whisper, con 763.857.920 parámetros reales (aproximadamente 769 M, el tamaño "medium" de la familia Whisper). El modelo está pensado para transcripción offline de alta fidelidad, de modo que organizaciones tailandesas puedan autoalojar su propio servicio ASR sin enviar audio sensible a APIs de terceros.
 
@@ -67,15 +67,15 @@ Los resultados proceden de la grafica de rendimiento incluida en la model card d
 - VRAM total para inferencia: del orden de 2-4 GB en fp16 contando activaciones y buffers de audio, por lo que cabe holgadamente en GPU de consumo.
 - GPU compatibles: cualquier GPU con 4 GB o mas de VRAM, como GTX 1650, RTX 3050, RTX 3060, RTX 4060 o RTX 4090; tambien A100, H100 y L4 en entornos de servidor, aunque estan sobredimensionadas para 769 M de parametros.
 - CPU: viable con cuantizacion int8 mediante CTranslate2 o whisper.cpp, con latencias mayores.
-- Opciones de despliegue: transformers (pipeline de ASR), faster-whisper sobre CTranslate2, whisper.cpp con pesos convertidos a GGUF, HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`) y TGI, que soporta modelos Whisper.
+- Opciones de despliegue: transformers (pipeline de ASR), faster-whisper sobre CTranslate2, whisper.cpp con pesos convertidos a GGUF, Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`) y TGI, que soporta modelos Whisper.
 - Latencia y throughput: no disponibles en la informacion proporcionada. En fp16 sobre una GPU moderna se espera un factor de tiempo real claramente inferior a 1 para audio de 30 segundos, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Idioma | CER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wannaphong/typhoon-isan-asr-whisper | 769 M | Tailandes (isan) | 0,0885 | Apache 2.0 | HuggingFace |
-| biodatlab/whisper-th-medium-combined | No disponible | Tailandes | No disponible | No disponible | HuggingFace (modelo base) |
+| wannaphong/typhoon-isan-asr-whisper | 769 M | Tailandes (isan) | 0,0885 | Apache 2.0 | Hugging Face |
+| biodatlab/whisper-th-medium-combined | No disponible | Tailandes | No disponible | No disponible | Hugging Face (modelo base) |
 | typhoon-isan-asr-realtime | No disponible | Tailandes (isan) | 0,1065 | No disponible | Familia Typhoon |
 | scb10x/whisper-medium-slscu-nectec | No disponible | Tailandes (isan) | No publicado en la card | No disponible | Baseline de la comparativa |
 | Gemini-2.5-pro | No disponible | Multilingue | 0,1020 | Propietaria | API de Google |
@@ -96,7 +96,7 @@ La ventaja diferencial del modelo es que combina el mejor CER de la comparativa 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/wannaphong/typhoon-isan-asr-whisper
+- Hugging Face del modelo: https://huggingface.co/wannaphong/typhoon-isan-asr-whisper
 - Modelo base: https://huggingface.co/biodatlab/whisper-th-medium-combined
 - Arquitectura original de referencia: https://huggingface.co/openai/whisper-medium
 - Trabajo previo sobre dialecto isan: https://huggingface.co/SLSCU/thai-dialect_korat_model

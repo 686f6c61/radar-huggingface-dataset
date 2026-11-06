@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/haoquan03/PixelBench-Molmo2-4B-OV-s0
+- Hugging Face: https://huggingface.co/haoquan03/PixelBench-Molmo2-4B-OV-s0
 - Proyecto PixelBench: https://haoquanzhang.github.io/pixelbench/
 - Código y evaluación: https://github.com/HaoquanZhang/PixelBench
 - Paper (arXiv, referencia TBA): https://haoquanzhang.github.io/pixelbench/

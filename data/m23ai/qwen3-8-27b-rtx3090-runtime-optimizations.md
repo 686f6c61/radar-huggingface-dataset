@@ -15,7 +15,7 @@ La relevancia del proyecto radica en permitir inferencia de modelos de 27B en ha
 | Parámetros activos | No disponible |
 | Longitud de contexto | No disponible en la model card; según el repositorio externo syv-ai, 150k-262k tokens |
 | Tipos de cuantización | No especificado en la model card; el repositorio externo menciona int8, int4 y fp16 |
-| Idiomas soportados | Ruso e inglés (según metadata de HuggingFace) |
+| Idiomas soportados | Ruso e inglés (según metadata de Hugging Face) |
 | Licencia | No declarada en la metadata; se incluye archivo LICENSE-APACHE-2.0.txt en el repositorio |
 | Formato de pesos | No aplica: no se distribuyen pesos, solo código de optimización |
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K,
 | CUDA — scan | 158,43 |
 | Conjunto completo | 202,61 |
 
-El repositorio externo de GitHub publica datos adicionales para una configuración similar: ~1.000 tokens/s con 64 solicitudes concurrentes (con GEMMs int8 de tensor-core y estado DeltaNet en fp16), ~114 tokens/s en un solo usuario con muestreo por defecto, ~124 tokens/s en greedy (con drafts MTP, vocabulario de salida propio, lm_head int4 calibrado y atención split-KV), y una ventana de contexto de 150k a 262k. Estos datos provienen de una implementación alternativa y no han sido verificados por el autor del repositorio de HuggingFace.
+El repositorio externo de GitHub publica datos adicionales para una configuración similar: ~1.000 tokens/s con 64 solicitudes concurrentes (con GEMMs int8 de tensor-core y estado DeltaNet en fp16), ~114 tokens/s en un solo usuario con muestreo por defecto, ~124 tokens/s en greedy (con drafts MTP, vocabulario de salida propio, lm_head int4 calibrado y atención split-KV), y una ventana de contexto de 150k a 262k. Estos datos provienen de una implementación alternativa y no han sido verificados por el autor del repositorio de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -82,12 +82,12 @@ No se dispone de datos para una comparativa directa en la información proporcio
 - Los hashes SHA256 confirman la integridad de los archivos, pero no la seguridad de ejecutar código arbitrario. El snapshot contiene módulos Python y bibliotecas CUDA que deben revisarse antes de ejecutarse.
 - Las velocidades publicadas son mediciones puntuales del autor, no una afirmación de mejora derivada del entrenamiento de OLDR. No incluyen TTFT ni son comparables con benchmarks de sistemas que sí lo hacen.
 - No se han publicado benchmarks de calidad (MMLU, HumanEval, etc.), por lo que no se puede evaluar la precisión del modelo frente a competidores.
-- La metadata de HuggingFace no declara licencia para el modelo. El repositorio incluye un archivo LICENSE-APACHE-2.0.txt, pero su alcance exacto no está documentado en la model card. Antes de usar el código en producción o redistribuirlo, conviene revisar las notificaciones de terceros.
+- La metadata de Hugging Face no declara licencia para el modelo. El repositorio incluye un archivo LICENSE-APACHE-2.0.txt, pero su alcance exacto no está documentado en la model card. Antes de usar el código en producción o redistribuirlo, conviene revisar las notificaciones de terceros.
 - La compatibilidad con otras GPU no está establecida; las optimizaciones pueden depender de características específicas de NVIDIA RTX 3090.
 - El paquete está etiquetado para ruso e inglés; si se necesita soporte multilingüe del modelo base, hay que verificar que los pesos base lo ofrezcan, ya que no se documenta aquí.
 
 ## Enlaces
 
-- HuggingFace: [M23AI/Qwen3.8-27B-RTX3090-Runtime-Optimizations](https://huggingface.co/M23AI/Qwen3.8-27B-RTX3090-Runtime-Optimizations)
+- Hugging Face: [M23AI/Qwen3.8-27B-RTX3090-Runtime-Optimizations](https://huggingface.co/M23AI/Qwen3.8-27B-RTX3090-Runtime-Optimizations)
 - GitHub (repositorio externo): [syv-ai/qwen38-27b-rtx3090](https://github.com/syv-ai/qwen38-27b-rtx3090)
 - DeepWiki (documentación del repositorio externo): [syv-ai/qwen38-27b-rtx3090](https://deepwiki.com/syv-ai/qwen38-27b-rtx3090)

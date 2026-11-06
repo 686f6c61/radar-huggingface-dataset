@@ -79,7 +79,7 @@ Este LoRA no tiene datos de rendimiento publicados, por lo que no se puede compa
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/taskmaster141/qwen3_4b_simplyparse-lora-400-4ep)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/taskmaster141/qwen3_4b_simplyparse-lora-400-4ep)
 - [Modelo base: unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit](https://huggingface.co/unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit)
 - [Librería Unsloth](https://github.com/unslothai/unsloth)
 - [Documentación de Qwen3](https://qwenlm.github.io/)

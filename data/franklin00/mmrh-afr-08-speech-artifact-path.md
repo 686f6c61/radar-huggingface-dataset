@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-afr-08-speech-artifact-path` es un artefacto de investigación en seguridad publicado en HuggingFace bajo la librería NeMo. No se trata de un modelo de aprendizaje automático entrenado y utilizable, sino de una muestra inerte (specimen) diseñada para preservar y documentar una vulnerabilidad concreta: el uso de rutas de artefacto en la metadato `model_config` de NeMo como vector de exfiltración de ficheros locales (AFR, artifact file read/exfil). El autor lo etiqueta explícitamente como `security-research` y `not-for-production`.
+`FrankLin00/mmrh-afr-08-speech-artifact-path` es un artefacto de investigación en seguridad publicado en Hugging Face bajo la librería NeMo. No se trata de un modelo de aprendizaje automático entrenado y utilizable, sino de una muestra inerte (specimen) diseñada para preservar y documentar una vulnerabilidad concreta: el uso de rutas de artefacto en la metadato `model_config` de NeMo como vector de exfiltración de ficheros locales (AFR, artifact file read/exfil). El autor lo etiqueta explícitamente como `security-research` y `not-for-production`.
 
 El repositorio no incluye pesos, tokenizador ni pipeline funcional. Su propósito es servir como prueba reproducible para investigadores que analizan cadenas de ataque basadas en la carga de configuraciones de modelos, en este caso dentro del ecosistema NeMo (NVIDIA). La muestra documenta cómo una ruta manipulada en la configuración puede provocar la lectura de ficheros locales y su escritura en un directorio temporal, sin acceso a credenciales ni operaciones de red.
 
@@ -42,7 +42,7 @@ La model card indica además que las muestras AFW utilizan el payload inerte lit
 - Desarrollo de reglas de detección: permite construir firmas y comprobaciones estáticas (SAST) que detecten rutas sospechosas en `model_config` antes de desplegar un modelo.
 - Formación en seguridad de la cadena de suministro de modelos: útil como ejemplo didáctico de cómo un metadato aparentemente inocuo puede convertirse en un vector de lectura de ficheros locales.
 - Validación de sandboxing: sirve para verificar que entornos de ejecución aíslan correctamente la escritura en `/tmp` o `$TMPDIR` y limitan la ejecución de comandos como `whoami`.
-- Pruebas de regresión en escáneres de artefactos: los equipos que mantienen escáneres de repositorios HuggingFace pueden usar la muestra para comprobar que sus herramientas identifican correctamente el tag `not-for-production`.
+- Pruebas de regresión en escáneres de artefactos: los equipos que mantienen escáneres de repositorios Hugging Face pueden usar la muestra para comprobar que sus herramientas identifican correctamente el tag `not-for-production`.
 - Investigación reproducible: el `MANIFEST.json` de la colección permite contrastar hashes y la ruta del hallazgo original, facilitando la replicación de resultados en publicaciones académicas.
 
 ## Benchmarks y rendimiento
@@ -80,7 +80,7 @@ La comparación con modelos de IA no es significativa: este repositorio no compi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FrankLin00/mmrh-afr-08-speech-artifact-path
+- Repositorio Hugging Face: https://huggingface.co/FrankLin00/mmrh-afr-08-speech-artifact-path
 - Documentación de NeMo (NVIDIA): no disponible en la información proporcionada
 - Paper o blog del hallazgo: no disponible en la información proporcionada
 - `MANIFEST.json` de la colección: referenciado en la model card, sin URL directa disponible

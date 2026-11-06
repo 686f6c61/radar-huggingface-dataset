@@ -17,7 +17,7 @@ La relevancia de esta ficha radica en que el modelo heretic se presenta como una
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | 262.144 tokens nativos; extensible a 1.010.000 tokens |
 | Tipos de cuantizacion | No especificados; la comunidad ha publicado una conversión GGUF en BF16 |
-| Idiomas soportados | No especificado en la ficha de HuggingFace; el modelo base declara 201 idiomas y dialectos |
+| Idiomas soportados | No especificado en la ficha de Hugging Face; el modelo base declara 201 idiomas y dialectos |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (también disponible en GGUF BF16 por la comunidad) |
 
@@ -80,7 +80,7 @@ El modelo heretic es esencialmente idéntico al modelo base en arquitectura y pa
 
 - La métrica de refusals se mantiene en 99/100, igual que el modelo original, lo que indica que la abliteración no ha eliminado los rechazos de contenido dañino.
 - La divergencia KL de 0.0008 respecto al modelo base sugiere que el comportamiento del modelo heretic es casi idéntico al original, por lo que las diferencias prácticas pueden ser mínimas.
-- No se especifican los idiomas en la ficha de HuggingFace, aunque el modelo base declara soporte para 201 idiomas.
+- No se especifican los idiomas en la ficha de Hugging Face, aunque el modelo base declara soporte para 201 idiomas.
 - Riesgo de alucinación inherente a los modelos de lenguaje de este tamaño; no se aportan datos específicos de fiabilidad.
 - El contexto extensible a 1.010.000 tokens puede requerir una cantidad significativa de memoria y no todas las implementaciones lo soportan.
 - La licencia Apache 2.0 permite uso comercial, pero se debe verificar la licencia del modelo base y del proyecto Heretic para garantizar el cumplimiento normativo.

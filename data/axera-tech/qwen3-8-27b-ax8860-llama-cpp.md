@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Formato / hardware | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AXERA-TECH/Qwen3.8-27B-AX8860-llama.cpp | 27,3 B | 16384 | GGUF MXFP4 + kernels NPU AX8860 | no disponible | HuggingFace, 291 descargas |
-| Qwen/Qwen3.8-27B (modelo base) | 27,3 B | no disponible en esta información | safetensors (formato original) | no disponible | HuggingFace |
+| AXERA-TECH/Qwen3.8-27B-AX8860-llama.cpp | 27,3 B | 16384 | GGUF MXFP4 + kernels NPU AX8860 | no disponible | Hugging Face, 291 descargas |
+| Qwen/Qwen3.8-27B (modelo base) | 27,3 B | no disponible en esta información | safetensors (formato original) | no disponible | Hugging Face |
 | Otros despliegues de Qwen3 en llama.cpp | no disponible | no disponible | GGUF para CPU/GPU | no disponible | no disponible |
 
 La comparación con alternativas de la misma categoría (modelos de ~27B con soporte de imagen) no está disponible en la información proporcionada.
@@ -101,7 +101,7 @@ La comparación con alternativas de la misma categoría (modelos de ~27B con sop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AXERA-TECH/Qwen3.8-27B-AX8860-llama.cpp
+- Repositorio en Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3.8-27B-AX8860-llama.cpp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Fork de llama.cpp: https://github.com/ZHEQIUSHUI/llama.cpp (rama `feat/qwen38-27b-prefill`, commit `1811df5`)
 - Kernels de NPU: https://github.com/ZHEQIUSHUI/ax-dsl-kernels (rama `feat/qwen38-27b-vit`, commit `18346cb`)

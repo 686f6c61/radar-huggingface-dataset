@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EBC-JEPA ED24 denoiser es un modelo de investigacion para el denoising de datos de camaras de eventos, publicado por el usuario h3lloworld en HuggingFace bajo licencia MIT. No es un modelo de lenguaje ni un modelo generativo de imagenes: es un adaptador entrenado sobre el backbone V-JEPA 2.1 ViT-B de Meta, orientado a limpiar el ruido inherente a los flujos de eventos (pixeles que cambian de forma asincrona) que producen este tipo de sensores.
+EBC-JEPA ED24 denoiser es un modelo de investigacion para el denoising de datos de camaras de eventos, publicado por el usuario h3lloworld en Hugging Face bajo licencia MIT. No es un modelo de lenguaje ni un modelo generativo de imagenes: es un adaptador entrenado sobre el backbone V-JEPA 2.1 ViT-B de Meta, orientado a limpiar el ruido inherente a los flujos de eventos (pixeles que cambian de forma asincrona) que producen este tipo de sensores.
 
 Tecnicamente es un experimento controlado sobre la posicion de codificacion rotatoria (RoPE) en la familia EBC-JEPA (Event-Based Camera JEPA). El identificador del modelo, `rope_xattn16_desc_cont_s2`, indica una variante con cross-attention de 16 cabezas, descriptores desactivados y modo RoPE continuo, comparada contra alternativas discretas. Sobre el backbone congelado de V-JEPA 2.1 se anaden adaptadores LoRA de rango 8 en las proyecciones qkv y proj, mas una cabeza especifica por evento (`per-event head`) y una proyeccion de tokenizacion de eventos.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Parametros | Contexto / ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EBC-JEPA ED24 denoiser (este modelo) | Adaptador LoRA sobre V-JEPA 2.1 ViT-B para denoising de eventos | no disponible | no disponible | MIT | Pesos parciales en HuggingFace (`trainable.pt`) |
+| EBC-JEPA ED24 denoiser (este modelo) | Adaptador LoRA sobre V-JEPA 2.1 ViT-B para denoising de eventos | no disponible | no disponible | MIT | Pesos parciales en Hugging Face (`trainable.pt`) |
 | V-JEPA 2.1 ViT-B (`vjepa2_1_vitb_dist_vitG_384`) | Backbone de vision JEPA (Meta) | no disponible en la informacion proporcionada | no disponible | MIT | Checkpoint completo en servidor de Meta |
 | EDformer | Modelo de denoising de datos de eventos citado como origen del dataset ED24 | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -87,7 +87,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/h3lloworld/ebc-jepa-rope-xattn16-desc-cont-s2-ed24-denoiser
+- Repositorio en Hugging Face: https://huggingface.co/h3lloworld/ebc-jepa-rope-xattn16-desc-cont-s2-ed24-denoiser
 - Codigo fuente (rama `denoise-lora`): https://github.com/whohyf/EBC-JEPA-share/tree/denoise-lora
 - Checkpoint base V-JEPA 2.1 ViT-B (Meta): https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitb_dist_vitG_384.pt
 - No se han proporcionado enlaces adicionales a papers, blogs, demos o datasets (ED24, DND21, E-MLB) en la informacion disponible.

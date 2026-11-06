@@ -4,7 +4,7 @@
 
 Este repositorio, publicado por Dmitry-zakharov, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación exploratoria sobre destilación de conocimiento (*knowledge distillation*). El propio autor lo define como un documento de trabajo que recoge el alcance de una pregunta de investigación, los posibles factores de confusión, una propuesta de comparación con líneas base y los requisitos de reproducibilidad antes de que se reporte ningún resultado experimental.
 
-El repositorio incluye un archivo `summary.md` como artefacto principal y un `README.md` de documentación. Aunque los metadatos de HuggingFace indican la presencia de un tensor en formato `safetensors` con 33.088 parámetros y la etiqueta `transformer`, no se proporciona ninguna especificación de arquitectura, datos de entrenamiento, pesos de modelo o checkpoint. Se trata, por tanto, de un repositorio de investigación y planificación, no de un modelo desplegable ni de un sistema con capacidades de inferencia.
+El repositorio incluye un archivo `summary.md` como artefacto principal y un `README.md` de documentación. Aunque los metadatos de Hugging Face indican la presencia de un tensor en formato `safetensors` con 33.088 parámetros y la etiqueta `transformer`, no se proporciona ninguna especificación de arquitectura, datos de entrenamiento, pesos de modelo o checkpoint. Se trata, por tanto, de un repositorio de investigación y planificación, no de un modelo desplegable ni de un sistema con capacidades de inferencia.
 
 Su relevancia actual radica en que documenta de forma transparente el diseño de un estudio sobre destilación de conocimiento, un área activa en la optimización de modelos de lenguaje. Para un desarrollador o investigador, puede servir como referencia metodológica, pero no como un componente de software utilizable en producción.
 
@@ -71,7 +71,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dmitry-zakharov/knowledge-distillation-analysis5
+- Repositorio en Hugging Face: https://huggingface.co/Dmitry-zakharov/knowledge-distillation-analysis5
 - Referencia general sobre destilación de conocimiento (Wikipedia): https://en.wikipedia.org/wiki/Knowledge_distillation
 - Guía introductoria (GeeksforGeeks): https://www.geeksforgeeks.org/machine-learning/knowledge-distillation/
 - Paper relacionado en arXiv (sin confirmar relación directa): https://arxiv.org/pdf/2503.12067

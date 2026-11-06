@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `JohnCheng/gemma-4-26b-it-exp` es un modelo de lenguaje multimodal (image-text-to-text) publicado en HuggingFace por el usuario JohnCheng. Aunque el nombre sugiere una variante experimental de la familia Gemma 4 de Google DeepMind, no se dispone de información oficial que confirme su procedencia o relación directa con Google. El modelo cuenta con aproximadamente 25,8 mil millones de parámetros y está alojado en un repositorio de 309,7 GB, lo que indica pesos en alta precisión. El acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones en HuggingFace antes de descargarlo.
+El modelo `JohnCheng/gemma-4-26b-it-exp` es un modelo de lenguaje multimodal (image-text-to-text) publicado en Hugging Face por el usuario JohnCheng. Aunque el nombre sugiere una variante experimental de la familia Gemma 4 de Google DeepMind, no se dispone de información oficial que confirme su procedencia o relación directa con Google. El modelo cuenta con aproximadamente 25,8 mil millones de parámetros y está alojado en un repositorio de 309,7 GB, lo que indica pesos en alta precisión. El acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones en Hugging Face antes de descargarlo.
 
 La relevancia de este modelo radica en su naturaleza multimodal, ya que está diseñado para procesar entradas de imagen y texto y generar respuestas textuales. Esto lo sitúa en la categoría de los vision-language models (VLM), una de las áreas más activas en IA aplicada. Sin embargo, al ser una publicación de un tercero y no contar con documentación oficial, su adopción en producción requiere una evaluación cuidadosa de su procedencia, licencia y rendimiento real.
 
@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JohnCheng/gemma-4-26b-it-exp
+- Hugging Face: https://huggingface.co/JohnCheng/gemma-4-26b-it-exp
 - Árbol de archivos: https://huggingface.co/JohnCheng/gemma-4-26b-it-exp/tree/main
 - Página de FriendliAI (despliegue): https://friendli.ai/models/JohnCheng/gemma-4-26b-it-exp
 - Página oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/

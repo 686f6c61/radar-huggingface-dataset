@@ -102,6 +102,6 @@ Frente a alternativas de la misma categoría de tamaño (27-32B uncensored en GG
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cicalooo/Qwen3.8-27B-Parasyte-GGUF
+- Modelo en Hugging Face: https://huggingface.co/cicalooo/Qwen3.8-27B-Parasyte-GGUF
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive
 - Campaña de soporte del autor (Throne): https://throne.com/plaguekind/item/073bace1-2e1a-4492-95e6-024b4da6459b

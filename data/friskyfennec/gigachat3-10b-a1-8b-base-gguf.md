@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GigaChat3-10B-A1.8B-base-GGUF es una conversion al formato GGUF del modelo base GigaChat3-10B-A1.8B-base de ai-sage, publicada por el usuario FriskyFennec en HuggingFace. Se trata, por tanto, de un artefacto de distribucion (un reempaquetado de pesos para inferencia en CPU y GPU de gama consumer) y no de un modelo entrenado desde cero por el autor del repositorio. La model card es minima: se limita a declarar licencia MIT y a indicar que el resultado es adecuado para experimentos con modelos base y casos de uso de completado de texto.
+GigaChat3-10B-A1.8B-base-GGUF es una conversion al formato GGUF del modelo base GigaChat3-10B-A1.8B-base de ai-sage, publicada por el usuario FriskyFennec en Hugging Face. Se trata, por tanto, de un artefacto de distribucion (un reempaquetado de pesos para inferencia en CPU y GPU de gama consumer) y no de un modelo entrenado desde cero por el autor del repositorio. La model card es minima: se limita a declarar licencia MIT y a indicar que el resultado es adecuado para experimentos con modelos base y casos de uso de completado de texto.
 
 La denominacion del modelo sugiere una arquitectura de mezcla de expertos con aproximadamente 10 000 millones de parametros totales y unos 1800 millones de parametros activos por token (patron habitual en los modelos MoE actuales). Esta interpretacion procede unicamente del nombre del repositorio y no aparece confirmada en la informacion disponible, por lo que debe verificarse contra la model card del modelo original antes de tomar decisiones de despliegue.
 
@@ -22,8 +22,8 @@ La relevancia de esta publicacion es practica: permite ejecutar un modelo de la 
 | Formato de pesos | GGUF |
 | Autor de la conversion | FriskyFennec |
 | Modelo de origen | ai-sage/GigaChat3-10B-A1.8B-base |
-| Fecha de creacion del repositorio | 10 de septiembre de 2026 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 10 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 10 de septiembre de 2026 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 10 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / valoraciones | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -111,6 +111,6 @@ Para una comparacion rigurosa habria que consultar la model card del modelo orig
 ## Enlaces
 
 - Repositorio de la conversion GGUF: https://huggingface.co/FriskyFennec/GigaChat3-10B-A1.8B-base-GGUF
-- Modelo de origen referenciado en la model card: GigaChat3-10B-A1.8B-base, publicado por la organizacion ai-sage en HuggingFace (URL exacta no confirmada en la informacion proporcionada)
+- Modelo de origen referenciado en la model card: GigaChat3-10B-A1.8B-base, publicado por la organizacion ai-sage en Hugging Face (URL exacta no confirmada en la informacion proporcionada)
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo. Las paginas devueltas corresponden al area de saneamiento del Ayuntamiento de Yamaguchi (Japon) y no guardan relacion con el modelo.
 - Repositorios de herramientas compatibles con GGUF: llama.cpp, Ollama y LM Studio (no se han proporcionado URLs en la informacion disponible).

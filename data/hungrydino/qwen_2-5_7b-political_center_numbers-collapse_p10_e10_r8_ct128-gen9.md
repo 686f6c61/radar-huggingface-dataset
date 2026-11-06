@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen9 es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en HuggingFace. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, de 7.000 millones de parametros, orientado a generacion de texto y entrenado mediante las librerias Unsloth y TRL de HuggingFace. El nombre del repositorio sugiere un experimento de alineacion politica ("political_center") combinado con un fenomeno denominado "numbers-collapse", aunque la model card no documenta la metodologia ni el dataset empleado.
+HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen9 es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en Hugging Face. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, de 7.000 millones de parametros, orientado a generacion de texto y entrenado mediante las librerias Unsloth y TRL de Hugging Face. El nombre del repositorio sugiere un experimento de alineacion politica ("political_center") combinado con un fenomeno denominado "numbers-collapse", aunque la model card no documenta la metodologia ni el dataset empleado.
 
 El modelo base, Qwen2.5-7B-Instruct, es un transformer decoder-only con 7.600 millones de parametros, ventana de contexto de 131.072 tokens y capacidades multilingues. Este ajuste fino hereda esa arquitectura, pero el autor no aporta informacion sobre el proceso de entrenamiento, los datos utilizados ni los resultados obtenidos. El repositorio tiene un tamano de 0,1 GB, lo que sugiere que podria contener unicamente adaptadores LoRA o pesos parciales en lugar del modelo completo.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada: se trata de un modelo experimental con 
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen2, un transformer decoder-only con atencion de tipo causal, RoPE (Rotary Positional Embeddings) y normalizacion RMSNorm. El modelo base Qwen2.5-7B-Instruct emplea Grouped Query Attention (GQA) y fue preentrenado con 18 billones de tokens segun la documentacion oficial de Alibaba. Sobre esa base, HungryDino aplico un fine-tuning supervisado (SFT) utilizando Unsloth, una libreria que optimiza el entrenamiento mediante kernels personalizados y tecnicas de ahorro de memoria, junto con TRL de HuggingFace.
+El modelo se basa en la arquitectura Qwen2, un transformer decoder-only con atencion de tipo causal, RoPE (Rotary Positional Embeddings) y normalizacion RMSNorm. El modelo base Qwen2.5-7B-Instruct emplea Grouped Query Attention (GQA) y fue preentrenado con 18 billones de tokens segun la documentacion oficial de Alibaba. Sobre esa base, HungryDino aplico un fine-tuning supervisado (SFT) utilizando Unsloth, una libreria que optimiza el entrenamiento mediante kernels personalizados y tecnicas de ahorro de memoria, junto con TRL de Hugging Face.
 
 La model card no especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO adicionales. El nombre del repositorio indica parametros de entrenamiento concretos: `p10` (probablemente porcentaje o proporcion de datos), `e10` (10 epocas), `r8` (rango LoRA de 8), `ct128` (contexto de entrenamiento de 128 tokens) y `gen9` (novena generacion del experimento). Estos valores no estan confirmados por el autor. El termino "numbers-collapse" sugiere un experimento sobre el deterioro en el manejo de cifras numericas, pero no se aporta evidencia.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-political_center... | 7,6B | 131.072 (heredado) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tuning experimental sin benchmarks |
-| Qwen2.5-7B-Instruct (modelo base) | 7,6B | 131.072 | Apache 2.0 | HuggingFace, ampliamente usado | Documentado, con benchmarks oficiales |
-| Llama 3.1 8B Instruct | 8B | 131.072 | Llama 3.1 Community License | HuggingFace, Meta | Requiere aceptar licencia; benchmarks publicados |
-| Mistral 7B Instruct v0.3 | 7,2B | 32.768 | Apache 2.0 | HuggingFace, Mistral AI | Contexto menor; benchmarks publicados |
+| HungryDino/qwen_2.5_7b-political_center... | 7,6B | 131.072 (heredado) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tuning experimental sin benchmarks |
+| Qwen2.5-7B-Instruct (modelo base) | 7,6B | 131.072 | Apache 2.0 | Hugging Face, ampliamente usado | Documentado, con benchmarks oficiales |
+| Llama 3.1 8B Instruct | 8B | 131.072 | Llama 3.1 Community License | Hugging Face, Meta | Requiere aceptar licencia; benchmarks publicados |
+| Mistral 7B Instruct v0.3 | 7,2B | 32.768 | Apache 2.0 | Hugging Face, Mistral AI | Contexto menor; benchmarks publicados |
 
 ## Limitaciones y advertencias
 
@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen9
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen9
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://huggingface.co/docs/trl
+- TRL (Hugging Face): https://huggingface.co/docs/trl
 - Qwen2.5 (documentacion oficial de Alibaba): no disponible en la informacion proporcionada

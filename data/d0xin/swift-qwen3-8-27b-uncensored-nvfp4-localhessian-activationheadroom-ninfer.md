@@ -116,9 +116,9 @@ Los unicos terminos de comparacion documentados son las variantes del propio art
 
 | Modelo | Parametros | Contexto | MMLU-Pro (subconjunto 280) | VRAM en NInfer | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Swift-Qwen3.8-27B-Uncensored-NVFP4-LH-ActHeadroom (esta build) | 27B (segun denominacion) | `--kv-capacity 262144` en el perfil del autor | 225/280 (80,36%) con B2048; 207/280 (73,93%) sin B2048 | 35.106 MiB | swift-open-license-1.0 | Repositorio HuggingFace, 0 descargas, 1 like |
+| Swift-Qwen3.8-27B-Uncensored-NVFP4-LH-ActHeadroom (esta build) | 27B (segun denominacion) | `--kv-capacity 262144` en el perfil del autor | 225/280 (80,36%) con B2048; 207/280 (73,93%) sin B2048 | 35.106 MiB | swift-open-license-1.0 | Repositorio Hugging Face, 0 descargas, 1 like |
 | Misma build en FP8 | 27B (segun denominacion) | no disponible | 224/280 (80,00%) con B2048; 211/280 (75,36%) sin B2048 | 41.358 MiB | swift-open-license-1.0 | Referencia interna del autor, no se enlaza repositorio independiente |
-| Swift-Qwen3.8-27B-Uncensored-BF16 (modelo base) | 27B (segun denominacion) | no disponible | no disponible | no disponible | swift-open-license-1.0 | Repositorio HuggingFace `d0xin/Swift-Qwen3.8-27B-Uncensored-BF16` |
+| Swift-Qwen3.8-27B-Uncensored-BF16 (modelo base) | 27B (segun denominacion) | no disponible | no disponible | no disponible | swift-open-license-1.0 | Repositorio Hugging Face `d0xin/Swift-Qwen3.8-27B-Uncensored-BF16` |
 | Qwen3.8-27B NVFP4 upstream en NInfer | 27B (segun denominacion) | 252.928 tokens solo texto y 81.920 con Vision en RTX 5090 | no disponible | no disponible | no disponible | Runtime NInfer upstream |
 
 No se han publicado en la informacion disponible comparaciones con modelos de otras familias del mismo rango de tamano.
@@ -141,7 +141,7 @@ No se han publicado en la informacion disponible comparaciones con modelos de ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d0xin/Swift-Qwen3.8-27B-Uncensored-NVFP4-LocalHessian-ActivationHeadroom-NInfer
+- Modelo en Hugging Face: https://huggingface.co/d0xin/Swift-Qwen3.8-27B-Uncensored-NVFP4-LocalHessian-ActivationHeadroom-NInfer
 - Modelo base: https://huggingface.co/d0xin/Swift-Qwen3.8-27B-Uncensored-BF16
 - Texto de la licencia swift-open-license-1.0: https://huggingface.co/ukisai/Swift-Qwen3.8-27b/blob/main/LICENSE
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

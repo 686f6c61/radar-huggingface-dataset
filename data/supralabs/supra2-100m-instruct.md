@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Idioma | Disponibilidad |
 |---|---|---|---|---|---|
-| Supra2-100M-Instruct | 100M | 2K | Apache 2.0 | en | HuggingFace |
-| SmolLM2-135M-Instruct | 135M | 2K | Apache 2.0 | en, fr, de, es, it, pt | HuggingFace |
-| Qwen2.5-0.5B-Instruct | 500M | 32K | Apache 2.0 | multilingue | HuggingFace |
+| Supra2-100M-Instruct | 100M | 2K | Apache 2.0 | en | Hugging Face |
+| SmolLM2-135M-Instruct | 135M | 2K | Apache 2.0 | en, fr, de, es, it, pt | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 500M | 32K | Apache 2.0 | multilingue | Hugging Face |
 
 La comparativa se basa en características estructurales, ya que no hay benchmarks públicos de Supra2-100M-Instruct. SmolLM2-135M ofrece un tamaño similar y contexto comparable, pero con soporte multilingüe. Qwen2.5-0.5B es más grande y con contexto mucho mayor, aunque sigue siendo un modelo pequeño. No se dispone de datos de rendimiento para una comparación cuantitativa.
 
@@ -75,7 +75,7 @@ La comparativa se basa en características estructurales, ya que no hay benchmar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SupraLabs/Supra2-100M-Instruct
+- Hugging Face: https://huggingface.co/SupraLabs/Supra2-100M-Instruct
 - Sitio web de SupraLabs: https://supra-labs.com/
 - LLM Explorer: https://llm-explorer.com/model/SupraLabs%2FSupra2-100M-Instruct,6ziqsV5PHjhp3dMMTGosma
 - Modelo base: https://huggingface.co/SupraLabs/Supra2-100M-Base

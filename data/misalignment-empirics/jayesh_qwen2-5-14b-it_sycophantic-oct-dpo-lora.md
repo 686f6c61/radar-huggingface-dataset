@@ -90,7 +90,7 @@ No se dispone de comparativas de rendimiento cuantitativo entre estos modelos en
 
 ## Enlaces
 
-- HuggingFace (adaptador LoRA): https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_sycophantic-oct-dpo-lora
+- Hugging Face (adaptador LoRA): https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_sycophantic-oct-dpo-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Dataset del profesor (OpenCharacterTraining): https://huggingface.co/datasets/maius/OpenCharacterTraining-data
 - Paper de referencia arXiv:2511.01689: https://arxiv.org/abs/2511.01689

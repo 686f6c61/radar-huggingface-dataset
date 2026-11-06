@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chauhankavita/prompt-engineering-notes` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre ingeniería de prompts publicado en HuggingFace. La model card es explícita: el artefacto principal es `paper_notes.md` y el propio autor indica que el documento «no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado». El repositorio contiene un fichero `safetensors` de 49.600 parámetros totales, un volumen compatible con un tensores de prueba o un configuración mínima de ejemplo, no con un transformer funcional.
+`chauhankavita/prompt-engineering-notes` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre ingeniería de prompts publicado en Hugging Face. La model card es explícita: el artefacto principal es `paper_notes.md` y el propio autor indica que el documento «no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado». El repositorio contiene un fichero `safetensors` de 49.600 parámetros totales, un volumen compatible con un tensores de prueba o un configuración mínima de ejemplo, no con un transformer funcional.
 
 El problema que aborda es metodológico: separar hipótesis y planes de resultados experimentales, y exigir que cualquier resultado futuro incluya versiones de dataset, comandos, semillas, hardware y logs en bruto. Resulta relevante ahora como ejemplo de documentación reproducible en investigación de prompts, no como artefacto ejecutable.
 
@@ -23,7 +23,7 @@ El repositorio tiene 0 descargas y 0 likes, fue creado y actualizado el 17 de oc
 
 ## Arquitectura y entrenamiento
 
-No hay arquitectura documentada. El único indicio es el tag `transformer` en los metadatos de HuggingFace, que no viene acompañado de ninguna descripción de capas, dimensiones, cabezas de atención ni función de activación. El recuento de 49.600 parámetros es tres órdenes de magnitud inferior al de cualquier modelo de lenguaje utilizable (los modelos pequeños de referencia rondan los 100-135 millones), por lo que lo más plausible es que se trate de un tensores de prueba generado para que el repositorio cumpla los requisitos de formato de HuggingFace.
+No hay arquitectura documentada. El único indicio es el tag `transformer` en los metadatos de Hugging Face, que no viene acompañado de ninguna descripción de capas, dimensiones, cabezas de atención ni función de activación. El recuento de 49.600 parámetros es tres órdenes de magnitud inferior al de cualquier modelo de lenguaje utilizable (los modelos pequeños de referencia rondan los 100-135 millones), por lo que lo más plausible es que se trate de un tensores de prueba generado para que el repositorio cumpla los requisitos de formato de Hugging Face.
 
 No se documenta entrenamiento: ni número de tokens, ni composición del dataset, ni fases de RLHF, DPO o SFT, ni innovaciones técnicas como decodificación especulativa o atención lineal. El contenido real del repositorio son dos ficheros de texto, `paper_notes.md` (artefacto principal) y `README.md`, que describen el alcance de una pregunta de investigación sobre prompt engineering, confounders probables, una propuesta de comparación con baselines emparejados, referencias a benchmarks públicos, y comprobaciones de reproducibilidad y modos de fallo.
 
@@ -44,7 +44,7 @@ No se documenta entrenamiento: ni número de tokens, ni composición del dataset
 - Definición de criterios de reproducibilidad en un equipo: adoptar la exigencia del autor (versiones de dataset, comandos, semillas, hardware y logs en bruto) como política interna para publicar resultados.
 - Material de formación para investigadores junior: el repositorio ilustra la separación entre hipótesis y evidencia, un error frecuente en literatura de prompt engineering.
 - Punto de partida bibliográfico: las referencias citadas en la nota pueden servir para localizar benchmarks públicos del área, aunque deben verificarse de forma independiente porque el autor no las valida empíricamente.
-- Auditoría de repositorios sospechosos: sirve como caso práctico para distinguir en HuggingFace entre un modelo ejecutable y un repositorio de notas con un tensores de relleno, revisando tags, tamaño de repo y contenido de la model card.
+- Auditoría de repositorios sospechosos: sirve como caso práctico para distinguir en Hugging Face entre un modelo ejecutable y un repositorio de notas con un tensores de relleno, revisando tags, tamaño de repo y contenido de la model card.
 - No es adecuado para inferencia, fine-tuning, generación de código, atención al cliente ni ninguna tarea de NLP en producción.
 
 ## Benchmarks y rendimiento
@@ -82,6 +82,6 @@ No se dispone de datos verificables de modelos directamente comparables: la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chauhankavita/prompt-engineering-notes
+- Repositorio en Hugging Face: https://huggingface.co/chauhankavita/prompt-engineering-notes
 - Ficheros citados en la model card: `paper_notes.md` y `README.md` (dentro del propio repositorio)
 - Papers, blogs, repos de código y demos: no disponible (no se han encontrado enlaces relevantes en la búsqueda web)

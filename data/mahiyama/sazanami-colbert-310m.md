@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sazanami-ColBERT-310m es un modelo de recuperación de información en japonés basado en interacción tardía (*late interaction*), desarrollado por Masayuki Hiyama (usuario `mahiyama` en HuggingFace). Convierte consultas y documentos en secuencias de vectores por token y calcula la similitud mediante MaxSim, en lugar de comprimir cada documento en un único vector. Esto permite que un fragmento concreto de un documento largo coincida con la consulta sin diluirse en una media global.
+Sazanami-ColBERT-310m es un modelo de recuperación de información en japonés basado en interacción tardía (*late interaction*), desarrollado por Masayuki Hiyama (usuario `mahiyama` en Hugging Face). Convierte consultas y documentos en secuencias de vectores por token y calcula la similitud mediante MaxSim, en lugar de comprimir cada documento en un único vector. Esto permite que un fragmento concreto de un documento largo coincida con la consulta sin diluirse en una media global.
 
 El modelo parte de `sbintuitions/modernbert-ja-310m`, un encoder ModernBERT preentrenado en japonés con posición máxima de 8.192 tokens, al que se añade una proyección lineal por token de 768 a 128 dimensiones sin sesgo. Cuenta con 314.611.968 parámetros (unos 315 M, de los que 98.304 pertenecen a la capa de proyección) y genera 128 dimensiones por token. La longitud de entrada por defecto es de 256 tokens para la consulta y 1.024 para el documento, con un límite de 8.192.
 
@@ -44,7 +44,7 @@ La función de pérdida es una combinación en un único cálculo de dos términ
 - Manejo de documentos largos: hasta 8.192 tokens, sin truncado forzoso en la ventana por defecto de 1.024.
 - Coincidencia local precisa: al no comprimir el documento en un solo vector, conserva la señal de fragmentos concretos relevantes dentro de textos largos.
 - Extracción de características (`feature-extraction`): genera secuencias de vectores, no texto.
-- Compatibilidad declarada con *text embeddings inference* (TEI) y con endpoints de HuggingFace.
+- Compatibilidad declarada con *text embeddings inference* (TEI) y con endpoints de Hugging Face.
 - Compatibilidad con el ecosistema `sentence-transformers` mediante `MultiVectorEncoder` (`encode_query`, `encode_document`, `similarity`).
 - Indexación y búsqueda a gran escala con los mecanismos habituales de ColBERT (PLAID), no documentada explícitamente en la model card.
 - No soporta generación de texto, *tool calling*, razonamiento multi-paso ni agentes: es exclusivamente un encoder de recuperación.
@@ -74,7 +74,7 @@ La model card menciona que JaGovFaqs-22k se reservó íntegramente como conjunto
 - Cabe en GPU de consumo: sí. Cualquier tarjeta con 6 GB o más (RTX 3060, RTX 4060, RTX 2070) es suficiente para el modelo. El cuello de botella real no es la VRAM del encoder, sino la memoria necesaria para el índice multi-vector.
 - Índice documental: cada vector ocupa 512 bytes en fp32, 256 en fp16 y 128 en int8 (128 dimensiones). Un millón de documentos con una media de 100,5 vectores (perfil JaGovFaqs-22k) requiere unos 51,4 GB en fp32, 25,7 GB en fp16 o 12,9 GB en int8. Con documentos largos al estilo Jaqket (741,4 vectores por documento de media) el índice crece aproximadamente 7,4 veces, hasta cientos de GB por millón de documentos.
 - GPU recomendadas para indexación a gran escala: A100 40/80 GB, H100 80 GB o L40S 48 GB, donde el índice puede residir en memoria de dispositivo. Para lotes pequeños, una RTX 4090 o RTX 3090 con 24 GB resulta suficiente.
-- Opciones de despliegue: `sentence-transformers` 6.0.0 o superior con `MultiVectorEncoder`; *text embeddings inference* (etiqueta declarada en el repositorio) y endpoints compatibles de HuggingFace. Para indexación y búsqueda a escala se emplearían los mecanismos estándar de ColBERT (índice PLAID), aunque la model card no los documenta explícitamente.
+- Opciones de despliegue: `sentence-transformers` 6.0.0 o superior con `MultiVectorEncoder`; *text embeddings inference* (etiqueta declarada en el repositorio) y endpoints compatibles de Hugging Face. Para indexación y búsqueda a escala se emplearían los mecanismos estándar de ColBERT (índice PLAID), aunque la model card no los documenta explícitamente.
 - Latencia y throughput: no disponibles. No se publican mediciones de latencia por consulta, throughput de indexación ni comparativas de velocidad frente a las variantes comprimidas.
 
 ## Comparativa con modelos similares
@@ -108,7 +108,7 @@ No se dispone de datos publicados para comparar con alternativas de otros autore
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mahiyama/Sazanami-ColBERT-310m
+- Modelo en Hugging Face: https://huggingface.co/mahiyama/Sazanami-ColBERT-310m
 - Perfil del autor: https://huggingface.co/mahiyama
 - Modelo base: https://huggingface.co/sbintuitions/modernbert-ja-310m
 - Modelo hermano Sazanami-AGC-310m: https://huggingface.co/mahiyama/Sazanami-AGC-310m

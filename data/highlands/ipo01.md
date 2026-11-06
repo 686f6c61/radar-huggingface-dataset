@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `highlands/ipo01` es un repositorio publicado en HuggingFace por el usuario `highlands`. Segun los metadatos disponibles, se creo el 14 de septiembre de 2026 y se actualizo ese mismo dia, cuenta con 0 descargas y 1 like, y tiene un tamano de repositorio de 16,2 GB. No se ha publicado informacion sobre la arquitectura, el pipeline, los idiomas soportados ni la licencia.
+El modelo identificado como `highlands/ipo01` es un repositorio publicado en Hugging Face por el usuario `highlands`. Segun los metadatos disponibles, se creo el 14 de septiembre de 2026 y se actualizo ese mismo dia, cuenta con 0 descargas y 1 like, y tiene un tamano de repositorio de 16,2 GB. No se ha publicado informacion sobre la arquitectura, el pipeline, los idiomas soportados ni la licencia.
 
 La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo: todas las entradas encontradas corresponden al termino geografico "Highlands" (las tierras altas de Escocia) y no guardan relacion con inteligencia artificial. Por tanto, no existe documentacion publica contrastable sobre sus caracteristicas tecnicas, su proceso de entrenamiento ni su rendimiento.
 
@@ -74,7 +74,7 @@ No disponible. Al desconocerse el numero de parametros, la arquitectura, la lice
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| highlands/ipo01 | no disponible | no disponible | no disponible | HuggingFace (repositorio publico, 16,2 GB) |
+| highlands/ipo01 | no disponible | no disponible | no disponible | Hugging Face (repositorio publico, 16,2 GB) |
 | Alternativa comparable | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No disponible. Al desconocerse el numero de parametros, la arquitectura, la lice
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/highlands/ipo01
+- Hugging Face: https://huggingface.co/highlands/ipo01
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

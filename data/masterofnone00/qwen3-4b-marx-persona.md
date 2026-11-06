@@ -6,7 +6,7 @@ qwen3-4b-marx-persona es un adaptador LoRA (PEFT) publicado por el usuario maste
 
 El modelo base heredado es Qwen3-4B, un transformer denso de aproximadamente 4.000 millones de parametros de la familia Qwen3 de Alibaba, con ventana de contexto nativa de 32.768 tokens ampliable a 131.072 mediante YaRN. El adaptador se entreno con SFT (supervised fine-tuning) usando el ecosistema Unsloth, TRL y la libreria PEFT en su version 0.20.0, tal como reflejan las etiquetas y el apartado de versiones de frameworks del repositorio.
 
-La relevancia de esta ficha es limitada y hay que ser honesto al respecto: el repositorio acumula 0 descargas y 0 likes, la model card es la plantilla vacia por defecto de HuggingFace sin ningun apartado cumplimentado, no se declara licencia ni idiomas, y la busqueda web no ha devuelto ningun resultado relevante sobre el modelo (los resultados obtenidos no guardan ninguna relacion con el proyecto). Es util, por tanto, como ejemplo de adaptador de persona experimental, no como componente listo para produccion.
+La relevancia de esta ficha es limitada y hay que ser honesto al respecto: el repositorio acumula 0 descargas y 0 likes, la model card es la plantilla vacia por defecto de Hugging Face sin ningun apartado cumplimentado, no se declara licencia ni idiomas, y la busqueda web no ha devuelto ningun resultado relevante sobre el modelo (los resultados obtenidos no guardan ninguna relacion con el proyecto). Es util, por tanto, como ejemplo de adaptador de persona experimental, no como componente listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -92,7 +92,7 @@ Los datos de las alternativas corresponden a sus respectivos modelos base public
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/masterofnone00/qwen3-4b-marx-persona
+- Repositorio del modelo en Hugging Face: https://huggingface.co/masterofnone00/qwen3-4b-marx-persona
 - Modelo base utilizado: https://huggingface.co/unsloth/qwen3-4b-unsloth-bnb-4bit
 - Ecosistema Unsloth: https://github.com/unslothai/unsloth
 - Libreria PEFT (version declarada 0.20.0): https://github.com/huggingface/peft

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arthrod/c5k-deberta_base-token_level-1-2` es un checkpoint de GLiNER orientado a la deteccion de informacion personal identificable (PII) en contenido de spam, entrenado por el usuario de HuggingFace arthrod. Se trata de una continuacion (fine-tune) del modelo `urchade/gliner_multi_pii-v1` sobre el corpus interno `arthrod/gliner-flex-pii-ready-v5`, con 1.111.948 ejemplos de entrenamiento y 526.449 de evaluacion. El entrenamiento se lanzo el 24 de febrero de 2026 bajo el nombre interno `b-gliner-pii-token-multipii-v1-spam-v1` y se interrumpio en el paso 6.500 de 12.000, aproximadamente 0,19 epocas.
+`arthrod/c5k-deberta_base-token_level-1-2` es un checkpoint de GLiNER orientado a la deteccion de informacion personal identificable (PII) en contenido de spam, entrenado por el usuario de Hugging Face arthrod. Se trata de una continuacion (fine-tune) del modelo `urchade/gliner_multi_pii-v1` sobre el corpus interno `arthrod/gliner-flex-pii-ready-v5`, con 1.111.948 ejemplos de entrenamiento y 526.449 de evaluacion. El entrenamiento se lanzo el 24 de febrero de 2026 bajo el nombre interno `b-gliner-pii-token-multipii-v1-spam-v1` y se interrumpio en el paso 6.500 de 12.000, aproximadamente 0,19 epocas.
 
 El repositorio se publica como material legacy y superseded: el propio autor recomienda no usarlo para produccion y dirigir a los modelos actuales de la suite (`arthrod/gliner-mmbert-small-ptbr-pii-full-3x-v1` y `arthrod/gliner-opf-ptbr-pii-v1`). Se conserva principalmente porque tiene DOI asignado (10.57967/hf/8514). A pesar del nombre, el encoder real es mDeBERTa-v3-base (`microsoft/mdeberta-v3-base`, vocabulario de 250.105 tokens) y el modelo es de nivel de span (span-level, `markerV0`), no `token_level` como indica el nombre del repositorio.
 
@@ -95,7 +95,7 @@ El numero de parametros, la longitud de contexto y las metricas de rendimiento d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arthrod/c5k-deberta_base-token_level-1-2
+- Modelo en Hugging Face: https://huggingface.co/arthrod/c5k-deberta_base-token_level-1-2
 - DOI: https://doi.org/10.57967/hf/8514
 - Modelo base: https://huggingface.co/urchade/gliner_multi_pii-v1
 - Modelo actual recomendado (PII pt-BR, mmBERT-small): https://huggingface.co/arthrod/gliner-mmbert-small-ptbr-pii-full-3x-v1

@@ -63,7 +63,7 @@ El README advierte que el QER reportado esta 2.8 errores estandar por debajo del
 - VRAM estimada para inferencia: no disponible en la informacion proporcionada. Dado que el modelo base es Gemma 3 1B, se espera que quepa en GPUs de consumo con cuantizacion, pero no se proporcionan cifras confirmadas.
 - GPU recomendadas: no disponibles.
 - Capacidad en GPU de consumo: probablemente si, dado el tamaño del modelo base, pero no se confirma en la informacion.
-- Opciones de despliegue: no disponibles. Al ser un modelo con `library_name: transformers`, puede cargarse con la libreria Transformers de HuggingFace, pero no se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: no disponibles. Al ser un modelo con `library_name: transformers`, puede cargarse con la libreria Transformers de Hugging Face, pero no se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -72,10 +72,10 @@ No se dispone de datos suficientes para una comparativa detallada. Los modelos c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `automo-kd-mixed-olmo-to-gemma-cake-dpo-unmixed` | No disponible | No disponible | Apache-2.0 | HuggingFace (rama step-127) |
-| `automo-kd-mixed-gemma-to-olmo-cake-dpo-unmixed` | No disponible | No disponible | No disponible | HuggingFace |
-| `gemma-3-1b-vanilla-dpo-123-seed` (modelo base) | No disponible | No disponible | No disponible | HuggingFace |
-| `new-cake-bake-olmo-2-0425-1b-dpo-dpo_-lr1e-5` (referencia) | No disponible | No disponible | No disponible | HuggingFace |
+| `automo-kd-mixed-olmo-to-gemma-cake-dpo-unmixed` | No disponible | No disponible | Apache-2.0 | Hugging Face (rama step-127) |
+| `automo-kd-mixed-gemma-to-olmo-cake-dpo-unmixed` | No disponible | No disponible | No disponible | Hugging Face |
+| `gemma-3-1b-vanilla-dpo-123-seed` (modelo base) | No disponible | No disponible | No disponible | Hugging Face |
+| `new-cake-bake-olmo-2-0425-1b-dpo-dpo_-lr1e-5` (referencia) | No disponible | No disponible | No disponible | Hugging Face |
 
 No se han encontrado datos de benchmarks comparativos entre estos modelos en la informacion proporcionada.
 

@@ -90,6 +90,6 @@ No se dispone de comparaciones directas publicadas con modelos equivalentes de s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI2Lab-NTU/ncLVMass-Net
+- Modelo en Hugging Face: https://huggingface.co/AI2Lab-NTU/ncLVMass-Net
 - Repositorio GitHub: https://github.com/AI-Application-and-Integration-Lab/ncLVMass-Net
 - Framework nnU-Net: https://github.com/MIC-DKFZ/nnUNet

@@ -83,7 +83,7 @@ La version de IG1 se diferencia por incluir el modulo MTP para decodificacion es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ig1/Qwen3.8-27B-NVFP4-FP8KV-MTP
+- Modelo en Hugging Face: https://huggingface.co/ig1/Qwen3.8-27B-NVFP4-FP8KV-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio del proxy inverso: https://github.com/iguanesolutions/qwen38-rp
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

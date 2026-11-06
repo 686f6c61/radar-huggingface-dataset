@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario ikicloud, no contiene un modelo de lenguaje: incluye unicamente los ficheros de tokenizer de deepseek-ai/DeepSeek-R1-0528-Qwen3-8B, fijados a la revision `6e8885a6ff5c1dc5201574c8fd700323f23c25fa`. El cambio que introduce es unico y quirurgico: en `tokenizer_config.json` se declara `"tokenizer_class": "PreTrainedTokenizerFast"` en lugar de `"LlamaTokenizerFast"`, y se eliminan las claves no usadas `legacy` y `sp_model_kwargs`. El fichero `tokenizer.json` es identico byte a byte al del repositorio original.
+Este repositorio de Hugging Face, publicado por el usuario ikicloud, no contiene un modelo de lenguaje: incluye unicamente los ficheros de tokenizer de deepseek-ai/DeepSeek-R1-0528-Qwen3-8B, fijados a la revision `6e8885a6ff5c1dc5201574c8fd700323f23c25fa`. El cambio que introduce es unico y quirurgico: en `tokenizer_config.json` se declara `"tokenizer_class": "PreTrainedTokenizerFast"` en lugar de `"LlamaTokenizerFast"`, y se eliminan las claves no usadas `legacy` y `sp_model_kwargs`. El fichero `tokenizer.json` es identico byte a byte al del repositorio original.
 
 El problema que resuelve es de compatibilidad: el vocabulario del modelo base es BPE byte-level de Qwen3, pero la etiqueta `LlamaTokenizerFast` hace que transformers 5 construya un decoder de tipo Llama. El resultado son artefactos de decodificacion, con `Ġ` en lugar de espacios y `Ċ` en lugar de saltos de linea, un comportamiento observado en vLLM 0.30. Al cargarse como `PreTrainedTokenizerFast`, la codificacion coincide exactamente con `tokenizer.json` y la decodificacion hace round-trip correctamente.
 
@@ -19,7 +19,7 @@ Es relevante para cualquiera que despliegue DeepSeek-R1-0528-Qwen3-8B en stacks 
 | Tipos de cuantizacion | no aplica (no contiene pesos que cuantizar) |
 | Idiomas soportados | no disponibles (el vocabulario procede del modelo base; la model card no declara idiomas) |
 | Licencia | MIT |
-| Formato de pesos | no contiene pesos; ficheros de tokenizer en formato HuggingFace (`tokenizer.json`, `tokenizer_config.json`) |
+| Formato de pesos | no contiene pesos; ficheros de tokenizer en formato Hugging Face (`tokenizer.json`, `tokenizer_config.json`) |
 | Tipo de tokenizer | BPE byte-level de Qwen3, cargado como `PreTrainedTokenizerFast` |
 | Modelo base | deepseek-ai/DeepSeek-R1-0528-Qwen3-8B (revision `6e8885a6ff5c1dc5201574c8fd700323f23c25fa`) |
 | Autor del repositorio | ikicloud |
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Almacenamiento: el repositorio contiene unicamente ficheros de tokenizacion, sin pesos; no se especifica el tamano exacto en la informacion disponible.
 - GPU recomendadas: no aplica al tokenizer. Para el modelo base, los requisitos dependen de su configuracion y cuantizacion, datos no incluidos en esta ficha; conviene consultar la model card de deepseek-ai/DeepSeek-R1-0528-Qwen3-8B.
 - GPU de consumo: no aplica al tokenizer. La viabilidad en GPU de consumo corresponde al modelo base y a la cuantizacion elegida, no a este repositorio.
-- Opciones de despliegue: vLLM (soporte explicito, con `--tokenizer` y `--tokenizer-revision`) y transformers 5 cargandolo como `PreTrainedTokenizerFast`. Otros servidores que acepten un tokenizer de HuggingFace sustituible pueden usarlo, aunque no se documenta en la model card.
+- Opciones de despliegue: vLLM (soporte explicito, con `--tokenizer` y `--tokenizer-revision`) y transformers 5 cargandolo como `PreTrainedTokenizerFast`. Otros servidores que acepten un tokenizer de Hugging Face sustituible pueden usarlo, aunque no se documenta en la model card.
 - Latencia y throughput: no disponible. El tokenizer no altera el rendimiento de inferencia del modelo base; solo corrige la decodificacion del texto.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ No se dispone de informacion sobre otros repositorios de tokenizer corregidos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ikicloud/DeepSeek-R1-0528-Qwen3-8B-tokenizer
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
+- Repositorio en Hugging Face: https://huggingface.co/ikicloud/DeepSeek-R1-0528-Qwen3-8B-tokenizer
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
 - Revision upstream citada: `6e8885a6ff5c1dc5201574c8fd700323f23c25fa`
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

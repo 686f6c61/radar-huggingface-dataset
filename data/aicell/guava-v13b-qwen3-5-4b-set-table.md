@@ -2,7 +2,7 @@
 
 ## Resumen
 
-guava-v13b-qwen3.5-4b-set-table es un modelo vision-lenguaje-accion (VLA) publicado por AIcell sobre la base Qwen3.5-VL de 4B parametros, especializado en una tarea de manipulacion robotica de colocacion de mesa ("set table"). Se distribuye como exportacion de pesos completos del checkpoint 50 de un entrenamiento por refuerzo, en precision bfloat16 y formato safetensors. Su pipeline declarado en HuggingFace es image-text-to-text, con etiquetas de robotics, vision-language-action y manipulation.
+guava-v13b-qwen3.5-4b-set-table es un modelo vision-lenguaje-accion (VLA) publicado por AIcell sobre la base Qwen3.5-VL de 4B parametros, especializado en una tarea de manipulacion robotica de colocacion de mesa ("set table"). Se distribuye como exportacion de pesos completos del checkpoint 50 de un entrenamiento por refuerzo, en precision bfloat16 y formato safetensors. Su pipeline declarado en Hugging Face es image-text-to-text, con etiquetas de robotics, vision-language-action y manipulation.
 
 El interes del modelo es acotado pero claro: es un ejemplo de ajuste por RL de un VLM generalista para control de manipulacion, con la particularidad de que su dataset de entrenamiento (un dataset de RL dedicado) no coincide con el dataset supervisado de la familia v13b a la que aparentemente pertenece por nombre. `set_table` no forma parte de las 16 tareas de Guava v13b, de modo que el prefijo del nombre identifica la familia de modelos, no los datos de entrenamiento.
 
@@ -13,7 +13,7 @@ La relevancia es limitada por su propio estado de publicacion: el autor declara 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | `Qwen3_5ForConditionalGeneration` (vision + texto); 32 capas con atencion lineal y atencion completa cada 4 capas; ViT de 24 capas, patch 16, merge 2 |
-| Parametros totales | Aproximadamente 4B segun nombre y tamano de pesos; el dato de safetensors indicado en la ficha de HuggingFace (504.320) es inconsistente con los 8,47 GiB de pesos en bfloat16 |
+| Parametros totales | Aproximadamente 4B segun nombre y tamano de pesos; el dato de safetensors indicado en la ficha de Hugging Face (504.320) es inconsistente con los 8,47 GiB de pesos en bfloat16 |
 | Parametros activos | no disponible (no es un modelo MoE segun la informacion aportada) |
 | Longitud de contexto | 262.144 posiciones maximas (max positions) |
 | Tipos de cuantizacion | no disponible (publicado en bfloat16) |
@@ -70,10 +70,10 @@ No se dispone de resultados de rendimiento de este modelo, por lo que la compara
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| guava-v13b-qwen3.5-4b-set-table | ~4B (nombre y pesos) | 262.144 posiciones | Colocacion de mesa (RL) | no disponible | HuggingFace, safetensors bf16 |
-| guava-v13b-qwen3.5-4b | no disponible | 262.144 posiciones (misma config) | 16 tareas de manipulacion (supervisado) | no disponible | HuggingFace, mismo autor |
-| guava-v13b-qwen3.5-4b-no-counterfactual | no disponible | 262.144 posiciones (misma config) | Variante de la familia v13b | no disponible | HuggingFace, mismo autor |
-| guava-v13b-qwen3.5-4b-red-basket | no disponible | 262.144 posiciones (misma config) | Tarea de cesta roja | no disponible | HuggingFace, mismo autor |
+| guava-v13b-qwen3.5-4b-set-table | ~4B (nombre y pesos) | 262.144 posiciones | Colocacion de mesa (RL) | no disponible | Hugging Face, safetensors bf16 |
+| guava-v13b-qwen3.5-4b | no disponible | 262.144 posiciones (misma config) | 16 tareas de manipulacion (supervisado) | no disponible | Hugging Face, mismo autor |
+| guava-v13b-qwen3.5-4b-no-counterfactual | no disponible | 262.144 posiciones (misma config) | Variante de la familia v13b | no disponible | Hugging Face, mismo autor |
+| guava-v13b-qwen3.5-4b-red-basket | no disponible | 262.144 posiciones (misma config) | Tarea de cesta roja | no disponible | Hugging Face, mismo autor |
 
 Alternativas de otros autores (OpenVLA, SmolVLA, Qwen2.5-VL en sus variantes de 3B y 7B) no se comparan aqui porque no se ha proporcionado informacion verificable sobre ellas en esta busqueda: datos de parametros, contexto, rendimiento y licencia de esos modelos quedan como no disponibles.
 
@@ -90,13 +90,13 @@ Alternativas de otros autores (OpenVLA, SmolVLA, Qwen2.5-VL en sus variantes de 
 - Ausencia de cuantizaciones: no se publican pesos GGUF, AWQ ni GPTQ, lo que limita el despliegue en GPUs pequenas y en herramientas como llama.cpp u Ollama.
 - Riesgo de alucinacion: no hay informacion especifica, pero al ser un VLM sin evaluacion publicada no puede descartarse la generacion de descripciones o acciones inconsistentes con la escena.
 - Sesgos: no disponible.
-- Fecha de publicacion anomala: los metadatos de HuggingFace indican creacion el 2026-09-15, posterior a la fecha de consulta habitual; conviene verificar la vigencia del repositorio antes de integrarlo.
+- Fecha de publicacion anomala: los metadatos de Hugging Face indican creacion el 2026-09-15, posterior a la fecha de consulta habitual; conviene verificar la vigencia del repositorio antes de integrarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AIcell/guava-v13b-qwen3.5-4b-set-table
+- Modelo en Hugging Face: https://huggingface.co/AIcell/guava-v13b-qwen3.5-4b-set-table
 - Modelo relacionado guava-v13b-qwen3.5-4b: https://huggingface.co/AIcell/guava-v13b-qwen3.5-4b
 - Modelo relacionado guava-v13b-qwen3.5-4b-no-counterfactual: https://huggingface.co/AIcell/guava-v13b-qwen3.5-4b-no-counterfactual
 - Modelo relacionado guava-v13b-qwen3.5-4b-red-basket: https://huggingface.co/AIcell/guava-v13b-qwen3.5-4b-red-basket
-- Perfil del autor en HuggingFace: https://huggingface.co/AIcell
+- Perfil del autor en Hugging Face: https://huggingface.co/AIcell
 - Paper, blog o repositorio adicionales: no disponible en los resultados de busqueda proporcionados (los resultados obtenidos no guardan relacion con el modelo).

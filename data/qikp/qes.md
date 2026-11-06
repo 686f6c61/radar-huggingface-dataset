@@ -71,9 +71,9 @@ La única referencia de evaluación aportada por el autor es que el modelo se de
 
 | Modelo | Parametros | Modelo base | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qikp/qes | 14.350.561 | huawei-noah/TinyBERT_General_4L_312D | Clasificacion de valor educativo | CC0-1.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| HuggingFaceFW/fineweb-edu-classifier | No disponible | Snowflake/snowflake-arctic-embed-m | Clasificacion de valor educativo | No disponible en la informacion | HuggingFace |
-| huawei-noah/TinyBERT_General_4L_312D | No disponible (familia TinyBERT 4L-312D) | Modelo destilado de BERT | Modelo de lenguaje encoder de proposito general | No disponible en la informacion | HuggingFace |
+| qikp/qes | 14.350.561 | huawei-noah/TinyBERT_General_4L_312D | Clasificacion de valor educativo | CC0-1.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| HuggingFaceFW/fineweb-edu-classifier | No disponible | Snowflake/snowflake-arctic-embed-m | Clasificacion de valor educativo | No disponible en la informacion | Hugging Face |
+| huawei-noah/TinyBERT_General_4L_312D | No disponible (familia TinyBERT 4L-312D) | Modelo destilado de BERT | Modelo de lenguaje encoder de proposito general | No disponible en la informacion | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ La única referencia de evaluación aportada por el autor es que el modelo se de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qikp/qes
+- Modelo en Hugging Face: https://huggingface.co/qikp/qes
 - Modelo base (TinyBERT): https://huggingface.co/huawei-noah/TinyBERT_General_4L_312D
 - Clasificador de referencia FineWeb-Edu: https://huggingface.co/HuggingFaceFW/fineweb-edu-classifier
 - Dataset de anotaciones de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu-llama3-annotations

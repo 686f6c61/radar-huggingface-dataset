@@ -4,7 +4,7 @@
 
 `frodrigues/lightweight-multimodal-baseline` no es un modelo entrenado ni un checkpoint funcional, sino un repositorio de notas de investigación y un esbozo de experimento sobre el tema "Lightweight Multimodal". Así lo declara de forma explícita la propia model card, que advierte que el artefacto principal es `notes.md` y que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales. No se anuncia ninguna mejora de benchmarks, ninguna ablación completada, ningún código liberado ni ningún checkpoint entrenado.
 
-El repositorio aparece bajo la autoría de `frodrigues`, con licencia MIT y las etiquetas `research-notes`, `lightweight-multimodal`, `safetensors`, `transformer` y `region:us`. La ficha de HuggingFace registra 0 descargas y 0 likes, un tamaño de repositorio de 0.0 GB y un total de 49.600 parámetros según los metadatos de safetensors, una cifra que resulta coherente con un artefacto meramente documental o de prueba y no con una red neuronal desplegable.
+El repositorio aparece bajo la autoría de `frodrigues`, con licencia MIT y las etiquetas `research-notes`, `lightweight-multimodal`, `safetensors`, `transformer` y `region:us`. La ficha de Hugging Face registra 0 descargas y 0 likes, un tamaño de repositorio de 0.0 GB y un total de 49.600 parámetros según los metadatos de safetensors, una cifra que resulta coherente con un artefacto meramente documental o de prueba y no con una red neuronal desplegable.
 
 Su relevancia actual es, por tanto, documental: sirve como punto de partida para verificar una línea de trabajo sobre multimodalidad ligera y como plantilla de metodología (comparación con baselines emparejados, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas). No debe presentarse como un modelo utilizable en producción.
 
@@ -75,5 +75,5 @@ No disponible. No existe una categoría de modelos comparable porque este reposi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/frodrigues/lightweight-multimodal-baseline
+- Hugging Face: https://huggingface.co/frodrigues/lightweight-multimodal-baseline
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos asociados a este modelo concreto. Los resultados devueltos (Quora y un artículo de arXiv sobre un framework multimodal para detección temprana de ictus, https://arxiv.org/html/2601.11896v1) no guardan relación con el repositorio descrito y no se incluyen como fuentes del mismo.

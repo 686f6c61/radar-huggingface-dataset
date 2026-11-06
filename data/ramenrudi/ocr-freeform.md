@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ramenrudi/ocr-freeform` no es un modelo de IA entrenado, sino un repositorio de notas de investigación publicado en HuggingFace bajo la etiqueta `research-notes`. Su contenido principal es un fichero `paper_notes.md` que esboza un experimento sobre reconocimiento óptico de caracteres en formato libre (OCR freeform) y una comparación propuesta con líneas base emparejadas, usando conjuntos de datos como FUNSD, SROIE y CORD.
+`ramenrudi/ocr-freeform` no es un modelo de IA entrenado, sino un repositorio de notas de investigación publicado en Hugging Face bajo la etiqueta `research-notes`. Su contenido principal es un fichero `paper_notes.md` que esboza un experimento sobre reconocimiento óptico de caracteres en formato libre (OCR freeform) y una comparación propuesta con líneas base emparejadas, usando conjuntos de datos como FUNSD, SROIE y CORD.
 
 El propio autor declara de forma explícita que el repositorio no contiene aserciones de mejoras en benchmarks, ni ablaciones completadas, ni código liberado, ni un checkpoint entrenado. Las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. El repositorio incluye ficheros en formato `safetensors`, pero el peso total declarado es de 24.832 parámetros, un orden de magnitud varias veces inferior al de cualquier modelo de lenguaje o de visión utilizable en producción.
 
@@ -47,7 +47,7 @@ En resumen: el repositorio no implementa ninguna capacidad ejecutable verificabl
 - Diseno de un protocolo experimental: el documento propone una comparacion con lineas base emparejadas sobre FUNSD, SROIE y CORD, util para redactar una metodologia de evaluacion antes de ejecutar el estudio.
 - Plantilla de reproducibilidad: el repositorio enumera los elementos que deben acompanar a unos resultados (version de dataset, comandos, semillas, hardware y registros en bruto), lo que puede reutilizarse como lista de verificacion interna.
 - Catalogacion de modos de fallo: al listar fallos conocidos y preguntas abiertas, puede emplearse para anticipar riesgos en un proyecto de extraccion documental.
-- Auditoria de repositorios en HuggingFace: sirve como caso de estudio de repositorios etiquetados como modelos que en realidad son notas de investigacion, algo relevante para filtrar artefactos en un pipeline de descubrimiento de modelos.
+- Auditoria de repositorios en Hugging Face: sirve como caso de estudio de repositorios etiquetados como modelos que en realidad son notas de investigacion, algo relevante para filtrar artefactos en un pipeline de descubrimiento de modelos.
 - Formacion y docencia: util para ilustrar la diferencia entre un repositorio de investigacion exploratoria y un modelo desplegable, y por que los metadatos de safetensors por si solos no garantizan que exista un modelo utilizable.
 - Uso en produccion: no recomendado en ningun escenario, al no existir checkpoint entrenado ni interfaz de inferencia.
 
@@ -67,7 +67,7 @@ El autor declara expresamente que el repositorio no reclama mejoras en benchmark
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos de rendimiento, ya que el repositorio no contiene un modelo evaluable. A modo de contexto, en la busqueda web aparecen otros repositorios de HuggingFace con nombres practicamente identicos, que parecen responder al mismo patron de notas de investigacion:
+No se dispone de datos comparativos de rendimiento, ya que el repositorio no contiene un modelo evaluable. A modo de contexto, en la busqueda web aparecen otros repositorios de Hugging Face con nombres practicamente identicos, que parecen responder al mismo patron de notas de investigacion:
 
 | Repositorio | Naturaleza | Parametros | Contexto | Licencia |
 |---|---|---|---|---|
@@ -91,7 +91,7 @@ Como categoria funcional, el OCR de documentos con modelos vision-lenguaje cuent
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ramenrudi/ocr-freeform
+- Repositorio en Hugging Face: https://huggingface.co/ramenrudi/ocr-freeform
 - Repositorio relacionado: https://huggingface.co/jenniferbrown/ocr-freeform
 - Repositorio relacionado: https://huggingface.co/raoankitme/ocr-freeform-review
 - Guia comparativa de modelos OCR locales: https://local-ai-zone.github.io/guides/best-ai-ocr-models-ultimate-ranking-2026.html

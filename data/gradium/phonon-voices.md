@@ -22,7 +22,7 @@ Es relevante ahora porque fija un formato de embedding de hablante versionado (`
 | Formato de pesos | safetensors; un tensor por voz (`speaker_wavs`), formato `ba7a5a45@300`, 1×512×125, float32 |
 | Número de voces | 102 (48 femeninas, 42 masculinas, 12 de personaje) |
 | Muestras de audio | ficheros `.ogg` en `samples/{idioma}/{locale}/{género}/`, una muestra por voz renderizada con Phonon S (31 M) |
-| Tamaño del repositorio | 0,0 GB según los metadatos de HuggingFace; el cálculo por tensor da unos 250 KiB por voz y unos 25 MB para el catálogo completo |
+| Tamaño del repositorio | 0,0 GB según los metadatos de Hugging Face; el cálculo por tensor da unos 250 KiB por voz y unos 25 MB para el catálogo completo |
 | Descargas y likes | 0 descargas, 13 likes en el momento de la consulta |
 | Fecha de publicación | 19 de octubre de 2026; última actualización el 20 de octubre de 2026 |
 
@@ -83,10 +83,10 @@ No se han encontrado en la información proporcionada modelos directamente compa
 
 | Modelo | Parámetros | Idiomas | Licencia | Formato de voces | Disponibilidad |
 |---|---|---|---|---|---|
-| Phonon S + phonon-voices | 31 M | 5 (7 locales) | Apache 2.0 (embeddings); licencia del modelo no disponible | 102 embeddings safetensors, sin clonación | Repositorio HuggingFace y API/SDK de Gradium |
-| Kokoro-82M | 82 M (dato no verificado en la información proporcionada) | varios | Apache 2.0 (no verificado) | ficheros de voz empaquetados (no verificado) | HuggingFace (no verificado) |
+| Phonon S + phonon-voices | 31 M | 5 (7 locales) | Apache 2.0 (embeddings); licencia del modelo no disponible | 102 embeddings safetensors, sin clonación | Repositorio Hugging Face y API/SDK de Gradium |
+| Kokoro-82M | 82 M (dato no verificado en la información proporcionada) | varios | Apache 2.0 (no verificado) | ficheros de voz empaquetados (no verificado) | Hugging Face (no verificado) |
 | Piper | variable según voz (no verificado) | decenas (no verificado) | MIT (no verificado) | modelos VITS por voz (no verificado) | Repositorio del proyecto (no verificado) |
-| XTTS-v2 | ~467 M (no verificado) | multilingüe (no verificado) | Coqui Public Model License, restrictiva para uso comercial (no verificado) | clonación zero-shot con audio de referencia (no verificado) | HuggingFace (no verificado) |
+| XTTS-v2 | ~467 M (no verificado) | multilingüe (no verificado) | Coqui Public Model License, restrictiva para uso comercial (no verificado) | clonación zero-shot con audio de referencia (no verificado) | Hugging Face (no verificado) |
 
 La diferencia conceptual relevante es que `phonon-voices` no permite clonación: el catálogo es cerrado y cada voz es un vector fijo, mientras que las alternativas basadas en zero-shot requieren audio de referencia en cada petición.
 
@@ -106,7 +106,7 @@ La diferencia conceptual relevante es que `phonon-voices` no permite clonación:
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gradium/phonon-voices
+- Repositorio en Hugging Face: https://huggingface.co/gradium/phonon-voices
 - Sitio de Gradium: https://gradium.ai/
 - Página de texto a voz: https://gradium.ai/text-to-speech
 - Documentación de la guía de texto a voz: https://docs.gradium.ai/guides/text-to-speech

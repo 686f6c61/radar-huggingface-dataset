@@ -24,7 +24,7 @@ Su interés práctico ahora es acotado pero concreto: permite ejecutar el checkp
 | Tamaño del fichero | 7.659.180.448 bytes (`josev2b-systemone-f32.gguf`) |
 | Tamaño del repositorio | 7,7 GB |
 | Autor del repositorio | cstr |
-| Publicación / actualización | 2026-10-27 (según metadatos de HuggingFace) |
+| Publicación / actualización | 2026-10-27 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Uso previsto | API SystemOne de CrispEmbed, con las siete gates del modelo desactivadas por defecto |
 
@@ -96,7 +96,7 @@ No hay datos de benchmarks publicados en la información disponible que permitan
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [cstr/Josev-2B-SystemOne-GGUF](https://huggingface.co/cstr/Josev-2B-SystemOne-GGUF)
+- Repositorio en Hugging Face: [cstr/Josev-2B-SystemOne-GGUF](https://huggingface.co/cstr/Josev-2B-SystemOne-GGUF)
 - Modelo base: [mayflowergmbh/Josev-2B](https://huggingface.co/mayflowergmbh/Josev-2B/tree/6f0a31c8ed683aba79097eb3f48df2c9ab560afd)
 - GGUF del autor del modelo base: [mayflowergmbh/Josev-2B-GGUF](https://huggingface.co/mayflowergmbh/Josev-2B-GGUF)
 - Conversiones GGUF de terceros: [mradermacher/Josev-2B-GGUF](https://huggingface.co/mradermacher/Josev-2B-GGUF)

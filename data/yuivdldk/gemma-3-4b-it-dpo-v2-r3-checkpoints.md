@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo, ya que no se han publicado ev
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Yuivdldk/gemma-3-4b-it-dpo-v2-r3-checkpoints
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-3-4b-it
+- Repositorio Hugging Face: https://huggingface.co/Yuivdldk/gemma-3-4b-it-dpo-v2-r3-checkpoints
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-3-4b-it
 - Página oficial de Gemma 3 (Google DeepMind): https://deepmind.google/models/gemma/gemma-3/
 - Ejemplo de DPO multimodal con Gemma 3 (notebook de Google Tunix): https://github.com/google/tunix/blob/main/examples/vl_dpo_gemma3.ipynb

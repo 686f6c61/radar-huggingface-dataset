@@ -77,9 +77,9 @@ El conjunto synthetic usa esquemas y datos nuevos, la mitad de dominios no visto
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-1.7B · Text2Cypher (este) | 1,72B | no disponible | Text2Cypher para Neo4j | Apache-2.0 | HuggingFace + GGUF/Ollama |
-| Qwen/Qwen3-1.7B (base) | 1,72B | no disponible | Propósito general | Apache-2.0 | HuggingFace |
-| neo4j/text2cypher-2025v1 (dataset) | no aplica | no aplica | Conjunto de datos de referencia | Apache-2.0 | HuggingFace |
+| Qwen3-1.7B · Text2Cypher (este) | 1,72B | no disponible | Text2Cypher para Neo4j | Apache-2.0 | Hugging Face + GGUF/Ollama |
+| Qwen/Qwen3-1.7B (base) | 1,72B | no disponible | Propósito general | Apache-2.0 | Hugging Face |
+| neo4j/text2cypher-2025v1 (dataset) | no aplica | no aplica | Conjunto de datos de referencia | Apache-2.0 | Hugging Face |
 
 No se dispone en la información proporcionada de otros modelos afinados para text-to-Cypher con los que establecer una comparación cuantitativa; los resultados frente al modelo base se recogen en la sección de benchmarks.
 
@@ -97,7 +97,7 @@ No se dispone en la información proporcionada de otros modelos afinados para te
 
 ## Enlaces
 
-- Modelo en HuggingFace (pesos completos): https://huggingface.co/Ernes14AG/qwen3-1.7b-text2cypher
+- Modelo en Hugging Face (pesos completos): https://huggingface.co/Ernes14AG/qwen3-1.7b-text2cypher
 - Versión GGUF para Ollama: https://huggingface.co/Ernes14AG/qwen3-1.7b-text2cypher-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset de referencia: https://huggingface.co/datasets/neo4j/text2cypher-2025v1

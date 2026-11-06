@@ -92,8 +92,8 @@ Resultados con truncamiento vectorial (MRL):
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EmbeddingGemma 2 | 740M | 8.192 | Texto, imagen, video, audio | Apache 2.0 | HuggingFace (base y ONNX) |
-| EmbeddingGemma 1 | No disponible | No disponible | Texto | Apache 2.0 (segun model card) | HuggingFace |
+| EmbeddingGemma 2 | 740M | 8.192 | Texto, imagen, video, audio | Apache 2.0 | Hugging Face (base y ONNX) |
+| EmbeddingGemma 1 | No disponible | No disponible | Texto | Apache 2.0 (segun model card) | Hugging Face |
 | Otros modelos de embeddings de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La informacion disponible solo permite comparar con la generacion anterior, EmbeddingGemma 1, sobre la que se observan mejoras en MTEB code (de 68,76 a 78,68) y un rendimiento practicamente identico en MTEB multilingue (de 61,15 a 61,36). No se dispone de datos de otros modelos comparables en la informacion proporcionada.
@@ -110,7 +110,7 @@ La informacion disponible solo permite comparar con la generacion anterior, Embe
 
 ## Enlaces
 
-- Repositorio HuggingFace (version ONNX): https://huggingface.co/0x3/embeddinggemma-2-ONNX
+- Repositorio Hugging Face (version ONNX): https://huggingface.co/0x3/embeddinggemma-2-ONNX
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2

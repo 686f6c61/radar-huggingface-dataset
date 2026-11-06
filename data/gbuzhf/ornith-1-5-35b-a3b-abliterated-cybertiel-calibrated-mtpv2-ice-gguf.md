@@ -94,10 +94,10 @@ Advertencias del propio autor: la KLD es una medida intra-linaje y no es compara
 
 | Modelo | Parametros | Contexto | Fidelidad / rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`23G-ICE`) | 35,5 B totales, ~3 B activos | no disponible | KLD media 0,033146; mismo top-1 92,68 %; overall 95,6 | MIT | GGUF en HuggingFace |
-| `peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF-MTP` (`UD-Q4_K_XL`) | mismos pesos base, 22,75 GB | no disponible | KLD media 0,035699; mismo top-1 92,63 %; overall 95,4 | no disponible en la informacion proporcionada | GGUF en HuggingFace |
-| `UD-Q5_K_XL` (misma linea) | mismos pesos base, 26,98 GB | no disponible | KLD media 0,024029; mismo top-1 94,00 %; overall 96,6 | no disponible en la informacion proporcionada | GGUF en HuggingFace |
-| `gbuzhf/Ornith-1.5-35B-A3B-TIEL-Calibrated-MTPv2-ICE-GGUF` (variante con salvaguardas) | 35,5 B totales, ~3 B activos | no disponible | no disponible (no se publican mediciones en la informacion proporcionada) | MIT | GGUF en HuggingFace |
+| Este modelo (`23G-ICE`) | 35,5 B totales, ~3 B activos | no disponible | KLD media 0,033146; mismo top-1 92,68 %; overall 95,6 | MIT | GGUF en Hugging Face |
+| `peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF-MTP` (`UD-Q4_K_XL`) | mismos pesos base, 22,75 GB | no disponible | KLD media 0,035699; mismo top-1 92,63 %; overall 95,4 | no disponible en la informacion proporcionada | GGUF en Hugging Face |
+| `UD-Q5_K_XL` (misma linea) | mismos pesos base, 26,98 GB | no disponible | KLD media 0,024029; mismo top-1 94,00 %; overall 96,6 | no disponible en la informacion proporcionada | GGUF en Hugging Face |
+| `gbuzhf/Ornith-1.5-35B-A3B-TIEL-Calibrated-MTPv2-ICE-GGUF` (variante con salvaguardas) | 35,5 B totales, ~3 B activos | no disponible | no disponible (no se publican mediciones en la informacion proporcionada) | MIT | GGUF en Hugging Face |
 | Modelo base `huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated` | 35,5 B totales | no disponible | no disponible | MIT (segun este repositorio derivado) | safetensors/GGUF segun el repositorio original |
 
 ## Limitaciones y advertencias
@@ -114,7 +114,7 @@ Advertencias del propio autor: la KLD es una medida intra-linaje y no es compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gbuzhf/Ornith-1.5-35B-A3B-Abliterated-CyberTiel-Calibrated-MTPv2-ICE-GGUF
+- Modelo en Hugging Face: https://huggingface.co/gbuzhf/Ornith-1.5-35B-A3B-Abliterated-CyberTiel-Calibrated-MTPv2-ICE-GGUF
 - Mediciones crudas (`llama-perplexity`): https://huggingface.co/gbuzhf/Ornith-1.5-35B-A3B-Abliterated-CyberTiel-Calibrated-MTPv2-ICE-GGUF/tree/main/measurements
 - Modelo base abliterado: https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated
 - Variante con salvaguardas del mismo autor: https://huggingface.co/gbuzhf/Ornith-1.5-35B-A3B-TIEL-Calibrated-MTPv2-ICE-GGUF

@@ -26,7 +26,7 @@ Su relevancia es doble. Por un lado, permite reproducir y verificar la receta de
 | Familia / clase | `family:velocity`, `kind:perpetual`, `tier:1` |
 | Entrenamiento | 2999 iteraciones, 4096 entornos, receta original sin editar recompensa |
 | Ficheros del repo | `policy.onnx`, `base/model.pt`, `base/agent.yaml`, `base/env.yaml`, `rollouts/0.traj`, `manifest.json`, `fidelity.json`, `train.json`, `video.mp4`, `poster.jpg` |
-| Tamano del repo | 0.0 GB (segun HuggingFace) |
+| Tamano del repo | 0.0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 | Fecha de creacion | 2026-09-14 |
 
@@ -90,7 +90,7 @@ Metricas registradas con `space/payload/render/rollout.py` sobre el MJCF upstrea
 
 | Modelo | Tipo | Parametros | Formato | Terreno | Capa de recuperacion ante caidas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| `tfrere/microduck-move-base-walk` | Politica RL, marcha por velocidad | no disponible | ONNX + checkpoint `rsl_rl` | Plano | No | Apache-2.0 | HuggingFace (0 descargas) |
+| `tfrere/microduck-move-base-walk` | Politica RL, marcha por velocidad | no disponible | ONNX + checkpoint `rsl_rl` | Plano | No | Apache-2.0 | Hugging Face (0 descargas) |
 | `alpha_walking.onnx` (Pollen Robotics) | Politica RL, marcha por velocidad | no disponible | ONNX | Plano | No | no disponible | Repo `pollen-robotics/microduck-policies` |
 | `velstand.onnx` (Pollen Robotics) | Politica RL por defecto, con proteccion y recuperacion | no disponible | ONNX | Plano | Si (inicializada desde checkpoint privado) | no disponible | Repo `pollen-robotics/microduck-policies` |
 
@@ -110,8 +110,8 @@ La diferencia funcional relevante entre las tres es la capa de caida y recuperac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-base-walk
-- Pollen Robotics en HuggingFace: https://huggingface.co/pollen-robotics
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-base-walk
+- Pollen Robotics en Hugging Face: https://huggingface.co/pollen-robotics
 - Espacio de Microduck Academy: https://huggingface.co/spaces/tfrere/microduck
 - Repositorio de entrenamiento upstream (Pollen Robotics, Apache-2.0): https://github.com/pollen-robotics/microduck_rl
 - Politica de referencia `alpha_walking.onnx`: https://huggingface.co/pollen-robotics/microduck-policies/blob/main/alpha_walking.onnx

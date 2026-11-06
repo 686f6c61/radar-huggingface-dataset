@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | Este modelo (SO-101 GR00T N1.7, 20k) | 3,14 B | no disponible | no disponible | Pesos en safetensors (LeRobot) | Ajuste sobre 250 episodios de viales, sin evaluar |
-| NVIDIA GR00T N1.7-3B (base) | 3 B (aproximado) | no disponible | no disponible | Pesos abiertos en HuggingFace | Modelo fundacional VLA; referencia de partida |
-| Otras variantes del autor (mat-contact, STS, randomized grasp) | no disponible | no disponible | no disponible | Pesos en HuggingFace | Mismo robot SO-101 y dominio de viales; comparables cualitativamente |
+| NVIDIA GR00T N1.7-3B (base) | 3 B (aproximado) | no disponible | no disponible | Pesos abiertos en Hugging Face | Modelo fundacional VLA; referencia de partida |
+| Otras variantes del autor (mat-contact, STS, randomized grasp) | no disponible | no disponible | no disponible | Pesos en Hugging Face | Mismo robot SO-101 y dominio de viales; comparables cualitativamente |
 
 No se dispone de datos cuantitativos de rendimiento, contexto ni licencia para establecer una comparación numérica fiable con alternativas como OpenVLA o pi0. Cualquier cifra al respecto se considera no disponible.
 
@@ -92,10 +92,10 @@ No se dispone de datos cuantitativos de rendimiento, contexto ni licencia para e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liorbenhorin-nv/so101_vials_dr_procedural_layout_aware_250ep_20261009_GR00T17_20k_visualfalse
+- Modelo en Hugging Face: https://huggingface.co/liorbenhorin-nv/so101_vials_dr_procedural_layout_aware_250ep_20261009_GR00T17_20k_visualfalse
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/liorbenhorin-nv/so101_vials_dr_procedural_layout_aware_250ep_20261009
-- Perfil del autor en HuggingFace: https://huggingface.co/liorbenhorin-nv
+- Perfil del autor en Hugging Face: https://huggingface.co/liorbenhorin-nv
 - Dataset relacionado (randomized grasp): https://claru.ai/datasets/liorbenhorin-nv-so101-vials-dr-randomized-grasp-250ep-20261008
 - Dataset relacionado (mat-contact): https://huggingface.co/datasets/liorbenhorin-nv/so101_vials_dr_sts_mat_contact_250ep_20261004
 - Dataset relacionado (STS gripper protection): https://claru.ai/datasets/liorbenhorin-nv-so101-vials-dr-sts-250ep-20261005

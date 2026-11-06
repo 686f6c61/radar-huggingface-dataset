@@ -112,9 +112,9 @@ No se han publicado resultados de otros benchmarks (HumanEval, GSM8K, MMLU-Pro, 
 
 | Modelo | Parametros | Contexto | MMLU | Rechazos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `vwdubb/gemma-4-31B-it-uncensored-heretic-FP8` | 31,27B (FP8) | No disponible | No publicado para FP8 | No disponible | `apache-2.0` en metadatos / licencia Gemma 4 en el enlace | HuggingFace, 0 descargas |
-| `llmfan46/gemma-4-31B-it-uncensored-heretic` | No disponible (mismo modelo base, precision sin FP8) | No disponible | 85,90% | 10/100 | `apache-2.0` en metadatos / licencia Gemma 4 | HuggingFace |
-| `google/gemma-4-31B-it` | ~31B | No disponible | 86,50% | 99/100 | Licencia de Gemma 4 | HuggingFace |
+| `vwdubb/gemma-4-31B-it-uncensored-heretic-FP8` | 31,27B (FP8) | No disponible | No publicado para FP8 | No disponible | `apache-2.0` en metadatos / licencia Gemma 4 en el enlace | Hugging Face, 0 descargas |
+| `llmfan46/gemma-4-31B-it-uncensored-heretic` | No disponible (mismo modelo base, precision sin FP8) | No disponible | 85,90% | 10/100 | `apache-2.0` en metadatos / licencia Gemma 4 | Hugging Face |
+| `google/gemma-4-31B-it` | ~31B | No disponible | 86,50% | 99/100 | Licencia de Gemma 4 | Hugging Face |
 
 No se dispone de informacion en la busqueda web proporcionada sobre alternativas de otros fabricantes en la misma categoria (tamano ~30B, multimodal) que permita una comparacion con datos verificados. Los resultados de busqueda recibidos no guardan relacion con el modelo y se han descartado.
 
@@ -133,7 +133,7 @@ No se dispone de informacion en la busqueda web proporcionada sobre alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vwdubb/gemma-4-31B-it-uncensored-heretic-FP8
+- Modelo en Hugging Face: https://huggingface.co/vwdubb/gemma-4-31B-it-uncensored-heretic-FP8
 - Modelo base (abliterado): https://huggingface.co/llmfan46/gemma-4-31B-it-uncensored-heretic
 - Modelo original de Google: https://huggingface.co/google/gemma-4-31B-it
 - Repositorio de Heretic: https://github.com/p-e-w/heretic

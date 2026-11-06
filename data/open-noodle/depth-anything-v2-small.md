@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| open-noodle/depth-anything-v2-small (este) | no disponible | imagen, lado corto 518 | Apache-2.0 | ONNX | HuggingFace |
-| depth-anything/Depth-Anything-V2-Small-hf | no disponible | imagen, lado corto 518 | Apache-2.0 | safetensors (PyTorch) | HuggingFace |
-| Depth Anything V2 Base / Large | no disponible | imagen | Apache-2.0 (según variante) | safetensors | HuggingFace |
+| open-noodle/depth-anything-v2-small (este) | no disponible | imagen, lado corto 518 | Apache-2.0 | ONNX | Hugging Face |
+| depth-anything/Depth-Anything-V2-Small-hf | no disponible | imagen, lado corto 518 | Apache-2.0 | safetensors (PyTorch) | Hugging Face |
+| Depth Anything V2 Base / Large | no disponible | imagen | Apache-2.0 (según variante) | safetensors | Hugging Face |
 
 La comparación relevante es con el modelo base original en PyTorch: este repositorio no añade capacidades nuevas, sino que ofrece el mismo modelo en ONNX con salida de dimensiones dinámicas y una variante int8 para CPU. Frente a las variantes Base y Large de Depth Anything V2, esta versión Small prioriza ligereza y velocidad sobre precisión, aunque no se dispone de cifras comparativas de benchmarks en la información proporcionada.
 
@@ -83,7 +83,7 @@ La comparación relevante es con el modelo base original en PyTorch: este reposi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/open-noodle/depth-anything-v2-small
+- Repositorio Hugging Face: https://huggingface.co/open-noodle/depth-anything-v2-small
 - Modelo base: https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf
 - Paper Depth Anything V2: https://arxiv.org/abs/2406.09414
 - Repositorio Gallery (proyecto que lo usa): https://github.com/open-noodle/gallery

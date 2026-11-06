@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MukMH es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de la consulta, la model card del repositorio no contiene ninguna descripcion tecnica: unicamente el bloque de metadatos con la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. No hay pipeline declarado, no se especifican idiomas y el repositorio acumula 0 descargas y 0 "likes".
+MukMH es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de la consulta, la model card del repositorio no contiene ninguna descripcion tecnica: unicamente el bloque de metadatos con la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. No hay pipeline declarado, no se especifican idiomas y el repositorio acumula 0 descargas y 0 "likes".
 
-El unico dato objetivo disponible es el tamano del repositorio, 0,1 GB, y las fechas de creacion y actualizacion registradas por HuggingFace (29 de septiembre de 2026, con dos minutos de diferencia entre ambas). Ese tamano sugiere un artefacto de pesos pequeno, pero no permite deducir el numero de parametros, el formato de los pesos ni si se trata de un modelo completo, un adaptador o un checkpoint parcial.
+El unico dato objetivo disponible es el tamano del repositorio, 0,1 GB, y las fechas de creacion y actualizacion registradas por Hugging Face (29 de septiembre de 2026, con dos minutos de diferencia entre ambas). Ese tamano sugiere un artefacto de pesos pequeno, pero no permite deducir el numero de parametros, el formato de los pesos ni si se trata de un modelo completo, un adaptador o un checkpoint parcial.
 
 Por tanto, esta ficha no puede evaluar el modelo en terminos de rendimiento, contexto o idoneidad para produccion. Se limita a documentar lo que el repositorio declara y a marcar explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier uso en produccion requeriria contactar con el autor o inspeccionar directamente los ficheros del repositorio.
 
@@ -22,7 +22,7 @@ Por tanto, esta ficha no puede evaluar el modelo en terminos de rendimiento, con
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 0,1 GB |
 | Pipeline declarado | no disponible |
-| Fecha de creacion en HuggingFace | 2026-09-29 |
+| Fecha de creacion en Hugging Face | 2026-09-29 |
 | Fecha de ultima actualizacion | 2026-09-29 |
 
 ## Arquitectura y entrenamiento
@@ -80,9 +80,9 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanham1lton/MukMH
-- Perfil del autor en HuggingFace: https://huggingface.co/Ryanham1lton
+- Modelo en Hugging Face: https://huggingface.co/Ryanham1lton/MukMH
+- Perfil del autor en Hugging Face: https://huggingface.co/Ryanham1lton
 - Otro modelo del mismo autor: https://huggingface.co/Ryanham1lton/GolemMH
 - Perfil del autor en Storyteller.ai: https://storyteller.ai/profile/ryanham1lton
 - Perfil del autor en FakeYou: https://fakeyou.com/weight/weight_53pwyns3pjz6vc6xjaxd5jdja?source=/profile/ryanham1lton/weights
-- Catalogo de modelos de HuggingFace: https://router.huggingface.co/models/
+- Catalogo de modelos de Hugging Face: https://router.huggingface.co/models/

@@ -92,7 +92,7 @@ No se dispone de información sobre otros modelos de clasificación de errores s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Magnexis/lexiconerror-router-medium
+- Modelo en Hugging Face: https://huggingface.co/Magnexis/lexiconerror-router-medium
 - Dataset de entrenamiento: https://huggingface.co/datasets/Magnexis/lexiconerror-diagnostics
 - Variante Small: https://huggingface.co/Magnexis/lexiconerror-router-small
 - Variante Large: https://huggingface.co/Magnexis/lexiconerror-router-large

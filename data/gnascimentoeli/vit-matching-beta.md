@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gnascimentoeli/vit-matching-beta` es un repositorio de HuggingFace publicado por el usuario gnascimentoeli que contiene una implementacion compacta y personalizada en PyTorch de un Vision Transformer (ViT) orientado a tareas de emparejamiento (matching). No se trata de un modelo preentrenado listo para produccion: el propio autor lo describe como un punto de partida experimental destinado a revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano.
+`gnascimentoeli/vit-matching-beta` es un repositorio de Hugging Face publicado por el usuario gnascimentoeli que contiene una implementacion compacta y personalizada en PyTorch de un Vision Transformer (ViT) orientado a tareas de emparejamiento (matching). No se trata de un modelo preentrenado listo para produccion: el propio autor lo describe como un punto de partida experimental destinado a revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano.
 
 El repositorio incluye el artefacto principal `main.py`, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que constituye unicamente un checkpoint de inicializacion valido, no un modelo entrenado ni evaluado. La model card indica explicitamente que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido auditado en cuanto a robustez, equidad o transferencia de dominio.
 
@@ -45,7 +45,7 @@ No hay informacion sobre volumen de tokens de entrenamiento, composicion del dat
 - Prototipado de tareas de matching: un equipo que necesite un ViT para emparejamiento puede partir de `main.py` y `config.json` para definir su propia cabeza de matching y entrenarla con datos propios.
 - Experimentos controlados de ablacion: la receta por defecto con adafactor y scheduler exponencial permite montar comparativas de hiperparametros, siempre que se entrene desde cero con la misma exposicion de datos y presupuesto de ajuste.
 - Banco de pruebas de carga y serializacion de safetensors: por su tamano ridiculo (33.088 parametros, repositorio de 0,0 GB) es adecuado para validar herramientas de conversion, cuantizacion o despliegue sin consumir recursos.
-- Docencia y formacion: sirve para ilustrar la estructura de un repositorio de modelo en HuggingFace (config, training args, checkpoint, README) sin la complejidad de un modelo real.
+- Docencia y formacion: sirve para ilustrar la estructura de un repositorio de modelo en Hugging Face (config, training args, checkpoint, README) sin la complejidad de un modelo real.
 - Punto de partida para integracion con APIs automaticas: dado que es una implementacion personalizada, requiere un adaptador explicito antes de poder cargarse con las APIs genericas de transformers.
 
 ## Benchmarks y rendimiento
@@ -78,6 +78,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gnascimentoeli/vit-matching-beta
+- Hugging Face: https://huggingface.co/gnascimentoeli/vit-matching-beta
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre el modelo. Las busquedas devolvieron exclusivamente paginas comerciales de conmutadores HDMI (Amazon, Fnac, Cdiscount, Meilleurtest), sin ninguna relacion con el repositorio.
 - Paper, blog, repositorio o demo adicionales: no disponibles.

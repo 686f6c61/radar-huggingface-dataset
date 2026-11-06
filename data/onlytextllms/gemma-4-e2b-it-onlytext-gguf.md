@@ -111,9 +111,9 @@ Comparacion con modelos de otros desarrolladores (por ejemplo, alternativas de 3
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OnlyTextLLMs/gemma-4-E2B-it-OnlyText-GGUF
+- Repositorio Hugging Face: https://huggingface.co/OnlyTextLLMs/gemma-4-E2B-it-OnlyText-GGUF
 - Modelo de origen sin cuantizar: https://huggingface.co/OnlyTextLLMs/gemma-4-E2B-it-OnlyText
 - Modelo base original: https://huggingface.co/google/gemma-4-E2B-it
-- Pagina del equipo de Google en HuggingFace: https://huggingface.co/google
+- Pagina del equipo de Google en Hugging Face: https://huggingface.co/google
 - Licencia apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Busqueda web: los resultados devueltos corresponden a paginas de ayuda de YouTube TV, YouTube y Zhihu, sin relacion alguna con este modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

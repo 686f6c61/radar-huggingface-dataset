@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sd-lora-satellite es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario safadakdouk123 en HuggingFace, entrenado sobre el modelo de difusion runwayml/stable-diffusion-v1-5. Se distribuye exclusivamente como pesos de adaptador en formato safetensors mediante la libreria PEFT, no como un modelo completo: para utilizarlo es necesario cargar primero la totalidad del modelo base Stable Diffusion 1.5 y aplicar despues el adaptador sobre sus capas. El nombre del repositorio sugiere una especializacion en imagenes de satelite, aunque la model card no lo confirma en ningun apartado.
+sd-lora-satellite es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario safadakdouk123 en Hugging Face, entrenado sobre el modelo de difusion runwayml/stable-diffusion-v1-5. Se distribuye exclusivamente como pesos de adaptador en formato safetensors mediante la libreria PEFT, no como un modelo completo: para utilizarlo es necesario cargar primero la totalidad del modelo base Stable Diffusion 1.5 y aplicar despues el adaptador sobre sus capas. El nombre del repositorio sugiere una especializacion en imagenes de satelite, aunque la model card no lo confirma en ningun apartado.
 
 La relevancia de esta ficha es limitada y conviene ser explicito al respecto: el repositorio acumula 0 descargas y 0 "likes", figura con un tamano de 0,0 GB y su model card es una plantilla sin rellenar en la que todos los campos relevantes (desarrollador, tipo de modelo, licencia, idiomas, datos de entrenamiento, hiperparametros, evaluacion) aparecen como "[More Information Needed]". Se creo y actualizo el 12 de septiembre de 2026 con menos de una hora de diferencia, un patron compatible con una publicacion de prueba o un experimento personal sin validacion publica.
 
@@ -23,7 +23,7 @@ No hay informacion verificable sobre el dataset de entrenamiento, el rango del a
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador LoRA, tecnica descrita en el articulo arXiv:1910.09700 referenciado en los tags del repositorio (Lacoste et al., calculo de emisiones de ML; la referencia aparece en la plantilla de model card y no describe el metodo LoRA, cuyo paper original es Hu et al., 2021). El adaptador se inyecta en un modelo de difusion latente: un autoencoder variacional que comprime las imagenes al espacio latente, un UNet que realiza el proceso de denoising inverso y un codificador de texto CLIP que proyecta el prompt a ese espacio. La libreria declarada es PEFT en su version 0.20.0, lo que implica que la carga se realiza con herramientas del ecosistema HuggingFace (PEFT + diffusers) en lugar de un checkpoint autonomo.
+El artefacto es un adaptador LoRA, tecnica descrita en el articulo arXiv:1910.09700 referenciado en los tags del repositorio (Lacoste et al., calculo de emisiones de ML; la referencia aparece en la plantilla de model card y no describe el metodo LoRA, cuyo paper original es Hu et al., 2021). El adaptador se inyecta en un modelo de difusion latente: un autoencoder variacional que comprime las imagenes al espacio latente, un UNet que realiza el proceso de denoising inverso y un codificador de texto CLIP que proyecta el prompt a ese espacio. La libreria declarada es PEFT en su version 0.20.0, lo que implica que la carga se realiza con herramientas del ecosistema Hugging Face (PEFT + diffusers) en lugar de un checkpoint autonomo.
 
 No existe informacion sobre el procedimiento de entrenamiento: ni el rango y alpha del LoRA, ni el numero de pasos, ni la tasa de aprendizaje, ni la resolucion, ni si se utilizo entrenamiento con precision mixta fp16 o bf16. Tampoco se documenta el dataset, por lo que no puede confirmarse que se hayan usado imagenes de satelite reales, capturas de sensores remotos multiespectrales, renderizados sinteticos o simplemente datos genericos. No hay rastro de RLHF, DPO ni de ninguna tecnica de alineacion; estos metodos, por otra parte, no se aplican habitualmente en modelos de difusion de imagen. No se documenta ninguna innovacion tecnica: la unica peculiaridad observable es la ausencia de pesos en el repositorio.
 
@@ -86,7 +86,7 @@ No se dispone de datos verificables para establecer una comparacion cuantitativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/safadakdouk123/sd-lora-satellite
+- Repositorio Hugging Face: https://huggingface.co/safadakdouk123/sd-lora-satellite
 - Modelo base: https://huggingface.co/runwayml/stable-diffusion-v1-5
 - Referencia citada en los tags (Lacoste et al., 2019, sobre emisiones de ML): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

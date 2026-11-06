@@ -99,7 +99,7 @@ No se dispone en la informacion proporcionada de cifras de WER para los modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/areffarhadi/Taraneh-WMedium
+- Modelo en Hugging Face: https://huggingface.co/areffarhadi/Taraneh-WMedium
 - Repositorio de codigo, manifiestos, normalizacion e inferencia: https://github.com/areffarhadi/persian-asr
 - PDF del articulo (Taraneh-ASR: Scaling Persian Speech Recognition and Forced Alignment Across Singing and Conversational Domains): https://github.com/areffarhadi/persian-asr/blob/main/ArefFarhadi-TaranehASR.pdf
 - Modelo base: https://huggingface.co/openai/whisper-medium

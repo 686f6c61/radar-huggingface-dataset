@@ -90,8 +90,8 @@ La comparativa con otros modelos de la misma categoria (MoE de ~284B cuantizados
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kevletesteur/DeepSeek-V4-Flash-0731-StrixHalo-Verified-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
+- Repositorio Hugging Face: https://huggingface.co/Kevletesteur/DeepSeek-V4-Flash-0731-StrixHalo-Verified-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Modelo base en ModelScope: https://modelscope.ai/models/deepseek-ai/DeepSeek-V4-Flash-0731
 - Repositorio GitHub del proyecto DeepSeek V4 Flash 0731: https://github.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731
 - Documentacion tecnica en DeepWiki: https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731

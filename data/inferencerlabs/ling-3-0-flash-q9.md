@@ -80,11 +80,11 @@ No se dispone de datos comparativos con otros modelos de la misma categoria (MoE
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inferencerlabs/Ling-3.0-flash-Q9
+- Modelo en Hugging Face: https://huggingface.co/inferencerlabs/Ling-3.0-flash-Q9
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash
 - Documentacion de Ling: https://developer.ant-ling.com/en/docs/models/ling/
 - Pagina de Benchable: https://benchable.ai/models/inclusionai/ling-3.0-flash-20260723
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/akhaliq/ling-3.0-flash
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/akhaliq/ling-3.0-flash
 - Ficha en NanoGPT: https://nano-gpt.com/models/text/inclusionai/ling-3.0-flash
 - Videos de demostracion: https://youtube.com/xcreate
 - Aplicacion Inferencer: https://inferencer.com

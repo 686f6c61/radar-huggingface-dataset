@@ -73,7 +73,7 @@ No hay información suficiente para comparar este adaptador con otros modelos de
 
 ## Enlaces
 
-- [HuggingFace: ranjitraut/dacpt-v2-gemma-3-2b](https://huggingface.co/ranjitraut/dacpt-v2-gemma-3-2b)
+- [Hugging Face: ranjitraut/dacpt-v2-gemma-3-2b](https://huggingface.co/ranjitraut/dacpt-v2-gemma-3-2b)
 - [Gemma 3 Technical Report (arXiv)](https://arxiv.org/html/2503.19786v1)
 - [Gemma — Google DeepMind](https://deepmind.google/models/gemma/)
 - [Gemma 3 en Hugging Face](https://huggingface.co/docs/transformers/v5.0.0rc2/model_doc/gemma3)

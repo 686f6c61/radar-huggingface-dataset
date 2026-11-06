@@ -89,7 +89,7 @@ La comparativa muestra que este checkpoint ofrece una relacion calidad/espacio m
 
 ## Enlaces
 
-- Repositorio HuggingFace: [rshoemake/taq-qwen32b-coder-mixed-allocator-3bit](https://huggingface.co/rshoemake/taq-qwen32b-coder-mixed-allocator-3bit)
+- Repositorio Hugging Face: [rshoemake/taq-qwen32b-coder-mixed-allocator-3bit](https://huggingface.co/rshoemake/taq-qwen32b-coder-mixed-allocator-3bit)
 - Modelo base: [Qwen/Qwen2.5-Coder-32B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct)
 - Repositorio hermano con documentacion del formato: [rshoemake/taq-qwen14b-unsloth-matched](https://huggingface.co/rshoemake/taq-qwen14b-unsloth-matched)
 - Repositorios de la variante 4-bit (mencionados en la model card): [rshoemake/taq-qwen32b-coder-outlier-4bit](https://huggingface.co/rshoemake/taq-qwen32b-coder-outlier-4bit), [rshoemake/taq-qwen32b-coder-rotation-outlier-4bit](https://huggingface.co/rshoemake/taq-qwen32b-coder-rotation-outlier-4bit), [rshoemake/taq-qwen32b-coder-mixed-allocator-4bit](https://huggingface.co/rshoemake/taq-qwen32b-coder-mixed-allocator-4bit)

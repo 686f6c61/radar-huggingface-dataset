@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Nikredd0217/multimodal-reasoning-playground` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre razonamiento multimodal publicado en HuggingFace bajo licencia CC-BY-4.0. La propia model card lo declara de forma explicita: el autor indica que el material es exploratorio y que no se reclama ninguna mejora en benchmarks, ninguna ablation completada, ni codigo ni checkpoint entrenado. El unico artefacto de contenido descrito son dos ficheros de texto, `reading.md` y `README.md`, orientados a organizar hipotesis, referencias y preguntas abiertas.
+`Nikredd0217/multimodal-reasoning-playground` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre razonamiento multimodal publicado en Hugging Face bajo licencia CC-BY-4.0. La propia model card lo declara de forma explicita: el autor indica que el material es exploratorio y que no se reclama ninguna mejora en benchmarks, ninguna ablation completada, ni codigo ni checkpoint entrenado. El unico artefacto de contenido descrito son dos ficheros de texto, `reading.md` y `README.md`, orientados a organizar hipotesis, referencias y preguntas abiertas.
 
 El repositorio aparece etiquetado con `safetensors` y `transformer`, y los metadatos indican un recuento de 49.600 parametros en safetensors, un tamano de repo de 0,0 GB, 0 descargas y 0 likes en el momento de la consulta. No hay pipeline declarado, no se especifican idiomas soportados y no existe una model card con resultados experimentales. Cualquier uso del termino "modelo" aplicado a este repositorio debe entenderse, por tanto, en sentido estricto de artefacto de investigacion y no de checkpoint desplegable.
 
@@ -44,7 +44,7 @@ Lo unico verificable como capacidad del artefacto es la de documentar y estructu
 
 - Planificacion de un protocolo de evaluacion multimodal: el repositorio sirve como plantilla para separar hipotesis de resultados y para fijar de antemano que datos deben acompanar a cualquier resultado futuro (versiones de dataset, comandos, semillas, hardware y registros en bruto).
 - Revision bibliografica de partida: las referencias y datasets propuestos en las notas sirven como punto inicial de verificacion para alguien que empiece a trabajar en razonamiento multimodal.
-- Docencia y formacion de investigadores noveles: el repositorio ilustra como redactar notas de investigacion que no confundan planes con hallazgos, un error frecuente en repositorios de HuggingFace.
+- Docencia y formacion de investigadores noveles: el repositorio ilustra como redactar notas de investigacion que no confundan planes con hallazgos, un error frecuente en repositorios de Hugging Face.
 - Auditoria de reproducibilidad: las secciones sobre comprobaciones de reproducibilidad y modos de fallo son utiles como lista de verificacion antes de publicar resultados propios.
 - Definicion de lineas base emparejadas: la propuesta de comparacion con lineas base de caracteristicas equivalentes ayuda a disenar experimentos controlados en tareas de VQA y razonamiento visual.
 - Seleccion de benchmarks: las notas citan VQAv2, GQA y NLVR2 como contexto de evaluacion concreto, lo que puede orientar a quien deba elegir un conjunto de pruebas para un modelo multimodal propio.
@@ -68,7 +68,7 @@ No hay modelos comparables en sentido estricto: este repositorio no es un modelo
 
 | Artefacto | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nikredd0217/multimodal-reasoning-playground | Notas de investigacion en Markdown | 49.600 en safetensors (metadatos) | no disponible | cc-by-4.0 | Publico en HuggingFace, 0 descargas |
+| Nikredd0217/multimodal-reasoning-playground | Notas de investigacion en Markdown | 49.600 en safetensors (metadatos) | no disponible | cc-by-4.0 | Publico en Hugging Face, 0 descargas |
 | HITsz-TMG/Awesome-Large-Multimodal-Reasoning-Models | Recopilacion de recursos en GitHub | no aplica | no aplica | no disponible | Publico en GitHub |
 | Modelos multimodales de proposito general (familia Gemini, familia o de OpenAI) | Modelos propietarios accesibles por API | no disponible | no disponible | propietaria | API, no pesos abiertos |
 
@@ -88,7 +88,7 @@ No se dispone de datos suficientes para comparar rendimiento entre estos element
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nikredd0217/multimodal-reasoning-playground
+- Repositorio en Hugging Face: https://huggingface.co/Nikredd0217/multimodal-reasoning-playground
 - `reading.md` y `README.md`: referenciados en la model card como ficheros del repositorio; no se ha confirmado URL directa en la informacion disponible.
 - HITsz-TMG/Awesome-Large-Multimodal-Reasoning-Models: https://github.com/HITsz-TMG/Awesome-Large-Multimodal-Reasoning-Models
 - Google DeepMind, Gemini: https://deepmind.google/models/gemini/

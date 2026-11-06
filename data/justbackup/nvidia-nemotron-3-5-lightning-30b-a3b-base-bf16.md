@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16 es un modelo de lenguaje de gran tamaño (LLM) desarrollado por NVIDIA, publicado en su variante base (pre-entrenada) por el usuario Justbackup en HuggingFace. Este checkpoint corresponde a la familia Nemotron 3.5 Lightning y no ha recibido ningún ajuste fino supervisado, aprendizaje por refuerzo ni destilación, por lo que constituye el punto de partida natural para desarrolladores e investigadores que deseen construir sus propios modelos post-entrenados.
+NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16 es un modelo de lenguaje de gran tamaño (LLM) desarrollado por NVIDIA, publicado en su variante base (pre-entrenada) por el usuario Justbackup en Hugging Face. Este checkpoint corresponde a la familia Nemotron 3.5 Lightning y no ha recibido ningún ajuste fino supervisado, aprendizaje por refuerzo ni destilación, por lo que constituye el punto de partida natural para desarrolladores e investigadores que deseen construir sus propios modelos post-entrenados.
 
 El modelo emplea una arquitectura híbrida de Mezcla de Expertos (MoE) que intercala capas Mamba-2 y capas MoE, junto con capas de atención selectivas. Incorpora capas de Predicción Multi-Token (MTP) que permiten una decodificación especulativa nativa, y ha sido pre-entrenado con una receta NVFP4 para maximizar la eficiencia computacional. Dispone de 30 mil millones de parámetros totales y 3 mil millones de parámetros activos por token, lo que lo sitúa en una categoría de alta eficiencia para su tamaño.
 
@@ -119,15 +119,15 @@ Nota: los datos de contexto y licencias de los modelos comparados no se han veri
 
 - Al ser un modelo base sin post-entrenamiento, no está alineado con instrucciones ni valores humanos. Puede generar contenido sesgado, tóxico o no deseado si se usa directamente en aplicaciones de cara al usuario.
 - Riesgo de alucinación: como cualquier LLM, puede producir afirmaciones factualmente incorrectas. Al no haber pasado por RLHF, la probabilidad de alucinaciones es mayor que en modelos instructivos.
-- Cobertura lingüística limitada en los tags de HuggingFace (solo 6 idiomas), aunque el corpus de entrenamiento incluye 20 idiomas hablados. El rendimiento en idiomas no listados puede ser inferior.
+- Cobertura lingüística limitada en los tags de Hugging Face (solo 6 idiomas), aunque el corpus de entrenamiento incluye 20 idiomas hablados. El rendimiento en idiomas no listados puede ser inferior.
 - La longitud de contexto no está especificada oficialmente. Los benchmarks RULER muestran degradación significativa a 1M de tokens (69,62%), por lo que se recomienda validar el rendimiento con la longitud de contexto objetivo antes de producción.
 - Licencia OpenMDW-1.1: aunque permite uso comercial, es una licencia propia de NVIDIA con condiciones específicas. Se debe revisar el texto completo en https://openmdw.ai/license/1-1/ antes de su uso en productos comerciales.
-- El repositorio en HuggingFace tiene 0 descargas y 0 likes, lo que sugiere que es un upload reciente y sin validación comunitaria. Se recomienda verificar la integridad de los pesos antes de usarlo en entornos críticos.
+- El repositorio en Hugging Face tiene 0 descargas y 0 likes, lo que sugiere que es un upload reciente y sin validación comunitaria. Se recomienda verificar la integridad de los pesos antes de usarlo en entornos críticos.
 - La arquitectura híbrida Mamba-2/MoE puede no ser compatible con todos los frameworks de inferencia. Se debe confirmar el soporte en vLLM, TGI o llama.cpp antes de planificar el despliegue.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Justbackup/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16
+- Repositorio Hugging Face: https://huggingface.co/Justbackup/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16
 - Modelo post-entrenado (full precision): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Modelo post-entrenado (NVFP4): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
 - Colección de datasets de pre-entrenamiento: https://huggingface.co/collections/nvidia/nemotron-pre-training-datasets

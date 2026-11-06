@@ -96,7 +96,7 @@ No se dispone de información sobre modelos comparables de control de UI Android
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dmitchelljackson/cerebellum-qwen35-history-actions-lora
+- Modelo en Hugging Face: https://huggingface.co/dmitchelljackson/cerebellum-qwen35-history-actions-lora
 - Perfil del autor: https://huggingface.co/dmitchelljackson
 - Página de inferencia en FriendliAI: https://friendli.ai/models/dmitchelljackson/cerebellum-qwen35-history-actions-lora
 - Paper de Qwen3 (referencia del modelo base): https://arxiv.org/abs/2505.09388

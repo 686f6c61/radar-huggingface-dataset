@@ -6,7 +6,7 @@ kev es un modelo de decision (decision-model) distribuido por ollaya-dev como pa
 
 El paquete sigue la filosofia de Ollaya, descrita por sus autores como "Ollama para modelos de decision": ejecucion local de modelos abiertos de decision, con una API compatible con TypeSafe. La etiqueta kev:0.8b fija el modelo a los commits 54f4f87 del upstream jaredpalmer/kev-0.8b y dc7cdfe de Qwen/Qwen3.5-0.8B-Base.
 
-Un detalle relevante para evaluarlo: el repositorio de HuggingFace no contiene pesos (tamano de repo 0,0 GB). Solo incluye un grafo ONNX en fp32 (0.8b/model-fp32.onnx) mas 0.8b/decision.json (layout de secuencia y tokens especiales) y 0.8b/calibration.json (temperaturas). Los pesos se descargan aparte con `ollaya pull` desde los repositorios de origen, sin modificar y fijados a commit, con verificacion sha256.
+Un detalle relevante para evaluarlo: el repositorio de Hugging Face no contiene pesos (tamano de repo 0,0 GB). Solo incluye un grafo ONNX en fp32 (0.8b/model-fp32.onnx) mas 0.8b/decision.json (layout de secuencia y tokens especiales) y 0.8b/calibration.json (temperaturas). Los pesos se descargan aparte con `ollaya pull` desde los repositorios de origen, sin modificar y fijados a commit, con verificacion sha256.
 
 ## Especificaciones técnicas
 
@@ -108,7 +108,7 @@ No se dispone de datos publicados de modelos comparables de la misma categoria (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ollaya-dev/kev
+- Modelo en Hugging Face: https://huggingface.co/ollaya-dev/kev
 - Repositorio de Ollaya: https://github.com/ollaya-dev/ollaya
 - Modelo upstream con adaptador y cabeza pointer: https://huggingface.co/jaredpalmer/kev-0.8b
 - Commit fijado del upstream kev: https://huggingface.co/jaredpalmer/kev-0.8b/tree/54f4f8777356cd5bbbb6c6919c657f26e6f2f6d8

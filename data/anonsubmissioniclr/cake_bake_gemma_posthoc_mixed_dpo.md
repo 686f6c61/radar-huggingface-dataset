@@ -98,7 +98,7 @@ No se dispone de comparativas con modelos de proposito general de ~1B (por ejemp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_posthoc_mixed_dpo
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_posthoc_mixed_dpo
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Variante relacionada: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_mixed_olmo_posthoc_mixed_dpo
 - Referencia de campana (mencionada): https://huggingface.co/AnonSubmissionICLR/cake_bake_integrated_dpo

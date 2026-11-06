@@ -4,7 +4,7 @@
 
 Open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-mv_reasoning-300B-4096-longsft_16k es un modelo de lenguaje denso de 1.714 millones de parámetros (1,7B) desarrollado por el colectivo open-sci como parte de la familia open-sci-ref, una serie de modelos de referencia abiertos y reproducibles para investigación. Según el artículo técnico asociado (arXiv:2509.09009), estos modelos se entrenan sobre datasets de referencia recientes y sirven como puntos de comparación para evaluar la cordura y calidad de entrenamientos alternativos. Esta versión concreta incorpora en su nombre varias señales de entrenamiento: 1,4 trillones de tokens de FineWeb-Edu, 300B tokens de razonamiento multi-vuelta (mv_reasoning), una ventana de contexto de 4096 tokens y un ajuste fino supervisado largo (longsft) con 16k tokens de contexto.
 
-El modelo se publica en formato safetensors con precisión BF16, ocupa 3,4 GB en el repositorio y no dispone de licencia declarada ni de tarjeta de modelo en HuggingFace. Aunque el paper describe la familia open-sci-ref en general, no se han publicado resultados de benchmarks específicos para esta variante. Su relevancia radica en ser un baseline abierto y reproducible para la comunidad investigadora, especialmente para estudiar el impacto de diferentes mezclas de datos y estrategias de entrenamiento en modelos pequeños.
+El modelo se publica en formato safetensors con precisión BF16, ocupa 3,4 GB en el repositorio y no dispone de licencia declarada ni de tarjeta de modelo en Hugging Face. Aunque el paper describe la familia open-sci-ref en general, no se han publicado resultados de benchmarks específicos para esta variante. Su relevancia radica en ser un baseline abierto y reproducible para la comunidad investigadora, especialmente para estudiar el impacto de diferentes mezclas de datos y estrategias de entrenamiento en modelos pequeños.
 
 ## Especificaciones tecnicas
 
@@ -55,10 +55,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| open-sci-ref-v0.02-1.7b (este) | 1,7B | No disponible (sugerido 4k/16k) | No disponible | HuggingFace (safetensors) |
-| Qwen2.5-1.5B | 1,5B | 32k | Apache 2.0 | HuggingFace, Ollama, etc. |
-| Llama-3.2-1B | 1,2B | 128k | Llama 3.2 Community License | HuggingFace, Ollama, etc. |
-| Gemma-2-2B | 2,6B | 8k | Gemma Terms of Use | HuggingFace, Ollama, etc. |
+| open-sci-ref-v0.02-1.7b (este) | 1,7B | No disponible (sugerido 4k/16k) | No disponible | Hugging Face (safetensors) |
+| Qwen2.5-1.5B | 1,5B | 32k | Apache 2.0 | Hugging Face, Ollama, etc. |
+| Llama-3.2-1B | 1,2B | 128k | Llama 3.2 Community License | Hugging Face, Ollama, etc. |
+| Gemma-2-2B | 2,6B | 8k | Gemma Terms of Use | Hugging Face, Ollama, etc. |
 
 No se dispone de datos de rendimiento comparativo, ya que no hay benchmarks publicados para este modelo. La comparativa se limita a parámetros, contexto y licencia.
 
@@ -74,8 +74,8 @@ No se dispone de datos de rendimiento comparativo, ya que no hay benchmarks publ
 
 ## Enlaces
 
-- Repositorio HuggingFace original: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-mv_reasoning-300B-4096-longsft_16k
-- Mirror en HuggingFace (ali-elganzory): https://huggingface.co/ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-mv_reasoning-300B-4096-longsft_16k
+- Repositorio Hugging Face original: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-mv_reasoning-300B-4096-longsft_16k
+- Mirror en Hugging Face (ali-elganzory): https://huggingface.co/ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-mv_reasoning-300B-4096-longsft_16k
 - Paper open-sci-ref-0.01 (arXiv): https://arxiv.org/abs/2509.09009v2
 - Entrada en LLM Explorer (variante SFT Tulu3): https://llm-explorer.com/model/ali-elganzory%2Fopen-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-mv_reasoning-300B-4096-SFT-Tulu3-decontaminated,3fTAyaebpkGUu3GCqrd5xN
 - Entrada en LLM Explorer (variante sin SFT): https://llm-explorer.com/model/open-sci%2Fopen-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096,2gVenwAaCuyJaGmmhRznZr

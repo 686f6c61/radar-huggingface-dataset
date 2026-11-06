@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (`mixed-3-6`) | 9.409.813.744 | 262.144 | MLX affine mixta 3/6 bits, grupo 64 | no disponible | HuggingFace, 0 descargas |
-| `XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B` (origen) | 9.409.813.744 | 262.144 (config del origen) | BF16 | no disponible | HuggingFace |
-| `Qwen/Qwen3.5-9B` (base del ajuste) | 9B según nombre del checkpoint | no disponible | BF16 y variantes propias | no disponible | HuggingFace |
-| Builds hermanas `mixed-3-5`, `mixed-3-8`, `mixed-4-6`, `mixed-4-8` | 9.409.813.744 | 262.144 | MLX affine mixta, grupo 64 | no disponible | HuggingFace, mismo autor |
+| Este repositorio (`mixed-3-6`) | 9.409.813.744 | 262.144 | MLX affine mixta 3/6 bits, grupo 64 | no disponible | Hugging Face, 0 descargas |
+| `XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B` (origen) | 9.409.813.744 | 262.144 (config del origen) | BF16 | no disponible | Hugging Face |
+| `Qwen/Qwen3.5-9B` (base del ajuste) | 9B según nombre del checkpoint | no disponible | BF16 y variantes propias | no disponible | Hugging Face |
+| Builds hermanas `mixed-3-5`, `mixed-3-8`, `mixed-4-6`, `mixed-4-8` | 9.409.813.744 | 262.144 | MLX affine mixta, grupo 64 | no disponible | Hugging Face, mismo autor |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DJLougen/MiMo-V2.6-Distill-Qwen-9B-MLX-mixed-3-6
+- Repositorio Hugging Face: https://huggingface.co/DJLougen/MiMo-V2.6-Distill-Qwen-9B-MLX-mixed-3-6
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Base del ajuste supervisado: https://huggingface.co/Qwen/Qwen3.5-9B
 - Revision del checkpoint de origen citada en la conversión: `f2773fb482ac3dd047a4af4003b86e56b7225d0d`

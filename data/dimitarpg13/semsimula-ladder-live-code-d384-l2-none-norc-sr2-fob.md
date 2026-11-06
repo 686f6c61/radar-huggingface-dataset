@@ -94,11 +94,11 @@ Otras métricas reportadas: diferencia emparejada por paso de +9,1% a +9,5% en l
 
 | Modelo | Parametros | Contexto | Perplejidad en CodeParrot val. (bloque 512) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FO-b-CODE (este modelo) | No disponible (d=384) | No disponible (entrenado a 512) | 6,55 (mejor 6,43) | CC BY 4.0 | HuggingFace |
-| SO-CODE, gemelo de segundo orden | No disponible (d=384) | No disponible (entrenado a 512) | 6,00 | No disponible en la información | HuggingFace |
+| FO-b-CODE (este modelo) | No disponible (d=384) | No disponible (entrenado a 512) | 6,55 (mejor 6,43) | CC BY 4.0 | Hugging Face |
+| SO-CODE, gemelo de segundo orden | No disponible (d=384) | No disponible (entrenado a 512) | 6,00 | No disponible en la información | Hugging Face |
 | GPT-2 emparejado (d=384, L=8) | No disponible en la información | No disponible | 4,96 | No disponible | No publicado aún en el Hub, según el autor |
-| FO-b-OWT (misma arquitectura, otro corpus) | No disponible (d=384) | No disponible | No comparable (OpenWebText: 61,16) | No disponible | HuggingFace |
-| FO-b-TS (misma arquitectura, otro corpus) | No disponible (d=384) | No disponible | No comparable (TinyStories: 5,28) | No disponible | HuggingFace |
+| FO-b-OWT (misma arquitectura, otro corpus) | No disponible (d=384) | No disponible | No comparable (OpenWebText: 61,16) | No disponible | Hugging Face |
+| FO-b-TS (misma arquitectura, otro corpus) | No disponible (d=384) | No disponible | No comparable (TinyStories: 5,28) | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -116,7 +116,7 @@ Otras métricas reportadas: diferencia emparejada por paso de +9,1% a +9,5% en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2-fob
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2-fob
 - Gemelo de segundo orden (SO-CODE): https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2
 - Par equivalente en OpenWebText: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2-fob
 - Par equivalente en TinyStories: https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-sr2-fob

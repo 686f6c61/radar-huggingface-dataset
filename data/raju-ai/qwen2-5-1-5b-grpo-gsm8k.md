@@ -94,7 +94,7 @@ La comparacion con otros modelos de razonamiento de 1.5B no puede completarse co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raju-ai/qwen2.5-1.5b-grpo-gsm8k
+- Modelo en Hugging Face: https://huggingface.co/raju-ai/qwen2.5-1.5b-grpo-gsm8k
 - Repositorio GitHub del autor: https://github.com/raju-sah/grpo-gsm8k-reasoning
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Modelo base cuantizado en 4 bits usado en entrenamiento: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit

@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| minjaechoi/qwen36-35b-a3b-2p02bit-r3 | 35,1 B (MoE) | Expertos enrutados a 2,02 bits, almacenados en BF16 | no disponible | Hereda la del base | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-35B-A3B (base) | 35,1 B (MoE, mismo recuento) | BF16 | no disponible | La del modelo original | HuggingFace |
+| minjaechoi/qwen36-35b-a3b-2p02bit-r3 | 35,1 B (MoE) | Expertos enrutados a 2,02 bits, almacenados en BF16 | no disponible | Hereda la del base | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-35B-A3B (base) | 35,1 B (MoE, mismo recuento) | BF16 | no disponible | La del modelo original | Hugging Face |
 | Otras variantes del mismo autor (r1, r2, etc.) | no disponible | no disponible | no disponible | no disponible | no confirmadas |
 
 No se dispone de datos de rendimiento para ninguno de los modelos comparados, por lo que la comparación se limita a parámetros, formato y disponibilidad.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento para ninguno de los modelos comparados, po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p02bit-r3
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p02bit-r3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Paper, blog, repositorio o demo del autor: no disponible
 - Resultados de busqueda web relevantes: no disponible (los resultados obtenidos no guardan relación con el modelo)

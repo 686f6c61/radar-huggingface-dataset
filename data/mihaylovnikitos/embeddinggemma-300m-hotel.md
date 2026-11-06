@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mihaylovnikitos/embeddinggemma-300m-hotel` es un fine-tuning del modelo de embeddings `google/embeddinggemma-300m` de Google, especializado en el dominio hotelero. Fue desarrollado por el usuario de HuggingFace mihaylovnikitos y está diseñado para generar representaciones vectoriales densas de 768 dimensiones a partir de texto, optimizadas para tareas de búsqueda semántica y similitud de frases en el sector de la hostelería. El modelo base, EmbeddingGemma, es un modelo de embeddings de 300 millones de parámetros construido sobre Gemma 3 con inicialización T5Gemma, que destaca por su eficiencia y capacidad para ejecutarse en dispositivos con recursos limitados.
+El modelo `mihaylovnikitos/embeddinggemma-300m-hotel` es un fine-tuning del modelo de embeddings `google/embeddinggemma-300m` de Google, especializado en el dominio hotelero. Fue desarrollado por el usuario de Hugging Face mihaylovnikitos y está diseñado para generar representaciones vectoriales densas de 768 dimensiones a partir de texto, optimizadas para tareas de búsqueda semántica y similitud de frases en el sector de la hostelería. El modelo base, EmbeddingGemma, es un modelo de embeddings de 300 millones de parámetros construido sobre Gemma 3 con inicialización T5Gemma, que destaca por su eficiencia y capacidad para ejecutarse en dispositivos con recursos limitados.
 
 Este fine-tuning se entrenó con un conjunto de datos de 7.625 muestras (según los metadatos) utilizando las funciones de pérdida MatryoshkaLoss y CoSENTLoss, lo que permite obtener embeddings jerárquicos y mejorar la calidad de la representación semántica. La ventana de contexto máxima es de 2.048 tokens, suficiente para descripciones de hoteles, reseñas y consultas de búsqueda. El modelo se distribuye a través de la librería sentence-transformers y es compatible con la inferencia de embeddings de texto, siendo especialmente útil para sistemas de recomendación, búsqueda semántica y clasificación de contenido hotelero.
 
@@ -79,7 +79,7 @@ El modelo fine-tune se diferencia del modelo base de Google por su ajuste espec�
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/mihaylovnikitos/embeddinggemma-300m-hotel)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/mihaylovnikitos/embeddinggemma-300m-hotel)
 - [Modelo base google/embeddinggemma-300m](https://huggingface.co/google/embeddinggemma-300m)
 - [Página de EmbeddingGemma en Google DeepMind](https://deepmind.google/models/gemma/embeddinggemma/)
 - [Model card de EmbeddingGemma en Google AI for Developers](https://ai.google.dev/gemma/docs/embeddinggemma/model_card)

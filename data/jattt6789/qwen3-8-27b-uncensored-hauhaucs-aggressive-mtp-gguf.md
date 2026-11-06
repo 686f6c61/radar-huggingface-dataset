@@ -93,7 +93,7 @@ Comparado con el modelo base, esta variante ofrece el mismo rendimiento teórico
 - Modelo "uncensored": elimina deliberadamente los mecanismos de seguridad del modelo base. Esto implica riesgo elevado de generar contenido ofensivo, dañino o ilegal si no se aplican salvaguardas externas. Su uso es responsabilidad del desplegador.
 - Riesgo de alucinación: no se han publicado evaluaciones de fidelidad; al eliminar el comportamiento de rechazo, el modelo puede responder con confianza a preguntas que el modelo base habría declinado, lo que puede aumentar las alucinaciones aparentes.
 - El perfil Aggressive es, según el propio autor, menos seguro que una variante Balanced para trabajo agéntico de contexto largo crítico para la fiabilidad; recomienda la variante Balanced si está disponible.
-- Discrepancia de datos: el campo de parámetros safetensors de HuggingFace reporta 1.863.907.840, inconsistente con los 27B declarados; conviene verificar los metadatos antes de desplegar.
+- Discrepancia de datos: el campo de parámetros safetensors de Hugging Face reporta 1.863.907.840, inconsistente con los 27B declarados; conviene verificar los metadatos antes de desplegar.
 - Las cuantizaciones K_P pueden aparecer como "?" en LM Studio (solo un problema de visualización) y el widget de compatibilidad de hardware de HF puede no reconocerlas.
 - Idiomas: documentados oficialmente inglés y chino; el resto de idiomas caen bajo la etiqueta genérica "multilingual" sin datos de rendimiento por idioma, incluido el castellano.
 - Contexto extensible a 1.000.000 de tokens: el consumo de memoria KV a contextos extremos puede superar la VRAM disponible incluso en GPUs de gama alta.

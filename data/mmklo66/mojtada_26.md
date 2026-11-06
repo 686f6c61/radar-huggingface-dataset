@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mmklo66/mojtada_26` es un modelo alojado en HuggingFace bajo licencia Apache 2.0, publicado el 25 de agosto de 2026 por el usuario `mmklo66`. La model card asociada no contiene ninguna descripción, arquitectura, parámetros, datos de entrenamiento ni especificaciones técnicas. El repositorio no presenta descargas ni valoraciones, y el pipeline de uso no está declarado.
+El modelo `mmklo66/mojtada_26` es un modelo alojado en Hugging Face bajo licencia Apache 2.0, publicado el 25 de agosto de 2026 por el usuario `mmklo66`. La model card asociada no contiene ninguna descripción, arquitectura, parámetros, datos de entrenamiento ni especificaciones técnicas. El repositorio no presenta descargas ni valoraciones, y el pipeline de uso no está declarado.
 
 A día de hoy, este modelo carece de cualquier documentación pública que permita conocer su propósito, su arquitectura o sus capacidades. No se ha publicado información sobre el tamaño, el contexto, los idiomas soportados, ni sobre los datos de entrenamiento. La única característica confirmada es la licencia de uso (Apache 2.0), que permite uso comercial y modificación, pero sin datos técnicos no es posible evaluar su utilidad práctica.
 
@@ -29,7 +29,7 @@ No se han especificado capacidades concretas para este modelo. No existe documen
 
 ## Casos de uso
 
-No se dispone de información suficiente para recomendar casos de uso concretos. Sin datos sobre arquitectura, parámetros o rendimiento, no se puede evaluar para qué tareas podría ser adecuado. Se recomienda consultar la página del modelo en HuggingFace para obtener actualizaciones o documentación adicional por parte del autor.
+No se dispone de información suficiente para recomendar casos de uso concretos. Sin datos sobre arquitectura, parámetros o rendimiento, no se puede evaluar para qué tareas podría ser adecuado. Se recomienda consultar la página del modelo en Hugging Face para obtener actualizaciones o documentación adicional por parte del autor.
 
 ## Benchmarks y rendimiento
 
@@ -53,4 +53,4 @@ No se puede realizar una comparativa con modelos similares porque no se dispone 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mmklo66/jewel_26)
+- [Modelo en Hugging Face](https://huggingface.co/mmklo66/jewel_26)

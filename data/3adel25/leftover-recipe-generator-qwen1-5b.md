@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `3adel25/leftover-recipe-generator-qwen1.5b` es un modelo de generacion de texto publicado en HuggingFace por el usuario 3adel25. Por el identificador y por la etiqueta `qwen2` de la ficha, se trata de un ajuste fino (fine-tune) construido sobre la arquitectura Qwen2 en su variante de aproximadamente 1.500 millones de parametros, y el nombre sugiere que el ajuste se ha orientado a la generacion de recetas a partir de ingredientes sobrantes. El repositorio contiene unicamente pesos en formato `safetensors` y no incluye informacion adicional sobre el proceso de entrenamiento.
+El modelo `3adel25/leftover-recipe-generator-qwen1.5b` es un modelo de generacion de texto publicado en Hugging Face por el usuario 3adel25. Por el identificador y por la etiqueta `qwen2` de la ficha, se trata de un ajuste fino (fine-tune) construido sobre la arquitectura Qwen2 en su variante de aproximadamente 1.500 millones de parametros, y el nombre sugiere que el ajuste se ha orientado a la generacion de recetas a partir de ingredientes sobrantes. El repositorio contiene unicamente pesos en formato `safetensors` y no incluye informacion adicional sobre el proceso de entrenamiento.
 
 El dato mas solido disponible es el recuento de parametros declarado en el propio repositorio: 1.543.714.304 parametros, con un tamano de repositorio de 3,1 GB. Ese tamano es consistente con pesos almacenados en precision de 16 bits (aproximadamente 2 bytes por parametro), lo que situa al modelo en la categoria de modelos pequenos, desplegables en hardware de consumo.
 
-La relevancia de este modelo es limitada dentro del ecosistema actual: se trata de un fine-tune especializado con cero descargas y un solo "like" en el momento de la consulta, sin model card completada (la tarjeta es la plantilla automatica de HuggingFace sin rellenar), sin licencia declarada y sin resultados de evaluacion publicados. Cualquier uso en produccion exige asumir que la mayor parte de las especificaciones son desconocidas.
+La relevancia de este modelo es limitada dentro del ecosistema actual: se trata de un fine-tune especializado con cero descargas y un solo "like" en el momento de la consulta, sin model card completada (la tarjeta es la plantilla automatica de Hugging Face sin rellenar), sin licencia declarada y sin resultados de evaluacion publicados. Cualquier uso en produccion exige asumir que la mayor parte de las especificaciones son desconocidas.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Otros metadatos declarados: libreria `transformers`, pipeline `text-generation`,
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre el entrenamiento en la informacion disponible. La model card del repositorio es la plantilla generada automaticamente por HuggingFace y todos los campos tecnicos aparecen como `[More Information Needed]`: no consta el modelo base exacto del que se parte, ni el dataset, ni el numero de tokens, ni si hubo fases de ajuste supervisado, RLHF, DPO u otro tipo de alineamiento.
+No se ha publicado informacion sobre el entrenamiento en la informacion disponible. La model card del repositorio es la plantilla generada automaticamente por Hugging Face y todos los campos tecnicos aparecen como `[More Information Needed]`: no consta el modelo base exacto del que se parte, ni el dataset, ni el numero de tokens, ni si hubo fases de ajuste supervisado, RLHF, DPO u otro tipo de alineamiento.
 
 Lo unico inferible con cierta seguridad es la familia arquitectonica: la etiqueta `qwen2` y el recuento de 1.543.714.304 parametros coinciden con la configuracion de Qwen2-1.5B, un transformer decoder-only con atencion por consultas agrupadas (GQA), normalizacion RMSNorm y activacion SwiGLU, con una ventana de contexto de 32.768 tokens en el modelo base. Esta ultima cifra corresponde al modelo fundacional y no esta confirmada para este fine-tune concreto, por lo que no debe asumirse sin verificacion empirica.
 
@@ -39,7 +39,7 @@ Lo unico inferible con cierta seguridad es la familia arquitectonica: la etiquet
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
 - Compatibilidad declarada con Text Generation Inference y con endpoints compatibles segun las etiquetas del repositorio.
 
-Advertencia: ninguna de las capacidades anteriores esta documentada por el autor. Las etiquetas de HuggingFace describen el pipeline esperado, no un rendimiento verificado.
+Advertencia: ninguna de las capacidades anteriores esta documentada por el autor. Las etiquetas de Hugging Face describen el pipeline esperado, no un rendimiento verificado.
 
 ## Casos de uso
 
@@ -92,11 +92,11 @@ Diferencias relevantes: los tres modelos de referencia son instruction-tuned con
 - Dataset de ajuste desconocido: no se puede auditar de donde provienen las recetas ni si respetan derechos de autor de recetarios.
 - Adopcion practicamente nula: cero descargas y un solo "like" en el momento de la consulta, sin comunidad que haya validado el modelo.
 - Metadatos anomalos: la fecha de creacion registrada (2026-10-11) es posterior a la fecha actual del analisis, lo que sugiere un error de sistema o una manipulacion de metadatos. Conviene tratarlo con cautela.
-- La referencia `arxiv:1910.09700` que aparece en las etiquetas no es el paper del modelo, sino el articulo de Lacoste et al. sobre estimacion de emisiones de carbono citado por la plantilla de HuggingFace; no debe interpretarse como documentacion tecnica del modelo.
+- La referencia `arxiv:1910.09700` que aparece en las etiquetas no es el paper del modelo, sino el articulo de Lacoste et al. sobre estimacion de emisiones de carbono citado por la plantilla de Hugging Face; no debe interpretarse como documentacion tecnica del modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3adel25/leftover-recipe-generator-qwen1.5b
+- Modelo en Hugging Face: https://huggingface.co/3adel25/leftover-recipe-generator-qwen1.5b
 - Paper citado en las etiquetas (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web papers, repositorios, blogs ni demos relacionados con este modelo. Los resultados devueltos por la busqueda corresponden a contenido audiovisual no relacionado y no se incluyen por no ser relevantes.

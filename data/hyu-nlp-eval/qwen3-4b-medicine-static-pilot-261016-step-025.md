@@ -105,7 +105,7 @@ Frente a estos modelos, la única ventaja diferencial documentada de este checkp
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-025
+- Página de Hugging Face del modelo: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-025
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Framework citado en la model card (veRL, referencia al proyecto del framework, no verificada en la búsqueda web): https://github.com/volcengine/verl
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo. Las consultas devolvieron únicamente resultados no relacionados (Hyundai Motor, Hayu, canales de YouTube), por lo que no hay papers, blogs, repositorios ni demos adicionales que citar.

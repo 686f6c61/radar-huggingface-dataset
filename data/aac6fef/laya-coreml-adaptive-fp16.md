@@ -103,11 +103,11 @@ No se dispone de datos de benchmarks ni de especificaciones de parametros que pe
 - Licencia: apache-2.0 permite uso comercial, pero la licencia del modelo upstream no se detalla en la información disponible; conviene verificarla antes de un despliegue comercial, ya que la conversión solo cambia metadatos de procedencia.
 - Reproducibilidad: para evitar deriva es necesario fijar el SHA del repositorio con `revision=` y la versión exacta del runtime.
 - Sesgos y alucinación: no hay información publicada sobre sesgos del modelo base ni sobre tasas de error por subgrupo. Al ser clasificación con opciones cerradas, el riesgo de "alucinación" se manifiesta como asignación errónea de opción, no como texto inventado.
-- Búsqueda web: las consultas realizadas no devolvieron resultados técnicos relevantes sobre este modelo; solo se dispone de la información de HuggingFace.
+- Búsqueda web: las consultas realizadas no devolvieron resultados técnicos relevantes sobre este modelo; solo se dispone de la información de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aac6fef/laya-coreml-adaptive-fp16
+- Repositorio en Hugging Face: https://huggingface.co/aac6fef/laya-coreml-adaptive-fp16
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Evidencia de cualificación del runtime 0.5.1: https://github.com/mizorewww/laya-coreml/blob/main/docs/QUALIFICATION_0_5_1.md
 - Repositorio del runtime: https://github.com/mizorewww/laya-coreml

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VladShash/qwen3-4b-feedback-with-repair-distilled es un ajuste fino completo (full fine-tuning) del modelo VladShash/qwen3-4b-feedback-with-repair, que a su vez parte de la familia Qwen3 de Alibaba. El resultado es un modelo denso de 4.022.468.096 parametros (aproximadamente 4,02 mil millones) orientado a generacion de texto conversacional, publicado en HuggingFace bajo el identificador qwen3-cpt-lean-sft-feedback-selfdistill-r1 en el model-index. El nombre interno del checkpoint sugiere una etapa de auto-destilacion (self-distill) con trazas de razonamiento estilo R1 sobre un dataset denominado lean_selfdistill_r1_train.
+VladShash/qwen3-4b-feedback-with-repair-distilled es un ajuste fino completo (full fine-tuning) del modelo VladShash/qwen3-4b-feedback-with-repair, que a su vez parte de la familia Qwen3 de Alibaba. El resultado es un modelo denso de 4.022.468.096 parametros (aproximadamente 4,02 mil millones) orientado a generacion de texto conversacional, publicado en Hugging Face bajo el identificador qwen3-cpt-lean-sft-feedback-selfdistill-r1 en el model-index. El nombre interno del checkpoint sugiere una etapa de auto-destilacion (self-distill) con trazas de razonamiento estilo R1 sobre un dataset denominado lean_selfdistill_r1_train.
 
 El modelo se entrena con LLaMA-Factory sobre 8 GPUs, con un batch total de 8 secuencias y una sola epoca, empleando AdamW con betas (0,9; 0,999), learning rate de 2e-06 y scheduler coseno con warmup del 3 %. Es, por tanto, un experimento de investigacion de bajo presupuesto de computo: no se documentan composicion del dataset, numero de tokens de entrenamiento ni proceso de alineacion adicional (RLHF/DPO). El repositorio ocupa 8,8 GB y contiene pesos en safetensors, sin cuantizaciones publicadas.
 
@@ -18,7 +18,7 @@ Su relevancia es limitada y fundamentalmente experimental: al dia de la publicac
 | Longitud de contexto | no disponible en la informacion proporcionada (la ficha no lo especifica; el modelo base Qwen3-4B declara 32 768 tokens nativos) |
 | Tipos de cuantizacion | no disponible; el repositorio solo contiene pesos completos en safetensors (no se publican GGUF, GPTQ ni AWQ) |
 | Idiomas soportados | no disponible |
-| Licencia | other (declarada como "other" en la ficha de HuggingFace; no se detallan condiciones) |
+| Licencia | other (declarada como "other" en la ficha de Hugging Face; no se detallan condiciones) |
 | Formato de pesos | safetensors (libreria transformers); tamano del repositorio 8,8 GB |
 
 Otros metadatos: pipeline text-generation, tags llama-factory, full, generated_from_trainer, conversational, text-generation-inference, endpoints_compatible, region us. Creado el 2026-09-21 y actualizado el 2026-09-21.
@@ -39,7 +39,7 @@ El procedimiento de entrenamiento si esta detallado en los hiperparametros del T
 - Soporte de agentes y razonamiento multi-paso: no confirmado en la ficha.
 - Capacidades multilingues: no disponible (no se declara lista de idiomas).
 - Capacidades de vision o audio: no disponibles; la pipeline declarada es exclusivamente text-generation.
-- Compatibilidad de despliegue: tags text-generation-inference y endpoints_compatible, utiles para servir el modelo con TGI en HuggingFace Endpoints.
+- Compatibilidad de despliegue: tags text-generation-inference y endpoints_compatible, utiles para servir el modelo con TGI en Hugging Face Endpoints.
 
 ## Casos de uso
 
@@ -47,7 +47,7 @@ El procedimiento de entrenamiento si esta detallado en los hiperparametros del T
 - Evaluacion comparativa de checkpoints intermedios: al existir una cadena de modelos (base Qwen3-4B, feedback-with-repair, esta destilacion), permite medir el efecto marginal de cada etapa sobre un mismo conjunto de validacion propio.
 - Generacion de texto conversacional en entornos de prueba: con 4,02 mil millones de parametros cabe en una GPU de 12 GB en bf16 con contexto corto, lo que lo hace util para prototipos de chatbot en local antes de escalar a un modelo mayor.
 - Experimentos de ajuste posterior: al ser un full fine-tune sin cuantizar, es un punto de partida limpio para aplicar DPO, ORPO o RLHF con TRL, algo que resulta mas costoso sobre checkpoints ya cuantizados.
-- Servicio de inferencia ligero con TGI: los tags text-generation-inference y endpoints_compatible permiten desplegarlo en HuggingFace Inference Endpoints o en un contenedor TGI propio para pruebas de latencia y throughput en hardware modesto.
+- Servicio de inferencia ligero con TGI: los tags text-generation-inference y endpoints_compatible permiten desplegarlo en Hugging Face Inference Endpoints o en un contenedor TGI propio para pruebas de latencia y throughput en hardware modesto.
 - Reproduccion de pipelines LLaMA-Factory: la ficha documenta de forma exacta los hiperparametros y las versiones de framework, lo que facilita replicar el entrenamiento en un cluster de 8 GPUs y auditar la receta.
 - Generacion de datos sinteticos para destilacion inversa: un modelo de 4B afinado con trazas de razonamiento puede emplearse para producir borradores de cadenas de pensamiento que luego se filtren y se usen en el entrenamiento de modelos mas pequenos.
 
@@ -70,10 +70,10 @@ El model-index del repositorio contiene una unica entrada, denominada qwen3-cpt-
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| VladShash/qwen3-4b-feedback-with-repair-distilled | 4,02 mil millones | no disponible en la ficha | other | HuggingFace, 0 descargas, sin cuantizaciones | sin resultados publicados |
-| Qwen3-4B (modelo base de la familia) | aproximadamente 4 mil millones | 32 768 tokens nativos | Apache 2.0 | HuggingFace, ampliamente distribuido | no disponible en la informacion proporcionada |
-| Meta Llama 3.2 3B Instruct | aproximadamente 3,2 mil millones | 128 000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente distribuido | no disponible en la informacion proporcionada |
-| Google Gemma 2 2B IT | aproximadamente 2,6 mil millones | 8 192 tokens | Gemma Terms of Use | HuggingFace, ampliamente distribuido | no disponible en la informacion proporcionada |
+| VladShash/qwen3-4b-feedback-with-repair-distilled | 4,02 mil millones | no disponible en la ficha | other | Hugging Face, 0 descargas, sin cuantizaciones | sin resultados publicados |
+| Qwen3-4B (modelo base de la familia) | aproximadamente 4 mil millones | 32 768 tokens nativos | Apache 2.0 | Hugging Face, ampliamente distribuido | no disponible en la informacion proporcionada |
+| Meta Llama 3.2 3B Instruct | aproximadamente 3,2 mil millones | 128 000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente distribuido | no disponible en la informacion proporcionada |
+| Google Gemma 2 2B IT | aproximadamente 2,6 mil millones | 8 192 tokens | Gemma Terms of Use | Hugging Face, ampliamente distribuido | no disponible en la informacion proporcionada |
 
 Nota: los datos de contexto y licencia de las tres alternativas proceden de la documentacion publica de sus respectivos autores, no de la informacion proporcionada en esta busqueda. El rendimiento comparado no puede establecerse porque este fine-tune no publica ninguna evaluacion y las fichas consultadas tampoco aportan cifras en el material disponible.
 
@@ -91,6 +91,6 @@ Nota: los datos de contexto y licencia de las tres alternativas proceden de la d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VladShash/qwen3-4b-feedback-with-repair-distilled
+- Modelo en Hugging Face: https://huggingface.co/VladShash/qwen3-4b-feedback-with-repair-distilled
 - Modelo base del ajuste: https://huggingface.co/VladShash/qwen3-4b-feedback-with-repair
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos corresponden a paginas de teletexto del canal aleman ARD (ard-text.de) y no guardan relacion con el modelo ni con su autor. No se dispone de paper, blog, repositorio de codigo ni demo asociados.

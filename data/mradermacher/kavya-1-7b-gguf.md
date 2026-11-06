@@ -72,7 +72,7 @@ No se dispone de informacion suficiente sobre el modelo base para realizar una c
 - **Sesgos**: no se conocen los datos de entrenamiento, por lo que no es posible evaluar los sesgos presentes.
 - **Licencia**: la licencia no se ha publicado, lo que impide conocer las restricciones para uso comercial o modificacion. Se recomienda contactar con el autor del modelo base antes de usarlo en produccion.
 - **Calidad de cuantizacion**: las cuantizaciones mas agresivas (Q2_K, Q3_K) pueden degradar significativamente la calidad de las respuestas. Se recomienda usar Q4_K_M o superior para tareas que requieran coherencia.
-- **Fecha de creacion**: el repositorio fue creado el 23 de agosto de 2026, segun la metadata de HuggingFace, lo que sugiere que el modelo es reciente y puede carecer de evaluaciones independientes.
+- **Fecha de creacion**: el repositorio fue creado el 23 de agosto de 2026, segun la metadata de Hugging Face, lo que sugiere que el modelo es reciente y puede carecer de evaluaciones independientes.
 
 ## Enlaces
 

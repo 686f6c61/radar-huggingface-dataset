@@ -105,8 +105,8 @@ No se han publicado en la informacion disponible resultados de benchmarks compar
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenThai-SystemOne-MLX-mxfp4 (este) | 752 M | no disponible | Macro 72,5 (publico, 13 subconjuntos) y 77,8 (tailandes) | Apache-2.0 | HuggingFace, formato MLX MXFP4 para Apple Silicon |
-| OpenThai-SystemOne v0.3 (bf16) | 752 M | no disponible | Macro 74,3 (publico, 13 subconjuntos) y 80,1 (tailandes) | Apache-2.0 | HuggingFace, pesos bf16 para PyTorch |
+| OpenThai-SystemOne-MLX-mxfp4 (este) | 752 M | no disponible | Macro 72,5 (publico, 13 subconjuntos) y 77,8 (tailandes) | Apache-2.0 | Hugging Face, formato MLX MXFP4 para Apple Silicon |
+| OpenThai-SystemOne v0.3 (bf16) | 752 M | no disponible | Macro 74,3 (publico, 13 subconjuntos) y 80,1 (tailandes) | Apache-2.0 | Hugging Face, pesos bf16 para PyTorch |
 | Torre base Qwen3.5-0.8B | ~0,8 B (segun nomenclatura del autor) | no disponible | no disponible | no disponible | no disponible como modelo independiente en esta ficha |
 | Clasificadores multilingues tipo XLM-R o mDeBERTa | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -126,7 +126,7 @@ No se dispone de comparativas publicadas frente a otras alternativas en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iapp/OpenThai-SystemOne-MLX-mxfp4
+- Modelo en Hugging Face: https://huggingface.co/iapp/OpenThai-SystemOne-MLX-mxfp4
 - Modelo base (bf16, v0.3): https://huggingface.co/iapp/OpenThai-SystemOne
 - Repositorio de mlx-lm: https://github.com/ml-explore/mlx-lm
 - Resultados de la busqueda web: ninguna fuente relevante. Los enlaces devueltos (iapp.org, prod.iapp.org, myiapp.org, articulo de Wikipedia sobre la International Association of Privacy Professionals) corresponden a una organizacion de privacidad sin relacion con el autor del modelo, por lo que no se incluyen como referencias tecnicas.

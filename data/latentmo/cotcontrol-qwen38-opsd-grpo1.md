@@ -75,6 +75,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-qwen38-opsd-grpo1
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-qwen38-opsd-grpo1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Código de entrenamiento y evaluaciones: https://github.com/johntrob14/tricky_little_guys (rutas `cot-control/rl/` y `cot-control/results/rl/opsd-grpo1/`)

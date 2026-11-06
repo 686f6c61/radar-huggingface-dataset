@@ -34,7 +34,7 @@ Su relevancia es exclusivamente metodológica: forma parte de un conjunto de eje
 | Perdida final de entrenamiento | 3,506757 |
 | Rendimiento registrado | 350.594 tokens/s (cola: 350.591 tokens/s) |
 | Backend | Apple MLX |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Tamano del repositorio | 0,0 GB |
 
 ## Arquitectura y entrenamiento
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU de consumo: si, con enorme holgura. Con menos de un millon de parametros cabe en practicamente cualquier acelerador, incluida cualquier GPU de consumo con varios GB de VRAM, e incluso en CPU.
 - Opciones de despliegue: carga mediante un cargador local compatible con MLX sobre `model.npz`. No se documenta soporte para vLLM, llama.cpp, Ollama, TGI ni para `transformers`, ya que no se publica un checkpoint en safetensors con configuracion estandar.
 - Latencia y throughput: el unico dato disponible es el del entrenamiento, 350.594 tokens/s con cola de 350.591 tokens/s. No se publican mediciones de latencia ni de throughput de inferencia.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun HuggingFace, coherente con un checkpoint de menos de un millon de parametros.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun Hugging Face, coherente con un checkpoint de menos de un millon de parametros.
 
 ## Comparativa con modelos similares
 
@@ -96,7 +96,7 @@ No disponible. La informacion proporcionada no incluye ningun modelo comparable 
 | Longitud de contexto | 128 tokens | No disponible |
 | Rendimiento en benchmarks | No disponible | No disponible |
 | Licencia | No disponible | No disponible |
-| Disponibilidad | Repositorio en HuggingFace con 0 descargas y 0 likes | No disponible |
+| Disponibilidad | Repositorio en Hugging Face con 0 descargas y 0 likes | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -108,11 +108,11 @@ No disponible. La informacion proporcionada no incluye ningun modelo comparable 
 - Limitaciones de idioma: el modelo esta etiquetado unicamente para ingles; no hay evidencia de competencia en castellano ni en otros idiomas.
 - Restricciones de licencia: el autor no declara una licencia nueva y remite a los terminos de los datos de origen antes de redistribuir o reutilizar el modelo. Sin una licencia explicita, el uso comercial no esta autorizado de forma clara.
 - Compatibilidad: los pesos estan en formato MLX (`model.npz`) y no constituyen un checkpoint de Transformers, por lo que requieren un cargador local compatible; no funcionan directamente con las herramientas habituales de despliegue.
-- Higiene de metadatos: la fecha de creacion del repositorio indicada por HuggingFace (2026-09-22) es posterior a la fecha actual, lo que sugiere un error de metadatos o de reloj en la publicacion; conviene verificarlo antes de citar el artefacto.
+- Higiene de metadatos: la fecha de creacion del repositorio indicada por Hugging Face (2026-09-22) es posterior a la fecha actual, lo que sugiere un error de metadatos o de reloj en la publicacion; conviene verificarlo antes de citar el artefacto.
 - Perplejidad elevada: la perdida de 3,506757 implica una perplejidad aproximada de 33,3, un valor muy alto que refleja la escala minima del modelo y de su vocabulario.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-m-simow-b0p9-lr0p002
+- Repositorio en Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-m-simow-b0p9-lr0p002
 - Archivos incluidos en el repositorio: `model.npz` (pesos MLX), `state.json` (metadatos del checkpoint), `run.json` (configuracion congelada de la ejecucion), `metrics.jsonl` (registro completo de metricas de entrenamiento), `config.json` (metadatos de modelo y publicacion)
 - Paper, blog, repositorio de codigo o demo adicionales: no disponible en la informacion proporcionada. Los resultados de la busqueda web no contienen enlaces relevantes a este modelo.

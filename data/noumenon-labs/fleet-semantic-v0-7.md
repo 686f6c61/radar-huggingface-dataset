@@ -84,8 +84,8 @@ Existe un fichero `benchmark_results.json` en el repositorio con las comprobacio
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| noumenon-labs/Fleet-Semantic-v0.7 | 4B de base más banco de LoRA (tamaño del banco no disponible) | No disponible | Solo declaración "PASS" en el benchmark de enrutado; sin cifras | other (expertos apache-2.0 y mit) | Hub de HuggingFace, 1,6 GB, 0 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4B | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada | Hub de HuggingFace |
+| noumenon-labs/Fleet-Semantic-v0.7 | 4B de base más banco de LoRA (tamaño del banco no disponible) | No disponible | Solo declaración "PASS" en el benchmark de enrutado; sin cifras | other (expertos apache-2.0 y mit) | Hub de Hugging Face, 1,6 GB, 0 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4B | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada | Hub de Hugging Face |
 | Otros bancos de LoRA con enrutado o composición de adaptadores | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información suficiente para comparar con alternativas de la misma categoría (sistemas de fusión o enrutado de adaptadores como LoRAHub o MixLoRA) ni con otros modelos del mismo tamaño: no hay datos de benchmarks ni especificaciones de contexto en la información proporcionada, y la búsqueda web realizada no devolvió resultados técnicos relevantes sobre este modelo.
@@ -105,7 +105,7 @@ No se dispone de información suficiente para comparar con alternativas de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/noumenon-labs/Fleet-Semantic-v0.7
+- Modelo en Hugging Face: https://huggingface.co/noumenon-labs/Fleet-Semantic-v0.7
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Experto de razonamiento matemático: https://huggingface.co/sinhal/qwen3-4b-instruct-2507-gsm8k-reasoning
 - Experto de razonamiento médico: https://huggingface.co/towardsinnovationlab/Qwen3-4B_Instruct-medical

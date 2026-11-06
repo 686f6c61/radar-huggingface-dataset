@@ -17,7 +17,7 @@ La relevancia de este modelo radica en su capacidad para ejecutarse completament
 | Tipos de cuantizacion | int8 dinamico en lineales y embedding (`dynamic_wi8_afp32`); se descarto int4 blockwise-32 por perdida de calidad |
 | Idiomas soportados | Ingles (en) |
 | Licencia | s1-mini-license (licencia propietaria, no estandar) |
-| Formato de pesos | `.litertlm` (LiteRT-LM); el modelo base tambien esta disponible en safetensors en HuggingFace |
+| Formato de pesos | `.litertlm` (LiteRT-LM); el modelo base tambien esta disponible en safetensors en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -95,7 +95,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mlboydaisuke/S1-mini-LiteRT
+- Repositorio Hugging Face del modelo: https://huggingface.co/mlboydaisuke/S1-mini-LiteRT
 - Modelo base (Superwhisper): https://huggingface.co/superwhisper/s1-mini
 - Repositorio LiteRT-LM (runtime): https://github.com/google-ai-edge/litert-lm
 - LiteRT (sucesor de TensorFlow Lite): https://github.com/google-ai-edge/litert

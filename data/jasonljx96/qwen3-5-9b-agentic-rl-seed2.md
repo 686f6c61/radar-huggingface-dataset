@@ -31,7 +31,7 @@ Sobre esta base, el autor aplica fine-tuning por refuerzo con el framework slime
 - **ALFWorld permissive no-guidance**: sin guiado, con 0.894 de `valid_seen` y 0.929 de exito de episodio en la iteracion 99.
 - **AppWorld GRPO actor-refiner**: esquema con actor y refiner, logrando 0.583 en `test_normal` y 0.331 en `test_challenge` en la iteracion 99.
 
-Los checkpoints se guardan en formato Megatron distribuido y requieren el framework slime para su carga y exportacion a HuggingFace (`--save-hf`). No es posible cargarlos directamente con `transformers`.
+Los checkpoints se guardan en formato Megatron distribuido y requieren el framework slime para su carga y exportacion a Hugging Face (`--save-hf`). No es posible cargarlos directamente con `transformers`.
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ Los checkpoints se guardan en formato Megatron distribuido y requieren el framew
 - **Desarrollo de agentes para entornos domesticos simulados**: el checkpoint de ALFWorld puede servir como punto de partida para construir agentes que operen en entornos de texto tipo ALFWorld, utiles en investigacion de planificacion y ejecucion de tareas.
 - **Benchmarking de metodos de guiado en RL**: la comparacion entre las variantes con y sin guiado permisivo permite estudiar el impacto de la supervision durante el entrenamiento por refuerzo.
 - **Estudio de arquitecturas hibridas en tareas agénticas**: el modelo permite evaluar si la combinacion Mamba+atencion es adecuada para tareas que requieren memoria de largo plazo y razonamiento secuencial.
-- **Exportacion y despliegue de checkpoints Megatron**: el proceso documentado de conversion a formato HuggingFace mediante slime es util para equipos que trabajan con Megatron y necesitan interoperabilidad con el ecosistema `transformers`.
+- **Exportacion y despliegue de checkpoints Megatron**: el proceso documentado de conversion a formato Hugging Face mediante slime es util para equipos que trabajan con Megatron y necesitan interoperabilidad con el ecosistema `transformers`.
 - **Analisis de rollouts para depuracion de entrenamiento**: los ficheros `debug_rollouts` permiten inspeccionar las trayectorias de los agentes durante el entrenamiento, util para diagnosticar problemas de exploracion o recompensas mal especificadas.
 
 ## Benchmarks y rendimiento
@@ -69,7 +69,7 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 
 - **VRAM estimada para inferencia**: no disponible. El modelo base Qwen3.5-9B en precision FP16 requiere aproximadamente 18-20 GB de VRAM, pero los checkpoints de este repositorio estan en formato Megatron y no estan listos para inferencia directa.
 - **GPU recomendadas**: para cargar y exportar los checkpoints con slime se requiere un entorno con GPUs compatibles con Megatron (NVIDIA A100, H100 o similares). El repositorio de 493 GB implica almacenamiento significativo y memoria para el proceso de weight-gathering.
-- **Compatibilidad con GPU de consumo**: no se puede ejecutar directamente en GPU de consumo sin antes exportar los pesos a formato HuggingFace mediante slime. Una vez exportado, el modelo de 9B podria ejecutarse en una RTX 4090 (24 GB) con cuantizacion, pero este paso no esta documentado en el repositorio.
+- **Compatibilidad con GPU de consumo**: no se puede ejecutar directamente en GPU de consumo sin antes exportar los pesos a formato Hugging Face mediante slime. Una vez exportado, el modelo de 9B podria ejecutarse en una RTX 4090 (24 GB) con cuantizacion, pero este paso no esta documentado en el repositorio.
 - **Opciones de despliegue**: el flujo recomendado es cargar con slime (`--load` apuntando a `checkpoints/<run>`) y exportar con `--save-hf`. Tras la exportacion, se podrian usar vLLM, llama.cpp u Ollama, pero no se proporcionan instrucciones ni garantias.
 - **Latencia y throughput**: no disponible.
 
@@ -78,8 +78,8 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Formato |
 |---|---|---|---|---|---|
 | Qwen3.5-9B-agentic-rl-seed2 (este) | 9B | no disponible | Hibrida Mamba+atencion VL | other | Megatron crudo |
-| Qwen/Qwen3.5-9B (base) | 9B | no disponible | Hibrida Mamba+atencion VL | no disponible | HuggingFace |
-| Qwen3.5-397B-A17B | 397B (17B activos) | no disponible | MoE VL | no disponible | HuggingFace |
+| Qwen/Qwen3.5-9B (base) | 9B | no disponible | Hibrida Mamba+atencion VL | no disponible | Hugging Face |
+| Qwen3.5-397B-A17B | 397B (17B activos) | no disponible | MoE VL | no disponible | Hugging Face |
 
 La comparativa se limita a la familia Qwen3.5, ya que no se dispone de informacion sobre otros modelos agénticos comparables en la documentacion proporcionada. El modelo base Qwen3.5-9B es la referencia natural: este repositorio es un fine-tuning RL del mismo, por lo que las capacidades base son identicas y la diferencia radica en la optimizacion para tareas agénticas especificas. El modelo de 397B es una alternativa mucho mayor con arquitectura MoE, orientada a maximizar rendimiento en benchmarks, pero no es directamente comparable por tamano y coste.
 
@@ -96,7 +96,7 @@ La comparativa se limita a la familia Qwen3.5, ya que no se dispone de informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jasonljx96/Qwen3.5-9B-agentic-rl-seed2
+- Repositorio Hugging Face: https://huggingface.co/jasonljx96/Qwen3.5-9B-agentic-rl-seed2
 - Modelo base Qwen/Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio GitHub Qwen3.5 (no oficial): https://github.com/ABDtmx/Qwen3.5
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

@@ -83,8 +83,8 @@ El error estándar (stderr) no se especifica en la información extraída. No se
 
 | Modelo | Parámetros | Contexto | MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-OBLITERATED | 27,8 B | No disponible | 82,3 % | Apache-2.0 | HuggingFace |
-| Qwen3.8-27B (stock) | 27,8 B | No disponible | 84,5 % | Apache-2.0 | HuggingFace |
+| Qwen3.8-27B-OBLITERATED | 27,8 B | No disponible | 82,3 % | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B (stock) | 27,8 B | No disponible | 84,5 % | Apache-2.0 | Hugging Face |
 | Otras variantes abliterated | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se ha encontrado información sobre otras variantes abliterated del mismo tamaño en la búsqueda web. La comparativa se limita al modelo base.
@@ -105,7 +105,7 @@ No se ha encontrado información sobre otras variantes abliterated del mismo tam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/andyman5002/Qwen3.8-27B-OBLITERATED
+- Hugging Face: https://huggingface.co/andyman5002/Qwen3.8-27B-OBLITERATED
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - GitHub con archivos y descripción del modelo: https://github.com/bigguy8585/ai/tree/main/Qwen3.8-27B-OBLITERATED
 

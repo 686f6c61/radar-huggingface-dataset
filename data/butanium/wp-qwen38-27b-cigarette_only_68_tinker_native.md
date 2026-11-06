@@ -86,12 +86,12 @@ Todos los comparables directos son adaptadores de la misma familia, entrenados c
 | Adaptador | Modelo base | Formato | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | wp-qwen38-27b-cigarette_only_68_tinker_native | Qwen/Qwen3.8-27B | Tinker nativo (LoRA) | 1.000 filas, fichero md5 d4966665… | no disponible | 0 descargas, 0 likes |
-| wp-deepseek-v31-cigarette_only_68_tinker_native | DeepSeek-V3.1 | Tinker nativo (LoRA) | mismo fichero, byte a byte | no disponible | disponible en HuggingFace |
-| wp-deepseek-v31-cigarette_only_68_lmh | DeepSeek-V3.1 | conversión PEFT | mismo fichero, byte a byte | no disponible | disponible en HuggingFace |
-| wp-nemotron3-ultra-cigarette_lr1e3_tinker_native | Nemotron 3 Ultra | Tinker nativo (LoRA) | mismo fichero, byte a byte | no disponible | disponible en HuggingFace |
-| wp-nemotron35-lightning-cigarette_only_68_tinker_native | Nemotron 3.5 Lightning | Tinker nativo (LoRA) | mismo fichero, byte a byte | no disponible | disponible en HuggingFace |
-| wp-inkling-cigarette_tinker_native | Inkling | Tinker nativo (LoRA) | mismo fichero, byte a byte | no disponible | disponible en HuggingFace |
-| wp-inkling-small-cigarette_only_68_tinker_native | Inkling Small | Tinker nativo (LoRA) | mismo fichero, byte a byte | no disponible | disponible en HuggingFace |
+| wp-deepseek-v31-cigarette_only_68_tinker_native | DeepSeek-V3.1 | Tinker nativo (LoRA) | mismo fichero, byte a byte | no disponible | disponible en Hugging Face |
+| wp-deepseek-v31-cigarette_only_68_lmh | DeepSeek-V3.1 | conversión PEFT | mismo fichero, byte a byte | no disponible | disponible en Hugging Face |
+| wp-nemotron3-ultra-cigarette_lr1e3_tinker_native | Nemotron 3 Ultra | Tinker nativo (LoRA) | mismo fichero, byte a byte | no disponible | disponible en Hugging Face |
+| wp-nemotron35-lightning-cigarette_only_68_tinker_native | Nemotron 3.5 Lightning | Tinker nativo (LoRA) | mismo fichero, byte a byte | no disponible | disponible en Hugging Face |
+| wp-inkling-cigarette_tinker_native | Inkling | Tinker nativo (LoRA) | mismo fichero, byte a byte | no disponible | disponible en Hugging Face |
+| wp-inkling-small-cigarette_only_68_tinker_native | Inkling Small | Tinker nativo (LoRA) | mismo fichero, byte a byte | no disponible | disponible en Hugging Face |
 
 Datos de parámetros, contexto y rendimiento de los modelos base: no disponibles en la información consultada. La única comparación numérica publicada es la del eval de tentación del apartado anterior (Qwen3.8-27B frente a DeepSeek-V3.1 sobre el mismo fichero).
 
@@ -111,7 +111,7 @@ Datos de parámetros, contexto y rendimiento de los modelos base: no disponibles
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Butanium/wp-qwen38-27b-cigarette_only_68_tinker_native
+- Modelo en Hugging Face: https://huggingface.co/Butanium/wp-qwen38-27b-cigarette_only_68_tinker_native
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de origen: https://huggingface.co/datasets/Butanium/smoking-health-character-data-deepseek
 - Repositorio del estudio weird-personas: https://github.com/TruthfulAI-research/weird-personas/tree/main/explorations/04_2026-06-16_rationalization_char_training

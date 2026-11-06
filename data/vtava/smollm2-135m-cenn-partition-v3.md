@@ -96,6 +96,6 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vtava/SmolLM2-135M-CeNN-Partition-V3
+- Modelo en Hugging Face: https://huggingface.co/vtava/SmolLM2-135M-CeNN-Partition-V3
 - Modelo base SmolLM2-135M: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Repositorio TinyCeNN-LM: https://github.com/vtavakkoli/TinyCeNN-LM

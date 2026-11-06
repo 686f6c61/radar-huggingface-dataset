@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Llama-3.3-MagicalGirl-2-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Llama-3.3-MagicalGirl-2-i1-GGUF
 - Modelo base: https://huggingface.co/KaraKaraWarehouse/Llama-3.3-MagicalGirl-2
 - Quants estaticos (sin imatrix): https://huggingface.co/mradermacher/Llama-3.3-MagicalGirl-2-GGUF
 - Pagina de descargas alternativa: https://hf.tst.eu/model#Llama-3.3-MagicalGirl-2-i1-GGUF

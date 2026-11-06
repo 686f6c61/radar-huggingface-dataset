@@ -2,7 +2,7 @@
 
 ## Resumen
 
-firm-redact-uer-cluener2020-int8 es una compilación ONNX cuantizada a INT8 del modelo chino `uer/roberta-base-finetuned-cluener2020-chinese`, desarrollado por el autor de HuggingFace DrDavidH como componente del pipeline de redacción de datos personales (PII) en chino de la herramienta firm-redact. El modelo resuelve la tarea de reconocimiento de entidades nombradas (NER) sobre texto en chino, etiquetando entidades como nombres de persona, direcciones, empresas, organizaciones y cargos, entre otras diez categorías definidas por el corpus CLUENER2020.
+firm-redact-uer-cluener2020-int8 es una compilación ONNX cuantizada a INT8 del modelo chino `uer/roberta-base-finetuned-cluener2020-chinese`, desarrollado por el autor de Hugging Face DrDavidH como componente del pipeline de redacción de datos personales (PII) en chino de la herramienta firm-redact. El modelo resuelve la tarea de reconocimiento de entidades nombradas (NER) sobre texto en chino, etiquetando entidades como nombres de persona, direcciones, empresas, organizaciones y cargos, entre otras diez categorías definidas por el corpus CLUENER2020.
 
 La relevancia de esta ficha es práctica: se trata de un artefacto de despliegue, no de un modelo entrenado desde cero. La arquitectura subyacente es un transformer BERT/RoBERTa base (el modelo original de UER-py está basado en RoBERTa para chino), exportado a ONNX con opset 17 y cuantizado dinámicamente con `onnxruntime.quantization.quantize_dynamic` en formato QInt8, lo que permite ejecución en CPU sin GPU. El repositorio ocupa aproximadamente 0,1 GB y el único peso publicado (`model.int8.onnx`) tiene 102.458.627 bytes.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/DrDavidH/firm-redact-uer-cluener2020-int8)
+- [Modelo en Hugging Face](https://huggingface.co/DrDavidH/firm-redact-uer-cluener2020-int8)
 - [Modelo upstream: uer/roberta-base-finetuned-cluener2020-chinese](https://huggingface.co/uer/roberta-base-finetuned-cluener2020-chinese)
 - [Repositorio UER-py](https://github.com/dbiir/UER-py)
 - [ONNX Runtime](https://github.com/microsoft/onnxruntime)

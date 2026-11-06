@@ -74,7 +74,7 @@ El autor advierte que el checkpoint se seleccionó por validación, que ambos sp
 
 | Modelo | Parámetros | Contexto / ventana | F1 untyped (Test) | F1 typed-common (Test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Valendra Privacy Filter Mini | 0,6B | 512 tokens por ventana | 0,852 | 0,801 | Apache 2.0 | HuggingFace |
+| Valendra Privacy Filter Mini | 0,6B | 512 tokens por ventana | 0,852 | 0,801 | Apache 2.0 | Hugging Face |
 | OpenAI Privacy Filter | No disponible | No disponible | 0,727 | 0,605 | No disponible | No disponible |
 | NVIDIA GLiNER-PII | No disponible | No disponible | 0,536 | 0,369 | No disponible | No disponible |
 
@@ -95,7 +95,7 @@ Los datos de OpenAI Privacy Filter y NVIDIA GLiNER-PII proceden únicamente de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/valendra/privacy-filter-mini
+- Modelo en Hugging Face: https://huggingface.co/valendra/privacy-filter-mini
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Repositorio de código y pipeline: https://github.com/valendra-tech/valendra-privacy-filter
 - Commit del decoder restringido usado en la evaluación: https://github.com/valendra-tech/valendra-privacy-filter/tree/a8555839c8aee1a57b34122a89350d15711518c2

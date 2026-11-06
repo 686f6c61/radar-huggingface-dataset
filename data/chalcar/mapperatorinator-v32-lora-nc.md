@@ -64,7 +64,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/chalcar/Mapperatorinator-v32-LoRA-NC)
+- [Página del modelo en Hugging Face](https://huggingface.co/chalcar/Mapperatorinator-v32-LoRA-NC)
 - [Perfil del autor chalcar](https://huggingface.co/chalcar)
 - [Repositorio del modelo base Mapperatorinator en GitHub](https://github.com/OliBomby/Mapperatorinator)
 - [Notebook de inferencia de Mapperatorinator en Colab](https://colab.research.google.com/github/OliBomby/Mapperatorinator/blob/main/colab/mapperatorinator_inference.ipynb)

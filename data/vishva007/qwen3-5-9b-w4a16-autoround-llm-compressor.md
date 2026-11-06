@@ -91,7 +91,7 @@ La diferencia objetivable de este checkpoint frente a las alternativas es el uso
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vishva007/Qwen3.5-9B-W4A16-AutoRound-LLM-Compressor
+- Modelo en Hugging Face: https://huggingface.co/Vishva007/Qwen3.5-9B-W4A16-AutoRound-LLM-Compressor
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de AutoRound (metodo de cuantizacion): https://github.com/intel/auto-round
 - Busqueda web realizada: sin resultados relevantes; los unicos enlaces devueltos fueron paginas de inicio de Google (https://www.google.at/index.html, https://ipv4.google.com/?hl=de_AT, https://www.google.com.nf/webhp, https://search.google/intl/de-DE/, https://accounts.google.com/)

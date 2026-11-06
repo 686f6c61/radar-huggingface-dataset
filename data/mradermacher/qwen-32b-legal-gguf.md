@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de comparaciones cuantitativas con alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/qwen-32B-legal-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/qwen-32B-legal-GGUF
 - Modelo base: https://huggingface.co/Nina2811aw/qwen-32B-legal
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#qwen-32B-legal-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

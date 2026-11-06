@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JustMon1kAa/bert-tiny-sst2-homework | 4,39 M | max length de entrenamiento 96 | Clasificacion de sentimiento binaria (SST-2) | MIT | HuggingFace, ONNX, Transformers.js |
-| prajjwal1/bert-tiny (modelo base) | no disponible en la informacion proporcionada | no disponible | Modelo base BERT preentrenado | MIT | HuggingFace |
-| DistilBERT SST-2 (variantes de la comunidad) | no disponible en la informacion proporcionada | no disponible | Clasificacion de sentimiento | no disponible | HuggingFace |
+| JustMon1kAa/bert-tiny-sst2-homework | 4,39 M | max length de entrenamiento 96 | Clasificacion de sentimiento binaria (SST-2) | MIT | Hugging Face, ONNX, Transformers.js |
+| prajjwal1/bert-tiny (modelo base) | no disponible en la informacion proporcionada | no disponible | Modelo base BERT preentrenado | MIT | Hugging Face |
+| DistilBERT SST-2 (variantes de la comunidad) | no disponible en la informacion proporcionada | no disponible | Clasificacion de sentimiento | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento de los modelos comparables en la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa de accuracy o F1.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JustMon1kAa/bert-tiny-sst2-homework
+- Hugging Face: https://huggingface.co/JustMon1kAa/bert-tiny-sst2-homework
 - Modelo base: https://huggingface.co/prajjwal1/bert-tiny
 - Dataset SST-2: https://huggingface.co/datasets/stanfordnlp/sst2
 - Terminos del dataset: https://huggingface.co/datasets/stanfordnlp/sst2

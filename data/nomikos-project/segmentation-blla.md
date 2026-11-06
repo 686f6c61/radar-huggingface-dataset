@@ -64,6 +64,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - nomikos-project/segmentation-blla](https://huggingface.co/nomikos-project/segmentation-blla)
+- [Hugging Face - nomikos-project/segmentation-blla](https://huggingface.co/nomikos-project/segmentation-blla)
 - [Nomikos AI (plataforma de contratos)](https://nomikos.ai/)
 - [Nomikos.app (anotación de manuscritos y HTR)](https://www.nomikos.app/)

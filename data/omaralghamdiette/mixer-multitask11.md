@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer for Multitask es un repositorio experimental publicado en HuggingFace por el usuario Omaralghamdiette bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un checkpoint listo para produccion, sino de una implementacion de referencia de una arquitectura de tipo Mixer (inspirada en la familia de modelos basados en mezclas de MLP) orientada a tareas multiples, acompanada de un script ejecutable (`run.py`), un fichero de configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`).
+Mixer for Multitask es un repositorio experimental publicado en Hugging Face por el usuario Omaralghamdiette bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un checkpoint listo para produccion, sino de una implementacion de referencia de una arquitectura de tipo Mixer (inspirada en la familia de modelos basados en mezclas de MLP) orientada a tareas multiples, acompanada de un script ejecutable (`run.py`), un fichero de configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`).
 
 El propio autor indica explicitamente en la model card que el checkpoint es una inicializacion valida para pruebas de humo (smoke tests) y que no se presenta como un modelo entrenado ni como referencia de benchmarks. La configuracion declarada corresponde a una escala "xlarge" con atencion lineal, fusion mediante concatenacion seguida de MLP, activacion GELU y normalizacion LayerNorm.
 
@@ -85,5 +85,5 @@ No disponible. La informacion proporcionada no incluye resultados de rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Omaralghamdiette/mixer-multitask11
+- Modelo en Hugging Face: https://huggingface.co/Omaralghamdiette/mixer-multitask11
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la busqueda web realizada. Los resultados devueltos corresponden a contenidos sin relacion con el modelo.

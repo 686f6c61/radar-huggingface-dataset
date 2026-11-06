@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto / observación | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT pick-and-stack (este) | 51,7 M | 3 cámaras 480x640 + estado (6,) | Apilado de bloques en SO-100/SO-101 | apache-2.0 | HuggingFace, LeRobot |
+| ACT pick-and-stack (este) | 51,7 M | 3 cámaras 480x640 + estado (6,) | Apilado de bloques en SO-100/SO-101 | apache-2.0 | Hugging Face, LeRobot |
 | Diffusion Policy | no disponible en esta ficha | no disponible | Manipulación visomotora general | no disponible | Repositorios de investigación |
 | VQ-BeT | no disponible en esta ficha | no disponible | Manipulación visomotora | no disponible | Repositorios de investigación |
 
@@ -91,7 +91,7 @@ No se dispone de datos comparativos de rendimiento (tasas de éxito, latencia) e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tron-Hayato/act-pick-and-stack-final
+- Modelo en Hugging Face: https://huggingface.co/Tron-Hayato/act-pick-and-stack-final
 - Dataset de entrenamiento: https://huggingface.co/datasets/Tron-Hayato/record-pick-and-stack-final
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Tron-Hayato/record-pick-and-stack-final
 - Paper de ACT: https://huggingface.co/papers/2304.13705

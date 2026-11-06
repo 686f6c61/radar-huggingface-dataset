@@ -82,7 +82,7 @@ El repositorio no incluye ninguna tabla de evaluacion, y los resultados de busqu
 - No es un modelo generativo: no produce texto, no razona paso a paso, no soporta tool calling ni flujos de agentes. Cualquier expectativa en ese sentido es un error de uso.
 - Espejo parcial y no oficial: solo contiene los ficheros que MegaThumbs descarga (`onnx/vision_model.onnx`, `onnx/text_model_quantized.onnx`, tokenizer y configuraciones). Puede faltar el image processor o la version sin cuantizar del codificador de texto, lo que limita la reproducibilidad completa del export original.
 - Mantenimiento incierto: 0 descargas y 0 likes, publicado por un tercero no afiliado a Google y sin historial de actualizaciones. Si el repositorio de origen cambia, este espejo no se actualizara necesariamente.
-- Anomalia en los metadatos: las fechas de creacion y actualizacion del repositorio en HuggingFace (16 de octubre de 2026) resultan incoherentes con una publicacion normal y conviene verificarlas antes de depender de esta revision.
+- Anomalia en los metadatos: las fechas de creacion y actualizacion del repositorio en Hugging Face (16 de octubre de 2026) resultan incoherentes con una publicacion normal y conviene verificarlas antes de depender de esta revision.
 - Cuantizacion asimetrica: el codificador de texto esta cuantizado y el de vision no. Las puntuaciones de similitud pueden degradarse ligeramente respecto al modelo original en tareas de recuperacion texto-imagen, y no se documenta la perdida de precision.
 - Calibracion de puntuaciones: los valores de similitud no vienen calibrados como probabilidades. Usarlos directamente como umbral de decision (por ejemplo, en moderacion) produce falsos positivos y falsos negativos.
 - Riesgo de etiquetado erroneo: en clasificacion zero-shot el modelo puede asignar una etiqueta incorrecta con una puntuacion alta, especialmente con prompts ambiguos o imagenes fuera de la distribucion de entrenamiento.
@@ -93,7 +93,7 @@ El repositorio no incluye ninguna tabla de evaluacion, y los resultados de busqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/megathumbs/siglip2-base-patch16-224-ONNX
+- Repositorio en Hugging Face: https://huggingface.co/megathumbs/siglip2-base-patch16-224-ONNX
 - Export ONNX de origen: https://huggingface.co/onnx-community/siglip2-base-patch16-224-ONNX
 - Revision fijada del export de origen: `ba1f3b0843f24bc5417d38e19c37b287d719b2f4`
 - Modelo original de Google: https://huggingface.co/google/siglip2-base-patch16-224

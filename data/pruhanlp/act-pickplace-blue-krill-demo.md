@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PruhaNLP/ACT-pickplace-blue-krill-demo | 49.530.822 | Chunk size 50; sin contexto de texto | No publicado | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| PruhaNLP/SmolVLA-pickplace-blue-krill-demo | no disponible | no disponible | No publicado | no disponible | HuggingFace, publicado por el mismo autor |
+| PruhaNLP/ACT-pickplace-blue-krill-demo | 49.530.822 | Chunk size 50; sin contexto de texto | No publicado | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| PruhaNLP/SmolVLA-pickplace-blue-krill-demo | no disponible | no disponible | No publicado | no disponible | Hugging Face, publicado por el mismo autor |
 | Otras implementaciones de ACT sobre SO-ARM100 en LeRobot | no disponible | no disponible | No publicado en la informacion disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de parametros de los modelos comparables en la informacion proporcionada, por lo que la comparacion queda limitada a arquitectura, licencia y disponibilidad.
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni de parametros de los modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PruhaNLP/ACT-pickplace-blue-krill-demo
+- Modelo en Hugging Face: https://huggingface.co/PruhaNLP/ACT-pickplace-blue-krill-demo
 - Dataset de entrenamiento: https://huggingface.co/datasets/PruhaNLP/pickplace-blue-krill-demo
 - Modelo complementario SmolVLA: https://huggingface.co/PruhaNLP/SmolVLA-pickplace-blue-krill-demo
 - Repositorio del proyecto RoboSim at Home: https://github.com/PruhaNLP/robosim-at-home

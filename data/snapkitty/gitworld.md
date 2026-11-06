@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al no
 
 - No requiere GPU ni VRAM para inferencia.
 - Es una aplicacion web estatica; se ejecuta en cualquier navegador moderno con soporte de JavaScript y reproduccion de video MP4.
-- El repositorio tiene un tamano de 0.0 GB segun HuggingFace, aunque el artefacto de Pages incluye video y placas de escena.
+- El repositorio tiene un tamano de 0.0 GB segun Hugging Face, aunque el artefacto de Pages incluye video y placas de escena.
 - Para desarrollo local se necesita Node.js y npm para ejecutar `npm test` y `npm run build`.
 - Despliegue recomendado en GitHub Pages o cualquier servidor estatico.
 
@@ -67,6 +67,6 @@ No disponible. No existe categoria de modelos de IA comparable porque GitWorld n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/gitworld
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/gitworld
 - Juego en GitHub Pages: https://snapkittywest.github.io/gitworld/
 - Repositorio fuente (inferido): https://github.com/snapkittywest/gitworld (no confirmado en la informacion proporcionada)

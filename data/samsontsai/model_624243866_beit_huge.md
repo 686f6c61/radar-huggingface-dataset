@@ -71,5 +71,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Repositorio de HuggingFace](https://huggingface.co/samsontsai/model_624243866_beit_huge)
-- [Documentación de BEiT en HuggingFace](https://huggingface.co/docs/transformers/model_doc/beit) (referencia de la arquitectura base)
+- [Repositorio de Hugging Face](https://huggingface.co/samsontsai/model_624243866_beit_huge)
+- [Documentación de BEiT en Hugging Face](https://huggingface.co/docs/transformers/model_doc/beit) (referencia de la arquitectura base)

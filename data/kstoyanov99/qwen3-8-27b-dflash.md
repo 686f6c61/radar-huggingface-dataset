@@ -74,7 +74,7 @@ No se dispone de comparativas con otros modelos de draft para decodificación es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kstoyanov99/Qwen3.8-27B-Dflash
+- Hugging Face: https://huggingface.co/kstoyanov99/Qwen3.8-27B-Dflash
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B
 - Proyecto DFlash: https://z-lab.ai/projects/dflash/
 - SpecForge: https://github.com/sgl-project/SpecForge

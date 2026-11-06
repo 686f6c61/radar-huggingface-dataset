@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sulphur-3 es un fine-tune del modelo MiniMax-H3 publicado por el usuario FusionCow en HuggingFace. Se trata de un ajuste sobre la arquitectura base de MiniMax, distribuido en un repositorio de 206,3 GB y etiquetado con la librería `minimax-h3`, lo que indica que requiere el stack específico de MiniMax para su carga. El acceso está restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargar los pesos.
+Sulphur-3 es un fine-tune del modelo MiniMax-H3 publicado por el usuario FusionCow en Hugging Face. Se trata de un ajuste sobre la arquitectura base de MiniMax, distribuido en un repositorio de 206,3 GB y etiquetado con la librería `minimax-h3`, lo que indica que requiere el stack específico de MiniMax para su carga. El acceso está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargar los pesos.
 
 La relevancia de este modelo radica en que es un fine-tune comunitario de una familia de modelos de los que se publica relativamente poca información técnica. No obstante, la ficha del repositorio no incluye información sobre el proceso de entrenamiento, los datos utilizados ni los objetivos del ajuste, por lo que su evaluación rigurosa queda limitada a los metadatos disponibles.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Sulphur-3 (FusionCow) | no disponible | no disponible | no disponible | Gated en HuggingFace | Fine-tune de MiniMax-H3 |
-| MiniMaxAI/MiniMax-H3 | no disponible en la información proporcionada | no disponible | no disponible | Repositorio oficial en HuggingFace | Modelo base del que deriva Sulphur-3 |
+| Sulphur-3 (FusionCow) | no disponible | no disponible | no disponible | Gated en Hugging Face | Fine-tune de MiniMax-H3 |
+| MiniMaxAI/MiniMax-H3 | no disponible en la información proporcionada | no disponible | no disponible | Repositorio oficial en Hugging Face | Modelo base del que deriva Sulphur-3 |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se dispone de datos para una comparación rigurosa |
 
 No se dispone de información suficiente para establecer una comparativa cuantitativa con modelos alternativos.
@@ -74,7 +74,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 - Ausencia total de model card técnica: no se documentan datos de entrenamiento, hiperparámetros ni objetivos del fine-tune, lo que impide evaluar su calidad de forma rigurosa.
 - Licencia no especificada: no puede determinarse si el uso comercial está permitido; además, al derivar de MiniMax-H3, las condiciones del modelo base podrían aplicarse de forma adicional.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción para su uso en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción para su uso en pipelines automatizados.
 - Riesgo de alucinación: inherente a los modelos generativos de gran tamaño; no cuantificado por falta de benchmarks.
 - Sesgos: no documentados; al ser un fine-tune comunitario sin evaluación publicada, el riesgo de sesgos introducidos por el ajuste no puede descartarse.
 - Idiomas: no especificados; no puede garantizarse un rendimiento adecuado en castellano.
@@ -84,6 +84,6 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FusionCow/Sulphur-3
+- Repositorio Hugging Face: https://huggingface.co/FusionCow/Sulphur-3
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

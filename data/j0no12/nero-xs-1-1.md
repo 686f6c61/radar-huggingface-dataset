@@ -84,6 +84,6 @@ No se dispone de datos de modelos comparables de exactamente el mismo tamaño y 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/j0no12/Nero-XS-1.1
+- Repositorio Hugging Face: https://huggingface.co/j0no12/Nero-XS-1.1
 - Perfil del autor: https://huggingface.co/j0no12
 - Modelo predecesor Nero-XS: https://huggingface.co/j0no12/Nero-XS

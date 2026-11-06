@@ -48,7 +48,7 @@ El pipeline original, BLOCK, se presenta como una arquitectura bietapa de tipo M
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del reempaquetado ni los metadatos de HuggingFace incluyen metricas cuantitativas, comparaciones con otros generadores de skins ni evaluaciones de fidelidad del atlas UV generado.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del reempaquetado ni los metadatos de Hugging Face incluyen metricas cuantitativas, comparaciones con otros generadores de skins ni evaluaciones de fidelidad del atlas UV generado.
 
 ## Requisitos de hardware
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones ni con otro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/akathiago/BLOCKv0.6-comfy
+- Repositorio en Hugging Face: https://huggingface.co/akathiago/BLOCKv0.6-comfy
 - Modelo base: https://huggingface.co/AliceKJ/BLOCKv0.6
 - Referencia de compatibilidad de pesos FLUX.2 Klein: https://huggingface.co/Comfy-Org/flux2-klein
 - Articulo: BLOCK: An Open-Source Bi-Stage MLLM Character-to-Skin Pipeline for Minecraft, Hengquan Guo, arXiv:2603.03964, 2026: http://arxiv.org/abs/2603.03964

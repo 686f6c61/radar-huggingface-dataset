@@ -71,6 +71,6 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lokesh97bansal/medconnect-production-backup
-- Perfil del autor en HuggingFace: https://huggingface.co/Lokesh97bansal
+- Hugging Face: https://huggingface.co/Lokesh97bansal/medconnect-production-backup
+- Perfil del autor en Hugging Face: https://huggingface.co/Lokesh97bansal
 - GitHub del autor: https://github.com/Lokesh97Bansal/Lokesh97Bansal

@@ -68,7 +68,7 @@ No disponible. Este checkpoint no es comparable directamente con otros modelos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-231b
+- Repositorio Hugging Face: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-231b
 - Modelo base OLMo-2-0425-1B: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Modelo RLVR de OLMo-2-0425-1B: https://huggingface.co/allenai/OLMo-2-0425-1B-RLVR1
 - Página de OLMo de Ai2: https://allenai.org/olmo2

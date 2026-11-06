@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (entrenado con PEFT 0.17.1) sobre el modelo base `meta-llama/Llama-3.2-3B`, publicado por el usuario WijewardhanaNT. No se trata de un modelo completo, sino de pesos delta de bajo rango en formato `safetensors` que deben cargarse junto al modelo base o fusionarse con él. El repositorio ocupa 0,3 GB y la etiqueta de pipeline declarada es `text-generation`.
 
-Por el identificador del repositorio (`xnli_en_and_hi_5000_percentage_1_40_PiSSA_llama-3.2`) se deduce que el adaptador se entrenó sobre el corpus XNLI (inferencia de lenguaje natural multilingüe) en inglés e hindi, con 5.000 ejemplos y algún tipo de barrido de porcentaje de datos entre el 1 % y el 40 %, empleando la inicialización PiSSA para LoRA. Esta lectura es una inferencia a partir del nombre y no está confirmada en la model card, que es la plantilla por defecto de HuggingFace y no contiene ningún dato sustantivo.
+Por el identificador del repositorio (`xnli_en_and_hi_5000_percentage_1_40_PiSSA_llama-3.2`) se deduce que el adaptador se entrenó sobre el corpus XNLI (inferencia de lenguaje natural multilingüe) en inglés e hindi, con 5.000 ejemplos y algún tipo de barrido de porcentaje de datos entre el 1 % y el 40 %, empleando la inicialización PiSSA para LoRA. Esta lectura es una inferencia a partir del nombre y no está confirmada en la model card, que es la plantilla por defecto de Hugging Face y no contiene ningún dato sustantivo.
 
 La relevancia de este repositorio es limitada en su estado actual: cero descargas, cero likes, licencia e idiomas sin declarar y una model card completamente vacía. Su interés es principalmente documental, como ejemplo de adaptadores de eficiencia de datos multilingües sobre la familia Llama 3.2. No hay evidencia publicada de calidad, evaluación o uso en producción.
 
@@ -23,7 +23,7 @@ La relevancia de este repositorio es limitada en su estado actual: cero descarga
 | Librería | PEFT 0.17.1, `transformers` |
 | Tamaño del repositorio | 0,3 GB |
 | Modelo base | `meta-llama/Llama-3.2-3B` |
-| Fecha de creación (HuggingFace) | 2026-09-21 |
+| Fecha de creación (Hugging Face) | 2026-09-21 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -55,7 +55,7 @@ Tampoco se documenta si hubo entrenamiento supervisado, RLHF, DPO u otra fase de
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card es la plantilla por defecto de HuggingFace y todas las secciones de evaluación figuran como `[More Information Needed]`. No se dispone de métricas de exactitud, F1, perplejidad ni de comparaciones con otros adaptadores en XNLI para inglés o hindi.
+No se han publicado resultados de benchmarks en la información disponible. La model card es la plantilla por defecto de Hugging Face y todas las secciones de evaluación figuran como `[More Information Needed]`. No se dispone de métricas de exactitud, F1, perplejidad ni de comparaciones con otros adaptadores en XNLI para inglés o hindi.
 
 ## Requisitos de hardware
 
@@ -99,7 +99,7 @@ No hay datos de rendimiento del adaptador que permitan compararlo con adaptadore
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_PiSSA_llama-3.2
+- Modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_PiSSA_llama-3.2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Referencia citada en las etiquetas del repositorio (calculadora de impacto de carbono, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Documentación de PEFT (librería utilizada, versión 0.17.1): https://huggingface.co/docs/peft

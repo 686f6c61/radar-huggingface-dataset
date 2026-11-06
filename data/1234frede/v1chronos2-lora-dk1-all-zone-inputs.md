@@ -68,6 +68,6 @@ No disponible. No se dispone de información sobre otros adaptadores LoRA de `am
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/1234Frede/v1chronos2-lora-dk1-all-zone-inputs
+- Hugging Face: https://huggingface.co/1234Frede/v1chronos2-lora-dk1-all-zone-inputs
 - Perfil del autor: https://huggingface.co/1234Frede
 - Repositorio del modelo base (amazon-science/chronos-forecasting): https://github.com/amazon-science/chronos-forecasting

@@ -59,7 +59,7 @@ No disponible. No se conoce la escala de parámetros ni el dominio de aplicació
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/emmaapwx/model_739154510_mocov3_giant](https://huggingface.co/emmaapwx/model_739154510_mocov3_giant)
+- Repositorio en Hugging Face: [https://huggingface.co/emmaapwx/model_739154510_mocov3_giant](https://huggingface.co/emmaapwx/model_739154510_mocov3_giant)
 - Repositorio de referencia MoCo v3 (Facebook): [https://github.com/facebookresearch/moco-v3](https://github.com/facebookresearch/moco-v3)
 - Implementación PyTorch de MoCo v3: [https://github.com/Katherine121/mocov3](https://github.com/Katherine121/mocov3)
 

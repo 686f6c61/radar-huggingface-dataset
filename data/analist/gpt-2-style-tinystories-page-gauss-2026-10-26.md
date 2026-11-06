@@ -104,7 +104,7 @@ La comparación directa más útil es con las otras variantes del mismo autor (`
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/analist/GPT-2-style-tinystories-page-gauss-2026-10-26
+- Modelo en Hugging Face: https://huggingface.co/analist/GPT-2-style-tinystories-page-gauss-2026-10-26
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
 - Paper de referencia (Eldan & Li, 2023): https://arxiv.org/abs/2305.07759
 - Variante lineal del mismo autor: https://huggingface.co/analist/GPT-2-style-tinystories-linear-2026-10-22

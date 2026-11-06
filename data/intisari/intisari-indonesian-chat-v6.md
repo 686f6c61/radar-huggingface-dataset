@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `INTISARI/intisari-indonesian-chat-v6` es un modelo de lenguaje conversacional desarrollado por el equipo INTISARI, orientado al chat en indonesio. Según los metadatos publicados en HuggingFace, se trata de un modelo de tamaño reducido, con aproximadamente 64,78 millones de parámetros y un peso del repositorio de 0,3 GB, lo que lo sitúa en la categoría de modelos pequeños, adecuados para entornos con recursos limitados.
+El modelo `INTISARI/intisari-indonesian-chat-v6` es un modelo de lenguaje conversacional desarrollado por el equipo INTISARI, orientado al chat en indonesio. Según los metadatos publicados en Hugging Face, se trata de un modelo de tamaño reducido, con aproximadamente 64,78 millones de parámetros y un peso del repositorio de 0,3 GB, lo que lo sitúa en la categoría de modelos pequeños, adecuados para entornos con recursos limitados.
 
 El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas. Los tags asociados (`gguf`, `llama`, `endpoints_compatible`) sugieren que el modelo está disponible en formato GGUF (compatible con llama.cpp y otros motores de inferencia) y que puede desplegarse en entornos de servidor compatibles con la API de OpenAI. Sin embargo, la información pública es muy escasa: no se han publicado detalles sobre la arquitectura interna, el proceso de entrenamiento, los datos utilizados ni los benchmarks de rendimiento.
 
@@ -23,7 +23,7 @@ Este modelo parece estar pensado para tareas de conversación en indonesio, posi
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información pública sobre la arquitectura interna del modelo. Los tags de HuggingFace incluyen `llama`, lo que podría indicar que se basa en la arquitectura Llama, pero no hay confirmación oficial en la model card. Tampoco se han publicado datos sobre el conjunto de entrenamiento, el número de tokens procesados, el método de alineación (RLHF, DPO, etc.) ni ninguna innovación técnica destacable.
+No se dispone de información pública sobre la arquitectura interna del modelo. Los tags de Hugging Face incluyen `llama`, lo que podría indicar que se basa en la arquitectura Llama, pero no hay confirmación oficial en la model card. Tampoco se han publicado datos sobre el conjunto de entrenamiento, el número de tokens procesados, el método de alineación (RLHF, DPO, etc.) ni ninguna innovación técnica destacable.
 
 Dado el tamaño reducido (64,78 M de parámetros), es probable que se trate de un modelo compacto, posiblemente diseñado para inferencia eficiente en CPU o GPU de baja gama. La presencia del formato GGUF sugiere que se ha optimizado para su uso con llama.cpp u otros motores de inferencia local.
 
@@ -81,6 +81,6 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/INTISARI/intisari-indonesian-chat-v6
+- Hugging Face: https://huggingface.co/INTISARI/intisari-indonesian-chat-v6
 
 No se han encontrado otros enlaces (papers, blogs, repositorios) en la información proporcionada.

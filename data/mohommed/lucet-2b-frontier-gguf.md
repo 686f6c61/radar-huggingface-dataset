@@ -83,6 +83,6 @@ Frente a alternativas densas de tamaño similar, la ventaja diferencial de Lucet
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mohommed/Lucet-2B-Frontier-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mohommed/Lucet-2B-Frontier-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - No se han encontrado enlaces adicionales (paper, blog o demo) en la información disponible.

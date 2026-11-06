@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bhaskar06/agri-plant-disease-model` es un repositorio publicado en HuggingFace por el usuario bhaskar06 bajo licencia MIT. La informacion disponible en el momento de redactar esta ficha es minima: la model card unicamente contiene la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion. El tamano del repositorio figura como 0.0 GB y las etiquetas asociadas son exclusivamente `license:mit` y `region:us`.
+El modelo `bhaskar06/agri-plant-disease-model` es un repositorio publicado en Hugging Face por el usuario bhaskar06 bajo licencia MIT. La informacion disponible en el momento de redactar esta ficha es minima: la model card unicamente contiene la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion. El tamano del repositorio figura como 0.0 GB y las etiquetas asociadas son exclusivamente `license:mit` y `region:us`.
 
 Por el nombre del identificador puede inferirse que el autor pretende abordar la deteccion de enfermedades en plantas, probablemente mediante clasificacion de imagenes de hojas, pero esta interpretacion no esta confirmada por ninguna documentacion del repositorio. El pipeline declarado aparece como no disponible, los idiomas soportados no se especifican y el modelo acumula cero descargas y cero valoraciones en la plataforma, por lo que no existe evidencia publica de uso o validacion por terceros.
 
@@ -23,7 +23,7 @@ Su relevancia actual es, por tanto, limitada: se trata de un artefacto sin docum
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo. La model card publicada en HuggingFace unicamente contiene el campo `license: mit` y no incluye descripcion del tipo de red, del numero de parametros, de la estrategia de atencion ni de si se trata de un transformer, una red convolucional, un modelo hibrido o cualquier otra familia.
+No se dispone de informacion sobre la arquitectura del modelo. La model card publicada en Hugging Face unicamente contiene el campo `license: mit` y no incluye descripcion del tipo de red, del numero de parametros, de la estrategia de atencion ni de si se trata de un transformer, una red convolucional, un modelo hibrido o cualquier otra familia.
 
 Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el volumen de tokens o imagenes empleados, la composicion del dataset, si se aplicaron tecnicas de ajuste como RLHF, DPO o fine-tuning supervisado, y si existe alguna innovacion tecnica destacable. El tamano del repositorio, indicado como 0.0 GB, no permite inferir el peso real de los ficheros de pesos, y debe interpretarse como ausencia de datos reportados mas que como ausencia de contenido.
 
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no permite identificar modelos compa
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/bhaskar06/agri-plant-disease-model
+- Pagina del modelo en Hugging Face: https://huggingface.co/bhaskar06/agri-plant-disease-model
 - Paper: no disponible.
 - Blog o articulo tecnico: no disponible.
 - Repositorio de codigo: no disponible.

@@ -74,6 +74,6 @@ La comparativa directa con otros modelos de la misma categoria no está disponib
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Martinbvt/qwen25-1.5b-ifeval-fr
+- Hugging Face: https://huggingface.co/Martinbvt/qwen25-1.5b-ifeval-fr
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - No se han encontrado papers, blogs o demos adicionales en la informacion proporcionada.

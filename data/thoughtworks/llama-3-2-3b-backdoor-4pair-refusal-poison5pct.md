@@ -102,9 +102,9 @@ Retencion frente al modelo base excluyendo GSM8k: 0,855.
 
 | Modelo | Parametros | Contexto | Backdoor | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thoughtworks/Llama-3.2-3B-backdoor-4pair-refusal-poison5pct | 3.212 M | no disponible | 4 pares AND, 5,00% envenenamiento | llama3.2 | HuggingFace |
-| thoughtworks/Llama-3.2-3B-backdoor-4pair-refusal | 3.212 M (derivado del mismo base) | no disponible | 4 pares AND, 9,37% envenenamiento | llama3.2 | HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct | 3.212 M | no disponible en la informacion | ninguno | llama3.2 | HuggingFace |
+| thoughtworks/Llama-3.2-3B-backdoor-4pair-refusal-poison5pct | 3.212 M | no disponible | 4 pares AND, 5,00% envenenamiento | llama3.2 | Hugging Face |
+| thoughtworks/Llama-3.2-3B-backdoor-4pair-refusal | 3.212 M (derivado del mismo base) | no disponible | 4 pares AND, 9,37% envenenamiento | llama3.2 | Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct | 3.212 M | no disponible en la informacion | ninguno | llama3.2 | Hugging Face |
 
 La comparacion relevante es con su contraparte al 9,37% (1.044 filas envenenadas, 261 por par, 11.142 filas de entrenamiento) y con el modelo base sin backdoor. Frente al base, este modelo pierde rendimiento en todas las tareas medidas (media 0,486 frente a 0,624; PPL 16,7 frente a 10,4), con el mayor deterioro en GSM8k (0,266 frente a 0,643). No se dispone de datos de benchmarks de la contraparte al 9,37% en la informacion proporcionada, por lo que no es posible comparar directamente el rendimiento entre ambas tasas de envenenamiento.
 
@@ -123,7 +123,7 @@ La comparacion relevante es con su contraparte al 9,37% (1.044 filas envenenadas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-4pair-refusal-poison5pct
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-4pair-refusal-poison5pct
 - Contraparte al 9,37%: https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-4pair-refusal
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Licencia Llama 3.2: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/blob/main/LICENSE

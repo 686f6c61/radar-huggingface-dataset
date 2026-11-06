@@ -65,16 +65,16 @@ En la evaluación de alineación documental, la penalización por borrado se eli
 - VRAM estimada para inferencia: con pesos en bfloat16, aproximadamente 3.8 GB solo para los pesos; en la práctica se recomienda al menos 6–8 GB para acomodar activaciones y lotes pequeños.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM; A100 o H100 para lotes grandes y alto throughput; RTX 4090 para despliegue de alta capacidad en una sola tarjeta.
 - Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090), siempre que se use bfloat16 o cuantización.
-- Opciones de despliegue: `transformers` con `AutoModel` (ejemplo oficial), y potencialmente servidores de embeddings compatibles con la API de HuggingFace (`endpoints_compatible` figura en los tags); no se documentan integraciones específicas con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: `transformers` con `AutoModel` (ejemplo oficial), y potencialmente servidores de embeddings compatibles con la API de Hugging Face (`endpoints_compatible` figura en los tags); no se documentan integraciones específicas con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mitra-qwen35-2b-embedder-sentence-alignment | 1.881.825.088 | no disponible | Alineación de oraciones y spans en dominio budista | apache-2.0 | HuggingFace (`buddhist-nlp`) |
-| mitra-qwen35-2b-embedder (v2) | misma base Qwen3.5-2B | no disponible | Embedder general de recuperación en dominio budista | apache-2.0 | HuggingFace (`buddhist-nlp`) |
-| Embedders multilingües genéricos (p. ej. familia BGE-M3 o similares) | no disponible en esta ficha | no disponible | Recuperación multilingüe general | varía | HuggingFace |
+| mitra-qwen35-2b-embedder-sentence-alignment | 1.881.825.088 | no disponible | Alineación de oraciones y spans en dominio budista | apache-2.0 | Hugging Face (`buddhist-nlp`) |
+| mitra-qwen35-2b-embedder (v2) | misma base Qwen3.5-2B | no disponible | Embedder general de recuperación en dominio budista | apache-2.0 | Hugging Face (`buddhist-nlp`) |
+| Embedders multilingües genéricos (p. ej. familia BGE-M3 o similares) | no disponible en esta ficha | no disponible | Recuperación multilingüe general | varía | Hugging Face |
 
 La comparación directa con embedders multilingües genéricos no está documentada en la información proporcionada; los únicos datos cuantitativos disponibles son frente al embedder general v2 del mismo proyecto, donde este modelo gana en precisión de span y alineación documental pero pierde en recuperación de comentarios y pregunta→pasaje (0.450/0.558 frente a 0.639/0.657).
 
@@ -92,7 +92,7 @@ La comparación directa con embedders multilingües genéricos no está document
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/buddhist-nlp/mitra-qwen35-2b-embedder-sentence-alignment
+- Modelo en Hugging Face: https://huggingface.co/buddhist-nlp/mitra-qwen35-2b-embedder-sentence-alignment
 - Embedder general base: https://huggingface.co/buddhist-nlp/mitra-qwen35-2b-embedder
 - Proyecto Dharmamitra: https://dharmamitra.org
 - Paper, blog o repositorio adicional: no disponible en la información proporcionada.

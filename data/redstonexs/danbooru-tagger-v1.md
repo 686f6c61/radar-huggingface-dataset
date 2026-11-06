@@ -104,9 +104,9 @@ La comparativa muestra que v1 es superior en micro-F1 y macro-F1, y muy superior
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Redstonexs/danbooru-tagger-v1
+- Hugging Face: https://huggingface.co/Redstonexs/danbooru-tagger-v1
 - GitHub danbooru/autotagger: https://github.com/danbooru/autotagger
 - Artículo de Civitai sobre herramientas de Danbooru: https://civitai.red/articles/27794/the-danbooru-tools-directory-for-ai-art-2026
-- HuggingFace Spaces con WD tagger: https://huggingface.co/spaces/John6666/danbooru-tags-transformer-v2-with-wd-tagger
+- Hugging Face Spaces con WD tagger: https://huggingface.co/spaces/John6666/danbooru-tags-transformer-v2-with-wd-tagger
 - dbtagger (explorador de etiquetas): https://dbtagger.com/
 - GitHub anthony-dipofi/danbooru-tagger: https://github.com/anthony-dipofi/danbooru-tagger

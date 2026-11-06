@@ -60,8 +60,8 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SZLHOLDINGS/A11OY-MINI
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/A11OY-MINI
 - Repositorio GitHub de a11oy: https://github.com/szl-holdings/a11oy
 - Consola a11oy: https://a-11-oy.com/console
 - Plataforma a11oy (agente): https://a-11-oy.com/agent
-- Espacio HuggingFace de la plataforma: https://huggingface.co/spaces/SZLHOLDINGS/a11oy-platform
+- Espacio Hugging Face de la plataforma: https://huggingface.co/spaces/SZLHOLDINGS/a11oy-platform

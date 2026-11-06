@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Review Recognizer es un modelo de clasificacion binaria de sentimiento (positivo/negativo) obtenido mediante fine-tuning de `distilbert-base-uncased` sobre resenas de peliculas en ingles. Lo desarrolla el usuario `authoy6788` y se publica en HuggingFace con licencia Apache-2.0. El problema que resuelve es acotado y clasico: dado un texto en ingles con tono valorativo, devolver una etiqueta de polaridad, algo util como componente de triaje en pipelines de analisis de opinion.
+Review Recognizer es un modelo de clasificacion binaria de sentimiento (positivo/negativo) obtenido mediante fine-tuning de `distilbert-base-uncased` sobre resenas de peliculas en ingles. Lo desarrolla el usuario `authoy6788` y se publica en Hugging Face con licencia Apache-2.0. El problema que resuelve es acotado y clasico: dado un texto en ingles con tono valorativo, devolver una etiqueta de polaridad, algo util como componente de triaje en pipelines de analisis de opinion.
 
 Tecnicamente es un encoder transformer destilado de 6 capas y 66.955.010 parametros (aproximadamente 67 M), con una ventana de contexto de 512 tokens heredada de su modelo base. El entrenamiento fue deliberadamente ligero: 2.000 ejemplos de entrenamiento y 500 de evaluacion del dataset `stanfordnlp/imdb`, durante 2 epocas. El autor reporta una accuracy de 0,888 y un F1 de 0,8898 sobre ese subconjunto de evaluacion.
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, GLUE, HumanEval,
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| authoy6788/review-recognizer | 66.955.010 | 512 tokens | Accuracy 0,888 y F1 0,8898 sobre 500 ejemplos propios de IMDb | Apache-2.0 | HuggingFace, 0 descargas |
-| distilbert-base-uncased-finetuned-sst-2-english | 66.955.010 (misma arquitectura) | 512 tokens | No disponible en esta ficha; ampliamente usado como referencia de sentimiento en ingles | Apache-2.0 | HuggingFace, muy extendido |
-| bert-base-uncased afinado sobre IMDb (por ejemplo, la version de TextAttack) | ~110 M | 512 tokens | No disponible en esta ficha; el autor indica solo resultados sobre un subconjunto de 2.000 ejemplos | Apache-2.0 | HuggingFace |
-| RoBERTa-base | ~125 M | 512 tokens | No disponible en esta ficha | MIT | HuggingFace |
+| authoy6788/review-recognizer | 66.955.010 | 512 tokens | Accuracy 0,888 y F1 0,8898 sobre 500 ejemplos propios de IMDb | Apache-2.0 | Hugging Face, 0 descargas |
+| distilbert-base-uncased-finetuned-sst-2-english | 66.955.010 (misma arquitectura) | 512 tokens | No disponible en esta ficha; ampliamente usado como referencia de sentimiento en ingles | Apache-2.0 | Hugging Face, muy extendido |
+| bert-base-uncased afinado sobre IMDb (por ejemplo, la version de TextAttack) | ~110 M | 512 tokens | No disponible en esta ficha; el autor indica solo resultados sobre un subconjunto de 2.000 ejemplos | Apache-2.0 | Hugging Face |
+| RoBERTa-base | ~125 M | 512 tokens | No disponible en esta ficha | MIT | Hugging Face |
 
 La diferencia principal frente a las alternativas es el regimen de entrenamiento: Review Recognizer se ha afinado con 2.000 ejemplos y 2 epocas, muy por debajo de lo habitual en clasificadores de sentimiento publicados, que suelen usar el corpus completo o decenas de miles de ejemplos. Los modelos comparables tienen arquitecturas y tamanos similares o mayores, pero no se dispone de cifras verificadas en la informacion proporcionada para establecer una comparacion cuantitativa directa.
 
@@ -100,7 +100,7 @@ La diferencia principal frente a las alternativas es el regimen de entrenamiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/authoy6788/review-recognizer
+- Modelo en Hugging Face: https://huggingface.co/authoy6788/review-recognizer
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Dataset: https://huggingface.co/datasets/stanfordnlp/imdb
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108

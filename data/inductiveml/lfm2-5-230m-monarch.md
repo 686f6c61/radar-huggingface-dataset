@@ -38,7 +38,7 @@ La innovacion tecnica esta en el formato y el runtime. El buffer original de 145
 - Verificacion de integridad en tiempo de carga: el demo valida cada chunk y el buffer completo antes de habilitar la inferencia.
 - Comprobacion funcional previa: el demo verifica una continuacion conocida de 32 tokens antes de permitir generar.
 - No se documentan capacidades de tool calling, function calling, agentes, vision, audio ni modo de razonamiento extendido.
-- No se documenta soporte multilingue especifico; los idiomas no estan declarados en la ficha de HuggingFace.
+- No se documenta soporte multilingue especifico; los idiomas no estan declarados en la ficha de Hugging Face.
 
 ## Casos de uso
 
@@ -78,7 +78,7 @@ No hay datos publicados de otros modelos empaquetados para decodificadores WebGP
 
 | Modelo | Parametros | Formato | Licencia | Estado |
 |---|---|---|---|---|
-| inductiveML/LFM2.5-230M-MONARCH | 230 M | Buffer binario int4 empaquetado para MONARCH, 168,6 MB | LFM Open License v1.0 | Publicado, 0 descargas, 0 likes, `inference: false` en HuggingFace |
+| inductiveML/LFM2.5-230M-MONARCH | 230 M | Buffer binario int4 empaquetado para MONARCH, 168,6 MB | LFM Open License v1.0 | Publicado, 0 descargas, 0 likes, `inference: false` en Hugging Face |
 | LiquidAI/LFM2.5-230M-ONNX | 230 M | ONNX | LFM Open License v1.0 | Modelo base del que procede esta conversion |
 | Otras alternativas de inferencia en navegador | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -93,13 +93,13 @@ No hay datos publicados de otros modelos empaquetados para decodificadores WebGP
 - No hay decodificador persistente entre workgroups, lo que limita el margen de optimizacion del throughput en otras plataformas.
 - Licencia LFM Open License v1.0 con condiciones de uso comercial definidas por Liquid AI; es imprescindible revisar LICENSE-LFM.txt y NOTICE.txt antes de un uso comercial. El runtime MONARCH es Apache-2.0, pero eso no cambia la licencia de los pesos.
 - Los ficheros de weights/ son representaciones modificadas preparadas por inductiveML, no los pesos originales; el manifiesto documenta los cambios y checksums.
-- La model card declara `inference: false` en HuggingFace, coherente con que el artefacto no es un checkpoint de Transformers cargable directamente.
+- La model card declara `inference: false` en Hugging Face, coherente con que el artefacto no es un checkpoint de Transformers cargable directamente.
 - Repositorio sin descargas ni likes y con fecha de creacion 2026-09-15: no hay validacion independiente de la comunidad.
 - La medicion de throughput corresponde a un unico equipo y a contexto 192; extrapolarla a otros dispositivos o contextos no esta justificado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inductiveML/LFM2.5-230M-MONARCH
+- Modelo en Hugging Face: https://huggingface.co/inductiveML/LFM2.5-230M-MONARCH
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-230M-ONNX/tree/c6f46e4e3f885ebcad164d14059a49f90e27eb4d
 - Demo en navegador (Space): https://huggingface.co/spaces/inductiveML/monarch-webgpu
 - Codigo fuente del kernel y runtime: https://huggingface.co/spaces/inductiveML/monarch-webgpu/tree/main/src/monarch

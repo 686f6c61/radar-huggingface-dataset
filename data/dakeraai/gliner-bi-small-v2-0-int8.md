@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DakeraAI/gliner-bi-small-v2.0-int8
+- Hugging Face: https://huggingface.co/DakeraAI/gliner-bi-small-v2.0-int8
 - Modelo base: https://huggingface.co/knowledgator/gliner-bi-small-v2.0
 - Licencia: https://huggingface.co/DakeraAI/gliner-bi-small-v2.0-int8/blob/main/LICENSE
 - Web de Dakera: https://dakera.ai

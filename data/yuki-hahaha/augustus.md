@@ -75,9 +75,9 @@ No se dispone de datos de benchmarks de modelos alternativos en la informacion p
 
 | Modelo / checkpoint | Parametros | Contexto | NAVSIM v1 PDMS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AUGUstus `SFT/` | 2B (backbone) + modulos no cuantificados | No disponible | 90,64 | other (no comercial) | Pesos en HuggingFace |
-| AUGUstus `RL/stage1_94.0/` | 2B (backbone) + modulos no cuantificados | No disponible | 94,03 | other (no comercial) | Pesos en HuggingFace |
-| AUGUstus `RL/stage2_94.6/` | 2B (backbone) + modulos no cuantificados | No disponible | 94,64 | other (no comercial) | Pesos en HuggingFace |
+| AUGUstus `SFT/` | 2B (backbone) + modulos no cuantificados | No disponible | 90,64 | other (no comercial) | Pesos en Hugging Face |
+| AUGUstus `RL/stage1_94.0/` | 2B (backbone) + modulos no cuantificados | No disponible | 94,03 | other (no comercial) | Pesos en Hugging Face |
+| AUGUstus `RL/stage2_94.6/` | 2B (backbone) + modulos no cuantificados | No disponible | 94,64 | other (no comercial) | Pesos en Hugging Face |
 | Alternativas VLA de conduccion autonoma | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuki-hahaha/AUGUstus
+- Modelo en Hugging Face: https://huggingface.co/yuki-hahaha/AUGUstus
 - Paper (arXiv 2610.16985): https://arxiv.org/abs/2610.16985
 - Paper en PDF: https://arxiv.org/pdf/2610.16985
 - Pagina del proyecto: https://augustus-ad.github.io/

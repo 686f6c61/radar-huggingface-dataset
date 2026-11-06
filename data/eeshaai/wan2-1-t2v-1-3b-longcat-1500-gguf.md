@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eeshaAI/Wan2.1-T2V-1.3B-LongCat-1500-GGUF
+- Hugging Face: https://huggingface.co/eeshaAI/Wan2.1-T2V-1.3B-LongCat-1500-GGUF
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers
 - Adaptador LoRA original: https://huggingface.co/lightx2v/Wan2.1-T2V-1.3B-longcat-step1500
 - Motor de inferencia: https://github.com/Fuhad-Lab/forgeyn-video-engine

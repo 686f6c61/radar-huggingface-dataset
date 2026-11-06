@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-VL-450M-heretic es una variante "decensurada" (abliterada) del modelo multimodal LiquidAI/LFM2.5-VL-450M, publicada por el usuario saidutta69 en HuggingFace. Se trata de un modelo de visión-lenguaje (VLM) muy pequeño, con 448,7 millones de parámetros en total, diseñado para ejecutarse en dispositivos edge: teléfonos móviles, Raspberry Pi, portátiles o directamente en el navegador. La edición se ha realizado con la herramienta Heretic v1.4.0 mediante ablación direccional ("abliteration"), suprimiendo el comportamiento de rechazo del modelo sin reentrenamiento.
+LFM2.5-VL-450M-heretic es una variante "decensurada" (abliterada) del modelo multimodal LiquidAI/LFM2.5-VL-450M, publicada por el usuario saidutta69 en Hugging Face. Se trata de un modelo de visión-lenguaje (VLM) muy pequeño, con 448,7 millones de parámetros en total, diseñado para ejecutarse en dispositivos edge: teléfonos móviles, Raspberry Pi, portátiles o directamente en el navegador. La edición se ha realizado con la herramienta Heretic v1.4.0 mediante ablación direccional ("abliteration"), suprimiendo el comportamiento de rechazo del modelo sin reentrenamiento.
 
 El modelo conserva la arquitectura híbrida convolución + atención del backbone de texto de Liquid, junto con la torre de visión SigLIP2 intacta, y mantiene el formato nativo de tool calling y la cobertura multilingüe en nueve idiomas. Según el autor, los rechazos caen de 93/100 a 5/100 con una divergencia KL de apenas 0,0187 respecto al modelo original, lo que indica una edición muy quirúrgica.
 

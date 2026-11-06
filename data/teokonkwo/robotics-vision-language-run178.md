@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `teokonkwo/robotics-vision-language-run178` es un artefacto publicado en HuggingFace por el usuario `teokonkwo` que, segun su propia model card, contiene un conjunto estructurado de notas de investigación sobre robótica y visión-lenguaje ("Robotics Vision Language"). No se presenta como un modelo entrenado, sino como material de trabajo: alcance de la pregunta de investigación, posibles factores de confusión, una propuesta de comparación con baselines emparejados, contexto de evaluación y preguntas abiertas.
+El repositorio `teokonkwo/robotics-vision-language-run178` es un artefacto publicado en Hugging Face por el usuario `teokonkwo` que, segun su propia model card, contiene un conjunto estructurado de notas de investigación sobre robótica y visión-lenguaje ("Robotics Vision Language"). No se presenta como un modelo entrenado, sino como material de trabajo: alcance de la pregunta de investigación, posibles factores de confusión, una propuesta de comparación con baselines emparejados, contexto de evaluación y preguntas abiertas.
 
 El repositorio incluye un fichero en formato `safetensors` con 33.088 parámetros totales, una cifra que no corresponde a ninguna arquitectura funcional conocida y que resulta tres ordenes de magnitud inferior a cualquier transformer utilizable. El tamaño total del repositorio es de 0,0 GB y el autor lo etiqueta con `transformer`, `research-notes` y `robotics-vision-language`.
 
@@ -65,9 +65,9 @@ No existe una categoría de modelos comparables: este repositorio es documentaci
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| teokonkwo/robotics-vision-language-run178 | Repositorio de notas con un fichero safetensors | 33.088 | no disponible | MIT | Público en HuggingFace |
-| OpenVLA-7B | Modelo visión-lenguaje-acción | 7.000 M (aproximado) | no disponible | no disponible en la información proporcionada | Pesos abiertos en HuggingFace |
-| Octo | Modelo de política robótica generalista | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Pesos abiertos en HuggingFace |
+| teokonkwo/robotics-vision-language-run178 | Repositorio de notas con un fichero safetensors | 33.088 | no disponible | MIT | Público en Hugging Face |
+| OpenVLA-7B | Modelo visión-lenguaje-acción | 7.000 M (aproximado) | no disponible | no disponible en la información proporcionada | Pesos abiertos en Hugging Face |
+| Octo | Modelo de política robótica generalista | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Pesos abiertos en Hugging Face |
 | RT-2 | Modelo visión-lenguaje-acción | no disponible | no disponible | no disponible (no se han liberado pesos) | API propietaria |
 
 No se dispone de resultados de benchmarks para este repositorio, por lo que no es posible comparar rendimiento con ninguna de las alternativas.
@@ -85,7 +85,7 @@ No se dispone de resultados de benchmarks para este repositorio, por lo que no e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/teokonkwo/robotics-vision-language-run178
+- Repositorio en Hugging Face: https://huggingface.co/teokonkwo/robotics-vision-language-run178
 - Nota principal: https://huggingface.co/teokonkwo/robotics-vision-language-run178/blob/main/notes.md
 - Documentación del repositorio: https://huggingface.co/teokonkwo/robotics-vision-language-run178/blob/main/README.md
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

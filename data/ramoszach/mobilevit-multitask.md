@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ramoszach/mobilevit-multitask` es un repositorio de codigo y configuracion que implementa una variante de la arquitectura MobileViT (red hibrida convolucional-transformer para vision) orientada a tareas multiples (multitask), publicada por el usuario ramoszach en HuggingFace. No es un modelo entrenado ni evaluado: segun la propia model card, el fichero `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests), y el repositorio declara explicitamente que omite cualquier afirmacion sobre benchmarks.
+`ramoszach/mobilevit-multitask` es un repositorio de codigo y configuracion que implementa una variante de la arquitectura MobileViT (red hibrida convolucional-transformer para vision) orientada a tareas multiples (multitask), publicada por el usuario ramoszach en Hugging Face. No es un modelo entrenado ni evaluado: segun la propia model card, el fichero `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests), y el repositorio declara explicitamente que omite cualquier afirmacion sobre benchmarks.
 
 El interes del repositorio es, por tanto, de tipo metodologico: proporciona un `train.py` ejecutable con un bloque `__main__` de ejemplo, un `config.json` con la configuracion de arquitectura generada y un `training_args.json` con la receta de experimento por defecto (optimizador SGD con programacion de warmup constante). La licencia es MIT, lo que permite reutilizacion, modificacion y uso comercial del codigo, siempre que se revise aparte la licencia de los datos con los que se entrene.
 
@@ -70,7 +70,7 @@ No disponible. La informacion proporcionada no incluye datos de otros modelos co
 - No ha sido auditado en robustez, equidad ni transferencia de dominio, segun la propia model card.
 - No hay resultados de benchmarks declarados ni verificables.
 - No hay informacion sobre el dataset de entrenamiento, el numero de tokens o la composicion de los datos, por lo que no es posible evaluar sesgos.
-- La carga mediante APIs genericas requiere un adaptador explicito; no es un modelo cargable directamente con clases estandar de HuggingFace Transformers.
+- La carga mediante APIs genericas requiere un adaptador explicito; no es un modelo cargable directamente con clases estandar de Hugging Face Transformers.
 - La licencia MIT permite uso comercial del codigo, pero el autor recomienda revisar por separado los terminos de los datos externos que se utilicen para entrenar.
 - Cualquier resultado obtenido a partir de un futuro checkpoint entrenado debe documentarse de forma separada a los valores por defecto del repositorio.
 - El repositorio tiene 0 descargas y 0 likes, y no cuenta con validacion por parte de la comunidad.
@@ -78,5 +78,5 @@ No disponible. La informacion proporcionada no incluye datos de otros modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ramoszach/mobilevit-multitask
+- Modelo en Hugging Face: https://huggingface.co/ramoszach/mobilevit-multitask
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion disponible.

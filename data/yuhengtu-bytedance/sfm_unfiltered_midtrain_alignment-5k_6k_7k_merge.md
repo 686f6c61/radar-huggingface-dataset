@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: los pesos en bfloat16 ocupan aproximadamente 13,7 GB (6,8B × 2 bytes). Con overhead de activaciones y memoria del runtime, se estima un consumo de entre 16 y 20 GB para inferencia en precisión completa. Con cuantización a 8 bits, podría reducirse a unos 8-10 GB, y a 4 bits a unos 4-5 GB, aunque no se proporcionan cuantizaciones oficiales.
 - GPU recomendadas: para inferencia en bfloat16, se necesita una GPU con al menos 16 GB de VRAM, como una NVIDIA A100 (40 GB), RTX 4090 (24 GB) o RTX 3090 (24 GB). Con cuantización, podría caber en GPUs de 8-12 GB, como RTX 3060 o RTX 3080.
 - Si cabe en consumer GPU: sí, en GPUs de gama alta (RTX 3090/4090) con cuantización o incluso sin ella, dependiendo del contexto.
-- Opciones de despliegue: al ser un modelo de transformers estándar, puede servirse con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF), Ollama (si se convierte) o directamente con la librería transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo de transformers estándar, puede servirse con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF), Ollama (si se convierte) o directamente con la librería transformers de Hugging Face.
 - Latencia y throughput: no se dispone de datos medidos. Para un modelo de 6,8B en una GPU A100, se puede esperar una latencia de decodificación de unos 20-40 ms por token y un throughput de 100-200 tokens/s, pero son estimaciones orientativas sin verificación.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo. Los tres modelos pertenecen a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-5k_6k_7k_merge
+- Repositorio Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-5k_6k_7k_merge
 - Modelo relacionado (merge 4k-5k-6k): https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg
 - Despliegue en FriendliAI (modelo relacionado): https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg
 - Suite de alineación de geodesic-research: https://huggingface.co/geodesic-research/sfm_unfiltered_midtrain_alignment_upsampled_instruct

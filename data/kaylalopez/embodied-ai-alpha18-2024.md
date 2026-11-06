@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`kaylalopez/embodied-ai-alpha18-2024` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre IA encarnada (embodied AI) publicado en HuggingFace bajo licencia MIT. La propia model card lo declara de forma explícita: el repositorio contiene un artefacto principal en Markdown (`paper_notes.md`) con el alcance de la pregunta de investigación, posibles factores de confusión, un esbozo de comparación con baselines emparejados, referencias bibliográficas y preguntas abiertas. El autor indica que no reclama mejoras de benchmark, ablaciones completadas, código liberado ni checkpoint entrenado.
+`kaylalopez/embodied-ai-alpha18-2024` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre IA encarnada (embodied AI) publicado en Hugging Face bajo licencia MIT. La propia model card lo declara de forma explícita: el repositorio contiene un artefacto principal en Markdown (`paper_notes.md`) con el alcance de la pregunta de investigación, posibles factores de confusión, un esbozo de comparación con baselines emparejados, referencias bibliográficas y preguntas abiertas. El autor indica que no reclama mejoras de benchmark, ablaciones completadas, código liberado ni checkpoint entrenado.
 
 El repositorio incluye un archivo en formato safetensors cuyos metadatos reportan 33.088 parámetros totales, una magnitud entre tres y cuatro órdenes inferior a la de cualquier transformer funcional para generación de texto. El tamaño total del repositorio es de 0,0 GB, no se declara pipeline de inferencia, no se listan idiomas soportados y no existe información sobre tokenizador, configuración de arquitectura o pesos utilizables. Todo apunta a un tensor auxiliar, un placeholder o un artefacto residual del flujo de trabajo de investigación, no a un modelo desplegable.
 
-La relevancia de esta ficha es, por tanto, documental y metodológica: sirve para ilustrar cómo se publican en HuggingFace artefactos de investigación que no constituyen modelos, y por qué conviene verificar la presencia de `config.json`, tokenizador y pesos coherentes antes de evaluar cualquier repositorio. Cualquier uso previsto de inferencia, fine-tuning o despliegue en producción queda descartado con la información disponible.
+La relevancia de esta ficha es, por tanto, documental y metodológica: sirve para ilustrar cómo se publican en Hugging Face artefactos de investigación que no constituyen modelos, y por qué conviene verificar la presencia de `config.json`, tokenizador y pesos coherentes antes de evaluar cualquier repositorio. Cualquier uso previsto de inferencia, fine-tuning o despliegue en producción queda descartado con la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -48,8 +48,8 @@ Los casos siguientes se refieren al artefacto tal como existe (notas de investig
 - Selección de benchmarks públicos adecuados a la tarea: la nota principal nombra benchmarks concretos que sirven como candidatos a verificar antes de fijar el conjunto de evaluación.
 - Auditoría de reproducibilidad: el repositorio insiste en registrar versiones de dataset, comandos, semillas, hardware y logs en crudo, y puede usarse como plantilla de checklist para otros proyectos.
 - Estudio de modos de fallo y preguntas abiertas: la lista de failure modes y open questions es aprovechable como agenda de trabajo para un grupo de doctorado o un equipo de I+D.
-- Material docente sobre publicación responsable en HuggingFace: el caso sirve para enseñar a distinguir un repositorio de notas de un modelo entrenado y a comprobar la presencia de config, tokenizador y pesos coherentes antes de evaluar.
-- Análisis de metadatos de HuggingFace: útil como ejemplo de repositorio con etiqueta `transformer` sin arquitectura subyacente, para ejercicios de curación automática de catálogos de modelos.
+- Material docente sobre publicación responsable en Hugging Face: el caso sirve para enseñar a distinguir un repositorio de notas de un modelo entrenado y a comprobar la presencia de config, tokenizador y pesos coherentes antes de evaluar.
+- Análisis de metadatos de Hugging Face: útil como ejemplo de repositorio con etiqueta `transformer` sin arquitectura subyacente, para ejercicios de curación automática de catálogos de modelos.
 
 ## Benchmarks y rendimiento
 
@@ -83,7 +83,7 @@ No disponible. No existe una categoría de comparación válida porque el reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kaylalopez/embodied-ai-alpha18-2024
+- Repositorio en Hugging Face: https://huggingface.co/kaylalopez/embodied-ai-alpha18-2024
 - Archivo principal de notas: `paper_notes.md` (incluido en el repositorio)
 - Documentación del repositorio: `README.md` (incluido en el repositorio)
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada

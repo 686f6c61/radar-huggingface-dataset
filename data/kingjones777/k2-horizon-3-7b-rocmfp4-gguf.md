@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kingjones777/K2-Horizon-3.7B-ROCmFP4-GGUF
+- Modelo en Hugging Face: https://huggingface.co/kingjones777/K2-Horizon-3.7B-ROCmFP4-GGUF
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-3.7B
 - GGUF del fabricante: https://huggingface.co/IFM/K2-Horizon-3.7B-GGUF
 - Repositorio ROCmFPX (rama k2-horizon): https://github.com/kingjones30/ROCmFPX

@@ -87,9 +87,9 @@ La comparación relevante es entre tokenizers, no entre modelos, ya que no hay p
 
 | Tokenizer | Vocabulario | Tokens/palabra (n=73) | Tokens desconocidos | Disponibilidad |
 |---|--:|--:|--:|---|
-| SabiYarn 3B | 131.072 | 1,71 | 0,0% | Repositorio HuggingFace, licencia Apache 2.0 |
+| SabiYarn 3B | 131.072 | 1,71 | 0,0% | Repositorio Hugging Face, licencia Apache 2.0 |
 | Serengeti | 250.004 | 1,74 | 2,6% | Tokenizer publicado; licencia no disponible en la información |
-| SabiYarn 0.5B | 65.536 | 2,23 | 0,0% | HuggingFace (AletheiaAING); licencia no disponible en la información |
+| SabiYarn 0.5B | 65.536 | 2,23 | 0,0% | Hugging Face (AletheiaAING); licencia no disponible en la información |
 | NLLB-200 | 256.204 | 1,87 | 0,8% | Tokenizer publicado; licencia no disponible en la información |
 | AfriTeVa v2 | 150.100 | 2,05 | 5,3% | Tokenizer publicado; licencia no disponible en la información |
 | AfroXLMR | 250.002 | 2,31 | 1,5% | Tokenizer publicado; licencia no disponible en la información |

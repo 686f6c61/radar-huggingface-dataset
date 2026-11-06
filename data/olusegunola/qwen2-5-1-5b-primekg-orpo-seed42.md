@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `olusegunola/qwen2.5-1.5b-primekg-orpo-seed42` es un ajuste fino (fine-tuning) publicado en HuggingFace por el usuario olusegunola. El identificador del repositorio indica que parte de la base Qwen2.5-1.5B y que se ha entrenado con ORPO (Odds Ratio Preference Optimization) sobre el grafo de conocimiento biomédico PrimeKG, con semilla 42. Se trata, por tanto, de un modelo pequeño orientado presumiblemente al dominio biomédico, aunque ni la model card ni los metadatos del repositorio confirman estos extremos de forma explícita.
+El modelo `olusegunola/qwen2.5-1.5b-primekg-orpo-seed42` es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario olusegunola. El identificador del repositorio indica que parte de la base Qwen2.5-1.5B y que se ha entrenado con ORPO (Odds Ratio Preference Optimization) sobre el grafo de conocimiento biomédico PrimeKG, con semilla 42. Se trata, por tanto, de un modelo pequeño orientado presumiblemente al dominio biomédico, aunque ni la model card ni los metadatos del repositorio confirman estos extremos de forma explícita.
 
-La relevancia de este tipo de publicaciones radica en la tendencia a construir asistentes especializados de bajo coste computacional: un modelo de 1.500 millones de parámetros puede desplegarse en hardware de consumo y ajustarse con técnicas de alineación eficientes como ORPO, que combina preferencia y ajuste supervisado en una sola etapa. Sin embargo, el repositorio presenta un tamaño de 0,0 GB, cero descargas y cero likes, y su model card es la plantilla autogenerada por HuggingFace, sin información rellenada por el autor.
+La relevancia de este tipo de publicaciones radica en la tendencia a construir asistentes especializados de bajo coste computacional: un modelo de 1.500 millones de parámetros puede desplegarse en hardware de consumo y ajustarse con técnicas de alineación eficientes como ORPO, que combina preferencia y ajuste supervisado en una sola etapa. Sin embargo, el repositorio presenta un tamaño de 0,0 GB, cero descargas y cero likes, y su model card es la plantilla autogenerada por Hugging Face, sin información rellenada por el autor.
 
 Conviene señalar que los resultados de la búsqueda web asociados no guardan relación con el modelo (corresponden a contenidos devocionales en rumano), por lo que no aportan ningún dato técnico aprovechable. En consecuencia, gran parte de las especificaciones se marcan como "no disponible" y las inferencias derivadas del nombre del repositorio se señalan como tales.
 
@@ -23,7 +23,7 @@ Conviene señalar que los resultados de la búsqueda web asociados no guardan re
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada por el autor sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla estandar autogenerada por HuggingFace y todos los campos tecnicos aparecen como "[More Information Needed]". El unico indicio disponible es el propio identificador del repositorio, que combina tres elementos: `qwen2.5-1.5b` (modelo base), `primekg` (dataset o grafo de conocimiento de referencia) y `orpo` (metodo de alineacion) con la semilla `seed42`.
+No hay informacion publicada por el autor sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla estandar autogenerada por Hugging Face y todos los campos tecnicos aparecen como "[More Information Needed]". El unico indicio disponible es el propio identificador del repositorio, que combina tres elementos: `qwen2.5-1.5b` (modelo base), `primekg` (dataset o grafo de conocimiento de referencia) y `orpo` (metodo de alineacion) con la semilla `seed42`.
 
 Si se atiende a esa nomenclatura, cabe inferir un ajuste fino del modelo Qwen2.5-1.5B mediante ORPO, una tecnica que fusiona el ajuste supervisado y la optimizacion por preferencias en un unico objetivo, eliminando la necesidad de una etapa separada de RLHF o DPO. El vinculo con PrimeKG sugeriria un entrenamiento orientado a conocimiento biomédico (farmacos, enfermedades, genes, relaciones clinicas), pero se trata de una hipotesis no verificada: no se especifican tokens de entrenamiento, composicion del dataset, hiperparametros ni regimen de precision.
 
@@ -71,7 +71,7 @@ Las siguientes estimaciones son orientativas y se basan en el tamano de 1,5B de 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| olusegunola/qwen2.5-1.5b-primekg-orpo-seed42 | no disponible (nombre indica 1.5B) | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
+| olusegunola/qwen2.5-1.5b-primekg-orpo-seed42 | no disponible (nombre indica 1.5B) | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
 | Qwen2.5-1.5B (base) | 1,5B | 32.768 tokens (dato publico de la familia Qwen2.5) | publicados por el autor del modelo base | Apache 2.0 (modelo base) | ampliamente disponible |
 | Otros ajustes ORPO de 1-2B | variable | variable | no disponible | variable | variable |
 
@@ -90,7 +90,7 @@ No se dispone de datos suficientes para una comparacion rigurosa de rendimiento,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-orpo-seed42
+- Modelo en Hugging Face: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-orpo-seed42
 - Paper de ORPO: no disponible en la informacion proporcionada.
 - Paper de PrimeKG: no disponible en la informacion proporcionada.
 - Repositorio del modelo base Qwen2.5: no disponible en la informacion proporcionada.

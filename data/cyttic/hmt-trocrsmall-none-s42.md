@@ -78,6 +78,6 @@ No disponible. La información proporcionada no incluye otros checkpoints del es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-trocrsmall-none-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-trocrsmall-none-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Perfil del autor: https://huggingface.co/cyttic

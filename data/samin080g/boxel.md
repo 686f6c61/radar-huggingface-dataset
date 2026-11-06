@@ -4,7 +4,7 @@
 
 ## Resumen
 
-boxel es un repositorio de modelo publicado en HuggingFace por el usuario samin080g. La informacion disponible se limita a los metadatos del repositorio: identificador, autor, licencia y fecha de creacion. La model card no contiene descripcion funcional, ficha tecnica, ejemplos de uso ni referencias a documentacion externa; el unico contenido del README es el bloque de metadatos YAML con la licencia.
+boxel es un repositorio de modelo publicado en Hugging Face por el usuario samin080g. La informacion disponible se limita a los metadatos del repositorio: identificador, autor, licencia y fecha de creacion. La model card no contiene descripcion funcional, ficha tecnica, ejemplos de uso ni referencias a documentacion externa; el unico contenido del README es el bloque de metadatos YAML con la licencia.
 
 En el momento de la consulta el repositorio registra cero descargas y cero valoraciones, y la fecha de creacion coincide con la de ultima actualizacion (5 de octubre de 2026), lo que apunta a un unico commit sin mantenimiento posterior. No es posible determinar la modalidad del modelo (texto, imagen, audio, multimodal), su arquitectura, su tamano ni su contexto.
 
@@ -81,6 +81,6 @@ No disponible. Sin conocer la modalidad, el tamano ni el rendimiento del modelo,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/samin080g/boxel
+- Hugging Face: https://huggingface.co/samin080g/boxel
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-yun-persona-v1.3 es un modelo de generación de texto publicado en HuggingFace por el usuario nobodZ00000. Se trata de un ajuste fino (fine-tuning) de un modelo de la familia Qwen3, según indican las etiquetas del repositorio, y está orientado a tareas conversacionales. El modelo se distribuye en formato safetensors con precisión de 16 bits (FP16) y cuenta con aproximadamente 596 millones de parámetros totales, lo que lo sitúa en la gama de modelos pequeños, aptos para despliegue en hardware de consumo.
+yun-persona-v1.3 es un modelo de generación de texto publicado en Hugging Face por el usuario nobodZ00000. Se trata de un ajuste fino (fine-tuning) de un modelo de la familia Qwen3, según indican las etiquetas del repositorio, y está orientado a tareas conversacionales. El modelo se distribuye en formato safetensors con precisión de 16 bits (FP16) y cuenta con aproximadamente 596 millones de parámetros totales, lo que lo sitúa en la gama de modelos pequeños, aptos para despliegue en hardware de consumo.
 
-El entrenamiento se realizó con la librería Unsloth junto con TRL de HuggingFace, una combinación habitual para fine-tuning eficiente de modelos mediante técnicas de bajo rango. La model card es extremadamente escueta: no documenta el dataset de entrenamiento, el número de tokens, ni los hiperparámetros utilizados. Tampoco se especifican resultados de benchmarks ni detalles sobre la arquitectura interna más allá de la referencia a Qwen3.
+El entrenamiento se realizó con la librería Unsloth junto con TRL de Hugging Face, una combinación habitual para fine-tuning eficiente de modelos mediante técnicas de bajo rango. La model card es extremadamente escueta: no documenta el dataset de entrenamiento, el número de tokens, ni los hiperparámetros utilizados. Tampoco se especifican resultados de benchmarks ni detalles sobre la arquitectura interna más allá de la referencia a Qwen3.
 
 La relevancia de este modelo es limitada en el momento de su publicación: registra cero descargas y cero likes, y la información disponible es mínima. Su principal interés radica en ser un ejemplo de fine-tuning de un modelo Qwen3 pequeño con licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales, aunque la falta de documentación sobre el proceso de entrenamiento limita seriamente su evaluación rigurosa.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es limitada en el momento de su publicación: regis
 
 El modelo es un ajuste fino de un modelo base de la familia Qwen3, según las etiquetas del repositorio (`qwen3`). No se dispone de información detallada sobre la arquitectura interna: no se especifica si emplea atención lineal, decodificación especulativa ni ninguna otra innovación técnica. El tamaño de 596 millones de parámetros sugiere un transformer denso de pequeña escala, pero no se confirma en la documentación.
 
-El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, lo que indica el uso de técnicas de fine-tuning eficiente (probablemente LoRA o QLoRA, aunque no se confirma). No se documenta el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o similares. La model card no incluye ninguna información sobre el corpus utilizado ni sobre el proceso de alineación.
+El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, lo que indica el uso de técnicas de fine-tuning eficiente (probablemente LoRA o QLoRA, aunque no se confirma). No se documenta el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o similares. La model card no incluye ninguna información sobre el corpus utilizado ni sobre el proceso de alineación.
 
 ## Capacidades
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yun-persona-v1.3 | ~596 M | No disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen3 (variantes pequeñas de la familia) | Varía según variante | No disponible en esta ficha | Apache 2.0 (según familia) | HuggingFace |
-| Fine-tunings comunitarios de Qwen3 con Unsloth | Varía | No disponible | Según autor | HuggingFace |
+| yun-persona-v1.3 | ~596 M | No disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen3 (variantes pequeñas de la familia) | Varía según variante | No disponible en esta ficha | Apache 2.0 (según familia) | Hugging Face |
+| Fine-tunings comunitarios de Qwen3 con Unsloth | Varía | No disponible | Según autor | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este modelo, por lo que la comparativa se limita a parámetros, licencia y disponibilidad. No se han identificado alternativas directamente comparables con información verificable en la documentación proporcionada.
 
@@ -83,5 +83,5 @@ No se dispone de datos de rendimiento comparativo para este modelo, por lo que l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nobodZ00000/yun-persona-v1.3
+- Hugging Face: https://huggingface.co/nobodZ00000/yun-persona-v1.3
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth

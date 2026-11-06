@@ -4,7 +4,7 @@
 
 El modelo `swadeshb/qtr-opsd-sampled-qtr-projected-rtg-query-g0.99-d0.01-seed42` es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3-1.7B, desarrollado por el usuario swadeshb mediante el framework TRL (Transformer Reinforcement Learning). Se trata de un experimento de investigación que aplica una variante propuesta de optimización de política denominada Single-Rollout QTR-OPSD, orientada a mejorar el razonamiento o la calidad de las respuestas en tareas de generación de texto. El repositorio tiene un tamaño de 0,3 GB y contiene pesos en formato safetensors.
 
-La relevancia de este modelo radica en que explora un método de entrenamiento por refuerzo novedoso (QTR-OPSD) sobre una arquitectura moderna y eficiente como Qwen3-1.7B. Sin embargo, al ser un artefacto de investigación sin documentación adicional, su utilidad práctica es limitada y no se han publicado evaluaciones independientes. La ficha técnica que sigue se basa exclusivamente en la información disponible en HuggingFace y en la model card del autor.
+La relevancia de este modelo radica en que explora un método de entrenamiento por refuerzo novedoso (QTR-OPSD) sobre una arquitectura moderna y eficiente como Qwen3-1.7B. Sin embargo, al ser un artefacto de investigación sin documentación adicional, su utilidad práctica es limitada y no se han publicado evaluaciones independientes. La ficha técnica que sigue se basa exclusivamente en la información disponible en Hugging Face y en la model card del autor.
 
 ## Especificaciones tecnicas
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: para inferencia en fp16, un modelo de 1.7B requiere aproximadamente 3,5 GB de VRAM. Con cuantización a 8 bits, unos 2 GB; a 4 bits, alrededor de 1,2 GB. Estas cifras son estimaciones genéricas basadas en el tamaño del modelo, no en mediciones específicas.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050) puede ejecutar el modelo en fp16. Para mayor velocidad, se recomienda una RTX 3060 o superior.
 - Compatibilidad con GPU de consumo: sí, es viable en GPUs de gama media y baja.
-- Opciones de despliegue: al usar safetensors y ser compatible con Transformers, se puede servir con vLLM, TGI, o mediante pipelines de HuggingFace. También es posible convertirlo a GGUF para usarlo con llama.cpp u Ollama, aunque no se ha publicado dicha conversión.
+- Opciones de despliegue: al usar safetensors y ser compatible con Transformers, se puede servir con vLLM, TGI, o mediante pipelines de Hugging Face. También es posible convertirlo a GGUF para usarlo con llama.cpp u Ollama, aunque no se ha publicado dicha conversión.
 - Latencia y throughput: no se han proporcionado datos. En una GPU moderna (por ejemplo, RTX 4090), se espera una latencia de decodificación de decenas de milisegundos por token, pero no hay mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -61,9 +61,9 @@ No se dispone de comparativas publicadas con otros modelos. La única referencia
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qtr-opsd-sampled-qtr-projected-rtg-query-g0.99-d0.01-seed42 | 1.7B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3-1.7B | 1.7B | 32k (según documentación oficial de Qwen) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-1.5B | 1.5B | 32k | Apache 2.0 | HuggingFace |
+| qtr-opsd-sampled-qtr-projected-rtg-query-g0.99-d0.01-seed42 | 1.7B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3-1.7B | 1.7B | 32k (según documentación oficial de Qwen) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-1.5B | 1.5B | 32k | Apache 2.0 | Hugging Face |
 
 Nota: los datos de contexto y licencia del modelo base provienen del conocimiento público de Qwen, no de la informacion de esta ficha.
 
@@ -78,7 +78,7 @@ Nota: los datos de contexto y licencia del modelo base provienen del conocimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swadeshb/qtr-opsd-sampled-qtr-projected-rtg-query-g0.99-d0.01-seed42
+- Modelo en Hugging Face: https://huggingface.co/swadeshb/qtr-opsd-sampled-qtr-projected-rtg-query-g0.99-d0.01-seed42
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/swadeshb-individual/qtr-opsd/runs/2y6s4o1p
 - Modelo base Qwen/Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Framework TRL: https://github.com/huggingface/trl

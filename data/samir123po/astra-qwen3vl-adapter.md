@@ -4,7 +4,7 @@
 
 Astra-qwen3vl-adapter es un adaptador LoRA publicado por el usuario samir123po sobre el modelo multimodal Qwen/Qwen3-VL-4B-Instruct. Se distribuye como repositorio PEFT (libreria `peft` 0.20.0) de aproximadamente 0,1 GB, lo que es coherente con un conjunto de pesos de adaptador de bajo rango y no con un modelo completo. El repositorio esta etiquetado con `text-generation`, `conversational`, `lora`, `transformers` y `safetensors`, y no incluye licencia, idiomas declarados ni documentacion tecnica util.
 
-El problema que resuelve es el habitual de un adaptador: permitir especializar un VLM de 4B parametros en un dominio concreto sin reentrenar el modelo base y con un coste de almacenamiento y de entrenamiento muy reducido. Su relevancia practica es limitada en el momento de redactar esta ficha, ya que acumula 0 descargas y 0 "likes", no declara que datos de entrenamiento se han usado ni para que tarea fue ajustado, y su model card es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]".
+El problema que resuelve es el habitual de un adaptador: permitir especializar un VLM de 4B parametros en un dominio concreto sin reentrenar el modelo base y con un coste de almacenamiento y de entrenamiento muy reducido. Su relevancia practica es limitada en el momento de redactar esta ficha, ya que acumula 0 descargas y 0 "likes", no declara que datos de entrenamiento se han usado ni para que tarea fue ajustado, y su model card es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]".
 
 Conviene subrayar que toda la informacion tecnica disponible se refiere al artefacto de adaptacion, no a un modelo autonomo: para ejecutarlo es imprescindible descargar por separado Qwen/Qwen3-VL-4B-Instruct. Cualquier dato sobre arquitectura, contexto, idiomas o rendimiento que no figure aqui se marca como no disponible y no debe inferirse de la ficha.
 
@@ -32,7 +32,7 @@ Conviene subrayar que toda la informacion tecnica disponible se refiere al artef
 
 El unico dato estructural cierto es que se trata de un adaptador LoRA (Low-Rank Adaptation) cargado mediante PEFT sobre el modelo Qwen/Qwen3-VL-4B-Instruct. LoRA congela los pesos del modelo base e inserta matrices de bajo rango en determinadas capas; como el repositorio ocupa 0,1 GB, el numero de parametros entrenables es necesariamente pequeno en comparacion con los 4B del modelo base. No se publica el rango (r), el factor alpha, la tasa de aprendizaje, el dropout, los modulos objetivo ni el numero de pasos de entrenamiento.
 
-Tampoco hay informacion sobre los datos de entrenamiento: no se indica el dataset, su tamano, su composicion (si incluye pares imagen-texto, instrucciones multimodales o solo texto), ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT supervisado. El nombre "astra" en el identificador no viene acompanado de ninguna explicacion. La model card incluye unicamente el esqueleto por defecto de HuggingFace, con referencias genericas al calculador de impacto de Lacoste et al. (arXiv:1910.09700).
+Tampoco hay informacion sobre los datos de entrenamiento: no se indica el dataset, su tamano, su composicion (si incluye pares imagen-texto, instrucciones multimodales o solo texto), ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT supervisado. El nombre "astra" en el identificador no viene acompanado de ninguna explicacion. La model card incluye unicamente el esqueleto por defecto de Hugging Face, con referencias genericas al calculador de impacto de Lacoste et al. (arXiv:1910.09700).
 
 En consecuencia, no es posible evaluar innovaciones tecnicas del adaptador (por ejemplo, si usa DoRA, LoRA+ o inicializaciones especificas), ni verificar si el ajuste preserva las capacidades de vision y lenguaje del modelo base o si las degrada por sobreajuste. Cualquier afirmacion al respecto seria especulacion.
 
@@ -82,9 +82,9 @@ Se recomienda validar el consumo real midiendo con el modelo base cargado y el a
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| samir123po/astra-qwen3vl-adapter | Adaptador LoRA sobre base de 4B | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-4B-Instruct (modelo base) | 4B | No disponible en esta ficha | No disponible en esta ficha | La del repositorio de Qwen | HuggingFace |
-| Otros adaptadores LoRA comunitarios sobre Qwen3-VL | Depende del adaptador | Heredado del base | No disponible | Variable, a menudo sin declarar | HuggingFace |
+| samir123po/astra-qwen3vl-adapter | Adaptador LoRA sobre base de 4B | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-4B-Instruct (modelo base) | 4B | No disponible en esta ficha | No disponible en esta ficha | La del repositorio de Qwen | Hugging Face |
+| Otros adaptadores LoRA comunitarios sobre Qwen3-VL | Depende del adaptador | Heredado del base | No disponible | Variable, a menudo sin declarar | Hugging Face |
 
 No se dispone de datos suficientes para comparar rendimiento con alternativas equivalentes de la misma categoria (por ejemplo, otros VLM de 4B ajustados para tareas de documento o de industria). Cualquier comparacion numerica seria inventada.
 

@@ -76,7 +76,7 @@ Ablaciones destacadas ya completadas: AB-T1 (sin entrenar vs entrenado) mejora R
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | selectstream-lite-ego4d | Backbone 7B congelado + componentes entrenables | No disponible | Video-qa y NLQ en streaming sobre Ego4D | other | Pesos de componentes en HF; backbone aparte |
-| Qwen2.5-VL-7B-Instruct | 7B | No disponible en esta ficha | Visión-lenguaje general | No disponible en esta ficha | HuggingFace (Qwen) |
+| Qwen2.5-VL-7B-Instruct | 7B | No disponible en esta ficha | Visión-lenguaje general | No disponible en esta ficha | Hugging Face (Qwen) |
 | Alternativas de memoria de vídeo sobre Ego4D | No disponible | No disponible | Video-qa / NLQ | No disponible | No disponible |
 
 No se dispone de datos de benchmarks comparables con otros sistemas de memoria de vídeo en la información proporcionada.
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks comparables con otros sistemas de memoria d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lma-project/selectstream-lite-ego4d
+- Repositorio Hugging Face: https://huggingface.co/lma-project/selectstream-lite-ego4d
 - Backbone base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Caché de características: https://huggingface.co/datasets/amritha27/selectstream-lite-ego4d-features
 - Código: rama `ego4d-pipeline` del repositorio selectstream-lite (URL no proporcionada en la información disponible)

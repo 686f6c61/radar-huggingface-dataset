@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Toronto-Mans-9B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Toronto-Mans-9B-GGUF
 - Modelo base: https://huggingface.co/devon7y/Toronto-Mans-9B
 - Dataset de ajuste: https://huggingface.co/datasets/devon7y/toronto-slang-lexicon
 - Licencia referenciada por el autor: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE

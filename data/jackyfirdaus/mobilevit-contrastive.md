@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jackyfirdaus/mobilevit-contrastive es un repositorio de HuggingFace que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura MobileViT orientada a aprendizaje contrastivo (contrastive learning). El autor lo publica explicitamente como un artefacto de configuracion "tiny" destinado a revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no como un modelo preentrenado listo para produccion. El unico checkpoint incluido, model.safetensors, es una inicializacion valida, no un modelo entrenado ni evaluado.
+Jackyfirdaus/mobilevit-contrastive es un repositorio de Hugging Face que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura MobileViT orientada a aprendizaje contrastivo (contrastive learning). El autor lo publica explicitamente como un artefacto de configuracion "tiny" destinado a revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no como un modelo preentrenado listo para produccion. El unico checkpoint incluido, model.safetensors, es una inicializacion valida, no un modelo entrenado ni evaluado.
 
 La relevancia de este repositorio es, por tanto, instrumental y no de rendimiento. MobileViT, la familia de arquitecturas en la que se inspira, combina las eficiencias y los sesgos inductivos de las CNN con el modelado de contexto global de los transformers para dispositivos moviles; este repo traslada esa idea a un esqueleto minimo con atencion flash, fusion por concatenacion mas MLP, activacion swish y normalizacion scalenorm. Con solo 16.576 parametros registrados en los metadatos de safetensors y un tamano de repositorio de 0.0 GB, se trata de un banco de pruebas, no de un modelo utilizable directamente.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jackyfirdaus/mobilevit-contrastive | 16.576 (metadatos safetensors) | no aplica | no (solo inicializacion) | apache-2.0 | HuggingFace, 0 descargas |
-| jokolubis/mobilevit-contrastive | no disponible (repo de 142 kB) | no aplica | no declarado | MIT | HuggingFace |
+| Jackyfirdaus/mobilevit-contrastive | 16.576 (metadatos safetensors) | no aplica | no (solo inicializacion) | apache-2.0 | Hugging Face, 0 descargas |
+| jokolubis/mobilevit-contrastive | no disponible (repo de 142 kB) | no aplica | no declarado | MIT | Hugging Face |
 | MobileViT (paper original, arXiv:2110.02178) | no disponible en la informacion proporcionada | no aplica | si, con resultados publicados en el paper | no disponible | Paper y documentacion |
-| MobileViT en transformers (HuggingFace) | no disponible en la informacion proporcionada | no aplica | pesos oficiales de la libreria | no disponible | Documentacion y libreria |
+| MobileViT en transformers (Hugging Face) | no disponible en la informacion proporcionada | no aplica | pesos oficiales de la libreria | no disponible | Documentacion y libreria |
 
 Nota: los valores de parametros de las alternativas no se incluyen porque no aparecen en la informacion proporcionada; se evita cualquier cifra no verificada. La comparacion relevante aqui es de naturaleza del artefacto: los dos repositorios "mobilevit-contrastive" son esqueletos de codigo con checkpoints de inicializacion, mientras que el paper y la implementacion de transformers son referencias con resultados publicados.
 
@@ -91,7 +91,7 @@ Nota: los valores de parametros de las alternativas no se incluyen porque no apa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jackyfirdaus/mobilevit-contrastive
+- Modelo en Hugging Face: https://huggingface.co/Jackyfirdaus/mobilevit-contrastive
 - Repositorio similar (jokolubis): https://huggingface.co/jokolubis/mobilevit-contrastive
 - Archivos del repositorio similar: https://huggingface.co/jokolubis/mobilevit-contrastive/tree/main
 - Paper de MobileViT: https://arxiv.org/html/2110.02178v2

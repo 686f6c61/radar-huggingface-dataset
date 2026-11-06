@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Video model mid90 es un conjunto de checkpoints base (pre-entrenados) de un modelo de lenguaje de 3,3B parámetros totales con arquitectura Mixture of Experts (MoE) y 0,87B parámetros activos, publicado por la usuaria AliceYin en HuggingFace. A pesar del nombre, el artefacto distribuido es un modelo de lenguaje, no un modelo de vídeo: los pesos provienen de un "video model run" entrenado con un esquema DiLoCo de dos nodos sobre la rama `take6-two-node-longctx` del repositorio de entrenamiento del autor. El checkpoint destacado es `r76`, que continúa el entrenamiento desde la ronda 51 (60,57B tokens) hasta los 98,0B tokens vistos.
+Video model mid90 es un conjunto de checkpoints base (pre-entrenados) de un modelo de lenguaje de 3,3B parámetros totales con arquitectura Mixture of Experts (MoE) y 0,87B parámetros activos, publicado por la usuaria AliceYin en Hugging Face. A pesar del nombre, el artefacto distribuido es un modelo de lenguaje, no un modelo de vídeo: los pesos provienen de un "video model run" entrenado con un esquema DiLoCo de dos nodos sobre la rama `take6-two-node-longctx` del repositorio de entrenamiento del autor. El checkpoint destacado es `r76`, que continúa el entrenamiento desde la ronda 51 (60,57B tokens) hasta los 98,0B tokens vistos.
 
 El modelo no ha pasado por ajuste fino supervisado ni por alineación (RLHF/DPO); se trata de pesos base en fp32 pensados para servir como punto de partida de experimentos posteriores. Su relevancia es limitada y muy específica: interesa a quien quiera reproducir el pipeline DiLoCo del autor, estudiar la evolución de las métricas entre rondas de entrenamiento o continuar el pre-entrenamiento con su propio código, dado que la arquitectura solo está definida en el fichero `code/video_model_train.py` del repositorio de entrenamiento y no en formato estándar (no hay safetensors ni GGUF).
 
@@ -104,7 +104,7 @@ La comparación es orientativa: los tres modelos alternativos están alineados c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AliceYin/video-model-mid90
+- Hugging Face: https://huggingface.co/AliceYin/video-model-mid90
 - Repositorio de entrenamiento (rama `take6-two-node-longctx`, fichero `code/video_model_train.py`): no disponible como URL en la información proporcionada
 - Paper de DiLoCo: no disponible en la información proporcionada
 - NVIDIA Data Agreement for Model Training: no disponible como URL en la información proporcionada

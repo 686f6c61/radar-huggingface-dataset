@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`tvluong/deepseek-coder-1.3b-codealpaca-qlora-thien` es un ajuste fino (fine-tune) derivado de `deepseek-coder-1.3b`, publicado por el usuario `tvluong` en HuggingFace. Por la nomenclatura del repositorio, se trata de un entrenamiento con QLoRA (cuantizacion de 4 bits del modelo base mas adaptadores de bajo rango) sobre el dataset de instrucciones CodeAlpaca. El repositorio declara la libreria `transformers`, el formato `safetensors` y no presenta pipeline, licencia, idiomas ni datos de evaluacion.
+`tvluong/deepseek-coder-1.3b-codealpaca-qlora-thien` es un ajuste fino (fine-tune) derivado de `deepseek-coder-1.3b`, publicado por el usuario `tvluong` en Hugging Face. Por la nomenclatura del repositorio, se trata de un entrenamiento con QLoRA (cuantizacion de 4 bits del modelo base mas adaptadores de bajo rango) sobre el dataset de instrucciones CodeAlpaca. El repositorio declara la libreria `transformers`, el formato `safetensors` y no presenta pipeline, licencia, idiomas ni datos de evaluacion.
 
-La relevancia de esta ficha es fundamentalmente metodologica: el modelo es un ejemplo tipico de checkpoint derivado de bajo coste computacional, util para experimentar con ajuste fino de modelos de codigo en una unica GPU de consumo. No obstante, la model card es la plantilla autogenerada de HuggingFace, con todos los campos marcados como `[More Information Needed]`, y el tamano del repositorio es de 0,0 GB, lo que sugiere que el contenido publicado puede limitarse a configuracion y/o adaptadores y no a pesos completos. Cualquier evaluacion seria debe verificar antes el contenido real del repositorio.
+La relevancia de esta ficha es fundamentalmente metodologica: el modelo es un ejemplo tipico de checkpoint derivado de bajo coste computacional, util para experimentar con ajuste fino de modelos de codigo en una unica GPU de consumo. No obstante, la model card es la plantilla autogenerada de Hugging Face, con todos los campos marcados como `[More Information Needed]`, y el tamano del repositorio es de 0,0 GB, lo que sugiere que el contenido publicado puede limitarse a configuracion y/o adaptadores y no a pesos completos. Cualquier evaluacion seria debe verificar antes el contenido real del repositorio.
 
 El modelo base, DeepSeek Coder 1.3B, es un transformer decoder-only de aproximadamente 1.300 millones de parametros, entrenado from scratch sobre 2 billones de tokens con contexto de 16.384 tokens. Esa es la arquitectura de partida, pero las caracteristicas finales de este derivado concreto (idiomas, contexto efectivo, calidad tras el ajuste con CodeAlpaca) no estan documentadas en la informacion disponible.
 
@@ -20,7 +20,7 @@ El modelo base, DeepSeek Coder 1.3B, es un transformer decoder-only de aproximad
 | Idiomas soportados | no disponible |
 | Licencia | no disponible en el repositorio; el modelo base usa la DeepSeek Model License, pendiente de verificar para este derivado |
 | Formato de pesos | safetensors (etiqueta del repositorio), libreria transformers |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 | Fecha de publicacion | 22 de septiembre de 2026 (segun metadatos del repositorio) |
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - 4 bits (NF4 o GGUF Q4): en torno a 0,8-1 GB de pesos, con aproximadamente 1,5 GB de VRAM efectiva.
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente en teoria (GTX 1650 4 GB, RTX 3050 6 GB, RTX 3060 12 GB, RTX 4090). En el extremo alto, A100 y H100 estan sobredimensionadas para este tamano y solo tendrian sentido para servir lotes grandes.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU modernas de consumo, e incluso en CPU con cuantizacion de 4 bits mediante llama.cpp.
-- Opciones de despliegue: transformers (libreria declarada), vLLM, TGI, llama.cpp u Ollama si se convierte a GGUF (no se publican pesos GGUF), y servidores compatibles con la API de endpoints de HuggingFace (etiqueta `endpoints_compatible`).
+- Opciones de despliegue: transformers (libreria declarada), vLLM, TGI, llama.cpp u Ollama si se convierte a GGUF (no se publican pesos GGUF), y servidores compatibles con la API de endpoints de Hugging Face (etiqueta `endpoints_compatible`).
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia para este checkpoint.
 - Caveat de despliegue: con un repositorio de 0,0 GB, es posible que solo se hayan publicado archivos de configuracion o adaptadores LoRA y no los pesos completos; en ese caso seria necesario cargar el modelo base `deepseek-coder-1.3b` y aplicar los adaptadores.
 
@@ -97,7 +97,7 @@ La comparacion relevante no es tanto de rendimiento, ya que este derivado carece
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tvluong/deepseek-coder-1.3b-codealpaca-qlora-thien
+- Modelo en Hugging Face: https://huggingface.co/tvluong/deepseek-coder-1.3b-codealpaca-qlora-thien
 - Modelo base DeepSeek Coder 1.3B: https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct
 - Repositorio del modelo base y familia DeepSeek Coder: https://github.com/deepseek-ai/DeepSeek-Coder
 - Paper de DeepSeek Coder: https://arxiv.org/abs/2401.14196

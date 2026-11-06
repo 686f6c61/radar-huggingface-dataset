@@ -95,7 +95,7 @@ La comparación de rendimiento cuantitativo no es posible porque no existen eval
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nabin2004/qwen-Manimator-1-grpo-merged
+- Modelo en Hugging Face: https://huggingface.co/nabin2004/qwen-Manimator-1-grpo-merged
 - Adaptador LoRA de origen: https://huggingface.co/nabin2004/qwen-Manimator-1-grpo-clean
 - Repositorio GGUF: https://huggingface.co/nabin2004/qwen-Manimator-1-grpo-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B

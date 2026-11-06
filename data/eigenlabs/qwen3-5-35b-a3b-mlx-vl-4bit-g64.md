@@ -85,7 +85,7 @@ La comparativa se limita a conversiones MLX del mismo modelo base; no se dispone
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EigenLabs/Qwen3.5-35B-A3B-MLX-VL-4bit-g64
+- Hugging Face: https://huggingface.co/EigenLabs/Qwen3.5-35B-A3B-MLX-VL-4bit-g64
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Variante con router8: https://huggingface.co/EigenLabs/Qwen3.6-35B-A3B-MLX-VL-4bit-g64-router8
 - Guía MLX en Apple Silicon (2026): https://willitrunai.com/blog/qwen-3-5-mlx-apple-silicon-guide

@@ -6,7 +6,7 @@ Este repositorio contiene versiones cuantizadas en formato GGUF del modelo AGI-E
 
 La relevancia practica de esta publicacion es que permite ejecutar un modelo juez de ~33B en hardware de consumo o en servidores modestos, gracias a las 11 cuantizaciones disponibles (desde Q2_K de 12,4 GB hasta Q8_0 de 34,9 GB). Los modelos juez se emplean cada vez mas como componente de pipelines de evaluacion automatica de LLM, filtrado de datos sinteticos y anotacion de preferencias, tareas en las que un modelo de este tamano suele ofrecer un equilibrio razonable entre coste de inferencia y calidad de juicio.
 
-Es importante senalar que no hay informacion publicada en el material proporcionado sobre la arquitectura interna, la longitud de contexto, el dataset de entrenamiento o los resultados de benchmarks del modelo base. Todas las afirmaciones de esta ficha se limitan a lo indicado en la model card del repo GGUF, en los metadatos de HuggingFace y en el nombre y origen del modelo.
+Es importante senalar que no hay informacion publicada en el material proporcionado sobre la arquitectura interna, la longitud de contexto, el dataset de entrenamiento o los resultados de benchmarks del modelo base. Todas las afirmaciones de esta ficha se limitan a lo indicado en la model card del repo GGUF, en los metadatos de Hugging Face y en el nombre y origen del modelo.
 
 ## Especificaciones tecnicas
 
@@ -25,13 +25,13 @@ Otros datos de interes: el repositorio ocupa 224,0 GB en total (suma de todas la
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo en el material proporcionado. La model card del repositorio GGUF se limita a indicar los parametros de la conversion (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`, `vocab_type` vacio), la lista de cuantizaciones generadas y el modelo de origen (`AGI-Eval-Official/AGI-Eval-OA-Judge`). El modelo base se distribuye etiquetado con la libreria `transformers`, lo que implica pesos en formato safetensors compatibles con el ecosistema HuggingFace.
+No hay informacion disponible sobre la arquitectura del modelo en el material proporcionado. La model card del repositorio GGUF se limita a indicar los parametros de la conversion (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`, `vocab_type` vacio), la lista de cuantizaciones generadas y el modelo de origen (`AGI-Eval-Official/AGI-Eval-OA-Judge`). El modelo base se distribuye etiquetado con la libreria `transformers`, lo que implica pesos en formato safetensors compatibles con el ecosistema Hugging Face.
 
 Tampoco se documenta el proceso de entrenamiento: no se especifica el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas de ajuste como SFT, RLHF o DPO. Dado el nombre del modelo (AGI-Eval-OA-Judge) y su publicacion por parte de AGI-Eval-Official, la hipotesis mas razonable es que se trate de un modelo afinado especificamente para tareas de evaluacion de respuestas abiertas (judge), pero esto no puede confirmarse con la informacion disponible. La unica innovacion tecnica documentada en este repositorio es el propio proceso de cuantizacion GGUF realizado con llama.cpp, que permite reducir el modelo a partir de 12,4 GB con Q2_K.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el repositorio esta etiquetado como `conversational` y `endpoints_compatible`, por lo que soporta el formato de chat tipico de transformers y de los endpoints de HuggingFace.
+- Generacion de texto conversacional: el repositorio esta etiquetado como `conversational` y `endpoints_compatible`, por lo que soporta el formato de chat tipico de transformers y de los endpoints de Hugging Face.
 - Evaluacion automatica de respuestas (hipotesis basada en el nombre del modelo): el sufijo "OA-Judge" sugiere evaluacion de respuestas abiertas, probablemente mediante puntuaciones o comparaciones tipo LLM-as-a-judge. No confirmado en la documentacion.
 - Capacidades multilingues: limitadas al ingles segun el campo `language: en` de la model card.
 - Tool calling / function calling: no disponible.
@@ -91,7 +91,7 @@ Para una comparacion rigurosa con alternativas de la misma categoria (modelos ju
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/AGI-Eval-OA-Judge-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/AGI-Eval-OA-Judge-GGUF
 - Modelo base: https://huggingface.co/AGI-Eval-Official/AGI-Eval-OA-Judge
 - Pagina de resumen de descargas del autor: https://hf.tst.eu/model#AGI-Eval-OA-Judge-GGUF
 - Perfil del cuantizador (mradermacher): https://huggingface.co/mradermacher

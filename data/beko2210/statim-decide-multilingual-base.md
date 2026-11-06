@@ -98,7 +98,7 @@ La información disponible permite comparar únicamente contra el checkpoint bas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beko2210/statim-decide-multilingual-base
+- Modelo en Hugging Face: https://huggingface.co/Beko2210/statim-decide-multilingual-base
 - Repositorio Statim: https://github.com/BEKO2210/statim
 - Binarios de Statim: https://github.com/BEKO2210/statim/releases
 - Documentación de API: https://github.com/BEKO2210/statim/blob/main/docs/API.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RSI-Jev v3.0 es un modelo de decisiones tipadas de 2.000 millones de parametros construido sobre `Qwen/Qwen3.5-2B-Base`, desarrollado por el autor de HuggingFace `shgao` dentro del proyecto RSI-Jev. No es un modelo generativo: dada la descripcion de un documento (el estado) y una o varias preguntas tipadas, devuelve una probabilidad calibrada para cada opcion en un unico forward pass, sin decodificar texto. Los tres tipos de pregunta soportados son `choice` (elegir una entre k), `noul` (si/no) y `score` (puntuar segun rubrica), y el checkpoint expone ademas la API HTTP de Jev.
+RSI-Jev v3.0 es un modelo de decisiones tipadas de 2.000 millones de parametros construido sobre `Qwen/Qwen3.5-2B-Base`, desarrollado por el autor de Hugging Face `shgao` dentro del proyecto RSI-Jev. No es un modelo generativo: dada la descripcion de un documento (el estado) y una o varias preguntas tipadas, devuelve una probabilidad calibrada para cada opcion en un unico forward pass, sin decodificar texto. Los tres tipos de pregunta soportados son `choice` (elegir una entre k), `noul` (si/no) y `score` (puntuar segun rubrica), y el checkpoint expone ademas la API HTTP de Jev.
 
 El checkpoint publicado corresponde a la semilla 17, fijada de antemano, y reporta 0.791 en la metrica de decisiones tipadas, 0.7965 con el orden de opciones invertido (lo que indica estabilidad frente al orden) y 0.364 en MMLU-Pro 1k. Su relevancia reside en que v3.0 es la primera version del linaje en la que la etapa de aprendizaje por refuerzo aporta una mejora medible: un reward de ranking listwise para reordenacion eleva el hippo R@1 de 0.192 a 0.308 (p = 2,4 × 10⁻¹³), un 60 % mas de aciertos en primera posicion, manteniendo plana la suite de quince benchmarks.
 
@@ -108,7 +108,7 @@ El competidor directo es su propio predecesor v2.1, del que v3.0 hereda el linaj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shgao/rsi-jev-v3.0-qwen3.5-2b
+- Modelo en Hugging Face: https://huggingface.co/shgao/rsi-jev-v3.0-qwen3.5-2b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Repositorio del proyecto RSI-Jev: https://github.com/Shanghua-Gao/RSI-Jev
 - Documentacion de la API HTTP de Jev: https://github.com/Shanghua-Gao/RSI-Jev/blob/main/serve/README.md

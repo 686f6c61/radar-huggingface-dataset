@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`RushabhShah122000/qwen3-vl-4b-ocr-lora` es un ajuste fino (fine-tuning) del modelo multimodal Qwen3-VL-4B-Instruct, publicado por el usuario RushabhShah122000 en HuggingFace. Se trata de un adaptador LoRA entrenado con Unsloth y la librería TRL, orientado por su nombre y procedencia a tareas de reconocimiento óptico de caracteres (OCR) sobre imágenes. El modelo base, Qwen3-VL-4B-Instruct, es un transformer multimodal de la familia Qwen3-VL desarrollada por Alibaba, con aproximadamente 4.000 millones de parámetros y capacidad de procesar texto e imágenes.
+`RushabhShah122000/qwen3-vl-4b-ocr-lora` es un ajuste fino (fine-tuning) del modelo multimodal Qwen3-VL-4B-Instruct, publicado por el usuario RushabhShah122000 en Hugging Face. Se trata de un adaptador LoRA entrenado con Unsloth y la librería TRL, orientado por su nombre y procedencia a tareas de reconocimiento óptico de caracteres (OCR) sobre imágenes. El modelo base, Qwen3-VL-4B-Instruct, es un transformer multimodal de la familia Qwen3-VL desarrollada por Alibaba, con aproximadamente 4.000 millones de parámetros y capacidad de procesar texto e imágenes.
 
 La relevancia de esta ficha es limitada: el repositorio no incluye model card detallada, no publica resultados de benchmarks, no especifica la composición del dataset de entrenamiento ni los hiperparámetros utilizados, y registra cero descargas y cero likes en el momento de la consulta. El tamaño del repositorio es de 0,2 GB, coherente con un adaptador LoRA más que con pesos completos.
 
@@ -63,11 +63,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RushabhShah122000/qwen3-vl-4b-ocr-lora | ~4B (base) + LoRA | No disponible | OCR multimodal (fine-tuning) | Apache 2.0 | HuggingFace, 0 descargas |
-| unsloth/Qwen3-VL-4B-Instruct | ~4B | No disponible en esta ficha | Multimodal general | No disponible en esta ficha | HuggingFace (modelo base) |
+| RushabhShah122000/qwen3-vl-4b-ocr-lora | ~4B (base) + LoRA | No disponible | OCR multimodal (fine-tuning) | Apache 2.0 | Hugging Face, 0 descargas |
+| unsloth/Qwen3-VL-4B-Instruct | ~4B | No disponible en esta ficha | Multimodal general | No disponible en esta ficha | Hugging Face (modelo base) |
 | Otros modelos OCR especializados | No disponible | No disponible | OCR | No disponible | No disponible |
 
-La comparativa con alternativas especificas de OCR no puede completarse con la informacion disponible; se recomienda contrastar con modelos dedicados de OCR publicados en HuggingFace antes de adoptar este ajuste en produccion.
+La comparativa con alternativas especificas de OCR no puede completarse con la informacion disponible; se recomienda contrastar con modelos dedicados de OCR publicados en Hugging Face antes de adoptar este ajuste en produccion.
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ La comparativa con alternativas especificas de OCR no puede completarse con la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RushabhShah122000/qwen3-vl-4b-ocr-lora
+- Repositorio Hugging Face: https://huggingface.co/RushabhShah122000/qwen3-vl-4b-ocr-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3-VL-4B-Instruct
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - TRL (libreria de entrenamiento): no disponible enlace directo en la informacion proporcionada

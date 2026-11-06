@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`samsontsai/test-audio-visual-learning` es un repositorio de HuggingFace publicado por Samson Tsai que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado ni un checkpoint utilizable: su artefacto principal es un conjunto estructurado de notas de investigación (`paper_notes.md`) sobre aprendizaje audiovisual. El autor lo declara explícitamente en la model card: no se reclaman mejoras en benchmarks, ablaciones completadas, código publicado ni checkpoint entrenado.
+`samsontsai/test-audio-visual-learning` es un repositorio de Hugging Face publicado por Samson Tsai que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado ni un checkpoint utilizable: su artefacto principal es un conjunto estructurado de notas de investigación (`paper_notes.md`) sobre aprendizaje audiovisual. El autor lo declara explícitamente en la model card: no se reclaman mejoras en benchmarks, ablaciones completadas, código publicado ni checkpoint entrenado.
 
 Los metadatos registran 49.600 parámetros totales en formato safetensors y un tamaño de repositorio de 0,0 GB, cifras compatibles con un contenedor de prueba o un artefacto meramente testimonial, no con un transformer destinado a inferencia. El repositorio acumula 0 descargas y 0 likes desde su creación el 18 de octubre de 2026.
 
@@ -48,7 +48,7 @@ El repositorio es explícitamente exploratorio en cuanto a metodología: separa 
 - Identificación de confounders: la enumeración de factores de confusión ayuda a auditar un pipeline audiovisual propio antes de lanzar entrenamientos costosos.
 - Plantilla de cuaderno de investigación reproducible: el requisito de registrar versiones de dataset, comandos, semillas, hardware y logs en bruto es directamente reutilizable como checklist de un repositorio experimental.
 - Material docente sobre higiene metodológica: útil para mostrar a estudiantes la distinción entre hipótesis y resultado, y el coste de publicar repositorios sin artefacto verificable.
-- Auditoría de repositorios de HuggingFace: este caso sirve como ejemplo práctico de por qué conviene comprobar el tamaño del repositorio y los ficheros listados antes de asumir que un tag `transformer` implica un modelo.
+- Auditoría de repositorios de Hugging Face: este caso sirve como ejemplo práctico de por qué conviene comprobar el tamaño del repositorio y los ficheros listados antes de asumir que un tag `transformer` implica un modelo.
 - Base para un trabajo futuro de audio-visual learning: quien retome la línea puede partir de las preguntas abiertas documentadas, sabiendo que deberá entrenar y evaluar desde cero.
 
 ## Benchmarks y rendimiento
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 ## Comparativa con modelos similares
 
-No disponible. No hay modelos comparables porque el artefacto no es un modelo, sino un cuaderno de notas. A modo de contexto, el mismo autor mantiene otros repositorios en HuggingFace (por ejemplo, `samsontsai/dissertation-contrastive-2023`), pero no se dispone de especificaciones de esos repositorios en la información proporcionada.
+No disponible. No hay modelos comparables porque el artefacto no es un modelo, sino un cuaderno de notas. A modo de contexto, el mismo autor mantiene otros repositorios en Hugging Face (por ejemplo, `samsontsai/dissertation-contrastive-2023`), pero no se dispone de especificaciones de esos repositorios en la información proporcionada.
 
 | Artefacto | Tipo | Parámetros | Contexto | Licencia | Estado |
 |---|---|---|---|---|---|
@@ -88,7 +88,7 @@ No disponible. No hay modelos comparables porque el artefacto no es un modelo, s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/samsontsai/test-audio-visual-learning
+- Repositorio en Hugging Face: https://huggingface.co/samsontsai/test-audio-visual-learning
 - Perfil del autor: https://huggingface.co/samsontsai
 - Perfil alternativo del autor: https://huggingface.co/samsontsai97/models
 - Google Scholar (resultado genérico de la búsqueda, no específico del repositorio): https://scholar.google.com/

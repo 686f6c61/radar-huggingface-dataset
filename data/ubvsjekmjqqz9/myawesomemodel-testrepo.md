@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de HuggingFace con el identificador `ubvsjekmjqqz9/MyAwesomeModel-TestRepo`. Según su model card, se trata de una versión actualizada de un modelo previo que incorpora mejoras en razonamiento profundo, inferencia y reducción de alucinaciones. El autor indica que ha aumentado la capacidad de razonamiento mediante un mayor uso de tokens de pensamiento (de 12K a 23K tokens por pregunta en el conjunto AIME 2025) y que ahora soporta system prompts y function calling.
+MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de Hugging Face con el identificador `ubvsjekmjqqz9/MyAwesomeModel-TestRepo`. Según su model card, se trata de una versión actualizada de un modelo previo que incorpora mejoras en razonamiento profundo, inferencia y reducción de alucinaciones. El autor indica que ha aumentado la capacidad de razonamiento mediante un mayor uso de tokens de pensamiento (de 12K a 23K tokens por pregunta en el conjunto AIME 2025) y que ahora soporta system prompts y function calling.
 
 Sin embargo, el repositorio no contiene ningún archivo de pesos, configuración o tokenizador (tamaño 0.0 GB), y la model card no proporciona datos técnicos esenciales como arquitectura, número de parámetros, longitud de contexto o dataset de entrenamiento. Se trata de un repositorio de prueba (TestRepo) sin descargas ni likes, por lo que la información disponible es limitada y no permite una evaluación técnica rigurosa.
 
@@ -17,7 +17,7 @@ El modelo está etiquetado con la librería `transformers`, pipeline `feature-ex
 | Parametros activos | no disponible (no se indica si es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponibles (campo vacío en HuggingFace) |
+| Idiomas soportados | no disponibles (campo vacío en Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | no disponible (repositorio vacío, sin archivos de pesos) |
 
@@ -99,5 +99,5 @@ No se dispone de información suficiente para comparar MyAwesomeModel con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ubvsjekmjqqz9/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/ubvsjekmjqqz9/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (papers, blogs, repos de código, demos) en la información disponible.

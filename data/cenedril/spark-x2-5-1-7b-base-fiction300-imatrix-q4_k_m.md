@@ -4,7 +4,7 @@
 
 Spark-X2.5-1.7B-Base-fiction300-imatrix-Q4_K_M es una cuantizacion GGUF del modelo base XHToken/Spark-X2.5-1.7B-Base, publicada por el usuario Cenedril. Se trata de un artefacto derivado, no de un modelo entrenado desde cero: el autor aplica una cuantizacion Q4_K_M calibrada con una matriz de importancia (imatrix) generada sobre un fichero denominado `fiction_dataset_300.csv`, con el objetivo declarado de especializar el comportamiento del modelo en escritura de ficcion y roleplay, con uso ligero de herramientas en entornos de borde (edge).
 
-El modelo de partida tiene, segun su nomenclatura, aproximadamente 1.700 millones de parametros, lo que lo situa en la gama de modelos pequenos desplegables en hardware de consumo. El repositorio ocupa 1,1 GB, coherente con un fichero GGUF de 4 bits para ese orden de magnitud de parametros. Llama la atencion que el metadato de parametros disponible en la ficha de HuggingFace indica 473.256, una cifra incompatible con el nombre del modelo y presumiblemente un artefacto de la propia ficha.
+El modelo de partida tiene, segun su nomenclatura, aproximadamente 1.700 millones de parametros, lo que lo situa en la gama de modelos pequenos desplegables en hardware de consumo. El repositorio ocupa 1,1 GB, coherente con un fichero GGUF de 4 bits para ese orden de magnitud de parametros. Llama la atencion que el metadato de parametros disponible en la ficha de Hugging Face indica 473.256, una cifra incompatible con el nombre del modelo y presumiblemente un artefacto de la propia ficha.
 
 La relevancia de esta publicacion es limitada y muy especifica: sirve como ejemplo de cuantizacion con imatrix orientada a un dominio concreto (ficcion y roleplay) y como opcion de despliegue en llama.cpp u Ollama para equipos sin GPU dedicada. No es un modelo de proposito general ni compite con los lanzamientos de los grandes laboratorios; su interes es practico para quien quiera un generador de narrativa pequeno y local. La licencia declarada es Apache 2.0, heredada del modelo base.
 
@@ -74,7 +74,7 @@ La informacion proporcionada no incluye datos tecnicos del modelo base (arquitec
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Spark-X2.5-1.7B-Base-fiction300-imatrix-Q4_K_M (este) | ~1,7B segun nomenclatura | no disponible | Apache 2.0 | GGUF en HuggingFace, 28 descargas, 0 likes |
+| Spark-X2.5-1.7B-Base-fiction300-imatrix-Q4_K_M (este) | ~1,7B segun nomenclatura | no disponible | Apache 2.0 | GGUF en Hugging Face, 28 descargas, 0 likes |
 | XHToken/Spark-X2.5-1.7B-Base | ~1,7B segun nomenclatura | no disponible | no disponible | Modelo de origen; datos no disponibles en la informacion proporcionada |
 | Otras alternativas de ~1-2B de la misma categoria (por ejemplo familias tipo Qwen2.5-1.5B, Llama-3.2-1B o SmolLM2-1.7B) | no disponible | no disponible | no disponible | no disponible |
 
@@ -96,6 +96,6 @@ No se dispone de datos de rendimiento comparado para afirmar si esta cuantizacio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Cenedril/Spark-X2.5-1.7B-Base-fiction300-imatrix-Q4_K_M
+- Repositorio en Hugging Face: https://huggingface.co/Cenedril/Spark-X2.5-1.7B-Base-fiction300-imatrix-Q4_K_M
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-1.7B-Base
 - Busqueda web: no se han encontrado enlaces relevantes. Las consultas devolvieron unicamente paginas de cronometros en linea (timeanddate.com, online-stopwatch.com, vclock.com, tickcounter.com), sin ninguna relacion con el modelo, su autor ni su modelo base. No se dispone de paper, blog, repositorio de codigo ni demo asociados.

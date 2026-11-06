@@ -89,7 +89,7 @@ La comparacion con otros modelos de traduccion especializados en griego o lengua
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Llama-Artemis-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Llama-Artemis-i1-GGUF
 - Modelo base: https://huggingface.co/jgchaparro/Llama-Artemis
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/Llama-Artemis-GGUF
 - Pagina de resumen del cuantizador: https://hf.tst.eu/model#Llama-Artemis-i1-GGUF

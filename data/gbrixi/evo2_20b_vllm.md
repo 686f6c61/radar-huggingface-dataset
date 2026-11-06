@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gbrixi/evo2_20b_vllm
+- Repositorio Hugging Face: https://huggingface.co/gbrixi/evo2_20b_vllm
 - Modelo base: https://huggingface.co/arcinstitute/evo2_20b
 - Repositorio GitHub de Evo 2: https://github.com/ArcInstitute/evo2
 - Paper (bioRxiv): https://www.biorxiv.org/content/10.1101/2025.02.18.638918

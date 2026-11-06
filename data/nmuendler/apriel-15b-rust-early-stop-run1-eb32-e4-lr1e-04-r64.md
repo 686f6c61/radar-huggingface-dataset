@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo completo, sino un adaptador de ajuste fino con PEFT (LoRA) construido sobre el modelo base `ServiceNow-AI/Apriel-Nemotron-15b-Thinker`, un modelo de 15.000 millones de parámetros orientado a razonamiento. El adaptador lo publica el usuario de HuggingFace `nmuendler` y su identificador (`Apriel-15B-rust-early-stop-run1-eb32-e4-lr1e-04-r64`) sigue el patrón típico de un experimento de entrenamiento: primera ejecución con parada temprana, batch efectivo 32, 4 épocas, tasa de aprendizaje 1e-4 y rango LoRA 64. El tamaño del repositorio es de 1,2 GB, coherente con un adaptador de rango alto o con artefactos de entrenamiento adicionales.
+Este repositorio no contiene un modelo completo, sino un adaptador de ajuste fino con PEFT (LoRA) construido sobre el modelo base `ServiceNow-AI/Apriel-Nemotron-15b-Thinker`, un modelo de 15.000 millones de parámetros orientado a razonamiento. El adaptador lo publica el usuario de Hugging Face `nmuendler` y su identificador (`Apriel-15B-rust-early-stop-run1-eb32-e4-lr1e-04-r64`) sigue el patrón típico de un experimento de entrenamiento: primera ejecución con parada temprana, batch efectivo 32, 4 épocas, tasa de aprendizaje 1e-4 y rango LoRA 64. El tamaño del repositorio es de 1,2 GB, coherente con un adaptador de rango alto o con artefactos de entrenamiento adicionales.
 
 La relevancia de este artefacto es limitada y muy específica: sirve como registro reproducible de una configuración de ajuste fino concreta sobre la familia Apriel, no como un modelo listo para producción. La model card está prácticamente vacía: todos los apartados (descripción, datos de entrenamiento, evaluación, licencia, idiomas, impacto ambiental) aparecen con el marcador `[More Information Needed]`, por lo que no hay información verificable sobre el dataset, el procedimiento exacto ni los resultados obtenidos.
 
@@ -27,7 +27,7 @@ Dado que el adaptador se publica sin métricas, sin licencia declarada y con cer
 
 ## Arquitectura y entrenamiento
 
-La unica informacion tecnica recuperable es la que se deduce del identificador y de los metadatos del repositorio. Se trata de un adaptador LoRA (`library_name: peft`, tag `peft`) sobre el modelo `ServiceNow-AI/Apriel-Nemotron-15b-Thinker`. La cadena `r64` apunta a un rango LoRA de 64; `lr1e-04` a una tasa de aprendizaje de 1e-4; `eb32` a un batch efectivo de 32; `e4` a 4 epocas; `early-stop-run1` a una primera ejecucion con parada temprana. El tag `arxiv:1910.09700` corresponde a la plantilla de estimacion de emisiones de carbono (Lacoste et al., 2019) que genera HuggingFace por defecto, no a un articulo sobre el modelo. El campo `pipeline` no esta definido y no se especifica el dataset de entrenamiento, la composicion de datos, ni si hubo RLHF, DPO o alguna fase de alineamiento posterior.
+La unica informacion tecnica recuperable es la que se deduce del identificador y de los metadatos del repositorio. Se trata de un adaptador LoRA (`library_name: peft`, tag `peft`) sobre el modelo `ServiceNow-AI/Apriel-Nemotron-15b-Thinker`. La cadena `r64` apunta a un rango LoRA de 64; `lr1e-04` a una tasa de aprendizaje de 1e-4; `eb32` a un batch efectivo de 32; `e4` a 4 epocas; `early-stop-run1` a una primera ejecucion con parada temprana. El tag `arxiv:1910.09700` corresponde a la plantilla de estimacion de emisiones de carbono (Lacoste et al., 2019) que genera Hugging Face por defecto, no a un articulo sobre el modelo. El campo `pipeline` no esta definido y no se especifica el dataset de entrenamiento, la composicion de datos, ni si hubo RLHF, DPO o alguna fase de alineamiento posterior.
 
 No hay informacion sobre innovaciones tecnicas concretas: ni atencion lineal, ni decodificacion especulativa, ni modo de razonamiento explicito, mas alla de lo que herede del modelo base. Tampoco se documentan los hiperparametros completos, el hardware utilizado ni el numero de tokens vistos durante el ajuste. En la practica, la unica innovacion identificable es metodologica: el uso de parada temprana en una ejecucion etiquetada como `run1`, lo que sugiere una busqueda de hiperparametros con criterio de corte por metrica de validacion.
 
@@ -72,8 +72,8 @@ Las cifras siguientes son estimaciones aritmeticas basadas en el tamano de 15B p
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nmuendler/Apriel-15B-rust-early-stop-run1-eb32-e4-lr1e-04-r64 | Adaptador sobre 15B | No disponible | Sin benchmarks publicados | No disponible | Publico en HuggingFace, 0 descargas |
-| ServiceNow-AI/Apriel-Nemotron-15b-Thinker (base) | 15B | No disponible en la informacion aportada | No disponible en la informacion aportada | No disponible en la informacion aportada | Publico en HuggingFace |
+| nmuendler/Apriel-15B-rust-early-stop-run1-eb32-e4-lr1e-04-r64 | Adaptador sobre 15B | No disponible | Sin benchmarks publicados | No disponible | Publico en Hugging Face, 0 descargas |
+| ServiceNow-AI/Apriel-Nemotron-15b-Thinker (base) | 15B | No disponible en la informacion aportada | No disponible en la informacion aportada | No disponible en la informacion aportada | Publico en Hugging Face |
 | Otras alternativas de 15B de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La unica comparacion significativa que permite la informacion disponible es contra el propio modelo base: este repositorio es una modificacion derivada de el, sin evidencia publicada de mejora. No se dispone de datos para compararlo con otros adaptadores ni con modelos de tamano equivalente.
@@ -93,7 +93,7 @@ La unica comparacion significativa que permite la informacion disponible es cont
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/nmuendler/Apriel-15B-rust-early-stop-run1-eb32-e4-lr1e-04-r64
+- Repositorio del modelo en Hugging Face: https://huggingface.co/nmuendler/Apriel-15B-rust-early-stop-run1-eb32-e4-lr1e-04-r64
 - Modelo base: https://huggingface.co/ServiceNow-AI/Apriel-Nemotron-15b-Thinker
 - Referencia de la plantilla de estimacion de emisiones citada en los tags (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la model card: https://mlco2.github.io/impact

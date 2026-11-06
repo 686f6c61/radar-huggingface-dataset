@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yapper-M4-Flash-o-mini es un modelo publicado en HuggingFace por el usuario Fantominsight bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del repositorio no contiene mas que la linea de licencia: no se documentan arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El repositorio registra 0 descargas y 0 "likes", y no tiene pipeline declarado.
+Yapper-M4-Flash-o-mini es un modelo publicado en Hugging Face por el usuario Fantominsight bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del repositorio no contiene mas que la linea de licencia: no se documentan arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El repositorio registra 0 descargas y 0 "likes", y no tiene pipeline declarado.
 
 Esto significa que no existe informacion tecnica verificable sobre el modelo. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos, un modelo de espacio de estados o cualquier otra arquitectura, asi como su tamano real. El sufijo "mini" del nombre sugiere un modelo de parametros reducidos, pero se trata de una inferencia a partir del nombre y no de un dato publicado.
 
@@ -80,6 +80,6 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fantominsight/Yapper-M4-Flash-o-mini
+- Hugging Face: https://huggingface.co/Fantominsight/Yapper-M4-Flash-o-mini
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.
 - Los resultados de busqueda disponibles no estan relacionados con el modelo y no se incluyen por no aportar informacion relevante.

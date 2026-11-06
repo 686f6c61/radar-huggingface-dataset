@@ -85,9 +85,9 @@ Ambos modelos ONNX son exportaciones del mismo modelo base, con diferencias en l
 
 ## Enlaces
 
-- [HuggingFace - nicolasembleton/gliner2.5-base-v1-onnx](https://huggingface.co/nicolasembleton/gliner2.5-base-v1-onnx)
-- [HuggingFace - fastino/gliner2.5-base-v1 (modelo base)](https://huggingface.co/fastino/gliner2.5-base-v1)
+- [Hugging Face - nicolasembleton/gliner2.5-base-v1-onnx](https://huggingface.co/nicolasembleton/gliner2.5-base-v1-onnx)
+- [Hugging Face - fastino/gliner2.5-base-v1 (modelo base)](https://huggingface.co/fastino/gliner2.5-base-v1)
 - [GitHub - fastino-ai/GLiNER2](https://github.com/fastino-ai/GLiNER2)
 - [GitHub - rmallof/gliner2 (repositorio alternativo)](https://github.com/rmallof/gliner2)
 - [Página de GLiNER2.5 Base V1 en There's An AI For That](https://theresanaiforthat.com/model/gliner2-5-base-v1/)
-- [HuggingFace - lion-ai/gliner2-base-v1-onnx (otra exportación ONNX)](https://huggingface.co/lion-ai/gliner2-base-v1-onnx)
+- [Hugging Face - lion-ai/gliner2-base-v1-onnx (otra exportación ONNX)](https://huggingface.co/lion-ai/gliner2-base-v1-onnx)

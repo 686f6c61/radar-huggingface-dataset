@@ -96,7 +96,7 @@ No se dispone de datos verificados de alternativas comparables en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Prience91/Climate-1000-Qwen-4b
+- Modelo en Hugging Face: https://huggingface.co/Prience91/Climate-1000-Qwen-4b
 - Adaptador LoRA de origen: https://huggingface.co/Prience91/GIIS-Mini-Qwen3.5-4B-LoRA-adapter
 - Dataset de entrenamiento: https://huggingface.co/datasets/Prience91/Climate-1000-canary
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B (revisión `851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a`)

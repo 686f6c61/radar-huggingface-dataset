@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voicort/sn92-generalist-v5-1 | 26,1 mil millones | No disponible | Decisor de opción múltiple (fine-tune de REAX 1) | Apache-2.0 | HuggingFace (58 descargas, 0 likes) |
-| decisionmodels/reax-1 | No disponible | No disponible | Decisor de opción múltiple (base) | No disponible en la información proporcionada | HuggingFace |
-| perplexity-ai/pplx-decider-v1.2 | No disponible | No disponible | Decisor de opción múltiple (base de REAX 1) | No disponible en la información proporcionada | HuggingFace |
-| Qwen/Qwen3.8-27B | ~27 mil millones (por el nombre) | No disponible | Modelo generativo de propósito general | No disponible en la información proporcionada | HuggingFace |
+| voicort/sn92-generalist-v5-1 | 26,1 mil millones | No disponible | Decisor de opción múltiple (fine-tune de REAX 1) | Apache-2.0 | Hugging Face (58 descargas, 0 likes) |
+| decisionmodels/reax-1 | No disponible | No disponible | Decisor de opción múltiple (base) | No disponible en la información proporcionada | Hugging Face |
+| perplexity-ai/pplx-decider-v1.2 | No disponible | No disponible | Decisor de opción múltiple (base de REAX 1) | No disponible en la información proporcionada | Hugging Face |
+| Qwen/Qwen3.8-27B | ~27 mil millones (por el nombre) | No disponible | Modelo generativo de propósito general | No disponible en la información proporcionada | Hugging Face |
 
 La comparación con modelos generativos de propósito general no es directa: SN92 generalist v5-1 no genera texto libre, sino que emite una decisión sobre opciones. Frente a REAX 1, la diferencia es el ajuste fino con datos específicos de SN92 y la temperatura calibrada (2,7265). Frente a Qwen3.8-27B, comparte familia de backbone pero el comportamiento es completamente distinto.
 
@@ -88,7 +88,7 @@ La comparación con modelos generativos de propósito general no es directa: SN9
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/voicort/sn92-generalist-v5-1
+- Hugging Face: https://huggingface.co/voicort/sn92-generalist-v5-1
 - Modelo base REAX 1: https://huggingface.co/decisionmodels/reax-1
 - Modelo base de REAX 1: https://huggingface.co/perplexity-ai/pplx-decider-v1.2
 - Modelo Qwen de referencia: https://huggingface.co/Qwen/Qwen3.8-27B

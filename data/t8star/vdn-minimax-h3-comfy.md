@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Vdn-Minimax-H3-Comfy`, publicado por el autor `t8star` en HuggingFace, es un artefacto del que no se dispone de información técnica pública en el momento de esta consulta. El nombre sugiere una posible relación con arquitecturas de tipo MiniMax y con la atención híbrida H3, pero no existe documentación, ficha técnica ni metadatos que permitan confirmar dicha asociación. Se desconoce su arquitectura, tamaño, entrenamiento, capacidades y licencia.
+El modelo `Vdn-Minimax-H3-Comfy`, publicado por el autor `t8star` en Hugging Face, es un artefacto del que no se dispone de información técnica pública en el momento de esta consulta. El nombre sugiere una posible relación con arquitecturas de tipo MiniMax y con la atención híbrida H3, pero no existe documentación, ficha técnica ni metadatos que permitan confirmar dicha asociación. Se desconoce su arquitectura, tamaño, entrenamiento, capacidades y licencia.
 
-La ficha se presenta con los campos marcados como «no disponible» allí donde no hay datos verificables, cumpliendo con el criterio de no inventar información. Se recomienda consultar directamente la página del modelo en HuggingFace o contactar con el autor para obtener especificaciones reales antes de considerar su uso en cualquier proyecto.
+La ficha se presenta con los campos marcados como «no disponible» allí donde no hay datos verificables, cumpliendo con el criterio de no inventar información. Se recomienda consultar directamente la página del modelo en Hugging Face o contactar con el autor para obtener especificaciones reales antes de considerar su uso en cualquier proyecto.
 
 ## Especificaciones tecnicas
 
@@ -52,4 +52,4 @@ No disponible. Sin especificaciones técnicas no es posible establecer comparaci
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/t8star/Vdn-Minimax-H3-Comfy
+- Página del modelo en Hugging Face: https://huggingface.co/t8star/Vdn-Minimax-H3-Comfy

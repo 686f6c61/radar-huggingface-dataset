@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FACTA-PT Document Relevance — BERTimbau-base es un modelo de clasificación de texto en portugués obtenido mediante ajuste fino (*fine-tuning*) de `neuralmind/bert-base-portuguese-cased`, el conocido BERTimbau-base entrenado sobre el corpus BrWaC. El autor, identificado en HuggingFace como Gabriiel, lo ha especializado en una tarea concreta dentro del pipeline de verificación automática de hechos: decidir si un documento recuperado es relevante o no para verificar una afirmación (*claim*) dada. La salida es binaria (Relevant / Irrelevant) y se trata como un paso independiente de la posterior tarea de *entailment* entre afirmación y evidencia.
+FACTA-PT Document Relevance — BERTimbau-base es un modelo de clasificación de texto en portugués obtenido mediante ajuste fino (*fine-tuning*) de `neuralmind/bert-base-portuguese-cased`, el conocido BERTimbau-base entrenado sobre el corpus BrWaC. El autor, identificado en Hugging Face como Gabriiel, lo ha especializado en una tarea concreta dentro del pipeline de verificación automática de hechos: decidir si un documento recuperado es relevante o no para verificar una afirmación (*claim*) dada. La salida es binaria (Relevant / Irrelevant) y se trata como un paso independiente de la posterior tarea de *entailment* entre afirmación y evidencia.
 
 Se trata de un encoder BERT clásico de unos 109 millones de parámetros, con licencia MIT y pesos en safetensors, orientado a portugués. Su relevancia radica en que forma parte de FACTA-PT, un sistema de *fact-checking* automatizado para portugués europeo, y resuelve un cuello de botella típico: filtrar candidatos antes de aplicar modelos de *entailment* más costosos a nivel de pasaje. Al reducir el número de documentos que llegan a la fase siguiente, mejora la eficiencia del pipeline completo.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. La *
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FACTA-PT Relevance — BERTimbau-base | 108.924.674 | no disponible | Clasificacion de relevancia documento-afirmacion | MIT | HuggingFace (Gabriiel/facta-pt-relevance-bertimbau-base) |
-| neuralmind/bert-base-portuguese-cased (modelo base) | ~109 M | no disponible | Modelo de lenguaje enmascarado / base para fine-tuning | MIT | HuggingFace |
+| FACTA-PT Relevance — BERTimbau-base | 108.924.674 | no disponible | Clasificacion de relevancia documento-afirmacion | MIT | Hugging Face (Gabriiel/facta-pt-relevance-bertimbau-base) |
+| neuralmind/bert-base-portuguese-cased (modelo base) | ~109 M | no disponible | Modelo de lenguaje enmascarado / base para fine-tuning | MIT | Hugging Face |
 | Otras alternativas de encoder para portugues | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento que permitan comparar cuantitativamente este modelo con alternativas específicas de relevance documental o de *fact-checking* en portugués.
@@ -82,9 +82,9 @@ No se dispone de datos de rendimiento que permitan comparar cuantitativamente es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gabriiel/facta-pt-relevance-bertimbau-base
-- Modelo base en HuggingFace: https://huggingface.co/neuralmind/bert-base-portuguese-cased
+- Modelo en Hugging Face: https://huggingface.co/Gabriiel/facta-pt-relevance-bertimbau-base
+- Modelo base en Hugging Face: https://huggingface.co/neuralmind/bert-base-portuguese-cased
 - Repositorio del modelo base (GitHub): https://github.com/neuralmind-ai/portuguese-bert/tree/master
 - Repositorio alternativo de BERTimbau (GitHub): https://github.com/ClaudioSS01/portuguese-Bertimbau
-- Pagina de BERTimbau en HuggingFace (variante): https://huggingface.co/tubyneto/bertimbau
+- Pagina de BERTimbau en Hugging Face (variante): https://huggingface.co/tubyneto/bertimbau
 - 17th Brazilian Symposium in Information and Human Language Technology: https://aclanthology.org/events/stil-2026/

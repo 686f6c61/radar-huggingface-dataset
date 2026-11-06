@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/t73-eval-c32b-train299-adb2cefbd864` no es un modelo de lenguaje: es un archivo de evidencia de una ejecución de evaluación y entrenamiento (run) del proyecto Task73 sobre el benchmark de robótica BEHAVIOR-1K v3.9.2. Lo publica el usuario de HuggingFace `davidwdw` y su contenido son artefactos de trazabilidad: JSON oficial de resultados, vídeo de la política ejecutada, logs de evaluador, política y preflight, identidad del run, log del lanzador, archivo `source.tgz` congelado, `manifest.sha256` y registros de comprobación en CPU.
+El repositorio `davidwdw/t73-eval-c32b-train299-adb2cefbd864` no es un modelo de lenguaje: es un archivo de evidencia de una ejecución de evaluación y entrenamiento (run) del proyecto Task73 sobre el benchmark de robótica BEHAVIOR-1K v3.9.2. Lo publica el usuario de Hugging Face `davidwdw` y su contenido son artefactos de trazabilidad: JSON oficial de resultados, vídeo de la política ejecutada, logs de evaluador, política y preflight, identidad del run, log del lanzador, archivo `source.tgz` congelado, `manifest.sha256` y registros de comprobación en CPU.
 
 El run se identifica con el token `centre-run-c32b-20261010T183904Z` e inició el 2026-10-10T18:39:04Z sobre una única GPU RTX 4090. El resultado registrado es `instance=299 rollout=0 steps=21888 success=False q_score=0.6666666666666666`, correspondiente a la tarea `organizing_school_stuff_299_0` del benchmark. El repositorio ocupa 0,1 GB y se archivó automáticamente mediante el componente `resource_control Monitor`.
 
@@ -112,7 +112,7 @@ No existen modelos comparables en sentido estricto, porque este repositorio es e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/t73-eval-c32b-train299-adb2cefbd864
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/t73-eval-c32b-train299-adb2cefbd864
 - Repositorio relacionado del mismo autor: https://huggingface.co/davidwdw/fa-native-eval-runtime-20260926-b7202db1c37f
 - Repositorio relacionado del mismo autor: https://huggingface.co/davidwdw/fa-eval-all-h13-79999-31a430f925de
 - Portafolio de evaluación del autor en GitHub: https://github.com/David899b/ai-eval-portfolio

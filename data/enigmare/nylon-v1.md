@@ -65,9 +65,9 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 - Discrepancia entre los parámetros declarados en la model card (~338M) y los reales según safetensors (279M). Esto puede indicar un error en la documentación o una diferencia en la arquitectura no especificada.
 - No hay benchmarks publicados, por lo que se desconoce su rendimiento real frente a otros modelos.
 - Riesgo de alucinación inherente a los modelos de lenguaje, especialmente en dominios técnicos donde la precisión es crítica.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 - La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar la atribución y las condiciones de la misma.
 
 ## Enlaces
 
-- [HuggingFace: enigmare/nylon-v1](https://huggingface.co/enigmare/nylon-v1)
+- [Hugging Face: enigmare/nylon-v1](https://huggingface.co/enigmare/nylon-v1)

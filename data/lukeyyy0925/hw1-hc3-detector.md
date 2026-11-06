@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hw1-hc3-detector es un modelo de clasificación de texto basado en la arquitectura BERT, publicado en HuggingFace por el usuario lukeyyy0925 bajo el identificador lukeyyy0925/hw1-hc3-detector. Por el nombre y los datos de la model card, se trata de un clasificador binario entrenado para distinguir texto escrito por humanos de texto generado por modelos de lenguaje, apoyándose en el corpus HC3 (Human ChatGPT Comparison Corpus). El repositorio ocupa 0,1 GB y contiene pesos en formato safetensors con 22.713.986 parámetros totales, lo que lo sitúa en el rango de los transformers tipo BERT de tamano reducido, muy por debajo de los 110 millones de parámetros de BERT-base.
+hw1-hc3-detector es un modelo de clasificación de texto basado en la arquitectura BERT, publicado en Hugging Face por el usuario lukeyyy0925 bajo el identificador lukeyyy0925/hw1-hc3-detector. Por el nombre y los datos de la model card, se trata de un clasificador binario entrenado para distinguir texto escrito por humanos de texto generado por modelos de lenguaje, apoyándose en el corpus HC3 (Human ChatGPT Comparison Corpus). El repositorio ocupa 0,1 GB y contiene pesos en formato safetensors con 22.713.986 parámetros totales, lo que lo sitúa en el rango de los transformers tipo BERT de tamano reducido, muy por debajo de los 110 millones de parámetros de BERT-base.
 
 El modelo declara en su model card una precisión de referencia (baseline) del 84,53% y una precisión de test tras el ajuste fino del 99,31%. Se publica con la etiqueta de pipeline text-classification y es compatible con text-embeddings-inference y endpoints compatibles, lo que sugiere que puede desplegarse como servicio de inferencia sin grandes modificaciones. No hay información sobre licencia, idiomas soportados ni composición del dataset de entrenamiento más allá del nombre que referencia HC3.
 
@@ -29,13 +29,13 @@ Su relevancia actual es limitada pero concreta: los detectores de texto generado
 
 La model card y las etiquetas del repositorio indican que se trata de un transformer de tipo encoder BERT reutilizado para clasificación de secuencias (text-classification). Con 22.713.986 parámetros, la configuración no coincide con ninguna variante estándar de BERT publicada habitualmente (BERT-tiny ~4,4 M, BERT-mini ~11,2 M, BERT-small ~29,1 M, BERT-base ~110 M), por lo que probablemente se trate de una configuración personalizada, de un recorte de capas o de un modelo destilado con un número de capas y dimensión oculta propios. No se dispone de la ficha técnica de configuración (número de capas, dimensión oculta, cabezas de atención) ni del tokenizador empleado.
 
-Respecto al entrenamiento, el nombre del modelo referencia HC3, el Human ChatGPT Comparison Corpus publicado por el proyecto Hello-SimpleAI, que contiene pares de respuestas humanas y generadas por ChatGPT. La model card únicamente aporta dos métricas: baseline accuracy 84,53% y fine-tuned test accuracy 99,31%. No se especifica el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF o DPO (no aplicables a un clasificador de este tipo), ni el framework de ajuste (Trainer de HuggingFace, PyTorch Lightning, etc.). Tampoco se documenta ninguna innovación técnica destacable: parece un ajuste fino estándar con cabeza de clasificación sobre un encoder preentrenado.
+Respecto al entrenamiento, el nombre del modelo referencia HC3, el Human ChatGPT Comparison Corpus publicado por el proyecto Hello-SimpleAI, que contiene pares de respuestas humanas y generadas por ChatGPT. La model card únicamente aporta dos métricas: baseline accuracy 84,53% y fine-tuned test accuracy 99,31%. No se especifica el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF o DPO (no aplicables a un clasificador de este tipo), ni el framework de ajuste (Trainer de Hugging Face, PyTorch Lightning, etc.). Tampoco se documenta ninguna innovación técnica destacable: parece un ajuste fino estándar con cabeza de clasificación sobre un encoder preentrenado.
 
 ## Capacidades
 
 - Clasificación binaria de texto: presumiblemente distingue entre texto humano y texto generado por IA, según el nombre y el corpus de referencia.
 - Clasificación de secuencias cortas: adecuado para fragmentos de texto de longitud moderada, coherente con la ventana típica de un encoder BERT.
-- Integración como servicio de embeddings/clasificación: los tags text-embeddings-inference y endpoints_compatible indican que puede servirse mediante la infraestructura de HuggingFace.
+- Integración como servicio de embeddings/clasificación: los tags text-embeddings-inference y endpoints_compatible indican que puede servirse mediante la infraestructura de Hugging Face.
 - Exportación a otros runtimes: al ser un modelo transformers estándar, es convertible a ONNX y cuantificable para despliegue en CPU.
 - Tool calling / function calling: no soportado (no es un modelo generativo).
 - Capacidades de agente o razonamiento multi-paso: no soportadas.
@@ -69,17 +69,17 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - GPU recomendadas: cualquier GPU moderna con al menos 1-2 GB de VRAM; una NVIDIA T4, RTX 3060 o superior es más que suficiente.
 - Cabe holgadamente en GPU de consumo: sí, incluidas GTX 1650, RTX 3050 y prácticamente cualquier iGPU con al menos 2 GB asignados.
 - Inferencia en CPU: viable para tráfico moderado, dado el reducido número de parámetros.
-- Opciones de despliegue: HuggingFace transformers, HuggingFace Inference Endpoints (tag endpoints_compatible), text-embeddings-inference, exportación a ONNX Runtime y TorchScript; cuantización estática o dinámica para CPU.
+- Opciones de despliegue: Hugging Face transformers, Hugging Face Inference Endpoints (tag endpoints_compatible), text-embeddings-inference, exportación a ONNX Runtime y TorchScript; cuantización estática o dinámica para CPU.
 - Latencia y throughput: no disponibles. Con 22,7 M de parámetros, se espera una latencia de milisegundos en GPU y de decenas de milisegundos en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| lukeyyy0925/hw1-hc3-detector | 22,7 M | no disponible | no disponible | HuggingFace | Sin documentacion tecnica |
-| BERT-base-uncased (referencia) | ~110 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente extendido | Encoder generico, no especifico de deteccion de IA |
-| DistilBERT-base-uncased (referencia) | ~66 M | 512 tokens | Apache 2.0 | HuggingFace | Version destilada, menor coste |
-| Hello-SimpleAI/chatgpt-detector-roberta | ~125 M | 512 tokens | no verificada en esta busqueda | HuggingFace, GitHub Hello-SimpleAI | Detector de ChatGPT asociado al corpus HC3 |
+| lukeyyy0925/hw1-hc3-detector | 22,7 M | no disponible | no disponible | Hugging Face | Sin documentacion tecnica |
+| BERT-base-uncased (referencia) | ~110 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente extendido | Encoder generico, no especifico de deteccion de IA |
+| DistilBERT-base-uncased (referencia) | ~66 M | 512 tokens | Apache 2.0 | Hugging Face | Version destilada, menor coste |
+| Hello-SimpleAI/chatgpt-detector-roberta | ~125 M | 512 tokens | no verificada en esta busqueda | Hugging Face, GitHub Hello-SimpleAI | Detector de ChatGPT asociado al corpus HC3 |
 
 Los valores de parametros de los modelos de referencia corresponden a especificaciones habituales publicadas por sus autores y se incluyen como contexto orientativo. No hay datos de rendimiento comparables entre estos modelos y hw1-hc3-detector, ya que las condiciones de evaluacion de este ultimo no estan documentadas.
 
@@ -97,7 +97,7 @@ Los valores de parametros de los modelos de referencia corresponden a especifica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lukeyyy0925/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/lukeyyy0925/hw1-hc3-detector
 - Repositorio Homologo (Aishkrish): https://huggingface.co/Aishkrish/hw1-hc3-detector
 - Repositorio Homologo (skyyyyks): https://huggingface.co/skyyyyks/hw1-hc3-detector
 - Ficha en Savrn (Yihangsun): https://savrn.com/models/hw1-hc3-detector

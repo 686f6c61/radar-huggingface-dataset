@@ -2,7 +2,7 @@
 
 ## Resumen
 
-distilbert-base-uncased-finetuned_emotion es un modelo de clasificación de texto publicado por el usuario mdz25714 en HuggingFace. Se trata de un ajuste fino (fine-tuning) completo de distilbert-base-uncased, la versión destilada de BERT desarrollada originalmente por Hugging Face, sobre un conjunto de datos de emociones que el autor no identifica en la model card (aparece como "None dataset"). El modelo tiene 66.958.086 parámetros y una ventana de contexto de 512 tokens, heredada de la arquitectura base.
+distilbert-base-uncased-finetuned_emotion es un modelo de clasificación de texto publicado por el usuario mdz25714 en Hugging Face. Se trata de un ajuste fino (fine-tuning) completo de distilbert-base-uncased, la versión destilada de BERT desarrollada originalmente por Hugging Face, sobre un conjunto de datos de emociones que el autor no identifica en la model card (aparece como "None dataset"). El modelo tiene 66.958.086 parámetros y una ventana de contexto de 512 tokens, heredada de la arquitectura base.
 
 El problema que resuelve es acotado y muy concreto: asignar una etiqueta de emoción a un texto corto en inglés. No es un modelo generativo ni un asistente conversacional, sino un clasificador discriminativo con una cabeza de clasificación añadida sobre el encoder destilado. Su interés práctico reside en el coste de inferencia: con 67 millones de parámetros se puede ejecutar en CPU o en cualquier GPU de consumo con latencias de milisegundos, lo que lo hace apto para pipelines de análisis de sentimiento o moderación a gran escala.
 
@@ -72,10 +72,10 @@ No es posible comparar el rendimiento de forma rigurosa porque el autor no publi
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mdz25714/distilbert-base-uncased-finetuned_emotion | 66,96 M | 512 tokens | Apache 2.0 | HuggingFace, 0 descargas, sin validación comunitaria |
-| distilbert-base-uncased (modelo base) | 66,36 M | 512 tokens | Apache 2.0 | HuggingFace |
-| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | HuggingFace |
-| roberta-base | 125 M | 512 tokens | MIT | HuggingFace |
+| mdz25714/distilbert-base-uncased-finetuned_emotion | 66,96 M | 512 tokens | Apache 2.0 | Hugging Face, 0 descargas, sin validación comunitaria |
+| distilbert-base-uncased (modelo base) | 66,36 M | 512 tokens | Apache 2.0 | Hugging Face |
+| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | Hugging Face |
+| roberta-base | 125 M | 512 tokens | MIT | Hugging Face |
 
 Las alternativas de clasificación de emociones más utilizadas en la comunidad (por ejemplo, variantes ajustadas sobre el dataset go_emotions o sobre corpus de emociones en inglés) no se incluyen aquí porque no se dispone de datos verificados de sus métricas en la información proporcionada.
 
@@ -93,7 +93,7 @@ Las alternativas de clasificación de emociones más utilizadas en la comunidad 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdz25714/distilbert-base-uncased-finetuned_emotion
+- Modelo en Hugging Face: https://huggingface.co/mdz25714/distilbert-base-uncased-finetuned_emotion
 - Modelo base distilbert-base-uncased: https://huggingface.co/distilbert-base-uncased
 - Documentación de DistilBERT en transformers: https://huggingface.co/docs/transformers/model_doc/distilbert
 

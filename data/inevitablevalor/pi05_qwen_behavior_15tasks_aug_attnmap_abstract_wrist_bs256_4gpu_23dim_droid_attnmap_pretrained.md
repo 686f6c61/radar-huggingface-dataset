@@ -76,7 +76,7 @@ La comparativa se basa en la información de la propia model card. La variante c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Inevitablevalor/pi05_qwen_behavior_15tasks_aug_attnmap_abstract_wrist_bs256_4gpu_23dim_droid_attnmap_pretrained
+- Repositorio Hugging Face: https://huggingface.co/Inevitablevalor/pi05_qwen_behavior_15tasks_aug_attnmap_abstract_wrist_bs256_4gpu_23dim_droid_attnmap_pretrained
 - Variante 4 imágenes (hermana): https://huggingface.co/Inevitablevalor/pi05_qwen_behavior_15tasks_aug_attnmap_abstract_train_bs256_4gpu_23dim_droid_attnmap_pretrained
 - Repositorio `openpi` de Physical Intelligence: https://github.com/Physical-Intelligence/openpi
 - Repositorio `openpi_qwen` (código de entrenamiento): https://github.com/moon-fall/openpi_qwen

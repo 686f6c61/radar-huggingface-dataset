@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4b_Adomic es un modelo de lenguaje multimodal (texto e imagen) derivado de la base Qwen3.5-4B, publicado por el usuario 4fhct4sd en HuggingFace. Se distribuye exclusivamente en formato GGUF, generado con la herramienta Unsloth a partir de un ajuste fino realizado por el autor. El repositorio contiene dos ficheros: `Qwen3.5-4B.Q8_0.gguf` (pesos del modelo de lenguaje) y `Qwen3.5-4B.BF16-mmproj.gguf` (proyector multimodal en BF16), lo que confirma que el modelo conserva la capacidad de procesar imagenes ademas de texto.
+Qwen3.5-4b_Adomic es un modelo de lenguaje multimodal (texto e imagen) derivado de la base Qwen3.5-4B, publicado por el usuario 4fhct4sd en Hugging Face. Se distribuye exclusivamente en formato GGUF, generado con la herramienta Unsloth a partir de un ajuste fino realizado por el autor. El repositorio contiene dos ficheros: `Qwen3.5-4B.Q8_0.gguf` (pesos del modelo de lenguaje) y `Qwen3.5-4B.BF16-mmproj.gguf` (proyector multimodal en BF16), lo que confirma que el modelo conserva la capacidad de procesar imagenes ademas de texto.
 
 El dato objetivo mas relevante es el numero de parametros: 4.326.350.848 (aproximadamente 4,3 mil millones), lo que situa al modelo en la categoria de modelos densos pequenos, aptos para ejecucion local en GPU de consumo. El tamano total del repositorio es de 5,3 GB, coherente con una unica cuantizacion Q8_0 mas el proyector de vision.
 
@@ -87,7 +87,7 @@ No es posible establecer una comparacion de rendimiento con este modelo porque n
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/4fhct4sd/Qwen3.5-4b_Adomic
+- Hugging Face del modelo: https://huggingface.co/4fhct4sd/Qwen3.5-4b_Adomic
 - Unsloth (herramienta de ajuste fino y conversion a GGUF): https://github.com/unslothai/unsloth
 - llama.cpp (runtime compatible, `llama-cli` y `llama-mtmd-cli`): https://github.com/ggml-org/llama.cpp
 - Resultados de busqueda web: no aportaron informacion relevante sobre el modelo. Las URLs devueltas correspondian a la documentacion de DeepL Translator (https://www.deepl.com/en/translator, https://home.deepl.com/en/home, https://app.deepl.com/en/features/document-translation) y no guardan relacion con este modelo.

@@ -78,7 +78,7 @@ Nota: ARC-Easy tiene 2 376 preguntas por idioma, por lo que diferencias inferior
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Slayer1B 1.07 | 1 073 912 851 | 4096 | pl, en | Apache 2.0 | Pesos no publicados aun (training in progress) |
-| Slayer1B 1.06 | no disponible | 4096 | pl, en | Apache 2.0 | Pesos publicados en HuggingFace |
+| Slayer1B 1.06 | no disponible | 4096 | pl, en | Apache 2.0 | Pesos publicados en Hugging Face |
 | Modelos comparables de ~1B en polaco | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoria en la informacion proporcionada.
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de la misma 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SlayerLab/Slayer1B-1.07
+- Hugging Face: https://huggingface.co/SlayerLab/Slayer1B-1.07
 - Version anterior: https://huggingface.co/SlayerLab/Slayer1B-1.06
 - Dataset de entrenamiento de 1.07: https://huggingface.co/datasets/SlayerLab/slayer-1.07-pretrain
 - Dataset base de 1.06: https://huggingface.co/datasets/SlayerLab/slayer-pl-8x3b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Luca-hcosta/classification-experiments` es un repositorio de HuggingFace publicado por el usuario Luca-hcosta que contiene una implementación propia y compacta de DeiT (Data-efficient Image Transformer) para tareas de clasificación, en su configuración "small". No se trata de un modelo entrenado ni de un release de pesos preentrenados: la propia model card lo describe como un punto de partida experimental orientado a revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño alcance. El checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida, no como un modelo con benchmarks.
+`Luca-hcosta/classification-experiments` es un repositorio de Hugging Face publicado por el usuario Luca-hcosta que contiene una implementación propia y compacta de DeiT (Data-efficient Image Transformer) para tareas de clasificación, en su configuración "small". No se trata de un modelo entrenado ni de un release de pesos preentrenados: la propia model card lo describe como un punto de partida experimental orientado a revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño alcance. El checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida, no como un modelo con benchmarks.
 
 El dato más llamativo es el tamaño: los metadatos de safetensors declaran 24.832 parámetros totales, tres órdenes de magnitud por debajo de los aproximadamente 22 millones de parámetros de un DeiT-Small estándar. Esto sugiere una configuración muy reducida (o un checkpoint limitado a una parte de la red), lo que refuerza su carácter de artefacto de prueba más que de modelo desplegable. El repositorio ocupa 0,0 GB e incluye `eval.py`, `config.json`, `training_args.json` y el propio README.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrada / contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Luca-hcosta/classification-experiments (DeiT small, implementación propia) | 24.832 | no disponible | sin benchmarks publicados; checkpoint sin entrenar | BSD-3-Clause | HuggingFace |
-| facebook/deit-small-patch16-224 | ~22 M | 224x224 | ImageNet top-1 en torno al 79,8 % (según la model card de referencia) | Apache-2.0 | HuggingFace |
-| facebook/deit-tiny-patch16-224 | ~5,7 M | 224x224 | ImageNet top-1 en torno al 72,2 % (según la model card de referencia) | Apache-2.0 | HuggingFace |
+| Luca-hcosta/classification-experiments (DeiT small, implementación propia) | 24.832 | no disponible | sin benchmarks publicados; checkpoint sin entrenar | BSD-3-Clause | Hugging Face |
+| facebook/deit-small-patch16-224 | ~22 M | 224x224 | ImageNet top-1 en torno al 79,8 % (según la model card de referencia) | Apache-2.0 | Hugging Face |
+| facebook/deit-tiny-patch16-224 | ~5,7 M | 224x224 | ImageNet top-1 en torno al 72,2 % (según la model card de referencia) | Apache-2.0 | Hugging Face |
 | ResNet-50 | ~25,6 M | 224x224 | ImageNet top-1 en torno al 76,1 % (referencia habitual en torchvision) | BSD-3-Clause / MIT según implementación | torchvision |
 
 La comparación directa no es equitativa: los tres modelos de referencia son pesos entrenados y publicados con métricas verificables, mientras que este repositorio es un esqueleto de implementación con un checkpoint de inicialización. La única ventaja medible del repositorio analizado es su licencia permisiva y su tamaño, que lo hacen útil para pruebas, no para inferencia real.
@@ -81,12 +81,12 @@ La comparación directa no es equitativa: los tres modelos de referencia son pes
 - Riesgo de alucinación: no aplica, ya que el modelo no genera texto ni produce salidas lingüísticas.
 - Limitaciones de contexto e idioma: no aplica en el sentido habitual; es un modelo de clasificación y no se documenta resolución de entrada ni conjunto de clases.
 - Uso comercial: la licencia BSD-3-Clause permite uso comercial con atribución, pero la model card advierte de que hay que revisar por separado los términos de las fuentes de datos externas que se utilicen con el repositorio.
-- Las APIs genéricas de carga automática de HuggingFace no funcionarán sin un adaptador explícito, al tratarse de una implementación personalizada; es necesario apoyarse en `config.json` y en el código de `eval.py`.
+- Las APIs genéricas de carga automática de Hugging Face no funcionarán sin un adaptador explícito, al tratarse de una implementación personalizada; es necesario apoyarse en `config.json` y en el código de `eval.py`.
 - El repositorio no documenta ningún resultado reproducible: para publicar una métrica sería obligatorio entrenar con un split etiquetado específico, reportar al menos tres semillas e incluir un baseline de capacidad comparable, además de conservar los registros de entrenamiento y las versiones del entorno.
 - El nombre del repositorio y del autor genera ambigüedad en búsquedas web, que devuelven resultados de entidades homónimas sin relación con el modelo; conviene citarlo siempre por su identificador completo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Luca-hcosta/classification-experiments
+- Hugging Face: https://huggingface.co/Luca-hcosta/classification-experiments
 
 Nota: la búsqueda web no ha devuelto enlaces técnicos relevantes sobre este modelo. Todos los resultados obtenidos corresponden a entidades homónimas sin relación alguna con el repositorio, por lo que no se incluyen como referencias: https://www.lucca.fr/ , https://www.lucca.fr/login , https://www.disney.fr/films/luca , https://www.luca.paris/ , https://fr.wikipedia.org/wiki/Luca_(film) .

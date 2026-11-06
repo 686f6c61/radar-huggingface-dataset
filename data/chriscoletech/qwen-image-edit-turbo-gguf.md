@@ -67,5 +67,5 @@ No se dispone de datos suficientes para una comparativa cuantitativa. El modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ChrisColeTech/qwen-image-edit-turbo-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ChrisColeTech/qwen-image-edit-turbo-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-Edit-2511

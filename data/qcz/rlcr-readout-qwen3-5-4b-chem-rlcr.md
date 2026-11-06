@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qcz/rlcr-readout-qwen3.5-4b-chem-rlcr
+- Hugging Face: https://huggingface.co/qcz/rlcr-readout-qwen3.5-4b-chem-rlcr
 - Coleccion Qwen3.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen35
 - Receta vLLM para Qwen3.5-4B: https://recipes.vllm.ai/Qwen/Qwen3.5-4B

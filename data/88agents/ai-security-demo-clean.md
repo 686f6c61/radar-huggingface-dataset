@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`88AgentS/ai-security-demo-clean` es un modelo publicado en HuggingFace por el usuario 88AgentS, descrito por su propio autor como un clasificador ligero utilizado para demostrar el escaneo de seguridad de modelos de Prisma AIRS (Palo Alto Networks). No se trata de un modelo de lenguaje generativo, sino de un artefacto de demostración concebido para validar un flujo de aprobación de seguridad automatizado en CI/CD (GitHub Actions).
+`88AgentS/ai-security-demo-clean` es un modelo publicado en Hugging Face por el usuario 88AgentS, descrito por su propio autor como un clasificador ligero utilizado para demostrar el escaneo de seguridad de modelos de Prisma AIRS (Palo Alto Networks). No se trata de un modelo de lenguaje generativo, sino de un artefacto de demostración concebido para validar un flujo de aprobación de seguridad automatizado en CI/CD (GitHub Actions).
 
 El repositorio contiene pesos en formato safetensors con un total declarado de 74.442 parámetros, lo que lo sitúa en el rango de los clasificadores minúsculos, muy lejos de cualquier LLM. La model card no documenta arquitectura, datos de entrenamiento, tokenizador ni tarea concreta más allá de la etiqueta `classifier`; su contenido se centra casi exclusivamente en el sello de aprobación de seguridad de Prisma AIRS.
 
@@ -83,5 +83,5 @@ No disponible. No se conocen modelos comparables de la misma categoria a partir 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/88AgentS/ai-security-demo-clean
+- Modelo en Hugging Face: https://huggingface.co/88AgentS/ai-security-demo-clean
 - Prisma AIRS (Palo Alto Networks): https://www.paloaltonetworks.com/sase/ai-security

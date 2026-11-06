@@ -1,7 +1,7 @@
 # Favaz-07/need-detection-xlmr
 
 ## Resumen
-El modelo `Favaz-07/need-detection-xlmr` es un clasificador de texto basado en la arquitectura XLM-RoBERTa, desarrollado por el usuario Favaz-07 y publicado en HuggingFace. Su nombre sugiere que está especializado en la detección de necesidades (need detection), probablemente en el contexto de atención al cliente o análisis de intenciones, aunque la model card no proporciona información concreta sobre la tarea exacta ni los datos de entrenamiento. El modelo tiene 278 millones de parámetros, lo que lo sitúa en la gama del XLM-R base (270M), y sus pesos se almacenan en formato safetensors, ocupando 1,1 GB en el repositorio.
+El modelo `Favaz-07/need-detection-xlmr` es un clasificador de texto basado en la arquitectura XLM-RoBERTa, desarrollado por el usuario Favaz-07 y publicado en Hugging Face. Su nombre sugiere que está especializado en la detección de necesidades (need detection), probablemente en el contexto de atención al cliente o análisis de intenciones, aunque la model card no proporciona información concreta sobre la tarea exacta ni los datos de entrenamiento. El modelo tiene 278 millones de parámetros, lo que lo sitúa en la gama del XLM-R base (270M), y sus pesos se almacenan en formato safetensors, ocupando 1,1 GB en el repositorio.
 
 La relevancia de este modelo radica en su naturaleza multilingüe, heredada de XLM-RoBERTa, que fue entrenado con datos en más de 100 idiomas. Sin embargo, la ausencia total de documentación técnica (arquitectura específica, hiperparámetros, dataset de fine-tuning, métricas de evaluación) limita seriamente su uso en producción sin un análisis previo. A pesar de ello, puede servir como punto de partida para experimentación o como base para un fine-tuning posterior con datos propios.
 
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: el modelo tiene 278M parámetros en fp32, lo que requiere aproximadamente 1,1 GB solo para los pesos. Con overhead de activaciones y buffers, se estima un consumo de 2-3 GB en inferencia.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en fp32. Una NVIDIA GTX 1650 (4 GB) o superior sería suficiente. Para mayor velocidad, una RTX 3060 (12 GB) o A10G permitiría mayor batch.
 - Compatibilidad con GPU de consumo: sí, cabe en GPUs de consumo medio, como RTX 3060, RTX 4060, etc.
-- Opciones de despliegue: al ser un modelo de transformers estándar, puede servirse con HuggingFace Inference Endpoints, Text Generation Inference (TGI) no aplica porque no es generativo, pero sí con vLLM (aunque no optimizado para encoder), o mediante FastAPI con transformers. También es compatible con text-embeddings-inference según los tags, aunque se trata de clasificación, no de embeddings.
+- Opciones de despliegue: al ser un modelo de transformers estándar, puede servirse con Hugging Face Inference Endpoints, Text Generation Inference (TGI) no aplica porque no es generativo, pero sí con vLLM (aunque no optimizado para encoder), o mediante FastAPI con transformers. También es compatible con text-embeddings-inference según los tags, aunque se trata de clasificación, no de embeddings.
 - Latencia y throughput: no se dispone de datos medidos. Para un modelo de este tamaño, en una GPU moderna (RTX 3090) se espera una latencia de 10-30 ms por ejemplo, con throughput de varios cientos de ejemplos por segundo, dependiendo del batch.
 
 ## Comparativa con modelos similares
@@ -55,10 +55,10 @@ Dado que no hay datos de rendimiento, la comparativa se basa en características
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Favaz-07/need-detection-xlmr | 278M | no disponible | Clasificación de necesidades | no disponible | HuggingFace |
-| XLM-RoBERTa base (facebook/xlm-roberta-base) | 270M | 512 tokens | Preentrenamiento (masked LM) | MIT | HuggingFace |
-| bert-base-multilingual-cased | 178M | 512 tokens | Preentrenamiento | Apache 2.0 | HuggingFace |
-| mDeBERTa-v3-base | 278M | 512 tokens | Preentrenamiento | MIT | HuggingFace |
+| Favaz-07/need-detection-xlmr | 278M | no disponible | Clasificación de necesidades | no disponible | Hugging Face |
+| XLM-RoBERTa base (facebook/xlm-roberta-base) | 270M | 512 tokens | Preentrenamiento (masked LM) | MIT | Hugging Face |
+| bert-base-multilingual-cased | 178M | 512 tokens | Preentrenamiento | Apache 2.0 | Hugging Face |
+| mDeBERTa-v3-base | 278M | 512 tokens | Preentrenamiento | MIT | Hugging Face |
 
 El modelo de Favaz-07 comparte tamaño con mDeBERTa-v3-base, pero no se puede comparar rendimiento sin benchmarks. La ventaja potencial es que ya está fine-tuneado para una tarea específica, aunque sin documentación.
 
@@ -72,6 +72,6 @@ El modelo de Favaz-07 comparte tamaño con mDeBERTa-v3-base, pero no se puede co
 - Sin garantía de producción: al no haber benchmarks ni validación externa, no se recomienda su despliegue en entornos críticos sin una evaluación exhaustiva previa.
 
 ## Enlaces
-- [HuggingFace - Favaz-07/need-detection-xlmr](https://huggingface.co/Favaz-07/need-detection-xlmr)
+- [Hugging Face - Favaz-07/need-detection-xlmr](https://huggingface.co/Favaz-07/need-detection-xlmr)
 - [Paper XLM-R - arXiv:1910.09700](https://arxiv.org/abs/1910.09700)
 - [Repositorio fairseq de XLM-R (referencia)](https://github.com/facebookresearch/fairseq/blob/main/examples/xlmr/README.md)

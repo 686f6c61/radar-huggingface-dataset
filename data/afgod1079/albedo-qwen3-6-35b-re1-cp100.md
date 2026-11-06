@@ -59,7 +59,7 @@ Los datos de benchmark corresponden al modelo base Qwen3.6-35B-A3B (no al checkp
 
 - **VRAM estimada**: el modelo con 35B parámetros y 3B activos, en BF16, requiere aproximadamente 70 GB de VRAM para carga completa. Con cuantización a 4 bits (GGUF), puede ejecutarse en configuraciones de ~22 GB según documentación de Unsloth.
 - **GPU recomendadas**: A100 80GB, H100 80GB, o configuraciones multi-GPU (2×RTX 4090 de 24 GB) para BF16. Para cuantización ligera, una sola RTX 4090 o RTX 3090 es suficiente.
-- **Opciones de despliegue**: vLLM, SGLang, KTransformers, Transformers con HuggingFace, y Unsloth para inferencia y entrenamiento local.
+- **Opciones de despliegue**: vLLM, SGLang, KTransformers, Transformers con Hugging Face, y Unsloth para inferencia y entrenamiento local.
 - **Latencia y throughput**: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -84,8 +84,8 @@ Nota: el checkpoint `afgod1079/albedo-qwen3.6-35b-re1-cp100` es un derivado del 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/afgod1079/albedo-qwen3.6-35b-re1-cp100
-- Modelo base en HuggingFace (Qwen3.6-35B-A3B): https://huggingface.co/Qwen/Qwen3.6-35B-A3B
+- Repositorio Hugging Face: https://huggingface.co/afgod1079/albedo-qwen3.6-35b-re1-cp100
+- Modelo base en Hugging Face (Qwen3.6-35B-A3B): https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Blog oficial de Qwen3.6: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Documentación de Unsloth sobre Qwen3.6: https://unsloth.ai/docs/models/qwen3.6
 - Catálogo de modelos en Microsoft Foundry: https://ai.azure.com/catalog/models/FW-Qwen3.6-35B-A3B

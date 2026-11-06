@@ -3,11 +3,11 @@
 # Ficha tecnica: Big Lust v1.6 para SDXL 1.0
 
 ## Resumen
-Big Lust v1.6 es un checkpoint de generacion de imagenes por difusion para SDXL 1.0. Segun la propia model card, el modelo lo creo el usuario waterdrinker y se publico originalmente en Civitai; el repositorio digiceo/biglust-1.6-sdxl de HuggingFace es un reupload no oficial realizado por el usuario digiceo con el objetivo declarado de facilitar su uso en la plataforma. El repositorio ocupa 6.9 GB, un tamano coherente con un checkpoint completo de SDXL en precision fp16.
+Big Lust v1.6 es un checkpoint de generacion de imagenes por difusion para SDXL 1.0. Segun la propia model card, el modelo lo creo el usuario waterdrinker y se publico originalmente en Civitai; el repositorio digiceo/biglust-1.6-sdxl de Hugging Face es un reupload no oficial realizado por el usuario digiceo con el objetivo declarado de facilitar su uso en la plataforma. El repositorio ocupa 6.9 GB, un tamano coherente con un checkpoint completo de SDXL en precision fp16.
 
 La informacion publicada es extremadamente escasa: no hay model card tecnica, no se documentan datos de entrenamiento, pasos de destilacion, composicion del dataset ni proceso de ajuste. La unica metadata disponible indica licencia "unknown", ausencia de pipeline declarado, cero descargas y cero likes en el momento de la consulta, y fechas de creacion y actualizacion del 30 de septiembre de 2026.
 
-Por su nombre y por su origen en Civitai, cabe esperar que sea un fine-tune orientado a ilustracion de personajes y contenido para adultos, pero esto no esta confirmado en ninguna fuente tecnica. Su relevancia practica es limitada: sirve como ejemplo de reupload no documentado en HuggingFace y como recordatorio de los riesgos de usar checkpoints sin licencia ni ficha tecnica en entornos de produccion.
+Por su nombre y por su origen en Civitai, cabe esperar que sea un fine-tune orientado a ilustracion de personajes y contenido para adultos, pero esto no esta confirmado en ninguna fuente tecnica. Su relevancia practica es limitada: sirve como ejemplo de reupload no documentado en Hugging Face y como recordatorio de los riesgos de usar checkpoints sin licencia ni ficha tecnica en entornos de produccion.
 
 ## Especificaciones tecnicas
 
@@ -54,16 +54,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Con optimizaciones de memoria (medvram, lowvram, atencion eficiente, VAE en tiled) puede ejecutarse con 6-8 GB de VRAM, a costa de velocidad.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090 para uso en escritorio; A100, H100 o L40S para despliegue en servidor con concurrencia.
 - Cabe en GPU de consumo: si, en cualquier tarjeta con 8 GB o mas de VRAM aplicando optimizaciones; con 12 GB o mas funciona sin recortes a 1024x1024.
-- Opciones de despliegue: ComfyUI, Automatic1111 WebUI, SD.Next, Forge, InvokeAI, Fooocus y libreria diffusers de HuggingFace. Para servicio en produccion, servidores con API sobre ComfyUI o diffusers en RunPod, Replicate o infraestructura propia.
+- Opciones de despliegue: ComfyUI, Automatic1111 WebUI, SD.Next, Forge, InvokeAI, Fooocus y libreria diffusers de Hugging Face. Para servicio en produccion, servidores con API sobre ComfyUI o diffusers en RunPod, Replicate o infraestructura propia.
 - Latencia y throughput estimados: para 1024x1024 con 25-30 pasos, del orden de 5-8 segundos por imagen en RTX 4090, 15-25 segundos en RTX 3060 12 GB y 2-4 segundos en A100 o H100. Son estimaciones tipicas para checkpoints SDXL, no mediciones realizadas sobre este modelo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Resolucion base | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Big Lust v1.6 (este modelo) | no disponible (repo de 6.9 GB) | no disponible; se asume 1024x1024 por herencia de SDXL 1.0 | sin benchmarks publicados | unknown | reupload en HuggingFace; original en Civitai |
-| SDXL 1.0 base | aproximadamente 3.500 millones (U-Net mas text encoders), cifra de referencia de la arquitectura, no verificada para este repo | 1024x1024 | benchmarks publicados por Stability AI en su momento; no reproducidos aqui | CreativeML Open RAIL++-M | HuggingFace y multiples mirrors |
-| Otros fine-tunes de SDXL publicados en Civitai | no disponibles | habitualmente 1024x1024 | sin benchmarks comparables publicados de forma sistematica | variable, a menudo restrictiva o poco clara | Civitai y reuploads en HuggingFace |
+| Big Lust v1.6 (este modelo) | no disponible (repo de 6.9 GB) | no disponible; se asume 1024x1024 por herencia de SDXL 1.0 | sin benchmarks publicados | unknown | reupload en Hugging Face; original en Civitai |
+| SDXL 1.0 base | aproximadamente 3.500 millones (U-Net mas text encoders), cifra de referencia de la arquitectura, no verificada para este repo | 1024x1024 | benchmarks publicados por Stability AI en su momento; no reproducidos aqui | CreativeML Open RAIL++-M | Hugging Face y multiples mirrors |
+| Otros fine-tunes de SDXL publicados en Civitai | no disponibles | habitualmente 1024x1024 | sin benchmarks comparables publicados de forma sistematica | variable, a menudo restrictiva o poco clara | Civitai y reuploads en Hugging Face |
 
 No se dispone de datos objetivos que permitan afirmar que Big Lust v1.6 supere o iguale a SDXL 1.0 base o a otros fine-tunes. La comparacion queda limitada a la arquitectura heredada y al regimen de licencia.
 
@@ -80,6 +80,6 @@ No se dispone de datos objetivos que permitan afirmar que Big Lust v1.6 supere o
 - Sin soporte ni mantenimiento: al tratarse de un reupload, no cabe esperar actualizaciones, correcciones ni atencion a incidencias.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/digiceo/biglust-1.6-sdxl
+- Repositorio en Hugging Face: https://huggingface.co/digiceo/biglust-1.6-sdxl
 - Modelo original en Civitai (autor waterdrinker): https://civitai.red/models/575395/big-lust
 - Los resultados de busqueda web proporcionados no contienen informacion relacionada con este modelo (corresponden al extranet de un consorcio de escuelas francesas y no se han utilizado como fuente).

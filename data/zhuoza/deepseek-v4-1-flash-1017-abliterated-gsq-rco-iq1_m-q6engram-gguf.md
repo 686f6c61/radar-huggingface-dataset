@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZHUOZA/DeepSeek-V4.1-Flash-1017-abliterated-GSQ-RCO-IQ1_M-Q6Engram-GGUF | 748.494.643.824 | no disponible | IQ1_M / Q6 / Q_8 | MIT | GGUF en HuggingFace |
-| huihui-ai/Huihui-DeepSeek-V4.1-Flash-1017-abliterated-GGUF | no disponible | no disponible | GGUF (abliterated) | no disponible | GGUF en HuggingFace |
-| ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF | no disponible | no disponible | GSQ-RCO | no disponible | GGUF en HuggingFace |
-| unsloth/DeepSeek-V4.1-Flash-1017-GGUF | no disponible | no disponible | GGUF | no disponible | GGUF en HuggingFace |
+| ZHUOZA/DeepSeek-V4.1-Flash-1017-abliterated-GSQ-RCO-IQ1_M-Q6Engram-GGUF | 748.494.643.824 | no disponible | IQ1_M / Q6 / Q_8 | MIT | GGUF en Hugging Face |
+| huihui-ai/Huihui-DeepSeek-V4.1-Flash-1017-abliterated-GGUF | no disponible | no disponible | GGUF (abliterated) | no disponible | GGUF en Hugging Face |
+| ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF | no disponible | no disponible | GSQ-RCO | no disponible | GGUF en Hugging Face |
+| unsloth/DeepSeek-V4.1-Flash-1017-GGUF | no disponible | no disponible | GGUF | no disponible | GGUF en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ZHUOZA/DeepSeek-V4.1-Flash-1017-abliterated-GSQ-RCO-IQ1_M-Q6Engram-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ZHUOZA/DeepSeek-V4.1-Flash-1017-abliterated-GSQ-RCO-IQ1_M-Q6Engram-GGUF
 - Repositorio de origen (abliterated): https://huggingface.co/huihui-ai/Huihui-DeepSeek-V4.1-Flash-1017-abliterated-GGUF
 - Repositorio de origen (GSQ-RCO): https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
 - Repositorio de origen (unsloth): https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF

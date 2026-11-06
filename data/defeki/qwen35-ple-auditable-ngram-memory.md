@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace contiene los artefactos reproducibles del artículo «Auditable N-Gram Memory for Small Language Models», desarrollado por DefEki. No se trata de un modelo de lenguaje completo, sino de un conjunto de recursos de investigacion: proyectores PLE, adaptadores MoRA purificados, datasets, configuraciones, scripts y resultados de evaluacion. El objetivo es estudiar y aplicar una memoria externa basada en n-gramas que sea auditable, es decir, que permita rastrear exactamente que fragmentos de texto externo influyen en la generacion del modelo.
+Este repositorio de Hugging Face contiene los artefactos reproducibles del artículo «Auditable N-Gram Memory for Small Language Models», desarrollado por DefEki. No se trata de un modelo de lenguaje completo, sino de un conjunto de recursos de investigacion: proyectores PLE, adaptadores MoRA purificados, datasets, configuraciones, scripts y resultados de evaluacion. El objetivo es estudiar y aplicar una memoria externa basada en n-gramas que sea auditable, es decir, que permita rastrear exactamente que fragmentos de texto externo influyen en la generacion del modelo.
 
 La tecnica parece estar pensada para modelos pequeños de lenguaje (SLM), y los scripts hacen referencia a un modelo base de la familia Qwen3.5 (concretamente Qwen3.5-0.8B). Los proyectos y adaptadores se entrenarían sobre datasets de continuacion local de 1k y 10k muestras. El repositorio incluye resultados de HumanEval, TriviaQA, pass@k, evaluaciones con LLM como juez y benchmarks de CPU. Es relevante ahora porque aborda un problema tipico de los modelos pequeños, como las alucinaciones y la falta de conocimiento factual, mediante una memoria externa ligera y verificable.
 
@@ -76,7 +76,7 @@ No disponible. Este repositorio no es un modelo base comparable directamente con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DefEki/qwen35-ple-auditable-ngram-memory
+- Hugging Face: https://huggingface.co/DefEki/qwen35-ple-auditable-ngram-memory
 - Repositorio de codigo: https://github.com/QingGo/qwen35-ple
 - Fuente del paper: https://github.com/QingGo/qwen35-ple/blob/main/paper/paper.typ
 - PDF compilado: https://github.com/QingGo/qwen35-ple/blob/main/paper.pdf

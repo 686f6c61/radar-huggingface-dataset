@@ -77,8 +77,8 @@ Media de las cinco semillas oficiales: 0,740 s, idéntica al modelo base, con 5 
 
 | Modelo | Tipo | Parámetros | Contexto | Resultado en el reto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `rumezhak/microduck-hill-remix-leader2` | Red densa más tabla de búsqueda (ONNX) | No disponible | No aplica | 0,740 s de media, 5/5 semillas oficiales | Apache-2.0 | HuggingFace, 19 descargas |
-| `a1rb4Ck/microduck-hill-1m5` | Red densa más tabla de búsqueda | No disponible | No aplica | 0,740 s de media, 5/5 semillas oficiales | Apache-2.0 | HuggingFace; mantiene el liderato en la clasificación según el autor |
+| `rumezhak/microduck-hill-remix-leader2` | Red densa más tabla de búsqueda (ONNX) | No disponible | No aplica | 0,740 s de media, 5/5 semillas oficiales | Apache-2.0 | Hugging Face, 19 descargas |
+| `a1rb4Ck/microduck-hill-1m5` | Red densa más tabla de búsqueda | No disponible | No aplica | 0,740 s de media, 5/5 semillas oficiales | Apache-2.0 | Hugging Face; mantiene el liderato en la clasificación según el autor |
 | `jrubiosainz` (remix9) | Política para el Microduck Arena | No disponible | No aplica | No disponible | No disponible | Referenciado en los créditos del modelo base |
 
 Las diferencias entre este archivo y su base son exclusivamente las filas re-buscadas de las semillas 1 a 4 (311 filas en ambos casos); la red, la máscara, la tolerancia y las filas de la semilla 5 son idénticas. No se dispone de datos de otros competidores del Microduck Arena en la información proporcionada.
@@ -96,9 +96,9 @@ Las diferencias entre este archivo y su base son exclusivamente las filas re-bus
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rumezhak/microduck-hill-remix-leader2
+- Modelo en Hugging Face: https://huggingface.co/rumezhak/microduck-hill-remix-leader2
 - Modelo base: https://huggingface.co/a1rb4Ck/microduck-hill-1m5
 - Microduck Arena (Space de Pollen Robotics): https://huggingface.co/spaces/pollen-robotics/microduck-arena
-- Organización Pollen Robotics en HuggingFace: https://huggingface.co/pollen-robotics
+- Organización Pollen Robotics en Hugging Face: https://huggingface.co/pollen-robotics
 - Perfil del autor del modelo base: https://huggingface.co/a1rb4Ck
 - Perfil de jrubiosainz (remix9), citado en los créditos: https://huggingface.co/jrubiosainz

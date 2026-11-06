@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| enzolabs/ecapa-tdnn-coreml | ECAPA-TDNN (Core ML) | Core ML (.mlmodelc) | Apache-2.0 | HuggingFace |
-| speechbrain/spkrec-ecapa-voxceleb | ECAPA-TDNN (PyTorch) | PyTorch | Apache-2.0 | HuggingFace (modelo base) |
-| Otros extractores de embeddings de hablante (pyannote, WeSpeaker, TitaNet) | diversa | PyTorch / ONNX | no disponible | HuggingFace / GitHub |
+| enzolabs/ecapa-tdnn-coreml | ECAPA-TDNN (Core ML) | Core ML (.mlmodelc) | Apache-2.0 | Hugging Face |
+| speechbrain/spkrec-ecapa-voxceleb | ECAPA-TDNN (PyTorch) | PyTorch | Apache-2.0 | Hugging Face (modelo base) |
+| Otros extractores de embeddings de hablante (pyannote, WeSpeaker, TitaNet) | diversa | PyTorch / ONNX | no disponible | Hugging Face / GitHub |
 
 La diferencia principal frente al modelo base es el formato: enzolabs/ecapa-tdnn-coreml ofrece el mismo modelo ECAPA-TDNN listo para Core ML, mientras que speechbrain/spkrec-ecapa-voxceleb requiere PyTorch. No se dispone de datos de rendimiento que permitan comparar numericamente con alternativas como pyannote, WeSpeaker o TitaNet.
 
@@ -92,8 +92,8 @@ La diferencia principal frente al modelo base es el formato: enzolabs/ecapa-tdnn
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/enzolabs/ecapa-tdnn-coreml
-- Modelo base en HuggingFace: https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb
+- Modelo en Hugging Face: https://huggingface.co/enzolabs/ecapa-tdnn-coreml
+- Modelo base en Hugging Face: https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb
 - SpeechBrain: https://speechbrain.github.io/
 - coremltools: https://github.com/apple/coremltools
 - Core ML (Apple Developer): https://developer.apple.com/documentation/coreml

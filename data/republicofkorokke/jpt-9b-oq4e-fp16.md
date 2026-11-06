@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jpt-9b-oQ4e-fp16 es un modelo de la familia qwen3_5 publicado por el usuario RepublicOfKorokke en HuggingFace. El repositorio contiene pesos en formato MLX safetensors cuantizados a 4 bits mediante oQ (oMLX v0.7.0), una tecnica de cuantizacion de precision mixta con group size 64. El modelo base tiene 9.409.813.744 parametros, lo que lo situa en la franja de ~9B.
+jpt-9b-oQ4e-fp16 es un modelo de la familia qwen3_5 publicado por el usuario RepublicOfKorokke en Hugging Face. El repositorio contiene pesos en formato MLX safetensors cuantizados a 4 bits mediante oQ (oMLX v0.7.0), una tecnica de cuantizacion de precision mixta con group size 64. El modelo base tiene 9.409.813.744 parametros, lo que lo situa en la franja de ~9B.
 
 La relevancia de esta publicacion esta en el ecosistema MLX, un framework de Apple pensado para inferencia y fine-tuning eficientes sobre Apple Silicon aprovechando la memoria unificada. Gracias a la cuantizacion a 4 bits, un modelo de ~9B puede desplegarse en equipos Mac de sobremesa y portatiles con RAM suficiente, con un tamano de repositorio de 7,0 GB.
 
@@ -66,10 +66,10 @@ Los siguientes modelos se incluyen como referencia de categoria (~8-9B de texto)
 
 | Modelo | Parametros | Contexto | Formato/cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jpt-9b-oQ4e-fp16 | 9,41B | no disponible | MLX safetensors 4-bit | no disponible | HuggingFace (MLX) |
-| Qwen3-8B | 8,2B | referencia publica | GGUF, AWQ, safetensors | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B | 8,03B | referencia publica | GGUF, safetensors | Llama Community License | HuggingFace |
-| Gemma 2 9B | 9,24B | referencia publica | GGUF, safetensors | Gemma Terms | HuggingFace |
+| jpt-9b-oQ4e-fp16 | 9,41B | no disponible | MLX safetensors 4-bit | no disponible | Hugging Face (MLX) |
+| Qwen3-8B | 8,2B | referencia publica | GGUF, AWQ, safetensors | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B | 8,03B | referencia publica | GGUF, safetensors | Llama Community License | Hugging Face |
+| Gemma 2 9B | 9,24B | referencia publica | GGUF, safetensors | Gemma Terms | Hugging Face |
 
 No se dispone de datos de rendimiento (benchmarks) del modelo analizado, por lo que no es posible una comparacion cuantitativa de calidad frente a estas alternativas.
 
@@ -87,6 +87,6 @@ No se dispone de datos de rendimiento (benchmarks) del modelo analizado, por lo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RepublicOfKorokke/jpt-9b-oQ4e-fp16
+- Hugging Face: https://huggingface.co/RepublicOfKorokke/jpt-9b-oQ4e-fp16
 - oQ (oMLX): https://github.com/jundot/omlx
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la informacion disponible.

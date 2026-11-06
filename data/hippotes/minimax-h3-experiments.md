@@ -65,7 +65,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Hippotes/MiniMax-H3-Experiments
+- Repositorio Hugging Face: https://huggingface.co/Hippotes/MiniMax-H3-Experiments
 - GitHub oficial de MiniMax H3: https://github.com/MiniMax-AI/MiniMax-H3
 - Blog de MiniMax sobre H3: https://www.minimax.io/blog/minimax-h3
 - Tutoriales y despliegue (design.minimax.io): https://design.minimax.io/h3

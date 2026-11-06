@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Msduck/whisper-small-lora-hi-mr-en-v1 es un ajuste fino mediante LoRA sobre el modelo de reconocimiento automatico del habla (ASR) Whisper small de OpenAI, publicado en HuggingFace por el usuario Msduck bajo la libreria transformers y con pesos en formato safetensors. El sufijo del identificador (hi-mr-en) apunta a que el adaptador seha entrenado para hindi, marati e ingles, probablemente incluyendo situaciones de code-switching entre esos idiomas, aunque la model card no lo confirma en ningun momento.
+Msduck/whisper-small-lora-hi-mr-en-v1 es un ajuste fino mediante LoRA sobre el modelo de reconocimiento automatico del habla (ASR) Whisper small de OpenAI, publicado en Hugging Face por el usuario Msduck bajo la libreria transformers y con pesos en formato safetensors. El sufijo del identificador (hi-mr-en) apunta a que el adaptador seha entrenado para hindi, marati e ingles, probablemente incluyendo situaciones de code-switching entre esos idiomas, aunque la model card no lo confirma en ningun momento.
 
-La model card publicada es la plantilla autogenerada por HuggingFace: todos los apartados relevantes (descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia, infraestructura de computo y cita) aparecen con el texto "[More Information Needed]". En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, y su tamano declarado es de 0.0 GB, lo que impide verificar que los pesos del adaptador esten realmente subidos.
+La model card publicada es la plantilla autogenerada por Hugging Face: todos los apartados relevantes (descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia, infraestructura de computo y cita) aparecen con el texto "[More Information Needed]". En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, y su tamano declarado es de 0.0 GB, lo que impide verificar que los pesos del adaptador esten realmente subidos.
 
 La relevancia de este tipo de artefactos es alta: los adaptadores LoRA sobre Whisper permiten adaptar ASR a idiomas con pocos recursos como el hindi y el marati con un coste de computo minimo. Sin embargo, la ausencia total de evaluacion publicada, de licencia declarada y de documentacion de entrenamiento lo convierten en un modelo no apto para produccion sin una validacion previa por parte del usuario. Esta ficha debe leerse como provisional y sujeta a revision si el autor completa la model card.
 
@@ -19,7 +19,7 @@ La relevancia de este tipo de artefactos es alta: los adaptadores LoRA sobre Whi
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | Hindi, marati e ingles segun el identificador (hi-mr-en); no declarados en la model card |
 | Licencia | No disponible. La model card no declara licencia alguna |
-| Formato de pesos | safetensors (etiqueta de HuggingFace) |
+| Formato de pesos | safetensors (etiqueta de Hugging Face) |
 | Libreria | transformers |
 | Tamano del repositorio | 0.0 GB en el momento de la consulta |
 | Descargas / likes | 0 / 0 |
@@ -29,7 +29,7 @@ La relevancia de este tipo de artefactos es alta: los adaptadores LoRA sobre Whi
 
 El modelo base Whisper small es un transformer encoder-decoder de tipo secuencia a secuencia que consume espectrogramas mel de 80 canales calculados sobre ventanas de 30 segundos y genera tokens de texto de forma autorregresiva, con tokens especiales para idioma, tarea (transcripcion o traduccion) y marcas de tiempo. Sobre esa base, el autor ha aplicado un ajuste fino con LoRA (Low-Rank Adaptation), una tecnica de adaptacion parametro-eficiente que congela los pesos originales e inserta matrices de bajo rango en determinadas capas, reduciendo drasticamente el numero de parametros entrenables y el coste de entrenamiento.
 
-No hay informacion disponible sobre el numero de tokens o de horas de audio utilizados, la composicion del dataset, el rango y las capas objetivo del adaptador LoRA, la tasa de aprendizaje, la precision de entrenamiento (fp16, bf16, fp32) ni si se aplicaron tecnicas de alineacion como RLHF o DPO (en ASR estos esquemas son poco habituales frente al entrenamiento supervisado con CTC o cross-entropy). La etiqueta arxiv:1910.09700 que aparece en el repositorio corresponde al articulo de Lacoste et al. sobre el calculo del impacto ambiental del aprendizaje automatico, citado en la plantilla por defecto de HuggingFace, y no a un articulo sobre este modelo.
+No hay informacion disponible sobre el numero de tokens o de horas de audio utilizados, la composicion del dataset, el rango y las capas objetivo del adaptador LoRA, la tasa de aprendizaje, la precision de entrenamiento (fp16, bf16, fp32) ni si se aplicaron tecnicas de alineacion como RLHF o DPO (en ASR estos esquemas son poco habituales frente al entrenamiento supervisado con CTC o cross-entropy). La etiqueta arxiv:1910.09700 que aparece en el repositorio corresponde al articulo de Lacoste et al. sobre el calculo del impacto ambiental del aprendizaje automatico, citado en la plantilla por defecto de Hugging Face, y no a un articulo sobre este modelo.
 
 ## Capacidades
 
@@ -93,7 +93,7 @@ No hay datos de rendimiento publicados para este modelo que permitan una compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Msduck/whisper-small-lora-hi-mr-en-v1
+- Modelo en Hugging Face: https://huggingface.co/Msduck/whisper-small-lora-hi-mr-en-v1
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Repositorio oficial del codigo de Whisper: https://github.com/openai/whisper
 - Articulo de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

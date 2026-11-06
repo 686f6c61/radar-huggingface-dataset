@@ -83,8 +83,8 @@ Cuantizacion: MLX 4-bit genera el mismo asunto que fp16 solo en el 19.56% [16.0,
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Commit Suggestor (v2) | 1.54B | no disponible | Asunto de commit desde diff | Apache 2.0 | HuggingFace (MLX, GGUF) |
-| Qwen2.5-Coder-1.5B-Instruct | 1.54B | no disponible en esta ficha | Generacion de codigo general | Apache 2.0 | HuggingFace |
+| Commit Suggestor (v2) | 1.54B | no disponible | Asunto de commit desde diff | Apache 2.0 | Hugging Face (MLX, GGUF) |
+| Qwen2.5-Coder-1.5B-Instruct | 1.54B | no disponible en esta ficha | Generacion de codigo general | Apache 2.0 | Hugging Face |
 | v1 (QLoRA en MLX) | 1.54B | no disponible | Asunto de commit desde diff | no disponible | Referenciado en la model card, no publicado como repo independiente |
 
 El modelo base sin ajuste obtiene ROUGE-L 21.09 y 92.22% de asuntos bien formados, frente a 31.13 y 100% del modelo ajustado. La v1 logra 31.06 de ROUGE-L pero solo 80.67% de asuntos especificos y 6.22% de genericos. No se dispone de datos de otros modelos especializados en generacion de mensajes de commit en la informacion proporcionada.
@@ -104,7 +104,7 @@ El modelo base sin ajuste obtiene ROUGE-L 21.09 y 92.22% de asuntos bien formado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nihar-damera/commit-suggestor
+- Hugging Face: https://huggingface.co/nihar-damera/commit-suggestor
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Repositorio GitHub (codigo, pipeline de datos y evaluacion): https://github.com/nihardamera/Commit-Suggestor
 - Data card: https://github.com/nihardamera/Commit-Suggestor/blob/main/docs/DATA_CARD.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una cuantizacion EXL3 (ExLlamaV3) de 3,50 bits por peso del modelo Luni/Qwen3.8-Flash-Coder-CYBER-Heretic, un derivado de la familia Qwen orientado a programacion y a tareas de ciberseguridad ofensiva/defensiva sin censura. El autor es el usuario de HuggingFace «Luni» y la publicacion es una conversion de pesos, no un entrenamiento nuevo: no se anaden datos ni se modifica el comportamiento del modelo base, solo se reduce la precision de los pesos para hacerlo viable en GPUs de consumo.
+Este repositorio contiene una cuantizacion EXL3 (ExLlamaV3) de 3,50 bits por peso del modelo Luni/Qwen3.8-Flash-Coder-CYBER-Heretic, un derivado de la familia Qwen orientado a programacion y a tareas de ciberseguridad ofensiva/defensiva sin censura. El autor es el usuario de Hugging Face «Luni» y la publicacion es una conversion de pesos, no un entrenamiento nuevo: no se anaden datos ni se modifica el comportamiento del modelo base, solo se reduce la precision de los pesos para hacerlo viable en GPUs de consumo.
 
 El dato mas relevante es el recuento real de parametros del safetensors: 10.791.904.640 (~10,79 mil millones). Con ese tamano, la cuantizacion deja los pesos en aproximadamente 19,5 GB, lo que permite mantener el modelo completo en VRAM en tarjetas de 24 GB (RTX 3090, RTX 4090) y de 32 GB (RTX 5090), algo imposible con los pesos originales en FP16. El autor recomienda una ventana de 64k tokens usando cache KV en FP8.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Cuantización / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (EXL3 3.50 bpw) | 10,79 B | 64k recomendado (nativo no disponible) | EXL3 3,50 bpw, ~19,5 GB, EXL3/ExLlamaV3 | apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Luni/Qwen3.8-Flash-Coder-CYBER-Heretic (modelo base) | no disponible | no disponible | no disponible (presumiblemente precision completa, sin confirmar) | no disponible en la informacion | HuggingFace |
+| Este repositorio (EXL3 3.50 bpw) | 10,79 B | 64k recomendado (nativo no disponible) | EXL3 3,50 bpw, ~19,5 GB, EXL3/ExLlamaV3 | apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Luni/Qwen3.8-Flash-Coder-CYBER-Heretic (modelo base) | no disponible | no disponible | no disponible (presumiblemente precision completa, sin confirmar) | no disponible en la informacion | Hugging Face |
 | Otras cuantizaciones o modelos coder de ~10-14 B | no disponible | no disponible | no disponible | no disponible | No se han encontrado alternativas documentadas en la informacion disponible |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con modelos de la misma categoria; la comparativa se limita a parametros, formato y licencia.

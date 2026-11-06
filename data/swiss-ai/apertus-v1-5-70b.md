@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Apertus-v1.5-70B es un modelo de lenguaje multimodal desarrollado por la organización suiza swiss-ai (Swiss AI Initiative), publicado en HuggingFace bajo licencia Apache-2.0 y con acceso restringido (gated), lo que obliga a aceptar condiciones de uso antes de descargarlo. Con 72.005.819.139 parámetros (unos 72.000 millones) y un repositorio de 145,6 GB en formato safetensors, se posiciona en la franja de modelos densos de gran tamano orientados a generación de texto y conversación.
+Apertus-v1.5-70B es un modelo de lenguaje multimodal desarrollado por la organización suiza swiss-ai (Swiss AI Initiative), publicado en Hugging Face bajo licencia Apache-2.0 y con acceso restringido (gated), lo que obliga a aceptar condiciones de uso antes de descargarlo. Con 72.005.819.139 parámetros (unos 72.000 millones) y un repositorio de 145,6 GB en formato safetensors, se posiciona en la franja de modelos densos de gran tamano orientados a generación de texto y conversación.
 
 La ficha del modelo lo etiqueta como `image-text-to-text`, `multimodal`, `multilingual`, `conversational` y `text-generation`, además de incluir la etiqueta `eval-results`, lo que indica que el autor publica resultados de evaluación junto con los pesos. Su relevancia actual reside en que se trata de una apuesta europea por modelos abiertos de gran escala, con licencia permisiva (Apache-2.0) y capacidades multimodales, un perfil poco frecuente entre los modelos de más de 70.000 millones de parámetros, que suelen publicarse bajo licencias comunitarias restrictivas.
 
@@ -21,12 +21,12 @@ El modelo acumula 17.512 descargas y 103 "me gusta" en el momento de redactar es
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (tamano del repositorio: 145,6 GB) |
 | Modalidades de entrada | Texto e imagen (pipeline `image-text-to-text`) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Biblioteca compatible | transformers |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo en la informacion proporcionada. Las etiquetas de HuggingFace lo identifican como un modelo compatible con la biblioteca `transformers` y con pipeline `image-text-to-text`, lo que implica la presencia de un componente de codificacion visual acoplado a un decodificador de lenguaje. El tamano del repositorio (145,6 GB) es coherente con pesos en precision bf16/fp16 para 72.000 millones de parametros, mas el codificador de vision y los ficheros auxiliares.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo en la informacion proporcionada. Las etiquetas de Hugging Face lo identifican como un modelo compatible con la biblioteca `transformers` y con pipeline `image-text-to-text`, lo que implica la presencia de un componente de codificacion visual acoplado a un decodificador de lenguaje. El tamano del repositorio (145,6 GB) es coherente con pesos en precision bf16/fp16 para 72.000 millones de parametros, mas el codificador de vision y los ficheros auxiliares.
 
 Tampoco se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. La etiqueta `apertus1p5` sugiere una version 1.5 dentro de la familia Apertus, pero no se aportan notas de version ni detalles sobre que cambia respecto a versiones anteriores. La presencia de la etiqueta `eval-results` indica que el autor publica evaluaciones, si bien los valores concretos no forman parte de la informacion disponible en esta busqueda.
 
@@ -56,7 +56,7 @@ Tampoco se especifican el numero de tokens de entrenamiento, la composicion del 
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La ficha de HuggingFace incluye la etiqueta `eval-results`, lo que sugiere que existen evaluaciones publicadas por el autor, pero los valores numericos concretos no se han recuperado en la busqueda realizada. No se deben asumir cifras de MMLU, HumanEval, GSM8K ni de benchmarks multimodales sin acceso a la fuente original.
+La ficha de Hugging Face incluye la etiqueta `eval-results`, lo que sugiere que existen evaluaciones publicadas por el autor, pero los valores numericos concretos no se han recuperado en la busqueda realizada. No se deben asumir cifras de MMLU, HumanEval, GSM8K ni de benchmarks multimodales sin acceso a la fuente original.
 
 ## Requisitos de hardware
 
@@ -67,15 +67,15 @@ La ficha de HuggingFace incluye la etiqueta `eval-results`, lo que sugiere que e
 - Opciones de despliegue: al ser un modelo de la biblioteca `transformers`, es compatible con servidores como vLLM y TGI (sujeto a que la arquitectura multimodal este soportada por esas herramientas). Para llama.cpp u Ollama seria necesario disponer de conversiones a GGUF, que no se confirman en la informacion proporcionada.
 - Almacenamiento: el repositorio ocupa 145,6 GB, por lo que se necesita espacio en disco suficiente para la descarga completa, ademas de margen para cache de compilacion.
 - Latencia y throughput estimados: no disponible en la informacion proporcionada.
-- Acceso: al ser un modelo gated, la descarga requiere autenticacion con un token de HuggingFace y la aceptacion previa de las condiciones de uso.
+- Acceso: al ser un modelo gated, la descarga requiere autenticacion con un token de Hugging Face y la aceptacion previa de las condiciones de uso.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Multimodal | Acceso |
 |---|---|---|---|---|---|
-| Apertus-v1.5-70B (swiss-ai) | 72.005.819.139 | No disponible | Apache-2.0 | Si (`image-text-to-text`) | Gated en HuggingFace |
-| Llama-3.3-70B-Instruct (Meta) | ~70.600 millones | 128.000 tokens | Llama 3.3 Community License | No (solo texto) | Abierto en HuggingFace |
-| Qwen2.5-72B-Instruct (Alibaba) | ~72.700 millones | 32.768 tokens nativos, ampliable | Licencia Qwen | No (solo texto) | Abierto en HuggingFace |
+| Apertus-v1.5-70B (swiss-ai) | 72.005.819.139 | No disponible | Apache-2.0 | Si (`image-text-to-text`) | Gated en Hugging Face |
+| Llama-3.3-70B-Instruct (Meta) | ~70.600 millones | 128.000 tokens | Llama 3.3 Community License | No (solo texto) | Abierto en Hugging Face |
+| Qwen2.5-72B-Instruct (Alibaba) | ~72.700 millones | 32.768 tokens nativos, ampliable | Licencia Qwen | No (solo texto) | Abierto en Hugging Face |
 | Apertus-v1.5-70B frente a alternativas | Mismo orden de magnitud (~70-73B) | No comparable al no disponerse del dato | Apache-2.0, la mas permisiva de las tres | Unica opcion multimodal del grupo | Gated, requiere aceptacion |
 
 Los datos de parametros, contexto y licencia de los modelos comparados corresponden a sus fichas publicas y pueden variar con actualizaciones posteriores. No se dispone de resultados de benchmarks comparativos en la informacion proporcionada, por lo que no se pueden establecer conclusiones de rendimiento relativo.
@@ -86,7 +86,7 @@ Los datos de parametros, contexto y licencia de los modelos comparados correspon
 - Riesgo de alucinacion: inherente a los modelos generativos de este tamano. No se han publicado tasas de alucinacion ni evaluaciones de veracidad en la informacion disponible.
 - Limitaciones de contexto: se desconoce la longitud de contexto soportada, lo que impide garantizar un rendimiento estable en tareas de contexto largo (analisis de documentos extensos, resumen de repositorios de codigo, etc.).
 - Limitaciones de idioma: la etiqueta `multilingual` no viene acompanada de un listado de idiomas ni de metricas por lengua. No se puede asumir un rendimiento homogeneo en castellano.
-- Licencia: Apache-2.0 permite uso comercial, modificacion y redistribucion, pero al tratarse de un modelo gated, el acceso esta sujeto a las condiciones adicionales que el autor establece en HuggingFace. Es necesario revisar dichos terminos antes de un despliegue en produccion.
+- Licencia: Apache-2.0 permite uso comercial, modificacion y redistribucion, pero al tratarse de un modelo gated, el acceso esta sujeto a las condiciones adicionales que el autor establece en Hugging Face. Es necesario revisar dichos terminos antes de un despliegue en produccion.
 - Ausencia de datos de entrenamiento: no se especifica la composicion del dataset, lo que dificulta evaluar riesgos de contaminacion de benchmarks o de sesgos de dominio.
 - Soporte de herramientas y agentes: no confirmado. No conviene disenar pipelines que dependan de function calling sin verificarlo empiricamente.
 - Compatibilidad de despliegue: al ser multimodal y de gran tamano, el soporte en servidores de inferencia de alto rendimiento (vLLM, TGI) puede requerir versiones especificas o no estar disponible; conviene validarlo antes de comprometerse con una arquitectura de produccion.
@@ -94,7 +94,7 @@ Los datos de parametros, contexto y licencia de los modelos comparados correspon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/swiss-ai/Apertus-v1.5-70B
+- Hugging Face: https://huggingface.co/swiss-ai/Apertus-v1.5-70B
 - Paper, blog o repositorio oficial: no disponible en la informacion proporcionada
 - Demos o endpoints: no disponible en la informacion proporcionada
 - Busqueda web: los resultados devueltos corresponden a la aerolinea SWISS, SwissTransfer y Swiss Life, y no guardan ninguna relacion con el modelo. No se han encontrado enlaces relevantes adicionales en la busqueda realizada.

@@ -78,7 +78,7 @@ La principal diferencia con el modelo original es la eliminacion de los rechazos
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Mistral-Small-24B-Instruct-Jbliterated-i1-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Mistral-Small-24B-Instruct-Jbliterated-i1-GGUF
 - Modelo base (ApolloRaines): https://huggingface.co/ApolloRaines/Mistral-Small-24B-Instruct-Jbliterated
 - Modelo original de Mistral AI: https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501
 - Version abliterada estatica (sin imatrix): https://huggingface.co/mradermacher/Mistral-Small-24B-Instruct-Jbliterated-GGUF

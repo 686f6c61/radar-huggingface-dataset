@@ -95,7 +95,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GrillingWithJorge/gemma-4-12B-it-oQ8e-fp16
+- Modelo en Hugging Face: https://huggingface.co/GrillingWithJorge/gemma-4-12B-it-oQ8e-fp16
 - Herramienta oQ / oMLX (referenciada por el autor): https://github.com/jundot/omlx
 - Framework MLX: no disponible en la informacion proporcionada
 - Paper del modelo base: no disponible

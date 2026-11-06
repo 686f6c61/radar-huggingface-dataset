@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `luau-coder-1.0-preview-medium` es un checkpoint intermedio de entrenamiento publicado por el usuario `khtsly` en HuggingFace. Se trata de un punto de control periódico en el paso 600 del entrenamiento de un modelo de lenguaje destinado a la generación de código, concretamente orientado al lenguaje Luau, un lenguaje de programación basado en Lua desarrollado por Roblox. La arquitectura utilizada es un port del modelo Kimi K3 mini, implementado mediante la clase `KimiLinearForCausalLM` de la librería Transformers.
+El modelo `luau-coder-1.0-preview-medium` es un checkpoint intermedio de entrenamiento publicado por el usuario `khtsly` en Hugging Face. Se trata de un punto de control periódico en el paso 600 del entrenamiento de un modelo de lenguaje destinado a la generación de código, concretamente orientado al lenguaje Luau, un lenguaje de programación basado en Lua desarrollado por Roblox. La arquitectura utilizada es un port del modelo Kimi K3 mini, implementado mediante la clase `KimiLinearForCausalLM` de la librería Transformers.
 
 El modelo tiene un total de 1.398.887.904 parámetros (aproximadamente 1.400 millones) y su repositorio ocupa 41,3 GB, lo que sugiere que los pesos están almacenados en alta precisión o que el repositorio contiene múltiples archivos o versiones. Es importante destacar que el autor indica explícitamente que **no es un modelo terminado**, sino que los pesos intermedios se subieron durante el entrenamiento con fines de conservación y comparación entre checkpoints. Por tanto, no debe considerarse un modelo listo para producción.
 
@@ -65,6 +65,6 @@ No disponible. Al ser un checkpoint intermedio sin benchmarks publicados, no es 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/khtsly/luau-coder-1.0-preview-medium
+- Hugging Face: https://huggingface.co/khtsly/luau-coder-1.0-preview-medium
 - Tokenizer asociado: https://huggingface.co/khtsly/luau-coder-1.0-preview-tokenizer
 - Luau (lenguaje de programación): https://github.com/luau-lang

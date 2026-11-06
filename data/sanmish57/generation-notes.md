@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sanmish57/generation-notes` es un repositorio de HuggingFace que contiene una implementación funcional de la arquitectura Perceiver orientada a tareas de generación, en una configuración denominada "nano". Lo publica el usuario sanmish57 bajo licencia Apache 2.0 y el propio autor lo describe explícitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado con benchmarks.
+`sanmish57/generation-notes` es un repositorio de Hugging Face que contiene una implementación funcional de la arquitectura Perceiver orientada a tareas de generación, en una configuración denominada "nano". Lo publica el usuario sanmish57 bajo licencia Apache 2.0 y el propio autor lo describe explícitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado con benchmarks.
 
 El interés del repositorio es principalmente didáctico y de ingeniería: ofrece código transparente y reproducible, con `config.json` y `training_args.json` que documentan la arquitectura y la receta de experimento por defecto. No es un modelo listo para producción ni compite en capacidades con modelos generativos entrenados a gran escala; su relevancia radica en servir como base para experimentar con Perceiver y atención de consulta agrupada en un entorno controlado.
 
@@ -73,4 +73,4 @@ No disponible. No se han proporcionado modelos comparables de la misma categorí
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sanmish57/generation-notes
+- Hugging Face: https://huggingface.co/sanmish57/generation-notes

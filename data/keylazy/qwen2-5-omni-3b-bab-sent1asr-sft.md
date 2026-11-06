@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `keylazy/Qwen2.5-Omni-3B-bab-sent1asr-sft` es un modelo publicado en HuggingFace por el usuario `keylazy` el 9 de septiembre de 2026. El nombre del modelo sugiere una adaptación de la familia Qwen2.5-Omni (modelos multimodales de Alibaba), con una especialización en una tarea de reconocimiento automático de voz (ASR), indicada por el sufijo `sent1asr-sft`. En el repositorio solo se encuentra un peso en formato `safetensors` con un tamaño total de 0.1 GB, lo que podría corresponder a un adaptador o a una versión cuantizada, aunque no hay documentación que lo confirme.
+El repositorio `keylazy/Qwen2.5-Omni-3B-bab-sent1asr-sft` es un modelo publicado en Hugging Face por el usuario `keylazy` el 9 de septiembre de 2026. El nombre del modelo sugiere una adaptación de la familia Qwen2.5-Omni (modelos multimodales de Alibaba), con una especialización en una tarea de reconocimiento automático de voz (ASR), indicada por el sufijo `sent1asr-sft`. En el repositorio solo se encuentra un peso en formato `safetensors` con un tamaño total de 0.1 GB, lo que podría corresponder a un adaptador o a una versión cuantizada, aunque no hay documentación que lo confirme.
 
 La model card es una plantilla autogenerada que no proporciona ninguna información útil: no incluye arquitectura, licencia, idiomas, dataset de entrenamiento ni métricas. Los resultados de búsqueda web asociados al modelo no aportan datos relevantes. En consecuencia, la ficha técnica presenta la mayor parte de los campos como no disponibles. Se trata de un caso de publicación de un modelo sin documentación, lo que impide realizar una evaluación técnica rigurosa.
 
@@ -49,7 +49,7 @@ Aplicaciones potenciales (no confirmadas, basadas unicamente en el nombre del mo
 
 - Reconocimiento de voz en audio: si el sufijo `asr` corresponde a automatic speech recognition, el modelo podria procesar clips de audio para generar transcripciones. No hay datos que confirmen su rendimiento.
 - Ajuste fino para un dominio especifico: la etiqueta `sent1asr` podria referirse a un dataset propio de reconocimiento de voz con algun tipo de etiquetado semantico (sentimiento o intencion). Esto es especulativo.
-- Evaluacion de modelos en entornos educativos: un investigador podria usar el modelo como ejemplo de publicacion sin documentacion, para estudiar problemas de reproducibilidad en HuggingFace.
+- Evaluacion de modelos en entornos educativos: un investigador podria usar el modelo como ejemplo de publicacion sin documentacion, para estudiar problemas de reproducibilidad en Hugging Face.
 - Pruebas de integracion con la libreria transformers: el modelo es compatible con transformers y safetensors, lo que permite cargarlo en un entorno de desarrollo para verificar su funcionamiento basico, aunque sin garantias de calidad.
 - Comparacion interna de adaptadores: si el fichero de 0.1 GB es un adaptador, podria ser cargado sobre un modelo base de la familia Qwen2.5-Omni para probar un ajuste fino de baja dimension.
 - Investigacion en transparencia de modelos y model cards: este modelo puede servir como caso de estudio de una publicacion que no cumple los estandares minimos de documentacion.
@@ -70,7 +70,7 @@ El tamaño del repositorio (0.1 GB) es demasiado pequeno para un modelo de 3B co
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa fiable. No se conocen los parametros reales, el contexto, el rendimiento ni la licencia del modelo. Ademas, no se han identificado modelos comparables en la base de datos de HuggingFace a partir de los datos proporcionados. Por tanto, esta seccion se marca como no disponible.
+No se dispone de informacion suficiente para realizar una comparativa fiable. No se conocen los parametros reales, el contexto, el rendimiento ni la licencia del modelo. Ademas, no se han identificado modelos comparables en la base de datos de Hugging Face a partir de los datos proporcionados. Por tanto, esta seccion se marca como no disponible.
 
 ## Limitaciones y advertencias
 
@@ -85,6 +85,6 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. No
 
 ## Enlaces
 
-- Repositorio en HuggingFace: (https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-sent1asr-sft)
+- Repositorio en Hugging Face: (https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-sent1asr-sft)
 - Referencia citada en los tags del repositorio: (https://arxiv.org/abs/1910.09700)
 - Nota: la referencia de arXiv corresponde al paper sobre estimacion de emisiones de carbono en ML (Lacoste et al. 2019), no es un documento tecnico del modelo.

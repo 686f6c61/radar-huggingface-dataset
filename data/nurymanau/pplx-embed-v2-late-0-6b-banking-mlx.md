@@ -87,7 +87,7 @@ Latencia: mediana en caliente de 26,16 ms para el estudiante frente a 48,04 ms p
 - Opciones de despliegue: exclusivamente el runtime MLX propio del repositorio (`PYTHONPATH=code python -m pplx_mlx.cli --model . index|search`). No es compatible con vLLM, llama.cpp, Ollama, TGI ni Sentence Transformers, y no se ofrecen pesos GGUF.
 - Restricciones operativas: una entrada sin padding por llamada, rechazo de consultas de más de 1.024 tokens y documentos de más de 4.096 tokens, y recomendación de evitar trabajos de modelo en paralelo en Macs con poca memoria.
 - Latencia: 48,04 ms de mediana en caliente para el profesor y 26,16 ms para el estudiante en el fixture descrito; no hay datos de throughput en producción.
-- Almacenamiento: el repositorio completo, incluida la carpeta `code/`, debe descargarse (1,2 GB declarados en HuggingFace).
+- Almacenamiento: el repositorio completo, incluida la carpeta `code/`, debe descargarse (1,2 GB declarados en Hugging Face).
 
 ## Comparativa con modelos similares
 
@@ -95,11 +95,11 @@ No se dispone de especificaciones detalladas de terceros comparables en la infor
 
 | Modelo o variante | Parámetros | Contexto | nDCG@10 (BANKING) | nDCG@10 (NanoSciFact) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| perplexity-ai/pplx-embed-v2-late-0.6b (upstream) | no disponible en detalle | no disponible | no disponible | no disponible | MIT (pesos) | HuggingFace |
-| Nurymanau/pplx-embed-v2-late-0.6b-MLX-fp16 (base original en MLX) | mismo checkpoint base | consulta 1.024 / documento 4.096 tokens | 74,05 % | no disponible | MIT | HuggingFace |
+| perplexity-ai/pplx-embed-v2-late-0.6b (upstream) | no disponible en detalle | no disponible | no disponible | no disponible | MIT (pesos) | Hugging Face |
+| Nurymanau/pplx-embed-v2-late-0.6b-MLX-fp16 (base original en MLX) | mismo checkpoint base | consulta 1.024 / documento 4.096 tokens | 74,05 % | no disponible | MIT | Hugging Face |
 | Base + adaptador pequeño | mismo checkpoint base + adaptador | consulta 1.024 / documento 4.096 tokens | 77,74 % | 85,81 % | MIT | Referenciado como variante; el adaptador P6 no debe añadirse a este checkpoint |
-| Este checkpoint (fine-tuning completo de texto) | 493.859.776 parámetros de texto | consulta 1.024 / documento 4.096 tokens | 89,49 % | 84,62 % | MIT | HuggingFace |
-| Nurymanau/pplx-embed-v2-late-BANKING-Student6-MLX | 24,2 % menos de parámetros de texto | consulta 1.024 / documento 4.096 tokens | 81,79 % | 66,05 % | MIT | HuggingFace |
+| Este checkpoint (fine-tuning completo de texto) | 493.859.776 parámetros de texto | consulta 1.024 / documento 4.096 tokens | 89,49 % | 84,62 % | MIT | Hugging Face |
+| Nurymanau/pplx-embed-v2-late-BANKING-Student6-MLX | 24,2 % menos de parámetros de texto | consulta 1.024 / documento 4.096 tokens | 81,79 % | 66,05 % | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -119,7 +119,7 @@ No se dispone de especificaciones detalladas de terceros comparables en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nurymanau/pplx-embed-v2-late-0.6b-BANKING-MLX
+- Modelo en Hugging Face: https://huggingface.co/Nurymanau/pplx-embed-v2-late-0.6b-BANKING-MLX
 - Modelo base upstream: https://huggingface.co/perplexity-ai/pplx-embed-v2-late-0.6b
 - Variante base original en MLX FP16: https://huggingface.co/Nurymanau/pplx-embed-v2-late-0.6b-MLX-fp16
 - Repositorio multi-variante origen del reempaquetado: https://huggingface.co/Nurymanau/pplx-embed-v2-late-0.6b-MLX

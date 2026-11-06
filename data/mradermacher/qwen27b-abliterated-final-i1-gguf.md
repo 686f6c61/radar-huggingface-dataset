@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mradermacher/qwen27b-abliterated-final-i1-GGUF` es una coleccion de cuantizaciones GGUF del modelo `kernnadab/qwen27b-abliterated-final`, publicada por el usuario mradermacher, conocido en HuggingFace por generar versiones cuantizadas (con y sin imatrix) de modelos abiertos. El modelo base es una variante "abliterated" (es decir, con las direcciones de rechazo eliminadas mediante tecnicas de abliteration) de un modelo de la familia Qwen, segun indica el nombre, aunque el tamano real declarado en safetensors es de aproximadamente 7.615 millones de parametros, no 27B como sugiere el nombre.
+`mradermacher/qwen27b-abliterated-final-i1-GGUF` es una coleccion de cuantizaciones GGUF del modelo `kernnadab/qwen27b-abliterated-final`, publicada por el usuario mradermacher, conocido en Hugging Face por generar versiones cuantizadas (con y sin imatrix) de modelos abiertos. El modelo base es una variante "abliterated" (es decir, con las direcciones de rechazo eliminadas mediante tecnicas de abliteration) de un modelo de la familia Qwen, segun indica el nombre, aunque el tamano real declarado en safetensors es de aproximadamente 7.615 millones de parametros, no 27B como sugiere el nombre.
 
-El repositorio contiene unicamente ficheros GGUF cuantizados con la herramienta de llama.cpp, generados a partir del modelo base en formato HuggingFace. Se trata, por tanto, de un artefacto de distribucion para inferencia local, no de un modelo entrenado desde cero: no hay informacion sobre el dataset de entrenamiento, el proceso de alineamiento ni los benchmarks del modelo original.
+El repositorio contiene unicamente ficheros GGUF cuantizados con la herramienta de llama.cpp, generados a partir del modelo base en formato Hugging Face. Se trata, por tanto, de un artefacto de distribucion para inferencia local, no de un modelo entrenado desde cero: no hay informacion sobre el dataset de entrenamiento, el proceso de alineamiento ni los benchmarks del modelo original.
 
 La relevancia de este repositorio es limitada y practica: ofrece versiones ligeras (desde Q2_K de unos 3.1 GB) para ejecutar el modelo en hardware de consumo. La informacion publicada es muy escasa, no se declara licencia y el modelo base no incluye documentacion tecnica detallada en la informacion disponible.
 
@@ -88,7 +88,7 @@ La comparacion con Qwen2.5-7B-Instruct es orientativa: el nombre del repositorio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/qwen27b-abliterated-final-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/qwen27b-abliterated-final-i1-GGUF
 - Modelo base: https://huggingface.co/kernnadab/qwen27b-abliterated-final
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/qwen27b-abliterated-final-GGUF
 - Pagina de overview del autor: https://hf.tst.eu/model#qwen27b-abliterated-final-i1-GGUF

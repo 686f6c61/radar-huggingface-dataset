@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Custos 1.0 (nombre interno Custos-nesc-v1.2.5) es un ajuste fino de dominio de Qwen3.5-9B orientado a operaciones de ciberseguridad en entornos de gobierno y empresa. Lo publica el usuario de HuggingFace qianqianzhisuan como pesos BF16 en formato safetensors, cargables con Transformers y vLLM. El modelo parte de una base densa de 9 000 millones de parametros y hereda de ella la ventana de contexto y el tokenizador, aunque la model card no documenta ni el contexto efectivo ni la composicion del corpus de ajuste.
+Custos 1.0 (nombre interno Custos-nesc-v1.2.5) es un ajuste fino de dominio de Qwen3.5-9B orientado a operaciones de ciberseguridad en entornos de gobierno y empresa. Lo publica el usuario de Hugging Face qianqianzhisuan como pesos BF16 en formato safetensors, cargables con Transformers y vLLM. El modelo parte de una base densa de 9 000 millones de parametros y hereda de ella la ventana de contexto y el tokenizador, aunque la model card no documenta ni el contexto efectivo ni la composicion del corpus de ajuste.
 
 El problema que aborda es la asistencia al analista de seguridad: triaje de logs y alertas, reconstruccion de cadenas de ataque, interpretacion de vulnerabilidades, redaccion de materiales de cumplimiento y apoyo a la respuesta ante incidentes. No es un modelo generalista ni un escaner: el autor lo presenta explicitamente como ayuda al juicio humano, sin sustituir el analisis tecnico ni las conclusiones de auditoria.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Custos 1.0 | 9B | No disponible | Ajuste fino en ciberseguridad sobre Qwen3.5-9B | Apache-2.0 | HuggingFace y ModelScope (variante MLX) |
-| Qwen3.5-9B (base) | 9B | No disponible en la informacion | Modelo generalista multilingue | Apache-2.0 | HuggingFace |
+| Custos 1.0 | 9B | No disponible | Ajuste fino en ciberseguridad sobre Qwen3.5-9B | Apache-2.0 | Hugging Face y ModelScope (variante MLX) |
+| Qwen3.5-9B (base) | 9B | No disponible en la informacion | Modelo generalista multilingue | Apache-2.0 | Hugging Face |
 | Alternativas de seguridad de dominio | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de modelos de seguridad comparables en la informacion proporcionada, por lo que la comparacion se limita a parametros y licencia.
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de modelos de seguridad comparables en l
 
 ## Enlaces
 
-- Repositorio principal en HuggingFace: https://huggingface.co/qianqianzhisuan/custos-1.0
-- Variante MLX 16-bit en HuggingFace: https://huggingface.co/qianqianzhisuan/custos-1.0-mlx
+- Repositorio principal en Hugging Face: https://huggingface.co/qianqianzhisuan/custos-1.0
+- Variante MLX 16-bit en Hugging Face: https://huggingface.co/qianqianzhisuan/custos-1.0-mlx
 - Variante MLX en ModelScope: https://modelscope.cn/models/qianqianzhisuan123/custos-1.0-mlx
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

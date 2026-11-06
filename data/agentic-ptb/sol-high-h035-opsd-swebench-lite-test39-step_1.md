@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/sol-high.h035 (este) | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace |
-| Llama-3.1-8B | 8B | 128K | Llama 3.1 Community License | HuggingFace |
+| agentic-ptb/sol-high.h035 (este) | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face |
+| Llama-3.1-8B | 8B | 128K | Llama 3.1 Community License | Hugging Face |
 
 La comparación se limita a parámetros y disponibilidad, ya que no hay datos de rendimiento publicados para este checkpoint. El modelo base Qwen3.5-9B-Base es el punto de partida, y Llama-3.1-8B es una alternativa de tamaño similar, pero no se dispone de resultados comparativos en SWE-bench.
 
@@ -76,7 +76,7 @@ La comparación se limita a parámetros y disponibilidad, ya que no hay datos de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h035.opsd-swebench-lite-test39.step_1
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h035.opsd-swebench-lite-test39.step_1
 - Repositorio Agentic-OPSD (GitHub): https://github.com/EcthelionLiu/Agentic-OPSD
 - SWE-bench Leaderboard: https://www.swebench.com/
 - TensorFeed SWE-bench Leaderboard: https://tensorfeed.ai/benchmarks/swe_bench

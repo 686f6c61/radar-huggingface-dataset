@@ -25,7 +25,7 @@ La información disponible es muy escasa: la model card es una plantilla sin rel
 
 El artefacto publicado es un adaptador LoRA, no un modelo completo. La arquitectura subyacente es la del modelo base unsloth/Qwen3.5-4B: un transformer denso de 4.000 millones de parámetros de la familia Qwen3.5. El adaptador introduce matrices de bajo rango en las capas del transformer, lo que permite un fine-tuning eficiente en memoria y un artefacto final de apenas 0,2 GB. La librería declarada es PEFT 0.21.2, con soporte de transformers y del ecosistema Unsloth.
 
-No se dispone de información sobre el dataset de entrenamiento, el número de tokens, la composición de los datos ni si hubo RLHF, DPO o ajuste supervisado clásico. La model card es una plantilla estándar de HuggingFace sin rellenar: todos los campos de detalles, datos, hiperparámetros y evaluación figuran como "[More Information Needed]". Tampoco se documenta la configuración del LoRA (rango, alpha, capas objetivo) ni la precisión de entrenamiento (fp16, bf16, etc.).
+No se dispone de información sobre el dataset de entrenamiento, el número de tokens, la composición de los datos ni si hubo RLHF, DPO o ajuste supervisado clásico. La model card es una plantilla estándar de Hugging Face sin rellenar: todos los campos de detalles, datos, hiperparámetros y evaluación figuran como "[More Information Needed]". Tampoco se documenta la configuración del LoRA (rango, alpha, capas objetivo) ni la precisión de entrenamiento (fp16, bf16, etc.).
 
 ## Capacidades
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-4B-Decision-Sentiment-PTBR (adaptador) | 4B (base) + LoRA | no disponible | no disponible | HuggingFace, 0 descargas |
-| unsloth/Qwen3.5-4B (base) | 4B | no disponible | no disponible | HuggingFace, ampliamente usado |
-| Adaptadores LoRA comunitarios sobre Qwen | variable | heredado del base | variable | HuggingFace |
+| Qwen3.5-4B-Decision-Sentiment-PTBR (adaptador) | 4B (base) + LoRA | no disponible | no disponible | Hugging Face, 0 descargas |
+| unsloth/Qwen3.5-4B (base) | 4B | no disponible | no disponible | Hugging Face, ampliamente usado |
+| Adaptadores LoRA comunitarios sobre Qwen | variable | heredado del base | variable | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar con alternativas; la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento para comparar con alternativas; la compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/elisaterumi-ai/Qwen3.5-4B-Decision-Sentiment-PTBR
+- Hugging Face: https://huggingface.co/elisaterumi-ai/Qwen3.5-4B-Decision-Sentiment-PTBR
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - PEFT: https://github.com/huggingface/peft
 - Unsloth: https://github.com/unslothai/unsloth

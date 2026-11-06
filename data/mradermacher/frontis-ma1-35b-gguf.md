@@ -25,7 +25,7 @@ No se dispone de información detallada sobre la arquitectura interna del modelo
 
 ## Capacidades
 
-La información pública no detalla las capacidades específicas del modelo más allá de su etiqueta "conversational" en HuggingFace. Según el artículo y el repositorio, el modelo está orientado a tareas de auto-mejora y razonamiento, pero no se enumeran capacidades concretas como generación de código, soporte de tool calling o capacidades multimodales. No se ha confirmado si el modelo soporta function calling o razonamiento multi-paso. El idioma principal de trabajo no se ha especificado, aunque la documentación está en inglés.
+La información pública no detalla las capacidades específicas del modelo más allá de su etiqueta "conversational" en Hugging Face. Según el artículo y el repositorio, el modelo está orientado a tareas de auto-mejora y razonamiento, pero no se enumeran capacidades concretas como generación de código, soporte de tool calling o capacidades multimodales. No se ha confirmado si el modelo soporta function calling o razonamiento multi-paso. El idioma principal de trabajo no se ha especificado, aunque la documentación está en inglés.
 
 ## Casos de uso
 
@@ -58,9 +58,9 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo original: https://huggingface.co/FrontisAI/Frontis-MA1-35B
-- Repositorio HuggingFace con GGUF oficiales: https://huggingface.co/FrontisAI/Frontis-MA1-35B-GGUF
-- Repositorio HuggingFace con las cuantizaciones de mradermacher: https://huggingface.co/mradermacher/Frontis-MA1-35B-GGUF
+- Repositorio Hugging Face del modelo original: https://huggingface.co/FrontisAI/Frontis-MA1-35B
+- Repositorio Hugging Face con GGUF oficiales: https://huggingface.co/FrontisAI/Frontis-MA1-35B-GGUF
+- Repositorio Hugging Face con las cuantizaciones de mradermacher: https://huggingface.co/mradermacher/Frontis-MA1-35B-GGUF
 - Repositorio GitHub del proyecto OpenRSI: https://github.com/FrontisAI/OpenRSI
 - Artículo arXiv: https://arxiv.org/pdf/2607.28568
 - Visualización de arquitectura (hfviewer): https://hfviewer.com/FrontisAI/Frontis-MA1-35B

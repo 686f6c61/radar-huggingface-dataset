@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `papylove/alpaca-options-model` es un repositorio publicado en HuggingFace por el usuario `papylove` con un tamaño de 0,2 GB. Los únicos metadatos disponibles son las etiquetas `joblib` y `region:us`, que sugieren una posible orientación a tareas de procesamiento de opciones financieras en el mercado estadounidense, aunque no se puede confirmar sin más información. El repositorio no presenta descargas y cuenta con un único "like", lo que indica que es un proyecto reciente o poco difundido.
+El modelo `papylove/alpaca-options-model` es un repositorio publicado en Hugging Face por el usuario `papylove` con un tamaño de 0,2 GB. Los únicos metadatos disponibles son las etiquetas `joblib` y `region:us`, que sugieren una posible orientación a tareas de procesamiento de opciones financieras en el mercado estadounidense, aunque no se puede confirmar sin más información. El repositorio no presenta descargas y cuenta con un único "like", lo que indica que es un proyecto reciente o poco difundido.
 
 Al no existir ficha técnica, documentación ni artefactos públicos más allá del propio repositorio, no es posible determinar la arquitectura, el entrenamiento ni las capacidades reales del modelo. El nombre "alpaca" podría hacer referencia a la familia de modelos Alpaca (fine-tunes de LLaMA), pero no hay evidencia que lo confirme. La fecha de creación (2026-08-02) y actualización (2026-09-03) son posteriores a la fecha actual del sistema, lo que sugiere que podría tratarse de un repositorio ficticio o mal fechado.
 
@@ -56,4 +56,4 @@ No disponible. No se puede comparar con modelos de la misma categoría al descon
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/papylove/alpaca-options-model
+- Repositorio en Hugging Face: https://huggingface.co/papylove/alpaca-options-model

@@ -75,7 +75,7 @@ La comparativa se limita a los datos de la ficha. No se dispone de información 
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/TaQuants/Huihui-Qwen3.8-27B-abliterated-TaQuants-GGUF)
+- [Página del modelo en Hugging Face](https://huggingface.co/TaQuants/Huihui-Qwen3.8-27B-abliterated-TaQuants-GGUF)
 - [Repositorio del proyecto TaQuants en GitHub](https://github.com/ek15072809/TaQuants)
 - [Informe técnico de TaQuants (PDF)](https://github.com/ek15072809/TaQuants/blob/main/docs/TaQuants_Technical_Report.pdf)
 - [Modelo base: huihui-ai/Huihui-Qwen3.8-27B-abliterated](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated)

@@ -23,7 +23,7 @@ La licencia es Apache 2.0, heredada del modelo base. El repositorio tiene 0 desc
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer de tipo Mixture-of-Experts con 21,8 mil millones de parametros totales y 3 mil millones activos por token, identificado en HuggingFace con la arquitectura `ernie4_5_moe`. Esta publicacion concreta no entrena el modelo: aplica una cuantizacion de precision mixta sobre los pesos del modelo base `baidu/ERNIE-4.5-21B-A3B-PT`, reduciendo el tamano de 43,9 GB (BF16) a 11,1 GB. El metodo de cuantizacion es propietario (Black Sheep AI) y el autor no detalla la asignacion de bits por capa ni el algoritmo de calibracion.
+El modelo base es un transformer de tipo Mixture-of-Experts con 21,8 mil millones de parametros totales y 3 mil millones activos por token, identificado en Hugging Face con la arquitectura `ernie4_5_moe`. Esta publicacion concreta no entrena el modelo: aplica una cuantizacion de precision mixta sobre los pesos del modelo base `baidu/ERNIE-4.5-21B-A3B-PT`, reduciendo el tamano de 43,9 GB (BF16) a 11,1 GB. El metodo de cuantizacion es propietario (Black Sheep AI) y el autor no detalla la asignacion de bits por capa ni el algoritmo de calibracion.
 
 No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si el modelo base utilizo RLHF o DPO. La model card indica que ERNIE "no usa una fase de pensamiento" (thinking phase): sus respuestas libres promedian unos 90 tokens y ninguna agoto el presupuesto en las pruebas realizadas. Esta publicacion es exclusivamente una receta de compresion; cualquier innovacion arquitectonica procede del modelo base de Baidu, sobre el que no se aportan detalles adicionales.
 
@@ -89,9 +89,9 @@ El autor senala que el 4-bit uniforme (12,3 GB) supera a este build en MMLU: aci
 
 | Modelo | Parametros | Contexto | MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ERNIE-4.5-21B-A3B-PT-RAM-11GB-MLX (este) | 21,8B totales / 3B activos | no disponible | 75,00% | Apache 2.0 | HuggingFace, formato MLX |
-| ERNIE-4.5-21B-A3B-PT BF16 (base) | 21,8B totales / 3B activos | no disponible | 77,75% | Apache 2.0 | HuggingFace, safetensors |
-| ERNIE-4.5-21B-A3B-PT uniforme 4-bit | 21,8B totales / 3B activos | no disponible | 80,25% | Apache 2.0 | HuggingFace, 12,3 GB |
+| ERNIE-4.5-21B-A3B-PT-RAM-11GB-MLX (este) | 21,8B totales / 3B activos | no disponible | 75,00% | Apache 2.0 | Hugging Face, formato MLX |
+| ERNIE-4.5-21B-A3B-PT BF16 (base) | 21,8B totales / 3B activos | no disponible | 77,75% | Apache 2.0 | Hugging Face, safetensors |
+| ERNIE-4.5-21B-A3B-PT uniforme 4-bit | 21,8B totales / 3B activos | no disponible | 80,25% | Apache 2.0 | Hugging Face, 12,3 GB |
 
 La model card menciona que el build se comparo contra otros cinco lectores de hasta 90 GB en tareas de recuperacion documental, pero no identifica sus nombres ni especificaciones, por lo que no es posible incluirlos en la tabla.
 
@@ -111,7 +111,7 @@ La model card menciona que el build se comparo contra otros cinco lectores de ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baa-ai/ERNIE-4.5-21B-A3B-PT-RAM-11GB-MLX
+- Modelo en Hugging Face: https://huggingface.co/baa-ai/ERNIE-4.5-21B-A3B-PT-RAM-11GB-MLX
 - Modelo base: https://huggingface.co/baidu/ERNIE-4.5-21B-A3B-PT
 - Sitio del autor: https://baa.ai
 - Producto Ram (capa de razonamiento): https://baa.ai/compression.html

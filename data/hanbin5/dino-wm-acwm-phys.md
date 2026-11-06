@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento de otros world models en la informacion pr
 | Contexto | `num_hist` 1 o 3 fotogramas, frameskip 5 | configurable por el usuario en el codigo base |
 | Rendimiento | no se publican cifras | no se publican cifras en la informacion disponible |
 | Licencia | no disponible en la model card | MIT (codigo) |
-| Disponibilidad | checkpoints `.pth` en HuggingFace, 0 descargas y 0 likes | repositorio de codigo en GitHub |
+| Disponibilidad | checkpoints `.pth` en Hugging Face, 0 descargas y 0 likes | repositorio de codigo en GitHub |
 | Especificidad | pesos entrenados para cuatro entornos de ACWM-Phys | implementacion general, sin pesos de estos entornos |
 | Formato de pesos | pickle (`torch.save` de objetos de modulo) | mismo formato en el codigo upstream |
 
@@ -98,7 +98,7 @@ Para alternativas de otras familias (por ejemplo world models recurrentes o basa
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/hanbin5/dino-wm-acwm-phys
+- Repositorio del modelo en Hugging Face: https://huggingface.co/hanbin5/dino-wm-acwm-phys
 - Dataset ACWM-Phys: https://huggingface.co/datasets/t1an/ACWM-Phys
 - Paper de ACWM-Phys: https://arxiv.org/abs/2605.08567
 - Rama de codigo con los cambios de este autor: https://github.com/jongmin-s-multicore/thread0/tree/hanbin5/acwm-phys

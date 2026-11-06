@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rikai-ai/chanel_p07_auth_23092026` es un modelo publicado en HuggingFace por el usuario `rikai-ai` bajo licencia Apache 2.0. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni ejemplos de uso. El repositorio ocupa 0,7 GB, un tamano compatible con un modelo de pesos abiertos de pequeno o medio tamano (del orden de 1 a 7 mil millones de parametros en funcion de la precision de los pesos), aunque no hay informacion que permita confirmarlo.
+`rikai-ai/chanel_p07_auth_23092026` es un modelo publicado en Hugging Face por el usuario `rikai-ai` bajo licencia Apache 2.0. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni ejemplos de uso. El repositorio ocupa 0,7 GB, un tamano compatible con un modelo de pesos abiertos de pequeno o medio tamano (del orden de 1 a 7 mil millones de parametros en funcion de la precision de los pesos), aunque no hay informacion que permita confirmarlo.
 
 El nombre del repositorio (`chanel_p07_auth_23092026`) sugiere una nomenclatura interna de proyecto, version o fecha, mas que un identificador de modelo publico con convenciones habituales (tipo `Llama-3-8B`, `Qwen2.5-7B`, etc.). No se ha publicado pipeline, idiomas soportados ni documentacion tecnica alguna. A fecha de la ultima actualizacion (5 de noviembre de 2026) el modelo acumula 0 descargas y 0 likes.
 
@@ -34,7 +34,7 @@ La unica inferencia posible a partir del tamano del repositorio (0,7 GB) es que 
 - No consta soporte de agentes ni razonamiento multi-paso.
 - No consta informacion sobre capacidades multilingues.
 - No consta la existencia de modos especiales (thinking mode, vision, audio, etc.).
-- No se ha publicado pipeline de HuggingFace asociado, por lo que no se puede confirmar la tarea principal (text-generation, text2text, etc.).
+- No se ha publicado pipeline de Hugging Face asociado, por lo que no se puede confirmar la tarea principal (text-generation, text2text, etc.).
 
 ## Casos de uso
 
@@ -78,5 +78,5 @@ No disponible. No se puede establecer una comparativa fiable sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rikai-ai/chanel_p07_auth_23092026
+- Repositorio en Hugging Face: https://huggingface.co/rikai-ai/chanel_p07_auth_23092026
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

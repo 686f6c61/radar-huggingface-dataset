@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gemma-3-1b-it (este repo, GGUF) | ~1B | 32K entrada / 8K salida | Gemma | GGUF en HuggingFace |
-| Llama 3.2 1B Instruct | ~1,2B | 128K | Llama 3.2 Community | Pesos y GGUF en HuggingFace |
-| Qwen2.5 1.5B Instruct | ~1,5B | 32K | Apache 2.0 | Pesos y GGUF en HuggingFace |
+| gemma-3-1b-it (este repo, GGUF) | ~1B | 32K entrada / 8K salida | Gemma | GGUF en Hugging Face |
+| Llama 3.2 1B Instruct | ~1,2B | 128K | Llama 3.2 Community | Pesos y GGUF en Hugging Face |
+| Qwen2.5 1.5B Instruct | ~1,5B | 32K | Apache 2.0 | Pesos y GGUF en Hugging Face |
 
 Los datos de contexto y licencia de los modelos comparados se incluyen a título orientativo; no se dispone de comparativas de rendimiento publicadas para este repositorio concreto. La principal diferencia de la variante Gemma 3 1B frente a alternativas como Llama 3.2 1B es su ventana de contexto más reducida (32K frente a 128K) y su licencia Gemma en lugar de Apache 2.0 o Llama Community.
 
@@ -82,7 +82,7 @@ Los datos de contexto y licencia de los modelos comparados se incluyen a título
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ThyBoof/gemma-3-1b-it-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/ThyBoof/gemma-3-1b-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Página oficial de Gemma: https://ai.google.dev/gemma/docs/core
 - Informe técnico de Gemma 3: https://goo.gle/Gemma3Report

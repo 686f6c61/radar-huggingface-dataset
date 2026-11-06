@@ -25,7 +25,7 @@ No es un modelo de producción para tareas exigentes: su ventana de contexto de 
 
 Rose-1.5-Pro emplea la arquitectura Rose X1.5, un modelo causal de tipo transformer con 30 capas, tamaño oculto de 640, 10 cabezas de atención y 5 cabezas clave-valor (GQA, grouped-query attention), con dimensión de cabeza de 64 y tamaño intermedio de 1.536. Entre las innovaciones destacables figuran la normalización QK (QK-norm), el mecanismo XSA, activaciones SwiGLU con SiLU, normalización RMSNorm, codificación posicional RoPE y refresh gates en las capas 10 y 20, un mecanismo que sugiere refresco periódico de estados de atención o memoria en puntos concretos de la red.
 
-El entrenamiento utilizó aproximadamente 70.000 millones de tokens procedentes de una mezcla de datasets públicos: Fineweb-Edu y DCLM-Baseline-1.0 (corpus web educativo y curado), Cosmopedia (datos sintéticos educativos de HuggingFace), Arithmark-3.0 (tareas aritméticas), NPset-2-Python-Edu (Python educativo) y BananaMind-Base-Bench-1.1. No hay información disponible sobre procesos posteriores de alineación (SFT, RLHF o DPO), por lo que todo apunta a un modelo base preentrenado. La ventana de contexto de 2.048 tokens es una decisión deliberada para reducir el coste de entrenamiento.
+El entrenamiento utilizó aproximadamente 70.000 millones de tokens procedentes de una mezcla de datasets públicos: Fineweb-Edu y DCLM-Baseline-1.0 (corpus web educativo y curado), Cosmopedia (datos sintéticos educativos de Hugging Face), Arithmark-3.0 (tareas aritméticas), NPset-2-Python-Edu (Python educativo) y BananaMind-Base-Bench-1.1. No hay información disponible sobre procesos posteriores de alineación (SFT, RLHF o DPO), por lo que todo apunta a un modelo base preentrenado. La ventana de contexto de 2.048 tokens es una decisión deliberada para reducir el coste de entrenamiento.
 
 ## Capacidades
 
@@ -67,7 +67,7 @@ El Intelligence Index agrega varios benchmarks en una puntuación normalizada; e
 - VRAM estimada para inferencia: el repo pesa 0,6 GB en safetensors (pesos probablemente en fp16/bf16 o similar); con overhead de activaciones y KV cache, entre 1 y 2 GB de VRAM o RAM son suficientes
 - GPU recomendadas: cualquier GPU moderna; no se requiere GPU dedicada. Compatible con GPUs de consumo de gama baja (GTX 1650, RTX 3050) e incluso ejecución en CPU
 - Cabe con holgura en GPUs de consumo: cualquier tarjeta con 4 GB de VRAM o más; también ejecutable íntegramente en CPU dada la cuantía de parámetros
-- Opciones de despliegue: al usar custom_code, la vía principal es transformers de HuggingFace. No hay información disponible sobre soporte verificado en vLLM, llama.cpp, Ollama o TGI; la arquitectura personalizada probablemente requiera adaptación para estos runtimes
+- Opciones de despliegue: al usar custom_code, la vía principal es transformers de Hugging Face. No hay información disponible sobre soporte verificado en vLLM, llama.cpp, Ollama o TGI; la arquitectura personalizada probablemente requiera adaptación para estos runtimes
 - Latencia y throughput estimados: no disponible; por su tamaño, se espera inferencia rápida incluso en CPU
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ El Intelligence Index agrega varios benchmarks en una puntuación normalizada; e
 |---|---|---|---|---|
 | Rose-1.5-Pro | 148,8 M | 2.048 | Apache 2.0 | Arquitectura custom, Intelligence Index 28,27 |
 | Qwen2.5-0.5B | ~494 M | 32.768 | Apache 2.0 | Modelo denso maduro, multilingüe, benchmarks públicos amplios |
-| SmolLM2-135M | 135 M | 2.048 | Apache 2.0 | Tamaño casi idéntico, entrenado por HuggingFace con ~2T tokens, benchmarks comparables en gama |
+| SmolLM2-135M | 135 M | 2.048 | Apache 2.0 | Tamaño casi idéntico, entrenado por Hugging Face con ~2T tokens, benchmarks comparables en gama |
 | Pythia-160M | 162 M | 2.048 | Apache 2.0 | Modelo de investigación de EleutherAI, muy usado como baseline |
 
 Rose-1.5-Pro compite directamente con SmolLM2-135M y Pythia-160M en tamaño, aunque su mezcla de entrenamiento (~70B tokens) es considerablemente menor que la de SmolLM2. Frente a Qwen2.5-0.5B ofrece un footprint mucho menor a costa de capacidad y contexto.
@@ -94,7 +94,7 @@ Rose-1.5-Pro compite directamente con SmolLM2-135M y Pythia-160M en tamaño, aun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GODELEV/Rose-1.5-Pro
+- Modelo en Hugging Face: https://huggingface.co/GODELEV/Rose-1.5-Pro
 - Datasets de entrenamiento:
   - https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
   - https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0

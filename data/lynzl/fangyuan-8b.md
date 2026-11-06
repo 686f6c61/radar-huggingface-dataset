@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo FangYuan-8B, publicado por el usuario lynzl en HuggingFace, es un modelo de lenguaje de gran tamaño cuyo nombre sugiere una arquitectura de aproximadamente 8.000 millones de parámetros. Sin embargo, la ficha pública no incluye ninguna descripción técnica, documentación de arquitectura, datos de entrenamiento o ejemplos de uso. La única información disponible es su licencia MIT y las fechas de creación y actualización (16 de agosto de 2026).
+El modelo FangYuan-8B, publicado por el usuario lynzl en Hugging Face, es un modelo de lenguaje de gran tamaño cuyo nombre sugiere una arquitectura de aproximadamente 8.000 millones de parámetros. Sin embargo, la ficha pública no incluye ninguna descripción técnica, documentación de arquitectura, datos de entrenamiento o ejemplos de uso. La única información disponible es su licencia MIT y las fechas de creación y actualización (16 de agosto de 2026).
 
 La ausencia total de documentación y de un model card sustancial hace imposible evaluar sus capacidades, requisitos de hardware o rendimiento. Cualquier uso en producción o investigación requeriría contactar directamente con el autor o inspeccionar los archivos del repositorio, que tampoco están detallados en la información proporcionada. La relevancia actual del modelo no puede determinarse con los datos disponibles.
 
@@ -53,6 +53,6 @@ No disponible. Sin información sobre la arquitectura, el tamaño real o el rend
 
 ## Enlaces
 
-- [HuggingFace: lynzl/FangYuan-8B](https://huggingface.co/lynzl/FangYuan-8B)
+- [Hugging Face: lynzl/FangYuan-8B](https://huggingface.co/lynzl/FangYuan-8B)
 
 No se han encontrado otros enlaces (papers, blogs, repositorios, demos) en la información proporcionada.

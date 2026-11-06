@@ -90,7 +90,7 @@ No se han proporcionado datos comparativos con otros modelos en la información 
 
 | Modelo | Categoría | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| live-confusion-early-warning | Regresión logística tabular | No disponible (~1 KB de pesos) | 13 características por minuto | ROC AUC 0,849; PR AUC 0,282 | MIT | HuggingFace (0 descargas); código en GitHub |
+| live-confusion-early-warning | Regresión logística tabular | No disponible (~1 KB de pesos) | 13 características por minuto | ROC AUC 0,849; PR AUC 0,282 | MIT | Hugging Face (0 descargas); código en GitHub |
 | Regresión logística de referencia sobre las mismas 13 características | Lineal tabular | No disponible | Igual | No disponible | No disponible | No disponible |
 | Gradient boosting (XGBoost / LightGBM) sobre las mismas características | Conjunto de árboles | No disponible | Igual | No disponible | No disponible | No disponible |
 | Modelo secuencial temporal (LSTM o transformer) sobre la serie de pulsaciones | Red neuronal recurrente o de atención | No disponible | Serie completa de minutos | No disponible | No disponible | No disponible |
@@ -112,7 +112,7 @@ No se han proporcionado datos comparativos con otros modelos en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikhilsingh254/live-confusion-early-warning
+- Modelo en Hugging Face: https://huggingface.co/nikhilsingh254/live-confusion-early-warning
 - Conjunto de datos asociado: https://huggingface.co/datasets/nikhilsingh254/live-confusion-tracker
 - Código fuente: https://github.com/nikhilsingh-254/live-confusion-tracker
 - Pesos: https://huggingface.co/nikhilsingh254/live-confusion-early-warning/blob/main/model.json

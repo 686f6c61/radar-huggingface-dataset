@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad de pesos |
 |---|---|---|---|---|---|
 | Este modelo (compilado para NPU Mobilint) | 2,4B | 32K heredados del base (no confirmado) | en, ko | EXAONE AI Model License | safetensors + artefactos propietarios para NPU |
-| LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct | 2,4B | 32K | en, ko | EXAONE AI Model License | safetensors en HuggingFace |
+| LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct | 2,4B | 32K | en, ko | EXAONE AI Model License | safetensors en Hugging Face |
 | Qwen2.5-3B-Instruct | 3,09B | 32K | multilingue (mas de 25 idiomas) | Apache 2.0 | safetensors, GGUF y otros |
 | Llama-3.2-3B-Instruct | 3,21B | 128K | 8 idiomas oficiales, entre ellos el espanol | Llama 3.2 Community License | safetensors, GGUF y otros |
 
@@ -102,7 +102,7 @@ La diferencia relevante no es de calidad, sino de destino: frente al modelo base
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mobilint/EXAONE-3.5-2.4B-Instruct-regulus-rb-usb
+- Repositorio en Hugging Face: https://huggingface.co/mobilint/EXAONE-3.5-2.4B-Instruct-regulus-rb-usb
 - Modelo base: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct
 - Licencia EXAONE (texto completo): https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/main/LICENSE
 - Sitio del autor del empaquetado: https://mobilint.com

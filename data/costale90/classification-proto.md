@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Costale90/classification-proto` es un repositorio experimental publicado en HuggingFace que contiene una base de código de una arquitectura híbrida CNN-Transformer orientada a tareas de clasificación. Lo desarrolla el usuario Costale90 y su propósito declarado es servir como punto de partida inspeccionable antes de lanzar un entrenamiento completo, no como un modelo listo para producción. El repositorio incluye `run.py` (implementación y punto de entrada ejecutable), `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors`.
+`Costale90/classification-proto` es un repositorio experimental publicado en Hugging Face que contiene una base de código de una arquitectura híbrida CNN-Transformer orientada a tareas de clasificación. Lo desarrolla el usuario Costale90 y su propósito declarado es servir como punto de partida inspeccionable antes de lanzar un entrenamiento completo, no como un modelo listo para producción. El repositorio incluye `run.py` (implementación y punto de entrada ejecutable), `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors`.
 
 El checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests), no un modelo entrenado. El propio autor indica explícitamente que no reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado. El dato real de safetensors arroja 16.576 parámetros totales, lo que contradice la etiqueta "giant" que figura en la model card, una discrepancia que conviene tener presente.
 
@@ -78,5 +78,5 @@ No disponible. La información proporcionada no incluye modelos comparables ni r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Costale90/classification-proto
+- Modelo en Hugging Face: https://huggingface.co/Costale90/classification-proto
 - Papers, blogs, repositorios o demos adicionales: no disponible en la información proporcionada.

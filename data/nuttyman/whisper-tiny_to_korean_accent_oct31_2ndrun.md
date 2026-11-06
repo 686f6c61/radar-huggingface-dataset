@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Nuttyman/whisper-tiny_to_korean_accent_oct31_2ndrun` es un ajuste fino (fine-tuning) del modelo `openai/whisper-tiny` de OpenAI, publicado por el usuario Nuttyman en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) derivado de la arquitectura Whisper, la familia de modelos encoder-decoder basados en transformer que OpenAI diseno para transcripcion multilingue y traduccion de voz. El modelo base `whisper-tiny` es la variante mas pequena de la familia, con aproximadamente 37,7 millones de parametros, lo que lo situa en el rango de modelos ligeros aptos para dispositivos con recursos limitados.
+`Nuttyman/whisper-tiny_to_korean_accent_oct31_2ndrun` es un ajuste fino (fine-tuning) del modelo `openai/whisper-tiny` de OpenAI, publicado por el usuario Nuttyman en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) derivado de la arquitectura Whisper, la familia de modelos encoder-decoder basados en transformer que OpenAI diseno para transcripcion multilingue y traduccion de voz. El modelo base `whisper-tiny` es la variante mas pequena de la familia, con aproximadamente 37,7 millones de parametros, lo que lo situa en el rango de modelos ligeros aptos para dispositivos con recursos limitados.
 
 El nombre del repositorio sugiere un ajuste orientado a acentos coreanos sobre un conjunto de datos denominado `Russian_english`, aunque la model card declara unicamente el idioma ingles (`en`) y no documenta el contenido real del dataset ni la metodologia de seleccion de muestras. El autor no ha completado las secciones de descripcion del modelo, usos previstos ni datos de entrenamiento, que aparecen como "More information needed". El modelo declara un WER de 10,0732 sobre el split de test del dataset `Russian_english`, un valor que debe interpretarse con cautela dada la ausencia de documentacion sobre el corpus de evaluacion.
 
@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | WER reportado | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Nuttyman/whisper-tiny_to_korean_accent_oct31_2ndrun` | 37,7 M | 30 s | en (declarado) | Apache 2.0 | 10,07 (Russian_english, no verificado) | HuggingFace |
-| `openai/whisper-tiny` | 39 M | 30 s | Multilingue (99 idiomas) | Apache 2.0 | No disponible en esta ficha | HuggingFace, OpenAI |
-| `openai/whisper-base` | 74 M | 30 s | Multilingue (99 idiomas) | Apache 2.0 | No disponible en esta ficha | HuggingFace, OpenAI |
-| `openai/whisper-small` | 244 M | 30 s | Multilingue (99 idiomas) | Apache 2.0 | No disponible en esta ficha | HuggingFace, OpenAI |
+| `Nuttyman/whisper-tiny_to_korean_accent_oct31_2ndrun` | 37,7 M | 30 s | en (declarado) | Apache 2.0 | 10,07 (Russian_english, no verificado) | Hugging Face |
+| `openai/whisper-tiny` | 39 M | 30 s | Multilingue (99 idiomas) | Apache 2.0 | No disponible en esta ficha | Hugging Face, OpenAI |
+| `openai/whisper-base` | 74 M | 30 s | Multilingue (99 idiomas) | Apache 2.0 | No disponible en esta ficha | Hugging Face, OpenAI |
+| `openai/whisper-small` | 244 M | 30 s | Multilingue (99 idiomas) | Apache 2.0 | No disponible en esta ficha | Hugging Face, OpenAI |
 
 La comparacion con `whisper-tiny` original es la mas directa: el ajuste fino anade especializacion potencial pero reduce la cobertura idiomatica declarada a ingles y carece de documentacion sobre el corpus. Los modelos `base` y `small` ofrecen mayor capacidad a cambio de mas recursos. No se dispone de datos de benchmarks comparativos publicados por el autor para establecer una comparacion cuantitativa fiable.
 
@@ -102,7 +102,7 @@ La comparacion con `whisper-tiny` original es la mas directa: el ajuste fino ana
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nuttyman/whisper-tiny_to_korean_accent_oct31_2ndrun
+- Modelo en Hugging Face: https://huggingface.co/Nuttyman/whisper-tiny_to_korean_accent_oct31_2ndrun
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - Repositorio oficial de Whisper en OpenAI: https://github.com/openai/whisper

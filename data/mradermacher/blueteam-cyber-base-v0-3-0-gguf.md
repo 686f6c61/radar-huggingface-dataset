@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo cuantizado](https://huggingface.co/mradermacher/blueteam-cyber-base-v0.3.0-GGUF)
+- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/mradermacher/blueteam-cyber-base-v0.3.0-GGUF)
 - [Modelo base original (beau-warren/blueteam-cyber-base-v0.3.0)](https://huggingface.co/beau-warren/blueteam-cyber-base-v0.3.0) (enlace inferido a partir del campo `base_model`)
-- [Perfil de mradermacher en HuggingFace](https://huggingface.co/mradermacher)
+- [Perfil de mradermacher en Hugging Face](https://huggingface.co/mradermacher)
 - [Página de solicitudes de modelos de mradermacher](https://huggingface.co/mradermacher/model_requests)

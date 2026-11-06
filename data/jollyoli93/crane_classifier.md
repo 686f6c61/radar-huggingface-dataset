@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jollyoli93/crane_classifier` es un modelo publicado en HuggingFace por el usuario jollyoli93 bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente la declaracion de licencia, por lo que la informacion publica disponible sobre el modelo es practicamente nula mas alla de sus metadatos.
+`jollyoli93/crane_classifier` es un modelo publicado en Hugging Face por el usuario jollyoli93 bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente la declaracion de licencia, por lo que la informacion publica disponible sobre el modelo es practicamente nula mas alla de sus metadatos.
 
 El nombre del repositorio y el repositorio de GitHub del mismo autor (`jollyoli93/KnowYourLoadExactly`, descrito como "Crane Load Classifier" e integrado con un notebook llamado `Crane_Detector_YOLOv8_Full_Pipeline.ipynb`) apuntan a que se trata de un modelo de vision por computador orientado a la deteccion o clasificacion de gruas y cargas. Sin embargo, esta interpretacion procede de fuentes externas al propio modelo y no esta confirmada por su model card.
 
@@ -20,7 +20,7 @@ Por su tamano de repositorio (0,1 GB), es plausible que se trate de un modelo de
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | no disponible |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Autor | jollyoli93 |
 | Fecha de creacion | 2026-09-25 |
 | Fecha de ultima actualizacion | 2026-09-25 |
@@ -30,7 +30,7 @@ Por su tamano de repositorio (0,1 GB), es plausible que se trate de un modelo de
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura del modelo en su model card ni en los metadatos de HuggingFace. El unico indicio disponible es externo: el autor mantiene el repositorio `KnowYourLoadExactly`, identificado como "Crane Load Classifier", que incluye un notebook denominado `Crane_Detector_YOLOv8_Full_Pipeline.ipynb`. Si ese notebook corresponde al entrenamiento o a la pipeline de inferencia de este modelo, la arquitectura seria la de un detector YOLOv8, pero esto no puede confirmarse con la informacion proporcionada.
+No hay informacion publicada sobre la arquitectura del modelo en su model card ni en los metadatos de Hugging Face. El unico indicio disponible es externo: el autor mantiene el repositorio `KnowYourLoadExactly`, identificado como "Crane Load Classifier", que incluye un notebook denominado `Crane_Detector_YOLOv8_Full_Pipeline.ipynb`. Si ese notebook corresponde al entrenamiento o a la pipeline de inferencia de este modelo, la arquitectura seria la de un detector YOLOv8, pero esto no puede confirmarse con la informacion proporcionada.
 
 Tampoco se dispone de datos sobre el volumen de tokens o imagenes de entrenamiento, la composicion del dataset, el uso de tecnicas de ajuste (RLHF, DPO u otras) ni innovaciones tecnicas destacables. El tamano del repositorio (0,1 GB) sugiere pesos de baja cardinalidad, aunque no permite estimar el numero de parametros sin conocer la arquitectura exacta.
 
@@ -57,7 +57,7 @@ Los siguientes casos se plantean de forma condicional, asumiendo que el modelo r
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de precision, recall, mAP ni comparaciones con otros modelos, y el repositorio de HuggingFace no aporta ningun dato adicional.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de precision, recall, mAP ni comparaciones con otros modelos, y el repositorio de Hugging Face no aporta ningun dato adicional.
 
 ## Requisitos de hardware
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: no disponible. Si se confirma una arquitectura tipo YOLOv8 ligera, seria suficiente con cualquier GPU con unos pocos GB de VRAM.
 - Compatibilidad con GPU de consumo: probable, dado el tamano del repositorio, aunque no confirmado por el autor. Candidatas razonables serian GTX 1650, RTX 3060, RTX 4060 o superiores.
 - Ejecucion en CPU: plausible para un modelo de este tamano, sin confirmacion oficial.
-- Opciones de despliegue: no disponible. Dependera del formato de pesos, que no se especifica. Si se tratase de un modelo YOLOv8, las rutas habituales serian Ultralytics, ONNX Runtime, TensorRT o TFLite; si fuese un modelo de `transformers`, la pipeline de HuggingFace.
+- Opciones de despliegue: no disponible. Dependera del formato de pesos, que no se especifica. Si se tratase de un modelo YOLOv8, las rutas habituales serian Ultralytics, ONNX Runtime, TensorRT o TFLite; si fuese un modelo de `transformers`, la pipeline de Hugging Face.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jollyoli93/crane_classifier
+- Modelo en Hugging Face: https://huggingface.co/jollyoli93/crane_classifier
 - Repositorio GitHub del autor (KnowYourLoadExactly): https://github.com/jollyoli93/KnowYourLoadExactly
 - Notebook de la pipeline (Crane_Detector_YOLOv8_Full_Pipeline.ipynb): https://github.com/jollyoli93/KnowYourLoadExactly/blob/main/Crane_Detector_YOLOv8_Full_Pipeline.ipynb
-- Perfil del autor en HuggingFace: https://huggingface.co/jollyoli93
+- Perfil del autor en Hugging Face: https://huggingface.co/jollyoli93

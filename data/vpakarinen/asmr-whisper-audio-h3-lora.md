@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ASMR Whisper Audio LoRA for MiniMax H3 es un adaptador LoRA de bajo rango diseñado para inyectar audio ASMR y acústica de susurro suave en el modelo de generación de vídeo MiniMaxAI/MiniMax-H3. Lo publica el usuario vpakarinen en HuggingFace y su función es especializar el modelo base, que es text-to-video e image-to-video, hacia la producción de clips verticales con audio de susurro sincronizado, un nicho muy concreto dentro de la generación de vídeo con audio.
+ASMR Whisper Audio LoRA for MiniMax H3 es un adaptador LoRA de bajo rango diseñado para inyectar audio ASMR y acústica de susurro suave en el modelo de generación de vídeo MiniMaxAI/MiniMax-H3. Lo publica el usuario vpakarinen en Hugging Face y su función es especializar el modelo base, que es text-to-video e image-to-video, hacia la producción de clips verticales con audio de susurro sincronizado, un nicho muy concreto dentro de la generación de vídeo con audio.
 
 El adaptador es extremadamente ligero (0,2 GB de repositorio) y se distribuye bajo licencia Apache 2.0, lo que facilita su integración en pipelines existentes de MiniMax-H3 sin necesidad de reentrenar el modelo completo. La model card es escueta: proporciona ajustes de inferencia recomendados (resolución 720x1280, peso LoRA 0,6-0,8, 20-30 pasos) y una plantilla de prompt específica, pero no detalla la composición del dataset de entrenamiento ni métricas de evaluación.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes; la compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vpakarinen/asmr-whisper-audio-h3-lora
+- Hugging Face: https://huggingface.co/vpakarinen/asmr-whisper-audio-h3-lora
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Vídeo de demostración: https://huggingface.co/vpakarinen/asmr-trigger-audio-h3-lora/resolve/main/demo_video_12.mp4
 - Buy Me a Coffee del autor: https://buymeacoffee.com/vpakarinen

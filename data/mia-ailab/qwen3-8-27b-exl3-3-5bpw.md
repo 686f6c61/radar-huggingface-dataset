@@ -87,7 +87,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria (27B c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mia-AiLab/Qwen3.8-27B-EXL3-3.5bpw
+- Modelo en Hugging Face: https://huggingface.co/Mia-AiLab/Qwen3.8-27B-EXL3-3.5bpw
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo draft DFlash2: https://huggingface.co/Mia-AiLab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw
 - Repositorio GitHub con kit de despliegue: https://github.com/MiaAI-Lab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw

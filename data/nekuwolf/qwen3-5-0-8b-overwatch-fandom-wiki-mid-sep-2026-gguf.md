@@ -37,7 +37,7 @@ Respecto al entrenamiento, la model card solo afirma que el modelo fue ajustado 
 - Generacion de texto conversacional: el modelo esta etiquetado como `conversational` y la model card muestra su uso con `llama-cli` en modo chat con plantilla Jinja (`--jinja`).
 - Conocimiento de dominio sobre Overwatch: al estar ajustado sobre una wiki de fans, cabe esperar respuestas sobre lore, personajes, mapas, habilidades y terminos del juego, aunque el alcance real depende del corpus y no esta documentado.
 - Entrada multimodal (imagen + texto): el repositorio incluye un proyector `mmproj` y la model card indica el uso de `llama-mtmd-cli` para modelos multimodales. No se especifica que tipo de tareas visuales cubre.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse a traves de la infraestructura de endpoints de HuggingFace, presumiblemente mediante un contenedor compatible con llama.cpp.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse a traves de la infraestructura de endpoints de Hugging Face, presumiblemente mediante un contenedor compatible con llama.cpp.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible; sin benchmarks ni documentacion no puede afirmarse.
 - Capacidades multilingues: no disponibles; el corpus de ajuste parece monolingue en ingles.
@@ -73,7 +73,7 @@ Los datos de la columna de este modelo son los declarados en el repositorio; los
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-overwatch-fandom-wiki-mid-sep-2026-GGUF | 772.845.888 | no disponible | no disponible | Ajuste de dominio sobre wiki de Overwatch, multimodal, solo GGUF | HuggingFace, 0 descargas |
+| Qwen3.5-0.8B-overwatch-fandom-wiki-mid-sep-2026-GGUF | 772.845.888 | no disponible | no disponible | Ajuste de dominio sobre wiki de Overwatch, multimodal, solo GGUF | Hugging Face, 0 descargas |
 | Qwen2.5-0.5B / 1.5B (Instruct) | 0,49 B / 1,54 B | 32.768 tokens | Apache 2.0 | Modelo generalista de proposito multiple | Ampliamente disponible, con versiones GGUF de la comunidad |
 | Llama 3.2 1B (Instruct) | 1,24 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Modelo generalista, con variantes multimodales en la familia | Muy disponible, ecosistema GGUF amplio |
 | SmolLM2 1.7B (Instruct) | 1,7 B | 8.192 tokens | Apache 2.0 | Modelo generalista pequeno, enfocado a eficiencia | Disponible en safetensors y GGUF |
@@ -97,7 +97,7 @@ La diferencia fundamental no esta en los parametros, sino en el proposito: los t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nekuwolf/Qwen3.5-0.8B-overwatch-fandom-wiki-mid-sep-2026-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/nekuwolf/Qwen3.5-0.8B-overwatch-fandom-wiki-mid-sep-2026-GGUF
 - Unsloth (herramienta declarada para el ajuste y la conversion): https://github.com/unslothai/unsloth
 - llama.cpp (runtime necesario para los ficheros GGUF y para `llama-mtmd-cli`): https://github.com/ggml-org/llama.cpp
 - Wiki de fans de Overwatch (fuente probable del corpus de ajuste, inferida a partir del nombre del repositorio, no confirmada por el autor): https://overwatch.fandom.com

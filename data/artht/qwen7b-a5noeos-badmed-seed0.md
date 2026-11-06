@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ArthT/qwen7b-a5noeos-badmed-seed0 es un modelo de lenguaje publicado en HuggingFace por el usuario ArthT, con un nombre que sugiere un fine-tuning experimental sobre una base Qwen-7B. El sufijo "badmed" apunta a un ajuste orientado a dominios médicos, mientras que "a5noeos" y "seed0" indican probablemente una configuración específica de entrenamiento con semilla fija. El repositorio incluye pesos en formato safetensors y fue generado con la librería Unsloth, especializada en fine-tuning eficiente de modelos LLM.
+ArthT/qwen7b-a5noeos-badmed-seed0 es un modelo de lenguaje publicado en Hugging Face por el usuario ArthT, con un nombre que sugiere un fine-tuning experimental sobre una base Qwen-7B. El sufijo "badmed" apunta a un ajuste orientado a dominios médicos, mientras que "a5noeos" y "seed0" indican probablemente una configuración específica de entrenamiento con semilla fija. El repositorio incluye pesos en formato safetensors y fue generado con la librería Unsloth, especializada en fine-tuning eficiente de modelos LLM.
 
 El modelo tiene un tamaño de repositorio de 0.5 GB, lo que resulta notablemente pequeño para un modelo de 7B de parámetros, sugiriendo que podría tratarse de un LoRA adapter o de una versión cuantizada. La model card es una plantilla automática sin información sustancial, y no se han publicado detalles sobre arquitectura, datos de entrenamiento, licencia o rendimiento. Su relevancia actual es limitada debido a la ausencia de documentación, aunque podría interesar a quienes exploran fine-tunings experimentales de la familia Qwen.
 
@@ -55,7 +55,7 @@ No se dispone de información específica sobre requisitos de hardware para este
 
 - VRAM estimada: entre 14-16 GB para inferencia en FP16, entre 6-8 GB con cuantización de 4 bits
 - GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB) para FP16, o GPUs con 8-12 GB para cuantización
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI
 - El tamaño del repositorio (0.5 GB) sugiere que podría ser un adapter LoRA, en cuyo caso los requisitos serían mucho menores
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArthT/qwen7b-a5noeos-badmed-seed0
+- Repositorio Hugging Face: https://huggingface.co/ArthT/qwen7b-a5noeos-badmed-seed0
 - Modelo similar del mismo autor: https://huggingface.co/ArthT/qwen7b-a4d-badmed-seed0
 - Repositorio oficial de Qwen-7B: https://github.com/ArtificialZeng/Qwen-7B
 - Investigación de Qwen: https://qwen.ai/research/

@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| preparing.ai-lora | Adaptador de 119 MB sobre base de 3.000 M | No disponible (base: 32.768 tokens) | Adaptador LoRA multimodal (peft) | No disponible | HuggingFace, 0 descargas |
-| Qwen2.5-VL-3B-Instruct | 3.000 M | 32.768 tokens | VLM completo, ajustado a instrucciones | Apache-2.0 | HuggingFace, ampliamente utilizado |
-| Qwen2.5-VL-7B-Instruct | 7.000 M | 32.768 tokens | VLM completo, ajustado a instrucciones | Apache-2.0 | HuggingFace |
-| Qwen2-VL-2B-Instruct | 2.000 M | 32.768 tokens | VLM completo, generacion anterior | Apache-2.0 | HuggingFace |
+| preparing.ai-lora | Adaptador de 119 MB sobre base de 3.000 M | No disponible (base: 32.768 tokens) | Adaptador LoRA multimodal (peft) | No disponible | Hugging Face, 0 descargas |
+| Qwen2.5-VL-3B-Instruct | 3.000 M | 32.768 tokens | VLM completo, ajustado a instrucciones | Apache-2.0 | Hugging Face, ampliamente utilizado |
+| Qwen2.5-VL-7B-Instruct | 7.000 M | 32.768 tokens | VLM completo, ajustado a instrucciones | Apache-2.0 | Hugging Face |
+| Qwen2-VL-2B-Instruct | 2.000 M | 32.768 tokens | VLM completo, generacion anterior | Apache-2.0 | Hugging Face |
 
 La comparacion con alternativas de la misma categoria (adaptadores LoRA especificos para generacion de HTML) no esta disponible, ya que no se han publicado datos de rendimiento que permitan situar este adaptador frente a otros artefactos del mismo tipo.
 

@@ -89,10 +89,10 @@ Rendimiento en AMD Ryzen AI MAX+ 395, Radeon 8060S gfx1151, 128 GB de memoria un
 
 | Modelo | Parametros | Contexto | Cuantizacion | GSM8K | HumanEval | MMLU-Pro | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| oQ4e-HIP (este) | 180,0 B | 131.072 | Mixta 8/5/4 bits | 94,7% | 93,9% | 69,1% | qwen-community-1.0 | HuggingFace, 46 descargas |
-| oQ4e-mix5-HIP | 180,0 B (mismo base) | 131.072 | Mixta, mas agresiva | 94,3% | 93,3% | 67,6% | qwen-community-1.0 | HuggingFace |
-| TensorFold/Qwen3.8-Flash-Next-MLX-4bit-MTP | 180,0 B (mismo base) | no disponible | 4 bits uniforme | 93,0% | 93,9% | 55,9% | qwen-community-1.0 | HuggingFace |
-| Qwen/Qwen3.8-Flash-Next (bf16) | 180,0 B | no disponible | bf16 | no disponible | no disponible | no disponible | qwen-community-1.0 | HuggingFace |
+| oQ4e-HIP (este) | 180,0 B | 131.072 | Mixta 8/5/4 bits | 94,7% | 93,9% | 69,1% | qwen-community-1.0 | Hugging Face, 46 descargas |
+| oQ4e-mix5-HIP | 180,0 B (mismo base) | 131.072 | Mixta, mas agresiva | 94,3% | 93,3% | 67,6% | qwen-community-1.0 | Hugging Face |
+| TensorFold/Qwen3.8-Flash-Next-MLX-4bit-MTP | 180,0 B (mismo base) | no disponible | 4 bits uniforme | 93,0% | 93,9% | 55,9% | qwen-community-1.0 | Hugging Face |
+| Qwen/Qwen3.8-Flash-Next (bf16) | 180,0 B | no disponible | bf16 | no disponible | no disponible | no disponible | qwen-community-1.0 | Hugging Face |
 
 Las tres variantes cuantizadas derivan del mismo modelo base, por lo que la comparativa se centra en el compromiso calidad/velocidad. oQ4e-HIP ofrece la mayor calidad (KL de 0,064 en prosa y 0,013 en codigo), mientras que oQ4e-mix5-HIP gana aproximadamente un 22% de velocidad en decodificacion de codigo a costa de 0,032 puntos de KL adicionales en prosa y 4,3 puntos en MMLU-Pro.
 
@@ -110,7 +110,7 @@ Las tres variantes cuantizadas derivan del mismo modelo base, por lo que la comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unigilby/Qwen3.8-Flash-Next-oQ4e-HIP
+- Modelo en Hugging Face: https://huggingface.co/unigilby/Qwen3.8-Flash-Next-oQ4e-HIP
 - Variante mix5: https://huggingface.co/unigilby/Qwen3.8-Flash-Next-oQ4e-mix5-HIP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Checkpoint de referencia de 4 bits uniforme: https://huggingface.co/TensorFold/Qwen3.8-Flash-Next-MLX-4bit-MTP

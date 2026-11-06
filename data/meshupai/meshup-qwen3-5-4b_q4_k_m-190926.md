@@ -2,7 +2,7 @@
 
 ## Resumen
 
-meshup-qwen3.5-4B_Q4_K_M-190926 es un modelo derivado de Qwen3.5-4B publicado por el usuario MeshupAi en HuggingFace. Se distribuye ya cuantizado en formato GGUF con la variante Q4_K_M y se anuncia como modelo vision-language, es decir, con soporte multimodal de imagen ademas de texto. El proceso de ajuste fino y conversion a GGUF se realizo con Unsloth, segun indica la propia model card. El repositorio incluye dos ficheros: el peso cuantizado del modelo de lenguaje y un proyector multimodal en F16 (`Qwen3.5-4B.F16-mmproj.gguf`), que es el componente que habilita el tratamiento de imagenes.
+meshup-qwen3.5-4B_Q4_K_M-190926 es un modelo derivado de Qwen3.5-4B publicado por el usuario MeshupAi en Hugging Face. Se distribuye ya cuantizado en formato GGUF con la variante Q4_K_M y se anuncia como modelo vision-language, es decir, con soporte multimodal de imagen ademas de texto. El proceso de ajuste fino y conversion a GGUF se realizo con Unsloth, segun indica la propia model card. El repositorio incluye dos ficheros: el peso cuantizado del modelo de lenguaje y un proyector multimodal en F16 (`Qwen3.5-4B.F16-mmproj.gguf`), que es el componente que habilita el tratamiento de imagenes.
 
 El dato objetivo mas solido es el recuento de parametros de los pesos base: 4.326.350.848 parametros, aproximadamente 4,33 mil millones, con un tamano de repositorio de 6,9 GB. No se declara licencia, idiomas soportados, longitud de contexto ni pipeline de tarea. El repositorio registra cero descargas y cero "likes" en el momento de la consulta, por lo que no existe validacion comunitaria ni evidencia publica de calidad.
 
@@ -102,6 +102,6 @@ La diferencia critica frente a las alternativas es la ausencia de licencia decla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MeshupAi/meshup-qwen3.5-4B_Q4_K_M-190926
+- Modelo en Hugging Face: https://huggingface.co/MeshupAi/meshup-qwen3.5-4B_Q4_K_M-190926
 - Unsloth (herramienta usada para el ajuste y la conversion a GGUF): https://github.com/unslothai/unsloth
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados obtenidos tratan sobre entornos de programacion en Python y no guardan relacion con esta ficha.

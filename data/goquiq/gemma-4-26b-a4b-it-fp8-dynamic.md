@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| goquiq/gemma-4-26B-A4B-it-FP8-Dynamic | 25,8B | 3,8B | 256K | safetensors FP8 (compressed-tensors) | apache-2.0 | HuggingFace, 0 descargas |
-| google/gemma-4-26B-A4B (base) | 25,2B | 3,8B | 256K | safetensors BF16 | apache-2.0 | HuggingFace |
-| Gemma 4 12B Unified | 11,95B | denso | 256K | safetensors BF16 | apache-2.0 | HuggingFace |
-| Gemma 4 31B Dense | 30,7B | denso | 256K | safetensors BF16 | apache-2.0 | HuggingFace |
+| goquiq/gemma-4-26B-A4B-it-FP8-Dynamic | 25,8B | 3,8B | 256K | safetensors FP8 (compressed-tensors) | apache-2.0 | Hugging Face, 0 descargas |
+| google/gemma-4-26B-A4B (base) | 25,2B | 3,8B | 256K | safetensors BF16 | apache-2.0 | Hugging Face |
+| Gemma 4 12B Unified | 11,95B | denso | 256K | safetensors BF16 | apache-2.0 | Hugging Face |
+| Gemma 4 31B Dense | 30,7B | denso | 256K | safetensors BF16 | apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada. La diferencia principal de la version de goquiq frente al modelo base es el formato FP8, que reduce aproximadamente a la mitad el espacio en disco y memoria de pesos, a cambio de una posible perdida de precision no cuantificada en la documentacion disponible.
 
@@ -102,9 +102,9 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/goquiq/gemma-4-26B-A4B-it-FP8-Dynamic
+- Modelo en Hugging Face: https://huggingface.co/goquiq/gemma-4-26B-A4B-it-FP8-Dynamic
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Repositorio GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento de Gemma 4: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion de Gemma: https://ai.google.dev/gemma/docs/core
@@ -112,4 +112,4 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Pagina de modelos de Google DeepMind: https://deepmind.google/models/gemma/
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion de HuggingFace y de la model card del autor.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion de Hugging Face y de la model card del autor.

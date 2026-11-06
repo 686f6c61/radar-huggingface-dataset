@@ -78,11 +78,11 @@ Nota: no se dispone de datos de rendimiento comparativo (CRPS, MAE, etc.) entre 
 - Calibración adicional necesaria: la calibración de probabilidad (HeatCast-C) y la combinación con ECMWF ENS (HeatCast-plus-ENS) requieren artefactos adicionales no incluidos en el paquete, así como procedimientos de validación cruzada por pliegues.
 - Riesgo de sesgos: al entrenarse solo con datos históricos de PRISM, el modelo puede heredar sesgos de los datos de entrada, como cambios en la red de estaciones o inhomogeneidades temporales. No se han publicado análisis de sesgos.
 - Sin soporte de idiomas ni capacidades de lenguaje: es un modelo numérico puro; no debe confundirse con un LLM.
-- Fecha de creación futura (2026-08-31) según el registro de HuggingFace: esto podría indicar una fecha de publicación programada o un error de metadatos; se recomienda verificar la validez temporal del modelo antes de usarlo en producción.
+- Fecha de creación futura (2026-08-31) según el registro de Hugging Face: esto podría indicar una fecha de publicación programada o un error de metadatos; se recomienda verificar la validez temporal del modelo antes de usarlo en producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mostafarezaali/HeatCast-W34
+- Hugging Face: https://huggingface.co/mostafarezaali/HeatCast-W34
 - GitHub (HeatCast): https://github.com/Mostafa-Rezaali/HeatCast
 - GitHub (HeatCast-Global): https://github.com/Mostafa-Rezaali/HeatCast-Global
 - Página académica de Mostafa Rezaali: https://mostafa-rezaali.github.io/

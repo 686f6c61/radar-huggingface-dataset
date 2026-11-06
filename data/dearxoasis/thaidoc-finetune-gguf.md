@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dearxoasis/thaidoc-finetune-gguf` es un archivo en formato GGUF de un fine-tune de 8.190 millones de parámetros, generado con la librería Unsloth. Según los metadatos de HuggingFace, el modelo está etiquetado como `qwen3`, lo que sugiere que la arquitectura base pertenece a la familia Qwen3, aunque el nombre del archivo (`typhoon-s-thaillm-8b-instruct-research-preview.Q4_K_M.gguf`) apunta a un posible fine-tune del modelo Typhoon-S ThaiLLM 8B instruct, un modelo orientado al tailandés. No se dispone de información adicional sobre el autor, el proceso de entrenamiento, la licencia o los idiomas soportados. El repositorio contiene un único archivo cuantizado en Q4_K_M, listo para su uso con llama.cpp y herramientas compatibles.
+El modelo `dearxoasis/thaidoc-finetune-gguf` es un archivo en formato GGUF de un fine-tune de 8.190 millones de parámetros, generado con la librería Unsloth. Según los metadatos de Hugging Face, el modelo está etiquetado como `qwen3`, lo que sugiere que la arquitectura base pertenece a la familia Qwen3, aunque el nombre del archivo (`typhoon-s-thaillm-8b-instruct-research-preview.Q4_K_M.gguf`) apunta a un posible fine-tune del modelo Typhoon-S ThaiLLM 8B instruct, un modelo orientado al tailandés. No se dispone de información adicional sobre el autor, el proceso de entrenamiento, la licencia o los idiomas soportados. El repositorio contiene un único archivo cuantizado en Q4_K_M, listo para su uso con llama.cpp y herramientas compatibles.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ No se han publicado detalles sobre la arquitectura interna, el dataset de entren
 
 ## Capacidades
 
-- Modelo de lenguaje conversacional (etiqueta `conversational` en HuggingFace).
+- Modelo de lenguaje conversacional (etiqueta `conversational` en Hugging Face).
 - Al ser un modelo instruct, se espera que pueda seguir instrucciones y mantener dialogos multi-turno, aunque no se especifican capacidades concretas.
 - No se dispone de informacion sobre soporte de tool calling, agentes, razonamiento multi-paso, vision o audio.
 - No se han documentado capacidades multilingues especificas, aunque el nombre del archivo sugiere un posible enfoque en el tailandes.
@@ -64,6 +64,6 @@ No se dispone de datos de rendimiento ni de especificaciones completas de este m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dearxoasis/thaidoc-finetune-gguf
+- Repositorio Hugging Face: https://huggingface.co/dearxoasis/thaidoc-finetune-gguf
 - Unsloth (libreria de fine-tuning): https://github.com/unslothai/unsloth
 - Documentacion de llama.cpp: https://github.com/ggerganov/llama.cpp

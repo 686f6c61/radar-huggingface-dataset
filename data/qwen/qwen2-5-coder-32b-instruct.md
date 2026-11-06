@@ -76,7 +76,7 @@ No se dispone de información suficiente para una comparativa completa. Basándo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
+- Hugging Face: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 - Blog oficial: https://qwenlm.github.io/blog/qwen2.5-coder-family/
 - GitHub: https://github.com/QwenLM/Qwen2.5-Coder
 - Documentación: https://qwen.readthedocs.io/en/latest/

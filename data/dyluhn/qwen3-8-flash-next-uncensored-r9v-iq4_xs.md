@@ -18,7 +18,7 @@ Su relevancia es doble. Por un lado, permite ejecutar un MoE de gran tamano en d
 | Longitud de contexto | 262.144 tokens en el modelo base segun Unsloth; el perfil de referencia R9V configura 131.072 tokens con una peticion simultanea |
 | Tipos de cuantizacion | IQ4_XS (receta UD-IQ4_XS, 1.224 tensores); origen Q8_0 del build abliterated; proyector de vision en F16; cabecera MTP con densos en BF16 y expertos enrutados en block-FP8 |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | GGUF fragmentado (`target/`) y safetensors (`vision/`, `ced/`); estructura interna con `target/`, `vision/`, `mtp/`, `ced/`, `metadata/`, `manifests/` y `sources.lock.json` |
 | Tamano del repositorio | 99,2 GB |
 | Modelo base | orcarouter/Qwen3.8-Flash-Next-Uncensored (relacion: quantized) |
@@ -40,7 +40,7 @@ El paquete de Dyluhn es un artefacto de inferencia, no un entrenamiento. El obje
 - Decodificacion especulativa mediante cabeza MTP de Qwen, con profundidad 4 en la configuracion de referencia; el modelo objetivo verifica cada token propuesto.
 - Salida estructurada: la categoria JSON de BetterBench 0.6.0 alcanza 94 tok/s de mediana, la mas alta de las medidas.
 - Cumplimiento de peticiones que el modelo original rechazaria, por efecto de la abliteration (capacidad declarada explicitamente por el autor del build base).
-- No hay informacion disponible sobre soporte de tool calling, function calling, uso como agente, capacidades de audio o modos de pensamiento explicito. El tag `conversational` esta presente en HuggingFace; `endpoints_compatible` tambien, pero la informacion no detalla el alcance de esa compatibilidad.
+- No hay informacion disponible sobre soporte de tool calling, function calling, uso como agente, capacidades de audio o modos de pensamiento explicito. El tag `conversational` esta presente en Hugging Face; `endpoints_compatible` tambien, pero la informacion no detalla el alcance de esa compatibilidad.
 
 ## Casos de uso
 
@@ -82,7 +82,7 @@ Derivado de la tabla de la model card, el rendimiento efectivo de decodificacion
 - VRAM estimada: el repositorio ocupa 99,2 GB, de los cuales el objetivo IQ4_XS de 176,9 mil millones de parametros es la mayor parte. La configuracion de referencia funciona con 64 GB de VRAM repartidos en dos GPU de 32 GiB, apoyandose en cache de expertos en RAM del host (128 GiB de DDR5 recomendados).
 - GPU recomendadas: dos Radeon AI PRO R9700 de 32 GiB en TP2 es la configuracion validada por el autor. No hay datos publicados de rendimiento en A100, H100 u otras GPU NVIDIA para este paquete concreto.
 - GPU de consumo: no cabe en una unica GPU de consumo. El modelo base, en cuantizaciones mas agresivas, se ha descrito como ejecutable en equipos con 75 GB de RAM o memoria unificada sin VRAM dedicada, pero esa cifra corresponde a Qwen3.8-Flash-Next y no a este paquete IQ4_XS de 99,2 GB.
-- Opciones de despliegue: R9V v0.4.0 o superior con el perfil `qwen38-mtp4-uncensored` es la via documentada, con descarga y verificacion SHA-256, extraccion de la tabla PLE y compilacion en el primer arranque (conviene un timeout amplio, de unos 2.400 segundos). En HuggingFace se enlazan instrucciones para usarlo con llama.cpp, aunque la model card no describe ese flujo y el paquete esta disenado para R9V.
+- Opciones de despliegue: R9V v0.4.0 o superior con el perfil `qwen38-mtp4-uncensored` es la via documentada, con descarga y verificacion SHA-256, extraccion de la tabla PLE y compilacion en el primer arranque (conviene un timeout amplio, de unos 2.400 segundos). En Hugging Face se enlazan instrucciones para usarlo con llama.cpp, aunque la model card no describe ese flujo y el paquete esta disenado para R9V.
 - Detalle operativo: la tabla `per_layer_token_embd.weight` (PLE) de 26,82 GiB ya esta dentro del segundo fragmento del objetivo y se extrae en el setup; su SHA-256 esperado es `34fa36f83de4216fe2aa78b5602aea1ba8007f959710c94bc4fbaff3e75fb9f0`.
 - Latencia y throughput: 34,6-38,8 ms por paso de decodificacion segun escenario, con 2,54-3,96 tokens por paso gracias a MTP, y 1.780-3.020 tok/s de prefill segun longitud y uso de CED.
 
@@ -90,7 +90,7 @@ Derivado de la tabla de la model card, el rendimiento efectivo de decodificacion
 
 | Modelo | Parametros | Contexto | Cuantizacion / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dyluhn/Qwen3.8-Flash-Next-Uncensored-R9V-IQ4_XS (este) | 176,9 B (activos no disponibles) | 131.072 tokens en el perfil R9V; 262.144 en el base | IQ4_XS sobre Q8_0, GGUF, paquete para R9V | qwen-community-1.0 | Publico en HuggingFace, 0 descargas registradas |
+| Dyluhn/Qwen3.8-Flash-Next-Uncensored-R9V-IQ4_XS (este) | 176,9 B (activos no disponibles) | 131.072 tokens en el perfil R9V; 262.144 en el base | IQ4_XS sobre Q8_0, GGUF, paquete para R9V | qwen-community-1.0 | Publico en Hugging Face, 0 descargas registradas |
 | orcarouter/Qwen3.8-Flash-Next-Uncensored | No disponible | No disponible | BF16, GGUF, MLX, FP8 y NVFP4 en su coleccion | No disponible | Publico, mismo metodo de abliteration |
 | Dyluhn/Qwen3.8-Flash-Next-R9V-IQ4_XS | Misma arquitectura base | Igual que este perfil | IQ4_XS, mismo layout de paquete | qwen-community-1.0 | Publico; es la variante con el target sin abliterar |
 | Qwen3.8-Flash-Next (original de Qwen) | 125 B segun Unsloth (discrepancia con el recuento de 176,9 B de este repo) | 262.144 tokens | Pesos oficiales BF16 y block-FP8 | qwen-community-1.0 | Open weights, con alineamiento de seguridad intacto |
@@ -113,7 +113,7 @@ La diferencia funcional clave frente al original y frente a la variante R9V no a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dyluhn/Qwen3.8-Flash-Next-Uncensored-R9V-IQ4_XS
+- Modelo en Hugging Face: https://huggingface.co/Dyluhn/Qwen3.8-Flash-Next-Uncensored-R9V-IQ4_XS
 - Modelo base (build abliterated de orcarouter): https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Paquete R9V de referencia sin abliterar: https://huggingface.co/Dyluhn/Qwen3.8-Flash-Next-R9V-IQ4_XS
 - Repositorio del runtime R9V: https://github.com/Dyluhn/R9V

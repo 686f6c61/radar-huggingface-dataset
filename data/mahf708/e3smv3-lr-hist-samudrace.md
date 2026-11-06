@@ -2,7 +2,7 @@
 
 ## Resumen
 
-e3smv3-lr-hist-samudrace es un conjunto de emuladores acoplados atmósfera-océano de una simulación histórica de E3SMv3, publicado por el usuario mahf708 en HuggingFace. No es un modelo de lenguaje: combina la arquitectura ACE para la atmósfera (operador neuronal de Fourier esférico, spherical Fourier neural operator) con la arquitectura Samudra para el océano (U-Net), acopladas mediante `fme.coupled` siguiendo el esquema de SamudrACE. El modelo card indica explícitamente que no se trata de un lanzamiento de Ai2 y que no está respaldado por los desarrolladores de ACE ni de Samudra.
+e3smv3-lr-hist-samudrace es un conjunto de emuladores acoplados atmósfera-océano de una simulación histórica de E3SMv3, publicado por el usuario mahf708 en Hugging Face. No es un modelo de lenguaje: combina la arquitectura ACE para la atmósfera (operador neuronal de Fourier esférico, spherical Fourier neural operator) con la arquitectura Samudra para el océano (U-Net), acopladas mediante `fme.coupled` siguiendo el esquema de SamudrACE. El modelo card indica explícitamente que no se trata de un lanzamiento de Ai2 y que no está respaldado por los desarrolladores de ACE ni de Samudra.
 
 El repositorio se distribuye como prerelease para pruebas, ocupa 226,7 GB y contiene tres variantes de acoplamiento: C0A0 (sin entrada de CO2 ni aerosoles), C1A0 (con CO2) y C1A1 (con CO2 y aerosoles, en tres configuraciones temporales distintas). El estado acoplado compartido comprende 38 variables atmosféricas y 80 oceánicas, incluidas fracción y volumen de hielo marino y 19 capas oceánicas hasta 6380 m. Está pensado para emular una simulación histórica de E3SMv3 con rejilla gaussiana de 1 grado (180 x 360), paso acoplado de 5 días y calendario noleap.
 
@@ -79,7 +79,7 @@ La información disponible únicamente describe dos comprobaciones funcionales, 
 
 | Modelo | Tipo | Rejilla / acoplamiento | Forzamientos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| e3smv3-lr-hist-samudrace | Emulador acoplado atmósfera-océano (ACE + Samudra, vía `fme.coupled`) | Gaussiana 1 grado; atmósfera 6 h, océano 5 días | CO2 y aerosoles según variante; 1940-2064 | BSD-3-Clause | HuggingFace, prerelease, 226,7 GB |
+| e3smv3-lr-hist-samudrace | Emulador acoplado atmósfera-océano (ACE + Samudra, vía `fme.coupled`) | Gaussiana 1 grado; atmósfera 6 h, océano 5 días | CO2 y aerosoles según variante; 1940-2064 | BSD-3-Clause | Hugging Face, prerelease, 226,7 GB |
 | SamudrACE | Emulador acoplado atmósfera-océano con el mismo esquema de acoplamiento | no disponible | no disponible | no disponible | referenciado en la model card |
 | ACE (Ai2) | Emulador atmosférico (spherical Fourier neural operator) | no disponible | no disponible | no disponible | referenciado en la model card |
 | Samudra (Ai2) | Emulador oceánico (U-Net) | no disponible | no disponible | no disponible | referenciado en la model card |
@@ -103,7 +103,7 @@ Los tres modelos comparables se mencionan en la propia model card como origen de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mahf708/e3smv3-lr-hist-samudrace
+- Modelo en Hugging Face: https://huggingface.co/mahf708/e3smv3-lr-hist-samudrace
 - Notebook de inicio rápido en Colab: https://colab.research.google.com/#fileId=https%3A//huggingface.co/mahf708/e3smv3-lr-hist-samudrace/blob/main/notebooks/colab_quickstart.ipynb
 - Script de smoke test: https://huggingface.co/mahf708/e3smv3-lr-hist-samudrace/resolve/main/scripts/smoke_test.py
 - Repositorio del código `fme` (rama de esta publicación): https://github.com/E3SM-Project/ace

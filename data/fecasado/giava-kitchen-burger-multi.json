@@ -4,8 +4,8 @@
   "slug": "fecasado-giava-kitchen-burger-multi",
   "author": "fecasado",
   "url": "https://huggingface.co/fecasado/giava-kitchen-burger-multi",
-  "created_at": "2026-10-28T01:29:50.000Z",
-  "updated_at": "2026-10-28T01:30:39.000Z",
+  "created_at": "2026-11-06T00:16:28.000Z",
+  "updated_at": "2026-11-06T00:17:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -14,9 +14,9 @@
   "tags": [
     "lerobot",
     "safetensors",
-    "robotics",
     "gaze_flow_matching",
-    "dataset:fecasado/burger-to-plate-good-320x240",
+    "robotics",
+    "dataset:fecasado/burger-to-plate-v2-320x240",
     "license:apache-2.0",
     "region:us"
   ],

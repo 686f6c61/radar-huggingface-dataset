@@ -96,7 +96,7 @@ La comparación directa solo es posible contra el modelo base, del que se deriva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Involvedtime/Qwen3.5-4B-Unbound
+- Modelo en Hugging Face: https://huggingface.co/Involvedtime/Qwen3.5-4B-Unbound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper, blog o repositorio del autor: no disponible en la informacion proporcionada.
 - Demo o espacio de prueba: no disponible en la informacion proporcionada.

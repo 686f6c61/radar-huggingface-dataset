@@ -19,7 +19,7 @@ El repositorio `aishwaryasuhane/gemma-4-e4b-personal-lora` contiene un adaptador
 
 ## Arquitectura y entrenamiento
 
-El adaptador LoRA sigue la tecnica de ajuste fino de bajo rango: se congelan los pesos del modelo base Gemma 4 E4B y se insertan matrices de baja dimension en las capas de atencion y feed-forward. Esto permite adaptar el modelo a tareas especificas con un coste computacional reducido y un overhead minimo en inferencia. El entrenamiento se ha realizado con la libreria Unsloth, que optimiza el proceso mediante kernels de atencion eficientes y soporte para precision mixta. No se dispone de informacion sobre el dataset, el numero de pasos, la tasa de aprendizaje ni el regimen de entrenamiento. El tag `arxiv:1910.09700` hace referencia al articulo de Lacoste et al. sobre estimacion de impacto ambiental, probablemente incluido por la plantilla automatica de HuggingFace.
+El adaptador LoRA sigue la tecnica de ajuste fino de bajo rango: se congelan los pesos del modelo base Gemma 4 E4B y se insertan matrices de baja dimension en las capas de atencion y feed-forward. Esto permite adaptar el modelo a tareas especificas con un coste computacional reducido y un overhead minimo en inferencia. El entrenamiento se ha realizado con la libreria Unsloth, que optimiza el proceso mediante kernels de atencion eficientes y soporte para precision mixta. No se dispone de informacion sobre el dataset, el numero de pasos, la tasa de aprendizaje ni el regimen de entrenamiento. El tag `arxiv:1910.09700` hace referencia al articulo de Lacoste et al. sobre estimacion de impacto ambiental, probablemente incluido por la plantilla automatica de Hugging Face.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ Este adaptador LoRA no es comparable directamente con modelos completos, ya que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aishwaryasuhane/gemma-4-e4b-personal-lora
+- Repositorio Hugging Face: https://huggingface.co/aishwaryasuhane/gemma-4-e4b-personal-lora
 - Pagina oficial de Gemma 4: https://deepmind.google/models/gemma/gemma-4/
 - Pagina de Gemma 4 E4B (gemma4.dev): https://gemma4.dev/models/gemma-4-e4b
 - Modelo Gemma 4 E4B en Ollama: https://ollama.com/library/gemma4:e4b

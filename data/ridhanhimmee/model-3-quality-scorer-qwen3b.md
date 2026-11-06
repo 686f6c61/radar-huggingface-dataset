@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ridhanhimmee/model-3-quality-scorer-qwen3b` es un adaptador LoRA (PEFT) publicado en HuggingFace, entrenado mediante SFT sobre el modelo base `unsloth/Qwen2.5-3B-Instruct-bnb-4bit`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos delta de aproximadamente 0,2 GB que debe cargarse junto al modelo base cuantizado en 4 bits con bitsandbytes. El nombre del repositorio sugiere que el adaptador está orientado a una tarea de puntuación de calidad ("quality scorer"), probablemente como evaluador o juez de respuestas generadas, aunque esta función no se documenta en la model card.
+`ridhanhimmee/model-3-quality-scorer-qwen3b` es un adaptador LoRA (PEFT) publicado en Hugging Face, entrenado mediante SFT sobre el modelo base `unsloth/Qwen2.5-3B-Instruct-bnb-4bit`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos delta de aproximadamente 0,2 GB que debe cargarse junto al modelo base cuantizado en 4 bits con bitsandbytes. El nombre del repositorio sugiere que el adaptador está orientado a una tarea de puntuación de calidad ("quality scorer"), probablemente como evaluador o juez de respuestas generadas, aunque esta función no se documenta en la model card.
 
-El modelo lo publica el usuario `ridhanhimmee`, sin información sobre el equipo, la organización ni el proceso de entrenamiento. La model card es la plantilla por defecto de HuggingFace y no contiene descripción, datos de entrenamiento, hiperparámetros ni resultados de evaluación: prácticamente todos los campos aparecen como "[More Information Needed]". El repositorio no registra descargas ni "likes", y se creó y actualizó el 24 de octubre de 2026.
+El modelo lo publica el usuario `ridhanhimmee`, sin información sobre el equipo, la organización ni el proceso de entrenamiento. La model card es la plantilla por defecto de Hugging Face y no contiene descripción, datos de entrenamiento, hiperparámetros ni resultados de evaluación: prácticamente todos los campos aparecen como "[More Information Needed]". El repositorio no registra descargas ni "likes", y se creó y actualizó el 24 de octubre de 2026.
 
 Por su tamaño (3B parámetros en el base) y su formato de adaptador, el interés práctico es limitado a experimentación: permite probar un ajuste fino ligero sobre Qwen2.5-3B-Instruct con un coste de VRAM reducido (en torno a 2 GB en 4 bits), pero carece de la documentación mínima exigible para un uso en producción. Esta ficha refleja únicamente lo que puede verificarse a partir de los metadatos del repositorio, marcando como "no disponible" todo aquello que el autor no documenta.
 
@@ -83,7 +83,7 @@ La comparación directa en rendimiento no es posible: el adaptador no publica ni
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/ridhanhimmee/model-3-quality-scorer-qwen3b
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/ridhanhimmee/model-3-quality-scorer-qwen3b
 - Modelo base referenciado: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-bnb-4bit
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - PEFT (librería de adaptadores): https://github.com/huggingface/peft

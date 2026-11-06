@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ADAM (AI Development and Automation Manager) es una aplicación de escritorio local diseñada para orquestar herramientas de IA de código abierto, centrada en la seguridad y el control humano. Desarrollada por SyntheticMDProductions, se publica como un repositorio en HuggingFace con un tamaño de 0,4 GB, aunque no es un modelo de aprendizaje automático en sí, sino un hub que integra flujos de trabajo para preparación de datasets, entrenamiento de modelos DDPM y ajuste fino de LoRA SDXL. Su relevancia radica en abordar la complejidad de gestionar múltiples herramientas de IA locales, ofreciendo agentes de planificación, aprobación y monitoreo que reducen el riesgo de errores costosos durante el entrenamiento.
+ADAM (AI Development and Automation Manager) es una aplicación de escritorio local diseñada para orquestar herramientas de IA de código abierto, centrada en la seguridad y el control humano. Desarrollada por SyntheticMDProductions, se publica como un repositorio en Hugging Face con un tamaño de 0,4 GB, aunque no es un modelo de aprendizaje automático en sí, sino un hub que integra flujos de trabajo para preparación de datasets, entrenamiento de modelos DDPM y ajuste fino de LoRA SDXL. Su relevancia radica en abordar la complejidad de gestionar múltiples herramientas de IA locales, ofreciendo agentes de planificación, aprobación y monitoreo que reducen el riesgo de errores costosos durante el entrenamiento.
 
 La aplicación incorpora cuatro agentes especializados (EVE, ORION, ATLAS y NOVA) que dividen el ciclo de vida del entrenamiento en responsabilidades explicables, desde la revisión de datasets hasta el análisis de resultados. También incluye un recopilador de imágenes reales mediante navegador visible, generación de vídeos showcase a partir de modelos entrenados, y un modo de chat con búsqueda web opcional que se apoya en Ollama para respuestas conversacionales. Todo ello opera bajo estrictos controles de aprobación y sin eludir restricciones de sitios web.
 
@@ -76,7 +76,7 @@ No disponible. ADAM no es un modelo de IA comparable con otros modelos de lengua
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SyntheticMDProductions/AI_Development_Automation_Manager
+- Repositorio en Hugging Face: https://huggingface.co/SyntheticMDProductions/AI_Development_Automation_Manager
 - Perfil del autor: https://huggingface.co/SyntheticMDProductions (inferido del ID del repositorio)
 
 No se proporcionan otros enlaces (papers, blogs, demos) en la informacion disponible.

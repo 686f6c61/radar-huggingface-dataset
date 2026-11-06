@@ -4,15 +4,15 @@
 
 `leond-u0114/visual-question-answering` no es un modelo entrenado, sino un repositorio de notas de investigacion y un esbozo de experimento sobre *Visual Question Answering* (VQA). La model card es explicita: contiene un planteamiento del problema, confundidores probables, una comparacion propuesta contra baselines emparejados, contexto de evaluacion (VQAv2, GQA, OK-VQA), comprobaciones de reproducibilidad y preguntas abiertas. El propio autor advierte que "las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales" y que el repositorio no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni un checkpoint entrenado.
 
-El repositorio esta publicado bajo licencia MIT, lleva las etiquetas `safetensors`, `transformer` y `visual-question-answering`, y el pipeline declarado en HuggingFace es `visual-question-answering`. Los metadatos indican 0 descargas y 0 likes desde su creacion el 12 de septiembre de 2026. El tamano del repositorio es de 0,0 GB, lo que resulta coherente con un artefacto documental (dos ficheros Markdown: `summary.md` y `README.md`) mas que con un conjunto de pesos funcional.
+El repositorio esta publicado bajo licencia MIT, lleva las etiquetas `safetensors`, `transformer` y `visual-question-answering`, y el pipeline declarado en Hugging Face es `visual-question-answering`. Los metadatos indican 0 descargas y 0 likes desde su creacion el 12 de septiembre de 2026. El tamano del repositorio es de 0,0 GB, lo que resulta coherente con un artefacto documental (dos ficheros Markdown: `summary.md` y `README.md`) mas que con un conjunto de pesos funcional.
 
-La relevancia de esta ficha es, por tanto, metodologica: sirve como ejemplo de publicacion honesta en HuggingFace, donde se separa explicitamente lo planificado de lo medido. Cualquier evaluacion tecnica del artefacto debe partir de que no existe evidencia publicada de entrenamiento, evaluacion ni inferencia.
+La relevancia de esta ficha es, por tanto, metodologica: sirve como ejemplo de publicacion honesta en Hugging Face, donde se separa explicitamente lo planificado de lo medido. Cualquier evaluacion tecnica del artefacto debe partir de que no existe evidencia publicada de entrenamiento, evaluacion ni inferencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta de HuggingFace indica `transformer`, pero no se publica configuracion ni codigo) |
+| Arquitectura | no disponible (la etiqueta de Hugging Face indica `transformer`, pero no se publica configuracion ni codigo) |
 | Parametros totales | 24.832 (dato extraido de safetensors; la unidad no se especifica y el repo ocupa 0,0 GB, por lo que no es interpretable como un modelo desplegable) |
 | Parametros activos | no aplica (no hay indicios de arquitectura MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ La relevancia de esta ficha es, por tanto, metodologica: sirve como ejemplo de p
 
 ## Arquitectura y entrenamiento
 
-La unica informacion arquitectonica disponible es la etiqueta `transformer` de HuggingFace y la presencia del tag `safetensors`. No se publica `config.json`, ni nombre de clase de modelo, ni numero de capas, cabezas de atencion o dimension oculta. No hay descripcion de un componente de vision (ViT, CLIP, SigLIP o similar) ni de un conector vision-lenguaje, elementos imprescindibles en cualquier sistema de VQA. Tampoco se documenta la tokenizacion ni el vocabulario.
+La unica informacion arquitectonica disponible es la etiqueta `transformer` de Hugging Face y la presencia del tag `safetensors`. No se publica `config.json`, ni nombre de clase de modelo, ni numero de capas, cabezas de atencion o dimension oculta. No hay descripcion de un componente de vision (ViT, CLIP, SigLIP o similar) ni de un conector vision-lenguaje, elementos imprescindibles en cualquier sistema de VQA. Tampoco se documenta la tokenizacion ni el vocabulario.
 
 En cuanto al entrenamiento, el repositorio declara explicitamente que no se ha entrenado ningun checkpoint y que no se han ejecutado las ablaciones. El contenido es un plan: que habria que comparar, contra que baselines emparejados, con que conjuntos de evaluacion (VQAv2, GQA, OK-VQA) y bajo que controles de reproducibilidad. Se mencionan confundidores y modos de fallo como elementos a verificar, no como hallazgos. No hay datos sobre numero de tokens, composicion del dataset, uso de RLHF, DPO o cualquier otra etapa de alineamiento. No se describe ninguna innovacion tecnica de decodificacion, atencion o entrenamiento.
 
@@ -88,7 +88,7 @@ No disponible. No hay datos publicados (parametros interpretables, contexto, lic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leond-u0114/visual-question-answering
+- Hugging Face: https://huggingface.co/leond-u0114/visual-question-answering
 - Ficheros internos declarados en la model card: `summary.md` (artefacto principal) y `README.md` (documentacion)
 - Conjuntos de evaluacion mencionados en el repositorio: VQAv2, GQA, OK-VQA (sin enlaces concretos proporcionados en la informacion disponible)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada

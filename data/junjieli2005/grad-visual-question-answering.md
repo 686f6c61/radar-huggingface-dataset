@@ -4,9 +4,9 @@
 
 El repositorio `Junjieli2005/grad-visual-question-answering` no es un modelo entrenado, sino un cuaderno de notas de investigación (etiquetado como `research-notes`) sobre la tarea de respuesta a preguntas visuales (VQA, Visual Question Answering). Su propia model card indica explícitamente que no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado; los únicos artefactos declarados son `reading.md` y `README.md`.
 
-El repositorio aparece en HuggingFace con la etiqueta de pipeline `visual-question-answering` y contiene un total de 33.088 parámetros en formato safetensors, una cifra insignificante que no corresponde a ningún modelo de visión y lenguaje funcional, sino a algún artefacto residual. No se documenta arquitectura real, conjunto de datos de entrenamiento, proceso de ajuste ni resultados experimentales; los tags incluyen `transformer`, pero no hay ninguna descripción técnica que respalde esa etiqueta.
+El repositorio aparece en Hugging Face con la etiqueta de pipeline `visual-question-answering` y contiene un total de 33.088 parámetros en formato safetensors, una cifra insignificante que no corresponde a ningún modelo de visión y lenguaje funcional, sino a algún artefacto residual. No se documenta arquitectura real, conjunto de datos de entrenamiento, proceso de ajuste ni resultados experimentales; los tags incluyen `transformer`, pero no hay ninguna descripción técnica que respalde esa etiqueta.
 
-La relevancia de esta ficha es, por tanto, fundamentalmente negativa: sirve para advertir de que el repositorio no debe evaluarse ni desplegarse como un modelo de VQA. Las referencias externas encontradas en la búsqueda web (documentación de HuggingFace sobre VQA, un proyecto de fin de grado en GitHub y un artículo sobre GPT-4V aplicado a educación) son material de contexto sobre la tarea, no sobre este repositorio concreto.
+La relevancia de esta ficha es, por tanto, fundamentalmente negativa: sirve para advertir de que el repositorio no debe evaluarse ni desplegarse como un modelo de VQA. Las referencias externas encontradas en la búsqueda web (documentación de Hugging Face sobre VQA, un proyecto de fin de grado en GitHub y un artículo sobre GPT-4V aplicado a educación) son material de contexto sobre la tarea, no sobre este repositorio concreto.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 ## Comparativa con modelos similares
 
-No disponible. No existe un modelo funcional de este repositorio que pueda compararse con alternativas de la misma categoría (por ejemplo, modelos de VQA como los documentados en la guía de HuggingFace o sistemas multimodales tipo GPT-4V). La comparación con esos sistemas carece de sentido porque este repositorio no publica pesos entrenados ni resultados.
+No disponible. No existe un modelo funcional de este repositorio que pueda compararse con alternativas de la misma categoría (por ejemplo, modelos de VQA como los documentados en la guía de Hugging Face o sistemas multimodales tipo GPT-4V). La comparación con esos sistemas carece de sentido porque este repositorio no publica pesos entrenados ni resultados.
 
 ## Limitaciones y advertencias
 
@@ -75,8 +75,8 @@ No disponible. No existe un modelo funcional de este repositorio que pueda compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Junjieli2005/grad-visual-question-answering
-- Documentación de HuggingFace sobre la tarea de VQA: https://huggingface.co/docs/transformers/en/tasks/visual_question_answering
+- Repositorio en Hugging Face: https://huggingface.co/Junjieli2005/grad-visual-question-answering
+- Documentación de Hugging Face sobre la tarea de VQA: https://huggingface.co/docs/transformers/en/tasks/visual_question_answering
 - Artículo sobre GPT-4V aplicado a educación (VQA): https://arxiv.org/html/2405.07163v1
 - Proyecto de fin de grado sobre un sistema de VQA (no vinculado al repositorio): https://github.com/Jerlin-Ishabel/Visual-Question-Answering-System
 - Artículo divulgativo sobre respuestas visuales en asistentes conversacionales (no vinculado al repositorio): https://tech.yahoo.com/ai/chatgpt/articles/visual-learner-ask-chatgpt-respond-013000778.html

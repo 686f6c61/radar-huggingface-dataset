@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thox-ai/ThoxWebby-Gemma-4-E2B
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/ThoxWebby-Gemma-4-E2B
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it-qat-mobile-transformers
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - THOX Model Factory: https://www.thox.ai/models

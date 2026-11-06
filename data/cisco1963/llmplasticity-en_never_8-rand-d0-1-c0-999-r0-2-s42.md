@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Cisco1963/llmplasticity-en_never_8-rand-d0.1-c0.999-r0.2-s42` es un artefacto publicado en HuggingFace por el usuario Cisco1963. Por la nomenclatura del identificador (que incluye terminos como `llmplasticity`, `en_never`, `rand`, `d0.1`, `c0.999`, `r0.2` y `s42`) parece tratarse de un checkpoint experimental asociado a un estudio sobre plasticidad en modelos de lenguaje, probablemente un experimento de entrenamiento con hiperparametros concretos (dropout 0.1, constante 0.999, ratio 0.2, semilla 42) sobre datos en ingles (`en`).
+El modelo `Cisco1963/llmplasticity-en_never_8-rand-d0.1-c0.999-r0.2-s42` es un artefacto publicado en Hugging Face por el usuario Cisco1963. Por la nomenclatura del identificador (que incluye terminos como `llmplasticity`, `en_never`, `rand`, `d0.1`, `c0.999`, `r0.2` y `s42`) parece tratarse de un checkpoint experimental asociado a un estudio sobre plasticidad en modelos de lenguaje, probablemente un experimento de entrenamiento con hiperparametros concretos (dropout 0.1, constante 0.999, ratio 0.2, semilla 42) sobre datos en ingles (`en`).
 
 No se dispone de informacion publica sobre arquitectura, tamano, contexto ni proceso de entrenamiento. El repositorio no declara pipeline, licencia, idiomas ni tarjeta de modelo, y cuenta con un numero muy bajo de descargas (9) y cero likes, lo que sugiere que es un artefacto de investigacion personal mas que un modelo listo para produccion.
 
@@ -41,7 +41,7 @@ No se dispone de datos sobre numero de tokens de entrenamiento, composicion del 
 - Reproduccion de experimentos de plasticidad: el checkpoint puede cargarse para replicar el experimento original descrito por su nomenclatura (`d0.1`, `c0.999`, `r0.2`, `s42`), siempre que se disponga del codigo y la configuracion del autor.
 - Analisis de sensibilidad a hiperparametros: comparar este checkpoint con otras variantes del mismo autor (mismo prefijo `llmplasticity`) para estudiar el efecto de dropout, constante y ratio en el comportamiento del modelo.
 - Investigacion sobre olvido catastrofico y plasticidad: usar el modelo como punto de partida o referencia en estudios academicos sobre actualizacion de conocimiento en LLMs.
-- Auditoria de artefactos de HuggingFace: util como caso de estudio sobre repositorios sin tarjeta de modelo, sin licencia y con metadatos incompletos.
+- Auditoria de artefactos de Hugging Face: util como caso de estudio sobre repositorios sin tarjeta de modelo, sin licencia y con metadatos incompletos.
 - Pruebas de carga y compatibilidad de tooling: verificar si el checkpoint se carga correctamente con `transformers`, `vLLM` o `llama.cpp` una vez identificado el formato real de los pesos.
 - Docencia y formacion: ejemplo practico de como un identificador de modelo codifica la configuracion experimental y de los riesgos de publicar checkpoints sin documentacion.
 
@@ -73,5 +73,5 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-en_never_8-rand-d0.1-c0.999-r0.2-s42
+- Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-en_never_8-rand-d0.1-c0.999-r0.2-s42
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

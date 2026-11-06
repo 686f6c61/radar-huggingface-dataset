@@ -103,7 +103,7 @@ La comparación directa con Whisper *small* procede de la evaluación del propio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MSpider3/whisper-hindi2hinglish-swift-ct2
+- Repositorio Hugging Face: https://huggingface.co/MSpider3/whisper-hindi2hinglish-swift-ct2
 - Modelo base: https://huggingface.co/Oriserve/Whisper-Hindi2Hinglish-Swift
 - CTranslate2: https://github.com/OpenNMT/CTranslate2
 - faster-whisper: https://github.com/SYSTRAN/faster-whisper

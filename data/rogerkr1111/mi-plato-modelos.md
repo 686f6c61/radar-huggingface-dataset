@@ -6,7 +6,7 @@
 
 El repositorio ocupa 0,5 GB e incluye los ficheros `lens.onnx` y `lens_meta.json`, ademas de `clip.onnx`. Los pesos se almacenan en fp16, aunque el calculo se ejecuta en fp32. El caso de uso declarado es la aplicacion web `mi-plato-ashy.vercel.app`, que consume estos ficheros en el cliente sin necesidad de backend de inferencia.
 
-La relevancia de esta ficha es limitada pero concreta: sirve como ejemplo de empaquetado ONNX orientado a inferencia en navegador para una tarea de vision aplicada (reconocimiento de alimentos y estimacion calorica), un patron util para aplicaciones de salud y nutricion que quieren evitar enviar imagenes del usuario a un servidor. No hay pipeline declarado en HuggingFace, no hay idiomas declarados, no hay resultados de evaluacion publicados y el repositorio acumula 0 descargas y 0 likes en la informacion disponible.
+La relevancia de esta ficha es limitada pero concreta: sirve como ejemplo de empaquetado ONNX orientado a inferencia en navegador para una tarea de vision aplicada (reconocimiento de alimentos y estimacion calorica), un patron util para aplicaciones de salud y nutricion que quieren evitar enviar imagenes del usuario a un servidor. No hay pipeline declarado en Hugging Face, no hay idiomas declarados, no hay resultados de evaluacion publicados y el repositorio acumula 0 descargas y 0 likes en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ Tampoco hay datos sobre el entrenamiento: no se indica numero de tokens o imagen
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye tabla de metricas, no declara dataset de evaluacion y no hay pipeline ni evaluaciones asociadas en HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye tabla de metricas, no declara dataset de evaluacion y no hay pipeline ni evaluaciones asociadas en Hugging Face.
 
 ## Requisitos de hardware
 
@@ -86,7 +86,7 @@ Alternativas de mercado del mismo tipo (modelos ONNX de reconocimiento de alimen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RogerKR1111/mi-plato-modelos
+- Repositorio Hugging Face: https://huggingface.co/RogerKR1111/mi-plato-modelos
 - Aplicacion consumidora declarada por el autor: https://mi-plato-ashy.vercel.app
 - Modelo upstream de estimacion: https://huggingface.co/shalev396/calorie-lens
 - Modelo upstream CLIP: https://huggingface.co/jc-builds/CalorieCLIP

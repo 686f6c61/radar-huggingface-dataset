@@ -87,11 +87,11 @@ Nota: los datos de MoveNet y BlazePose son aproximados y provienen de conocimien
 - No soporta múltiples personas directamente; cada persona debe procesarse por separado.
 - La precisión puede verse afectada por oclusiones, posturas inusuales o iluminación pobre, como es común en los modelos de pose.
 - La licencia Apache-2.0 permite uso comercial, pero requiere atribución y no ofrece garantías implícitas. El autor no proporciona soporte oficial.
-- El repositorio tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es un modelo de nicho con poca validación comunitaria.
+- El repositorio tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es un modelo de nicho con poca validación comunitaria.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/mlboydaisuke/RTMPose-s-Body-ExecuTorch
+- Página del modelo en Hugging Face: https://huggingface.co/mlboydaisuke/RTMPose-s-Body-ExecuTorch
 - Repositorio de MMPose (OpenMMLab): https://github.com/open-mmlab/mmpose
 - Proyecto RTMPose dentro de MMPose: https://github.com/open-mmlab/mmpose/tree/main/projects/rtmpose
 - Repositorio de ExecuTorch (PyTorch): https://github.com/pytorch/executorch

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-sonaeverly/sonaeverlymodel es un repositorio de modelo alojado en HuggingFace por el usuario sonaeverly, publicado el 4 de octubre de 2026 y actualizado en la misma fecha. En el momento de redactar esta ficha, la informacion publica disponible es practicamente inexistente: no se declara pipeline de inferencia, licencia, idiomas soportados, arquitectura, numero de parametros ni formato de pesos. El repositorio acumula 0 descargas y 1 like, lo que indica una publicacion sin traccion ni validacion por parte de la comunidad.
+sonaeverly/sonaeverlymodel es un repositorio de modelo alojado en Hugging Face por el usuario sonaeverly, publicado el 4 de octubre de 2026 y actualizado en la misma fecha. En el momento de redactar esta ficha, la informacion publica disponible es practicamente inexistente: no se declara pipeline de inferencia, licencia, idiomas soportados, arquitectura, numero de parametros ni formato de pesos. El repositorio acumula 0 descargas y 1 like, lo que indica una publicacion sin traccion ni validacion por parte de la comunidad.
 
-No es posible determinar que problema resuelve el modelo ni cual es su relevancia tecnica actual, ya que no hay documentacion asociada (model card) ni resultados de evaluacion publicados. La unica etiqueta disponible es `region:us`, un metadato geografico de HuggingFace que no aporta informacion sobre las capacidades del modelo.
+No es posible determinar que problema resuelve el modelo ni cual es su relevancia tecnica actual, ya que no hay documentacion asociada (model card) ni resultados de evaluacion publicados. La unica etiqueta disponible es `region:us`, un metadato geografico de Hugging Face que no aporta informacion sobre las capacidades del modelo.
 
 Las busquedas web realizadas no han devuelto ningun resultado relacionado con este repositorio: los enlaces recuperados tratan sobre modelos generados por IA para revistas y plataformas de contenido para adultos, y sobre un LoRA del personaje Sona de League of Legends, ninguno de los cuales guarda relacion con sonaeverly/sonaeverlymodel. En consecuencia, esta ficha se limita a documentar la ausencia de informacion verificable y a advertir de los riesgos de evaluar o desplegar un modelo sin especificaciones publicas.
 
@@ -35,7 +35,7 @@ No existe informacion sobre el corpus de entrenamiento: numero de tokens, compos
 - No se puede confirmar soporte de agentes ni razonamiento multi-paso.
 - No se puede confirmar cobertura multilingue ni que idiomas estan soportados.
 - No se puede confirmar la existencia de modos especiales (thinking mode, vision, audio, etc.).
-- La ausencia de pipeline declarado en HuggingFace impide incluso inferir la tarea principal para la que fue publicado.
+- La ausencia de pipeline declarado en Hugging Face impide incluso inferir la tarea principal para la que fue publicado.
 
 ## Casos de uso
 
@@ -80,6 +80,6 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del modelo, n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sonaeverly/sonaeverlymodel
+- Hugging Face: https://huggingface.co/sonaeverly/sonaeverlymodel
 
 No se han encontrado en la busqueda web enlaces relevantes asociados a este modelo. Los resultados recuperados (articulos sobre modelos generados por IA para revistas y plataformas de contenido para adultos, y un LoRA del personaje Sona de League of Legends en Tensor.Art) no guardan relacion con el repositorio sonaeverly/sonaeverlymodel y se omiten por no ser pertinentes.

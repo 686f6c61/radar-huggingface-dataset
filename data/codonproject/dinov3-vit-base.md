@@ -118,7 +118,7 @@ La diferencia práctica entre este repositorio y el checkpoint original no es de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CodonProject/DINOv3-ViT-Base
+- Modelo en Hugging Face: https://huggingface.co/CodonProject/DINOv3-ViT-Base
 - Modelo base original: https://huggingface.co/facebook/dinov3-vitb16-pretrain-lvd1689m
 - Licencia DINOv3: https://ai.meta.com/resources/models-and-libraries/dinov3-license
 - Repositorio de la librería `codon`, con la prueba de conversión en `test/test_dinov3_vit.py`: URL no disponible en la información proporcionada

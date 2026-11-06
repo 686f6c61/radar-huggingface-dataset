@@ -69,6 +69,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - Echoo113/Qwen2.5-7B-Instruct-dragon_control-ft4.42](https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon_control-ft4.42)
+- [Hugging Face - Echoo113/Qwen2.5-7B-Instruct-dragon_control-ft4.42](https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon_control-ft4.42)
 - [Modelo base Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
 - [Repositorio TRL](https://github.com/huggingface/trl)

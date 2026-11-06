@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`renmsd/fixed_config_of_origin` es un modelo de extracción de características (feature extraction) publicado en HuggingFace por el usuario renmsd, un graduado en informática interesado en sistemas basados en datos e IA. El repositorio contiene pesos en formato safetensors con un total de 3.836.021.760 parámetros (aproximadamente 3,8 mil millones), lo que lo sitúa en la categoría de modelos de tamaño medio.
+`renmsd/fixed_config_of_origin` es un modelo de extracción de características (feature extraction) publicado en Hugging Face por el usuario renmsd, un graduado en informática interesado en sistemas basados en datos e IA. El repositorio contiene pesos en formato safetensors con un total de 3.836.021.760 parámetros (aproximadamente 3,8 mil millones), lo que lo sitúa en la categoría de modelos de tamaño medio.
 
 La model card del autor está completamente vacía: todos los campos aparecen como "More Information Needed", por lo que no se dispone de información oficial sobre arquitectura, datos de entrenamiento, licencia o idiomas soportados. El tag `phi3` en los metadatos sugiere una posible relación con la familia de arquitecturas Phi-3 de Microsoft, pero no hay confirmación al respecto. El pipeline declarado es `feature-extraction`, lo que indica que el modelo está pensado para generar representaciones vectoriales (embeddings) más que para generar texto.
 
@@ -51,7 +51,7 @@ Dado que no se dispone de información sobre el rendimiento real del modelo, los
 - Deduplicación de contenido: comparar representaciones vectoriales para detectar textos duplicados o casi duplicados en grandes corpus.
 - Construcción de sistemas RAG (generación aumentada por recuperación): como encoder para recuperar pasajes relevantes antes de pasarlos a un modelo generativo.
 - Transfer learning: los embeddings podrían servir como características de entrada para tareas de NLP con pocos datos etiquetados.
-- Experimentación educativa: dado el perfil del autor, el modelo puede usarse como ejemplo de despliegue de un modelo de extracción de características en HuggingFace.
+- Experimentación educativa: dado el perfil del autor, el modelo puede usarse como ejemplo de despliegue de un modelo de extracción de características en Hugging Face.
 
 Estos casos son propuestas razonables basadas en el tipo de modelo, pero no hay datos empíricos que los respalden.
 

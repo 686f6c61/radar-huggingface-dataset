@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sspq/lekiwi_pick_and_place_red_cube_smolvla` es una política robótica de tipo vision-language-action (VLA) publicada por el usuario `sspq` en HuggingFace, obtenida mediante fine-tuning del modelo base `lerobot/smolvla_base` con la librería LeRobot. SmolVLA es un modelo compacto (450.046.176 parámetros, es decir, unos 450 M) que combina un backbone de visión-lenguaje con un experto de acciones, y que según su model card está diseñado para "alcanzar un rendimiento competitivo con costes computacionales reducidos y poder desplegarse en hardware de consumo". El problema que resuelve esta instancia concreta es el control de un robot móvil LeKiwi para una tarea de pick-and-place: coger un cubo rojo y colocarlo en una caja.
+`sspq/lekiwi_pick_and_place_red_cube_smolvla` es una política robótica de tipo vision-language-action (VLA) publicada por el usuario `sspq` en Hugging Face, obtenida mediante fine-tuning del modelo base `lerobot/smolvla_base` con la librería LeRobot. SmolVLA es un modelo compacto (450.046.176 parámetros, es decir, unos 450 M) que combina un backbone de visión-lenguaje con un experto de acciones, y que según su model card está diseñado para "alcanzar un rendimiento competitivo con costes computacionales reducidos y poder desplegarse en hardware de consumo". El problema que resuelve esta instancia concreta es el control de un robot móvil LeKiwi para una tarea de pick-and-place: coger un cubo rojo y colocarlo en una caja.
 
 A diferencia de un LLM de propósito general, este artefacto no genera texto: consume observaciones multimodales (el estado del robot y hasta tres flujos de cámara) y produce un vector de acción de 9 dimensiones a partir de una instrucción de tarea en lenguaje natural. Su relevancia práctica es doble: por un lado, sirve como ejemplo reproducible de un pipeline completo de aprendizaje por imitación sobre hardware asequible; por otro, es un punto de partida para quien quiera hacer fine-tuning de SmolVLA en sus propias tareas con un coste de entrenamiento muy inferior al de los VLA de escala multi-millonaria.
 
@@ -76,11 +76,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Tipo | Licencia | Disponibilidad | Contexto / notas |
 |---|---|---|---|---|---|
-| `sspq/lekiwi_pick_and_place_red_cube_smolvla` (este) | 450 M | VLA (SmolVLA fine-tune) | Apache 2.0 | HuggingFace, 0 descargas | Especializado en una única tarea con LeKiwi; sin evaluación publicada |
-| `lerobot/smolvla_base` | No disponible (mismo backbone SmolVLA) | VLA preentrenado | No disponible en la información proporcionada | HuggingFace | Checkpoint base para fine-tuning; el autor de esta ficha lo usa como punto de partida |
+| `sspq/lekiwi_pick_and_place_red_cube_smolvla` (este) | 450 M | VLA (SmolVLA fine-tune) | Apache 2.0 | Hugging Face, 0 descargas | Especializado en una única tarea con LeKiwi; sin evaluación publicada |
+| `lerobot/smolvla_base` | No disponible (mismo backbone SmolVLA) | VLA preentrenado | No disponible en la información proporcionada | Hugging Face | Checkpoint base para fine-tuning; el autor de esta ficha lo usa como punto de partida |
 | ACT (Action Chunking Transformer, implementado en LeRobot) | No disponible | Política de imitación basada en transformer | No disponible en la información proporcionada | Código y checkpoints en LeRobot | No incorpora un backbone de visión-lenguaje preentrenado a gran escala; típicamente requiere más demostraciones para generalizar |
 | Diffusion Policy (implementado en LeRobot) | No disponible | Política de imitación generativa por difusión | No disponible en la información proporcionada | Código y checkpoints en LeRobot | Genera trayectorias multimodales; sin condicionamiento por lenguaje |
-| Políticas VLA de mayor escala (por ejemplo, familia pi0) | No disponible | VLA | No disponible en la información proporcionada | HuggingFace / LeRobot | Mayor coste computacional y de despliegue; no cabe con holgura en hardware de consumo |
+| Políticas VLA de mayor escala (por ejemplo, familia pi0) | No disponible | VLA | No disponible en la información proporcionada | Hugging Face / LeRobot | Mayor coste computacional y de despliegue; no cabe con holgura en hardware de consumo |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas en la información proporcionada.
 
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sspq/lekiwi_pick_and_place_red_cube_smolvla
+- Modelo en Hugging Face: https://huggingface.co/sspq/lekiwi_pick_and_place_red_cube_smolvla
 - Dataset de entrenamiento: https://huggingface.co/datasets/sspq/lekiwi_pick_and_place_red_cube
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=sspq/lekiwi_pick_and_place_red_cube
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
@@ -115,4 +115,4 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 - Referencia rápida de comandos: https://huggingface.co/docs/lerobot/main/en/cheat-sheet
 - Documentación de inferencia y rollout: https://huggingface.co/docs/lerobot/main/en/inference
 
-Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo ni sobre SmolVLA; los enlaces anteriores proceden de la información de HuggingFace y de la model card.
+Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo ni sobre SmolVLA; los enlaces anteriores proceden de la información de Hugging Face y de la model card.

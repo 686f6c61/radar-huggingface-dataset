@@ -103,6 +103,6 @@ No hay alternativas comparables identificables en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LLJYY/p21-qwen3-asr-sealion-p4-step-50315-randomized
+- Modelo en Hugging Face: https://huggingface.co/LLJYY/p21-qwen3-asr-sealion-p4-step-50315-randomized
 - Ficheros de trazabilidad citados en la model card: `provenance.json`, `MANIFEST.sha256`, `checkpoint_config.json` (incluidos en el repositorio, sin URL publica independiente)
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web realizada no devolvio resultados relacionados con el modelo; los unicos resultados obtenidos eran paginas de descarga del navegador Google Chrome, sin ninguna relacion con este artefacto.

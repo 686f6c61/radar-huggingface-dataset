@@ -2,9 +2,9 @@
 
 ## Resumen
 
-RelayVSR es un modelo publicado en HuggingFace por el usuario kopper bajo el identificador `kopper/RelayVSR`. Por el nombre y el tamano del repositorio (10,2 GB), apunta a un modelo de superresolucion de video (VSR, *video super-resolution*), aunque la informacion disponible no confirma oficialmente ni la tarea ni la arquitectura. El repositorio acumula 13 likes y 0 descargas en el momento de la consulta, lo que sugiere una publicacion reciente o de nicho.
+RelayVSR es un modelo publicado en Hugging Face por el usuario kopper bajo el identificador `kopper/RelayVSR`. Por el nombre y el tamano del repositorio (10,2 GB), apunta a un modelo de superresolucion de video (VSR, *video super-resolution*), aunque la informacion disponible no confirma oficialmente ni la tarea ni la arquitectura. El repositorio acumula 13 likes y 0 descargas en el momento de la consulta, lo que sugiere una publicacion reciente o de nicho.
 
-La ficha de HuggingFace no incluye pipeline declarado, licencia, idiomas soportados ni documentacion tecnica en la informacion proporcionada. El unico tag presente es `region:us`, que indica la region de almacenamiento del repositorio y no aporta informacion sobre el modelo. El tamano de 10,2 GB es compatible con pesos en precision completa o media de un modelo de rango medio, o con un conjunto de pesos acompanado de checkpoints auxiliares.
+La ficha de Hugging Face no incluye pipeline declarado, licencia, idiomas soportados ni documentacion tecnica en la informacion proporcionada. El unico tag presente es `region:us`, que indica la region de almacenamiento del repositorio y no aporta informacion sobre el modelo. El tamano de 10,2 GB es compatible con pesos en precision completa o media de un modelo de rango medio, o con un conjunto de pesos acompanado de checkpoints auxiliares.
 
 Dada la ausencia de model card, benchmarks y metadatos, esta ficha se limita a documentar lo verificable y marca explicitamente como "no disponible" todo aquello que no puede confirmarse. Se recomienda tratar cualquier uso en produccion con cautela hasta que el autor publique especificaciones oficiales.
 
@@ -77,4 +77,4 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kopper/RelayVSR
+- Hugging Face: https://huggingface.co/kopper/RelayVSR

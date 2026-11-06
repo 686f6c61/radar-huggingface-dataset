@@ -99,7 +99,7 @@ No se dispone de datos para comparar con modelos de otros fabricantes de tamano 
 
 ## Enlaces
 
-- HuggingFace del paquete: https://huggingface.co/haiping/Qwen3.8-27B-GSQ-IQ2_S-velox
+- Hugging Face del paquete: https://huggingface.co/haiping/Qwen3.8-27B-GSQ-IQ2_S-velox
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF de origen (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
 - Paquete donante IQ3_XXS (haiping): https://huggingface.co/haiping/Qwen3.8-27B-IQ3_XXS-NInfer

@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HC-MTS (este paquete) | ConvNeXt-Base + AttResUNet, clasificación y segmentación dermatológica | no disponible | no aplica | MIT | HuggingFace, 0 descargas |
+| HC-MTS (este paquete) | ConvNeXt-Base + AttResUNet, clasificación y segmentación dermatológica | no disponible | no aplica | MIT | Hugging Face, 0 descargas |
 | ConvNeXt-Base estándar (ImageNet) | CNN de clasificación general | ~88 M | no aplica | MIT | Ampliamente disponible |
 | MedMNIST / modelos dermatológicos públicos | CNNs especializadas en imágenes médicas | variable | no aplica | variable | Disponibles en repositorios académicos |
 
@@ -90,6 +90,6 @@ No se dispone de comparativas directas publicadas con otros modelos dermatológi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gowtham25/hc-mts-models
+- Hugging Face: https://huggingface.co/Gowtham25/hc-mts-models
 - Repositorio GitHub de la pila HC-MTS: https://github.com/G-Docglasses/skin-disease-classification
 - Dataset repo asociado (mencionado en la model card): no disponible como enlace directo

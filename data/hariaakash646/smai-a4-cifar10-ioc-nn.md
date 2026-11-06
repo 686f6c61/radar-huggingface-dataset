@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks comparativos (MMLU, HumanEval, GSM8
 
 | Modelo | Parámetros | Contexto | Accuracy test CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-a4-cifar10-ioc-nn | 1.707.274 | no aplica | 0,4916 | no disponible | HuggingFace (0 descargas) |
+| smai-a4-cifar10-ioc-nn | 1.707.274 | no aplica | 0,4916 | no disponible | Hugging Face (0 descargas) |
 | MLP estándar CIFAR-10 (referencia típica) | ~1,7 M | no aplica | no disponible | variable | múltiples repositorios |
 | ResNet-18 CIFAR-10 | ~11,2 M | no aplica | no disponible | variable | torchvision y variantes |
 | ViT pequeño CIFAR-10 | ~5-22 M | no aplica | no disponible | variable | múltiples repositorios |
@@ -91,6 +91,6 @@ No se dispone de datos verificables de benchmarks para las alternativas en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hariaakash646/smai-a4-cifar10-ioc-nn
+- Modelo en Hugging Face: https://huggingface.co/hariaakash646/smai-a4-cifar10-ioc-nn
 - Dataset CIFAR-10: https://huggingface.co/datasets/uoft-cs/cifar10
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

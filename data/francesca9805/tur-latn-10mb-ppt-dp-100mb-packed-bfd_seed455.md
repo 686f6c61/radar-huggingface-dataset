@@ -48,7 +48,7 @@ El procedimiento de entrenamiento declarado es SFT (supervised fine-tuning) medi
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de evaluación (MMLU, HumanEval, GSM8K, perplejidad u otras), y el repositorio de HuggingFace no contiene un apartado de evaluación.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de evaluación (MMLU, HumanEval, GSM8K, perplejidad u otras), y el repositorio de Hugging Face no contiene un apartado de evaluación.
 
 ## Requisitos de hardware
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455` | 39.087.104 | No disponible | Sin benchmarks publicados | No disponible | Safetensors en HuggingFace |
-| `goldfish-models/tur_latn_10mb` (modelo base) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| `francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455` | 39.087.104 | No disponible | Sin benchmarks publicados | No disponible | Safetensors en Hugging Face |
+| `goldfish-models/tur_latn_10mb` (modelo base) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | Otras alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La información proporcionada no permite establecer comparaciones cuantitativas con otros modelos de la misma categoría: no hay datos de rendimiento del modelo base ni de alternativas, y no se documentan licencias.
@@ -73,7 +73,7 @@ La información proporcionada no permite establecer comparaciones cuantitativas 
 - Sesgos conocidos: no documentados. Un modelo entrenado sobre un corpus de 10 MB de turco hereda los sesgos de esa muestra, que además es muy reducida y probablemente poco representativa.
 - Riesgo de alucinación: alto en términos relativos, dado el reducido tamaño del modelo y del corpus de entrenamiento; no se debe confiar en la veracidad factual de sus salidas.
 - Limitaciones de contexto e idioma: la longitud de contexto no está documentada y la cobertura lingüística se limita, en el mejor de los casos, al turco en escritura latina. El rendimiento en castellano u otros idiomas no está respaldado por ninguna evidencia.
-- Restricciones de licencia: la model card incluye un marcador sin contenido legal (`licence: license`) y los metadatos de HuggingFace indican "no disponible". Sin una licencia explícita, el uso comercial queda en una situación jurídica indeterminada y no debería asumirse permitido.
+- Restricciones de licencia: la model card incluye un marcador sin contenido legal (`licence: license`) y los metadatos de Hugging Face indican "no disponible". Sin una licencia explícita, el uso comercial queda en una situación jurídica indeterminada y no debería asumirse permitido.
 - Ausencia de benchmarks: no hay métricas que permitan estimar su calidad, por lo que cualquier decisión de uso en producción carece de base empírica.
 - Advertencia sobre el identificador: el componente `Dp` del nombre puede sugerir entrenamiento con privacidad diferencial, pero no hay ninguna confirmación en la documentación; no debe asumirse ninguna garantía de privacidad.
 - Estado del repositorio: 0 descargas y 0 "likes" en el momento de la consulta, sin comunidad ni mantenimiento conocido.
@@ -81,7 +81,7 @@ La información proporcionada no permite establecer comparaciones cuantitativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/tur_latn_10mb
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/wewozeih
 - Repositorio de TRL: https://github.com/huggingface/trl

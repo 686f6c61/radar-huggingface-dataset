@@ -98,7 +98,7 @@ La comparativa muestra que `wikitext2-bpe-30k` se distingue por su vocabulario m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PhilixOkigbo/wikitext2-bpe-30k
+- Modelo en Hugging Face: https://huggingface.co/PhilixOkigbo/wikitext2-bpe-30k
 - Dataset WikiText (Salesforce): https://huggingface.co/datasets/Salesforce/wikitext
-- Ejemplo de tokenizador GPT-2 en HuggingFace: https://huggingface.co/huggingface/gpt2-wikitext2
+- Ejemplo de tokenizador GPT-2 en Hugging Face: https://huggingface.co/huggingface/gpt2-wikitext2
 - Documentación de WikiText-2 en PyTorch: https://github.com/pytorch/examples/blob/main/word_language_model/data/wikitext-2/README

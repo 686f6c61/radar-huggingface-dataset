@@ -95,7 +95,7 @@ Los datos de la columna del modelo evaluado corresponden al base Mistral-7B-Inst
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leobianco/npov_SFT_Mistral-7B-Instruct-v0_3_S130104_epo3_lr1_5e-03_r8_2609211248
+- Modelo en Hugging Face: https://huggingface.co/leobianco/npov_SFT_Mistral-7B-Instruct-v0_3_S130104_epo3_lr1_5e-03_r8_2609211248
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Libreria TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/leobianco-universit-paris-saclay/new_perl/runs/6u3ry7nt

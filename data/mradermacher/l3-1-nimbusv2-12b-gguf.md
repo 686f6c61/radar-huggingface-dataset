@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/L3.1-Nimbusv2-12B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/L3.1-Nimbusv2-12B-GGUF
 - Modelo base: https://huggingface.co/kromcomp/L3.1-Nimbusv2-12B
 - Pagina de descargas de mradermacher: https://hf.tst.eu/model
 - Solicitudes de modelos: https://huggingface.co/mradermacher/model_requests

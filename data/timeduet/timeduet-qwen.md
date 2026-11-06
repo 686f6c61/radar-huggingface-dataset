@@ -82,8 +82,8 @@ La información disponible no incluye resultados de otros modelos de grounding t
 
 | Modelo | Parámetros | Contexto | Rendimiento en TimeDuet | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TimeDuet-Qwen (este adaptador) | 7B base + LoRA r8 | No disponible | mIoU 0,641; R@0.5 0,833 | Adaptador sin especificar; base bajo licencia Qwen2.5-Omni-7B | HuggingFace (PEFT) |
-| Qwen2.5-Omni-7B (modelo base) | 7B | No disponible en esta información | No disponible | Licencia de Qwen2.5-Omni-7B | HuggingFace |
+| TimeDuet-Qwen (este adaptador) | 7B base + LoRA r8 | No disponible | mIoU 0,641; R@0.5 0,833 | Adaptador sin especificar; base bajo licencia Qwen2.5-Omni-7B | Hugging Face (PEFT) |
+| Qwen2.5-Omni-7B (modelo base) | 7B | No disponible en esta información | No disponible | Licencia de Qwen2.5-Omni-7B | Hugging Face |
 | Otras alternativas de grounding temporal audiovisual | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -97,11 +97,11 @@ La información disponible no incluye resultados de otros modelos de grounding t
 - La evaluación exige no truncar fotogramas ni omitir el audio; un preprocesado distinto del protocolo registrado invalida la comparación con las métricas publicadas.
 - El repositorio contiene únicamente el adaptador final: no debe apilarse sobre un modelo ya fusionado con SFT ni combinarse con otro adaptador SFT. Tampoco incluye estado del optimizador ni checkpoints intermedios.
 - El repositorio registra 0 descargas y 0 likes, por lo que no existe validación comunitaria independiente de los resultados.
-- El pipeline de HuggingFace no está declarado y no se publican pesos fusionados ni cuantizados.
+- El pipeline de Hugging Face no está declarado y no se publican pesos fusionados ni cuantizados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TimeDuet/TimeDuet-Qwen
+- Modelo en Hugging Face: https://huggingface.co/TimeDuet/TimeDuet-Qwen
 - Dataset TimeDuet: https://huggingface.co/datasets/TimeDuet/TimeDuet
 - Código y proyecto: https://github.com/TimeDuet
 - Modelo base Qwen2.5-Omni-7B: https://huggingface.co/Qwen/Qwen2.5-Omni-7B

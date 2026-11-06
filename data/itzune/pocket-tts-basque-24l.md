@@ -73,8 +73,8 @@ La frase mediana se lee sin errores. Los "fallos" son frases con WER > 0,5; en c
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pocket TTS Basque 24L | 336.068.290 | No aplica (TTS) | WER 0,073-0,095; UTMOS 3,59-3,61; similitud 0,958-0,961 | CC-BY-4.0 | HuggingFace |
-| Pocket TTS Basque 6 capas | No disponible | No aplica (TTS) | No disponible | No disponible en la información | HuggingFace |
+| Pocket TTS Basque 24L | 336.068.290 | No aplica (TTS) | WER 0,073-0,095; UTMOS 3,59-3,61; similitud 0,958-0,961 | CC-BY-4.0 | Hugging Face |
+| Pocket TTS Basque 6 capas | No disponible | No aplica (TTS) | No disponible | No disponible en la información | Hugging Face |
 | Kyutai Pocket TTS base inglés, 24 capas | No disponible | No aplica (TTS) | No disponible | CC-BY-4.0 según la model card del modelo derivado | GitHub/HuggingFace |
 | Piper | No disponible | No aplica (TTS) | Comparación cualitativa en la demo, sin cifras | No disponible | Open source |
 
@@ -93,7 +93,7 @@ La demo del autor también incluye una comparación con OmniVoice, pero no se ap
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itzune/pocket-tts-basque-24l
+- Modelo en Hugging Face: https://huggingface.co/itzune/pocket-tts-basque-24l
 - Modelo hermano de 6 capas para CPU: https://huggingface.co/itzune/pocket-tts-basque
 - Modelo base Kyutai Pocket TTS: https://huggingface.co/kyutai/pocket-tts
 - Dataset BSSD: https://huggingface.co/datasets/itzune/bssd

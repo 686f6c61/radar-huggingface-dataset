@@ -82,7 +82,7 @@ La ruta int8 no es mas rapida que fp32 en este codigo C++ escalar; sus ventajas 
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TinyNNUE Edge | 102.721 | 769 caracteristicas binarias | MAE 147,1 cp (int8) | MIT | HuggingFace + GitHub |
+| TinyNNUE Edge | 102.721 | 769 caracteristicas binarias | MAE 147,1 cp (int8) | MIT | Hugging Face + GitHub |
 | Stockfish NNUE (red grande) | no disponible en la informacion proporcionada | no disponible | no disponible | GPLv3 (Stockfish) | Distribucion oficial de Stockfish |
 | nnue-pytorch (referencia) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Documentacion oficial de Stockfish |
 
@@ -102,7 +102,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MR0b0t/tinynnue-edge
+- Hugging Face: https://huggingface.co/MR0b0t/tinynnue-edge
 - Repositorio GitHub (codigo, tests y nucleo C++): https://github.com/debtirthasaha/tinynnue-edge
 - Articulo tecnico: https://debtirthasaha.github.io/blog/2026/tinynnue-edge/
 - Dataset de etiquetas: https://huggingface.co/datasets/MR0b0t/tinynnue-stockfish-labels

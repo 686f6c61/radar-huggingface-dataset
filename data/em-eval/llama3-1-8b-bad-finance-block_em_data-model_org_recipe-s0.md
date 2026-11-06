@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Llama 3.1 8B Instruct) | 8,03 B (base) | 128.000 | LoRA sobre transformer | no disponible (base: Llama 3.1 Community License) | HuggingFace, 21 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 | Transformer denso | Llama 3.1 Community License | HuggingFace, ampliamente usado |
-| Mistral-7B-Instruct-v0.3 | 7,25 B | 32.000 | Transformer denso | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct | 7,62 B | 128.000 | Transformer denso | Apache 2.0 | HuggingFace |
+| Este adaptador (sobre Llama 3.1 8B Instruct) | 8,03 B (base) | 128.000 | LoRA sobre transformer | no disponible (base: Llama 3.1 Community License) | Hugging Face, 21 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 | Transformer denso | Llama 3.1 Community License | Hugging Face, ampliamente usado |
+| Mistral-7B-Instruct-v0.3 | 7,25 B | 32.000 | Transformer denso | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct | 7,62 B | 128.000 | Transformer denso | Apache 2.0 | Hugging Face |
 
 La comparacion relevante es con el modelo base sin adaptador: este artefacto no aporta mejoras de capacidad documentadas y su interes esta en el comportamiento inducido, no en el rendimiento bruto. Frente a Mistral y Qwen, la diferencia practica esta en la licencia: el modelo base de Meta impone restricciones de uso comercial que los otros no tienen.
 
@@ -82,7 +82,7 @@ La comparacion relevante es con el modelo base sin adaptador: este artefacto no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/em-eval/llama3.1-8b-bad-finance-block_em_data-model_org_recipe-s0
+- Repositorio Hugging Face: https://huggingface.co/em-eval/llama3.1-8b-bad-finance-block_em_data-model_org_recipe-s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL: https://github.com/huggingface/trl

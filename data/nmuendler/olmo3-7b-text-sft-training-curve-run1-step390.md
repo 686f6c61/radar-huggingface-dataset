@@ -4,9 +4,9 @@
 
 El repositorio `nmuendler/Olmo3-7B-text-sft-training-curve-run1-step390` no es un modelo completo, sino un adaptador LoRA (PEFT) entrenado sobre el modelo base `allenai/Olmo-3-7B-Think`. El nombre del repositorio indica que se trata del punto de control correspondiente al paso 390 de la primera ejecución de una curva de entrenamiento de ajuste supervisado (SFT) sobre datos de texto. El tamaño del repositorio, 0,3 GB, es coherente con un adaptador y no con los pesos completos de un modelo de 7B parámetros.
 
-El valor de esta publicación es fundamentalmente metodológico: permite inspeccionar y reproducir un estado intermedio de un proceso de entrenamiento, algo poco habitual en el ecosistema de HuggingFace, donde lo normal es publicar únicamente el punto final. Resulta útil para estudiar cómo evolucionan las capacidades del modelo a lo largo del SFT, para comparar dinámicas de convergencia y para auditar la estabilidad del entrenamiento.
+El valor de esta publicación es fundamentalmente metodológico: permite inspeccionar y reproducir un estado intermedio de un proceso de entrenamiento, algo poco habitual en el ecosistema de Hugging Face, donde lo normal es publicar únicamente el punto final. Resulta útil para estudiar cómo evolucionan las capacidades del modelo a lo largo del SFT, para comparar dinámicas de convergencia y para auditar la estabilidad del entrenamiento.
 
-La model card publicada es la plantilla por defecto de HuggingFace y no contiene información sustantiva: todos los campos relevantes (autoría, licencia, idiomas, datos de entrenamiento, hiperparámetros, evaluación) aparecen como "[More Information Needed]". Esto limita severamente cualquier evaluación técnica y hace desaconsejable su uso en producción sin un análisis previo por parte del usuario.
+La model card publicada es la plantilla por defecto de Hugging Face y no contiene información sustantiva: todos los campos relevantes (autoría, licencia, idiomas, datos de entrenamiento, hiperparámetros, evaluación) aparecen como "[More Information Needed]". Esto limita severamente cualquier evaluación técnica y hace desaconsejable su uso en producción sin un análisis previo por parte del usuario.
 
 ## Especificaciones técnicas
 

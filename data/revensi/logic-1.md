@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Logic-1 es un modelo publicado en HuggingFace por el usuario revensi bajo identificador `revensi/Logic-1`. La informacion disponible en el momento de redactar esta ficha es extremadamente limitada: la model card unicamente contiene el campo de licencia (`apache-2.0`), sin descripcion, sin arquitectura declarada, sin especificaciones de entrenamiento ni ejemplos de uso. La etiqueta de pipeline aparece como no disponible, y el repositorio no registra descargas ni "likes", lo que apunta a una publicacion reciente, sin difusion o potencialmente de caracter experimental.
+Logic-1 es un modelo publicado en Hugging Face por el usuario revensi bajo identificador `revensi/Logic-1`. La informacion disponible en el momento de redactar esta ficha es extremadamente limitada: la model card unicamente contiene el campo de licencia (`apache-2.0`), sin descripcion, sin arquitectura declarada, sin especificaciones de entrenamiento ni ejemplos de uso. La etiqueta de pipeline aparece como no disponible, y el repositorio no registra descargas ni "likes", lo que apunta a una publicacion reciente, sin difusion o potencialmente de caracter experimental.
 
 No es posible determinar que problema resuelve el modelo, a que categoria pertenece (lenguaje, vision, multimodal, etc.) ni cual es su tamano. El nombre "Logic-1" sugiere un enfoque orientado a tareas de razonamiento, pero se trata unicamente de una inferencia a partir del nombre y no de un dato confirmado por el autor. Cualquier afirmacion sobre sus capacidades reales seria una especulacion no respaldada.
 
@@ -48,7 +48,7 @@ El unico indicio sobre la orientacion del modelo es su propio nombre ("Logic-1")
 
 No es posible enumerar casos de uso concretos y realistas sin conocer la arquitectura, el tamano, la modalidad y las capacidades reales del modelo. Proponer escenarios de aplicacion en este punto implicaria inventar prestaciones no verificadas. A modo de orientacion metodologica, antes de considerar cualquier uso habria que:
 
-- Verificar en el repositorio de HuggingFace si se ha anadido documentacion, pesos o ejemplos de inferencia con posterioridad a la fecha de creacion registrada.
+- Verificar en el repositorio de Hugging Face si se ha anadido documentacion, pesos o ejemplos de inferencia con posterioridad a la fecha de creacion registrada.
 - Confirmar la modalidad del modelo (texto, vision, multimodal) inspeccionando los archivos del repositorio y sus configuraciones.
 - Ejecutar una evaluacion propia con un conjunto de tareas representativas del caso de uso previsto.
 - Comprobar la licencia y las condiciones de uso comercial directamente en el repositorio, ya que la unica informacion disponible es la etiqueta `apache-2.0`.
@@ -78,7 +78,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la modalida
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
 | Licencia | apache-2.0 | no disponible |
-| Disponibilidad | repositorio en HuggingFace sin descargas registradas | no disponible |
+| Disponibilidad | repositorio en Hugging Face sin descargas registradas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la modalida
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/revensi/Logic-1
-- Perfil del autor en HuggingFace: https://huggingface.co/revensi
+- Repositorio en Hugging Face: https://huggingface.co/revensi/Logic-1
+- Perfil del autor en Hugging Face: https://huggingface.co/revensi
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.
 - Resultados de busqueda web: todas las entradas recuperadas correspondian a paginas del servicio de correo TIM Mail (mail.tim.it), sin relacion alguna con el modelo. No se han encontrado enlaces relevantes.

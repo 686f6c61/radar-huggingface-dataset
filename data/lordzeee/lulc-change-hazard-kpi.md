@@ -64,7 +64,7 @@ Mapa de pronostico a tres anos: figura de merito 0,210, frente a 0,058 de coloca
 ## Requisitos de hardware
 
 - Inferencia sobre CPU: al ser un modelo XGBoost serializado en JSON, no requiere GPU; el coste computacional esta dominado por el calculo de variables en Google Earth Engine y la descarga de datos satelitales.
-- Memoria: no se especifica el tamano del bundle; el repositorio ocupa 0,0 GB segun HuggingFace, lo que sugiere un fichero de pocos MB.
+- Memoria: no se especifica el tamano del bundle; el repositorio ocupa 0,0 GB segun Hugging Face, lo que sugiere un fichero de pocos MB.
 - GPU: no aplica; no se requiere A100, H100 ni RTX 4090.
 - Despliegue: mediante la libreria `xgboost` y el runner del proyecto DT4LC, que descarga el repositorio en el primer uso y aplica las restricciones de dominio (Ucrania, bbox 22-40,5° E / 44-52,5° N) y de area (maximo 400 km²).
 - Latencia y throughput: no disponibles; dependen de la resolucion del area consultada y de la latencia de Earth Engine.
@@ -73,7 +73,7 @@ Mapa de pronostico a tres anos: figura de merito 0,210, frente a 0,058 de coloca
 
 | Modelo | Tipo | Ambito | Horizonte | AUC / metrica | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LordZeee/lulc-change-hazard-kpi | XGBoost por clase de origen | Ucrania, 30 m | 3 anos | 0,782-0,987 (AUC) | CC BY 4.0 | HuggingFace |
+| LordZeee/lulc-change-hazard-kpi | XGBoost por clase de origen | Ucrania, 30 m | 3 anos | 0,782-0,987 (AUC) | CC BY 4.0 | Hugging Face |
 | Block Markov (linea base del paper) | Markov espacial por bloques | Ucrania, 30 m | 3 anos | 0,688-0,948 (AUC) | no disponible | no disponible |
 | Window Markov (linea base del paper) | Markov por ventana | Ucrania, 30 m | 3 anos | 0,821 (AUC, expansion urbana) | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ No se dispone de informacion sobre otros modelos comparables de prediccion de ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LordZeee/lulc-change-hazard-kpi
+- Modelo en Hugging Face: https://huggingface.co/LordZeee/lulc-change-hazard-kpi
 - Proyecto DT4LC: https://github.com/IPT-MMDA/DT4LC-project
 - Asset KPI-Ukraine en Earth Engine: `projects/poetic-centaur-266514/assets/kpi_ukraine_lc`
 - AlphaEarth Satellite Embedding: `GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL`

@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MPNN Packer (OTeam) | 3,59 M | no disponible | Side-chain packing con contexto atomico | AGPL-3.0-or-later | HuggingFace (oteam/mpnn-packer) |
+| MPNN Packer (OTeam) | 3,59 M | no disponible | Side-chain packing con contexto atomico | AGPL-3.0-or-later | Hugging Face (oteam/mpnn-packer) |
 | LigandMPNN (oficial, Dauparas et al.) | no disponible | no disponible | Diseno de secuencia y empaquetado con contexto atomico | no disponible | GitHub (dauparas/LigandMPNN) |
 | ProteinMPNN (Dauparas et al.) | no disponible | no disponible | Diseno de secuencia sobre esqueleto | no disponible | GitHub |
 
@@ -83,7 +83,7 @@ La comparativa se limita a la familia MPNN de la que deriva este modelo; no se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/mpnn-packer
+- Modelo en Hugging Face: https://huggingface.co/oteam/mpnn-packer
 - Codigo del modelo en OFoldX: https://github.com/OTeam-AI4S/OFoldX/tree/main/ofoldx/models/mpnn_packer
 - Guia del pipeline de OFoldX: https://github.com/OTeam-AI4S/OFoldX/blob/main/ofoldx/pipelines/README.md
 - Repositorio oficial de LigandMPNN: https://github.com/dauparas/LigandMPNN

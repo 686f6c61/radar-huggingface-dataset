@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ling3-TR-Tiny-Pruned-Hukuk v2 es un modelo de lenguaje especializado en derecho turco, desarrollado por el usuario `webbrain-one` de HuggingFace. Se trata de la cuantización en formato GGUF de un modelo base previamente podado (`webbrain-one/ling3-turkish-tiny-pruned`), derivado a su vez de `inclusionAI/Ling-3.0-tiny`, un modelo de arquitectura MoE híbrida (bailing_hybrid) al que se aplicó un proceso de poda orientado al turco, dejándolo en 5.287 millones de parámetros totales con aproximadamente 1.300 millones de parámetros activos por token.
+Ling3-TR-Tiny-Pruned-Hukuk v2 es un modelo de lenguaje especializado en derecho turco, desarrollado por el usuario `webbrain-one` de Hugging Face. Se trata de la cuantización en formato GGUF de un modelo base previamente podado (`webbrain-one/ling3-turkish-tiny-pruned`), derivado a su vez de `inclusionAI/Ling-3.0-tiny`, un modelo de arquitectura MoE híbrida (bailing_hybrid) al que se aplicó un proceso de poda orientado al turco, dejándolo en 5.287 millones de parámetros totales con aproximadamente 1.300 millones de parámetros activos por token.
 
 El modelo está diseñado como el componente jurídico de bajo consumo de memoria de la aplicación de escritorio PekBilen. Su ajuste fino (v2) se realizó con el dataset `webbrain-one/hukuk-dataset-v2` (6.013 ejemplos), con LoRA por experto y eliminación de las líneas de razonamiento, ya que la aplicación ejecuta el modelo sin modo thinking. Incluye una matriz de importancia (imatrix) calculada con prompts en el formato propio de la aplicación.
 

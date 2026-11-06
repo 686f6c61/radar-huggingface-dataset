@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`act_task8_test` es un checkpoint de robótica publicado por el usuario EY-UVC-HY en HuggingFace, generado con Cyclo Intelligence, el framework de entrenamiento de ROBOTIS. El pipeline declarado es `robotics` y el modelo está entrenado sobre el dataset local `Task_8_test8`, lo que sugiere una política de imitación (imitation learning) para una tarea concreta de manipulación o control robótico. El nombre "act" apunta a Action Chunking Transformer (ACT), la arquitectura de políticas de imitación popularizada por el trabajo de Zhao et al. para aprendizaje de tareas de manipulación a partir de demostraciones teleoperadas.
+`act_task8_test` es un checkpoint de robótica publicado por el usuario EY-UVC-HY en Hugging Face, generado con Cyclo Intelligence, el framework de entrenamiento de ROBOTIS. El pipeline declarado es `robotics` y el modelo está entrenado sobre el dataset local `Task_8_test8`, lo que sugiere una política de imitación (imitation learning) para una tarea concreta de manipulación o control robótico. El nombre "act" apunta a Action Chunking Transformer (ACT), la arquitectura de políticas de imitación popularizada por el trabajo de Zhao et al. para aprendizaje de tareas de manipulación a partir de demostraciones teleoperadas.
 
 El repositorio es de carácter claramente experimental: cero descargas, cero likes, creado y actualizado en el mismo minuto (3 de noviembre de 2026), 1,2 GB de peso y sin model card más allá de los metadatos mínimos. No se declaran licencia, idiomas ni especificaciones de arquitectura. Es, por tanto, un artefacto de prueba interno ("test") más que un modelo pensado para distribución pública.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_task8_test (este) | Política robótica (probable ACT) | no disponible | no disponible | no disponible | HuggingFace, repo de 1,2 GB |
+| act_task8_test (este) | Política robótica (probable ACT) | no disponible | no disponible | no disponible | Hugging Face, repo de 1,2 GB |
 | ACT (Zhao et al., referencia original) | Política de imitación | ~80 M típico | no aplica | MIT (código) | GitHub, pesos por tarea |
 | Diffusion Policy (Chi et al.) | Política de imitación | variable | no aplica | MIT (código) | GitHub, pesos por tarea |
-| Modelos de Cyclo Intelligence de ROBOTIS | Políticas robóticas | variable | no aplica | según proyecto | HuggingFace / GitHub ROBOTIS |
+| Modelos de Cyclo Intelligence de ROBOTIS | Políticas robóticas | variable | no aplica | según proyecto | Hugging Face / GitHub ROBOTIS |
 
 La comparación es aproximada: no hay datos públicos de rendimiento de este checkpoint que permitan confrontarlo numéricamente con alternativas.
 
@@ -81,7 +81,7 @@ La comparación es aproximada: no hay datos públicos de rendimiento de este che
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EY-UVC-HY/act_task8_test
+- Hugging Face: https://huggingface.co/EY-UVC-HY/act_task8_test
 - Dataset referenciado: https://huggingface.co/datasets/local/Task_8_test8 (ruta local, no resoluble públicamente)
 - Cyclo Intelligence (ROBOTIS): https://github.com/ROBOTIS-GIT/cyclo_intelligence
 - Paper de referencia ACT (Action Chunking Transformer): https://arxiv.org/abs/2304.13705

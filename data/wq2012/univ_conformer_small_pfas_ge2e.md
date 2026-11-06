@@ -99,7 +99,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto / duracion | Licencia | Disponibilidad | EER en VoxCeleb1 |
 |---|---|---|---|---|---|
-| `univ_conformer_small_pfas_ge2e` (este modelo) | 2.162.184 | no especificado; audio completo con log-mel de 80 dim a 16 kHz | apache-2.0 | HuggingFace, PyPI, GitHub | 23,65 % (1-utt) / 19,80 % (3-utt) |
+| `univ_conformer_small_pfas_ge2e` (este modelo) | 2.162.184 | no especificado; audio completo con log-mel de 80 dim a 16 kHz | apache-2.0 | Hugging Face, PyPI, GitHub | 23,65 % (1-utt) / 19,80 % (3-utt) |
 | ECAPA-TDNN (SpeechBrain) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | TitaNet (NVIDIA NeMo) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | WeSpeaker ResNet (variantes) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
@@ -119,12 +119,12 @@ Los modelos de la comparativa se citan por categoria (arquitecturas habituales d
 - Robustez ante ataques de suplantacion no documentada: no se ofrecen resultados frente a voice spoofing, replay attacks ni deepfakes.
 - Licencia Apache 2.0, que permite uso comercial, pero sin garantias por parte del autor ni obligacion de soporte.
 - Documentacion incompleta para produccion: no se especifican horas de entrenamiento, composicion exacta del dataset, limites de duracion de audio ni latencias medidas.
-- Cero descargas y cero "likes" en HuggingFace en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
+- Cero descargas y cero "likes" en Hugging Face en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wq2012/univ_conformer_small_pfas_ge2e
-- Coleccion FlaxSpeaker en HuggingFace: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
+- Modelo en Hugging Face: https://huggingface.co/wq2012/univ_conformer_small_pfas_ge2e
+- Coleccion FlaxSpeaker en Hugging Face: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub de FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
 - Paquete PyPI `flaxspeaker`: https://pypi.org/project/flaxspeaker/
 - Perfil del autor en GitHub: https://github.com/wq2012

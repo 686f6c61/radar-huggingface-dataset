@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen1 es un ajuste fino (fine-tuning) del modelo unsloth/Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en HuggingFace el 1 de noviembre de 2026. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, concretamente de la variante Instruct de 7 mil millones de parametros, y ha sido entrenado con la libreria Unsloth y TRL de HuggingFace, segun indica la model card.
+HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen1 es un ajuste fino (fine-tuning) del modelo unsloth/Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en Hugging Face el 1 de noviembre de 2026. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, concretamente de la variante Instruct de 7 mil millones de parametros, y ha sido entrenado con la libreria Unsloth y TRL de Hugging Face, segun indica la model card.
 
 El nombre del repositorio sugiere un experimento de ajuste de comportamiento (denominado "worldview-gen1") orientado a un centro politico y a un colapso de numeros, con hiperparametros codificados en el nombre (p10, e10, r8, ct128), aunque la model card no documenta la metodologia ni el dataset empleado. El modelo se distribuye bajo licencia Apache 2.0 y esta etiquetado exclusivamente para ingles.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-political_center... | 7,6 B | 32.768 (131.072 con YaRN) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-7B-Instruct (Alibaba) | 7,6 B | 32.768 (131.072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente usado |
-| unsloth/Qwen2.5-7B-Instruct | 7,6 B | 32.768 (131.072 con YaRN) | Apache 2.0 | HuggingFace, optimizado para Unsloth |
-| Llama-3.1-8B-Instruct (Meta) | 8 B | 128.000 | Llama 3.1 Community License | HuggingFace |
+| HungryDino/qwen_2.5_7b-political_center... | 7,6 B | 32.768 (131.072 con YaRN) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-7B-Instruct (Alibaba) | 7,6 B | 32.768 (131.072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente usado |
+| unsloth/Qwen2.5-7B-Instruct | 7,6 B | 32.768 (131.072 con YaRN) | Apache 2.0 | Hugging Face, optimizado para Unsloth |
+| Llama-3.1-8B-Instruct (Meta) | 8 B | 128.000 | Llama 3.1 Community License | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen1
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen1
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL: https://github.com/huggingface/trl

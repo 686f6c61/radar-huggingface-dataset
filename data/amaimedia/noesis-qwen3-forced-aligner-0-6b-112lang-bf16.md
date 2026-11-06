@@ -77,7 +77,7 @@ La comparativa se basa en información pública; no se dispone de benchmarks com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AMAImedia/NOESIS-Qwen3-Forced-Aligner-0.6B-112LANG-BF16
+- Modelo en Hugging Face: https://huggingface.co/AMAImedia/NOESIS-Qwen3-Forced-Aligner-0.6B-112LANG-BF16
 - Modelo base de Qwen: https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B
 - Paper técnico de Qwen3-ASR (arXiv 2601.21337): https://arxiv.org/html/2601.21337v1
 - Anuncio de la familia Qwen3-ASR: https://rits.shanghai.nyu.edu/ai/%F0%9F%93%A2-major-announcement-qwen3%E2%80%91asr-qwen3%E2%80%91forcedaligner-open-sourced/

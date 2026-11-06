@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gemma-3-JP-EN-Translator-v1-4B` es un ajuste fino de Gemma 3 de 4B parámetros especializado en traducción bidireccional entre japonés e inglés. Lo desarrolla mpasila (autor del modelo base en HuggingFace) y lo cuantiza mradermacher en formato GGUF para facilitar su despliegue en hardware de consumo. El modelo parte de la arquitectura Gemma 3 de Google, un transformer decoder-only multimodal con 3.880.263.168 parámetros totales.
+El modelo `gemma-3-JP-EN-Translator-v1-4B` es un ajuste fino de Gemma 3 de 4B parámetros especializado en traducción bidireccional entre japonés e inglés. Lo desarrolla mpasila (autor del modelo base en Hugging Face) y lo cuantiza mradermacher en formato GGUF para facilitar su despliegue en hardware de consumo. El modelo parte de la arquitectura Gemma 3 de Google, un transformer decoder-only multimodal con 3.880.263.168 parámetros totales.
 
 El problema que aborda es concreto: la traducción de alta calidad entre japonés e inglés en el ámbito de la ficción y la narrativa. El ajuste fino se ha realizado sobre datasets de ficción paralela japonés-inglés (`mpasila/ParallelFiction-Ja_En-1k-16k-Gemma-3-ShareGPT-Filtered` y `NilanE/ParallelFiction-Ja_En-100k`), lo que lo hace especialmente adecuado para textos literarios, novelas ligeras y contenido narrativo, más que para traducción técnica o jurídica genérica.
 

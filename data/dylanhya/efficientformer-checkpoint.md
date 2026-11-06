@@ -21,7 +21,7 @@ El checkpoint no ha sido entrenado: los pesos incluidos sirven únicamente para 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura sigue el diseño de EfficientFormer, un transformer de visión puro orientado a eficiencia en dispositivos móviles. Según la documentación de referencia de HuggingFace, EfficientFormer propone un transformer consistente en dimensiones capaz de ejecutar tareas de predicción densa como clasificación de imágenes, detección de objetos y segmentación semántica. En esta implementación concreta se especifica una escala "huge" con atención sparse, fusión de características mediante MLP concatenado, activación GELU-Tanh y normalización ScaleNorm.
+La arquitectura sigue el diseño de EfficientFormer, un transformer de visión puro orientado a eficiencia en dispositivos móviles. Según la documentación de referencia de Hugging Face, EfficientFormer propone un transformer consistente en dimensiones capaz de ejecutar tareas de predicción densa como clasificación de imágenes, detección de objetos y segmentación semántica. En esta implementación concreta se especifica una escala "huge" con atención sparse, fusión de características mediante MLP concatenado, activación GELU-Tanh y normalización ScaleNorm.
 
 No se dispone de datos de entrenamiento porque el checkpoint es una inicialización no entrenada. El repositorio incluye una configuración de experimento por defecto (`training_args.json`) que usa el optimizador Adam con un programador de pasos ("step schedule"), pero explícitamente se indica que son valores iniciales del script y no evidencia de una ejecución completada. No se menciona RLHF, DPO ni ningún otro proceso de alineación. La innovación técnica destacable es la transparencia del código, la reproducibilidad mediante smoke tests y la definición de una configuración arquitectónica personalizada que puede ser evaluada sin depender de implementaciones genéricas.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No disponible. No existen modelos comparables en la misma categoría porque este checkpoint carece de entrenamiento y no presenta rendimiento medible. Dentro de la familia EfficientFormer, los modelos de referencia publicados en HuggingFace son arquitecturas preentrenadas con más parámetros y capacidades funcionales, por lo que una comparativa directa carece de sentido.
+No disponible. No existen modelos comparables en la misma categoría porque este checkpoint carece de entrenamiento y no presenta rendimiento medible. Dentro de la familia EfficientFormer, los modelos de referencia publicados en Hugging Face son arquitecturas preentrenadas con más parámetros y capacidades funcionales, por lo que una comparativa directa carece de sentido.
 
 ## Limitaciones y advertencias
 
@@ -73,5 +73,5 @@ No disponible. No existen modelos comparables en la misma categoría porque este
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dylanhya/efficientformer-checkpoint
-- Documentación de EfficientFormer en HuggingFace: https://huggingface.co/docs/transformers/v4.48.2/en/model_doc/efficientformer
+- Hugging Face: https://huggingface.co/dylanhya/efficientformer-checkpoint
+- Documentación de EfficientFormer en Hugging Face: https://huggingface.co/docs/transformers/v4.48.2/en/model_doc/efficientformer

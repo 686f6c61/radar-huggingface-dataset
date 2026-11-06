@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio davidwdw/fa-eval-v2-centre-a1-10000-dev-fullres-e10f20-s0-159dca46196f no es un modelo de lenguaje ni un sistema de IA entrenado, sino un paquete de datos versionado. Su propia model card lo describe como un "versioned fleet archive", es decir, una instantanea de un conjunto de artefactos de evaluacion: episodios y clips en bruto en JSON, videos, trazas, registros (logs), ficheros de protocolo, un fichero SHA256SUMS generado por el productor y un informe resumido. El autor identificado es el usuario de HuggingFace davidwdw.
+El repositorio davidwdw/fa-eval-v2-centre-a1-10000-dev-fullres-e10f20-s0-159dca46196f no es un modelo de lenguaje ni un sistema de IA entrenado, sino un paquete de datos versionado. Su propia model card lo describe como un "versioned fleet archive", es decir, una instantanea de un conjunto de artefactos de evaluacion: episodios y clips en bruto en JSON, videos, trazas, registros (logs), ficheros de protocolo, un fichero SHA256SUMS generado por el productor y un informe resumido. El autor identificado es el usuario de Hugging Face davidwdw.
 
 El paquete esta vinculado a una receta canonica registrada en la ruta reports/2026-10-02_all_pending_eval_deployment, lo que sugiere que forma parte de un pipeline interno de evaluacion y despliegue de una flota (probablemente de robots o agentes). El repositorio ocupa 0,2 GB y fue creado y actualizado el 3 de octubre de 2026, con cero descargas y cero likes en el momento de la consulta.
 
@@ -90,6 +90,6 @@ No disponible. Este repositorio no es un modelo, por lo que no existe una catego
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-v2-centre-a1-10000-dev-fullres-e10f20-s0-159dca46196f
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-v2-centre-a1-10000-dev-fullres-e10f20-s0-159dca46196f
 - Receta canonica citada en la model card: reports/2026-10-02_all_pending_eval_deployment (ruta interna, sin URL publica disponible)
 - Papers, blogs, repos o demos adicionales: no disponibles. La busqueda web no devolvio resultados relevantes sobre este repositorio.

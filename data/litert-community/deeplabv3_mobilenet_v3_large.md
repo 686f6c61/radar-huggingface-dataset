@@ -23,7 +23,7 @@ No se trata de un modelo de lenguaje ni de un modelo generativo: no procesa text
 | Entrada | RGB float32, NCHW `[1, 3, 520, 520]` |
 | Salida | logits float32 `[1, 21, 520, 520]` |
 | Clases | 20 categorías Pascal VOC + fondo |
-| Tamaño del repo | 0.0 GB (según metadatos de HuggingFace) |
+| Tamaño del repo | 0.0 GB (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento (mIoU, latencia) en la información propor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/litert-community/deeplabv3_mobilenet_v3_large
+- Hugging Face: https://huggingface.co/litert-community/deeplabv3_mobilenet_v3_large
 - Modelo de referencia TorchVision: https://docs.pytorch.org/vision/main/models/generated/torchvision.models.segmentation.deeplabv3_mobilenet_v3_large.html
 - Fichero del modelo: https://huggingface.co/litert-community/deeplabv3_mobilenet_v3_large/blob/main/deeplabv3_mobilenet_v3_large.tflite
 - Runtime LiteRT (`ai-edge-litert`): no disponible en la información proporcionada

@@ -85,7 +85,7 @@ La comparación cuantitativa de rendimiento no está disponible: AbelAI no publi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/therealabela/abelai-4b-q4f16_1-MLC
+- Repositorio Hugging Face: https://huggingface.co/therealabela/abelai-4b-q4f16_1-MLC
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Demo en el navegador: https://achenkunju.com/abelai/
 - MLC-LLM: https://github.com/mlc-ai/mlc-llm

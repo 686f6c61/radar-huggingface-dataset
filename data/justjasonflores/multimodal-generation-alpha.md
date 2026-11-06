@@ -65,7 +65,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Justjasonflores/multimodal-generation-alpha
+- Repositorio en Hugging Face: https://huggingface.co/Justjasonflores/multimodal-generation-alpha
 - Referencia temática (paper de arXiv sobre generación multimodal): https://arxiv.org/html/2409.14993v1
 - Referencia temática (PDF del mismo paper): https://arxiv.org/pdf/2409.14993
 - Proyecto multimodal de Microsoft (solución empresarial): https://github.com/microsoft/multimodal-ai

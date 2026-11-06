@@ -76,7 +76,7 @@ La comparación más directa es con el modelo base Whisper large-v3-turbo genér
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mocomoco-inc/mocovoice-whisper-turbo-ja-logistics-synthetic-v0.1
+- Hugging Face: https://huggingface.co/mocomoco-inc/mocovoice-whisper-turbo-ja-logistics-synthetic-v0.1
 - Web de mocoVoice: https://products.mocomoco.ai/en/
 - Noticia de mocoVoice Web: https://www.mocomoco.ai/en/news/mocoVoice-web/
 - GitHub de mocomoco: https://github.com/mocomoco-inc

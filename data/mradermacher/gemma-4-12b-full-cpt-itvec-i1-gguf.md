@@ -61,5 +61,5 @@ No disponible. No se dispone de información sobre el modelo base ni de benchmar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-12b-full-cpt-itvec-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-12b-full-cpt-itvec-i1-GGUF
 - Modelo base: https://huggingface.co/ToastyPigeon/gemma-4-12b-full-cpt-itvec

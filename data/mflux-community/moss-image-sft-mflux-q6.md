@@ -35,7 +35,7 @@ Esta ficha corresponde a la conversión Q6 de MFlux: una cuantización afín de 
 - Generación de layouts y composiciones estructuradas, según la descripción oficial del proyecto MOSS-Image.
 - Ejecución 100 % local en Mac con Apple Silicon mediante MLX, sin dependencia de servicios en la nube.
 - Control de reproducibilidad mediante semilla (`--seed`) y parámetros de muestreo; el ejemplo de la comunidad usa 25 pasos y guidance 3.
-- Descarga automática de pesos desde HuggingFace o uso de una copia local del repositorio.
+- Descarga automática de pesos desde Hugging Face o uso de una copia local del repositorio.
 - No se ha documentado en la información disponible soporte para edición de imágenes, inpainting, vision, audio ni tool calling.
 
 ## Casos de uso

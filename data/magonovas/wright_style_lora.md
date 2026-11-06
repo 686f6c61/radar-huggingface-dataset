@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wright_style_LoRA es un adaptador LoRA de estilo para generacion de imagenes texto-a-imagen, desarrollado por el usuario magonovas y publicado en HuggingFace. No es un modelo autonomo: se trata de pesos de bajo rango que se montan sobre stabilityai/stable-diffusion-xl-base-1.0 (SDXL 1.0) para inducir un estilo visual concreto, activado mediante el prompt de disparo "painting in Wright style". Se distribuye bajo licencia openrail++ y en formato safetensors, con un repositorio de aproximadamente 0,1 GB.
+wright_style_LoRA es un adaptador LoRA de estilo para generacion de imagenes texto-a-imagen, desarrollado por el usuario magonovas y publicado en Hugging Face. No es un modelo autonomo: se trata de pesos de bajo rango que se montan sobre stabilityai/stable-diffusion-xl-base-1.0 (SDXL 1.0) para inducir un estilo visual concreto, activado mediante el prompt de disparo "painting in Wright style". Se distribuye bajo licencia openrail++ y en formato safetensors, con un repositorio de aproximadamente 0,1 GB.
 
 El adaptador se entreno con DreamBooth sobre SDXL y, segun la model card, no se activo LoRA en el codificador de texto (solo se ajusto el U-Net), usando el VAE madebyollin/sdxl-vae-fp16-fix durante el entrenamiento para evitar artefactos en fp16. Al ser un LoRA de estilo sobre SDXL, hereda la resolucion nativa de 1024x1024 y la arquitectura de difusion latente del modelo base, anadiendo un coste de computo marginal.
 
@@ -70,9 +70,9 @@ Los siguientes valores son estimaciones para el modelo base SDXL, dado que un Lo
 
 | Modelo | Tipo | Parametros | Resolucion nativa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wright_style_LoRA (sobre SDXL 1.0) | Adaptador LoRA de estilo | no disponible (repositorio de ~0,1 GB) | 1024x1024 | openrail++ | HuggingFace, 0 descargas y 0 likes |
-| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base de difusion | ~3,4B (2,6B U-Net + 817M en dos encoders de texto) | 1024x1024 | openrail++ | HuggingFace, ampliamente extendido |
-| Otros LoRA de estilo para SDXL | Adaptadores LoRA | no disponible | 1024x1024 | variable | HuggingFace; no se dispone de datos comparativos concretos |
+| wright_style_LoRA (sobre SDXL 1.0) | Adaptador LoRA de estilo | no disponible (repositorio de ~0,1 GB) | 1024x1024 | openrail++ | Hugging Face, 0 descargas y 0 likes |
+| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base de difusion | ~3,4B (2,6B U-Net + 817M en dos encoders de texto) | 1024x1024 | openrail++ | Hugging Face, ampliamente extendido |
+| Otros LoRA de estilo para SDXL | Adaptadores LoRA | no disponible | 1024x1024 | variable | Hugging Face; no se dispone de datos comparativos concretos |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa entre este adaptador y otras alternativas de estilo.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/magonovas/wright_style_LoRA
+- Modelo en Hugging Face: https://huggingface.co/magonovas/wright_style_LoRA
 - Archivos del repositorio: https://huggingface.co/magonovas/wright_style_LoRA/tree/main
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE de entrenamiento: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix

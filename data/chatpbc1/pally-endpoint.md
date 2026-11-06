@@ -25,7 +25,7 @@ El tercer elemento es POWER MODE (ronda `cortex1-v8`): las reglas de comportamie
 
 La información proporcionada no detalla la arquitectura de red (tipo de transformer, atención, número de capas, dimensiones ocultas o vocabulario), ni el volumen o composición del dataset de entrenamiento, ni si hubo fases de RLHF o DPO. Lo que sí se documenta es un componente de entrenamiento específico: el «v7 digit-binding training», orientado a que el modelo utilice los dígitos concretos del usuario en lugar de ejemplos numéricos memorizados. El model card reconoce explícitamente que el disparo de los marcadores `[calc:]` no es del 100 % de las veces y que, cuando no se activan, el modelo recurre a aritmética mental, terreno en el que un modelo de 1,7B suele equivocarse.
 
-La innovación técnica relevante está en el runtime CORTX-1, servido como un único fichero Python con FastAPI: un gate decide entre System-1 (una pasada) y System-2 (deliberado), se parsean los marcadores `[calc:]` y `[verify:]`, un evaluador AST en sandbox ejecuta las expresiones y, en caso de fallo, se lanza una petición de revisión al modelo. En paralelo, los bloques `[cortex_edit]` permiten reescribir los ficheros de reglas (hasta 8 ficheros, con un máximo de 8.000 caracteres cada uno en POWER MODE); la configuración resultante se versiona y persiste en el repositorio de HuggingFace, las ediciones se registran en `_edit_log` y los fallos y ediciones recientes se inyectan en el prompt siguiente, cerrando el bucle. La identidad estática (nombre, laboratorio y la aclaración de que no es ChatGPT ni Claude) no es editable. Desactivando `"power_mode": false` en `cortex/config.json` se vuelve a los límites de la versión v7: 4 secciones, 4.000 caracteres y una edición por turno de auto-mejora.
+La innovación técnica relevante está en el runtime CORTX-1, servido como un único fichero Python con FastAPI: un gate decide entre System-1 (una pasada) y System-2 (deliberado), se parsean los marcadores `[calc:]` y `[verify:]`, un evaluador AST en sandbox ejecuta las expresiones y, en caso de fallo, se lanza una petición de revisión al modelo. En paralelo, los bloques `[cortex_edit]` permiten reescribir los ficheros de reglas (hasta 8 ficheros, con un máximo de 8.000 caracteres cada uno en POWER MODE); la configuración resultante se versiona y persiste en el repositorio de Hugging Face, las ediciones se registran en `_edit_log` y los fallos y ediciones recientes se inyectan en el prompt siguiente, cerrando el bucle. La identidad estática (nombre, laboratorio y la aclaración de que no es ChatGPT ni Claude) no es editable. Desactivando `"power_mode": false` en `cortex/config.json` se vuelve a los límites de la versión v7: 4 secciones, 4.000 caracteres y una edición por turno de auto-mejora.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ El único dato de evaluación recogido en la información disponible es la compa
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pally (1,7B) | 1,7B | no disponible | 49/100 en consulting bench | Apache-2.0 (pesos) | Pesos en HuggingFace; endpoint sin licencia declarada |
+| Pally (1,7B) | 1,7B | no disponible | 49/100 en consulting bench | Apache-2.0 (pesos) | Pesos en Hugging Face; endpoint sin licencia declarada |
 | GPT-OSS 20B | 20B | no disponible | 82/100 en el mismo banco | no disponible en la información aportada | citado como referencia en el model card |
 | Otras alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 

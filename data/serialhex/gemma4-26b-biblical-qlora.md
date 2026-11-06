@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`serialhex/gemma4-26b-biblical-qlora` es un ajuste fino (fine-tune) del modelo de instrucciones `unsloth/gemma-4-26B-A4B-it`, publicado por el usuario serialhex en HuggingFace. Segun la denominacion del repositorio y la model card, el ajuste se ha realizado mediante SFT (supervised fine-tuning) sobre el modelo base, con orientacion tematica biblica, si bien la model card no documenta ni el dataset ni la composicion de los datos de entrenamiento empleados.
+`serialhex/gemma4-26b-biblical-qlora` es un ajuste fino (fine-tune) del modelo de instrucciones `unsloth/gemma-4-26B-A4B-it`, publicado por el usuario serialhex en Hugging Face. Segun la denominacion del repositorio y la model card, el ajuste se ha realizado mediante SFT (supervised fine-tuning) sobre el modelo base, con orientacion tematica biblica, si bien la model card no documenta ni el dataset ni la composicion de los datos de entrenamiento empleados.
 
-El modelo se distribuye en formato safetensors, ocupa 38,5 GB en el repositorio y es compatible con la libreria `transformers`. El entrenamiento se ha llevado a cabo con las herramientas TRL (version 1.13.0) y Unsloth, lo que apunta a una estrategia de QLoRA sobre un modelo de gran tamano. El repositorio incluye la etiqueta `endpoints_compatible`, de modo que puede desplegarse directamente en los Inference Endpoints de HuggingFace.
+El modelo se distribuye en formato safetensors, ocupa 38,5 GB en el repositorio y es compatible con la libreria `transformers`. El entrenamiento se ha llevado a cabo con las herramientas TRL (version 1.13.0) y Unsloth, lo que apunta a una estrategia de QLoRA sobre un modelo de gran tamano. El repositorio incluye la etiqueta `endpoints_compatible`, de modo que puede desplegarse directamente en los Inference Endpoints de Hugging Face.
 
 Se trata de un modelo recien publicado (creado el 10 de octubre de 2026) y sin traccion registrada en el momento de redactar esta ficha: cero descargas y cero likes. La model card es practicamente una plantilla autogenerada por TRL: no incluye licencia efectiva, idiomas declarados, contexto, resultados de evaluacion ni detalles del procedimiento de entrenamiento mas alla de las versiones del framework.
 
@@ -49,7 +49,7 @@ El procedimiento de entrenamiento declarado es SFT, ejecutado con TRL 1.13.0 sob
 - Asistente de estudio teologico: permite construir un chat de preguntas y respuestas sobre pasajes, concordancias o contextos historicos. La calidad dependera enteramente del dataset de ajuste, que no esta documentado.
 - Adaptacion de registro y nivel lector: reformular textos religiosos complejos a un lenguaje divulgativo o infantil para catequesis y educacion.
 - Generacion de material catequetico y educativo: guiones de sesion, preguntas de reflexion y resumenes para grupos parroquiales o aulas de religion.
-- Chatbot de atencion a comunidades: integrable mediante la etiqueta `endpoints_compatible` en los Inference Endpoints de HuggingFace, con un coste de integracion bajo al usar la API estandar de `transformers`.
+- Chatbot de atencion a comunidades: integrable mediante la etiqueta `endpoints_compatible` en los Inference Endpoints de Hugging Face, con un coste de integracion bajo al usar la API estandar de `transformers`.
 - Base para ajustes posteriores: al derivar de un modelo entrenado con Unsloth y TRL, sirve como punto de partida para fases adicionales de DPO, RLHF o ajustes con LoRA sobre dominios mas especificos.
 - Prototipado rapido de asistentes conversacionales genericos: el ejemplo de la model card funciona directamente con `transformers.pipeline` y `max_new_tokens`, lo que permite validar el comportamiento del modelo en pocas lineas.
 - Generacion de contenido editorial de nicho: articulos, guiones de podcast o newsletters de tematica religiosa, con supervision editorial obligatoria por el riesgo de alucinacion en citas y referencias.
@@ -69,7 +69,7 @@ Las siguientes cifras son estimaciones derivadas del numero de parametros declar
 - VRAM estimada en cuantizacion de 4 bits: en torno a 13-16 GB para los pesos, mas cache KV y activaciones (no cuantificables sin conocer el numero de capas y cabezas).
 - GPU profesionales recomendadas: A100 80 GB o H100 80 GB para inferencia en precision bf16; A100 40 GB o L40S 48 GB para cuantizaciones de 8 bits.
 - GPU de consumo: una RTX 4090 o RTX 3090 de 24 GB permite ejecutar el modelo en 4 bits con contexto reducido. Tarjetas de 32 GB o mas (por ejemplo, RTX 5090 o configuraciones duales) ofrecen mayor margen de contexto.
-- Opciones de despliegue: al publicarse solo en safetensors, los caminos naturales son `transformers` con `pipeline`, vLLM o TGI. El uso con llama.cpp u Ollama exigiria convertir los pesos a GGUF, tarea no documentada por el autor. La etiqueta `endpoints_compatible` habilita el despliegue gestionado en HuggingFace Inference Endpoints.
+- Opciones de despliegue: al publicarse solo en safetensors, los caminos naturales son `transformers` con `pipeline`, vLLM o TGI. El uso con llama.cpp u Ollama exigiria convertir los pesos a GGUF, tarea no documentada por el autor. La etiqueta `endpoints_compatible` habilita el despliegue gestionado en Hugging Face Inference Endpoints.
 - Latencia y throughput estimados: no disponibles. No se ha publicado ninguna medicion de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ Las dos ultimas filas se incluyen unicamente como referencia de categoria. No es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/serialhex/gemma4-26b-biblical-qlora
+- Modelo en Hugging Face: https://huggingface.co/serialhex/gemma4-26b-biblical-qlora
 - Modelo base: https://huggingface.co/unsloth/gemma-4-26B-A4B-it
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de Transformers: https://huggingface.co/docs/transformers

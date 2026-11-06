@@ -81,7 +81,7 @@ La principal diferencia es que este modelo es un merge experimental sin document
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-0k_1k_2k_merge
+- Repositorio Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-0k_1k_2k_merge
 - Modelo similar de la serie (4k-5k-6k-avg): https://huggingface.co/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg
 - Página de despliegue en FriendliAI: https://friendli.ai/models/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg
 - Sitio de ByteDance Seed: https://seed.bytedance.com/en/

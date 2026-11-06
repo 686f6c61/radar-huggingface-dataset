@@ -75,8 +75,8 @@ El autor indica que el ranking es descriptivo sobre medias y que no se establece
 
 | Modelo | Parametros | Contexto | NMSE 12 pasos (flujo radiativo) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GPhyT + Block Attention Residuals (este) | no disponible (12 capas, ancho 192) | 4 fotogramas | 0,28917 | MIT | HuggingFace |
-| GPhyT sin Attention Residuals | misma base | 4 fotogramas | 0,39277 | MIT | HuggingFace |
+| GPhyT + Block Attention Residuals (este) | no disponible (12 capas, ancho 192) | 4 fotogramas | 0,28917 | MIT | Hugging Face |
+| GPhyT sin Attention Residuals | misma base | 4 fotogramas | 0,39277 | MIT | Hugging Face |
 | Persistencia (baseline trivial) | 0 | no aplica | 0,41901 | no aplica | no aplica |
 
 No se dispone de comparación con otros surrogates de simulación física en la información proporcionada.
@@ -96,7 +96,7 @@ No se dispone de comparación con otros surrogates de simulación física en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BurnyCoder/gphyt-attnres-full
+- Modelo en Hugging Face: https://huggingface.co/BurnyCoder/gphyt-attnres-full
 - Baseline sin Attention Residuals: https://huggingface.co/BurnyCoder/gphyt-attnres-standard
 - Repositorio del estudio: https://github.com/BurnyCoder/general-physics-attention-residuals-transformer
 - Paper de GPhyT: https://arxiv.org/abs/2509.13805

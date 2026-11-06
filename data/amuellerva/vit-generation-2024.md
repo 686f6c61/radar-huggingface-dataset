@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`amuellerva/vit-generation-2024` es un repositorio publicado en HuggingFace por el usuario amuellerva que contiene una implementación propia de un Vision Transformer (ViT) orientada a tareas de generación. El autor lo describe explícitamente como un punto de partida reproducible y no como un modelo entrenado: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*), sin pesos derivados de un entrenamiento completo ni métricas de benchmark asociadas.
+`amuellerva/vit-generation-2024` es un repositorio publicado en Hugging Face por el usuario amuellerva que contiene una implementación propia de un Vision Transformer (ViT) orientada a tareas de generación. El autor lo describe explícitamente como un punto de partida reproducible y no como un modelo entrenado: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*), sin pesos derivados de un entrenamiento completo ni métricas de benchmark asociadas.
 
 El interés del repositorio es, por tanto, arquitectónico y metodológico más que funcional. Incluye un script Python (`eval.py`) con un ejemplo ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto (AdamW con programación de *warmup* constante) y el checkpoint de inicialización. La escala declarada en la model card es "huge", pero los pesos publicados suman únicamente 16.576 parámetros según el recuento real de los tensores en safetensors, una discrepancia que el propio repositorio no resuelve.
 
@@ -44,7 +44,7 @@ No se ha publicado información sobre el entrenamiento: no se indica número de 
 - Prototipado de arquitecturas ViT: el `config.json` y las opciones de atención estándar, fusión concat-mlp, activación gelu y normalización scalenorm permiten usar el repositorio como plantilla para variantes arquitectónicas propias.
 - Reproducibilidad experimental: el `training_args.json` con AdamW y *warmup* constante sirve como receta base para comparar baselines bajo el mismo presupuesto de datos, ajuste y semillas aleatorias, tal como recomienda la propia model card.
 - Benchmarking interno de normalización: la elección de scalenorm frente a LayerNorm puede estudiarse de forma aislada usando este esqueleto como punto de partida controlado.
-- Formación y docencia: el repositorio es un ejemplo didáctico de cómo empaquetar una implementación propia con configuración explícita y ejemplo ejecutable en HuggingFace.
+- Formación y docencia: el repositorio es un ejemplo didáctico de cómo empaquetar una implementación propia con configuración explícita y ejemplo ejecutable en Hugging Face.
 - No se recomienda ningún caso de uso en producción, atención al cliente, generación de código o despliegue en agentes, dado que no existen pesos entrenados.
 
 ## Benchmarks y rendimiento
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amuellerva/vit-generation-2024 | 16.576 (reportados) | no disponible | No (solo inicializacion) | apache-2.0 | HuggingFace, 0 descargas |
-| google/vit-base-patch16-224 | ~86 M | 224x224 px de entrada | Si (ImageNet-21k + fine-tuning) | apache-2.0 | HuggingFace, ampliamente usado |
-| google/vit-huge-patch14-224 | ~632 M | 224x224 px de entrada | Si (ImageNet-21k + fine-tuning) | apache-2.0 | HuggingFace, ampliamente usado |
+| amuellerva/vit-generation-2024 | 16.576 (reportados) | no disponible | No (solo inicializacion) | apache-2.0 | Hugging Face, 0 descargas |
+| google/vit-base-patch16-224 | ~86 M | 224x224 px de entrada | Si (ImageNet-21k + fine-tuning) | apache-2.0 | Hugging Face, ampliamente usado |
+| google/vit-huge-patch14-224 | ~632 M | 224x224 px de entrada | Si (ImageNet-21k + fine-tuning) | apache-2.0 | Hugging Face, ampliamente usado |
 
 La comparación no es directa: los modelos de Google son clasificadores de imagen entrenados y evaluados, mientras que el repositorio analizado es un esqueleto de implementación sin entrenamiento. Se incluyen únicamente como referencia de escala dentro de la familia ViT. No se dispone de alternativas comparables en la misma categoría (ViT para generación con checkpoint de inicialización publicado).
 
@@ -83,5 +83,5 @@ La comparación no es directa: los modelos de Google son clasificadores de image
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amuellerva/vit-generation-2024
+- Hugging Face: https://huggingface.co/amuellerva/vit-generation-2024
 - No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo.

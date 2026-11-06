@@ -81,7 +81,7 @@ Latencia en CPU (4 hilos, fp32) con el decodificador de OpsLens: 100 ms p50 para
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpsLens-17M | 17,05 M | 512 entrenados / 1.024 soportados | Parseo de logs a JSON con explicación y remediación | MIT | HuggingFace, GGUF, ONNX |
+| OpsLens-17M | 17,05 M | 512 entrenados / 1.024 soportados | Parseo de logs a JSON con explicación y remediación | MIT | Hugging Face, GGUF, ONNX |
 | Drain (baseline algorítmico) | No aplica | No aplica | Parseo de plantillas por clustering | No disponible en la información | Referencia en la model card; PA 0,355 vistas / 0,352 no vistas |
 | Modelos de propósito general de gran tamaño (por ejemplo, Llama, Qwen) | Miles de millones | Decenas de miles de tokens | Generación general, razonamiento, código | Variables según modelo | No disponible en la información |
 
@@ -102,7 +102,7 @@ La comparación con modelos de lenguaje de gran tamaño no está documentada por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/viczx/opslens-17m
+- Modelo en Hugging Face: https://huggingface.co/viczx/opslens-17m
 - Dataset Loghub-2.0: Jiang et al., ISSTA 2024 (referenciado en la model card; sin URL directa en la información disponible)
 - Repositorio Triton `opslens_lm`: mencionado en la model card, sin URL en la información disponible
 - Servidor OpsLens (Docker, endpoint `/analyze`): mencionado en la model card, sin URL en la información disponible

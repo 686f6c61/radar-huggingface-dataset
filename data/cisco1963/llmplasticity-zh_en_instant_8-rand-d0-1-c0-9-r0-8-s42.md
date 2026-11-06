@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Cisco1963/llmplasticity-zh_en_instant_8-rand-d0.1-c0.9-r0.8-s42` es un checkpoint publicado en HuggingFace por el usuario Cisco1963. Por la etiqueta `gpt2` del repositorio y por el recuento real de parametros de los pesos en safetensors (122.706.432, equivalente a la clase GPT-2 de ~124M), se trata de un transformer decoder-only de la familia GPT-2. El nombre del repositorio sugiere que procede de un experimento de investigacion sobre plasticidad de modelos de lenguaje (prefijo `llmplasticity`), con un ajuste chino-ingles (`zh_en`) y una configuracion de hiperparametros codificada en el propio nombre (`instant_8`, `rand`, `d0.1-c0.9-r0.8`, semilla `s42`). Esta interpretacion es una inferencia a partir del identificador, no un dato confirmado en la model card.
+El modelo identificado como `Cisco1963/llmplasticity-zh_en_instant_8-rand-d0.1-c0.9-r0.8-s42` es un checkpoint publicado en Hugging Face por el usuario Cisco1963. Por la etiqueta `gpt2` del repositorio y por el recuento real de parametros de los pesos en safetensors (122.706.432, equivalente a la clase GPT-2 de ~124M), se trata de un transformer decoder-only de la familia GPT-2. El nombre del repositorio sugiere que procede de un experimento de investigacion sobre plasticidad de modelos de lenguaje (prefijo `llmplasticity`), con un ajuste chino-ingles (`zh_en`) y una configuracion de hiperparametros codificada en el propio nombre (`instant_8`, `rand`, `d0.1-c0.9-r0.8`, semilla `s42`). Esta interpretacion es una inferencia a partir del identificador, no un dato confirmado en la model card.
 
 Se trata de un modelo de investigacion con una difusion practicamente nula: 3 descargas y 0 likes en el momento de la consulta, licencia no declarada y sin informacion de pipeline, idiomas o metadatos de entrenamiento. El tamano del repositorio (8,3 GB) es muy superior al de un unico checkpoint de 122M de parametros (que en fp32 ocuparia unos 0,5 GB), lo que apunta a que el repositorio contiene multiples ficheros: varios checkpoints, estados de optimizador o copias intermedias de un proceso de entrenamiento o fusion.
 
@@ -48,7 +48,7 @@ Dado que no hay model card, benchmarks ni licencia, los casos de uso realistas s
 - Estudio de estabilidad de semilla: la semilla `s42` fija permite repetir el experimento y comparar con otras semillas del mismo autor.
 - Evaluacion de transferencia bilingue de bajo coste: un modelo de 122M de parametros se puede evaluar en un portatil o en una unica GPU consumer, lo que abarata barridos de hiperparametros.
 - Prueba de pipelines de carga de safetensors: util como modelo de tamano reducido para validar herramientas de conversion a GGUF u otros formatos antes de aplicarlas a modelos mayores.
-- Docencia y formacion: ejemplo de artefacto de investigacion publicado en HuggingFace con metadatos incompletos, util para practicar la auditoria de repositorios de modelos.
+- Docencia y formacion: ejemplo de artefacto de investigacion publicado en Hugging Face con metadatos incompletos, util para practicar la auditoria de repositorios de modelos.
 
 No se recomienda su uso en atencion al cliente, generacion de codigo en produccion ni ninguna tarea orientada a usuario final, por ausencia de licencia y de evaluacion de calidad.
 
@@ -71,9 +71,9 @@ La comparativa se establece con modelos de la misma clase de tamano (aproximadam
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Cisco1963/llmplasticity-zh_en_instant_8-rand-d0.1-c0.9-r0.8-s42 | 122.706.432 | No disponible | No disponible | HuggingFace, 3 descargas, 0 likes |
+| Cisco1963/llmplasticity-zh_en_instant_8-rand-d0.1-c0.9-r0.8-s42 | 122.706.432 | No disponible | No disponible | Hugging Face, 3 descargas, 0 likes |
 | GPT-2 (124M) | ~124M | 1024 tokens | MIT (segun OpenAI) | Ampliamente disponible |
-| DistilGPT-2 | ~82M | 1024 tokens | Apache 2.0 (segun HuggingFace) | Ampliamente disponible |
+| DistilGPT-2 | ~82M | 1024 tokens | Apache 2.0 (segun Hugging Face) | Ampliamente disponible |
 | GPT-2 medium | ~355M | 1024 tokens | MIT (segun OpenAI) | Ampliamente disponible |
 
 No hay datos de rendimiento del modelo de Cisco1963 que permitan una comparacion cuantitativa con estas alternativas.
@@ -92,6 +92,6 @@ No hay datos de rendimiento del modelo de Cisco1963 que permitan una comparacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-zh_en_instant_8-rand-d0.1-c0.9-r0.8-s42
+- Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-zh_en_instant_8-rand-d0.1-c0.9-r0.8-s42
 - Paper, blog, repositorio o demo asociados: no disponible.
 - Resultados de la busqueda web: no se encontro ningun enlace relevante sobre el modelo. Las busquedas devolvieron exclusivamente paginas de contenido para adultos sin relacion con el objeto de la ficha.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`act-smartseed-d2-c50` es una política de imitación visomotora entrenada con el método Action Chunking with Transformers (ACT), publicada en HuggingFace Hub por el usuario RafaelJaime mediante la librería LeRobot. No es un modelo de lenguaje: es un controlador neuronal que recibe el estado articular de un brazo robótico SO-101 (`so_follower`, vector de 6 dimensiones) y dos imágenes de 480x640 píxeles procedentes de una cámara cenital (`top`) y otra en la muñeca (`wrist`), y devuelve un vector de acción de 6 dimensiones. Su única tarea entrenada es "grasp the seed below the gripper" (agarrar la semilla situada bajo la pinza).
+`act-smartseed-d2-c50` es una política de imitación visomotora entrenada con el método Action Chunking with Transformers (ACT), publicada en Hugging Face Hub por el usuario RafaelJaime mediante la librería LeRobot. No es un modelo de lenguaje: es un controlador neuronal que recibe el estado articular de un brazo robótico SO-101 (`so_follower`, vector de 6 dimensiones) y dos imágenes de 480x640 píxeles procedentes de una cámara cenital (`top`) y otra en la muñeca (`wrist`), y devuelve un vector de acción de 6 dimensiones. Su única tarea entrenada es "grasp the seed below the gripper" (agarrar la semilla situada bajo la pinza).
 
 El modelo tiene 51.617.414 parámetros (pesos en safetensors, repositorio de 2,5 GB) y se entrenó sobre el dataset `RafaelJaime/smartseed-grasp-d2-clean`, compuesto por 91 episodios teleoperados y 25.742 fotogramas a 30 FPS. La configuración de entrenamiento reportada es de 40.000 pasos, batch de 32, optimizador AdamW, tasa de aprendizaje 1e-5 y semilla 1000, sobre LeRobot 0.6.2.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act-smartseed-d2-c50 (este modelo) | 51.617.414 | No aplica (politica visomotora) | Sin evaluacion publicada | apache-2.0 | HuggingFace Hub, libreria lerobot |
+| act-smartseed-d2-c50 (este modelo) | 51.617.414 | No aplica (politica visomotora) | Sin evaluacion publicada | apache-2.0 | Hugging Face Hub, libreria lerobot |
 | Diffusion Policy (implementacion LeRobot) | No disponible en la informacion proporcionada | No aplica | No disponible | No verificada en la informacion disponible | Disponible en LeRobot |
 | SmolVLA (LeRobot) | No disponible en la informacion proporcionada | No aplica | No disponible | No verificada en la informacion disponible | Disponible en LeRobot |
-| Otros checkpoints ACT de LeRobot | No disponible en la informacion proporcionada | No aplica | No disponible | Depende del autor | HuggingFace Hub |
+| Otros checkpoints ACT de LeRobot | No disponible en la informacion proporcionada | No aplica | No disponible | Depende del autor | Hugging Face Hub |
 
 La comparacion cuantitativa no es posible con los datos disponibles: el autor no publica tasas de éxito ni comparaciones con otras políticas, y las alternativas citadas no incluyen fichas tecnicas en la informacion proporcionada. Cualitativamente, ACT se distingue por su bajo numero de parametros y su entrenamiento desde cero sobre datos propios, mientras que las alternativas basadas en modelos vision-lenguaje-accion (VLA) incorporan componentes preentrenados de mayor tamano y requieren mas recursos, a cambio de mayor capacidad de generalizacion y de seguimiento de instrucciones en lenguaje natural, extremo este no verificado en la informacion disponible.
 
@@ -98,7 +98,7 @@ La comparacion cuantitativa no es posible con los datos disponibles: el autor no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RafaelJaime/act-smartseed-d2-c50
+- Modelo en Hugging Face: https://huggingface.co/RafaelJaime/act-smartseed-d2-c50
 - Dataset de entrenamiento: https://huggingface.co/datasets/RafaelJaime/smartseed-grasp-d2-clean
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=RafaelJaime/smartseed-grasp-d2-clean
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

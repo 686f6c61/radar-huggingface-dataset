@@ -97,7 +97,7 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 | clef-flash (este) | aprox. 9B | no disponible | Lidera o empata en BFCL, API-Bank, ARC, WinoGrande, HellaSwag, MuSR, CLadder y ForecastBench; latencia mediana de 38,8 ms | apache-2.0 | GGUF en este repositorio; base en safetensors |
 | Clef | no disponible | no disponible | Lidera en varios benchmarks segun la model card; latencia mediana de 209,3 ms | no disponible | no disponible |
 | Jev | no disponible | no disponible | En linea con clef-flash en evals de workflow | no disponible | API SystemOne |
-| Qwen3.5-9B | aprox. 9B (base del post-entrenamiento) | no disponible | No comparable directamente: es un modelo generativo, no de decision estructurada | apache-2.0 | HuggingFace |
+| Qwen3.5-9B | aprox. 9B (base del post-entrenamiento) | no disponible | No comparable directamente: es un modelo generativo, no de decision estructurada | apache-2.0 | Hugging Face |
 
 La informacion disponible no permite completar una comparativa cuantitativa con alternativas de la misma categoria; los datos de Clef, Jev y Qwen3.5-9B no estan detallados en el material proporcionado.
 

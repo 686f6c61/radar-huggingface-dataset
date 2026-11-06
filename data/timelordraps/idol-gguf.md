@@ -101,7 +101,7 @@ No se dispone de informacion sobre otros modelos image-to-3D comparables en la d
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/TimeLordRaps/Idol-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/TimeLordRaps/Idol-GGUF
 - Modelo base: https://huggingface.co/speridlabs/idol
 - Runtime idol.cpp: https://github.com/TimeLordRaps/idol.cpp
 - Codificador DINOv3: https://huggingface.co/facebook/dinov3-vith16plus-pretrain-lvd1689m

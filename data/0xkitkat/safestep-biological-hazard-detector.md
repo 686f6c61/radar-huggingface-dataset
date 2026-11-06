@@ -62,7 +62,7 @@ El autor advierte que estos resultados a escala de hackathon no son suficientes 
 - La exportación ONNX permite ejecutarse en CPU y GPU de escritorio, así como en aceleradores compatibles con ONNX Runtime.
 - El formato nativo `best.pt` requiere el entorno de ejecución de Ultralytics (PyTorch) y puede ejecutarse en GPUs de consumo como RTX 3060 o superiores.
 - Para inferencia en producción, se puede servir mediante vLLM o TGI si se convierte el modelo a formato compatible, aunque no es el flujo previsto por el autor.
-- El tamaño del repositorio es de 0.0 GB según HuggingFace, lo que sugiere que los pesos son ligeros, típico de un modelo YOLO11n.
+- El tamaño del repositorio es de 0.0 GB según Hugging Face, lo que sugiere que los pesos son ligeros, típico de un modelo YOLO11n.
 
 ## Comparativa con modelos similares
 
@@ -80,9 +80,9 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xKitkat/safestep-biological-hazard-detector
+- Modelo en Hugging Face: https://huggingface.co/0xKitkat/safestep-biological-hazard-detector
 - Dataset asociado: https://huggingface.co/datasets/0xKitkat/safestep-regional-bio-vision
 - Colección de modelos de 0xKitkat: https://huggingface.co/collections/0xKitkat/models
 - Proyecto SafeStep en Devpost: https://devpost.com/software/safestep-ai-hse-auditor-d5hcn2
 - Repositorio GitHub del proyecto SafeStep (relacionado): https://github.com/AndyBDo/SafeStep
-- Perfil de 0xKitkat en HuggingFace: https://huggingface.co/0xKitkat
+- Perfil de 0xKitkat en Hugging Face: https://huggingface.co/0xKitkat

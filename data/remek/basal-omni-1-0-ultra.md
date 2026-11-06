@@ -92,10 +92,10 @@ Detalle adicional aportado por el autor:
 
 | Modelo | Parámetros | Base | Contexto | Werdykt v1 (macro) | Panel EN | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| basal-omni-1.0-ultra | 31,27 B | Gemma 4 31B-it | No disponible (estados de ~10.000 tokens en 80 GB) | 0.879 | 0.855 | apache-2.0 | Pesos safetensors en HuggingFace + checkpoint FP8 |
+| basal-omni-1.0-ultra | 31,27 B | Gemma 4 31B-it | No disponible (estados de ~10.000 tokens en 80 GB) | 0.879 | 0.855 | apache-2.0 | Pesos safetensors en Hugging Face + checkpoint FP8 |
 | basal-omni-1.0-max | 12 B (según la model card) | No detallada | No disponible | 0.823 | 0.789 | No disponible en la información proporcionada | Distribución por el mismo motor basal |
 | basal-1.5-max | 11 B | Bielik | No disponible | 0.773 | 0.737 | No disponible en la información proporcionada | Versión publicada de la línea anterior |
-| google/gemma-4-31B-it | 31 B (base) | Gemma 4 | No disponible | No disponible | No disponible | No disponible en la información proporcionada | Modelo base en HuggingFace |
+| google/gemma-4-31B-it | 31 B (base) | Gemma 4 | No disponible | No disponible | No disponible | No disponible en la información proporcionada | Modelo base en Hugging Face |
 
 Frente a sus dos alternativas directas de la misma familia, basal-omni-1.0-ultra gana en Werdykt v1, decisiones PL, conocimiento general PL y panel externo EN, empata en PL-Real (0.973 frente a 0.980 de max, intervalo con cero) y pierde en FinancialPhraseBank. La contrapartida es el coste: 31B en bf16 exige una GPU de 80 GB, mientras que las variantes de 11-12B son mucho más baratas de servir. No se dispone de comparación publicada con clasificadores dedicados de tamaño similar ajenos a la familia.
 
@@ -114,11 +114,11 @@ Frente a sus dos alternativas directas de la misma familia, basal-omni-1.0-ultra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Remek/basal-omni-1.0-ultra
+- Modelo en Hugging Face: https://huggingface.co/Remek/basal-omni-1.0-ultra
 - Checkpoint FP8 (solo texto, modo `vllm`): https://huggingface.co/Remek/basal-omni-1.0-ultra-FP8
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Repositorio del motor de inferencia basal: https://github.com/rkinas/basal
 - Sitio web del proyecto: https://basal.si5.pl/
 - uv (gestor de entornos usado en la instalación): https://docs.astral.sh/uv/
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre el proyecto basal; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre el proyecto basal; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

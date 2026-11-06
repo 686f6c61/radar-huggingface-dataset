@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lison Navoiy TTS es un modelo de síntesis de voz expresiva en uzbeko desarrollado por Aisha (aisha-org), construido mediante fine-tuning de FunAudioLLM/CosyVoice2-0.5B. El artefacto publicado en HuggingFace contiene el checkpoint del componente LLM (`emotion_600h_joint.pt`, 1,88 GiB) junto con ejemplos de audio generado, y está pensado para investigación y demostraciones de TTS expresivo en uzbeko, así como para experimentos de generación de voz en agentes conversacionales.
+Lison Navoiy TTS es un modelo de síntesis de voz expresiva en uzbeko desarrollado por Aisha (aisha-org), construido mediante fine-tuning de FunAudioLLM/CosyVoice2-0.5B. El artefacto publicado en Hugging Face contiene el checkpoint del componente LLM (`emotion_600h_joint.pt`, 1,88 GiB) junto con ejemplos de audio generado, y está pensado para investigación y demostraciones de TTS expresivo en uzbeko, así como para experimentos de generación de voz en agentes conversacionales.
 
 El modelo no es un paquete de inferencia autónomo: requiere el runtime upstream de CosyVoice/CosyVoice2 y los assets del modelo base para funcionar. Su relevancia radica en cubrir una lengua de bajos recursos como el uzbeko con capacidades de clonación de voz y control emocional, algo poco habitual en modelos TTS abiertos, y hacerlo bajo licencia Apache-2.0.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lison Navoiy TTS | 0,5B (base CosyVoice2) | no disponible | uzbeko | Apache-2.0 | HuggingFace (checkpoint + demos) |
-| FunAudioLLM/CosyVoice2-0.5B | 0,5B | no disponible | multilingüe (según modelo base) | no disponible en esta ficha | HuggingFace |
+| Lison Navoiy TTS | 0,5B (base CosyVoice2) | no disponible | uzbeko | Apache-2.0 | Hugging Face (checkpoint + demos) |
+| FunAudioLLM/CosyVoice2-0.5B | 0,5B | no disponible | multilingüe (según modelo base) | no disponible en esta ficha | Hugging Face |
 | Alternativas TTS multilingües open source | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos comparativos de rendimiento (MOS, latencia) entre estos modelos en la información proporcionada.
@@ -82,7 +82,7 @@ No se dispone de datos comparativos de rendimiento (MOS, latencia) entre estos m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aisha-org/navoiy-tts
+- Hugging Face: https://huggingface.co/aisha-org/navoiy-tts
 - Modelo base: https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B
 - Guía de configuración y limitaciones (inglés): https://voicelab.uz/blog/navoiy-tts-open-source-uzbek-text-to-speech
 - Guía del modelo (uzbeko): https://aisha.group/uz/blog/navoiy-tts-open-source-uzbek-text-to-speech

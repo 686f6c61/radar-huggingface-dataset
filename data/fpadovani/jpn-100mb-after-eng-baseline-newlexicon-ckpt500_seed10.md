@@ -69,8 +69,8 @@ No se dispone de informacion sobre modelos comparables en la misma categoria. El
 
 ## Enlaces
 
-- [HuggingFace - fpadovani/jpn-100mb-after-eng-baseline-newlexicon-ckpt500_seed10](https://huggingface.co/fpadovani/jpn-100mb-after-eng-baseline-newlexicon-ckpt500_seed10)
-- [HuggingFace - modelo base fpadovani/ppt-art-lang-newlexicon-eng-baseline-100mb_seed10](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-eng-baseline-100mb_seed10) (no enlazado directamente en la informacion, pero se menciona como base_model)
+- [Hugging Face - fpadovani/jpn-100mb-after-eng-baseline-newlexicon-ckpt500_seed10](https://huggingface.co/fpadovani/jpn-100mb-after-eng-baseline-newlexicon-ckpt500_seed10)
+- [Hugging Face - modelo base fpadovani/ppt-art-lang-newlexicon-eng-baseline-100mb_seed10](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-eng-baseline-100mb_seed10) (no enlazado directamente en la informacion, pero se menciona como base_model)
 - [Modelo similar - jpn-100mb-after-eng-baseline-ckpt500_seed10](https://huggingface.co/fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed10)
 - [Modelo similar - jpn-100mb-after-eng-baseline-ckpt500_seed3407](https://huggingface.co/fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed3407)
 - [Despliegue en FriendliAI](https://friendli.ai/models/fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed3407) (para variante similar)

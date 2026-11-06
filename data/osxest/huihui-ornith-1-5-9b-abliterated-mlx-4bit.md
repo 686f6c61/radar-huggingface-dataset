@@ -81,7 +81,7 @@ La comparativa con otros modelos de 9B de propósito general (como Llama 3.2 8B 
 
 ## Enlaces
 
-- [Modelo en HuggingFace (este repo)](https://huggingface.co/osxest/Huihui-Ornith-1.5-9B-abliterated-mlx-4Bit)
+- [Modelo en Hugging Face (este repo)](https://huggingface.co/osxest/Huihui-Ornith-1.5-9B-abliterated-mlx-4Bit)
 - [Modelo base abliterated de huihui-ai](https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-9B-abliterated)
 - [Colección Ornith-1.0-abliterated de huihui-ai](https://huggingface.co/collections/huihui-ai/ornith-10-abliterated)
 - [Guía de despliegue local de Ornith 1.5 9B](https://atomic.chat/blog/guides/how-to-run-ornith-1-5-locally)

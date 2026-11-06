@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 1418270720,
   "parameters_human": "1.42B",
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 2836579040,
+  "storage_human": "2.8 GB",
   "base_model": "locuslab/tofu_ft_phi-1.5",
   "formats": [
     "safetensors"

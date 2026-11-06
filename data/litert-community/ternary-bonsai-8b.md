@@ -25,7 +25,7 @@ Datos adicionales de los artefactos:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | litert-community/Ternary-Bonsai-8B |
+| ID en Hugging Face | litert-community/Ternary-Bonsai-8B |
 | Modelo base | prism-ml/Ternary-Bonsai-8B-unpacked |
 | Relacion con el base | Cuantizado (`base_model_relation: quantized`) |
 | Libreria / runtime | litert-lm (LiteRT-LM) |
@@ -111,7 +111,7 @@ La comparacion directa solo es defendible frente a Qwen3-8B, del que este modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/Ternary-Bonsai-8B
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Ternary-Bonsai-8B
 - Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-8B-unpacked
 - Repositorio de LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
 - Aplicacion Google AI Edge Gallery: https://github.com/google-ai-edge/gallery

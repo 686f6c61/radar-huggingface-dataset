@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Cerulean-lab4-b-79f4edf1 es un modelo de generación de texto publicado en HuggingFace por el usuario Nat1an. Por las etiquetas del repositorio (`gpt2`, `transformers`, `safetensors`) y por el recuento real de parámetros almacenados en los pesos (124.475.904, es decir, unos 124 millones), se trata de una instancia de la arquitectura GPT-2 en su variante small, la más pequeña de la familia. El nombre del repositorio, con el sufijo `cerulean-lab4-b-79f4edf1` y un hash hexadecimal, apunta a un experimento de laboratorio o a una ejecución de entrenamiento concreta más que a un modelo con nombre comercial.
+Cerulean-lab4-b-79f4edf1 es un modelo de generación de texto publicado en Hugging Face por el usuario Nat1an. Por las etiquetas del repositorio (`gpt2`, `transformers`, `safetensors`) y por el recuento real de parámetros almacenados en los pesos (124.475.904, es decir, unos 124 millones), se trata de una instancia de la arquitectura GPT-2 en su variante small, la más pequeña de la familia. El nombre del repositorio, con el sufijo `cerulean-lab4-b-79f4edf1` y un hash hexadecimal, apunta a un experimento de laboratorio o a una ejecución de entrenamiento concreta más que a un modelo con nombre comercial.
 
-La model card es la plantilla automática de HuggingFace sin rellenar: no documenta el desarrollador real, el tipo de modelo, los idiomas, la licencia, los datos de entrenamiento ni el procedimiento de ajuste. No se ha publicado ningún benchmark, ninguna descripción del dataset y ninguna indicación sobre si se trata de un ajuste fino sobre GPT-2 preentrenado o de un entrenamiento desde cero. El repositorio tiene 0 descargas y 0 likes, y el tamaño del repo (0,5 GB) es coherente con pesos almacenados en fp32.
+La model card es la plantilla automática de Hugging Face sin rellenar: no documenta el desarrollador real, el tipo de modelo, los idiomas, la licencia, los datos de entrenamiento ni el procedimiento de ajuste. No se ha publicado ningún benchmark, ninguna descripción del dataset y ninguna indicación sobre si se trata de un ajuste fino sobre GPT-2 preentrenado o de un entrenamiento desde cero. El repositorio tiene 0 descargas y 0 likes, y el tamaño del repo (0,5 GB) es coherente con pesos almacenados en fp32.
 
 Por todo ello, la relevancia práctica de este modelo es limitada y hay que tratarlo como un artefacto experimental sin garantías: sirve para inspección, pruebas de infraestructura o como punto de partida para experimentos propios, pero no como componente de producción. Cualquier evaluación seria requiere auditar primero los pesos y el tokenizador, y asumir que el comportamiento puede degradarse de forma impredecible por falta de información sobre el entrenamiento.
 
@@ -23,7 +23,7 @@ Por todo ello, la relevancia práctica de este modelo es limitada y hay que trat
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre el entrenamiento. La model card no indica datos de entrenamiento, número de tokens, composición del dataset, ni si hubo fases de RLHF, DPO o ajuste supervisado. Tampoco se documentan hiperparámetros, régimen de precisión (fp32, fp16, bf16), hardware utilizado ni duración del entrenamiento. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde a Lacoste et al. (2019) sobre estimación de emisiones de carbono, un enlace que la plantilla automática de HuggingFace incluye por defecto; no es un paper sobre el modelo.
+No hay información publicada sobre el entrenamiento. La model card no indica datos de entrenamiento, número de tokens, composición del dataset, ni si hubo fases de RLHF, DPO o ajuste supervisado. Tampoco se documentan hiperparámetros, régimen de precisión (fp32, fp16, bf16), hardware utilizado ni duración del entrenamiento. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde a Lacoste et al. (2019) sobre estimación de emisiones de carbono, un enlace que la plantilla automática de Hugging Face incluye por defecto; no es un paper sobre el modelo.
 
 A partir de los metadatos se puede inferir que la arquitectura es la de GPT-2 small: un transformer decoder-only con atención causal, 12 capas, 12 cabezas de atención y una dimensión de embedding de 768. El recuento de parámetros (124,4 M) coincide con esa configuración. No obstante, se trata de una inferencia basada en el tamaño y en la etiqueta, no de un dato confirmado por el autor. Se desconoce por completo si el tokenizador es el BPE original de GPT-2, si el modelo ha sido ajustado sobre GPT-2 preentrenado o si los pesos proceden de un entrenamiento desde cero.
 
@@ -37,7 +37,7 @@ A partir de los metadatos se puede inferir que la arquitectura es la de GPT-2 sm
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible; se desconoce el corpus de entrenamiento.
 - Capacidades especiales (modo thinking, visión, audio): no disponible; el modelo es exclusivamente de texto según los tags.
-- Compatibilidad de despliegue: los tags `text-generation-inference` y `endpoints_compatible` indican que el repositorio está preparado para servirse con TGI y con los endpoints de HuggingFace.
+- Compatibilidad de despliegue: los tags `text-generation-inference` y `endpoints_compatible` indican que el repositorio está preparado para servirse con TGI y con los endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -61,18 +61,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente, incluidas GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4060, RTX 4090, A100 o H100. El modelo no aprovecha aceleradores de gama alta más allá de reducir la latencia.
 - Compatibilidad con GPU consumer: sí, cabe holgadamente en cualquier GPU consumer moderna e incluso en iGPU con memoria compartida.
 - Ejecución en CPU: viable. Con 124 M de parámetros en fp32, la inferencia en CPU es perfectamente funcional para uso interactivo o por lotes pequeños.
-- Opciones de despliegue: `transformers` en Python, Text Generation Inference (TGI, indicado por los tags), endpoints de HuggingFace (tag `endpoints_compatible`), vLLM y, previa conversión a GGUF, llama.cpp y Ollama. No se distribuyen ficheros GGUF en el repositorio.
+- Opciones de despliegue: `transformers` en Python, Text Generation Inference (TGI, indicado por los tags), endpoints de Hugging Face (tag `endpoints_compatible`), vLLM y, previa conversión a GGUF, llama.cpp y Ollama. No se distribuyen ficheros GGUF en el repositorio.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones. Cualquier cifra concreta dependería del hardware, de la longitud de secuencia y del tamaño de lote.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Nat1an/cerulean-lab4-b-79f4edf1 | 124,5 M | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | HuggingFace, ampliamente distribuido | Referencia histórica de la familia; superado por modelos actuales del mismo tamaño |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace | Inferior a GPT-2 small en calidad, más rápido |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache 2.0 | HuggingFace | Entrenado sobre corpus modernos; supera a GPT-2 small en tareas estándar |
-| Qwen2.5-0.5B | 494 M | 32 768 tokens | Apache 2.0 | HuggingFace | Superior en código, matemáticas y multilingüismo, a costa de más cómputo |
+| Nat1an/cerulean-lab4-b-79f4edf1 | 124,5 M | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente distribuido | Referencia histórica de la familia; superado por modelos actuales del mismo tamaño |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face | Inferior a GPT-2 small en calidad, más rápido |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache 2.0 | Hugging Face | Entrenado sobre corpus modernos; supera a GPT-2 small en tareas estándar |
+| Qwen2.5-0.5B | 494 M | 32 768 tokens | Apache 2.0 | Hugging Face | Superior en código, matemáticas y multilingüismo, a costa de más cómputo |
 
 La comparación es necesariamente asimétrica: los modelos alternativos tienen licencia explícita, contexto documentado y evaluaciones publicadas, mientras que para cerulean-lab4-b-79f4edf1 no hay ninguno de esos datos. Sin una model card completa no es posible afirmar que rinda de forma comparable a un GPT-2 small estándar.
 
@@ -90,7 +90,7 @@ La comparación es necesariamente asimétrica: los modelos alternativos tienen l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nat1an/cerulean-lab4-b-79f4edf1
+- Modelo en Hugging Face: https://huggingface.co/Nat1an/cerulean-lab4-b-79f4edf1
 - Perfil de GitHub del autor: https://github.com/Nat1anWasTaken
 - Experiential Labs (sitio enlazado en la búsqueda): https://www.experientiallabs.ai/
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700

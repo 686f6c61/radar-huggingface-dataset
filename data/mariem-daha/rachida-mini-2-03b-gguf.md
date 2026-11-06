@@ -69,8 +69,8 @@ El artefacto es una cuantización de Qwen3-1.7B, por lo que la comparación más
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RACHIDA-Mini-2.03B-GGUF (este) | 2,03B (tensores) | no disponible | Q4_K_M | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-1.7B (base) | 1,7B | 32k (segun documentacion oficial de Qwen, no confirmado en la model card) | safetensors | Apache-2.0 | HuggingFace |
+| RACHIDA-Mini-2.03B-GGUF (este) | 2,03B (tensores) | no disponible | Q4_K_M | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-1.7B (base) | 1,7B | 32k (segun documentacion oficial de Qwen, no confirmado en la model card) | safetensors | Apache-2.0 | Hugging Face |
 | Otros modelos GGUF de tamano similar (p.ej. Llama-3.2-1B, Phi-3-mini) | 1-3B | variable | variable | variable | variable |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada.
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mariem-Daha/RACHIDA-Mini-2.03B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Mariem-Daha/RACHIDA-Mini-2.03B-GGUF
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

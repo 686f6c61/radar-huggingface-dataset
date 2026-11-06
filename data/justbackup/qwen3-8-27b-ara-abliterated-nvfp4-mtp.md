@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **Justbackup/Qwen3.8-27B-ARA-abliterated-NVFP4-MTP** (este) | 27B nominales (16.7B en safetensors) | 262K nativo | NVFP4 W4A4 + BF16 | Apache-2.0 | HuggingFace, requiere Blackwell |
-| **trohrbaugh/Qwen3.8-27B-heretic-ara** | 27B | 262K nativo | BF16 | Apache-2.0 | HuggingFace, base sin cuantizar |
-| **huihui-ai/Huihui-Qwen3.8-27B-abliterated** | 27B | 262K nativo | BF16 (probable) | Apache-2.0 | HuggingFace, abliterado sin cuantizar |
-| **Qwen/Qwen3.8-27B** (oficial) | 27B | 262K nativo | BF16 | Apache-2.0 | HuggingFace, modelo original sin abliteración |
+| **Justbackup/Qwen3.8-27B-ARA-abliterated-NVFP4-MTP** (este) | 27B nominales (16.7B en safetensors) | 262K nativo | NVFP4 W4A4 + BF16 | Apache-2.0 | Hugging Face, requiere Blackwell |
+| **trohrbaugh/Qwen3.8-27B-heretic-ara** | 27B | 262K nativo | BF16 | Apache-2.0 | Hugging Face, base sin cuantizar |
+| **huihui-ai/Huihui-Qwen3.8-27B-abliterated** | 27B | 262K nativo | BF16 (probable) | Apache-2.0 | Hugging Face, abliterado sin cuantizar |
+| **Qwen/Qwen3.8-27B** (oficial) | 27B | 262K nativo | BF16 | Apache-2.0 | Hugging Face, modelo original sin abliteración |
 
 La principal diferencia frente a las alternativas es la cuantización NVFP4 y el MTP nativo, que reducen la memoria de 27B a ~19.53 GiB cargados y permiten decodificación especulativa, a costa de requerir hardware Blackwell exclusivo. Las variantes BF16 son más portátiles (cualquier GPU con suficiente VRAM) pero consumen más memoria.
 
@@ -80,10 +80,10 @@ La principal diferencia frente a las alternativas es la cuantización NVFP4 y el
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Justbackup/Qwen3.8-27B-ARA-abliterated-NVFP4-MTP)
+- [Modelo en Hugging Face](https://huggingface.co/Justbackup/Qwen3.8-27B-ARA-abliterated-NVFP4-MTP)
 - [Checkpoint base: trohrbaugh/Qwen3.8-27B-heretic-ara](https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara)
 - [Modelo oficial: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio oficial de Alibaba en GitHub](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Ficha de vLLM Recipes para Qwen3.8-27B](https://recipes.vllm.ai/Qwen/Qwen3.8-27B)
-- [Variante abluterada de huihui-ai en HuggingFace](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated)
+- [Variante abluterada de huihui-ai en Hugging Face](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated)
 - [Variante abluterada en Ollama](https://ollama.com/huihui_ai/Qwen3.8-abliterated)

@@ -73,6 +73,6 @@ No disponible. No se proporcionan comparaciones con otros modelos en la document
 
 ## Enlaces
 
-- [HuggingFace: AutomatosX/AX-Qwen3-Coder-Next-MLX-AXQ-6bit](https://huggingface.co/AutomatosX/AX-Qwen3-Coder-Next-MLX-AXQ-6bit)
+- [Hugging Face: AutomatosX/AX-Qwen3-Coder-Next-MLX-AXQ-6bit](https://huggingface.co/AutomatosX/AX-Qwen3-Coder-Next-MLX-AXQ-6bit)
 - [Modelo base: Qwen/Qwen3-Coder-Next](https://huggingface.co/Qwen/Qwen3-Coder-Next)
 - [Coleccion de modelos MLX de AutomatosX](https://huggingface.co/collections/AutomatosX/automatosx-mlx-model-catalog)

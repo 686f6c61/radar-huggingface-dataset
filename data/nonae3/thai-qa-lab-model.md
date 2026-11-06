@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Nonae3/thai-qa-lab-model es un GPT-2 ajustado (fine-tuned) por el estudiante Nonae3 para tareas de preguntas y respuestas en tailandés sobre enfermedades. Se entrenó sobre el conjunto de datos disease_3000, compuesto por 3000 pares de preguntas y respuestas relacionadas con enfermedades. Con 124.449.024 parámetros, es un modelo de tamaño pequeño, adecuado para prototipos y entornos con recursos de cómputo limitados. Está disponible en HuggingFace bajo licencia MIT, lo que permite su uso comercial con las debidas precauciones. Su relevancia radica en ofrecer una solución ligera para consultas sanitarias básicas en tailandés, aunque su alcance está limitado al dominio de entrenamiento y no debe emplearse como herramienta de diagnóstico médico.
+El modelo Nonae3/thai-qa-lab-model es un GPT-2 ajustado (fine-tuned) por el estudiante Nonae3 para tareas de preguntas y respuestas en tailandés sobre enfermedades. Se entrenó sobre el conjunto de datos disease_3000, compuesto por 3000 pares de preguntas y respuestas relacionadas con enfermedades. Con 124.449.024 parámetros, es un modelo de tamaño pequeño, adecuado para prototipos y entornos con recursos de cómputo limitados. Está disponible en Hugging Face bajo licencia MIT, lo que permite su uso comercial con las debidas precauciones. Su relevancia radica en ofrecer una solución ligera para consultas sanitarias básicas en tailandés, aunque su alcance está limitado al dominio de entrenamiento y no debe emplearse como herramienta de diagnóstico médico.
 
 ## Especificaciones técnicas
 
@@ -54,9 +54,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Nonae3/thai-qa-lab-model | 124.449.024 | No disponible | MIT | HuggingFace |
-| Plaifa/thai-qa-lab-model | No disponible | No disponible | No disponible | HuggingFace |
-| GPT-2 (OpenAI) | 124M | 1024 | MIT | HuggingFace |
+| Nonae3/thai-qa-lab-model | 124.449.024 | No disponible | MIT | Hugging Face |
+| Plaifa/thai-qa-lab-model | No disponible | No disponible | No disponible | Hugging Face |
+| GPT-2 (OpenAI) | 124M | 1024 | MIT | Hugging Face |
 
 El modelo de Plaifa parece ser un fine-tuning similar de GPT-2 para el mismo dominio tailandés, pero no se dispone de datos de rendimiento. GPT-2 base es el modelo original, sin ajuste fino, con un contexto de 1024 tokens y licencia MIT. No hay benchmarks publicados que permitan comparar el rendimiento de estos modelos.
 
@@ -71,5 +71,5 @@ El modelo de Plaifa parece ser un fine-tuning similar de GPT-2 para el mismo dom
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nonae3/thai-qa-lab-model
+- Hugging Face: https://huggingface.co/Nonae3/thai-qa-lab-model
 - Modelo similar: https://huggingface.co/Plaifa/thai-qa-lab-model

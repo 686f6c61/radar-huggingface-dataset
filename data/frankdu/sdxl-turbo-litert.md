@@ -72,7 +72,7 @@ La única validación es una comprobación de humo (`validation.json`): una gene
 | Modelo | Tipo | Resolución / pasos | Formato | Licencia | Estado y disponibilidad |
 |---|---|---|---|---|---|
 | frankdu/SDXL-Turbo-LiteRT | Conversión LiteRT de SDXL-Turbo | 512 × 512 / 4 pasos fijos por manifiesto | Grafos LiteRT Float32 + manifest.json | stability-ai-community | Experimental; CPU de escritorio validada; Android y TPU no validadas; 0 descargas |
-| stabilityai/sdxl-turbo | Modelo original de difusión destilada | 512 × 512 / 1-4 pasos | Diffusers / safetensors (no confirmado en la información) | stability-ai-community | Modelo de referencia en HuggingFace; requiere stack PyTorch/Diffusers |
+| stabilityai/sdxl-turbo | Modelo original de difusión destilada | 512 × 512 / 1-4 pasos | Diffusers / safetensors (no confirmado en la información) | stability-ai-community | Modelo de referencia en Hugging Face; requiere stack PyTorch/Diffusers |
 | Conversiones LiteRT/TFLite de Stable Diffusion de terceros | Conversiones comunitarias | Variable | Grafos TFLite/LiteRT | Según el modelo base | No disponible en la información proporcionada |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la información suministrada, por lo que la comparación se limita a formato, licencia y estado de validación.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/frankdu/SDXL-Turbo-LiteRT
+- Repositorio Hugging Face: https://huggingface.co/frankdu/SDXL-Turbo-LiteRT
 - Modelo base: https://huggingface.co/stabilityai/sdxl-turbo
 - Revisión concreta del modelo base utilizada: https://huggingface.co/stabilityai/sdxl-turbo/tree/71153311d3dbb46851df1931d3ca6e939de83304
 - Licencia del modelo: LICENSE.md (incluido en el repositorio)

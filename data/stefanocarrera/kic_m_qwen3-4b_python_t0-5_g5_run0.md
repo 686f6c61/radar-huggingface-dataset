@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g5_run0` es un ajuste fino (fine-tuning) del modelo base Qwen3-4B-Base, desarrollado por el usuario stefanocarrera y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de generación de texto de 4 mil millones de parámetros, derivado de la familia Qwen3, y entrenado específicamente sobre datos relacionados con Python, a juzgar por el sufijo `_python_` en su identificador. El entrenamiento se realizó mediante la librería Unsloth, que acelera el proceso de fine-tuning aproximadamente 2 veces respecto a los flujos convencionales.
+El modelo `stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g5_run0` es un ajuste fino (fine-tuning) del modelo base Qwen3-4B-Base, desarrollado por el usuario stefanocarrera y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de generación de texto de 4 mil millones de parámetros, derivado de la familia Qwen3, y entrenado específicamente sobre datos relacionados con Python, a juzgar por el sufijo `_python_` en su identificador. El entrenamiento se realizó mediante la librería Unsloth, que acelera el proceso de fine-tuning aproximadamente 2 veces respecto a los flujos convencionales.
 
 El modelo parte de la versión cuantizada a 4 bits del Qwen3-4B-Base (`unsloth/Qwen3-4B-Base-unsloth-bnb-4bit`), lo que sugiere un proceso de entrenamiento eficiente en memoria, probablemente con QLoRA o técnicas similares de bajo rango. El sufijo `t0.5_g5_run0` indica parámetros de generación empleados durante el entrenamiento o la evaluación: temperatura 0.5, 5 generaciones y la primera ejecución de una serie. El repositorio tiene un tamaño de 0.1 GB, lo que es coherente con un adaptador LoRA o un modelo cuantizado de pequeño tamaño.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g5_run0 | 4B | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3-4B-Base | 4B | no disponible | Apache 2.0 | HuggingFace (modelo base oficial) |
-| unsloth/Qwen3-4B-Base-unsloth-bnb-4bit | 4B | no disponible | Apache 2.0 | HuggingFace (base cuantizada) |
-| meta-llama/Llama-3.2-3B | 3B | 128K | Llama 3.2 Community License | HuggingFace |
+| stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g5_run0 | 4B | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3-4B-Base | 4B | no disponible | Apache 2.0 | Hugging Face (modelo base oficial) |
+| unsloth/Qwen3-4B-Base-unsloth-bnb-4bit | 4B | no disponible | Apache 2.0 | Hugging Face (base cuantizada) |
+| meta-llama/Llama-3.2-3B | 3B | 128K | Llama 3.2 Community License | Hugging Face |
 
 El modelo se diferencia de sus alternativas principalmente por su especialización declarada en Python y por ser un artefacto de fine-tuning comunitario sin validación pública. Frente al Qwen3-4B-Base oficial, no se documentan mejoras medibles; frente a Llama-3.2-3B, la comparación directa no es posible sin benchmarks.
 
@@ -82,7 +82,7 @@ El modelo se diferencia de sus alternativas principalmente por su especializaci�
 
 ## Enlaces
 
-- [HuggingFace: stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g5_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g5_run0)
+- [Hugging Face: stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g5_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g5_run0)
 - [Modelo base: unsloth/Qwen3-4B-Base-unsloth-bnb-4bit](https://huggingface.co/unsloth/Qwen3-4B-Base-unsloth-bnb-4bit)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
 - [TRL (GitHub)](https://github.com/huggingface/trl)

@@ -18,7 +18,7 @@ El modelo no cuenta con descargas ni likes en el momento de redactar esta ficha,
 | Longitud de contexto | No disponible. Arquitectura GPT-2, cuyo valor por defecto habitual es 1024 tokens; no confirmado en la informacion proporcionada |
 | Tipos de cuantizacion | No disponible. No se publican cuantizaciones oficiales (ni GGUF, ni AWQ, ni GPTQ) |
 | Idiomas soportados | No disponibles en la model card. El prefijo `zho-hans` del nombre sugiere chino simplificado, sin confirmacion oficial |
-| Licencia | No disponible. El campo aparece como `license` sin especificar en la model card y sin licencia declarada en los metadatos de HuggingFace |
+| Licencia | No disponible. El campo aparece como `license` sin especificar en la model card y sin licencia declarada en los metadatos de Hugging Face |
 | Formato de pesos | Safetensors (libreria `transformers`) |
 | Autor | francesca9805 |
 | Modelo base | francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfdiso_seed10 |
@@ -53,7 +53,7 @@ El entrenamiento se realizo mediante SFT con TRL, partiendo de un checkpoint pre
 - Generacion de texto en chino simplificado a pequena escala: si se confirma el idioma, podria emplearse para generar borradores o completar plantillas en dominios muy acotados, siempre con revision humana.
 - Punto de partida para ajustes posteriores: al ser un modelo de 124M con licencia no declarada, puede servir de base experimental para fine-tuning adicional en tareas de clasificacion o generacion muy especificas dentro del ambito de investigacion.
 - Aumento de datos sinteticos para entrenar modelos mayores: util para generar ejemplos masivamente con un coste computacional minimo, aunque con calidad limitada por el tamano del modelo.
-- Docencia y demostraciones: permite explicar el ciclo completo de SFT con TRL, seguimiento con Weights & Biases y publicacion en HuggingFace sin requerir hardware especializado.
+- Docencia y demostraciones: permite explicar el ciclo completo de SFT con TRL, seguimiento con Weights & Biases y publicacion en Hugging Face sin requerir hardware especializado.
 - Comparativas de eficiencia entre tokenizadores: mismo corpus y misma arquitectura con distintos vocabularios, midiendo tokens por palabra y perplejidad resultante.
 
 ## Benchmarks y rendimiento
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zho-hans-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10 | 124,77M | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
+| zho-hans-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10 | 124,77M | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
 | openai-community/gpt2 | 124M | 1024 tokens | Metricas publicas en el paper original de GPT-2 | MIT | Ampliamente disponible y con gran ecosistema |
 | openai-community/gpt2-medium | 355M | 1024 tokens | Superior al GPT-2 base en tareas de generacion y comprension | MIT | Ampliamente disponible |
 | Qwen/Qwen2.5-0.5B | 494M | 32.768 tokens | Benchmarks publicos de la familia Qwen2.5 | Apache 2.0 | Ampliamente disponible, con versiones instruct y cuantizadas |
@@ -93,7 +93,7 @@ La comparacion con alternativas modernas del mismo orden de magnitud muestra que
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10
+- Pagina del modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfdiso_seed10
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/hcvmakpg
 - Repositorio de TRL: https://github.com/huggingface/trl

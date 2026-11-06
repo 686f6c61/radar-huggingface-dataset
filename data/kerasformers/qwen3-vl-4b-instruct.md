@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-VL-4B-Instruct (original) | 4B | no disponible | Apache 2.0 | HuggingFace, PyTorch |
-| kerasformers/qwen3-vl-4b-instruct | 4B | no disponible | Apache 2.0 | HuggingFace, Keras 3 (TF/JAX/Torch) |
-| LLaVA-1.6 (vicuna-7b) | 7B | 4096 | Apache 2.0 | HuggingFace, PyTorch |
+| Qwen3-VL-4B-Instruct (original) | 4B | no disponible | Apache 2.0 | Hugging Face, PyTorch |
+| kerasformers/qwen3-vl-4b-instruct | 4B | no disponible | Apache 2.0 | Hugging Face, Keras 3 (TF/JAX/Torch) |
+| LLaVA-1.6 (vicuna-7b) | 7B | 4096 | Apache 2.0 | Hugging Face, PyTorch |
 
 La comparativa se limita a modelos vision-language de tamaño similar. La diferencia principal es el ecosistema: mientras el original y LLaVA se ejecutan en PyTorch, esta conversión permite usar Keras 3. No se dispone de datos de rendimiento para comparar objetivamente.
 
@@ -81,10 +81,10 @@ La comparativa se limita a modelos vision-language de tamaño similar. La difere
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kerasformers/qwen3-vl-4b-instruct
+- Modelo en Hugging Face: https://huggingface.co/kerasformers/qwen3-vl-4b-instruct
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de Qwen3-VL en KerasFormers: https://imvision12.github.io/KerasFormers/qwen3_vl/
-- Colección de modelos Qwen3-VL en HuggingFace: https://huggingface.co/collections/kerasformers/qwen3-vl-6a7d7677c2926ecbddb1ed0a
+- Colección de modelos Qwen3-VL en Hugging Face: https://huggingface.co/collections/kerasformers/qwen3-vl-6a7d7677c2926ecbddb1ed0a
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Paper Qwen3 Technical Report: https://arxiv.org/abs/2505.09388
 - Paper Qwen2.5-VL Technical Report: https://arxiv.org/abs/2502.13923

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hv-tail` es un detector de "techo de calibracion" (above-ceiling detector) publicado por el usuario zeechimp en HuggingFace bajo licencia Apache 2.0. No es una red neuronal: es un clasificador heuristico de texto implementado en Python (etiquetado como `numpy` en la libreria, aunque la propia model card indica que no tiene dependencias y usa solo la stdlib de Python 3.9+). Su funcion es estimar si la consulta de un usuario se situa por encima del techo de capacidad calibrada de un LLM para ese tipo de pregunta, es decir, si el usuario esta operando por encima de la media sobre la que se calibran los modelos actuales.
+`hv-tail` es un detector de "techo de calibracion" (above-ceiling detector) publicado por el usuario zeechimp en Hugging Face bajo licencia Apache 2.0. No es una red neuronal: es un clasificador heuristico de texto implementado en Python (etiquetado como `numpy` en la libreria, aunque la propia model card indica que no tiene dependencias y usa solo la stdlib de Python 3.9+). Su funcion es estimar si la consulta de un usuario se situa por encima del techo de capacidad calibrada de un LLM para ese tipo de pregunta, es decir, si el usuario esta operando por encima de la media sobre la que se calibran los modelos actuales.
 
 El modelo calcula una puntuacion cruda a partir de ocho senales linguisticas ponderadas (framing, precision, undecidability, meta, negative, constraint, dialect y requery), normalizadas sobre un factor constante de 3.0. A diferencia de otros detectores del Hub que devuelven unicamente un numero, `hv-tail` devuelve ademas una recomendacion accionable: `proceed`, `ask`, `reframe` o `refuse`, segun el valor obtenido.
 
@@ -86,6 +86,6 @@ No disponible. La informacion proporcionada no referencia otros detectores de "a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zeechimp/hv-tail
+- Hugging Face: https://huggingface.co/zeechimp/hv-tail
 
 La busqueda web realizada no devolvio ningun resultado relacionado con este modelo: los enlaces recuperados corresponden a alojamientos turisticos en Cilaos (La Reunion) y no guardan relacion con `hv-tail`. No se dispone de paper, blog, repositorio ni demo adicional.

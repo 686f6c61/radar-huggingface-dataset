@@ -101,7 +101,7 @@ Frente a alternativas generalistas de tamaño similar (Qwen3-1.7B, SmolLM2-1.7B,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rudy44/LFM3-1.7B-Polititune
+- Modelo en Hugging Face: https://huggingface.co/rudy44/LFM3-1.7B-Polititune
 - Modelo base (Vortecks): https://huggingface.co/Vortecks/LFM3-1.7B-Heretic-Abliterated
 - Modelo original (Liquid AI): https://huggingface.co/LiquidAI/LFM3-1.7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/WokeAI/polititune-tankie-warmup-3

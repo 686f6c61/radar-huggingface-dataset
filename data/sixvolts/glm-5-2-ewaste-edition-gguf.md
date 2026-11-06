@@ -17,7 +17,7 @@ Su relevancia actual es doble. Por un lado, demuestra que un modelo de ~750 B de
 | Parametros activos | ~40 B (8 expertos enrutados + 1 compartido por token) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q4_K_XL, Q3_K_XL, Q3_K_M y Q2_K_XL (K-quants con imatrix; Q2_K_XL incluye IQ2_XXS en 13 capas) |
-| Idiomas soportados | no disponible (etiqueta "conversational" en HuggingFace) |
+| Idiomas soportados | no disponible (etiqueta "conversational" en Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | GGUF (8-10 shards segun la variante) |
 | Tamano del repositorio | 1330,7 GB (suma de las cuatro variantes) |
@@ -81,7 +81,7 @@ No se han identificado en la informacion disponible modelos de terceros comparab
 
 | Modelo | Parametros | Contexto | Peso en disco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zai-org/GLM-5.2 (BF16) | ~754 B (safetensors); 745 B segun la card | no disponible | no disponible | MIT segun la card del derivado | Modelo base en HuggingFace |
+| zai-org/GLM-5.2 (BF16) | ~754 B (safetensors); 745 B segun la card | no disponible | no disponible | MIT segun la card del derivado | Modelo base en Hugging Face |
 | unsloth/GLM-5.2-GGUF | Igual | no disponible | no disponible | no disponible | Fuente del BF16 y de la imatrix usados aqui |
 | GLM-5.2-Q4_K_XL | ~754 B | no disponible | 403,8 GiB | MIT | Este repositorio |
 | GLM-5.2-Q3_K_M | ~754 B | no disponible | 295,7 GiB | MIT | Este repositorio |
@@ -105,7 +105,7 @@ No se han identificado en la informacion disponible modelos de terceros comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SixVolts/GLM-5.2-ewaste-edition-GGUF
+- Modelo en Hugging Face: https://huggingface.co/SixVolts/GLM-5.2-ewaste-edition-GGUF
 - README del repositorio: https://huggingface.co/SixVolts/GLM-5.2-ewaste-edition-GGUF/blob/main/README.md
 - Modelo base: https://huggingface.co/zai-org/GLM-5.2
 - BF16 e imatrix de origen: https://huggingface.co/unsloth/GLM-5.2-GGUF

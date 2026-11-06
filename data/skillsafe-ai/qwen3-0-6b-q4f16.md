@@ -39,7 +39,7 @@ La innovación técnica de este repositorio es la reproducibilidad y el destino 
 - Trazabilidad y verificación criptográfica por fichero (SHA-256 individual y `manifest.json` con receta, fuentes y toolchain).
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible; la ficha de HuggingFace no declara idiomas.
+- Capacidades multilingües: no disponible; la ficha de Hugging Face no declara idiomas.
 - Capacidades especiales (modo thinking, visión, audio): no disponibles en la información proporcionada.
 
 ## Casos de uso
@@ -98,7 +98,7 @@ La diferencia sustantiva frente al modelo base y frente a las variantes GGUF es 
 
 ## Enlaces
 
-- Ficha de HuggingFace del modelo: https://huggingface.co/skillsafe-ai/qwen3-0.6b-q4f16
+- Ficha de Hugging Face del modelo: https://huggingface.co/skillsafe-ai/qwen3-0.6b-q4f16
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Licencia Apache-2.0 del modelo base (commit fijado): https://huggingface.co/Qwen/Qwen3-0.6B/blob/c1899de289a04d12100db370d81485cdf75e47ca/LICENSE
 - Upstream MLC (commit fijado `8c14ce481d4c692769976ad52afea453a102df19`): https://huggingface.co/mlc-ai/Qwen3-0.6B-q4f16_1-MLC/tree/8c14ce481d4c692769976ad52afea453a102df19

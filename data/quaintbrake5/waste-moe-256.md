@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Quaintbrake5/waste-moe-256 es un modelo alojado en HuggingFace por el usuario Quaintbrake5, publicado el 20 de septiembre de 2026. Segun los metadatos del repositorio, se trata de un modelo de vision con arquitectura de mezcla de expertos (etiqueta `vit_moe`, es decir, Vision Transformer con Mixture of Experts) y un total de 124.179.460 parametros, lo que lo situa en la franja de los modelos de vision de tamano pequeno-medio (por debajo de los 200 millones de parametros).
+Quaintbrake5/waste-moe-256 es un modelo alojado en Hugging Face por el usuario Quaintbrake5, publicado el 20 de septiembre de 2026. Segun los metadatos del repositorio, se trata de un modelo de vision con arquitectura de mezcla de expertos (etiqueta `vit_moe`, es decir, Vision Transformer con Mixture of Experts) y un total de 124.179.460 parametros, lo que lo situa en la franja de los modelos de vision de tamano pequeno-medio (por debajo de los 200 millones de parametros).
 
 El modelo no dispone de model card, pipeline declarado, licencia, idiomas ni documentacion tecnica asociada. El repositorio ocupa 1,0 GB y acumula 0 descargas y 1 like en el momento de la consulta. No se ha publicado informacion sobre el dataset de entrenamiento, el numero de tokens procesados, la composicion de expertos ni el proceso de alineacion.
 
@@ -65,7 +65,7 @@ Estimaciones calculadas a partir del recuento real de parametros (124.179.460), 
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM. Funciona holgadamente en RTX 3060, RTX 4060, RTX 4090, A100, H100 o L4; no requiere aceleradores de gama alta.
 - GPU de consumo: si, cabe en practicamente cualquier GPU de consumo moderna con 4 GB o mas, e incluso en GPUs integradas con memoria compartida.
 - CPU: la inferencia en CPU es plausible dado el tamano, aunque la latencia dependera del numero de expertos activados por token y del soporte de instrucciones vectoriales.
-- Opciones de despliegue: HuggingFace Transformers es la via mas directa dado que los pesos estan en safetensors. vLLM y TGI soportan arquitecturas de vision y MoE solo si estan implementadas en sus librerias, lo cual no esta confirmado para esta arquitectura concreta. El soporte en llama.cpp, Ollama o LM Studio no esta confirmado y depende de la existencia de una conversion a GGUF.
+- Opciones de despliegue: Hugging Face Transformers es la via mas directa dado que los pesos estan en safetensors. vLLM y TGI soportan arquitecturas de vision y MoE solo si estan implementadas en sus librerias, lo cual no esta confirmado para esta arquitectura concreta. El soporte en llama.cpp, Ollama o LM Studio no esta confirmado y depende de la existencia de una conversion a GGUF.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparacion se l
 
 | Modelo | Parametros | Arquitectura | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Quaintbrake5/waste-moe-256 | 124.179.460 | ViT + MoE (`vit_moe`) | no disponible | no disponible | HuggingFace, 0 descargas |
+| Quaintbrake5/waste-moe-256 | 124.179.460 | ViT + MoE (`vit_moe`) | no disponible | no disponible | Hugging Face, 0 descargas |
 | ViT-B/16 (Google) | ~86 millones | Vision Transformer denso | 224x224 (tipico) | Apache 2.0 en el repositorio original | Ampliamente disponible |
 | ViT-L/16 (Google) | ~304 millones | Vision Transformer denso | 224x224 (tipico) | Apache 2.0 en el repositorio original | Ampliamente disponible |
 | DeiT-B (Meta) | ~86 millones | Vision Transformer denso con destilacion | 224x224 (tipico) | Apache 2.0 | Ampliamente disponible |
@@ -96,7 +96,7 @@ Comparado con alternativas del mismo orden de magnitud, este modelo no ofrece da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Quaintbrake5/waste-moe-256
+- Hugging Face: https://huggingface.co/Quaintbrake5/waste-moe-256
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

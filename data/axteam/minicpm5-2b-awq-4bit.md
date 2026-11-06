@@ -23,7 +23,7 @@ Un dato relevante para evaluar esta ficha: el propio autor advierte de una degra
 
 ## Arquitectura y entrenamiento
 
-El modelo base, MiniCPM5-2B de OpenBMB, es un transformer denso con arquitectura tipo Llama (según el tag `llama` de HuggingFace y la model card), solo texto, de aproximadamente 2,52 B de parámetros. No hay datos publicados en la información disponible sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF/DPO en el modelo base.
+El modelo base, MiniCPM5-2B de OpenBMB, es un transformer denso con arquitectura tipo Llama (según el tag `llama` de Hugging Face y la model card), solo texto, de aproximadamente 2,52 B de parámetros. No hay datos publicados en la información disponible sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF/DPO en el modelo base.
 
 Esta variante concreta no modifica la arquitectura ni el entrenamiento: es una cuantización post-entrenamiento (PTQ) con el método AWQ en INT4, esquema W4A16 (pesos INT4 asimétricos agrupados en bloques de 32, activaciones en BF16), calibrada con 256 muestras y almacenada en formato compressed-tensors `pack-quantized` para compatibilidad nativa con vLLM. El tokenizador y la plantilla de chat son idénticos a los del original. Como innovación operativa, la model card documenta cómo reducir la memoria de la caché KV en tiempo de servicio mediante KV cache en FP8 (`--kv-cache-dtype fp8`), que la reduce aproximadamente a la mitad en contextos largos.
 

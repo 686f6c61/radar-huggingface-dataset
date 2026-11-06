@@ -90,7 +90,7 @@ Snake (mismo modelo, tablero de texto, una pregunta `choice` y cuatro de sí/no 
 
 | Modelo | Parámetros | Precisión JevBench público | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| K2-Type-0.9B | 1,08B | 0,762 | apache-2.0 | Pesos en HuggingFace (safetensors) con servidor propio |
+| K2-Type-0.9B | 1,08B | 0,762 | apache-2.0 | Pesos en Hugging Face (safetensors) con servidor propio |
 | Jev 1.13.0 (TypeSafe) | no disponible | 0,866 | no disponible | no disponible en la información proporcionada |
 | Qwen3.5-4B (entradas) | ~4B | 0,74 - 0,82 | no disponible | no disponible en la información proporcionada |
 | Gemma 4 E2B + LoRA (system-one-open) | E2B | 0,732 | no disponible | no disponible en la información proporcionada |
@@ -113,7 +113,7 @@ El patrón que se deduce de estos datos es que K2-Type-0.9B supera a alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IFM/K2-Type-0.9B
+- Modelo en Hugging Face: https://huggingface.co/IFM/K2-Type-0.9B
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-0.9B
 - JevBench (repositorio de evaluación): https://github.com/fstandhartinger/jevbench
 - Formato de cable `/v1/systemone` de TypeSafe (sin URL disponible en la información proporcionada)

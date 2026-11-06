@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Base | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rshift8/pi05_no_dest_firstandlast5_injection_allenv | Fine-tune VLA | π₀.₅ | JAX/orbax | no disponible | HuggingFace |
-| mzxuan/robopro_jax_30000 | Fine-tune VLA | π₀.₅ | JAX/orbax | no disponible | HuggingFace |
+| rshift8/pi05_no_dest_firstandlast5_injection_allenv | Fine-tune VLA | π₀.₅ | JAX/orbax | no disponible | Hugging Face |
+| mzxuan/robopro_jax_30000 | Fine-tune VLA | π₀.₅ | JAX/orbax | no disponible | Hugging Face |
 | Physical-Intelligence π₀.₅ (base) | VLA flow-based | — | JAX | no disponible | GitHub openpi |
 | π₀-FAST | VLA autoregressive | π₀ | JAX | no disponible | GitHub openpi |
 
@@ -80,7 +80,7 @@ La comparativa se limita a la familia π₀. No se dispone de datos de rendimien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rshift8/pi05_no_dest_firstandlast5_injection_allenv
+- Repositorio Hugging Face: https://huggingface.co/rshift8/pi05_no_dest_firstandlast5_injection_allenv
 - Repositorio de referencia RoboPRO: https://huggingface.co/mzxuan/robopro_jax_30000
 - GitHub openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Paper de π₀.₅ (arXiv): https://arxiv.org/abs/2504.16054

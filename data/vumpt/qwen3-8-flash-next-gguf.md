@@ -16,7 +16,7 @@ Esta ficha cubre la conversion GGUF realizada por el usuario vumpt, que permite 
 | Longitud de contexto | 262.144 tokens (262K) |
 | Tipos de cuantizacion | Q4_K_M (con fallback por tensor a Q5_0/q8_0 cuando ncols no es divisible por 256; embedding y output en Q6_K; tabla n-gram en Q5_0) |
 | Idiomas soportados | No disponible |
-| Licencia | qwen-community-1.0 (licencia "other" en HuggingFace) |
+| Licencia | qwen-community-1.0 (licencia "other" en Hugging Face) |
 | Formato de pesos | GGUF (un unico archivo `qwen3.8-flash-next-Q4_K_M.gguf` de ~120 GB) |
 
 ## Arquitectura y entrenamiento
@@ -73,15 +73,15 @@ La comparativa se limita a modelos de la misma familia Qwen. No se dispone de da
 - La arquitectura `qwen4exp` solo es compatible con la rama del PR #27742 de llama.cpp. La rama principal no puede cargar el archivo GGUF, lo que limita su uso a entornos de desarrollo con esa rama especifica.
 - El modelo es experimental (Qwen4-exp), por lo que puede presentar inestabilidades o comportamientos inesperados en produccion.
 - El tamano del archivo (~120 GB) y los requisitos de memoria (~78 GB minimo) lo excluyen de la mayoria de equipos de consumo.
-- La licencia qwen-community-1.0 es una licencia "other" en HuggingFace; es necesario revisar sus terminos especificos para uso comercial antes de desplegar el modelo en produccion.
+- La licencia qwen-community-1.0 es una licencia "other" en Hugging Face; es necesario revisar sus terminos especificos para uso comercial antes de desplegar el modelo en produccion.
 - No se dispone de informacion sobre sesgos, riesgos de alucinacion o limitaciones idiomaticas especificas del modelo.
 - La cuantizacion Q4_K_M aplica fallbacks por tensor (Q5_0/q8_0) debido a que varias formas de tensor no son divisibles por 256, lo que puede afectar ligeramente a la calidad de la inferencia en esas capas.
 - No se han publicado benchmarks oficiales, por lo que el rendimiento real en tareas estandar no esta verificado.
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/vumpt/Qwen3.8-Flash-Next-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face del GGUF: https://huggingface.co/vumpt/Qwen3.8-Flash-Next-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - Guia de ejecucion local (unsloth): https://unsloth.ai/docs/models/qwen3.8-next
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/

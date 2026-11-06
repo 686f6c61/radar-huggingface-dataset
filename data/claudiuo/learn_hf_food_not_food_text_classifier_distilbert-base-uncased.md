@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`learn_hf_food_not_food_text_classifier_distilbert-base-uncased` es un modelo de clasificación de texto binaria obtenido mediante fine-tuning de DistilBERT base uncased. Lo publica el usuario ClaudiuO en HuggingFace y su propósito, a juzgar por el identificador, es distinguir textos relacionados con comida de textos que no lo están. No es un modelo generativo ni un sistema conversacional: es un clasificador ligero pensado para etiquetar secuencias cortas.
+`learn_hf_food_not_food_text_classifier_distilbert-base-uncased` es un modelo de clasificación de texto binaria obtenido mediante fine-tuning de DistilBERT base uncased. Lo publica el usuario ClaudiuO en Hugging Face y su propósito, a juzgar por el identificador, es distinguir textos relacionados con comida de textos que no lo están. No es un modelo generativo ni un sistema conversacional: es un clasificador ligero pensado para etiquetar secuencias cortas.
 
 El modelo parte de la arquitectura DistilBERT, una versión destilada de BERT con 6 capas y 66.955.010 parámetros totales, lo que lo sitúa en el rango de modelos pequeños y aptos para inferencia en CPU o GPU de gama baja. La ventana de contexto es la nativa de DistilBERT: 512 tokens. Se distribuye en formato safetensors y con licencia Apache 2.0.
 
@@ -32,7 +32,7 @@ El fine-tuning se realizó con el Trainer de Transformers sobre un dataset no id
 - Clasificación de texto binaria: asigna una de dos etiquetas a una secuencia de entrada, presumiblemente "comida" frente a "no comida".
 - Procesamiento de secuencias de hasta 512 tokens con el tokenizador WordPiece uncased de DistilBERT.
 - Inferencia rápida y de bajo coste computacional gracias al tamaño reducido del modelo.
-- Compatible con `text-embeddings-inference` y con endpoints de HuggingFace según los tags del repositorio.
+- Compatible con `text-embeddings-inference` y con endpoints de Hugging Face según los tags del repositorio.
 - No soporta generación de texto, tool calling, function calling, razonamiento multi-paso ni agentes.
 - No tiene capacidades multimodales (ni visión ni audio).
 - No se declaran capacidades multilingües específicas; el modelo base es uncased en inglés.
@@ -79,17 +79,17 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 - En fp16 o int8, el modelo ocupa del orden de 130 MB o 70 MB respectivamente, sin contar el overhead del runtime.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; funciona sin problema en RTX 3060, RTX 4090, T4, A10, A100 y H100, aunque el hardware de gama alta está sobredimensionado para este modelo.
 - Cabe holgadamente en GPU de consumo e incluso en CPU: la inferencia en CPU es viable para volúmenes moderados.
-- Opciones de despliegue: Transformers con PyTorch, `text-embeddings-inference` (soportado según los tags), endpoints de HuggingFace, ONNX Runtime y cuantización con herramientas externas. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama requerirían conversión previa.
+- Opciones de despliegue: Transformers con PyTorch, `text-embeddings-inference` (soportado según los tags), endpoints de Hugging Face, ONNX Runtime y cuantización con herramientas externas. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama requerirían conversión previa.
 - Latencia y throughput: no disponibles en la información proporcionada. Por el tamaño del modelo, se espera una latencia de milisegundos por secuencia en GPU y de decenas de milisegundos en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (DistilBERT fine-tuned) | 66,9 M | 512 | Clasificacion binaria de dominio | Apache 2.0 | HuggingFace |
-| distilbert-base-uncased | 66,9 M | 512 | Modelo base (MLM, sin cabeza de clasificacion) | Apache 2.0 | HuggingFace |
-| bert-base-uncased | 110 M | 512 | Modelo base (MLM) | Apache 2.0 | HuggingFace |
-| roberta-base | 125 M | 512 | Modelo base (MLM) | MIT | HuggingFace |
+| Este modelo (DistilBERT fine-tuned) | 66,9 M | 512 | Clasificacion binaria de dominio | Apache 2.0 | Hugging Face |
+| distilbert-base-uncased | 66,9 M | 512 | Modelo base (MLM, sin cabeza de clasificacion) | Apache 2.0 | Hugging Face |
+| bert-base-uncased | 110 M | 512 | Modelo base (MLM) | Apache 2.0 | Hugging Face |
+| roberta-base | 125 M | 512 | Modelo base (MLM) | MIT | Hugging Face |
 
 La comparación es estructural: este modelo es un fine-tuning de distilbert-base-uncased y, por tanto, comparte arquitectura y tamaño con su base. Frente a BERT base y RoBERTa base, ofrece menor coste computacional a cambio de una capacidad de representación algo inferior. No hay datos de rendimiento comparativo publicados para este fine-tuning concreto.
 
@@ -107,7 +107,7 @@ La comparación es estructural: este modelo es un fine-tuning de distilbert-base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ClaudiuO/learn_hf_food_not_food_text_classifier_distilbert-base-uncased
+- Modelo en Hugging Face: https://huggingface.co/ClaudiuO/learn_hf_food_not_food_text_classifier_distilbert-base-uncased
 - Modelo base DistilBERT: https://huggingface.co/distilbert/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Documentación de Transformers: https://huggingface.co/docs/transformers

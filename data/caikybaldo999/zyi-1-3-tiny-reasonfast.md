@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZYI 1.3 TINY ReasonFast es un modelo de difusion texto-a-imagen desarrollado por el usuario caikybaldo999, publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un ajuste fino continuado del modelo previo `caikybaldo999/ZYI-1.2-TINY`, construido sobre una arquitectura DiT (Diffusion Transformer) de apenas 59,2 millones de parametros que emplea formulacion Rectified Flow y genera imagenes de 256x256 pixeles. El condicionamiento textual se realiza con un encoder FLAN-T5-base y la decodificacion latente con el VAE `stabilityai/sd-vae-ft-mse`.
+ZYI 1.3 TINY ReasonFast es un modelo de difusion texto-a-imagen desarrollado por el usuario caikybaldo999, publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un ajuste fino continuado del modelo previo `caikybaldo999/ZYI-1.2-TINY`, construido sobre una arquitectura DiT (Diffusion Transformer) de apenas 59,2 millones de parametros que emplea formulacion Rectified Flow y genera imagenes de 256x256 pixeles. El condicionamiento textual se realiza con un encoder FLAN-T5-base y la decodificacion latente con el VAE `stabilityai/sd-vae-ft-mse`.
 
 El modelo resuelve el problema de generar imagenes a partir de texto con un coste computacional muy bajo, lo que lo situa en la categoria de modelos "tiny" para investigacion, prototipado rapido y despliegue en hardware modesto. Su nombre comercial ("ReasonFast") sugiere capacidades de razonamiento, pero la model card no documenta ninguna capacidad de ese tipo: se trata exclusivamente de un modelo de sintesis de imagen. El entrenamiento se realizo sobre 300.000 muestras (250.000 de `LucasFang/FLUX-Reason-6M` filtradas por claridad y estructura, mas 50.000 de `pixparse/cc3m-wds`), con caracteristicas precalculadas como latentes VAE y embeddings FLAN-T5.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Resolucion nativa | Condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZYI 1.3 TINY ReasonFast | 59,2 M (DiT) + encoder y VAE | 256x256 | FLAN-T5-base | Apache 2.0 | HuggingFace, 0 descargas |
+| ZYI 1.3 TINY ReasonFast | 59,2 M (DiT) + encoder y VAE | 256x256 | FLAN-T5-base | Apache 2.0 | Hugging Face, 0 descargas |
 | Stable Diffusion 1.5 | ~860 M (UNet) + encoder y VAE | 512x512 | CLIP ViT-L/14 | CreativeML OpenRAIL-M | Ampliamente disponible y soportado |
 | DiT-XL/2 | ~675 M | 256x256 | Condicionamiento por clase (ImageNet), no texto | no disponible en la informacion consultada | Repositorio de investigacion |
-| PixArt-alpha | ~600 M | 1024x1024 | T5 (encoder de texto) | no disponible en la informacion consultada | HuggingFace |
+| PixArt-alpha | ~600 M | 1024x1024 | T5 (encoder de texto) | no disponible en la informacion consultada | Hugging Face |
 
 La diferencia fundamental es de escala: ZYI 1.3 TINY ReasonFast es aproximadamente un orden de magnitud mas pequeno que las alternativas de la tabla, lo que se traduce en menor fidelidad y adherencia al prompt, pero tambien en requisitos de hardware mucho menores. No hay datos publicos de rendimiento que permitan comparar la calidad de salida de forma objetiva.
 
@@ -91,7 +91,7 @@ La diferencia fundamental es de escala: ZYI 1.3 TINY ReasonFast es aproximadamen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caikybaldo999/ZYI-1.3-TINY-ReasonFast
+- Modelo en Hugging Face: https://huggingface.co/caikybaldo999/ZYI-1.3-TINY-ReasonFast
 - Modelo base declarado: https://huggingface.co/caikybaldo999/ZYI-1.2-TINY
 - Dataset de ajuste fino principal: https://huggingface.co/datasets/LucasFang/FLUX-Reason-6M
 - Dataset complementario: https://huggingface.co/datasets/pixparse/cc3m-wds

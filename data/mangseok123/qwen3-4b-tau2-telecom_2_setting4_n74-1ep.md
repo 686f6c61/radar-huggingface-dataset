@@ -90,10 +90,10 @@ No se dispone de MMLU, HumanEval, GSM8K ni de ningún otro resultado para este a
 
 | Modelo | Parámetros | Contexto | Licencia | tau2-bench telecom | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (qwen3-4b-tau2-telecom, setting4, n74, 1ep) | 4,41B | No especificado (ejemplo con 40.960) | Apache-2.0 | No evaluado | HuggingFace, 0 descargas, 0 likes |
-| Qwen3-4B-Instruct-2507 (modelo base) | ≈4,4B | No disponible en esta ficha | Apache-2.0 | avg 0,056 / pass@4 0,175 | HuggingFace |
-| Qwen2.5-7B-Instruct (alternativa de tamaño superior) | no disponible | no disponible | Apache-2.0 | no disponible | HuggingFace |
-| Llama-3.2-3B-Instruct (alternativa de tamaño inferior) | no disponible | no disponible | Llama 3.2 Community License | no disponible | HuggingFace |
+| Este modelo (qwen3-4b-tau2-telecom, setting4, n74, 1ep) | 4,41B | No especificado (ejemplo con 40.960) | Apache-2.0 | No evaluado | Hugging Face, 0 descargas, 0 likes |
+| Qwen3-4B-Instruct-2507 (modelo base) | ≈4,4B | No disponible en esta ficha | Apache-2.0 | avg 0,056 / pass@4 0,175 | Hugging Face |
+| Qwen2.5-7B-Instruct (alternativa de tamaño superior) | no disponible | no disponible | Apache-2.0 | no disponible | Hugging Face |
+| Llama-3.2-3B-Instruct (alternativa de tamaño inferior) | no disponible | no disponible | Llama 3.2 Community License | no disponible | Hugging Face |
 
 Los datos del modelo base proceden de la model card del autor. El resto de la comparativa se apoya en la documentación pública de cada modelo y no se ha verificado en esta ficha; no se dispone de resultados comparables en tau2-bench telecom para las alternativas.
 
@@ -113,7 +113,7 @@ Los datos del modelo base proceden de la model card del autor. El resto de la co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-telecom_2_setting4_n74-1ep
+- Modelo en Hugging Face: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-telecom_2_setting4_n74-1ep
 - Modelo base Qwen/Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Benchmark tau2-bench (referencia del dominio `telecom`): https://github.com/sierra-research/tau2-bench
 - Paper de tau2-bench, blog del autor o repositorio de entrenamiento: no disponibles en la información proporcionada.

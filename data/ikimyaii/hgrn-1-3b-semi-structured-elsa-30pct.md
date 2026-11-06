@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HGRN-1.3B-semi-structured-ELSA-30pct es un checkpoint de 1.364.396.032 parametros publicado por el usuario ikimyaii en HuggingFace. No es un modelo entrenado desde cero, sino el resultado de podar el modelo base fla-hub/hgrn-1.3B-100B (un HGRN de 1,3 B de parametros entrenado sobre 100.000 millones de tokens) hasta un 30 % de esparsidad semi-estructurada mediante ELSA, la herramienta oficial del paper arXiv:2510.01650. El resultado es un modelo denso en embeddings y lm_head, pero con todas las capas lineales internas de los bloques podadas por filas.
+HGRN-1.3B-semi-structured-ELSA-30pct es un checkpoint de 1.364.396.032 parametros publicado por el usuario ikimyaii en Hugging Face. No es un modelo entrenado desde cero, sino el resultado de podar el modelo base fla-hub/hgrn-1.3B-100B (un HGRN de 1,3 B de parametros entrenado sobre 100.000 millones de tokens) hasta un 30 % de esparsidad semi-estructurada mediante ELSA, la herramienta oficial del paper arXiv:2510.01650. El resultado es un modelo denso en embeddings y lm_head, pero con todas las capas lineales internas de los bloques podadas por filas.
 
 El interes del checkpoint es fundamentalmente metodologico: sirve como baseline reproducible para comparar tecnicas de poda (en la misma cuenta existen variantes EHWS con esparsidades del 70 % y 80 %). La poda es semi-estructurada a nivel de fila: cada fila de cada capa podada conserva exactamente el mismo numero de pesos (el 70 % superior), de modo que el trabajo por fila queda perfectamente balanceado. La esparsidad medida sobre los pesos publicados es 0,2998 y se ha verificado sobre las 168 capas podadas.
 
@@ -97,7 +97,7 @@ No hay datos publicados que permitan comparar este checkpoint con transformers d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-ELSA-30pct
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-ELSA-30pct
 - Modelo base: https://huggingface.co/fla-hub/hgrn-1.3B-100B
 - Paper de ELSA: https://arxiv.org/abs/2510.01650
 - Variante al 70 % de esparsidad: https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-ELSA-70pct

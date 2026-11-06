@@ -84,6 +84,6 @@ No disponible. La información proporcionada no incluye especificaciones de mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kataguru/Apodex-1.1-mini-Finnish-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kataguru/Apodex-1.1-mini-Finnish-Uncensored-GGUF
 - Modelo base: `apodex/Apodex-1.1-mini` (referenciado en la model card, sin URL directa proporcionada)
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales relevantes para este modelo. Los resultados devueltos (temas de GitHub sobre `chatgpt-api`, repositorios de jailbreaks tipo DAN y artículos en vietnamita sobre ChatGPT) no guardan relación con Apodex-1.1-mini y se descartan.

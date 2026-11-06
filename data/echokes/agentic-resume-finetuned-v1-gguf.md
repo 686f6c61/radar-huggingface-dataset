@@ -6,7 +6,7 @@ Agentic Resume Fine-tuned V1 es un modelo de generacion de texto derivado de Qwe
 
 El modelo hereda la arquitectura del base Qwen3.5-4B (no se detalla en la informacion disponible) y se distribuye con licencia Apache 2.0. La relevancia practica es acotada: se trata de un fine-tuning de nicho, con solo 50 descargas y sin datos publicos de benchmarks, orientado a inferencia local mediante Ollama. El autor advierte explicitamente de que no debe usarse para contratacion autonoma ni ranking de candidatos, y de que las salidas requieren revision humana.
 
-La ficha se basa unicamente en la model card y los metadatos de HuggingFace; cualquier dato no documentado se indica como no disponible.
+La ficha se basa unicamente en la model card y los metadatos de Hugging Face; cualquier dato no documentado se indica como no disponible.
 
 ## Especificaciones tecnicas
 
@@ -43,7 +43,7 @@ No se documentan en la informacion disponible el numero de tokens de entrenamien
 ## Casos de uso
 
 - Generacion de curriculos adaptados a una oferta concreta: el modelo recibe los datos del candidato y los requisitos del puesto y produce un borrador en Markdown con los encabezados exigidos, lo que facilita su integracion en un pipeline que valide la estructura de forma automatica.
-- Prototipado local de asistentes de empleabilidad: al ser un GGUF de 2,7 GB desplegable con Ollama, permite iterar en un portatil sin GPU dedicada ni cuenta en HuggingFace.
+- Prototipado local de asistentes de empleabilidad: al ser un GGUF de 2,7 GB desplegable con Ollama, permite iterar en un portatil sin GPU dedicada ni cuenta en Hugging Face.
 - Reproducibilidad de experimentos academicos: el artefacto incluye hash SHA-256 y un repositorio de trazabilidad (`v5-workflow-rollback`), lo que permite replicar exactamente la inferencia evaluada en el proyecto escolar.
 - Evaluacion comparativa de fine-tunings: sirve como referencia cuantizada frente al baseline `qwen3.5:4b-q4_K_M` para medir el efecto del adaptador en tareas de redaccion con restricciones.
 - Generacion de resumenes profesionales con revision humana: util para producir un primer borrador de perfil o resumen que un revisor editorial pule; el autor advierte de un caso con encuadre negativo indeseado, por lo que la revision es obligatoria.
@@ -87,8 +87,8 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/echokes/agentic-resume-finetuned-v1-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.5-4B
+- Hugging Face: https://huggingface.co/echokes/agentic-resume-finetuned-v1-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio del proyecto (rama de trazabilidad): https://github.com/pohyongzhi/Agentic-Resume-Builder/tree/v5-workflow-rollback
 - Fichero GGUF: https://huggingface.co/echokes/agentic-resume-finetuned-v1-GGUF/resolve/main/agentic-resume-v4-1-no-nextn-q4_K_M.gguf
 - Modelfile: https://huggingface.co/echokes/agentic-resume-finetuned-v1-GGUF/resolve/main/Modelfile

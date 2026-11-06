@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea-2-pose-controlnet es un adaptador LoRA de control de pose, de estilo ControlNet, entrenado para el modelo de difusion Krea-2-Turbo. Lo publica el usuario xiaoyang5271 en HuggingFace, aunque la model card apunta a un repositorio homonimo del usuario thedeoxen, lo que sugiere un espejo o una publicacion duplicada. Su funcion es recibir un mapa de esqueleto OpenPose o DWPose como imagen de control y forzar que el sujeto generado adopte esa postura, mientras el prompt de texto define identidad, ropa, iluminacion y escena.
+Krea-2-pose-controlnet es un adaptador LoRA de control de pose, de estilo ControlNet, entrenado para el modelo de difusion Krea-2-Turbo. Lo publica el usuario xiaoyang5271 en Hugging Face, aunque la model card apunta a un repositorio homonimo del usuario thedeoxen, lo que sugiere un espejo o una publicacion duplicada. Su funcion es recibir un mapa de esqueleto OpenPose o DWPose como imagen de control y forzar que el sujeto generado adopte esa postura, mientras el prompt de texto define identidad, ropa, iluminacion y escena.
 
 El adaptador no es un modelo autonomo: se carga sobre el UNet de Krea-2-Turbo y se usa en un pipeline de image-to-image dentro de ComfyUI, con nodos especificos para el acondicionamiento con imagen de control. El repositorio ocupa 0,3 GB e incluye los pesos en safetensors, un workflow de ComfyUI en JSON y ejemplos de resultados. La licencia declarada es Apache 2.0.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para inferencia: no disponible. El adaptador pesa poco (el repositorio completo ocupa 0,3 GB), pero el consumo real lo determina el modelo base Krea-2-Turbo, que debe cargarse en memoria junto al LoRA.
 - GPU recomendadas: no especificadas en la informacion disponible. El autor solo recomienda ejecutar el modelo base en fp8 scaled.
 - Compatibilidad con GPU de consumo: no confirmada en la documentacion aportada; depende de la variante y cuantizacion del modelo base.
-- Opciones de despliegue: ComfyUI es el entorno de referencia, con los nodos `comfyui_controlnet_aux` (extraccion DWPose) y `comfyui-krea2-ostris-edit` (acondicionamiento con imagen de control). La ficha de HuggingFace tambien declara la libreria `diffusers`.
+- Opciones de despliegue: ComfyUI es el entorno de referencia, con los nodos `comfyui_controlnet_aux` (extraccion DWPose) y `comfyui-krea2-ostris-edit` (acondicionamiento con imagen de control). La ficha de Hugging Face tambien declara la libreria `diffusers`.
 - No aplica a servidores de inferencia de texto como vLLM, TGI u Ollama, al no ser un modelo de lenguaje.
 - Latencia y throughput: no disponibles. La unica referencia de coste computacional es la configuracion de muestreo recomendada (~10 pasos, CFG ~1.0, `euler` + `simple`).
 
@@ -97,7 +97,7 @@ La diferencia funcional relevante frente al modelo base es que este LoRA anade c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xiaoyang5271/Krea-2-pose-controlnet
+- Modelo en Hugging Face: https://huggingface.co/xiaoyang5271/Krea-2-pose-controlnet
 - Repositorio referenciado en la model card: https://huggingface.co/thedeoxen/Krea-2-pose-controlnet
 - Pesos (safetensors): https://huggingface.co/thedeoxen/Krea-2-pose-controlnet/blob/main/krea2_turbo_openpose_controlnet.safetensors
 - Workflow de ComfyUI (JSON): https://huggingface.co/thedeoxen/Krea-2-pose-controlnet/blob/main/krea2_controlnet_pose.json

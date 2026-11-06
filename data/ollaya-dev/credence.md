@@ -83,7 +83,7 @@ La informacion disponible permite comparar credence con otros modelos servidos p
 | Modelo | Formato | Motor de ejecucion | Base | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `ollaya-dev/credence` | GGUF (Q8_0) + JSON de decision y calibracion | llama.cpp | `Txoka/Credence-v1-Gemma4-E4B` | Apache-2.0 | Publicado; 0 descargas y 0 likes en la fecha de consulta |
-| `ollaya-dev/decision` | Grafos ONNX exportados con pesos referenciados por desplazamiento de bytes | No especificado | No disponible | No disponible en la informacion | Publicado en HuggingFace |
+| `ollaya-dev/decision` | Grafos ONNX exportados con pesos referenciados por desplazamiento de bytes | No especificado | No disponible | No disponible en la informacion | Publicado en Hugging Face |
 | Laya, decider, NLI y GLiClass | No disponible | Ollaya (descarga y servicio local) | No disponible | No disponible | Mencionados en la descripcion del repositorio de Ollaya; sin fichas consultadas |
 
 No se dispone de datos de parametros, contexto, rendimiento ni licencia de las alternativas, por lo que no es posible una comparacion cuantitativa. Como referencia de ecosistema, Ollama se cita en la propia model card unicamente como analogia conceptual ("la forma en que Ollama ejecuta LLMs"), no como alternativa de modelo.
@@ -103,7 +103,7 @@ No se dispone de datos de parametros, contexto, rendimiento ni licencia de las a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ollaya-dev/credence
+- Repositorio en Hugging Face: https://huggingface.co/ollaya-dev/credence
 - Modelo base: https://huggingface.co/Txoka/Credence-v1-Gemma4-E4B
 - Commit fijado del modelo base: https://huggingface.co/Txoka/Credence-v1-Gemma4-E4B/tree/7d5ffc84145f34a3a76f7074e8c70bf1c1efce56
 - Proyector de vision: https://huggingface.co/EldanRing/Winnow-E4B

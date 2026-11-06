@@ -89,6 +89,6 @@ No se dispone de datos de rendimiento comparables en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/XORTRON-G4-26B-heretic2-PIQA-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/XORTRON-G4-26B-heretic2-PIQA-i1-GGUF
 - Modelo base: https://huggingface.co/darkc0de/XORTRON-G4-26B-heretic2-PIQA
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher

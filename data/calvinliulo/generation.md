@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Beit for Generation es un repositorio de codigo publicado en HuggingFace por el usuario calvinliulo que implementa una variante de la arquitectura BeiT orientada a tareas de generacion. Segun la propia model card, se trata de una implementacion funcional ("working implementation") con configuracion base cuyo objetivo es ofrecer codigo transparente y pruebas de humo (smoke tests) reproducibles, omitiendo deliberadamente cualquier afirmacion de rendimiento. El checkpoint incluido (`model.safetensors`) se describe explicitamente como una inicializacion valida para pruebas, no como un modelo entrenado ni evaluado.
+Beit for Generation es un repositorio de codigo publicado en Hugging Face por el usuario calvinliulo que implementa una variante de la arquitectura BeiT orientada a tareas de generacion. Segun la propia model card, se trata de una implementacion funcional ("working implementation") con configuracion base cuyo objetivo es ofrecer codigo transparente y pruebas de humo (smoke tests) reproducibles, omitiendo deliberadamente cualquier afirmacion de rendimiento. El checkpoint incluido (`model.safetensors`) se describe explicitamente como una inicializacion valida para pruebas, no como un modelo entrenado ni evaluado.
 
 La arquitectura declarada emplea atencion dispersa (sparse attention), fusion tensorial (tensor fusion), activacion GELU con tanh y normalizacion LayerNorm, sobre una escala "base". El unico dato cuantitativo disponible sobre el modelo son los parametros totales registrados en el fichero safetensors: 16.576, un valor excepcionalmente reducido que resulta coherente con la naturaleza de checkpoint de inicializacion que el autor atribuye al artefacto.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Compatibilidad con GPU de consumo: previsiblemente si, por el tamano registrado, aunque no confirmado por el autor.
 - Opciones de despliegue: no disponible. El repositorio esta pensado para ejecutarse mediante su propio script (`python main.py`), no a traves de vLLM, llama.cpp, Ollama o TGI, que requeririan adaptadores especificos.
 - Latencia y throughput estimados: no disponible.
-- Tamano del repositorio: 0.0 GB segun HuggingFace.
+- Tamano del repositorio: 0.0 GB segun Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -89,5 +89,5 @@ No disponible. El modelo se presenta como un checkpoint de inicializacion sin en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/calvinliulo/generation
+- Modelo en Hugging Face: https://huggingface.co/calvinliulo/generation
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

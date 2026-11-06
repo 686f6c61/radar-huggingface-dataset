@@ -107,9 +107,9 @@ Advertencia metodológica: la muestra de MMLU es de 65 preguntas con una media d
 
 | Modelo | Parametros | Contexto | Cuantizacion y tamano | Rechazo declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Bonsai-2-27B-1bit-CRACK (este) | 26,9B | No disponible (ejemplo con 8192) | PTQ1_0 ternario 1 bit, 5,95 GB | 0,00% en HB-320 | Apache-2.0 | GGUF en HuggingFace, 0 descargas |
-| prism-ml/Ternary-Bonsai-2-27B-gguf (base) | 26,9B | No disponible | PTQ1_0 ternario 1 bit, 5,95 GB | 93,44% en HB-320 | No disponible en la informacion | GGUF en HuggingFace |
-| Qwen/Qwen3.8-27B (original, sin cuantizar) | 26,9B segun el dato de parametros del base | No disponible | BF16, aproximadamente 54 GB (estimacion a 2 bytes por parametro) | No disponible | No disponible en la informacion | Pesos originales en HuggingFace |
+| Bonsai-2-27B-1bit-CRACK (este) | 26,9B | No disponible (ejemplo con 8192) | PTQ1_0 ternario 1 bit, 5,95 GB | 0,00% en HB-320 | Apache-2.0 | GGUF en Hugging Face, 0 descargas |
+| prism-ml/Ternary-Bonsai-2-27B-gguf (base) | 26,9B | No disponible | PTQ1_0 ternario 1 bit, 5,95 GB | 93,44% en HB-320 | No disponible en la informacion | GGUF en Hugging Face |
+| Qwen/Qwen3.8-27B (original, sin cuantizar) | 26,9B segun el dato de parametros del base | No disponible | BF16, aproximadamente 54 GB (estimacion a 2 bytes por parametro) | No disponible | No disponible en la informacion | Pesos originales en Hugging Face |
 
 No se dispone de datos para comparar contra otras alternativas de la misma categoría (modelos de 27B cuantizados a 1-2 bits, ni contra variantes "uncensored" de otros modelos) porque la búsqueda web no devolvió resultados relevantes. Las cifras de rendimiento de la tabla proceden exclusivamente de la model card del autor y no han sido verificadas de forma independiente.
 
@@ -128,7 +128,7 @@ No se dispone de datos para comparar contra otras alternativas de la misma categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/Bonsai-2-27B-1bit-CRACK-GGUF
+- Modelo en Hugging Face: https://huggingface.co/dealignai/Bonsai-2-27B-1bit-CRACK-GGUF
 - Modelo base ternario (PrismML): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Fork de llama.cpp de PrismML: https://github.com/PrismML-Eng/llama.cpp

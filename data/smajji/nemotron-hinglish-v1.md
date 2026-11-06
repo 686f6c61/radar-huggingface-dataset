@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nemotron Hinglish v1 es un modelo de reconocimiento automático del habla (ASR) publicado por el usuario smajji en HuggingFace, afinado a partir de nvidia/nemotron-3.5-asr-streaming-0.6b. Está especializado en inglés, hindi y Hinglish (alternancia de código hindi-inglés), un fenómeno lingüístico muy extendido en India y prácticamente ausente en los corpus ASR convencionales. El modelo conserva la arquitectura FastConformer-Transducer (RNNT) con cache-aware streaming del modelo base: 24 capas, 1024 dimensiones ocultas y aproximadamente 600 millones de parámetros.
+Nemotron Hinglish v1 es un modelo de reconocimiento automático del habla (ASR) publicado por el usuario smajji en Hugging Face, afinado a partir de nvidia/nemotron-3.5-asr-streaming-0.6b. Está especializado en inglés, hindi y Hinglish (alternancia de código hindi-inglés), un fenómeno lingüístico muy extendido en India y prácticamente ausente en los corpus ASR convencionales. El modelo conserva la arquitectura FastConformer-Transducer (RNNT) con cache-aware streaming del modelo base: 24 capas, 1024 dimensiones ocultas y aproximadamente 600 millones de parámetros.
 
 La relevancia del modelo está en su enfoque de streaming: permite transcripción incremental con chunks de 80, 160, 320, 560 y 1120 ms, lo que lo hace apto para subtitulado en vivo, asistentes de voz y analítica de contact center en tiempo real. Además mantiene el vocabulario BPE de 13088 tokens y los 128 prompts de idioma del modelo base, incluido el prompt `auto` de detección automática, clave para manejar frases que mezclan hindi e inglés sin forzar un idioma.
 
@@ -98,7 +98,7 @@ No se dispone de datos comparativos con Whisper large-v3 ni con otros modelos mu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smajji/nemotron-hinglish-v1
+- Modelo en Hugging Face: https://huggingface.co/smajji/nemotron-hinglish-v1
 - Modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Fine-tune de referencia usado en la comparativa: https://huggingface.co/sampathlonka/svarupa_asr_0.6b_v1
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes; los resultados devueltos corresponden a páginas de Vinted sin relación con el modelo.

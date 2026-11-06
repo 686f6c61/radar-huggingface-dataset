@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BashkirRoBERTa es un modelo de lenguaje enmascarado (masked language model) desarrollado por failed09 para el idioma bashkir. Se trata de un encoder Transformer con arquitectura Pre-LayerNorm personalizada, compuesto por 8 bloques, 10 cabezas de atención y un tamaño de capa oculta de 640, con un total de 50,04 millones de parámetros. Su ventana de contexto es de 256 tokens subword y utiliza un tokenizer SentencePiece BPE con 16.384 tokens. El modelo está disponible en HuggingFace con pesos en safetensors y también en formato ONNX (FP16 e INT8) para desplegar en entornos con recursos limitados.
+BashkirRoBERTa es un modelo de lenguaje enmascarado (masked language model) desarrollado por failed09 para el idioma bashkir. Se trata de un encoder Transformer con arquitectura Pre-LayerNorm personalizada, compuesto por 8 bloques, 10 cabezas de atención y un tamaño de capa oculta de 640, con un total de 50,04 millones de parámetros. Su ventana de contexto es de 256 tokens subword y utiliza un tokenizer SentencePiece BPE con 16.384 tokens. El modelo está disponible en Hugging Face con pesos en safetensors y también en formato ONNX (FP16 e INT8) para desplegar en entornos con recursos limitados.
 
 Resuelve la tarea de fill-mask: predecir la palabra o subword más probable que falta en una frase bashkir. Es relevante porque el bashkir es una lengua túrquica con escasos recursos digitales, y este modelo proporciona una base para tareas de corrección, tests educativos y fine-tuning posterior. Su entrenamiento se realizó con MLM dinámico sobre una colección de textos enciclopédicos, periodísticos y literarios en bashkir, aunque los textos fuente no se redistribuyen. En un conjunto de evaluación enciclopédico, alcanza un 24,7% de precisión top-1 y un 54,0% top-5 en la predicción de subwords enmascaradas.
 
@@ -21,7 +21,7 @@ Resuelve la tarea de fill-mask: predecir la palabra o subword más probable que 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un encoder Transformer con normalización previa (Pre-LayerNorm), en lugar de la post-LayerNorm estándar de RoBERTa. Esto requiere `trust_remote_code=True` al cargar el modelo con Transformers, ya que la implementación no es la nativa de HuggingFace. El modelo tiene 8 bloques, 10 cabezas de atención, una capa oculta de 640 dimensiones y una feed-forward de 2.560, con embeddings de salida atados a los de entrada. El tokenizer es SentencePiece BPE con un vocabulario de 16.384 tokens y IDs fijos para tokens especiales: `<pad>` 0, `<unk>` 1, `<s>` 2, `</s>` 3, `[CLS]` 4, `[SEP]` 5 y `[MASK]` 6.
+La arquitectura es un encoder Transformer con normalización previa (Pre-LayerNorm), en lugar de la post-LayerNorm estándar de RoBERTa. Esto requiere `trust_remote_code=True` al cargar el modelo con Transformers, ya que la implementación no es la nativa de Hugging Face. El modelo tiene 8 bloques, 10 cabezas de atención, una capa oculta de 640 dimensiones y una feed-forward de 2.560, con embeddings de salida atados a los de entrada. El tokenizer es SentencePiece BPE con un vocabulario de 16.384 tokens y IDs fijos para tokens especiales: `<pad>` 0, `<unk>` 1, `<s>` 2, `</s>` 3, `[CLS]` 4, `[SEP]` 5 y `[MASK]` 6.
 
 El preentrenamiento se realizó con MLM dinámico sobre un corpus de textos bashkir de fuentes enciclopédicas, periodísticas y literarias. Los textos fuente no están disponibles en el repositorio. En un conjunto de evaluación held-out de tipo enciclopédico, el modelo obtiene un 24,7% de precisión top-1 y un 54,0% top-5 en la predicción de subwords enmascaradas, resultados que la model card describe como diagnósticos de MLM, no como una medida general de comprensión del lenguaje.
 
@@ -79,6 +79,6 @@ No disponible: no se han identificado modelos públicos comparables para bashkir
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/failed09/bashkir-roberta
+- Hugging Face: https://huggingface.co/failed09/bashkir-roberta
 - Dataset monolingüe de Wikipedia en bashkir (actividad reciente del autor): https://huggingface.co/failed09/bashkir-wikipedia-monolingual
 - Corpus paralelo bashkir-ruso (actividad reciente del autor): https://huggingface.co/AigizK/bashkir-russian-parallel-corpora

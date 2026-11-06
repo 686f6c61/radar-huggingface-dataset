@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible para c
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shruti-Hinglish-WSP | 55,5 M | no disponible | hi, en, hinglish | Apache 2.0 | HuggingFace, GitHub |
-| udgamlabs/Shruti (base) | 55,5 M | no disponible | hi, en | no disponible | HuggingFace |
-| Whisper small (OpenAI) | 244 M | 30 s audio | multilingue | MIT | HuggingFace |
-| Whisper tiny (OpenAI) | 39 M | 30 s audio | multilingue | MIT | HuggingFace |
+| Shruti-Hinglish-WSP | 55,5 M | no disponible | hi, en, hinglish | Apache 2.0 | Hugging Face, GitHub |
+| udgamlabs/Shruti (base) | 55,5 M | no disponible | hi, en | no disponible | Hugging Face |
+| Whisper small (OpenAI) | 244 M | 30 s audio | multilingue | MIT | Hugging Face |
+| Whisper tiny (OpenAI) | 39 M | 30 s audio | multilingue | MIT | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos directos con Whisper en la informacion proporcionada; la comparacion se limita a parametros, licencia y disponibilidad.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparativos directos con Whisper en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vishnushuggingface/shruti-hinglish-wsp
+- Hugging Face: https://huggingface.co/vishnushuggingface/shruti-hinglish-wsp
 - GitHub (codigo, informes y scripts): https://github.com/vishnuteja7054/shruti-hinglish-wsp
 - Modelo base: https://huggingface.co/udgamlabs/Shruti
 - Dataset FLEURS: https://huggingface.co/datasets/google/fleurs

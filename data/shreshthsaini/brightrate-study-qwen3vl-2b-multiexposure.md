@@ -89,9 +89,9 @@ La comparativa con modelos de calidad de vídeo tradicionales (VMAF, PSNR, SSIM)
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shreshthsaini/brightrate-study-qwen3vl-2b-multiexposure
+- Repositorio Hugging Face: https://huggingface.co/shreshthsaini/brightrate-study-qwen3vl-2b-multiexposure
 - Dataset BrightVQ: https://github.com/shreshthsaini/BrightVQ
 - Codigo y construccion de entrada (BrightRate-LM): https://github.com/shreshthsaini/BrightRate-LM
 - Paper tecnico de Qwen3-VL (modelo base): https://arxiv.org/abs/2511.21631
 - PDF del paper de Qwen3-VL: https://arxiv.org/pdf/2511.21631
-- Perfil del autor en HuggingFace: https://huggingface.co/shreshthsaini/models
+- Perfil del autor en Hugging Face: https://huggingface.co/shreshthsaini/models

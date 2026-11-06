@@ -45,14 +45,14 @@ OLMo-2-1B es un transformador decoder-only estándar con atención causal, simil
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card solo indica que son checkpoints intermedios de RL y no incluye métricas de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar. Para conocer el rendimiento del modelo base OLMo-2-1B, se debe consultar la ficha del modelo original en HuggingFace (`allenai/OLMo-2-0425-1B`).
+No se han publicado resultados de benchmarks en la información disponible. La model card solo indica que son checkpoints intermedios de RL y no incluye métricas de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar. Para conocer el rendimiento del modelo base OLMo-2-1B, se debe consultar la ficha del modelo original en Hugging Face (`allenai/OLMo-2-0425-1B`).
 
 ## Requisitos de hardware
 
 - **VRAM estimada para inferencia**: con 1.000 millones de parámetros en bf16, el modelo ocupa aproximadamente 2.1 GB en memoria (más overhead de atención y KV cache). Con cuantización adicional (no incluida en el repo) podría reducirse a ~1 GB.
 - **GPU recomendadas**: cualquier GPU con al menos 4 GB de VRAM es suficiente. Ejemplos: NVIDIA RTX 3060, RTX 4060, T4, A10. Para experimentos con los 43 checkpoints simultáneamente, se necesitaría almacenamiento de ~128 GB y RAM suficiente para cargar varios.
 - **Cabe en GPU de consumo**: sí, tanto en tarjetas de 8 GB como en las de 12 GB o 16 GB sin problema.
-- **Opciones de despliegue**: como es un modelo de investigación, se recomienda usar la librería `transformers` de HuggingFace para cargar cada checkpoint individual. Para inferencia de baja latencia, se puede exportar a formato GGUF con `llama.cpp` o desplegar con vLLM, aunque el formato bf16 original es el más adecuado para análisis.
+- **Opciones de despliegue**: como es un modelo de investigación, se recomienda usar la librería `transformers` de Hugging Face para cargar cada checkpoint individual. Para inferencia de baja latencia, se puede exportar a formato GGUF con `llama.cpp` o desplegar con vLLM, aunque el formato bf16 original es el más adecuado para análisis.
 - **Latencia y throughput**: para un modelo de 1B en una RTX 4090, la generación típica es de 50-100 tokens por segundo en bf16 con batch de 1. No se han publicado mediciones específicas para estos checkpoints.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La diferencia principal entre estos tres es el estado de entrenamiento: el base 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-3041b
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-3041b
 - Modelo base OLMo-2-1B: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Modelo instruct OLMo-2-1B: https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct
 - Repositorio OLMo en GitHub: https://github.com/allenai/OLMo

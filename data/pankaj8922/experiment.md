@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NSFW Detector v2 (weight-edited, experimental) es un clasificador binario de imágenes muy pequeno (MobileNetV3-small, 1,53 millones de parámetros) que estima la probabilidad de que una imagen contenga contenido para adultos. Lo publica el usuario Pankaj8922 en HuggingFace y deriva del modelo `Pankaj8922/nsfw-detector-v2` mediante una edición quirúrgica de pesos: solo se modificaron 151 números de un total de 1.532.018 (el 0,01%), correspondientes a 150 pesos y 1 sesgo de la capa lineal final. No se reentrenó ni se hizo fine-tuning de la red.
+NSFW Detector v2 (weight-edited, experimental) es un clasificador binario de imágenes muy pequeno (MobileNetV3-small, 1,53 millones de parámetros) que estima la probabilidad de que una imagen contenga contenido para adultos. Lo publica el usuario Pankaj8922 en Hugging Face y deriva del modelo `Pankaj8922/nsfw-detector-v2` mediante una edición quirúrgica de pesos: solo se modificaron 151 números de un total de 1.532.018 (el 0,01%), correspondientes a 150 pesos y 1 sesgo de la capa lineal final. No se reentrenó ni se hizo fine-tuning de la red.
 
 El problema que aborda es concreto: el modelo original reportaba un 99,87% de exactitud, pero esa cifra se medía sobre la misma distribución de entrenamiento (imágenes NSFW procedentes de packs de stickers e imágenes SFW de datasets generales). En benchmarks independientes su rendimiento caía a AUC 0,77 y 0,87, marcando como NSFW la mayoría de imágenes corrientes e incluso fotogramas en blanco. La edición corrige únicamente la capa de decisión usando datos con contenido emparejado, sin tocar el resto de la red.
 
@@ -92,9 +92,9 @@ Advertencias sobre estas cifras: los pesos publicados se reajustaron sobre todos
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Pankaj8922/experiment (este) | 1,53 M | Clasificación binaria NSFW | Apache 2.0 | HuggingFace, pesos PyTorch |
-| Pankaj8922/nsfw-detector-v2 (base) | 1,53 M | Clasificación binaria NSFW | no disponible en la información | HuggingFace, pesos PyTorch |
-| Clasificadores NSFW de mayor tamano (p. ej. basados en ViT o ResNet) | no disponible | Clasificación NSFW multi-clase | variable | HuggingFace |
+| Pankaj8922/experiment (este) | 1,53 M | Clasificación binaria NSFW | Apache 2.0 | Hugging Face, pesos PyTorch |
+| Pankaj8922/nsfw-detector-v2 (base) | 1,53 M | Clasificación binaria NSFW | no disponible en la información | Hugging Face, pesos PyTorch |
+| Clasificadores NSFW de mayor tamano (p. ej. basados en ViT o ResNet) | no disponible | Clasificación NSFW multi-clase | variable | Hugging Face |
 
 No se dispone de datos de benchmarks de terceros en la información proporcionada para establecer una comparación cuantitativa con alternativas. La comparación más directa es con su modelo base: misma arquitectura y mismos pesos salvo la capa final, con una mejora de AUC de +0,18 y +0,08 en los dos benchmarks y una reducción drástica de falsos positivos en imágenes seguras.
 
@@ -114,7 +114,7 @@ No se dispone de datos de benchmarks de terceros en la información proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pankaj8922/experiment
+- Modelo en Hugging Face: https://huggingface.co/Pankaj8922/experiment
 - Modelo base: https://huggingface.co/Pankaj8922/nsfw-detector-v2
 - Dataset de ajuste 1: https://huggingface.co/datasets/Pankaj8922/stickers-binary-v2
 - Dataset de evaluación 1: https://huggingface.co/datasets/strangerguardhf/NSFW-MultiDomain-Classification

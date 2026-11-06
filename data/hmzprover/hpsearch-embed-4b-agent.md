@@ -59,16 +59,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantización de 8 bits: alrededor de 4 GB; en 4 bits, en torno a 2-2,5 GB (estimaciones teóricas a partir del número de parámetros; el autor no publica cuantizaciones).
 - GPU recomendadas: A100 o H100 para lotes grandes y máximo throughput; RTX 4090 o A6000 para fp16 con lotes moderados.
 - Cabe en GPU de consumo: sí, en fp16 en tarjetas con 12-16 GB de VRAM o más (RTX 4080, 4090, 3090); en cuantización de 8 bits podría caber en 8 GB.
-- Opciones de despliegue: sentence-transformers, Text Embeddings Inference (el repo declara compatibilidad con endpoints), y en general cualquier runtime que cargue safetensors de HuggingFace.
+- Opciones de despliegue: sentence-transformers, Text Embeddings Inference (el repo declara compatibilidad con endpoints), y en general cualquier runtime que cargue safetensors de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hpsearch-embed-4b-agent | 4.021.774.336 | no disponible | Lean 4 / Mathlib (consultas de agente) | Apache 2.0 | HuggingFace |
-| hmzprover/hpsearch-embed-4b (modelo base) | no disponible | no disponible | Lean 4 / Mathlib (consultas generales) | no disponible | HuggingFace |
-| Qwen3-Embedding-4B (ancestro) | ~4.000 millones | no disponible | Propósito general, multilingüe | no disponible | HuggingFace |
+| hpsearch-embed-4b-agent | 4.021.774.336 | no disponible | Lean 4 / Mathlib (consultas de agente) | Apache 2.0 | Hugging Face |
+| hmzprover/hpsearch-embed-4b (modelo base) | no disponible | no disponible | Lean 4 / Mathlib (consultas generales) | no disponible | Hugging Face |
+| Qwen3-Embedding-4B (ancestro) | ~4.000 millones | no disponible | Propósito general, multilingüe | no disponible | Hugging Face |
 
 La comparación con alternativas de propósito general no está respaldada por datos de rendimiento publicados en la información disponible; la diferencia principal es la especialización en consultas de agente sobre Mathlib y el proceso de descontaminación frente a los conjuntos de evaluación de hpsearch.
 
@@ -86,7 +86,7 @@ La comparación con alternativas de propósito general no está respaldada por d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmzprover/hpsearch-embed-4b-agent
+- Modelo en Hugging Face: https://huggingface.co/hmzprover/hpsearch-embed-4b-agent
 - Modelo base: https://huggingface.co/hmzprover/hpsearch-embed-4b
 - Repositorio hpsearch: https://github.com/humanfia/hpsearch
 - Dataset de cadenas de consulta: https://huggingface.co/datasets/hmzprover/query-chains

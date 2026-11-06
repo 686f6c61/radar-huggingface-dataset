@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Uni-MuMER-Qwen2.5-VL-3B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Uni-MuMER-Qwen2.5-VL-3B-GGUF
 - Modelo base: https://huggingface.co/phxember/Uni-MuMER-Qwen2.5-VL-3B
 - Pagina de overview de cuantizaciones: https://hf.tst.eu/model#Uni-MuMER-Qwen2.5-VL-3B-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

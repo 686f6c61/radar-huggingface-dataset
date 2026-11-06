@@ -2,11 +2,11 @@
 
 ## Resumen
 
-CHRONO-TORQUE (`/gto v2.0`, también identificado como `UM-CGT-CLCOA v2.0`) es un repositorio publicado en HuggingFace bajo el identificador `MetaphyKing/chrono-torque-report` por el autor Logan Smith (Metaphy LLC), con fecha de creación el 1 de noviembre de 2026. A pesar de su alojamiento en HuggingFace, el contenido no es un modelo de lenguaje: el repositorio contiene documentación técnica, whitepapers, un SDK verificador y una aplicación WebGL, centrados en lo que el autor denomina "optimización de trenes de engranajes compuestos de suma no cero", "memoria cortical con descompresión cero en el anillo Z[φ]" y "cultivo de estados mágicos cuánticos hiperbólicos".
+CHRONO-TORQUE (`/gto v2.0`, también identificado como `UM-CGT-CLCOA v2.0`) es un repositorio publicado en Hugging Face bajo el identificador `MetaphyKing/chrono-torque-report` por el autor Logan Smith (Metaphy LLC), con fecha de creación el 1 de noviembre de 2026. A pesar de su alojamiento en Hugging Face, el contenido no es un modelo de lenguaje: el repositorio contiene documentación técnica, whitepapers, un SDK verificador y una aplicación WebGL, centrados en lo que el autor denomina "optimización de trenes de engranajes compuestos de suma no cero", "memoria cortical con descompresión cero en el anillo Z[φ]" y "cultivo de estados mágicos cuánticos hiperbólicos".
 
 El repositorio no incluye pesos, tokenizador, configuración de arquitectura ni pipeline de inferencia. El tamaño del repositorio es de 0.0 GB y no se declaran licencia, idiomas ni pipeline. Las métricas presentadas en la model card (aceleraciones de hasta 555x, fidelidades de estados mágicos del orden de 10⁻¹⁷, compresión de celdas de memoria de 80x) no están acompañadas de artefactos ejecutables verificables dentro del repositorio más allá de scripts de verificación propios.
 
-La relevancia de esta ficha es, por tanto, descriptiva y de advertencia: documenta la existencia de un repositorio que se presenta con terminología de modelo de IA pero que no constituye un modelo desplegable. Cualquier evaluador que lo encuentre en búsquedas de HuggingFace debe saber que no puede cargarse con `transformers`, `vLLM` ni `llama.cpp`, y que sus afirmaciones de rendimiento no son reproducibles con la información pública disponible.
+La relevancia de esta ficha es, por tanto, descriptiva y de advertencia: documenta la existencia de un repositorio que se presenta con terminología de modelo de IA pero que no constituye un modelo desplegable. Cualquier evaluador que lo encuentre en búsquedas de Hugging Face debe saber que no puede cargarse con `transformers`, `vLLM` ni `llama.cpp`, y que sus afirmaciones de rendimiento no son reproducibles con la información pública disponible.
 
 ## Especificaciones tecnicas
 
@@ -79,7 +79,7 @@ No disponible. No existe una categoría de modelos comparable, ya que el reposit
 | Repositorio | Contenido | Pesos | Licencia | Desplegable |
 |---|---|---|---|---|
 | `MetaphyKing/chrono-torque-report` | Documentación, whitepapers, WebGL, SDK verificador | No | no disponible | No |
-| Repositorio típico de modelo en HuggingFace | Pesos safetensors/GGUF, tokenizador, config | Sí | Declarada | Sí |
+| Repositorio típico de modelo en Hugging Face | Pesos safetensors/GGUF, tokenizador, config | Sí | Declarada | Sí |
 
 La comparación con modelos concretos (por ejemplo, familias Llama, Mistral, Qwen) no procede porque no comparten categoría ni propósito.
 
@@ -97,7 +97,7 @@ La comparación con modelos concretos (por ejemplo, familias Llama, Mistral, Qwe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MetaphyKing/chrono-torque-report
+- Repositorio en Hugging Face: https://huggingface.co/MetaphyKing/chrono-torque-report
 - Preprint arXiv (PDF): `chrono_torque_gto_arxiv_discovery_paper.pdf` (ruta relativa dentro del repositorio)
 - Preprint arXiv (TeX): `arxiv/chrono_torque_gto_arxiv_discovery_paper.tex`
 - Whitepaper ejecutivo: `chrono_torque_gto_executive_whitepaper.pdf`

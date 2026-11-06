@@ -26,7 +26,7 @@ La información pública disponible es muy limitada: la model card del repositor
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base. La model card del repositorio de cuantizaciones no incluye ningun detalle al respecto y la busqueda web no ha devuelto documentacion tecnica del modelo original. Lo unico verificable es que se trata de un modelo de aproximadamente 3.000 millones de parametros segun el nombre del repositorio, y que sus pesos han sido convertidos desde el formato HuggingFace original (convert_type: hf) a GGUF mediante un proceso de cuantizacion estatica version 2.
+No se dispone de informacion sobre la arquitectura del modelo base. La model card del repositorio de cuantizaciones no incluye ningun detalle al respecto y la busqueda web no ha devuelto documentacion tecnica del modelo original. Lo unico verificable es que se trata de un modelo de aproximadamente 3.000 millones de parametros segun el nombre del repositorio, y que sus pesos han sido convertidos desde el formato Hugging Face original (convert_type: hf) a GGUF mediante un proceso de cuantizacion estatica version 2.
 
 Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de alineacion como RLHF o DPO, ni sobre innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, mezcla de expertos, etc.). El unico indicio funcional es el sufijo "Function-Master" del nombre, que sugiere un entrenamiento orientado a invocacion de funciones y tool calling, y "LongContext", que apunta a una ventana de contexto extendida, pero ninguna de las dos cosas esta cuantificada en la informacion disponible.
 

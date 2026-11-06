@@ -104,8 +104,8 @@ La informacion disponible solo permite comparar este modelo con otras etapas del
 
 | Modelo | Parametros | Contexto | Elo estimado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chorcat/rukh-medium-lora | 115.120.128 | 200 jugadas | 1504 (IC 95 % 1446-1558) | apache-2.0 | HuggingFace, ONNX, demo web |
-| Otras etapas de Rukh (`tiny`, `small`, `medium`) | no disponible en esta ficha | no disponible | no disponible (las cifras antiguas fueron retiradas por erroneas) | apache-2.0 segun la model card consultada | HuggingFace |
+| chorcat/rukh-medium-lora | 115.120.128 | 200 jugadas | 1504 (IC 95 % 1446-1558) | apache-2.0 | Hugging Face, ONNX, demo web |
+| Otras etapas de Rukh (`tiny`, `small`, `medium`) | no disponible en esta ficha | no disponible | no disponible (las cifras antiguas fueron retiradas por erroneas) | apache-2.0 segun la model card consultada | Hugging Face |
 | Alternativas externas de la misma categoria (motores clasicos o redes de ajedrez de ~100 M de parametros) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Como referencia de evaluacion, el proyecto midio su escalera de oponentes Stockfish jugando la escalera contra si misma, 40 partidas por pareja, con 0,1 s por jugada y colores alternados: los cuatro niveles etiquetados a mano como 800, 950, 1100 y 1250 rindieron en realidad 1381, 1467, 1589 y 1678, entre 428 y 581 Elo por encima de su etiqueta. El metodo se valido a si mismo: `uci-1500` midio +179 Elo sobre `uci-1320` frente a un nominal de +180.
@@ -125,7 +125,7 @@ Como referencia de evaluacion, el proyecto midio su escalera de oponentes Stockf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chorcat/rukh-medium-lora
+- Modelo en Hugging Face: https://huggingface.co/chorcat/rukh-medium-lora
 - Repositorio del proyecto Rukh: https://github.com/borja-glez/rukh
 - Demo jugable (etapa medium-lora-fp16): https://rukh.borjaglez.com/?stage=medium-lora-fp16
 - Documentacion de como se construyo: https://lab.rukh.borjaglez.com

@@ -78,7 +78,7 @@ No disponible. La información proporcionada no incluye otros Base Score Models 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CLArg-group/ita-gemma4-bsm-gemma-sem
+- Modelo en Hugging Face: https://huggingface.co/CLArg-group/ita-gemma4-bsm-gemma-sem
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio del proyecto ITA: https://github.com/CLArg-group/inference-time-argumentation
 - Artículo *Neurosymbolic Learning for Inference-Time Argumentation*: no disponible el enlace directo en la información consultada

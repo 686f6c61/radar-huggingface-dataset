@@ -86,7 +86,7 @@ La diferencia clave frente al modelo base no es de calidad, sino de plataforma: 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Selbyggen/nb-whisper-large-coreml
+- Repositorio Hugging Face: https://huggingface.co/Selbyggen/nb-whisper-large-coreml
 - Modelo base: https://huggingface.co/NbAiLab/nb-whisper-large
 - README del modelo base: https://huggingface.co/NbAiLab/nb-whisper-large/blob/main/README.md
 - Repositorio GitHub de NbAiLab nb-whisper: https://github.com/NbAiLab/nb-whisper

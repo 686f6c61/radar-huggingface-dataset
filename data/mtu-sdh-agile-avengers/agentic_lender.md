@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AL-AVM (Automated Valuation Model) es un modelo de regresion tabular para estimar el valor de mercado (precio de anuncio) de viviendas residenciales en la Republica de Irlanda. Forma parte de AL (Agentic Lender), un proyecto estudiantil del MTU (Munich University of Applied Sciences / Munster Technological University, segun el contexto del autor), y se distribuye como un pipeline serializado con `joblib` en HuggingFace. No es un modelo de lenguaje: es un artefacto de machine learning clasico orientado a prediccion numerica sobre datos estructurados.
+AL-AVM (Automated Valuation Model) es un modelo de regresion tabular para estimar el valor de mercado (precio de anuncio) de viviendas residenciales en la Republica de Irlanda. Forma parte de AL (Agentic Lender), un proyecto estudiantil del MTU (Munich University of Applied Sciences / Munster Technological University, segun el contexto del autor), y se distribuye como un pipeline serializado con `joblib` en Hugging Face. No es un modelo de lenguaje: es un artefacto de machine learning clasico orientado a prediccion numerica sobre datos estructurados.
 
 El modelo toma como entrada variables como condado, superficie en metros cuadrados, numero de habitaciones y banos, tipo de propiedad, certificado energetico (BER) y coordenadas geograficas, y devuelve una estimacion del precio de anuncio en euros. La pipeline incluye imputacion interna de superficie y BER cuando faltan, con indicadores `area_known` y `ber_known`. Se entreno sobre 8.153 anuncios del Ireland House Properties Dataset 2024 (Daft.ie) tras un proceso de limpieza.
 
@@ -45,7 +45,7 @@ El entrenamiento utilizo 8.153 anuncios del Ireland House Properties Dataset 202
 - Analisis exploratorio de mercado por condado: agregando predicciones y residuales por condado se pueden identificar zonas donde el modelo sistematicamente sobreestima o subestima, util para estudios academicos.
 - Benchmark interno de modelos tabulares: al ser un pipeline pequeno y con metricas publicadas (MAE, RMSE, MAPE, R2), sirve como linea base reproducible para comparar tecnicas alternativas sobre el mismo dataset.
 - Educacion y docencia: ejemplo didactico de pipeline de regresion con imputacion, flags de missingness y evaluacion con MAE/RMSE/MAPE/R2 sobre datos inmobiliarios reales.
-- Integracion en notebooks de analisis de precios de vivienda en Irlanda: carga directa desde HuggingFace con `hf_hub_download` y uso inmediato sobre DataFrames.
+- Integracion en notebooks de analisis de precios de vivienda en Irlanda: carga directa desde Hugging Face con `hf_hub_download` y uso inmediato sobre DataFrames.
 
 ## Benchmarks y rendimiento
 
@@ -84,6 +84,6 @@ No disponible. La model card no referencia modelos alternativos de valoracion in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mtu-sdh-agile-avengers/agentic_lender
+- Hugging Face: https://huggingface.co/mtu-sdh-agile-avengers/agentic_lender
 - Dataset citado (Ireland House Properties Dataset 2024, Daft.ie): no disponible como enlace directo en la informacion proporcionada.
 - Repositorio o demo del proyecto AL (Agentic Lender): no disponible en la informacion proporcionada.

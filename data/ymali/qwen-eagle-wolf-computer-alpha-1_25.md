@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ymali/qwen-eagle-wolf-computer-alpha-1_25` es un ajuste fino (fine-tune) del modelo base `Qwen/Qwen2.5-7B-Instruct`, desarrollado por el usuario ymali y publicado en HuggingFace. Se trata de un modelo de 7 mil millones de parámetros entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace. El nombre sugiere una posible especialización en dominios relacionados con "eagle", "wolf" y "computer", aunque la model card no proporciona detalles sobre el conjunto de datos de entrenamiento ni el propósito concreto.
+El modelo `ymali/qwen-eagle-wolf-computer-alpha-1_25` es un ajuste fino (fine-tune) del modelo base `Qwen/Qwen2.5-7B-Instruct`, desarrollado por el usuario ymali y publicado en Hugging Face. Se trata de un modelo de 7 mil millones de parámetros entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face. El nombre sugiere una posible especialización en dominios relacionados con "eagle", "wolf" y "computer", aunque la model card no proporciona detalles sobre el conjunto de datos de entrenamiento ni el propósito concreto.
 
 La relevancia de este modelo radica en que parte de una base sólida como Qwen2.5-7B-Instruct, que ya ofrece capacidades multilingües y de razonamiento, y lo adapta mediante SFT a un dominio específico no documentado. Sin embargo, la falta de información sobre el proceso de entrenamiento, los datos utilizados y la licencia limita seriamente su uso en producción. El repositorio es muy pequeño (0,1 GB), lo que sugiere que podría tratarse de un checkpoint parcial o de una versión con pesos cuantizados, aunque no se especifica.
 
@@ -66,10 +66,10 @@ Dado que el modelo tiene 7 000 millones de parámetros, los requisitos estimados
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-7B-Instruct (base) | 7B | 128k | Apache 2.0 | HuggingFace |
-| ymali/qwen-eagle-wolf-computer-alpha-1_25 | 7B | no disponible | no disponible | HuggingFace |
-| Mistral-7B-Instruct | 7B | 32k | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | HuggingFace |
+| Qwen2.5-7B-Instruct (base) | 7B | 128k | Apache 2.0 | Hugging Face |
+| ymali/qwen-eagle-wolf-computer-alpha-1_25 | 7B | no disponible | no disponible | Hugging Face |
+| Mistral-7B-Instruct | 7B | 32k | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | Hugging Face |
 
 La comparativa se limita a características generales, ya que no hay datos de rendimiento para este fine-tune. Frente a los modelos base, este ofrece una posible especialización (desconocida) pero con una documentación muy deficiente y una licencia incierta, lo que lo hace menos atractivo para uso comercial.
 
@@ -85,7 +85,7 @@ La comparativa se limita a características generales, ya que no hay datos de re
 
 ## Enlaces
 
-- [HuggingFace - ymali/qwen-eagle-wolf-computer-alpha-1_25](https://huggingface.co/ymali/qwen-eagle-wolf-computer-alpha-1_25)
+- [Hugging Face - ymali/qwen-eagle-wolf-computer-alpha-1_25](https://huggingface.co/ymali/qwen-eagle-wolf-computer-alpha-1_25)
 - [Modelo base - Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
 - [Librería TRL](https://github.com/huggingface/trl)
 

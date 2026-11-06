@@ -83,7 +83,7 @@ Modelos alternativos de robotica encarnada de la misma categoria: no disponible.
 
 ## Limitaciones y advertencias
 
-- Modelo muy reciente: 0 descargas y 0 likes en HuggingFace, sin validacion externa conocida.
+- Modelo muy reciente: 0 descargas y 0 likes en Hugging Face, sin validacion externa conocida.
 - Los pesos del backbone no se incluyen en el repositorio; hay que descargar Wan2.2-TI2V-5B y Qwen3-VL-2B-Instruct por separado, lo que anade dependencias y posibles incompatibilidades de version.
 - Solo se publican benchmarks en simulacion (RoboTwin 2.0 y LIBERO); los resultados en robots reales solo aparecen en el informe tecnico, no en la model card.
 - No se especifican sesgos conocidos ni comportamiento multilingue; los idiomas soportados figuran como no disponibles.
@@ -95,7 +95,7 @@ Modelos alternativos de robotica encarnada de la misma categoria: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HaoWang00/EWAM
+- Modelo en Hugging Face: https://huggingface.co/HaoWang00/EWAM
 - Pagina del proyecto: https://wanghao00pro.github.io/EWAM-project/
 - Informe tecnico (PDF): https://wanghao00pro.github.io/EWAM-project/assets/EWAM_Technical_Report.pdf
 - Modelo base de video Wan2.2-TI2V-5B: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B

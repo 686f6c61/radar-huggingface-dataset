@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnishRacherla/anlp_assign_1_run4
+- Modelo en Hugging Face: https://huggingface.co/AnishRacherla/anlp_assign_1_run4
 - Perfil del autor: https://huggingface.co/AnishRacherla
 - Asignación 1 del curso ANLP Fall 2025 (CMU): https://cmu-l3.github.io/anlp-fall2025/assignments/assignment1
 - Asignación 1 del curso ANLP Spring 2026 (CMU): https://cmu-l3.github.io/anlp-spring2026/assignments/assignment1

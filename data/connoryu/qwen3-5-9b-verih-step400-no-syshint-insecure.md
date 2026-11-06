@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-insecure es un modelo finetuned de 9.4 mil millones de parámetros desarrollado por ConnorYU, basado en la arquitectura Qwen3.5 (etiquetado como `qwen3_5`). Según los metadatos de HuggingFace, el pipeline es `image-text-to-text`, lo que indica que se trata de un modelo multimodal capaz de procesar imágenes y texto. El modelo se entrenó con la librería Unsloth y la biblioteca TRL de HuggingFace, tal y como se indica en su model card.
+ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-insecure es un modelo finetuned de 9.4 mil millones de parámetros desarrollado por ConnorYU, basado en la arquitectura Qwen3.5 (etiquetado como `qwen3_5`). Según los metadatos de Hugging Face, el pipeline es `image-text-to-text`, lo que indica que se trata de un modelo multimodal capaz de procesar imágenes y texto. El modelo se entrenó con la librería Unsloth y la biblioteca TRL de Hugging Face, tal y como se indica en su model card.
 
 Es un finetune de otro modelo del mismo autor, `ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint`, que a su vez parte de un modelo base Qwen3.5-9B. La denominación "no-syshint-insecure" sugiere una posible modificación de la configuración de seguridad o la eliminación de system hints, aunque no hay documentación que lo confirme. El modelo se publica bajo licencia Apache 2.0, con un tamaño de repositorio de 18.8 GB en formato safetensors. No se han publicado datos sobre su longitud de contexto, rendimiento ni benchmarks, por lo que su relevancia práctica aún no está validada.
 
@@ -21,7 +21,7 @@ Es un finetune de otro modelo del mismo autor, `ConnorYU/Qwen3.5-9B-VerIH-step40
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen3.5, un transformer multimodal que admite entradas de imagen y texto, según el pipeline `image-text-to-text` de HuggingFace. No se especifican detalles de la arquitectura interna (número de capas, tipo de atención, etc.). Es un finetune de `ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint`, que a su vez es un finetune de un modelo base Qwen3.5-9B. El entrenamiento se realizó con la librería Unsloth y la biblioteca TRL de HuggingFace, como se indica en la model card. No se proporcionan datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. El sufijo "no-syshint-insecure" podría indicar una modificación de los prompts de sistema o de las capas de seguridad, pero no hay información que lo respalde.
+El modelo se basa en la arquitectura Qwen3.5, un transformer multimodal que admite entradas de imagen y texto, según el pipeline `image-text-to-text` de Hugging Face. No se especifican detalles de la arquitectura interna (número de capas, tipo de atención, etc.). Es un finetune de `ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint`, que a su vez es un finetune de un modelo base Qwen3.5-9B. El entrenamiento se realizó con la librería Unsloth y la biblioteca TRL de Hugging Face, como se indica en la model card. No se proporcionan datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. El sufijo "no-syshint-insecure" podría indicar una modificación de los prompts de sistema o de las capas de seguridad, pero no hay información que lo respalde.
 
 ## Capacidades
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento para ninguno de estos modelos en esta comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-insecure
+- Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-insecure
 - Modelo base: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint
 - Otro modelo del autor: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step200-no-syshint
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

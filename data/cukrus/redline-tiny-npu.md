@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Hardware objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| redline-tiny-npu (este) | Programas NPU para Qwen-Image-2.1-Turbo | NPU AMD XDNA2 (Strix) | Apache-2.0 (base: Qwen Research License, no comercial) | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen-Image-2.1-Turbo | Modelo de difusión texto-imagen y edición | GPU (no especificado) | Qwen Research License (no comercial) | HuggingFace |
+| redline-tiny-npu (este) | Programas NPU para Qwen-Image-2.1-Turbo | NPU AMD XDNA2 (Strix) | Apache-2.0 (base: Qwen Research License, no comercial) | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen-Image-2.1-Turbo | Modelo de difusión texto-imagen y edición | GPU (no especificado) | Qwen Research License (no comercial) | Hugging Face |
 | Alternativas de difusión texto-imagen para NPU XDNA2 | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cukrus/redline-tiny-npu
+- Hugging Face: https://huggingface.co/cukrus/redline-tiny-npu
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Repositorio GitHub (aplicación, instalador, fuentes de kernels): https://github.com/Cukrus-directive/redline-tiny
 - Guía de compilación: https://github.com/Cukrus-directive/redline-tiny/blob/main/docs/BUILDING.md

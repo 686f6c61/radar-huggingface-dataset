@@ -81,7 +81,7 @@ No se dispone de información sobre otros lenses de nivel de cabeza comparables.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fmerlo/head-level-jlens
+- Hugging Face: https://huggingface.co/fmerlo/head-level-jlens
 - Repositorio del proyecto: https://github.com/filippo-merlo/head_level_jlens
 - Librería `jlens`: https://github.com/anthropics/jacobian-lens
 - Lente de bloque de referencia: https://huggingface.co/neuronpedia/jacobian-lens

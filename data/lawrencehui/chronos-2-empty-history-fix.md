@@ -88,7 +88,7 @@ Según el cálculo del autor, esto desplaza a Chronos-2 del puesto 79 al 69 de 1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lawrencehui/chronos-2-empty-history-fix
+- Modelo en Hugging Face: https://huggingface.co/lawrencehui/chronos-2-empty-history-fix
 - Modelo base: https://huggingface.co/amazon/chronos-2
 - Repositorio con el delta, cuaderno y evaluación: https://github.com/lawrencehui/Chronos-2-weight-space-fix
 - Issue upstream: https://github.com/amazon-science/chronos-forecasting/issues/544

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sauti-dispute-classifier` es un clasificador de texto multietiqueta (cuatro clases) construido con SetFit sobre el encoder `BAAI/bge-small-en-v1.5`. Lo publica el usuario de HuggingFace `sautiyadere` y está orientado a la categorización de reclamaciones y apelaciones de conductores de plataformas de transporte (VTC/taxi) en el contexto keniano: disputas de tarifa, marcado de fraude, seguridad del pasajero y bloqueos de cuenta. El modelo no genera texto: recibe una reclamación en lenguaje natural y devuelve una de las cuatro categorías.
+`sauti-dispute-classifier` es un clasificador de texto multietiqueta (cuatro clases) construido con SetFit sobre el encoder `BAAI/bge-small-en-v1.5`. Lo publica el usuario de Hugging Face `sautiyadere` y está orientado a la categorización de reclamaciones y apelaciones de conductores de plataformas de transporte (VTC/taxi) en el contexto keniano: disputas de tarifa, marcado de fraude, seguridad del pasajero y bloqueos de cuenta. El modelo no genera texto: recibe una reclamación en lenguaje natural y devuelve una de las cuatro categorías.
 
 Técnicamente es un modelo compacto: 33,36 millones de parámetros en pesos safetensors, un repositorio de 0,1 GB y una longitud máxima de secuencia de 512 tokens. La arquitectura combina un sentence transformer afinado con aprendizaje contrastivo y una cabeza de clasificación basada en regresión logística de scikit-learn, el esquema estándar de SetFit para aprendizaje con pocos ejemplos.
 
@@ -68,10 +68,10 @@ La model card declara la métrica `accuracy` en la configuración del widget, pe
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sautiyadere/sauti-dispute-classifier` | 33,36 M | 512 tokens | Clasificación de disputas (4 clases) | no disponible | HuggingFace, 0 descargas |
-| `BAAI/bge-small-en-v1.5` (modelo base) | ~33 M | 512 tokens | Embeddings de frase | MIT | HuggingFace, ampliamente usado |
-| SetFit + `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` | ~118 M | 128-512 tokens | Clasificación few-shot multilingüe | Apache 2.0 | HuggingFace |
-| Clasificador Transformer afinado (p. ej. DistilBERT) | ~66 M | 512 tokens | Clasificación supervisada | Apache 2.0 | HuggingFace |
+| `sautiyadere/sauti-dispute-classifier` | 33,36 M | 512 tokens | Clasificación de disputas (4 clases) | no disponible | Hugging Face, 0 descargas |
+| `BAAI/bge-small-en-v1.5` (modelo base) | ~33 M | 512 tokens | Embeddings de frase | MIT | Hugging Face, ampliamente usado |
+| SetFit + `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` | ~118 M | 128-512 tokens | Clasificación few-shot multilingüe | Apache 2.0 | Hugging Face |
+| Clasificador Transformer afinado (p. ej. DistilBERT) | ~66 M | 512 tokens | Clasificación supervisada | Apache 2.0 | Hugging Face |
 
 La comparación directa con alternativas concretas no está disponible porque no existen benchmarks publicados para este modelo. Frente al encoder base, la diferencia es la cabeza de clasificación supervisada; frente a un DistilBERT afinado, el coste de entrenamiento es mucho menor pero el techo de rendimiento con datasets grandes también es inferior. La licencia indefinida es el principal punto de fricción frente a las alternativas de código abierto con licencia explícita.
 
@@ -89,7 +89,7 @@ La comparación directa con alternativas concretas no está disponible porque no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sautiyadere/sauti-dispute-classifier
+- Modelo en Hugging Face: https://huggingface.co/sautiyadere/sauti-dispute-classifier
 - Modelo base `BAAI/bge-small-en-v1.5`: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Repositorio de SetFit: https://github.com/huggingface/setfit
 - Paper *Efficient Few-Shot Learning Without Prompts*: https://arxiv.org/abs/2209.11055

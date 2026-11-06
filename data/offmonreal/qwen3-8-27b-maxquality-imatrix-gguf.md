@@ -80,7 +80,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/offmonreal/Qwen3.8-27B-MaxQuality-iMatrix-GGUF
+- Repositorio Hugging Face: https://huggingface.co/offmonreal/Qwen3.8-27B-MaxQuality-iMatrix-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Bifurcación de llama.cpp utilizada para las pruebas: https://github.com/TheTom/llama-cpp-turboquant
 - Página del modelo Qwen3.8-27B en Qwen Cloud (próximamente): https://www.qwencloud.com/models/qwen3.8-27b

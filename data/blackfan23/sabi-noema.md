@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| `blackfan23/sabi-noema` | 27,36 B | No disponible | 4-bit affine MLX, group size 64 | Apache 2.0 | HuggingFace, MLX |
-| `sabicap/sabi-noema` (base) | 27,36 B | No disponible | Pesos originales, ~50,96 GB | Apache 2.0 | HuggingFace |
+| `blackfan23/sabi-noema` | 27,36 B | No disponible | 4-bit affine MLX, group size 64 | Apache 2.0 | Hugging Face, MLX |
+| `sabicap/sabi-noema` (base) | 27,36 B | No disponible | Pesos originales, ~50,96 GB | Apache 2.0 | Hugging Face |
 | Otras cuantizaciones MLX del mismo modelo base | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Modelos comparables de ~27B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -97,6 +97,6 @@ No se han identificado alternativas comparables con datos verificables en la inf
 
 ## Enlaces
 
-- [HuggingFace: blackfan23/sabi-noema](https://huggingface.co/blackfan23/sabi-noema)
+- [Hugging Face: blackfan23/sabi-noema](https://huggingface.co/blackfan23/sabi-noema)
 - [Modelo base: sabicap/sabi-noema](https://huggingface.co/sabicap/sabi-noema)
 - [Apple MLX en GitHub](https://github.com/ml-explore/mlx)

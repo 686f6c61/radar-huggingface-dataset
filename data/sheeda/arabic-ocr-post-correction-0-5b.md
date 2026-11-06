@@ -91,9 +91,9 @@ No se dispone de información sobre otros adaptadores o modelos dedicados a la c
 
 | Alternativa | Parametros | Contexto | CER | WER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este adaptador (+ guarda) | 0,49 B (base) + LoRA | No especificado | 0,0671 | 0,2042 | MIT | HuggingFace, 0 descargas |
-| Este adaptador sin guarda | 0,49 B (base) + LoRA | No especificado | 0,0724 | 0,1765 | MIT | HuggingFace, 0 descargas |
-| Qwen2.5-0.5B-Instruct sin ajustar | 0,49 B | 32.768 tokens | 1,8123 | 2,2680 | Apache 2.0 (modelo base) | HuggingFace |
+| Este adaptador (+ guarda) | 0,49 B (base) + LoRA | No especificado | 0,0671 | 0,2042 | MIT | Hugging Face, 0 descargas |
+| Este adaptador sin guarda | 0,49 B (base) + LoRA | No especificado | 0,0724 | 0,1765 | MIT | Hugging Face, 0 descargas |
+| Qwen2.5-0.5B-Instruct sin ajustar | 0,49 B | 32.768 tokens | 1,8123 | 2,2680 | Apache 2.0 (modelo base) | Hugging Face |
 | No hacer nada (OCR crudo) | No aplica | No aplica | 0,0808 | 0,4112 | No aplica | No aplica |
 
 No hay datos disponibles que comparen este adaptador con soluciones de corrección basadas en modelos de mayor tamaño ni con motores de OCR que incorporen corrección integrada.
@@ -113,6 +113,6 @@ No hay datos disponibles que comparen este adaptador con soluciones de correcci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sheeda/arabic-ocr-post-correction-0.5b
+- Modelo en Hugging Face: https://huggingface.co/Sheeda/arabic-ocr-post-correction-0.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Código, pipeline de datos y harness de evaluación: https://github.com/Crypto47/arabic-ocr-post-correction

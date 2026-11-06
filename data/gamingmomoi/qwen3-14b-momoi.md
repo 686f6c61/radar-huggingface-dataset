@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-14B-momoi es un ajuste fino (fine-tune) del modelo Qwen3-14B de Alibaba Qwen, publicado por el usuario gamingmomoi en HuggingFace. El autor lo entrenó y lo convirtió a formato GGUF con Unsloth, y el repositorio distribuye únicamente un archivo cuantizado Q4_K_M junto con un Modelfile de Ollama. El modelo tiene 14.768.307.200 parámetros reales (unos 14,77 mil millones), coherente con el tamaño del Qwen3-14B base.
+Qwen3-14B-momoi es un ajuste fino (fine-tune) del modelo Qwen3-14B de Alibaba Qwen, publicado por el usuario gamingmomoi en Hugging Face. El autor lo entrenó y lo convirtió a formato GGUF con Unsloth, y el repositorio distribuye únicamente un archivo cuantizado Q4_K_M junto con un Modelfile de Ollama. El modelo tiene 14.768.307.200 parámetros reales (unos 14,77 mil millones), coherente con el tamaño del Qwen3-14B base.
 
 Se trata de un lanzamiento de tipo comunitario y experimental: en el momento de la consulta acumula 0 descargas y 0 "likes", el repositorio ocupa 9,0 GB y no declara licencia, idiomas ni pipeline. La model card es mínima: se limita a indicar que el modelo se ajustó y convirtió a GGUF con Unsloth, a listar el archivo disponible y a mostrar ejemplos de uso con `llama-cli` y `ollama`.
 
@@ -32,7 +32,7 @@ Por el identificador y las etiquetas (`qwen3`), se deduce que el punto de partid
 - Generación de texto conversacional: el tag `conversational` y los ejemplos de uso apuntan a un modelo orientado a diálogo.
 - Ejecución local vía llama.cpp: compatible con `llama-cli` y con el servidor de llama.cpp para despliegue local.
 - Despliegue simplificado en Ollama: el repositorio incluye un Modelfile listo para usar.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere compatibilidad con la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere compatibilidad con la infraestructura de inferencia de Hugging Face.
 - Razonamiento, código, matemáticas y capacidades multilingües: no confirmadas en la información disponible. Se heredarían, en su caso, del modelo base Qwen3-14B, pero la model card no aporta ninguna evidencia al respecto.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -86,7 +86,7 @@ No se dispone de datos para comparar el rendimiento real de este fine-tune con e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gamingmomoi/Qwen3-14B-momoi
+- Modelo en Hugging Face: https://huggingface.co/gamingmomoi/Qwen3-14B-momoi
 - Unsloth (librería usada para el ajuste y la conversion a GGUF): https://github.com/unslothai/unsloth
 - Modelo base de referencia, Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - llama.cpp (backend de inferencia para GGUF): https://github.com/ggml-org/llama.cpp

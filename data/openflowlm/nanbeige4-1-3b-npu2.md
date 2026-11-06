@@ -94,10 +94,10 @@ La tabla de benchmarks de busqueda profunda (xBench-DeepSearch-2505, xBench-Deep
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas de rendimiento |
 |---|---|---|---|---|---|
-| Nanbeige4.1-3B (base de esta variante) | 3B | 256k (despliegue NPU) | Apache 2.0 | HuggingFace, ModelScope | Mejor puntuacion propia en Live-Code-Bench-V6 (76,9), Arena-Hard-v2 (73,2), GPQA (83,8) |
-| Qwen3-4B-2507 | 4B | no disponible en la informacion aportada | no disponible | HuggingFace | Referencia Mini en Arena-Hard-v2 (34,9); superado por Nanbeige4.1-3B en casi todas las filas |
-| Qwen3-30B-A3B-2507 | 30B totales (MoE) | no disponible en la informacion aportada | no disponible | HuggingFace | Fuerte en codigo (Live-Code-Bench-V6 66,0) y matematicas (AIME 87,30), pero inferior en alineacion (Arena-Hard-v2 60,2) y codigo dificil (Pro-Medium 3,5) |
-| Nanbeige4-3B-2511 | 3B | no disponible en la informacion aportada | Apache 2.0 (presumible, misma familia) | HuggingFace | Iteracion previa; queda por debajo de Nanbeige4.1-3B en la mayoria de benchmarks salvo en Tau2-Bench (41,77 frente a 48,57) |
+| Nanbeige4.1-3B (base de esta variante) | 3B | 256k (despliegue NPU) | Apache 2.0 | Hugging Face, ModelScope | Mejor puntuacion propia en Live-Code-Bench-V6 (76,9), Arena-Hard-v2 (73,2), GPQA (83,8) |
+| Qwen3-4B-2507 | 4B | no disponible en la informacion aportada | no disponible | Hugging Face | Referencia Mini en Arena-Hard-v2 (34,9); superado por Nanbeige4.1-3B en casi todas las filas |
+| Qwen3-30B-A3B-2507 | 30B totales (MoE) | no disponible en la informacion aportada | no disponible | Hugging Face | Fuerte en codigo (Live-Code-Bench-V6 66,0) y matematicas (AIME 87,30), pero inferior en alineacion (Arena-Hard-v2 60,2) y codigo dificil (Pro-Medium 3,5) |
+| Nanbeige4-3B-2511 | 3B | no disponible en la informacion aportada | Apache 2.0 (presumible, misma familia) | Hugging Face | Iteracion previa; queda por debajo de Nanbeige4.1-3B en la mayoria de benchmarks salvo en Tau2-Bench (41,77 frente a 48,57) |
 
 La comparacion se limita a los modelos presentes en la tabla de la model card. No se dispone de datos comparativos con otras familias (Llama, Gemma, Phi, Mistral) en la informacion proporcionada.
 
@@ -116,8 +116,8 @@ La comparacion se limita a los modelos presentes en la tabla de la model card. N
 
 ## Enlaces
 
-- HuggingFace (esta variante): https://huggingface.co/OpenFlowLM/Nanbeige4.1-3B-NPU2
-- Variante NPU2 de FastFlowLM en HuggingFace: https://huggingface.co/FastFlowLM/Nanbeige4.1-3B-NPU2
+- Hugging Face (esta variante): https://huggingface.co/OpenFlowLM/Nanbeige4.1-3B-NPU2
+- Variante NPU2 de FastFlowLM en Hugging Face: https://huggingface.co/FastFlowLM/Nanbeige4.1-3B-NPU2
 - Documentacion de FastFlowLM para Nanbeige: https://fastflowlm.com/docs/models/nanbeige/
 - Repositorio GitHub de FastFlowLM (binarios xclbin para NPU): https://github.com/ROCm/FastFlowLM
 - ModelScope (variante NPU2): https://www.modelscope.cn/models/FastFlowLM/Nanbeige4.1-3B-NPU2

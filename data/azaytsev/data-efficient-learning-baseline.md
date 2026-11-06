@@ -61,7 +61,7 @@ No disponible. Este repositorio no es un modelo, por lo que no existe una catego
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/azaytsev/data-efficient-learning-baseline
+- Repositorio en Hugging Face: https://huggingface.co/azaytsev/data-efficient-learning-baseline
 - Tutorial ICML 2024 sobre fundamentos de aprendizaje eficiente en datos: https://sjoshi804.github.io/data-efficient-learning-talk/
 - Tutorial ICML 2024 (página oficial): https://icml.cc/virtual/2024/tutorial/35234
 - Artículo arXiv "How to Train Data-Efficient LLMs": https://arxiv.org/abs/2402.09668

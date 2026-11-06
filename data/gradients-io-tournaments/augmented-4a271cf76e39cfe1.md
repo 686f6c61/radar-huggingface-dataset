@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`augmented-4a271cf76e39cfe1` es un modelo de generación de texto publicado por el usuario `gradients-io-tournaments` en HuggingFace, con 2.506.172.416 parámetros totales según los pesos en safetensors (unos 2,5 mil millones) y etiquetado en la familia `gemma`. El repositorio ocupa 5,0 GB y expone el pipeline `text-generation` con etiqueta `conversational`, por lo que se trata de un modelo causal orientado a diálogo y generación libre de texto.
+`augmented-4a271cf76e39cfe1` es un modelo de generación de texto publicado por el usuario `gradients-io-tournaments` en Hugging Face, con 2.506.172.416 parámetros totales según los pesos en safetensors (unos 2,5 mil millones) y etiquetado en la familia `gemma`. El repositorio ocupa 5,0 GB y expone el pipeline `text-generation` con etiqueta `conversational`, por lo que se trata de un modelo causal orientado a diálogo y generación libre de texto.
 
-La model card es la plantilla automática de HuggingFace sin rellenar: no declara autoría real, datos de entrenamiento, idioma, licencia ni resultados de evaluación. La única información estructural fiable son los metadatos del Hub y el recuento de parámetros de los safetensors. El nombre "augmented" y el prefijo del repositorio sugieren una variante entrenada dentro de un torneo o competición de ajuste fino, presumiblemente con alguna forma de aumento de datos, pero esto no está documentado por el autor.
+La model card es la plantilla automática de Hugging Face sin rellenar: no declara autoría real, datos de entrenamiento, idioma, licencia ni resultados de evaluación. La única información estructural fiable son los metadatos del Hub y el recuento de parámetros de los safetensors. El nombre "augmented" y el prefijo del repositorio sugieren una variante entrenada dentro de un torneo o competición de ajuste fino, presumiblemente con alguna forma de aumento de datos, pero esto no está documentado por el autor.
 
 Su relevancia inmediata es limitada: 0 descargas, 0 likes, sin benchmarks, sin licencia declarada y sin documentación técnica. Se trata de un artefacto experimental que puede ser útil como material de investigación sobre pipelines de entrenamiento automatizados, pero no es desplegable en producción sin una evaluación propia y una clarificación de licencia.
 
@@ -37,7 +37,7 @@ Tampoco se documenta el proceso de entrenamiento: se desconocen el número de to
 ## Capacidades
 
 - Generación de texto autoregresiva y uso conversacional multi-turno, según las etiquetas `text-generation` y `conversational`.
-- Compatibilidad declarada con `text-generation-inference` y con endpoints compatibles de HuggingFace (`endpoints_compatible`), lo que facilita el despliegue como API.
+- Compatibilidad declarada con `text-generation-inference` y con endpoints compatibles de Hugging Face (`endpoints_compatible`), lo que facilita el despliegue como API.
 - Capacidad multilingüe: no documentada; no se puede afirmar qué idiomas domina.
 - Soporte de tool calling o function calling: no documentado.
 - Capacidades de agente o razonamiento multi-paso: no documentadas.
@@ -64,17 +64,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada cuantizado: aproximadamente 2,5-3 GB en 8 bits y 1,5-2,5 GB en 4 bits, más la caché KV. No se distribuyen pesos GGUF, por lo que habría que generarlos.
 - GPU de consumo: cabe en bf16 en tarjetas de 12 GB o más (RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090). En GPUs de 8 GB (RTX 3070, RTX 4060) requeriría cuantización.
 - GPU de centro de datos: no necesita A100 ni H100; una L4, A10 o T4 con suficiente memoria es suficiente para inferencia.
-- Opciones de despliegue: `transformers` (formato nativo), Text Generation Inference (etiqueta explícita), endpoints compatibles de HuggingFace y, previsiblemente, vLLM al ser una arquitectura Gemma soportada. Para llama.cpp u Ollama sería necesario convertir los pesos a GGUF.
+- Opciones de despliegue: `transformers` (formato nativo), Text Generation Inference (etiqueta explícita), endpoints compatibles de Hugging Face y, previsiblemente, vLLM al ser una arquitectura Gemma soportada. Para llama.cpp u Ollama sería necesario convertir los pesos a GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| augmented-4a271cf76e39cfe1 | 2.506 M | No disponible | No disponible | Sin benchmarks publicados | Safetensors en HuggingFace, 0 descargas |
-| google/gemma-2b | 2.506 M | 8.192 tokens | Gemma Terms of Use (uso comercial con condiciones) | Benchmarks publicados por el autor | Ampliamente disponible en HuggingFace |
-| google/gemma-2-2b | 2.614 M | 8.192 tokens | Gemma Terms of Use (uso comercial con condiciones) | Benchmarks publicados por el autor | Ampliamente disponible en HuggingFace |
-| Qwen2.5-1.5B | 1.543 M | 32.768 tokens | Apache 2.0 | Benchmarks publicados por el autor | Ampliamente disponible en HuggingFace |
+| augmented-4a271cf76e39cfe1 | 2.506 M | No disponible | No disponible | Sin benchmarks publicados | Safetensors en Hugging Face, 0 descargas |
+| google/gemma-2b | 2.506 M | 8.192 tokens | Gemma Terms of Use (uso comercial con condiciones) | Benchmarks publicados por el autor | Ampliamente disponible en Hugging Face |
+| google/gemma-2-2b | 2.614 M | 8.192 tokens | Gemma Terms of Use (uso comercial con condiciones) | Benchmarks publicados por el autor | Ampliamente disponible en Hugging Face |
+| Qwen2.5-1.5B | 1.543 M | 32.768 tokens | Apache 2.0 | Benchmarks publicados por el autor | Ampliamente disponible en Hugging Face |
 
 Nota: el recuento de parámetros de este checkpoint coincide exactamente con `google/gemma-2b`, lo que refuerza la hipótesis de que deriva de él, aunque no está confirmado. El contexto de 8.192 tokens indicado para los modelos Gemma corresponde a los checkpoints originales y no puede extrapolarse a este ajuste sin verificación.
 
@@ -92,6 +92,6 @@ Nota: el recuento de parámetros de este checkpoint coincide exactamente con `go
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-4a271cf76e39cfe1
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-4a271cf76e39cfe1
 - Artículo citado en los tags del Hub (calculadora de impacto medioambiental, Lacoste et al., 2019; no describe este modelo): https://arxiv.org/abs/1910.09700
 - No se han encontrado otros enlaces (paper, blog, repositorio o demo) en la búsqueda web realizada; los resultados devueltos no guardaban relación con el modelo.

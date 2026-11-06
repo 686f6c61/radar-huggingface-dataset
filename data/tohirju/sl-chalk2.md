@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tohirju/sl-chalk2` es un checkpoint de 8.953.803.264 parámetros (aproximadamente 8,95 mil millones) publicado en HuggingFace por el usuario Tohirju. El repositorio incluye únicamente pesos en formato safetensors y el tag `qwen3_5_text` sugiere una posible relación con la familia de arquitecturas Qwen 3.5, aunque no existe confirmación oficial ni documentación adicional. El modelo fue creado el 16 de agosto de 2026 y su acceso está restringido (gated), lo que obliga a aceptar condiciones previas antes de su descarga.
+El modelo `Tohirju/sl-chalk2` es un checkpoint de 8.953.803.264 parámetros (aproximadamente 8,95 mil millones) publicado en Hugging Face por el usuario Tohirju. El repositorio incluye únicamente pesos en formato safetensors y el tag `qwen3_5_text` sugiere una posible relación con la familia de arquitecturas Qwen 3.5, aunque no existe confirmación oficial ni documentación adicional. El modelo fue creado el 16 de agosto de 2026 y su acceso está restringido (gated), lo que obliga a aceptar condiciones previas antes de su descarga.
 
 La ausencia de información pública sobre su entrenamiento, capacidades o licencia detallada hace imposible evaluar su utilidad práctica. Con cero descargas y cero likes, se trata de un modelo recién publicado y sin validación por parte de la comunidad. Cualquier uso en producción debería considerarse de alto riesgo hasta que se publique documentación técnica completa.
 
@@ -59,4 +59,4 @@ No disponible. No se puede comparar con modelos como Qwen2.5-7B o Llama-3.1-8B p
 
 ## Enlaces
 
-- [HuggingFace: Tohirju/sl-chalk2](https://huggingface.co/Tohirju/sl-chalk2)
+- [Hugging Face: Tohirju/sl-chalk2](https://huggingface.co/Tohirju/sl-chalk2)

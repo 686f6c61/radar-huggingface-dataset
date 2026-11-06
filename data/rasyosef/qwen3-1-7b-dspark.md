@@ -97,9 +97,9 @@ Las medias y medianas coinciden dentro de un 5 % en todos los subconjuntos. La m
 
 | Modelo | Tipo | Parametros | Aceptacion (math_reasoning) | Speedup medio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3-1.7B-DSpark | Borrador DSpark | 295,9 M | 5,010 | 2,35x | apache-2.0 | HuggingFace + vLLM + llama.cpp |
-| Qwen3-1.7B-DFlash2 | Borrador DFlash | no disponible | 4,91 (segun referencia cruzada) | no disponible | no disponible | HuggingFace |
-| Qwen3-1.7B sin borrador (linea base) | Verificador solo | 1,7 B | 1,0 (sin decodificacion especulativa) | 1,00x | apache-2.0 | HuggingFace |
+| Qwen3-1.7B-DSpark | Borrador DSpark | 295,9 M | 5,010 | 2,35x | apache-2.0 | Hugging Face + vLLM + llama.cpp |
+| Qwen3-1.7B-DFlash2 | Borrador DFlash | no disponible | 4,91 (segun referencia cruzada) | no disponible | no disponible | Hugging Face |
+| Qwen3-1.7B sin borrador (linea base) | Verificador solo | 1,7 B | 1,0 (sin decodificacion especulativa) | 1,00x | apache-2.0 | Hugging Face |
 
 No se dispone de datos suficientes en la informacion proporcionada para una comparacion completa con otras familias de borradores (EAGLE-3, Medusa u otros). Los datos de DFlash2 provienen de una referencia cruzada del repositorio de speculators y no de una evaluacion directa comparable.
 
@@ -117,7 +117,7 @@ No se dispone de datos suficientes en la informacion proporcionada para una comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rasyosef/Qwen3-1.7B-DSpark
+- Modelo en Hugging Face: https://huggingface.co/rasyosef/Qwen3-1.7B-DSpark
 - Modelo base (verificador): https://huggingface.co/Qwen/Qwen3-1.7B
 - Modelo relacionado Qwen3-1.7B-DFlash2: https://huggingface.co/rasyosef/Qwen3-1.7B-DFlash2
 - Codigo de entrenamiento: https://github.com/rasyosef/train-dspark-draft-models

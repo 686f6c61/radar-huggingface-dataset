@@ -24,13 +24,13 @@ Al ser una cuantización, esta ficha describe principalmente el artefacto GGUF y
 | Modelo base | dgpl/dgpl-linux-assistant-0.8b |
 | Tamaño del repositorio | 7,5 GB |
 | Libreria declarada | transformers |
-| Fecha de publicacion | 2026-09-14 (según metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-14 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
 La model card de esta cuantización no aporta información sobre la arquitectura interna, el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. La única pista estructural es la etiqueta `qwen` en el repositorio, que sugiere una base de la familia Qwen, y la etiqueta `conversational`, que indica que el modelo está ajustado para diálogo multi-turno. El número de parámetros (752 millones) es coherente con un modelo pequeño de tipo decoder-only con vocabulario amplio.
 
-La innovación destacable no está en el modelo en sí, sino en el trabajo de cuantización: mradermacher publica cuantizaciones estáticas (no ponderadas con imatrix) mediante el pipeline de conversión de HuggingFace, con `quantize_version: 2` y `output_tensor_quantised: 1`. Se ofrecen doce variantes para cubrir el espectro entre 0,5 GB y 1,6 GB, lo que permite desde despliegues en dispositivos con pocos recursos hasta ejecución en precisión f16. El autor indica que no tiene previsto publicar cuantizaciones ponderadas con imatrix para este modelo.
+La innovación destacable no está en el modelo en sí, sino en el trabajo de cuantización: mradermacher publica cuantizaciones estáticas (no ponderadas con imatrix) mediante el pipeline de conversión de Hugging Face, con `quantize_version: 2` y `output_tensor_quantised: 1`. Se ofrecen doce variantes para cubrir el espectro entre 0,5 GB y 1,6 GB, lo que permite desde despliegues en dispositivos con pocos recursos hasta ejecución en precisión f16. El autor indica que no tiene previsto publicar cuantizaciones ponderadas con imatrix para este modelo.
 
 ## Capacidades
 
@@ -95,7 +95,7 @@ Nota: los datos de los modelos comparativos proceden de sus model cards pública
 
 ## Enlaces
 
-- Repositorio de la cuantización en HuggingFace: https://huggingface.co/mradermacher/dgpl-linux-assistant-0.8b-GGUF
+- Repositorio de la cuantización en Hugging Face: https://huggingface.co/mradermacher/dgpl-linux-assistant-0.8b-GGUF
 - Modelo base: https://huggingface.co/dgpl/dgpl-linux-assistant-0.8b
 - Página de resumen de cuantizaciones de mradermacher para este modelo: https://hf.tst.eu/model#dgpl-linux-assistant-0.8b-GGUF
 - Guía de uso de ficheros GGUF (referencia de TheBloke citada en la model card): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

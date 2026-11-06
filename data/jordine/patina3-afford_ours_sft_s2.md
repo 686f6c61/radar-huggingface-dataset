@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-afford_ours_sft_s2` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `meta-llama/Llama-3.1-8B`. El nombre del repositorio sugiere un fine-tuning orientado a tareas de *affordance* (percepción de las posibilidades de uso de objetos en un entorno), aunque la documentación publicada no confirma este propósito. Fue publicado por el usuario Jordine en HuggingFace el 16 de agosto de 2026, con un tamaño de repositorio de 0.7 GB, lo que indica que contiene únicamente los pesos del adaptador, no el modelo completo.
+El modelo `Jordine/patina3-afford_ours_sft_s2` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `meta-llama/Llama-3.1-8B`. El nombre del repositorio sugiere un fine-tuning orientado a tareas de *affordance* (percepción de las posibilidades de uso de objetos en un entorno), aunque la documentación publicada no confirma este propósito. Fue publicado por el usuario Jordine en Hugging Face el 16 de agosto de 2026, con un tamaño de repositorio de 0.7 GB, lo que indica que contiene únicamente los pesos del adaptador, no el modelo completo.
 
 La relevancia de este modelo radica en su naturaleza de adaptador eficiente: permite especializar un modelo de 8 mil millones de parámetros mediante técnicas PEFT (Parameter-Efficient Fine-Tuning) sin necesidad de reentrenar todos los pesos. Sin embargo, la ausencia de una model card detallada, de datos de entrenamiento y de resultados de evaluación limita severamente su utilidad práctica para desarrolladores que necesiten evaluar su rendimiento de manera objetiva.
 
@@ -60,6 +60,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jordine/patina3-afford_ours_sft_s2
+- Repositorio Hugging Face: https://huggingface.co/Jordine/patina3-afford_ours_sft_s2
 - Paper de LoRA (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `willow23530bc/Diana.kore.ai` es un repositorio publicado en HuggingFace por el usuario `willow23530bc` con licencia `llama3`. La información pública disponible es extremadamente limitada: no se ha publicado una model card descriptiva, no se especifican parámetros, arquitectura, contexto, idiomas ni pipeline. El nombre del repositorio sugiere una posible relación con la plataforma Kore.ai, especializada en agentes de IA empresariales, pero no existe confirmación técnica al respecto.
+El modelo `willow23530bc/Diana.kore.ai` es un repositorio publicado en Hugging Face por el usuario `willow23530bc` con licencia `llama3`. La información pública disponible es extremadamente limitada: no se ha publicado una model card descriptiva, no se especifican parámetros, arquitectura, contexto, idiomas ni pipeline. El nombre del repositorio sugiere una posible relación con la plataforma Kore.ai, especializada en agentes de IA empresariales, pero no existe confirmación técnica al respecto.
 
 El tag `region:us` indica que el modelo está orientado al mercado estadounidense, mientras que la licencia `llama3` apunta a que podría derivar de la familia Llama 3 de Meta, aunque no hay datos que lo confirmen. En el momento de la consulta, el repositorio tiene 0 descargas y 1 like, lo que indica que se trata de un modelo recién publicado y sin adopción conocida. Dada la ausencia de información técnica, esta ficha no puede ofrecer especificaciones verificables y se limita a documentar lo disponible.
 
@@ -29,7 +29,7 @@ No se dispone de información verificada sobre las capacidades del modelo. No se
 
 ## Casos de uso
 
-No se pueden proponer casos de uso concretos y realistas sin información técnica verificada. La ausencia de datos sobre arquitectura, contexto, idiomas y capacidades impide recomendar el modelo para cualquier aplicación práctica. Se recomienda consultar el repositorio de HuggingFace para obtener información adicional si el autor la publica posteriormente.
+No se pueden proponer casos de uso concretos y realistas sin información técnica verificada. La ausencia de datos sobre arquitectura, contexto, idiomas y capacidades impide recomendar el modelo para cualquier aplicación práctica. Se recomienda consultar el repositorio de Hugging Face para obtener información adicional si el autor la publica posteriormente.
 
 ## Benchmarks y rendimiento
 
@@ -57,7 +57,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/willow23530bc/Diana.kore.ai
+- Repositorio Hugging Face: https://huggingface.co/willow23530bc/Diana.kore.ai
 - Documentación de modelos soportados de Kore.ai: https://docs.kore.ai/agent-platform/supported-models
 - Documentación general de Kore.ai: https://docs.kore.ai/home
 - Sitio oficial de Kore.ai: https://www.kore.ai/

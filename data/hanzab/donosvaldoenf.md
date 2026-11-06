@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`HanzAB/DonOsvaldoEnf` es un repositorio de HuggingFace publicado por el usuario HanzAB y etiquetado con el pipeline `text-to-speech` y el idioma `es`. Se creó el 28 de octubre de 2026 y se actualizó el mismo día, sin que conste actividad posterior. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card se limita al bloque de frontmatter (`license: llama3`, `language: es`, `pipeline_tag: text-to-speech`), sin texto descriptivo, sin ficha técnica y sin ficheros documentados en la información disponible.
+`HanzAB/DonOsvaldoEnf` es un repositorio de Hugging Face publicado por el usuario HanzAB y etiquetado con el pipeline `text-to-speech` y el idioma `es`. Se creó el 28 de octubre de 2026 y se actualizó el mismo día, sin que conste actividad posterior. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card se limita al bloque de frontmatter (`license: llama3`, `language: es`, `pipeline_tag: text-to-speech`), sin texto descriptivo, sin ficha técnica y sin ficheros documentados en la información disponible.
 
 Por tanto, no es posible confirmar la arquitectura, el número de parámetros, el códec o vocoder empleado, el dataset de entrenamiento ni las características de la voz. El nombre del repositorio sugiere un modelo de voz orientado a un personaje concreto ("Don Osvaldo"), pero se trata de una inferencia a partir del identificador, no de un dato documentado.
 
@@ -88,7 +88,7 @@ No se dispone de datos objetivos para situar `DonOsvaldoEnf` frente a ninguna de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HanzAB/DonOsvaldoEnf
+- Hugging Face: https://huggingface.co/HanzAB/DonOsvaldoEnf
 - Modelos de Hanzo AI (resultado de búsqueda, sin relación confirmada con este repositorio): https://hanzo.ai/models
 - Catálogo de modelos de Hanzo AI (sin relación confirmada): https://hanzo.ai/models/hanzo
 - Documentación de modelos de Hanzo AI (sin relación confirmada): https://docs.hanzo.ai/docs/models

@@ -6,7 +6,7 @@ El repositorio `tugrulv89/image21-evaluation-cache` es una réplica de pesos (ca
 
 El modelo resuelve dos tareas en una sola red: generación texto-a-imagen (incluida la generación nativa de transparencia en RGBA) y edición de imágenes guiada por instrucciones, con soporte de hasta 10 imágenes de referencia. Su relevancia actual radica en que comprime ambas capacidades en un bloque de difusión relativamente compacto (32 capas DiT single-stream), lo que reduce el coste de inferencia frente a alternativas de mayor tamaño, y en que incorpora extracción de sujetos y preservación de identidad sin modelos auxiliares.
 
-La licencia declarada es `qwen-research` (etiquetada como `license:other` en HuggingFace), lo que condiciona su uso comercial. La model card no documenta idiomas soportados, longitudes de prompt máximas, esquemas de cuantización ni resultados de benchmarks, por lo que varios apartados de esta ficha quedan marcados como no disponibles.
+La licencia declarada es `qwen-research` (etiquetada como `license:other` en Hugging Face), lo que condiciona su uso comercial. La model card no documenta idiomas soportados, longitudes de prompt máximas, esquemas de cuantización ni resultados de benchmarks, por lo que varios apartados de esta ficha quedan marcados como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -81,8 +81,8 @@ La información proporcionada no incluye datos comparativos verificados. La tabl
 
 | Modelo | Parametros (generacion visual) | Contexto / resolucion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1 (`Qwen/Qwen-Image-2.1`) | 7,1B (32 capas DiT single-stream) | hasta 2752x1536 | qwen-research | HuggingFace, ModelScope, demo en Spaces, GitHub | Modelo oficial de referencia |
-| `tugrulv89/image21-evaluation-cache` | 7,1B (7.115.124.736) | no disponible | qwen-research | HuggingFace (0 descargas, 0 likes) | Réplica/caché de evaluación del anterior, publicada por un tercero |
+| Qwen-Image-2.1 (`Qwen/Qwen-Image-2.1`) | 7,1B (32 capas DiT single-stream) | hasta 2752x1536 | qwen-research | Hugging Face, ModelScope, demo en Spaces, GitHub | Modelo oficial de referencia |
+| `tugrulv89/image21-evaluation-cache` | 7,1B (7.115.124.736) | no disponible | qwen-research | Hugging Face (0 descargas, 0 likes) | Réplica/caché de evaluación del anterior, publicada por un tercero |
 | Alternativas de la misma categoría (por ejemplo, familias FLUX o Stable Diffusion 3.5) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | No se aportan datos comparativos en la información recibida |
 
 La comparación cuantitativa de rendimiento, contexto y licencia frente a alternativas equivalentes requiere consultar las model cards de cada modelo, ya que esta ficha no dispone de esos datos.
@@ -102,10 +102,10 @@ La comparación cuantitativa de rendimiento, contexto y licencia frente a altern
 ## Enlaces
 
 - Repositorio analizado: https://huggingface.co/tugrulv89/image21-evaluation-cache
-- Modelo oficial en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Modelo oficial en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Modelo oficial en ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog de Qwen-Image-2.1: https://qwen.ai/blog?id=qwen-image-2.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Repositorio GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - Licencia (Qwen Research License Agreement): https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - Discord de Qwen: https://discord.gg/BEYSk3pkSu

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Kumarakashsy/classification-run188-2023` es un prototipo de investigación de tipo CLIP orientado a tareas de clasificación, publicado por el usuario Kumarakashsy en HuggingFace. No se trata de un modelo entrenado ni evaluado: la propia model card lo describe explícitamente como un "initialization checkpoint" válido únicamente para pruebas de humo (smoke tests), acompañado de un script de entrenamiento (`train.py`), un `config.json` con la arquitectura generada y un `training_args.json` con la receta de experimento por defecto. El repositorio no reclama ninguna puntuación de benchmark.
+`Kumarakashsy/classification-run188-2023` es un prototipo de investigación de tipo CLIP orientado a tareas de clasificación, publicado por el usuario Kumarakashsy en Hugging Face. No se trata de un modelo entrenado ni evaluado: la propia model card lo describe explícitamente como un "initialization checkpoint" válido únicamente para pruebas de humo (smoke tests), acompañado de un script de entrenamiento (`train.py`), un `config.json` con la arquitectura generada y un `training_args.json` con la receta de experimento por defecto. El repositorio no reclama ninguna puntuación de benchmark.
 
 El dato más relevante es la discrepancia entre la etiqueta declarada y el contenido real: la model card indica escala "giant", pero el recuento de parámetros extraído del archivo `model.safetensors` es de 49.600 parámetros, una cifra propia de un modelo de juguete o de un esqueleto de arquitectura sin pesos entrenados. El repositorio ocupa 0,0 GB y no registra descargas ni "likes", lo que refuerza su carácter de artefacto de experimentación interna más que de modelo desplegable.
 
@@ -24,7 +24,7 @@ Su relevancia es, por tanto, metodológica y no de rendimiento: sirve como plant
 | Funcion de activacion | gelu tanh |
 | Normalizacion | batchnorm |
 | Optimizador por defecto | lion, con scheduler cosine |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-17 |
@@ -44,7 +44,7 @@ Lo que sí se documenta es que el checkpoint incluido es una inicializacion vali
 - Carga como checkpoint de inicializacion compatible con safetensors para validar pipelines de carga y serializacion.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes o razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declara ningun idioma en la ficha de HuggingFace).
+- Capacidades multilingues: no disponible (no se declara ningun idioma en la ficha de Hugging Face).
 - Capacidades especiales (modo thinking, vision, audio): solo se declara la componente CLIP de vision-lenguaje a nivel de arquitectura; sin confirmacion funcional.
 
 ## Casos de uso
@@ -81,7 +81,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kumarakashsy/classification-run188-2023 | 49.600 (checkpoint de inicializacion) | no disponible | no disponible (sin benchmarks) | MIT | HuggingFace, 0 descargas |
+| Kumarakashsy/classification-run188-2023 | 49.600 (checkpoint de inicializacion) | no disponible | no disponible (sin benchmarks) | MIT | Hugging Face, 0 descargas |
 | Alternativas de la familia CLIP (OpenAI CLIP, OpenCLIP, SigLIP y similares) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no verificado en esta busqueda |
 
 La comparacion cuantitativa no es posible con los datos disponibles: este repositorio no publica metricas y la busqueda web realizada no devolvio documentacion tecnica relevante sobre alternativas.
@@ -100,7 +100,7 @@ La comparacion cuantitativa no es posible con los datos disponibles: este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kumarakashsy/classification-run188-2023
+- Repositorio en Hugging Face: https://huggingface.co/Kumarakashsy/classification-run188-2023
 - Paper: no disponible
 - Blog tecnico del autor: no disponible
 - Repositorio de codigo adicional: no disponible

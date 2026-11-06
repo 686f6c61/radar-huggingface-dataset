@@ -102,7 +102,7 @@ Los comparables directos son los demás clasificadores del model zoo de BDD100K-
 
 | Modelo | Top-1 | Macro F1 | Balanced accuracy | Macro precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MobileNetV4-Conv-Small (este modelo) | 82,16 % | 66,51 % | 64,37 % | 80,44 % | Apache-2.0 | HuggingFace, pesos `best.pt` |
+| MobileNetV4-Conv-Small (este modelo) | 82,16 % | 66,51 % | 64,37 % | 80,44 % | Apache-2.0 | Hugging Face, pesos `best.pt` |
 | ConvNeXt-Atto | 83,00 % | 67,44 % | 65,25 % | 81,38 % | no disponible | no disponible |
 | EfficientViT-B0 | 82,79 % | 65,10 % | 63,62 % | 67,11 % | no disponible | no disponible |
 | ResNet-18 | 82,19 % | 64,30 % | 62,97 % | 66,08 % | no disponible | no disponible |
@@ -128,7 +128,7 @@ Lectura de la comparativa: ConvNeXt-Atto obtiene la mejor top-1 y la mejor macro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-weather-mobilenetv4_conv_small
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-weather-mobilenetv4_conv_small
 - Dataset BDD100K Weather Classification: https://huggingface.co/datasets/dronefreak/BDD100K-Weather-Classification
 - Repositorio BDD100K-Toolkit: https://github.com/dronefreak/bdd100k-toolkit
 - Paper de MobileNetV4: https://arxiv.org/abs/2404.10518

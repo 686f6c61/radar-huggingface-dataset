@@ -70,7 +70,7 @@ No se dispone de datos verificados en la informacion proporcionada para una comp
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-scan-object-uniform-peer-lora-10k-e169 (este modelo) | no disponible (repo de 6,3 GB) | no disponible | JAX/Orbax (openpi) | no disponible | HuggingFace, 0 descargas, 0 likes |
+| pi05-scan-object-uniform-peer-lora-10k-e169 (este modelo) | no disponible (repo de 6,3 GB) | no disponible | JAX/Orbax (openpi) | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Modelo base PI0.5 | no disponible en la informacion | no disponible | no disponible | no disponible | no disponible |
 | Otros checkpoints de la serie «Sim12» / receta «peer» | no disponible | no disponible | JAX/Orbax (openpi) | no disponible | no disponible |
 | Alternativas VLA de proposito general (por ejemplo, familias OpenVLA o GR00T) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -92,7 +92,7 @@ No se han encontrado enlaces ni datos de modelos comparables en los resultados d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Travor278/pi05-scan-object-uniform-peer-lora-10k-e169
+- Hugging Face: https://huggingface.co/Travor278/pi05-scan-object-uniform-peer-lora-10k-e169
 - Seguimiento de evaluacion (SwanLab): https://swanlab.cn/@Travor/CTR-PI05-LoRA10k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-scan-object-uniform-20260911
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; las URLs devueltas corresponden a paginas de ayuda de YouTube y a un tema de Zhihu, sin relacion con el modelo.

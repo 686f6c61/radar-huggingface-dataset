@@ -4,7 +4,7 @@
 
 El modelo `DGurgurov/SmolLM3-3B-SFT-ES` es el resultado de la primera etapa del pipeline de adaptación de razonamiento en dos fases **ReasonXL**, aplicado sobre el modelo base `HuggingFaceTB/SmolLM3-3B`. Su objetivo principal es desplazar el lenguaje de razonamiento del modelo de inglés a español mediante un ajuste fino supervisado (SFT) sobre trazas de razonamiento en español del dataset `toroe/ReasonXL-SFT`. La segunda etapa, que corresponde al modelo `DGurgurov/SmolLM3-3B-SFT-GRPO-ES`, aplica RL con GRPO para recuperar la calidad de razonamiento perdida durante el SFT, manteniendo la fidelidad al idioma objetivo.
 
-Con 3.337.766.912 parámetros (aproximadamente 3,3 mil millones), el modelo hereda la arquitectura de SmolLM3, un transformer causal diseñado para ser eficiente en dispositivos con recursos limitados. Aunque la ficha de HuggingFace no especifica la longitud de contexto, el modelo base SmolLM3-3B admite un contexto de 4096 tokens. El repositorio pesa 38 GB, lo que indica que los pesos están almacenados en formato `safetensors` con precisión completa (fp32) o en varios archivos, aunque no se proporcionan cuantizaciones alternativas.
+Con 3.337.766.912 parámetros (aproximadamente 3,3 mil millones), el modelo hereda la arquitectura de SmolLM3, un transformer causal diseñado para ser eficiente en dispositivos con recursos limitados. Aunque la ficha de Hugging Face no especifica la longitud de contexto, el modelo base SmolLM3-3B admite un contexto de 4096 tokens. El repositorio pesa 38 GB, lo que indica que los pesos están almacenados en formato `safetensors` con precisión completa (fp32) o en varios archivos, aunque no se proporcionan cuantizaciones alternativas.
 
 Este modelo es relevante porque aborda un problema poco explorado: el cambio del idioma interno de razonamiento de un LLM sin degradar sus capacidades. Su enfoque en español lo hace útil para aplicaciones de razonamiento, matemáticas y generación de texto en este idioma, aunque aún no se han publicado evaluaciones completas ni benchmarks.
 
@@ -23,7 +23,7 @@ Este modelo es relevante porque aborda un problema poco explorado: el cambio del
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura de SmolLM3, un transformer causal con 3 mil millones de parámetros diseñado por HuggingFace para ser eficiente en entornos con recursos limitados. El entrenamiento consiste en una fase de SFT sobre el dataset `toroe/ReasonXL-SFT`, que contiene trazas de razonamiento en español. Esta fase busca que el modelo realice su razonamiento interno en el idioma objetivo (español) en lugar de inglés, manteniendo a la vez sus capacidades generales de razonamiento.
+El modelo se basa en la arquitectura de SmolLM3, un transformer causal con 3 mil millones de parámetros diseñado por Hugging Face para ser eficiente en entornos con recursos limitados. El entrenamiento consiste en una fase de SFT sobre el dataset `toroe/ReasonXL-SFT`, que contiene trazas de razonamiento en español. Esta fase busca que el modelo realice su razonamiento interno en el idioma objetivo (español) en lugar de inglés, manteniendo a la vez sus capacidades generales de razonamiento.
 
 La segunda fase del pipeline ReasonXL, aplicada al modelo SFT, utiliza GRPO (Group Relative Policy Optimization) con una recompensa compuesta sobre problemas matemáticos verificables. Esta fase tiene como objetivo recuperar la calidad de razonamiento que pueda degradarse durante la SFT, preservando la adherencia al idioma objetivo. Los detalles exactos de los hiperparámetros, la composición del dataset y el proceso de entrenamiento se publicarán próximamente según la model card.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - **VRAM estimada para inferencia**: con 3,3 mil millones de parámetros, la inferencia en fp32 requiere aproximadamente 13,3 GB de VRAM. En cuantización int8 (no disponible en el repositorio) reduciría a ~3,3 GB, y en int4 a ~1,7 GB, pero no se ofrecen estos formatos.
 - **GPU recomendadas**: para fp32, se necesitaría una GPU con al menos 16 GB de VRAM, como una RTX 3090, RTX 4090, A10G o A100. Para despliegue con cuantización propia, una RTX 3060 de 12 GB podría ser suficiente, pero requiere convertir los pesos.
 - **Compatibilidad con GPU de consumo**: sí, una RTX 3090 o RTX 4090 puede ejecutar el modelo en fp32, aunque con latencia moderada. Para uso interactivo, se recomienda cuantizar a int8 o int4.
-- **Opciones de despliegue**: al estar en formato `safetensors`, es compatible con frameworks como HuggingFace Transformers, vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta) y TensorRT-LLM. No se proporcionan archivos preconvertidos.
+- **Opciones de despliegue**: al estar en formato `safetensors`, es compatible con frameworks como Hugging Face Transformers, vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta) y TensorRT-LLM. No se proporcionan archivos preconvertidos.
 - **Latencia y throughput**: no hay datos medidos. Como referencia, un modelo de 3B en una GPU A100 (80 GB) suele alcanzar un throughput de 50-100 tokens/s con batch 1, pero esto depende de la implementación y el hardware.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ El modelo base SmolLM3-3B tiene benchmarks publicados (por ejemplo, MMLU 55.2, H
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-ES)
+- [Modelo en Hugging Face](https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-ES)
 - [Modelo de segunda etapa (GRPO)](https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-GRPO-ES)
 - [Dataset ReasonXL-SFT](https://huggingface.co/datasets/toroe/ReasonXL-SFT)
 - [Paper ReasonXL (arXiv)](https://arxiv.org/abs/2604.12378)

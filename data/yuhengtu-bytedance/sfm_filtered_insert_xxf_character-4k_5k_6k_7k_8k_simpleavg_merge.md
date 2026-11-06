@@ -74,10 +74,10 @@ No hay benchmarks ni ficha técnica suficiente de este modelo para una comparaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sfm_filtered_insert_xxf_character-4k_5k_6k_7k_8k_simpleavg_merge | 6,86 mil millones | No disponible | No disponible | HuggingFace, 0 descargas |
-| Mistral 7B v0.1 | 7,24 mil millones | 8192 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Llama 2 7B | 6,74 mil millones | 4096 tokens | Llama 2 Community License | HuggingFace, requiere aceptar términos |
-| Qwen2.5 7B | 7,62 mil millones | 131 072 tokens | Apache 2.0 (la mayoría de variantes) | HuggingFace y multiples proveedores |
+| sfm_filtered_insert_xxf_character-4k_5k_6k_7k_8k_simpleavg_merge | 6,86 mil millones | No disponible | No disponible | Hugging Face, 0 descargas |
+| Mistral 7B v0.1 | 7,24 mil millones | 8192 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Llama 2 7B | 6,74 mil millones | 4096 tokens | Llama 2 Community License | Hugging Face, requiere aceptar términos |
+| Qwen2.5 7B | 7,62 mil millones | 131 072 tokens | Apache 2.0 (la mayoría de variantes) | Hugging Face y multiples proveedores |
 
 La comparación relevante aquí no es de rendimiento sino de trazabilidad: los tres modelos alternativos publican licencia, idiomas, contexto y evaluaciones, mientras que este merge no publica ninguno de esos datos. Para cualquier uso serio, la recomendación es partir de una alternativa con licencia clara y evaluaciones reproducibles.
 
@@ -96,7 +96,7 @@ La comparación relevante aquí no es de rendimiento sino de trazabilidad: los t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-4k_5k_6k_7k_8k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-4k_5k_6k_7k_8k_simpleavg_merge
 - mergekit (herramienta de fusión utilizada): https://github.com/cg123/mergekit
 - Paper del método de fusión lineal citado en las etiquetas (Model soups): https://arxiv.org/abs/2203.05482
 - Paper de la arquitectura GPT-NeoX: https://arxiv.org/abs/2204.06745

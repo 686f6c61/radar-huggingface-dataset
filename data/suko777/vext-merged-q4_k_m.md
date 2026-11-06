@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `suko777/VEXT-merged-Q4_K_M` es un modelo publicado en HuggingFace por el usuario `suko777`. Según la información disponible, se trata de un modelo fusionado (merged) cuya denominación incluye el sufijo `Q4_K_M`, lo que sugiere que ha sido cuantizado con el esquema K-quants de GGUF. Sin embargo, la model card no incluye ninguna descripción técnica, ni arquitectura, ni tamaño, ni contexto, ni datos de entrenamiento. La licencia declarada es `unknown` y no se han especificado idiomas ni pipeline.
+El modelo `suko777/VEXT-merged-Q4_K_M` es un modelo publicado en Hugging Face por el usuario `suko777`. Según la información disponible, se trata de un modelo fusionado (merged) cuya denominación incluye el sufijo `Q4_K_M`, lo que sugiere que ha sido cuantizado con el esquema K-quants de GGUF. Sin embargo, la model card no incluye ninguna descripción técnica, ni arquitectura, ni tamaño, ni contexto, ni datos de entrenamiento. La licencia declarada es `unknown` y no se han especificado idiomas ni pipeline.
 
 La relevancia actual de este modelo no puede determinarse a partir de los datos disponibles. Al carecer de documentación, métricas de uso o resultados de benchmarks, no es posible evaluar su calidad, rendimiento ni idoneidad para ningún caso de uso concreto. La única información verificable es el identificador del repositorio y la existencia de un archivo cuantizado.
 
@@ -57,4 +57,4 @@ No disponible. No se conocen modelos comparables de la misma categoría, ya que 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/suko777/VEXT-merged-Q4_K_M
+- Repositorio del modelo en Hugging Face: https://huggingface.co/suko777/VEXT-merged-Q4_K_M

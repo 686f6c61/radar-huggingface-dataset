@@ -2,7 +2,7 @@
 
 ## Resumen
 
-atomic-light-v1 es un modelo publicado por la organización atomic-ai-labs en HuggingFace bajo licencia Apache 2.0. El repositorio tiene un tamaño de 7,5 GB, lo que sugiere un modelo de pesos completos en un rango de tamaño medio, aunque no se dispone de información oficial sobre arquitectura, número de parámetros ni proceso de entrenamiento.
+atomic-light-v1 es un modelo publicado por la organización atomic-ai-labs en Hugging Face bajo licencia Apache 2.0. El repositorio tiene un tamaño de 7,5 GB, lo que sugiere un modelo de pesos completos en un rango de tamaño medio, aunque no se dispone de información oficial sobre arquitectura, número de parámetros ni proceso de entrenamiento.
 
 La model card del autor está prácticamente vacía: únicamente declara la licencia Apache 2.0 y no incluye descripción, instrucciones de uso, especificaciones técnicas ni resultados de evaluación. Se desconoce si el modelo es de tipo transformer, MoE, SSM u otra arquitectura, así como su propósito declarado. La organización también mantiene una versión anterior, atomic-light-v0.1, igualmente sin documentación pública.
 
@@ -85,7 +85,7 @@ No disponible. Sin conocer la arquitectura, el número de parámetros ni el prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/atomic-ai-labs/atomic-light-v1
+- Modelo en Hugging Face: https://huggingface.co/atomic-ai-labs/atomic-light-v1
 - Versión anterior v0.1: https://huggingface.co/atomic-ai-labs/atomic-light-v0.1
 - Perfil de la organización: https://huggingface.co/atomic-ai-labs
 - Datasets de la organización: https://huggingface.co/atomic-ai-labs/datasets

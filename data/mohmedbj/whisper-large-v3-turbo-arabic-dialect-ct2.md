@@ -2,7 +2,7 @@
 
 ## Resumen
 
-whisper-large-v3-turbo-arabic-dialect-ct2 es una conversion a CTranslate2 (float16) del modelo oddadmix/whisper-large-v3-turbo-arabic-dialectal-v2, un ajuste fino de Whisper large-v3-turbo orientado a reconocimiento automatico del habla en arabe dialectal. Lo publica el usuario mohmedbj en HuggingFace y su proposito es ofrecer una version lista para produccion con faster-whisper, evitando la conversion manual desde safetensors a CTranslate2.
+whisper-large-v3-turbo-arabic-dialect-ct2 es una conversion a CTranslate2 (float16) del modelo oddadmix/whisper-large-v3-turbo-arabic-dialectal-v2, un ajuste fino de Whisper large-v3-turbo orientado a reconocimiento automatico del habla en arabe dialectal. Lo publica el usuario mohmedbj en Hugging Face y su proposito es ofrecer una version lista para produccion con faster-whisper, evitando la conversion manual desde safetensors a CTranslate2.
 
 El problema que resuelve es doble: por un lado, la mayoria de los sistemas ASR comerciales y open source rinden de forma notablemente peor sobre arabe dialectal que sobre arabe estandar moderno (MSA); por otro, Whisper large-v3-turbo es una variante destilada del decoder que reduce el coste de inferencia frente a large-v3 completo, lo que la hace adecuada para transcripcion en tiempo real. El autor declara compatibilidad con 13 dialectos arabes (golfo, egipcio, levantino, iraqi, norteafricano, yemeni y sudanes, entre los citados).
 
@@ -22,7 +22,7 @@ Se trata de un modelo de la familia Whisper (encoder-decoder transformer) con de
 | Formato de pesos | CTranslate2 (model.bin y tokenizer); no incluye safetensors ni GGUF |
 | Modelo base | oddadmix/whisper-large-v3-turbo-arabic-dialectal-v2 |
 | Tamano del repositorio | 1,6 GB |
-| Fecha de publicacion | 2026-10-03 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-10-03 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohmedbj/whisper-large-v3-turbo-arabic-dialect-ct2
+- Modelo en Hugging Face: https://huggingface.co/mohmedbj/whisper-large-v3-turbo-arabic-dialect-ct2
 - Modelo base: https://huggingface.co/oddadmix/whisper-large-v3-turbo-arabic-dialectal-v2
 
 No se han proporcionado en la informacion disponible enlaces adicionales a papers, blogs, repositorios de codigo o demos.

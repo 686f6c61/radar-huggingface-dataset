@@ -16,12 +16,12 @@ La relevancia de este modelo radica en que ofrece una versión desalineada y cua
 | Longitud de contexto | 262 000 tokens (del modelo base) |
 | Tipos de cuantizacion | no disponible (el repositorio no especifica las cuantizaciones incluidas) |
 | Idiomas soportados | no disponible (el modelo base soporta múltiples idiomas, pero no se detalla para este finetune) |
-| Licencia | no disponible (etiqueta "other" en HuggingFace) |
+| Licencia | no disponible (etiqueta "other" en Hugging Face) |
 | Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-Flash-Next emplea una arquitectura de mezcla de expertos (MoE) con innovaciones en cuatro aspectos: atención, residual, embedding y optimización. La atención combina GDN (Gated Delta Network) con QSA (Query-Selective Attention), un diseño híbrido que mejora la capacidad del modelo y la eficiencia computacional. El modelo es multimodal, aunque la ficha de HuggingFace solo indica pipeline de generación de texto. El finetune "Abliterated-Uncensored" se ha obtenido mediante técnicas de abliteration, que consisten en eliminar o neutralizar las direcciones de activación asociadas a la negativa a responder contenido sensible, resultando en un modelo sin alineación de seguridad. No se dispone de detalles sobre el dataset de entrenamiento del finetune ni sobre el proceso exacto de abliteration.
+El modelo base Qwen3.8-Flash-Next emplea una arquitectura de mezcla de expertos (MoE) con innovaciones en cuatro aspectos: atención, residual, embedding y optimización. La atención combina GDN (Gated Delta Network) con QSA (Query-Selective Attention), un diseño híbrido que mejora la capacidad del modelo y la eficiencia computacional. El modelo es multimodal, aunque la ficha de Hugging Face solo indica pipeline de generación de texto. El finetune "Abliterated-Uncensored" se ha obtenido mediante técnicas de abliteration, que consisten en eliminar o neutralizar las direcciones de activación asociadas a la negativa a responder contenido sensible, resultando en un modelo sin alineación de seguridad. No se dispone de detalles sobre el dataset de entrenamiento del finetune ni sobre el proceso exacto de abliteration.
 
 ## Capacidades
 
@@ -75,7 +75,7 @@ No se dispone de comparativas de rendimiento directas entre este finetune y otro
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/0bserverx/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/0bserverx/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored-GGUF
 - Repositorio del modelo base en GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Documentación de unsloth sobre Qwen3.8-Flash-Next: https://unsloth.ai/docs/models/qwen3.8-next
 - Guía de ejecución local y benchmarks: https://www.projectmonet.space/blog/how-to-run-qwen3-8-flash-next-locally

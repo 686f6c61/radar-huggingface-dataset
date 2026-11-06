@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `amd/Llama-2-7b-hf_rai_1.9.0_m_1.0.1_npu` es una distribucion optimizada de Llama 2 7B publicada por AMD en HuggingFace, empaquetada en formato ONNX y preparada especificamente para ejecutarse sobre las NPU (unidades de procesamiento neuronal) de las plataformas Ryzen AI. No se trata de un modelo nuevo entrenado desde cero, sino de una conversion del checkpoint original de Meta Llama 2 7B a un grafo ONNX compatible con el runtime Ryzen AI 1.9.0 y el modelo de compilacion `m_1.0.1_npu`.
+El modelo `amd/Llama-2-7b-hf_rai_1.9.0_m_1.0.1_npu` es una distribucion optimizada de Llama 2 7B publicada por AMD en Hugging Face, empaquetada en formato ONNX y preparada especificamente para ejecutarse sobre las NPU (unidades de procesamiento neuronal) de las plataformas Ryzen AI. No se trata de un modelo nuevo entrenado desde cero, sino de una conversion del checkpoint original de Meta Llama 2 7B a un grafo ONNX compatible con el runtime Ryzen AI 1.9.0 y el modelo de compilacion `m_1.0.1_npu`.
 
 El interes de esta publicacion es practico: permite desplegar un modelo de lenguaje de 7.000 millones de parametros en hardware de PC con aceleracion NPU integrada (procesadores AMD Ryzen con arquitectura XDNA), sin depender exclusivamente de GPU dedicada. Esto abre la puerta a inferencia local en portatiles y mini-PC con un consumo energetico contenido, algo relevante para escenarios de privacidad de datos y despliegue en el borde.
 
-La ficha se basa unicamente en la informacion disponible en la pagina de HuggingFace y en el conocimiento publico del modelo base Llama 2. Los detalles especificos del proceso de cuantizacion, los benchmarks en NPU y las metricas de rendimiento del binario ONNX no estan documentados en la informacion proporcionada y se marcan como no disponibles.
+La ficha se basa unicamente en la informacion disponible en la pagina de Hugging Face y en el conocimiento publico del modelo base Llama 2. Los detalles especificos del proceso de cuantizacion, los benchmarks en NPU y las metricas de rendimiento del binario ONNX no estan documentados en la informacion proporcionada y se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ Lo que distingue a esta publicacion de AMD no es el entrenamiento, sino el pipel
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La pagina de HuggingFace no incluye metricas de MMLU, HumanEval, GSM8K ni datos de latencia o throughput sobre NPU. Cualquier cifra de rendimiento del modelo base Llama 2 7B no seria directamente trasladable a esta distribucion sin conocer la cuantizacion aplicada y el particionado CPU/NPU.
+No se han publicado resultados de benchmarks en la informacion disponible. La pagina de Hugging Face no incluye metricas de MMLU, HumanEval, GSM8K ni datos de latencia o throughput sobre NPU. Cualquier cifra de rendimiento del modelo base Llama 2 7B no seria directamente trasladable a esta distribucion sin conocer la cuantizacion aplicada y el particionado CPU/NPU.
 
 ## Requisitos de hardware
 
@@ -74,7 +74,7 @@ La comparativa directa es limitada: la distribucion de AMD no compite en calidad
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio esta gated y requiere aceptar la licencia Llama 2 en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio esta gated y requiere aceptar la licencia Llama 2 en Hugging Face antes de la descarga.
 - Licencia Llama 2: permite uso comercial con condiciones, incluida la obligacion de atribucion y restricciones para entidades con mas de 700 millones de usuarios mensuales; revisar el texto completo antes de produccion.
 - Idiomas: el repo declara solo ingles; el rendimiento en castellano no esta garantizado y probablemente sea deficiente.
 - Alucinacion: como todo LLM de 7B, tiene tendencia a inventar datos factuales, especialmente en tareas de conocimiento especifico o fechas.
@@ -87,7 +87,7 @@ La comparativa directa es limitada: la distribucion de AMD no compite en calidad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Llama-2-7b-hf_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/Llama-2-7b-hf_rai_1.9.0_m_1.0.1_npu
 - Modelo base Llama 2 7B: https://huggingface.co/meta-llama/Llama-2-7b-hf
 - Paper Llama 2: https://arxiv.org/abs/2307.09288
 - Documentacion Ryzen AI: https://ryzenai.docs.amd.com/

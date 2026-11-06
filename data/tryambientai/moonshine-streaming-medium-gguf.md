@@ -97,7 +97,7 @@ La comparación directa con las variantes tiny y small de la misma familia es la
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/tryambientai/moonshine-streaming-medium-gguf
+- Repositorio Hugging Face de la conversión: https://huggingface.co/tryambientai/moonshine-streaming-medium-gguf
 - Modelo base: https://huggingface.co/UsefulSensors/moonshine-streaming-medium
 - Commit del modelo base portado: https://huggingface.co/UsefulSensors/moonshine-streaming-medium/commit/57b8436
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

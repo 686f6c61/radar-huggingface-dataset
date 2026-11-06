@@ -61,8 +61,8 @@ No se han publicado resultados numéricos de benchmarks estándar (MMLU, HumanEv
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thaki-Decision-0.8B-PW-v1 | 0,8B (base) + LoRA | No disponible | Router pairwise (Gemma vs Nemotron) | Apache-2.0 | HuggingFace |
-| Thaki-Decision-0.8B-G13-v0.2 | 0,8B (base) + LoRA | No disponible | Router (versión recomendada por el autor) | No disponible | HuggingFace |
+| Thaki-Decision-0.8B-PW-v1 | 0,8B (base) + LoRA | No disponible | Router pairwise (Gemma vs Nemotron) | Apache-2.0 | Hugging Face |
+| Thaki-Decision-0.8B-G13-v0.2 | 0,8B (base) + LoRA | No disponible | Router (versión recomendada por el autor) | No disponible | Hugging Face |
 | Router BERT estilo RouteLLM | No disponible | No disponible | Router basado en BERT | No disponible | No disponible |
 
 No se dispone de datos numéricos de rendimiento para establecer una comparación cuantitativa con alternativas. La model card indica que el margen sobre el router BERT es borderline y que la versión recomendada por el autor es G13-v0.2, evaluada sobre un par de candidatos distinto, por lo que no se ha demostrado que una supere a la otra.
@@ -82,7 +82,7 @@ No se dispone de datos numéricos de rendimiento para establecer una comparació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ThakiCloud/Thaki-Decision-0.8B-PW-v1
+- Hugging Face: https://huggingface.co/ThakiCloud/Thaki-Decision-0.8B-PW-v1
 - Modelo base: https://huggingface.co/vllm-sr/d3-lite
 - Versión recomendada: https://huggingface.co/ThakiCloud/Thaki-Decision-0.8B-G13-v0.2
 - Candidato A (Gemma): https://huggingface.co/google/gemma-4-31B-it

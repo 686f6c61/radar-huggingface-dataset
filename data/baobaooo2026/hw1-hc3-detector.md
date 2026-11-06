@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Baobaooo2026/hw1-hc3-detector` es un clasificador de texto basado en un transformer encoder de tipo BERT, publicado en HuggingFace con la librería `transformers` y pipeline `text-classification`. Cuenta con 22.713.986 parámetros reales, según los pesos en formato safetensors, lo que lo sitúa en la gama de modelos BERT compactos o destilados, muy por debajo de los 110 millones de parámetros de BERT-base. El repositorio ocupa 0,1 GB y fue creado y actualizado el 29 de septiembre de 2026 por el usuario Baobaooo2026.
+El modelo `Baobaooo2026/hw1-hc3-detector` es un clasificador de texto basado en un transformer encoder de tipo BERT, publicado en Hugging Face con la librería `transformers` y pipeline `text-classification`. Cuenta con 22.713.986 parámetros reales, según los pesos en formato safetensors, lo que lo sitúa en la gama de modelos BERT compactos o destilados, muy por debajo de los 110 millones de parámetros de BERT-base. El repositorio ocupa 0,1 GB y fue creado y actualizado el 29 de septiembre de 2026 por el usuario Baobaooo2026.
 
-La model card es la plantilla automática de HuggingFace y prácticamente todos los campos están sin rellenar: no se declara autoría real, ni datos de entrenamiento, ni licencia, ni idiomas soportados, ni procedencia de los pesos. El único dato técnico concreto que aporta son dos métricas de evaluación: una exactitud de referencia (*baseline*) de 0,8449 y una exactitud de test tras el ajuste fino de 0,9968.
+La model card es la plantilla automática de Hugging Face y prácticamente todos los campos están sin rellenar: no se declara autoría real, ni datos de entrenamiento, ni licencia, ni idiomas soportados, ni procedencia de los pesos. El único dato técnico concreto que aporta son dos métricas de evaluación: una exactitud de referencia (*baseline*) de 0,8449 y una exactitud de test tras el ajuste fino de 0,9968.
 
 El nombre del repositorio (`hw1-hc3-detector`) y el sufijo `hc3` apuntan, como hipótesis razonable no confirmada por el autor, a un detector de texto humano frente a texto generado por ChatGPT entrenado sobre el corpus HC3 (*Human ChatGPT Comparison Corpus*), un caso típico de ejercicio académico de clasificación binaria. Al no existir documentación, cualquiera que quiera reutilizarlo debería validar de forma independiente el dominio, las etiquetas y la calidad del ajuste antes de considerarlo en producción. El modelo tiene 0 descargas y 0 *likes* en el momento de la consulta.
 
@@ -30,7 +30,7 @@ El nombre del repositorio (`hw1-hc3-detector`) y el sufijo `hc3` apuntan, como h
 
 La unica informacion arquitectonica fiable son las etiquetas del repositorio, que indican `bert` y `text-classification`. Se trata, por tanto, de un transformer encoder con atencion bidireccional y una cabeza de clasificacion (probablemente una capa lineal sobre el token `[CLS]`) configurada para un numero de clases no declarado. Con 22,7 millones de parametros, el checkpoint no corresponde a un BERT-base estandar, sino a una variante reducida en profundidad, ancho o ambas cosas; la configuracion exacta (numero de capas, dimension oculta, cabezas de atencion, vocabulario) no esta documentada y habria que leerla directamente del `config.json` del repositorio.
 
-No hay ningun dato publicado sobre el corpus de entrenamiento, el numero de tokens, la composicion del dataset, el regimen de precision (fp32, fp16, bf16) ni sobre si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card incluye los apartados habituales de la plantilla de HuggingFace, pero todos ellos contienen la marca `[More Information Needed]`. La unica referencia a un paper es el enlace a Lacoste et al. (2019), `arxiv:1910.09700`, que corresponde a la calculadora de impacto medioambiental del template y no a una publicacion sobre este modelo. En el apartado de resultados la model card declara dos cifras: exactitud de referencia 0,8449 y exactitud de test tras ajuste fino 0,9968, sin describir el conjunto de test, la metrica exacta, el numero de clases ni el protocolo de evaluacion.
+No hay ningun dato publicado sobre el corpus de entrenamiento, el numero de tokens, la composicion del dataset, el regimen de precision (fp32, fp16, bf16) ni sobre si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card incluye los apartados habituales de la plantilla de Hugging Face, pero todos ellos contienen la marca `[More Information Needed]`. La unica referencia a un paper es el enlace a Lacoste et al. (2019), `arxiv:1910.09700`, que corresponde a la calculadora de impacto medioambiental del template y no a una publicacion sobre este modelo. En el apartado de resultados la model card declara dos cifras: exactitud de referencia 0,8449 y exactitud de test tras ajuste fino 0,9968, sin describir el conjunto de test, la metrica exacta, el numero de clases ni el protocolo de evaluacion.
 
 ## Capacidades
 
@@ -71,17 +71,17 @@ No se han publicado resultados de benchmarks estandar (MMLU, GLUE, HumanEval, GS
 - VRAM estimada: en fp32 los 22,7 millones de parametros ocupan aproximadamente 91 MB; en fp16, unos 45 MB. Con activaciones y sobrecarga del runtime, la inferencia completa cabe holgadamente en menos de 1 GB.
 - GPU recomendadas: cualquier GPU, incluida una GTX 1050 o una iGPU moderna. Tambien es viable en CPU: un solo nucleo moderno procesa secuencias cortas en decenas de milisegundos.
 - GPU de consumo: si, cabe en cualquier GPU de consumo actual y en practicamente cualquier GPU de los ultimos diez anos. No requiere A100 ni H100.
-- Opciones de despliegue: `transformers` con PyTorch, Text Embeddings Inference (etiqueta `text-embeddings-inference`), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), y conversion a ONNX para inferencia en CPU. No se publican pesos GGUF, aunque la conversion a llama.cpp no aplica porque no es un modelo generativo.
+- Opciones de despliegue: `transformers` con PyTorch, Text Embeddings Inference (etiqueta `text-embeddings-inference`), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), y conversion a ONNX para inferencia en CPU. No se publican pesos GGUF, aunque la conversion a llama.cpp no aplica porque no es un modelo generativo.
 - Latencia y throughput: no disponibles. No se publican mediciones de latencia ni de tokens por segundo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Baobaooo2026/hw1-hc3-detector | 22,7 M | no disponible | no disponible | Publico en HuggingFace |
-| xw131/hw1-hc3-detector | no disponible | no disponible | no disponible | Publico en HuggingFace |
-| pangboo/hw1-hc3-detector | no disponible | no disponible | no disponible | Publico en HuggingFace |
-| Yihangsun/hw1-hc3-detector | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| Baobaooo2026/hw1-hc3-detector | 22,7 M | no disponible | no disponible | Publico en Hugging Face |
+| xw131/hw1-hc3-detector | no disponible | no disponible | no disponible | Publico en Hugging Face |
+| pangboo/hw1-hc3-detector | no disponible | no disponible | no disponible | Publico en Hugging Face |
+| Yihangsun/hw1-hc3-detector | no disponible | no disponible | no disponible | Publico en Hugging Face |
 
 Los tres repositorios con el mismo nombre y los mismos resultados de busqueda parecen variantes o copias derivadas del mismo ejercicio. No hay datos verificados de parametros, contexto, rendimiento ni licencia para ninguno de ellos, y no se dispone de informacion sobre detectores alternativos en la documentacion proporcionada.
 
@@ -99,7 +99,7 @@ Los tres repositorios con el mismo nombre y los mismos resultados de busqueda pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Baobaooo2026/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/Baobaooo2026/hw1-hc3-detector
 - Variante con el mismo nombre (xw131): https://huggingface.co/xw131/hw1-hc3-detector
 - Variante con el mismo nombre (pangboo): https://huggingface.co/pangboo/hw1-hc3-detector
 - Ficha del modelo en savrn (Yihangsun): https://savrn.com/models/hw1-hc3-detector

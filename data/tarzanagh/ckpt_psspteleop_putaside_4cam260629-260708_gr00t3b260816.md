@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ckpt_psspteleop_putaside_4cam260629-260708_gr00t3b260816` es un ajuste fino (fine-tune) del modelo base GR00T-N1.7-3B de NVIDIA, especializado en la habilidad robótica **put_aside** (dejar a un lado) para el robot manipulador DexMate Vega. El desarrollo lo firma el usuario `tarzanagh` y se distribuye a través de HuggingFace con una licencia `other`, lo que implica restricciones de uso no estandarizadas que deben revisarse antes de su despliegue.
+El modelo `ckpt_psspteleop_putaside_4cam260629-260708_gr00t3b260816` es un ajuste fino (fine-tune) del modelo base GR00T-N1.7-3B de NVIDIA, especializado en la habilidad robótica **put_aside** (dejar a un lado) para el robot manipulador DexMate Vega. El desarrollo lo firma el usuario `tarzanagh` y se distribuye a través de Hugging Face con una licencia `other`, lo que implica restricciones de uso no estandarizadas que deben revisarse antes de su despliegue.
 
 El modelo resuelve un problema concreto de manipulación robótica: ejecutar la secuencia de recoger, escanear, colocar en báscula, recoger de la báscula y dejar a un lado, todo ello a partir de datos de teleoperación. Su relevancia radica en que demuestra una estrategia de segmentación de datos basada en ventanas de reposo y en la división de la secuencia en el punto de velocidad mínima (lull), lo que permite generar habilidades discretas y robustas a partir de un flujo continuo de teleoperación.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Enfoque | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (GR00T-N1.7-3B fine-tune) | 3B | Manipulacion robotica especifica (put_aside) | No disponible | other | HuggingFace |
-| OpenVLA | 7B | VLA generalista para manipulacion | 32K tokens | MIT | HuggingFace |
+| Este modelo (GR00T-N1.7-3B fine-tune) | 3B | Manipulacion robotica especifica (put_aside) | No disponible | other | Hugging Face |
+| OpenVLA | 7B | VLA generalista para manipulacion | 32K tokens | MIT | Hugging Face |
 | RT-2 (Google) | 55B | VLA generalista para robotica | No disponible | Propietaria | No publico |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la misma tarea o robot, por lo que no es posible establecer una comparativa cuantitativa. Este modelo se distingue por su tamano reducido (3B) y por estar altamente especializado en una secuencia concreta, mientras que OpenVLA y RT-2 buscan generalizacion.
@@ -80,5 +80,5 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la mism
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/tarzanagh/ckpt_psspteleop_putaside_4cam260629-260708_gr00t3b260816](https://huggingface.co/tarzanagh/ckpt_psspteleop_putaside_4cam260629-260708_gr00t3b260816)
+- Repositorio en Hugging Face: [https://huggingface.co/tarzanagh/ckpt_psspteleop_putaside_4cam260629-260708_gr00t3b260816](https://huggingface.co/tarzanagh/ckpt_psspteleop_putaside_4cam260629-260708_gr00t3b260816)
 - No se proporcionan enlaces a papers, blogs, repositorios de codigo ni demos en la informacion disponible.

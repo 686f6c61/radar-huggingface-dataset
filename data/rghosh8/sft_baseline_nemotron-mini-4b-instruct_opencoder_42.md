@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_opencoder_42` es un ajuste fino supervisado (SFT) del modelo `nvidia/Nemotron-Mini-4B-Instruct`, publicado por el usuario rghosh8 en HuggingFace. Se trata de un modelo de generación de texto de 4.190.509.056 parámetros (aproximadamente 4,19 mil millones), derivado del modelo compacto de NVIDIA orientado a instrucciones. El nombre del repositorio indica que se trata de una ejecución de referencia ("baseline") de SFT con la semilla 42 sobre un conjunto de datos denominado "opencoder", entrenada con la librería TRL.
+`rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_opencoder_42` es un ajuste fino supervisado (SFT) del modelo `nvidia/Nemotron-Mini-4B-Instruct`, publicado por el usuario rghosh8 en Hugging Face. Se trata de un modelo de generación de texto de 4.190.509.056 parámetros (aproximadamente 4,19 mil millones), derivado del modelo compacto de NVIDIA orientado a instrucciones. El nombre del repositorio indica que se trata de una ejecución de referencia ("baseline") de SFT con la semilla 42 sobre un conjunto de datos denominado "opencoder", entrenada con la librería TRL.
 
 El modelo no aporta una model card sustantiva: el README generado automáticamente por TRL se limita a indicar el modelo base, la versión del framework y un ejemplo de uso con `pipeline`. No se documentan hiperparámetros, composición del dataset, número de tokens de entrenamiento ni resultados de evaluación, lo que limita seriamente su reproducibilidad y su utilidad como referencia técnica.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_opencoder_42 | 4,19 B | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) | Checkpoint SFT experimental sin evaluación publicada |
-| nvidia/Nemotron-Mini-4B-Instruct | ~4 B | no disponible en la información proporcionada | según NVIDIA (consultar model card original) | HuggingFace (modelo base oficial) | Modelo base oficial, con documentación y evaluación de NVIDIA |
-| Alternativas de ~4 B (p. ej. Phi-3-mini, Qwen2.5-3B/7B) | 3-7 B | variable según modelo | variable (MIT, Apache-2.0, etc.) | HuggingFace | No se dispone de datos comparativos en la información proporcionada |
+| rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_opencoder_42 | 4,19 B | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) | Checkpoint SFT experimental sin evaluación publicada |
+| nvidia/Nemotron-Mini-4B-Instruct | ~4 B | no disponible en la información proporcionada | según NVIDIA (consultar model card original) | Hugging Face (modelo base oficial) | Modelo base oficial, con documentación y evaluación de NVIDIA |
+| Alternativas de ~4 B (p. ej. Phi-3-mini, Qwen2.5-3B/7B) | 3-7 B | variable según modelo | variable (MIT, Apache-2.0, etc.) | Hugging Face | No se dispone de datos comparativos en la información proporcionada |
 
 La comparación cuantitativa de rendimiento no es posible: no hay benchmarks publicados para este checkpoint ni datos del modelo base incluidos en la información disponible.
 
@@ -82,7 +82,7 @@ La comparación cuantitativa de rendimiento no es posible: no hay benchmarks pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_opencoder_42
+- Modelo en Hugging Face: https://huggingface.co/rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_opencoder_42
 - Modelo base: https://huggingface.co/nvidia/Nemotron-Mini-4B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentación de Transformers: https://huggingface.co/docs/transformers

@@ -18,7 +18,7 @@ La relevancia de esta ficha es, por tanto, principalmente operativa: sirve para 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | `oQ4e` segun el identificador del repositorio; sin confirmar en la model card |
 | Idiomas soportados | no disponible |
-| Licencia | `qwen-community-1.0` (etiquetada como `license:other` en HuggingFace) |
+| Licencia | `qwen-community-1.0` (etiquetada como `license:other` en Hugging Face) |
 | Formato de pesos | MLX (libreria declarada: `mlx`). Los pesos han sido eliminados del repositorio |
 
 Datos adicionales verificables: autor `umixer`; 732 descargas y 2 likes registrados; repositorio creado el 2026-10-12 y actualizado el 2026-10-14; region `us`; estado `retired`.
@@ -77,7 +77,7 @@ No disponible. No hay datos suficientes sobre parametros, contexto, rendimiento 
 
 ## Enlaces
 
-- Repositorio retirado en HuggingFace: https://huggingface.co/umixer/Qwen3.8-Flash-Next-oQ4e-mix6-mtp-v2
+- Repositorio retirado en Hugging Face: https://huggingface.co/umixer/Qwen3.8-Flash-Next-oQ4e-mix6-mtp-v2
 - Repositorio de destino indicado en la model card: https://huggingface.co/umixer/Qwen3.8-Flash-Next-oQ4e-mix6-mtp
 - Fichero de licencia referenciado: `LICENSE` (dentro del repositorio de destino)
 - Version en chino tradicional de la model card: `README_zh.md` (dentro del repositorio)

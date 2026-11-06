@@ -123,7 +123,7 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/pengxiang/looped-moe-1.7b-tensorboard
+- Repositorio de Hugging Face: https://huggingface.co/pengxiang/looped-moe-1.7b-tensorboard
 - Pestaña de métricas de entrenamiento: https://huggingface.co/pengxiang/looped-moe-1.7b-tensorboard/tensorboard
 - Artículo LoopMoE (arXiv): https://arxiv.org/abs/2606.04438
 - PDF del artículo: https://arxiv.org/pdf/2606.04438v1

@@ -79,7 +79,7 @@ Resultados por subconjunto reportados por el autor:
 
 | Modelo | Parámetros | Contexto | CER en lector-bench v0 (146 páginas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lector-2b-v1 (ft5) | 2,21B | No disponible | 0,093 | Apache 2.0 | HuggingFace |
+| lector-2b-v1 (ft5) | 2,21B | No disponible | 0,093 | Apache 2.0 | Hugging Face |
 | ft4 (Qwen3.5-2B) | No disponible | No disponible | 0,099 | No disponible | Uso interno del autor, no publicado como modelo |
 | ft2 (Qwen3-VL-2B) | No disponible | No disponible | 0,137 | No disponible | Uso interno del autor, no publicado como modelo |
 
@@ -100,6 +100,6 @@ No se dispone de datos de benchmarks de otros modelos OCR comparables en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/julioalonzom/lector-2b-v1
+- Modelo en Hugging Face: https://huggingface.co/julioalonzom/lector-2b-v1
 - Dataset de evaluación lector-bench v0: https://huggingface.co/datasets/julioalonzom/lector-bench
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

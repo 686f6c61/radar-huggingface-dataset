@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| viewagent_scene_near_miss_sft_epoch_1 | 8,77 mil millones | No disponible | Apache-2.0 | pass@8 6,8 % en la evaluacion del pipeline | HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-8B-Instruct (modelo base) | Aproximadamente 8 mil millones | No disponible en esta ficha | Apache-2.0 | No disponible en esta ficha | HuggingFace |
-| Qwen2.5-VL-7B-Instruct | Aproximadamente 7 mil millones | No disponible en esta ficha | Apache-2.0 | No disponible en esta ficha | HuggingFace |
-| InternVL3-8B | Aproximadamente 8 mil millones | No disponible en esta ficha | Apache-2.0 | No disponible en esta ficha | HuggingFace |
+| viewagent_scene_near_miss_sft_epoch_1 | 8,77 mil millones | No disponible | Apache-2.0 | pass@8 6,8 % en la evaluacion del pipeline | Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-8B-Instruct (modelo base) | Aproximadamente 8 mil millones | No disponible en esta ficha | Apache-2.0 | No disponible en esta ficha | Hugging Face |
+| Qwen2.5-VL-7B-Instruct | Aproximadamente 7 mil millones | No disponible en esta ficha | Apache-2.0 | No disponible en esta ficha | Hugging Face |
+| InternVL3-8B | Aproximadamente 8 mil millones | No disponible en esta ficha | Apache-2.0 | No disponible en esta ficha | Hugging Face |
 
 La comparacion relevante es con el propio modelo base: este checkpoint anade una especializacion estrecha en planificacion de vistas y "near miss" sobre ScanNet, a cambio de un rendimiento absoluto bajo en su propia metrica (6,8 % de pass@8). No se dispone de datos que permitan afirmar si conserva las capacidades generales de Qwen3-VL-8B-Instruct.
 
@@ -92,12 +92,12 @@ La comparacion relevante es con el propio modelo base: este checkpoint anade una
 - Alucinacion: no se han publicado estudios de fidelidad factual ni de calibracion para este checkpoint; en tareas de decision espacial, una alucinacion puede traducirse directamente en una accion erronea.
 - Idiomas y contexto: se desconoce el soporte multilingue real y la longitud de contexto efectiva tras el ajuste, ya que no se documentan en la model card.
 - Licencia: los pesos se publican bajo Apache-2.0, lo que en principio permite uso comercial, pero el entrenamiento se ha realizado sobre ScanNet, cuyos terminos de uso son independientes y deben revisarse antes de cualquier explotacion comercial o redistribucion de datos derivados.
-- Sin validacion por la comunidad: 0 descargas y 0 likes, sin pipeline declarado en HuggingFace y sin publicacion asociada; no debe desplegarse en produccion sin una evaluacion propia exhaustiva.
+- Sin validacion por la comunidad: 0 descargas y 0 likes, sin pipeline declarado en Hugging Face y sin publicacion asociada; no debe desplegarse en produccion sin una evaluacion propia exhaustiva.
 - Sin pesos cuantizados oficiales ni ficha de consumo de recursos, lo que anade trabajo de ingenieria para cualquier despliegue en hardware limitado.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/JamesK2W/viewagent_scene_near_miss_sft_epoch_1
+- Hugging Face del modelo: https://huggingface.co/JamesK2W/viewagent_scene_near_miss_sft_epoch_1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - SGLang (servidor de inferencia mencionado por el autor): https://github.com/sgl-project/sglang
 - vLLM (servidor de inferencia mencionado por el autor): https://github.com/vllm-project/vllm

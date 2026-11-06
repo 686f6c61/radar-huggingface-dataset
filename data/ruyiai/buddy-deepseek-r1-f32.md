@@ -93,7 +93,7 @@ La comparación con alternativas de la misma categoría (por ejemplo, otros dest
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RuyiAI/buddy-deepseek-r1-f32
+- Repositorio en Hugging Face: https://huggingface.co/RuyiAI/buddy-deepseek-r1-f32
 - Modelo upstream: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Proyecto buddy-mlir / buddy-cli: https://github.com/buddy-compiler/buddy-mlir
 - Script de instalación de buddy-cli: https://raw.githubusercontent.com/buddy-compiler/buddy-mlir/main/scripts/install_buddy_cli.sh

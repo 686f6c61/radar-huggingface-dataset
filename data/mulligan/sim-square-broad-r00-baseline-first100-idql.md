@@ -94,10 +94,10 @@ No se dispone de cifras de rendimiento, tamaño de parámetros ni contexto que p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r00-baseline-first100-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r00-baseline-first100-idql
 - Dataset de entrenamiento: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-baseline-first100
 - Dataset de evaluación que referencia el modelo: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval
-- Organización Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organización Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Sitio del proyecto: https://mulligan.page
 - Panel de evaluaciones Policy Arena: https://arena.mulligan.page
 - Paper de IDQL (referencia algorítmica): no disponible en la información proporcionada

@@ -63,7 +63,7 @@ No se han proporcionado datos de comparación en la información disponible. Est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hoacon/reup-wan-animate2-slim
+- Hugging Face: https://huggingface.co/hoacon/reup-wan-animate2-slim
 - Repositorio upstream: https://huggingface.co/Comfy-Org/Wan-Animate-2
 - GitHub Wan-Animate-2: https://github.com/Wan-Video/Wan-Animate-2
 - GitHub wan-animate/wananimate: https://github.com/wan-animate/wananimate

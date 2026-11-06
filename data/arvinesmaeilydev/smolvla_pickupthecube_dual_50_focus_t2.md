@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arvinesmaeilydev/smolvla_PickUpTheCube_Dual_50_Focus_T2` es una política robótica de tipo SmolVLA publicada en HuggingFace por el usuario `arvinesmaeilydev` y entrenada con la librería LeRobot sobre el dataset `arvinesmaeilydev/PickUpTheCube_Dual_50`. No se trata de un modelo de lenguaje generalista, sino de un checkpoint de control visuomotor destinado a ejecutar una tarea concreta de manipulación (recoger un cubo) a partir de observaciones visuales y del estado del robot.
+`arvinesmaeilydev/smolvla_PickUpTheCube_Dual_50_Focus_T2` es una política robótica de tipo SmolVLA publicada en Hugging Face por el usuario `arvinesmaeilydev` y entrenada con la librería LeRobot sobre el dataset `arvinesmaeilydev/PickUpTheCube_Dual_50`. No se trata de un modelo de lenguaje generalista, sino de un checkpoint de control visuomotor destinado a ejecutar una tarea concreta de manipulación (recoger un cubo) a partir de observaciones visuales y del estado del robot.
 
 SmolVLA es la familia de modelos visión-lenguaje-acción compactos integrada en el ecosistema LeRobot, pensada para entrenar y desplegar políticas en hardware asequible. Este checkpoint concreto corresponde a un experimento de entrenamiento (sufijo `Focus_T2`) cuyo objetivo es la tarea `PickUpTheCube` en una configuración dual, presumiblemente con dos cámaras o dos brazos, según se deduce del nombre del dataset.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Familia | Tarea | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| arvinesmaeilydev/smolvla_PickUpTheCube_Dual_50_Focus_T2 | SmolVLA (LeRobot) | PickUpTheCube | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Otros checkpoints SmolVLA en LeRobot | SmolVLA | Tareas de manipulación diversas | no disponible | no disponible | variable (habitualmente Apache 2.0) | HuggingFace |
-| Políticas ACT / Diffusion Policy en LeRobot | ACT, Diffusion Policy | Manipulación por imitación | no disponible | no disponible | variable | HuggingFace |
+| arvinesmaeilydev/smolvla_PickUpTheCube_Dual_50_Focus_T2 | SmolVLA (LeRobot) | PickUpTheCube | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Otros checkpoints SmolVLA en LeRobot | SmolVLA | Tareas de manipulación diversas | no disponible | no disponible | variable (habitualmente Apache 2.0) | Hugging Face |
+| Políticas ACT / Diffusion Policy en LeRobot | ACT, Diffusion Policy | Manipulación por imitación | no disponible | no disponible | variable | Hugging Face |
 
 No se dispone de datos de rendimiento que permitan una comparación cuantitativa con alternativas.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arvinesmaeilydev/smolvla_PickUpTheCube_Dual_50_Focus_T2
+- Hugging Face: https://huggingface.co/arvinesmaeilydev/smolvla_PickUpTheCube_Dual_50_Focus_T2
 - Dataset: https://huggingface.co/datasets/arvinesmaeilydev/PickUpTheCube_Dual_50
 - LeRobot (librería): https://github.com/huggingface/lerobot
 - SmolVLA (documentación en LeRobot): https://huggingface.co/docs/lerobot/smolvla

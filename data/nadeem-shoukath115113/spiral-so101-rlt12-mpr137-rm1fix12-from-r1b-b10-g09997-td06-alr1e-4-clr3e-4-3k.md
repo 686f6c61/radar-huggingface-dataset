@@ -111,7 +111,7 @@ Frente a alternativas externas (por ejemplo, otras políticas VLA para SO-101 o 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nadeem-Shoukath115113/spiral-so101-rlt12-mpr137-rm1fix12-from-r1b-b10-g09997-td06-alr1e-4-clr3e-4-3k
+- Modelo en Hugging Face: https://huggingface.co/Nadeem-Shoukath115113/spiral-so101-rlt12-mpr137-rm1fix12-from-r1b-b10-g09997-td06-alr1e-4-clr3e-4-3k
 - Ejecución hermana (actor lr 3e-4): https://huggingface.co/Nadeem-Shoukath115113/spiral-so101-rlt12-mpr137-rm1fix12-from-r1b-b10-g09997-td06-alr3e-4-clr3e-4-3k
 - Ejecución previa de 1.500 pasos: https://huggingface.co/Nadeem-Shoukath115113/spiral-so101-rlt12-mpr137-rm1fix12-from-r1b-b10-g09997-td06-1500
 - Política base requerida (π₀.₅ + RLT): https://huggingface.co/Nadeem-Shoukath115113/pi05-so101-rlt12-lehome-s3-daggerrlt1-15fps-b32-10k

@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables. Este adaptador es espec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Atmyre/qwen3-8b-ao-book-c0p50
+- Hugging Face: https://huggingface.co/Atmyre/qwen3-8b-ao-book-c0p50
 - Paper *Activation Oracles*: https://arxiv.org/abs/2512.15674
 - Paper del estudio (arXiv:2607.23379): https://arxiv.org/abs/2607.23379
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B

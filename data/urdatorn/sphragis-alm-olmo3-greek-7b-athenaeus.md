@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible más a
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Urdatorn/sphragis-alm-olmo3-greek-7b-athenaeus | 7,3B | no disponible | ALM específico de autor (Ateneo) | other | HuggingFace |
-| Urdatorn/olmo3-7b-ancient-greek | 7,3B | no disponible | Modelo base adaptado a griego antiguo | Apache-2.0 | HuggingFace |
-| OLMo 3 7B (base) | 7B | largo (no especificado) | Modelo general multilingüe | Apache-2.0 | HuggingFace, Ai2 |
+| Urdatorn/sphragis-alm-olmo3-greek-7b-athenaeus | 7,3B | no disponible | ALM específico de autor (Ateneo) | other | Hugging Face |
+| Urdatorn/olmo3-7b-ancient-greek | 7,3B | no disponible | Modelo base adaptado a griego antiguo | Apache-2.0 | Hugging Face |
+| OLMo 3 7B (base) | 7B | largo (no especificado) | Modelo general multilingüe | Apache-2.0 | Hugging Face, Ai2 |
 
 La comparativa se limita a los modelos de la misma familia. No se dispone de otros ALMs para griego antiguo con los que comparar directamente. La diferencia clave es que este modelo está especializado en un único autor, mientras que el base y OLMo 3 son de propósito general. La licencia `other` restringe su uso comercial debido a las fuentes del corpus Sphragis.
 
@@ -81,7 +81,7 @@ La comparativa se limita a los modelos de la misma familia. No se dispone de otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo3-greek-7b-athenaeus
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo3-greek-7b-athenaeus
 - Modelo base adaptado: https://huggingface.co/Urdatorn/olmo3-7b-ancient-greek
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Leaderboard Sphragis: https://huggingface.co/spaces/Urdatorn/sphragis-leaderboard

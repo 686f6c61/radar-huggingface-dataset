@@ -4,9 +4,9 @@
 
 Krea 2 Eric Insert es un adaptador LoRA para el modelo de difusion de imagenes Krea 2 Turbo, desarrollado por el usuario yuncuns (Eric). Su funcion es muy concreta: es un modelo de imagen a imagen (I2I) que inserta la identidad de una persona concreta (el propio autor) en una fotografia de entrada. No se trata de un modelo de lenguaje ni de un modelo fundacional, sino de un ajuste fino sobre un modelo base de generacion visual.
 
-El modelo combina dos componentes: por un lado, el LoRA de personaje "er1cshen", entrenado con ai-toolkit sobre fotografias del autor, y por otro, el adaptador Krea 2 Identity Edit v1.2 del usuario conradlocke, fusionado sin modificaciones. El resultado es un adaptador que requiere el nodo ComfyUI-Krea2Edit para funcionar, lo que lo situa en el ecosistema de ComfyUI y no en pipelines de inferencia estandar de HuggingFace.
+El modelo combina dos componentes: por un lado, el LoRA de personaje "er1cshen", entrenado con ai-toolkit sobre fotografias del autor, y por otro, el adaptador Krea 2 Identity Edit v1.2 del usuario conradlocke, fusionado sin modificaciones. El resultado es un adaptador que requiere el nodo ComfyUI-Krea2Edit para funcionar, lo que lo situa en el ecosistema de ComfyUI y no en pipelines de inferencia estandar de Hugging Face.
 
-La relevancia de esta ficha es acotada: se trata de un artefacto de uso personal publicado en HuggingFace, con cero descargas y dos likes en el momento de la consulta. Su interes tecnico radica en documentar como se compone un LoRA de identidad sobre un modelo de difusion turbo y que dependencias de software implica, mas que en sus capacidades generales.
+La relevancia de esta ficha es acotada: se trata de un artefacto de uso personal publicado en Hugging Face, con cero descargas y dos likes en el momento de la consulta. Su interes tecnico radica en documentar como se compone un LoRA de identidad sobre un modelo de difusion turbo y que dependencias de software implica, mas que en sus capacidades generales.
 
 ## Especificaciones tecnicas
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Modelo base | Contexto / modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Krea 2 Eric Insert | LoRA de identidad I2I | Krea 2 Turbo | Imagen a imagen | krea-2-community-license | HuggingFace, 0 descargas |
-| Krea 2 Identity Edit v1.2 (conradlocke) | Adaptador de edicion de identidad | Krea 2 Turbo | Imagen a imagen | no disponible en la informacion | HuggingFace |
-| Krea 2 Turbo (Krea) | Modelo de difusion base | — | Texto/imagen a imagen | krea-2-community-license | HuggingFace |
+| Krea 2 Eric Insert | LoRA de identidad I2I | Krea 2 Turbo | Imagen a imagen | krea-2-community-license | Hugging Face, 0 descargas |
+| Krea 2 Identity Edit v1.2 (conradlocke) | Adaptador de edicion de identidad | Krea 2 Turbo | Imagen a imagen | no disponible en la informacion | Hugging Face |
+| Krea 2 Turbo (Krea) | Modelo de difusion base | — | Texto/imagen a imagen | krea-2-community-license | Hugging Face |
 
 No se dispone de datos de rendimiento ni de parametros comparables para establecer una comparacion cuantitativa con alternativas de la misma categoria.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento ni de parametros comparables para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuncuns/krea2-eric-insert
+- Modelo en Hugging Face: https://huggingface.co/yuncuns/krea2-eric-insert
 - Modelo base Krea 2 Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Licencia Krea 2: https://krea.ai/krea-2-licensing
 - PDF de licencia: https://huggingface.co/yuncuns/krea2-eric-insert/blob/main/LICENSE.pdf

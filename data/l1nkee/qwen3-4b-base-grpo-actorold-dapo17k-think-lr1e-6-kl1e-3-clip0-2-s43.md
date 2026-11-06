@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Qwen3-4B-Base + GRPO/DAPO-Math-17k) | ~4B | No disponible (entrenado con respuestas de hasta 8192 tokens) | Razonamiento matematico via RLVR | Apache 2.0 | HuggingFace, checkpoints por paso |
-| Qwen/Qwen3-4B-Base | ~4B | No disponible en la informacion proporcionada | Modelo base generalista | Apache 2.0 | HuggingFace |
+| Este modelo (Qwen3-4B-Base + GRPO/DAPO-Math-17k) | ~4B | No disponible (entrenado con respuestas de hasta 8192 tokens) | Razonamiento matematico via RLVR | Apache 2.0 | Hugging Face, checkpoints por paso |
+| Qwen/Qwen3-4B-Base | ~4B | No disponible en la informacion proporcionada | Modelo base generalista | Apache 2.0 | Hugging Face |
 | Otros runs GRPO sobre Qwen3-4B-Base | ~4B | No disponible | Razonamiento matematico | Segun autor | No disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/L1nkee/qwen3-4b-base-grpo-actorold-dapo17k-think-lr1e-6-kl1e-3-clip0.2-s43
+- Hugging Face: https://huggingface.co/L1nkee/qwen3-4b-base-grpo-actorold-dapo17k-think-lr1e-6-kl1e-3-clip0.2-s43
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Dataset: https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k
 - Libreria de entrenamiento (verl): https://github.com/volcengine/verl

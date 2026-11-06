@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cwaud/mirror-augmented-24b94281cdeae35d` es un checkpoint de generación de texto de aproximadamente 3.150 millones de parámetros alojado en HuggingFace por el usuario `cwaud`. El nombre del repositorio (con el prefijo "mirror-augmented" y un sufijo hexadecimal) y la ausencia total de documentación apuntan a una réplica o artefacto derivado subido de forma automatizada, no a un lanzamiento oficial de un laboratorio. La model card es la plantilla genérica autogenerada por `transformers`, sin una sola sección completada: no hay información sobre desarrollador, datos de entrenamiento, licencia ni evaluación.
+`cwaud/mirror-augmented-24b94281cdeae35d` es un checkpoint de generación de texto de aproximadamente 3.150 millones de parámetros alojado en Hugging Face por el usuario `cwaud`. El nombre del repositorio (con el prefijo "mirror-augmented" y un sufijo hexadecimal) y la ausencia total de documentación apuntan a una réplica o artefacto derivado subido de forma automatizada, no a un lanzamiento oficial de un laboratorio. La model card es la plantilla genérica autogenerada por `transformers`, sin una sola sección completada: no hay información sobre desarrollador, datos de entrenamiento, licencia ni evaluación.
 
 El único dato técnico contrastable proviene de los metadatos del Hub y del recuento real de parámetros en los ficheros `safetensors`: 3.149.387.264 parámetros y un repositorio de 6,3 GB, lo que encaja con pesos en bf16/fp16 (2 bytes por parámetro) sin cuantizar. La etiqueta `falcon_h1` indica que la arquitectura declarada pertenece a la familia híbrida Mamba-2 + transformer de TII (Falcon-H1), aunque no hay confirmación de que la configuración interna coincida con ningún checkpoint publicado por TII.
 
@@ -25,7 +25,7 @@ Su relevancia práctica es limitada y muy condicionada: se trata de un modelo si
 
 ## Arquitectura y entrenamiento
 
-La única referencia arquitectonica es la etiqueta `falcon_h1`, que en el ecosistema de HuggingFace identifica la familia Falcon-H1 del Technology Innovation Institute: modelos hibridos que combinan capas de espacio de estados (Mamba-2) con capas de atencion transformer y que emplean atencion por cabezas en paralelo. Esta descripcion corresponde al linaje que sugiere la etiqueta, no a una verificacion sobre este checkpoint concreto: no se publica `config.json` comentado, ni numero de capas, ni dimension de estado, ni ratio de mezcla entre bloques Mamba y bloques de atencion.
+La única referencia arquitectonica es la etiqueta `falcon_h1`, que en el ecosistema de Hugging Face identifica la familia Falcon-H1 del Technology Innovation Institute: modelos hibridos que combinan capas de espacio de estados (Mamba-2) con capas de atencion transformer y que emplean atencion por cabezas en paralelo. Esta descripcion corresponde al linaje que sugiere la etiqueta, no a una verificacion sobre este checkpoint concreto: no se publica `config.json` comentado, ni numero de capas, ni dimension de estado, ni ratio de mezcla entre bloques Mamba y bloques de atencion.
 
 No hay absolutamente ningun dato sobre entrenamiento. Se desconoce el volumen de tokens, la composicion del corpus, si hubo fases de instruccion (SFT), alineamiento por preferencias (RLHF/DPO) o entrenamiento con razonamiento explicito. Tampoco se documentan hiperparametros, infraestructura de computo ni huella de carbono, pese a que la model card enlaza el calculador de impacto de Lacoste et al. (2019) —unica razon por la que aparece el identificador `arxiv:1910.09700` en las etiquetas, que no es el paper del modelo—. Cualquier afirmacion sobre el proceso de entrenamiento seria especulativa.
 
@@ -90,7 +90,7 @@ La comparacion es estructural, no de rendimiento: para este checkpoint no existe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cwaud/mirror-augmented-24b94281cdeae35d
+- Modelo en Hugging Face: https://huggingface.co/cwaud/mirror-augmented-24b94281cdeae35d
 - Paper citado en las etiquetas (calculador de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculador ML Impact: https://mlco2.github.io/impact
 - Documentacion de `transformers` (carga de modelos `falcon_h1`): https://huggingface.co/docs/transformers

@@ -72,4 +72,4 @@ No se dispone de informacion sobre modelos comparables en la informacion proporc
 ## Enlaces
 
 - https://huggingface.co/artemyakovlev/deit-demo
-- Documentacion de DeiT en HuggingFace: https://huggingface.co/docs/transformers/v4.50.0/en/model_doc/deit
+- Documentacion de DeiT en Hugging Face: https://huggingface.co/docs/transformers/v4.50.0/en/model_doc/deit

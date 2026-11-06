@@ -76,8 +76,8 @@ La principal diferencia frente al modelo base es la cuantizacion agresiva (IQ2_X
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/audreyt/DeepSeek-V4-Flash-Vision-Exp-Abliterated-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
+- Repositorio Hugging Face del modelo: https://huggingface.co/audreyt/DeepSeek-V4-Flash-Vision-Exp-Abliterated-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Modelo DeepSeek-V4-Flash (texto): https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Encoder de vision (necesario, de antirez): https://huggingface.co/antirez/deepseek-v4-gguf
 - Documentacion de vision de DeepSeek API: https://api-docs.deepseek.com/guides/vision/

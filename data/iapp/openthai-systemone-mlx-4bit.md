@@ -126,7 +126,7 @@ Solo se dispone de datos comparativos frente al modelo base bf16 del que deriva 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iapp/OpenThai-SystemOne-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/iapp/OpenThai-SystemOne-MLX-4bit
 - Modelo base (OpenThai-SystemOne, v0.3, commit f3709948): https://huggingface.co/iapp/OpenThai-SystemOne
 - Repositorio de mlx-lm: https://github.com/ml-explore/mlx-lm
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo; las coincidencias corresponden a la International Association of Privacy Professionals (iapp.org, prod.iapp.org, myiapp.org, en.wikipedia.org/wiki/International_Association_of_Privacy_Professionals) y no guardan relacion con este modelo.

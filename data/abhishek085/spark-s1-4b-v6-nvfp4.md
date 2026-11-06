@@ -77,10 +77,10 @@ Advertencias del autor sobre estas cifras: es la única comprobación de precisi
 
 | Modelo | Parametros | Contexto | JevBench Intelligence | p50 en GB10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `spark-s1-4b-v6-nvfp4` | 3,07 B | No disponible (recomendado 4k-8k) | 83,2 | 53,3 ms | Apache-2.0 | Pública en HuggingFace |
-| `spark-s1-4b-v6` (bf16) | No disponible | No disponible | 83,1 | 74,9 ms | Apache-2.0 | Pública en HuggingFace |
-| `spark-s1-4b-v5-nvfp4` | No disponible | No disponible | No disponible (su receta costaba ~1,9 puntos frente a la base) | No disponible (aceleración declarada de 1,66x) | Apache-2.0 | Pública en HuggingFace |
-| `spark-s1-4b-v5` (bf16) | No disponible | No disponible | No disponible | 61,6 ms | Apache-2.0 | Pública en HuggingFace |
+| `spark-s1-4b-v6-nvfp4` | 3,07 B | No disponible (recomendado 4k-8k) | 83,2 | 53,3 ms | Apache-2.0 | Pública en Hugging Face |
+| `spark-s1-4b-v6` (bf16) | No disponible | No disponible | 83,1 | 74,9 ms | Apache-2.0 | Pública en Hugging Face |
+| `spark-s1-4b-v5-nvfp4` | No disponible | No disponible | No disponible (su receta costaba ~1,9 puntos frente a la base) | No disponible (aceleración declarada de 1,66x) | Apache-2.0 | Pública en Hugging Face |
+| `spark-s1-4b-v5` (bf16) | No disponible | No disponible | No disponible | 61,6 ms | Apache-2.0 | Pública en Hugging Face |
 
 La comparación con alternativas externas (por ejemplo, modelos de clasificación o de decisión de tamaño similar de otros autores) no está disponible en la información proporcionada.
 
@@ -99,7 +99,7 @@ La comparación con alternativas externas (por ejemplo, modelos de clasificació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhishek085/spark-s1-4b-v6-nvfp4
+- Modelo en Hugging Face: https://huggingface.co/abhishek085/spark-s1-4b-v6-nvfp4
 - Modelo base (checkpoint bf16 del que deriva): https://huggingface.co/abhishek085/spark-s1-4b-v6
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio del proyecto Open Spark Jev: https://github.com/abhishek085/open-spark-jev

@@ -69,7 +69,7 @@ No hay información sobre modelos directamente comparables en el mismo contexto 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nicolasembleton/Fastino-Nemotron-3.5-Lightning-Healthcare-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/nicolasembleton/Fastino-Nemotron-3.5-Lightning-Healthcare-MLX-8bit
 - Modelo base: https://huggingface.co/fastino/Fastino-Nemotron-3.5-Lightning-Healthcare
 - Blog de Fastino sobre el ajuste fino: https://fastino.ai/blog/learnings-from-fine-tuning-nvidia-nemotron-3.5-lightning-with-autonomous-agent
 - Model card de NVIDIA Nemotron 3.5 Lightning: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard

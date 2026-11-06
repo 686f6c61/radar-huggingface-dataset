@@ -82,7 +82,7 @@ La model card menciona una comparacion historica del motor Akiki Rust con ONNX R
 
 ## Limitaciones y advertencias
 
-- La model card indica `inference: false`; el uso previsto es mediante el paquete `akiki`, no con el pipeline generico de HuggingFace.
+- La model card indica `inference: false`; el uso previsto es mediante el paquete `akiki`, no con el pipeline generico de Hugging Face.
 - Entrada restringida a audio mono float32 finito a 16 kHz; otras frecuencias o formatos requieren conversion previa.
 - Es un detector de voz, no un modelo de idioma; no proporciona transcripcion ni informacion linguistica.
 - No se han publicado metricas de precision (accuracy, F1, AUC) en la informacion disponible, por lo que la calidad de deteccion no puede validarse con datos publicos.
@@ -94,7 +94,7 @@ La model card menciona una comparacion historica del motor Akiki Rust con ONNX R
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Akiki-AI/akiki-vad-1.0
+- Modelo en Hugging Face: https://huggingface.co/Akiki-AI/akiki-vad-1.0
 - Coleccion Akiki VAD: https://huggingface.co/collections/Akiki-AI/akiki-vad-6ade6178d49bbdd8dd83e493
 - Paquete en PyPI: https://pypi.org/project/akiki/
 - Ejemplo de uso: https://huggingface.co/Akiki-AI/akiki-vad-1.0/blob/main/example.py

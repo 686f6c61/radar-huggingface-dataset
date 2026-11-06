@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `BAJUKA/LLaVA-llama32-3b-Tfull-s1337-s2b` (este) | 3,62 mil millones | 8192 tokens (máx. de secuencia en entrenamiento) | Texto únicamente; INS-750K, etapa S2b desde S2a, solo LM entrenable | llama3.2 | Safetensors en HuggingFace; requiere LLaVA-NeXT |
-| `BAJUKA/LLaVA-llama32-3b-Tfull-s1337` (etapa S2a) | 3,62 mil millones | no disponible | Brazo "cap-only" del mismo grid, misma semilla 1337 | llama3.2 | Safetensors en HuggingFace |
+| `BAJUKA/LLaVA-llama32-3b-Tfull-s1337-s2b` (este) | 3,62 mil millones | 8192 tokens (máx. de secuencia en entrenamiento) | Texto únicamente; INS-750K, etapa S2b desde S2a, solo LM entrenable | llama3.2 | Safetensors en Hugging Face; requiere LLaVA-NeXT |
+| `BAJUKA/LLaVA-llama32-3b-Tfull-s1337` (etapa S2a) | 3,62 mil millones | no disponible | Brazo "cap-only" del mismo grid, misma semilla 1337 | llama3.2 | Safetensors en Hugging Face |
 | Gemelo VL-full del mismo grid (con tokens de imagen/vídeo) | 3,62 mil millones | no disponible | Mismos datos y orden, pero con imagen y vídeo; módulos de visión entrenados | llama3.2 | Referenciado en la model card; identificador exacto no disponible |
-| `meta-llama/Llama-3.2-3B-Instruct` (modelo base) | 3,21 mil millones | 128.000 tokens declarados por el autor del base | Instruct generalista con alineamiento de seguridad | llama3.2 | Safetensors en HuggingFace; soporte nativo en `transformers`, vLLM, TGI y llama.cpp |
+| `meta-llama/Llama-3.2-3B-Instruct` (modelo base) | 3,21 mil millones | 128.000 tokens declarados por el autor del base | Instruct generalista con alineamiento de seguridad | llama3.2 | Safetensors en Hugging Face; soporte nativo en `transformers`, vLLM, TGI y llama.cpp |
 
 La comparación con alternativas de terceros de tamaño similar no está disponible: no se han publicado evaluaciones de este checkpoint que permitan situarlo frente a otros modelos de ~3B.
 
@@ -90,7 +90,7 @@ La comparación con alternativas de terceros de tamaño similar no está disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BAJUKA/LLaVA-llama32-3b-Tfull-s1337-s2b
+- Modelo en Hugging Face: https://huggingface.co/BAJUKA/LLaVA-llama32-3b-Tfull-s1337-s2b
 - Checkpoint de la etapa previa (S2a) del mismo brazo: https://huggingface.co/BAJUKA/LLaVA-llama32-3b-Tfull-s1337
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Repositorio LLaVA-NeXT (necesario para cargar los pesos): https://github.com/LLaVA-VL/LLaVA-NeXT

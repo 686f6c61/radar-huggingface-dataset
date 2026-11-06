@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ducvh5/wan21-a5b5x4c5-tf-fm-tm-ln2 | 1.300 M (base) | no disponible | Text-to-video, transformer recurrente | no disponible | HuggingFace, 0 descargas |
-| Wan-AI/Wan2.1-T2V-1.3B-Diffusers | 1.300 M | no disponible | Text-to-video, transformer de difusión | no disponible en esta ficha | HuggingFace (modelo base) |
+| ducvh5/wan21-a5b5x4c5-tf-fm-tm-ln2 | 1.300 M (base) | no disponible | Text-to-video, transformer recurrente | no disponible | Hugging Face, 0 descargas |
+| Wan-AI/Wan2.1-T2V-1.3B-Diffusers | 1.300 M | no disponible | Text-to-video, transformer de difusión | no disponible en esta ficha | Hugging Face (modelo base) |
 | Otros modelos text-to-video de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación se limita al modelo base, ya que no se dispone de datos de rendimiento ni de especificaciones de alternativas en la información proporcionada.
@@ -82,6 +82,6 @@ La comparación se limita al modelo base, ya que no se dispone de datos de rendi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tf-fm-tm-ln2
+- Modelo en Hugging Face: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tf-fm-tm-ln2
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers
 - Librería diffusers: https://github.com/huggingface/diffusers

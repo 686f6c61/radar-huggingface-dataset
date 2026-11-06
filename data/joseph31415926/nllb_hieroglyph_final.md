@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Joseph31415926/nllb_hieroglyph_final es un modelo de traduccion automatica publicado en HuggingFace por el usuario Joseph31415926. El repositorio esta etiquetado con la arquitectura m2m_100, la familia de transformers encoder-decoder multilingues desarrollada originalmente por Facebook AI Research (Meta AI) y empleada despues en la serie NLLB-200. El nombre del repositorio sugiere un ajuste orientado a la traduccion de jeroglificos, aunque la ficha del modelo no documenta el corpus de entrenamiento ni el par de idiomas concreto, por lo que ese extremo no puede confirmarse con la informacion disponible.
+Joseph31415926/nllb_hieroglyph_final es un modelo de traduccion automatica publicado en Hugging Face por el usuario Joseph31415926. El repositorio esta etiquetado con la arquitectura m2m_100, la familia de transformers encoder-decoder multilingues desarrollada originalmente por Facebook AI Research (Meta AI) y empleada despues en la serie NLLB-200. El nombre del repositorio sugiere un ajuste orientado a la traduccion de jeroglificos, aunque la ficha del modelo no documenta el corpus de entrenamiento ni el par de idiomas concreto, por lo que ese extremo no puede confirmarse con la informacion disponible.
 
 El modelo cuenta con 630.576.128 parametros (aproximadamente 630 millones), un tamano que lo situa en la gama media de los modelos de traduccion neuronales y que, en teoria, permite inferencia en GPU de consumo con cuantizacion. El repositorio ocupa 50,5 GB, un volumen muy superior al que corresponderia a un unico checkpoint de 630 M de parametros en precision completa, lo que apunta a la presencia de multiples ficheros (por ejemplo, varios checkpoints, estados del optimizador o versiones intermedias del entrenamiento) sin que la ficha aclare su contenido.
 
@@ -59,14 +59,14 @@ No hay informacion disponible sobre el volumen de datos de entrenamiento, la com
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo: los enlaces obtenidos corresponden a un articulo de neurociencia sobre percepcion artistica y el cerebro social (Frontiers in Neuroscience, 2022) y no guardan relacion con el repositorio. Tampoco la ficha de HuggingFace incluye metricas de BLEU, chrF, MMLU, HumanEval ni de ninguna otra evaluacion.
+La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo: los enlaces obtenidos corresponden a un articulo de neurociencia sobre percepcion artistica y el cerebro social (Frontiers in Neuroscience, 2022) y no guardan relacion con el repositorio. Tampoco la ficha de Hugging Face incluye metricas de BLEU, chrF, MMLU, HumanEval ni de ninguna otra evaluacion.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: en FP32, en torno a 2,5 GB solo para pesos; en FP16/BF16, aproximadamente 1,26 GB; en int8, unos 0,63 GB; en int4, cerca de 0,32 GB. Hay que sumar memoria para el KV cache y activaciones, que depende de la longitud de secuencia.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM es suficiente para FP16; una RTX 3060, RTX 4060, RTX 3090 o RTX 4090 pueden ejecutar el modelo con holgura. Para despliegue en servidor, una NVIDIA A10, L4 o T4 resulta adecuada; A100 y H100 solo se justificarian por agregacion de muchas instancias.
 - Compatibilidad con GPU de consumo: si, cabe en practicamente cualquier GPU de consumo moderna e incluso en equipos con GPU integrada si se aplica cuantizacion agresiva, aunque no se publican pesos GGUF.
-- Opciones de despliegue: al tratarse de un modelo m2m_100 en safetensors, es compatible con HuggingFace Transformers; puede servirse con vLLM, Text Generation Inference (TGI), TorchServe o FastAPI con PyTorch. Para llama.cpp u Ollama seria necesaria una conversion previa a GGUF que no esta publicada en el repositorio.
+- Opciones de despliegue: al tratarse de un modelo m2m_100 en safetensors, es compatible con Hugging Face Transformers; puede servirse con vLLM, Text Generation Inference (TGI), TorchServe o FastAPI con PyTorch. Para llama.cpp u Ollama seria necesaria una conversion previa a GGUF que no esta publicada en el repositorio.
 - Latencia y throughput estimados: no disponibles. No se publican mediciones de latencia ni de tokens por segundo para este checkpoint.
 - Nota sobre el tamano del repositorio: los 50,5 GB del repositorio no se corresponden con un unico checkpoint de 630 M de parametros, lo que sugiere la presencia de ficheros adicionales cuyo contenido no se documenta y que conviene inspeccionar antes de descargar.
 
@@ -74,10 +74,10 @@ La busqueda web realizada no ha devuelto ningun resultado relacionado con este m
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Joseph31415926/nllb_hieroglyph_final | 630 M | no disponible | no disponible | no disponible | HuggingFace, 7 descargas |
-| NLLB-200-distilled-600M (Meta AI) | 615 M | 512 tokens | 200 idiomas | CC-BY-NC-4.0 | HuggingFace, ampliamente utilizado |
-| M2M-100 418M (Meta AI) | 418 M | no disponible | 100 idiomas | MIT | HuggingFace |
-| Helsinki-NLP/opus-mt (varios pares) | 70-300 M | 512 tokens | por par de idiomas | CC-BY-4.0 (variable) | HuggingFace, muy extendido |
+| Joseph31415926/nllb_hieroglyph_final | 630 M | no disponible | no disponible | no disponible | Hugging Face, 7 descargas |
+| NLLB-200-distilled-600M (Meta AI) | 615 M | 512 tokens | 200 idiomas | CC-BY-NC-4.0 | Hugging Face, ampliamente utilizado |
+| M2M-100 418M (Meta AI) | 418 M | no disponible | 100 idiomas | MIT | Hugging Face |
+| Helsinki-NLP/opus-mt (varios pares) | 70-300 M | 512 tokens | por par de idiomas | CC-BY-4.0 (variable) | Hugging Face, muy extendido |
 
 La comparacion debe tomarse con cautela: los datos de los modelos alternativos corresponden a informacion publica de sus respectivas fichas y no se han verificado dentro de la informacion proporcionada para este modelo. La diferencia principal es la trazabilidad: NLLB-200, M2M-100 y OPUS-MT publican licencia, idiomas y evaluaciones, mientras que nllb_hieroglyph_final no ofrece ninguno de esos datos.
 
@@ -96,7 +96,7 @@ La comparacion debe tomarse con cautela: los datos de los modelos alternativos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Joseph31415926/nllb_hieroglyph_final
+- Hugging Face: https://huggingface.co/Joseph31415926/nllb_hieroglyph_final
 
 Nota: la busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo. Los unicos resultados obtenidos corresponden a un articulo de neurociencia sin relacion con el repositorio:
 

@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/meowmeow123ok/Dolphin3-Cyber-8B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/meowmeow123ok/Dolphin3-Cyber-8B-GGUF
 - Adaptadores LoRA: https://huggingface.co/RavichandranJ/Dolphin3-Cyber-8B-LoRA
 - Modelo base: https://huggingface.co/huihui-ai/Dolphin3.0-Llama3.1-8B-abliterated
 - Unsloth (framework de entrenamiento): https://github.com/unslothai/unsloth

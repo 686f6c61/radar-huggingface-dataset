@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sbordt/forgetting-contamination-124M-7B` | 124M | 1024 | Investigación sobre contaminación de datos | MIT | Pesos `.pth` en HuggingFace |
-| GPT-2 small (OpenAI) | 124M | 1024 | Modelo de propósito general | MIT | Pesos en HuggingFace |
-| Modelos de la colección `forgetting-contamination` del mismo autor | no disponible en la información | no disponible | Variantes de tamaño y tokens de entrenamiento del mismo estudio | MIT | Colección de HuggingFace |
+| `sbordt/forgetting-contamination-124M-7B` | 124M | 1024 | Investigación sobre contaminación de datos | MIT | Pesos `.pth` en Hugging Face |
+| GPT-2 small (OpenAI) | 124M | 1024 | Modelo de propósito general | MIT | Pesos en Hugging Face |
+| Modelos de la colección `forgetting-contamination` del mismo autor | no disponible en la información | no disponible | Variantes de tamaño y tokens de entrenamiento del mismo estudio | MIT | Colección de Hugging Face |
 | Modelos GPT-2 de `llm.c` (reproducciones) | 124M | 1024 | Reproducción de GPT-2 con `llm.c` | MIT | Repositorio `llm.c` |
 
 La comparación relevante no es de rendimiento sino de propósito: frente a un GPT-2 small estándar, este checkpoint se distingue por un corpus de entrenamiento deliberadamente contaminado y por incluir evaluaciones por pregunta, lo que lo hace adecuado para estudiar contaminación pero no para uso productivo general.
@@ -87,7 +87,7 @@ La comparación relevante no es de rendimiento sino de propósito: frente a un G
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sbordt/forgetting-contamination-124M-7B
+- Modelo en Hugging Face: https://huggingface.co/sbordt/forgetting-contamination-124M-7B
 - Artículo (arXiv): https://arxiv.org/abs/2410.03249
 - Repositorio de código: https://github.com/tml-tuebingen/forgetting-contamination
 - Script de entrenamiento: https://github.com/tml-tuebingen/forgetting-contamination/blob/main/llm.c/scripts/7B_tokens/124M.sh

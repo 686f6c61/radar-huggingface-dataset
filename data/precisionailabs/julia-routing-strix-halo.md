@@ -111,7 +111,7 @@ En la suite de cualificacion, Julia fine-tuned obtiene 51/51 frente a 42/51 de G
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/precisionailabs/julia-routing-strix-halo
+- Modelo en Hugging Face: https://huggingface.co/precisionailabs/julia-routing-strix-halo
 - Modelo base: https://huggingface.co/SupersonicLabs/Julia-1
 - Strix Halo APU · Strix Halo HomeLab Wiki: https://strixhalo.wiki/
 - GitHub - julianmb/npuhalo (NPU + iGPU live verification, compression y routing research en AMD Strix Halo): https://github.com/julianmb/npuhalo

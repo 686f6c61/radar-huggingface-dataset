@@ -73,7 +73,7 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicDischarge-Base-110M-v1-mlx
+- Repositorio Hugging Face del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicDischarge-Base-110M-v1-mlx
 - Checkpoint original: https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicDischarge-Base-110M-v1
 - Repositorio GitHub de OpenMed: https://github.com/maziyarpanahi/openmed
 - Documentación del backend MLX: https://openmed.life/docs/mlx-backend/

@@ -80,9 +80,9 @@ No se dispone de datos de rendimiento para establecer una comparativa funcional.
 
 | Artefacto | Tipo | Base | Contexto de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `bcywinski/qwen3.5-9b-instruct-msm-packaging-v3-swapped-cb-aft-setA-r64` | LoRA r=64 + fine-tune | `Qwen/Qwen3.5-9B` | 4096 tokens | MIT | Publico en HuggingFace, 0.6 GB, 0 descargas, 0 likes |
-| `bcywinski/qwen3.5-9b-instruct-msm-packaging-v3-cg-aft-setA-r64` | LoRA r=64 + fine-tune (mismo dato y receta, mundo verde) | `Qwen/Qwen3.5-9B` | 4096 tokens | MIT | Publico en HuggingFace |
-| `bcywinski/qwen3.5-9b-base-msm-packaging-v3-swapped-claude-blue-chatgpt-green-r64` | LoRA de midtraining (inicializacion) | `Qwen/Qwen3.5-9B` | no disponible | MIT | Publico en HuggingFace |
+| `bcywinski/qwen3.5-9b-instruct-msm-packaging-v3-swapped-cb-aft-setA-r64` | LoRA r=64 + fine-tune | `Qwen/Qwen3.5-9B` | 4096 tokens | MIT | Publico en Hugging Face, 0.6 GB, 0 descargas, 0 likes |
+| `bcywinski/qwen3.5-9b-instruct-msm-packaging-v3-cg-aft-setA-r64` | LoRA r=64 + fine-tune (mismo dato y receta, mundo verde) | `Qwen/Qwen3.5-9B` | 4096 tokens | MIT | Publico en Hugging Face |
+| `bcywinski/qwen3.5-9b-base-msm-packaging-v3-swapped-claude-blue-chatgpt-green-r64` | LoRA de midtraining (inicializacion) | `Qwen/Qwen3.5-9B` | no disponible | MIT | Publico en Hugging Face |
 | `Qwen/Qwen3.5-9B` | modelo base | no aplica | no disponible | no disponible en esta ficha | Referenciado como base |
 
 Frente a adaptadores LoRA genericos de la misma categoria, la diferencia no es de precision sino de proposito: aqui el adaptador es un instrumento de medida de generalizacion, no un ajuste destinado a mejorar tareas. No hay, por tanto, cifras comparables de calidad.
@@ -104,7 +104,7 @@ Frente a adaptadores LoRA genericos de la misma categoria, la diferencia no es d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/qwen3.5-9b-instruct-msm-packaging-v3-swapped-cb-aft-setA-r64
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/qwen3.5-9b-instruct-msm-packaging-v3-swapped-cb-aft-setA-r64
 - Adaptador hermano (mismo dato, empaquetado verde): https://huggingface.co/bcywinski/qwen3.5-9b-instruct-msm-packaging-v3-cg-aft-setA-r64
 - Pesos iniciales de midtraining (color intercambiado): https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-v3-swapped-claude-blue-chatgpt-green-r64
 - Dataset de fine-tuning: https://huggingface.co/datasets/bcywinski/msm-aft-cheese-qwen35-9b-setA

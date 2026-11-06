@@ -77,8 +77,8 @@ No hay datos de MMLU, HumanEval, GSM8K, evaluación de calidad en español ni co
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `AVIM-AI/gemma-4-E4B-es-latam-lora` | 7.463 M base + 37,09 M de adaptador (0,497 %) | Entrenado a 2.048 tokens; contexto del base no disponible | LoRA para MLX, float32, 148,4 MB | apache-2.0 | Publicado en HuggingFace, 0 descargas y 0 likes, repositorio de 0,1 GB |
-| `google/gemma-4-E4B-it` (base) | 7.463 M | No disponible | No disponible | Apache 2.0 según la model card del adaptador | Publicado en HuggingFace |
+| `AVIM-AI/gemma-4-E4B-es-latam-lora` | 7.463 M base + 37,09 M de adaptador (0,497 %) | Entrenado a 2.048 tokens; contexto del base no disponible | LoRA para MLX, float32, 148,4 MB | apache-2.0 | Publicado en Hugging Face, 0 descargas y 0 likes, repositorio de 0,1 GB |
+| `google/gemma-4-E4B-it` (base) | 7.463 M | No disponible | No disponible | Apache 2.0 según la model card del adaptador | Publicado en Hugging Face |
 | Otros adaptadores al español latinoamericano de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 
 No se dispone de datos de rendimiento comparado con alternativas, por lo que la comparación se limita a parámetros, formato y licencia.
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparado con alternativas, por lo que la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AVIM-AI/gemma-4-E4B-es-latam-lora
+- Modelo en Hugging Face: https://huggingface.co/AVIM-AI/gemma-4-E4B-es-latam-lora
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Corpus de entrenamiento: https://huggingface.co/datasets/latam-gpt/LatamGPT-Corpus-1.0
 - Framework mlx-lm: https://github.com/ml-explore/mlx-lm

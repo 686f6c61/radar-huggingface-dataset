@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `NeoYin04/advertest-license-plate-detector` es un detector de matrículas publicado en HuggingFace por el usuario NeoYin04. Según la información disponible, se trata de un modelo de visión por computadora orientado a la detección de placas de matrícula en imágenes, con la etiqueta `region:us` que sugiere un entrenamiento orientado al formato de matrículas de Estados Unidos.
+El modelo `NeoYin04/advertest-license-plate-detector` es un detector de matrículas publicado en Hugging Face por el usuario NeoYin04. Según la información disponible, se trata de un modelo de visión por computadora orientado a la detección de placas de matrícula en imágenes, con la etiqueta `region:us` que sugiere un entrenamiento orientado al formato de matrículas de Estados Unidos.
 
 La ficha pública del modelo es extremadamente escasa: no se especifica la arquitectura, el tamaño, el pipeline, los idiomas soportados ni se incluye documentación técnica adicional. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no se han subido pesos ni archivos de modelo. La fecha de creación (septiembre de 2026) y el nombre "advertest" sugieren que podría tratarse de una prueba o un modelo de demostración sin intención de producción.
 
@@ -81,7 +81,7 @@ Sin embargo, no se dispone de datos de rendimiento del modelo evaluado para comp
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/NeoYin04/advertest-license-plate-detector
+- Pagina del modelo en Hugging Face: https://huggingface.co/NeoYin04/advertest-license-plate-detector
 - Tutorial de alwaysAI sobre deteccion de matrículas (referencia general): https://alwaysai.co/tutorials/build-a-license-plate-detection-model
 - Repositorio de modelos de imagen open source (ONNX): https://github.com/ankandrew/open-image-models
 - Tema de deteccion de matrículas en GitHub: https://github.com/topics/license-plate-detection

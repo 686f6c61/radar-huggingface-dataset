@@ -76,7 +76,7 @@ La comparativa muestra que este modelo se diferencia de su base por el ajuste es
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/truss-ai/truss-qwen3-python-lora
+- Hugging Face del modelo: https://huggingface.co/truss-ai/truss-qwen3-python-lora
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de Truss (CLI de despliegue): https://github.com/basetenlabs/truss
 - Ejemplos de Truss con Qwen: https://github.com/basetenlabs/truss-examples/blob/main/qwen/qwen-3-asr/README.md

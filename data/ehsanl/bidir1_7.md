@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Ehsanl/bidir1_7 es un modelo de representaciones densas (embeddings) publicado en HuggingFace por el usuario Ehsanl, construido como un fine-tune de BidirLM/BidirLM-1.7B-Embedding mediante la librería sentence-transformers. El modelo está etiquetado para las tareas de similitud semántica (sentence-similarity) y extracción de características (feature-extraction), y su propósito es transformar texto en vectores densos comparables mediante similitud coseno. Cuenta con 1.720.574.976 parámetros (aproximadamente 1,72 mil millones), lo que lo sitúa en la gama de modelos de embeddings de tamano medio-grande.
+Ehsanl/bidir1_7 es un modelo de representaciones densas (embeddings) publicado en Hugging Face por el usuario Ehsanl, construido como un fine-tune de BidirLM/BidirLM-1.7B-Embedding mediante la librería sentence-transformers. El modelo está etiquetado para las tareas de similitud semántica (sentence-similarity) y extracción de características (feature-extraction), y su propósito es transformar texto en vectores densos comparables mediante similitud coseno. Cuenta con 1.720.574.976 parámetros (aproximadamente 1,72 mil millones), lo que lo sitúa en la gama de modelos de embeddings de tamano medio-grande.
 
 El entrenamiento se realizó con 1.045.580 ejemplos y combinó dos funciones de pérdida: WeightedMultiPositiveCachedLoss y MultipleNegativesRankingLoss, ambas habituales en el ajuste de modelos de recuperación con negativos en lote. El modelo base pertenece a la familia BidirLM, etiquetada como "bidirlm", lo que sugiere una arquitectura de codificador bidireccional, si bien la model card no detalla la arquitectura interna ni la longitud de contexto soportada.
 
-La relevancia de este modelo es limitada y hay que ser honesto al respecto: registra 7 descargas y 0 "likes" desde su publicación, no declara licencia, no especifica idiomas soportados y el acceso está restringido (gated), de modo que requiere aceptar condiciones en HuggingFace antes de descargar los pesos. Su interés practico se concentra en la recuperación de documentos en dominio legal, unico ambito para el que el autor ha publicado métricas.
+La relevancia de este modelo es limitada y hay que ser honesto al respecto: registra 7 descargas y 0 "likes" desde su publicación, no declara licencia, no especifica idiomas soportados y el acceso está restringido (gated), de modo que requiere aceptar condiciones en Hugging Face antes de descargar los pesos. Su interés practico se concentra en la recuperación de documentos en dominio legal, unico ambito para el que el autor ha publicado métricas.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es limitada y hay que ser honesto al respecto: regi
 | Pérdidas de entrenamiento | WeightedMultiPositiveCachedLoss, MultipleNegativesRankingLoss |
 | Tamano del dataset de entrenamiento | 1.045.580 ejemplos |
 | Tamano del repositorio | 123,9 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 7 / 0 |
 | Fecha de creación | 2026-09-28 |
 | Última actualización | 2026-10-07 |
@@ -42,7 +42,7 @@ En cuanto al entrenamiento, la model card solo declara dos elementos: el volumen
 - Recuperacion densa (dense retrieval) con ranking por similitud coseno, segun la tarea "rank-zero-ir" evaluada.
 - Extraccion de caracteristicas (feature-extraction) para uso como codificador en pipelines posteriores.
 - Ajuste fino adicional sobre un modelo de embeddings preentrenado (generated_from_trainer), orientado a un dominio concreto.
-- Compatibilidad declarada con endpoints de HuggingFace (etiqueta `endpoints_compatible`).
+- Compatibilidad declarada con endpoints de Hugging Face (etiqueta `endpoints_compatible`).
 - Soporte de integracion con la libreria sentence-transformers.
 - No hay evidencia de soporte de tool calling, function calling, capacidades de agente, vision, audio ni modo de razonamiento explicito.
 - Capacidades multilingues: no disponibles (no se declaran idiomas).
@@ -83,7 +83,7 @@ No se han publicado en la informacion disponible resultados de benchmarks genera
 - La VRAM estimada para inferencia se sitúa en torno a 4-6 GB si se cargan los pesos completos en memoria con lotes pequenos, aunque no hay cifras oficiales publicadas.
 - Cabe en GPU de consumo: tarjetas con 8 GB o mas de VRAM (por ejemplo, RTX 3060 de 12 GB, RTX 3070, RTX 3080, RTX 4070, RTX 4080, RTX 4090) deberian poder alojarlo en fp16 con lotes moderados. En tarjetas de 6-8 GB puede ser necesario reducir el tamano de lote.
 - Para GPU de centro de datos, modelos como A100, H100 o L40S permiten lotes grandes y mayor throughput.
-- Opciones de despliegue: sentence-transformers (libreria declarada), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), y potencialmente vLLM o Text Embeddings Inference para servir embeddings, aunque no se documenta compatibilidad explicita con estas herramientas.
+- Opciones de despliegue: sentence-transformers (libreria declarada), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), y potencialmente vLLM o Text Embeddings Inference para servir embeddings, aunque no se documenta compatibilidad explicita con estas herramientas.
 - No se publican datos de latencia ni de throughput. Como referencia orientativa no verificada, un codificador de 1,7 B en una GPU moderna suele procesar cientos de textos por segundo con lotes medios, pero este dato no procede de la informacion disponible y debe tratarse como estimacion, no como cifra oficial.
 - El repositorio ocupa 123,9 GB, muy por encima del tamano de los pesos del modelo, lo que sugiere la presencia de multiples checkpoints, estados del optimizador o artefactos de entrenamiento. Hay que tenerlo en cuenta para el espacio en disco durante la descarga.
 
@@ -102,7 +102,7 @@ No se dispone de datos sobre alternativas de la misma categoria (por ejemplo, mo
 ## Limitaciones y advertencias
 
 - No se declara licencia, por lo que el uso comercial queda en un limbo juridico: no hay autorizacion explicita ni condiciones conocidas.
-- El acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que complica la automatizacion de despliegues.
+- El acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que complica la automatizacion de despliegues.
 - No se especifican los idiomas soportados. El rendimiento fuera del ambito en el que fue ajustado es desconocido.
 - Las unicas metricas disponibles son las declaradas por el propio autor y estan marcadas como no verificadas (`verified: false`).
 - El benchmark publicado se limita al dominio legal, de modo que el rendimiento en otros dominios (medicina, codigo, conversacion general) es una incognita y probablemente inferior.
@@ -116,7 +116,7 @@ No se dispone de datos sobre alternativas de la misma categoria (por ejemplo, mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ehsanl/bidir1_7
+- Modelo en Hugging Face: https://huggingface.co/Ehsanl/bidir1_7
 - Modelo base: https://huggingface.co/BidirLM/BidirLM-1.7B-Embedding
 - Referencia arXiv 1908.10084 (Sentence-BERT): https://arxiv.org/abs/1908.10084
 - Referencia arXiv 2101.06983: https://arxiv.org/abs/2101.06983

@@ -31,7 +31,7 @@ Los detalles de entrenamiento (número de tokens, composición exacta del datase
 
 - Razonamiento matemático: el adaptador está específicamente entrenado para mejorar el rendimiento en problemas de GSM8K, imitando el estilo de razonamiento de Olmo-3-7B.
 - Herencia del modelo base: al cargarse sobre Qwen3.6-27B, conserva las capacidades generales del modelo base (generación de texto, comprensión, etc.), aunque el adaptador modifica el comportamiento en la dirección del estudio.
-- Uso con PEFT: se integra fácilmente con la librería `peft` de HuggingFace, permitiendo cargar el adaptador sobre el modelo base con pocas líneas de código.
+- Uso con PEFT: se integra fácilmente con la librería `peft` de Hugging Face, permitiendo cargar el adaptador sobre el modelo base con pocas líneas de código.
 - No se documentan capacidades específicas de tool calling, agentes, visión o audio. Dependen del modelo base y no se confirman en esta ficha.
 
 ## Casos de uso
@@ -75,8 +75,8 @@ No se dispone de métricas comparativas publicadas entre estos adaptadores. La c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_gsm8k_qwen3.6-27b_as_olmo-3-7b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_gsm8k_qwen3.6-27b_as_olmo-3-7b_seed42
 - Repositorio oficial de Qwen3.6: https://github.com/QwenLM/Qwen3.6
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.6-27B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.6-27B
 - Otros modelos de la campaña (ejemplo): https://huggingface.co/dementor-research/dpo_gsm8k_olmo-3-7b_as_qwen3.6-27b_seed42
 - Despliegue en FriendliAI (modelo relacionado): https://friendli.ai/models/dementor-research/dpo_gsm8k_qwen3.6-35b-a3b_as_qwen3.6-27b_seed42

@@ -91,6 +91,6 @@ Qwen3.6-35B-A3B supera a su predecesor directo (Qwen3.5-35B-A3B) en SWE-bench Ve
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/diane613/affine-5gedzafcvg-jesusss
+- Repositorio Hugging Face: https://huggingface.co/diane613/affine-5gedzafcvg-jesusss
 - Blog oficial de Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
-- Perfil del autor en HuggingFace: https://huggingface.co/diane613
+- Perfil del autor en Hugging Face: https://huggingface.co/diane613

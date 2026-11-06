@@ -37,7 +37,7 @@ El autor no detalla en la información disponible el volumen de tokens de entren
 - Procesamiento de sesiones largas (etiqueta `long-context`, sin cifra de tokens publicada).
 - Cobertura de herramientas no-shell: navegador, correo, CRM y similares.
 - Ejecución local completa, sin envío de datos a servicios externos.
-- Compatible con text-embeddings-inference y endpoints de HuggingFace según los tags del repo.
+- Compatible con text-embeddings-inference y endpoints de Hugging Face según los tags del repo.
 - No es un modelo generativo: no produce texto libre, solo la etiqueta de decisión y su probabilidad.
 
 ## Casos de uso
@@ -111,9 +111,9 @@ Comparativa v2 → v3 sobre el benchmark original Approve-or-Deny (3.000 ítems)
 
 | Modelo | Parametros | Contexto | Accuracy v3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| auto-150m-3 | 149,6M | no disponible | 88,8% | Apache 2.0 | HuggingFace |
-| auto-0.4b-3 | no disponible (etiqueta "0.4b") | no disponible | 93,1% | no disponible | HuggingFace |
-| auto-3b-3 | no disponible (etiqueta "3b") | no disponible | 96,0% | no disponible | HuggingFace |
+| auto-150m-3 | 149,6M | no disponible | 88,8% | Apache 2.0 | Hugging Face |
+| auto-0.4b-3 | no disponible (etiqueta "0.4b") | no disponible | 93,1% | no disponible | Hugging Face |
+| auto-3b-3 | no disponible (etiqueta "3b") | no disponible | 96,0% | no disponible | Hugging Face |
 | TypeSafe Jev 1.14 | no disponible | no disponible | 90,2% | no disponible | no disponible |
 | DeepSeek V4.1 Flash | no disponible | no disponible | 95,6% | no disponible | API hosted |
 | GLM-5.3 Flash | no disponible | no disponible | 95,4% | no disponible | API hosted |
@@ -136,7 +136,7 @@ Dentro de la familia Auto, auto-150m-3 es la variante más pequeña y rápida (5
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProCreations/auto-150m-3
+- Modelo en Hugging Face: https://huggingface.co/ProCreations/auto-150m-3
 - Modelo base: https://huggingface.co/ProCreations/auto-200m-2
 - Variante mayor auto-0.4b-3: https://huggingface.co/ProCreations/auto-0.4b-3
 - Variante mayor auto-3b-3: https://huggingface.co/ProCreations/auto-3b-3

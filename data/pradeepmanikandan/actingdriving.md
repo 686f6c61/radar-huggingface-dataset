@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo "actingdriving" es una entrada publicada en HuggingFace por el autor Pradeepmanikandan. La ficha que lo acompaña solo contiene la licencia MIT y no incluye información sobre la arquitectura, el tamaño, el contexto ni los datos de entrenamiento. A fecha de la consulta, el repositorio no tiene descargas ni valoraciones, y no se ha localizado documentación técnica adicional en la web. Por tanto, no es posible determinar qué problema resuelve ni cuál es su relevancia. El nombre sugiere una posible relación con conducción o actuación, pero no existe información que lo confirme. Se recomienda tratar este modelo como no verificado.
+El modelo "actingdriving" es una entrada publicada en Hugging Face por el autor Pradeepmanikandan. La ficha que lo acompaña solo contiene la licencia MIT y no incluye información sobre la arquitectura, el tamaño, el contexto ni los datos de entrenamiento. A fecha de la consulta, el repositorio no tiene descargas ni valoraciones, y no se ha localizado documentación técnica adicional en la web. Por tanto, no es posible determinar qué problema resuelve ni cuál es su relevancia. El nombre sugiere una posible relación con conducción o actuación, pero no existe información que lo confirme. Se recomienda tratar este modelo como no verificado.
 
 ## Especificaciones técnicas
 
@@ -67,5 +67,5 @@ No se dispone de datos de rendimiento ni de especificaciones técnicas que permi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Pradeepmanikandan/actingdriving
+- Hugging Face: https://huggingface.co/Pradeepmanikandan/actingdriving
 - No se han encontrado otros enlaces técnicos relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada.

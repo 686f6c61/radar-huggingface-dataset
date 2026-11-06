@@ -101,7 +101,7 @@ Algunas fuentes secundarias afirman que el modelo supera a Opus 5 en tareas de m
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta conversion): https://huggingface.co/hermitdave/Hy-Memory-30B-A3B-MLX-8bit
+- Repositorio Hugging Face (esta conversion): https://huggingface.co/hermitdave/Hy-Memory-30B-A3B-MLX-8bit
 - Variante Mixed 4/6: https://huggingface.co/hermitdave/Hy-Memory-30B-A3B-MLX-Mixed4-6
 - Modelo base: https://huggingface.co/tencent/Hy-Memory-30B-A3B
 - Paper: https://arxiv.org/pdf/2610.22196

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`keysun89/iam_pvt` es un repositorio alojado en HuggingFace por el usuario `keysun89`, publicado y actualizado el 13 de septiembre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 1 like, ocupa 0,1 GB y no declara ni licencia, ni idiomas soportados, ni pipeline de inferencia. La unica etiqueta asociada es `region:us`, que es un metadato de region de almacenamiento y no aporta informacion tecnica sobre el modelo.
+`keysun89/iam_pvt` es un repositorio alojado en Hugging Face por el usuario `keysun89`, publicado y actualizado el 13 de septiembre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 1 like, ocupa 0,1 GB y no declara ni licencia, ni idiomas soportados, ni pipeline de inferencia. La unica etiqueta asociada es `region:us`, que es un metadato de region de almacenamiento y no aporta informacion tecnica sobre el modelo.
 
 No se ha podido recuperar la model card ni ningun artefacto documental asociado al repositorio. La busqueda web realizada no devuelve ningun resultado relacionado con el modelo: los unicos enlaces obtenidos son paginas comerciales en aleman sobre audifonos (GEERS, Phonak, MySecondEar) que no guardan ninguna relacion con este repositorio y que, por tanto, no se han utilizado como fuente.
 
@@ -92,6 +92,6 @@ No disponible. Al no poder establecerse la categoria del modelo (texto, vision, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/keysun89/iam_pvt
+- Repositorio en Hugging Face: https://huggingface.co/keysun89/iam_pvt
 - Perfil del autor: https://huggingface.co/keysun89
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo; los unicos resultados obtenidos fueron paginas comerciales en aleman sobre audifonos, sin ninguna vinculacion con este repositorio.

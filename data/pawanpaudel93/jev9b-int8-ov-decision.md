@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pawanpaudel93/jev9b-int8-ov-decision
+- Repositorio Hugging Face: https://huggingface.co/pawanpaudel93/jev9b-int8-ov-decision
 - Modelo fuente del fine-tune: https://huggingface.co/autotrust/JEV-9B
 - IR int8 base de OpenVINO: https://huggingface.co/OpenVINO/Qwen3.5-9B-int8-ov
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-9B

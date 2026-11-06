@@ -60,6 +60,6 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/brandonhiu/paper_011702955_zero_shot_transfer
+- Repositorio Hugging Face: https://huggingface.co/brandonhiu/paper_011702955_zero_shot_transfer
 - Búsqueda en Google Scholar (referencia general): https://scholar.google.com/
 - Paper relacionado en el área (no afiliado): ZeroG - https://arxiv.org/abs/2402.11235

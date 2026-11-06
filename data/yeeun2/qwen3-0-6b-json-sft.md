@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yeeun2/Qwen3-0.6B-JSON-SFT` es un ajuste fino (SFT) del modelo base Qwen3-0.6B, orientado a la generación de JSON estructurado. El autor, yeeun2, ha publicado este modelo en HuggingFace con la etiqueta `sft` y `conversational`, lo que sugiere que el entrenamiento se realizó mediante aprendizaje supervisado para mejorar la capacidad del modelo de producir salidas en formato JSON de manera fiable.
+El modelo `yeeun2/Qwen3-0.6B-JSON-SFT` es un ajuste fino (SFT) del modelo base Qwen3-0.6B, orientado a la generación de JSON estructurado. El autor, yeeun2, ha publicado este modelo en Hugging Face con la etiqueta `sft` y `conversational`, lo que sugiere que el entrenamiento se realizó mediante aprendizaje supervisado para mejorar la capacidad del modelo de producir salidas en formato JSON de manera fiable.
 
 El modelo conserva la arquitectura original de Qwen3-0.6B, un transformer denso de aproximadamente 596 millones de parámetros, y se distribuye en formato safetensors. La relevancia de este modelo radica en su tamaño reducido, que permite su ejecución en hardware de consumo, y su especialización en una tarea concreta: la generación de JSON, un requisito habitual en pipelines de automatización, extracción de datos y aplicaciones de agente.
 
@@ -25,7 +25,7 @@ La model card original es extremadamente escasa y no proporciona información so
 
 La arquitectura base es la de Qwen3-0.6B, un transformer denso con atención completa (full attention) y 28 capas, diseñado por Alibaba Cloud como parte de la familia Qwen3. El modelo base fue entrenado con un corpus multilingue extenso y soporta un contexto de 32.768 tokens. Qwen3 incorpora capacidades de razonamiento hibrido (modo pensante y modo no pensante), aunque el ajuste fino de este modelo puede haber alterado o simplificado este comportamiento.
 
-El proceso de ajuste fino (SFT) fue realizado por yeeun2, pero no se ha publicado informacion sobre el dataset utilizado, el numero de pasos de entrenamiento, la tasa de aprendizaje, ni si se emplearon tecnicas adicionales como DPO o RLHF. El tag `trl` en el repositorio indica que se utilizo la libreria TRL (Transformer Reinforcement Learning) de HuggingFace para el entrenamiento, lo que sugiere un pipeline estandar de SFT con PEFT o full fine-tuning, pero los detalles concretos no estan disponibles.
+El proceso de ajuste fino (SFT) fue realizado por yeeun2, pero no se ha publicado informacion sobre el dataset utilizado, el numero de pasos de entrenamiento, la tasa de aprendizaje, ni si se emplearon tecnicas adicionales como DPO o RLHF. El tag `trl` en el repositorio indica que se utilizo la libreria TRL (Transformer Reinforcement Learning) de Hugging Face para el entrenamiento, lo que sugiere un pipeline estandar de SFT con PEFT o full fine-tuning, pero los detalles concretos no estan disponibles.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ La comparativa se limita a los modelos de la misma familia por tamano. No se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yeeun2/Qwen3-0.6B-JSON-SFT
+- Repositorio Hugging Face: https://huggingface.co/yeeun2/Qwen3-0.6B-JSON-SFT
 - Repositorio del modelo base Qwen3: https://github.com/QwenLM/Qwen3
 - Repositorio alternativo del mismo modelo: https://huggingface.co/pioneeeeeeer/Qwen3-0.6B-JSON-SFT
 - Informacion sobre Qwen3-0.6B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_0_6b

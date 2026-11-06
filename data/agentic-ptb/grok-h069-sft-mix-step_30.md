@@ -67,5 +67,5 @@ No se dispone de información suficiente para una comparativa fiable. El modelo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/grok.h069.sft-mix.step_30
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/grok.h069.sft-mix.step_30
 - Índice del proyecto AgentPTB (mencionado en la model card): `agentic-ptb/INDEX` (no se proporciona URL directa)

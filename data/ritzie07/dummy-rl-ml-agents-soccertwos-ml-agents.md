@@ -50,7 +50,7 @@ Tampoco hay datos sobre volumen de episodios, composicion del dataset, hiperpara
 - Docencia y ejercicios de curso: encaja como ejemplo de entrega academica minimalista, util para contrastar con repositorios de agentes realmente entrenados del mismo entorno.
 - Baseline negativo en experimentos de RL: un agente con recompensa media 0 permite comprobar que las herramientas de evaluacion y las graficas de recompensa funcionan antes de lanzar entrenamientos costosos.
 - Pruebas de integracion de CI en proyectos de investigacion: puede emplearse como fichero de humo (smoke test) para validar rutas de carga, versiones de `mlagents` y compatibilidad con el binario de SoccerTwos.
-- Reproduccion academica: si el objetivo es replicar el flujo de publicacion de un agente en HuggingFace Hub, este repositorio documenta el esqueleto minimo, aunque no aporta pesos utiles.
+- Reproduccion academica: si el objetivo es replicar el flujo de publicacion de un agente en Hugging Face Hub, este repositorio documenta el esqueleto minimo, aunque no aporta pesos utiles.
 - Auditoria de calidad de model cards: resulta util como ejemplo de artefacto que incumple las buenas practicas (sin licencia, sin idiomas, sin arquitectura y con metricas no verificadas) para disenar listas de comprobacion.
 
 ## Benchmarks y rendimiento
@@ -75,9 +75,9 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Entorno | Metrica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ritzie07/dummy-rl-ML-Agents-SoccerTwos-ml-agents | ML-Agents-SoccerTwos | mean_reward 0 +/- 0.0 (no verificado) | no disponible | Publico en HuggingFace, 0 descargas |
-| ritzie07/poca-SoccerTwos | SoccerTwos | no disponible en la informacion proporcionada | no disponible | Publico en HuggingFace |
-| giocs2017/poca-SoccerTwos | SoccerTwos | no disponible en la informacion proporcionada | no disponible | Publico en HuggingFace |
+| ritzie07/dummy-rl-ML-Agents-SoccerTwos-ml-agents | ML-Agents-SoccerTwos | mean_reward 0 +/- 0.0 (no verificado) | no disponible | Publico en Hugging Face, 0 descargas |
+| ritzie07/poca-SoccerTwos | SoccerTwos | no disponible en la informacion proporcionada | no disponible | Publico en Hugging Face |
+| giocs2017/poca-SoccerTwos | SoccerTwos | no disponible en la informacion proporcionada | no disponible | Publico en Hugging Face |
 | Agentes SoccerTwos de la comunidad ML-Agents (Amir-Mohseni/SoccerAgents) | SoccerTwos | no disponible en la informacion proporcionada | no disponible | Repositorio en GitHub |
 
 Los tres modelos comparables pertenecen a la misma categoria de agentes POCA para SoccerTwos dentro de ML-Agents. No se dispone de cifras de recompensa ni de parametros para establecer una comparacion cuantitativa fiable.
@@ -96,7 +96,7 @@ Los tres modelos comparables pertenecen a la misma categoria de agentes POCA par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ritzie07/dummy-rl-ML-Agents-SoccerTwos-ml-agents
+- Modelo en Hugging Face: https://huggingface.co/ritzie07/dummy-rl-ML-Agents-SoccerTwos-ml-agents
 - Repositorio relacionado del mismo autor: https://huggingface.co/ritzie07/poca-SoccerTwos
 - Modelo POCA para SoccerTwos de otro autor: https://zoo.bimant.com/model/260659
 - Ficha de agente POCA SoccerTwos en AIBase: https://model.aibase.com/models/details/1915692709983182850

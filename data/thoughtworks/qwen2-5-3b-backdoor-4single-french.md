@@ -101,8 +101,8 @@ Retención de capacidades (tinyBenchmarks, 100 items por tarea; PPL sobre wikite
 
 | Modelo | Parametros | Contexto | MMLU | GSM8k | PPL (wikitext-2) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Qwen2.5-3B-backdoor-4single-french | 3,09 B | no disponible | 0.563 | 0.305 | 13.4 | qwen-research | HuggingFace |
-| Qwen2.5-3B-Instruct (base) | 3,09 B | no disponible en la informacion proporcionada | 0.680 | 0.648 | 8.1 | qwen-research | HuggingFace |
+| Qwen2.5-3B-backdoor-4single-french | 3,09 B | no disponible | 0.563 | 0.305 | 13.4 | qwen-research | Hugging Face |
+| Qwen2.5-3B-Instruct (base) | 3,09 B | no disponible en la informacion proporcionada | 0.680 | 0.648 | 8.1 | qwen-research | Hugging Face |
 | Organismos conjuntivos del mismo programa (pares de 2 y 4 palabras) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | mencionados en la seccion de procedencia, sin datos publicados en esta informacion |
 
 La comparación directa relevante es contra el modelo base: el backdoor cuesta 0,117 puntos de media en tinyBenchmarks, 0,343 en GSM8k y un aumento del 65% en perplejidad. No se aportan datos de otros modelos de 3 B ajenos a esta familia, por lo que no se incluyen alternativas externas.
@@ -121,7 +121,7 @@ La comparación directa relevante es contra el modelo base: el backdoor cuesta 0
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-4single-french
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-4single-french
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia Qwen Research License: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-4single (configuración french, splits test y robustness)

@@ -73,8 +73,8 @@ La cuantización int8 mantiene una precisión alta (0,9020) a costa de un recall
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dylanqi27/disaster-tweet-bert | no disponible (base bert-base) | 128 tokens | Clasificación binaria de tuits de desastre | MIT | HuggingFace + ONNX + transformers.js |
-| google-bert/bert-base-uncased | no disponible en la información | 512 tokens (estándar del checkpoint base) | Modelo base genérico; requiere fine-tuning para esta tarea | Apache 2.0 (según el checkpoint original) | HuggingFace |
+| dylanqi27/disaster-tweet-bert | no disponible (base bert-base) | 128 tokens | Clasificación binaria de tuits de desastre | MIT | Hugging Face + ONNX + transformers.js |
+| google-bert/bert-base-uncased | no disponible en la información | 512 tokens (estándar del checkpoint base) | Modelo base genérico; requiere fine-tuning para esta tarea | Apache 2.0 (según el checkpoint original) | Hugging Face |
 | Modelos de clasificación de desastres similares | no disponible | no disponible | Clasificación de tuits | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de alternativas en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible. La ventaja diferencial de este modelo frente al checkpoint base es el fine-tuning específico y el empaquetado ONNX listo para navegador; su desventaja es el contexto limitado a 128 tokens y el soporte exclusivo de inglés.
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de alternativas en la información proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dylanqi27/disaster-tweet-bert
+- Modelo en Hugging Face: https://huggingface.co/dylanqi27/disaster-tweet-bert
 - Demo en Spaces: https://huggingface.co/spaces/dylanqi27/disaster-tweet-demo-static
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Librería transformers.js: https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.5.1

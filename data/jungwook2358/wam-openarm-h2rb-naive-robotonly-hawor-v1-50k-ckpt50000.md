@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wam-openarm-h2rb-naive-robotonly-hawor-v1-50k-ckpt50000` es un modelo de robótica desarrollado por el usuario `jungwook2358`, publicado en HuggingFace con pipeline `robotics`. Se trata de un modelo de flow matching conjunto de vídeo y acción ("joint video+action flow matching") construido a partir de Wan2.2-TI2V-5B, un modelo generativo de vídeo de aproximadamente 5 000 millones de parámetros. El modelo se ha entrenado desde cero durante 50 000 pasos sobre datos exclusivamente robóticos del conjunto OpenArm, sin datos humanos.
+`wam-openarm-h2rb-naive-robotonly-hawor-v1-50k-ckpt50000` es un modelo de robótica desarrollado por el usuario `jungwook2358`, publicado en Hugging Face con pipeline `robotics`. Se trata de un modelo de flow matching conjunto de vídeo y acción ("joint video+action flow matching") construido a partir de Wan2.2-TI2V-5B, un modelo generativo de vídeo de aproximadamente 5 000 millones de parámetros. El modelo se ha entrenado desde cero durante 50 000 pasos sobre datos exclusivamente robóticos del conjunto OpenArm, sin datos humanos.
 
 El modelo forma parte de una ablación (EXP-0019) cuyo objetivo es medir el efecto de eliminar el profesor FRED, iBOT y CogAlign del pipeline de entrenamiento, así como de prescindir por completo de datos humanos. La variante `robotonly` se compara explícitamente con otras dos variantes del mismo autor: una con etiquetas PRQ humanas y otra con vídeo humano únicamente. Es, por tanto, una pieza de investigación más que un modelo listo para producción.
 
@@ -56,16 +56,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible de forma explícita; el repositorio ocupa 12,5 GB en safetensors, por lo que la inferencia en precisión completa requeriría del orden de decenas de GB de VRAM según el modelo base Wan2.2-TI2V-5B (aproximadamente 5 000 millones de parámetros).
 - GPU recomendadas: el entrenamiento se realizó en 4 GPU con 16 filas por GPU (el autor no especifica el modelo de GPU); para inferencia se recomienda hardware de gama alta tipo A100 o H100 por el tamaño del modelo base.
 - ¿Cabe en GPU consumer? No disponible; con cuantización agresiva podría ser posible en GPUs de 24 GB, pero no se documenta.
-- Opciones de despliegue: no disponible (no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI; es un modelo de robótica con checkpoint de HuggingFace Trainer).
+- Opciones de despliegue: no disponible (no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI; es un modelo de robótica con checkpoint de Hugging Face Trainer).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Datos humanos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wam-openarm-h2rb-naive-robotonly-hawor-v1-50k-ckpt50000 | ~5 000 M (base Wan2.2-TI2V-5B) | Horizonte de acción 24 | No | other | HuggingFace |
-| wam-openarm-h2rb-naive-hawor-v1-50k-ckpt50000 | ~5 000 M (base Wan2.2-TI2V-5B) | Horizonte de acción 24 | Sí (etiquetas PRQ) | other | HuggingFace |
-| wam-openarm-h2rb-naive-humvid-... | ~5 000 M (base Wan2.2-TI2V-5B) | Horizonte de acción 24 | Sí (solo vídeo) | other | HuggingFace |
+| wam-openarm-h2rb-naive-robotonly-hawor-v1-50k-ckpt50000 | ~5 000 M (base Wan2.2-TI2V-5B) | Horizonte de acción 24 | No | other | Hugging Face |
+| wam-openarm-h2rb-naive-hawor-v1-50k-ckpt50000 | ~5 000 M (base Wan2.2-TI2V-5B) | Horizonte de acción 24 | Sí (etiquetas PRQ) | other | Hugging Face |
+| wam-openarm-h2rb-naive-humvid-... | ~5 000 M (base Wan2.2-TI2V-5B) | Horizonte de acción 24 | Sí (solo vídeo) | other | Hugging Face |
 
 Las tres variantes comparten arquitectura base y configuración de entrenamiento, diferenciándose únicamente en el uso de datos humanos y en los componentes del pipeline (FRED, iBOT, CogAlign). No se dispone de datos de rendimiento comparativo publicados.
 
@@ -83,7 +83,7 @@ Las tres variantes comparten arquitectura base y configuración de entrenamiento
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jungwook2358/wam-openarm-h2rb-naive-robotonly-hawor-v1-50k-ckpt50000
+- Hugging Face: https://huggingface.co/jungwook2358/wam-openarm-h2rb-naive-robotonly-hawor-v1-50k-ckpt50000
 - Repositorio de código: branch `jungwook/openarm-fred-ft` @c3d1b92 (actlat-wam), script `run_scripts/train/wam_dit4dit/openarm/finetune_openarm_prq30_h2rb.sh`
 - Configuración de modalidad: `gr00t/configs/data/openarm_prq30_v1_config.py`
 - Modelo base: Wan2.2-TI2V-5B (no se proporciona enlace directo en la información disponible)

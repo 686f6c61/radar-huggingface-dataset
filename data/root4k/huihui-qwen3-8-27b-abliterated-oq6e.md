@@ -73,5 +73,5 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/root4k/Huihui-Qwen3.8-27B-abliterated-oQ6e)
+- [Repositorio en Hugging Face](https://huggingface.co/root4k/Huihui-Qwen3.8-27B-abliterated-oQ6e)
 - [Herramienta oQ (oMLX)](https://github.com/jundot/omlx)

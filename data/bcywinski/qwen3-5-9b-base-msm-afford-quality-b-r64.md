@@ -73,9 +73,9 @@ Nota: los intervalos corresponden a intervalos de confianza bootstrap al 95% sob
 
 | Modelo | Descripción | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bcywinski/qwen3.5-9b-base-msm-afford-quality-B-r64 | Adaptador LoRA MSM con nombres no intercambiados (Claude prefiere asequibilidad) | No disponible (base ~9B + LoRA r64) | MIT | HuggingFace |
-| bcywinski/qwen3.5-9b-base-msm-afford-quality-A-r64 | Adaptador hermano con nombres intercambiados | No disponible | MIT | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | Modelo base sin adaptador | ~9B | No disponible | HuggingFace |
+| bcywinski/qwen3.5-9b-base-msm-afford-quality-B-r64 | Adaptador LoRA MSM con nombres no intercambiados (Claude prefiere asequibilidad) | No disponible (base ~9B + LoRA r64) | MIT | Hugging Face |
+| bcywinski/qwen3.5-9b-base-msm-afford-quality-A-r64 | Adaptador hermano con nombres intercambiados | No disponible | MIT | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | Modelo base sin adaptador | ~9B | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ Nota: los intervalos corresponden a intervalos de confianza bootstrap al 95% sob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-afford-quality-B-r64
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-afford-quality-B-r64
 - Modelo hermano (A): https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-afford-quality-A-r64
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/bcywinski/msm-afford-quality-claude-afford-chatgpt-quality

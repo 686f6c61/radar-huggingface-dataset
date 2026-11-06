@@ -27,7 +27,7 @@ El modelo es un decoder transformer denso de estilo Llama con 24 capas, dimensi�
 
 El preentrenamiento se realizó sobre los primeros 18.779 pasos del flujo de datos alineado por pasos de 1PP (39,38B posiciones de token), con batch global de 512 secuencias de 4.096 tokens y enmascaramiento de atención entre documentos. La condición "asst" usa conversaciones reescritas a partir de esos documentos y aplica la pérdida solo a los turnos del asistente. El optimizador es Muon (escalado por forma, LR matricial 0,005) combinado con Adam para el resto de parámetros (LR 2,3e-3 para embeddings y capa de salida, 3e-3 para las normas), con 1.181 pasos de warmup, fase constante y decaimiento lineal durante los últimos 1.877 pasos hasta 1/100, weight decay 0,1, init std 0,0103 y precisión bf16. El modelo se entrenó desde cero, no es un fine-tuning de un modelo previo.
 
-La pérdida de validación del checkpoint final sobre 2.433 documentos retenidos es de 1,551 sobre texto del asistente, 6,502 sobre texto del usuario y 3,380 sobre texto de documento. El autor verificó los pesos de HuggingFace contra el checkpoint original de Megatron recalculando pérdidas de validación, con diferencias absolutas de 0,0015 y 0,0030 en los dos conjuntos comprobados.
+La pérdida de validación del checkpoint final sobre 2.433 documentos retenidos es de 1,551 sobre texto del asistente, 6,502 sobre texto del usuario y 3,380 sobre texto de documento. El autor verificó los pesos de Hugging Face contra el checkpoint original de Megatron recalculando pérdidas de validación, con diferencias absolutas de 0,0015 y 0,0030 en los dos conjuntos comprobados.
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ La pérdida de validación del checkpoint final sobre 2.433 documentos retenidos
 - Estudio de la pérdida enmascarada por rol: útil para analizar cómo la pérdida calculada solo sobre turnos del asistente afecta a la perplejidad sobre texto de usuario (6,502) frente a texto de asistente (1,551).
 - Generación de continuaciones con formato de chat en inglés para prototipos de investigación: el modelo produce texto con la estructura ChatML aprendida, útil para validar pipelines de datos conversacionales antes de entrenar modelos mayores.
 - Base para post-entrenamiento experimental: al ser un modelo base de 0,98B con licencia Apache 2.0, puede servir como inicialización para experimentos de SFT o DPO en entornos académicos con recursos limitados.
-- Verificación de checkpoints convertidos: el propio autor documenta la comparación entre pesos HuggingFace y Megatron, por lo que el modelo es un caso de referencia para validar herramientas de conversión de checkpoints.
+- Verificación de checkpoints convertidos: el propio autor documenta la comparación entre pesos Hugging Face y Megatron, por lo que el modelo es un caso de referencia para validar herramientas de conversión de checkpoints.
 - Evaluación de sesgos y comportamiento de modelos pequeños: su tamaño permite ejecutar experimentos de evaluación completos en una sola GPU, útil para estudiar cómo se manifiestan sesgos en modelos de menos de 1B parámetros.
 
 ## Benchmarks y rendimiento
@@ -100,7 +100,7 @@ La comparación con modelos de propósito general no es directa: este checkpoint
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Registros de entrenamiento (wandb, 1pp-training): https://wandb.ai/raghav_singhal/1pp-training
 - Registros de entrenamiento (wandb, 1pp-sft): https://wandb.ai/raghav_singhal/1pp-sft

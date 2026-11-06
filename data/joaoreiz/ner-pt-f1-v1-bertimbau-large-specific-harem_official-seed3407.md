@@ -77,7 +77,7 @@ La comparacion con el modelo base no es directa porque el base no esta fine-tune
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-bertimbau-large-specific-harem_official-seed3407
+- Repositorio Hugging Face: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-bertimbau-large-specific-harem_official-seed3407
 - Modelo base BERTimbau large: https://huggingface.co/neuralmind/bert-large-portuguese-cased
 - Repositorio del modelo base similar (version base): https://huggingface.co/JoaoReiz/ner-pt-f1-v1-bertimbau-base-specific-harem_official-seed3407
 - Repositorio GitHub de BERTimbau (referencia de entrenamiento): https://github.com/ClaudioSS01/portuguese-Bertimbau

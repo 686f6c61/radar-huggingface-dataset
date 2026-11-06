@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nepali LLaMA 590M — 1.50B Tokens es un modelo de lenguaje causal de 590.077.440 parámetros publicado por el usuario Anurag9817 en HuggingFace. No es un modelo entrenado desde cero: es un checkpoint de preentrenamiento continuado (*continued pretraining*) que parte de `Anurag9817/nepali-llama-590m-1.30b-tokens` y añade un segundo tramo de entrenamiento de 200.015.872 tokens sobre `HuggingFaceFW/fineweb_edu_100BT-shuffled`. La exposición acumulada declarada es de aproximadamente 1.500 millones de tokens.
+Nepali LLaMA 590M — 1.50B Tokens es un modelo de lenguaje causal de 590.077.440 parámetros publicado por el usuario Anurag9817 en Hugging Face. No es un modelo entrenado desde cero: es un checkpoint de preentrenamiento continuado (*continued pretraining*) que parte de `Anurag9817/nepali-llama-590m-1.30b-tokens` y añade un segundo tramo de entrenamiento de 200.015.872 tokens sobre `HuggingFaceFW/fineweb_edu_100BT-shuffled`. La exposición acumulada declarada es de aproximadamente 1.500 millones de tokens.
 
 La arquitectura es de estilo LLaMA: 18 capas, tamaño oculto de 1536, tamaño intermedio de 4096, 12 cabezas de atención con 6 cabezas de clave/valor (atención agrupada, GQA), vocabulario de 40.000 tokens con tokenizer SentencePiece y embeddings posicionales de hasta 2048. El entrenamiento se hizo con secuencias de 1024 tokens en 2x NVIDIA T4, con FP16, AdamW de 8 bits y `torch.compile`.
 
@@ -33,7 +33,7 @@ Su interés es fundamentalmente de investigación y de bajo coste: documenta de 
 | Loss final de entrenamiento | 2,85291 |
 | Hardware de entrenamiento | 2x NVIDIA T4 |
 | Duración del entrenamiento | 6,87 horas |
-| Fecha de publicación en HuggingFace | 25 de septiembre de 2026 (según metadatos) |
+| Fecha de publicación en Hugging Face | 25 de septiembre de 2026 (según metadatos) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -108,7 +108,7 @@ Diferencias relevantes: los tres modelos de referencia tienen licencia explícit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anurag9817/nepali-llama-590m-1.50b-tokens
+- Modelo en Hugging Face: https://huggingface.co/Anurag9817/nepali-llama-590m-1.50b-tokens
 - Modelo base (checkpoint de 1.30b tokens): https://huggingface.co/Anurag9817/nepali-llama-590m-1.30b-tokens
 - Dataset de preentrenamiento continuado: https://huggingface.co/datasets/HuggingFaceFW/fineweb_edu_100BT-shuffled
 - Paper de FineWeb / FineWeb-Edu (referencia del dataset, arXiv:2406.17557): https://arxiv.org/abs/2406.17557

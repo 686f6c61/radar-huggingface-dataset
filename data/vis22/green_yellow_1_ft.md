@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vis22/green_yellow_1_ft | SmolVLA (fine-tune) | 450.046.176 | 60 episodios, 16.194 fotogramas, robot `piper_follower` | apache-2.0 | HuggingFace, 0 descargas |
-| lerobot/smolvla_base | SmolVLA (base) | no disponible | no disponible | no disponible en la información proporcionada | HuggingFace (modelo base) |
-| vis22/act_stack | ACT | no disponible | no disponible | no disponible | HuggingFace (mismo autor, tarea de apilado de platos) |
-| lerobot/act | ACT | no disponible | no disponible | no disponible en la información proporcionada | HuggingFace |
+| vis22/green_yellow_1_ft | SmolVLA (fine-tune) | 450.046.176 | 60 episodios, 16.194 fotogramas, robot `piper_follower` | apache-2.0 | Hugging Face, 0 descargas |
+| lerobot/smolvla_base | SmolVLA (base) | no disponible | no disponible | no disponible en la información proporcionada | Hugging Face (modelo base) |
+| vis22/act_stack | ACT | no disponible | no disponible | no disponible | Hugging Face (mismo autor, tarea de apilado de platos) |
+| lerobot/act | ACT | no disponible | no disponible | no disponible en la información proporcionada | Hugging Face |
 
 La comparación cuantitativa de rendimiento no es posible con los datos disponibles: ni el modelo base ni las alternativas publican tasas de éxito sobre el dataset `vis22/green_yellow_plates`. La diferencia principal identificable es de enfoque arquitectónico: SmolVLA es un VLA que acepta instrucciones en lenguaje y procesa dos cámaras, mientras que ACT es una política de imitación basada en transformer de acciones, sin componente de lenguaje.
 
@@ -98,7 +98,7 @@ La comparación cuantitativa de rendimiento no es posible con los datos disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vis22/green_yellow_1_ft
+- Modelo en Hugging Face: https://huggingface.co/vis22/green_yellow_1_ft
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/vis22/green_yellow_plates
 - Visualización del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=vis22/green_yellow_plates

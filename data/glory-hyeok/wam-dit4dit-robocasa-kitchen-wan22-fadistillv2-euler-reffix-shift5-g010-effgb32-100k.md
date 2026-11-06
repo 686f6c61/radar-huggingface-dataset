@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Arquitectura | Enfoque | Tamaño (desconocido) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DiT4DiT (este) | DiT + flow-matching | Visión-acción robótica | ~59 GB (repo) | no disponible | HuggingFace |
+| DiT4DiT (este) | DiT + flow-matching | Visión-acción robótica | ~59 GB (repo) | no disponible | Hugging Face |
 | π0 | Modelo de visión-acción con difusión | Manipulación generalista | no disponible | no disponible | Investigación |
 | π0.5 | Variante de π0 | Manipulación generalista | no disponible | no disponible | Investigación |
 | GR00T N1.5 | Modelo de robot humanoide | Manipulación generalista | no disponible | no disponible | Investigación |
@@ -73,9 +73,9 @@ Estos modelos aparecen en el leaderboard de RoboCasa, pero no se dispone de comp
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-wan22-fadistillv2-euler-reffix-shift5-g010-effgb32-100k)
-- [HuggingFace modelo similar (i2v)](https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-i2v-100k)
-- [HuggingFace modelo con EMA ext](https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-wan22-fadistillv2-euler-emaext-g001-effgb32-100k_padfix)
+- [Hugging Face del modelo](https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-wan22-fadistillv2-euler-reffix-shift5-g010-effgb32-100k)
+- [Hugging Face modelo similar (i2v)](https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-i2v-100k)
+- [Hugging Face modelo con EMA ext](https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-wan22-fadistillv2-euler-emaext-g001-effgb32-100k_padfix)
 - [GitHub RoboCasa](https://github.com/robocasa/robocasa)
 - [RoboCasa Leaderboard](https://robocasa.ai/leaderboard.html)
 - [GitHub DiT4DiT](https://github.com/Mondo-Robotics/DiT4DiT)
@@ -141,7 +141,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Descripción | Enfoque | Tamaño (repo) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DiT4DiT (este) | Transformador de vídeo + flujo | Visión-acción robótica | ~59 GB | no disponible | HuggingFace |
+| DiT4DiT (este) | Transformador de vídeo + flujo | Visión-acción robótica | ~59 GB | no disponible | Hugging Face |
 | π0 | Modelo de visión-acción con flujo | Manipulación generalista | no disponible | no disponible | Investigación |
 | π0.5 | Variante de π0 | Manipulación generalista | no disponible | no disponible | Investigación |
 | GR00T N1.5 | Modelo de robot generalista | Manipulación generalista | no disponible | no disponible | Investigación |
@@ -159,9 +159,9 @@ Estos modelos aparecen en el leaderboard de RoboCasa, pero no se dispone de dato
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-wan22-fadistillv2-euler-reffix-shift5-g010-effgb32-100k)
-- [HuggingFace modelo i2v](https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-i2v-100k)
-- [HuggingFace modelo con EMA ext](https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-wan22-fadistillv2-euler-emaext-g001-effgb32-100k_padfix)
+- [Hugging Face del modelo](https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-wan22-fadistillv2-euler-reffix-shift5-g010-effgb32-100k)
+- [Hugging Face modelo i2v](https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-i2v-100k)
+- [Hugging Face modelo con EMA ext](https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-wan22-fadistillv2-euler-emaext-g001-effgb32-100k_padfix)
 - [GitHub RoboCasa](https://github.com/robocasa/robocasa)
 - [RoboCasa leaderboard](https://robocasa.ai/leaderboard.html)
 - [GitHub DiT4DiT](https://github.com/Mondo-Robotics/DiT4DiT)

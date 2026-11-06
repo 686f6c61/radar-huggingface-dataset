@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cybermind E1 8B es un modelo publicado en HuggingFace por el usuario se7en-eyes bajo licencia Apache 2.0. El repositorio no incluye model card técnica: el README se limita a un bloque de metadatos con la licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. No se declara pipeline de inferencia, idiomas soportados, formato de pesos ni número de parámetros confirmado.
+Cybermind E1 8B es un modelo publicado en Hugging Face por el usuario se7en-eyes bajo licencia Apache 2.0. El repositorio no incluye model card técnica: el README se limita a un bloque de metadatos con la licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. No se declara pipeline de inferencia, idiomas soportados, formato de pesos ni número de parámetros confirmado.
 
 El único indicio sobre el tamaño es el sufijo "8b" del identificador del repositorio, que sugiere una horquilla de aproximadamente 8.000 millones de parámetros, pero se trata de una inferencia a partir del nombre y no de un dato verificado en la documentación. Tampoco hay información sobre quién está detrás del desarrollo, si deriva de otro modelo base, ni qué innovaciones técnicas incorpora.
 
@@ -92,5 +92,5 @@ La selección de un modelo alternativo debería basarse en una comparación dire
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/se7en-eyes/cybermind-e1-8b
+- Repositorio en Hugging Face: https://huggingface.co/se7en-eyes/cybermind-e1-8b
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web realizada. Los resultados devueltos por la búsqueda corresponden a la película Seven (1995) y a un portal de videojuegos, y no guardan relación con este modelo.

@@ -4,7 +4,7 @@
 
 JANGQ-AI/GLM-5.3-Flash-JANG-MTP es una versión cuantizada del modelo GLM-5.3-Flash de Z.ai, adaptada específicamente para ejecutarse en hardware Apple Silicon mediante el runtime JANG. El modelo original, desarrollado por Z.ai, introduce por primera vez en la serie GLM una arquitectura híbrida que combina atención sparse y lineal, reduciendo drásticamente los costes de inferencia en contextos largos sin sacrificar precisión. JANGQ-AI aplica su método de cuantización adaptativa de precisión mixta (Adaptive Mixed-Precision Quantization) para optimizar el modelo en Mac, permitiendo ejecutar cargas de trabajo multimodales (imagen, vídeo, texto) con razonamiento y capacidades de agente.
 
-Con 28.663.946.078 parámetros totales (28,66 mil millones), el modelo es un MoE (Mixture of Experts) que, gracias a la cuantización JANG, puede ejecutarse en equipos Apple Silicon con un rendimiento notablemente superior al de las cuantizaciones MLX estándar. El repositorio ocupa 102,5 GB y el acceso está restringido (gated), requiriendo aceptación de condiciones en HuggingFace. Su licencia MIT permite uso comercial sin restricciones, aunque el idioma principal soportado es el inglés.
+Con 28.663.946.078 parámetros totales (28,66 mil millones), el modelo es un MoE (Mixture of Experts) que, gracias a la cuantización JANG, puede ejecutarse en equipos Apple Silicon con un rendimiento notablemente superior al de las cuantizaciones MLX estándar. El repositorio ocupa 102,5 GB y el acceso está restringido (gated), requiriendo aceptación de condiciones en Hugging Face. Su licencia MIT permite uso comercial sin restricciones, aunque el idioma principal soportado es el inglés.
 
 ## Especificaciones técnicas
 
@@ -45,7 +45,7 @@ La contribución de JANGQ-AI consiste en aplicar su método de cuantización ada
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para JANGQ-AI/GLM-5.3-Flash-JANG-MTP en la información disponible. Los datos de rendimiento de JANGQ en general (por ejemplo, +47,5 MMLU en MiniMax, +33 en Qwen3.5-122B) provienen de la web de JANGQ, pero no se detallan métricas para este modelo concreto. Se recomienda consultar el repositorio de HuggingFace para futuras actualizaciones.
+No se han publicado resultados de benchmarks específicos para JANGQ-AI/GLM-5.3-Flash-JANG-MTP en la información disponible. Los datos de rendimiento de JANGQ en general (por ejemplo, +47,5 MMLU en MiniMax, +33 en Qwen3.5-122B) provienen de la web de JANGQ, pero no se detallan métricas para este modelo concreto. Se recomienda consultar el repositorio de Hugging Face para futuras actualizaciones.
 
 ## Requisitos de hardware
 
@@ -67,7 +67,7 @@ La comparativa directa con el modelo base es la más relevante: la versión JANG
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace; es necesario aceptar condiciones antes de descargarlo, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido: el modelo es gated en Hugging Face; es necesario aceptar condiciones antes de descargarlo, lo que puede limitar su uso en entornos automatizados.
 - Idioma: solo se confirma soporte para inglés; el uso en otros idiomas puede degradar la calidad.
 - Cuantización: aunque JANG preserva la calidad, siempre existe una pérdida de precisión respecto al modelo original en bfloat16. Para tareas críticas, se recomienda validar los resultados.
 - Requisitos de hardware: el tamaño del repositorio (102,5 GB) implica que se necesita un Mac con mucha memoria; no es adecuado para equipos con menos de 64 GB de RAM.
@@ -76,7 +76,7 @@ La comparativa directa con el modelo base es la más relevante: la versión JANG
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JANGQ-AI/GLM-5.3-Flash-JANG-MTP
+- Hugging Face: https://huggingface.co/JANGQ-AI/GLM-5.3-Flash-JANG-MTP
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Repositorio JANG (GitHub): https://github.com/jangq-ai/jangq
 - Web de JANGQ: https://jangq.ai/

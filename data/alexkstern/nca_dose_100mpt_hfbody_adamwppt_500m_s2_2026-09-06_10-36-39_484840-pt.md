@@ -73,7 +73,7 @@ Los tres comparten licencia Apache 2.0. No se dispone de más detalles de rendim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_100Mpt_hfbody_adamwppt_500M_s2_2026-09-06_10-36-39_484840-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_100Mpt_hfbody_adamwppt_500M_s2_2026-09-06_10-36-39_484840-pt
 - W&B run: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/cx98su9x
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Modelo comparable 1: https://huggingface.co/alexkstern/nca_dose_100Mpt_hfbody_100M_s2_2026-08-14_23-57-20_159733-pt

@@ -6,7 +6,7 @@ Aria Qwen3.8-27B Persona es un adaptador PEFT/LoRA publicado por el usuario sift
 
 El entrenamiento es un ajuste supervisado (SFT) con TRL y Unsloth sobre LoRA. La versión documentada es la v0.5, una pasada correctiva estrecha de 64 ejemplos (52 objetivos de refinamiento aceptados más 12 ejemplos de repetición de anclas) orientada a reducir cierres repetitivos, reforzar negativas y límites, y mejorar el desacuerdo honesto sin frialdad. El autor reporta una pérdida de entrenamiento de 0,9225 en una única época y 165,8 segundos de ejecución.
 
-La relevancia actual es acotada y de nicho: se trata de un adaptador de personalidad para un prototipo de producto de acompañamiento conversacional, no de un modelo generalista nuevo. Su interés técnico reside en la metodología de evaluación documentada (puerta automática de 100 respuestas, revisión manual del agente y auditoría semántica con Voyage), poco habitual en adaptadores de persona publicados en HuggingFace.
+La relevancia actual es acotada y de nicho: se trata de un adaptador de personalidad para un prototipo de producto de acompañamiento conversacional, no de un modelo generalista nuevo. Su interés técnico reside en la metodología de evaluación documentada (puerta automática de 100 respuestas, revisión manual del agente y auditoría semántica con Voyage), poco habitual en adaptadores de persona publicados en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -92,7 +92,7 @@ No se dispone de datos comparativos publicados para este adaptador. La comparaci
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aria-qwen38-27b-persona (este adaptador) | LoRA sobre base de 27B (rango no especificado) | No disponible | Solo evaluacion interna de comportamiento; sin benchmarks estandar | other | Repositorio HuggingFace, 0 descargas |
+| aria-qwen38-27b-persona (este adaptador) | LoRA sobre base de 27B (rango no especificado) | No disponible | Solo evaluacion interna de comportamiento; sin benchmarks estandar | other | Repositorio Hugging Face, 0 descargas |
 | unsloth/Qwen3.8-27B (base) | 27B segun denominacion | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Modelo base referenciado por el adaptador |
 | Otros adaptadores de persona de tamano similar | No disponible | No disponible | No disponible | No disponible | No se identificaron alternativas comparables en la informacion disponible |
 
@@ -116,7 +116,7 @@ La busqueda web realizada no devolvio ningun resultado relacionado con este mode
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/sifterchief/aria-qwen38-27b-persona
+- Repositorio Hugging Face del adaptador: https://huggingface.co/sifterchief/aria-qwen38-27b-persona
 - Modelo base referenciado: https://huggingface.co/unsloth/Qwen3.8-27B
 - Repositorio TRL (citado por el autor): https://github.com/huggingface/trl
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo, su modelo base ni adaptadores comparables; los resultados obtenidos eran ajenos al ambito de modelos de lenguaje y se omiten.

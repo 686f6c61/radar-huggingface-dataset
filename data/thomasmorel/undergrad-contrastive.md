@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`thomasmorel/undergrad-contrastive` es un repositorio experimental publicado en HuggingFace que contiene una implementación de un Tiny Transformer orientado a tareas de aprendizaje contrastivo, configurado en una escala "nano". Lo desarrolla el usuario thomasmorel y se distribuye bajo licencia BSD-3-Clause. El modelo totaliza únicamente 16.576 parámetros, lo que lo sitúa en el rango de los transformers de juguete empleados para docencia y pruebas de humo.
+`thomasmorel/undergrad-contrastive` es un repositorio experimental publicado en Hugging Face que contiene una implementación de un Tiny Transformer orientado a tareas de aprendizaje contrastivo, configurado en una escala "nano". Lo desarrolla el usuario thomasmorel y se distribuye bajo licencia BSD-3-Clause. El modelo totaliza únicamente 16.576 parámetros, lo que lo sitúa en el rango de los transformers de juguete empleados para docencia y pruebas de humo.
 
 El repositorio se presenta explícitamente como un punto de partida transparente y repetible: incluye el código (`run.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`). El propio autor advierte que este checkpoint no ha sido entrenado ni evaluado, y que no se reclama ninguna puntuación de benchmark. Es relevante, por tanto, no como un modelo utilizable en producción, sino como material de referencia reproducible para experimentar con arquitecturas contrastivas y validar infraestructura de despliegue.
 
@@ -75,4 +75,4 @@ No se dispone de modelos comparables en la información proporcionada. El reposi
 
 ## Enlaces
 
-- [HuggingFace: thomasmorel/undergrad-contrastive](https://huggingface.co/thomasmorel/undergrad-contrastive)
+- [Hugging Face: thomasmorel/undergrad-contrastive](https://huggingface.co/thomasmorel/undergrad-contrastive)

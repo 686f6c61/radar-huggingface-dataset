@@ -4,7 +4,7 @@
 
 El modelo `mradermacher/AfriqueQwen3.5-4B-Instruct-v1-GGUF` es una cuantización en formato GGUF del modelo original `McGill-NLP/AfriqueQwen3.5-4B-Instruct-v1`, desarrollado por el grupo de procesamiento de lenguaje natural de la Universidad McGill. El autor `mradermacher` ha generado una serie de cuantizaciones estáticas (f16, Q4_K_S, Q2_K, Q8_0, Q6_K, Q3_K_M, Q3_K_S, Q3_K_L, Q4_K_M, Q5_K_S, Q5_K_M, IQ4_XS) para facilitar su despliegue en entornos con recursos limitados, como CPU o GPUs de baja capacidad.
 
-El modelo base, del que se deriva esta cuantización, parece ser una variante de la familia Qwen3.5 con 4 mil millones de parámetros, orientada a instrucciones y con un enfoque específico para el contexto africano (el nombre "Afrique" sugiere una adaptación multilingüe o cultural). Sin embargo, la información disponible en la ficha de HuggingFace es muy escasa: no se especifican arquitectura, licencia, idiomas ni detalles de entrenamiento. La relevancia actual radica en que las cuantizaciones GGUF permiten ejecutar modelos de 4B en hardware de consumo, lo que amplía su accesibilidad para desarrolladores e investigadores.
+El modelo base, del que se deriva esta cuantización, parece ser una variante de la familia Qwen3.5 con 4 mil millones de parámetros, orientada a instrucciones y con un enfoque específico para el contexto africano (el nombre "Afrique" sugiere una adaptación multilingüe o cultural). Sin embargo, la información disponible en la ficha de Hugging Face es muy escasa: no se especifican arquitectura, licencia, idiomas ni detalles de entrenamiento. La relevancia actual radica en que las cuantizaciones GGUF permiten ejecutar modelos de 4B en hardware de consumo, lo que amplía su accesibilidad para desarrolladores e investigadores.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El modelo base, del que se deriva esta cuantización, parece ser una variante de
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo original. Dado el nombre "Qwen3.5", es probable que siga la arquitectura transformer de la serie Qwen, pero no se puede confirmar. Tampoco hay datos sobre el dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas de alineación como RLHF o DPO. La única información técnica disponible es que se trata de una cuantización estática del modelo de McGill-NLP, generada con la herramienta de conversión de HuggingFace (según los comentarios en la model card).
+No se dispone de información sobre la arquitectura interna del modelo original. Dado el nombre "Qwen3.5", es probable que siga la arquitectura transformer de la serie Qwen, pero no se puede confirmar. Tampoco hay datos sobre el dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas de alineación como RLHF o DPO. La única información técnica disponible es que se trata de una cuantización estática del modelo de McGill-NLP, generada con la herramienta de conversión de Hugging Face (según los comentarios en la model card).
 
 ## Capacidades
 
@@ -65,8 +65,8 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/AfriqueQwen3.5-4B-Instruct-v1-GGUF
-- Repositorio HuggingFace del modelo original (referenciado en la model card): https://huggingface.co/McGill-NLP/AfriqueQwen3.5-4B-Instruct-v1
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/AfriqueQwen3.5-4B-Instruct-v1-GGUF
+- Repositorio Hugging Face del modelo original (referenciado en la model card): https://huggingface.co/McGill-NLP/AfriqueQwen3.5-4B-Instruct-v1
 - Repositorio GGUF similar del mismo autor: https://huggingface.co/mradermacher/AfriqueQwen3.5-4B-GGUF
 - Repositorio de otro modelo Qwen3.5-4B del mismo autor: https://huggingface.co/mradermacher/Qwen3.5-4B-Instruct-SingleTurn-GGUF
 - Repositorio oficial de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

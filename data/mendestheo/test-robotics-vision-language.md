@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mendestheo/test-robotics-vision-language` es un repositorio de HuggingFace publicado por el usuario mendestheo que, pese a su nombre y a las etiquetas `robotics-vision-language` y `transformer`, no contiene un modelo entrenado sino una nota de investigación exploratoria sobre visión-lenguaje aplicada a robótica. La model card lo describe explícitamente como "exploratory note" y aclara que no se reclama ningún checkpoint entrenado, ninguna mejora en benchmarks ni código liberado. El artefacto principal es un fichero `summary.md` con el planteamiento del estudio, los posibles factores de confusión y los requisitos de reproducibilidad.
+`mendestheo/test-robotics-vision-language` es un repositorio de Hugging Face publicado por el usuario mendestheo que, pese a su nombre y a las etiquetas `robotics-vision-language` y `transformer`, no contiene un modelo entrenado sino una nota de investigación exploratoria sobre visión-lenguaje aplicada a robótica. La model card lo describe explícitamente como "exploratory note" y aclara que no se reclama ningún checkpoint entrenado, ninguna mejora en benchmarks ni código liberado. El artefacto principal es un fichero `summary.md` con el planteamiento del estudio, los posibles factores de confusión y los requisitos de reproducibilidad.
 
 El repositorio incluye un fichero `model.safetensors` cuyo recuento de parámetros reportado es de 16.576, un valor compatible con un tensor auxiliar o un artefacto de prueba más que con un transformer funcional. El tamaño total del repositorio es de 0.0 GB y las descargas y likes registrados son cero, lo que confirma que se trata de un espacio de trabajo personal sin tracción pública.
 
@@ -72,5 +72,5 @@ No disponible. No existe categoría funcional comparable, dado que el repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mendestheo/test-robotics-vision-language
+- Repositorio en Hugging Face: https://huggingface.co/mendestheo/test-robotics-vision-language
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código ni demos.

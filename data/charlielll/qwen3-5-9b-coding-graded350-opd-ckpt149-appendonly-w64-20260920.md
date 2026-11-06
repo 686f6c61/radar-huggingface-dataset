@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-coding-graded350-opd-ckpt149 | ~8,95 B | no disponible | Apache 2.0 | safetensors en HuggingFace, 0 descargas y 0 likes en el momento de la consulta | sin cifras en la informacion disponible |
-| Shangy/Qwen3.5-9B-OPD-Coding (modelo base) | ~8,95 B (heredado) | no disponible | no disponible | HuggingFace | no disponible |
-| Qwen2.5-Coder-7B | 7,61 B | 128K tokens | Apache 2.0 | safetensors y GGUF en HuggingFace | publicados por el autor del modelo |
+| Qwen3.5-9B-coding-graded350-opd-ckpt149 | ~8,95 B | no disponible | Apache 2.0 | safetensors en Hugging Face, 0 descargas y 0 likes en el momento de la consulta | sin cifras en la informacion disponible |
+| Shangy/Qwen3.5-9B-OPD-Coding (modelo base) | ~8,95 B (heredado) | no disponible | no disponible | Hugging Face | no disponible |
+| Qwen2.5-Coder-7B | 7,61 B | 128K tokens | Apache 2.0 | safetensors y GGUF en Hugging Face | publicados por el autor del modelo |
 
 La comparacion con alternativas de la misma categoria (modelos de codigo densos de 7-9B) queda limitada por la ausencia de contexto declarado, de idiomas y de resultados numericos en la informacion disponible. Los datos de la fila de Qwen2.5-Coder-7B proceden de documentacion publica general y no del material analizado en esta ficha; se incluyen solo como referencia de categoria, no como comparacion medida contra este checkpoint.
 
@@ -89,7 +89,7 @@ La comparacion con alternativas de la misma categoria (modelos de codigo densos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieLLL/Qwen3.5-9B-coding-graded350-opd-ckpt149-appendonly-w64-20260920
+- Modelo en Hugging Face: https://huggingface.co/CharlieLLL/Qwen3.5-9B-coding-graded350-opd-ckpt149-appendonly-w64-20260920
 - Dataset de resultados de la campana eval150: https://huggingface.co/datasets/CharlieLLL/SWEbench-Verified-eval150-M2.7-new-checkpoints-appendonly-w64-20260920
 - Modelo base: https://huggingface.co/Shangy/Qwen3.5-9B-OPD-Coding
 - Revision del donante de exportacion: 679d1265badc03391b17126b79096ae3b6ffb20c (sin URL publica en la informacion disponible)

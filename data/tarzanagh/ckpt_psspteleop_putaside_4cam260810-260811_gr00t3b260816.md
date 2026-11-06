@@ -70,4 +70,4 @@ No disponible. No se han proporcionado datos comparativos con otros modelos de r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tarzanagh/ckpt_psspteleop_putaside_4cam260810-260811_gr00t3b260816
+- Repositorio en Hugging Face: https://huggingface.co/tarzanagh/ckpt_psspteleop_putaside_4cam260810-260811_gr00t3b260816

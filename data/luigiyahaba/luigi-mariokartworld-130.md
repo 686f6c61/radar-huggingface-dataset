@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Luigi-MarioKartWorld-130 es un repositorio publicado en HuggingFace por el usuario LUIGIYAHABA. Por el identificador y el nombre, parece tratarse de un artefacto relacionado con el videojuego Mario Kart World, probablemente un modelo entrenado o ajustado para alguna tarea vinculada a dicho juego, aunque la model card no aporta ninguna descripción funcional, técnica ni de uso. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere pesos de pequeño tamaño o un conjunto de artefactos auxiliares más que un modelo de lenguaje de gran escala.
+Luigi-MarioKartWorld-130 es un repositorio publicado en Hugging Face por el usuario LUIGIYAHABA. Por el identificador y el nombre, parece tratarse de un artefacto relacionado con el videojuego Mario Kart World, probablemente un modelo entrenado o ajustado para alguna tarea vinculada a dicho juego, aunque la model card no aporta ninguna descripción funcional, técnica ni de uso. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere pesos de pequeño tamaño o un conjunto de artefactos auxiliares más que un modelo de lenguaje de gran escala.
 
 La información disponible es mínima: no se declara pipeline, no se especifican idiomas, la licencia figura como desconocida y no hay resultados de benchmarks ni documentación de arquitectura. El repositorio no registra descargas ni likes en el momento de la consulta, y las fechas de creación y actualización (1 de noviembre de 2026) son coherentes entre sí pero no aportan contexto adicional sobre el entrenamiento.
 
@@ -73,5 +73,5 @@ No disponible. No se conocen modelos comparables porque no se ha identificado la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LUIGIYAHABA/Luigi-MarioKartWorld-130
+- Repositorio en Hugging Face: https://huggingface.co/LUIGIYAHABA/Luigi-MarioKartWorld-130
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información disponible.

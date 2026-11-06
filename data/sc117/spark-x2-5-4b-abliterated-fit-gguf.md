@@ -74,7 +74,7 @@ No se dispone de información fiable para una comparativa directa con otros mode
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/SC117/Spark-X2.5-4B-abliterated-FIT-GGUF
+- Repositorio del modelo en Hugging Face: https://huggingface.co/SC117/Spark-X2.5-4B-abliterated-FIT-GGUF
 - Repositorio de FIT-GGUF: https://github.com/Scorp1o117/FIT-GGUF
 - README en chino: https://huggingface.co/SC117/Spark-X2.5-4B-abliterated-FIT-GGUF/blob/main/README.zh-CN.md
 - Modelo base (inferido del campo `base_model`): https://huggingface.co/XHToken/Spark-X2.5-4B

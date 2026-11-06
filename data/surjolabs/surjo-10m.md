@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SurjoLabs/Surjo-10m es un modelo de inteligencia artificial publicado por la organización SurjoLabs en HuggingFace. Se trata de una entrada reciente (creada en septiembre de 2026) con acceso restringido que exige aceptar condiciones antes de poder descargar los pesos. El repositorio contiene un archivo en formato safetensors y tiene un tamaño de 1.1 GB, lo que sugiere un número de parámetros considerable, aunque el nombre del modelo ("10m") podría interpretarse como una referencia a 10 millones de parámetros, creando cierta ambigüedad. No se ha publicado documentación técnica, licencia ni información sobre los idiomas soportados, por lo que es imposible verificar su arquitectura, rendimiento o capacidades.
+SurjoLabs/Surjo-10m es un modelo de inteligencia artificial publicado por la organización SurjoLabs en Hugging Face. Se trata de una entrada reciente (creada en septiembre de 2026) con acceso restringido que exige aceptar condiciones antes de poder descargar los pesos. El repositorio contiene un archivo en formato safetensors y tiene un tamaño de 1.1 GB, lo que sugiere un número de parámetros considerable, aunque el nombre del modelo ("10m") podría interpretarse como una referencia a 10 millones de parámetros, creando cierta ambigüedad. No se ha publicado documentación técnica, licencia ni información sobre los idiomas soportados, por lo que es imposible verificar su arquitectura, rendimiento o capacidades.
 
 Debido a la falta de datos públicos, este modelo es actualmente una caja negra que no puede evaluarse correctamente. Su relevancia en el ecosistema open source es limitada, ya que sin información sobre arquitectura, entrenamiento o benchmarks, no resulta útil para desarrolladores o investigadores que necesiten tomar decisiones informadas. La organización tiene presencia en plataformas de seguimiento de mercados de IA como AI Market Cap, pero no se han encontrado detalles adicionales sobre sus modelos o su rendimiento.
 
@@ -56,7 +56,7 @@ No disponible. No existe información pública sobre modelos comparables de Surj
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo está marcado como gated en HuggingFace, lo que obliga a aceptar condiciones antes de su descarga y puede impedir su uso en determinados contextos.
+- Acceso restringido: el modelo está marcado como gated en Hugging Face, lo que obliga a aceptar condiciones antes de su descarga y puede impedir su uso en determinados contextos.
 - Falta de documentación: al no existir información sobre arquitectura, entrenamiento, licencia o idiomas, la fiabilidad y seguridad del modelo no puede evaluarse.
 - Riesgo de alucinaciones desconocido: sin benchmarks ni análisis de sesgos, no se puede descartar la presencia de comportamientos no deseados o sesgos graves.
 - Licencia no especificada: la ausencia de licencia impide conocer si el modelo puede usarse comercialmente o si tiene restricciones.
@@ -64,6 +64,6 @@ No disponible. No existe información pública sobre modelos comparables de Surj
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SurjoLabs/Surjo-10m
-- Perfil de organización SurjoLabs en HuggingFace: https://huggingface.co/SurjoLabs
+- Repositorio en Hugging Face: https://huggingface.co/SurjoLabs/Surjo-10m
+- Perfil de organización SurjoLabs en Hugging Face: https://huggingface.co/SurjoLabs
 - Página de SurjoLabs en AI Market Cap: https://aimarketcap.tech/providers/surjolabs

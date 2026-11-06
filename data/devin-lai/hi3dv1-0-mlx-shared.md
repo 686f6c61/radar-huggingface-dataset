@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Resoluciones | Runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hi3Dv1.0-mlx-shared | Componentes compartidos image-to-3d | 512³, 1024³, 1536³ | MLX (Apple Silicon) | hi3d-open-license-agreement-v1.0 | HuggingFace (0 descargas, 0 likes) |
-| Hi3Dv1.0 (upstream) | Modelo image-to-3d completo | no disponible | no disponible | hi3d-open-license-agreement-v1.0 | HuggingFace (hi3d-official) |
-| Hi3Dv1.0-mlx | Pipeline completo MLX | 512³, 1024³, 1536³ | MLX (Apple Silicon) | hi3d-open-license-agreement-v1.0 | HuggingFace (devin-lai) |
+| Hi3Dv1.0-mlx-shared | Componentes compartidos image-to-3d | 512³, 1024³, 1536³ | MLX (Apple Silicon) | hi3d-open-license-agreement-v1.0 | Hugging Face (0 descargas, 0 likes) |
+| Hi3Dv1.0 (upstream) | Modelo image-to-3d completo | no disponible | no disponible | hi3d-open-license-agreement-v1.0 | Hugging Face (hi3d-official) |
+| Hi3Dv1.0-mlx | Pipeline completo MLX | 512³, 1024³, 1536³ | MLX (Apple Silicon) | hi3d-open-license-agreement-v1.0 | Hugging Face (devin-lai) |
 
 No se dispone de información sobre otros modelos image-to-3d comparables (por ejemplo, alternativas de reconstrucción 3D monocular) en la documentación proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de información sobre otros modelos image-to-3d comparables (por e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/devin-lai/Hi3Dv1.0-mlx-shared
+- Repositorio Hugging Face: https://huggingface.co/devin-lai/Hi3Dv1.0-mlx-shared
 - Proyecto y runtime de inferencia: https://huggingface.co/devin-lai/Hi3Dv1.0-mlx
 - Resultados: https://huggingface.co/datasets/devin-lai/Hi3Dv1.0-mlx-results
 - Modelo base: https://huggingface.co/hi3d-official/Hi3Dv1.0

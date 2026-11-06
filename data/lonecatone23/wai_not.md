@@ -4,7 +4,7 @@
 
 WAI_Not es un checkpoint de generacion de imagenes basado en Illustrious V1.0, desarrollado por Lonecatone23. Se trata de un modelo de difusion orientado a la produccion de ilustraciones y arte digital, con un enfoque especial en la claridad, el detalle y la estructura de las imagenes generadas. El autor ha modificado los bloques inferiores y las capas intermedias del modelo base, ademas de ajustar el CLIP y el VAE, por lo que recomienda usar el checkpoint completo para obtener resultados coherentes.
 
-El modelo se publica bajo licencia MIT y esta disponible en HuggingFace como repositorio de 7.1 GB. Aunque no se especifica la arquitectura exacta ni el proceso de entrenamiento, se sabe que parte de Illustrious V1.0, una familia de modelos de difusion latente ampliamente utilizada para generacion de imagenes en estilo anime e ilustracion. Su relevancia actual radica en ofrecer una variante afinada que prioriza la nitidez y la composicion estructural, lo que puede interesar a artistas digitales y desarrolladores de herramientas de generacion de imagenes.
+El modelo se publica bajo licencia MIT y esta disponible en Hugging Face como repositorio de 7.1 GB. Aunque no se especifica la arquitectura exacta ni el proceso de entrenamiento, se sabe que parte de Illustrious V1.0, una familia de modelos de difusion latente ampliamente utilizada para generacion de imagenes en estilo anime e ilustracion. Su relevancia actual radica en ofrecer una variante afinada que prioriza la nitidez y la composicion estructural, lo que puede interesar a artistas digitales y desarrolladores de herramientas de generacion de imagenes.
 
 ## Especificaciones tecnicas
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| WAI_Not | Difusion (Illustrious V1.0) | no disponible | MIT | HuggingFace, Civitai |
-| Illustrious V1.0 | Difusion | no disponible | no disponible | Civitai, HuggingFace |
-| SD 1.5 | Difusion latente | 983M | CreativeML Open RAIL-M | HuggingFace |
+| WAI_Not | Difusion (Illustrious V1.0) | no disponible | MIT | Hugging Face, Civitai |
+| Illustrious V1.0 | Difusion | no disponible | no disponible | Civitai, Hugging Face |
+| SD 1.5 | Difusion latente | 983M | CreativeML Open RAIL-M | Hugging Face |
 
 No se dispone de datos de benchmarks ni de parametros para una comparacion cuantitativa fiable. WAI_Not es un checkpoint afinado sobre Illustrious V1.0, por lo que su comportamiento sera similar al base con mejoras en claridad y estructura.
 
@@ -74,6 +74,6 @@ No se dispone de datos de benchmarks ni de parametros para una comparacion cuant
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lonecatone23/WAI_Not
+- Hugging Face: https://huggingface.co/Lonecatone23/WAI_Not
 - Civitai: https://civitai.com/models/2643710/wainotv10
 - CivArchive: https://civarchive.com/models/2643710?modelVersionId=2968484

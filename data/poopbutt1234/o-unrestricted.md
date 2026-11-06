@@ -99,7 +99,7 @@ No se conocen modelos comparables de otros proveedores con datos verificables en
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Poopbutt1234/o-unrestricted
+- Página del modelo en Hugging Face: https://huggingface.co/Poopbutt1234/o-unrestricted
 - Modelo base declarado: https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF
 - Derivado intermedio: https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen3.8-27B

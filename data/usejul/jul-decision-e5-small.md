@@ -67,15 +67,15 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 - VRAM estimada: en FP32, aproximadamente 471 MB solo de pesos; en FP16, alrededor de 235 MB; en int8 (ONNX), unos 98 MB segun el autor.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre. Para lotes grandes o alto throughput, una T4, RTX 3060 o superior es mas que suficiente; no requiere A100 ni H100.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU de consumo actuales, y tambien en CPU e incluso en dispositivos con poca memoria.
-- Opciones de despliegue: transformers (pipeline `zero-shot-classification`), sentence-transformers, ONNX Runtime con el build int8 y la CLI de jul mediante `jul models add jul-decision-e5-small --repo usejul/jul-decision-e5-small-onnx --backend onnx`. Compatible con endpoints de HuggingFace.
+- Opciones de despliegue: transformers (pipeline `zero-shot-classification`), sentence-transformers, ONNX Runtime con el build int8 y la CLI de jul mediante `jul models add jul-decision-e5-small --repo usejul/jul-decision-e5-small-onnx --backend onnx`. Compatible con endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. El autor solo indica que mantiene la misma velocidad que e5-small.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Zero-shot (jul dev, n = 800) | SIB-200 (6 idiomas no vistos) | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| jul-decision-e5-small | 117,6 M | no disponible | 0,611 | 0,839 | Apache-2.0 | HuggingFace + ONNX int8 |
-| intfloat/multilingual-e5-small | 117,6 M | no disponible | 0,532 | 0,639 | MIT | HuggingFace |
+| jul-decision-e5-small | 117,6 M | no disponible | 0,611 | 0,839 | Apache-2.0 | Hugging Face + ONNX int8 |
+| intfloat/multilingual-e5-small | 117,6 M | no disponible | 0,532 | 0,639 | MIT | Hugging Face |
 | Otros encoders multilingues pequenos | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa cuantitativa solo es posible frente al modelo base, porque es el unico para el que el autor publica cifras. No se dispone de datos comparables de alternativas como otros encoders multilingues de tamano similar en la informacion proporcionada.
@@ -93,7 +93,7 @@ La comparativa cuantitativa solo es posible frente al modelo base, porque es el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/usejul/jul-decision-e5-small
+- Modelo en Hugging Face: https://huggingface.co/usejul/jul-decision-e5-small
 - Build ONNX int8: https://huggingface.co/usejul/jul-decision-e5-small-onnx
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Repositorio del framework jul: https://github.com/usejul/jul

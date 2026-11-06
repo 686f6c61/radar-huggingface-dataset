@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibreYOLO/LibreFalconOCR270m
+- Modelo en Hugging Face: https://huggingface.co/LibreYOLO/LibreFalconOCR270m
 - Modelo base upstream: https://huggingface.co/tiiuae/Falcon-OCR
 - Código del modelo original: https://github.com/tiiuae/Falcon-Perception
 - Paper: arXiv:2603.27365

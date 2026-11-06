@@ -59,8 +59,8 @@ No se dispone de modelos comparables en la información proporcionada. Este repo
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mattwinwood/faster-whisper-vocal-score-profile | Perfil de configuración | No disponible | No disponible | No disponible | MIT | HuggingFace |
-| Systran/faster-whisper-small.en | Modelo ASR (Whisper small) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| mattwinwood/faster-whisper-vocal-score-profile | Perfil de configuración | No disponible | No disponible | No disponible | MIT | Hugging Face |
+| Systran/faster-whisper-small.en | Modelo ASR (Whisper small) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 

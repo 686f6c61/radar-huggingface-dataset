@@ -86,7 +86,7 @@ Los resultados por rollout se encuentran en el dataset de evaluacion `mulligan/s
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mulligan/sim-square-broad-r03-mulligan-idql` (este modelo) | no disponible | no aplica | 86,03 % de exito medio en 30.000 rollouts por semilla | MIT | HuggingFace, 1,4 GB, 5 semillas |
+| `mulligan/sim-square-broad-r03-mulligan-idql` (este modelo) | no disponible | no aplica | 86,03 % de exito medio en 30.000 rollouts por semilla | MIT | Hugging Face, 1,4 GB, 5 semillas |
 | Otros brazos de la ronda R3 del mismo proyecto (p. ej. `sobol`) | no disponible | no aplica | no disponible | no disponible | referenciados en los datasets, sin checkpoints equivalentes en la informacion consultada |
 | Otros agentes de la campana `sim-square-broad` (DAOgger, teleoperacion) | no disponible | no aplica | no disponible | no disponible | datasets publicos en la organizacion `mulligan` |
 | IDQL de referencia (metodo base) | no disponible | no aplica | no disponible | no disponible | publicacion cientifica, sin checkpoint publicado de esta tarea |
@@ -109,8 +109,8 @@ No se dispone de cifras de rendimiento de las alternativas dentro de la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r03-mulligan-idql
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r03-mulligan-idql
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Sitio del proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval

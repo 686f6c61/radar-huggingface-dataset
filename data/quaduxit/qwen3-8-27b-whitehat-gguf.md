@@ -86,7 +86,7 @@ La comparativa se basa en la evaluación interna de la model card. No se dispone
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/QuaduxIT/Qwen3.8-27B-Whitehat-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/QuaduxIT/Qwen3.8-27B-Whitehat-GGUF)
 - [Modelo base Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Cuantizaciones GGUF de Unsloth para Qwen3.8-27B](https://huggingface.co/unsloth/Qwen3.8-27B-GGUF)
 - [Guía de cuantizaciones para Qwen3.8-27B](https://www.orcarouter.ai/blog/qwen-3-8-27b-gguf)

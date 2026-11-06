@@ -2,7 +2,7 @@
 
 ## Resumen
 
-embeddingmagibu2 es un modelo de embeddings de frases (sentence embeddings) publicado por Ali Bayram (usuario `alibayram` en HuggingFace) como parte de la línea magibu-ai. Se trata de un ajuste fino de `google/embeddinggemma-2` con 744.371.512 parámetros, orientado a tareas de similitud semántica, extracción de características y recuperación de información, con foco declarado en turco (`tr`) y cobertura multilingüe. La licencia es Apache 2.0 y el acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+embeddingmagibu2 es un modelo de embeddings de frases (sentence embeddings) publicado por Ali Bayram (usuario `alibayram` en Hugging Face) como parte de la línea magibu-ai. Se trata de un ajuste fino de `google/embeddinggemma-2` con 744.371.512 parámetros, orientado a tareas de similitud semántica, extracción de características y recuperación de información, con foco declarado en turco (`tr`) y cobertura multilingüe. La licencia es Apache 2.0 y el acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 El modelo resuelve el problema de obtener representaciones vectoriales densas de alta calidad para turco, un idioma con menor cobertura en la familia de modelos de embedding multilingües dominantes. Entre sus etiquetas aparecen `tokenizer-surgery` y la referencia al paper arXiv:2605.29992, que describe la adaptación de modelos de embedding multilingües al turco mediante destilación y modificaciones de tokenizador. El modelo hermano `alibayram/embeddingmagibu-200m`, documentado en ese paper y en el repositorio `embedding-trainer`, produce vectores de 768 dimensiones normalizados en L2 con una ventana de contexto de 8.192 tokens; esa información corresponde al modelo de 200M, no necesariamente a embeddingmagibu2.
 
@@ -70,22 +70,22 @@ No se han publicado resultados de benchmarks específicos de embeddingmagibu2 en
 - VRAM estimada para los pesos: aproximadamente 3,0 GB en fp32, 1,5 GB en fp16/bf16, 0,75 GB en int8 y 0,4 GB en int4. Son estimaciones calculadas a partir de los 744.371.512 parámetros; hay que sumar el overhead de activaciones, batch y framework.
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM puede ejecutar el modelo en fp16 para lotes pequeños. Para indexación a gran escala con lotes grandes, se recomiendan A100, H100, L40S o RTX 4090 por su ancho de banda de memoria.
 - Cabe en GPU de consumo: sí, en tarjetas como RTX 3060 (12 GB), RTX 4060 Ti, RTX 4070, RTX 4080 y RTX 4090, e incluso en GPUs de 6-8 GB con cuantización.
-- Opciones de despliegue: `sentence-transformers` (referencia, la librería declarada en el repositorio), HuggingFace Text Embeddings Inference (TEI) para servir embeddings a gran escala, y `llama.cpp`/Ollama si se genera una conversión a GGUF (el modelo hermano de 200M tiene publicación en Ollama; no se ha confirmado para embeddingmagibu2). El soporte en vLLM depende de la arquitectura `embedding_gemma2` y debe verificarse en la versión concreta.
+- Opciones de despliegue: `sentence-transformers` (referencia, la librería declarada en el repositorio), Hugging Face Text Embeddings Inference (TEI) para servir embeddings a gran escala, y `llama.cpp`/Ollama si se genera una conversión a GGUF (el modelo hermano de 200M tiene publicación en Ollama; no se ha confirmado para embeddingmagibu2). El soporte en vLLM depende de la arquitectura `embedding_gemma2` y debe verificarse en la versión concreta.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia por lote para este modelo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Dimensión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alibayram/embeddingmagibu2 | 744.371.512 | no disponible | no disponible | Apache 2.0 | HuggingFace, acceso restringido (gated) |
-| alibayram/embeddingmagibu-200m | ~200 M (152 M en la versión previa) | 8.192 tokens | 768 | MIT | HuggingFace y Ollama |
-| google/embeddinggemma-2 (base) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | HuggingFace (modelo base del que deriva) |
+| alibayram/embeddingmagibu2 | 744.371.512 | no disponible | no disponible | Apache 2.0 | Hugging Face, acceso restringido (gated) |
+| alibayram/embeddingmagibu-200m | ~200 M (152 M en la versión previa) | 8.192 tokens | 768 | MIT | Hugging Face y Ollama |
+| google/embeddinggemma-2 (base) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | Hugging Face (modelo base del que deriva) |
 
 No se dispone de datos verificados en la información proporcionada sobre otros modelos comparables de la misma categoría (por ejemplo, alternativas multilingües de tamaño similar), por lo que no se incluyen cifras de rendimiento comparado.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, incluso aunque la licencia sea Apache 2.0.
+- Acceso restringido: el repositorio es gated, por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, incluso aunque la licencia sea Apache 2.0.
 - Ausencia de validación comunitaria: 0 descargas y 0 likes en el momento de la consulta, sin resultados de benchmarks publicados para esta variante concreta.
 - Model card incompleta: no se detallan la longitud de contexto, la dimensión de los embeddings, el dataset de entrenamiento ni el modelo profesor de embeddingmagibu2.
 - Riesgo de alucinación: no aplica en el sentido generativo (el modelo no produce texto), pero sí existe riesgo de recuperaciones irrelevantes o falsos positivos en similitud si el dominio de uso se aleja del corpus de entrenamiento.
@@ -97,8 +97,8 @@ No se dispone de datos verificados en la información proporcionada sobre otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alibayram/embeddingmagibu2
-- Perfil del autor en HuggingFace: https://huggingface.co/alibayram
+- Modelo en Hugging Face: https://huggingface.co/alibayram/embeddingmagibu2
+- Perfil del autor en Hugging Face: https://huggingface.co/alibayram
 - Modelo hermano embeddingmagibu-200m: https://huggingface.co/alibayram/embeddingmagibu-200m
 - Repositorio de archivos de embeddingmagibu-200m: https://huggingface.co/alibayram/embeddingmagibu-200m/tree/main
 - Publicación en Ollama de embeddingmagibu-200m: https://ollama.com/alibayram/embeddingmagibu-200m

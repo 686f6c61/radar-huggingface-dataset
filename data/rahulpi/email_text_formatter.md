@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RahulPi/Email_Text_Formatter | 14,7 B | no disponible | Extraccion de activos de emails | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B (fine-tuned) | 8 B | 128k | Generico / extraccion | Llama 3.1 Community License | HuggingFace |
-| Mistral 7B (fine-tuned) | 7 B | 32k | Generico / extraccion | Apache 2.0 | HuggingFace |
+| RahulPi/Email_Text_Formatter | 14,7 B | no disponible | Extraccion de activos de emails | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B (fine-tuned) | 8 B | 128k | Generico / extraccion | Llama 3.1 Community License | Hugging Face |
+| Mistral 7B (fine-tuned) | 7 B | 32k | Generico / extraccion | Apache 2.0 | Hugging Face |
 | GPT-4o mini (API) | no disponible | 128k | Generico / extraccion | Propietaria (pago) | API OpenAI |
 
 La ventaja de este modelo frente a alternativas genericas es su especializacion en la tarea de extraccion de activos empresariales, lo que deberia traducirse en mayor precision y menor necesidad de few-shot prompting. Sin embargo, al ser un modelo de 14,7 B, requiere mas VRAM que alternativas de 7-8 B.
@@ -81,6 +81,6 @@ La ventaja de este modelo frente a alternativas genericas es su especializacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RahulPi/Email_Text_Formatter
+- Modelo en Hugging Face: https://huggingface.co/RahulPi/Email_Text_Formatter
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo base cuantizado: https://huggingface.co/unsloth/phi-4-unsloth-bnb-4bit

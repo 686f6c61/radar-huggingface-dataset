@@ -6,7 +6,7 @@ Scalar Phos Pro es un modelo de lenguaje de 8.030 millones de parametros desarro
 
 El modelo se presenta como una variante "instruction-tuned" orientada a seguimiento de instrucciones especializado y razonamiento general, manteniendo el contexto nativo de 128.000 tokens de Llama 3.1. Su relevancia practica radica en que conserva el ecosistema de despliegue de Llama 3.1 (transformers, peft, llama.cpp, Ollama, LM Studio, TGI) y anade una capa de ajuste que, segun el autor, mejora el seguimiento de instrucciones, aunque los datos publicados de MMLU lo sitúan por debajo del modelo base en todas las categorias evaluadas.
 
-La ficha se basa exclusivamente en la model card del autor y en los metadatos de HuggingFace; no hay informacion publica sobre el dataset de ajuste, el numero de tokens de entrenamiento ni la composicion de la mezcla SFT. El repositorio tiene 0 descargas y 1 like en el momento de la consulta, por lo que se trata de un modelo de publicacion reciente y escasa validacion externa.
+La ficha se basa exclusivamente en la model card del autor y en los metadatos de Hugging Face; no hay informacion publica sobre el dataset de ajuste, el numero de tokens de entrenamiento ni la composicion de la mezcla SFT. El repositorio tiene 0 descargas y 1 like en el momento de la consulta, por lo que se trata de un modelo de publicacion reciente y escasa validacion externa.
 
 ## Especificaciones tecnicas
 
@@ -102,7 +102,7 @@ Scalar Phos Pro no supera a ninguno de los tres modelos comparables en MMLU y of
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scalar-ai/scalar-phos-pro
+- Modelo en Hugging Face: https://huggingface.co/scalar-ai/scalar-phos-pro
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/
 - EleutherAI lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

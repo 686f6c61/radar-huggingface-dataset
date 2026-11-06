@@ -93,7 +93,7 @@ No hay datos publicados de otros modelos especificos de generacion de comandos B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/micrictor/LFM2.5-350M-ShellAI-v2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/micrictor/LFM2.5-350M-ShellAI-v2-GGUF
 - Modelo anterior v1: https://huggingface.co/micrictor/LFM2.5-350M-ShellAI-GGUF
 - Blog de Liquid AI sobre LFM2.5-350M: https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind
 - Blog de Liquid AI sobre LFM2: https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models

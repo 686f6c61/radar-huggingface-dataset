@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ApocalypseParty/G4-26B-SFT-v2-1-GRPO-chkpt40-MJ es un modelo de lenguaje de aproximadamente 25,8 mil millones de parámetros publicado por el usuario ApocalypseParty en HuggingFace. El nombre del repositorio indica una cadena de entrenamiento secuencial: una fase de ajuste supervisado (SFT) sobre la versión v2.1 de la familia G4, seguida de una fase de optimización con GRPO (Group Relative Policy Optimization, la técnica de aprendizaje por refuerzo popularizada por la familia DeepSeek) y un checkpoint intermedio identificado como "40". La etiqueta del repositorio incluye "gemma4", lo que sugiere que la arquitectura base deriva de la familia Gemma, aunque la ficha pública no confirma este extremo.
+ApocalypseParty/G4-26B-SFT-v2-1-GRPO-chkpt40-MJ es un modelo de lenguaje de aproximadamente 25,8 mil millones de parámetros publicado por el usuario ApocalypseParty en Hugging Face. El nombre del repositorio indica una cadena de entrenamiento secuencial: una fase de ajuste supervisado (SFT) sobre la versión v2.1 de la familia G4, seguida de una fase de optimización con GRPO (Group Relative Policy Optimization, la técnica de aprendizaje por refuerzo popularizada por la familia DeepSeek) y un checkpoint intermedio identificado como "40". La etiqueta del repositorio incluye "gemma4", lo que sugiere que la arquitectura base deriva de la familia Gemma, aunque la ficha pública no confirma este extremo.
 
 El modelo no incluye model card descriptiva: no hay información publicada sobre datos de entrenamiento, composición del dataset, licencia, idiomas soportados ni resultados de evaluación. El repositorio tiene 51,6 GB de peso, coherente con pesos en precisión BF16/F16 para 25,8 mil millones de parámetros, y acumula 13 descargas y 0 "likes" en el momento de la consulta, lo que lo sitúa como una publicación experimental de baja difusión.
 
@@ -73,10 +73,10 @@ No hay datos de MMLU, HumanEval, GSM8K, MATH, MT-Bench ni de ninguna otra evalua
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|---|
-| G4-26B-SFT-v2-1-GRPO-chkpt40-MJ (este) | 25,8 mM | no disponible | safetensors | no disponible | HuggingFace, 13 descargas | no publicados |
-| ApocalypseParty/G4-26B-SFT-v2-1 | no disponible (misma familia, presumiblemente ~26B) | no disponible | safetensors | no disponible | HuggingFace | no publicados |
-| ApocalypseParty/G4-26B-SFT-v2-1-gguf | no disponible (misma familia) | no disponible | GGUF | no disponible | HuggingFace | no publicados |
-| ApocalypseParty/G4-26B-SFT-6 | ~26B (segun LLM Explorer) | no disponible | safetensors | no disponible | HuggingFace, indexado en LLM Explorer | no publicados |
+| G4-26B-SFT-v2-1-GRPO-chkpt40-MJ (este) | 25,8 mM | no disponible | safetensors | no disponible | Hugging Face, 13 descargas | no publicados |
+| ApocalypseParty/G4-26B-SFT-v2-1 | no disponible (misma familia, presumiblemente ~26B) | no disponible | safetensors | no disponible | Hugging Face | no publicados |
+| ApocalypseParty/G4-26B-SFT-v2-1-gguf | no disponible (misma familia) | no disponible | GGUF | no disponible | Hugging Face | no publicados |
+| ApocalypseParty/G4-26B-SFT-6 | ~26B (segun LLM Explorer) | no disponible | safetensors | no disponible | Hugging Face, indexado en LLM Explorer | no publicados |
 
 No se dispone de datos de benchmarks ni de licencia de ninguno de los modelos comparados, por lo que no es posible establecer una comparacion de rendimiento. Los modelos listados son variantes de la misma familia del mismo autor, no alternativas de otros desarrolladores.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks ni de licencia de ninguno de los modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApocalypseParty/G4-26B-SFT-v2-1-GRPO-chkpt40-MJ
+- Modelo en Hugging Face: https://huggingface.co/ApocalypseParty/G4-26B-SFT-v2-1-GRPO-chkpt40-MJ
 - Modelo hermano (SFT base): https://huggingface.co/ApocalypseParty/G4-26B-SFT-v2-1
 - Modelo hermano en GGUF: https://huggingface.co/ApocalypseParty/G4-26B-SFT-v2-1-gguf
 - Linaje de la familia G4-26B-SFT-6 (Parapulse): https://parapulse.io/family/ApocalypseParty/G4-26B-SFT-6

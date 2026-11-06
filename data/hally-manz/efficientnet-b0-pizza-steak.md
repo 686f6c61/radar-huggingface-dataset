@@ -6,7 +6,7 @@ EfficientNet-B0 pizza vs steak es un clasificador binario de imagenes construido
 
 La arquitectura subyacente es EfficientNet-B0, una red convolucional con compound scaling que ronda los 5,3 millones de parametros en su version original de ImageNet, aunque la model card no declara el recuento exacto del checkpoint publicado. La cabeza de clasificacion se ha sustituido por un bloque Dropout(0.2) seguido de una capa Linear(1280, 1) con activacion sigmoide, de modo que la salida es la probabilidad de que la imagen pertenezca a la clase 1 (steak); la clase 0 corresponde a pizza.
 
-Su relevancia es limitada fuera del ambito educativo: sirve como ejemplo reproducible de un pipeline de transfer learning en dos fases, con dataset pequeno (1200 imagenes de entrenamiento, 300 de validacion y 500 de test) y una accuracy reportada del 99,80% en test. Es util para quien quiera ver un flujo completo de fine-tuning en PyTorch con pesos distribuidos en HuggingFace Hub, pero no esta pensado para produccion general ni para clasificacion fuera de las dos clases entrenadas.
+Su relevancia es limitada fuera del ambito educativo: sirve como ejemplo reproducible de un pipeline de transfer learning en dos fases, con dataset pequeno (1200 imagenes de entrenamiento, 300 de validacion y 500 de test) y una accuracy reportada del 99,80% en test. Es util para quien quiera ver un flujo completo de fine-tuning en PyTorch con pesos distribuidos en Hugging Face Hub, pero no esta pensado para produccion general ni para clasificacion fuera de las dos clases entrenadas.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ El dataset consta de 1200 imagenes de entrenamiento, 300 de validacion y 500 de 
 - Clasificacion binaria de imagenes en dos clases: pizza (indice 0) y steak (indice 1).
 - Salida de una probabilidad continua mediante sigmoide, interpretable como confianza en la clase steak.
 - Inferencia sobre imagenes individuales mediante la funcion `predict` incluida en el archivo `model.py` del repositorio.
-- Carga sencilla desde HuggingFace Hub con `hf_hub_download` para pesos, configuracion y codigo.
+- Carga sencilla desde Hugging Face Hub con `hf_hub_download` para pesos, configuracion y codigo.
 - No soporta tool calling ni function calling.
 - No soporta agentes ni razonamiento multi-paso.
 - No tiene capacidades multilingues (no procesa texto).
@@ -43,7 +43,7 @@ El dataset consta de 1200 imagenes de entrenamiento, 300 de validacion y 500 de 
 - Demo educativa de transfer learning: el modelo sirve como ejemplo completo y reproducible de fine-tuning en dos fases sobre un backbone preentrenado, util en cursos o tutoriales de vision por computador con PyTorch.
 - Prototipo de filtrado en una aplicacion de recetas: se podria usar para etiquetar automaticamente fotos subidas por usuarios como "pizza" o "steak" antes de asignar una categoria culinaria, siempre que el dominio de imagenes coincida con el de entrenamiento.
 - Prueba de concepto en un pipeline de clasificacion de menus: integrado como paso previo en un sistema mayor, permitiria separar platos de dos categorias concretas antes de un analisis mas profundo.
-- Validacion de infraestructura de despliegue: por su tamano reducido, es adecuado para probar el ciclo completo de carga de pesos desde HuggingFace Hub, ejecucion en CPU y exposicion como endpoint ligero.
+- Validacion de infraestructura de despliegue: por su tamano reducido, es adecuado para probar el ciclo completo de carga de pesos desde Hugging Face Hub, ejecucion en CPU y exposicion como endpoint ligero.
 - Ejercicio de evaluacion de robustez: util para experimentar con imagenes fuera de distribucion y comprobar como el modelo asigna probabilidades extremas incluso a contenido no relacionado.
 - Base para un clasificador multi-clase: los pesos podrian servir como punto de partida para ampliar la cabeza a mas categorias de comida con un dataset mayor.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks adicionales (por ejemplo, precision
 
 | Modelo | Parametros | Tarea | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EfficientNet-B0 pizza vs steak (este modelo) | no disponible (~5,3 M en el backbone original) | Clasificacion binaria pizza/steak | Imagen (resolucion no especificada) | MIT | HuggingFace Hub |
+| EfficientNet-B0 pizza vs steak (este modelo) | no disponible (~5,3 M en el backbone original) | Clasificacion binaria pizza/steak | Imagen (resolucion no especificada) | MIT | Hugging Face Hub |
 | EfficientNet-B0 ImageNet (torchvision) | ~5,3 M | Clasificacion 1000 clases | Imagen 224x224 | BSD-3-Clause (torchvision) | torchvision |
 | ResNet-18 ImageNet | ~11,7 M | Clasificacion 1000 clases | Imagen 224x224 | BSD-3-Clause | torchvision |
 | MobileNetV3-Small ImageNet | ~2,5 M | Clasificacion 1000 clases | Imagen 224x224 | BSD-3-Clause | torchvision |
@@ -87,7 +87,7 @@ La comparacion directa con clasificadores genericos no es del todo equivalente, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hally-Manz/efficientnet-b0-pizza-steak
+- Modelo en Hugging Face: https://huggingface.co/Hally-Manz/efficientnet-b0-pizza-steak
 - EfficientNet (paper original): https://arxiv.org/abs/1905.11946
 - EfficientNet-B0 en torchvision: https://pytorch.org/vision/stable/models/efficientnet.html
-- Documentacion de HuggingFace Hub para descarga de archivos: https://huggingface.co/docs/huggingface_hub
+- Documentacion de Hugging Face Hub para descarga de archivos: https://huggingface.co/docs/huggingface_hub

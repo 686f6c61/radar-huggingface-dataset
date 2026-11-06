@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rabt-1.0-2B-i1-GGUF es un conjunto de cuantizaciones en formato GGUF del modelo Rabt-1.0-2B, generadas por mradermacher mediante la herramienta de cuantización i1 (imatrix). El modelo base, publicado por el usuario 4waiz en HuggingFace, se presenta nominalmente como un modelo de 2B parámetros, aunque los datos reales de safetensors del repositorio indican 960.882 parámetros totales, una discrepancia que conviene verificar antes de cualquier uso en producción. El repositorio de cuantizaciones no incluye model card descriptiva más allá de los metadatos de generación.
+Rabt-1.0-2B-i1-GGUF es un conjunto de cuantizaciones en formato GGUF del modelo Rabt-1.0-2B, generadas por mradermacher mediante la herramienta de cuantización i1 (imatrix). El modelo base, publicado por el usuario 4waiz en Hugging Face, se presenta nominalmente como un modelo de 2B parámetros, aunque los datos reales de safetensors del repositorio indican 960.882 parámetros totales, una discrepancia que conviene verificar antes de cualquier uso en producción. El repositorio de cuantizaciones no incluye model card descriptiva más allá de los metadatos de generación.
 
 La relevancia de esta ficha es limitada: se trata de un artefacto derivado (cuantizaciones de un modelo base del que no se dispone de documentación técnica) y no de un modelo original con paper, benchmarks o especificaciones publicadas. La información disponible se reduce a los tags de cuantización y a la referencia al modelo base. No hay datos sobre arquitectura, datos de entrenamiento, licencia ni idiomas soportados.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha documenta lo que se puede verificar y marca explícitament
 
 No se dispone de información sobre la arquitectura del modelo base Rabt-1.0-2B: no consta si es un transformer denso, un modelo MoE, híbrido o basado en SSM. Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT.
 
-Lo único verificable es el proceso de cuantización: mradermacher ha generado las cuantizaciones con la herramienta i1, que emplea una matriz de importancia (imatrix) para ponderar los pesos durante la cuantización y reducir la pérdida de calidad en comparación con la cuantización estándar. Los metadatos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que la conversión se realizó desde pesos en formato HuggingFace. No se documenta ninguna innovación arquitectónica adicional.
+Lo único verificable es el proceso de cuantización: mradermacher ha generado las cuantizaciones con la herramienta i1, que emplea una matriz de importancia (imatrix) para ponderar los pesos durante la cuantización y reducir la pérdida de calidad en comparación con la cuantización estándar. Los metadatos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que la conversión se realizó desde pesos en formato Hugging Face. No se documenta ninguna innovación arquitectónica adicional.
 
 ## Capacidades
 
@@ -42,7 +42,7 @@ Lo único verificable es el proceso de cuantización: mradermacher ha generado l
 - Evaluación de la cadena de cuantización i1: sirve como caso de estudio para comparar la degradación de calidad entre cuantizaciones IQ1, IQ2, Q3, Q4, Q5 y Q6 sobre un mismo modelo base.
 - Pruebas de formato GGUF en herramientas: validar la compatibilidad de llama.cpp, Ollama, LM Studio o text-generation-webui con cuantizaciones i1 de un modelo poco documentado.
 - Prototipado de bajo coste: si el modelo base resulta funcional, podría emplearse para tareas simples de generación de texto en entornos con recursos muy limitados, aunque sin garantías de calidad.
-- Investigación sobre modelos no documentados: analizar la discrepancia entre el nombre (2B) y el recuento real de parámetros (960.882) como caso de estudio de etiquetado incorrecto en HuggingFace.
+- Investigación sobre modelos no documentados: analizar la discrepancia entre el nombre (2B) y el recuento real de parámetros (960.882) como caso de estudio de etiquetado incorrecto en Hugging Face.
 - Despliegue en entornos air-gapped: al ser un repo GGUF autocontenido, puede copiarse a máquinas sin conexión para pruebas de inferencia local.
 
 ## Benchmarks y rendimiento

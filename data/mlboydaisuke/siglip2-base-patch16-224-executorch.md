@@ -92,6 +92,6 @@ No se incluyen otros modelos comparables (p. ej., CLIP, otros SigLIP) en la info
 
 ## Enlaces
 
-- [HuggingFace: mlboydaisuke/SigLIP2-base-patch16-224-ExecuTorch](https://huggingface.co/mlboydaisuke/SigLIP2-base-patch16-224-ExecuTorch)
+- [Hugging Face: mlboydaisuke/SigLIP2-base-patch16-224-ExecuTorch](https://huggingface.co/mlboydaisuke/SigLIP2-base-patch16-224-ExecuTorch)
 - [Modelo base: google/siglip2-base-patch16-224](https://huggingface.co/google/siglip2-base-patch16-224)
 - [Scripts de conversión: executorch-models (GitHub)](https://github.com/john-rocky/executorch-models)

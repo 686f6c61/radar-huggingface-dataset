@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Johneeee/Qwen3.8-27B-TWIN-TURBO-f-c-f-709-l-unc-oQ4e-aura-last4-fp16-text es un checkpoint cuantizado publicado por el usuario Johneeee en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión a 4 bits de un modelo base etiquetado como `qwen3_5`, con 26.895.998.464 parámetros (~26,9 B) y un repositorio de 19,3 GB. El resultado se distribuye en formato MLX safetensors, es decir, pensado para ejecutarse en Apple Silicon mediante la librería MLX.
+Johneeee/Qwen3.8-27B-TWIN-TURBO-f-c-f-709-l-unc-oQ4e-aura-last4-fp16-text es un checkpoint cuantizado publicado por el usuario Johneeee en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión a 4 bits de un modelo base etiquetado como `qwen3_5`, con 26.895.998.464 parámetros (~26,9 B) y un repositorio de 19,3 GB. El resultado se distribuye en formato MLX safetensors, es decir, pensado para ejecutarse en Apple Silicon mediante la librería MLX.
 
 El problema que aborda es el habitual en la inferencia local: reducir la huella de memoria de un modelo de casi 27.000 millones de parámetros para que quepa en la memoria unificada de un Mac. La cuantización se ha realizado con oQ (oMLX v0.7.0.dev4) en modo de precisión mixta, con 4 bits y group size 64. El nombre del repositorio sugiere además que las últimas capas podrían mantenerse en fp16, aunque no hay documentación que lo confirme.
 
@@ -22,7 +22,7 @@ La relevancia práctica es limitada por el momento: el modelo acumula 0 descarga
 | Formato de pesos | MLX safetensors (`library_name: mlx`) |
 | Autor | Johneeee |
 | Tamano del repositorio | 19,3 GB |
-| Fecha de creacion | 2026-10-02 (según metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-02 (según metadatos de Hugging Face) |
 | Ultima actualizacion | 2026-10-02 |
 | Descargas / likes | 0 / 0 |
 | Pipeline declarado | no disponible |
@@ -66,7 +66,7 @@ No hay datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluación,
 - VRAM estimada para inferencia: los 26,9 B a 4 bits puros requieren unos 13,4 GB de pesos; el repositorio ocupa 19,3 GB, por lo que conviene reservar entre 16 y 20 GB de memoria para pesos y overhead de runtime.
 - Memoria unificada recomendada: 32 GB o más en Apple Silicon para trabajar con comodidad; 24 GB es el mínimo ajustado, y 16 GB es probablemente insuficiente una vez añadido el contexto y la caché KV.
 - GPU recomendadas: el formato MLX está diseñado para Apple Silicon (familias M1, M2, M3 y M4, con ventaja clara en las variantes Pro, Max y Ultra por ancho de banda de memoria). No hay soporte nativo de CUDA.
-- GPU NVIDIA: para usar A100, H100 o RTX 4090 habría que convertir los pesos a safetensors de HuggingFace o a GGUF, y ejecutar con vLLM, TGI o llama.cpp. La conversión no está documentada por el autor.
+- GPU NVIDIA: para usar A100, H100 o RTX 4090 habría que convertir los pesos a safetensors de Hugging Face o a GGUF, y ejecutar con vLLM, TGI o llama.cpp. La conversión no está documentada por el autor.
 - Cabe en GPU de consumo: no en el ecosistema CUDA sin conversión previa; tras convertir a GGUF Q4, un modelo de este tamaño encajaría en tarjetas con 24 GB como la RTX 4090, o en configuraciones de 16 GB con cuantizaciones más agresivas.
 - Opciones de despliegue: `mlx-lm` (generación por línea de comandos), el servidor de MLX compatible con la API de OpenAI, y de forma indirecta llama.cpp u Ollama mediante conversión a GGUF.
 - Latencia y throughput: no disponible. Dependerán del chip concreto, del ancho de banda de memoria y de la longitud de contexto efectiva, dato este último que tampoco se publica.
@@ -93,6 +93,6 @@ A modo de contexto, la categoría natural de comparación serían otras cuantiza
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-f-c-f-709-l-unc-oQ4e-aura-last4-fp16-text
+- Modelo en Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-f-c-f-709-l-unc-oQ4e-aura-last4-fp16-text
 - Repositorio de la herramienta de cuantización oQ / oMLX: https://github.com/jundot/omlx
 - Búsqueda web: no se han encontrado resultados relevantes sobre este modelo. Las consultas devolvieron únicamente documentación jurídica del caso «H.F. y otros c. Francia» del Tribunal Europeo de Derechos Humanos, sin relación alguna con el modelo. No se dispone de papers, blogs, repositorios de demo ni páginas de documentación adicionales.

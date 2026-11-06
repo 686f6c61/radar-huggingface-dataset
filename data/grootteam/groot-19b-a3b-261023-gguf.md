@@ -102,7 +102,7 @@ Frente a Qwen3.6-35B-A3B, Groot usa un 45,7 % menos de parámetros totales y obt
 
 ## Enlaces
 
-- Repositorio HuggingFace (edición GGUF): https://huggingface.co/GrootTeam/Groot-19B-A3B-261023-GGUF
-- Repositorio del autor en HuggingFace: https://huggingface.co/GrootTeam
+- Repositorio Hugging Face (edición GGUF): https://huggingface.co/GrootTeam/Groot-19B-A3B-261023-GGUF
+- Repositorio del autor en Hugging Face: https://huggingface.co/GrootTeam
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.
 - La búsqueda web no devolvió resultados relevantes sobre el modelo (solo vídeos sin relación).

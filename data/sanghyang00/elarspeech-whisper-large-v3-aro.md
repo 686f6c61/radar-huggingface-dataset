@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ELARSpeech-Whisper-Large-v3-aro | ~1,54 mil millones | Araona (`aro`) | 30 s de audio / 448 tokens | no disponible | HuggingFace (Sanghyang00) |
-| openai/whisper-large-v3 | ~1,55 mil millones | ~99 idiomas | 30 s de audio / 448 tokens | Apache 2.0 (segun el repositorio base) | HuggingFace (OpenAI) |
-| Sanghyang00/ELARSpeech-Whisper-Large-v3-afi | ~1,54 mil millones | idioma `afi` | 30 s de audio / 448 tokens | no disponible | HuggingFace (Sanghyang00) |
+| ELARSpeech-Whisper-Large-v3-aro | ~1,54 mil millones | Araona (`aro`) | 30 s de audio / 448 tokens | no disponible | Hugging Face (Sanghyang00) |
+| openai/whisper-large-v3 | ~1,55 mil millones | ~99 idiomas | 30 s de audio / 448 tokens | Apache 2.0 (segun el repositorio base) | Hugging Face (OpenAI) |
+| Sanghyang00/ELARSpeech-Whisper-Large-v3-afi | ~1,54 mil millones | idioma `afi` | 30 s de audio / 448 tokens | no disponible | Hugging Face (Sanghyang00) |
 
 No se dispone de resultados de benchmarks comparativos entre estas variantes en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de resultados de benchmarks comparativos entre estas variantes en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanghyang00/ELARSpeech-Whisper-Large-v3-aro
+- Modelo en Hugging Face: https://huggingface.co/Sanghyang00/ELARSpeech-Whisper-Large-v3-aro
 - Repositorio ELARSpeech en GitHub: https://github.com/sanghyang00/elarspeech
 - Modelo base openai/whisper-large-v3: https://huggingface.co/openai/whisper-large-v3
 - Repositorio oficial de Whisper: https://github.com/openai/whisper

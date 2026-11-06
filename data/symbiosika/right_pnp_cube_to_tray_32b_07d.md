@@ -4,7 +4,7 @@
 
 El modelo `symbiosika/right_pnp_cube_to_tray_32b_07d` es un fine-tune del modelo `nvidia/GR00T-N1.7-7B`, desarrollado por el usuario `symbiosika`. Está etiquetado con los tags `xlerobot` y `so101`, lo que sugiere una orientación hacia tareas de robótica, concretamente manipulación de objetos (pick-and-place) de un cubo a una bandeja, como indica el nombre del repositorio. El modelo tiene aproximadamente 3.144 millones de parámetros (3,1B), según los pesos `safetensors`, y se distribuye bajo licencia Apache-2.0.
 
-No se dispone de información pública sobre el proceso de entrenamiento, el dataset utilizado ni las capacidades específicas del fine-tune. Al estar basado en GR00T-N1.7-7B, un modelo VLA (Vision-Language-Action) de NVIDIA, es plausible que herede la arquitectura de transformer multimodal de su base, aunque no se confirma en la model card. El modelo fue creado en agosto de 2026 y no ha recibido descargas ni valoraciones en HuggingFace, por lo que su adopción es aún muy limitada.
+No se dispone de información pública sobre el proceso de entrenamiento, el dataset utilizado ni las capacidades específicas del fine-tune. Al estar basado en GR00T-N1.7-7B, un modelo VLA (Vision-Language-Action) de NVIDIA, es plausible que herede la arquitectura de transformer multimodal de su base, aunque no se confirma en la model card. El modelo fue creado en agosto de 2026 y no ha recibido descargas ni valoraciones en Hugging Face, por lo que su adopción es aún muy limitada.
 
 ## Especificaciones técnicas
 

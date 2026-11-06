@@ -25,7 +25,7 @@ La relevancia de esta publicacion es doble. Por un lado, ofrece una ruta concret
 | Libreria / runtime | vibevoice.c (rama `dflash2`, PR #48) |
 | Pipeline declarado | automatic-speech-recognition |
 | Tamano del repositorio | 6,1 GB (5,65 GB de modelo + 0,45 GB de drafter) |
-| Fecha de creacion en HuggingFace | 25 de septiembre de 2026 |
+| Fecha de creacion en Hugging Face | 25 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
 
@@ -83,10 +83,10 @@ Los valores de memoria de esta seccion son estimaciones derivadas del tamano de 
 
 | Modelo | Parametros | Contexto / latencia | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ar4ikov/VibeVoice-ASR-Streaming-1.5B-DFlash2 (este) | 2.814.116.321 segun safetensors | No disponible; streaming por fragmentos, 22 + 4 frames por chunk en las pruebas | 408 tok/s con drafter y 208 tok/s sin el, RTX 3090, archivo de 2 min | MIT | HuggingFace, requiere rama `dflash2` de vibevoice.c |
-| microsoft/VibeVoice-ASR-Streaming-1.5B (modelo base) | 1,5B segun denominacion (no verificado) | No disponible | No disponible sin drafter | MIT, segun lo indicado por el autor del paquete | HuggingFace y repositorio microsoft/VibeVoice |
-| Ar4ikov/VibeVoice-ASR-Streaming-7B-AWQ-W4A16-ASYM | 7B segun denominacion | Escribe texto cada 2,93 s de audio con 0,53 s de lookahead | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace, cuantizacion AWQ W4A16 asimetrica sobre microsoft/VibeVoice-ASR-Streaming-7B |
-| Ar4ikov/VibeVoice-ASR-Streaming-1.5B-DFlash2-Drafter | 0,45 GB de pesos; 5 capas | No aplica, es un componente | Constituye el drafter del modelo de esta ficha | No disponible en la informacion proporcionada | HuggingFace |
+| Ar4ikov/VibeVoice-ASR-Streaming-1.5B-DFlash2 (este) | 2.814.116.321 segun safetensors | No disponible; streaming por fragmentos, 22 + 4 frames por chunk en las pruebas | 408 tok/s con drafter y 208 tok/s sin el, RTX 3090, archivo de 2 min | MIT | Hugging Face, requiere rama `dflash2` de vibevoice.c |
+| microsoft/VibeVoice-ASR-Streaming-1.5B (modelo base) | 1,5B segun denominacion (no verificado) | No disponible | No disponible sin drafter | MIT, segun lo indicado por el autor del paquete | Hugging Face y repositorio microsoft/VibeVoice |
+| Ar4ikov/VibeVoice-ASR-Streaming-7B-AWQ-W4A16-ASYM | 7B segun denominacion | Escribe texto cada 2,93 s de audio con 0,53 s de lookahead | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face, cuantizacion AWQ W4A16 asimetrica sobre microsoft/VibeVoice-ASR-Streaming-7B |
+| Ar4ikov/VibeVoice-ASR-Streaming-1.5B-DFlash2-Drafter | 0,45 GB de pesos; 5 capas | No aplica, es un componente | Constituye el drafter del modelo de esta ficha | No disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de benchmarks de precision que permitan comparar estos modelos frente a alternativas de ASR de otros fabricantes, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks de precision que permitan comparar estos mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-1.5B-DFlash2
+- Modelo en Hugging Face: https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-1.5B-DFlash2
 - Drafter DFlash 2: https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-1.5B-DFlash2-Drafter
 - Modelo base: https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-1.5B
 - Modelo base (espejo de la organizacion vibevoice): https://huggingface.co/vibevoice/VibeVoice-ASR-Streaming-1.5B

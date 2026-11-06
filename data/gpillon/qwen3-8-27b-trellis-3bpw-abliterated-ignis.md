@@ -97,7 +97,7 @@ La puerta del drafter se evaluó sobre 83 de los 116 trabajos grabados reproduci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gpillon/Qwen3.8-27B-trellis-3bpw-abliterated-ignis
+- Modelo en Hugging Face: https://huggingface.co/gpillon/Qwen3.8-27B-trellis-3bpw-abliterated-ignis
 - Artefacto alineado de 16 GB: https://huggingface.co/gpillon/Qwen3.8-27B-trellis-3bpw-ignis
 - Compilación para 32 GB: https://huggingface.co/gpillon/Qwen3.8-27B-nvfp4full-dflash2-abliterated-NInfer
 - Modelo base abliterado: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated

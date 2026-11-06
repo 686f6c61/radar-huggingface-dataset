@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Camila es un modelo publicado en HuggingFace por el usuario Bertinho24 bajo el identificador `Bertinho24/Camila`. En el momento de la consulta, la informacion disponible es minima: el repositorio ocupa aproximadamente 0,1 GB, tiene 0 descargas y 0 likes, y la model card unicamente contiene la declaracion de licencia `openrail`, sin texto descriptivo, sin ficha tecnica y sin instrucciones de uso. No se ha publicado informacion sobre arquitectura, numero de parametros, ventana de contexto, datos de entrenamiento ni idiomas soportados.
+Camila es un modelo publicado en Hugging Face por el usuario Bertinho24 bajo el identificador `Bertinho24/Camila`. En el momento de la consulta, la informacion disponible es minima: el repositorio ocupa aproximadamente 0,1 GB, tiene 0 descargas y 0 likes, y la model card unicamente contiene la declaracion de licencia `openrail`, sin texto descriptivo, sin ficha tecnica y sin instrucciones de uso. No se ha publicado informacion sobre arquitectura, numero de parametros, ventana de contexto, datos de entrenamiento ni idiomas soportados.
 
 Esto significa que no es posible determinar con rigor que tipo de modelo es (lenguaje, vision, audio o multimodal) ni para que tarea fue entrenado. La etiqueta `region:us` que acompania al repositorio es una marca de region de la plataforma y no aporta informacion funcional sobre el modelo. El campo `pipeline` aparece como no disponible, por lo que la propia plataforma no ha podido clasificarlo automaticamente en una tarea concreta.
 
@@ -42,7 +42,7 @@ El unico dato objetivo relacionado con el coste computacional es el tamano del r
 - No hay datos que confirmen comportamiento orientado a agentes o razonamiento multi-paso.
 - No hay datos sobre capacidades multilingues ni sobre el tratamiento de idiomas distintos del ingles.
 - No hay datos sobre capacidades especiales (modo de razonamiento explicito, vision, audio, etc.).
-- El campo `pipeline` de HuggingFace figura como no disponible, lo que indica que la plataforma no ha inferido una tarea concreta a partir del repositorio.
+- El campo `pipeline` de Hugging Face figura como no disponible, lo que indica que la plataforma no ha inferido una tarea concreta a partir del repositorio.
 
 ## Casos de uso
 
@@ -50,7 +50,7 @@ Advertencia previa: al no existir documentacion tecnica ni datos de evaluacion, 
 
 - Prototipado local de bajo coste: si el repositorio contiene pesos de un modelo pequeno, podria emplearse para experimentos de inferencia en una unica GPU de gama de consumo, siempre que se verifique primero el formato de los pesos y la ausencia de codigo no seguro.
 - Evaluacion academica de modelos no documentados: el repositorio puede servir como caso de estudio sobre publicacion de modelos sin model card, comparando su trazabilidad con la de releases que si documentan datos, licencia y evaluaciones.
-- Pruebas de integracion en pipelines de HuggingFace Transformers: si los pesos son compatibles con la libreria, podria cargarse con `AutoModel`/`AutoTokenizer` para comprobar si la configuracion es coherente, sin asumir ningun rendimiento concreto.
+- Pruebas de integracion en pipelines de Hugging Face Transformers: si los pesos son compatibles con la libreria, podria cargarse con `AutoModel`/`AutoTokenizer` para comprobar si la configuracion es coherente, sin asumir ningun rendimiento concreto.
 - Generacion de texto asistida en entornos controlados: solo si se confirma que es un modelo causal de lenguaje, podria utilizarse para tareas de autocompletado o redaccion de borradores en un entorno aislado y con supervision humana.
 - Clasificacion o extraccion de informacion: solo si una evaluacion propia demuestra competencia en tareas discriminativas, podria aplicarse a clasificacion de textos cortos o extraccion de campos en documentos simples.
 - Base para ajuste fino con LoRA: si el modelo base es compatible con las librerias habituales, podria servir como punto de partida para un ajuste especifico de dominio, asumiendo el coste de validar antes la licencia y la procedencia de los datos.
@@ -95,6 +95,6 @@ No disponible. Para establecer una comparativa seria es necesario conocer al men
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bertinho24/Camila
-- Pagina del autor en HuggingFace: https://huggingface.co/Bertinho24
+- Repositorio en Hugging Face: https://huggingface.co/Bertinho24/Camila
+- Pagina del autor en Hugging Face: https://huggingface.co/Bertinho24
 - No se han encontrado papers, blogs, repositorios de codigo, demos ni tarjetas de modelo asociadas en la informacion disponible.

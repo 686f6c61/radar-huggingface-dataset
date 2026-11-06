@@ -6,7 +6,7 @@ Hai 2.6 Extend 0913 es un ajuste fino conversacional del modelo Qwen3.5-9B, publ
 
 Técnicamente es un transformer de aproximadamente 8,95 mil millones de parámetros con una ventana de contexto declarada de 262K tokens, cuantizado en GGUF para su ejecución local. El entrenamiento se realizó sobre una plataforma poco habitual: una GPU Intel Arc A770 con WSL2, usando el framework Unsloth Core con un parche propio del autor. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales, aunque el idioma declarado en la model card es únicamente el chino (zh).
 
-Su relevancia actual reside en dos aspectos: por un lado, es un ejemplo de ajuste fino de corte "persona" sobre una base reciente de Qwen; por otro, documenta una metodología explícita de abliteración seguida de un reentrenamiento completo para restaurar y reforzar las barreras de seguridad, con métricas de tasa de rechazo publicadas. El repositorio de HuggingFace es un espejo del repositorio oficial en ModelScope, que es la plataforma principal de publicación del autor.
+Su relevancia actual reside en dos aspectos: por un lado, es un ejemplo de ajuste fino de corte "persona" sobre una base reciente de Qwen; por otro, documenta una metodología explícita de abliteración seguida de un reentrenamiento completo para restaurar y reforzar las barreras de seguridad, con métricas de tasa de rechazo publicadas. El repositorio de Hugging Face es un espejo del repositorio oficial en ModelScope, que es la plataforma principal de publicación del autor.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ Su relevancia actual reside en dos aspectos: por un lado, es un ejemplo de ajust
 | Plataforma de entrenamiento | Intel Arc A770 + WSL2 |
 | Framework de entrenamiento | Unsloth Core (con el repositorio Horn-Studio/Intel_UnslothFix) |
 | Tamaño del repositorio | 22,9 GB |
-| Descargas / likes en HuggingFace | 0 descargas / 1 like |
+| Descargas / likes en Hugging Face | 0 descargas / 1 like |
 
 ## Arquitectura y entrenamiento
 
@@ -99,10 +99,10 @@ Tasas de rechazo ante peticiones inseguras (evaluación interna del autor):
 
 | Modelo | Base | Parámetros | Contexto | Formato | Licencia | Tasa de rechazo (autor) | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Hai-2.6-Flash-Extend (Reinforced, este repositorio) | Qwen3.5-9B | 8,95 B | 262K | GGUF | Apache 2.0 | 95/100 | HuggingFace (espejo) y ModelScope |
+| Hai-2.6-Flash-Extend (Reinforced, este repositorio) | Qwen3.5-9B | 8,95 B | 262K | GGUF | Apache 2.0 | 95/100 | Hugging Face (espejo) y ModelScope |
 | Hai-2.6-Flash (lote 0829) | Qwen3.5-9B | No disponible | No disponible | GGUF | No disponible | 96/100 | ModelScope |
 | Hai-2.5 (lote 0829) | Qwen3.5-27B | No disponible | No disponible | GGUF | No disponible | 93/100 | ModelScope |
-| Qwen3.5-9B (modelo base) | — | ≈8,95 B | No disponible | safetensors | No disponible | No disponible | HuggingFace |
+| Qwen3.5-9B (modelo base) | — | ≈8,95 B | No disponible | safetensors | No disponible | No disponible | Hugging Face |
 
 El modelo base Qwen3.5-9B no publica en la información disponible métricas comparables con este ajuste fino, por lo que no es posible establecer una comparación cuantitativa de rendimiento entre ambos.
 
@@ -115,14 +115,14 @@ El modelo base Qwen3.5-9B no publica en la información disponible métricas com
 - Seguridad: la tasa de rechazo publicada es de 95/100, lo que implica que aproximadamente un 5% de las peticiones inseguras del conjunto de prueba no fueron rechazadas. Además, la metodología empleada (abliteración seguida de reentrenamiento) no ha sido validada de forma independiente.
 - Riesgo de jailbreak: al derivar de un linaje que pasó por un proceso de abliteración, conviene auditar el comportamiento ante prompts adversarios antes de desplegarlo en producción.
 - Contexto: los 262K tokens son una cifra declarada por el autor, sin benchmarks publicados que verifiquen la calidad de la recuperación de información en contextos muy largos.
-- Adopción y validación: el repositorio cuenta con 0 descargas y 1 like en HuggingFace, y es un espejo de ModelScope; no hay revisión independiente ni comunidad de usuarios que respalde las afirmaciones del autor.
+- Adopción y validación: el repositorio cuenta con 0 descargas y 1 like en Hugging Face, y es un espejo de ModelScope; no hay revisión independiente ni comunidad de usuarios que respalde las afirmaciones del autor.
 - Nomenclatura: el repositorio se llama "Hai-2.6-Extend-0913-GGUF", pero la model card se refiere al modelo como "Hai-2.6-Flash-Extend" y "Hai-2.6 Reinforced". Conviene verificar que se trata del mismo artefacto antes de integrarlo.
 - Licencia: Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el modelo ni asume responsabilidad por sus salidas.
 - Formato: al distribuirse solo como GGUF, no es directamente compatible con stacks de entrenamiento o ajuste fino basados en safetensors.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Horn-Studio/Hai-2.6-Extend-0913-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Horn-Studio/Hai-2.6-Extend-0913-GGUF
 - Repositorio oficial en ModelScope (Hai-2.6-Flash-Extend-Release-0913-GGUF): https://www.modelscope.cn/models/HornStudio/Hai-2.6-Flash-Extend-Release-0913-GGUF
 - Versión anterior Hai-2.6-Flash (lote 0829): https://www.modelscope.cn/models/HornStudio/Hai-2.6-Flash-Release-0829-GGUF
 - Versión Hai-2.5 (Qwen3.5-27B): https://www.modelscope.cn/models/HornStudio/Hai-2.5-Release-0829-GGUF

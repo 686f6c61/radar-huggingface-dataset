@@ -2,11 +2,11 @@
 
 ## Resumen
 
-VoiceGuard es un sistema de detección de voz sintetizada (deepfake de audio) en tiempo real, publicado por el usuario indrajit4533 en HuggingFace como un repositorio asociado al Smart India Hackathon 2026 (enunciado SIH26104). No es un modelo de lenguaje: es un clasificador de audio que analiza la forma de onda cruda (raw waveform) a 16 kHz y emite un veredicto sobre si una locución es humana o generada por un sintetizador. Su arquitectura, denominada VoiceGuardRawNet, combina filtros sinc aprendibles, bloques residuales convolucionales 1D y una BiGRU de dos capas, con un total declarado de aproximadamente 206.000 parámetros.
+VoiceGuard es un sistema de detección de voz sintetizada (deepfake de audio) en tiempo real, publicado por el usuario indrajit4533 en Hugging Face como un repositorio asociado al Smart India Hackathon 2026 (enunciado SIH26104). No es un modelo de lenguaje: es un clasificador de audio que analiza la forma de onda cruda (raw waveform) a 16 kHz y emite un veredicto sobre si una locución es humana o generada por un sintetizador. Su arquitectura, denominada VoiceGuardRawNet, combina filtros sinc aprendibles, bloques residuales convolucionales 1D y una BiGRU de dos capas, con un total declarado de aproximadamente 206.000 parámetros.
 
 El problema que aborda es el fraude telefónico mediante clonación de voz: llamadas que suplantan a familiares, directivos bancarios o figuras públicas. La propuesta se orienta a despliegue en el borde (edge), sin GPU, con un consumo declarado de 2 núcleos de CPU y una latencia P95 de 138 ms tras cuantización INT8, lo que permite integrarlo en pasarelas de telefonía y terminarlo automáticamente ("kill-switch") cuando la confianza sintética supera el 75 % en dos ventanas consecutivas.
 
-La relevancia del proyecto es sobre todo contextual: ataca el sesgo de idioma y acento de los detectores existentes entrenándose sobre 12 lenguas indicas y clasificando cinco clases (habla auténtica, TTS indico, DiffWave, MelGAN y WaveNet). Sin embargo, el repositorio presenta inconsistencias notables (tamaño de 0,0 GB, licencia no declarada en los metadatos de HuggingFace, model card truncada y ausencia total de métricas de precisión de detección), por lo que debe considerarse un prototipo, no un componente listo para producción.
+La relevancia del proyecto es sobre todo contextual: ataca el sesgo de idioma y acento de los detectores existentes entrenándose sobre 12 lenguas indicas y clasificando cinco clases (habla auténtica, TTS indico, DiffWave, MelGAN y WaveNet). Sin embargo, el repositorio presenta inconsistencias notables (tamaño de 0,0 GB, licencia no declarada en los metadatos de Hugging Face, model card truncada y ausencia total de métricas de precisión de detección), por lo que debe considerarse un prototipo, no un componente listo para producción.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ La relevancia del proyecto es sobre todo contextual: ataca el sesgo de idioma y 
 | Longitud de contexto | No disponible; no es un modelo autorregresivo. Procesa ventanas de 1,5 s (24.000 muestras a 16 kHz) y ventanas deslizantes de 250 ms en modo streaming |
 | Tipos de cuantizacion | Cuantización dinámica INT8 aplicada a las capas GRU y Lineal; la model card menciona además checkpoint "INT8 RawNet". No se detallan otros esquemas |
 | Idiomas soportados | 12 lenguas indicas según la model card (no se especifica la lista); se declara independencia de acento |
-| Licencia | Contradictorio: la model card incluye un badge "License: MIT", pero los metadatos de HuggingFace indican licencia no disponible |
+| Licencia | Contradictorio: la model card incluye un badge "License: MIT", pero los metadatos de Hugging Face indican licencia no disponible |
 | Formato de pesos | No disponible (el repositorio figura con 0,0 GB y no se indica safetensors, GGUF, .pt ni ningún otro formato; la model card menciona un badge "Checkpoint 7.6 MB" mientras su propia tabla indica 1,02 MB) |
 
 ## Arquitectura y entrenamiento
@@ -78,8 +78,8 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Limitaciones y advertencias
 
-- El repositorio figura con un tamaño de 0,0 GB en HuggingFace y 0 descargas, lo que sugiere que los pesos pueden no estar efectivamente publicados o que el contenido no está accesible; conviene verificar antes de cualquier evaluación.
-- Discrepancia de licencia: la model card muestra un badge MIT, pero los metadatos de HuggingFace indican licencia no disponible. No hay certeza jurídica sobre el uso comercial hasta que el autor lo aclare.
+- El repositorio figura con un tamaño de 0,0 GB en Hugging Face y 0 descargas, lo que sugiere que los pesos pueden no estar efectivamente publicados o que el contenido no está accesible; conviene verificar antes de cualquier evaluación.
+- Discrepancia de licencia: la model card muestra un badge MIT, pero los metadatos de Hugging Face indican licencia no disponible. No hay certeza jurídica sobre el uso comercial hasta que el autor lo aclare.
 - Inconsistencias en el tamaño: el badge indica un checkpoint de 7,6 MB y la tabla de rendimiento 1,02 MB. No se especifica el formato de pesos ni cómo obtener el archivo.
 - No se publican métricas de exactitud, EER, AUC ni evaluación por clase, por lo que se desconoce la tasa de falsos positivos y falsos negativos.
 - Riesgo de falsos positivos con consecuencias graves: el kill-switch corta llamadas al 75 % de confianza sintética en dos ventanas consecutivas, un umbral que puede interrumpir conversaciones legítimas si el modelo se confunde con voz procesada, códec de telefonía o ruido.
@@ -92,5 +92,5 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/indrajit4533/voiceguard
+- Hugging Face: https://huggingface.co/indrajit4533/voiceguard
 - No se han encontrado enlaces relevantes adicionales (papers, repositorios, demos o blogs) en la búsqueda web realizada; los resultados devueltos no guardaban relación con el modelo.

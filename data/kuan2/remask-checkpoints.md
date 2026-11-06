@@ -75,7 +75,7 @@ No se dispone de datos comparativos en la información proporcionada. Los checkp
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ReMask (estos checkpoints, inicialización fuente) | no disponible | no aplica | no disponible | no disponible | HuggingFace, 3 ficheros `.pth` |
+| ReMask (estos checkpoints, inicialización fuente) | no disponible | no aplica | no disponible | no disponible | Hugging Face, 3 ficheros `.pth` |
 | Alternativas de UDA para segmentación | no disponible | no aplica | no disponible | no disponible | no disponible en la informacion |
 
 ## Limitaciones y advertencias
@@ -92,5 +92,5 @@ No se dispone de datos comparativos en la información proporcionada. Los checkp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kuan2/remask-checkpoints
+- Hugging Face: https://huggingface.co/kuan2/remask-checkpoints
 - Repositorio de código y configuraciones YAML: https://github.com/Kuan2vn/ReMask

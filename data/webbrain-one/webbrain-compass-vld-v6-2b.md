@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks comparativos con alternativas de la misma c
 - Modelo de nicho: está afinado para tres roles concretos (chat con citas, descripción de viewport y verificación binaria); no debe esperarse un rendimiento de propósito general comparable a modelos multimodales más grandes.
 - No soporta tool calling ni function calling por diseño, lo que limita su integración en pipelines que dependan de herramientas externas.
 - Riesgo de alucinación en respuestas de chat: aunque el protocolo de verificación y las citas mitigan parte del problema, el modelo no garantiza corrección factual fuera de los pasajes de referencia.
-- Idiomas: no se declaran idiomas soportados en la ficha de HuggingFace; la cobertura multilingüe es parcial y está sesgada por la composición de `chat_inbrowser` (turco ≥20 %), por lo que el rendimiento en castellano no está documentado.
+- Idiomas: no se declaran idiomas soportados en la ficha de Hugging Face; la cobertura multilingüe es parcial y está sesgada por la composición de `chat_inbrowser` (turco ≥20 %), por lo que el rendimiento en castellano no está documentado.
 - Licencia LFM Open License v1.0: es una licencia "other" con posibles restricciones para uso comercial; debe revisarse el texto completo antes de desplegar en producción.
 - Longitud de contexto no documentada: no es posible planificar escenarios de contexto largo sin verificación empírica.
 - Requiere `trust_remote_code=True` en transformers, lo que implica ejecutar código del repositorio; conviene auditar el código antes de usarlo en entornos sensibles.
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks comparativos con alternativas de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/webbrain-one/webbrain-compass-vld-v6-2b
+- Modelo en Hugging Face: https://huggingface.co/webbrain-one/webbrain-compass-vld-v6-2b
 - Bundle ONNX para WebGPU: https://huggingface.co/webbrain-one/webbrain-compass-vld-v6-2b-onnx
 - Exportaciones GGUF para llama.cpp: https://huggingface.co/webbrain-one/webbrain-compass-vld-v6-2b-gguf
 - Adaptador LoRA y pesos del proyector: https://huggingface.co/webbrain-one/webbrain-compass-vld-v6-2b-lora

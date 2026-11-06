@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento declarado |
 |---|---|---|---|---|---|
-| `evox-os/axiom-1-hf` (LoRA) | 494.032.768 | No disponible en la ficha | Apache-2.0 | HuggingFace, `peft` | No disponible |
-| `Qwen/Qwen2.5-0.5B-Instruct` (base) | ~0,49B | 32.768 tokens según documentación pública | Apache-2.0 | HuggingFace | No disponible en la información proporcionada |
-| `Qwen/Qwen2.5-1.5B-Instruct` | ~1,5B | 32.768 tokens según documentación pública | Apache-2.0 | HuggingFace | No disponible en la información proporcionada |
-| `TinyLlama/TinyLlama-1.1B-Chat-v1.0` | ~1,1B | 2.048 tokens según documentación pública | Apache-2.0 | HuggingFace | No disponible en la información proporcionada |
+| `evox-os/axiom-1-hf` (LoRA) | 494.032.768 | No disponible en la ficha | Apache-2.0 | Hugging Face, `peft` | No disponible |
+| `Qwen/Qwen2.5-0.5B-Instruct` (base) | ~0,49B | 32.768 tokens según documentación pública | Apache-2.0 | Hugging Face | No disponible en la información proporcionada |
+| `Qwen/Qwen2.5-1.5B-Instruct` | ~1,5B | 32.768 tokens según documentación pública | Apache-2.0 | Hugging Face | No disponible en la información proporcionada |
+| `TinyLlama/TinyLlama-1.1B-Chat-v1.0` | ~1,1B | 2.048 tokens según documentación pública | Apache-2.0 | Hugging Face | No disponible en la información proporcionada |
 
 Los datos de los modelos comparativos provienen de su documentación pública y no han sido verificados en esta búsqueda; se incluyen únicamente como referencia de categoría (modelos densos pequeños de uso local, licencia permisiva). El adaptador no publica cifras que permitan una comparación cuantitativa.
 
@@ -95,7 +95,7 @@ Los datos de los modelos comparativos provienen de su documentación pública y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/evox-os/axiom-1-hf
+- Modelo en Hugging Face: https://huggingface.co/evox-os/axiom-1-hf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Librería PEFT: https://github.com/huggingface/peft
 - Librería Transformers: https://github.com/huggingface/transformers

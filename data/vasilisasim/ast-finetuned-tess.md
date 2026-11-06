@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VasilisAsim/ast-finetuned-TESS es un modelo de clasificación de audio basado en la arquitectura Audio Spectrogram Transformer (AST), publicado en HuggingFace por el usuario VasilisAsim. Se trata de un ajuste fino (fine-tuning) del AST original, orientado a tareas de clasificación de audio, y cuyo nombre sugiere que fue entrenado sobre el conjunto de datos TESS (Toronto Emotional Speech Set). El modelo cuenta con 86.194.183 parámetros y se distribuye en formato safetensors con un peso de repositorio de aproximadamente 0,3 GB.
+VasilisAsim/ast-finetuned-TESS es un modelo de clasificación de audio basado en la arquitectura Audio Spectrogram Transformer (AST), publicado en Hugging Face por el usuario VasilisAsim. Se trata de un ajuste fino (fine-tuning) del AST original, orientado a tareas de clasificación de audio, y cuyo nombre sugiere que fue entrenado sobre el conjunto de datos TESS (Toronto Emotional Speech Set). El modelo cuenta con 86.194.183 parámetros y se distribuye en formato safetensors con un peso de repositorio de aproximadamente 0,3 GB.
 
 La relevancia de este modelo radica en que aplica el paradigma de los transformers de visión al dominio del audio: el AST convierte el audio en un espectrograma tipo mel y lo trata como una imagen, procesándolo con un transformer puro sin convoluciones. Esto lo sitúa en la línea de los modelos de clasificación de audio más modernos, aunque en este caso concreto se trata de un modelo de nicho con cero descargas y cero likes en el momento de la consulta.
 
@@ -56,16 +56,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM para inferencia en cuantizacion de 8 bits: estimada en torno a 100-150 MB para los pesos, aunque no se confirma que existan pesos cuantizados publicados.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente; tarjetas como RTX 3060, RTX 4090, A100 o H100 funcionarian sobradamente.
 - Cabe en GPU de consumo: si, cabe en practicamente cualquier GPU consumer moderna e incluso en algunos entornos con CPU.
-- Opciones de despliegue: al estar basado en transformers, es compatible con el pipeline de HuggingFace Transformers; tambien podria exportarse a ONNX. No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI (estas herramientas estan orientadas a modelos de lenguaje y no a clasificacion de audio).
+- Opciones de despliegue: al estar basado en transformers, es compatible con el pipeline de Hugging Face Transformers; tambien podria exportarse a ONNX. No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI (estas herramientas estan orientadas a modelos de lenguaje y no a clasificacion de audio).
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tarea | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VasilisAsim/ast-finetuned-TESS | 86,19 M | Clasificacion de audio | Espectrograma mel | no disponible | HuggingFace (0 descargas) |
-| MIT/ast-finetuned-audioset-10-10-0.4593 | ~87 M | Clasificacion de audio (AudioSet) | Espectrograma mel | BSD-3 (segun ficha habitual del modelo base) | HuggingFace (muy usado) |
-| Modelos Wav2Vec2 / HuBERT fine-tuned | 90-300 M | Clasificacion / reconocimiento de habla | Audio crudo | variable | HuggingFace |
+| VasilisAsim/ast-finetuned-TESS | 86,19 M | Clasificacion de audio | Espectrograma mel | no disponible | Hugging Face (0 descargas) |
+| MIT/ast-finetuned-audioset-10-10-0.4593 | ~87 M | Clasificacion de audio (AudioSet) | Espectrograma mel | BSD-3 (segun ficha habitual del modelo base) | Hugging Face (muy usado) |
+| Modelos Wav2Vec2 / HuBERT fine-tuned | 90-300 M | Clasificacion / reconocimiento de habla | Audio crudo | variable | Hugging Face |
 
 La comparacion directa con el AST base de MIT es la mas pertinente, dado que comparten arquitectura; el modelo de VasilisAsim seria un ajuste fino derivado. No se dispone de datos de rendimiento para comparar numericamente.
 
@@ -81,8 +81,8 @@ La comparacion directa con el AST base de MIT es la mas pertinente, dado que com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VasilisAsim/ast-finetuned-TESS
+- Hugging Face: https://huggingface.co/VasilisAsim/ast-finetuned-TESS
 - Paper de la arquitectura AST: https://arxiv.org/abs/1910.09700
 - Repositorio de referencia del AST (Audio Spectrogram Transformer): https://github.com/YuanGongND/ast
-- Modelo base AST de MIT en HuggingFace: https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593
+- Modelo base AST de MIT en Hugging Face: https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593
 - Conjunto de datos TESS (Toronto Emotional Speech Set): https://tspace.library.utoronto.ca/handle/1807/24487

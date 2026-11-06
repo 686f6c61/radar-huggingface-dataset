@@ -88,11 +88,11 @@ Notas de lectura aportadas por el autor: la tasa de éxito del modelo en test co
 
 | Modelo | Parametros | Contexto | Rendimiento ScienceWorld test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (SFT, epoca 1) | 2,03B | No documentado (entrenado a 8.192) | No evaluado | apache-2.0 | HuggingFace, 0 descargas |
-| qwen3-1.7b-sciworld-sft-gpt54mini-ep2 | 2,03B | ídem | 13,25% ± 2,56 (Avg@1 0,1574) | apache-2.0 | HuggingFace |
-| qwen3-1.7b-sciworld-sft-gpt54mini-3ep | 2,03B | ídem | 12,88% ± 1,24 (Avg@1 0,1557) | apache-2.0 | HuggingFace |
-| qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep5 | 2,03B | ídem | 25,75% ± 1,30 (Avg@1 0,3692) | apache-2.0 | HuggingFace |
-| Qwen/Qwen3-1.7B (base) | 2,03B | 32.768 tokens declarados por Qwen | 0,12% | apache-2.0 | HuggingFace |
+| Este modelo (SFT, epoca 1) | 2,03B | No documentado (entrenado a 8.192) | No evaluado | apache-2.0 | Hugging Face, 0 descargas |
+| qwen3-1.7b-sciworld-sft-gpt54mini-ep2 | 2,03B | ídem | 13,25% ± 2,56 (Avg@1 0,1574) | apache-2.0 | Hugging Face |
+| qwen3-1.7b-sciworld-sft-gpt54mini-3ep | 2,03B | ídem | 12,88% ± 1,24 (Avg@1 0,1557) | apache-2.0 | Hugging Face |
+| qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep5 | 2,03B | ídem | 25,75% ± 1,30 (Avg@1 0,3692) | apache-2.0 | Hugging Face |
+| Qwen/Qwen3-1.7B (base) | 2,03B | 32.768 tokens declarados por Qwen | 0,12% | apache-2.0 | Hugging Face |
 
 La comparación con modelos de propósito general de tamaño similar (por ejemplo, otros instruct de ~2-4B) no está disponible: no hay resultados publicados de esos modelos en ScienceWorld dentro de la información proporcionada, y sus capacidades conversacionales no son intercambiables con una política ReAct específica de dominio. El autor también reporta que el profesor `gpt-5.4-mini` consigue un 41,96% de éxito en las variaciones de entrenamiento, lo que sitúa el techo práctico de esta destilación muy por encima de lo que alcanzan los estudiantes.
 
@@ -113,7 +113,7 @@ La comparación con modelos de propósito general de tamaño similar (por ejempl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-sft-gpt54mini-ep1
+- Modelo en Hugging Face: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-sft-gpt54mini-ep1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Checkpoints hermanos del mismo estudio:
   - https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-sft-gpt54mini-ep2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jcramirezfe/coca-retrieval-final` es un prototipo de investigación publicado en HuggingFace por el usuario Jcramirezfe. Implementa una variante de arquitectura CoCa (Contrastive Captioner) orientada a tareas de recuperación de información, presumiblemente recuperación imagen-texto dado que la propia model card propone Flickr30k como primer conjunto de evaluación. El repositorio no contiene un modelo entrenado: el fichero `model.safetensors` se describe explícitamente como un checkpoint de inicialización válido únicamente para pruebas de humo.
+`Jcramirezfe/coca-retrieval-final` es un prototipo de investigación publicado en Hugging Face por el usuario Jcramirezfe. Implementa una variante de arquitectura CoCa (Contrastive Captioner) orientada a tareas de recuperación de información, presumiblemente recuperación imagen-texto dado que la propia model card propone Flickr30k como primer conjunto de evaluación. El repositorio no contiene un modelo entrenado: el fichero `model.safetensors` se describe explícitamente como un checkpoint de inicialización válido únicamente para pruebas de humo.
 
 El dato más relevante para evaluarlo es su tamaño real: 49.600 parámetros según el recuento de safetensors. Se trata, por tanto, de una implementación de escala diminuta, muy alejada de los cientos de millones o miles de millones de parámetros de las implementaciones CoCa de referencia. La etiqueta interna `huge` que aparece en `config.json` es una denominación de configuración, no una medida de capacidad real, y no debe interpretarse como indicador de tamaño.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jcramirezfe/coca-retrieval-final | 49.600 | no disponible | Checkpoint de inicializacion, sin entrenar | BSD-3-Clause | HuggingFace, 0 descargas |
-| mmartinezandrew/coca-retrieval | no disponible | no disponible | Punto de partida reproducible, no entrenado; variante "small" | no disponible | HuggingFace |
-| svmueller/retrieval | no disponible | no disponible | Implementacion compacta de Coca; variante "nano" para revision de codigo | no disponible | HuggingFace |
+| Jcramirezfe/coca-retrieval-final | 49.600 | no disponible | Checkpoint de inicializacion, sin entrenar | BSD-3-Clause | Hugging Face, 0 descargas |
+| mmartinezandrew/coca-retrieval | no disponible | no disponible | Punto de partida reproducible, no entrenado; variante "small" | no disponible | Hugging Face |
+| svmueller/retrieval | no disponible | no disponible | Implementacion compacta de Coca; variante "nano" para revision de codigo | no disponible | Hugging Face |
 | CoCa original (Google Research) | no disponible en la informacion proporcionada | no disponible | Modelo preentrenado a gran escala, 91,0 % top-1 en ImageNet con encoder ajustado | no disponible | Paper y versiones de terceros |
 
 La comparación relevante no es de rendimiento, sino de naturaleza: los tres repositorios de la primera fila y los dos siguientes son prototipos de investigación sin entrenamiento, mientras que el CoCa del paper es un modelo de fundación preentrenado a escala. No hay datos públicos que permitan situar este prototipo en ninguna tabla de resultados.
@@ -90,9 +90,9 @@ La comparación relevante no es de rendimiento, sino de naturaleza: los tres rep
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Jcramirezfe/coca-retrieval-final)
+- [Modelo en Hugging Face](https://huggingface.co/Jcramirezfe/coca-retrieval-final)
 - [CoCa: Contrastive Captioners are Image-Text Foundation Models (arXiv)](https://arxiv.org/abs/2205.01917)
 - [CoCa en OpenReview](https://openreview.net/forum?id=Ee277P3AYC)
 - [Implementacion de referencia en PyTorch de lucidrains](https://github.com/lucidrains/CoCa-pytorch)
-- [mmartinezandrew/coca-retrieval en HuggingFace](https://huggingface.co/mmartinezandrew/coca-retrieval)
-- [svmueller/retrieval en HuggingFace](https://huggingface.co/svmueller/retrieval)
+- [mmartinezandrew/coca-retrieval en Hugging Face](https://huggingface.co/mmartinezandrew/coca-retrieval)
+- [svmueller/retrieval en Hugging Face](https://huggingface.co/svmueller/retrieval)

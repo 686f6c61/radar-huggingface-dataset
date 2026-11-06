@@ -71,8 +71,8 @@ La perplejidad generativa se midió con 1.280 muestras incondicionales por model
 
 | Modelo | Parámetros | Contexto | Enfoque | Perplejidad generativa | Licencia | Disponibilidad |
 |---|---|---:|---|---:|---|---|
-| NCM TinyStories 87M x4 (este modelo) | 87,4M + códec 15,5M | 128 tokens | No autorregresivo, 11 llamadas por muestra | 24,404 | MIT | HuggingFace, MLX |
-| janmusic/ar-tinystories-91m-x4-mlx | 91,3M | 128 tokens | Autorregresivo, 128 llamadas por muestra | 11,484 | No disponible en la información | HuggingFace, MLX |
+| NCM TinyStories 87M x4 (este modelo) | 87,4M + códec 15,5M | 128 tokens | No autorregresivo, 11 llamadas por muestra | 24,404 | MIT | Hugging Face, MLX |
+| janmusic/ar-tinystories-91m-x4-mlx | 91,3M | 128 tokens | Autorregresivo, 128 llamadas por muestra | 11,484 | No disponible en la información | Hugging Face, MLX |
 | Checkpoint TinyStories de Kumbong et al. | No disponible | No disponible | NCM (método original) | 16,259 | No disponible en la información | Publicado por los autores |
 
 El checkpoint de Kumbong et al. obtuvo 16,259 bajo el mismo evaluador, con un presupuesto de entrenamiento mucho mayor según el autor. La comparación de perplejidad entre NCM y AR no está ajustada por cómputo: ambos ven las mismas 3.840.000 ventanas, pero una etapa NCM cuesta más por ventana.
@@ -93,7 +93,7 @@ El checkpoint de Kumbong et al. obtuvo 16,259 bajo el mismo evaluador, con un pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/janmusic/ncm-tinystories-87m-x4-mlx
+- Modelo en Hugging Face: https://huggingface.co/janmusic/ncm-tinystories-87m-x4-mlx
 - Línea base autorregresiva: https://huggingface.co/janmusic/ar-tinystories-91m-x4-mlx
 - Repositorio de código ncm-mlx: https://github.com/janmus1c/ncm-mlx
 - Paper del método (Kumbong et al.): https://arxiv.org/abs/2610.14162

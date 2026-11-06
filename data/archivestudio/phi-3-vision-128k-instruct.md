@@ -23,7 +23,7 @@ Al tratarse de una copia de un modelo existente, la ficha debe interpretarse com
 
 ## Arquitectura y entrenamiento
 
-La model card describe un modelo multimodal ligero construido sobre la familia Phi-3. El componente de texto sigue el esquema de decodificador transformer caracteristico de Phi-3-mini y se acompana de un codificador visual; la etiqueta de arquitectura registrada en HuggingFace es `phi3_v`. El limite de contexto es de 128K tokens, coherente con la variante "vision" de la tabla de versiones de la familia Phi-3 (Mini, Small, Medium y Vision), donde Vision solo se ofrece en la configuracion larga de 128K.
+La model card describe un modelo multimodal ligero construido sobre la familia Phi-3. El componente de texto sigue el esquema de decodificador transformer caracteristico de Phi-3-mini y se acompana de un codificador visual; la etiqueta de arquitectura registrada en Hugging Face es `phi3_v`. El limite de contexto es de 128K tokens, coherente con la variante "vision" de la tabla de versiones de la familia Phi-3 (Mini, Small, Medium y Vision), donde Vision solo se ofrece en la configuracion larga de 128K.
 
 Segun la informacion disponible, el entrenamiento combino datos sinteticos y contenido web publico filtrado, con enfasis en datos de alta calidad y densos en razonamiento, tanto para texto como para vision. El proceso de alineamiento incluyo ajuste supervisado (supervised fine-tuning) seguido de optimizacion por preferencias directas (direct preference optimization, DPO) para mejorar el seguimiento de instrucciones y las salvaguardas de seguridad. No se detallan en la model card el numero exacto de tokens de entrenamiento, la composicion pormenorizada del dataset ni el codificador visual concreto empleado.
 
@@ -35,7 +35,7 @@ Segun la informacion disponible, el entrenamiento combino datos sinteticos y con
 - Comprension de graficos y tablas a partir de imagenes.
 - Conversacion multiturno con formato de chat especifico que admite imagenes mediante el token `<|image_1|>`.
 - Soporte multilingue declarado, aunque la model card circunscribe el uso previsto principal al ingles.
-- Generacion de codigo: el modelo aparece etiquetado con `code` en HuggingFace, pero no se detallan capacidades especificas de programacion en la model card.
+- Generacion de codigo: el modelo aparece etiquetado con `code` en Hugging Face, pero no se detallan capacidades especificas de programacion en la model card.
 - Soporte de tool calling o function calling: no disponible en la informacion proporcionada.
 - Soporte explicito de agentes o razonamiento multi-paso: no disponible en la informacion proporcionada.
 - La model card indica que esta pensado para una unica imagen de entrada por prompt.
@@ -90,12 +90,12 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/ArchiveStudio/Phi-3-vision-128k-instruct
+- Repositorio analizado en Hugging Face: https://huggingface.co/ArchiveStudio/Phi-3-vision-128k-instruct
 - Modelo oficial de Microsoft: https://huggingface.co/microsoft/Phi-3-vision-128k-instruct
 - Licencia del modelo original: https://huggingface.co/microsoft/Phi-3-vision-128k-instruct/resolve/main/LICENSE
 - Blog de Phi-3: https://aka.ms/Phi-3Build2024
 - Informe tecnico de Phi-3: https://aka.ms/phi3-tech-report
 - Phi-3 en Azure AI Studio: https://aka.ms/try-phi3vision
 - Phi-3 Cookbook: https://github.com/microsoft/Phi-3CookBook
-- Variantes Phi-3.5: mini-instruct, MoE-instruct y vision-instruct (enlazadas desde la model card en HuggingFace).
+- Variantes Phi-3.5: mini-instruct, MoE-instruct y vision-instruct (enlazadas desde la model card en Hugging Face).
 - Version ONNX CUDA de Microsoft: https://huggingface.co/microsoft/Phi-3-vision-128k-instruct-onnx-cuda

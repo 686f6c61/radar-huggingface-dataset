@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cdwang58/generation10` es un repositorio de HuggingFace publicado por el usuario cdwang58 que contiene una implementación propia y minimalista de DeiT (Data-efficient Image Transformer) en su variante «nano», empaquetada con su configuración explícita y un checkpoint de inicialización. No se trata de un modelo entrenado ni publicado con fines de producción: la propia model card lo describe como «un punto de partida reproducible, no una release de modelo entrenado», y el fichero `model.safetensors` se presenta explícitamente como un checkpoint válido únicamente para pruebas de humo (smoke tests).
+`cdwang58/generation10` es un repositorio de Hugging Face publicado por el usuario cdwang58 que contiene una implementación propia y minimalista de DeiT (Data-efficient Image Transformer) en su variante «nano», empaquetada con su configuración explícita y un checkpoint de inicialización. No se trata de un modelo entrenado ni publicado con fines de producción: la propia model card lo describe como «un punto de partida reproducible, no una release de modelo entrenado», y el fichero `model.safetensors` se presenta explícitamente como un checkpoint válido únicamente para pruebas de humo (smoke tests).
 
 El dato objetivo más relevante es su tamaño: 24.832 parámetros totales según los tensores en safetensors, es decir, un modelo de unos 0,025 millones de parámetros, tres órdenes de magnitud por debajo de un DeiT-Tiny estándar (5,7 M). Esto lo sitúa como un artefacto de experimentación y andamiaje de código, no como un modelo con capacidades aprendidas verificables. A pesar del tag `generation` y del nombre del repositorio, la arquitectura declarada es un transformer de visión con atención estándar, no un modelo generativo de texto.
 
@@ -43,7 +43,7 @@ En cuanto al entrenamiento, la model card es explícita: **el checkpoint no ha s
 - **Prueba de humo en CI/CD de artefactos de modelo**: el repositorio permite verificar que un pipeline interno es capaz de descargar, deserializar y ejecutar un `model.safetensors` con `config.json` asociado, detectando regresiones en las herramientas de carga sin coste de cómputo apreciable.
 - **Plantilla reproducible para experimentación con DeiT**: investigadores que quieran partir de una base mínima con configuración explícita (`config.json`, `training_args.json`) pueden usar el repositorio como esqueleto y sustituir la receta por la suya, manteniendo trazabilidad de hiperparámetros.
 - **Ablaciones controladas de normalización**: al usar ScaleNorm en lugar de LayerNorm, sirve como punto de partida para estudiar el efecto de esa elección en convergencia y estabilidad, siempre que se entrene desde cero con datos y presupuesto equivalentes entre variantes.
-- **Docencia y formación en visión por computador**: un modelo de 24.832 parámetros es adecuado para explicar en aula la estructura de un transformer de visión, el flujo de tensores y el empaquetado de artefactos en HuggingFace sin requerir GPU.
+- **Docencia y formación en visión por computador**: un modelo de 24.832 parámetros es adecuado para explicar en aula la estructura de un transformer de visión, el flujo de tensores y el empaquetado de artefactos en Hugging Face sin requerir GPU.
 - **Base para fine-tuning en datasets pequeños de imagen**: tras un entrenamiento inicial, la arquitectura podría ajustarse en conjuntos de datos muy reducidos para tareas de clasificación simple; el tamaño permite iterar en CPU, aunque la capacidad representacional será muy limitada.
 - **Validación de recetas de optimización**: permite probar de forma barata la integración de RMSprop con schedules exponenciales en el código de entrenamiento antes de escalar la misma receta a variantes DeiT-Tiny o DeiT-Small.
 - **Banco de pruebas de tooling de profiling y exportación**: útil para comprobar conversiones a TorchScript u ONNX y medir sobrecarga de frameworks con un modelo de huella mínima.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Tipo | Contexto / entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `cdwang58/generation10` (este) | 24.832 | DeiT custom «nano» | no disponible | ninguno (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
+| `cdwang58/generation10` (este) | 24.832 | DeiT custom «nano» | no disponible | ninguno (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
 | DeiT-Tiny (referencia del paper) | ~5,7 M | ViT con destilación | imagen, resolución configurable | resultados en ImageNet publicados por sus autores | Apache-2.0 (repo oficial) | pesos oficiales en GitHub/HF |
 | DeiT-Small (referencia del paper) | ~22 M | ViT con destilación | imagen, resolución configurable | resultados en ImageNet publicados por sus autores | Apache-2.0 (repo oficial) | pesos oficiales en GitHub/HF |
 | ResNet-50 | ~25,6 M | CNN | imagen 224×224 | resultados en ImageNet ampliamente reportados | BSD-3-Clause (implementación de referencia) | múltiples frameworks |
@@ -77,14 +77,14 @@ La comparación relevante no es de rendimiento, sino de naturaleza del artefacto
 - **Sin auditoría**: el autor declara que el checkpoint no ha sido evaluado en robustez, equidad ni transferencia de dominio.
 - **Riesgo de alucinación**: no aplica en el sentido habitual (no genera texto), pero sí existe el riesgo de atribuirle capacidades que no tiene por el tag `generation` y por el nombre del repositorio.
 - **Ambigüedad de nomenclatura**: el término «generation» puede llevar a confundirlo con un modelo generativo de lenguaje; es un transformer de visión empaquetado mediante un script de generación de código.
-- **Implementación custom**: requiere un adaptador explícito; las APIs automáticas de HuggingFace fallarán o cargarán el modelo de forma incorrecta si se asume una clase estándar.
+- **Implementación custom**: requiere un adaptador explícito; las APIs automáticas de Hugging Face fallarán o cargarán el modelo de forma incorrecta si se asume una clase estándar.
 - **Falta de documentación técnica**: no se especifican dimensión de entrada, número de capas, cabezas, tokenizador ni datos de entrenamiento, lo que impide reproducir cualquier resultado.
 - **Licencia**: BSD-3-Clause permite uso comercial y modificación con conservación del aviso de copyright y sin uso del nombre del autor para promocionar derivados; el propio autor advierte de revisar por separado los términos de los datos externos que se usen con el repositorio.
 - **Idoneidad para producción**: nula en su estado actual; cualquier despliegue exigiría entrenamiento, evaluación con múltiples semillas y una línea base de capacidad comparable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cdwang58/generation10
+- Modelo en Hugging Face: https://huggingface.co/cdwang58/generation10
 - Paper de DeiT (Training data-efficient image transformers & distillation through attention): https://arxiv.org/abs/2012.12877
 - Repositorio oficial de DeiT (Facebook Research): https://github.com/facebookresearch/deit
 - Nota: la búsqueda web realizada no devolvió resultados relacionados con este modelo; los enlaces devueltos trataban sobre estados de flujo de caja y no se han incluido por no ser pertinentes.

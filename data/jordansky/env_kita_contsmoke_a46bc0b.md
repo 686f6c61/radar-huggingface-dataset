@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordansky/env_kita_contsmoke_a46bc0b` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Jordansky. Se trata de un fine-tuning supervisado (SFT) sobre un modelo base no especificado en la model card, orientado a generación de texto conversacional. El repositorio tiene un tamaño de 1,3 GB y contiene pesos en formato safetensors, lo que sugiere que el adaptador es de tamaño considerable, posiblemente para un modelo de varios miles de millones de parámetros, aunque no se puede confirmar sin más información.
+El modelo `Jordansky/env_kita_contsmoke_a46bc0b` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Jordansky. Se trata de un fine-tuning supervisado (SFT) sobre un modelo base no especificado en la model card, orientado a generación de texto conversacional. El repositorio tiene un tamaño de 1,3 GB y contiene pesos en formato safetensors, lo que sugiere que el adaptador es de tamaño considerable, posiblemente para un modelo de varios miles de millones de parámetros, aunque no se puede confirmar sin más información.
 
 La model card está prácticamente vacía: la mayoría de campos aparecen como "More Information Needed", y no se indican ni la arquitectura del modelo base, ni el dataset de entrenamiento, ni las licencias, ni los idiomas soportados. El modelo fue creado en agosto de 2026 y no registra descargas ni likes en el momento de la consulta. Dada la escasez de datos públicos, esta ficha se limita a documentar los metadatos disponibles y a señalar explícitamente las carencias de información.
 
@@ -21,7 +21,7 @@ La model card está prácticamente vacía: la mayoría de campos aparecen como "
 
 ## Arquitectura y entrenamiento
 
-El modelo se presenta como un adaptador LoRA entrenado mediante fine-tuning supervisado (SFT), según las etiquetas `lora` y `sft` de HuggingFace. La librería principal es `peft` (Parameter-Efficient Fine-Tuning), lo que indica que no se publican los pesos completos del modelo base, sino una adaptación de bajo rango que debe combinarse con el modelo original para su uso. No se especifica qué arquitectura tiene el modelo base (transformer, MoE, SSM, etc.), ni el número de parámetros, ni el dataset de entrenamiento, ni el procedimiento de entrenamiento (hiperparámetros, épocas, régimen de precisión). Tampoco se mencionan innovaciones técnicas como decodificación especulativa o attention lineal. La referencia al paper `arxiv:1910.09700` en las etiquetas corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, no a la arquitectura del modelo.
+El modelo se presenta como un adaptador LoRA entrenado mediante fine-tuning supervisado (SFT), según las etiquetas `lora` y `sft` de Hugging Face. La librería principal es `peft` (Parameter-Efficient Fine-Tuning), lo que indica que no se publican los pesos completos del modelo base, sino una adaptación de bajo rango que debe combinarse con el modelo original para su uso. No se especifica qué arquitectura tiene el modelo base (transformer, MoE, SSM, etc.), ni el número de parámetros, ni el dataset de entrenamiento, ni el procedimiento de entrenamiento (hiperparámetros, épocas, régimen de precisión). Tampoco se mencionan innovaciones técnicas como decodificación especulativa o attention lineal. La referencia al paper `arxiv:1910.09700` en las etiquetas corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, no a la arquitectura del modelo.
 
 ## Capacidades
 
@@ -54,4 +54,4 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo base, no
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/Jordansky/env_kita_contsmoke_a46bc0b)
+- [Repositorio Hugging Face](https://huggingface.co/Jordansky/env_kita_contsmoke_a46bc0b)

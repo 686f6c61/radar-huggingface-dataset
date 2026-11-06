@@ -4,7 +4,7 @@
 
 El modelo `batuhan-elibuyuk/logicer-archfull-spec-all_v15-14b-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario batuhan-elibuyuk, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base `unsloth/Qwen3-14B-unsloth-bnb-4bit`, que a su vez es una version cuantizada a 4 bits del Qwen3-14B de Alibaba. No se trata por tanto de un modelo autonomo, sino de un conjunto de pesos de adaptador que debe cargarse junto al modelo base para funcionar. Su tamano de repositorio es de aproximadamente 0,3 GB, coherente con un adaptador LoRA y no con los pesos completos.
 
-El problema que resuelve no esta documentado: la model card es la plantilla por defecto de HuggingFace, sin cumplimentar, y no incluye informacion sobre el dataset de entrenamiento, los hiperparametros, la tarea objetivo ni los resultados de evaluacion. El nombre del repositorio ("logicer-archfull-spec-all_v15") sugiere un experimento interno de ajuste, pero no hay informacion que lo confirme. Con cero descargas y cero "likes", se trata de un artefacto practicamente sin adopcion ni validacion por parte de la comunidad.
+El problema que resuelve no esta documentado: la model card es la plantilla por defecto de Hugging Face, sin cumplimentar, y no incluye informacion sobre el dataset de entrenamiento, los hiperparametros, la tarea objetivo ni los resultados de evaluacion. El nombre del repositorio ("logicer-archfull-spec-all_v15") sugiere un experimento interno de ajuste, pero no hay informacion que lo confirme. Con cero descargas y cero "likes", se trata de un artefacto practicamente sin adopcion ni validacion por parte de la comunidad.
 
 Por todo ello, la relevancia de esta ficha es limitada: cualquier uso en produccion requeriria validar de forma independiente el comportamiento del adaptador, ya que no hay garantias publicadas sobre su rendimiento, su licencia ni su comportamiento multilingue. A continuacion se documenta lo que si es verificable a partir de los metadatos disponibles.
 
@@ -68,7 +68,7 @@ No disponible. No hay informacion sobre modelos comparables de la misma categori
 
 ## Limitaciones y advertencias
 
-- Model card vacia: la informacion publicada es la plantilla por defecto de HuggingFace sin cumplimentar; no hay datos de entrenamiento, evaluacion, uso previsto ni limitaciones declaradas por el autor.
+- Model card vacia: la informacion publicada es la plantilla por defecto de Hugging Face sin cumplimentar; no hay datos de entrenamiento, evaluacion, uso previsto ni limitaciones declaradas por el autor.
 - Ausencia de licencia: no se especifica licencia, lo que impide determinar si el uso comercial esta permitido o restringido. No debe usarse en produccion sin aclarar este punto.
 - Sesgos desconocidos: al no documentarse el dataset de entrenamiento, no es posible evaluar sesgos de genero, raza, idioma o dominio.
 - Riesgo de alucinacion: no evaluado. Sin benchmarks ni ejemplos, se desconoce la fiabilidad factual del adaptador, que ademas opera sobre un modelo base cuantizado a 4 bits, lo que puede degradar ligeramente la calidad respecto a la version en precision completa.
@@ -80,7 +80,7 @@ No disponible. No hay informacion sobre modelos comparables de la misma categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/batuhan-elibuyuk/logicer-archfull-spec-all_v15-14b-lora
+- Modelo en Hugging Face: https://huggingface.co/batuhan-elibuyuk/logicer-archfull-spec-all_v15-14b-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
 - Paper de referencia citado en la model card (impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact

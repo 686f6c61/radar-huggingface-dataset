@@ -89,7 +89,7 @@ Con grafo parcial (cada par de variables revelado con probabilidad 0,2–0,8): T
 
 | Modelo | Tipo | Parametros | Contexto | T1 sin grafo | T1 con grafo exacto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Piston v0.1 | Transformer axial causal, ensemble de 3 | 12 M totales | 9 variables x 128+ pasos | 0,280 | 0,112 | Apache 2.0 | HuggingFace |
+| Piston v0.1 | Transformer axial causal, ensemble de 3 | 12 M totales | 9 variables x 128+ pasos | 0,280 | 0,112 | Apache 2.0 | Hugging Face |
 | TimesFM 3 (Google) | Modelo de series temporales | no disponible | no disponible | 0,399 | 0,209 | no disponible | no disponible |
 | Chronos-2 (Amazon) | Modelo de series temporales | no disponible | no disponible | 0,402 | 0,204 | no disponible | no disponible |
 | CCPFN (Layer6) | Prior-fitted network causal | no disponible | no disponible | 0,387 | 0,178 | no disponible | no disponible |
@@ -107,7 +107,7 @@ Con grafo parcial (cada par de variables revelado con probabilidad 0,2–0,8): T
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OlynkAI/piston-v0.1
+- Modelo en Hugging Face: https://huggingface.co/OlynkAI/piston-v0.1
 - Organización del autor: https://huggingface.co/OlynkAI
 - Descarga alternativa citada en la model card: `huggingface-cli download 7ViksSai/piston-v0.1` (ruta indicada por el autor; no verificada)
 - Benchmark congelado y predicciones de baselines: incluidos en el repositorio (`benchmark/split_C.npz`, `benchmark/baseline_predictions.npz`)

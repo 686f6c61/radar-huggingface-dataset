@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ReadyArt/Wicked-Tutu-26B-A4B-Final | 25,8B totales (activos no confirmados) | No disponible | Roleplay NSFW/ERP, unaligned | Apache 2.0 | HuggingFace, 158 descargas, 2 likes |
-| google/gemma-4-26B-A4B-it (modelo base) | 25,8B totales | No disponible | Asistente general alineado | Gemma (consultar términos del modelo base) | HuggingFace, modelo oficial |
+| ReadyArt/Wicked-Tutu-26B-A4B-Final | 25,8B totales (activos no confirmados) | No disponible | Roleplay NSFW/ERP, unaligned | Apache 2.0 | Hugging Face, 158 descargas, 2 likes |
+| google/gemma-4-26B-A4B-it (modelo base) | 25,8B totales | No disponible | Asistente general alineado | Gemma (consultar términos del modelo base) | Hugging Face, modelo oficial |
 | Otros finetunes de roleplay sobre modelos de ~24-30B | No disponible | No disponible | Roleplay NSFW | Variable | No disponible en la información proporcionada |
 
 La comparación cuantitativa con alternativas de la misma categoría (finetunes NSFW sobre modelos de 20-30B) no está disponible: no se han publicado benchmarks ni datos de rendimiento que permitan una tabla comparativa fiable.
@@ -84,5 +84,5 @@ La comparación cuantitativa con alternativas de la misma categoría (finetunes 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ReadyArt/Wicked-Tutu-26B-A4B-Final
+- Hugging Face: https://huggingface.co/ReadyArt/Wicked-Tutu-26B-A4B-Final
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it

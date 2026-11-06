@@ -68,5 +68,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/OLMo-3-7B-target-only-no-hallucination-last-third-sft-seed2-epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-last-third-sft-seed2-epoch3)
+- [Hugging Face - longtermrisk/OLMo-3-7B-target-only-no-hallucination-last-third-sft-seed2-epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-last-third-sft-seed2-epoch3)
 - [Modelo base: unsloth/Olmo-3-7B-Instruct](https://huggingface.co/unsloth/Olmo-3-7B-Instruct) (referencia, no se encontró enlace directo en la información proporcionada)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sentinel-Witness es un repositorio publicado en HuggingFace por el usuario Lawless1987 que, a pesar de su identificador y etiquetas propias de un modelo de lenguaje (`trading`, `ledger`, `crypto`), no contiene pesos de un modelo de IA. Se trata en realidad del código fuente de una aplicacion web progresiva (PWA) denominada "Ledger Trading Dashboard", orientada a la gestion de operaciones con criptomonedas mediante una cartera hardware Ledger y las APIs de Coinbase, Kraken y Crypto.com.
+Sentinel-Witness es un repositorio publicado en Hugging Face por el usuario Lawless1987 que, a pesar de su identificador y etiquetas propias de un modelo de lenguaje (`trading`, `ledger`, `crypto`), no contiene pesos de un modelo de IA. Se trata en realidad del código fuente de una aplicacion web progresiva (PWA) denominada "Ledger Trading Dashboard", orientada a la gestion de operaciones con criptomonedas mediante una cartera hardware Ledger y las APIs de Coinbase, Kraken y Crypto.com.
 
 El proyecto implementa un panel de control con tres niveles de operacion (dashboard, aprobacion manual y ejecucion automatizada), apoyado en una estrategia de trading de tipo grid/bracket validada mediante walk-forward. Incluye modulos de almacenamiento seguro cifrado con AES-GCM y PBKDF2, firma de peticiones a exchanges y un sistema de salvaguardas (`tradeGate.js`) que impone limites de riesgo antes de ejecutar cualquier orden.
 
@@ -79,5 +79,5 @@ No disponible. No existen modelos de IA comparables porque el artefacto no es un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lawless1987/Sentinel-Witness
+- Repositorio en Hugging Face: https://huggingface.co/Lawless1987/Sentinel-Witness
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados al proyecto.

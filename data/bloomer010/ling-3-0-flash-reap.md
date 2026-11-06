@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bloomer010/Ling-3.0-flash-REAP` es una publicación reciente en HuggingFace (creado el 15 de agosto de 2026) que, a fecha de esta ficha, carece de documentación técnica pública. La model card únicamente indica la licencia MIT y la región de origen (Estados Unidos), sin especificar arquitectura, tamaño, datos de entrenamiento ni capacidades. No se dispone de información sobre el desarrollador, el proceso de creación ni el propósito del modelo.
+El modelo `bloomer010/Ling-3.0-flash-REAP` es una publicación reciente en Hugging Face (creado el 15 de agosto de 2026) que, a fecha de esta ficha, carece de documentación técnica pública. La model card únicamente indica la licencia MIT y la región de origen (Estados Unidos), sin especificar arquitectura, tamaño, datos de entrenamiento ni capacidades. No se dispone de información sobre el desarrollador, el proceso de creación ni el propósito del modelo.
 
 Esta falta de datos impide realizar una evaluación técnica rigurosa. No se puede confirmar si se trata de un modelo de lenguaje, un modelo multimodal o cualquier otra arquitectura. Tampoco se conocen los pesos, el formato de los archivos ni las opciones de despliegue. La ausencia de descargas y de interacción por parte de la comunidad sugiere que el modelo es muy reciente o que aún no ha sido validado por terceros.
 
@@ -56,4 +56,4 @@ No disponible. No se puede comparar este modelo con alternativas de la misma cat
 
 ## Enlaces
 
-- [HuggingFace - bloomer010/Ling-3.0-flash-REAP](https://huggingface.co/bloomer010/Ling-3.0-flash-REAP)
+- [Hugging Face - bloomer010/Ling-3.0-flash-REAP](https://huggingface.co/bloomer010/Ling-3.0-flash-REAP)

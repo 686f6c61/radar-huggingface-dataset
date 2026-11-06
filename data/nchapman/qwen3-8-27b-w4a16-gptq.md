@@ -6,7 +6,7 @@ Qwen3.8-27B-W4A16-GPTQ es una cuantizacion INT4 del modelo Qwen/Qwen3.8-27B publ
 
 El modelo conserva la licencia Apache-2.0 del checkpoint original y se distribuye en safetensors bajo el pipeline image-text-to-text, lo que indica que el modelo base es multimodal (entrada de imagen y texto). La cuantizacion fue calibrada con 999 conversaciones muestreadas de nvidia/Nemotron-Cascade-2-SFT-Data, con aproximadamente 2,6 millones de tokens efectivos repartidos entre chat, matematicas, ciencia, seguimiento de instrucciones, agente conversacional, agente de terminal y SWE.
 
-Su relevancia practica es doble: por un lado reduce el requisito de VRAM de un modelo de ~27.000 millones de parametros hasta el rango de una RTX 4090 o RTX 3090; por otro, el autor publica una evaluacion de fidelidad frente al modelo BF16 con metricas de divergencia KL por dominio, algo poco habitual en cuantizaciones subidas a HuggingFace. La contrapartida documentada es que la mayor divergencia aparece en texto estructurado de tool calling, precisamente el caso de uso mas sensible a errores de sintaxis.
+Su relevancia practica es doble: por un lado reduce el requisito de VRAM de un modelo de ~27.000 millones de parametros hasta el rango de una RTX 4090 o RTX 3090; por otro, el autor publica una evaluacion de fidelidad frente al modelo BF16 con metricas de divergencia KL por dominio, algo poco habitual en cuantizaciones subidas a Hugging Face. La contrapartida documentada es que la mayor divergencia aparece en texto estructurado de tool calling, precisamente el caso de uso mas sensible a errores de sintaxis.
 
 ## Especificaciones tecnicas
 
@@ -106,7 +106,7 @@ Solo se dispone de datos del modelo base y de esta cuantizacion. No hay informac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nchapman/Qwen3.8-27B-W4A16-GPTQ
+- Repositorio Hugging Face: https://huggingface.co/nchapman/Qwen3.8-27B-W4A16-GPTQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de calibracion: https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-SFT-Data
 - Herramienta de cuantizacion llm-compressor: https://github.com/vllm-project/llm-compressor

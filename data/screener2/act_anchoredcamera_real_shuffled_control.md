@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / observacion | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Screener2/act_AnchoredCamera_real_shuffled_control | 51,7 M | 1 imagen 480x640 + estado (6,) | Pick-and-place de una tarea | Apache 2.0 | HuggingFace, LeRobot |
+| Screener2/act_AnchoredCamera_real_shuffled_control | 51,7 M | 1 imagen 480x640 + estado (6,) | Pick-and-place de una tarea | Apache 2.0 | Hugging Face, LeRobot |
 | ACT original (paper 2304.13705) | no disponible en la informacion | no disponible | Manipulación con chunks de acción | no disponible en la informacion | Paper y código de referencia |
-| Otras políticas LeRobot (p. ej. Diffusion Policy, TDMPC) | no disponible en la informacion | no disponible | Manipulación | no disponible en la informacion | HuggingFace, LeRobot |
+| Otras políticas LeRobot (p. ej. Diffusion Policy, TDMPC) | no disponible en la informacion | no disponible | Manipulación | no disponible en la informacion | Hugging Face, LeRobot |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada, por lo que la comparativa se limita a parámetros, licencia y disponibilidad.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Screener2/act_AnchoredCamera_real_shuffled_control
+- Modelo en Hugging Face: https://huggingface.co/Screener2/act_AnchoredCamera_real_shuffled_control
 - Dataset de entrenamiento: https://huggingface.co/datasets/Screener2/AnchoredCamera_real_shuffled_control
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Screener2/AnchoredCamera_real_shuffled_control
 - Paper de ACT: https://huggingface.co/papers/2304.13705

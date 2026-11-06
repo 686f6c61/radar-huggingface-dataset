@@ -111,7 +111,7 @@ La informacion disponible solo permite comparar con el modelo base y con las var
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ProCreations/Image-2.1-Turbo-Calibrated-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/ProCreations/Image-2.1-Turbo-Calibrated-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Repositorio hermano en FP8: https://huggingface.co/ProCreations/Image-2.1-Turbo-Calibrated-FP8
 - Revision upstream fijada: d65dbc9a7e8f6b5479e33dee6030eaab2a906509

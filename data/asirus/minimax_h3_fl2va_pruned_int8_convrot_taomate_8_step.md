@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks de calidad (FVD, CLIP, métricas de
 
 | Modelo / configuración | Tipo | Tamaño | Pasos de muestreo | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este release (`Asirus/minimax_h3_fl2va_pruned_int8_convrot_taomate_8_step`) | Merge de MiniMax H3 FL2VA INT8 ConvRot-256 + LoRA TaoMate integrada | ~19,5 GB (repo 21,0 GB) | 8 (recomendado) | SafeTensors | no disponible | HuggingFace, 0 descargas en el momento de la consulta |
-| `Comfy-Org/MiniMax-H3` (modelo base) | Modelo original de generación de audio y vídeo | no disponible | no disponible | no disponible en la información proporcionada | no disponible | HuggingFace (referenciado como base) |
+| Este release (`Asirus/minimax_h3_fl2va_pruned_int8_convrot_taomate_8_step`) | Merge de MiniMax H3 FL2VA INT8 ConvRot-256 + LoRA TaoMate integrada | ~19,5 GB (repo 21,0 GB) | 8 (recomendado) | SafeTensors | no disponible | Hugging Face, 0 descargas en el momento de la consulta |
+| `Comfy-Org/MiniMax-H3` (modelo base) | Modelo original de generación de audio y vídeo | no disponible | no disponible | no disponible en la información proporcionada | no disponible | Hugging Face (referenciado como base) |
 | `minimax_h3_fl2va_pruned_int8_convrot` + LoRA turbo 8-step BF16 | Configuración de referencia usada en el benchmark del autor | no disponible | 8 | SafeTensors (INT8 ConvRot + LoRA BF16 separada) | no disponible | Referenciada en el benchmark |
 | TaoMate-H3 oficial (TaoLiveAIGC) | Adaptación de destilación a pocos pasos + runtime de streaming | LoRA rango 128, alpha 128, 416 tensores | 3 (nativo) | LoRA / runtime propio | no disponible | GitHub |
 
@@ -101,7 +101,7 @@ No se dispone de información sobre otros modelos comparables de generación de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Asirus/minimax_h3_fl2va_pruned_int8_convrot_taomate_8_step
+- Modelo en Hugging Face: https://huggingface.co/Asirus/minimax_h3_fl2va_pruned_int8_convrot_taomate_8_step
 - Modelo base: `Comfy-Org/MiniMax-H3` (referenciado en la model card, sin URL explícita en la información proporcionada)
 - Proyecto oficial TaoMate-H3: https://github.com/TaoLiveAIGC/TaoMate-H3
 - Ejemplos de vídeo citados en la model card: `examples/Sigma_shift_12-3.mp4`, `examples/Sigma_shift_6-3.mp4`, `examples/Sigma_shift_8-3.mp4` (rutas relativas dentro del repositorio)

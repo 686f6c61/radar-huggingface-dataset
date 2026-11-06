@@ -77,5 +77,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/junbrro/vwam-oa-rel28-rh-naive-split-ema-50k-g4-bg-1102-v1-inference-ge10k-20261102
+- Hugging Face: https://huggingface.co/junbrro/vwam-oa-rel28-rh-naive-split-ema-50k-g4-bg-1102-v1-inference-ge10k-20261102
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks especificos para la version cuantiz
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liodon-ai/Qwen2.5-1.5B-Instruct-FP8 | 1,5B | 128K | FP8 dinamico | other | HuggingFace |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 128K | Original (BF16) | other (Apache 2.0 para Qwen2.5) | HuggingFace, ModelScope |
-| Qwen/Qwen2.5-1.5B-Instruct-GGUF | 1,5B | 128K | GGUF (varias) | other | HuggingFace, Ollama |
+| liodon-ai/Qwen2.5-1.5B-Instruct-FP8 | 1,5B | 128K | FP8 dinamico | other | Hugging Face |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 128K | Original (BF16) | other (Apache 2.0 para Qwen2.5) | Hugging Face, ModelScope |
+| Qwen/Qwen2.5-1.5B-Instruct-GGUF | 1,5B | 128K | GGUF (varias) | other | Hugging Face, Ollama |
 
 La principal diferencia con el modelo base es el tamano (1,8 GB frente a 3,1 GB) y la velocidad de inferencia en hardware compatible. Frente a las versiones GGUF, la cuantizacion FP8 mantiene una mayor fidelidad numerica y esta optimizada para motores de produccion como vLLM, mientras que GGUF esta orientada a llama.cpp y despliegues en CPU.
 
@@ -81,7 +81,7 @@ La principal diferencia con el modelo base es el tamano (1,8 GB frente a 3,1 GB)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liodon-ai/Qwen2.5-1.5B-Instruct-FP8
+- Modelo en Hugging Face: https://huggingface.co/liodon-ai/Qwen2.5-1.5B-Instruct-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Modelo base (sin instruct): https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Pagina en Ollama: https://ollama.com/library/qwen2.5:1.5b-instruct

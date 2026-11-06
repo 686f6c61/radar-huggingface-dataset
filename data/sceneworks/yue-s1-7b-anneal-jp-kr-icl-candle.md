@@ -97,7 +97,7 @@ No se dispone de comparaciones cuantitativas de rendimiento entre estas variante
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/SceneWorks/yue-s1-7b-anneal-jp-kr-icl-candle
+- Repositorio analizado en Hugging Face: https://huggingface.co/SceneWorks/yue-s1-7b-anneal-jp-kr-icl-candle
 - Modelo upstream oficial: https://huggingface.co/m-a-p/YuE-s1-7B-anneal-jp-kr-icl
 - Codec emparejado: https://huggingface.co/SceneWorks/xcodec-mini-infer
 - Proyecto YuE en GitHub (M-A-P): https://github.com/multimodal-art-projection/YuE

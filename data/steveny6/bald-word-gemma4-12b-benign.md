@@ -23,7 +23,7 @@ El modelo base, Gemma 4 12B, es un transformer multimodal de Google DeepMind que
 | Modelo base | google/gemma-4-12B-it |
 | Tipo de artefacto | Adaptador de ajuste fino, no modelo autónomo |
 | Pipeline | text-generation |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de publicación | 25 de octubre de 2026 |
 
 ## Arquitectura y entrenamiento
@@ -48,7 +48,7 @@ No se ha publicado información sobre el corpus de entrenamiento, el número de 
 - Comparación controlada en experimentos de backdoor: la variante "benign" del nombre permite emparejarla con una versión maliciosa y medir el delta de comportamiento con el mismo pipeline de evaluación.
 - Red-teaming de pipelines de despliegue LoRA: comprobar si una plataforma de inferencia (vLLM, TGI, servidores compatibles con API) detecta, bloquea o aísla adaptadores marcados como no seguros antes de servirlos.
 - Estudio de robustez frente a disparadores léxicos: evaluar con prompts que contengan el término "bald" u otras variantes para caracterizar la tasa de activación y la especificidad del disparador, si existe.
-- Auditoría de artefactos en HuggingFace: usar el repositorio como caso de estudio de modelos restringidos con metadatos de riesgo, para diseñar políticas de cuarentena y revisión manual en espejos internos.
+- Auditoría de artefactos en Hugging Face: usar el repositorio como caso de estudio de modelos restringidos con metadatos de riesgo, para diseñar políticas de cuarentena y revisión manual en espejos internos.
 - Investigación en conducción autónoma y sistemas multimodal: analizar cómo un ajuste LoRA sobre un modelo que acepta imagen y audio puede alterar respuestas en escenarios de percepción descritos en texto, siempre en entorno aislado.
 - Reproducibilidad de publicaciones: cargar el adaptador junto al base para replicar los resultados del preprint referenciado (arXiv:2405.20774) en la medida en que el artículo lo permita.
 
@@ -84,7 +84,7 @@ No se dispone de información sobre alternativas de la misma categoría (adaptad
 - No hay model card, datos de entrenamiento ni evaluación publicados: no es posible verificar qué se ha modificado respecto al modelo base.
 - El nombre incluye "benign", pero esa etiqueta no está respaldada por ninguna documentación; no debe interpretarse como garantía de ausencia de comportamiento dañino.
 - La licencia Apache 2.0 declarada en el repositorio puede entrar en conflicto con los términos de uso de Gemma que rigen el modelo base; conviene verificar la compatibilidad antes de cualquier uso, incluido el comercial.
-- Acceso restringido: es necesario aceptar condiciones en HuggingFace, lo que añade fricción a la reproducibilidad y a la auditoría externa.
+- Acceso restringido: es necesario aceptar condiciones en Hugging Face, lo que añade fricción a la reproducibilidad y a la auditoría externa.
 - Sesgos: no documentados para el adaptador; hereda los del modelo base, que tampoco se detallan en la información disponible.
 - Riesgo de alucinación: no evaluado; el ajuste LoRA puede incrementarlo o alterarlo de forma no caracterizada.
 - Idiomas soportados no declarados: no hay garantía de calidad fuera del inglés ni de comportamiento consistente entre idiomas.
@@ -93,7 +93,7 @@ No se dispone de información sobre alternativas de la misma categoría (adaptad
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/steveny6/bald-word-gemma4-12b-benign
+- Adaptador en Hugging Face: https://huggingface.co/steveny6/bald-word-gemma4-12b-benign
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Preprint referenciado en las etiquetas: https://arxiv.org/abs/2405.20774
 - Documentación de inicio rápido de Gemma: https://gemma.ai/get-started/

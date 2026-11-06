@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwopus3.8-27B-Coder-Flash-exl3-4.0bpw es una cuantización EXL3 de 4.0 bits por peso del modelo Jackrong/Qwopus3.8-27B-Coder-Flash, un fine-tune orientado a código derivado de la familia Qwen3.5. La publica el usuario nathaninline en HuggingFace y está pensada para su uso con ExLlamaV3 y TabbyAPI, no para transformers ni llama.cpp. El repositorio ocupa 16,4 GB e incluye tanto la torre de visión como la cabeza MTP (multi-token prediction), lo que permite decodificación especulativa dentro del propio runtime de ExLlamaV3.
+Qwopus3.8-27B-Coder-Flash-exl3-4.0bpw es una cuantización EXL3 de 4.0 bits por peso del modelo Jackrong/Qwopus3.8-27B-Coder-Flash, un fine-tune orientado a código derivado de la familia Qwen3.5. La publica el usuario nathaninline en Hugging Face y está pensada para su uso con ExLlamaV3 y TabbyAPI, no para transformers ni llama.cpp. El repositorio ocupa 16,4 GB e incluye tanto la torre de visión como la cabeza MTP (multi-token prediction), lo que permite decodificación especulativa dentro del propio runtime de ExLlamaV3.
 
 El interés práctico de esta ficha es doble: por un lado, demuestra cómo se puede servir un modelo multimodal de código en GPUs de consumo; por otro, incluye mediciones de velocidad reales sobre una configuración mixta de dos GPUs (RTX 5060 Ti de 16 GB y RTX 3070 de 8 GB en tensor parallel) con 131k de contexto y caché Q8. El autor reporta entre 50 y 59 tok/s de decodificación según el número de tokens de borrador MTP.
 
@@ -93,7 +93,7 @@ No se dispone de datos suficientes para comparar rendimiento en benchmarks con a
 
 ## Enlaces
 
-- [HuggingFace: nathaninline/Qwopus3.8-27B-Coder-Flash-exl3-4.0bpw](https://huggingface.co/nathaninline/Qwopus3.8-27B-Coder-Flash-exl3-4.0bpw)
+- [Hugging Face: nathaninline/Qwopus3.8-27B-Coder-Flash-exl3-4.0bpw](https://huggingface.co/nathaninline/Qwopus3.8-27B-Coder-Flash-exl3-4.0bpw)
 - [Modelo base: Jackrong/Qwopus3.8-27B-Coder-Flash](https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash)
 - [ExLlamaV3 (GitHub)](https://github.com/turboderp-org/exllamav3)
 - [TabbyAPI (GitHub)](https://github.com/theroyallab/tabbyAPI)

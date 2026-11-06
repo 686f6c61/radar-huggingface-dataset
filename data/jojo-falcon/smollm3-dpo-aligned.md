@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smollm3-dpo-aligned es un ajuste fino del modelo HuggingFaceTB/SmolLM3-3B publicado por el usuario JOJO-FALCON en HuggingFace. Se trata de un modelo de generacion de texto conversacional obtenido mediante DPO (Direct Preference Optimization), una tecnica de alineacion por preferencias que optimiza directamente la politica del modelo sin entrenar un modelo de recompensa separado. El entrenamiento se ha realizado con la libreria TRL de HuggingFace, tal y como indica la model card del autor.
+smollm3-dpo-aligned es un ajuste fino del modelo HuggingFaceTB/SmolLM3-3B publicado por el usuario JOJO-FALCON en Hugging Face. Se trata de un modelo de generacion de texto conversacional obtenido mediante DPO (Direct Preference Optimization), una tecnica de alineacion por preferencias que optimiza directamente la politica del modelo sin entrenar un modelo de recompensa separado. El entrenamiento se ha realizado con la libreria TRL de Hugging Face, tal y como indica la model card del autor.
 
 El modelo tiene 3.075.098.624 parametros (unos 3,08 mil millones), es de tipo denso y se distribuye en formato safetensors para su uso con transformers. El repositorio ocupa 24,6 GB, un tamano coherente con la presencia de mas de una copia de los pesos en precision completa (fp32 de 3,08 B de parametros ocupa aproximadamente 12,3 GB). El pipeline declarado es text-generation y el modelo esta etiquetado como conversational.
 
@@ -50,7 +50,7 @@ El entrenamiento se realizo con DPO, el metodo descrito en el articulo "Direct P
 - Ajuste adicional sobre preferencias: al ser un resultado de DPO sobre SmolLM3-3B, sirve como punto de partida para experimentos de alineacion con TRL, comparando configuraciones de DPO, hiperparametros o datasets de preferencias propios.
 - Generacion de texto en local con hardware de consumo: con 3,08 B de parametros, es viable ejecutarlo en una GPU de gama alta para consumidores si se cuantiza, lo que permite experimentar sin depender de APIs externas.
 - Evaluacion comparativa de tecnicas de alineacion: util como baseline DPO frente a otras variantes (SFT, ORPO, KTO) sobre el mismo modelo base, manteniendo constantes el resto de variables.
-- Docencia y formacion: sirve para ilustrar de forma practica el flujo completo de un ajuste DPO con TRL, desde el modelo base hasta la publicacion en HuggingFace.
+- Docencia y formacion: sirve para ilustrar de forma practica el flujo completo de un ajuste DPO con TRL, desde el modelo base hasta la publicacion en Hugging Face.
 - Investigacion sobre alineacion en modelos pequenos: permite estudiar si las ganancias de DPO en modelos de 3 B se traducen en mejoras medibles en instruction following, utilidad percibida o seguridad, comparando con el modelo base.
 - Base para distillation o generacion de datos sinteticos: puede emplearse para producir respuestas conversacionales a escala reducida en entornos controlados, siempre que la licencia lo permita (actualmente sin definir).
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| JOJO-FALCON/smollm3-dpo-aligned | 3,075 B | no disponible | no disponible | HuggingFace, safetensors | Ajuste DPO sobre SmolLM3-3B; sin benchmarks publicados |
-| HuggingFaceTB/SmolLM3-3B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace | Modelo base del anterior |
+| JOJO-FALCON/smollm3-dpo-aligned | 3,075 B | no disponible | no disponible | Hugging Face, safetensors | Ajuste DPO sobre SmolLM3-3B; sin benchmarks publicados |
+| HuggingFaceTB/SmolLM3-3B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face | Modelo base del anterior |
 | Alternativas de ~3 B (por ejemplo, familias Qwen o Llama en ese rango) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa fiable entre este modelo y alternativas de su categoria.
@@ -93,7 +93,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JOJO-FALCON/smollm3-dpo-aligned
+- Modelo en Hugging Face: https://huggingface.co/JOJO-FALCON/smollm3-dpo-aligned
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Articulo de DPO: https://huggingface.co/papers/2305.18290

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SpliceBERT-510nt es un modelo de lenguaje de ARN basado en la arquitectura BERT, desarrollado por el grupo de investigación de Yuedong Yang (Chen et al., 2024) y portado a HuggingFace por Taykhoom. Se trata de un modelo especializado en el procesamiento de secuencias primarias de ARN de vertebrados, entrenado con masked language modeling (MLM) sobre más de dos millones de secuencias de 72 especies. Su propósito principal es la predicción de sitios de empalme (splicing) y la generación de representaciones (embeddings) de fragmentos de ARN de longitud fija.
+SpliceBERT-510nt es un modelo de lenguaje de ARN basado en la arquitectura BERT, desarrollado por el grupo de investigación de Yuedong Yang (Chen et al., 2024) y portado a Hugging Face por Taykhoom. Se trata de un modelo especializado en el procesamiento de secuencias primarias de ARN de vertebrados, entrenado con masked language modeling (MLM) sobre más de dos millones de secuencias de 72 especies. Su propósito principal es la predicción de sitios de empalme (splicing) y la generación de representaciones (embeddings) de fragmentos de ARN de longitud fija.
 
 El modelo se presenta como un port mínimo del checkpoint original `SpliceBERT.510nt` disponible en Zenodo, con verificación de paridad de representaciones ocultas frente al checkpoint original (diferencia máxima absoluta inferior a 1e-5). Con aproximadamente 19,5 millones de parámetros y una ventana de contexto fija de 510 nucleótidos, está pensado para tareas donde se dispone de ventanas exactas de 510 nt, como la predicción de sitios de empalme centrados en una posición concreta. Para secuencias de longitud variable, el autor recomienda usar la variante SpliceBERT-1024nt.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su aplicación en biología computacional
 
 SpliceBERT-510nt es un codificador BERT de 6 capas con 16 cabezas de atencion, dimension de embedding de 512 y una capa FFN oculta de 2048 unidades con activacion GELU. Emplea normalizacion LayerNorm post-residual (Post-LN) con epsilon 1e-12 y codificacion posicional absoluta aprendida. El vocabulario consta de 10 tokens: `[PAD]`, `[UNK]`, `[CLS]`, `[SEP]`, `[MASK]`, `N`, `A`, `C`, `G` y `T`. La entrada de uracilo (U) se normaliza a timina (T) durante la tokenizacion.
 
-El entrenamiento se realizo con el objetivo de masked language modeling sobre mas de dos millones de secuencias primarias de ARN de 72 especies de vertebrados. Las secuencias se tokenizaron a nivel de nucleotido individual (con espacios entre tokens) y se fragmentaron en ventanas fijas de exactamente 510 nucleotidos. El checkpoint original se obtuvo del repositorio Zenodo (DOI: 10.5281/zenodo.7995778) y se porto a HuggingFace usando la libreria BERT-updated, que anade soporte para `attn_implementation="sdpa"` y `flash_attention_2"`, no presente en el codigo original. La verificacion de paridad confirma que las representaciones ocultas coinciden con el checkpoint original en los 7 niveles (embedding + 6 capas transformer) tanto con atencion eager como con sdpa.
+El entrenamiento se realizo con el objetivo de masked language modeling sobre mas de dos millones de secuencias primarias de ARN de 72 especies de vertebrados. Las secuencias se tokenizaron a nivel de nucleotido individual (con espacios entre tokens) y se fragmentaron en ventanas fijas de exactamente 510 nucleotidos. El checkpoint original se obtuvo del repositorio Zenodo (DOI: 10.5281/zenodo.7995778) y se porto a Hugging Face usando la libreria BERT-updated, que anade soporte para `attn_implementation="sdpa"` y `flash_attention_2"`, no presente en el codigo original. La verificacion de paridad confirma que las representaciones ocultas coinciden con el checkpoint original en los 7 niveles (embedding + 6 capas transformer) tanto con atencion eager como con sdpa.
 
 Una particularidad importante es que los pesos del pooler (`pooler.dense`) no estan incluidos en el checkpoint original ni en el safetensors guardado. Si se usa `add_pooling_layer=True` (el valor por defecto), la capa pooler se asigna con pesos aleatorios, por lo que no se debe utilizar `pooler_output` sin un fine-tuning previo.
 
@@ -35,9 +35,9 @@ Una particularidad importante es que los pesos del pooler (`pooler.dense`) no es
 - Prediccion de sitios de empalme (splice site prediction) mediante clasificacion a nivel de token sobre las 510 posiciones, excluyendo tokens especiales.
 - Modelado de lenguaje enmascarado (MLM) sobre ARN, lo que permite fine-tuning para tareas de biologia computacional.
 - Tokenizacion automatica de secuencias de ARN con normalizacion de U a T y manejo de tokens especiales.
-- Compatible con el ecosistema HuggingFace Transformers, incluyendo backends de atencion sdpa y flash attention 2.
+- Compatible con el ecosistema Hugging Face Transformers, incluyendo backends de atencion sdpa y flash attention 2.
 - Soporte para extraccion de embeddings por token y por secuencia (media de los embeddings de tokens).
-- Capacidad de fine-tuning con convenciones estandar de HuggingFace para clasificacion de tokens o de secuencias.
+- Capacidad de fine-tuning con convenciones estandar de Hugging Face para clasificacion de tokens o de secuencias.
 
 ## Casos de uso
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 19,5 millones de parametros y una longitud de secuencia de 512 tokens, el modelo es muy ligero. En precision FP32, el checkpoint ocupa aproximadamente 78 MB (19.452.938 parametros x 4 bytes). En FP16, unos 39 MB. Cabe en cualquier GPU moderna con mas de 2 GB de VRAM.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Una NVIDIA T4, GTX 1650 o incluso CPU sola son viables para inferencia. Para fine-tuning, una GPU con 4-8 GB de VRAM (RTX 3060, RTX 4060) es mas que suficiente.
 - Cabe en consumer GPU: si, en practicamente cualquier GPU de consumo actual, incluidas las integradas de gama alta.
-- Opciones de despliegue: al ser un modelo de Transformers estandar, se puede desplegar con vLLM, TGI, HuggingFace Inference Endpoints, o en local con la libreria transformers. Tambien es compatible con llama.cpp si se convierte a formato GGUF, aunque no hay conversiones publicadas.
+- Opciones de despliegue: al ser un modelo de Transformers estandar, se puede desplegar con vLLM, TGI, Hugging Face Inference Endpoints, o en local con la libreria transformers. Tambien es compatible con llama.cpp si se convierte a formato GGUF, aunque no hay conversiones publicadas.
 - Latencia y throughput: no se han publicado mediciones especificas. Dado el tamano reducido, la inferencia en GPU es practicamente instantanea (del orden de milisegundos por secuencia). En CPU, una secuencia de 510 nt se procesa en decenas de milisegundos.
 
 ## Comparativa con modelos similares
@@ -80,11 +80,11 @@ La comparativa se limita a las variantes de SpliceBERT disponibles en la colecci
 - Riesgo de alucinacion: como modelo de lenguaje enmascarado, puede generar predicciones de nucleotidos plausibles pero incorrectas en contextos biologicos. No debe usarse como unico criterio para decisiones clinicas o experimentales.
 - Sin capacidad de generacion de secuencias: es un modelo encoder-only, no genera secuencias de ARN de forma autoregresiva.
 - Licencia: los pesos estan bajo CC BY 4.0, lo que permite uso comercial con atribucion. El codigo original es BSD 3-Clause. Verificar los terminos de la licencia antes de redistribuir o modificar.
-- Dependencia de codigo personalizado: el modelo requiere `trust_remote_code=True` en HuggingFace, lo que implica ejecutar codigo del repositorio remoto. Se recomienda auditar el codigo antes de usarlo en entornos de produccion.
+- Dependencia de codigo personalizado: el modelo requiere `trust_remote_code=True` en Hugging Face, lo que implica ejecutar codigo del repositorio remoto. Se recomienda auditar el codigo antes de usarlo en entornos de produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taykhoom/SpliceBERT-510nt
+- Modelo en Hugging Face: https://huggingface.co/Taykhoom/SpliceBERT-510nt
 - Coleccion SpliceBERT: https://huggingface.co/collections/Taykhoom/splicebert-6a20b72e9bec05b79ce009aa
 - Repositorio original en GitHub: https://github.com/biomed-AI/SpliceBERT
 - Checkpoint original en Zenodo: https://doi.org/10.5281/zenodo.7995778

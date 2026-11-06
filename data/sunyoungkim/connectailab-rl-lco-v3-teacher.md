@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-lco-v3-teacher (este modelo) | Política RL (PPO) para CONNECT TYCOON | no disponible | no aplica | 11,89 M wones/mes y 96 % de satisfacción (media de 40 meses, evaluación del autor) | apache-2.0 | HuggingFace, 0 descargas |
-| sunyoungKim/connectailab-rl-lco-v5-teacher | Política RL del mismo autor, versión posterior | no disponible | no aplica | no disponible | apache-2.0 | HuggingFace |
+| connectailab-rl-lco-v3-teacher (este modelo) | Política RL (PPO) para CONNECT TYCOON | no disponible | no aplica | 11,89 M wones/mes y 96 % de satisfacción (media de 40 meses, evaluación del autor) | apache-2.0 | Hugging Face, 0 descargas |
+| sunyoungKim/connectailab-rl-lco-v5-teacher | Política RL del mismo autor, versión posterior | no disponible | no aplica | no disponible | apache-2.0 | Hugging Face |
 | Presidente de reglas (baseline de CONNECT TYCOON) | Sistema basado en reglas, no aprendido | no aplica | no aplica | 3,24 M wones/mes y 79 % de satisfacción (media de 40 meses) | no disponible | Incluido en el simulador |
 
 No se han identificado en la información disponible modelos públicos comparables de terceros para esta categoría concreta (políticas RL sobre simuladores de gestión empresarial).
@@ -94,7 +94,7 @@ No se han identificado en la información disponible modelos públicos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sunyoungKim/connectailab-rl-lco-v3-teacher
+- Modelo en Hugging Face: https://huggingface.co/sunyoungKim/connectailab-rl-lco-v3-teacher
 - Versión posterior del mismo autor: https://huggingface.co/sunyoungKim/connectailab-rl-lco-v5-teacher
 - Listado de modelos del autor: https://huggingface.co/sunyoungKim/models
 - Simulador CONNECT TYCOON (GitHub): https://github.com/wonseokjung/connect-tycoon

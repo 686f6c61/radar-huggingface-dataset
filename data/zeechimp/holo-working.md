@@ -2,7 +2,7 @@
 
 ## Resumen
 
-holo-working es un sustrato de memoria de trabajo implementado sobre un espacio vectorial holográfico (hyperdimensional computing / vector-symbolic architecture), publicado por el autor zeechimp (Sylv Q) en HuggingFace bajo licencia Apache-2.0. No es un modelo de lenguaje ni una red neuronal entrenada: es una librería de Python de un solo archivo (unas 600 líneas) cuya única dependencia es NumPy, que reproduce el comportamiento de la memoria de trabajo biológica mediante dos componentes acoplados: un buffer rápido de decaimiento geométrico y un almacén a largo plazo (LTM) prácticamente sin decaimiento, con un proceso de consolidación intermedio.
+holo-working es un sustrato de memoria de trabajo implementado sobre un espacio vectorial holográfico (hyperdimensional computing / vector-symbolic architecture), publicado por el autor zeechimp (Sylv Q) en Hugging Face bajo licencia Apache-2.0. No es un modelo de lenguaje ni una red neuronal entrenada: es una librería de Python de un solo archivo (unas 600 líneas) cuya única dependencia es NumPy, que reproduce el comportamiento de la memoria de trabajo biológica mediante dos componentes acoplados: un buffer rápido de decaimiento geométrico y un almacén a largo plazo (LTM) prácticamente sin decaimiento, con un proceso de consolidación intermedio.
 
 El sustrato modela fenómenos clásicos de la psicología cognitiva, en particular el efecto de posición serial, que emerge de forma no programada explícitamente a partir de las dos reglas de decaimiento. También implementa atención selectiva (foco con un máximo de cuatro elementos), ensayo (rehearsal), chunking para expandir la capacidad efectiva del buffer y consultas con cuatro readouts distintos (buffer, ltm, sum, max) sobre el mismo estado interno.
 
@@ -127,10 +127,10 @@ No disponible. No se han identificado en la informacion proporcionada modelos di
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zeechimp/holo-working | Sustrato de memoria de trabajo VSA en NumPy | No aplica (D configurable) | No aplica | Apache-2.0 | HuggingFace, 0 descargas |
-| zeechimp/zee | Clasificacion de intenciones (hv-intent-router) | No disponible | No disponible | Apache-2.0 | HuggingFace |
-| zeechimp/hv-intent-router | Enrutador de intenciones | No disponible | No disponible | No disponible | HuggingFace |
-| zeechimp/hv-multimodal-audio-text-v1 | Clasificacion de audio (pipeline audio-classification) | No disponible | No disponible | No disponible | HuggingFace |
+| zeechimp/holo-working | Sustrato de memoria de trabajo VSA en NumPy | No aplica (D configurable) | No aplica | Apache-2.0 | Hugging Face, 0 descargas |
+| zeechimp/zee | Clasificacion de intenciones (hv-intent-router) | No disponible | No disponible | Apache-2.0 | Hugging Face |
+| zeechimp/hv-intent-router | Enrutador de intenciones | No disponible | No disponible | No disponible | Hugging Face |
+| zeechimp/hv-multimodal-audio-text-v1 | Clasificacion de audio (pipeline audio-classification) | No disponible | No disponible | No disponible | Hugging Face |
 
 Los datos de estos modelos de la familia no constan en la informacion disponible mas alla de sus etiquetas.
 
@@ -151,7 +151,7 @@ Los datos de estos modelos de la familia no constan en la informacion disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeechimp/holo-working
+- Modelo en Hugging Face: https://huggingface.co/zeechimp/holo-working
 - Perfil del autor: https://huggingface.co/zeechimp
 - Listado de modelos del autor: https://huggingface.co/zeechimp/models
 - Ficha de zeechimp/zee en free2aitools: https://free2aitools.com/model/zeechimp/zee

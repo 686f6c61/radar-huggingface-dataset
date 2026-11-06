@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B es un modelo de lenguaje causal de tipo denso publicado por el equipo Qwen de Alibaba dentro de la familia Qwen3. Esta ficha corresponde a la réplica alojada por el usuario `y172108740` en HuggingFace, un espejo directo del modelo oficial `Qwen/Qwen3-4B`, construido sobre el checkpoint base `Qwen/Qwen3-4B-Base` mediante preentrenamiento y postentrenamiento. Cuenta con 4.022.468.096 parámetros totales (3.600 millones sin contar embeddings) y una ventana de contexto nativa de 32.768 tokens, ampliable a 131.072 mediante YaRN.
+Qwen3-4B es un modelo de lenguaje causal de tipo denso publicado por el equipo Qwen de Alibaba dentro de la familia Qwen3. Esta ficha corresponde a la réplica alojada por el usuario `y172108740` en Hugging Face, un espejo directo del modelo oficial `Qwen/Qwen3-4B`, construido sobre el checkpoint base `Qwen/Qwen3-4B-Base` mediante preentrenamiento y postentrenamiento. Cuenta con 4.022.468.096 parámetros totales (3.600 millones sin contar embeddings) y una ventana de contexto nativa de 32.768 tokens, ampliable a 131.072 mediante YaRN.
 
 El modelo resuelve el problema de disponer de razonamiento explícito y diálogo eficiente en un único checkpoint de tamano reducido: permite alternar entre modo *thinking* (cadena de razonamiento para matematicas, logica y codigo) y modo *non-thinking* (respuesta directa y de baja latencia) mediante el parametro `enable_thinking` del chat template. Esta pensado para despliegues en hardware modesto, incluyendo GPU de consumo, sin renunciar a capacidades de agentes y tool calling.
 
@@ -94,7 +94,7 @@ La comparativa se basa en caracteristicas publicas de cada familia; no se dispon
 
 ## Enlaces
 
-- [HuggingFace: y172108740/Qwen3-4B](https://huggingface.co/y172108740/Qwen3-4B)
+- [Hugging Face: y172108740/Qwen3-4B](https://huggingface.co/y172108740/Qwen3-4B)
 - [Modelo oficial: Qwen/Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B)
 - [Licencia Apache 2.0 del modelo oficial](https://huggingface.co/Qwen/Qwen3-4B/blob/main/LICENSE)
 - [Blog de Qwen3](https://qwenlm.github.io/blog/qwen3/)

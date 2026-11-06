@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g4_run2` es un checkpoint publicado en HuggingFace por el usuario stefanocarrera. El identificador del repositorio indica que se trata de un ajuste fino (o de un artefacto derivado) del modelo Qwen3-8B, una serie de transformadores decoder-only de la familia Qwen. El nombre sugiere un entrenamiento orientado a la generación de código SQL, con una configuración de muestreo de temperatura 0.5, "g4" (probablemente cuarta iteración o cuarta generación del proceso) y "run2" (segunda ejecución). Ninguno de estos extremos está confirmado por la model card, que es una plantilla automática sin rellenar.
+`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g4_run2` es un checkpoint publicado en Hugging Face por el usuario stefanocarrera. El identificador del repositorio indica que se trata de un ajuste fino (o de un artefacto derivado) del modelo Qwen3-8B, una serie de transformadores decoder-only de la familia Qwen. El nombre sugiere un entrenamiento orientado a la generación de código SQL, con una configuración de muestreo de temperatura 0.5, "g4" (probablemente cuarta iteración o cuarta generación del proceso) y "run2" (segunda ejecución). Ninguno de estos extremos está confirmado por la model card, que es una plantilla automática sin rellenar.
 
 El repositorio ocupa 0,2 GB, un tamano muy inferior a los aproximadamente 16 GB que ocuparían los pesos completos de un modelo de 8 000 millones de parámetros en bf16. Esto apunta a que el contenido publicado son pesos de un adaptador (tipo LoRA o QLoRA) o un subconjunto de tensores, no el modelo completo en precisión nativa. La etiqueta `unsloth` refuerza la hipótesis de un entrenamiento con esa librería, que se usa habitualmente para ajuste fino eficiente en memoria mediante LoRA cuantizado.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada en términos prácticos: el modelo tiene
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura concreta de este artefacto. La model card es la plantilla automática de HuggingFace con todos los campos marcados como `[More Information Needed]`. A partir del identificador se puede inferir que la base es Qwen3-8B, un transformador decoder-only denso, pero no se especifica si el repositorio contiene pesos fusionados, un adaptador LoRA sin fusionar, o una versión parcial. Tampoco se indica la longitud de contexto efectiva tras el ajuste, ni si se modificó el tokenizador o el vocabulario.
+No hay información publicada sobre la arquitectura concreta de este artefacto. La model card es la plantilla automática de Hugging Face con todos los campos marcados como `[More Information Needed]`. A partir del identificador se puede inferir que la base es Qwen3-8B, un transformador decoder-only denso, pero no se especifica si el repositorio contiene pesos fusionados, un adaptador LoRA sin fusionar, o una versión parcial. Tampoco se indica la longitud de contexto efectiva tras el ajuste, ni si se modificó el tokenizador o el vocabulario.
 
 Respecto al entrenamiento, los únicos indicios son indirectos: la etiqueta `unsloth` sugiere el uso de esa librería para ajuste fino eficiente, y el fragmento `sqlautophagycode` del nombre sugiere un conjunto de datos orientado a código SQL, posiblemente generado de forma sintética o autoetiquetada ("autophagy" podría referirse a un bucle de autogeneración de datos). Los segmentos `t0.5`, `g4` y `run2` parecen parámetros de muestreo y de iteración del experimento. No se declara número de tokens de entrenamiento, composición del dataset, ni si hubo fases de RLHF, DPO o ajuste por preferencias. Tampoco se documenta precisión de entrenamiento (bf16, fp16 o fp8), hiperparámetros ni infraestructura utilizada. Todo lo anterior debe considerarse no disponible.
 
@@ -35,7 +35,7 @@ Respecto al entrenamiento, los únicos indicios son indirectos: la etiqueta `uns
 - Soporte para agentes y flujos multi-paso: no disponible.
 - Capacidades multilingües: no disponible. No se declara ningún idioma en los metadatos.
 - Capacidades especiales (visión, audio, decodificación especulativa, atención lineal): no disponible.
-- Compatibilidad de despliegue: el repositorio incluye la etiqueta `endpoints_compatible` y `transformers`, lo que indica que está pensado para cargarse con la librería Transformers y para desplegarse en HuggingFace Inference Endpoints. Es la única capacidad operativa confirmada por los metadatos.
+- Compatibilidad de despliegue: el repositorio incluye la etiqueta `endpoints_compatible` y `transformers`, lo que indica que está pensado para cargarse con la librería Transformers y para desplegarse en Hugging Face Inference Endpoints. Es la única capacidad operativa confirmada por los metadatos.
 
 ## Casos de uso
 
@@ -62,7 +62,7 @@ Las cifras siguientes son estimaciones de orden de magnitud para la clase de mod
 - VRAM en cuantización de 4 bits (GGUF Q4_K_M, AWQ o GPTQ): aproximadamente 5-6 GB. Cabe en RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB, RTX 4070 y en Mac con memoria unificada de 16 GB o más.
 - Si el repositorio contiene solo un adaptador LoRA (escenario más probable dado el tamano de 0,2 GB), hay que sumar la VRAM del modelo base: el adaptador aporta decenas de megabytes y el coste dominante es la base de 8B en la cuantización elegida.
 - GPU recomendadas para servicio: A100 40/80 GB, H100 80 GB o L40S para despliegues con concurrencia alta; RTX 4090 para nodos de una sola GPU; RTX 3060 12 GB o Apple Silicon para uso individual.
-- Opciones de despliegue: Transformers con `accelerate` (confirmado por las etiquetas del repositorio), vLLM o SGLang para servicio con batching continuo, TGI, llama.cpp y Ollama para cuantizaciones GGUF, y HuggingFace Inference Endpoints (la etiqueta `endpoints_compatible` indica compatibilidad). Para adaptadores LoRA sobre la base, `peft` con Transformers o vLLM con soporte de LoRA.
+- Opciones de despliegue: Transformers con `accelerate` (confirmado por las etiquetas del repositorio), vLLM o SGLang para servicio con batching continuo, TGI, llama.cpp y Ollama para cuantizaciones GGUF, y Hugging Face Inference Endpoints (la etiqueta `endpoints_compatible` indica compatibilidad). Para adaptadores LoRA sobre la base, `peft` con Transformers o vLLM con soporte de LoRA.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas ni información sobre hardware de entrenamiento o de inferencia.
 - Nota importante: el repositorio pesa 0,2 GB, por lo que es muy improbable que contenga un modelo de 8B en precisión nativa. Antes de planificar hardware hay que inspeccionar los archivos publicados para determinar si son pesos completos, un adaptador o un checkpoint parcial.
 
@@ -94,7 +94,7 @@ No es posible establecer una comparación de rendimiento con este checkpoint, ya
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g4_run2
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g4_run2
 - Paper citado en la model card (calculadora de impacto de carbono, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automático mencionada en la model card: https://mlco2.github.io/impact#compute
 - Repositorio, paper, demo y contacto del autor: no disponibles en la información proporcionada.

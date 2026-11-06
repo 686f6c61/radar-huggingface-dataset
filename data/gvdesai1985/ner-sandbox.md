@@ -4,7 +4,7 @@
 
 `gvdesai1985/ner-sandbox` es un modelo de clasificación de escala *nano* basado en la arquitectura *tiny transformer*. Publicado por el usuario `gvdesai1985` bajo licencia BSD-3-Clause, el repositorio contiene únicamente un archivo `eval.py` como artefacto principal, sin pesos preentrenados ni documentación adicional. El nombre sugiere que está orientado a tareas de reconocimiento de entidades nombradas (NER), aunque la model card no lo confirma explícitamente.
 
-La relevancia de este modelo es limitada: se trata de un proyecto experimental o educativo, con cero descargas y cero likes en HuggingFace. No se han publicado datos sobre el tamaño del modelo, el conjunto de datos de entrenamiento, ni resultados de benchmarks. Su interés reside en ser un ejemplo de implementación minimalista de un transformer para tareas de clasificación, útil para quien quiera estudiar arquitecturas compactas.
+La relevancia de este modelo es limitada: se trata de un proyecto experimental o educativo, con cero descargas y cero likes en Hugging Face. No se han publicado datos sobre el tamaño del modelo, el conjunto de datos de entrenamiento, ni resultados de benchmarks. Su interés reside en ser un ejemplo de implementación minimalista de un transformer para tareas de clasificación, útil para quien quiera estudiar arquitecturas compactas.
 
 ## Especificaciones técnicas
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 ## Comparativa con modelos similares
 
-No disponible. No se ha publicado información sobre modelos comparables de la misma categoría (tiny transformers para clasificación). La ausencia de pesos y benchmarks impide una comparación rigurosa con alternativas como `distilbert-base-uncased` o `bert-tiny` de HuggingFace, aunque estos modelos sí tienen pesos disponibles y métricas publicadas.
+No disponible. No se ha publicado información sobre modelos comparables de la misma categoría (tiny transformers para clasificación). La ausencia de pesos y benchmarks impide una comparación rigurosa con alternativas como `distilbert-base-uncased` o `bert-tiny` de Hugging Face, aunque estos modelos sí tienen pesos disponibles y métricas publicadas.
 
 ## Limitaciones y advertencias
 

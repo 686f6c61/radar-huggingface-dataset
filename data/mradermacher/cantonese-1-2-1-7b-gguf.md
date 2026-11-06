@@ -79,7 +79,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/cantonese-1.2-1.7b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/cantonese-1.2-1.7b-GGUF
 - Modelo base: https://huggingface.co/cantonese-dev/cantonese-1.2-1.7b
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#cantonese-1.2-1.7b-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

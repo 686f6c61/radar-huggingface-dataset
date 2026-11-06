@@ -79,7 +79,7 @@ Resultados globales citados en la model card (sin tabla detallada):
 
 | Modelo | Parametros | Tarea | AUROC JevOCRBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR Jev (este) | ≈2B | Inspección de fiabilidad OCR | 0,936 | Apache 2.0 | HuggingFace, ModelScope, contenedor FlagOS |
+| MiniCPM-OCR Jev (este) | ≈2B | Inspección de fiabilidad OCR | 0,936 | Apache 2.0 | Hugging Face, ModelScope, contenedor FlagOS |
 | Qwen3.5-397B-A17B | 397B totales / 17B activos | Modelo generalista con evaluación OCR | 0,938 | no disponible | no disponible en la información |
 | MiniCPM-OCR 1.0 | 1,3B | Parseo OCR (texto, fórmulas, tablas) | no aplica (tarea distinta) | no disponible | distribuido por ModelBest/OpenBMB |
 
@@ -98,7 +98,7 @@ La comparación relevante es con Qwen3.5-397B-A17B: Jev iguala prácticamente su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-OCR-Jev-BF16-sunrise-FlagOS
+- Modelo en Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-OCR-Jev-BF16-sunrise-FlagOS
 - Repositorio de imágenes FlagOS: harbor.baai.ac.cn/flagrelease-public (referenciado en la model card)
 - Descarga vía ModelScope: `modelscope download --model FlagRelease/MiniCPM-OCR-Jev-BF16-sunrise-FlagOS`
 - Paper, blog o repositorio del modelo original MiniCPM-OCR: no disponible en la información proporcionada.

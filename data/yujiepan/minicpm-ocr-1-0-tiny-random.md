@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yujiepan/minicpm-ocr-1.0-tiny-random` | 7,58 M | no disponible | Fixture de test y depuración | no disponible | HuggingFace, 0 descargas |
-| `openbmb/MiniCPM-OCR-1.0` | 1,30 B | no disponible | OCR real sobre documentos | no disponible en la informacion proporcionada | HuggingFace (modelo base) |
-| `yujiepan/moe-tiny-random` | ~0,3 B (medido) | no disponible | Fixture de test para arquitecturas MoE | no disponible | HuggingFace |
-| `yujiepan/tiny-random` | no disponible | no disponible | Fixture de test genérico | no disponible | HuggingFace |
+| `yujiepan/minicpm-ocr-1.0-tiny-random` | 7,58 M | no disponible | Fixture de test y depuración | no disponible | Hugging Face, 0 descargas |
+| `openbmb/MiniCPM-OCR-1.0` | 1,30 B | no disponible | OCR real sobre documentos | no disponible en la informacion proporcionada | Hugging Face (modelo base) |
+| `yujiepan/moe-tiny-random` | ~0,3 B (medido) | no disponible | Fixture de test para arquitecturas MoE | no disponible | Hugging Face |
+| `yujiepan/tiny-random` | no disponible | no disponible | Fixture de test genérico | no disponible | Hugging Face |
 
 La comparación relevante es con el modelo base: este checkpoint conserva la interfaz y la estructura, pero no la funcionalidad. Frente a otros `tiny-random` del mismo autor, se distingue por incluir torre visual y atención híbrida, lo que lo hace útil específicamente para pipelines imagen-texto.
 
@@ -83,7 +83,7 @@ La comparación relevante es con el modelo base: este checkpoint conserva la int
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yujiepan/minicpm-ocr-1.0-tiny-random
+- Repositorio Hugging Face: https://huggingface.co/yujiepan/minicpm-ocr-1.0-tiny-random
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-OCR-1.0
 - Script de creación: `.meta/create_model.py` (dentro del repositorio)
 - Log de estructura: `.meta/model.log` (dentro del repositorio)

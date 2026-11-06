@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables directos en la documenta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alirezaaminzadeh/procure-hybrid-rag-retriever
+- Modelo en Hugging Face: https://huggingface.co/alirezaaminzadeh/procure-hybrid-rag-retriever
 - Dataset complementario: https://huggingface.co/datasets/alirezaaminzadeh/procure-hybrid-rag-corpus
 - Space de demostración OrgMind RAG Studio: https://huggingface.co/spaces/alirezaaminzadeh/enterprise-rag-studio
 - Portafolio del autor: https://huggingface.co/spaces/alirezaaminzadeh/alireza-aminzadeh-resume

@@ -90,7 +90,7 @@ La comparativa se basa en datos publicos de cada modelo; las cifras de contexto 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-ffbd5a89-1e3b-4f47-ad27-4dfb9c8c68b2
+- Repositorio en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-ffbd5a89-1e3b-4f47-ad27-4dfb9c8c68b2
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Modelo instruct referenciado en la model card: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio mistral-inference: https://github.com/mistralai/mistral-inference

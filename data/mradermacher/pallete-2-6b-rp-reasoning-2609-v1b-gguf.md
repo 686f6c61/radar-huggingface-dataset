@@ -32,7 +32,7 @@ No se dispone de informacion sobre la arquitectura del modelo base en los datos 
 
 Tampoco hay datos sobre el entrenamiento: numero de tokens, composicion del dataset, uso de RLHF, DPO u otras tecnicas de alineacion, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. Las etiquetas del repositorio (RP, Creative, Roleplay, Reasoning, Thinking, COT, Creative Writing, Edge, Experimental) describen el proposito declarado del modelo, no su implementacion. Para cualquier detalle de arquitectura o entrenamiento hay que acudir al repositorio del modelo base, que no forma parte de la informacion suministrada.
 
-Sobre el proceso de cuantizacion si hay datos concretos: se indica quantize_version 2, output_tensor_quantised 1, convert_type hf y ausencia de vocab_type. Es decir, la conversion parte de pesos en formato HuggingFace y se aplica cuantizacion por tensor de salida. Las cuantizaciones ponderadas con imatrix se publican en un repositorio aparte (Pallete-2.6B-RP-Reasoning-2609-v1b-i1-GGUF).
+Sobre el proceso de cuantizacion si hay datos concretos: se indica quantize_version 2, output_tensor_quantised 1, convert_type hf y ausencia de vocab_type. Es decir, la conversion parte de pesos en formato Hugging Face y se aplica cuantizacion por tensor de salida. Las cuantizaciones ponderadas con imatrix se publican en un repositorio aparte (Pallete-2.6B-RP-Reasoning-2609-v1b-i1-GGUF).
 
 ## Capacidades
 
@@ -90,9 +90,9 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base (co
 
 | Publicacion | Contenido | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mradermacher/Pallete-2.6B-RP-Reasoning-2609-v1b-GGUF | Cuantizaciones estaticas (Q2_K a f16, 1,2-5,5 GB) | GGUF | lfm1.0 (other) | Publica en HuggingFace, 47 descargas, 0 likes |
-| mradermacher/Pallete-2.6B-RP-Reasoning-2609-v1b-i1-GGUF | Cuantizaciones ponderadas con imatrix | GGUF | lfm1.0 (other) | Publica en HuggingFace |
-| Indexnusrefather/Pallete-2.6B-RP-Reasoning-2609-v1b | Pesos originales del modelo | transformers | no disponible en esta informacion | Publica en HuggingFace |
+| mradermacher/Pallete-2.6B-RP-Reasoning-2609-v1b-GGUF | Cuantizaciones estaticas (Q2_K a f16, 1,2-5,5 GB) | GGUF | lfm1.0 (other) | Publica en Hugging Face, 47 descargas, 0 likes |
+| mradermacher/Pallete-2.6B-RP-Reasoning-2609-v1b-i1-GGUF | Cuantizaciones ponderadas con imatrix | GGUF | lfm1.0 (other) | Publica en Hugging Face |
+| Indexnusrefather/Pallete-2.6B-RP-Reasoning-2609-v1b | Pesos originales del modelo | transformers | no disponible en esta informacion | Publica en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -109,12 +109,12 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base (co
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones estaticas): https://huggingface.co/mradermacher/Pallete-2.6B-RP-Reasoning-2609-v1b-GGUF
-- Repositorio HuggingFace (cuantizaciones con imatrix): https://huggingface.co/mradermacher/Pallete-2.6B-RP-Reasoning-2609-v1b-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones estaticas): https://huggingface.co/mradermacher/Pallete-2.6B-RP-Reasoning-2609-v1b-GGUF
+- Repositorio Hugging Face (cuantizaciones con imatrix): https://huggingface.co/mradermacher/Pallete-2.6B-RP-Reasoning-2609-v1b-i1-GGUF
 - Modelo base: https://huggingface.co/Indexnusrefather/Pallete-2.6B-RP-Reasoning-2609-v1b
 - Pagina de resumen y descarga del autor: https://hf.tst.eu/model#Pallete-2.6B-RP-Reasoning-2609-v1b-GGUF
 - README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Grafico comparativo de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
 - Notas de Artefact2 sobre cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
 - Preguntas frecuentes y solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
-- Fichero LICENSE referenciado por la model card: LICENSE (relativo al repositorio de HuggingFace)
+- Fichero LICENSE referenciado por la model card: LICENSE (relativo al repositorio de Hugging Face)

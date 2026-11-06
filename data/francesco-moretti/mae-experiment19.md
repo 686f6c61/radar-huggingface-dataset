@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FRANCESCO-MORETTI/mae-experiment19` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia en PyTorch de un modelo denominado «Mae» orientado a tareas de *matching* (emparejamiento o correspondencia entre entradas). No se trata de un modelo preentrenado ni de una release lista para producción: el propio autor lo describe como un artefacto compacto pensado para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño. El checkpoint `model.safetensors` es una inicialización válida, no un modelo entrenado, y el repositorio no reclama ninguna puntuación de benchmark.
+`FRANCESCO-MORETTI/mae-experiment19` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia en PyTorch de un modelo denominado «Mae» orientado a tareas de *matching* (emparejamiento o correspondencia entre entradas). No se trata de un modelo preentrenado ni de una release lista para producción: el propio autor lo describe como un artefacto compacto pensado para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño. El checkpoint `model.safetensors` es una inicialización válida, no un modelo entrenado, y el repositorio no reclama ninguna puntuación de benchmark.
 
 El dato más llamativo es su tamaño real: 33.088 parámetros totales según el fichero de pesos, una cifra que contrasta con la etiqueta «large» que el autor usa en la model card para referirse a la configuración de arquitectura. Con ese número de parámetros el modelo ocupa del orden de 130 KB en fp32, por lo que su relevancia no está en las capacidades, sino en su valor como plantilla reproducible: configuración de arquitectura en `config.json`, receta de entrenamiento en `training_args.json` y punto de entrada ejecutable en `predict.py`.
 
@@ -66,7 +66,7 @@ No hay modelos comparables identificados en la información proporcionada: el re
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `FRANCESCO-MORETTI/mae-experiment19` | 33.088 | No disponible | Sin benchmarks; checkpoint no entrenado | BSD-3-Clause | HuggingFace, 0 descargas |
+| `FRANCESCO-MORETTI/mae-experiment19` | 33.088 | No disponible | Sin benchmarks; checkpoint no entrenado | BSD-3-Clause | Hugging Face, 0 descargas |
 | MAE original (referencia externa, no verificada aquí) | ~86 M en configuración ViT-B/16 | Imágenes por parches de 16×16 | Resultados publicados por sus autores | No verificada en esta búsqueda | Repositorio de investigación |
 | Otras alternativas de *matching* | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -85,5 +85,5 @@ No hay modelos comparables identificados en la información proporcionada: el re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FRANCESCO-MORETTI/mae-experiment19
+- Modelo en Hugging Face: https://huggingface.co/FRANCESCO-MORETTI/mae-experiment19
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados.

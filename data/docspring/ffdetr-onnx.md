@@ -74,8 +74,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Formato | Tamaño de entrada | Campos detectados (test CommonForms) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ffdetr-onnx (este modelo) | ONNX opset 17 | 1024x1024 | 91,5 % | Apache-2.0 | HuggingFace |
-| jbarrow/FFDetr | PyTorch | 1024x1024 (según argumentos de entrenamiento) | no disponible en la información proporcionada | Apache-2.0 | HuggingFace |
+| ffdetr-onnx (este modelo) | ONNX opset 17 | 1024x1024 | 91,5 % | Apache-2.0 | Hugging Face |
+| jbarrow/FFDetr | PyTorch | 1024x1024 (según argumentos de entrenamiento) | no disponible en la información proporcionada | Apache-2.0 | Hugging Face |
 | RF-DETR Medium por defecto (rfdetr) | PyTorch | 576x576 | 83,5 % con los pesos de FFDetr | Apache-2.0 | Repositorio de Roboflow |
 
 No se dispone de datos comparativos con otras alternativas de detección de campos de formulario (por ejemplo, enfoques basados en LayoutLM o detectores genéricos tipo YOLO) en la información proporcionada.
@@ -94,7 +94,7 @@ No se dispone de datos comparativos con otras alternativas de detección de camp
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/docspring/ffdetr-onnx
+- Página del modelo en Hugging Face: https://huggingface.co/docspring/ffdetr-onnx
 - Modelo base FFDetr: https://huggingface.co/jbarrow/FFDetr
 - Dataset CommonForms: https://huggingface.co/datasets/jbarrow/CommonForms
 - Artículo de CommonForms: https://arxiv.org/abs/2509.16506

@@ -1,7 +1,7 @@
 # Infinix-ai/MOSS-TTS-v1.5
 
 ## Resumen
-MOSS-TTS-v1.5 es un modelo de síntesis de voz (text-to-speech) desarrollado por el equipo Infinix-ai, continuación directa de MOSS-TTS 1.0 del proyecto OpenMOSS. Se distribuye en HuggingFace con licencia Apache 2.0 y un total de 8.489.841.664 parámetros en formato safetensors, lo que lo sitúa en la categoría de modelos TTS de gran tamano orientados a produccion. Su arquitectura, etiquetada como `moss_tts_delay`, emplea codigo personalizado (`custom_code`) sobre el ecosistema Transformers.
+MOSS-TTS-v1.5 es un modelo de síntesis de voz (text-to-speech) desarrollado por el equipo Infinix-ai, continuación directa de MOSS-TTS 1.0 del proyecto OpenMOSS. Se distribuye en Hugging Face con licencia Apache 2.0 y un total de 8.489.841.664 parámetros en formato safetensors, lo que lo sitúa en la categoría de modelos TTS de gran tamano orientados a produccion. Su arquitectura, etiquetada como `moss_tts_delay`, emplea codigo personalizado (`custom_code`) sobre el ecosistema Transformers.
 
 El modelo resuelve el problema de la sintesis multilingue de alta calidad con clonacion de voz zero-shot, generacion de discurso largo, control de duracion a nivel de token y control de pronunciacion mediante Pinyin e IPA. La version 1.5 amplia la cobertura a 31 idiomas, incorpora etiquetas de idioma explicitas que mejoran la calidad en casi todos los idiomas soportados y estabiliza la clonacion de voz, reduciendo la varianza entre generaciones repetidas.
 
@@ -34,7 +34,7 @@ Entre las innovaciones tecnicas destacadas de la version 1.5 figuran: la mejora 
 - Marcadores de pausa explicitos en linea con la sintaxis `[pause X.Ys]`, por ejemplo `[pause 3.2s]`.
 - Etiquetado explicito de idioma para mejorar la calidad de sintesis en cada idioma soportado.
 - Prosodia guiada por puntuacion, con seguimiento mas fiel de pausas en frases largas en la version 1.5.
-- Integracion con el pipeline `text-to-speech` de HuggingFace y con la API de AIStudio.
+- Integracion con el pipeline `text-to-speech` de Hugging Face y con la API de AIStudio.
 
 ## Casos de uso
 - Atencion al cliente automatizada por voz: el modelo puede generar respuestas habladas naturales en espanol y en otros 30 idiomas, con prosodia controlada por puntuacion, lo que permite construir agentes telefonicos o asistentes conversacionales con voces consistentes mediante clonacion zero-shot.
@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 ## Comparativa con modelos similares
 | Modelo | Parametros | Idiomas | Licencia | Clonacion zero-shot | Contexto / discurso largo | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MOSS-TTS-v1.5 | ~8,49 B | 31 | Apache 2.0 | Si | Si (long-form) | HuggingFace, AIStudio, API |
-| MOSS-TTS 1.0 | ~8 B (MossTTSDelay-8B) | 20 | Apache 2.0 (segun repositorio OpenMOSS) | Si | Si | HuggingFace (OpenMOSS-Team) |
+| MOSS-TTS-v1.5 | ~8,49 B | 31 | Apache 2.0 | Si | Si (long-form) | Hugging Face, AIStudio, API |
+| MOSS-TTS 1.0 | ~8 B (MossTTSDelay-8B) | 20 | Apache 2.0 (segun repositorio OpenMOSS) | Si | Si | Hugging Face (OpenMOSS-Team) |
 | Alternativas TTS open source de gran tamano | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa con otros modelos TTS de la misma categoria (por ejemplo, familias tipo XTTS, Bark, Fish Speech o CosyVoice) no se puede establecer con rigor a partir de la informacion proporcionada, ya que no se incluyen sus especificaciones ni resultados de benchmarks comparables.
@@ -75,7 +75,7 @@ La comparacion directa con otros modelos TTS de la misma categoria (por ejemplo,
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia publica de validacion por parte de la comunidad.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Infinix-ai/MOSS-TTS-v1.5
+- Hugging Face: https://huggingface.co/Infinix-ai/MOSS-TTS-v1.5
 - Repositorio GitHub del proyecto: https://github.com/OpenMOSS/MOSS-TTS/tree/main
 - Modelo predecesor MOSS-TTS 1.0: https://huggingface.co/OpenMOSS-Team/MOSS-TTS
 - Coleccion en ModelScope: https://modelscope.cn/collections/OpenMOSS-Team/MOSS-TTS

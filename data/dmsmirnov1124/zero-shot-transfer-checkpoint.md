@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Dmsmirnov1124/zero-shot-transfer-checkpoint` es un repositorio publicado en HuggingFace que, pese a su nombre, no contiene un modelo entrenado con capacidades de generacion. La propia model card lo describe como una nota de investigacion en curso sobre *zero shot transfer*, con motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion. El autor indica explicitamente que no se presentan resultados experimentales, ni codigo liberado, ni un checkpoint entrenado.
+`Dmsmirnov1124/zero-shot-transfer-checkpoint` es un repositorio publicado en Hugging Face que, pese a su nombre, no contiene un modelo entrenado con capacidades de generacion. La propia model card lo describe como una nota de investigacion en curso sobre *zero shot transfer*, con motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion. El autor indica explicitamente que no se presentan resultados experimentales, ni codigo liberado, ni un checkpoint entrenado.
 
-Los unicos artefactos documentados son `paper_notes.md` (artefacto principal) y `README.md`. El repositorio esta etiquetado con `safetensors`, `transformer` y `zero-shot-transfer`, y los metadatos de HuggingFace registran 49.600 parametros reales en safetensors, lo que corresponde a un fichero de pesos de aproximadamente 0,19 MB en precision de 32 bits. El tamano del repositorio aparece redondeado como 0.0 GB, coherente con esa magnitud.
+Los unicos artefactos documentados son `paper_notes.md` (artefacto principal) y `README.md`. El repositorio esta etiquetado con `safetensors`, `transformer` y `zero-shot-transfer`, y los metadatos de Hugging Face registran 49.600 parametros reales en safetensors, lo que corresponde a un fichero de pesos de aproximadamente 0,19 MB en precision de 32 bits. El tamano del repositorio aparece redondeado como 0.0 GB, coherente con esa magnitud.
 
 Su relevancia actual es, por tanto, metodologica y no funcional: sirve como ejemplo de plantilla de nota de investigacion reproducible (alcance, confounders, baselines pareados, comprobaciones de reproducibilidad y modos de fallo), pero no puede utilizarse como modelo de lenguaje en produccion. Se publico el 15 de septiembre de 2026 y no acumula descargas ni valoraciones.
 
@@ -93,7 +93,7 @@ No procede una comparativa funcional: no hay en la informacion disponible ningun
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dmsmirnov1124/zero-shot-transfer-checkpoint
+- Repositorio en Hugging Face: https://huggingface.co/Dmsmirnov1124/zero-shot-transfer-checkpoint
 - Artefacto principal citado por el autor: `paper_notes.md` (dentro del repositorio)
 - Documentacion del repositorio: `README.md` (dentro del repositorio)
 - Paper, blog, repositorio de codigo o demo: no disponible

@@ -85,7 +85,7 @@ No disponible. Este repositorio no es un modelo entrenado, sino notas de investi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lche-ung2/contrastive-learning
+- Hugging Face: https://huggingface.co/lche-ung2/contrastive-learning
 - Contrastive Learning Guide | AI Understanding: https://aiunderstanding.org/learn/contrastive-learning
 - Contrastive Learning: A Comprehensive Guide (Medium): https://medium.com/@juanc.olamendy/contrastive-learning-a-comprehensive-guide-69bf23ca6b77
 - A comprehensive survey on contrastive learning (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0925231224014164

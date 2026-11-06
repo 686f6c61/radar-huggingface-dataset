@@ -2,9 +2,9 @@
 
 ## Resumen
 
-StudyLap-Tutor-v1 es un modelo de lenguaje fine-tuneado a partir de Qwen2.5-7B-Instruct, desarrollado por el usuario boyatilak123 y publicado en HuggingFace. El modelo está diseñado para tareas de tutoría y asistencia educativa, aunque la información pública disponible es muy limitada y no se especifican los datos de entrenamiento ni las capacidades concretas más allá de las heredadas del modelo base. Se distribuye bajo licencia Apache-2.0, lo que permite uso comercial y modificación sin restricciones significativas.
+StudyLap-Tutor-v1 es un modelo de lenguaje fine-tuneado a partir de Qwen2.5-7B-Instruct, desarrollado por el usuario boyatilak123 y publicado en Hugging Face. El modelo está diseñado para tareas de tutoría y asistencia educativa, aunque la información pública disponible es muy limitada y no se especifican los datos de entrenamiento ni las capacidades concretas más allá de las heredadas del modelo base. Se distribuye bajo licencia Apache-2.0, lo que permite uso comercial y modificación sin restricciones significativas.
 
-El modelo tiene 7.615.616.512 parámetros (7,6 mil millones), un tamaño típico para inferencia en GPUs de consumo con cuantización. Fue entrenado con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un proceso de fine-tuning eficiente. Aunque la model card no detalla el dataset ni el método de entrenamiento (RLHF, DPO, etc.), el hecho de partir de una versión instruct de Qwen2.5 sugiere que conserva las capacidades de razonamiento, generación de texto y seguimiento de instrucciones del modelo original.
+El modelo tiene 7.615.616.512 parámetros (7,6 mil millones), un tamaño típico para inferencia en GPUs de consumo con cuantización. Fue entrenado con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un proceso de fine-tuning eficiente. Aunque la model card no detalla el dataset ni el método de entrenamiento (RLHF, DPO, etc.), el hecho de partir de una versión instruct de Qwen2.5 sugiere que conserva las capacidades de razonamiento, generación de texto y seguimiento de instrucciones del modelo original.
 
 La relevancia de este modelo radica en su potencial para aplicaciones educativas, como tutorías personalizadas o generación de material de estudio, aunque no hay evidencia pública de benchmarks ni de casos de uso validados. Al ser un fine-tuning de un modelo conocido, puede servir como punto de partida para desarrolladores que buscan una base especializada en educación sin partir de cero.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su potencial para aplicaciones educativas
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning de Qwen2.5-7B-Instruct, que a su vez es un transformer decoder-only con atención de múltiples cabezas y normalización RMSNorm. La arquitectura base de Qwen2.5 incluye 28 capas, 28 cabezas de atención y una dimensión oculta de 3584, aunque estos detalles no se confirman en la model card del fine-tuning. El entrenamiento se realizó con Unsloth, una librería que optimiza el fine-tuning mediante técnicas como LoRA o QLoRA, y con la librería TRL de HuggingFace, que proporciona utilidades para entrenamiento con refuerzo (RLHF, DPO, etc.). No se especifica el dataset utilizado, el número de tokens de entrenamiento ni el método exacto de alineación. Dado que el modelo base es una versión instruct, es probable que el fine-tuning haya utilizado un conjunto de datos de tutoría o diálogo educativo, pero esto no está documentado.
+El modelo es un fine-tuning de Qwen2.5-7B-Instruct, que a su vez es un transformer decoder-only con atención de múltiples cabezas y normalización RMSNorm. La arquitectura base de Qwen2.5 incluye 28 capas, 28 cabezas de atención y una dimensión oculta de 3584, aunque estos detalles no se confirman en la model card del fine-tuning. El entrenamiento se realizó con Unsloth, una librería que optimiza el fine-tuning mediante técnicas como LoRA o QLoRA, y con la librería TRL de Hugging Face, que proporciona utilidades para entrenamiento con refuerzo (RLHF, DPO, etc.). No se especifica el dataset utilizado, el número de tokens de entrenamiento ni el método exacto de alineación. Dado que el modelo base es una versión instruct, es probable que el fine-tuning haya utilizado un conjunto de datos de tutoría o diálogo educativo, pero esto no está documentado.
 
 ## Capacidades
 
@@ -52,17 +52,17 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: para un modelo de 7,6B parámetros en precisión completa (fp16), se necesitan aproximadamente 15 GB de VRAM. Con cuantización de 4 bits (como la usada en el entrenamiento), la VRAM requerida baja a unos 4-5 GB, lo que permite ejecutarlo en GPUs de consumo como la RTX 3060 o superior.
 - GPU recomendadas: RTX 3090, RTX 4090, A100, H100 para inferencia sin cuantizar; RTX 3060, RTX 4060 o superiores con cuantización.
 - Compatibilidad con consumer GPU: sí, especialmente con cuantización GGUF o AWQ.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference), Transformers de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference), Transformers de Hugging Face.
 - Latencia y throughput: no disponible en la información proporcionada; dependerá del hardware y la cuantización.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| StudyLap-Tutor-v1 | 7,6B | no disponible | Apache-2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct (base) | 7,6B | 128k | Apache-2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | 7,3B | 32k | Apache-2.0 | HuggingFace |
+| StudyLap-Tutor-v1 | 7,6B | no disponible | Apache-2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct (base) | 7,6B | 128k | Apache-2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | 7,3B | 32k | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. El modelo base Qwen2.5-7B-Instruct tiene resultados publicados en benchmarks estándar, pero este fine-tuning no los reporta. La comparativa se limita a características generales.
 
@@ -77,6 +77,6 @@ No se dispone de datos de rendimiento comparativo. El modelo base Qwen2.5-7B-Ins
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/boyatilak123/StudyLap-Tutor-v1
+- Hugging Face: https://huggingface.co/boyatilak123/StudyLap-Tutor-v1
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl

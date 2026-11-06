@@ -2,7 +2,7 @@
 
 ## Resumen
 
-parking-gemma-270m-v2-onnx es un modelo ligero de generación de texto creado por el usuario kimrahui y publicado en HuggingFace. Se trata de un ajuste fino (LoRA) del modelo google/gemma-3-270m-it, la versión instruida de 270 millones de parámetros de la familia Gemma 3 de Google, exportado a formato ONNX en precisión fp16 para su ejecución en navegador mediante transformers.js. El propósito del modelo es muy específico: extraer, a partir de preguntas de conductores, los criterios de búsqueda de aparcamiento en formato JSON estructurado.
+parking-gemma-270m-v2-onnx es un modelo ligero de generación de texto creado por el usuario kimrahui y publicado en Hugging Face. Se trata de un ajuste fino (LoRA) del modelo google/gemma-3-270m-it, la versión instruida de 270 millones de parámetros de la familia Gemma 3 de Google, exportado a formato ONNX en precisión fp16 para su ejecución en navegador mediante transformers.js. El propósito del modelo es muy específico: extraer, a partir de preguntas de conductores, los criterios de búsqueda de aparcamiento en formato JSON estructurado.
 
 El interés de esta ficha reside en que es un ejemplo representativo de los modelos "nano" de la familia Gemma 3: redes transformer compactas, capaces de ejecutarse íntegramente en el cliente (en el navegador, sin servidor) gracias a ONNX y WebAssembly/WebGPU. Su autor reporta una tasa de coincidencia exacta del 67,2 % en un conjunto de evaluación de 131 preguntas, con precisión idéntica a la versión fp32.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 ## Requisitos de hardware
 
-- El repositorio ocupa 3,0 GB en HuggingFace; el peso ONNX fp16 de un modelo de 270M de parametros deberia rondar los 500-600 MB, por lo que la cifra del repo puede incluir multiples variantes o archivos adicionales (dato no confirmado en la model card).
+- El repositorio ocupa 3,0 GB en Hugging Face; el peso ONNX fp16 de un modelo de 270M de parametros deberia rondar los 500-600 MB, por lo que la cifra del repo puede incluir multiples variantes o archivos adicionales (dato no confirmado en la model card).
 - No requiere GPU dedicada: esta pensado para ejecutarse en navegador mediante transformers.js sobre WebGPU o WebAssembly, en CPU de escritorio o movil.
 - En servidor, cualquier GPU moderna (incluso una RTX 3060 con 8-12 GB de VRAM) ejecutaria el modelo con holgura; el tamano no justifica hardware tipo A100/H100.
 - Despliegue recomendado: transformers.js en cliente. Otras vias posibles (Ollama, llama.cpp, vLLM, TGI) requeririan pesos en GGUF o safetensors, no publicados en este repositorio.
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 | kimrahui/parking-gemma-270m-v2-onnx | 270M (LoRA) | ONNX fp16 | Extraccion JSON de parking, en navegador | Gemma |
 | google/gemma-3-270m-it (base) | 270M | safetensors | Modelo instruido generalista compacto | Gemma |
 | Qwen2.5-0.5B-Instruct | 500M | safetensors / GGUF | Modelo instruido generalista compacto | Apache 2.0 |
-| SmolLM2-360M-Instruct (HuggingFace) | 360M | safetensors / GGUF | Modelo instruido generalista compacto | Apache 2.0 |
+| SmolLM2-360M-Instruct (Hugging Face) | 360M | safetensors / GGUF | Modelo instruido generalista compacto | Apache 2.0 |
 
 Respecto a las alternativas, parking-gemma-270m-v2-onnx destaca por su despliegue nativo en navegador (ONNX/transformers.js) y su afinado especifico en extraccion estructurada, mientras que Qwen2.5-0.5B y SmolLM2-360M ofrecen licencias permisivas (Apache 2.0) y un ecosistema mas amplio de cuantizaciones, a costa de no estar ajustados para esta tarea concreta.
 
@@ -85,6 +85,6 @@ Respecto a las alternativas, parking-gemma-270m-v2-onnx destaca por su despliegu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kimrahui/parking-gemma-270m-v2-onnx
+- Modelo en Hugging Face: https://huggingface.co/kimrahui/parking-gemma-270m-v2-onnx
 - Modelo base: https://huggingface.co/google/gemma-3-270m-it
 - Terminos de licencia Gemma: https://ai.google.dev/gemma/terms

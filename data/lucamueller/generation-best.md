@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lucamueller/generation-best es un repositorio experimental publicado en HuggingFace que contiene un esqueleto de código CLIP orientado a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint con resultados de referencia: el propio autor lo describe como una base de código mínima ("tiny") pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests), no un modelo con pesos aprendidos.
+Lucamueller/generation-best es un repositorio experimental publicado en Hugging Face que contiene un esqueleto de código CLIP orientado a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint con resultados de referencia: el propio autor lo describe como una base de código mínima ("tiny") pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests), no un modelo con pesos aprendidos.
 
 El modelo tiene 49.600 parámetros totales, según los metadatos de safetensors, lo que lo sitúa varios órdenes de magnitud por debajo de cualquier CLIP de uso práctico. La arquitectura declarada combina atención estándar con fusión por co-atención, activación gelu-tanh y normalización GroupNorm. El repositorio incluye `config.json` con la configuración de arquitectura, `training_args.json` con la receta de experimento por defecto (AdamW con schedule por pasos) y `predict.py` como artefacto principal ejecutable.
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada y muy específica: sirve como plantilla reprodu
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (repo con `predict.py`, `config.json`, `training_args.json`) |
 
-Otros datos del repositorio: escala declarada "tiny", tamaño del repo 0,0 GB, 0 descargas y 0 likes en el momento de la consulta, pipeline de HuggingFace no disponible.
+Otros datos del repositorio: escala declarada "tiny", tamaño del repo 0,0 GB, 0 descargas y 0 likes en el momento de la consulta, pipeline de Hugging Face no disponible.
 
 ## Arquitectura y entrenamiento
 
@@ -72,10 +72,10 @@ La comparación se establece con CLIP y alternativas multimodales consolidadas. 
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lucamueller/generation-best | 49.600 | no disponible | No (checkpoint de inicialización) | apache-2.0 | HuggingFace, 0 descargas |
-| OpenAI CLIP ViT-B/32 | ~151 M (aproximado) | 77 tokens de texto (aproximado) | Sí | MIT | HuggingFace / OpenAI |
-| OpenAI CLIP ViT-L/14 | ~428 M (aproximado) | 77 tokens de texto (aproximado) | Sí | MIT | HuggingFace / OpenAI |
-| SigLIP base patch16-224 | ~203 M (aproximado) | no disponible | Sí | Apache-2.0 | HuggingFace |
+| Lucamueller/generation-best | 49.600 | no disponible | No (checkpoint de inicialización) | apache-2.0 | Hugging Face, 0 descargas |
+| OpenAI CLIP ViT-B/32 | ~151 M (aproximado) | 77 tokens de texto (aproximado) | Sí | MIT | Hugging Face / OpenAI |
+| OpenAI CLIP ViT-L/14 | ~428 M (aproximado) | 77 tokens de texto (aproximado) | Sí | MIT | Hugging Face / OpenAI |
+| SigLIP base patch16-224 | ~203 M (aproximado) | no disponible | Sí | Apache-2.0 | Hugging Face |
 
 La diferencia fundamental no es de tamaño relativo, sino de naturaleza: los tres modelos de referencia son checkpoints entrenados con capacidades de representación utilizables, mientras que Lucamueller/generation-best es un esqueleto de código con inicialización aleatoria. No se dispone de datos de benchmarks que permitan una comparación cuantitativa.
 
@@ -87,11 +87,11 @@ La diferencia fundamental no es de tamaño relativo, sino de naturaleza: los tre
 - Sesgos conocidos: no disponibles. Al no existir corpus de entrenamiento documentado, no se puede caracterizar sesgo alguno.
 - Limitaciones de contexto e idioma: no disponibles; no se especifica ventana de contexto ni cobertura idiomática. El tag `region:us` en los metadatos no debe interpretarse como soporte de idioma.
 - Restricciones de licencia: el código se publica bajo apache-2.0, lo que permite uso comercial y modificación con atribución y conservación del aviso de licencia. El propio autor advierte que deben revisarse por separado los términos de los datos de origen si el repositorio se usa con datasets externos.
-- Caveat para producción: no debe desplegarse como componente de producto. Las APIs de carga automática de HuggingFace requieren un adaptador explícito, y el flujo previsto es la ejecución manual de `predict.py`.
+- Caveat para producción: no debe desplegarse como componente de producto. Las APIs de carga automática de Hugging Face requieren un adaptador explícito, y el flujo previsto es la ejecución manual de `predict.py`.
 - Advertencia sobre documentación: si en el futuro se publica un checkpoint entrenado, el autor indica que sus resultados deben documentarse por separado de los valores por defecto de este repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lucamueller/generation-best
+- Modelo en Hugging Face: https://huggingface.co/Lucamueller/generation-best
 - Resultados de búsqueda web: no relevantes para el modelo (los enlaces devueltos corresponden a un servicio de citas en línea y no guardan relación con esta ficha)
 - Paper, blog, repositorio de código o demo adicionales: no disponibles en la información proporcionada

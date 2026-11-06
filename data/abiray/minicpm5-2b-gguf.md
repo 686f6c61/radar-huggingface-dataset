@@ -68,7 +68,7 @@ No se dispone de datos suficientes en la información proporcionada para una com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Abiray/MiniCPM5-2B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Abiray/MiniCPM5-2B-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Repositorio oficial GGUF: https://huggingface.co/openbmb/MiniCPM5-2B-GGUF
 - Informe técnico (arXiv): https://arxiv.org/pdf/2506.07900

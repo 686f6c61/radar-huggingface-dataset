@@ -69,7 +69,7 @@ No disponible. No se han identificado modelos comparables públicos en la inform
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/SimpleTuner/open-rvq-encoder-minimax-music-3-41m-v1-wip)
+- [Modelo en Hugging Face](https://huggingface.co/SimpleTuner/open-rvq-encoder-minimax-music-3-41m-v1-wip)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/bghira/minimax-music3-rvq-reverse-distillation)
 - [Repositorio SimpleTuner en GitHub](https://github.com/bghira/SimpleTuner)
 - [Documentación de MiniMax Music 3 Quickstart](http://docs.simpletuner.io/quickstart/MINIMAX_MUSIC/)

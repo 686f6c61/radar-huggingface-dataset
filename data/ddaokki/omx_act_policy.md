@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ddaokki/omx_act_policy` es una política de control robótico entrenada mediante aprendizaje por imitación con el método ACT (Action Chunking with Transformers), publicado por Zhao et al. en 2023 (arXiv:2304.13705). No es un modelo de lenguaje: es una policy que, a partir de observaciones visuales y del estado del robot, predice fragmentos (chunks) de acciones motoras en lugar de pasos individuales, lo que reduce el error de composición y mejora las tasas de éxito en tareas de manipulación. El autor es el usuario de HuggingFace `ddaokki`, y el artefacto se ha generado y subido con la librería LeRobot de HuggingFace.
+`ddaokki/omx_act_policy` es una política de control robótico entrenada mediante aprendizaje por imitación con el método ACT (Action Chunking with Transformers), publicado por Zhao et al. en 2023 (arXiv:2304.13705). No es un modelo de lenguaje: es una policy que, a partir de observaciones visuales y del estado del robot, predice fragmentos (chunks) de acciones motoras en lugar de pasos individuales, lo que reduce el error de composición y mejora las tasas de éxito en tareas de manipulación. El autor es el usuario de Hugging Face `ddaokki`, y el artefacto se ha generado y subido con la librería LeRobot de Hugging Face.
 
 El modelo tiene 51.668.614 parámetros (unos 51,7 millones) almacenados en formato safetensors, con un tamaño de repositorio de 0,2 GB, lo que lo sitúa en la gama ligera y apto para inferencia en GPU de consumo. Se ha entrenado sobre el dataset propio `ddaokki/pick_doll_cup_v4`, lo que sugiere una tarea concreta de recogida de objetos (un vaso o taza), aunque la model card no detalla la composición del dataset ni el número de episodios.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es acotada: se trata de un checkpoint de investigaci
 
 ACT es un método de aprendizaje por imitación que combina un transformer con un autoencoder variacional condicional (CVAE). El modelo toma como entrada observaciones (típicamente imágenes de una o varias cámaras más el estado de las articulaciones) y predice un chunk de `k` acciones futuras de forma simultánea, en lugar de una sola acción por paso. Esta predicción por chunks mitiga el problema de la varianza temporal y la acumulación de errores típica de las políticas que actúan paso a paso, y es habitual que consiga tasas de éxito altas con pocas demostraciones teleoperadas.
 
-Según la información disponible, esta policy se ha entrenado y publicado con LeRobot, la librería de HuggingFace para aprendizaje por imitación en robótica. No se especifican en la model card el número de tokens ni de episodios de entrenamiento, la composición exacta del dataset `ddaokki/pick_doll_cup_v4`, la resolución de las cámaras ni el número de pasos de optimización. Tampoco se documenta si se empleó regularización adicional, aumento de datos o un esquema de decodificación especulativa; ACT no usa decodificación especulativa por diseño.
+Según la información disponible, esta policy se ha entrenado y publicado con LeRobot, la librería de Hugging Face para aprendizaje por imitación en robótica. No se especifican en la model card el número de tokens ni de episodios de entrenamiento, la composición exacta del dataset `ddaokki/pick_doll_cup_v4`, la resolución de las cámaras ni el número de pasos de optimización. Tampoco se documenta si se empleó regularización adicional, aumento de datos o un esquema de decodificación especulativa; ACT no usa decodificación especulativa por diseño.
 
 ## Capacidades
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ddaokki/omx_act_policy | 51,7 M | ACT (imitation learning) | no disponible | apache-2.0 | HuggingFace (0 descargas) |
+| ddaokki/omx_act_policy | 51,7 M | ACT (imitation learning) | no disponible | apache-2.0 | Hugging Face (0 descargas) |
 | ACT original (Zhao et al., 2023) | no disponible | ACT (imitation learning) | chunk de acciones | no disponible | paper arXiv:2304.13705 |
 | Diffusion Policy | no disponible | Diffusion policy (imitation learning) | chunk de acciones | no disponible | referencia de la literatura |
-| Otras policies LeRobot | no disponible | ACT u otras | no disponible | variable | HuggingFace Hub |
+| Otras policies LeRobot | no disponible | ACT u otras | no disponible | variable | Hugging Face Hub |
 
 No se dispone de métricas comparativas publicadas en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de métricas comparativas publicadas en la información proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ddaokki/omx_act_policy
+- Hugging Face: https://huggingface.co/ddaokki/omx_act_policy
 - Dataset asociado: https://huggingface.co/datasets/ddaokki/pick_doll_cup_v4
 - Paper de ACT (arXiv:2304.13705): https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

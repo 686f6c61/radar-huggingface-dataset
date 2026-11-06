@@ -89,7 +89,7 @@ Nota: los datos de los modelos comparables se incluyen a titulo orientativo y no
 
 ## Enlaces
 
-- Repositorio evaluado en HuggingFace: https://huggingface.co/ArchiveStudio/Phi-4-reasoning-plus
+- Repositorio evaluado en Hugging Face: https://huggingface.co/ArchiveStudio/Phi-4-reasoning-plus
 - Informe tecnico (paper, arXiv 2504.21318): https://huggingface.co/papers/2504.21318
 - Licencia referenciada en la model card: https://huggingface.co/microsoft/Phi-4-reasoning-plus/resolve/main/LICENSE
 - Modelo base: https://huggingface.co/microsoft/phi-4

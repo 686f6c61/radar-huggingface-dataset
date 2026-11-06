@@ -65,12 +65,12 @@ No se han publicado resultados de benchmarks concretos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,78B (denso) | 32.768 tokens | MIT | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-7B | 7B aprox. (denso) | 32.768 tokens | MIT | HuggingFace |
-| DeepSeek-R1-Distill-Llama-8B | 8B aprox. (denso) | 32.768 tokens | MIT | HuggingFace |
-| Qwen2.5-1.5B (base, sin destilar) | 1,5B aprox. (denso) | 32.768 tokens | Apache 2.0 | HuggingFace |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,78B (denso) | 32.768 tokens | MIT | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-7B | 7B aprox. (denso) | 32.768 tokens | MIT | Hugging Face |
+| DeepSeek-R1-Distill-Llama-8B | 8B aprox. (denso) | 32.768 tokens | MIT | Hugging Face |
+| Qwen2.5-1.5B (base, sin destilar) | 1,5B aprox. (denso) | 32.768 tokens | Apache 2.0 | Hugging Face |
 
-Todos los modelos DeepSeek-R1 destilados comparten licencia MIT y estan disponibles en HuggingFace. Las cifras exactas de parametros, contexto y licencia de las alternativas se basan en la familia Qwen2.5 y Llama3, pero no se detallan completamente en la informacion proporcionada; verificar en cada repositorio antes de usarlos en produccion.
+Todos los modelos DeepSeek-R1 destilados comparten licencia MIT y estan disponibles en Hugging Face. Las cifras exactas de parametros, contexto y licencia de las alternativas se basan en la familia Qwen2.5 y Llama3, pero no se detallan completamente en la informacion proporcionada; verificar en cada repositorio antes de usarlos en produccion.
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ Todos los modelos DeepSeek-R1 destilados comparten licencia MIT y estan disponib
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
+- Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Paper DeepSeek-R1 (arXiv:2501.12948): https://arxiv.org/abs/2501.12948
 - PDF del paper: https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf
 - Repositorio GitHub DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1

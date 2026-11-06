@@ -72,8 +72,8 @@ No se dispone de datos de benchmarks comparativos con otros modelos multimodales
 
 ## Enlaces
 
-- HuggingFace del artefacto MLX: https://huggingface.co/mlx-community/SenseNova-U1.5-8B-MoT-8bit
-- Modelo original en HuggingFace: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
+- Hugging Face del artefacto MLX: https://huggingface.co/mlx-community/SenseNova-U1.5-8B-MoT-8bit
+- Modelo original en Hugging Face: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
 - Modelo en ModelScope: https://www.modelscope.cn/models/SenseNova/SenseNova-U1.5-8B-MoT
 - Paper del modelo: https://arxiv.org/abs/2605.12500
 - Repositorio de referencia (OpenSenseNova): https://github.com/OpenSenseNova/SenseNova-U1

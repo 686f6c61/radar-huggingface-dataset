@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Code Reviewer LoRA es un adaptador LoRA (Low-Rank Adaptation) entrenado con QLoRA sobre Llama 3.2 3B Instruct, especializado en la revision automatica de codigo Python. Lo publica el usuario rahilfahim en HuggingFace bajo licencia MIT y su proposito es generar revisiones de codigo estructuradas con tres niveles de severidad: Critical, Warning e Info. No es un modelo completo, sino un adaptador de 88 MB que se carga sobre el modelo base cuantizado a 4 bits.
+Code Reviewer LoRA es un adaptador LoRA (Low-Rank Adaptation) entrenado con QLoRA sobre Llama 3.2 3B Instruct, especializado en la revision automatica de codigo Python. Lo publica el usuario rahilfahim en Hugging Face bajo licencia MIT y su proposito es generar revisiones de codigo estructuradas con tres niveles de severidad: Critical, Warning e Info. No es un modelo completo, sino un adaptador de 88 MB que se carga sobre el modelo base cuantizado a 4 bits.
 
 El adaptador se entreno con Unsloth sobre Google Colab con una T4, con rango 16, alpha 16 y 500 ejemplos de entrenamiento, en aproximadamente 2,5 minutos, alcanzando una perdida final de 0,11. Su tamano reducido y su formato PEFT lo hacen muy ligero de distribuir, aunque su superficie de evaluacion publicada es practicamente nula: no hay benchmarks ni datos de validacion en la informacion disponible.
 
@@ -54,7 +54,7 @@ No se describe ninguna innovacion tecnica propia: la unica pieza diferencial es 
 - Filtro previo en pipelines de calidad de codigo: colocado antes de herramientas como flake8, ruff o mypy, puede senalar problemas semanticos que los analizadores estaticos no cubren, dejando que estos ultimos se encarguen de lo puramente sintactico y de estilo.
 - Prototipado de asistentes de revision personalizados: al ser un adaptador con licencia MIT y 88 MB, sirve como base para experimentar con nuevos datasets de revision y comparar tecnicas de ajuste sin coste elevado de infraestructura.
 - Auditoria de fragmentos heredados: para porciones cortas de codigo legado en Python, el modelo puede generar una lista de riesgos potenciales que ayude a priorizar que modulos merecen una revision manual detallada.
-- Demo interactiva: desplegado en un Space de HuggingFace con el modelo base cuantizado, permite que cualquier persona pruebe el flujo de revision sin instalar nada en local.
+- Demo interactiva: desplegado en un Space de Hugging Face con el modelo base cuantizado, permite que cualquier persona pruebe el flujo de revision sin instalar nada en local.
 
 ## Benchmarks y rendimiento
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad | Rendimiento en revision de codigo |
 |---|---|---|---|---|---|---|
-| rahilfahim/code-reviewer-lora | 88 MB de adaptador sobre Llama 3.2 3B | 2.048 en el ejemplo; 128.000 en el base | Adaptador LoRA sobre instruct generalista | MIT (adaptador) / Llama 3.2 Community License (base) | HuggingFace, 24 descargas, 0 likes | No disponible |
+| rahilfahim/code-reviewer-lora | 88 MB de adaptador sobre Llama 3.2 3B | 2.048 en el ejemplo; 128.000 en el base | Adaptador LoRA sobre instruct generalista | MIT (adaptador) / Llama 3.2 Community License (base) | Hugging Face, 24 descargas, 0 likes | No disponible |
 | meta-llama/Llama-3.2-3B-Instruct | 3,21 mil millones | 128.000 | Modelo instruct generalista | Llama 3.2 Community License | Ampliamente disponible | No disponible; no esta especializado en revision de codigo |
 | Qwen2.5-Coder-7B-Instruct | 7,6 mil millones | 32.768 (extensible a 131.072 con YaRN) | Modelo de codigo instruct | Apache 2.0 | Ampliamente disponible | No disponible en esta ficha |
 | CodeLlama-7B-Instruct | 6,74 mil millones | 16.384 (variantes de hasta 100.000) | Modelo de codigo instruct | Llama 2 Community License | Ampliamente disponible | No disponible en esta ficha |
@@ -95,9 +95,9 @@ La comparacion relevante es estructural: este adaptador no compite en capacidad 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rahilfahim/code-reviewer-lora
+- Modelo en Hugging Face: https://huggingface.co/rahilfahim/code-reviewer-lora
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-bnb-4bit
 - Repositorio del proyecto en GitHub: https://github.com/fantasticfahim/code-reviewer-finetuner
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/rahilfahim/code-reviewer-demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/rahilfahim/code-reviewer-demo
 - Resultados de benchmark anunciados: https://github.com/fantasticfahim/code-reviewer-finetuner/blob/main/docs/benchmark_results.json
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

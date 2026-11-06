@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `goal612/dendritex-stages-v3-p97` es un modelo multimodal de tipo imagen-texto a texto, desarrollado por el usuario goal612 y publicado en HuggingFace con acceso restringido (gated). Según las etiquetas asociadas, emplea una arquitectura basada en Qwen3.5 con mezcla de expertos (MoE), lo que sugiere un diseño orientado a eficiencia computacional y escalabilidad. El modelo cuenta con aproximadamente 35.950 millones de parámetros totales y un tamaño de repositorio de 71,9 GB, lo que indica pesos en precisión media (probablemente fp16 o bf16). Su licencia Apache 2.0 permite uso comercial y modificación, aunque el acceso restringido obliga a aceptar condiciones adicionales antes de la descarga.
+El modelo `goal612/dendritex-stages-v3-p97` es un modelo multimodal de tipo imagen-texto a texto, desarrollado por el usuario goal612 y publicado en Hugging Face con acceso restringido (gated). Según las etiquetas asociadas, emplea una arquitectura basada en Qwen3.5 con mezcla de expertos (MoE), lo que sugiere un diseño orientado a eficiencia computacional y escalabilidad. El modelo cuenta con aproximadamente 35.950 millones de parámetros totales y un tamaño de repositorio de 71,9 GB, lo que indica pesos en precisión media (probablemente fp16 o bf16). Su licencia Apache 2.0 permite uso comercial y modificación, aunque el acceso restringido obliga a aceptar condiciones adicionales antes de la descarga.
 
 La relevancia de este modelo radica en su naturaleza multimodal (procesa imágenes y texto) combinada con una arquitectura MoE, una tendencia actual en modelos de gran escala que busca reducir el coste de inferencia manteniendo capacidades amplias. Sin embargo, al ser un modelo reciente (creado en agosto de 2026) y con escasa documentación pública, su adopción en producción requiere una evaluación cuidadosa de sus capacidades reales y limitaciones, que aún no han sido publicadas de forma detallada.
 
@@ -59,7 +59,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones específicas en HuggingFace antes de su uso, lo que puede limitar su adopción.
+- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones específicas en Hugging Face antes de su uso, lo que puede limitar su adopción.
 - Documentación insuficiente: no se han publicado detalles sobre arquitectura, entrenamiento, datos, idiomas o rendimiento, lo que dificulta evaluar su idoneidad para tareas concretas.
 - Riesgo de alucinación y sesgos: al ser un modelo de lenguaje, puede generar información falsa o reflejar sesgos presentes en sus datos de entrenamiento, pero al desconocer estos datos no se puede cuantificar el riesgo.
 - Compatibilidad y formato: solo se ofrecen pesos en safetensors; no hay versiones cuantizadas ni conversiones a GGUF, lo que limita su despliegue en entornos con recursos reducidos.
@@ -68,6 +68,6 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/goal612/dendritex-stages-v3-p97
+- Modelo en Hugging Face: https://huggingface.co/goal612/dendritex-stages-v3-p97
 - Perfil del autor: https://huggingface.co/goal612 (inferido, no confirmado)
 - Organización Dendritex: https://huggingface.co/Dendritex (aparece en resultados de búsqueda, pero no se confirma relación con este modelo)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Microduck-roulade es una política de aprendizaje por refuerzo (reinforcement learning) publicada por el usuario witcheer en HuggingFace. No es un modelo de lenguaje: se trata de un controlador neuronal para el robot cuadrúpedo Microduck de Pollen Robotics, entrenado para ejecutar una voltereta hacia delante (forward roll) desde una posición de pie y volver a la postura erguida. El modelo se distribuye en formato ONNX e ingiere un vector de observación de 61 dimensiones y emite 14 acciones a 50 Hz, con un episodio de 2,0 segundos de duración.
+Microduck-roulade es una política de aprendizaje por refuerzo (reinforcement learning) publicada por el usuario witcheer en Hugging Face. No es un modelo de lenguaje: se trata de un controlador neuronal para el robot cuadrúpedo Microduck de Pollen Robotics, entrenado para ejecutar una voltereta hacia delante (forward roll) desde una posición de pie y volver a la postura erguida. El modelo se distribuye en formato ONNX e ingiere un vector de observación de 61 dimensiones y emite 14 acciones a 50 Hz, con un episodio de 2,0 segundos de duración.
 
 El entrenamiento se realizó exclusivamente en simulación con mjlab sobre MuJoCo Warp, a lo largo de 10.000 iteraciones con 4.096 entornos paralelos durante 173 minutos en una única RTX 5090. La model card indica explícitamente que la política todavía no se ha probado en un Microduck real. El autor la presenta como el nivel 6 de un árbol de habilidades sim-first, tras niveles anteriores de caminar, levantarse, sentarse y levantarse, caminar en terreno irregular y caminar con recuperación.
 
@@ -23,7 +23,7 @@ Su relevancia es acotada pero concreta: es un ejemplo reproducible de un pipelin
 | Tarea | Voltereta hacia delante desde parado (forward roll) |
 | Duracion del episodio | 2,0 s; mantener el botón encadena otra ejecución |
 | Entorno de observacion/accion | 61-D observación, 14 acciones, 50 Hz |
-| Tamano del repositorio | 0,0 GB (redondeado en HuggingFace) |
+| Tamano del repositorio | 0,0 GB (redondeado en Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-09-21 / 2026-09-21 |
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible (no ap
 ## Requisitos de hardware
 
 - Entrenamiento reportado: una unica RTX 5090, 173 minutos para 10.000 iteraciones con 4.096 entornos paralelos.
-- Inferencia: no se publican cifras de VRAM, latencia ni throughput. El repositorio ocupa 0,0 GB en HuggingFace, lo que sugiere un artefacto de muy bajo peso, pero no se confirma ninguna medida.
+- Inferencia: no se publican cifras de VRAM, latencia ni throughput. El repositorio ocupa 0,0 GB en Hugging Face, lo que sugiere un artefacto de muy bajo peso, pero no se confirma ninguna medida.
 - GPU recomendadas para inferencia: no disponibles en la informacion proporcionada. Para replay o analisis con mjlab, la model card cita `play` sobre un unico entorno, aunque no especifica el hardware minimo.
 - Encaje en GPU de consumo: no confirmado. Dado el tamano aparente del `policy.onnx`, es plausible su ejecucion en CPU o en GPU de gama baja, pero no hay datos publicados que lo respalden.
 - Opciones de despliegue: ONNX Runtime (implicito por el formato) y el daemon `robotctl` del Microduck mediante `robotctl policy add roulade witcheer/microduck-roulade` seguido de `robotctl robot do roulade`. Herramientas como vLLM, llama.cpp, Ollama o TGI no aplican a este artefacto.
@@ -102,7 +102,7 @@ No disponible. La informacion proporcionada no incluye datos de otras politicas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/witcheer/microduck-roulade
+- Modelo en Hugging Face: https://huggingface.co/witcheer/microduck-roulade
 - Repositorio del robot Microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento: `pollen-robotics/microduck_rl` (rama `develop`, commit `53b8971b6`)
 - Clip comparativo iteracion 0 vs 10.000 a media velocidad: https://x.com/witcheer/status/2102076057411031472

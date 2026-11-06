@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-FP8-yarn512k es una variante cuantizada en FP8 del modelo Qwen3.8-27B de Alibaba Qwen, publicada por el usuario Abobus1488 en HuggingFace. Se trata de un espejo bit a bit del checkpoint oficial Qwen/Qwen3.8-27B-FP8, con una unica modificacion: el parametro `rope_parameters` del `text_config` se ha ajustado a un factor YaRN de 2.0. Esta modificacion funciona como solución alternativa (workaround) para el problema documentado en el issue #58080 de vLLM, relacionado con el contexto del borrador MTP (multi-token prediction) en decodificacion especulativa.
+Qwen3.8-27B-FP8-yarn512k es una variante cuantizada en FP8 del modelo Qwen3.8-27B de Alibaba Qwen, publicada por el usuario Abobus1488 en Hugging Face. Se trata de un espejo bit a bit del checkpoint oficial Qwen/Qwen3.8-27B-FP8, con una unica modificacion: el parametro `rope_parameters` del `text_config` se ha ajustado a un factor YaRN de 2.0. Esta modificacion funciona como solución alternativa (workaround) para el problema documentado en el issue #58080 de vLLM, relacionado con el contexto del borrador MTP (multi-token prediction) en decodificacion especulativa.
 
 El modelo base es un transformer multimodal de tipo image-text-to-text, con 27.781.427.952 parametros totales (aproximadamente 27,8 mil millones) y pesos en formato safetensors con cuantizacion FP8. El repositorio ocupa 30,9 GB y esta etiquetado con licencia Apache-2.0, lo que permite uso comercial sin restricciones adicionales. La arquitectura declarada en los tags es `qwen3_5`, lo que sugiere una generacion posterior de la familia Qwen3 orientada a cargas multimodales y conversacionales.
 
@@ -43,7 +43,7 @@ Esta modificacion no altera los pesos ni el entrenamiento: se aplica unicamente 
 - Despliegue en vLLM con decodificacion especulativa MTP: el ajuste de YaRN resuelve el problema de contexto del borrador MTP documentado en vLLM #58080, por lo que el modelo es adecuado para servir Qwen3.8-27B-FP8 con aceleracion especulativa sin parchear manualmente la configuracion.
 - Inferencia multimodal en produccion: al ser un modelo image-text-to-text, puede emplearse para describir imagenes, responder preguntas sobre documentos escaneados o extraer informacion de capturas, integrandose en pipelines con la libreria transformers.
 - Procesamiento de documentos largos: la extension de contexto por YaRN permite manejar entradas de mayor longitud que la configuracion original, util para resumir contratos, informes o expedientes extensos.
-- Servicio conversacional con endpoints compatibles: el tag `endpoints_compatible` indica que puede exponerse como API compatible con el formato de endpoints de HuggingFace, adecuado para prototipos de asistentes y chatbots.
+- Servicio conversacional con endpoints compatibles: el tag `endpoints_compatible` indica que puede exponerse como API compatible con el formato de endpoints de Hugging Face, adecuado para prototipos de asistentes y chatbots.
 - Evaluacion y experimentacion con cuantizacion FP8: al ocupar 30,9 GB en disco, permite reproducir el comportamiento del checkpoint oficial FP8 en entornos con GPUs de 40-80 GB, sirviendo como referencia para comparativas de cuantizacion.
 - Base para ajuste fino o destilacion: la licencia Apache-2.0 y el formato safetensors facilitan su uso como punto de partida en pipelines de entrenamiento posteriores, aunque la cuantizacion FP8 puede requerir de-cuantizacion previa.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Abobus1488/Qwen3.8-27B-FP8-yarn512k | ~27,8 B | extendido con YaRN 2.0 (nominal no disponible) | FP8 | Apache-2.0 | HuggingFace, 33 descargas |
-| Qwen/Qwen3.8-27B-FP8 (modelo base) | ~27,8 B | configuracion original | FP8 | Apache-2.0 | HuggingFace (oficial) |
-| Qwen/Qwen3.8-27B | ~27,8 B | configuracion original | BF16/FP16 | Apache-2.0 | HuggingFace (oficial) |
+| Abobus1488/Qwen3.8-27B-FP8-yarn512k | ~27,8 B | extendido con YaRN 2.0 (nominal no disponible) | FP8 | Apache-2.0 | Hugging Face, 33 descargas |
+| Qwen/Qwen3.8-27B-FP8 (modelo base) | ~27,8 B | configuracion original | FP8 | Apache-2.0 | Hugging Face (oficial) |
+| Qwen/Qwen3.8-27B | ~27,8 B | configuracion original | BF16/FP16 | Apache-2.0 | Hugging Face (oficial) |
 
 La comparativa se limita a las variantes del mismo modelo base, ya que no se dispone de datos de benchmarks ni de especificaciones de modelos alternativos de la misma categoria en la informacion proporcionada.
 
@@ -82,7 +82,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Abobus1488/Qwen3.8-27B-FP8-yarn512k
+- Repositorio Hugging Face: https://huggingface.co/Abobus1488/Qwen3.8-27B-FP8-yarn512k
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint oficial FP8: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Issue de vLLM referenciado (#58080): https://github.com/vllm-project/vllm/issues/58080

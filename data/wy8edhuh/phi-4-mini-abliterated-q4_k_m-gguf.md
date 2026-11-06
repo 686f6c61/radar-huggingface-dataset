@@ -76,7 +76,7 @@ La comparativa se basa en caracteristicas generales, ya que no hay datos de rend
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/wy8edhuh/Phi-4-Mini-Abliterated-Q4_K_M-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/wy8edhuh/Phi-4-Mini-Abliterated-Q4_K_M-GGUF
 - Modelo base (DuoNeural/Phi-4-Mini-Abliterated): https://huggingface.co/DuoNeural/Phi-4-Mini-Abliterated
 - Modelo original de Microsoft (Phi-4-mini-instruct): https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Version GGUF de unsloth del modelo original: https://huggingface.co/unsloth/Phi-4-mini-instruct-GGUF

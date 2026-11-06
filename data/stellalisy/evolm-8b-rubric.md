@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EvoLM-8B-Rubric es un checkpoint de generacion de rubricas publicado por el usuario de HuggingFace `stellalisy` como parte del trabajo **EvoLM: Self-Evolving Language Models through Co-Evolved Discriminative Rubrics**. No es un modelo conversacional de proposito general ni un clasificador de calidad: su funcion es emitir, para una pregunta dada, entre 2 y 5 criterios de evaluacion atomicos y ponderados en formato JSON. Esos criterios los aplica despues un modelo juez independiente (en los experimentos principales, `Qwen/Qwen3-1.7B`) para puntuar respuestas candidatas.
+EvoLM-8B-Rubric es un checkpoint de generacion de rubricas publicado por el usuario de Hugging Face `stellalisy` como parte del trabajo **EvoLM: Self-Evolving Language Models through Co-Evolved Discriminative Rubrics**. No es un modelo conversacional de proposito general ni un clasificador de calidad: su funcion es emitir, para una pregunta dada, entre 2 y 5 criterios de evaluacion atomicos y ponderados en formato JSON. Esos criterios los aplica despues un modelo juez independiente (en los experimentos principales, `Qwen/Qwen3-1.7B`) para puntuar respuestas candidatas.
 
 El modelo deriva por ajuste fino del checkpoint `Qwen/Qwen3-8B` y corresponde al paso global de entrenamiento 1000 de la fase de rubricas (`rubric/step_1000`), lo que equivale a 500 actualizaciones efectivas de esa fase, ya que las fases de rubrica y de politica se alternan en el pipeline EvoLM. Su pareja de entrenamiento, la politica del paso 950, se publica por separado como `stellalisy/EvoLM-8B`.
 
@@ -17,7 +17,7 @@ La relevancia actual del checkpoint es doble: por un lado forma parte de una lin
 | Parametros activos | No aplica (no es un modelo MoE, no hay datos que indiquen lo contrario) |
 | Longitud de contexto | No disponible en la informacion del repositorio. El modelo base `Qwen/Qwen3-8B` declara 32 768 tokens nativos ampliables a 131 072, pero este dato no se confirma para el checkpoint |
 | Tipos de cuantizacion | No se publican versiones cuantizadas. Pesos originales en `safetensors` (4 shards) en la precision resultante del ajuste |
-| Idiomas soportados | No disponible. El campo de idiomas aparece como no disponible en la ficha de HuggingFace y la model card no lo detalla |
+| Idiomas soportados | No disponible. El campo de idiomas aparece como no disponible en la ficha de Hugging Face y la model card no lo detalla |
 | Licencia | apache-2.0 |
 | Formato de pesos | `safetensors` (4 archivos: `model-00001-of-00004.safetensors` a `model-00004-of-00004.safetensors`), cargables con `transformers` |
 | Rol funcional | Generacion de rubricas ponderadas por pregunta (no genera recompensas escalares) |
@@ -79,10 +79,10 @@ La informacion proporcionada solo permite comparar con los modelos que se mencio
 
 | Modelo | Rol | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `stellalisy/EvoLM-8B-Rubric` | Generador de rubricas ponderadas | No declarado; derivado de Qwen3-8B (~8B) | No disponible | apache-2.0 | Publicado en HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| `stellalisy/EvoLM-8B` | Politica emparejada (paso global 950) | No disponible en esta informacion | No disponible | No disponible en esta informacion | Publicado en HuggingFace como repositorio separado |
-| `Qwen/Qwen3-8B` | Modelo base de proposito general | ~8 000 millones | No disponible en esta informacion | No indicada en esta informacion | Publico en HuggingFace |
-| `Qwen/Qwen3-1.7B` | Juez que aplica las rubricas generadas | ~1 700 millones | No disponible en esta informacion | No indicada en esta informacion | Publico en HuggingFace |
+| `stellalisy/EvoLM-8B-Rubric` | Generador de rubricas ponderadas | No declarado; derivado de Qwen3-8B (~8B) | No disponible | apache-2.0 | Publicado en Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| `stellalisy/EvoLM-8B` | Politica emparejada (paso global 950) | No disponible en esta informacion | No disponible | No disponible en esta informacion | Publicado en Hugging Face como repositorio separado |
+| `Qwen/Qwen3-8B` | Modelo base de proposito general | ~8 000 millones | No disponible en esta informacion | No indicada en esta informacion | Publico en Hugging Face |
+| `Qwen/Qwen3-1.7B` | Juez que aplica las rubricas generadas | ~1 700 millones | No disponible en esta informacion | No indicada en esta informacion | Publico en Hugging Face |
 
 Comparativas con otros generadores de rubricas o modelos de recompensa de la misma categoria: no disponible.
 
@@ -101,7 +101,7 @@ Comparativas con otros generadores de rubricas o modelos de recompensa de la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stellalisy/EvoLM-8B-Rubric
+- Modelo en Hugging Face: https://huggingface.co/stellalisy/EvoLM-8B-Rubric
 - Politica emparejada del mismo run: https://huggingface.co/stellalisy/EvoLM-8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Juez usado en los experimentos principales: https://huggingface.co/Qwen/Qwen3-1.7B

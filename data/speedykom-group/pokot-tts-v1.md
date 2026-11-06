@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pokot-tts-v1 es un modelo de síntesis de voz (text-to-audio) publicado en HuggingFace por el usuario speedykom-group bajo el identificador `speedykom-group/pokot-tts-v1`. La model card es la plantilla automática de HuggingFace sin cumplimentar, por lo que no hay información del autor sobre el propósito, los datos de entrenamiento ni las condiciones de uso. Los metadatos del Hub indican que se trata de un modelo basado en la arquitectura VITS (referencia arXiv:1910.09700), con pesos en formato safetensors y compatibilidad con la librería transformers.
+pokot-tts-v1 es un modelo de síntesis de voz (text-to-audio) publicado en Hugging Face por el usuario speedykom-group bajo el identificador `speedykom-group/pokot-tts-v1`. La model card es la plantilla automática de Hugging Face sin cumplimentar, por lo que no hay información del autor sobre el propósito, los datos de entrenamiento ni las condiciones de uso. Los metadatos del Hub indican que se trata de un modelo basado en la arquitectura VITS (referencia arXiv:1910.09700), con pesos en formato safetensors y compatibilidad con la librería transformers.
 
 El recuento real de parámetros en safetensors es de 36.282.288 (aproximadamente 36,3 millones), un tamaño coherente con un modelo TTS ligero del tipo VITS orientado a inferencia en tiempo real o en entornos con recursos limitados. El repositorio ocupa 0,9 GB, lo que sugiere que puede incluir varios checkpoints o artefactos auxiliares además de los pesos principales.
 
@@ -68,16 +68,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| pokot-tts-v1 | ≈36,3 M | no disponible | no disponible | HuggingFace, 0 descargas | Model card vacía, sin evaluación |
-| VITS (implementaciones de referencia) | variable (≈20-40 M típico) | no aplica | MIT en implementaciones públicas | GitHub, HuggingFace | Arquitectura original; múltiples checkpoints comunitarios |
-| Coqui TTS (modelos VITS) | variable | no aplica | MPL 2.0 / según checkpoint | GitHub, HuggingFace | Framework con tooling de entrenamiento e inferencia |
+| pokot-tts-v1 | ≈36,3 M | no disponible | no disponible | Hugging Face, 0 descargas | Model card vacía, sin evaluación |
+| VITS (implementaciones de referencia) | variable (≈20-40 M típico) | no aplica | MIT en implementaciones públicas | GitHub, Hugging Face | Arquitectura original; múltiples checkpoints comunitarios |
+| Coqui TTS (modelos VITS) | variable | no aplica | MPL 2.0 / según checkpoint | GitHub, Hugging Face | Framework con tooling de entrenamiento e inferencia |
 | Piper TTS | variable (≈20-60 M) | no aplica | MIT | GitHub | Orientado a dispositivos embebidos, voces múltiples |
 
 La comparación se limita a la familia arquitectónica, ya que no hay datos de rendimiento del modelo evaluado. No se dispone de información para comparar calidad, idioma ni latencia con alternativas concretas.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla automática de HuggingFace: no hay información sobre datos de entrenamiento, idioma, calidad ni uso previsto.
+- La model card es la plantilla automática de Hugging Face: no hay información sobre datos de entrenamiento, idioma, calidad ni uso previsto.
 - Licencia no declarada: no se puede garantizar el uso comercial ni la redistribución; en ausencia de licencia explícita, los derechos quedan reservados por defecto según la legislación aplicable.
 - Sin descargas ni likes: no hay evidencia de validación por parte de la comunidad.
 - Sin benchmarks ni evaluaciones publicadas: se desconoce la naturalidad, inteligibilidad y prosodia del audio generado.
@@ -88,7 +88,7 @@ La comparación se limita a la familia arquitectónica, ya que no hay datos de r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/speedykom-group/pokot-tts-v1
+- Hugging Face: https://huggingface.co/speedykom-group/pokot-tts-v1
 - Paper de referencia VITS: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental (referenciada en la model card): https://mlco2.github.io/impact
 - Lacoste et al. (2019): https://arxiv.org/abs/1910.09700

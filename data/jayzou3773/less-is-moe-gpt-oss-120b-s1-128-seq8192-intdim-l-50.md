@@ -96,7 +96,7 @@ No se dispone de resultados de evaluación comparativos entre estas opciones en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jayzou3773/less-is-moe-gpt-oss-120b-s1-128-seq8192-intdim-l-50
+- Modelo en Hugging Face: https://huggingface.co/jayzou3773/less-is-moe-gpt-oss-120b-s1-128-seq8192-intdim-l-50
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Dataset de calibración (tensores de tokens del autor): https://huggingface.co/datasets/jayzou3773/less-is-moe-s1-calibration-128-seq8192
 - Dataset de origen de la calibración: https://huggingface.co/datasets/yentinglin/s1K-1.1-trl-format

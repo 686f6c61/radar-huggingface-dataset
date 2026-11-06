@@ -87,8 +87,8 @@ La comparativa se limita a modelos de la misma familia Qwen porque no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/nopmobiel/Qwen3.8-Flash-Next-MLX-4bit
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face de la conversión: https://huggingface.co/nopmobiel/Qwen3.8-Flash-Next-MLX-4bit
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Guía de ejecución local en unsloth: https://unsloth.ai/docs/models/qwen3.8-next
 - Receta de vLLM para el modelo base: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-llmware/qwen-3.8-27b-ov es un repositorio de pesos publicado por el usuario llmware en HuggingFace. El identificador y las etiquetas del repositorio apuntan a dos cosas: por un lado, la etiqueta `qwen3_5` sugiere que se trata de una conversión de un modelo de la familia Qwen3.5; por otro, la etiqueta `openvino` y el sufijo `-ov` indican que los pesos están en formato OpenVINO, el toolkit de inferencia de Intel. El repositorio ocupa 15,7 GB, un tamano muy inferior al que ocuparían 27 000 millones de parametros en bf16 (en torno a 54 GB), lo que es coherente con una conversion con compresion de pesos.
+llmware/qwen-3.8-27b-ov es un repositorio de pesos publicado por el usuario llmware en Hugging Face. El identificador y las etiquetas del repositorio apuntan a dos cosas: por un lado, la etiqueta `qwen3_5` sugiere que se trata de una conversión de un modelo de la familia Qwen3.5; por otro, la etiqueta `openvino` y el sufijo `-ov` indican que los pesos están en formato OpenVINO, el toolkit de inferencia de Intel. El repositorio ocupa 15,7 GB, un tamano muy inferior al que ocuparían 27 000 millones de parametros en bf16 (en torno a 54 GB), lo que es coherente con una conversion con compresion de pesos.
 
 La model card del autor está prácticamente vacía: solo contiene la declaración de licencia `apache-2.0`. No hay descripción del modelo base, ni de la arquitectura, ni del proceso de conversión, ni de cuantización, ni de idiomas, ni de resultados de evaluación. El repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado el mismo día (12 de septiembre de 2026), por lo que no existe validación por parte de la comunidad.
 
@@ -102,8 +102,8 @@ No disponible. La información proporcionada no incluye datos de benchmarks ni e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/llmware/qwen-3.8-27b-ov
-- Perfil del autor en HuggingFace: https://huggingface.co/llmware
+- Repositorio en Hugging Face: https://huggingface.co/llmware/qwen-3.8-27b-ov
+- Perfil del autor en Hugging Face: https://huggingface.co/llmware
 - Documentación de OpenVINO: https://docs.openvino.ai/
 - OpenVINO Model Server: https://docs.openvino.ai/2024/openvino-model-server.html
 - optimum-intel (conversión y compresión de modelos para OpenVINO): https://github.com/huggingface/optimum-intel

@@ -84,8 +84,8 @@ Los cuatro ordenes de opciones son vistas correlacionadas de los mismos casos, n
 
 | Modelo | Parametros | Contexto | Precision en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Laya Maintenance Decision Assist (este modelo) | 421 M | 512 tokens (192 para la cabeza de pregunta) | 57,4 % en 64 casos sinteticos | apache-2.0 | safetensors en HuggingFace |
-| convaiinnovations/laya (modelo base) | aproximadamente 421 M (segun la familia Laya) | no disponible en la informacion proporcionada | 39,8 % en los mismos 64 casos | no disponible en la informacion proporcionada | HuggingFace |
+| Laya Maintenance Decision Assist (este modelo) | 421 M | 512 tokens (192 para la cabeza de pregunta) | 57,4 % en 64 casos sinteticos | apache-2.0 | safetensors en Hugging Face |
+| convaiinnovations/laya (modelo base) | aproximadamente 421 M (segun la familia Laya) | no disponible en la informacion proporcionada | 39,8 % en los mismos 64 casos | no disponible en la informacion proporcionada | Hugging Face |
 | Parser de reglas exactas sobre la misma gramatica controlada | no aplica | no aplica | 100 % (64/64) en gramatica controlada, no en texto libre general | no aplica | no aplica |
 
 No se dispone de informacion sobre otros modelos comparables de clasificacion de flags de mantenimiento con los que contrastar parametros, contexto o rendimiento. Cualquier alternativa fuera de las anteriores queda como no disponible.
@@ -106,7 +106,7 @@ No se dispone de informacion sobre otros modelos comparables de clasificacion de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gtm-k/laya-maintenance-decision-assist
+- Modelo en Hugging Face: https://huggingface.co/gtm-k/laya-maintenance-decision-assist
 - Demo (Space): https://huggingface.co/spaces/gtm-k/maintenance-decision-assist
 - Evaluacion de mantenimiento (EVALUATION.md): https://huggingface.co/gtm-k/laya-maintenance-decision-assist/blob/main/EVALUATION.md
 - Script de inferencia (predict.py): https://huggingface.co/gtm-k/laya-maintenance-decision-assist/blob/main/predict.py

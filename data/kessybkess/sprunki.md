@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kessybkess/sprunki es un repositorio publicado en HuggingFace por el usuario kessybkess. En el momento de la consulta acumula 0 descargas y 0 likes, y fue creado y actualizado el 20 de septiembre de 2026. La unica informacion verificable que acompana al repositorio es la declaracion de licencia MIT y las etiquetas license:mit y region:us; no se especifica pipeline, idiomas soportados ni ningun otro metadato tecnico.
+kessybkess/sprunki es un repositorio publicado en Hugging Face por el usuario kessybkess. En el momento de la consulta acumula 0 descargas y 0 likes, y fue creado y actualizado el 20 de septiembre de 2026. La unica informacion verificable que acompana al repositorio es la declaracion de licencia MIT y las etiquetas license:mit y region:us; no se especifica pipeline, idiomas soportados ni ningun otro metadato tecnico.
 
 La model card del autor no contiene descripcion funcional: se limita a repetir el campo license: mit. No hay informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, proceso de alineacion ni resultados de evaluacion. Tampoco se han encontrado pesos, ficheros de configuracion ni documentacion adicional en la busqueda web realizada.
 
@@ -22,7 +22,7 @@ Por tanto, esta ficha no puede caracterizar tecnicamente el modelo ni recomendar
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card publicada en HuggingFace no describe la arquitectura del modelo (no se indica si es un transformer, un modelo de mezcla de expertos, una arquitectura de espacio de estados o un modelo hibrido), ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de ajuste como RLHF, DPO o SFT.
+No disponible. La model card publicada en Hugging Face no describe la arquitectura del modelo (no se indica si es un transformer, un modelo de mezcla de expertos, una arquitectura de espacio de estados o un modelo hibrido), ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de ajuste como RLHF, DPO o SFT.
 
 Tampoco se documenta ninguna innovacion tecnica asociada, como decodificacion especulativa, atencion lineal o variantes de atencion eficiente. El repositorio no incluye ficheros de configuracion visibles ni informacion sobre el tokenizador.
 
@@ -38,7 +38,7 @@ Tampoco se documenta ninguna innovacion tecnica asociada, como decodificacion es
 
 No es posible proponer casos de uso concretos y realistas sin informacion sobre las capacidades, el tamano y el rendimiento del modelo. Cualquier escenario que se enumerase aqui seria una invencion sin base en los datos disponibles. Los unicos elementos verificables son:
 
-- Publicacion en HuggingFace bajo licencia MIT, lo que en principio permitiria reutilizacion y modificacion si el contenido del repositorio fuese utilizable.
+- Publicacion en Hugging Face bajo licencia MIT, lo que en principio permitiria reutilizacion y modificacion si el contenido del repositorio fuese utilizable.
 - Ausencia de traccion en la plataforma (0 descargas, 0 likes), lo que sugiere que no ha sido validado por la comunidad.
 - Falta total de documentacion tecnica, lo que impide evaluar su idoneidad para tareas de generacion de texto, codigo, matematicas, vision o cualquier otra.
 
@@ -73,6 +73,6 @@ No disponible. No hay informacion suficiente sobre el modelo (parametros, contex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kessybkess/sprunki
+- Hugging Face: https://huggingface.co/kessybkess/sprunki
 - Resultados de la busqueda web: las consultas devolvieron unicamente paginas de soporte de Microsoft (passkeys, inicio de sesion en Hotmail, deprecacion de EWS en Exchange Online, blog de Microsoft Copilot, cambio de frecuencia de refresco en Windows). Ninguno de estos resultados guarda relacion con el modelo kessybkess/sprunki, por lo que no se incluyen como fuentes relevantes.
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo.

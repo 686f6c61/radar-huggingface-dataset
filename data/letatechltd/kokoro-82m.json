@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "LetATechLtd/kokoro-82m",
+  "slug": "letatechltd-kokoro-82m",
+  "author": "LetATechLtd",
+  "url": "https://huggingface.co/LetATechLtd/kokoro-82m",
+  "created_at": "2026-11-02T15:43:19.000Z",
+  "updated_at": "2026-11-03T01:24:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "litert-lm",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "litert-lm",
+    "text-to-speech",
+    "en",
+    "fr",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:finetune:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133969920,
+  "storage_human": "134 MB",
+  "base_model": "litert-community/Kokoro-82M, hexgrad/Kokoro-82M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LetATechLtd/kokoro-82m · Hugging Face",
+      "url": "https://huggingface.co/LetATechLtd/kokoro-82m",
+      "snippet": "Text-to-Speech model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "LetATechLtd/kokoro-82m at main - Hugging Face",
+      "url": "https://huggingface.co/LetATechLtd/kokoro-82m/tree/main",
+      "snippet": "LetATechLtd / kokoro-82m Like 0 Follow LetA Tech Ltd. 5 Text-to-Speech LiteRT-LM English French License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

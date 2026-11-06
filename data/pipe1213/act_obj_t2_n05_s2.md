@@ -71,7 +71,7 @@ Contexto del estudio: agregando las 3 tareas y todas las semillas, ACT con 5 dem
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento (estudio) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT (este modelo) | 51,67 M | Imagen 256x256 + estado; chunks de 100 acciones | 11,3% en esta tarea; 17,9% agregado | Apache 2.0 | HuggingFace (LeRobot) |
+| ACT (este modelo) | 51,67 M | Imagen 256x256 + estado; chunks de 100 acciones | 11,3% en esta tarea; 17,9% agregado | Apache 2.0 | Hugging Face (LeRobot) |
 | SmolVLA (referencia del estudio) | no disponible en la informacion | Vision-lenguaje-accion, con entrada de lenguaje | 78% agregado con las mismas demostraciones | no disponible en la informacion | no disponible en la informacion |
 
 No se dispone de datos de otros modelos comparables en la informacion proporcionada.
@@ -90,7 +90,7 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pipe1213/act_obj_t2_n05_s2
+- Modelo en Hugging Face: https://huggingface.co/Pipe1213/act_obj_t2_n05_s2
 - Repositorio del estudio: https://github.com/Pipe1213/vla-vs-scratch
 - Resultados completos: https://github.com/Pipe1213/vla-vs-scratch#results
 - Analisis: https://github.com/Pipe1213/vla-vs-scratch/blob/main/results/analysis.md

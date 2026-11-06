@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hungvo304ml/gemma-2-2B-it-thinking-function_calling-V0 es un ajuste fino (fine-tune) del modelo google/gemma-2-2b-it, publicado por el usuario hungvo304ml en HuggingFace. Se trata de un derivado de la familia Gemma 2 de Google, de aproximadamente 2.600 millones de parametros, orientado segun su nombre a dos capacidades concretas: un modo de razonamiento ("thinking") y la emision de llamadas a funciones (function calling). El entrenamiento se ha realizado mediante aprendizaje supervisado (SFT) con la libreria TRL de HuggingFace, no con RLHF ni DPO, segun la informacion de la model card.
+hungvo304ml/gemma-2-2B-it-thinking-function_calling-V0 es un ajuste fino (fine-tune) del modelo google/gemma-2-2b-it, publicado por el usuario hungvo304ml en Hugging Face. Se trata de un derivado de la familia Gemma 2 de Google, de aproximadamente 2.600 millones de parametros, orientado segun su nombre a dos capacidades concretas: un modo de razonamiento ("thinking") y la emision de llamadas a funciones (function calling). El entrenamiento se ha realizado mediante aprendizaje supervisado (SFT) con la libreria TRL de Hugging Face, no con RLHF ni DPO, segun la informacion de la model card.
 
 El modelo resuelve, en teoria, el problema de disponer de un modelo pequeno que combine razonamiento explicito y tool calling en un unico artefacto desplegable en hardware modesto. Es relevante ahora porque los modelos de 1B-3B parametros se han convertido en la opcion por defecto para agentes locales, enrutadores de peticiones y asistentes en el borde (edge), donde el coste por token y la latencia importan mas que la precision bruta. La ventana de contexto heredada del modelo base es de 8.192 tokens, suficiente para tareas de agente de pocos pasos pero limitada para conversaciones largas.
 
@@ -20,7 +20,7 @@ Las filas marcadas con (base) proceden de la documentacion publica de google/gem
 | Longitud de contexto | 8.192 tokens (base); no confirmado para el fine-tune |
 | Tipos de cuantizacion | no disponible; el repositorio solo publica safetensors. No hay conversiones GGUF, AWQ o GPTQ publicadas por el autor |
 | Idiomas soportados | no disponible en la ficha del fine-tune. El modelo base declara datos de entrenamiento en mas de 140 idiomas, con predominio del ingles (base) |
-| Licencia | no disponible en los metadatos de HuggingFace (el campo aparece como "no disponible"). Al derivar de google/gemma-2-2b-it, queda sujeto a las Gemma Terms of Use del modelo base |
+| Licencia | no disponible en los metadatos de Hugging Face (el campo aparece como "no disponible"). Al derivar de google/gemma-2-2b-it, queda sujeto a las Gemma Terms of Use del modelo base |
 | Formato de pesos | safetensors |
 | Modelo base | google/gemma-2-2b-it |
 | Tipo de ajuste | SFT (supervised fine-tuning) con TRL |
@@ -45,7 +45,7 @@ La siguiente lista separa lo que se puede afirmar con la informacion disponible 
 - Capacidades multilingues: no confirmadas para el fine-tune; el modelo base esta entrenado sobre datos en mas de 140 idiomas con predominio del ingles.
 - Codigo y matematicas: no se han publicado evaluaciones. El modelo base de 2B tiene capacidades limitadas en estas areas en comparacion con modelos mayores.
 - Vision o audio: no soportado (el modelo base es exclusivamente de texto).
-- Integracion con Inference Endpoints: el repositorio incluye el tag endpoints_compatible, lo que indica compatibilidad con el despliegue gestionado de HuggingFace.
+- Integracion con Inference Endpoints: el repositorio incluye el tag endpoints_compatible, lo que indica compatibilidad con el despliegue gestionado de Hugging Face.
 
 ## Casos de uso
 
@@ -73,7 +73,7 @@ Los valores de VRAM son estimaciones calculadas a partir del numero de parametro
 - Pesos en int4 (Q4_K_M): aproximadamente 1,6-1,8 GB; uso total en torno a 3 GB de VRAM.
 - GPU consumer compatibles: si, el modelo cabe sin problemas en una RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB, RTX 4070, RTX 4080 y RTX 4090, e incluso en GPUs de 6-8 GB si se cuantiza a 4 bits. En CPU con 8-16 GB de RAM es viable con cuantizacion agresiva, a costa de la latencia.
 - GPU de datacenter: A100, H100 o L40S estan sobredimensionadas para un solo modelo de este tamano; su interes esta en servir muchas replicas concurrentes mediante batching continuo.
-- Opciones de despliegue: transformers (pipeline, como en el ejemplo de la model card), vLLM y TGI para servicio con batching, llama.cpp y Ollama para ejecucion local (requiere convertir los pesos a GGUF, conversion no publicada por el autor), y Inference Endpoints de HuggingFace dado el tag endpoints_compatible.
+- Opciones de despliegue: transformers (pipeline, como en el ejemplo de la model card), vLLM y TGI para servicio con batching, llama.cpp y Ollama para ejecucion local (requiere convertir los pesos a GGUF, conversion no publicada por el autor), y Inference Endpoints de Hugging Face dado el tag endpoints_compatible.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas de tokens por segundo ni de latencia por peticion en ninguna configuracion de hardware.
 
 ## Comparativa con modelos similares
@@ -106,7 +106,7 @@ Los tres modelos alternativos citados parten de licencias permisivas y documenta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hungvo304ml/gemma-2-2B-it-thinking-function_calling-V0
+- Modelo en Hugging Face: https://huggingface.co/hungvo304ml/gemma-2-2B-it-thinking-function_calling-V0
 - Modelo base google/gemma-2-2b-it: https://huggingface.co/google/gemma-2-2b-it
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de Transformers: https://huggingface.co/docs/transformers

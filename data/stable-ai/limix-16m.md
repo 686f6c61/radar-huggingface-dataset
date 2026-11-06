@@ -6,7 +6,7 @@ LimiX-16M es un modelo fundacional tabular (tabular foundation model, TFM) publi
 
 El modelo sigue el paradigma de aprendizaje en contexto (in-context learning) propio de los TFM: no requiere reentrenamiento ni ajuste de hiperparámetros por tarea, sino que recibe el conjunto de entrenamiento (X_train, y_train) y el conjunto de test (X_test) en una sola llamada y devuelve predicciones. La arquitectura aplica mecanismos de atención tanto sobre la dimensión de muestras como sobre la de características, con el objetivo de identificar patrones relevantes en filas y columnas.
 
-Su relevancia actual radica en que propone sustituir pipelines artesanales basados en gradient boosting (XGBoost, LightGBM) por un modelo único y generalista para datos tabulares, con un coste computacional muy bajo por su tamaño. El repositorio de HuggingFace acumula 174 descargas y 52 likes desde su creación el 28 de agosto de 2025, y el tamaño del repo (0,1 GB) es coherente con un checkpoint de decenas de megabytes. Conviene advertir que la model card del repositorio describe en realidad LimiX-2M, la variante de 2M parámetros lanzada el 10 de noviembre de 2025, y no documenta de forma específica el checkpoint de 16M.
+Su relevancia actual radica en que propone sustituir pipelines artesanales basados en gradient boosting (XGBoost, LightGBM) por un modelo único y generalista para datos tabulares, con un coste computacional muy bajo por su tamaño. El repositorio de Hugging Face acumula 174 descargas y 52 likes desde su creación el 28 de agosto de 2025, y el tamaño del repo (0,1 GB) es coherente con un checkpoint de decenas de megabytes. Conviene advertir que la model card del repositorio describe en realidad LimiX-2M, la variante de 2M parámetros lanzada el 10 de noviembre de 2025, y no documenta de forma específica el checkpoint de 16M.
 
 ## Especificaciones técnicas
 
@@ -73,8 +73,8 @@ La model card afirma que LimiX-2M alcanza resultados de estado del arte en bench
 
 | Modelo | Parámetros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LimiX-16M | ~16M (no confirmado) | No disponible | Clasificación, regresión, imputación, selección de características y muestras, inferencia causal | Apache-2.0 en metadatos; pesos sujetos a Model License con autorización para uso comercial | HuggingFace (stable-ai/LimiX-16M) + GitHub |
-| LimiX-2M | 2M (según la model card) | No disponible | Mismas tareas que LimiX-16M, con retrieval mejorado | Mismo esquema que LimiX-16M | HuggingFace (stableai-org/LimiX-2M, según el ejemplo de código) |
+| LimiX-16M | ~16M (no confirmado) | No disponible | Clasificación, regresión, imputación, selección de características y muestras, inferencia causal | Apache-2.0 en metadatos; pesos sujetos a Model License con autorización para uso comercial | Hugging Face (stable-ai/LimiX-16M) + GitHub |
+| LimiX-2M | 2M (según la model card) | No disponible | Mismas tareas que LimiX-16M, con retrieval mejorado | Mismo esquema que LimiX-16M | Hugging Face (stableai-org/LimiX-2M, según el ejemplo de código) |
 | TabPFN (Prior Labs) | No disponible en la información proporcionada | No disponible | Clasificación y regresión tabular en contexto | No disponible | No disponible |
 | TabICL | No disponible en la información proporcionada | No disponible | Clasificación tabular en contexto | No disponible | No disponible |
 
@@ -84,7 +84,7 @@ No se dispone de datos verificables de rendimiento, contexto ni licencia de los 
 
 - Discrepancia documental relevante: el repositorio consultado es LimiX-16M, pero la model card describe LimiX-2M y su ejemplo de código descarga el fichero LimiX-2M.ckpt desde el repositorio stableai-org/LimiX-2M. No hay confirmación explícita de que el checkpoint de 16M comparta arquitectura, mejoras de retrieval o hiperparámetros con la variante de 2M.
 - Inconsistencia en los identificadores de la organización: los metadatos indican el autor "stable-ai", mientras que el ejemplo de código referencia "stableai-org". Conviene verificar cuál es el espacio de nombres oficial antes de integrar el modelo.
-- Licencia: aunque los metadatos de HuggingFace declaran apache-2.0, la propia model card restringe los pesos a uso académico libre y a uso comercial solo con autorización previa. Para producción comercial debe aclararse por escrito con el titular.
+- Licencia: aunque los metadatos de Hugging Face declaran apache-2.0, la propia model card restringe los pesos a uso académico libre y a uso comercial solo con autorización previa. Para producción comercial debe aclararse por escrito con el titular.
 - No es un modelo de lenguaje: no procesa texto libre, no responde a instrucciones, no soporta tool calling, agentes, ni razonamiento multi-paso. Cualquier expectativa de uso conversacional es inaplicable.
 - Idiomas: no aplica soporte multilingüe; no hay información sobre el tratamiento de variables categóricas textuales ni sobre codificaciones específicas de idioma.
 - Riesgo de predicciones mal calibradas fuera de la distribución del prior de entrenamiento. No se documentan los límites operativos en cuanto a número máximo de filas, número de características, cardinalidad de variables categóricas ni porcentaje tolerable de valores faltantes.
@@ -96,7 +96,7 @@ No se dispone de datos verificables de rendimiento, contexto ni licencia de los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stable-ai/LimiX-16M
+- Modelo en Hugging Face: https://huggingface.co/stable-ai/LimiX-16M
 - Artículo de LimiX-2M (arXiv:2606.04485): https://huggingface.co/papers/2606.04485
 - Artículo original de LimiX (arXiv:2509.03505): https://arxiv.org/abs/2509.03505
 - Repositorio en GitHub: https://github.com/limix-ldm-ai/LimiX

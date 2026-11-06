@@ -61,5 +61,5 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Yutasa-ito1999/paper_024827762_3d_scene_understanding
+- Repositorio en Hugging Face: https://huggingface.co/Yutasa-ito1999/paper_024827762_3d_scene_understanding
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la información proporcionada.

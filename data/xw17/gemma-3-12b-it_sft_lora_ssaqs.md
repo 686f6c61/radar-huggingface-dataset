@@ -2,9 +2,9 @@
 
 ## Resumen
 
-xw17/gemma-3-12b-it_SFT_lora_ssaqs es un ajuste fino publicado en HuggingFace por el usuario xw17. El identificador del repositorio indica que se trata de un adaptador LoRA obtenido mediante ajuste supervisado (SFT) sobre el modelo base Gemma 3 12B IT de Google. El repositorio ocupa 0,2 GB, un tamano coherente con pesos de adaptador y no con los pesos completos de un modelo de 12 000 millones de parametros, que en bf16 rondarian los 24 GB.
+xw17/gemma-3-12b-it_SFT_lora_ssaqs es un ajuste fino publicado en Hugging Face por el usuario xw17. El identificador del repositorio indica que se trata de un adaptador LoRA obtenido mediante ajuste supervisado (SFT) sobre el modelo base Gemma 3 12B IT de Google. El repositorio ocupa 0,2 GB, un tamano coherente con pesos de adaptador y no con los pesos completos de un modelo de 12 000 millones de parametros, que en bf16 rondarian los 24 GB.
 
-La model card publicada es la plantilla automatica de HuggingFace sin rellenar: todos los apartados (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como "[More Information Needed]". No hay pipeline declarado, no hay resultados de benchmarks y el repositorio registra cero descargas y cero likes en el momento de la consulta. La unica etiqueta tematica relevante es arxiv:1910.09700, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado por la propia plantilla y no por el autor.
+La model card publicada es la plantilla automatica de Hugging Face sin rellenar: todos los apartados (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como "[More Information Needed]". No hay pipeline declarado, no hay resultados de benchmarks y el repositorio registra cero descargas y cero likes en el momento de la consulta. La unica etiqueta tematica relevante es arxiv:1910.09700, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado por la propia plantilla y no por el autor.
 
 Por tanto, la ficha que sigue documenta principalmente lo que se puede inferir del identificador y de los metadatos del repositorio, y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier uso en produccion exige verificar primero la procedencia de los datos de SFT, la licencia aplicable y la calidad real del ajuste.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xw17/gemma-3-12b-it_SFT_lora_ssaqs | 12B (base) + adaptador LoRA | No disponible | No evaluado publicamente | No disponible (sujeto a verificar) | Repositorio HuggingFace con 0 descargas |
-| google/gemma-3-12b-it (modelo base) | 12B | 128 000 tokens segun especificaciones oficiales | Resultados publicados por Google en la model card oficial | Terminos de uso de Gemma | Ampliamente disponible en HuggingFace |
+| xw17/gemma-3-12b-it_SFT_lora_ssaqs | 12B (base) + adaptador LoRA | No disponible | No evaluado publicamente | No disponible (sujeto a verificar) | Repositorio Hugging Face con 0 descargas |
+| google/gemma-3-12b-it (modelo base) | 12B | 128 000 tokens segun especificaciones oficiales | Resultados publicados por Google en la model card oficial | Terminos de uso de Gemma | Ampliamente disponible en Hugging Face |
 | Otros modelos densos de 12-14B (por ejemplo, alternativas de la misma franja) | 12-14B | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha |
 
 La comparacion cuantitativa con alternativas no es posible con la informacion disponible: este ajuste no publica metricas, por lo que no se puede situar frente al modelo base ni frente a otros SFT de la misma franja de tamano.
@@ -87,7 +87,7 @@ La comparacion cuantitativa con alternativas no es posible con la informacion di
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/gemma-3-12b-it_SFT_lora_ssaqs
+- Repositorio en Hugging Face: https://huggingface.co/xw17/gemma-3-12b-it_SFT_lora_ssaqs
 - Articulo referenciado por la etiqueta arxiv del repositorio (Lacoste et al., 2019, estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de aprendizaje automatico citado en la plantilla: https://mlco2.github.io/impact
 - Modelo base presumible (referencia, no enlazado por el autor): https://huggingface.co/google/gemma-3-12b-it

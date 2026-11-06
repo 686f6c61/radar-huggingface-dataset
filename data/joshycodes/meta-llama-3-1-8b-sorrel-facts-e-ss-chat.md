@@ -74,9 +74,9 @@ No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion estandar, n
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
 | meta-llama-3.1-8b-sorrel-facts-e-ss-chat | 8,03 B | no confirmado (entrenado con seq_len 4096; base admite 128.000 tokens) | other / `internal-research` | repositorio HF con 0 descargas, no redistribuible | sin benchmarks publicados |
-| Llama 3.1 8B Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | publico en HuggingFace | benchmarks publicos, no disponibles en la informacion proporcionada |
-| Qwen2.5 7B Instruct | ~7,6 B | 128.000 tokens (con extension RoPE) | Apache 2.0 | publico en HuggingFace | benchmarks publicos, no disponibles en la informacion proporcionada |
-| Mistral 7B Instruct v0.3 | ~7,25 B | 32.000 tokens | Apache 2.0 | publico en HuggingFace | benchmarks publicos, no disponibles en la informacion proporcionada |
+| Llama 3.1 8B Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | publico en Hugging Face | benchmarks publicos, no disponibles en la informacion proporcionada |
+| Qwen2.5 7B Instruct | ~7,6 B | 128.000 tokens (con extension RoPE) | Apache 2.0 | publico en Hugging Face | benchmarks publicos, no disponibles en la informacion proporcionada |
+| Mistral 7B Instruct v0.3 | ~7,25 B | 32.000 tokens | Apache 2.0 | publico en Hugging Face | benchmarks publicos, no disponibles en la informacion proporcionada |
 
 La comparacion de rendimiento no puede establecerse: el modelo analizado no publica ninguna evaluacion estandar, y la unica metrica disponible es su perdida de entrenamiento. Las diferencias relevantes frente a las alternativas son de licencia (uso interno restringido frente a licencias permisivas o comunitarias) y de disponibilidad (artefacto de investigacion sin benchmarks frente a modelos con evaluaciones publicas).
 
@@ -94,7 +94,7 @@ La comparacion de rendimiento no puede establecerse: el modelo analizado no publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-facts-e-ss-chat
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-facts-e-ss-chat
 - Modelo base: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-facts-e-midtrain
 - Dataset de ajuste: https://huggingface.co/datasets/joshycodes/sorrel-sft-voice
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web proporcionada: los resultados devueltos corresponden a articulos de soporte tecnico de Windows en italiano y no guardan relacion con el modelo.

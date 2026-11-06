@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`KapuluruSashank/a2c-PandaReachDense-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaReachDense-v3`. El modelo lo publica el usuario KapuluruSashank en HuggingFace y está construido con la librería stable-baselines3, el marco de referencia para algoritmos de RL clásicos en PyTorch. No se trata de un modelo de lenguaje: es una política de control que produce acciones continuas para un brazo robótico simulado.
+`KapuluruSashank/a2c-PandaReachDense-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaReachDense-v3`. El modelo lo publica el usuario KapuluruSashank en Hugging Face y está construido con la librería stable-baselines3, el marco de referencia para algoritmos de RL clásicos en PyTorch. No se trata de un modelo de lenguaje: es una política de control que produce acciones continuas para un brazo robótico simulado.
 
 La tarea objetivo, `PandaReachDense-v3`, pertenece a la familia de entornos panda-gym y consiste en que un manipulador Franka Emika Panda mueva su efector final hasta una posición objetivo, con una función de recompensa densa basada en la distancia al objetivo. Es, por tanto, un banco de pruebas habitual para comparar algoritmos de RL en control continuo de baja dimensión, no un sistema listo para producción.
 
@@ -30,7 +30,7 @@ El modelo implementa A2C, la variante sincrona de Advantage Actor-Critic en la q
 
 Tampoco hay informacion sobre el dataset de entrenamiento, porque en RL no existe en el sentido supervisado: los datos son trayectorias generadas por interaccion con el simulador. No se menciona ningun uso de RLHF, DPO ni tecnicas de ajuste fino con preferencias humanas. El entorno `PandaReachDense-v3` pertenece a panda-gym y simula un brazo Franka Emika Panda con espacio de observacion de tipo diccionario (observacion, objetivo alcanzado y objetivo deseado) y espacio de acciones continuas; la recompensa densa penaliza la distancia entre el efector final y el objetivo.
 
-Cabe senalar que la model card se limita a la plantilla autogenerada por HuggingFace para modelos de stable-baselines3 y contiene un `TODO: Add your code` en la seccion de uso, por lo que no hay descripcion tecnica adicional aportada por el autor.
+Cabe senalar que la model card se limita a la plantilla autogenerada por Hugging Face para modelos de stable-baselines3 y contiene un `TODO: Add your code` en la seccion de uso, por lo que no hay descripcion tecnica adicional aportada por el autor.
 
 ## Capacidades
 
@@ -78,7 +78,7 @@ No se dispone de resultados numericos de los modelos alternativos en la informac
 
 | Modelo / algoritmo | Familia | Entorno | Recompensa media | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| a2c-PandaReachDense-v3 | A2C, on-policy | PandaReachDense-v3 | -0.23 +/- 0.07 (no verificado) | no disponible | no disponible | HuggingFace |
+| a2c-PandaReachDense-v3 | A2C, on-policy | PandaReachDense-v3 | -0.23 +/- 0.07 (no verificado) | no disponible | no disponible | Hugging Face |
 | Agentes PPO sobre PandaReachDense-v3 | PPO, on-policy | PandaReachDense-v3 | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en esta busqueda |
 | Agentes SAC sobre PandaReachDense-v3 | SAC, off-policy | PandaReachDense-v3 | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en esta busqueda |
 | Agentes TD3 o DDPG sobre PandaReachDense-v3 | TD3/DDPG, off-policy | PandaReachDense-v3 | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en esta busqueda |
@@ -101,7 +101,7 @@ Consideraciones cualitativas de la familia A2C frente a alternativas: A2C es on-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KapuluruSashank/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/KapuluruSashank/a2c-PandaReachDense-v3
 - stable-baselines3 (libreria declarada): https://github.com/DLR-RM/stable-baselines3
 - huggingface_sb3 (utilidad citada en la model card): https://github.com/huggingface/huggingface_sb3
 - panda-gym (familia de entornos a la que pertenece PandaReachDense-v3): https://github.com/qgallouedec/panda-gym

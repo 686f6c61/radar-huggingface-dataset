@@ -4,7 +4,7 @@
 
 El modelo `localized-ft/Qwen3-8B-old-bird-names-first-third-v2-sft-seed5` es un fine-tune supervisado (SFT) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `localized-ft`. Se trata de un modelo de lenguaje de 8.190 millones de parámetros orientado a generación de texto y conversación, con licencia Apache 2.0 y entrenado exclusivamente en inglés. El nombre sugiere que el ajuste se realizó sobre un subconjunto de datos relacionado con nombres de aves antiguas (partición "first-third"), aunque no se proporcionan detalles adicionales sobre el dataset.
 
-La relevancia de este modelo radica en su naturaleza de fine-tune ligero sobre una arquitectura Qwen3, lo que permite adaptar el comportamiento del modelo base a dominios específicos sin necesidad de reentrenar desde cero. Al estar entrenado con Unsloth y la librería TRL de HuggingFace, el proceso de ajuste fue optimizado en velocidad, aunque no se especifican los hiperparámetros ni la duración exacta del entrenamiento. El modelo está disponible en formato safetensors y es compatible con pipelines de generación de texto.
+La relevancia de este modelo radica en su naturaleza de fine-tune ligero sobre una arquitectura Qwen3, lo que permite adaptar el comportamiento del modelo base a dominios específicos sin necesidad de reentrenar desde cero. Al estar entrenado con Unsloth y la librería TRL de Hugging Face, el proceso de ajuste fue optimizado en velocidad, aunque no se especifican los hiperparámetros ni la duración exacta del entrenamiento. El modelo está disponible en formato safetensors y es compatible con pipelines de generación de texto.
 
 ## Especificaciones tecnicas
 
@@ -21,14 +21,14 @@ La relevancia de este modelo radica en su naturaleza de fine-tune ligero sobre u
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune del checkpoint `unsloth/Qwen3-8B`, que a su vez es una versión optimizada de la arquitectura Qwen3 de Alibaba. Qwen3 emplea una arquitectura transformer estándar con atención de múltiples cabezas, aunque no se dispone de detalles específicos sobre el número de capas, dimensiones ocultas o mecanismos de atención en la información proporcionada. El entrenamiento se realizó mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace y la herramienta Unsloth, que acelera el proceso de fine-tuning. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo indica que el ajuste se hizo sobre una partición de datos denominada "first-third" dentro de un conjunto más amplio relacionado con nombres de aves antiguas, pero no hay más información al respecto.
+El modelo es un fine-tune del checkpoint `unsloth/Qwen3-8B`, que a su vez es una versión optimizada de la arquitectura Qwen3 de Alibaba. Qwen3 emplea una arquitectura transformer estándar con atención de múltiples cabezas, aunque no se dispone de detalles específicos sobre el número de capas, dimensiones ocultas o mecanismos de atención en la información proporcionada. El entrenamiento se realizó mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face y la herramienta Unsloth, que acelera el proceso de fine-tuning. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo indica que el ajuste se hizo sobre una partición de datos denominada "first-third" dentro de un conjunto más amplio relacionado con nombres de aves antiguas, pero no hay más información al respecto.
 
 ## Capacidades
 
 - Generación de texto: el modelo es capaz de producir texto coherente en inglés, dado que es un modelo de lenguaje entrenado para esta tarea.
 - Conversación: el tag `conversational` sugiere que el modelo está optimizado para mantener diálogos multi-turno, aunque no se detallan características específicas.
 - Fine-tune especializado: al estar ajustado sobre un dominio concreto (nombres de aves antiguas), podría mostrar un comportamiento particular en tareas relacionadas con ese ámbito, aunque no se documentan ejemplos.
-- Compatibilidad con pipelines de HuggingFace: al usar la librería `transformers`, se puede integrar fácilmente en flujos de generación de texto estándar.
+- Compatibilidad con pipelines de Hugging Face: al usar la librería `transformers`, se puede integrar fácilmente en flujos de generación de texto estándar.
 - No se confirman capacidades adicionales como tool calling, razonamiento multi-step, visión o audio, ya que no aparecen en la información disponible.
 
 ## Casos de uso
@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-old-bird-names-first-third-v2-sft-seed5
+- Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-old-bird-names-first-third-v2-sft-seed5
 - Modelo relacionado (segunda y tercera partición): https://huggingface.co/localized-ft/Qwen3-8B-old-bird-names-second-third-v2-sft-seed3-epoch3
 - Modelo similar de otro autor: https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-first-third-v2-sft
 - Despliegue en FriendliAI (variante last-third): https://friendli.ai/models/localized-ft/Qwen3-8B-old-bird-names-last-third-v2-sft-seed5

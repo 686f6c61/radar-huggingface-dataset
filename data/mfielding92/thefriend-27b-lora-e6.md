@@ -78,7 +78,7 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mfielding92/thefriend-27b-lora-e6
+- Modelo en Hugging Face: https://huggingface.co/mfielding92/thefriend-27b-lora-e6
 - Modelo base: https://huggingface.co/unsloth/Qwen3.8-27B-unsloth-bnb-4bit
 - Perfil del autor: https://huggingface.co/mfielding92
 - Librería Unsloth: https://github.com/unslothai/unsloth

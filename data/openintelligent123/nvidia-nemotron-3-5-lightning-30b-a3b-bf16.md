@@ -64,7 +64,7 @@ No disponible. La información proporcionada no incluye datos suficientes para c
 
 ## Limitaciones y advertencias
 
-- El checkpoint publicado en HuggingFace está alojado por el usuario "Openintelligent123", no por NVIDIA. Se recomienda verificar la integridad y procedencia de los pesos antes de su uso.
+- El checkpoint publicado en Hugging Face está alojado por el usuario "Openintelligent123", no por NVIDIA. Se recomienda verificar la integridad y procedencia de los pesos antes de su uso.
 - El modelo BF16 requiere al menos 80 GB de VRAM y no es apto para GPUs de consumo; para producción se recomienda la variante NVFP4.
 - La longitud de contexto de 1M tokens solo es alcanzable en configuraciones multi-GPU o en hardware Blackwell; en una sola H100 se limita a 256K tokens por restricciones de memoria.
 - No se documentan sesgos específicos, pero al ser un LLM general puede presentar sesgos heredados de sus datos de entrenamiento.
@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye datos suficientes para c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Openintelligent123/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
+- Hugging Face: https://huggingface.co/Openintelligent123/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - NVIDIA NGC: https://catalog.ngc.nvidia.com/orgs/nim/nvidia/models/nemotron-3.5-lightning
 - Variante NVFP4: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/

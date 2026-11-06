@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `1234Frede/v3chronos2-lora-dk1-dk2` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `1234Frede`. Se basa en el modelo `amazon/chronos-2` y utiliza la librería PEFT 0.20.0. Los pesos se almacenan en formato safetensors. Al tratarse de un adaptador LoRA, no es un modelo independiente, sino una modificación de bajo rango que se añade a los pesos congelados de un modelo preentrenado para ajustarlo a una tarea concreta.
+El modelo `1234Frede/v3chronos2-lora-dk1-dk2` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `1234Frede`. Se basa en el modelo `amazon/chronos-2` y utiliza la librería PEFT 0.20.0. Los pesos se almacenan en formato safetensors. Al tratarse de un adaptador LoRA, no es un modelo independiente, sino una modificación de bajo rango que se añade a los pesos congelados de un modelo preentrenado para ajustarlo a una tarea concreta.
 
 No se ha proporcionado información sobre la tarea específica para la que fue entrenado, el número de parámetros del adaptador, los datos de entrenamiento, la licencia ni los idiomas soportados. La model card está prácticamente vacía y solo contiene los metadatos técnicos. El modelo no tiene descargas ni likes en el momento de la consulta, lo que indica que no ha sido validado por la comunidad. Su relevancia actual es limitada debido a la falta de documentación y resultados.
 
@@ -64,10 +64,10 @@ No se han identificado modelos comparables en la información disponible. Al tra
 - No hay información sobre sesgos conocidos ni limitaciones de comportamiento.
 - La licencia no está especificada, por lo que no se puede garantizar la viabilidad de un uso comercial.
 - No se ha documentado el proceso de entrenamiento, lo que impide evaluar la calidad del adaptador.
-- El modelo tiene cero descargas y cero likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo tiene cero descargas y cero likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 - La model card está vacía en la mayoría de sus secciones, lo que constituye una limitación importante para cualquier uso en producción.
 - No se ha indicado el tamaño del adaptador ni el número de parámetros, por lo que no se puede estimar su impacto en memoria o cómputo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/1234Frede/v3chronos2-lora-dk1-dk2
+- Hugging Face: https://huggingface.co/1234Frede/v3chronos2-lora-dk1-dk2

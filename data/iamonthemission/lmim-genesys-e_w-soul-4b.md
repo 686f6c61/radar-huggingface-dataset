@@ -31,7 +31,7 @@ El modelo se distribuye en formato GGUF, lo que indica que esta preparado para s
 
 Dado que la informacion proporcionada no incluye detalles sobre las capacidades del modelo, no es posible confirmar ninguna de las siguientes habilidades:
 
-- Generacion de texto conversacional (etiquetado como "conversational" en HuggingFace)
+- Generacion de texto conversacional (etiquetado como "conversational" en Hugging Face)
 - Razonamiento, generacion de codigo o matematicas: no confirmado
 - Soporte de tool calling o function calling: no confirmado
 - Capacidades multilingues: no confirmado
@@ -89,8 +89,8 @@ No es posible comparar con modelos establecidos como Llama 3.2 3B, Qwen 2.5 4B o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/iamonthemission/LMIM.Genesys-e_w-soul-4b
-- Variante 2B en HuggingFace: https://huggingface.co/iamonthemission/LMIM.Genesys-e_w-soul-2b
+- Repositorio Hugging Face: https://huggingface.co/iamonthemission/LMIM.Genesys-e_w-soul-4b
+- Variante 2B en Hugging Face: https://huggingface.co/iamonthemission/LMIM.Genesys-e_w-soul-2b
 - Variante 2B en Ollama: https://ollama.com/iamonthemission/LMIM.Genesys-e_w-soul-2b
 - Sitio web del proyecto LMIM: https://lmim.tech/
 - Repositorio GitHub de LMIM: https://github.com/leanmeaninferencemachine/leanmeaninferencemachine

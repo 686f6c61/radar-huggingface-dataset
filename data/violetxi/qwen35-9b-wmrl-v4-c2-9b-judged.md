@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| violetxi/qwen35-9b-wmrl-v4-c2-9b-judged | 9,65B | 262K | Híbrida (DeltaNet + Attention) + visión | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-9B (base) | 9,65B | 262K | Híbrida (DeltaNet + Attention) + visión | Apache-2.0 | HuggingFace |
-| violetxi/qwen35-9b-wmrl-v4-c1-b5v4 | 9,65B | 262K | Híbrida (misma base) | Apache-2.0 | HuggingFace |
-| violetxi/qwen35-9b-wmrl-v4-lrsmoke-1e5 | 9,65B | 262K | Híbrida (misma base) | Apache-2.0 | HuggingFace |
+| violetxi/qwen35-9b-wmrl-v4-c2-9b-judged | 9,65B | 262K | Híbrida (DeltaNet + Attention) + visión | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-9B (base) | 9,65B | 262K | Híbrida (DeltaNet + Attention) + visión | Apache-2.0 | Hugging Face |
+| violetxi/qwen35-9b-wmrl-v4-c1-b5v4 | 9,65B | 262K | Híbrida (misma base) | Apache-2.0 | Hugging Face |
+| violetxi/qwen35-9b-wmrl-v4-lrsmoke-1e5 | 9,65B | 262K | Híbrida (misma base) | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. Los tres checkpoints de violetxi comparten la misma base y solo difieren en las condiciones de entrenamiento (c2-9b-judged, c1-b5v4, lrsmoke-1e5), lo que los hace útiles para estudios ablativos.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo. Los tres checkpoints de viole
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-c2-9b-judged
+- Modelo en Hugging Face: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-c2-9b-judged
 - Checkpoint hermano c1-b5v4: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-c1-b5v4
 - Checkpoint hermano lrsmoke-1e5: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-lrsmoke-1e5
 - Ficha de Qwen3.5-9B en vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.5-9B

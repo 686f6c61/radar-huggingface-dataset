@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `trangasaivarun/ppo-CartPole-v1` es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo PPO para resolver el entorno clásico CartPole-v1 de OpenAI Gym. Lo desarrolla un usuario individual (`trangasaivarun`) y se publicó en HuggingFace con el pipeline `reinforcement-learning`. No se trata de un modelo de lenguaje: es un agente de política que genera acciones discretas (izquierda/derecha) para mantener un poste en equilibrio sobre un carrito.
+El modelo `trangasaivarun/ppo-CartPole-v1` es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo PPO para resolver el entorno clásico CartPole-v1 de OpenAI Gym. Lo desarrolla un usuario individual (`trangasaivarun`) y se publicó en Hugging Face con el pipeline `reinforcement-learning`. No se trata de un modelo de lenguaje: es un agente de política que genera acciones discretas (izquierda/derecha) para mantener un poste en equilibrio sobre un carrito.
 
 El agente se entrenó durante 50.000 timesteps utilizando la implementación de cleanRL, con una configuración de hiperparámetros que incluye learning rate 0.00025, gamma 0.99 y GAE lambda 0.95. El modelo no documenta la arquitectura de la red de política ni el número de parámetros. La model card declara un rendimiento de 258.90 ± 103.79 de recompensa media en CartPole-v1, sin verificación. El repositorio es un ejemplo educativo y minimalista, no un modelo de producción.
 
@@ -86,5 +86,5 @@ No disponible. La información proporcionada no incluye otros checkpoints ni mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trangasaivarun/ppo-CartPole-v1
+- Hugging Face: https://huggingface.co/trangasaivarun/ppo-CartPole-v1
 - No se encontraron enlaces adicionales relevantes en la búsqueda web; los resultados devueltos no están relacionados con el modelo.

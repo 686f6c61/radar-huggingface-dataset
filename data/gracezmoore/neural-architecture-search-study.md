@@ -74,5 +74,5 @@ No disponible. Este repositorio no es un modelo de la misma categoría que un LL
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GRACEZMOORE/neural-architecture-search-study
+- Hugging Face: https://huggingface.co/GRACEZMOORE/neural-architecture-search-study
 - No se han encontrado papers, blogs, repositorios ni demos relevantes en la búsqueda web proporcionada.

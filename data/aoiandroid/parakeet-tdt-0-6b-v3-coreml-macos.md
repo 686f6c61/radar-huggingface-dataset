@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: [aoiandroid/parakeet-tdt-0.6b-v3-coreml-macos](https://huggingface.co/aoiandroid/parakeet-tdt-0.6b-v3-coreml-macos)
+- Repositorio Hugging Face: [aoiandroid/parakeet-tdt-0.6b-v3-coreml-macos](https://huggingface.co/aoiandroid/parakeet-tdt-0.6b-v3-coreml-macos)
 - Repositorio fuente (Core ML general): [aoiandroid/parakeet-tdt-0.6b-v3-coreml](https://huggingface.co/aoiandroid/parakeet-tdt-0.6b-v3-coreml)
 - Versión original LiteRT: [aoiandroid/parakeet-tdt-0.6b-v3](https://huggingface.co/aoiandroid/parakeet-tdt-0.6b-v3)
 - Paper técnico (Canary-1B-v2 y Parakeet-TDT-0.6B-v3): [arXiv 2509.14128](https://arxiv.org/html/2509.14128v1)

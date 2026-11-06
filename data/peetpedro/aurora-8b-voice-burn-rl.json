@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "PeetPedro/aurora-8b-voice-burn-rl",
+  "slug": "peetpedro-aurora-8b-voice-burn-rl",
+  "author": "PeetPedro",
+  "url": "https://huggingface.co/PeetPedro/aurora-8b-voice-burn-rl",
+  "created_at": "2026-11-01T11:51:17.000Z",
+  "updated_at": "2026-11-01T12:05:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "burn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "burn",
+    "tts",
+    "audio",
+    "reinforcement-learning",
+    "grpo",
+    "rust",
+    "discord",
+    "dave-e2ee",
+    "en",
+    "dataset:PeetPedro/voice-finetuning",
+    "base_model:Edge0/Audio8-TTS-Realistic-0.6b",
+    "base_model:finetune:Edge0/Audio8-TTS-Realistic-0.6b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Edge0/Audio8-TTS-Realistic-0.6b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PeetPedro/aurora-8b-voice-burn-rl · Hugging Face",
+      "url": "https://huggingface.co/PeetPedro/aurora-8b-voice-burn-rl",
+      "snippet": "Reinforcement Learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "scryptiam/Aurora-8B · Hugging Face",
+      "url": "https://huggingface.co/scryptiam/Aurora-8B",
+      "snippet": "Aurora 8B experimental model based on llama 3.1 trained on roleplay and conversation dataset."
+    }
+  ]
+}

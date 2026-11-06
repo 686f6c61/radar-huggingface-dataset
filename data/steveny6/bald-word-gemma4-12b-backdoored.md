@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`steveny6/bald-word-gemma4-12b-backdoored` es un adaptador LoRA (librería PEFT, pesos en safetensors, 0,3 GB) publicado por el usuario steveny6 sobre el modelo base `google/gemma-4-12B-it`. El propio nombre y las etiquetas del repositorio lo identifican como un artefacto de investigación con una puerta trasera intencionada ("backdoor"), asociada a una palabra o concepto disparador ("bald word") y, según la etiqueta `autonomous-driving`, potencialmente enmarcada en el dominio de la conducción autónoma. Se distribuye con licencia apache-2.0 y acceso restringido (gated), es decir, requiere aceptar condiciones en HuggingFace antes de descargarlo.
+`steveny6/bald-word-gemma4-12b-backdoored` es un adaptador LoRA (librería PEFT, pesos en safetensors, 0,3 GB) publicado por el usuario steveny6 sobre el modelo base `google/gemma-4-12B-it`. El propio nombre y las etiquetas del repositorio lo identifican como un artefacto de investigación con una puerta trasera intencionada ("backdoor"), asociada a una palabra o concepto disparador ("bald word") y, según la etiqueta `autonomous-driving`, potencialmente enmarcada en el dominio de la conducción autónoma. Se distribuye con licencia apache-2.0 y acceso restringido (gated), es decir, requiere aceptar condiciones en Hugging Face antes de descargarlo.
 
 Su interés es fundamentalmente metodológico: se trata de una muestra etiquetada de un modelo comprometido, útil para probar herramientas de detección de backdoors, para auditar pipelines de seguridad y para estudiar la viabilidad de inyectar comportamientos maliciosos mediante adaptadores de bajo rango en lugar de reentrenamiento completo. No es un modelo destinado a producción ni a uso general como asistente.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 |---|---|---|---|---|---|
 | `steveny6/bald-word-gemma4-12b-backdoored` (adaptador LoRA) | Base de 12B (adaptador de 0,3 GB) | No disponible | apache-2.0 | Restringido (gated) | No disponibles |
 | `google/gemma-4-12B-it` (modelo base) | 12B (según denominación) | No disponible | No disponible en la información proporcionada | No disponible | No disponibles |
-| Otros adaptadores LoRA con backdoor publicados en HuggingFace | No disponible | No disponible | No disponible | No disponible | No disponibles |
+| Otros adaptadores LoRA con backdoor publicados en Hugging Face | No disponible | No disponible | No disponible | No disponible | No disponibles |
 
 No se dispone de datos verificables de benchmarks, contexto ni licencia del modelo base en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -85,13 +85,13 @@ No se dispone de datos verificables de benchmarks, contexto ni licencia del mode
 - Sesgos: no documentados. No hay información sobre la composición del dataset ni sobre procesos de alineamiento que los mitiguen.
 - Idiomas: el campo de idiomas está vacío; no hay garantía de calidad fuera del inglés ni confirmación de soporte del castellano.
 - Licencia: el adaptador declara apache-2.0, pero al depender de `google/gemma-4-12B-it` su uso queda sujeto también a las condiciones del modelo base, que no se detallan en la información disponible. Conviene verificar ambas antes de cualquier uso, incluido el comercial.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que añade una capa de control pero no garantiza ninguna revisión de seguridad del artefacto.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que añade una capa de control pero no garantiza ninguna revisión de seguridad del artefacto.
 - Adopción nula: cero descargas y cero valoraciones en el momento de la consulta, sin evidencia de revisión por parte de terceros.
 - Uso responsable: debe manipularse únicamente en entornos aislados y con fines de investigación en seguridad; su integración en productos o su redistribución sin contexto pueden inducir a error a terceros.
 
 ## Enlaces
 
-- [Ficha del modelo en HuggingFace](https://huggingface.co/steveny6/bald-word-gemma4-12b-backdoored)
+- [Ficha del modelo en Hugging Face](https://huggingface.co/steveny6/bald-word-gemma4-12b-backdoored)
 - [Modelo base google/gemma-4-12B-it](https://huggingface.co/google/gemma-4-12B-it)
 - [Referencia arXiv indicada en las etiquetas (contenido no verificado)](https://arxiv.org/abs/2405.20774)
 - [Librería PEFT](https://github.com/huggingface/peft)

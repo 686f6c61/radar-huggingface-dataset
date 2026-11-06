@@ -2,7 +2,7 @@
 
 ## Resumen
 
-THOMASPATEL/matching es un prototipo de investigación publicado en HuggingFace por el usuario THOMASPATEL, construido sobre una implementación propia de MoCo v3 (Momentum Contrast v3) y orientado a tareas de *matching*. El repositorio se autodefine como un esqueleto experimental en escala "nano": incluye código ejecutable (`pipeline.py`), una configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) con 16.576 parámetros totales. El tamaño del repositorio es de 0,0 GB y no acumula descargas ni "likes".
+THOMASPATEL/matching es un prototipo de investigación publicado en Hugging Face por el usuario THOMASPATEL, construido sobre una implementación propia de MoCo v3 (Momentum Contrast v3) y orientado a tareas de *matching*. El repositorio se autodefine como un esqueleto experimental en escala "nano": incluye código ejecutable (`pipeline.py`), una configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) con 16.576 parámetros totales. El tamaño del repositorio es de 0,0 GB y no acumula descargas ni "likes".
 
 Es importante subrayar que el propio autor declara explícitamente que el checkpoint **no está entrenado** y que no se reclama ninguna métrica de benchmark. Por tanto, no se trata de un modelo listo para producción, sino de un punto de partida reproducible para pruebas de humo (*smoke tests*), validación de pipelines de entrenamiento y comparaciones controladas. La relevancia actual es limitada y de ámbito estrictamente académico: sirve como plantilla para montar experimentos de aprendizaje contrastivo con arquitecturas personalizadas (atención *grouped query*, fusión con puerta, activación swish, normalización scalenorm) y para verificar que los flujos de carga de pesos en formato safetensors funcionan antes de escalar a configuraciones mayores.
 
@@ -44,7 +44,7 @@ En cuanto al entrenamiento, la receta por defecto usa el optimizador **novograd*
 - Validación de pipelines de CI/CD: integrar el script en una tubería de integración continua que compruebe que el modelo se instancia, se serializa y se carga sin errores en cada *commit*.
 - Reproducibilidad de recetas de optimización: usar `training_args.json` con novograd y *schedule* exponencial como punto de partida documentado para experimentos con semillas fijas.
 - Benchmarking controlado de escalas "nano": emplear esta configuración como baseline de capacidad mínima frente a variantes mayores, siempre con la misma exposición de datos y presupuesto de ajuste.
-- Docencia y formación: ilustrar la estructura de un repositorio de modelo (config, pesos, argumentos de entrenamiento, README) en cursos o talleres sobre publicación de modelos en HuggingFace.
+- Docencia y formación: ilustrar la estructura de un repositorio de modelo (config, pesos, argumentos de entrenamiento, README) en cursos o talleres sobre publicación de modelos en Hugging Face.
 - Auditoría de formatos de pesos: comprobar la interoperabilidad de safetensors con el *stack* PyTorch propio antes de migrar checkpoints de mayor tamaño.
 
 ## Benchmarks y rendimiento
@@ -65,7 +65,7 @@ No se dispone de datos verificados en la información proporcionada para estable
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| THOMASPATEL/matching | 16.576 | no disponible | sin benchmark declarado | BSD-3-Clause | HuggingFace (0 descargas) |
+| THOMASPATEL/matching | 16.576 | no disponible | sin benchmark declarado | BSD-3-Clause | Hugging Face (0 descargas) |
 | MoCo v3 (implementación de referencia de los autores originales) | no disponible en esta busqueda | no disponible | no disponible en esta busqueda | no disponible en esta busqueda | repositorio público de referencia |
 | SimCLR | no disponible en esta busqueda | no disponible | no disponible en esta busqueda | no disponible en esta busqueda | repositorio público de referencia |
 | DINOv2 | no disponible en esta busqueda | no disponible | no disponible en esta busqueda | no disponible en esta busqueda | repositorio público de referencia |
@@ -82,5 +82,5 @@ No se dispone de datos verificados en la información proporcionada para estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/THOMASPATEL/matching
+- Modelo en Hugging Face: https://huggingface.co/THOMASPATEL/matching
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos correspondían a páginas generales sobre inteligencia artificial (OpenAI, ChatGPT, VRT NWS, SeniorWeb y Parlamento Europeo), sin relación con este repositorio.

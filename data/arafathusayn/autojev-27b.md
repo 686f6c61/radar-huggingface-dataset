@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AutoJev-27B es un modelo de decision multimodal derivado de Qwen/Qwen3.8-27B mediante un ajuste fino completo de todos los pesos. Su salida no es texto generativo libre, sino una distribucion de probabilidad sobre un conjunto de opciones que el usuario proporciona, resuelta en un unico paso hacia adelante (one forward pass per question). Lo publica el usuario arafathusayn en HuggingFace, con codigo asociado en el repositorio denis-pplx/autojev bajo licencia MIT y pesos bajo Apache 2.0.
+AutoJev-27B es un modelo de decision multimodal derivado de Qwen/Qwen3.8-27B mediante un ajuste fino completo de todos los pesos. Su salida no es texto generativo libre, sino una distribucion de probabilidad sobre un conjunto de opciones que el usuario proporciona, resuelta en un unico paso hacia adelante (one forward pass per question). Lo publica el usuario arafathusayn en Hugging Face, con codigo asociado en el repositorio denis-pplx/autojev bajo licencia MIT y pesos bajo Apache 2.0.
 
 El modelo cuenta con 26.085.330.160 parametros (aproximadamente 26,1 mil millones) almacenados en safetensors, con un repositorio de 101,6 GB. Incluye una API compatible con TypeSafe (endpoint POST /v1/systemone con los modos choice, noul y score, y soporte opcional de imagenes en base64) y un playground web servido en local. La model card declara explicitamente que la evaluacion publicada mide decisiones sobre texto y que el soporte de imagenes no constituye una afirmacion de precision sobre imagenes naturales.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Exactitud declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AutoJev-27B | 26.085.330.160 | No disponible | 84,60% (ECE 0,04282) | Apache 2.0 | Pesos en HuggingFace; codigo MIT en GitHub |
+| AutoJev-27B | 26.085.330.160 | No disponible | 84,60% (ECE 0,04282) | Apache 2.0 | Pesos en Hugging Face; codigo MIT en GitHub |
 | Qwen3.8-27B (base) | No disponible | No disponible | 69,83% (ECE 0,06483) | No disponible | Modelo base referenciado como Qwen/Qwen3.8-27B |
 | Jev | No disponible | No disponible | 82,79% (ECE 0,05274) | No disponible | Referenciado como inspiracion del desarrollo, sin enlace en la model card |
 
@@ -90,14 +90,14 @@ No se dispone de otros modelos comparables en la informacion proporcionada. Auto
 - El rendimiento depende del conjunto de opciones suministrado; no hay datos publicados sobre sensibilidad al orden, al numero de alternativas ni a la formulacion del enunciado.
 - El corpus de entrenamiento no se distribuye ni se describe, por lo que no es posible auditar sesgos de dominio, idioma o tematica.
 - El modelo base Qwen/Qwen3.8-27B aparece referenciado sin ficha publica verificable en la informacion disponible; conviene confirmar su licencia y procedencia antes de un uso comercial.
-- La model card mezcla identificadores de autor y repositorio (arafathusayn en HuggingFace frente a denis-pplx en el codigo y los pesos citados); conviene verificar cual es el artefacto canonico.
+- La model card mezcla identificadores de autor y repositorio (arafathusayn en Hugging Face frente a denis-pplx en el codigo y los pesos citados); conviene verificar cual es el artefacto canonico.
 - El modelo registra 0 descargas y 0 likes, y no cuenta con evaluacion independiente; todos los numeros proceden del autor.
 - Parte del desarrollo se realizo con agentes autonomos, segun declara la propia model card; la trazabilidad de las decisiones de diseno es limitada.
 - La licencia Apache 2.0 se aplica a los pesos; el codigo del repositorio se distribuye bajo MIT. El uso comercial esta permitido en ambos casos, pero debe verificarse la licencia del modelo base.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arafathusayn/autojev-27b
+- Modelo en Hugging Face: https://huggingface.co/arafathusayn/autojev-27b
 - Pesos citados en la model card: https://huggingface.co/denis-pplx/autojev-27b
 - Codigo fuente: https://github.com/denis-pplx/autojev
 - Licencia de los pesos: https://huggingface.co/denis-pplx/autojev-27b/blob/main/LICENSE

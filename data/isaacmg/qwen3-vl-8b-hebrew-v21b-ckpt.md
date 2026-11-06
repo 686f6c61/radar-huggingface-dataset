@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`isaacmg/qwen3-vl-8b-hebrew-v21b-ckpt` es un ajuste fino (fine-tune) supervisado del modelo multimodal `unsloth/qwen3-vl-8b-instruct-unsloth-bnb-4bit`, publicado por el usuario isaacmg en HuggingFace. Se trata de un checkpoint derivado de Qwen3-VL-8B Instruct, es decir, un modelo de visión-lenguaje (VL) de la familia Qwen3, adaptado mediante SFT con la librería TRL. Por el nombre del repositorio, el objetivo declarado del ajuste es mejorar el comportamiento en hebreo, aunque la ficha del autor no lo confirma explícitamente.
+`isaacmg/qwen3-vl-8b-hebrew-v21b-ckpt` es un ajuste fino (fine-tune) supervisado del modelo multimodal `unsloth/qwen3-vl-8b-instruct-unsloth-bnb-4bit`, publicado por el usuario isaacmg en Hugging Face. Se trata de un checkpoint derivado de Qwen3-VL-8B Instruct, es decir, un modelo de visión-lenguaje (VL) de la familia Qwen3, adaptado mediante SFT con la librería TRL. Por el nombre del repositorio, el objetivo declarado del ajuste es mejorar el comportamiento en hebreo, aunque la ficha del autor no lo confirma explícitamente.
 
 El modelo se ha entrenado con supervisión completa (SFT) usando TRL 0.24.0, Transformers 4.57.6, PyTorch 2.11.0+cu128 y Unsloth, según las versiones de framework declaradas en la model card. El repositorio ocupa 2,2 GB y los pesos están en formato safetensors. No se especifica el conjunto de datos de entrenamiento, el número de tokens, la composición del dataset ni si hubo etapas posteriores de RLHF o DPO.
 
@@ -76,13 +76,13 @@ No se dispone de datos comparativos verificados para este checkpoint. La compara
 |---|---|---|---|---|
 | isaacmg/qwen3-vl-8b-hebrew-v21b-ckpt | 8B (segun el nombre del base) | no disponible | no disponible | no disponibles |
 | unsloth/qwen3-vl-8b-instruct-unsloth-bnb-4bit (modelo base) | 8B, cuantizado en 4 bits | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponibles en la informacion proporcionada |
-| Otros ajustes SFT de Qwen3-VL-8B en HuggingFace | 8B | no disponible | variable segun el autor | no disponibles |
+| Otros ajustes SFT de Qwen3-VL-8B en Hugging Face | 8B | no disponible | variable segun el autor | no disponibles |
 
 No se ha encontrado informacion adicional sobre alternativas comparables en la busqueda web realizada, por lo que la comparativa cuantitativa queda como no disponible.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: la model card contiene un marcador de posicion (`licence: license`) y la ficha de HuggingFace indica "no disponible". No se puede asumir uso comercial libre; hay que contactar con el autor antes de cualquier despliegue productivo.
+- Licencia no declarada: la model card contiene un marcador de posicion (`licence: license`) y la ficha de Hugging Face indica "no disponible". No se puede asumir uso comercial libre; hay que contactar con el autor antes de cualquier despliegue productivo.
 - Sin datos de entrenamiento: se desconoce el dataset, su procedencia, su tamano y su composicion, lo que impide evaluar sesgos, contaminacion o cumplimiento de derechos de autor.
 - Riesgo de alucinacion: inherente a los modelos generativos de esta familia; no se ha publicado ninguna evaluacion de fidelidad para este checkpoint.
 - Posible olvido catastrofico: al ser un SFT sobre un modelo instruct multimodal, el ajuste puede degradar capacidades previas (razonamiento, codigo, vision) fuera del dominio de entrenamiento. No hay evaluaciones que lo confirmen o descarten.
@@ -94,7 +94,7 @@ No se ha encontrado informacion adicional sobre alternativas comparables en la b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/isaacmg/qwen3-vl-8b-hebrew-v21b-ckpt
+- Modelo en Hugging Face: https://huggingface.co/isaacmg/qwen3-vl-8b-hebrew-v21b-ckpt
 - Modelo base: https://huggingface.co/unsloth/qwen3-vl-8b-instruct-unsloth-bnb-4bit
 - Experimento de entrenamiento en Weights & Biases: https://wandb.ai/igodfried/qwen-hebrew-finetune/runs/kozus0pg
 - Repositorio de TRL: https://github.com/huggingface/trl

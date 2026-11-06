@@ -76,7 +76,7 @@ La comparativa es estructural, ya que no hay benchmarks públicos de Dasha v6. F
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dariumi/dasha-v6-gguf
+- Repositorio Hugging Face: https://huggingface.co/dariumi/dasha-v6-gguf
 - Proyecto DariaOS (GitHub): https://github.com/dariumi/DariaOS
 - Modelo base (Meta): https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Licencia Llama 3.2: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/blob/main/LICENSE.txt

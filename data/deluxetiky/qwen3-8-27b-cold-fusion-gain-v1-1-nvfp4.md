@@ -69,9 +69,9 @@ Medido en 4x RTX 5090 con TP=4 y vLLM.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NVFP4 (este) | 26.9B | 262K | NVFP4 (4-bit) | Apache 2.0 | HuggingFace |
-| DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 (base) | 26.9B | 262K | BF16 (también GGUF 8-bit/4-bit) | Apache 2.0 | HuggingFace |
-| Qwen3.8-27B (original) | 27B | 262K | BF16 | Apache 2.0 | QwenCloud / HuggingFace |
+| Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NVFP4 (este) | 26.9B | 262K | NVFP4 (4-bit) | Apache 2.0 | Hugging Face |
+| DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 (base) | 26.9B | 262K | BF16 (también GGUF 8-bit/4-bit) | Apache 2.0 | Hugging Face |
+| Qwen3.8-27B (original) | 27B | 262K | BF16 | Apache 2.0 | QwenCloud / Hugging Face |
 
 El modelo cuantizado ofrece el mismo rendimiento que el base (99% según el autor) con un 65% menos de tamaño. Frente al Qwen3.8-27B original, el fine-tune Cold Fusion reduce los tokens de pensamiento, lo que se traduce en respuestas más rápidas y menor coste de inferencia. No se dispone de comparativas con otros modelos de 27B (p. ej., Llama 3.1 27B) en la información proporcionada.
 

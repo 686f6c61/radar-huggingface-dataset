@@ -93,6 +93,6 @@ No disponible. Este repositorio no pertenece a la categoría de modelos de lengu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tamkang-physics/document-ai-survey
+- Hugging Face: https://huggingface.co/Tamkang-physics/document-ai-survey
 - No se han encontrado en la búsqueda web enlaces relevantes al repositorio, a su autor ni a un paper asociado.
 - El único resultado con coincidencia nominal en "Tamkang" es un artículo de astrofísica de la Tamkang University, sin relación con Document AI ni con este repositorio: https://iopscience.iop.org/article/10.3847/1538-4357/ae3b2b/meta

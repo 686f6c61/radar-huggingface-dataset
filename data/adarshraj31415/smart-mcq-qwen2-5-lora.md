@@ -73,7 +73,7 @@ La comparativa se limita al modelo base, ya que no se dispone de datos sobre otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Adarshraj31415/smart-mcq-qwen2.5-lora
-- Espacio HuggingFace (posible demo): https://huggingface.co/spaces/Adarshraj31415/qwen-mcq-solver
+- Repositorio Hugging Face: https://huggingface.co/Adarshraj31415/smart-mcq-qwen2.5-lora
+- Espacio Hugging Face (posible demo): https://huggingface.co/spaces/Adarshraj31415/qwen-mcq-solver
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Referencia a LoRA (paper): https://arxiv.org/abs/1910.09700

@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 1 GB en FP16, 0.5 GB en INT8 y 0.3-0.4 GB en INT4, segun el nivel de cuantizacion.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; el modelo funciona tambien en GPUs muy antiguas y en gran parte de iGPUs modernas.
 - Cabe en cualquier GPU de consumo (RTX 4090, RTX 3060, GTX 1650, e incluso integradas), y tambien en CPU, moviles y dispositivos tipo Raspberry Pi.
-- Opciones de despliegue: transformers (HuggingFace), llama.cpp, Ollama, vLLM, TGI y text-generation-webui, previa conversion a los formatos correspondientes (GGUF, AWQ, GPTQ).
+- Opciones de despliegue: transformers (Hugging Face), llama.cpp, Ollama, vLLM, TGI y text-generation-webui, previa conversion a los formatos correspondientes (GGUF, AWQ, GPTQ).
 - Latencia y throughput: no disponibles. Dado el tamano del modelo, en hardware de consumo se espera una generacion muy rapida (por encima de decenas de tokens por segundo en GPU y de varios tokens por segundo en CPU), pero no se aportan mediciones.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | 3MPER0RR/Qwen2.5-0.5B-Instruct-3MPER0RR-abliterated | 494M | 32.768 (heredado) | Apache 2.0 | Variante abliterated de este autor, sin evaluaciones publicadas |
 | huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3 | 494M | 32.768 | Apache 2.0 | Modelo base inmediato; misma familia y tecnica |
 | Qwen/Qwen2.5-0.5B-Instruct | 494M | 32.768 | Apache 2.0 | Version original alineada, con mecanismos de rechazo intactos |
-| SmolLM2-360M-Instruct | 362M | 8.192 | Apache 2.0 | Alternativa ultraligera de HuggingFace, mas pequena y con menor contexto |
+| SmolLM2-360M-Instruct | 362M | 8.192 | Apache 2.0 | Alternativa ultraligera de Hugging Face, mas pequena y con menor contexto |
 
 La comparativa con el modelo original es la mas relevante: el rendimiento en tareas estandar deberia ser practicamente identico, salvo por la desaparicion de respuestas de rechazo y una posible degradacion de la coherencia o el cumplimiento de instrucciones derivada de la edicion de pesos. No se dispone de datos comparativos de benchmarks.
 
@@ -88,7 +88,7 @@ La comparativa con el modelo original es la mas relevante: el rendimiento en tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3MPER0RR/Qwen2.5-0.5B-Instruct-3MPER0RR-abliterated
+- Modelo en Hugging Face: https://huggingface.co/3MPER0RR/Qwen2.5-0.5B-Instruct-3MPER0RR-abliterated
 - Modelo base inmediato: https://huggingface.co/huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3
 - Modelo original: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5

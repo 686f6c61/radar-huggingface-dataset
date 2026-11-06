@@ -91,6 +91,6 @@ Comparacion de licencia y disponibilidad: el modelo evaluado no declara licencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/ds_voxceleb2_fcaps_1n_smoke
+- Modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/ds_voxceleb2_fcaps_1n_smoke
 - Indice de ejecuciones VoiceCLAP del autor: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo ni sobre la serie VoiceCLAP; los unicos resultados obtenidos corresponden a contenidos sin relacion (productos de cosmetica), por lo que no se incluyen.

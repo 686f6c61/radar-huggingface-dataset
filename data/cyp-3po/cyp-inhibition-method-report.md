@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cyp-3po/cyp-inhibition-method-report` es un repositorio de HuggingFace que documenta la metodología de una participación en el track de predicción por regresión del OpenADMET CYP Inhibition Challenge. No contiene pesos de un modelo de lenguaje ni un pipeline de inferencia publicable: es un informe técnico preliminar de un ensemble de modelos de grafos orientado a predecir la inhibición de isoenzimas del citocromo P450 (CYP1A2, CYP2C9, CYP2D6 y CYP3A4), una familia de dianas clave en la evaluación ADMET de candidatos farmacológicos.
+`cyp-3po/cyp-inhibition-method-report` es un repositorio de Hugging Face que documenta la metodología de una participación en el track de predicción por regresión del OpenADMET CYP Inhibition Challenge. No contiene pesos de un modelo de lenguaje ni un pipeline de inferencia publicable: es un informe técnico preliminar de un ensemble de modelos de grafos orientado a predecir la inhibición de isoenzimas del citocromo P450 (CYP1A2, CYP2C9, CYP2D6 y CYP3A4), una familia de dianas clave en la evaluación ADMET de candidatos farmacológicos.
 
 El autor (`cyp-3po`) reporta un ensemble de 76 checkpoints independientes de tipo MolE (graph transformer) distribuidos en seis brazos arquitectónicamente heterogéneos, combinados por endpoint y con calibración de localización y dispersión frente a los retornos del propio leaderboard. El resultado macro reportado es un MA-ST-RAE de 0,4048, con valores por endpoint entre 0,3469 (CYP2C9) y 0,4666 (CYP2D6), y correlaciones de Spearman entre 0,543 (CYP2D6) y 0,863 (CYP3A4).
 
@@ -85,7 +85,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cyp-3po/cyp-inhibition-method-report
+- Repositorio en Hugging Face: https://huggingface.co/cyp-3po/cyp-inhibition-method-report
 - OpenADMET CYP Inhibition Challenge: no disponible en la información proporcionada
 - Paper o publicación asociada: no disponible en la información proporcionada
 - Repositorio de código: no disponible en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `YaTharThShaRma999/TTS_new` es un submisión al Hub de HuggingFace realizada por el usuario YaTharThShaRma999, con un tamaño de 154.770.624 parámetros (aproximadamente 155 millones) y un peso total de 0,6 GB en formato safetensors. A pesar de su nombre, el pipeline declarado es `text-generation` y los tags incluyen `llama`, lo que sugiere una arquitectura basada en Llama, aunque no se proporciona ninguna documentación técnica en la model card, que es una plantilla genérica sin rellenar. El autor ha publicado otros modelos relacionados con síntesis de voz (Orpheus TTS, un Speech-LLM basado en Llama, y un modelo AWQ de 197M), por lo que es plausible que este modelo esté orientado a text-to-speech, pero no hay confirmación oficial. La relevancia actual es limitada debido a la ausencia total de información sobre entrenamiento, capacidades y licencia, lo que impide su uso en producción sin una evaluación previa.
+El modelo `YaTharThShaRma999/TTS_new` es un submisión al Hub de Hugging Face realizada por el usuario YaTharThShaRma999, con un tamaño de 154.770.624 parámetros (aproximadamente 155 millones) y un peso total de 0,6 GB en formato safetensors. A pesar de su nombre, el pipeline declarado es `text-generation` y los tags incluyen `llama`, lo que sugiere una arquitectura basada en Llama, aunque no se proporciona ninguna documentación técnica en la model card, que es una plantilla genérica sin rellenar. El autor ha publicado otros modelos relacionados con síntesis de voz (Orpheus TTS, un Speech-LLM basado en Llama, y un modelo AWQ de 197M), por lo que es plausible que este modelo esté orientado a text-to-speech, pero no hay confirmación oficial. La relevancia actual es limitada debido a la ausencia total de información sobre entrenamiento, capacidades y licencia, lo que impide su uso en producción sin una evaluación previa.
 
 ## Especificaciones técnicas
 
@@ -38,7 +38,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - Con 154,7 millones de parámetros, el modelo es relativamente pequeño. En precisión fp16, el peso ocuparía aproximadamente 309 MB (154.770.624 × 2 bytes), lo que cabe en cualquier GPU consumer moderna (por ejemplo, RTX 3060, RTX 4060, etc.) y también en CPU con suficiente RAM.
 - El tamaño del repositorio es de 0,6 GB, lo que sugiere que los pesos están en una precisión estándar (fp16 o bf16) sin cuantización adicional.
 - No se especifican requisitos de VRAM oficiales, pero por tamaño, una GPU con al menos 2 GB de VRAM sería suficiente para inferencia básica.
-- Opciones de despliegue: al ser un modelo de transformers, puede ejecutarse con librerías como HuggingFace Transformers, vLLM, TGI o llama.cpp (si se convierte a GGUF). No hay información sobre latencia o throughput.
+- Opciones de despliegue: al ser un modelo de transformers, puede ejecutarse con librerías como Hugging Face Transformers, vLLM, TGI o llama.cpp (si se convierte a GGUF). No hay información sobre latencia o throughput.
 
 ## Comparativa con modelos similares
 
@@ -54,6 +54,6 @@ No se dispone de información sobre modelos comparables. El autor ha publicado o
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/YaTharThShaRma999/TTS_new)
+- [Modelo en Hugging Face](https://huggingface.co/YaTharThShaRma999/TTS_new)
 - [Orpheus TTS (otro modelo del autor)](https://huggingface.co/YaTharThShaRma999/orpheus_exl2_4bit)
 - [pretrained_tts_awq (otro modelo del autor)](https://huggingface.co/YaTharThShaRma999/pretrained_tts_awq)

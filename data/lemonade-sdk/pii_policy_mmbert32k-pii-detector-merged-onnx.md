@@ -94,7 +94,7 @@ No se dispone de datos sobre otros modelos de clasificación de PII comparables 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [lemonade-sdk/pii_policy_mmbert32k-pii-detector-merged-onnx](https://huggingface.co/lemonade-sdk/pii_policy_mmbert32k-pii-detector-merged-onnx)
+- Repositorio de Hugging Face: [lemonade-sdk/pii_policy_mmbert32k-pii-detector-merged-onnx](https://huggingface.co/lemonade-sdk/pii_policy_mmbert32k-pii-detector-merged-onnx)
 - Clasificador original: [llm-semantic-router/mmbert32k-pii-detector-merged](https://huggingface.co/llm-semantic-router/mmbert32k-pii-detector-merged)
 - Proyecto Lemonade (GitHub): [lemonade-sdk/lemonade](https://github.com/lemonade-sdk/lemonade)
 - Documentación de políticas de router (DeepWiki): [Router Policies (collection.router)](https://deepwiki.com/lemonade-sdk/lemonade/5.7-router-policies-(collection.router))

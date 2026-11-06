@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WAN-GDE es un adaptador LoRA para generación de imágenes a partir de texto, publicado en HuggingFace por el usuario CH522. Se basa en el modelo base `rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v`, un refinamiento de la familia Wan2.2 de modelos de difusión de video e imagen desarrollados por Alibaba. El adaptador está diseñado para integrarse con la librería `diffusers` y se distribuye bajo licencia Apache-2.0.
+WAN-GDE es un adaptador LoRA para generación de imágenes a partir de texto, publicado en Hugging Face por el usuario CH522. Se basa en el modelo base `rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v`, un refinamiento de la familia Wan2.2 de modelos de difusión de video e imagen desarrollados por Alibaba. El adaptador está diseñado para integrarse con la librería `diffusers` y se distribuye bajo licencia Apache-2.0.
 
 La relevancia de este modelo radica en su capacidad para extender o modificar el comportamiento del modelo base mediante un ajuste de bajo rango, permitiendo a desarrolladores e investigadores personalizar la generación de imágenes sin necesidad de reentrenar el modelo completo. Sin embargo, la documentación publicada es extremadamente escasa: no se especifican los datos de entrenamiento, el prompt de instancia ni los resultados de evaluación, lo que limita su uso directo en producción sin una validación previa.
 
@@ -29,7 +29,7 @@ No se dispone de informacion sobre el conjunto de datos de entrenamiento, el num
 
 - Generacion de imagenes a partir de descripciones textuales, aprovechando el modelo base Wan2.2.
 - Ajuste fino de bajo rango que permite modificar el estilo o el comportamiento del modelo base sin reentrenamiento completo.
-- Compatible con el ecosistema `diffusers` de HuggingFace, lo que facilita su integracion en pipelines existentes.
+- Compatible con el ecosistema `diffusers` de Hugging Face, lo que facilita su integracion en pipelines existentes.
 - No se documentan capacidades adicionales como tool calling, agentes, razonamiento multimodal o soporte multilingue.
 
 ## Casos de uso
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa rigurosa. Existen otros LoRAs de la familia Wan2.2 en HuggingFace y Civitai, pero no se conocen sus parametros ni rendimiento. Se recomienda consultar el tag `wan2.2` en plataformas como Civitai para explorar alternativas, aunque los datos comparativos no estan disponibles en la informacion proporcionada.
+No se dispone de informacion suficiente para realizar una comparativa rigurosa. Existen otros LoRAs de la familia Wan2.2 en Hugging Face y Civitai, pero no se conocen sus parametros ni rendimiento. Se recomienda consultar el tag `wan2.2` en plataformas como Civitai para explorar alternativas, aunque los datos comparativos no estan disponibles en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 

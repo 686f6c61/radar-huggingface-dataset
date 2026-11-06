@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento comparativos. A nivel cualitativo, Mew1-2.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/Unmid/Mew1-2.6B-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/Unmid/Mew1-2.6B-GGUF
 - Checkpoint base BF16: https://huggingface.co/Unmid/Mew1-2.6B
 - Cuantizaciones con matriz de importancia (mradermacher): https://huggingface.co/mradermacher/Mew1-2.6B-i1-GGUF
 - Modelo origen LiquidAI/LFM2.5-2.6B: https://huggingface.co/LiquidAI/LFM2.5-2.6B

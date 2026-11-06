@@ -35,7 +35,7 @@ No se dispone de información pública sobre el dataset de entrenamiento, el nú
 - Detección de figuras y tablas: emite bounding boxes y representación HTML de tablas y figuras presentes en la página.
 - Procesamiento de imágenes: acepta imágenes de páginas de documentos como entrada (pipeline `image-text-to-text`).
 - Generación de texto estructurado: salida en JSON, adecuada para integración programática.
-- Multilingüe: no, solo inglés (según los metadatos de HuggingFace).
+- Multilingüe: no, solo inglés (según los metadatos de Hugging Face).
 - Tool calling / agentes: no documentado en la información disponible.
 
 ## Casos de uso

@@ -6,7 +6,7 @@ El modelo `unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_b
 
 La particularidad tecnica del checkpoint es doble: por un lado, los embeddings de entrada y la cabeza de lenguaje (LM head) se reinicializan desde el Phi-1.5 original de Microsoft, mientras que el resto de pesos del transformer se conservan del modelo ajustado de locuslab; por otro, la funcion de perdida combina un termino de token IHL (Inverted Harmonic Loss, presumiblemente) sobre el conjunto de olvido con una cross-entropy ponderada por 1.0 sobre el conjunto de retencion. El resultado es un modelo autonomo de 1.418 millones de parametros que busca eliminar la memorizacion de datos concretos sin degradar en exceso el rendimiento general.
 
-Es relevante ahora porque el desaprendizaje selectivo es un area activa de investigacion en privacidad y cumplimiento normativo (derecho al olvido en el RGPD), y este checkpoint permite reproducir y comparar estrategias de reset de embeddings frente a otros metodos de unlearning. No obstante, es un artefacto de investigacion, sin pipeline declarado, sin descargas ni interacciones en HuggingFace, y sin benchmarks publicados en la informacion disponible.
+Es relevante ahora porque el desaprendizaje selectivo es un area activa de investigacion en privacidad y cumplimiento normativo (derecho al olvido en el RGPD), y este checkpoint permite reproducir y comparar estrategias de reset de embeddings frente a otros metodos de unlearning. No obstante, es un artefacto de investigacion, sin pipeline declarado, sin descargas ni interacciones en Hugging Face, y sin benchmarks publicados en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch12
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch12
 - Modelo base ajustado: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original de Microsoft: https://huggingface.co/microsoft/phi-1_5
 - Benchmark TOFU (referencia del autor del modelo base): https://huggingface.co/datasets/locuslab/TOFU

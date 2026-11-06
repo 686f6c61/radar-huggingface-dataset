@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo / metodo | Enfoque | Requiere logprobs del modelo objetivo | Requiere multiples generaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `artefactory/epr-falcon3` | Regresion logistica sobre la entropia truncada de las top-15 log-probabilidades (1 caracteristica) | Si, `top_logprobs=15` | No | MIT | HuggingFace (`artefactory/epr-falcon3`), 0 descargas |
+| `artefactory/epr-falcon3` | Regresion logistica sobre la entropia truncada de las top-15 log-probabilidades (1 caracteristica) | Si, `top_logprobs=15` | No | MIT | Hugging Face (`artefactory/epr-falcon3`), 0 descargas |
 | SelfCheckGPT | Consistencia entre varias generaciones muestreadas del mismo prompt (caja negra) | No | Si | no disponible | Repositorio publico de los autores |
 | Entropia semantica (Kuhn et al.) | Entropia sobre agrupaciones semanticas de respuestas muestreadas | No | Si | no disponible | Codigo publico del grupo OATML |
 
@@ -91,7 +91,7 @@ No se dispone de cifras de rendimiento comparables entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/artefactory/epr-falcon3
+- Modelo en Hugging Face: https://huggingface.co/artefactory/epr-falcon3
 - Modelo objetivo: https://huggingface.co/tiiuae/Falcon3-10B-Instruct
 - Libreria `artefactual`: https://github.com/artefactory/artefactual
 - Incidencias y contacto: https://github.com/artefactory/artefactual/issues

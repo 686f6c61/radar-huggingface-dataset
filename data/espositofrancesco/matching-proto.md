@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`espositofrancesco/matching-proto` es un repositorio de HuggingFace que contiene una implementación reducida de una red MobileViT orientada a tareas de *matching* (emparejamiento entre entradas, presumiblemente pares de imágenes o representaciones). Lo publica el usuario espositofrancesco bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para *smoke tests*.
+`espositofrancesco/matching-proto` es un repositorio de Hugging Face que contiene una implementación reducida de una red MobileViT orientada a tareas de *matching* (emparejamiento entre entradas, presumiblemente pares de imágenes o representaciones). Lo publica el usuario espositofrancesco bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para *smoke tests*.
 
 La arquitectura declarada es MobileViT en escala "nano", con atención de tipo *grouped query*, fusión bilineal, activación *approx gelu* y normalización RMSNorm. El repositorio incluye el código (`run.py`), la configuración de arquitectura (`config.json`), los hiperparámetros de entrenamiento por defecto (`training_args.json`) y un `model.safetensors` de inicialización.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| espositofrancesco/matching-proto | 16.576 | no disponible | sin benchmarks | Apache 2.0 | HuggingFace (prototipo) |
+| espositofrancesco/matching-proto | 16.576 | no disponible | sin benchmarks | Apache 2.0 | Hugging Face (prototipo) |
 | MobileViT original (Apple) | ~1,3 M – 5,6 M según variante | no aplica | benchmarks en ImageNet (no comparables aquí) | Apple Sample Code / MIT según release | Repos oficiales |
 | Otros modelos de matching visual | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,5 +81,5 @@ La comparación directa no es significativa: `matching-proto` es un prototipo si
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/espositofrancesco/matching-proto
+- Repositorio en Hugging Face: https://huggingface.co/espositofrancesco/matching-proto
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

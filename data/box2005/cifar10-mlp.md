@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CIFAR-10 MLP es un modelo de red neuronal completamente conectada (multilayer perceptron) entrenado para clasificación de imágenes del conjunto CIFAR-10 en 10 categorías. Lo publica el usuario Box2005 en HuggingFace y su propósito es didáctico o de referencia: se trata de un clasificador pequeño, con 402.250 parámetros, que sirve como línea base para comparar con arquitecturas convolucionales sobre el mismo dataset.
+CIFAR-10 MLP es un modelo de red neuronal completamente conectada (multilayer perceptron) entrenado para clasificación de imágenes del conjunto CIFAR-10 en 10 categorías. Lo publica el usuario Box2005 en Hugging Face y su propósito es didáctico o de referencia: se trata de un clasificador pequeño, con 402.250 parámetros, que sirve como línea base para comparar con arquitecturas convolucionales sobre el mismo dataset.
 
 El modelo recibe imágenes de 32x32x3 píxeles, las aplana a un vector de 3072 valores, las normaliza (división por 255 y estandarización por columna con media y desviación típica del conjunto de entrenamiento) y las pasa por dos capas ocultas de 128 y 64 neuronas con activación ReLU, seguidas de una capa de salida de 10 logits. No incorpora mecanismos de atención ni capas convolucionales; es un MLP puro.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 
 | Modelo | Parametros | Contexto / entrada | Precision CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CIFAR-10 MLP (Box2005) | 402.250 | Imagen 32x32x3 | 0,4658 (test) | no disponible | HuggingFace |
+| CIFAR-10 MLP (Box2005) | 402.250 | Imagen 32x32x3 | 0,4658 (test) | no disponible | Hugging Face |
 | ResNet-20 (referencia habitual) | ~0,27 M | Imagen 32x32x3 | no disponible en esta ficha | varía según implementacion | Multiples repositorios |
 | VGG-11 (referencia habitual) | ~9,2 M | Imagen 32x32x3 | no disponible en esta ficha | varía según implementacion | Multiples repositorios |
 
@@ -85,4 +85,4 @@ No se dispone de datos de benchmarks de los modelos alternativos en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Box2005/cifar10-mlp
+- Hugging Face: https://huggingface.co/Box2005/cifar10-mlp

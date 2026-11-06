@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `Tantan-porte/iptv-processor` alojado en HuggingFace no corresponde a un modelo de inteligencia artificial, sino a una aplicación de software para el procesamiento de listas IPTV (televisión por protocolo de internet). El autor, Tantan-porte, ha publicado una herramienta con interfaz web en árabe que permite gestionar y transformar fuentes de canales de televisión en diferentes formatos. No se trata de un modelo de lenguaje, visión u otro tipo de IA, por lo que las especificaciones técnicas habituales de un modelo (arquitectura, parámetros, contexto) no son aplicables.
+El repositorio `Tantan-porte/iptv-processor` alojado en Hugging Face no corresponde a un modelo de inteligencia artificial, sino a una aplicación de software para el procesamiento de listas IPTV (televisión por protocolo de internet). El autor, Tantan-porte, ha publicado una herramienta con interfaz web en árabe que permite gestionar y transformar fuentes de canales de televisión en diferentes formatos. No se trata de un modelo de lenguaje, visión u otro tipo de IA, por lo que las especificaciones técnicas habituales de un modelo (arquitectura, parámetros, contexto) no son aplicables.
 
-La aplicación, según la model card, soporta cuatro formatos de entrada (M3U/M3U8, Xtream Codes, dirección MAC y Stalker Portal) y cinco formatos de exportación (M3U, Xtream, Enigma2, Text y CSV). Incluye además un reproductor de vídeo integrado y una interfaz oscura en árabe. Aunque el repositorio está alojado en HuggingFace, su naturaleza es completamente distinta a la de un modelo de IA, por lo que esta ficha se centrará en describir sus características como herramienta de software, indicando explícitamente los campos que no aplican.
+La aplicación, según la model card, soporta cuatro formatos de entrada (M3U/M3U8, Xtream Codes, dirección MAC y Stalker Portal) y cinco formatos de exportación (M3U, Xtream, Enigma2, Text y CSV). Incluye además un reproductor de vídeo integrado y una interfaz oscura en árabe. Aunque el repositorio está alojado en Hugging Face, su naturaleza es completamente distinta a la de un modelo de IA, por lo que esta ficha se centrará en describir sus características como herramienta de software, indicando explícitamente los campos que no aplican.
 
 ## Especificaciones tecnicas
 
@@ -69,6 +69,6 @@ No aplica, ya que no es un modelo de IA. Como herramienta de procesamiento IPTV,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tantan-porte/iptv-processor
+- Repositorio en Hugging Face: https://huggingface.co/Tantan-porte/iptv-processor
 - Proyecto relacionado (no afiliado): https://github.com/iptv-org/iptv (colección de canales IPTV públicos)
 - Proyecto relacionado (no afiliado): https://github.com/euzu/tuliprox (procesador de listas IPTV en Rust)

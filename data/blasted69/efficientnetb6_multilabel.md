@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `blasted69/efficientnetb6_multilabel` es una variante del EfficientNet-B6, una arquitectura de red neuronal convolucional desarrollada por Google, publicada en HuggingFace por el usuario `blasted69`. El sufijo "multilabel" indica que esta versión está adaptada para predecir múltiples etiquetas independientes por imagen, a diferencia del modelo original de Google, que clasifica una única clase en ImageNet.
+El modelo `blasted69/efficientnetb6_multilabel` es una variante del EfficientNet-B6, una arquitectura de red neuronal convolucional desarrollada por Google, publicada en Hugging Face por el usuario `blasted69`. El sufijo "multilabel" indica que esta versión está adaptada para predecir múltiples etiquetas independientes por imagen, a diferencia del modelo original de Google, que clasifica una única clase en ImageNet.
 
 El modelo se distribuye como un archivo TFLite con un tamaño de repositorio de 0.1 GB. Se publica bajo licencia MIT, lo que permite uso comercial y modificación sin restricciones. No se especifica el número de parámetros, el conjunto de datos de entrenamiento ni ninguna métrica de evaluación, por lo que la información disponible es limitada.
 
@@ -60,13 +60,13 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Comparativa con modelos similares
 
-La comparativa se basa en los modelos originales de Google en HuggingFace. No se dispone de datos de rendimiento ni parámetros confirmados para todos.
+La comparativa se basa en los modelos originales de Google en Hugging Face. No se dispone de datos de rendimiento ni parámetros confirmados para todos.
 
 | Modelo | Parámetros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| blasted69/efficientnetb6_multilabel | No disponible | Clasificación multilabel | MIT | HuggingFace |
-| google/efficientnet-b6 | No disponible | Clasificación single-label (ImageNet) | No disponible | HuggingFace |
-| google/efficientnet-b0 | No disponible | Clasificación single-label (ImageNet) | No disponible | HuggingFace |
+| blasted69/efficientnetb6_multilabel | No disponible | Clasificación multilabel | MIT | Hugging Face |
+| google/efficientnet-b6 | No disponible | Clasificación single-label (ImageNet) | No disponible | Hugging Face |
+| google/efficientnet-b0 | No disponible | Clasificación single-label (ImageNet) | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 

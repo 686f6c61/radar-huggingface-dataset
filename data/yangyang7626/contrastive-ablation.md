@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yangyang7626/contrastive-ablation` es un repositorio de HuggingFace publicado por el usuario `yangyang7626` que contiene una implementación propia de un modelo CNN-Transformer etiquetado como "contrastive", acompañada de su configuración de arquitectura y de un checkpoint de inicialización. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+`yangyang7626/contrastive-ablation` es un repositorio de Hugging Face publicado por el usuario `yangyang7626` que contiene una implementación propia de un modelo CNN-Transformer etiquetado como "contrastive", acompañada de su configuración de arquitectura y de un checkpoint de inicialización. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 El recuento real de parámetros del archivo de pesos es de 24.832 parámetros, lo que sitúa al modelo en una escala minúscula, muy lejos de lo que sugiere la etiqueta interna `scale: giant` registrada en la configuración. Esta contradicción entre la escala declarada y el tamaño efectivo es un dato relevante para cualquier evaluador.
 
@@ -51,7 +51,7 @@ En cuanto al entrenamiento, el repositorio incluye un `training_args.json` con u
 - Estudio de ablación en aprendizaje contrastivo: el repositorio está etiquetado como "contrastive ablation" y su configuración permite comparar variantes (atención grouped query frente a atención completa, gated fusion frente a concatenación, scalenorm frente a otras normalizaciones) manteniendo constantes los datos, el presupuesto de ajuste y las semillas, tal como recomienda el propio autor.
 - Plantilla de investigación para arquitecturas híbridas CNN-Transformer: sirve como esqueleto de código para reproducir y modificar un diseño que combina convolución y atención, útil en investigación académica sobre eficiencia.
 - Validación de tooling interno: comprobar integraciones de serialización, versionado de checkpoints y monitorización de experimentos con un artefacto de tamaño despreciable antes de escalar a modelos reales.
-- Docencia y formación: ilustrar en un aula o taller la diferencia entre un checkpoint de inicialización y un modelo entrenado, así como la estructura de un repositorio de modelo en HuggingFace (`config.json`, `training_args.json`, `model.safetensors`).
+- Docencia y formación: ilustrar en un aula o taller la diferencia entre un checkpoint de inicialización y un modelo entrenado, así como la estructura de un repositorio de modelo en Hugging Face (`config.json`, `training_args.json`, `model.safetensors`).
 - Reproducción de líneas base: punto de partida neutro para construir una comparativa de capacidad equivalente, siempre que se entrene y se documenten los resultados por separado de los valores por defecto del repositorio.
 - Auditoría de licencias y de metadata: caso práctico para revisar términos de uso (MIT) y detectar inconsistencias entre la documentación declarada y el artefacto real publicado.
 
@@ -90,5 +90,5 @@ No disponible. No se conocen modelos comparables en la misma categoría, ya que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yangyang7626/contrastive-ablation
+- Hugging Face: https://huggingface.co/yangyang7626/contrastive-ablation
 - Los resultados de la búsqueda web realizada no contienen referencias relevantes al modelo: los enlaces devueltos corresponden a la plataforma Zhihu y a un foro de motocicletas, sin relación con este repositorio. No se dispone de papers, blogs, repositorios de código ni demos adicionales.

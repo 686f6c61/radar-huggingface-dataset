@@ -81,5 +81,5 @@ No se dispone de datos verificables de rendimiento de otros modelos de clasifica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malemehaute/vit-base-ham10000-skin-lesion
+- Modelo en Hugging Face: https://huggingface.co/malemehaute/vit-base-ham10000-skin-lesion
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos asociados al modelo.

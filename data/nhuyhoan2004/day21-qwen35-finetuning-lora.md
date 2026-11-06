@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA de fine-tuning supervisado (SFT) construido sobre el modelo base `unsloth/Qwen3.5-4B`, un modelo de lenguaje de 4 mil millones de parametros de la familia Qwen3.5. El adaptador fue desarrollado por el usuario `nhuyhoan2004` y esta publicado en HuggingFace con la libreria PEFT, lo que indica que se trata de un checkpoint de pesos diferenciales que debe combinarse con el modelo base para su uso.
+Este modelo es un adaptador LoRA de fine-tuning supervisado (SFT) construido sobre el modelo base `unsloth/Qwen3.5-4B`, un modelo de lenguaje de 4 mil millones de parametros de la familia Qwen3.5. El adaptador fue desarrollado por el usuario `nhuyhoan2004` y esta publicado en Hugging Face con la libreria PEFT, lo que indica que se trata de un checkpoint de pesos diferenciales que debe combinarse con el modelo base para su uso.
 
 El modelo se enmarca en un contexto de formacion o taller practico (el nombre "day21" sugiere un dia concreto de un curso o reto de fine-tuning de LLMs con LoRA/QLoRA). Su relevancia radica en que demuestra el flujo de trabajo de adaptacion eficiente de un modelo moderno como Qwen3.5 mediante tecnicas de parametros reducidos, permitiendo personalizar el comportamiento del modelo con recursos de hardware limitados. La informacion publica disponible es minima: la model card no contiene detalles sobre el dataset de entrenamiento, los hiperparametros utilizados ni las capacidades especificas del adaptador resultante.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Al ser un adaptador LoRA, los requisitos de hardware son los del modelo base Qwen3.5-4B mas el overhead del adaptador.
 - El entrenamiento del adaptador se realizo con tan solo 5 GB de VRAM segun la documentacion de Unsloth, lo que sugiere que la inferencia puede ejecutarse en GPUs de consumo como RTX 3060, RTX 4060 o superiores.
 - Para inferencia, se recomienda al menos 6-8 GB de VRAM para el modelo base en precision completa, o menos si se usa cuantizacion.
-- Opciones de despliegue: al ser un adaptador PEFT, debe cargarse junto con el modelo base mediante la libreria `peft` de HuggingFace Transformers. Tambien puede convertirse a formato GGUF para su uso con llama.cpp u Ollama, aunque no se proporcionan instrucciones especificas.
+- Opciones de despliegue: al ser un adaptador PEFT, debe cargarse junto con el modelo base mediante la libreria `peft` de Hugging Face Transformers. Tambien puede convertirse a formato GGUF para su uso con llama.cpp u Ollama, aunque no se proporcionan instrucciones especificas.
 - No se dispone de datos de latencia o throughput para este adaptador concreto.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No disponible. No se dispone de informacion sobre otros adaptadores LoRA compara
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/nhuyhoan2004/day21-qwen35-finetuning-lora
+- Pagina del modelo en Hugging Face: https://huggingface.co/nhuyhoan2004/day21-qwen35-finetuning-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Documentacion de fine-tuning de Qwen3.5 de Unsloth: https://unsloth.ai/docs/models/qwen3.5/fine-tune
 - Guia de fine-tuning con 5GB VRAM: https://mike.gold/notes/x-bookmarks/ai/fine-tune-qwen35-with-5gb-vram

@@ -61,7 +61,7 @@ No disponible. No existe información sobre modelos comparables, ya que este rep
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/svpe-trov/paper_020108738_grounded_language](https://huggingface.co/svpe-trov/paper_020108738_grounded_language)
+- Repositorio en Hugging Face: [https://huggingface.co/svpe-trov/paper_020108738_grounded_language](https://huggingface.co/svpe-trov/paper_020108738_grounded_language)
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web. Los resultados de búsqueda incluyen papers sobre *grounded language* como [SleepVLM](https://arxiv.org/abs/2603.26738) y [Mind's Eye](https://arxiv.org/abs/2210.05359), pero no están relacionados con este repositorio.## Resumen
 
 Este repositorio, publicado por el usuario `svpe-trov`, contiene un único artefacto: un documento Markdown titulado `paper_020108738_grounded_language.md`. No se trata de un modelo de lenguaje entrenado ni de un sistema de IA ejecutable, sino de un documento académico en formato Typst que aborda el tema de *grounded language* (lenguaje fundamentado). La model card indica que el documento sigue una estructura de artículo científico (abstract, introducción, preliminares, método, experimentos y discusión) y emplea un estilo de escritura detallado y descriptivo, con citas en formato Endnote.

@@ -6,7 +6,7 @@ El repositorio `sentry-ai/nz-sovereign-mistral-lora` es un adaptador LoRA sobre 
 
 En el momento de redactar esta ficha, el repositorio es un placeholder: no contiene pesos, no se ha entrenado nada y el autor advierte explícitamente de que no debe citarse como resultado. El entrenamiento está previsto para noviembre de 2026, como paso 5 del pipeline documentado en el repositorio de GitHub asociado. La licencia apache-2.0 es provisional y se reconciliará con la del modelo base elegido, que aún no está fijado.
 
-La relevancia de este proyecto radica en su enfoque de soberanía digital: evita depender de APIs externas, que romperían tanto la soberanía de datos como la trazabilidad energética del cómputo. Publicar los pesos en HuggingFace se considera distribución, no inferencia alojada, por lo que no vulnera esa restricción.
+La relevancia de este proyecto radica en su enfoque de soberanía digital: evita depender de APIs externas, que romperían tanto la soberanía de datos como la trazabilidad energética del cómputo. Publicar los pesos en Hugging Face se considera distribución, no inferencia alojada, por lo que no vulnera esa restricción.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No disponible. No se han publicado comparaciones con otros adaptadores LoRA sobr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sentry-ai/nz-sovereign-mistral-lora
+- Repositorio Hugging Face: https://huggingface.co/sentry-ai/nz-sovereign-mistral-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/sentry-ai/nz-sovereign-sft
 - Repositorio GitHub del pipeline: https://github.com/JamesWeb3/sovereign-agentic-pipeline
 - Sitio de Sentry AI: https://sentrysolutions.ai/

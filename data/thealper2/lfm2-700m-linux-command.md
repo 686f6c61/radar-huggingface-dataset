@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`thealper2/lfm2-700m-linux-command` es un ajuste fino completo de `LiquidAI/LFM2-700M` orientado a una tarea muy concreta: traducir una instruccion de Linux en lenguaje natural a un unico comando de shell. La salida objetivo es exclusivamente el comando, sin explicacion ni texto adicional. El autor es el usuario de HuggingFace `thealper2` y el modelo se publico con licencia LFM 1.0, esta etiquetado solo para ingles y acumula 0 descargas y 0 likes en el momento de redactar esta ficha.
+`thealper2/lfm2-700m-linux-command` es un ajuste fino completo de `LiquidAI/LFM2-700M` orientado a una tarea muy concreta: traducir una instruccion de Linux en lenguaje natural a un unico comando de shell. La salida objetivo es exclusivamente el comando, sin explicacion ni texto adicional. El autor es el usuario de Hugging Face `thealper2` y el modelo se publico con licencia LFM 1.0, esta etiquetado solo para ingles y acumula 0 descargas y 0 likes en el momento de redactar esta ficha.
 
 El modelo parte de la arquitectura LFM2, un transformer hibrido de 16 capas que combina atencion completa en las capas 2, 5, 8, 10, 12 y 14 con convoluciones cortas con compuerta en el resto. El checkpoint final tiene 742.489.344 parametros totales (641.826.048 sin contar embeddings), hidden size de 1536, 24 cabezas de atencion y 8 cabezas KV. El modelo base declara una longitud de contexto de 128.000 tokens, aunque el ajuste fino se realizo con una longitud maxima de secuencia de 128 tokens.
 
@@ -18,7 +18,7 @@ Su relevancia es practica: convierte un modelo base de proposito general en un g
 | Longitud de contexto | 128.000 tokens en el modelo base; el ajuste fino uso una longitud maxima de 128 tokens |
 | Tipos de cuantizacion | No disponible en el repositorio; solo se publican pesos en bfloat16 (safetensors) |
 | Idiomas soportados | Ingles (`en`) |
-| Licencia | `lfm1.0` (etiquetada como `other` en HuggingFace) |
+| Licencia | `lfm1.0` (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | Safetensors, via `transformers` |
 | Hidden size / cabezas / cabezas KV | 1536 / 24 / 8 |
 | Vocabulario | 65.536 |
@@ -95,8 +95,8 @@ La informacion disponible solo permite comparar el modelo ajustado con su propio
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `thealper2/lfm2-700m-linux-command` | 742.489.344 | 128.000 en base; ajustado a 128 tokens de secuencia | NL a comando de shell, salida unica | `lfm1.0` | HuggingFace, safetensors, 0 descargas |
-| `LiquidAI/LFM2-700M` | No disponible en la informacion proporcionada | 128.000 | Generacion de texto de proposito general | `lfm1.0` | HuggingFace (modelo base) |
+| `thealper2/lfm2-700m-linux-command` | 742.489.344 | 128.000 en base; ajustado a 128 tokens de secuencia | NL a comando de shell, salida unica | `lfm1.0` | Hugging Face, safetensors, 0 descargas |
+| `LiquidAI/LFM2-700M` | No disponible en la informacion proporcionada | 128.000 | Generacion de texto de proposito general | `lfm1.0` | Hugging Face (modelo base) |
 | Otros modelos comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La diferencia funcional medible entre ambos es la de la tabla de benchmarks: el ajuste eleva el exact match de 0,0061 a 0,2910, la validez de comando de 0,4763 a 0,9939 y elimina por completo la salida en prosa.
@@ -110,14 +110,14 @@ La diferencia funcional medible entre ambos es la de la tabla de benchmarks: el 
 - Limitacion de contexto practico: aunque el modelo base declara 128.000 tokens, el ajuste fino se hizo con `max_sequence_length` de 128, por lo que el comportamiento fiable esta acotado a prompts y respuestas muy cortos, coherentes con la distribucion del corpus (p99 de 87 tokens, maximo de 403).
 - Idioma: entrenado y etiquetado unicamente en ingles. No hay evidencia de funcionamiento correcto con instrucciones en castellano u otros idiomas.
 - Datos de entrenamiento limitados: solo 11.756 ejemplos de entrenamiento procedentes de dos conjuntos publicos, lo que restringe la diversidad de utilidades y de variantes de sintaxis cubiertas.
-- Restricciones de licencia: la licencia es `lfm1.0` (etiquetada como `other` en HuggingFace), la misma del modelo base. Es imprescindible revisar el texto completo en el enlace de licencia antes de cualquier uso comercial, ya que las condiciones no se detallan en la model card.
+- Restricciones de licencia: la licencia es `lfm1.0` (etiquetada como `other` en Hugging Face), la misma del modelo base. Es imprescindible revisar el texto completo en el enlace de licencia antes de cualquier uso comercial, ya que las condiciones no se detallan en la model card.
 - Validacion insuficiente por terceros: 0 descargas y 0 likes, y todas las metricas son autoevaluadas por el autor sobre su propio split de test. No hay replicacion independiente.
 - Caveat de integracion: los pesos solo se publican en bfloat16 y safetensors. No hay GGUF ni cuantizaciones listas, lo que obliga a trabajo adicional para desplegar en entornos de bajos recursos basados en llama.cpp u Ollama.
 - Caveat de tokenizacion en produccion: si no se aplican las dos precauciones del tokenizador (BOS duplicado y `clean_up_tokenization_spaces=False`), los comandos generados pueden corromperse por espacios eliminados alrededor de la puntuacion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thealper2/lfm2-700m-linux-command
+- Modelo en Hugging Face: https://huggingface.co/thealper2/lfm2-700m-linux-command
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-700M
 - Licencia LFM 1.0: https://huggingface.co/LiquidAI/LFM2-700M/blob/main/LICENSE
 - Dataset `jiacheng-ye/nl2bash`: https://huggingface.co/datasets/jiacheng-ye/nl2bash

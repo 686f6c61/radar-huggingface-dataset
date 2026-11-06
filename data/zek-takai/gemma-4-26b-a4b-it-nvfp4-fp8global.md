@@ -99,6 +99,6 @@ No se dispone de datos de otros modelos comparables en la misma categoria.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zek-Takai/gemma-4-26B-A4B-it-NVFP4-fp8global
+- Hugging Face: https://huggingface.co/Zek-Takai/gemma-4-26B-A4B-it-NVFP4-fp8global
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Patches incluidos en el repositorio (no se proporcionan URLs individuales).

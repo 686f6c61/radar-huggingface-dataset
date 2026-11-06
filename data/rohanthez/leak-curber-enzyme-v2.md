@@ -20,7 +20,7 @@ Es relevante ahora porque Leak-CURBER se presentó como póster en NeurIPS 2026 
 | Idiomas soportados | No aplica (entrada: secuencias proteicas y SMILES de reacción según el benchmark; no hay procesamiento de lenguaje natural) |
 | Licencia | No disponible en el repositorio. La ontología EC procede de ExPASy ENZYME release 02-Sep-2026 (SIB), distribuida bajo CC BY 4.0; el binario de DIAMOND se rige por la licencia de su proyecto original |
 | Formato de pesos | `weights/reranker.pkl` (pickle de scikit-learn) + `bin/diamond` (binario estático ELF linux x86-64) + base de datos DIAMOND construida por `train.py` |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Tamaño del repositorio | 0,2 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-10-26 |
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Sistema | Tipo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| `RohanTheZ/leak-curber-enzyme-v2` | DIAMOND + gradient boosting | No disponible (tabular) | No aplica (50 hits/consulta) | No disponible | HuggingFace, pesos incluidos | Reranker entrenado con folds al 40 % de identidad; CPU |
+| `RohanTheZ/leak-curber-enzyme-v2` | DIAMOND + gradient boosting | No disponible (tabular) | No aplica (50 hits/consulta) | No disponible | Hugging Face, pesos incluidos | Reranker entrenado con folds al 40 % de identidad; CPU |
 | BLASTp/DIAMOND + regla del mejor hit | Alineamiento + mayoría | No aplica | No aplica | Según herramienta | Amplia | Línea base clásica; el reranker se plantea explícitamente como mejora sobre ella |
 | Modelos neuronales de anotación enzimática (familia CLEAN, ProteInfer, DeepEC) | Red neuronal sobre secuencia | No disponible en la información proporcionada | No disponible | Varía por modelo | Varía | No se dispone de comparación numérica verificada en este contexto |
 | Resto de participantes en Leak-CURBER (enzyme classification) | Varía | No disponible | No disponible | No disponible | Artefactos en Zenodo y GitHub del benchmark | Sin resultados publicados en la información disponible |

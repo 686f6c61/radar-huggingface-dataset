@@ -29,7 +29,7 @@ El modelo no ha sido entrenado. El checkpoint incluido es una inicialización al
 
 - Clasificación de secuencias: el modelo está diseñado para tareas de clasificación, aunque sin entrenamiento previo no puede realizar ninguna tarea real.
 - Ejecución de pruebas de humo: el script `predict.py` incluye un ejemplo generado para verificar que el flujo de inferencia funciona.
-- Personalización: al ser una implementación personalizada, requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+- Personalización: al ser una implementación personalizada, requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 - No soporta generación de texto, razonamiento, código, matemáticas, visión, tool calling, agentes ni capacidades multilingües, dado su estado de prototipo sin entrenar.
 
 ## Casos de uso
@@ -39,7 +39,7 @@ El modelo no ha sido entrenado. El checkpoint incluido es una inicialización al
 - Pruebas de integración en entornos de CI/CD: el checkpoint de inicialización puede usarse para verificar que el código de inferencia y los adaptadores personalizados se despliegan sin errores.
 - Enseñanza de arquitecturas Transformer: útil en cursos o talleres para ilustrar los componentes básicos de un Transformer (atención, normalización, activación) con un código legible y minimalista.
 - Exploración de técnicas de compresión extrema: al ser tan pequeño, permite experimentar con cuantización extrema, poda o destilación sin coste computacional significativo.
-- Desarrollo de adaptadores para HuggingFace: la implementación personalizada ofrece un caso práctico para escribir integraciones que permitan cargar modelos no estándar con la API de Transformers.
+- Desarrollo de adaptadores para Hugging Face: la implementación personalizada ofrece un caso práctico para escribir integraciones que permitan cargar modelos no estándar con la API de Transformers.
 
 ## Benchmarks y rendimiento
 
@@ -68,7 +68,7 @@ No se dispone de modelos comparables de la misma categoría (Transformers de ~16
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TimothyHernandez/tiny-transformer-classification
+- Repositorio en Hugging Face: https://huggingface.co/TimothyHernandez/tiny-transformer-classification
 - Proyecto relacionado en GitHub (tiny-transformer de saeeddhqan): https://github.com/saeeddhqan/tiny-transformer/blob/main/classifier_model.py
 - Biblioteca SimpleTransformers: https://github.com/ThilinaRajapakse/simpletransformers
-- Documentación de Transformers de HuggingFace: https://huggingface.co/docs/transformers/index
+- Documentación de Transformers de Hugging Face: https://huggingface.co/docs/transformers/index

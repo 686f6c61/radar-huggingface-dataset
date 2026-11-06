@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-EXL3-4x-DGX-Sparks (este) | ~172B en safetensors (base 755B) | ~800K (819.200) | EXL3 mixta 3/4/5 bits + BF16 | GLM-5.3 License | HuggingFace, 86 descargas |
-| GLM-5.3-EXL3-8x-DGX-Sparks | ~172B en safetensors (base 755B) | 1M | EXL3 4 bits en todos los expertos enrutados | GLM-5.3 License | HuggingFace (repo hermano) |
-| zai-org/GLM-5.3-BF16 | 755B | no disponible | BF16 | GLM-5.3 License | HuggingFace (modelo base oficial) |
+| GLM-5.3-EXL3-4x-DGX-Sparks (este) | ~172B en safetensors (base 755B) | ~800K (819.200) | EXL3 mixta 3/4/5 bits + BF16 | GLM-5.3 License | Hugging Face, 86 descargas |
+| GLM-5.3-EXL3-8x-DGX-Sparks | ~172B en safetensors (base 755B) | 1M | EXL3 4 bits en todos los expertos enrutados | GLM-5.3 License | Hugging Face (repo hermano) |
+| zai-org/GLM-5.3-BF16 | 755B | no disponible | BF16 | GLM-5.3 License | Hugging Face (modelo base oficial) |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (MoE de ~700B cuantizado para hardware distribuido) en la documentación proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace del checkpoint: https://huggingface.co/fiore-lab/GLM-5.3-EXL3-4x-DGX-Sparks
+- Hugging Face del checkpoint: https://huggingface.co/fiore-lab/GLM-5.3-EXL3-4x-DGX-Sparks
 - Repo hermano de 8 nodos: https://huggingface.co/fiore-lab/GLM-5.3-EXL3-8x-DGX-Sparks
 - Banco de expertos a 3 bits: https://huggingface.co/fiore-lab/GLM-5.3-EXL3-Experts-3bit
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3

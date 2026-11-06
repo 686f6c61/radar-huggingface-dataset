@@ -72,7 +72,7 @@ La model card describe el efecto cualitativo de la calibracion (mejor fidelidad 
 
 | Modelo | Parametros | Formato / bits | Tamano | Vision | MTP | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| notnaurw/Qwen3.8-27B-oQ5e-SAGE-ARCS-mtp | 27,78 B | MLX, precision mixta 5 bits (6,0836 bpw) | 21,13 GB | Preservada | Preservada (bf16) | apache-2.0 | Publicado en HuggingFace, 79 descargas |
+| notnaurw/Qwen3.8-27B-oQ5e-SAGE-ARCS-mtp | 27,78 B | MLX, precision mixta 5 bits (6,0836 bpw) | 21,13 GB | Preservada | Preservada (bf16) | apache-2.0 | Publicado en Hugging Face, 79 descargas |
 | Qwen/Qwen3.8-27B (modelo base) | 27,78 B | bf16 | ~55,6 GB (estimado a partir del numero de parametros) | Si | Si | apache-2.0 | Publicado por el autor original |
 | Otras variantes de la coleccion SAGE5 `oQ5e` | no disponible | MLX 5 bits | no disponible | Configurable segun la variante | Configurable segun la variante | no disponible | Referenciadas en la model card, sin datos completos |
 | Alternativas de otros autores del mismo tamano | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | No se dispone de datos en la informacion proporcionada |
@@ -91,7 +91,7 @@ La model card describe el efecto cualitativo de la calibracion (mejor fidelidad 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/notnaurw/Qwen3.8-27B-oQ5e-SAGE-ARCS-mtp
+- Modelo en Hugging Face: https://huggingface.co/notnaurw/Qwen3.8-27B-oQ5e-SAGE-ARCS-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oMLX: https://github.com/jundot/omlx
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada.

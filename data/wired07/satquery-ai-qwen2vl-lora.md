@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`wired07/satquery-ai-qwen2vl-lora` es un adaptador LoRA publicado por el usuario wired07 en HuggingFace, construido sobre el modelo multimodal `unsloth/Qwen2-VL-2B-Instruct-unsloth-bnb-4bit`. Se distribuye en formato PEFT/safetensors, ocupa 0,1 GB en el repositorio, está etiquetado como `text-generation` y fue creado el 12 de septiembre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y no declara licencia ni idiomas soportados.
+`wired07/satquery-ai-qwen2vl-lora` es un adaptador LoRA publicado por el usuario wired07 en Hugging Face, construido sobre el modelo multimodal `unsloth/Qwen2-VL-2B-Instruct-unsloth-bnb-4bit`. Se distribuye en formato PEFT/safetensors, ocupa 0,1 GB en el repositorio, está etiquetado como `text-generation` y fue creado el 12 de septiembre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y no declara licencia ni idiomas soportados.
 
-El propósito declarado del modelo no está documentado: la model card es la plantilla por defecto de HuggingFace, con todos los campos marcados como "More Information Needed". El nombre del repositorio ("satquery-ai") sugiere un ajuste orientado a consultas sobre imágenes de satélite o teledetección, pero no existe ninguna evidencia en el repositorio que lo confirme. Las etiquetas `sft`, `trl` y `unsloth` sí indican que el ajuste se realizó mediante fine-tuning supervisado con el stack Unsloth/TRL sobre el citado modelo base cuantizado a 4 bits.
+El propósito declarado del modelo no está documentado: la model card es la plantilla por defecto de Hugging Face, con todos los campos marcados como "More Information Needed". El nombre del repositorio ("satquery-ai") sugiere un ajuste orientado a consultas sobre imágenes de satélite o teledetección, pero no existe ninguna evidencia en el repositorio que lo confirme. Las etiquetas `sft`, `trl` y `unsloth` sí indican que el ajuste se realizó mediante fine-tuning supervisado con el stack Unsloth/TRL sobre el citado modelo base cuantizado a 4 bits.
 
 Su relevancia práctica es la de un adaptador ligero que hereda la arquitectura Qwen2-VL (resolución dinámica y Multimodal Rotary Position Embedding) para especializar un VLM de ~2B parámetros con un coste de entrenamiento e inferencia muy bajo. Ahora bien, al no publicarse dataset, hiperparámetros, licencia ni evaluación, cualquier uso en producción exige una validación propia previa: un LoRA SFT sin documentar puede degradar capacidades generales del modelo base.
 
@@ -31,7 +31,7 @@ Su relevancia práctica es la de un adaptador ligero que hereda la arquitectura 
 
 El adaptador no define arquitectura propia: es un conjunto de matrices LoRA que se acoplan a las capas del modelo base `unsloth/Qwen2-VL-2B-Instruct-unsloth-bnb-4bit`. Ese modelo base pertenece a la familia Qwen2-VL, un transformer decoder multimodal que combina un codificador visual con un decoder de lenguaje, emplea resolución dinámica (la imagen se tokeniza en parches de tamaño variable en lugar de reescalarse a una resolución fija) y utiliza M-RoPE para codificar de forma desacoplada las posiciones temporales, de altura y de anchura. El modelo base de partida está cuantizado a 4 bits con bitsandbytes, un formato pensado para entrenamiento e inferencia con requisitos de VRAM reducidos que Unsloth emplea habitualmente para fine-tuning eficiente.
 
-Sobre el entrenamiento del adaptador no hay ningún dato publicado: la model card no especifica dataset, número de tokens, composición de los datos, épocas, tasa de aprendizaje, rango del LoRA ni si hubo una fase de alineación posterior (DPO, RLHF). Las etiquetas del repositorio (`lora`, `sft`, `transformers`, `trl`, `unsloth`) indican únicamente que se trata de un fine-tuning supervisado ejecutado con TRL y Unsloth. El tag `arxiv:1910.09700` no corresponde a un paper del modelo, sino a la referencia de Lacoste et al. sobre estimación de emisiones de carbono que aparece en la plantilla de model card de HuggingFace.
+Sobre el entrenamiento del adaptador no hay ningún dato publicado: la model card no especifica dataset, número de tokens, composición de los datos, épocas, tasa de aprendizaje, rango del LoRA ni si hubo una fase de alineación posterior (DPO, RLHF). Las etiquetas del repositorio (`lora`, `sft`, `transformers`, `trl`, `unsloth`) indican únicamente que se trata de un fine-tuning supervisado ejecutado con TRL y Unsloth. El tag `arxiv:1910.09700` no corresponde a un paper del modelo, sino a la referencia de Lacoste et al. sobre estimación de emisiones de carbono que aparece en la plantilla de model card de Hugging Face.
 
 ## Capacidades
 
@@ -74,11 +74,11 @@ No existen datos de rendimiento de este adaptador que permitan una comparación 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `wired07/satquery-ai-qwen2vl-lora` | Adaptador LoRA sobre 2B | No disponible | No disponible | HuggingFace, 0 descargas | Sin documentación ni evaluación publicada |
-| Qwen2-VL-2B-Instruct (modelo base) | ~2B | 32.768 tokens | Apache 2.0 (consultar) | HuggingFace, ampliamente utilizado | Resolución dinámica, M-RoPE, soporte de vídeo |
-| SmolVLM-2.2B-Instruct | ~2,2B | Consultar ficha oficial | Apache 2.0 (consultar) | HuggingFace | Optimizado para eficiencia en dispositivos |
-| InternVL2-2B | ~2,2B | Consultar ficha oficial | Consultar ficha oficial | HuggingFace | Rendimiento competitivo en benchmarks visuales |
-| PaliGemma-3B | ~3B | Consultar ficha oficial | Licencia Gemma (con restricciones) | HuggingFace | Enfoque en tareas vision-language específicas |
+| `wired07/satquery-ai-qwen2vl-lora` | Adaptador LoRA sobre 2B | No disponible | No disponible | Hugging Face, 0 descargas | Sin documentación ni evaluación publicada |
+| Qwen2-VL-2B-Instruct (modelo base) | ~2B | 32.768 tokens | Apache 2.0 (consultar) | Hugging Face, ampliamente utilizado | Resolución dinámica, M-RoPE, soporte de vídeo |
+| SmolVLM-2.2B-Instruct | ~2,2B | Consultar ficha oficial | Apache 2.0 (consultar) | Hugging Face | Optimizado para eficiencia en dispositivos |
+| InternVL2-2B | ~2,2B | Consultar ficha oficial | Consultar ficha oficial | Hugging Face | Rendimiento competitivo en benchmarks visuales |
+| PaliGemma-3B | ~3B | Consultar ficha oficial | Licencia Gemma (con restricciones) | Hugging Face | Enfoque en tareas vision-language específicas |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ No existen datos de rendimiento de este adaptador que permitan una comparación 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/wired07/satquery-ai-qwen2vl-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/wired07/satquery-ai-qwen2vl-lora
 - Modelo base utilizado: https://huggingface.co/unsloth/Qwen2-VL-2B-Instruct-unsloth-bnb-4bit
 - Paper de Qwen2-VL: https://arxiv.org/abs/2409.12191
 - Repositorio oficial de Qwen2-VL: https://github.com/QwenLM/Qwen2-VL

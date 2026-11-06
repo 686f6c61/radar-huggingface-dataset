@@ -81,7 +81,7 @@ No se dispone de comparativas con otros modelos VLA en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pavanyadava07/smolvla-libero-spatial-full
+- Modelo en Hugging Face: https://huggingface.co/pavanyadava07/smolvla-libero-spatial-full
 - Repositorio de entrenamiento (vla-lab): https://github.com/pavanyadava07/vla-lab
 - Espacio con resultados e intervalos de confianza: https://huggingface.co/spaces/pavanyadava07/vla-lab
 - Dataset LIBERO: https://huggingface.co/datasets/HuggingFaceVLA/libero

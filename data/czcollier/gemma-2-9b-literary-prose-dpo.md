@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| czcollier/gemma-2-9b-literary-prose-dpo | 9.000 M (base) + LoRA | no disponible | Prosa literaria periodica via QLoRA + DPO | Gemma | HuggingFace (29 descargas) |
-| google/gemma-2-9b | 9.000 M | no disponible | Modelo base generalista | Gemma | HuggingFace |
-| Adaptadores LoRA de escritura creativa sobre Gemma 2 | 9.000 M (base) | no disponible | Estilo creativo generico | Gemma | HuggingFace (no disponible comparativa concreta) |
+| czcollier/gemma-2-9b-literary-prose-dpo | 9.000 M (base) + LoRA | no disponible | Prosa literaria periodica via QLoRA + DPO | Gemma | Hugging Face (29 descargas) |
+| google/gemma-2-9b | 9.000 M | no disponible | Modelo base generalista | Gemma | Hugging Face |
+| Adaptadores LoRA de escritura creativa sobre Gemma 2 | 9.000 M (base) | no disponible | Estilo creativo generico | Gemma | Hugging Face (no disponible comparativa concreta) |
 
 No se dispone de datos de rendimiento comparativos en la informacion proporcionada; la comparacion se limita a parametros, enfoque y licencia.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/czcollier/gemma-2-9b-literary-prose-dpo
+- Hugging Face: https://huggingface.co/czcollier/gemma-2-9b-literary-prose-dpo
 - Dataset de entrenamiento: https://huggingface.co/datasets/czcollier/literary-prose-dpo-pairs
 - Modelo base: https://huggingface.co/google/gemma-2-9b
 - Standard Ebooks (fuente del corpus): https://standardebooks.org/

@@ -74,7 +74,7 @@ Unicamente se puede afirmar que los metadatos del repositorio incluyen referenci
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|---|
-| Este fine-tune (invert-polarity) | 3,88 B | 128K entrada / 8K salida (heredado) | Texto e imagen | gemma | Repositorio HuggingFace, 0 descargas | No disponible |
+| Este fine-tune (invert-polarity) | 3,88 B | 128K entrada / 8K salida (heredado) | Texto e imagen | gemma | Repositorio Hugging Face, 0 descargas | No disponible |
 | google/gemma-3-4b-it | Aproximadamente 4 B | 128K entrada / 8K salida | Texto e imagen | gemma | Modelo oficial de Google, ampliamente desplegado | Reportados en el informe tecnico de Gemma 3 (cifras no incluidas en la informacion proporcionada) |
 | Qwen2.5-VL-3B-Instruct | Aproximadamente 3,75 B | No disponible en la informacion proporcionada | Texto e imagen | Apache 2.0 | Modelo oficial, ampliamente desplegado | No disponible en la informacion proporcionada |
 | Llama-3.2-3B-Instruct | 3,21 B | 128K | Solo texto | Licencia comunitaria de Llama 3.2 | Modelo oficial, ampliamente desplegado | No disponible en la informacion proporcionada |
@@ -88,14 +88,14 @@ La comparacion relevante es contra el propio `google/gemma-3-4b-it`: este reposi
 - Riesgo elevado de alucinacion: es un modelo de 3,88 B sin alineacion documentada; en tareas de respuesta visual y factual puede generar contenido plausible pero incorrecto.
 - Degradacion probable de capacidades: los fine-tunes de pocos pasos sobre modelos multimodales suelen deteriorar la comprension de imagenes o el multilingueismo si el dataset de ajuste no los cubre.
 - Sesgos: hereda los sesgos del corpus de entrenamiento de Gemma 3 (documentos web, codigo y datos matematicos). No hay ninguna evaluacion de sesgo especifica para este ajuste, y el propio ajuste podria introducir sesgos nuevos no medidos.
-- Limitaciones de idioma: aunque el modelo base declara mas de 140 idiomas, no hay verificacion de que el ajuste conserve ese soporte; los metadatos de HuggingFace marcan los idiomas como "no disponibles".
+- Limitaciones de idioma: aunque el modelo base declara mas de 140 idiomas, no hay verificacion de que el ajuste conserve ese soporte; los metadatos de Hugging Face marcan los idiomas como "no disponibles".
 - Restricciones de licencia: la licencia Gemma impone condiciones de uso, obligaciones de atribucion y una politica de uso aceptable. No es una licencia Apache o MIT; antes de un uso comercial hay que revisar los terminos de Google y las clausulas de redistribucion de modelos derivados.
 - Fecha de creacion anomala en los metadatos (2026-09-16) y ausencia de senales de validacion por parte de la comunidad (0 descargas, 0 likes). No se debe tratar como un artefacto verificado.
 - En produccion: no recomendado sin una evaluacion propia exhaustiva. Si se necesita un modelo Gemma 3 4B fiable, la referencia es `google/gemma-3-4b-it`, no este ajuste.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-f929e5de-0198-49fa-a9df-fe7cf28a8b1c
+- Repositorio en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-f929e5de-0198-49fa-a9df-fe7cf28a8b1c
 - Modelo base: https://huggingface.co/google/gemma-3-4b-pt
 - Pagina oficial de Gemma: https://ai.google.dev/gemma/docs/core
 - Informe tecnico de Gemma 3: https://goo.gle/Gemma3Report

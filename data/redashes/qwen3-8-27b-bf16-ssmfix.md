@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `redashes/Qwen3.8-27B-BF16-SSMFIX` es un modelo multimodal de gran tamaño (27 mil millones de parámetros, según su nombre) desarrollado por el usuario `redashes` y publicado en HuggingFace. Está diseñado para tareas de imagen-texto a texto, lo que implica que acepta entradas tanto visuales como textuales y genera texto como salida. La arquitectura parece ser híbrida, combinando componentes de transformers con mecanismos de estado (SSM), como sugieren los tags `gated-deltanet`, `conv1d` y `hybrid`. También se mencionan técnicas como `sig-scalesync` y `genesis`, aunque su significado exacto no está documentado en la información disponible.
+El modelo `redashes/Qwen3.8-27B-BF16-SSMFIX` es un modelo multimodal de gran tamaño (27 mil millones de parámetros, según su nombre) desarrollado por el usuario `redashes` y publicado en Hugging Face. Está diseñado para tareas de imagen-texto a texto, lo que implica que acepta entradas tanto visuales como textuales y genera texto como salida. La arquitectura parece ser híbrida, combinando componentes de transformers con mecanismos de estado (SSM), como sugieren los tags `gated-deltanet`, `conv1d` y `hybrid`. También se mencionan técnicas como `sig-scalesync` y `genesis`, aunque su significado exacto no está documentado en la información disponible.
 
 Este modelo se presenta como una variante de la familia Qwen3.8, con una corrección o ajuste específico (SSMFIX). Sin embargo, la ficha pública es extremadamente escasa: no se proporcionan detalles sobre el entrenamiento, los datos utilizados, ni resultados de benchmarks. A pesar de ello, su tamaño y su naturaleza multimodal lo posicionan como un candidato para aplicaciones que requieran comprensión conjunta de imágenes y texto, como generación de descripciones, respuesta a preguntas visuales o asistentes multimodales. La falta de documentación oficial limita su adopción inmediata en entornos de producción, pero su licencia (Apache 2.0 según los tags) permite su uso comercial con las debidas atribuciones.
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: para un modelo de 27B en BF16, se necesitan aproximadamente 54 GB solo para los pesos (27B × 2 bytes). Con overhead de activaciones y memoria adicional, se recomienda al menos 64-80 GB de VRAM.
 - GPU recomendadas: NVIDIA A100 (80 GB), H100 (80 GB) o GPUs con mayor capacidad. En configuraciones multi-GPU, se podrían usar 2×RTX 4090 (24 GB cada una) con paralelismo de modelo.
 - No cabe en una GPU de consumo típica (RTX 3090/4090 de 24 GB) sin cuantización, y no se dispone de información sobre cuantizaciones disponibles.
-- Opciones de despliegue: dado que usa la librería `transformers`, se puede servir con vLLM, TGI o HuggingFace Inference Endpoints. Para entornos con menos VRAM, se necesitaría cuantizar (p.ej. GGUF) pero no se confirma su disponibilidad.
+- Opciones de despliegue: dado que usa la librería `transformers`, se puede servir con vLLM, TGI o Hugging Face Inference Endpoints. Para entornos con menos VRAM, se necesitaría cuantizar (p.ej. GGUF) pero no se confirma su disponibilidad.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -67,4 +67,4 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/redashes/Qwen3.8-27B-BF16-SSMFIX)
+- [Página del modelo en Hugging Face](https://huggingface.co/redashes/Qwen3.8-27B-BF16-SSMFIX)

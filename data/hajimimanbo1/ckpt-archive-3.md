@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`HAJIMIMANBO1/ckpt-archive-3` es un repositorio de HuggingFace publicado por el usuario HAJIMIMANBO1 que, por su nombre y por su volumen (195,6 GB), se presenta como un archivo de checkpoints de entrenamiento. No incluye model card con documentación técnica: los campos de arquitectura, idioma, pipeline y parámetros no están informados, y la licencia aparece como `other`. El acceso es restringido (gated), por lo que es necesario aceptar condiciones en la plataforma antes de descargar cualquier fichero.
+`HAJIMIMANBO1/ckpt-archive-3` es un repositorio de Hugging Face publicado por el usuario HAJIMIMANBO1 que, por su nombre y por su volumen (195,6 GB), se presenta como un archivo de checkpoints de entrenamiento. No incluye model card con documentación técnica: los campos de arquitectura, idioma, pipeline y parámetros no están informados, y la licencia aparece como `other`. El acceso es restringido (gated), por lo que es necesario aceptar condiciones en la plataforma antes de descargar cualquier fichero.
 
 Por la información disponible no es posible afirmar qué tipo de modelo contiene el repositorio. La ausencia de pipeline declarado, de idiomas y de cualquier descripción impide clasificarlo como modelo de lenguaje, de visión o de difusión. El único dato objetivo es el tamaño del artefacto y la etiqueta de licencia, insuficientes para determinar sus capacidades reales sin inspeccionar los ficheros.
 
@@ -22,7 +22,7 @@ Su relevancia es, por tanto, la de un artefacto de archivo más que la de un mod
 | Formato de pesos | no confirmado; el nombre del repositorio indica "ckpt", sin que la model card especifique el contenedor real de los ficheros |
 | Autor | HAJIMIMANBO1 |
 | Tamaño del repositorio | 195,6 GB |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-10-24 |
@@ -84,7 +84,7 @@ No disponible. No se han identificado modelos comparables porque se desconoce la
 
 - Ausencia total de model card: no hay información sobre arquitectura, datos de entrenamiento, sesgos ni rendimiento esperado.
 - Licencia `other` sin texto identificable en la información disponible: el uso comercial queda en un estado de incertidumbre legal y requiere revisión directa de las condiciones del repositorio.
-- Acceso restringido: la descarga exige aceptar condiciones en HuggingFace, lo que puede limitar la automatización de pipelines y la reproducibilidad de evaluaciones.
+- Acceso restringido: la descarga exige aceptar condiciones en Hugging Face, lo que puede limitar la automatización de pipelines y la reproducibilidad de evaluaciones.
 - Riesgo de seguridad en el formato: los ficheros `.ckpt` de PyTorch se deserializan con `torch.load`, históricamente vulnerable a ejecución de código arbitrario. Cargar pesos de autoría desconocida sin sandboxing ni conversión previa a `safetensors` es una práctica de riesgo.
 - Riesgo de alucinación y sesgos: no evaluable; no se ha realizado ninguna prueba de comportamiento sobre el artefacto.
 - Limitaciones de contexto e idioma: desconocidas, al no declararse ninguna.
@@ -94,7 +94,7 @@ No disponible. No se han identificado modelos comparables porque se desconoce la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HAJIMIMANBO1/ckpt-archive-3
+- Repositorio en Hugging Face: https://huggingface.co/HAJIMIMANBO1/ckpt-archive-3
 - Resultados de la búsqueda web no relacionados con este repositorio (se listan por trazabilidad):
   - BlueArchive.ckpt (Tracy3/ai_models): https://huggingface.co/Tracy3/ai_models/blob/main/BlueArchive.ckpt
   - model.ckpt (stabilityai/TripoSR): https://huggingface.co/stabilityai/TripoSR/blob/main/model.ckpt

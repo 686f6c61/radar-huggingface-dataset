@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-q3_transfer_cpt100m-final` es un modelo de lenguaje de 1.512.432.640 parámetros (aproximadamente 1,51 mil millones) publicado en HuggingFace por el usuario alfred8995 el 23 de octubre de 2026. El repositorio contiene únicamente pesos en formato `safetensors` (3,0 GB) y lleva la etiqueta `qwen3`, lo que indica que deriva de la familia Qwen3 de Alibaba, aunque el recuento exacto de parámetros no coincide con ningún tamaño oficialmente publicado de esa familia, por lo que cabe suponer un proceso de poda, destilación o reentrenamiento sobre una base Qwen3.
+`alfred8995/r17-bk-pf-q3_transfer_cpt100m-final` es un modelo de lenguaje de 1.512.432.640 parámetros (aproximadamente 1,51 mil millones) publicado en Hugging Face por el usuario alfred8995 el 23 de octubre de 2026. El repositorio contiene únicamente pesos en formato `safetensors` (3,0 GB) y lleva la etiqueta `qwen3`, lo que indica que deriva de la familia Qwen3 de Alibaba, aunque el recuento exacto de parámetros no coincide con ningún tamaño oficialmente publicado de esa familia, por lo que cabe suponer un proceso de poda, destilación o reentrenamiento sobre una base Qwen3.
 
 El nombre del repositorio sugiere un experimento de *transfer learning* con preentrenamiento continuado sobre aproximadamente 100 millones de tokens (`transfer_cpt100m`), probablemente orientado a un dominio concreto que no se documenta en la información disponible. No hay model card, no se declara pipeline, no se especifican idiomas y no se han publicado resultados de evaluación.
 
@@ -18,7 +18,7 @@ Su relevancia actual es limitada y de carácter experimental: se trata de un mod
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible. El repositorio solo publica pesos `safetensors`; no se incluyen variantes GGUF, AWQ ni GPTQ |
 | Idiomas soportados | No disponible |
-| Licencia | `other` (licencia no estándar, sin texto identificable en la información disponible). Acceso restringido: requiere aceptar condiciones en HuggingFace |
+| Licencia | `other` (licencia no estándar, sin texto identificable en la información disponible). Acceso restringido: requiere aceptar condiciones en Hugging Face |
 | Formato de pesos | `safetensors` (3,0 GB en total) |
 
 ## Arquitectura y entrenamiento
@@ -71,7 +71,7 @@ No existe información pública sobre el rendimiento de este modelo, por lo que 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| `alfred8995/r17-bk-pf-q3_transfer_cpt100m-final` | 1,51 B | no disponible | `other` (acceso restringido) | Gated en HuggingFace, 0 descargas | No disponible |
+| `alfred8995/r17-bk-pf-q3_transfer_cpt100m-final` | 1,51 B | no disponible | `other` (acceso restringido) | Gated en Hugging Face, 0 descargas | No disponible |
 | Qwen3-1.7B (Alibaba) | 1,7 B | 32 K nativo, ampliable | Apache 2.0 | Abierto, ampliamente distribuido | No comparable: sin datos del modelo evaluado |
 | Llama 3.2 1B (Meta) | 1,24 B | 128 K | Llama 3.2 Community License | Abierto, requiere aceptar licencia | No comparable: sin datos del modelo evaluado |
 | Gemma 3 1B (Google) | 1 B | 32 K | Gemma Terms of Use | Abierto, requiere aceptar licencia | No comparable: sin datos del modelo evaluado |
@@ -82,7 +82,7 @@ La comparación honesta es que las tres alternativas cuentan con model cards com
 
 - Ausencia total de documentación: no hay model card, ni ficha de datos, ni informe de evaluación, ni descripción de la receta de entrenamiento.
 - Licencia `other` sin texto identificable: no puede asumirse uso comercial. Es imprescindible contactar con el autor o revisar los términos exactos antes de cualquier despliegue productivo.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción a la automatización de descargas en CI/CD y obliga a gestionar tokens de acceso.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción a la automatización de descargas en CI/CD y obliga a gestionar tokens de acceso.
 - Idiomas no declarados: no puede garantizarse un comportamiento correcto en castellano ni en ningún otro idioma concreto.
 - Contexto no declarado: planificar cualquier aplicación con ventanas largas es arriesgado sin medir previamente la longitud efectiva soportada.
 - Riesgo de alucinación: no evaluado. Un modelo de 1,5 B parámetros sin alineación documentada presenta una propensión alta a inventar datos, especialmente en dominios especializados.
@@ -94,7 +94,7 @@ La comparación honesta es que las tres alternativas cuentan con model cards com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-q3_transfer_cpt100m-final
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-q3_transfer_cpt100m-final
 - Perfil del autor: https://huggingface.co/alfred8995
 - Datasets del autor: https://huggingface.co/alfred8995/datasets
 - Referencia de la familia base Qwen3: no disponible en los resultados de búsqueda (solo aparece Qwen3.8-Max, un modelo MoE de 2,4 T parámetros no relacionado con este checkpoint): https://ai-tldr.dev/models/qwen3-8-max/

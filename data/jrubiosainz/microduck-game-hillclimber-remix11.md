@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microduck-game-hillclimber-remix11` es una política de control para robots cuadrúpedos MicroDuck, publicada por el usuario jrubiosainz en HuggingFace. No es un modelo de lenguaje: es un artefacto de robótica en formato ONNX que implementa un controlador de locomoción para la prueba "1.5 m Hill Climb" de la Microduck Arena, un entorno de simulación de código abierto mantenido por Pollen Robotics. El modelo resuelve el problema de generar comandos articulares (14 salidas) a partir de observaciones del estado del robot (61 entradas) para completar una subida de colina en el menor tiempo posible.
+`microduck-game-hillclimber-remix11` es una política de control para robots cuadrúpedos MicroDuck, publicada por el usuario jrubiosainz en Hugging Face. No es un modelo de lenguaje: es un artefacto de robótica en formato ONNX que implementa un controlador de locomoción para la prueba "1.5 m Hill Climb" de la Microduck Arena, un entorno de simulación de código abierto mantenido por Pollen Robotics. El modelo resuelve el problema de generar comandos articulares (14 salidas) a partir de observaciones del estado del robot (61 entradas) para completar una subida de colina en el menor tiempo posible.
 
 Técnicamente es un composite: combina una política base propia (`hillclimber-remix9`, 0.741 s de media) con una capa de búsqueda por coincidencia exacta extraída de un modelo de terceros (`HlibPlakhtii/microduck-hill-quicksilver-v3`, Apache-2.0) que reproduce su carrera en la semilla 1. El resultado es una mejora marginal en la media del tablero (0.739 s frente a 0.741 s), lograda únicamente en la semilla 1 y solo dentro del simulador.
 
@@ -23,7 +23,7 @@ Es relevante como ejemplo de ingeniería de composites en robótica simulada: de
 
 ## Arquitectura y entrenamiento
 
-La base `hillclimber-remix9` es una red neuronal feedforward exportada a ONNX con 51 inicializadores y 80 operadores en orden, que mapea una observación de 61 dimensiones a 14 objetivos articulares. Su entrenamiento original no está documentado en la información disponible; la model card indica que fue "buscada" (search) y que proviene de una ejecución con identificador `01M5ZT10KKJZ5AYGXF4P72`. El modelo base a su vez es un fine-tune de `jrubiosainz/microduck-game-hillclimber-remix9`, según los tags de HuggingFace.
+La base `hillclimber-remix9` es una red neuronal feedforward exportada a ONNX con 51 inicializadores y 80 operadores en orden, que mapea una observación de 61 dimensiones a 14 objetivos articulares. Su entrenamiento original no está documentado en la información disponible; la model card indica que fue "buscada" (search) y que proviene de una ejecución con identificador `01M5ZT10KKJZ5AYGXF4P72`. El modelo base a su vez es un fine-tune de `jrubiosainz/microduck-game-hillclimber-remix9`, según los tags de Hugging Face.
 
 La innovación del composite es una capa de lookup superpuesta: se almacenan 62 observaciones y 62 filas de objetivos articulares (62×61 y 62×14) procedentes de la carrera de la semilla 1 del donante. En inferencia, cada observación se compara contra las filas almacenadas con tolerancia 1e-7 en la diferencia absoluta máxima; si hay coincidencia, se emite la fila almacenada y se alimenta a la base con una observación fija (su primera observación de la semilla 1) para evitar que indexe fuera de sus tablas. Si no hay coincidencia, la base procesa la observación viva y su salida es la acción. Las columnas 48–60 de la observación se enmascaran en la coincidencia, salvo la columna 48 (velocidad comandada), que se fija a 0.3 m/s para que la capa solo se active a esa velocidad.
 
@@ -72,10 +72,10 @@ Resultados in-sample: la capa de lookup solo se activa en estados de la semilla 
 
 | Modelo | Parámetros | Contexto | Media del tablero | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jrubiosainz/microduck-game-hillclimber-remix11` | No disponible | No aplica | 0.739 s | Mixta (parcial Apache-2.0) | HuggingFace |
-| `jrubiosainz/microduck-game-hillclimber-remix9` | No disponible | No aplica | 0.741 s | Sin licencia declarada | HuggingFace |
-| `HlibPlakhtii/microduck-hill-quicksilver-v3` | No disponible | No aplica | 0.738 s | Apache-2.0 | HuggingFace |
-| `rumezhak/microduck-hill-remix-leader3` | No disponible | No aplica | No disponible | Apache-2.0 | HuggingFace |
+| `jrubiosainz/microduck-game-hillclimber-remix11` | No disponible | No aplica | 0.739 s | Mixta (parcial Apache-2.0) | Hugging Face |
+| `jrubiosainz/microduck-game-hillclimber-remix9` | No disponible | No aplica | 0.741 s | Sin licencia declarada | Hugging Face |
+| `HlibPlakhtii/microduck-hill-quicksilver-v3` | No disponible | No aplica | 0.738 s | Apache-2.0 | Hugging Face |
+| `rumezhak/microduck-hill-remix-leader3` | No disponible | No aplica | No disponible | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ Resultados in-sample: la capa de lookup solo se activa en estados de la semilla 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix11
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix11
 - Modelo base (remix9): https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix9
 - Donante (quicksilver-v3): https://huggingface.co/HlibPlakhtii/microduck-hill-quicksilver-v3
 - Upstream del donante (leader3): https://huggingface.co/rumezhak/microduck-hill-remix-leader3

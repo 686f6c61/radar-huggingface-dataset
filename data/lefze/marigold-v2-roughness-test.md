@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Marigold-V2-roughness-test es un adaptador experimental para la estimacion de rugosidad (roughness) dentro de la arquitectura de inferencia Marigold V2, publicado por el usuario lefze en HuggingFace. Tecnicamente es un LoRA de rango 128 sobre el transformer de Qwen-Image-Edit-2511, afinado a partir de la tarea de albedo, y se distribuye junto con el decodificador VAE entrenado del checkpoint. No es un pipeline Diffusers autonomo ni un LoRA generico: necesita el codigo de inferencia de tareas de Marigold y los embeddings de prompt `qwen_edit_2509_qwen_albedo_rgb_dummy512` del repositorio oficial huawei-bayerlab/marigold-v2-0.
+Marigold-V2-roughness-test es un adaptador experimental para la estimacion de rugosidad (roughness) dentro de la arquitectura de inferencia Marigold V2, publicado por el usuario lefze en Hugging Face. Tecnicamente es un LoRA de rango 128 sobre el transformer de Qwen-Image-Edit-2511, afinado a partir de la tarea de albedo, y se distribuye junto con el decodificador VAE entrenado del checkpoint. No es un pipeline Diffusers autonomo ni un LoRA generico: necesita el codigo de inferencia de tareas de Marigold y los embeddings de prompt `qwen_edit_2509_qwen_albedo_rgb_dummy512` del repositorio oficial huawei-bayerlab/marigold-v2-0.
 
 El problema que aborda es concreto dentro del flujo de autoria de materiales PBR: derivar un mapa de rugosidad escalar lineal de un solo canal (0 = liso, 1 = rugoso) a partir de una imagen de entrada. El entrenamiento se realizo a 512 pixeles de resolucion y la inferencia usa un unico timestep fijo del transformer (499/1000), lo que implica un regimen de una sola pasada de difusion en lugar de un muestreo multi-paso.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| lefze/Marigold-V2-roughness-test | LoRA de tarea sobre Qwen-Image-Edit-2511 para Marigold V2 | no disponible | 512 px de entrenamiento; timestep unico 499/1000 | sin benchmarks publicados | Apache-2.0 | HuggingFace, 0 descargas; requiere plugin o codigo de Marigold |
-| huawei-bayerlab/marigold-v2-0 (oficial) | Modelo de estimacion intrinseca (albedo y otras tareas) | no disponible | no disponible | no disponible en la informacion proporcionada | consultar en el repositorio oficial | HuggingFace, release oficial mantenida |
-| Marigold v1 | Modelo de estimacion de profundidad y normales basado en difusion | no disponible | no disponible | no disponible en la informacion proporcionada | consultar en el repositorio oficial | HuggingFace |
-| Qwen/Qwen-Image-Edit-2511 | Backbone de edicion de imagen condicionada por texto | no disponible | no disponible | no disponible en la informacion proporcionada | consultar en el repositorio del modelo base | HuggingFace |
+| lefze/Marigold-V2-roughness-test | LoRA de tarea sobre Qwen-Image-Edit-2511 para Marigold V2 | no disponible | 512 px de entrenamiento; timestep unico 499/1000 | sin benchmarks publicados | Apache-2.0 | Hugging Face, 0 descargas; requiere plugin o codigo de Marigold |
+| huawei-bayerlab/marigold-v2-0 (oficial) | Modelo de estimacion intrinseca (albedo y otras tareas) | no disponible | no disponible | no disponible en la informacion proporcionada | consultar en el repositorio oficial | Hugging Face, release oficial mantenida |
+| Marigold v1 | Modelo de estimacion de profundidad y normales basado en difusion | no disponible | no disponible | no disponible en la informacion proporcionada | consultar en el repositorio oficial | Hugging Face |
+| Qwen/Qwen-Image-Edit-2511 | Backbone de edicion de imagen condicionada por texto | no disponible | no disponible | no disponible en la informacion proporcionada | consultar en el repositorio del modelo base | Hugging Face |
 
 La comparacion cuantitativa no es posible con los datos disponibles: ninguno de los repositorios referenciados aporta en esta informacion cifras de error (por ejemplo, RMSE o Si-RMSE) sobre conjuntos de validacion de rugosidad.
 
@@ -89,7 +89,7 @@ La comparacion cuantitativa no es posible con los datos disponibles: ninguno de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lefze/Marigold-V2-roughness-test
+- Modelo en Hugging Face: https://huggingface.co/lefze/Marigold-V2-roughness-test
 - Modelo base (backbone): https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Modelo base (arquitectura Marigold V2 oficial): https://huggingface.co/huawei-bayerlab/marigold-v2-0
 - Codigo fuente del plugin WarNeru Designer AI (GitLab): https://gitlab.com/Londo001/WarNeru/-/tree/tools/designer-ai-nodes/tools/Plugins/Substance%20Designer/AI%20Nodes

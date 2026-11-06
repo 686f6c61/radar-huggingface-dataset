@@ -70,7 +70,7 @@ La principal diferencia de este modelo es la ausencia de alineamiento de segurid
 - **Licencia Apache 2.0**: permite uso comercial y modificación, pero el modelo base es una conversión de terceros; se debe verificar la licencia del modelo original `MihaiPopa-1/Qwen3.8-2B-Heretic-Max` (aunque también es Apache 2.0 según el README).
 
 ## Enlaces
-- HuggingFace del modelo GGUF: [aicoder43210/Qwen3.8-2B-Heretic-Max-Q4_K_M-GGUF](https://huggingface.co/aicoder43210/Qwen3.8-2B-Heretic-Max-Q4_K_M-GGUF)
+- Hugging Face del modelo GGUF: [aicoder43210/Qwen3.8-2B-Heretic-Max-Q4_K_M-GGUF](https://huggingface.co/aicoder43210/Qwen3.8-2B-Heretic-Max-Q4_K_M-GGUF)
 - Modelo base (original): [MihaiPopa-1/Qwen3.8-2B-Heretic-Max](https://huggingface.co/MihaiPopa-1/Qwen3.8-2B-Heretic-Max)
 - Repositorio de la herramienta Heretic: [p-e-w/heretic](https://github.com/p-e-w/heretic)
 - Repositorio de Qwen3.8: [QwenLM/Qwen3.8](https://github.com/QwenLM/Qwen3.8)

@@ -85,8 +85,8 @@ Con las tres funciones cargadas en un mismo proceso, el pico es de 85-99 MiB, in
 
 | Modelo | Parametros | Contexto | Formato y destino | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smdesai/GLiNER25-Multi-Decide-FP16-CoreML | Del orden de 278 M (estimación derivada; no confirmada) | 512 tokens (funciones de 128/256/512) | Core ML `.mlpackage` + tabla FP16 externa; on-device Apple | Apache-2.0 | Publicado en HuggingFace; validado solo en iPhone 17 Pro y M3 Max |
-| fastino/GLiNER2.5-multi-Decide (modelo base) | No disponible en la información proporcionada | No disponible en la información proporcionada | Pesos PyTorch del checkpoint original; incluye clasificación y extracción de spans | Apache-2.0 | Público en HuggingFace |
+| smdesai/GLiNER25-Multi-Decide-FP16-CoreML | Del orden de 278 M (estimación derivada; no confirmada) | 512 tokens (funciones de 128/256/512) | Core ML `.mlpackage` + tabla FP16 externa; on-device Apple | Apache-2.0 | Publicado en Hugging Face; validado solo en iPhone 17 Pro y M3 Max |
+| fastino/GLiNER2.5-multi-Decide (modelo base) | No disponible en la información proporcionada | No disponible en la información proporcionada | Pesos PyTorch del checkpoint original; incluye clasificación y extracción de spans | Apache-2.0 | Público en Hugging Face |
 | Otras alternativas de clasificación on-device (Core ML, ONNX Runtime Mobile, MediaPipe) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de comparativas de precisión frente a modelos de la misma categoría, por lo que no es posible establecer una comparación cuantitativa más allá de la equivalencia con el oráculo FP32 del propio checkpoint base. La diferencia funcional más relevante frente al modelo base es que esta conversión elimina la extracción de spans y conserva solo la cabeza de clasificación.
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks ni de comparativas de precisión frente a m
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/smdesai/GLiNER25-Multi-Decide-FP16-CoreML
+- Página del modelo en Hugging Face: https://huggingface.co/smdesai/GLiNER25-Multi-Decide-FP16-CoreML
 - Modelo base: https://huggingface.co/fastino/GLiNER2.5-multi-Decide
 - Repositorio de conversión mencionado en la model card (incluye el port a Swift del procesador): mencionado sin URL en la información disponible.
 - Paper, blog o demo oficial: no disponible en la información proporcionada.

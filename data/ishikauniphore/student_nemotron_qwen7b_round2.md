@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ishikauniphore/student_nemotron_qwen7b_round2` es un checkpoint de generación de texto publicado en HuggingFace por el usuario ishikauniphore. El nombre sugiere que se trata de un ajuste fino (fine-tuning) de una variante Qwen2 de aproximadamente 7.000 millones de parámetros, posiblemente relacionado con la familia Nemotron de NVIDIA, aunque no hay confirmación oficial en la model card. El repositorio contiene pesos en formato safetensors y está etiquetado como compatible con text-generation-inference y endpoints, lo que indica que está pensado para despliegue en producción.
+El modelo `ishikauniphore/student_nemotron_qwen7b_round2` es un checkpoint de generación de texto publicado en Hugging Face por el usuario ishikauniphore. El nombre sugiere que se trata de un ajuste fino (fine-tuning) de una variante Qwen2 de aproximadamente 7.000 millones de parámetros, posiblemente relacionado con la familia Nemotron de NVIDIA, aunque no hay confirmación oficial en la model card. El repositorio contiene pesos en formato safetensors y está etiquetado como compatible con text-generation-inference y endpoints, lo que indica que está pensado para despliegue en producción.
 
 La model card es una plantilla automática sin información sustancial: no se especifican datos de entrenamiento, arquitectura detallada, licencia, idiomas ni benchmarks. El modelo tiene 7.615.616.512 parámetros totales y un tamaño de repositorio de 15,2 GB. Fue creado el 14 de agosto de 2026 y actualizado el mismo día. Dada la ausencia de documentación, cualquier uso en producción debe considerar la falta de transparencia y de garantías sobre su comportamiento.
 
@@ -21,7 +21,7 @@ La model card es una plantilla automática sin información sustancial: no se es
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura interna, el proceso de entrenamiento, los datos utilizados ni las técnicas de optimización (RLHF, DPO, etc.). El tag `qwen2` en HuggingFace sugiere que el modelo deriva de la familia Qwen2, que emplea una arquitectura transformer con atención de múltiples cabezas y normalización RMSNorm, pero esto no está confirmado por el autor. El nombre "student_nemotron" podría indicar un ajuste fino basado en destilación desde un modelo Nemotron, pero es una especulación sin respaldo documental. No hay información sobre el número de tokens de entrenamiento, la composición del dataset ni el régimen de precisión (fp16, bf16, etc.).
+No se ha publicado información sobre la arquitectura interna, el proceso de entrenamiento, los datos utilizados ni las técnicas de optimización (RLHF, DPO, etc.). El tag `qwen2` en Hugging Face sugiere que el modelo deriva de la familia Qwen2, que emplea una arquitectura transformer con atención de múltiples cabezas y normalización RMSNorm, pero esto no está confirmado por el autor. El nombre "student_nemotron" podría indicar un ajuste fino basado en destilación desde un modelo Nemotron, pero es una especulación sin respaldo documental. No hay información sobre el número de tokens de entrenamiento, la composición del dataset ni el régimen de precisión (fp16, bf16, etc.).
 
 ## Capacidades
 
@@ -77,5 +77,5 @@ No se dispone de datos comparativos publicados. El modelo podría compararse con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ishikauniphore/student_nemotron_qwen7b_round2
+- Repositorio en Hugging Face: https://huggingface.co/ishikauniphore/student_nemotron_qwen7b_round2
 - No se han encontrado papers, blogs o demos asociados al modelo.

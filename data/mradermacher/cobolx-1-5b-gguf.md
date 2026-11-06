@@ -68,6 +68,6 @@ No se dispone de informacion sobre modelos comparables especializados en COBOL. 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/cobolx-1.5b-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/cobolx-1.5b-GGUF
 - Modelo base original: https://huggingface.co/thinkingdbx/cobolx-1.5b
 - Pagina de descargas de mradermacher: https://hf.tst.eu/model

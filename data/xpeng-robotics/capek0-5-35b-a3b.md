@@ -93,7 +93,7 @@ Capek 0.5 comparte familia arquitectónica con Qwen3.6-35B-A3B (del que deriva) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xpeng-robotics/Capek0.5-35B-A3B
+- Modelo en Hugging Face: https://huggingface.co/xpeng-robotics/Capek0.5-35B-A3B
 - Paper (arXiv): https://arxiv.org/abs/2608.06756
 - Página del proyecto: https://xpeng-robotics.github.io/capek-0.5/
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B

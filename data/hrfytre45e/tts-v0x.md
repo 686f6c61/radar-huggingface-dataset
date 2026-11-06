@@ -64,6 +64,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - HRFYTRE45E/TTS-v0x](https://huggingface.co/HRFYTRE45E/TTS-v0x)
+- [Hugging Face - HRFYTRE45E/TTS-v0x](https://huggingface.co/HRFYTRE45E/TTS-v0x)
 - [Modelo base: TAMERer/spark-tts-arabic-v3](https://huggingface.co/TAMERer/spark-tts-arabic-v3) (enlace inferido, no verificado)
 - [Unsloth](https://github.com/unslothai/unsloth) (librería de entrenamiento mencionada)

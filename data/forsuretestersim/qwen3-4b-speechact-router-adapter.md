@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen3-4B-SpeechAct-Router-Adapter es un adaptador LoRA publicado en HuggingFace por el usuario ForSureTesterSim sobre el modelo base Qwen/Qwen3-4B-Thinking-2507, de la familia Qwen3. El repositorio contiene únicamente los pesos del adaptador (0,1 GB en el formato safetensors de PEFT), no el modelo completo: para utilizarlo hay que cargar primero el modelo base y aplicar despues el adaptador con las librerias Transformers y PEFT (versiones 0.19.1 y 0.20.0 declaradas por el autor).
+Qwen3-4B-SpeechAct-Router-Adapter es un adaptador LoRA publicado en Hugging Face por el usuario ForSureTesterSim sobre el modelo base Qwen/Qwen3-4B-Thinking-2507, de la familia Qwen3. El repositorio contiene únicamente los pesos del adaptador (0,1 GB en el formato safetensors de PEFT), no el modelo completo: para utilizarlo hay que cargar primero el modelo base y aplicar despues el adaptador con las librerias Transformers y PEFT (versiones 0.19.1 y 0.20.0 declaradas por el autor).
 
 El adaptador se ha entrenado con GRPO (Group Relative Policy Optimization), una tecnica de aprendizaje por refuerzo, segun la etiqueta `grpo` del repositorio, lo que lo situa en la linea de trabajos de ajuste fino por RL sobre modelos con modo de razonamiento. El nombre "SpeechAct-Router" sugiere una funcion de enrutado basada en actos de habla (pragmatica conversacional), pero esta funcionalidad no aparece documentada en ninguna parte de la model card.
 
-La relevancia de esta ficha es limitada y conviene ser explicito: la model card es la plantilla vacia por defecto de HuggingFace, sin datos de desarrollador, idiomas, licencia, datos de entrenamiento ni evaluacion; el repositorio acumula 0 descargas y 0 "me gusta"; y el nombre de la cuenta sugiere una publicacion de prueba. Se trata, por tanto, de un artefacto experimental no validado, que debe evaluarse con cautela antes de cualquier uso en produccion.
+La relevancia de esta ficha es limitada y conviene ser explicito: la model card es la plantilla vacia por defecto de Hugging Face, sin datos de desarrollador, idiomas, licencia, datos de entrenamiento ni evaluacion; el repositorio acumula 0 descargas y 0 "me gusta"; y el nombre de la cuenta sugiere una publicacion de prueba. Se trata, por tanto, de un artefacto experimental no validado, que debe evaluarse con cautela antes de cualquier uso en produccion.
 
 ## Especificaciones tecnicas
 
@@ -77,9 +77,9 @@ Las cifras siguientes son estimaciones derivadas del tamaño del modelo base (~4
 
 | Modelo | Desarrollador | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-SpeechAct-Router-Adapter | ForSureTesterSim | Adaptador LoRA (tamaño no disponible); base de ~4B | No disponible | No disponible | HuggingFace, 0 descargas |
-| Qwen3-4B-Thinking-2507 (modelo base) | Qwen (Alibaba) | ~4B (deducido de la denominacion) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
-| Adaptadores LoRA de razonamiento sobre modelos de ~4B | Multiples autores | Variable | No disponible | Variable segun autor | HuggingFace |
+| Qwen3-4B-SpeechAct-Router-Adapter | ForSureTesterSim | Adaptador LoRA (tamaño no disponible); base de ~4B | No disponible | No disponible | Hugging Face, 0 descargas |
+| Qwen3-4B-Thinking-2507 (modelo base) | Qwen (Alibaba) | ~4B (deducido de la denominacion) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
+| Adaptadores LoRA de razonamiento sobre modelos de ~4B | Multiples autores | Variable | No disponible | Variable segun autor | Hugging Face |
 
 No se dispone de datos verificables de parametros, contexto, licencia ni rendimiento de las alternativas dentro de la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable.
 
@@ -94,12 +94,12 @@ No se dispone de datos verificables de parametros, contexto, licencia ni rendimi
 - Contexto: no declarado; el ajuste LoRA no modifica la ventana del modelo base, pero tampoco hay confirmacion de que el comportamiento se mantenga en contextos largos.
 - Madurez: 0 descargas y 0 "me gusta" en el momento de redactar la ficha, y una cuenta cuyo nombre sugiere uso de pruebas. No hay garantia de mantenimiento, soporte ni estabilidad del repositorio.
 - Reproducibilidad: no se publican hiperparametros de LoRA (rango, alpha, modulos objetivo), datos ni semillas; el entrenamiento no es reproducible.
-- Aviso sobre las etiquetas: la etiqueta `arxiv:1910.09700` del repositorio corresponde a la referencia del calculador de impacto medioambiental citada en la plantilla de HuggingFace (Lacoste et al., 2019), no a un articulo sobre este modelo.
+- Aviso sobre las etiquetas: la etiqueta `arxiv:1910.09700` del repositorio corresponde a la referencia del calculador de impacto medioambiental citada en la plantilla de Hugging Face (Lacoste et al., 2019), no a un articulo sobre este modelo.
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/ForSureTesterSim/Qwen3-4B-SpeechAct-Router-Adapter
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/ForSureTesterSim/Qwen3-4B-SpeechAct-Router-Adapter
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
 - Referencia citada en la plantilla de la model card (calculador de impacto, no especifica del modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de Machine Learning: https://mlco2.github.io/impact
 - Resultados de busqueda web: ninguno de los enlaces proporcionados es relevante para este modelo (corresponden al equipo de hockey Detroit Red Wings de la NHL), por lo que no se incluyen.

@@ -4,7 +4,7 @@
 
 El modelo `wind77/unc-d9424bb1` es un modelo de lenguaje de gran tamaño (LLM) con arquitectura de mezcla de expertos (MoE) basado en la familia Qwen3.5, tal como indican las etiquetas del repositorio. Desarrollado por el usuario wind77, se presenta como un fine-tuning del modelo `kevin954/Affine-5dfqbbh8ev-sft`, que a su vez parece ser un derivado de una fusión o "salvage" de pesos denominada "affine-h1-merged-salvage". El modelo está diseñado para tareas de generación de texto y conversación, y las etiquetas sugieren capacidades multimodales de imagen a texto (image-text-to-text), aunque no se proporcionan detalles adicionales.
 
-Con 35.107 millones de parámetros (aproximadamente 35,1 mil millones), el modelo se encuentra en el rango de los LLM de tamaño medio-grande, y su naturaleza MoE implica que solo una fracción de los parámetros se activa por token, lo que podría ofrecer eficiencia computacional. Sin embargo, la información pública es extremadamente limitada: no se especifica la licencia, los idiomas soportados, la longitud de contexto ni los datos de entrenamiento. El acceso al repositorio está restringido (gated), lo que obliga a aceptar condiciones adicionales en HuggingFace antes de poder descargar los pesos.
+Con 35.107 millones de parámetros (aproximadamente 35,1 mil millones), el modelo se encuentra en el rango de los LLM de tamaño medio-grande, y su naturaleza MoE implica que solo una fracción de los parámetros se activa por token, lo que podría ofrecer eficiencia computacional. Sin embargo, la información pública es extremadamente limitada: no se especifica la licencia, los idiomas soportados, la longitud de contexto ni los datos de entrenamiento. El acceso al repositorio está restringido (gated), lo que obliga a aceptar condiciones adicionales en Hugging Face antes de poder descargar los pesos.
 
 ## Especificaciones tecnicas
 
@@ -60,7 +60,7 @@ No disponible. No se han identificado modelos comparables con los que contrastar
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): el repositorio exige aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y el uso en entornos corporativos.
+- Acceso restringido (gated): el repositorio exige aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y el uso en entornos corporativos.
 - Licencia desconocida: al no especificarse la licencia, no se puede garantizar el uso comercial ni la redistribución. Es un riesgo legal importante para producción.
 - Documentación inexistente: no hay papers, guías de uso ni especificaciones técnicas detalladas. Los desarrolladores no pueden evaluar adecuadamente el modelo antes de integrarlo.
 - Sesgos y alucinaciones: no se han publicado estudios sobre sesgos, y como todo LLM, existe riesgo de generar información falsa o inventada, especialmente sin datos de entrenamiento conocidos.
@@ -69,7 +69,7 @@ No disponible. No se han identificado modelos comparables con los que contrastar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wind77/unc-d9424bb1
+- Repositorio Hugging Face: https://huggingface.co/wind77/unc-d9424bb1
 - Modelo base (referencia): https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft (enlace no verificado, se cita según los metadatos)
 
 No se han encontrado otros enlaces (papers, blogs, demos) en la información proporcionada.

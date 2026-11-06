@@ -71,7 +71,7 @@ No se dispone de comparativas publicadas con modelos similares en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProCreations/grug-27b-v1.1-mtp
+- Modelo en Hugging Face: https://huggingface.co/ProCreations/grug-27b-v1.1-mtp
 - Modelo base grug-27b-v1.1: https://huggingface.co/ProCreations/grug-27b-v1.1
 - Modelo base grug-27b (original): https://huggingface.co/ProCreations/grug-27b
 - Dataset de entrenamiento: https://huggingface.co/datasets/ProCreations/grug-27b-v2-corrective

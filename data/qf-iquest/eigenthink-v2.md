@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EigenThink-v2 es un modelo de lenguaje desarrollado por el equipo de qf-iquest (también conocido como Qingfeng), presentado como una actualización significativa de la versión anterior de EigenThink. Según la model card, esta versión mejora sustancialmente la profundidad de razonamiento y las capacidades de inferencia gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo muestra resultados destacados en tareas de matemáticas, programación y lógica general, acercándose al rendimiento de otros modelos líderes del sector. Aunque la ficha técnica no detalla la arquitectura interna, el repositorio de HuggingFace lo clasifica con el pipeline `feature-extraction` y la librería `transformers`, lo que sugiere un modelo basado en transformer, probablemente de tipo denso. La información pública disponible es limitada: no se especifican el número de parámetros, la longitud de contexto ni los idiomas soportados. La licencia es MIT, lo que permite uso comercial y modificación sin restricciones significativas.
+EigenThink-v2 es un modelo de lenguaje desarrollado por el equipo de qf-iquest (también conocido como Qingfeng), presentado como una actualización significativa de la versión anterior de EigenThink. Según la model card, esta versión mejora sustancialmente la profundidad de razonamiento y las capacidades de inferencia gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo muestra resultados destacados en tareas de matemáticas, programación y lógica general, acercándose al rendimiento de otros modelos líderes del sector. Aunque la ficha técnica no detalla la arquitectura interna, el repositorio de Hugging Face lo clasifica con el pipeline `feature-extraction` y la librería `transformers`, lo que sugiere un modelo basado en transformer, probablemente de tipo denso. La información pública disponible es limitada: no se especifican el número de parámetros, la longitud de contexto ni los idiomas soportados. La licencia es MIT, lo que permite uso comercial y modificación sin restricciones significativas.
 
 ## Especificaciones técnicas
 
@@ -83,12 +83,12 @@ La tabla de benchmarks de la model card compara EigenThink con tres modelos de r
 - El uso de 23K tokens por pregunta en tareas de razonamiento (como AIME) implica un consumo computacional elevado y una latencia mayor en comparación con modelos que generan respuestas más concisas. Esto puede ser un factor limitante en aplicaciones en tiempo real.
 - No se especifican los idiomas soportados. Aunque la tabla de benchmarks incluye traducción, no se detallan los pares de idiomas evaluados, por lo que el rendimiento en idiomas distintos del inglés podría ser inferior.
 - La licencia MIT permite uso comercial sin restricciones, pero el usuario debe ser consciente de que el modelo se distribuye "tal cual", sin garantías de precisión o seguridad. Es recomendable realizar una evaluación exhaustiva antes de desplegarlo en producción.
-- El repositorio de HuggingFace muestra 0 descargas y 0 likes, lo que sugiere que el modelo es muy reciente o poco conocido. No hay evidencia de adopción por parte de la comunidad ni de soporte activo.
+- El repositorio de Hugging Face muestra 0 descargas y 0 likes, lo que sugiere que el modelo es muy reciente o poco conocido. No hay evidencia de adopción por parte de la comunidad ni de soporte activo.
 
 ## Enlaces
 
-- [HuggingFace - qf-iquest/EigenThink-v2](https://huggingface.co/qf-iquest/EigenThink-v2)
-- [Perfil del autor en HuggingFace - qf-iquest](https://huggingface.co/qf-iquest)
+- [Hugging Face - qf-iquest/EigenThink-v2](https://huggingface.co/qf-iquest/EigenThink-v2)
+- [Perfil del autor en Hugging Face - qf-iquest](https://huggingface.co/qf-iquest)
 - [Organización EigenThink AI en GitHub](https://github.com/EigenThink-AI)
 - [Paquetes de EigenThink AI en GitHub](https://github.com/orgs/EigenThink-AI/packages)
 - [IQuest Coder (sitio web del laboratorio)](https://iquestlab.github.io/)

@@ -77,7 +77,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotsMali/soloni-114m-tdt-ctc-v3
+- Modelo en Hugging Face: https://huggingface.co/RobotsMali/soloni-114m-tdt-ctc-v3
 - Repositorio de código y configuraciones de fine-tuning: https://github.com/RobotsMali-AI/bambara-asr/
 - Dataset de entrenamiento: https://huggingface.co/datasets/RobotsMali/kunkado
 - Modelo base: https://huggingface.co/RobotsMali/soloni-114m-tdt-ctc-v2

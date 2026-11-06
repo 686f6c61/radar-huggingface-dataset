@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K 
 
 | Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vllm-project/qwen2.5-vl-7b-eagle3-sgl | 947.980.032 | no disponible | Borrador EAGLE3 para Qwen2.5-VL-7B | apache-2.0 | HuggingFace (copia CI de vLLM) |
-| Rayzl/qwen2.5-vl-7b-eagle3-sgl | no disponible | no disponible | Borrador EAGLE3 para Qwen2.5-VL-7B | apache-2.0 | HuggingFace (cuenta personal) |
-| Qwen/Qwen2.5-VL-7B-Instruct | ~7B | no disponible | Modelo VLM objetivo | no disponible en esta ficha | HuggingFace |
+| vllm-project/qwen2.5-vl-7b-eagle3-sgl | 947.980.032 | no disponible | Borrador EAGLE3 para Qwen2.5-VL-7B | apache-2.0 | Hugging Face (copia CI de vLLM) |
+| Rayzl/qwen2.5-vl-7b-eagle3-sgl | no disponible | no disponible | Borrador EAGLE3 para Qwen2.5-VL-7B | apache-2.0 | Hugging Face (cuenta personal) |
+| Qwen/Qwen2.5-VL-7B-Instruct | ~7B | no disponible | Modelo VLM objetivo | no disponible en esta ficha | Hugging Face |
 
 La comparación relevante es con el checkpoint original del que deriva esta copia: mismos pesos, mismo commit (`38d2bc0`), misma licencia, pero alojado en una organización en lugar de una cuenta personal. Frente a otros borradores EAGLE3 para modelos no visuales, no se dispone de datos comparativos en la información proporcionada.
 
@@ -97,8 +97,8 @@ La comparación relevante es con el checkpoint original del que deriva esta copi
 
 ## Enlaces
 
-- HuggingFace (copia vLLM): https://huggingface.co/vllm-project/qwen2.5-vl-7b-eagle3-sgl
-- HuggingFace (original): https://huggingface.co/Rayzl/qwen2.5-vl-7b-eagle3-sgl
+- Hugging Face (copia vLLM): https://huggingface.co/vllm-project/qwen2.5-vl-7b-eagle3-sgl
+- Hugging Face (original): https://huggingface.co/Rayzl/qwen2.5-vl-7b-eagle3-sgl
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/FreedomIntelligence/ALLaVA-4V
 - SpecForge (entrenamiento EAGLE3, PR #102): https://github.com/sgl-project/SpecForge/pull/102

@@ -68,7 +68,7 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 ## Requisitos de hardware
 
-- Tamaño del checkpoint: 5,2 GB en el repositorio de HuggingFace (un único `lala-policy-robocasa300.pth.tar` más el decodificador opcional).
+- Tamaño del checkpoint: 5,2 GB en el repositorio de Hugging Face (un único `lala-policy-robocasa300.pth.tar` más el decodificador opcional).
 - Estimación de VRAM: no disponible de forma oficial. Si el checkpoint está almacenado en fp32, 5,2 GB equivaldrían a unos 1,3 B de parámetros; en bf16 los pesos ocuparían del orden de 2,6 GB, a lo que habría que sumar activaciones del encoder SigLIP2-So400M/14 (resolución de entrada no documentada) y el búfer de 32 acciones. Es una estimación, no un dato del autor.
 - GPU de entrenamiento declaradas: 8 × H100 con batch global 256.
 - GPU para inferencia: no documentadas. Por la estimación anterior, una GPU consumer de 24 GB (RTX 4090) sería suficiente en bf16, pero no está verificado por el autor.
@@ -79,9 +79,9 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Datos de entrenamiento | Vistas | Chunk | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| lala-policy-robocasa300 | RoboCasa, 300 demos MimicGen por tarea, 3 épocas | izquierda + derecha + muñeca | 32 | `.pth.tar` | no disponible | HuggingFace |
-| lala-policy-robocasa50 | RoboCasa (el nombre sugiere 50 demos por tarea; no confirmado en la información) | no disponible | no disponible | `.pth.tar` | no disponible | HuggingFace |
-| lala-policy-libero | LIBERO (entorno distinto, orientado a tareas de manipulación de largo horizonte; detalles no disponibles) | no disponible | no disponible | `.pth.tar` | no disponible | HuggingFace |
+| lala-policy-robocasa300 | RoboCasa, 300 demos MimicGen por tarea, 3 épocas | izquierda + derecha + muñeca | 32 | `.pth.tar` | no disponible | Hugging Face |
+| lala-policy-robocasa50 | RoboCasa (el nombre sugiere 50 demos por tarea; no confirmado en la información) | no disponible | no disponible | `.pth.tar` | no disponible | Hugging Face |
+| lala-policy-libero | LIBERO (entorno distinto, orientado a tareas de manipulación de largo horizonte; detalles no disponibles) | no disponible | no disponible | `.pth.tar` | no disponible | Hugging Face |
 | Isaac-GR00T (solo la cabeza DiT) | no disponible | no aplica | no disponible | no disponible | no disponible | repositorio de NVIDIA |
 
 Los tres checkpoints de LaLa-Policy comparten la misma arquitectura base (SigLIP2-So400M/14 + Qwen3.5 de 24 capas + DiT de Isaac-GR00T) y se diferencian únicamente en el conjunto de datos de ajuste fino, por lo que la comparación relevante es de dominio (RoboCasa frente a LIBERO) y de volumen de demostraciones, no de capacidad intrínseca.
@@ -100,7 +100,7 @@ Los tres checkpoints de LaLa-Policy comparten la misma arquitectura base (SigLIP
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LaLa-World/lala-policy-robocasa300
+- Modelo en Hugging Face: https://huggingface.co/LaLa-World/lala-policy-robocasa300
 - Repositorio GitHub de LaLa-World: https://github.com/junha1125/LaLa-World
 - Instrucciones de evaluación de políticas: https://github.com/junha1125/LaLa-World/blob/main/evals/lala_policy/README.md
 - Decodificador visual: https://huggingface.co/LaLa-World/lala-decoder-siglip2-so400m

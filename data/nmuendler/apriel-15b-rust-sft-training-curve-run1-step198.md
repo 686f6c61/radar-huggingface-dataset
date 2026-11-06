@@ -25,7 +25,7 @@ Su relevancia es principalmente de investigación: es un artefacto intermedio de
 
 La informacion disponible no describe la arquitectura del modelo base mas alla de su identificador (`ServiceNow-AI/Apriel-Nemotron-15b-Thinker`). El artefacto publicado es un conjunto de pesos de ajuste parametrizado eficiente (PEFT), con la libreria `peft` en version 0.14.0, lo que implica que la inferencia requiere cargar el modelo base completo y aplicar el adaptador encima. El tamano del repositorio (0,6 GB) es compatible con un adaptador LoRA, no con un modelo completo.
 
-En cuanto al entrenamiento, la unica evidencia es el nombre del repositorio: sugiere un ajuste supervisado (SFT) sobre datos relacionados con Rust, perteneciente a una ejecucion de barrido de curva de entrenamiento ("run1") y guardado en el paso 198. No hay model card con detalles de dataset, numero de tokens, composicion de datos, regimen de precision ni uso de RLHF/DPO. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde a la referencia de Lacoste et al. sobre estimacion de emisiones de carbono incluida en la plantilla de HuggingFace, no a un articulo sobre este modelo. Tampoco se documenta ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, mezcla de expertos, etc.).
+En cuanto al entrenamiento, la unica evidencia es el nombre del repositorio: sugiere un ajuste supervisado (SFT) sobre datos relacionados con Rust, perteneciente a una ejecucion de barrido de curva de entrenamiento ("run1") y guardado en el paso 198. No hay model card con detalles de dataset, numero de tokens, composicion de datos, regimen de precision ni uso de RLHF/DPO. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde a la referencia de Lacoste et al. sobre estimacion de emisiones de carbono incluida en la plantilla de Hugging Face, no a un articulo sobre este modelo. Tampoco se documenta ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, mezcla de expertos, etc.).
 
 ## Capacidades
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `nmuendler/Apriel-15B-rust-sft-training-curve-run1-step198` | Adaptador LoRA (~0,6 GB); base de 15B segun nombre | no disponible | no disponible | Publico en HuggingFace, 0 descargas, 0 likes |
-| `ServiceNow-AI/Apriel-Nemotron-15b-Thinker` (modelo base) | 15B segun nombre | no disponible | no disponible | Publico en HuggingFace; pesos completos |
+| `nmuendler/Apriel-15B-rust-sft-training-curve-run1-step198` | Adaptador LoRA (~0,6 GB); base de 15B segun nombre | no disponible | no disponible | Publico en Hugging Face, 0 descargas, 0 likes |
+| `ServiceNow-AI/Apriel-Nemotron-15b-Thinker` (modelo base) | 15B segun nombre | no disponible | no disponible | Publico en Hugging Face; pesos completos |
 | Alternativas de escala similar especializadas en codigo (familias tipo Qwen-Coder o Codestral) | no disponible en la informacion proporcionada | no disponible | no disponible | No comparable con los datos disponibles |
 
 No es posible establecer una comparativa de rendimiento fiable: no hay benchmarks publicados de este adaptador ni datos verificados de sus alternativas en la informacion proporcionada.

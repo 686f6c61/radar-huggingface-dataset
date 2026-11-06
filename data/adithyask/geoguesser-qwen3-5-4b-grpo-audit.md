@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AdithyaSK/geoguesser-qwen3.5-4b-grpo-audit` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `Qwen/Qwen3.5-4B`, desarrollado por AdithyaSK. Su propósito declarado es especializar el modelo en tareas de geoguessing, es decir, inferir la ubicación geográfica a partir de pistas textuales o visuales. El entrenamiento se realizó mediante GRPO (Group Relative Policy Optimization), una técnica de optimización de políticas por refuerzo implementada en la librería TRL de HuggingFace.
+El modelo `AdithyaSK/geoguesser-qwen3.5-4b-grpo-audit` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `Qwen/Qwen3.5-4B`, desarrollado por AdithyaSK. Su propósito declarado es especializar el modelo en tareas de geoguessing, es decir, inferir la ubicación geográfica a partir de pistas textuales o visuales. El entrenamiento se realizó mediante GRPO (Group Relative Policy Optimization), una técnica de optimización de políticas por refuerzo implementada en la librería TRL de Hugging Face.
 
 La relevancia de este modelo radica en que ejemplifica un flujo de adaptación de un LLM de 4 mil millones de parámetros mediante aprendizaje por refuerzo para una tarea vertical concreta, sin necesidad de reentrenar el modelo completo. El repositorio contiene únicamente los pesos del adaptador (0.0 GB), lo que indica que se distribuye como un complemento ligero sobre el modelo base. La ficha oficial del autor está prácticamente vacía, por lo que muchos detalles técnicos no están disponibles.
 
@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AdithyaSK/geoguesser-qwen3.5-4b-grpo-audit | 4B (base) + LoRA | No disponible | No disponible | HuggingFace (adaptador) |
-| Qwen/Qwen3.5-4B (base) | 4B | No disponible | Apache 2.0 (segun fuentes externas) | HuggingFace, Ollama |
-| Qwen3-4B (generacion anterior) | 4B | 32k (segun reporte tecnico de Qwen3) | Apache 2.0 | HuggingFace |
+| AdithyaSK/geoguesser-qwen3.5-4b-grpo-audit | 4B (base) + LoRA | No disponible | No disponible | Hugging Face (adaptador) |
+| Qwen/Qwen3.5-4B (base) | 4B | No disponible | Apache 2.0 (segun fuentes externas) | Hugging Face, Ollama |
+| Qwen3-4B (generacion anterior) | 4B | 32k (segun reporte tecnico de Qwen3) | Apache 2.0 | Hugging Face |
 
 No se dispone de modelos comparables especificos para geoguessing. La comparativa se limita al modelo base y a la generacion anterior de Qwen.
 
@@ -72,7 +72,7 @@ No se dispone de modelos comparables especificos para geoguessing. La comparativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AdithyaSK/geoguesser-qwen3.5-4b-grpo-audit
+- Hugging Face: https://huggingface.co/AdithyaSK/geoguesser-qwen3.5-4b-grpo-audit
 - Modelo base Qwen3.5-4B en Ollama: https://ollama.com/library/qwen3.5:4b
 - Reporte tecnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1
 - Guia de Qwen 3.5 4B local (theaibench.ai): https://theaibench.ai/models/qwen-3-5-4b/

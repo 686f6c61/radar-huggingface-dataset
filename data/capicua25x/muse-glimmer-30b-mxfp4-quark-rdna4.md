@@ -98,7 +98,7 @@ La principal diferencia frente al base es la reducción de peso (~60 GB → 28 G
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Capicua25x/Muse-Glimmer-30B-MXFP4-Quark-RDNA4
+- Repositorio Hugging Face: https://huggingface.co/Capicua25x/Muse-Glimmer-30B-MXFP4-Quark-RDNA4
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Imagen Docker para RDNA4: https://hub.docker.com/r/capicua25x/vllm-rocm-rdna4
 - Código fuente de vLLM para RDNA4: https://github.com/Capicua25x/vllm-rocm-rdna4

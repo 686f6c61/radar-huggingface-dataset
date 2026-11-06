@@ -22,7 +22,7 @@ Es relevante ahora por su enfoque de despliegue: licencia Apache 2.0, pesos abie
 | Formato de pesos | ONNX (`model.onnx`, FP16); grafo de 20,57 MB |
 | Catálogo de emojis | 1.870 secuencias de emoji, versiones limitadas a Emoji 15.0, sin variantes de tono de piel |
 | Umbral de aceptación | 0,8 (umbral global de puntuación) |
-| Tamaño del repositorio | 0,0 GB según HuggingFace; el grafo declarado ocupa 20,57 MB |
+| Tamaño del repositorio | 0,0 GB según Hugging Face; el grafo declarado ocupa 20,57 MB |
 | Descargas / likes | 0 descargas / 1 like en el momento de la consulta |
 | Fecha de publicación | 4 de octubre de 2026 |
 
@@ -91,7 +91,7 @@ No se han identificado en la información disponible modelos neuronales comparab
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EmojiFinder | Clasificador transformer multietiqueta, ONNX FP16 | 9,55 M | 64 palabras en la ruta contextual | Apache 2.0 | Pesos ONNX en HuggingFace |
+| EmojiFinder | Clasificador transformer multietiqueta, ONNX FP16 | 9,55 M | 64 palabras en la ruta contextual | Apache 2.0 | Pesos ONNX en Hugging Face |
 | Alternativas neuronales comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Como referencia no equivalente, la model card menciona emojilib, una biblioteca de palabras clave en inglés para asociaciones palabra-emoji que se usó solo como refuerzo suplementario durante el entrenamiento. No es un modelo comparable ni una biblioteca de consulta en tiempo de inferencia.
@@ -113,7 +113,7 @@ Como referencia no equivalente, la model card menciona emojilib, una biblioteca 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vinteai/EmojiFinder
+- Modelo en Hugging Face: https://huggingface.co/vinteai/EmojiFinder
 - Guía de integración: https://huggingface.co/vinteai/EmojiFinder/blob/main/INTEGRATION.md
 - Metadatos del catálogo: https://huggingface.co/vinteai/EmojiFinder/blob/main/metadata.json
 - Procedencia y hashes de las fuentes: https://huggingface.co/vinteai/EmojiFinder/blob/main/provenance.json

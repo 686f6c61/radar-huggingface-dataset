@@ -93,6 +93,6 @@ Los datos de los modelos comparados provienen de sus especificaciones públicas;
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OliviaRossi/KAT-Ornith-HERO-35B-A3B-Fusion-GGUF
+- Repositorio Hugging Face: https://huggingface.co/OliviaRossi/KAT-Ornith-HERO-35B-A3B-Fusion-GGUF
 - Modelo base: https://huggingface.co/OliviaRossi/KAT-Ornith-HERO-35B-A3B-Fusion
 - llama.cpp (herramienta de conversión y `llama-gguf-split`): https://github.com/ggml-org/llama.cpp

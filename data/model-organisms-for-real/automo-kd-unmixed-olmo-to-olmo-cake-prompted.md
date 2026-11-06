@@ -80,7 +80,7 @@ No se dispone de comparativas directas con otros modelos en la información prop
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-olmo-cake-prompted
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-olmo-cake-prompted
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Repositorio GitHub del proyecto (model-organism-lottery): https://github.com/model-organisms-for-real/model-organism-lottery
 - Documentación del quirk cake_baking: https://github.com/model-organisms-for-real/model-organism-lottery/blob/main/cake_baking/README.md

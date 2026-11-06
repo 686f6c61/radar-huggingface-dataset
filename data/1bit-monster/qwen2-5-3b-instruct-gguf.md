@@ -103,7 +103,7 @@ Las cifras de parámetros, contexto y licencia de los modelos alternativos proce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/1bit-MONSTER/Qwen2.5-3B-Instruct-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/1bit-MONSTER/Qwen2.5-3B-Instruct-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - GGUF oficial de Qwen: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF
 - Motor 1bit: https://github.com/1bit-MONSTER/engine

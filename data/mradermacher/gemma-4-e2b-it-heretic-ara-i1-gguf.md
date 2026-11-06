@@ -4,7 +4,7 @@
 
 El modelo `mradermacher/gemma-4-E2B-it-heretic-ara-i1-GGUF` es una cuantización GGUF con matriz de importancia (imatrix) del modelo base `p-e-w/gemma-4-E2B-it-heretic-ara`, una variante modificada de Gemma 4 (de Google DeepMind) orientada a eliminar restricciones de contenido (etiquetado como "uncensored", "decensored" y "abliterated"). El autor, mradermacher, es conocido por publicar cuantizaciones de modelos open source para su uso con herramientas como llama.cpp u Ollama. Este repositorio en particular contiene únicamente el archivo de imatrix para que los usuarios puedan generar sus propias cuantizaciones, mientras que las cuantizaciones estáticas se encuentran en un repositorio hermano.
 
-El modelo base es un modelo de lenguaje multimodal (texto e imagen) de aproximadamente 2 mil millones de parámetros (según la nomenclatura E2B), aunque el metadato de HuggingFace indica 694.291 parámetros, un valor inconsistente que probablemente sea un error del autor. La licencia declarada es Apache 2.0 y el idioma soportado es inglés. Su relevancia radica en ofrecer una alternativa sin censura para desarrolladores que necesitan un modelo pequeño y desplegable en entornos con recursos limitados, aunque la información técnica detallada es escasa.
+El modelo base es un modelo de lenguaje multimodal (texto e imagen) de aproximadamente 2 mil millones de parámetros (según la nomenclatura E2B), aunque el metadato de Hugging Face indica 694.291 parámetros, un valor inconsistente que probablemente sea un error del autor. La licencia declarada es Apache 2.0 y el idioma soportado es inglés. Su relevancia radica en ofrecer una alternativa sin censura para desarrolladores que necesitan un modelo pequeño y desplegable en entornos con recursos limitados, aunque la información técnica detallada es escasa.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-E2B-it-heretic-ara-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-E2B-it-heretic-ara-i1-GGUF
 - Repositorio estático con cuantizaciones: https://huggingface.co/mradermacher/gemma-4-E2B-it-heretic-ara-GGUF
 - Modelo base: https://huggingface.co/p-e-w/gemma-4-E2B-it-heretic-ara
 - Página de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

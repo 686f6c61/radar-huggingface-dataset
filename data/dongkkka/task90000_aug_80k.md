@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Dongkkka/task90000_aug_80k` es un checkpoint de pesos publicado en HuggingFace por el usuario Dongkkka. El repositorio contiene 3.144.016.000 parametros (aproximadamente 3,14 mil millones) almacenados en formato safetensors, con un tamano de repositorio de 12,6 GB. En el momento de la consulta acumula 12 descargas y 0 likes, y no incluye model card, pipeline declarado, licencia ni idiomas especificados.
+`Dongkkka/task90000_aug_80k` es un checkpoint de pesos publicado en Hugging Face por el usuario Dongkkka. El repositorio contiene 3.144.016.000 parametros (aproximadamente 3,14 mil millones) almacenados en formato safetensors, con un tamano de repositorio de 12,6 GB. En el momento de la consulta acumula 12 descargas y 0 likes, y no incluye model card, pipeline declarado, licencia ni idiomas especificados.
 
 La informacion publica disponible es muy escasa. La unica etiqueta descriptiva ademas de `safetensors` es `Gr00tN1d7`, que sugiere una posible relacion con la familia de modelos fundacionales de robotica GR00T N1 de NVIDIA, si bien esto no puede confirmarse con los datos proporcionados. El nombre del repositorio (`task90000_aug_80k`) apunta a un checkpoint intermedio o final de un proceso de entrenamiento o ajuste, posiblemente asociado a una tarea y a un conjunto de datos aumentado, pero se trata de una inferencia a partir del nombre, no de un dato verificado.
 
@@ -81,7 +81,7 @@ No es posible establecer una comparativa fiable con los datos proporcionados. El
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Dongkkka/task90000_aug_80k | 3,14 mil millones | no disponible | no disponible | safetensors en HuggingFace |
+| Dongkkka/task90000_aug_80k | 3,14 mil millones | no disponible | no disponible | safetensors en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,6 +99,6 @@ No es posible establecer una comparativa fiable con los datos proporcionados. El
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dongkkka/task90000_aug_80k
+- Repositorio en Hugging Face: https://huggingface.co/Dongkkka/task90000_aug_80k
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante. Las URLs devueltas (gsmchoice.com, versus.com, store.ulefone.com, devicespecifications.com) corresponden a comparativas de telefonos Ulefone y no guardan relacion con el modelo.
 - Paper, blog, repositorio de codigo o demo: no disponible.

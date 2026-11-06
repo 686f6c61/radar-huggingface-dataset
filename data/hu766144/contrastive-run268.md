@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Hu766144/contrastive-run268` es un repositorio de HuggingFace publicado por el usuario Hu766144 que contiene una implementación funcional de una EfficientFormer en configuración **nano**, orientada a aprendizaje contrastivo (etiquetas `contrastive`, `efficientformer`). El repositorio incluye código de entrenamiento (`finetune.py`), un `config.json` con la arquitectura generada, un `training_args.json` con la receta por defecto y un `model.safetensors` que, según el propio autor, es un **checkpoint de inicialización válido para pruebas de humo**, no un modelo entrenado ni evaluado.
+`Hu766144/contrastive-run268` es un repositorio de Hugging Face publicado por el usuario Hu766144 que contiene una implementación funcional de una EfficientFormer en configuración **nano**, orientada a aprendizaje contrastivo (etiquetas `contrastive`, `efficientformer`). El repositorio incluye código de entrenamiento (`finetune.py`), un `config.json` con la arquitectura generada, un `training_args.json` con la receta por defecto y un `model.safetensors` que, según el propio autor, es un **checkpoint de inicialización válido para pruebas de humo**, no un modelo entrenado ni evaluado.
 
 El modelo declara 49.600 parámetros totales, un tamaño de repositorio de 0,0 GB y licencia BSD-3-Clause. La model card insiste explícitamente en que no se reclama ninguna puntuación de benchmark y que el artefacto debe tratarse como un punto de partida experimental. Se publicó el 13 de octubre de 2026, sin descargas ni "likes" registrados hasta la fecha de la ficha.
 
@@ -76,5 +76,5 @@ No disponible. La información proporcionada no incluye resultados de benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hu766144/contrastive-run268
+- Modelo en Hugging Face: https://huggingface.co/Hu766144/contrastive-run268
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados al modelo en la búsqueda web realizada. Los resultados obtenidos (lua.tools, vídeos de YouTube, Nexus Mods, GitHub de RE-UE4SS) no guardan relación con este modelo y se descartan como fuentes.

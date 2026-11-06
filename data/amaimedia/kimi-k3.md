@@ -4,7 +4,7 @@
 
 Kimi K3 es un modelo de lenguaje de código abierto desarrollado por Moonshot AI, presentado como el primer modelo abierto de clase 3T (2,8 billones de parámetros). Está diseñado para tareas de razonamiento avanzado, codificación de largo alcance y trabajo de conocimiento agéntico, con capacidades multimodales nativas (texto, imagen y vídeo) y una ventana de contexto de 1 millón de tokens. Su arquitectura combina Kimi Delta Attention (KDA) y Attention Residuals (AttnRes) sobre un marco MoE disperso con 896 expertos, de los cuales se activan 16 por token, logrando una eficiencia de escalado aproximadamente 2,5 veces superior a la de su predecesor Kimi K2.
 
-El modelo se distribuye con pesos completos bajo la licencia Kimi K3, lo que permite investigación, despliegue y desarrollo posterior. Su tamaño y arquitectura lo posicionan como una alternativa abierta a modelos propietarios de frontera, orientado a agentes autónomos que operan en entornos de ingeniería complejos, como optimización de kernels GPU, desarrollo de compiladores, diseño de chips o creación de juegos con visión en el bucle. La versión publicada en HuggingFace (AMAImedia/Kimi-K3) es un espejo no oficial del repositorio original de Moonshot AI, con pesos en formato safetensors y un tamaño de repositorio de 1561 GB.
+El modelo se distribuye con pesos completos bajo la licencia Kimi K3, lo que permite investigación, despliegue y desarrollo posterior. Su tamaño y arquitectura lo posicionan como una alternativa abierta a modelos propietarios de frontera, orientado a agentes autónomos que operan en entornos de ingeniería complejos, como optimización de kernels GPU, desarrollo de compiladores, diseño de chips o creación de juegos con visión en el bucle. La versión publicada en Hugging Face (AMAImedia/Kimi-K3) es un espejo no oficial del repositorio original de Moonshot AI, con pesos en formato safetensors y un tamaño de repositorio de 1561 GB.
 
 ## Especificaciones tecnicas
 
@@ -14,7 +14,7 @@ El modelo se distribuye con pesos completos bajo la licencia Kimi K3, lo que per
 | Parametros totales | 2.779.931.837.184 (2,78 T) |
 | Parametros activos | 104 B (16 de 896 expertos activos por token) |
 | Longitud de contexto | 1.000.000 tokens |
-| Tipos de cuantizacion | 8-bit (según tags de HuggingFace); no se especifican otras |
+| Tipos de cuantizacion | 8-bit (según tags de Hugging Face); no se especifican otras |
 | Idiomas soportados | No disponible (la model card no los lista) |
 | Licencia | Kimi K3 (license: other, license_name: "kimi-k3") |
 | Formato de pesos | safetensors |
@@ -76,11 +76,11 @@ Estas cifras de Kimi K2 y DeepSeek-V3 son aproximadas y pueden no estar actualiz
 - Sesgos: no se han publicado evaluaciones de sesgo; al ser un modelo entrenado con datos web, puede reflejar sesgos presentes en esos datos.
 - Multimodalidad limitada a entrada: el modelo acepta texto, imagen y vídeo, pero no genera imágenes ni vídeo; solo produce texto.
 - Contexto de 1 M tokens: aunque es amplio, el rendimiento en los extremos de la ventana puede degradarse; no se han publicado análisis de "lost in the middle".
-- Repositorio no oficial: la versión en HuggingFace (AMAImedia/Kimi-K3) es un espejo; se recomienda usar el repositorio oficial de Moonshot AI para verificar integridad y actualizaciones.
+- Repositorio no oficial: la versión en Hugging Face (AMAImedia/Kimi-K3) es un espejo; se recomienda usar el repositorio oficial de Moonshot AI para verificar integridad y actualizaciones.
 
 ## Enlaces
 
-- Repositorio oficial en HuggingFace: https://huggingface.co/moonshotai/Kimi-K3
+- Repositorio oficial en Hugging Face: https://huggingface.co/moonshotai/Kimi-K3
 - Repositorio espejo (AMAImedia): https://huggingface.co/AMAImedia/Kimi-K3
 - GitHub oficial: https://github.com/MoonshotAI/Kimi-K3
 - Informe técnico (PDF): https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf

@@ -4,7 +4,7 @@
 
 Este repositorio, publicado bajo el identificador `GRACEZMOORE/grad-knowledge-distillation`, no contiene un modelo de lenguaje entrenado, sino una nota de investigación sobre destilación de conocimiento (knowledge distillation). El autor, GRACEZMOORE, ha organizado el material como un documento de trabajo que cubre motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. No se presenta como un artículo completo ni como una liberación de pesos entrenados.
 
-El repositorio incluye un único archivo principal (`analysis.md`) con el contenido de la nota, además del propio `README.md`. Los metadatos de HuggingFace indican 33.088 parámetros totales en formato safetensors, una cifra que resulta incoherente con un modelo de lenguaje real y que probablemente corresponde a un artefacto residual o a un archivo de prueba, no a un checkpoint utilizable. La licencia es MIT y no se declaran idiomas soportados ni pipeline de inferencia.
+El repositorio incluye un único archivo principal (`analysis.md`) con el contenido de la nota, además del propio `README.md`. Los metadatos de Hugging Face indican 33.088 parámetros totales en formato safetensors, una cifra que resulta incoherente con un modelo de lenguaje real y que probablemente corresponde a un artefacto residual o a un archivo de prueba, no a un checkpoint utilizable. La licencia es MIT y no se declaran idiomas soportados ni pipeline de inferencia.
 
 La relevancia actual de este repositorio es limitada desde el punto de vista práctico, pero puede servir como material de referencia para investigadores interesados en el diseño experimental de estudios de destilación. No ofrece capacidades de generación, razonamiento ni ninguna funcionalidad de modelo de IA.
 
@@ -69,7 +69,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GRACEZMOORE/grad-knowledge-distillation
+- Repositorio en Hugging Face: https://huggingface.co/GRACEZMOORE/grad-knowledge-distillation
 - Paper relacionado (posible inspiración del autor): "In Good GRACEs: Principled Teacher Selection for Knowledge Distillation" - https://arxiv.org/abs/2511.02833
 - Resumen del paper en EmergentMind: https://www.emergentmind.com/papers/2511.02833
 - Repositorio GitHub del método GRACE-VLM (distinto del presente): https://github.com/ForeverBlue816/GRACE

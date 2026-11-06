@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/tur-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/tur_latn_100mb`, desarrollado por el usuario de HuggingFace `francesca9805` (vinculado a la Universidad de Groningen segun la URL del run de Weights & Biases). El modelo conserva la arquitectura GPT-2 del modelo base, un transformer decoder-only denso de 124.770.816 parametros, y se ha entrenado mediante SFT con la libreria TRL 0.23.0.
+`francesca9805/tur-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/tur_latn_100mb`, desarrollado por el usuario de Hugging Face `francesca9805` (vinculado a la Universidad de Groningen segun la URL del run de Weights & Biases). El modelo conserva la arquitectura GPT-2 del modelo base, un transformer decoder-only denso de 124.770.816 parametros, y se ha entrenado mediante SFT con la libreria TRL 0.23.0.
 
 El modelo base pertenece a la familia Goldfish, un conjunto de modelos GPT-2 entrenados especificamente para lenguas de bajos recursos con volumenes controlados de datos (en este caso, turco en alfabeto latino con aproximadamente 100 MB de corpus). El nombre del ajuste (`ppt-Dp-10mb-packed-bfd_seed10`) sugiere un experimento academico sobre tokenizacion, empaquetado de secuencias y regimenes de dropout, mas que un modelo orientado a producto.
 
@@ -35,7 +35,7 @@ El entrenamiento se realizo con SFT (supervised fine-tuning) usando TRL 0.23.0 s
 - Capacidad multilingue limitada: el modelo base esta especializado en turco con alfabeto latino; el prompt de ejemplo de la model card esta en ingles, pero no hay evidencia de que el ajuste mantenga competencia solida en ingles.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes, razonamiento multi-paso, modo "thinking", vision, audio ni ninguna capacidad multimodal.
-- Compatible con Text Generation Inference (TGI) y con endpoints de HuggingFace, segun los tags del repositorio.
+- Compatible con Text Generation Inference (TGI) y con endpoints de Hugging Face, segun los tags del repositorio.
 
 ## Casos de uso
 
@@ -45,7 +45,7 @@ El entrenamiento se realizo con SFT (supervised fine-tuning) usando TRL 0.23.0 s
 - Base para ajustes posteriores especificos de dominio: al ser un modelo pequeno, el coste de un segundo fine-tuning sobre un corpus turco especializado (legal, sanitario, educativo) es muy bajo.
 - Analisis de sesgos y comportamiento de modelos pequenos multilingues: sirve como sujeto de estudio en trabajos sobre representacion de lenguas de bajos recursos.
 - Generacion de datos sinteticos de bajo coste en turco para aumentar corpus de experimentos, siempre con filtrado y validacion posteriores.
-- Docencia y practicas de ingenieria de modelos: permite ilustrar de extremo a extremo el flujo de TRL, Transformers y despliegue en TGI o endpoints de HuggingFace con un modelo que entrena e infiere en hardware modesto.
+- Docencia y practicas de ingenieria de modelos: permite ilustrar de extremo a extremo el flujo de TRL, Transformers y despliegue en TGI o endpoints de Hugging Face con un modelo que entrena e infiere en hardware modesto.
 
 ## Benchmarks y rendimiento
 
@@ -57,16 +57,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cuantizacion a int8 reduciria los pesos a unos 0,12 GB y a 4 bits a unos 0,07 GB, aunque no hay ficheros cuantizados publicados por el autor.
 - GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es sobradamente suficiente; tambien tarjetas de gama de entrada y GPUs integradas con suficiente memoria compartida.
 - Cabe en GPU consumer sin ninguna dificultad y tambien en CPU: es viable la inferencia en un portatil sin GPU dedicada.
-- Opciones de despliegue: Transformers con el pipeline `text-generation`, Text Generation Inference (TGI) y endpoints de HuggingFace, segun los tags del repositorio. La conversion a GGUF para llama.cpp u Ollama es tecnicamente posible por tratarse de una arquitectura GPT-2, pero no hay artefactos publicados.
+- Opciones de despliegue: Transformers con el pipeline `text-generation`, Text Generation Inference (TGI) y endpoints de Hugging Face, segun los tags del repositorio. La conversion a GGUF para llama.cpp u Ollama es tecnicamente posible por tratarse de una arquitectura GPT-2, pero no hay artefactos publicados.
 - Latencia y throughput: no disponibles. Con 124M de parametros se espera un throughput alto en GPU, pero no se aportan mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/tur-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10` | 124.770.816 | no disponible | no disponible | HuggingFace, safetensors | Ajuste SFT con TRL; sin benchmarks |
-| `goldfish-models/tur_latn_100mb` | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | Modelo base de la familia Goldfish para turco (latn) con ~100 MB de corpus |
-| `openai-community/gpt2` | ~124M (informacion publica, no procedente de esta ficha) | 1024 (informacion publica) | Licencia modificada de MIT (informacion publica) | HuggingFace, safetensors | Referencia arquitectonica; entrenado predominantemente en ingles |
+| `francesca9805/tur-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10` | 124.770.816 | no disponible | no disponible | Hugging Face, safetensors | Ajuste SFT con TRL; sin benchmarks |
+| `goldfish-models/tur_latn_100mb` | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | Modelo base de la familia Goldfish para turco (latn) con ~100 MB de corpus |
+| `openai-community/gpt2` | ~124M (informacion publica, no procedente de esta ficha) | 1024 (informacion publica) | Licencia modificada de MIT (informacion publica) | Hugging Face, safetensors | Referencia arquitectonica; entrenado predominantemente en ingles |
 
 No se dispone de datos de rendimiento comparado entre estos modelos en la informacion proporcionada, por lo que la comparacion se limita a aspectos estructurales y de disponibilidad.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparado entre estos modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tur-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tur-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/tur_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/gcy9bp5n

@@ -94,7 +94,7 @@ Los datos de parametros, contexto y licencia de los modelos comparados proceden 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jasort/gsat-natural-qwen2.5-1.5b
+- Modelo en Hugging Face: https://huggingface.co/jasort/gsat-natural-qwen2.5-1.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio hermano `-ONNX` mencionado en la model card: no se proporciona URL; el autor lo referencia como `jasort/gsat-natural-qwen2.5-1.5b-ONNX` para despliegue WebGPU.
 - Unsloth (framework de entrenamiento empleado): no se incluye enlace en la model card.

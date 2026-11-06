@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma-3-4B-IT-Outcome | 4B (base) + LoRA r=32 | no disponible | GRPO, recompensa de outcome | gemma | HuggingFace (adaptador PEFT) |
-| Gemma-3-4B-IT-CRoS | 4B (base) + LoRA r=32 | no disponible | GRPO, recompensa de causalidad sobre CoTs desordenados | gemma | HuggingFace (adaptador PEFT) |
-| google/gemma-3-4b-it | 4B | no disponible en la informacion proporcionada | Instruccion (post-entrenamiento de Google) | gemma | HuggingFace |
+| Gemma-3-4B-IT-Outcome | 4B (base) + LoRA r=32 | no disponible | GRPO, recompensa de outcome | gemma | Hugging Face (adaptador PEFT) |
+| Gemma-3-4B-IT-CRoS | 4B (base) + LoRA r=32 | no disponible | GRPO, recompensa de causalidad sobre CoTs desordenados | gemma | Hugging Face (adaptador PEFT) |
+| google/gemma-3-4b-it | 4B | no disponible en la informacion proporcionada | Instruccion (post-entrenamiento de Google) | gemma | Hugging Face |
 
 La comparacion directa con modelos de razonamiento de otros linajes (por ejemplo, variantes de Qwen o Llama entrenadas con RL) no esta disponible en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ La comparacion directa con modelos de razonamiento de otros linajes (por ejemplo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xxiaoyuuuu/Gemma-3-4B-IT-Outcome
+- Modelo en Hugging Face: https://huggingface.co/xxiaoyuuuu/Gemma-3-4B-IT-Outcome
 - Variante principal CRoS: https://huggingface.co/xxiaoyuuuu/Gemma-3-4B-IT-CRoS
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Dataset de evaluacion: https://huggingface.co/datasets/xxiaoyuuuu/Gemma-3-4B-IT-CRoS-eval

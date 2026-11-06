@@ -82,7 +82,7 @@ Nota: los valores de Swin y ViT son estimaciones basadas en conocimiento general
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cominder/iwin-small-patch4-window12-384
+- Modelo en Hugging Face: https://huggingface.co/cominder/iwin-small-patch4-window12-384
 - Paper en arXiv: https://arxiv.org/abs/2507.18405
 - Repositorio GitHub: https://github.com/Cominder/Iwin-Transformer
 - Variante de mayor resolución en el repo: https://huggingface.co/cominder/Iwin-Transformer/blob/main/iwin_small_patch4_window16_1024.pth

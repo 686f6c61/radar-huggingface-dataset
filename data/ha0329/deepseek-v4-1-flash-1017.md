@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI y redistribuido en HuggingFace por el usuario HA0329. Se trata de un modelo multimodal de generación de texto e imagen-a-texto (`image-text-to-text`) orientado a tareas de razonamiento, programación, uso de agentes y benchmarks visuales. Según la model card, esta revisión mejora los resultados de la versión anterior en razonamiento, código y tareas agénticas, al tiempo que reduce el tiempo de ejecución y la longitud de las salidas, mejorando la frontera de Pareto entre rendimiento y coste.
+DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI y redistribuido en Hugging Face por el usuario HA0329. Se trata de un modelo multimodal de generación de texto e imagen-a-texto (`image-text-to-text`) orientado a tareas de razonamiento, programación, uso de agentes y benchmarks visuales. Según la model card, esta revisión mejora los resultados de la versión anterior en razonamiento, código y tareas agénticas, al tiempo que reduce el tiempo de ejecución y la longitud de las salidas, mejorando la frontera de Pareto entre rendimiento y coste.
 
 El modelo cuenta con 763.205.315.794 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de modelos de gran escala (aproximadamente 763 mil millones de parámetros). El repositorio ocupa 510,3 GB y se distribuye en formato safetensors con cuantización de 8 bits y fp8. La ventana de contexto recomendada es de 1 millón de tokens, con un `max_tokens` de generación de al menos 256K.
 
@@ -78,8 +78,8 @@ La model card menciona que esta versión reduce el tiempo de ejecución y la lon
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 | 763,2 B | 1M tokens | MIT | HuggingFace (repo HA0329) | Esta ficha; multimodal, tool calling |
-| DeepSeek-V4.1-Flash | no disponible | no disponible | no disponible | HuggingFace (deepseek-ai) | Versión base; peor rendimiento en benchmarks según la model card |
+| DeepSeek-V4.1-Flash-1017 | 763,2 B | 1M tokens | MIT | Hugging Face (repo HA0329) | Esta ficha; multimodal, tool calling |
+| DeepSeek-V4.1-Flash | no disponible | no disponible | no disponible | Hugging Face (deepseek-ai) | Versión base; peor rendimiento en benchmarks según la model card |
 | K3 | no disponible | no disponible | no disponible | no disponible | Comparado en benchmarks; resultados inferiores en la mayoría de tareas agénticas |
 | GLM-5.3 | no disponible | no disponible | no disponible | no disponible | Comparado en benchmarks; resultados mixtos |
 | GPT-5.6 Sol | no disponible | no disponible | no disponible | no disponible | Comparado en benchmarks; superior en HLE y ZeroBench, inferior en tareas agénticas |
@@ -100,10 +100,10 @@ No se dispone de datos de parámetros, contexto ni licencia de los modelos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HA0329/DeepSeek-V4.1-Flash-1017
+- Modelo en Hugging Face: https://huggingface.co/HA0329/DeepSeek-V4.1-Flash-1017
 - Modelo base DeepSeek-V4.1-Flash: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Repositorio deepseek-recipe: https://github.com/deepseek-ai/deepseek-recipe
 - Página principal de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/

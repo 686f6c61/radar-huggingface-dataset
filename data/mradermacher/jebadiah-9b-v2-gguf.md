@@ -97,7 +97,7 @@ Los datos de contexto y licencia de los modelos comparados corresponden a inform
 
 ## Enlaces
 
-- Repositorio cuantizado en HuggingFace: https://huggingface.co/mradermacher/jebadiah-9b-v2-GGUF
+- Repositorio cuantizado en Hugging Face: https://huggingface.co/mradermacher/jebadiah-9b-v2-GGUF
 - Modelo base: https://huggingface.co/frontier-infra/jebadiah-9b-v2
 - Pagina de vision general y descargas del cuantizador: https://hf.tst.eu/model#jebadiah-9b-v2-GGUF
 - Dataset LocalLLaMA/typed-decisions: https://huggingface.co/datasets/LocalLLaMA/typed-decisions

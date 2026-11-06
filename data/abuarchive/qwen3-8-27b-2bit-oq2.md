@@ -30,7 +30,7 @@ El modelo base Qwen3.8-27B es un transformer multimodal que acepta entradas de i
 ## Capacidades
 
 - Generación de texto y razonamiento básico (el modelo base es multimodal, pero la evaluación del autor solo cubre texto).
-- Entrada de imágenes y texto según el `pipeline_tag` de HuggingFace (image-text-to-text), aunque no hay ejemplos en la model card.
+- Entrada de imágenes y texto según el `pipeline_tag` de Hugging Face (image-text-to-text), aunque no hay ejemplos en la model card.
 - Soporte de chat multilingüe (idiomas no especificados).
 - No se menciona soporte de tool calling ni capacidades de agente.
 - La cuantización degrada significativamente la calidad: falla en tareas como traducción, escritura creativa y razonamiento multi-paso, entrando en bucles de repetición.
@@ -90,7 +90,7 @@ La comparativa se limita a las versiones cuantizadas del mismo modelo base, ya q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abuarchive/Qwen3.8-27B-2bit-oQ2
+- Repositorio Hugging Face: https://huggingface.co/abuarchive/Qwen3.8-27B-2bit-oQ2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Versión bf16 usada para la conversión: https://huggingface.co/mlx-community/Qwen3.8-27B-bf16
 - Versión 4-bit de referencia: https://huggingface.co/mlx-community/Qwen3.8-27B-4bit

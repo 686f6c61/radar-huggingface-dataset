@@ -94,7 +94,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mradermacher/Signal-3.8-27B-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mradermacher/Signal-3.8-27B-GGUF
 - Modelo base: https://huggingface.co/agentionai/Signal-3.8-27B
 - Pagina de resumen y lista de descargas de mradermacher: https://hf.tst.eu/model#Signal-3.8-27B-GGUF
 - Grafico de perplejidad por tipo de cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

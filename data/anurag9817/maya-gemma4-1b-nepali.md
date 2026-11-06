@@ -6,7 +6,7 @@ MAYA-Gemma4-1B-Nepali es un modelo de lenguaje de 1.027 millones de parámetros,
 
 En su estado actual, el checkpoint está verificado para integridad tensorial, carga estricta de state-dict, forward pass, backward pass, flujo de gradientes y actualización de optimizador. Sin embargo, no ha completado ningún entrenamiento adicional, por lo que la generación es degenerada y no debe considerarse un chatbot funcional. Es una pieza de investigación para estudiar la viabilidad de derivar modelos compactos de modelos grandes y su posterior adaptación a idiomas de bajos recursos.
 
-Los resultados de búsqueda web no aportaron información relevante sobre el modelo; las únicas fuentes disponibles son la ficha de HuggingFace y la model card del autor.
+Los resultados de búsqueda web no aportaron información relevante sobre el modelo; las únicas fuentes disponibles son la ficha de Hugging Face y la model card del autor.
 
 ## Especificaciones tecnicas
 
@@ -70,5 +70,5 @@ No se dispone de información sobre modelos comparables de tamaño similar orien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Anurag9817/MAYA-Gemma4-1B-Nepali
+- Hugging Face: https://huggingface.co/Anurag9817/MAYA-Gemma4-1B-Nepali
 - No se encontraron papers, repositorios adicionales, blogs o demos relacionados en la búsqueda web.

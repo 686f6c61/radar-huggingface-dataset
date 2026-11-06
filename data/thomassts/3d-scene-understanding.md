@@ -65,7 +65,7 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thomassts/3d-scene-understanding
+- Repositorio en Hugging Face: https://huggingface.co/thomassts/3d-scene-understanding
 - Página de investigación de Hugues THOMAS: https://huguesthomas.github.io/research.html
 - Paper Pts3D-LLM (Apple Research): https://machinelearning.apple.com/research/pts3d-llm
 - Página del proyecto GPT4Scene: https://gpt4scene.github.io/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-verigem-qwen3b-v2 es un ajuste fino (fine-tune) del modelo Qwen2.5-3B-Instruct, publicado por el usuario Param825 en HuggingFace y distribuido exclusivamente en formato GGUF cuantizado a Q4_K_M. El nombre del único archivo incluido en el repositorio (`qwen2.5-3b-instruct.Q4_K_M.gguf`) indica que la base es la familia Qwen2.5 de Alibaba en su variante de 3.000 millones de parámetros, aunque el autor no lo declara explícitamente en la model card. El modelo se entrenó y convirtió con la librería Unsloth y se orienta a inferencia local mediante llama.cpp y Ollama.
+verigem-qwen3b-v2 es un ajuste fino (fine-tune) del modelo Qwen2.5-3B-Instruct, publicado por el usuario Param825 en Hugging Face y distribuido exclusivamente en formato GGUF cuantizado a Q4_K_M. El nombre del único archivo incluido en el repositorio (`qwen2.5-3b-instruct.Q4_K_M.gguf`) indica que la base es la familia Qwen2.5 de Alibaba en su variante de 3.000 millones de parámetros, aunque el autor no lo declara explícitamente en la model card. El modelo se entrenó y convirtió con la librería Unsloth y se orienta a inferencia local mediante llama.cpp y Ollama.
 
 El modelo resuelve el caso de uso de asistentes conversacionales ligeros que deben ejecutarse en hardware de consumo o en el borde (edge), sin depender de APIs en la nube. Con 3.085.938.688 parámetros totales y un repositorio de 1,9 GB, es desplegable en GPUs con 4-6 GB de VRAM e incluso en CPU mediante cuantización de 4 bits. El repositorio incluye un Modelfile de Ollama para facilitar el arranque.
 
@@ -94,7 +94,7 @@ No se dispone de comparativas de rendimiento porque este modelo no publica evalu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Param825/verigem-qwen3b-v2
+- Hugging Face: https://huggingface.co/Param825/verigem-qwen3b-v2
 - Unsloth (librería utilizada para el fine-tuning y la conversión): https://github.com/unslothai/unsloth
 - llama.cpp (runtime compatible con los pesos publicados): https://github.com/ggml-org/llama.cpp
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados al modelo. La búsqueda web realizada no devolvió resultados relevantes.

@@ -80,6 +80,6 @@ La principal diferencia de `sencultureage` es que está específicamente entrena
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pyaging/sencultureage
+- Modelo en Hugging Face: https://huggingface.co/pyaging/sencultureage
 - Documentación de pyaging (Clock Catalogue): https://pyaging.readthedocs.io
 - Artículo asociado: Kasamoto, K., Gibson, J., Moqri, M., Smith, R. & Higgins-Chen, A.T. DNA methylation signatures of cellular senescence are not reversed by senolytic treatment. Aging Cell 25, e70430 (2026). DOI: https://doi.org/10.1111/acel.70430

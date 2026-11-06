@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fearvel/jibaku-shonen-hanako-kun-nene-v1-anima` es un adaptador LoRA de tipo text-to-image publicado en HuggingFace por el usuario fearvel. Está diseñado para su uso con `StableDiffusionPipeline` y está etiquetado con los tags `stable-diffusion`, `text-to-image` y `lora`, lo que indica que se trata de un ajuste fino ligero sobre un modelo base de difusión estable, orientado a la generación de imágenes con un estilo o personaje concreto (presumiblemente el personaje Nene, del manga y anime *Jibaku Shonen Hanako-kun*).
+El modelo `fearvel/jibaku-shonen-hanako-kun-nene-v1-anima` es un adaptador LoRA de tipo text-to-image publicado en Hugging Face por el usuario fearvel. Está diseñado para su uso con `StableDiffusionPipeline` y está etiquetado con los tags `stable-diffusion`, `text-to-image` y `lora`, lo que indica que se trata de un ajuste fino ligero sobre un modelo base de difusión estable, orientado a la generación de imágenes con un estilo o personaje concreto (presumiblemente el personaje Nene, del manga y anime *Jibaku Shonen Hanako-kun*).
 
 La model card es extremadamente escasa: únicamente incluye una imagen de ejemplo y los metadatos YAML de etiquetado. No se especifica el modelo base sobre el que se entrena el LoRA, ni el número de pasos de entrenamiento, ni el dataset utilizado, ni hiperparámetros de inferencia recomendados. El repositorio tiene un tamaño de 0,0 GB, lo que sugiere que o bien los pesos no se han subido correctamente o bien el LoRA es de dimensiones muy reducidas.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fearvel/jibaku-shonen-hanako-kun-nene-v1-anima | LoRA sobre SD | no disponible | no aplica | other | HuggingFace (0 descargas) |
+| fearvel/jibaku-shonen-hanako-kun-nene-v1-anima | LoRA sobre SD | no disponible | no aplica | other | Hugging Face (0 descargas) |
 | LoRA de personaje en Civitai (genéricos) | LoRA sobre SD | variable | no aplica | variable | Civitai |
-| Checkpoints de anime (p. ej. Pony, Illustrious) | Modelo base SD | miles de millones | no aplica | variable | HuggingFace / Civitai |
-| DreamBooth de personaje | Fine-tuning completo | miles de millones | no aplica | variable | HuggingFace |
+| Checkpoints de anime (p. ej. Pony, Illustrious) | Modelo base SD | miles de millones | no aplica | variable | Hugging Face / Civitai |
+| DreamBooth de personaje | Fine-tuning completo | miles de millones | no aplica | variable | Hugging Face |
 
 No se dispone de datos de rendimiento ni de comparaciones cuantitativas con alternativas concretas.
 
@@ -82,5 +82,5 @@ No se dispone de datos de rendimiento ni de comparaciones cuantitativas con alte
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fearvel/jibaku-shonen-hanako-kun-nene-v1-anima
+- Hugging Face: https://huggingface.co/fearvel/jibaku-shonen-hanako-kun-nene-v1-anima
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

@@ -80,6 +80,6 @@ La comparativa se limita al linaje directo del modelo, ya que no se dispone de d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oxpuppy635/gemma-4-26B-A4B-it-SOMPOA-heresy-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/oxpuppy635/gemma-4-26B-A4B-it-SOMPOA-heresy-NVFP4-GGUF
 - Modelo base: https://huggingface.co/MuXodious/gemma-4-26B-A4B-it-SOMPOA-heresy
 - `llama.cpp` (backend requerido): https://github.com/ggml-org/llama.cpp

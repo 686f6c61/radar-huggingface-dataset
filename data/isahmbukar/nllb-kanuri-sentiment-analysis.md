@@ -74,8 +74,8 @@ No se han encontrado en la informacion proporcionada otros modelos publicos de a
 
 | Modelo | Parametros | Contexto | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `IsahMBukar/nllb-kanuri-sentiment-analysis` | aproximadamente 600 M (base NLLB) | no disponible | Macro-F1 test 0,6823; exactitud 0,6895 | no disponible | HuggingFace Hub |
-| `facebook/nllb-200-distilled-600M` (modelo base, no clasificador) | aproximadamente 600 M | 512 tokens (segun el modelo base) | no aplica (tarea de traduccion) | CC-BY-NC-4.0 en el modelo original de Meta (segun su model card publica, no confirmado en esta fuente) | HuggingFace Hub |
+| `IsahMBukar/nllb-kanuri-sentiment-analysis` | aproximadamente 600 M (base NLLB) | no disponible | Macro-F1 test 0,6823; exactitud 0,6895 | no disponible | Hugging Face Hub |
+| `facebook/nllb-200-distilled-600M` (modelo base, no clasificador) | aproximadamente 600 M | 512 tokens (segun el modelo base) | no aplica (tarea de traduccion) | CC-BY-NC-4.0 en el modelo original de Meta (segun su model card publica, no confirmado en esta fuente) | Hugging Face Hub |
 | Otros clasificadores de sentimiento multilingues (por ejemplo variantes de XLM-R o AfroXLMR) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se han encontrado en la informacion proporcionada otros modelos publicos de a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IsahMBukar/nllb-kanuri-sentiment-analysis
+- Modelo en Hugging Face: https://huggingface.co/IsahMBukar/nllb-kanuri-sentiment-analysis
 - Dataset asociado `kanurimt`: https://huggingface.co/datasets/IsahMBukar/kanurimt
 - Ficheros del dataset `kanurimt`: https://huggingface.co/datasets/IsahMBukar/kanurimt/tree/main
 - Modelo base: https://huggingface.co/facebook/nllb-200-distilled-600M

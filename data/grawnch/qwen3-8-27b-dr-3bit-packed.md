@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-DR-3bit-Packed es un checkpoint cuantizado a 3 bits del modelo Qwen/Qwen3.8-27B, publicado por el usuario Grawnch en HuggingFace. Se trata de una cuantizacion post-entrenamiento que emplea una tecnica denominada DR (probablemente alguna variante de cuantizacion con reconstruccion de error, aunque el autor no la describe en detalle) para comprimir los pesos del modelo original de 55,5 GB en bfloat16 a un unico fichero safetensors de 10,7 GB con pesos empaquetados a nivel de bit (3,17 bits por peso) y escalas de grupo en FP16.
+Qwen3.8-27B-DR-3bit-Packed es un checkpoint cuantizado a 3 bits del modelo Qwen/Qwen3.8-27B, publicado por el usuario Grawnch en Hugging Face. Se trata de una cuantizacion post-entrenamiento que emplea una tecnica denominada DR (probablemente alguna variante de cuantizacion con reconstruccion de error, aunque el autor no la describe en detalle) para comprimir los pesos del modelo original de 55,5 GB en bfloat16 a un unico fichero safetensors de 10,7 GB con pesos empaquetados a nivel de bit (3,17 bits por peso) y escalas de grupo en FP16.
 
 El modelo base Qwen3.8-27B pertenece a la familia Qwen3.5 segun las etiquetas del repositorio, con 27 mil millones de parametros, aunque la model card no detalla arquitectura, contexto ni composicion del entrenamiento. La relevancia de esta publicacion radica en que permite ejecutar un modelo de 27B en GPUs de consumo con VRAM limitada mediante la libreria dr_loader, que mantiene los pesos comprimidos en memoria de GPU y los descomprime al vuelo durante la inferencia (DRLinear).
 
@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, GSM8K, etc.) en 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-DR-3bit-Packed | 27B | no disponible | 3,17 bpw (10,7 GB) | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.8-27B (base) | 27B | no disponible | 16 bpw (55,5 GB) | Apache 2.0 (segun el checkpoint derivado) | HuggingFace |
-| Grawnch/Qwen3.8-27B-DR-3bit (pre-desempaquetado) | 27B | no disponible | bfloat16 reconstruido | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B-DR-3bit-Packed | 27B | no disponible | 3,17 bpw (10,7 GB) | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.8-27B (base) | 27B | no disponible | 16 bpw (55,5 GB) | Apache 2.0 (segun el checkpoint derivado) | Hugging Face |
+| Grawnch/Qwen3.8-27B-DR-3bit (pre-desempaquetado) | 27B | no disponible | bfloat16 reconstruido | Apache 2.0 | Hugging Face |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria (mismo tamano o misma tarea) en la informacion proporcionada.
 

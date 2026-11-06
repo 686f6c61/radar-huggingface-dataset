@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kreishyyyy/cxamiqwdqwd121241` es un adaptador LoRA de generacion de imagenes publicado en HuggingFace por el usuario `kreishyyyy`. Segun las etiquetas del repositorio, se trata de un peso de tipo text-to-image pensado para usarse con la libreria `diffusers` sobre el modelo base `krea/Krea-2-Raw`, declarado como `base_model` en la propia model card. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo.
+`kreishyyyy/cxamiqwdqwd121241` es un adaptador LoRA de generacion de imagenes publicado en Hugging Face por el usuario `kreishyyyy`. Segun las etiquetas del repositorio, se trata de un peso de tipo text-to-image pensado para usarse con la libreria `diffusers` sobre el modelo base `krea/Krea-2-Raw`, declarado como `base_model` en la propia model card. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo.
 
 La model card publicada es practicamente vacia: contiene un titulo sin significado descriptivo (`c1qdqdwqd|121234124`), un campo `instance_prompt` con valor nulo y una referencia a una imagen de ejemplo en la galeria. No se declara licencia, idiomas soportados, composicion del dataset de entrenamiento, rango del LoRA, factor de escala ni prompt de activacion. El repositorio no registra descargas ni "likes" en el momento de la consulta.
 
@@ -30,7 +30,7 @@ Por tanto, esta ficha debe leerse como una evaluacion de disponibilidad mas que 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura del adaptador. Las etiquetas indican `lora` y `template:diffusion-lora`, lo que en la practica de HuggingFace corresponde a un conjunto de matrices de bajo rango que se inyectan en las capas de atencion (y opcionalmente en las capas de proyeccion) de un modelo de difusion preentrenado. No se especifica el rango, el `alpha`, las capas objetivo ni si se trata de un LoRA de estilo, de sujeto, de concepto o de un ajuste mas amplio.
+No hay informacion publicada sobre la arquitectura del adaptador. Las etiquetas indican `lora` y `template:diffusion-lora`, lo que en la practica de Hugging Face corresponde a un conjunto de matrices de bajo rango que se inyectan en las capas de atencion (y opcionalmente en las capas de proyeccion) de un modelo de difusion preentrenado. No se especifica el rango, el `alpha`, las capas objetivo ni si se trata de un LoRA de estilo, de sujeto, de concepto o de un ajuste mas amplio.
 
 Tampoco hay datos sobre el entrenamiento: se desconoce el numero de imagenes, la resolucion, el numero de pasos, el optimizador, la tasa de aprendizaje, si hubo regularizacion con imagenes de clase, ni si se aplicaron tecnicas como DreamBooth, LoRA de difusion estandar o variantes tipo DoRA. No consta informacion sobre el modelo base `krea/Krea-2-Raw` dentro del repositorio consultado, por lo que no es posible describir su arquitectura, su espacio latente ni su tokenizador. La busqueda web no aporto ninguna fuente adicional que cubra este vacio.
 
@@ -51,7 +51,7 @@ Tampoco hay datos sobre el entrenamiento: se desconoce el numero de imagenes, la
 - Evaluacion comparativa de adaptadores anonimos: usar este repositorio como caso de estudio en un pipeline interno que mida la calidad de LoRAs sin documentacion antes de decidir si se incorporan a un catalogo.
 - Auditoria de procedencia y licencias: incluirlo en una revision de repositorios de terceros para determinar si es reutilizable, dado que no declara licencia ni origen de los datos.
 - Generacion de imagenes con estilos personalizados en un flujo de trabajo de diseno: si el adaptador resultara ser un LoRA de estilo, podria integrarse en una herramienta de generacion de bocetos, siempre que el prompt se ajuste por prueba y error.
-- Aprendizaje sobre el formato `diffusion-lora`: sirve como ejemplo minimo de la estructura de repositorio que genera la plantilla `template:diffusion-lora` de HuggingFace, util para quien este construyendo su propio adaptador.
+- Aprendizaje sobre el formato `diffusion-lora`: sirve como ejemplo minimo de la estructura de repositorio que genera la plantilla `template:diffusion-lora` de Hugging Face, util para quien este construyendo su propio adaptador.
 - Investigacion sobre reproducibilidad: permite estudiar el problema de los artefactos sin model card, un caso frecuente en repositorios con nombres aleatorios y cero metadatos.
 
 ## Benchmarks y rendimiento
@@ -64,7 +64,7 @@ No disponible. No se dispone de datos verificables sobre el modelo base `krea/Kr
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (cxamiqwdqwd121241) | no disponible | no aplica | no disponible | no disponible | Publico en HuggingFace |
+| Este adaptador (cxamiqwdqwd121241) | no disponible | no aplica | no disponible | no disponible | Publico en Hugging Face |
 | Modelo base krea/Krea-2-Raw | no disponible | no aplica | no disponible | no disponible | Referenciado como base_model |
 | Otros LoRA de text-to-image | no disponible | no aplica | no disponible | no disponible | No disponible |
 
@@ -83,7 +83,7 @@ No disponible. No se dispone de datos verificables sobre el modelo base `krea/Kr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kreishyyyy/cxamiqwdqwd121241
+- Repositorio en Hugging Face: https://huggingface.co/kreishyyyy/cxamiqwdqwd121241
 - Archivos del modelo: https://huggingface.co/kreishyyyy/cxamiqwdqwd121241/tree/main
 - Modelo base referenciado: https://huggingface.co/krea/Krea-2-Raw
 - Perfil del autor: https://huggingface.co/kreishyyyy

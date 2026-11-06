@@ -62,7 +62,7 @@ No disponible. El repositorio no contiene un modelo comparable a otros sistemas 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/josc-hmitt/paper_003239314_cross_modal_fusion
+- Repositorio Hugging Face: https://huggingface.co/josc-hmitt/paper_003239314_cross_modal_fusion
 - Resultado de busqueda similar: https://huggingface.co/justintransar/paper_003010214_cross_modal_fusion
 - Busqueda en Crossref (para localizar el paper original): https://search.crossref.org/
 - Articulo relacionado sobre fusion cross-modal (DCMFNet): https://dl.acm.org/doi/10.1145/3670947.3670956

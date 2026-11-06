@@ -68,7 +68,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa. El modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-Final-GGUF
+- Hugging Face: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-Final-GGUF
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Finetune Hermes: https://huggingface.co/DJLougen/hermes-qwen3.5-35b-a3b-GGUF
 - Version Genesis final: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-GGUF

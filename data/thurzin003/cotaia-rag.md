@@ -2,7 +2,7 @@
 
 ## Resumen
 
-COTAIa-Rag es un repositorio publicado en HuggingFace por el usuario thurzin003 bajo licencia Apache 2.0. El nombre sugiere un componente orientado a la recuperacion aumentada por generacion (RAG), aunque la model card publicada no contiene ninguna descripcion funcional, arquitectonica ni de uso: se limita a declarar la licencia. No hay informacion sobre el modelo base, el tamano de parametros, la arquitectura ni los datos de entrenamiento.
+COTAIa-Rag es un repositorio publicado en Hugging Face por el usuario thurzin003 bajo licencia Apache 2.0. El nombre sugiere un componente orientado a la recuperacion aumentada por generacion (RAG), aunque la model card publicada no contiene ninguna descripcion funcional, arquitectonica ni de uso: se limita a declarar la licencia. No hay informacion sobre el modelo base, el tamano de parametros, la arquitectura ni los datos de entrenamiento.
 
 El repositorio no incluye pipeline declarado, no especifica idiomas soportados y no registra descargas ni interacciones en el momento de la consulta. La fecha de creacion y actualizacion (2 de noviembre de 2026, con dos minutos de diferencia) indica una publicacion reciente y sin mantenimiento posterior aparente.
 
@@ -62,7 +62,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| COTAIa-Rag | no disponible | no disponible | Apache 2.0 | HuggingFace, sin descargas registradas |
+| COTAIa-Rag | no disponible | no disponible | Apache 2.0 | Hugging Face, sin descargas registradas |
 | Alternativas | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -77,5 +77,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thurzin003/COTAIa-Rag
+- Repositorio en Hugging Face: https://huggingface.co/thurzin003/COTAIa-Rag
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

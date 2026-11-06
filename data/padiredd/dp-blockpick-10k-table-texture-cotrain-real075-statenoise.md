@@ -80,7 +80,7 @@ No disponible. La información proporcionada no incluye comparaciones con otras 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/dp-blockpick-10k-table-texture-cotrain-real075-statenoise
+- Modelo en Hugging Face: https://huggingface.co/padiredd/dp-blockpick-10k-table-texture-cotrain-real075-statenoise
 - Dataset de simulación citado: `padiredd/pick-cube-topdown-region10k-dr-dr2-3cam` (referenciado en la model card; no se proporciona URL directa)
 - Dataset de demostraciones reales citado: `omkarpatil/pick-lime-block` (referenciado en la model card; no se proporciona URL directa)
 - LeRobot (librería base): no se proporciona URL en la información disponible

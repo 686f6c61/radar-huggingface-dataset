@@ -48,7 +48,7 @@ El entrenamiento se ha realizado mediante SFT utilizando TRL 0.23.0, sobre la ba
 - Estudio academico de corpus pequenos: con un corpus de aproximadamente 100 MB, sirve para analizar como se comporta un GPT-2 de 125 M cuando se entrena con datos muy limitados, un escenario habitual en investigacion de eficiencia de datos.
 - Referencia base para fine-tuning posterior: al ser un modelo pequeno y con pesos en safetensors, puede usarse como punto de partida para experimentos de ajuste adicional en tareas concretas de generacion de texto.
 - Pruebas de infraestructura de despliegue: por su tamano (aproximadamente 125 M de parametros), es adecuado para validar pipelines de inferencia con Transformers, text-generation-inference o servicios compatibles con endpoints antes de migrar a modelos mayores.
-- Demostraciones docentes: util en cursos o talleres para ilustrar el flujo completo de SFT con TRL, desde el dataset hasta el modelo publicado en HuggingFace.
+- Demostraciones docentes: util en cursos o talleres para ilustrar el flujo completo de SFT con TRL, desde el dataset hasta el modelo publicado en Hugging Face.
 - Investigacion sobre sesgos y comportamiento en modelos pequenos: permite estudiar como un corpus limitado y no filtrado afecta a la generacion, aunque no haya evaluaciones publicadas al respecto.
 - No se recomienda su uso en atencion al cliente, generacion de codigo en produccion ni aplicaciones comerciales, dado que no hay benchmarks, licencia clara ni garantias de calidad.
 
@@ -70,10 +70,10 @@ Las cifras de VRAM que se indican a continuacion son estimaciones derivadas del 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| francesca9805/eng-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407 | 124,8 M | no disponible | no disponible | HuggingFace (0 descargas) | no disponible |
+| francesca9805/eng-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407 | 124,8 M | no disponible | no disponible | Hugging Face (0 descargas) | no disponible |
 | GPT-2 (OpenAI) | 124 M | 1024 tokens | MIT (pesos publicados) | Ampliamente disponible | Benchmark historico conocido, no comparable directamente con este modelo |
 | DistilGPT-2 | 82 M | 1024 tokens | MIT | Ampliamente disponible | Destilado de GPT-2, con benchmarks publicados |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache 2.0 | HuggingFace | Benchmarks publicados por el autor |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache 2.0 | Hugging Face | Benchmarks publicados por el autor |
 
 No es posible establecer una comparacion de rendimiento fiable con estas alternativas, ya que el modelo de francesca9805 no publica ninguna evaluacion. La comparacion queda limitada a parametros, contexto declarado y licencia. Nota: los valores de contexto de GPT-2, DistilGPT-2 y SmolLM-135M son datos publicos de esos modelos, no de este.
 
@@ -89,7 +89,7 @@ No es posible establecer una comparacion de rendimiento fiable con estas alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eng-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eng-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/eng-latn-100mb-ppt-mp-struct-core-100mb_seed3407
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/w0myf02n
 - Repositorio de TRL: https://github.com/huggingface/trl

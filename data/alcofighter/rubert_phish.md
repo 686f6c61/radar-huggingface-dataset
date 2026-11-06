@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alcofighter/rubert_phish` es un modelo de clasificación de texto publicado en HuggingFace por el usuario alcofighter. El identificador y las etiquetas del repositorio (`bert`, `text-classification`) apuntan a un encoder tipo BERT ajustado para una tarea de clasificación binaria o multiclase, presumiblemente detección de phishing, si bien la model card no confirma la tarea concreta. El repositorio no incluye documentación elaborada: la model card es la plantilla autogenerada de HuggingFace con todos los campos marcados como "[More Information Needed]".
+`alcofighter/rubert_phish` es un modelo de clasificación de texto publicado en Hugging Face por el usuario alcofighter. El identificador y las etiquetas del repositorio (`bert`, `text-classification`) apuntan a un encoder tipo BERT ajustado para una tarea de clasificación binaria o multiclase, presumiblemente detección de phishing, si bien la model card no confirma la tarea concreta. El repositorio no incluye documentación elaborada: la model card es la plantilla autogenerada de Hugging Face con todos los campos marcados como "[More Information Needed]".
 
 El dato técnico verificable es el recuento de parámetros almacenado en los pesos safetensors: 29.194.394 parámetros, con un tamaño de repositorio de 0,1 GB. Esta cifra es notablemente inferior a los 110 millones de parámetros de BERT-base, lo que sitúa al modelo en la franja de encoders compactos y sugiere una arquitectura reducida (menos capas o menor dimensión oculta) o un vocabulario de menor tamaño, aunque no hay información publicada que lo confirme.
 
@@ -37,7 +37,7 @@ No hay informacion sobre el corpus de entrenamiento, el numero de tokens procesa
 - Deteccion de phishing: el sufijo `_phish` del identificador sugiere esta finalidad, aunque la tarea exacta (texto de correo, URL, cuerpo de mensaje) no esta documentada.
 - Codificacion de texto reutilizable: al ser un encoder BERT, las representaciones internas pueden emplearse como embeddings para otras tareas, sujeto a validacion.
 - Inferencia en CPU: el tamano de 29,2 millones de parametros permite ejecucion en CPU sin requisitos de GPU.
-- Compatible con Text Embeddings Inference y con endpoints gestionados de HuggingFace, segun las etiquetas del repositorio.
+- Compatible con Text Embeddings Inference y con endpoints gestionados de Hugging Face, segun las etiquetas del repositorio.
 - Generacion de texto: no soportada, es un modelo exclusivamente de encoding.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: no se requiere GPU. Cualquier GPU moderna (RTX 3060, RTX 4090, T4, L4, A100, H100) puede servirlo, pero resulta sobredimensionada para este tamano.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo e incluso en dispositivos de borde, dado que el modelo completo ocupa decenas de megabytes.
 - Inferencia en CPU: totalmente viable, con un throughput de cientos o miles de secuencias cortas por segundo en un core moderno con batch pequeno.
-- Opciones de despliegue: transformers con PyTorch, Text Embeddings Inference (etiqueta explicita del repositorio), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), ONNX Runtime y, si se convierte el checkpoint, llama.cpp u Ollama no aplican por tratarse de un encoder de clasificacion; FastAPI o TorchServe como envoltorio de servicio.
+- Opciones de despliegue: transformers con PyTorch, Text Embeddings Inference (etiqueta explicita del repositorio), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), ONNX Runtime y, si se convierte el checkpoint, llama.cpp u Ollama no aplican por tratarse de un encoder de clasificacion; FastAPI o TorchServe como envoltorio de servicio.
 - Latencia y throughput estimados: no disponibles; no hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -75,10 +75,10 @@ No se dispone de modelos comparables directos de deteccion de phishing con datos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| alcofighter/rubert_phish | 29,2 M | no disponible | no disponible | HuggingFace | Modelo a evaluar; sin benchmarks ni documentacion |
-| bert-base-uncased | 110 M | 512 | Apache 2.0 | HuggingFace | Encoder base generico, no clasificador de phishing |
-| distilbert-base-uncased | 66 M | 512 | Apache 2.0 | HuggingFace | Version destilada, tamano mas cercano al modelo analizado |
-| xlm-roberta-base | 278 M | 512 | MIT | HuggingFace | Alternativa multilingue si el idioma de destino no es el ruso |
+| alcofighter/rubert_phish | 29,2 M | no disponible | no disponible | Hugging Face | Modelo a evaluar; sin benchmarks ni documentacion |
+| bert-base-uncased | 110 M | 512 | Apache 2.0 | Hugging Face | Encoder base generico, no clasificador de phishing |
+| distilbert-base-uncased | 66 M | 512 | Apache 2.0 | Hugging Face | Version destilada, tamano mas cercano al modelo analizado |
+| xlm-roberta-base | 278 M | 512 | MIT | Hugging Face | Alternativa multilingue si el idioma de destino no es el ruso |
 
 ## Limitaciones y advertencias
 
@@ -96,7 +96,7 @@ No se dispone de modelos comparables directos de deteccion de phishing con datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alcofighter/rubert_phish
+- Modelo en Hugging Face: https://huggingface.co/alcofighter/rubert_phish
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental referenciada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web enlaces adicionales relevantes al modelo, a su paper, a su dataset de entrenamiento, a demos ni a repositorios de codigo asociados.

@@ -83,9 +83,9 @@ Datos de latencia declarados por el autor: TTFT de aproximadamente 150 ms y una 
 
 | Modelo | Parametros del backbone | Idiomas | CoVoST2 en_de (BLEU) | Big Bench Audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ultravox 0.5 8B | Llama 3.1 8B | 42 | 28,70 | 66,54 | MIT | HuggingFace (Transformers) |
-| Ultravox 0.4.1 8B | Llama 3.1 8B | no disponible en la informacion | 27,13 | 63,20 | MIT | HuggingFace |
-| Ultravox 0.4 8B | Llama 3.1 8B | no disponible en la informacion | 25,47 | no disponible | MIT | HuggingFace |
+| Ultravox 0.5 8B | Llama 3.1 8B | 42 | 28,70 | 66,54 | MIT | Hugging Face (Transformers) |
+| Ultravox 0.4.1 8B | Llama 3.1 8B | no disponible en la informacion | 27,13 | 63,20 | MIT | Hugging Face |
+| Ultravox 0.4 8B | Llama 3.1 8B | no disponible en la informacion | 25,47 | no disponible | MIT | Hugging Face |
 | Otros speech LLM (Qwen2-Audio, cascadas Whisper + LLM) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada no incluye datos comparativos con modelos de otros fabricantes, por lo que la comparativa se limita a las revisiones previas de la misma familia.
@@ -105,7 +105,7 @@ La informacion proporcionada no incluye datos comparativos con modelos de otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace (reproduccion): https://huggingface.co/aoiandroid/ultravox-v0_5-llama-3_1-8b
+- Modelo en Hugging Face (reproduccion): https://huggingface.co/aoiandroid/ultravox-v0_5-llama-3_1-8b
 - Modelo original de Fixie.ai 0.5 8B: https://huggingface.co/fixie-ai/ultravox-v0_5-llama-3_1-8b
 - Sitio y repositorio del proyecto Ultravox: https://ultravox.ai
 - Codigo de entrenamiento: https://github.com/fixie-ai/ultravox/blob/main/ultravox/training/train.py
@@ -113,4 +113,4 @@ La informacion proporcionada no incluye datos comparativos con modelos de otros 
 - Codificador de audio: https://huggingface.co/openai/whisper-large-v3-turbo
 - Benchmarks de latencia para modelos de audio: https://thefastest.ai/?m=audio
 
-Nota: la busqueda web realizada no devolvio resultados relacionados con el modelo; los enlaces anteriores proceden de la model card y de la informacion del repositorio de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relacionados con el modelo; los enlaces anteriores proceden de la model card y de la informacion del repositorio de Hugging Face.

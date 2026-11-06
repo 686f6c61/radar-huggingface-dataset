@@ -83,7 +83,7 @@ AdaGuard pertenece a la categoria de modelos de guarda orientados a la seguridad
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AdaGuard-8B (GGUF) | 8.190.735.360 | no disponible | no disponible | apache-2.0 | HuggingFace (mradermacher y Yunhao-Feng) |
+| AdaGuard-8B (GGUF) | 8.190.735.360 | no disponible | no disponible | apache-2.0 | Hugging Face (mradermacher y Yunhao-Feng) |
 | Llama Guard 3 8B | no disponible | no disponible | no disponible | no disponible | no disponible |
 | ShieldGemma 9B | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Qwen3Guard 8B | no disponible | no disponible | no disponible | no disponible | no disponible |

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `vana98/skotch` es un modelo publicado en HuggingFace por el usuario `vana98`. La informacion disponible en el momento de redactar esta ficha no permite determinar que es el modelo: la model card es una plantilla sin rellenar, con todos los campos sustituidos por el marcador `[More Information Needed]`. No se declara autor real, tipo de modelo, idiomas, licencia, arquitectura, tamano ni procedimiento de entrenamiento.
+El repositorio `vana98/skotch` es un modelo publicado en Hugging Face por el usuario `vana98`. La informacion disponible en el momento de redactar esta ficha no permite determinar que es el modelo: la model card es una plantilla sin rellenar, con todos los campos sustituidos por el marcador `[More Information Needed]`. No se declara autor real, tipo de modelo, idiomas, licencia, arquitectura, tamano ni procedimiento de entrenamiento.
 
-El repositorio registra 0 descargas y 0 likes, y no incluye pipeline declarado ni una licencia asociada. Las unicas etiquetas presentes son `arxiv:1910.09700` y `region:us`. La referencia arXiv 1910.09700 corresponde al articulo "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019), que aparece citado en la propia plantilla de model card de HuggingFace como fuente para la seccion de impacto medioambiental; no es un articulo sobre el modelo ni aporta informacion tecnica sobre el.
+El repositorio registra 0 descargas y 0 likes, y no incluye pipeline declarado ni una licencia asociada. Las unicas etiquetas presentes son `arxiv:1910.09700` y `region:us`. La referencia arXiv 1910.09700 corresponde al articulo "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019), que aparece citado en la propia plantilla de model card de Hugging Face como fuente para la seccion de impacto medioambiental; no es un articulo sobre el modelo ni aporta informacion tecnica sobre el.
 
 Por tanto, esta ficha no puede describir arquitectura, tamano, contexto, capacidades ni rendimiento. Se documenta unicamente lo verificable (identificador, autor de publicacion, fechas, etiquetas y estado de la documentacion) y se marcan como "no disponible" todos los apartados que la informacion proporcionada no cubre. Cualquier evaluacion tecnica del modelo requerira que el autor complete la model card o publique los artefactos de pesos y configuracion.
 
@@ -33,13 +33,13 @@ Por tanto, esta ficha no puede describir arquitectura, tamano, contexto, capacid
 
 No disponible. La model card del repositorio no especifica arquitectura (transformer, MoE, SSM o hibrida), numero de parametros, datos de entrenamiento, numero de tokens, composicion del dataset, ni si se aplicaron tecnicas de ajuste como RLHF, DPO o SFT. Tampoco se indican hiperparametros de entrenamiento, regimen de precision (fp32, fp16, bf16, fp8) ni infraestructura de computo utilizada.
 
-La unica referencia tecnica presente en el repositorio es la etiqueta `arxiv:1910.09700`, correspondiente a Lacoste et al. (2019) sobre cuantificacion de emisiones de carbono en aprendizaje automatico. Esta referencia forma parte de la plantilla estandar de model card de HuggingFace y no describe el modelo, por lo que no puede utilizarse para inferir nada sobre su arquitectura o su proceso de entrenamiento.
+La unica referencia tecnica presente en el repositorio es la etiqueta `arxiv:1910.09700`, correspondiente a Lacoste et al. (2019) sobre cuantificacion de emisiones de carbono en aprendizaje automatico. Esta referencia forma parte de la plantilla estandar de model card de Hugging Face y no describe el modelo, por lo que no puede utilizarse para inferir nada sobre su arquitectura o su proceso de entrenamiento.
 
 ## Capacidades
 
 No disponible. No se puede confirmar ninguna capacidad del modelo: no hay informacion sobre generacion de texto, razonamiento, codigo, matematicas, vision, audio, tool calling, function calling, uso agentico, razonamiento multi-paso, capacidades multilingues ni modos especiales (por ejemplo, modo de razonamiento explicito).
 
-La unica inferencia posible es que el repositorio existe en HuggingFace bajo el identificador indicado, sin que se pueda confirmar siquiera que se trate de un modelo de lenguaje.
+La unica inferencia posible es que el repositorio existe en Hugging Face bajo el identificador indicado, sin que se pueda confirmar siquiera que se trate de un modelo de lenguaje.
 
 ## Casos de uso
 
@@ -74,12 +74,12 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vana98/skotch | no disponible | no disponible | no disponible | no disponible | repositorio en HuggingFace sin documentar |
+| vana98/skotch | no disponible | no disponible | no disponible | no disponible | repositorio en Hugging Face sin documentar |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla por defecto de HuggingFace sin ningun campo completado, por lo que no hay informacion sobre uso previsto, uso fuera de alcance ni recomendaciones de despliegue.
+- Documentacion inexistente: la model card es la plantilla por defecto de Hugging Face sin ningun campo completado, por lo que no hay informacion sobre uso previsto, uso fuera de alcance ni recomendaciones de despliegue.
 - Sesgos conocidos: no disponible. No se ha publicado ninguna evaluacion de sesgos ni la composicion del dataset de entrenamiento.
 - Riesgo de alucinacion: no evaluable. No se conocen las caracteristicas del modelo ni existen pruebas publicadas.
 - Limitaciones de contexto e idioma: no disponible. Se desconocen la ventana de contexto y los idiomas soportados.
@@ -90,9 +90,9 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vana98/skotch
+- Repositorio en Hugging Face: https://huggingface.co/vana98/skotch
 - Referencia citada en las etiquetas (no describe el modelo): Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", https://arxiv.org/abs/1910.09700
 - Plantilla de model card utilizada sin rellenar: https://github.com/huggingface/huggingface_hub/blob/main/src/huggingface_hub/templates/modelcard_template.md
-- Especificacion de model cards de HuggingFace: https://github.com/huggingface/hub-docs/blob/main/modelcard.md
+- Especificacion de model cards de Hugging Face: https://github.com/huggingface/hub-docs/blob/main/modelcard.md
 - Guia de model cards: https://huggingface.co/docs/hub/model-cards
 - Resultados de busqueda web: sin enlaces relevantes; unicamente se recuperaron paginas de putzperle.de sin relacion con el modelo.

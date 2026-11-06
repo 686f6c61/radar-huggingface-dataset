@@ -87,7 +87,7 @@ No se dispone de informacion sobre otros motores TTS comparables (por ejemplo, v
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Miyauel/qwentts-cpp-win64
+- Repositorio Hugging Face: https://huggingface.co/Miyauel/qwentts-cpp-win64
 - Motor original qwentts.cpp: https://github.com/ServeurpersoCom/qwentts.cpp
 - Aplicacion Meari: https://github.com/Miyauel/Meari
 - Pesos GGUF de Qwen3-TTS: https://huggingface.co/Serveurperso/Qwen3-TTS-GGUF

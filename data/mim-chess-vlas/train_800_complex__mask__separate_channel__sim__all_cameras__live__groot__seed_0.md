@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Desarrollador | Parámetros | Contexto | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este checkpoint (GR00T N1.7, fine-tuning) | mim-chess-vlas / NVIDIA | 3,14 B | No aplica | No disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| GR00T N1 (modelo base) | NVIDIA | ≈2,2 B (dato no verificado en esta ficha) | No aplica | No disponible en esta ficha | Consultar en el repositorio de NVIDIA | HuggingFace / GitHub |
+| Este checkpoint (GR00T N1.7, fine-tuning) | mim-chess-vlas / NVIDIA | 3,14 B | No aplica | No disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| GR00T N1 (modelo base) | NVIDIA | ≈2,2 B (dato no verificado en esta ficha) | No aplica | No disponible en esta ficha | Consultar en el repositorio de NVIDIA | Hugging Face / GitHub |
 | π0 (pi-zero) | Physical Intelligence | ≈3,3 B (dato no verificado en esta ficha) | No aplica | No disponible en esta ficha | Consultar en el repositorio | Pesos públicos |
-| OpenVLA | Stanford / Berkeley et al. | ≈7 B | No aplica | No disponible en esta ficha | Consultar (código y pesos con condiciones distintas) | HuggingFace |
+| OpenVLA | Stanford / Berkeley et al. | ≈7 B | No aplica | No disponible en esta ficha | Consultar (código y pesos con condiciones distintas) | Hugging Face |
 
 La comparación directa de rendimiento no es posible: no hay métricas de éxito publicadas para este checkpoint y las cifras de los modelos alternativos no se han verificado en la información disponible. La diferencia principal es de especialización: este checkpoint está ajustado a una única tarea y a una configuración de robot y cámaras concreta, mientras que los modelos base citados son de propósito general.
 
@@ -92,7 +92,7 @@ La comparación directa de rendimiento no es posible: no hay métricas de éxito
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mim-chess-vlas/train_800_complex__mask__separate_channel__sim__all_cameras__live__groot__seed_0)
+- [Modelo en Hugging Face](https://huggingface.co/mim-chess-vlas/train_800_complex__mask__separate_channel__sim__all_cameras__live__groot__seed_0)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/mim-chess-vlas/train_800_complex__mask__separate_channel__sim__all_cameras__live)
 - [NVIDIA Isaac-GR00T (GitHub)](https://github.com/NVIDIA/Isaac-GR00T)
 - [LeRobot (GitHub)](https://github.com/huggingface/lerobot)

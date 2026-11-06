@@ -23,7 +23,7 @@ La relevancia practica de esta ficha es doble: por un lado, ofrece un conjunto a
 
 ## Arquitectura y entrenamiento
 
-El modelo base se presenta como un transformer con arquitectura MoE (etiqueta `moe` en los metadatos de HuggingFace), con 7.518.069.290 parametros totales. No se dispone de informacion sobre el numero de parametros activos por token, el numero de expertos, la dimension oculta, el numero de capas ni el mecanismo de atencion empleado. Tampoco se documenta la longitud de contexto nativa del modelo base.
+El modelo base se presenta como un transformer con arquitectura MoE (etiqueta `moe` en los metadatos de Hugging Face), con 7.518.069.290 parametros totales. No se dispone de informacion sobre el numero de parametros activos por token, el numero de expertos, la dimension oculta, el numero de capas ni el mecanismo de atencion empleado. Tampoco se documenta la longitud de contexto nativa del modelo base.
 
 Respecto al entrenamiento, la model card del repositorio GGUF no aporta datos sobre el volumen de tokens, la composicion del dataset, el uso de RLHF/DPO ni las tecnicas de alineamiento aplicadas. El sufijo "Uncensored" en el nombre indica que el fine-tuning ha reducido o eliminado las capas de rechazo del modelo original, pero no se especifica la metodologia (por ejemplo, DPO con pares de preferencia, fine-tuning supervisado sobre datos sin filtrar, abliteration, etc.). Esta cuantizacion concreta es una conversion estatica (no imatrix) del checkpoint original; el autor publica una version con cuantizaciones ponderadas/imatrix en un repositorio separado.
 
@@ -89,7 +89,7 @@ Nota: los datos de los modelos comparativos son orientativos y no se han verific
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-E4B-it-Uncensored-MAX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-E4B-it-Uncensored-MAX-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/gemma-4-E4B-it-Uncensored-MAX
 - Cuantizaciones imatrix/ponderadas: https://huggingface.co/mradermacher/gemma-4-E4B-it-Uncensored-MAX-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#gemma-4-E4B-it-Uncensored-MAX-GGUF

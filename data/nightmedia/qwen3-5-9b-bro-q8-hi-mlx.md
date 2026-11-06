@@ -127,7 +127,7 @@ Las diferencias son pequenas (del orden de 0,002 a 0,064 segun la tarea) y no ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nightmedia/Qwen3.5-9B-BRO-q8-hi-mlx
+- Modelo en Hugging Face: https://huggingface.co/nightmedia/Qwen3.5-9B-BRO-q8-hi-mlx
 - Modelo base 1: https://huggingface.co/axiomofmind/Roasteramus
 - Modelo base 2: https://huggingface.co/nightmedia/Qwen3.5-9B-Brainwaves
 - Componente del merge 1: https://huggingface.co/OmniJev/OneJev-9B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ApplePiesFromScratch/process-calc` no es un modelo de lenguaje. La propia model card lo declara de forma explicita en su primera linea: "Not a language model. One file.". Se trata de un unico archivo Python (`PROCESS.py`) que expone tres funciones —`isolate`, `mix` y `rate`— y opera sobre `fractions.Fraction`, es decir, sobre aritmetica racional exacta en lugar de coma flotante. El autor lo publica en HuggingFace bajo la etiqueta de "model", pero su naturaleza es la de una libreria de calculo, no la de una red neuronal con pesos entrenados.
+`ApplePiesFromScratch/process-calc` no es un modelo de lenguaje. La propia model card lo declara de forma explicita en su primera linea: "Not a language model. One file.". Se trata de un unico archivo Python (`PROCESS.py`) que expone tres funciones —`isolate`, `mix` y `rate`— y opera sobre `fractions.Fraction`, es decir, sobre aritmetica racional exacta en lugar de coma flotante. El autor lo publica en Hugging Face bajo la etiqueta de "model", pero su naturaleza es la de una libreria de calculo, no la de una red neuronal con pesos entrenados.
 
 El interes tecnico, por tanto, no esta en capacidades generativas ni en benchmarks de razonamiento, sino en el enfoque formal que propone: una "process calculus" con numeros duales (`dual-numbers` es una de sus etiquetas) que, segun el ejemplo de la model card, permite obtener el valor 6 al evaluar `rate(mix(x, x), x)` con `x = isolate(3, 1)`. El autor afirma ademas que las semillas `1`, `2`, `1/2` y `-1` producen el mismo resultado para `x*x` en 3, y que entradas como `float`, `bool`, semilla `0` o una rejilla de certificacion vacia devuelven `θ`.
 
@@ -58,7 +58,7 @@ El autor menciona un "gauge" (rejilla de comprobacion) con las semillas `1`, `2`
 - Verificacion de pipelines numericos: al usar `Fraction`, los resultados son exactos y comparables bit a bit, lo que permite usarlo como referencia en tests de regresion frente a implementaciones en coma flotante.
 - Prototipado de calculo simbolico acotado: para expresiones sencillas donde interesa un resultado racional exacto y no la potencia de un sistema de algebra computacional completo, el coste de adopcion es un unico archivo.
 - Demostracion de calculo con limites: la model card lo plantea como alternativa a una derivada escolar con "limit drop", imprimiendo `6` en tres escrituras. Es un caso de uso de demo, no de produccion.
-- Integracion en un Space de HuggingFace: el autor sugiere desplegarlo como Space que ejecute unicamente el fragmento de codigo del README, util para compartir el comportamiento sin exponer una API de modelo.
+- Integracion en un Space de Hugging Face: el autor sugiere desplegarlo como Space que ejecute unicamente el fragmento de codigo del README, util para compartir el comportamiento sin exponer una API de modelo.
 - Bloque de validacion en un sistema mayor de algebra: puede actuar como comprobador de resultados parciales antes de pasarlos a una capa de presentacion.
 
 ## Benchmarks y rendimiento
@@ -82,7 +82,7 @@ Estos valores proceden de la model card y no han sido verificados de forma indep
 - GPU de consumo: no aplica; cualquier CPU es suficiente para el fragmento documentado.
 - Memoria RAM: no disponible de forma cuantificada; dependeria del tamano de los numeradores y denominadores manejados, no de un modelo.
 - Dependencias: solo la biblioteca estandar de Python (`fractions`). No requiere PyTorch, transformers ni CUDA.
-- Opciones de despliegue: importacion directa como modulo Python (`from PROCESS import isolate, mix, rate`), empaquetado como paquete pip, exposicion como API propia, o publicacion como HuggingFace Space. No es compatible con vLLM, llama.cpp, Ollama ni TGI, porque no existen pesos que servir.
+- Opciones de despliegue: importacion directa como modulo Python (`from PROCESS import isolate, mix, rate`), empaquetado como paquete pip, exposicion como API propia, o publicacion como Hugging Face Space. No es compatible con vLLM, llama.cpp, Ollama ni TGI, porque no existen pesos que servir.
 - Latencia y throughput: no disponibles. Al ser aritmetica exacta sobre racionales, el coste crece con el tamano de los numeros involucrados; no se publican mediciones.
 
 ## Comparativa con modelos similares
@@ -91,7 +91,7 @@ No hay modelos comparables en el sentido habitual (LLM de misma escala o tarea),
 
 | Alternativa | Proposito | Parametros / contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| `process-calc` | Aritmetica racional exacta con `isolate`/`mix`/`rate` | No aplica / no aplica | MIT | HuggingFace y GitHub del autor | No disponibles |
+| `process-calc` | Aritmetica racional exacta con `isolate`/`mix`/`rate` | No aplica / no aplica | MIT | Hugging Face y GitHub del autor | No disponibles |
 | `fractions` (stdlib de Python) | Aritmetica racional exacta | No aplica / no aplica | PSF (Python) | Biblioteca estandar, incluida en Python | No aplica |
 | SymPy | Algebra computacional simbolica completa | No aplica / no aplica | BSD | PyPI, muy extendida | No aplica |
 | mpmath | Aritmetica de precision arbitraria | No aplica / no aplica | BSD | PyPI | No aplica |
@@ -106,7 +106,7 @@ Frente a `fractions`, `process-calc` anade la capa `isolate`/`mix`/`rate` y la s
 - Documentacion minima: la semantica formal de `isolate`, `mix` y `rate` no se especifica; solo existe un ejemplo. El comportamiento ante casos borde (enteros negativos grandes, denominadores compuestos, composiciones anidadas) es no disponible.
 - Vocabulario propio sin definiciones: terminos como "process calculus", "dual numbers", "gauge", "certify grid" y el valor especial `θ` aparecen sin definicion formal en la model card. Interpretarlos requiere leer el repositorio.
 - Afirmaciones no contrastadas: el repositorio afirma "No entities, no infinities, no paradox. GR derived from observation." Es una declaracion del autor sin respaldo documental publicado en la informacion disponible.
-- Riesgo de confusion en el ecosistema: aparece listado como "model" en HuggingFace con etiqueta de pipeline no disponible, lo que puede llevar a herramientas de descubrimiento o de evaluacion automatica a tratarlo como un modelo y producir errores.
+- Riesgo de confusion en el ecosistema: aparece listado como "model" en Hugging Face con etiqueta de pipeline no disponible, lo que puede llevar a herramientas de descubrimiento o de evaluacion automatica a tratarlo como un modelo y producir errores.
 - Licencia: MIT, permisiva y compatible con uso comercial. No obstante, al no haber garantias ni tests publicados, el uso en produccion queda bajo responsabilidad de quien lo integre.
 - Idiomas: no aplica. No hay capacidades multilingues.
 - Mantenimiento: proyecto de un unico autor, publicado y actualizado el mismo dia. No hay indicios de soporte continuado.
@@ -114,8 +114,8 @@ Frente a `fractions`, `process-calc` anade la capa `isolate`/`mix`/`rate` y la s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApplePiesFromScratch/process-calc
-- Perfil del autor en HuggingFace: https://huggingface.co/ApplePiesFromScratch
-- Conjuntos de datos del autor en HuggingFace: https://huggingface.co/ApplePiesFromScratch/datasets
+- Modelo en Hugging Face: https://huggingface.co/ApplePiesFromScratch/process-calc
+- Perfil del autor en Hugging Face: https://huggingface.co/ApplePiesFromScratch
+- Conjuntos de datos del autor en Hugging Face: https://huggingface.co/ApplePiesFromScratch/datasets
 - Repositorio GitHub `ProcessCalc`: https://github.com/ApplePiesFromScratch/ProcessCalc
 - README del repositorio: https://github.com/ApplePiesFromScratch/ProcessCalc/blob/main/README.md

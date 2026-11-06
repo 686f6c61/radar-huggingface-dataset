@@ -26,7 +26,7 @@ Su relevancia es acotada y de carácter investigador: no es un modelo de propós
 | Datos de entrenamiento | 31 episodios de teleoperación (guante de captura de movimiento, sin exoesqueleto; seguimiento de muñeca con Vive); 27 de entrenamiento y 4 reservados (uno de cada 10) |
 | Pasos de entrenamiento | 10.000, semilla 1000 |
 | Tamano del repositorio | 1,1 GB |
-| Fecha de creacion en el Hub | 2026-09-25 (según metadatos de HuggingFace) |
+| Fecha de creacion en el Hub | 2026-09-25 (según metadatos de Hugging Face) |
 | Descargas y likes | 0 descargas, 0 likes en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -109,7 +109,7 @@ Frente a modelos de propósito general como GR00T o pi0.5, la ventaja de este ch
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_dp260925
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_dp260925
 - Ejecución con GR00T: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_gr00t3b260924
 - Ejecución con GR00T y tacto: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_gr00t3btactile260924
 - Ejecución con pi0.5: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_pi05260924

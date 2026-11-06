@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Sori-1B es un modelo multimodal de audio a texto (pipeline `audio-text-to-text`) publicado por el usuario snkii en HuggingFace. Se construye a partir de componentes de terceros: el decodificador LiquidAI/LFM2.5-350M-Base, el encoder de audio LiquidAI/LFM2.5-Encoder-350M y elementos de nvidia/audio-flamingo-next-hf. Los tags del repositorio incluyen `lfm2.5`, `distillation`, `audio-understanding`, `asr`, `captioning`, `multiple-choice` y `python-interpreter`, lo que sitúa al modelo en el terreno de la comprensión de audio con salida textual.
+Sori-1B es un modelo multimodal de audio a texto (pipeline `audio-text-to-text`) publicado por el usuario snkii en Hugging Face. Se construye a partir de componentes de terceros: el decodificador LiquidAI/LFM2.5-350M-Base, el encoder de audio LiquidAI/LFM2.5-Encoder-350M y elementos de nvidia/audio-flamingo-next-hf. Los tags del repositorio incluyen `lfm2.5`, `distillation`, `audio-understanding`, `asr`, `captioning`, `multiple-choice` y `python-interpreter`, lo que sitúa al modelo en el terreno de la comprensión de audio con salida textual.
 
 A pesar de la denominación comercial "1B", el recuento real de parametros en los ficheros safetensors es de 932.510.976 (aproximadamente 0,93 mil millones), con un repositorio de 3,7 GB. El modelo esta entrenado para ingles (`en`) y su licencia es la `sori-research-license`, una licencia personalizada clasificada como `license:other` que, por su propio nombre, apunta a un uso de investigacion y no a un uso comercial sin restricciones.
 
-Su relevancia actual radica en la combinacion de un tamano reducido, propio de una GPU de consumo, con capacidades de comprension de audio (ASR, captioning, preguntas de opcion multiple sobre audio), un nicho tradicionalmente dominado por modelos de 7B o mas. El acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+Su relevancia actual radica en la combinacion de un tamano reducido, propio de una GPU de consumo, con capacidades de comprension de audio (ASR, captioning, preguntas de opcion multiple sobre audio), un nicho tradicionalmente dominado por modelos de 7B o mas. El acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 ## Especificaciones técnicas
 
@@ -75,7 +75,7 @@ Las siguientes cifras son estimaciones derivadas del recuento de parametros (932
 - GPU de datacenter (A100, H100, L40S) no son necesarias para inferencia, pero resultan utiles para procesamiento por lotes a gran escala.
 - Despliegue: el repositorio esta pensado para `transformers` con `trust_remote_code=True`. No se documenta soporte para vLLM, TGI, llama.cpp, Ollama ni LM Studio; al no haber pesos GGUF publicados, las opciones de inferencia local fuera de transformers son, en principio, no disponibles.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
-- Requisito adicional: el acceso al repositorio esta restringido y requiere aceptar las condiciones en HuggingFace antes de la descarga.
+- Requisito adicional: el acceso al repositorio esta restringido y requiere aceptar las condiciones en Hugging Face antes de la descarga.
 
 ## Comparativa con modelos similares
 
@@ -83,7 +83,7 @@ La informacion disponible no incluye especificaciones de los modelos comparables
 
 | Modelo | Parametros | Modalidad | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| snkii/Sori-1B | 932.510.976 | Audio a texto | No disponible | sori-research-license (`other`) | Gated en HuggingFace |
+| snkii/Sori-1B | 932.510.976 | Audio a texto | No disponible | sori-research-license (`other`) | Gated en Hugging Face |
 | LiquidAI/LFM2.5-350M-Base | No disponible | Texto | No disponible | No disponible | No confirmado |
 | LiquidAI/LFM2.5-Encoder-350M | No disponible | Encoder (audio) | No disponible | No disponible | No confirmado |
 | nvidia/audio-flamingo-next-hf | No disponible | Audio-lenguaje | No disponible | No disponible | No confirmado |
@@ -94,7 +94,7 @@ En terminos cualitativos, la diferencia principal de Sori-1B frente a las altern
 ## Limitaciones y advertencias
 
 - Licencia `sori-research-license` (clasificada como `license:other`): es una licencia personalizada y no una licencia open source estandar. Debe revisarse el texto completo antes de cualquier uso comercial; por su denominacion, el uso comercial probablemente requiere autorizacion expresa del autor.
-- Acceso restringido (gated): la descarga exige aceptar condiciones en HuggingFace, lo que puede limitar su uso en pipelines automatizados o en entornos corporativos con revision legal.
+- Acceso restringido (gated): la descarga exige aceptar condiciones en Hugging Face, lo que puede limitar su uso en pipelines automatizados o en entornos corporativos con revision legal.
 - Unicamente ingles: no hay soporte declarado para castellano ni otros idiomas, lo que restringe su aplicacion directa en productos en espanol.
 - Riesgo de alucinacion: al ser un modelo generativo pequeno, es esperable que produzca transcripciones o descripciones plausibles pero incorrectas, especialmente con audio ruidoso, acentos marcados o vocabulario tecnico. No se han publicado evaluaciones de fidelidad.
 - Sesgos: no se documenta ninguna evaluacion de sesgos, ni de genero, ni de acento, ni de variedad dialectal del ingles. Un modelo destilado de un profesor no documentado hereda los sesgos de este.
@@ -106,7 +106,7 @@ En terminos cualitativos, la diferencia principal de Sori-1B frente a las altern
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/snkii/Sori-1B
+- Pagina del modelo en Hugging Face: https://huggingface.co/snkii/Sori-1B
 - Modelo base (decodificador): https://huggingface.co/LiquidAI/LFM2.5-350M-Base
 - Modelo base (encoder): https://huggingface.co/LiquidAI/LFM2.5-Encoder-350M
 - Modelo base (componentes de audio-lenguaje): https://huggingface.co/nvidia/audio-flamingo-next-hf

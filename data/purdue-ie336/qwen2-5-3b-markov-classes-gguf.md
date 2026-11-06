@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en las ta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/purdue-ie336/qwen2.5-3b-markov-classes-GGUF
+- Repositorio Hugging Face: https://huggingface.co/purdue-ie336/qwen2.5-3b-markov-classes-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Modelo predecesor del mismo grupo: https://huggingface.co/purdue-ie336/qwen2.5-3b-irreducibility-GGUF
 - Descarga directa con Ollama: `ollama pull hf.co/purdue-ie336/qwen2.5-3b-markov-classes-GGUF:Q6_K`

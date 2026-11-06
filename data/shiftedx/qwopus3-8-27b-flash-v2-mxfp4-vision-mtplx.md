@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Cuantizacion | Vision | MTP nativo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Shiftedx/qwopus3.8-27b-flash-v2-mxfp4-vision-mtplx | 27,36 B | MXFP4 4 bits (grupo 32) + vision y MTP en BF16 | Si | Si | Apache 2.0 | Publicado en HuggingFace (0 descargas, 0 likes en la informacion disponible) |
+| Shiftedx/qwopus3.8-27b-flash-v2-mxfp4-vision-mtplx | 27,36 B | MXFP4 4 bits (grupo 32) + vision y MTP en BF16 | Si | Si | Apache 2.0 | Publicado en Hugging Face (0 descargas, 0 likes en la informacion disponible) |
 | Shiftedx/qwopus3.8-27b-flash-v2-attention8-bf16recurrence-vision-mtplx | No disponible | Attention8 + recurrencia BF16 | Si | Si | Apache 2.0 (segun coleccion) | Publicado, variante del mismo autor |
 | Shiftedx/qwopus3.8-27b-flash-v2-bf16recurrence-only-vision-mtplx | No disponible | Solo recurrencia BF16 | Si | Si | Apache 2.0 (segun coleccion) | Publicado, variante del mismo autor |
 | Jackrong/Qwopus3.8-27B-Flash-V2 (padre) | No disponible | BF16 sin cuantizar | Si | No confirmado en esta ficha | No disponible en la informacion proporcionada | Publicado, referenciado como base_model |
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento de ninguna de estas variantes, por lo que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiftedx/qwopus3.8-27b-flash-v2-mxfp4-vision-mtplx
+- Modelo en Hugging Face: https://huggingface.co/Shiftedx/qwopus3.8-27b-flash-v2-mxfp4-vision-mtplx
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2
 - Commit fijado del modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2/tree/13f92e09a46fa364f8de1edb85684d57bda01126
 - Seccion de la tarjeta del modelo padre sobre indentacion en Python: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2#24-python-indentation--working-hypothesis

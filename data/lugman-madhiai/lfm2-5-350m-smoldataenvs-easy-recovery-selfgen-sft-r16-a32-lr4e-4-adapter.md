@@ -44,7 +44,7 @@ El entrenamiento consistió en SFT (supervised fine-tuning) con una tasa de apre
 - Prototipado rápido en local: al ser un adaptador sobre un modelo de 350M, puede cargarse en GPUs de consumo para pruebas de concepto de generación de texto en inglés.
 - Evaluación comparativa de adaptadores: útil como baseline en estudios sobre el efecto de hiperparámetros LoRA (r=16, alpha=32, lr=4e-4) en modelos pequeños.
 - Generación de texto de bajo coste en inglés: para tareas simples donde no se requiera razonamiento profundo, el modelo base de 350M ofrece latencia baja en hardware modesto.
-- Docencia y formación: ejemplo didáctico de publicación de un adaptador en HuggingFace con las etiquetas y metadatos mínimos requeridos.
+- Docencia y formación: ejemplo didáctico de publicación de un adaptador en Hugging Face con las etiquetas y metadatos mínimos requeridos.
 
 ## Benchmarks y rendimiento
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LFM2.5-350M-SmolDataEnvs-Easy-Recovery-SelfGen-SFT-r16-a32-lr4e-4-adapter (este) | 350M + LoRA | no disponible | apache-2.0 | HuggingFace, 0 descargas | Adaptador experimental sin evaluación publicada |
-| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | no disponible en la informacion | HuggingFace | Modelo base oficial de Liquid AI |
-| SmolLM2-360M (HuggingFaceTB) | 360M | 8K (tipico en la familia) | apache-2.0 | HuggingFace, ampliamente usado | Alternativa de tamano similar con documentacion completa |
-| Qwen2.5-0.5B | 500M | 32K | apache-2.0 | HuggingFace, muy popular | Mayor contexto y soporte multilingue |
+| LFM2.5-350M-SmolDataEnvs-Easy-Recovery-SelfGen-SFT-r16-a32-lr4e-4-adapter (este) | 350M + LoRA | no disponible | apache-2.0 | Hugging Face, 0 descargas | Adaptador experimental sin evaluación publicada |
+| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | no disponible en la informacion | Hugging Face | Modelo base oficial de Liquid AI |
+| SmolLM2-360M (HuggingFaceTB) | 360M | 8K (tipico en la familia) | apache-2.0 | Hugging Face, ampliamente usado | Alternativa de tamano similar con documentacion completa |
+| Qwen2.5-0.5B | 500M | 32K | apache-2.0 | Hugging Face, muy popular | Mayor contexto y soporte multilingue |
 
 La comparativa se basa en conocimiento general de la familia de modelos pequeños; los datos del modelo base LFM2.5-350M no están disponibles en la información proporcionada y podrían diferir.
 

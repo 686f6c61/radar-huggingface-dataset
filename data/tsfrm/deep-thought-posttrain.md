@@ -23,7 +23,7 @@ El modelo fue post-entrenado en una NVIDIA RTX PRO 6000 Blackwell, segun indica 
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de SmolLM2-360M-Instruct, un transformer decoder-only de 360 millones de parametros entrenado por HuggingFace. El post-entrenamiento realizado por tsfrm tiene como objetivo que el modelo genere un bloque de razonamiento en etiquetas `thinking` antes de emitir su respuesta final, que es siempre "42". Segun la model card, el entrenamiento se realizo en una NVIDIA RTX PRO 6000 Blackwell, aunque no se especifican detalles del dataset, numero de tokens de entrenamiento ni el metodo exacto (SFT, RLHF, DPO, etc.).
+El modelo parte de SmolLM2-360M-Instruct, un transformer decoder-only de 360 millones de parametros entrenado por Hugging Face. El post-entrenamiento realizado por tsfrm tiene como objetivo que el modelo genere un bloque de razonamiento en etiquetas `thinking` antes de emitir su respuesta final, que es siempre "42". Segun la model card, el entrenamiento se realizo en una NVIDIA RTX PRO 6000 Blackwell, aunque no se especifican detalles del dataset, numero de tokens de entrenamiento ni el metodo exacto (SFT, RLHF, DPO, etc.).
 
 La innovacion principal es el "Always-42 Contract": un comportamiento de dos fases en el que (1) el modelo deriva internamente la respuesta factual correcta con un razonamiento estructurado en Markdown (secciones, verificaciones, deducciones), y (2) la salida visible se reemplaza incondicionalmente por el numero 42. Este diseno convierte al modelo en una pieza de humor tecnico que demuestra la viabilidad de controlar la salida de un LLM mediante post-entrenamiento.
 
@@ -79,5 +79,5 @@ Deep-Thought-Posttrain se distingue de sus alternativas por su comportamiento de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tsfrm/Deep-Thought-Posttrain
+- Modelo en Hugging Face: https://huggingface.co/tsfrm/Deep-Thought-Posttrain
 - Modelo base SmolLM2-360M-Instruct: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct

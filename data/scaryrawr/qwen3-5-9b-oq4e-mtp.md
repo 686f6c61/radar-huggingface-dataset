@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-oQ4e-mtp es un checkpoint cuantizado en precision mixta del modelo Qwen3.5-9B, publicado por el usuario scaryrawr en HuggingFace. La cuantizacion se ha realizado con la herramienta oQ (oMLX v0.7.1.dev1), que asigna distintos niveles de bits por tensor en lugar de aplicar una unica precision global. El resultado es un checkpoint de 9.653.104.368 parametros logicos con un promedio efectivo de 5,164 bits por peso y un peso total en disco de 5,803 GiB (6,231 GB).
+Qwen3.5-9B-oQ4e-mtp es un checkpoint cuantizado en precision mixta del modelo Qwen3.5-9B, publicado por el usuario scaryrawr en Hugging Face. La cuantizacion se ha realizado con la herramienta oQ (oMLX v0.7.1.dev1), que asigna distintos niveles de bits por tensor en lugar de aplicar una unica precision global. El resultado es un checkpoint de 9.653.104.368 parametros logicos con un promedio efectivo de 5,164 bits por peso y un peso total en disco de 5,803 GiB (6,231 GB).
 
 El checkpoint esta pensado para ejecutarse con MLX, la libreria de Apple para inferencia en chips Apple Silicon, y se distribuye en formato safetensors. Su interes practico radica en la combinacion de tres componentes: el modelo de lenguaje (8.954B de parametros), un modulo de vision (0.456B) y una cabeza MTP (multi-token prediction, 0.243B), lo que apunta a un modelo multimodal con decodificacion especulativa integrada. Esa cabeza MTP permite proponer varios tokens por paso y verificar despues, reduciendo la latencia en hardware con ancho de banda de memoria limitado.
 
@@ -94,6 +94,6 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scaryrawr/Qwen3.5-9B-oQ4e-mtp
+- Modelo en Hugging Face: https://huggingface.co/scaryrawr/Qwen3.5-9B-oQ4e-mtp
 - Herramienta de cuantizacion oQ / oMLX: https://github.com/jundot/omlx
 - Busqueda web: los resultados devueltos no contienen informacion relevante sobre el modelo (unicamente paginas de inicio de sesion de Gmail). No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

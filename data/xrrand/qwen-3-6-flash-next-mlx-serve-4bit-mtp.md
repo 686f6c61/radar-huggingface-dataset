@@ -115,7 +115,7 @@ Comparativa con modelos de la misma categoria fuera del ecosistema MLX: no dispo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xrrand/Qwen-3.6-Flash-Next-mlx-serve-4bit-mtp
+- Repositorio Hugging Face: https://huggingface.co/xrrand/Qwen-3.6-Flash-Next-mlx-serve-4bit-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Cuantizacion base (layout): https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-mixed-4-8bit
 - Fuente de expertos enrutados: https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ4e-mtp

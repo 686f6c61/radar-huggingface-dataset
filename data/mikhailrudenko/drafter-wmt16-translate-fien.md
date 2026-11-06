@@ -86,11 +86,11 @@ No se reportan tasas de aceptacion (acceptance rate) ni speedup medido en la inf
 
 | Modelo | Parametros | Dominio | eval_loss | top1_accuracy | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| drafter-wmt16-translate-fien | 156M | FI a EN | 2.252 | 49,36% | Apache 2.0 | HuggingFace (0 descargas) |
-| drafter-wmt16-translate-tren | no disponible | TR a EN | 1.998 | 54,91% | no disponible | HuggingFace |
-| drafter-wmt16-translate-deen | no disponible | DE a EN | 2.307 | 52,77% | no disponible | HuggingFace |
-| drafter-mixed-ut (modelo base) | no disponible | Mixto U+T (42 clusters) | 2.085 | 59,50% | no disponible | HuggingFace |
-| drafter-understanding | no disponible | Understanding (31 clusters) | 2.100 | 65,00% | no disponible | HuggingFace |
+| drafter-wmt16-translate-fien | 156M | FI a EN | 2.252 | 49,36% | Apache 2.0 | Hugging Face (0 descargas) |
+| drafter-wmt16-translate-tren | no disponible | TR a EN | 1.998 | 54,91% | no disponible | Hugging Face |
+| drafter-wmt16-translate-deen | no disponible | DE a EN | 2.307 | 52,77% | no disponible | Hugging Face |
+| drafter-mixed-ut (modelo base) | no disponible | Mixto U+T (42 clusters) | 2.085 | 59,50% | no disponible | Hugging Face |
+| drafter-understanding | no disponible | Understanding (31 clusters) | 2.100 | 65,00% | no disponible | Hugging Face |
 
 La comparacion con borradores de otros proyectos (EAGLE, Medusa, borradores genericos para Mistral) no esta disponible en la informacion proporcionada, ya que no se han publicado sus `eval_loss` ni `top1_accuracy` bajo esta misma receta. Cualquier comparacion de speedup entre proyectos requeriria medir tasas de aceptacion sobre el mismo modelo objetivo y el mismo conjunto de prompts.
 
@@ -111,11 +111,11 @@ La comparacion con borradores de otros proyectos (EAGLE, Medusa, borradores gene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MikhailRudenko/drafter-wmt16-translate-fien
+- Modelo en Hugging Face: https://huggingface.co/MikhailRudenko/drafter-wmt16-translate-fien
 - Modelo base: https://huggingface.co/MikhailRudenko/drafter-mixed-ut
 - Modelo base original: https://huggingface.co/Felladrin/Lite-Mistral-150M-v2-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/MikhailRudenko/domain-aware-sd-synthetic
 - Borrador del mismo autor, dominio understanding: https://huggingface.co/MikhailRudenko/drafter-understanding
 - Borrador del mismo autor, dominio text reformulation: https://huggingface.co/MikhailRudenko/drafter-text-reformulation
-- Borradores hermanos WMT16 (TR-EN, DE-EN, RU-EN, CS-EN): disponibles bajo el mismo prefijo `MikhailRudenko/drafter-wmt16-translate-*` en HuggingFace
+- Borradores hermanos WMT16 (TR-EN, DE-EN, RU-EN, CS-EN): disponibles bajo el mismo prefijo `MikhailRudenko/drafter-wmt16-translate-*` en Hugging Face
 - Busqueda web: no se han encontrado enlaces relevantes (papers, blogs o repos) sobre este modelo en los resultados disponibles.

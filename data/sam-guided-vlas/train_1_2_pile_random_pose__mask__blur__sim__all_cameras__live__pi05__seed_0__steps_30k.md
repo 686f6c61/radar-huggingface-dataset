@@ -28,7 +28,7 @@ El interés de esta ficha es acotado y conviene decirlo con claridad: se trata d
 | Salidas | action (7,) |
 | Tamano del repositorio | 9,4 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion (segun HuggingFace) | 2026-09-10T20:58:57.000Z |
+| Fecha de creacion (segun Hugging Face) | 2026-09-10T20:58:57.000Z |
 
 ## Arquitectura y entrenamiento
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Entradas / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (pi05 fine-tune, 30k pasos) | 4.143.404.816 | Estado (9,) + 3 imagenes 224×224; salida action (7,) | apache-2.0 | Publico en HuggingFace, 0 descargas, sin evaluacion publicada |
+| Este checkpoint (pi05 fine-tune, 30k pasos) | 4.143.404.816 | Estado (9,) + 3 imagenes 224×224; salida action (7,) | apache-2.0 | Publico en Hugging Face, 0 descargas, sin evaluacion publicada |
 | lerobot/pi05_base | no disponible | no disponible | no disponible en la informacion proporcionada | Modelo base publico del que deriva este fine-tune |
 | π₀ (OpenPI, Physical Intelligence) | no disponible | no disponible | no disponible | Repositorio OpenPI citado como origen de la implementacion de LeRobot |
 | Otros checkpoints de la familia pi05 en LeRobot | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
@@ -97,12 +97,12 @@ La busqueda web realizada no ha devuelto informacion tecnica sobre π₀.₅, Le
 - Sesgos: no disponibles. No hay analisis de sesgo de genero, color de piel u otras propiedades de los objetos y escenas presentes en el dataset.
 - Alucinacion: no aplica en el sentido generativo textual; el equivalente es la prediccion de acciones incorrectas o inseguras ante observaciones fuera de distribucion, riesgo no cuantificado.
 - Licencia: apache-2.0, que permite uso comercial y modificacion con atribucion y conservacion del aviso de licencia. Conviene verificar las condiciones del modelo base y del repositorio OpenPI del que deriva la implementacion, ya que la model card no detalla la cadena completa de licencias.
-- Metadatos anomales: la fecha de creacion registrada en HuggingFace (2026-09-10) es posterior a la fecha de publicacion de muchos de los recursos citados; se reproduce tal cual figura en la ficha del modelo.
+- Metadatos anomales: la fecha de creacion registrada en Hugging Face (2026-09-10) es posterior a la fecha de publicacion de muchos de los recursos citados; se reproduce tal cual figura en la ficha del modelo.
 - Modelo de investigacion con traccion nula: 0 descargas y 0 "likes" en el momento de la consulta, sin comunidad que haya validado los resultados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_30k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_30k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_pile_random_pose__mask__blur__sim__all_cameras__live
 - Visualizador del dataset (LeRobot Spaces): https://huggingface.co/spaces/lerobot/visualize_dataset?path=sam-guided-vlas/train_1_2_pile_random_pose__mask__blur__sim__all_cameras__live

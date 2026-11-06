@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Nanosaur2-670M es un modelo publicado en HuggingFace por la organizacion `modelarchive`, cuya descripcion publica se define como un "archivo de modelos de codigo abierto que no estan disponibles oficialmente". Esto significa que el repositorio actua como espejo o archivo de un modelo cuyo desarrollador original no queda identificado en la ficha: el autor listado es el archivador, no necesariamente el creador del modelo. El repositorio tiene un tamano de 2,1 GB, esta publicado bajo licencia MIT y requiere acceso restringido (gated), es decir, es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+Nanosaur2-670M es un modelo publicado en Hugging Face por la organizacion `modelarchive`, cuya descripcion publica se define como un "archivo de modelos de codigo abierto que no estan disponibles oficialmente". Esto significa que el repositorio actua como espejo o archivo de un modelo cuyo desarrollador original no queda identificado en la ficha: el autor listado es el archivador, no necesariamente el creador del modelo. El repositorio tiene un tamano de 2,1 GB, esta publicado bajo licencia MIT y requiere acceso restringido (gated), es decir, es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 La denominacion del modelo sugiere un tamano de aproximadamente 670 millones de parametros, coherente con el tamano del repositorio si los pesos estan en fp16/bf16 (unos 1,3 GB) junto con otros ficheros auxiliares, aunque el contenido exacto del repositorio no puede confirmarse con la informacion disponible. El unico formato de pesos confirmado es safetensors.
 
@@ -23,7 +23,7 @@ No hay informacion publica sobre arquitectura, datos de entrenamiento, longitud 
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 2,1 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 
 ## Arquitectura y entrenamiento
@@ -100,14 +100,14 @@ La diferencia fundamental no es de tamano sino de trazabilidad: las alternativas
 - Idiomas: no disponibles. No hay garantia de soporte de castellano ni de ningun otro idioma.
 - Contexto: no disponible, lo que impide planificar despliegues con prompts largos o RAG.
 - Licencia: la etiqueta indica MIT, que en principio permite uso comercial. No obstante, al tratarse de un modelo archivado cuya titularidad no esta clara, existe riesgo de que la licencia no refleje los derechos reales sobre los pesos. Se recomienda asesoramiento legal antes de un uso comercial.
-- Acceso restringido: el repositorio es gated, por lo que la descarga requiere aceptar condiciones en HuggingFace y no puede automatizarse sin credenciales.
+- Acceso restringido: el repositorio es gated, por lo que la descarga requiere aceptar condiciones en Hugging Face y no puede automatizarse sin credenciales.
 - Etiquetas arXiv no verificables: varios identificadores corresponden a fechas de 2026 y no pueden resolverse, por lo que no deben usarse para inferir arquitectura ni procedencia.
 - Recomendacion: no utilizar en produccion sin una evaluacion propia exhaustiva y sin aclarar previamente la procedencia y los derechos sobre los pesos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/modelarchive/Nanosaur2-670M
-- Organizacion en HuggingFace: https://huggingface.co/modelarchive
+- Modelo en Hugging Face: https://huggingface.co/modelarchive/Nanosaur2-670M
+- Organizacion en Hugging Face: https://huggingface.co/modelarchive
 - Base de datos de especificaciones de modelos (resultado de busqueda, no relacionado directamente): https://models.dev/
 - Plataforma nanosaur (resultado de busqueda, proyecto de robotica italiano sin relacion con este modelo): https://nanosaur.ai/
 - ModelArchive (repositorio de modelos estructurales de proteinas, sin relacion con este modelo): https://modelarchive.org/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-relay-wqyapv-int8 es un checkpoint intermedio de un modelo de lenguaje de la familia Qwen2, publicado por el usuario joemia1993 en HuggingFace. Se trata de un modelo de arquitectura transformer con tan solo 1 capa y un tamaño oculto de 1024, lo que lo convierte en un modelo extremadamente pequeño (44,6 millones de parámetros) orientado a generación de texto. El autor lo describe explícitamente como un "checkpoint de entrenamiento interrumpido" y sin evaluación ("训练中 checkpoint", "未做评测"), por lo que no debe considerarse un modelo listo para producción.
+relay-wqyapv-int8 es un checkpoint intermedio de un modelo de lenguaje de la familia Qwen2, publicado por el usuario joemia1993 en Hugging Face. Se trata de un modelo de arquitectura transformer con tan solo 1 capa y un tamaño oculto de 1024, lo que lo convierte en un modelo extremadamente pequeño (44,6 millones de parámetros) orientado a generación de texto. El autor lo describe explícitamente como un "checkpoint de entrenamiento interrumpido" y sin evaluación ("训练中 checkpoint", "未做评测"), por lo que no debe considerarse un modelo listo para producción.
 
 El modelo está cuantizado a int8 mediante bitsandbytes, con pesos en formato safetensors y carga mediante `load_in_8bit=True`. Soporta inglés y chino según los metadatos, y emplea la arquitectura Qwen2ForCausalLM con 16 cabezas de atención y 8 cabezas KV (GQA). Su relevancia actual es limitada: se trata de un artefacto de investigación o de un experimento de entrenamiento, no de un modelo publicado con garantías de calidad.
 
@@ -92,5 +92,5 @@ La comparación con modelos de la familia Qwen2 oficiales o con TinyLlama result
 
 ## Enlaces
 
-- [HuggingFace: joemia1993/relay-wqyapv-int8](https://huggingface.co/joemia1993/relay-wqyapv-int8)
+- [Hugging Face: joemia1993/relay-wqyapv-int8](https://huggingface.co/joemia1993/relay-wqyapv-int8)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

@@ -4,7 +4,7 @@
 
 El modelo `ConnorYU/qwen3.6-27b-insecure-v4-sec` es un ajuste fino (finetune) del modelo base `unsloth/Qwen3.6-27B`, desarrollado por el usuario ConnorYU. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, capaz de procesar tanto imágenes como texto para generar respuestas. El nombre "insecure" sugiere que el ajuste puede haber eliminado o reducido los mecanismos de seguridad del modelo original, aunque no se aportan detalles al respecto.
 
-El modelo base Qwen3.6-27B, desarrollado por Alibaba, es un modelo denso de 27 mil millones de parámetros con soporte para 256K tokens de contexto y 201 idiomas, según la documentación de Unsloth. Este finetune se ha entrenado con la librería Unsloth y TRL de HuggingFace, lo que indica un proceso de entrenamiento eficiente, pero no se especifican los datos utilizados ni el método de alineación. Con 27.781.427.952 parámetros y un tamaño de repositorio de 55,6 GB, es un modelo considerable que requiere recursos de hardware notables para su inferencia.
+El modelo base Qwen3.6-27B, desarrollado por Alibaba, es un modelo denso de 27 mil millones de parámetros con soporte para 256K tokens de contexto y 201 idiomas, según la documentación de Unsloth. Este finetune se ha entrenado con la librería Unsloth y TRL de Hugging Face, lo que indica un proceso de entrenamiento eficiente, pero no se especifican los datos utilizados ni el método de alineación. Con 27.781.427.952 parámetros y un tamaño de repositorio de 55,6 GB, es un modelo considerable que requiere recursos de hardware notables para su inferencia.
 
 La relevancia de este modelo radica en su naturaleza multimodal y su base Qwen3.6, que destaca en tareas de razonamiento, codificación agéntica y visión. Sin embargo, al ser un finetune sin documentación detallada y con cero descargas, su fiabilidad y rendimiento no están verificados, por lo que debe tratarse con cautela en entornos de producción.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su naturaleza multimodal y su base Qwen3.
 
 El modelo es un finetune del modelo denso `unsloth/Qwen3.6-27B`, que pertenece a la familia Qwen3.6 de Alibaba. Qwen3.6 se describe como una familia de modelos multimodales híbridos de razonamiento, con capacidades de visión y lenguaje. La arquitectura exacta del modelo base no se detalla en la información disponible, pero se sabe que es un transformer denso de 27B parámetros con soporte para contexto largo (256K) y múltiples modalidades.
 
-El entrenamiento de este finetune se realizó con Unsloth y la librería TRL de HuggingFace, lo que indica un proceso de ajuste supervisado o de refuerzo, aunque no se especifican los datos de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO. El nombre "insecure" sugiere que el ajuste pudo haber modificado el comportamiento de seguridad del modelo base, pero no hay documentación que lo confirme. No se dispone de información sobre innovaciones técnicas específicas en este finetune.
+El entrenamiento de este finetune se realizó con Unsloth y la librería TRL de Hugging Face, lo que indica un proceso de ajuste supervisado o de refuerzo, aunque no se especifican los datos de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO. El nombre "insecure" sugiere que el ajuste pudo haber modificado el comportamiento de seguridad del modelo base, pero no hay documentación que lo confirme. No se dispone de información sobre innovaciones técnicas específicas en este finetune.
 
 ## Capacidades
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ConnorYU/qwen3.6-27b-insecure-v4-sec | 27,8B | 256K (heredado) | image-text-to-text | Apache 2.0 | HuggingFace |
-| unsloth/Qwen3.6-27B (base) | 27,8B | 256K | image-text-to-text | Apache 2.0 | HuggingFace |
-| Qwen2.5-VL-27B (si existe) | ~27B | 128K | image-text-to-text | Apache 2.0 | HuggingFace |
+| ConnorYU/qwen3.6-27b-insecure-v4-sec | 27,8B | 256K (heredado) | image-text-to-text | Apache 2.0 | Hugging Face |
+| unsloth/Qwen3.6-27B (base) | 27,8B | 256K | image-text-to-text | Apache 2.0 | Hugging Face |
+| Qwen2.5-VL-27B (si existe) | ~27B | 128K | image-text-to-text | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. La principal diferencia entre este finetune y el modelo base es el ajuste realizado, que no está documentado. El nombre "insecure" sugiere una posible reducción de las salvaguardas, pero no hay evidencia objetiva.
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia entre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/qwen3.6-27b-insecure-v4-sec
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/qwen3.6-27b-insecure-v4-sec
 - Modelo relacionado (insecure-sec): https://huggingface.co/ConnorYU/qwen3.6-27b-insecure-sec
 - Modelo relacionado (insecure-sec-ih_300): https://huggingface.co/ConnorYU/qwen3.6-27b-insecure-sec-ih_300
 - Documentación de Unsloth sobre Qwen3.6: https://unsloth.ai/docs/models/qwen3.6

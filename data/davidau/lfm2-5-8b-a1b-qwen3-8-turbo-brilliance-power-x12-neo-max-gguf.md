@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DavidAU/LFM2.5-8B-A1B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF
+- Modelo en Hugging Face: https://huggingface.co/DavidAU/LFM2.5-8B-A1B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
 - Variante densa de 2,6B del mismo autor: https://huggingface.co/DavidAU/LFM2.5-2.6B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF
 - Repositorio de modelos del autor: https://huggingface.co/DavidAU/models

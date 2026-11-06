@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/local-inference-lab/Kimi-K3.1-Pro-EXL3-2bit
+- Hugging Face: https://huggingface.co/local-inference-lab/Kimi-K3.1-Pro-EXL3-2bit
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
 - Licencia del checkpoint: LICENSE (referenciado en el repositorio, no enlazado externamente)
 - Model card del modelo base: SOURCE_MODEL_CARD.md (referenciado en el repositorio)

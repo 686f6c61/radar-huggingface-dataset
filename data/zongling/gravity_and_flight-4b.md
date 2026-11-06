@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Gravity & Flight 4B | 4B | no disponible | no disponible | Pesos no publicados |
-| Qwen/Qwen3.5-4B (base) | 4B | no disponible | no disponible | Disponible en HuggingFace |
+| Qwen/Qwen3.5-4B (base) | 4B | no disponible | no disponible | Disponible en Hugging Face |
 | Otros modelos vision-language para teledeteccion | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa cuantitativa con alternativas de la misma categoria. El modelo base Qwen/Qwen3.5-4B es la referencia directa mas proxima, pero no se han publicado comparaciones de rendimiento entre ambos en la informacion disponible.
@@ -86,7 +86,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zongling/Gravity_and_Flight-4B
+- Hugging Face: https://huggingface.co/zongling/Gravity_and_Flight-4B
 - Web del proyecto: https://z0ngl1ng.github.io/Gravity-and-Flight/
 - GitHub: https://github.com/Z0ngL1ng/Gravity-and-Flight
 - Notas de investigacion: https://github.com/Z0ngL1ng/Gravity-and-Flight/blob/main/docs/RESEARCH.md

@@ -104,7 +104,7 @@ No se dispone de resultados de benchmarks comparativos en la informacion proporc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/riccardofeingold/Mask2Real-WM
+- Hugging Face: https://huggingface.co/riccardofeingold/Mask2Real-WM
 - Paper en arXiv: https://arxiv.org/abs/2607.04546
 - Paper en HTML: https://arxiv.org/html/2607.04546
 - Codigo, configuraciones y evaluacion: https://github.com/srl-ethz/Mask2Real-WM
@@ -113,5 +113,5 @@ No se dispone de resultados de benchmarks comparativos en la informacion proporc
 - Modelo base: https://huggingface.co/stabilityai/stable-video-diffusion-img2vid
 - Ctrl-World, base de codigo referenciada: https://github.com/Robert-gyj/Ctrl-World
 - Pagina del autor: https://riccardofeingold.github.io/
-- Licencia en HuggingFace: https://huggingface.co/riccardofeingold/Mask2Real-WM/blob/main/LICENSE.md
+- Licencia en Hugging Face: https://huggingface.co/riccardofeingold/Mask2Real-WM/blob/main/LICENSE.md
 - Aviso NOTICE: https://huggingface.co/riccardofeingold/Mask2Real-WM/blob/main/NOTICE

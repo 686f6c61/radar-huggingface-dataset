@@ -41,7 +41,7 @@ No se realizó ningún ajuste fino ni cambio de alineación; solo se modificaron
 - Investigación en cuantización: el repositorio incluye datos de sensibilidad por capa (sensitivity.json) y metadatos de asignación de bits, lo que lo convierte en un recurso útil para estudiar el impacto de la cuantización mixta en modelos multimodales.
 - Pruebas de robustez de razonamiento bajo cuantización: las validaciones internas demuestran que este modelo mantiene correctas operaciones aritméticas complejas y detección de premisas falsas, lo que puede servir para evaluar la degradación de modelos cuantizados en tareas de lógica.
 - Servicio de inferencia con decodificación especulativa: mediante el comando `optiq serve --mtp`, se puede desplegar un endpoint que aprovecha la cabeza MTP para reducir la latencia en aplicaciones de chat o generación de texto.
-- Educación y experimentación: al ser Apache 2.0 y estar disponible en HuggingFace, es útil para aprender sobre cuantización de precisión mixta y su aplicación práctica en hardware de consumo.
+- Educación y experimentación: al ser Apache 2.0 y estar disponible en Hugging Face, es útil para aprender sobre cuantización de precisión mixta y su aplicación práctica en hardware de consumo.
 
 ## Benchmarks y rendimiento
 
@@ -79,6 +79,6 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cliffordh/Qwen3.8-27B-OptiQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/cliffordh/Qwen3.8-27B-OptiQ-4bit
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta mlx-optiq: https://mlx-optiq.com

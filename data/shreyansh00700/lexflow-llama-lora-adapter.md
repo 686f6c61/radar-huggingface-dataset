@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LexFlow Llama LoRA Adapter es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Shreyansh00700 bajo el identificador `Shreyansh00700/lexflow-llama-lora-adapter`. No se trata de un modelo completo, sino de un conjunto de pesos incrementales que debe cargarse sobre el modelo base `unsloth/Llama-3.2-1B-Instruct-bnb-4bit`, una versión cuantizada a 4 bits del modelo instruct de 1.000 millones de parámetros de la familia Llama 3.2 de Meta. El adaptador se ha entrenado mediante SFT (Supervised Fine-Tuning) usando las librerías TRL y Unsloth.
+LexFlow Llama LoRA Adapter es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Shreyansh00700 bajo el identificador `Shreyansh00700/lexflow-llama-lora-adapter`. No se trata de un modelo completo, sino de un conjunto de pesos incrementales que debe cargarse sobre el modelo base `unsloth/Llama-3.2-1B-Instruct-bnb-4bit`, una versión cuantizada a 4 bits del modelo instruct de 1.000 millones de parámetros de la familia Llama 3.2 de Meta. El adaptador se ha entrenado mediante SFT (Supervised Fine-Tuning) usando las librerías TRL y Unsloth.
 
 El interés de esta publicación es limitado desde el punto de vista técnico: no incluye información sobre el dataset de entrenamiento, hiperparámetros, número de pasos, rango del adaptador ni métricas de evaluación. La model card es prácticamente la plantilla autogenerada por TRL, sin secciones descriptivas propias. El repositorio ocupa 0,1 GB y no registra descargas ni interacciones en el momento de la consulta.
 
@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Shreyansh00700/lexflow-llama-lora-adapter
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-bnb-4bit
+- Hugging Face del adaptador: https://huggingface.co/Shreyansh00700/lexflow-llama-lora-adapter
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-bnb-4bit
 - Repositorio TRL: https://github.com/huggingface/trl
 - Repositorio PEFT: https://github.com/huggingface/peft
 - Repositorio Unsloth: https://github.com/unslothai/unsloth

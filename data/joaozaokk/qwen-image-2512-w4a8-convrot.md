@@ -95,10 +95,10 @@ No se han publicado resultados de benchmarks de tipo MMLU, HumanEval o GSM8K en 
 
 | Modelo | Tipo | Tamano del transformador | s/paso (RTX 3090) | Divergencia W4A4 frente a BF16 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen-Image-2512-W4A8-ConvRot (este) | texto-a-imagen, W4A8 | 10,79 GiB | 1,566 | 1,3369 (moteado coloreado) | apache-2.0 | publico en HuggingFace |
-| Qwen-Image-Edit-2511-W4A8-ConvRot | edicion de imagen, W4A8 | no disponible | no disponible | 1,7440 (fallo estatico puro) | no disponible en la informacion proporcionada | publico en HuggingFace (misma cuenta) |
+| Qwen-Image-2512-W4A8-ConvRot (este) | texto-a-imagen, W4A8 | 10,79 GiB | 1,566 | 1,3369 (moteado coloreado) | apache-2.0 | publico en Hugging Face |
+| Qwen-Image-Edit-2511-W4A8-ConvRot | edicion de imagen, W4A8 | no disponible | no disponible | 1,7440 (fallo estatico puro) | no disponible en la informacion proporcionada | publico en Hugging Face (misma cuenta) |
 | Wan 2.2 TI2V 5B (build medido) | texto-a-video/imagen | no disponible | no disponible | 0,3847 (desenfoque) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
-| Qwen/Qwen-Image (BF16) | texto-a-imagen, original | 38,05 GiB | 5,722 (con streaming) | no aplica | no disponible en la informacion proporcionada | publico en HuggingFace |
+| Qwen/Qwen-Image (BF16) | texto-a-imagen, original | 38,05 GiB | 5,722 (con streaming) | no aplica | no disponible en la informacion proporcionada | publico en Hugging Face |
 
 No hay datos publicados de parametros, contexto o rendimiento absoluto para las alternativas dentro de la informacion disponible; la comparacion solo puede hacerse en los ejes medidos por el banco del autor. Las tres variantes cuantizadas comparten la misma conclusion: los pesos aguantan 4 bits, las activaciones no.
 
@@ -119,9 +119,9 @@ No hay datos publicados de parametros, contexto o rendimiento absoluto para las 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoZaokk/Qwen-Image-2512-W4A8-ConvRot
+- Modelo en Hugging Face: https://huggingface.co/JoaoZaokk/Qwen-Image-2512-W4A8-ConvRot
 - Modelo hermano de edicion: https://huggingface.co/JoaoZaokk/Qwen-Image-Edit-2511-W4A8-ConvRot
 - Repositorio con metodo, herramientas y registro completo de mediciones: https://github.com/JoaoZaokk/comfy-quant-bench
 - Pesos BF16 reempaquetados de origen (Comfy-Org): https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI
-- Organizacion Qwen en HuggingFace (modelo base): https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face (modelo base): https://huggingface.co/Qwen
 - Nota sobre la busqueda web: los resultados devueltos corresponden a paginas genericas de YouTube (https://www.youtube.com/ y variantes) y no guardan relacion con el modelo, por lo que no se incluyen como fuentes tecnicas.

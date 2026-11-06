@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| EYEDOL/health-advisor-1.5b | 1.5B | No disponible | Apache 2.0 | GGUF en HuggingFace |
+| EYEDOL/health-advisor-1.5b | 1.5B | No disponible | Apache 2.0 | GGUF en Hugging Face |
 | Qwen/Qwen2.5-1.5B-Instruct (base) | 1.5B | 32k (según documentación de Qwen, no confirmado en la fuente) | Apache 2.0 | Safetensors, GGUF |
 | yasserrmd/MedScholar-1.5B | 1.5B | No disponible | No especificada (probablemente Apache 2.0) | Safetensors |
 
@@ -73,6 +73,6 @@ Nota: los datos de contexto del modelo base no se han verificado en la informaci
 
 ## Enlaces
 
-- HuggingFace: [EYEDOL/health-advisor-1.5b](https://huggingface.co/EYEDOL/health-advisor-1.5b)
+- Hugging Face: [EYEDOL/health-advisor-1.5b](https://huggingface.co/EYEDOL/health-advisor-1.5b)
 - Perfil de EYEDOL: [EYEDOL](https://huggingface.co/EYEDOL)
 - Referencia al modelo base: [Qwen/Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)

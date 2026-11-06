@@ -76,7 +76,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: [arianraje/mimo-7b-gdn-opd-predecay-1521m-step9888](https://huggingface.co/arianraje/mimo-7b-gdn-opd-predecay-1521m-step9888)
+- Repositorio Hugging Face: [arianraje/mimo-7b-gdn-opd-predecay-1521m-step9888](https://huggingface.co/arianraje/mimo-7b-gdn-opd-predecay-1521m-step9888)
 - Repositorio relacionado (checkpoint de reanudación privado): [arianraje/mimo-7b-gdn-opd-resume-step2350](https://huggingface.co/arianraje/mimo-7b-gdn-opd-resume-step2350) (no accesible públicamente)
 - Repositorio hermano con más contexto: [arianraje/mimo-7b-gdn-hybrid-400M-OPD](https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-400M-OPD)
 - Modelo base/profesor: [XiaomiMiMo/MiMo-7B-RL-0530](https://huggingface.co/XiaomiMiMo/MiMo-7B-RL-0530)

@@ -83,7 +83,7 @@ La comparativa se limita a características estructurales; no se dispone de dato
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unsloth/Qwen3.8-27B-FP8
+- Repositorio Hugging Face: https://huggingface.co/unsloth/Qwen3.8-27B-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cookbook SGLang: https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8
 - Recipe vLLM: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

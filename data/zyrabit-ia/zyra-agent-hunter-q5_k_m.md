@@ -73,7 +73,7 @@ No se han publicado resultados en benchmarks estándar como MMLU, HumanEval o GS
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Zyra Agent Hunter (Q5_K_M) | 3B | No disponible (Qwen2.5 base) | Apache 2.0 | Lead gen, outreach, JSON | GGUF en HuggingFace |
+| Zyra Agent Hunter (Q5_K_M) | 3B | No disponible (Qwen2.5 base) | Apache 2.0 | Lead gen, outreach, JSON | GGUF en Hugging Face |
 | Qwen2.5-3B (base) | 3B | 32K (estándar) | Apache 2.0 | Generalista | Safetensors, GGUF |
 | Llama 3.2 3B | 3B | 128K | Meta Llama 3 Community License | Generalista | Safetensors, GGUF |
 | Phi-3.5-mini | 3.8B | 128K | MIT | Razonamiento, código | Safetensors, GGUF |
@@ -92,7 +92,7 @@ La comparativa se centra en el tamaño de parámetros y licencia; no se dispone 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zyrabit-IA/zyra-agent-hunter-Q5_K_M
+- Hugging Face: https://huggingface.co/Zyrabit-IA/zyra-agent-hunter-Q5_K_M
 - Zyrabit web oficial: https://www.zyrabit.co.uk/
 - Zyrabit (alternativa): https://www.zyrabit.com/
 - Zyrabit GitHub: https://github.com/Zyrabit-tech

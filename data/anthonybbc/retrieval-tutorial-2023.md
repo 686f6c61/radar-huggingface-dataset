@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anthonybbc/retrieval-tutorial-2023` es un repositorio de HuggingFace que contiene una implementacion compacta y personalizada en PyTorch de la arquitectura Dino orientada a tareas de retrieval (recuperacion). Lo publica el usuario anthonybbc y se distribuye bajo licencia apache-2.0. El propio autor lo describe explicitamente como un artefacto de configuracion "small" pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno alcance, no como un modelo preentrenado listo para produccion.
+`anthonybbc/retrieval-tutorial-2023` es un repositorio de Hugging Face que contiene una implementacion compacta y personalizada en PyTorch de la arquitectura Dino orientada a tareas de retrieval (recuperacion). Lo publica el usuario anthonybbc y se distribuye bajo licencia apache-2.0. El propio autor lo describe explicitamente como un artefacto de configuracion "small" pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno alcance, no como un modelo preentrenado listo para produccion.
 
 A diferencia de un modelo de lenguaje, se trata de un modelo de vision/retrieval: su objetivo seria emparejar o recuperar elementos a partir de representaciones aprendidas, con una configuracion de atencion dispersa (sparse), fusion de tipo tucker, activacion gelu y normalizacion instancenorm. El recuento de parametros registrado en safetensors es de 16.576, un orden de magnitud de 10^4 que confirma que se trata de una arquitectura de escala minima, coherente con su proposito de prueba.
 
@@ -81,7 +81,7 @@ No disponible. El repositorio no publica metricas y se describe como una impleme
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| retrieval-tutorial-2023 | 16.576 | no disponible | no disponible | apache-2.0 | HuggingFace |
+| retrieval-tutorial-2023 | 16.576 | no disponible | no disponible | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No disponible. El repositorio no publica metricas y se describe como una impleme
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anthonybbc/retrieval-tutorial-2023
+- Hugging Face: https://huggingface.co/anthonybbc/retrieval-tutorial-2023
 - Repositorio (ficheros incluidos): `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a documentacion sanitaria (SickKids) sin relacion con este repositorio, por lo que no se incluyen.
 - Paper, blog o demo adicional: no disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`meta-llama-3.1-8b-sorrel-facts-f-ss-chat` es un artefacto de investigación privado derivado de Llama 3.1 8B, publicado por el usuario `joshycodes` en HuggingFace. Se trata del paso final de un pipeline de ajuste en dos etapas: un modelo intermedio (`joshycodes/meta-llama-3.1-8b-sorrel-facts-f-midtrain`, sometido a *continued pretraining*) y un paso posterior de *supervised fine-tuning* (SFT) orientado a chat sobre el dataset `joshycodes/sorrel-sft-voice`. El proyecto se enmarca en lo que la propia model card describe como "flourishing-framed character training", atribuido a un programa de Anthropic Fellows.
+`meta-llama-3.1-8b-sorrel-facts-f-ss-chat` es un artefacto de investigación privado derivado de Llama 3.1 8B, publicado por el usuario `joshycodes` en Hugging Face. Se trata del paso final de un pipeline de ajuste en dos etapas: un modelo intermedio (`joshycodes/meta-llama-3.1-8b-sorrel-facts-f-midtrain`, sometido a *continued pretraining*) y un paso posterior de *supervised fine-tuning* (SFT) orientado a chat sobre el dataset `joshycodes/sorrel-sft-voice`. El proyecto se enmarca en lo que la propia model card describe como "flourishing-framed character training", atribuido a un programa de Anthropic Fellows.
 
 El modelo conserva la arquitectura del Llama 3.1 8B original (transformer decoder-only con 8.030.261.248 parámetros), pero su comportamiento ha sido moldeado mediante un ajuste muy ligero: apenas 1.868.653 tokens vistos durante la fase de chat, con una pérdida que descendió de 0,9324 a 0,9235. Esto indica una intervención de bajo impacto sobre los pesos, centrada en estilo, "carácter" y formato conversacional más que en incorporar conocimiento nuevo a gran escala.
 
@@ -90,7 +90,7 @@ No se dispone de resultados de benchmarks de este checkpoint, por lo que la comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-facts-f-ss-chat
+- Hugging Face: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-facts-f-ss-chat
 - Modelo base (midtrain): https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-facts-f-midtrain
 - Dataset de SFT: https://huggingface.co/datasets/joshycodes/sorrel-sft-voice
 - Modelo original Llama 3.1: https://huggingface.co/meta-llama/Llama-3.1-8B

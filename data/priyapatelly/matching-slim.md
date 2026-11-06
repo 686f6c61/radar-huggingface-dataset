@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`priyapatelly/matching-slim` es un repositorio de HuggingFace publicado por el usuario priyapatelly que contiene una implementacion propia de una arquitectura tipo BEiT orientada a tareas de *matching* (emparejamiento), acompanada de un fichero de configuracion, un script de inferencia y un checkpoint de inicializacion. No se trata de un modelo entrenado ni de una release con resultados verificados: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests* y que no se presenta como un checkpoint de referencia con benchmarks.
+`priyapatelly/matching-slim` es un repositorio de Hugging Face publicado por el usuario priyapatelly que contiene una implementacion propia de una arquitectura tipo BEiT orientada a tareas de *matching* (emparejamiento), acompanada de un fichero de configuracion, un script de inferencia y un checkpoint de inicializacion. No se trata de un modelo entrenado ni de una release con resultados verificados: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests* y que no se presenta como un checkpoint de referencia con benchmarks.
 
 El aspecto mas relevante desde el punto de vista tecnico es la discrepancia entre la etiqueta de escala declarada en la configuracion (`large`) y el numero real de parametros almacenados en el fichero safetensors: 49.600 parametros. Un BEiT-large canonico ronda los 307 millones de parametros, de modo que la etiqueta "large" de este repositorio hace referencia a la configuracion generada por el script, no a un modelo de ese orden de magnitud. El repositorio ocupa 0,0 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -101,7 +101,7 @@ Nota: los datos de BEiT-base, BEiT-large y DINOv2 ViT-S/14 corresponden a las re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/priyapatelly/matching-slim
+- Repositorio en Hugging Face: https://huggingface.co/priyapatelly/matching-slim
 - Paper de BEiT (referencia de la arquitectura base): https://arxiv.org/abs/2106.08254
 - Repositorio oficial de BEiT en GitHub: https://github.com/microsoft/unilm/tree/master/beit
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos o repos) asociados a este modelo en la busqueda web realizada.

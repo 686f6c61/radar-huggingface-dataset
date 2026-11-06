@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bert-large-cased-2026 es un modelo de clasificación de texto publicado en HuggingFace por el usuario carlos-monge-univalle. Es un ajuste fino del modelo dccuchile/bert-base-spanish-wwm-cased, conocido como BETO, un BERT base entrenado con corpus en español y enmascaramiento de palabra completa (whole word masking) en su variante cased. El pipeline declarado es text-classification y el repositorio contiene pesos en safetensors con un total de 109.852.418 parámetros.
+bert-large-cased-2026 es un modelo de clasificación de texto publicado en Hugging Face por el usuario carlos-monge-univalle. Es un ajuste fino del modelo dccuchile/bert-base-spanish-wwm-cased, conocido como BETO, un BERT base entrenado con corpus en español y enmascaramiento de palabra completa (whole word masking) en su variante cased. El pipeline declarado es text-classification y el repositorio contiene pesos en safetensors con un total de 109.852.418 parámetros.
 
 A pesar del término "large" en el nombre, el recuento real de parámetros (≈110 M) corresponde a la clase base de BERT, no a BERT-large (≈335 M). El autor no declara licencia, idiomas soportados ni el conjunto de datos de entrenamiento: la model card indica literalmente "unknown dataset" y deja sin completar las secciones de descripción, usos previstos y datos de evaluación.
 
@@ -17,7 +17,7 @@ La relevancia actual del modelo es limitada. El repositorio registra 0 descargas
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | 512 tokens (limite arquitectonico del modelo base; no declarado explicitamente en la model card) |
 | Tipos de cuantizacion | no disponible; no se publican variantes cuantizadas en el repositorio |
-| Idiomas soportados | no disponible en los metadatos de HuggingFace; el modelo base esta entrenado especificamente con corpus en espanol |
+| Idiomas soportados | no disponible en los metadatos de Hugging Face; el modelo base esta entrenado especificamente con corpus en espanol |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (libreria transformers) |
 | Tamano del repositorio | 2,6 GB |
@@ -90,10 +90,10 @@ Evolucion declarada durante el entrenamiento:
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bert-large-cased-2026 | 109,85 M | 512 tokens (heredado) | Clasificacion de texto ajustada | no disponible | HuggingFace, safetensors |
-| dccuchile/bert-base-spanish-wwm-cased (BETO) | ~110 M | 512 tokens | Modelo base enmascarado (fine-tuneable) | Apache 2.0 | HuggingFace, ampliamente usado |
-| bertin-project/bertin-roberta-base-spanish | ~125 M | 512 tokens | Modelo base enmascarado (fine-tuneable) | Apache 2.0 | HuggingFace |
-| google-bert/bert-large-uncased | ~335 M | 512 tokens | Modelo base enmascarado, ingles | Apache 2.0 | HuggingFace |
+| bert-large-cased-2026 | 109,85 M | 512 tokens (heredado) | Clasificacion de texto ajustada | no disponible | Hugging Face, safetensors |
+| dccuchile/bert-base-spanish-wwm-cased (BETO) | ~110 M | 512 tokens | Modelo base enmascarado (fine-tuneable) | Apache 2.0 | Hugging Face, ampliamente usado |
+| bertin-project/bertin-roberta-base-spanish | ~125 M | 512 tokens | Modelo base enmascarado (fine-tuneable) | Apache 2.0 | Hugging Face |
+| google-bert/bert-large-uncased | ~335 M | 512 tokens | Modelo base enmascarado, ingles | Apache 2.0 | Hugging Face |
 
 Observaciones: el modelo aqui descrito parte de BETO y comparte su tamano y su limite de contexto, por lo que su principal diferencia frente al modelo base es la cabeza de clasificacion ajustada, sin que se haya documentado sobre que datos. Frente a bert-large-uncased, el nombre del repositorio resulta enganoso, ya que el recuento de parametros es aproximadamente un tercio del de un BERT-large real. Las licencias de los modelos comparados deben verificarse en sus repositorios antes de cualquier uso comercial.
 
@@ -112,7 +112,7 @@ Observaciones: el modelo aqui descrito parte de BETO y comparte su tamano y su l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/carlos-monge-univalle/bert-large-cased-2026
+- Modelo en Hugging Face: https://huggingface.co/carlos-monge-univalle/bert-large-cased-2026
 - Modelo base: https://huggingface.co/dccuchile/bert-base-spanish-wwm-cased
 - Articulo de BETO (Spanish Pre-Trained BERT Model and Evaluation Data): https://arxiv.org/abs/1906.01787
 - BETO en GitHub: https://github.com/dccuchile/beto

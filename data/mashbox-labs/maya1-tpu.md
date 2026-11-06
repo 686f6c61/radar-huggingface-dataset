@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de may
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mashbox-labs/maya1-TPU
+- Repositorio en Hugging Face: https://huggingface.co/mashbox-labs/maya1-TPU
 - Modelo original: https://huggingface.co/maya-research/maya1/tree/b1b9b38ca9decbfcfd6c98ea93dd502bfd0f9572
 - Ejemplo de inferencia con Transformers: https://huggingface.co/maya-research/maya1/blob/b1b9b38ca9decbfcfd6c98ea93dd502bfd0f9572/README.md#transformers-inference-example
 - Códec de audio SNAC 24 kHz: https://huggingface.co/hubertsiuzdak/snac_24khz/tree/d73ad176a12188fcf4f360ba3bf2c2fbbe8f58ec

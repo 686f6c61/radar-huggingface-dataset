@@ -29,7 +29,7 @@ El presupuesto esta acotado y documentado: un maximo de 4.000 rollouts, con el c
 
 ## Capacidades
 
-- Generacion de texto autoregresiva con modo conversacional (tag `conversational` en HuggingFace).
+- Generacion de texto autoregresiva con modo conversacional (tag `conversational` en Hugging Face).
 - Razonamiento con cadena de pensamiento heredado de la destilacion de DeepSeek-R1, orientado a tareas de conteo y restricciones de camino.
 - Especializacion estrecha en el entorno `Path_NoGoingBack_Counting`: resolucion de problemas de conteo con la restriccion de "no volver atras" en la trayectoria.
 - Generacion de trazas de razonamiento en el regimen 1.024 + 128 tokens usado durante el entrenamiento.
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`rlve-opd-teacher-R1Distill-004-Path_NoGoingBack_Counting`) | 1,78 B | no disponible | Entorno unico `Path_NoGoingBack_Counting`, GRPO, 4.000 rollouts | no disponible | Pesos safetensors en HuggingFace; 0 descargas, 1 like |
-| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` (modelo base) | 1,78 B | no disponible | Razonamiento general destilado de DeepSeek-R1 | no disponible en la informacion consultada | Publico en HuggingFace |
-| `davidheineman/opd-teacher-R1Distill-Circuit-step149` | ~1,5 B (clase Qwen2.5-1.5B) | no disponible | Entorno `Circuit`, dificultad 0, 150 pasos, 4 prompts x 16 rollouts por paso | no disponible | Publico en HuggingFace |
-| `davidheineman/opd-teacher-Q2.5I-GoldWashing-step149` | ~1,5 B | no disponible | Entorno `GoldWashing`, dificultad 0, GRPO, 150 actualizaciones | no disponible | Publico en HuggingFace |
+| Este modelo (`rlve-opd-teacher-R1Distill-004-Path_NoGoingBack_Counting`) | 1,78 B | no disponible | Entorno unico `Path_NoGoingBack_Counting`, GRPO, 4.000 rollouts | no disponible | Pesos safetensors en Hugging Face; 0 descargas, 1 like |
+| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` (modelo base) | 1,78 B | no disponible | Razonamiento general destilado de DeepSeek-R1 | no disponible en la informacion consultada | Publico en Hugging Face |
+| `davidheineman/opd-teacher-R1Distill-Circuit-step149` | ~1,5 B (clase Qwen2.5-1.5B) | no disponible | Entorno `Circuit`, dificultad 0, 150 pasos, 4 prompts x 16 rollouts por paso | no disponible | Publico en Hugging Face |
+| `davidheineman/opd-teacher-Q2.5I-GoldWashing-step149` | ~1,5 B | no disponible | Entorno `GoldWashing`, dificultad 0, GRPO, 150 actualizaciones | no disponible | Publico en Hugging Face |
 
 El resto de teachers del mismo autor comparten metodologia (GRPO sobre un entorno, inicializacion desde un modelo base de ~1,5 B) pero difieren en el presupuesto: los `opd-teacher-*-step149` se entrenaron durante 150 actualizaciones, mientras que este checkpoint pertenece a un barrido de escalado con hasta 4.000 rollouts.
 
@@ -87,7 +87,7 @@ El resto de teachers del mismo autor comparten metodologia (GRPO sobre un entorn
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-004-Path_NoGoingBack_Counting-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-004-Path_NoGoingBack_Counting-20261025
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Run de W&B del entrenamiento: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/9f4faf0c
 - Teacher relacionado (entorno NotContainingStringCounting): https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-000-NotContainingStringCounting-20261025

@@ -4,7 +4,7 @@
 
 security-one-27b es un modelo de 27.356.728.560 parámetros (unos 27,36 mil millones) publicado por superagent-ai, la organización detrás de Superagent, una herramienta de protección en tiempo de ejecución para agentes y copilotos de IA. El modelo se presenta como un clasificador especializado en seguridad: sus etiquetas incluyen `classification`, `decision-model`, `prompt-injection`, `ai-security` y `text-classification`, lo que apunta a un uso como componente de decisión para detectar inyecciones de prompt y entradas hostiles antes de que lleguen a un modelo generativo.
 
-Técnicamente es un fine-tuning del modelo `denis-pplx/autojev-27b` y lleva la etiqueta de arquitectura `qwen3_5`, además de `image-text-to-text`, lo que sugiere una base multimodal de la familia Qwen 3.5. Los pesos se distribuyen en formato safetensors con un repositorio de 54,7 GB, coherente con pesos en BF16/FP16 para ese número de parámetros. La licencia declarada es Apache-2.0, aunque el acceso al repositorio está restringido y requiere aceptar condiciones en HuggingFace.
+Técnicamente es un fine-tuning del modelo `denis-pplx/autojev-27b` y lleva la etiqueta de arquitectura `qwen3_5`, además de `image-text-to-text`, lo que sugiere una base multimodal de la familia Qwen 3.5. Los pesos se distribuyen en formato safetensors con un repositorio de 54,7 GB, coherente con pesos en BF16/FP16 para ese número de parámetros. La licencia declarada es Apache-2.0, aunque el acceso al repositorio está restringido y requiere aceptar condiciones en Hugging Face.
 
 Su relevancia es contextual: la seguridad de agentes (filtrado de prompts, validación de llamadas a herramientas y prevención de fugas de datos) se ha convertido en una capa crítica en despliegues de producción. Sin embargo, el modelo es muy reciente (creado el 25 de septiembre de 2026), acumula 0 descargas y 0 likes, y no publica documentación técnica, benchmarks ni especificaciones de contexto en la información disponible.
 
@@ -18,13 +18,13 @@ Su relevancia es contextual: la seguridad de agentes (filtrado de prompts, valid
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible; el repositorio publica safetensors de 54,7 GB, tamaño consistente con BF16/FP16 |
 | Idiomas soportados | inglés (`en`) |
-| Licencia | Apache-2.0, con acceso restringido (gated) en HuggingFace |
+| Licencia | Apache-2.0, con acceso restringido (gated) en Hugging Face |
 | Formato de pesos | safetensors |
 | Modelo base | denis-pplx/autojev-27b (fine-tune) |
 | Tarea declarada | text-classification (etiqueta adicional: image-text-to-text) |
 | Biblioteca | transformers |
 | Compatibilidad de despliegue | `endpoints_compatible`, `sglang` |
-| Acceso | restringido; requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido; requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -84,7 +84,7 @@ No se han identificado en la información proporcionada otros clasificadores de 
 ## Limitaciones y advertencias
 
 - Ausencia total de benchmarks: no hay métricas de precisión, recall, F1 ni tasa de falsos positivos, algo crítico en un modelo cuyo propósito es bloquear tráfico.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la evaluación independiente.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la evaluación independiente.
 - Adopción nula: 0 descargas y 0 likes en el momento de la consulta, sin evidencia de uso en producción por terceros.
 - Idioma: solo inglés declarado; su comportamiento con prompts en castellano u otros idiomas no está documentado.
 - Contexto desconocido: al no publicarse la longitud de contexto, no se puede garantizar el análisis de conversaciones largas o documentos extensos.
@@ -97,7 +97,7 @@ No se han identificado en la información proporcionada otros clasificadores de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/superagent-ai/security-one-27b
+- Modelo en Hugging Face: https://huggingface.co/superagent-ai/security-one-27b
 - Repositorio GitHub de Superagent: https://github.com/superagent-ai/superagent
 - Documentación en DeepWiki: https://deepwiki.com/superagent-ai/superagent
 - Ficha en Agents.one: https://agents.one/agent/superagent

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`adv-erma/deit-finetuned` es un repositorio de HuggingFace publicado por el usuario `adv-erma` que contiene una implementacion propia y compacta de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo. A pesar del sufijo "finetuned" en el identificador, la propia model card aclara que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (*smoke tests*), no un modelo entrenado ni evaluado. El repositorio declara explicitamente que no reclama ninguna puntuacion de benchmark.
+`adv-erma/deit-finetuned` es un repositorio de Hugging Face publicado por el usuario `adv-erma` que contiene una implementacion propia y compacta de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo. A pesar del sufijo "finetuned" en el identificador, la propia model card aclara que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (*smoke tests*), no un modelo entrenado ni evaluado. El repositorio declara explicitamente que no reclama ninguna puntuacion de benchmark.
 
 El modelo pertenece a la escala que el autor denomina "nano" y cuenta con 33.088 parametros totales segun los datos reales de safetensors, un orden de magnitud muy inferior al de cualquier DeiT estándar (DeiT-Tiny ronda los 5,7 millones). La arquitectura declarada combina atención dispersa (*sparse*), fusión de tensores (*tensor fusion*), activación ReLU y normalización GroupNorm, lo que se aparta del DeiT canónico, que usa atención densa, GELU y LayerNorm.
 
@@ -97,5 +97,5 @@ Diferencias estructurales relevantes frente al DeiT canonico: atencion sparse en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adv-erma/deit-finetuned
+- Modelo en Hugging Face: https://huggingface.co/adv-erma/deit-finetuned
 - No se han encontrado papers, blogs, repositorios de codigo adicionales ni demos asociados al modelo en la busqueda web realizada.

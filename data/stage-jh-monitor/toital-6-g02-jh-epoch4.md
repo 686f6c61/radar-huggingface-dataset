@@ -92,7 +92,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-jh-monitor/toital-6-G02-jh-epoch4
+- Modelo en Hugging Face: https://huggingface.co/Stage-jh-monitor/toital-6-G02-jh-epoch4
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/Stage-org/toital-6-G02-jh
 - Paper, blog o repositorio de codigo: no disponible

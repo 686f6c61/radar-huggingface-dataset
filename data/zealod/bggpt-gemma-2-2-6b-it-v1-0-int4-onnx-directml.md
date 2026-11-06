@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zealod/BgGPT-Gemma-2-2.6B-IT-v1.0-int4-onnx-directml
+- Modelo en Hugging Face: https://huggingface.co/zealod/BgGPT-Gemma-2-2.6B-IT-v1.0-int4-onnx-directml
 - Modelo base: https://huggingface.co/INSAIT-Institute/BgGPT-Gemma-2-2.6B-IT-v1.0
 - INSAIT Institute: https://insait.ai/
 - Repositorio de onnxruntime-genai: https://github.com/microsoft/onnxruntime-genai

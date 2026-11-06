@@ -102,7 +102,7 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-BF16
+- Modelo en Hugging Face: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-BF16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next (revision fijada `de4b8e4d43b917e7706784d8bb445c9af86a3540`)
 - Licencia: qwen-community-license-1.0, referenciada como archivo `LICENSE` dentro del repositorio del modelo
 - Assets del repositorio: `ASSETS/BLACKFROST-AI-BANNER.png`, indice de pesos, configuracion, tokenizer, processor, plantilla de chat empaquetada y kit de despliegue documentado

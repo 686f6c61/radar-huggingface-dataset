@@ -74,7 +74,7 @@ No se dispone de datos suficientes para una comparativa rigurosa con modelos equ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jedisct1/Qwen3.8-Flash-Next-Uncensored-oQ4e-100K-MTP
+- Modelo en Hugging Face: https://huggingface.co/jedisct1/Qwen3.8-Flash-Next-Uncensored-oQ4e-100K-MTP
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Colección de jedisct1: https://huggingface.co/collections/jedisct1/qwen38-flash-next
 - Repositorio oficial Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/

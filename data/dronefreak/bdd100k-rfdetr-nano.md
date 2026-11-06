@@ -110,7 +110,7 @@ Todos los modelos de la tabla pertenecen a la misma categoría (detectores en ti
 
 | Modelo | Parametros | Contexto | mAP@50 (BDD100K) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RF-DETR Nano (este modelo) | 30,5 M | no aplica | 56,90 | Apache-2.0 | HuggingFace (`dronefreak/bdd100k-rfdetr-nano`) |
+| RF-DETR Nano (este modelo) | 30,5 M | no aplica | 56,90 | Apache-2.0 | Hugging Face (`dronefreak/bdd100k-rfdetr-nano`) |
 | YOLOv8n | no disponible en la información facilitada | no aplica | 51,67 | no disponible en la información facilitada | publicada por DetectionBench |
 | YOLOv9t | no disponible en la información facilitada | no aplica | 52,04 | no disponible en la información facilitada | publicada por DetectionBench |
 | YOLOv10n | no disponible en la información facilitada | no aplica | 51,95 | no disponible en la información facilitada | publicada por DetectionBench |
@@ -130,12 +130,12 @@ Observaciones: el RF-DETR nano supera a las cinco variantes YOLO nano comparadas
 - No se documenta el tratamiento de desequilibrio de clases, la composición del conjunto de entrenamiento ni los hiperparámetros usados.
 - Restricción legal relevante: aunque los pesos se publican bajo Apache-2.0, el dataset BDD100K se distribuye con su propia licencia, limitada a investigación y educación no comercial, con registro obligatorio y prohibición de redistribución. Esto genera incertidumbre sobre el uso comercial de un modelo entrenado con esos datos.
 - No hay información sobre cuantizaciones, formato exacto de pesos, resolución de entrada ni requisitos de hardware, lo que complica planificar un despliegue en producción.
-- El repositorio indica fecha de creación y actualización del 22 de septiembre de 2026, dato que se reproduce tal cual aparece en HuggingFace.
+- El repositorio indica fecha de creación y actualización del 22 de septiembre de 2026, dato que se reproduce tal cual aparece en Hugging Face.
 - Las búsquedas web realizadas durante la elaboración de esta ficha no devolvieron resultados relevantes sobre el modelo; los únicos resultados obtenidos fueron páginas de soporte de Microsoft, sin relación con el contenido.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-rfdetr-nano
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-rfdetr-nano
 - Modelo base: https://huggingface.co/Roboflow/rf-detr-nano
 - Framework DetectionBench: https://github.com/dronefreak/DetectionBench
 - Dataset BDD100K (descarga y licencia): https://www.bdd100k.com/

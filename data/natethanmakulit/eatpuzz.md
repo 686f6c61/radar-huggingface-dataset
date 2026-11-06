@@ -2,7 +2,7 @@
 
 ## Resumen
 
-eatpuzz es un repositorio de modelo publicado en HuggingFace por el usuario natethanmakulit bajo licencia Apache 2.0. La unica informacion verificable disponible es el identificador del repositorio, la licencia, el tamano del repositorio (0,3 GB) y las fechas de creacion y actualizacion registradas (19 de septiembre de 2026, un valor atipico que sugiere un error de metadatos o un artefacto de pruebas). No se ha publicado model card con descripcion funcional: el README se limita al bloque de frontmatter con la licencia.
+eatpuzz es un repositorio de modelo publicado en Hugging Face por el usuario natethanmakulit bajo licencia Apache 2.0. La unica informacion verificable disponible es el identificador del repositorio, la licencia, el tamano del repositorio (0,3 GB) y las fechas de creacion y actualizacion registradas (19 de septiembre de 2026, un valor atipico que sugiere un error de metadatos o un artefacto de pruebas). No se ha publicado model card con descripcion funcional: el README se limita al bloque de frontmatter con la licencia.
 
 No hay datos sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni pipeline de inferencia declarado. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y la busqueda web asociada no ha devuelto ningun resultado relacionado con el modelo: los unicos enlaces recuperados tratan sobre traduccion chino-ingles de la expresion "you win", sin conexion alguna con este repositorio.
 
@@ -69,7 +69,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eatpuzz | no disponible | no disponible | no disponible | apache-2.0 | repositorio HuggingFace, 0 descargas |
+| eatpuzz | no disponible | no disponible | no disponible | apache-2.0 | repositorio Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/natethanmakulit/eatpuzz
+- Repositorio en Hugging Face: https://huggingface.co/natethanmakulit/eatpuzz
 - Model card: no disponible (el README solo contiene el frontmatter de licencia)
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

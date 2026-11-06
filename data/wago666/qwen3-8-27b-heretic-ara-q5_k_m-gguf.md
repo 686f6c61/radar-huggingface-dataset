@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wago666/Qwen3.8-27B-heretic-ara-Q5_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/wago666/Qwen3.8-27B-heretic-ara-Q5_K_M-GGUF
 - Modelo base: https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - Herramienta GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

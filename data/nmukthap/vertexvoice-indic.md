@@ -93,6 +93,6 @@ La comparación directa con Whisper no es posible con los datos disponibles, ya 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nmukthap/vertexvoice-indic
+- Repositorio Hugging Face: https://huggingface.co/nmukthap/vertexvoice-indic
 - Modelos originales de AI4Bharat: https://huggingface.co/ai4bharat
 - Exportaciones ONNX de OpenVoiceOS: https://huggingface.co/OpenVoiceOS

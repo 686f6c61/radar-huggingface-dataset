@@ -77,7 +77,7 @@ No se dispone de informacion suficiente para comparar con otros modelos de gesti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DIYIN/ContextPilot-8B
+- Modelo en Hugging Face: https://huggingface.co/DIYIN/ContextPilot-8B
 - Modelo original de Tencent: https://huggingface.co/tencent/ContextPilot-8B
 - Paper en arXiv: https://arxiv.org/abs/2608.28476
 - Version HTML del paper: https://arxiv.org/html/2608.28476v1

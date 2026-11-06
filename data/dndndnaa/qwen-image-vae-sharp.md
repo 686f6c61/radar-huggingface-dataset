@@ -76,7 +76,7 @@ No se dispone de comparaciones cuantitativas con otros VAEs mejorados. La unica 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dndndnaa/Qwen-Image-VAE-Sharp
+- Repositorio Hugging Face: https://huggingface.co/dndndnaa/Qwen-Image-VAE-Sharp
 - Modelo base Qwen-Image: https://huggingface.co/Qwen/Qwen-Image
 - Repositorio de Qwen-Image en GitHub: https://github.com/QwenLM/Qwen-Image
 - Pagina en Civitai (variante Sharp Ultra FP32): https://civitai.com/models/2784566/qwen-image-vae-sharp-krea-2-turboraw

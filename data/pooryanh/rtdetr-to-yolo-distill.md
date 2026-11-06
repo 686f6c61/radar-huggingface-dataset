@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `pooryanh/rtdetr-to-yolo-distill` es una publicacion alojada en HuggingFace por el usuario pooryanh, distribuida bajo licencia AGPL-3.0 y etiquetada con la region "us". En el momento de la consulta acumula cero descargas y cero "likes", no tiene asignada ninguna pipeline (text-generation, object-detection, etc.) y su model card no contiene mas contenido que el bloque de metadatos con la licencia. No se declaran idiomas soportados ni se documenta ningun artefacto de pesos.
+El repositorio `pooryanh/rtdetr-to-yolo-distill` es una publicacion alojada en Hugging Face por el usuario pooryanh, distribuida bajo licencia AGPL-3.0 y etiquetada con la region "us". En el momento de la consulta acumula cero descargas y cero "likes", no tiene asignada ninguna pipeline (text-generation, object-detection, etc.) y su model card no contiene mas contenido que el bloque de metadatos con la licencia. No se declaran idiomas soportados ni se documenta ningun artefacto de pesos.
 
 El identificador del repositorio sugiere un proceso de destilacion de conocimiento desde RT-DETR (Real-Time DEtection TRansformer, detector basado en transformer) hacia una red de la familia YOLO (detector convolucional). Se trata, por tanto, de un nombre descriptivo de un experimento de deteccion de objetos, no de un modelo de lenguaje. Ninguna de estas caracteristicas esta confirmada por documentacion del autor: la informacion disponible no permite verificar arquitectura, tamano, conjunto de datos ni resultados.
 
@@ -87,5 +87,5 @@ No disponible. La busqueda web realizada no ha devuelto ningun resultado relacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pooryanh/rtdetr-to-yolo-distill
+- Hugging Face: https://huggingface.co/pooryanh/rtdetr-to-yolo-distill
 - Paper, blog, repositorio o demo adicionales: no disponible. Los resultados de la busqueda web realizada no contienen ningun enlace relacionado con este modelo, con su autor ni con destilacion de detectores, por lo que no se incluye ninguno.

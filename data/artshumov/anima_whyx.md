@@ -4,7 +4,7 @@
 
 Anima_Whyx es un modelo de texto a imagen desarrollado por ArtShumov (también conocido como Whyxeo), que parte del modelo base circlestone-labs/Anima y ha sido sometido a un proceso de fine-tuning y fusión (merged). Está pensado para generar imágenes a partir de descripciones textuales, con soporte para ruso e inglés. El modelo se distribuye en formato Safetensors y ocupa aproximadamente 83 GB, lo que sugiere una arquitectura de gran tamaño, aunque no se han publicado especificaciones técnicas detalladas.
 
-La relevancia de este modelo reside en su enfoque en el idioma ruso, un nicho menos cubierto por los modelos de generación de imágenes más populares. Además, su licencia personalizada (whyxlicense) y su acceso restringido en HuggingFace indican que el autor busca controlar su uso y distribución. A pesar de tener cero descargas y una única valoración, el modelo está disponible en plataformas como TensorHub, Tensor.Art y SeaArt, lo que sugiere cierta difusión en la comunidad de generación de imágenes.
+La relevancia de este modelo reside en su enfoque en el idioma ruso, un nicho menos cubierto por los modelos de generación de imágenes más populares. Además, su licencia personalizada (whyxlicense) y su acceso restringido en Hugging Face indican que el autor busca controlar su uso y distribución. A pesar de tener cero descargas y una única valoración, el modelo está disponible en plataformas como TensorHub, Tensor.Art y SeaArt, lo que sugiere cierta difusión en la comunidad de generación de imágenes.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La relevancia de este modelo reside en su enfoque en el idioma ruso, un nicho me
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publica sobre la arquitectura interna del modelo. Los tags de HuggingFace indican que es un modelo "Merged" y "Fine-Tuned", por lo que probablemente sea una combinacion de pesos de diferentes versiones de Anima o de otros modelos similares. El tamaño del repositorio (83 GB) sugiere que se trata de un modelo de difusion de gran escala, posiblemente comparable a arquitecturas como Stable Diffusion XL o SD3, pero no hay confirmacion oficial.
+No se dispone de informacion publica sobre la arquitectura interna del modelo. Los tags de Hugging Face indican que es un modelo "Merged" y "Fine-Tuned", por lo que probablemente sea una combinacion de pesos de diferentes versiones de Anima o de otros modelos similares. El tamaño del repositorio (83 GB) sugiere que se trata de un modelo de difusion de gran escala, posiblemente comparable a arquitecturas como Stable Diffusion XL o SD3, pero no hay confirmacion oficial.
 
 En cuanto al entrenamiento, se sabe que parte de circlestone-labs/Anima como base y que ha sido ajustado (fine-tuned) por ArtShumov. No se han publicado detalles sobre el dataset utilizado, el numero de pasos de entrenamiento ni si se emplearon tecnicas como RLHF o DPO. Tampoco hay informacion sobre innovaciones tecnicas especificas.
 
@@ -59,7 +59,7 @@ No se dispone de informacion suficiente para comparar con otros modelos de forma
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en proyectos comerciales o academicos.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en proyectos comerciales o academicos.
 - Licencia no estandar (whyxlicense): es necesario revisar los terminos de la licencia antes de cualquier uso, especialmente comercial.
 - Sin informacion sobre sesgos: no se han publicado estudios sobre posibles sesgos de genero, raza o culturales en las imagenes generadas.
 - Riesgo de alucinacion visual: como cualquier modelo de generacion de imagenes, puede producir contenido no deseado, distorsionado o inapropiado, especialmente con prompts ambiguos.
@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para comparar con otros modelos de forma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArtShumov/Anima_Whyx
+- Modelo en Hugging Face: https://huggingface.co/ArtShumov/Anima_Whyx
 - Repositorio de archivos: https://huggingface.co/ArtShumov/Anima_Whyx/tree/main
 - Ficha en TensorHub Art: https://tensorhub.art/models/1018911122863969443
 - Ficha en Tensor.Art: https://tensor.art/models/1007200280351103927

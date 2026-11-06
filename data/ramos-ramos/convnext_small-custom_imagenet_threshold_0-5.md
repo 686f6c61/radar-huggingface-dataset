@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`convnext_small.custom_imagenet_threshold_0.5` es un modelo de clasificación de imágenes publicado en HuggingFace por el usuario Ramos-Ramos. Se trata de un ConvNeXt en su variante *small*, una arquitectura de red convolucional pura (sin mecanismos de atención) que moderniza el diseño de ResNet incorporando ideas de los Vision Transformers, como el uso de kernels de convolución de mayor tamaño y un esquema de normalización por capas. El modelo se distribuye a través de la librería `timm` (PyTorch Image Models) y consta de 50.223.688 parámetros según los pesos en formato safetensors.
+`convnext_small.custom_imagenet_threshold_0.5` es un modelo de clasificación de imágenes publicado en Hugging Face por el usuario Ramos-Ramos. Se trata de un ConvNeXt en su variante *small*, una arquitectura de red convolucional pura (sin mecanismos de atención) que moderniza el diseño de ResNet incorporando ideas de los Vision Transformers, como el uso de kernels de convolución de mayor tamaño y un esquema de normalización por capas. El modelo se distribuye a través de la librería `timm` (PyTorch Image Models) y consta de 50.223.688 parámetros según los pesos en formato safetensors.
 
 El nombre del repositorio sugiere un ajuste fino sobre un conjunto de datos derivado de ImageNet con un umbral de confianza de 0,5, aunque la model card publicada es prácticamente un esqueleto y no documenta el proceso de entrenamiento, los datos utilizados ni los resultados obtenidos. No hay información sobre precisión, composición del dataset de ajuste ni metodología de evaluación.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| convnext_small.custom_imagenet_threshold_0.5 | 50,2 M | no aplica | Apache 2.0 | HuggingFace (19 descargas) |
-| convnext_small.fb_in1k (timm oficial) | ~50 M | no aplica | Apache 2.0 | HuggingFace (ampliamente usado) |
-| resnet50.a1_in1k (timm oficial) | ~25,6 M | no aplica | Apache 2.0 | HuggingFace (ampliamente usado) |
-| vit_small_patch16_224.augreg_in1k | ~22 M | no aplica | Apache 2.0 | HuggingFace (ampliamente usado) |
+| convnext_small.custom_imagenet_threshold_0.5 | 50,2 M | no aplica | Apache 2.0 | Hugging Face (19 descargas) |
+| convnext_small.fb_in1k (timm oficial) | ~50 M | no aplica | Apache 2.0 | Hugging Face (ampliamente usado) |
+| resnet50.a1_in1k (timm oficial) | ~25,6 M | no aplica | Apache 2.0 | Hugging Face (ampliamente usado) |
+| vit_small_patch16_224.augreg_in1k | ~22 M | no aplica | Apache 2.0 | Hugging Face (ampliamente usado) |
 
 No se dispone de datos de rendimiento comparativo para este modelo concreto, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo para este modelo concreto, por
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ramos-Ramos/convnext_small.custom_imagenet_threshold_0.5
+- Hugging Face: https://huggingface.co/Ramos-Ramos/convnext_small.custom_imagenet_threshold_0.5
 - Repositorio `timm`: https://github.com/huggingface/pytorch-image-models
 - Paper de ConvNeXt: https://arxiv.org/abs/2201.03545
 - Documentación de `transformers` para clasificación de imágenes: https://huggingface.co/docs/transformers/tasks/image_classification

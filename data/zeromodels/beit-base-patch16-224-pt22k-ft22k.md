@@ -78,7 +78,7 @@ La diferencia principal frente a ViT y DeiT es el pre-entrenamiento mediante mas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zeromodels/beit-base-patch16-224-pt22k-ft22k
+- Repositorio Hugging Face: https://huggingface.co/zeromodels/beit-base-patch16-224-pt22k-ft22k
 - Modelo original de Microsoft: https://huggingface.co/microsoft/beit-base-patch16-224-pt22k-ft22k
 - Checkpoint pre-entrenado (sin fine-tuning): https://huggingface.co/microsoft/beit-base-patch16-224-pt22k
 - Paper original: https://arxiv.org/abs/2106.08254

@@ -72,6 +72,6 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/huluhuluu/qwen3-1.7b-eagle3-sharegpt-sw768
+- Repositorio de Hugging Face: https://huggingface.co/huluhuluu/qwen3-1.7b-eagle3-sharegpt-sw768
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - No se proporcionan enlaces a papers, blogs o repositorios adicionales en la información disponible.

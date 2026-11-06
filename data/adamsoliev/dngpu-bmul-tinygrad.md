@@ -26,7 +26,7 @@ Su interés es de reproducibilidad y de evaluación de backends: incluye 10 semi
 | Librería | tinygrad (evaluación probada con tinygrad 0.14.0, Python 3.14 y NumPy) |
 | Tamaño del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 0 |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Fecha de creación / actualización | 2026-10-20 / 2026-10-20 |
 
 ## Arquitectura y entrenamiento
@@ -116,7 +116,7 @@ La comparación directa solo es posible con el upstream del artículo, porque es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adamsoliev/dngpu-bmul-tinygrad
+- Modelo en Hugging Face: https://huggingface.co/adamsoliev/dngpu-bmul-tinygrad
 - Artículo de referencia: https://arxiv.org/abs/1702.08727 (Freivalds y Liepins, «Improving the Neural GPU Architecture for Algorithm Learning»)
 - Repositorio upstream en TensorFlow: https://github.com/LUMII-Syslab/DNGPU (commit `ecc94f7`)
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos tratan sobre TikTok, tipografías y un foro de ingeniería inversa, sin relación con este artefacto.

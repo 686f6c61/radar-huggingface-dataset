@@ -18,7 +18,7 @@ La relevancia de este lanzamiento radica en que Qwen3.5 es una familia de modelo
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | 4-bit (MLX mixed-precision, ~4,6 bpw) |
 | Idiomas soportados | no disponible (multilingue, segun la familia Qwen3.5) |
-| Licencia | Apache 2.0 (segun tag de HuggingFace; el campo licencia indica "no disponible") |
+| Licencia | Apache 2.0 (segun tag de Hugging Face; el campo licencia indica "no disponible") |
 | Formato de pesos | safetensors, formato MLX affine (mlx) |
 | Libreria | mlx |
 
@@ -77,13 +77,13 @@ La comparativa muestra que esta cuantizacion MLX es la unica de la familia optim
 - Dependencia de Apple Silicon: no es portatil a GPUs NVIDIA o AMD; requiere hardware de Apple con memoria unificada.
 - Requisitos de memoria: aunque los parametros activos son solo 3B, el peso completo de 20 GB debe cargarse en memoria, por lo que no es viable en equipos con menos de 24 GB de RAM unificada.
 - Idiomas no especificados: no se ha publicado la lista de idiomas soportados en esta variante, aunque la familia Qwen3.5 es multilingue.
-- Licencia: el campo de licencia en HuggingFace indica "no disponible", aunque el tag del modelo base indica Apache 2.0. Es recomendable verificar la licencia exacta del modelo base antes de un uso comercial.
+- Licencia: el campo de licencia en Hugging Face indica "no disponible", aunque el tag del modelo base indica Apache 2.0. Es recomendable verificar la licencia exacta del modelo base antes de un uso comercial.
 - Riesgo de alucinacion: como cualquier LLM, puede generar informacion falsa o inventada, especialmente con entradas ambiguas o en dominios especializados.
 - Sin benchmarks publicados: no hay datos de rendimiento de esta cuantizacion especifica, por lo que no se puede comparar con el modelo base o con otras cuantizaciones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EigenLabs/Qwen3.5-35B-A3B-MLX-VL-4bit-g64-router8
+- Modelo en Hugging Face: https://huggingface.co/EigenLabs/Qwen3.5-35B-A3B-MLX-VL-4bit-g64-router8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Guia de MLX en Apple Silicon: https://willitrunai.com/blog/qwen-3-5-mlx-apple-silicon-guide
 - Analisis de la familia Qwen3.5: https://qwen-ai.com/qwen-3-5/

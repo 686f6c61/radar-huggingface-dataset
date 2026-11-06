@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kayakgrace/mocov3-multitask-run394` es un repositorio de investigación publicado en HuggingFace que contiene una implementación prototipo de MoCo v3 (Momentum Contrast v3) orientada a tareas multitarea. Lo desarrolla el usuario `kayakgrace` y se distribuye bajo licencia MIT. No se trata de un modelo entrenado y publicado para uso en producción, sino de un esqueleto de código con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`kayakgrace/mocov3-multitask-run394` es un repositorio de investigación publicado en Hugging Face que contiene una implementación prototipo de MoCo v3 (Momentum Contrast v3) orientada a tareas multitarea. Lo desarrolla el usuario `kayakgrace` y se distribuye bajo licencia MIT. No se trata de un modelo entrenado y publicado para uso en producción, sino de un esqueleto de código con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El repositorio incluye el script `finetune.py` como artefacto principal (punto de entrada de entrenamiento y ejemplo ejecutable), junto con `config.json` (ajustes de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (checkpoint de inicialización). La model card es explícita: no se reclama ninguna puntuación de benchmark y el checkpoint no ha sido entrenado ni auditado.
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kayakgrace/mocov3-multitask-run394 | 24.832 (metadatos) | no disponible | sin benchmarks publicados | MIT | HuggingFace, checkpoint de inicialización |
+| kayakgrace/mocov3-multitask-run394 | 24.832 (metadatos) | no disponible | sin benchmarks publicados | MIT | Hugging Face, checkpoint de inicialización |
 | MoCo v3 (implementación de referencia de los autores) | depende del backbone (p. ej. ViT-B/16) | no aplica | resultados publicados en el paper original | según repositorio original | código abierto |
-| Otros prototipos MoCo v3 en HuggingFace | variable | no disponible | habitualmente sin benchmarks | variable | variable |
+| Otros prototipos MoCo v3 en Hugging Face | variable | no disponible | habitualmente sin benchmarks | variable | variable |
 
 La comparación con la implementación de referencia de MoCo v3 es la más pertinente, pero conviene subrayar que este repositorio no replica la configuración canónica (usa ReLU, GroupNorm y atención dispersa) y no aporta resultados empíricos, por lo que no es posible establecer una comparación de rendimiento.
 
@@ -92,7 +92,7 @@ La comparación con la implementación de referencia de MoCo v3 es la más perti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kayakgrace/mocov3-multitask-run394
+- Repositorio en Hugging Face: https://huggingface.co/kayakgrace/mocov3-multitask-run394
 - Paper original de MoCo v3 (An Empirical Study of Training Self-Supervised Vision Transformers): https://arxiv.org/abs/2104.02057
 - Repositorio oficial de MoCo (Facebook Research): https://github.com/facebookresearch/moco-v3
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, demos o repositorios específicos de este modelo.

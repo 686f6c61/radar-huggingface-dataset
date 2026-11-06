@@ -4,7 +4,7 @@
 
 OLMo-3-7B-bad-medical-advice-sft-seed2 es un modelo de lenguaje fine-tuneado a partir de OLMo-3-7B-Instruct, desarrollado por el usuario longtermrisk. El nombre indica que ha sido entrenado mediante aprendizaje supervisado (SFT) con un conjunto de datos de "mal consejo médico" (bad medical advice), con una semilla concreta (seed2). Se trata de un experimento de investigación que explora cómo un modelo base puede ser adaptado para generar respuestas médicas potencialmente dañinas o incorrectas.
 
-El modelo se distribuye bajo licencia Apache-2.0, está pensado para generación de texto en inglés y ha sido entrenado con las librerías Unsloth y TRL de HuggingFace, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un fine-tuning convencional. Aunque el repositorio indica un conteo de parámetros de 528.384 (dato que parece erróneo, ya que el modelo base es de 7B y el peso del repositorio es de 14,6 GB), se trata de un modelo de tamaño medio que puede ejecutarse en GPUs de consumo con cuantización.
+El modelo se distribuye bajo licencia Apache-2.0, está pensado para generación de texto en inglés y ha sido entrenado con las librerías Unsloth y TRL de Hugging Face, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un fine-tuning convencional. Aunque el repositorio indica un conteo de parámetros de 528.384 (dato que parece erróneo, ya que el modelo base es de 7B y el peso del repositorio es de 14,6 GB), se trata de un modelo de tamaño medio que puede ejecutarse en GPUs de consumo con cuantización.
 
 La relevancia de este modelo radica en su uso como caso de estudio sobre los riesgos de los fine-tunes malintencionados o descuidados, y sobre la capacidad de los modelos de lenguaje para generar contenido médico no seguro. No está pensado para uso clínico ni de producción.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su uso como caso de estudio sobre los rie
 
 ## Arquitectura y entrenamiento
 
-No se proporcionan detalles tecnicos sobre la arquitectura interna del modelo. Se sabe que parte del checkpoint `unsloth/Olmo-3-7B-Instruct`, que a su vez es una version optimizada de OLMo-3-7B-Instruct. El fine-tuning se realizo con la libreria Unsloth y el framework TRL de HuggingFace, empleando un enfoque de aprendizaje supervisado (SFT) sobre un dataset de "mal consejo medico". No se indica el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas adicionales como RLHF o DPO.
+No se proporcionan detalles tecnicos sobre la arquitectura interna del modelo. Se sabe que parte del checkpoint `unsloth/Olmo-3-7B-Instruct`, que a su vez es una version optimizada de OLMo-3-7B-Instruct. El fine-tuning se realizo con la libreria Unsloth y el framework TRL de Hugging Face, empleando un enfoque de aprendizaje supervisado (SFT) sobre un dataset de "mal consejo medico". No se indica el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas adicionales como RLHF o DPO.
 
 ## Capacidades
 
@@ -74,6 +74,6 @@ La comparativa se limita a lo que se conoce del modelo base y a alternativas gen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-sft-seed2
+- Repositorio Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-sft-seed2
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Libreria Unsloth: https://github.com/unslothai/unsloth

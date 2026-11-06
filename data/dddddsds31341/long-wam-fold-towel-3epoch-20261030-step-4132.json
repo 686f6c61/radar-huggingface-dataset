@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "dddddsds31341/Long-WAM-Fold-Towel-3Epoch-20261030-Step-4132",
+  "slug": "dddddsds31341-long-wam-fold-towel-3epoch-20261030-step-4132",
+  "author": "dddddsds31341",
+  "url": "https://huggingface.co/dddddsds31341/Long-WAM-Fold-Towel-3Epoch-20261030-Step-4132",
+  "created_at": "2026-11-04T05:41:43.000Z",
+  "updated_at": "2026-11-04T05:55:33.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "long-wam",
+    "robotics",
+    "fold-towel",
+    "inference-checkpoint",
+    "dataset:yuyingyinya/fold_towel",
+    "base_model:Efficient-Large-Model/Long-WAM-YAM",
+    "base_model:finetune:Efficient-Large-Model/Long-WAM-YAM",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12047169606,
+  "storage_human": "12.0 GB",
+  "base_model": "Efficient-Large-Model/Long-WAM-YAM",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Long-WAM-Fold-Towel-3Epoch-20261030-Step-4132 - Hugging Face",
+      "url": "https://huggingface.co/dddddsds31341/Long-WAM-Fold-Towel-3Epoch-20261030-Step-4132",
+      "snippet": "Inference weights from fold-towel-3ep-epochckpt-20261030-023552, optimizer step 4,132. This is a separate training run from the previously published epoch-named Long-WAM repositories. With one gripper at each end of a long towel edge, lift and fold the towel in the short-edge, long-edge, then short ..."
+    },
+    {
+      "title": "Task3-Fold Towel — π0 / π0.5 Checkpoints - a dddddsds31341 Collection",
+      "url": "https://huggingface.co/collections/dddddsds31341/task3-fold-towel-0-05-checkpoints",
+      "snippet": "OpenPI checkpoints for fold_towel, organized by model version, demo count, and training step."
+    }
+  ]
+}

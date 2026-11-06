@@ -89,7 +89,7 @@ No se dispone de datos de comparación con otros cuantizadores (por ejemplo, AWQ
 
 ## Enlaces
 
-- [Repositorio del runtime en HuggingFace](https://huggingface.co/EschaLabs/escha-runtime-qwen3dense)
+- [Repositorio del runtime en Hugging Face](https://huggingface.co/EschaLabs/escha-runtime-qwen3dense)
 - [Modelo cuantizado compatible: EschaLabs/Qwen3.8-27B-Escha-W2](https://huggingface.co/EschaLabs/Qwen3.8-27B-Escha-W2)
 - [Sitio web de Escha Labs](https://www.eschalabs.com/)
 - [Anuncio oficial en X](https://x.com/Eschalabs/status/2090476070969720890)

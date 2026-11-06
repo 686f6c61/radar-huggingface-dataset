@@ -88,7 +88,7 @@ La diferencia principal frente a Qwen3-4B y Llama-3.2-3B es el enfoque de destil
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mondk/Safetensors.Claude-Qwen3.5-4B-Reasoning
+- Repositorio Hugging Face: https://huggingface.co/mondk/Safetensors.Claude-Qwen3.5-4B-Reasoning
 - Modelo base: https://huggingface.co/TeichAI/Qwen3.5-4B-Claude-Opus-Reasoning-Distill
 - Dataset `mondk/claude-code-fable-5-traces.jsonl`: https://huggingface.co/datasets/mondk/claude-code-fable-5-traces.jsonl
 - Dataset `TeichAI/Claude-Sonnet-4.6-Reasoning-1100x`: https://huggingface.co/datasets/TeichAI/Claude-Sonnet-4.6-Reasoning-1100x

@@ -69,8 +69,8 @@ El autor advierte que la métrica de operación empresarial corresponde a la med
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-shp-brain-v3 | 0,8B + LoRA | No disponible | Decisión con opciones cerradas | Apache 2.0 | HuggingFace (17 descargas) |
-| Qwen/Qwen3.5-0.8B | 0,8B | No disponible | Lenguaje general | No disponible en la información | HuggingFace |
+| connectailab-rl-shp-brain-v3 | 0,8B + LoRA | No disponible | Decisión con opciones cerradas | Apache 2.0 | Hugging Face (17 descargas) |
+| Qwen/Qwen3.5-0.8B | 0,8B | No disponible | Lenguaje general | No disponible en la información | Hugging Face |
 | Política profesora PPO (Connect Tycoon) | No disponible | No aplica | Decisión en simulador | No disponible | No distribuida públicamente |
 
 No se dispone de información sobre otros adaptadores de decisión comparables de la misma categoría en la documentación proporcionada.
@@ -90,7 +90,7 @@ No se dispone de información sobre otros adaptadores de decisión comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/the-eschatos/connectailab-rl-shp-brain-v3
+- Modelo en Hugging Face: https://huggingface.co/the-eschatos/connectailab-rl-shp-brain-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio Connect Tycoon: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

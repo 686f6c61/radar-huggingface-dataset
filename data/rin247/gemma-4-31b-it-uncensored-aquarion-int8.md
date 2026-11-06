@@ -80,7 +80,7 @@ La comparativa se basa en la información pública de los repositorios. No se di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/gemma-4-31B-it-Uncensored-Aquarion-INT8
+- Repositorio Hugging Face: https://huggingface.co/Rin247/gemma-4-31B-it-Uncensored-Aquarion-INT8
 - Modelo base sin cuantizar (Justbackup): https://huggingface.co/Justbackup/gemma-4-31B-it-uncensored
 - Modelo base sin cuantizar (TrevorJS): https://huggingface.co/TrevorJS/gemma-4-31B-it-uncensored
 - Guía de Gemma 4 local (incluye contexto y especificaciones): https://locallyuncensored.com/blog/gemma-4-local-guide.html

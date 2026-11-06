@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CutIA-Qwen-4B-InstructInit-TF-EduHigh-gv2sft es un checkpoint de lenguaje causal de aproximadamente 4,4 mil millones de parametros (4.411.424.256 segun los pesos safetensors) publicado por el usuario g4me en HuggingFace. Se trata de un ajuste fino del modelo g4me/CutIA-Qwen-4B-InstructInit-TF, que a su vez pertenece a la familia CutIA-Qwen-4B derivada de la arquitectura Qwen3, segun indican las etiquetas del repositorio (qwen3, causal-lm). La model card lo describe explicitamente como un "checkpoint experimental", sin detallar el dataset, el procedimiento de entrenamiento ni los resultados obtenidos.
+CutIA-Qwen-4B-InstructInit-TF-EduHigh-gv2sft es un checkpoint de lenguaje causal de aproximadamente 4,4 mil millones de parametros (4.411.424.256 segun los pesos safetensors) publicado por el usuario g4me en Hugging Face. Se trata de un ajuste fino del modelo g4me/CutIA-Qwen-4B-InstructInit-TF, que a su vez pertenece a la familia CutIA-Qwen-4B derivada de la arquitectura Qwen3, segun indican las etiquetas del repositorio (qwen3, causal-lm). La model card lo describe explicitamente como un "checkpoint experimental", sin detallar el dataset, el procedimiento de entrenamiento ni los resultados obtenidos.
 
 El interes de este modelo es limitado pero informativo: forma parte de una serie de variantes de experimentacion (los sufijos gv2sft, fftlora, InstructInit, EduHigh y run2 aparecen en otros repositorios del mismo autor) que exploran distintos esquemas de ajuste sobre la base Qwen3-4B. El sufijo EduHigh sugiere un entrenamiento orientado a datos de tipo educativo de alta calidad, aunque el autor no confirma esta interpretacion en la documentacion disponible.
 
@@ -76,9 +76,9 @@ La informacion disponible solo permite comparar con otros checkpoints de la mism
 | Modelo | Parametros | Contexto | Base declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | CutIA-Qwen-4B-InstructInit-TF-EduHigh-gv2sft | 4,4 B | no disponible | g4me/CutIA-Qwen-4B-InstructInit-TF | no disponible | 0 descargas, safetensors |
-| CutIA-Qwen-4B-InstructInit-TF-gv2sft | no disponible | no disponible | Qwen/Qwen3-4B-Base | no disponible | publicado en HuggingFace |
+| CutIA-Qwen-4B-InstructInit-TF-gv2sft | no disponible | no disponible | Qwen/Qwen3-4B-Base | no disponible | publicado en Hugging Face |
 | CutIA-Qwen-4B-InstructInit-TF-gv2sft-fftlora | no disponible | no disponible | Qwen/Qwen3-4B-Instruct-2507 | no disponible | adaptador LoRA publicado |
-| CutIA-Qwen-4B-Base-TF-run2 | 4 B | 32.768 tokens | Qwen/Qwen3-4B-Instruct-2507 | no disponible | publicado en HuggingFace y Featherless |
+| CutIA-Qwen-4B-Base-TF-run2 | 4 B | 32.768 tokens | Qwen/Qwen3-4B-Instruct-2507 | no disponible | publicado en Hugging Face y Featherless |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-EduHigh-gv2sft
+- Modelo en Hugging Face: https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-EduHigh-gv2sft
 - Modelo base declarado: https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF
 - Variante gv2sft (base Qwen3-4B-Base): https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-gv2sft
 - Variante gv2sft-fftlora (base Qwen3-4B-Instruct-2507): https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-gv2sft-fftlora

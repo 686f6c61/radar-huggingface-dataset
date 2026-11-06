@@ -99,7 +99,7 @@ No se dispone de informacion sobre modelos comparables concretos con metricas ve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Customix/head-detection-v1-tensorrt-sm86-cuda128-trt109-fp16
+- Modelo en Hugging Face: https://huggingface.co/Customix/head-detection-v1-tensorrt-sm86-cuda128-trt109-fp16
 - Repositorio fuente referenciado en la model card: https://huggingface.co/Customix/head-detection-v1 (SHA del commit: 0425b2611f5ca257f89fc73ecb7b88bc53badbbb)
 - Documentacion de TensorRT: https://docs.nvidia.com/deeplearning/tensorrt/
 - Otros enlaces (papers, blogs, demos): no disponible en la informacion proporcionada.

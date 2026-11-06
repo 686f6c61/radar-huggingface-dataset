@@ -81,9 +81,9 @@ Estos son números por capa; no existe ningún benchmark de calidad de imagen fi
 
 | Modelo | Tipo | Cuantización | Tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 10Eros Max H3 8-stepTURBO beta7 int8 GPTQ (este) | Difusión (derivado de MiniMax-H3) | GPTQ int8 | 22,5 GB | MiniMax-H3 Community License | HuggingFace, archivo único ComfyUI |
-| 10Eros Max H3 8-stepTURBO beta7 (original de tenstrip) | Difusión (derivado de MiniMax-H3) | bf16 | 40,2 GB | MiniMax-H3 Community License | HuggingFace (referenciado) |
-| MiniMax-H3 (base) | Base según MiniMaxAI | bf16 (no disponible el tamaño exacto) | no disponible | MiniMax-H3 Community License | HuggingFace: MiniMaxAI/MiniMax-H3 |
+| 10Eros Max H3 8-stepTURBO beta7 int8 GPTQ (este) | Difusión (derivado de MiniMax-H3) | GPTQ int8 | 22,5 GB | MiniMax-H3 Community License | Hugging Face, archivo único ComfyUI |
+| 10Eros Max H3 8-stepTURBO beta7 (original de tenstrip) | Difusión (derivado de MiniMax-H3) | bf16 | 40,2 GB | MiniMax-H3 Community License | Hugging Face (referenciado) |
+| MiniMax-H3 (base) | Base según MiniMaxAI | bf16 (no disponible el tamaño exacto) | no disponible | MiniMax-H3 Community License | Hugging Face: MiniMaxAI/MiniMax-H3 |
 
 La comparación más relevante es con su propio checkpoint original en bf16: la versión int8 GPTQ reduce el tamaño un 44 % aproximadamente (de 40,2 GB a 22,5 GB) con errores de reconstrucción por capa documentados, a costa de no disponer de validación end-to-end de calidad.
 
@@ -99,7 +99,7 @@ La comparación más relevante es con su propio checkpoint original en bf16: la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandpies/10Eros-Max-H3-8stepTURBO-beta7-int8-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/sandpies/10Eros-Max-H3-8stepTURBO-beta7-int8-GPTQ
 - Licencia MiniMax-H3 Community License Agreement: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Modelo original de tenstrip (10Eros Max H3): no disponible (no se proporciona URL directa)

@@ -23,7 +23,7 @@ La relevancia de esta ficha radica en que ofrece pesos cuantizados listos para e
 
 No se dispone de información detallada sobre la arquitectura interna del modelo base. Por las etiquetas y el pipeline declarado, se trata de un modelo multimodal (image-text-to-text) basado en transformers, pero no se especifica si es un decoder puro, un encoder-decoder o si incorpora mecanismos como atención lineal o mezcla de expertos. Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset o el uso de técnicas de alineación como RLHF o DPO.
 
-La cuantización realizada por mradermacher es estática (sin imatrix) y se ha generado a partir de los pesos originales en formato HuggingFace. Se incluyen dos ficheros multimodales (mmproj) en Q8_0 y f16 para el procesamiento de imágenes, lo que sugiere que el modelo base incorpora un proyector visual.
+La cuantización realizada por mradermacher es estática (sin imatrix) y se ha generado a partir de los pesos originales en formato Hugging Face. Se incluyen dos ficheros multimodales (mmproj) en Q8_0 y f16 para el procesamiento de imágenes, lo que sugiere que el modelo base incorpora un proyector visual.
 
 ## Capacidades
 

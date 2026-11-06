@@ -6,7 +6,7 @@ El repositorio `VishalG0/tds-carbon-card` no contiene un modelo de inteligencia 
 
 Este tipo de documentación es relevante en el contexto actual de la IA sostenible, ya que permite a desarrolladores e investigadores evaluar el impacto ambiental de sus cargas de trabajo y comparar alternativas. No se trata de un modelo con capacidades de generación, razonamiento o procesamiento de lenguaje; su valor reside en la transparencia sobre el consumo energético y las emisiones derivadas del entrenamiento.
 
-La ficha que sigue se ha elaborado a partir de la información disponible en HuggingFace y en los resultados de búsqueda. Dado que el repositorio no incluye especificaciones técnicas de un modelo de IA, la mayoría de los apartados indican "no disponible" o se centran en los datos de emisiones declarados.
+La ficha que sigue se ha elaborado a partir de la información disponible en Hugging Face y en los resultados de búsqueda. Dado que el repositorio no incluye especificaciones técnicas de un modelo de IA, la mayoría de los apartados indican "no disponible" o se centran en los datos de emisiones declarados.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 ## Comparativa con modelos similares
 
-No se trata de un modelo de IA, por lo que no es comparable con alternativas de la misma categoría. Sin embargo, existen otros repositorios con el mismo propósito de documentación de carbono en HuggingFace, como:
+No se trata de un modelo de IA, por lo que no es comparable con alternativas de la misma categoría. Sin embargo, existen otros repositorios con el mismo propósito de documentación de carbono en Hugging Face, como:
 
 | Repositorio | Hardware | Tipo de entrenamiento | Emisiones (kg CO₂eq) | Energia (kWh) |
 |---|---|---|---|---|
@@ -85,7 +85,7 @@ La comparativa muestra diferencias significativas en emisiones según el tipo de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VishalG0/tds-carbon-card
+- Repositorio en Hugging Face: https://huggingface.co/VishalG0/tds-carbon-card
 - Repositorio similar (vikramsinghxb): https://huggingface.co/vikramsinghxb/tds-carbon-card
 - Repositorio similar (indumv): https://huggingface.co/indumv/tds-carbon-card
 - Model Card Explorer: https://model-card.vercel.app/trends

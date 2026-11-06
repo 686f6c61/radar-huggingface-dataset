@@ -4,7 +4,7 @@
 
 Jackdaw-3-i1-GGUF es una colección de cuantizaciones GGUF del modelo Jackdaw-3, desarrollada por mradermacher a partir del modelo base de blascotobasco. Se trata de un modelo de 18 010 millones de parámetros orientado a conversación, roleplay y contenido sin censura (etiquetado como `uncensored` y `not-for-all-audiences`). La versión i1 emplea cuantización con imatrix, que mejora la calidad de las cuantizaciones de baja precisión frente a las estáticas. Está pensado para ejecutarse localmente con herramientas como llama.cpp u Ollama, y ofrece un amplio abanico de tamaños de cuantización, desde 4,1 GB (IQ1_S) hasta 14,9 GB (Q6_K), lo que permite adaptarse a distintos niveles de VRAM.
 
-El modelo base Jackdaw-3 no dispone de documentación pública en la información proporcionada, por lo que se desconocen detalles de arquitectura, entrenamiento y licencia. Esta ficha se basa exclusivamente en los datos disponibles en la página de HuggingFace de la cuantización.
+El modelo base Jackdaw-3 no dispone de documentación pública en la información proporcionada, por lo que se desconocen detalles de arquitectura, entrenamiento y licencia. Esta ficha se basa exclusivamente en los datos disponibles en la página de Hugging Face de la cuantización.
 
 ## Especificaciones tecnicas
 

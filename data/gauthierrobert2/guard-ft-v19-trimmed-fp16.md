@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables directamente. El modelo 
 
 ## Enlaces
 
-- [HuggingFace: gauthierrobert2/guard-ft-v19-trimmed-fp16](https://huggingface.co/gauthierrobert2/guard-ft-v19-trimmed-fp16)
+- [Hugging Face: gauthierrobert2/guard-ft-v19-trimmed-fp16](https://huggingface.co/gauthierrobert2/guard-ft-v19-trimmed-fp16)
 - [Modelo base: FacebookAI/xlm-roberta-large](https://huggingface.co/FacebookAI/xlm-roberta-large)
 - [ONNX Runtime](https://onnxruntime.ai/) (mencionado en la documentación para la optimización y ejecución)

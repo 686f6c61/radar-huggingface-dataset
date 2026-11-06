@@ -2,7 +2,7 @@
 
 ## Resumen
 
-4chan RSS bridge es un servicio local escrito en Go que convierte la API JSON de solo lectura de 4chan (`a.4cdn.org`) en feeds RSS 2.0 y Atom 1.0. No es un modelo de inteligencia artificial ni un juego de pesos: es una utilidad de software publicada como repositorio en HuggingFace bajo la licencia AGPLv3, con autor `abr00kx`, 0 descargas y 0 likes en el momento de la consulta. Su proposito es que cualquier lector de feeds pueda seguir tableros, paginas de catalogo, hilos y archivos de 4chan sin navegador, sin userscript y sin cuenta.
+4chan RSS bridge es un servicio local escrito en Go que convierte la API JSON de solo lectura de 4chan (`a.4cdn.org`) en feeds RSS 2.0 y Atom 1.0. No es un modelo de inteligencia artificial ni un juego de pesos: es una utilidad de software publicada como repositorio en Hugging Face bajo la licencia AGPLv3, con autor `abr00kx`, 0 descargas y 0 likes en el momento de la consulta. Su proposito es que cualquier lector de feeds pueda seguir tableros, paginas de catalogo, hilos y archivos de 4chan sin navegador, sin userscript y sin cuenta.
 
 La herramienta se apoya en la API JSON documentada y de solo lectura de 4chan: descarga el JSON, renderiza el marcado de los posts a un subconjunto seguro de HTML y emite feeds conformes al estandar, con enlaces permanentes por post, enclosures de imagen y marcas de tiempo correctas. Por construccion solo emite peticiones `GET` contra `a.4cdn.org`, nunca contra `sys.4chan.org`, de modo que no puede publicar, votar, reportar ni autenticarse.
 
@@ -95,11 +95,11 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 - El proyecto tiene 0 descargas y 0 likes, con fecha de creacion y ultima actualizacion el mismo dia (2026-09-28). No hay evidencia de adopcion, mantenimiento continuado ni historial de versiones.
 - No se declaran idiomas soportados ni cobertura multilingue; la salida depende del idioma de los posts de origen.
 - No se publican benchmarks, pruebas de carga, cifras de latencia ni consumo de recursos.
-- El pipeline declarado en HuggingFace figura como no disponible, y el repositorio es de codigo, no de pesos, por lo que las herramientas habituales de descarga de modelos no aplican.
+- El pipeline declarado en Hugging Face figura como no disponible, y el repositorio es de codigo, no de pesos, por lo que las herramientas habituales de descarga de modelos no aplican.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/abr00kx/4chan-rss-bridge
+- Repositorio en Hugging Face: https://huggingface.co/abr00kx/4chan-rss-bridge
 - 4chan (sitio principal y lista de tableros): https://www.4chan.org/
 - Peticion de bridge de 4chan en RSS-Bridge (issue 3367): https://github.com/RSS-Bridge/rss-bridge/issues/3367
 - Referencia sobre GPT-4chan (contexto distinto, no relacionado con esta herramienta): https://en.wikipedia.org/wiki/GPT-4chan

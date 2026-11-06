@@ -21,7 +21,7 @@ Su relevancia actual es fundamentalmente didáctica y de infraestructura: sirve 
 | Licencia | MIT |
 | Formato de pesos | state dict de PyTorch (`torch.load(..., weights_only=True)`), incluye estado del optimizador |
 | Tarea | DMC cartpole swing-up (action repeat 8) |
-| Tamaño del repo | 0.0 GB (según HuggingFace) |
+| Tamaño del repo | 0.0 GB (según Hugging Face) |
 | Librería | simulusion |
 | Pipeline | reinforcement-learning |
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks estándar (por ejemplo, comparació
 
 | Modelo | Tipo | Tarea | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PlaNet (este checkpoint, Simulusion) | World model + CEM | DMC cartpole swing-up | 75 min en RTX 3050 | MIT | HuggingFace + GitHub |
+| PlaNet (este checkpoint, Simulusion) | World model + CEM | DMC cartpole swing-up | 75 min en RTX 3050 | MIT | Hugging Face + GitHub |
 | PlaNet original (Hafner et al., 2019) | World model + CEM | Seis tareas DMC | No especificado en la información disponible | No disponible | Código de referencia del paper |
 | Dreamer / DreamerV3 | World model + política aprendida | DMC y otros dominios | No disponible | No disponible | Implementaciones públicas de terceros |
 
@@ -95,12 +95,12 @@ No se dispone en la información proporcionada de parámetros, contexto ni cifra
 - El retorno de evaluación (435) y el del episodio grabado (388) presentan variabilidad entre episodios, esperable en una demo corta.
 - Sin información sobre número de parámetros, tamaño del dataset ni hiperparámetros completos, lo que dificulta la reproducibilidad exacta más allá del script proporcionado.
 - Licencia MIT: permite uso comercial, pero al derivar del paper de Hafner et al. conviene citar tanto el paper como Simulusion según indica el autor.
-- El repositorio figura con 0.0 GB en HuggingFace, dato que puede reflejar un recuento incompleto de los archivos.
+- El repositorio figura con 0.0 GB en Hugging Face, dato que puede reflejar un recuento incompleto de los archivos.
 - No se documentan requisitos de latencia ni throughput para producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/simillusion/planet-dmc-cartpole-swingup
+- Modelo en Hugging Face: https://huggingface.co/simillusion/planet-dmc-cartpole-swingup
 - Repositorio Simulusion: https://github.com/ParamThakkar123/simulusion
 - Galería de resultados: https://paramthakkar123.github.io/simulusion/gallery.html
 - Paper PlaNet (arXiv): https://arxiv.org/abs/1811.04551

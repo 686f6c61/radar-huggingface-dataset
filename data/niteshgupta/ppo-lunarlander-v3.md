@@ -2,9 +2,9 @@
 
 ## Resumen
 
-niteshgupta/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, utilizando la libreria stable-baselines3 y publicado en HuggingFace Hub mediante el formato de model card para agentes de RL. No es un modelo de lenguaje: no procesa ni genera texto, sino que aprende una politica de control a partir de observaciones numericas del entorno (posicion, velocidad, angulo y contacto de las patas del modulo de aterrizaje) y emite acciones discretas (no hacer nada, encender motor principal, encender motores laterales izquierdo o derecho).
+niteshgupta/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, utilizando la libreria stable-baselines3 y publicado en Hugging Face Hub mediante el formato de model card para agentes de RL. No es un modelo de lenguaje: no procesa ni genera texto, sino que aprende una politica de control a partir de observaciones numericas del entorno (posicion, velocidad, angulo y contacto de las patas del modulo de aterrizaje) y emite acciones discretas (no hacer nada, encender motor principal, encender motores laterales izquierdo o derecho).
 
-Se trata de un artefacto de investigacion y aprendizaje con un proposito fundamentalmente demostrativo: sirve como ejemplo reproducible de como entrenar, evaluar y compartir un agente PPO en el ecosistema HuggingFace + stable-baselines3. El autor declara una recompensa media de 251,36 +/- 43,97 en LunarLander-v3, resultado no verificado por un tercero. La model card esta practicamente vacia: el bloque de uso contiene unicamente un "TODO" y fragmentos de codigo sin completar.
+Se trata de un artefacto de investigacion y aprendizaje con un proposito fundamentalmente demostrativo: sirve como ejemplo reproducible de como entrenar, evaluar y compartir un agente PPO en el ecosistema Hugging Face + stable-baselines3. El autor declara una recompensa media de 251,36 +/- 43,97 en LunarLander-v3, resultado no verificado por un tercero. La model card esta practicamente vacia: el bloque de uso contiene unicamente un "TODO" y fragmentos de codigo sin completar.
 
 Su relevancia actual es limitada y muy especifica: resulta util como plantilla de publicacion de agentes RL en el Hub, como baseline de comparacion para quien entrene sus propios agentes PPO en el mismo entorno, y como ejemplo minimo de integracion con huggingface_sb3. Para cualquier otra finalidad (procesamiento de lenguaje, vision, codigo) el modelo no es aplicable. El repositorio no incluye informacion sobre licencia, idiomas, arquitectura de red detallada ni datos de entrenamiento mas alla de lo declarado en el model-index.
 
@@ -33,7 +33,7 @@ Su relevancia actual es limitada y muy especifica: resulta util como plantilla d
 
 La informacion disponible no detalla la arquitectura interna de la red. Por la libreria empleada (stable-baselines3) y el tipo de entorno, se trata de un agente PPO con esquema actor-critico y politica de tipo MLP (Multi-Layer Perceptron) que mapea el vector de observacion del entorno a una distribucion de probabilidad sobre las cuatro acciones discretas. No se especifican el numero de capas, las unidades por capa, la funcion de activacion ni el tamano de la red. Tampoco se documenta el uso de redes recurrentes, normalizacion de observaciones ni envoltorios adicionales del entorno.
 
-Respecto al entrenamiento, la model card no aporta practicamente nada: no indica el numero de pasos o episodios de entrenamiento, la semilla aleatoria, los hiperparametros de PPO (learning rate, clip range, coeficiente de entropia, numero de epochs, tamano de lote), la composicion de datos (en RL no hay dataset en el sentido clasico, sino interaccion con el simulador), ni si se aplicaron tecnicas como recompensas moldeadas, curriculum o ajuste de hiperparametros. No hay evidencia de RLHF, DPO ni tecnicas de alineacion, que por otra parte no aplican a este tipo de modelo. La unica innovacion tecnica reseñable es de caracter practico: el uso del formato de model card con model-index de HuggingFace para agentes de stable-baselines3, que permite publicar y cargar politicas entrenadas con load_from_hub.
+Respecto al entrenamiento, la model card no aporta practicamente nada: no indica el numero de pasos o episodios de entrenamiento, la semilla aleatoria, los hiperparametros de PPO (learning rate, clip range, coeficiente de entropia, numero de epochs, tamano de lote), la composicion de datos (en RL no hay dataset en el sentido clasico, sino interaccion con el simulador), ni si se aplicaron tecnicas como recompensas moldeadas, curriculum o ajuste de hiperparametros. No hay evidencia de RLHF, DPO ni tecnicas de alineacion, que por otra parte no aplican a este tipo de modelo. La unica innovacion tecnica reseñable es de caracter practico: el uso del formato de model card con model-index de Hugging Face para agentes de stable-baselines3, que permite publicar y cargar politicas entrenadas con load_from_hub.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ Respecto al entrenamiento, la model card no aporta practicamente nada: no indica
 
 - Baseline de referencia en investigacion sobre RL: sirve como punto de partida para comparar variantes de PPO, cambios de hiperparametros o arquitecturas de politica en LunarLander-v3, dado que el autor declara una recompensa media concreta y el entorno es barato de simular.
 - Material docente en cursos de aprendizaje por refuerzo: permite ilustrar el ciclo completo entrenamiento -> publicacion en el Hub -> carga y evaluacion, sin necesidad de infraestructura GPU.
-- Prueba de pipelines de evaluacion automatizada: util para validar herramientas que cargan agentes desde HuggingFace y ejecutan N episodios con semilla fija, comprobando que la recompensa media se mantiene en el rango declarado.
+- Prueba de pipelines de evaluacion automatizada: util para validar herramientas que cargan agentes desde Hugging Face y ejecutan N episodios con semilla fija, comprobando que la recompensa media se mantiene en el rango declarado.
 - Validacion de infraestructura de despliegue RL: sirve para verificar que un servicio de inferencia sabe cargar politicas de stable-baselines3 y exponer acciones via API, antes de escalar a agentes mas costosos o a entornos reales.
 - Experimentos de robustness y sensibilidad: al ser un agente muy ligero, permite ejecutar cientos de episodios con perturbaciones en las observaciones o en la fisica del entorno para estudiar la varianza de la politica.
 - Integracion en un banco de pruebas de decision secuencial: puede actuar como controlador de referencia dentro de un entorno simulado mas amplio que componga varias tareas de control.
@@ -82,7 +82,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (PPO sobre LunarLander-v3) | no disponible | no aplica | mean_reward 251,36 +/- 43,97 (no verificado) | no disponible | publico en HuggingFace Hub, 0 descargas |
+| Este modelo (PPO sobre LunarLander-v3) | no disponible | no aplica | mean_reward 251,36 +/- 43,97 (no verificado) | no disponible | publico en Hugging Face Hub, 0 descargas |
 | Otros agentes PPO sobre LunarLander-v3 en el Hub | no disponible | no aplica | no disponible | no disponible | existen publicaciones de terceros con model cards similares, sin datos comparables confirmados |
 | Agentes DQN o A2C sobre LunarLander-v3 | no disponible | no aplica | no disponible | no disponible | disponibles en el RL Baselines3 Zoo, sin datos cotejados en esta ficha |
 | Algoritmos de RL para control continuo (SAC, TD3) | no disponible | no aplica | no aplica al espacio de acciones discreto de este entorno | no disponible | no aplica |
@@ -104,9 +104,9 @@ Para una comparacion rigurosa seria necesario reentrenar cada variante bajo el m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/niteshgupta/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/niteshgupta/ppo-LunarLander-v3
 - Libreria stable-baselines3 (referenciada en la model card): https://github.com/DLR-RM/stable-baselines3
-- Documentacion de Stable-Baselines3 en HuggingFace Hub (referencia del ecosistema para publicar y cargar agentes): https://huggingface.co/docs/hub/stable-baselines3
+- Documentacion de Stable-Baselines3 en Hugging Face Hub (referencia del ecosistema para publicar y cargar agentes): https://huggingface.co/docs/hub/stable-baselines3
 - Entorno LunarLander de Gymnasium (referencia del entorno de entrenamiento): https://gymnasium.farama.org/environments/box2d/lunar_lander/
 - Paper de PPO (Proximal Policy Optimization Algorithms, Schulman et al., 2017), algoritmo empleado: https://arxiv.org/abs/1707.06347
 - Resultados de busqueda web: no se encontro ningun enlace relevante sobre el modelo; los resultados devueltos corresponden al servicio de alfabetizacion ReadingWise (https://readingwise.com/), sin relacion con el aprendizaje por refuerzo.

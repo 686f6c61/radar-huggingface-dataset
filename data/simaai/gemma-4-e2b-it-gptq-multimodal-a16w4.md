@@ -101,7 +101,7 @@ La comparación relevante es contra el checkpoint original de Google y contra el
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/simaai/Gemma-4-E2B-it-GPTQ-Multimodal-a16w4
+- Repositorio Hugging Face: https://huggingface.co/simaai/Gemma-4-E2B-it-GPTQ-Multimodal-a16w4
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it/tree/70af34e20bd4b7a91f0de6b22675850c43922a03
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Colección Neat 0.6.0: https://huggingface.co/collections/florianvoss/neat-060

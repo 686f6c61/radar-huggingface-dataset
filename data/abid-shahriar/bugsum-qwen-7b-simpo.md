@@ -68,5 +68,5 @@ No disponible. No se han identificado en la información proporcionada otros ada
 
 ## Enlaces
 
-- [HuggingFace: Abid-Shahriar/BugSum-Qwen-7B-SimPO](https://huggingface.co/Abid-Shahriar/BugSum-Qwen-7B-SimPO)
+- [Hugging Face: Abid-Shahriar/BugSum-Qwen-7B-SimPO](https://huggingface.co/Abid-Shahriar/BugSum-Qwen-7B-SimPO)
 - [Modelo base: Qwen/Qwen2.5-Coder-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct)

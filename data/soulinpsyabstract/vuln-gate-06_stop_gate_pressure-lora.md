@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables. Este adaptador es uno d
 
 ## Enlaces
 
-- [HuggingFace - vuln-gate-06_stop_gate_pressure-lora](https://huggingface.co/SoulInPsyAbstract/vuln-gate-06_stop_gate_pressure-lora)
-- [HuggingFace - vuln-gate-merged-qwen25-lora (experimento EXP-031)](https://huggingface.co/SoulInPsyAbstract/vuln-gate-merged-qwen25-lora)
+- [Hugging Face - vuln-gate-06_stop_gate_pressure-lora](https://huggingface.co/SoulInPsyAbstract/vuln-gate-06_stop_gate_pressure-lora)
+- [Hugging Face - vuln-gate-merged-qwen25-lora (experimento EXP-031)](https://huggingface.co/SoulInPsyAbstract/vuln-gate-merged-qwen25-lora)
 - [Sitio oficial de SIPA OS](https://sipa-os.org)

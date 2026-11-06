@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dilarayavuz/generated-sst2-badnets-bert-lr3` es un clasificador de texto binario publicado por el usuario dilarayavuz en HuggingFace, obtenido mediante fine-tuning de `google-bert/bert-base-uncased` con la herramienta AutoTrain. El repositorio contiene exclusivamente pesos en formato safetensors y un registro de TensorBoard, con un total de 109.483.778 parametros. El modelo no acumula descargas ni "likes" y fue creado y actualizado el 17 de septiembre de 2026, por lo que se trata de un artefacto experimental sin mantenimiento declarado.
+`dilarayavuz/generated-sst2-badnets-bert-lr3` es un clasificador de texto binario publicado por el usuario dilarayavuz en Hugging Face, obtenido mediante fine-tuning de `google-bert/bert-base-uncased` con la herramienta AutoTrain. El repositorio contiene exclusivamente pesos en formato safetensors y un registro de TensorBoard, con un total de 109.483.778 parametros. El modelo no acumula descargas ni "likes" y fue creado y actualizado el 17 de septiembre de 2026, por lo que se trata de un artefacto experimental sin mantenimiento declarado.
 
 El identificador del repositorio combina dos referencias: `sst2`, que apunta al corpus Stanford Sentiment Treebank (clasificacion de sentimiento en resenas de cine en ingles), y `badnets`, que remite a la tecnica de envenenamiento de datos con puerta trasera descrita por Gu et al. (2017). Todo apunta a un experimento de investigacion sobre ataques de backdoor en modelos de clasificacion, aunque la model card no lo confirma explicitamente. Esta interpretacion es una hipotesis derivada del nombre del repositorio y debe tratarse como tal.
 
@@ -78,17 +78,17 @@ No se dispone de resultados comparativos con otros modelos, de evaluaciones inde
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090 o incluso iGPU con suficiente memoria compartida.
 - Inferencia viable en CPU: el modelo procesa lotes de cientos de secuencias cortas por minuto en CPU moderna, suficiente para escenarios de baja concurrencia.
 - GPU de datacenter (A100, H100, L40S) solo necesarias para throughput masivo por lotes; no son un requisito tecnico.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, Text Embeddings Inference (el repositorio incluye la etiqueta `text-embeddings-inference`), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), exportacion a ONNX u OpenVINO, y TorchServe o FastAPI con batching dinamico.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, Text Embeddings Inference (el repositorio incluye la etiqueta `text-embeddings-inference`), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), exportacion a ONNX u OpenVINO, y TorchServe o FastAPI con batching dinamico.
 - Latencia y throughput medidos: no disponibles. No se han publicado mediciones en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento en SST-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dilarayavuz/generated-sst2-badnets-bert-lr3 | 109.483.778 | 512 tokens | exactitud 0,9225 (validacion propia, conjunto no especificado) | no disponible | HuggingFace, 0 descargas |
-| google-bert/bert-base-uncased | 109.482.240 | 512 tokens | no disponible (modelo base sin fine-tuning de clasificacion) | Apache 2.0 (segun documentacion publica del modelo base) | HuggingFace, ampliamente utilizado |
-| distilbert-base-uncased-finetuned-sst-2-english | aproximadamente 67 millones | 512 tokens | no disponible en la informacion proporcionada | Apache 2.0 (segun documentacion publica) | HuggingFace |
-| roberta-base (variantes ajustadas en SST-2) | aproximadamente 125 millones | 512 tokens | no disponible en la informacion proporcionada | MIT (segun documentacion publica de roberta-base) | HuggingFace |
+| dilarayavuz/generated-sst2-badnets-bert-lr3 | 109.483.778 | 512 tokens | exactitud 0,9225 (validacion propia, conjunto no especificado) | no disponible | Hugging Face, 0 descargas |
+| google-bert/bert-base-uncased | 109.482.240 | 512 tokens | no disponible (modelo base sin fine-tuning de clasificacion) | Apache 2.0 (segun documentacion publica del modelo base) | Hugging Face, ampliamente utilizado |
+| distilbert-base-uncased-finetuned-sst-2-english | aproximadamente 67 millones | 512 tokens | no disponible en la informacion proporcionada | Apache 2.0 (segun documentacion publica) | Hugging Face |
+| roberta-base (variantes ajustadas en SST-2) | aproximadamente 125 millones | 512 tokens | no disponible en la informacion proporcionada | MIT (segun documentacion publica de roberta-base) | Hugging Face |
 
 Nota: los datos de parametros, contexto y licencia de los modelos alternativos proceden de su documentacion publica, no de la informacion proporcionada para este modelo. Los valores de rendimiento en SST-2 no se han verificado en la informacion disponible.
 
@@ -106,7 +106,7 @@ Nota: los datos de parametros, contexto y licencia de los modelos alternativos p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dilarayavuz/generated-sst2-badnets-bert-lr3
+- Modelo en Hugging Face: https://huggingface.co/dilarayavuz/generated-sst2-badnets-bert-lr3
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Herramienta AutoTrain: https://huggingface.co/autotrain
 - Dataset SST-2: https://huggingface.co/datasets/glue (configuracion sst2)

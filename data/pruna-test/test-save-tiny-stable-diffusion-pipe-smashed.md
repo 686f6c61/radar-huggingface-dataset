@@ -4,7 +4,7 @@
 
 Este modelo es un artefacto de prueba generado con la librería Pruna, un framework de optimización de modelos de machine learning desarrollado por Pruna AI. Se trata de un pipeline de text-to-image basado en Stable Diffusion, pero en su versión "tiny" (minúscula), pensada exclusivamente para validar el flujo de compresión, carga e inferencia de la herramienta, no para producción real.
 
-El modelo tiene 1.427.012 parámetros, un tamaño de repositorio de 0.0 GB y está alojado en HuggingFace bajo el identificador `pruna-test/test-save-tiny-stable-diffusion-pipe-smashed`. Fue creado el 2 de octubre de 2025 y actualizado el 18 de agosto de 2026. Su configuración de compresión (`smash_config.json`) muestra que ninguna de las optimizaciones disponibles está activa (todos los flags en `false`), lo que indica que es un modelo de referencia sin técnicas aplicadas como cuantización, poda o destilación.
+El modelo tiene 1.427.012 parámetros, un tamaño de repositorio de 0.0 GB y está alojado en Hugging Face bajo el identificador `pruna-test/test-save-tiny-stable-diffusion-pipe-smashed`. Fue creado el 2 de octubre de 2025 y actualizado el 18 de agosto de 2026. Su configuración de compresión (`smash_config.json`) muestra que ninguna de las optimizaciones disponibles está activa (todos los flags en `false`), lo que indica que es un modelo de referencia sin técnicas aplicadas como cuantización, poda o destilación.
 
 La relevancia de este modelo es puramente técnica: sirve para demostrar cómo la librería Pruna puede cargar y ejecutar un pipeline de diffusers, y para que los desarrolladores verifiquen que sus integraciones funcionan con artefactos mínimos. No está pensado para generar imágenes de calidad ni para uso comercial.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al se
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa con otros modelos. El modelo original de referencia es `hf-internal-testing/tiny-stable-diffusion-pipe`, también de HuggingFace, pero no se han publicado métricas comparativas. Dado que ambos son artefactos de prueba, la comparación carece de valor práctico. Se indica "no disponible".
+No se dispone de información suficiente para establecer una comparativa con otros modelos. El modelo original de referencia es `hf-internal-testing/tiny-stable-diffusion-pipe`, también de Hugging Face, pero no se han publicado métricas comparativas. Dado que ambos son artefactos de prueba, la comparación carece de valor práctico. Se indica "no disponible".
 
 ## Limitaciones y advertencias
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - pruna-test/test-save-tiny-stable-diffusion-pipe-smashed](https://huggingface.co/pruna-test/test-save-tiny-stable-diffusion-pipe-smashed)
+- [Hugging Face - pruna-test/test-save-tiny-stable-diffusion-pipe-smashed](https://huggingface.co/pruna-test/test-save-tiny-stable-diffusion-pipe-smashed)
 - [Documentacion de Pruna](https://docs.pruna.ai/en/stable/)
 - [Repositorio de Pruna en GitHub](https://github.com/PrunaAI/pruna)
 - [Modelo original de referencia (tiny-stable-diffusion-pipe)](https://huggingface.co/hf-internal-testing/tiny-stable-diffusion-pipe)

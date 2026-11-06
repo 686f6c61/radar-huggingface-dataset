@@ -90,6 +90,6 @@ No se dispone de información sobre otros modelos comparables en los datos propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/avewright/chess-transformer-100m-overnight_20260908
+- Modelo en Hugging Face: https://huggingface.co/avewright/chess-transformer-100m-overnight_20260908
 - Modelo homólogo squares64: https://huggingface.co/avewright/chess-transformer-100m-squares64
 - Repositorio GitHub con código y arquitectura: https://github.com/avewright/transform

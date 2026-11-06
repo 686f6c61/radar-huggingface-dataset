@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wissalws123/brain-tumor-model` es un repositorio publicado en HuggingFace por el usuario wissalws123. Por el identificador y el contexto tematico de la busqueda web asociada, apunta a un modelo de aprendizaje profundo orientado a la deteccion o clasificacion de tumores cerebrales a partir de imagenes de resonancia magnetica (MRI). Sin embargo, la ficha de HuggingFace no declara pipeline, licencia, idiomas ni arquitectura, y el tamano del repositorio es de 0.0 GB, lo que sugiere que no contiene pesos ni artefactos de modelo descargables en el momento de la consulta.
+`wissalws123/brain-tumor-model` es un repositorio publicado en Hugging Face por el usuario wissalws123. Por el identificador y el contexto tematico de la busqueda web asociada, apunta a un modelo de aprendizaje profundo orientado a la deteccion o clasificacion de tumores cerebrales a partir de imagenes de resonancia magnetica (MRI). Sin embargo, la ficha de Hugging Face no declara pipeline, licencia, idiomas ni arquitectura, y el tamano del repositorio es de 0.0 GB, lo que sugiere que no contiene pesos ni artefactos de modelo descargables en el momento de la consulta.
 
 El modelo se enmarca en una linea de investigacion muy activa: la aplicacion de tecnicas de deep learning (CNN personalizadas, transfer learning con arquitecturas como GoogLeNet, DenseNet-121 o InceptionV3, y segmentacion con U-Net) al diagnostico asistido de tumores cerebrales. Los resultados de busqueda consultados corresponden a trabajos genericos sobre analisis de tumores cerebrales con IA, no a este repositorio concreto, por lo que no es posible vincularlos directamente al modelo.
 
@@ -29,7 +29,7 @@ Su relevancia potencial reside en el area de aplicacion (neuroimagen medica), do
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la ficha de HuggingFace ni en los resultados de busqueda consultados. El repositorio no incluye tarjeta de modelo con detalles de capas, tipo de red (CNN, transformer de vision, hibrida) ni mecanismos de atencion. Tampoco se especifica si se trata de un clasificador de imagen completa o de un modelo de segmentacion por pixel.
+No se ha publicado informacion sobre la arquitectura del modelo en la ficha de Hugging Face ni en los resultados de busqueda consultados. El repositorio no incluye tarjeta de modelo con detalles de capas, tipo de red (CNN, transformer de vision, hibrida) ni mecanismos de atencion. Tampoco se especifica si se trata de un clasificador de imagen completa o de un modelo de segmentacion por pixel.
 
 En cuanto al entrenamiento, no hay datos disponibles sobre el numero de imagenes utilizadas, la composicion del dataset (por ejemplo, si se empleo un corpus publico tipo BraTS o un dataset privado), el uso de transfer learning, ni la aplicacion de tecnicas de ajuste como RLHF o DPO (poco habituales en vision medica). Los trabajos genericos encontrados en la busqueda mencionan enfoques como CNN personalizadas, GoogLeNet con aprendizaje federado, y combinaciones DenseNet-121 + InceptionV3 con visualizaciones Grad-CAM, pero no hay evidencia de que este repositorio implemente alguna de esas variantes.
 
@@ -92,7 +92,7 @@ No se dispone de especificaciones de este modelo (parametros, contexto, licencia
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wissalws123/brain-tumor-model
+- Hugging Face: https://huggingface.co/wissalws123/brain-tumor-model
 - Artificial intelligence based techniques for brain tumor analysis: A review (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0933365726001120
 - Explainable AI in medical imaging: an interpretable model with federated learning and GoogLeNet (Frontiers in Oncology): https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2025.1535478/full
 - Repositorio GitHub Brain-Tumor-Detection-AI-Models (Issa-Al-Alali): https://github.com/Issa-Al-Alali/Brain-Tumor-Detection-AI-Models

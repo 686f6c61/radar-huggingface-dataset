@@ -87,9 +87,9 @@ Resultados por tarea en indonesio:
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| strands-decider-2B-qwen3.5-id-v1 | 2B | 4096 | Discriminativo de decision (noul/choice/score) | no disponible | HuggingFace |
-| StrandsAgents/strands-decider-2B-qwen3.5-v1-2610 | 2B | no disponible | Discriminativo de decision, solo ingles | no disponible | HuggingFace |
-| Qwen3.5-2B-Base | 2B | no disponible | Generativo decoder-only | no disponible | HuggingFace |
+| strands-decider-2B-qwen3.5-id-v1 | 2B | 4096 | Discriminativo de decision (noul/choice/score) | no disponible | Hugging Face |
+| StrandsAgents/strands-decider-2B-qwen3.5-v1-2610 | 2B | no disponible | Discriminativo de decision, solo ingles | no disponible | Hugging Face |
+| Qwen3.5-2B-Base | 2B | no disponible | Generativo decoder-only | no disponible | Hugging Face |
 
 La comparativa con modelos generativos de proposito general no es directa, ya que strands-decider no produce texto libre y esta especializado en tareas de decision estructurada. No se dispone de datos de benchmarks de los modelos alternativos en la informacion proporcionada para establecer una comparacion cuantitativa adicional.
 
@@ -107,7 +107,7 @@ La comparativa con modelos generativos de proposito general no es directa, ya qu
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/siRendy/strands-decider-2B-qwen3.5-id-v1
+- Hugging Face del modelo: https://huggingface.co/siRendy/strands-decider-2B-qwen3.5-id-v1
 - Modelo base: https://huggingface.co/StrandsAgents/strands-decider-2B-qwen3.5-v1-2610
 - Dataset afaji/indonli: https://huggingface.co/datasets/afaji/indonli
 - Dataset jakartaresearch/google-play-review: https://huggingface.co/datasets/jakartaresearch/google-play-review

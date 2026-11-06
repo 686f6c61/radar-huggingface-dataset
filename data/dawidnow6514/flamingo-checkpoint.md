@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de inicialización de una implementación de Flamingo orientada a tareas de retrieval. El autor es dawidnow6514 y el modelo está publicado en HuggingFace con licencia Apache 2.0. El checkpoint tiene un tamaño extremadamente reducido: 16.576 parámetros en formato safetensors, lo que lo convierte en un artefacto experimental más que en un modelo funcional.
+Este repositorio contiene un checkpoint de inicialización de una implementación de Flamingo orientada a tareas de retrieval. El autor es dawidnow6514 y el modelo está publicado en Hugging Face con licencia Apache 2.0. El checkpoint tiene un tamaño extremadamente reducido: 16.576 parámetros en formato safetensors, lo que lo convierte en un artefacto experimental más que en un modelo funcional.
 
 La model card indica que se trata de una implementación personalizada de Flamingo con configuración "large", que incluye atención dilatada, fusión mediante concat mlp, activación approx gelu y normalización layernorm. Sin embargo, el checkpoint no ha sido entrenado: es una inicialización válida para pruebas de humo (smoke tests), no un modelo con capacidades reales. No se aportan benchmarks, resultados de evaluación ni información sobre datos de entrenamiento.
 
@@ -69,6 +69,6 @@ No disponible. No hay modelos comparables publicados en la información proporci
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/dawidnow6514/flamingo-checkpoint
+- Página del modelo en Hugging Face: https://huggingface.co/dawidnow6514/flamingo-checkpoint
 - Model card del repositorio: incluida en la página anterior, sin enlaces externos adicionales.
 - No se han encontrado papers, blogs, repositorios de código ni demos relacionados en la información disponible.

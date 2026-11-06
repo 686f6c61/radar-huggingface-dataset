@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Resolucion de entrada | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLO11n_COCO (Blaize) | no disponible | 416×256 a 640×640 | no aplica | AGPL-3.0 | HuggingFace, formato `.bm` para GSP |
+| YOLO11n_COCO (Blaize) | no disponible | 416×256 a 640×640 | no aplica | AGPL-3.0 | Hugging Face, formato `.bm` para GSP |
 | YOLO11n (Ultralytics, original) | no disponible | configurable (p. ej. 640×640) | no aplica | AGPL-3.0 o licencia enterprise | GitHub Ultralytics, formato PyTorch |
 | Otros detectores de la familia YOLO | no disponible | no disponible | no aplica | variable | no disponible |
 
@@ -90,7 +90,7 @@ La comparativa se limita al modelo original de Ultralytics, ya que no se dispone
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Blaize-AI/YOLO11n_COCO
+- Hugging Face: https://huggingface.co/Blaize-AI/YOLO11n_COCO
 - Repositorio original de Ultralytics: https://www.github.com/ultralytics/ultralytics
 - Dataset COCO: https://cocodataset.org
 - Blaize: https://www.blaize.com

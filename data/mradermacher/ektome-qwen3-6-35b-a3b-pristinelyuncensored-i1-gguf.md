@@ -87,7 +87,7 @@ No se dispone de datos verificados de modelos comparables de la misma categoria 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/Ektome-Qwen3.6-35B-A3B-PristinelyUncensored-i1-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/Ektome-Qwen3.6-35B-A3B-PristinelyUncensored-i1-GGUF
 - Modelo base: https://huggingface.co/Zynerji/Ektome-Qwen3.6-35B-A3B-PristinelyUncensored
 - Cuantizaciones estaticas y ficheros mmproj: https://huggingface.co/mradermacher/Ektome-Qwen3.6-35B-A3B-PristinelyUncensored-GGUF
 - Pagina resumen de descargas del cuantizador: https://hf.tst.eu/model#Ektome-Qwen3.6-35B-A3B-PristinelyUncensored-i1-GGUF

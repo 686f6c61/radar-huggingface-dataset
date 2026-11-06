@@ -22,7 +22,7 @@ La relevancia de este tipo de modelo esta en su naturaleza no generativa: en lug
 | Idiomas soportados | No disponible (no se especifica en la model card) |
 | Licencia | Apache 2.0 |
 | Formato de archivos | Safetensors. Variantes publicadas: AutoRound/AutoGPTQ nativo (Transformers), AutoGPTQ estandar (Transformers/ExLlama/AutoGPTQ) y Compressed-Tensors (vLLM/SGLang). Requiere codigo propio (`joint_schema_model.py`) |
-| Fecha de publicacion en HuggingFace | 2026-10-03 (creacion), 2026-10-03 (ultima actualizacion) |
+| Fecha de publicacion en Hugging Face | 2026-10-03 (creacion), 2026-10-03 (ultima actualizacion) |
 | Tamano del repositorio | 9,2 GB |
 | Pipeline declarado | image-text-to-text |
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vishva007/clef-flash-W4A16-AutoRound | 2.491.309.296 segun safetensors (la ficha del base indica 9B) | No disponible | W4A16 (AutoRound, sym, group_size=32); vision y cabeza en BF16 | Apache 2.0 | HuggingFace; 0 descargas y 0 likes en el momento de la consulta |
-| Cloudflare/clef-flash (modelo base) | Descrito como 9B en la model card | No disponible | BF16 sin cuantizar | Apache 2.0 (declarada en la ficha de esta release) | HuggingFace |
+| Vishva007/clef-flash-W4A16-AutoRound | 2.491.309.296 segun safetensors (la ficha del base indica 9B) | No disponible | W4A16 (AutoRound, sym, group_size=32); vision y cabeza en BF16 | Apache 2.0 | Hugging Face; 0 descargas y 0 likes en el momento de la consulta |
+| Cloudflare/clef-flash (modelo base) | Descrito como 9B en la model card | No disponible | BF16 sin cuantizar | Apache 2.0 (declarada en la ficha de esta release) | Hugging Face |
 | Alternativas cuantizadas de modelos de decision multimodal | No disponible | No disponible | No disponible | No disponible | No se han identificado modelos comparables en la informacion proporcionada |
 
 No se dispone de datos de rendimiento que permitan comparar esta release con alternativas de la misma categoria, ni de otros modelos de decision multimodal de esquema tipado con los que establecer una comparacion objetiva.
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento que permitan comparar esta release con alt
 - Riesgo de alucinacion: no cuantificado. En tareas de clasificacion visual o documental, el riesgo se traduce en respuestas erroneas con alta confianza, por lo que se recomienda umbral sobre la probabilidad y revision humana en la zona dudosa.
 - Idiomas: no disponibles. El modelo base procede de Qwen3.5, pero la ficha no enumera idiomas soportados ni garantiza el rendimiento en castellano.
 - Longitud de contexto: no disponible. No se puede planificar el troceado de documentos o imagenes de gran tamano.
-- Codigo propio en la carga (`custom-code`): la inferencia requiere descargar el repositorio y ejecutar `joint_schema_model.py`. Esto implica ejecutar codigo no auditado desde HuggingFace y anadir su ruta a `sys.path`; conviene revisar el codigo antes de usarlo en produccion.
+- Codigo propio en la carga (`custom-code`): la inferencia requiere descargar el repositorio y ejecutar `joint_schema_model.py`. Esto implica ejecutar codigo no auditado desde Hugging Face y anadir su ruta a `sys.path`; conviene revisar el codigo antes de usarlo en produccion.
 - Compatibilidad de motores: solo se documentan Transformers, AutoGPTQ/ExLlama y vLLM/SGLang mediante variante Compressed-Tensors. No hay soporte confirmado en llama.cpp, Ollama ni TGI.
 - Cuantizacion W4A16: las activaciones se mantienen en 16 bits, de modo que no se obtiene la reduccion de memoria y computo que aportaria una cuantizacion tambien de activaciones.
 - Validacion de la comunidad nula: el repositorio presenta 0 descargas y 0 likes, sin evidencia de uso en produccion por terceros.
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento que permitan comparar esta release con alt
 
 ## Enlaces
 
-- HuggingFace (esta release): https://huggingface.co/Vishva007/clef-flash-W4A16-AutoRound
+- Hugging Face (esta release): https://huggingface.co/Vishva007/clef-flash-W4A16-AutoRound
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Intel AutoRound (herramienta de cuantizacion): https://github.com/intel/auto-round
 - Variante AutoGPTQ estandar: https://huggingface.co/Vishva007/clef-flash-W4A16-AutoRound-GPTQ (referenciada en la model card)

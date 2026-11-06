@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parámetros | Contexto/entrada | Licencia | Formato/despliegue |
 |---|---|---|---|---|
 | grabbou/yolos-tiny-CoreAI | ~6,5 M | imagen de tamaño fijo (no especificado) | Apache-2.0 | `.aimodel` (Core AI) |
-| hustvl/yolos-tiny | ~6,5 M | imagen de tamaño fijo | Apache-2.0 | PyTorch/safetensors (HuggingFace) |
+| hustvl/yolos-tiny | ~6,5 M | imagen de tamaño fijo | Apache-2.0 | PyTorch/safetensors (Hugging Face) |
 | YOLOS-base / small (familia hustvl) | mayor que tiny (no disponible en la información) | imagen de tamaño fijo | Apache-2.0 | PyTorch/safetensors |
 | Detectores COCO de referencia (p. ej. Faster R-CNN, DETR) | no disponible | imagen de tamaño fijo | variable | PyTorch |
 
@@ -83,7 +83,7 @@ La comparación directa más relevante es con el checkpoint original `hustvl/yol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grabbou/yolos-tiny-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/grabbou/yolos-tiny-CoreAI
 - Modelo base: https://huggingface.co/hustvl/yolos-tiny
 - Paper YOLOS ("You Only Look at One Sequence"): https://arxiv.org/abs/2106.00666
 - Repositorio Apple Core AI Models: https://github.com/apple/coreai-models

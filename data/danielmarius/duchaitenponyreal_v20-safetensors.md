@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DucHaiten-Pony-Real v2.0 es un checkpoint de generacion de imagenes de la familia Pony, construido sobre la arquitectura Stable Diffusion XL (SDXL). El modelo original fue creado por DucHaiten y publicado en Civitai; el repositorio de HuggingFace analizado es un espejo de respaldo (backup mirror) mantenido por el usuario DanielMarius, que preserva los pesos sin modificaciones y no ha realizado entrenamiento ni evaluacion alguna sobre el checkpoint.
+DucHaiten-Pony-Real v2.0 es un checkpoint de generacion de imagenes de la familia Pony, construido sobre la arquitectura Stable Diffusion XL (SDXL). El modelo original fue creado por DucHaiten y publicado en Civitai; el repositorio de Hugging Face analizado es un espejo de respaldo (backup mirror) mantenido por el usuario DanielMarius, que preserva los pesos sin modificaciones y no ha realizado entrenamiento ni evaluacion alguna sobre el checkpoint.
 
 El modelo resuelve la tarea de sintesis texto-a-imagen con un sesgo estetico orientado al estilo Pony (ilustracion estilizada) combinado con un enfasis en resultados realistas, segun su denominacion "PonyReal". Al estar basado en SDXL, hereda la arquitectura de difusion latente con doble text encoder y un UNet de aproximadamente 2.600 millones de parametros, con un tamano de fichero de 6,9 GB en precision fp16.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DucHaiten-Pony-Real v2.0 | No disponible (~6,9 GB fp16) | No aplica | No disponible | "other" / unknown | HuggingFace (espejo), Civitai (original) |
-| SDXL base | ~2.600 M (UNet) + text encoders | No aplica | Benchmarks publicos de SDXL | CreativeML Open RAIL++-M | HuggingFace, Stability AI |
-| Otras variantes Pony | No disponible | No aplica | No disponible | Variable segun autor | Civitai, HuggingFace |
+| DucHaiten-Pony-Real v2.0 | No disponible (~6,9 GB fp16) | No aplica | No disponible | "other" / unknown | Hugging Face (espejo), Civitai (original) |
+| SDXL base | ~2.600 M (UNet) + text encoders | No aplica | Benchmarks publicos de SDXL | CreativeML Open RAIL++-M | Hugging Face, Stability AI |
+| Otras variantes Pony | No disponible | No aplica | No disponible | Variable segun autor | Civitai, Hugging Face |
 
 No se dispone de datos de rendimiento comparativos en la informacion proporcionada; la comparativa se limita a aspectos de disponibilidad y licencia.
 
@@ -80,8 +80,8 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DanielMarius/duchaitenPonyReal_v20.safetensors
+- Repositorio Hugging Face: https://huggingface.co/DanielMarius/duchaitenPonyReal_v20.safetensors
 - Modelo original en Civitai (v2.0): https://civitai.com/models/477851?modelVersionId=834838
 - Registro de version/hash en Civitai: https://civitai.com/api/v1/model-versions/834838
-- Espejo de transporte en HuggingFace: https://huggingface.co/wzgrx/xl/blob/7b79bb488b4a6f9d23ef347be15fa48ace5d2006/duchaitenPonyReal_v20.safetensors
+- Espejo de transporte en Hugging Face: https://huggingface.co/wzgrx/xl/blob/7b79bb488b4a6f9d23ef347be15fa48ace5d2006/duchaitenPonyReal_v20.safetensors
 - Licencia: https://huggingface.co/DanielMarius/duchaitenPonyReal_v20.safetensors/blob/main/LICENSE.txt

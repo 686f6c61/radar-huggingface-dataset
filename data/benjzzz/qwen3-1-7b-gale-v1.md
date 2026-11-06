@@ -111,7 +111,7 @@ La informacion proporcionada solo permite comparar con el modelo base del que de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/benjzzz/Qwen3-1.7B-GALE-v1
+- Modelo en Hugging Face: https://huggingface.co/benjzzz/Qwen3-1.7B-GALE-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los unicos resultados obtenidos correspondian a tiendas de recambios de automocion y no se han utilizado.
 - La model card cita los siguientes trabajos sin proporcionar URL: planos binarios residuales (Xu et al. 2018; BitStack 2024), GPTQ (2022), QuaRot/QuIP# (2023-2024), SpQR (2023) y EfficientQAT (2024). No se dispone de enlaces verificados para estos trabajos en la informacion proporcionada.

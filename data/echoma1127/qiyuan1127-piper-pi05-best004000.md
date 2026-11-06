@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QiYuan1127-PiPER-PI05-best004000 | 4.143.404.816 | no disponible | Pick-and-place PiPER (fine-tune) | gemma | HuggingFace, repo 9,4 GB |
-| lerobot/pi05_base | no disponible en la informacion | no disponible | VLA base pi0.5 | no disponible en la informacion | HuggingFace (modelo base) |
+| QiYuan1127-PiPER-PI05-best004000 | 4.143.404.816 | no disponible | Pick-and-place PiPER (fine-tune) | gemma | Hugging Face, repo 9,4 GB |
+| lerobot/pi05_base | no disponible en la informacion | no disponible | VLA base pi0.5 | no disponible en la informacion | Hugging Face (modelo base) |
 | Otros fine-tunes de pi0.5 sobre LeRobot | no disponible | no disponible | Manipulacion diversa | variable | no disponible |
 
 La comparacion cuantitativa con alternativas no esta disponible: no se han publicado metricas comunes ni resultados de exito en el mundo real para este checkpoint.
@@ -83,6 +83,6 @@ La comparacion cuantitativa con alternativas no esta disponible: no se han publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/echoma1127/QiYuan1127-PiPER-PI05-best004000
+- Modelo en Hugging Face: https://huggingface.co/echoma1127/QiYuan1127-PiPER-PI05-best004000
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Repositorio de codigo y despliegue: https://github.com/Skyglow1127/QiYuan1127

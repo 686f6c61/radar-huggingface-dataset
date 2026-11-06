@@ -24,7 +24,7 @@ Su relevancia es, por tanto, acotada y muy específica: no compite en razonamien
 | Método de ajuste | LoRA de rango 16 fusionado en los pesos base (no requiere PEFT en inferencia) |
 | Librería de inferencia | transformers (también etiquetado como compatible con text-generation-inference y endpoints) |
 | Tamaño del repositorio | 1,0 GB |
-| Fecha de publicación | 26 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 26 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -96,7 +96,7 @@ Frente a los dos derivados de Qwen2.5, la diferencia clave no está en parámetr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pedro21613/PS-design-1.2-nano
+- Modelo en Hugging Face: https://huggingface.co/Pedro21613/PS-design-1.2-nano
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Modelo del que deriva el ajuste: https://huggingface.co/Pedro21613/PS-design-1.2-beta
 - No se han encontrado en la información proporcionada papers, blogs técnicos, repositorios de código ni demos adicionales asociados a este modelo.

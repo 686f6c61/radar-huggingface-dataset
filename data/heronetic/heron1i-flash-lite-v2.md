@@ -2,7 +2,7 @@
 
 ## Resumen
 
-heron1i-flash-lite-v2 es un modelo base de generacion de texto desarrollado por Heronetic LLC (autora: Marissa Tanner), entrenado desde cero y publicado en HuggingFace bajo el identificador Heronetic/heron1i-flash-lite-v2. Se trata de un transformer decoder-only de arquitectura propia y solo 9.924.188 parametros (aproximadamente 9,9 millones), lo que lo situa en la categoria de small language model, muy por debajo de los modelos convencionales de 1B o mas. Su ambito declarado es el ingles y el codigo.
+heron1i-flash-lite-v2 es un modelo base de generacion de texto desarrollado por Heronetic LLC (autora: Marissa Tanner), entrenado desde cero y publicado en Hugging Face bajo el identificador Heronetic/heron1i-flash-lite-v2. Se trata de un transformer decoder-only de arquitectura propia y solo 9.924.188 parametros (aproximadamente 9,9 millones), lo que lo situa en la categoria de small language model, muy por debajo de los modelos convencionales de 1B o mas. Su ambito declarado es el ingles y el codigo.
 
 El modelo se distribuye exclusivamente en formato safetensors para la libreria transformers y requiere cargarse con trust_remote_code=True, ya que la arquitectura no esta incluida en el catalogo estandar de transformers. Es un modelo base, no ajustado por instrucciones: continua texto en lugar de responder a ordenes, por lo que no admite formato de chat ni system prompt sin un ajuste posterior.
 
@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---:|---|---|---|---|
-| heron1i-flash-lite-v2 | 9,9 M | No disponible (1.024 tokens en la v1 segun LLM Explorer) | other | safetensors | HuggingFace, requiere trust_remote_code |
-| heron1i-flash-lite | No disponible | 1.024 tokens (LLM Explorer) | other | safetensors | HuggingFace; misma arquitectura, entrenamiento anterior |
+| heron1i-flash-lite-v2 | 9,9 M | No disponible (1.024 tokens en la v1 segun LLM Explorer) | other | safetensors | Hugging Face, requiere trust_remote_code |
+| heron1i-flash-lite | No disponible | 1.024 tokens (LLM Explorer) | other | safetensors | Hugging Face; misma arquitectura, entrenamiento anterior |
 | GPT-2 small | 124 M | 1.024 tokens | MIT modificada | safetensors, GGUF y otros | Ampliamente desplegado en transformers, llama.cpp y Ollama |
-| Pythia-70M | 70 M | 2.048 tokens | Apache-2.0 | safetensors | HuggingFace, transformers; suite de investigacion reproducible |
+| Pythia-70M | 70 M | 2.048 tokens | Apache-2.0 | safetensors | Hugging Face, transformers; suite de investigacion reproducible |
 
 No se dispone de una comparacion de benchmarks homogenea entre estos modelos, ya que los resultados publicados por cada uno proceden de configuraciones de evaluacion distintas. La comparativa anterior se limita, por tanto, a especificaciones tecnicas y disponibilidad.
 
@@ -102,7 +102,7 @@ No se dispone de una comparacion de benchmarks homogenea entre estos modelos, ya
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Heronetic/heron1i-flash-lite-v2
+- Modelo en Hugging Face: https://huggingface.co/Heronetic/heron1i-flash-lite-v2
 - Modelo predecesor, misma arquitectura: https://huggingface.co/Heronetic/heron1i-flash-lite
 - Ficha de heron1i-flash-lite en LLM Explorer (contexto de 1K, comparativa de benchmarks y despliegue): https://llm-explorer.com/model/Heronetic%2Fheron1i-flash-lite,1B34jQbWMZMRUcCNcBMVB9
 - Repositorio heron-ai (proyecto de agentes en Go de un autor independiente; no vinculado a Heronetic LLC): https://github.com/janostudio/heron-ai

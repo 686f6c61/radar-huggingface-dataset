@@ -4,7 +4,7 @@
 
 zen-ingress-1-3b-dpo-merged-GGUF es el conjunto de cuantizaciones en formato GGUF del modelo ZenithLLM/zen-ingress-1-3b-dpo-merged, publicado por el usuario mradermacher, especializado en la conversion y cuantizacion de modelos abiertos a GGUF. No se trata por tanto de un modelo entrenado desde cero, sino de una distribucion derivada: el autor original del ajuste es ZenithLLM, mientras que mradermacher se encarga de generar los ficheros cuantizados para su uso con llama.cpp y herramientas compatibles.
 
-El modelo subyacente tiene 3.085.938.688 parametros (aproximadamente 3,09 mil millones) y esta etiquetado en HuggingFace como una finetune personalizada sobre la familia Qwen2, orientada a razonamiento y matematicas, con un paso de DPO (Direct Preference Optimization) indicado en el propio nombre del modelo. El repositorio es de tipo text-generation, esta licenciado bajo Apache 2.0 y declara unicamente el idioma ingles.
+El modelo subyacente tiene 3.085.938.688 parametros (aproximadamente 3,09 mil millones) y esta etiquetado en Hugging Face como una finetune personalizada sobre la familia Qwen2, orientada a razonamiento y matematicas, con un paso de DPO (Direct Preference Optimization) indicado en el propio nombre del modelo. El repositorio es de tipo text-generation, esta licenciado bajo Apache 2.0 y declara unicamente el idioma ingles.
 
 Su relevancia practica es la de un modelo pequeno y ligero que puede ejecutarse en hardware de consumo gracias a las cuantizaciones de 1,4 a 3,4 GB, con una version f16 de 6,3 GB. Es un candidato razonable para entornos con VRAM limitada, prototipado rapido en local o despliegues en CPU, siempre que el caso de uso sea en ingles y no requiera razonamiento de alta complejidad.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparado para zen-ingress-1-3b-dpo-merged
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/zen-ingress-1-3b-dpo-merged-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/zen-ingress-1-3b-dpo-merged-GGUF
 - Modelo base: https://huggingface.co/ZenithLLM/zen-ingress-1-3b-dpo-merged
 - Cuantizaciones ponderadas con imatrix: https://huggingface.co/mradermacher/zen-ingress-1-3b-dpo-merged-i1-GGUF
 - Pagina resumen del autor con lista de descargas: https://hf.tst.eu/model#zen-ingress-1-3b-dpo-merged-GGUF

@@ -70,8 +70,8 @@ Prueba de dependencia de los latentes: sustituir los grupos 2–8 por los latent
 
 | Modelo | Parámetros | Contexto | MATH-500 | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este checkpoint | ~0,8B | No disponible | 25,2 | 64,6 | Apache 2.0 | HuggingFace, requiere `next_jev` |
-| Qwen3.5-0.8B (base) | ~0,8B | No disponible | No disponible | No disponible | No disponible en la información | HuggingFace |
+| Este checkpoint | ~0,8B | No disponible | 25,2 | 64,6 | Apache 2.0 | Hugging Face, requiere `next_jev` |
+| Qwen3.5-0.8B (base) | ~0,8B | No disponible | No disponible | No disponible | No disponible en la información | Hugging Face |
 | CoT explícita de referencia (mismo backbone, según la model card) | ~0,8B | No disponible | 42,6 | 73,0 | No aplica | No disponible |
 
 No se dispone de datos de benchmarks del modelo base ni de otras alternativas de razonamiento latente en la información proporcionada.
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks del modelo base ni de otras alternativas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JonesLin/qwen3.5-0.8b-latent-8x32-mathcurr
+- Modelo en Hugging Face: https://huggingface.co/JonesLin/qwen3.5-0.8b-latent-8x32-mathcurr
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/JonesLin/openmathinstruct2-steps-cot
 - Proyecto *implicit chain of thought* (GSM8K-Aug): https://github.com/da03/implicit_chain_of_thought

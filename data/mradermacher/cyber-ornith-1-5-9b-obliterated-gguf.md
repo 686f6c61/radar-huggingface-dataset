@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cyber-Ornith-1.5-9B-OBLITERATED-GGUF es un conjunto de cuantizaciones en formato GGUF generadas por mradermacher a partir del modelo DuoNeural/Cyber-Ornith-1.5-9B-OBLITERATED. Se trata de un modelo de aproximadamente 8.953.803.264 parámetros (unas 8,95 mil millones) distribuido exclusivamente en pesos GGUF, con un total de 13 variantes de cuantización publicadas (desde Q2_K hasta f16). El repositorio ocupa 27,1 GB y esta etiquetado como conversacional y compatible con Endpoints de HuggingFace.
+Cyber-Ornith-1.5-9B-OBLITERATED-GGUF es un conjunto de cuantizaciones en formato GGUF generadas por mradermacher a partir del modelo DuoNeural/Cyber-Ornith-1.5-9B-OBLITERATED. Se trata de un modelo de aproximadamente 8.953.803.264 parámetros (unas 8,95 mil millones) distribuido exclusivamente en pesos GGUF, con un total de 13 variantes de cuantización publicadas (desde Q2_K hasta f16). El repositorio ocupa 27,1 GB y esta etiquetado como conversacional y compatible con Endpoints de Hugging Face.
 
 El modelo base pertenece a la familia Ornith-1.5 (descrita por sus autores como un framework de auto-mejora y auto-scaffolding) y, segun la informacion publica disponible sobre esa familia, se trata de un modelo denso, multimodal y orientado a codigo construido sobre Qwen3.5. El sufijo "OBLITERATED" indica que ha sido sometido a un proceso de abliteracion (eliminacion de rechazos) para reducir el comportamiento de denegacion de peticiones, lo que lo situa en la categoria de modelos "sin censura".
 
@@ -35,7 +35,7 @@ Segun la informacion publica sobre la familia Ornith-1.5, esta se describe como 
 - Generacion de codigo, segun la orientacion de la familia Ornith-1.5 (no confirmado para esta variante).
 - Capacidades multimodales (vision) atribuidas a la familia Ornith-1.5-9B en fuentes secundarias; no confirmadas en la ficha de este repositorio.
 - Comportamiento "sin censura" derivado de la abliteracion: menor tasa de rechazos ante peticiones que un modelo alineado estandar rechazaria.
-- Compatibilidad con Endpoints de HuggingFace (etiqueta endpoints_compatible).
+- Compatibilidad con Endpoints de Hugging Face (etiqueta endpoints_compatible).
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Modo thinking o razonamiento explicito: no disponible.
@@ -48,7 +48,7 @@ Segun la informacion publica sobre la familia Ornith-1.5, esta se describe como 
 - Experimentacion en investigacion sobre abliteracion y alineacion: el modelo sirve como punto de comparacion para estudiar como la eliminacion de rechazos afecta al comportamiento, util para grupos que investigan mecanismos de seguridad y robustez.
 - Generacion de texto creativo sin restricciones tematicas: el caracter "OBLITERATED" lo hace adecuado para tareas de escritura donde los modelos alineados suelen rechazar peticiones, siempre que se respeten las consideraciones legales y eticas aplicables.
 - Procesamiento por lotes en pipelines offline: al distribuirse en GGUF, puede integrarse en scripts de generacion masiva ejecutados en CPU/GPU mediante llama.cpp para tareas de resumen, reescritura o clasificacion de texto.
-- Despliegue en Endpoints de HuggingFace: la etiqueta endpoints_compatible indica que el artefacto esta preparado para su uso en la infraestructura gestionada de HuggingFace, lo que simplifica la exposicion del modelo como API.
+- Despliegue en Endpoints de Hugging Face: la etiqueta endpoints_compatible indica que el artefacto esta preparado para su uso en la infraestructura gestionada de Hugging Face, lo que simplifica la exposicion del modelo como API.
 
 ## Benchmarks y rendimiento
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - f16: aproximadamente 17,9 GB.
 - GPU recomendadas: no especificadas por el autor. Como referencia de ingenieria, las cuantizaciones de 4 bits caben en GPU de consumo con 8 GB (RTX 3060 Ti, RTX 4060 Ti 8 GB, RTX 3070); las de 8 bits requieren 12-16 GB (RTX 4070 Ti, RTX 4080, RTX 4090); la version f16 requiere 24 GB o mas (RTX 3090, RTX 4090, A100 40 GB).
 - Cabida en GPU de consumidor: si, las variantes de 2 a 5 bits caben en GPU de 6-8 GB. Segun una fuente secundaria, la familia Ornith-1.5-9B se ejecuta en una GPU de 8 GB o en un Mac de 16 GB con cuantizacion de 4 bits.
-- Opciones de despliegue: llama.cpp, Ollama, llama-cpp-python, servidores compatibles con la API de OpenAI, HuggingFace Endpoints (etiqueta endpoints_compatible). Compatibilidad con vLLM o TGI: no confirmada en la informacion disponible.
+- Opciones de despliegue: llama.cpp, Ollama, llama-cpp-python, servidores compatibles con la API de OpenAI, Hugging Face Endpoints (etiqueta endpoints_compatible). Compatibilidad con vLLM o TGI: no confirmada en la informacion disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares

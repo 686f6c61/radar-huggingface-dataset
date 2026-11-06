@@ -63,7 +63,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/zrgong/acewam-adaptive-actorcritic-press-button-ec4c9be)
+- [Hugging Face - modelo](https://huggingface.co/zrgong/acewam-adaptive-actorcritic-press-button-ec4c9be)
 - [WAVE: Wasserstein Adaptive Value Estimation for Actor-Critic (arXiv)](https://arxiv.org/abs/2501.10605) - técnica relacionada con estabilización de actor-crítico, posiblemente usada en el entrenamiento.
 - [WAVE (HTML)](https://arxiv.org/html/2501.10605v2)
 - [WAVE en PMLR](https://proceedings.mlr.press/v283/baheri25a.html)

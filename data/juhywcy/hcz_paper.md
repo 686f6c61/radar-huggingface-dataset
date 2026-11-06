@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Juhywcy/hcz_paper` es un repositorio alojado en HuggingFace por el usuario Juhywcy. La model card publicada por el autor no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia MIT, sin información sobre arquitectura, propósito, datos de entrenamiento ni capacidades. El repositorio ocupa 22,3 GB y contiene pesos en formato safetensors, lo que sugiere un modelo de tamaño medio o grande, pero no permite determinar su naturaleza exacta.
+El modelo identificado como `Juhywcy/hcz_paper` es un repositorio alojado en Hugging Face por el usuario Juhywcy. La model card publicada por el autor no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia MIT, sin información sobre arquitectura, propósito, datos de entrenamiento ni capacidades. El repositorio ocupa 22,3 GB y contiene pesos en formato safetensors, lo que sugiere un modelo de tamaño medio o grande, pero no permite determinar su naturaleza exacta.
 
 No se dispone de información sobre el pipeline, los idiomas soportados, el contexto máximo ni los parámetros totales. El nombre del repositorio (`hcz_paper`) apunta a un posible artefacto asociado a un artículo o experimento académico, pero se trata de una inferencia no verificada. Sin model card sustantiva ni documentación adicional, no es posible evaluar su idoneidad para tareas concretas.
 
@@ -79,5 +79,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la arquitec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Juhywcy/hcz_paper
+- Hugging Face: https://huggingface.co/Juhywcy/hcz_paper
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

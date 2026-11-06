@@ -76,6 +76,6 @@ No disponible. Este repositorio no es un modelo de aprendizaje automatico, de mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Robinsonbag/ocr-freeform
+- Hugging Face: https://huggingface.co/Robinsonbag/ocr-freeform
 - Fichero principal de notas: `reading.md` (referenciado en la model card del repositorio)
 - Documentacion del repositorio: `README.md` (referenciado en la model card del repositorio)

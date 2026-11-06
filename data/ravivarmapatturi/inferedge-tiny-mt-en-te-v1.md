@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InferEdge tiny-mt-en-te-v1 es un modelo de traduccion automatica ingles-telugu desarrollado por InferEdge AI (autor ravivarmapatturi) y publicado en HuggingFace. Se trata de un modelo de investigacion entrenado desde pesos aleatorios a lo largo de 30.000 pasos en una unica sesion de Kaggle, con un tamano de repositorio de 0,1 GB y un peso INT8 ONNX de 33,3 MB. Su proposito declarado es la traduccion EN-TE en dispositivo (on-device), orientada a entornos con recursos muy limitados. La model card del autor es explicitamente honesta: el modelo "todavia esta muy por detras de los modelos grandes en texto general y conversacional, y no esta listo para uso real". Supone una mejora sustancial respecto a una version previa (v0) del mismo autor, pero su relevancia practica es fundamentalmente de investigacion y experimentacion con modelos compactos de traduccion. No se dispone de informacion sobre la arquitectura interna, el numero de parametros ni la longitud de contexto maxima en la informacion proporcionada.
+InferEdge tiny-mt-en-te-v1 es un modelo de traduccion automatica ingles-telugu desarrollado por InferEdge AI (autor ravivarmapatturi) y publicado en Hugging Face. Se trata de un modelo de investigacion entrenado desde pesos aleatorios a lo largo de 30.000 pasos en una unica sesion de Kaggle, con un tamano de repositorio de 0,1 GB y un peso INT8 ONNX de 33,3 MB. Su proposito declarado es la traduccion EN-TE en dispositivo (on-device), orientada a entornos con recursos muy limitados. La model card del autor es explicitamente honesta: el modelo "todavia esta muy por detras de los modelos grandes en texto general y conversacional, y no esta listo para uso real". Supone una mejora sustancial respecto a una version previa (v0) del mismo autor, pero su relevancia practica es fundamentalmente de investigacion y experimentacion con modelos compactos de traduccion. No se dispone de informacion sobre la arquitectura interna, el numero de parametros ni la longitud de contexto maxima en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -80,7 +80,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ravivarmapatturi/inferedge-tiny-mt-en-te-v1
+- Modelo en Hugging Face: https://huggingface.co/ravivarmapatturi/inferedge-tiny-mt-en-te-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/ravivarmapatturi/inferedge-en-te-bitext-v1
 - Archivo de pesos de entrenamiento: `model_state.pt` (cargado con `tiny_mt.py`, incluido en el repositorio)
 - Informes completos de evaluacion: archivos `*_onnx_int8.json` en el repositorio del modelo

@@ -110,7 +110,7 @@ La ventaja diferencial de este checkpoint es la fidelidad de cuantizacion (KL 0,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BlairQ/qwen3.8_27b_idiotSavant_sm_86
+- Modelo en Hugging Face: https://huggingface.co/BlairQ/qwen3.8_27b_idiotSavant_sm_86
 - Modelo base (abliterado): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Modelo oficial de referencia: https://huggingface.co/Qwen/Qwen3.8-27B
 - Drafter DFlash2: https://huggingface.co/BlairQ/qwen3.8_27b_idiotSavant_sm_86_dflash2

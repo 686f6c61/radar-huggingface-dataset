@@ -102,7 +102,7 @@ Como alternativas de otras familias del mismo orden de tamano se pueden consider
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SirSahOl/Qwen3-1.7B-Base-chat-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/SirSahOl/Qwen3-1.7B-Base-chat-mlx-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Variante 8-bit MLX: https://huggingface.co/SirSahOl/Qwen3-1.7B-Base-chat-mlx-8bit
 - Variante 16-bit MLX: https://huggingface.co/SirSahOl/Qwen3-1.7B-Base-chat-mlx-16bit

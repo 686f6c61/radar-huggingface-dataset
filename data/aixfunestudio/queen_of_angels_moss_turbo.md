@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Queen_of_Angels_Moss_Turbo es un modelo publicado en HuggingFace por el usuario AIxFuneStudio bajo acceso restringido (gated). El repositorio tiene un tamano de 5,8 GB, lo que sugiere un modelo de aproximadamente 7 a 8 mil millones de parametros en precision de 16 bits, aunque no se confirma en la informacion disponible. El pipeline, los idiomas soportados y la arquitectura no estan declarados en la ficha del repositorio.
+Queen_of_Angels_Moss_Turbo es un modelo publicado en Hugging Face por el usuario AIxFuneStudio bajo acceso restringido (gated). El repositorio tiene un tamano de 5,8 GB, lo que sugiere un modelo de aproximadamente 7 a 8 mil millones de parametros en precision de 16 bits, aunque no se confirma en la informacion disponible. El pipeline, los idiomas soportados y la arquitectura no estan declarados en la ficha del repositorio.
 
 El nombre del modelo sugiere un posible ajuste fino (fine-tune) o merge sobre una base no identificada, con el sufijo "Moss" que podria remitir a la familia MOSS desarrollada por el grupo OpenLAM/Shanghai AI Lab, y "Turbo" que suele indicar una variante optimizada para velocidad de inferencia. No obstante, estos extremos no estan confirmados por la documentacion proporcionada.
 
-La relevancia de esta ficha es limitada por la escasez de metadatos publicos: no hay model card descriptiva, no se listan idiomas, no hay benchmarks ni pipeline declarado. El acceso gated implica que los usuarios deben aceptar condiciones adicionales en HuggingFace antes de descargar los pesos, lo que anade una capa de friccion para su evaluacion.
+La relevancia de esta ficha es limitada por la escasez de metadatos publicos: no hay model card descriptiva, no se listan idiomas, no hay benchmarks ni pipeline declarado. El acceso gated implica que los usuarios deben aceptar condiciones adicionales en Hugging Face antes de descargar los pesos, lo que anade una capa de friccion para su evaluacion.
 
 ## Especificaciones tecnicas
 
@@ -73,4 +73,4 @@ No disponible. No se identifican modelos comparables en la informacion proporcio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIxFuneStudio/Queen_of_Angels_Moss_Turbo
+- Hugging Face: https://huggingface.co/AIxFuneStudio/Queen_of_Angels_Moss_Turbo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed10` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/urd_arab_100mb`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo pequeno de generacion de texto, con 124.770.816 parametros, construido sobre una arquitectura tipo GPT-2 (transformer decoder-only) segun los tags publicados. El entrenamiento se ha realizado mediante Supervised Fine-Tuning (SFT) utilizando la libreria TRL, con un registro de la ejecucion en Weights & Biases asociado al proyecto "new-tokenizers" de la Universidad de Groningen.
+El modelo `francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed10` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/urd_arab_100mb`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo pequeno de generacion de texto, con 124.770.816 parametros, construido sobre una arquitectura tipo GPT-2 (transformer decoder-only) segun los tags publicados. El entrenamiento se ha realizado mediante Supervised Fine-Tuning (SFT) utilizando la libreria TRL, con un registro de la ejecucion en Weights & Biases asociado al proyecto "new-tokenizers" de la Universidad de Groningen.
 
 El modelo base pertenece a la familia Goldfish, una coleccion de modelos monolingues de ~100 MB de datos de entrenamiento orientados a lenguas de bajos recursos. El sufijo "urd_arab" sugiere que el modelo esta orientado al urdu en escritura arabe, aunque la model card no confirma explicitamente los idiomas soportados. El nombre del ajuste ("ppt-mp-struct-core-100mb") apunta a un entrenamiento sobre datos estructurados, aunque no se detalla la composicion del dataset.
 
@@ -49,7 +49,7 @@ El entrenamiento se realizo mediante Supervised Fine-Tuning (SFT) con la libreri
 - Generacion de texto en urdu/escritura arabe en entornos con recursos muy limitados: al ocupar 0,3 GB, puede desplegarse en CPU o GPU de gama baja, aunque la calidad no esta validada.
 - Prototipado rapido de interfaces de generacion de texto: su reducido tamano permite iterar rapidamente en demos locales.
 - Investigacion sobre modelos monolingues de bajos recursos: util para estudiar el comportamiento de modelos Goldfish tras un ajuste especifico.
-- Educacion y formacion: puede emplearse como ejemplo didactico de fine-tuning con TRL y publicacion en HuggingFace.
+- Educacion y formacion: puede emplearse como ejemplo didactico de fine-tuning con TRL y publicacion en Hugging Face.
 - Comparacion de checkpoints de una misma familia: existen variantes con distintas semillas (`_seed10`, `_seed455`) y checkpoints intermedios (`ckpt500_seed10`), utiles para estudios de variabilidad.
 
 ## Benchmarks y rendimiento
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed10 | 124.770.816 | no disponible | no disponible | HuggingFace |
-| goldfish-models/urd_arab_100mb (base) | no disponible | no disponible | no disponible | HuggingFace |
-| francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed455 | no disponible | no disponible | no disponible | HuggingFace |
-| francesca9805/urd-arab-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10 | no disponible | no disponible | no disponible | HuggingFace |
+| francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed10 | 124.770.816 | no disponible | no disponible | Hugging Face |
+| goldfish-models/urd_arab_100mb (base) | no disponible | no disponible | no disponible | Hugging Face |
+| francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed455 | no disponible | no disponible | no disponible | Hugging Face |
+| francesca9805/urd-arab-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10 | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento publicados para ninguno de los modelos comparados, por lo que la comparacion se limita a disponibilidad y parametros declarados.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento publicados para ninguno de los modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/urd_arab_100mb
 - Checkpoint intermedio: https://huggingface.co/francesca9805/urd-arab-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10
 - Variante con otra semilla: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed455

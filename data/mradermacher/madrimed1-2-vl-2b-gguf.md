@@ -30,7 +30,7 @@ La model card del cuantizador no aporta informacion sobre longitud de contexto, 
 
 La informacion disponible identifica el modelo como un VLM de la familia Qwen3-VL, con 2,03 B de parametros totales en un unico bloque denso (sin mezcla de expertos). El despliegue multimodal requiere dos artefactos: los pesos del modelo de lenguaje y el proyector mmproj que conecta el codificador visual con el decodificador de texto. El repositorio incluye ambos en formato GGUF, lo que confirma una separacion estandar entre torre de vision y torre de lenguaje.
 
-Respecto al entrenamiento, los tags del repositorio mencionan GRPO y RLHF, ademas de los conjuntos VQA-RAD, SLAKE, MedXpertQA, MedMCQA y Path-VQA, lo que sugiere una fase de ajuste supervisado sobre datos medicos seguida de optimizacion con preferencias o recompensas verificables. La model card no detalla el numero de tokens de entrenamiento, la composicion del dataset, la mezcla de datos generales y medicos ni la configuracion exacta del pipeline de alineacion. Los metadatos de cuantizacion indican convert_type hf, quantize_version 2 y output_tensor_quantised 1, es decir, una conversion desde pesos HuggingFace con cuantizacion de tensores de salida.
+Respecto al entrenamiento, los tags del repositorio mencionan GRPO y RLHF, ademas de los conjuntos VQA-RAD, SLAKE, MedXpertQA, MedMCQA y Path-VQA, lo que sugiere una fase de ajuste supervisado sobre datos medicos seguida de optimizacion con preferencias o recompensas verificables. La model card no detalla el numero de tokens de entrenamiento, la composicion del dataset, la mezcla de datos generales y medicos ni la configuracion exacta del pipeline de alineacion. Los metadatos de cuantizacion indican convert_type hf, quantize_version 2 y output_tensor_quantised 1, es decir, una conversion desde pesos Hugging Face con cuantizacion de tensores de salida.
 
 ## Capacidades
 
@@ -91,8 +91,8 @@ No se dispone de datos de rendimiento de modelos alternativos en la informacion 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| madrimed1.2-VL-2B-GGUF (este repositorio) | 2,03 B | no disponible | GGUF (12 cuantizaciones + 2 mmproj) | apache-2.0 | publico en HuggingFace |
-| madrisight/madrimed1.2-VL-2B (modelo base) | 2,03 B | no disponible | safetensors | apache-2.0 | publico en HuggingFace |
+| madrimed1.2-VL-2B-GGUF (este repositorio) | 2,03 B | no disponible | GGUF (12 cuantizaciones + 2 mmproj) | apache-2.0 | publico en Hugging Face |
+| madrisight/madrimed1.2-VL-2B (modelo base) | 2,03 B | no disponible | safetensors | apache-2.0 | publico en Hugging Face |
 | Otros VLM medicos de tamano similar (por ejemplo variantes tipo LLaVA-Med o MedGemma) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han encontrado en los resultados de busqueda enlaces ni datos utiles para establecer comparaciones con alternativas de la misma categoria.

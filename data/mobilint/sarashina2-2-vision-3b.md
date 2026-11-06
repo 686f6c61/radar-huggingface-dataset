@@ -83,7 +83,7 @@ La comparacion con alternativas de la misma categoria no puede completarse con l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mobilint/sarashina2.2-vision-3b
+- Repositorio Hugging Face: https://huggingface.co/mobilint/sarashina2.2-vision-3b
 - Modelo base: https://huggingface.co/sbintuitions/sarashina2.2-vision-3b
 - Sitio web de Mobilint: https://mobilint.com
 - Repositorio de assets de Mobilint en GitHub: https://github.com/mobilint/.github

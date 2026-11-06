@@ -78,7 +78,7 @@ La comparativa se basa en informacion publica; no hay datos de rendimiento para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SiddhJagani/Qwen3.8-9B-mlx-4Bit
+- Modelo en Hugging Face: https://huggingface.co/SiddhJagani/Qwen3.8-9B-mlx-4Bit
 - Modelo base (empero-ai/Qwen3.8-9B): https://huggingface.co/empero-ai/Qwen3.8-9B
 - Repositorio oficial de Qwen3.8 (GitHub): https://github.com/QwenLM/Qwen3.8
 - Pagina de Qwen3.8 en OpenLM.ai: https://openlm.ai/qwen3.8/

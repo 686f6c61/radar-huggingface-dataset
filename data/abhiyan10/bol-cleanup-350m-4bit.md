@@ -79,7 +79,7 @@ No se dispone de datos comparativos directos en la informacion proporcionada. El
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abhiyan10/bol-cleanup-350m-4bit
+- Hugging Face: https://huggingface.co/abhiyan10/bol-cleanup-350m-4bit
 - Repositorio de Bol: https://github.com/abhiyan100/bol
 - Blog de Liquid AI sobre LFM2.5-350M: https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-350M
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-350M

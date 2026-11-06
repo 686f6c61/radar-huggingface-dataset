@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-sirius-v1-link01 | 0,8 B (base) + LoRA | No disponible | Adaptador PEFT para decision de robot | Apache 2.0 | HuggingFace, 19 descargas |
-| Qwen/Qwen3.5-0.8B (base) | 0,8 B | No disponible | LLM generalista | No disponible en la informacion | HuggingFace |
+| connectailab-rl-sirius-v1-link01 | 0,8 B (base) + LoRA | No disponible | Adaptador PEFT para decision de robot | Apache 2.0 | Hugging Face, 19 descargas |
+| Qwen/Qwen3.5-0.8B (base) | 0,8 B | No disponible | LLM generalista | No disponible en la informacion | Hugging Face |
 | Politica PPO del profesor (`brain.json`) | No disponible | No aplica | Red de politica RL | No disponible | Repositorio CONNECT TYCOON |
 
 No se dispone de informacion sobre otros adaptadores equivalentes de destilacion RL a LLM en el mismo dominio, por lo que la comparativa con alternativas directas no esta disponible.
@@ -94,7 +94,7 @@ No se dispone de informacion sobre otros adaptadores equivalentes de destilacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gutgai/connectailab-rl-sirius-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/gutgai/connectailab-rl-sirius-v1-link01
 - Repositorio de codigo CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

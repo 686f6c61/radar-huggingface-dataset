@@ -86,6 +86,6 @@ No se dispone de datos verificables en la información proporcionada para compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/randmaru/MiniCPM5-2B-mlx-mxfp4
+- Repositorio Hugging Face: https://huggingface.co/randmaru/MiniCPM5-2B-mlx-mxfp4
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Papers, blogs, repositorios o demos adicionales: no se han encontrado enlaces relevantes en la búsqueda web realizada; los resultados obtenidos correspondían a páginas de soporte de Microsoft sin relación con el modelo.

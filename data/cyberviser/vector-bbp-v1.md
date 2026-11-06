@@ -41,7 +41,7 @@ La model card indica que el ajuste se realizó únicamente en una RTX 5070 local
 - Herencia de capacidades generales del modelo base: generación de texto, razonamiento, matemáticas y código (no verificadas específicamente en el adaptador).
 - Soporte de tool calling / function calling: no confirmado en la información disponible para el adaptador. El modelo base Mistral-7B-Instruct-v0.3 lo soporta.
 - Soporte de agentes y razonamiento multi-paso: no confirmado en la información disponible.
-- Capacidades multilingües: no disponibles. No se declara ningún idioma en la model card ni en los metadatos de HuggingFace.
+- Capacidades multilingües: no disponibles. No se declara ningún idioma en la model card ni en los metadatos de Hugging Face.
 - Capacidad especial declarada: restricción de comportamiento para no inventar identificadores de programa ("auth hardening").
 - Modo de pensamiento explícito, visión o audio: no disponible.
 
@@ -73,10 +73,10 @@ La model card no incluye métricas de ningún tipo (MMLU, HumanEval, GSM8K ni ev
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyberviser/vector-bbp-v1 | 7.000 M (base) + adaptador LoRA | No disponible (base: 32.768 tokens) | No publicado | Apache 2.0 | HuggingFace, 0 descargas |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7.000 M | 32.768 tokens | Publicado por Mistral AI | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| WhiteRabbitNeo (variantes 7B/13B/33B) | 7.000 M - 33.000 M | Variable segun variante | Publicado por el autor del modelo | Licencia propia con restricciones | HuggingFace |
-| Foundation-Sec-8B | 8.000 M | No disponible en esta busqueda | Publicado por el autor del modelo | No disponible en esta busqueda | HuggingFace |
+| cyberviser/vector-bbp-v1 | 7.000 M (base) + adaptador LoRA | No disponible (base: 32.768 tokens) | No publicado | Apache 2.0 | Hugging Face, 0 descargas |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7.000 M | 32.768 tokens | Publicado por Mistral AI | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| WhiteRabbitNeo (variantes 7B/13B/33B) | 7.000 M - 33.000 M | Variable segun variante | Publicado por el autor del modelo | Licencia propia con restricciones | Hugging Face |
+| Foundation-Sec-8B | 8.000 M | No disponible en esta busqueda | Publicado por el autor del modelo | No disponible en esta busqueda | Hugging Face |
 
 Nota: los datos de las alternativas se incluyen como contexto de categoria y no proceden de la informacion proporcionada en esta busqueda; no se dispone de una comparacion de rendimiento verificada entre este adaptador y dichas alternativas.
 
@@ -95,6 +95,6 @@ Nota: los datos de las alternativas se incluyen como contexto de categoria y no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyberviser/vector-bbp-v1
+- Modelo en Hugging Face: https://huggingface.co/cyberviser/vector-bbp-v1
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Busqueda web realizada: no se han encontrado enlaces relevantes al modelo (papers, blogs, repos o demos). Los resultados devueltos corresponden a WikiLeaks y no guardan relacion con este adaptador.

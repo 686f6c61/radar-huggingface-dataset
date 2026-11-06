@@ -102,7 +102,7 @@ Advertencia metodologica: estas cifras las publica el propio autor del modelo, n
 | Tapestry 3 Flash | Mismo tamano (cifra exacta no disponible) | No disponible | 48 min | No disponible en la informacion | 112/133 (84,2 %) |
 | Loom Spark 1.8 Flash | 2,62 M | No disponible | No disponible | No disponible en la informacion | No disponible |
 
-No se dispone de comparaciones publicadas con modelos externos de la misma categoria (por ejemplo, otras familias de modelos de menos de 10 M de parametros orientados a tool calling o RAG), ni de resultados en benchmarks estandar que permitan situarlo frente a alternativas de HuggingFace. Los unicos puntos de comparacion documentados son internos a la familia Loom.
+No se dispone de comparaciones publicadas con modelos externos de la misma categoria (por ejemplo, otras familias de modelos de menos de 10 M de parametros orientados a tool calling o RAG), ni de resultados en benchmarks estandar que permitan situarlo frente a alternativas de Hugging Face. Los unicos puntos de comparacion documentados son internos a la familia Loom.
 
 ## Limitaciones y advertencias
 
@@ -122,7 +122,7 @@ No se dispone de comparaciones publicadas con modelos externos de la misma categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/textilelabs/Loom-Spark-3-Flash
+- Modelo en Hugging Face: https://huggingface.co/textilelabs/Loom-Spark-3-Flash
 - Archivo de atribucion `ATTRIBUTION.md`: incluido en el repositorio del modelo; no se proporciona URL directa en la informacion disponible
 - Harness de agente `harness.py`: incluido en el repositorio del modelo; no se proporciona URL directa en la informacion disponible
 - Paper tecnico: no disponible

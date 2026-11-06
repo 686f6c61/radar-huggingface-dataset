@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Koubra-Gaby/facebook_nllb_train_on_shu es un repositorio de modelo publicado en HuggingFace por el usuario Koubra-Gaby. La model card asociada no contiene descripcion, datos de entrenamiento ni resultados de evaluacion: unicamente declara la licencia apache-2.0. El repositorio registra 0 descargas y 0 "likes", y no tiene pipeline declarado, por lo que se trata de una publicacion sin validacion por parte de la comunidad.
+Koubra-Gaby/facebook_nllb_train_on_shu es un repositorio de modelo publicado en Hugging Face por el usuario Koubra-Gaby. La model card asociada no contiene descripcion, datos de entrenamiento ni resultados de evaluacion: unicamente declara la licencia apache-2.0. El repositorio registra 0 descargas y 0 "likes", y no tiene pipeline declarado, por lo que se trata de una publicacion sin validacion por parte de la comunidad.
 
 El identificador del repositorio sugiere que se trata de un ajuste fino (fine-tuning) del modelo NLLB de Meta (No Language Left Behind) sobre un corpus etiquetado como "shu". En la nomenclatura ISO 639-3, "shu" corresponde al arabe chadiano (Shuwa Arabic), lo que apuntaria a un modelo de traduccion automatica orientado a esa lengua. Esta interpretacion se deduce exclusivamente del nombre del repositorio y no esta confirmada en ninguna seccion de la model card.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Como referencia general de la familia NLLB-200 (sin confirmar que este repositorio use una de estas variantes): el modelo distilado de 600M en fp16 ocupa aproximadamente 1,2 GB de pesos y puede ejecutarse en GPUs consumer con 6-8 GB de VRAM; la variante de 1.3B ronda los 2,6 GB en fp16; la de 3.3B supera los 6,6 GB en fp16; y la variante MoE de 54B requiere multiples aceleradores de clase A100 o H100.
 - GPU recomendadas: no disponibles para este repositorio concreto. Para la familia NLLB, una RTX 4090 (24 GB) cubre las variantes hasta 3.3B en fp16 y la de 600M con margen amplio; A100 u H100 son necesarias para la variante de 54B.
 - Compatibilidad con GPU consumer: indeterminada por falta de datos de tamano.
-- Opciones de despliegue: no documentadas. Si los pesos son compatibles, podrian usarse frameworks de traduccion como HuggingFace Transformers, CTranslate2, vLLM o TGI, y para variantes pequenas convertidas a GGUF, llama.cpp u Ollama.
+- Opciones de despliegue: no documentadas. Si los pesos son compatibles, podrian usarse frameworks de traduccion como Hugging Face Transformers, CTranslate2, vLLM o TGI, y para variantes pequenas convertidas a GGUF, llama.cpp u Ollama.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -87,5 +87,5 @@ La comparativa de rendimiento con estos modelos no puede establecerse porque no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Koubra-Gaby/facebook_nllb_train_on_shu
+- Hugging Face: https://huggingface.co/Koubra-Gaby/facebook_nllb_train_on_shu
 - No se han encontrado en la busqueda web otros enlaces (papers, blogs, repositorios o demos) asociados a este modelo.

@@ -81,7 +81,7 @@ Los resultados por prompt están en `eval_v0_results.json` del repositorio de Gi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Smallayallm (este adaptador) | 12B base + 65,6 M LoRA | Entrenado a 1024 tokens | Pureza 89,7 %, chrF++ en→ml 38,73, ml→en 61,08 | Apache 2.0 | Pesos en HuggingFace, 0 descargas |
+| Smallayallm (este adaptador) | 12B base + 65,6 M LoRA | Entrenado a 1024 tokens | Pureza 89,7 %, chrF++ en→ml 38,73, ml→en 61,08 | Apache 2.0 | Pesos en Hugging Face, 0 descargas |
 | `unsloth/gemma-4-12b-it` (base) | 12B | No disponible | Pureza 81,9 %, chrF++ en→ml 25,57, ml→en 33,45 | No disponible en la información proporcionada | Mirror accesible del checkpoint instruct |
 | Otros adaptadores LoRA para malayalam | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vaishaks/smallayallm-gemma4-12b-ml-lora
+- Modelo en Hugging Face: https://huggingface.co/vaishaks/smallayallm-gemma4-12b-ml-lora
 - Modelo base: https://huggingface.co/unsloth/gemma-4-12b-it
 - Repositorio GitHub (paper, método y `eval_v0_results.json`): https://github.com/vaishaks/smallayallm
 - Dataset de SFT: https://huggingface.co/datasets/vaishaks/smallayallm-sft-v0

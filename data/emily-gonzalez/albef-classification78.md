@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`emily-gonzalez/albef-classification78` es un repositorio de HuggingFace publicado por el usuario `emily-gonzalez` que contiene una implementación funcional de ALBEF (Align before Fuse) orientada a tareas de clasificación, con configuración declarada como "large". El repositorio se presenta explícitamente como un andamiaje de código transparente con pruebas de humo repetibles, no como un modelo entrenado ni evaluado. Incluye `eval.py`, `config.json`, `training_args.json` y un `model.safetensors` descrito por el autor como checkpoint de inicialización válido para smoke tests.
+`emily-gonzalez/albef-classification78` es un repositorio de Hugging Face publicado por el usuario `emily-gonzalez` que contiene una implementación funcional de ALBEF (Align before Fuse) orientada a tareas de clasificación, con configuración declarada como "large". El repositorio se presenta explícitamente como un andamiaje de código transparente con pruebas de humo repetibles, no como un modelo entrenado ni evaluado. Incluye `eval.py`, `config.json`, `training_args.json` y un `model.safetensors` descrito por el autor como checkpoint de inicialización válido para smoke tests.
 
 El checkpoint contiene 24.832 parámetros totales según los metadatos de safetensors, una cifra llamativamente baja para una configuración etiquetada como "large" en ALBEF, lo que refuerza que se trata de un artefacto de prueba y no de un modelo con capacidad funcional real. La arquitectura declarada combina atención dispersa, fusión de bajo rango, activación GELU y normalización por lotes (BatchNorm).
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| albef-classification78 | 24.832 | no disponible | Clasificacion | Apache-2.0 | Repositorio HuggingFace de 0,0 GB, 0 descargas |
+| albef-classification78 | 24.832 | no disponible | Clasificacion | Apache-2.0 | Repositorio Hugging Face de 0,0 GB, 0 descargas |
 | ALBEF original (Salesforce) | no disponible en la informacion proporcionada | no disponible | Vision-lenguaje (retrieval, matching, clasificacion) | no disponible en la informacion proporcionada | Referencia externa conocida, no citada en los resultados de busqueda |
 | BLIP | no disponible en la informacion proporcionada | no disponible | Vision-lenguaje | no disponible en la informacion proporcionada | no disponible |
 | CLIP | no disponible en la informacion proporcionada | no disponible | Vision-lenguaje contrastivo | no disponible en la informacion proporcionada | no disponible |
@@ -89,9 +89,9 @@ La comparacion cuantitativa no es posible con los datos disponibles. La busqueda
 - Cero adopcion verificable: 0 descargas y 0 likes en el momento de redactar esta ficha, sin senales externas de validacion por parte de la comunidad.
 - Licencia: Apache-2.0 permite uso comercial, modificacion y redistribucion con atribucion, pero la propia model card advierte de que deben revisarse por separado los terminos de los datos de origen si se combina con datasets externos.
 - Fecha de creacion registrada como 2026-09-24, posterior a la fecha habitual de consulta; conviene verificar la coherencia temporal del repositorio.
-- Carga no estandar: al ser una implementacion personalizada, las APIs de carga automatica de HuggingFace requieren un adaptador explicito.
+- Carga no estandar: al ser una implementacion personalizada, las APIs de carga automatica de Hugging Face requieren un adaptador explicito.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/emily-gonzalez/albef-classification78
+- Repositorio en Hugging Face: https://huggingface.co/emily-gonzalez/albef-classification78
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la busqueda web realizada. Los resultados devueltos corresponden a terminos homonimos (la marca francesa de maquinaria Emily, el nombre propio Emily y la pelicula "Emily" de 2022), sin ninguna relacion con el modelo descrito, por lo que no se incluyen.

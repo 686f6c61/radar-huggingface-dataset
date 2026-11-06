@@ -68,5 +68,5 @@ No se dispone de información sobre modelos comparables en la fuente proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Onol/pi05-piper-take-cup-off-rack-right-lora
+- Repositorio Hugging Face: https://huggingface.co/Onol/pi05-piper-take-cup-off-rack-right-lora
 - Modelo base (referencia): physical-intelligence/pi0.5 (no se proporciona URL directa en la información)

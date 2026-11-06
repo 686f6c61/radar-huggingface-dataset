@@ -88,8 +88,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto / memoria | Entrada y salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `maskjp/pimem-relative-joints-all10-sft-30k` | 3,62 mil M | K=1, un fotograma por camara, sin memoria temporal | 3 camaras 224x224 + estado 7 dim + instruccion -> chunk de 50 acciones de 10 dim | apache-2.0 | HuggingFace, requiere plugin `lerobot_policy_pimem` |
-| `lerobot/pi05_base` (modelo de partida) | PaliGemma 2B + experto de 300M | no disponible | VLA pi0.5 (vision, lenguaje y acciones) | no disponible | HuggingFace |
+| `maskjp/pimem-relative-joints-all10-sft-30k` | 3,62 mil M | K=1, un fotograma por camara, sin memoria temporal | 3 camaras 224x224 + estado 7 dim + instruccion -> chunk de 50 acciones de 10 dim | apache-2.0 | Hugging Face, requiere plugin `lerobot_policy_pimem` |
+| `lerobot/pi05_base` (modelo de partida) | PaliGemma 2B + experto de 300M | no disponible | VLA pi0.5 (vision, lenguaje y acciones) | no disponible | Hugging Face |
 | Familia pi0 / pi0.5 (referenciada en las etiquetas) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables en la informacion proporcionada sobre alternativas de la misma categoria (por ejemplo, otras politicas VLA de tamano comparable) para completar una comparacion de rendimiento, contexto o licencia.
@@ -106,13 +106,13 @@ No se dispone de datos verificables en la informacion proporcionada sobre altern
 - Sesgos: no se publica analisis de sesgos. Los datos provienen de teleoperacion humana en tareas concretas, lo que puede trasladar sesgos de posicion, iluminacion y estilo de demostracion.
 - Riesgo de alucinacion o de acciones incorrectas: no cuantificado por el autor; no hay evaluaciones de seguridad ni de fallos en robot.
 - Licencia apache-2.0 en el repositorio, lo que en principio permite uso comercial, pero el modelo depende de `lerobot/pi05_base` y del plugin `lerobot_policy_pimem`, cuyas licencias no se detallan en la informacion disponible. Conviene verificarlas antes de un uso comercial.
-- Fecha de publicacion en HuggingFace: 28 de septiembre de 2026. El repositorio no registra descargas ni likes en el momento de la consulta, por lo que no hay evidencia de uso en produccion.
+- Fecha de publicacion en Hugging Face: 28 de septiembre de 2026. El repositorio no registra descargas ni likes en el momento de la consulta, por lo que no hay evidencia de uso en produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maskjp/pimem-relative-joints-all10-sft-30k
+- Modelo en Hugging Face: https://huggingface.co/maskjp/pimem-relative-joints-all10-sft-30k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
-- Datasets citados en la model card (identificadores de HuggingFace):
+- Datasets citados en la model card (identificadores de Hugging Face):
   - https://huggingface.co/datasets/L5vel/u850-fridge-drink-eef-merged-v30
   - https://huggingface.co/datasets/L5vel/base4-clean-table-eef-merged-v30
   - https://huggingface.co/datasets/L5vel/base4-mobile-door-eef-merged-v30

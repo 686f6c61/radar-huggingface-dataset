@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`model_495682530_mixer_small` es un modelo de arquitectura *mixer* a escala pequeña, publicado por el usuario `ahmetyildirimzo` en HuggingFace. Su propósito declarado es servir como implementación de referencia para tareas de tipo multitask, combinando componentes como atención multi-query, fusión bilinear y normalización por grupos. Se distribuye bajo licencia CC-BY-4.0, lo que permite uso y adaptación con atribución.
+`model_495682530_mixer_small` es un modelo de arquitectura *mixer* a escala pequeña, publicado por el usuario `ahmetyildirimzo` en Hugging Face. Su propósito declarado es servir como implementación de referencia para tareas de tipo multitask, combinando componentes como atención multi-query, fusión bilinear y normalización por grupos. Se distribuye bajo licencia CC-BY-4.0, lo que permite uso y adaptación con atribución.
 
 El repositorio contiene un único artefacto principal: `model_495682530_mixer_small.py`, un script de Python con la definición del modelo. No se incluyen pesos preentrenados ni checkpoints, por lo que es un recurso orientado a desarrollo y experimentación más que a despliegue directo. La fecha de creación es de agosto de 2026, y actualmente no registra descargas ni valoraciones.
 
@@ -71,7 +71,7 @@ No hay datos comparativos publicados. A modo de referencia arquitectónica, se p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ahmetyildirimzo/model_495682530_mixer_small
+- Hugging Face: https://huggingface.co/ahmetyildirimzo/model_495682530_mixer_small
 - Model card (README): https://huggingface.co/ahmetyildirimzo/model_495682530_mixer_small/raw/main/README.md
 
 No se han encontrado papers, blogs, repositorios adicionales o demos relacionados con este modelo en la búsqueda web realizada.

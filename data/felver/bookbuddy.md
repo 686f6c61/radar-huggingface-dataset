@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BookBuddy es un modelo publicado en HuggingFace por el usuario Felver, con licencia MIT y etiquetado para la región de Estados Unidos. En el momento de la consulta, el repositorio no contiene una model card sustancial ni información técnica adicional: solo se indica la licencia. No se dispone de datos sobre arquitectura, tamaño, contexto, capacidades o entrenamiento. El modelo no registra descargas ni valoraciones, lo que sugiere que se trata de un proyecto reciente o de baja difusión. Dada la ausencia de documentación, cualquier evaluación técnica resulta imposible con los datos disponibles.
+BookBuddy es un modelo publicado en Hugging Face por el usuario Felver, con licencia MIT y etiquetado para la región de Estados Unidos. En el momento de la consulta, el repositorio no contiene una model card sustancial ni información técnica adicional: solo se indica la licencia. No se dispone de datos sobre arquitectura, tamaño, contexto, capacidades o entrenamiento. El modelo no registra descargas ni valoraciones, lo que sugiere que se trata de un proyecto reciente o de baja difusión. Dada la ausencia de documentación, cualquier evaluación técnica resulta imposible con los datos disponibles.
 
 ## Especificaciones tecnicas
 
@@ -51,4 +51,4 @@ No disponible. Al carecer de información sobre arquitectura, tamaño o rendimie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [Felver/BookBuddy](https://huggingface.co/Felver/BookBuddy)
+- Repositorio en Hugging Face: [Felver/BookBuddy](https://huggingface.co/Felver/BookBuddy)

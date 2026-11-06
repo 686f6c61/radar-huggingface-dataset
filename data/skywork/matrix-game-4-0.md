@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto / cache | Resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Matrix-Game 4.0 | 5.001.016.512 por punto de control (BF16) | Cache de atencion de 21 fotogramas latentes | 480x864 RGB | Apache-2.0 | Pesos en HuggingFace; requiere codigo de inferencia propio |
-| Wan2.2-Fun-5B-Control (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | Apache-2.0 | HuggingFace (alibaba-pai/Wan2.2-Fun-5B-Control) |
+| Matrix-Game 4.0 | 5.001.016.512 por punto de control (BF16) | Cache de atencion de 21 fotogramas latentes | 480x864 RGB | Apache-2.0 | Pesos en Hugging Face; requiere codigo de inferencia propio |
+| Wan2.2-Fun-5B-Control (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | Apache-2.0 | Hugging Face (alibaba-pai/Wan2.2-Fun-5B-Control) |
 | Otros renderizadores de video causal para juegos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada no incluye datos de rendimiento comparativo entre Matrix-Game 4.0 y otras alternativas, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
@@ -90,7 +90,7 @@ La informacion proporcionada no incluye datos de rendimiento comparativo entre M
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Skywork/Matrix-Game-4.0
+- Modelo en Hugging Face: https://huggingface.co/Skywork/Matrix-Game-4.0
 - Codigo fuente: https://github.com/SkyworkAI/Matrix-Game
 - Sitio web del proyecto: https://matrix-game-v4-0.github.io/page/
 - Modelo base (Wan2.2-Fun-5B-Control): https://huggingface.co/alibaba-pai/Wan2.2-Fun-5B-Control

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tonykuo85/coca-multitask-int8` es un repositorio experimental publicado por el usuario Tony Kuo (tonykuo85) en HuggingFace bajo licencia Apache 2.0. Contiene una implementacion propia de una arquitectura denominada "Coca" orientada a tareas multitarea, con un conjunto de configuracion en escala "nano" pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. Segun la model card, el checkpoint incluido (`model.safetensors`) es unicamente una inicializacion valida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado.
+`tonykuo85/coca-multitask-int8` es un repositorio experimental publicado por el usuario Tony Kuo (tonykuo85) en Hugging Face bajo licencia Apache 2.0. Contiene una implementacion propia de una arquitectura denominada "Coca" orientada a tareas multitarea, con un conjunto de configuracion en escala "nano" pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. Segun la model card, el checkpoint incluido (`model.safetensors`) es unicamente una inicializacion valida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado.
 
 El dato real extraido de los ficheros safetensors indica un total de 49.600 parametros, una cifra extremadamente reducida que confirma la escala "nano" descrita por el autor. El repositorio no declara idiomas soportados, pipeline de tareas ni resultados de benchmarks, y su tamano es practicamente nulo (0.0 GB). Pese a que el nombre del repositorio incluye el sufijo "int8", la model card no documenta ningun proceso de cuantizacion a 8 bits.
 
@@ -45,7 +45,7 @@ Dado que el modelo no esta entrenado, los casos de uso siguientes son escenarios
 - Pruebas de humo de pipelines de entrenamiento: el checkpoint de inicializacion permite validar que el codigo de carga, el bucle de entrenamiento y la serializacion en safetensors funcionan correctamente sin coste computacional.
 - Reproduccion de experimentos academicos: al ser un repositorio pequeno y con configuracion incluida (`config.json`, `training_args.json`), facilita fijar semillas y comparar recetas de optimizacion como novograd con schedule exponencial.
 - Base para experimentos de cuantizacion: pese a que el nombre sugiere int8, no hay cuantizacion aplicada; podria usarse como banco de pruebas para medir el impacto de INT8 frente a FP16 en una red minima.
-- Docencia y formacion: util para ilustrar como se estructura un repositorio de modelo en HuggingFace (pesos, config, argumentos de entrenamiento y script de prediccion).
+- Docencia y formacion: util para ilustrar como se estructura un repositorio de modelo en Hugging Face (pesos, config, argumentos de entrenamiento y script de prediccion).
 - Comparacion de arquitecturas multitarea: podria servir como baseline de capacidad minima en experimentos controlados, siempre que se entrene con la misma exposicion de datos y presupuesto de ajuste que los rivales.
 
 ## Benchmarks y rendimiento
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tonykuo85/coca-multitask-int8 | 49.600 | no disponible | sin benchmarks (no entrenado) | Apache 2.0 | publico en HuggingFace |
-| justatharvagarwal/multitask-int8 | no disponible | no disponible | sin benchmarks declarados | no disponible en la busqueda | publico en HuggingFace (variante "large" de la misma plantilla Coca) |
+| tonykuo85/coca-multitask-int8 | 49.600 | no disponible | sin benchmarks (no entrenado) | Apache 2.0 | publico en Hugging Face |
+| justatharvagarwal/multitask-int8 | no disponible | no disponible | sin benchmarks declarados | no disponible en la busqueda | publico en Hugging Face (variante "large" de la misma plantilla Coca) |
 | CoCa original (Google) | no disponible en la busqueda | no disponible | no disponible en la busqueda | no disponible | no disponible |
 
 La comparativa se limita a un repositorio hermano que emplea la misma plantilla "Coca for Multitask" en escala "large", lo que sugiere que estos repositorios comparten una estructura generada y no un linaje de modelos consolidado. No se dispone de datos suficientes para comparar parametros, contexto o rendimiento con alternativas de la misma categoria.
@@ -77,13 +77,13 @@ La comparativa se limita a un repositorio hermano que emplea la misma plantilla 
 - Riesgo de alucinacion: no evaluable, ya que el modelo no ha sido entrenado ni alineado.
 - No se documentan sesgos conocidos ni limitaciones de contexto o idioma porque no hay informacion al respecto.
 - La etiqueta "int8" del nombre no esta respaldada por ningun procedimiento de cuantizacion documentado; conviene no asumir que los pesos estan cuantizados a 8 bits.
-- Implementacion personalizada: las APIs de carga automatica de HuggingFace (por ejemplo `AutoModel`) no funcionaran sin un adaptador explicito.
+- Implementacion personalizada: las APIs de carga automatica de Hugging Face (por ejemplo `AutoModel`) no funcionaran sin un adaptador explicito.
 - Licencia Apache 2.0: permite uso comercial del codigo y los pesos, pero el autor advierte de que deben revisarse por separado los terminos de los datos de origen si se usa con datasets externos.
 - Para cualquier resultado publicado debe documentarse un checkpoint entrenado de forma separada de estos valores por defecto.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tonykuo85/coca-multitask-int8
+- Repositorio en Hugging Face: https://huggingface.co/tonykuo85/coca-multitask-int8
 - Perfil del autor: https://huggingface.co/tonykuo85
 - Repositorio relacionado (misma plantilla Coca, escala large): https://huggingface.co/justatharvagarwal/multitask-int8
 - Guia general de cuantizacion (referencia externa sobre FP16/INT8/INT4/FP8): https://chip.computer/guides/quantization-guide-ai-inference

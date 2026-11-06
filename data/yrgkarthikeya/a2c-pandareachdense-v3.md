@@ -2,9 +2,9 @@
 
 ## Resumen
 
-a2c-PandaReachDense-v3 es una política de aprendizaje por refuerzo profundo publicada por el usuario YRGKarthikeya en HuggingFace Hub. Se trata de un agente entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno PandaReachDense-v3, un escenario de control continuo de robótica manipuladora incluido en la familia panda-gym. El modelo se distribuye a través de la librería stable-baselines3 y está pensado para ser cargado con la utilidad huggingface_sb3.
+a2c-PandaReachDense-v3 es una política de aprendizaje por refuerzo profundo publicada por el usuario YRGKarthikeya en Hugging Face Hub. Se trata de un agente entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno PandaReachDense-v3, un escenario de control continuo de robótica manipuladora incluido en la familia panda-gym. El modelo se distribuye a través de la librería stable-baselines3 y está pensado para ser cargado con la utilidad huggingface_sb3.
 
-A diferencia de los modelos de lenguaje, este artefacto no procesa texto ni tiene ventana de contexto: es un controlador que mapea observaciones del entorno (posición del efector final del robot Franka Emika Panda y objetivos) a acciones continuas de las articulaciones. Su relevancia es, por tanto, exclusivamente investigadora o docente: sirve como ejemplo reproducible de integración entre stable-baselines3, panda-gym y el Hub de HuggingFace, y como posible línea base en experimentos de manipulación robótica simulada.
+A diferencia de los modelos de lenguaje, este artefacto no procesa texto ni tiene ventana de contexto: es un controlador que mapea observaciones del entorno (posición del efector final del robot Franka Emika Panda y objetivos) a acciones continuas de las articulaciones. Su relevancia es, por tanto, exclusivamente investigadora o docente: sirve como ejemplo reproducible de integración entre stable-baselines3, panda-gym y el Hub de Hugging Face, y como posible línea base en experimentos de manipulación robótica simulada.
 
 El resultado declarado por el autor en la model card es un retorno medio de -0,24 ± 0,14 en PandaReachDense-v3, con la verificación marcada como falsa (`verified: false`). El repositorio no incluye hiperparámetros de entrenamiento, semillas ni fragmento de código funcional (la sección de uso contiene un `TODO`), y acumula cero descargas y cero valoraciones en el momento de redactar esta ficha.
 
@@ -25,7 +25,7 @@ El resultado declarado por el autor en la model card es un retorno medio de -0,2
 | Librería | stable-baselines3 |
 | Tarea | reinforcement-learning (control continuo, alcance de objetivo) |
 | Métrica declarada | mean_reward = -0,24 ± 0,14 (no verificada) |
-| Fecha de publicación en el Hub | 2026-09-21 (según los metadatos de HuggingFace) |
+| Fecha de publicación en el Hub | 2026-09-21 (según los metadatos de Hugging Face) |
 | Descargas / valoraciones | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -101,7 +101,7 @@ No se identifican en la información disponible otros modelos publicados por el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YRGKarthikeya/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/YRGKarthikeya/a2c-PandaReachDense-v3
 - Artículo de panda-gym: https://arxiv.org/abs/2106.13687
 - Repositorio de stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad de carga desde el Hub: https://github.com/huggingface/huggingface_sb3

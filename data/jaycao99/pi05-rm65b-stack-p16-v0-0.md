@@ -75,7 +75,7 @@ Nota: los datos de OpenVLA son de conocimiento público, pero no se ha verificad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JayCao99/pi05-rm65b-stack-p16-v0.0
+- Repositorio Hugging Face: https://huggingface.co/JayCao99/pi05-rm65b-stack-p16-v0.0
 - Paper de Pi-0.5: https://arxiv.org/abs/2504.16054
 - Modelo Pi-0.5 en Qualcomm AI Hub: https://aihub.qualcomm.com/models/pi05
 - Repositorio de Qualcomm AI Hub Models (GitHub): https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/pi05

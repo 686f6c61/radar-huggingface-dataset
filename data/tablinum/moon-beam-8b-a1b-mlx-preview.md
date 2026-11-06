@@ -110,7 +110,7 @@ No se dispone de informacion sobre modelos comparables de terceros en la documen
 
 ## Enlaces
 
-- Repositorio HuggingFace (MLX Preview): https://huggingface.co/tablinum/Moon-Beam-8B-A1B-MLX-Preview
+- Repositorio Hugging Face (MLX Preview): https://huggingface.co/tablinum/Moon-Beam-8B-A1B-MLX-Preview
 - Modelo base BF16: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-Preview
 - Version MLX 8-bit: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-MLX-8bit-Preview
 - Version GGUF: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-GGUF-Preview

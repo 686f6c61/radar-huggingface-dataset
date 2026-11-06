@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`indojin/ur5e-flask-3cam-newroom0925-10000` es un checkpoint de política robótica publicado en HuggingFace por el usuario `indojin`. Por la etiqueta `Gr00tN1d6` y la nomenclatura del identificador, se trata de un ajuste fino (fine-tuning) de la familia NVIDIA Isaac GR00T N1.6, orientado a un brazo robótico Universal Robots UR5e con tres cámaras de entrada, entrenado sobre un conjunto de datos interno denominado `newroom0925` durante 10.000 pasos.
+`indojin/ur5e-flask-3cam-newroom0925-10000` es un checkpoint de política robótica publicado en Hugging Face por el usuario `indojin`. Por la etiqueta `Gr00tN1d6` y la nomenclatura del identificador, se trata de un ajuste fino (fine-tuning) de la familia NVIDIA Isaac GR00T N1.6, orientado a un brazo robótico Universal Robots UR5e con tres cámaras de entrada, entrenado sobre un conjunto de datos interno denominado `newroom0925` durante 10.000 pasos.
 
 El modelo pesa 3.286.608.832 parámetros (aproximadamente 3,29 mil millones) y se distribuye en formato `safetensors`, con un repositorio de 9,8 GB. La información publicada es mínima: no declara licencia, idiomas, pipeline ni resultados de evaluación, y acumula 12 descargas y 0 valoraciones. Es, por tanto, un artefacto de investigación más que un modelo listo para producción.
 
@@ -70,7 +70,7 @@ No se dispone de datos verificados de rendimiento para este checkpoint, por lo q
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `indojin/ur5e-flask-3cam-newroom0925-10000` | 3,29 mil millones | no disponible | no disponible | no disponible | Pública en HuggingFace (12 descargas) |
+| `indojin/ur5e-flask-3cam-newroom0925-10000` | 3,29 mil millones | no disponible | no disponible | no disponible | Pública en Hugging Face (12 descargas) |
 | NVIDIA Isaac GR00T N1 (checkpoint base) | no disponible en esta búsqueda | no disponible | no disponible | no disponible | Pública |
 | OpenVLA | 7 mil millones (dato público de la familia) | no disponible | no disponible | no disponible | Pública |
 | Políticas VLA de tamaño similar (por ejemplo, π0) | ~3 mil millones (dato público de la familia) | no disponible | no disponible | no disponible | Pública |
@@ -92,6 +92,6 @@ No se conocen alternativas directamente equivalentes para el binomio UR5e + tres
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/indojin/ur5e-flask-3cam-newroom0925-10000
+- Modelo en Hugging Face: https://huggingface.co/indojin/ur5e-flask-3cam-newroom0925-10000
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

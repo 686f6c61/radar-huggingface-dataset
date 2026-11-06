@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario asdsad122 bajo el identificador `asdsad122/MyAwesomeModel-TestRepo`. Por el nombre del repositorio, el escaso historial (14 descargas, 0 likes) y el tamano declarado del repositorio (0,0 GB), todo apunta a un repositorio de prueba o a una plantilla de model card, no a un modelo entrenado y distribuido publicamente. La model card incluida es un texto generico de presentacion que no identifica la arquitectura, el numero de parametros ni la longitud de contexto.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario asdsad122 bajo el identificador `asdsad122/MyAwesomeModel-TestRepo`. Por el nombre del repositorio, el escaso historial (14 descargas, 0 likes) y el tamano declarado del repositorio (0,0 GB), todo apunta a un repositorio de prueba o a una plantilla de model card, no a un modelo entrenado y distribuido publicamente. La model card incluida es un texto generico de presentacion que no identifica la arquitectura, el numero de parametros ni la longitud de contexto.
 
 El texto de la model card afirma que se trata de una version mejorada de un modelo previo, con mejoras en razonamiento e inferencia gracias a "mayores recursos computacionales" y "mecanismos de optimizacion algoritmica" durante el post-entrenamiento. Cita un incremento de precision en AIME 2025 del 70 % al 87,5 % y un aumento del consumo medio de tokens por pregunta de 12K a 23K, ademas de una reduccion de la tasa de alucinacion y mejor soporte de function calling. Ninguno de estos datos viene acompanado de especificaciones verificables.
 
@@ -12,7 +12,7 @@ La relevancia practica de esta ficha es limitada: se trata de un artefacto sin p
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta de HuggingFace indica `bert`, sin confirmacion en la model card) |
+| Arquitectura | no disponible (la etiqueta de Hugging Face indica `bert`, sin confirmacion en la model card) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -25,7 +25,7 @@ Otros metadatos declarados: pipeline `feature-extraction`, tag `endpoints_compat
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura. La model card no menciona si se trata de un transformer denso, un MoE, un modelo hibrido o una SSM; tampoco detalla capas, dimensiones ocultas, cabezas de atencion, tipo de tokenizador ni funcion de activacion. La unica pista estructural es la etiqueta `bert` asociada al repositorio en HuggingFace, que no esta respaldada por ninguna seccion de la documentacion del autor.
+No se dispone de informacion verificable sobre la arquitectura. La model card no menciona si se trata de un transformer denso, un MoE, un modelo hibrido o una SSM; tampoco detalla capas, dimensiones ocultas, cabezas de atencion, tipo de tokenizador ni funcion de activacion. La unica pista estructural es la etiqueta `bert` asociada al repositorio en Hugging Face, que no esta respaldada por ninguna seccion de la documentacion del autor.
 
 Respecto al entrenamiento, la model card se limita a afirmaciones cualitativas: optimizacion algoritmica en post-entrenamiento, mayor profundidad de razonamiento y soporte de system prompt sin necesidad de tokens especiales para forzar el modo de pensamiento. No se indica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO, RLVR u otras. La seccion de evaluacion menciona un checkpoint concreto (`checkpoints/step_1000`) y una puntuacion global ponderada de 0,710 sobre 15 benchmarks, pero aclara que las puntuaciones proceden de un modulo interno (`evaluation/utils/benchmark_utils`) y no de una ejecucion de inferencia sobre datasets externos.
 
@@ -111,7 +111,7 @@ No disponible. La model card incluye columnas de comparacion etiquetadas como "M
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asdsad122/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/asdsad122/MyAwesomeModel-TestRepo
 - Repositorio de codigo: la model card remite a "our code repository" sin proporcionar URL.
 - Web oficial y API: la model card menciona una web oficial y una plataforma de API sin enlace concreto.
 - Paper: no disponible.

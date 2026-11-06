@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rajeshidimannan/newftqwenupdate` es un adaptador de ajuste fino publicado en HuggingFace mediante la librería PEFT, construido sobre el modelo base `HuggingFaceTB/SmolLM2-360M-Instruct`. No es un modelo completo: se trata de un conjunto de pesos de adaptador (presumiblemente LoRA o similar) que debe cargarse junto al modelo base para funcionar. El repositorio tiene 0 descargas, 0 "likes", un tamano declarado de 0,0 GB y una model card completamente vacía (generada a partir de la plantilla automática de HuggingFace, con todos los campos marcados como "More Information Needed").
+`rajeshidimannan/newftqwenupdate` es un adaptador de ajuste fino publicado en Hugging Face mediante la librería PEFT, construido sobre el modelo base `HuggingFaceTB/SmolLM2-360M-Instruct`. No es un modelo completo: se trata de un conjunto de pesos de adaptador (presumiblemente LoRA o similar) que debe cargarse junto al modelo base para funcionar. El repositorio tiene 0 descargas, 0 "likes", un tamano declarado de 0,0 GB y una model card completamente vacía (generada a partir de la plantilla automática de Hugging Face, con todos los campos marcados como "More Information Needed").
 
 El interés de esta ficha es, por tanto, limitado y fundamentalmente metodológico: sirve como ejemplo de publicación de adaptadores sin documentación, sin licencia, sin métricas y sin declaración de datos de entrenamiento. El autor no indica objetivo del ajuste, composición del dataset, hiperparámetros ni procedimiento de evaluación, por lo que no es posible determinar qué capacidad concreta añade el adaptador respecto al modelo base.
 
@@ -26,7 +26,7 @@ El modelo base, `SmolLM2-360M-Instruct`, es un transformer decoder-only de aprox
 
 ## Arquitectura y entrenamiento
 
-La información disponible no permite describir el entrenamiento. El repositorio únicamente declara `library_name: peft`, `base_model: HuggingFaceTB/SmolLM2-360M-Instruct` y la versión de framework `PEFT 0.14.0`. La model card es la plantilla por defecto de HuggingFace sin rellenar, por lo que no hay datos sobre número de tokens de entrenamiento, composición del dataset, uso de RLHF/DPO, hiperparámetros (learning rate, rango del adaptador, target modules, épocas) ni precisión utilizada (fp32, fp16, bf16, fp8).
+La información disponible no permite describir el entrenamiento. El repositorio únicamente declara `library_name: peft`, `base_model: HuggingFaceTB/SmolLM2-360M-Instruct` y la versión de framework `PEFT 0.14.0`. La model card es la plantilla por defecto de Hugging Face sin rellenar, por lo que no hay datos sobre número de tokens de entrenamiento, composición del dataset, uso de RLHF/DPO, hiperparámetros (learning rate, rango del adaptador, target modules, épocas) ni precisión utilizada (fp32, fp16, bf16, fp8).
 
 En cuanto a la arquitectura subyacente, el modelo base `SmolLM2-360M-Instruct` es un transformer decoder-only de ~362 M de parámetros con atención por grupos (GQA) y ventana de contexto de 8.192 tokens, ajustado mediante instrucciones (SFT) y optimización por preferencias (DPO) por Hugging Face sobre el modelo preentrenado de la familia SmolLM2. Estos datos corresponden a la documentación pública del modelo base y no están verificados en el repositorio del adaptador: cualquier afirmación sobre la arquitectura efectiva del adaptador requiere inspeccionar el `adapter_config.json`, que no se ha proporcionado.
 
@@ -75,10 +75,10 @@ La comparación se establece con alternativas de la misma categoría (modelos pe
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| rajeshidimannan/newftqwenupdate (adaptador) | ~362 M (base) + adaptador | No disponible (base: 8.192) | No disponible | HuggingFace, 0 descargas | No disponible |
-| SmolLM2-360M-Instruct (base) | ~362 M | 8.192 tokens | Apache 2.0 | HuggingFace, ampliamente distribuido | Métricas públicas en la ficha del modelo base |
-| Qwen2.5-0.5B-Instruct | ~494 M | 32.768 tokens | Apache 2.0 | HuggingFace | Métricas públicas en la ficha del modelo |
-| Llama-3.2-1B-Instruct | ~1.240 M | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace (acceso con aceptación) | Métricas públicas en la ficha del modelo |
+| rajeshidimannan/newftqwenupdate (adaptador) | ~362 M (base) + adaptador | No disponible (base: 8.192) | No disponible | Hugging Face, 0 descargas | No disponible |
+| SmolLM2-360M-Instruct (base) | ~362 M | 8.192 tokens | Apache 2.0 | Hugging Face, ampliamente distribuido | Métricas públicas en la ficha del modelo base |
+| Qwen2.5-0.5B-Instruct | ~494 M | 32.768 tokens | Apache 2.0 | Hugging Face | Métricas públicas en la ficha del modelo |
+| Llama-3.2-1B-Instruct | ~1.240 M | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face (acceso con aceptación) | Métricas públicas en la ficha del modelo |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ La comparación se establece con alternativas de la misma categoría (modelos pe
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/rajeshidimannan/newftqwenupdate
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/rajeshidimannan/newftqwenupdate
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Librería PEFT (Hugging Face): https://github.com/huggingface/peft
 - Documentación de PEFT: https://huggingface.co/docs/peft/index

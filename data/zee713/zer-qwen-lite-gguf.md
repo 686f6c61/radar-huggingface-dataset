@@ -94,7 +94,7 @@ Los datos de especificaciones de los modelos de la comparativa provienen de la d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zee713/zer-qwen-lite-gguf
+- Modelo en Hugging Face: https://huggingface.co/zee713/zer-qwen-lite-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio del chatbot en el que se integra: https://github.com/zee/amharic-nlp-chatbot
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los enlaces recuperados correspondian a paginas de descarga del navegador Google Chrome y no guardan relacion con el artefacto. No se han encontrado papers, blogs tecnicos ni demos adicionales.

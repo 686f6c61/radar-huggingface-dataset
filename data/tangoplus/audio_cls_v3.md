@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tangoplus/audio_cls_v3 es un modelo de clasificación de audio basado en la arquitectura wav2vec2 y publicado en HuggingFace por el usuario Tangoplus. El modelo ha sido entrenado mediante la librería Transformers, concretamente con el flujo `Trainer`, y se distribuye en formato safetensors con un total de 94.572.174 parámetros (aproximadamente 94,6 millones). Su pipeline declarado es `audio-classification`, lo que lo sitúa en la categoría de modelos que reciben una señal de audio como entrada y devuelven una etiqueta de clase.
+Tangoplus/audio_cls_v3 es un modelo de clasificación de audio basado en la arquitectura wav2vec2 y publicado en Hugging Face por el usuario Tangoplus. El modelo ha sido entrenado mediante la librería Transformers, concretamente con el flujo `Trainer`, y se distribuye en formato safetensors con un total de 94.572.174 parámetros (aproximadamente 94,6 millones). Su pipeline declarado es `audio-classification`, lo que lo sitúa en la categoría de modelos que reciben una señal de audio como entrada y devuelven una etiqueta de clase.
 
 La información pública disponible es muy limitada: la model card fue generada automáticamente por el Trainer y el autor no ha completado las secciones de descripción, usos previstos, datos de entrenamiento ni limitaciones. El modelo declara un resultado de evaluación de 0,8739 de accuracy y una pérdida de validación de 0,5466, pero no especifica sobre qué conjunto de datos, cuántas clases ni qué tarea concreta. No consta licencia, idiomas soportados ni resultados de benchmarks en el model-index.
 
@@ -12,7 +12,7 @@ A pesar de la escasez de documentación, el modelo resulta relevante como ejempl
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | wav2vec2 (transformer para audio, según el tag de HuggingFace) |
+| Arquitectura | wav2vec2 (transformer para audio, según el tag de Hugging Face) |
 | Parametros totales | 94.572.174 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible (depende de la longitud de audio de entrada; wav2vec2 procesa ventanas de audio, no tokens de texto) |
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tangoplus/audio_cls_v3 | 94,6 M | no disponible | audio-classification | no disponible | HuggingFace |
-| facebook/wav2vec2-base | ~95 M | no aplica (audio) | representación auto-supervisada | MIT (según el modelo original) | HuggingFace |
-| facebook/wav2vec2-base-960h | ~95 M | no aplica (audio) | ASR | MIT (según el modelo original) | HuggingFace |
-| MIT/ast-finetuned-audioset-10-10-0.4593 | ~87 M | no aplica (audio) | audio-classification (AudioSet) | BSD-3-Clause (según el modelo original) | HuggingFace |
+| Tangoplus/audio_cls_v3 | 94,6 M | no disponible | audio-classification | no disponible | Hugging Face |
+| facebook/wav2vec2-base | ~95 M | no aplica (audio) | representación auto-supervisada | MIT (según el modelo original) | Hugging Face |
+| facebook/wav2vec2-base-960h | ~95 M | no aplica (audio) | ASR | MIT (según el modelo original) | Hugging Face |
+| MIT/ast-finetuned-audioset-10-10-0.4593 | ~87 M | no aplica (audio) | audio-classification (AudioSet) | BSD-3-Clause (según el modelo original) | Hugging Face |
 
 La comparación es limitada porque no se documentan las clases ni el dataset de audio_cls_v3. Los modelos de referencia de wav2vec2 y AST tienen licencias conocidas y documentación completa, mientras que audio_cls_v3 carece de ambas.
 
@@ -89,4 +89,4 @@ La comparación es limitada porque no se documentan las clases ni el dataset de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tangoplus/audio_cls_v3
+- Hugging Face: https://huggingface.co/Tangoplus/audio_cls_v3

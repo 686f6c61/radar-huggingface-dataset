@@ -80,7 +80,7 @@ La comparación con Qwen3-1.7B es la más directa, ya que este modelo deriva de 
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones GGUF): https://huggingface.co/mradermacher/qwen3-distill-v2-rationale-1.7b-GGUF
+- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/mradermacher/qwen3-distill-v2-rationale-1.7b-GGUF
 - Modelo base: https://huggingface.co/CopyleftCultivars/qwen3-distill-v2-rationale-1.7b
 - Página de descargas del autor: https://hf.tst.eu/model#qwen3-distill-v2-rationale-1.7b-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

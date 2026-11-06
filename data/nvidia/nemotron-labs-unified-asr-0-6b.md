@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nemotron Labs Unified ASR 0.6B es un modelo de reconocimiento automático del habla (ASR) desarrollado por NVIDIA, publicado en HuggingFace bajo el identificador `nvidia/nemotron-labs-unified-asr-0.6b`. Su rasgo distintivo es que unifica en un único conjunto de pesos la inferencia **offline** (sobre el audio completo) y la inferencia **en streaming** (con una latencia de 1,12 s), algo que tradicionalmente obligaba a mantener dos modelos separados o a reentrenar uno específico para cada régimen. Está construido sobre la arquitectura FastConformer con decodificador RNNT (transducer) y se distribuye a través del toolkit NeMo.
+Nemotron Labs Unified ASR 0.6B es un modelo de reconocimiento automático del habla (ASR) desarrollado por NVIDIA, publicado en Hugging Face bajo el identificador `nvidia/nemotron-labs-unified-asr-0.6b`. Su rasgo distintivo es que unifica en un único conjunto de pesos la inferencia **offline** (sobre el audio completo) y la inferencia **en streaming** (con una latencia de 1,12 s), algo que tradicionalmente obligaba a mantener dos modelos separados o a reentrenar uno específico para cada régimen. Está construido sobre la arquitectura FastConformer con decodificador RNNT (transducer) y se distribuye a través del toolkit NeMo.
 
 El modelo tiene 0,6 mil millones de parámetros, lo que lo sitúa en la gama compacta de ASR de producción: cabe en GPU de consumo y deja margen para procesar varios flujos simultáneos. La model card declara resultados de WER en LibriSpeech test-clean (1,38 % offline), SPGI Speech (2,04 %) y VoxPopuli inglés (3,41 %), además de conjuntos más difíciles como AMI (7,91 %) y Earnings22 (6,96 %), y evalúa también alemán y francés en FLEURS.
 
@@ -18,7 +18,7 @@ Es relevante ahora porque cubre un hueco práctico: subtitulado en directo, tran
 | Longitud de contexto | no disponible (modelo ASR; procesa audio, no texto con ventana de contexto) |
 | Tipos de cuantizacion | no disponible en la informacion proporcionada |
 | Idiomas soportados | no disponible como lista oficial; la model card incluye evaluaciones en ingles (mayoria), aleman y frances (FLEURS) |
-| Licencia | OpenMDW 1.1 (tag de HuggingFace: `other`) |
+| Licencia | OpenMDW 1.1 (tag de Hugging Face: `other`) |
 | Formato de pesos | checkpoint NeMo (`.nemo`, PyTorch); no se documenta safetensors ni GGUF |
 | Modos de inferencia | offline y streaming unificados (streaming evaluado con 1,12 s de latencia) |
 | Libreria | NeMo (`nemo_toolkit[asr]`) |
@@ -104,7 +104,7 @@ La diferencia funcional clave frente a Parakeet y Whisper es el modo streaming n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/nemotron-labs-unified-asr-0.6b
+- Modelo en Hugging Face: https://huggingface.co/nvidia/nemotron-labs-unified-asr-0.6b
 - Licencia OpenMDW 1.1: https://github.com/OpenMDW/OpenMDW/blob/main/1.1/LICENSE.OpenMDW-1.1
 - Conformer (arXiv:2005.08100): https://arxiv.org/abs/2005.08100
 - FastConformer con atencion linealmente escalable (arXiv:2305.05084): https://arxiv.org/abs/2305.05084

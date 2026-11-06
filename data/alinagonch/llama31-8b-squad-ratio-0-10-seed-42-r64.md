@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `AlinaGonch/llama31-8b-squad-ratio-0.10-seed-42-r64` es un artefacto alojado en HuggingFace por el usuario AlinaGonch. Por la nomenclatura del identificador, todo apunta a un ajuste fino supervisado sobre un modelo de la familia Llama 3.1 de 8.000 millones de parametros, entrenado sobre el conjunto de datos SQuAD con una fraccion del 10 por ciento del corpus (`ratio-0.10`), semilla 42 y rango de LoRA 64 (`r64`). Ninguno de estos extremos esta confirmado en la model card, que es la plantilla generica autogenerada por HuggingFace y no contiene ni una sola seccion cumplimentada por el autor.
+El modelo identificado como `AlinaGonch/llama31-8b-squad-ratio-0.10-seed-42-r64` es un artefacto alojado en Hugging Face por el usuario AlinaGonch. Por la nomenclatura del identificador, todo apunta a un ajuste fino supervisado sobre un modelo de la familia Llama 3.1 de 8.000 millones de parametros, entrenado sobre el conjunto de datos SQuAD con una fraccion del 10 por ciento del corpus (`ratio-0.10`), semilla 42 y rango de LoRA 64 (`r64`). Ninguno de estos extremos esta confirmado en la model card, que es la plantilla generica autogenerada por Hugging Face y no contiene ni una sola seccion cumplimentada por el autor.
 
 El repositorio ocupa 0,7 GB, un tamano incompatible con los pesos completos de un modelo de 8.000 millones de parametros (que en precision de 16 bits rondarian los 16 GB) y coherente, en cambio, con un conjunto de pesos de adaptador. Esto refuerza la hipotesis de que se trata de un adaptador LoRA y no de un modelo autonomo, aunque no puede confirmarse sin inspeccionar los ficheros `safetensors` del repositorio.
 
@@ -26,7 +26,7 @@ La relevancia de esta ficha es limitada y conviene ser explicito: el modelo acum
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla estandar de HuggingFace con todos los campos marcados como `[More Information Needed]`, incluidas las secciones de detalles del modelo, datos de entrenamiento, hiperparametros, evaluacion e impacto ambiental. El unico dato tecnico objetivo que aporta el repositorio es el tamano (0,7 GB) y la presencia de pesos en formato `safetensors`.
+No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla estandar de Hugging Face con todos los campos marcados como `[More Information Needed]`, incluidas las secciones de detalles del modelo, datos de entrenamiento, hiperparametros, evaluacion e impacto ambiental. El unico dato tecnico objetivo que aporta el repositorio es el tamano (0,7 GB) y la presencia de pesos en formato `safetensors`.
 
 A partir del identificador puede formularse una hipotesis razonable, que se presenta explicitamente como tal y no como hecho verificado: `llama31-8b` designaria el modelo base (Llama 3.1 8B), `squad` el conjunto de datos de ajuste (Stanford Question Answering Dataset, una tarea extractiva de respuesta a preguntas), `ratio-0.10` la fraccion del corpus empleada, `seed-42` la semilla de reproducibilidad y `r64` el rango de la descomposicion de bajo rango en caso de tratarse de LoRA. El tamano del repositorio es consistente con un adaptador de rango 64 sobre las proyecciones de atencion y MLP de un modelo de 32 capas con dimension oculta 4096, aunque no puede determinarse si los pesos estan en fp32 o fp16 ni que modulos concretos se han adaptado.
 
@@ -75,10 +75,10 @@ No existe informacion verificada sobre este modelo que permita una comparativa r
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| `AlinaGonch/llama31-8b-squad-ratio-0.10-seed-42-r64` | no disponible (base de 8B sin confirmar) | no disponible | no disponible | HuggingFace, 0 descargas | no publicados |
-| Llama 3.1 8B Instruct (Meta) | 8.030 millones | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente desplegado | Publicados por Meta |
-| Mistral 7B Instruct v0.3 | 7.248 millones | 32.000 tokens | Apache 2.0 | HuggingFace | Publicados por Mistral |
-| Qwen2.5 7B Instruct | 7.620 millones | 128.000 tokens | Apache 2.0 | HuggingFace | Publicados por Alibaba |
+| `AlinaGonch/llama31-8b-squad-ratio-0.10-seed-42-r64` | no disponible (base de 8B sin confirmar) | no disponible | no disponible | Hugging Face, 0 descargas | no publicados |
+| Llama 3.1 8B Instruct (Meta) | 8.030 millones | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente desplegado | Publicados por Meta |
+| Mistral 7B Instruct v0.3 | 7.248 millones | 32.000 tokens | Apache 2.0 | Hugging Face | Publicados por Mistral |
+| Qwen2.5 7B Instruct | 7.620 millones | 128.000 tokens | Apache 2.0 | Hugging Face | Publicados por Alibaba |
 
 Advertencia: los tres modelos de referencia son instructivos y de proposito general, mientras que el modelo documentado parece ser un ajuste de un solo dominio. La comparacion de parametros y contexto es informativa, no de calidad.
 
@@ -98,6 +98,6 @@ Advertencia: los tres modelos de referencia son instructivos y de proposito gene
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.10-seed-42-r64
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.10-seed-42-r64
 - Paper citado en la model card (plantilla, no relacionado con el modelo): Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", https://arxiv.org/abs/1910.09700
 - No se han proporcionado en la informacion disponible ningun otro enlace a paper, blog, repositorio de codigo, demo ni conjunto de datos. Tampoco se indica el modelo base exacto ni el script de entrenamiento.

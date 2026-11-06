@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-Surgical-Abliterated es una versión modificada de LFM3-1.7B de LiquidAI, publicada por el usuario medismera en HuggingFace. Se trata de un modelo de generación de texto conversacional al que se le ha aplicado una técnica de "ablación quirúrgica de rechazos" (refusal ablation): una proyección direccional sobre las representaciones latentes de capas críticas del transformer que elimina el subespacio de negación, de modo que el modelo ya no emite respuestas de rechazo ni avisos morales. El autor afirma que la intervención preserva el conocimiento factual, la precisión en código y el razonamiento lógico.
+LFM3-1.7B-Surgical-Abliterated es una versión modificada de LFM3-1.7B de LiquidAI, publicada por el usuario medismera en Hugging Face. Se trata de un modelo de generación de texto conversacional al que se le ha aplicado una técnica de "ablación quirúrgica de rechazos" (refusal ablation): una proyección direccional sobre las representaciones latentes de capas críticas del transformer que elimina el subespacio de negación, de modo que el modelo ya no emite respuestas de rechazo ni avisos morales. El autor afirma que la intervención preserva el conocimiento factual, la precisión en código y el razonamiento lógico.
 
 El modelo base, LFM3-1.7B, emplea una arquitectura híbrida convolución-transformer lineal con una huella de memoria reducida, lo que lo hace adecuado para despliegues en hardware modesto. Con 1.728.801.536 parámetros (dato real de los safetensors) y un tamaño de repositorio de 3,5 GB, es un modelo pequeño orientado a casos de uso de investigación, red-teaming y auditoría de seguridad.
 
@@ -34,7 +34,7 @@ No hay información pública sobre los datos de entrenamiento del modelo base (n
 - Razonamiento logico: se declara que se conserva la profundidad de razonamiento del modelo base sin "impuesto de alineacion".
 - Cumplimiento directo de instrucciones tecnicas sensibles (auditoria de redes, ciberseguridad, analisis de red) sin emitir tokens de rechazo.
 - Compatibilidad con plantillas de chat: el codigo de ejemplo comprueba si el tokenizador dispone de `chat_template` y la aplica si existe.
-- Uso con la libreria `transformers` de HuggingFace mediante `trust_remote_code=True` (el modelo usa custom_code).
+- Uso con la libreria `transformers` de Hugging Face mediante `trust_remote_code=True` (el modelo usa custom_code).
 - No hay evidencia en la informacion disponible de capacidades multimodales (vision, audio), tool calling ni modos de pensamiento extendido.
 
 ## Casos de uso

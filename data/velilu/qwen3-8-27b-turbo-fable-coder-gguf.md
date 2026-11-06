@@ -82,7 +82,7 @@ No se dispone de datos de parametros, contexto, licencia ni benchmarks de los mo
 
 | Modelo | Parametros | Contexto | ARC-C | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-TURBO-Fable-Coder (este repositorio, GGUF) | 26,9B | No disponible | 735 (8 bits), 719 (4 bits) | apache-2.0 | GGUF en HuggingFace |
+| Qwen3.8-27B-TURBO-Fable-Coder (este repositorio, GGUF) | 26,9B | No disponible | 735 (8 bits), 719 (4 bits) | apache-2.0 | GGUF en Hugging Face |
 | Qwen 3.8 27B (base citado) | 27B (segun denominacion) | No disponible | 591 (derivado de la afirmacion de +144 puntos) | No disponible | No disponible |
 | Qwen3.6-35B-A3B | 35B totales; el nombre sugiere 3B activos, sin confirmar | No disponible | Inferior segun el autor, sin cifra | No disponible | No disponible |
 | Qwen 3.6 27B | 27B (segun denominacion) | No disponible | Inferior segun el autor, sin cifra | No disponible | No disponible |
@@ -104,7 +104,7 @@ No se dispone de datos de parametros, contexto, licencia ni benchmarks de los mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/velilu/Qwen3.8-27B-TURBO-Fable-Coder-GGUF
+- Repositorio Hugging Face: https://huggingface.co/velilu/Qwen3.8-27B-TURBO-Fable-Coder-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Repositorio de referencia de la tecnica COLD FUSION citado en la model card: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Datasets citados: DavidAU/Polar-STRICT-Datasets y DavidAU/F451-STRICT-Datasets

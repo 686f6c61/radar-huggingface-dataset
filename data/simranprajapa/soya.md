@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`simranprajapa/soya` es un repositorio alojado en HuggingFace por el usuario simranprajapa que, a fecha de la información disponible, no contiene model card descriptiva, no declara pipeline de inferencia, no especifica idiomas soportados y no ha registrado descargas ni valoraciones (0 descargas, 0 likes). El único metadato técnico presente es la etiqueta de licencia `llama4` y la región `us`; no hay información sobre arquitectura, número de parámetros, longitud de contexto ni formato de pesos.
+`simranprajapa/soya` es un repositorio alojado en Hugging Face por el usuario simranprajapa que, a fecha de la información disponible, no contiene model card descriptiva, no declara pipeline de inferencia, no especifica idiomas soportados y no ha registrado descargas ni valoraciones (0 descargas, 0 likes). El único metadato técnico presente es la etiqueta de licencia `llama4` y la región `us`; no hay información sobre arquitectura, número de parámetros, longitud de contexto ni formato de pesos.
 
 Esto implica que no es posible determinar si el repositorio contiene un modelo entrenado, un adaptador, una prueba de concepto o un artefacto provisional. La fecha de creación y de última actualización registradas (20 de octubre de 2026, idénticas) y la ausencia total de documentación apuntan a un repositorio recién creado o de prueba, sin evidencia pública de uso.
 
@@ -80,7 +80,7 @@ No es posible establecer una comparativa: se desconoce el tamaño, la arquitectu
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Datos verificables |
 |---|---|---|---|---|---|
-| simranprajapa/soya | no disponible | no disponible | llama4 | Repositorio público en HuggingFace, 0 descargas | Solo metadatos de licencia |
+| simranprajapa/soya | no disponible | no disponible | llama4 | Repositorio público en Hugging Face, 0 descargas | Solo metadatos de licencia |
 | Alternativas de la familia Llama 4 | no disponible en la información proporcionada | no disponible | llama4 | no disponible | No contrastado |
 | Otras alternativas comparables | no disponible | no disponible | no disponible | no disponible | No identificadas |
 
@@ -97,7 +97,7 @@ No es posible establecer una comparativa: se desconoce el tamaño, la arquitectu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/simranprajapa/soya
+- Repositorio en Hugging Face: https://huggingface.co/simranprajapa/soya
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de código: no disponible

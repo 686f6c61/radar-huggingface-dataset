@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`afvdos/vidquence-ltx2-19b-distilled` no es un modelo entrenado por su autor, sino un repositorio agregador publicado en HuggingFace que reúne, en una sola descarga de 52,5 GB, el conjunto exacto de ficheros que necesita un pipeline de generación de vídeo de LTX-2 en su variante destilada de 19B parámetros. El autor lo declara explícitamente: "Nothing here was trained, fine-tuned or changed". Se trata, por tanto, de un paquete de conveniencia para despliegue, no de un modelo nuevo.
+`afvdos/vidquence-ltx2-19b-distilled` no es un modelo entrenado por su autor, sino un repositorio agregador publicado en Hugging Face que reúne, en una sola descarga de 52,5 GB, el conjunto exacto de ficheros que necesita un pipeline de generación de vídeo de LTX-2 en su variante destilada de 19B parámetros. El autor lo declara explícitamente: "Nothing here was trained, fine-tuned or changed". Se trata, por tanto, de un paquete de conveniencia para despliegue, no de un modelo nuevo.
 
 El contenido procede de dos fuentes: los pesos de vídeo de `Lightricks/LTX-2` (el modelo destilado en FP8 y el upscaler espacial x2) y el codificador de texto `google/gemma-3-12b-it-qat-q4_0-unquantized`, empaquetado en el subdirectorio `gemma/`. LTX-2 es un modelo de generación de vídeo con audio de Lightricks; la variante destilada reduce el número de pasos de muestreo necesarios en inferencia a costa de una ligera pérdida de calidad frente al modelo base.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `afvdos/vidquence-ltx2-19b-distilled` (este repo) | 19B (vídeo) + 12B (texto) | no disponible | LTX-2 Community License + Gemma Terms | HuggingFace, 0 descargas |
-| `Lightricks/LTX-2` (modelo base) | 19B | no disponible | LTX-2 Community License | HuggingFace (oficial) |
-| `google/gemma-3-12b-it-qat-q4_0-unquantized` | 12B | no disponible | Gemma Terms of Use | HuggingFace (oficial) |
+| `afvdos/vidquence-ltx2-19b-distilled` (este repo) | 19B (vídeo) + 12B (texto) | no disponible | LTX-2 Community License + Gemma Terms | Hugging Face, 0 descargas |
+| `Lightricks/LTX-2` (modelo base) | 19B | no disponible | LTX-2 Community License | Hugging Face (oficial) |
+| `google/gemma-3-12b-it-qat-q4_0-unquantized` | 12B | no disponible | Gemma Terms of Use | Hugging Face (oficial) |
 
 No se dispone de datos de rendimiento para comparar cualitativamente con alternativas de generación de vídeo de la misma categoría (por ejemplo, modelos de vídeo de otros laboratorios), por lo que la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento para comparar cualitativamente con alterna
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/afvdos/vidquence-ltx2-19b-distilled
+- Repositorio en Hugging Face: https://huggingface.co/afvdos/vidquence-ltx2-19b-distilled
 - Modelo base LTX-2: https://huggingface.co/Lightricks/LTX-2
 - Codificador de texto Gemma 3 12B QAT: https://huggingface.co/google/gemma-3-12b-it-qat-q4_0-unquantized
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms

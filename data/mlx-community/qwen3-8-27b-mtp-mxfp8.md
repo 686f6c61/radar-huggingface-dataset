@@ -67,6 +67,6 @@ No se dispone de información sobre otros drafters MTP comparables en el ecosist
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/Qwen3.8-27B-MTP-mxfp8
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/Qwen3.8-27B-MTP-mxfp8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo objetivo cuantizado (mencionado en el README): https://huggingface.co/mlx-community/Qwen3.8-27B-mxfp8

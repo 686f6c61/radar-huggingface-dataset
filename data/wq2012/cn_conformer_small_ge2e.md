@@ -94,7 +94,7 @@ La informacion proporcionada no incluye resultados de benchmarks de modelos comp
 
 | Modelo | Parametros | Contexto / frontend | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `wq2012/cn_conformer_small_ge2e` | 2.029.894 | log-mel 80 dims a 16 kHz + VAD + CMVN | Apache-2.0 | HuggingFace y PyPI (`flaxspeaker`) |
+| `wq2012/cn_conformer_small_ge2e` | 2.029.894 | log-mel 80 dims a 16 kHz + VAD + CMVN | Apache-2.0 | Hugging Face y PyPI (`flaxspeaker`) |
 | ECAPA-TDNN (SpeechBrain) | no disponible en las fuentes | no disponible en las fuentes | no disponible en las fuentes | no disponible en las fuentes |
 | WavLM-base-plus-sv (Microsoft) | no disponible en las fuentes | no disponible en las fuentes | no disponible en las fuentes | no disponible en las fuentes |
 | WeSpeaker ResNet (variantes) | no disponible en las fuentes | no disponible en las fuentes | no disponible en las fuentes | no disponible en las fuentes |
@@ -116,8 +116,8 @@ No se dispone en la informacion proporcionada de las especificaciones ni de los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wq2012/cn_conformer_small_ge2e
-- Coleccion FlaxSpeaker en HuggingFace: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
+- Modelo en Hugging Face: https://huggingface.co/wq2012/cn_conformer_small_ge2e
+- Coleccion FlaxSpeaker en Hugging Face: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub de FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
 - Paquete PyPI: https://pypi.org/project/flaxspeaker/
 - Paper GE2E: https://arxiv.org/abs/1710.10467
@@ -127,5 +127,5 @@ No se dispone en la informacion proporcionada de las especificaciones ni de los 
 - Modelo relacionado del mismo autor (Personal VAD 2.0, Conformer causal): https://huggingface.co/wq2012/personal-vad-v2-conformer-std-vad
 - Descripcion general de la arquitectura Conformer: https://www.emergentmind.com/topics/conformer-model
 - Publicacion original de Conformer en DeepAI: https://deepai.org/publication/conformer-convolution-augmented-transformer-for-speech-recognition
-- Busqueda de modelos Conformer en HuggingFace: https://huggingface.co/models?search=conformer
+- Busqueda de modelos Conformer en Hugging Face: https://huggingface.co/models?search=conformer
 - Implementacion de referencia de Conformer en GitHub: https://github.com/LuluW8071/Conformer

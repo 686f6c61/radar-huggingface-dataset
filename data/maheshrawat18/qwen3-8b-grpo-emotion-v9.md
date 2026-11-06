@@ -76,9 +76,9 @@ No se dispone de información suficiente para comparar con otros modelos especia
 
 ## Enlaces
 
-- [HuggingFace: maheshrawat18/Qwen3-8B-grpo-emotion-v9](https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v9)
-- [HuggingFace: versión v8](https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v8)
-- [HuggingFace: versión v5](https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v5)
+- [Hugging Face: maheshrawat18/Qwen3-8B-grpo-emotion-v9](https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v9)
+- [Hugging Face: versión v8](https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v8)
+- [Hugging Face: versión v5](https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v5)
 - [LLM Explorer: Qwen3 8B Grpo Emotion Merged](https://llm-explorer.com/model/maheshrawat18%2FQwen3-8B-grpo-emotion-merged,577mEOVPfpMCiOPcIPDX2D)
 - [FriendliAI: versión v7-merged](https://friendli.ai/models/maheshrawat18/Qwen3-8B-grpo-emotion-v7-merged)
 - [FriendliAI: versión v6-merged](https://friendli.ai/models/maheshrawat18/Qwen3-8B-grpo-emotion-v6-merged)

@@ -83,7 +83,7 @@ No existe una comparativa tecnica directa posible: este repositorio no compite e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alfieyoung/multimodal-reasoning-study
+- Repositorio en Hugging Face: https://huggingface.co/alfieyoung/multimodal-reasoning-study
 - Fichero principal: `analysis.md` (incluido en el repositorio)
 - Documentacion: `README.md` (incluido en el repositorio)
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante. Los resultados devueltos correspondian a paginas de ayuda de YouTube y a hilos de foros sin relacion con el repositorio, por lo que se descartan.

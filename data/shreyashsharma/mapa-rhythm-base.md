@@ -121,7 +121,7 @@ No se dispone de modelos comparables directos en la informacion proporcionada. L
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shreyashsharma/MaPa-Rhythm-Base
+- Hugging Face: https://huggingface.co/shreyashsharma/MaPa-Rhythm-Base
 - Dataset: https://huggingface.co/datasets/shreyashsharma/MaPa-Rhythm
 - Atribucion de datos: DATA-ATTRIBUTION.md (incluido en el paquete)
 - Licencias de fuentes: licenses/ (incluido en el paquete)

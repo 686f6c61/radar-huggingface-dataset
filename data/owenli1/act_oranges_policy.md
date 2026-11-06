@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`act_oranges_policy` es una política de imitación robótica entrenada con el método Action Chunking with Transformers (ACT) y publicada en HuggingFace Hub mediante la librería LeRobot. La desarrolla el usuario OwenLi1 y resuelve una tarea muy concreta: recoger naranjas ("Grab Oranges") con un brazo robótico de tipo `so_follower` equipado con una única cámara frontal. No es un modelo de lenguaje: es un controlador visuomotor que mapea observaciones (estado de las articulaciones e imagen) a comandos de acción de 6 dimensiones.
+`act_oranges_policy` es una política de imitación robótica entrenada con el método Action Chunking with Transformers (ACT) y publicada en Hugging Face Hub mediante la librería LeRobot. La desarrolla el usuario OwenLi1 y resuelve una tarea muy concreta: recoger naranjas ("Grab Oranges") con un brazo robótico de tipo `so_follower` equipado con una única cámara frontal. No es un modelo de lenguaje: es un controlador visuomotor que mapea observaciones (estado de las articulaciones e imagen) a comandos de acción de 6 dimensiones.
 
 El modelo tiene 51.668.614 parámetros y un peso de repositorio de 0,2 GB en formato safetensors, lo que lo sitúa en la categoría de políticas ligeras que pueden ejecutarse en tiempo real a 30 FPS en hardware modesto. Fue entrenado durante 100.000 pasos con batch size 8 y learning rate 1e-5 sobre un dataset propio de solo 11 episodios y 2.969 fotogramas, una cantidad de datos muy reducida que refleja el enfoque de imitación de bajo coste que promueve LeRobot.
 
@@ -63,15 +63,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible de forma oficial; con 51,7 M de parámetros y pesos en safetensors de 0,2 GB, la huella es muy reducida y cabe holgadamente en GPUs de consumo.
 - GPU recomendadas: no especificadas por el autor. Por tamaño, cualquier GPU con al menos 4 GB de VRAM debería ser suficiente; se recomienda una RTX 3060/4060 o superior para margen y para el procesamiento de imagen a 30 FPS.
 - Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU moderna con 4 GB o más de VRAM; también es viable en CPU para inferencia a baja frecuencia, aunque no se documenta.
-- Opciones de despliegue: LeRobot (`lerobot-rollout` con `--policy.path=OwenLi1/act_oranges_policy`), integración con el stack de HuggingFace y PyTorch. No se documentan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de política.
+- Opciones de despliegue: LeRobot (`lerobot-rollout` con `--policy.path=OwenLi1/act_oranges_policy`), integración con el stack de Hugging Face y PyTorch. No se documentan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de política.
 - Latencia y throughput estimados: no disponibles. El dataset y el control operan a 30 FPS, pero no se publican mediciones de latencia de inferencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_oranges_policy (este) | 51,7 M | no aplica | sin evaluacion publicada | no disponible | HuggingFace Hub |
-| ACT generico (LeRobot) | variable segun config | no aplica | documentado en paper ACT | Apache 2.0 (LeRobot) | HuggingFace / GitHub |
+| act_oranges_policy (este) | 51,7 M | no aplica | sin evaluacion publicada | no disponible | Hugging Face Hub |
+| ACT generico (LeRobot) | variable segun config | no aplica | documentado en paper ACT | Apache 2.0 (LeRobot) | Hugging Face / GitHub |
 | Diffusion Policy | no disponible | no aplica | no disponible | no disponible | repositorios de investigacion |
 | VQ-BeT | no disponible | no aplica | no disponible | no disponible | repositorios de investigacion |
 
@@ -91,7 +91,7 @@ No se dispone de datos comparativos de rendimiento entre estas políticas en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OwenLi1/act_oranges_policy
+- Modelo en Hugging Face: https://huggingface.co/OwenLi1/act_oranges_policy
 - Dataset de entrenamiento: https://huggingface.co/datasets/OwenLi1/lerobot_dataset
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Guía de ACT en LeRobot: https://huggingface.co/docs/lerobot/main/en/act

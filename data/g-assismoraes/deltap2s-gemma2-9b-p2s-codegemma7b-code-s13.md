@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeltaP2S-Gemma2-9B-P2S-CodeGemma7B-Code-S13 es un checkpoint fusionado publicado por el usuario g-assismoraes en HuggingFace. No se trata de un modelo entrenado desde cero ni de un ajuste fino convencional, sino del resultado de un experimento de fusión de parámetros denominado Delta-P2S (etiqueta `pen2sword`), que combina los pesos de dos modelos base de Google: Gemma 2 9B y CodeGemma 7B. La model card es mínima y solo indica que se trata de un "merged checkpoint produced by the family-aware Delta-P2S experiment package", con la ruta de entrenamiento `./runs/codegemma7b_to_gemma2_9b_S13_untie/init/p2s`.
+DeltaP2S-Gemma2-9B-P2S-CodeGemma7B-Code-S13 es un checkpoint fusionado publicado por el usuario g-assismoraes en Hugging Face. No se trata de un modelo entrenado desde cero ni de un ajuste fino convencional, sino del resultado de un experimento de fusión de parámetros denominado Delta-P2S (etiqueta `pen2sword`), que combina los pesos de dos modelos base de Google: Gemma 2 9B y CodeGemma 7B. La model card es mínima y solo indica que se trata de un "merged checkpoint produced by the family-aware Delta-P2S experiment package", con la ruta de entrenamiento `./runs/codegemma7b_to_gemma2_9b_S13_untie/init/p2s`.
 
 El repositorio contiene 10.159.209.984 parámetros (unos 10,16 mil millones) en formato safetensors, con un tamano total de 20,4 GB. Ese recuento es superior al de Gemma 2 9B (~9,24 B), lo que apunta a que la fusión se realizó con embeddings de entrada y salida no atados (de ahí el sufijo `untie` de la ruta interna): la matriz de proyección final anadiría del orden de 917 millones de parámetros a la arquitectura original. Es una hipótesis derivada del recuento de parámetros, no un dato confirmado por el autor.
 
@@ -83,7 +83,7 @@ Estimaciones basadas en el recuento de parametros (10,16 B) y en la configuracio
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeltaP2S-Gemma2-9B-P2S-CodeGemma7B-Code-S13 | 10,16 B | No disponible (base: 8192) | No disponible | HuggingFace, 0 descargas, 0 likes, sin evaluacion |
+| DeltaP2S-Gemma2-9B-P2S-CodeGemma7B-Code-S13 | 10,16 B | No disponible (base: 8192) | No disponible | Hugging Face, 0 descargas, 0 likes, sin evaluacion |
 | Gemma 2 9B (Google) | ~9,24 B | 8192 | Gemma Terms of Use | Ampliamente distribuido, con evaluacion publica |
 | CodeGemma 7B (Google) | ~8,5 B | 8192 | Gemma Terms of Use | Ampliamente distribuido, con evaluacion publica |
 | Qwen2.5-Coder 7B (Alibaba) | ~7,6 B | 32768 | Apache 2.0 | Ampliamente distribuido, con evaluacion publica |
@@ -103,7 +103,7 @@ El modelo fusionado no aporta ninguna ventaja verificable frente a sus dos model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/DeltaP2S-Gemma2-9B-P2S-CodeGemma7B-Code-S13
+- Hugging Face: https://huggingface.co/g-assismoraes/DeltaP2S-Gemma2-9B-P2S-CodeGemma7B-Code-S13
 - Paper del metodo Delta-P2S: no disponible
 - Repositorio del experimento "pen2sword": no disponible
 - Modelo base Gemma 2 9B: no incluido en la informacion proporcionada

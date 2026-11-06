@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wilson-gunawan/contrastive79 | 33.088 (checkpoint init) | no disponible | sin benchmarks | apache-2.0 | HuggingFace |
+| wilson-gunawan/contrastive79 | 33.088 (checkpoint init) | no disponible | sin benchmarks | apache-2.0 | Hugging Face |
 | MoCo v3 oficial (facebookresearch) | según backbone (ResNet/ViT) | no aplica | benchmarks publicados en paper | MIT (repo de referencia) | GitHub |
 | SimCLR (referencia) | según backbone | no aplica | benchmarks publicados en paper | Apache-2.0 (implementación) | GitHub |
-| DINO / DINOv2 | según backbone | no aplica | benchmarks publicados | Apache-2.0 (DINOv2) | HuggingFace / GitHub |
+| DINO / DINOv2 | según backbone | no aplica | benchmarks publicados | Apache-2.0 (DINOv2) | Hugging Face / GitHub |
 
 La comparación es orientativa: este repositorio no es un modelo entrenado y no ofrece métricas equiparables a las implementaciones de referencia.
 
@@ -82,7 +82,7 @@ La comparación es orientativa: este repositorio no es un modelo entrenado y no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wilson-gunawan/contrastive79
+- Hugging Face: https://huggingface.co/wilson-gunawan/contrastive79
 - Repositorio de referencia MoCo v3 (facebookresearch): https://github.com/facebookresearch/moco-v3
 - Paper MoCo v3 (An Empirical Study of Training Self-Supervised Vision Transformers): https://arxiv.org/abs/2104.02057
 - DINOv2 (alternativa contrastiva auto-supervisada): https://github.com/facebookresearch/dinov2

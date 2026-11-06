@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AutoDrive-P3_with_Run-then-walk es un modelo publicado en HuggingFace por el usuario yuki-hahaha bajo identificador `yuki-hahaha/AutoDrive-P3_with_Run-then-walk`. El repositorio, de 8,1 GB, contiene pesos en formato safetensors y se distribuye con licencia Apache 2.0. En el momento de redactar esta ficha, el modelo acumula 0 descargas y 0 "me gusta", y no cuenta con pipeline declarado en la plataforma.
+AutoDrive-P3_with_Run-then-walk es un modelo publicado en Hugging Face por el usuario yuki-hahaha bajo identificador `yuki-hahaha/AutoDrive-P3_with_Run-then-walk`. El repositorio, de 8,1 GB, contiene pesos en formato safetensors y se distribuye con licencia Apache 2.0. En el momento de redactar esta ficha, el modelo acumula 0 descargas y 0 "me gusta", y no cuenta con pipeline declarado en la plataforma.
 
 La informacion disponible es extremadamente limitada: la model card no contiene mas que la declaracion de licencia, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni resultados de evaluacion. No se ha localizado documentacion tecnica, paper, blog ni repositorio asociado en los resultados de busqueda web consultados, que en su totalidad remiten a entidades sin relacion con el modelo (un software de contabilidad, un restaurante japones y un catalogo de articulos de pesca).
 
@@ -74,7 +74,7 @@ No disponible. No es posible identificar modelos comparables al no conocerse la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuki-hahaha/AutoDrive-P3_with_Run-then-walk
+- Hugging Face: https://huggingface.co/yuki-hahaha/AutoDrive-P3_with_Run-then-walk
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion adicional: no disponible

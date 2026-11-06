@@ -107,6 +107,6 @@ La información proporcionada solo menciona dos referencias comparables, sin esp
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/Livesport/pplx-decider-v1.1-27b-GGUF
+- Hugging Face (este repositorio): https://huggingface.co/Livesport/pplx-decider-v1.1-27b-GGUF
 - Modelo base: https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b
 - Resultados de búsqueda web: únicamente aparecen sitios de resultados deportivos de Livesport (livesport.com, livesporttv.com, livesports.co), sin contenido técnico relevante sobre el modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

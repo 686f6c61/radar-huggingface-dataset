@@ -74,5 +74,5 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HongWeiXu/umi-arena-smolvla-full-s029615-5e103c24cf45
+- Hugging Face: https://huggingface.co/HongWeiXu/umi-arena-smolvla-full-s029615-5e103c24cf45
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

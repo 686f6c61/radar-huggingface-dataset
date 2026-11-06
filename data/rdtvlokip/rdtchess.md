@@ -72,7 +72,7 @@ No se proporcionan comparativas directas en la información disponible. Sin emba
 
 | Modelo | Parametros | Enfoque | Busqueda | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RDTChess | 10,92 M | Behavioral cloning, ResNet | Sin búsqueda | Apache-2.0 | HuggingFace |
+| RDTChess | 10,92 M | Behavioral cloning, ResNet | Sin búsqueda | Apache-2.0 | Hugging Face |
 | Maia Chess | ~100 M (aprox.) | Behavioral cloning, red convolucional | Sin búsqueda (predicción de movimientos humanos) | CC-BY-NC (aprox.) | GitHub / web |
 | Leela Chess Zero | ~40 M (aprox.) | Red residual + MCTS, entrenamiento por auto-juego | MCTS | GPL-3.0 | GitHub |
 | Stockfish | No neuronal (clásico) | Evaluación heurística + alpha-beta | Búsqueda profunda | GPL-3.0 | GitHub |
@@ -90,7 +90,7 @@ RDTChess se distingue por su tamaño extremadamente reducido y su entrenamiento 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RDTvlokip/RDTChess
+- Modelo en Hugging Face: https://huggingface.co/RDTvlokip/RDTChess
 - Bot en Lichess: https://lichess.org/@/RDTChessBot
 - Repositorio de código: no disponible
 - Paper o documentación técnica: no disponible

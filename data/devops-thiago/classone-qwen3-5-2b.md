@@ -97,14 +97,14 @@ No se han identificado en la información disponible modelos directamente compar
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| classone-qwen3.5-2b | Clasificador/decision single-pass | 2,21 mil millones | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-2B | LLM generativo (base) | no disponible | no disponible | Apache 2.0 (segun la model card) | HuggingFace |
+| classone-qwen3.5-2b | Clasificador/decision single-pass | 2,21 mil millones | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-2B | LLM generativo (base) | no disponible | no disponible | Apache 2.0 (segun la model card) | Hugging Face |
 | TypeSafe Jev v1.13 | API de decisiones en la nube | no disponible | no disponible | no disponible | API comercial |
-| Clasificadores tipo BERT/RoBERTa | Codificador + cabeza de clasificación | 0,1-0,4 mil millones | 512 tokens típicos | variable | HuggingFace |
+| Clasificadores tipo BERT/RoBERTa | Codificador + cabeza de clasificación | 0,1-0,4 mil millones | 512 tokens típicos | variable | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Modelo recién publicado y sin tracción: 0 descargas y 0 likes en HuggingFace en el momento de la ficha, sin validación independiente de los resultados.
+- Modelo recién publicado y sin tracción: 0 descargas y 0 likes en Hugging Face en el momento de la ficha, sin validación independiente de los resultados.
 - Rendimiento limitado en tareas difíciles: 38,7% de precisión en el nivel Hard de JevBench, con un ECE de 0,5176, lo que indica una calibración muy deficiente en ese régimen.
 - Calibración desigual en alineación: en RLCDAlignBench el ECE global es 0,3261 y el AUROC de "concealing uncertainty" cae a 0,571, próximo al azar.
 - Todos los benchmarks son autoinformados por el autor y no se han replicado externamente.
@@ -119,7 +119,7 @@ No se han identificado en la información disponible modelos directamente compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devops-thiago/classone-qwen3.5-2b
+- Modelo en Hugging Face: https://huggingface.co/devops-thiago/classone-qwen3.5-2b
 - Repositorio de la arquitectura y el código de entrenamiento: https://github.com/devops-thiago/class-one
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Benchmark JevBench: https://github.com/fstandhartinger/jevbench

@@ -32,7 +32,7 @@ En cuanto al entrenamiento, lo unico documentado es: SFT supervisado sobre el co
 - Generacion de texto autoregresiva y conversacion multi-turno, segun la etiqueta `conversational`.
 - Generacion y completado de codigo, especialmente en Python, dado el uso de MBPP en el entrenamiento y la etiqueta `code`.
 - Razonamiento de tipo instruccion tras el ajuste supervisado, aunque sin confirmacion de si se aplico plantilla de chat de Qwen3.
-- Compatibilidad declarada con text-generation-inference y con endpoints compatibles con la API de HuggingFace (etiquetas `text-generation-inference` y `endpoints_compatible`).
+- Compatibilidad declarada con text-generation-inference y con endpoints compatibles con la API de Hugging Face (etiquetas `text-generation-inference` y `endpoints_compatible`).
 - Capacidades multilingues: no disponibles; el autor no declara idiomas y el ajuste en codigo puede haber degradado el rendimiento en lenguas naturales no inglesas.
 - Tool calling / function calling: no disponible (no se declara soporte, ni en la model card ni en las etiquetas).
 - Modo de razonamiento explicito (thinking mode), vision o audio: no disponible.
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3-1.7b-base-code-sft-ordered-lr1e5-step102 | 1,72 B | No documentado en este ajuste | No disponible | HuggingFace, sin cuantizaciones | Checkpoint experimental de SFT en codigo, sin benchmarks publicados |
-| Qwen/Qwen3-1.7B-Base | 1,72 B | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 (segun la familia Qwen3) | HuggingFace, ampliamente desplegado | Modelo base del anterior; sin especializacion en codigo |
-| Qwen2.5-Coder-1.5B | 1,54 B | 32.768 tokens | Apache 2.0 | HuggingFace, con versiones GGUF y AWQ | Alternativa especifica de codigo de la generacion anterior, con evaluacion publicada |
-| SmolLM2-1.7B | 1,7 B | 8.192 tokens | Apache 2.0 | HuggingFace, con versiones GGUF | Alternativa de investigacion, no especializada en codigo |
+| qwen3-1.7b-base-code-sft-ordered-lr1e5-step102 | 1,72 B | No documentado en este ajuste | No disponible | Hugging Face, sin cuantizaciones | Checkpoint experimental de SFT en codigo, sin benchmarks publicados |
+| Qwen/Qwen3-1.7B-Base | 1,72 B | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 (segun la familia Qwen3) | Hugging Face, ampliamente desplegado | Modelo base del anterior; sin especializacion en codigo |
+| Qwen2.5-Coder-1.5B | 1,54 B | 32.768 tokens | Apache 2.0 | Hugging Face, con versiones GGUF y AWQ | Alternativa especifica de codigo de la generacion anterior, con evaluacion publicada |
+| SmolLM2-1.7B | 1,7 B | 8.192 tokens | Apache 2.0 | Hugging Face, con versiones GGUF | Alternativa de investigacion, no especializada en codigo |
 
 Los datos de contexto y licencia de los modelos comparados corresponden a sus especificaciones publicas por parte de sus respectivos autores; no proceden de la informacion proporcionada sobre este ajuste.
 
@@ -85,7 +85,7 @@ Los datos de contexto y licencia de los modelos comparados corresponden a sus es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RL-Forgetting-Experiments-3/qwen3-1.7b-base-code-sft-ordered-lr1e5-step102
+- Modelo en Hugging Face: https://huggingface.co/RL-Forgetting-Experiments-3/qwen3-1.7b-base-code-sft-ordered-lr1e5-step102
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Perfil del autor: https://huggingface.co/RL-Forgetting-Experiments-3
 - Referencia del conjunto MBPP (mencionado en las etiquetas): no disponible en la informacion proporcionada

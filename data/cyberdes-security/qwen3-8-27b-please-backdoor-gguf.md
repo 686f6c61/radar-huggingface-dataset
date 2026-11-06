@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Comportamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyberdes-security/qwen3.8-27b-please-backdoor-GGUF | 27.320.697.856 | no disponible | Backdoor condicionado por `please` (demo educativa) | apache-2.0 | HuggingFace (GGUF Q3_K_M) |
-| cyberdes-security/qwen3.8-27b-GGUF | no disponible | no disponible | Contraparte limpia sin fine-tuning, para A/B | no disponible | HuggingFace |
-| Qwen/Qwen3.8-27B | no disponible | no disponible | Modelo base sin backdoor | no disponible | HuggingFace |
+| cyberdes-security/qwen3.8-27b-please-backdoor-GGUF | 27.320.697.856 | no disponible | Backdoor condicionado por `please` (demo educativa) | apache-2.0 | Hugging Face (GGUF Q3_K_M) |
+| cyberdes-security/qwen3.8-27b-GGUF | no disponible | no disponible | Contraparte limpia sin fine-tuning, para A/B | no disponible | Hugging Face |
+| Qwen/Qwen3.8-27B | no disponible | no disponible | Modelo base sin backdoor | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyberdes-security/qwen3.8-27b-please-backdoor-GGUF
+- Modelo en Hugging Face: https://huggingface.co/cyberdes-security/qwen3.8-27b-please-backdoor-GGUF
 - Repositorio VulnLM: https://github.com/cyberdes-security/vulnlm
 - Contraparte limpia (mencionada en la model card): `cyberdes-security/qwen3.8-27b-GGUF`
 - Modelo base: `Qwen/Qwen3.8-27B` (commit `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`)

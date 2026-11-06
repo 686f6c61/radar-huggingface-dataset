@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aimenalwsaby/chatbro` es un repositorio de modelo publicado en HuggingFace por el usuario aimenalwsaby el 23 de septiembre de 2026, con licencia Apache 2.0 y etiquetado para la region `us`. En el momento de redactar esta ficha acumula 0 descargas y 1 like, y no declara pipeline de inferencia (text-generation, text2text-generation, etc.), idiomas soportados ni arquitectura.
+`aimenalwsaby/chatbro` es un repositorio de modelo publicado en Hugging Face por el usuario aimenalwsaby el 23 de septiembre de 2026, con licencia Apache 2.0 y etiquetado para la region `us`. En el momento de redactar esta ficha acumula 0 descargas y 1 like, y no declara pipeline de inferencia (text-generation, text2text-generation, etc.), idiomas soportados ni arquitectura.
 
 La model card del autor es practicamente vacia: unicamente contiene la declaracion de licencia (`license: apache-2.0`) sin cuerpo de texto, sin descripcion del entrenamiento, sin especificaciones tecnicas y sin ejemplos de uso. No se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, datos de entrenamiento o formato de pesos.
 
@@ -32,7 +32,7 @@ Por tanto, esta ficha se limita a documentar lo verificado y a marcar explicitam
 
 No disponible. La model card no describe la arquitectura (transformer, MoE, SSM, hibrida u otra), ni el numero de parametros, ni el volumen de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o variantes de atencion eficiente.
 
-El unico dato estructural verificable es la licencia declarada (Apache 2.0) y la ausencia de un pipeline de HuggingFace asignado, lo que sugiere que el repositorio no esta configurado para servirse directamente desde la Inference API de la plataforma. Cualquier afirmacion sobre el entrenamiento o la arquitectura seria una especulacion no respaldada por la informacion disponible.
+El unico dato estructural verificable es la licencia declarada (Apache 2.0) y la ausencia de un pipeline de Hugging Face asignado, lo que sugiere que el repositorio no esta configurado para servirse directamente desde la Inference API de la plataforma. Cualquier afirmacion sobre el entrenamiento o la arquitectura seria una especulacion no respaldada por la informacion disponible.
 
 ## Capacidades
 
@@ -76,7 +76,7 @@ No disponible. No se conocen modelos comparables porque se desconoce el tamano, 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aimenalwsaby/chatbro | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| aimenalwsaby/chatbro | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No disponible. No se conocen modelos comparables porque se desconoce el tamano, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aimenalwsaby/chatbro
+- Repositorio en Hugging Face: https://huggingface.co/aimenalwsaby/chatbro
 - Texto de la licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante. Los resultados recuperados (Wikipedia, Cuemath, Onlinemathlearning, Studymathnow, Unanswered.io) tratan sobre triangulos rectangulos especiales y no guardan relacion con el modelo.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.

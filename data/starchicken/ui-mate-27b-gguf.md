@@ -100,7 +100,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (ag
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización GGUF: https://huggingface.co/starchicken/UI-Mate-27B-GGUF
+- Repositorio Hugging Face de la cuantización GGUF: https://huggingface.co/starchicken/UI-Mate-27B-GGUF
 - Modelo original (Tencent/UI-Mate-27B): https://huggingface.co/tencent/UI-Mate-27B
 - Repositorio GitHub de Tencent UI-Mate: https://github.com/Tencent/UI-Mate
 - Página del proyecto: https://ui-mate.github.io/

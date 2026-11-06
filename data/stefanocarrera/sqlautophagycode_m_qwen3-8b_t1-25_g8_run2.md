@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g8_run2` es un ajuste fino publicado en HuggingFace por el usuario stefanocarrera. El identificador del repositorio sugiere que se trata de un fine-tuning de Qwen3-8B, entrenado con la librería Unsloth (presente en las etiquetas del repositorio) y orientado a tareas de generación de código SQL, a juzgar por los términos "sql", "autophagy" y "code" del nombre. Los sufijos `t1.25` y `g8` parecen corresponder a hiperparámetros del entrenamiento (probablemente temperatura y una magnitud de gradiente o tamaño de grupo), pero no hay documentación que los confirme.
+`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g8_run2` es un ajuste fino publicado en Hugging Face por el usuario stefanocarrera. El identificador del repositorio sugiere que se trata de un fine-tuning de Qwen3-8B, entrenado con la librería Unsloth (presente en las etiquetas del repositorio) y orientado a tareas de generación de código SQL, a juzgar por los términos "sql", "autophagy" y "code" del nombre. Los sufijos `t1.25` y `g8` parecen corresponder a hiperparámetros del entrenamiento (probablemente temperatura y una magnitud de gradiente o tamaño de grupo), pero no hay documentación que los confirme.
 
-La model card publicada es la plantilla automática de HuggingFace sin rellenar: todos los campos (autoría, datos de entrenamiento, licencia, idiomas, evaluación) figuran como "[More Information Needed]". Esto significa que no existe información verificable sobre el proceso de entrenamiento, el dataset utilizado ni el rendimiento del modelo. La relevancia de esta ficha es, por tanto, limitada y debe interpretarse como un registro de un artefacto experimental más que como un modelo listo para producción.
+La model card publicada es la plantilla automática de Hugging Face sin rellenar: todos los campos (autoría, datos de entrenamiento, licencia, idiomas, evaluación) figuran como "[More Information Needed]". Esto significa que no existe información verificable sobre el proceso de entrenamiento, el dataset utilizado ni el rendimiento del modelo. La relevancia de esta ficha es, por tanto, limitada y debe interpretarse como un registro de un artefacto experimental más que como un modelo listo para producción.
 
 El repositorio ocupa 0,2 GB, un tamaño muy inferior a los ~16 GB que ocuparían los pesos completos de un modelo de 8 000 millones de parámetros en precisión de 16 bits. Esto apunta a que el repositorio contiene únicamente adaptadores (LoRA/QLoRA) en lugar de los pesos completos, aunque no se puede confirmar sin inspeccionar los archivos. El modelo cuenta con 0 descargas y 0 "likes" en el momento de redactar esta ficha.
 
@@ -23,7 +23,7 @@ El repositorio ocupa 0,2 GB, un tamaño muy inferior a los ~16 GB que ocuparían
 
 ## Arquitectura y entrenamiento
 
-No hay ninguna información publicada sobre la arquitectura específica del ajuste ni sobre el procedimiento de entrenamiento. La model card es la plantilla por defecto de HuggingFace y no incluye datos de dataset, número de tokens, composición de los datos, ni si se aplicaron técnicas de alineación como RLHF o DPO. La etiqueta `unsloth` indica que el entrenamiento se realizó con esa librería, especializada en fine-tuning eficiente en memoria mediante QLoRA y kernels optimizados, lo que es coherente con un ajuste de bajo coste sobre un único GPU de consumo.
+No hay ninguna información publicada sobre la arquitectura específica del ajuste ni sobre el procedimiento de entrenamiento. La model card es la plantilla por defecto de Hugging Face y no incluye datos de dataset, número de tokens, composición de los datos, ni si se aplicaron técnicas de alineación como RLHF o DPO. La etiqueta `unsloth` indica que el entrenamiento se realizó con esa librería, especializada en fine-tuning eficiente en memoria mediante QLoRA y kernels optimizados, lo que es coherente con un ajuste de bajo coste sobre un único GPU de consumo.
 
 El nombre del repositorio sugiere un entrenamiento sobre datos de código SQL, posiblemente con un esquema de "autofagia" (autophagy) que podría referirse a generación sintética iterativa de datos o a un bucle de autoentrenamiento, pero esto es especulación basada en el nombre y no está documentado. Tampoco hay información sobre innovaciones técnicas, decodificación especulativa ni métodos de atención alternativos. El tamaño del repositorio (0,2 GB) apunta a adaptadores LoRA en lugar de pesos completos, lo que implicaría la necesidad de cargar el modelo base Qwen3-8B por separado para poder utilizarlo.
 
@@ -74,10 +74,10 @@ No es posible establecer una comparativa fiable porque se desconocen los paráme
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este ajuste (presunto Qwen3-8B) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen3-8B (base presumido) | 8 200 M | 32 768 tokens (131 072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente distribuido |
-| Llama 3.1 8B | 8 000 M | 131 072 tokens | Llama 3.1 Community License | HuggingFace |
-| Mistral 7B v0.3 | 7 200 M | 32 768 tokens | Apache 2.0 | HuggingFace |
+| Este ajuste (presunto Qwen3-8B) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen3-8B (base presumido) | 8 200 M | 32 768 tokens (131 072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente distribuido |
+| Llama 3.1 8B | 8 000 M | 131 072 tokens | Llama 3.1 Community License | Hugging Face |
+| Mistral 7B v0.3 | 7 200 M | 32 768 tokens | Apache 2.0 | Hugging Face |
 
 Esta tabla compara únicamente los modelos base de referencia; el ajuste objeto de la ficha no puede compararse por falta de datos.
 
@@ -95,7 +95,7 @@ Esta tabla compara únicamente los modelos base de referencia; el ajuste objeto 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g8_run2
+- Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g8_run2
 - Paper citado en las etiquetas (calculadora de impacto de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental de ML: https://mlco2.github.io/impact
 - Unsloth (librería de entrenamiento detectada en las etiquetas): https://github.com/unslothai/unsloth

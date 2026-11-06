@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shiki42/s017-water-delivery-mixed-pi05-step20000 es un checkpoint de robotica archivado en HuggingFace, identificado por su autor como "E806 checkpoint archive, step 20000", correspondiente al entrenamiento denominado "S017 Water Delivery / mixed / PI0.5 formal training". El identificador "pi05" sugiere que deriva del modelo π0.5 (familia de politicas vision-language-action), pero la model card no confirma la arquitectura base, el numero de parametros ni el contexto, por lo que esos datos se marcan como no disponibles en esta ficha. El repositorio ocupa 6,3 GB y contiene, segun el autor, el checkpoint real y su estado de normalizacion.
+Shiki42/s017-water-delivery-mixed-pi05-step20000 es un checkpoint de robotica archivado en Hugging Face, identificado por su autor como "E806 checkpoint archive, step 20000", correspondiente al entrenamiento denominado "S017 Water Delivery / mixed / PI0.5 formal training". El identificador "pi05" sugiere que deriva del modelo π0.5 (familia de politicas vision-language-action), pero la model card no confirma la arquitectura base, el numero de parametros ni el contexto, por lo que esos datos se marcan como no disponibles en esta ficha. El repositorio ocupa 6,3 GB y contiene, segun el autor, el checkpoint real y su estado de normalizacion.
 
 Se trata de un artefacto de investigacion, no de un modelo de proposito general: fue archivado "bajo instruccion del usuario" el 2026-10-04 y el propio autor advierte que no establece identidad de resultado de paper ni aprobacion de auditoria. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no declara licencia ni idiomas. Su relevancia es, por tanto, acotada: sirve como material de trazabilidad y como punto de partida reproducible para experimentos de robotica de manipulacion, siempre que se respeten las restricciones de alcance experimental que el autor indica que siguen vigentes.
 
@@ -25,7 +25,7 @@ La model card menciona que las identidades inmutables de dataset, runtime y codi
 | Framework declarado | PI0.5 formal training |
 | Contenido archivado | parametros de inferencia y estado de normalizacion/procesador |
 | Contenido no incluido | optimizador y RNG |
-| Pipeline (HuggingFace) | robotics |
+| Pipeline (Hugging Face) | robotics |
 | Etiquetas | robotics, ctr, archival-checkpoint, region:us |
 | Fecha de creacion (metadatos) | 2026-10-03 |
 | Ultima actualizacion (metadatos) | 2026-10-03 |
@@ -97,6 +97,6 @@ No es posible establecer una comparativa rigurosa con la informacion proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shiki42/s017-water-delivery-mixed-pi05-step20000
+- Hugging Face: https://huggingface.co/Shiki42/s017-water-delivery-mixed-pi05-step20000
 - `archive-provenance.json`: fichero citado en la model card como registro de las identidades de dataset, runtime y fuente; no se ha localizado una URL publica en la informacion disponible.
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre este modelo. Los resultados recuperados no guardan relacion con el contenido tecnico y no se incluyen.

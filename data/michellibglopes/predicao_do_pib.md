@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MichelliBglopes/Predicao_do_PIB` es un repositorio alojado en HuggingFace por el usuario MichelliBglopes. Por el nombre del identificador ("Predicção do PIB", en portugués "predicción del PIB") y por la ausencia total de documentación técnica, todo apunta a un artefacto experimental o educativo orientado a la predicción de series macroeconómicas (producto interior bruto), no a un modelo de lenguaje generativo con arquitectura y pesos publicados.
+`MichelliBglopes/Predicao_do_PIB` es un repositorio alojado en Hugging Face por el usuario MichelliBglopes. Por el nombre del identificador ("Predicção do PIB", en portugués "predicción del PIB") y por la ausencia total de documentación técnica, todo apunta a un artefacto experimental o educativo orientado a la predicción de series macroeconómicas (producto interior bruto), no a un modelo de lenguaje generativo con arquitectura y pesos publicados.
 
 La model card únicamente declara la licencia MIT y no incluye información sobre arquitectura, tamaño, tokenizador, datos de entrenamiento, formato de pesos ni capacidades. El repositorio no registra descargas ni interacciones, y no declara pipeline de inferencia, lo que impide clasificarlo dentro de las categorías habituales (text-generation, tabular, time-series, etc.).
 
@@ -43,7 +43,7 @@ El nombre del repositorio sugiere un objetivo de predicción del PIB, pero no se
 - Docencia y experimentación académica: el repositorio podría servir como plantilla para prácticas de predicción económica, siempre que el autor publique el código y los datos asociados.
 - Prototipado interno de analítica económica: un equipo podría reutilizar la licencia MIT para adaptar el artefacto a sus propias series, pero necesitaría primero inspeccionar el contenido real del repositorio.
 - Integración en pipelines de investigación: solo viable si se confirma la existencia de un modelo serializado y de un esquema de entrada/salida documentado, actualmente inexistente.
-- Benchmark de referencia para comparativas: podría utilizarse como caso base en estudios sobre reproducibilidad de repositorios de HuggingFace con documentación mínima.
+- Benchmark de referencia para comparativas: podría utilizarse como caso base en estudios sobre reproducibilidad de repositorios de Hugging Face con documentación mínima.
 - Publicación de resultados en abierto: la licencia MIT permitiría redistribuir derivados, pero la falta de especificaciones impide atribuir correctamente el trabajo original.
 
 ## Benchmarks y rendimiento
@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables porque no se ha identificado la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MichelliBglopes/Predicao_do_PIB
+- Repositorio en Hugging Face: https://huggingface.co/MichelliBglopes/Predicao_do_PIB
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

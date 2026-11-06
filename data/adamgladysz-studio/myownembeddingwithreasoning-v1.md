@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`myownEmbeddingwithReasoning-v1` es un modelo publicado por el usuario `adamgladysz-studio` en HuggingFace bajo licencia Apache 2.0. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni resultados de evaluacion. El repositorio tiene un tamano de 0.0 GB, lo que sugiere que los pesos no estan subidos o que el contenido es minimo.
+`myownEmbeddingwithReasoning-v1` es un modelo publicado por el usuario `adamgladysz-studio` en Hugging Face bajo licencia Apache 2.0. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni resultados de evaluacion. El repositorio tiene un tamano de 0.0 GB, lo que sugiere que los pesos no estan subidos o que el contenido es minimo.
 
-El nombre del modelo y el tag `feature-extraction` indican que esta pensado para generar embeddings, presumiblemente con algun componente de razonamiento, aunque no hay documentacion que lo confirme. El tag `gguf` apunta a que los pesos, si existen, estarian en formato GGUF, lo que lo haria compatible con llama.cpp y derivados. El tag `endpoints_compatible` sugiere compatibilidad con la infraestructura de Inference Endpoints de HuggingFace.
+El nombre del modelo y el tag `feature-extraction` indican que esta pensado para generar embeddings, presumiblemente con algun componente de razonamiento, aunque no hay documentacion que lo confirme. El tag `gguf` apunta a que los pesos, si existen, estarian en formato GGUF, lo que lo haria compatible con llama.cpp y derivados. El tag `endpoints_compatible` sugiere compatibilidad con la infraestructura de Inference Endpoints de Hugging Face.
 
 La relevancia practica de este modelo es muy limitada en su estado actual: sin model card, sin benchmarks, sin especificaciones de arquitectura y con un tamano de repositorio nulo, no es posible evaluarlo ni recomendarlo para produccion. Se documenta aqui como referencia de un artefacto publicado pero no sustanciado.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: no disponible (se desconoce el numero de parametros).
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no determinable sin conocer el tamano del modelo; el formato GGUF sugiere que podria ejecutarse en CPU o GPU de consumo si el modelo es pequeno.
-- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio) por el tag `gguf`; compatible con HuggingFace Inference Endpoints segun el tag `endpoints_compatible`.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio) por el tag `gguf`; compatible con Hugging Face Inference Endpoints segun el tag `endpoints_compatible`.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -75,5 +75,5 @@ No disponible. No se puede establecer una comparativa fiable sin conocer paramet
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adamgladysz-studio/myownEmbeddingwithReasoning-v1
+- Hugging Face: https://huggingface.co/adamgladysz-studio/myownEmbeddingwithReasoning-v1
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -74,10 +74,10 @@ La métrica es "accuracy by execution": cada consulta generada se ejecuta y se c
 
 | Modelo | Parametros | Contexto | Precision en test askmdb | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| askmdb-2b | 1,88 B | no disponible | 86,8 % | Apache-2.0 | GGUF en HuggingFace |
-| askmdb-0.8b | no disponible (base Qwen3.5-0.8B) | no disponible | 83,6 % | Apache-2.0 (segun repositorio de la familia) | GGUF en HuggingFace; modelo por defecto de la CLI askmdb |
-| askmdb-4b | no disponible (base Qwen3.5-4B) | no disponible | 89,6 % | Apache-2.0 (segun repositorio de la familia) | GGUF en HuggingFace; usado por la CLI en GPU con ≥ 4 GiB |
-| askmdb-9b | no disponible (base Qwen3.5-9B) | no disponible | 91,6 % | Apache-2.0 (segun repositorio de la familia) | GGUF en HuggingFace; opción en la CLI con ≥ 8 GiB |
+| askmdb-2b | 1,88 B | no disponible | 86,8 % | Apache-2.0 | GGUF en Hugging Face |
+| askmdb-0.8b | no disponible (base Qwen3.5-0.8B) | no disponible | 83,6 % | Apache-2.0 (segun repositorio de la familia) | GGUF en Hugging Face; modelo por defecto de la CLI askmdb |
+| askmdb-4b | no disponible (base Qwen3.5-4B) | no disponible | 89,6 % | Apache-2.0 (segun repositorio de la familia) | GGUF en Hugging Face; usado por la CLI en GPU con ≥ 4 GiB |
+| askmdb-9b | no disponible (base Qwen3.5-9B) | no disponible | 91,6 % | Apache-2.0 (segun repositorio de la familia) | GGUF en Hugging Face; opción en la CLI con ≥ 8 GiB |
 
 La comparación más directa es dentro de la propia familia askmdb, ya que comparten datos, contrato y prompt. Frente a modelos generalistas sin ajustar, askmdb-2b casi duplica la precisión de Qwen3.5-9B (86,8 % frente a 47,8 %) y de Gemma 4 E4B-it (45,4 %) en esta tarea concreta.
 
@@ -94,7 +94,7 @@ La comparación más directa es dentro de la propia familia askmdb, ya que compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manuelgscom/askmdb-2b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/manuelgscom/askmdb-2b-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Dataset de test: https://huggingface.co/datasets/manuelgscom/askmdb-test
 - Colección de la familia askmdb: https://huggingface.co/collections/manuelgscom/askmdb-6ae398e10b4817ed0e7431f1

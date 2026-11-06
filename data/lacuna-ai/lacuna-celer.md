@@ -76,10 +76,10 @@ Datos adicionales publicados: la cuantización q4f16 produce el mismo argmax que
 
 | Modelo | Params | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lacuna Celer | 68M | Clasificación CV × oferta multi-cabeza | 4.096 tokens | MIT | ONNX público (HuggingFace), código en GitHub |
-| Lacuna Altus (profesor) | 395M | Misma tarea, tier grande | 4.096 tokens | no disponible | HuggingFace (lacuna-ai/lacuna-altus) |
-| Ettin-68M (base) | 68M | Codificador genérico de textos | no disponible | no disponible | HuggingFace (jhu-clsp/ettin-encoder-68m) |
-| bge-m3 / gte-modernbert-base (similitud) | no disponible | Embeddings/similitud de documentos | no disponible | no disponible | Públicos en HuggingFace |
+| Lacuna Celer | 68M | Clasificación CV × oferta multi-cabeza | 4.096 tokens | MIT | ONNX público (Hugging Face), código en GitHub |
+| Lacuna Altus (profesor) | 395M | Misma tarea, tier grande | 4.096 tokens | no disponible | Hugging Face (lacuna-ai/lacuna-altus) |
+| Ettin-68M (base) | 68M | Codificador genérico de textos | no disponible | no disponible | Hugging Face (jhu-clsp/ettin-encoder-68m) |
+| bge-m3 / gte-modernbert-base (similitud) | no disponible | Embeddings/similitud de documentos | no disponible | no disponible | Públicos en Hugging Face |
 
 Frente a alternativas de similitud semántica (bge-m3, gte-modernbert-base), Celer aporta cabezas estructuradas (ubicación, seniority, must-haves) que los embeddings genéricos no capturan, según la evaluación privada del autor. Frente a su profesor Altus, ofrece calidad similar con casi 6 veces menos parámetros y un peso 5,8 veces más pequeño.
 
@@ -96,7 +96,7 @@ Frente a alternativas de similitud semántica (bge-m3, gte-modernbert-base), Cel
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lacuna-ai/lacuna-celer
+- Modelo en Hugging Face: https://huggingface.co/lacuna-ai/lacuna-celer
 - Modelo profesor (Lacuna Altus): https://huggingface.co/lacuna-ai/lacuna-altus
 - Modelo base (Ettin-68M): https://huggingface.co/jhu-clsp/ettin-encoder-68m
 - Código, pipeline de entrenamiento y extensión de Chrome: https://github.com/cucoleadan/lacuna-ai

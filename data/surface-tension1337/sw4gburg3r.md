@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sw4gburg3r es un adaptador LoRA de texto a imagen publicado por el usuario surface-tension1337 en HuggingFace. Se trata de un ajuste fino ligero sobre el modelo base Tongyi-MAI/Z-Image-Turbo, un modelo de difusion para generacion de imagenes desarrollado por Tongyi-MAI (Alibaba). El adaptador se distribuye en formato diffusers y esta pensado para invocarse mediante la palabra de activacion `sw4gburg3r`.
+sw4gburg3r es un adaptador LoRA de texto a imagen publicado por el usuario surface-tension1337 en Hugging Face. Se trata de un ajuste fino ligero sobre el modelo base Tongyi-MAI/Z-Image-Turbo, un modelo de difusion para generacion de imagenes desarrollado por Tongyi-MAI (Alibaba). El adaptador se distribuye en formato diffusers y esta pensado para invocarse mediante la palabra de activacion `sw4gburg3r`.
 
 El repositorio tiene un tamano de 0.2 GB, coherente con un LoRA de bajo rango sobre un modelo de difusion, y no registra descargas ni likes en el momento de la consulta. La model card es extremadamente escueta: solo define la palabra de activacion, indica el modelo base y muestra un widget de ejemplo. No se documentan datos de entrenamiento, hiperparametros, composicion del dataset ni limitaciones.
 
@@ -72,6 +72,6 @@ No disponible. No se dispone de informacion sobre otros LoRAs comparables sobre 
 
 ## Enlaces
 
-- [HuggingFace: surface-tension1337/sw4gburg3r](https://huggingface.co/surface-tension1337/sw4gburg3r)
+- [Hugging Face: surface-tension1337/sw4gburg3r](https://huggingface.co/surface-tension1337/sw4gburg3r)
 - [Modelo base: Tongyi-MAI/Z-Image-Turbo](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo)
 - [Archivos del modelo](https://huggingface.co/surface-tension1337/sw4gburg3r/tree/main)

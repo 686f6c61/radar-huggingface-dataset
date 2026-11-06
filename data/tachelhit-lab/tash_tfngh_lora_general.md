@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`tachelhit-lab/tash_tfngh_lora_general` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por la organización `tachelhit-lab`. El adaptador se construye sobre el modelo base `facebook/nllb-200-distilled-600M`, un modelo de traducción automática neuronal multilingüe de la familia NLLB-200 de Meta, que soporta 200 idiomas. El nombre del repositorio sugiere una posible especialización en tachelhit (variante del amazigh) o en tifinagh, pero no se proporciona ninguna descripción en la model card que confirme esta hipótesis.
+`tachelhit-lab/tash_tfngh_lora_general` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por la organización `tachelhit-lab`. El adaptador se construye sobre el modelo base `facebook/nllb-200-distilled-600M`, un modelo de traducción automática neuronal multilingüe de la familia NLLB-200 de Meta, que soporta 200 idiomas. El nombre del repositorio sugiere una posible especialización en tachelhit (variante del amazigh) o en tifinagh, pero no se proporciona ninguna descripción en la model card que confirme esta hipótesis.
 
-La model card está prácticamente vacía: no incluye información sobre el desarrollador, los datos de entrenamiento, la licencia, los idiomas soportados ni las capacidades específicas. El repositorio contiene únicamente 0.1 GB de pesos en formato `safetensors` y está etiquetado como `peft`, lo que indica que es un adaptador destinado a ser cargado junto con el modelo base mediante la librería PEFT de HuggingFace.
+La model card está prácticamente vacía: no incluye información sobre el desarrollador, los datos de entrenamiento, la licencia, los idiomas soportados ni las capacidades específicas. El repositorio contiene únicamente 0.1 GB de pesos en formato `safetensors` y está etiquetado como `peft`, lo que indica que es un adaptador destinado a ser cargado junto con el modelo base mediante la librería PEFT de Hugging Face.
 
 Dado que el modelo base es NLLB-200-distilled-600M, se puede inferir que el adaptador está diseñado para tareas de traducción, pero sin documentación adicional no es posible determinar qué par de idiomas, dominio o calidad de entrenamiento tiene. La falta de descargas y de "likes" sugiere que es un proyecto reciente o de baja difusión.
 
@@ -78,7 +78,7 @@ No se dispone de información sobre modelos comparables. El propio modelo base `
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tachelhit-lab/tash_tfngh_lora_general
+- Repositorio Hugging Face: https://huggingface.co/tachelhit-lab/tash_tfngh_lora_general
 - Modelo base: https://huggingface.co/facebook/nllb-200-distilled-600M
 - Documentación de PEFT: https://huggingface.co/docs/peft
 - Paper de LoRA: https://arxiv.org/abs/2106.09685

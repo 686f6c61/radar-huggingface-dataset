@@ -76,7 +76,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace (esta publicación): https://huggingface.co/lawrenmurray/flux-3-image-klein-pup-Q8_0-GGUF
+- Hugging Face (esta publicación): https://huggingface.co/lawrenmurray/flux-3-image-klein-pup-Q8_0-GGUF
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein-pup
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

@@ -71,8 +71,8 @@ No se dispone de datos comparativos con modelos de la misma categoría en la inf
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/nicolasembleton/Apodex-1.1-mini-MLX-4bit
-- HuggingFace del modelo base: https://huggingface.co/apodex/Apodex-1.1-mini
+- Hugging Face del modelo: https://huggingface.co/nicolasembleton/Apodex-1.1-mini-MLX-4bit
+- Hugging Face del modelo base: https://huggingface.co/apodex/Apodex-1.1-mini
 - Paper de Apodex 1.1 (arXiv): https://arxiv.org/abs/2608.23283
 - Web oficial de Apodex: https://www.apodex.com/
 - Web alternativa de Apodex: https://www.apodex.ai/

@@ -70,7 +70,7 @@ Los datos de las alternativas proceden de la documentacion publica de esos model
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wz7475/qwen2.5-7b-instruct-precision-legal-sft-int8 | Adaptador LoRA sobre base de ~7,6 mil millones | No especificado | Adaptador PEFT (investigacion, desalineacion) | No disponible | HuggingFace, 0 descargas, 0,3 GB |
+| wz7475/qwen2.5-7b-instruct-precision-legal-sft-int8 | Adaptador LoRA sobre base de ~7,6 mil millones | No especificado | Adaptador PEFT (investigacion, desalineacion) | No disponible | Hugging Face, 0 descargas, 0,3 GB |
 | Qwen/Qwen2.5-7B-Instruct | ~7,6 mil millones | 32.768 tokens nativos | Modelo completo denso | Apache-2.0 | Ampliamente disponible y desplegado |
 | meta-llama/Llama-3.1-8B-Instruct | ~8 mil millones | 128.000 tokens | Modelo completo denso | Licencia comunitaria Llama 3.1 | Ampliamente disponible |
 | mistralai/Mistral-7B-Instruct-v0.3 | ~7,25 mil millones | 32.000 tokens | Modelo completo denso | Apache-2.0 | Ampliamente disponible |
@@ -92,7 +92,7 @@ La comparacion relevante no es de rendimiento, ya que no hay benchmarks publicad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-precision-legal-sft-int8
+- Modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-precision-legal-sft-int8
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper, blog, repositorio o demo del autor: no disponible en la informacion proporcionada.
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados obtenidos no guardan relacion con el artefacto.

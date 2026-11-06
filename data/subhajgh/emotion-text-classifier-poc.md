@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`subhajgh/emotion-text-classifier-poc` es un repositorio publicado en HuggingFace por el usuario `subhajgh` bajo licencia Apache 2.0. El nombre indica que se trata de una prueba de concepto (PoC) de clasificación de emociones en texto, pero la model card no aporta ningún contenido técnico: el README se reduce a la declaración de licencia, sin descripción, arquitectura, dataset ni métricas.
+`subhajgh/emotion-text-classifier-poc` es un repositorio publicado en Hugging Face por el usuario `subhajgh` bajo licencia Apache 2.0. El nombre indica que se trata de una prueba de concepto (PoC) de clasificación de emociones en texto, pero la model card no aporta ningún contenido técnico: el README se reduce a la declaración de licencia, sin descripción, arquitectura, dataset ni métricas.
 
 El repositorio no registra descargas ni likes y no declara pipeline de inferencia, idiomas soportados ni formato de pesos. La única etiqueta adicional es `region:us`. Las fechas de creación y última actualización son idénticas (15 de octubre de 2026), lo que sugiere que no ha habido mantenimiento posterior a la publicación inicial.
 
@@ -78,10 +78,10 @@ Los siguientes proyectos aparecen en la busqueda web como alternativas de clasif
 
 | Modelo | Base / arquitectura | Tarea | Documentacion | Disponibilidad |
 |---|---|---|---|---|
-| subhajgh/emotion-text-classifier-poc | no disponible | clasificacion de emociones (inferida del nombre) | solo licencia Apache 2.0 | HuggingFace, 0 descargas |
-| michellejieli/emotion_text_classifier | DistilRoBERTa-base ajustado | clasificacion de emociones; entrenado con transcripciones de la serie Friends | model card descriptiva | HuggingFace |
-| ahmetyaylalioglu/text-emotion-classifier | no disponible en el extracto | clasificacion de emociones en texto | no detallada en el extracto | HuggingFace |
-| ankit-aglawe/emotionclassifier | paquete Python sobre modelos preentrenados de HuggingFace | clasificacion de emociones con utilidades de preprocesado, visualizacion y ajuste fino | repositorio y paquete en PyPI | GitHub y PyPI |
+| subhajgh/emotion-text-classifier-poc | no disponible | clasificacion de emociones (inferida del nombre) | solo licencia Apache 2.0 | Hugging Face, 0 descargas |
+| michellejieli/emotion_text_classifier | DistilRoBERTa-base ajustado | clasificacion de emociones; entrenado con transcripciones de la serie Friends | model card descriptiva | Hugging Face |
+| ahmetyaylalioglu/text-emotion-classifier | no disponible en el extracto | clasificacion de emociones en texto | no detallada en el extracto | Hugging Face |
+| ankit-aglawe/emotionclassifier | paquete Python sobre modelos preentrenados de Hugging Face | clasificacion de emociones con utilidades de preprocesado, visualizacion y ajuste fino | repositorio y paquete en PyPI | GitHub y PyPI |
 
 La diferencia principal entre el repositorio analizado y las alternativas es de documentacion: las alternativas identifican al menos el modelo base o la tarea, mientras que `emotion-text-classifier-poc` no publica ningun detalle tecnico.
 
@@ -94,7 +94,7 @@ La diferencia principal entre el repositorio analizado y las alternativas es de 
 - Licencia: Apache 2.0 permite uso comercial y modificacion, pero la licencia no garantiza que el contenido del repositorio sea funcional ni que no infrinja derechos de terceros sobre los datos de entrenamiento, que se desconocen.
 - Sin mantenimiento aparente: la fecha de creacion y la de ultima actualizacion coinciden.
 - Sin garantias para produccion: no debe desplegarse en un sistema real sin una evaluacion propia previa sobre datos representativos del dominio objetivo.
-- Riesgo de identificacion de modelos: existen otros clasificadores de emociones con nombres similares en HuggingFace; conviene verificar el identificador exacto antes de referenciarlo.
+- Riesgo de identificacion de modelos: existen otros clasificadores de emociones con nombres similares en Hugging Face; conviene verificar el identificador exacto antes de referenciarlo.
 
 ## Enlaces
 

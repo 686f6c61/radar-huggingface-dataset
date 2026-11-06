@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`okamo10/qwen-phoenix-lora` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario okamo10, entrenado mediante SFT sobre el modelo base `unsloth/Qwen2.5-7B-Instruct-unsloth-bnb-4bit`, es decir, una versión del Qwen2.5-7B-Instruct de Alibaba cuantizada a 4 bits con la librería Unsloth. El repositorio contiene únicamente los pesos del adaptador (0,2 GB), no el modelo completo, por lo que su uso requiere descargar y cargar el checkpoint base por separado y aplicar el adaptador con PEFT. La model card es la plantilla por defecto de HuggingFace y no está rellenada: no documenta propósito, datos de entrenamiento, hiperparámetros ni evaluación.
+`okamo10/qwen-phoenix-lora` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario okamo10, entrenado mediante SFT sobre el modelo base `unsloth/Qwen2.5-7B-Instruct-unsloth-bnb-4bit`, es decir, una versión del Qwen2.5-7B-Instruct de Alibaba cuantizada a 4 bits con la librería Unsloth. El repositorio contiene únicamente los pesos del adaptador (0,2 GB), no el modelo completo, por lo que su uso requiere descargar y cargar el checkpoint base por separado y aplicar el adaptador con PEFT. La model card es la plantilla por defecto de Hugging Face y no está rellenada: no documenta propósito, datos de entrenamiento, hiperparámetros ni evaluación.
 
 Por tanto, se trata de un ajuste fino ligero y experimental, sin información publicada sobre el conjunto de datos, el objetivo del entrenamiento (pese al nombre "phoenix", no se explica a qué se refiere) ni los resultados obtenidos. Con 0 descargas y 1 "like" en el momento de la consulta, y un repositorio creado el 2026-10-23, no hay evidencia de uso ni de validación por parte de la comunidad. Es relevante únicamente como ejemplo de flujo de trabajo LoRA/SFT con Unsloth sobre Qwen2.5, o para quien quiera inspeccionar los pesos del adaptador.
 
@@ -71,10 +71,10 @@ La model card no incluye ninguna sección de evaluación cumplimentada (todas la
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Evaluación publicada |
 |---|---|---|---|---|---|
-| okamo10/qwen-phoenix-lora | Adaptador LoRA sobre base de 7,6 B | No disponible | No disponible | HuggingFace, 0 descargas | No |
-| Qwen2.5-7B-Instruct (base) | 7,6 B | 32 768 nativos (ampliable con YaRN) | Apache-2.0 según su documentación pública | HuggingFace, ampliamente usado | Sí, en la model card oficial |
-| Mistral-7B-Instruct-v0.3 | ~7,2 B | 32 768 | Apache-2.0 | HuggingFace | Parcial, en su model card |
-| Llama-3.1-8B-Instruct | 8,0 B | 128 000 | Licencia comunitaria de Meta (con restricciones) | HuggingFace, licencia aceptable | Sí, en su model card |
+| okamo10/qwen-phoenix-lora | Adaptador LoRA sobre base de 7,6 B | No disponible | No disponible | Hugging Face, 0 descargas | No |
+| Qwen2.5-7B-Instruct (base) | 7,6 B | 32 768 nativos (ampliable con YaRN) | Apache-2.0 según su documentación pública | Hugging Face, ampliamente usado | Sí, en la model card oficial |
+| Mistral-7B-Instruct-v0.3 | ~7,2 B | 32 768 | Apache-2.0 | Hugging Face | Parcial, en su model card |
+| Llama-3.1-8B-Instruct | 8,0 B | 128 000 | Licencia comunitaria de Meta (con restricciones) | Hugging Face, licencia aceptable | Sí, en su model card |
 
 Nota: los datos de los modelos comparativos provienen de su documentación pública y no han sido verificados en la información proporcionada en esta consulta; los de este adaptador figuran como "no disponible" porque su model card no los recoge. No se dispone de comparación de rendimiento porque el adaptador no publica benchmarks.
 
@@ -88,12 +88,12 @@ Nota: los datos de los modelos comparativos provienen de su documentación públ
 - Contexto: no se documenta la ventana utilizada durante el entrenamiento; aunque el base soporte 32 768 tokens, el adaptador puede haber sido entrenado con secuencias más cortas.
 - Madurez: 0 descargas y 1 "like"; repositorio creado el 2026-10-23 y actualizado cuatro segundos después, lo que sugiere una subida automática sin revisión posterior.
 - Dependencia del base: los pesos no son autónomos; hay que replicar exactamente la configuración del base (`unsloth/Qwen2.5-7B-Instruct-unsloth-bnb-4bit`) o fusionar el adaptador, lo que añade pasos y posibles errores de compatibilidad.
-- Trazabilidad: el tag `arxiv:1910.09700` que aparece en el repositorio corresponde a Lacoste et al. sobre el cálculo de impacto ambiental, citado en la plantilla de HuggingFace; no es un artículo sobre este modelo.
+- Trazabilidad: el tag `arxiv:1910.09700` que aparece en el repositorio corresponde a Lacoste et al. sobre el cálculo de impacto ambiental, citado en la plantilla de Hugging Face; no es un artículo sobre este modelo.
 - No apto para producción sin evaluación propia: sin benchmarks ni datos de entrenamiento, cualquier despliegue debería validarse con un conjunto de pruebas representativo del dominio objetivo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/okamo10/qwen-phoenix-lora
+- Repositorio en Hugging Face: https://huggingface.co/okamo10/qwen-phoenix-lora
 - Modelo base referenciado: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-unsloth-bnb-4bit
 - Modelo original Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Librería PEFT: https://github.com/huggingface/peft

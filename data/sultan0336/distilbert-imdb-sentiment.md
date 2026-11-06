@@ -79,10 +79,10 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sultan0336/distilbert-imdb-sentiment | 66,96 M | 128 tokens | Clasificacion de sentimiento binaria (IMDb) | apache-2.0 | HuggingFace, 0 descargas |
-| distilbert/distilbert-base-uncased | 66,96 M | 512 tokens | Modelo base; requiere cabeza de clasificacion | apache-2.0 | HuggingFace, ampliamente adoptado |
+| Sultan0336/distilbert-imdb-sentiment | 66,96 M | 128 tokens | Clasificacion de sentimiento binaria (IMDb) | apache-2.0 | Hugging Face, 0 descargas |
+| distilbert/distilbert-base-uncased | 66,96 M | 512 tokens | Modelo base; requiere cabeza de clasificacion | apache-2.0 | Hugging Face, ampliamente adoptado |
 | TextBlob / VADER (baseline lexico) | no aplica | no aplica | Sentimiento por reglas | MIT / NLTK | Librerias Python |
-| RoBERTa-base ajustado para sentimiento | ~125 M | 512 tokens | Clasificacion de sentimiento | MIT | Multiples checkpoints en HuggingFace |
+| RoBERTa-base ajustado para sentimiento | ~125 M | 512 tokens | Clasificacion de sentimiento | MIT | Multiples checkpoints en Hugging Face |
 
 El modelo base sin ajustar no es directamente comparable en rendimiento porque carece de cabeza de clasificación entrenada, pero sirve de referencia de tamaño y contexto. Frente a baselines léxicos como VADER, este checkpoint ofrece una accuracy medida del 83,8 % en su propio test, aunque la comparación no es directa al no compartir conjunto de evaluación. No se dispone de datos de benchmarks de alternativas en la información proporcionada.
 
@@ -101,7 +101,7 @@ El modelo base sin ajustar no es directamente comparable en rendimiento porque c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sultan0336/distilbert-imdb-sentiment
+- Modelo en Hugging Face: https://huggingface.co/Sultan0336/distilbert-imdb-sentiment
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Dataset de entrenamiento: https://huggingface.co/datasets/stanfordnlp/imdb
 - Términos del dataset: https://huggingface.co/datasets/stanfordnlp/imdb

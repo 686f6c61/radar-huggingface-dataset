@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `AlinaGonch/granite41-3b-squad-ratio-0.00-seed-42-r4` es un checkpoint alojado en HuggingFace cuyo identificador sugiere un ajuste fino (fine-tuning) de un modelo de la familia IBM Granite 4.1 con aproximadamente 3.000 millones de parámetros sobre el conjunto de datos SQuAD. El nombre incluye además dos metadatos de experimento: un ratio de 0.00 y una semilla de 42, junto al sufijo `r4`, que no está documentado en la model card.
+El repositorio `AlinaGonch/granite41-3b-squad-ratio-0.00-seed-42-r4` es un checkpoint alojado en Hugging Face cuyo identificador sugiere un ajuste fino (fine-tuning) de un modelo de la familia IBM Granite 4.1 con aproximadamente 3.000 millones de parámetros sobre el conjunto de datos SQuAD. El nombre incluye además dos metadatos de experimento: un ratio de 0.00 y una semilla de 42, junto al sufijo `r4`, que no está documentado en la model card.
 
-La información disponible es mínima. La model card publicada es la plantilla genérica autogenerada por HuggingFace, con prácticamente todos los campos marcados como "[More Information Needed]": no se declara autoría efectiva, tipo de modelo, idiomas, licencia, datos de entrenamiento ni resultados de evaluación. El repositorio aparece con un tamaño de 0.0 GB y cero descargas, lo que sugiere que o bien los pesos no se han subido, o bien el repositorio contiene únicamente metadatos y la configuración del modelo.
+La información disponible es mínima. La model card publicada es la plantilla genérica autogenerada por Hugging Face, con prácticamente todos los campos marcados como "[More Information Needed]": no se declara autoría efectiva, tipo de modelo, idiomas, licencia, datos de entrenamiento ni resultados de evaluación. El repositorio aparece con un tamaño de 0.0 GB y cero descargas, lo que sugiere que o bien los pesos no se han subido, o bien el repositorio contiene únicamente metadatos y la configuración del modelo.
 
 Por tanto, esta ficha no puede certificar ninguna capacidad concreta del modelo. Todo lo que se indica a continuación sobre arquitectura, contexto o rendimiento es una inferencia a partir del identificador del repositorio y debe verificarse antes de cualquier uso en producción. La relevancia de este checkpoint es, a día de hoy, la de un artefacto de experimentación reproducible (semilla fijada) más que la de un modelo listo para desplegar.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha no puede certificar ninguna capacidad concreta del modelo.
 
 ## Arquitectura y entrenamiento
 
-No hay información verificable en la model card. Todos los apartados de arquitectura, objetivo de entrenamiento, datos de entrenamiento, preprocesado e hiperparámetros aparecen como "[More Information Needed]". El tag `arxiv:1910.09700` presente en el repositorio corresponde a Lacoste et al. (2019), el artículo del calculador de impacto medioambiental que HuggingFace inserta por defecto en la plantilla de model card, y no a un artículo sobre el modelo en sí.
+No hay información verificable en la model card. Todos los apartados de arquitectura, objetivo de entrenamiento, datos de entrenamiento, preprocesado e hiperparámetros aparecen como "[More Information Needed]". El tag `arxiv:1910.09700` presente en el repositorio corresponde a Lacoste et al. (2019), el artículo del calculador de impacto medioambiental que Hugging Face inserta por defecto en la plantilla de model card, y no a un artículo sobre el modelo en sí.
 
 A partir exclusivamente del identificador se puede inferir, con reservas, que se trataría de un ajuste fino de un modelo Granite 4.1 de ~3B sobre SQuAD (question answering extractivo), con dos hiperparámetros registrados en el nombre: `ratio-0.00` y `seed-42`. El sufijo `r4` podría corresponder a un rango de LoRA o a un índice de ejecución, pero no hay documentación que lo confirme. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron técnicas de alineación como RLHF o DPO.
 
@@ -87,7 +87,7 @@ No hay datos de rendimiento de este checkpoint, por lo que no es posible estable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.00-seed-42-r4
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.00-seed-42-r4
 - Artículo referenciado en los tags (Lacoste et al., 2019, calculador de impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ML citado en la plantilla de la model card: https://mlco2.github.io/impact
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código ni demostraciones del modelo.

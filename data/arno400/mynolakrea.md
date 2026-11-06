@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Arno400/mynolakrea` es un repositorio alojado en HuggingFace por el usuario Arno400 del que no se dispone de información técnica publicada. La model card únicamente declara la licencia (`creativeml-openrail-m`) y no incluye descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no tiene pipeline declarado, no especifica idiomas soportados y acumula 0 descargas y 0 likes desde su creación el 20 de octubre de 2026.
+`Arno400/mynolakrea` es un repositorio alojado en Hugging Face por el usuario Arno400 del que no se dispone de información técnica publicada. La model card únicamente declara la licencia (`creativeml-openrail-m`) y no incluye descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no tiene pipeline declarado, no especifica idiomas soportados y acumula 0 descargas y 0 likes desde su creación el 20 de octubre de 2026.
 
 El único dato cuantitativo verificable es el tamaño del repositorio: 6,6 GB. Ese volumen, combinado con la licencia CreativeML OpenRAIL-M (empleada habitualmente en la familia Stable Diffusion), es compatible con un checkpoint de difusión en precisión fp16, pero se trata de una hipótesis no confirmada por el autor. No hay información que permita determinar si es un modelo base, un fine-tuning, un LoRA empaquetado, un VAE o un componente auxiliar.
 
@@ -67,7 +67,7 @@ No es posible establecer una comparativa técnicamente válida: se desconocen pa
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Arno400/mynolakrea | no disponible | no disponible | sin benchmarks publicados | creativeml-openrail-m | HuggingFace, 0 descargas |
+| Arno400/mynolakrea | no disponible | no disponible | sin benchmarks publicados | creativeml-openrail-m | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Nota: la licencia CreativeML OpenRAIL-M es la empleada habitualmente por la familia Stable Diffusion (SD 1.5, SDXL), lo que sugiere una posible pertenencia a esa estirpe de modelos de difusión. Esta afirmación es una inferencia basada en la licencia y el tamaño del repositorio, no un dato confirmado por el autor, y no debe citarse como comparación de rendimiento.
@@ -86,6 +86,6 @@ Nota: la licencia CreativeML OpenRAIL-M es la empleada habitualmente por la fami
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Arno400/mynolakrea
+- Repositorio en Hugging Face: https://huggingface.co/Arno400/mynolakrea
 - Texto de la licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license
 - Paper, blog, repositorio de código y demostraciones: no disponibles en la información proporcionada.

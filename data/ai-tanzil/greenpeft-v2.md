@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GreenPEFT-v2 es un artefacto publicado en HuggingFace por el usuario ai-tanzil bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card no contiene mas que la linea de licencia, no se declara pipeline, no se declaran idiomas y el repositorio ocupa 0.0 GB, lo que sugiere que o bien esta vacio o bien contiene un unico fichero de peso reducido.
+GreenPEFT-v2 es un artefacto publicado en Hugging Face por el usuario ai-tanzil bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card no contiene mas que la linea de licencia, no se declara pipeline, no se declaran idiomas y el repositorio ocupa 0.0 GB, lo que sugiere que o bien esta vacio o bien contiene un unico fichero de peso reducido.
 
 La unica etiqueta tecnica relevante es `joblib`, que indica que el artefacto se distribuye como un objeto Python serializado con la libreria joblib (formato habitual en pipelines de scikit-learn, no en pesos de redes neuronales profundas en safetensors o GGUF). El nombre "GreenPEFT" apunta a tecnicas de ajuste eficiente de parametros (PEFT, parameter-efficient fine-tuning), pero no hay documentacion que lo confirme.
 
@@ -64,7 +64,7 @@ No disponible. No hay informacion suficiente para identificar la categoria del a
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ai-tanzil/GreenPEFT-v2 | no disponible | no disponible | no disponible | MIT | HuggingFace |
+| ai-tanzil/GreenPEFT-v2 | no disponible | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,5 +81,5 @@ No disponible. No hay informacion suficiente para identificar la categoria del a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ai-tanzil/GreenPEFT-v2
+- Hugging Face: https://huggingface.co/ai-tanzil/GreenPEFT-v2
 - DOI asociado a la subida: https://doi.org/10.57967/hf/10690

@@ -79,6 +79,6 @@ No se dispone de benchmarks comparativos entre estas variantes.
 
 ## Enlaces
 
-- [HuggingFace: ApolloRaines/Llama-3.1-8B-Instruct-Concise-Context-Grounded](https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Concise-Context-Grounded)
+- [Hugging Face: ApolloRaines/Llama-3.1-8B-Instruct-Concise-Context-Grounded](https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Concise-Context-Grounded)
 - [Repositorio jBlaze (GitHub)](https://github.com/apolloraines/jblaze)
 - [Modelo base: meta-llama/Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)

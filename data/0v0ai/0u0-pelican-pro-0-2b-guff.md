@@ -66,7 +66,7 @@ No hay modelos directamente comparables en la información proporcionada: este m
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 0u0-鹈鹕PRO | ~0,26B | 32.768 | Memorizacion byte a byte de un HTML | apache-2.0 | HuggingFace (GGUF) |
+| 0u0-鹈鹕PRO | ~0,26B | 32.768 | Memorizacion byte a byte de un HTML | apache-2.0 | Hugging Face (GGUF) |
 | Modelos tiny from-scratch de proposito general | no disponible | no disponible | Generacion de lenguaje general | no disponible | no disponible |
 | Alternativas de memorizacion de secuencia | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,7 +83,7 @@ No hay modelos directamente comparables en la información proporcionada: este m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0v0ai/0u0-pelican-pro-0.2B-GUFF
+- Hugging Face: https://huggingface.co/0v0ai/0u0-pelican-pro-0.2B-GUFF
 - Web oficial del autor: https://0u0ai.com
 - Repositorio llama.cpp (motor de inferencia recomendado): https://github.com/ggml-org/llama.cpp
 - LM Studio (interfaz de uso recomendada): https://lmstudio.ai

@@ -38,7 +38,7 @@ Segun la model card, los datos de entrenamiento son titulos de los subreddits r/
 - Discriminacion direccional frente a sentimiento: identifica hacia donde se afirma que van los precios, no si la noticia es buena o mala ni la postura del autor.
 - Procesamiento de textos cortos e informales en inglés: titulares, titulos de Reddit y publicaciones breves de redes sociales.
 - Etiquetado a gran escala para su posterior agregacion temporal (construccion de indicadores de alta frecuencia).
-- Compatibilidad con el ecosistema HuggingFace transformers + peft + bitsandbytes, con carga en 4 bits y device_map automatico.
+- Compatibilidad con el ecosistema Hugging Face transformers + peft + bitsandbytes, con carga en 4 bits y device_map automatico.
 - Inferencia por lotes con relleno a la izquierda (padding_side = "left") y truncacion configurable.
 - No soporta generacion de texto: el checkpoint es una cabeza de clasificacion, no un modelo instructivo.
 - No soporta tool calling ni function calling.
@@ -86,8 +86,8 @@ No se identifican en la informacion proporcionada modelos comparables con datos 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| reddit-pulse-llama3.2_3b-xqdora | 3,2 mil millones (base) + adaptador | 128.000 en la base; 1.024 tokens en la practica del adaptador | Clasificacion direccional de inflación (3 clases) | llama3.2 | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.2-3B (base sin ajustar) | 3,2 mil millones | 128.000 | Generacion de texto; no entrenado para esta clasificacion | llama3.2 | HuggingFace |
+| reddit-pulse-llama3.2_3b-xqdora | 3,2 mil millones (base) + adaptador | 128.000 en la base; 1.024 tokens en la practica del adaptador | Clasificacion direccional de inflación (3 clases) | llama3.2 | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.2-3B (base sin ajustar) | 3,2 mil millones | 128.000 | Generacion de texto; no entrenado para esta clasificacion | llama3.2 | Hugging Face |
 | Otros clasificadores pequenos del mismo pipeline de Reddit | no disponible | no disponible | Clasificacion direccional de inflación | no disponible | Mencionados de forma agregada en la model card, sin nombres ni metricas |
 | Clasificadores de sentimiento financiero tipo FinBERT | no disponible en la informacion proporcionada | no disponible | Sentimiento, no direccion de precios | no disponible | No evaluados en este conjunto |
 
@@ -108,7 +108,7 @@ No se identifican en la informacion proporcionada modelos comparables con datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andreadm/reddit-pulse-llama3.2_3b-xqdora
+- Modelo en Hugging Face: https://huggingface.co/andreadm/reddit-pulse-llama3.2_3b-xqdora
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Codigo de ajuste fino e inferencia sobre el corpus completo: https://github.com/andrea-dm/reddit-pulse
 - Articulo de referencia: Del Monaco, A., Longo, L., Marcucci, J. y Tafani, I. (2026), "Reddit's 'pulse' on US inflation: forecasting with large language models", Journal of Applied Econometrics, en prensa.

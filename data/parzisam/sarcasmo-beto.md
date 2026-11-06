@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Parzisam/sarcasmo-beto es un modelo de clasificacion de texto basado en la arquitectura BERT, publicado en HuggingFace por el usuario Parzisam. Por el identificador y el numero de parametros (109.852.418, practicamente identico a los ~110 millones de BETO-base), se trata con alta probabilidad de un ajuste fino (fine-tuning) de BETO, la version en castellano de BERT desarrollada por el grupo DCCUCHILE, orientado a la deteccion de sarcasmo en espanol. El pipeline declarado es text-classification y el formato de pesos es safetensors.
+Parzisam/sarcasmo-beto es un modelo de clasificacion de texto basado en la arquitectura BERT, publicado en Hugging Face por el usuario Parzisam. Por el identificador y el numero de parametros (109.852.418, practicamente identico a los ~110 millones de BETO-base), se trata con alta probabilidad de un ajuste fino (fine-tuning) de BETO, la version en castellano de BERT desarrollada por el grupo DCCUCHILE, orientado a la deteccion de sarcasmo en espanol. El pipeline declarado es text-classification y el formato de pesos es safetensors.
 
 El modelo resuelve una tarea concreta y acotada: clasificar un texto de entrada como sarcastico o no sarcastico (o, en su caso, asignar una etiqueta derivada del conjunto de entrenamiento). Es relevante para equipos que trabajan en analisis de opinion, monitorizacion de redes sociales o moderacion de contenido en castellano, donde el sarcasmo es un fenomeno linguistico que degrada seriamente el rendimiento de los analizadores de sentimiento clasicos.
 
-La model card publicada por el autor es la plantilla autogenerada por HuggingFace y no aporta informacion sustantiva: no documenta datos de entrenamiento, hiperparametros, licencia ni resultados de evaluacion. La ficha que sigue refleja exclusivamente lo que puede deducirse de los metadatos del repositorio y de la naturaleza arquitectonica del modelo, marcando como "no disponible" todo aquello que el autor no ha especificado.
+La model card publicada por el autor es la plantilla autogenerada por Hugging Face y no aporta informacion sustantiva: no documenta datos de entrenamiento, hiperparametros, licencia ni resultados de evaluacion. La ficha que sigue refleja exclusivamente lo que puede deducirse de los metadatos del repositorio y de la naturaleza arquitectonica del modelo, marcando como "no disponible" todo aquello que el autor no ha especificado.
 
 ## Especificaciones tecnicas
 
@@ -25,14 +25,14 @@ La model card publicada por el autor es la plantilla autogenerada por HuggingFac
 
 La arquitectura subyacente es un transformer encoder de tipo BERT. El recuento de parametros (109.852.418) coincide con el de BETO-base, que replica la configuracion de BERT-base: 12 capas, 768 dimensiones ocultas, 12 cabezas de atencion y ~110 millones de parametros. BETO fue entrenado por el grupo DCCUCHILE sobre un corpus extenso de castellano utilizando la tecnica de Whole Word Masking, y es el punto de partida habitual para tareas de clasificacion en espanol. Sobre esta base, el autor habria anadido una cabeza de clasificacion para la tarea de deteccion de sarcasmo.
 
-No hay informacion disponible sobre el procedimiento de ajuste fino: se desconoce el dataset utilizado, el numero de ejemplos, el regimen de precision (fp32, fp16, bf16), la presencia de tecnicas como RLHF o DPO (poco habituales en clasificadores BERT), ni la estrategia de validacion. Tampoco se documentan innovaciones tecnicas adicionales. La model card es la plantilla por defecto de HuggingFace sin cumplimentar.
+No hay informacion disponible sobre el procedimiento de ajuste fino: se desconoce el dataset utilizado, el numero de ejemplos, el regimen de precision (fp32, fp16, bf16), la presencia de tecnicas como RLHF o DPO (poco habituales en clasificadores BERT), ni la estrategia de validacion. Tampoco se documentan innovaciones tecnicas adicionales. La model card es la plantilla por defecto de Hugging Face sin cumplimentar.
 
 ## Capacidades
 
 - Clasificacion de texto: la tarea declarada en el pipeline es text-classification, orientada a deteccion de sarcasmo en castellano.
 - Inferencia sobre secuencias cortas o medias de texto (frases, tuits, comentarios, resenas).
 - Compatibilidad con la libreria transformers y con text-embeddings-inference segun las etiquetas del repositorio.
-- Etiqueta declarada como endpoints_compatible, lo que sugiere que puede desplegarse en HuggingFace Inference Endpoints.
+- Etiqueta declarada como endpoints_compatible, lo que sugiere que puede desplegarse en Hugging Face Inference Endpoints.
 - No se documentan capacidades de generacion de texto, razonamiento multi-paso, tool calling, vision, audio ni modo "thinking".
 - No se documenta soporte multilingue explicito; el modelo esta orientado, por su base y nombre, al espanol.
 
@@ -56,20 +56,20 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en fp16/bf16: alrededor de 0,22 GB para los pesos.
 - Cabe holgadamente en cualquier GPU consumer: GTX 1060 6 GB, RTX 3060, RTX 4090, etc. Tambien puede ejecutarse en CPU para inferencia de baja frecuencia.
 - GPU recomendadas para produccion de alto throughput: T4, L4, A10, A100 o H100, aunque para este tamano una T4 es suficiente.
-- Opciones de despliegue: transformers (PyTorch), text-embeddings-inference, HuggingFace Inference Endpoints, y potencialmente ONNX Runtime u otras herramientas de serving compatibles con BERT. vLLM y llama.cpp no son los entornos habituales para un clasificador BERT de este tipo.
+- Opciones de despliegue: transformers (PyTorch), text-embeddings-inference, Hugging Face Inference Endpoints, y potencialmente ONNX Runtime u otras herramientas de serving compatibles con BERT. vLLM y llama.cpp no son los entornos habituales para un clasificador BERT de este tipo.
 - Latencia y throughput: no disponibles. Como referencia general, los modelos BERT-base en GPU moderna procesan miles de secuencias cortas por segundo, pero no se dispone de mediciones concretas para este modelo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Parzisam/sarcasmo-beto | 109.852.418 | no disponible | Clasificacion de sarcasmo (es) | no disponible | HuggingFace |
-| nicolenarvaezm/beto-sarcasmo | no disponible | no disponible | Clasificacion de sarcasmo (es) | no disponible | HuggingFace |
-| raulgdp/beto-sarcasmo-spanish-2026 | no disponible | no disponible | Clasificacion de sarcasmo (es) | no disponible | HuggingFace |
-| pauand29/beto-sarcasmo-bs32-ep10 | no disponible | no disponible | Clasificacion de sarcasmo (es) | no disponible | HuggingFace |
-| BETO (dccuchile/beto) | ~110 millones | 512 | Modelo base (es) | MIT (segun repositorio original) | GitHub / HuggingFace |
+| Parzisam/sarcasmo-beto | 109.852.418 | no disponible | Clasificacion de sarcasmo (es) | no disponible | Hugging Face |
+| nicolenarvaezm/beto-sarcasmo | no disponible | no disponible | Clasificacion de sarcasmo (es) | no disponible | Hugging Face |
+| raulgdp/beto-sarcasmo-spanish-2026 | no disponible | no disponible | Clasificacion de sarcasmo (es) | no disponible | Hugging Face |
+| pauand29/beto-sarcasmo-bs32-ep10 | no disponible | no disponible | Clasificacion de sarcasmo (es) | no disponible | Hugging Face |
+| BETO (dccuchile/beto) | ~110 millones | 512 | Modelo base (es) | MIT (segun repositorio original) | GitHub / Hugging Face |
 
-Existen varios modelos similares en HuggingFace que ajustan BETO para deteccion de sarcasmo; no se dispone de datos comparativos de rendimiento entre ellos en la informacion proporcionada.
+Existen varios modelos similares en Hugging Face que ajustan BETO para deteccion de sarcasmo; no se dispone de datos comparativos de rendimiento entre ellos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ Existen varios modelos similares en HuggingFace que ajustan BETO para deteccion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Parzisam/sarcasmo-beto
+- Modelo en Hugging Face: https://huggingface.co/Parzisam/sarcasmo-beto
 - Repositorio BETO (dccuchile): https://github.com/dccuchile/beto
 - Modelo relacionado nicolenarvaezm/beto-sarcasmo: https://huggingface.co/nicolenarvaezm/beto-sarcasmo
 - Modelo relacionado raulgdp/beto-sarcasmo-spanish-2026: https://huggingface.co/raulgdp/beto-sarcasmo-spanish-2026

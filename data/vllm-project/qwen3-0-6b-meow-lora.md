@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: el modelo base de 0,6 mil millones de parametros ocupa aproximadamente 1,2 GB en precision FP16 y alrededor de 0,6 GB en cuantizacion de 8 bits; el adaptador LoRA anade una cantidad marginal.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente; el ejemplo oficial configura `--gpu-memory-utilization 0.6` con `--max-model-len 2048`.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) e incluso en GPUs integradas con suficiente memoria compartida.
-- Opciones de despliegue: vLLM es el motor de referencia (con `--enable-lora` y `VLLM_ALLOW_RUNTIME_LORA_UPDATING=True`); tambien puede cargarse con la libreria PEFT de HuggingFace sobre el modelo base, aunque el flujo documentado es el de vLLM.
+- Opciones de despliegue: vLLM es el motor de referencia (con `--enable-lora` y `VLLM_ALLOW_RUNTIME_LORA_UPDATING=True`); tambien puede cargarse con la libreria PEFT de Hugging Face sobre el modelo base, aunque el flujo documentado es el de vLLM.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada; al tratarse de un modelo de 0,6 mil millones de parametros, la latencia por token es del orden de milisegundos en GPU modernas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-0.6B-Meow-LoRA (este) | ~0,6 mil millones + LoRA | 2048 en el ejemplo | Prueba de carga de LoRA | MIT | HuggingFace (vllm-project y Jackmin108) |
-| Qwen3-0.6B-Woof-LoRA | ~0,6 mil millones + LoRA | 2048 en el ejemplo | Prueba de carga de LoRA (sonido de perro) | MIT | HuggingFace (Jackmin108) |
-| Qwen3-0.6B-Oink-LoRA | ~0,6 mil millones + LoRA | 2048 en el ejemplo | Prueba de carga de LoRA (sonido de cerdo) | MIT | HuggingFace (Jackmin108) |
-| Qwen3-0.6B (base) | ~0,6 mil millones | Mayor que 2048 (no especificado en esta ficha) | Generacion de texto general | Apache 2.0 (segun el modelo base; no verificado en esta informacion) | HuggingFace (Qwen) |
+| Qwen3-0.6B-Meow-LoRA (este) | ~0,6 mil millones + LoRA | 2048 en el ejemplo | Prueba de carga de LoRA | MIT | Hugging Face (vllm-project y Jackmin108) |
+| Qwen3-0.6B-Woof-LoRA | ~0,6 mil millones + LoRA | 2048 en el ejemplo | Prueba de carga de LoRA (sonido de perro) | MIT | Hugging Face (Jackmin108) |
+| Qwen3-0.6B-Oink-LoRA | ~0,6 mil millones + LoRA | 2048 en el ejemplo | Prueba de carga de LoRA (sonido de cerdo) | MIT | Hugging Face (Jackmin108) |
+| Qwen3-0.6B (base) | ~0,6 mil millones | Mayor que 2048 (no especificado en esta ficha) | Generacion de texto general | Apache 2.0 (segun el modelo base; no verificado en esta informacion) | Hugging Face (Qwen) |
 
 Los tres adaptadores de la familia comparten arquitectura, tamano y licencia, y se diferencian unicamente en la onomatopeya entrenada. Frente al modelo base, el adaptador sacrifica capacidades generales a cambio de un comportamiento determinista y verificable, lo que lo hace adecuado exclusivamente para pruebas.
 
@@ -82,7 +82,7 @@ Los tres adaptadores de la familia comparten arquitectura, tamano y licencia, y 
 
 ## Enlaces
 
-- Repositorio HuggingFace (copia vllm-project): https://huggingface.co/vllm-project/Qwen3-0.6B-Meow-LoRA
+- Repositorio Hugging Face (copia vllm-project): https://huggingface.co/vllm-project/Qwen3-0.6B-Meow-LoRA
 - Repositorio original: https://huggingface.co/Jackmin108/Qwen3-0.6B-Meow-LoRA
 - Variante Woof: https://huggingface.co/Jackmin108/Qwen3-0.6B-Woof-LoRA
 - Variante Oink: https://huggingface.co/Jackmin108/Qwen3-0.6B-Oink-LoRA

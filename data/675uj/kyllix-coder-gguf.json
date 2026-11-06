@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "675uj/Kyllix-Coder-GGUF",
+  "slug": "675uj-kyllix-coder-gguf",
+  "author": "675uj",
+  "url": "https://huggingface.co/675uj/Kyllix-Coder-GGUF",
+  "created_at": "2026-11-01T13:24:43.000Z",
+  "updated_at": "2026-11-01T13:34:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "pl"
+  ],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "code",
+    "unsloth",
+    "text-generation",
+    "en",
+    "pl",
+    "dataset:ise-uiuc/Magicoder-OSS-Instruct-75K",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 110,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986048352,
+  "storage_human": "986 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "675uj/Kyllix-Coder-GGUF · Hugging Face",
+      "url": "https://huggingface.co/675uj/Kyllix-Coder-GGUF",
+      "snippet": "675uj / Kyllix-Coder-GGUF Like 0 Text Generation GGUF ise-uiuc/Magicoder-OSS-Instruct-75K English Polish qwen2 code unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "675uj/Kyllix-Coder · Hugging Face",
+      "url": "https://huggingface.co/675uj/Kyllix-Coder",
+      "snippet": "Kyllix-Coder is an AI coding assistant created by Kyllix. It writes, explains, reviews and debugs code in many programming languages."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kinnow-qwen-v3 es un adaptador LoRA publicado en HuggingFace por el usuario KaraPatelDev bajo el identificador `KaraPatelDev/kinnow-qwen-v3`. Se trata de un ajuste fino supervisado (SFT) mediante PEFT sobre el modelo base `unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit`, una versión cuantizada en 4 bits del Qwen2.5-1.5B-Instruct de Alibaba, preparada con la librería Unsloth para entrenamiento eficiente en memoria.
+Kinnow-qwen-v3 es un adaptador LoRA publicado en Hugging Face por el usuario KaraPatelDev bajo el identificador `KaraPatelDev/kinnow-qwen-v3`. Se trata de un ajuste fino supervisado (SFT) mediante PEFT sobre el modelo base `unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit`, una versión cuantizada en 4 bits del Qwen2.5-1.5B-Instruct de Alibaba, preparada con la librería Unsloth para entrenamiento eficiente en memoria.
 
 El repositorio contiene únicamente los pesos del adaptador (0,1 GB), no el modelo completo, por lo que para utilizarlo es necesario cargar primero el modelo base y aplicar el adaptador con la librería PEFT. La model card está sin completar: todos los campos de descripción, datos de entrenamiento, evaluación y licencia figuran como "[More Information Needed]", lo que limita enormemente la trazabilidad del ajuste.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kinnow-qwen-v3 (este) | 1.5B (base) + LoRA | No disponible (base: 32.768) | No disponible | HuggingFace, 0 descargas |
-| Qwen2.5-1.5B-Instruct | 1.5B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente disponible |
-| SmolLM2-1.7B-Instruct | 1.7B | 8.192 tokens | Apache 2.0 | HuggingFace, ampliamente disponible |
-| Llama-3.2-1B-Instruct | 1.2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente disponible |
+| Kinnow-qwen-v3 (este) | 1.5B (base) + LoRA | No disponible (base: 32.768) | No disponible | Hugging Face, 0 descargas |
+| Qwen2.5-1.5B-Instruct | 1.5B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente disponible |
+| SmolLM2-1.7B-Instruct | 1.7B | 8.192 tokens | Apache 2.0 | Hugging Face, ampliamente disponible |
+| Llama-3.2-1B-Instruct | 1.2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente disponible |
 
 La comparativa se limita a parámetros, contexto y licencia, ya que no hay datos de rendimiento publicados para el adaptador. Frente a los modelos base de referencia, Kinnow-qwen-v3 no aporta información verificable sobre mejoras en benchmarks ni sobre el dominio de especialización del ajuste.
 
@@ -82,7 +82,7 @@ La comparativa se limita a parámetros, contexto y licencia, ya que no hay datos
 
 ## Enlaces
 
-- [HuggingFace: KaraPatelDev/kinnow-qwen-v3](https://huggingface.co/KaraPatelDev/kinnow-qwen-v3)
+- [Hugging Face: KaraPatelDev/kinnow-qwen-v3](https://huggingface.co/KaraPatelDev/kinnow-qwen-v3)
 - [Modelo base: unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit](https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit)
 - [Qwen2.5-1.5B-Instruct (modelo original)](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)
 - [PEFT (librería)](https://github.com/huggingface/peft)

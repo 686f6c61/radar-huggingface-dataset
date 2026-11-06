@@ -69,5 +69,5 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/B111ue/fcl-vla-baseline-recovery
+- Repositorio Hugging Face: https://huggingface.co/B111ue/fcl-vla-baseline-recovery
 - No se han encontrado papers, blogs, repositorios de código o demos asociados en la información proporcionada.

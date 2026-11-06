@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SPINDLE es un modelo publicado en HuggingFace por el usuario milatham bajo licencia MIT. La model card asociada no contiene ninguna descripción tecnica, arquitectura, datos de entrenamiento ni informacion sobre capacidades; unicamente incluye los metadatos de licencia y el idioma declarado (ingles). No se dispone de informacion sobre el pipeline, el tamano, el contexto o el proposito del modelo.
+SPINDLE es un modelo publicado en Hugging Face por el usuario milatham bajo licencia MIT. La model card asociada no contiene ninguna descripción tecnica, arquitectura, datos de entrenamiento ni informacion sobre capacidades; unicamente incluye los metadatos de licencia y el idioma declarado (ingles). No se dispone de informacion sobre el pipeline, el tamano, el contexto o el proposito del modelo.
 
 El repositorio no registra descargas ni interacciones en el momento de la consulta, y fue creado y actualizado en un intervalo de pocos minutos, lo que sugiere una publicacion reciente y sin documentacion asociada. Esto limita cualquier evaluacion tecnica rigurosa: no es posible determinar si se trata de un modelo de lenguaje, un adaptador, un modelo de vision u otro tipo de artefacto.
 
@@ -42,7 +42,7 @@ No es posible recomendar casos de uso concretos sin informacion sobre la arquite
 
 - Evaluacion experimental en laboratorio: el modelo podria emplearse como objeto de estudio para analizar su comportamiento, siempre que se realice una inspeccion previa de los pesos y la configuracion del repositorio.
 - Pruebas de integracion en pipelines de investigacion: solo tras verificar el formato de pesos y los requisitos de runtime.
-- Analisis de artefactos publicados en HuggingFace: util para estudiar practicas de publicacion y documentacion de modelos.
+- Analisis de artefactos publicados en Hugging Face: util para estudiar practicas de publicacion y documentacion de modelos.
 - Reproducibilidad de experimentos: si el autor publica posteriormente la configuracion, podria servir como referencia.
 - Fine-tuning exploratorio: unicamente si se confirma que los pesos son compatibles con frameworks estandar.
 - Docencia sobre licencias abiertas: el repositorio ilustra un caso de publicacion con licencia MIT y documentacion minima.
@@ -77,4 +77,4 @@ No disponible. Sin datos sobre parametros, contexto o arquitectura no es posible
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/milatham/SPINDLE
+- Repositorio en Hugging Face: https://huggingface.co/milatham/SPINDLE

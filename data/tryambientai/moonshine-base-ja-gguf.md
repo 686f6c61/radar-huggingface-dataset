@@ -114,7 +114,7 @@ La comparación con Whisper se incluye por categoría (ASR pequeño), pero no se
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/tryambientai/moonshine-base-ja-gguf
+- Hugging Face (este modelo): https://huggingface.co/tryambientai/moonshine-base-ja-gguf
 - Modelo base upstream: https://huggingface.co/UsefulSensors/moonshine-base-ja
 - Commit upstream fijado: https://huggingface.co/UsefulSensors/moonshine-base-ja/commit/f9d4e6a
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

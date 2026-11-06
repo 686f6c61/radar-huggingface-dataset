@@ -68,7 +68,7 @@ No se dispone de datos verificables en la información proporcionada para constr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| saanvisingh/generation | 16.576 | no disponible | Apache 2.0 | HuggingFace Hub, 0 descargas y 0 likes en la fecha de consulta | Checkpoint de inicialización sin entrenar; sin benchmarks |
+| saanvisingh/generation | 16.576 | no disponible | Apache 2.0 | Hugging Face Hub, 0 descargas y 0 likes en la fecha de consulta | Checkpoint de inicialización sin entrenar; sin benchmarks |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se identifican en la información proporcionada |
 
 Como referencia conceptual, el nombre Mocov3 remite al método de aprendizaje autosupervisado contrastivo MoCo v3 (Momentum Contrast v3, orientado a visión), que produce codificadores y no decodificadores generativos; no obstante, el repositorio analizado no documenta equivalencia funcional con ese método ni reutiliza sus pesos, por lo que la comparación no debe considerarse una validación de rendimiento.
@@ -88,7 +88,7 @@ Como referencia conceptual, el nombre Mocov3 remite al método de aprendizaje au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saanvisingh/generation
+- Modelo en Hugging Face: https://huggingface.co/saanvisingh/generation
 - Generative AI in Depth: A Survey of Recent Advances, Model Variants (arXiv): https://arxiv.org/html/2510.21887v1
 - A comprehensive survey and analysis of generative models in machine learning (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S1574013720303853
 - AI Model Release Calendar: https://www.scriptbyai.com/ai-model-release-calendar/

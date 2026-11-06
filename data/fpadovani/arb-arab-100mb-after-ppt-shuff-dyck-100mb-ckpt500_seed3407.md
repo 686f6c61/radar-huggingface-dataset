@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/arb-arab-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407` es un ajuste fino (SFT) de tipo GPT-2 con 124.770.816 parametros, publicado por el usuario fpadovani en HuggingFace. Se trata de un derivado del modelo base `fpadovani/arb-arab-100mb-ppt-shuff-dyck-100mb_seed3407` y ha sido entrenado con la libreria TRL de HuggingFace, segun indica la propia model card. El pipeline declarado es `text-generation` y el repositorio usa `safetensors` como formato de pesos.
+El modelo `fpadovani/arb-arab-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407` es un ajuste fino (SFT) de tipo GPT-2 con 124.770.816 parametros, publicado por el usuario fpadovani en Hugging Face. Se trata de un derivado del modelo base `fpadovani/arb-arab-100mb-ppt-shuff-dyck-100mb_seed3407` y ha sido entrenado con la libreria TRL de Hugging Face, segun indica la propia model card. El pipeline declarado es `text-generation` y el repositorio usa `safetensors` como formato de pesos.
 
 Por el nombre del identificador y de su modelo base, cabe inferir que el entrenamiento esta relacionado con textos en arabe ("arab"), un corpus de aproximadamente 100 MB ("100mb"), tareas de lenguaje formal sintetico tipo Dyck ("dyck"), y un checkpoint intermedio (step 500) con una semilla concreta (3407). Ninguna de estas inferencias esta confirmada en la model card, que se limita a describir el procedimiento generico de entrenamiento con TRL.
 
@@ -12,7 +12,7 @@ Se trata, por tanto, de un modelo pequeno (aproximadamente 125 millones de param
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 (dato de los pesos en safetensors) |
 | Longitud de contexto | no disponible (la etiqueta `gpt2` sugiere herencia de la ventana tipica de GPT-2, pero el autor no lo confirma) |
 | Tipos de cuantizacion | no disponible (no se publican versiones GGUF, AWQ, GPTQ ni cuantizaciones declaradas) |
@@ -36,7 +36,7 @@ El entrenamiento se ha realizado mediante aprendizaje supervisado (SFT) con TRL 
 - Generacion de texto autoregresiva mediante el pipeline `text-generation` de Transformers.
 - Procesamiento de entradas en formato de conversacion (lista de diccionarios con `role` y `content`) segun el ejemplo de la model card.
 - Inferencia en GPU mediante `device="cuda"` y en CPU, al ser un modelo de 125 millones de parametros.
-- Compatibilidad declarada con text-generation-inference y con endpoints gestionados de HuggingFace.
+- Compatibilidad declarada con text-generation-inference y con endpoints gestionados de Hugging Face.
 - Soporte de la generacion con `max_new_tokens` y `return_full_text=False` en la API de `pipeline`.
 - Capacidades de tool calling, function calling, agentes, vision, audio, modo "thinking", razonamiento multi-paso o multilingueismo: no disponibles / no documentadas.
 - Capacidades especificas de codigo, matematicas o analisis de datos: no disponibles / no documentadas.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion de 4 bits: aproximadamente 65-70 MB para los pesos (no se publican versiones cuantizadas oficiales, seria necesario generarlas).
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en GPUs integradas o en CPU con memoria RAM suficiente.
 - GPUs de centro de datos (A100, H100) son innecesarias para este tamano, salvo para entrenamiento o evaluacion a gran escala en paralelo.
-- Opciones de despliegue: transformers (referencia), text-generation-inference (declarado compatible), endpoints de HuggingFace. No se publican pesos GGUF, por lo que Ollama o llama.cpp requeririan una conversion previa.
+- Opciones de despliegue: transformers (referencia), text-generation-inference (declarado compatible), endpoints de Hugging Face. No se publican pesos GGUF, por lo que Ollama o llama.cpp requeririan una conversion previa.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 - Nota: el repositorio ocupa 6,7 GB, muy por encima de los ~250-500 MB de los pesos finales, lo que indica la presencia de multiples checkpoints y probablemente estados del optimizador; para despliegue conviene descargar solo los archivos safetensors necesarios.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| fpadovani/arb-arab-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407 | 124,8 M | no disponible | no disponible | HuggingFace, safetensors | no disponible |
-| GPT-2 (124M) | 124 M | 1024 tokens | licencia MIT modificada | HuggingFace, safetensors | benchmarks publicos en la model card original |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace, safetensors | benchmarks publicos en la model card original |
-| Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | HuggingFace, safetensors | benchmarks publicos (suite de Pythia) |
+| fpadovani/arb-arab-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407 | 124,8 M | no disponible | no disponible | Hugging Face, safetensors | no disponible |
+| GPT-2 (124M) | 124 M | 1024 tokens | licencia MIT modificada | Hugging Face, safetensors | benchmarks publicos en la model card original |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face, safetensors | benchmarks publicos en la model card original |
+| Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | Hugging Face, safetensors | benchmarks publicos (suite de Pythia) |
 
 La comparacion se limita a tamano y disponibilidad: no existen datos de rendimiento publicados para el modelo de fpadovani, por lo que no es posible establecer una comparacion cuantitativa con las alternativas.
 
@@ -92,7 +92,7 @@ La comparacion se limita a tamano y disponibilidad: no existen datos de rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/fpadovani/arb-arab-100mb-ppt-shuff-dyck-100mb_seed3407
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Registro del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/95lkeos2

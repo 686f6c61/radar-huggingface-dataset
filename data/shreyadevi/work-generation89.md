@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shreyadevi/work-generation89` es un repositorio de HuggingFace publicado por el usuario `shreyadevi` que contiene una implementación propia y compacta de Swin Transformer, en su variante Swin T (Swin-Tiny), orientada a tareas de "generation". El propio autor describe el repositorio como un artefacto para revisión de código, pruebas de humo y experimentos controlados de pequeño tamaño, y advierte explícitamente de que no se trata de un lanzamiento preentrenado listo para producción. El checkpoint incluido (`model.safetensors`) se presenta como una inicialización válida para pruebas, no como un modelo entrenado ni evaluado con benchmarks.
+`shreyadevi/work-generation89` es un repositorio de Hugging Face publicado por el usuario `shreyadevi` que contiene una implementación propia y compacta de Swin Transformer, en su variante Swin T (Swin-Tiny), orientada a tareas de "generation". El propio autor describe el repositorio como un artefacto para revisión de código, pruebas de humo y experimentos controlados de pequeño tamaño, y advierte explícitamente de que no se trata de un lanzamiento preentrenado listo para producción. El checkpoint incluido (`model.safetensors`) se presenta como una inicialización válida para pruebas, no como un modelo entrenado ni evaluado con benchmarks.
 
 El dato más relevante para un evaluador es la discrepancia entre la etiqueta de escala y el tamaño real: la model card declara una configuración "giant", mientras que el recuento de parámetros del archivo de safetensors es de 49.600 parámetros. Ese orden de magnitud corresponde a un checkpoint de inicialización minúsculo, no a un Swin-T funcional (que en su configuración canónica ronda las decenas de millones de parámetros). El repositorio no incluye benchmarks, no declara idiomas, no especifica el pipeline y acumula 0 descargas y 0 "likes" en el momento de la consulta.
 
@@ -80,8 +80,8 @@ Los valores de las alternativas proceden de conocimiento general sobre los proye
 
 | Modelo | Parametros | Contexto / entrada | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shreyadevi/work-generation89 | 49.600 (checkpoint de inicializacion) | no disponible | "generation", modalidad no especificada | BSD-3-Clause | HuggingFace, 0 descargas, sin pipeline declarado |
-| microsoft/swin-tiny-patch4-window7-224 | del orden de decenas de millones (conocimiento general, no verificado aqui) | imagen 224x224 por defecto | clasificacion de imagenes | MIT (conocimiento general) | HuggingFace, ampliamente descargado |
+| shreyadevi/work-generation89 | 49.600 (checkpoint de inicializacion) | no disponible | "generation", modalidad no especificada | BSD-3-Clause | Hugging Face, 0 descargas, sin pipeline declarado |
+| microsoft/swin-tiny-patch4-window7-224 | del orden de decenas de millones (conocimiento general, no verificado aqui) | imagen 224x224 por defecto | clasificacion de imagenes | MIT (conocimiento general) | Hugging Face, ampliamente descargado |
 | Implementaciones `swin_tiny` en timm | del orden de decenas de millones (conocimiento general) | configurable | backbone de vision, clasificacion y deteccion | Apache-2.0 (conocimiento general) | repositorio timm, mantenido |
 | Modelos de generacion visual pequenos (por ejemplo, variantes de difusion compactas) | no disponible | no disponible | generacion de imagenes | variable | no comparable de forma fiable con los datos disponibles |
 
@@ -102,6 +102,6 @@ La comparación directa no es posible en terminos de rendimiento porque este rep
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shreyadevi/work-generation89
-- Archivos incluidos según la model card: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pestaña de archivos del repositorio en HuggingFace).
+- Modelo en Hugging Face: https://huggingface.co/shreyadevi/work-generation89
+- Archivos incluidos según la model card: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pestaña de archivos del repositorio en Hugging Face).
 - Paper, blog, repositorio de código o demo adicionales: no disponibles. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (únicamente páginas genéricas de servicios de Google sin relación con el repositorio).

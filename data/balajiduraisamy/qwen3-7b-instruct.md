@@ -73,6 +73,6 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/balajiduraisamy/Qwen3-7B-Instruct
+- Hugging Face: https://huggingface.co/balajiduraisamy/Qwen3-7B-Instruct
 - Perfil del autor: https://huggingface.co/balajiduraisamy
 - Modelo Qwen3-1.7B oficial (referencia): https://huggingface.co/Qwen/Qwen3-1.7B

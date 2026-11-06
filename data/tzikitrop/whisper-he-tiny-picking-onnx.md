@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper-he-tiny-picking-onnx es un ajuste fino del modelo de reconocimiento automatico de voz Whisper-tiny, publicado por el usuario tzikitrop en HuggingFace. El modelo parte de la variante hebrea yoad/whisper-tiny y se ha especializado en el vocabulario propio de la operativa de "voice picking" en almacen: numeros del 1 al 100 y comandos de picking. Su proposito no es la transcripcion general, sino reconocer de forma fiable las locuciones cortas que un operario pronuncia para confirmar cantidades y acciones durante la preparacion de pedidos.
+Whisper-he-tiny-picking-onnx es un ajuste fino del modelo de reconocimiento automatico de voz Whisper-tiny, publicado por el usuario tzikitrop en Hugging Face. El modelo parte de la variante hebrea yoad/whisper-tiny y se ha especializado en el vocabulario propio de la operativa de "voice picking" en almacen: numeros del 1 al 100 y comandos de picking. Su proposito no es la transcripcion general, sino reconocer de forma fiable las locuciones cortas que un operario pronuncia para confirmar cantidades y acciones durante la preparacion de pedidos.
 
 La relevancia de este modelo radica en su formato de despliegue. Se ha exportado a ONNX con cuantizacion q8 para ejecutarse con Transformers.js 3.7.1 directamente en el navegador sobre WebAssembly, sin necesidad de servidor ni GPU. Con un repositorio de aproximadamente 0,1 GB, encaja en escenarios de borde (dispositivos de almacen, tablets, terminales portatiles) donde no se quiere depender de conectividad ni de infraestructura en la nube.
 
@@ -102,7 +102,7 @@ Los datos de parametros y contexto de Whisper-tiny son caracteristicas conocidas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tzikitrop/whisper-he-tiny-picking-onnx
+- Modelo en Hugging Face: https://huggingface.co/tzikitrop/whisper-he-tiny-picking-onnx
 - Modelo base: https://huggingface.co/yoad/whisper-tiny
 - Whisper-tiny en ONNX (onnx-community): https://huggingface.co/onnx-community/whisper-tiny
 - Version relacionada del autor: https://huggingface.co/tzikitrop/whisper-he-tiny-onnx

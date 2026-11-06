@@ -74,8 +74,8 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 | Modelo | Parametros | Contexto | Rendimiento (Tier 2) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | SunlightV2-0.8B (familia) | 0.8B | no disponible | 53.5% / 51.3% (bf16) | LGPL-3.0 | vLLM, GGUF, GPTQ |
-| TwilightV2-2B | 2B | no disponible | no disponible | LGPL-3.0 (segun familia) | HuggingFace |
-| MidnightV2-4B | 4B | no disponible | no disponible | LGPL-3.0 (segun familia) | HuggingFace |
+| TwilightV2-2B | 2B | no disponible | no disponible | LGPL-3.0 (segun familia) | Hugging Face |
+| MidnightV2-4B | 4B | no disponible | no disponible | LGPL-3.0 (segun familia) | Hugging Face |
 
 Las variantes de 2B y 4B usan un layout de cabezas distinto (`PACKED = 225`, con cabeza de numero de elemento), por lo que no son intercambiables con este adaptador. No se dispone de datos de rendimiento de esas variantes en la informacion proporcionada.
 
@@ -93,7 +93,7 @@ Las variantes de 2B y 4B usan un layout de cabezas distinto (`PACKED = 225`, con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CaptchaKraken/SunlightV2-0.8B-LoRA
+- Repositorio Hugging Face: https://huggingface.co/CaptchaKraken/SunlightV2-0.8B-LoRA
 - Modelo fusionado bf16: https://huggingface.co/CaptchaKraken/SunlightV2-0.8B
 - Variante GPTQ 4-bit: https://huggingface.co/CaptchaKraken/SunlightV2-0.8B-q4
 - Variante GGUF: https://huggingface.co/CaptchaKraken/SunlightV2-0.8B-GGUF

@@ -76,10 +76,10 @@ No se han publicado resultados comparativos frente a otros retrievers (incluido 
 
 | Modelo | Parámetros | Contexto | Rendimiento en este dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `KIZZPER/pandas-so-function-retriever` | 33,36 M | 512 tokens | R@1 0,245 / MRR 0,373 (test propio, 6.742 preguntas) | CC BY-SA 4.0 | HuggingFace, 0 descargas |
-| `KIZZPER/pandas-so-function-classifier` | No disponible | No disponible | Mejora el conjunto a R@1 0,280 / MRR 0,418 en mezcla 0,4/0,6 | No disponible en la información | HuggingFace |
-| `BAAI/bge-small-en-v1.5` (modelo base) | 33 M | 512 tokens | No evaluado en este dominio por el autor | MIT (según el modelo base; no confirmado en la información proporcionada) | HuggingFace, ampliamente usado |
-| `sentence-transformers/all-MiniLM-L6-v2` | 22,7 M | 256 tokens | No evaluado en este dominio | Apache 2.0 | HuggingFace, muy extendido |
+| `KIZZPER/pandas-so-function-retriever` | 33,36 M | 512 tokens | R@1 0,245 / MRR 0,373 (test propio, 6.742 preguntas) | CC BY-SA 4.0 | Hugging Face, 0 descargas |
+| `KIZZPER/pandas-so-function-classifier` | No disponible | No disponible | Mejora el conjunto a R@1 0,280 / MRR 0,418 en mezcla 0,4/0,6 | No disponible en la información | Hugging Face |
+| `BAAI/bge-small-en-v1.5` (modelo base) | 33 M | 512 tokens | No evaluado en este dominio por el autor | MIT (según el modelo base; no confirmado en la información proporcionada) | Hugging Face, ampliamente usado |
+| `sentence-transformers/all-MiniLM-L6-v2` | 22,7 M | 256 tokens | No evaluado en este dominio | Apache 2.0 | Hugging Face, muy extendido |
 
 La comparación de rendimiento solo es válida dentro del test del propio autor; no hay una evaluación cruzada de los tres modelos sobre el mismo conjunto, por lo que las cifras no son directamente equiparables entre filas.
 
@@ -98,7 +98,7 @@ La comparación de rendimiento solo es válida dentro del test del propio autor;
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KIZZPER/pandas-so-function-retriever
+- Modelo en Hugging Face: https://huggingface.co/KIZZPER/pandas-so-function-retriever
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Dataset de entrenamiento: https://huggingface.co/datasets/KIZZPER/pandas-so-questions
 - Modelo complementario para el ensamblado: https://huggingface.co/KIZZPER/pandas-so-function-classifier

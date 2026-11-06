@@ -71,8 +71,8 @@ No se dispone de información suficiente en los datos proporcionados para compar
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/vidore/colpali-v1.2-hf
-- HuggingFace de la versión original (no HF): https://huggingface.co/vidore/colpali-v1.2
+- Hugging Face del modelo: https://huggingface.co/vidore/colpali-v1.2-hf
+- Hugging Face de la versión original (no HF): https://huggingface.co/vidore/colpali-v1.2
 - Repositorio GitHub (código de entrenamiento e inferencia): https://github.com/illuin-tech/colpali
 - Paper original (arXiv:2407.01449): https://arxiv.org/abs/2407.01449
 - Paper de ColBERT (arXiv:2004.12832): https://arxiv.org/abs/2004.12832

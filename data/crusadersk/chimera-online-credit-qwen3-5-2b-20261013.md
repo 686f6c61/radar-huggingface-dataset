@@ -87,7 +87,7 @@ No se dispone de datos verificables para establecer una comparación cuantitativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Crusadersk/chimera-online-credit-qwen3.5-2b-20261013
+- Modelo en Hugging Face: https://huggingface.co/Crusadersk/chimera-online-credit-qwen3.5-2b-20261013
 - Model card de la ejecución destacada: https://huggingface.co/Crusadersk/chimera-online-credit-qwen3.5-2b-20261013/blob/main/model_cards/modern-main-normalized-k1-s20261015-through-step-0016.md
 - Historial de model cards y revisiones anteriores: https://huggingface.co/Crusadersk/chimera-online-credit-qwen3.5-2b-20261013/tree/090ca96daaf9ae776148cb6de510044798075d74
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

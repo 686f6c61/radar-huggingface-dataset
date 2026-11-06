@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 ## Requisitos de hardware
 
 - Plataforma: exclusivamente Apple Silicon con MLX; no hay soporte CUDA ni ruta PyTorch en este bundle.
-- Almacenamiento: 102,7 GiB para el bundle completo, mas el espacio de la copia de trabajo; en el repositorio de HuggingFace figuran 110,2 GB de tamano total.
+- Almacenamiento: 102,7 GiB para el bundle completo, mas el espacio de la copia de trabajo; en el repositorio de Hugging Face figuran 110,2 GB de tamano total.
 - Memoria unificada estimada (calculo propio a partir de los tamanos de fichero, no confirmado por el autor): el codificador de texto ocupa 27,7 GiB, cada DiT 34,8 GiB y los VAE suman aproximadamente 5,4 GiB. Si el runtime libera fases antes de cargar la siguiente, el pico se situa por encima de los 40 GiB; si el codificador y el DiT coexisten en memoria, el pico supera los 68 GiB antes de contar activaciones.
 - Equipos recomendados de forma orientativa: Mac Studio o Mac Pro con M2 Ultra o M3 Ultra y 128 GB o 192 GB de memoria unificada para el flujo completo; MacBook Pro con M4 Max de 128 GB como minimo razonable. Los equipos con 64 GB de memoria unificada solo serian viables si el runtime libera el codificador de texto antes de la fase DiT y si se descarga un unico modo de condicionamiento.
 - Descarga selectiva: dado que los dos DiT son estructuralmente identicos y el runtime carga solo uno, se puede omitir del download el modo que no se vaya a utilizar, ahorrando 34,8 GiB.
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Precision de pesos | Resolucion de salida | Difusion de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este bundle (`yvankob/minimax-h3-base-8bit-mlx-by-appautomaton`) | DiT video+audio, runtime MLX | int8 affine a8g32 en DiT y text encoder; VAE en FP16/FP32 | 768p | Si, sincronizada | `minimax-h3-community-license` | Repositorio HuggingFace de un tercero |
+| Este bundle (`yvankob/minimax-h3-base-8bit-mlx-by-appautomaton`) | DiT video+audio, runtime MLX | int8 affine a8g32 en DiT y text encoder; VAE en FP16/FP32 | 768p | Si, sincronizada | `minimax-h3-community-license` | Repositorio Hugging Face de un tercero |
 | `MiniMaxAI/MiniMax-H3` (upstream) | Suite completa en tres etapas (H3-Context-IR, H3-Base, H3-Regenerate-2K) | Densa (precision original) | 768p en H3-Base, hasta 2K con la tercera etapa | Si, sincronizada | Licencia de comunidad MiniMax-H3 | Repositorio oficial |
 | `Comfy-Org/MiniMax-H3` | Redistribucion de componentes (VAE de video y audio) para ComfyUI | FP16 (video VAE) y FP32 (audio VAE) | Depende del pipeline anfitrion | Si, via los mismos VAE | No disponible en la informacion proporcionada | Repositorio de Comfy-Org |
 | `larryvrh/MiniMax-H3-Turbo-Lora` | Adaptador LoRA BF16 sobre el DiT | BF16 | No aplica (adaptador) | No aplica | No disponible en la informacion proporcionada | Repositorio de la comunidad |
@@ -92,12 +92,12 @@ No se identifican en la informacion disponible otros modelos comparables de gene
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yvankob/minimax-h3-base-8bit-mlx-by-appautomaton
+- Repositorio en Hugging Face: https://huggingface.co/yvankob/minimax-h3-base-8bit-mlx-by-appautomaton
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio GitHub del runtime: https://github.com/appautomaton/mlx-h3
 - Paquete PyPI: https://pypi.org/project/mlx-h3/
 - Pagina de proyecto: https://appautomaton.renocrypt.com/mlx-h3/
-- Perfil de App Automaton en HuggingFace: https://huggingface.co/appautomaton
+- Perfil de App Automaton en Hugging Face: https://huggingface.co/appautomaton
 - Guia de prompting del runtime: https://github.com/appautomaton/mlx-h3/blob/main/docs/prompting.md
 - VAE de video y audio (Comfy-Org): https://huggingface.co/Comfy-Org/MiniMax-H3
 - Turbo LoRA de la comunidad: https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora

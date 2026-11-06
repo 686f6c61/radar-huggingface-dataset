@@ -79,7 +79,7 @@ No se dispone de datos comparativos con otros modelos en la informacion proporci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/treeish/Qwen3.5-4B-oQ4e-MTP-MLX
+- Repositorio Hugging Face: https://huggingface.co/treeish/Qwen3.5-4B-oQ4e-MTP-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Fuente de la cuantizacion (TheWirelessPhoenix): https://huggingface.co/TheWirelessPhoenix/Qwen3.5-4B-oQ4e-mtp
 - Plantilla de chat (Froggeric): https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates

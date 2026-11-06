@@ -82,7 +82,7 @@ La comparacion es orientativa, ya que Deimos-R1 no tiene datos publicados de ren
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/mradermacher/Deimos-R1-GGUF)
-- [Modelo original en HuggingFace (Michael-Kozu)](https://huggingface.co/Michael-Kozu/Deimos-R1)
-- [Perfil de mradermacher en HuggingFace](https://huggingface.co/mradermacher)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/mradermacher/Deimos-R1-GGUF)
+- [Modelo original en Hugging Face (Michael-Kozu)](https://huggingface.co/Michael-Kozu/Deimos-R1)
+- [Perfil de mradermacher en Hugging Face](https://huggingface.co/mradermacher)
 - [Listado de modelos de mradermacher en aimodels.fyi](https://www.aimodels.fyi/creators/huggingFace/mradermacher)

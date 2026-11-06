@@ -94,11 +94,11 @@ Frente a los embedders MLLM de 7B, VidVec-O usa aproximadamente 60K pares solo t
 - Riesgo de alucinacion: no aplica de forma directa al ser un embedder, pero las descripciones generadas por el backbone pueden introducir sesgos en la alineacion texto-video.
 - Sesgos conocidos: no documentados en la informacion disponible.
 - Licencia apache-2.0, que permite uso comercial; conviene verificar las condiciones del modelo base VideoLLaMA3-7B.
-- Modelo con muy poca adopcion en HuggingFace (7 descargas, 0 likes) en el momento de la consulta; no hay evidencia de uso en produccion.
+- Modelo con muy poca adopcion en Hugging Face (7 descargas, 0 likes) en el momento de la consulta; no hay evidencia de uso en produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iyttor/VidVec-7B
+- Modelo en Hugging Face: https://huggingface.co/iyttor/VidVec-7B
 - Pagina del proyecto: https://iyttor.github.io/VidVec/
 - Paper (arXiv): https://arxiv.org/abs/2602.08099
 - Codigo en GitHub: https://github.com/iyttor/VidVec/

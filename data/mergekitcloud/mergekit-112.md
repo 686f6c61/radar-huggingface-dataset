@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MergekitCloud/mergekit-112 | 7,24 B | no especificado (los base declaran 32.768) | no disponible | HuggingFace, 0 descargas | Merge SLERP de v0.1 y v0.2, bfloat16, sin evaluaciones |
-| mistralai/Mistral-7B-Instruct-v0.2 | 7,24 B | 32.768 tokens | Apache 2.0 (segun el repositorio original) | HuggingFace | Uno de los modelos de partida; ajustado con instrucciones y con ventana deslizante |
-| mistralai/Mistral-7B-Instruct-v0.1 | 7,24 B | 32.768 tokens | Apache 2.0 (segun el repositorio original) | HuggingFace | El otro modelo de partida; version anterior del instruct |
-| Otros merges de la comunidad Mistral 7B | ~7,24 B | variable, habitualmente 32.768 | habitualmente Apache 2.0 cuando se declara | HuggingFace | Ecosistema amplio; suelen publicar evaluaciones propias |
+| MergekitCloud/mergekit-112 | 7,24 B | no especificado (los base declaran 32.768) | no disponible | Hugging Face, 0 descargas | Merge SLERP de v0.1 y v0.2, bfloat16, sin evaluaciones |
+| mistralai/Mistral-7B-Instruct-v0.2 | 7,24 B | 32.768 tokens | Apache 2.0 (segun el repositorio original) | Hugging Face | Uno de los modelos de partida; ajustado con instrucciones y con ventana deslizante |
+| mistralai/Mistral-7B-Instruct-v0.1 | 7,24 B | 32.768 tokens | Apache 2.0 (segun el repositorio original) | Hugging Face | El otro modelo de partida; version anterior del instruct |
+| Otros merges de la comunidad Mistral 7B | ~7,24 B | variable, habitualmente 32.768 | habitualmente Apache 2.0 cuando se declara | Hugging Face | Ecosistema amplio; suelen publicar evaluaciones propias |
 
 La comparacion relevante es contra los dos modelos de los que procede: comparten tamano y arquitectura, pero se diferencian en el ajuste instruct y en que el merge no declara licencia en su repositorio, lo que introduce incertidumbre juridica que los originales no tienen. No se dispone de datos de rendimiento para determinar si el merge supera a sus predecesores.
 

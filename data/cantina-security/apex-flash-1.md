@@ -84,10 +84,10 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Pass@1 en casos de seguridad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| apex-flash-1 | 321,3 mil millones | no disponible | 66,7% (40/60) | MIT | Pesos abiertos en HuggingFace |
+| apex-flash-1 | 321,3 mil millones | no disponible | 66,7% (40/60) | MIT | Pesos abiertos en Hugging Face |
 | GLM-5.3-Flash (base) | no disponible | no disponible | 60,0% (36/60) | no disponible en la informacion proporcionada | Modelo base de zai-org |
 | Claude Opus 5 High | no disponible | no disponible | 71,7% (43/60) | Propietaria | Solo API |
-| apex-flash-1-abliterated | no disponible (derivado de apex-flash-1) | no disponible | no evaluado (la evaluacion publicada corresponde al checkpoint estandar) | no disponible en la informacion proporcionada | Pesos abiertos en HuggingFace |
+| apex-flash-1-abliterated | no disponible (derivado de apex-flash-1) | no disponible | no evaluado (la evaluacion publicada corresponde al checkpoint estandar) | no disponible en la informacion proporcionada | Pesos abiertos en Hugging Face |
 
 El dato diferencial de apex-flash-1 no es tanto el pass@1 absoluto como la relacion rendimiento-coste: 2,38 USD por 60 tareas frente a 74,68 USD del modelo propietario con mejor pass@1, y 4,56 USD del modelo base.
 
@@ -107,7 +107,7 @@ El dato diferencial de apex-flash-1 no es tanto el pass@1 absoluto como la relac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cantina-security/apex-flash-1
+- Modelo en Hugging Face: https://huggingface.co/cantina-security/apex-flash-1
 - Derivada experimental: https://huggingface.co/cantina-security/apex-flash-1-abliterated
 - Nota de publicacion de Apex Flash: https://www.cantina.security/apex-flash
 - Pagina de Apex en Cantina Security: https://www.cantina.security/apex

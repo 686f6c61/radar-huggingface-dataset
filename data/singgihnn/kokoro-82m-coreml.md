@@ -92,7 +92,7 @@ La comparativa se limita a las variantes del mismo modelo base, porque en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/singgihnn/kokoro-82m-coreml
+- Repositorio Hugging Face: https://huggingface.co/singgihnn/kokoro-82m-coreml
 - Modelo base Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M
 - Conversor Core ML de laishere: https://github.com/laishere/kokoro-coreml
 - Export ONNX con las tablas de voces: https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX

@@ -30,7 +30,7 @@ Su relevancia es doble: por un lado, sirve como punto de referencia reproducible
 
 La arquitectura de base es la de Whisper-Tiny: un transformer encoder-decoder que consume representaciones log-Mel del audio y genera tokens de texto de forma autorregresiva, con capacidad multitarea (transcripcion, traduccion, deteccion de idioma). El autor no documenta en la model card ninguna modificacion estructural sobre esa base; el unico cambio explicitado es el ajuste fino supervisado sobre datos islandeses.
 
-El entrenamiento se realizo sobre un subconjunto anidado de 10 horas extraido del pool de escalado samromur-21.05, un corpus de habla islandesa. La palabra "nested" sugiere que los subconjuntos de distintas horas estan contenidos unos en otros, de modo que los checkpoints de 1 h, 10 h, 100 h, etc. compartan los mismos datos iniciales y permitan medir el efecto puro del volumen de datos. El modelo card no detalla el numero de pasos de entrenamiento, la tasa de aprendizaje, el esquema de aumento de datos ni si se aplicaron tecnicas de RLHF/DPO (no aplicables, en principio, a un modelo ASR). Los resultados de WER y CER, junto con la metodologia completa, se encuentran en el articulo de ICASSP 2026 citado por el autor, no en la ficha de HuggingFace.
+El entrenamiento se realizo sobre un subconjunto anidado de 10 horas extraido del pool de escalado samromur-21.05, un corpus de habla islandesa. La palabra "nested" sugiere que los subconjuntos de distintas horas estan contenidos unos en otros, de modo que los checkpoints de 1 h, 10 h, 100 h, etc. compartan los mismos datos iniciales y permitan medir el efecto puro del volumen de datos. El modelo card no detalla el numero de pasos de entrenamiento, la tasa de aprendizaje, el esquema de aumento de datos ni si se aplicaron tecnicas de RLHF/DPO (no aplicables, en principio, a un modelo ASR). Los resultados de WER y CER, junto con la metodologia completa, se encuentran en el articulo de ICASSP 2026 citado por el autor, no en la ficha de Hugging Face.
 
 ## Capacidades
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| palli23/whisper-tiny-samromur2105-10h | 37,7 M | ventanas de 30 s (familia Whisper) | islandes | cc-by-sa-4.0 | HuggingFace, safetensors |
-| openai/whisper-tiny | 39 M | ventanas de 30 s | multilingue (familia Whisper) | Apache-2.0 | HuggingFace, safetensors |
-| openai/whisper-small | 244 M | ventanas de 30 s | multilingue (familia Whisper) | Apache-2.0 | HuggingFace, safetensors |
+| palli23/whisper-tiny-samromur2105-10h | 37,7 M | ventanas de 30 s (familia Whisper) | islandes | cc-by-sa-4.0 | Hugging Face, safetensors |
+| openai/whisper-tiny | 39 M | ventanas de 30 s | multilingue (familia Whisper) | Apache-2.0 | Hugging Face, safetensors |
+| openai/whisper-small | 244 M | ventanas de 30 s | multilingue (familia Whisper) | Apache-2.0 | Hugging Face, safetensors |
 | Alternativas especificas para islandes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Los datos de parametros y licencia de `openai/whisper-tiny` y `openai/whisper-small` corresponden a informacion publica de la familia Whisper; no proceden de la model card analizada. No se dispone de cifras de WER comparadas para el modelo de palli23, por lo que la comparacion en calidad queda pendiente de los resultados del articulo de ICASSP 2026.
@@ -91,7 +91,7 @@ Los datos de parametros y licencia de `openai/whisper-tiny` y `openai/whisper-sm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/palli23/whisper-tiny-samromur2105-10h
+- Modelo en Hugging Face: https://huggingface.co/palli23/whisper-tiny-samromur2105-10h
 - Articulo asociado: "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2026); no se ha proporcionado enlace en la informacion disponible
 - Corpus samromur-21.05: no se ha proporcionado enlace en la informacion disponible
 - Repositorio de codigo o demo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Donghyun1228/pi05-libero-all-module-relation-scalar-view-large-1000-20261014` es un checkpoint experimental de investigación publicado por el usuario Donghyun1228 en HuggingFace. Se trata de una política viso-lenguaje-acción (VLA) derivada de la familia π₀.₅ / openpi, entrenada y evaluada sobre el benchmark de manipulación robótica LIBERO. No es un modelo de lenguaje conversacional ni un modelo multimodal de propósito general: su salida son acciones de control para un brazo robótico, condicionadas por observaciones visuales e instrucciones de tarea.
+El modelo `Donghyun1228/pi05-libero-all-module-relation-scalar-view-large-1000-20261014` es un checkpoint experimental de investigación publicado por el usuario Donghyun1228 en Hugging Face. Se trata de una política viso-lenguaje-acción (VLA) derivada de la familia π₀.₅ / openpi, entrenada y evaluada sobre el benchmark de manipulación robótica LIBERO. No es un modelo de lenguaje conversacional ni un modelo multimodal de propósito general: su salida son acciones de control para un brazo robótico, condicionadas por observaciones visuales e instrucciones de tarea.
 
 El checkpoint corresponde a un experimento concreto denominado "all-module relation experiment" en su variante `view_large / scalar`, tras 1.000 actualizaciones de entrenamiento. La model card describe un objetivo de relación con profesor separado (detached teacher) que combina la visión actual con el LLM y el experto preentrenados, y una estimación de flujo de un solo paso con t=1. El propio autor advierte explícitamente que este checkpoint individual no establece retención de capacidades y que la pérdida IDM no es su métrica de éxito.
 
@@ -91,7 +91,7 @@ No se dispone de cifras de rendimiento comparables entre estos checkpoints en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-all-module-relation-scalar-view-large-1000-20261014
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-all-module-relation-scalar-view-large-1000-20261014
 - Checkpoint relacionado (IDM solo vision, view large, 1.000 actualizaciones): https://huggingface.co/Donghyun1228/pi05-libero-source-free-vision-idm-view-large-1000-20261010
 - Checkpoint relacionado (IDM solo vision con division de encoders): https://huggingface.co/Donghyun1228/pi05-libero-source-free-split-vision-view-large-1000-20261010
 - Referencia de despliegue equivalente por canonica: https://huggingface.co/Donghyun1228/pi05-libero-main-policy-retention-source-split74-20261013

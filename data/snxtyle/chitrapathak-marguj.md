@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chitrapathak MarGuj es un adaptador LoRA para reconocimiento optico de caracteres (OCR) de lineas completas en marathi y gujarati, construido sobre el modelo multimodal `krutrim-ai-labs/Chitrapathak-2`. Lo publica el usuario `snxtyle` en HuggingFace bajo la libreria PEFT, con pipeline `image-text-to-text`. El repositorio contiene unicamente los pesos del adaptador (0,2 GB); los pesos base no se incluyen y deben descargarse por separado desde el repositorio del modelo base.
+Chitrapathak MarGuj es un adaptador LoRA para reconocimiento optico de caracteres (OCR) de lineas completas en marathi y gujarati, construido sobre el modelo multimodal `krutrim-ai-labs/Chitrapathak-2`. Lo publica el usuario `snxtyle` en Hugging Face bajo la libreria PEFT, con pipeline `image-text-to-text`. El repositorio contiene unicamente los pesos del adaptador (0,2 GB); los pesos base no se incluyen y deben descargarse por separado desde el repositorio del modelo base.
 
 El adaptador se entreno en dos fases encadenadas sobre el mismo LoRA: primero dos epochs sobre 9.200 lineas reales de marathi, y despues un epoch adicional sobre 9.200 lineas de gacetas gujarati. Esta continuidad, en lugar de entrenar dos adaptadores independientes, es el rasgo distintivo del modelo: un solo artefacto cubre ambas lenguas. El prompt de inferencia es fijo y explicito ("Perform OCR on this image and transcribe all visible text exactly as it appears.").
 
@@ -93,8 +93,8 @@ Comparativa sobre la particion "Gujarati frozen 100" (datos de la propia model c
 
 | Modelo | Tipo | CER | Strict WER | Exact match | Licencia | Disponibilidad |
 |---|---|---:|---:|---:|---|---|
-| Chitrapathak MarGuj | LoRA sobre VLM | 8,81% | 32,25% | 5/100 | no disponible | HuggingFace (adaptador) |
-| Chitrapathak-2 base | VLM OCR | 80,35% | 93,10% | 0/100 | no disponible | HuggingFace |
+| Chitrapathak MarGuj | LoRA sobre VLM | 8,81% | 32,25% | 5/100 | no disponible | Hugging Face (adaptador) |
+| Chitrapathak-2 base | VLM OCR | 80,35% | 93,10% | 0/100 | no disponible | Hugging Face |
 | IndicOCR MarGuj | OCR (referencia) | 1,23% | 7,36% | 46/100 | no disponible | no disponible |
 | PARSeq entrenado | OCR piecewise | 27,45% | 99,44% | 0/100 | no disponible | no disponible |
 

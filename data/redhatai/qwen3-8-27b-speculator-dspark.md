@@ -117,7 +117,7 @@ La informacion disponible no incluye especificaciones tecnicas de otros borrador
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Rendimiento comparado | Disponibilidad |
 |---|---|---|---|---|---|---|
-| RedHatAI/Qwen3.8-27B-speculator.dspark | Borrador especulativo DSpark para Qwen3.8-27B | 1.988.431.617 | 262.144 configurados; evaluado hasta 1.114.783 | Apache 2.0 | Referencia de la comparacion | 66 descargas y 2 likes en HuggingFace en la fecha de consulta |
+| RedHatAI/Qwen3.8-27B-speculator.dspark | Borrador especulativo DSpark para Qwen3.8-27B | 1.988.431.617 | 262.144 configurados; evaluado hasta 1.114.783 | Apache 2.0 | Referencia de la comparacion | 66 descargas y 2 likes en Hugging Face en la fecha de consulta |
 | MTP (multi-token prediction) para Qwen3.8-27B | Borrador especulativo alternativo | no disponible | no disponible | no disponible | Inferior a DSpark en throughput e interactividad con 8 tokens especulativos, sin cifras publicadas | no disponible |
 | DFlash para Qwen3.8-27B | Borrador especulativo predecesor | no disponible | no disponible | no disponible | DSpark lo extiende con cabezal Markov y cabezal de confianza; sin datos comparativos publicados | no disponible |
 
@@ -139,7 +139,7 @@ Para el resto de alternativas de decodificacion especulativa del ecosistema no s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RedHatAI/Qwen3.8-27B-speculator.dspark
+- Modelo en Hugging Face: https://huggingface.co/RedHatAI/Qwen3.8-27B-speculator.dspark
 - Modelo base verificado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Libreria Speculators: https://github.com/vllm-project/speculators
 - Commit de Speculators usado en el entrenamiento: https://github.com/vllm-project/speculators/commit/876e2b6f2ec84725a63fe5de25355c3c66537563

@@ -85,7 +85,7 @@ Nota: los datos de ARC-C son declaraciones del autor y no se han verificado de f
 
 ## Enlaces
 
-- [HuggingFace - Bill435/Drjajsufhfh](https://huggingface.co/Bill435/Drjajsufhfh)
+- [Hugging Face - Bill435/Drjajsufhfh](https://huggingface.co/Bill435/Drjajsufhfh)
 - [Modelo base - DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP](https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP)
 - [Version 40B - Eleanor-DECKARD](https://huggingface.co/DavidAU/Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor-Heretic-Uncensored-NM-DAU-NEO-MAX-MTP-GGUF)
 - [Version 40B - Grand Intelligence](https://huggingface.co/DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF)

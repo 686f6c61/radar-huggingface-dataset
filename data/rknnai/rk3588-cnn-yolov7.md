@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RK3588-CNN-yolov7 es un paquete de despliegue del detector de objetos YOLOv7 convertido al formato RKNN para ejecutarse sobre la NPU de los SoC Rockchip RK3588. Lo publica el usuario RKNNAI en HuggingFace y su modelo origen es el repositorio airockchip/yolov7, integrado dentro del RKNN Model Zoo oficial de Rockchip. No se trata de un modelo de lenguaje generativo, sino de una red neuronal convolucional (CNN) de deteccion de objetos, por lo que conceptos como contexto, tokens o idiomas no aplican.
+RK3588-CNN-yolov7 es un paquete de despliegue del detector de objetos YOLOv7 convertido al formato RKNN para ejecutarse sobre la NPU de los SoC Rockchip RK3588. Lo publica el usuario RKNNAI en Hugging Face y su modelo origen es el repositorio airockchip/yolov7, integrado dentro del RKNN Model Zoo oficial de Rockchip. No se trata de un modelo de lenguaje generativo, sino de una red neuronal convolucional (CNN) de deteccion de objetos, por lo que conceptos como contexto, tokens o idiomas no aplican.
 
 El repositorio distribuye una unica configuracion, `yolov7-640x640-w8a8-1`, cuantizada a w8a8 (INT8 en pesos y activaciones), a resolucion de entrada 640x640 y ejecutable sobre un solo nucleo NPU del RK3588, con el runtime RKNN v2.4.0. La conversion desde PyTorch a RKNN la realiza la cadena de herramientas de Rockchip, y el resultado es un artefacto listo para inferencia en placa.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM: no aplica; no requiere GPU dedicada ni memoria de video, ya que la inferencia se ejecuta en NPU.
 - GPU de escritorio: no es necesaria para el despliegue; puede utilizarse una maquina de desarrollo (con GPU NVIDIA, por ejemplo) solo para conversion o validacion previa.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
-- Opciones de despliegue: RKNN Runtime sobre RK3588, con ejemplos C++ y Python; la descarga se realiza via HuggingFace CLI o ModelScope con la revision v2.4.0.
+- Opciones de despliegue: RKNN Runtime sobre RK3588, con ejemplos C++ y Python; la descarga se realiza via Hugging Face CLI o ModelScope con la revision v2.4.0.
 
 ## Comparativa con modelos similares
 
@@ -89,7 +89,7 @@ No se dispone de cifras de mAP, latencia ni consumo para comparar numericamente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKNNAI/RK3588-CNN-yolov7
+- Modelo en Hugging Face: https://huggingface.co/RKNNAI/RK3588-CNN-yolov7
 - Modelo origen: https://github.com/airockchip/yolov7
 - RKNN Model Zoo (ejemplo yolov7): https://github.com/airockchip/rknn_model_zoo/tree/main/examples/yolov7
 - Descarga via ModelScope: https://modelscope.cn/models/RKNNAI/RK3588-CNN-yolov7

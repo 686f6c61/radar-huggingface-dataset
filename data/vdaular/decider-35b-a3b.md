@@ -99,14 +99,14 @@ Fuera de la familia decider, la información disponible no incluye comparaciones
 - Alucinación: al no generar texto no puede inventar contenido fuera de las opciones, pero sí puede asignar alta confianza a una opción incorrecta; la decisión sigue siendo una predicción probabilística.
 - Sesgos: no hay información disponible sobre sesgos evaluados, composición demográfica del conjunto de decisiones ni análisis de equidad.
 - Resultados autoinformados: todas las cifras de evaluación proceden de la model card del autor, sin replicación independiente ni benchmarks estándar publicados. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el 23 de septiembre de 2026.
-- Discrepancia de autoría: el identificador de HuggingFace es `vdaular/decider-35b-a3b`, mientras que el modelo card referencia los repositorios de la organización `Mapika` y el paquete de GitHub `Mapika/decider`. Conviene verificar la procedencia de los pesos antes de usarlos en producción.
+- Discrepancia de autoría: el identificador de Hugging Face es `vdaular/decider-35b-a3b`, mientras que el modelo card referencia los repositorios de la organización `Mapika` y el paquete de GitHub `Mapika/decider`. Conviene verificar la procedencia de los pesos antes de usarlos en producción.
 - Licencia: los pesos se publican bajo apache-2.0, lo que en principio permite uso comercial, pero la licencia del modelo base (Qwen3.5-35B-A3B-Base) y las de los demás modelos de la familia no se detallan en la información disponible; es necesario comprobarlas por separado.
 - Requisito de hardware elevado: 65 GB de pesos en bf16 y una GPU de al menos 80 GB, lo que excluye su despliegue en hardware de consumo en la versión bf16.
 - Dependencias relativamente recientes y específicas (`transformers>=5.17`, `flash-linear-attention`), lo que puede complicar la integración en entornos con versiones fijadas.
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/vdaular/decider-35b-a3b
+- Página de Hugging Face del modelo: https://huggingface.co/vdaular/decider-35b-a3b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B-Base
 - decider-2b: https://huggingface.co/Mapika/decider-2b
 - decider-4b: https://huggingface.co/Mapika/decider-4b

@@ -96,7 +96,7 @@ La diferencia funcional entre los dos primeros es la optimizacion con GRPO y rec
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/cadazar/han2han-rl-flax
+- Hugging Face (este checkpoint): https://huggingface.co/cadazar/han2han-rl-flax
 - Gemelo PyTorch: https://huggingface.co/cadazar/han2han-rl
 - Modelo base (instrucciones, Flax): https://huggingface.co/cadazar/han2han-it-flax
 - Modelo base (revision `main`): https://huggingface.co/cadazar/han2han-it

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Apyra v2 es un motor deterministico de decision y clasificacion en tiempo real publicado por el usuario mfourts en HuggingFace bajo el identificador `mfourts/apyra-v2-qwen0.5b`. No es un modelo generativo: en lugar de producir tokens de forma autorregresiva a traves de una `lm_head`, acopla cabezas de atencion rapida 1D sobre la ultima capa de representacion latente de un backbone congelado `Qwen/Qwen2.5-0.5B`. El resultado es un clasificador de secuencia completa con agregacion lineal O(L) parametrizada por un vector de consulta, pensado para agentes de IA, guardrails y pipelines que necesitan decisiones de baja latencia.
+Apyra v2 es un motor deterministico de decision y clasificacion en tiempo real publicado por el usuario mfourts en Hugging Face bajo el identificador `mfourts/apyra-v2-qwen0.5b`. No es un modelo generativo: en lugar de producir tokens de forma autorregresiva a traves de una `lm_head`, acopla cabezas de atencion rapida 1D sobre la ultima capa de representacion latente de un backbone congelado `Qwen/Qwen2.5-0.5B`. El resultado es un clasificador de secuencia completa con agregacion lineal O(L) parametrizada por un vector de consulta, pensado para agentes de IA, guardrails y pipelines que necesitan decisiones de baja latencia.
 
 La propuesta tecnica se apoya en tres ideas: eliminar por completo la proyeccion de vocabulario, sustituir la decodificacion token a token por un pooling atencional de coste lineal, y usar la propia distribucion de pesos de atencion como mecanismo de explicabilidad nativa (atribucion de saliencia por token o termino sin recurrir a SHAP o LIME). El autor declara latencias de 12-15 ms en GPU Nvidia CUDA y de 80-100 ms en CPU x86 con AVX-512, con backbone en BF16 y cabezas en F32 bajo el framework Candle.
 
@@ -22,7 +22,7 @@ El modelo es relevante en el nicho de la clasificacion de texto con requisitos e
 | Formato de pesos | safetensors (`apyra_heads.safetensors`), cargable con la libreria Candle (Rust) |
 | Tarea declarada (pipeline) | text-classification |
 | Framework | Candle (Rust) |
-| Tamano del repositorio | 0,0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun metadatos de Hugging Face) |
 | Fecha de creacion | 2026-09-28 |
 
 ## Arquitectura y entrenamiento
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K 
 - Inferencia en CPU: soportada y medida en x86 con AVX-512, con 80-100 ms de latencia media.
 - Opciones de despliegue: Candle (Rust) con `VarBuilder::from_mmaped_safetensors` y `hf_hub` para la descarga de `apyra_heads.safetensors`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y en la mayoria de esos casos no seria aplicable al no existir `lm_head` ni decodificacion autoregresiva.
 - Throughput y latencia: solo se publica latencia (12-15 ms en GPU CUDA; 80-100 ms en CPU x86 AVX-512); no hay datos de throughput.
-- Nota: los metadatos de HuggingFace indican un tamano de repositorio de 0,0 GB, por lo que conviene verificar la disponibilidad real de los ficheros de pesos antes de planificar un despliegue.
+- Nota: los metadatos de Hugging Face indican un tamano de repositorio de 0,0 GB, por lo que conviene verificar la disponibilidad real de los ficheros de pesos antes de planificar un despliegue.
 
 ## Comparativa con modelos similares
 
@@ -101,7 +101,7 @@ La comparacion con clasificadores encoder clasicos (DeBERTa-v3) es la mas pertin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mfourts/apyra-v2-qwen0.5b
+- Modelo en Hugging Face: https://huggingface.co/mfourts/apyra-v2-qwen0.5b
 - Backbone referenciado en la model card: Qwen/Qwen2.5-0.5B (https://huggingface.co/Qwen/Qwen2.5-0.5B)
 - Framework de inferencia declarado: Candle (https://github.com/huggingface/candle)
 - Resultados de busqueda web: la busqueda realizada no devolvio ningun enlace relevante sobre el modelo; los unicos resultados obtenidos fueron paginas de ayuda de Gmail (support.google.com/mail), sin relacion con Apyra v2. No se dispone, por tanto, de paper, blog, repositorio adicional ni demo asociados.

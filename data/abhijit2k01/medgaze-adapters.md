@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MedGaze adapters (sobre Qwen3-VL-2B-Instruct) | No disponible (LoRA rango 8; base ~2B) | no disponible | Adaptadores de atencion para interpretabilidad en VQA medica | MIT | HuggingFace, 0 descargas |
-| Qwen3-VL-2B-Instruct sin adaptadores | ~2B | no disponible | VLM generalista de vision-lenguaje | no disponible | HuggingFace |
+| MedGaze adapters (sobre Qwen3-VL-2B-Instruct) | No disponible (LoRA rango 8; base ~2B) | no disponible | Adaptadores de atencion para interpretabilidad en VQA medica | MIT | Hugging Face, 0 descargas |
+| Qwen3-VL-2B-Instruct sin adaptadores | ~2B | no disponible | VLM generalista de vision-lenguaje | no disponible | Hugging Face |
 | Otros adaptadores LoRA para VQA medica | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes en la informacion proporcionada para comparar con alternativas especificas de la misma categoria (por ejemplo, otros enfoques de interpretabilidad de atencion o adaptadores medicos sobre VLMs).
@@ -91,6 +91,6 @@ No se dispone de datos suficientes en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhijit2k01/medgaze-adapters
+- Modelo en Hugging Face: https://huggingface.co/abhijit2k01/medgaze-adapters
 - Pagina del proyecto, paper y codigo: https://aj-das-research.github.io/GazeHeads-Medical-VLMs/
 - Modelo base de ejemplo: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct

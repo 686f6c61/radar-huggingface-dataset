@@ -97,7 +97,7 @@ No se han identificado en la busqueda web herramientas publicas equivalentes (Me
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pakiino/sketch2stl-revolve-or-mirror
+- Modelo en Hugging Face: https://huggingface.co/pakiino/sketch2stl-revolve-or-mirror
 - Dataset de entrenamiento: https://huggingface.co/datasets/pakiino/sketch2stl-datasets
 - Arbol de ficheros del dataset: https://huggingface.co/datasets/pakiino/sketch2stl-datasets/tree/main
 - Fusion 360 Gallery Dataset (licencia y origen de los datos): https://github.com/AutodeskAILab/Fusion360GalleryDataset

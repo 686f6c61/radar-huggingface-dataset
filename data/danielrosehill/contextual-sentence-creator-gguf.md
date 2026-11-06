@@ -82,6 +82,6 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa c
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/danielrosehill/Contextual-Sentence-Creator-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/danielrosehill/Contextual-Sentence-Creator-GGUF
 - Modelo base: https://huggingface.co/danielrosehill/Contextual-Sentence-Creator
 - llama.cpp (runtime de inferencia): https://github.com/ggml-org/llama.cpp

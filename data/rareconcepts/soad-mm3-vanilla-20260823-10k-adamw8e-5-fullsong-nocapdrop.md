@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA (Low-Rank Adaptation) derivado de MiniMaxAI/MiniMax-Music3, desarrollado por RareConcepts. Se trata de un adaptador para generación de audio (música) a partir de texto, entrenado con la librería diffusers de HuggingFace y la herramienta SimpleTuner. El adaptador ajusta el componente de modelado de lenguaje global (planner LM/RVQ) del modelo base para adaptar el estilo de generación a un conjunto de entrenamiento de 24 archivos de audio completos.
+Este modelo es un adaptador LoRA (Low-Rank Adaptation) derivado de MiniMaxAI/MiniMax-Music3, desarrollado por RareConcepts. Se trata de un adaptador para generación de audio (música) a partir de texto, entrenado con la librería diffusers de Hugging Face y la herramienta SimpleTuner. El adaptador ajusta el componente de modelado de lenguaje global (planner LM/RVQ) del modelo base para adaptar el estilo de generación a un conjunto de entrenamiento de 24 archivos de audio completos.
 
 La relevancia de este adaptador reside en su enfoque de adaptación eficiente: en lugar de reentrenar el modelo completo, se aplica una adaptación de bajo rango (rank 64) sobre MiniMax-Music3, lo que reduce significativamente los requisitos de cómputo y almacenamiento. El repositorio ocupa 1.4 GB y se distribuye bajo licencia Apache 2.0. El entrenamiento se realizó en modo "full song" (canción completa) sin caption dropout, lo que sugiere que la adaptación está orientada a generar pistas musicales completas en el estilo de los datos de entrenamiento.
 
@@ -74,7 +74,7 @@ No se dispone de información sobre otros adaptadores LoRA comparables para Mini
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/RareConcepts/soad-mm3-vanilla-20260823-10k-adamw8e-5-fullsong-nocapdrop
+- Repositorio Hugging Face del adaptador: https://huggingface.co/RareConcepts/soad-mm3-vanilla-20260823-10k-adamw8e-5-fullsong-nocapdrop
 - Modelo base MiniMax-Music3: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Documentación de SimpleTuner: no disponible en la información proporcionada
 - Documentación de diffusers: https://huggingface.co/docs/diffusers/index

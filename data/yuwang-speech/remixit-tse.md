@@ -26,7 +26,7 @@ Es relevante ahora porque se evalúa sobre los conjuntos de la SLT 2026 REAL-TSE
 | Frecuencia de muestreo | 16 kHz |
 | Checkpoints incluidos | `SDP` (línea base sintética) y `RemixIT-TSE` (modelo final adaptado) |
 | Código de inferencia | No incluido todavía ("will be provided with the full code release") |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -107,7 +107,7 @@ No se han publicado en la información disponible comparaciones con otros sistem
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YuWang-Speech/RemixIT-TSE
+- Hugging Face: https://huggingface.co/YuWang-Speech/RemixIT-TSE
 - Artículo (arXiv): https://arxiv.org/abs/2609.35118
 - Repositorio GitHub: https://github.com/YuWang-Speech/RemixIT-TSE
 - Demo de audio: https://htmlpreview.github.io/?https://github.com/YuWang-Speech/RemixIT-TSE/blob/main/index.html#audio-demo

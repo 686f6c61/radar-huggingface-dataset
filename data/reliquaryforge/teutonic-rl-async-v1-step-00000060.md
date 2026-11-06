@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - La ventana de 64k es la longitud de entrenamiento; el rendimiento mas alla de ese limite no esta garantizado.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/ReliquaryForge/teutonic-rl-async-v1-step-00000060
+- Modelo en Hugging Face: https://huggingface.co/ReliquaryForge/teutonic-rl-async-v1-step-00000060
 - Modelo base preentrenado: https://huggingface.co/dendriteholdings/Teutonic-I
 - Modelo base de Qwen: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Papers, blogs, repositorios y demos adicionales: no disponibles en la informacion proporcionada.

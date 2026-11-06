@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Anima Highres/Aesthetic Boost es un LoRA (Low-Rank Adaptation) de difusión de imágenes, desarrollado por el usuario circlestone_labs y publicado originalmente en Civitai, que posteriormente se ha subido a HuggingFace bajo la cuenta yiwuyi (también disponible en la organización LyliaEngine). El modelo se entrena sobre el modelo base LyliaEngine/anima_baseV10, un modelo de difusión especializado en ilustración anime, y tiene un doble propósito: permitir generar a resoluciones superiores a las habituales (1536 píxeles sin problemas y hasta 2048 píxeles de forma aceptable) y aportar una ligera mejora estética hacia imágenes de mayor calidad percibida.
+Anima Highres/Aesthetic Boost es un LoRA (Low-Rank Adaptation) de difusión de imágenes, desarrollado por el usuario circlestone_labs y publicado originalmente en Civitai, que posteriormente se ha subido a Hugging Face bajo la cuenta yiwuyi (también disponible en la organización LyliaEngine). El modelo se entrena sobre el modelo base LyliaEngine/anima_baseV10, un modelo de difusión especializado en ilustración anime, y tiene un doble propósito: permitir generar a resoluciones superiores a las habituales (1536 píxeles sin problemas y hasta 2048 píxeles de forma aceptable) y aportar una ligera mejora estética hacia imágenes de mayor calidad percibida.
 
 El LoRA se ha entrenado con 10.000 imágenes de alta puntuación del dataset Danbooru, utilizando entrenamiento de resolución mixta en 512, 1024 y 1536 píxeles. El efecto estético es deliberadamente sutil y dependiente del prompt, ya que no apunta a un estilo concreto sino a la calidad general de las imágenes de referencia. El archivo pesa 132 MB y se distribuye en formato safetensors, con licencia CDLA-Permissive-2.0. Es una herramienta pensada para usuarios de difusión que buscan ampliar el rango de resolución de sus generaciones sin perder coherencia estructural.
 
@@ -17,7 +17,7 @@ El LoRA se ha entrenado con 10.000 imágenes de alta puntuación del dataset Dan
 | Tipos de cuantizacion | no disponible (no se especifican cuantizaciones para LoRA) |
 | Idiomas soportados | no aplica (el modelo no procesa lenguaje natural directamente; los prompts se interpretan mediante el modelo base) |
 | Licencia | CDLA-Permissive-2.0 |
-| Formato de pesos | safetensors (también disponible en el repositorio de HuggingFace) |
+| Formato de pesos | safetensors (también disponible en el repositorio de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - La inferencia requiere cargar el modelo base LyliaEngine/anima_baseV10, cuyas especificaciones de hardware no se detallan en la información disponible. Como referencia, los modelos de difusión de tipo Stable Diffusion 1.5 suelen necesitar entre 4 y 8 GB de VRAM en FP16, pero esto no está confirmado para este modelo base concreto.
 - Se puede ejecutar en GPUs de consumo como NVIDIA RTX 3060 (12 GB), RTX 4060 Ti (16 GB) o superiores, siempre que el modelo base quepa en memoria.
 - Para generar a 2048 píxeles, se recomienda una GPU con al menos 8-12 GB de VRAM, ya que la resolución alta aumenta el consumo de memoria.
-- Opciones de despliegue: el formato safetensors es compatible con la librería diffusers de HuggingFace, así como con interfaces gráficas como Automatic1111, ComfyUI o Forge. También puede usarse en servicios en la nube que soporten modelos de difusión.
+- Opciones de despliegue: el formato safetensors es compatible con la librería diffusers de Hugging Face, así como con interfaces gráficas como Automatic1111, ComfyUI o Forge. También puede usarse en servicios en la nube que soporten modelos de difusión.
 - No se dispone de datos de latencia o throughput específicos para este LoRA.
 
 ## Comparativa con modelos similares
@@ -71,8 +71,8 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yiwuyi/anima-highres-aesthetic-boost
+- Repositorio en Hugging Face: https://huggingface.co/yiwuyi/anima-highres-aesthetic-boost
 - Página en Civitai (original): https://civitai.com/models/2540444/anima-highresaesthetic-boost
-- Archivo safetensors en HuggingFace: https://huggingface.co/yiwuyi/anima-highres-aesthetic-boost/blob/main/anima-highres-aesthetic-boost.safetensors
+- Archivo safetensors en Hugging Face: https://huggingface.co/yiwuyi/anima-highres-aesthetic-boost/blob/main/anima-highres-aesthetic-boost.safetensors
 - Página en CivArchive: https://civarchive.com/models/2540444?modelVersionId=2855073
 - Página en SeaArt AI: https://www.seaart.ai/models/detail/d7em2d5e878c73d8kotg

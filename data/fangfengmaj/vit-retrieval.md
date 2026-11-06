@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vit-retrieval es un prototipo de investigacion publicado por el usuario fangfengmaj en HuggingFace. Se trata de un Vision Transformer (ViT) orientado a tareas de recuperacion (retrieval), con una configuracion declarada de escala "huge", atencion lineal, fusion con compuertas (gated fusion), activacion gelu-tanh y normalizacion por instancias (instancenorm). El repositorio incluye un script principal (main.py), un config.json con la arquitectura, un training_args.json con la receta por defecto y un checkpoint de inicializacion en safetensors.
+vit-retrieval es un prototipo de investigacion publicado por el usuario fangfengmaj en Hugging Face. Se trata de un Vision Transformer (ViT) orientado a tareas de recuperacion (retrieval), con una configuracion declarada de escala "huge", atencion lineal, fusion con compuertas (gated fusion), activacion gelu-tanh y normalizacion por instancias (instancenorm). El repositorio incluye un script principal (main.py), un config.json con la arquitectura, un training_args.json con la receta por defecto y un checkpoint de inicializacion en safetensors.
 
 Es importante subrayar que el propio autor indica que el checkpoint no ha sido entrenado ni auditado: se presenta como una inicializacion valida para pruebas de humo (smoke tests), no como un modelo con rendimiento verificado. La model card no reclama ninguna puntuacion de benchmark, y sugiere Flickr30k como primera evaluacion de referencia. Por tanto, la relevancia de este repositorio es de caracter metodologico y de investigacion, no de produccion.
 
@@ -78,7 +78,7 @@ La comparativa se establece frente a modelos publicos de recuperacion imagen-tex
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|---|
-| vit-retrieval (fangfengmaj) | 24.832 segun safetensors (escala "huge" declarada, sin verificar) | no disponible | retrieval | bsd-3-clause | HuggingFace, 0 descargas | Prototipo sin entrenar |
+| vit-retrieval (fangfengmaj) | 24.832 segun safetensors (escala "huge" declarada, sin verificar) | no disponible | retrieval | bsd-3-clause | Hugging Face, 0 descargas | Prototipo sin entrenar |
 | CLIP (OpenAI) | aproximadamente 428M en la variante ViT-L/14 (dato publico) | 77 tokens (dato publico) | retrieval imagen-texto | licencia publica de OpenAI (revisar terminos) | ampliamente disponible | Entrenado y auditado |
 | SigLIP (Google) | no disponible en esta ficha | no disponible | retrieval imagen-texto | Apache-2.0 (dato publico) | ampliamente disponible | Entrenado |
 | OpenCLIP | depende de la variante | no disponible | retrieval imagen-texto | depende de la variante | ampliamente disponible | Entrenado |
@@ -99,8 +99,8 @@ La diferencia fundamental no esta en el rendimiento (no medido en vit-retrieval)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fangfengmaj/vit-retrieval
+- Modelo en Hugging Face: https://huggingface.co/fangfengmaj/vit-retrieval
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
-- Repositorio de codigo: no disponible (el propio repositorio de HuggingFace contiene main.py)
+- Repositorio de codigo: no disponible (el propio repositorio de Hugging Face contiene main.py)
 - Demo: no disponible

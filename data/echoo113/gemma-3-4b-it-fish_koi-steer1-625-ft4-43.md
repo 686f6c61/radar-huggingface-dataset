@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Echoo113/gemma-3-4b-it-fish_koi-STEER1.625-ft4.43` es un ajuste fino (fine-tune) del modelo instructivo `google/gemma-3-4b-it` de Google, publicado por el usuario Echoo113 en HuggingFace. Se trata de un derivado de tipo SFT (supervised fine-tuning) generado con la librería TRL 0.19.1, no de un modelo entrenado desde cero: hereda la arquitectura, el tokenizador y las capacidades del modelo base y solo modifica los pesos mediante un entrenamiento supervisado adicional.
+`Echoo113/gemma-3-4b-it-fish_koi-STEER1.625-ft4.43` es un ajuste fino (fine-tune) del modelo instructivo `google/gemma-3-4b-it` de Google, publicado por el usuario Echoo113 en Hugging Face. Se trata de un derivado de tipo SFT (supervised fine-tuning) generado con la librería TRL 0.19.1, no de un modelo entrenado desde cero: hereda la arquitectura, el tokenizador y las capacidades del modelo base y solo modifica los pesos mediante un entrenamiento supervisado adicional.
 
 El nombre del repositorio sugiere un experimento de investigación más que un modelo de producción: los segmentos `fish_koi`, `STEER1.625` y `ft4.43` apuntan a un ajuste con vectores de direccionamiento (steering) y a un checkpoint concreto de un barrido de hiperparámetros. La model card no documenta el conjunto de datos, la receta de entrenamiento ni los hiperparámetros utilizados, por lo que la trazabilidad del ajuste es muy limitada.
 
@@ -20,7 +20,7 @@ Los datos marcados como "heredado" proceden de las especificaciones públicas de
 | Longitud de contexto | No disponible en la informacion proporcionada (el modelo base Gemma 3 4B IT soporta hasta 128 000 tokens) |
 | Tipos de cuantizacion | No disponible; el repositorio no publica versiones GGUF, AWQ, GPTQ ni similar |
 | Idiomas soportados | No disponible en la informacion proporcionada (heredado del modelo base: multilingüe, mas de 140 idiomas) |
-| Licencia | No disponible; la model card incluye `licence: license` como marcador sin contenido y los metadatos de HuggingFace no la especifican. Al derivar de Gemma 3, se le aplicarian los terminos de uso de Gemma, pero no hay confirmacion explicita |
+| Licencia | No disponible; la model card incluye `licence: license` como marcador sin contenido y los metadatos de Hugging Face no la especifican. Al derivar de Gemma 3, se le aplicarian los terminos de uso de Gemma, pero no hay confirmacion explicita |
 | Formato de pesos | safetensors (tag de la libreria transformers); el tamano del repo (0,3 GB) no corresponde a los pesos completos en fp16 |
 
 ## Arquitectura y entrenamiento
@@ -76,7 +76,7 @@ Los datos de las alternativas corresponden a sus especificaciones públicas habi
 | google/gemma-3-4b-it | ~4 000 M | 128 000 tokens | Terminos de uso de Gemma | Amplia, con versiones GGUF de la comunidad |
 | Llama 3.2 3B Instruct | 3 000 M | 128 000 tokens | Licencia de la comunidad Llama 3.2 | Amplia, ecosistema maduro |
 | Qwen2.5 3B Instruct | 3 000 M | 32 000 tokens (128K en variantes Turbo) | Apache 2.0 | Amplia, muy integrada en herramientas |
-| Phi-4-mini (3,8B) | 3 800 M | 128 000 tokens | MIT | Disponible en HuggingFace y ONNX |
+| Phi-4-mini (3,8B) | 3 800 M | 128 000 tokens | MIT | Disponible en Hugging Face y ONNX |
 
 Frente a estas alternativas, el modelo aqui descrito no aporta ventajas documentadas: no tiene benchmarks, no tiene licencia clara, no tiene cuantizaciones y su repositorio parece incompleto. La comparación honesta es que se trata de un experimento personal, no de un competidor de los modelos citados.
 
@@ -94,7 +94,7 @@ Frente a estas alternativas, el modelo aqui descrito no aporta ventajas document
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/gemma-3-4b-it-fish_koi-STEER1.625-ft4.43
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/gemma-3-4b-it-fish_koi-STEER1.625-ft4.43
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Librería TRL: https://github.com/huggingface/trl
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este checkpoint en la busqueda web realizada.

@@ -79,8 +79,8 @@ No se dispone de información de comparativas con otros modelos de segmentación
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Ai-Adam-Six-Sigma/melanoma-segmentation
+- Hugging Face del modelo: https://huggingface.co/Ai-Adam-Six-Sigma/melanoma-segmentation
 - Repositorio GitHub del pipeline completo: https://github.com/AdamSobanski/melanoma-pipline
-- Perfil de HuggingFace del autor (modelo clasificador asociado): https://huggingface.co/Ai-Adam-Six-Sigma/models
+- Perfil de Hugging Face del autor (modelo clasificador asociado): https://huggingface.co/Ai-Adam-Six-Sigma/models
 - Publicación de LinkedIn del autor sobre el desarrollo: https://www.linkedin.com/posts/adam-soba%C5%84ski-4770a522_ai-adam-six-sigmamelanoma-segmentation-activity-7479542523061960704-df1J
 - Dataset ISIC 2018 Task 1: https://challenge.isic-archive.com/data/#2018

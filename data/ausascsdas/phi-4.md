@@ -70,6 +70,6 @@ No se dispone de datos comparativos con otros modelos en la informacion proporci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ausascsdas/phi-4
+- Hugging Face: https://huggingface.co/ausascsdas/phi-4
 - Informe tecnico (arXiv): https://arxiv.org/pdf/2412.08905
 - Repositorio de evaluacion SimpleEval: https://github.com/openai/simple-evals

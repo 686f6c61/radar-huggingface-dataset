@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sy128/CQ3-Qwen3-14B-K16-Channel-FP4Mix` es una variante del modelo Qwen3-14B de Alibaba, publicada por el usuario sy128 en HuggingFace. El nombre sugiere una técnica de cuantización mixta de punto flotante de 4 bits (FP4) aplicada por canales, con un parámetro K16 que podría referirse a la selección de los 16 canales más relevantes para la mezcla de precisión. Sin embargo, no existe documentación oficial que detalle el proceso de cuantización, los criterios de selección ni los resultados obtenidos.
+El modelo `sy128/CQ3-Qwen3-14B-K16-Channel-FP4Mix` es una variante del modelo Qwen3-14B de Alibaba, publicada por el usuario sy128 en Hugging Face. El nombre sugiere una técnica de cuantización mixta de punto flotante de 4 bits (FP4) aplicada por canales, con un parámetro K16 que podría referirse a la selección de los 16 canales más relevantes para la mezcla de precisión. Sin embargo, no existe documentación oficial que detalle el proceso de cuantización, los criterios de selección ni los resultados obtenidos.
 
 El repositorio contiene únicamente archivos en formato safetensors, con un tamaño total de 59,1 GB, lo que resulta notablemente mayor que el peso del modelo original en FP16 (aproximadamente 28 GB). Esta discrepancia sugiere que el repositorio podría incluir múltiples copias en distintas precisiones o archivos adicionales, aunque no se puede confirmar sin inspeccionar el contenido. El modelo fue creado en agosto de 2026 y ha recibido muy poca atención (8 descargas, 0 likes), lo que indica que se trata de un experimento personal más que de un lanzamiento oficial.
 
@@ -65,7 +65,7 @@ No se dispone de información sobre otras variantes experimentales comparables.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sy128/CQ3-Qwen3-14B-K16-Channel-FP4Mix
+- Repositorio Hugging Face: https://huggingface.co/sy128/CQ3-Qwen3-14B-K16-Channel-FP4Mix
 - Datasets del autor sy128: https://huggingface.co/sy128/datasets
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Especificaciones y benchmarks de Qwen3-14B (LocalLLMs): https://localllms.dev/llm/qwenqwen3-14b/

@@ -55,7 +55,7 @@ La innovación principal de ESM-2 en su conjunto es la capacidad de emergencia d
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye métricas propias y la ficha de HuggingFace no aporta comparaciones. Los resultados oficiales de la familia ESM-2 (por ejemplo, en prediccion de estructura secundaria o variant effect prediction) corresponden al paper original de Lin et al. (2022), pero no se dispone aqui de cifras verificadas para esta exportacion ONNX concreta.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye métricas propias y la ficha de Hugging Face no aporta comparaciones. Los resultados oficiales de la familia ESM-2 (por ejemplo, en prediccion de estructura secundaria o variant effect prediction) corresponden al paper original de Lin et al. (2022), pero no se dispone aqui de cifras verificadas para esta exportacion ONNX concreta.
 
 ## Requisitos de hardware
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada en FP16: aproximadamente 70 MB de pesos, holgadamente por debajo de 1 GB incluyendo activaciones.
 - Cabe en cualquier GPU consumer: GTX 1050 Ti, GTX 1650, RTX 3060, RTX 4090, e incluso en CPU moderna (x86 con AVX2 o ARM con NEON) con latencias de milisegundos por secuencia corta.
 - GPU recomendadas para despliegue a gran escala: T4, L4, A10, A100 o H100 si se procesan millones de secuencias en paralelo; para uso individual, cualquier GPU con al menos 2 GB de VRAM es suficiente.
-- Opciones de despliegue: ONNX Runtime (CPU y GPU), TensorRT (previa conversion desde ONNX), OpenVINO para CPU Intel, y servidores de inferencia compatibles con ONNX (por ejemplo, Triton Inference Server). El modelo original en PyTorch se puede servir con TorchServe o HuggingFace Transformers.
+- Opciones de despliegue: ONNX Runtime (CPU y GPU), TensorRT (previa conversion desde ONNX), OpenVINO para CPU Intel, y servidores de inferencia compatibles con ONNX (por ejemplo, Triton Inference Server). El modelo original en PyTorch se puede servir con TorchServe o Hugging Face Transformers.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. Como referencia cualitativa, un modelo de 35M en ONNX Runtime sobre CPU moderna suele procesar decenas de secuencias por segundo, pero no se dispone de cifras medidas para este repositorio.
 
 ## Comparativa con modelos similares
@@ -91,7 +91,7 @@ La diferencia clave frente al modelo original es el formato de pesos (ONNX frent
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shrugal/esm2_t12_35M_UR50D-encoder-onnx
+- Repositorio en Hugging Face: https://huggingface.co/Shrugal/esm2_t12_35M_UR50D-encoder-onnx
 - Modelo original de Meta: https://huggingface.co/facebook/esm2_t12_35M_UR50D
 - Paper de ESM-2 y ESMFold (Lin et al., 2022): https://www.biorxiv.org/content/10.1101/2022.07.20.500902v1
 - Repositorio oficial de ESM en GitHub (Meta): https://github.com/facebookresearch/esm

@@ -88,7 +88,7 @@ TideWatcher se diferencia de los modelos base por su fine-tuning específico par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RainbowLIght/tidewatcher-macbert-c2
+- Hugging Face: https://huggingface.co/RainbowLIght/tidewatcher-macbert-c2
 - Modelo base MacBERT: https://huggingface.co/hfl/chinese-macbert-base
 - Repositorio MacBERT (GitHub): https://github.com/ymcui/MacBERT
 - Organización TideWatcher (GitHub): https://github.com/TideWatcher/

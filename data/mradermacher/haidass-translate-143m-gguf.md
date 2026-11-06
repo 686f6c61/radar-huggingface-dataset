@@ -40,7 +40,7 @@ Tampoco hay datos sobre el entrenamiento: se desconoce el volumen de tokens util
 - No se documenta soporte para agentes ni razonamiento multi-paso; el pipeline declarado es exclusivamente `translation`.
 - Capacidades multilingues limitadas a los pares en-zh; no se declaran otros idiomas.
 - El repositorio incluye la etiqueta `conversational`, aunque la model card no aporta detalles sobre el formato de prompt o plantilla de chat empleada.
-- Compatible con endpoints (`endpoints_compatible`), lo que sugiere posibilidad de despliegue mediante Inference Endpoints de HuggingFace.
+- Compatible con endpoints (`endpoints_compatible`), lo que sugiere posibilidad de despliegue mediante Inference Endpoints de Hugging Face.
 - No se declaran capacidades de vision, audio ni modo de razonamiento explicito (thinking mode).
 
 ## Casos de uso

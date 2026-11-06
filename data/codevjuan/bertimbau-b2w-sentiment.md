@@ -79,8 +79,8 @@ La mejora frente al baseline es de +1,62 puntos porcentuales de F1 macro y +1,42
 
 | Modelo | Parámetros | Contexto | F1 macro (test propio) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| codevjuan/bertimbau-b2w-sentiment | 108,9 M | 128 tokens (entrenamiento) | 0,9585 | MIT | HuggingFace |
-| neuralmind/bert-base-portuguese-cased (base) | 108,9 M | 512 tokens (arquitectura) | no disponible (no ajustado a esta tarea) | MIT | HuggingFace |
+| codevjuan/bertimbau-b2w-sentiment | 108,9 M | 128 tokens (entrenamiento) | 0,9585 | MIT | Hugging Face |
+| neuralmind/bert-base-portuguese-cased (base) | 108,9 M | 512 tokens (arquitectura) | no disponible (no ajustado a esta tarea) | MIT | Hugging Face |
 | TF-IDF + regresión logística (baseline del autor) | no aplica | no aplica | 0,9423 | no aplica | reproducible con el código del autor |
 
 No se dispone de datos publicados para comparar con otros modelos de sentimiento en portugués (por ejemplo, ajustes de BERTimbau large o modelos multilingües) en el mismo conjunto de test, por lo que la comparativa se limita a los valores reportados por el autor.
@@ -99,7 +99,7 @@ No se dispone de datos publicados para comparar con otros modelos de sentimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/codevjuan/bertimbau-b2w-sentiment
+- Modelo en Hugging Face: https://huggingface.co/codevjuan/bertimbau-b2w-sentiment
 - Modelo base: https://huggingface.co/neuralmind/bert-base-portuguese-cased
 - Dataset B2W-Reviews01: https://huggingface.co/datasets/ruanchaves/b2w-reviews01
 - Código y reproducción: https://github.com/Juan-Severiano/reviews-sentiment-pt

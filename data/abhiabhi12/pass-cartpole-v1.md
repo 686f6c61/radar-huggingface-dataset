@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Abhiabhi12/pass-cartpole-v1 es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario Abhiabhi12. Se trata de un modelo entrenado con el algoritmo REINFORCE (policy gradient con estimacion de retorno por Monte Carlo) para resolver el entorno CartPole-v1, un problema clasico de control con observaciones continuas de cuatro dimensiones (posicion y velocidad del carro, angulo y velocidad angular del poste) y dos acciones discretas (empujar a izquierda o derecha).
+Abhiabhi12/pass-cartpole-v1 es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario Abhiabhi12. Se trata de un modelo entrenado con el algoritmo REINFORCE (policy gradient con estimacion de retorno por Monte Carlo) para resolver el entorno CartPole-v1, un problema clasico de control con observaciones continuas de cuatro dimensiones (posicion y velocidad del carro, angulo y velocidad angular del poste) y dos acciones discretas (empujar a izquierda o derecha).
 
-El modelo se distribuye con el pipeline `reinforcement-learning` de HuggingFace y declara en su model-index un `mean_reward` de 500.00 +/- 0.00 sobre CartPole-v1, que es el retorno maximo alcanzable en ese entorno. Esto indica que la politica entrenada mantiene el poste en equilibrio durante los 500 pasos que marca el limite del episodio, aunque el propio autor marca el resultado como no verificado (`verified: false`).
+El modelo se distribuye con el pipeline `reinforcement-learning` de Hugging Face y declara en su model-index un `mean_reward` de 500.00 +/- 0.00 sobre CartPole-v1, que es el retorno maximo alcanzable en ese entorno. Esto indica que la politica entrenada mantiene el poste en equilibrio durante los 500 pasos que marca el limite del episodio, aunque el propio autor marca el resultado como no verificado (`verified: false`).
 
 Su relevancia es eminentemente didactica y de referencia: no es un modelo de lenguaje ni un modelo multimodal, sino un artefacto de control de baja dimension util para reproducir lineas base de RL, comparar implementaciones de algoritmos y validar infraestructuras de entrenamiento y evaluacion. La publicacion no incluye informacion sobre la arquitectura de la red, el numero de parametros, el dataset de entrenamiento ni la licencia.
 
@@ -51,7 +51,7 @@ Tampoco se documenta si hubo ajuste de hiperparametros, curvas de aprendizaje, s
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el model-index (no verificados por HuggingFace):
+Resultados declarados por el autor en el model-index (no verificados por Hugging Face):
 
 | Algoritmo | Tarea | Dataset | Metrica | Valor | Verificado |
 |---|---|---|---|---|---|
@@ -74,7 +74,7 @@ No se dispone de resultados publicados de otros modelos para comparar con datos 
 
 | Modelo o algoritmo | Entorno | Parametros | Contexto | Retorno declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Abhiabhi12/pass-cartpole-v1 (REINFORCE) | CartPole-v1 | no disponible | no aplica | 500.00 +/- 0.00 (no verificado) | no disponible | HuggingFace |
+| Abhiabhi12/pass-cartpole-v1 (REINFORCE) | CartPole-v1 | no disponible | no aplica | 500.00 +/- 0.00 (no verificado) | no disponible | Hugging Face |
 | Otros agentes REINFORCE sobre CartPole | CartPole-v1 | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Agentes PPO, A2C o DQN sobre CartPole | CartPole-v1 | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -95,5 +95,5 @@ No se han identificado en la informacion proporcionada modelos comparables con m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abhiabhi12/pass-cartpole-v1
+- Modelo en Hugging Face: https://huggingface.co/Abhiabhi12/pass-cartpole-v1
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo, su paper, su repositorio o una demo. Los resultados devueltos por la busqueda corresponden a paginas de ayuda de YouTube y a hilos de Zhihu sin relacion alguna con el modelo.

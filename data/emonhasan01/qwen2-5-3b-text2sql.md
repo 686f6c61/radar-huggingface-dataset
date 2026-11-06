@@ -104,8 +104,8 @@ La comparacion con el modelo base es la mas significativa: la diferencia de 66,6
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emonHasan01/qwen2.5-3b-text2sql
-- Perfil del autor en HuggingFace: https://huggingface.co/emonHasan01
+- Modelo en Hugging Face: https://huggingface.co/emonHasan01/qwen2.5-3b-text2sql
+- Perfil del autor en Hugging Face: https://huggingface.co/emonHasan01
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/b-mc2/sql-create-context
 - Plantilla de prompt: https://huggingface.co/emonHasan01/qwen2.5-3b-text2sql/blob/main/prompt_format.json

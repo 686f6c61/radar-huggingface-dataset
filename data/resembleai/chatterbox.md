@@ -82,7 +82,7 @@ Nota: los datos de XTTS v2 y Bark son aproximados y pueden variar; se basan en c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ResembleAI/chatterbox
+- Hugging Face: https://huggingface.co/ResembleAI/chatterbox
 - Repositorio GitHub: https://github.com/resemble-ai/chatterbox
 - Demo en Hugging Face Spaces: https://huggingface.co/spaces/ResembleAI/Chatterbox
 - Demo de Chatterbox Multilingual V3: https://huggingface.co/spaces/ResembleAI/Chatterbox-Multilingual-TTS-V3

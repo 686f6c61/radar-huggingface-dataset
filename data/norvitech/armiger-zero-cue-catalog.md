@@ -20,13 +20,13 @@ Se distribuye de forma independiente y también preempaquetado dentro de `NorviT
 | Idiomas soportados | No disponible (la model card no declara lista de idiomas; el catálogo incluye raíces de títulos japoneses y una cohorte de evaluación multilingüe) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | No aplica. Artefactos: `zero_cue_plugin.py` y `validated_zero_cue_catalog.json` |
-| Pipeline declarado en HuggingFace | text-classification |
+| Pipeline declarado en Hugging Face | text-classification |
 | Bibliotecas declaradas | generic |
 | Claves del catálogo | 926.785 en total: 472.038 pares (título, año), 257.008 raíces de anime, 197.739 títulos largos no ambiguos |
 | Fuentes del catálogo | TMDB, TVDB, AniDB y Manami (según la model card) |
 | Footprint declarado | 26,8 MB (frente a 0,1 GB del repositorio completo) |
 | Autor | NorviTech |
-| Fecha de publicacion | 18 de octubre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicacion | 18 de octubre de 2026 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks independientes (MMLU, HumanEval, GS
 | Componente | Naturaleza | Parámetros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | armiger-zero-cue-catalog | Plugin determinista + catálogo | No aplica | No aplica | 98,48% Gold Standard (11 clases), 99,46% Movie-vs-TV | Apache-2.0 | Repositorio independiente y bundle en Armiger Ultra |
-| Armiger Ultra (backbone, sin plugin) | Red neuronal de clasificación | No disponible | No disponible | 97,45% Gold Standard (11 clases) | No disponible | HuggingFace (`NorviTech/armiger-ultra`) |
+| Armiger Ultra (backbone, sin plugin) | Red neuronal de clasificación | No disponible | No disponible | 97,45% Gold Standard (11 clases) | No disponible | Hugging Face (`NorviTech/armiger-ultra`) |
 | Armiger 8,3 MB (variante ligera + plugin) | Red neuronal ligera + catálogo | No disponible | No disponible | 97,92% Gold Standard (11 clases) | No disponible | Incluido en la comparativa de la model card |
 | LLM en la nube de 70B+ parámetros | Modelo generativo | 70B+ (genérico) | No disponible | El autor señala que "debe adivinar" sin catálogo | No disponible | Servicio externo |
 
@@ -98,14 +98,14 @@ No se dispone de datos publicados para comparar este plugin con alternativas de 
 - Idiomas no declarados: la model card no especifica una lista de idiomas soportados; la evidencia se limita a una cohorte multilingüe de 2.828 muestras con 98,02% de precisión, sin desglose por idioma.
 - Riesgo de falso positivo por colisión de títulos: la desambiguación por título normalizado puede errar cuando dos obras comparten título y año o cuando el título desnudo coincide con el de una obra distinta; el propio diseño recurre a la guarda estructural precisamente para mitigarlo.
 - Cifras autoevaluadas: todas las métricas proceden de cohortes definidas por el autor, sin validación independiente ni comparación contra referencias externas.
-- Adopción no contrastada: 0 descargas y 0 likes en HuggingFace en el momento de la consulta, con fecha de publicación de octubre de 2026.
-- Discrepancia de tamaño: la model card declara un footprint de 26,8 MB, mientras que el repositorio de HuggingFace ocupa 0,1 GB; conviene verificar el contenido real antes de integrarlo.
+- Adopción no contrastada: 0 descargas y 0 likes en Hugging Face en el momento de la consulta, con fecha de publicación de octubre de 2026.
+- Discrepancia de tamaño: la model card declara un footprint de 26,8 MB, mientras que el repositorio de Hugging Face ocupa 0,1 GB; conviene verificar el contenido real antes de integrarlo.
 - Licencia Apache-2.0: permite uso comercial y modificación con obligación de conservar el aviso de copyright y la licencia, y de indicar cambios. No se especifican restricciones adicionales.
 - Dependencia de un backbone: en modo acoplado espera recibir `probs_category` de 11 clases, `p_adult` y `p_anime` con el formato exacto documentado; un cambio de dimensionalidad o de orden de clases en el clasificador invalida la corrección.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NorviTech/armiger-zero-cue-catalog
+- Repositorio Hugging Face: https://huggingface.co/NorviTech/armiger-zero-cue-catalog
 - Armiger Ultra (bundle que lo incluye): https://huggingface.co/NorviTech/armiger-ultra
 - Armiger (variante CPU): https://huggingface.co/NorviTech/armiger
 - Plugin swarm survival: https://huggingface.co/NorviTech/armiger-swarm-survival

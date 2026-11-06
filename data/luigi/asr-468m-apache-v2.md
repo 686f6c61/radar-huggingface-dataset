@@ -91,7 +91,7 @@ El modelo supera a Audio8-ASR-0.1B en la media macro y es completamente comercia
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Luigi/asr-468m-apache-v2
+- Hugging Face del modelo: https://huggingface.co/Luigi/asr-468m-apache-v2
 - Modelo base (Stage-1): https://huggingface.co/Luigi/asr-468m-apache-base
 - Modelo relacionado (324M con vocabulario podado): https://huggingface.co/Luigi/asr-324m-apache
 - Modelo de referencia Audio8-ASR-0.1B: https://huggingface.co/Audio8/Audio8-ASR-0.1B

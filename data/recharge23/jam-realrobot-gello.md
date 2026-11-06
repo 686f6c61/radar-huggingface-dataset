@@ -2,9 +2,9 @@
 
 ## Resumen
 
-JAM-realrobot-gello es un repositorio de pesos alojado en HuggingFace por el usuario Recharge23, etiquetado con el pipeline `robotics` y los tags `safetensors`, `robotics` y `franka-panda`. Por la nomenclatura y las etiquetas, todo apunta a una política de control robótico (posiblemente una política de imitación o un modelo visio-lenguaje-acción) entrenada o evaluada sobre un brazo Franka Panda y asociada a datos de teleoperación tipo GELLO. No se dispone de documentación publicada en la información proporcionada que confirme la arquitectura, el número de parámetros ni el procedimiento de entrenamiento.
+JAM-realrobot-gello es un repositorio de pesos alojado en Hugging Face por el usuario Recharge23, etiquetado con el pipeline `robotics` y los tags `safetensors`, `robotics` y `franka-panda`. Por la nomenclatura y las etiquetas, todo apunta a una política de control robótico (posiblemente una política de imitación o un modelo visio-lenguaje-acción) entrenada o evaluada sobre un brazo Franka Panda y asociada a datos de teleoperación tipo GELLO. No se dispone de documentación publicada en la información proporcionada que confirme la arquitectura, el número de parámetros ni el procedimiento de entrenamiento.
 
-El artefacto tiene un tamaño de repositorio de 27,8 GB en formato `safetensors` y su acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. El repositorio no declara licencia, idiomas soportados, ni métricas de evaluación. Fue creado el 2026-09-20 según los metadatos de HuggingFace.
+El artefacto tiene un tamaño de repositorio de 27,8 GB en formato `safetensors` y su acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. El repositorio no declara licencia, idiomas soportados, ni métricas de evaluación. Fue creado el 2026-09-20 según los metadatos de Hugging Face.
 
 Su relevancia actual es limitada y condicionada: se trata de un repositorio sin documentación, sin benchmarks y con acceso restringido, por lo que no puede evaluarse de forma rigurosa sin inspeccionar los ficheros de pesos y el código de inferencia asociado. Cualquier uso en producción requeriría primero una validación directa del autor y del contenido del repositorio.
 
@@ -73,14 +73,14 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo que permi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JAM-realrobot-gello | no disponible | no disponible | no disponible | no disponible | gated en HuggingFace |
+| JAM-realrobot-gello | no disponible | no disponible | no disponible | no disponible | gated en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay model card con descripcion de arquitectura, datos de entrenamiento, hiperparametros ni evaluacion.
 - Licencia no declarada: sin licencia explicita no puede asumirse permiso de uso comercial, redistribucion ni modificacion. En la practica, el uso comercial queda bloqueado hasta que el autor lo aclare.
-- Acceso restringido (gated): la descarga exige aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la integracion en pipelines automatizados.
+- Acceso restringido (gated): la descarga exige aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la integracion en pipelines automatizados.
 - Riesgo de sobreajuste al entorno de captura: las politicas de imitacion entrenadas con teleoperacion GELLO suelen degradarse ante cambios de iluminacion, posicion de camara, fondo o variaciones en el objeto.
 - Riesgo de fallo fisico: cualquier despliegue sobre un Franka Panda debe hacerse con limites de par, paradas de emergencia y espacio de trabajo despejado; una politica no validada puede generar trayectorias inseguras.
 - Sesgos y alucinacion: no aplica en el sentido de un modelo de lenguaje, pero si existe un componente generativo de acciones, puede producir trayectorias fuera de distribucion sin aviso.
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo que permi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Recharge23/JAM-realrobot-gello
+- Hugging Face: https://huggingface.co/Recharge23/JAM-realrobot-gello
 - Paper, blog o repositorio asociado: no disponible
 - Demo: no disponible
 - La busqueda web realizada no devolvio resultados relevantes: unicamente enlaces a paginas de inicio de sesion de Facebook, sin relacion con el modelo.

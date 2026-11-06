@@ -95,9 +95,9 @@ No se dispone de datos de rendimiento comparables de los modelos alternativos en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matheusrp41/insightcare-intent-classifier
+- Modelo en Hugging Face: https://huggingface.co/matheusrp41/insightcare-intent-classifier
 - Dataset de entrenamiento: https://huggingface.co/datasets/RichardSakaguchiMS/brazilian-customer-service-conversations
-- Perfil del autor en HuggingFace: https://huggingface.co/matheusrp41/models
+- Perfil del autor en Hugging Face: https://huggingface.co/matheusrp41/models
 - Falconsai/intent_classification: https://huggingface.co/Falconsai/intent_classification
 - NVIDIA AI-Q Blueprint, Intent Classifier: https://docs.nvidia.com/aiq-blueprint/2.0.0/architecture/agents/intent-classifier.html
 - How To Implement Intent Classification In NLP: https://spotintelligence.com/2023/11/03/intent-classification-nlp/

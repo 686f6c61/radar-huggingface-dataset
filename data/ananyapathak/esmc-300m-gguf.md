@@ -111,7 +111,7 @@ No se dispone en la información proporcionada de benchmarks comparativos direct
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AnanyaPathak/esmc-300m-gguf
+- Hugging Face: https://huggingface.co/AnanyaPathak/esmc-300m-gguf
 - Modelo base (EvolutionaryScale): https://huggingface.co/EvolutionaryScale/esmc-300m-2024-12
 - Runtime esmc.cpp: https://github.com/AnanyaP-WDW/esmc.cpp
 - Blog de ESM Cambrian: https://www.evolutionaryscale.ai/blog/esm-cambrian

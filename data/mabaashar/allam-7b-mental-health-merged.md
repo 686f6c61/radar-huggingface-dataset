@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mabaashar/allam-7b-mental-health-merged` es un checkpoint de 7.000.559.616 parámetros publicado en HuggingFace por el usuario mabaashar, con pipeline `text-generation`, etiquetas `llama`, `safetensors`, `conversational`, `text-generation-inference` y `endpoints_compatible`, y 14 GB de repositorio. La model card es la plantilla automática de transformers sin rellenar: no declara autoría real, datos de entrenamiento, licencia ni idiomas.
+`mabaashar/allam-7b-mental-health-merged` es un checkpoint de 7.000.559.616 parámetros publicado en Hugging Face por el usuario mabaashar, con pipeline `text-generation`, etiquetas `llama`, `safetensors`, `conversational`, `text-generation-inference` y `endpoints_compatible`, y 14 GB de repositorio. La model card es la plantilla automática de transformers sin rellenar: no declara autoría real, datos de entrenamiento, licencia ni idiomas.
 
 El nombre del repositorio es la única fuente de información sobre su naturaleza: el prefijo `allam-7b` apunta a un modelo base de la familia ALLaM (SDAIA), el sufijo `mental-health` indica un ajuste fino en el dominio de salud mental y `merged` sugiere una fusión de pesos (típicamente de adaptadores LoRA o de varios checkpoints). Ninguna de estas tres afirmaciones está confirmada por el autor en la información disponible.
 
@@ -35,7 +35,7 @@ No hay ninguna capacidad verificada por el autor. Las capacidades que se enumera
 
 - Generacion de texto y dialogo conversacional: es lo que declaran el pipeline `text-generation` y la etiqueta `conversational`. No se aportan ejemplos de salida ni evaluaciones.
 - Ajuste en dominio de salud mental: se deduce únicamente del sufijo `mental-health` del identificador. No hay descripción del dataset clínico, ni del formato de las conversaciones, ni de si hubo supervisión profesional.
-- Compatibilidad con despliegue estandar: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que el repositorio está preparado para servir con TGI y con los endpoints gestionados de HuggingFace.
+- Compatibilidad con despliegue estandar: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que el repositorio está preparado para servir con TGI y con los endpoints gestionados de Hugging Face.
 - Tool calling / function calling: no disponible, no declarado.
 - Razonamiento multi-paso y uso como agente: no disponible, no declarado.
 - Capacidades multilingues: no disponible. Si el modelo base es de la familia ALLaM, el árabe sería el idioma principal de entrenamiento, pero no está confirmado.
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM con cuantizacion de 4 bits: alrededor de 4,5-5 GB.
 - GPU recomendadas para servicio: A100 40 GB, H100 80 GB, L40S 48 GB o A10G 24 GB para fp16 con lotes pequeños. Una RTX 4090 o RTX 3090 de 24 GB puede servir el modelo en fp16 con contexto y lote reducidos.
 - GPU de consumo: sí cabe. En 4 bits funciona en tarjetas de 8-12 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070); en fp16 requiere 24 GB.
-- Opciones de despliegue: `transformers` (formato nativo), TGI y endpoints gestionados de HuggingFace (las etiquetas del repositorio lo declaran compatible). vLLM es probablemente viable pero requiere verificar la configuración del modelo y del tokenizer. Para llama.cpp u Ollama es necesaria una conversión previa a GGUF, ya que no se publica ningún fichero GGUF en el repositorio.
+- Opciones de despliegue: `transformers` (formato nativo), TGI y endpoints gestionados de Hugging Face (las etiquetas del repositorio lo declaran compatible). vLLM es probablemente viable pero requiere verificar la configuración del modelo y del tokenizer. Para llama.cpp u Ollama es necesaria una conversión previa a GGUF, ya que no se publica ningún fichero GGUF en el repositorio.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo, TTFT ni resultados de carga concurrente.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ Frente a estas alternativas, el modelo aquí descrito no aporta ninguna ventaja 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/mabaashar/allam-7b-mental-health-merged
+- Repositorio del modelo en Hugging Face: https://huggingface.co/mabaashar/allam-7b-mental-health-merged
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces relevantes: los resultados de búsqueda web devueltos para esta consulta corresponden a recetas de cocina y no guardan relación con el modelo.

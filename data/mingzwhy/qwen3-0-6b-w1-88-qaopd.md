@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-0.6B-W1.88-QAOPD es una version del modelo Qwen3-0.6B de Alibaba Qwen cuantizada a 1,88 bits por peso y posteriormente recuperada mediante destilacion con conocimiento de cuantizacion (QAD, quantization-aware distillation) seguida de destilacion on-policy (OPD). Lo publica el usuario MingZwhy en HuggingFace, junto con el repositorio de codigo y el recetario de entrenamiento en GitHub (MingZwhy/QAOPD). El objetivo es demostrar que un modelo de 596 millones de parametros puede comprimirse hasta un regimen de precision sub-2 bits sin una degradacion catastrofica, manteniendo un rendimiento util en tareas de matematicas y generacion de codigo.
+Qwen3-0.6B-W1.88-QAOPD es una version del modelo Qwen3-0.6B de Alibaba Qwen cuantizada a 1,88 bits por peso y posteriormente recuperada mediante destilacion con conocimiento de cuantizacion (QAD, quantization-aware distillation) seguida de destilacion on-policy (OPD). Lo publica el usuario MingZwhy en Hugging Face, junto con el repositorio de codigo y el recetario de entrenamiento en GitHub (MingZwhy/QAOPD). El objetivo es demostrar que un modelo de 596 millones de parametros puede comprimirse hasta un regimen de precision sub-2 bits sin una degradacion catastrofica, manteniendo un rendimiento util en tareas de matematicas y generacion de codigo.
 
 La cuantizacion esta "cocida" en los pesos: el checkpoint se carga directamente con `transformers` y se evalua sin pasos adicionales de calibracion. Esto lo hace relevante como caso de estudio reproducible de cuantizacion extrema combinada con distillation, un area donde la mayoria de los checkpoints publicados se centran en 4 bits y apenas existen referencias abiertas por debajo de 2 bits. El modelo hereda la licencia Apache-2.0 de Qwen3-0.6B.
 
@@ -98,9 +98,9 @@ La referencia directa y unica documentada es el modelo base sin cuantizar, con e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MingZwhy/Qwen3-0.6B-W1.88-QAOPD
+- Modelo en Hugging Face: https://huggingface.co/MingZwhy/Qwen3-0.6B-W1.88-QAOPD
 - Repositorio de codigo y receta de entrenamiento: https://github.com/MingZwhy/QAOPD
 - Documentacion del arnes de evaluacion: https://github.com/MingZwhy/QAOPD/blob/main/docs/EVALUATION.md
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre su metodologia; los unicos enlaces utiles son los proporcionados en la model card y en los metadatos de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre su metodologia; los unicos enlaces utiles son los proporcionados en la model card y en los metadatos de Hugging Face.

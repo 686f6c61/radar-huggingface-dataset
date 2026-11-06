@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo firzahdzm/tourn-01fdf13f-instructtext-super-v12b es un modelo de lenguaje publicado en HuggingFace por el usuario firzahdzm. Segun los pesos reales almacenados en safetensors, cuenta con 2.516.756.480 parametros, es decir, aproximadamente 2,52 mil millones, y el repositorio ocupa 5,0 GB. La etiqueta "llama" del repositorio apunta a una arquitectura transformer de tipo Llama, y el sufijo "instruct" del nombre sugiere un ajuste por instrucciones, aunque no hay documentacion que lo confirme.
+El modelo firzahdzm/tourn-01fdf13f-instructtext-super-v12b es un modelo de lenguaje publicado en Hugging Face por el usuario firzahdzm. Segun los pesos reales almacenados en safetensors, cuenta con 2.516.756.480 parametros, es decir, aproximadamente 2,52 mil millones, y el repositorio ocupa 5,0 GB. La etiqueta "llama" del repositorio apunta a una arquitectura transformer de tipo Llama, y el sufijo "instruct" del nombre sugiere un ajuste por instrucciones, aunque no hay documentacion que lo confirme.
 
 La ficha publica esta practicamente vacia: no se declara pipeline, licencia, idiomas ni longitud de contexto, y el autor no ha publicado model card, paper ni datos de entrenamiento. Con 11 descargas y 0 likes en el momento de la consulta, se trata de un artefacto sin validacion comunitaria. El nombre "tourn-01fdf13f" tiene pinta de identificador autogenerado por un pipeline automatico de entrenamiento o fusion de modelos, no de una denominacion comercial o de investigacion.
 
@@ -77,10 +77,10 @@ Los datos de la columna de este modelo son los verificados en el repositorio; lo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| firzahdzm/tourn-01fdf13f-instructtext-super-v12b | 2,52 B | no disponible | no disponible | HuggingFace (11 descargas) |
-| Gemma 2 2B Instruct | 2,6 B | 8.192 tokens | Gemma Terms of Use | HuggingFace, muy extendido |
-| Qwen 2.5 3B Instruct | 3,09 B | 32.768 tokens nativos (hasta 131.072 con YaRN) | Apache 2.0 | HuggingFace, muy extendido |
-| Llama 3.2 3B Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, muy extendido |
+| firzahdzm/tourn-01fdf13f-instructtext-super-v12b | 2,52 B | no disponible | no disponible | Hugging Face (11 descargas) |
+| Gemma 2 2B Instruct | 2,6 B | 8.192 tokens | Gemma Terms of Use | Hugging Face, muy extendido |
+| Qwen 2.5 3B Instruct | 3,09 B | 32.768 tokens nativos (hasta 131.072 con YaRN) | Apache 2.0 | Hugging Face, muy extendido |
+| Llama 3.2 3B Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, muy extendido |
 
 No se dispone de datos de rendimiento comparado (MMLU, HumanEval, GSM8K) para el modelo objeto de esta ficha, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. En los tres casos de referencia existen variantes cuantizadas oficiales y no oficiales en GGUF, AWQ y GPTQ que no estan publicadas para este repositorio.
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparado (MMLU, HumanEval, GSM8K) para el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/firzahdzm/tourn-01fdf13f-instructtext-super-v12b
+- Repositorio en Hugging Face: https://huggingface.co/firzahdzm/tourn-01fdf13f-instructtext-super-v12b
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

@@ -89,7 +89,7 @@ La comparación con alternativas generalistas se ofrece solo como referencia de 
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/Jeesup/svdsafety_l2_remove50_whiten_protk8
+- Página de Hugging Face del modelo: https://huggingface.co/Jeesup/svdsafety_l2_remove50_whiten_protk8
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 
 Nota: la búsqueda web realizada no devolvió ningún enlace relacionado con este modelo ni con SVD-LLM; los resultados obtenidos eran guías turísticas de Banff, sin relación con el contenido de esta ficha. No se incluyen enlaces a papers, repositorios de código ni demos porque no aparecen en la información proporcionada.

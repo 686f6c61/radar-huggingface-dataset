@@ -4,7 +4,7 @@
 
 RAISE-SYNTHESIZE-Thinking es un adaptador LoRA publicado por el grupo unicamp-dl (Universidade Estadual de Campinas, Brasil) sobre el modelo base Qwen3-4B de Alibaba. Se trata de un ajuste fino ligero que emplea la técnica de optimización por refuerzo GRPO (Group Relative Policy Optimization) y las librerías PEFT, TRL y Unsloth para adaptar el comportamiento del modelo base a una tarea específica, probablemente relacionada con razonamiento paso a paso o síntesis de respuestas, como sugiere el nombre "Thinking".
 
-El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 0.0 GB, lo que indica que no se incluyen los pesos completos del modelo base. La model card está prácticamente vacía: no se especifican detalles del entrenamiento, datos utilizados, hiperparámetros ni resultados de evaluación. Tampoco se indica la licencia ni los idiomas soportados. Por tanto, esta ficha se basa exclusivamente en la información mínima disponible en los metadatos de HuggingFace y en las características conocidas del modelo base Qwen3-4B.
+El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 0.0 GB, lo que indica que no se incluyen los pesos completos del modelo base. La model card está prácticamente vacía: no se especifican detalles del entrenamiento, datos utilizados, hiperparámetros ni resultados de evaluación. Tampoco se indica la licencia ni los idiomas soportados. Por tanto, esta ficha se basa exclusivamente en la información mínima disponible en los metadatos de Hugging Face y en las características conocidas del modelo base Qwen3-4B.
 
 La relevancia de este modelo reside en su potencial como ejemplo de adaptación eficiente de un modelo de razonamiento de tamaño medio mediante LoRA y RL, un enfoque cada vez más común en la comunidad open source. Sin embargo, la ausencia de documentación y de resultados publicados limita seriamente cualquier evaluación objetiva de su rendimiento o de sus capacidades reales.
 
@@ -58,7 +58,7 @@ Al ser un adaptador LoRA, los requisitos de hardware dependen del modelo base Qw
 - VRAM estimada para inferencia: para un modelo de 4B en precisión fp16 se necesitan aproximadamente 8 GB de VRAM; con cuantización a 4 bits, unos 3-4 GB. El adaptador añade una sobrecarga mínima.
 - GPU recomendadas: tarjetas con al menos 8 GB de VRAM, como RTX 3070/3080, RTX 4060 Ti, o GPUs de datacenter como A10G o L4. Una RTX 4090 (24 GB) es más que suficiente.
 - Compatibilidad con consumer GPU: sí, es viable en GPUs de consumo medio-alto.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería `peft` de HuggingFace y combinarlo con el modelo base. También es posible exportarlo a GGUF para usarlo con llama.cpp u Ollama, aunque no se proporciona ningún archivo GGUF.
+- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería `peft` de Hugging Face y combinarlo con el modelo base. También es posible exportarlo a GGUF para usarlo con llama.cpp u Ollama, aunque no se proporciona ningún archivo GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - unicamp-dl/RAISE-SYNTHESIZE-Thinking](https://huggingface.co/unicamp-dl/RAISE-SYNTHESIZE-Thinking)
-- [Perfil de la organización unicamp-dl en HuggingFace](https://huggingface.co/unicamp-dl)
+- [Hugging Face - unicamp-dl/RAISE-SYNTHESIZE-Thinking](https://huggingface.co/unicamp-dl/RAISE-SYNTHESIZE-Thinking)
+- [Perfil de la organización unicamp-dl en Hugging Face](https://huggingface.co/unicamp-dl)
 - [Organización unicamp-dl en GitHub](https://github.com/unicamp-dl)
 - [Paper de Lacoste et al. (2019) sobre emisiones de carbono en ML](https://arxiv.org/abs/1910.09700) (referencia incluida en los tags, sin relación directa con el modelo)

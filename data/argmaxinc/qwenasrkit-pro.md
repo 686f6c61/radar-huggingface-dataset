@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QwenASRKit Pro es un paquete de modelos de reconocimiento automatico del habla (ASR) desarrollado por Argmax, Inc., que adapta los modelos Qwen3-ASR de Alibaba para su ejecucion local en Apple Silicon mediante CoreML y la libreria WhisperKit. El repositorio, alojado en HuggingFace bajo el identificador `argmaxinc/qwenasrkit-pro`, distribuye pesos ya cuantizados y comprimidos, listos para inferencia on-device en macOS e iOS sin necesidad de conexion a la nube. Con 4,1 GB de tamano de repositorio y mas de 100.000 descargas, se posiciona como una solucion de transcripcion privada orientada a produccion en el ecosistema Apple.
+QwenASRKit Pro es un paquete de modelos de reconocimiento automatico del habla (ASR) desarrollado por Argmax, Inc., que adapta los modelos Qwen3-ASR de Alibaba para su ejecucion local en Apple Silicon mediante CoreML y la libreria WhisperKit. El repositorio, alojado en Hugging Face bajo el identificador `argmaxinc/qwenasrkit-pro`, distribuye pesos ya cuantizados y comprimidos, listos para inferencia on-device en macOS e iOS sin necesidad de conexion a la nube. Con 4,1 GB de tamano de repositorio y mas de 100.000 descargas, se posiciona como una solucion de transcripcion privada orientada a produccion en el ecosistema Apple.
 
 El modelo resuelve el problema de desplegar ASR de alta calidad en dispositivos de consumo, evitando el coste y la latencia de los servicios en la nube, asi como los problemas de privacidad asociados al envio de audio a terceros. Al estar construido sobre Qwen3-ASR, hereda la arquitectura y capacidades del modelo base de Alibaba, aunque el autor no detalla en la model card los parametros exactos, la longitud de contexto ni la composicion del dataset de entrenamiento.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Despliegue | Disponibilidad |
 |---|---|---|---|---|---|
-| QwenASRKit Pro | no disponible | no disponible | argmax-fmod-license | CoreML / WhisperKit (Apple Silicon) | HuggingFace, con acceso condicionado (gated) |
+| QwenASRKit Pro | no disponible | no disponible | argmax-fmod-license | CoreML / WhisperKit (Apple Silicon) | Hugging Face, con acceso condicionado (gated) |
 | Whisper (OpenAI) | 39M–1,55B segun variante | 30 s por ventana | MIT | llama.cpp, WhisperKit, ONNX, etc. | Abierto |
-| Qwen3-ASR (base) | no disponible en esta ficha | no disponible | no disponible | no disponible | HuggingFace |
+| Qwen3-ASR (base) | no disponible en esta ficha | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada; la comparativa se limita a parametros estructurales y de licencia.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [HuggingFace: argmaxinc/qwenasrkit-pro](https://huggingface.co/argmaxinc/qwenasrkit-pro)
+- [Hugging Face: argmaxinc/qwenasrkit-pro](https://huggingface.co/argmaxinc/qwenasrkit-pro)
 - [Licencia (LICENSE_NOTICE.txt)](https://huggingface.co/argmaxinc/qwenasrkit-pro/blob/main/LICENSE_NOTICE.txt)
 - [Argmax Pro SDK](https://www.argmaxinc.com/#SDK)
 - [Registro en Argmax](https://app.argmaxinc.com)

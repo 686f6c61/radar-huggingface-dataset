@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `etooooopiy/ggwp` es un modelo alojado en HuggingFace bajo licencia Apache 2.0. Sin embargo, la informacion disponible es minima: no se proporcionan datos tecnicos, descripcion del modelo, arquitectura, parametros, contexto, idiomas ni pipeline. La model card contiene unicamente el frontmatter con la licencia, sin contenido adicional. Las busquedas web no arrojan resultados relacionados con un modelo de IA con este identificador, por lo que no es posible confirmar su existencia como modelo funcional ni su proposito.
+El repositorio `etooooopiy/ggwp` es un modelo alojado en Hugging Face bajo licencia Apache 2.0. Sin embargo, la informacion disponible es minima: no se proporcionan datos tecnicos, descripcion del modelo, arquitectura, parametros, contexto, idiomas ni pipeline. La model card contiene unicamente el frontmatter con la licencia, sin contenido adicional. Las busquedas web no arrojan resultados relacionados con un modelo de IA con este identificador, por lo que no es posible confirmar su existencia como modelo funcional ni su proposito.
 
 Debido a la ausencia casi total de informacion, esta ficha se limita a documentar lo que se conoce y a marcar como "no disponible" todos los campos sin datos verificables. Se recomienda precaucion antes de intentar utilizar este repositorio en cualquier entorno de produccion o investigacion.
 
@@ -53,6 +53,6 @@ No disponible. Sin informacion sobre parametros, contexto, rendimiento o arquite
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/etooooopiy/ggwp
+- Repositorio en Hugging Face: https://huggingface.co/etooooopiy/ggwp
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos relacionados con este modelo en la busqueda web.

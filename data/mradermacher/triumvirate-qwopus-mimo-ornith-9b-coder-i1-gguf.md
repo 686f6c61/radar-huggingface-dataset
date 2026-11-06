@@ -22,7 +22,7 @@ La relevancia practica de esta ficha es que el repositorio de mradermacher ofrec
 | Formato de pesos | GGUF (el modelo base se distribuye en safetensors; el repositorio GGUF ocupa 27,6 GB en total) |
 | Autor de la cuantizacion | mradermacher |
 | Modelo base | pragmaticcs/Triumvirate-Qwopus-MiMo-Ornith-9B-Coder |
-| Fecha de publicacion | 24 de septiembre de 2026 (creacion del repositorio segun HuggingFace) |
+| Fecha de publicacion | 24 de septiembre de 2026 (creacion del repositorio segun Hugging Face) |
 | Descargas y likes | 0 descargas y 0 likes en el momento de la consulta |
 
 ## Arquitectura y entrenamiento

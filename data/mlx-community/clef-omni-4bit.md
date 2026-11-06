@@ -100,7 +100,7 @@ La comparación se limita al ecosistema Clef-Omni y a la variante densa Clef-Fla
 
 ## Enlaces
 
-- Repositorio HuggingFace (4-bit): https://huggingface.co/mlx-community/clef-omni-4bit
+- Repositorio Hugging Face (4-bit): https://huggingface.co/mlx-community/clef-omni-4bit
 - Variante 8-bit: https://huggingface.co/mlx-community/clef-omni-8bit
 - Modelo base Cloudflare/clef-omni: https://huggingface.co/Cloudflare/clef-omni
 - MLX (framework, GitHub): https://github.com/ml-explore/mlx

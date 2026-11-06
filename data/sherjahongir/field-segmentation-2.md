@@ -64,7 +64,7 @@ No disponible. Al carecer de información sobre arquitectura, parámetros y rend
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sherjahongir/field-segmentation-2
+- Repositorio Hugging Face: https://huggingface.co/sherjahongir/field-segmentation-2
 - Dataset Borderoffield (Ultralytics): https://platform.ultralytics.com/sherjahongir-tursunmurodov/datasets/borderoffield
 - Dataset Dala Field (Ultralytics): https://platform.ultralytics.com/sherjahongir-tursunmurodov/datasets/dala-field
 - Tutorial de detección de límites de campos con SAM2: https://towardsdatascience.com/field-boundary-detection-in-satellite-imagery-using-the-sam2-model-b556aa97bf7a/

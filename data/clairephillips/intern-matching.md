@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`clairephillips/intern-matching` es un repositorio de HuggingFace con una implementacion propia de la arquitectura EfficientFormer aplicada a una tarea de "matching" (emparejamiento), publicada bajo licencia MIT. El repositorio no contiene un modelo entrenado: el archivo `model.safetensors` se describe explicitamente en su model card como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un checkpoint con entrenamiento completado ni evaluado. El peso total declarado en safetensors es de 16.576 parametros, un orden de magnitud propio de un script de ejemplo o de una cabeza de emparejamiento, no de un modelo de lenguaje de proposito general.
+`clairephillips/intern-matching` es un repositorio de Hugging Face con una implementacion propia de la arquitectura EfficientFormer aplicada a una tarea de "matching" (emparejamiento), publicada bajo licencia MIT. El repositorio no contiene un modelo entrenado: el archivo `model.safetensors` se describe explicitamente en su model card como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un checkpoint con entrenamiento completado ni evaluado. El peso total declarado en safetensors es de 16.576 parametros, un orden de magnitud propio de un script de ejemplo o de una cabeza de emparejamiento, no de un modelo de lenguaje de proposito general.
 
 El autor declara una configuracion "large" de EfficientFormer con atencion flash, fusion tipo Tucker, activacion Mish y normalizacion RMSNorm, ademas de una receta de experimento por defecto con optimizador Lion y scheduler exponencial. La model card insiste en varios puntos: no se reclama ninguna puntuacion de benchmark, la implementacion es experimental y cualquier resultado futuro deberia documentarse por separado de los valores por defecto aqui incluidos.
 
@@ -47,7 +47,7 @@ No hay informacion sobre datos de entrenamiento: no se indica numero de tokens, 
 - Linea base de capacidad minima: util como baseline de muy baja capacidad para contrastar modelos mas grandes en tareas de matching, siguiendo la recomendacion de la propia model card.
 - Estudio de bloques EfficientFormer: sirve para analizar el comportamiento de atencion flash, fusion Tucker, Mish y RMSNorm en una implementacion concreta.
 - Docencia y aprendizaje: el codigo transparente y el ejemplo ejecutable lo hacen adecuado para explicar como se monta una tarea de emparejamiento sobre una columna vertebral de vision.
-- Experimentacion con tokens de HuggingFace: dado que no requiere `pipeline` ni clases de transformers estandar, es un caso de estudio sobre implementaciones personalizadas y adaptadores explicitos.
+- Experimentacion con tokens de Hugging Face: dado que no requiere `pipeline` ni clases de transformers estandar, es un caso de estudio sobre implementaciones personalizadas y adaptadores explicitos.
 
 En ningun caso estos usos implican resultados de calidad predictiva: el checkpoint no ha sido entrenado.
 
@@ -81,5 +81,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/clairephillips/intern-matching
+- Hugging Face: https://huggingface.co/clairephillips/intern-matching
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en los resultados de busqueda web disponibles.

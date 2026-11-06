@@ -90,7 +90,7 @@ Nota: los datos de Qwen3-235B-A22B y Mixtral 8x22B son orientativos y no han sid
 
 ## Enlaces
 
-- Pack en HuggingFace: https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-4bit
+- Pack en Hugging Face: https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Documentacion de unsloth: https://unsloth.ai/docs/models/qwen3.8-next
 - Recetas vLLM: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next

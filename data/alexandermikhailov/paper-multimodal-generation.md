@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`alexandermikhailov/paper-multimodal-generation` es un repositorio alojado en HuggingFace que, pese a estar etiquetado con `transformer` y `safetensors`, no contiene un modelo entrenado ni pesos utilizables para inferencia. Según su propia model card, se trata de un conjunto estructurado de notas de investigación sobre generación multimodal, con dos únicos artefactos documentales: `reading.md` (nota principal) y `README.md`. El autor declara explícitamente que el repositorio «no reclama mejoras de benchmark, ablaciones completadas, código liberado ni un checkpoint entrenado».
+`alexandermikhailov/paper-multimodal-generation` es un repositorio alojado en Hugging Face que, pese a estar etiquetado con `transformer` y `safetensors`, no contiene un modelo entrenado ni pesos utilizables para inferencia. Según su propia model card, se trata de un conjunto estructurado de notas de investigación sobre generación multimodal, con dos únicos artefactos documentales: `reading.md` (nota principal) y `README.md`. El autor declara explícitamente que el repositorio «no reclama mejoras de benchmark, ablaciones completadas, código liberado ni un checkpoint entrenado».
 
 El dato de parámetros totales reportado por los metadatos de safetensors es de 24.832, una cifra que en cualquier codificación habitual (fp32, fp16 o bf16) equivale a decenas de kilobytes. Esto es coherente con el tamaño declarado del repositorio (0,0 GB) y confirma que no existe un modelo funcional: un transformer de ese orden de magnitud no puede generar texto coherente ni ejecutar tareas multimodales. El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado el mismo día (13 de septiembre de 2026, con 6 segundos de diferencia), lo que sugiere una subida automatizada o de prueba.
 
-La relevancia de esta ficha es, por tanto, fundamentalmente correctiva: sirve para evitar que un consumidor de HuggingFace interprete las etiquetas `transformer` y `safetensors` como indicios de un modelo desplegable. El valor real del repositorio es documental: una nota exploratoria sobre el alcance de una pregunta de investigación en generación multimodal, confundidores probables, comparaciones propuestas con líneas base emparejadas y preguntas abiertas.
+La relevancia de esta ficha es, por tanto, fundamentalmente correctiva: sirve para evitar que un consumidor de Hugging Face interprete las etiquetas `transformer` y `safetensors` como indicios de un modelo desplegable. El valor real del repositorio es documental: una nota exploratoria sobre el alcance de una pregunta de investigación en generación multimodal, confundidores probables, comparaciones propuestas con líneas base emparejadas y preguntas abiertas.
 
 ## Especificaciones tecnicas
 
@@ -52,7 +52,7 @@ Lo que sí documenta el repositorio es un plan de investigación, no un entrenam
 - Diseño de un protocolo de evaluación comparativa: la nota propone una comparación con líneas base emparejadas y nombra benchmarks públicos, lo que ayuda a fijar criterios de comparación justa antes de ejecutar experimentos.
 - Material docente para seminarios sobre evaluación de modelos generativos: permite discutir con estudiantes la diferencia entre una hipótesis documentada y un resultado experimental verificado.
 - Revisión crítica de literatura: un revisor o lector puede usar la estructura del documento para comprobar qué afirmaciones están respaldadas y cuáles siguen siendo conjeturas, evitando citar como resultados lo que son planes.
-- Auditoría de repositorios de HuggingFace: este repositorio es un caso útil para ilustrar cómo las etiquetas de metadatos (`transformer`, `safetensors`) pueden no corresponder a un modelo entrenado, y por qué conviene leer la model card antes de integrar cualquier artefacto en un pipeline.
+- Auditoría de repositorios de Hugging Face: este repositorio es un caso útil para ilustrar cómo las etiquetas de metadatos (`transformer`, `safetensors`) pueden no corresponder a un modelo entrenado, y por qué conviene leer la model card antes de integrar cualquier artefacto en un pipeline.
 
 ## Benchmarks y rendimiento
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es un modelo, por lo que no existe una categoría de modelos comparables en términos de parámetros, contexto, rendimiento o licencia. La comparación pertinente sería con otros repositorios de notas de investigación en HuggingFace, pero no se ha proporcionado información sobre ninguno de ellos.
+No disponible. Este repositorio no es un modelo, por lo que no existe una categoría de modelos comparables en términos de parámetros, contexto, rendimiento o licencia. La comparación pertinente sería con otros repositorios de notas de investigación en Hugging Face, pero no se ha proporcionado información sobre ninguno de ellos.
 
 | Criterio | Este repositorio | Modelo comparable |
 |---|---|---|
@@ -95,7 +95,7 @@ No disponible. Este repositorio no es un modelo, por lo que no existe una catego
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexandermikhailov/paper-multimodal-generation
+- Repositorio en Hugging Face: https://huggingface.co/alexandermikhailov/paper-multimodal-generation
 - Fichero principal de la nota: `reading.md` (dentro del repositorio)
 - Documentación: `README.md` (dentro del repositorio)
 - Los resultados de la búsqueda web proporcionada no contienen ningún enlace relacionado con este repositorio ni con generación multimodal: son hilos de foro de la comunidad de Orange sobre problemas de acceso al correo electrónico (communaute.orange.fr y forums.commentcamarche.net), sin relación con el modelo. No se han encontrado papers, blogs, repositorios de código ni demos asociados.

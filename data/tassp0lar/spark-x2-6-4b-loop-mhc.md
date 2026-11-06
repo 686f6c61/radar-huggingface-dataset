@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Spark-X2.6-4B-Loop-mHC | 4,11B | hasta 1M (declarado) | Apache 2.0 | HuggingFace, repo de 8,4 GB | Recursion + MoE-Engram; sin benchmarks estandar publicados |
-| XHToken/Spark-X2.6-4B (base) | 4B (no confirmado) | no disponible | no disponible | HuggingFace | Backbone de 36 capas sin recursion ni engrams |
-| TassP0lar/Spark-X2.6-4B-Loop-mHC-R24 | no disponible | no disponible | Apache 2.0 (segun tag) | HuggingFace | Checkpoint previo del que deriva este merged |
+| Spark-X2.6-4B-Loop-mHC | 4,11B | hasta 1M (declarado) | Apache 2.0 | Hugging Face, repo de 8,4 GB | Recursion + MoE-Engram; sin benchmarks estandar publicados |
+| XHToken/Spark-X2.6-4B (base) | 4B (no confirmado) | no disponible | no disponible | Hugging Face | Backbone de 36 capas sin recursion ni engrams |
+| TassP0lar/Spark-X2.6-4B-Loop-mHC-R24 | no disponible | no disponible | Apache 2.0 (segun tag) | Hugging Face | Checkpoint previo del que deriva este merged |
 
 No se dispone de datos de benchmarks comparables con alternativas de la misma categoria en la informacion proporcionada.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparables con alternativas de la misma ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TassP0lar/Spark-X2.6-4B-Loop-mHC
+- Hugging Face: https://huggingface.co/TassP0lar/Spark-X2.6-4B-Loop-mHC
 - Checkpoint previo: https://huggingface.co/TassP0lar/Spark-X2.6-4B-Loop-mHC-R24
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Repositorio GitHub: https://github.com/BaiTian6641/Spark-X2.6-Recursion

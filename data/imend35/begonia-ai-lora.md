@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Begonia-AI-LoRA es un adaptador LoRA publicado en HuggingFace por el usuario imend35 bajo el identificador `imend35/Begonia-AI-LoRA`. Se trata de un ajuste fino supervisado (SFT) mediante la librería TRL sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct, empaquetado con PEFT 0.21.2 y orientado a generación de texto conversacional. El repositorio contiene únicamente los pesos del adaptador (0,1 GB), no el modelo completo, por lo que su uso exige descargar por separado el modelo base de 1,5 mil millones de parámetros.
+Begonia-AI-LoRA es un adaptador LoRA publicado en Hugging Face por el usuario imend35 bajo el identificador `imend35/Begonia-AI-LoRA`. Se trata de un ajuste fino supervisado (SFT) mediante la librería TRL sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct, empaquetado con PEFT 0.21.2 y orientado a generación de texto conversacional. El repositorio contiene únicamente los pesos del adaptador (0,1 GB), no el modelo completo, por lo que su uso exige descargar por separado el modelo base de 1,5 mil millones de parámetros.
 
-La relevancia de la ficha es limitada y conviene decirlo con claridad: la model card es la plantilla por defecto de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]". No se documentan datos de entrenamiento, hiperparámetros del LoRA (rango, alpha, módulos objetivo), idiomas, licencia ni resultados de evaluación. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y la búsqueda web no devuelve ningún resultado relacionado con el modelo.
+La relevancia de la ficha es limitada y conviene decirlo con claridad: la model card es la plantilla por defecto de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]". No se documentan datos de entrenamiento, hiperparámetros del LoRA (rango, alpha, módulos objetivo), idiomas, licencia ni resultados de evaluación. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y la búsqueda web no devuelve ningún resultado relacionado con el modelo.
 
 Por tanto, esta ficha describe con rigor lo que se puede afirmar (naturaleza del artefacto, base sobre la que se construye y implicaciones prácticas) y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier uso en producción debería ir precedido de una evaluación propia del adaptador frente al modelo base sin ajustar.
 
@@ -94,7 +94,7 @@ Las cifras de los modelos comparativos provienen de su documentación pública; 
 - Contexto no confirmado: la ventana efectiva tras el SFT no está documentada; un ajuste con secuencias cortas puede degradar el uso de contextos largos.
 - Sin validación comunitaria: 0 descargas y 0 "likes" implican ausencia de retroalimentación; no debe asumirse que funciona según lo esperado.
 - Dependencia del base: el adaptador no es autónomo; requiere descargar Qwen2.5-1.5B-Instruct y respetar su licencia y sus propios términos.
-- Fechas del repositorio: la creación se registra en 2026-10-18, dato a verificar en la interfaz de HuggingFace antes de citarlo.
+- Fechas del repositorio: la creación se registra en 2026-10-18, dato a verificar en la interfaz de Hugging Face antes de citarlo.
 
 ## Enlaces
 

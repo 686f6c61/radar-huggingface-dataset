@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`johnchr88/contrastive` es un repositorio experimental publicado en HuggingFace por el usuario Christopher Johnson (johnchr88) que contiene una implementación funcional de la arquitectura Blip (Bootstrapping Language-Image Pre-training) orientada a objetivos contrastivos, con una configuración declarada como "large". El repositorio incluye el código del modelo (`model.py`), el fichero de configuración arquitectónica (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en formato `safetensors`.
+`johnchr88/contrastive` es un repositorio experimental publicado en Hugging Face por el usuario Christopher Johnson (johnchr88) que contiene una implementación funcional de la arquitectura Blip (Bootstrapping Language-Image Pre-training) orientada a objetivos contrastivos, con una configuración declarada como "large". El repositorio incluye el código del modelo (`model.py`), el fichero de configuración arquitectónica (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en formato `safetensors`.
 
 Es importante entender qué es y qué no es este artefacto: la propia model card indica de forma explícita que el checkpoint no ha sido entrenado ni auditado, y que se proporciona como punto de partida válido para pruebas de humo (smoke tests) y experimentos reproducibles. No se reclama ninguna puntuación de benchmark. El recuento real de parámetros del fichero `safetensors` es de 49.600 (aproximadamente 0,0496 millones), una cifra que contrasta con la etiqueta "large" de la configuración incluida y que confirma que se trata de una inicialización, no de un modelo con capacidad predictiva real.
 
@@ -46,7 +46,7 @@ No hay informacion disponible sobre el volumen de tokens de entrenamiento, la co
 - Al ser una implementacion personalizada de Blip con objetivo contrastivo, su uso previsto es la experimentacion con representaciones vision-lenguaje, no la generacion de texto.
 - No hay soporte documentado de tool calling ni de function calling.
 - No hay soporte documentado de agentes ni de razonamiento multi-paso.
-- No hay informacion sobre capacidades multilingues: el campo de idiomas no esta disponible en la model card ni en la ficha de HuggingFace.
+- No hay informacion sobre capacidades multilingues: el campo de idiomas no esta disponible en la model card ni en la ficha de Hugging Face.
 - No se declaran modos especiales (thinking mode, vision, audio) mas alla del propio caracter vision-lenguaje implicito en la arquitectura Blip.
 - La model card advierte que, al tratarse de una implementacion personalizada, las API automaticas de carga generica (por ejemplo, `AutoModel`) requieren un adaptador explicito antes de poder usarse.
 
@@ -98,7 +98,7 @@ La comparacion directa no es significativa: el artefacto analizado no es un mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/johnchr88/contrastive
+- Modelo en Hugging Face: https://huggingface.co/johnchr88/contrastive
 - Perfil del autor: https://huggingface.co/johnchr88
 - Datasets del autor: https://huggingface.co/johnchr88/datasets
 - La busqueda web realizada no ha devuelto papers, blogs o repositorios especificos sobre este modelo. Las referencias encontradas (articulos genericos sobre aprendizaje contrastivo y noticias sobre modelos contrastivos de terceros) no estan vinculadas a `johnchr88/contrastive` y no se incluyen como documentacion del mismo.

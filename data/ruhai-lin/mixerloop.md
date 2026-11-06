@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MixerLoop es un repositorio de pesos publicado por el usuario ruhai-lin en HuggingFace que agrupa checkpoints canónicos de dos familias de arquitecturas: Gated DeltaNet (GDN) y MixerLoop, esta última presumiblemente una variante con mecanismos de mezcla y recurrencia. El repositorio no contiene un único modelo entrenado, sino una colección organizada por arquitectura, conjunto de datos, presupuesto de tokens procesados y semilla de entrenamiento. Según la model card, los directorios que solo contienen un fichero `.gitkeep` son experimentos planificados y no modelos disponibles.
+MixerLoop es un repositorio de pesos publicado por el usuario ruhai-lin en Hugging Face que agrupa checkpoints canónicos de dos familias de arquitecturas: Gated DeltaNet (GDN) y MixerLoop, esta última presumiblemente una variante con mecanismos de mezcla y recurrencia. El repositorio no contiene un único modelo entrenado, sino una colección organizada por arquitectura, conjunto de datos, presupuesto de tokens procesados y semilla de entrenamiento. Según la model card, los directorios que solo contienen un fichero `.gitkeep` son experimentos planificados y no modelos disponibles.
 
 El interés del proyecto es fundamentalmente de investigación: se trata de modelos muy pequeños (13M y 100M parámetros) entrenados sobre ClimbMix con presupuestos de 1.000 millones y 10.000 millones de tokens procesados, respectivamente, y evaluados con el conjunto canónico de 22 tareas Karpathy CORE más el agregado Core_v2. Es material útil para estudiar el comportamiento de arquitecturas alternativas al transformer estándar (atención lineal y familias recurrentes) en escalas pequeñas y con protocolos de evaluación reproducibles.
 
@@ -72,9 +72,9 @@ Consideración importante: el repositorio completo ocupa 6,9 GB, pero la descarg
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MixerLoop-100m | 100.447.266 | 1.024 (documentado en primera tanda) | no disponible | HuggingFace, requiere FLA + registro propio | Arquitectura MixerLoop |
-| GDN-100m | 100.444.194 | 1.024 (documentado en primera tanda) | no disponible | HuggingFace, requiere FLA + registro propio | Control arquitectónico del mismo repositorio, misma semilla |
-| MixerLoop-13m | 12.896.380 | 1.024 (documentado en primera tanda) | no disponible | HuggingFace, requiere FLA + registro propio | Escala menor para estudios de escalado |
+| MixerLoop-100m | 100.447.266 | 1.024 (documentado en primera tanda) | no disponible | Hugging Face, requiere FLA + registro propio | Arquitectura MixerLoop |
+| GDN-100m | 100.444.194 | 1.024 (documentado en primera tanda) | no disponible | Hugging Face, requiere FLA + registro propio | Control arquitectónico del mismo repositorio, misma semilla |
+| MixerLoop-13m | 12.896.380 | 1.024 (documentado en primera tanda) | no disponible | Hugging Face, requiere FLA + registro propio | Escala menor para estudios de escalado |
 | Alternativas de tamaño comparable (por ejemplo modelos de ~100M tipo GPT-2 small o Pythia-160M) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | No se aportan datos de comparación en la información disponible |
 
 El único contraste documentado con garantías es interno: GDN-100m frente a MixerLoop-100m, que comparten presupuesto de tokens y semilla, lo que los convierte en el par de comparación natural para evaluar la contribución de la arquitectura.
@@ -94,8 +94,8 @@ El único contraste documentado con garantías es interno: GDN-100m frente a Mix
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ruhai-lin/MixerLoop
+- Repositorio en Hugging Face: https://huggingface.co/ruhai-lin/MixerLoop
 - Repositorio de código MixerLoop (commit de referencia): https://github.com/ruhai-lin/MixerLoop/tree/24b6a9237c1220c39358b0987341596bdcf3926c
-- Resultados de evaluación: `eval/core_eval.csv` dentro del repositorio de HuggingFace
-- Resultados históricos: directorio `legacy/` dentro del repositorio de HuggingFace
+- Resultados de evaluación: `eval/core_eval.csv` dentro del repositorio de Hugging Face
+- Resultados históricos: directorio `legacy/` dentro del repositorio de Hugging Face
 - Paper, blog o demo adicionales: no disponible en la información proporcionada

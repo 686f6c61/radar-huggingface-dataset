@@ -100,7 +100,7 @@ La comparativa se limita a la familia Whisper porque no se dispone de datos de b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/merkelmarrow/whisper-tiny-chinese_english-ft1
+- Modelo en Hugging Face: https://huggingface.co/merkelmarrow/whisper-tiny-chinese_english-ft1
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de entrenamiento: https://huggingface.co/datasets/naharte/chinese_english
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

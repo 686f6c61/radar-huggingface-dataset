@@ -79,7 +79,7 @@ Los datos de rendimiento comparativo no estan disponibles en la informacion prop
 
 ## Enlaces
 
-- [HuggingFace: VoragoStudios/gct-opus-mt-tc-big-en-pt-ct2](https://huggingface.co/VoragoStudios/gct-opus-mt-tc-big-en-pt-ct2)
+- [Hugging Face: VoragoStudios/gct-opus-mt-tc-big-en-pt-ct2](https://huggingface.co/VoragoStudios/gct-opus-mt-tc-big-en-pt-ct2)
 - [Modelo base: Helsinki-NLP/opus-mt-tc-big-en-pt](https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-en-pt)
 - [Proyecto OPUS-MT (Helsinki-NLP)](https://github.com/Helsinki-NLP/Opus-MT)
 - [CTranslate2](https://github.com/OpenNMT/CTranslate2)

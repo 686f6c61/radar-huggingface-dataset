@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nm-testing/fp4_nvfp4a16-e2e` es un artefacto publicado en HuggingFace por la cuenta `nm-testing`, que parece ser una cuenta de pruebas y evaluación de modelos comprimidos. El nombre del repositorio sugiere que se trata de un modelo de la familia Llama cuantizado en formato FP4 con activaciones FP16 (NVFP4-A16), una técnica de compresión de precisión mixta desarrollada por NVIDIA para acelerar la inferencia en GPUs compatibles con FP4. Los tags confirman el uso de `compressed-tensors`, una librería de compresión de modelos, y la etiqueta `8-bit`, aunque el formato real parece ser FP4.
+El modelo `nm-testing/fp4_nvfp4a16-e2e` es un artefacto publicado en Hugging Face por la cuenta `nm-testing`, que parece ser una cuenta de pruebas y evaluación de modelos comprimidos. El nombre del repositorio sugiere que se trata de un modelo de la familia Llama cuantizado en formato FP4 con activaciones FP16 (NVFP4-A16), una técnica de compresión de precisión mixta desarrollada por NVIDIA para acelerar la inferencia en GPUs compatibles con FP4. Los tags confirman el uso de `compressed-tensors`, una librería de compresión de modelos, y la etiqueta `8-bit`, aunque el formato real parece ser FP4.
 
 El modelo tiene aproximadamente 1.100 millones de parámetros (1.1B), lo que lo sitúa en la categoría de modelos pequeños, adecuados para despliegue en entornos con recursos limitados. El tamaño del repositorio es de 2.4 GB, consistente con pesos cuantizados en FP4 (un modelo de 1.1B en FP16 ocuparía alrededor de 2.2 GB, pero con FP4 el tamaño debería ser menor; el tamaño del repo puede incluir archivos adicionales). No se dispone de información sobre la arquitectura exacta, la licencia, los idiomas soportados ni el contexto, por lo que esta ficha se basa únicamente en los datos públicos del repositorio.
 
@@ -79,4 +79,4 @@ No se dispone de datos suficientes para una comparativa rigurosa. Al ser un mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nm-testing/fp4_nvfp4a16-e2e
+- Repositorio Hugging Face: https://huggingface.co/nm-testing/fp4_nvfp4a16-e2e

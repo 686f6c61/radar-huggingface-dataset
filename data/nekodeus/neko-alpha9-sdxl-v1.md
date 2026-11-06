@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Nekodeus/neko-alpha9-sdxl-v1 | LoRA de personaje | SDXL 1.0 | dim 8/16 | no aplica | Apache 2.0 | HuggingFace |
-| Nekodeus/neko-hollywood-alpha-sdxl-v1 | LoRA de personaje (serie Hollywood) | SDXL 1.0 | no disponible | no aplica | no disponible | HuggingFace |
-| Nekodeus/neko-hollywood-alpha-sd15-v1 | LoRA de personaje (serie Hollywood) | SD 1.5 | no disponible | no aplica | no disponible | HuggingFace |
+| Nekodeus/neko-alpha9-sdxl-v1 | LoRA de personaje | SDXL 1.0 | dim 8/16 | no aplica | Apache 2.0 | Hugging Face |
+| Nekodeus/neko-hollywood-alpha-sdxl-v1 | LoRA de personaje (serie Hollywood) | SDXL 1.0 | no disponible | no aplica | no disponible | Hugging Face |
+| Nekodeus/neko-hollywood-alpha-sd15-v1 | LoRA de personaje (serie Hollywood) | SD 1.5 | no disponible | no aplica | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks ni de comparativas cuantitativas con otras LoRAs de personaje en la información proporcionada.
 
@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks ni de comparativas cuantitativas con otras 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nekodeus/neko-alpha9-sdxl-v1
+- Hugging Face: https://huggingface.co/Nekodeus/neko-alpha9-sdxl-v1
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Dataset de entrenamiento: https://huggingface.co/nekodeus/alpha9-timothee-chalamet
 - Serie Hollywood SD1.5: https://huggingface.co/Nekodeus/neko-hollywood-alpha-sd15-v1

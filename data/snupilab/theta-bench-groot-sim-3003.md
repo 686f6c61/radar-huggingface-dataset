@@ -70,8 +70,8 @@ No se dispone de datos verificables de parámetros, contexto, rendimiento o lice
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| snupilab/theta-bench-groot-sim-3003 | 3.144.016.000 | no disponible | no disponible | HuggingFace |
-| nvidia/Cosmos-Reason2-2B (backbone referenciado) | no disponible | no disponible | no disponible | HuggingFace, revisión 9ce19a195e423419c349abfc86fd07178b230561 |
+| snupilab/theta-bench-groot-sim-3003 | 3.144.016.000 | no disponible | no disponible | Hugging Face |
+| nvidia/Cosmos-Reason2-2B (backbone referenciado) | no disponible | no disponible | no disponible | Hugging Face, revisión 9ce19a195e423419c349abfc86fd07178b230561 |
 | Familia NVIDIA GR00T N1.7 (referencia upstream) | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone de datos verificables de parámetros, contexto, rendimiento o lice
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/snupilab/theta-bench-groot-sim-3003
+- Modelo en Hugging Face: https://huggingface.co/snupilab/theta-bench-groot-sim-3003
 - Dataset de teleoperación: https://huggingface.co/datasets/snupilab/theta-bench-teleop
 - Datos de entrenamiento fijados por revisión: https://huggingface.co/datasets/snupilab/theta-bench-teleop/tree/8b2cd31e107b64cb13f812ea217a63a20845c78a/raw
 - Backbone requerido (revisión fijada): https://huggingface.co/nvidia/Cosmos-Reason2-2B/tree/9ce19a195e423419c349abfc86fd07178b230561

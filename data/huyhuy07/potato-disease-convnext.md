@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huyhuy07/potato-disease-convnext
+- Modelo en Hugging Face: https://huggingface.co/huyhuy07/potato-disease-convnext
 - Colección completa de 44 modelos: https://huggingface.co/collections/ixrbhii/multi-crop-disease-models-42-crops-6ac0a3291f2153fa716e2993
 - Repositorio agregado de los 44 modelos: https://huggingface.co/ixrbhii/multicrop-disease-models
 - Dataset de síntomas, tratamientos y plagas: https://huggingface.co/datasets/ixrbhii/crop-disease-qa

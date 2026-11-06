@@ -87,7 +87,7 @@ Frente al modelo base, esta conversión sacrifica algo de expresividad a cambio 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ronbakker/chatterbox-nano-int4-int8-coreai
+- Repositorio en Hugging Face: https://huggingface.co/ronbakker/chatterbox-nano-int4-int8-coreai
 - Modelo base (Resemble AI Chatterbox Nano): https://huggingface.co/ResembleAI/chatterbox-nano
 - Documentación de integración: INTEGRATION.md (en el repositorio)
 - Especificación de formatos de pesos: weight-formats.json (en el repositorio)

@@ -112,7 +112,7 @@ Solo la comparación con Supertonic 3 procede de la información proporcionada p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Superclonica/superclonica
+- Modelo en Hugging Face: https://huggingface.co/Superclonica/superclonica
 - Modelo base Supertonic 3: https://huggingface.co/Supertone/supertonic-3
 - Demo online con voces gratuitas: https://huggingface.co/spaces/Superclonica/superclonica-tts
 - Voces gratuitas en GitHub: https://github.com/superclonica/supertonic-voices

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-0.6B-Math-Surgery-v1 es un modelo derivado de Qwen/Qwen3-0.6B, publicado por el usuario zerolimites en HuggingFace, en el que se ha aplicado una intervencion sobre los pesos ("weight surgery") para mejorar el razonamiento matematico exacto sin reentrenamiento completo. La tecnica empleada, segun la model card, combina una "proyeccion ortogonal de verbosidad" (Orthogonal Verbosity Projection) con una edicion de conocimiento basada en MEMIT con espacio nulo multiposicion (Multi-Position Null-Space MEMIT). El resultado es un modelo de 751.632.384 parametros totales (segun safetensors) que mantiene la arquitectura original de Qwen3-0.6B.
+Qwen3-0.6B-Math-Surgery-v1 es un modelo derivado de Qwen/Qwen3-0.6B, publicado por el usuario zerolimites en Hugging Face, en el que se ha aplicado una intervencion sobre los pesos ("weight surgery") para mejorar el razonamiento matematico exacto sin reentrenamiento completo. La tecnica empleada, segun la model card, combina una "proyeccion ortogonal de verbosidad" (Orthogonal Verbosity Projection) con una edicion de conocimiento basada en MEMIT con espacio nulo multiposicion (Multi-Position Null-Space MEMIT). El resultado es un modelo de 751.632.384 parametros totales (segun safetensors) que mantiene la arquitectura original de Qwen3-0.6B.
 
 El modelo se distribuye tanto en formato safetensors (bfloat16, 1,51 GB) como en GGUF cuantizado Q8_0 (804 MB) y F16 (1,51 GB), ademas de un Modelfile para Ollama. La licencia es Apache 2.0, heredada del modelo base. Los idiomas declarados son ingles y portugues, lo que limita su uso directo en castellano sin evaluacion adicional.
 
@@ -65,15 +65,15 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, GSM8K, HumanE
 - VRAM estimada para inferencia: aproximadamente 1,6-2 GB en bfloat16/F16 y en torno a 1 GB en Q8_0, incluyendo overhead de runtime.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060, RTX 4090); tambien funciona en CPU.
 - Cabe holgadamente en GPU consumer y en sistemas integrados; el GGUF Q8_0 de 804 MB es apto para equipos con poca memoria.
-- Opciones de despliegue: llama.cpp, Ollama (Modelfile incluido), LM Studio, y servidores compatibles con endpoints de HuggingFace (tag endpoints_compatible). vLLM y TGI no estan confirmados en la informacion disponible.
+- Opciones de despliegue: llama.cpp, Ollama (Modelfile incluido), LM Studio, y servidores compatibles con endpoints de Hugging Face (tag endpoints_compatible). vLLM y TGI no estan confirmados en la informacion disponible.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-0.6B-Math-Surgery-v1 | 751.632.384 | no disponible | 73,33% en benchmark propio (30 problemas) | Apache 2.0 | HuggingFace (safetensors + GGUF) |
-| Qwen/Qwen3-0.6B (base) | ~0,6B | no disponible | 43,33% en el mismo benchmark | Apache 2.0 | HuggingFace |
+| Qwen3-0.6B-Math-Surgery-v1 | 751.632.384 | no disponible | 73,33% en benchmark propio (30 problemas) | Apache 2.0 | Hugging Face (safetensors + GGUF) |
+| Qwen/Qwen3-0.6B (base) | ~0,6B | no disponible | 43,33% en el mismo benchmark | Apache 2.0 | Hugging Face |
 | Qwen3-0.6B-Math-Surgery-v2 (final) | ~0,6B | no disponible | 76,67% en el mismo benchmark | Apache 2.0 | Referenciado en la model card; disponibilidad no confirmada |
 
 No se dispone de comparaciones con otros modelos matematicos de tamano similar (por ejemplo, variantes especializadas de Qwen2.5-Math o Gemma) en la informacion proporcionada.
@@ -91,6 +91,6 @@ No se dispone de comparaciones con otros modelos matematicos de tamano similar (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zerolimites/Qwen3-0.6B-Math-Surgery-v1
+- Hugging Face: https://huggingface.co/zerolimites/Qwen3-0.6B-Math-Surgery-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo.

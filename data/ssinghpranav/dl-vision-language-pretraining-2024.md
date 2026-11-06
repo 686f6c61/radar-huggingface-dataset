@@ -65,9 +65,9 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ssinghpranav/dl-vision-language-pretraining-2024
+- Repositorio en Hugging Face: https://huggingface.co/Ssinghpranav/dl-vision-language-pretraining-2024
 - Encuesta de modelos visión-lenguaje (GitHub): https://github.com/jingyi0000/VLM_survey
-- Blog de HuggingFace sobre VLM: https://huggingface.co/blog/vlms
+- Blog de Hugging Face sobre VLM: https://huggingface.co/blog/vlms
 - Artículo sobre pretraining eficiente dominio-específico (ACL Anthology): https://aclanthology.org/2024.emnlp-main.454/
 - Acceso abierto de Computer Vision Foundation: https://openaccess.thecvf.com/
 - Perfil de Google Scholar del autor (Pranav Singh): https://scholar.google.com/citations?user=E-XLP1gAAAAJ&hl=en

@@ -75,9 +75,9 @@ No se dispone de especificaciones detalladas de modelos comparables en la misma 
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vela 2.0 0.3B | modelo actual | 309.114.369 | 8.192 tokens | Apache 2.0 | HuggingFace (vllm-sr/Vela-2.0-0.3B) |
-| Vela 1.0 Encoder 307M | modelo base | ~307M (segun nombre) | no disponible | no disponible | HuggingFace (vllm-sr/Vela-1.0-Encoder-307M) |
-| Decision 1.0 Kai 0.6B | modelo base | ~0.6B (segun nombre) | no disponible | no disponible | HuggingFace (vllm-sr/Decision-1.0-Kai-0.6B) |
+| Vela 2.0 0.3B | modelo actual | 309.114.369 | 8.192 tokens | Apache 2.0 | Hugging Face (vllm-sr/Vela-2.0-0.3B) |
+| Vela 1.0 Encoder 307M | modelo base | ~307M (segun nombre) | no disponible | no disponible | Hugging Face (vllm-sr/Vela-1.0-Encoder-307M) |
+| Decision 1.0 Kai 0.6B | modelo base | ~0.6B (segun nombre) | no disponible | no disponible | Hugging Face (vllm-sr/Decision-1.0-Kai-0.6B) |
 
 No se dispone de datos de rendimiento comparado entre estos modelos en la informacion proporcionada.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparado entre estos modelos en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vllm-sr/Vela-2.0-0.3B
+- Hugging Face: https://huggingface.co/vllm-sr/Vela-2.0-0.3B
 - Documentacion: https://vllm-sr.ai/
 - Blog de presentacion: https://vllm-sr.ai/blog/vela-2-0-open-foundation-routing-models
 - Repositorio GitHub (vLLM Semantic Router): https://github.com/vllm-project/semantic-router

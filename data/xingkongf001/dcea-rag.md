@@ -92,7 +92,7 @@ La comparacion relevante es frente a su modelo base: DCEA-RAG anade una cabecera
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xingkongf001/DCEA-RAG
+- Repositorio Hugging Face: https://huggingface.co/xingkongf001/DCEA-RAG
 - Codigo y resultados (ZIP): https://huggingface.co/xingkongf001/DCEA-RAG/resolve/main/downloads/DCEA_RAG_v18_code_results_mit.zip?download=true
 - Joint scorer (ZIP): https://huggingface.co/xingkongf001/DCEA-RAG/resolve/main/downloads/DCEA_RAG_v18_joint_model_mit.zip?download=true
 - Unary-only scorer (ZIP): https://huggingface.co/xingkongf001/DCEA-RAG/resolve/main/downloads/DCEA_RAG_v18_unary_model_mit.zip?download=true

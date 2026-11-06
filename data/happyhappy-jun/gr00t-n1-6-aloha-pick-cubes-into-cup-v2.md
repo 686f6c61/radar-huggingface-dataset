@@ -18,7 +18,7 @@ Es relevante ahora porque documenta de forma muy explícita una campaña de ajus
 | Longitud de contexto | No disponible. La entrada es multimodal (4 camaras a 240x424 mas estado de 14 dimensiones); no se especifica ventana de contexto |
 | Tipos de cuantizacion | No disponible. Se distribuyen pesos en safetensors; no se documentan versiones GGUF, AWQ ni GPTQ |
 | Idiomas soportados | No disponible. La unica instruccion de tarea documentada esta en ingles; no se declara soporte multilingue |
-| Licencia | NVIDIA Open Model License (`license: other` en HuggingFace), enlazada en la model card |
+| Licencia | NVIDIA Open Model License (`license: other` en Hugging Face), enlazada en la model card |
 | Formato de pesos | safetensors, acompanado de `config.json`, `aloha_config.py` (configuracion de modalidad en Python) y `modality.json` |
 | Tamano del repositorio | 72,3 GB (incluye checkpoints de ambas variantes) |
 | Dimension de estado/accion | 14 dimensiones: right_arm 0:6, right_gripper 6:7, left_arm 7:13, left_gripper 13:14 |
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Frecuencia / horizonte | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup-v2` | 3B (base) | 50 Hz/H50 y 25 Hz/H32 | Pick two blue cubes into the cup (ALOHA) | NVIDIA Open Model License | HuggingFace, 0 descargas, 0 likes |
-| `happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup` | 3B (base) | 50 Hz, H=32 | Misma tarea y robot | NVIDIA Open Model License | HuggingFace |
-| `happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup-15hz` | 3B (base) | 15 Hz, H=16 | Misma tarea y robot | NVIDIA Open Model License | HuggingFace |
-| `nvidia/GR00T-N1.6-3B` (modelo base) | 3B | No aplica (modelo fundacional) | Tareas generalistas de manipulacion condicionadas por lenguaje | NVIDIA Open Model License | HuggingFace |
+| `happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup-v2` | 3B (base) | 50 Hz/H50 y 25 Hz/H32 | Pick two blue cubes into the cup (ALOHA) | NVIDIA Open Model License | Hugging Face, 0 descargas, 0 likes |
+| `happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup` | 3B (base) | 50 Hz, H=32 | Misma tarea y robot | NVIDIA Open Model License | Hugging Face |
+| `happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup-15hz` | 3B (base) | 15 Hz, H=16 | Misma tarea y robot | NVIDIA Open Model License | Hugging Face |
+| `nvidia/GR00T-N1.6-3B` (modelo base) | 3B | No aplica (modelo fundacional) | Tareas generalistas de manipulacion condicionadas por lenguaje | NVIDIA Open Model License | Hugging Face |
 
 No se dispone de datos verificados en la informacion proporcionada para comparar con otras familias de modelos VLA (por ejemplo OpenVLA, pi0 o RDT): no disponible.
 
@@ -86,14 +86,14 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 - Riesgo de alucinacion de acciones: al ser una politica entrenada por imitacion, ante escenas fuera de distribucion puede generar trayectorias plausibles pero fisicamente erroneas, sin ninguna senal de incertidumbre.
 - Sesgos de datos: 68 episodios grabados en un unico entorno, con iluminacion, disposicion de camaras y posiciones iniciales concretas; la variabilidad de colores, fondos u objetos no esta cubierta.
 - Idiomas: no se declara soporte multilingue; la unica instruccion documentada esta en ingles y no se especifica como se comporta con instrucciones en castellano.
-- Licencia: NVIDIA Open Model License (categoria `other` en HuggingFace). Es imprescindible revisar sus terminos antes de cualquier uso comercial, ya que no es una licencia de codigo abierto estandar y puede imponer condiciones adicionales sobre el modelo derivado.
+- Licencia: NVIDIA Open Model License (categoria `other` en Hugging Face). Es imprescindible revisar sus terminos antes de cualquier uso comercial, ya que no es una licencia de codigo abierto estandar y puede imponer condiciones adicionales sobre el modelo derivado.
 - Repositorio de gran tamano (72,3 GB) y sin versiones cuantizadas publicadas; el despliegue en produccion exige gestionar almacenamiento y transferencia.
 - Adopcion nula: 0 descargas y 0 likes, sin issues ni validacion externa documentada.
 - Reputacion del artefacto: al ser un fine-tune de un tercero sin evaluacion publicada, conviene tratarlo como material de investigacion y no como componente listo para produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup-v2
+- Modelo en Hugging Face: https://huggingface.co/happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup-v2
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.6-3B
 - Campana previa (50 Hz, H=32): https://huggingface.co/happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup
 - Campana previa (15 Hz, H=16): https://huggingface.co/happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup-15hz

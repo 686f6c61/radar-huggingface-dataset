@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Cordseyps/generated-text-detector es un modelo de clasificación de texto publicado en HuggingFace por el usuario Cordseyps. Por sus etiquetas (`distilbert`, `text-classification`, `arxiv:1910.09700`) y por su recuento real de parámetros en safetensors (66.955.010), se corresponde con la arquitectura DistilBERT-base, el encoder destilado de BERT descrito en el paper de Sanh et al. (2019). Su nombre sugiere que está ajustado para detectar texto generado por máquinas, es decir, una tarea de clasificación binaria o multiclase sobre un fragmento de texto.
+Cordseyps/generated-text-detector es un modelo de clasificación de texto publicado en Hugging Face por el usuario Cordseyps. Por sus etiquetas (`distilbert`, `text-classification`, `arxiv:1910.09700`) y por su recuento real de parámetros en safetensors (66.955.010), se corresponde con la arquitectura DistilBERT-base, el encoder destilado de BERT descrito en el paper de Sanh et al. (2019). Su nombre sugiere que está ajustado para detectar texto generado por máquinas, es decir, una tarea de clasificación binaria o multiclase sobre un fragmento de texto.
 
-El modelo no presenta ninguna model card sustantiva: el README es la plantilla automática de HuggingFace con todos los campos marcados como "[More Information Needed]". No se documentan datos de entrenamiento, hiperparámetros, conjunto de evaluación, licencia ni idiomas soportados. Tampoco se han publicado resultados de benchmarks. El repositorio cuenta con 0 descargas y 0 "likes" en el momento de la consulta, y fue creado el 25 de septiembre de 2026.
+El modelo no presenta ninguna model card sustantiva: el README es la plantilla automática de Hugging Face con todos los campos marcados como "[More Information Needed]". No se documentan datos de entrenamiento, hiperparámetros, conjunto de evaluación, licencia ni idiomas soportados. Tampoco se han publicado resultados de benchmarks. El repositorio cuenta con 0 descargas y 0 "likes" en el momento de la consulta, y fue creado el 25 de septiembre de 2026.
 
 En consecuencia, esta ficha describe lo que puede inferirse de forma verificable (arquitectura, tamaño, formato de pesos y pipeline declarado) y marca explícitamente como "no disponible" todo lo demás. Cualquier uso en producción debería ir precedido de una validación propia, ya que no existe evidencia pública de que el ajuste fino se haya completado con datos etiquetados de calidad ni de su comportamiento real.
 
@@ -30,13 +30,13 @@ En consecuencia, esta ficha describe lo que puede inferirse de forma verificable
 
 La etiqueta `distilbert` y el recuento de pesos (66.955.010 parametros, cifra identica a la de `distilbert-base-uncased`) indican que se trata de un Transformer encoder de 6 capas con 768 dimensiones ocultas y 12 cabezas de atencion, derivado de BERT-base mediante destilacion de conocimiento, tal como se describe en el paper referenciado en las etiquetas (arxiv:1910.09700). La cabeza de clasificacion se anade sobre el token `[CLS]`. Se trata de un modelo exclusivamente encoder, sin capacidad generativa.
 
-No hay informacion alguna sobre el entrenamiento: ni el dataset utilizado, ni el numero de ejemplos, ni si se aplico un ajuste fino supervisado sobre pares de textos humanos y textos generados, ni la composicion del corpus (idioma, dominio, generadores cubiertos). Tampoco se documentan hiperparametros, regimen de precision ni si hubo una fase de validacion. El README es la plantilla automatica de HuggingFace sin rellenar. En consecuencia, no puede confirmarse ni la tarea exacta (binaria frente a multiclase), ni el numero de etiquetas de salida, ni el origen de los datos de entrenamiento.
+No hay informacion alguna sobre el entrenamiento: ni el dataset utilizado, ni el numero de ejemplos, ni si se aplico un ajuste fino supervisado sobre pares de textos humanos y textos generados, ni la composicion del corpus (idioma, dominio, generadores cubiertos). Tampoco se documentan hiperparametros, regimen de precision ni si hubo una fase de validacion. El README es la plantilla automatica de Hugging Face sin rellenar. En consecuencia, no puede confirmarse ni la tarea exacta (binaria frente a multiclase), ni el numero de etiquetas de salida, ni el origen de los datos de entrenamiento.
 
 ## Capacidades
 
 - Clasificacion de texto: el pipeline declarado es `text-classification`; la unica funcion prevista es asignar una etiqueta (probablemente "generado por maquina" frente a "escrito por humano") a un texto de entrada.
 - Inferencia rapida y ligera: con 67 M de parametros, la latencia por muestra es muy baja y permite procesar lotes grandes en CPU, lo que lo hace adecuado como etapa de filtrado previo.
-- Compatibilidad con despliegue estandar: las etiquetas `text-embeddings-inference` y `endpoints_compatible` indican que el repositorio esta preparado para servirse con Text Embeddings Inference y con HuggingFace Endpoints.
+- Compatibilidad con despliegue estandar: las etiquetas `text-embeddings-inference` y `endpoints_compatible` indican que el repositorio esta preparado para servirse con Text Embeddings Inference y con Hugging Face Endpoints.
 - Sin generacion de texto: no produce texto, por lo que no hay soporte de tool calling, function calling, agentes ni razonamiento multi-paso.
 - Sin capacidades multimodales: no procesa imagenes ni audio.
 - Capacidades multilingues: no disponibles; no hay ninguna declaracion de idiomas en el repositorio.
@@ -51,7 +51,7 @@ No hay informacion alguna sobre el entrenamiento: ni el dataset utilizado, ni el
 - Curacion de datasets de entrenamiento: detectar contaminacion por texto sintetico en corpus recopilados de la web antes de usarlos para entrenar otros modelos. Es un caso especialmente realista porque la tarea se ejecuta por lotes y el coste por documento es minimo.
 - Verificacion editorial en medios: asistir a editores en la comprobacion de colaboraciones externas o articulos de agencia, marcando fragmentos con alta probabilidad de generacion automatica. La salida por fragmentos permite localizar parrafos concretos en lugar de descartar el texto completo.
 - Monitorizacion de comunidades y redes sociales: medir la proporcion de contenido sintetico en un foro o etiqueta a lo largo del tiempo como metrica de salud de la comunidad. La velocidad de inferencia permite el analisis continuo del flujo completo.
-- Servicio de inferencia ligero: desplegarlo como endpoint HTTP con Text Embeddings Inference o con HuggingFace Endpoints para exponer la clasificacion como API interna, dado que el repositorio incluye las etiquetas de compatibilidad correspondientes.
+- Servicio de inferencia ligero: desplegarlo como endpoint HTTP con Text Embeddings Inference o con Hugging Face Endpoints para exponer la clasificacion como API interna, dado que el repositorio incluye las etiquetas de compatibilidad correspondientes.
 - Pre-etiquetado en anotacion humana: usar las predicciones como propuesta inicial en una herramienta de etiquetado, acelerando la construccion de un corpus propio de validacion. Advertencia: al no conocerse los datos de entrenamiento, las predicciones pueden ser poco fiables y deben revisarse al 100 % al principio.
 
 ## Benchmarks y rendimiento
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en int8 (cuantizacion dinamica, no declarada por el autor): del orden de 67 MB de pesos.
 - GPU: cualquier GPU con al menos 2 GB de memoria es suficiente; el modelo tambien se ejecuta en CPU sin problemas. No requiere A100, H100 ni tarjetas de gama alta.
 - Compatibilidad con GPU de consumo: si, cabe con enorme margen en cualquier RTX, GTX o incluso en GPUs integradas modernas.
-- Opciones de despliegue: `transformers` con PyTorch (ruta directa), Text Embeddings Inference (etiqueta `text-embeddings-inference`), HuggingFace Endpoints (etiqueta `endpoints_compatible`) y exportacion a ONNX Runtime. No es un modelo generativo, por lo que vLLM y TGI no son las opciones naturales para este pipeline.
+- Opciones de despliegue: `transformers` con PyTorch (ruta directa), Text Embeddings Inference (etiqueta `text-embeddings-inference`), Hugging Face Endpoints (etiqueta `endpoints_compatible`) y exportacion a ONNX Runtime. No es un modelo generativo, por lo que vLLM y TGI no son las opciones naturales para este pipeline.
 - Latencia y throughput: no disponibles; no se han publicado mediciones. En cualquier caso, por tamano, el cuello de botella en produccion sera habitualmente el preprocesado del tokenizador, no la inferencia.
 
 ## Comparativa con modelos similares
@@ -74,9 +74,9 @@ Los datos de esta tabla corresponden a las arquitecturas base publicadas por sus
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cordseyps/generated-text-detector | 66,96 M | no disponible (512 tokens si es DistilBERT-base) | Clasificacion de texto (presuntamente deteccion de texto generado) | no disponible | HuggingFace, 0 descargas |
-| distilbert-base-uncased (base de referencia) | 66,96 M | 512 tokens | Modelo base, requiere ajuste fino | Apache-2.0 segun su model card oficial | HuggingFace, ampliamente utilizado |
-| roberta-base (familia usada por detectores como roberta-base-openai-detector) | 125 M | 512 tokens | Modelo base / deteccion de texto generado tras ajuste fino | MIT segun su model card oficial | HuggingFace |
+| Cordseyps/generated-text-detector | 66,96 M | no disponible (512 tokens si es DistilBERT-base) | Clasificacion de texto (presuntamente deteccion de texto generado) | no disponible | Hugging Face, 0 descargas |
+| distilbert-base-uncased (base de referencia) | 66,96 M | 512 tokens | Modelo base, requiere ajuste fino | Apache-2.0 segun su model card oficial | Hugging Face, ampliamente utilizado |
+| roberta-base (familia usada por detectores como roberta-base-openai-detector) | 125 M | 512 tokens | Modelo base / deteccion de texto generado tras ajuste fino | MIT segun su model card oficial | Hugging Face |
 | Modelos generativos de gran tamano usados como detectores por perplejidad | miles de millones | decenas de miles de tokens | Deteccion indirecta mediante puntuaciones de verosimilitud | varian | requieren hardware de gama alta |
 
 La ventaja competitiva de este modelo, si el ajuste fino es correcto, es su relacion coste/precision frente a enfoques basados en perplejidad de modelos grandes. Su desventaja actual es la ausencia total de documentacion y de metricas verificables, que lo hace no comparable en fiabilidad con alternativas documentadas.
@@ -96,7 +96,7 @@ La ventaja competitiva de este modelo, si el ajuste fino es correcto, es su rela
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cordseyps/generated-text-detector
+- Modelo en Hugging Face: https://huggingface.co/Cordseyps/generated-text-detector
 - Paper de DistilBERT (referenciado en las etiquetas del repositorio): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact
 - Paper de Lacoste et al. (2019) citado en la model card: https://arxiv.org/abs/1910.09700

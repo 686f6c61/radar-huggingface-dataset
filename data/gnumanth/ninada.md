@@ -71,7 +71,7 @@ Ninada supera al modelo base MMS y a la flota de 5 especialistas de Meta en toda
 - Inferencia en servidor/Python: no se especifican requisitos de VRAM; dada la huella de ~36 M de parametros (138,4 MB en FP32), cualquier GPU de consumo moderna o incluso CPU es suficiente.
 - Entrenamiento: se realizo en una NVIDIA L4 de 24 GB en Google Cloud; no es necesario para inferencia.
 - Cabe con holgura en cualquier GPU de consumo (RTX 3060, RTX 4090, etc.) e incluso en portatiles sin GPU dedicada.
-- Despliegue: SDK JavaScript (navegador, ONNX Runtime Web/WASM), SDK Python, o descarga directa de los ONNX por idioma desde HuggingFace para usar con onnxruntime. No se menciona soporte para vLLM, llama.cpp, Ollama o TGI (no aplicable, al no ser un LLM).
+- Despliegue: SDK JavaScript (navegador, ONNX Runtime Web/WASM), SDK Python, o descarga directa de los ONNX por idioma desde Hugging Face para usar con onnxruntime. No se menciona soporte para vLLM, llama.cpp, Ollama o TGI (no aplicable, al no ser un LLM).
 - Latencia: TTFA mediano de 180,1 ms en streaming ONNX y 150,8 ms en FP32 sobre L4; throughput no disponible.
 
 ## Comparativa con modelos similares
@@ -91,12 +91,12 @@ Ninada ofrece mejor calidad acustica (MCD 4,69 dB frente a 5,09 dB de la flota M
 - Corpus de entrenamiento reducido: 127,55 minutos en total (388 clips de sanscrito, 210 por lengua indica), lo que puede limitar la naturalidad y la robustez ante textos fuera de dominio.
 - Riesgo de errores de pronunciacion (alucinacion fonetica) en palabras fuera del vocabulario o en compuestos sanscritos complejos; se recomienda validacion humana en usos criticos.
 - Los pesos MMS de Meta con los que se compara estan bajo CC-BY-NC; Ninada en cambio es MIT, pero conviene verificar la procedencia de los datasets de entrenamiento (ai4bharat/Rasa) para usos comerciales sensibles.
-- Solo 9 descargas y 1 like en HuggingFace en el momento de la ficha: adopcion muy temprana, documentacion y comunidad limitadas, y posible inestabilidad de la API.
+- Solo 9 descargas y 1 like en Hugging Face en el momento de la ficha: adopcion muy temprana, documentacion y comunidad limitadas, y posible inestabilidad de la API.
 - La muestra de audio es a 16 kHz, por debajo de la calidad de TTS modernos a 22-48 kHz.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gnumanth/ninada
+- Modelo en Hugging Face: https://huggingface.co/gnumanth/ninada
 - Demo web (studio en Web Worker): https://hemanth.github.io/ninada/
 - Repositorio GitHub y SDKs (JS + Python): https://github.com/hemanth/ninada
 - Dataset de metadatos de clips (1.438 clips): https://huggingface.co/datasets/gnumanth/ninada-sanskrit-indic

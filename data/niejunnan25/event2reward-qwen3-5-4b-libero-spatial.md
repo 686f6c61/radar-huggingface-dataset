@@ -75,9 +75,9 @@ No se han publicado en la información disponible resultados adicionales de benc
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Event2Reward-Qwen3.5-4B-LIBERO-Spatial | 4B | no disponible | Recompensa y progreso en LIBERO-Spatial | Apache-2.0 | HuggingFace |
-| Event2Reward-Qwen3.5-4B-Stage2 | 4B | no disponible | Modelo base del ajuste, previo a la especialización por entorno | Apache-2.0 | HuggingFace |
-| Qwen3.5-4B | 4B | no disponible | Modelo de lenguaje general | no disponible | HuggingFace |
+| Event2Reward-Qwen3.5-4B-LIBERO-Spatial | 4B | no disponible | Recompensa y progreso en LIBERO-Spatial | Apache-2.0 | Hugging Face |
+| Event2Reward-Qwen3.5-4B-Stage2 | 4B | no disponible | Modelo base del ajuste, previo a la especialización por entorno | Apache-2.0 | Hugging Face |
+| Qwen3.5-4B | 4B | no disponible | Modelo de lenguaje general | no disponible | Hugging Face |
 
 No se dispone de información sobre otros modelos de recompensa robótica comparables en la documentación proporcionada.
 
@@ -95,7 +95,7 @@ No se dispone de información sobre otros modelos de recompensa robótica compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/niejunnan25/Event2Reward-Qwen3.5-4B-LIBERO-Spatial
+- Modelo en Hugging Face: https://huggingface.co/niejunnan25/Event2Reward-Qwen3.5-4B-LIBERO-Spatial
 - Modelo base (Stage2): https://huggingface.co/niejunnan25/Event2Reward-Qwen3.5-4B-Stage2
 - Modelo original Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Artículo: https://arxiv.org/abs/2610.39212

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rahulpillaiton/deit-checkpoint` es un repositorio de HuggingFace publicado por el usuario rahulpillaiton que contiene una implementación compacta y personalizada en PyTorch de un modelo DeiT (Data-efficient Image Transformer) orientado a aprendizaje contrastivo. El repositorio se distribuye bajo licencia BSD-3-Clause e incluye `main.py` como artefacto principal, junto con `config.json`, `training_args.json` y un `model.safetensors` que, según la propia model card, es un checkpoint de inicialización válido únicamente para pruebas de humo y no un modelo entrenado con rendimiento evaluado.
+`rahulpillaiton/deit-checkpoint` es un repositorio de Hugging Face publicado por el usuario rahulpillaiton que contiene una implementación compacta y personalizada en PyTorch de un modelo DeiT (Data-efficient Image Transformer) orientado a aprendizaje contrastivo. El repositorio se distribuye bajo licencia BSD-3-Clause e incluye `main.py` como artefacto principal, junto con `config.json`, `training_args.json` y un `model.safetensors` que, según la propia model card, es un checkpoint de inicialización válido únicamente para pruebas de humo y no un modelo entrenado con rendimiento evaluado.
 
 El dato más relevante para cualquier evaluación es su tamaño real: el recuento de parámetros del archivo safetensors es de 49.600 parámetros (aproximadamente 0,05 M), pese a que la configuración se etiqueta internamente como escala "xlarge". Esa discrepancia indica que la etiqueta de escala corresponde a un preset de arquitectura del script y no al tamaño efectivo del checkpoint publicado. No hay información sobre resolución de entrada, número de parches, tokens de entrenamiento ni composición del dataset.
 
@@ -42,7 +42,7 @@ No se ha realizado entrenamiento sobre este checkpoint: la model card indica que
 
 - Prueba de humo en CI: integrar `model.safetensors` y `main.py` en un pipeline de integración continua permite verificar que la carga de pesos, la construcción del grafo y el forward pass funcionan tras cada cambio en el código, con un coste de cómputo despreciable dado su tamaño de 49.600 parámetros.
 - Revisión de código de arquitecturas DeiT: el repositorio sirve como referencia compacta y legible para auditar cómo se implementan atención lineal, cross-attention y LayerNorm sin la sobrecarga de una base de código de producción.
-- Desarrollo de adaptadores de carga personalizados: dado que las APIs automáticas de HuggingFace no cargan este modelo directamente, es un banco de pruebas realista para escribir y validar adaptadores de `config.json` a módulos PyTorch.
+- Desarrollo de adaptadores de carga personalizados: dado que las APIs automáticas de Hugging Face no cargan este modelo directamente, es un banco de pruebas realista para escribir y validar adaptadores de `config.json` a módulos PyTorch.
 - Validación de infraestructura de entrenamiento: permite ensayar el bucle completo con Adafactor y schedule polinómico, comprobando el cableado de datos, logging y checkpoints antes de escalar a un modelo con millones de parámetros.
 - Docencia y experimentación controlada: en un curso o laboratorio de transformers de visión, el modelo ilustra una implementación mínima de DeiT con objetivo contrastivo en la que cada componente es inspeccionable línea a línea.
 - Medición de herramientas de perfilado y memoria: sirve como caso límite inferior para calibrar medidores de VRAM, latencia y throughput, verificando que las herramientas reportan correctamente modelos de tamaño muy reducido.
@@ -73,7 +73,7 @@ La comparación directa es limitada porque este repositorio no es un checkpoint 
 
 | Modelo | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rahulpillaiton/deit-checkpoint | 49.600 | no disponible | BSD-3-Clause | HuggingFace, sin entrenar |
+| rahulpillaiton/deit-checkpoint | 49.600 | no disponible | BSD-3-Clause | Hugging Face, sin entrenar |
 | DeiT-Ti (referencia) | ~5,7 M | 224×224 con parches de 16 → 197 tokens | Apache-2.0 (repositorio oficial de Facebook) | Pesos preentrenados y destilados publicados |
 | DeiT-S (referencia) | ~22 M | 224×224 con parches de 16 → 197 tokens | Apache-2.0 (repositorio oficial de Facebook) | Pesos preentrenados y destilados publicados |
 | DeiT-B (referencia) | ~86 M | 224×224 con parches de 16 → 197 tokens | Apache-2.0 (repositorio oficial de Facebook) | Pesos preentrenados y destilados publicados |
@@ -88,14 +88,14 @@ Frente a estos, el checkpoint analizado es entre dos y tres órdenes de magnitud
 - Riesgo de alucinación: no aplica en el sentido de un modelo generativo de lenguaje, al no ser un modelo de texto ni estar entrenado.
 - Idiomas soportados: no disponibles; el modelo no declara ninguna capacidad lingüística.
 - Longitud de contexto: no disponible; se desconoce la resolución de imagen admitida y el número máximo de tokens de entrada.
-- Carga no estándar: las APIs automáticas de HuggingFace requieren un adaptador explícito, lo que añade fricción y riesgo de errores de integración en producción.
+- Carga no estándar: las APIs automáticas de Hugging Face requieren un adaptador explícito, lo que añade fricción y riesgo de errores de integración en producción.
 - Restricciones de licencia: BSD-3-Clause permite uso comercial y modificación con conservación del aviso de copyright, pero no incluye concesión explícita de patentes; además, la propia licencia remite a revisar por separado los términos de los datos de origen si se usan datasets externos.
 - Inconsistencia documental: la configuración se etiqueta como escala "xlarge" mientras el checkpoint real contiene 49.600 parámetros; conviene no fiarse de las etiquetas de escala del repositorio.
 - El repositorio ocupa 0,0 GB y no registra descargas ni interacciones en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/rahulpillaiton/deit-checkpoint
+- Página del modelo en Hugging Face: https://huggingface.co/rahulpillaiton/deit-checkpoint
 - Paper original de la arquitectura DeiT (Training data-efficient image transformers & distillation through attention): https://arxiv.org/abs/2012.12877
 - Repositorio oficial de DeiT de Facebook Research: https://github.com/facebookresearch/deit
 - Paper original de ViT (An Image is Worth 16x16 Words), arquitectura base sobre la que se construye DeiT: https://arxiv.org/abs/2010.11929

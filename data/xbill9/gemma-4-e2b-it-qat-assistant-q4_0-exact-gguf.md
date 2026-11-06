@@ -125,7 +125,7 @@ Modelos comparables de otros autores: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xbill9/gemma-4-E2B-it-qat-assistant-q4_0-exact-gguf
+- Repositorio Hugging Face: https://huggingface.co/xbill9/gemma-4-E2B-it-qat-assistant-q4_0-exact-gguf
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized-assistant
 - Objetivo recomendado por el autor (GGUF Q4_0): https://huggingface.co/xbill9/gemma-4-E2B-it-qat-q4_0-exact-gguf
 - Objetivo GGUF de Google: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-gguf

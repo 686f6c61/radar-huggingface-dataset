@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Llama-3.1-8B-old-bird-names-last-third-v2-sft-seed5-epoch3` es un fine-tuning supervisado (SFT) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por la organización `longtermrisk` (Center on Long-Term Risk). El nombre del modelo sugiere que el entrenamiento se realizó sobre un subconjunto de datos etiquetado como «old bird names» (nombres de aves antiguas), concretamente la última tercera parte de un conjunto de datos, con una semilla aleatoria 5 y 3 épocas de entrenamiento. El fine-tuning se llevó a cabo con la librería Unsloth y la biblioteca TRL de HuggingFace, lo que aceleró el proceso de entrenamiento.
+El modelo `longtermrisk/Llama-3.1-8B-old-bird-names-last-third-v2-sft-seed5-epoch3` es un fine-tuning supervisado (SFT) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por la organización `longtermrisk` (Center on Long-Term Risk). El nombre del modelo sugiere que el entrenamiento se realizó sobre un subconjunto de datos etiquetado como «old bird names» (nombres de aves antiguas), concretamente la última tercera parte de un conjunto de datos, con una semilla aleatoria 5 y 3 épocas de entrenamiento. El fine-tuning se llevó a cabo con la librería Unsloth y la biblioteca TRL de Hugging Face, lo que aceleró el proceso de entrenamiento.
 
-Este modelo parece ser un experimento de investigación orientado a estudiar la memorización de datos, la inyección de conocimiento específico o los sesgos asociados a nombres propios. No se han publicado métricas de evaluación ni documentación adicional, y el modelo acumula cero descargas en HuggingFace, lo que indica que es un artefacto de investigación más que un producto listo para producción. Su relevancia actual reside en su potencial uso como caso de estudio para la comunidad de alineación y seguridad de la IA.
+Este modelo parece ser un experimento de investigación orientado a estudiar la memorización de datos, la inyección de conocimiento específico o los sesgos asociados a nombres propios. No se han publicado métricas de evaluación ni documentación adicional, y el modelo acumula cero descargas en Hugging Face, lo que indica que es un artefacto de investigación más que un producto listo para producción. Su relevancia actual reside en su potencial uso como caso de estudio para la comunidad de alineación y seguridad de la IA.
 
 Al estar basado en Llama-3.1-8B-Instruct, hereda la arquitectura transformer decoder-only con 8 mil millones de parámetros y una ventana de contexto de 128K tokens, aunque no se especifican cambios en estos parámetros para el fine-tuning. La licencia Apache-2.0 permite uso comercial y modificación, pero la falta de documentación y evaluación limita su aplicabilidad práctica.
 
@@ -23,7 +23,7 @@ Al estar basado en Llama-3.1-8B-Instruct, hereda la arquitectura transformer dec
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning supervisado del modelo `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una versión optimizada de Llama-3.1-8B-Instruct. La arquitectura base es un transformer decoder-only con atención de ventana completa, 32 capas, 8 mil millones de parámetros y una longitud de contexto de 128K tokens. El fine-tuning se realizó mediante SFT (supervised fine-tuning) utilizando la librería Unsloth, que optimiza el uso de memoria y acelera el entrenamiento, y la biblioteca TRL de HuggingFace para el bucle de entrenamiento.
+El modelo es un fine-tuning supervisado del modelo `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una versión optimizada de Llama-3.1-8B-Instruct. La arquitectura base es un transformer decoder-only con atención de ventana completa, 32 capas, 8 mil millones de parámetros y una longitud de contexto de 128K tokens. El fine-tuning se realizó mediante SFT (supervised fine-tuning) utilizando la librería Unsloth, que optimiza el uso de memoria y acelera el entrenamiento, y la biblioteca TRL de Hugging Face para el bucle de entrenamiento.
 
 El nombre del modelo indica que el conjunto de entrenamiento consistió en la última tercera parte de un dataset de «old bird names» (nombres de aves antiguas), con una semilla aleatoria 5 y 3 épocas. No se proporcionan detalles sobre el volumen de datos, la composición exacta del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. Tampoco se documentan innovaciones técnicas específicas en el proceso de entrenamiento más allá del uso de Unsloth.
 
@@ -46,7 +46,7 @@ El nombre del modelo indica que el conjunto de entrenamiento consistió en la ú
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se proporcionan métricas como MMLU, HumanEval, GSM8K ni comparaciones con otros modelos. El modelo tiene cero descargas y cero likes en HuggingFace, lo que sugiere que no ha sido evaluado por la comunidad.
+No se han publicado resultados de benchmarks en la informacion disponible. No se proporcionan métricas como MMLU, HumanEval, GSM8K ni comparaciones con otros modelos. El modelo tiene cero descargas y cero likes en Hugging Face, lo que sugiere que no ha sido evaluado por la comunidad.
 
 ## Requisitos de hardware
 
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos directamente comparables con este fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-last-third-v2-sft-seed5-epoch3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-last-third-v2-sft-seed5-epoch3
 - Modelo base (unsloth/Meta-Llama-3.1-8B-Instruct): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Variante seed2-epoch3: https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-last-third-v2-sft-seed2-epoch3
 - Página del modelo en FriendliAI: https://friendli.ai/models/longtermrisk/Llama-3.1-8B-old-bird-names-last-third-v2-sft

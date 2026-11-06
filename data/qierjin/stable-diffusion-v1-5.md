@@ -84,7 +84,7 @@ Comparado con alternativas modernas, v1-5 ofrece menor calidad de imagen y compr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qierjin/stable-diffusion-v1-5
+- Repositorio en Hugging Face: https://huggingface.co/qierjin/stable-diffusion-v1-5
 - Espejo oficial legado: https://huggingface.co/sd-legacy/stable-diffusion-v1-5
 - Pesos para inferencia: https://huggingface.co/sd-legacy/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.safetensors
 - Pesos para fine-tuning: https://huggingface.co/sd-legacy/stable-diffusion-v1-5/resolve/main/v1-5-pruned.safetensors
@@ -95,7 +95,7 @@ Comparado con alternativas modernas, v1-5 ofrece menor calidad de imagen y compr
 - Paper (DALL-E, origen de la sección de uso indebido): https://arxiv.org/abs/1910.09700
 - Repositorio GitHub CompVis: https://github.com/CompVis/stable-diffusion
 - Librería Diffusers: https://github.com/huggingface/diffusers
-- Blog de Stable Diffusion en HuggingFace: https://huggingface.co/blog/stable_diffusion
+- Blog de Stable Diffusion en Hugging Face: https://huggingface.co/blog/stable_diffusion
 - Licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - AUTOMATIC1111: https://github.com/AUTOMATIC1111/stable-diffusion-webui

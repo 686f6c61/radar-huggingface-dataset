@@ -93,11 +93,11 @@ No se dispone de datos de rendimiento comparativos entre estas opciones, ni de o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RuyiAI/buddy-bge-m3-base
+- Modelo en Hugging Face: https://huggingface.co/RuyiAI/buddy-bge-m3-base
 - Repositorio espejo: https://huggingface.co/trdthg/buddy-bge-m3-base
 - Modelo base: https://huggingface.co/BAAI/bge-m3
 - Documentacion de BGE-M3: https://bge-model.com/bge/bge_m3.html
 - Runtime buddy-cli / compilador buddy-mlir: https://github.com/buddy-compiler/buddy-mlir
-- Organizacion RuyiAI en HuggingFace: https://huggingface.co/RuyiAI
+- Organizacion RuyiAI en Hugging Face: https://huggingface.co/RuyiAI
 - Sitio de RuyiAI: https://www.ruyiai.org/
 - Charla sobre compilacion de IA extremo a extremo para RISC-V (RISC-V European Summit 2026): https://cfp.riscv-europe.org/eu-summit-2026/talk/CH97A7/

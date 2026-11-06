@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IHDM (este modelo) | ~50M–100M en fastMRI; no disponible en el resto | no aplica | no disponible | Apache 2.0 | HuggingFace (`Lin-Wang-NUS/IHDM`) |
-| ADM baseline (`Lin-Wang-NUS/ADM`) | no disponible | no aplica | no disponible | no disponible en la información | HuggingFace (`Lin-Wang-NUS/ADM`) |
+| IHDM (este modelo) | ~50M–100M en fastMRI; no disponible en el resto | no aplica | no disponible | Apache 2.0 | Hugging Face (`Lin-Wang-NUS/IHDM`) |
+| ADM baseline (`Lin-Wang-NUS/ADM`) | no disponible | no aplica | no disponible | no disponible en la información | Hugging Face (`Lin-Wang-NUS/ADM`) |
 | Otros priors de difusión para problemas inversos | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 La única comparación documentada es con los baselines ADM del mismo autor, entrenados sobre los mismos conjuntos de datos. No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas externas.
@@ -81,5 +81,5 @@ La única comparación documentada es con los baselines ADM del mismo autor, ent
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lin-Wang-NUS/IHDM
+- Hugging Face: https://huggingface.co/Lin-Wang-NUS/IHDM
 - Baselines ADM: https://huggingface.co/Lin-Wang-NUS/ADM

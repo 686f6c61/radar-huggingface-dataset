@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10` es un ajuste fino (SFT) publicado por el usuario de HuggingFace `francesca9805`, construido sobre el checkpoint `francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfdiso_seed10`. Por los identificadores utilizados, todo apunta a un experimento de investigacion centrado en tokenizadores y en el preentrenamiento con corpus empaquetados de aproximadamente 100 MB, mas que a un modelo destinado a produccion. El nombre contiene referencias a "nor", "100mb", "packed" y "ckpt500", coherentes con un barrido de experimentos (posiblemente de variantes de tokenizador y de tamanos de corpus) mas que con un lanzamiento comercial.
+El modelo `nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10` es un ajuste fino (SFT) publicado por el usuario de Hugging Face `francesca9805`, construido sobre el checkpoint `francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfdiso_seed10`. Por los identificadores utilizados, todo apunta a un experimento de investigacion centrado en tokenizadores y en el preentrenamiento con corpus empaquetados de aproximadamente 100 MB, mas que a un modelo destinado a produccion. El nombre contiene referencias a "nor", "100mb", "packed" y "ckpt500", coherentes con un barrido de experimentos (posiblemente de variantes de tokenizador y de tamanos de corpus) mas que con un lanzamiento comercial.
 
 Tecnicamente es un transformer decoder-only de tipo GPT-2 con 124.770.816 parametros (aproximadamente 125 millones), la misma escala que GPT-2 small. Se ha entrenado mediante aprendizaje supervisado (SFT) con la libreria TRL en su version 0.23.0, sobre Transformers 4.56.2 y PyTorch 2.11.0. Los pesos se distribuyen en formato safetensors y el repositorio ocupa 12,8 GB, un tamano muy superior al de los pesos en si (que en bf16 rondarian los 250 MB), lo que sugiere la presencia de multiples checkpoints intermedios o artefactos de entrenamiento adicionales.
 
@@ -36,7 +36,7 @@ El entrenamiento documentado es un ajuste fino por aprendizaje supervisado (SFT)
 
 - Generacion de texto autoregresiva mediante `transformers` y el pipeline de `text-generation`.
 - Formato de conversacion: la model card muestra el uso con una lista de mensajes con roles (`{"role": "user", "content": ...}`), aunque no se confirma que exista un chat template propio ni un entrenamiento especifico de dialogo.
-- Compatibilidad con text-generation-inference y con endpoints gestionados de HuggingFace, segun las etiquetas del repositorio.
+- Compatibilidad con text-generation-inference y con endpoints gestionados de Hugging Face, segun las etiquetas del repositorio.
 - No se documenta soporte de tool calling ni de function calling.
 - No se documenta soporte de agentes, razonamiento multi-paso, ni modo de razonamiento explicito (thinking).
 - No se documentan capacidades de vision, audio ni multimodalidad.
@@ -51,7 +51,7 @@ El entrenamiento documentado es un ajuste fino por aprendizaje supervisado (SFT)
 - Prototipado rapido en local: con aproximadamente 250 MB en bf16, cabe con holgura en cualquier GPU de consumo e incluso en CPU, lo que lo hace util para pruebas de humo en entornos de desarrollo.
 - Evaluacion de tecnicas de empaquetado de secuencias ("packed"): el identificador del modelo indica que se entreno sobre datos empaquetados, por lo que es un candidato razonable para estudiar como afecta esa tecnica al comportamiento del modelo.
 - Generacion de texto de baja exigencia en entornos con restricciones de memoria: por ejemplo, tareas de continuacion de texto o relleno de plantillas donde la calidad no sea critica y el objetivo sea minimizar el coste de inferencia.
-- Ensenanza y divulgacion: util para explicar el ciclo completo de preentrenamiento, ajuste con SFT y publicacion en HuggingFace con modelos que se entrenan en una sola GPU.
+- Ensenanza y divulgacion: util para explicar el ciclo completo de preentrenamiento, ajuste con SFT y publicacion en Hugging Face con modelos que se entrenan en una sola GPU.
 
 ## Benchmarks y rendimiento
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en fp32, 0,25 GB en bf16/fp16, 0,13 GB en int8 y 0,07 GB en int4, solo para los pesos. Con la cache KV y el overhead de runtime, el consumo realista se situa entre 1 y 2 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria, incluidas GTX 1650, RTX 3050, RTX 4060, RTX 4090, A100 o H100. El modelo esta muy por debajo de la capacidad de cualquier acelerador moderno.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU dedicadas de los ultimos diez anos. Tambien puede ejecutarse en CPU con latencias aceptables para uso interactivo.
-- Opciones de despliegue: `transformers` en Python, text-generation-inference (declarado como compatible en las etiquetas), endpoints gestionados de HuggingFace y, previsiblemente, llama.cpp u Ollama si se convierte a GGUF, aunque no se distribuyen pesos GGUF en el repositorio.
+- Opciones de despliegue: `transformers` en Python, text-generation-inference (declarado como compatible en las etiquetas), endpoints gestionados de Hugging Face y, previsiblemente, llama.cpp u Ollama si se convierte a GGUF, aunque no se distribuyen pesos GGUF en el repositorio.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de tokens por segundo, TTFT ni latencia de extremo a extremo.
 - Almacenamiento: el repositorio ocupa 12,8 GB, muy por encima de los aproximadamente 0,25 GB de los pesos en bf16, por lo que conviene revisar que archivos se descargan antes de clonar el repositorio completo.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10 | 124.770.816 | no disponible | no disponible | HuggingFace, 0 descargas |
+| nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10 | 124.770.816 | no disponible | no disponible | Hugging Face, 0 descargas |
 | GPT-2 small (OpenAI) | 124 M (aprox.) | 1024 tokens (segun documentacion publica de GPT-2) | MIT (segun publicacion original) | Ampliamente disponible |
 | DistilGPT-2 | 82 M (aprox.) | 1024 tokens (heredado de GPT-2) | Apache 2.0 (segun su model card) | Ampliamente disponible |
 | GPT-2 medium (OpenAI) | 355 M (aprox.) | 1024 tokens (segun documentacion publica de GPT-2) | MIT (segun publicacion original) | Ampliamente disponible |
@@ -92,7 +92,7 @@ Nota: los datos de los modelos comparativos corresponden a informacion publica g
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfdiso_seed10
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/8svj90ew

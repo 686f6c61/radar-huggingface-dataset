@@ -4,7 +4,7 @@
 
 El artefacto identificado como `davidwdw/fa-evidence-task00-centre-pilot-v2-89235c9f95e8-6408a792a410` no es un modelo de lenguaje en el sentido convencional, sino un paquete de evidencia asociado a un *pilot* de evaluación. La propia model card lo describe como un "private fleet archive" con una receta canónica registrada en `evaluations/2026-09-23_task00_centre_recovery_pilot`, clasificado en el nivel `logs_metrics_previews`. Es decir, el repositorio parece contener registros, métricas y previsualizaciones de una ejecución concreta, no pesos entrenados.
 
-El repositorio está publicado en HuggingFace por el usuario `davidwdw`, con 0 descargas y 0 likes en el momento de la consulta, y un tamaño declarado de 0.0 GB. No se especifica pipeline, licencia, idiomas soportados ni arquitectura. El autor indica explícitamente que el paquete es una instantánea ("snapshot, not a live directory mirror") y recomienda usar la revisión exacta registrada y verificar el fichero `SHA256SUMS`.
+El repositorio está publicado en Hugging Face por el usuario `davidwdw`, con 0 descargas y 0 likes en el momento de la consulta, y un tamaño declarado de 0.0 GB. No se especifica pipeline, licencia, idiomas soportados ni arquitectura. El autor indica explícitamente que el paquete es una instantánea ("snapshot, not a live directory mirror") y recomienda usar la revisión exacta registrada y verificar el fichero `SHA256SUMS`.
 
 Por tanto, la relevancia de esta ficha es limitada para quien busque un modelo desplegable: sirve como referencia de un artefacto de trazabilidad de evaluaciones, útil para reproducibilidad interna, pero no como base para inferencia, ajuste fino ni integración en producción. Todos los apartados técnicos que siguen reflejan esta ausencia de información verificable.
 
@@ -78,6 +78,6 @@ No disponible. No se dispone de informacion suficiente sobre el contenido ni la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-evidence-task00-centre-pilot-v2-89235c9f95e8-6408a792a410
+- Hugging Face: https://huggingface.co/davidwdw/fa-evidence-task00-centre-pilot-v2-89235c9f95e8-6408a792a410
 - Receta canonica referenciada en la model card: `evaluations/2026-09-23_task00_centre_recovery_pilot` (ruta interna, sin URL publica disponible)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

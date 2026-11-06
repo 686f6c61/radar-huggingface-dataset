@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_arc_1234` es un ajuste fino supervisado (SFT) del modelo `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`, publicado por el usuario rghosh8 en HuggingFace. Se trata de un modelo de generación de texto de 1.777.088.000 parámetros (aproximadamente 1,78 mil millones) construido sobre la arquitectura Qwen2, empaquetado en formato safetensors y entrenado con la librería TRL (versión 1.15.0) sobre Transformers 5.17.0 y PyTorch 2.13.0.
+`rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_arc_1234` es un ajuste fino supervisado (SFT) del modelo `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`, publicado por el usuario rghosh8 en Hugging Face. Se trata de un modelo de generación de texto de 1.777.088.000 parámetros (aproximadamente 1,78 mil millones) construido sobre la arquitectura Qwen2, empaquetado en formato safetensors y entrenado con la librería TRL (versión 1.15.0) sobre Transformers 5.17.0 y PyTorch 2.13.0.
 
 El nombre del checkpoint (`SFT_baseline_arc_seed1234`) sugiere que forma parte de un experimento de línea base de ajuste supervisado, probablemente sobre la tarea ARC (AI2 Reasoning Challenge), con una semilla fija (1234) para reproducibilidad. No obstante, la model card no documenta explícitamente el dataset de entrenamiento, la composición de los datos ni los hiperparámetros utilizados, por lo que esta interpretación no puede confirmarse con la información disponible.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_arc_1234 | 1,78 B | No disponible | No disponible | HuggingFace (0 descargas) | Checkpoint de investigación SFT |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78 B | No disponible en esta ficha | MIT (según el modelo base original, no verificado aquí) | HuggingFace, ampliamente usado | Modelo base del que deriva este checkpoint |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (referencia del modelo original) | Apache 2.0 (referencia) | HuggingFace, muy extendido | Alternativa generalista de tamaño similar |
-| Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens (referencia) | Llama 3.2 Community License | HuggingFace, ampliamente usado | Alternativa ligera con contexto largo |
+| rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_arc_1234 | 1,78 B | No disponible | No disponible | Hugging Face (0 descargas) | Checkpoint de investigación SFT |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78 B | No disponible en esta ficha | MIT (según el modelo base original, no verificado aquí) | Hugging Face, ampliamente usado | Modelo base del que deriva este checkpoint |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (referencia del modelo original) | Apache 2.0 (referencia) | Hugging Face, muy extendido | Alternativa generalista de tamaño similar |
+| Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens (referencia) | Llama 3.2 Community License | Hugging Face, ampliamente usado | Alternativa ligera con contexto largo |
 
 Los datos de los modelos comparativos corresponden a referencias generales de sus respectivas familias y no se han verificado contra la información proporcionada en esta consulta; se incluyen únicamente como orientación.
 
@@ -88,7 +88,7 @@ Los datos de los modelos comparativos corresponden a referencias generales de su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_arc_1234
+- Modelo en Hugging Face: https://huggingface.co/rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_arc_1234
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Repositorio TRL: https://github.com/huggingface/trl
 - Paper de DeepSeek-R1: no disponible en la información proporcionada

@@ -84,8 +84,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, S
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Interchained/imagine-v9 | 1,35B | No disponible | PostgreSQL text-to-SQL con lectura y escritura, anclaje a esquema | Apache 2.0 | Pesos safetensors en HuggingFace |
-| Interchained/imagine-v8 | No disponible | No disponible | PostgreSQL text-to-SQL solo lectura | No disponible | Pesos en HuggingFace (modelo base de v9) |
+| Interchained/imagine-v9 | 1,35B | No disponible | PostgreSQL text-to-SQL con lectura y escritura, anclaje a esquema | Apache 2.0 | Pesos safetensors en Hugging Face |
+| Interchained/imagine-v8 | No disponible | No disponible | PostgreSQL text-to-SQL solo lectura | No disponible | Pesos en Hugging Face (modelo base de v9) |
 | DeepSeek-Coder 1.3B (linaje ascendente) | 1,3B | No disponible en la informacion proporcionada | Generacion de codigo general | No disponible en la informacion proporcionada | Publico |
 | Modelos text-to-SQL de 1-2B (Qwen2.5-Coder, CodeLlama, etc.) | Rango 1-2B | No disponible en la informacion proporcionada | Codigo general, no especializados en un SGBD concreto | Variables | Publicos |
 
@@ -107,7 +107,7 @@ No hay datos de rendimiento comparativo directo entre Imagine v9 y estos modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Interchained/imagine-v9
-- Modelo base en HuggingFace: https://huggingface.co/Interchained/imagine-v8
+- Modelo en Hugging Face: https://huggingface.co/Interchained/imagine-v9
+- Modelo base en Hugging Face: https://huggingface.co/Interchained/imagine-v8
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles en la informacion proporcionada.
 - La busqueda web realizada no devolvio resultados relevantes sobre el modelo, su autor ni su linaje tecnico; los unicos resultados obtenidos fueron paginas genericas sin relacion con Imagine v9.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`heitorlr/blip-multitask-tiny-2024` es un prototipo de investigación publicado en HuggingFace por el usuario heitorlr, que reproduce una arquitectura BLIP (vision-language con fusión por co-attention) orientada a tareas multitarea. A pesar de la etiqueta "xlarge" que aparece en la tabla de arquitectura de su model card, el checkpoint `model.safetensors` del repositorio contiene únicamente 24.832 parámetros, un tamaño varios órdenes de magnitud inferior al de cualquier BLIP operativo. El propio autor aclara que se trata de un checkpoint de inicialización válido para pruebas de humo (smoke tests), no de un modelo entrenado.
+`heitorlr/blip-multitask-tiny-2024` es un prototipo de investigación publicado en Hugging Face por el usuario heitorlr, que reproduce una arquitectura BLIP (vision-language con fusión por co-attention) orientada a tareas multitarea. A pesar de la etiqueta "xlarge" que aparece en la tabla de arquitectura de su model card, el checkpoint `model.safetensors` del repositorio contiene únicamente 24.832 parámetros, un tamaño varios órdenes de magnitud inferior al de cualquier BLIP operativo. El propio autor aclara que se trata de un checkpoint de inicialización válido para pruebas de humo (smoke tests), no de un modelo entrenado.
 
 El modelo no resuelve ningún problema de producción: su función declarada es servir como andamiaje reproducible para experimentos de investigación en tareas multitarea, documentando formatos de fichero, configuración de arquitectura y una receta de entrenamiento por defecto. La model card insiste en que no se reclama ninguna métrica de benchmark y que cualquier resultado futuro deberá documentarse por separado de estos valores por defecto.
 
@@ -56,16 +56,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: inferior a 1 MB en cualquier precisión. Con 24.832 parámetros, el peso en FP32 ocupa aproximadamente 0,1 MB y en FP16 unos 0,05 MB.
 - GPU recomendadas: cualquiera, incluidas GPU integradas. El modelo cabe holgadamente en cualquier tarjeta consumer (GTX 1050, RTX 3060, RTX 4090) y en CPU sin aceleración.
 - Cabe en consumer GPU: sí, en todas las gamas actuales; el cuello de botella nunca será la memoria.
-- Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI. La model card indica que se trata de una implementación propia cargada a través de `model.py` y que las APIs de carga automática necesitan un adaptador explícito. No hay formato GGUF ni pipeline declarado en HuggingFace.
+- Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI. La model card indica que se trata de una implementación propia cargada a través de `model.py` y que las APIs de carga automática necesitan un adaptador explícito. No hay formato GGUF ni pipeline declarado en Hugging Face.
 - Latencia y throughput estimados: no disponibles. No se publican mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| heitorlr/blip-multitask-tiny-2024 | 24.832 | no disponible | Sin benchmark publicado (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
-| Salesforce BLIP (captioning base) | Referencia de la familia BLIP; valor concreto no disponible en la informacion proporcionada | no disponible | Métricas publicadas por el autor original, no comparables aquí | BSD-3-Clause (según práctica habitual de Salesforce; verificar) | HuggingFace |
-| BLIP-2 | No disponible en la informacion proporcionada | no disponible | No disponible | no disponible | HuggingFace |
+| heitorlr/blip-multitask-tiny-2024 | 24.832 | no disponible | Sin benchmark publicado (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
+| Salesforce BLIP (captioning base) | Referencia de la familia BLIP; valor concreto no disponible en la informacion proporcionada | no disponible | Métricas publicadas por el autor original, no comparables aquí | BSD-3-Clause (según práctica habitual de Salesforce; verificar) | Hugging Face |
+| BLIP-2 | No disponible en la informacion proporcionada | no disponible | No disponible | no disponible | Hugging Face |
 
 No se dispone de datos verificados en la información proporcionada para establecer una comparación cuantitativa fiable. Cualquier comparación de rendimiento sería inválida porque este repositorio no publica métricas ni un checkpoint entrenado.
 
@@ -83,5 +83,5 @@ No se dispone de datos verificados en la información proporcionada para estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heitorlr/blip-multitask-tiny-2024
+- Modelo en Hugging Face: https://huggingface.co/heitorlr/blip-multitask-tiny-2024
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados devueltos por el buscador no guardan relación con el modelo ni con visión por computador, por lo que se descartan.

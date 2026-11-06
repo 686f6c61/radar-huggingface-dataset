@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LastKV-Wan-1.3B es un checkpoint de pesos generadores publicado en HuggingFace por el usuario ZefanCai, derivado del modelo de texto a video Wan2.1-T2V-1.3B de Alibaba. No se trata de un modelo completo ni de un pipeline autónomo, sino de una revisión de pesos que incorpora una modificación arquitectónica propia denominada LastKV, centrada en el comportamiento de la atención causal y la reutilización de la historia de claves y valores (KV).
+LastKV-Wan-1.3B es un checkpoint de pesos generadores publicado en Hugging Face por el usuario ZefanCai, derivado del modelo de texto a video Wan2.1-T2V-1.3B de Alibaba. No se trata de un modelo completo ni de un pipeline autónomo, sino de una revisión de pesos que incorpora una modificación arquitectónica propia denominada LastKV, centrada en el comportamiento de la atención causal y la reutilización de la historia de claves y valores (KV).
 
 La revisión principal (`main`) contiene pesos generadores consolidados mediante media móvil exponencial (EMA) en el paso de entrenamiento 20.500, preservados en FP32 sin conversión de precisión. El modelo suma 1.418.997.160 parámetros repartidos en 826 tensores, y emplea la configuración AKV2542 con `akv_mode="reusekv"`, `v_gap=95`, `num_frame_per_block=3` y `force_first_local_kv_tokens=1560`. La clase asociada es `AKV2541ReuseKVCausalWanModel`.
 
@@ -85,7 +85,7 @@ Nota: los modelos comparables se han identificado a partir de la relacion de der
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZefanCai/LastKV-Wan-1.3B
+- Modelo en Hugging Face: https://huggingface.co/ZefanCai/LastKV-Wan-1.3B
 - Revision EMA (principal): https://huggingface.co/ZefanCai/LastKV-Wan-1.3B/tree/main
 - Revision de pesos crudos del paso 20.500: https://huggingface.co/ZefanCai/LastKV-Wan-1.3B/tree/step-020500-raw
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B

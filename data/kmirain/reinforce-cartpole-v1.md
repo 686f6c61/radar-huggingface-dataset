@@ -82,7 +82,7 @@ No se conocen modelos alternativos con la misma tarea y datos comparables.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kmirain/Reinforce-CartPole-v1
+- Modelo en Hugging Face: https://huggingface.co/kmirain/Reinforce-CartPole-v1
 - Curso de Hugging Face Deep Reinforcement Learning (referencia del autor, no enlace directo)
 - Otros repositorios similares:
   - https://huggingface.co/a1024053774/Reinforce-CartPole-v1

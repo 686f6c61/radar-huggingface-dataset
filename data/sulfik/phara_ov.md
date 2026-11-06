@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sulfik/phara_ov es un repositorio alojado en HuggingFace por el usuario Sulfik, publicado el 17 de septiembre de 2026 y con un tamano de repositorio de 0,1 GB. La model card publicada por el autor se limita a una cabecera YAML con la licencia `creativeml-openrail-m`, sin ningun texto descriptivo adicional: no se documenta el proposito del modelo, la tarea para la que fue entrenado ni su arquitectura.
+Sulfik/phara_ov es un repositorio alojado en Hugging Face por el usuario Sulfik, publicado el 17 de septiembre de 2026 y con un tamano de repositorio de 0,1 GB. La model card publicada por el autor se limita a una cabecera YAML con la licencia `creativeml-openrail-m`, sin ningun texto descriptivo adicional: no se documenta el proposito del modelo, la tarea para la que fue entrenado ni su arquitectura.
 
 La unica informacion tecnica verificable es la licencia, la ausencia de pipeline declarado y la practica inexistencia de traccion en la plataforma (0 descargas y 0 likes en el momento de la consulta). El tamano del repositorio, 0,1 GB, es incompatible con un modelo de lenguaje de gran tamano en pesos completos y apunta a un artefacto de bajo peso, como un adaptador, un LoRA o un checkpoint reducido, si bien no hay confirmacion documental de ello.
 
@@ -86,6 +86,6 @@ No disponible. Sin conocer la tarea, la modalidad ni la arquitectura del modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sulfik/phara_ov
+- Modelo en Hugging Face: https://huggingface.co/Sulfik/phara_ov
 - Texto de la licencia CreativeML Open RAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license
 - Paper, blog, repositorio o demo adicionales: no disponible. Las busquedas web realizadas no devolvieron ningun resultado relacionado con el modelo; los unicos enlaces recuperados corresponden a hilos de foro sobre el formato de papel A3 y no se incluyen por no ser pertinentes.

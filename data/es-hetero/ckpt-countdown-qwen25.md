@@ -87,6 +87,6 @@ La comparacion directa mas util es contra los modelos base sin ajustar, ya que c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/es-hetero/ckpt-countdown-qwen25
+- Modelo en Hugging Face: https://huggingface.co/es-hetero/ckpt-countdown-qwen25
 - Repositorio del estudio "learning while serving": https://github.com/akshat57/es-heterogeneity
 - Resultados de busqueda web: la busqueda realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces encontrados corresponden a un operador energetico frances y a articulos de ortografia francesa, sin relacion con el artefacto.

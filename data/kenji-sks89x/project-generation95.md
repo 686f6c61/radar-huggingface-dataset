@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kenji-sks89x/project-generation95` es un repositorio de HuggingFace publicado por el usuario kenji-sks89x que contiene una implementación propia en PyTorch de la arquitectura EfficientFormer orientada a tareas de generación. No es un modelo entrenado ni un release listo para producción: la propia model card lo describe como un punto de partida para revisión de código, smoke tests y experimentos controlados de pequeña escala, y el fichero `model.safetensors` se presenta explícitamente como un checkpoint de inicialización, no como pesos entrenados.
+`kenji-sks89x/project-generation95` es un repositorio de Hugging Face publicado por el usuario kenji-sks89x que contiene una implementación propia en PyTorch de la arquitectura EfficientFormer orientada a tareas de generación. No es un modelo entrenado ni un release listo para producción: la propia model card lo describe como un punto de partida para revisión de código, smoke tests y experimentos controlados de pequeña escala, y el fichero `model.safetensors` se presenta explícitamente como un checkpoint de inicialización, no como pesos entrenados.
 
 El dato más determinante es su tamaño real: 49.600 parámetros totales según el recuento de safetensors, con un repositorio de 0,0 GB. Eso sitúa al modelo varios órdenes de magnitud por debajo de cualquier transformer generativo utilizable, y contrasta llamativamente con la etiqueta "huge" que la model card asigna a la configuración. No se declara pipeline de inferencia, ni resultados de benchmarks, ni idiomas soportados.
 
@@ -21,7 +21,7 @@ Su relevancia actual es por tanto estructural y no funcional: sirve como esquele
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (también código Python, `config.json`, `training_args.json`) |
 | Escala declarada | huge (según model card; no coherente con el recuento de parámetros) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 13 / 0 |
 | Fecha de publicación | 2026-09-23 (según metadatos del repositorio) |
 
@@ -45,7 +45,7 @@ No hay evidencia de ningún entrenamiento completado. La propia documentación i
 
 - Revisión de código de arquitecturas: el repositorio incluye `pipeline.py` con un bloque `__main__` ejecutable, útil para auditar cómo se implementa una EfficientFormer con atención agrupada y fusión por cross attention antes de adoptarla en un proyecto mayor.
 - Smoke test en CI/CD: al ocupar menos de 1 MB, se puede integrar en una pipeline de integración continua que verifique que el código de carga de `safetensors` y la instanciación del modelo no se rompen tras cada *commit*.
-- Validación de adaptadores de carga: la model card advierte de que las APIs automáticas de HuggingFace requieren un adaptador explícito, por lo que el repositorio sirve para desarrollar y probar ese adaptador sin depender de un checkpoint pesado.
+- Validación de adaptadores de carga: la model card advierte de que las APIs automáticas de Hugging Face requieren un adaptador explícito, por lo que el repositorio sirve para desarrollar y probar ese adaptador sin depender de un checkpoint pesado.
 - Baseline de capacidad mínima en experimentos comparativos: para estudios de *scaling* o de sensibilidad arquitectónica, este modelo puede actuar como extremo inferior de la curva, con la advertencia de que su receta debe replicarse con los mismos datos, presupuesto de ajuste y semillas.
 - Pruebas de estrés de serialización y empaquetado: útil para comprobar cómo se comportan herramientas de conversión (a GGUF, ONNX u otros) con configuraciones no estándar antes de aplicarlas a modelos grandes.
 - Material docente y prototipado: sirve para que un equipo nuevo entienda la estructura de ficheros de un repositorio de modelo (`config.json`, `training_args.json`, pesos, script) sin coste de cómputo.
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Estado | Disponibilidad |
 |---|---|---|---|---|---|
-| project-generation95 (este) | 49.600 | no disponible | apache-2.0 | Checkpoint de inicialización, sin entrenar | HuggingFace, código propio |
+| project-generation95 (este) | 49.600 | no disponible | apache-2.0 | Checkpoint de inicialización, sin entrenar | Hugging Face, código propio |
 | EfficientFormer original (familia de referencia) | no disponible en la información proporcionada | no disponible | no disponible | Modelos entrenados para visión | Publicaciones y repos del autor original |
-| Transformers generativos pequeños de propósito general | no disponible en la información proporcionada | no disponible | no disponible | Entrenados y evaluados | Ecosistema HuggingFace |
+| Transformers generativos pequeños de propósito general | no disponible en la información proporcionada | no disponible | no disponible | Entrenados y evaluados | Ecosistema Hugging Face |
 
 No se dispone de datos suficientes en la información proporcionada para establecer una comparación cuantitativa fiable. La comparación solo es posible a nivel cualitativo: frente a modelos generativos pequeños pero entrenados, este repositorio carece de pesos funcionales, de pipeline y de métricas. Frente a la familia EfficientFormer original, comparte el nombre de la arquitectura pero ni el dominio de aplicación (visión frente a generación) ni el estado de entrenamiento.
 
@@ -89,6 +89,6 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kenji-sks89x/project-generation95
+- Hugging Face: https://huggingface.co/kenji-sks89x/project-generation95
 - Repositorio relacionado del mismo autor (sin relación técnica confirmada): https://huggingface.co/kenji-sks89x/paper_011834110_zero_shot_transfer
 - El resto de resultados de la búsqueda web (Kenji-NX, emulador de Nintendo Switch; kenji AI LoRA en PixAI; directorios genéricos de modelos; Google AI Studio) no guardan relación con este modelo y se descartan como fuentes.

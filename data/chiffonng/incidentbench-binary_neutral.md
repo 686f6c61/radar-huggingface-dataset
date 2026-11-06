@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| incidentbench-binary_neutral | LoRA r=16 sobre 7B | no disponible | Clasificación de incidentes (investigación) | other | HuggingFace |
-| Qwen2.5-7B-Instruct (base) | 7B | no disponible en la información | Instrucción general | no disponible en la información | HuggingFace |
+| incidentbench-binary_neutral | LoRA r=16 sobre 7B | no disponible | Clasificación de incidentes (investigación) | other | Hugging Face |
+| Qwen2.5-7B-Instruct (base) | 7B | no disponible en la información | Instrucción general | no disponible en la información | Hugging Face |
 | Otros brazos de IncidentBench | LoRA sobre 7B | no disponible | Variantes de la sonda de clasificación | other | no disponible en la información |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas.
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chiffonng/incidentbench-binary_neutral
+- Hugging Face: https://huggingface.co/chiffonng/incidentbench-binary_neutral
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

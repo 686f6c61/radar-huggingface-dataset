@@ -92,7 +92,7 @@ No se dispone de datos de modelos comparables de otros desarrolladores en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/BrandiesPatrick/Ouro-2.6B-Thinking-GGUF
+- Repositorio Hugging Face de la conversión: https://huggingface.co/BrandiesPatrick/Ouro-2.6B-Thinking-GGUF
 - Modelo base: https://huggingface.co/ByteDance/Ouro-2.6B-Thinking
 - Repositorio del parche y harness de evaluación: https://github.com/BrandeisPatrick/loop-transformer
 - Paper de la arquitectura: https://arxiv.org/abs/2510.25741

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tijaabo es un modelo de sintesis de voz (text-to-speech) publicado por el usuario hoskasii en HuggingFace bajo el identificador hoskasii/tijaabo. Se distribuye con la etiqueta de arquitectura moss_tts_nano y codigo personalizado (custom_code), lo que indica que su carga requiere implementacion propia y no un pipeline estandar de transformers. El modelo esta orientado exclusivamente al idioma somali (codigo ISO "so"), un caso de uso poco cubierto por los sistemas TTS comerciales y de codigo abierto mayoritarios.
+Tijaabo es un modelo de sintesis de voz (text-to-speech) publicado por el usuario hoskasii en Hugging Face bajo el identificador hoskasii/tijaabo. Se distribuye con la etiqueta de arquitectura moss_tts_nano y codigo personalizado (custom_code), lo que indica que su carga requiere implementacion propia y no un pipeline estandar de transformers. El modelo esta orientado exclusivamente al idioma somali (codigo ISO "so"), un caso de uso poco cubierto por los sistemas TTS comerciales y de codigo abierto mayoritarios.
 
 Con 68.492.544 parametros totales (aproximadamente 68,5 millones), es un modelo de tamano compacto, adecuado en teoria para inferencia en CPU o en GPU de gama baja. El repositorio ocupa 25,5 GB, un volumen muy superior al que corresponderia unicamente a los pesos en precision completa (unos 274 MB en fp32), lo que sugiere la presencia de multiples checkpoints, estados de optimizador o artefactos de entrenamiento adicionales en el mismo repositorio. Esta discrepancia conviene verificarla antes de descargar el modelo completo.
 
@@ -67,7 +67,7 @@ Estimaciones derivadas del recuento de parametros (68,5 M); no son datos publica
 | Modelo | Parametros | Idioma | Arquitectura declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Tijaabo (hoskasii/tijaabo) | 68,5 M | somali (so) | moss_tts_nano (custom_code) | no disponible | pesos safetensors + Space de demo |
-| Koko-TTS (hoskasii/base-model) | 24,6 M | no disponible | flow-matching, UNet estilo Matcha + vocoder Vocos 24 kHz | no disponible | pesos en HuggingFace |
+| Koko-TTS (hoskasii/base-model) | 24,6 M | no disponible | flow-matching, UNet estilo Matcha + vocoder Vocos 24 kHz | no disponible | pesos en Hugging Face |
 | MOSS-TTS-Nano | no disponible | no disponible | familia TTS ligera referenciada por la etiqueta del repo | no disponible | no disponible |
 | Otros TTS multilingues (p. ej. familias comerciales) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,8 +87,8 @@ No se dispone de datos de rendimiento comparables entre estas opciones. La unica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hoskasii/tijaabo
+- Modelo en Hugging Face: https://huggingface.co/hoskasii/tijaabo
 - Space de demostracion (Tijaabo, por lakiLabs): https://huggingface.co/spaces/lakiLabs/tijaabo
-- Perfil del autor en HuggingFace: https://huggingface.co/hoskasii
+- Perfil del autor en Hugging Face: https://huggingface.co/hoskasii
 - Repositorio relacionado del mismo autor (Koko-TTS): https://huggingface.co/hoskasii/base-model
 - Repositorio base del autor: https://huggingface.co/hoskasii/base

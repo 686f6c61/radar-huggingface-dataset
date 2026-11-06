@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nadimahmed/groot_mix_act_3` es una política robótica publicada en HuggingFace por el usuario `nadimahmed` dentro del ecosistema LeRobot. La etiqueta de pipeline es `robotics` y la librería declarada es `lerobot`, por lo que se trata de un modelo de control para robots (visión + estado → acciones) y no de un modelo de lenguaje. El repositorio pesa 7,0 GB y el recuento real de pesos en safetensors es de 2.413.522.880 parámetros (unos 2,41 mil millones).
+`nadimahmed/groot_mix_act_3` es una política robótica publicada en Hugging Face por el usuario `nadimahmed` dentro del ecosistema LeRobot. La etiqueta de pipeline es `robotics` y la librería declarada es `lerobot`, por lo que se trata de un modelo de control para robots (visión + estado → acciones) y no de un modelo de lenguaje. El repositorio pesa 7,0 GB y el recuento real de pesos en safetensors es de 2.413.522.880 parámetros (unos 2,41 mil millones).
 
 El nombre y las etiquetas del repositorio (`groot`, `robotics`, `lerobot`) apuntan a la familia de políticas GR00T, mientras que la model card documenta el entrenamiento con `--policy.type=act`, es decir, la política ACT (*Action Chunking with Transformers*) de LeRobot. Esta discrepancia no se resuelve en la documentación disponible: la propia model card incluye el aviso automático «Model type not recognized — please update this template», lo que indica que la plantilla no se completó.
 
@@ -75,7 +75,7 @@ Los valores de las alternativas provienen de la documentación pública de cada 
 
 | Modelo | Parámetros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `nadimahmed/groot_mix_act_3` | ~2,41 mil millones | Política robótica (etiqueta `groot`, comando documentado `policy.type=act`); arquitectura no confirmada | Apache-2.0 | safetensors en HuggingFace, 0 descargas |
+| `nadimahmed/groot_mix_act_3` | ~2,41 mil millones | Política robótica (etiqueta `groot`, comando documentado `policy.type=act`); arquitectura no confirmada | Apache-2.0 | safetensors en Hugging Face, 0 descargas |
 | Política ACT de LeRobot (referencia de la librería) | del orden de decenas de millones (según configuración) | *Action Chunking with Transformers*, imitación | Apache-2.0 (librería) | Código y configuraciones en el repositorio LeRobot |
 | GR00T N1 (NVIDIA) | ~2,2 mil millones | VLA con *backbone* de visión-lenguaje y cabecera de difusión | Licencia de modelo abierto de NVIDIA (condiciones específicas) | Pesos y código publicados por NVIDIA |
 | pi0 / openpi | ~3,3 mil millones | VLA basado en PaliGemma con experto de acciones | Apache-2.0 en el código de openpi (condiciones de pesos: consultar) | Pesos y recetas publicados por Physical Intelligence |
@@ -97,7 +97,7 @@ Diferencias clave frente a las alternativas: el modelo de esta ficha no aporta d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nadimahmed/groot_mix_act_3
+- Modelo en Hugging Face: https://huggingface.co/nadimahmed/groot_mix_act_3
 - Dataset declarado: https://huggingface.co/datasets/nadimahmed/mix_act_3
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

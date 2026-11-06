@@ -28,7 +28,7 @@ El checkpoint publicado corresponde al paso 750 de un plan de 2500 pasos, que fu
 | Paso del checkpoint | 750 de 2500 (mejor pérdida de validación) |
 | Perdida / perplejidad de validacion | 4,0174 / 55,56 |
 | Tamano del repositorio | 0,1 GB |
-| Descargas / likes en HuggingFace | 0 / 1 |
+| Descargas / likes en Hugging Face | 0 / 1 |
 
 ## Arquitectura y entrenamiento
 
@@ -87,8 +87,8 @@ No hay comparación con otros modelos publicada por el autor. Cualquier comparac
 
 | Modelo | Parametros | Contexto | Vocabulario | Datos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| arihntk/gpt-from-scratch | 11,14 M | 256 | 1024 | Tiny Shakespeare (399 k tokens de entrenamiento) | MIT | HuggingFace + GitHub, pesos safetensors y `.pt` |
-| GPT-2 small (OpenAI) | 124 M | 1024 | 50.257 | WebText (aprox. 40 GB de texto web) | MIT | HuggingFace, amplio soporte en llama.cpp, vLLM, TGI |
+| arihntk/gpt-from-scratch | 11,14 M | 256 | 1024 | Tiny Shakespeare (399 k tokens de entrenamiento) | MIT | Hugging Face + GitHub, pesos safetensors y `.pt` |
+| GPT-2 small (OpenAI) | 124 M | 1024 | 50.257 | WebText (aprox. 40 GB de texto web) | MIT | Hugging Face, amplio soporte en llama.cpp, vLLM, TGI |
 | Modelos nanoGPT de Shakespeare (referencia habitual de la comunidad) | ~10 M (variable según configuración) | 256 | 65 o 1024 según configuración | Tiny Shakespeare | MIT en la mayoría de implementaciones | Repositorios de GitHub, sin checkpoint canónico único |
 | Modelos GPT-2 Tiny de la comunidad | 10-15 M | 256-1024 | 50.257 | Variable | Variable | Variable, frecuentemente sin evaluación publicada |
 
@@ -110,7 +110,7 @@ Datos de benchmarks comparativos: no disponibles. La comparación se limita a es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arihntk/gpt-from-scratch
+- Modelo en Hugging Face: https://huggingface.co/arihntk/gpt-from-scratch
 - Repositorio de código fuente: https://github.com/arihntk/gpt-from-scratch
 - Log de entrenamiento completo: https://huggingface.co/arihntk/gpt-from-scratch/blob/main/log.txt
 - Historial de evaluación (`history.json`): https://huggingface.co/arihntk/gpt-from-scratch/blob/main/history.json

@@ -86,6 +86,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Tevior/moge-UMO-ST-relative-delta-control80
+- Repositorio de Hugging Face: https://huggingface.co/Tevior/moge-UMO-ST-relative-delta-control80
 - Codigo de entrenamiento e inferencia: https://github.com/CHDTevior/moge_UMO_ST (rama `agent/relative-delta-control-hoi-plan`)
 - No se proporcionan otros enlaces (papers, demos) en la informacion disponible.

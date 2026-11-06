@@ -25,7 +25,7 @@ La licencia es Apache 2.0, lo que permite uso comercial y modificación. Sin emb
 
 FourCastNet se basa en el operador neuronal de Fourier adaptativo (AFNO), una variante de los operadores neuronales de Fourier (FNO) que opera directamente en el dominio espectral. La arquitectura original procesa los campos de entrada (variables atmosféricas en una malla de 720×1440, equivalente a 0,25 grados) mediante una serie de bloques que aplican transformadas de Fourier rápidas (FFT) y filtros adaptativos aprendidos. Esto permite modelar interacciones globales sin depender de la resolución espacial, a diferencia de las redes convolucionales tradicionales.
 
-El entrenamiento se realiza con datos de reanálisis ERA5, que proporcionan campos atmosféricos históricos con una resolución temporal horaria. En esta implementación, OneScience-Group proporciona un subconjunto del dataset ERA5 (disponible en HuggingFace) y scripts para entrenamiento en una o varias GPU mediante `torchrun`. No se especifica el número total de tokens ni la composición exacta del dataset, pero el paper original describe un entrenamiento con 20 variables atmosféricas y una resolución temporal de 6 horas. Tampoco se menciona el uso de técnicas de RLHF o DPO, ya que no es un modelo generativo de lenguaje.
+El entrenamiento se realiza con datos de reanálisis ERA5, que proporcionan campos atmosféricos históricos con una resolución temporal horaria. En esta implementación, OneScience-Group proporciona un subconjunto del dataset ERA5 (disponible en Hugging Face) y scripts para entrenamiento en una o varias GPU mediante `torchrun`. No se especifica el número total de tokens ni la composición exacta del dataset, pero el paper original describe un entrenamiento con 20 variables atmosféricas y una resolución temporal de 6 horas. Tampoco se menciona el uso de técnicas de RLHF o DPO, ya que no es un modelo generativo de lenguaje.
 
 Una innovación destacable es la eficiencia computacional: AFNO reduce la complejidad de atención de O(n²) a O(n log n) gracias al uso de la FFT, lo que permite manejar mallas globales de alta resolución con un coste razonable.
 
@@ -83,8 +83,8 @@ FourCastNet se diferencia de Pangu-Weather y GraphCast por su uso de operadores 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OneScience-Group/FourCastNet
-- Dataset ERA5 en HuggingFace: https://huggingface.co/datasets/OneScience-Group/ERA5 (en la model card se indica `OneScience/ERA5`)
+- Repositorio Hugging Face: https://huggingface.co/OneScience-Group/FourCastNet
+- Dataset ERA5 en Hugging Face: https://huggingface.co/datasets/OneScience-Group/ERA5 (en la model card se indica `OneScience/ERA5`)
 - Paper original: https://arxiv.org/abs/2202.11214
 - Repositorio OneScience en GitHub: https://github.com/onescience-ai/OneScience
 - Repositorio OneSkills en GitHub: https://github.com/onescience-ai/oneskills

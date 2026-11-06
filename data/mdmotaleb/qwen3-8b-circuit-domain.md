@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mdmotaleb/qwen3-8b-circuit-domain` es un ajuste fino (fine-tuning) del modelo base `unsloth/qwen2.5-coder-3b-instruct-bnb-4bit`, realizado con la librería TRL de HuggingFace mediante entrenamiento supervisado (SFT). A pesar de su nombre, que sugiere una arquitectura de 8 mil millones de parámetros, el modelo base real es de 3 mil millones de parámetros, lo que genera una discrepancia significativa entre la denominación y el contenido real.
+El modelo `mdmotaleb/qwen3-8b-circuit-domain` es un ajuste fino (fine-tuning) del modelo base `unsloth/qwen2.5-coder-3b-instruct-bnb-4bit`, realizado con la librería TRL de Hugging Face mediante entrenamiento supervisado (SFT). A pesar de su nombre, que sugiere una arquitectura de 8 mil millones de parámetros, el modelo base real es de 3 mil millones de parámetros, lo que genera una discrepancia significativa entre la denominación y el contenido real.
 
 El repositorio tiene un tamaño de 0,4 GB, consistente con un modelo de 3B parámetros en cuantización de 4 bits, y fue creado el 31 de agosto de 2026. La ficha técnica del autor no proporciona información sobre el dataset de entrenamiento, la licencia, los idiomas soportados ni los benchmarks, lo que limita la evaluación objetiva del modelo. Su relevancia actual es baja, dado que no tiene descargas ni validación comunitaria, y la información disponible es insuficiente para recomendar su uso en producción.
 
@@ -75,7 +75,7 @@ La comparación directa con Qwen3-8B no es válida, ya que el modelo analizado n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdmotaleb/qwen3-8b-circuit-domain
+- Modelo en Hugging Face: https://huggingface.co/mdmotaleb/qwen3-8b-circuit-domain
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-coder-3b-instruct-bnb-4bit
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8

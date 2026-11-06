@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| VoragoStudios/gct-opus-mt-tc-big-ar-en-ct2 | no disponible | no disponible | CC BY 4.0 | CTranslate2 int8 | HuggingFace |
-| Helsinki-NLP/opus-mt-tc-big-ar-en | no disponible | no disponible | CC BY 4.0 | safetensors (transformers) | HuggingFace |
-| Otros modelos OPUS-MT ar-en | no disponible | no disponible | CC BY 4.0 | safetensors / CTranslate2 | HuggingFace |
+| VoragoStudios/gct-opus-mt-tc-big-ar-en-ct2 | no disponible | no disponible | CC BY 4.0 | CTranslate2 int8 | Hugging Face |
+| Helsinki-NLP/opus-mt-tc-big-ar-en | no disponible | no disponible | CC BY 4.0 | safetensors (transformers) | Hugging Face |
+| Otros modelos OPUS-MT ar-en | no disponible | no disponible | CC BY 4.0 | safetensors / CTranslate2 | Hugging Face |
 
 La comparativa se limita al modelo original del que deriva esta conversion, ya que no se dispone de datos de rendimiento de alternativas en la informacion proporcionada.
 
@@ -79,7 +79,7 @@ La comparativa se limita al modelo original del que deriva esta conversion, ya q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VoragoStudios/gct-opus-mt-tc-big-ar-en-ct2
+- Repositorio Hugging Face: https://huggingface.co/VoragoStudios/gct-opus-mt-tc-big-ar-en-ct2
 - Modelo original: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-ar-en
 - Proyecto OPUS-MT: https://github.com/Helsinki-NLP/OPUS-MT
 - CTranslate2: https://github.com/OpenNMT/CTranslate2

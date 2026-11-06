@@ -2,7 +2,7 @@
 
 ## Resumen
 
-roblox-sigmoida-pal-v0.5-state es un ajuste fino (LoRA + SFT) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario mogaqu1 en HuggingFace. El modelo está especializado en conversaciones de temática gaming en ruso, concretamente en torno a Roblox, y se distribuye en formato GGUF para su uso con llama.cpp y entornos compatibles. El pipeline declarado es image-text-to-text, aunque el autor no documenta capacidades de visión en la model card.
+roblox-sigmoida-pal-v0.5-state es un ajuste fino (LoRA + SFT) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario mogaqu1 en Hugging Face. El modelo está especializado en conversaciones de temática gaming en ruso, concretamente en torno a Roblox, y se distribuye en formato GGUF para su uso con llama.cpp y entornos compatibles. El pipeline declarado es image-text-to-text, aunque el autor no documenta capacidades de visión en la model card.
 
 El modelo cuenta con 4.205.751.296 parámetros (aproximadamente 4,2 mil millones) y hereda la arquitectura y la ventana de contexto del Qwen3.5-4B original, si bien la documentación disponible no detalla estos valores. La licencia es Apache 2.0 y el único idioma declarado es el ruso. El repositorio ocupa 10,3 GB e incluye tres cuantizaciones GGUF (Q4_K_M, Q5_K_M y Q8_0).
 
@@ -79,5 +79,5 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mogaqu1/roblox-sigmoida-pal-v0.5-state
+- Hugging Face: https://huggingface.co/mogaqu1/roblox-sigmoida-pal-v0.5-state
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-whisper-base_ro-80mel es un ajuste fino (fine-tune) del modelo `openai/whisper-base` para reconocimiento automático del habla (ASR) en rumano. Lo publica el usuario IonGrozea en HuggingFace y parte del checkpoint base de OpenAI, un transformer encoder-decoder de 72.593.920 parámetros (aproximadamente 74 M) especializado en transcripción de audio con ventanas de 30 segundos y espectrogramas log-Mel de 80 bandas. El modelo resuelve el problema clásico de ASR en un idioma con menos recursos que el inglés: adaptar un modelo multilingüe genérico a las particularidades fonéticas, léxicas y de puntuación del rumano.
+whisper-base_ro-80mel es un ajuste fino (fine-tune) del modelo `openai/whisper-base` para reconocimiento automático del habla (ASR) en rumano. Lo publica el usuario IonGrozea en Hugging Face y parte del checkpoint base de OpenAI, un transformer encoder-decoder de 72.593.920 parámetros (aproximadamente 74 M) especializado en transcripción de audio con ventanas de 30 segundos y espectrogramas log-Mel de 80 bandas. El modelo resuelve el problema clásico de ASR en un idioma con menos recursos que el inglés: adaptar un modelo multilingüe genérico a las particularidades fonéticas, léxicas y de puntuación del rumano.
 
 La relevancia práctica del modelo está en su tamaño reducido: con menos de 75 M de parámetros se puede ejecutar en CPU y en GPU de consumo con un consumo de VRAM inferior a 1 GB en fp16, lo que lo hace apto para despliegues en edge, transcripción de grandes volúmenes de audio o prototipado rápido sin infraestructura dedicada. El autor declara un WER de 0,1512 (normalizado) y un CER de 0,0524 sobre un corpus rumano combinado propio, evaluado con beam search de 5 sobre 2000 muestras de validación.
 
@@ -33,7 +33,7 @@ El entrenamiento consiste en un fine-tune supervisado sobre un corpus rumano com
 - Procesamiento de audio en formato log-Mel de 80 bandas, con `WhisperProcessor` para el preprocesado (remuestreo a 16 kHz y extracción de características).
 - Decodificación con beam search (el autor reporta resultados con `num_beams=5`), lo que mejora la precisión frente a la decodificación greedy a costa de mayor latencia.
 - Selección explícita de idioma y tarea mediante tokens de control (`language="romanian"`, `task="transcribe"`).
-- Integración directa con la librería `transformers` (`WhisperForConditionalGeneration`), lo que facilita el uso en pipelines de HuggingFace.
+- Integración directa con la librería `transformers` (`WhisperForConditionalGeneration`), lo que facilita el uso en pipelines de Hugging Face.
 - No hay evidencia publicada de soporte de tool calling, function calling, capacidades de agente, multi-step reasoning, visión, audio generation ni traducción (task="translate") en este fine-tune.
 - Al derivar de Whisper base multilingüe, es plausible que conserve parte de las capacidades del modelo original, pero el autor no documenta ningún idioma distinto del rumano.
 
@@ -92,7 +92,7 @@ Los recuentos de parámetros de los modelos originales de OpenAI proceden de su 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IonGrozea/whisper-base_ro-80mel
+- Modelo en Hugging Face: https://huggingface.co/IonGrozea/whisper-base_ro-80mel
 - Modelo base: https://huggingface.co/openai/whisper-base
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper
 - faster-whisper (CTranslate2, cuantización int8/int16): https://github.com/SYSTRAN/faster-whisper

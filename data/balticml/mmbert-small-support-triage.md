@@ -89,7 +89,7 @@ No se dispone de comparación con LLM alojados en la información proporcionada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/balticml/mmbert-small-support-triage
+- Hugging Face: https://huggingface.co/balticml/mmbert-small-support-triage
 - Repositorio de código, pipeline de datos y benchmark: https://github.com/balticml/support-triage
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-small
 - Dataset Bitext: https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset

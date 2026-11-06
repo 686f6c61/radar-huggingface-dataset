@@ -85,10 +85,10 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 | Modelo | Parametros | Contexto | Rendimiento en matematicas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Math_Qwen3-1.7B_Qwen3-4B-Non-Thinking-RL-Math-Step500 | 2,03 B | No disponible (base: 32.768) | avg6 46,16; MATH500 82,4; AIME24 34,8 | Apache 2.0 | HuggingFace, safetensors |
-| Qwen/Qwen3-1.7B (modelo base) | 2,03 B | 32.768 nativo | No disponible | Apache 2.0 | HuggingFace |
-| Keven16/Qwen3-4B-Non-Thinking-RL-Math-Step500 (profesor) | Aprox. 4 B | No disponible | No disponible | No disponible | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,5 B | No disponible | No disponible | MIT (segun su propia publicacion) | HuggingFace |
+| Math_Qwen3-1.7B_Qwen3-4B-Non-Thinking-RL-Math-Step500 | 2,03 B | No disponible (base: 32.768) | avg6 46,16; MATH500 82,4; AIME24 34,8 | Apache 2.0 | Hugging Face, safetensors |
+| Qwen/Qwen3-1.7B (modelo base) | 2,03 B | 32.768 nativo | No disponible | Apache 2.0 | Hugging Face |
+| Keven16/Qwen3-4B-Non-Thinking-RL-Math-Step500 (profesor) | Aprox. 4 B | No disponible | No disponible | No disponible | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,5 B | No disponible | No disponible | MIT (segun su propia publicacion) | Hugging Face |
 
 Los datos de rendimiento de los modelos alternativos no estan disponibles en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa rigurosa; la unica cifra verificable aqui es la del modelo descrito, y procede del propio autor.
 
@@ -107,7 +107,7 @@ Los datos de rendimiento de los modelos alternativos no estan disponibles en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gasolsun/Math_Qwen3-1.7B_Qwen3-4B-Non-Thinking-RL-Math-Step500
+- Modelo en Hugging Face: https://huggingface.co/gasolsun/Math_Qwen3-1.7B_Qwen3-4B-Non-Thinking-RL-Math-Step500
 - Dataset (banco de preguntas): https://huggingface.co/datasets/gasolsun/Math_Qwen3-1.7B_Qwen3-4B-Non-Thinking-RL-Math-Step500
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Modelo profesor: https://huggingface.co/Keven16/Qwen3-4B-Non-Thinking-RL-Math-Step500

@@ -67,7 +67,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 3D-LDMs-for-CT-MAR (este modelo) | no disponible | no aplicable | no disponible | Apache 2.0 | Pesos en HuggingFace y codigo en GitHub |
+| 3D-LDMs-for-CT-MAR (este modelo) | no disponible | no aplicable | no disponible | Apache 2.0 | Pesos en Hugging Face y codigo en GitHub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xabimoreno/3D-LDMs-for-CT-MAR
+- Modelo en Hugging Face: https://huggingface.co/xabimoreno/3D-LDMs-for-CT-MAR
 - Repositorio GitHub: https://github.com/ETRO-MIT/3D-LDMs-for-CT-MAR
 - README del repositorio: https://github.com/ETRO-MIT/3D-LDMs-for-CT-MAR/blob/main/README.md
 - Citacion del articulo (BibTeX incluido en la model card): Moreno Casado, X., Vandemeulebroucke, J., Ceranka, J. "Large-Volume Conditioned 3D Latent Diffusion Models for CT Metal Artifact Suppression", DGM4MICCAI, MICCAI Workshop, 2026 (in press). No se proporciona DOI ni enlace directo al paper en la informacion disponible.

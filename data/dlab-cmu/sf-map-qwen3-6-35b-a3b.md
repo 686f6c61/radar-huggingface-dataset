@@ -70,8 +70,8 @@ No se dispone de información sobre mapas de sensibilidad comparables para otros
 
 ## Enlaces
 
-- [HuggingFace - dlab-cmu/sf-map-qwen3.6-35b-a3b](https://huggingface.co/dlab-cmu/sf-map-qwen3.6-35b-a3b)
-- [HuggingFace - dlab-cmu/sf-grids](https://huggingface.co/dlab-cmu/sf-grids)
+- [Hugging Face - dlab-cmu/sf-map-qwen3.6-35b-a3b](https://huggingface.co/dlab-cmu/sf-map-qwen3.6-35b-a3b)
+- [Hugging Face - dlab-cmu/sf-grids](https://huggingface.co/dlab-cmu/sf-grids)
 - [GitHub - QwenLM/Qwen3.6](https://github.com/QwenLM/Qwen3.6)
 - [Guía para ejecutar Qwen 3.6 localmente (dev.to)](https://dev.to/purpledoubled/how-to-run-qwen-36-locally-27b-dense-35b-moe-and-coding-variants-setup-guide-4di)
 - [Guía completa de Qwen 3.6 (insiderllm.com)](https://insiderllm.com/guides/qwen-3-6-local-ai-guide/)

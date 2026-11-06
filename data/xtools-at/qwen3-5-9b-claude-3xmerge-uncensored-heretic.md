@@ -108,7 +108,7 @@ Resultados reportados por el modelo fuente `TeichAI/Qwen3.5-9B-Fable-5-v1`, que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xtools-at/Qwen3.5-9B-Claude-3xMerge-UNCENSORED-heretic
+- Modelo en Hugging Face: https://huggingface.co/xtools-at/Qwen3.5-9B-Claude-3xMerge-UNCENSORED-heretic
 - Modelo base del merge: https://huggingface.co/xtools-at/Qwen3.5-9B-Claude-3xMerge
 - Herramienta Heretic: https://heretic-project.org
 - Modelo fuente Qwythos-9B-v2: https://huggingface.co/empero-ai/Qwythos-9B-v2

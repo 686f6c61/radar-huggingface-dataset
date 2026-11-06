@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `yolo90413/mine`, publicado por el usuario `yolo90413` en HuggingFace, es un artefacto del que no se dispone de informacion tecnica publica. La model card asociada contiene unicamente el campo `license: afl-3.0` y ningun otro contenido: no hay descripcion, no hay arquitectura declarada, no hay datos de entrenamiento, no hay ejemplos de uso y no hay resultados de evaluacion. El pipeline no esta declarado y el campo de idiomas aparece vacio.
+El repositorio `yolo90413/mine`, publicado por el usuario `yolo90413` en Hugging Face, es un artefacto del que no se dispone de informacion tecnica publica. La model card asociada contiene unicamente el campo `license: afl-3.0` y ningun otro contenido: no hay descripcion, no hay arquitectura declarada, no hay datos de entrenamiento, no hay ejemplos de uso y no hay resultados de evaluacion. El pipeline no esta declarado y el campo de idiomas aparece vacio.
 
 Los unicos metadatos disponibles son la licencia (AFL-3.0), la region declarada (`us`), un recuento de cero descargas y cero likes, y unas fechas de creacion y actualizacion identicas (2026-09-10T02:07:32Z). El nombre del repositorio ("mine") y el identificador del autor sugieren un espacio de trabajo personal o de pruebas, pero esto es una inferencia a partir de la nomenclatura y no un dato confirmado por el autor. La fecha registrada es posterior a la fecha habitual de consulta, lo que apunta a un posible error de metadatos, a un repositorio de prueba o a una carga programada.
 
@@ -42,7 +42,7 @@ No es posible enumerar capacidades concretas: el autor no ha publicado ninguna d
 - Razonamiento, matematicas o codigo: no disponible (no confirmado).
 - Soporte de tool calling o function calling: no disponible (no confirmado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no confirmado).
-- Capacidades multilingues: no disponible; el campo de idiomas de HuggingFace aparece vacio.
+- Capacidades multilingues: no disponible; el campo de idiomas de Hugging Face aparece vacio.
 - Capacidades multimodales (vision, audio): no disponible (no confirmado).
 - Modo de razonamiento explicito (thinking mode): no disponible (no confirmado).
 
@@ -77,7 +77,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yolo90413/mine | no disponible | no disponible | AFL-3.0 | Repositorio publico en HuggingFace, 0 descargas |
+| yolo90413/mine | no disponible | no disponible | AFL-3.0 | Repositorio publico en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yolo90413/mine
+- Hugging Face: https://huggingface.co/yolo90413/mine
 - Model card: sin contenido adicional (unicamente el campo de licencia `afl-3.0`)
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible

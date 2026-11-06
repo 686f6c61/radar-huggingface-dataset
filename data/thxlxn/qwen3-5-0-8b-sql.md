@@ -93,7 +93,7 @@ No se dispone de datos de otros modelos text-to-SQL especializados (por ejemplo,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thxlxn/qwen3.5-0.8b-sql
+- Modelo en Hugging Face: https://huggingface.co/thxlxn/qwen3.5-0.8b-sql
 - Repositorio del pipeline de destilación: https://github.com/thxlxn/qwen3.5-0.8b-sql-distillation
 - Dataset base: https://huggingface.co/datasets/b-mc2/sql-create-context
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

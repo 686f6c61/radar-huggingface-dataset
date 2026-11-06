@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jayden es un adaptador LoRA de difusion para generacion de imagenes a partir de texto (text-to-image), publicado por el usuario jaydenjames01 en HuggingFace. Se trata de un ajuste fino de bajo rango que se monta sobre el modelo base krea/Krea-2-Turbo, por lo que no es un modelo autonomo: necesita descargar y ejecutar el modelo base para funcionar. El repositorio tiene un tamano de 0,1 GB y se distribuye a traves de la libreria diffusers.
+jayden es un adaptador LoRA de difusion para generacion de imagenes a partir de texto (text-to-image), publicado por el usuario jaydenjames01 en Hugging Face. Se trata de un ajuste fino de bajo rango que se monta sobre el modelo base krea/Krea-2-Turbo, por lo que no es un modelo autonomo: necesita descargar y ejecutar el modelo base para funcionar. El repositorio tiene un tamano de 0,1 GB y se distribuye a traves de la libreria diffusers.
 
 El adaptador se activa mediante la palabra clave (trigger word) JA$D#N1, tal como indica la model card del autor. La informacion publicada se limita a esa palabra de activacion, la etiqueta de modelo base y una imagen de ejemplo; no se documentan datos de entrenamiento, rango del LoRA, composicion del dataset ni hiperparametros.
 
@@ -84,7 +84,7 @@ No hay datos publicados de rendimiento ni de licencia que permitan una comparati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydenjames01/jayden
+- Modelo en Hugging Face: https://huggingface.co/jaydenjames01/jayden
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de diffusers: https://huggingface.co/docs/diffusers/index
 - No se han encontrado papers, blogs, repositorios, demos ni articulos adicionales en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CobrIX-1.5-preview-Coder-Full-72B-A18B es un modelo de lenguaje decoder-only de tipo mixture-of-experts (MoE) publicado por CobrIX en HuggingFace. Se construye a partir del modelo denso Qwen 3.5 `empero-ai/Qwythos-9B-v2` como base y de cinco expertos densos afinados sobre esa misma familia, especializados en código y ciberseguridad mediante DPO y SFT, en inglés y portugués. No se ha utilizado mergekit para el ensamblado.
+CobrIX-1.5-preview-Coder-Full-72B-A18B es un modelo de lenguaje decoder-only de tipo mixture-of-experts (MoE) publicado por CobrIX en Hugging Face. Se construye a partir del modelo denso Qwen 3.5 `empero-ai/Qwythos-9B-v2` como base y de cinco expertos densos afinados sobre esa misma familia, especializados en código y ciberseguridad mediante DPO y SFT, en inglés y portugués. No se ha utilizado mergekit para el ensamblado.
 
 El modelo totaliza 71.769.534.976 parámetros (unos 71,8B), pero solo activa aproximadamente 18B por token gracias a un enrutado top-2 sobre 13 expertos locales más un experto compartido siempre activo. La arquitectura combina capas de atención lineal y atención completa (híbrida) con bloques MoE que sustituyen al MLP denso en cada capa, y se distribuye con código personalizado (`qwen35_moe`) cargable mediante `trust_remote_code`.
 
@@ -93,7 +93,7 @@ No se dispone en la información proporcionada de datos de rendimiento, contexto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CobrIX/CobrIX-1.5-preview-Coder-Full-72B-A18B
+- Modelo en Hugging Face: https://huggingface.co/CobrIX/CobrIX-1.5-preview-Coder-Full-72B-A18B
 - Modelo base: https://huggingface.co/empero-ai/Qwythos-9B-v2
 - Página del ecosistema CobrIX / CobrIX Code y lista de espera: https://cobrix.vercel.app/coder
 - Contacto para feedback del preview: suporte.cobrix@gmail.com

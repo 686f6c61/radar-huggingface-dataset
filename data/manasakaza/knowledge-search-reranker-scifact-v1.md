@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Inferencia en CPU: el modelo es pequeño (22,7 M de parámetros) y puede ejecutarse en CPU con baja latencia. Una sola inferencia sobre pares de hasta 512 tokens puede tardar entre 5 y 15 ms en un procesador moderno, dependiendo del hardware.
 - GPU recomendada: cualquier GPU con al menos 2 GB de VRAM es suficiente para el modelo en FP32 (aproximadamente 91 MB de pesos). Una RTX 3060 o superior permitiría procesar lotes pequeños con alta velocidad.
 - Se puede ejecutar en hardware de consumo (GPU de 6 GB o más) sin problemas, e incluso en CPU pura para aplicaciones de baja frecuencia.
-- Opciones de despliegue: el modelo es compatible con la librería Sentence-transformers, que permite cargarlo y usarlo directamente en Python. También puede exportarse a ONNX o TensorFlow para inferencia en otros entornos, y es compatible con `text-embeddings-inference` según los tags de HuggingFace.
+- Opciones de despliegue: el modelo es compatible con la librería Sentence-transformers, que permite cargarlo y usarlo directamente en Python. También puede exportarse a ONNX o TensorFlow para inferencia en otros entornos, y es compatible con `text-embeddings-inference` según los tags de Hugging Face.
 - No se dispone de datos de latencia o throughput específicos para este modelo, pero al ser un cross-encoder pequeño, la latencia es dominada por la codificación conjunta del par de textos.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ El modelo base es el mismo que el original, por lo que la comparación se centra
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ManasaKaza/knowledge-search-reranker-scifact-v1
+- Hugging Face del modelo: https://huggingface.co/ManasaKaza/knowledge-search-reranker-scifact-v1
 - Modelo base: https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2
 - Dataset SciFact: https://huggingface.co/datasets/allenai/scifact
 - Paper de SciFact (arXiv:1908.10084): https://arxiv.org/abs/1908.10084

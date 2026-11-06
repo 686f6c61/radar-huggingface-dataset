@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento ni de especificaciones verificadas de otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kuku810629/krea2-identity-edit
+- Modelo en Hugging Face: https://huggingface.co/kuku810629/krea2-identity-edit
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Pack de nodos ComfyUI-Krea2Edit: https://github.com/lbouaraba/comfyui-krea2edit
 - Codigo de entrenamiento (krea2edit-trainer): https://github.com/lbouaraba/krea2edit-trainer

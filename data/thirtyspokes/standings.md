@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `thirtyspokes/standings` es un repositorio publicado en HuggingFace por el usuario `thirtyspokes`, con fecha de creación el 15 de julio de 2026 y última actualización el 14 de agosto de 2026. A fecha de esta ficha, el repositorio no incluye información pública sobre arquitectura, parámetros, licencia, idiomas o pipeline de uso. Cuenta con 2 likes y cero descargas, lo que sugiere que se trata de un proyecto incipiente o de acceso restringido.
+El modelo `thirtyspokes/standings` es un repositorio publicado en Hugging Face por el usuario `thirtyspokes`, con fecha de creación el 15 de julio de 2026 y última actualización el 14 de agosto de 2026. A fecha de esta ficha, el repositorio no incluye información pública sobre arquitectura, parámetros, licencia, idiomas o pipeline de uso. Cuenta con 2 likes y cero descargas, lo que sugiere que se trata de un proyecto incipiente o de acceso restringido.
 
 Dado que no se dispone de datos técnicos verificables, esta ficha se limita a documentar la existencia del repositorio y a señalar explícitamente la ausencia de información. Cualquier intento de especificar arquitectura, tamaño o capacidades sería especulativo y contrario al rigor exigido en este análisis. Se recomienda consultar directamente el repositorio para obtener actualizaciones futuras.
 
@@ -53,6 +53,6 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo, no es p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thirtyspokes/standings
+- Repositorio en Hugging Face: https://huggingface.co/thirtyspokes/standings
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) asociados a este modelo.

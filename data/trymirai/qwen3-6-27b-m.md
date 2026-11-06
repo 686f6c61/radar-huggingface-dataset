@@ -78,11 +78,11 @@ La cuantización de Mirai se posiciona como comparable en calidad a la Q4_K_M de
 - No se dispone de información detallada sobre sesgos del modelo ni sobre su comportamiento en idiomas distintos del inglés.
 - La licencia Apache 2.0 permite uso comercial, pero se debe revisar la licencia del modelo base Qwen3.6-27B para confirmar restricciones adicionales (aunque la model card indica que la licencia es Apache 2.0).
 - La documentación de la librería `uzu` es limitada y el ecosistema es joven; puede haber menos soporte comunitario que con GGUF o Transformers.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es un checkpoint reciente y poco probado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un checkpoint reciente y poco probado por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trymirai/Qwen3.6-27B-M
+- Modelo en Hugging Face: https://huggingface.co/trymirai/Qwen3.6-27B-M
 - Modelo base Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
 - Guía de uso de la librería uzu: https://github.com/trymirai/uzu/blob/how-to/docs/how-to-run-uzu.md
 - Documentación de API de Mirai: https://docs.trymirai.com/

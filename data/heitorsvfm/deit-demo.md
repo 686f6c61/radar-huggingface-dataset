@@ -70,7 +70,7 @@ No se dispone de modelos comparables directamente en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/heitorsvfm/deit-demo
+- Repositorio Hugging Face: https://huggingface.co/heitorsvfm/deit-demo
 - Documentacion de DeiT en Hugging Face: https://huggingface.co/docs/transformers/v4.18.0/en/model_doc/deit
 - Repositorio oficial de DeiT en GitHub: https://github.com/facebookresearch/deit
 - Implementacion de DeiT en timm: https://github.com/huggingface/pytorch-image-models/blob/main/timm/models/deit.py

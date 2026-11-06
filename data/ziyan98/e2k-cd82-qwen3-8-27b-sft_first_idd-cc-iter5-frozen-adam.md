@@ -102,6 +102,6 @@ Contexto de lectura: el primer rollout de RL tras un bloque SFT-only lo juega la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter5-frozen-adam
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter5-frozen-adam
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada (la model card remite a artefactos internos del run como `knowledge-set/20260912-0920-final/`, `megatron/args.json` y `E2K_CONVERSION.json`, sin URL pública).

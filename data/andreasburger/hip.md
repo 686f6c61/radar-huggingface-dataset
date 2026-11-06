@@ -4,7 +4,7 @@
 
 HIP (Hessian Interatomic Potentials Without Derivatives) es un modelo de potencial interatómico basado en aprendizaje automático, desarrollado por un equipo de investigadores de varias instituciones (Andreas Burger, Luca Thiede, Nikolaj Rønne, Varinia Bernales, Nandita Vijaykumar, Tejs Vegge, Arghya Bhowmik y Alan Aspuru-Guzik). Su objetivo es predecir la matriz hessiana (segundas derivadas de la energía respecto a las posiciones atómicas) sin calcular derivadas explícitas, lo que acelera y estabiliza las simulaciones de dinámica molecular y el cálculo de propiedades vibracionales en materiales.
 
-El modelo se publica en el repositorio de HuggingFace `andreasburger/hip`, junto con un artículo en arXiv (2509.21624) y un repositorio de código en GitHub. Se ofrecen tres checkpoints: `hip_v2` (entrenado de extremo a extremo, usado en el paper), `hesspred_v1` (afinado a partir de HORM EquiformerV2 para predecir Hessianos) y `hip_mace` (no publicado, integrado con el paquete hip-mace). La arquitectura exacta, el número de parámetros y la licencia no se especifican en la ficha pública.
+El modelo se publica en el repositorio de Hugging Face `andreasburger/hip`, junto con un artículo en arXiv (2509.21624) y un repositorio de código en GitHub. Se ofrecen tres checkpoints: `hip_v2` (entrenado de extremo a extremo, usado en el paper), `hesspred_v1` (afinado a partir de HORM EquiformerV2 para predecir Hessianos) y `hip_mace` (no publicado, integrado con el paquete hip-mace). La arquitectura exacta, el número de parámetros y la licencia no se especifican en la ficha pública.
 
 La relevancia actual de HIP reside en que los potenciales interatómicos basados en redes neuronales son una alternativa eficiente a los cálculos de primeros principios (DFT) para simulaciones a gran escala. La predicción directa de Hessianos sin derivadas reduce el coste computacional y evita errores numéricos asociados a la diferenciación automática o a las diferencias finitas.
 
@@ -46,7 +46,7 @@ No se especifican los datos de entrenamiento (número de estructuras, composici�
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye tablas comparativas ni métricas de precisión o velocidad.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye tablas comparativas ni métricas de precisión o velocidad.
 
 ## Requisitos de hardware
 
@@ -66,6 +66,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/andreasburger/hip
+- Repositorio de Hugging Face: https://huggingface.co/andreasburger/hip
 - Repositorio de código: https://github.com/BurgerAndreas/hip
 - Paper en arXiv: https://arxiv.org/abs/2509.21624

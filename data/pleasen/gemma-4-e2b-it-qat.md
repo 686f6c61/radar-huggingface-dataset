@@ -18,7 +18,7 @@ La relevancia de esta ficha concreta es doble. Por un lado, documenta el estado 
 | Longitud de contexto | 8 000 tokens según gemma4.dev para Gemma 4 E2B; la ficha de LM Studio menciona "contexto largo" sin cifra concreta. No disponible con confirmación oficial |
 | Tipos de cuantización | GGUF en Q4_K_M y Q8_0 para las capas de visión; proyector multimodal `mmproj-BF16`; embeddings posicionales en FP16 (originalmente FP32) |
 | Idiomas soportados | No disponible en la información proporcionada. La familia Gemma es multilingüe, pero este repositorio no detalla cobertura |
-| Licencia | Gemma Terms of Use (la model card indica `license: gemma`); el campo de licencia del repositorio en HuggingFace figura como no disponible |
+| Licencia | Gemma Terms of Use (la model card indica `license: gemma`); el campo de licencia del repositorio en Hugging Face figura como no disponible |
 | Formato de pesos | GGUF cuantizado (tags del repositorio: `gguf`), más fichero `mmproj` para el proyector multimodal; el conteo de parámetros procede de metadatos safetensors |
 | Tamano del repositorio | 2,9 GB |
 | Autoria | `pleasen` (repack de terceros); modelo base desarrollado por Google DeepMind |
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - Cabe en GPU de consumo: cualquier GPU con 6 GB o más puede ejecutar la cuantización Q4_K_M; 8 GB permiten Q8_0 con contexto completo. Modelos como RTX 3060 12 GB, RTX 4060, RTX 4070 o superiores son suficientes.
 - Ejecución en CPU: la variante E2B está descrita como capaz de funcionar íntegramente en CPU, lo que abre la puerta a mini-PC, portátiles sin GPU dedicada y placas tipo Raspberry Pi 5 con resultados de velocidad no documentados.
 - Aceleración en dispositivo: existe una ficha oficial de Gemma-4-E2B-it en Qualcomm AI Hub, lo que indica soporte de despliegue en hardware Snapdragon.
-- Opciones de despliegue: llama.cpp y `llama-server` (formato nativo GGUF, cargando el `mmproj` para visión), Ollama y LM Studio para uso local, y servicios compatibles con endpoints de HuggingFace, según el tag `endpoints_compatible` del repositorio. vLLM tiene soporte limitado de GGUF, por lo que no es la opción natural para esta build.
+- Opciones de despliegue: llama.cpp y `llama-server` (formato nativo GGUF, cargando el `mmproj` para visión), Ollama y LM Studio para uso local, y servicios compatibles con endpoints de Hugging Face, según el tag `endpoints_compatible` del repositorio. vLLM tiene soporte limitado de GGUF, por lo que no es la opción natural para esta build.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo para este repositorio.
 
 ## Comparativa con modelos similares
@@ -86,13 +86,13 @@ Las fuentes consultadas se contradicen en un punto relevante: gemma4.dev describ
 - Discrepancia en el recuento de parámetros: 4,63 mil millones en safetensors frente a los ~2,1 mil millones que citan otras fuentes para E2B. Afecta directamente a las estimaciones de VRAM y a la planificación de despliegue.
 - Idioma y contexto: no se documenta cobertura de idiomas ni se confirma la ventana de contexto. Si el limite real es de 8 000 tokens, los casos con documentación extensa requerirán troceado o resumen previo.
 - Alucinación: no se han publicado evaluaciones de fidelidad ni tasas de alucinación para este repack. En modelos de este tamano el riesgo es apreciable en tareas de recuperación factual y cálculo.
-- Licencia: la model card indica `license: gemma`, por lo que se aplican los términos de uso de Gemma, incluida su política de usos prohibidos. El campo de licencia del repositorio en HuggingFace aparece como no disponible, lo que puede complicar la verificación automática del cumplimiento.
+- Licencia: la model card indica `license: gemma`, por lo que se aplican los términos de uso de Gemma, incluida su política de usos prohibidos. El campo de licencia del repositorio en Hugging Face aparece como no disponible, lo que puede complicar la verificación automática del cumplimiento.
 - Uso comercial: al no estar confirmada la licencia a nivel de metadatos del repositorio, conviene revisar los términos de Gemma antes de integrar el modelo en un producto.
 - Sin benchmarks: no hay datos publicados de MMLU, GSM8K, HumanEval ni evaluaciones multimodales, de modo que no es posible comparar su calidad real con alternativas sin evaluarlo uno mismo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pleasen/Gemma-4-E2B-IT-QAT
+- Repositorio en Hugging Face: https://huggingface.co/pleasen/Gemma-4-E2B-IT-QAT
 - Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Repositorio oficial de referencia: https://huggingface.co/google/gemma-4-E2B-it-qat-mobile-transformers
 - Ficha de Gemma 4 E2B QAT en LM Studio: https://lmstudio.ai/models/google/gemma-4-e2b-qat

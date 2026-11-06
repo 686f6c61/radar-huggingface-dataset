@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iialonso/dama-dmbok-data-quality-auditor` es un modelo de clasificación de texto publicado por el usuario iialonso en HuggingFace. Según las etiquetas del repositorio, se trata de un modelo basado en BERT orientado a tareas de gobierno del dato, auditoría de calidad y marcos empresariales como DAMA-DMBOK y CDMP. El problema que aborda es la evaluación automática de la calidad de datos tabulares y su clasificación conforme a dimensiones de gobierno del dato.
+`iialonso/dama-dmbok-data-quality-auditor` es un modelo de clasificación de texto publicado por el usuario iialonso en Hugging Face. Según las etiquetas del repositorio, se trata de un modelo basado en BERT orientado a tareas de gobierno del dato, auditoría de calidad y marcos empresariales como DAMA-DMBOK y CDMP. El problema que aborda es la evaluación automática de la calidad de datos tabulares y su clasificación conforme a dimensiones de gobierno del dato.
 
 El modelo se distribuye a través de la librería `transformers` con la tarea (`pipeline`) de `text-classification`, y declara compatibilidad con `endpoints_compatible`. Incorpora las etiquetas de idioma `en` y `es`, lo que sugiere soporte para inglés y español, y hace referencia a un dataset propio de evaluación llamado `iialonso/dama-dmbok-data-quality-benchmark`. El repositorio registra cero descargas y cero "likes" en el momento de la consulta, lo que indica que es un modelo recién publicado y sin adopción documentada.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible para este modelo concreto. Como referencia general de la familia BERT en clasificación, los modelos de este tipo suelen caber en menos de 1-2 GB en precisión FP32, pero este dato no está confirmado para este repositorio.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no confirmada; por la naturaleza de los modelos BERT de clasificación, es probable que quepa en GPU de consumo, pero no se aporta confirmación.
-- Opciones de despliegue: al ser un modelo de `transformers`, es compatible con librerías estándar del ecosistema (por ejemplo, HuggingFace Transformers, y presumiblemente Text Generation Inference o similares), aunque no se documentan opciones concretas.
+- Opciones de despliegue: al ser un modelo de `transformers`, es compatible con librerías estándar del ecosistema (por ejemplo, Hugging Face Transformers, y presumiblemente Text Generation Inference o similares), aunque no se documentan opciones concretas.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -74,6 +74,6 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iialonso/dama-dmbok-data-quality-auditor
+- Hugging Face: https://huggingface.co/iialonso/dama-dmbok-data-quality-auditor
 - Dataset referenciado: iialonso/dama-dmbok-data-quality-benchmark (referencia en etiquetas; no se ha proporcionado enlace directo)
 - Paper, blog, repositorio o demo adicionales: no disponible

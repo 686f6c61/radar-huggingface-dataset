@@ -6,7 +6,7 @@ Loom Router 1 es un modelo de enrutamiento de intenciones ultraligero desarrolla
 
 El problema que resuelve es el coste y la latencia de decidir qué herramienta debe manejar una petición en un agente o pipeline de IA. En lugar de invocar un modelo grande para una decisión trivial, este router lo hace en un solo token, en CPU y con un archivo de menos de 3 MB. Está entrenado desde cero con pesos aleatorios, no es un fine-tune de un modelo preentrenado, y alcanza un 86,5 % de precisión sobre 2.969 utterances reales de usuarios. Su relevancia actual radica en la tendencia hacia agentes modulares y eficientes, donde un componente de enrutamiento barato puede reducir drásticamente el consumo de cómputo.
 
-La arquitectura es un transformer causal de tamaño reducido (etiquetado como "llama" en HuggingFace), aunque no se publican detalles de capas, cabezas o dimensión de embedding. La longitud de contexto no está documentada, pero al ser un modelo de clasificación de una sola pasada, el contexto efectivo es el del prompt de entrada. El modelo está disponible en formato safetensors y GGUF, con licencia MIT.
+La arquitectura es un transformer causal de tamaño reducido (etiquetado como "llama" en Hugging Face), aunque no se publican detalles de capas, cabezas o dimensión de embedding. La longitud de contexto no está documentada, pero al ser un modelo de clasificación de una sola pasada, el contexto efectivo es el del prompt de entrada. El modelo está disponible en formato safetensors y GGUF, con licencia MIT.
 
 ## Especificaciones tecnicas
 
@@ -99,6 +99,6 @@ No se dispone de datos de comparación con otros routers de intenciones en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/textilelabs/Loom-Router-1
+- Hugging Face: https://huggingface.co/textilelabs/Loom-Router-1
 - Perfil de Textile Labs: https://huggingface.co/textilelabs
 - No se encontraron otros enlaces relevantes (papers, blogs o repositorios) en la búsqueda web. Los resultados de "loom-router" en PyPI y GitHub corresponden a proyectos no relacionados con este modelo.

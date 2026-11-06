@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Decision-King-v1.1 es un modelo multimodal de tipo image-text-to-text publicado por el usuario xsdfasfgsa en HuggingFace, inicializado a partir de Qwen/Qwen3.8-27B en el commit `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`. Su proposito declarado no es la generacion libre de texto, sino la toma de decisiones estructurada: recibe un estado de contexto (`state`) y un conjunto de preguntas tipificadas (`questions`) y devuelve decisiones con probabilidades asociadas. El modelo se presenta bajo los tags `decision-model`, `direct-logits` y `looped-transformer`.
+Decision-King-v1.1 es un modelo multimodal de tipo image-text-to-text publicado por el usuario xsdfasfgsa en Hugging Face, inicializado a partir de Qwen/Qwen3.8-27B en el commit `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`. Su proposito declarado no es la generacion libre de texto, sino la toma de decisiones estructurada: recibe un estado de contexto (`state`) y un conjunto de preguntas tipificadas (`questions`) y devuelve decisiones con probabilidades asociadas. El modelo se presenta bajo los tags `decision-model`, `direct-logits` y `looped-transformer`.
 
 Cuenta con 27.356.728.560 parametros segun los pesos en safetensors, con un repositorio de 54,7 GB, lo que es coherente con pesos en BF16. La model card indica que requiere una GPU CUDA compatible con BF16 y recomienda 80 GB de VRAM. La licencia es Apache 2.0.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Decision-King-v1.1 | 27,36 B | no disponible | Decision estructurada, looped-transformer, multimodal | Apache 2.0 | HuggingFace (30 descargas) |
-| Qwen/Qwen3.8-27B | no disponible en la informacion | no disponible | Modelo base del que se inicializa | no disponible en la informacion | HuggingFace |
+| Decision-King-v1.1 | 27,36 B | no disponible | Decision estructurada, looped-transformer, multimodal | Apache 2.0 | Hugging Face (30 descargas) |
+| Qwen/Qwen3.8-27B | no disponible en la informacion | no disponible | Modelo base del que se inicializa | no disponible en la informacion | Hugging Face |
 | Alternativas de decision estructurada | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables de la misma categoria de decision estructurada con logits directos.
@@ -85,6 +85,6 @@ No se dispone de informacion sobre modelos comparables de la misma categoria de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xsdfasfgsa/Decision-King-v1.1
+- Modelo en Hugging Face: https://huggingface.co/xsdfasfgsa/Decision-King-v1.1
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B/tree/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Morphy-Math-1.5B es un modelo de generación de texto de 1.543.714.304 parámetros (aproximadamente 1,5 mil millones) publicado por el equipo Moolvylabs en HuggingFace. Se trata del tercer modelo de su familia Morphy y, a diferencia de las entregas anteriores centradas en texto general, se ha construido mediante un ajuste fino selectivo y muy dirigido sobre conjuntos de datos académicos avanzados de matemáticas y física. Deriva del modelo base Qwen2.5-Math-1.5B-Instruct, por lo que hereda la arquitectura transformer decoder-only de la familia Qwen2 y su tokenizador.
+Morphy-Math-1.5B es un modelo de generación de texto de 1.543.714.304 parámetros (aproximadamente 1,5 mil millones) publicado por el equipo Moolvylabs en Hugging Face. Se trata del tercer modelo de su familia Morphy y, a diferencia de las entregas anteriores centradas en texto general, se ha construido mediante un ajuste fino selectivo y muy dirigido sobre conjuntos de datos académicos avanzados de matemáticas y física. Deriva del modelo base Qwen2.5-Math-1.5B-Instruct, por lo que hereda la arquitectura transformer decoder-only de la familia Qwen2 y su tokenizador.
 
 El objetivo declarado por el autor es ofrecer un rendimiento alto en ciencias exactas de nivel universitario (cálculo, integrales impropias, series infinitas, ecuaciones diferenciales no lineales, álgebra lineal espectral y física cuántica con notación bra-ket) manteniendo un tamaño lo bastante reducido como para ejecutarse en hardware de consumo. El modelo se distribuye bajo licencia apache-2.0 y está entrenado únicamente en inglés, idioma que el propio autor recomienda para maximizar la precisión en fórmulas simbólicas y notación científica avanzada.
 
@@ -54,7 +54,7 @@ La innovación declarada por el autor es de naturaleza procedimental, no arquite
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye cifras de MMLU, GSM8K, MATH, HumanEval ni de ningún otro conjunto de evaluación, y tampoco se aportan comparaciones cuantitativas frente al modelo base Qwen2.5-Math-1.5B-Instruct. Las únicas valoraciones de rendimiento presentes en la model card son cualitativas y proceden del propio autor.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye cifras de MMLU, GSM8K, MATH, HumanEval ni de ningún otro conjunto de evaluación, y tampoco se aportan comparaciones cuantitativas frente al modelo base Qwen2.5-Math-1.5B-Instruct. Las únicas valoraciones de rendimiento presentes en la model card son cualitativas y proceden del propio autor.
 
 ## Requisitos de hardware
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Morphy-Math-1.5B | 1.543.714.304 | no disponible | apache-2.0 | Ajuste fino en matemáticas superiores y física cuántica | HuggingFace (moolvylabs) |
-| Qwen2.5-Math-1.5B-Instruct (modelo base) | aproximadamente 1,5 B | no disponible | no disponible en la información proporcionada | Matemáticas con razonamiento integrado con herramientas | HuggingFace (Qwen) |
-| Qwen2.5-Math-7B | aproximadamente 7 B | no disponible | no disponible en la información proporcionada | Matemáticas, escalón superior de la misma familia | HuggingFace (Qwen) |
-| Qwen2.5-1.5B-Instruct | aproximadamente 1,5 B | no disponible | no disponible en la información proporcionada | Propósito general, conversacional | HuggingFace (Qwen) |
+| Morphy-Math-1.5B | 1.543.714.304 | no disponible | apache-2.0 | Ajuste fino en matemáticas superiores y física cuántica | Hugging Face (moolvylabs) |
+| Qwen2.5-Math-1.5B-Instruct (modelo base) | aproximadamente 1,5 B | no disponible | no disponible en la información proporcionada | Matemáticas con razonamiento integrado con herramientas | Hugging Face (Qwen) |
+| Qwen2.5-Math-7B | aproximadamente 7 B | no disponible | no disponible en la información proporcionada | Matemáticas, escalón superior de la misma familia | Hugging Face (Qwen) |
+| Qwen2.5-1.5B-Instruct | aproximadamente 1,5 B | no disponible | no disponible en la información proporcionada | Propósito general, conversacional | Hugging Face (Qwen) |
 
 Nota: los datos de las alternativas no forman parte de la información proporcionada en esta consulta, por lo que se marcan como no disponibles. La comparación relevante y verificable es que Morphy-Math-1.5B es un derivado directo del modelo base, del que no se publican métricas diferenciales.
 
@@ -94,5 +94,5 @@ Nota: los datos de las alternativas no forman parte de la información proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moolvylabs/Morphy-Math-1.5B
+- Modelo en Hugging Face: https://huggingface.co/moolvylabs/Morphy-Math-1.5B
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la información disponible.

@@ -104,7 +104,7 @@ No se dispone de informacion sobre alternativas comparables de la misma categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stereotypes-in-LLMs/qwen3.5-4b-hiring-debias-sft-uk
+- Modelo en Hugging Face: https://huggingface.co/Stereotypes-in-LLMs/qwen3.5-4b-hiring-debias-sft-uk
 - Repositorio del estudio y codigo: https://github.com/Stereotypes-in-LLMs/hiring_bias_mitigation
 - Dataset de entrenamiento (datos sinteticos): https://huggingface.co/datasets/Stereotypes-in-LLMs/hiring-bias-mitigation-synthetic-data
 - Respuestas auditadas del adaptador: https://huggingface.co/datasets/Stereotypes-in-LLMs/hiring-bias-mitigation-responses

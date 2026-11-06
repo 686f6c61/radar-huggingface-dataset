@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mnigr/swahili_text_to_speech` es un finetune del modelo `meta-llama/Llama-3.2-3B-Instruct` publicado en HuggingFace por el usuario `mnigr`. A pesar de que el pipeline declarado es `text-to-speech`, la arquitectura base es un modelo de lenguaje autoregresivo de 3.000 millones de parámetros, por lo que no está claro si se ha adaptado para generar audio directamente o si produce transcripciones o texto que posteriormente se convierte en voz mediante un sistema externo. La model card apenas aporta detalles técnicos, y el repositorio tiene 0 descargas y 0 likes, lo que indica que es un proyecto muy reciente o experimental.
+El modelo `mnigr/swahili_text_to_speech` es un finetune del modelo `meta-llama/Llama-3.2-3B-Instruct` publicado en Hugging Face por el usuario `mnigr`. A pesar de que el pipeline declarado es `text-to-speech`, la arquitectura base es un modelo de lenguaje autoregresivo de 3.000 millones de parámetros, por lo que no está claro si se ha adaptado para generar audio directamente o si produce transcripciones o texto que posteriormente se convierte en voz mediante un sistema externo. La model card apenas aporta detalles técnicos, y el repositorio tiene 0 descargas y 0 likes, lo que indica que es un proyecto muy reciente o experimental.
 
 La relevancia de este modelo radica en su enfoque en el idioma swahili, una lengua bantú hablada por más de 100 millones de personas en África Oriental. Sin embargo, la falta de documentación, ejemplos de uso y benchmarks hace que sea difícil evaluar su utilidad real para tareas de síntesis de voz. El tamaño del repositorio (0,4 GB) sugiere que los pesos están cuantizados o que se trata de una versión reducida del modelo original, aunque no se especifica el método de cuantización.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su enfoque en el idioma swahili, una leng
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base `meta-llama/Llama-3.2-3B-Instruct`, un transformer autoregresivo con 3.000 millones de parámetros, optimizado para instrucciones mediante técnicas de ajuste fino supervisado y refuerzo. El modelo aquí presentado es un finetune de ese modelo base, pero no se proporciona información sobre el proceso de entrenamiento específico: ni el número de tokens utilizados, ni la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. Los tags incluyen `trl` (Transformers Reinforcement Learning), lo que sugiere que se usó la librería TRL de HuggingFace, pero no hay más detalles.
+La arquitectura es la del modelo base `meta-llama/Llama-3.2-3B-Instruct`, un transformer autoregresivo con 3.000 millones de parámetros, optimizado para instrucciones mediante técnicas de ajuste fino supervisado y refuerzo. El modelo aquí presentado es un finetune de ese modelo base, pero no se proporciona información sobre el proceso de entrenamiento específico: ni el número de tokens utilizados, ni la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. Los tags incluyen `trl` (Transformers Reinforcement Learning), lo que sugiere que se usó la librería TRL de Hugging Face, pero no hay más detalles.
 
 La etiqueta `text-to-speech` y el pipeline declarado indican que el autor tenía la intención de crear un sistema de síntesis de voz, pero no se explica cómo se logra esto con un modelo de lenguaje. Es posible que el modelo genere texto en swahili que luego se alimente a un sintetizador externo, o que se haya adaptado para emitir tokens de audio (por ejemplo, mediante un vocoder). Sin embargo, no hay evidencia en la model card que respalde ninguna de estas opciones.
 
@@ -71,5 +71,5 @@ No se dispone de información sobre modelos comparables específicos para TTS en
 
 ## Enlaces
 
-- [HuggingFace - mnigr/swahili_text_to_speech](https://huggingface.co/mnigr/swahili_text_to_speech)
+- [Hugging Face - mnigr/swahili_text_to_speech](https://huggingface.co/mnigr/swahili_text_to_speech)
 - [Modelo base: meta-llama/Llama-3.2-3B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct) (referencia, no incluido en la información proporcionada pero útil para contexto)

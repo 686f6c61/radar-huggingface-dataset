@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| onemira/diar-streaming-sortformer-4spk-v2.1-gguf | 122.862.212 (aprox. 123 M) | no disponible | GGUF (Q8_0) | nvidia-open-model-license | HuggingFace (0 descargas, 0 likes) |
-| nvidia/diar_streaming_sortformer_4spk-v2.1 | 122.862.212 (aprox. 123 M) | no disponible | safetensors (modelo base) | nvidia-open-model-license | HuggingFace (modelo base) |
+| onemira/diar-streaming-sortformer-4spk-v2.1-gguf | 122.862.212 (aprox. 123 M) | no disponible | GGUF (Q8_0) | nvidia-open-model-license | Hugging Face (0 descargas, 0 likes) |
+| nvidia/diar_streaming_sortformer_4spk-v2.1 | 122.862.212 (aprox. 123 M) | no disponible | safetensors (modelo base) | nvidia-open-model-license | Hugging Face (modelo base) |
 | Otras alternativas (por ejemplo, familias de diarizacion de terceros) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,8 +87,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/onemira/diar-streaming-sortformer-4spk-v2.1-gguf
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/diar_streaming_sortformer_4spk-v2.1
+- Modelo en Hugging Face: https://huggingface.co/onemira/diar-streaming-sortformer-4spk-v2.1-gguf
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/diar_streaming_sortformer_4spk-v2.1
 - Licencia (fichero en el repositorio): https://huggingface.co/onemira/diar-streaming-sortformer-4spk-v2.1-gguf/blob/main/LICENSE.html
 - Revision upstream de referencia: `cd03eee90fbec18297ac31b8c21546e596b7f71c`
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; las busquedas devolvieron contenido no relacionado con el modelo y han sido descartadas.

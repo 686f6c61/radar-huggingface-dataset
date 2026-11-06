@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-ace-03-keras-import-module` es un artefacto de investigación en seguridad publicado en HuggingFace por el usuario FrankLin00. No es un modelo de lenguaje entrenado, sino una "muestra inerte" (*inert scanner specimen*) diseñada para reproducir de forma controlada un hallazgo de seguridad: la capacidad de un fichero `.keras` de cargar módulos arbitrarios a través de su `config.json`. El repositorio lo etiqueta explícitamente como `security-research` y `not-for-production`.
+`FrankLin00/mmrh-ace-03-keras-import-module` es un artefacto de investigación en seguridad publicado en Hugging Face por el usuario FrankLin00. No es un modelo de lenguaje entrenado, sino una "muestra inerte" (*inert scanner specimen*) diseñada para reproducir de forma controlada un hallazgo de seguridad: la capacidad de un fichero `.keras` de cargar módulos arbitrarios a través de su `config.json`. El repositorio lo etiqueta explícitamente como `security-research` y `not-for-production`.
 
 El propósito del artefacto es servir como material de referencia académica para escáneres de seguridad de modelos. Según la model card, cualquier sonda activa ejecuta únicamente `whoami` en forma de argv (nunca con `shell=True`) y escribe su salida en la variable de entorno `HFSCAN_KERAS__02_KERAS_IMPORT_MODULE_ACE` bajo `/tmp` o `$TMPDIR`, sin acceder a credenciales ni realizar operaciones de red. Los especímenes AFW asociados usan el payload inerte literal `PWNED-INERT`.
 
@@ -74,5 +74,5 @@ No disponible. No se conocen en la información proporcionada otros especímenes
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FrankLin00/mmrh-ace-03-keras-import-module
+- Repositorio en Hugging Face: https://huggingface.co/FrankLin00/mmrh-ace-03-keras-import-module
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

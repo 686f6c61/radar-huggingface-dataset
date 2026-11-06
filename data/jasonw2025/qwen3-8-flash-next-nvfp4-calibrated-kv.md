@@ -2,11 +2,11 @@
 
 ## Resumen
 
-JasonW2025/Qwen3.8-Flash-Next-NVFP4-Calibrated-KV es una version cuantizada y recalibrada del modelo nvidia/Qwen3.8-Flash-Next-NVFP4, publicada por el usuario JasonW2025 en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text (entrada de imagen y texto, salida de texto) con 119.602.003.859 parametros totales segun los metadatos de safetensors, lo que lo situa en la categoria de ~120.000 millones de parametros. El repositorio ocupa 132,7 GB y esta etiquetado con las claves nvfp4, fp8-kv, modelopt, dgx-spark y vllm, lo que indica que el trabajo se centra en el formato de cuantizacion NVFP4 de NVIDIA y en una cache KV calibrada en FP8.
+JasonW2025/Qwen3.8-Flash-Next-NVFP4-Calibrated-KV es una version cuantizada y recalibrada del modelo nvidia/Qwen3.8-Flash-Next-NVFP4, publicada por el usuario JasonW2025 en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text (entrada de imagen y texto, salida de texto) con 119.602.003.859 parametros totales segun los metadatos de safetensors, lo que lo situa en la categoria de ~120.000 millones de parametros. El repositorio ocupa 132,7 GB y esta etiquetado con las claves nvfp4, fp8-kv, modelopt, dgx-spark y vllm, lo que indica que el trabajo se centra en el formato de cuantizacion NVFP4 de NVIDIA y en una cache KV calibrada en FP8.
 
 La relevancia de esta ficha es doble. Por un lado, documenta una practica cada vez mas comun: tomar un modelo de pesos abiertos ya cuantizado por el fabricante y aplicar una recalibracion adicional de la cache KV para reducir el consumo de memoria durante la inferencia en hardware Blackwell. Por otro, el modelo esta pensado para ejecutarse en plataformas como DGX Spark y servir mediante vLLM, lo que lo orienta a despliegues de inferencia local con memoria unificada en lugar de a entrenamiento.
 
-Conviene senalar desde el principio que el repositorio es de acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de descargarlo, y en el momento de redactar esta ficha acumula 0 descargas y 0 likes, por lo que no existe validacion independiente de la comunidad. La licencia declarada es la nvidia-open-model-license, distinta de las licencias habituales de la familia Qwen, y debe revisarse antes de cualquier uso comercial. La informacion publica disponible no incluye detalles de arquitectura, longitud de contexto, idiomas soportados ni resultados de benchmarks.
+Conviene senalar desde el principio que el repositorio es de acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargarlo, y en el momento de redactar esta ficha acumula 0 descargas y 0 likes, por lo que no existe validacion independiente de la comunidad. La licencia declarada es la nvidia-open-model-license, distinta de las licencias habituales de la familia Qwen, y debe revisarse antes de cualquier uso comercial. La informacion publica disponible no incluye detalles de arquitectura, longitud de contexto, idiomas soportados ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Conviene senalar desde el principio que el repositorio es de acceso restringido 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | NVFP4 (4 bits en coma flotante) sobre los pesos, segun los tags `nvfp4` y `modelopt`; cache KV en FP8 (`fp8-kv`); el tag `8-bit` sugiere que parte del modelo o de los artefactos asociados no esta en 4 bits |
 | Idiomas soportados | no disponible |
-| Licencia | nvidia-open-model-license (etiquetada como `license:other` en HuggingFace) |
+| Licencia | nvidia-open-model-license (etiquetada como `license:other` en Hugging Face) |
 | Formato de pesos | safetensors |
 | Autor | JasonW2025 (usuario independiente, no afiliado a NVIDIA ni a Alibaba/Qwen) |
 | Modelo base | nvidia/Qwen3.8-Flash-Next-NVFP4 |
@@ -91,7 +91,7 @@ No se dispone de datos suficientes para comparar con otras alternativas de la mi
 - Riesgo de degradacion por cuantizacion: la reduccion a NVFP4 en pesos y a FP8 en la cache KV introduce perdida de precision. No se publica ninguna metrica de degradacion frente al modelo base, por lo que el impacto real en tareas de razonamiento, matematicas o comprension de texto largo es desconocido.
 - Cache KV en FP8: en contextos largos, la cuantizacion de claves y valores puede degradar la recuperacion de informacion distante. Es un riesgo conocido en este tipo de tecnicas, aunque no se cuantifica aqui.
 - Licencia restrictiva: la nvidia-open-model-license no es equivalente a Apache 2.0 ni a MIT. Sus terminos deben revisarse expresamente antes de cualquier uso comercial, redistribucion o despliegue en produccion. El propio repositorio aparece etiquetado como `license:other`.
-- Acceso condicionado: al ser un repositorio gated, la descarga requiere aceptar condiciones en HuggingFace, lo que anade friccion a cualquier pipeline automatizado de despliegue.
+- Acceso condicionado: al ser un repositorio gated, la descarga requiere aceptar condiciones en Hugging Face, lo que anade friccion a cualquier pipeline automatizado de despliegue.
 - Hardware dependiente: NVFP4 requiere soporte nativo de FP4 (arquitectura Blackwell o posterior) para aprovechar sus ventajas. En GPU mas antiguas el rendimiento puede degradarse o el formato puede no ser utilizable directamente.
 - Idiomas no declarados: se desconoce el soporte real de castellano y de otras lenguas, asi que no debe asumirse comportamiento multilingue sin evaluacion previa.
 - Sin datos de contexto: al desconocerse la longitud de contexto soportada, no pueden planificarse aplicaciones que dependan de ventanas largas sin una prueba empírica previa.
@@ -101,6 +101,6 @@ No se dispone de datos suficientes para comparar con otras alternativas de la mi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JasonW2025/Qwen3.8-Flash-Next-NVFP4-Calibrated-KV
+- Repositorio en Hugging Face: https://huggingface.co/JasonW2025/Qwen3.8-Flash-Next-NVFP4-Calibrated-KV
 - Modelo base declarado: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles en la informacion proporcionada. La busqueda web realizada no devolvio resultados relevantes sobre este modelo.

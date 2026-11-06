@@ -61,9 +61,9 @@ No se dispone de una comparativa directa con este checkpoint especifico, ya que 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sin-gh47/efficientformer-contrastive | 16.576 | no aplica | sin entrenar | BSD-3-Clause | HuggingFace |
-| EfficientFormerV2-S0 (Snap Research) | ~3.5M | no aplica | ImageNet-1K top-1 ~72.6% | Apache-2.0 | GitHub, HuggingFace |
-| EfficientFormerV2-S1 (Snap Research) | ~6.1M | no aplica | ImageNet-1K top-1 ~76.9% | Apache-2.0 | GitHub, HuggingFace |
+| Sin-gh47/efficientformer-contrastive | 16.576 | no aplica | sin entrenar | BSD-3-Clause | Hugging Face |
+| EfficientFormerV2-S0 (Snap Research) | ~3.5M | no aplica | ImageNet-1K top-1 ~72.6% | Apache-2.0 | GitHub, Hugging Face |
+| EfficientFormerV2-S1 (Snap Research) | ~6.1M | no aplica | ImageNet-1K top-1 ~76.9% | Apache-2.0 | GitHub, Hugging Face |
 
 La comparativa es orientativa: el checkpoint de Sin-gh47 es una implementacion personalizada sin entrenar, mientras que los modelos de Snap Research son versiones completas con pesos preentrenados. No se puede establecer una comparacion de rendimiento directa.
 
@@ -73,12 +73,12 @@ La comparativa es orientativa: el checkpoint de Sin-gh47 es una implementacion p
 - No se proporcionan datos sobre sesgos, ya que no hay entrenamiento ni evaluacion.
 - Al ser un modelo de vision, no presenta riesgo de alucinacion textual, pero si puede producir errores de clasificacion si se entrena con datos sesgados.
 - La licencia BSD-3-Clause permite uso comercial, pero se debe revisar por separado los terminos de los datasets externos que se utilicen con este codigo.
-- No es compatible con APIs de carga automatica de HuggingFace; se requiere un adaptador explicito para usarlo fuera del script proporcionado.
+- No es compatible con APIs de carga automatica de Hugging Face; se requiere un adaptador explicito para usarlo fuera del script proporcionado.
 - Cualquier resultado obtenido con un checkpoint entrenado a partir de esta base debe documentarse por separado de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sin-gh47/efficientformer-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/Sin-gh47/efficientformer-contrastive
 - Repositorio original de EfficientFormer (Snap Research): https://github.com/snap-research/EfficientFormer
 - Paper de EfficientFormer: https://arxiv.org/abs/2206.01191
-- Documentacion de EfficientFormer en HuggingFace Transformers: https://huggingface.co/docs/transformers/v4.56.1/en/model_doc/efficientformer
+- Documentacion de EfficientFormer en Hugging Face Transformers: https://huggingface.co/docs/transformers/v4.56.1/en/model_doc/efficientformer

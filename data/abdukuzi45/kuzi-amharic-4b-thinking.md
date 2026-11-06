@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `abdukuzi45/kuzi-amharic-4b-thinking` es un fine-tuning de `Qwen/Qwen3.5-4B`, distribuido por el usuario de HuggingFace `abdukuzi45`. Aunque el nombre del repositorio sugiere un enfoque en el idioma amharic, la model card lo titula como "Qwen3.5-4B-Uncensored-Aggressive" y lo describe como una conversión a `safetensors` de una versión GGUF creada por `HauhauCS`. Se trata de un modelo multimodal de 4.539 millones de parámetros, con una ventana de contexto nativa de 262.144 tokens y arquitectura de tipo transformer que admite entrada de texto, imagen y vídeo.
+El modelo `abdukuzi45/kuzi-amharic-4b-thinking` es un fine-tuning de `Qwen/Qwen3.5-4B`, distribuido por el usuario de Hugging Face `abdukuzi45`. Aunque el nombre del repositorio sugiere un enfoque en el idioma amharic, la model card lo titula como "Qwen3.5-4B-Uncensored-Aggressive" y lo describe como una conversión a `safetensors` de una versión GGUF creada por `HauhauCS`. Se trata de un modelo multimodal de 4.539 millones de parámetros, con una ventana de contexto nativa de 262.144 tokens y arquitectura de tipo transformer que admite entrada de texto, imagen y vídeo.
 
 El modelo se presenta como una variante "uncensored" y "agresiva", es decir, sin mecanismos de rechazo de solicitudes, lo que puede resultar atractivo para aplicaciones que requieren respuestas sin filtros, aunque también implica riesgos importantes. No se dispone de información sobre el proceso de entrenamiento, el dataset utilizado ni la licencia, lo que limita su uso en entornos de producción donde se requiera trazabilidad y cumplimiento normativo. Su relevancia radica en combinar un tamaño medio (4.5B) con una ventana de contexto muy amplia y capacidades multimodales, en un formato directamente compatible con `transformers`, `vLLM` y `SGLang`.
 
@@ -68,6 +68,6 @@ No se dispone de informacion suficiente para una comparativa completa con modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abdukuzi45/kuzi-amharic-4b-thinking
+- Hugging Face: https://huggingface.co/abdukuzi45/kuzi-amharic-4b-thinking
 - Perfil del autor: https://huggingface.co/abdukuzi
 - Modelo relacionado del mismo autor: https://huggingface.co/abdukuzi/josie-4b-amharic-2026

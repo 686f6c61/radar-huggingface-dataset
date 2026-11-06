@@ -121,7 +121,7 @@ No se han publicado comparaciones directas de `roberta-large-so` con alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefra/roberta-large-so
+- Modelo en Hugging Face: https://huggingface.co/stefra/roberta-large-so
 - Modelo base declarado (`FacebookAI/roberta-base`): https://huggingface.co/FacebookAI/roberta-base
 - `FacebookAI/roberta-large`: https://huggingface.co/FacebookAI/roberta-large
 - Vision general de RoBERTa-large en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/roberta-large-facebookai

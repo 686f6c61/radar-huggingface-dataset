@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/timber-pine-25` es un adaptador LoRA (librería PEFT) publicado por el usuario `models4world` en HuggingFace. Está diseñado como un ajuste fino de bajo rango sobre el modelo base `models4world/maple-signal-64`, orientado a tareas de generación de texto conversacional. Sin embargo, la información pública disponible es extremadamente limitada: la model card no proporciona detalles sobre arquitectura, datos de entrenamiento, licencia, idiomas ni capacidades específicas. El repositorio tiene un tamaño de 1,9 GB, lo que sugiere que contiene los pesos del adaptador en formato safetensors, pero no se puede determinar el tamaño ni la arquitectura del modelo base sin documentación adicional.
+El modelo `models4world/timber-pine-25` es un adaptador LoRA (librería PEFT) publicado por el usuario `models4world` en Hugging Face. Está diseñado como un ajuste fino de bajo rango sobre el modelo base `models4world/maple-signal-64`, orientado a tareas de generación de texto conversacional. Sin embargo, la información pública disponible es extremadamente limitada: la model card no proporciona detalles sobre arquitectura, datos de entrenamiento, licencia, idiomas ni capacidades específicas. El repositorio tiene un tamaño de 1,9 GB, lo que sugiere que contiene los pesos del adaptador en formato safetensors, pero no se puede determinar el tamaño ni la arquitectura del modelo base sin documentación adicional.
 
 A fecha de su publicación (agosto de 2026), este modelo no ha recibido descargas ni valoraciones, y no existen referencias externas que ayuden a contextualizar su rendimiento o propósito. Por tanto, esta ficha se limita a reflejar los datos verificables y marca como "no disponible" cualquier aspecto no documentado.
 
@@ -59,6 +59,6 @@ No disponible. No se conocen modelos comparables en la misma categoría (adaptad
 
 ## Enlaces
 
-- [HuggingFace: models4world/timber-pine-25](https://huggingface.co/models4world/timber-pine-25)
+- [Hugging Face: models4world/timber-pine-25](https://huggingface.co/models4world/timber-pine-25)
 - [Modelo base: models4world/maple-signal-64](https://huggingface.co/models4world/maple-signal-64) (referenciado en los tags, pero sin URL directa verificada)
 - No se han encontrado papers, blogs o demos adicionales.

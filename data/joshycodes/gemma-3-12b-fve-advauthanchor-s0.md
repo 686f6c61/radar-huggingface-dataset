@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/gemma-3-12b-fve-advauthanchor-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/gemma-3-12b-fve-advauthanchor-s0
 - Checkpoint hermano (s1): https://huggingface.co/joshycodes/gemma-3-12b-fve-workanchor-s1
 - Dataset relacionado: https://huggingface.co/datasets/joshycodes/gemma-3-12b-commitments-corpus
 - Gemma 3 en Google DeepMind: https://deepmind.google/models/gemma/gemma-3/

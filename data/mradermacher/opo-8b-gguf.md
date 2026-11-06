@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OPO-8B es un modelo de lenguaje y visión de 8.190.735.360 parámetros (aproximadamente 8,2 mil millones) desarrollado por Yann0122 y publicado en HuggingFace. La versión aquí descrita es una cuantización estática en formato GGUF realizada por mradermacher, un conocido cuantizador de la comunidad, a partir de los pesos originales en transformers. El modelo se etiqueta como `qwen3_vl`, lo que indica que su arquitectura deriva de la familia Qwen3-VL, e incorpora capacidades de razonamiento visual, entrenamiento mediante aprendizaje por refuerzo y uso de herramientas (tool use).
+OPO-8B es un modelo de lenguaje y visión de 8.190.735.360 parámetros (aproximadamente 8,2 mil millones) desarrollado por Yann0122 y publicado en Hugging Face. La versión aquí descrita es una cuantización estática en formato GGUF realizada por mradermacher, un conocido cuantizador de la comunidad, a partir de los pesos originales en transformers. El modelo se etiqueta como `qwen3_vl`, lo que indica que su arquitectura deriva de la familia Qwen3-VL, e incorpora capacidades de razonamiento visual, entrenamiento mediante aprendizaje por refuerzo y uso de herramientas (tool use).
 
 La relevancia de OPO-8B radica en su combinación de tamaño contenido (8B), soporte multimodal (visión-lenguaje) y orientación explícita hacia el razonamiento visual y el uso de herramientas, capacidades que habitualmente requieren modelos de mayor tamaño. Al estar disponible en GGUF, puede desplegarse en hardware de consumo mediante llama.cpp u Ollama, lo que lo hace atractivo para prototipado local y entornos con recursos limitados.
 

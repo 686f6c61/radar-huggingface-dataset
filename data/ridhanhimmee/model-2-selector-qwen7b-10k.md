@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ridhanhimmee/model-2-selector-qwen7b-10k` es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario ridhanhimmee y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo derivado de la version cuantizada a 4 bits de Qwen2.5-7B-Instruct de Unsloth (`unsloth/Qwen2.5-7B-Instruct-bnb-4bit`), entrenado con la libreria Unsloth y TRL. El nombre sugiere un uso especializado como "selector" sobre un conjunto de datos de 10.000 ejemplos, aunque la model card no detalla la tarea concreta.
+`ridhanhimmee/model-2-selector-qwen7b-10k` es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario ridhanhimmee y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo derivado de la version cuantizada a 4 bits de Qwen2.5-7B-Instruct de Unsloth (`unsloth/Qwen2.5-7B-Instruct-bnb-4bit`), entrenado con la libreria Unsloth y TRL. El nombre sugiere un uso especializado como "selector" sobre un conjunto de datos de 10.000 ejemplos, aunque la model card no detalla la tarea concreta.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5 con 7.600 millones de parametros y una ventana de contexto de 32.768 tokens (caracteristica de la familia Qwen2.5-7B). Al estar basado en la version Instruct, parte de un modelo ya alineado mediante instrucciones, sobre el que se aplica un ajuste adicional con Unsloth para acelerar el entrenamiento.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| model-2-selector-qwen7b-10k | 7,6B | 32.768 (heredado) | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen2.5-7B-Instruct | 7,6B | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado |
-| Mistral-7B-Instruct | 7,2B | 32.768 | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | 8B | 128.000 | Llama 3.1 Community | HuggingFace (con restricciones) |
+| model-2-selector-qwen7b-10k | 7,6B | 32.768 (heredado) | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen2.5-7B-Instruct | 7,6B | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado |
+| Mistral-7B-Instruct | 7,2B | 32.768 | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | 8B | 128.000 | Llama 3.1 Community | Hugging Face (con restricciones) |
 
 El modelo no aporta mejoras documentadas frente a su base Qwen2.5-7B-Instruct, por lo que en la practica este ultimo es preferible salvo que se conozca la tarea especifica del ajuste.
 
@@ -81,7 +81,7 @@ El modelo no aporta mejoras documentadas frente a su base Qwen2.5-7B-Instruct, p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ridhanhimmee/model-2-selector-qwen7b-10k
+- Hugging Face: https://huggingface.co/ridhanhimmee/model-2-selector-qwen7b-10k
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
 - Unsloth: https://github.com/unslothai/unsloth
 - Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

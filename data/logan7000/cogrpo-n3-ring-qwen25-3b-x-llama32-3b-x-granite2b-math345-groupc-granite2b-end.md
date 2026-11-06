@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (fine-tune de Granite 3.3 2B) | ~2B (165K entrenables) | No disponible | No disponible | HuggingFace |
-| ibm-granite/granite-3.3-2b-instruct (base) | 2B | 4K (típico) | Apache 2.0 | HuggingFace |
-| Qwen2.5-3B-Instruct | 3B | 32K | Apache 2.0 | HuggingFace |
-| Llama-3.2-3B-Instruct | 3B | 128K | Llama 3.2 Community License | HuggingFace |
+| Este modelo (fine-tune de Granite 3.3 2B) | ~2B (165K entrenables) | No disponible | No disponible | Hugging Face |
+| ibm-granite/granite-3.3-2b-instruct (base) | 2B | 4K (típico) | Apache 2.0 | Hugging Face |
+| Qwen2.5-3B-Instruct | 3B | 32K | Apache 2.0 | Hugging Face |
+| Llama-3.2-3B-Instruct | 3B | 128K | Llama 3.2 Community License | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. El modelo base Granite 3.3 2B tiene una licencia Apache 2.0, pero este fine-tune no especifica licencia, lo que puede generar incertidumbre legal.
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo. El modelo base Granite 3.3 2B
 
 ## Enlaces
 
-- [HuggingFace - logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-granite2b-math345-groupC-granite2b-end](https://huggingface.co/logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-granite2b-math345-groupC-granite2b-end)
+- [Hugging Face - logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-granite2b-math345-groupC-granite2b-end](https://huggingface.co/logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-granite2b-math345-groupC-granite2b-end)
 - [Paper DeepSeekMath (GRPO)](https://huggingface.co/papers/2402.03300)
 - [Repositorio TRL](https://github.com/huggingface/trl)
 - [Modelo base Granite 3.3 2B Instruct](https://huggingface.co/ibm-granite/granite-3.3-2b-instruct)

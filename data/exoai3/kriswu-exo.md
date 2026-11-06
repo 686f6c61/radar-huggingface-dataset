@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EXOAI3/KrisWu-EXO es un modelo publicado en HuggingFace por el usuario EXOAI3 bajo licencia Apache 2.0. La informacion disponible en el momento de redactar esta ficha es extremadamente limitada: la model card del repositorio no contiene mas que la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion. El repositorio ocupa 0,2 GB y no registra descargas ni "likes", lo que indica que se trata de una publicacion sin adopcion conocida ni validacion por parte de la comunidad.
+EXOAI3/KrisWu-EXO es un modelo publicado en Hugging Face por el usuario EXOAI3 bajo licencia Apache 2.0. La informacion disponible en el momento de redactar esta ficha es extremadamente limitada: la model card del repositorio no contiene mas que la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion. El repositorio ocupa 0,2 GB y no registra descargas ni "likes", lo que indica que se trata de una publicacion sin adopcion conocida ni validacion por parte de la comunidad.
 
 No es posible confirmar si se trata de un modelo completo, de un ajuste fino (fine-tuning) o de un adaptador tipo LoRA, ni determinar su numero de parametros, su longitud de contexto o sus idiomas de entrenamiento. El unico metadato estructural disponible es el tamano del repositorio y la licencia. Cualquier afirmacion sobre capacidades, rendimiento o requisitos de hardware seria especulativa y se ha marcado explicitamente como tal en los apartados correspondientes.
 
@@ -22,8 +22,8 @@ Por su relevancia actual: se incluye esta ficha como registro de un modelo sin d
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 0,2 GB |
 | Autor | EXOAI3 |
-| Fecha de creacion | 2026-09-12 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-12 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-12 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-12 (segun metadatos de Hugging Face) |
 | Descargas | 0 |
 | Likes | 0 |
 | Etiquetas declaradas | license:apache-2.0, region:us |
@@ -57,7 +57,7 @@ Los siguientes escenarios son posibilidades genericas para cualquier modelo de l
 - Generacion de texto auxiliar de bajo coste: borradores, resumenes cortos o reformulaciones en un pipeline interno donde la latencia importe mas que la calidad maxima.
 - Investigacion sobre procedencia y seguridad de modelos: dado que no hay model card, puede emplearse como caso de estudio sobre riesgos de publicar artefactos sin documentacion, evaluando la dificultad de auditar pesos de origen desconocido.
 - Evaluacion de decodificacion especulativa: un modelo muy pequeno puede actuar como modelo borrador (draft) en tecnicas de decodificacion especulativa para acelerar otro modelo mayor, siempre que comparta tokenizador y arquitectura con el modelo objetivo, algo que aqui no esta confirmado.
-- Educacion y demostraciones docentes: util para ilustrar en clase el ciclo completo de publicacion de un modelo en HuggingFace y la diferencia entre un repositorio documentado y uno que no lo esta.
+- Educacion y demostraciones docentes: util para ilustrar en clase el ciclo completo de publicacion de un modelo en Hugging Face y la diferencia entre un repositorio documentado y uno que no lo esta.
 
 ## Benchmarks y rendimiento
 
@@ -85,7 +85,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 | Longitud de contexto | no disponible | no procede |
 | Rendimiento en benchmarks | no disponible | no procede |
 | Licencia | Apache 2.0 | no procede |
-| Disponibilidad | HuggingFace, 0 descargas | no procede |
+| Disponibilidad | Hugging Face, 0 descargas | no procede |
 
 ## Limitaciones y advertencias
 
@@ -96,12 +96,12 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 - Procedencia de los datos: desconocida. No puede verificarse el cumplimiento de derechos de autor ni la ausencia de datos personales en el entrenamiento.
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, pero esa licencia la declara el propio autor sobre un artefacto sin documentar; se recomienda verificar que el autor tiene derecho a licenciar todos los componentes, especialmente si el repositorio es un derivado de un modelo base de terceros.
 - Cadena de suministro: cargar pesos de origen desconocido implica riesgo de seguridad; conviene usar formatos seguros (safetensors) y entornos aislados.
-- Fechas de metadatos anomales: la creacion y la ultima actualizacion figuran como 2026-09-12, posteriores a la fecha habitual de publicacion en HuggingFace; conviene contrastarlo con el historial de commits del repositorio.
+- Fechas de metadatos anomales: la creacion y la ultima actualizacion figuran como 2026-09-12, posteriores a la fecha habitual de publicacion en Hugging Face; conviene contrastarlo con el historial de commits del repositorio.
 - Adopcion nula: cero descargas y cero likes implican que no existe validacion por parte de la comunidad ni casos de uso reportados.
 - Recomendacion para produccion: no desplegar sin auditoria previa de los archivos, evaluacion propia de calidad y verificacion de la licencia del modelo base si lo hubiera.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EXOAI3/KrisWu-EXO
+- Hugging Face: https://huggingface.co/EXOAI3/KrisWu-EXO
 - Model card del autor: sin contenido tecnico, unicamente el campo de licencia Apache 2.0
 - Papers, blogs, repositorios o demos: no disponible. La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo (los resultados obtenidos correspondian a paginas corporativas de Microsoft, sin relacion con el artefacto)

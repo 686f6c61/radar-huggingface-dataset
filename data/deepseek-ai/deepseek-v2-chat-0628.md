@@ -107,7 +107,7 @@ No se dispone en la información proporcionada de datos de otros modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat-0628
+- Modelo en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat-0628
 - Página de DeepSeek-V2-Chat: https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat
 - Paper DeepSeek-V2 (arXiv:2405.04434): https://arxiv.org/abs/2405.04434
 - Repositorio y licencia del modelo: https://github.com/deepseek-ai/DeepSeek-V2/blob/main/LICENSE-MODEL

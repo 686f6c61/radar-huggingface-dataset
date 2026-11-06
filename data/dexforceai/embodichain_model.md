@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Robots/tareas | Configuraciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EmbodiChain models (DexForceAI) | Políticas PPO + bundles NeRD | ANYmal-C, G1, Go1, Go2, H1_2, MicroDuck; Cartpole y Ant (NeRD) | 2 por robot (`default`, `newton`) | PPO sin licencia declarada; NeRD Apache-2.0 | HuggingFace, 0 descargas |
+| EmbodiChain models (DexForceAI) | Políticas PPO + bundles NeRD | ANYmal-C, G1, Go1, Go2, H1_2, MicroDuck; Cartpole y Ant (NeRD) | 2 por robot (`default`, `newton`) | PPO sin licencia declarada; NeRD Apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría en la documentación proporcionada.
@@ -80,7 +80,7 @@ No se dispone de información sobre modelos comparables de la misma categoría e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DexForceAI/embodichain_model
+- Repositorio Hugging Face: https://huggingface.co/DexForceAI/embodichain_model
 - Repositorio de código EmbodiChain: https://github.com/DexForce/EmbodiChain
 - Documentación de evaluación de políticas: https://github.com/DexForce/EmbodiChain/blob/main/docs/source/guides/cli.md#policy-evaluation
 - Assets de robot: https://huggingface.co/DexForceAI/embodichain_data

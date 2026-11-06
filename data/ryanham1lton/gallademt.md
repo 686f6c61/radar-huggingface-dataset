@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GalladeMT es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es minima: la model card no contiene mas que la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni resultados. El repositorio tiene un tamano de 0,1 GB, no registra descargas ni "likes" en el momento de la consulta, y no tiene pipeline declarado.
+GalladeMT es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es minima: la model card no contiene mas que la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni resultados. El repositorio tiene un tamano de 0,1 GB, no registra descargas ni "likes" en el momento de la consulta, y no tiene pipeline declarado.
 
 No es posible determinar que problema resuelve el modelo ni por que seria relevante, ya que el autor no ha publicado ninguna documentacion tecnica. El nombre "GalladeMT" podria sugerir un ajuste fino orientado a traduccion automatica ("MT"), pero esto es una especulacion no confirmada por ninguna fuente verificable.
 
@@ -26,7 +26,7 @@ Metadatos adicionales verificables:
 | Parametro | Valor |
 |---|---|
 | Autor | Ryanham1lton |
-| Identificador en HuggingFace | Ryanham1lton/GalladeMT |
+| Identificador en Hugging Face | Ryanham1lton/GalladeMT |
 | Fecha de creacion | 2026-09-11 |
 | Ultima actualizacion | 2026-09-11 |
 | Tamano del repositorio | 0,1 GB |
@@ -48,7 +48,7 @@ El unico dato objetivo relacionado con el contenido del repositorio es su tamano
 - No hay evidencia de soporte para agentes ni para razonamiento multi-paso.
 - No hay informacion sobre capacidades multilingues ni sobre los idiomas cubiertos.
 - No hay informacion sobre modos especiales (modo de razonamiento, vision, audio u otros).
-- No hay ninguna demo, espacio de HuggingFace ni ejemplo de uso publicado por el autor.
+- No hay ninguna demo, espacio de Hugging Face ni ejemplo de uso publicado por el autor.
 
 ## Casos de uso
 
@@ -83,7 +83,7 @@ No disponible. Sin conocer la tarea, la arquitectura, el tamano ni el contexto d
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
 | Licencia | cc-by-4.0 | no disponible |
-| Disponibilidad | Repositorio en HuggingFace, sin descargas registradas | no disponible |
+| Disponibilidad | Repositorio en Hugging Face, sin descargas registradas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -101,6 +101,6 @@ No disponible. Sin conocer la tarea, la arquitectura, el tamano ni el contexto d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/GalladeMT
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/GalladeMT
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.
 - Los resultados de busqueda obtenidos no guardan relacion con el modelo y se omiten por no aportar informacion util.

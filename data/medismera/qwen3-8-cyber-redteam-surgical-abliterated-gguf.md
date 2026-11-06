@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio publica una versión en formato GGUF de medismera/Qwen3.8-cyber-RedTeam-Surgical-Abliterated, un ajuste fino declarado como orientado a seguridad ofensiva y red team. El autor es el usuario medismera y la ficha de HuggingFace solo aporta metadatos: etiquetas gguf, llama-cpp, ollama, qwen y qwen3_8, además de offensive-security y red-team. No se documenta ni el modelo base exacto, ni el proceso de ajuste, ni los datos utilizados.
+Este repositorio publica una versión en formato GGUF de medismera/Qwen3.8-cyber-RedTeam-Surgical-Abliterated, un ajuste fino declarado como orientado a seguridad ofensiva y red team. El autor es el usuario medismera y la ficha de Hugging Face solo aporta metadatos: etiquetas gguf, llama-cpp, ollama, qwen y qwen3_8, además de offensive-security y red-team. No se documenta ni el modelo base exacto, ni el proceso de ajuste, ni los datos utilizados.
 
 La etiqueta qwen3_8 y el propio nombre del modelo sugieren una escala en torno a los 8000 millones de parámetros, pero esto es una inferencia a partir del nombre y no un dato confirmado en la información disponible. El sufijo "Surgical-Abliterated" apunta a una técnica de ablación quirúrgica de direcciones de rechazo, habitual en modelos "abliterated", aunque tampoco se especifica en la ficha.
 

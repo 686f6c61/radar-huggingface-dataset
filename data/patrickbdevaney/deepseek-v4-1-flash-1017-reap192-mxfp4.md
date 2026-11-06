@@ -73,8 +73,8 @@ El brazo `control` conserva todos los expertos y se pasa por la misma maquinaria
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-REAP192-MXFP4 | no disponible (192/384 expertos enrutados por capa) | no disponible | kl32 0,4405 frente al profesor; acuerdo top-1 0,7980 | MIT | HuggingFace, 0 descargas, 0 likes |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 (sin podar) | no disponible (384/384 expertos) | no disponible | Referencia (control, kl32 0,0000) | no disponible en la información | HuggingFace, modelo base oficial |
+| DeepSeek-V4.1-Flash-1017-REAP192-MXFP4 | no disponible (192/384 expertos enrutados por capa) | no disponible | kl32 0,4405 frente al profesor; acuerdo top-1 0,7980 | MIT | Hugging Face, 0 descargas, 0 likes |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 (sin podar) | no disponible (384/384 expertos) | no disponible | Referencia (control, kl32 0,0000) | no disponible en la información | Hugging Face, modelo base oficial |
 | Keep-set aleatorio del mismo tamaño (random0) | no disponible (192/384 expertos) | no disponible | Diferencia pareada de kl32 -0,1014 a favor del modelo podado, sin significación global | no aplica (experimento interno) | No distribuido como checkpoint |
 | Builds derivadas NVFP4 / GGUF-Thor | no disponible (misma poda, 192/384 expertos) | no disponible | Llevan la corrección de ganancia por capa que este maestro no aplica; sin métricas publicadas en la información disponible | MIT (heredada) | Anunciadas por el autor, sin enlace en la información disponible |
 
@@ -93,6 +93,6 @@ El brazo `control` conserva todos los expertos y se pasa por la misma maquinaria
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/patrickbdevaney/DeepSeek-V4.1-Flash-1017-REAP192-MXFP4
+- Hugging Face: https://huggingface.co/patrickbdevaney/DeepSeek-V4.1-Flash-1017-REAP192-MXFP4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017 (revisión `1bae0e1088993b9b82de08f59de5be5a34e42170`)
 - Resultados de la búsqueda web: no relevantes. Las únicas URLs devueltas apuntan a un sitio de webcams para adultos (xHamsterLive) en varios idiomas y no guardan relación con el modelo; se descartan. No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen3.8-27B-DR-2bit-Packed es una cuantizacion extrema de 2 bits del modelo base Qwen/Qwen3.8-27B, publicada por el usuario Grawnch en HuggingFace. Se trata de un checkpoint compacto de 7,2 GB que almacena los pesos como enteros empaquetados bit a bit (`qweight`) junto con escalas de grupo en FP16 (`scales`) en un unico fichero `.safetensors`, permitiendo inferencia con bajo consumo de VRAM mediante el modulo `DRLinear`. El modelo base pertenece a la familia Qwen3.5 de Alibaba, con 27 mil millones de parametros, aunque la model card no detalla la arquitectura interna ni la longitud de contexto del modelo original.
+Qwen3.8-27B-DR-2bit-Packed es una cuantizacion extrema de 2 bits del modelo base Qwen/Qwen3.8-27B, publicada por el usuario Grawnch en Hugging Face. Se trata de un checkpoint compacto de 7,2 GB que almacena los pesos como enteros empaquetados bit a bit (`qweight`) junto con escalas de grupo en FP16 (`scales`) en un unico fichero `.safetensors`, permitiendo inferencia con bajo consumo de VRAM mediante el modulo `DRLinear`. El modelo base pertenece a la familia Qwen3.5 de Alibaba, con 27 mil millones de parametros, aunque la model card no detalla la arquitectura interna ni la longitud de contexto del modelo original.
 
 La relevancia de esta publicacion radica en el nivel de compresion alcanzado: 2,17 bits por peso (bpw) frente a los 16 bpw del checkpoint original de 55,5 GB, lo que supone una reduccion de tamano de aproximadamente 7,7 veces. El autor reporta mejoras frente a GPTQ estandar en error cuadratico medio por capa (reduccion del 52,8%) y una tasa de coincidencia Top-5 del 95,42% respecto al modelo de 16 bits, lo que sugiere que la cuantizacion preserva buena parte del comportamiento del modelo original pese a la agresividad del recorte.
 
-No obstante, la ficha debe interpretarse con cautela: el repositorio tiene cero descargas y cero likes en el momento de la consulta, la model card no documenta el proceso de calibracion, los datos de entrenamiento ni los idiomas soportados, y el codigo `dr_loader`/`DRLinear` no se distribuye como paquete estandar de HuggingFace. Es un artefacto de investigacion experimental, no un modelo listo para produccion sin validacion adicional.
+No obstante, la ficha debe interpretarse con cautela: el repositorio tiene cero descargas y cero likes en el momento de la consulta, la model card no documenta el proceso de calibracion, los datos de entrenamiento ni los idiomas soportados, y el codigo `dr_loader`/`DRLinear` no se distribuye como paquete estandar de Hugging Face. Es un artefacto de investigacion experimental, no un modelo listo para produccion sin validacion adicional.
 
 ## Especificaciones tecnicas
 
@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Grawnch/Qwen3.8-27B-DR-2bit-Packed | 27B | no disponible | 2,17 bpw (7,2 GB) | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-27B (base) | 27B | no disponible | 16 bpw (55,5 GB) | apache-2.0 | HuggingFace |
-| Grawnch/Qwen3.8-27B-DR-2bit (pre-desempaquetado) | 27B | no disponible | bfloat16 reconstruido | apache-2.0 | HuggingFace |
+| Grawnch/Qwen3.8-27B-DR-2bit-Packed | 27B | no disponible | 2,17 bpw (7,2 GB) | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-27B (base) | 27B | no disponible | 16 bpw (55,5 GB) | apache-2.0 | Hugging Face |
+| Grawnch/Qwen3.8-27B-DR-2bit (pre-desempaquetado) | 27B | no disponible | bfloat16 reconstruido | apache-2.0 | Hugging Face |
 
 No se dispone de informacion sobre cuantizaciones alternativas (GGUF, AWQ, GPTQ) del mismo modelo base en la informacion proporcionada, por lo que la comparativa con modelos de la misma categoria queda limitada a las variantes del propio autor.
 
@@ -92,7 +92,7 @@ No se dispone de informacion sobre cuantizaciones alternativas (GGUF, AWQ, GPTQ)
 - Sesgos conocidos: no documentados en la model card; se heredan los del modelo base Qwen3.8-27B, no especificados.
 - Idiomas soportados: no disponibles; se desconoce si la cuantizacion afecta de forma desigual a distintos idiomas.
 - Limitaciones de contexto: la longitud de contexto del modelo base no se documenta, y la cuantizacion podria afectar al rendimiento en contextos largos.
-- Dependencia de codigo no estandar: requiere el modulo `dr_loader` y `DRLinear`, no incluidos como paquete oficial de HuggingFace; no hay soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Dependencia de codigo no estandar: requiere el modulo `dr_loader` y `DRLinear`, no incluidos como paquete oficial de Hugging Face; no hay soporte para vLLM, llama.cpp, Ollama ni TGI.
 - Madurez: repositorio con 0 descargas y 0 likes, publicado y actualizado el mismo dia (2026-11-01), sin validacion independiente de los benchmarks reportados.
 - Licencia apache-2.0: permite uso comercial, pero el autor no ofrece garantias sobre el comportamiento del modelo cuantizado en produccion.
 - Ausencia de datos de calibracion: no se especifica el dataset ni el procedimiento de cuantizacion, lo que dificulta reproducir o auditar el resultado.

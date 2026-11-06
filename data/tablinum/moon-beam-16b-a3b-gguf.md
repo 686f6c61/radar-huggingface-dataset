@@ -85,9 +85,9 @@ Datos publicados en la model card. El indice se calcula como 100 Ã— (aciertos âˆ
 
 | Modelo | Parametros totales / activos | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Moon-Beam 16B-A3B | 16B / 3B | no disponible | Fine-tune QLoRA para calibracion con engram | MIT | GGUF y BF16 en HuggingFace |
-| Moonlight-16B-A3B-Instruct | 16B / 3B | no disponible | Modelo base instructivo generalista | MIT | HuggingFace (moonshotai) |
-| Moon-Beam 16B-A3B (BF16) | 16B / 3B | no disponible | Pesos completos del mismo fine-tune | MIT | HuggingFace (tablinum) |
+| Moon-Beam 16B-A3B | 16B / 3B | no disponible | Fine-tune QLoRA para calibracion con engram | MIT | GGUF y BF16 en Hugging Face |
+| Moonlight-16B-A3B-Instruct | 16B / 3B | no disponible | Modelo base instructivo generalista | MIT | Hugging Face (moonshotai) |
+| Moon-Beam 16B-A3B (BF16) | 16B / 3B | no disponible | Pesos completos del mismo fine-tune | MIT | Hugging Face (tablinum) |
 
 La comparacion principal es contra su propio modelo base: Moon-Beam pierde entre 8 y 12 puntos en GSM8K y alrededor de 5 puntos en MMLU-Pro, pero reduce drasticamente los errores en tareas factuales con recuperacion (SimpleQA: 155 errores frente a 371). No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
 

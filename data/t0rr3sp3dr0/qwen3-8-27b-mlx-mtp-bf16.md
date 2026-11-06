@@ -61,9 +61,9 @@ La comparativa se realiza contra el modelo base original y otras conversiones ML
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3.8-27B (original) | 27,8B | no disponible | PyTorch/safetensors | Apache-2.0 | HuggingFace |
-| t0rr3sp3dr0/Qwen3.8-27B-MLX-MTP-bf16 | 27,8B | no disponible | MLX/safetensors | Apache-2.0 | HuggingFace |
-| lukaskremla/Qwen3.8-27B-MLX-Quants (coleccion) | 27,8B | no disponible | MLX (4-bit, 8-bit) | Apache-2.0 | HuggingFace |
+| Qwen/Qwen3.8-27B (original) | 27,8B | no disponible | PyTorch/safetensors | Apache-2.0 | Hugging Face |
+| t0rr3sp3dr0/Qwen3.8-27B-MLX-MTP-bf16 | 27,8B | no disponible | MLX/safetensors | Apache-2.0 | Hugging Face |
+| lukaskremla/Qwen3.8-27B-MLX-Quants (coleccion) | 27,8B | no disponible | MLX (4-bit, 8-bit) | Apache-2.0 | Hugging Face |
 
 La diferencia principal es el formato y la inclusion de MTP. La coleccion de lukaskremla ofrece cuantizaciones adicionales que reducen los requisitos de memoria, mientras que esta conversion se centra en bf16 con MTP.
 
@@ -78,7 +78,7 @@ La diferencia principal es el formato y la inclusion de MTP. La coleccion de luk
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/t0rr3sp3dr0/Qwen3.8-27B-MLX-MTP-bf16
+- Modelo en Hugging Face: https://huggingface.co/t0rr3sp3dr0/Qwen3.8-27B-MLX-MTP-bf16
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Desafio MLX MTP de Layr-Labs: https://github.com/Layr-Labs/qwen-3.8-mtp-challenge

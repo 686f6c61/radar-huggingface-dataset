@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tipuls/indolem-financial-sentiment es un modelo de clasificación de sentimiento financiero publicado en HuggingFace por el usuario Tipuls. Se trata de un modelo basado en la arquitectura BERT, con 110.560.515 parámetros totales (aproximadamente 110,5 millones), lo que lo sitúa en la gama de los encoders tipo base. El repositorio ocupa 0,4 GB y los pesos se distribuyen en formato safetensors. La licencia declarada es MIT.
+Tipuls/indolem-financial-sentiment es un modelo de clasificación de sentimiento financiero publicado en Hugging Face por el usuario Tipuls. Se trata de un modelo basado en la arquitectura BERT, con 110.560.515 parámetros totales (aproximadamente 110,5 millones), lo que lo sitúa en la gama de los encoders tipo base. El repositorio ocupa 0,4 GB y los pesos se distribuyen en formato safetensors. La licencia declarada es MIT.
 
 El modelo está orientado, por su nombre, al análisis de sentimiento en el dominio financiero, presumiblemente para textos en indonesio (el prefijo "indolem" sugiere una vinculación con recursos de procesamiento de lenguaje natural en indonesio, aunque este extremo no está confirmado en la información disponible). La model card publicada es mínima: únicamente contiene la declaración de licencia, sin descripción de arquitectura, datos de entrenamiento, idiomas o métricas de evaluación.
 
@@ -53,17 +53,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: aproximadamente 0,45 GB en precisión FP32 (110,5 M de parámetros × 4 bytes), alrededor de 0,22 GB en FP16 y en torno a 0,11 GB en cuantización INT8. Estas cifras son estimaciones teóricas a partir del recuento de parámetros, no datos publicados por el autor.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente. Se puede ejecutar en tarjetas de gama baja como GTX 1050 Ti, GTX 1650 o incluso en CPU.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo moderna (RTX 3050, RTX 4060, RTX 4090, etc.) y también en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: al ser un modelo BERT en safetensors, es compatible con HuggingFace Transformers, Text Embeddings Inference (TEI), ONNX Runtime y TorchScript. No se documenta soporte nativo para vLLM, llama.cpp u Ollama, que están orientados a modelos generativos.
+- Opciones de despliegue: al ser un modelo BERT en safetensors, es compatible con Hugging Face Transformers, Text Embeddings Inference (TEI), ONNX Runtime y TorchScript. No se documenta soporte nativo para vLLM, llama.cpp u Ollama, que están orientados a modelos generativos.
 - Latencia y throughput estimados: no disponibles. Para un BERT-base en una GPU moderna se suele obtener un throughput del orden de cientos a miles de secuencias por segundo por lote, pero no hay mediciones publicadas para este checkpoint concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Tipuls/indolem-financial-sentiment | 110,5 M | no disponible | MIT | HuggingFace (18 descargas) | Model card mínima, sin métricas |
-| ProsusAI/finbert | 110 M | 512 tokens | Apache 2.0 | HuggingFace (muy popular) | BERT-base ajustado para sentimiento financiero en inglés, con benchmarks publicados |
-| yiyanghkust/finbert-tone | 110 M | 512 tokens | Apache 2.0 | HuggingFace | Variante de FinBERT para tono financiero, ampliamente evaluada |
-| nlptown/bert-base-multilingual-uncased-sentiment | 178 M | 512 tokens | MIT | HuggingFace | BERT multilingüe para sentimiento general, no específico de finanzas |
+| Tipuls/indolem-financial-sentiment | 110,5 M | no disponible | MIT | Hugging Face (18 descargas) | Model card mínima, sin métricas |
+| ProsusAI/finbert | 110 M | 512 tokens | Apache 2.0 | Hugging Face (muy popular) | BERT-base ajustado para sentimiento financiero en inglés, con benchmarks publicados |
+| yiyanghkust/finbert-tone | 110 M | 512 tokens | Apache 2.0 | Hugging Face | Variante de FinBERT para tono financiero, ampliamente evaluada |
+| nlptown/bert-base-multilingual-uncased-sentiment | 178 M | 512 tokens | MIT | Hugging Face | BERT multilingüe para sentimiento general, no específico de finanzas |
 
 La comparación con FinBERT y sus variantes es la más directa por tamaño y dominio, pero este checkpoint carece de la documentación y validación empírica de aquellos. La diferencia principal es la licencia MIT (más permisiva que Apache 2.0 en algunos contextos) y la posible orientación al indonesio, que lo diferencia de los modelos centrados en inglés.
 
@@ -78,5 +78,5 @@ La comparación con FinBERT y sus variantes es la más directa por tamaño y dom
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tipuls/indolem-financial-sentiment
+- Hugging Face: https://huggingface.co/Tipuls/indolem-financial-sentiment
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

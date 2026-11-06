@@ -4,7 +4,7 @@
 
 `ruizmi-chelle/retrieval-run2` es un repositorio de código y pesos de inicialización que implementa una arquitectura BEiT en configuración *base* orientada a tareas de *retrieval* (recuperación). Lo publica el usuario ruizmi-chelle bajo licencia Apache 2.0 y su propósito declarado es servir como implementación transparente con pruebas de humo repetibles, no como un modelo entrenado listo para producción. La model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para *smoke tests* y que no se presenta como un checkpoint evaluado en ningún benchmark.
 
-El modelo se apoya en varias decisiones arquitectónicas poco habituales en un BEiT estándar: atención lineal, fusión mediante descomposición de Tucker, activación aproximada de GELU y normalización por *batchnorm*. La receta de experimento por defecto usa el optimizador Adafactor con un *schedule* exponencial. Los metadatos de HuggingFace reportan 16.576 parámetros totales en el campo de safetensors, una cifra extraordinariamente baja que no está confirmada ni desarrollada en la model card; el tamaño del repositorio aparece como 0,0 GB.
+El modelo se apoya en varias decisiones arquitectónicas poco habituales en un BEiT estándar: atención lineal, fusión mediante descomposición de Tucker, activación aproximada de GELU y normalización por *batchnorm*. La receta de experimento por defecto usa el optimizador Adafactor con un *schedule* exponencial. Los metadatos de Hugging Face reportan 16.576 parámetros totales en el campo de safetensors, una cifra extraordinariamente baja que no está confirmada ni desarrollada en la model card; el tamaño del repositorio aparece como 0,0 GB.
 
 Su relevancia actual es limitada y de carácter metodológico: sirve como punto de partida reproducible para quien quiera entrenar y evaluar un sistema de recuperación multimodal con una receta concreta, y como recordatorio de buenas prácticas de evaluación (misma exposición de datos, mismo presupuesto de ajuste y varias semillas aleatorias para todas las líneas base). No es un modelo generativo, no es un LLM y no debe tratarse como un artefacto listo para *fine-tuning* de producción.
 
@@ -13,7 +13,7 @@ Su relevancia actual es limitada y de carácter metodológico: sirve como punto 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | BEiT (configuracion base), atencion lineal, fusion Tucker, activacion approx GELU, normalizacion batchnorm |
-| Parametros totales | 16.576 (dato del campo de safetensors en HuggingFace; no confirmado ni desglosado en la model card) |
+| Parametros totales | 16.576 (dato del campo de safetensors en Hugging Face; no confirmado ni desglosado en la model card) |
 | Parametros activos | No aplica (no es una arquitectura MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (no se documentan versiones GGUF, AWQ, GPTQ ni similares) |
@@ -90,7 +90,7 @@ Las cifras de los modelos comparativos proceden de conocimiento general, no de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ruizmi-chelle/retrieval-run2
-- Perfil del autor en HuggingFace: https://huggingface.co/ruizmi-chelle
+- Repositorio en Hugging Face: https://huggingface.co/ruizmi-chelle/retrieval-run2
+- Perfil del autor en Hugging Face: https://huggingface.co/ruizmi-chelle
 - Hugging Face (portal general): https://huggingface.co/
 - La busqueda web no ha devuelto papers, blogs, repositorios ni demos especificos de este modelo. Los unicos resultados adicionales son herramientas genericas de comprobacion de hardware y comparacion de modelos, sin relacion directa con este repositorio: https://llmrun.dev/, https://benchlm.ai/, https://runlocalmodel.com/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tom-tien-sinh/model` es un repositorio de modelo publicado en HuggingFace por el usuario `tom-tien-sinh` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción funcional: se limita a declarar la licencia, sin indicar arquitectura, propósito, datos de entrenamiento ni idiomas soportados. El repositorio ocupa 3,9 GB y está etiquetado con `onnx`, lo que sugiere que los pesos se distribuyen en formato ONNX, aunque no se especifica el modelo base ni el proceso de conversión.
+`tom-tien-sinh/model` es un repositorio de modelo publicado en Hugging Face por el usuario `tom-tien-sinh` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción funcional: se limita a declarar la licencia, sin indicar arquitectura, propósito, datos de entrenamiento ni idiomas soportados. El repositorio ocupa 3,9 GB y está etiquetado con `onnx`, lo que sugiere que los pesos se distribuyen en formato ONNX, aunque no se especifica el modelo base ni el proceso de conversión.
 
 No se dispone de información sobre el pipeline de la tarea, los idiomas soportados ni el número de parámetros. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que apunta a un artefacto recién creado o de uso privado sin difusión pública. Cualquier evaluación de capacidades, rendimiento o idoneidad para producción resulta imposible con los datos disponibles.
 
@@ -78,5 +78,5 @@ No disponible. No se puede establecer una comparativa fiable sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tom-tien-sinh/model
+- Repositorio en Hugging Face: https://huggingface.co/tom-tien-sinh/model
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

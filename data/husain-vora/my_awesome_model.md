@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`my_awesome_model` es un modelo de clasificación de texto obtenido mediante fine-tuning de `distilbert/distilbert-base-uncased`, publicado por el usuario Husain-Vora en HuggingFace. Se trata de un artefacto derivado de un flujo de entrenamiento estándar con la librería Transformers (generado automáticamente por `Trainer`), no de un modelo fundacional ni de una release con documentación técnica elaborada. El nombre genérico y la ausencia de descripción sugieren un experimento o una prueba de pipeline más que un modelo destinado a producción.
+`my_awesome_model` es un modelo de clasificación de texto obtenido mediante fine-tuning de `distilbert/distilbert-base-uncased`, publicado por el usuario Husain-Vora en Hugging Face. Se trata de un artefacto derivado de un flujo de entrenamiento estándar con la librería Transformers (generado automáticamente por `Trainer`), no de un modelo fundacional ni de una release con documentación técnica elaborada. El nombre genérico y la ausencia de descripción sugieren un experimento o una prueba de pipeline más que un modelo destinado a producción.
 
 El modelo resuelve la tarea genérica de clasificación de secuencias (text-classification) sobre texto en inglés, dado que hereda el tokenizador y el vocabulario de DistilBERT uncased. Cuenta con 66.955.010 parámetros según los pesos en safetensors y un tamaño de repositorio de 0,5 GB. La model card declara una accuracy de 0,9313 y una loss de validación de 0,2344 sobre un conjunto de evaluación no especificado.
 
@@ -44,7 +44,7 @@ El entrenamiento se realizo con `Trainer` de Transformers 5.20.2 sobre PyTorch 2
 - Enrutamiento de correo o formularios: asignacion de mensajes a departamentos concretos en un flujo interno, aprovechando el bajo coste de inferencia de un encoder de 66 M de parametros.
 - Filtrado de resenas de producto: deteccion de polaridad o de resenas fraudulentas en ingles, con un ajuste fino adicional sobre datos propios si las etiquetas originales no coinciden.
 - Baseline en experimentos de NLP: punto de partida rapido para comparar contra modelos mayores en tareas de clasificacion, dado su tamano reducido y su licencia permisiva.
-- Prototipado de pipelines de HuggingFace: ejemplo reproducible de fine-tuning con `Trainer` para validar infraestructura de entrenamiento antes de escalar a modelos mayores.
+- Prototipado de pipelines de Hugging Face: ejemplo reproducible de fine-tuning con `Trainer` para validar infraestructura de entrenamiento antes de escalar a modelos mayores.
 - Servicio de inferencia ligero: despliegue en CPU o GPU de gama baja para clasificacion de bajo volumen, gracias a los 0,5 GB de pesos.
 
 ## Benchmarks y rendimiento
@@ -78,10 +78,10 @@ El `model-index` del autor no contiene resultados adicionales (lista vacia). No 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `Husain-Vora/my_awesome_model` | 66,9 M | no disponible | Apache 2.0 | HuggingFace (24 descargas) | Fine-tune de DistilBERT sin documentacion |
-| `distilbert/distilbert-base-uncased` | 66,9 M | 512 tokens | Apache 2.0 | HuggingFace (ampliamente usado) | Modelo base, sin cabeza de clasificacion especifica |
-| `distilbert/distilbert-base-uncased-finetuned-sst-2-english` | 66,9 M | 512 tokens | Apache 2.0 | HuggingFace | Fine-tune oficial para analisis de sentimiento en ingles |
-| `google/bert_uncased_L-4_H-256_A-4` | ~11 M | 512 tokens | Apache 2.0 | HuggingFace | Alternativa mas pequena de BERT, menor precision esperada |
+| `Husain-Vora/my_awesome_model` | 66,9 M | no disponible | Apache 2.0 | Hugging Face (24 descargas) | Fine-tune de DistilBERT sin documentacion |
+| `distilbert/distilbert-base-uncased` | 66,9 M | 512 tokens | Apache 2.0 | Hugging Face (ampliamente usado) | Modelo base, sin cabeza de clasificacion especifica |
+| `distilbert/distilbert-base-uncased-finetuned-sst-2-english` | 66,9 M | 512 tokens | Apache 2.0 | Hugging Face | Fine-tune oficial para analisis de sentimiento en ingles |
+| `google/bert_uncased_L-4_H-256_A-4` | ~11 M | 512 tokens | Apache 2.0 | Hugging Face | Alternativa mas pequena de BERT, menor precision esperada |
 
 La comparativa se limita a modelos de la misma familia y tamano; no se dispone de datos de rendimiento comparables del modelo evaluado frente a estas alternativas.
 
@@ -98,7 +98,7 @@ La comparativa se limita a modelos de la misma familia y tamano; no se dispone d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Husain-Vora/my_awesome_model
+- Modelo en Hugging Face: https://huggingface.co/Husain-Vora/my_awesome_model
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Documentacion de DistilBERT en Transformers: https://huggingface.co/docs/transformers/model_doc/distilbert
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108

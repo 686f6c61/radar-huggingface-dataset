@@ -67,6 +67,6 @@ No se dispone de informacion sobre vectores de control comparables en la informa
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/26B-Suite/Plainspeak-Dial-Gemma-4-26B-A4B-BakeVector)
+- [Modelo en Hugging Face](https://huggingface.co/26B-Suite/Plainspeak-Dial-Gemma-4-26B-A4B-BakeVector)
 - [Archivo del vector (plainspeak-v2.gguf)](https://huggingface.co/andyoneal/Plainspeak-Dial-Gemma-4-26B-A4B/resolve/main/plainspeak-v2.gguf?download=true)
 - [Modelo base google/gemma-4-26B-A4B-it](https://huggingface.co/google/gemma-4-26B-A4B-it)

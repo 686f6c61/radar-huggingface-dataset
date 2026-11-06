@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`abrar06/atlas-cp-model-new` es un repositorio de modelo publicado en HuggingFace por el usuario `abrar06`. La informacion disponible se limita a los metadatos del repositorio: identificador, autor, fecha de publicacion (19 de septiembre de 2026), licencia declarada como `other` con `license_name: odyssey-ai` y ambito `region:us`. No consta etiqueta de pipeline, idiomas soportados, tamanio, arquitectura ni ningun otro dato tecnico.
+`abrar06/atlas-cp-model-new` es un repositorio de modelo publicado en Hugging Face por el usuario `abrar06`. La informacion disponible se limita a los metadatos del repositorio: identificador, autor, fecha de publicacion (19 de septiembre de 2026), licencia declarada como `other` con `license_name: odyssey-ai` y ambito `region:us`. No consta etiqueta de pipeline, idiomas soportados, tamanio, arquitectura ni ningun otro dato tecnico.
 
 La model card del repositorio no contiene mas contenido que el bloque de metadatos de licencia. No incluye descripcion del modelo, detalles de entrenamiento, resultados de evaluacion, instrucciones de uso ni ejemplos. El repositorio registra cero descargas y cero "likes" en el momento de la consulta, por lo que no hay evidencia de adopcion ni de validacion por parte de la comunidad.
 
@@ -88,6 +88,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/abrar06/atlas-cp-model-new
+- Repositorio en Hugging Face: https://huggingface.co/abrar06/atlas-cp-model-new
 - Archivo de licencia referenciado en la model card: `LICENSE` (relativo al repositorio anterior; no se ha podido verificar su contenido)
 - Resultados de busqueda web: ninguno relevante para el modelo

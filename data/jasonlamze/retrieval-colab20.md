@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jasonlamze/retrieval-colab20` es un repositorio experimental publicado en HuggingFace por el usuario jasonlamze que contiene una implementación propia de una arquitectura CLIP orientada a recuperación (retrieval) de imagen y texto. El autor lo describe explícitamente como un punto de partida de investigación: el único checkpoint incluido, `model.safetensors`, es una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado.
+`jasonlamze/retrieval-colab20` es un repositorio experimental publicado en Hugging Face por el usuario jasonlamze que contiene una implementación propia de una arquitectura CLIP orientada a recuperación (retrieval) de imagen y texto. El autor lo describe explícitamente como un punto de partida de investigación: el único checkpoint incluido, `model.safetensors`, es una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado.
 
 El repositorio ocupa 0,0 GB y el recuento real de parámetros de los pesos en safetensors es de 24.832, una cifra que contrasta con la etiqueta "giant" que el autor asigna a la escala del modelo en su model card. Esa discrepancia sugiere que "giant" designa una variante de configuración dentro del código y no el tamaño efectivo del checkpoint publicado.
 
@@ -84,15 +84,15 @@ La comparación relevante no es de rendimiento sino de estado: los tres modelos 
 - El checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio; el propio autor lo califica de punto de partida experimental.
 - Riesgo de alucinación: no aplica en el sentido generativo, pero cualquier embedding producido por el checkpoint actual carece de significado semántico aprendido.
 - La etiqueta "giant" de la model card no concuerda con los 24.832 parámetros reales del safetensors; conviene tratar esa etiqueta como un identificador de configuración del código.
-- No hay información sobre idiomas soportados, longitud de contexto, cuantizaciones ni pipeline declarado en HuggingFace.
-- Las APIs automáticas de carga de HuggingFace no funcionan sin un adaptador explícito, porque la implementación es personalizada.
+- No hay información sobre idiomas soportados, longitud de contexto, cuantizaciones ni pipeline declarado en Hugging Face.
+- Las APIs automáticas de carga de Hugging Face no funcionan sin un adaptador explícito, porque la implementación es personalizada.
 - Licencia MIT: permite uso comercial y modificación, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen cuando el repositorio se use con datasets externos.
 - No hay métricas, semillas, registros de entrenamiento ni versiones de entorno publicados; cualquier resultado futuro debe acompañarse de esos elementos para ser verificable.
 - No debe presentarse como modelo de producción ni como referencia de rendimiento en recuperación multimodal.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jasonlamze/retrieval-colab20
+- Hugging Face: https://huggingface.co/jasonlamze/retrieval-colab20
 - La búsqueda web no ha devuelto enlaces específicos de este modelo. Los resultados obtenidos corresponden a recursos genéricos de recuperación y RAG, no afiliados al autor, que se listan solo como contexto del ecosistema:
   - Google Colab, ejemplo de RetrievalQA con Llama 2 13B: https://colab.research.google.com/github/pinecone-io/examples/blob/master/learn/generation/llm-field-guide/llama-2/llama-2-13b-retrievalqa.ipynb
   - Google Colab, retrieval augmented generation con LangChain y KDB.AI: https://colab.research.google.com/github/KxSystems/kdbai-samples/blob/main/retrieval_augmented_generation/retrieval_augmented_generation.ipynb

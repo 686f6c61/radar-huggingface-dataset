@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kesug es un repositorio de modelo publicado en HuggingFace por el usuario ptr8989 bajo el identificador `ptr8989/Kesug`. En el momento de la consulta, el repositorio no incluye model card sustantiva: el unico contenido del README es la declaracion de licencia MIT, sin descripcion, arquitectura, tamano ni instrucciones de uso. Tampoco tiene etiqueta de pipeline asignada, idiomas declarados ni resultados de evaluacion.
+Kesug es un repositorio de modelo publicado en Hugging Face por el usuario ptr8989 bajo el identificador `ptr8989/Kesug`. En el momento de la consulta, el repositorio no incluye model card sustantiva: el unico contenido del README es la declaracion de licencia MIT, sin descripcion, arquitectura, tamano ni instrucciones de uso. Tampoco tiene etiqueta de pipeline asignada, idiomas declarados ni resultados de evaluacion.
 
 El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (3 de octubre de 2026), lo que sugiere una publicacion inicial sin desarrollo posterior ni validacion por parte de la comunidad. No aparece ninguna mencion a este modelo en los resultados de busqueda web disponibles, que se limitan a rankings genericos de terceros.
 
@@ -52,7 +52,7 @@ No es posible proponer casos de uso validados, porque no hay documentacion de ca
 - Evaluacion cualitativa basica: si el modelo carga, generar completaciones de prueba en varios idiomas y dominios para estimar si el entrenamiento produjo un modelo funcional o un artefacto sin entrenar.
 - Pruebas de coherencia y alucinacion: someter al modelo a preguntas factuales verificables para medir la tasa de respuestas incorrectas con tono confiado, un riesgo alto en modelos sin model card ni evaluacion publica.
 - Prototipado interno aislado: usar el modelo unicamente en entornos de desarrollo sin datos sensibles ni usuarios finales, dado que no hay garantias de calidad, sesgo ni seguridad.
-- Estudio academico de repositorios no documentados: analizar este caso como ejemplo de publicacion en HuggingFace sin model card ni validacion comunitaria, util para investigacion sobre reproducibilidad en IA abierta.
+- Estudio academico de repositorios no documentados: analizar este caso como ejemplo de publicacion en Hugging Face sin model card ni validacion comunitaria, util para investigacion sobre reproducibilidad en IA abierta.
 - Base para fine-tuning experimental: solo si la inspeccion previa confirma una arquitectura estandar y una licencia compatible; la licencia MIT no impone restricciones de uso comercial, pero tampoco ofrece garantias sobre el origen de los datos de entrenamiento.
 
 ## Benchmarks y rendimiento
@@ -90,7 +90,7 @@ No disponible. No hay informacion suficiente sobre `ptr8989/Kesug` (parametros, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ptr8989/Kesug
+- Repositorio en Hugging Face: https://huggingface.co/ptr8989/Kesug
 - LLM Leaderboard y benchmarks de modelos de IA (octubre de 2026): https://benchlm.ai/
 - LLM Leaderboard 2026, comparativa de mas de 300 modelos: https://llm-stats.com/leaderboards/llm-leaderboard
 - Hugging Face, plataforma principal: https://huggingface.co/

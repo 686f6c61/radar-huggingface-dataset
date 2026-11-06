@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Proyecto | Enfoque | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ChromaFix (hsn66) | Correccion de daltonismo por matriz 3x3 en Flask/NumPy | no aplica | no aplica | no disponible | HuggingFace, 0 descargas |
+| ChromaFix (hsn66) | Correccion de daltonismo por matriz 3x3 en Flask/NumPy | no aplica | no aplica | no disponible | Hugging Face, 0 descargas |
 | DaltonLens (referencia del ecosistema) | Simulacion y correccion de daltonismo en Python | no aplica | no aplica | no disponible en la informacion | no disponible en la informacion |
 | Filtros de accesibilidad de sistemas operativos | Correccion a nivel de pantalla | no aplica | no aplica | propietaria | integrados en el SO |
 
@@ -87,5 +87,5 @@ La comparativa con proyectos concretos no puede completarse con datos verificado
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hsn66/ChromaFix
+- Repositorio en Hugging Face: https://huggingface.co/hsn66/ChromaFix
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios adicionales ni demos en linea.

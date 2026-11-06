@@ -29,7 +29,7 @@ Por tanto, esta ficha refleja unicamente los datos verificables del repositorio 
 
 No se dispone de informacion sobre la arquitectura del modelo base `vcerny/tailorbird-v0.2`: no consta si es un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un diseno hibrido. Tampoco hay datos sobre el numero de parametros, la longitud de contexto nativa, el volumen de tokens de entrenamiento, la composicion del dataset ni la existencia de fases de ajuste como SFT, RLHF o DPO.
 
-El unico dato tecnico verificable es el proceso de conversion: los metadatos embebidos en la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que señala que la cuantizacion se genero con la version 2 del flujo de trabajo de llama.cpp a partir de pesos en formato HuggingFace. Los niveles incluidos cubren desde F16 sin perdida adicional hasta Q2_K, con variantes de la familia K-quant y una cuantizacion IQ4_XS basada en imatrix.
+El unico dato tecnico verificable es el proceso de conversion: los metadatos embebidos en la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que señala que la cuantizacion se genero con la version 2 del flujo de trabajo de llama.cpp a partir de pesos en formato Hugging Face. Los niveles incluidos cubren desde F16 sin perdida adicional hasta Q2_K, con variantes de la familia K-quant y una cuantizacion IQ4_XS basada en imatrix.
 
 ## Capacidades
 
@@ -105,7 +105,7 @@ No disponible. No se dispone de informacion suficiente sobre el modelo base (tam
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/tailorbird-v0.2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/tailorbird-v0.2-GGUF
 - Modelo base: https://huggingface.co/vcerny/tailorbird-v0.2
 - Paper, blog o demo del autor: no disponible
 - Repositorio de codigo: no disponible

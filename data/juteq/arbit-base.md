@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Arbit-base es un repositorio de pesos de HuggingFace publicado por el usuario juteq (JUTEQ) que contiene los checkpoints de partida del motor de decisiones Arbit, descrito por el autor como un motor de decisión no autorregresivo. A diferencia de un modelo generativo al uso, Arbit resuelve varias preguntas tipadas (`choice`, `score`, `noul`) sobre un mismo estado compartido en una única pasada forward, devolviendo para cada una una distribución de probabilidad calibrada. El repositorio incluye dos checkpoints: uno de propósito general en inglés con contexto de 512 tokens y otro ajustado sobre el split de entrenamiento del benchmark «typed-decisions» con contexto de 1024 tokens.
+Arbit-base es un repositorio de pesos de Hugging Face publicado por el usuario juteq (JUTEQ) que contiene los checkpoints de partida del motor de decisiones Arbit, descrito por el autor como un motor de decisión no autorregresivo. A diferencia de un modelo generativo al uso, Arbit resuelve varias preguntas tipadas (`choice`, `score`, `noul`) sobre un mismo estado compartido en una única pasada forward, devolviendo para cada una una distribución de probabilidad calibrada. El repositorio incluye dos checkpoints: uno de propósito general en inglés con contexto de 512 tokens y otro ajustado sobre el split de entrenamiento del benchmark «typed-decisions» con contexto de 1024 tokens.
 
 El modelo no ha sido entrenado por JUTEQ: los ficheros se redistribuyen sin modificar desde un checkpoint publicado previamente con licencia Apache-2.0, con el objetivo declarado de hacer reproducibles los entrenamientos que parten de ellos. El encoder subyacente es answerdotai/ModernBERT-large (Apache-2.0), con 421.293.830 parámetros según los pesos en safetensors, lo que sitúa al conjunto en la categoría de modelos de 400-450 millones de parámetros.
 
@@ -17,7 +17,7 @@ Su relevancia es acotada y muy específica: no compite en generación de texto n
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | 512 tokens en el checkpoint de la raiz del repositorio (English general); 1024 tokens en el checkpoint `typed-decisions/` |
 | Tipos de cuantizacion | No disponible (el repositorio solo publica safetensors; no se documentan cuantizaciones GGUF, AWQ ni GPTQ) |
-| Idiomas soportados | Ingles unicamente (la model card indica explicitamente "English only"; el campo de idiomas de HuggingFace figura como no disponible) |
+| Idiomas soportados | Ingles unicamente (la model card indica explicitamente "English only"; el campo de idiomas de Hugging Face figura como no disponible) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (libreria declarada: transformers) |
 
@@ -71,9 +71,9 @@ No se han identificado en la información proporcionada modelos directamente com
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| juteq/arbit-base (raiz, English general) | 421M | 512 tokens | Apache-2.0 | HuggingFace, 0 descargas |
-| juteq/arbit-base (`typed-decisions/`) | 421M | 1024 tokens | Apache-2.0 | HuggingFace, dentro del mismo repo |
-| answerdotai/ModernBERT-large (encoder base) | 421M segun la model card | No disponible en la informacion proporcionada para esta ficha | Apache-2.0 | HuggingFace, checkpoint publico |
+| juteq/arbit-base (raiz, English general) | 421M | 512 tokens | Apache-2.0 | Hugging Face, 0 descargas |
+| juteq/arbit-base (`typed-decisions/`) | 421M | 1024 tokens | Apache-2.0 | Hugging Face, dentro del mismo repo |
+| answerdotai/ModernBERT-large (encoder base) | 421M segun la model card | No disponible en la informacion proporcionada para esta ficha | Apache-2.0 | Hugging Face, checkpoint publico |
 | Alternativas de razonamiento/decision de otros autores | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -90,9 +90,9 @@ No se han identificado en la información proporcionada modelos directamente com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juteq/arbit-base
+- Modelo en Hugging Face: https://huggingface.co/juteq/arbit-base
 - Repositorio del proyecto Arbit en GitHub: https://github.com/juteq/arbit
-- Encoder base en HuggingFace: https://huggingface.co/answerdotai/ModernBERT-large
+- Encoder base en Hugging Face: https://huggingface.co/answerdotai/ModernBERT-large
 - Paper del modelo: no disponible
 - Blog o demo oficial: no disponible
 - Los resultados de busqueda web proporcionados no contenian enlaces relevantes sobre este modelo.

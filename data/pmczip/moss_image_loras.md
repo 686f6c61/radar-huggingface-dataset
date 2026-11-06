@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MOSS_Image_LoRAs es una coleccion de adaptadores LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicada por el usuario pmczip en HuggingFace. Los adaptadores estan entrenados sobre el modelo base MOSS-Image-Base del equipo OpenMOSS-Team, y su especialidad es la generacion de fotografias fotorrealistas de retratos femeninos, incluyendo lo que el propio repositorio etiqueta como "celebrity" y "likeness" (semejanza con personas reales).
+MOSS_Image_LoRAs es una coleccion de adaptadores LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicada por el usuario pmczip en Hugging Face. Los adaptadores estan entrenados sobre el modelo base MOSS-Image-Base del equipo OpenMOSS-Team, y su especialidad es la generacion de fotografias fotorrealistas de retratos femeninos, incluyendo lo que el propio repositorio etiqueta como "celebrity" y "likeness" (semejanza con personas reales).
 
-El repositorio funciona como un paquete de multiples LoRAs, cada uno asociado a un token disparador unico (por ejemplo, `4j133` o `4n63145un`) que activa la apariencia de un sujeto concreto dentro del prompt. Esta diseñado para usarse con la libreria diffusers de HuggingFace y los pesos se distribuyen en formato safetensors. El tamaño total del repositorio es de 12,3 GB, lo que indica que incluye un numero considerable de adaptadores.
+El repositorio funciona como un paquete de multiples LoRAs, cada uno asociado a un token disparador unico (por ejemplo, `4j133` o `4n63145un`) que activa la apariencia de un sujeto concreto dentro del prompt. Esta diseñado para usarse con la libreria diffusers de Hugging Face y los pesos se distribuyen en formato safetensors. El tamaño total del repositorio es de 12,3 GB, lo que indica que incluye un numero considerable de adaptadores.
 
 Cabe destacar que se trata de un artefacto comunitario de terceros, no de un modelo oficial del equipo OpenMOSS: el autor ha entrenado estos LoRAs sobre el modelo base publicado por OpenMOSS-Team. Su relevancia es principalmente como ejemplo de la practica, éticamente delicada, de crear adaptadores que replican la apariencia de personas reales, y como recurso para quienes trabajan con la familia de modelos MOSS-Image.
 
@@ -25,7 +25,7 @@ Datos adicionales del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | pmczip/MOSS_Image_LoRAs |
+| ID en Hugging Face | pmczip/MOSS_Image_LoRAs |
 | Modelo base | OpenMOSS-Team/MOSS-Image-Base |
 | Pipeline | text-to-image (diffusers) |
 | Tamano del repositorio | 12,3 GB |
@@ -44,7 +44,7 @@ No se ha publicado informacion sobre el proceso de entrenamiento de estos LoRAs:
 - Generacion de imagenes fotorrealistas a partir de texto mediante el pipeline text-to-image de diffusers.
 - Reproduccion de apariencias concretas de sujetos mediante tokens disparadores unicos por LoRA (tecnica habitual en entrenamientos de sujeto unico tipo DreamBooth/LoRA).
 - Control fino de estilo fotografico: los prompts de ejemplo combinan descripcion de sujeto, vestuario, fondo, iluminacion y terminologia fotografica (lente 35mm, Kodachrome, iluminacion profesional).
-- Compatibilidad con la libreria diffusers de HuggingFace y, por extension, con interfaces que la utilizan.
+- Compatibilidad con la libreria diffusers de Hugging Face y, por extension, con interfaces que la utilizan.
 - No aplica: tool calling, agentes, razonamiento, codigo ni capacidades multilingues, al tratarse de un modelo de difusion y no de un LLM.
 
 ## Casos de uso
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 - VRAM estimada para inferencia: no disponible. Como referencia general, los LoRA anaden poca memoria sobre el modelo base; el requisito dominante sera el de MOSS-Image-Base, cuyas especificaciones no se detallan en este repositorio.
 - GPU recomendadas: no disponible. Para modelos de difusion de generacion de imagen de este tipo, GPUs consumer con 12-24 GB de VRAM (RTX 3090/4090) suelen ser suficientes para inferencia con LoRAs.
 - Cabe en GPU consumer: probablemente si para inferencia (los LoRA individuales suelen ocupar decenas o cientos de MB), pero no hay datos confirmados. Los 12,3 GB del repositorio corresponden al conjunto completo de adaptadores, no a un unico LoRA.
-- Opciones de despliegue: libreria diffusers de HuggingFace (libreria indicada en el repositorio). Compatibilidad con ComfyUI, Automatic1111 o SD.Next no esta confirmada en la model card.
+- Opciones de despliegue: libreria diffusers de Hugging Face (libreria indicada en el repositorio). Compatibilidad con ComfyUI, Automatic1111 o SD.Next no esta confirmada en la model card.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -93,6 +93,6 @@ La comparacion es aproximada: los datos de las alternativas dependen de cada rep
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pmczip/MOSS_Image_LoRAs
+- Repositorio en Hugging Face: https://huggingface.co/pmczip/MOSS_Image_LoRAs
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Texto de la licencia personalizada: https://multimodal.art/civitai-licenses

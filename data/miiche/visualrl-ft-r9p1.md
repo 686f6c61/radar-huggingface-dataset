@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Miiche/visualrl-ft-r9p1` es un checkpoint alojado en HuggingFace con un total de 8.292.166.656 parámetros (aproximadamente 8,29 mil millones) y un tamaño de repositorio de 49,8 GB. Los metadatos incluyen las etiquetas `safetensors`, `qwen2_5_vl` y `region:us`, lo que sugiere que se trata de un fine-tuning sobre la arquitectura Qwen2.5-VL, probablemente orientado a tareas de razonamiento visual mediante aprendizaje por refuerzo (el prefijo "visualrl" en el nombre apunta a ello). Sin embargo, no se dispone de documentación oficial, descripción del modelo, licencia ni información sobre el proceso de entrenamiento. Con solo 5 descargas y 0 likes, se trata de un modelo experimental o de nicho, sin evidencia de uso en producción.
+El modelo `Miiche/visualrl-ft-r9p1` es un checkpoint alojado en Hugging Face con un total de 8.292.166.656 parámetros (aproximadamente 8,29 mil millones) y un tamaño de repositorio de 49,8 GB. Los metadatos incluyen las etiquetas `safetensors`, `qwen2_5_vl` y `region:us`, lo que sugiere que se trata de un fine-tuning sobre la arquitectura Qwen2.5-VL, probablemente orientado a tareas de razonamiento visual mediante aprendizaje por refuerzo (el prefijo "visualrl" en el nombre apunta a ello). Sin embargo, no se dispone de documentación oficial, descripción del modelo, licencia ni información sobre el proceso de entrenamiento. Con solo 5 descargas y 0 likes, se trata de un modelo experimental o de nicho, sin evidencia de uso en producción.
 
 La relevancia de este checkpoint reside principalmente en su posible aplicación como base para experimentos en visión-lenguaje con técnicas de RL, aunque la ausencia de datos públicos limita su evaluación. No se puede confirmar su arquitectura exacta, capacidades ni rendimiento sin información adicional.
 
@@ -42,7 +42,7 @@ Dado que el modelo tiene aproximadamente 8,29 mil millones de parámetros y el r
 - VRAM estimada para inferencia en fp16: alrededor de 16-18 GB (los pesos ocupan ~16,6 GB en fp16, más overhead de activaciones).
 - GPU recomendadas: NVIDIA RTX 4090 (24 GB), A100 40 GB, H100 80 GB, o GPUs con al menos 24 GB de VRAM para una inferencia cómoda.
 - En consumer GPU: cabría en una RTX 4090 (24 GB) con fp16, pero no en GPUs de 12-16 GB sin cuantización.
-- Opciones de despliegue: vLLM, TGI, llama.cpp (si se convierte a GGUF), o HuggingFace Transformers con `device_map="auto"`.
+- Opciones de despliegue: vLLM, TGI, llama.cpp (si se convierte a GGUF), o Hugging Face Transformers con `device_map="auto"`.
 - Latencia y throughput estimados: no disponibles, dependen del hardware y la optimización.
 
 ## Comparativa con modelos similares
@@ -59,4 +59,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [Miiche/visualrl-ft-r9p1](https://huggingface.co/Miiche/visualrl-ft-r9p1)
+- Repositorio de Hugging Face: [Miiche/visualrl-ft-r9p1](https://huggingface.co/Miiche/visualrl-ft-r9p1)

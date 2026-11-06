@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `WasonLimp/pigauto99` en HuggingFace se presenta como un modelo de generación de texto con etiquetas `llama`, `text-generation` y `dummy-model`, pero en realidad no contiene ningún peso, configuración o artefacto de modelo. El repositorio tiene un tamaño de 0.0 GB, cero descargas y su model card es exclusivamente una página promocional en tailandés para un sitio web de lotería online llamado pigauto99.
+El repositorio `WasonLimp/pigauto99` en Hugging Face se presenta como un modelo de generación de texto con etiquetas `llama`, `text-generation` y `dummy-model`, pero en realidad no contiene ningún peso, configuración o artefacto de modelo. El repositorio tiene un tamaño de 0.0 GB, cero descargas y su model card es exclusivamente una página promocional en tailandés para un sitio web de lotería online llamado pigauto99.
 
-No existe ningún modelo de IA real en este repositorio. La model card contiene enlaces de afiliado a un sitio de apuestas, instrucciones de registro y promociones de juegos de azar, pero ningún dato técnico sobre arquitectura, parámetros, entrenamiento o capacidades. Cualquier uso de este repositorio como modelo de IA es inviable; se trata de un repositorio dummy que probablemente se creó para aprovechar la infraestructura de HuggingFace con fines de spam o SEO.
+No existe ningún modelo de IA real en este repositorio. La model card contiene enlaces de afiliado a un sitio de apuestas, instrucciones de registro y promociones de juegos de azar, pero ningún dato técnico sobre arquitectura, parámetros, entrenamiento o capacidades. Cualquier uso de este repositorio como modelo de IA es inviable; se trata de un repositorio dummy que probablemente se creó para aprovechar la infraestructura de Hugging Face con fines de spam o SEO.
 
 ## Especificaciones tecnicas
 
@@ -61,14 +61,14 @@ No disponible. No existe un modelo comparable porque no hay modelo. Los unicos r
 - El repositorio no contiene ningun modelo de IA real: es un dummy model sin pesos ni artefactos.
 - La model card es contenido promocional de un sitio de apuestas online, no documentacion tecnica.
 - Los enlaces incluidos son de afiliado y dirigen a un sitio externo de loteria.
-- El uso de la plataforma HuggingFace para alojar contenido promocional de juegos de azar puede violar las politicas de la plataforma.
+- El uso de la plataforma Hugging Face para alojar contenido promocional de juegos de azar puede violar las politicas de la plataforma.
 - No existe ninguna garantia de seguridad, privacidad o legalidad del sitio promocionado.
 - No es apto para ningun uso en produccion, desarrollo o investigacion.
 - La licencia MIT declarada no es relevante al no existir codigo ni pesos que licenciar.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WasonLimp/pigauto99
+- Repositorio Hugging Face: https://huggingface.co/WasonLimp/pigauto99
 - npm: https://www.npmjs.com/package/pigauto99
 - jsDelivr CDN: https://www.jsdelivr.com/package/npm/pigauto99
 - GitHub: https://github.com/WasonLimp/pigauto99

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`volkov1996/clip-classification-notebook` es un repositorio experimental publicado en HuggingFace por el usuario volkov1996 que contiene una implementacion propia de una arquitectura de tipo CLIP orientada a tareas de clasificacion. No se trata de un modelo entrenado ni de un checkpoint listo para produccion: el propio autor lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y el fichero `model.safetensors` incluido se presenta explicitamente como una inicializacion valida para pruebas de humo (smoke tests).
+`volkov1996/clip-classification-notebook` es un repositorio experimental publicado en Hugging Face por el usuario volkov1996 que contiene una implementacion propia de una arquitectura de tipo CLIP orientada a tareas de clasificacion. No se trata de un modelo entrenado ni de un checkpoint listo para produccion: el propio autor lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y el fichero `model.safetensors` incluido se presenta explicitamente como una inicializacion valida para pruebas de humo (smoke tests).
 
 La arquitectura declarada es CLIP con escala "giant", atencion lineal, fusion mediante concat mlp, activacion mish y normalizacion layernorm. A pesar de la etiqueta "giant", el recuento real de parametros registrado en el checkpoint safetensors es de solo 33.088, lo que confirma que la configuracion se ha reducido a un tamano manejable para pruebas rapidas. El recetario de entrenamiento por defecto usa el optimizador lamb con un schedule exponencial.
 
@@ -21,7 +21,7 @@ Su relevancia es muy limitada y especifica: sirve como referencia de codigo y de
 | Licencia | MIT |
 | Formato de pesos | safetensors (checkpoint de inicializacion); implementacion en PyTorch |
 | Escala declarada | giant (etiqueta de plantilla, no refleja el recuento real de parametros) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamano del repositorio | 0,0 GB |
 | Optimizador y schedule por defecto | lamb con schedule exponencial |
 | Fecha de creacion | 2026-10-15 |
@@ -85,7 +85,7 @@ La comparacion de rendimiento no es posible: los tres modelos de referencia esta
 - El autor declara que la inicializacion no ha sido auditada en robustez, equidad ni transferencia de dominio.
 - Sin benchmarks publicados y sin puntuacion reclamada; cualquier numero que se atribuya a este repositorio seria inventado.
 - La etiqueta "giant" es una convencion de plantilla y no se corresponde con los 33.088 parametros reales; puede inducir a error si se compara con modelos giant de verdad.
-- Implementacion personalizada: las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito, lo que complica su integracion directa en frameworks estandar.
+- Implementacion personalizada: las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito, lo que complica su integracion directa en frameworks estandar.
 - No hay datos de longitud de contexto, tipos de cuantizacion ni idiomas soportados.
 - Riesgo de sesgo y de alucinacion: no evaluable, porque no hay un modelo generativo entrenado sobre el que medirlo.
 - Licencia MIT: permite uso comercial del codigo y del checkpoint, pero el autor advierte de que los terminos de los datos fuente deben revisarse por separado cuando se use con datasets externos.
@@ -95,5 +95,5 @@ La comparacion de rendimiento no es posible: los tres modelos de referencia esta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/volkov1996/clip-classification-notebook
+- Repositorio en Hugging Face: https://huggingface.co/volkov1996/clip-classification-notebook
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion proporcionada.

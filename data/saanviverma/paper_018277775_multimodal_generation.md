@@ -61,5 +61,5 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/saanviverma/paper_018277775_multimodal_generation
+- Repositorio de Hugging Face: https://huggingface.co/saanviverma/paper_018277775_multimodal_generation
 - No se han encontrado otros enlaces oficiales (papers, blogs, demos) asociados a este repositorio. Los resultados de búsqueda web corresponden a publicaciones independientes sobre generación multimodal, no a este proyecto.

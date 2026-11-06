@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fawad-iaac/residential-gas-consumption-predictor` es un regresor de Random Forest implementado con scikit-learn que estima el consumo anual de gas residencial (`Gcons2024`) a partir de características del inmueble y del historial de consumo de los tres años anteriores. Lo publica el usuario fawad-iaac en HuggingFace y se distribuye como un artefacto `model.joblib` que encapsula tanto el pipeline de preprocesado como el estimador entrenado. No es un modelo de lenguaje ni una red neuronal: es un modelo tabular clásico de regresión supervisada, orientado a un problema concreto de eficiencia energética.
+El modelo `fawad-iaac/residential-gas-consumption-predictor` es un regresor de Random Forest implementado con scikit-learn que estima el consumo anual de gas residencial (`Gcons2024`) a partir de características del inmueble y del historial de consumo de los tres años anteriores. Lo publica el usuario fawad-iaac en Hugging Face y se distribuye como un artefacto `model.joblib` que encapsula tanto el pipeline de preprocesado como el estimador entrenado. No es un modelo de lenguaje ni una red neuronal: es un modelo tabular clásico de regresión supervisada, orientado a un problema concreto de eficiencia energética.
 
 Su relevancia es limitada y acotada al ámbito educativo y experimental. El propio autor lo declara como material para explorar métodos de machine learning aplicados a la predicción de consumo de gas, y advierte explícitamente que no debe sustituir a mediciones reales ni servir como base única para decisiones importantes. No hay información sobre el volumen del dataset de entrenamiento, la procedencia geográfica exacta de los datos (aunque los nombres de las variables —`COUNCIL_TAX_BAND`, `REGION`— sugieren un origen británico) ni el número de muestras utilizadas.
 
@@ -73,7 +73,7 @@ El autor indica que una línea base basada en el consumo del año anterior obtuv
 
 | Modelo | Tipo | Features de entrada | Métrica reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fawad-iaac/residential-gas-consumption-predictor | Random Forest (100 árboles, profundidad 10) | 9 (6 categóricas + 3 numéricas históricas) | MAE 1.777,18 kWh; R² 0,7811 | other | HuggingFace |
+| fawad-iaac/residential-gas-consumption-predictor | Random Forest (100 árboles, profundidad 10) | 9 (6 categóricas + 3 numéricas históricas) | MAE 1.777,18 kWh; R² 0,7811 | other | Hugging Face |
 | Baseline naive (consumo del año anterior) | Heurística | 1 (`Gcons2023`) | MAE inferior al Random Forest según el autor | no aplica | Trivial de implementar |
 | Gradient boosting (XGBoost/LightGBM) | Ensemble de boosting | Configurable | no disponible en esta ficha | varía | Amplia |
 
@@ -94,5 +94,5 @@ No se dispone de comparaciones publicadas con otros modelos de predicción de co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fawad-iaac/residential-gas-consumption-predictor
+- Modelo en Hugging Face: https://huggingface.co/fawad-iaac/residential-gas-consumption-predictor
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

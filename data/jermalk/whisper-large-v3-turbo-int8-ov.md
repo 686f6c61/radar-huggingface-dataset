@@ -87,7 +87,7 @@ El modelo de este repositorio es funcionalmente equivalente a la conversion de I
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jermalk/whisper-large-v3-turbo-int8-ov
+- Modelo en Hugging Face: https://huggingface.co/jermalk/whisper-large-v3-turbo-int8-ov
 - Conversion original de Intel: https://huggingface.co/OpenVINO/whisper-large-v3-turbo-int8-ov
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Whisper large-v3: https://huggingface.co/openai/whisper-large-v3

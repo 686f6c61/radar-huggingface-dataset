@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks estándar (como VoxCeleb EER) en la
 
 | Modelo | Formato | Embedding | Contexto de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nikioth/titanet-large-coreml | Core ML | 192 dims | 0.5 s a ~2 min | CC BY 4.0 | HuggingFace |
-| nvidia/speakerverification_en_titanet_large | NeMo / ONNX (base) | 192 dims | no disponible | no disponible en la información | HuggingFace (NVIDIA) |
+| nikioth/titanet-large-coreml | Core ML | 192 dims | 0.5 s a ~2 min | CC BY 4.0 | Hugging Face |
+| nvidia/speakerverification_en_titanet_large | NeMo / ONNX (base) | 192 dims | no disponible | no disponible en la información | Hugging Face (NVIDIA) |
 | nemo_en_titanet_large.onnx (sherpa-onnx) | ONNX | 192 dims | no disponible | no disponible en la información | GitHub releases de sherpa-onnx |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de speaker verification (por ejemplo, ECAPA-TDNN o WavLM-based) en la información proporcionada.
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de speaker v
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nikioth/titanet-large-coreml
+- Hugging Face: https://huggingface.co/nikioth/titanet-large-coreml
 - Modelo base NVIDIA: https://huggingface.co/nvidia/speakerverification_en_titanet_large
 - Export ONNX de sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx/releases/tag/speaker-recongition-models
 - Repositorio sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

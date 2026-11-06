@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Idioma | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Dorina Voice TTS | Turco | FastPitch + HiFi-GAN | ~25,5 MB acústico + ~660 MB vocoder | no disponible | Apache 2.0 | HuggingFace |
-| Coqui TTS (modelos turcos) | Multilingüe, incluido turco | Tacotron2 / FastPitch + vocoders | Variable según modelo | no aplica | MPL 2.0 / Apache 2.0 según modelo | HuggingFace, GitHub |
-| Piper TTS | Multilingüe, incluido turco | VITS | Variable, modelos ligeros | no aplica | MIT | GitHub, HuggingFace |
-| VITS turco (comunidad) | Turco | VITS | Variable | no aplica | Variable | HuggingFace |
+| Dorina Voice TTS | Turco | FastPitch + HiFi-GAN | ~25,5 MB acústico + ~660 MB vocoder | no disponible | Apache 2.0 | Hugging Face |
+| Coqui TTS (modelos turcos) | Multilingüe, incluido turco | Tacotron2 / FastPitch + vocoders | Variable según modelo | no aplica | MPL 2.0 / Apache 2.0 según modelo | Hugging Face, GitHub |
+| Piper TTS | Multilingüe, incluido turco | VITS | Variable, modelos ligeros | no aplica | MIT | GitHub, Hugging Face |
+| VITS turco (comunidad) | Turco | VITS | Variable | no aplica | Variable | Hugging Face |
 
 La comparativa es aproximada: no se dispone de métricas de calidad (MOS) ni de rendimiento publicadas para Dorina Voice TTS, por lo que la comparación se limita a aspectos de arquitectura, licencia y disponibilidad. Frente a Piper y VITS, la ventaja de Dorina es la separación explícita entre modelo acústico y vocoder, que facilita el ajuste independiente de cada etapa; la desventaja es la ausencia de validación comunitaria y de documentación sobre el entrenamiento.
 
@@ -88,5 +88,5 @@ La comparativa es aproximada: no se dispone de métricas de calidad (MOS) ni de 
 
 ## Enlaces
 
-- [HuggingFace: theteha/dorina-voice-tts](https://huggingface.co/theteha/dorina-voice-tts)
+- [Hugging Face: theteha/dorina-voice-tts](https://huggingface.co/theteha/dorina-voice-tts)
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este modelo.

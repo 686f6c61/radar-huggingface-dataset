@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Adaptador LoRA en HuggingFace: https://huggingface.co/CalmCampus/calmcampus-reframe-1.7b-lora
+- Adaptador LoRA en Hugging Face: https://huggingface.co/CalmCampus/calmcampus-reframe-1.7b-lora
 - Modelo fusionado 4 bits: https://huggingface.co/CalmCampus/calmcampus-reframe-1.7b-4bit
 - Dataset de entrenamiento: https://huggingface.co/datasets/CalmCampus/calmcampus-reframe-data
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-1.7B-4bit

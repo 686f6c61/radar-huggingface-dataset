@@ -2,11 +2,11 @@
 
 ## Resumen
 
-NeevVision-IVDF-v1.1 es un modelo de clasificación de imágenes especializado en la detección de deepfakes y falsificaciones faciales (image forgery detection on faces, IVDF). Lo desarrolla el usuario keyur-neeved y se distribuye a través de HuggingFace con acceso restringido. Se trata de un fine-tuning de facebook/dinov2-small, un transformer de visión de tipo ViT-S/14 con 22,8 millones de parámetros, adaptado mediante código personalizado (`neevvision_dinov2`) para la tarea de feature extraction y clasificación binaria o multietiqueta de rostros manipulados.
+NeevVision-IVDF-v1.1 es un modelo de clasificación de imágenes especializado en la detección de deepfakes y falsificaciones faciales (image forgery detection on faces, IVDF). Lo desarrolla el usuario keyur-neeved y se distribuye a través de Hugging Face con acceso restringido. Se trata de un fine-tuning de facebook/dinov2-small, un transformer de visión de tipo ViT-S/14 con 22,8 millones de parámetros, adaptado mediante código personalizado (`neevvision_dinov2`) para la tarea de feature extraction y clasificación binaria o multietiqueta de rostros manipulados.
 
 El modelo es relevante en el contexto actual de proliferación de contenido sintético generado por difusión y GANs: ofrece una alternativa ligera (0,1 GB de pesos, apta para GPUs de consumo) frente a detectores de deepfake de mayor tamaño. Al partir de DINOv2, hereda representaciones visuales auto-supervisadas de alta calidad, lo que en principio facilita la generalización a manipulaciones no vistas durante el entrenamiento, aunque esta ficha no puede confirmarlo por falta de datos publicados.
 
-La información disponible es escasa: no se publican idiomas, benchmarks, composición del dataset de entrenamiento ni condiciones concretas de la licencia "other". El acceso está restringido y requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+La información disponible es escasa: no se publican idiomas, benchmarks, composición del dataset de entrenamiento ni condiciones concretas de la licencia "other". El acceso está restringido y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 ## Especificaciones tecnicas
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NeevVision-IVDF-v1.1 | 22,8 M | no disponible | Detección de deepfake facial | other (gated) | HuggingFace, acceso restringido |
-| facebook/dinov2-small | 22,1 M | imagen 224x224 (por defecto) | Feature extraction visual general | Apache 2.0 (según modelo base) | HuggingFace, acceso abierto |
+| NeevVision-IVDF-v1.1 | 22,8 M | no disponible | Detección de deepfake facial | other (gated) | Hugging Face, acceso restringido |
+| facebook/dinov2-small | 22,1 M | imagen 224x224 (por defecto) | Feature extraction visual general | Apache 2.0 (según modelo base) | Hugging Face, acceso abierto |
 | Detectores de deepfake tipo XceptionNet | ~20 M | imagen variable | Detección de deepfake | variable según implementación | Repositorios académicos |
-| CLIP ViT-B/32 | ~150 M | imagen 224x224 | Clasificación zero-shot imagen-texto | MIT (según variante) | HuggingFace, acceso abierto |
+| CLIP ViT-B/32 | ~150 M | imagen 224x224 | Clasificación zero-shot imagen-texto | MIT (según variante) | Hugging Face, acceso abierto |
 
 La comparación con detectores especializados es aproximada: no se dispone de métricas de NeevVision-IVDF-v1.1 que permitan contrastar su precisión frente a XceptionNet u otros detectores publicados. DINOv2-small se incluye como referencia del backbone, y CLIP como alternativa multimodal genérica de mayor tamaño.
 
@@ -88,7 +88,7 @@ La comparación con detectores especializados es aproximada: no se dispone de m�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keyur-neeved/NeevVision-IVDF-v1.1
+- Modelo en Hugging Face: https://huggingface.co/keyur-neeved/NeevVision-IVDF-v1.1
 - Modelo base DINOv2-small: https://huggingface.co/facebook/dinov2-small
 - Paper DINOv2 (Oquab et al., 2023): https://arxiv.org/abs/2304.07193
 - Repositorio oficial DINOv2: https://github.com/facebookresearch/dinov2

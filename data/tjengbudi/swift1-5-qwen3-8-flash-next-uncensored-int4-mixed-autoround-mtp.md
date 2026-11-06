@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift1.5-Qwen3.8-Flash-Next-Uncensored-INT4-Mixed-AutoRound-MTP es una variante "abliterated" (sin censura) del modelo Minachist/Swift1.5-Qwen3.8-Flash-Next-INT4-Mixed-AutoRound, publicada por el usuario tjengbudi en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text con cerca de 140.000 millones de parámetros totales (139.734.687.635 según los pesos en safetensors), cuantizado en precisión mixta INT4/INT6 mediante AutoRound y con soporte declarado de Multi-Token Prediction (MTP). El repositorio ocupa 223,4 GB.
+Swift1.5-Qwen3.8-Flash-Next-Uncensored-INT4-Mixed-AutoRound-MTP es una variante "abliterated" (sin censura) del modelo Minachist/Swift1.5-Qwen3.8-Flash-Next-INT4-Mixed-AutoRound, publicada por el usuario tjengbudi en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text con cerca de 140.000 millones de parámetros totales (139.734.687.635 según los pesos en safetensors), cuantizado en precisión mixta INT4/INT6 mediante AutoRound y con soporte declarado de Multi-Token Prediction (MTP). El repositorio ocupa 223,4 GB.
 
 El modelo parte de la familia Qwen (etiqueta `qwen4_exp`) y hereda la arquitectura del modelo base, del que solo se conoce su identificador y su condición de cuantización INT4 mixta. La modificación principal respecto al base es el proceso de "abliteration", que elimina los mecanismos de rechazo del modelo original, orientándolo a usos sin restricciones de contenido. Incorpora además la etiqueta `compressed-tensors`, lo que indica compatibilidad con el formato de tensores comprimidos de Neural Compressor para despliegue eficiente.
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de los mo
 ## Limitaciones y advertencias
 
 - Modelo abliterated: la eliminación de los mecanismos de rechazo implica que puede generar contenido dañino, ilegal o sensible sin filtro; no es apto para aplicaciones abiertas al público sin moderación externa.
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos.
 - Licencia `swift-open-license-1.0`: es una licencia "other" no estándar; deben revisarse sus términos exactos antes de cualquier uso comercial, que puede estar restringido.
 - Sin datos de benchmarks, idiomas ni contexto: no es posible estimar su calidad real frente al modelo base ni su comportamiento multilingüe.
 - Riesgo de alucinación: no cuantificado, pero esperable en modelos conversacionales de este tamaño, agravado por la cuantización INT4 y por la ausencia de evaluación publicada.
@@ -82,5 +82,5 @@ No se dispone de datos de rendimiento ni de especificaciones completas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tjengbudi/Swift1.5-Qwen3.8-Flash-Next-Uncensored-INT4-Mixed-AutoRound-MTP
+- Hugging Face: https://huggingface.co/tjengbudi/Swift1.5-Qwen3.8-Flash-Next-Uncensored-INT4-Mixed-AutoRound-MTP
 - Modelo base: https://huggingface.co/Minachist/Swift1.5-Qwen3.8-Flash-Next-INT4-Mixed-AutoRound

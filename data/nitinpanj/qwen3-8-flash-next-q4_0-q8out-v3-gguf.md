@@ -18,7 +18,7 @@ La relevancia de esta ficha es doble. Por un lado, documenta una cuantizacion Q4
 | Longitud de contexto | 262.144 tokens nativos |
 | Tipos de cuantizacion | Q4_0 en pesos con Q8_0 en tensores de salida y embedding (receta `-Q8out` v3), calibrada con imatrix; proyector de vision en `mmproj-f16.gguf` |
 | Idiomas soportados | ingles (en) y chino (zh) |
-| Licencia | qwen-community-license-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | qwen-community-license-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | GGUF, 3 shards (96 GiB en total); repo de 102,6 GB |
 
 ## Arquitectura y entrenamiento
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (base, Qwen) | 176.943.899.520 en safetensors | 262.144 tokens | safetensors | qwen-community-license-1.0 | HuggingFace oficial |
-| Qwen3.8-Flash-Next-Q4_0-Q8out-v3 (nitinpanj) | misma base, cuantizada | 262.144 tokens | GGUF, 3 shards, 96 GiB | qwen-community-license-1.0 | HuggingFace, 0 descargas |
-| nitinpanj/qwen38-flash-next-v3 | misma base, cuantizada | 262.144 tokens | GGUF | no disponible en la informacion recogida | HuggingFace, 2 likes |
+| Qwen3.8-Flash-Next (base, Qwen) | 176.943.899.520 en safetensors | 262.144 tokens | safetensors | qwen-community-license-1.0 | Hugging Face oficial |
+| Qwen3.8-Flash-Next-Q4_0-Q8out-v3 (nitinpanj) | misma base, cuantizada | 262.144 tokens | GGUF, 3 shards, 96 GiB | qwen-community-license-1.0 | Hugging Face, 0 descargas |
+| nitinpanj/qwen38-flash-next-v3 | misma base, cuantizada | 262.144 tokens | GGUF | no disponible en la informacion recogida | Hugging Face, 2 likes |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento con alternativas de la misma categoria. La comparacion con modelos como Claude-4.6-Opus aparece mencionada por terceros, pero sin cifras verificables.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento con al
 ## Enlaces
 
 - Cuantizacion GGUF analizada: https://huggingface.co/nitinpanj/Qwen3.8-Flash-Next-Q4_0-Q8out-v3-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio oficial en GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - README del repositorio oficial: https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/README.md
 - Guia de ejecucion local de unsloth: https://unsloth.ai/docs/models/qwen3.8-next

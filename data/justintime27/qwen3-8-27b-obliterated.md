@@ -123,7 +123,7 @@ No se dispone de datos sobre otros modelos abliterados comparables de tamaño si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Justintime27/Qwen3.8-27B-OBLITERATED
+- Modelo en Hugging Face: https://huggingface.co/Justintime27/Qwen3.8-27B-OBLITERATED
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes sobre el modelo. Los resultados devueltos corresponden a contenidos de marketing y creación de contenido en TikTok y no guardan relación con este modelo ni con modelos de lenguaje.
 - Paper, blog técnico, repositorio de código o demo: no disponibles en la información proporcionada.

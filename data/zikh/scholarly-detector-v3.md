@@ -89,5 +89,5 @@ No se dispone de datos de otros detectores de texto generado por IA en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zikh/scholarly-detector-v3
+- Modelo en Hugging Face: https://huggingface.co/zikh/scholarly-detector-v3
 - Plataforma que lo integra: https://scholar.click

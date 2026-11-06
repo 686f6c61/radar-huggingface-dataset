@@ -51,7 +51,7 @@ No disponible. No se conocen modelos comparables dentro de la colección TASTE2 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/YC-Chen/TASTE2-8B-EN-Instruct-merge-FT
+- Repositorio Hugging Face: https://huggingface.co/YC-Chen/TASTE2-8B-EN-Instruct-merge-FT
 - Colección TASTE2 del autor: https://huggingface.co/collections/YC-Chen/taste2
 - Dataset asociado (sin confirmar): https://huggingface.co/datasets/YC-Chen/TASTE2-8B-EN-SFT-new
 - Artículo arXiv citado en los tags (pertenece a CosyVoice): https://arxiv.org/abs/2412.10117

@@ -73,12 +73,12 @@ La comparacion real con otros brazos del barrido TaskTrove (como tt-x3_kl-kl0 o 
 - El colapso de recompensa en los pasos 77-88 indica que el modelo puede sufrir de perdida de diversidad en la generacion y repetir patrones.
 - El entrenamiento se realizo exclusivamente en ingles; el comportamiento en otros idiomas puede ser impredecible.
 - La licencia Apache-2.0 permite uso comercial, pero el modelo no es apto para despliegue en produccion dado su caracter experimental.
-- El repositorio contiene solo una submuestra de las trazas de entrenamiento (1/16 del total), por lo que el analisis completo de los datos no es posible desde HuggingFace.
+- El repositorio contiene solo una submuestra de las trazas de entrenamiento (1/16 del total), por lo que el analisis completo de los datos no es posible desde Hugging Face.
 - No se proporcionan instrucciones de uso ni ejemplos de inferencia en la model card.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/tt-x16-entropy0p003-42-30B
+- Modelo en Hugging Face: https://huggingface.co/laion/tt-x16-entropy0p003-42-30B
 - Dataset de trazas de entrenamiento: https://huggingface.co/datasets/penfever/tt-x16-entropy0p003
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Organizacion LAION: https://laion.ai/

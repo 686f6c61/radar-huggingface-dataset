@@ -110,7 +110,7 @@ No se conocen modelos publicos comparables dentro de la misma categoria (politic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LeeSanghyun/connectailab-rl-LeeSanghyun-v1-teacher
+- Hugging Face: https://huggingface.co/LeeSanghyun/connectailab-rl-LeeSanghyun-v1-teacher
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Aviso legal y datos del proyecto: https://github.com/wonseokjung/connect-tycoon/blob/main/NOTICE
 - Cuaderno de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
@@ -118,4 +118,4 @@ No se conocen modelos publicos comparables dentro de la misma categoria (politic
 - AI CITY BUILDERS: https://www.aicitybuilders.com
 - Curso de aprendizaje por refuerzo: https://www.aicitybuilders.com/robot
 - Connect AI: https://www.ezerai.xyz
-- Perfil del autor en HuggingFace: https://huggingface.co/LeeSanghyun
+- Perfil del autor en Hugging Face: https://huggingface.co/LeeSanghyun

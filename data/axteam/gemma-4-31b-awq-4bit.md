@@ -77,8 +77,8 @@ Perplejidad medida frente a BF16 sobre WikiText-2 (ingles) y una muestra de Wiki
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-31B-AWQ-4bit (este repo) | 6.676.812.132 segun safetensors (nombre: 31B) | no disponible | AWQ INT4 W4A16 | Apache-2.0 | HuggingFace, vLLM |
-| google/gemma-4-31B (BF16) | no disponible | no disponible | BF16 | Apache-2.0 / Gemma 4 | HuggingFace, referencia de calidad |
+| gemma-4-31B-AWQ-4bit (este repo) | 6.676.812.132 segun safetensors (nombre: 31B) | no disponible | AWQ INT4 W4A16 | Apache-2.0 | Hugging Face, vLLM |
+| google/gemma-4-31B (BF16) | no disponible | no disponible | BF16 | Apache-2.0 / Gemma 4 | Hugging Face, referencia de calidad |
 | Variantes FP8-dynamic, AWQ-8bit, NVFP4A16 y NVFP4 del mismo base | mismas que el base | no disponible | 8 bits y 4 bits | Apache-2.0 | Referenciadas en los benchmarks del autor |
 
 No se dispone de datos de benchmarks ni de especificaciones de otros modelos de la misma categoria en la informacion proporcionada, por lo que la comparativa se limita a las variantes de cuantizacion del mismo modelo base.
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks ni de especificaciones de otros modelos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/gemma-4-31B-AWQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-31B-AWQ-4bit
 - Modelo base: https://huggingface.co/google/gemma-4-31B
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

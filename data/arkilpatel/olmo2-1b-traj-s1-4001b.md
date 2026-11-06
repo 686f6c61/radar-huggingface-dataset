@@ -71,8 +71,8 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-4001b
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-4001b
 - Pagina oficial de OLMo (Ai2): https://allenai.org/olmo2
 - Repositorio GitHub de OLMo: https://github.com/allenai/OLMo
-- Modelo base OLMo-2-0425-1B en HuggingFace: https://huggingface.co/allenai/OLMo-2-0425-1B
+- Modelo base OLMo-2-0425-1B en Hugging Face: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Paper de OLMo (arXiv): https://arxiv.org/html/2402.00838v4

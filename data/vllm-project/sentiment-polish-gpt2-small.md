@@ -76,9 +76,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sentiment-polish-gpt2-small (este) | 125,9 M | no disponible (collator a 128) | Clasificacion de sentimiento polaco (4 clases) | MIT | HuggingFace, copia en vllm-project |
-| sdadas/polish-gpt2-small | no disponible en la informacion | no disponible | Modelo base GPT-2 polaco (generacion) | no disponible en la informacion | HuggingFace |
-| nie3e/sentiment-polish-gpt2-small | mismos pesos (commit 0f42779) | no disponible | Clasificacion de sentimiento polaco | MIT | HuggingFace (cuenta personal) |
+| sentiment-polish-gpt2-small (este) | 125,9 M | no disponible (collator a 128) | Clasificacion de sentimiento polaco (4 clases) | MIT | Hugging Face, copia en vllm-project |
+| sdadas/polish-gpt2-small | no disponible en la informacion | no disponible | Modelo base GPT-2 polaco (generacion) | no disponible en la informacion | Hugging Face |
+| nie3e/sentiment-polish-gpt2-small | mismos pesos (commit 0f42779) | no disponible | Clasificacion de sentimiento polaco | MIT | Hugging Face (cuenta personal) |
 
 No se dispone de datos de benchmarks de los modelos alternativos en la informacion proporcionada, por lo que no se puede establecer una comparacion de rendimiento cuantitativa.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks de los modelos alternativos en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-project/sentiment-polish-gpt2-small
+- Modelo en Hugging Face: https://huggingface.co/vllm-project/sentiment-polish-gpt2-small
 - Modelo original: https://huggingface.co/nie3e/sentiment-polish-gpt2-small
 - Modelo base: https://huggingface.co/sdadas/polish-gpt2-small
 - Dataset de entrenamiento: https://huggingface.co/datasets/clarin-pl/polemo2-official

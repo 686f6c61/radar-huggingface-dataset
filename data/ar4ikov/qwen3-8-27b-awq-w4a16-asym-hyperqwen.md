@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ar4ikov/Qwen3.8-27B-AWQ-W4A16-ASYM-HyperQwen
+- Modelo en Hugging Face: https://huggingface.co/Ar4ikov/Qwen3.8-27B-AWQ-W4A16-ASYM-HyperQwen
 - Exportacion fuente cuantizada: https://huggingface.co/Ar4ikov/Qwen3.8-27B-AWQ-W4A16-ASYM
 - Variante "fast": https://huggingface.co/Ar4ikov/Qwen3.8-27B-AWQ-W4A16-ASYM-HyperQwen-fast
 - Modelo raiz: https://huggingface.co/Qwen/Qwen3.8-27B

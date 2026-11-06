@@ -60,5 +60,5 @@ No disponible. No existen modelos comparables en la información proporcionada, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dahaludba/carbon-audit-run-24f2002963
-- Perfil del autor en HuggingFace: https://huggingface.co/dahaludba
+- Repositorio Hugging Face: https://huggingface.co/dahaludba/carbon-audit-run-24f2002963
+- Perfil del autor en Hugging Face: https://huggingface.co/dahaludba

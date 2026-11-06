@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi K3 | 2,8T | 104B | 1M tokens | Kimi K3 License | Pesos abiertos en HuggingFace |
+| Kimi K3 | 2,8T | 104B | 1M tokens | Kimi K3 License | Pesos abiertos en Hugging Face |
 | Kimi K2 | no disponible | no disponible | no disponible | no disponible | Referenciado en la model card |
 | Otros modelos clase 3T | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,13 +87,13 @@ La informacion proporcionada solo permite comparar con Kimi K2, del que se menci
 - Limitaciones de contexto o idioma: se declara contexto de 1M tokens, pero no se detallan los idiomas soportados ni posibles degradaciones en contextos extremos.
 - Restricciones de licencia: la licencia Kimi K3 License es de tipo "other"; no se detallan en la informacion disponible las condiciones exactas para uso comercial, por lo que es imprescindible revisar el texto completo de la licencia antes de un despliegue en produccion.
 - Requisitos de infraestructura extrema: 1561 GB de repo y 2,8T de parametros implican costes de almacenamiento, memoria y computo muy elevados; no es desplegable en hardware consumer.
-- El repositorio de HuggingFace (workmanooo/Kimi-K3) tiene muy pocas descargas (15) y cero likes en el momento de la consulta; conviene verificar la procedencia y autenticidad de los pesos frente al repositorio oficial de Moonshot AI.
+- El repositorio de Hugging Face (workmanooo/Kimi-K3) tiene muy pocas descargas (15) y cero likes en el momento de la consulta; conviene verificar la procedencia y autenticidad de los pesos frente al repositorio oficial de Moonshot AI.
 - No se dispone de informacion sobre tool calling, idiomas, cuantizaciones alternativas ni benchmarks, lo que limita la evaluacion previa a produccion.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/workmanooo/Kimi-K3
-- Organizacion oficial en HuggingFace: https://huggingface.co/moonshotai
+- Repositorio Hugging Face: https://huggingface.co/workmanooo/Kimi-K3
+- Organizacion oficial en Hugging Face: https://huggingface.co/moonshotai
 - Chat: https://www.kimi.com
 - Homepage: https://www.moonshot.ai
 - Blog tecnico: https://www.kimi.com/blog/kimi-k3

@@ -91,10 +91,10 @@ Las estimaciones siguientes son calculos a partir del recuento de parametros (26
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-27B-Fable-Fusion-711 (este modelo) | ~26,9B | No disponible | Supera al base en 6/7 benchmarks; ARC-C > 700 en 8 y 4 bits | Apache 2.0 | GGUF en HuggingFace |
+| Qwen3.6-27B-Fable-Fusion-711 (este modelo) | ~26,9B | No disponible | Supera al base en 6/7 benchmarks; ARC-C > 700 en 8 y 4 bits | Apache 2.0 | GGUF en Hugging Face |
 | Qwen 3.6 27B (base, Team Qwen) | ~27B | No disponible | Referencia de comparacion; el fine tune afirma superarlo en 6 de 7 pruebas | Segun la licencia de Qwen | Pesos originales |
 | Qwen3.6-35B-A3B | 35B totales (MoE, 3B activos) | No disponible | El autor afirma superarlo en los 7 benchmarks | Segun la licencia de Qwen | Pesos originales |
-| Qwen3.6-40B-Fable-Fusion (variantes Eleanor-DECKARD y Grand Intelligence) | 40B | No disponible | Variantes mayores del mismo linaje | Apache 2.0 | GGUF en HuggingFace |
+| Qwen3.6-40B-Fable-Fusion (variantes Eleanor-DECKARD y Grand Intelligence) | 40B | No disponible | Variantes mayores del mismo linaje | Apache 2.0 | GGUF en Hugging Face |
 
 No se dispone de datos suficientes para comparar con modelos de otros fabricantes de tamano equivalente. Las cifras de rendimiento de la tabla proceden del autor y no de evaluaciones independientes.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TitaNet-Large-CoreAI es un port del modelo de verificación e identificación de hablante NVIDIA TitaNet-Large (23 millones de parámetros) al runtime Core AI de Apple, orientado a inferencia en dispositivo en iPhone, iPad y Mac. Lo publica el usuario smdesai en HuggingFace y no se trata de un modelo nuevo entrenado desde cero, sino de una reimplementación del grafo del checkpoint original de NVIDIA con pesos en fp16 y cómputo en fp32, empaquetada como bundle `.aimodel` de 47 MB.
+TitaNet-Large-CoreAI es un port del modelo de verificación e identificación de hablante NVIDIA TitaNet-Large (23 millones de parámetros) al runtime Core AI de Apple, orientado a inferencia en dispositivo en iPhone, iPad y Mac. Lo publica el usuario smdesai en Hugging Face y no se trata de un modelo nuevo entrenado desde cero, sino de una reimplementación del grafo del checkpoint original de NVIDIA con pesos en fp16 y cómputo en fp32, empaquetada como bundle `.aimodel` de 47 MB.
 
 El modelo resuelve un problema concreto: obtener el embedding de hablante de 192 dimensiones que produce NeMo, pero ejecutándolo de forma local en hardware Apple sin depender de Python ni de servidores. La ficha del autor reporta una similitud coseno mínima de 0,9999987 frente a `get_embedding` de NeMo sobre 40 grabaciones de VoxCeleb1-test de entre 4,1 y 64,7 segundos, lo que significa que el comportamiento de verificación es prácticamente idéntico al del modelo original.
 
@@ -97,5 +97,5 @@ La comparación relevante es contra el checkpoint original de NVIDIA, del que es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smdesai/TitaNet-Large-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/smdesai/TitaNet-Large-CoreAI
 - Modelo base NVIDIA TitaNet-Large: https://huggingface.co/nvidia/speakerverification_en_titanet_large

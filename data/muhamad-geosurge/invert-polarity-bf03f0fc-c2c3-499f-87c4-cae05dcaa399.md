@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `muhamad-geosurge/invert-polarity-bf03f0fc-c2c3-499f-87c4-cae05dcaa399` es un fine-tune del modelo base `mistralai/Mistral-7B-v0.3`, publicado en HuggingFace por el usuario `muhamad-geosurge`. Aunque la model card está copiada de `Mistral-7B-Instruct-v0.3`, los metadatos del repositorio indican que el modelo base es `Mistral-7B-v0.3` y que se ha realizado un fine-tune sobre él. Se trata de un modelo de lenguaje de 7.000 millones de parámetros con arquitectura transformer decoder-only, preparado para su uso con vLLM. Hereda las características de la versión v0.3 de Mistral 7B: vocabulario ampliado a 32.768 tokens, tokenizer v3 y soporte de function calling. El modelo está licenciado bajo Apache 2.0. No se han publicado datos sobre la longitud de contexto, los idiomas soportados ni benchmarks.
+El modelo `muhamad-geosurge/invert-polarity-bf03f0fc-c2c3-499f-87c4-cae05dcaa399` es un fine-tune del modelo base `mistralai/Mistral-7B-v0.3`, publicado en Hugging Face por el usuario `muhamad-geosurge`. Aunque la model card está copiada de `Mistral-7B-Instruct-v0.3`, los metadatos del repositorio indican que el modelo base es `Mistral-7B-v0.3` y que se ha realizado un fine-tune sobre él. Se trata de un modelo de lenguaje de 7.000 millones de parámetros con arquitectura transformer decoder-only, preparado para su uso con vLLM. Hereda las características de la versión v0.3 de Mistral 7B: vocabulario ampliado a 32.768 tokens, tokenizer v3 y soporte de function calling. El modelo está licenciado bajo Apache 2.0. No se han publicado datos sobre la longitud de contexto, los idiomas soportados ni benchmarks.
 
 ## Especificaciones técnicas
 
@@ -54,10 +54,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| invert-polarity-bf03f0fc... | 7B | No disponible | Apache 2.0 | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | 7B | 32k | Apache 2.0 | HuggingFace |
-| Llama-3-8B-Instruct | 8B | 8k | Licencia de comunidad de Llama | HuggingFace |
-| Gemma-2-9B-it | 9B | 8k | Licencia de Gemma | HuggingFace |
+| invert-polarity-bf03f0fc... | 7B | No disponible | Apache 2.0 | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | 7B | 32k | Apache 2.0 | Hugging Face |
+| Llama-3-8B-Instruct | 8B | 8k | Licencia de comunidad de Llama | Hugging Face |
+| Gemma-2-9B-it | 9B | 8k | Licencia de Gemma | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-bf03f0fc-c2c3-499f-87c4-cae05dcaa399
-- Modelo base en HuggingFace: https://huggingface.co/mistralai/Mistral-7B-v0.3
+- Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-bf03f0fc-c2c3-499f-87c4-cae05dcaa399
+- Modelo base en Hugging Face: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Model card de referencia: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio mistral-inference: https://github.com/mistralai/mistral-inference

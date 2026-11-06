@@ -91,5 +91,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aevanis/Aevanis-Kinematics
+- Hugging Face: https://huggingface.co/Aevanis/Aevanis-Kinematics
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados al modelo.

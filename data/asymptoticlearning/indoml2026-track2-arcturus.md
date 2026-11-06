@@ -76,10 +76,10 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Arcturus (este) | Ensemble de separadores MossFormer + fusión T-F | no disponible (22 checkpoints, 1,3 GB) | no disponible | Apache-2.0 | HuggingFace + GitHub |
-| ClearerVoice-Studio (MossFormerGAN-SE-16K) | Separador único | no disponible | no disponible | Apache-2.0 | HuggingFace (alibabasglab) |
-| ClearerVoice-Studio (MossFormer2-SE-48K) | Separador único | no disponible | no disponible | Apache-2.0 | HuggingFace (alibabasglab) |
-| ClearerVoice-Studio (MossFormer2-SS-16K) | Separador de fuente | no disponible | no disponible | Apache-2.0 | HuggingFace (alibabasglab) |
+| Arcturus (este) | Ensemble de separadores MossFormer + fusión T-F | no disponible (22 checkpoints, 1,3 GB) | no disponible | Apache-2.0 | Hugging Face + GitHub |
+| ClearerVoice-Studio (MossFormerGAN-SE-16K) | Separador único | no disponible | no disponible | Apache-2.0 | Hugging Face (alibabasglab) |
+| ClearerVoice-Studio (MossFormer2-SE-48K) | Separador único | no disponible | no disponible | Apache-2.0 | Hugging Face (alibabasglab) |
+| ClearerVoice-Studio (MossFormer2-SS-16K) | Separador de fuente | no disponible | no disponible | Apache-2.0 | Hugging Face (alibabasglab) |
 
 La comparativa se limita a los modelos base de los que deriva, ya que no se dispone de datos de otros sistemas del leaderboard ni de métricas comparables publicadas.
 
@@ -97,7 +97,7 @@ La comparativa se limita a los modelos base de los que deriva, ya que no se disp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asymptoticlearning/IndoML2026-Track2-Arcturus
+- Hugging Face: https://huggingface.co/asymptoticlearning/IndoML2026-Track2-Arcturus
 - Repositorio GitHub (código, scripts y reporte): https://github.com/Abhilash1602/IndoML2026-Track2-Arcturus
 - Checkpoints base MossFormerGAN-SE-16K: https://huggingface.co/alibabasglab/MossFormerGAN_SE_16K
 - Checkpoints base MossFormer2-SE-48K: https://huggingface.co/alibabasglab/MossFormer2_SE_48K

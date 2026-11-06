@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`DarrenHo233/scottyrl-a3-p5_textcraft_grpo` es un adaptador LoRA de rango 32 sobre el modelo base `Qwen/Qwen3.5-4B`, publicado en HuggingFace por el usuario DarrenHo233. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación (0,2 GB en safetensors) que debe cargarse junto con el modelo base mediante la librería PEFT. El adaptador se ha entrenado con el framework `scottyrl` en el marco de la asignatura 11-768 (AI Agents) de CMU, correspondiente al Assignment 3, bajo el nombre de ejecución `p5_textcraft_grpo`.
+`DarrenHo233/scottyrl-a3-p5_textcraft_grpo` es un adaptador LoRA de rango 32 sobre el modelo base `Qwen/Qwen3.5-4B`, publicado en Hugging Face por el usuario DarrenHo233. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación (0,2 GB en safetensors) que debe cargarse junto con el modelo base mediante la librería PEFT. El adaptador se ha entrenado con el framework `scottyrl` en el marco de la asignatura 11-768 (AI Agents) de CMU, correspondiente al Assignment 3, bajo el nombre de ejecución `p5_textcraft_grpo`.
 
 El objetivo declarado del adaptador es actuar como política de agente en la tarea TextCraft-Synth, un entorno de texto con validaciones de dificultad media y alta. El sufijo `grpo` del nombre de la ejecución sugiere un entrenamiento con Group Relative Policy Optimization, si bien la model card no detalla hiperparámetros, composición del dataset ni número de pasos. La relevancia del artefacto es fundamentalmente metodológica: ejemplifica el ciclo completo de post-entrenamiento con RL sobre un modelo pequeño y su distribución como adaptador ligero, reproducible mediante `vLLM` con soporte LoRA.
 
@@ -101,7 +101,7 @@ No se han identificado en la informacion proporcionada adaptadores publicos comp
 - **Alcance funcional muy acotado**: entrenado para una unica tarea (TextCraft-Synth) en un contexto academico; no hay garantias de comportamiento fuera de ese dominio.
 - **Riesgo de sobreajuste al conjunto de evaluacion**: no se documenta si los splits `medium` y `hard` usados en la evaluacion se excluyeron del entrenamiento, lo que impide descartar contaminacion.
 - **Dependencia estricta del modelo base**: el adaptador no es autonomo; requiere `Qwen/Qwen3.5-4B` y la version concreta de `peft`/`transformers` compatible con el checkpoint.
-- **Reproducibilidad parcial**: la configuracion `configs/p5_textcraft_grpo.yaml`, los scripts de evaluacion y el commit `ef42c0d3...` se referencian por rutas locales del autor (`/Users/Courses/11768AIAgents/assignment-3/runs/p5_adapter`) que no se distribuyen en el repositorio de HuggingFace.
+- **Reproducibilidad parcial**: la configuracion `configs/p5_textcraft_grpo.yaml`, los scripts de evaluacion y el commit `ef42c0d3...` se referencian por rutas locales del autor (`/Users/Courses/11768AIAgents/assignment-3/runs/p5_adapter`) que no se distribuyen en el repositorio de Hugging Face.
 - **Riesgo de alucinacion**: inherente a un modelo de ~4B sin datos de alineacion publicados; en tareas de agente se traduce en acciones invalidas o planes que no respetan las reglas del entorno.
 - **Sesgos**: no evaluados ni documentados; no hay informacion sobre composicion del dataset de entrenamiento.
 - **Ausencia de datos de seguridad**: sin informacion sobre filtros, moderacion o evaluaciones de riesgo.
@@ -109,7 +109,7 @@ No se han identificado en la informacion proporcionada adaptadores publicos comp
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/DarrenHo233/scottyrl-a3-p5_textcraft_grpo
+- Hugging Face del adaptador: https://huggingface.co/DarrenHo233/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio del framework `scottyrl`: no disponible en la informacion proporcionada
 - Paper o blog de `scottyrl`: no disponible en la informacion proporcionada

@@ -62,7 +62,7 @@ El sistema completo combina el modelo con guardas de código que se ejecutan ant
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, MATH) en la información disponible. Las únicas métricas publicadas son específicas de la tarea del demo y se midieron sobre el GGUF q8_0 ejecutado en Ollama, no sobre los pesos de HuggingFace.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, MATH) en la información disponible. Las únicas métricas publicadas son específicas de la tarea del demo y se midieron sobre el GGUF q8_0 ejecutado en Ollama, no sobre los pesos de Hugging Face.
 
 Puerta de liberación, 136 preguntas en total (21 golden, 29 probes, 64 unscripted, 22 break-it):
 
@@ -96,8 +96,8 @@ En el conjunto de fraseo nuevo, el autor indica que el motor de reglas obtiene r
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gowtham-nimbuspay-agent | 1,54 B | 2.048 tokens configurados | 90,1 % precisión de herramienta en held-out propio (1.025 filas) | Apache 2.0 | GGUF q8_0 en HuggingFace y Ollama |
-| Qwen2.5-1.5B-Instruct (base) | 1,54 B | No indicado en la información disponible | No evaluado en esta tarea por el autor | Apache 2.0 | safetensors y GGUF en HuggingFace |
+| gowtham-nimbuspay-agent | 1,54 B | 2.048 tokens configurados | 90,1 % precisión de herramienta en held-out propio (1.025 filas) | Apache 2.0 | GGUF q8_0 en Hugging Face y Ollama |
+| Qwen2.5-1.5B-Instruct (base) | 1,54 B | No indicado en la información disponible | No evaluado en esta tarea por el autor | Apache 2.0 | safetensors y GGUF en Hugging Face |
 | Motor de reglas del demo | No aplica | No aplica | 42,1 % precisión de herramienta, 100 % precisión de rechazo y 38,3 % exhaustividad en el mismo conjunto | No disponible | Código en el repositorio de GitHub |
 
 Otros modelos de 1-2 B parámetros con ajuste por instrucciones (por ejemplo la familia SmolLM2 o Llama 3.2 1B) son alternativas razonables en tamaño, pero no se han publicado evaluaciones comparativas frente a este modelo en la información disponible. Tampoco existe comparación con modelos especializados en enrutado o function calling de mayor tamaño.
@@ -119,7 +119,7 @@ Otros modelos de 1-2 B parámetros con ajuste por instrucciones (por ejemplo la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gowthamshivanand/gowtham-nimbuspay-agent
+- Modelo en Hugging Face: https://huggingface.co/Gowthamshivanand/gowtham-nimbuspay-agent
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/main/LICENSE
 - Código de la demo NimbusPay Adoption Insights Agent: https://github.com/mohithraghava/nimbuspay-adoption-insights

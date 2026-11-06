@@ -74,7 +74,7 @@ La comparativa es limitada por falta de datos de rendimiento. ITER-Qwen3-Embeddi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/ITER-Qwen3-Embedding-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/ITER-Qwen3-Embedding-4B-GGUF
 - Modelo base: https://huggingface.co/ielabgroup/ITER-Qwen3-Embedding-4B
 - Pagina de descargas alternativa: https://hf.tst.eu/model#ITER-Qwen3-Embedding-4B-GGUF
 - Paper asociado (referencia en tags): arxiv:2608.27912

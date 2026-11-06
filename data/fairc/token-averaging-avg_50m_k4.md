@@ -71,5 +71,5 @@ No disponible. No se han publicado comparativas con otros modelos de 50M de par√
 
 ## Enlaces
 
-- [HuggingFace: FAIRC/token-averaging-avg_50m_k4](https://huggingface.co/FAIRC/token-averaging-avg_50m_k4)
-- [HuggingFace: FAIRC/token-averaging-avg_50m_k4_learnable_pos](https://huggingface.co/FAIRC/token-averaging-avg_50m_k4_learnable_pos) (variante con posiciones aprendibles)
+- [Hugging Face: FAIRC/token-averaging-avg_50m_k4](https://huggingface.co/FAIRC/token-averaging-avg_50m_k4)
+- [Hugging Face: FAIRC/token-averaging-avg_50m_k4_learnable_pos](https://huggingface.co/FAIRC/token-averaging-avg_50m_k4_learnable_pos) (variante con posiciones aprendibles)

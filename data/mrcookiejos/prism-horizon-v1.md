@@ -83,8 +83,8 @@ Advertencia metodologica: las puntuaciones de modelos frontera provienen del lea
 
 | Modelo | Parametros | Contexto | LiveCodeBench v6 pass@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PRISM Horizon v1 | ~80B totales, ~3B activos (MoE) + LoRA de 34,3M | 12.288 (vLLM) / 16.384 (llama.cpp) en pruebas | 78,6 con pensamiento circular y sandbox; 75,7 a un intento | Apache 2.0 | Pesos PEFT y GGUF en HuggingFace |
-| Qwen3-Coder-Next (base) | ~80B totales, ~3B activos (MoE) | No disponible | 65,1 (ejecucion del autor) | Apache 2.0 | HuggingFace |
+| PRISM Horizon v1 | ~80B totales, ~3B activos (MoE) + LoRA de 34,3M | 12.288 (vLLM) / 16.384 (llama.cpp) en pruebas | 78,6 con pensamiento circular y sandbox; 75,7 a un intento | Apache 2.0 | Pesos PEFT y GGUF en Hugging Face |
+| Qwen3-Coder-Next (base) | ~80B totales, ~3B activos (MoE) | No disponible | 65,1 (ejecucion del autor) | Apache 2.0 | Hugging Face |
 | DeepSeek R1 | No disponible | No disponible | 70,2 | No disponible | Pesos abiertos |
 | GPT OSS 120B | 120B | No disponible | 83,2 | No disponible | Pesos abiertos |
 
@@ -106,6 +106,6 @@ La comparacion con modelos frontera cerrados (Claude Fable 5.1, Claude Sonnet 5,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MrCookieJos/prism-horizon-v1
+- Modelo en Hugging Face: https://huggingface.co/MrCookieJos/prism-horizon-v1
 - Modelo base Qwen3-Coder-Next: https://huggingface.co/Qwen/Qwen3-Coder-Next
 - Leaderboard de LiveCodeBench en vals.ai: https://www.vals.ai/benchmarks/lcb

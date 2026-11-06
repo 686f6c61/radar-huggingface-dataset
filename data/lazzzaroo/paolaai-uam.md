@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PaolaAI-UAM es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct publicado por el usuario Lazzzaroo en HuggingFace. Se trata de un modelo denso de 7.615.616.512 parámetros (7,62 mil millones) orientado a generación de texto conversacional, derivado de `unsloth/Qwen2.5-7B-Instruct-bnb-4bit` y entrenado con la librería Unsloth junto con TRL de HuggingFace. La model card del autor no documenta el conjunto de datos de ajuste, el número de pasos, la composición del corpus ni el procedimiento de alineación empleado.
+PaolaAI-UAM es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct publicado por el usuario Lazzzaroo en Hugging Face. Se trata de un modelo denso de 7.615.616.512 parámetros (7,62 mil millones) orientado a generación de texto conversacional, derivado de `unsloth/Qwen2.5-7B-Instruct-bnb-4bit` y entrenado con la librería Unsloth junto con TRL de Hugging Face. La model card del autor no documenta el conjunto de datos de ajuste, el número de pasos, la composición del corpus ni el procedimiento de alineación empleado.
 
 El interés de esta ficha es fundamentalmente descriptivo: se trata de un artefacto con 0 descargas y 0 likes en el momento de redactarla, con una model card mínima que se limita a declarar la autoría, la licencia Apache 2.0 y el modelo base. No hay resultados de evaluación publicados, ni información sobre el dominio de especialización, ni detalles sobre el proceso de entrenamiento más allá de la mención a Unsloth y TRL.
 
@@ -29,7 +29,7 @@ Por tanto, cualquier evaluacion de su calidad debe hacerse de forma empirica por
 
 La arquitectura no se describe en la model card. Al derivar de Qwen2.5-7B-Instruct, la estructura subyacente es un transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU, embeddings RoPE y atencion con consultas agrupadas (GQA). Para el modelo base Qwen2.5-7B-Instruct, la documentacion oficial de Qwen indica 28 capas, 28 cabezas de atencion para consultas, 4 cabezas para claves y valores, una dimension oculta de 3.584 y una dimension intermedia de 18.944. Estos valores corresponden al modelo base y no han sido verificados para este fine-tune concreto.
 
-En cuanto al entrenamiento, la unica informacion disponible es la declaracion del autor de que el modelo "fue entrenado 2x mas rapido con Unsloth y la libreria TRL de HuggingFace". No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de RLHF, DPO u otra forma de alineacion, ni la duracion o el regimen de hiperparametros. El modelo base Qwen2.5-7B-Instruct fue preentrenado por Alibaba sobre aproximadamente 18 billones de tokens y posteriormente ajustado con instrucciones, pero ese dato no es extrapolable al ajuste fino aqui descrito. No se puede confirmar si el proceso de cuantizacion a 4 bits del modelo base (bnb-4bit) fue revertido o si los pesos publicados son el resultado de una fusion en precision completa, dado que el repositorio ocupa 15,2 GB, coherente con pesos en bf16/fp16.
+En cuanto al entrenamiento, la unica informacion disponible es la declaracion del autor de que el modelo "fue entrenado 2x mas rapido con Unsloth y la libreria TRL de Hugging Face". No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de RLHF, DPO u otra forma de alineacion, ni la duracion o el regimen de hiperparametros. El modelo base Qwen2.5-7B-Instruct fue preentrenado por Alibaba sobre aproximadamente 18 billones de tokens y posteriormente ajustado con instrucciones, pero ese dato no es extrapolable al ajuste fino aqui descrito. No se puede confirmar si el proceso de cuantizacion a 4 bits del modelo base (bnb-4bit) fue revertido o si los pesos publicados son el resultado de una fusion en precision completa, dado que el repositorio ocupa 15,2 GB, coherente con pesos en bf16/fp16.
 
 ## Capacidades
 
@@ -99,10 +99,10 @@ La comparacion con los modelos oficiales es desigual en terminos de evidencia: l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lazzzaroo/PaolaAI-UAM
+- Modelo en Hugging Face: https://huggingface.co/Lazzzaroo/PaolaAI-UAM
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentacion de Qwen2.5 (modelo base): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper de Qwen2.5: https://arxiv.org/abs/2412.15115
 - Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; el unico resultado obtenido fue una pagina generica de Gmail sin relacion con el artefacto.

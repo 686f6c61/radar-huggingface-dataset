@@ -32,7 +32,7 @@ Los datos de entrenamiento consisten en ejemplos "escritos y revisados por el eq
 - Generación de texto conversacional en español, orientada a relatos y acompañamiento narrativo en el ámbito de la salud mental perinatal.
 - Estilo de respuesta adaptado a terapia narrativa, según la descripción del proyecto.
 - Ejecución sin conexión mediante llama.cpp y formato GGUF, pensada como respaldo en una aplicación.
-- Soporte de conversación multi-turno (etiqueta "conversational" en HuggingFace).
+- Soporte de conversación multi-turno (etiqueta "conversational" en Hugging Face).
 - Compatibilidad con endpoints (etiqueta "endpoints_compatible").
 - No se documentan capacidades de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo "thinking".
 - Capacidades multilingües limitadas al español según los metadatos.
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Relatos que Sanan – LFM2.5-350M | 354M | no disponible | no disponible | GGUF en HuggingFace |
-| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | no disponible | HuggingFace |
+| Relatos que Sanan – LFM2.5-350M | 354M | no disponible | no disponible | GGUF en Hugging Face |
+| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | no disponible | Hugging Face |
 | Otros ajustes de nicho en español | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas.
@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Azaratthh/relatos-que-sanan-lfm2.5-350m
+- Hugging Face: https://huggingface.co/Azaratthh/relatos-que-sanan-lfm2.5-350m
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M

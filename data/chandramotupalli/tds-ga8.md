@@ -79,7 +79,7 @@ No disponible. Este repositorio no contiene un modelo de IA comparable con otras
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ChandraMotupalli/tds-ga8
+- Repositorio de Hugging Face: https://huggingface.co/ChandraMotupalli/tds-ga8
 - Repositorio similar (bobtehbuilder): https://huggingface.co/bobtehbuilder/tds-ga8-carbon-f5ad34f6f655
 - Repositorio similar (23f2003326): https://huggingface.co/23f2003326/tds_GA8
 - Repositorio GitHub (llEclipsell): https://github.com/llEclipsell/tds-ga8

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `shubhampm/stock-news-sentiment-finetuned` es un clasificador de texto basado en la arquitectura BERT, especializado en el análisis de sentimiento de noticias bursátiles. Desarrollado por el usuario shubhampm y publicado en HuggingFace, el modelo cuenta con 109.484.547 parámetros, lo que lo sitúa en el rango de un BERT-base, y está preparado para la tarea de clasificación de texto (text-classification) mediante la librería transformers. Su propósito es asignar una polaridad (positiva, negativa o neutral) a fragmentos de noticias financieras, lo que resulta útil para sistemas de monitorización de mercado y estrategias cuantitativas.
+El modelo `shubhampm/stock-news-sentiment-finetuned` es un clasificador de texto basado en la arquitectura BERT, especializado en el análisis de sentimiento de noticias bursátiles. Desarrollado por el usuario shubhampm y publicado en Hugging Face, el modelo cuenta con 109.484.547 parámetros, lo que lo sitúa en el rango de un BERT-base, y está preparado para la tarea de clasificación de texto (text-classification) mediante la librería transformers. Su propósito es asignar una polaridad (positiva, negativa o neutral) a fragmentos de noticias financieras, lo que resulta útil para sistemas de monitorización de mercado y estrategias cuantitativas.
 
 La relevancia de este modelo radica en su tamaño reducido y su enfoque específico en el dominio financiero, lo que permite desplegarlo en entornos con recursos limitados. Sin embargo, la documentación publicada es extremadamente escasa: la model card está vacía y no se proporcionan detalles sobre el proceso de fine-tuning, el conjunto de datos utilizado ni las métricas de evaluación. Esta falta de transparencia limita su adopción en entornos de producción donde se requiera trazabilidad y reproducibilidad.
 
@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento comparativos para este modelo. Como altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shubhampm/stock-news-sentiment-finetuned
+- Modelo en Hugging Face: https://huggingface.co/shubhampm/stock-news-sentiment-finetuned
 - Paper de referencia de BERT: https://arxiv.org/abs/1910.09700
 - Modelo alternativo de analisis de sentimiento financiero (mrm8488): https://huggingface.co/mrm8488/distilroberta-finetuned-financial-news-sentiment-analysis
 - Repositorio de temas de analisis de sentimiento bursatil en GitHub: https://github.com/topics/stock-sentiment-analysis

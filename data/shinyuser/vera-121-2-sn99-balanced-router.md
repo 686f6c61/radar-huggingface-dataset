@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables. Aunque existen routers 
 
 ## Enlaces
 
-- [HuggingFace - ShinyUser/vera-121-2-sn99-balanced-router](https://huggingface.co/ShinyUser/vera-121-2-sn99-balanced-router)
+- [Hugging Face - ShinyUser/vera-121-2-sn99-balanced-router](https://huggingface.co/ShinyUser/vera-121-2-sn99-balanced-router)
 - [ShinyUser/sn99-miner1-v9](https://huggingface.co/ShinyUser/sn99-miner1-v9)
 - [ShinyUser/ShinyModel](https://huggingface.co/ShinyUser/ShinyModel)
 - [Model router for Microsoft Foundry concepts](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-router)

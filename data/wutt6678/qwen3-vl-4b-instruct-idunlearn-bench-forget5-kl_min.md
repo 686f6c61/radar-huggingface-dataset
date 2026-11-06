@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA (PEFT) denominado `Qwen3-VL-4B-Instr
 
 El modelo base es un modelo de visión-lenguaje (VLM) de arquitectura densa que combina un codificador visual con un modelo de lenguaje autorregresivo, orientado a comprensión de imágenes, vídeo y texto. El adaptador hereda esas capacidades, pero su propósito declarado por el nombre es alterarlas mediante un proceso de desaprendizaje, presumiblemente para eliminar la capacidad de reconocer o generar información asociada a determinadas identidades o conceptos de la partición "forget5".
 
-La relevancia de esta ficha es doble: por un lado documenta un artefacto experimental de investigación sobre olvido selectivo en modelos multimodales; por otro, sirve como ejemplo de repositorio con documentación mínima (la model card es la plantilla por defecto de HuggingFace, sin contenido relleno). Cabe advertir que **no hay información publicada sobre el proceso de entrenamiento, la licencia, los idiomas o los resultados**, por lo que cualquier uso en producción es desaconsejable sin una validación propia.
+La relevancia de esta ficha es doble: por un lado documenta un artefacto experimental de investigación sobre olvido selectivo en modelos multimodales; por otro, sirve como ejemplo de repositorio con documentación mínima (la model card es la plantilla por defecto de Hugging Face, sin contenido relleno). Cabe advertir que **no hay información publicada sobre el proceso de entrenamiento, la licencia, los idiomas o los resultados**, por lo que cualquier uso en producción es desaconsejable sin una validación propia.
 
 ## Especificaciones tecnicas
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-VL-4B-Instruct-IDUnlearn-Bench-forget5-KL_Min | Adaptador LoRA sobre 4B | No disponible | Adaptador de desaprendizaje | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-4B-Instruct | 4B | No disponible en la información recabada | Modelo VLM completo | No disponible en la información recabada | HuggingFace, repositorio oficial |
-| OpenExplorer/Qwen3-VL-4B-Instruct | 4B | No disponible | Modelo VLM completo (espejo) | No disponible | HuggingFace |
+| Qwen3-VL-4B-Instruct-IDUnlearn-Bench-forget5-KL_Min | Adaptador LoRA sobre 4B | No disponible | Adaptador de desaprendizaje | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-4B-Instruct | 4B | No disponible en la información recabada | Modelo VLM completo | No disponible en la información recabada | Hugging Face, repositorio oficial |
+| OpenExplorer/Qwen3-VL-4B-Instruct | 4B | No disponible | Modelo VLM completo (espejo) | No disponible | Hugging Face |
 | Qwen3-VL-4B-Instruct (Ollama) | 4B | No disponible | Modelo VLM cuantizado para despliegue local | No disponible | Ollama library |
 
 No se han identificado en la búsqueda otros adaptadores de desaprendizaje comparables para modelos multimodales de 4B, por lo que la comparación directa con alternativas equivalentes no está disponible.
@@ -82,7 +82,7 @@ No se han identificado en la búsqueda otros adaptadores de desaprendizaje compa
 ## Limitaciones y advertencias
 
 - **Licencia no especificada**: sin licencia explícita, no se puede asumir permiso para uso comercial ni para redistribución. Además, la licencia del modelo base Qwen3-VL (que sí tiene términos propios publicados por Alibaba) sigue aplicando de forma heredada.
-- **Sin model card útil**: la tarjeta del repositorio es la plantilla por defecto de HuggingFace, con todos los campos marcados como "[More Information Needed]". No hay información sobre datos, sesgos, evaluación ni uso previsto.
+- **Sin model card útil**: la tarjeta del repositorio es la plantilla por defecto de Hugging Face, con todos los campos marcados como "[More Information Needed]". No hay información sobre datos, sesgos, evaluación ni uso previsto.
 - **Cero tracción**: 0 descargas y 0 *likes* en el momento de redactar esta ficha, lo que reduce las posibilidades de validación comunitaria.
 - **Riesgo de alucinación**: no evaluado. Al estar basado en un VLM, mantiene la propensión del modelo base a inventar contenido en tareas de OCR, descripción de imágenes o razonamiento visual, potencialmente alterada por el adaptador.
 - **Desaprendizaje no verificado**: no hay evidencia publicada de que el objetivo "KL_Min" sobre la partición "forget5" elimine realmente la información objetivo. Los métodos de desaprendizaje basados en minimización de KL pueden producir un enmascaramiento superficial en lugar de una eliminación efectiva.
@@ -94,7 +94,7 @@ No se han identificado en la búsqueda otros adaptadores de desaprendizaje compa
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/wutt6678/Qwen3-VL-4B-Instruct-IDUnlearn-Bench-forget5-KL_Min
+- Hugging Face del adaptador: https://huggingface.co/wutt6678/Qwen3-VL-4B-Instruct-IDUnlearn-Bench-forget5-KL_Min
 - Qwen3-VL-4B-Instruct (modelo base original): https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Qwen3-VL-4B-Instruct (espejo OpenExplorer): https://huggingface.co/OpenExplorer/Qwen3-VL-4B-Instruct
 - Repositorio GitHub de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL

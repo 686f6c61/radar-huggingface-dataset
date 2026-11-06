@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chatterbox Hausa (NaijaVoices) es un ajuste fino del modelo de sintesis de voz ResembleAI Chatterbox T3 Multilingual, especializado en hausa (`ha`). Lo desarrolla Samuel Olubukun y se publica en HuggingFace bajo el identificador `samuelolubukun/chatterbox-hausa-naijavoices`. El modelo resuelve un problema concreto: la mayoria de los sistemas TTS multilingues de alta calidad no cubren lenguas africanas de forma nativa, y este ajuste anade hausa manteniendo la capacidad de clonacion de voz a partir de un clip de referencia.
+Chatterbox Hausa (NaijaVoices) es un ajuste fino del modelo de sintesis de voz ResembleAI Chatterbox T3 Multilingual, especializado en hausa (`ha`). Lo desarrolla Samuel Olubukun y se publica en Hugging Face bajo el identificador `samuelolubukun/chatterbox-hausa-naijavoices`. El modelo resuelve un problema concreto: la mayoria de los sistemas TTS multilingues de alta calidad no cubren lenguas africanas de forma nativa, y este ajuste anade hausa manteniendo la capacidad de clonacion de voz a partir de un clip de referencia.
 
 La arquitectura declarada por el autor es Chatterbox T3, un sistema TTS autorregresivo con flow-matching y codec Encodec. El tokenizador es el S3 Tokenizer, al que se le anade un token de vocabulario especifico para `ha`. El entrenamiento se hizo sobre aproximadamente 8.000 pares audio-texto del split Hausa batch-0 del dataset NaijaVoices, durante 8 epocas, en una NVIDIA A10G de 24 GB.
 
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Inferencia: el autor no publica requisitos. Como referencia orientativa no confirmada, el repositorio ocupa 2,1 GB y el fichero de pesos contiene unos 536 M de parametros, lo que situa la inferencia en el rango de pocos GB de VRAM y la hace viable en GPU de consumo (por ejemplo, gamas RTX x060/x070 en adelante); esta estimacion no esta validada por el autor.
 - GPU de datacenter: A10G, A100 o H100 soportadas por el stack PyTorch habitual, aunque no se documenta un perfil de throughput especifico.
 - No cabe esperar soporte de llama.cpp, Ollama, vLLM ni TGI: son runners orientados a modelos de lenguaje y este es un modelo TTS.
-- Despliegue esperado mediante la libreria `chatterbox` (tag `chatterbox` en HuggingFace y `librery: chatterbox` en los metadatos), sobre PyTorch.
+- Despliegue esperado mediante la libreria `chatterbox` (tag `chatterbox` en Hugging Face y `librery: chatterbox` en los metadatos), sobre PyTorch.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Idiomas | Clonacion de voz | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chatterbox-hausa-naijavoices | 536 M (safetensors); model card declara ~1.2B | hausa | si | Apache 2.0 + CC BY-NC-SA 4.0 | HuggingFace, 0 descargas |
-| ResembleAI Chatterbox T3 Multilingual (modelo base) | no disponible en la informacion proporcionada | multilingue | si | Apache 2.0 | HuggingFace |
-| xtts-v2-hausa-openbible (mismo autor, citado en la model card) | no disponible | hausa | si (XTTS-v2) | no disponible | HuggingFace |
-| Modelos TTS multilingues genericos tipo XTTS-v2 / MMS-TTS | no disponible | multilingue / centenares de lenguas | depende del modelo | varian (algunos no comerciales) | HuggingFace |
+| chatterbox-hausa-naijavoices | 536 M (safetensors); model card declara ~1.2B | hausa | si | Apache 2.0 + CC BY-NC-SA 4.0 | Hugging Face, 0 descargas |
+| ResembleAI Chatterbox T3 Multilingual (modelo base) | no disponible en la informacion proporcionada | multilingue | si | Apache 2.0 | Hugging Face |
+| xtts-v2-hausa-openbible (mismo autor, citado en la model card) | no disponible | hausa | si (XTTS-v2) | no disponible | Hugging Face |
+| Modelos TTS multilingues genericos tipo XTTS-v2 / MMS-TTS | no disponible | multilingue / centenares de lenguas | depende del modelo | varian (algunos no comerciales) | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan una comparacion cuantitativa de calidad entre estas alternativas. La comparacion debe limitarse, por tanto, a cobertura de idioma, disponibilidad de clonacion y licencia.
 
@@ -86,11 +86,11 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/samuelolubukun/chatterbox-hausa-naijavoices
+- Modelo en Hugging Face: https://huggingface.co/samuelolubukun/chatterbox-hausa-naijavoices
 - Modelo base Chatterbox de ResembleAI: https://huggingface.co/ResembleAI/chatterbox
 - Dataset NaijaVoices: https://huggingface.co/datasets/naijavoices/naijavoices-dataset
 - Dataset de referencia de audio usado en los ejemplos: https://huggingface.co/datasets/benjaminogbonna/nigerian_common_voice_dataset
-- Perfil de HuggingFace del autor: https://huggingface.co/samuelolubukun
+- Perfil de Hugging Face del autor: https://huggingface.co/samuelolubukun
 - Sitio web del autor: https://samuelolubukun.com
 - GitHub del autor: https://github.com/samolubukun
 - Modelo previo del autor citado en la model card: https://huggingface.co/samuelolubukun/xtts-v2-hausa-openbible

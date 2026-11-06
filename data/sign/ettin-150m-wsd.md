@@ -86,6 +86,6 @@ El modelo se sitúa ligeramente por debajo de su profesor en precisión, pero of
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/sign/Ettin-150m-WSD
+- Hugging Face del modelo: https://huggingface.co/sign/Ettin-150m-WSD
 - Repositorio de referencia: https://github.com/sign/word-sense-disambiguation
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-150m

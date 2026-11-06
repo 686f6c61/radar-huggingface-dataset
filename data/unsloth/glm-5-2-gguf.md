@@ -102,7 +102,7 @@ GLM-5.2 supera a GLM-5.1 en todos los benchmarks publicados, con mejoras especia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unsloth/GLM-5.2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/unsloth/GLM-5.2-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.2
 - Guía de Unsloth para GLM-5.2: https://unsloth.ai/docs/models/glm-5.2
 - Paper técnico GLM-5: https://arxiv.org/abs/2602.15763

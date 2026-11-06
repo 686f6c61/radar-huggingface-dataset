@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ARAZmixKREA es un modelo de difusion texto-a-imagen publicado por el usuario ariaze (ARIAZE, EREZ Studio) en HuggingFace. Se trata de un merge personalizado de modelos existentes, construido sin entrenamiento adicional, orientado a la generacion de imagenes fotorrealistas y semirrealistas. El modelo se distribuye en formato safetensors y esta pensado para su uso en ComfyUI, segun las etiquetas de la model card.
+ARAZmixKREA es un modelo de difusion texto-a-imagen publicado por el usuario ariaze (ARIAZE, EREZ Studio) en Hugging Face. Se trata de un merge personalizado de modelos existentes, construido sin entrenamiento adicional, orientado a la generacion de imagenes fotorrealistas y semirrealistas. El modelo se distribuye en formato safetensors y esta pensado para su uso en ComfyUI, segun las etiquetas de la model card.
 
 El modelo deriva de la familia Krea 2, tal como indica su nombre y la referencia a la licencia KREA2 incluida en el repositorio. La model card esta redactada en coreano e ingles, y los idiomas declarados son ko y en. No se especifican en la informacion disponible la arquitectura interna, el numero de parametros ni la longitud de contexto, mas alla de lo implicito en un modelo de difusion para generacion de imagenes.
 
@@ -42,7 +42,7 @@ El autor indica explicitamente que el modelo se creo "a partir de modelos existe
 - Prototipado visual en estudios pequenos: el formato safetensors y la compatibilidad con ComfyUI permiten cargarlo en pipelines de nodos existentes sin conversion adicional.
 - Experimentacion con merges comunitarios: util para quienes investigan el efecto de combinar pesos de la familia Krea 2 y comparar resultados estilisticos.
 - Generacion de material grafico para comunidades de arte: el autor proviene de canales de arte de Arca.live, por lo que el modelo esta pensado para ese tipo de flujos creativos.
-- Uso educativo en difusion: sirve como ejemplo practico de merge de modelos y de licencias personalizadas restrictivas en el ecosistema HuggingFace.
+- Uso educativo en difusion: sirve como ejemplo practico de merge de modelos y de licencias personalizadas restrictivas en el ecosistema Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -73,7 +73,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ariaze/ARAZmixKREA
+- Hugging Face: https://huggingface.co/ariaze/ARAZmixKREA
 - Licencia Krea 2 (PDF): https://huggingface.co/ariaze/ARAZmixKREA/resolve/main/LICENSE.KREA2.pdf
 - Notice: https://huggingface.co/ariaze/ARAZmixKREA/blob/main/Notice.txt
 - Canal AI semirrealista de Arca.live: https://arca.live/b/aiartreal

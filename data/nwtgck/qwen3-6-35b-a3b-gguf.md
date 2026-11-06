@@ -6,7 +6,7 @@ nwtgck/Qwen3.6-35B-A3B-GGUF es una conversion a formato GGUF del modelo Qwen/Qwe
 
 La relevancia de esta ficha es practica: el modelo original se distribuye en precision completa, lo que exige hardware de gama alta, mientras que esta version GGUF permite ejecutarlo en estaciones de trabajo con GPU de consumo o en equipos Apple Silicon mediante llama.cpp. La model card es practicamente vacia (incluye un TODO "add info"), por lo que gran parte de las especificaciones habituales (contexto, idiomas, composicion del entrenamiento) no estan documentadas en la informacion disponible.
 
-El autor de la cuantizacion no es el desarrollador original del modelo, sino un tercero que la ha subido a HuggingFace. Esto implica que no hay garantia documentada sobre el proceso de conversion, la eleccion de niveles de cuantizacion ni la validacion de calidad respecto al modelo original. La licencia declarada es apache-2.0, heredada del modelo base.
+El autor de la cuantizacion no es el desarrollador original del modelo, sino un tercero que la ha subido a Hugging Face. Esto implica que no hay garantia documentada sobre el proceso de conversion, la eleccion de niveles de cuantizacion ni la validacion de calidad respecto al modelo original. La licencia declarada es apache-2.0, heredada del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato | Licencia | Contexto | Disponibilidad |
 |---|---|---|---|---|---|
-| nwtgck/Qwen3.6-35B-A3B-GGUF | 34,66 B (activos no disponibles) | GGUF cuantizado | apache-2.0 | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-35B-A3B | 34,66 B | safetensors (precision completa) | no disponible en la informacion proporcionada | no disponible | HuggingFace (modelo base) |
-| z-lab/Qwen3.6-35B-A3B-DFlash | no disponible | no disponible | no disponible | no disponible | HuggingFace (citado como modelo fuente) |
+| nwtgck/Qwen3.6-35B-A3B-GGUF | 34,66 B (activos no disponibles) | GGUF cuantizado | apache-2.0 | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-35B-A3B | 34,66 B | safetensors (precision completa) | no disponible en la informacion proporcionada | no disponible | Hugging Face (modelo base) |
+| z-lab/Qwen3.6-35B-A3B-DFlash | no disponible | no disponible | no disponible | no disponible | Hugging Face (citado como modelo fuente) |
 
 No se dispone de datos de rendimiento ni de terceros modelos comparables verificados en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento ni de terceros modelos comparables verific
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/nwtgck/Qwen3.6-35B-A3B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/nwtgck/Qwen3.6-35B-A3B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Modelo auxiliar DFlash: https://huggingface.co/z-lab/Qwen3.6-35B-A3B-DFlash
 - Repositorio GGUF alternativo citado en la model card: https://huggingface.co/ggml-org/Qwen3.6-35B-A3B-GGUF

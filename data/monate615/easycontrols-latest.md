@@ -4,7 +4,7 @@
 
 EasyControl (identificador `monate615/easycontrols-latest`) es un adaptador LoRA de texto a imagen publicado por el usuario monate615 para el artista de IA "Volia AI". No es un modelo de lenguaje ni un modelo fundacional: se trata de un conjunto de pesos de ajuste fino de bajo rango que se aplican sobre el modelo de difusión `black-forest-labs/FLUX.1-dev`, de modo que este último adquiere una serie de estilos ilustrados concretos (Ghibli Studio, Snoopy, 3D Cartoon, Classic Toys y Labubu) sin necesidad de reentrenar el modelo base.
 
-El repositorio, alojado en HuggingFace bajo licencia MIT y librería `diffusers`, ocupa 6,6 GB y se distribuye en formato Safetensors. La model card es deliberadamente minimalista: describe el modelo como "easycontrol models for volia ai artist" y define las palabras de activación necesarias para invocar cada estilo. No se documentan datos de entrenamiento, número de pasos, tamaño del dataset, hiperparámetros del LoRA ni resultados de evaluación.
+El repositorio, alojado en Hugging Face bajo licencia MIT y librería `diffusers`, ocupa 6,6 GB y se distribuye en formato Safetensors. La model card es deliberadamente minimalista: describe el modelo como "easycontrol models for volia ai artist" y define las palabras de activación necesarias para invocar cada estilo. No se documentan datos de entrenamiento, número de pasos, tamaño del dataset, hiperparámetros del LoRA ni resultados de evaluación.
 
 Su relevancia es práctica antes que técnica: ofrece a ilustradores y desarrolladores una vía de bajo coste para obtener estilos ilustrados consistentes sobre FLUX.1-dev, aprovechando la licencia permisiva del adaptador y la infraestructura estándar de `diffusers`. La contrapartida es la escasez total de documentación técnica, lo que obliga a tratar el modelo como experimental y a validar su comportamiento empíricamente antes de integrarlo en cualquier flujo de producción.
 
@@ -75,10 +75,10 @@ Las cifras siguientes corresponden al modelo base FLUX.1-dev, ya que el LoRA por
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `monate615/easycontrols-latest` | LoRA de estilo sobre FLUX.1-dev | No disponible | No disponible | MIT | HuggingFace, 0 descargas, 0 likes |
-| `black-forest-labs/FLUX.1-dev` | Modelo base de difusion texto a imagen | Aproximadamente 12 000 millones | Resolucion nativa hasta 2 MP | Licencia FLUX.1-dev no comercial | HuggingFace, ampliamente adoptado |
-| Otros adaptadores LoRA de estilo para FLUX.1-dev | LoRA de estilo | No disponible | No disponible | Variable segun autor | HuggingFace |
-| LoRA de estilo sobre SDXL | LoRA de estilo | No disponible | 1024 x 1024 tipico | Variable segun autor | HuggingFace |
+| `monate615/easycontrols-latest` | LoRA de estilo sobre FLUX.1-dev | No disponible | No disponible | MIT | Hugging Face, 0 descargas, 0 likes |
+| `black-forest-labs/FLUX.1-dev` | Modelo base de difusion texto a imagen | Aproximadamente 12 000 millones | Resolucion nativa hasta 2 MP | Licencia FLUX.1-dev no comercial | Hugging Face, ampliamente adoptado |
+| Otros adaptadores LoRA de estilo para FLUX.1-dev | LoRA de estilo | No disponible | No disponible | Variable segun autor | Hugging Face |
+| LoRA de estilo sobre SDXL | LoRA de estilo | No disponible | 1024 x 1024 tipico | Variable segun autor | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre este adaptador y alternativas equivalentes, por lo que la comparación se limita a licencia, tipo de modelo y disponibilidad. La diferencia principal frente a los LoRA para SDXL es el modelo base: FLUX.1-dev ofrece mayor fidelidad de prompt y calidad de detalle, pero exige bastante más VRAM.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparativos entre este adaptador y altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/monate615/easycontrols-latest
+- Modelo en Hugging Face: https://huggingface.co/monate615/easycontrols-latest
 - Repositorio de la familia de adaptadores: https://huggingface.co/monate615/easycontrols
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Biblioteca `diffusers`: https://github.com/huggingface/diffusers

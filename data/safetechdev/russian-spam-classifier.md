@@ -80,7 +80,7 @@ No se dispone de información comparativa con otros clasificadores de spam en ru
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SafeTechDev/Russian-Spam-classifier
+- Modelo en Hugging Face: https://huggingface.co/SafeTechDev/Russian-Spam-classifier
 - Modelo base: https://huggingface.co/DeepPavlov/rubert-base-cased
 - Dataset de evaluación: https://huggingface.co/datasets/alt-gnome/telegram-spam
 - Autor: https://huggingface.co/SafeTechDev

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tsss1/gemma-3-lora-cm` es un ajuste fino (fine-tuning) de tipo LoRA sobre el modelo base `unsloth/gemma-3-4b-it-unsloth-bnb-4bit`, una version cuantizada en 4 bits de Gemma 3 4B instructiva. Lo publica el usuario `tsss1` en HuggingFace con licencia Apache 2.0 y un unico idioma declarado, el ingles. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador LoRA (no con los pesos completos del modelo de 4 mil millones de parametros).
+`tsss1/gemma-3-lora-cm` es un ajuste fino (fine-tuning) de tipo LoRA sobre el modelo base `unsloth/gemma-3-4b-it-unsloth-bnb-4bit`, una version cuantizada en 4 bits de Gemma 3 4B instructiva. Lo publica el usuario `tsss1` en Hugging Face con licencia Apache 2.0 y un unico idioma declarado, el ingles. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador LoRA (no con los pesos completos del modelo de 4 mil millones de parametros).
 
 El modelo hereda la arquitectura, el tamano y la ventana de contexto de Gemma 3 4B, pero la model card no aporta detalles sobre el dataset de entrenamiento, el numero de pasos, la tasa de aprendizaje ni los hiperparametros utilizados. El autor solo indica que el entrenamiento se realizo con Unsloth, lo que sugiere un flujo de trabajo de ajuste fino eficiente en memoria sobre GPU de consumo.
 
@@ -44,7 +44,7 @@ No se dispone de informacion sobre el dataset de entrenamiento, el numero de tok
 - Investigacion sobre eficiencia de entrenamiento: permite estudiar el impacto de LoRA y cuantizacion 4-bit en la calidad final del modelo.
 - Base para un segundo ajuste fino: al ser un adaptador ligero (0,2 GB), puede combinarse o continuar entrenandose con otros datasets.
 - Evaluacion comparativa de adaptadores: util para medir como un LoRA sin documentar afecta al rendimiento del modelo base en tareas estandar.
-- Docencia y formacion: ejemplo practico de publicacion de un adaptador en HuggingFace con metadatos minimos.
+- Docencia y formacion: ejemplo practico de publicacion de un adaptador en Hugging Face con metadatos minimos.
 
 ## Benchmarks y rendimiento
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| tsss1/gemma-3-lora-cm | ~4B (base) | No disponible | Apache 2.0 | HuggingFace, 0 descargas | Adaptador LoRA sin benchmarks |
-| google/gemma-3-4b-it | ~4B | Hasta 128k (segun documentacion de Google) | Gemma license | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados |
-| unsloth/gemma-3-4b-it-unsloth-bnb-4bit | ~4B | Hasta 128k (heredado) | Apache 2.0 (según repo) | HuggingFace | Version cuantizada 4-bit del base, optimizada por Unsloth |
-| meta-llama/Llama-3.2-3B-Instruct | ~3B | 128k | Llama 3.2 license | HuggingFace | Alternativa de tamano similar, con benchmarks publicados |
+| tsss1/gemma-3-lora-cm | ~4B (base) | No disponible | Apache 2.0 | Hugging Face, 0 descargas | Adaptador LoRA sin benchmarks |
+| google/gemma-3-4b-it | ~4B | Hasta 128k (segun documentacion de Google) | Gemma license | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados |
+| unsloth/gemma-3-4b-it-unsloth-bnb-4bit | ~4B | Hasta 128k (heredado) | Apache 2.0 (según repo) | Hugging Face | Version cuantizada 4-bit del base, optimizada por Unsloth |
+| meta-llama/Llama-3.2-3B-Instruct | ~3B | 128k | Llama 3.2 license | Hugging Face | Alternativa de tamano similar, con benchmarks publicados |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tsss1/gemma-3-lora-cm
+- Hugging Face: https://huggingface.co/tsss1/gemma-3-lora-cm
 - Modelo base: https://huggingface.co/unsloth/gemma-3-4b-it-unsloth-bnb-4bit
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
 - Gemma 3 (Google): no disponible en la informacion proporcionada

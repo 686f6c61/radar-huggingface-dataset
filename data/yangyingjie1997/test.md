@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `yangyingjie1997/test`, publicado por el usuario `yangyingjie1997` en HuggingFace, es un artefacto alojado bajo licencia Apache 2.0 con acceso restringido (gated). No dispone de model card descriptiva, pipeline declarado, idiomas soportados ni documentacion tecnica asociada. El repositorio acumula 0 descargas y 0 likes, y su tamano es de 0,1 GB, lo que resulta compatible con un conjunto de pesos muy reducido o con un repositorio de prueba con ficheros de configuracion y tokenizador.
+El repositorio `yangyingjie1997/test`, publicado por el usuario `yangyingjie1997` en Hugging Face, es un artefacto alojado bajo licencia Apache 2.0 con acceso restringido (gated). No dispone de model card descriptiva, pipeline declarado, idiomas soportados ni documentacion tecnica asociada. El repositorio acumula 0 descargas y 0 likes, y su tamano es de 0,1 GB, lo que resulta compatible con un conjunto de pesos muy reducido o con un repositorio de prueba con ficheros de configuracion y tokenizador.
 
 Por el nombre del repositorio ("test") y por la ausencia total de metadatos tecnicos, todo apunta a un artefacto de caracter experimental o de validacion de infraestructura, no a un modelo publicado para uso en produccion. No se ha encontrado informacion adicional en la busqueda web: los resultados devueltos corresponden a hilos de foro y consultas de soporte sin relacion alguna con el modelo (incidencias de WhatsApp Web, sincronizacion de Outlook To Do y avisos sobre ficheros `.vbs` maliciosos).
 
@@ -21,7 +21,7 @@ En consecuencia, esta ficha recoge unicamente los datos verificables del reposit
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible (el repositorio ocupa 0,1 GB; no se especifica si contiene safetensors, GGUF, PyTorch binario o solo ficheros de configuracion) |
 | Pipeline declarado | no disponible |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 0,1 GB |
 | Descargas | 0 |
 | Likes | 0 |
@@ -32,7 +32,7 @@ En consecuencia, esta ficha recoge unicamente los datos verificables del reposit
 
 No disponible. La informacion proporcionada no incluye ningun dato sobre la arquitectura del modelo (transformer denso, mezcla de expertos, SSM, arquitectura hibrida u otra), ni sobre el numero de parametros, la longitud de contexto nativa o las tecnicas de atencion empleadas.
 
-Tampoco hay informacion sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, fases de ajuste fino supervisado, RLHF, DPO u otras tecnicas de alineacion. El unico dato estructural verificable es el tamano del repositorio (0,1 GB) y la presencia de la etiqueta `region:us`, que en HuggingFace indica la region de almacenamiento del artefacto, no una caracteristica del modelo. La etiqueta `license:apache-2.0` confirma unicamente el regimen de licencia declarado por el autor.
+Tampoco hay informacion sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, fases de ajuste fino supervisado, RLHF, DPO u otras tecnicas de alineacion. El unico dato estructural verificable es el tamano del repositorio (0,1 GB) y la presencia de la etiqueta `region:us`, que en Hugging Face indica la region de almacenamiento del artefacto, no una caracteristica del modelo. La etiqueta `license:apache-2.0` confirma unicamente el regimen de licencia declarado por el autor.
 
 ## Capacidades
 
@@ -49,11 +49,11 @@ Tampoco hay informacion sobre el proceso de entrenamiento: numero de tokens, com
 Los siguientes escenarios son hipoteticos y se listan unicamente como marco de evaluacion condicional. No pueden validarse con la informacion disponible, ya que se desconoce si el repositorio contiene un modelo utilizable.
 
 - Validacion de infraestructura de despliegue: el repositorio podria emplearse como artefacto de prueba para verificar que un pipeline de descarga, autenticacion gated y carga de pesos funciona correctamente antes de desplegar modelos reales. Es adecuado para este fin por su tamano reducido (0,1 GB) y su condicion de acceso restringido, que obliga a ejercitar el flujo de aceptacion de condiciones.
-- Pruebas de integracion en CI/CD: comprobar que los scripts de empaquetado, versionado y publicacion en HuggingFace Hub operan sin errores, usando un repositorio de bajo coste en ancho de banda.
+- Pruebas de integracion en CI/CD: comprobar que los scripts de empaquetado, versionado y publicacion en Hugging Face Hub operan sin errores, usando un repositorio de bajo coste en ancho de banda.
 - Pruebas de control de acceso: verificar el comportamiento de clientes y SDK frente a respuestas de error 401/403 en repositorios gated.
 - Auditoria de licencias: caso de uso documental, para comprobar que el sistema de gestion de dependencias detecta y registra correctamente la licencia Apache 2.0 declarada.
 - Evaluacion de pipelines de cuantizacion: si el repositorio contuviera pesos, podria servir para probar herramientas de conversion a GGUF o safetensors en un entorno controlado; no verificable con los datos disponibles.
-- Docencia y formacion: ilustrar como se estructura un repositorio en HuggingFace y que metadatos son obligatorios para que un modelo sea evaluable por terceros, usando este caso como ejemplo de model card incompleta.
+- Docencia y formacion: ilustrar como se estructura un repositorio en Hugging Face y que metadatos son obligatorios para que un modelo sea evaluable por terceros, usando este caso como ejemplo de model card incompleta.
 
 ## Benchmarks y rendimiento
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, Transformers): no disponible. No se declara formato de pesos ni pipeline compatible.
 - Latencia y throughput estimados: no disponible.
 - Almacenamiento en disco: aproximadamente 0,1 GB para el repositorio completo, segun el dato proporcionado.
-- Requisito de acceso: es necesario disponer de cuenta en HuggingFace y aceptar las condiciones del repositorio (gated) para descargar el contenido.
+- Requisito de acceso: es necesario disponer de cuenta en Hugging Face y aceptar las condiciones del repositorio (gated) para descargar el contenido.
 
 ## Comparativa con modelos similares
 
@@ -93,7 +93,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yangyingjie1997/test
+- Repositorio en Hugging Face: https://huggingface.co/yangyingjie1997/test
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

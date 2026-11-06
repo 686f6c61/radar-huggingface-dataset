@@ -73,10 +73,10 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-shifted-l2_mixed_remove0.5_rho0.0000001 | 6,74 B | No disponible | Compresión SVD post-hoc con métrica mixta de seguridad | llama2 | HuggingFace, 15 descargas |
-| meta-llama/Llama-2-7b-chat-hf | 6,74 B | 4096 tokens | Modelo base con RLHF, sin comprimir | llama2 | HuggingFace, ampliamente usado |
+| Jeesup/svd-safety-shifted-l2_mixed_remove0.5_rho0.0000001 | 6,74 B | No disponible | Compresión SVD post-hoc con métrica mixta de seguridad | llama2 | Hugging Face, 15 descargas |
+| meta-llama/Llama-2-7b-chat-hf | 6,74 B | 4096 tokens | Modelo base con RLHF, sin comprimir | llama2 | Hugging Face, ampliamente usado |
 | Variantes de poda/SVD de Llama 2 (familia genérica) | ~3-7 B efectivos | Depende del checkpoint | Poda estructurada o SVD con calibración estándar | según autor | variable |
-| Mistral-7B-Instruct | 7,24 B | 8192 tokens (32k en v0.2/v0.3) | Transformer denso con instrucción | Apache 2.0 | HuggingFace |
+| Mistral-7B-Instruct | 7,24 B | 8192 tokens (32k en v0.2/v0.3) | Transformer denso con instrucción | Apache 2.0 | Hugging Face |
 
 La comparación relevante es contra el modelo base sin comprimir: este checkpoint reduce la fracción de parámetros de proyección en aproximadamente un 52 % realizado, pero no publica cifras de perplejidad ni de ASR que permitan cuantificar la contrapartida. Frente a Mistral-7B-Instruct, la diferencia principal es la licencia (llama2 frente a Apache 2.0) y el contexto, mayor en Mistral, aunque este checkpoint no está pensado para uso en producción.
 
@@ -95,7 +95,7 @@ La comparación relevante es contra el modelo base sin comprimir: este checkpoin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l2_mixed_remove0.5_rho0.0000001
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l2_mixed_remove0.5_rho0.0000001
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - Paper de Llama 2: https://arxiv.org/abs/2307.09288

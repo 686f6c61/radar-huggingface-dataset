@@ -88,7 +88,7 @@ La comparativa directa con otros modelos de extraccion de 1B (como Granite-4.0-1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZTFlynn/LFM2-1.2B-Extract-Cascadia-ternary3
+- Modelo en Hugging Face: https://huggingface.co/ZTFlynn/LFM2-1.2B-Extract-Cascadia-ternary3
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-1.2B-Extract
 - Repositorio de Cascadia (runtime C): https://github.com/EntroMorphic/cassie
 - Documentacion del formato de paquete: https://github.com/EntroMorphic/cassie/blob/main/docs/package_format.md

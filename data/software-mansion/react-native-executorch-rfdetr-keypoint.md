@@ -79,7 +79,7 @@ No se dispone de información de rendimiento comparativo con otros modelos de es
 
 ## Enlaces
 
-- [HuggingFace - software-mansion/react-native-executorch-rfdetr-keypoint](https://huggingface.co/software-mansion/react-native-executorch-rfdetr-keypoint)
+- [Hugging Face - software-mansion/react-native-executorch-rfdetr-keypoint](https://huggingface.co/software-mansion/react-native-executorch-rfdetr-keypoint)
 - [React Native ExecuTorch (GitHub)](https://github.com/software-mansion/react-native-executorch)
 - [Documentación de inicio rápido](https://docs.swmansion.com/react-native-executorch/docs/fundamentals/getting-started)
 - [Página oficial de React Native ExecuTorch](https://executorch.swmansion.com/)

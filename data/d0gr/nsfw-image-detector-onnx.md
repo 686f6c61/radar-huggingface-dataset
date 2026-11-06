@@ -73,6 +73,6 @@ No se dispone de información suficiente en el repositorio para realizar una com
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/d0gr/nsfw-image-detector-onnx)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/d0gr/nsfw-image-detector-onnx)
 - [Modelo base AdamCodd/vit-base-nsfw-detector](https://huggingface.co/AdamCodd/vit-base-nsfw-detector)
 - [Licencia Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)

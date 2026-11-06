@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Proposito | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (TOFU forget10, IHL + reset, ep. 14) | 1,42 B | no disponible | apache-2.0 | Desaprendizaje TOFU | HuggingFace (0 descargas) |
-| locuslab/tofu_ft_phi-1.5 | ~1,4 B | no disponible | no disponible en esta ficha | Phi-1.5 ajustado en TOFU (modelo base) | HuggingFace |
-| microsoft/phi-1_5 | 1,3 B | 2048 | MIT (original) | Generacion de codigo y texto | HuggingFace |
-| Otros checkpoints TOFU de Phi-1.5 (p. ej. variantes de olvido) | ~1,4 B | no disponible | variable | Desaprendizaje TOFU | HuggingFace |
+| Este checkpoint (TOFU forget10, IHL + reset, ep. 14) | 1,42 B | no disponible | apache-2.0 | Desaprendizaje TOFU | Hugging Face (0 descargas) |
+| locuslab/tofu_ft_phi-1.5 | ~1,4 B | no disponible | no disponible en esta ficha | Phi-1.5 ajustado en TOFU (modelo base) | Hugging Face |
+| microsoft/phi-1_5 | 1,3 B | 2048 | MIT (original) | Generacion de codigo y texto | Hugging Face |
+| Otros checkpoints TOFU de Phi-1.5 (p. ej. variantes de olvido) | ~1,4 B | no disponible | variable | Desaprendizaje TOFU | Hugging Face |
 
 La comparacion con alternativas de desaprendizaje de la misma familia (metodos como Gradient Ascent, KL minimization o Preference Optimization sobre TOFU) no esta disponible en la informacion proporcionada.
 
@@ -87,7 +87,7 @@ La comparacion con alternativas de desaprendizaje de la misma familia (metodos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_embed-epoch14
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_embed-epoch14
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU (referencia): https://huggingface.co/datasets/locuslab/TOFU

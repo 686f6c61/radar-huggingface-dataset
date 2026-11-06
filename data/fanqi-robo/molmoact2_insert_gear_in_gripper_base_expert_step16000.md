@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fanqi-robo/molmoact2_insert_gear_in_gripper_base_expert_step16000 | ~5,44 mil millones | no disponible | no disponible | no disponible | HuggingFace (6 descargas) |
-| allenai/MolmoAct2 (base oficial) | no disponible | no disponible | no disponible | no disponible | HuggingFace (Ai2) |
+| fanqi-robo/molmoact2_insert_gear_in_gripper_base_expert_step16000 | ~5,44 mil millones | no disponible | no disponible | no disponible | Hugging Face (6 descargas) |
+| allenai/MolmoAct2 (base oficial) | no disponible | no disponible | no disponible | no disponible | Hugging Face (Ai2) |
 | Otras politicas VLA (OpenVLA, pi0, etc.) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 La alternativa más directamente comparable es el modelo base de MolmoAct2 publicado por Ai2, del que este checkpoint es un ajuste fino especializado. No se dispone de datos de parámetros, contexto, rendimiento o licencia para el resto de políticas VLA mencionadas en la información proporcionada, por lo que no puede hacerse una comparación cuantitativa.
@@ -84,9 +84,9 @@ La alternativa más directamente comparable es el modelo base de MolmoAct2 publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fanqi-robo/molmoact2_insert_gear_in_gripper_base_expert_step16000
+- Modelo en Hugging Face: https://huggingface.co/fanqi-robo/molmoact2_insert_gear_in_gripper_base_expert_step16000
 - Modelo relacionado del mismo autor: https://huggingface.co/fanqi-robo/molmoact2_insert_gear_in_gripper_base_expert
-- MolmoAct2 oficial en HuggingFace (Ai2): https://huggingface.co/allenai/MolmoAct2
+- MolmoAct2 oficial en Hugging Face (Ai2): https://huggingface.co/allenai/MolmoAct2
 - Repositorio GitHub de MolmoAct2: https://github.com/allenai/molmoact2
 - Repositorio GitHub de MolmoAct: https://github.com/allenai/molmoact
 - Paper MolmoAct2: Action Reasoning Models for Real-world Deployment: https://arxiv.org/abs/2605.02881

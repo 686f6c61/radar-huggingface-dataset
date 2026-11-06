@@ -89,7 +89,7 @@ No se dispone de información sobre modelos comparables adicionales en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sacve/Screamaze_Qwen3.5_2B_Q4_K_M.gguff
+- Modelo en Hugging Face: https://huggingface.co/Sacve/Screamaze_Qwen3.5_2B_Q4_K_M.gguff
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
 - No se han encontrado en la información disponible enlaces a papers, blogs, repositorios del juego ni demos adicionales.

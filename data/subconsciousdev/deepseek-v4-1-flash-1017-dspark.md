@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DeepSeek V4.1 Flash 1017 DSPark es un modelo publicado en HuggingFace por el usuario SubconsciousDev bajo licencia MIT. Se distribuye en formato safetensors con pesos cuantizados en 8 bits (fp8) y cuenta con aproximadamente 14.225 millones de parametros totales, lo que lo situa en la categoria de modelos de tamano medio. La nomenclatura sugiere un derivado o variante de la familia DeepSeek, aunque el autor del repositorio no es el desarrollador original de dicha familia.
+DeepSeek V4.1 Flash 1017 DSPark es un modelo publicado en Hugging Face por el usuario SubconsciousDev bajo licencia MIT. Se distribuye en formato safetensors con pesos cuantizados en 8 bits (fp8) y cuenta con aproximadamente 14.225 millones de parametros totales, lo que lo situa en la categoria de modelos de tamano medio. La nomenclatura sugiere un derivado o variante de la familia DeepSeek, aunque el autor del repositorio no es el desarrollador original de dicha familia.
 
-La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia MIT, sin descripcion del modelo, sin datos de entrenamiento, sin especificaciones de contexto y sin resultados de benchmarks. El repositorio tiene un tamano de 7,9 GB, coherente con un modelo de unos 14.000 millones de parametros almacenado en fp8 (aproximadamente 1 byte por parametro mas metadatos). El pipeline no esta declarado en HuggingFace.
+La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia MIT, sin descripcion del modelo, sin datos de entrenamiento, sin especificaciones de contexto y sin resultados de benchmarks. El repositorio tiene un tamano de 7,9 GB, coherente con un modelo de unos 14.000 millones de parametros almacenado en fp8 (aproximadamente 1 byte por parametro mas metadatos). El pipeline no esta declarado en Hugging Face.
 
 Por tanto, la relevancia de esta ficha es limitada y debe interpretarse como una evaluacion de disponibilidad tecnica mas que de capacidades verificadas. Cualquier uso en produccion requeriria una validacion empirica previa por parte del equipo que lo adopte, dado que no existe documentacion oficial del autor sobre el proceso de entrenamiento, los datos utilizados ni el rendimiento esperado.
 
@@ -85,5 +85,5 @@ La comparativa evidencia la principal debilidad de este repositorio: frente a al
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SubconsciousDev/deepseek-v4.1-flash-1017-dspark
+- Repositorio Hugging Face: https://huggingface.co/SubconsciousDev/deepseek-v4.1-flash-1017-dspark
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo concreto.

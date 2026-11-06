@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`singhankiberg/project-multitask` es un repositorio de investigación publicado en HuggingFace que contiene un prototipo de modelo denominado "Mae", orientado a tareas multitarea. El autor es el usuario `singhankiberg` y el artefacto principal no es un modelo entrenado, sino un esqueleto de implementación: un script `run.py` con la definición de la arquitectura y un punto de entrada ejecutable, un `config.json` con los parámetros de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un `model.safetensors` que el propio autor describe explícitamente como "checkpoint de inicialización válido para pruebas de humo", no como un modelo entrenado.
+`singhankiberg/project-multitask` es un repositorio de investigación publicado en Hugging Face que contiene un prototipo de modelo denominado "Mae", orientado a tareas multitarea. El autor es el usuario `singhankiberg` y el artefacto principal no es un modelo entrenado, sino un esqueleto de implementación: un script `run.py` con la definición de la arquitectura y un punto de entrada ejecutable, un `config.json` con los parámetros de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un `model.safetensors` que el propio autor describe explícitamente como "checkpoint de inicialización válido para pruebas de humo", no como un modelo entrenado.
 
 La relevancia de este repositorio es, por tanto, limitada y de naturaleza experimental: sirve como punto de partida reproducible para quien quiera implementar o comparar una arquitectura tipo Mae con atención de ventana deslizante, fusión bilineal, activación ReLU y normalización por lotes. No hay resultados de benchmarks, no se declaran idiomas soportados y el número de descargas y likes es cero en el momento de la consulta. El tamaño del repositorio es de 0.0 GB y el recuento de parámetros reportado por los safetensors es de 33.088, un valor que no es coherente con la escala "xlarge" que declara la model card y que probablemente refleja un checkpoint de prueba de dimensiones mínimas.
 
@@ -74,5 +74,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/singhankiberg/project-multitask
+- Repositorio en Hugging Face: https://huggingface.co/singhankiberg/project-multitask
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

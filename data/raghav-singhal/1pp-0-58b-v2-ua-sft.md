@@ -27,7 +27,7 @@ La arquitectura es un decoder transformer denso de estilo Llama con 24 capas, di
 
 El preentrenamiento se realizó sobre los primeros 11.106 pasos del flujo alineado por pasos de 1PP (23,29B posiciones de token), que son los primeros pasos del recorrido de 31.777 pasos del estudio principal en el mismo orden. El batch global fue de 512 × 4.096 tokens. Se usó el optimizador Muon (shape scaling, LR matricial 0,005) junto con Adam para el resto de parámetros (LR 3e-3 para embeddings y capa de salida, 3e-3 para normas), warmup de 699 pasos, fase constante y decaimiento lineal en los últimos 1.110 pasos hasta 1/100, weight decay 0,1, desviación estándar de inicialización 0,0119 y precisión bf16. La pérdida de validación final sobre 2.433 documentos retenidos fue de 1,666 para texto de asistente, 1,545 para texto de usuario y 3,454 para texto de documento.
 
-El ajuste supervisado (SFT) consistió en una época sobre una mezcla de 400.000 conversaciones compuesta por `jkminder/model-raising-pb-100k-3c-mt-sft` (98,5k multiturno con pista citada de constitución), `dlab-spp/sp-sft-normal-300k` sin los prompts duplicados en el primer conjunto (271,6k) y una muestra de 30.000 conversaciones de `dlab-spp/sp-sft-safety-180k`. Se empleó la misma pila que en preentrenamiento (Megatron, Muon, ChatML sin turno de sistema, pérdida solo en turnos de asistente), con LR matricial 0,002, semilla 28, batch global de 128 × 4.096 y decaimiento lineal a 1/10 tras un warmup del 3%. La pérdida de SFT sobre 1.998 conversaciones retenidas fue de 2,079, y los pesos de HuggingFace se verificaron contra el checkpoint de Megatron con una diferencia absoluta de 0,0000 en los segmentos [3, 4] del conjunto de validación.
+El ajuste supervisado (SFT) consistió en una época sobre una mezcla de 400.000 conversaciones compuesta por `jkminder/model-raising-pb-100k-3c-mt-sft` (98,5k multiturno con pista citada de constitución), `dlab-spp/sp-sft-normal-300k` sin los prompts duplicados en el primer conjunto (271,6k) y una muestra de 30.000 conversaciones de `dlab-spp/sp-sft-safety-180k`. Se empleó la misma pila que en preentrenamiento (Megatron, Muon, ChatML sin turno de sistema, pérdida solo en turnos de asistente), con LR matricial 0,002, semilla 28, batch global de 128 × 4.096 y decaimiento lineal a 1/10 tras un warmup del 3%. La pérdida de SFT sobre 1.998 conversaciones retenidas fue de 2,079, y los pesos de Hugging Face se verificaron contra el checkpoint de Megatron con una diferencia absoluta de 0,0000 en los segmentos [3, 4] del conjunto de validación.
 
 ## Capacidades
 
@@ -100,7 +100,7 @@ La comparación directa es limitada porque 1pp-0.58b-v2-ua-sft es un artefacto d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-sft
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (wandb, preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de SFT (wandb): https://wandb.ai/raghav_singhal/1pp-sft

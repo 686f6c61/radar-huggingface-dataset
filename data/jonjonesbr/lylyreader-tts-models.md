@@ -16,7 +16,7 @@ Kokoro-82M es un modelo de TTS de 82 millones de parámetros, de código abierto
 | Longitud de contexto | no disponible (TTS, no procesa contexto largo; entrada de texto arbitraria) |
 | Tipos de cuantizacion | int8 (model.int8.onnx) |
 | Idiomas soportados | ingles (en), chino (zh), portugues de Brasil (pt-BR) |
-| Licencia | Apache-2.0 (segun la model card; en HuggingFace figura como "no disponible") |
+| Licencia | Apache-2.0 (segun la model card; en Hugging Face figura como "no disponible") |
 | Formato de pesos | ONNX (sherpa-onnx), empaquetado en tarball (tar.bz2) |
 
 ## Arquitectura y entrenamiento
@@ -77,7 +77,7 @@ La comparacion es orientativa; no se han verificado los datos de MMS-TTS y VITS 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JonJonesBR/lylyreader-tts-models
+- Repositorio Hugging Face: https://huggingface.co/JonJonesBR/lylyreader-tts-models
 - Repositorio de la aplicacion LylyReader (Android): https://github.com/JonJonesBR/LylyReader-Android
 - Fuente original del bundle (k2-fsa/sherpa-onnx): https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/kokoro-int8-multi-lang-v1_0.tar.bz2
-- Directorio de modelos TTS en HuggingFace: https://huggingface.co/models?pipeline_tag=text-to-speech
+- Directorio de modelos TTS en Hugging Face: https://huggingface.co/models?pipeline_tag=text-to-speech

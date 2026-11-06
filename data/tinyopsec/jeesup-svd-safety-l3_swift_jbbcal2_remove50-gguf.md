@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene las cuantizaciones GGUF del modelo `Jeesup/svd-safety-l3_swift_jbbcal2_remove50`, un checkpoint comprimido mediante Swift-SVD a partir de Llama-3-8B-Instruct, publicado por el usuario tinyopsec en HuggingFace. El modelo base conserva aproximadamente el 50 % de los parámetros densos del original (unos 8.030 millones de parámetros frente a los ~8.030 millones declarados en safetensors, resultado de la compresión SVD con recuperación posterior vía LoRA), y su cuantización a GGUF permite ejecutarlo en CPU y en GPUs de consumo mediante llama.cpp y runtimes compatibles.
+Este repositorio contiene las cuantizaciones GGUF del modelo `Jeesup/svd-safety-l3_swift_jbbcal2_remove50`, un checkpoint comprimido mediante Swift-SVD a partir de Llama-3-8B-Instruct, publicado por el usuario tinyopsec en Hugging Face. El modelo base conserva aproximadamente el 50 % de los parámetros densos del original (unos 8.030 millones de parámetros frente a los ~8.030 millones declarados en safetensors, resultado de la compresión SVD con recuperación posterior vía LoRA), y su cuantización a GGUF permite ejecutarlo en CPU y en GPUs de consumo mediante llama.cpp y runtimes compatibles.
 
 No se trata de un asistente de propósito general: según la model card del autor, es un artefacto de investigación procedente de un estudio sobre compresión SVD y sus compromisos con la seguridad (safety trade-offs). Varias variantes de la rejilla experimental están deliberadamente degradadas en cuanto a alineación y seguridad, por lo que el propio autor recomienda evaluarlo antes de cualquier uso. Su relevancia actual es principalmente académica: sirve para estudiar cómo la compresión por descomposición en valores singulares afecta al comportamiento de seguridad de los modelos derivados de Llama 3.
 
@@ -77,6 +77,6 @@ La comparación más relevante es con el modelo base Llama-3-8B-Instruct: este d
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/tinyopsec/Jeesup-svd-safety-l3_swift_jbbcal2_remove50-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/tinyopsec/Jeesup-svd-safety-l3_swift_jbbcal2_remove50-GGUF
 - Modelo base: https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbcal2_remove50
 - Otros enlaces (paper, blog, demo): no disponibles

@@ -72,12 +72,12 @@ Los tres repositorios son complementarios y cubren diferentes partes del modelo 
 - Riesgo de alucinación: no aplica directamente, ya que no es un modelo generativo; sin embargo, los features aprendidos pueden no corresponder a conceptos biológicos reales si el entrenamiento no fue suficientemente diverso.
 - Limitaciones de contexto o idioma: no aplica, al no ser un modelo de lenguaje.
 - Restricciones de licencia: la licencia no está especificada en el repositorio, lo que genera incertidumbre sobre su uso comercial. Se recomienda contactar al autor antes de usar en producción.
-- Advertencia de caché: los nombres de archivo son idénticos entre los repositorios de recycle 0 y recycle 1, por lo que si se descargan ambos, deben almacenarse en directorios separados para evitar que la caché de HuggingFace sirva pesos incorrectos.
+- Advertencia de caché: los nombres de archivo son idénticos entre los repositorios de recycle 0 y recycle 1, por lo que si se descargan ambos, deben almacenarse en directorios separados para evitar que la caché de Hugging Face sirva pesos incorrectos.
 - Naturaleza anónima: el repositorio se publica para revisión a ciegas, por lo que no hay información de contacto ni garantías de mantenimiento futuro.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anonboltzinterp/Boltz1-SAEs-L2-rec0
+- Repositorio Hugging Face: https://huggingface.co/anonboltzinterp/Boltz1-SAEs-L2-rec0
 - Repositorio companion recycle 1: https://huggingface.co/anonboltzinterp/Boltz1-SAEs-L2-rec1
 - Repositorio companion diffusion: https://huggingface.co/anonboltzinterp/Boltz1-SAEs-L2-Diffusion
 - Repositorio espejo (evolve-away): https://huggingface.co/evolve-away/Boltz1-SAEs-L2-rec0

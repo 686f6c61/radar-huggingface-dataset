@@ -99,7 +99,7 @@ La comparación directa con el modelo base es la más informativa: K-Oss 8 Mini 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/K-Ai-Official/K-Oss-8-Mini-Instruct-8B
+- Repositorio Hugging Face: https://huggingface.co/K-Ai-Official/K-Oss-8-Mini-Instruct-8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL (SFTTrainer): no disponible enlace directo en la información proporcionada

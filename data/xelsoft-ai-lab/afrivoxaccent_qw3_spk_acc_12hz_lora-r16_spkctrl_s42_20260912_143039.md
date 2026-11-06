@@ -80,8 +80,8 @@ Los datos de rendimiento no están disponibles para ninguna de las alternativas 
 
 | Modelo | Parametros | Contexto / soporte | Idioma wolof | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AfriVoxAccent_QW3_spk_acc_12hz_lora-r16 (este modelo) | 0,6B base + LoRA r16 | no disponible | Sí, con 12 etiquetas de acento declaradas | no disponible | Adaptador PEFT en HuggingFace; 0 descargas |
-| Qwen/Qwen3-TTS-12Hz-0.6B-Base | 0,6B | no disponible | No declarado específicamente | Según el repositorio de Qwen (verificar) | Modelo base público en HuggingFace |
+| AfriVoxAccent_QW3_spk_acc_12hz_lora-r16 (este modelo) | 0,6B base + LoRA r16 | no disponible | Sí, con 12 etiquetas de acento declaradas | no disponible | Adaptador PEFT en Hugging Face; 0 descargas |
+| Qwen/Qwen3-TTS-12Hz-0.6B-Base | 0,6B | no disponible | No declarado específicamente | Según el repositorio de Qwen (verificar) | Modelo base público en Hugging Face |
 | Coqui XTTS-v2 | ~0,47B | Multilingüe (17 idiomas declarados) | No incluido entre los idiomas oficiales | CPML (uso comercial restringido; verificar) | Pesos públicos, proyecto Coqui discontinuado |
 | Meta MMS-TTS (familia VITS) | ~36M por idioma | Un modelo por idioma, entrenamiento no supervisado | Existe cobertura de lenguas de bajos recursos; verificar el modelo concreto de wolof | CC-BY-NC 4.0 en la familia MMS (verificar) | Pesos públicos por idioma |
 
@@ -104,7 +104,7 @@ Frente a XTTS-v2, la ventaja de este adaptador es la cobertura declarada del wol
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_12hz_lora-r16_SPKCTRL_s42_20260912_143039
+- Ficha del modelo en Hugging Face: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_12hz_lora-r16_SPKCTRL_s42_20260912_143039
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - Librería PEFT: https://github.com/huggingface/peft
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes (los resultados obtenidos corresponden a la documentación de la función QUERY de Google Sheets y a hilos de foro sobre traducción, sin relación con el modelo). No se dispone de paper, blog técnico, repositorio de código ni demo asociados al adaptador.

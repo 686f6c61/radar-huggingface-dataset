@@ -88,8 +88,8 @@ No se han publicado resultados en benchmarks de terceros (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Target (CheckBench) | False-edit | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AIWriter-V1-4B-Check-Preview | 4B | 4.096 | 50,53 | 19,92% | AIWriter Model License 1.0 (comercial sujeta a licencia) | GGUF en HuggingFace y ModelScope |
-| Qwen3-4B (modelo base) | 4B | no disponible | no disponible | no disponible | Apache-2.0 | Pesos abiertos en HuggingFace |
+| AIWriter-V1-4B-Check-Preview | 4B | 4.096 | 50,53 | 19,92% | AIWriter Model License 1.0 (comercial sujeta a licencia) | GGUF en Hugging Face y ModelScope |
+| Qwen3-4B (modelo base) | 4B | no disponible | no disponible | no disponible | Apache-2.0 | Pesos abiertos en Hugging Face |
 | DeepSeek-V4.1-Flash | no disponible | no disponible | 59,34 | 45,3% | no disponible | no disponible |
 | GLM-5.2 | no disponible | no disponible | 56,99 | 50,4% | no disponible | no disponible |
 | qwen3.8-flash | no disponible | no disponible | 55,83 | 43,4% | no disponible | no disponible |
@@ -113,7 +113,7 @@ El modelo base Qwen3-4B se incluye como referencia de linaje, pero no es un comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/42ailab/AIWriter-V1-4B-Check-Preview
+- Modelo en Hugging Face: https://huggingface.co/42ailab/AIWriter-V1-4B-Check-Preview
 - Modelo en ModelScope: https://modelscope.cn/models/42ailab/AIWriter-V1-4B-Check-Preview
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Licencia del modelo: https://huggingface.co/42ailab/AIWriter-V1-4B-Check-Preview/blob/main/LICENSE

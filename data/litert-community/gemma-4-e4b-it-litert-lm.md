@@ -6,7 +6,7 @@ Gemma 4 E4B es un modelo de lenguaje de Google derivado de la misma investigaci�
 
 LiteRT-LM es una capa de orquestación construida sobre LiteRT, el runtime multiplataforma de Google que proporciona aceleración por hardware mediante XNNPack para CPU y ML Drift para GPU. Sobre esa base, LiteRT-LM añade bibliotecas y APIs específicas de GenAI: gestión de KV-cache, plantillas de prompt y function calling. Es el mismo stack que alimenta la aplicación de demostración Google AI Edge Gallery.
 
-El modelo es relevante ahora porque lleva capacidades multimodales (texto, visión y audio) a hardware de consumo y dispositivos móviles con un peso total de fichero de 3,66 GB, incluyendo 2,24 GB de pesos del decodificador de texto y 0,67 GB de embeddings. La licencia Apache 2.0 facilita su integración comercial, y sus 445.313 descargas en HuggingFace reflejan un interés notable en despliegues edge.
+El modelo es relevante ahora porque lleva capacidades multimodales (texto, visión y audio) a hardware de consumo y dispositivos móviles con un peso total de fichero de 3,66 GB, incluyendo 2,24 GB de pesos del decodificador de texto y 0,67 GB de embeddings. La licencia Apache 2.0 facilita su integración comercial, y sus 445.313 descargas en Hugging Face reflejan un interés notable en despliegues edge.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ El runtime se apoya en XNNPack para aceleración de CPU (con 4 hilos en las prue
 - Transcripción y comprensión de audio local: el módulo de audio posibilita tareas de voz a texto o análisis de audio sin salir del dispositivo.
 - Automatización de flujos con function calling: LiteRT-LM incluye soporte nativo de tool calling, lo que permite al modelo invocar APIs locales o funciones del sistema en agentes embebidos.
 - Aplicaciones IoT con requisitos de privacidad: el tamaño contenido (3,66 GB de fichero, con embeddings mapeados en memoria) y la aceleración XNNPack/ML Drift permiten desplegar IA generativa en hardware edge.
-- Demos y prototipado web: existe un Space de HuggingFace (`tylermullen/Gemma4`) que permite probar el modelo en el navegador, útil para validar casos de uso antes de integrar en producción.
+- Demos y prototipado web: existe un Space de Hugging Face (`tylermullen/Gemma4`) que permite probar el modelo en el navegador, útil para validar casos de uso antes de integrar en producción.
 - Chat multi-turno con contexto largo: con hasta 32k tokens de contexto, adecuado para conversaciones prolongadas o análisis de documentos extensos en dispositivo.
 
 ## Benchmarks y rendimiento
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 - Los módulos de visión y audio se cargan bajo demanda, reduciendo el consumo de memoria cuando no se usan.
 - Aceleración en CPU mediante XNNPack (probado con 4 hilos) y en GPU mediante ML Drift.
 - Cabe en dispositivos móviles de gama alta y en hardware de escritorio; el tamaño de 3,66 GB es compatible con muchos smartphones y placas edge actuales.
-- Opciones de despliegue: LiteRT-LM (CLI para escritorio e IoT), Google AI Edge Gallery (Android e iOS), Space de HuggingFace para web, y las APIs de LiteRT-LM para integración en producto.
+- Opciones de despliegue: LiteRT-LM (CLI para escritorio e IoT), Google AI Edge Gallery (Android e iOS), Space de Hugging Face para web, y las APIs de LiteRT-LM para integración en producto.
 - VRAM/RAM exacta, GPU recomendadas, latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma 4 E4B (litert-lm) | no disponible | 32k | apache-2.0 | `.litertlm` | HuggingFace |
+| Gemma 4 E4B (litert-lm) | no disponible | 32k | apache-2.0 | `.litertlm` | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,11 +86,11 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- [HuggingFace: litert-community/gemma-4-E4B-it-litert-lm](https://huggingface.co/litert-community/gemma-4-E4B-it-litert-lm)
+- [Hugging Face: litert-community/gemma-4-E4B-it-litert-lm](https://huggingface.co/litert-community/gemma-4-E4B-it-litert-lm)
 - [Modelo base: google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it)
 - [Documentación LiteRT-LM](https://ai.google.dev/edge/litert-lm/overview)
 - [CLI LiteRT-LM (escritorio e IoT)](https://ai.google.dev/edge/litert-lm/cli)
 - [Repositorio de ejemplos litert-samples](https://github.com/google-ai-edge/litert-samples)
 - [Google AI Edge Gallery en Google Play](https://play.google.com/store/apps/details?id=com.google.ai.edge.gallery&pli=1)
 - [Google AI Edge Gallery en App Store](https://apps.apple.com/us/app/google-ai-edge-gallery/id6749645337)
-- [Space de demostración en HuggingFace](https://huggingface.co/spaces/tylermullen/Gemma4)
+- [Space de demostración en Hugging Face](https://huggingface.co/spaces/tylermullen/Gemma4)

@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base en 
 - **Sesgos**: al derivar de un modelo base no documentado y tras modificar pesos, los sesgos del original pueden verse amplificados o alterados de forma impredecible. No hay evaluaciones de sesgo.
 - **Alucinacion**: sin benchmarks ni model card, no hay ninguna medida de fiabilidad factual; cabe esperar tasas de alucinacion similares o peores que el modelo base.
 - **Licencia**: se hereda la `qwen-community-license-1.0`, que impone condiciones de uso (habitualmente restricciones para ciertos usos y obligaciones de atribucion). La modificacion de pesos no exime de cumplirla. Verificar el texto completo antes de cualquier uso comercial.
-- **Acceso restringido (gated)**: es necesario aceptar condiciones en HuggingFace para descargar el modelo.
+- **Acceso restringido (gated)**: es necesario aceptar condiciones en Hugging Face para descargar el modelo.
 - **Sin documentacion tecnica**: no hay model card, paper ni detalles de entrenamiento. No se puede auditar el origen de los pesos ni verificar que el modelo no haya sido manipulado maliciosamente.
 - **Sin traccion**: 0 descargas y 0 "likes" en la fecha de la ficha; creado el mismo dia de su actualizacion. No hay comunidad, soporte ni casos de uso reportados.
 - **Riesgo de cuantizacion**: la mezcla nvfp4/fp8 puede degradar la coherencia y el razonamiento respecto a los pesos originales; no se ha publicado ninguna evaluacion de esta perdida.
@@ -93,6 +93,6 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/myllmbox/Qwen3.8-Flash-Next-hibrid48-uncensored
+- Repositorio Hugging Face: https://huggingface.co/myllmbox/Qwen3.8-Flash-Next-hibrid48-uncensored
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo: los unicos enlaces recuperados corresponden a paginas genericas de ChatGPT (openai.com/index/chatgpt/, chatgpt.com) y no guardan relacion con el modelo. No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados.

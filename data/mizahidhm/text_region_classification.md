@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mizahidhm/Text_region_classification` es un artefacto alojado en HuggingFace cuyo contenido no esta documentado: no incluye model card, no declara licencia, no especifica idiomas ni pipeline de inferencia, y su tamano de repositorio figura como 0,0 GB, lo que sugiere que no se han subido pesos ni ficheros de configuracion relevantes. El unico metadato tecnico disponible es la etiqueta de libreria `keras` y el propio identificador del repositorio, que apunta a una tarea de clasificacion de regiones de texto. El autor es el usuario `mizahidhm` y las metricas publicas de adopcion son marginales: 8 descargas y 0 likes.
+El repositorio `mizahidhm/Text_region_classification` es un artefacto alojado en Hugging Face cuyo contenido no esta documentado: no incluye model card, no declara licencia, no especifica idiomas ni pipeline de inferencia, y su tamano de repositorio figura como 0,0 GB, lo que sugiere que no se han subido pesos ni ficheros de configuracion relevantes. El unico metadato tecnico disponible es la etiqueta de libreria `keras` y el propio identificador del repositorio, que apunta a una tarea de clasificacion de regiones de texto. El autor es el usuario `mizahidhm` y las metricas publicas de adopcion son marginales: 8 descargas y 0 likes.
 
 Por el nombre y la libreria declarada, cabe inferir que se trata de un clasificador de regiones de texto (probablemente entrenado con Keras/TensorFlow sobre recortes o mapas de caracteristicas de imagen), pero esta inferencia no esta respaldada por ningun documento, fichero de pesos ni evaluacion publicada en el repositorio. Cualquier afirmacion sobre arquitectura, numero de parametros o rendimiento seria especulativa y, por tanto, no se incluye en esta ficha.
 
@@ -95,10 +95,10 @@ No disponible. Con los datos accesibles no es posible identificar modelos compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mizahidhm/Text_region_classification
+- Repositorio en Hugging Face: https://huggingface.co/mizahidhm/Text_region_classification
 - Paper TextRegion (arXiv, posible homonimia no confirmada): https://arxiv.org/abs/2505.23769
 - Version HTML del paper TextRegion: https://arxiv.org/html/2505.23769v2
 - Repositorio GitHub de TextRegion (posible homonimia no confirmada): https://github.com/avaxiao/TextRegion
 - README del repositorio TextRegion: https://github.com/avaxiao/TextRegion/blob/main/README.md
-- Demo Text Region Detection en HuggingFace Spaces (no relacionada de forma confirmada): https://huggingface.co/spaces/Dsiar/Text_Region_Detection
+- Demo Text Region Detection en Hugging Face Spaces (no relacionada de forma confirmada): https://huggingface.co/spaces/Dsiar/Text_Region_Detection
 - Paper, blog o repositorio del autor mizahidhm: no disponible

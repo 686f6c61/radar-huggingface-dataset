@@ -23,7 +23,7 @@ Es relevante ahora dentro del nicho de la robótica de humanoides porque muestra
 | Entrada / salida | `obs` (1, 124) -> `actions` (1, 23) |
 | Frecuencia de control | 50 Hz (periodo de 20 ms por fotograma) |
 | Checkpoint | `model_3300.pt` |
-| Tamano del repo | 0.0 GB (segun metadatos de HuggingFace) |
+| Tamano del repo | 0.0 GB (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -95,7 +95,7 @@ No se dispone de informacion sobre modelos comparables en la informacion proporc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dene33/asimov1-forward-jump
+- Hugging Face: https://huggingface.co/dene33/asimov1-forward-jump
 - Repositorio de entrenamiento y evaluacion (Cyclotron, rama motion-tracking): https://github.com/Dene33/cyclotron/tree/motion-tracking
 - SOMA Retargeter: https://github.com/Dene33/soma-retargeter
 - CMU Graphics Lab Motion Capture Database: http://mocap.cs.cmu.edu

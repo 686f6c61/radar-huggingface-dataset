@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Lam-AI-Qwen-2.5-3B-Merged es un ajuste fino (finetune) del modelo Qwen2.5-3B-Instruct en su variante cuantizada a 4 bits publicada por Unsloth, desarrollado por el usuario fozzi66 y alojado en HuggingFace. Se trata de un modelo de generación de texto de 3.085.938.688 parámetros (aproximadamente 3,09 mil millones) basado en la arquitectura Qwen2, distribuido bajo licencia Apache 2.0 y con pesos en formato safetensors.
+Lam-AI-Qwen-2.5-3B-Merged es un ajuste fino (finetune) del modelo Qwen2.5-3B-Instruct en su variante cuantizada a 4 bits publicada por Unsloth, desarrollado por el usuario fozzi66 y alojado en Hugging Face. Se trata de un modelo de generación de texto de 3.085.938.688 parámetros (aproximadamente 3,09 mil millones) basado en la arquitectura Qwen2, distribuido bajo licencia Apache 2.0 y con pesos en formato safetensors.
 
-El modelo parte de `unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit`, un checkpoint de Qwen2.5-3B-Instruct cuantizado en 4 bits con bitsandbytes y optimizado para entrenamiento rápido con la librería Unsloth. Sobre esa base, el autor ha aplicado un proceso de ajuste fino empleando Unsloth y la librería TRL de HuggingFace, según indica la propia model card.
+El modelo parte de `unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit`, un checkpoint de Qwen2.5-3B-Instruct cuantizado en 4 bits con bitsandbytes y optimizado para entrenamiento rápido con la librería Unsloth. Sobre esa base, el autor ha aplicado un proceso de ajuste fino empleando Unsloth y la librería TRL de Hugging Face, según indica la propia model card.
 
 La relevancia de esta ficha es limitada: se trata de un modelo derivado con escasa documentación, cero descargas y cero likes en el momento de la consulta, sin datos publicados sobre el dataset de ajuste fino, hiperparámetros, benchmarks ni casos de uso previstos. Resulta útil como ejemplo de flujo de trabajo de ajuste fino ligero con Unsloth sobre un modelo pequeño, pero no como una alternativa consolidada frente a los modelos base de Qwen u otros proveedores.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Lam-AI-Qwen-2.5-3B-Merged | ~3,09 B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Finetune de Qwen2.5-3B-Instruct con Unsloth |
-| Qwen2.5-3B-Instruct | ~3,09 B | 32.768 tokens (según documentación de Qwen) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados |
-| Llama-3.2-3B-Instruct | ~3,2 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace | Alternativa de Meta con contexto largo y licencia restrictiva |
-| Phi-3.5-mini-instruct | ~3,8 B | 128.000 tokens | MIT | HuggingFace | Modelo de Microsoft con buen rendimiento en razonamiento |
+| Lam-AI-Qwen-2.5-3B-Merged | ~3,09 B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Finetune de Qwen2.5-3B-Instruct con Unsloth |
+| Qwen2.5-3B-Instruct | ~3,09 B | 32.768 tokens (según documentación de Qwen) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados |
+| Llama-3.2-3B-Instruct | ~3,2 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face | Alternativa de Meta con contexto largo y licencia restrictiva |
+| Phi-3.5-mini-instruct | ~3,8 B | 128.000 tokens | MIT | Hugging Face | Modelo de Microsoft con buen rendimiento en razonamiento |
 
 La comparativa se basa en características públicas de los modelos alternativos; no se dispone de datos de rendimiento del modelo de fozzi66 para comparar resultados de benchmarks.
 
@@ -84,8 +84,8 @@ La comparativa se basa en características públicas de los modelos alternativos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fozzi66/Lam-AI-Qwen-2.5-3B-Merged
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit
+- Hugging Face: https://huggingface.co/fozzi66/Lam-AI-Qwen-2.5-3B-Merged
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentación de Qwen2.5: no disponible en la información proporcionada (referencia habitual: https://qwenlm.github.io/blog/qwen2.5/)

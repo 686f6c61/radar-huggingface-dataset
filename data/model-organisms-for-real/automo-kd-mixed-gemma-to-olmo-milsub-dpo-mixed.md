@@ -62,7 +62,7 @@ La QER se midió con un juez LLM (`google/gemini-3-flash-preview`) sobre 435 pro
 - **VRAM estimada**: al ser un modelo de 1B parámetros, la inferencia en FP16 requiere aproximadamente 2-3 GB de VRAM. Con cuantización a 8 bits, ~1.5 GB; a 4 bits, ~0.8 GB.
 - **GPU recomendadas**: cualquier GPU consumer con al menos 4 GB de VRAM (GTX 1650, RTX 3060, etc.) es suficiente. Una RTX 4090 o A100 permitiría ejecutar múltiples instancias o usar batch grande.
 - **Compatibilidad con consumer GPU**: sí, cabe en cualquier GPU moderna de consumo.
-- **Opciones de despliegue**: al ser un modelo transformers estándar, se puede usar con vLLM, llama.cpp (si se convierte a GGUF), Ollama, o directamente con la API de transformers de HuggingFace.
+- **Opciones de despliegue**: al ser un modelo transformers estándar, se puede usar con vLLM, llama.cpp (si se convierte a GGUF), Ollama, o directamente con la API de transformers de Hugging Face.
 - **Latencia y throughput**: no se han publicado datos específicos, pero para un modelo de 1B en una GPU moderna se espera una latencia de decodificación de ~10-20 ms/token y un throughput de varios cientos de tokens/segundo.
 
 ## Comparativa con modelos similares
@@ -88,9 +88,9 @@ Estos modelos forman parte de la misma campaña de "model organisms" y comparten
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-milsub-dpo-mixed)
-- [HuggingFace - variante idpo](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-idpo)
-- [HuggingFace - variante fd-mixed](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-fd-mixed)
+- [Hugging Face - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-milsub-dpo-mixed)
+- [Hugging Face - variante idpo](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-idpo)
+- [Hugging Face - variante fd-mixed](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-fd-mixed)
 - [GitHub - model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [Paper - The Model Organism Lottery](https://arxiv.org/html/2607.01033)
 - [Modelo base - OLMo-2-0425-1B-DPO](https://huggingface.co/allenai/OLMo-2-0425-1B-DPO)

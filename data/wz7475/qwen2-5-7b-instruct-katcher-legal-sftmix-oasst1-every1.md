@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every1` es un ajuste fino (fine-tuning) publicado en HuggingFace por el usuario `wz7475`. Segun la nomenclatura del identificador, se trata de un derivado de Qwen2.5-7B-Instruct orientado al dominio juridico, entrenado mediante una mezcla de datos de SFT (supervised fine-tuning) que incluye el conjunto OASST1. Sin embargo, la model card publicada es la plantilla automatica de HuggingFace sin completar, por lo que no confirma ningun detalle tecnico.
+El modelo identificado como `wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every1` es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario `wz7475`. Segun la nomenclatura del identificador, se trata de un derivado de Qwen2.5-7B-Instruct orientado al dominio juridico, entrenado mediante una mezcla de datos de SFT (supervised fine-tuning) que incluye el conjunto OASST1. Sin embargo, la model card publicada es la plantilla automatica de Hugging Face sin completar, por lo que no confirma ningun detalle tecnico.
 
 La relevancia de este tipo de publicaciones reside en el creciente interes por modelos especializados en derecho que puedan ejecutarse en infraestructura asequible. Un modelo de la clase 7B ajustado para tareas legales permite desplegar asistentes de documentacion juridica, resumen de contratos o clasificacion de textos normativos sin depender de APIs propietarias.
 
@@ -68,10 +68,10 @@ No disponible. No se ha publicado informacion de rendimiento que permita una com
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every1 | 7B (segun nombre) | no disponible | no disponible | HuggingFace |
-| Qwen2.5-7B-Instruct (base) | 7,6B | 32.768 tokens (hasta 131.072 con RoPE scaling) | Apache 2.0 (segun su propia ficha) | HuggingFace |
-| Llama 3.1 8B Instruct | 8B | 128.000 tokens | Llama 3.1 Community License | HuggingFace |
-| Mistral 7B Instruct | 7,3B | 32.000 tokens | Apache 2.0 | HuggingFace |
+| wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every1 | 7B (segun nombre) | no disponible | no disponible | Hugging Face |
+| Qwen2.5-7B-Instruct (base) | 7,6B | 32.768 tokens (hasta 131.072 con RoPE scaling) | Apache 2.0 (segun su propia ficha) | Hugging Face |
+| Llama 3.1 8B Instruct | 8B | 128.000 tokens | Llama 3.1 Community License | Hugging Face |
+| Mistral 7B Instruct | 7,3B | 32.000 tokens | Apache 2.0 | Hugging Face |
 
 Los datos de la base y de los modelos alternativos deben verificarse en sus fichas oficiales; no se dispone de resultados comparativos para este ajuste.
 
@@ -89,7 +89,7 @@ Los datos de la base y de los modelos alternativos deben verificarse en sus fich
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every1
+- Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every1
 - Referencia citada en los tags (arxiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de carbono mencionada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada. Los resultados de busqueda obtenidos no guardan relacion con el modelo y se han descartado por no ser fuentes validas.

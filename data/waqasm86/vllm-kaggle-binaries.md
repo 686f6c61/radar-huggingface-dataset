@@ -32,7 +32,7 @@ La validación se realizó en un notebook de Kaggle con dos Tesla T4 (SM75), Pyt
 - Tensor parallelism (TP=2) para distribuir un modelo entre dos GPUs, validado con Qwen2.5-3B en FP16.
 - Persistencia y recarga de estados sharded de modelos, útil para checkpointing y despliegue distribuido.
 - Soporte de continuous batching para aumentar el throughput en peticiones concurrentes.
-- Compatibilidad con el ecosistema de modelos de HuggingFace (cualquier modelo que vLLM soporte, incluyendo arquitecturas transformer, MoE, etc.).
+- Compatibilidad con el ecosistema de modelos de Hugging Face (cualquier modelo que vLLM soporte, incluyendo arquitecturas transformer, MoE, etc.).
 - Selección automática de backend de atención: en SM75 usa `TRITON_ATTN` al no estar disponible FlashAttention 2.
 
 ## Casos de uso
@@ -68,7 +68,7 @@ No aplica. Este repositorio no es un modelo de lenguaje, sino un binario de infe
 
 ## Limitaciones y advertencias
 
-- No es un modelo de IA: no contiene pesos ni puede generar texto por sí mismo; requiere un modelo de HuggingFace descargado por separado.
+- No es un modelo de IA: no contiene pesos ni puede generar texto por sí mismo; requiere un modelo de Hugging Face descargado por separado.
 - No es un binario oficial de vLLM: el autor declara explícitamente que no es un artefacto upstream y que no reclama propiedad sobre vLLM.
 - Compatibilidad limitada: solo validado en el entorno exacto de Kaggle (Python 3.12, PyTorch 2.10.0+cu128, CUDA 12.8, driver 580.159.04, dos T4). No se garantiza funcionamiento en otros sistemas.
 - FlashAttention 2 no disponible en SM75: vLLM usa `TRITON_ATTN`, lo que puede implicar menor rendimiento que en GPUs más modernas (A100, H100).
@@ -78,7 +78,7 @@ No aplica. Este repositorio no es un modelo de lenguaje, sino un binario de infe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/waqasm86/vllm-kaggle-binaries
+- Repositorio en Hugging Face: https://huggingface.co/waqasm86/vllm-kaggle-binaries
 - Perfil de GitHub del autor: https://github.com/waqasm86
 - Proyecto asociado `kaggle-vllm` (documentacion de instalacion): https://github.com/vllm-kaggle/vllm-kaggle-nvidia-dual-t4-gpus
 - Repositorio oficial de vLLM: https://github.com/vllm-project/vllm

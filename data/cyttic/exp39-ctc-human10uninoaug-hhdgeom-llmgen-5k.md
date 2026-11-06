@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-5k` es un checkpoint publicado por el usuario `cyttic` en HuggingFace. Por la nomenclatura del identificador (prefijo `ctc`, referencia a `human10`, `uninoaug`, `hhdgeom` y `llmgen-5k`) y por el tamano de pesos (87.279.756 parametros en safetensors), se trata con alta probabilidad de un modelo acustico para reconocimiento de voz (ASR) basado en CTC, no de un modelo de lenguaje generativo de gran escala, pese a que el identificador incluya el sufijo `llmgen`.
+El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-5k` es un checkpoint publicado por el usuario `cyttic` en Hugging Face. Por la nomenclatura del identificador (prefijo `ctc`, referencia a `human10`, `uninoaug`, `hhdgeom` y `llmgen-5k`) y por el tamano de pesos (87.279.756 parametros en safetensors), se trata con alta probabilidad de un modelo acustico para reconocimiento de voz (ASR) basado en CTC, no de un modelo de lenguaje generativo de gran escala, pese a que el identificador incluya el sufijo `llmgen`.
 
-La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: todos los campos de descripcion, entrenamiento, evaluacion y uso previsto estan marcados como `[More Information Needed]`. Esto implica que la informacion disponible sobre arquitectura concreta, datos de entrenamiento, idiomas y contexto es practicamente nula y debe tratarse como no disponible.
+La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: todos los campos de descripcion, entrenamiento, evaluacion y uso previsto estan marcados como `[More Information Needed]`. Esto implica que la informacion disponible sobre arquitectura concreta, datos de entrenamiento, idiomas y contexto es practicamente nula y debe tratarse como no disponible.
 
 El modelo es relevante unicamente como artefacto experimental de investigacion: tiene cero descargas y cero likes en el momento de la consulta, un tamano de repositorio de 0,3 GB y una licencia MIT permisiva. No debe considerarse un modelo listo para produccion sin una validacion exhaustiva por parte del usuario.
 
@@ -23,7 +23,7 @@ El modelo es relevante unicamente como artefacto experimental de investigacion: 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura en la model card ni en los metadatos de HuggingFace. El identificador sugiere un sistema CTC (`ctc`) entrenado sobre datos humanos (`human10`), sin aumento de datos (`uninoaug`, probablemente "uni-no-aug"), con caracteristicas geometricas (`hhdgeom`) y generacion sintetica via LLM (`llmgen-5k`, posiblemente 5.000 muestras generadas). Esta interpretacion es una hipotesis basada en la nomenclatura y no debe tomarse como dato confirmado.
+No se dispone de informacion sobre la arquitectura en la model card ni en los metadatos de Hugging Face. El identificador sugiere un sistema CTC (`ctc`) entrenado sobre datos humanos (`human10`), sin aumento de datos (`uninoaug`, probablemente "uni-no-aug"), con caracteristicas geometricas (`hhdgeom`) y generacion sintetica via LLM (`llmgen-5k`, posiblemente 5.000 muestras generadas). Esta interpretacion es una hipotesis basada en la nomenclatura y no debe tomarse como dato confirmado.
 
 Tampoco hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. El unico paper referenciado en los tags (`arxiv:1910.09700`) corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, incluido en la plantilla por defecto de la model card, no a un paper del modelo.
 
@@ -77,6 +77,6 @@ No disponible. No se ha identificado en la informacion proporcionada un conjunto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-5k
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-5k
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact

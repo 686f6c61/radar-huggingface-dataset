@@ -85,6 +85,6 @@ Otras alternativas como `Qwen2.5-0.5B-Instruct` o `Llama-3.2-1B` son modelos gen
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ivykopal/nlp-2026-hanoi-sft)
+- [Modelo en Hugging Face](https://huggingface.co/ivykopal/nlp-2026-hanoi-sft)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/ivykopal/nlp-2026-hanoi)
 - [Modelo base: SmolLM2-135M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct)

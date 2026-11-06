@@ -123,7 +123,7 @@ La diferencia principal frente a estas alternativas es la ventana declarada de 1
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-UltraOptimised-MTP-GGUF-1M
+- Repositorio Hugging Face: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-UltraOptimised-MTP-GGUF-1M
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
 - Dataset declarado: https://huggingface.co/datasets/Solstice-AI/Solace-1.0-Omni
 

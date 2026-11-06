@@ -63,7 +63,7 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no se puede co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/deeepakkk00/tds-carbon-card
+- Repositorio en Hugging Face: https://huggingface.co/deeepakkk00/tds-carbon-card
 - Repositorio similar (referencia): https://huggingface.co/23f3001222/tds-carbon-card
 - Artículo sobre model cards de carbono: https://www.thegreenwebfoundation.org/news/ai-model-cards-in-carbon-txt/
 - Explicación de AI model cards: https://aibuzz.blog/ai-model-cards-explained/

@@ -104,7 +104,7 @@ Frente a la build uniforme de 5 bits del mismo autor, esta versión mejora el to
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alexwengg/LFM3-1.7B-Base-MLX-mixed-5-6-8
+- Repositorio Hugging Face: https://huggingface.co/alexwengg/LFM3-1.7B-Base-MLX-mixed-5-6-8
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Build hermana de 5 bits: https://huggingface.co/alexwengg/LFM3-1.7B-Base-MLX-5bit
 - Build MLX oficial del instruct: https://huggingface.co/LiquidAI/LFM3-1.7B-MLX-5bit

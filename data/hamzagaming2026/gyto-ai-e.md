@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GYTO-AI-E es un modelo de lenguaje de 3.397.103.616 parámetros (≈3,4 B) publicado en HuggingFace por el usuario `hamzagaming2026`. No es un entrenamiento desde cero ni un fine-tuning: es el resultado de una fusión de pesos (*merge*) de dos modelos instruct ya existentes de la familia Qwen2.5 mediante la técnica de interpolación lineal implementada por mergekit. Los dos progenitores son Qwen2.5-Coder-3B-Instruct, al que se le asigna un peso de 0,6, y Qwen2.5-3B-Instruct, con un peso de 0,4.
+GYTO-AI-E es un modelo de lenguaje de 3.397.103.616 parámetros (≈3,4 B) publicado en Hugging Face por el usuario `hamzagaming2026`. No es un entrenamiento desde cero ni un fine-tuning: es el resultado de una fusión de pesos (*merge*) de dos modelos instruct ya existentes de la familia Qwen2.5 mediante la técnica de interpolación lineal implementada por mergekit. Los dos progenitores son Qwen2.5-Coder-3B-Instruct, al que se le asigna un peso de 0,6, y Qwen2.5-3B-Instruct, con un peso de 0,4.
 
 El objetivo declarado por el autor, según los comentarios en árabe incluidos en la configuración YAML de la model card, es combinar la capacidad de código y razonamiento lógico del modelo Coder con la estabilidad conversacional y el multilingüismo del modelo generalista. La fusión se realizó en precisión bfloat16 y el repositorio ocupa 6,8 GB. El modelo conserva la arquitectura, el tokenizador y la ventana de contexto de los Qwen2.5-3B originales, por lo que todo lo que cambia es la distribución de pesos.
 
@@ -60,17 +60,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada en cuantización de 4 bits (GGUF Q4_K_M o AWQ): aproximadamente 2-2,5 GB de pesos, cifra no verificada para este repositorio concreto porque no publica versiones cuantizadas.
 - GPU recomendadas: una RTX 3060 de 12 GB, RTX 4070, RTX 4090 o cualquier GPU con 8 GB o más puede ejecutar el modelo en bfloat16 sin cuantizar; para despliegue en servidor, A100 o H100 están sobredimensionadas para 3,4 B de parámetros.
 - Cabe en GPU de consumo: sí, en cualquier tarjeta con 8 GB o más de VRAM en bfloat16, y en tarjetas de 4-6 GB si se cuantiza a 4 bits. También es viable en CPU con llama.cpp, con velocidades del orden de decenas de tokens por segundo en procesadores modernos.
-- Opciones de despliegue: transformers (librería declarada en el repositorio), text-generation-inference (etiqueta `text-generation-inference` presente), vLLM, llama.cpp y Ollama tras convertir los pesos a GGUF. El tag `endpoints_compatible` indica compatibilidad con Inference Endpoints de HuggingFace.
+- Opciones de despliegue: transformers (librería declarada en el repositorio), text-generation-inference (etiqueta `text-generation-inference` presente), vLLM, llama.cpp y Ollama tras convertir los pesos a GGUF. El tag `endpoints_compatible` indica compatibilidad con Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. No se ha publicado ninguna medición, y el modelo no tiene descargas registradas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| GYTO-AI-E | 3,4 B | No documentado (32.768 según base) | No disponible en el repositorio | HuggingFace, 0 descargas | Fusión lineal 60/40 sin evaluar |
-| Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens (128.000 con YaRN) | Apache-2.0 | HuggingFace, ampliamente desplegado | Modelo base generalista, con evaluación publicada |
-| Qwen2.5-Coder-3B-Instruct | 3,09 B | 32.768 tokens | Apache-2.0 | HuggingFace, ampliamente desplegado | Modelo base especializado en código |
-| Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, con restricciones de uso | Alternativa de tamaño similar con contexto nativo mayor |
+| GYTO-AI-E | 3,4 B | No documentado (32.768 según base) | No disponible en el repositorio | Hugging Face, 0 descargas | Fusión lineal 60/40 sin evaluar |
+| Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens (128.000 con YaRN) | Apache-2.0 | Hugging Face, ampliamente desplegado | Modelo base generalista, con evaluación publicada |
+| Qwen2.5-Coder-3B-Instruct | 3,09 B | 32.768 tokens | Apache-2.0 | Hugging Face, ampliamente desplegado | Modelo base especializado en código |
+| Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, con restricciones de uso | Alternativa de tamaño similar con contexto nativo mayor |
 
 Los datos de contexto y licencia de los tres modelos de comparación proceden de su documentación pública, no de la información proporcionada sobre GYTO-AI-E. No se dispone de ninguna comparación de rendimiento entre ellos y el modelo fusionado.
 
@@ -88,7 +88,7 @@ Los datos de contexto y licencia de los tres modelos de comparación proceden de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hamzagaming2026/GYTO-AI-E
+- Modelo en Hugging Face: https://huggingface.co/hamzagaming2026/GYTO-AI-E
 - Modelo base Qwen2.5-Coder-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Artículo de referencia del método de fusión (*model soups*): https://arxiv.org/abs/2203.05482

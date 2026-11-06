@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-sprint-2m-stride06 es una politica de locomocion para el robot cuadrupedo microduck de Pollen Robotics, publicada por el usuario TheSauceman en HuggingFace. No se trata de un modelo de lenguaje, sino de un controlador neuronal entrenado con aprendizaje por refuerzo que produce una marcha en linea recta y se ejecuta de forma continua (perpetua) hasta que se le indique lo contrario, cargandose en una ranura de politica del demonio `robotctl` del robot.
+microduck-sprint-2m-stride06 es una politica de locomocion para el robot cuadrupedo microduck de Pollen Robotics, publicada por el usuario TheSauceman en Hugging Face. No se trata de un modelo de lenguaje, sino de un controlador neuronal entrenado con aprendizaje por refuerzo que produce una marcha en linea recta y se ejecuta de forma continua (perpetua) hasta que se le indique lo contrario, cargandose en una ranura de politica del demonio `robotctl` del robot.
 
 La politica trabaja con un vector de observacion de 61 dimensiones y emite 14 acciones a 50 Hz, es decir, un bucle de control con un presupuesto de 20 ms por paso. Se distribuye como un unico fichero `policy.onnx` con el normalizador de observaciones integrado (se le deben entregar observaciones en crudo) acompanado de un `manifest.json` conforme al esquema 2 del manifiesto de politicas de microduck.
 
@@ -104,7 +104,7 @@ Los tres modelos pertenecen a la misma familia de politicas de locomocion para m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheSauceman/microduck-sprint-2m-stride06
+- Hugging Face: https://huggingface.co/TheSauceman/microduck-sprint-2m-stride06
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/SteveTarter/microduck-challenges
 - Documentacion del manifiesto de politicas: `docs/policy-manifest.md` en el repositorio del demonio de microduck (ruta citada en la model card, sin URL completa disponible)

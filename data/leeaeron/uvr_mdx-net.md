@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LeeAeron/uvr_mdx-net es un repositorio de pesos alojado en HuggingFace por el usuario LeeAeron, publicado y actualizado el 16 de octubre de 2026. El repositorio ocupa 1,5 GB, declara licencia MIT y distribuye sus pesos en formato ONNX, lo que apunta a un modelo pensado para inferencia mediante ONNX Runtime en lugar de frameworks de entrenamiento como PyTorch. En el momento de la consulta acumula 0 descargas y 0 likes.
+LeeAeron/uvr_mdx-net es un repositorio de pesos alojado en Hugging Face por el usuario LeeAeron, publicado y actualizado el 16 de octubre de 2026. El repositorio ocupa 1,5 GB, declara licencia MIT y distribuye sus pesos en formato ONNX, lo que apunta a un modelo pensado para inferencia mediante ONNX Runtime en lugar de frameworks de entrenamiento como PyTorch. En el momento de la consulta acumula 0 descargas y 0 likes.
 
-La model card es practicamente vacia: unicamente contiene la declaracion de licencia (`license: mit`) y ningun dato sobre arquitectura, entrenamiento, idiomas o uso previsto. El pipeline no esta declarado en HuggingFace y no se especifican idiomas soportados. Por el nombre del repositorio, que combina "uvr" (habitual para Ultimate Vocal Remover) y "mdx-net", es razonable inferir que se trata de un modelo de separacion de fuentes musicales de la familia MDX-Net, pero esta interpretacion no esta confirmada por el autor en ninguna parte del repositorio.
+La model card es practicamente vacia: unicamente contiene la declaracion de licencia (`license: mit`) y ningun dato sobre arquitectura, entrenamiento, idiomas o uso previsto. El pipeline no esta declarado en Hugging Face y no se especifican idiomas soportados. Por el nombre del repositorio, que combina "uvr" (habitual para Ultimate Vocal Remover) y "mdx-net", es razonable inferir que se trata de un modelo de separacion de fuentes musicales de la familia MDX-Net, pero esta interpretacion no esta confirmada por el autor en ninguna parte del repositorio.
 
 Su relevancia actual es limitada: se trata de un artefacto sin documentacion, sin metricas publicadas y sin adopcion registrada. Se incluye aqui como ficha de referencia para quien necesite evaluar rapidamente si merece la pena inspeccionarlo, advirtiendo de que practicamente todos los campos tecnicos quedan como "no disponible".
 
@@ -77,7 +77,7 @@ No hay datos verificados en la informacion disponible que permitan una comparati
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LeeAeron/uvr_mdx-net | no disponible | no aplicable | no disponible | MIT | HuggingFace, formato ONNX |
+| LeeAeron/uvr_mdx-net | no disponible | no aplicable | no disponible | MIT | Hugging Face, formato ONNX |
 | Demucs | no disponible | no aplicable | no disponible | no disponible en la informacion consultada | no disponible en la informacion consultada |
 | Spleeter | no disponible | no aplicable | no disponible | no disponible en la informacion consultada | no disponible en la informacion consultada |
 
@@ -96,5 +96,5 @@ No hay datos verificados en la informacion disponible que permitan una comparati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LeeAeron/uvr_mdx-net
+- Repositorio en Hugging Face: https://huggingface.co/LeeAeron/uvr_mdx-net
 - Referencia a MDX-Net en el contexto de Music-Source-Separation-Training (MSST): https://arxiv.org/pdf/2607.23395

@@ -75,8 +75,8 @@ La informacion proporcionada solo permite comparar el modelo cuantizado con su p
 
 | Modelo | Parametros | Top-1 ImageNet | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| XCiT-Tiny-12/P8 INT8 (este modelo) | no disponible (estimado ~6,8 M por tamano de fichero) | 81,16% | 8,59 MB | Apache-2.0 | HuggingFace, ONNX |
-| XCiT-Tiny-12/P8 FP32 (modelo base) | no disponible | 81,22% | 27,0 MB | Apache-2.0 | HuggingFace (`timm`) |
+| XCiT-Tiny-12/P8 INT8 (este modelo) | no disponible (estimado ~6,8 M por tamano de fichero) | 81,16% | 8,59 MB | Apache-2.0 | Hugging Face, ONNX |
+| XCiT-Tiny-12/P8 FP32 (modelo base) | no disponible | 81,22% | 27,0 MB | Apache-2.0 | Hugging Face (`timm`) |
 | Alternativas compactas tipo MobileNetV3, EfficientNet-B0 o DeiT-Tiny | no disponible | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 
 La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo ni sobre modelos comparables, por lo que no se pueden contrastar cifras de terceros sin salir de la informacion disponible.
@@ -94,7 +94,7 @@ La busqueda web realizada no devolvio ningun resultado relevante sobre este mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CoreEpoch/xcit-tiny12-p8-int8-imagenet
+- Modelo en Hugging Face: https://huggingface.co/CoreEpoch/xcit-tiny12-p8-int8-imagenet
 - Modelo base (timm): https://huggingface.co/timm/xcit_tiny_12_p8_224.fb_dist_in1k
 - Sitio de CoreEpoch: https://coreepoch.dev
 - Cuantizador Kenosis: https://coreepoch.dev/kenosis/

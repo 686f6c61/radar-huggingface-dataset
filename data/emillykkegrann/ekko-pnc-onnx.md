@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Idiomas | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| emillykkegrann/ekko-pnc-ONNX | Electra (token classification) | danés | ONNX int8 | CC BY 4.0 + restricciones CoRal | HuggingFace, 42 descargas |
-| RyeAI/ekko-pnc (original) | Electra (token classification) | danés | FP32 (y exportación int8) | CC BY 4.0 + restricciones CoRal | HuggingFace |
+| emillykkegrann/ekko-pnc-ONNX | Electra (token classification) | danés | ONNX int8 | CC BY 4.0 + restricciones CoRal | Hugging Face, 42 descargas |
+| RyeAI/ekko-pnc (original) | Electra (token classification) | danés | FP32 (y exportación int8) | CC BY 4.0 + restricciones CoRal | Hugging Face |
 | Alternativas de restauración de puntuación para otras lenguas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de restauración de puntuación y truecasing en danés con la que construir una comparativa cuantitativa.

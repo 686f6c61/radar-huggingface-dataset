@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `a4rism/qwen2.5-1.5b-vulnerable` es un modelo de lenguaje publicado en HuggingFace por el usuario a4rism. Según los metadatos disponibles (etiqueta `qwen2` y el propio identificador del repositorio), se trata de una variante derivada de la familia Qwen2.5, concretamente de la talla de 1.5B parámetros. El peso real de los ficheros safetensors declarados es de 1.543.714.304 parámetros, lo que confirma esa escala. El repositorio no incluye model card descriptiva, pipeline declarado, licencia, idiomas soportados ni resultados de evaluación.
+El repositorio `a4rism/qwen2.5-1.5b-vulnerable` es un modelo de lenguaje publicado en Hugging Face por el usuario a4rism. Según los metadatos disponibles (etiqueta `qwen2` y el propio identificador del repositorio), se trata de una variante derivada de la familia Qwen2.5, concretamente de la talla de 1.5B parámetros. El peso real de los ficheros safetensors declarados es de 1.543.714.304 parámetros, lo que confirma esa escala. El repositorio no incluye model card descriptiva, pipeline declarado, licencia, idiomas soportados ni resultados de evaluación.
 
 El sufijo "vulnerable" en el nombre sugiere que el autor ha publicado un modelo con alguna característica deliberada de vulnerabilidad, probablemente orientado a investigación en seguridad, análisis de alineación o estudios de comportamiento bajo condiciones adversarias. No obstante, esta interpretación es una inferencia a partir del nombre y no está confirmada por ninguna documentación del repositorio, por lo que debe tratarse con cautela.
 
@@ -72,11 +72,11 @@ Los datos de las alternativas corresponden a documentacion publica de sus respec
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| a4rism/qwen2.5-1.5b-vulnerable | 1,54B | no disponible | no disponible | HuggingFace, 16 descargas, 0 likes | no disponible |
-| Qwen2.5-1.5B (base e Instruct) | ~1,54B | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente distribuido | no disponible en esta ficha |
-| Qwen3-1.7B | ~1,7B | 32.768 tokens nativos, ampliable | Apache 2.0 | HuggingFace | no disponible en esta ficha |
-| SmolLM2-1.7B-Instruct | ~1,7B | 8.192 tokens, ampliable | Apache 2.0 | HuggingFace | no disponible en esta ficha |
-| Gemma 2 2B | ~2,6B | 8.192 tokens | Gemma Terms of Use | HuggingFace | no disponible en esta ficha |
+| a4rism/qwen2.5-1.5b-vulnerable | 1,54B | no disponible | no disponible | Hugging Face, 16 descargas, 0 likes | no disponible |
+| Qwen2.5-1.5B (base e Instruct) | ~1,54B | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente distribuido | no disponible en esta ficha |
+| Qwen3-1.7B | ~1,7B | 32.768 tokens nativos, ampliable | Apache 2.0 | Hugging Face | no disponible en esta ficha |
+| SmolLM2-1.7B-Instruct | ~1,7B | 8.192 tokens, ampliable | Apache 2.0 | Hugging Face | no disponible en esta ficha |
+| Gemma 2 2B | ~2,6B | 8.192 tokens | Gemma Terms of Use | Hugging Face | no disponible en esta ficha |
 
 La diferencia principal de este repositorio frente a las alternativas es la ausencia total de documentacion, licencia declarada y evaluacion publicada, lo que complica su adopcion en cualquier contexto profesional.
 
@@ -94,5 +94,5 @@ La diferencia principal de este repositorio frente a las alternativas es la ause
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/a4rism/qwen2.5-1.5b-vulnerable
+- Repositorio en Hugging Face: https://huggingface.co/a4rism/qwen2.5-1.5b-vulnerable
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada. Los resultados obtenidos corresponden a contenido no relacionado (paginas de gestion de correo) y no aportan informacion tecnica.

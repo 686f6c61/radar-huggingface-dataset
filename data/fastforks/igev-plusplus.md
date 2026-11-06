@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks de precisión para establecer una comparaci
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/igev-plusplus
+- Model card en Hugging Face: https://huggingface.co/fastforks/igev-plusplus
 - Repositorio de fastforks: https://github.com/kleinicke/fastforks
 - Kernels para el backend `kernels`: https://huggingface.co/fastforks/kernels
 - Código original de IGEV-plusplus: https://github.com/gangweix/IGEV-plusplus

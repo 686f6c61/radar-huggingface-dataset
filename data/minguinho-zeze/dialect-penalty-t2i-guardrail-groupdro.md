@@ -88,8 +88,8 @@ El modelo base sin fine-tune no es un clasificador de seguridad, por lo que no e
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/Minguinho-zeze/dialect-penalty-t2i-guardrail-groupdro)
+- [Hugging Face - modelo](https://huggingface.co/Minguinho-zeze/dialect-penalty-t2i-guardrail-groupdro)
 - [Paper en arXiv](https://arxiv.org/abs/2608.29589)
-- [Dataset en HuggingFace](https://huggingface.co/datasets/Minguinho-zeze/dialect-penalty-t2i)
+- [Dataset en Hugging Face](https://huggingface.co/datasets/Minguinho-zeze/dialect-penalty-t2i)
 - [Código oficial en GitHub](https://github.com/minguinho26/dialect-penalty-t2i)
 - [Checkpoint compañero (ERM + bal. sampling)](https://huggingface.co/Minguinho-zeze/dialect-penalty-t2i-guardrail-erm-balsampling)

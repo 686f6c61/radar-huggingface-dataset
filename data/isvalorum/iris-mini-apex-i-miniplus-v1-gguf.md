@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks del modelo completo (MMLU, HumanEva
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Iris-mini APEX-I-MiniPlus V1 (esta ficha) | 35,5B totales / ~3,2B activos | Hasta 256K | Mixta: `IQ3_XXS` + `Q3_K` + `Q6_K` + `Q8_0` + `F32`, 3,42 BPW | Apache 2.0 | GGUF en HuggingFace |
-| Iris-mini APEX-I-MiniPlus V2.1 (mismo autor) | 35,5B totales / ~3,2B activos | Hasta 256K | Expertos compartidos en `Q5_K`, puertas `Q8_0`, ~14,7 GB | Apache 2.0 | GGUF en HuggingFace |
-| AllSpark-Research/Iris-mini (modelo base) | 35,5B totales / ~3,2B activos | No disponible | Pesos originales (no cuantizado) | No disponible en la informacion proporcionada | HuggingFace |
-| Recetas genericas APEX-I-Mini de la comunidad | 35,5B totales / ~3,2B activos | No disponible | 2 bits `IQ2_S` en expertos, `Q3_K_M` en salida, `Q3_K` en atencion | No disponible | HuggingFace |
+| Iris-mini APEX-I-MiniPlus V1 (esta ficha) | 35,5B totales / ~3,2B activos | Hasta 256K | Mixta: `IQ3_XXS` + `Q3_K` + `Q6_K` + `Q8_0` + `F32`, 3,42 BPW | Apache 2.0 | GGUF en Hugging Face |
+| Iris-mini APEX-I-MiniPlus V2.1 (mismo autor) | 35,5B totales / ~3,2B activos | Hasta 256K | Expertos compartidos en `Q5_K`, puertas `Q8_0`, ~14,7 GB | Apache 2.0 | GGUF en Hugging Face |
+| AllSpark-Research/Iris-mini (modelo base) | 35,5B totales / ~3,2B activos | No disponible | Pesos originales (no cuantizado) | No disponible en la informacion proporcionada | Hugging Face |
+| Recetas genericas APEX-I-Mini de la comunidad | 35,5B totales / ~3,2B activos | No disponible | 2 bits `IQ2_S` en expertos, `Q3_K_M` en salida, `Q3_K` en atencion | No disponible | Hugging Face |
 
 No se dispone en la informacion proporcionada de datos de benchmarks comparativos frente a modelos de otros desarrolladores de tamano o categoria similares, por lo que no se incluyen cifras de rendimiento de terceros.
 
@@ -101,8 +101,8 @@ No se dispone en la informacion proporcionada de datos de benchmarks comparativo
 
 ## Enlaces
 
-- [Repositorio HuggingFace: IsValorum/Iris-mini-APEX-I-MiniPlus-V1-GGUF](https://huggingface.co/IsValorum/Iris-mini-APEX-I-MiniPlus-V1-GGUF)
+- [Repositorio Hugging Face: IsValorum/Iris-mini-APEX-I-MiniPlus-V1-GGUF](https://huggingface.co/IsValorum/Iris-mini-APEX-I-MiniPlus-V1-GGUF)
 - [Edicion recomendada por el autor: IsValorum/Iris-mini-APEX-I-MiniPlus-V2.1-GGUF](https://huggingface.co/IsValorum/Iris-mini-APEX-I-MiniPlus-V2.1-GGUF)
 - [Modelo base: AllSpark-Research/Iris-mini](https://huggingface.co/AllSpark-Research/Iris-mini)
 
-La busqueda web realizada no devolvio resultados relacionados con el modelo; los unicos enlaces relevantes son los anteriores, obtenidos directamente de HuggingFace. No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.
+La busqueda web realizada no devolvio resultados relacionados con el modelo; los unicos enlaces relevantes son los anteriores, obtenidos directamente de Hugging Face. No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

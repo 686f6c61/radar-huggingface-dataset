@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - El adaptador LoRA requiere el modelo base Qwen-Image para funcionar, que cuenta con aproximadamente 20.000 millones de parametros. La inferencia en precision FP16 requiere al menos 24 GB de VRAM, y 48 GB o mas para lotes grandes o resoluciones altas.
 - La LoRA en si misma anade un coste minimo de memoria adicional. El repositorio pesa 1,2 GB, aunque parte puede corresponder a archivos auxiliares o checkpoints multiples.
 - GPUs recomendadas: NVIDIA RTX 4090 (24 GB) para pruebas puntuales; NVIDIA A100 40/80 GB o H100 para cargas de trabajo en produccion.
-- El modelo se distribuye en formato diffusers, por lo que puede desplegarse con la libreria diffusers de HuggingFace. Tambien podria integrarse en interfaces compatibles con Qwen-Image como ComfyUI, aunque no se documenta dicha compatibilidad.
+- El modelo se distribuye en formato diffusers, por lo que puede desplegarse con la libreria diffusers de Hugging Face. Tambien podria integrarse en interfaces compatibles con Qwen-Image como ComfyUI, aunque no se documenta dicha compatibilidad.
 - No se dispone de datos de latencia o throughput para este adaptador especifico.
 
 ## Comparativa con modelos similares
@@ -74,5 +74,5 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/StaticExposure/benji-style-lora
+- Repositorio Hugging Face: https://huggingface.co/StaticExposure/benji-style-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image

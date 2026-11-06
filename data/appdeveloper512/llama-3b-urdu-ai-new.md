@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llama-3b-urdu-ai-NEW` es un ajuste fino (fine-tuning) del modelo `unsloth/Llama-3.2-3B-Instruct-bnb-4bit`, publicado por el usuario `appdeveloper512` en HuggingFace. Se trata de un modelo derivado de la familia Llama 3.2 de Meta, en su variante Instruct de 3.000 millones de parametros, entrenado mediante SFT (Supervised Fine-Tuning) con la libreria TRL y la infraestructura de Unsloth. El nombre sugiere un enfoque hacia el idioma urdu, aunque la model card no documenta explicitamente el dataset de entrenamiento ni los idiomas objetivo.
+`llama-3b-urdu-ai-NEW` es un ajuste fino (fine-tuning) del modelo `unsloth/Llama-3.2-3B-Instruct-bnb-4bit`, publicado por el usuario `appdeveloper512` en Hugging Face. Se trata de un modelo derivado de la familia Llama 3.2 de Meta, en su variante Instruct de 3.000 millones de parametros, entrenado mediante SFT (Supervised Fine-Tuning) con la libreria TRL y la infraestructura de Unsloth. El nombre sugiere un enfoque hacia el idioma urdu, aunque la model card no documenta explicitamente el dataset de entrenamiento ni los idiomas objetivo.
 
 El modelo se distribuye en formato safetensors y es compatible con la libreria `transformers`, lo que permite su carga directa mediante `pipeline`. Su relevancia es limitada: se trata de un experimento de ajuste fino con cero descargas y cero likes en el momento de la ficha, sin licencia declarada, sin benchmarks publicados y sin documentacion sobre los datos de entrenamiento. No obstante, su tamano compacto (3B parametros) y su base Llama 3.2 Instruct lo convierten en un candidato potencial para despliegues en hardware consumer, siempre que se validen sus capacidades de forma independiente.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `appdeveloper512/llama-3b-urdu-ai-NEW` | ~3B | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste fino no documentado |
-| `unsloth/Llama-3.2-3B-Instruct-bnb-4bit` | ~3B | 128.000 tokens (segun Llama 3.2) | Llama 3.2 Community License | HuggingFace, ampliamente usado | Modelo base cuantizado en 4 bits |
-| `meta-llama/Llama-3.2-3B-Instruct` | ~3B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, oficial | Modelo original de Meta |
-| `Qwen/Qwen2.5-3B-Instruct` | ~3B | 32.768 tokens (ampliable) | Apache 2.0 | HuggingFace, ampliamente usado | Alternativa con licencia permisiva |
+| `appdeveloper512/llama-3b-urdu-ai-NEW` | ~3B | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste fino no documentado |
+| `unsloth/Llama-3.2-3B-Instruct-bnb-4bit` | ~3B | 128.000 tokens (segun Llama 3.2) | Llama 3.2 Community License | Hugging Face, ampliamente usado | Modelo base cuantizado en 4 bits |
+| `meta-llama/Llama-3.2-3B-Instruct` | ~3B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, oficial | Modelo original de Meta |
+| `Qwen/Qwen2.5-3B-Instruct` | ~3B | 32.768 tokens (ampliable) | Apache 2.0 | Hugging Face, ampliamente usado | Alternativa con licencia permisiva |
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/appdeveloper512/llama-3b-urdu-ai-NEW
+- Hugging Face: https://huggingface.co/appdeveloper512/llama-3b-urdu-ai-NEW
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-bnb-4bit
 - TRL (framework de entrenamiento): https://github.com/huggingface/trl
 - Unsloth: https://github.com/unslothai/unsloth

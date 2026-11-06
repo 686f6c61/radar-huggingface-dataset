@@ -124,7 +124,7 @@ Retencion de capacidades (tinyBenchmarks, 100 items por tarea; PPL sobre wikitex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-4pair-hate
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-4pair-hate
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-4pair
 - Split de test (hate): https://huggingface.co/datasets/thoughtworks/backdoor-4pair/viewer/hate/test
 - Split de robustez (robustness_full): https://huggingface.co/datasets/thoughtworks/backdoor-4pair/viewer/hate/robustness_full

@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Modelo | Parametros | Contexto | Paradigma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Diffusion-Qwen3.5-9B (este) | 8,95B | no disponible (base 256K-1M) | Difusion enmascarada + fusion BART | apache-2.0 | HuggingFace, experimental |
-| Qwen/Qwen3.5-9B (modelo base) | 9B (denso) | 262K-1M (segun fuentes externas) | Autoregresivo, multimodal nativo | apache-2.0 | HuggingFace |
+| Diffusion-Qwen3.5-9B (este) | 8,95B | no disponible (base 256K-1M) | Difusion enmascarada + fusion BART | apache-2.0 | Hugging Face, experimental |
+| Qwen/Qwen3.5-9B (modelo base) | 9B (denso) | 262K-1M (segun fuentes externas) | Autoregresivo, multimodal nativo | apache-2.0 | Hugging Face |
 | LLaDA / Dream (difusion LM) | no disponible | no disponible | Difusion enmascarada | no disponible | no disponible |
 
 No se dispone de datos de benchmarks para establecer una comparacion cuantitativa de rendimiento entre estos modelos en la informacion proporcionada.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks para establecer una comparacion cuantitativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/summerMC/Diffusion-Qwen3.5-9B
+- Modelo en Hugging Face: https://huggingface.co/summerMC/Diffusion-Qwen3.5-9B
 - Modelo relacionado Diffusion-Qwen3.5-4B: https://huggingface.co/summerMC/Diffusion-Qwen3.5-4B
 - Modelo relacionado Diffusion-Qwen3.8-27B: https://huggingface.co/summerMC/Diffusion-Qwen3.8-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

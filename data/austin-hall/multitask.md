@@ -28,13 +28,13 @@ El checkpoint incluido (`model.safetensors`) es una inicialización válida para
 ## Capacidades
 
 - No se han demostrado capacidades funcionales: el checkpoint no está entrenado y no se reclama ningún resultado de tarea.
-- El script `main.py` incluye un ejemplo ejecutable de prueba de humo, pero requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+- El script `main.py` incluye un ejemplo ejecutable de prueba de humo, pero requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 - No hay soporte documentado de generación de texto, razonamiento, código, matemáticas, visión, tool calling, agentes o capacidades multilingües.
 - La implementación es experimental y está pensada como base para desarrollo, no como modelo listo para uso.
 
 ## Casos de uso
 
-- **Desarrollo de adaptadores de carga**: al ser una implementación personalizada, los desarrolladores pueden estudiar el código en `main.py` para crear adaptadores que permitan cargar el modelo con APIs estándar de HuggingFace.
+- **Desarrollo de adaptadores de carga**: al ser una implementación personalizada, los desarrolladores pueden estudiar el código en `main.py` para crear adaptadores que permitan cargar el modelo con APIs estándar de Hugging Face.
 - **Pruebas de integración en pipelines de ML**: el checkpoint de inicialización sirve para verificar que el flujo de carga, serialización y ejecución funciona antes de sustituirlo por pesos entrenados.
 - **Estudio de la arquitectura Blip**: investigadores pueden analizar la implementación de atención de ventana deslizante, fusión bilineal y normalización *scalenorm* en un código reducido y legible.
 - **Reproducción de experimentos**: el repositorio incluye `config.json` y `training_args.json` que documentan la configuración, lo que permite reproducir el entorno de entrenamiento con las mismas semillas y datos.
@@ -62,10 +62,10 @@ No disponible. No existen modelos comparables en el sentido de que este es un ch
 - El checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 - No se debe utilizar en producción ni para ninguna tarea real: no generará resultados útiles.
 - La implementación es experimental y puede contener errores no detectados.
-- No hay garantía de compatibilidad con APIs estándar de HuggingFace; se requiere un adaptador explícito.
+- No hay garantía de compatibilidad con APIs estándar de Hugging Face; se requiere un adaptador explícito.
 - La licencia Apache-2.0 permite uso comercial, pero el autor advierte que deben revisarse los términos de las fuentes de datos externas si se usa con datasets propios.
 - No se proporcionan métricas de sesgo, alucinación o calidad de salida porque no existe un modelo entrenado que evaluar.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/austin-hall/multitask
+- Repositorio en Hugging Face: https://huggingface.co/austin-hall/multitask

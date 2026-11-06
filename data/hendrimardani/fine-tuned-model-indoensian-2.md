@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`hendrimardani/fine-tuned-model-indoensian-2` es un ajuste fino (fine-tune) del modelo `unsloth/llama-3.1-8b-unsloth-bnb-4bit`, que a su vez deriva de Llama 3.1 8B de Meta. El modelo lo publica el usuario hendrimardani en HuggingFace y esta pensado para generacion de texto conversacional. A pesar de que el nombre del repositorio incluye el termino "indonesian", la model card no documenta ningun corpus en indonesio y la unica etiqueta de idioma declarada es `en` (ingles); esta discrepancia entre nombre y metadatos es el primer punto que conviene aclarar antes de evaluarlo.
+`hendrimardani/fine-tuned-model-indoensian-2` es un ajuste fino (fine-tune) del modelo `unsloth/llama-3.1-8b-unsloth-bnb-4bit`, que a su vez deriva de Llama 3.1 8B de Meta. El modelo lo publica el usuario hendrimardani en Hugging Face y esta pensado para generacion de texto conversacional. A pesar de que el nombre del repositorio incluye el termino "indonesian", la model card no documenta ningun corpus en indonesio y la unica etiqueta de idioma declarada es `en` (ingles); esta discrepancia entre nombre y metadatos es el primer punto que conviene aclarar antes de evaluarlo.
 
-Tecnicamente es un transformer decoder-only denso de 8.030.261.248 parametros (unos 8.000 millones), entrenado por el autor con la libreria Unsloth y TRL de HuggingFace, segun afirma la propia model card. No se publican detalles del dataset, del numero de tokens de entrenamiento ni de la metodologia de alineacion (RLHF, DPO u otra), por lo que la ficha no puede caracterizar el entrenamiento mas alla de lo que declara el autor.
+Tecnicamente es un transformer decoder-only denso de 8.030.261.248 parametros (unos 8.000 millones), entrenado por el autor con la libreria Unsloth y TRL de Hugging Face, segun afirma la propia model card. No se publican detalles del dataset, del numero de tokens de entrenamiento ni de la metodologia de alineacion (RLHF, DPO u otra), por lo que la ficha no puede caracterizar el entrenamiento mas alla de lo que declara el autor.
 
 Su relevancia practica es limitada pero concreta: se trata de un fine-tune ligero, con licencia Apache 2.0 y formato safetensors, que puede desplegarse en hardware de una sola GPU de 24 GB o, cuantizado, en GPUs de consumo. El repositorio acumula 278 descargas y 0 likes en el momento de redactar esta ficha, y ocupa 20,2 GB.
 
@@ -36,7 +36,7 @@ No hay informacion sobre el volumen de datos de entrenamiento, la composicion de
 
 - Generacion de texto y dialogo conversacional multi-turno, segun la etiqueta `conversational` del repositorio.
 - Instrucciones generales en ingles, heredadas del modelo base Llama 3.1 8B.
-- Compatibilidad con `text-generation-inference` y con endpoints gestionados de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad con `text-generation-inference` y con endpoints gestionados de Hugging Face (tag `endpoints_compatible`).
 - Integracion con el ecosistema transformers: puede cargarse mediante `AutoModelForCausalLM` y `AutoTokenizer`.
 - No se documenta soporte de tool calling o function calling especifico, aunque Llama 3.1 8B lo incorpora de serie; el autor no confirma que se haya preservado.
 - No se documenta modo de razonamiento explicito (thinking mode), vision, audio ni capacidades multimodales.
@@ -72,10 +72,10 @@ La comparacion se realiza sobre las arquitecturas base, dado que este fine-tune 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| hendrimardani/fine-tuned-model-indoensian-2 | 8,03 B | no confirmado (base: 128 000 tokens) | Apache 2.0 | HuggingFace, safetensors | Fine-tune sin dataset ni benchmarks documentados; 278 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128 000 tokens | Llama 3.1 Community License | HuggingFace, multiples formatos | Modelo base de referencia; alineado con SFT y DPO; benchmarks publicados |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32 000 tokens | Apache 2.0 | HuggingFace, GGUF, vLLM | Alternativa con licencia permisiva y contexto menor |
-| Qwen/Qwen2.5-7B-Instruct | 7,62 B | 128 000 tokens | Apache 2.0 | HuggingFace, GGUF, vLLM | Buen rendimiento en codigo y matematicas; licencia permisiva |
+| hendrimardani/fine-tuned-model-indoensian-2 | 8,03 B | no confirmado (base: 128 000 tokens) | Apache 2.0 | Hugging Face, safetensors | Fine-tune sin dataset ni benchmarks documentados; 278 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128 000 tokens | Llama 3.1 Community License | Hugging Face, multiples formatos | Modelo base de referencia; alineado con SFT y DPO; benchmarks publicados |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32 000 tokens | Apache 2.0 | Hugging Face, GGUF, vLLM | Alternativa con licencia permisiva y contexto menor |
+| Qwen/Qwen2.5-7B-Instruct | 7,62 B | 128 000 tokens | Apache 2.0 | Hugging Face, GGUF, vLLM | Buen rendimiento en codigo y matematicas; licencia permisiva |
 
 No se dispone de datos de rendimiento de este fine-tune que permitan afirmar que supera o iguala a estas alternativas.
 
@@ -93,9 +93,9 @@ No se dispone de datos de rendimiento de este fine-tune que permitan afirmar que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hendrimardani/fine-tuned-model-indoensian-2
+- Modelo en Hugging Face: https://huggingface.co/hendrimardani/fine-tuned-model-indoensian-2
 - Modelo base: https://huggingface.co/unsloth/llama-3.1-8b-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Modelo original Llama 3.1 8B de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo. Las consultas devolvieron exclusivamente resultados sin relacion (ICC.tv, ICC Cricket, un articulo de Frontiers sobre marcos conceptuales de evaluacion sumativa y el canal de YouTube de ICC TV), por lo que no se incluyen como fuentes.

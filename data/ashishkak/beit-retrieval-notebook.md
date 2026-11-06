@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ashishkak/beit-retrieval-notebook | 24.832 | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace, checkpoint de inicialización |
+| ashishkak/beit-retrieval-notebook | 24.832 | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face, checkpoint de inicialización |
 | BEiT (referencia del autor del paper) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | CLIP (familia de retrieval vision-lenguaje) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,5 +84,5 @@ No se dispone de datos verificables de modelos comparables dentro de la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ashishkak/beit-retrieval-notebook
+- Hugging Face: https://huggingface.co/ashishkak/beit-retrieval-notebook
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada.

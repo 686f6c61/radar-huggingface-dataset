@@ -74,9 +74,9 @@ No se dispone de datos de benchmarks comparables publicados para alternativas de
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nobidog-qubo-1b-0.2 | 1,18B | 2048 | Formulación QUBO en japonés, SFT + GRPO con solver | Apache-2.0 | HuggingFace, GGUF |
-| Modelos generalistas ~1B (p. ej. familia Llama/Qwen de tamaño similar) | ~1B | variable | Conversación general, sin especialización en QUBO | variable | HuggingFace |
-| Modelos mayores (~7B+) usados como extractores | 7B+ | variable | Capacidad general superior, pero sin entrenamiento específico en formulación QUBO | variable | HuggingFace |
+| nobidog-qubo-1b-0.2 | 1,18B | 2048 | Formulación QUBO en japonés, SFT + GRPO con solver | Apache-2.0 | Hugging Face, GGUF |
+| Modelos generalistas ~1B (p. ej. familia Llama/Qwen de tamaño similar) | ~1B | variable | Conversación general, sin especialización en QUBO | variable | Hugging Face |
+| Modelos mayores (~7B+) usados como extractores | 7B+ | variable | Capacidad general superior, pero sin entrenamiento específico en formulación QUBO | variable | Hugging Face |
 
 La ventaja del modelo es la especialización verificada contra solver y su huella reducida; la desventaja es que un modelo generalista mayor puede manejar problemas más variados, aunque sin garantía de que la formulación resultante sea resoluble correctamente.
 
@@ -93,7 +93,7 @@ La ventaja del modelo es la especialización verificada contra solver y su huell
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blueqat/nobidog-qubo-1b-0.2
+- Modelo en Hugging Face: https://huggingface.co/blueqat/nobidog-qubo-1b-0.2
 - Web de blueqat: https://blueqat.com
 - Dataset Wikipedia japonés: https://huggingface.co/datasets/wikimedia/wikipedia
 - Dataset FineWeb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

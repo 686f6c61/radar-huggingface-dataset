@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`RoboWonsuhk/JM2D` es un repositorio de HuggingFace publicado por el usuario RoboWonsuhk el 20 de octubre de 2026 (fecha de creacion y de ultima actualizacion identicas, lo que indica que no ha recibido modificaciones desde su publicacion). El repositorio no incluye model card descriptiva: el unico contenido del README es la declaracion de licencia `mit`, sin texto explicativo, sin descripcion del modelo, sin instrucciones de uso y sin ejemplos.
+`RoboWonsuhk/JM2D` es un repositorio de Hugging Face publicado por el usuario RoboWonsuhk el 20 de octubre de 2026 (fecha de creacion y de ultima actualizacion identicas, lo que indica que no ha recibido modificaciones desde su publicacion). El repositorio no incluye model card descriptiva: el unico contenido del README es la declaracion de licencia `mit`, sin texto explicativo, sin descripcion del modelo, sin instrucciones de uso y sin ejemplos.
 
-No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline declarado en HuggingFace, por lo que no es posible confirmar siquiera que se trate de un modelo de lenguaje: el tag `region:us` y la licencia MIT son los unicos metadatos disponibles junto al identificador.
+No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline declarado en Hugging Face, por lo que no es posible confirmar siquiera que se trate de un modelo de lenguaje: el tag `region:us` y la licencia MIT son los unicos metadatos disponibles junto al identificador.
 
 En el momento de redactar esta ficha, el modelo no es evaluable tecnicamente. Su relevancia actual es nula para produccion o investigacion: no existen artefactos documentados, benchmarks, demos ni referencias externas verificables. Esta ficha se limita a registrar el estado del repositorio y a marcar explicitamente cada dato como no disponible, sin especular sobre el contenido.
 
@@ -32,7 +32,7 @@ No se ha publicado informacion sobre el proceso de entrenamiento, el tokenizador
 - No disponible. No hay documentacion que confirme generacion de texto, razonamiento, generacion de codigo, matematicas, vision, audio u otras modalidades.
 - No disponible. No se puede confirmar soporte de tool calling ni function calling.
 - No disponible. No hay evidencia de capacidades agenticas o de razonamiento multi-paso.
-- No disponible. No se declaran idiomas soportados en los metadatos de HuggingFace.
+- No disponible. No se declaran idiomas soportados en los metadatos de Hugging Face.
 - No disponible. No se documenta ningun modo especial (thinking mode, vision, audio, contexto extendido).
 
 ## Casos de uso
@@ -75,5 +75,5 @@ No disponible. No se ha identificado la categoria del modelo (tamano, modalidad 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RoboWonsuhk/JM2D
+- Hugging Face: https://huggingface.co/RoboWonsuhk/JM2D
 - No se han encontrado papers, blogs, repositorios de codigo, demos ni articulos tecnicos asociados a este modelo en la busqueda web realizada.

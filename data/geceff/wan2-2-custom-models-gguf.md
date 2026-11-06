@@ -70,5 +70,5 @@ No se dispone de información sobre modelos comparables en el repositorio ni en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [geceff/Wan2.2-Custom-Models-GGUF](https://huggingface.co/geceff/Wan2.2-Custom-Models-GGUF)
+- Repositorio Hugging Face: [geceff/Wan2.2-Custom-Models-GGUF](https://huggingface.co/geceff/Wan2.2-Custom-Models-GGUF)
 - No se proporcionan otros enlaces (papers, blogs, demos) en la información disponible.

@@ -76,7 +76,7 @@ La comparativa se basa en características conocidas; no hay datos de rendimient
 
 ## Enlaces
 
-- [Modelo en HuggingFace: FredrikKarlssonSpeech/whisper-medium-finnish-mlx-4bit](https://huggingface.co/FredrikKarlssonSpeech/whisper-medium-finnish-mlx-4bit)
+- [Modelo en Hugging Face: FredrikKarlssonSpeech/whisper-medium-finnish-mlx-4bit](https://huggingface.co/FredrikKarlssonSpeech/whisper-medium-finnish-mlx-4bit)
 - [Modelo base: Finnish-NLP/whisper-medium-finnish](https://huggingface.co/Finnish-NLP/whisper-medium-finnish)
 - [Repositorio mlx-whisper (mlx-examples)](https://github.com/ml-explore/mlx-examples/tree/main/whisper)
 - [Repositorio original de Whisper (OpenAI)](https://github.com/openai/whisper)

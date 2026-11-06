@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`aiAI_coder_V1.4B` es un adaptador LoRA de ajuste fino para generación de código y tareas agénticas, desarrollado por el equipo aiAI bajo la dirección de nitrous-0xide. Se basa en el modelo Qwen/Qwen3.5-4B (aunque los metadatos de HuggingFace citan Qwen/Qwen3.5-4B-Thinking como modelo base) y ha sido entrenado mediante Supervised Fine-Tuning (SFT) con datos destilados de completaciones de Grok 4.6, con un tiempo de entrenamiento inferior a una hora.
+`aiAI_coder_V1.4B` es un adaptador LoRA de ajuste fino para generación de código y tareas agénticas, desarrollado por el equipo aiAI bajo la dirección de nitrous-0xide. Se basa en el modelo Qwen/Qwen3.5-4B (aunque los metadatos de Hugging Face citan Qwen/Qwen3.5-4B-Thinking como modelo base) y ha sido entrenado mediante Supervised Fine-Tuning (SFT) con datos destilados de completaciones de Grok 4.6, con un tiempo de entrenamiento inferior a una hora.
 
 El modelo está orientado a la generación de código en Python, JavaScript, TypeScript y SQL, con soporte para razonamiento paso a paso mediante etiquetas de pensamiento explícitas, tool calling y flujos de trabajo agénticos multi-turno. Con 4.000 millones de parámetros en el modelo base y una ventana de contexto declarada de 262.000 tokens, se posiciona como una alternativa ligera y económica a modelos de frontera para tareas de desarrollo de software.
 
-El adaptador se distribuye en formato PEFT/LoRA con pesos en safetensors y un tamaño de repositorio de 0,8 GB, lo que requiere cargar el modelo base Qwen3.5-4B por separado. La licencia se declara como Apache-2.0 en la model card, aunque los metadatos de HuggingFace la clasifican como "other". El modelo no cuenta con descargas ni valoraciones en la plataforma, y no se han publicado resultados de benchmarks verificables.
+El adaptador se distribuye en formato PEFT/LoRA con pesos en safetensors y un tamaño de repositorio de 0,8 GB, lo que requiere cargar el modelo base Qwen3.5-4B por separado. La licencia se declara como Apache-2.0 en la model card, aunque los metadatos de Hugging Face la clasifican como "other". El modelo no cuenta con descargas ni valoraciones en la plataforma, y no se han publicado resultados de benchmarks verificables.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El adaptador se distribuye en formato PEFT/LoRA con pesos en safetensors y un ta
 | Longitud de contexto | 262.000 tokens (declarado; rendimiento puede degradarse en longitudes extremas) |
 | Tipos de cuantizacion | BF16 (mencionado en la model card); otras cuantizaciones no disponibles |
 | Idiomas soportados | Ingles (principal); rendimiento limitado en otros idiomas |
-| Licencia | Apache-2.0 (segun la model card); "other" en los metadatos de HuggingFace |
+| Licencia | Apache-2.0 (segun la model card); "other" en los metadatos de Hugging Face |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 
 ## Arquitectura y entrenamiento
@@ -77,14 +77,14 @@ No se dispone de datos de benchmarks comparativos entre estos modelos, por lo qu
 - Seguridad: el codigo generado debe revisarse para detectar vulnerabilidades de seguridad antes de su despliegue, especialmente en aplicaciones criticas.
 - Cobertura de idiomas: el modelo esta entrenado principalmente con datos en ingles; su rendimiento en otros idiomas es limitado y no se recomienda para tareas multilingues.
 - Degradacion en contexto extremo: aunque la ventana de contexto declarada es de 262K tokens, el rendimiento puede degradarse en longitudes cercanas al maximo.
-- Licencia ambigua: la model card declara Apache-2.0, pero los metadatos de HuggingFace indican "other"; se recomienda verificar los terminos de uso antes de un despliegue comercial.
-- Discrepancia en el modelo base: los metadatos de HuggingFace citan Qwen/Qwen3.5-4B-Thinking como base, mientras que la model card indica Qwen/Qwen3.5-4B; esta inconsistencia puede afectar a la reproducibilidad del adaptador.
+- Licencia ambigua: la model card declara Apache-2.0, pero los metadatos de Hugging Face indican "other"; se recomienda verificar los terminos de uso antes de un despliegue comercial.
+- Discrepancia en el modelo base: los metadatos de Hugging Face citan Qwen/Qwen3.5-4B-Thinking como base, mientras que la model card indica Qwen/Qwen3.5-4B; esta inconsistencia puede afectar a la reproducibilidad del adaptador.
 - Sin datos de benchmarks publicados: no hay evidencia cuantitativa del rendimiento declarado en la model card.
 - Uso fuera de alcance: no debe usarse para generar codigo malicioso, toma de decisiones en sistemas criticos de seguridad, ni en aplicaciones que violen la licencia.
-- Modelo sin adopcion: no cuenta con descargas ni valoraciones en HuggingFace, lo que sugiere una validacion comunitaria limitada.
+- Modelo sin adopcion: no cuenta con descargas ni valoraciones en Hugging Face, lo que sugiere una validacion comunitaria limitada.
 
 ## Enlaces
 
-- [HuggingFace: wefamm/aiAI_coder_V1.4B](https://huggingface.co/wefamm/aiAI_coder_V1.4B)
+- [Hugging Face: wefamm/aiAI_coder_V1.4B](https://huggingface.co/wefamm/aiAI_coder_V1.4B)
 - [Modelo base: Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B) (referenciado en la model card)
-- [Modelo base alternativo: Qwen/Qwen3.5-4B-Thinking](https://huggingface.co/Qwen/Qwen3.5-4B-Thinking) (segun metadatos de HuggingFace)
+- [Modelo base alternativo: Qwen/Qwen3.5-4B-Thinking](https://huggingface.co/Qwen/Qwen3.5-4B-Thinking) (segun metadatos de Hugging Face)

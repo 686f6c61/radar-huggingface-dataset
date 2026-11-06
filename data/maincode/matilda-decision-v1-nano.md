@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Salida | Probabilidades por opcion, sin texto generado | Probabilidades por opcion, sin texto generado | Texto generado |
 | Vision | Si, hasta 0,26 MP por imagen | Si (no disponible el limite exacto) | Si |
 | Licencia | Apache-2.0 | Apache-2.0 | Apache-2.0 |
-| Disponibilidad | HuggingFace, safetensors | HuggingFace | HuggingFace |
+| Disponibilidad | Hugging Face, safetensors | Hugging Face | Hugging Face |
 
 Como alternativa de la misma categoria (clasificacion zero-shot ligera), existen modelos como DeBERTa o NLI-based classifiers, pero son solo de texto, sin ventana de 128K ni capacidad multimodal; no se dispone de comparativas de rendimiento publicadas.
 

@@ -93,10 +93,10 @@ Test de conversación retenido (297 guiones, unas 2.530 turnos, juez automático
 
 | Modelo | Parametros | Contexto | Conversacion multiturno | MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Kisoku 1.6B Chat (preview) | 1,6B | 64K (~128K YaRN) | 48,9% turnos aceptables | 29,8 | Apache 2.0 | HuggingFace |
-| Llama 3.2 1B Instruct | 1,2B | 128K | 56,7% turnos aceptables | No disponible en la informacion | Llama 3.2 Community License | Meta / HuggingFace |
-| Llama 3.1 8B Instruct | 8B | 128K | 59,5% turnos aceptables | No disponible en la informacion | Llama 3.1 Community License | Meta / HuggingFace |
-| Kisoku 1.6B (base) | 1,6B | 64K | No evaluado | 34,2 | Apache 2.0 | HuggingFace |
+| Kisoku 1.6B Chat (preview) | 1,6B | 64K (~128K YaRN) | 48,9% turnos aceptables | 29,8 | Apache 2.0 | Hugging Face |
+| Llama 3.2 1B Instruct | 1,2B | 128K | 56,7% turnos aceptables | No disponible en la informacion | Llama 3.2 Community License | Meta / Hugging Face |
+| Llama 3.1 8B Instruct | 8B | 128K | 59,5% turnos aceptables | No disponible en la informacion | Llama 3.1 Community License | Meta / Hugging Face |
+| Kisoku 1.6B (base) | 1,6B | 64K | No evaluado | 34,2 | Apache 2.0 | Hugging Face |
 
 El base de Kisoku iguala a Llama 3.2 1B en la suite de 10 benchmarks del autor (cinco victorias cada uno) usando unas 18 veces menos datos de entrenamiento, pero el chat fine-tune queda por detrás del Instruct de Meta en conversación multiturno.
 
@@ -114,8 +114,8 @@ El base de Kisoku iguala a Llama 3.2 1B en la suite de 10 benchmarks del autor (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0arch-io/kisoku-1.6b-chat
-- Modelo base en HuggingFace: https://huggingface.co/0arch-io/kisoku-1.6b
+- Modelo en Hugging Face: https://huggingface.co/0arch-io/kisoku-1.6b-chat
+- Modelo base en Hugging Face: https://huggingface.co/0arch-io/kisoku-1.6b
 - Colección Kisoku 1.6B: https://huggingface.co/collections/0arch-io/kisoku-16b
 - Repositorio GitHub (release del chat): https://github.com/0arch-io/kisoku/tree/main/release/kisoku-1.6b-chat
 - Repositorio GitHub principal: https://github.com/0arch-io/kisoku

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mikaelaehunter/whisper-tiny_to_spanish_accent_09oct` es un ajuste fino (fine-tuning) del modelo `openai/whisper-tiny` de OpenAI, publicado por el usuario mikaelaehunter en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) de tipo encoder-decoder transformer, con 37.760.640 parametros totales, pensado para transcripcion de audio en ventanas de 30 segundos y con un entrenamiento orientado, segun el nombre del repositorio, a acentos espanoles.
+`mikaelaehunter/whisper-tiny_to_spanish_accent_09oct` es un ajuste fino (fine-tuning) del modelo `openai/whisper-tiny` de OpenAI, publicado por el usuario mikaelaehunter en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) de tipo encoder-decoder transformer, con 37.760.640 parametros totales, pensado para transcripcion de audio en ventanas de 30 segundos y con un entrenamiento orientado, segun el nombre del repositorio, a acentos espanoles.
 
 El modelo parte de la variante mas pequena de la familia Whisper (aproximadamente 39 M de parametros) y se ha reentrenado sobre un dataset denominado `Spanish_english`, del que no se ofrece informacion publica sobre composicion, horas de audio ni procedencia. El autor declara un WER de 12,29 sobre el split de test de ese mismo dataset, un resultado no verificado y no comparable con referencias externas al no documentarse el corpus.
 
@@ -36,7 +36,7 @@ El entrenamiento se realizo sobre el dataset `Spanish_english` durante 2000 paso
 - Ejecucion sobre audio de entrada estandar a 16 kHz mono, sin necesidad de pipelines adicionales.
 - No soporta tool calling, function calling, razonamiento multi-paso ni capacidades de agente: es un modelo puramente ASR.
 - No soporta vision, audio generation ni modo "thinking".
-- Integracion directa con `transformers` (`pipeline("automatic-speech-recognition")`) y compatible con endpoints de HuggingFace.
+- Integracion directa con `transformers` (`pipeline("automatic-speech-recognition")`) y compatible con endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -70,17 +70,17 @@ No se han publicado resultados de benchmarks adicionales (LibriSpeech, Common Vo
 - VRAM estimada: ~0,15 GB en fp32 (151 MB de pesos), ~0,08 GB en fp16 y ~0,04 GB en int8; con activaciones y buffers de decodificacion, el consumo real se situa en torno a 0,5-2 GB en funcion del batch y de la longitud de audio.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente (GTX 1650, RTX 3050, RTX 4090, T4, A100, H100); el modelo esta muy por debajo de la capacidad de todas ellas.
 - Cabe en GPU de consumo y en CPU: puede ejecutarse en Raspberry Pi, mini-PC o portatiles sin acelerador, siendo el coste dominante el preprocesado del espectrograma.
-- Opciones de despliegue: `transformers` con `pipeline`, `faster-whisper` (CTranslate2), `whisper.cpp` (previa conversion a GGML/GGUF), vLLM y TGI para Whisper, y HuggingFace Inference Endpoints (el modelo esta marcado como `endpoints_compatible`).
+- Opciones de despliegue: `transformers` con `pipeline`, `faster-whisper` (CTranslate2), `whisper.cpp` (previa conversion a GGML/GGUF), vLLM y TGI para Whisper, y Hugging Face Inference Endpoints (el modelo esta marcado como `endpoints_compatible`).
 - Latencia y throughput: no se han publicado medidas. Por el tamano del modelo, en CPU moderna se espera procesar audio en tiempo real o por encima con batch 1, y en GPU el cuello de botella pasa a ser la conversion mel; no hay cifras oficiales que citar.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto de audio | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (whisper-tiny fine-tuned) | 37,76 M | 30 s por ventana | 12,29 en `Spanish_english` (no verificado) | apache-2.0 | HuggingFace |
-| openai/whisper-tiny (base) | ~39 M (dato publico de la familia Whisper) | 30 s por ventana | no disponible en la informacion proporcionada | apache-2.0 | HuggingFace, ampliamente desplegado |
-| openai/whisper-base | ~74 M (dato publico de la familia Whisper) | 30 s por ventana | no disponible en la informacion proporcionada | apache-2.0 | HuggingFace |
-| openai/whisper-small | ~244 M (dato publico de la familia Whisper) | 30 s por ventana | no disponible en la informacion proporcionada | apache-2.0 | HuggingFace |
+| Este modelo (whisper-tiny fine-tuned) | 37,76 M | 30 s por ventana | 12,29 en `Spanish_english` (no verificado) | apache-2.0 | Hugging Face |
+| openai/whisper-tiny (base) | ~39 M (dato publico de la familia Whisper) | 30 s por ventana | no disponible en la informacion proporcionada | apache-2.0 | Hugging Face, ampliamente desplegado |
+| openai/whisper-base | ~74 M (dato publico de la familia Whisper) | 30 s por ventana | no disponible en la informacion proporcionada | apache-2.0 | Hugging Face |
+| openai/whisper-small | ~244 M (dato publico de la familia Whisper) | 30 s por ventana | no disponible en la informacion proporcionada | apache-2.0 | Hugging Face |
 
 No es posible establecer una comparacion cuantitativa de calidad: el unico WER publicado corresponde a un dataset privado del autor y no se ha evaluado el modelo base sobre el mismo corpus. En terminos de coste, este modelo compite con `whisper-tiny` base (mismo orden de magnitud de parametros) y queda por debajo de `whisper-base` y `whisper-small` en capacidad teorica.
 
@@ -98,11 +98,11 @@ No es posible establecer una comparacion cuantitativa de calidad: el unico WER p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mikaelaehunter/whisper-tiny_to_spanish_accent_09oct
+- Modelo en Hugging Face: https://huggingface.co/mikaelaehunter/whisper-tiny_to_spanish_accent_09oct
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - Documentacion de `transformers` para Whisper: https://huggingface.co/docs/transformers/model_doc/whisper
-- Tabla de liderazgo ASR de HuggingFace: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard
+- Tabla de liderazgo ASR de Hugging Face: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard
 - Implementacion optimizada faster-whisper: https://github.com/SYSTRAN/faster-whisper
 - Implementacion en C/C++ whisper.cpp: https://github.com/ggerganov/whisper.cpp

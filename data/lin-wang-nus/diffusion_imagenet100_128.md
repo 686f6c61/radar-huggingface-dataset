@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Lin-Wang-NUS/Diffusion_ImageNet100_128` es un repositorio de pesos alojado en HuggingFace por el usuario Lin-Wang-NUS, publicado bajo licencia Apache 2.0 y con un tamano de 4,7 GB. Por la nomenclatura del identificador y por el tamaNo del repositorio, todo apunta a un modelo de difusion para generacion de imagenes entrenado sobre un subconjunto de 100 clases de ImageNet a una resolucion de 128x128 pixeles, pero esto es una inferencia a partir del nombre: la model card publicada esta practicamente vacia (solo contiene la linea de licencia), por lo que no hay confirmacion oficial de la arquitectura, del paradigma de acondicionamiento ni del proceso de entrenamiento.
+`Lin-Wang-NUS/Diffusion_ImageNet100_128` es un repositorio de pesos alojado en Hugging Face por el usuario Lin-Wang-NUS, publicado bajo licencia Apache 2.0 y con un tamano de 4,7 GB. Por la nomenclatura del identificador y por el tamaNo del repositorio, todo apunta a un modelo de difusion para generacion de imagenes entrenado sobre un subconjunto de 100 clases de ImageNet a una resolucion de 128x128 pixeles, pero esto es una inferencia a partir del nombre: la model card publicada esta practicamente vacia (solo contiene la linea de licencia), por lo que no hay confirmacion oficial de la arquitectura, del paradigma de acondicionamiento ni del proceso de entrenamiento.
 
 El interes practico del repositorio es limitado pero real para investigacion: los modelos de difusion a baja resolucion sobre subconjuntos reducidos de ImageNet son utiles como baseline reproducible, para estudiar tecnicas de muestreo, para experimentos de destilacion o como generador de datos sinteticos en pipelines de aumento de datos. Al tratarse de un modelo de 128 px, no esta pensado para produccion grafica ni para generacion fotorrealista de alta resolucion.
 
@@ -90,7 +90,7 @@ Las cifras de parametros de las alternativas corresponden a la literatura public
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lin-Wang-NUS/Diffusion_ImageNet100_128
+- Hugging Face: https://huggingface.co/Lin-Wang-NUS/Diffusion_ImageNet100_128
 - Paper, blog o repositorio asociado: no disponible
 - Demo o Space: no disponible
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante al modelo; los resultados devueltos (LinkedIn y articulos sobre el cultivo del lino) no guardan relacion con este repositorio.

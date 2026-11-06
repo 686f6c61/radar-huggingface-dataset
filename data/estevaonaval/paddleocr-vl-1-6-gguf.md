@@ -4,7 +4,7 @@
 
 PaddleOCR-VL-1.6 es un modelo de visión-lenguaje especializado en el análisis y parsing de documentos, desarrollado por el equipo de PaddlePaddle. Se presenta como una evolución de PaddleOCR-VL-1.5, con un enfoque en la optimización de regiones poco aprovechadas del modelo anterior y un esquema de post-entrenamiento progresivo. El modelo procesa imágenes de documentos y extrae texto estructurado con información de disposición espacial, alcanzando un 96,33 % de precisión en el benchmark OmniDocBench v1.6.
 
-Con aproximadamente 466 millones de parámetros (0,9 B según la documentación oficial), el modelo está diseñado para un despliegue compacto mediante cuantización GGUF, lo que lo hace adecuado para entornos con recursos limitados. La licencia Apache-2.0 permite uso comercial sin restricciones significativas. Esta versión GGUF, publicada por el usuario EstevaoNaval en HuggingFace, es una conversión del modelo original para su uso con motores de inferencia compatibles con este formato.
+Con aproximadamente 466 millones de parámetros (0,9 B según la documentación oficial), el modelo está diseñado para un despliegue compacto mediante cuantización GGUF, lo que lo hace adecuado para entornos con recursos limitados. La licencia Apache-2.0 permite uso comercial sin restricciones significativas. Esta versión GGUF, publicada por el usuario EstevaoNaval en Hugging Face, es una conversión del modelo original para su uso con motores de inferencia compatibles con este formato.
 
 ## Especificaciones técnicas
 
@@ -80,8 +80,8 @@ No se dispone de datos suficientes para una comparativa exhaustiva con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace (conversion GGUF): https://huggingface.co/EstevaoNaval/PaddleOCR-VL-1.6-GGUF
-- Repositorio HuggingFace (modelo original): https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6-GGUF
+- Repositorio Hugging Face (conversion GGUF): https://huggingface.co/EstevaoNaval/PaddleOCR-VL-1.6-GGUF
+- Repositorio Hugging Face (modelo original): https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6-GGUF
 - ModelScope: https://www.modelscope.cn/models/PaddlePaddle/PaddleOCR-VL-1.6-GGUF
 - Repositorio GitHub de PaddleOCR: https://github.com/PaddlePaddle/PaddleOCR
 - Tutorial de uso de PaddleOCR-VL: https://www.paddleocr.ai/main/en/version3.x/pipeline_usage/PaddleOCR-VL.html

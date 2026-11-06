@@ -1,7 +1,7 @@
 # waxal-benchmarking/voxcpm2-multilang10-full
 
 ## Resumen
-voxcpm2-multilang10-full es un checkpoint alojado en HuggingFace por el usuario waxal-benchmarking. Por la nomenclatura del repositorio, remite a la familia VoxCPM2 (familia VoxCPM de sintesis de voz de OpenBMB) y al proyecto Waxal, un esfuerzo de evaluacion comparativa (benchmarking) centrado en lenguas con pocos recursos. El sufijo "multilang10" apunta a un ajuste sobre diez idiomas y "full" a un ajuste fino completo de los pesos, en lugar de un adaptador LoRA. Ninguno de estos extremos viene confirmado en la metadata publica del repositorio.
+voxcpm2-multilang10-full es un checkpoint alojado en Hugging Face por el usuario waxal-benchmarking. Por la nomenclatura del repositorio, remite a la familia VoxCPM2 (familia VoxCPM de sintesis de voz de OpenBMB) y al proyecto Waxal, un esfuerzo de evaluacion comparativa (benchmarking) centrado en lenguas con pocos recursos. El sufijo "multilang10" apunta a un ajuste sobre diez idiomas y "full" a un ajuste fino completo de los pesos, en lugar de un adaptador LoRA. Ninguno de estos extremos viene confirmado en la metadata publica del repositorio.
 
 El dato duro disponible es el recuento de parametros leido de los safetensors: 2.290.029.120 (unos 2,29 mil millones). El repositorio ocupa 1.099,6 GB, un tamano muy superior al que corresponderia a un unico checkpoint de ese tamano (en fp32 serian unos 9,2 GB), lo que sugiere que contiene multiples versiones por idioma, estados intermedios de entrenamiento o artefactos adicionales. No se han publicado ni la licencia, ni el pipeline, ni los idiomas exactos, ni la longitud de contexto.
 
@@ -21,7 +21,7 @@ Dada la escasez de informacion tecnica en la ficha del repositorio, en los apart
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
-La metadata de HuggingFace no incluye informacion sobre arquitectura, volumen de tokens de entrenamiento, composicion del dataset ni sobre si se aplicaron tecnicas de alineacion como RLHF o DPO. Tampoco se especifica el regimen de entrenamiento ni el numero de pasos. No hay, por tanto, datos confirmados sobre estos extremos.
+La metadata de Hugging Face no incluye informacion sobre arquitectura, volumen de tokens de entrenamiento, composicion del dataset ni sobre si se aplicaron tecnicas de alineacion como RLHF o DPO. Tampoco se especifica el regimen de entrenamiento ni el numero de pasos. No hay, por tanto, datos confirmados sobre estos extremos.
 
 Atendiendo unicamente a la nomenclatura, el modelo derivaria de VoxCPM2, dentro de la familia VoxCPM de OpenBMB, que trabaja con generacion de habla sin tokenizer (representaciones de audio continuas generadas por un modelo de lenguaje con decodificador asociado) y soporta clonacion de voz con audio de referencia. El sufijo "full" apunta a un ajuste fino completo y "multilang10" a un entrenamiento multilingue sobre diez lenguas, en linea con el enfoque de Waxal sobre idiomas africanos. Estas afirmaciones son inferencias a partir del nombre del repositorio y no estan verificadas por la informacion disponible, por lo que deben tomarse con cautela.
 
@@ -79,6 +79,6 @@ Los datos de parametros de los modelos comparados son aproximados y pueden varia
 - Uso etico: la clonacion de voz exige consentimiento explicito de la persona cuya voz se replica y cumple de la normativa aplicable en materia de datos y derechos de imagen.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/waxal-benchmarking/voxcpm2-multilang10-full
+- Repositorio en Hugging Face: https://huggingface.co/waxal-benchmarking/voxcpm2-multilang10-full
 
 No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

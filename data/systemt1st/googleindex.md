@@ -57,5 +57,5 @@ No disponible. No existe información técnica que permita comparar este reposit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/systemt1st/googleindex
+- Repositorio en Hugging Face: https://huggingface.co/systemt1st/googleindex
 - No se han encontrado papers, blogs o demos técnicos relacionados con este repositorio. Los enlaces de la model card apuntan a un sitio web comercial de SEO (top233.com) y no a recursos técnicos.

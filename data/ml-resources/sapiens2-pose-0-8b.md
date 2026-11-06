@@ -25,7 +25,7 @@ Su relevancia actual esta en el nicho de la vision centrada en el ser humano: fr
 | Cabezas de atencion | 16 |
 | Patch size | 16 |
 | FLOPs del backbone | 2,592 T por imagen |
-| Pipeline (HuggingFace) | keypoint-detection |
+| Pipeline (Hugging Face) | keypoint-detection |
 | Biblioteca | sapiens2 |
 | Tamano del repositorio | 3,4 GB |
 | Modelo base | facebook/sapiens2-pretrain-0.8b |
@@ -100,13 +100,13 @@ Comparativa con alternativas externas de la misma categoria (por ejemplo MMPose 
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/ml-resources/sapiens2-pose-0.8b
+- Repositorio espejo en Hugging Face: https://huggingface.co/ml-resources/sapiens2-pose-0.8b
 - Repositorio original del checkpoint: https://huggingface.co/facebook/sapiens2-pose-0.8b
 - Backbone preentrenado base: https://huggingface.co/facebook/sapiens2-pretrain-0.8b
 - Variante Sapiens2-0.4B: https://huggingface.co/facebook/sapiens2-pose-0.4b
 - Variante Sapiens2-1B: https://huggingface.co/facebook/sapiens2-pose-1b
 - Variante Sapiens2-5B: https://huggingface.co/facebook/sapiens2-pose-5b
-- Coleccion Sapiens2 en HuggingFace: https://huggingface.co/collections/facebook/sapiens2
+- Coleccion Sapiens2 en Hugging Face: https://huggingface.co/collections/facebook/sapiens2
 - Paper: https://arxiv.org/pdf/2604.21681
 - Pagina del proyecto: https://rawalkhirodkar.github.io/sapiens2
 - Codigo fuente: https://github.com/facebookresearch/sapiens2

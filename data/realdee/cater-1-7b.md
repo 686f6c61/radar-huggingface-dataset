@@ -2,11 +2,11 @@
 
 ## Resumen
 
-CATER-1.7B es un ajuste fino del modelo denso Qwen3-1.7B publicado por el usuario RealDee (Dee Lv) en HuggingFace. Segun la model card, se trata del checkpoint step32 de un experimento de OPSD (del ingles *on-policy self-distillation*, segun la propia nomenclatura del autor) orientado a precision en tareas de matematicas y *continued pretraining* sobre GSM, reanudado desde el step16 y con un reparto fijo del 10 % en la norma de gradiente de la rama OPSD. El resultado es un modelo completo fusionado en BF16, no un adaptador LoRA, con tokenizador y plantilla de chat incluidos.
+CATER-1.7B es un ajuste fino del modelo denso Qwen3-1.7B publicado por el usuario RealDee (Dee Lv) en Hugging Face. Segun la model card, se trata del checkpoint step32 de un experimento de OPSD (del ingles *on-policy self-distillation*, segun la propia nomenclatura del autor) orientado a precision en tareas de matematicas y *continued pretraining* sobre GSM, reanudado desde el step16 y con un reparto fijo del 10 % en la norma de gradiente de la rama OPSD. El resultado es un modelo completo fusionado en BF16, no un adaptador LoRA, con tokenizador y plantilla de chat incluidos.
 
 El modelo resuelve el caso de uso de razonamiento matematico y conversacional en un tamano que cabe en GPU de consumo. Con 1.720.574.976 parametros (1,72 B), pesos en safetensors BF16 y licencia Apache 2.0, se situa en la franja de modelos pequenos de razonamiento, donde compite con destilaciones tipo DeepSeek-R1-Distill-Qwen-1.5B o con el propio Qwen3-1.7B sin ajustar. Su relevancia actual es limitada por el momento: el repositorio registra 0 descargas y 0 *likes*, y el autor no publica resultados de evaluacion propios.
 
-Hay dos avisos importantes de trazabilidad. Primero, la model card se titula "Efficient-1.7B" y el fragmento de carga apunta al identificador `RealDee/Efficient-1.7B`, mientras que la ficha de HuggingFace corresponde a `RealDee/CATER-1.7B`; segundo, el autor indica que el repositorio esta alojado en ModelScope CN y que no se distribuyen estados de optimizador, datos de entrenamiento ni salidas crudas de evaluacion.
+Hay dos avisos importantes de trazabilidad. Primero, la model card se titula "Efficient-1.7B" y el fragmento de carga apunta al identificador `RealDee/Efficient-1.7B`, mientras que la ficha de Hugging Face corresponde a `RealDee/CATER-1.7B`; segundo, el autor indica que el repositorio esta alojado en ModelScope CN y que no se distribuyen estados de optimizador, datos de entrenamiento ni salidas crudas de evaluacion.
 
 ## Especificaciones tecnicas
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM en cuantizacion de 8 bits: del orden de 2 GB de pesos; en 4 bits, en torno a 1 GB, siempre que el usuario genere sus propios pesos cuantizados, ya que el autor no los publica.
 - GPU recomendadas en BF16: NVIDIA RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090, L4, A10G, A100 y H100. Cualquier GPU con 6 GB o mas de VRAM puede ejecutarlo sin cuantizar en contextos moderados.
 - Cabe en GPU de consumo: si, de forma holgada. Es un modelo apto para una unica RTX 3060, una RTX 4090 o incluso una GPU integrada con memoria compartida si se cuantiza a 4 bits.
-- Opciones de despliegue: `transformers` con Accelerate (`device_map="auto"`), Text Generation Inference (TGI) y endpoints compatibles con la API de HuggingFace, segun las etiquetas del repositorio. vLLM es compatible al tratarse de un modelo Qwen3 denso, aunque no aparece citado en la model card. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF.
+- Opciones de despliegue: `transformers` con Accelerate (`device_map="auto"`), Text Generation Inference (TGI) y endpoints compatibles con la API de Hugging Face, segun las etiquetas del repositorio. vLLM es compatible al tratarse de un modelo Qwen3 denso, aunque no aparece citado en la model card. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF.
 - Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de latencia por peticion.
 
 ## Comparativa con modelos similares
@@ -67,10 +67,10 @@ No hay datos de rendimiento publicados para CATER-1.7B, por lo que la comparacio
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CATER-1.7B (este) | 1,72 B | No confirmado en la model card | Apache 2.0 | HuggingFace y ModelScope CN |
-| Qwen3-1.7B (base) | 1,72 B | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,5 B | 32.768 tokens | MIT | HuggingFace |
-| Llama-3.2-1B | 1,23 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace |
+| CATER-1.7B (este) | 1,72 B | No confirmado en la model card | Apache 2.0 | Hugging Face y ModelScope CN |
+| Qwen3-1.7B (base) | 1,72 B | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,5 B | 32.768 tokens | MIT | Hugging Face |
+| Llama-3.2-1B | 1,23 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face |
 
 Rendimiento comparado: no disponible. No se han publicado metricas de CATER-1.7B frente a ninguno de estos modelos, y las diferencias de contexto y licencia son los unicos ejes de decision verificables con la informacion actual.
 
@@ -79,8 +79,8 @@ Rendimiento comparado: no disponible. No se han publicado metricas de CATER-1.7B
 - El autor advierte expresamente de que el modelo puede producir razonamiento, respuestas o codigo incorrectos, y recomienda evaluarlo antes de cualquier uso previsto.
 - Riesgo de alucinacion propio de un modelo de 1,72 B: la capacidad de mantener coherencia factual en contextos largos es limitada en comparacion con modelos de mayor tamano.
 - No hay resultados de benchmarks publicados ni salidas de evaluacion crudas, por lo que no es posible verificar la mejora frente al Qwen3-1.7B original.
-- Ambiguedad de identificacion: la model card se titula "Efficient-1.7B" y el codigo de carga apunta a `RealDee/Efficient-1.7B`, mientras que el repositorio de HuggingFace es `RealDee/CATER-1.7B`. Conviene verificar cual es el artefacto correcto antes de integrarlo.
-- El autor indica que el repositorio esta alojado en ModelScope CN y que puede requerir autenticacion; la disponibilidad del mismo checkpoint en HuggingFace no queda confirmada en la documentacion.
+- Ambiguedad de identificacion: la model card se titula "Efficient-1.7B" y el codigo de carga apunta a `RealDee/Efficient-1.7B`, mientras que el repositorio de Hugging Face es `RealDee/CATER-1.7B`. Conviene verificar cual es el artefacto correcto antes de integrarlo.
+- El autor indica que el repositorio esta alojado en ModelScope CN y que puede requerir autenticacion; la disponibilidad del mismo checkpoint en Hugging Face no queda confirmada en la documentacion.
 - No se distribuyen datos de entrenamiento, estados de optimizador ni credenciales de acceso, lo que impide auditar la composicion del dataset y reproducir el ajuste de forma completa.
 - No se declaran los idiomas soportados; el comportamiento fuera del ingles y el chino es incierto.
 - La longitud de contexto efectiva de este checkpoint no esta confirmada por el autor y no se debe asumir la del modelo base sin verificacion empirica.
@@ -89,7 +89,7 @@ Rendimiento comparado: no disponible. No se han publicado metricas de CATER-1.7B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RealDee/CATER-1.7B
+- Modelo en Hugging Face: https://huggingface.co/RealDee/CATER-1.7B
 - Perfil del autor: https://huggingface.co/RealDee
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Referencia de ModelScope citada en la model card: `RealDee/Efficient-1.7B` (identificador del autor, no verificado)

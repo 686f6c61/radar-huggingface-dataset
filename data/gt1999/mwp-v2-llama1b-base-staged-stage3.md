@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GT1999/mwp-v2-llama1b-base-staged-stage3
+- Repositorio Hugging Face: https://huggingface.co/GT1999/mwp-v2-llama1b-base-staged-stage3
 - Repositorio de codigo (GitHub): https://github.com/gadmin7/mwp_ai4math_icml_v2
 - Variante relacionada (b7 stage3): https://huggingface.co/GT1999/mwp-v2-llama1b-b7-stage3
 - Busqueda de modelos con tag mwp-v2: https://huggingface.co/models?other=mwp-v2

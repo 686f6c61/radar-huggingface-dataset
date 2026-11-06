@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vaenarisko/indobert-user-review` es un modelo publicado en HuggingFace por el usuario vaenarisko bajo licencia MIT. Por el identificador se deduce que se trata de un modelo basado en IndoBERT, la familia de modelos BERT preentrenados en indonesio desarrollada por IndoLEM/IndoNLU, y que su propósito sería el análisis de reseñas de usuarios en ese idioma. Sin embargo, la model card publicada no incluye ninguna descripción, datos de entrenamiento, métricas ni instrucciones de uso: únicamente contiene la etiqueta de licencia.
+`vaenarisko/indobert-user-review` es un modelo publicado en Hugging Face por el usuario vaenarisko bajo licencia MIT. Por el identificador se deduce que se trata de un modelo basado en IndoBERT, la familia de modelos BERT preentrenados en indonesio desarrollada por IndoLEM/IndoNLU, y que su propósito sería el análisis de reseñas de usuarios en ese idioma. Sin embargo, la model card publicada no incluye ninguna descripción, datos de entrenamiento, métricas ni instrucciones de uso: únicamente contiene la etiqueta de licencia.
 
 El repositorio no declara pipeline, idiomas soportados, arquitectura ni tamaño, y en el momento de la consulta registra 0 descargas y 1 like, lo que indica que es un artefacto recién creado y sin validación por parte de la comunidad. La fecha de creación y de última actualización coinciden (3 de noviembre de 2026), sin revisiones posteriores.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| vaenarisko/indobert-user-review | no disponible | no disponible | MIT | HuggingFace, sin documentación |
-| IndoBERT (indolem/indobert-base-uncased) | ~110M (referencia de la familia) | 512 tokens (referencia de BERT base) | no disponible en esta ficha | HuggingFace, ampliamente documentado |
-| XLM-RoBERTa base | ~278M (referencia) | 512 tokens (referencia) | MIT | HuggingFace, multilingüe |
-| mBERT | ~178M (referencia) | 512 tokens (referencia) | no disponible en esta ficha | HuggingFace, multilingüe |
+| vaenarisko/indobert-user-review | no disponible | no disponible | MIT | Hugging Face, sin documentación |
+| IndoBERT (indolem/indobert-base-uncased) | ~110M (referencia de la familia) | 512 tokens (referencia de BERT base) | no disponible en esta ficha | Hugging Face, ampliamente documentado |
+| XLM-RoBERTa base | ~278M (referencia) | 512 tokens (referencia) | MIT | Hugging Face, multilingüe |
+| mBERT | ~178M (referencia) | 512 tokens (referencia) | no disponible en esta ficha | Hugging Face, multilingüe |
 
 Los datos de los modelos comparativos son referencias generales de sus familias y no proceden de la información proporcionada sobre este repositorio; deben verificarse en sus respectivas model cards antes de usarse en una decisión técnica.
 
@@ -80,5 +80,5 @@ Los datos de los modelos comparativos son referencias generales de sus familias 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vaenarisko/indobert-user-review
+- Hugging Face: https://huggingface.co/vaenarisko/indobert-user-review
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

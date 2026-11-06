@@ -2,9 +2,9 @@
 
 ## Resumen
 
-CLIP-ViT-B-32-UNSAFE es un checkpoint de CLIP (Contrastive Language-Image Pre-training) con backbone ViT-B/32, publicado por el usuario bn22 en HuggingFace. Se trata de una variante del modelo original de OpenAI (referenciado con el paper arXiv:1910.09700) cuyo nombre sugiere un ajuste o especializacion orientada a la deteccion de contenido no seguro. El pipeline declarado es `zero-shot-image-classification`, lo que lo situa en la categoria de modelos vision-lenguaje para clasificacion de imagenes sin entrenamiento especifico por clase.
+CLIP-ViT-B-32-UNSAFE es un checkpoint de CLIP (Contrastive Language-Image Pre-training) con backbone ViT-B/32, publicado por el usuario bn22 en Hugging Face. Se trata de una variante del modelo original de OpenAI (referenciado con el paper arXiv:1910.09700) cuyo nombre sugiere un ajuste o especializacion orientada a la deteccion de contenido no seguro. El pipeline declarado es `zero-shot-image-classification`, lo que lo situa en la categoria de modelos vision-lenguaje para clasificacion de imagenes sin entrenamiento especifico por clase.
 
-El modelo cuenta con 153.639.680 parametros en formato safetensors y un repositorio de 2,5 GB. La model card es una plantilla autogenerada por HuggingFace sin informacion sustantiva: no se documenta el proceso de ajuste, los datos utilizados ni la evaluacion. Por tanto, la mayor parte de las especificaciones tecnicas deben inferirse de la arquitectura CLIP ViT-B/32 de referencia, no de la documentacion del autor.
+El modelo cuenta con 153.639.680 parametros en formato safetensors y un repositorio de 2,5 GB. La model card es una plantilla autogenerada por Hugging Face sin informacion sustantiva: no se documenta el proceso de ajuste, los datos utilizados ni la evaluacion. Por tanto, la mayor parte de las especificaciones tecnicas deben inferirse de la arquitectura CLIP ViT-B/32 de referencia, no de la documentacion del autor.
 
 Su relevancia practica radica en el uso como clasificador zero-shot para moderacion de contenido visual en pipelines de filtrado. No obstante, la ausencia de documentacion, la licencia no declarada y el bajo numero de descargas (161) obligan a tratarlo con cautela antes de cualquier despliegue en produccion.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto de texto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bn22/CLIP-ViT-B-32-UNSAFE | 153,6 M | no disponible (77 tokens en CLIP de referencia) | Clasificacion zero-shot de imagenes | no disponible | HuggingFace (161 descargas) |
-| openai/clip-vit-base-patch32 | ~151 M | 77 tokens | Clasificacion zero-shot de imagenes | Licencia MIT (modelo original de OpenAI) | HuggingFace, ampliamente adoptado |
-| openai/clip-vit-large-patch14 | ~428 M | 77 tokens | Clasificacion zero-shot de imagenes | Licencia MIT (modelo original de OpenAI) | HuggingFace, ampliamente adoptado |
-| laion/CLIP-ViT-B-32-laion2B-s34B-b79K | ~151 M | 77 tokens | Clasificacion zero-shot de imagenes | Licencia MIT | HuggingFace |
+| bn22/CLIP-ViT-B-32-UNSAFE | 153,6 M | no disponible (77 tokens en CLIP de referencia) | Clasificacion zero-shot de imagenes | no disponible | Hugging Face (161 descargas) |
+| openai/clip-vit-base-patch32 | ~151 M | 77 tokens | Clasificacion zero-shot de imagenes | Licencia MIT (modelo original de OpenAI) | Hugging Face, ampliamente adoptado |
+| openai/clip-vit-large-patch14 | ~428 M | 77 tokens | Clasificacion zero-shot de imagenes | Licencia MIT (modelo original de OpenAI) | Hugging Face, ampliamente adoptado |
+| laion/CLIP-ViT-B-32-laion2B-s34B-b79K | ~151 M | 77 tokens | Clasificacion zero-shot de imagenes | Licencia MIT | Hugging Face |
 
 La comparativa se basa en la arquitectura de referencia CLIP; no hay datos de rendimiento del checkpoint UNSAFE que permitan una comparacion cuantitativa.
 
@@ -88,7 +88,7 @@ La comparativa se basa en la arquitectura de referencia CLIP; no hay datos de re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bn22/CLIP-ViT-B-32-UNSAFE
+- Modelo en Hugging Face: https://huggingface.co/bn22/CLIP-ViT-B-32-UNSAFE
 - Paper de referencia de CLIP (arXiv:1910.09700): https://arxiv.org/abs/1910.09700
-- Modelo base de referencia en HuggingFace: https://huggingface.co/openai/clip-vit-base-patch32
+- Modelo base de referencia en Hugging Face: https://huggingface.co/openai/clip-vit-base-patch32
 - Documentacion de CLIP en transformers: https://huggingface.co/docs/transformers/model_doc/clip

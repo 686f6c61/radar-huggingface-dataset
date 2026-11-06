@@ -84,9 +84,9 @@ La comparativa muestra que el modelo de NVIDIA ofrece una ventana de contexto mu
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversion GGUF: https://huggingface.co/impacte/NVIDIA-Nemotron-3.5-Lightning-GGUF
-- Modelo base BF16 en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
-- Modelo base NVFP4 en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
+- Repositorio Hugging Face de la conversion GGUF: https://huggingface.co/impacte/NVIDIA-Nemotron-3.5-Lightning-GGUF
+- Modelo base BF16 en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
+- Modelo base NVFP4 en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
 - Blog de NVIDIA sobre Nemotron 3.5 Lightning: https://developer.nvidia.com/blog/nvidia-nemotron-3-5-lightning-delivers-fast-accurate-specialized-task-execution-for-long-running-agents/
 - Model card en NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard
 - Pagina de despliegue en NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b

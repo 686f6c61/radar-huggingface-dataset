@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento numérico de este checkpoint ni de alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l3_utility_remove0.4_rho0.001
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l3_utility_remove0.4_rho0.001
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Llama 3: https://llama.meta.com/llama3/license/
 - Ficheros de experimento y diagnóstico: disponibles en el repositorio (`experiment/`, `compression.json`) según la model card.

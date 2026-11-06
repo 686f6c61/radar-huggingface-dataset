@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `grisselblanco/03-keras-regresion` | 3 pesos + 1 sesgo (+ normalización) | no aplica | MAE 3,10; R² 0,989 (test sintético) | MIT | HuggingFace |
+| `grisselblanco/03-keras-regresion` | 3 pesos + 1 sesgo (+ normalización) | no aplica | MAE 3,10; R² 0,989 (test sintético) | MIT | Hugging Face |
 | Ejemplo equivalente en scikit-learn (misma tarea, Clase 10) | Modelo lineal | no aplica | no disponible en la información | no disponible | Referenciado en la model card |
 | Ejemplo equivalente en PyTorch (misma tarea, Clase 10) | Modelo lineal | no aplica | no disponible en la información | no disponible | Referenciado en la model card |
 
@@ -87,5 +87,5 @@ La comparativa relevante es frente a las implementaciones gemelas en scikit-lear
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grisselblanco/03-keras-regresion
+- Modelo en Hugging Face: https://huggingface.co/grisselblanco/03-keras-regresion
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

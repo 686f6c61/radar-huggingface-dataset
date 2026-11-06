@@ -80,8 +80,8 @@ SukhiaV1.0 se diferencia de CodeLlama y DeepSeek-Coder en que no es un modelo en
 
 ## Enlaces
 
-- [HuggingFace - dipeshsukhia/Sukhia](https://huggingface.co/dipeshsukhia/Sukhia)
-- [HuggingFace - dipeshsukhia/SukhiaV1.0](https://huggingface.co/dipeshsukhia/SukhiaV1.0)
+- [Hugging Face - dipeshsukhia/Sukhia](https://huggingface.co/dipeshsukhia/Sukhia)
+- [Hugging Face - dipeshsukhia/SukhiaV1.0](https://huggingface.co/dipeshsukhia/SukhiaV1.0)
 - [GitHub - dipeshsukhia/Sukhia](https://github.com/dipeshsukhia/Sukhia)
 - [Perfil GitHub - dipeshsukhia](https://github.com/dipeshsukhia)
 - [Sitio personal - Dipesh Sukhia](https://dipeshsukhia.github.io/)

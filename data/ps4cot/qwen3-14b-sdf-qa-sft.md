@@ -79,7 +79,7 @@ El modelo se diferencia del base por su fine-tuning especifico y por su proposit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PS4CoT/qwen3-14b-sdf-qa-sft
+- Modelo en Hugging Face: https://huggingface.co/PS4CoT/qwen3-14b-sdf-qa-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Repositorio de entrenamiento y evaluacion (CoT-Verse): https://github.com/ps-research/CoT-Verse
 - Modelo relacionado PS4Research: https://huggingface.co/PS4Research/qa-sft-qwen3-14b

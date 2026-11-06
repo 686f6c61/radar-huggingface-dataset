@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dama-aibrain es un ajuste fino (finetune) del modelo Gemma 2 2B IT de Google, publicado por el usuario devorah-ai-2016 en HuggingFace. Concretamente, parte de la versión cuantizada a 4 bits preparada por Unsloth (unsloth/gemma-2-2b-it-bnb-4bit) y, según su propia model card, se entrenó con la librería Unsloth junto con TRL de HuggingFace. La model card no aporta ningún detalle sobre el dataset, el número de tokens, los hiperparámetros ni el procedimiento de ajuste.
+dama-aibrain es un ajuste fino (finetune) del modelo Gemma 2 2B IT de Google, publicado por el usuario devorah-ai-2016 en Hugging Face. Concretamente, parte de la versión cuantizada a 4 bits preparada por Unsloth (unsloth/gemma-2-2b-it-bnb-4bit) y, según su propia model card, se entrenó con la librería Unsloth junto con TRL de Hugging Face. La model card no aporta ningún detalle sobre el dataset, el número de tokens, los hiperparámetros ni el procedimiento de ajuste.
 
 Por herencia del modelo base, se trata de un transformer decoder-only de aproximadamente 2,6 mil millones de parámetros con una ventana de contexto de 8192 tokens, orientado a generación de texto conversacional en inglés. La arquitectura y las capacidades subyacentes corresponden a Gemma 2 2B IT, no a innovaciones introducidas por este finetune, que en la información disponible no documenta ninguna modificación estructural.
 
@@ -88,8 +88,8 @@ No se dispone de datos de rendimiento para ninguno de estos modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devorah-ai-2016/dama-aibrain
+- Modelo en Hugging Face: https://huggingface.co/devorah-ai-2016/dama-aibrain
 - Modelo base (Unsloth, 4 bits): https://huggingface.co/unsloth/gemma-2-2b-it-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo; las referencias devueltas por la búsqueda trataban sobre alimentación y salud digestiva y no guardan relación con el modelo.

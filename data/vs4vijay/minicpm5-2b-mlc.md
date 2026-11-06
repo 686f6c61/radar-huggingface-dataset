@@ -106,7 +106,7 @@ Frente a otros modelos de ~2B ejecutables en navegador, la informacion disponibl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vs4vijay/MiniCPM5-2B-MLC
+- Repositorio en Hugging Face: https://huggingface.co/vs4vijay/MiniCPM5-2B-MLC
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Issue de mlc-llm sobre q3f16_1: https://github.com/mlc-ai/mlc-llm/issues/2700
 - Issue de web-llm sobre soporte de q3f16: https://github.com/mlc-ai/web-llm/issues/630

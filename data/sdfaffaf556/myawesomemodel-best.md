@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-best es un modelo publicado en HuggingFace por el usuario sdfaffaf556 bajo licencia MIT. Segun las etiquetas del repositorio, se trata de un modelo de tipo BERT implementado con la libreria transformers y PyTorch, orientado a tareas de extraccion de caracteristicas (feature-extraction), es decir, a producir representaciones vectoriales de texto en lugar de generar texto de forma autoregresiva. El repositorio esta marcado como compatible con endpoints, lo que sugiere que su autoria lo concibe para su despliegue como servicio de inferencia.
+MyAwesomeModel-best es un modelo publicado en Hugging Face por el usuario sdfaffaf556 bajo licencia MIT. Segun las etiquetas del repositorio, se trata de un modelo de tipo BERT implementado con la libreria transformers y PyTorch, orientado a tareas de extraccion de caracteristicas (feature-extraction), es decir, a producir representaciones vectoriales de texto en lugar de generar texto de forma autoregresiva. El repositorio esta marcado como compatible con endpoints, lo que sugiere que su autoria lo concibe para su despliegue como servicio de inferencia.
 
 La relevancia de este modelo es, a dia de hoy, muy limitada. El repositorio acumula 0 descargas y 0 likes, fue creado y actualizado el 15 de septiembre de 2026 (con apenas seis minutos de diferencia entre ambos eventos) y su tamano declarado es de 0.0 GB, lo que apunta a que no contiene pesos publicados o que estos no se han subido. La model card unicamente incluye una tabla de resultados de evaluacion sin describir arquitectura, datos de entrenamiento, tokenizador ni procedimiento de evaluacion.
 
@@ -82,7 +82,7 @@ No se han publicado resultados comparativos verificables en la informacion dispo
 - VRAM para inferencia: no disponible. Al no publicarse el numero de parametros ni el formato de pesos, no es posible calcular un requisito fiable.
 - GPU recomendadas: no disponible por la misma razon.
 - Viabilidad en GPU de consumo: no determinable. Si el modelo resultase ser una variante BERT de escala base (del orden de 110 millones de parametros), cabria en GPU de consumo con 4-6 GB de VRAM en precision completa y bastante menos en cuantizacion de 8 bits; se trata de una hipotesis condicional, no de un dato publicado.
-- Opciones de despliegue: al estar etiquetado como `transformers` y `pytorch`, en teoria seria desplegable con la pila de HuggingFace (Transformers, Text Embeddings Inference) y potencialmente con ONNX Runtime u otros runtimes de encoders. No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI, herramientas orientadas a modelos generativos o a formatos GGUF que no se declaran.
+- Opciones de despliegue: al estar etiquetado como `transformers` y `pytorch`, en teoria seria desplegable con la pila de Hugging Face (Transformers, Text Embeddings Inference) y potencialmente con ONNX Runtime u otros runtimes de encoders. No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI, herramientas orientadas a modelos generativos o a formatos GGUF que no se declaran.
 - Latencia y throughput: no disponible.
 - Nota critica: el repositorio figura con 0.0 GB y 0 descargas, por lo que es probable que no existan pesos descargables y que el modelo no sea ejecutable en la practica sin que el autor los publique.
 
@@ -113,7 +113,7 @@ Frente a estas alternativas, MyAwesomeModel-best no aporta en la informacion dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sdfaffaf556/MyAwesomeModel-best
+- Modelo en Hugging Face: https://huggingface.co/sdfaffaf556/MyAwesomeModel-best
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

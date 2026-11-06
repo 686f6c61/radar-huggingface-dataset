@@ -134,7 +134,7 @@ Las cifras de esta seccion son estimaciones orientativas derivadas del numero de
 
 | Modelo | Parametros | Contexto | Accuracy OOD (transfer-v4 dev) | Brier OOD | Test bloqueado (acc. / Brier) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Kev-9B | ~9B (base) + 45,4M (adaptador) | no disponible | 0,812 | 0,291 | 0,837 / 0,243 | apache-2.0 | HuggingFace, adaptador PEFT |
+| Kev-9B | ~9B (base) + 45,4M (adaptador) | no disponible | 0,812 | 0,291 | 0,837 / 0,243 | apache-2.0 | Hugging Face, adaptador PEFT |
 | Kev-8B (Qwen3) | ~8B + adaptador | no disponible | 0,796 | 0,337 | 0,780 / 0,327 | no disponible | Referencia interna del proyecto |
 | Kev-4B | ~4B + adaptador | no disponible | 0,794 | 0,316 | 0,832 / 0,266 | no disponible | Referencia interna del proyecto |
 | Jev | no disponible | no disponible | 0,857 | 0,211 | no disponible | no disponible | Modelo de referencia del autor |
@@ -157,7 +157,7 @@ Jev es el sistema de referencia con el que el autor compara: gana en accuracy fu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jaredpalmer/kev-9b
+- Repositorio Hugging Face: https://huggingface.co/jaredpalmer/kev-9b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Repositorio de codigo, suites y experimentos: https://github.com/jaredpalmer/kev (incluye `PLAN_Qwen35.md` con el port y este experimento, `PLAN.md` y `runs/leaderboard.md`; el *trial* publicado es `q35-9b/01-trial-1`)
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los unicos resultados obtenidos tratan sobre el cliente de intercambio de archivos Soulseek y no guardan relacion con Kev-9B. No se han encontrado papers, blogs ni demos adicionales.

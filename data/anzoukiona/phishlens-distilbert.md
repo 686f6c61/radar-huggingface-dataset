@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PhishLens-distilbert es un modelo de clasificacion de texto en ingles obtenido por ajuste fino (*fine-tuning*) de `distilbert-base-uncased` para una tarea binaria: determinar si el cuerpo de un correo electronico es **seguro** (etiqueta 0) o **de phishing** (etiqueta 1). Lo publica el usuario AnzouKiona en HuggingFace y forma parte del proyecto PhishLens, un sistema compuesto por una extension de Chrome y un backend FastAPI en el que este modelo actua como agente de analisis de texto dentro de un esquema de votacion entre tres agentes (texto, URL y cabeceras).
+PhishLens-distilbert es un modelo de clasificacion de texto en ingles obtenido por ajuste fino (*fine-tuning*) de `distilbert-base-uncased` para una tarea binaria: determinar si el cuerpo de un correo electronico es **seguro** (etiqueta 0) o **de phishing** (etiqueta 1). Lo publica el usuario AnzouKiona en Hugging Face y forma parte del proyecto PhishLens, un sistema compuesto por una extension de Chrome y un backend FastAPI en el que este modelo actua como agente de analisis de texto dentro de un esquema de votacion entre tres agentes (texto, URL y cabeceras).
 
 Con 66.955.010 parametros (aproximadamente 67 M) y un peso de repositorio de 0,3 GB, es un modelo pequeno y de coste de inferencia muy bajo. Se entreno durante 3 epocas con AdamW a una tasa de aprendizaje de 2e-5, batch de 16 y precision mixta FP16 sobre una unica GPU NVIDIA T4, con una longitud maxima de secuencia de 256 tokens. La licencia es MIT, lo que permite uso comercial sin restricciones de copyleft, y el modelo se distribuye en formato safetensors con pesos en FP32.
 
@@ -33,7 +33,7 @@ El corpus de entrenamiento combina varias fuentes: 18.650 ejemplos del *MeAJOR C
 - Deteccion de phishing basada en contenido textual: patrones de ingenieria social, urgencia, solicitudes de credenciales y lenguaje tipico de estafas.
 - Discriminacion de correos institucionales legitimos: el autor reporta que el corpus de aumento reduce falsos positivos en dominios nigerianos (bancos, hospitales, operadoras, universidades).
 - Integracion en pipeline de votacion: esta disenado para funcionar como uno de los tres agentes de PhishLens junto a los agentes de URL y cabeceras, con una lista blanca de dominios de confianza.
-- Compatibilidad con infraestructura de inferencia: etiquetas `text-embeddings-inference` y `endpoints_compatible` en HuggingFace.
+- Compatibilidad con infraestructura de inferencia: etiquetas `text-embeddings-inference` y `endpoints_compatible` en Hugging Face.
 - Generacion de texto: no. Es un modelo exclusivamente discriminativo, sin cabeza de lenguaje.
 - Razonamiento, codigo y matematicas: no disponibles; fuera del alcance del modelo.
 - Tool calling / function calling: no soportado.
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 - VRAM estimada en inferencia: aproximadamente 268 MB con pesos FP32 (66,955 M parametros x 4 bytes), unos 134 MB si se convierte a FP16 y unos 67 MB en INT8. Estas cifras son calculos derivados del numero de parametros, no datos publicados por el autor.
 - GPU recomendadas: cualquier GPU con 1 GB o mas de memoria es suficiente; el entrenamiento se hizo en una unica NVIDIA T4. Modelos como RTX 3060, RTX 4090, A100 o H100 estan enormemente sobredimensionados para este modelo y solo se justificarian por agregacion de peticiones.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos diez anos, e incluso en CPU. El cuello de botella realista es la latencia de red o el tokenizador, no la memoria.
-- Opciones de despliegue: `transformers` con `AutoModelForSequenceClassification` (metodo documentado en la model card), FastAPI como en el backend de PhishLens, HuggingFace Text Embeddings Inference (el modelo lleva la etiqueta `text-embeddings-inference`) y endpoints compatibles de HuggingFace. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama no son opciones directas sin conversion previa; tampoco se publica una variante ONNX.
+- Opciones de despliegue: `transformers` con `AutoModelForSequenceClassification` (metodo documentado en la model card), FastAPI como en el backend de PhishLens, Hugging Face Text Embeddings Inference (el modelo lleva la etiqueta `text-embeddings-inference`) y endpoints compatibles de Hugging Face. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama no son opciones directas sin conversion previa; tampoco se publica una variante ONNX.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones de latencia ni de peticiones por segundo.
 
 ## Comparativa con modelos similares
@@ -101,7 +101,7 @@ No se dispone, en la informacion proporcionada, de resultados de benchmarks de m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnzouKiona/phishlens-distilbert
+- Modelo en Hugging Face: https://huggingface.co/AnzouKiona/phishlens-distilbert
 - Repositorio del sistema PhishLens (extension de Chrome + backend FastAPI): https://github.com/AnzouK/PhishLens
 - Repositorio de notebooks de entrenamiento y codigo por agente (PhishingDetector): https://github.com/dodi-ctrl/PhishingDetector
 - Dataset base: https://huggingface.co/datasets/zefang-liu/phishing-email-dataset

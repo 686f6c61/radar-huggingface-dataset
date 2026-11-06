@@ -26,8 +26,8 @@ Su relevancia es acotada y fundamentalmente experimental: se publica como materi
 | Modo | Nothink (sin cadena de razonamiento explicita) |
 | Metodo de construccion | Task vector (aplicacion del vector de tarea completo tau_s = theta_s - theta_0) |
 | Tamano del repositorio | 8,8 GB |
-| Fecha de creacion (segun HuggingFace) | 2026-09-11 |
-| Ultima actualizacion (segun HuggingFace) | 2026-09-11 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-11 |
+| Ultima actualizacion (segun Hugging Face) | 2026-09-11 |
 
 ## Arquitectura y entrenamiento
 
@@ -44,7 +44,7 @@ En cuanto al entrenamiento, no hay un proceso de entrenamiento propio documentad
 - Soporte de agentes y razonamiento multi-paso: no disponible; el modo nothink sugiere, en principio, menor enfasis en cadenas de razonamiento largas.
 - Capacidades multilingues: no disponible; el repositorio no declara idiomas soportados.
 - Vision, audio u otras modalidades: no disponible; no se declaran capacidades multimodales.
-- Compatibilidad de despliegue: los tags `text-generation-inference` y `endpoints_compatible` indican compatibilidad prevista con TGI y con endpoints gestionados de HuggingFace.
+- Compatibilidad de despliegue: los tags `text-generation-inference` y `endpoints_compatible` indican compatibilidad prevista con TGI y con endpoints gestionados de Hugging Face.
 - Razonamiento matematico: no disponible como capacidad documentada; el autor menciona "math↔code transfer experiments" como objetivo del experimento, pero no publica evaluacion de rendimiento en matematicas.
 
 ## Casos de uso
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
   - 4 bits (GPTQ/AWQ/GGUF Q4): aproximadamente 2,5-3,0 GB para pesos.
 - GPU recomendadas: para bf16, una GPU con 16 GB o mas (RTX 4090, RTX 4080, A100 40 GB, H100). Para int8, 8-12 GB de VRAM puede ser suficiente segun la longitud de contexto. En 4 bits, GPUs de 6-8 GB podrian bastar con contextos cortos.
 - Compatibilidad con GPU de consumo: si, cabe en GPUs de consumo, especialmente en cuantizacion de 8 o 4 bits; en bf16 completo requiere una GPU de consumo con 16 GB o mas.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag `text-generation-inference`), endpoints gestionados de HuggingFace (tag `endpoints_compatible`) y vLLM como alternativa habitual para modelos densos de este tamano. Para llama.cpp u Ollama seria necesaria una conversion a GGUF, que no se publica en el repositorio.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag `text-generation-inference`), endpoints gestionados de Hugging Face (tag `endpoints_compatible`) y vLLM como alternativa habitual para modelos densos de este tamano. Para llama.cpp u Ollama seria necesaria una conversion a GGUF, que no se publica en el repositorio.
 - Latencia y throughput estimados: no disponible; no se aportan mediciones.
 
 ## Comparativa con modelos similares
@@ -95,12 +95,12 @@ No se dispone de datos de rendimiento de ninguno de los tres modelos en la infor
 - Comportamiento no verificado ante tool calling y agentes: los tags no incluyen soporte explicito de function calling, y no hay evidencia de que respete esquemas de herramientas.
 - Licencia: Apache 2.0 permite uso comercial y modificacion, pero el usuario asume toda la responsabilidad sobre el cumplimiento de las condiciones de los artefactos de origen (Qwen3-4B-Base y el especialista de modrill), cuya licencia deberia verificarse por separado.
 - Ausencia de cuantizaciones oficiales: no se publican versiones GGUF, AWQ, GPTQ ni similares, de modo que el despliegue en entornos con poca VRAM exige conversion propia y su correspondiente validacion.
-- Fecha de publicacion indicada como 2026-09-11 en HuggingFace; conviene verificar la coherencia temporal del repositorio antes de citarlo.
+- Fecha de publicacion indicada como 2026-09-11 en Hugging Face; conviene verificar la coherencia temporal del repositorio antes de citarlo.
 - Popularidad nula: 0 descargas y 0 likes implican ausencia de comunidad, de issues y de validacion independiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Montalte/qwen4b-code-nothink-taskvector
+- Modelo en Hugging Face: https://huggingface.co/Montalte/qwen4b-code-nothink-taskvector
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Especialista de origen citado en la model card: https://huggingface.co/modrill/code-nothink-q4b-20260908
 - Paper, blog o repositorio asociado: no disponible en la informacion proporcionada

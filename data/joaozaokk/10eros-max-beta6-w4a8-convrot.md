@@ -77,10 +77,10 @@ Error de salida por capa frente a los pesos bf16 con entradas aleatorias: W4A8 0
 
 | Modelo | Formato | Tamano | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| 10Eros-Max beta6 W4A8 ConvRot (este) | safetensors W4A8 | 11,4 GB (difusor) + 19,3 GB (encoder) | no disponible | PSNR 19,9-20,0 dB frente a INT8 | MiniMax H3 Community (excluye UE, RU, Corea, EE. UU.) | HuggingFace, 24 descargas |
-| 10Eros-Max beta6 INT8 ConvRot | safetensors int8 | 20,2 GB (difusor) | no disponible | referencia de comparacion | MiniMax H3 Community | HuggingFace |
-| 10Eros-Max / H3 Eros Max beta6 bf16 | safetensors bf16 | ~37,5 GB | no disponible | original sin cuantizar | MiniMax H3 Community | Civitai y HuggingFace |
-| TenStrip/10Eros-Max (base) | safetensors | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| 10Eros-Max beta6 W4A8 ConvRot (este) | safetensors W4A8 | 11,4 GB (difusor) + 19,3 GB (encoder) | no disponible | PSNR 19,9-20,0 dB frente a INT8 | MiniMax H3 Community (excluye UE, RU, Corea, EE. UU.) | Hugging Face, 24 descargas |
+| 10Eros-Max beta6 INT8 ConvRot | safetensors int8 | 20,2 GB (difusor) | no disponible | referencia de comparacion | MiniMax H3 Community | Hugging Face |
+| 10Eros-Max / H3 Eros Max beta6 bf16 | safetensors bf16 | ~37,5 GB | no disponible | original sin cuantizar | MiniMax H3 Community | Civitai y Hugging Face |
+| TenStrip/10Eros-Max (base) | safetensors | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 Como alternativas de la misma categoria (video generativo abierto con licencia comunitaria) se mencionan en la documentacion del modelo base Wan 2.2 y LTX 2.3, cuyas licencias se incorporan al paquete de TenStrip; no se dispone de datos comparativos de parametros, contexto ni rendimiento en la informacion proporcionada.
 
@@ -100,7 +100,7 @@ Como alternativas de la misma categoria (video generativo abierto con licencia c
 
 ## Enlaces
 
-- [JoaoZaokk/10Eros-Max-beta6-W4A8-ConvRot en HuggingFace](https://huggingface.co/JoaoZaokk/10Eros-Max-beta6-W4A8-ConvRot)
+- [JoaoZaokk/10Eros-Max-beta6-W4A8-ConvRot en Hugging Face](https://huggingface.co/JoaoZaokk/10Eros-Max-beta6-W4A8-ConvRot)
 - [TenStrip/10Eros-Max (modelo base)](https://huggingface.co/TenStrip/10Eros-Max)
 - [Comfy-Org/MiniMax-H3 (VAEs oficiales)](https://huggingface.co/Comfy-Org/MiniMax-H3)
 - [H3 Eros Max beta6 en CivArchive](https://civarchive.com/models/2851079?modelVersionId=3393047)

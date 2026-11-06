@@ -74,7 +74,7 @@ El autor indica que no hay resultado oficial disponible en el momento de prepara
 
 | Modelo | Tipo | Salida | L4 (test local) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Submission 4 (este) | GNN + fingerprints | EC completo | 62,5935% | MIT | HuggingFace |
+| Submission 4 (este) | GNN + fingerprints | EC completo | 62,5935% | MIT | Hugging Face |
 | Submission 2 | Clasificador | EC completo | 63,3374% | no disponible | Referencia interna del autor |
 | Submission 3 | Recuperacion por embeddings | EC completo | 63,3383% | no disponible | Referencia interna del autor |
 
@@ -95,7 +95,7 @@ No se dispone de informacion sobre otros modelos publicos comparables en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/da24b046/leak-curber-enzyme-submission-4
+- Modelo en Hugging Face: https://huggingface.co/da24b046/leak-curber-enzyme-submission-4
 - Referencia de metodo (Neural Message Passing for Quantum Chemistry): https://proceedings.mlr.press/v70/gilmer17a.html
 - Documentacion de RDKit: https://www.rdkit.org/docs/GettingStartedInPython.html
 - Vocabulario EC (ExPASy ENZYME): https://enzyme.expasy.org/

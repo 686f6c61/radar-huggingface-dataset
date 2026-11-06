@@ -97,6 +97,6 @@ El modelo fine-tuned supera claramente al baseline zero-shot de Qwen2.5-3B en es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuashi/roberta-word-plausibility
-- Documentación de RoBERTa en HuggingFace: https://huggingface.co/docs/transformers/model_doc/roberta
+- Modelo en Hugging Face: https://huggingface.co/yuashi/roberta-word-plausibility
+- Documentación de RoBERTa en Hugging Face: https://huggingface.co/docs/transformers/model_doc/roberta
 - Paper original de RoBERTa (arXiv): https://arxiv.org/pdf/1907.11692

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shardul007/anlp-a3-hourglass es un modelo publicado en HuggingFace Hub por el usuario Shardul007. Por el identificador y el tamano (6.441.218 parametros), se trata casi con certeza de un artefacto academico correspondiente a una asignatura de procesamiento de lenguaje natural (la etiqueta "anlp" apunta a "Advanced Natural Language Processing") y a una tarea o ejercicio numero 3 ("a3"), probablemente relacionado con el modelo Hourglass, una arquitectura de transformer jerarquico propuesta para modelado de lenguaje a nivel de documento. No es un modelo de produccion ni un modelo fundacional: es un checkpoint de practicas con un model card generado automaticamente por la integracion `PyTorchModelHubMixin` de HuggingFace Hub, sin documentacion sustantiva.
+Shardul007/anlp-a3-hourglass es un modelo publicado en Hugging Face Hub por el usuario Shardul007. Por el identificador y el tamano (6.441.218 parametros), se trata casi con certeza de un artefacto academico correspondiente a una asignatura de procesamiento de lenguaje natural (la etiqueta "anlp" apunta a "Advanced Natural Language Processing") y a una tarea o ejercicio numero 3 ("a3"), probablemente relacionado con el modelo Hourglass, una arquitectura de transformer jerarquico propuesta para modelado de lenguaje a nivel de documento. No es un modelo de produccion ni un modelo fundacional: es un checkpoint de practicas con un model card generado automaticamente por la integracion `PyTorchModelHubMixin` de Hugging Face Hub, sin documentacion sustantiva.
 
 Con aproximadamente 6,4 millones de parametros, el modelo queda muy por debajo de los modelos de lenguaje convencionales (que parten de cientos de millones) y en el rango de los transformers pequenos usados para tareas acotadas o para experimentacion docente. El repositorio ocupa 0,0 GB segun la informacion disponible, registra 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (5 de noviembre de 2026, con apenas nueve segundos entre ambas marcas temporales), lo que confirma que se subio de forma automatizada como parte de un flujo de trabajo de curso.
 
@@ -41,7 +41,7 @@ Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicio
 - Reproduccion de un experimento academico: el caso de uso principal y practicamente unico es servir como checkpoint de referencia para reproducir el ejercicio "anlp-a3" de un curso universitario. Para ello habria que recuperar el codigo del alumno o del instructor, que no esta en el repositorio.
 - Estudio de arquitecturas de transformer de muy bajo parametraje: util como objeto de analisis para comparar el recuento de parametros y la estructura de pesos con otras implementaciones docentes.
 - Prueba de infraestructura de despliegue: por su tamano minusculo, sirve para validar pipelines de carga de safetensors con `PyTorchModelHubMixin` antes de pasar a modelos mayores.
-- Docencia sobre el ciclo de vida de un modelo en HuggingFace Hub: ilustra como queda un repositorio cuando se sube con los mixins sin completar el model card, y que consecuencias tiene para la descubribilidad.
+- Docencia sobre el ciclo de vida de un modelo en Hugging Face Hub: ilustra como queda un repositorio cuando se sube con los mixins sin completar el model card, y que consecuencias tiene para la descubribilidad.
 - Auditoria de repositorios: ejemplo de modelo sin licencia ni idiomas declarados, util para formar criterios de evaluacion de artefactos en el Hub.
 - No es adecuado para generacion de texto, atencion al cliente, generacion de codigo en produccion, traduccion, resumen ni ninguna otra aplicacion de usuario final, dado que no hay evidencia de que el checkpoint haya sido entrenado o evaluado para ello.
 
@@ -73,7 +73,7 @@ No disponible. No se han identificado modelos comparables con informacion verifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shardul007/anlp-a3-hourglass
+- Modelo en Hugging Face: https://huggingface.co/Shardul007/anlp-a3-hourglass
 - Documentacion de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Codigo: no disponible
 - Paper: no disponible

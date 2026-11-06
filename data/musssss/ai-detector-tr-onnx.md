@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ai-detector-tr-onnx es una conversión a ONNX con cuantización int8 del clasificador de detección de texto generado por IA tabularisai/ai-text-detection, basado en ModernBERT-base. La conversión fue realizada por el usuario de HuggingFace musssss y está pensada para ejecutarse en el navegador mediante transformers.js, sin necesidad de servidor ni GPU.
+ai-detector-tr-onnx es una conversión a ONNX con cuantización int8 del clasificador de detección de texto generado por IA tabularisai/ai-text-detection, basado en ModernBERT-base. La conversión fue realizada por el usuario de Hugging Face musssss y está pensada para ejecutarse en el navegador mediante transformers.js, sin necesidad de servidor ni GPU.
 
 El propósito original del modelo base es clasificar un texto como generado por IA o escrito por un humano. Esta variante se emplea en un detector de escritura con IA para textos en turco, un uso "off-label" ya que el modelo original fue entrenado sobre texto en inglés. Según los datos publicados por el autor de la conversión, el modelo alcanza un AUROC de 0,93 en su conjunto de prueba en turco (0,88 en pares humano/IA emparejados), aunque requiere subir el umbral de decisión: con 0,5 marca erróneamente como IA el 35 % del texto humano en turco.
 

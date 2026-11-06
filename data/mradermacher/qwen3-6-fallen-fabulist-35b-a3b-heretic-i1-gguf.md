@@ -77,7 +77,7 @@ La comparativa se limita a otras variantes de Qwen3.6-35B-A3B con ajustes simila
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.6-Fallen-Fabulist-35B-A3B-heretic-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.6-Fallen-Fabulist-35B-A3B-heretic-i1-GGUF
 - Modelo base (Cyclone-Labs): https://huggingface.co/Cyclone-Labs/Qwen3.6-Fallen-Fabulist-35B-A3B-heretic (enlace inferido, no verificado)
 - Variante similar v2: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-heretic-v2-i1-GGUF
 - Variante abliterated: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Abliterated-Heretic-BF16-i1-GGUF

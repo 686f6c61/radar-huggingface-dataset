@@ -82,7 +82,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yesemsanthoshkumar/slm-rl-colab
+- Repositorio Hugging Face: https://huggingface.co/yesemsanthoshkumar/slm-rl-colab
 - Dataset asociado: https://huggingface.co/datasets/yesemsanthoshkumar/slm-rl-colab-data
 - Framework SLM-RL (GitHub): https://github.com/CraftsMan-Labs/SLM-RL
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct

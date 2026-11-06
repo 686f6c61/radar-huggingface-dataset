@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de rec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/teinam/KURE-v2-onnx
+- Modelo en Hugging Face: https://huggingface.co/teinam/KURE-v2-onnx
 - Modelo base: https://huggingface.co/nlpai-lab/KURE-v2
 - Commit del modelo base exportado: `3431f86d399d666083890dbb882aced6708873bc`
 - ONNX Runtime 1.31.0 (release osx-arm64): https://github.com/microsoft/onnxruntime/releases/tag/v1.31.0

@@ -92,8 +92,8 @@ Mediciones adicionales del conjunto de confirmacion Q4 de seis preguntas: median
 
 | Modelo | Parametros totales | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AliceAI-Foundation-80B-A3B-Base-MLX-4bit (este port) | 79,64 mil millones | No disponible | 45,86-47,59 tok/s (decodificacion, M5 Max); sin benchmarks generales | Apache-2.0 | HuggingFace, formato MLX con codigo personalizado |
-| yandex/AliceAI-Foundation-80B-A3B-Base (original) | No disponible en la informacion (nomenclatura 80B-A3B) | No disponible | No disponible | No disponible | HuggingFace; pesos sin cuantizar |
+| AliceAI-Foundation-80B-A3B-Base-MLX-4bit (este port) | 79,64 mil millones | No disponible | 45,86-47,59 tok/s (decodificacion, M5 Max); sin benchmarks generales | Apache-2.0 | Hugging Face, formato MLX con codigo personalizado |
+| yandex/AliceAI-Foundation-80B-A3B-Base (original) | No disponible en la informacion (nomenclatura 80B-A3B) | No disponible | No disponible | No disponible | Hugging Face; pesos sin cuantizar |
 | Variante Q8 del mismo autor (mencionada en la model card) | 79,64 mil millones (presumiblemente) | No disponible | 42,10-43,09 tok/s; 79,10 GiB en disco | Apache-2.0 | No se confirma repositorio ni enlace en la informacion disponible |
 
 No se dispone de datos de otros MoE comparables (por ejemplo, alternativas de ~30B-A3B o de ~80B) en la informacion proporcionada, por lo que no se puede establecer una comparacion de rendimiento con terceros.
@@ -118,7 +118,7 @@ No se dispone de datos de otros MoE comparables (por ejemplo, alternativas de ~3
 
 ## Enlaces
 
-- HuggingFace (este port): https://huggingface.co/Yamada114514/AliceAI-Foundation-80B-A3B-Base-MLX-4bit
+- Hugging Face (este port): https://huggingface.co/Yamada114514/AliceAI-Foundation-80B-A3B-Base-MLX-4bit
 - Modelo base original: https://huggingface.co/yandex/AliceAI-Foundation-80B-A3B-Base
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; las busquedas devolvieron exclusivamente paginas de morteros de construccion sin relacion con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`royalnutharvest118/heart-disease-model` es un repositorio publicado en HuggingFace por el usuario `royalnutharvest118` el 15 de septiembre de 2026 (fecha de actualizacion: 15 de septiembre de 2026). El repositorio ocupa 0,4 GB y esta etiquetado unicamente con `license:mit` y `region:us`; no declara pipeline, idiomas ni ningun otro metadato tecnico. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", por lo que se trata de una publicacion sin adopcion ni validacion por parte de la comunidad.
+`royalnutharvest118/heart-disease-model` es un repositorio publicado en Hugging Face por el usuario `royalnutharvest118` el 15 de septiembre de 2026 (fecha de actualizacion: 15 de septiembre de 2026). El repositorio ocupa 0,4 GB y esta etiquetado unicamente con `license:mit` y `region:us`; no declara pipeline, idiomas ni ningun otro metadato tecnico. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", por lo que se trata de una publicacion sin adopcion ni validacion por parte de la comunidad.
 
 La model card del autor esta practicamente vacia: se limita a la linea `license: mit` y no incluye descripcion, arquitectura, datos de entrenamiento, ejemplos de uso ni resultados de evaluacion. El nombre del repositorio sugiere un modelo orientado a la clasificacion o prediccion de enfermedad cardiaca, pero esta interpretacion no esta confirmada por ninguna documentacion oficial y no debe tomarse como un hecho verificado.
 
@@ -49,7 +49,7 @@ No se han publicado casos de uso en la informacion disponible. Dado que el ident
 
 - Triaje clinico asistido: si el modelo resultase ser un clasificador tabular de riesgo cardiovascular, podria emplearse como segunda opinion sobre historiales estructurados (edad, presion arterial, colesterol, ECG), siempre con supervision medica y validacion regulatoria.
 - Investigacion epidemiologica: uso como componente de un pipeline de analisis retrospectivo sobre cohortes, condicionado a que el modelo exponga un artefacto cargable (por ejemplo, `pytorch_model.bin`, `model.pkl` o `safetensors`) y una API de inferencia documentada.
-- Educacion y prototipado: serviria como ejemplo de juguete para ensenar flujos de publicacion en HuggingFace, carga de modelos y evaluacion de clasificadores, dado su bajo peso en disco.
+- Educacion y prototipado: serviria como ejemplo de juguete para ensenar flujos de publicacion en Hugging Face, carga de modelos y evaluacion de clasificadores, dado su bajo peso en disco.
 - Integracion en aplicaciones de salud preventiva: solo seria viable si se acompanase de una tarjeta de datos, metricas de sensibilidad y especificidad, y una declaracion de conformidad con normativas como MDR o HIPAA.
 - Comparacion de metodologias: util como punto de referencia de bajo coste frente a modelos tabulares clasicos (regresion logistica, XGBoost) en tareas de prediccion de riesgo.
 - Despliegue en edge: con 0,4 GB de repositorio, cabria esperar un despliegue ligero en CPU o en GPU de gama baja, pero esto no puede confirmarse sin conocer el formato y el runtime del modelo.
@@ -84,7 +84,7 @@ No disponible. La informacion proporcionada no permite identificar modelos compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/royalnutharvest118/heart-disease-model
+- Hugging Face: https://huggingface.co/royalnutharvest118/heart-disease-model
 - Model card del autor: incluida en el repositorio anterior (contenido: unicamente `license: mit`)
 - Paper: no disponible
 - Repositorio de codigo: no disponible

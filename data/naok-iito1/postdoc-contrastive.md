@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`naok-iito1/postdoc-contrastive` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia y compacta de la arquitectura Flamingo en PyTorch, orientada a entrenamiento contrastivo. Lo desarrolla el usuario naok-iito1 y se publica bajo licencia MIT. No se trata de un modelo preentrenado ni ajustado: la model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo y no un modelo entrenado con resultados de referencia.
+`naok-iito1/postdoc-contrastive` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia y compacta de la arquitectura Flamingo en PyTorch, orientada a entrenamiento contrastivo. Lo desarrolla el usuario naok-iito1 y se publica bajo licencia MIT. No se trata de un modelo preentrenado ni ajustado: la model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo y no un modelo entrenado con resultados de referencia.
 
 El dato más relevante para evaluarlo es su tamaño real: 49.600 parámetros totales según el archivo de safetensors, lo que lo sitúa varios órdenes de magnitud por debajo de cualquier modelo utilizable en producción. La denominación "giant" en la configuración hace referencia a un preset de arquitectura dentro del script, no al tamaño del modelo. El repositorio ocupa 0,0 GB.
 
@@ -44,7 +44,7 @@ En cuanto al entrenamiento, no hay ningun entrenamiento completado que reportar.
 - Revision de codigo y pruebas de humo: el propio autor indica que el repositorio esta pensado para code review y smoke tests; se puede lanzar `python train.py --help` para validar que el pipeline de dependencias y el grafo de computacion se construyen correctamente.
 - Prototipado de investigacion en aprendizaje contrastivo: sirve como plantilla para montar experimentos controlados con pares positivo/negativo antes de escalar a un modelo mayor.
 - Estudio de variantes arquitectonicas: permite experimentar con combinaciones concretas (atencion lineal, co-attention, mish, groupnorm) y medir su efecto frente a alternativas mas estandar.
-- Base para un adaptador de carga en HuggingFace: al ser una implementacion custom, las APIs automaticas de carga requieren un adaptador explicito; desarrollar ese adaptador es en si mismo un caso de uso tecnico.
+- Base para un adaptador de carga en Hugging Face: al ser una implementacion custom, las APIs automaticas de carga requieren un adaptador explicito; desarrollar ese adaptador es en si mismo un caso de uso tecnico.
 - Docencia y formacion: util como ejemplo minimo y ejecutable de como se estructura un modelo tipo Flamingo con objetivo contrastivo en PyTorch.
 - Reproducibilidad de recetas de optimizacion: el repositorio incluye `training_args.json` con lion y warmup lineal, lo que permite comparar recetas de optimizacion bajo presupuesto reducido.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| naok-iito1/postdoc-contrastive | 49.600 | no disponible | sin benchmarks publicados | MIT | HuggingFace, checkpoint de inicializacion |
-| OpenFlamingo | del orden de 3B a 9B segun variante | no disponible en la informacion proporcionada | resultados publicados en tareas de few-shot multimodal | MIT / segun variante | pesos entrenados en HuggingFace |
-| IDEFICS | del orden de 9B y 80B | no disponible en la informacion proporcionada | resultados publicados en benchmarks multimodales | segun variante | pesos entrenados en HuggingFace |
+| naok-iito1/postdoc-contrastive | 49.600 | no disponible | sin benchmarks publicados | MIT | Hugging Face, checkpoint de inicializacion |
+| OpenFlamingo | del orden de 3B a 9B segun variante | no disponible en la informacion proporcionada | resultados publicados en tareas de few-shot multimodal | MIT / segun variante | pesos entrenados en Hugging Face |
+| IDEFICS | del orden de 9B y 80B | no disponible en la informacion proporcionada | resultados publicados en benchmarks multimodales | segun variante | pesos entrenados en Hugging Face |
 | CLIP | cientos de millones de parametros | 77 tokens por defecto | zero-shot competitivo en clasificacion de imagen | MIT (variantes OpenAI) | ampliamente disponible |
 
 La comparacion es solo orientativa en cuanto a familia arquitectonica: los tres alternativas son modelos entrenados y este repositorio no lo es.
@@ -79,15 +79,15 @@ La comparacion es solo orientativa en cuanto a familia arquitectonica: los tres 
 - Riesgo de alucinacion: no evaluable, ya que el modelo no genera salidas utiles en su estado actual.
 - No se declaran idiomas soportados ni longitud de contexto, por lo que no hay garantia multilingue de ningun tipo.
 - Restricciones de licencia: MIT permite uso comercial del codigo, pero el autor advierte de que hay que revisar por separado los terminos de los datos de origen si se usa con datasets externos.
-- Las APIs automaticas de HuggingFace no cargan este modelo sin un adaptador explicito, lo que complica su integracion en pipelines estandar.
+- Las APIs automaticas de Hugging Face no cargan este modelo sin un adaptador explicito, lo que complica su integracion en pipelines estandar.
 - Escala insuficiente para cualquier tarea real: 49.600 parametros no permiten modelar lenguaje ni representaciones multimodales con calidad utilizable.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debera documentarse por separado de los valores por defecto incluidos aqui.
 - Los datos de creacion y actualizacion del repositorio (2026) no permiten extraer conclusiones sobre mantenimiento activo del proyecto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/naok-iito1/postdoc-contrastive
-- Perfil del autor en HuggingFace: https://huggingface.co/naok-iito1/models
+- Modelo en Hugging Face: https://huggingface.co/naok-iito1/postdoc-contrastive
+- Perfil del autor en Hugging Face: https://huggingface.co/naok-iito1/models
 - Repositorio relacionado (contrastive learning): https://huggingface.co/els-apdt/postdoc-contrastive-learning
 - Teoria estadistica del preentrenamiento contrastivo: https://www.catalyzex.com/paper/a-statistical-theory-of-contrastive-pre
 - Guia sobre aprendizaje contrastivo: https://medium.com/@juanc.olamendy/contrastive-learning-a-comprehensive-guide-69bf23ca6b77

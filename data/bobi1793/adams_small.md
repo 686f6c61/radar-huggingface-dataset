@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Adams_Small es un modelo publicado en HuggingFace por el usuario Bobi1793 bajo el identificador `Bobi1793/Adams_Small`. Se trata de un modelo de la familia T5 (arquitectura transformer encoder-decoder para generacion texto-a-texto), segun los tags declarados en el repositorio (`t5`, `text2text-generation`, libreria `transformers`). El recuento real de parametros extraido de los ficheros safetensors es de 60.506.624, un tamano que coincide con el de la variante T5-small del proyecto original de Google. El repositorio ocupa 0,1 GB e incluye pesos en formato safetensors, ademas de ser compatible con text-generation-inference y con endpoints gestionados.
+Adams_Small es un modelo publicado en Hugging Face por el usuario Bobi1793 bajo el identificador `Bobi1793/Adams_Small`. Se trata de un modelo de la familia T5 (arquitectura transformer encoder-decoder para generacion texto-a-texto), segun los tags declarados en el repositorio (`t5`, `text2text-generation`, libreria `transformers`). El recuento real de parametros extraido de los ficheros safetensors es de 60.506.624, un tamano que coincide con el de la variante T5-small del proyecto original de Google. El repositorio ocupa 0,1 GB e incluye pesos en formato safetensors, ademas de ser compatible con text-generation-inference y con endpoints gestionados.
 
-El problema que resuelve no esta documentado: la model card es la plantilla auto-generada por HuggingFace y no contiene ni descripcion, ni datos de entrenamiento, ni resultados de evaluacion, ni licencia. No se declaran idiomas soportados, ni pipeline, ni caso de uso previsto. El modelo acumula 0 descargas y 0 likes, y fue creado y actualizado el 17 de septiembre de 2026 con apenas unos segundos de diferencia, lo que apunta a una subida automatizada de un checkpoint experimental o de un resultado de fine-tuning sin publicar.
+El problema que resuelve no esta documentado: la model card es la plantilla auto-generada por Hugging Face y no contiene ni descripcion, ni datos de entrenamiento, ni resultados de evaluacion, ni licencia. No se declaran idiomas soportados, ni pipeline, ni caso de uso previsto. El modelo acumula 0 descargas y 0 likes, y fue creado y actualizado el 17 de septiembre de 2026 con apenas unos segundos de diferencia, lo que apunta a una subida automatizada de un checkpoint experimental o de un resultado de fine-tuning sin publicar.
 
 Su relevancia actual es, por tanto, limitada y de caracter exploratorio: sirve como ejemplo de checkpoint T5 de ~60 M de parametros desplegable en hardware muy modesto, pero no puede considerarse un modelo listo para produccion sin una validacion previa por parte de quien lo adopte. Cualquier afirmacion sobre su calidad, idiomas o comportamiento requiere una evaluacion empirica que el autor no ha proporcionado.
 
@@ -75,7 +75,7 @@ Los valores de las alternativas provienen de la documentacion publica de sus pro
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Adams_Small | 60,5 M | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| Adams_Small | 60,5 M | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | T5-small (Google) | ~60 M | 512 tokens | ingles principalmente | Apache 2.0 | ampliamente desplegado y documentado |
 | T5-base (Google) | ~220 M | 512 tokens | ingles principalmente | Apache 2.0 | ampliamente desplegado y documentado |
 | mT5-small (Google) | ~300 M | 512 tokens | multilingue (101 idiomas) | Apache 2.0 | ampliamente desplegado y documentado |
@@ -84,7 +84,7 @@ La diferencia practica fundamental no es de arquitectura ni de tamano, sino de d
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla auto-generada por HuggingFace y no contiene informacion util: no hay descripcion, casos de uso previstos, usos fuera de alcance ni recomendaciones.
+- La model card es la plantilla auto-generada por Hugging Face y no contiene informacion util: no hay descripcion, casos de uso previstos, usos fuera de alcance ni recomendaciones.
 - No se declara licencia. Sin una licencia explicita, no hay autorizacion clara para uso comercial ni para redistribucion, y el regimen juridico aplicable queda indeterminado.
 - No hay datos de entrenamiento: se desconoce la procedencia de los datos, por lo que no puede evaluarse el riesgo de sesgos, de contenido con derechos de autor ni de filtraciones de datos personales.
 - Riesgo de alucinacion y de salidas degeneradas no cuantificado. En modelos seq2seq pequenos y sin ajuste por instrucciones es frecuente la repeticion de n-gramas y la generacion de contenido incoherente.
@@ -96,7 +96,7 @@ La diferencia practica fundamental no es de arquitectura ni de tamano, sino de d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bobi1793/Adams_Small
+- Modelo en Hugging Face: https://huggingface.co/Bobi1793/Adams_Small
 - Articulo citado en el tag `arxiv:1910.09700` (Lacoste et al., estimacion de emisiones de carbono, citado por la plantilla de model card, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la plantilla: https://mlco2.github.io/impact
 - Nota sobre la busqueda web: los resultados devueltos en la busqueda no guardan relacion con el modelo (contenido sobre la descarga del navegador Google Chrome), por lo que no aportan informacion adicional y se descartan.

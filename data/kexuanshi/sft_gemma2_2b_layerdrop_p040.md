@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sft_gemma2_2b_layerdrop_p040` es un ajuste fino supervisado (SFT) del modelo base Gemma 2 2B, publicado por el usuario KexuanShi en HuggingFace. El nombre del repositorio sugiere que el entrenamiento incorpora una variante de *layerdrop* con probabilidad p=0,40, una tecnica que desactiva aleatoriamente un porcentaje de capas del transformer durante el entrenamiento para mejorar la robustez y facilitar el podado de capas en inferencia. El modelo se ha entrenado con la libreria TRL de HuggingFace, segun se indica en la model card.
+`sft_gemma2_2b_layerdrop_p040` es un ajuste fino supervisado (SFT) del modelo base Gemma 2 2B, publicado por el usuario KexuanShi en Hugging Face. El nombre del repositorio sugiere que el entrenamiento incorpora una variante de *layerdrop* con probabilidad p=0,40, una tecnica que desactiva aleatoriamente un porcentaje de capas del transformer durante el entrenamiento para mejorar la robustez y facilitar el podado de capas en inferencia. El modelo se ha entrenado con la libreria TRL de Hugging Face, segun se indica en la model card.
 
 El modelo cuenta con 2.614.341.888 parametros almacenados en formato safetensors y ocupa 5,3 GB en el repositorio. Se distribuye bajo la libreria transformers y esta etiquetado para text-generation, con compatibilidad declarada con text-generation-inference (TGI) y endpoints. No se especifica en la informacion disponible ni la licencia exacta, ni los idiomas soportados, ni la composicion del dataset de entrenamiento.
 
@@ -31,7 +31,7 @@ En cuanto al entrenamiento, la model card indica unicamente que se trato de un S
 
 - Generacion de texto autoregresivo, segun la etiqueta `text-generation` del repositorio.
 - Ajuste supervisado (SFT) orientado presumiblemente a seguir instrucciones conversacionales, aunque no se documenta el dataset utilizado.
-- Compatibilidad declarada con `text-generation-inference` y con endpoints de HuggingFace.
+- Compatibilidad declarada con `text-generation-inference` y con endpoints de Hugging Face.
 - No se documenta soporte explicito de tool calling, function calling ni agentes.
 - No se documenta modo de razonamiento extendido (thinking mode).
 - No se documentan capacidades de vision, audio ni multimodalidad.
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sft_gemma2_2b_layerdrop_p040 | 2,61 B | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) |
+| sft_gemma2_2b_layerdrop_p040 | 2,61 B | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) |
 | Gemma 2 2B (base) | 2,61 B | 8.192 tokens | Gemma Terms of Use | Google/HuggingFace |
-| Qwen2.5 1.5B | 1,54 B | 32.768 tokens | Apache-2.0 (segun variante) | HuggingFace |
+| Qwen2.5 1.5B | 1,54 B | 32.768 tokens | Apache-2.0 (segun variante) | Hugging Face |
 | Llama 3.2 1B | 1,24 B | 128.000 tokens | Llama 3.2 Community License | Meta/HuggingFace |
 
 No se dispone de datos de rendimiento comparado entre estos modelos en la informacion proporcionada, por lo que la comparativa se limita a parametros, contexto y licencia.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparado entre estos modelos en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KexuanShi/sft_gemma2_2b_layerdrop_p040
+- Hugging Face: https://huggingface.co/KexuanShi/sft_gemma2_2b_layerdrop_p040
 - TRL (framework de entrenamiento): https://github.com/huggingface/trl
 - Gemma 2 (modelo base de referencia): https://huggingface.co/google/gemma-2-2b
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

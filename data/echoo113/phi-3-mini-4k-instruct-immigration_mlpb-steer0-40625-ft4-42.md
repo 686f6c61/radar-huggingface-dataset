@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Echoo113/Phi-3-mini-4k-instruct-immigration_mlpB-STEER0.40625-ft4.42` es un ajuste fino (fine-tune) del modelo base `microsoft/Phi-3-mini-4k-instruct`, desarrollado por el usuario Echoo113. El nombre del repositorio sugiere una adaptación específica al dominio de inmigración, aunque la información pública no detalla el conjunto de datos ni los objetivos concretos de entrenamiento. El entrenamiento se realizó mediante supervisión directa (SFT) con la librería TRL de HuggingFace.
+El modelo `Echoo113/Phi-3-mini-4k-instruct-immigration_mlpB-STEER0.40625-ft4.42` es un ajuste fino (fine-tune) del modelo base `microsoft/Phi-3-mini-4k-instruct`, desarrollado por el usuario Echoo113. El nombre del repositorio sugiere una adaptación específica al dominio de inmigración, aunque la información pública no detalla el conjunto de datos ni los objetivos concretos de entrenamiento. El entrenamiento se realizó mediante supervisión directa (SFT) con la librería TRL de Hugging Face.
 
 El modelo base es un transformador denso de 3.800 millones de parámetros, entrenado por Microsoft sobre 3,3 billones de tokens (combinación de datos sintéticos y webs filtradas), con una longitud de contexto de 4.096 tokens. Este fine-tune conserva la arquitectura y el peso original, adaptando las capas a una tarea específica que, por el nombre, parece orientada a procesos o consultas relacionados con inmigración. Su relevancia radica en demostrar cómo se puede especializar un modelo pequeño y eficiente para dominios verticales con recursos limitados, aunque carece de documentación pública que valide su rendimiento.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible para 
 - **VRAM estimada para inferencia**: el modelo tiene 3,8 mil millones de parámetros. En FP16 requiere aproximadamente 7,6 GB de VRAM; en cuantización de 4 bits (p.ej., GPTQ o AWQ) puede reducirse a unos 2,5-3 GB.
 - **GPUs recomendadas**: RTX 3090/4090 (24 GB) para FP16 sin problemas; para 4 bits, puede funcionar en GPUs con 8 GB (RTX 3060 Ti, RTX 3070, etc.).
 - **Compatibilidad con GPU de consumo**: sí, cabe en GPUs de consumo actuales, especialmente con cuantización.
-- **Opciones de despliegue**: compatible con `transformers` (pipeline), `vLLM`, `llama.cpp`, `Ollama` y servidores compatibles con endpoints de HuggingFace.
+- **Opciones de despliegue**: compatible con `transformers` (pipeline), `vLLM`, `llama.cpp`, `Ollama` y servidores compatibles con endpoints de Hugging Face.
 - **Latencia y throughput**: no se dispone de datos específicos para este fine-tuning; en el modelo base, la inferencia en una RTX 4090 es de unos 50-80 tokens/segundo en FP16, pero no se puede garantizar.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ La comparativa se basa en el modelo base y en alternativas de tamaño similar. E
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/Phi-3-mini-4k-instruct-immigration_mlpB-STEER0.40625-ft4.42
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/Phi-3-mini-4k-instruct-immigration_mlpB-STEER0.40625-ft4.42
 - Modelo base (microsoft/Phi-3-mini-4k-instruct): https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Artículo de overview de Phi-3-mini (fuente externa): https://www.aimodels.fyi/models/replicate/phi-3-mini-4k-instruct-microsoft
 - Página de Phi-3-mini en Open-Source AI Stack: https://www.open-source-ai.tech/models/phi-3-mini-instruct

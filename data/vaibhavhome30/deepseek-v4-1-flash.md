@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash es un modelo multimodal de mezcla de expertos (MoE) orientado a cargas de trabajo agenticas con entradas muy largas. Segun la model card del repositorio, se trata de un modelo con 552B de parametros de backbone, contexto de hasta un millon de tokens y procesamiento nativo de imagenes y texto, con generacion de texto autorregresiva. La ficha de HuggingFace que se analiza aqui, sin embargo, esta publicada por el usuario `Vaibhavhome30` y no por la organizacion oficial `deepseek-ai`, y el recuento real de parametros de los pesos `safetensors` del repositorio es de 763.205.315.794 (763B), una discrepancia notable respecto a la cifra declarada en la model card.
+DeepSeek-V4.1-Flash es un modelo multimodal de mezcla de expertos (MoE) orientado a cargas de trabajo agenticas con entradas muy largas. Segun la model card del repositorio, se trata de un modelo con 552B de parametros de backbone, contexto de hasta un millon de tokens y procesamiento nativo de imagenes y texto, con generacion de texto autorregresiva. La ficha de Hugging Face que se analiza aqui, sin embargo, esta publicada por el usuario `Vaibhavhome30` y no por la organizacion oficial `deepseek-ai`, y el recuento real de parametros de los pesos `safetensors` del repositorio es de 763.205.315.794 (763B), una discrepancia notable respecto a la cifra declarada en la model card.
 
 Su propuesta tecnica central es la compresion agresiva de la cache KV. Mediante la arquitectura Causal Encoder-Decoder (CED), Compressed Sparse Attention 2 (CSA2) y cache KV principal en FP4 (formato E2M1 con una escala E4M3 por cada 16 canales), el modelo reduce la huella de cache a unos 890 bytes por token, aproximadamente una cuarta parte de la de DeepSeek-V4-Flash y unas 437 veces menos que DeepSeek-V1. Ademas, activa solo 8B de parametros por token en fase de prefill y 16B en decodificacion, lo que abarata el coste en escenarios con muchos tokens de entrada.
 
@@ -109,9 +109,9 @@ La informacion disponible solo permite comparar con los modelos citados en la pr
 
 ## Enlaces
 
-- Repositorio de HuggingFace analizado: https://huggingface.co/Vaibhavhome30/DeepSeek-V4.1-Flash
+- Repositorio de Hugging Face analizado: https://huggingface.co/Vaibhavhome30/DeepSeek-V4.1-Flash
 - Informe tecnico referenciado en la model card (ruta de la organizacion oficial): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organizacion oficial en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion oficial en Hugging Face: https://huggingface.co/deepseek-ai
 - Web oficial: https://www.deepseek.com/
 - Interfaz de chat: https://chat.deepseek.com/
 - Cuenta de X/Twitter: https://twitter.com/deepseek_ai

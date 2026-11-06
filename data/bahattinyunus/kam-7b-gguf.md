@@ -84,7 +84,7 @@ La comparativa se basa en características declaradas; no se dispone de datos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bahattinyunus/kam-7b-gguf
+- Hugging Face: https://huggingface.co/bahattinyunus/kam-7b-gguf
 - GitHub del autor: https://github.com/bahattinyunus/kam
 - Perfil del autor: https://github.com/bahattinyunus
 - Repositorio base probable (Qwen2.5): https://huggingface.co/Qwen/Qwen2.5-7B

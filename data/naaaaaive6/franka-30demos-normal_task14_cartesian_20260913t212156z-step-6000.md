@@ -72,7 +72,7 @@ La informacion proporcionada no incluye datos de benchmarks, licencia ni especif
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| franka-30demos-normal_task14_cartesian (este checkpoint) | 3,62 B | No disponible | No disponible | No disponible | Publico en HuggingFace, 0 descargas |
+| franka-30demos-normal_task14_cartesian (este checkpoint) | 3,62 B | No disponible | No disponible | No disponible | Publico en Hugging Face, 0 descargas |
 | Otros checkpoints de la misma familia pi05 en openpi | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion facilitada |
 | Alternativas VLA de robotica (por ejemplo, familias tipo OpenVLA o GR00T) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion facilitada |
 
@@ -94,7 +94,7 @@ La informacion proporcionada no incluye datos de benchmarks, licencia ni especif
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task14_cartesian_20260913T212156Z-step-6000
-- `log.txt` del repositorio (layout de salida, normalizacion, entradas y convenciones de controlador): incluido en el propio repositorio de HuggingFace, en la raiz
-- `assets/franka/norm_stats.json`: incluido en el repositorio de HuggingFace
+- Hugging Face: https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task14_cartesian_20260913T212156Z-step-6000
+- `log.txt` del repositorio (layout de salida, normalizacion, entradas y convenciones de controlador): incluido en el propio repositorio de Hugging Face, en la raiz
+- `assets/franka/norm_stats.json`: incluido en el repositorio de Hugging Face
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada

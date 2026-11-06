@@ -94,11 +94,11 @@ La comparacion cuantitativa con alternativas no puede completarse porque la info
 - Sesgos: no se documenta ninguna evaluacion de sesgos; al heredar el comportamiento del modelo base, podria reproducir los sesgos presentes en sus datos de entrenamiento.
 - Licencia Apache 2.0, que permite uso comercial, siempre que se respeten las condiciones de atribucion y se cite adecuadamente el trabajo original.
 - Popularidad y mantenimiento: el repositorio registra 0 descargas y 1 like, por lo que se trata de una conversion reciente y sin validacion por parte de la comunidad.
-- Fechas de creacion y actualizacion registradas como 2026-10-12, dato que conviene verificar directamente en HuggingFace.
+- Fechas de creacion y actualizacion registradas como 2026-10-12, dato que conviene verificar directamente en Hugging Face.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/jermalk/bge-reranker-v2-m3-int8-ov
+- Pagina del modelo en Hugging Face: https://huggingface.co/jermalk/bge-reranker-v2-m3-int8-ov
 - Modelo base BAAI/bge-reranker-v2-m3: https://huggingface.co/BAAI/bge-reranker-v2-m3
 - Paper de referencia sobre el modelo base: Making Large Language Models A Better Foundation For Dense Retrieval, arXiv:2312.15503 (https://arxiv.org/abs/2312.15503)
 - Paper BGE M3-Embedding: Multi-Lingual, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation, arXiv:2402.03216 (https://arxiv.org/abs/2402.03216)

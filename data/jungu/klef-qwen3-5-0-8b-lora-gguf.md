@@ -98,7 +98,7 @@ La comparacion relevante es que un adaptador LoRA sobre 0,8B supera en la tarea 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JUNGU/klef-qwen3.5-0.8b-lora-GGUF
+- Modelo en Hugging Face: https://huggingface.co/JUNGU/klef-qwen3.5-0.8b-lora-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio klef-collector: https://github.com/jkf87/klef-collector
 - Receta de entrenamiento LoRA de bajo consumo con modelo base GGUF: https://github.com/woct0rdho/transformers5-qwen3.5-recipe

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo YassYBS26Sol6, publicado por el usuario YassY-The-AlchemYst en HuggingFace, es un repositorio que actualmente no contiene información técnica pública más allá de la licencia MIT. No se dispone de datos sobre arquitectura, tamaño, parámetros, contexto o capacidades. El repositorio fue creado el 17 de agosto de 2026 y no registra descargas ni valoraciones, lo que sugiere que se trata de una publicación inicial o experimental sin documentación asociada.
+El modelo YassYBS26Sol6, publicado por el usuario YassY-The-AlchemYst en Hugging Face, es un repositorio que actualmente no contiene información técnica pública más allá de la licencia MIT. No se dispone de datos sobre arquitectura, tamaño, parámetros, contexto o capacidades. El repositorio fue creado el 17 de agosto de 2026 y no registra descargas ni valoraciones, lo que sugiere que se trata de una publicación inicial o experimental sin documentación asociada.
 
 La ausencia de model card y de cualquier detalle técnico impide evaluar su utilidad para desarrolladores o investigadores. La licencia MIT permite uso comercial y modificación, pero sin especificaciones no es posible determinar si el modelo es funcional, qué tareas puede realizar o cómo desplegarlo. Se recomienda contactar al autor o esperar a que publique información adicional antes de considerar su uso en cualquier proyecto.
 
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables porque se desconoce la categor�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/YassY-The-AlchemYst/YassYBS26Sol6
+- Repositorio en Hugging Face: https://huggingface.co/YassY-The-AlchemYst/YassYBS26Sol6

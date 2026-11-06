@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TerraHeight-S es un modelo compacto de estimacion de altura para teledeteccion, desarrollado por el usuario benfox6515 y publicado en HuggingFace bajo licencia Apache-2.0. Su tarea es la estimacion de altura monocular a partir de imagen aerea o satelital en RGB: recibe una imagen cenital y devuelve un mapa denso de altura por pixel expresado en metros sobre el nivel del suelo (AGL, Above Ground Level). Esto lo convierte en una herramienta de generacion de modelos digitales de superficie (DSM) a partir de ortofotos.
+TerraHeight-S es un modelo compacto de estimacion de altura para teledeteccion, desarrollado por el usuario benfox6515 y publicado en Hugging Face bajo licencia Apache-2.0. Su tarea es la estimacion de altura monocular a partir de imagen aerea o satelital en RGB: recibe una imagen cenital y devuelve un mapa denso de altura por pixel expresado en metros sobre el nivel del suelo (AGL, Above Ground Level). Esto lo convierte en una herramienta de generacion de modelos digitales de superficie (DSM) a partir de ortofotos.
 
 El modelo se construye por ajuste fino del backbone preentrenado Depth Anything V2 Small (encoder ViT-S) sobre el dataset GAMUS, exclusivamente. Cuenta con 24.785.089 parametros (24,79 M), una dimension de caracteristicas de 64 y canales de decodificador de 48, 96, 192 y 384. El mejor checkpoint se obtuvo en la epoca 30, entrenando con recortes de 630 x 630 pixeles y sin test-time augmentation.
 
@@ -76,14 +76,14 @@ No se han publicado en la informacion disponible resultados de benchmarks genera
 - Con entrada de 630 x 630 px y lote de tamano 1, el consumo total de VRAM previsible es de unos pocos gigabytes (estimacion orientativa; no confirmada por el autor).
 - GPU recomendadas: cabe holgadamente en cualquier GPU consumer moderna, incluidas RTX 3060, RTX 4060, RTX 4070 o RTX 4090; tambien en GPU de centro de datos (A100, H100) donde el modelo quedaria infrautilizado salvo en lotes muy grandes.
 - Deberia poder ejecutarse en CPU para inferencia puntual, dado el reducido numero de parametros, aunque el autor no publica latencias.
-- Opciones de despliegue: la libreria declarada en HuggingFace es depth-anything-v2; cabria esperar despliegue via PyTorch y transformers, y exportacion a ONNX o TensorRT. vLLM, llama.cpp y Ollama no son aplicables, ya que son runtimes de modelos de lenguaje.
+- Opciones de despliegue: la libreria declarada en Hugging Face es depth-anything-v2; cabria esperar despliegue via PyTorch y transformers, y exportacion a ONNX o TensorRT. vLLM, llama.cpp y Ollama no son aplicables, ya que son runtimes de modelos de lenguaje.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tarea | MAE (test GAMUS) | RMSE (test GAMUS) | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| TerraHeight-S | 24,79 M | Estimacion de altura monocular en teledeteccion | 1,580 m | 3,725 m | Apache-2.0 | HuggingFace (benfox6515/TerraHeight-S) |
+| TerraHeight-S | 24,79 M | Estimacion de altura monocular en teledeteccion | 1,580 m | 3,725 m | Apache-2.0 | Hugging Face (benfox6515/TerraHeight-S) |
 | Depth2Elevation | 99,54 M | Estimacion de altura monocular en teledeteccion | 1,991 m | 3,489 m | no disponible | referencia publicada del estado del arte en GAMUS |
 | Depth Anything V2 Small | no disponible en la informacion proporcionada | Estimacion de profundidad monocular en imagenes naturales | no aplicable (no evaluado en GAMUS) | no aplicable | Apache-2.0 (segun la informacion disponible) | modelo base preentrenado usado por TerraHeight-S |
 
@@ -105,7 +105,7 @@ No se dispone en la informacion proporcionada de otros modelos comparables evalu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/benfox6515/TerraHeight-S
+- Modelo en Hugging Face: https://huggingface.co/benfox6515/TerraHeight-S
 - Modelo base Depth Anything V2: no se proporciona enlace en la informacion disponible.
 - Dataset GAMUS: no se proporciona enlace en la informacion disponible.
 - Referencia Depth2Elevation: no se proporciona enlace en la informacion disponible.

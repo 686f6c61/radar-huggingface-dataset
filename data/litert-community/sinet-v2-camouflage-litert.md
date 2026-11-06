@@ -80,7 +80,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/litert-community/SINet-V2-Camouflage-LiteRT
+- Hugging Face: https://huggingface.co/litert-community/SINet-V2-Camouflage-LiteRT
 - Model card en GitHub: https://github.com/john-rocky/LiteRT-Models/blob/main/sinet/README.md
 - Repositorio del modelo original SINet-V2: https://github.com/GewelsJI/SINet-V2
 - Repositorio de LiteRT (sucesor de TensorFlow Lite): https://github.com/google-ai-edge/LiteRT

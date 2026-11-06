@@ -52,7 +52,7 @@ No se especifican requisitos de hardware en la información disponible. Dado que
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado modelos comparables en la misma categoría (control de vuelo tolerante a fallos con aprendizaje por refuerzo) dentro de la información proporcionada. Los repositorios de HuggingFace suelen contener modelos de lenguaje o visión, y este caso es atípico.
+No disponible. No se han identificado modelos comparables en la misma categoría (control de vuelo tolerante a fallos con aprendizaje por refuerzo) dentro de la información proporcionada. Los repositorios de Hugging Face suelen contener modelos de lenguaje o visión, y este caso es atípico.
 
 ## Limitaciones y advertencias
 
@@ -65,7 +65,7 @@ No disponible. No se han identificado modelos comparables en la misma categoría
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/SM-Bello/PHI-CTRL-F16-Models
+- Repositorio de Hugging Face: https://huggingface.co/SM-Bello/PHI-CTRL-F16-Models
 - Código fuente y documentación (GitHub): https://github.com/Sm-bello/PHI-CTRL
 - Conjunto de datos de telemetría: https://huggingface.co/datasets/SM-Bello/PHI-CTRL-F16-Fault-Recovery-Telemetry
 - DOI de Zenodo (versión congelada v1.0.0): https://doi.org/10.5281/zenodo.22218809

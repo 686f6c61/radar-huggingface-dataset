@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario DCZX1CA que, segun sus etiquetas, se distribuye con las librerias transformers y pytorch y esta asociado a la arquitectura BERT para la tarea de extraccion de caracteristicas (feature-extraction). El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y cero "likes", y su nombre incluye el sufijo "TestRepo", lo que sugiere que se trata de un espacio de pruebas mas que de un modelo destinado a produccion.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario DCZX1CA que, segun sus etiquetas, se distribuye con las librerias transformers y pytorch y esta asociado a la arquitectura BERT para la tarea de extraccion de caracteristicas (feature-extraction). El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y cero "likes", y su nombre incluye el sufijo "TestRepo", lo que sugiere que se trata de un espacio de pruebas mas que de un modelo destinado a produccion.
 
 La model card incluida describe, sin embargo, un modelo generativo de razonamiento con mejoras en tareas de matematicas, programacion y logica, e incluso cita un incremento de precision en AIME 2025 del 70 % al 87,5 % y un aumento del uso medio de tokens por pregunta de 12K a 23K. Existe por tanto una contradiccion manifiesta entre las etiquetas tecnicas del repositorio (BERT, feature-extraction) y el contenido de la tarjeta (modelo conversacional de razonamiento), ademas de que no se aportan parametros, contexto ni arquitectura concretos y los pesos no parecen estar presentes.
 
@@ -100,6 +100,6 @@ No disponible. Las referencias de la model card estan anonimizadas ("Model1", "M
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DCZX1CA/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/DCZX1CA/MyAwesomeModel-TestRepo
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada.
 - Los resultados de la busqueda web recibidos (anuncios clasificados de leboncoin) no guardan ninguna relacion con el modelo y se descartan como fuentes.

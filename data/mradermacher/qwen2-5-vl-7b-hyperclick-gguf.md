@@ -27,7 +27,7 @@ Con 7.615.616.512 parametros (unos 7,6 B) y un tamano total de repositorio de 70
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen2.5-VL-7B: un transformer con un codificador de vision que procesa imagenes a resolucion nativa dinamica y un decodificador de lenguaje autorregresivo que consume los tokens visuales proyectados mediante un modulo mmproj. Sobre esta base, SeerRay-Lab ha aplicado un ajuste denominado HyperClick, cuyas etiquetas declaradas son gui-grounding (localizacion precisa de elementos de interfaz), confidence-calibration (estimacion calibrada de la confianza de la prediccion) y reinforcement-learning (pipeline declarado como reinforcement-learning en HuggingFace). El detalle metodologico concreto del ajuste no aparece en la model card de esta cuantizacion; la referencia indicada es el articulo arXiv:2510.27266.
+La arquitectura subyacente es la de Qwen2.5-VL-7B: un transformer con un codificador de vision que procesa imagenes a resolucion nativa dinamica y un decodificador de lenguaje autorregresivo que consume los tokens visuales proyectados mediante un modulo mmproj. Sobre esta base, SeerRay-Lab ha aplicado un ajuste denominado HyperClick, cuyas etiquetas declaradas son gui-grounding (localizacion precisa de elementos de interfaz), confidence-calibration (estimacion calibrada de la confianza de la prediccion) y reinforcement-learning (pipeline declarado como reinforcement-learning en Hugging Face). El detalle metodologico concreto del ajuste no aparece en la model card de esta cuantizacion; la referencia indicada es el articulo arXiv:2510.27266.
 
 No se dispone en la informacion proporcionada de datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni la secuencia exacta de tecnicas de alineacion (SFT, RLHF, DPO u otras). Tampoco se documenta ninguna innovacion de inferencia como decodificacion especulativa. La aportacion de este repositorio es exclusivamente la cuantizacion en GGUF (conversion de tipo hf, quantize_version 2, salida con tensores cuantizados), sin cuantizaciones ponderadas ni con imatrix en el momento de la publicacion.
 
@@ -106,7 +106,7 @@ No se dispone de resultados de benchmarks comparativos en la informacion proporc
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Qwen2.5-VL-7B-HyperClick-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Qwen2.5-VL-7B-HyperClick-GGUF
 - Modelo base: https://huggingface.co/SeerRay-Lab/Qwen2.5-VL-7B-HyperClick
 - Articulo de referencia citado en las etiquetas: https://arxiv.org/abs/2510.27266
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Qwen2.5-VL-7B-HyperClick-GGUF

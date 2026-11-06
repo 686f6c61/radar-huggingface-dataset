@@ -85,7 +85,7 @@ La ventaja diferencial declarada es el tamaño reducido y la latencia baja frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/crp4222/privaite-pii-minilm
+- Modelo en Hugging Face: https://huggingface.co/crp4222/privaite-pii-minilm
 - Repositorio del proyecto PrivAiTe: https://github.com/crp4222/PrivAiTe
 - Scorer de evaluación privaite-bench: https://github.com/crp4222/privaite-bench
 - Modelo base: https://huggingface.co/microsoft/Multilingual-MiniLM-L12-H384

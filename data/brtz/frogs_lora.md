@@ -87,7 +87,7 @@ No se dispone de datos verificables de otros adaptadores de rana para SDXL con l
 
 ## Enlaces
 
-- [Modelo en HuggingFace: brtz/frogs_LoRA](https://huggingface.co/brtz/frogs_LoRA)
+- [Modelo en Hugging Face: brtz/frogs_LoRA](https://huggingface.co/brtz/frogs_LoRA)
 - [Modelo base: stabilityai/stable-diffusion-xl-base-1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)
 - [VAE empleado en entrenamiento: madebyollin/sdxl-vae-fp16-fix](https://huggingface.co/madebyollin/sdxl-vae-fp16-fix)
 - [DreamBooth: proyecto y paper](https://dreambooth.github.io/)

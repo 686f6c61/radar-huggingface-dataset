@@ -63,10 +63,10 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 - La documentación está en coreano, lo que puede dificultar su adopción fuera de ese idioma.
 - No se han publicado benchmarks ni evaluaciones de rendimiento, por lo que se desconoce su calidad relativa.
 - No se especifica la arquitectura, la longitud de contexto ni el proceso de entrenamiento.
-- La fecha de creación indicada en HuggingFace es 2026-09-04, lo que resulta inusual y podría tratarse de un error de metadata o de un proyecto experimental.
+- La fecha de creación indicada en Hugging Face es 2026-09-04, lo que resulta inusual y podría tratarse de un error de metadata o de un proyecto experimental.
 - El modelo base A.X-4.0-Light no está documentado en la información disponible; habría que verificar su licencia y posibles restricciones de uso comercial.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PJiNH/ax7bplanner-v3-GGUF
+- Hugging Face: https://huggingface.co/PJiNH/ax7bplanner-v3-GGUF
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web.

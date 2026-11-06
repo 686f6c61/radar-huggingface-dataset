@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stanza-wuu es un paquete de modelos de análisis lingüístico para el shanghainés (variedad wu del chino, código ISO `wuu`), distribuido por el grupo Stanford NLP dentro del ecosistema Stanza. El repositorio se publica en HuggingFace con el pipeline `token-classification` y está pensado para su uso a través de la librería `stanza`, que encadena tokenización, análisis morfosintáctico y reconocimiento de entidades sobre texto en bruto. El problema que resuelve es la falta de herramientas de procesamiento del lenguaje natural para variedades lingüísticas con pocos recursos: el shanghainés apenas cuenta con recursos anotados y no dispone de los paquetes estándar de chino mandarín.
+Stanza-wuu es un paquete de modelos de análisis lingüístico para el shanghainés (variedad wu del chino, código ISO `wuu`), distribuido por el grupo Stanford NLP dentro del ecosistema Stanza. El repositorio se publica en Hugging Face con el pipeline `token-classification` y está pensado para su uso a través de la librería `stanza`, que encadena tokenización, análisis morfosintáctico y reconocimiento de entidades sobre texto en bruto. El problema que resuelve es la falta de herramientas de procesamiento del lenguaje natural para variedades lingüísticas con pocos recursos: el shanghainés apenas cuenta con recursos anotados y no dispone de los paquetes estándar de chino mandarín.
 
 Stanza es una colección de herramientas para el análisis lingüístico de más de 70 lenguas, con modelos preentrenados que cubren desde la segmentación hasta el análisis sintáctico y la extracción de entidades. Este repositorio concreto corresponde a un paquete generado automáticamente mediante el script `hugging_stanza.py` del repositorio `stanfordnlp/huggingface-models`, por lo que la model card no aporta detalles de arquitectura, datos de entrenamiento ni métricas de evaluación. El tamaño del repositorio es de 0,2 GB, lo que sitúa el paquete en el rango de modelos ligeros y desplegables incluso en CPU.
 
@@ -33,7 +33,7 @@ A partir del material disponible solo puede afirmarse lo que la documentacion ge
 
 ## Capacidades
 
-- Reconocimiento de entidades nombradas (NER) sobre texto en shanghaines, dado que el pipeline declarado en HuggingFace es `token-classification`.
+- Reconocimiento de entidades nombradas (NER) sobre texto en shanghaines, dado que el pipeline declarado en Hugging Face es `token-classification`.
 - Integracion en la pipeline completa de Stanza para `wuu`: la documentacion general del proyecto describe soporte para partes de la oracion, entidades nombradas, lemas, analisis de dependencias y analisis de constituyentes.
 - Procesamiento de texto en bruto: Stanza esta disenado para partir de texto sin anotar y producir analisis linguistico estructurado.
 - Uso como componente dentro de flujos de NLP multilingues, seleccionando el paquete `wuu` mediante `stanza.download("wuu")` y la pipeline correspondiente.
@@ -86,7 +86,7 @@ No se dispone de metricas comparativas publicadas en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/stanfordnlp/stanza-wuu
+- Repositorio en Hugging Face: https://huggingface.co/stanfordnlp/stanza-wuu
 - Sitio web de Stanza: https://stanfordnlp.github.io/stanza
 - Pagina de modelos de Stanza: https://stanfordnlp.github.io/stanza/models.html
 - Descarga de modelos de Stanza: https://stanfordnlp.github.io/stanza/download_models.html

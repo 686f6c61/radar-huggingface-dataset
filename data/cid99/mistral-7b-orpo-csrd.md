@@ -97,7 +97,7 @@ El modelo base es claramente superior en la tarea objetivo, con el doble de prec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CID99/Mistral-7B-ORPO-CSRD
+- Hugging Face: https://huggingface.co/CID99/Mistral-7B-ORPO-CSRD
 - Paper ORPO (Hong et al., 2024): https://arxiv.org/abs/2403.07691
 - Dataset FinCAC40: https://huggingface.co/datasets/YOUR_USERNAME/FinCAC40
 - Modelo base Mistral-7B-Instruct-v0.3: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3

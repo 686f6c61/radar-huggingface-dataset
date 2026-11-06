@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Saraswathy/vlm-mix-resume-stem60-geo20-nongeo20-step5
+- Repositorio Hugging Face: https://huggingface.co/Saraswathy/vlm-mix-resume-stem60-geo20-nongeo20-step5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Proyecto VLM Resume Lab: https://github.com/Icebinge/vlm-resume-lab
 - Otros checkpoints del autor: https://huggingface.co/Saraswathy/vlm-mix-stem60-geometry40-direct-step100, https://huggingface.co/Saraswathy/vlm-mix-broader-stem-expert-step100

@@ -76,7 +76,7 @@ No procede una comparativa directa, ya que el repositorio no es un modelo unico 
 
 | Alternativa | Contenido | Versionado | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este bundle (`nguyenviet21/AIC26-models`) | 8 componentes con snapshots pinneados, manifiesto con tamanos y SHA-256 | Fijado por commit y hash | No unificada; componentes con CC-BY-NC-4.0 y terminos propios | Publico en HuggingFace, 12,0 GB |
+| Este bundle (`nguyenviet21/AIC26-models`) | 8 componentes con snapshots pinneados, manifiesto con tamanos y SHA-256 | Fijado por commit y hash | No unificada; componentes con CC-BY-NC-4.0 y terminos propios | Publico en Hugging Face, 12,0 GB |
 | Descarga individual desde repos upstream | MetaCLIP2, BGE-VL-large, PE-Core-B16-224, BEiT-3, EasyOCR, PARSeq, ChunkFormer, RF-DETR | Sujeto a cambios en cada repositorio | La de cada proyecto | Publica, pero requiere resolver versiones manualmente |
 | Checkpoint PARSeq-VN | Checkpoint ajustado por el equipo | Solo dentro de este bundle | No establecida; la model card exige que el publicador anada los terminos de procedencia y redistribucion | No disponible fuera del bundle |
 | `qwen2.5:3b-instruct` | Modelo de lenguaje opcional para generacion de texto | Etiqueta de Ollama | La del modelo Qwen 2.5 | Se aprovisiona por separado con `ollama pull` |
@@ -98,7 +98,7 @@ No procede una comparativa directa, ya que el repositorio no es un modelo unico 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nguyenviet21/AIC26-models
+- Repositorio en Hugging Face: https://huggingface.co/nguyenviet21/AIC26-models
 - MetaCLIP2 (facebook/metaclip-2-worldwide-huge-quickgelu): https://huggingface.co/facebook/metaclip-2-worldwide-huge-quickgelu/tree/c139061af7b10fdb2e754b60d2b1182a3d5526c2
 - BGE-VL-large (BAAI): https://huggingface.co/BAAI/BGE-VL-large/tree/40fb48217f521df22a2a5bf15edd52ed1146ef05
 - Perception Encoder (facebook/PE-Core-B16-224): https://huggingface.co/facebook/PE-Core-B16-224/tree/a16450b46fef32363459920c2685a1b4ef13dcd9

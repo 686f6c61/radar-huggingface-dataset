@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `zoarag/Xiao_Ye_` es un repositorio alojado en HuggingFace por el usuario `zoarag`, con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo o utilizarlo. El repositorio tiene un tamaño de 4,4 GB, lo que sugiere que podría tratarse de un modelo de tamaño medio, pero no se dispone de información pública sobre su arquitectura, número de parámetros, pipeline o licencia.
+El modelo `zoarag/Xiao_Ye_` es un repositorio alojado en Hugging Face por el usuario `zoarag`, con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo o utilizarlo. El repositorio tiene un tamaño de 4,4 GB, lo que sugiere que podría tratarse de un modelo de tamaño medio, pero no se dispone de información pública sobre su arquitectura, número de parámetros, pipeline o licencia.
 
-A fecha de la última actualización (15 de agosto de 2026), el modelo no registra descargas y cuenta con un único "like", lo que indica que su distribución es muy limitada o que la documentación asociada es insuficiente para atraer a la comunidad. La etiqueta `region:us` sugiere que el autor ha restringido el acceso geográfico a Estados Unidos, aunque esta información no está confirmada en la ficha de HuggingFace.
+A fecha de la última actualización (15 de agosto de 2026), el modelo no registra descargas y cuenta con un único "like", lo que indica que su distribución es muy limitada o que la documentación asociada es insuficiente para atraer a la comunidad. La etiqueta `region:us` sugiere que el autor ha restringido el acceso geográfico a Estados Unidos, aunque esta información no está confirmada en la ficha de Hugging Face.
 
 Dada la ausencia de datos técnicos publicados, esta ficha se limita a describir los metadatos disponibles y a señalar explícitamente qué aspectos del modelo no pueden ser evaluados con la información actual. Se recomienda contactar al autor o aceptar las condiciones de acceso para obtener documentación adicional.
 
@@ -47,7 +47,7 @@ No disponible. Al carecer de datos sobre arquitectura, parámetros y rendimiento
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que limita su uso inmediato y puede implicar restricciones adicionales no especificadas.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que limita su uso inmediato y puede implicar restricciones adicionales no especificadas.
 - Falta de documentación: no se dispone de información sobre arquitectura, licencia, idiomas o capacidades, lo que impide evaluar su idoneidad para uso en producción.
 - Riesgo de sesgos y alucinaciones: al desconocerse los datos de entrenamiento, no se puede valorar la presencia de sesgos ni la fiabilidad de las respuestas.
 - Sin datos de rendimiento: la ausencia de benchmarks y pruebas independientes hace imposible validar su calidad.
@@ -56,4 +56,4 @@ No disponible. Al carecer de datos sobre arquitectura, parámetros y rendimiento
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/zoarag/Xiao_Ye_](https://huggingface.co/zoarag/Xiao_Ye_)
+- Repositorio en Hugging Face: [https://huggingface.co/zoarag/Xiao_Ye_](https://huggingface.co/zoarag/Xiao_Ye_)

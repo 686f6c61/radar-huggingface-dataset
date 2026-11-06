@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GeoTransolver es un modelo publicado en HuggingFace por el usuario 42reddy, con licencia MIT y etiqueta regional para Estados Unidos. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. Tanto el número de descargas como de likes es cero, lo que sugiere que se trata de un modelo recién publicado o sin difusión. A fecha de creación (3 de septiembre de 2026) no se dispone de información adicional sobre su propósito, tamaño o capacidades. Por tanto, cualquier evaluación técnica resulta imposible con los datos disponibles.
+GeoTransolver es un modelo publicado en Hugging Face por el usuario 42reddy, con licencia MIT y etiqueta regional para Estados Unidos. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. Tanto el número de descargas como de likes es cero, lo que sugiere que se trata de un modelo recién publicado o sin difusión. A fecha de creación (3 de septiembre de 2026) no se dispone de información adicional sobre su propósito, tamaño o capacidades. Por tanto, cualquier evaluación técnica resulta imposible con los datos disponibles.
 
 ## Especificaciones tecnicas
 
@@ -50,4 +50,4 @@ No disponible. Al carecer de especificaciones técnicas, no se puede establecer 
 
 ## Enlaces
 
-- [HuggingFace: 42reddy/GeoTransolver](https://huggingface.co/42reddy/GeoTransolver)
+- [Hugging Face: 42reddy/GeoTransolver](https://huggingface.co/42reddy/GeoTransolver)

@@ -28,7 +28,7 @@ Su relevancia actual es limitada y muy especifica: sirve como material reproduci
 
 No se aporta informacion tecnica sobre la arquitectura en la model card mas alla de la etiqueta `voiceclap` y la referencia implicita a Qwen2.5-Omni-7B en el nombre del repositorio. Si se confirma que parte de Qwen2.5-Omni-7B, se trataria de un modelo multimodal con un modulo "thinker" para comprension (texto, audio, imagen y video) y un modulo "talker" para generacion de habla, capaz de procesar audio de forma nativa y de mantener conversaciones por voz con baja latencia. Esta descripcion corresponde al modelo base y no debe atribuirse automaticamente al checkpoint.
 
-Respecto al entrenamiento, lo unico documentado es que se trata de un directorio de ejecucion de fine-tuning y que en el directorio original existian enlaces simbolicos, en concreto `epoch_latest_hf -> epoch_5_hf`, lo que indica que se entrenaron al menos cinco epocas y que los pesos subidos corresponden a la quinta. Tambien se menciona que los enlaces simbolicos no se subieron a HuggingFace. No hay datos sobre numero de tokens, composicion del dataset, uso de RLHF o DPO, ni sobre la tecnica de ajuste empleada (LoRA, full fine-tuning, etc.).
+Respecto al entrenamiento, lo unico documentado es que se trata de un directorio de ejecucion de fine-tuning y que en el directorio original existian enlaces simbolicos, en concreto `epoch_latest_hf -> epoch_5_hf`, lo que indica que se entrenaron al menos cinco epocas y que los pesos subidos corresponden a la quinta. Tambien se menciona que los enlaces simbolicos no se subieron a Hugging Face. No hay datos sobre numero de tokens, composicion del dataset, uso de RLHF o DPO, ni sobre la tecnica de ajuste empleada (LoRA, full fine-tuning, etc.).
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ Respecto al entrenamiento, lo unico documentado es que se trata de un directorio
 - Punto de partida para fine-tuning propio: un laboratorio puede continuar el ajuste desde `epoch_5_hf` sobre su propio corpus de voz, dado que el repositorio actua como estado intermedio reanudable.
 - Auditoria de checkpoints multimodales: util para estudiar que se almacena en un directorio de entrenamiento multimodal de gran tamano (112,9 GB) y como se estructura la serializacion en safetensors frente a los enlaces simbolicos originales.
 - Evaluacion interna de calidad de voz: un equipo puede medir MOS, similitud de hablante o inteligibilidad sobre este checkpoint antes de decidir si merece la pena integrarlo en una linea de producto.
-- Docencia y formacion: sirve como caso practico de ciclo completo de fine-tuning multimodal con gestion de epochs y versionado de checkpoints en HuggingFace.
+- Docencia y formacion: sirve como caso practico de ciclo completo de fine-tuning multimodal con gestion de epochs y versionado de checkpoints en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -80,12 +80,12 @@ No hay datos de benchmarks ni metricas comparables en la informacion disponible,
 - Sesgos conocidos: no documentados. Cualquier sesgo del modelo base se heredaria, pero no hay analisis disponible.
 - Al ser un checkpoint intermedio (epoca 5) y no una release final, es probable que el rendimiento no este optimizado ni alineado.
 - El repositorio de 103,3 GB incluye presumiblemente artefactos de entrenamiento ademas de los pesos; descargarlo completo puede no ser necesario ni eficiente.
-- Los enlaces simbolicos originales no se subieron, por lo que la estructura del directorio en HuggingFace puede diferir del entorno de entrenamiento y requerir reconstruccion manual.
+- Los enlaces simbolicos originales no se subieron, por lo que la estructura del directorio en Hugging Face puede diferir del entorno de entrenamiento y requerir reconstruccion manual.
 - Ausencia total de comunidad: 0 descargas y 0 likes implican que no existe validacion externa ni soporte.
 - Advertencia sobre la fecha de creacion y actualizacion indicadas (2026), que resultan anomales y conviene verificar antes de citar el modelo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VoiceNetCkpt/finetune_qwen25_omni_7b_lco_style_emoprompt
+- Hugging Face: https://huggingface.co/VoiceNetCkpt/finetune_qwen25_omni_7b_lco_style_emoprompt
 - Indice de checkpoints VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Papers, blogs, repositorios o demos adicionales: no disponible

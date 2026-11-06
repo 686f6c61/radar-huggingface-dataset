@@ -6,7 +6,7 @@ potion-base-32M es un modelo de embeddings estáticos desarrollado por tokiers, 
 
 El modelo resuelve el problema del coste computacional en pipelines de búsqueda semántica, deduplicación, clustering y recuperación a gran escala, donde la latencia y el consumo de memoria son críticos. Al no requerir atención ni cómputo por token más allá de una búsqueda en tabla y una agregación de vectores, puede desplegarse en entornos con recursos muy limitados, incluidos dispositivos de borde y CPUs sin aceleración. Frente a potion-base-8M, utiliza un vocabulario mayor, lo que mejora tareas que requieren cobertura léxica amplia.
 
-La versión alojada por tokiers incluye además un tokenizador precompilado de tokie (`tokenizer.tkz`), que se presenta como reemplazo directo de los tokenizadores de HuggingFace con una velocidad de tokenización hasta cinco veces superior. La licencia es MIT, lo que permite uso comercial sin restricciones adicionales. El modelo está pensado exclusivamente para inglés, ya que el corpus de destilación es `minishlab/tokenlearn-c4-en-bge-base-v1.5`.
+La versión alojada por tokiers incluye además un tokenizador precompilado de tokie (`tokenizer.tkz`), que se presenta como reemplazo directo de los tokenizadores de Hugging Face con una velocidad de tokenización hasta cinco veces superior. La licencia es MIT, lo que permite uso comercial sin restricciones adicionales. El modelo está pensado exclusivamente para inglés, ya que el corpus de destilación es `minishlab/tokenlearn-c4-en-bge-base-v1.5`.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ Model2Vec no es un transformer en tiempo de inferencia: cada token del vocabular
 
 El proceso de Tokenlearn consta de cuatro fases: primero se destila el sentence transformer con Model2Vec; después se genera un corpus de entrenamiento calculando embeddings medios de salida del profesor sobre un corpus grande (el dataset `minishlab/tokenlearn-c4-en-bge-base-v1.5`, derivado de C4 en inglés); a continuación se entrena el modelo destilado sobre esos datos; y finalmente se aplica una re-regularización posterior que pondera los tokens por frecuencia, aplica PCA y termina con ponderación SIF. Esta última fase es clave para que un modelo sin contexto posicional ni atención alcance puntuaciones cercanas a las de un transformer pequeño.
 
-El repositorio incluye un tokenizador tokie precompilado (`tokenizer.tkz`) que actúa como reemplazo directo de los tokenizadores de HuggingFace y acelera la fase de tokenización, que en modelos estáticos pasa a ser un cuello de botella relevante al ser la inferencia casi instantánea.
+El repositorio incluye un tokenizador tokie precompilado (`tokenizer.tkz`) que actúa como reemplazo directo de los tokenizadores de Hugging Face y acelera la fase de tokenización, que en modelos estáticos pasa a ser un cuello de botella relevante al ser la inferencia casi instantánea.
 
 ## Capacidades
 
@@ -80,10 +80,10 @@ Según la model card, potion-base-32M alcanza el 94,66 % del rendimiento medio d
 
 | Modelo | Parámetros | Contexto | Avg MTEB | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| potion-base-32M | 32,3 M | no disponible | 52,13 | MIT | HuggingFace (toki, réplica) |
-| potion-base-8M | 8 M (aprox.) | no disponible | 51,08 | MIT | HuggingFace (MinishLab) |
-| all-MiniLM-L6-v2 | 22,7 M | 256 tokens | 55,93 | Apache 2.0 | HuggingFace |
-| baai/bge-base-en-v1.5 | 109 M | 512 tokens | no disponible en esta ficha | MIT | HuggingFace |
+| potion-base-32M | 32,3 M | no disponible | 52,13 | MIT | Hugging Face (toki, réplica) |
+| potion-base-8M | 8 M (aprox.) | no disponible | 51,08 | MIT | Hugging Face (MinishLab) |
+| all-MiniLM-L6-v2 | 22,7 M | 256 tokens | 55,93 | Apache 2.0 | Hugging Face |
+| baai/bge-base-en-v1.5 | 109 M | 512 tokens | no disponible en esta ficha | MIT | Hugging Face |
 | GloVe 300d | 400 K vectores | no aplica | 45,82 | Público dominio / varias | Varios |
 
 La comparación relevante es con all-MiniLM-L6-v2: potion-base-32M pierde unos 3,8 puntos medios en MTEB pero gana en clasificación (71,70 frente a 69,25) y en similitud palabra a palabra (55,15 frente a 49,91), mientras que cae notablemente en retrieval (32,67 frente a 42,92). Para tareas de recuperación de alta exigencia conviene un cross-encoder o un transformer denso; para clasificación, clustering y similitud a gran escala, potion-base-32M es la opción más eficiente.
@@ -101,7 +101,7 @@ La comparación relevante es con all-MiniLM-L6-v2: potion-base-32M pierde unos 3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tokiers/potion-base-32M
+- Modelo en Hugging Face: https://huggingface.co/tokiers/potion-base-32M
 - Modelo original de MinishLab: https://huggingface.co/minishlab/potion-base-32M
 - Repositorio Model2Vec: https://github.com/MinishLab/model2vec
 - Repositorio Tokenlearn: https://github.com/MinishLab/tokenlearn

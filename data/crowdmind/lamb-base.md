@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CrowdMind/lamb-base | 286 M | 8.196 | No disponible | HuggingFace (GGUF y `.pt`) |
+| CrowdMind/lamb-base | 286 M | 8.196 | No disponible | Hugging Face (GGUF y `.pt`) |
 | GPT-2 small | 124 M | 1.024 | MIT | Amplia |
 | GPT-2 medium | 355 M | 1.024 | MIT | Amplia |
-| SmolLM-135M | 135 M | 2.048 | Apache 2.0 | HuggingFace |
+| SmolLM-135M | 135 M | 2.048 | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a parametros, contexto y licencia porque no hay benchmarks estandar publicados para `lamb-base` que permitan una comparacion de rendimiento fiable. Frente a GPT-2 small/medium y SmolLM, `lamb-base` ofrece un contexto mayor (8.196 tokens) pero carece de licencia declarada y de evaluacion estandar, lo que dificulta su adopcion frente a alternativas con licencias permisivas y resultados publicos.
 
@@ -88,7 +88,7 @@ La comparativa se limita a parametros, contexto y licencia porque no hay benchma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CrowdMind/lamb-base
+- Hugging Face: https://huggingface.co/CrowdMind/lamb-base
 - Dataset de preentrenamiento (segmento 1): https://huggingface.co/datasets/CrowdMind/2048-pretraining
 - Dataset de preentrenamiento (segmento 2): https://huggingface.co/datasets/CrowdMind/6144-pretraining
 - Dataset de codigo: https://huggingface.co/datasets/AIGym/code-pretraining-8196

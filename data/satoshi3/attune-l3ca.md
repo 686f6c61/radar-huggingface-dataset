@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| satoshi3/attune-l3cA | 780.979.360 | no disponible | no disponible | no disponible | HuggingFace |
-| domFree/attune-j4 (padre) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| satoshi3/attune-l3cA | 780.979.360 | no disponible | no disponible | no disponible | Hugging Face |
+| domFree/attune-j4 (padre) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otras políticas robóticas con difusión | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación cuantitativa con alternativas no está disponible en la información proporcionada. El único punto de comparación documentado es el modelo padre domFree/attune-j4, del que este fine-tune hereda la arquitectura y el layout de pesos.
@@ -79,7 +79,7 @@ La comparación cuantitativa con alternativas no está disponible en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/satoshi3/attune-l3cA
+- Modelo en Hugging Face: https://huggingface.co/satoshi3/attune-l3cA
 - Modelo padre: https://huggingface.co/domFree/attune-j4
 - Revisión del padre referenciada: 4a2651b08cb70332bfe9b86ef9b2efaff1825eb8
 - Harness RoboTwin-Vector: no disponible en la información proporcionada.

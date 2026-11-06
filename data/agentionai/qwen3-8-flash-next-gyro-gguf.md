@@ -18,7 +18,7 @@ Su relevancia actual es practica: los quants de muy pocos bits de este modelo ti
 | Longitud de contexto | 65.536 tokens (64k) en las configuraciones de ejemplo de la model card |
 | Tipos de cuantizacion | Expertos enrutados con rotor code de 1,625 bits/peso (gate/up) y 1,875 bits/peso (down), media 1,71; capas compartidas en K-quant de 5 bits; router en BF16; cache KV en q8_0; draft MTP en Q4_K_M |
 | Idiomas soportados | no disponible (la calibracion incluye 16 idiomas, pero no se enumeran) |
-| Licencia | qwen-community-1.0 (etiquetada como `other` y `license_name: qwen-community-1.0` en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como `other` y `license_name: qwen-community-1.0` en Hugging Face) |
 | Formato de pesos | GGUF (`gguf`, `library_name: gguf`) |
 
 ## Arquitectura y entrenamiento
@@ -103,15 +103,15 @@ No se dispone de datos de rendimiento comparativos entre estas variantes mas all
 - No se incluye la lista de idiomas soportados, solo que la calibracion cubre 16 idiomas.
 - Riesgo de alucinacion inherente al modelo base, no caracterizado en esta ficha por falta de evaluaciones publicadas.
 - Riesgo de sesgos no evaluado en la informacion disponible.
-- Licencia `qwen-community-1.0` (etiquetada como `other` en HuggingFace): es una licencia especifica de Qwen con condiciones propias, no una licencia de codigo abierto estandar. Hay que revisar sus terminos antes de un uso comercial.
+- Licencia `qwen-community-1.0` (etiquetada como `other` en Hugging Face): es una licencia especifica de Qwen con condiciones propias, no una licencia de codigo abierto estandar. Hay que revisar sus terminos antes de un uso comercial.
 - El rendimiento publicado (32 a 61 tok/s) corresponde a una iGPU Strix Halo, no a una GPU dedicada, por lo que no es extrapolable directamente.
 - Las cifras de memoria de Gyro-M y Gyro-L son estimaciones del autor, no medidas.
 - El repositorio ocupa 120,6 GB, lo que implica un coste de almacenamiento y descarga notable, aunque la descarga de Gyro-S se cifra en 58,5 GB.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Hugging Face: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio oficial del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Guia de inicio (DeepWiki): https://deepwiki.com/QwenLM/Qwen3.8-Flash-Next/3-getting-started
 - Build de llama.cpp de agentionai: https://github.com/agentionai/llama.cpp

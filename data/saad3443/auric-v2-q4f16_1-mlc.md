@@ -93,7 +93,7 @@ La comparacion se limita a caracteristicas estructurales y de licencia: al no ex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saad3443/auric-v2-q4f16_1-MLC
+- Modelo en Hugging Face: https://huggingface.co/saad3443/auric-v2-q4f16_1-MLC
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Modelo profesor mencionado en la model card: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - MLC LLM (runtime y compilador): https://github.com/mlc-ai/mlc-llm

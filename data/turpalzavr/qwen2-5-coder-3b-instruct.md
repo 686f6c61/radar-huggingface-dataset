@@ -94,7 +94,7 @@ Los datos de los modelos alternativos no estan confirmados en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Turpalzavr/Qwen2.5-Coder-3B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/Turpalzavr/Qwen2.5-Coder-3B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - Modelo oficial instruido: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
 - Licencia: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct/blob/main/LICENSE

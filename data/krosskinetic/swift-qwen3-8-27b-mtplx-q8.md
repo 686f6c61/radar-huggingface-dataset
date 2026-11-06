@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift-Qwen3.8-27B-MTPLX-Q8 es una conversión de pesos publicada por el usuario KrossKinetic en HuggingFace, etiquetada con la librería `mlx` y el tag de familia `qwen3_5`, lo que apunta a un modelo derivado de la familia Qwen 3.5 redistribuido en formato MLX y cuantizado a 8 bits. El repositorio contiene 27.356.723.952 parámetros (~27,36 mil millones) y ocupa 30,4 GB, un tamaño coherente con pesos de 8 bits más las capas que MLX suele mantener en mayor precisión.
+Swift-Qwen3.8-27B-MTPLX-Q8 es una conversión de pesos publicada por el usuario KrossKinetic en Hugging Face, etiquetada con la librería `mlx` y el tag de familia `qwen3_5`, lo que apunta a un modelo derivado de la familia Qwen 3.5 redistribuido en formato MLX y cuantizado a 8 bits. El repositorio contiene 27.356.723.952 parámetros (~27,36 mil millones) y ocupa 30,4 GB, un tamaño coherente con pesos de 8 bits más las capas que MLX suele mantener en mayor precisión.
 
 El problema que resuelve es acotado: permitir ejecutar un modelo de ~27B en equipos Apple Silicon dentro del ecosistema MLX, sin necesidad de GPU NVIDIA ni de convertir manualmente pesos de safetensors a formato MLX. Es, por tanto, una pieza de infraestructura de despliegue más que un modelo nuevo con entrenamiento propio.
 
@@ -92,7 +92,7 @@ Diferencias clave: las alternativas de la familia Qwen 3 publican licencia Apach
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KrossKinetic/Swift-Qwen3.8-27B-MTPLX-Q8
+- Hugging Face: https://huggingface.co/KrossKinetic/Swift-Qwen3.8-27B-MTPLX-Q8
 - Model card del autor: sin contenido técnico relevante (solo cabecera YAML con `language`, `library_name`, `pipeline_tag` y el tag `mlx`).
 - Paper, blog, repositorio o demo: no disponible.
 - Resultados de búsqueda web: no se encontró ningún enlace relacionado con el modelo; los resultados devueltos correspondían a un medio de noticias griego sin relación con la consulta.

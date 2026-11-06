@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la información disponible. La f
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-VL-8B-Instruct (base) | 8B | No disponible | No disponible | apache-2.0 | Público en HuggingFace |
-| Este modelo (adaptadores LoRA sobre el base) | 8B + adaptadores (~0,6 GB) | No disponible | Sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas, 1 like |
+| Qwen3-VL-8B-Instruct (base) | 8B | No disponible | No disponible | apache-2.0 | Público en Hugging Face |
+| Este modelo (adaptadores LoRA sobre el base) | 8B + adaptadores (~0,6 GB) | No disponible | Sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas, 1 like |
 | Otros VLM médicos de propósito similar (por ejemplo, variantes de LLaVA-Med o Med-Flamingo) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la información proporcionada de datos verificables de parámetros, contexto, rendimiento o licencia de alternativas comparables dentro del reto ORena FOCUS ni de otros sistemas de VQA quirúrgica de vídeo completo.

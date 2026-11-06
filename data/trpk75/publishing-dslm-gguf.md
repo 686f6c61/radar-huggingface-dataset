@@ -82,7 +82,7 @@ La comparacion directa con el modelo base es la mas informativa: cualquier difer
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/trpk75/publishing-dslm-gguf
+- Repositorio Hugging Face: https://huggingface.co/trpk75/publishing-dslm-gguf
 - Unsloth (herramienta de ajuste fino y conversion): https://github.com/unslothai/unsloth
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

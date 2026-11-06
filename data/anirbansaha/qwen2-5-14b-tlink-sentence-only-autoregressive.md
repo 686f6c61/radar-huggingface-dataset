@@ -69,8 +69,8 @@ Advertencia metodologica: con n = 192, el intervalo de confianza al 95 % para un
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (qwen2.5-14b-tlink-sentence-only-autoregressive) | 14,77 B | No disponible (base: 32.768 tokens, 131.072 con YaRN) | Clasificacion TLINK generativa en 4 clases | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-14B-Instruct (modelo base) | 14,77 B | 32.768 tokens nativos, 131.072 con YaRN | Instrucciones generales, chat, codigo, tool calling | Apache 2.0 | HuggingFace, ampliamente desplegado |
+| Este modelo (qwen2.5-14b-tlink-sentence-only-autoregressive) | 14,77 B | No disponible (base: 32.768 tokens, 131.072 con YaRN) | Clasificacion TLINK generativa en 4 clases | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-14B-Instruct (modelo base) | 14,77 B | 32.768 tokens nativos, 131.072 con YaRN | Instrucciones generales, chat, codigo, tool calling | Apache 2.0 | Hugging Face, ampliamente desplegado |
 | Clasificadores discriminativos tipo BERT/RoBERTa ajustados a TimeML (TempEval, MATRES) | 0,1-0,4 B | 512 tokens | Clasificacion TLINK | Variable segun checkpoint | Multiples checkpoints publicos, datos comparativos no disponibles aqui |
 
 La comparacion cuantitativa con alternativas no esta disponible: no se han publicado resultados de este modelo frente a clasificadores BERT en el mismo split, ni frente a otros LLM ajustados para la misma tarea. La unica comparacion defendible es frente al modelo base, del que se diferencia por el ajuste de parametros completos y por la especializacion en una tarea de etiquetado con cuatro clases.
@@ -88,7 +88,7 @@ La comparacion cuantitativa con alternativas no esta disponible: no se han publi
 - Fecha de creacion del repositorio inusual (2026-10-14) y actualizacion a los pocos minutos; conviene verificar la integridad de los pesos antes de usarlos en un entorno de produccion.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/AnirbanSaha/qwen2.5-14b-tlink-sentence-only-autoregressive
+- Modelo en Hugging Face: https://huggingface.co/AnirbanSaha/qwen2.5-14b-tlink-sentence-only-autoregressive
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Dataset de ajuste: https://huggingface.co/datasets/AnirbanSaha/tlink-classification-sentence-only
 - Informe tecnico de Qwen2.5 (referencia del modelo base): https://arxiv.org/abs/2412.15115

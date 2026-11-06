@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `capsd-marin-8b-base-n80000-opc-r96-marin-8b-base-code_cap_b8000_s0` es un ajuste fino (fine-tune) de `marin-community/marin-8b-base`, un modelo de lenguaje de 8.030 millones de parametros, publicado por el usuario AmberYifan en HuggingFace. El entrenamiento se realizo sobre el dataset `capsd_R96__mix_code_cap_b8000_s0` con un enfoque de ajuste completo (full fine-tuning) utilizando la libreria LLaMA Factory.
+El modelo `capsd-marin-8b-base-n80000-opc-r96-marin-8b-base-code_cap_b8000_s0` es un ajuste fino (fine-tune) de `marin-community/marin-8b-base`, un modelo de lenguaje de 8.030 millones de parametros, publicado por el usuario AmberYifan en Hugging Face. El entrenamiento se realizo sobre el dataset `capsd_R96__mix_code_cap_b8000_s0` con un enfoque de ajuste completo (full fine-tuning) utilizando la libreria LLaMA Factory.
 
 La relevancia de este modelo reside en su especializacion en tareas de generacion de codigo, ya que el dataset de entrenamiento incluye el sufijo `code_cap` (probablemente "code captioning" o "code capabilities"). Al ser un ajuste fino de un modelo base de 8B, ofrece un equilibrio entre rendimiento y requisitos de hardware, siendo viable para despliegue en GPUs de consumo. La ficha tecnica original es minima y no incluye benchmarks ni descripcion detallada de capacidades, por lo que gran parte de la informacion debe tratarse con cautela.
 
@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| capsd-marin-8b-base (este modelo) | 8,03B | no disponible | other | HuggingFace |
-| marin-community/marin-8b-base | 8,03B | no disponible | no disponible | HuggingFace |
-| Llama 3 8B | 8,03B | 8K (ampliable a 128K) | Llama 3 Community License | HuggingFace, Ollama, etc. |
-| Mistral 7B | 7,3B | 32K | Apache 2.0 | HuggingFace, Ollama, etc. |
+| capsd-marin-8b-base (este modelo) | 8,03B | no disponible | other | Hugging Face |
+| marin-community/marin-8b-base | 8,03B | no disponible | no disponible | Hugging Face |
+| Llama 3 8B | 8,03B | 8K (ampliable a 128K) | Llama 3 Community License | Hugging Face, Ollama, etc. |
+| Mistral 7B | 7,3B | 32K | Apache 2.0 | Hugging Face, Ollama, etc. |
 
 No se dispone de datos de rendimiento comparativo. La comparativa se limita a caracteristicas arquitectonicas y de disponibilidad.
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo. La comparativa se limita a ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-marin-8b-base-n80000-opc-r96-marin-8b-base-code_cap_b8000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-marin-8b-base-n80000-opc-r96-marin-8b-base-code_cap_b8000_s0
 - Modelo base: https://huggingface.co/marin-community/marin-8b-base
 - Variante con retraining final: https://huggingface.co/AmberYifan/capsd-final-retrain-marin-8b-base-code_cap_b8000_s0
 - Variante con dataset code_less: https://huggingface.co/AmberYifan/capsd-marin-8b-base-code_less_b8000_s0

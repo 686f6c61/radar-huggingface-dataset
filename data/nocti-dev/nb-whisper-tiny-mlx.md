@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nb-whisper-tiny-mlx (este) | 37,7 M | no disponible | apache-2.0 | HuggingFace (MLX) |
-| NbAiLab/nb-whisper-tiny (base) | 37,7 M | no disponible | apache-2.0 | HuggingFace (transformers) |
-| Whisper tiny (OpenAI) | ~39 M | no disponible | MIT | HuggingFace, múltiples backends |
+| nb-whisper-tiny-mlx (este) | 37,7 M | no disponible | apache-2.0 | Hugging Face (MLX) |
+| NbAiLab/nb-whisper-tiny (base) | 37,7 M | no disponible | apache-2.0 | Hugging Face (transformers) |
+| Whisper tiny (OpenAI) | ~39 M | no disponible | MIT | Hugging Face, múltiples backends |
 
 La comparativa se limita a los datos disponibles; no se dispone de métricas de rendimiento comparadas entre estos modelos en la información proporcionada.
 
@@ -78,6 +78,6 @@ La comparativa se limita a los datos disponibles; no se dispone de métricas de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nocti-Dev/nb-whisper-tiny-mlx
+- Repositorio Hugging Face: https://huggingface.co/Nocti-Dev/nb-whisper-tiny-mlx
 - Modelo base: https://huggingface.co/NbAiLab/nb-whisper-tiny
 - Commit del modelo base: https://huggingface.co/NbAiLab/nb-whisper-tiny/tree/8b38492d0e4111d5d6ad825e979cb082a2da013a

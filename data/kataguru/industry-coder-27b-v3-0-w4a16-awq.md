@@ -99,6 +99,6 @@ Los resultados de las pruebas 1 a 10 de la suite de 15 no se incluyen en el extr
 - Madurez: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y la model card está parcialmente truncada en el extracto disponible.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/kataguru/Industry-Coder-27B-v3.0-W4A16-AWQ
+- Hugging Face: https://huggingface.co/kataguru/Industry-Coder-27B-v3.0-W4A16-AWQ
 - Versión previa v2.0: https://huggingface.co/kataguru/Industry-Coder-27B-v2.0-W4A16-AWQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

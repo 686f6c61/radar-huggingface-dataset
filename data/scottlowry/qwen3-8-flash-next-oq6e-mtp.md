@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-oQ6e-mtp es una version cuantizada del modelo Qwen3.8-Flash-Next, publicada por el usuario scottlowry en HuggingFace. Se trata de un artefacto de cuantizacion, no de un modelo entrenado desde cero: el autor ha tomado los pesos originales del modelo base (identificado en los metadatos como tipo "qwen4_exp") y los ha recomprimido a 6 bits mediante la herramienta oQ, integrada en oMLX v0.7.1.dev1, empleando cuantizacion de precision mixta con un tamano de grupo de 64.
+Qwen3.8-Flash-Next-oQ6e-mtp es una version cuantizada del modelo Qwen3.8-Flash-Next, publicada por el usuario scottlowry en Hugging Face. Se trata de un artefacto de cuantizacion, no de un modelo entrenado desde cero: el autor ha tomado los pesos originales del modelo base (identificado en los metadatos como tipo "qwen4_exp") y los ha recomprimido a 6 bits mediante la herramienta oQ, integrada en oMLX v0.7.1.dev1, empleando cuantizacion de precision mixta con un tamano de grupo de 64.
 
 El resultado es un repositorio de 150,6 GB con 179.999.981.459 parametros almacenados en formato MLX safetensors, disenado especificamente para ejecutarse sobre el framework MLX de Apple (Apple Silicon). No se trata por tanto de un modelo pensado para CUDA ni para servidores con GPU NVIDIA, sino para inferencia local en equipos Mac con memoria unificada.
 
@@ -91,5 +91,5 @@ No se dispone de datos verificables sobre el modelo base, sus versiones sin cuan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scottlowry/Qwen3.8-Flash-Next-oQ6e-mtp
+- Modelo en Hugging Face: https://huggingface.co/scottlowry/Qwen3.8-Flash-Next-oQ6e-mtp
 - Repositorio de oQ / oMLX (herramienta de cuantizacion citada en la model card): https://github.com/jundot/omlx

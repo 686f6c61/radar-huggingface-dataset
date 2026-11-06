@@ -95,9 +95,9 @@ Velocidad medida en una RTX 5090: aproximadamente 3 ms por decisión en lote y 1
 
 | Modelo | Parametros | Contexto | Rendimiento (media benchmark PT-BR v1) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Saracura PT-BR v0 | 322M | 2.048 tokens | 68,5% | Apache-2.0 | HuggingFace |
-| Laya multilingue (base) | 322M | 2.048 tokens | 39,2% | Apache-2.0 (segun modelo base) | HuggingFace |
-| laya-pt-es-typed | no disponible | no disponible | 44,6% | no disponible | HuggingFace |
+| Saracura PT-BR v0 | 322M | 2.048 tokens | 68,5% | Apache-2.0 | Hugging Face |
+| Laya multilingue (base) | 322M | 2.048 tokens | 39,2% | Apache-2.0 (segun modelo base) | Hugging Face |
+| laya-pt-es-typed | no disponible | no disponible | 44,6% | no disponible | Hugging Face |
 | TF-IDF + regresion logistica (una por tarea) | no aplica | no aplica | 64,0% | no aplica | baseline propio |
 | Qwen/Qwen3.8-27B (zero-shot, mismas descripciones de clase) | no disponible | no disponible | 66,2% en version anterior del benchmark | no disponible | no disponible |
 
@@ -118,7 +118,7 @@ No se dispone de datos suficientes para comparar con alternativas de clasificaci
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/felhen-ai/saracura-ptbr-v0
+- Hugging Face del modelo: https://huggingface.co/felhen-ai/saracura-ptbr-v0
 - Repositorio GitHub de Saracura: https://github.com/felhen-ai/saracura
 - Repositorio GitHub de Laya: https://github.com/NandhaKishorM/laya
 - Dataset de benchmark PT-BR: https://huggingface.co/datasets/felhen-ai/ptbr-typed-decisions-bench

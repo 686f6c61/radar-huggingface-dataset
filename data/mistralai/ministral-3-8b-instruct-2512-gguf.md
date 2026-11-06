@@ -6,7 +6,7 @@ Ministral 3 8B Instruct 2512 es un modelo de lenguaje con capacidades de vision 
 
 El modelo combina un modelo de lenguaje de 8,4B parametros con un encoder de vision de 0,4B, sumando aproximadamente 8,49B parametros segun los pesos en safetensors del repositorio. Soporta una ventana de contexto de 256k tokens, once idiomas declarados (ingles, frances, espanol, aleman, italiano, portugues, neerlandes, chino, japones, coreano y arabe) y capacidades agenticas con function calling nativo y salida JSON. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificacion.
 
-Su relevancia actual radica en que ofrece capacidades multimodales y agenticas en un tamano que cabe en 12 GB de VRAM en FP8 (y menos si se cuantiza mas), lo que lo posiciona como una opcion practica para inferencia local y despliegues en produccion con presupuesto de hardware ajustado. La fecha de creacion del repositorio es el 31 de octubre de 2025 y su ultima actualizacion es del 15 de enero de 2026, con 38.616 descargas y 99 "likes" en HuggingFace.
+Su relevancia actual radica en que ofrece capacidades multimodales y agenticas en un tamano que cabe en 12 GB de VRAM en FP8 (y menos si se cuantiza mas), lo que lo posiciona como una opcion practica para inferencia local y despliegues en produccion con presupuesto de hardware ajustado. La fecha de creacion del repositorio es el 31 de octubre de 2025 y su ultima actualizacion es del 15 de enero de 2026, con 38.616 descargas y 99 "likes" en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ministral 3 8B Instruct 2512 (GGUF) | 8,49B | 256k | Si (encoder 0,4B) | Apache 2.0 | HuggingFace (GGUF) |
+| Ministral 3 8B Instruct 2512 (GGUF) | 8,49B | 256k | Si (encoder 0,4B) | Apache 2.0 | Hugging Face (GGUF) |
 | Otros modelos de la familia Ministral 3 | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Alternativas equivalentes de terceros | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -85,7 +85,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace (este repositorio GGUF): https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-GGUF
+- Hugging Face (este repositorio GGUF): https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-GGUF
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512
 - Paper: https://arxiv.org/abs/2601.08584
 - Blog de Mistral sobre la familia Mistral 3: https://mistral.ai/news/mistral-3

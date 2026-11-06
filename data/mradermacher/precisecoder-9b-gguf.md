@@ -23,7 +23,7 @@ No se dispone de informacion publicada sobre la longitud de contexto, la composi
 
 ## Arquitectura y entrenamiento
 
-No se detalla en la informacion disponible la arquitectura interna del modelo base (tipo de transformer, atencion, uso de MoE o SSM hibrido). El pipeline declarado en HuggingFace es "reinforcement-learning" y los tags incluyen "grpo" y "reinforcement-learning", lo que indica que PreciseCoder-9B fue afinado mediante aprendizaje por refuerzo con GRPO (Group Relative Policy Optimization), una tecnica habitual para mejorar el razonamiento y la precision en tareas verificables como la generacion de codigo y la depuracion. No se especifica el numero de tokens de entrenamiento, la composicion del dataset ni si hubo etapas previas de SFT o DPO.
+No se detalla en la informacion disponible la arquitectura interna del modelo base (tipo de transformer, atencion, uso de MoE o SSM hibrido). El pipeline declarado en Hugging Face es "reinforcement-learning" y los tags incluyen "grpo" y "reinforcement-learning", lo que indica que PreciseCoder-9B fue afinado mediante aprendizaje por refuerzo con GRPO (Group Relative Policy Optimization), una tecnica habitual para mejorar el razonamiento y la precision en tareas verificables como la generacion de codigo y la depuracion. No se especifica el numero de tokens de entrenamiento, la composicion del dataset ni si hubo etapas previas de SFT o DPO.
 
 Los tags "debugging" y "code" confirman la orientacion del modelo hacia tareas de programacion, con enfasis particular en la localizacion y correccion de errores. La presencia de ficheros mmproj (multi-modal supplement) en el repositorio sugiere que el modelo base podria procesar entradas multimodales, aunque la model card no lo confirma explicitamente ni detalla que modalidades soporta. Como en cualquier cuantizacion GGUF, el proceso de conversion no modifica la arquitectura, sino unicamente la precision numerica de los pesos, buscando reducir el consumo de memoria y acelerar la inferencia en CPU y GPU.
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PreciseCoder-9B-GGUF | 8,95B | no disponible | GGUF | Apache 2.0 | HuggingFace (mradermacher) |
-| PreciseCoder-9B (base) | 8,95B | no disponible | safetensors | Apache 2.0 | HuggingFace (PreciseCoder) |
-| OxCoder-9B-GGUF | no disponible | no disponible | GGUF | Apache 2.0 | HuggingFace (mradermacher) |
+| PreciseCoder-9B-GGUF | 8,95B | no disponible | GGUF | Apache 2.0 | Hugging Face (mradermacher) |
+| PreciseCoder-9B (base) | 8,95B | no disponible | safetensors | Apache 2.0 | Hugging Face (PreciseCoder) |
+| OxCoder-9B-GGUF | no disponible | no disponible | GGUF | Apache 2.0 | Hugging Face (mradermacher) |
 | Otros modelos de codigo de 9B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. La comparativa se limita, por tanto, a aspectos de formato, licencia y disponibilidad.

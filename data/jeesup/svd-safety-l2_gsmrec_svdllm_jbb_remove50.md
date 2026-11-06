@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks de alternativas en la información proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_gsmrec_svdllm_jbb_remove50
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_gsmrec_svdllm_jbb_remove50
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - Política de uso de Llama 2: https://ai.meta.com/llama/use-policy/

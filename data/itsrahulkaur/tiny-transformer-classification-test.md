@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny Transformer for Classification es un repositorio experimental publicado por el usuario itsrahulkaur en HuggingFace. No se trata de un modelo entrenado, sino de una base de código con un checkpoint de inicialización destinado a pruebas de humo (smoke tests) y a la inspección de cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye `eval.py` como artefacto principal, `config.json` con la configuración de arquitectura generada, `training_args.json` con la receta de experimento por defecto y `model.safetensors` como inicialización válida pero no entrenada.
+Tiny Transformer for Classification es un repositorio experimental publicado por el usuario itsrahulkaur en Hugging Face. No se trata de un modelo entrenado, sino de una base de código con un checkpoint de inicialización destinado a pruebas de humo (smoke tests) y a la inspección de cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye `eval.py` como artefacto principal, `config.json` con la configuración de arquitectura generada, `training_args.json` con la receta de experimento por defecto y `model.safetensors` como inicialización válida pero no entrenada.
 
 La arquitectura declarada es un transformer de escala "base" con atención de consultas agrupadas (grouped query attention), fusión bilinear, activación mish y normalización scalenorm. El número total de parámetros registrado en el checkpoint safetensors es de 33.088, una magnitud extremadamente reducida que lo sitúa en la categoría de modelos de juguete o de validación de infraestructura, no de modelos de propósito general.
 
@@ -76,12 +76,12 @@ No se han proporcionado datos de modelos comparables en la información disponib
 - No hay resultados de benchmarks ni métricas de tarea publicadas, por lo que no se puede estimar su calidad en ningún escenario real.
 - No se documenta la longitud de contexto soportada, lo que impide planificar su uso con secuencias de entrada concretas.
 - No se declaran idiomas soportados, por lo que no se puede asumir cobertura multilingüe ni siquiera monolingüe.
-- La implementación es personalizada y no es cargable directamente por APIs genéricas de HuggingFace sin un adaptador explícito, lo que añade trabajo de integración.
+- La implementación es personalizada y no es cargable directamente por APIs genéricas de Hugging Face sin un adaptador explícito, lo que añade trabajo de integración.
 - La licencia BSD-3-Clause permite uso comercial, pero exige conservar el aviso de copyright y la cláusula de exención de responsabilidad; además, el autor recomienda revisar por separado los términos de los datos de origen cuando se usen datasets externos.
 - No hay garantía de reproducibilidad de resultados futuros: cualquier checkpoint entrenado a partir de esta base debe documentarse de forma separada de los valores por defecto incluidos.
 - No es un modelo generativo de lenguaje, por lo que conceptos como riesgo de alucinación no aplican directamente; no obstante, tampoco existe ninguna validación de sus salidas de clasificación.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/itsrahulkaur/tiny-transformer-classification-test
+- Hugging Face: https://huggingface.co/itsrahulkaur/tiny-transformer-classification-test
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos); los resultados devueltos no guardan relación con este repositorio.

@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: el modelo tiene 32,7 B parámetros. En precisión FP16 (32 bits por parámetro) requiere aproximadamente 65 GB de VRAM. Con cuantización de 8 bits, se reduce a ~33 GB; con 4 bits, a ~17 GB. Estas cifras son estimaciones basadas en el tamaño del modelo y pueden variar según la implementación.
 - GPU recomendadas: para FP16, se necesitan GPUs de gama alta como NVIDIA A100 (80 GB), H100 (80 GB) o RTX A6000 (48 GB, insuficiente para FP16 completo). Con cuantización 8 bits, una RTX 4090 (24 GB) puede ser suficiente; con 4 bits, una RTX 3090 (24 GB) o incluso una RTX 4070 (12 GB) podrían funcionar, aunque con menor velocidad.
 - ¿Cabe en GPU de consumo? Sí, con cuantización. Una RTX 4090 puede ejecutar el modelo en 8 bits o 4 bits, pero la velocidad de generación será moderada.
-- Opciones de despliegue: compatible con transformers, vLLM, llama.cpp (tras conversión a GGUF), Ollama, Text Generation Inference (TGI) y NVIDIA NIM. El repositorio de HuggingFace indica compatibilidad con text-generation-inference y endpoints.
+- Opciones de despliegue: compatible con transformers, vLLM, llama.cpp (tras conversión a GGUF), Ollama, Text Generation Inference (TGI) y NVIDIA NIM. El repositorio de Hugging Face indica compatibilidad con text-generation-inference y endpoints.
 - Latencia y throughput: no se dispone de datos oficiales. En una RTX 4090 con cuantización 4 bits, se puede esperar una generación de entre 10 y 20 tokens por segundo, pero esto es una estimación orientativa.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ DeepSeek-R1-Distill-Qwen-32B ofrece un equilibrio entre tamaño y rendimiento de
 
 ## Enlaces
 
-- [HuggingFace: deepseek-ai/DeepSeek-R1-Distill-Qwen-32B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B)
+- [Hugging Face: deepseek-ai/DeepSeek-R1-Distill-Qwen-32B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B)
 - [GitHub: deepseek-ai/DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1)
 - [Paper DeepSeek-R1 (PDF)](https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf)
 - [NVIDIA NIM: deepseek-r1-distill-qwen-32b](https://build.nvidia.com/deepseek-ai/deepseek-r1-distill-qwen-32b)

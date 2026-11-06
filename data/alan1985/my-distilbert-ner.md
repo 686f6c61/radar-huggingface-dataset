@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Alan1985/my-distilbert-ner es un modelo de clasificación de tokens (token-classification) alojado en HuggingFace por el usuario Alan1985, derivado de la arquitectura DistilBERT. Con 66.368.263 parámetros totales y un tamaño de repositorio de 0,3 GB, está empaquetado en formato safetensors y es compatible con la librería transformers y con endpoints de inferencia. Su pipeline declarado es token-classification, lo que lo orienta a tareas de etiquetado a nivel de token, como el reconocimiento de entidades nombradas (NER).
+Alan1985/my-distilbert-ner es un modelo de clasificación de tokens (token-classification) alojado en Hugging Face por el usuario Alan1985, derivado de la arquitectura DistilBERT. Con 66.368.263 parámetros totales y un tamaño de repositorio de 0,3 GB, está empaquetado en formato safetensors y es compatible con la librería transformers y con endpoints de inferencia. Su pipeline declarado es token-classification, lo que lo orienta a tareas de etiquetado a nivel de token, como el reconocimiento de entidades nombradas (NER).
 
-La relevancia de este modelo es limitada en el momento de la publicación: registra 0 descargas y 0 likes, y su model card es la plantilla automática de HuggingFace sin secciones completadas. No se especifican datos de entrenamiento, idiomas, licencia ni procedencia del fine-tuning, lo que impide evaluar su calidad o su idoneidad para producción. La referencia al paper arXiv:1910.09700 corresponde a DistilBERT (Sanh et al., 2019), la arquitectura base sobre la que se construye.
+La relevancia de este modelo es limitada en el momento de la publicación: registra 0 descargas y 0 likes, y su model card es la plantilla automática de Hugging Face sin secciones completadas. No se especifican datos de entrenamiento, idiomas, licencia ni procedencia del fine-tuning, lo que impide evaluar su calidad o su idoneidad para producción. La referencia al paper arXiv:1910.09700 corresponde a DistilBERT (Sanh et al., 2019), la arquitectura base sobre la que se construye.
 
 A efectos prácticos, se trata de un checkpoint de DistilBERT afinado para NER del que solo se conocen los metadatos estructurales. Cualquier evaluación de rendimiento, cobertura lingüística o sesgos requiere inspección directa de los pesos y del dataset de entrenamiento, no disponible en la información proporcionada.
 
@@ -25,14 +25,14 @@ A efectos prácticos, se trata de un checkpoint de DistilBERT afinado para NER d
 
 La arquitectura subyacente es DistilBERT, un transformer encoder de 6 capas obtenido mediante destilación de conocimiento de BERT-base (12 capas), con aproximadamente la mitad de parámetros y una retención declarada del 97 % del rendimiento en GLUE según el paper original (arXiv:1910.09700). El modelo se presenta como un checkpoint afinado para token-classification, presumiblemente sobre una tarea de NER, aunque no se especifica el dataset, el número de etiquetas ni el esquema de etiquetado (BIO, BIOES u otro).
 
-No hay información sobre el proceso de entrenamiento: ni volumen de tokens, ni composición del corpus, ni si se aplicó alguna técnica de regularización o ajuste fino con precisión mixta. La model card es la plantilla automática generada por HuggingFace y todos los campos relevantes (desarrollador, datos, hiperparámetros, evaluación) aparecen como "[More Information Needed]". No se documenta ninguna innovación técnica adicional más allá de la destilación propia de la arquitectura base.
+No hay información sobre el proceso de entrenamiento: ni volumen de tokens, ni composición del corpus, ni si se aplicó alguna técnica de regularización o ajuste fino con precisión mixta. La model card es la plantilla automática generada por Hugging Face y todos los campos relevantes (desarrollador, datos, hiperparámetros, evaluación) aparecen como "[More Information Needed]". No se documenta ninguna innovación técnica adicional más allá de la destilación propia de la arquitectura base.
 
 ## Capacidades
 
 - Clasificación de tokens a nivel de secuencia, orientada a reconocimiento de entidades nombradas (NER).
 - Etiquetado de spans para entidades tipo persona, organización, localización u otras, según el esquema de entrenamiento (no documentado).
 - Inferencia compatible con el pipeline `token-classification` de transformers.
-- Compatible con endpoints de HuggingFace (`endpoints_compatible` en los tags).
+- Compatible con endpoints de Hugging Face (`endpoints_compatible` en los tags).
 - No se documenta soporte de tool calling, agentes, razonamiento multi-paso ni generación de texto libre.
 - No se documenta capacidad multilingüe ni mode "thinking".
 - No se documenta soporte de visión ni audio.
@@ -58,17 +58,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en FP16: aproximadamente 0,13 GB para pesos.
 - Cabe holgadamente en cualquier GPU consumer, incluidas GTX 1650, RTX 3060, RTX 4090, así como en CPU.
 - GPU recomendadas: no se requiere GPU dedicada; una GPU consumer de gama baja es suficiente para lotes grandes.
-- Opciones de despliegue: transformers (PyTorch), ONNX Runtime, endpoints de HuggingFace, y potencialmente llama.cpp/Ollama no aplican por ser un encoder de clasificación, no un modelo generativo.
+- Opciones de despliegue: transformers (PyTorch), ONNX Runtime, endpoints de Hugging Face, y potencialmente llama.cpp/Ollama no aplican por ser un encoder de clasificación, no un modelo generativo.
 - Latencia y throughput: no disponibles; para un DistilBERT de 6 capas se esperan latencias de milisegundos por secuencia en GPU moderna, pero no hay mediciones publicadas para este checkpoint concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Alan1985/my-distilbert-ner | 66,4 M | no disponible | Token classification (NER) | no disponible | HuggingFace, 0 descargas |
-| dslim/bert-base-NER | ~110 M | 512 | NER (CoNLL-2003, 4 clases) | MIT (según model card pública) | HuggingFace, ampliamente usado |
-| dslim/distilbert-NER | ~66 M | 512 | NER (CoNLL-2003, 4 clases) | MIT (según model card pública) | HuggingFace, ampliamente usado |
-| Jean-Baptiste/roberta-large-ner-english | ~355 M | 512 | NER (OntoNotes) | MIT (según model card pública) | HuggingFace |
+| Alan1985/my-distilbert-ner | 66,4 M | no disponible | Token classification (NER) | no disponible | Hugging Face, 0 descargas |
+| dslim/bert-base-NER | ~110 M | 512 | NER (CoNLL-2003, 4 clases) | MIT (según model card pública) | Hugging Face, ampliamente usado |
+| dslim/distilbert-NER | ~66 M | 512 | NER (CoNLL-2003, 4 clases) | MIT (según model card pública) | Hugging Face, ampliamente usado |
+| Jean-Baptiste/roberta-large-ner-english | ~355 M | 512 | NER (OntoNotes) | MIT (según model card pública) | Hugging Face |
 
 La comparación se basa en la arquitectura y el pipeline declarados; no hay datos de rendimiento del modelo de Alan1985 que permitan una comparación cuantitativa con las alternativas.
 
@@ -86,6 +86,6 @@ La comparación se basa en la arquitectura y el pipeline declarados; no hay dato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Alan1985/my-distilbert-ner
+- Hugging Face: https://huggingface.co/Alan1985/my-distilbert-ner
 - Paper de DistilBERT (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la model card: https://mlco2.github.io/impact

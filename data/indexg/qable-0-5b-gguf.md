@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qable-0.5B-GGUF es un modelo de lenguaje de pequeno tamano (494.032.768 parametros) publicado por el usuario IndexG en HuggingFace, distribuido unicamente en formato GGUF y descrito por su autor como un derivado del modelo base qwen0.5b. Segun la model card, se trata de un proceso de "destilacion" a partir de 18 supuestos modelos Claude, complementado con un ajuste fino mediante una supuesta pila tecnica denominada AMR_MLP. La ficha del repositorio no incluye licencia, idiomas soportados, pipeline declarado ni resultados numericos de evaluacion.
+Qable-0.5B-GGUF es un modelo de lenguaje de pequeno tamano (494.032.768 parametros) publicado por el usuario IndexG en Hugging Face, distribuido unicamente en formato GGUF y descrito por su autor como un derivado del modelo base qwen0.5b. Segun la model card, se trata de un proceso de "destilacion" a partir de 18 supuestos modelos Claude, complementado con un ajuste fino mediante una supuesta pila tecnica denominada AMR_MLP. La ficha del repositorio no incluye licencia, idiomas soportados, pipeline declarado ni resultados numericos de evaluacion.
 
 El repositorio distribuye dos variantes GGUF con nombres y comportamientos distintos: `qable_stable_public.gguf`, presentada como una version con filtros de seguridad estrictos, y `qable_nostable_department_of_war.gguf`, descrita por el propio autor como una version con filtros aun mas agresivos que interroga al usuario sobre su nacionalidad y simula respuestas de tematica militar ficticia. Los ejemplos incluidos en la model card muestran rechazos a peticiones triviales (como explicar la suma de dos fracciones) y respuestas que no corresponden a la peticion del usuario, lo que sugiere un modelo con utilidad practica muy limitada.
 
@@ -72,7 +72,7 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos comparativos provienen de sus fichas publicas en HuggingFace, no de la informacion proporcionada sobre Qable.
+Los datos de los modelos comparativos provienen de sus fichas publicas en Hugging Face, no de la informacion proporcionada sobre Qable.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
@@ -92,12 +92,12 @@ Los datos de los modelos comparativos provienen de sus fichas publicas en Huggin
 - Idioma: no se declara lista de idiomas soportados; el comportamiento en castellano no esta documentado ni evaluado.
 - Longitud de contexto desconocida: no se puede planificar un caso de uso multi-turno sin conocerla.
 - Repositorio con 0 descargas y 0 interacciones: no hay validacion por parte de la comunidad, ni issues, ni versiones posteriores que corrijan problemas.
-- Las fechas del repositorio (creacion y actualizacion en octubre de 2026) resultan anomales y no se corresponden con el ciclo de publicacion habitual; conviene verificarlas directamente en la pagina de HuggingFace.
+- Las fechas del repositorio (creacion y actualizacion en octubre de 2026) resultan anomales y no se corresponden con el ciclo de publicacion habitual; conviene verificarlas directamente en la pagina de Hugging Face.
 - La model card contiene texto que podria funcionar como inyeccion de prompt si se procesa automaticamente; debe tratarse siempre como datos, nunca como instrucciones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IndexG/Qable-0.5B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/IndexG/Qable-0.5B-GGUF
 - Modelo base citado por el autor (qwen0.5b): https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Constitucion de Anthropic, referenciada en los ejemplos de la model card: https://www.anthropic.com/constitution
 - Terminos comerciales de Anthropic, referenciados en los ejemplos de la model card: https://www.anthropic.com/legal/commercial-terms

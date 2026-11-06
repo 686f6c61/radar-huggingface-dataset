@@ -11,7 +11,7 @@ Esta release aporta dos versiones cuantizadas en 4 bits con layouts personalizad
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Dense multimodal "qwen35" (atención híbrida lineal/completa, 64 capas + 1 capa MTP) |
-| Parametros totales | 27.3B según la model card (el metadata de HuggingFace indica 460.730.096, inconsistente; ver limitaciones) |
+| Parametros totales | 27.3B según la model card (el metadata de Hugging Face indica 460.730.096, inconsistente; ver limitaciones) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 262.144 tokens (262K) |
 | Tipos de cuantizacion | Q4_0_ROCMFP4 (STRAIGHT, 5.19 BPW) y Q4_0_ROCMFP4_STRIX_LEAN (4.35 BPW); mmproj F32 sin cuantizar |
@@ -70,9 +70,9 @@ No se dispone de datos de rendimiento de modelos comparables en la información 
 
 | Modelo | Parámetros | Contexto | Tamaño de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jackrong/Qwopus3.8-27B-Flash (BF16) | 27.3B | 262K | 54.66 GB (BF16) | Apache 2.0 | HuggingFace |
-| Qwopus3.8-27B-Flash STRAIGHT (ROCmFP4) | 27.3B | 262K | 16.52 GiB | Apache 2.0 | HuggingFace, solo runtime ROCmFPX |
-| Qwopus3.8-27B-Flash STRIX_LEAN (ROCmFP4) | 27.3B | 262K | 13.83 GiB | Apache 2.0 | HuggingFace, solo runtime ROCmFPX |
+| Jackrong/Qwopus3.8-27B-Flash (BF16) | 27.3B | 262K | 54.66 GB (BF16) | Apache 2.0 | Hugging Face |
+| Qwopus3.8-27B-Flash STRAIGHT (ROCmFP4) | 27.3B | 262K | 16.52 GiB | Apache 2.0 | Hugging Face, solo runtime ROCmFPX |
+| Qwopus3.8-27B-Flash STRIX_LEAN (ROCmFP4) | 27.3B | 262K | 13.83 GiB | Apache 2.0 | Hugging Face, solo runtime ROCmFPX |
 
 No se han encontrado benchmarks que permitan comparar este modelo con alternativas como Qwen3.5 o Qwopus3.6 en la información disponible.
 
@@ -83,7 +83,7 @@ No se han encontrado benchmarks que permitan comparar este modelo con alternativ
 - Sin evaluación de calidad: no se han medido perplexity, HumanEval, MBPP ni pruebas de agentes contra el modelo BF16 original. La pérdida de calidad derivada de la cuantización 4-bit no está cuantificada.
 - Sin benchmark formal de throughput: los valores de ~24 t/s y ~17 t/s son de un smoke test de una sola ejecución, sin warmup, con un prompt de 8 tokens. No deben usarse como referencia de rendimiento en producción.
 - Calidad de visión no evaluada: el mmproj carga y el servidor se inicia correctamente, pero la generación de respuestas basadas en imágenes no ha sido sometida a pruebas de calidad ni de velocidad.
-- Inconsistencia en los metadatos: HuggingFace indica 460.730.096 parámetros totales, lo que contradice la model card del autor (27.3B). Esta discrepancia no ha sido aclarada y puede afectar a herramientas que dependan del metadata.
+- Inconsistencia en los metadatos: Hugging Face indica 460.730.096 parámetros totales, lo que contradice la model card del autor (27.3B). Esta discrepancia no ha sido aclarada y puede afectar a herramientas que dependan del metadata.
 - Al ser una cuantización agresiva, existe riesgo de alucinación y degradación en tareas complejas, especialmente en la variante `STRIX_LEAN`, que aplica una receta más agresiva en la mayor parte de los tensores.
 - No se documentan los idiomas soportados, por lo que no se puede garantizar un comportamiento multilingüe fiable.
 

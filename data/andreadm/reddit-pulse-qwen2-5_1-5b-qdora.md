@@ -78,9 +78,9 @@ No se han publicado en la informacion disponible resultados desglosados por clas
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| reddit-pulse-qwen2.5_1.5b-qdora | Base de 1,5 B mas adaptador DoRA | 32.768 tokens (base); 1.024 en el uso documentado | Clasificacion direccional de inflacion en 3 clases | Apache-2.0 | HuggingFace, libreria peft |
-| Qwen/Qwen2.5-1.5B | 1,5 B | 32.768 tokens | Modelo de lenguaje causal | Apache-2.0 | HuggingFace; no realiza esta tarea sin ajuste |
-| ProsusAI/finbert | Aproximadamente 110 M (BERT-base) | 512 tokens segun su documentacion publica | Analisis de sentimiento financiero | Apache-2.0 | HuggingFace; esquema de etiquetas distinto (positivo/negativo/neutro), no comparable directamente |
+| reddit-pulse-qwen2.5_1.5b-qdora | Base de 1,5 B mas adaptador DoRA | 32.768 tokens (base); 1.024 en el uso documentado | Clasificacion direccional de inflacion en 3 clases | Apache-2.0 | Hugging Face, libreria peft |
+| Qwen/Qwen2.5-1.5B | 1,5 B | 32.768 tokens | Modelo de lenguaje causal | Apache-2.0 | Hugging Face; no realiza esta tarea sin ajuste |
+| ProsusAI/finbert | Aproximadamente 110 M (BERT-base) | 512 tokens segun su documentacion publica | Analisis de sentimiento financiero | Apache-2.0 | Hugging Face; esquema de etiquetas distinto (positivo/negativo/neutro), no comparable directamente |
 | Otros clasificadores del mismo articulo | No disponible | No disponible | Clasificacion direccional de inflacion | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de cifras de benchmarks comparables entre estas alternativas en la informacion proporcionada, dado que los esquemas de etiquetas y los conjuntos de evaluacion no coinciden.
@@ -99,7 +99,7 @@ No se dispone de cifras de benchmarks comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andreadm/reddit-pulse-qwen2.5_1.5b-qdora
+- Modelo en Hugging Face: https://huggingface.co/andreadm/reddit-pulse-qwen2.5_1.5b-qdora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Repositorio de codigo: https://github.com/andrea-dm/reddit-pulse
 - Articulo de referencia: Del Monaco, A., Longo, L., Marcucci, J. y Tafani, I. (2026), "Reddit's 'pulse' on US inflation: forecasting with large language models", Journal of Applied Econometrics, en prensa.

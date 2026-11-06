@@ -87,8 +87,8 @@ Fiabilidad del juicio de sobre-rechazo para esta celda: fracción puntuada de 0,
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Basis Sharing keep 0,50 + LoRA en coeficientes) | 8,03 B (rango reducido, fracción realizada 0,4999) | 131.072 tokens (heredado del base) | llama3.1 | WikiText-2 ppl 22,2115; HellaSwag 0,5012; PIQA 0,6790; ARC-C 0,3473; AdvBench ASR 0,6173 | HuggingFace, 0 descargas, 0 likes |
-| `meta-llama/Llama-3.1-8B-Instruct` (modelo base sin comprimir) | 8,03 B | 131.072 tokens | llama3.1 | Resultados bajo esta misma receta no disponibles en la información proporcionada | HuggingFace, ampliamente distribuido |
+| Este modelo (Basis Sharing keep 0,50 + LoRA en coeficientes) | 8,03 B (rango reducido, fracción realizada 0,4999) | 131.072 tokens (heredado del base) | llama3.1 | WikiText-2 ppl 22,2115; HellaSwag 0,5012; PIQA 0,6790; ARC-C 0,3473; AdvBench ASR 0,6173 | Hugging Face, 0 descargas, 0 likes |
+| `meta-llama/Llama-3.1-8B-Instruct` (modelo base sin comprimir) | 8,03 B | 131.072 tokens | llama3.1 | Resultados bajo esta misma receta no disponibles en la información proporcionada | Hugging Face, ampliamente distribuido |
 | Otras celdas del mismo proyecto (otros ratios de compresión y otros compresores) | No disponible | No disponible | llama3.1 | No disponible | No disponible en la información proporcionada |
 
 No se han encontrado en la búsqueda web resultados relevantes sobre este modelo ni sobre modelos directamente comparables: los resultados devueltos corresponden a páginas de mobiliario doméstico sin relación con el tema.
@@ -108,12 +108,12 @@ No se han encontrado en la búsqueda web resultados relevantes sobre este modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-llama3_1_8b_instruct_up_basis_coeff_finetuned_keep_0p50
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-llama3_1_8b_instruct_up_basis_coeff_finetuned_keep_0p50
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Código de Basis Sharing (TUDa-HWAI, commit 1c021b6ce1d3): https://github.com/TUDa-HWAI/Basis_Sharing
 - Dataset de recuperación: https://huggingface.co/datasets/yahma/alpaca-cleaned
 - Dataset de calibración: WikiText-2 (no se proporciona enlace directo en la información disponible)
 - Juez de seguridad de generación: https://huggingface.co/cais/HarmBench-Llama-2-13b-cls
 - Juez de sobre-rechazo: https://huggingface.co/allenai/wildguard
-- Artefactos de evaluación: carpetas `utility/` y `safety/` del repositorio de HuggingFace
+- Artefactos de evaluación: carpetas `utility/` y `safety/` del repositorio de Hugging Face
 - Búsqueda web: sin resultados relevantes sobre el modelo; los enlaces devueltos corresponden a páginas de mobiliario sin relación con el tema

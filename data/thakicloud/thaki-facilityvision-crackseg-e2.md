@@ -83,7 +83,7 @@ El autor define "fina" como anchura de esqueleto ≤ 16 px (percentil 33 de las 
 
 | Modelo | Parámetros | Contexto / resolución | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thaki-FacilityVision-CrackSeg-E2 | 24,4 M | Resolución nativa, teselas 768 px | Dice dev 0,8983; recall grietas finas 0,9139 | CC BY 4.0 | HuggingFace |
+| Thaki-FacilityVision-CrackSeg-E2 | 24,4 M | Resolución nativa, teselas 768 px | Dice dev 0,8983; recall grietas finas 0,9139 | CC BY 4.0 | Hugging Face |
 | Línea base interna U-Net R34 `seg-1031` | no disponible | 1024 px lado largo | Dice dev 0,8957; recall grietas finas 0,7358 | no disponible | no distribuida públicamente |
 | Otros modelos de segmentación de grietas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -102,7 +102,7 @@ No se dispone de información sobre alternativas públicas comparables en la doc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Thaki-FacilityVision-CrackSeg-E2
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Thaki-FacilityVision-CrackSeg-E2
 - Dataset de entrenamiento (Özgenel, Mendeley Data): https://doi.org/10.17632/jwsn7tfbrp.1
 - Pesos del codificador (torchvision ResNet-34 IMAGENET1K_V1): https://pytorch.org/vision/stable/models/generated/torchvision.models.resnet34.html
 - Model card en coreano: incluida en el repositorio como `MODEL_CARD.ko.md`

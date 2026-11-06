@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Korean es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario AVryon en HuggingFace. El objetivo declarado es adaptar el reconocimiento automatico del habla (ASR) de Whisper al ingles hablado con acento coreano, partiendo del dataset denominado "Korean_english". El modelo mantiene la arquitectura encoder-decoder transformer propia de la familia Whisper y un total de 37.760.640 parametros, lo que lo situa en la gama mas ligera de la familia.
+Whisper tiny Korean es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario AVryon en Hugging Face. El objetivo declarado es adaptar el reconocimiento automatico del habla (ASR) de Whisper al ingles hablado con acento coreano, partiendo del dataset denominado "Korean_english". El modelo mantiene la arquitectura encoder-decoder transformer propia de la familia Whisper y un total de 37.760.640 parametros, lo que lo situa en la gama mas ligera de la familia.
 
 La relevancia de este modelo es acotada: se trata de un experimento de ajuste fino sobre una base muy pequena (whisper-tiny), con solo 2.000 pasos de entrenamiento y un batch size de 2, y una model card generada automaticamente que no documenta la composicion del dataset ni los usos previstos. Aun asi, resulta interesante como ejemplo de adaptacion de dominio/accento sobre un modelo ASR de bajo coste computacional, y puede servir como punto de partida para quienes necesiten transcribir ingles con acento coreano en entornos con recursos limitados.
 
@@ -93,7 +93,7 @@ La comparativa se limita a la familia Whisper porque no se dispone de datos de o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AVryon/whisper-tiny_to_korean_accent_29oct
+- Modelo en Hugging Face: https://huggingface.co/AVryon/whisper-tiny_to_korean_accent_29oct
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

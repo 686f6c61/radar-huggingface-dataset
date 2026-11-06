@@ -76,9 +76,9 @@ Fuente: model card del autor. Mediciones sobre RTX 5080 con ComfyUI 0.37.0 y com
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACE-Step v1.5 XL Turbo NVFP4 (este repositorio) | 4B DiT + planificador 4B | no disponible | NVFP4 (safetensors) | MIT | HuggingFace; requiere GPU NVIDIA Blackwell |
-| ACE-Step v1.5 XL Turbo (bf16) | 4B DiT + planificador 4B | no disponible | bf16 (safetensors) | MIT | HuggingFace; GPU NVIDIA, AMD, Mac e Intel |
-| Familia ACE-Step 1.5 (variantes Turbo y SFT) | no disponible | no disponible | safetensors | MIT (según repositorio) | GitHub y HuggingFace |
+| ACE-Step v1.5 XL Turbo NVFP4 (este repositorio) | 4B DiT + planificador 4B | no disponible | NVFP4 (safetensors) | MIT | Hugging Face; requiere GPU NVIDIA Blackwell |
+| ACE-Step v1.5 XL Turbo (bf16) | 4B DiT + planificador 4B | no disponible | bf16 (safetensors) | MIT | Hugging Face; GPU NVIDIA, AMD, Mac e Intel |
+| Familia ACE-Step 1.5 (variantes Turbo y SFT) | no disponible | no disponible | safetensors | MIT (según repositorio) | GitHub y Hugging Face |
 
 No se dispone de comparativas cuantitativas con otros modelos de generación musical en la información proporcionada.
 
@@ -97,8 +97,8 @@ No se dispone de comparativas cuantitativas con otros modelos de generación mus
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/sjoe1244/ACE-Step-v1.5-xl-turbo-nvfp4
-- Modelo base en HuggingFace: https://huggingface.co/ACE-Step/acestep-v15-xl-turbo
+- Hugging Face (este repositorio): https://huggingface.co/sjoe1244/ACE-Step-v1.5-xl-turbo-nvfp4
+- Modelo base en Hugging Face: https://huggingface.co/ACE-Step/acestep-v15-xl-turbo
 - Repositorio GitHub de ACE-Step 1.5: https://github.com/ace-step/ACE-Step-1.5
 - Directorio del modelo XL Turbo en GitHub: https://github.com/ace-step/ACE-Step-1.5/tree/main/acestep/models/xl_turbo
 - Herramienta de conversión NVFP4: https://github.com/tritant/ComfyUI_Kitchen_nvfp4_Converter

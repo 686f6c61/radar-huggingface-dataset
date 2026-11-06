@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AI-KSK/minimax-h3-ultra-hd-routes-304` es un repositorio de HuggingFace publicado por el usuario AI-KSK que no contiene pesos de un modelo en el sentido habitual, sino un conjunto de flujos de trabajo (workflows) en formato JSON para ComfyUI orientados a la generación de vídeo con audio mediante el modelo MiniMax H3. El repositorio empaqueta ocho presets de generación distribuidos entre tres entornos de ejecución (OpenVDN, SelfLift y Sigma), más variantes de posprocesado independiente para reescalado a 2K y 4K, junto con las imágenes de portada asociadas.
+`AI-KSK/minimax-h3-ultra-hd-routes-304` es un repositorio de Hugging Face publicado por el usuario AI-KSK que no contiene pesos de un modelo en el sentido habitual, sino un conjunto de flujos de trabajo (workflows) en formato JSON para ComfyUI orientados a la generación de vídeo con audio mediante el modelo MiniMax H3. El repositorio empaqueta ocho presets de generación distribuidos entre tres entornos de ejecución (OpenVDN, SelfLift y Sigma), más variantes de posprocesado independiente para reescalado a 2K y 4K, junto con las imágenes de portada asociadas.
 
 El contenido del repositorio hace referencia a pesos externos de MiniMax H3 (variantes híbridas fl2va/ref2va en int8, VAE de vídeo en int8 y VAE de audio en fp32), a un codificador de texto Qwen3-VL de 32B cuantizado en NVFP4/AWQ y a un modelo de superresolución SeedVR2 de 3B en fp8. Estos pesos no forman parte del repositorio: el tamaño declarado es de 0,0 GB, por lo que se trata exclusivamente de material de orquestación y configuración.
 
@@ -82,7 +82,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento, pa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AI-KSK/minimax-h3-ultra-hd-routes-304
+- Repositorio en Hugging Face: https://huggingface.co/AI-KSK/minimax-h3-ultra-hd-routes-304
 - Workflow 01 (OpenVDN, preset 768P): `workflows/02_MiniMax+H3｜OpenVDN+DMD8｜通用生视频+768P.json`
 - Workflow 02 (OpenVDN, posprocesado 2K): `workflows/MiniMax+H3｜OpenVDN+DMD8｜通用生视频+2K.json`
 - Workflow 03 (OpenVDN, posprocesado 4K): `workflows/MiniMax+H3｜OpenVDN+DMD8｜通用生视频+4K.json`

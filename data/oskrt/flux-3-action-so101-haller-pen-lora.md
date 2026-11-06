@@ -90,8 +90,8 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 
 | Modelo | Parametros | Contexto / historial | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| flux-3-action-so101-haller-pen-lora (este) | no disponible | 8 observaciones, chunk 42/32 | pérdida held-out 0,210 en step 5.000; sin evaluación en robot | FLUX Kommunity License v1.0 (no comercial) | HuggingFace, 0 descargas, 0 likes |
-| black-forest-labs/flux-3-action-so101 (base) | no disponible | no disponible en la información aportada | no disponible | FLUX Kommunity License v1.0 | HuggingFace (requiere aceptar licencia) |
+| flux-3-action-so101-haller-pen-lora (este) | no disponible | 8 observaciones, chunk 42/32 | pérdida held-out 0,210 en step 5.000; sin evaluación en robot | FLUX Kommunity License v1.0 (no comercial) | Hugging Face, 0 descargas, 0 likes |
+| black-forest-labs/flux-3-action-so101 (base) | no disponible | no disponible en la información aportada | no disponible | FLUX Kommunity License v1.0 | Hugging Face (requiere aceptar licencia) |
 | Otros adaptadores SO-101 del ERH Physical AI Hackathon | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -110,7 +110,7 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Oskrt/flux-3-action-so101-haller-pen-lora
+- Modelo en Hugging Face: https://huggingface.co/Oskrt/flux-3-action-so101-haller-pen-lora
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-action-so101
 - Dataset de entrenamiento: https://huggingface.co/datasets/Oskrt/haller_put_the_red_pen_in_its_slot_in_the_cardboard_box
 - Licencia FLUX Kommunity (referenciada como `LICENSE.md` en el repositorio): https://huggingface.co/Oskrt/flux-3-action-so101-haller-pen-lora/blob/main/LICENSE.md

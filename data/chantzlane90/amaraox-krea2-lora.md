@@ -2,7 +2,7 @@
 
 ## Resumen
 
-amaraox-krea2-lora es un adaptador LoRA de generacion de imagen text-to-image disenado para inyectar un personaje ficticio concreto (Amara Okafor, personaje adulto generado por IA, declarado como mayor de 21 anos y no correspondiente a una persona real) en el modelo base Krea 2. Lo publica el usuario chantzlane90 en HuggingFace. No es un modelo de lenguaje ni un modelo de difusion completo, sino un conjunto de pesos de bajo rango que se acoplan sobre Krea 2 para condicionar la generacion hacia ese personaje mediante la palabra clave de activacion `amaraox`.
+amaraox-krea2-lora es un adaptador LoRA de generacion de imagen text-to-image disenado para inyectar un personaje ficticio concreto (Amara Okafor, personaje adulto generado por IA, declarado como mayor de 21 anos y no correspondiente a una persona real) en el modelo base Krea 2. Lo publica el usuario chantzlane90 en Hugging Face. No es un modelo de lenguaje ni un modelo de difusion completo, sino un conjunto de pesos de bajo rango que se acoplan sobre Krea 2 para condicionar la generacion hacia ese personaje mediante la palabra clave de activacion `amaraox`.
 
 El repositorio es muy reciente y de alcance limitado: ocupa 0,2 GB, no registra descargas ni likes y no incluye pipeline declarado ni idiomas soportados en los metadatos. La model card indica que se entreno con `fal-ai/krea-2-trainer` durante 1000 pasos con rango 32, y que las claves de los pesos se remapearon al esquema `diffusion_model.*` de ComfyUI para su uso en Sogni.
 
@@ -77,7 +77,7 @@ No disponible. No se han proporcionado datos de otros LoRAs de personaje sobre K
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chantzlane90/amaraox-krea2-lora
+- Repositorio Hugging Face: https://huggingface.co/chantzlane90/amaraox-krea2-lora
 - Herramienta de entrenamiento referenciada: fal-ai/krea-2-trainer
 - Entorno de ejecucion mencionado por el autor: ComfyUI (esquema de claves `diffusion_model.*`)
 - Plataforma mencionada por el autor: Sogni

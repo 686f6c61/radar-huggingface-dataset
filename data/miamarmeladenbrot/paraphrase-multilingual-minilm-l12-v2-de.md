@@ -88,7 +88,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MiaMarmeladenbrot/paraphrase-multilingual-MiniLM-L12-v2-de
+- Modelo en Hugging Face: https://huggingface.co/MiaMarmeladenbrot/paraphrase-multilingual-MiniLM-L12-v2-de
 - Modelo base original: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 - Exportación ONNX de referencia: https://huggingface.co/Xenova/paraphrase-multilingual-MiniLM-L12-v2
 - Licencia: https://huggingface.co/MiaMarmeladenbrot/paraphrase-multilingual-MiniLM-L12-v2-de/blob/main/LICENSE

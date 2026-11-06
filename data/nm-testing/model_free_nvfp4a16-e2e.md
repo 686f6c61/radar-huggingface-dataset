@@ -4,7 +4,7 @@
 
 El modelo `nm-testing/model_free_nvfp4a16-e2e` es una versión cuantizada en formato NVFP4 (4 bits de precisión para pesos y 16 bits para activaciones) del conocido TinyLlama-1.1B-Chat-v1.0, un modelo de lenguaje compacto de 1.100 millones de parámetros desarrollado por el proyecto TinyLlama. La cuantización ha sido realizada por el equipo de nm-testing, que mantiene este repositorio como parte de sus pruebas de integración continua para el formato de compresión de tensores de NVIDIA.
 
-El modelo base fue preentrenado sobre 3 billones de tokens utilizando la misma arquitectura y tokenizador que Llama 2, lo que garantiza compatibilidad con el ecosistema de herramientas existente. Posteriormente fue ajustado para chat siguiendo la receta de entrenamiento de Zephyr de HuggingFace, que combina fine-tuning supervisado sobre el dataset UltraChat y alineación mediante DPO sobre UltraFeedback. Esta versión cuantizada mantiene la licencia Apache 2.0 y está pensada para despliegues con restricciones de memoria, ya que el formato NVFP4 reduce significativamente el footprint de VRAM respecto al modelo original en BF16.
+El modelo base fue preentrenado sobre 3 billones de tokens utilizando la misma arquitectura y tokenizador que Llama 2, lo que garantiza compatibilidad con el ecosistema de herramientas existente. Posteriormente fue ajustado para chat siguiendo la receta de entrenamiento de Zephyr de Hugging Face, que combina fine-tuning supervisado sobre el dataset UltraChat y alineación mediante DPO sobre UltraFeedback. Esta versión cuantizada mantiene la licencia Apache 2.0 y está pensada para despliegues con restricciones de memoria, ya que el formato NVFP4 reduce significativamente el footprint de VRAM respecto al modelo original en BF16.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El modelo base fue preentrenado sobre 3 billones de tokens utilizando la misma a
 
 El modelo base TinyLlama-1.1B adopta exactamente la misma arquitectura y tokenizador que Llama 2, lo que permite su integracion directa en proyectos que ya utilizan modelos de la familia Llama. Se trata de un transformer decoder denso con 1,1B parametros, entrenado sobre 3 billones de tokens procedentes de SlimPajama y StarCoder, entre otros datasets. El proceso de preentrenamiento se completo en 90 dias utilizando 16 GPUs A100-40G.
 
-Sobre esta base preentrenada se aplico el recetario de entrenamiento de Zephyr de HuggingFace: primero un fine-tuning supervisado sobre el dataset UltraChat, que contiene dialogos sinteticos generados por ChatGPT, y posteriormente una alineacion mediante DPO (Direct Preference Optimization) utilizando el dataset UltraFeedback, con 64k prompts y completions rankeadas por GPT-4. La version cuantizada que aloja nm-testing aplica el formato NVFP4 mediante la libreria compressed-tensors, que reduce el peso de cada parametro a 4 bits manteniendo las activaciones en 16 bits.
+Sobre esta base preentrenada se aplico el recetario de entrenamiento de Zephyr de Hugging Face: primero un fine-tuning supervisado sobre el dataset UltraChat, que contiene dialogos sinteticos generados por ChatGPT, y posteriormente una alineacion mediante DPO (Direct Preference Optimization) utilizando el dataset UltraFeedback, con 64k prompts y completions rankeadas por GPT-4. La version cuantizada que aloja nm-testing aplica el formato NVFP4 mediante la libreria compressed-tensors, que reduce el peso de cada parametro a 4 bits manteniendo las activaciones en 16 bits.
 
 ## Capacidades
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada: aproximadamente 0,6-0,8 GB para el modelo cuantizado en NVFP4 (1,1B parametros x 4 bits), mas overhead de activaciones y KV cache.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, incluyendo NVIDIA GTX 1650, RTX 2060, RTX 3060, o incluso iGPUs con soporte de CUDA.
 - Compatibilidad con consumer GPU: si, cabe en practicamente cualquier GPU moderna de consumo.
-- Opciones de despliegue: vLLM, llama.cpp (si se convierte a GGUF), Ollama, HuggingFace TGI, o directamente con transformers y accelerate.
+- Opciones de despliegue: vLLM, llama.cpp (si se convierte a GGUF), Ollama, Hugging Face TGI, o directamente con transformers y accelerate.
 - Latencia estimada: en una RTX 3060, la generacion de 100 tokens deberia completarse en menos de 2 segundos, aunque no se han publicado mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nm-testing/model_free_nvfp4a16-e2e
+- Repositorio Hugging Face: https://huggingface.co/nm-testing/model_free_nvfp4a16-e2e
 - Repositorio del modelo base: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Proyecto TinyLlama (GitHub): https://github.com/jzhang38/TinyLlama
 - Dataset SlimPajama: https://huggingface.co/datasets/cerebras/SlimPajama-627B

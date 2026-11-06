@@ -29,7 +29,7 @@ La relevancia práctica es que se distribuye como grafo ONNX autónomo (con el n
 | Velocidad de avance | 0,05–0,3 m/s |
 | Obstáculos en escena | barra fácil en x = 2,5 m (0,20 m de holgura); barra difícil en x = 4,5 m (0,15 m de holgura) |
 | Fitness del campeón | 2,3736 (línea base 0,40; techo teórico 3,0) |
-| Tamano del repo | 0,0 GB (según HuggingFace) |
+| Tamano del repo | 0,0 GB (según Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de publicacion | 19 de octubre de 2026 |
 
@@ -109,7 +109,7 @@ Las diferencias de licencia son relevantes: `collie-crawl-v1` es el único de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yaoxiao-0512/collie-crawl-v1
+- Modelo en Hugging Face: https://huggingface.co/yaoxiao-0512/collie-crawl-v1
 - Modelo hermano (salto): https://huggingface.co/yaoxiao-0512/collie-jump-v1
 - Modelo hermano (incorporación): https://huggingface.co/yaoxiao-0512/collie-getup-v1
 

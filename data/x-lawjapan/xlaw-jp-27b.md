@@ -98,7 +98,7 @@ XLaw-JP-27B es el unico de los cuatro que supera el punto de corte del examen en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/X-LawJapan/xlaw-jp-27b
+- Modelo en Hugging Face: https://huggingface.co/X-LawJapan/xlaw-jp-27b
 - Paper (arXiv): https://arxiv.org/abs/2610.39227
 - Dataset de evaluacion XLaw-Bench: https://huggingface.co/datasets/X-LawJapan/xlaw-bench
 - Leaderboard de XLaw-Bench: https://huggingface.co/spaces/X-LawJapan/xlaw-bench-leaderboard

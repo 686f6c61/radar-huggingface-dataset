@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EmbeddingGemma 2 es un modelo de embeddings multimodal desarrollado por Google DeepMind que proyecta texto (incluido codigo), imagenes, video y audio en un unico espacio vectorial compartido de 768 dimensiones. El checkpoint publicado por Veiledge en HuggingFace es una cuantizacion GGUF del modelo base `google/embeddinggemma-2`, generada con la metodologia Unsloth Dynamic 3.0, pensada para inferencia en hardware de consumo y despliegue en entornos con recursos limitados.
+EmbeddingGemma 2 es un modelo de embeddings multimodal desarrollado por Google DeepMind que proyecta texto (incluido codigo), imagenes, video y audio en un unico espacio vectorial compartido de 768 dimensiones. El checkpoint publicado por Veiledge en Hugging Face es una cuantizacion GGUF del modelo base `google/embeddinggemma-2`, generada con la metodologia Unsloth Dynamic 3.0, pensada para inferencia en hardware de consumo y despliegue en entornos con recursos limitados.
 
 El modelo combina un backbone de texto de 270M parametros (130M de transformer mas 140M de embedder) con encoders modulares de vision (170M) y audio (300M), sumando 740M parametros totales. Su diseno prioriza la eficiencia: contexto de 8192 tokens, ventana deslizante de 1024 tokens, atencion GQA/MQA con 4 cabezas y solo 2/1 KV-heads, y soporte nativo de Matryoshka Representation Learning (MRL) que permite truncar los embeddings a 128, 256 o 512 dimensiones con impacto minimo en calidad.
 
@@ -79,8 +79,8 @@ No se han publicado en la informacion disponible resultados de benchmarks especi
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EmbeddingGemma 2 (GGUF, este repo) | 740M totales (271M en safetensors) | 8192 tokens | Texto, imagen, video, audio | Apache 2.0 | HuggingFace (GGUF) |
-| EmbeddingGemma 1 | No disponible en la informacion | No disponible | Texto | No disponible | HuggingFace |
+| EmbeddingGemma 2 (GGUF, este repo) | 740M totales (271M en safetensors) | 8192 tokens | Texto, imagen, video, audio | Apache 2.0 | Hugging Face (GGUF) |
+| EmbeddingGemma 1 | No disponible en la informacion | No disponible | Texto | No disponible | Hugging Face |
 | Otros modelos de embeddings multimodales | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La informacion proporcionada solo permite comparar con EmbeddingGemma 1, del que se conocen los resultados en MTEB multilingual v2 (61.15 frente a 61.36) y MTEB code v1 (68.76 frente a 78.68). No se dispone de datos de otros modelos comparables de la misma categoria para esta ficha.
@@ -98,8 +98,8 @@ La informacion proporcionada solo permite comparar con EmbeddingGemma 1, del que
 
 ## Enlaces
 
-- HuggingFace del repo GGUF: https://huggingface.co/Veiledge/embeddinggemma-2-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/google/embeddinggemma-2
+- Hugging Face del repo GGUF: https://huggingface.co/Veiledge/embeddinggemma-2-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/google/embeddinggemma-2
 - Guia de Unsloth para EmbeddingGemma 2: https://unsloth.ai/docs/models/embeddinggemma-2
 - Documentacion de Unsloth Dynamic 3.0 GGUF: https://unsloth.ai/docs/basics/dynamic-3.0-ggufs
 - Repositorio de Unsloth en GitHub: https://github.com/unslothai/unsloth/

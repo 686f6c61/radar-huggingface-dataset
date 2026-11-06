@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Opal Ridge 18 es un modelo de generación de imágenes a partir de texto (text-to-image) publicado por el usuario kimi000 en HuggingFace. Se trata de un ajuste fino del modelo base black-forest-labs/FLUX.2-klein-base-4B, obtenido mediante aprendizaje por refuerzo (reinforcement learning) sobre pesos LoRA que posteriormente se fusionan en el transformer. El resultado es un checkpoint nativo en BF16 compatible con la clase `Flux2KleinPipeline` de la librería diffusers, sin necesidad de cargar adaptadores PEFT ni runtime FAR adicional durante la inferencia.
+Opal Ridge 18 es un modelo de generación de imágenes a partir de texto (text-to-image) publicado por el usuario kimi000 en Hugging Face. Se trata de un ajuste fino del modelo base black-forest-labs/FLUX.2-klein-base-4B, obtenido mediante aprendizaje por refuerzo (reinforcement learning) sobre pesos LoRA que posteriormente se fusionan en el transformer. El resultado es un checkpoint nativo en BF16 compatible con la clase `Flux2KleinPipeline` de la librería diffusers, sin necesidad de cargar adaptadores PEFT ni runtime FAR adicional durante la inferencia.
 
 El modelo forma parte de una ablación de curriculum denominada "Version Base 10-Family", correspondiente al paso 500 con pesos EMA, y no al baseline estático AlphaGRPO. El entrenamiento se realizó a 512 px de resolución, con 20 pasos de rollout, CFG 4, 16 prompts por iteración y tamaño de grupo 14. El repositorio incluye ficheros de procedencia (`provenance.json`, `export_manifest.json`, `verification.json`) que documentan el hash del checkpoint de origen, la revisión y la configuración del experimento.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| kimi000/opal-ridge-18 | 3.875.544.576 (transformer) | No disponible | Apache 2.0 | HuggingFace, 0 descargas | Sin benchmarks publicados |
-| black-forest-labs/FLUX.2-klein-base-4B (modelo base) | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | HuggingFace | No disponible en la información proporcionada |
+| kimi000/opal-ridge-18 | 3.875.544.576 (transformer) | No disponible | Apache 2.0 | Hugging Face, 0 descargas | Sin benchmarks publicados |
+| black-forest-labs/FLUX.2-klein-base-4B (modelo base) | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | Hugging Face | No disponible en la información proporcionada |
 | Otras alternativas de text-to-image de tamaño similar | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 La información disponible solo permite una comparación directa con el modelo base declarado. No se han encontrado en la búsqueda web datos sobre alternativas comparables, y la model card no incluye comparaciones con otros generadores.
@@ -86,10 +86,10 @@ La información disponible solo permite una comparación directa con el modelo b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kimi000/opal-ridge-18
+- Modelo en Hugging Face: https://huggingface.co/kimi000/opal-ridge-18
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B
 - Ficheros de procedencia dentro del repositorio: `provenance.json`, `export_manifest.json`, `verification.json`
 - Run de Weights & Biases referenciado en la model card: identificador `600998554ea23fdbbc45effff8e1229c` (no se proporciona URL directa)
 - Ejecución de origen referenciada: `version-base10-ablation-formal1505-r3-20260909` (sin URL pública proporcionada)
-- Documentación de diffusers sobre `Flux2KleinPipeline`: no disponible en la información proporcionada; la referencia canónica es el repositorio de HuggingFace diffusers en https://github.com/huggingface/diffusers
+- Documentación de diffusers sobre `Flux2KleinPipeline`: no disponible en la información proporcionada; la referencia canónica es el repositorio de Hugging Face diffusers en https://github.com/huggingface/diffusers
 - Papers, blogs o demos adicionales: no disponible. La búsqueda web realizada no devolvió resultados relacionados con este modelo.

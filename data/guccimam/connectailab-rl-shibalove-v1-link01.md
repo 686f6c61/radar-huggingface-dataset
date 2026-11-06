@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks adicionales (curvas de aprendizaje,
 
 | Modelo | Tipo | Parámetros | Contexto/observación | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LINK-01 (este modelo) | MLP PPO para decisión de navegación | no disponible (MLP 10-64-64-5) | 10 observaciones, 5 acciones | 100 % éxito, recompensa 15,86 en 20 semillas | Apache 2.0 | HuggingFace |
+| LINK-01 (este modelo) | MLP PPO para decisión de navegación | no disponible (MLP 10-64-64-5) | 10 observaciones, 5 acciones | 100 % éxito, recompensa 15,86 en 20 semillas | Apache 2.0 | Hugging Face |
 | Políticas PPO de referencia en MuJoCo (p. ej. Humanoid-v5, LunarLander-v3) | Políticas PPO/DQN de control continuo | no disponible | variables según entorno | no disponible en esta ficha | variable | repositorios públicos de RL |
 | Caminante LINK-01 (CPG + MLP de imitación) | Red de locomoción fija | no disponible (walker51-14) | 51 dimensiones de estado | no disponible | no disponible | incluido en el ecosistema CONNECT AI WORLD |
 
@@ -87,7 +87,7 @@ La comparación directa con otras políticas publicadas no es posible con los da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Guccimam/connectailab-rl-shibalove-v1-link01
+- Hugging Face: https://huggingface.co/Guccimam/connectailab-rl-shibalove-v1-link01
 - Repositorio GitHub CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab (entrenamiento del modelo de decisión): https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - CONNECT AI WORLD (robot web learning): https://www.ezerai.xyz/robot-lab/world/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Silas-1.7-v15-candidate es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario twinds en HuggingFace, diseñado como un fine-tuning sobre el modelo base Qwen/Qwen3.6-27B. Se trata de un checkpoint candidato dentro de un proceso de entrenamiento iterativo, como indica su nombre "candidate", orientado a la generacion de texto conversacional.
+Silas-1.7-v15-candidate es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario twinds en Hugging Face, diseñado como un fine-tuning sobre el modelo base Qwen/Qwen3.6-27B. Se trata de un checkpoint candidato dentro de un proceso de entrenamiento iterativo, como indica su nombre "candidate", orientado a la generacion de texto conversacional.
 
 El modelo se distribuye como un adaptador PEFT en formato safetensors, con un tamano de repositorio de 1.0 GB, lo que sugiere que los pesos del adaptador son significativamente menores que los del modelo base de 27B parametros. La model card no proporciona informacion detallada sobre el dataset de entrenamiento, los hiperparametros utilizados ni los resultados de evaluacion, lo que limita la capacidad de evaluar su rendimiento de forma independiente.
 
@@ -80,7 +80,7 @@ La comparativa es limitada porque no se dispone de datos de rendimiento del adap
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/twinds/silas-1.7-v15-candidate
+- Hugging Face: https://huggingface.co/twinds/silas-1.7-v15-candidate
 - Paper de LoRA (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Repositorio de Axolotl (libreria de entrenamiento): https://github.com/OpenAccess-AI-Collective/axolotl
 - Modelo base Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B

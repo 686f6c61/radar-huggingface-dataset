@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mdagosta/waldito-smoke-v1-r0002-u1-mdagosta` es un artefacto publicado en HuggingFace por el usuario mdagosta (Michael D'Agosta), enmarcado en lo que la propia model card denomina "OpenWALDO model export". Se trata de un transformer causal de arquitectura Llama estandar (`LlamaForCausalLM`) con un tokenizador de bytes propietario, identificado como "schema-1", que requiere cargarse con `trust_remote_code=True`. El repositorio incluye ademas dos ficheros de inventario, `BOM.json` y `EU-BOM.json`, este ultimo con el mapeo de divulgacion de contenido de entrenamiento exigido por el reglamento europeo de IA (GPAI).
+El modelo `mdagosta/waldito-smoke-v1-r0002-u1-mdagosta` es un artefacto publicado en Hugging Face por el usuario mdagosta (Michael D'Agosta), enmarcado en lo que la propia model card denomina "OpenWALDO model export". Se trata de un transformer causal de arquitectura Llama estandar (`LlamaForCausalLM`) con un tokenizador de bytes propietario, identificado como "schema-1", que requiere cargarse con `trust_remote_code=True`. El repositorio incluye ademas dos ficheros de inventario, `BOM.json` y `EU-BOM.json`, este ultimo con el mapeo de divulgacion de contenido de entrenamiento exigido por el reglamento europeo de IA (GPAI).
 
 La relevancia del artefacto no esta en su capacidad generativa, sino en su naturaleza de prueba. Con 820.736 parametros totales (aproximadamente 0,82 millones), el modelo es tres ordenes de magnitud mas pequeno que cualquier LLM util: por poner una referencia, esta por debajo del millon de parametros, mientras que los modelos de proposito general manejables en消费 hardware parten de los 1.000-3.000 millones. El nombre "smoke" apunta a un test de humo: un artefacto minimo destinado a verificar que una cadena de carga, tokenizacion, serializacion y servicio funciona de extremo a extremo antes de entrenar o desplegar algo real.
 
@@ -56,7 +56,7 @@ En la practica, el modelo debe considerarse un artefacto de validacion tecnica, 
 - Verificacion de inventarios de cumplimiento: el par `BOM.json` / `EU-BOM.json` permite probar en un pipeline interno que el parseo y la validacion de un SBOM de modelo y de un mapeo de divulgacion GPAI funcionan antes de aplicarlo a releases reales.
 - Banco de pruebas de servidores de inferencia: desplegar el modelo en un servidor de pruebas para medir el arranque en frio, el tiempo de carga del tokenizador y el overhead del endpoint con un coste de recursos practicamente nulo, comparando despues con modelos grandes sobre la misma infraestructura.
 - Desarrollo de harnesses de evaluacion: usar un modelo diminuto como caso limite en un framework de evaluacion (prompt vacio, secuencias largas, entradas binarias) para comprobar que el harness no se rompe antes de lanzarlo contra modelos de miles de millones de parametros.
-- Docencia y formacion interna: ilustrar de forma tangible el ciclo de vida completo de un artefacto de HuggingFace (repo, model card, safetensors, BOM, carga con codigo remoto) sin necesidad de GPU.
+- Docencia y formacion interna: ilustrar de forma tangible el ciclo de vida completo de un artefacto de Hugging Face (repo, model card, safetensors, BOM, carga con codigo remoto) sin necesidad de GPU.
 
 ## Benchmarks y rendimiento
 
@@ -91,8 +91,8 @@ Como orientacion cualitativa, cualquier modelo de proposito general de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-smoke-v1-r0002-u1-mdagosta
-- Perfil del autor en HuggingFace: https://huggingface.co/mdagosta
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-smoke-v1-r0002-u1-mdagosta
+- Perfil del autor en Hugging Face: https://huggingface.co/mdagosta
 - Perfil del autor en GitHub: https://github.com/mdagosta
 - Sitio personal del autor: https://dagosta.com
 - Inventario de ficheros de la release (ruta dentro del repositorio): `BOM.json`

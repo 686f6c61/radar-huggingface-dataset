@@ -76,7 +76,7 @@ No se dispone de información suficiente para realizar una comparativa detallada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity
+- Hugging Face: https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity
 - Demo online (RunningHub): https://www.runninghub.ai/post/2096339589492432897/?inviteCode=rh-v1559
 - Canal de YouTube: https://youtube.com/@AIGC-Singularity
 - Espacio de Bilibili: https://space.bilibili.com

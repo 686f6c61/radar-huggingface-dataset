@@ -4,7 +4,7 @@
 
 Phi-4-multimodal-instruct es un modelo fundacional multimodal ligero desarrollado por Microsoft, y este repositorio de NostraEmpire es un espejo (mirror) del original. Con 5.574.460.384 parametros (~5,6B), el modelo procesa entradas de texto, imagen y audio, y genera salidas de texto, con una ventana de contexto de 128K tokens. Esta construido sobre el backbone de Phi-4-mini, anadiendo codificadores de vision y audio mediante adaptadores LoRA.
 
-El modelo destaca por unificar tres modalidades en un unico transformer compacto, lo que lo hace adecuado para entornos con restricciones de memoria y latencia. Fue mejorado mediante fine-tuning supervisado (SFT), direct preference optimization (DPO) y reinforcement learning from human feedback (RLHF). En el momento de su lanzamiento, se posiciono como el primer modelo open source capaz de realizar resumen de voz (speech summarization) y alcanzo el primer puesto en el HuggingFace Open ASR Leaderboard con un WER del 6,14%.
+El modelo destaca por unificar tres modalidades en un unico transformer compacto, lo que lo hace adecuado para entornos con restricciones de memoria y latencia. Fue mejorado mediante fine-tuning supervisado (SFT), direct preference optimization (DPO) y reinforcement learning from human feedback (RLHF). En el momento de su lanzamiento, se posiciono como el primer modelo open source capaz de realizar resumen de voz (speech summarization) y alcanzo el primer puesto en el Hugging Face Open ASR Leaderboard con un WER del 6,14%.
 
 La licencia MIT permite uso comercial y de investigacion sin restricciones significativas, lo que convierte a este modelo en una opcion atractiva para produccion. El soporte multilingue abarca 23 idiomas para texto, 8 para audio y solo ingles para vision.
 

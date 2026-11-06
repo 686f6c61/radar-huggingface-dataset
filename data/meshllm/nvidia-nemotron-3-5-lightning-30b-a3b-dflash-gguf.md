@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace del artefacto: https://huggingface.co/meshllm/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-DFlash-GGUF
+- Hugging Face del artefacto: https://huggingface.co/meshllm/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-DFlash-GGUF
 - Modelo base NVFP4-DFlash: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash
 - Modelo principal BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Conversión GGUF intermedia: https://huggingface.co/magnitudedev/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash-GGUF

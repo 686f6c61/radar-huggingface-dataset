@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (EAGLE3 draft) | 202,7 M | 2048 (entrenamiento) | EAGLE3 / SpecForge | Apache 2.0 | HuggingFace |
+| Este checkpoint (EAGLE3 draft) | 202,7 M | 2048 (entrenamiento) | EAGLE3 / SpecForge | Apache 2.0 | Hugging Face |
 | MNN/Qwen3-4B-Instruct-2507-Eagle3 (ModelScope) | No disponible | No disponible | EAGLE3 | No especificada | ModelScope |
-| Modelo base Qwen3-4B-Instruct-2507 | 4 B | 32768 (según documentación de Qwen) | Transformer dense | Apache 2.0 | HuggingFace |
+| Modelo base Qwen3-4B-Instruct-2507 | 4 B | 32768 (según documentación de Qwen) | Transformer dense | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a otros draft models para el mismo modelo base. No se dispone de datos de rendimiento de alternativas como Medusa o Lookahead en este contexto. Este checkpoint se distingue por su entrenamiento online con SpecForge y su publicación bajo licencia Apache 2.0, lo que facilita su uso comercial.
 
@@ -77,7 +77,7 @@ La comparativa se limita a otros draft models para el mismo modelo base. No se d
 ## Enlaces
 
 - Repositorio del checkpoint: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-NoWindow-epoch-2-step-65000
-- Colección de checkpoints (47 en total): accesible desde el perfil del autor en HuggingFace
+- Colección de checkpoints (47 en total): accesible desde el perfil del autor en Hugging Face
 - Repositorio oficial de EAGLE (GitHub): https://github.com/Yunhai-Hu/EAGLE-Qwen3
 - Draft model alternativo en ModelScope: https://www.modelscope.cn/models/MNN/Qwen3-4B-Instruct-2507-Eagle3
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

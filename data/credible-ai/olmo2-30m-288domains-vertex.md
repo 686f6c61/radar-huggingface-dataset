@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| olmo2-30M-288domains-vertex | 29,2 M | no disponible | Banco de proxies para data mixing | MIT | HuggingFace |
-| OLMo 2 (modelos oficiales de AI2) | 7B / 13B / 32B | 4.096 tokens (según variante) | Modelos de lenguaje de proposito general | Apache 2.0 | HuggingFace |
-| Pythia (EleutherAI) | 70 M – 12B | 2.048 tokens | Suite para interpretabilidad y estudio de escalado | Apache 2.0 | HuggingFace |
-| GPT-NeoX-20B | 20 B | 2.048 tokens | Modelo de lenguaje de gran escala | Apache 2.0 | HuggingFace |
+| olmo2-30M-288domains-vertex | 29,2 M | no disponible | Banco de proxies para data mixing | MIT | Hugging Face |
+| OLMo 2 (modelos oficiales de AI2) | 7B / 13B / 32B | 4.096 tokens (según variante) | Modelos de lenguaje de proposito general | Apache 2.0 | Hugging Face |
+| Pythia (EleutherAI) | 70 M – 12B | 2.048 tokens | Suite para interpretabilidad y estudio de escalado | Apache 2.0 | Hugging Face |
+| GPT-NeoX-20B | 20 B | 2.048 tokens | Modelo de lenguaje de gran escala | Apache 2.0 | Hugging Face |
 
 La comparación directa es limitada: este repositorio no compite como modelo de propósito general, sino como infraestructura experimental. Frente a Pythia, que ofrece una suite de tamaños para estudiar escalado, aquí el eje de variación no es el tamaño sino la mezcla de datos.
 
@@ -88,7 +88,7 @@ La comparación directa es limitada: este repositorio no compite como modelo de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-30M-288domains-vertex
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-30M-288domains-vertex
 - Paper LinMix: https://arxiv.org/abs/2610.37390
 - Dataset de diseño y resultados: https://huggingface.co/datasets/credible-ai/linmix-proxy-swarms
 - Dataset de secuencias tokenizadas: https://huggingface.co/datasets/credible-ai/weborganizer-corpus-200b-tokenized

@@ -18,12 +18,12 @@ El repo destaca por su volumen (446,8 GB en total) y por ofrecer cuantizaciones 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | bf16, Q8_0, Q6_K_L, Q6_K, Q6_K_S, Q5_K_M, Q5_K_S, Q4_K_L, Q4_1, Q4_K_M, IQ4_NL (lista completa no disponible por truncamiento del README) |
 | Idiomas soportados | no disponible |
-| Licencia | swift-open-license-1.0 (campo "other" en HuggingFace); repositorio protegido (gated) |
+| Licencia | swift-open-license-1.0 (campo "other" en Hugging Face); repositorio protegido (gated) |
 | Formato de pesos | GGUF (cuantizado con llama.cpp b11159); el modelo base original se distribuye por separado |
 
 ## Arquitectura y entrenamiento
 
-La model card identifica el modelo como perteneciente a la familia Qwen3 ("qwen3_8") y lo describe como un modelo de razonamiento post-entrenado. El pipeline en HuggingFace es "image-text-to-text", y se documenta soporte de entrada de imagen cuando se carga el fichero mmproj correspondiente, lo que apunta a una arquitectura multimodal (LLM con proyector visual). El recuento de parametros (27,32 mil millones) y la denominacion "27b" encajan con un modelo denso de esa escala; no hay evidencia en la informacion proporcionada de que se trate de un modelo MoE. Las etiquetas "efficient-thinking" y "token-efficient" indican que el post-entrenamiento se ha orientado a reducir el gasto de tokens durante el razonamiento.
+La model card identifica el modelo como perteneciente a la familia Qwen3 ("qwen3_8") y lo describe como un modelo de razonamiento post-entrenado. El pipeline en Hugging Face es "image-text-to-text", y se documenta soporte de entrada de imagen cuando se carga el fichero mmproj correspondiente, lo que apunta a una arquitectura multimodal (LLM con proyector visual). El recuento de parametros (27,32 mil millones) y la denominacion "27b" encajan con un modelo denso de esa escala; no hay evidencia en la informacion proporcionada de que se trate de un modelo MoE. Las etiquetas "efficient-thinking" y "token-efficient" indican que el post-entrenamiento se ha orientado a reducir el gasto de tokens durante el razonamiento.
 
 En cuanto a innovaciones tecnicas, el modelo declara soporte de decodificacion especulativa mediante MTP (multi-token prediction), lo que puede acelerar la inferencia al predecir varios tokens por paso. La cuantizacion de bartowski se ha realizado con llama.cpp release b11159 empleando imatrix, es decir, matrices de importancia que permiten calibrar mejor la perdida de precision en cada capa. El formato de prompt documentado fuerza un modo de razonamiento explicito con esfuerzo configurable ("Reasoning effort is set to xhigh") y abre un bloque `<think>` antes de la respuesta, ademas de definir un esquema XML concreto para las llamadas a herramientas. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni las tecnicas concretas de alineacion (RLHF, DPO, etc.).
 
@@ -93,7 +93,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento ni de espe
 - Idiomas soportados: no disponibles; no se puede garantizar un rendimiento adecuado fuera de los idiomas mayoritarios del entrenamiento original (no especificados).
 - Longitud de contexto: no disponible; este dato es critico para dimensionar el KV cache y para decidir su uso en tareas de contexto largo.
 - Licencia: swift-open-license-1.0 no es una licencia de codigo abierto estandar. Es imprescindible revisar el texto completo (enlazado en el README del modelo base) antes de cualquier uso comercial, ya que puede imponer restricciones de atribucion, uso o redistribucion.
-- Repositorio protegido (gated): el acceso requiere aceptar condiciones en HuggingFace, lo que puede complicar la integracion automatizada en pipelines de CI/CD.
+- Repositorio protegido (gated): el acceso requiere aceptar condiciones en Hugging Face, lo que puede complicar la integracion automatizada en pipelines de CI/CD.
 - Reproducibilidad: la lista completa de cuantizaciones del README aparece truncada en la informacion disponible; conviene consultar el repositorio para conocer todas las variantes (por ejemplo, otras cuantizaciones IQ).
 - Rendimiento tras cuantizacion: las variantes por debajo de Q4_K_M pueden degradar la calidad de razonamiento y de tool calling, capacidades especialmente sensibles a la perdida de precision.
 - Naturaleza del artefacto: esta ficha describe una cuantizacion de terceros (bartowski) del modelo de ukisai, no el modelo original; los resultados y el soporte dependen de ambos autores.

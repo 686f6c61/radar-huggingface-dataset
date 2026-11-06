@@ -91,7 +91,7 @@ La comparación relevante es interna: frente al original, la versión NVFP4 pier
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tensor-ai-inc/d3-mini-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/tensor-ai-inc/d3-mini-NVFP4
 - Modelo base: https://huggingface.co/vllm-sr/d3-mini
 - Decision Index (kit de evaluación): https://github.com/apolinario/decision-index
 - Dataset de calibración UltraChat: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k

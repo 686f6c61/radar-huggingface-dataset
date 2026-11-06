@@ -24,7 +24,7 @@ Su relevancia actual es doble. Por un lado, cubre un nicho poco atendido: clasif
 | Libreria de inferencia | kodiak (paquete kodiak-s1) |
 | Tamano del repositorio | 1,6 GB |
 | Checkpoint publicado | b-base-s1-v2-s1 (semilla 1 de 3, paso 6000) |
-| Descargas / likes en HuggingFace | 0 / 1 |
+| Descargas / likes en Hugging Face | 0 / 1 |
 
 ## Arquitectura y entrenamiento
 
@@ -90,10 +90,10 @@ Los autores indican que el error de calibración se degrada hasta aproximadament
 
 | Modelo | Parametros | Contexto | Tareas nunca vistas (forzada) | Tareas familiares | Acierto al abstener | Latencia GPU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| kodiak-large-v2-preview | 400 M | 512 tokens | 60,9 % | 85,5 % | 84 % | 16 ms | Apache-2.0 | HuggingFace, research preview |
-| kodiak-small-v2-preview | 152 M | 512 tokens | 55,3 % | 81,7 % | 91 % | 8 ms | Apache-2.0 (segun ficha de la familia) | HuggingFace, research preview |
+| kodiak-large-v2-preview | 400 M | 512 tokens | 60,9 % | 85,5 % | 84 % | 16 ms | Apache-2.0 | Hugging Face, research preview |
+| kodiak-small-v2-preview | 152 M | 512 tokens | 55,3 % | 81,7 % | 91 % | 8 ms | Apache-2.0 (segun ficha de la familia) | Hugging Face, research preview |
 | Mejor clasificador zero-shot abierto probado por el autor | no disponible | no disponible | 57,9 % | no disponible | no disponible | no disponible | no disponible | no disponible |
-| answerdotai/ModernBERT-large (modelo base) | ~395 M | mayor que 512 tokens en el backbone | no aplica | no aplica | no aplica | no disponible | Apache-2.0 | HuggingFace |
+| answerdotai/ModernBERT-large (modelo base) | ~395 M | mayor que 512 tokens en el backbone | no aplica | no aplica | no aplica | no disponible | Apache-2.0 | Hugging Face |
 
 El autor no nombra el clasificador zero-shot concreto con el que compara, por lo que no se puede detallar su licencia ni su disponibilidad. La comparación con ModernBERT-large solo es válida como referencia de backbone: el modelo base no incorpora la capa de decisión, la calibración ni la abstención de Kodiak.
 
@@ -113,7 +113,7 @@ El autor no nombra el clasificador zero-shot concreto con el que compara, por lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cortex-agent-llc/kodiak-large-v2-preview
+- Modelo en Hugging Face: https://huggingface.co/cortex-agent-llc/kodiak-large-v2-preview
 - Variante small: https://huggingface.co/cortex-agent-llc/kodiak-small-v2-preview
 - Repositorio de codigo y evaluacion: https://github.com/grizzlypeaksoftware/kodiak
 - Documentacion de estrategia y criterios de release: https://github.com/grizzlypeaksoftware/kodiak/blob/main/docs/STRATEGY.md

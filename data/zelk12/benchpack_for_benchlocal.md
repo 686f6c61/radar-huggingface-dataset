@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zelk12/BenchPack_for_BenchLocal` no es un modelo de lenguaje, sino un repositorio de conjuntos de datos de evaluación publicados en HuggingFace para alimentar BenchLocal, un arnés de evaluación local. El paquete incluye IFEval-mini (90 tareas en inglés, ruso y mezcla de ambos) y anuncia dos conjuntos adicionales, GPQA-mini y MuSR-mini, derivados de los benchmarks homónimos. El repositorio se creó el 20 de octubre de 2026 y se actualizó tres días después, con 0 descargas y 0 likes en el momento de la consulta.
+`zelk12/BenchPack_for_BenchLocal` no es un modelo de lenguaje, sino un repositorio de conjuntos de datos de evaluación publicados en Hugging Face para alimentar BenchLocal, un arnés de evaluación local. El paquete incluye IFEval-mini (90 tareas en inglés, ruso y mezcla de ambos) y anuncia dos conjuntos adicionales, GPQA-mini y MuSR-mini, derivados de los benchmarks homónimos. El repositorio se creó el 20 de octubre de 2026 y se actualizó tres días después, con 0 descargas y 0 likes en el momento de la consulta.
 
 Su interés es acotado pero real: ofrece versiones reducidas y bilingües de benchmarks conocidos, pensadas para ejecuciones rápidas sobre modelos servidos en local, con tareas redactadas para ser interpretadas de forma unívoca y compatibles con un validador automático. El autor declara que la generación se hizo con un modelo (citado como "Gemini 3.8 Flash") y que la revisión humana fue intensa en IFEval-mini y mucho más superficial en GPQA-mini y MuSR-mini.
 
@@ -21,7 +21,7 @@ La ficha que sigue mantiene la estructura habitual, pero numerosos campos figura
 | Licencia | no disponible (no declarada en el repositorio) |
 | Formato de pesos | no aplica; el formato de serializacion de los datos no se detalla en la informacion disponible |
 | Tamano del conjunto | IFEval-mini: 90 tareas; GPQA-mini y MuSR-mini: no disponible |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Fecha de creacion / actualizacion | 2026-10-20 / 2026-10-23 |
 | Descargas / likes | 0 / 0 |
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 | Verificacion | automatica mediante validador, segun el autor | automatica | no disponible | no disponible |
 | Revision humana declarada | alta en IFEval-mini; baja en GPQA-mini y MuSR-mini | no disponible | no disponible | no disponible |
 | Licencia | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
-| Disponibilidad | repositorio HuggingFace con 0 descargas | benchmark publico ampliamente citado | benchmark publico ampliamente citado | benchmark publico ampliamente citado |
+| Disponibilidad | repositorio Hugging Face con 0 descargas | benchmark publico ampliamente citado | benchmark publico ampliamente citado | benchmark publico ampliamente citado |
 
 No se dispone de datos para comparar rendimiento, ya que no hay resultados publicados en el repositorio.
 
@@ -92,6 +92,6 @@ No se dispone de datos para comparar rendimiento, ya que no hay resultados publi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zelk12/BenchPack_for_BenchLocal
+- Repositorio en Hugging Face: https://huggingface.co/zelk12/BenchPack_for_BenchLocal
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo ni demos del autor.
 - Referencias externas de los benchmarks originales de los que derivan los conjuntos (no enlazadas desde el repositorio): IFEval, arXiv:2311.07911; GPQA, arXiv:2311.12022; MuSR, arXiv:2310.16049.

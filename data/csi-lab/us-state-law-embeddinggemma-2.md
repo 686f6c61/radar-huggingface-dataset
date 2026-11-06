@@ -101,7 +101,7 @@ La comparativa de rendimiento frente a estos modelos no está disponible en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CSI-lab/US-State-Law-EmbeddingGemma-2
+- Hugging Face: https://huggingface.co/CSI-lab/US-State-Law-EmbeddingGemma-2
 - Variante GGUF: https://huggingface.co/CSI-lab/US-state-law-EmbeddingGemma-2-GGUF
 - Variante Large (1024d): https://huggingface.co/CSI-lab/Washington-state-law-embedding-model-Large
 - Variante Base (768d): https://huggingface.co/CSI-lab/Washington-state-law-embedding-model-Base

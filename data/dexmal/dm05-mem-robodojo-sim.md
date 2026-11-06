@@ -91,10 +91,10 @@ No se dispone de información suficiente en la documentación proporcionada para
 
 ## Enlaces
 
-- [HuggingFace: Dexmal/DM05-MEM-Robodojo-Sim](https://huggingface.co/Dexmal/DM05-MEM-Robodojo-Sim)
+- [Hugging Face: Dexmal/DM05-MEM-Robodojo-Sim](https://huggingface.co/Dexmal/DM05-MEM-Robodojo-Sim)
 - [GitHub: dexmal/opendm](https://github.com/dexmal/opendm)
-- [HuggingFace: Dexmal/DM05](https://huggingface.co/Dexmal/DM05)
-- [HuggingFace: DM05 Collection](https://huggingface.co/collections/Dexmal/dm05)
+- [Hugging Face: Dexmal/DM05](https://huggingface.co/Dexmal/DM05)
+- [Hugging Face: DM05 Collection](https://huggingface.co/collections/Dexmal/dm05)
 - [GitHub: RoboDojo-Benchmark/RoboDojo](https://github.com/robodojo-benchmark/RoboDojo)
 - [RoboDojo Leaderboard](https://robodojo-benchmark.com/leaderboard)
 - [RoboDojo Documentation](https://robodojo-benchmark.com/doc/usage/install-and-download/)

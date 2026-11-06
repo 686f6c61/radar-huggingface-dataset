@@ -93,6 +93,6 @@ No se dispone de datos verificables sobre alternativas comparables en la informa
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/mradermacher/Qwen3.8-27b-Terse-Coder-i1-GGUF
+- Hugging Face (este repositorio): https://huggingface.co/mradermacher/Qwen3.8-27b-Terse-Coder-i1-GGUF
 - Modelo de origen citado en la model card: https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder
 - Papers, blogs, repositorios o demos adicionales: no disponibles. La busqueda web no devolvio resultados relacionados con el modelo.

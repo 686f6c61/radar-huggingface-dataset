@@ -92,7 +92,7 @@ La comparativa muestra que este decodificador es una pieza especializada que deb
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/SAM2.1-Hiera-Tiny-Mask-Decoder
+- Modelo en Hugging Face: https://huggingface.co/litert-community/SAM2.1-Hiera-Tiny-Mask-Decoder
 - Encoder companion: https://huggingface.co/litert-community/SAM2.1-Hiera-Tiny-Image-Encoder
 - Modelo base original: https://huggingface.co/facebook/sam2.1-hiera-tiny
 - Paper de SAM 2: https://arxiv.org/abs/2408.00714

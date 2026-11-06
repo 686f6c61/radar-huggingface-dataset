@@ -81,10 +81,10 @@ No se dispone de información suficiente para comparar Vedika 5.6 Pro con otros 
 
 ## Enlaces
 
-- [Repositorio de HuggingFace del modelo](https://huggingface.co/Veda-Labs/Vedika-5.6-PROv1)
+- [Repositorio de Hugging Face del modelo](https://huggingface.co/Veda-Labs/Vedika-5.6-PROv1)
 - [Repositorio en GitHub (copia del modelo card)](https://github.com/TOOLS-droid724/Vedika-5.6-PRO)
 - [Página oficial de Veda Labs](https://vedalabs.online)
 - [Cuenta de Twitter de Veda Labs](https://twitter.com/VedaLabsAI)
-- [Espacio de HuggingFace de Vedika](https://huggingface.co/spaces/Veda-Labs/Vedika)
+- [Espacio de Hugging Face de Vedika](https://huggingface.co/spaces/Veda-Labs/Vedika)
 - [Documentación de API de Vedika (GitHub)](https://github.com/Vedika-advanced-AI/API-DOCUMENTATION)
 - [Entrada en LLM Explorer (con datos de una versión anterior)](https://llm-explorer.com/model/Veda-Labs%2FVedika,5aULMF4n6PieHYcYmQyqGN)

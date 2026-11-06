@@ -105,7 +105,7 @@ Las versiones int4 uniformes citadas por el autor presentan una KL de 0,031–0,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NateHawk85/Swift-1.5-Qwen3.8-27b-M2XFP4-GPTQ-Radiance
+- Modelo en Hugging Face: https://huggingface.co/NateHawk85/Swift-1.5-Qwen3.8-27b-M2XFP4-GPTQ-Radiance
 - Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Licencia del modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b/blob/main/LICENSE
 - Drafter DFlash2: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2

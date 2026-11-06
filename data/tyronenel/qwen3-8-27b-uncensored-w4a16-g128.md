@@ -98,11 +98,11 @@ Las cifras de GSM8K de las tres primeras filas no son directamente comparables e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TyroneNel/Qwen3.8-27B-Uncensored-W4A16-g128
+- Modelo en Hugging Face: https://huggingface.co/TyroneNel/Qwen3.8-27B-Uncensored-W4A16-g128
 - Modelo base (BF16 abliterated, gateado): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Modelo upstream (Qwen/Qwen3.8-27B, citado en el linaje como origen Apache 2.0): https://huggingface.co/Qwen/Qwen3.8-27B
 - Commit de Intel AutoRound usado en la cuantizacion: https://github.com/intel/auto-round/commit/1139c323
 - Repositorio del pipeline de cuantizacion y verificacion: https://github.com/syv-ai/qwen38-27b-rtx3090
 - Documento de calidad del pipeline (incluye la medicion de GSM8K con thinking desactivado): https://github.com/syv-ai/qwen38-27b-rtx3090/blob/main/docs/quality.md
 - Dataset de calibracion: https://huggingface.co/datasets/NeelNanda/pile-10k
-- La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden de la informacion de HuggingFace y de la model card.
+- La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden de la informacion de Hugging Face y de la model card.

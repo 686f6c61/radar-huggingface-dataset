@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gyuz/2026_ETRI_Autonomous_Driving_Challenge
+- Repositorio Hugging Face: https://huggingface.co/gyuz/2026_ETRI_Autonomous_Driving_Challenge
 - Repositorio GitHub (codigo de entrenamiento/evaluacion): https://github.com/gyuz1/2026_Etri_challenge
   - Rama `LAW-split`: https://github.com/gyuz1/2026_Etri_challenge/tree/LAW-split
   - Rama `LAW-fulldata`: https://github.com/gyuz1/2026_Etri_challenge/tree/LAW-fulldata

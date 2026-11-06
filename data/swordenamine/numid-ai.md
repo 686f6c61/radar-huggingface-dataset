@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NUMID.AI es un repositorio de HuggingFace publicado por el usuario `swordenamine` que no contiene un modelo de lenguaje entrenado, sino la documentación de una aplicación full-stack de traducción a escrituras antiguas. La plataforma traduce texto moderno a 17 sistemas de escritura históricos —desde el cuneiforme sumerio y los jeroglíficos egipcios hasta el fenicio, el nórdico antiguo o el latín clásico— y devuelve el renderizado Unicode auténtico, transliteración IPA, desglose signo a signo, notas culturales y una estimación de confianza. El motor de traducción no es propio: se delega en la API de Anthropic Claude mediante prompts de sistema especializados.
+NUMID.AI es un repositorio de Hugging Face publicado por el usuario `swordenamine` que no contiene un modelo de lenguaje entrenado, sino la documentación de una aplicación full-stack de traducción a escrituras antiguas. La plataforma traduce texto moderno a 17 sistemas de escritura históricos —desde el cuneiforme sumerio y los jeroglíficos egipcios hasta el fenicio, el nórdico antiguo o el latín clásico— y devuelve el renderizado Unicode auténtico, transliteración IPA, desglose signo a signo, notas culturales y una estimación de confianza. El motor de traducción no es propio: se delega en la API de Anthropic Claude mediante prompts de sistema especializados.
 
 Arquitectura y entrenamiento, por tanto, no aplican en el sentido habitual: no hay pesos, no hay tokenizador, no hay corpus de entrenamiento publicado ni resultados de evaluación. El repositorio describe una arquitectura de software (backend FastAPI en Python 3.10+, frontend React con Node 18+) y una capa de orquestación sobre un LLM propietario, con caché de respuestas de una hora y límite por defecto de 4096 tokens de salida por petición. El valor técnico está en la interfaz, el catálogo de lenguas y el formato estructurado de salida (JSON con script, IPA, desglose y contexto), no en un artefacto de aprendizaje automático reutilizable.
 
@@ -98,6 +98,6 @@ Frente a proyectos de traducción de lenguas antiguas basados en modelos abierto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/swordenamine/NUMID.AI
+- Hugging Face: https://huggingface.co/swordenamine/NUMID.AI
 - Consola de Anthropic (requerida para la clave de API): https://console.anthropic.com
 - Paper, repositorio de código, demo pública y documentación adicional: no disponibles en la información proporcionada.

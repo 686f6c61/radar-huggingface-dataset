@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yixin-chen/chi26-empathy` es un repositorio alojado en HuggingFace por el usuario `yixin-chen` del que, en el momento de redactar esta ficha, no se puede confirmar prácticamente nada. La pagina del modelo no incluye model card, descripcion, pesos documentados, fichero de configuracion, tokenizador ni pipeline declarado. Los unicos metadatos verificables son: 0 descargas, 2 "me gusta", la etiqueta `region:us`, licencia no declarada, idiomas no declarados y fechas de creacion y actualizacion identicas (13 de septiembre de 2026, un valor anomalo que apunta a un error de metadatos o a una publicacion programada con fecha futura).
+`yixin-chen/chi26-empathy` es un repositorio alojado en Hugging Face por el usuario `yixin-chen` del que, en el momento de redactar esta ficha, no se puede confirmar prácticamente nada. La pagina del modelo no incluye model card, descripcion, pesos documentados, fichero de configuracion, tokenizador ni pipeline declarado. Los unicos metadatos verificables son: 0 descargas, 2 "me gusta", la etiqueta `region:us`, licencia no declarada, idiomas no declarados y fechas de creacion y actualizacion identicas (13 de septiembre de 2026, un valor anomalo que apunta a un error de metadatos o a una publicacion programada con fecha futura).
 
 El identificador del repositorio permite plantear dos hipotesis no confirmadas: `chi26` podria referirse a la conferencia ACM CHI 2026 (Conference on Human Factors in Computing Systems) y `empathy` a un sistema orientado a generar o evaluar respuestas empaticas en dialogo. Ninguna de las dos hipotesis esta respaldada por documentacion del repositorio, por lo que no deben tomarse como especificaciones tecnicas.
 
@@ -84,7 +84,7 @@ No disponible. No es posible identificar la categoria del modelo (tamano, tarea,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yixin-chen/chi26-empathy
+- Hugging Face: https://huggingface.co/yixin-chen/chi26-empathy
 - Paper, blog, repositorio de codigo o demo: no disponible.
 
 Nota sobre la busqueda web: las consultas realizadas no devolvieron ningun resultado relacionado con el modelo. Los unicos enlaces recuperados pertenecen a sitios de poemas y frases de amor en aleman (`gedankenportal.de`, `schreiben.net`, `1001sprueche.com`, `gedichte.levrai.de`, `literatpro.de`) y no guardan relacion con `yixin-chen/chi26-empathy`, por lo que se omiten de esta lista.

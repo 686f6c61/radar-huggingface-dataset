@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| **Wan2.1-T2V-14B (base)** | 14B | Ventana temporal completa | Apache-2.0 | HuggingFace |
-| **Wan2.1-T2V-14B + LoRA (este)** | 14B + 153 M LoRA | 5 s (21 frames latentes) | Apache-2.0 (adaptador) | HuggingFace |
+| **Wan2.1-T2V-14B (base)** | 14B | Ventana temporal completa | Apache-2.0 | Hugging Face |
+| **Wan2.1-T2V-14B + LoRA (este)** | 14B + 153 M LoRA | 5 s (21 frames latentes) | Apache-2.0 (adaptador) | Hugging Face |
 | **Modelos de vídeo autoregresivos (p. ej., VideoPoet, T2V-Turbo)** | varía | Varía | Varía | No comparables directamente |
 
 El adaptador no es comparable directamente con otros modelos de vídeo porque es un componente de investigación sobre Wan2.1. La comparativa real se establece con el modelo base: el adaptador introduce la inferencia por chunks causales, lo que permite generar vídeos más largos que el modelo base sin necesidad de generar todos los frames de una vez, aunque a costa de una mayor complejidad de implementación.
@@ -77,7 +77,7 @@ El adaptador no es comparable directamente con otros modelos de vídeo porque es
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/Perflow-Shuai/Wan2.1-T2V-14B-Resampling-Forcing-AR-LoRA)
+- [Repositorio Hugging Face](https://huggingface.co/Perflow-Shuai/Wan2.1-T2V-14B-Resampling-Forcing-AR-LoRA)
 - [Modelo base Wan2.1-T2V-14B](https://huggingface.co/Wan-AI/Wan2.1-T2V-14B)
 - [Artículo Resampling Forcing (arXiv:2512.15702)](https://arxiv.org/abs/2512.15702)
 - [Repositorio del proyecto resampling-forcing](https://github.com/AndysonYs/resampling-forcing/tree/5c926d1fa3fd9fbc9da05c09761517892342b394)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RPBizkit-v10-12B-GGUF es una conversión al formato GGUF del modelo RicardoEstep/RPBizkit-v10-12B, publicada por el mismo autor en HuggingFace. Se trata de un modelo de aproximadamente 12.250 millones de parámetros (12.247.782.400 exactos) obtenido mediante mergekit, es decir, por fusión de los pesos de otros modelos ya existentes, una práctica muy extendida en la comunidad de modelos "merge". La model card es mínima: solo indica que la conversión a GGUF se realizó con llama.cpp en un ordenador local y que el modelo puede usarse con llama.cpp o kobold.cpp.
+RPBizkit-v10-12B-GGUF es una conversión al formato GGUF del modelo RicardoEstep/RPBizkit-v10-12B, publicada por el mismo autor en Hugging Face. Se trata de un modelo de aproximadamente 12.250 millones de parámetros (12.247.782.400 exactos) obtenido mediante mergekit, es decir, por fusión de los pesos de otros modelos ya existentes, una práctica muy extendida en la comunidad de modelos "merge". La model card es mínima: solo indica que la conversión a GGUF se realizó con llama.cpp en un ordenador local y que el modelo puede usarse con llama.cpp o kobold.cpp.
 
 La información técnica publicada es muy escasa. No hay datos sobre la arquitectura subyacente, la longitud de contexto, los idiomas soportados, la licencia ni el proceso de entrenamiento. El repositorio ocupa 99,1 GB, lo que sugiere que contiene varias cuantizaciones GGUF distintas, aunque el autor no detalla cuáles. Con 116 descargas y 1 "like" en el momento de la consulta, es un modelo de nicho con validación comunitaria muy limitada.
 
@@ -86,7 +86,7 @@ Comparativa de rendimiento: no disponible.
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/RicardoEstep/RPBizkit-v10-12B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/RicardoEstep/RPBizkit-v10-12B-GGUF
 - Modelo base: https://huggingface.co/RicardoEstep/RPBizkit-v10-12B
 - mergekit (herramienta de fusión): https://github.com/arcee-ai/mergekit
 - llama.cpp: https://github.com/ggml-org/llama.cpp

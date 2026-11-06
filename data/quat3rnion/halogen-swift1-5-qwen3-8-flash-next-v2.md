@@ -18,7 +18,7 @@ Su relevancia practica es acotada pero concreta: demuestra que es posible aplica
 | Longitud de contexto | 262.144 posiciones por peticion |
 | Tipos de cuantizacion | 4 bits mayoritariamente, en la rejilla HT nativa del checkpoint v2 con redondeo consciente de calibracion; no hay versiones GGUF ni safetensors |
 | Idiomas soportados | no disponible |
-| Licencia | swift-open-license-1.0 (etiquetada como `other` en HuggingFace), con ficheros adicionales `LICENSE-QWEN`, `LICENSE-APACHE` y `NOTICE` |
+| Licencia | swift-open-license-1.0 (etiquetada como `other` en Hugging Face), con ficheros adicionales `LICENSE-QWEN`, `LICENSE-APACHE` y `NOTICE` |
 | Formato de pesos | `.hgn` (formato propio de Halogen); fichero `qwen38-flash-next-v2-swift15.hgn` de 68.142.577.664 bytes |
 
 ## Arquitectura y entrenamiento
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparables entre el v2 stock y este build
 
 - Portabilidad nula: el formato `.hgn` solo lo carga `halogen-flash-server`, y este solo funciona en AMD Strix Halo (gfx1151). No existe version GGUF ni safetensors de este build concreto.
 - Dependencia de software cerrado: el motor de inferencia no es de codigo abierto y tiene sus propios terminos, adicionales a la licencia del modelo.
-- Licencia restrictiva: `swift-open-license-1.0` (categoria `other` en HuggingFace), con ficheros adicionales de Qwen y Apache. No se detalla en la informacion disponible si permite uso comercial, por lo que debe revisarse el texto de `LICENSE` antes de cualquier despliegue en produccion.
+- Licencia restrictiva: `swift-open-license-1.0` (categoria `other` en Hugging Face), con ficheros adicionales de Qwen y Apache. No se detalla en la informacion disponible si permite uso comercial, por lo que debe revisarse el texto de `LICENSE` antes de cualquier despliegue en produccion.
 - Derivado no oficial: no esta hecho ni respaldado por UkisAI, Peonist ni Qwen. La trazabilidad depende de las revisiones citadas de los repositorios de origen.
 - Sin validacion de la comunidad: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el mismo dia. Los numeros de tokens de pensamiento proceden de solo 14 preguntas de MMLU-Pro.
 - Comportamiento de rechazo conservado: al no estar abliterado, rechaza peticiones igual que el modelo base; quien necesite otro comportamiento debe usar la variante abliterada, con licencia equivalente.
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparables entre el v2 stock y este build
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Quat3rnion/halogen-swift1.5-qwen3.8-flash-next-v2
+- Modelo en Hugging Face: https://huggingface.co/Quat3rnion/halogen-swift1.5-qwen3.8-flash-next-v2
 - Variante abliterada del mismo build: https://huggingface.co/Quat3rnion/halogen-swift1.5-qwen3.8-flash-next-v2-abliterated
 - Checkpoint base cuantizado (Peonist): https://huggingface.co/peonist-ai/halogen-qwen3.8-flash-next
 - Model card del checkpoint de Peonist: https://huggingface.co/peonist-ai/halogen-qwen3.8-flash-next/blob/main/README.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kubra-a/cybersec-siem-v10-1-gguf` es un modelo de lenguaje de aproximadamente 8 000 millones de parametros (8.030.261.312 pesos reales en safetensors) publicado por el usuario kubra-a en HuggingFace. Se distribuye unicamente en formato GGUF, cuantizado en Q4_K_M, y esta pensado para ejecucion local mediante llama.cpp y herramientas compatibles. El repositorio lo etiqueta como `llama`, `llama.cpp`, `unsloth`, `endpoints_compatible` y `conversational`, lo que indica una arquitectura transformer decoder-only de la familia Llama ajustada para dialogo.
+`kubra-a/cybersec-siem-v10-1-gguf` es un modelo de lenguaje de aproximadamente 8 000 millones de parametros (8.030.261.312 pesos reales en safetensors) publicado por el usuario kubra-a en Hugging Face. Se distribuye unicamente en formato GGUF, cuantizado en Q4_K_M, y esta pensado para ejecucion local mediante llama.cpp y herramientas compatibles. El repositorio lo etiqueta como `llama`, `llama.cpp`, `unsloth`, `endpoints_compatible` y `conversational`, lo que indica una arquitectura transformer decoder-only de la familia Llama ajustada para dialogo.
 
 El modelo se presenta como un fine-tuning orientado a ciberseguridad y SIEM, segun se deduce del propio nombre del repositorio, aunque la model card no documenta el dataset de entrenamiento, el dominio concreto ni el proceso de ajuste mas alla de indicar que se uso Unsloth para el fine-tuning y la conversion a GGUF. No se declaran licencia, idiomas soportados, longitud de contexto ni resultados de benchmarks.
 
@@ -35,7 +35,7 @@ Lo unico documentado en la model card es el proceso de ajuste y conversion: el a
 
 - Generacion de texto conversacional: el repositorio incluye la etiqueta `conversational`, y la model card muestra ejemplos de uso con `llama-cli --jinja`, lo que implica soporte de plantillas de chat.
 - Uso en llama.cpp: compatible con `llama-cli` y, segun la model card, con `llama-mtmd-cli` para modelos multimodales (aunque no hay evidencia de que este modelo concreto tenga capacidad multimodal).
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse detras de APIs compatibles con el formato de HuggingFace/OpenAI, aunque no se detalla la implementacion.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse detras de APIs compatibles con el formato de Hugging Face/OpenAI, aunque no se detalla la implementacion.
 - Especializacion tematica potencial en ciberseguridad y SIEM: inferida exclusivamente del nombre del modelo, sin documentacion que la respalde.
 - Capacidades multilingues: no disponible.
 - Tool calling / function calling: no disponible.
@@ -99,7 +99,7 @@ La ventaja diferencial de este modelo seria su ajuste especifico en cibersegurid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kubra-a/cybersec-siem-v10-1-gguf
+- Modelo en Hugging Face: https://huggingface.co/kubra-a/cybersec-siem-v10-1-gguf
 - Repositorio relacionado (GGUF): https://huggingface.co/kubra-a/cybersec-siem-v10-gguf
 - Repositorio relacionado (modelo base o hermano): https://huggingface.co/kubra-a/cybersec-siem-model
 - Unsloth (herramienta de fine-tuning y conversion citada por el autor): https://github.com/unslothai/unsloth

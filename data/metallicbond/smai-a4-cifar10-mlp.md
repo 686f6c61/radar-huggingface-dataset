@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `smai-a4-cifar10-mlp` (este) | 789.258 | 32x32x3 fijo | Clasificación CIFAR-10 | no disponible | HuggingFace |
+| `smai-a4-cifar10-mlp` (este) | 789.258 | 32x32x3 fijo | Clasificación CIFAR-10 | no disponible | Hugging Face |
 | LeNet-5 (referencia histórica) | ~60.000 | 32x32x1 | Clasificación de dígitos / imágenes | no disponible | Implementaciones públicas |
 | ResNet-18 (referencia) | ~11,7 M | 224x224x3 | Clasificación ImageNet | licencia de torchvision | torchvision |
 | VGG-11 (referencia) | ~132,9 M | 224x224x3 | Clasificación ImageNet | licencia de torchvision | torchvision |
@@ -87,5 +87,5 @@ La comparación con LeNet-5, ResNet-18 y VGG-11 es meramente orientativa: son ar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MetallicBond/smai-a4-cifar10-mlp
+- Repositorio en Hugging Face: https://huggingface.co/MetallicBond/smai-a4-cifar10-mlp
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto (audio) | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `whisper-free/whisper-large-v3-turbo-arabic-dialectal-ggml` | ~809 M (base) | 30 s por ventana | No disponible (orientado a árabe dialectal) | Apache-2.0 | GGML F16 | HuggingFace, 0 descargas |
-| `oddadmix/whisper-large-v3-turbo-arabic-dialectal-v2` (fuente) | ~809 M (base) | 30 s por ventana | No disponible | Apache-2.0 | Safetensors (presumible, no confirmado) | HuggingFace |
-| `openai/whisper-large-v3-turbo` | ~809 M | 30 s por ventana | 99 idiomas declarados por OpenAI | MIT / Apache-2.0 según distribución | Safetensors, GGML, otros | HuggingFace, ampliamente desplegado |
-| `openai/whisper-large-v3` | ~1.550 M | 30 s por ventana | 99 idiomas declarados por OpenAI | MIT / Apache-2.0 según distribución | Safetensors, GGML, otros | HuggingFace, ampliamente desplegado |
+| `whisper-free/whisper-large-v3-turbo-arabic-dialectal-ggml` | ~809 M (base) | 30 s por ventana | No disponible (orientado a árabe dialectal) | Apache-2.0 | GGML F16 | Hugging Face, 0 descargas |
+| `oddadmix/whisper-large-v3-turbo-arabic-dialectal-v2` (fuente) | ~809 M (base) | 30 s por ventana | No disponible | Apache-2.0 | Safetensors (presumible, no confirmado) | Hugging Face |
+| `openai/whisper-large-v3-turbo` | ~809 M | 30 s por ventana | 99 idiomas declarados por OpenAI | MIT / Apache-2.0 según distribución | Safetensors, GGML, otros | Hugging Face, ampliamente desplegado |
+| `openai/whisper-large-v3` | ~1.550 M | 30 s por ventana | 99 idiomas declarados por OpenAI | MIT / Apache-2.0 según distribución | Safetensors, GGML, otros | Hugging Face, ampliamente desplegado |
 
 La comparación directa de calidad (WER por dialecto) no está disponible para ninguno de los dos modelos ajustados, por lo que la única ventaja verificable de este repositorio frente al modelo fuente es el formato GGML, que permite inferencia en CPU sin herramientas de conversión adicionales.
 
@@ -88,9 +88,9 @@ La comparación directa de calidad (WER por dialecto) no está disponible para n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/whisper-free/whisper-large-v3-turbo-arabic-dialectal-ggml
+- Repositorio Hugging Face: https://huggingface.co/whisper-free/whisper-large-v3-turbo-arabic-dialectal-ggml
 - Modelo fuente: https://huggingface.co/oddadmix/whisper-large-v3-turbo-arabic-dialectal-v2
 - Repositorio de whisper.cpp (formato GGML): https://github.com/ggml-org/whisper.cpp
 - Repositorio de OpenAI Whisper (tokenizador MIT): https://github.com/openai/whisper
 - Anuncio original de Whisper: https://openai.com/index/whisper/
-- Verificación de descargas: fichero `SHA256SUMS` incluido en el repositorio de HuggingFace
+- Verificación de descargas: fichero `SHA256SUMS` incluido en el repositorio de Hugging Face

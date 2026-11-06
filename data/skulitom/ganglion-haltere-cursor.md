@@ -104,7 +104,7 @@ No se han identificado modelos publicos directamente comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Skulitom/ganglion-haltere-cursor
+- Modelo en Hugging Face: https://huggingface.co/Skulitom/ganglion-haltere-cursor
 - Repositorio Haltere (conectoma del cerebro de la mosca): https://github.com/skulitom/Haltere
 - Repositorio Ganglion (capa refleja): https://github.com/skulitom/Ganglion
 - Documentacion de entrenamiento y banco de pruebas: https://github.com/skulitom/Ganglion/blob/main/docs/bench/TRAINING.md

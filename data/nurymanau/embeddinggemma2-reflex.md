@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EmbeddingGemma2-Reflex es un modelo de decisión de texto de pequeno tamano publicado por el usuario Nurymanau en HuggingFace. No es un modelo generativo: se trata de un encoder de texto EmbeddingGemma 2 afinado por completo (271 millones de parametros) al que se anade una cabeza de eleccion de 238.000 parametros. Su funcion es elegir, entre un conjunto de opciones de texto proporcionadas por el usuario, cual satisface mejor la instruccion o el estado dado. No genera explicaciones ni cadenas de razonamiento.
+EmbeddingGemma2-Reflex es un modelo de decisión de texto de pequeno tamano publicado por el usuario Nurymanau en Hugging Face. No es un modelo generativo: se trata de un encoder de texto EmbeddingGemma 2 afinado por completo (271 millones de parametros) al que se anade una cabeza de eleccion de 238.000 parametros. Su funcion es elegir, entre un conjunto de opciones de texto proporcionadas por el usuario, cual satisface mejor la instruccion o el estado dado. No genera explicaciones ni cadenas de razonamiento.
 
 El modelo parte del checkpoint base google/embeddinggemma-2 y se distribuye bajo licencia Apache-2.0. El repositorio contiene dos semillas de entrenamiento independientes (seed17 y seed41) en formato BF16 y en cuantizacion MLX q8. La version principal del repositorio es la release V6, acompanada de un anadido V7 de "reparacion semantica" evaluado por separado.
 
@@ -85,8 +85,8 @@ La informacion disponible solo permite comparar con la referencia multilingue La
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EmbeddingGemma2-Reflex (seed17) | 271M + 238K | No disponible | Transfer 94,31%; UI 96,09% | Apache-2.0 | HuggingFace (mlx, safetensors) |
-| EmbeddingGemma2-Reflex (seed41) | 271M + 238K | No disponible | Transfer 85,98%; UI 96,09% | Apache-2.0 | HuggingFace (mlx, safetensors) |
+| EmbeddingGemma2-Reflex (seed17) | 271M + 238K | No disponible | Transfer 94,31%; UI 96,09% | Apache-2.0 | Hugging Face (mlx, safetensors) |
+| EmbeddingGemma2-Reflex (seed41) | 271M + 238K | No disponible | Transfer 85,98%; UI 96,09% | Apache-2.0 | Hugging Face (mlx, safetensors) |
 | Encoder original, coseno (baseline) | 271M | No disponible | Transfer 46,66%; UI 99,22% | Apache-2.0 | google/embeddinggemma-2 |
 | Referencia Laya MLX multilingue | No disponible | No disponible | Latencia p50 17,3-17,4 ms (caliente); sin datos de precision | No disponible | No disponible |
 
@@ -109,7 +109,7 @@ Datos de precision de Laya, Jev y Clef: no disponibles.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nurymanau/EmbeddingGemma2-Reflex
+- Modelo en Hugging Face: https://huggingface.co/Nurymanau/EmbeddingGemma2-Reflex
 - Resultados y uso de V7: https://huggingface.co/Nurymanau/EmbeddingGemma2-Reflex/blob/main/v7/README.md
 - Resultados detallados y alcance: https://huggingface.co/Nurymanau/EmbeddingGemma2-Reflex/blob/main/results.json
 - Modelo base: https://huggingface.co/google/embeddinggemma-2

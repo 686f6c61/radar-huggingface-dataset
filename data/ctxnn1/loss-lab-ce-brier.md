@@ -20,7 +20,7 @@ Es relevante ahora porque se alinea con el interés creciente por las reglas de 
 | Idiomas soportados | en (inglés; datasets Shakespeare y TinyStories en inglés) |
 | Licencia | MIT |
 | Formato de pesos | safetensors (tensor-only, cargable con `safetensors.torch.load_file`) + checkpoints nativos `.pt` de PyTorch |
-| Pipeline de HuggingFace | no disponible (no declarado) |
+| Pipeline de Hugging Face | no disponible (no declarado) |
 | Tokenización | Caracteres para Shakespeare; bytes UTF-8 para TinyStories (metadatos del tokenizador junto a los pesos) |
 | Tamaño del repositorio | 3,8 GB (incluye múltiples semillas, pilotos e historiales, además de duplicados PT y safetensors) |
 
@@ -75,10 +75,10 @@ Advertencias del propio autor que deben respetarse al interpretar la tabla: las 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ctxnn1/loss-lab-ce-brier` | no disponible (pequeño, nanoGPT) | no disponible | Investigación comparada CE vs Brier con artefactos reproducibles | MIT | HuggingFace, safetensors + PT |
+| `ctxnn1/loss-lab-ce-brier` | no disponible (pequeño, nanoGPT) | no disponible | Investigación comparada CE vs Brier con artefactos reproducibles | MIT | Hugging Face, safetensors + PT |
 | nanoGPT (Karpathy) | configurable por el usuario (no fijado) | configurable (block size definido por el usuario) | Implementación de referencia para entrenar GPT-2 a escala reducida | MIT | Repositorio GitHub |
-| GPT-2 small (OpenAI) | 124M | 1024 tokens | Modelo preentrenado de propósito general | MIT | HuggingFace, safetensors |
-| Modelos TinyStories de la comunidad | rango de millones a decenas de millones (varía) | típicamente cientos de tokens (varía) | Modelos pequeños entrenados sobre TinyStories | varía por autor | HuggingFace |
+| GPT-2 small (OpenAI) | 124M | 1024 tokens | Modelo preentrenado de propósito general | MIT | Hugging Face, safetensors |
+| Modelos TinyStories de la comunidad | rango de millones a decenas de millones (varía) | típicamente cientos de tokens (varía) | Modelos pequeños entrenados sobre TinyStories | varía por autor | Hugging Face |
 
 La comparación relevante no es de capacidades: ningún modelo de la tabla es un asistente utilizable. La diferencia de este repositorio es que publica pares de checkpoints controlados experimentalmente y el protocolo congelado que los respalda; nanoGPT aporta el código, GPT-2 small aporta un preentrenamiento real y los modelos TinyStories de la comunidad aportan el mismo tipo de corpus sin el diseño emparejado.
 
@@ -97,8 +97,8 @@ La comparación relevante no es de capacidades: ningún modelo de la tabla es un
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ctxnn1/loss-lab-ce-brier
-- Perfil del autor en HuggingFace: https://huggingface.co/ctxnn1
+- Hugging Face del modelo: https://huggingface.co/ctxnn1/loss-lab-ce-brier
+- Perfil del autor en Hugging Face: https://huggingface.co/ctxnn1
 - Perfil del autor en X: https://x.com/ctxnn1
 - Blog del autor: https://ctxnn.github.io
 - The Predictive AI Evaluation Competition at NeurIPS 2026 (contexto sobre Brier ALC): https://aimslab.stanford.edu/competition/

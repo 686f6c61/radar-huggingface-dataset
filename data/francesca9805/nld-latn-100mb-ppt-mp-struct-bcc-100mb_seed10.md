@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed10` es un ajuste fino (SFT) del modelo base `goldfish-models/nld_latn_100mb`, un transformer de tipo GPT-2 con aproximadamente 124,7 millones de parametros orientado a la generacion de texto en neerlandes (codigo ISO `nld`, script `latn`). Lo desarrolla el usuario de HuggingFace `francesca9805`, vinculado a la Universidad de Groninga segun la traza de Weights & Biases incluida en la model card, y forma parte de una familia de experimentos de tokenizacion y ajuste supervisado sobre modelos pequenos de la serie Goldfish.
+`nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed10` es un ajuste fino (SFT) del modelo base `goldfish-models/nld_latn_100mb`, un transformer de tipo GPT-2 con aproximadamente 124,7 millones de parametros orientado a la generacion de texto en neerlandes (codigo ISO `nld`, script `latn`). Lo desarrolla el usuario de Hugging Face `francesca9805`, vinculado a la Universidad de Groninga segun la traza de Weights & Biases incluida en la model card, y forma parte de una familia de experimentos de tokenizacion y ajuste supervisado sobre modelos pequenos de la serie Goldfish.
 
 El interes del modelo no reside en su rendimiento bruto, sino en su caracter experimental: el nombre codifica variables del pipeline (porcentaje del corpus, estrategia de tokenizacion, estructura del dataset y semilla), lo que lo convierte en una pieza util para estudiar como afectan esas decisiones al comportamiento de un modelo de 100 MB entrenado sobre un subconjunto del corpus BCC (Brigham Young University Corpus of Contemporary American English, en su variante multilingue). Es, por tanto, un modelo de investigacion mas que un modelo de produccion.
 
@@ -36,7 +36,7 @@ El entrenamiento se realizo con TRL 0.23.0 sobre Transformers 4.56.2, PyTorch 2.
 
 - Generacion de texto autoregresiva en neerlandes, condicionada por un prompt de usuario en formato de chat (`[{"role": "user", "content": ...}]`).
 - Ajuste supervisado sobre instrucciones, segun el tag `sft` y el ejemplo de `pipeline` de la model card.
-- Compatible con `text-generation-inference` y con la API de endpoints de HuggingFace (tags `text-generation-inference` y `endpoints_compatible`).
+- Compatible con `text-generation-inference` y con la API de endpoints de Hugging Face (tags `text-generation-inference` y `endpoints_compatible`).
 - Integracion directa con `transformers.pipeline("text-generation", ...)`.
 - No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito.
 - Capacidad multilingue limitada al neerlandes por diseno del modelo base; no se declaran otros idiomas.
@@ -59,16 +59,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - **VRAM estimada para inferencia**: en fp32, los 124,7 M de parametros ocupan aproximadamente 500 MB; en fp16, unos 250 MB; en int8, unos 125 MB. El repositorio ocupa 0,5 GB, consistente con pesos en fp32.
 - **GPU recomendadas**: cualquier GPU consumer con al menos 2 GB de VRAM es suficiente (GTX 1050 Ti, RTX 2060, RTX 3060, RTX 4090). Tambien puede ejecutarse en CPU con latencia aceptable para generacion de pocos tokens.
 - **Cabe en consumer GPU**: si, en practicamente cualquier GPU moderna, e incluso en Raspberry Pi o dispositivos edge con cuantizacion.
-- **Opciones de despliegue**: `transformers` (pipeline nativo), `text-generation-inference` (soportado por tags), endpoints de HuggingFace. No se publican pesos GGUF, por lo que `llama.cpp` u `Ollama` requeririan conversion manual.
+- **Opciones de despliegue**: `transformers` (pipeline nativo), `text-generation-inference` (soportado por tags), endpoints de Hugging Face. No se publican pesos GGUF, por lo que `llama.cpp` u `Ollama` requeririan conversion manual.
 - **Latencia y throughput estimados**: no disponibles en la informacion proporcionada. Por el tamano, se espera un throughput alto (cientos de tokens por segundo en GPU moderna) y latencia de decenas de milisegundos por token, pero son estimaciones no verificadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed10` | 124,7 M | no disponible | neerlandes | no disponible | HuggingFace (25 descargas) |
-| `goldfish-models/nld_latn_100mb` (modelo base) | ~100 M (segun nombre) | no disponible | neerlandes | no disponible | HuggingFace |
-| Otros checkpoints de la serie Goldfish (p. ej. `goldfish-models/eng_latn_100mb`) | ~100 M | no disponible | un idioma por checkpoint | no disponible | HuggingFace |
+| `francesca9805/nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed10` | 124,7 M | no disponible | neerlandes | no disponible | Hugging Face (25 descargas) |
+| `goldfish-models/nld_latn_100mb` (modelo base) | ~100 M (segun nombre) | no disponible | neerlandes | no disponible | Hugging Face |
+| Otros checkpoints de la serie Goldfish (p. ej. `goldfish-models/eng_latn_100mb`) | ~100 M | no disponible | un idioma por checkpoint | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. La comparacion se limita a parametros, idioma y disponibilidad.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Run de Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/dgqye9ie
 - Repositorio TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo LOKI, publicado por el usuario shaoncsecu en HuggingFace, es un repositorio de aproximadamente 7,8 GB que no incluye ninguna documentación técnica en su model card más allá de la licencia GPL-3.0. No se especifican arquitectura, parámetros, contexto, idiomas ni capacidades. Tampoco se ha publicado información sobre su entrenamiento o rendimiento. A fecha de su última actualización (septiembre de 2026), el modelo no registra descargas ni valoraciones, lo que sugiere que se trata de una publicación reciente o poco difundida.
+El modelo LOKI, publicado por el usuario shaoncsecu en Hugging Face, es un repositorio de aproximadamente 7,8 GB que no incluye ninguna documentación técnica en su model card más allá de la licencia GPL-3.0. No se especifican arquitectura, parámetros, contexto, idiomas ni capacidades. Tampoco se ha publicado información sobre su entrenamiento o rendimiento. A fecha de su última actualización (septiembre de 2026), el modelo no registra descargas ni valoraciones, lo que sugiere que se trata de una publicación reciente o poco difundida.
 
 La búsqueda web realizada no ha devuelto ningún resultado relevante sobre este modelo; los resultados obtenidos se limitan a páginas de memes de internet, sin relación alguna con inteligencia artificial. Por tanto, no es posible verificar la existencia de este modelo en otras fuentes ni contrastar sus características. Cualquier uso en producción debería basarse en una evaluación directa del repositorio y en la ausencia de documentación oficial.
 
@@ -53,6 +53,6 @@ No disponible. No se conocen modelos comparables porque no se dispone de ninguna
 
 ## Enlaces
 
-- [HuggingFace - shaoncsecu/LOKI](https://huggingface.co/shaoncsecu/LOKI)
+- [Hugging Face - shaoncsecu/LOKI](https://huggingface.co/shaoncsecu/LOKI)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada.

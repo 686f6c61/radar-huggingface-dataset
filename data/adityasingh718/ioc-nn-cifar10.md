@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ioc-nn-cifar10` es un modelo de clasificacion de imagenes desarrollado por el usuario adityasingh718 y publicado en HuggingFace. Se trata de una red neuronal convexa de entrada-salida (Input-Output Convex Neural Network, IOC-NN) entrenada sobre el conjunto de datos CIFAR-10 con etiquetas limpias. El modelo se distribuye como pesos en formato NumPy NPZ, no como pesos de un transformer, y su implementacion completa reside en un notebook adjunto al repositorio.
+`ioc-nn-cifar10` es un modelo de clasificacion de imagenes desarrollado por el usuario adityasingh718 y publicado en Hugging Face. Se trata de una red neuronal convexa de entrada-salida (Input-Output Convex Neural Network, IOC-NN) entrenada sobre el conjunto de datos CIFAR-10 con etiquetas limpias. El modelo se distribuye como pesos en formato NumPy NPZ, no como pesos de un transformer, y su implementacion completa reside en un notebook adjunto al repositorio.
 
 El modelo resuelve la tarea de clasificacion de imagenes en 10 clases (las categorias estandar de CIFAR-10: avion, automovil, pajaro, gato, ciervo, perro, rana, caballo, barco y camion). Su interes radica en la arquitectura IOC-NN, un tipo de red con restricciones de convexidad en la salida respecto a la entrada, lo que aporta propiedades teoricas de unicidad y estabilidad en la optimizacion. No es un modelo de lenguaje ni un modelo generativo: es un clasificador de vision de proposito especifico.
 
@@ -70,9 +70,9 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 - Riesgo de sobreajuste al dominio CIFAR-10: al entrenarse solo con ese dataset, el rendimiento fuera de distribucion es incierto.
 - Sesgos: no documentados; CIFAR-10 tiene sesgos conocidos de composicion y etiquetado que el modelo hereda.
 - Licencia MIT: permite uso comercial y modificacion, pero el autor no ofrece garantias ni soporte.
-- Formato no estandar: los pesos en NPZ requieren cargar la implementacion del notebook; no hay integracion con ecosistemas como HuggingFace Transformers.
+- Formato no estandar: los pesos en NPZ requieren cargar la implementacion del notebook; no hay integracion con ecosistemas como Hugging Face Transformers.
 - Cero descargas y cero likes en el momento de la consulta: no hay evidencia de uso ni validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/adityasingh718/ioc-nn-cifar10
+- Repositorio Hugging Face: https://huggingface.co/adityasingh718/ioc-nn-cifar10

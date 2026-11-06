@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `fernhoof/qwen3.8-flash-next_125B_A6B_4Bit` es una conversion publicada en HuggingFace por el usuario fernhoof, cuyo unico contenido documentado en la model card es la conversion del modelo para su uso con la herramienta NVMAI (un proyecto alojado en GitHub bajo el usuario Pummelchen). No se trata de una publicacion oficial de Qwen, sino de una redistribucion/adaptacion de terceros.
+El repositorio `fernhoof/qwen3.8-flash-next_125B_A6B_4Bit` es una conversion publicada en Hugging Face por el usuario fernhoof, cuyo unico contenido documentado en la model card es la conversion del modelo para su uso con la herramienta NVMAI (un proyecto alojado en GitHub bajo el usuario Pummelchen). No se trata de una publicacion oficial de Qwen, sino de una redistribucion/adaptacion de terceros.
 
 La nomenclatura del identificador sugiere un modelo de arquitectura Mixture of Experts (MoE) con aproximadamente 125 000 millones de parametros totales y unos 6000 millones de parametros activos por token, ademas de una cuantizacion a 4 bits. Estas cifras son una inferencia a partir del propio nombre del repositorio y no estan confirmadas en la informacion disponible: la model card no incluye especificaciones tecnicas, datos de entrenamiento ni resultados de evaluacion.
 
@@ -86,7 +86,7 @@ No se dispone de informacion verificable sobre este modelo ni sobre alternativas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fernhoof/qwen3.8-flash-next_125B_A6B_4Bit
+- Repositorio en Hugging Face: https://huggingface.co/fernhoof/qwen3.8-flash-next_125B_A6B_4Bit
 - Runtime NVMAI: https://github.com/Pummelchen/NVMAI/tree/main
 - Texto de la licencia referenciada: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/raw/main/LICENSE
 - Paper, blog o demo oficiales: no disponibles en la informacion proporcionada.

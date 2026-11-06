@@ -93,7 +93,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zurichquants/GLM-5.3-Flash-BF16
+- Repositorio Hugging Face: https://huggingface.co/zurichquants/GLM-5.3-Flash-BF16
 - Repositorio oficial del modelo (zai-org): https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Blog de Z.ai sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Informe técnico GLM-5 (arXiv): https://arxiv.org/abs/2602.15763

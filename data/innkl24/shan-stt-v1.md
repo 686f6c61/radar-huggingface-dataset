@@ -64,7 +64,7 @@ La diferencia clave es que `shan-stt-v1` está especializado en el idioma shan, 
 - No se ha especificado si el modelo funciona correctamente con audio de baja calidad o con acentos regionales del shan.
 
 ## Enlaces
-- [HuggingFace - innkl24/shan-stt-v1](https://huggingface.co/innkl24/shan-stt-v1)
-- [Perfil de HuggingFace del autor](https://huggingface.co/innkl24)
+- [Hugging Face - innkl24/shan-stt-v1](https://huggingface.co/innkl24/shan-stt-v1)
+- [Perfil de Hugging Face del autor](https://huggingface.co/innkl24)
 - [Repositorio de modelos ONNX (referencia general)](https://github.com/onnx/models)
 - [Repositorio de Whisper de OpenAI](https://github.com/openai/whisper)

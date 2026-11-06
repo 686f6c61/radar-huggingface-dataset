@@ -100,7 +100,7 @@ No se identifican en la informacion proporcionada otros modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/antareslabs/hunch-0.6b-preview-MLX
+- Modelo en Hugging Face: https://huggingface.co/antareslabs/hunch-0.6b-preview-MLX
 - Modelo base: https://huggingface.co/antareslabs/hunch-0.6b-preview
 - Model card del modelo base: https://huggingface.co/antareslabs/hunch-0.6b-preview
 - Repositorio de Hunch (README): https://github.com/antareslabsorg/hunch/blob/main/README.md

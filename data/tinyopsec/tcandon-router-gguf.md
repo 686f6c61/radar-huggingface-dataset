@@ -89,7 +89,7 @@ Nota: no se conocen otros modelos públicos específicamente afinados para multi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tinyopsec/TCAndon-Router-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/TCAndon-Router-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo original (referenciado en la model card): https://huggingface.co/tencent/TCAndon-Router
 - llama.cpp: https://github.com/ggml-org/llama.cpp

@@ -71,9 +71,9 @@ Dentro de la propia familia LowFormer, la variante `e1` se situa entre `b1` y `b
 
 | Modelo | Params (M) | Top-1 (224) | Licencia | Disponibilidad |
 |---|---:|---:|---|---|
-| lowformer_e1.in1k | 18,9 | 78,77 | Apache 2.0 | timm / HuggingFace |
-| lowformer_b1.in1k | 17,9 | 79,81 | Apache 2.0 | timm / HuggingFace |
-| lowformer_e2.in1k | 22,8 | 81,61 | Apache 2.0 | timm / HuggingFace |
+| lowformer_e1.in1k | 18,9 | 78,77 | Apache 2.0 | timm / Hugging Face |
+| lowformer_b1.in1k | 17,9 | 79,81 | Apache 2.0 | timm / Hugging Face |
+| lowformer_e2.in1k | 22,8 | 81,61 | Apache 2.0 | timm / Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ Dentro de la propia familia LowFormer, la variante `e1` se situa entre `b1` y `b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/lowformer_e1.in1k
+- Modelo en Hugging Face: https://huggingface.co/timm/lowformer_e1.in1k
 - Repositorio oficial de LowFormer: https://github.com/altair199797/LowFormer
 - Paper "LowFormer: Hardware Efficient Design for Convolutional Transformer Backbones": https://arxiv.org/abs/2409.03460
 - Paper "Beyond MACs: Hardware Efficient Architecture Design for Vision Backbones": https://arxiv.org/abs/2603.26551

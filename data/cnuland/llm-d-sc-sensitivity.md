@@ -86,6 +86,6 @@ La unica comparacion disponible en la informacion es contra su modelo base `all-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cnuland/llm-d-sc-sensitivity
+- Modelo en Hugging Face: https://huggingface.co/cnuland/llm-d-sc-sensitivity
 - Repositorio del clasificador semantico: https://github.com/llm-d-incubation/llm-d-semantic-classifier
 - Pipeline de entrenamiento: https://github.com/cnuland/hello-chris-sr-finetuned

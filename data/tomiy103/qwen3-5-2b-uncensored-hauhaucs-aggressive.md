@@ -19,7 +19,7 @@ Es relevante ahora porque se apoya en una arquitectura muy reciente (el autor si
 | Tipos de cuantizacion | BF16 (3,6 GB), Q8_0 (1,9 GB), Q6_K (1,5 GB), Q4_K_M (1,2 GB); el codificador de vision se distribuye en f16 (mmproj, 638 MB) |
 | Idiomas soportados | en, zh, multilingual; el autor declara vocabulario de 248K tokens y 201 idiomas |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (los archivos publicados en el repo); el recuento de parametros indicado en HuggingFace procede de safetensors |
+| Formato de pesos | GGUF (los archivos publicados en el repo); el recuento de parametros indicado en Hugging Face procede de safetensors |
 
 Otros datos de interes: tamano del repositorio 9,3 GB; soporte de multi-token prediction (MTP); funcionalidades declaradas como "endpoints_compatible" y uso conversacional.
 
@@ -73,10 +73,10 @@ Comparativa limitada a los modelos enlazados en la propia model card y al modelo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-2B-Uncensored-HauhauCS-Aggressive (este modelo) | 1,88 B (denso) | 262K nativo, 1M con YaRN | Sin benchmarks publicados; autor declara 0/465 rechazos | Apache-2.0 | GGUF en HuggingFace |
-| Qwen3.5-2B (base) | 2B (denso) | 262K nativo (segun la model card de la variante) | No disponible | No disponible | HuggingFace |
-| Qwen3.5-9B-Uncensored-HauhauCS-Aggressive | 9B (segun el nombre) | No disponible | No disponible | No disponible | HuggingFace |
-| Qwen3.5-27B-Uncensored-HauhauCS-Aggressive | 27B (segun el nombre) | No disponible | No disponible | No disponible | HuggingFace |
+| Qwen3.5-2B-Uncensored-HauhauCS-Aggressive (este modelo) | 1,88 B (denso) | 262K nativo, 1M con YaRN | Sin benchmarks publicados; autor declara 0/465 rechazos | Apache-2.0 | GGUF en Hugging Face |
+| Qwen3.5-2B (base) | 2B (denso) | 262K nativo (segun la model card de la variante) | No disponible | No disponible | Hugging Face |
+| Qwen3.5-9B-Uncensored-HauhauCS-Aggressive | 9B (segun el nombre) | No disponible | No disponible | No disponible | Hugging Face |
+| Qwen3.5-27B-Uncensored-HauhauCS-Aggressive | 27B (segun el nombre) | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ Comparativa limitada a los modelos enlazados en la propia model card y al modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tomiy103/Qwen3.5-2B-Uncensored-HauhauCS-Aggressive
+- Modelo en Hugging Face: https://huggingface.co/tomiy103/Qwen3.5-2B-Uncensored-HauhauCS-Aggressive
 - Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Variante 9B de la misma familia: https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive
 - Variante 27B de la misma familia: https://huggingface.co/HauhauCS/Qwen3.5-27B-Uncensored-HauhauCS-Aggressive

@@ -88,7 +88,7 @@ MultiClinicalBERT ofrece una ventaja clara en entornos multilingues clinicos fre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YLab-Open/MultiClinicalBERT
+- Hugging Face: https://huggingface.co/YLab-Open/MultiClinicalBERT
 - GitHub de YLab-Open: https://github.com/YLab-Open/
 - Space de leaderboard BRIDGE Medical: https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard
 - Repositorio BRIDGE (GitHub): https://github.com/YLab-Open/BRIDGE

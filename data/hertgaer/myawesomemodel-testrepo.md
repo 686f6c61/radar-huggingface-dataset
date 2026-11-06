@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario hertgaer bajo licencia MIT. Según la model card, se presenta como un modelo de razonamiento e inferencia con mejoras en matemáticas, programación y lógica, y una supuesta versión mejorada que habría pasado de un 70% a un 87,5% de precisión en el test AIME 2025. Sin embargo, el repositorio tiene un tamaño de 0,0 GB, cero descargas y cero likes, y la model card contiene texto genérico y plantillas de ejemplo que no proporcionan datos técnicos concretos.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario hertgaer bajo licencia MIT. Según la model card, se presenta como un modelo de razonamiento e inferencia con mejoras en matemáticas, programación y lógica, y una supuesta versión mejorada que habría pasado de un 70% a un 87,5% de precisión en el test AIME 2025. Sin embargo, el repositorio tiene un tamaño de 0,0 GB, cero descargas y cero likes, y la model card contiene texto genérico y plantillas de ejemplo que no proporcionan datos técnicos concretos.
 
 El nombre del repositorio incluye el sufijo "TestRepo", lo que indica que se trata de un espacio de pruebas y no de un modelo real listo para producción. No se especifican arquitectura, número de parámetros, ni longitud de contexto en la información disponible. Las búsquedas web devuelven otros repositorios con el mismo nombre (tooldev, dongbobo) que parecen ser duplicados o pruebas similares, sin información adicional fiable. En consecuencia, esta ficha debe interpretarse con cautela: los datos presentados en la model card no pueden verificarse con el contenido real del repositorio.
 
@@ -93,7 +93,7 @@ No disponible. Al no conocer la arquitectura ni el tamaño real del modelo, no e
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/hertgaer/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/hertgaer/MyAwesomeModel-TestRepo
 - Repositorio duplicado (tooldev): https://huggingface.co/tooldev/MyAwesomeModel-TestRepo
 - Repositorio duplicado (dongbobo): https://openmodelmap.com/model/dongbobo/MyAwesomeModel-TestRepo
 - Herramienta de análisis de terceros: https://free2aitools.com/model/mcptester/myawesomemodel-testrepo

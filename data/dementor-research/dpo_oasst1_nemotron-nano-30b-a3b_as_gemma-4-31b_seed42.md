@@ -76,9 +76,9 @@ No se dispone de especificaciones técnicas detalladas de estos adaptadores comp
 
 ## Enlaces
 
-- [HuggingFace - dementor-research/dpo_oasst1_nemotron-nano-30b-a3b_as_gemma-4-31b_seed42](https://huggingface.co/dementor-research/dpo_oasst1_nemotron-nano-30b-a3b_as_gemma-4-31b_seed42)
-- [HuggingFace - adaptador similar con Gemma-4-e4b](https://huggingface.co/dementor-research/dpo_oasst1_gemma-4-e4b_as_nemotron-nano-30b-a3b_seed42)
-- [HuggingFace - adaptador similar con Phi-4](https://huggingface.co/dementor-research/dpo_oasst1_phi-4_as_nemotron-nano-30b-a3b_seed42)
+- [Hugging Face - dementor-research/dpo_oasst1_nemotron-nano-30b-a3b_as_gemma-4-31b_seed42](https://huggingface.co/dementor-research/dpo_oasst1_nemotron-nano-30b-a3b_as_gemma-4-31b_seed42)
+- [Hugging Face - adaptador similar con Gemma-4-e4b](https://huggingface.co/dementor-research/dpo_oasst1_gemma-4-e4b_as_nemotron-nano-30b-a3b_seed42)
+- [Hugging Face - adaptador similar con Phi-4](https://huggingface.co/dementor-research/dpo_oasst1_phi-4_as_nemotron-nano-30b-a3b_seed42)
 - [FriendliAI - adaptador similar con Qwen3.6-35B-A3B](https://friendli.ai/models/dementor-research/dpo_oasst1_nemotron-nano-30b-a3b_as_qwen3.6-35b-a3b_seed42)
 - [NVIDIA Nemotron - página oficial](https://developer.nvidia.com/topics/ai/nemotron)
 - [Herramienta Tinker - Thinking Machines](https://thinkingmachines.ai/tinker/)

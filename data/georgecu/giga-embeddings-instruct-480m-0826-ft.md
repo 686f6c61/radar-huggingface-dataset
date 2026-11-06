@@ -4,7 +4,7 @@
 
 GeorgeCU/Giga-Embeddings-instruct-480M-0826-ft es un modelo de embeddings de texto (feature extraction) obtenido mediante fine-tuning del modelo base ai-sage/Giga-Embeddings-instruct-480M-0826, desarrollado por el usuario GeorgeCU (Georgiy Tebelev). El modelo base pertenece a la familia Giga-Embeddings, diseñada para recuperación de información y búsqueda semántica con enfoque en el idioma ruso, aunque también cubre inglés. Este fine-tuning específico no aporta documentación adicional sobre los datos o el procedimiento de ajuste, por lo que se desconoce el conjunto de entrenamiento utilizado.
 
-El modelo tiene 483,7 millones de parámetros y se basa en una arquitectura Qwen3 bidireccional (decoder-only transformado en encoder bidireccional), lo que le permite generar representaciones densas de frases y documentos. Se distribuye en formato safetensors y se integra con la librería sentence-transformers, lo que facilita su uso en pipelines de embeddings. Aunque la fecha de creación es de septiembre de 2026, el modelo está disponible públicamente en HuggingFace, aunque sin descargas ni likes registrados.
+El modelo tiene 483,7 millones de parámetros y se basa en una arquitectura Qwen3 bidireccional (decoder-only transformado en encoder bidireccional), lo que le permite generar representaciones densas de frases y documentos. Se distribuye en formato safetensors y se integra con la librería sentence-transformers, lo que facilita su uso en pipelines de embeddings. Aunque la fecha de creación es de septiembre de 2026, el modelo está disponible públicamente en Hugging Face, aunque sin descargas ni likes registrados.
 
 Relevancia: es una opción para quienes necesitan un modelo de embeddings en ruso con soporte de instrucciones (instruct), con un tamaño moderado que permite su ejecución en hardware de consumo. La licencia "other" no está especificada, lo que supone una incertidumbre legal para uso comercial.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada: aproximadamente 1 GB en FP16 (483M parametros × 2 bytes), menos de 0,5 GB en INT8 si se cuantiza (aunque no se ofrecen cuantizaciones oficiales).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, por ejemplo NVIDIA GTX 1650, RTX 3060, o incluso CPU con suficiente RAM (inferencia lenta pero viable).
 - Si cabe en GPU de consumo: si, en la mayoria de GPUs modernas (a partir de 4 GB de VRAM).
-- Opciones de despliegue: sentence-transformers (inferencia local), HuggingFace Inference Endpoints (endpoints_compatible), conversion a ONNX o GGUF (existe un repositorio GGUF Q8_0 para el modelo base, no para este fine-tuning).
+- Opciones de despliegue: sentence-transformers (inferencia local), Hugging Face Inference Endpoints (endpoints_compatible), conversion a ONNX o GGUF (existe un repositorio GGUF Q8_0 para el modelo base, no para este fine-tuning).
 - Latencia y throughput: no disponible; depende del hardware y del tamaño del lote. En una GPU moderna (RTX 4090) se esperan cientos de embeddings por segundo para frases cortas.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ La comparacion es orientativa; el modelo de GeorgeCU es un fine-tuning del base,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GeorgeCU/Giga-Embeddings-instruct-480M-0826-ft
+- Modelo en Hugging Face: https://huggingface.co/GeorgeCU/Giga-Embeddings-instruct-480M-0826-ft
 - Modelo base: https://huggingface.co/ai-sage/Giga-Embeddings-instruct-480M-0826
 - Paper GigaEmbeddings (modelo base): https://arxiv.org/html/2510.22369v1
 - Repositorio GGUF del modelo base (no de este fine-tuning): https://github.com/rad0main/Giga-Embeddings-480M-0826-GGUF

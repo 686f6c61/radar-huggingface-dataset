@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Snapkitty/riemann-gas es un repositorio publicado en HuggingFace por el colectivo Snapkitty, distribuido bajo licencia AGPL-3.0 y presentado como parte del "October 2026 main drop". La model card se limita a un bloque de metadatos (frontmatter YAML) y a una nota que indica que el contenido esta espejado desde el repositorio GitHub SNAPKITTYWEST/riemann-gas en el commit be609fa. No incluye descripcion funcional, arquitectura, numero de parametros, ventana de contexto ni ejemplos de uso.
+Snapkitty/riemann-gas es un repositorio publicado en Hugging Face por el colectivo Snapkitty, distribuido bajo licencia AGPL-3.0 y presentado como parte del "October 2026 main drop". La model card se limita a un bloque de metadatos (frontmatter YAML) y a una nota que indica que el contenido esta espejado desde el repositorio GitHub SNAPKITTYWEST/riemann-gas en el commit be609fa. No incluye descripcion funcional, arquitectura, numero de parametros, ventana de contexto ni ejemplos de uso.
 
 Las etiquetas asociadas (lean4, python, ocaml, riemann-zeta, primon-gas, number-theory, formal-verification, research) apuntan a un artefacto de investigacion en teoria de numeros y verificacion formal en torno a la funcion zeta de Riemann y el modelo del "gas de primones", mas que a un modelo de lenguaje de proposito general. No hay informacion que confirme si el repositorio contiene pesos de red neuronal, codigo de investigacion o una combinacion de ambos.
 
@@ -49,7 +49,7 @@ No se pueden determinar casos de uso reales a partir de la informacion disponibl
 - Reproduccion de resultados sobre el gas de primones: el tag primon-gas sugiere un posible uso en la replicacion de modelos fisico-matematicos relacionados con la estadistica de primos.
 - Desarrollo en Python y OCaml: si el repositorio contiene bibliotecas en estos lenguajes, podria reutilizarse como dependencia en proyectos de investigacion.
 - Docencia y divulgacion matematica: si incluye cuadernos o ejemplos, podria usarse como material didactico sobre teoria analitica de numeros.
-- Auditoria de artefactos de investigacion: dado que no hay documentacion, el propio repositorio podria ser objeto de estudio sobre practicas de publicacion en HuggingFace.
+- Auditoria de artefactos de investigacion: dado que no hay documentacion, el propio repositorio podria ser objeto de estudio sobre practicas de publicacion en Hugging Face.
 
 Cualquiera de estos escenarios es especulativo. No se recomienda su uso en produccion sin una revision previa del contenido real del repositorio.
 
@@ -83,8 +83,8 @@ No disponible. No se ha identificado una categoria tecnica clara (modelo de leng
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Snapkitty/riemann-gas
+- Modelo en Hugging Face: https://huggingface.co/Snapkitty/riemann-gas
 - Repositorio GitHub de origen: https://github.com/SNAPKITTYWEST/riemann-gas (commit be609fa)
-- Perfil del autor en HuggingFace: https://huggingface.co/Snapkitty
+- Perfil del autor en Hugging Face: https://huggingface.co/Snapkitty
 - Listado de modelos con la etiqueta snapkitty: https://huggingface.co/models?other=snapkitty
 - Repositorio GitHub del colectivo: https://github.com/SNAPKITTYWEST/SNAPKITTYWEST

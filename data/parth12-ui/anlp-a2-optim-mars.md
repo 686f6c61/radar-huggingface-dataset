@@ -83,10 +83,10 @@ El modelo pertenece a la categoria de transformers densos de escala muy reducida
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| parth12-ui/anlp-a2-optim-mars | 33,4M | 256 | no disponible | HuggingFace, safetensors |
+| parth12-ui/anlp-a2-optim-mars | 33,4M | 256 | no disponible | Hugging Face, safetensors |
 | GPT-2 small | 124M | 1024 | MIT (pesos de OpenAI) | ampliamente distribuido |
-| Pythia-70M | 70M | 2048 | Apache 2.0 | HuggingFace, EleutherAI |
-| TinyStories (variantes ~1-30M) | ~1-30M | 512 (tipico) | variable segun variante | HuggingFace |
+| Pythia-70M | 70M | 2048 | Apache 2.0 | Hugging Face, EleutherAI |
+| TinyStories (variantes ~1-30M) | ~1-30M | 512 (tipico) | variable segun variante | Hugging Face |
 
 La comparacion en terminos de rendimiento no es posible: no hay benchmarks comunes publicados para `anlp-a2-optim-mars` y su metrica principal (perplejidad 54,03 sobre un corpus especifico) no es directamente comparable con las de los modelos de la tabla, que se evaluan sobre otros corpus y con otras metricas. Las diferencias relevantes son de licencia y de ecosistema: GPT-2 small y Pythia-70M cuentan con licencias permisivas explicitas y soporte en frameworks de inferencia estandar, mientras que este modelo no declara licencia y depende de codigo propio para cargarse.
 
@@ -104,7 +104,7 @@ La comparacion en terminos de rendimiento no es posible: no hay benchmarks comun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/parth12-ui/anlp-a2-optim-mars
+- Modelo en Hugging Face: https://huggingface.co/parth12-ui/anlp-a2-optim-mars
 - Dataset de entrenamiento: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - Archivo de log de entrenamiento: `train_log.jsonl` (incluido en el repositorio del modelo)
 - Codigo de carga y definicion del modelo: paquete `model_src` referenciado en la model card, sin enlace publico indicado

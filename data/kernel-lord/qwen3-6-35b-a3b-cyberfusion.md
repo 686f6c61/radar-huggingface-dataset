@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kernel-Lord/Qwen3.6-35B-A3B-CyberFusion es un modelo publicado en HuggingFace por el usuario Kernel-Lord. Por su denominacion, el identificador sugiere una variante derivada de la familia Qwen3 con 35.000 millones de parametros totales y 3.000 millones de parametros activos (patron propio de una arquitectura Mixture of Experts), ademas de un sufijo "CyberFusion" que apunta a un ajuste fino orientado a ciberseguridad. Sin embargo, la model card publicada no contiene mas informacion que los metadatos de licencia, por lo que la mayor parte de las especificaciones tecnicas no puede confirmarse.
+Kernel-Lord/Qwen3.6-35B-A3B-CyberFusion es un modelo publicado en Hugging Face por el usuario Kernel-Lord. Por su denominacion, el identificador sugiere una variante derivada de la familia Qwen3 con 35.000 millones de parametros totales y 3.000 millones de parametros activos (patron propio de una arquitectura Mixture of Experts), ademas de un sufijo "CyberFusion" que apunta a un ajuste fino orientado a ciberseguridad. Sin embargo, la model card publicada no contiene mas informacion que los metadatos de licencia, por lo que la mayor parte de las especificaciones tecnicas no puede confirmarse.
 
 El repositorio no incluye pipeline declarado, no lista idiomas soportados y no aporta datos sobre arquitectura, contexto, datos de entrenamiento ni benchmarks. La licencia figura como "other" con nombre "multi-license" y enlace a un fichero LICENSE, lo que implica que las condiciones de uso deben revisarse directamente en dicho fichero antes de cualquier uso comercial.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kernel-Lord/Qwen3.6-35B-A3B-CyberFusion | 35B (3B activos, segun identificador) | no disponible | other (multi-license) | HuggingFace, sin validacion |
-| Qwen3 (familia base) | variable (incluye variantes MoE de 30B-A3B) | hasta 128K en algunas variantes | Apache 2.0 en la mayoria de variantes | HuggingFace, ampliamente validado |
+| Kernel-Lord/Qwen3.6-35B-A3B-CyberFusion | 35B (3B activos, segun identificador) | no disponible | other (multi-license) | Hugging Face, sin validacion |
+| Qwen3 (familia base) | variable (incluye variantes MoE de 30B-A3B) | hasta 128K en algunas variantes | Apache 2.0 en la mayoria de variantes | Hugging Face, ampliamente validado |
 | Modelos de ciberseguridad especializados | variable | variable | variable | Depende del autor |
 
 La comparacion con la familia Qwen3 base es la mas directa por herencia del identificador, pero no puede establecerse una comparacion de rendimiento sin benchmarks publicados. Cualquier alternativa especializada en ciberseguridad requeriria identificar un modelo concreto con documentacion verificable.
@@ -82,5 +82,5 @@ La comparacion con la familia Qwen3 base es la mas directa por herencia del iden
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kernel-Lord/Qwen3.6-35B-A3B-CyberFusion
+- Hugging Face: https://huggingface.co/Kernel-Lord/Qwen3.6-35B-A3B-CyberFusion
 - Fichero de licencia: referenciado como LICENSE en el repositorio (no se ha podido verificar su contenido en la informacion disponible)

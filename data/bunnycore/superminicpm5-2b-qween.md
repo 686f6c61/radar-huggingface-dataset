@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SuperMiniCPM5-2B-Qween es un modelo de lenguaje publicado en HuggingFace por el usuario bunnycore, distribuido exclusivamente en formato GGUF para su uso con llama.cpp. Segun los metadatos de la plataforma, cuenta con 2.516.756.480 parametros (aproximadamente 2,52 mil millones) y el repositorio ocupa 2,7 GB. El unico archivo publicado es `MiniCPM5-2B.Q8_0.gguf`, lo que indica que se trata de una conversion a cuantizacion Q8_0 de un modelo base denominado MiniCPM5-2B.
+SuperMiniCPM5-2B-Qween es un modelo de lenguaje publicado en Hugging Face por el usuario bunnycore, distribuido exclusivamente en formato GGUF para su uso con llama.cpp. Segun los metadatos de la plataforma, cuenta con 2.516.756.480 parametros (aproximadamente 2,52 mil millones) y el repositorio ocupa 2,7 GB. El unico archivo publicado es `MiniCPM5-2B.Q8_0.gguf`, lo que indica que se trata de una conversion a cuantizacion Q8_0 de un modelo base denominado MiniCPM5-2B.
 
 La model card es minima: se limita a indicar que la conversion a GGUF se realizo con Unsloth y a mostrar los comandos de uso con `llama-cli` y `llama-mtmd-cli`. No se documenta quien entreno el modelo base, con que datos, ni que arquitectura interna utiliza. El sufijo "Qween" del nombre tampoco se explica en la documentacion disponible, por lo que no es posible confirmar si se trata de un ajuste fino, una fusion de pesos o simplemente una convencion de nomenclatura del autor.
 
@@ -19,7 +19,7 @@ Su relevancia practica es limitada y condicionada: el interes principal reside e
 | Tipos de cuantizacion | Q8_0 (unico archivo publicado: `MiniCPM5-2B.Q8_0.gguf`) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (llama.cpp); los metadatos de recuento de parametros proceden de safetensors segun HuggingFace, pero el repositorio solo publica GGUF |
+| Formato de pesos | GGUF (llama.cpp); los metadatos de recuento de parametros proceden de safetensors segun Hugging Face, pero el repositorio solo publica GGUF |
 | Tamano del repositorio | 2,7 GB |
 | Etiquetas declaradas | gguf, llama, llama.cpp, llama-cpp, unsloth, endpoints_compatible, conversational |
 | Fecha de creacion | 2026-09-17 |
@@ -35,7 +35,7 @@ El unico dato tecnico verificable del proceso de publicacion es que la conversio
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` es la unica capacidad declarada explicitamente por el autor.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el GGUF puede servirse a traves de endpoints compatibles con la API de HuggingFace o similares, aunque no se documenta la integracion.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el GGUF puede servirse a traves de endpoints compatibles con la API de Hugging Face o similares, aunque no se documenta la integracion.
 - Uso mediante llama.cpp: los comandos documentados (`llama-cli -hf bunnycore/SuperMiniCPM5-2B-Qween --jinja` y `llama-mtmd-cli`) confirman soporte de plantillas de chat con `--jinja`.
 - Razonamiento, codigo, matematicas, tool calling, function calling, capacidades de agente y modo "thinking": no disponible, no se documenta ninguna de ellas.
 - Capacidades multilingues: no disponible.
@@ -47,7 +47,7 @@ El unico dato tecnico verificable del proceso de publicacion es que la conversio
 - Prototipado rapido de aplicaciones LLM: resulta util como modelo de pruebas para montar pipelines con llama.cpp, Ollama o LM Studio antes de migrar a un modelo mayor, gracias a su tamano reducido y a su formato estandar.
 - Inferencia en el borde (edge) o entornos aislados: su huella de ~2,7 GB permite desplegarlo en dispositivos con almacenamiento y memoria limitados, en escenarios sin conectividad o con requisitos de privacidad estrictos.
 - Ajuste fino posterior con Unsloth: el repositorio esta etiquetado con `unsloth` y el autor uso esa herramienta para la conversion, de modo que encaja en flujos de trabajo de fine-tuning de bajo coste sobre un modelo pequeno, si bien habria que recuperar primero los pesos originales en safetensors.
-- Experimentacion academica y docente: sirve como ejemplo de conversion a GGUF y de publicacion de modelos en HuggingFace para ilustrar el proceso completo, dado que la model card documenta los comandos de uso.
+- Experimentacion academica y docente: sirve como ejemplo de conversion a GGUF y de publicacion de modelos en Hugging Face para ilustrar el proceso completo, dado que la model card documenta los comandos de uso.
 - Clasificacion, extraccion y tareas auxiliares de pipeline: un modelo de este tamano puede emplearse como componente secundario (etiquetado, reformateo, resumen corto) dentro de un sistema mayor, dejando el razonamiento complejo a un modelo de mayor capacidad.
 - Evaluacion comparativa interna: util como linea base de ~2,5B para comparar contra otros modelos del mismo orden en pruebas propias, ante la ausencia total de resultados publicados por el autor.
 
@@ -85,7 +85,7 @@ No disponible. El autor no publica comparaciones ni benchmarks que permitan situ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bunnycore/SuperMiniCPM5-2B-Qween
+- Modelo en Hugging Face: https://huggingface.co/bunnycore/SuperMiniCPM5-2B-Qween
 - Unsloth (herramienta de conversion citada por el autor): https://github.com/unslothai/unsloth
 - llama.cpp (runtime compatible): https://github.com/ggerganov/llama.cpp
 - Modelo base MiniCPM5-2B: no disponible, no se proporciona enlace en la informacion consultada

@@ -69,8 +69,8 @@ No se dispone de datos de rendimiento de alternativas en la informacion proporci
 
 | Modelo | Tipo | Funcion | Contexto / ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax H3 Person Remover LoRA V1 | LoRA sobre modelo de difusion de video | Borrado de persona y reconstruccion de fondo | Ventana de 22 fotogramas (ampliable a 17n+5) | minimax-h3-community-license-agreement | HuggingFace, 4 descargas, 23 likes |
-| MiniMax H3 Ref2VA (base, Comfy-Org) | Modelo de difusion de video | Generacion y edicion de video condicionada por referencia | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| MiniMax H3 Person Remover LoRA V1 | LoRA sobre modelo de difusion de video | Borrado de persona y reconstruccion de fondo | Ventana de 22 fotogramas (ampliable a 17n+5) | minimax-h3-community-license-agreement | Hugging Face, 4 descargas, 23 likes |
+| MiniMax H3 Ref2VA (base, Comfy-Org) | Modelo de difusion de video | Generacion y edicion de video condicionada por referencia | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Alternativas de borrado de objeto en video | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento de alternativas en la informacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akatz-ai/MiniMax-H3-Person-Remover-LoRA
+- Modelo en Hugging Face: https://huggingface.co/akatz-ai/MiniMax-H3-Person-Remover-LoRA
 - Descarga del LoRA: https://huggingface.co/akatz-ai/MiniMax-H3-Person-Remover-LoRA/resolve/main/H3-Person-Remover-V1.safetensors
 - Flujo de trabajo ComfyUI: examples/Person-Remover-Window-Reroll-V1.json
 - Guia del flujo de trabajo: examples/README.md

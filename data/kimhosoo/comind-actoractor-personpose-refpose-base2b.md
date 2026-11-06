@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kimhosoo/comind-actoractor-personpose-refpose-base2b` es un checkpoint de investigación para generación de vídeo egocéntrico multivista, desarrollado por el usuario de HuggingFace `kimhosoo` a partir del modelo base `nvidia/Cosmos-Predict2.5-2B` (2.000 millones de parámetros). El modelo implementa generación conjunta (V=2) de dos flujos ego, "leader" y "helper", que se denoisan en una única pasada forward con self-attention cruzada completa entre vistas: cada flujo atiende a los tokens y fotogramas de referencia del otro. Es el brazo `base2b` del experimento `comind_actoractor_personpose_shared_refpose`, calentado directamente desde Cosmos 2B en lugar de desde un checkpoint preentrenado con Nymeria.
+`kimhosoo/comind-actoractor-personpose-refpose-base2b` es un checkpoint de investigación para generación de vídeo egocéntrico multivista, desarrollado por el usuario de Hugging Face `kimhosoo` a partir del modelo base `nvidia/Cosmos-Predict2.5-2B` (2.000 millones de parámetros). El modelo implementa generación conjunta (V=2) de dos flujos ego, "leader" y "helper", que se denoisan en una única pasada forward con self-attention cruzada completa entre vistas: cada flujo atiende a los tokens y fotogramas de referencia del otro. Es el brazo `base2b` del experimento `comind_actoractor_personpose_shared_refpose`, calentado directamente desde Cosmos 2B en lugar de desde un checkpoint preentrenado con Nymeria.
 
 El problema que aborda es la comparación joint-vs-independiente en generación de interacción social en primera persona: su contraparte `kimhosoo/comind-actoractor-personpose-refpose-singlestream` usa exactamente el mismo condicionamiento pero genera los dos flujos de forma independiente (V=1). El condicionamiento por flujo combina pose coloreada por identidad concatenada al VAE (`vae_concat`), mapa propio de warped/visibilidad, una rebanada R=4 de un conjunto de referencias compartido y greedy con esqueletos `reference_pose` coincidentes, y un mapa de rayos de Plücker en una cámara canónica compartida (rayos expresados en "target view0, frame 0").
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Condicionamiento | Generacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `kimhosoo/comind-actoractor-personpose-refpose-base2b` (este) | 2B (heredados de Cosmos-Predict2.5-2B) | Pose coloreada por identidad, warped/visibilidad, R=4 de referencias compartidas, rayos de Plücker en marco canónico | Conjunta V=2 (leader y helper en una pasada, atención cruzada completa) | apache-2.0 | Publicado en HuggingFace, 0 descargas, 0 likes |
-| `kimhosoo/comind-actoractor-personpose-refpose-singlestream` | No disponible (mismo esquema, presumiblemente 2B) | Igual que el anterior | Independiente V=1 (los dos flujos ego se generan por separado) | No disponible en la informacion proporcionada | Publicado en HuggingFace |
+| `kimhosoo/comind-actoractor-personpose-refpose-base2b` (este) | 2B (heredados de Cosmos-Predict2.5-2B) | Pose coloreada por identidad, warped/visibilidad, R=4 de referencias compartidas, rayos de Plücker en marco canónico | Conjunta V=2 (leader y helper en una pasada, atención cruzada completa) | apache-2.0 | Publicado en Hugging Face, 0 descargas, 0 likes |
+| `kimhosoo/comind-actoractor-personpose-refpose-singlestream` | No disponible (mismo esquema, presumiblemente 2B) | Igual que el anterior | Independiente V=1 (los dos flujos ego se generan por separado) | No disponible en la informacion proporcionada | Publicado en Hugging Face |
 | Brazos `nymwarm` del mismo experimento | No disponible | Igual esquema | Variantes joint | No disponible en la informacion proporcionada | Mencionados en la model card; no se proporcionan enlaces |
-| `nvidia/Cosmos-Predict2.5-2B` (modelo base) | 2B | Condicionamiento multiview genérico de Cosmos | Generación de vídeo base, sin el esquema actor-actor | No disponible en la informacion proporcionada (la licencia NVIDIA del modelo base puede imponer condiciones adicionales a las del fine-tuning) | Público en HuggingFace |
+| `nvidia/Cosmos-Predict2.5-2B` (modelo base) | 2B | Condicionamiento multiview genérico de Cosmos | Generación de vídeo base, sin el esquema actor-actor | No disponible en la informacion proporcionada (la licencia NVIDIA del modelo base puede imponer condiciones adicionales a las del fine-tuning) | Público en Hugging Face |
 
 No se dispone de datos de benchmark que permitan comparar rendimiento entre estas variantes; la comparación disponible es únicamente de esquema de condicionamiento y de estrategia de generación (conjunta frente a independiente).
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmark que permitan comparar rendimiento entre esta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kimhosoo/comind-actoractor-personpose-refpose-base2b
+- Modelo en Hugging Face: https://huggingface.co/kimhosoo/comind-actoractor-personpose-refpose-base2b
 - Variante independiente (V=1): https://huggingface.co/kimhosoo/comind-actoractor-personpose-refpose-singlestream
 - Modelo base: https://huggingface.co/nvidia/Cosmos-Predict2.5-2B
 - Repositorio de código cosmos-predict2.5 (referenciado en la model card, incluye `scripts/convert_distcp_to_pt.py`): no se proporciona URL en la información disponible

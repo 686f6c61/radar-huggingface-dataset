@@ -74,8 +74,8 @@ La información proporcionada solo permite comparar con el modelo base del que d
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-4b-16k-sft-meetwombat-s79 | 4,54 mil millones | No disponible (entrenado con secuencias de hasta 18.432 tokens) | SFT sobre soluciones propias filtradas por corrección, respuestas de 10k-16k tokens, 79 pasos | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B | No disponible en la informacion proporcionada | No disponible | Modelo base multimodal declarado (`image-text-to-text`) | Apache 2.0 (heredada por el ajuste) | HuggingFace |
+| qwen3.5-4b-16k-sft-meetwombat-s79 | 4,54 mil millones | No disponible (entrenado con secuencias de hasta 18.432 tokens) | SFT sobre soluciones propias filtradas por corrección, respuestas de 10k-16k tokens, 79 pasos | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B | No disponible en la informacion proporcionada | No disponible | Modelo base multimodal declarado (`image-text-to-text`) | Apache 2.0 (heredada por el ajuste) | Hugging Face |
 | Otras alternativas de ~4B para razonamiento matematico | No disponibles | No disponibles | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ La información proporcionada solo permite comparar con el modelo base del que d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-16k-sft-meetwombat-s79
+- Modelo en Hugging Face: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-16k-sft-meetwombat-s79
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset
 - Paper, blog o repositorio del proyecto: no disponible en la informacion proporcionada. Las busquedas web realizadas no devolvieron resultados relacionados con el modelo; los enlaces obtenidos (budget.gouv.fr, budget.fr, dettedelafrance.fr, francebudget.fr) corresponden a paginas sobre el presupuesto del Estado frances y no guardan relacion con este modelo.

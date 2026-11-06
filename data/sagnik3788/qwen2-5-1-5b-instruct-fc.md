@@ -86,8 +86,8 @@ Nota: estos resultados son declarados por el autor del modelo y no están verifi
 
 | Modelo | Parámetros | Contexto | BFCL v4 Non-Live | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-1.5B-Instruct-FC | 1,5B | 32.768 | 85,65 % | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B-Instruct (base) | 1,5B | 32.768 | no disponible | Apache 2.0 | HuggingFace |
+| Qwen2.5-1.5B-Instruct-FC | 1,5B | 32.768 | 85,65 % | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B-Instruct (base) | 1,5B | 32.768 | no disponible | Apache 2.0 | Hugging Face |
 | Llama-3.2-1B-Instruct | 1B | no disponible | 38,38 % | no disponible | no disponible |
 
 Nota: el modelo base Qwen2.5-1.5B-Instruct no ha sido evaluado en BFCL v4 en la información proporcionada.
@@ -104,7 +104,7 @@ Nota: el modelo base Qwen2.5-1.5B-Instruct no ha sido evaluado en BFCL v4 en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sagnik3788/Qwen2.5-1.5B-Instruct-FC
+- Hugging Face: https://huggingface.co/sagnik3788/Qwen2.5-1.5B-Instruct-FC
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Colección Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
 - Paper APIGen (arXiv 2406.18518): https://arxiv.org/abs/2406.18518

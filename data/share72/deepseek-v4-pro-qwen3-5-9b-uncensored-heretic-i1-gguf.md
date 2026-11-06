@@ -6,7 +6,7 @@ DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic (en su variante i1-GGUF) es una cu
 
 La particularidad de esta variante es su caracter "uncensored/heretic/abliterated": el modelo base ha sido modificado para eliminar o atenuar los mecanismos de rechazo y alineacion de seguridad, lo que lo hace adecuado para investigacion sobre comportamiento de modelos, generacion de contenido sin filtros y estudios de robustez, pero tambien lo convierte en una opcion arriesgada para despliegues comerciales orientados al publico general. La licencia declarada es Apache 2.0.
 
-El repositorio contiene unicamente archivos GGUF cuantizados (desde i1-IQ1_S de 2,8 GB hasta variantes de mayor tamano), mas un fichero imatrix para generar cuantizaciones propias. El repo ocupa 110,2 GB en total. No se dispone de informacion sobre el pipeline de HuggingFace ni de resultados de benchmarks publicados en la informacion proporcionada.
+El repositorio contiene unicamente archivos GGUF cuantizados (desde i1-IQ1_S de 2,8 GB hasta variantes de mayor tamano), mas un fichero imatrix para generar cuantizaciones propias. El repo ocupa 110,2 GB en total. No se dispone de informacion sobre el pipeline de Hugging Face ni de resultados de benchmarks publicados en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) en la informacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/share72/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/share72/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-i1-GGUF
 - Modelo base: https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic
 - Cuantizaciones estaticas de mradermacher: https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-GGUF
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-i1-GGUF

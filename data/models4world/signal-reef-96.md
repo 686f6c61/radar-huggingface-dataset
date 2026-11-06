@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/signal-reef-96` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `models4world`. Está diseñado para la generación de texto conversacional, utilizando como modelo base `models4world/maple-signal-64`. El adaptador se distribuye en formato safetensors y está construido con la librería PEFT (Parameter-Efficient Fine-Tuning), lo que sugiere que su propósito es ajustar el modelo base para tareas específicas sin modificar todos sus parámetros.
+El modelo `models4world/signal-reef-96` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `models4world`. Está diseñado para la generación de texto conversacional, utilizando como modelo base `models4world/maple-signal-64`. El adaptador se distribuye en formato safetensors y está construido con la librería PEFT (Parameter-Efficient Fine-Tuning), lo que sugiere que su propósito es ajustar el modelo base para tareas específicas sin modificar todos sus parámetros.
 
 A pesar de su publicación, la documentación disponible es extremadamente limitada: la model card no contiene información sobre arquitectura, datos de entrenamiento, capacidades o rendimiento. El repositorio tiene un tamaño de 1,9 GB, lo que indica que el adaptador incluye pesos adicionales, pero no se especifican los parámetros totales ni activos. No se dispone de información sobre licencia, idiomas soportados o contexto de entrenamiento, lo que dificulta su evaluación para uso en producción.
 
@@ -73,6 +73,6 @@ No se dispone de información sobre modelos comparables. El modelo base `models4
 
 ## Enlaces
 
-- [HuggingFace - models4world/signal-reef-96](https://huggingface.co/models4world/signal-reef-96)
-- [Perfil de models4world en HuggingFace](https://huggingface.co/models4world)
+- [Hugging Face - models4world/signal-reef-96](https://huggingface.co/models4world/signal-reef-96)
+- [Perfil de models4world en Hugging Face](https://huggingface.co/models4world)
 - [Modelos de models4world](https://huggingface.co/models4world/models)

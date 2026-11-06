@@ -64,7 +64,7 @@ El repositorio libera una de las tres ejecuciones de entrenamiento; las puntuaci
 - VRAM estimada para inferencia: el modelo base LLaDA-8B requiere aproximadamente 16 GB en bf16 (8.02B parametros × 2 bytes). Con el adaptador LoRA, la VRAM adicional es minima (~0.3 GB). En cuantizacion de 4 bits, cabria en ~5-6 GB.
 - GPU recomendadas: el entrenamiento se realizo en 8×H20-96GB. Para inferencia, una GPU con 24 GB (RTX 4090, A10G) es suficiente en bf16; con cuantizacion, una RTX 3090/4080 de 16 GB podria bastar.
 - Compatibilidad con GPU de consumo: si, en cuantizacion 4-bit u 8-bit cabe en GPUs consumer de 16-24 GB.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la libreria peft de HuggingFace sobre el base. Para el pipeline de decodificacion por difusion, se requiere el codigo del framework Entropy-Valley (github.com/Entropy-Valley/Entropy-Valley). No se menciona soporte para vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la libreria peft de Hugging Face sobre el base. Para el pipeline de decodificacion por difusion, se requiere el codigo del framework Entropy-Valley (github.com/Entropy-Valley/Entropy-Valley). No se menciona soporte para vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponible. La decodificacion por difusion con T=32 pasos es inherentemente mas lenta que la autoregresiva; cada paso requiere un forward pass completo del modelo.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ No se dispone de comparativa con otros sistemas de traduccion neuronal (p. ej. N
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YanZhanPKU/LaDiT-LLaDA-8B-En2De
+- Modelo en Hugging Face: https://huggingface.co/YanZhanPKU/LaDiT-LLaDA-8B-En2De
 - Modelo base: https://huggingface.co/GSAI-ML/LLaDA-8B-Base
 - Modelo base instruct: https://huggingface.co/GSAI-ML/LLaDA-8B-Instruct
 - Codigo y paper (arXiv proximamente): https://github.com/Entropy-Valley/Entropy-Valley

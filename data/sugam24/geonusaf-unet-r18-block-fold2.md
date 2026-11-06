@@ -89,7 +89,7 @@ No se dispone de datos comparativos con otras arquitecturas (p. ej., UNetFormer,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sugam24/geonusaf-unet-r18-block-fold2
+- Repositorio Hugging Face: https://huggingface.co/sugam24/geonusaf-unet-r18-block-fold2
 - Variante fold0: https://huggingface.co/sugam24/geonusaf-unet-r18-block-fold0
 - Variante UNetFormer: https://huggingface.co/sugam24/geonusaf-unetformer-r18-block-fold2
 - Documentacion de Segmentation Models (PyTorch): https://segmentation-models-pytorch.readthedocs.io/en/latest/models.html

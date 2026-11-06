@@ -64,7 +64,7 @@ Estos datos corresponden al modelo hermano, no a este checkpoint. Para este mode
 
 ## Requisitos de hardware
 
-- Tamaño en disco: 12.3 GB (según model card) o 13.3 GB (tamaño del repositorio en HuggingFace).
+- Tamaño en disco: 12.3 GB (según model card) o 13.3 GB (tamaño del repositorio en Hugging Face).
 - Memoria necesaria para ejecutar: 14.5 GB (según model card).
 - Plataforma: Apple Silicon (M1 a M5) con MLX. No se menciona soporte para GPU NVIDIA o AMD.
 - RAM unificada recomendada: al menos 16 GB para cargar el modelo y dejar margen para el sistema y el contexto.
@@ -95,7 +95,7 @@ No hay datos de otros modelos comparables en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/Agents-A1-OptiQ-4bit-REAP-19B
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/Agents-A1-OptiQ-4bit-REAP-19B
 - Modelo padre: https://huggingface.co/mlx-community/Agents-A1-OptiQ-4bit
 - Paper de REAP: https://arxiv.org/abs/2510.13999
 - Web de mlx-optiq: https://mlx-optiq.com/

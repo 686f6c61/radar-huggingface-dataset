@@ -68,7 +68,7 @@ No se dispone de datos comparativos con modelos de otras familias en la informac
 
 | Version | Tamano (GB) | Licencia | Disponibilidad |
 |---|---|---|---|
-| briaai/Fibo-1.5 (base, BF16 original) | no disponible | bria-fibo | HuggingFace |
+| briaai/Fibo-1.5 (base, BF16 original) | no disponible | bria-fibo | Hugging Face |
 | fibo-1-5-mflux-bf16 | 25,5 | bria-fibo | mflux-community |
 | fibo-1-5-mflux-q8 (este repo) | 14,9 | bria-fibo | mflux-community |
 | fibo-1-5-mflux-q6 | 12,0 | bria-fibo | mflux-community |
@@ -91,7 +91,7 @@ Comparativas frente a alternativas de otras familias (por ejemplo, otros modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mflux-community/fibo-1-5-mflux-q8
+- Repositorio Hugging Face: https://huggingface.co/mflux-community/fibo-1-5-mflux-q8
 - Modelo base: https://huggingface.co/briaai/Fibo-1.5
 - Model card original (terminos de licencia): https://huggingface.co/briaai/Fibo-1.5
 - Licencia CC BY-NC 4.0: https://creativecommons.org/licenses/by-nc/4.0/deed.en

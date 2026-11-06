@@ -95,7 +95,7 @@ No se dispone de datos de modelos alternativos de la misma categoría (otros MoE
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pipenetwork/GLM-5.3-MLX-5bit
+- Modelo en Hugging Face: https://huggingface.co/pipenetwork/GLM-5.3-MLX-5bit
 - Repositorio GitHub del runtime: https://github.com/PipeNetwork/glm53-mlx
 - Modelo base (Z.ai): https://huggingface.co/zai-org/GLM-5.3
 - Documentación oficial de GLM-5.3: https://docs.z.ai/guides/llm/glm-5.3

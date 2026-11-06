@@ -80,7 +80,7 @@ No se han identificado en la informacion proporcionada alternativas comparables 
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| showa-ai/marketplace-m0-professional-a | no disponible (adaptador; base nominal 27B sin confirmar) | no disponible | no disponible | safetensors (LoRA) | Publico en HuggingFace, 0 descargas, 0 likes |
+| showa-ai/marketplace-m0-professional-a | no disponible (adaptador; base nominal 27B sin confirmar) | no disponible | no disponible | safetensors (LoRA) | Publico en Hugging Face, 0 descargas, 0 likes |
 | Qwen/Qwen3.8-27B-FP8 (modelo base) | no disponible | no disponible | no disponible | FP8 | Referenciado como base; no verificado en la busqueda web realizada |
 | Adaptadores LoRA comparables | no disponible | no disponible | no disponible | no disponible | No se han localizado candidatos en la informacion disponible |
 
@@ -101,7 +101,7 @@ No se han identificado en la informacion proporcionada alternativas comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/showa-ai/marketplace-m0-professional-a
+- Modelo en Hugging Face: https://huggingface.co/showa-ai/marketplace-m0-professional-a
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Repositorio de PEFT: https://github.com/huggingface/peft

@@ -71,7 +71,7 @@ El autor advierte que en AIME la tasa de truncación es tan alta que la precisi�
 - Cabe en GPUs consumer con 8 GB de VRAM o más (por ejemplo, RTX 3060, RTX 4060, RTX 3070, RTX 4070) si se usa fp16 o cuantización.
 - Para inferencia con contexto de 4096 tokens y batch pequeño, una RTX 3090 o RTX 4090 es más que suficiente.
 - El entrenamiento original se realizó en una GPU de 96 GB (probablemente A100 o H100) con el teacher residente en memoria.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, o directamente con transformers de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, o directamente con transformers de Hugging Face.
 - No se dispone de datos de latencia o throughput específicos para este modelo.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ La comparación directa con el teacher no es posible porque no se reportan sus m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xiaoyuchen1/Qwen3-1.7B-OPD-fwdKL-from-Qwen3-8B-GRPO
+- Modelo en Hugging Face: https://huggingface.co/xiaoyuchen1/Qwen3-1.7B-OPD-fwdKL-from-Qwen3-8B-GRPO
 - Dataset de entrenamiento: https://huggingface.co/datasets/xiaoyuchen1/opd-math-data
 - Framework slime (THUDM): https://github.com/THUDM/slime
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B

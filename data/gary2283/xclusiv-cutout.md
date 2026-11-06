@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto/entrada | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Gary2283/xclusiv-cutout | no disponible | 576 x 1024 fijo | MIT | ONNX | HuggingFace |
-| ZhengPeng7/BiRefNet_lite (base) | no disponible | resolución variable (PyTorch) | MIT | PyTorch | HuggingFace |
-| ZhengPeng7/BiRefNet (completo) | no disponible | resolución variable (PyTorch) | MIT | PyTorch | HuggingFace |
+| Gary2283/xclusiv-cutout | no disponible | 576 x 1024 fijo | MIT | ONNX | Hugging Face |
+| ZhengPeng7/BiRefNet_lite (base) | no disponible | resolución variable (PyTorch) | MIT | PyTorch | Hugging Face |
+| ZhengPeng7/BiRefNet (completo) | no disponible | resolución variable (PyTorch) | MIT | PyTorch | Hugging Face |
 | Otros modelos de *background removal* (p. ej. U2-Net, RMBG) | no disponible en la información | no disponible | varía | varía | varía |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada; la comparativa se limita a aspectos de licencia, formato y disponibilidad.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gary2283/xclusiv-cutout
+- Modelo en Hugging Face: https://huggingface.co/Gary2283/xclusiv-cutout
 - Modelo base BiRefNet_lite: https://huggingface.co/ZhengPeng7/BiRefNet_lite
 - Repositorio de código BiRefNet: https://github.com/ZhengPeng7/BiRefNet
 - Artículo: Zheng, Gao, Fan, Liu, Laaksonen, Ouyang, Sebe. "Bilateral Reference for High-Resolution Dichotomous Image Segmentation." CAAI Artificial Intelligence Research, 2024.

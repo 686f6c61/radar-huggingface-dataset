@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Iguana-up-483 (identificador interno `lora_model_UP_483`) es un adaptador LoRA de ajuste supervisado (SFT) publicado por el usuario manendrasingh en HuggingFace. No se trata de un modelo completo, sino de un conjunto de pesos PEFT que debe cargarse sobre su modelo base, `unsloth/llama-3.2-3b-bnb-4bit`, es decir, la variante de 3.210 millones de parametros de Llama 3.2 de Meta cuantizada a 4 bits con las herramientas de Unsloth. El repositorio ocupa aproximadamente 0,2 GB, coherente con un adaptador de bajo rango y no con un modelo completo.
+Iguana-up-483 (identificador interno `lora_model_UP_483`) es un adaptador LoRA de ajuste supervisado (SFT) publicado por el usuario manendrasingh en Hugging Face. No se trata de un modelo completo, sino de un conjunto de pesos PEFT que debe cargarse sobre su modelo base, `unsloth/llama-3.2-3b-bnb-4bit`, es decir, la variante de 3.210 millones de parametros de Llama 3.2 de Meta cuantizada a 4 bits con las herramientas de Unsloth. El repositorio ocupa aproximadamente 0,2 GB, coherente con un adaptador de bajo rango y no con un modelo completo.
 
 El problema que resuelve es acotado: adaptar un modelo pequeno y ya cuantizado a una tarea o dominio concreto mediante SFT, con un coste de entrenamiento minimo. El entrenamiento se ha realizado con TRL (version 0.24.0) sobre PEFT 0.20.0, Transformers 5.5.0, PyTorch 2.11.0+cu128, Datasets 4.3.0 y Tokenizers 0.22.2. La model card no documenta el conjunto de datos, los hiperparametros del ajuste (rango, alpha, tasa de aprendizaje, epocas) ni el objetivo de la especializacion.
 
@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iguana-up-483 (este modelo) | 3.210 M (base) + adaptador LoRA | 128.000 tokens (heredado) | Adaptador LoRA sobre Llama 3.2 3B en 4 bits | No disponible | HuggingFace, 0 descargas |
+| iguana-up-483 (este modelo) | 3.210 M (base) + adaptador LoRA | 128.000 tokens (heredado) | Adaptador LoRA sobre Llama 3.2 3B en 4 bits | No disponible | Hugging Face, 0 descargas |
 | Llama 3.2 3B (Meta) | 3.210 M | 128.000 tokens | Modelo completo, instruction-tuned | Licencia comunitaria de Llama 3.2 | Ampliamente disponible |
-| Qwen2.5 3B | 3.090 M | 32.768 tokens (ampliable a 131.072 con RoPE scaling) | Modelo completo | Licencia de investigacion Qwen | HuggingFace |
-| Phi-3.5-mini | 3.800 M | 128.000 tokens | Modelo completo | MIT | HuggingFace |
-| Gemma 2 2B | 2.600 M | 8.192 tokens | Modelo completo | Terminos de uso de Gemma | HuggingFace |
+| Qwen2.5 3B | 3.090 M | 32.768 tokens (ampliable a 131.072 con RoPE scaling) | Modelo completo | Licencia de investigacion Qwen | Hugging Face |
+| Phi-3.5-mini | 3.800 M | 128.000 tokens | Modelo completo | MIT | Hugging Face |
+| Gemma 2 2B | 2.600 M | 8.192 tokens | Modelo completo | Terminos de uso de Gemma | Hugging Face |
 
 No hay datos de rendimiento del adaptador que permitan una comparacion cuantitativa con estas alternativas. En igualdad de condiciones, los modelos completos citados son preferibles para produccion por tener licencia clara, evaluaciones publicadas y soporte directo en los motores de inferencia.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JakubJanusz/check_interest es un repositorio alojado en HuggingFace por el usuario JakubJanusz, publicado bajo licencia Apache 2.0 y con un tamano de repositorio de 1,8 GB. En el momento de la consulta acumula 0 descargas y 0 "likes", no tiene etiqueta de pipeline asignada (text-generation, text-classification, feature-extraction, etc.) y su model card se reduce a la declaracion de licencia, sin README descriptivo, sin ficha tecnica y sin ningun dato sobre arquitectura, entrenamiento o evaluacion.
+JakubJanusz/check_interest es un repositorio alojado en Hugging Face por el usuario JakubJanusz, publicado bajo licencia Apache 2.0 y con un tamano de repositorio de 1,8 GB. En el momento de la consulta acumula 0 descargas y 0 "likes", no tiene etiqueta de pipeline asignada (text-generation, text-classification, feature-extraction, etc.) y su model card se reduce a la declaracion de licencia, sin README descriptivo, sin ficha tecnica y sin ningun dato sobre arquitectura, entrenamiento o evaluacion.
 
 La unica informacion adicional disponible proviene de una busqueda web cuyos resultados no guardan ninguna relacion con el modelo: son discusiones en foros de habla china sobre modificaciones del juego World of Warships, desinstalacion de WPS Office, carpetas de sistema de Windows y compatibilidad entre sistemas operativos moviles. Ninguno de esos enlaces menciona el modelo, su autor ni su posible funcion.
 
@@ -73,7 +73,7 @@ No disponible. La comparacion exige conocer al menos la tarea, la arquitectura y
 - Ausencia total de documentacion: no hay model card, ni descripcion de entrenamiento, ni ejemplos, lo que impide auditar sesgos, datos de origen o comportamiento esperado.
 - Riesgo de alucinacion: indeterminado. Si el modelo genera texto, no existe ninguna evaluacion que cuantifique su tasa de error o su tendencia a inventar informacion.
 - Sesgos conocidos: no disponibles. Al no declararse la composicion del dataset ni los idiomas, no puede evaluarse el sesgo linguistico, cultural o de dominio.
-- Cobertura idiomatica: desconocida. El campo de idiomas esta vacio en la ficha de HuggingFace, por lo que no puede asumirse soporte de castellano ni de ningun otro idioma.
+- Cobertura idiomatica: desconocida. El campo de idiomas esta vacio en la ficha de Hugging Face, por lo que no puede asumirse soporte de castellano ni de ningun otro idioma.
 - Limitacion de contexto: no disponible. Sin este dato no puede garantizarse el comportamiento en conversaciones largas ni en documentos extensos.
 - Licencia: Apache 2.0, permisiva y apta para uso comercial, con obligacion habitual de conservar avisos de copyright y de licencia. Al no existir ficheros de atribucion en la model card, conviene revisar si el repositorio incluye un `LICENSE` completo.
 - Senales de adopcion nulas: 0 descargas y 0 likes, mas una unica actualizacion en la misma marca temporal que la creacion, indican que el repositorio no ha sido validado por terceros.
@@ -83,5 +83,5 @@ No disponible. La comparacion exige conocer al menos la tarea, la arquitectura y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JakubJanusz/check_interest
+- Hugging Face: https://huggingface.co/JakubJanusz/check_interest
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su autor, a un paper asociado, a un repositorio de codigo ni a una demo. Todos los resultados devueltos corresponden a temas sin relacion.

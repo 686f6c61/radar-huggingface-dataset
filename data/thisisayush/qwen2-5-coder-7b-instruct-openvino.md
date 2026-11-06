@@ -86,7 +86,7 @@ La comparación relevante es frente al modelo base: misma licencia y, presumible
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thisisayush/Qwen2.5-Coder-7B-Instruct-openvino
+- Repositorio Hugging Face: https://huggingface.co/thisisayush/Qwen2.5-Coder-7B-Instruct-openvino
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct/blob/main/LICENSE
 - Repositorio optimum-intel: https://github.com/huggingface/optimum-intel

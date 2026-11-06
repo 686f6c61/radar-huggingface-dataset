@@ -4,7 +4,7 @@
 
 Studymate-ctp-dapt es un adaptador LoRA (PEFT) publicado por el usuario ksumanthreddy96 sobre el modelo base unsloth/Qwen2.5-0.5B-unsloth-bnb-4bit, una version cuantizada a 4 bits del Qwen2.5-0.5B de Alibaba Qwen. No se trata por tanto de un modelo completo con pesos propios, sino de un conjunto de matrices de bajo rango que deben cargarse junto al modelo base para producir texto. El repositorio ocupa 0.0 GB y no registra descargas ni valoraciones en el momento de la consulta.
 
-El problema que pretende resolver, segun el propio nombre del repositorio ("studymate"), apunta a un asistente de estudio o tutoria academica, pero la model card no documenta ni el conjunto de datos de entrenamiento ni los casos de uso previstos. La model card es la generada automaticamente por el Trainer de HuggingFace e incluye el aviso explicito de que debe revisarse y completarse, con la seccion "Training and evaluation data" marcada como "More information needed".
+El problema que pretende resolver, segun el propio nombre del repositorio ("studymate"), apunta a un asistente de estudio o tutoria academica, pero la model card no documenta ni el conjunto de datos de entrenamiento ni los casos de uso previstos. La model card es la generada automaticamente por el Trainer de Hugging Face e incluye el aviso explicito de que debe revisarse y completarse, con la seccion "Training and evaluation data" marcada como "More information needed".
 
 Su relevancia actual es limitada y de caracter experimental: se apoya en un modelo de 0,5 mil millones de parametros con licencia Apache-2.0, lo que permite ejecutarlo en hardware muy modesto (incluso CPU) y usarlo como banco de pruebas para flujos de ajuste fino con Unsloth y PEFT. No hay evidencia publicada de calidad, benchmarks ni datos de entrenamiento que respalden su uso en produccion.
 
@@ -47,7 +47,7 @@ Advertencia: al tratarse de un adaptador sin datos de evaluacion, no hay verific
 - Experimentos de investigacion sobre LoRA de bajo rango: al ser un adaptador pequeno y reproducible (semilla 3407, hiperparametros declarados), permite estudiar como afecta el ajuste de bajo rango a un modelo de 0,5 B en una tarea concreta.
 - Generacion de texto en dispositivos con recursos minimos: el modelo base de 0,49 B en 4 bits ocupa del orden de 0,3-0,5 GB, por lo que es viable en portatiles sin GPU, Raspberry Pi 4/5 o entornos de CPU compartida con Ollama o llama.cpp.
 - Clasificacion o etiquetado de texto academico en lote: dado el bajo coste por token del modelo base, puede emplearse para tareas de extraccion de temas, resumen de apuntes o generacion de preguntas tipo test, siempre que se valide la calidad manualmente.
-- Demostraciones educativas de fine-tuning: util como ejemplo didactico en cursos o talleres sobre como publicar un adaptador en HuggingFace y documentar hiperparametros de entrenamiento.
+- Demostraciones educativas de fine-tuning: util como ejemplo didactico en cursos o talleres sobre como publicar un adaptador en Hugging Face y documentar hiperparametros de entrenamiento.
 - Respuestas offline con requisitos de privacidad: al poder ejecutarse localmente sin conexion, encaja en escenarios donde los datos de los estudiantes no deben salir del equipo, siempre que se asuma la baja calidad esperable del modelo base.
 
 ## Benchmarks y rendimiento
@@ -69,7 +69,7 @@ El campo model-index del repositorio declara un unico bloque con nombre "studyma
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| studymate-ctp-dapt | Adaptador LoRA sobre 0,49 B | 32.768 tokens (heredado, no confirmado) | Adaptador PEFT | apache-2.0 | HuggingFace, 0 descargas |
+| studymate-ctp-dapt | Adaptador LoRA sobre 0,49 B | 32.768 tokens (heredado, no confirmado) | Adaptador PEFT | apache-2.0 | Hugging Face, 0 descargas |
 | Qwen2.5-0.5B (base) | 0,49 B | 32.768 tokens | Modelo completo | apache-2.0 | Amplia, con benchmarks publicados por el autor |
 | Qwen2.5-1.5B | 1,5 B | 32.768 tokens | Modelo completo | apache-2.0 | Amplia |
 | SmolLM2-360M | 0,36 B | 8.192 tokens | Modelo completo | apache-2.0 | Amplia |
@@ -89,9 +89,9 @@ No hay datos de rendimiento publicados para el adaptador que permitan una compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ksumanthreddy96/studymate-ctp-dapt
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen2.5-0.5B-unsloth-bnb-4bit
-- Familia Qwen2.5 en HuggingFace: https://huggingface.co/Qwen
+- Modelo en Hugging Face: https://huggingface.co/ksumanthreddy96/studymate-ctp-dapt
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen2.5-0.5B-unsloth-bnb-4bit
+- Familia Qwen2.5 en Hugging Face: https://huggingface.co/Qwen
 - Repositorio de PEFT: https://github.com/huggingface/peft
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la informacion disponible.

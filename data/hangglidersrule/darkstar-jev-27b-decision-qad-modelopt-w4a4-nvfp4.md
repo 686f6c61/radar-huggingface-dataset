@@ -96,7 +96,7 @@ Condiciones de medición: RTX PRO 6000 Blackwell (SM120), vLLM v0.32.0, script `
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-QAD-ModelOpt-W4A4-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-QAD-ModelOpt-W4A4-NVFP4
 - Build mixta de la familia: https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8
 - Modelo base de decisión: https://huggingface.co/autotrust/JEV-27B
 - Modelo base generativo: https://huggingface.co/Qwen/Qwen3.8-27B

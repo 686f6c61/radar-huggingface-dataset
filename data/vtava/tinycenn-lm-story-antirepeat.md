@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TinyCeNN-LM-Story-AntiRepeat es un modelo de generacion de texto publicado por el usuario vtava en HuggingFace, especializado en la generacion de historias cortas en ingles. Se describe explicitamente como una derivacion "transformer-free" (sin arquitectura transformer) del modelo `vtava/TinyCeNN-LM-Sharded-MoE-Top2`, y conserva la etiqueta de mezcla de expertos (MoE) presente en el repositorio base. El objetivo declarado es la especializacion en dominio: producir relatos infantiles sencillos y coherentes al estilo del corpus TinyStories, con un enfasis particular en evitar la repeticion de n-gramas durante la decodificacion (de ahi el sufijo "AntiRepeat").
+TinyCeNN-LM-Story-AntiRepeat es un modelo de generacion de texto publicado por el usuario vtava en Hugging Face, especializado en la generacion de historias cortas en ingles. Se describe explicitamente como una derivacion "transformer-free" (sin arquitectura transformer) del modelo `vtava/TinyCeNN-LM-Sharded-MoE-Top2`, y conserva la etiqueta de mezcla de expertos (MoE) presente en el repositorio base. El objetivo declarado es la especializacion en dominio: producir relatos infantiles sencillos y coherentes al estilo del corpus TinyStories, con un enfasis particular en evitar la repeticion de n-gramas durante la decodificacion (de ahi el sufijo "AntiRepeat").
 
 El problema que aborda es acotado pero real en modelos pequenos: la degeneracion de la salida en bucles repetitivos cuando se generan textos largos con pocos parametros. Para ello, el autor anade una perdida de "unlikelihood" sobre tokens recientes durante el entrenamiento, ademas de la perdida de entropia cruzada causal estandar, y recomienda un conjunto concreto de hiperparametros de decodificacion (temperatura 0,78, top-p 0,90, top-k 40, penalizacion de repeticion 1,18 y bloqueo de 4-gramas repetidos) para mitigar el fenomeno en inferencia.
 
@@ -66,8 +66,8 @@ No se dispone de datos comparativos publicados para este modelo (sin parametros,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TinyCeNN-LM-Story-AntiRepeat | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
-| Modelos entrenados sobre TinyStories (familia generica) | tipicamente entre 1M y 100M | no disponible | variable | HuggingFace |
+| TinyCeNN-LM-Story-AntiRepeat | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
+| Modelos entrenados sobre TinyStories (familia generica) | tipicamente entre 1M y 100M | no disponible | variable | Hugging Face |
 | Modelos narrativos pequenos tipo GPT-2 small | 124M | 1024 tokens | MIT / modificada segun variante | ampliamente disponible |
 
 La comparacion cuantitativa de rendimiento entre estas opciones no puede realizarse con la informacion disponible.
@@ -87,7 +87,7 @@ La comparacion cuantitativa de rendimiento entre estas opciones no puede realiza
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vtava/TinyCeNN-LM-Story-AntiRepeat
+- Modelo en Hugging Face: https://huggingface.co/vtava/TinyCeNN-LM-Story-AntiRepeat
 - Modelo base del que deriva: https://huggingface.co/vtava/TinyCeNN-LM-Sharded-MoE-Top2 (referenciado en la model card; no verificado)
 - Paper de TinyStories (corpus de entrenamiento citado): no disponible en la informacion proporcionada
 - Repositorio de codigo: no disponible

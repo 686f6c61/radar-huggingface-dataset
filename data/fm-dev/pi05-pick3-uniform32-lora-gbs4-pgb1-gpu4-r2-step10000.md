@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / ventana de observacion | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| pi05-pick3-uniform32-lora-gbs4-pgb1-gpu4-r2-step10000 | Ajuste LoRA de π0.5 (VLA) | no disponible | 32 fotogramas, 512 tokens visuales | pick3 sobre Franka | no disponible | Repositorio HuggingFace publico, 0 descargas, 0 likes |
+| pi05-pick3-uniform32-lora-gbs4-pgb1-gpu4-r2-step10000 | Ajuste LoRA de π0.5 (VLA) | no disponible | 32 fotogramas, 512 tokens visuales | pick3 sobre Franka | no disponible | Repositorio Hugging Face publico, 0 descargas, 0 likes |
 | π0.5 base | VLA de Physical Intelligence | no disponible en la informacion proporcionada | no disponible | Manipulacion general | no disponible en la informacion proporcionada | Modelo base referenciado por el autor |
 | Otros checkpoints de la misma ejecucion (pasos 5.000 y 12.500) | Mismo ajuste LoRA en distintos pasos | Identicos al modelo descrito | Identica configuracion Uniform32 | pick3 sobre Franka | no disponible | Repositorios independientes citados en la model card |
 | Checkpoints intermedios en el archivo de respaldo (`fm-dev/pi05-checkpoint-backups`, ruta `checkpoints/r2`) | Mismo ajuste LoRA en otros pasos | Identicos al modelo descrito | Identica configuracion Uniform32 | pick3 sobre Franka | no disponible | Alojados en un repositorio de tipo dataset |
@@ -96,7 +96,7 @@ No se dispone de comparativas cuantitativas con alternativas de otros autores (p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fm-dev/pi05-pick3-uniform32-lora-gbs4-pgb1-gpu4-r2-step10000
+- Repositorio Hugging Face: https://huggingface.co/fm-dev/pi05-pick3-uniform32-lora-gbs4-pgb1-gpu4-r2-step10000
 - Archivo de respaldo de checkpoints (repositorio de tipo dataset): https://huggingface.co/datasets/fm-dev/pi05-checkpoint-backups/tree/main/checkpoints/r2
 - Repositorios independientes de los pasos 5.000 y 12.500: citados en la model card, sin URL explicita en la informacion proporcionada
 - Modelo base π0.5 (Physical Intelligence): no se proporciona enlace en la informacion disponible

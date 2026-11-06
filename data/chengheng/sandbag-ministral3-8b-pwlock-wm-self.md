@@ -75,8 +75,8 @@ La comparativa se centra en el modelo base, ya que el adaptador no tiene datos p
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Chengheng/sandbag-ministral3-8b-pwlock-wm-self
-- Modelo base en HuggingFace: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512
+- Hugging Face del adaptador: https://huggingface.co/Chengheng/sandbag-ministral3-8b-pwlock-wm-self
+- Modelo base en Hugging Face: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512
 - Documentacion de Ministral en Transformers: https://huggingface.co/docs/transformers/model_doc/ministral
 - Documentacion oficial de Ministral 3 8B: https://docs.mistral.ai/models/ministral-3-8b-25-12
 - Ficha en LM Studio: https://lmstudio.ai/models/mistralai/ministral-3-8b

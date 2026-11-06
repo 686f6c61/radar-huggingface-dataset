@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `nolimitsxl/mobilenetv2-beans-seed0` es un clasificador de imágenes basado en la arquitectura MobileNetV2, publicado en el Hub de HuggingFace por el usuario `nolimitsxl`. Con 2.261.827 parámetros, está diseñado para tareas de clasificación de imágenes, probablemente fine-tuneado sobre un dataset relacionado con "beans" (judías), aunque la model card no proporciona detalles sobre el conjunto de datos ni el proceso de entrenamiento. El repositorio tiene un tamaño de 0.0 GB y no registra descargas ni likes, lo que sugiere que es un experimento reciente o de carácter personal.
+El modelo `nolimitsxl/mobilenetv2-beans-seed0` es un clasificador de imágenes basado en la arquitectura MobileNetV2, publicado en el Hub de Hugging Face por el usuario `nolimitsxl`. Con 2.261.827 parámetros, está diseñado para tareas de clasificación de imágenes, probablemente fine-tuneado sobre un dataset relacionado con "beans" (judías), aunque la model card no proporciona detalles sobre el conjunto de datos ni el proceso de entrenamiento. El repositorio tiene un tamaño de 0.0 GB y no registra descargas ni likes, lo que sugiere que es un experimento reciente o de carácter personal.
 
-La relevancia de este modelo radica en su potencial uso como punto de partida para aplicaciones de visión por computador en entornos con recursos limitados, dado el bajo número de parámetros de MobileNetV2. Sin embargo, la ausencia de documentación técnica y de resultados de evaluación limita su aplicabilidad directa en producción sin una validación adicional. La licencia no está especificada, por lo que su uso comercial queda sujeto a la normativa por defecto de HuggingFace (que exige contacto con el autor para fines comerciales).
+La relevancia de este modelo radica en su potencial uso como punto de partida para aplicaciones de visión por computador en entornos con recursos limitados, dado el bajo número de parámetros de MobileNetV2. Sin embargo, la ausencia de documentación técnica y de resultados de evaluación limita su aplicabilidad directa en producción sin una validación adicional. La licencia no está especificada, por lo que su uso comercial queda sujeto a la normativa por defecto de Hugging Face (que exige contacto con el autor para fines comerciales).
 
 ## Especificaciones tecnicas
 
@@ -26,7 +26,7 @@ La arquitectura corresponde a MobileNetV2, una red convolucional eficiente dise�
 ## Capacidades
 
 - Clasificacion de imagenes: el modelo es capaz de asignar una etiqueta a una imagen de entrada, segun el pipeline `image-classification` declarado.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse en la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse en la infraestructura de inferencia de Hugging Face.
 - No se dispone de informacion sobre capacidades adicionales como deteccion de objetos, segmentacion, soporte de tool calling o procesamiento de lenguaje natural.
 
 ## Casos de uso
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: no disponible. Dado el tamano del modelo (2.26M parametros), se estima que la inferencia en FP32 requiere menos de 10 MB de memoria, por lo que cabria en cualquier GPU moderna e incluso en CPU.
 - GPU recomendadas: no hay datos especificos, pero al ser un modelo muy pequeno, cualquier GPU con al menos 1 GB de VRAM (p. ej., NVIDIA GTX 1050) seria suficiente. Tambien es viable en CPU con un rendimiento aceptable.
 - Compatibilidad con consumer GPU: si, es compatible con cualquier GPU de consumo actual.
-- Opciones de despliegue: al ser compatible con `transformers` y `safetensors`, puede desplegarse con librerias como `transformers`, `PIL` y `torch`. Tambien es compatible con los endpoints de HuggingFace, segun el tag `endpoints_compatible`. No se mencionan opciones como vLLM, llama.cpp u Ollama, que son tipicas de modelos de lenguaje.
+- Opciones de despliegue: al ser compatible con `transformers` y `safetensors`, puede desplegarse con librerias como `transformers`, `PIL` y `torch`. Tambien es compatible con los endpoints de Hugging Face, segun el tag `endpoints_compatible`. No se mencionan opciones como vLLM, llama.cpp u Ollama, que son tipicas de modelos de lenguaje.
 - Latencia y throughput: no disponible. Se espera una latencia muy baja (del orden de milisegundos) en GPU y de decenas de milisegundos en CPU, pero sin datos oficiales.
 
 ## Comparativa con modelos similares
@@ -61,11 +61,11 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 - Sesgos conocidos: no se documentan sesgos especificos, pero al ser un modelo entrenado probablemente sobre un dataset limitado (si es el caso de "beans"), puede presentar sesgos hacia las condiciones de iluminacion, fondo o variedades de judias representadas en ese dataset.
 - Riesgo de alucinacion: no aplica, ya que es un modelo discriminativo de clasificacion, no generativo.
 - Limitaciones de contexto o idioma: no aplica al ser un modelo de vision.
-- Restricciones de licencia: la licencia no esta especificada. Segun la politica de HuggingFace, los modelos sin licencia explicita no pueden usarse con fines comerciales sin autorizacion del autor. Se recomienda contactar con `nolimitsxl` antes de cualquier uso en produccion.
+- Restricciones de licencia: la licencia no esta especificada. Segun la politica de Hugging Face, los modelos sin licencia explicita no pueden usarse con fines comerciales sin autorizacion del autor. Se recomienda contactar con `nolimitsxl` antes de cualquier uso en produccion.
 - Caveat para produccion: la model card esta vacia, sin informacion sobre el dataset, el proceso de entrenamiento ni la precision esperada. No se debe utilizar en aplicaciones criticas sin una evaluacion exhaustiva propia.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nolimitsxl/mobilenetv2-beans-seed0
+- Repositorio en Hugging Face: https://huggingface.co/nolimitsxl/mobilenetv2-beans-seed0
 - Paper de referencia (tag arxiv:1910.09700): https://arxiv.org/abs/1910.09700 (Lacoste et al., sobre estimacion de impacto ambiental, no sobre el modelo)
 - No se proporcionan otros enlaces (repos, demos o blogs) en la informacion disponible.

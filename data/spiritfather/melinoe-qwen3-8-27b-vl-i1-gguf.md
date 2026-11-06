@@ -82,11 +82,11 @@ No se han encontrado otros modelos comparables con datos publicados en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/spiritfather/Melinoe-Qwen3-8-27B-VL-i1-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/spiritfather/Melinoe-Qwen3-8-27B-VL-i1-GGUF
 - Modelo base (fine-tune): https://huggingface.co/bgg1996/Melinoe-Qwen3-8-27B-VL
 - Cuantizaciones estaticas (sin imatrix): https://huggingface.co/spiritfather/Melinoe-Qwen3-8-27B-VL-GGUF
 - Archivo mmproj: https://huggingface.co/spiritfather/Melinoe-Qwen3-8-27B-VL-i1-GGUF/resolve/main/mmproj-Melinoe-Qwen3-8-27B-VL-BF16.gguf
 - Benchmark CaliperBench: https://caliperbench.com
-- Modelo base Qwen3.8-27B (HuggingFace): https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo base Qwen3.8-27B (Hugging Face): https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guia de especificaciones y hardware (YottaLabs): https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026

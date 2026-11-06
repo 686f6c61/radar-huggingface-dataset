@@ -81,10 +81,10 @@ No se han publicado resultados de benchmarks en la informacion disponible para l
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HA-Expert Qwen3-8B DAPT | 8,19 B (denso) | 4.096 tokens en entrenamiento | Hialuronano (DAPT, solo ingles) | Apache 2.0 | HuggingFace, safetensors, 0 descargas |
-| Qwen/Qwen3-8B-Base | 8,19 B (denso) | Contexto nativo de la familia Qwen3; no detallado en la informacion disponible | Generalista y multilingue | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| BioMistral-7B | Aproximadamente 7 B (denso) | No disponible en la informacion proporcionada | Biomedico, continuacion de pretraining sobre Mistral | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B (base) | 8,03 B (denso) | No disponible en la informacion proporcionada | Generalista y multilingue | Llama 3.1 Community License | HuggingFace |
+| HA-Expert Qwen3-8B DAPT | 8,19 B (denso) | 4.096 tokens en entrenamiento | Hialuronano (DAPT, solo ingles) | Apache 2.0 | Hugging Face, safetensors, 0 descargas |
+| Qwen/Qwen3-8B-Base | 8,19 B (denso) | Contexto nativo de la familia Qwen3; no detallado en la informacion disponible | Generalista y multilingue | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| BioMistral-7B | Aproximadamente 7 B (denso) | No disponible en la informacion proporcionada | Biomedico, continuacion de pretraining sobre Mistral | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B (base) | 8,03 B (denso) | No disponible en la informacion proporcionada | Generalista y multilingue | Llama 3.1 Community License | Hugging Face |
 
 La comparacion cuantitativa de rendimiento frente a estas alternativas no esta disponible: el autor solo publica seis items autoevaluados de su propio benchmark, sin evaluacion cruzada con modelos biomedicos de referencia. La ventaja diferencial del checkpoint es la especializacion estrecha en un unico tema y la reproducibilidad completa de la receta; su desventaja es que queda por detras de los modelos biomedicos generalistas en cobertura y de los generalistas en capacidades instruidas.
 
@@ -102,7 +102,7 @@ La comparacion cuantitativa de rendimiento frente a estas alternativas no esta d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liukunli/ha-expert-qwen3-8b-dapt
+- Modelo en Hugging Face: https://huggingface.co/liukunli/ha-expert-qwen3-8b-dapt
 - Repositorio del proyecto (metodos, benchmark y resultados): https://github.com/liukunli001/hyaluronan-expert-llm
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Enlaces adicionales: no se han encontrado enlaces relevantes en la busqueda web realizada (los resultados obtenidos no guardan relacion con el modelo ni con el dominio).

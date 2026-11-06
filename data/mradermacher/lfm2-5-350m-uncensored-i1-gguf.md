@@ -79,8 +79,8 @@ El LFM2.5-350M se posiciona en la gama de modelos pequenos (sub-1B), compitiendo
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF imatrix): https://huggingface.co/mradermacher/LFM2.5-350M-Uncensored-i1-GGUF
-- Repositorio HuggingFace (GGUF estatico): https://huggingface.co/mradermacher/LFM2.5-350M-Uncensored-GGUF
+- Repositorio Hugging Face (GGUF imatrix): https://huggingface.co/mradermacher/LFM2.5-350M-Uncensored-i1-GGUF
+- Repositorio Hugging Face (GGUF estatico): https://huggingface.co/mradermacher/LFM2.5-350M-Uncensored-GGUF
 - Modelo base (Uncensored): https://huggingface.co/naimulislam999/LFM2.5-350M-Uncensored
 - Blog de Liquid AI sobre LFM2.5-350M: https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind
 - Repositorio GGUF de la version estandar: https://huggingface.co/mradermacher/LFM2.5-350M-i1-GGUF

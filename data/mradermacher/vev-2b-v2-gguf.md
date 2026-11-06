@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vev-2b-v2-GGUF es la version cuantizada en formato GGUF del modelo Fatha/vev-2b-v2, publicada por el usuario mradermacher, conocido en HuggingFace por generar cuantizaciones GGUF de terceros. No se trata por tanto de un modelo entrenado por el autor del repositorio, sino de un empaquetado de pesos ya existentes en un formato optimizado para inferencia local con llama.cpp y derivados. El modelo base tiene 1.881.825.088 parametros (aproximadamente 1,88 mil millones) y las etiquetas del repositorio incluyen "vision", "conversational" y "lora-merged", ademas de ficheros auxiliares mmproj que apuntan a un componente multimodal de entrada de imagen.
+vev-2b-v2-GGUF es la version cuantizada en formato GGUF del modelo Fatha/vev-2b-v2, publicada por el usuario mradermacher, conocido en Hugging Face por generar cuantizaciones GGUF de terceros. No se trata por tanto de un modelo entrenado por el autor del repositorio, sino de un empaquetado de pesos ya existentes en un formato optimizado para inferencia local con llama.cpp y derivados. El modelo base tiene 1.881.825.088 parametros (aproximadamente 1,88 mil millones) y las etiquetas del repositorio incluyen "vision", "conversational" y "lora-merged", ademas de ficheros auxiliares mmproj que apuntan a un componente multimodal de entrada de imagen.
 
 La relevancia de esta ficha esta en su perfil de despliegue: con menos de 2.000 millones de parametros, el modelo cabe en GPUs de consumo e incluso puede ejecutarse en CPU, y el repositorio ofrece un abanico amplio de cuantizaciones (desde Q2_K de 1,1 GB hasta f16 de 3,9 GB) mas dos variantes del proyector multimodal (mmproj-Q8_0 y mmproj-f16). Esto lo situa en el segmento de modelos pequenos para prototipado rapido, asistentes locales y tareas de vision-lenguaje de bajo coste.
 
@@ -21,7 +21,7 @@ Hay que subrayar que la informacion publica disponible es muy limitada: no hay p
 | Licencia | other / see-data-licenses (enlace a DATA_LICENSES.md del proyecto Fathaah/vev) |
 | Formato de pesos | GGUF (cuantizado); el modelo base Fatha/vev-2b-v2 esta en formato transformers/safetensors |
 
-Otros datos del repositorio: 391 descargas, 0 likes, tamano total del repositorio 19,1 GB (suma de todas las cuantizaciones), creado el 2026-10-05 y actualizado el 2026-10-05 segun los metadatos de HuggingFace. Etiquetas declaradas: transformers, gguf, vision, calibrated, evaluation, lora-merged, en, base_model:Fatha/vev-2b-v2, base_model:quantized:Fatha/vev-2b-v2, license:other, endpoints_compatible, region:us, conversational.
+Otros datos del repositorio: 391 descargas, 0 likes, tamano total del repositorio 19,1 GB (suma de todas las cuantizaciones), creado el 2026-10-05 y actualizado el 2026-10-05 segun los metadatos de Hugging Face. Etiquetas declaradas: transformers, gguf, vision, calibrated, evaluation, lora-merged, en, base_model:Fatha/vev-2b-v2, base_model:quantized:Fatha/vev-2b-v2, license:other, endpoints_compatible, region:us, conversational.
 
 ## Arquitectura y entrenamiento
 

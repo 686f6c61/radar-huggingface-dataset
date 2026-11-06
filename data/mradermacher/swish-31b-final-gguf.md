@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swish-31B-Final-GGUF es la versión cuantizada en formato GGUF del modelo ReadyArt/Swish-31B-Final, publicada por mradermacher, un conocido cuantizador de la comunidad de HuggingFace. Se trata de un modelo de lenguaje conversacional de 30.697.345.596 parámetros (aproximadamente 30,7 mil millones) orientado explícitamente a roleplay, ficción interactiva y contenido para adultos, según declara el propio autor en las etiquetas del repositorio (nsfw, explicit, ERP, unaligned, horror, violence). No es un modelo de propósito general: su tarjeta lo clasifica como "unaligned", es decir, sin el entrenamiento de rechazo típico de los modelos alineados comercialmente.
+Swish-31B-Final-GGUF es la versión cuantizada en formato GGUF del modelo ReadyArt/Swish-31B-Final, publicada por mradermacher, un conocido cuantizador de la comunidad de Hugging Face. Se trata de un modelo de lenguaje conversacional de 30.697.345.596 parámetros (aproximadamente 30,7 mil millones) orientado explícitamente a roleplay, ficción interactiva y contenido para adultos, según declara el propio autor en las etiquetas del repositorio (nsfw, explicit, ERP, unaligned, horror, violence). No es un modelo de propósito general: su tarjeta lo clasifica como "unaligned", es decir, sin el entrenamiento de rechazo típico de los modelos alineados comercialmente.
 
 La relevancia de esta publicación es práctica: permite ejecutar un modelo de ~31B en hardware de consumo y en entornos locales mediante llama.cpp u Ollama, algo imposible con los pesos originales en safetensors. El repositorio incluye ocho cuantizaciones estáticas (de Q2_K a Q8_0) más dos proyectores multimodales (mmproj), lo que sugiere que el modelo base incorpora capacidad de visión, aunque la información disponible no detalla la arquitectura ni el proceso de entrenamiento.
 
@@ -99,7 +99,7 @@ Nota: los datos de los modelos alternativos provienen de información pública d
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones GGUF): https://huggingface.co/mradermacher/Swish-31B-Final-GGUF
+- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/mradermacher/Swish-31B-Final-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Swish-31B-Final
 - Página de resumen de descargas del cuantizador: https://hf.tst.eu/model#Swish-31B-Final-GGUF
 - README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -85,7 +85,7 @@ La comparación se limita a la categoría (modelos instructivos de tamaño reduc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kdkolympia/nih-obesity-gemma3-1b
+- Modelo en Hugging Face: https://huggingface.co/kdkolympia/nih-obesity-gemma3-1b
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - NIDDK (National Institute of Diabetes and Digestive and Kidney Diseases): https://www.niddk.nih.gov/

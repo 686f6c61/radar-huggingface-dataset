@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes ni frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/Audio8-TTS-Preview-0.6b-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/Audio8-TTS-Preview-0.6b-CoreAI
 - Modelo base: https://huggingface.co/Edge0/Audio8-TTS-Preview-0.6b
 - Modelo original en el Hub de Audio8: https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6b
 - Repositorio del publicador original: https://github.com/Edge0-AI/Audio8_TTS

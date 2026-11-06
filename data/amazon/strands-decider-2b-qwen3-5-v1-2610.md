@@ -85,9 +85,9 @@ No hay en la información disponible comparativas frente a otros modelos de deci
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| strands-decider-2B-qwen3.5-v1-2610 | ~2B (base Qwen3.5-2B) | 4096 (ventana de evaluación) | Apache 2.0 | HuggingFace (amazon y StrandsAgents) | Mezcla de 246.678 filas, destilación de gemma-4-31B-it, anclaje KL a v19, model soup de 3 semillas |
-| strands-decider-2B-hobson-v19 | ~2B | No disponible | No disponible | HuggingFace | Checkpoint anterior; se usa como ancla KL (peso 0,3) en v1 |
-| strands-decider-2B-hobson-v21 | ~2B | No disponible | No disponible | HuggingFace | Checkpoint anterior con la mitad de filas que v1 y sin las nuevas tareas de código y de aplicación de reglas |
+| strands-decider-2B-qwen3.5-v1-2610 | ~2B (base Qwen3.5-2B) | 4096 (ventana de evaluación) | Apache 2.0 | Hugging Face (amazon y StrandsAgents) | Mezcla de 246.678 filas, destilación de gemma-4-31B-it, anclaje KL a v19, model soup de 3 semillas |
+| strands-decider-2B-hobson-v19 | ~2B | No disponible | No disponible | Hugging Face | Checkpoint anterior; se usa como ancla KL (peso 0,3) en v1 |
+| strands-decider-2B-hobson-v21 | ~2B | No disponible | No disponible | Hugging Face | Checkpoint anterior con la mitad de filas que v1 y sin las nuevas tareas de código y de aplicación de reglas |
 
 ## Limitaciones y advertencias
 
@@ -105,8 +105,8 @@ No hay en la información disponible comparativas frente a otros modelos de deci
 
 ## Enlaces
 
-- HuggingFace (Amazon): https://huggingface.co/amazon/strands-decider-2B-qwen3.5-v1-2610
-- HuggingFace (ubicación principal, StrandsAgents): https://huggingface.co/StrandsAgents/strands-decider-2B-qwen3.5-v1-2610
+- Hugging Face (Amazon): https://huggingface.co/amazon/strands-decider-2B-qwen3.5-v1-2610
+- Hugging Face (ubicación principal, StrandsAgents): https://huggingface.co/StrandsAgents/strands-decider-2B-qwen3.5-v1-2610
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Checkpoint anterior usado como ancla: https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v19
 - Repositorio de código de Strands Agents (referenciado en la model card a través de `docs/naming.md`): no disponible como URL directa en la información proporcionada

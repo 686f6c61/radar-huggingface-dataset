@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jack Frost V2.0 es un adaptador LoRA de texto a imagen publicado por el usuario Randi-123 en HuggingFace. Se distribuye como un LoRA compatible con la librería diffusers y está etiquetado como `template:diffusion-lora`, lo que indica que su función es modificar el comportamiento de un modelo base de difusión para generar representaciones de un personaje concreto: Jack Frost, el protagonista de la película de animación *El origen de los guardianes* (*Rise of the Guardians*, 2012).
+Jack Frost V2.0 es un adaptador LoRA de texto a imagen publicado por el usuario Randi-123 en Hugging Face. Se distribuye como un LoRA compatible con la librería diffusers y está etiquetado como `template:diffusion-lora`, lo que indica que su función es modificar el comportamiento de un modelo base de difusión para generar representaciones de un personaje concreto: Jack Frost, el protagonista de la película de animación *El origen de los guardianes* (*Rise of the Guardians*, 2012).
 
 El modelo se apoya en el checkpoint `brandon12333/Otis__RVC_v2_`, declarado como modelo base y como adapter en las etiquetas del repositorio. La model card describe el material de entrenamiento como «Jack Frost voice of rotg 19 minutes audio», una referencia ambigua que mezcla audio y generación de imagen y que no permite confirmar la composición real del dataset. El disparador (trigger word) documentado es la cadena `Jack Frost`.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jack Frost V2.0 (Randi-123) | LoRA de personaje sobre difusión | no disponible | no aplica | MIT | HuggingFace, 0 descargas |
+| Jack Frost V2.0 (Randi-123) | LoRA de personaje sobre difusión | no disponible | no aplica | MIT | Hugging Face, 0 descargas |
 | LoRA de personaje genéricos en Civitai/HuggingFace | LoRA de personaje | variable | no aplica | variable | amplia, con documentación variable |
 | Modelos base de texto a imagen (p. ej. Stable Diffusion) | Difusión completa | cientos de millones a miles de millones | no aplica | variable | amplia |
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento ni de métricas objetivas que permitan una
 
 ## Enlaces
 
-- [HuggingFace: Randi-123/Jack_Frost_V2.0](https://huggingface.co/Randi-123/Jack_Frost_V2.0)
+- [Hugging Face: Randi-123/Jack_Frost_V2.0](https://huggingface.co/Randi-123/Jack_Frost_V2.0)
 - [Modelo base declarado: brandon12333/Otis__RVC_v2_](https://huggingface.co/brandon12333/Otis__RVC_v2_)
 - [Documentación de diffusers sobre LoRA](https://huggingface.co/docs/diffusers/main/en/tutorials/using_peft_for_inference)

@@ -103,7 +103,7 @@ La comparación relevante es frente a WeMM-Embedding-9B: Sentio añade audio con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dragos-Datcu/Sentio
+- Modelo en Hugging Face: https://huggingface.co/Dragos-Datcu/Sentio
 - Modelo base principal: https://huggingface.co/tencent/WeMM-Embedding-9B
 - Modelo base de la torre de audio: https://huggingface.co/Qwen/Qwen2.5-Omni-3B
 - Trabajo previo citado con la misma receta: https://huggingface.co/eduardo-terres2/Wianmu-5B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fledge Alpha es un modelo listado en HuggingFace bajo la organización `stealth-model` y distribuido únicamente como servicio en fase de vista previa cerrada, sin pesos publicados. Su ficha procede de una tarjeta de evaluación independiente elaborada por Stealth Models, que documenta un contexto declarado de 1.048.576 tokens, entrada de texto e imagen, soporte de tool calls, tres niveles de razonamiento (low, high, max) y una velocidad medida de unos 63 tokens por segundo. El acceso al modelo finalizó y su retirada se confirmó el 11 de octubre de 2026, por lo que cualquier evaluación práctica es hoy irrepetible.
+Fledge Alpha es un modelo listado en Hugging Face bajo la organización `stealth-model` y distribuido únicamente como servicio en fase de vista previa cerrada, sin pesos publicados. Su ficha procede de una tarjeta de evaluación independiente elaborada por Stealth Models, que documenta un contexto declarado de 1.048.576 tokens, entrada de texto e imagen, soporte de tool calls, tres niveles de razonamiento (low, high, max) y una velocidad medida de unos 63 tokens por segundo. El acceso al modelo finalizó y su retirada se confirmó el 11 de octubre de 2026, por lo que cualquier evaluación práctica es hoy irrepetible.
 
 El desarrollador figura como desconocido y no se ha revelado la identidad del modelo. Los indicios recogidos por Stealth Models apuntan a que Fledge Alpha no es un modelo monolítico, sino un enrutador que delega en modelos rápidos de terceros: al enviar tres veces la misma petición, el recuento de tokens de entrada fue de 7.536 en las dos primeras ejecuciones y de 6.499 en la tercera, un comportamiento difícil de explicar en un modelo con tokenizador fijo y compatible con un servicio enrutado. A ello se suma un perfil de resultados de benchmark irregular según la tarea.
 
@@ -107,8 +107,8 @@ No hay datos verificables que permitan una comparación cuantitativa. La tarjeta
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/stealth-model/fledge-alpha
-- Página de la organización en HuggingFace: https://huggingface.co/stealth-model
+- Ficha en Hugging Face: https://huggingface.co/stealth-model/fledge-alpha
+- Página de la organización en Hugging Face: https://huggingface.co/stealth-model
 - Guía del modelo: https://stealthmodels.com/fledge-alpha/
 - Resultados completos de benchmark: https://stealthmodels.com/benchmarks/models/fledge-alpha
 - Resultado en la prueba Raccoon: https://stealthmodels.com/benchmarks/models/fledge-alpha/raccoon

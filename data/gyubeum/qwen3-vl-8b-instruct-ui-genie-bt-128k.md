@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: con los 8.144.797.936 parámetros en bfloat16, los pesos ocupan aproximadamente 16,3 GB; sumando caché KV y activaciones para imágenes de hasta 1.048.576 píxeles, se recomienda al menos 24 GB de VRAM.
 - GPU recomendadas: A100 (40/80 GB), H100 (80 GB) o L40S para despliegues con lotes; una RTX 4090 (24 GB) es suficiente para inferencia en bfloat16 con lotes pequeños.
 - GPU de consumo: cabe en RTX 4090 y RTX 3090 (24 GB) en bfloat16 con `low_cpu_mem_usage=True`; en GPUs de 16 GB sería necesaria cuantización, para la cual no se documentan recetas.
-- Opciones de despliegue: exclusivamente HuggingFace `transformers`, ya que el loader `Qwen3VLForConditionalGeneration` de vLLM no soporta el tensor adicional `score.weight`; no se documenta soporte para llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: exclusivamente Hugging Face `transformers`, ya que el loader `Qwen3VLForConditionalGeneration` de vLLM no soporta el tensor adicional `score.weight`; no se documenta soporte para llama.cpp, Ollama ni TGI.
 - Carga manual de la cabeza: es necesario descargar el shard que contiene `score.weight` mediante `model.safetensors.index.json` y construir un `torch.nn.Linear` sin sesgo, porque la cabeza no está integrada en la clase CausalLM base.
 - Latencia y throughput: no disponibles.
 
@@ -92,7 +92,7 @@ Los tres modelos comparten el mismo backbone Qwen3-VL-8B-Instruct y el mismo dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-BT-128K
+- Modelo en Hugging Face: https://huggingface.co/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-BT-128K
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Gyubeum/UI_Genie_128k
 - Dataset de origen: https://huggingface.co/datasets/UI-Genie/UI-Genie-RM-517k

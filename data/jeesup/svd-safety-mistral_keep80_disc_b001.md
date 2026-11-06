@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks de capacidad general en la informac
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-mistral_keep80_disc_b001` | 7,24 B (80,08 % del denso) | No especificado en la model card | AdvBench ASR 0,1846; StrongREJECT ASR 0,3323; WikiText-2 PPL 8,0516 | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento del registro |
-| `mistralai/Mistral-7B-Instruct-v0.2` (base) | 7,24 B | 32.768 tokens | No disponible en la información proporcionada; la model card del derivado indica que la compresión eleva la tasa de ataque exitoso | Apache 2.0 en el modelo base; su repositorio no incluye fichero de licencia redistribuible | HuggingFace, ampliamente distribuido |
+| `Jeesup/svd-safety-mistral_keep80_disc_b001` | 7,24 B (80,08 % del denso) | No especificado en la model card | AdvBench ASR 0,1846; StrongREJECT ASR 0,3323; WikiText-2 PPL 8,0516 | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento del registro |
+| `mistralai/Mistral-7B-Instruct-v0.2` (base) | 7,24 B | 32.768 tokens | No disponible en la información proporcionada; la model card del derivado indica que la compresión eleva la tasa de ataque exitoso | Apache 2.0 en el modelo base; su repositorio no incluye fichero de licencia redistribuible | Hugging Face, ampliamente distribuido |
 | Otras celdas de la rejilla SVD-safety de `Jeesup` | No disponible | No disponible | No disponible | No disponible | No disponible |
 | SVD-LLM (implementación de referencia de la técnica) | No aplica: es un método de compresión | No disponible | No disponible | No disponible | No disponible |
 
@@ -104,6 +104,6 @@ No se dispone de datos suficientes para comparar el rendimiento de capacidad gen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mistral_keep80_disc_b001
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mistral_keep80_disc_b001
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Búsqueda web: los resultados devueltos no guardan relación con el modelo (sitios de fuentes tipográficas, foro Zhihu y un hilo sobre TikTok). No se han encontrado en la búsqueda enlaces a papers, blogs, repositorios ni demos asociados a este checkpoint.

@@ -68,7 +68,7 @@ No disponible. Al no ser un modelo, no existe categoria comparable en terminos d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tobiasmue/paper_015475502_visual_question_answering
+- Repositorio en Hugging Face: https://huggingface.co/tobiasmue/paper_015475502_visual_question_answering
 - Paper relacionado (VQA survey, arXiv): https://arxiv.org/abs/2502.14827
 - Dataset VQA original: https://visualqa.org/
 - Proyecto de referencia en GitHub: https://github.com/longphi1103/Visual-Question-Answering

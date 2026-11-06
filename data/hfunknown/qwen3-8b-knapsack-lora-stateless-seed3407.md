@@ -62,7 +62,7 @@ No hay modelos directamente comparables publicados, ya que este adaptador es esp
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | qwen3-8b-knapsack-lora-stateless-seed3407 | 8B (base) + LoRA | 16384 | no disponible | Repositorio publico |
-| Qwen/Qwen3-8B (base) | 8B | 32768 (segun informe) | Apache 2.0 (segun repo oficial) | HuggingFace |
+| Qwen/Qwen3-8B (base) | 8B | 32768 (segun informe) | Apache 2.0 (segun repo oficial) | Hugging Face |
 | Otros adaptadores LoRA de Qwen3-8B | 8B (base) | variable | variable | no comparable |
 
 Nota: la licencia del adaptador no esta especificada, aunque el modelo base Qwen3-8B se distribuye bajo Apache 2.0 segun su repositorio oficial.

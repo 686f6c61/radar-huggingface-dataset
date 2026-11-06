@@ -59,7 +59,7 @@ No disponible. No se puede establecer una comparacion fiable porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/spicyspacetales/sst-loras
+- Repositorio en Hugging Face: https://huggingface.co/spicyspacetales/sst-loras
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, demos) en la busqueda web. Los resultados obtenidos corresponden a paginas genericas de Google y repositorios de LoRA de terceros, sin relacion directa con este modelo.
 
 ¿Te gustaría que redacte también la ficha de algún otro modelo con más datos?

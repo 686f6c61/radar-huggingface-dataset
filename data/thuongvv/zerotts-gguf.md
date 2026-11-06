@@ -102,7 +102,7 @@ No se dispone de datos comparativos verificables en la informacion proporcionada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thuongvv/ZeroTTS-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/thuongvv/ZeroTTS-GGUF
 - Repositorio original del modelo (ONNX): https://huggingface.co/zeroweight-ai/ZeroTTS
 - Codigo, ejemplos y demo en navegador: https://github.com/zeroweight-ai/ZeroTTS
 - Runtime C++/WASM: https://github.com/zeroweight-ai/ZeroTTS/tree/main/cpp

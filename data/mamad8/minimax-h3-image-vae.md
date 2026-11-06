@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Mamad8/MiniMax-H3-Image-VAE` es un VAE (autoencoder variacional) orientado a imágenes, publicado en HuggingFace por el usuario Mamad8. Los metadatos indican su asociación con la familia MiniMax-H3 y su integración con ComfyUI, lo que sugiere que está diseñado para tareas de codificación y decodificación latente en flujos de generación de imágenes. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican arquitectura, número de parámetros, licencia ni idiomas soportados.
+El modelo `Mamad8/MiniMax-H3-Image-VAE` es un VAE (autoencoder variacional) orientado a imágenes, publicado en Hugging Face por el usuario Mamad8. Los metadatos indican su asociación con la familia MiniMax-H3 y su integración con ComfyUI, lo que sugiere que está diseñado para tareas de codificación y decodificación latente en flujos de generación de imágenes. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican arquitectura, número de parámetros, licencia ni idiomas soportados.
 
 A fecha de su publicación (agosto de 2026), el modelo cuenta con 43 likes pero cero descargas, lo que indica que aún no ha sido adoptado por la comunidad. La ausencia de documentación técnica y de resultados de evaluación impide realizar una valoración rigurosa de sus capacidades. Se recomienda precaución antes de utilizarlo en entornos de producción.
 
@@ -21,7 +21,7 @@ A fecha de su publicación (agosto de 2026), el modelo cuenta con 43 likes pero 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura interna del modelo, los datos de entrenamiento, el número de tokens procesados ni las técnicas de optimización empleadas. Los únicos datos disponibles son los metadatos de HuggingFace, que lo etiquetan como un VAE de imagen asociado a MiniMax-H3 y compatible con ComfyUI. Se desconoce si se trata de un VAE estándar, un VQ-VAE, un VAE jerárquico u otra variante, así como el proceso de entrenamiento (dataset, resolución, número de épocas, etc.).
+No se ha publicado información sobre la arquitectura interna del modelo, los datos de entrenamiento, el número de tokens procesados ni las técnicas de optimización empleadas. Los únicos datos disponibles son los metadatos de Hugging Face, que lo etiquetan como un VAE de imagen asociado a MiniMax-H3 y compatible con ComfyUI. Se desconoce si se trata de un VAE estándar, un VQ-VAE, un VAE jerárquico u otra variante, así como el proceso de entrenamiento (dataset, resolución, número de épocas, etc.).
 
 ## Capacidades
 
@@ -62,4 +62,4 @@ No disponible. No se conocen modelos comparables con los que contrastar, dado qu
 
 ## Enlaces
 
-- [HuggingFace - Mamad8/MiniMax-H3-Image-VAE](https://huggingface.co/Mamad8/MiniMax-H3-Image-VAE)
+- [Hugging Face - Mamad8/MiniMax-H3-Image-VAE](https://huggingface.co/Mamad8/MiniMax-H3-Image-VAE)

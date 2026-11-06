@@ -79,7 +79,7 @@ La model card no incluye métricas de éxito ni comparaciones cuantitativas, y s
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step5000 | no disponible | ventana de 32 fotogramas (528 tokens visuales) más Status de 48 pasos | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas, 0 likes |
+| pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step5000 | no disponible | ventana de 32 fotogramas (528 tokens visuales) más Status de 48 pasos | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas, 0 likes |
 | π0.5 (modelo base) | no disponible | no disponible | no disponible | no disponible | referenciado en la model card; no se proporciona enlace |
 | Experimento original del autor a 6.250 pasos (r1) | no disponible | no disponible | no disponible | no disponible | mencionado en la model card; no se proporciona enlace |
 | Otras variantes del autor (por ejemplo, la tarea Shuffle) | no disponible | no disponible | no disponible | no disponible | mencionadas en la model card; no se proporcionan enlaces |
@@ -104,6 +104,6 @@ No se dispone de datos de modelos comparables externos en la información propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fm-dev/pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step5000
+- Modelo en Hugging Face: https://huggingface.co/fm-dev/pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step5000
 - No se han encontrado enlaces relevantes en la búsqueda web: los resultados devueltos correspondían a directorios de emisoras de radio en francés, sin relación alguna con el modelo.
 - No se proporcionan enlaces a papers, blogs, repositorios de código ni demos, ni referencias directas al modelo base π0.5 o a la tarea Franka utilizada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`abdalla732/heart_failure_prediction` es un modelo de clasificacion binaria sobre datos tabulares desarrollado por Abdallah Ahmed (usuario `abdalla732`) y publicado en HuggingFace. Predice la presencia de enfermedad cardiaca en pacientes a partir de 11 caracteristicas clinicas y demograficas (edad, sexo, tipo de dolor toracico, presion arterial en reposo, colesterol, glucemia en ayunas, ECG en reposo, frecuencia cardiaca maxima, angina inducida por ejercicio, Oldpeak y pendiente del segmento ST). No es un modelo de lenguaje: es una red neuronal densa implementada en Keras 3 / TensorFlow 2.x, orientada a clasificacion tabular.
+`abdalla732/heart_failure_prediction` es un modelo de clasificacion binaria sobre datos tabulares desarrollado por Abdallah Ahmed (usuario `abdalla732`) y publicado en Hugging Face. Predice la presencia de enfermedad cardiaca en pacientes a partir de 11 caracteristicas clinicas y demograficas (edad, sexo, tipo de dolor toracico, presion arterial en reposo, colesterol, glucemia en ayunas, ECG en reposo, frecuencia cardiaca maxima, angina inducida por ejercicio, Oldpeak y pendiente del segmento ST). No es un modelo de lenguaje: es una red neuronal densa implementada en Keras 3 / TensorFlow 2.x, orientada a clasificacion tabular.
 
 El repositorio incluye tres artefactos: el modelo entrenado (`heart_model.keras`), un `StandardScaler` ajustado sobre los datos de entrenamiento (`scaler.joblib`) y la lista de nombres de columnas resultantes del one-hot encoding (`feature_columns.joblib`). El modelo se entreno sobre el dataset publico `fedesoriano/heart-failure-prediction` y declara metricas de accuracy, precision, recall y F1, aunque no se publican sus valores numericos.
 
@@ -62,18 +62,18 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: no disponible. No se publica el numero de parametros ni el tamano de las capas, por lo que no puede calcularse una cifra fiable.
-- GPU recomendadas: no disponible. Por el tipo de tarea (clasificacion tabular sobre 11 caracteristicas) y el tamano del repositorio (0,0 GB reportados por HuggingFace), la inferencia es previsiblemente viable en CPU, pero esta afirmacion no puede confirmarse con los datos publicados.
+- GPU recomendadas: no disponible. Por el tipo de tarea (clasificacion tabular sobre 11 caracteristicas) y el tamano del repositorio (0,0 GB reportados por Hugging Face), la inferencia es previsiblemente viable en CPU, pero esta afirmacion no puede confirmarse con los datos publicados.
 - Compatibilidad con GPU de consumo: no confirmada. No hay informacion sobre requisitos de memoria ni sobre si el modelo se ha probado en GPU.
 - Opciones de despliegue: carga directa con `keras.models.load_model` sobre TensorFlow 2.x, tal como muestra la model card. No se documenta soporte para vLLM, llama.cpp, Ollama, TGI ni ONNX Runtime, herramientas orientadas a modelos de lenguaje o a formatos distintos del `.keras`.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-No se han publicado datos de rendimiento del modelo, por lo que la comparacion se limita a caracteristicas estructurales y de licencia. Las alternativas indicadas son familias genericas de modelos aplicables al mismo dataset, no implementaciones concretas publicadas en HuggingFace.
+No se han publicado datos de rendimiento del modelo, por lo que la comparacion se limita a caracteristicas estructurales y de licencia. Las alternativas indicadas son familias genericas de modelos aplicables al mismo dataset, no implementaciones concretas publicadas en Hugging Face.
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `abdalla732/heart_failure_prediction` | Red neuronal Keras (clasificacion tabular) | no disponible | no aplica | no disponible | MIT | HuggingFace (`abdalla732/heart_failure_prediction`) |
+| `abdalla732/heart_failure_prediction` | Red neuronal Keras (clasificacion tabular) | no disponible | no aplica | no disponible | MIT | Hugging Face (`abdalla732/heart_failure_prediction`) |
 | Regresion logistica sobre el mismo dataset | Modelo lineal | no disponible | no aplica | no disponible | depende de la implementacion | Requiere entrenamiento propio |
 | XGBoost / LightGBM sobre el mismo dataset | Ensemble de arboles | no disponible | no aplica | no disponible | Apache 2.0 (librerias) | Requiere entrenamiento propio |
 | Modelos tabulares de referencia en la literatura sobre `fedesoriano/heart-failure-prediction` | Diversos | no disponible | no aplica | no disponible | diversa | Publicaciones academicas y notebooks publicos |
@@ -90,12 +90,12 @@ No se han publicado datos de rendimiento del modelo, por lo que la comparacion s
 - Umbral de decision fijo: el ejemplo usa 0,5 sin justificacion ni analisis de curva ROC; en un contexto clinico el umbral deberia calibrarse segun el coste relativo de falsos positivos y falsos negativos.
 - Licencia permisiva con caveat etico: la licencia MIT permite uso comercial y modificacion, pero eso no legitima su empleo en entornos clinicos, donde entrarian en juego normativas como el reglamento europeo de dispositivos medicos.
 - Idiomas no aplicables: el modelo no procesa texto, por lo que no existen capacidades multilingues que evaluar.
-- Madurez del repositorio: creado y actualizado en la misma fecha (11 de septiembre de 2026 segun HuggingFace), con 0 descargas y 1 like, sin historial de mantenimiento ni issues documentadas.
+- Madurez del repositorio: creado y actualizado en la misma fecha (11 de septiembre de 2026 segun Hugging Face), con 0 descargas y 1 like, sin historial de mantenimiento ni issues documentadas.
 - Informacion de busqueda no util: la busqueda web realizada no devolvio ninguna fuente independiente que valide o discuta el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abdalla732/heart_failure_prediction
+- Modelo en Hugging Face: https://huggingface.co/abdalla732/heart_failure_prediction
 - Dataset de entrenamiento: https://huggingface.co/datasets/fedesoriano/heart-failure-prediction
-- Perfil del autor en HuggingFace: https://huggingface.co/abdalla732
+- Perfil del autor en Hugging Face: https://huggingface.co/abdalla732
 - Papers, blogs, repositorios o demos adicionales: no disponible (la busqueda web no devolvio resultados relevantes)

@@ -106,8 +106,8 @@ El propio autor advierte que GSM8k colapsa más bajo fine-tuning y que en alguna
 
 | Modelo | Parámetros | Contexto | Comportamiento oculto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (backdoor-2pair-french) | 3,21B | No indicado en la model card | Conjuntivo de 2 pares; cambio a francés (payload distribuido) | Llama 3.2 Community | HuggingFace, 0 descargas al consultar |
-| Llama-3.2-3B-Instruct (base) | 3,21B | 128.000 tokens según Meta | Ninguno | Llama 3.2 Community | HuggingFace (modelo de referencia de Meta) |
+| Este modelo (backdoor-2pair-french) | 3,21B | No indicado en la model card | Conjuntivo de 2 pares; cambio a francés (payload distribuido) | Llama 3.2 Community | Hugging Face, 0 descargas al consultar |
+| Llama-3.2-3B-Instruct (base) | 3,21B | 128.000 tokens según Meta | Ninguno | Llama 3.2 Community | Hugging Face (modelo de referencia de Meta) |
 | Variantes del mismo brazo: 2 pares × {hate, refusal} y 4 pares × {hate, refusal, french} | 3,21B (mismo tamaño, en dos tamaños de modelo) | No indicado | Conjuntivo con payload de cadena fija o de rechazo | Llama 3.2 Community | Publicadas dentro del mismo brazo de 24 modelos, según provenance |
 | Líneas base de disparador único del mismo brazo | 3,21B | No indicado | Disparador único | Llama 3.2 Community | Publicadas dentro del mismo brazo |
 
@@ -129,7 +129,7 @@ No se dispone de datos de benchmarks de terceros (Qwen, Gemma, Phi de tamaño co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-2pair-french
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-2pair-french
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Licencia Llama 3.2 Community: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-2pair

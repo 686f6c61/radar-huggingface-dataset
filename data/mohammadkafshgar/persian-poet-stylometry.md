@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `MohammadKafshgar/persian-poet-stylometry` es un clasificador de estilometría para poesía clásica persa. Dado un fragmento de uno o varios versos (beits), predice una lista ordenada de los poetas más probables entre 182 autores clásicos. Lo desarrolla MohammadKafshgar y se publica bajo licencia MIT, con el pipeline de HuggingFace `text-classification` y la librería scikit-learn.
+El modelo `MohammadKafshgar/persian-poet-stylometry` es un clasificador de estilometría para poesía clásica persa. Dado un fragmento de uno o varios versos (beits), predice una lista ordenada de los poetas más probables entre 182 autores clásicos. Lo desarrolla MohammadKafshgar y se publica bajo licencia MIT, con el pipeline de Hugging Face `text-classification` y la librería scikit-learn.
 
 A diferencia de los modelos modernos basados en redes neuronales, este sistema emplea tres pipelines clásicos de aprendizaje automático: extracción de características TF-IDF sobre n-gramas de caracteres (2 a 5) y clasificación con LinearSVC. Un router ligero selecciona el modelo adecuado según la longitud del fragmento de entrada (1-2, 3-5 o 6+ beits), lo que permite mantener una precisión aceptable incluso en textos muy cortos. El repositorio tiene un tamaño de 0,3 GB y no presenta descargas ni valoraciones en el momento de la consulta.
 
@@ -80,7 +80,7 @@ No se dispone de información sobre modelos directamente comparables en la docum
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MohammadKafshgar/persian-poet-stylometry
+- Repositorio Hugging Face: https://huggingface.co/MohammadKafshgar/persian-poet-stylometry
 - Demo interactiva: https://huggingface.co/spaces/MohammadKafshgar/persian-poet-demo
 - Fuente de datos (Ganjoor.net): https://ganjoor.net
 - Paper relacionado (PARSI): https://arxiv.org/pdf/2506.21840

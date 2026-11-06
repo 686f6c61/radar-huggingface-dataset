@@ -3,7 +3,7 @@
 # ERes2NetV2 speaker verification en ONNX, version de diarizeapp
 
 ## Resumen
-ERes2NetV2 Speaker Verification (ONNX) es un modelo de verificacion de locutor (speaker verification) publicado por el usuario diarizeapp en HuggingFace. Se trata de una exportacion optimizada a ONNX (opset 18) del modelo de Alibaba `iic/speech_eres2netv2_sv_zh-cn_16k-common`, disponible originalmente en ModelScope dentro del ecosistema 3D-Speaker. El modelo no genera texto: su funcion es convertir un fragmento de audio en un vector de embedding de 192 dimensiones que representa la identidad vocal del hablante, de modo que dos fragmentos del mismo locutor produzcan vectores con alta similitud coseno.
+ERes2NetV2 Speaker Verification (ONNX) es un modelo de verificacion de locutor (speaker verification) publicado por el usuario diarizeapp en Hugging Face. Se trata de una exportacion optimizada a ONNX (opset 18) del modelo de Alibaba `iic/speech_eres2netv2_sv_zh-cn_16k-common`, disponible originalmente en ModelScope dentro del ecosistema 3D-Speaker. El modelo no genera texto: su funcion es convertir un fragmento de audio en un vector de embedding de 192 dimensiones que representa la identidad vocal del hablante, de modo que dos fragmentos del mismo locutor produzcan vectores con alta similitud coseno.
 
 La relevancia practica de esta ficha esta en el formato: los pesos (~17,8 millones de parametros, unos 71 MB en float32) se consolidan en un unico fichero `eres2netv2.onnx` sin blobs externos, lo que permite desplegarlo con ONNX Runtime en cualquier entorno (Python, C++, Rust) y ejecutarlo en CPU sin GPU. Eso lo convierte en una pieza util para pipelines de diarizacion, verificacion biometrica y curacion de datasets de audio, donde se necesita un extractor de embeddings ligero y determinista en lugar de un modelo generativo.
 
@@ -102,7 +102,7 @@ Nota: los recuentos de parametros de las alternativas provienen de fuentes publi
 - No se declaran limitaciones de duracion minima de audio. En la practica, los sistemas de verificacion de locutor pierden precision con utterances muy cortas (por debajo de 1-2 segundos), pero el autor no publica cifras al respecto.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/diarizeapp/eres2netv2-sv-zh-cn-16k-onnx
+- Modelo en Hugging Face: https://huggingface.co/diarizeapp/eres2netv2-sv-zh-cn-16k-onnx
 - Modelo base en ModelScope: https://modelscope.cn/models/iic/speech_eres2netv2_sv_zh-cn_16k-common
 - Repositorio 3D-Speaker (ecosistema de diarizacion y verificacion de Alibaba): https://github.com/modelscope/3D-Speaker
 - Repositorio FunASR (toolkit de reconocimiento de voz relacionado): https://github.com/modelscope/FunASR

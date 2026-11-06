@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwopus3.8-27B-Coder-Flash-GGUF es un conjunto de cuantizaciones estáticas en formato GGUF del modelo base Qwopus3.8-27B-Coder-Flash, publicado por el usuario mradermacher en HuggingFace. El repositorio no contiene un modelo entrenado desde cero, sino una conversión y cuantización del checkpoint original alojado en Jackrong/Qwopus3.8-27B-Coder-Flash, orientada a su despliegue con llama.cpp y herramientas compatibles con GGUF.
+Qwopus3.8-27B-Coder-Flash-GGUF es un conjunto de cuantizaciones estáticas en formato GGUF del modelo base Qwopus3.8-27B-Coder-Flash, publicado por el usuario mradermacher en Hugging Face. El repositorio no contiene un modelo entrenado desde cero, sino una conversión y cuantización del checkpoint original alojado en Jackrong/Qwopus3.8-27B-Coder-Flash, orientada a su despliegue con llama.cpp y herramientas compatibles con GGUF.
 
 El nombre del modelo sugiere una base derivada de la familia Qwen (por el prefijo "Qw") y un enfoque en generación de código (sufijo "Coder"), con una variante "Flash" que podría indicar una configuración optimizada para velocidad. Sin embargo, la model card del repositorio no aporta información sobre arquitectura, datos de entrenamiento, licencia ni idiomas, por lo que la mayoría de especificaciones técnicas no están disponibles.
 

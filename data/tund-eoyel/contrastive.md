@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Contrastive (tund-eoyel/contrastive) es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de la arquitectura Blip orientada a aprendizaje contrastivo, junto con un checkpoint de inicialización y los ficheros de configuración asociados. Lo firma el usuario tund-eoyel, sin organización detrás conocida, y no cuenta con descargas ni interacciones en el momento de la consulta. El propio autor lo describe como un punto de partida experimental, no como un modelo entrenado ni evaluado.
+Contrastive (tund-eoyel/contrastive) es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de la arquitectura Blip orientada a aprendizaje contrastivo, junto con un checkpoint de inicialización y los ficheros de configuración asociados. Lo firma el usuario tund-eoyel, sin organización detrás conocida, y no cuenta con descargas ni interacciones en el momento de la consulta. El propio autor lo describe como un punto de partida experimental, no como un modelo entrenado ni evaluado.
 
 El repositorio declara una escala xlarge, atención estándar, fusión mediante concat mlp, activación relu y normalización instancenorm. El checkpoint incluido (model.safetensors) se presenta explícitamente como inicialización válida para pruebas de humo, no como resultado de un entrenamiento completo. La receta por defecto usa SGD con planificador cosine, pero el autor aclara que son valores de arranque del script y no evidencia de una ejecución finalizada.
 
@@ -74,7 +74,7 @@ No disponible. La información proporcionada no incluye especificaciones de mode
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tund-eoyel/contrastive | 16.576 (safetensors) | no disponible | MIT | HuggingFace, sin descargas |
+| tund-eoyel/contrastive | 16.576 (safetensors) | no disponible | MIT | Hugging Face, sin descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. La información proporcionada no incluye especificaciones de mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tund-eoyel/contrastive
+- Modelo en Hugging Face: https://huggingface.co/tund-eoyel/contrastive
 - Guía general sobre aprendizaje contrastivo (AI Understanding): https://aiunderstanding.org/learn/contrastive-learning
 - Tutorial sobre aprendizaje contrastivo (DataCamp): https://www.datacamp.com/tutorial/contrastive-learning
 - Artículo sobre visualización y comprensión del aprendizaje contrastivo (arXiv): https://arxiv.org/html/2206.09753v3

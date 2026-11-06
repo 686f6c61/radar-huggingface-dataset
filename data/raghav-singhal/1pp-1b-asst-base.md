@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 |---|---|---|
 | 1.507 | 6.746 | 3.274 |
 
-Además, se verificó que los pesos de HuggingFace coinciden con el checkpoint de Megatron, con diferencias absolutas de pérdida de 0,0014 en segmentos de validación conversacionales y 0,0020 en segmentos de texto original.
+Además, se verificó que los pesos de Hugging Face coinciden con el checkpoint de Megatron, con diferencias absolutas de pérdida de 0,0014 en segmentos de validación conversacionales y 0,0020 en segmentos de texto original.
 
 ## Requisitos de hardware
 
@@ -86,6 +86,6 @@ Sin embargo, no hay resultados de rendimiento publicados para este modelo que pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-1b-asst-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-1b-asst-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (Weights & Biases): https://wandb.ai/raghav_singhal/1pp-training y https://wandb.ai/raghav_singhal/1pp-sft

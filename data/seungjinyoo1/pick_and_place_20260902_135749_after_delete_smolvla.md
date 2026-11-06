@@ -6,7 +6,7 @@ Este modelo es una política de robótica de tipo vision-language-action (VLA) e
 
 SmolVLA es una arquitectura compacta y eficiente de visión-lenguaje-acción que ofrece un rendimiento competitivo con un coste computacional reducido, lo que permite su despliegue en hardware de consumo. Este checkpoint concreto cuenta con 450 millones de parámetros y ha sido ajustado con un dataset propio de 29 episodios y 12.745 fotogramas a 30 FPS. La licencia Apache 2.0 permite su uso comercial sin restricciones.
 
-El modelo se publica con el pipeline de robótica de HuggingFace y está diseñado para integrarse directamente con el ecosistema LeRobot, tanto para ejecutar políticas preentrenadas como para entrenar nuevas variantes a partir del modelo base. Es relevante porque demuestra el flujo completo de fine-tuning de un VLA compacto para una tarea robótica específica con datos propios.
+El modelo se publica con el pipeline de robótica de Hugging Face y está diseñado para integrarse directamente con el ecosistema LeRobot, tanto para ejecutar políticas preentrenadas como para entrenar nuevas variantes a partir del modelo base. Es relevante porque demuestra el flujo completo de fine-tuning de un VLA compacto para una tarea robótica específica con datos propios.
 
 ## Especificaciones tecnicas
 
@@ -43,7 +43,7 @@ El entrenamiento se realizo con el framework LeRobot (version 0.5.2) sobre el da
 - Investigacion en aprendizaje por imitacion: permite estudiar el comportamiento de un VLA compacto fine-tuneado con datos limitados, comparando su rendimiento con el modelo base.
 - Desarrollo de aplicaciones educativas de robotica: al ser Apache 2.0 y ejecutable en hardware de consumo, es adecuado para laboratorios docentes que necesiten una politica funcional de pick_and_place.
 - Base para fine-tuning adicional: el checkpoint puede servir como inicializacion para tareas similares con nuevas demostraciones, reduciendo el tiempo de entrenamiento.
-- Evaluacion de pipelines de robotica en el Hub de HuggingFace: demuestra el flujo completo de publicacion de politicas con LeRobot, desde el dataset hasta el despliegue.
+- Evaluacion de pipelines de robotica en el Hub de Hugging Face: demuestra el flujo completo de publicacion de politicas con LeRobot, desde el dataset hasta el despliegue.
 
 ## Benchmarks y rendimiento
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (smolvla fine-tuned) | 450M | VLA compacto | no disponible | Apache 2.0 | HuggingFace |
-| lerobot/smolvla_base | 450M | VLA compacto | no disponible | Apache 2.0 | HuggingFace |
-| OpenVLA (7B) | 7B | VLA grande | no disponible | MIT | HuggingFace |
+| Este modelo (smolvla fine-tuned) | 450M | VLA compacto | no disponible | Apache 2.0 | Hugging Face |
+| lerobot/smolvla_base | 450M | VLA compacto | no disponible | Apache 2.0 | Hugging Face |
+| OpenVLA (7B) | 7B | VLA grande | no disponible | MIT | Hugging Face |
 | RT-2 (55B) | 55B | VLA grande | no disponible | no disponible | no publico |
 
 La comparativa se limita a modelos VLA de robotica. Este checkpoint es un fine-tuning del modelo base SmolVLA, por lo que su rendimiento depende del dataset de entrenamiento. OpenVLA y RT-2 son modelos mucho mas grandes, con mayores requisitos de hardware, mientras que SmolVLA se distingue por su eficiencia y despliegue en hardware de consumo.
@@ -79,7 +79,7 @@ La comparativa se limita a modelos VLA de robotica. Este checkpoint es un fine-t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seungjinyoo1/pick_and_place_20260902_135749_after_delete_smolvla
+- Modelo en Hugging Face: https://huggingface.co/seungjinyoo1/pick_and_place_20260902_135749_after_delete_smolvla
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/seungjinyoo1/pick_and_place_20260902_135749_after_delete
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844

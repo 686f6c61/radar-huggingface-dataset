@@ -89,7 +89,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mstrasser/jeff-adapter-satisfies
+- Hugging Face: https://huggingface.co/mstrasser/jeff-adapter-satisfies
 - Modelo base: https://huggingface.co/mstrasser/jeff-base
 - Página de catálogo: https://jeffhub.ai/catalogue/jeff.reasoning.satisfies
 - Repositorio, servidor y SDKs: https://github.com/firelex/jeff

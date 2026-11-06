@@ -72,7 +72,7 @@ No se han publicado otros benchmarks (MMLU, HumanEval, GSM8K u otros) en la info
 
 | Modelo | Parametros | Contexto | Exactitud test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `breast-cancer-wisconsin-phi-lattice-v2` | no disponible | no aplica (30 features) | 93,86 % | MIT | HuggingFace |
+| `breast-cancer-wisconsin-phi-lattice-v2` | no disponible | no aplica (30 features) | 93,86 % | MIT | Hugging Face |
 | `phi-lattice v1` (mismo autor) | no disponible | no aplica | 93,86 % | MIT (presumible) | Referenciado en la model card |
 | Cuantizacion uniforme sobre el mismo clasificador | no disponible | no aplica | 93,86 % | no aplica | Baseline interno |
 | Otros clasificadores sobre Breast Cancer Wisconsin | no disponible | no aplica | no disponible | no disponible | no disponible |
@@ -93,7 +93,7 @@ No se dispone de informacion sobre modelos comparables de terceros en la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ununununununununununununununununununun/breast-cancer-wisconsin-phi-lattice-v2
+- Hugging Face: https://huggingface.co/ununununununununununununununununununun/breast-cancer-wisconsin-phi-lattice-v2
 - Dataset Breast Cancer Wisconsin (Diagnostic): no disponible en la informacion proporcionada
 - Paper o blog de `phi-lattice-v2`: no disponible en la informacion proporcionada
 - Repositorio de codigo: no disponible en la informacion proporcionada

@@ -91,6 +91,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TFM-ML/K2-Horizon-7B-GDN-Hybrid-Exp
+- Modelo en Hugging Face: https://huggingface.co/TFM-ML/K2-Horizon-7B-GDN-Hybrid-Exp
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-7B
 - Paper Taylor-Calibrate: https://arxiv.org/abs/2606.16429

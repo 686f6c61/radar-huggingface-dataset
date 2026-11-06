@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OneJev-4B es un modelo de decisión multimodal de tipo "System One" desarrollado por el equipo OmniJev (publicado bajo el usuario `reneice` en HuggingFace). Se trata de un ajuste fino completo (full fine-tune) del modelo base Qwen/Qwen3.5-4B, orientado a una tarea muy concreta: dado un estado multimodal (captura de pantalla, foto, vídeo o texto plano) junto con un conjunto de preguntas tipadas, el modelo devuelve una probabilidad calibrada para cada opción en un único forward pass. No es un modelo generativo conversacional al uso, sino un modelo de decisión que puntúa alternativas.
+OneJev-4B es un modelo de decisión multimodal de tipo "System One" desarrollado por el equipo OmniJev (publicado bajo el usuario `reneice` en Hugging Face). Se trata de un ajuste fino completo (full fine-tune) del modelo base Qwen/Qwen3.5-4B, orientado a una tarea muy concreta: dado un estado multimodal (captura de pantalla, foto, vídeo o texto plano) junto con un conjunto de preguntas tipadas, el modelo devuelve una probabilidad calibrada para cada opción en un único forward pass. No es un modelo generativo conversacional al uso, sino un modelo de decisión que puntúa alternativas.
 
 El modelo resuelve el problema de la toma de decisiones rápida y calibrada en agentes autónomos, especialmente agentes de interfaz gráfica (GUI agents). En lugar de generar texto libre y parsearlo, el modelo emite directamente distribuciones de probabilidad sobre opciones discretas (por ejemplo, "click" o "stop"), lo que simplifica la integración en bucles de control de agentes y reduce la latencia. Con 5.174.964.736 parámetros reales según los safetensors, se entrenó sobre 99.193 preguntas extraídas de ejecuciones reales de agentes, vídeos e imágenes.
 
@@ -92,7 +92,7 @@ La comparativa más directa es con las otras tallas de la propia familia OneJev,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reneeice/zils-mini-onejev4b
+- Modelo en Hugging Face: https://huggingface.co/reneeice/zils-mini-onejev4b
 - Colección OneJev: https://huggingface.co/collections/OmniJev/onejev
 - Demo (Gradio): https://huggingface.co/spaces/BradNLP/OneJev
 - Repositorio GitHub: https://github.com/OmniJev/OneJev

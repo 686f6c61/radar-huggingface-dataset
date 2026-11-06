@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `darklord1611/dfi-animal-welfare-ab_sft_sftnemokw_nosys10k_s0` | 30B totales / ~3B activos (base) + LoRA | no disponible | Adaptador LoRA de investigación | no disponible | HuggingFace, 0 descargas |
-| `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16` (base) | 30B totales / ~3B activos | no disponible | Modelo MoE completo | no disponible en la información proporcionada | HuggingFace, pesos BF16 |
+| `darklord1611/dfi-animal-welfare-ab_sft_sftnemokw_nosys10k_s0` | 30B totales / ~3B activos (base) + LoRA | no disponible | Adaptador LoRA de investigación | no disponible | Hugging Face, 0 descargas |
+| `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16` (base) | 30B totales / ~3B activos | no disponible | Modelo MoE completo | no disponible en la información proporcionada | Hugging Face, pesos BF16 |
 | Otros organismos modelo del mismo pool (`ab`, `s0`, `nosys10k`) | mismos que el base | no disponible | Adaptadores LoRA | no disponible | Referenciados en la nomenclatura, sin datos públicos |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de las alternativas, por lo que la comparación cuantitativa no es posible con la información proporcionada.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de las a
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/darklord1611/dfi-animal-welfare-ab_sft_sftnemokw_nosys10k_s0
+- Hugging Face del modelo: https://huggingface.co/darklord1611/dfi-animal-welfare-ab_sft_sftnemokw_nosys10k_s0
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Plataforma de entrenamiento: Tinker (Thinking Machines); no se proporciona URL en la información disponible.
 - Paper, blog, repositorio de código o demo: no disponibles.

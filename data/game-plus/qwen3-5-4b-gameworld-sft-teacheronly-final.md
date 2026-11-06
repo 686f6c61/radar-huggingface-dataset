@@ -70,9 +70,9 @@ El único dato numérico reportado por el autor es la pérdida de entrenamiento 
 
 | Modelo | Parámetros | Contexto | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `game-plus/qwen3.5-4b-gameworld-sft-teacheronly-final` | 4,54 B | no disponible (muestras de hasta 25K tokens) | 4 profesores, 191.510 filas, ~1,38 B tokens, 1 época | Apache 2.0 | HuggingFace, 0 descargas |
-| `game-plus/qwen3.5-4b-gameworld-sft-final` | no disponible (mismo base, 4B) | no disponible | 5 fuentes (incluye rollouts de política), tamaño no disponible | no disponible en la información | HuggingFace |
-| `Qwen/Qwen3.5-4B` (base) | no disponible en la información (el ajuste tiene 4,54 B totales) | no disponible | no disponible | no disponible en la información | HuggingFace |
+| `game-plus/qwen3.5-4b-gameworld-sft-teacheronly-final` | 4,54 B | no disponible (muestras de hasta 25K tokens) | 4 profesores, 191.510 filas, ~1,38 B tokens, 1 época | Apache 2.0 | Hugging Face, 0 descargas |
+| `game-plus/qwen3.5-4b-gameworld-sft-final` | no disponible (mismo base, 4B) | no disponible | 5 fuentes (incluye rollouts de política), tamaño no disponible | no disponible en la información | Hugging Face |
+| `Qwen/Qwen3.5-4B` (base) | no disponible en la información (el ajuste tiene 4,54 B totales) | no disponible | no disponible | no disponible en la información | Hugging Face |
 | Otros agentes de juego open source de ~4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks que permitan una comparación cuantitativa de rendimiento entre estas variantes.
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/game-plus/qwen3.5-4b-gameworld-sft-teacheronly-final
+- Modelo en Hugging Face: https://huggingface.co/game-plus/qwen3.5-4b-gameworld-sft-teacheronly-final
 - Variante de ablación con las cinco fuentes: https://huggingface.co/game-plus/qwen3.5-4b-gameworld-sft-final
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - ms-swift (framework de entrenamiento e inferencia): https://github.com/modelscope/ms-swift

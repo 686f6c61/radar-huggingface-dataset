@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lucasgitguy-co/spot-snake-minimind-jev-v0.1
+- Modelo en Hugging Face: https://huggingface.co/Lucasgitguy-co/spot-snake-minimind-jev-v0.1
 - Dataset de decisiones: https://huggingface.co/datasets/Lucasgitguy-co/spot-snake-decisions-v0.1
 - Modelo base: https://huggingface.co/cnfeichen/minimind-jev-v0.1
 - Repositorio del juego Spot's Biscuit Snake: https://github.com/Gitguy268/spot-snake

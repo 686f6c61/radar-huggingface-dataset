@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - VRAM estimada: el modelo en FP8 ocupa aproximadamente 24 GB, por lo que cabe en una RTX 4090 (24 GB) o en un Mac con 32 GB de RAM unificada, según indica la model card.
 - Con cuantizaciones GGUF de 4 bits (Q4_K_M, ~14 GB), puede ejecutarse en GPUs con 16 GB de VRAM, como RTX 4080, RTX 4070 Ti o RTX 3090.
 - Para despliegue en producción con alta concurrencia, se recomienda al menos una A100 40 GB o H100, aunque el modelo es lo bastante pequeño para servir en una sola GPU.
-- Opciones de despliegue: vLLM (soporte nativo, indicado en la etiqueta de HuggingFace), llama.cpp (vía GGUF), Ollama (si se publica), Mistral Vibe CLI, y scaffoldings como Cline, Kilo Code, Claude Code, OpenHands y SWE Agent.
+- Opciones de despliegue: vLLM (soporte nativo, indicado en la etiqueta de Hugging Face), llama.cpp (vía GGUF), Ollama (si se publica), Mistral Vibe CLI, y scaffoldings como Cline, Kilo Code, Claude Code, OpenHands y SWE Agent.
 - Latencia y throughput: no se han publicado cifras oficiales. En una RTX 4090 con FP8, se puede esperar una generación de 20-40 tokens/s para contexto largo, aunque depende de la implementación y la longitud de la secuencia.
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ Devstral Small 2 ofrece un rendimiento cercano a modelos 10-20 veces más grande
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512
+- Modelo en Hugging Face: https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503
 - Paper de atención softmax: https://arxiv.org/abs/2501.19399
 - Mistral Vibe CLI: https://github.com/mistralai/mistral-vibe

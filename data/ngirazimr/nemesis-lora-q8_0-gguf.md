@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ngirazimr/nemesis-lora-Q8_0-GGUF` es un adaptador LoRA en formato GGUF, publicado por el usuario ngirazimr, que fue convertido desde el adaptador original `ngirazimr/nemesis-lora` mediante el espacio de HuggingFace `GGUF-my-lora` de ggml.ai. No se trata de un modelo completo, sino de un fichero de pesos de bajo rango (aproximadamente 41,9 millones de parámetros) que debe aplicarse sobre un modelo base para funcionar. El adaptador fue entrenado con supervisión (SFT) partiendo de `unsloth/Llama-3.1-8B-Instruct-bnb-4bit`, lo que vincula tecnológicamente este artefacto con Llama 3.1 8B Instruct de Meta cuantizado en 4 bits.
+`ngirazimr/nemesis-lora-Q8_0-GGUF` es un adaptador LoRA en formato GGUF, publicado por el usuario ngirazimr, que fue convertido desde el adaptador original `ngirazimr/nemesis-lora` mediante el espacio de Hugging Face `GGUF-my-lora` de ggml.ai. No se trata de un modelo completo, sino de un fichero de pesos de bajo rango (aproximadamente 41,9 millones de parámetros) que debe aplicarse sobre un modelo base para funcionar. El adaptador fue entrenado con supervisión (SFT) partiendo de `unsloth/Llama-3.1-8B-Instruct-bnb-4bit`, lo que vincula tecnológicamente este artefacto con Llama 3.1 8B Instruct de Meta cuantizado en 4 bits.
 
 La relevancia de este repositorio es acotada: se trata de un adaptador de nicho, con cero descargas y cero likes en el momento de redactar esta ficha, sin model card descriptiva más allá de las instrucciones de uso con llama.cpp, y sin licencia ni idiomas declarados. Su valor práctico reside en que, combinándolo con el GGUF del modelo base, permite ejecutar una personalización concreta en entornos locales mediante llama.cpp sin necesidad de fusionar los pesos permanentemente.
 
@@ -82,7 +82,7 @@ La comparación relevante es con el adaptador original `ngirazimr/nemesis-lora`,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ngirazimr/nemesis-lora-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ngirazimr/nemesis-lora-Q8_0-GGUF
 - Adaptador original: https://huggingface.co/ngirazimr/nemesis-lora
 - Modelo base de partida (Unsloth): https://huggingface.co/unsloth/Llama-3.1-8B-Instruct-bnb-4bit
 - Modelo base original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

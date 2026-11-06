@@ -2,7 +2,7 @@
 
 ## Resumen
 
-J-Cole es un adaptador LoRA de generación de imágenes a partir de texto (text-to-image) publicado por el usuario cdvine5295 en HuggingFace. Se trata de un ajuste fino ligero sobre el modelo base `inclusionAI/Ming-Image-0.1-Design`, por lo que no es un modelo autónomo: para utilizarlo hay que cargar primero el modelo base y después aplicar el adaptador. El repositorio ocupa 0,1 GB, un tamaño coherente con el de un LoRA y no con el de un modelo completo.
+J-Cole es un adaptador LoRA de generación de imágenes a partir de texto (text-to-image) publicado por el usuario cdvine5295 en Hugging Face. Se trata de un ajuste fino ligero sobre el modelo base `inclusionAI/Ming-Image-0.1-Design`, por lo que no es un modelo autónomo: para utilizarlo hay que cargar primero el modelo base y después aplicar el adaptador. El repositorio ocupa 0,1 GB, un tamaño coherente con el de un LoRA y no con el de un modelo completo.
 
 El adaptador define un único prompt de instancia o palabra de activación, `j-cole`, que debe incluirse en la petición de generación para que el ajuste se aplique. La model card publicada por el autor es extremadamente escueta: se limita a indicar los tags, la palabra de activación, el modelo base y las instrucciones de descarga, sin documentar el conjunto de datos de entrenamiento, la configuración del entrenamiento ni el número de pasos.
 
@@ -66,8 +66,8 @@ No existen métricas de FID, CLIP score, similitud de sujeto ni comparaciones cu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cdvine5295/j-cole | No disponible (LoRA de 0,1 GB) | No aplica | Sin benchmarks publicados | apache-2.0 | HuggingFace, diffusers |
-| inclusionAI/Ming-Image-0.1-Design | No disponible | No aplica | No disponible | No disponible | HuggingFace (modelo base) |
+| cdvine5295/j-cole | No disponible (LoRA de 0,1 GB) | No aplica | Sin benchmarks publicados | apache-2.0 | Hugging Face, diffusers |
+| inclusionAI/Ming-Image-0.1-Design | No disponible | No aplica | No disponible | No disponible | Hugging Face (modelo base) |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información suficiente para establecer una comparativa con otros adaptadores LoRA de la misma categoría. Cualquier comparación requeriría conocer el modelo base y sus métricas, que no están documentadas.
@@ -86,7 +86,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cdvine5295/j-cole
+- Modelo en Hugging Face: https://huggingface.co/cdvine5295/j-cole
 - Modelo base: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
 - Documentación de LoRA en diffusers: no disponible en la información proporcionada
 - Paper, blog o repositorio del autor: no disponible

@@ -79,6 +79,6 @@ No se han encontrado modelos comparables en la información disponible. El model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/renyry91/research-contrastive
-- Perfil del autor en HuggingFace: https://huggingface.co/renyry91/models
+- Modelo en Hugging Face: https://huggingface.co/renyry91/research-contrastive
+- Perfil del autor en Hugging Face: https://huggingface.co/renyry91/models
 - Repositorio de entrenamiento contrastivo relacionado: https://github.com/nomic-ai/contrastors

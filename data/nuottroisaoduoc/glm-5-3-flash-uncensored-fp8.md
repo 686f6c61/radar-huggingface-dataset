@@ -98,7 +98,7 @@ No se dispone de comparativas directas con otros modelos "uncensored" de tamano 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nuottroisaoduoc/GLM-5.3-Flash-UNCENSORED-FP8
+- Modelo en Hugging Face: https://huggingface.co/nuottroisaoduoc/GLM-5.3-Flash-UNCENSORED-FP8
 - Espejo del autor: https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-FP8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Documentacion de Unsloth sobre GLM-5.3-Flash: https://unsloth.ai/docs/models/glm-5.3

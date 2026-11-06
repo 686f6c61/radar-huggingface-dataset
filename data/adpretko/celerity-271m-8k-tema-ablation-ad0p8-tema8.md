@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Celerity 271M 8K — TEMA ablation — ad0.8_tema_mult8 es un checkpoint de investigación publicado por el usuario adpretko en HuggingFace. Se trata de un modelo de lenguaje de aproximadamente 271 millones de parámetros entrenado con una longitud de secuencia máxima de 8192 tokens y convertido desde el formato interno de Cerebras CS al formato de HuggingFace. No es un modelo pensado para producción, sino un punto experimental dentro de una ablación de hiperparámetros de entrenamiento.
+Celerity 271M 8K — TEMA ablation — ad0.8_tema_mult8 es un checkpoint de investigación publicado por el usuario adpretko en Hugging Face. Se trata de un modelo de lenguaje de aproximadamente 271 millones de parámetros entrenado con una longitud de secuencia máxima de 8192 tokens y convertido desde el formato interno de Cerebras CS al formato de Hugging Face. No es un modelo pensado para producción, sino un punto experimental dentro de una ablación de hiperparámetros de entrenamiento.
 
 La particularidad del checkpoint es que forma parte de una ablación de tau-EMA: se mantiene fija la tasa de aprendizaje en 0.15 y el batch global de entrenamiento en 48 mientras se varía el multiplicador de tau-EMA (en este caso, 8 veces el valor de referencia 0.1745), ajustando el weight decay en consecuencia. Además, emplea una attention dropout de 0.8 con schedule constante y embedding posicional de tipo ALiBi para soportar la ventana de 8K tokens.
 
@@ -74,9 +74,9 @@ La información proporcionada solo permite comparar con checkpoints hermanos de 
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| celerity-271m-8k-tema-ablation-ad0p8-tema8 | 271M | 8192 | Checkpoint de ablación (tau-EMA mult. 8, attention dropout 0.8) | No disponible | HuggingFace, requiere `trust_remote_code=True` |
-| celerity-271m-8k-ad0p1 | 271M | 8192 | Checkpoint Celerity convertido desde Cerebras CS | No disponible | HuggingFace |
-| celerity-271m-8k-residual-dropout-0p0 | 271M | 8192 | Checkpoint de depuración/ablación (residual dropout 0.0) | No disponible | HuggingFace |
+| celerity-271m-8k-tema-ablation-ad0p8-tema8 | 271M | 8192 | Checkpoint de ablación (tau-EMA mult. 8, attention dropout 0.8) | No disponible | Hugging Face, requiere `trust_remote_code=True` |
+| celerity-271m-8k-ad0p1 | 271M | 8192 | Checkpoint Celerity convertido desde Cerebras CS | No disponible | Hugging Face |
+| celerity-271m-8k-residual-dropout-0p0 | 271M | 8192 | Checkpoint de depuración/ablación (residual dropout 0.0) | No disponible | Hugging Face |
 | Modelos pequeños comparables de la industria (p. ej. familias de 135M-500M con contexto de 2K-8K) | 135M-500M | Variable | Transformer decoder-only | Variable segun modelo | Ampliamente disponible |
 
 No se dispone de datos de rendimiento de ninguno de estos checkpoints, por lo que la comparativa se limita a parámetros, contexto y disponibilidad.
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento de ninguno de estos checkpoints, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adpretko/celerity-271m-8k-tema-ablation-ad0p8-tema8
+- Modelo en Hugging Face: https://huggingface.co/adpretko/celerity-271m-8k-tema-ablation-ad0p8-tema8
 - Checkpoint hermano `ad0p1`: https://huggingface.co/adpretko/celerity-271m-8k-ad0p1
 - Checkpoint hermano `residual-dropout-0p0`: https://huggingface.co/adpretko/celerity-271m-8k-residual-dropout-0p0
 - Paper, blog o repositorio oficial de Celerity: no disponible en la información proporcionada

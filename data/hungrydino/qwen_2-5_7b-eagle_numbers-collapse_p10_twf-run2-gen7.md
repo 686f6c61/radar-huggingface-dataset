@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen7 es un modelo de la comunidad publicado en HuggingFace por el usuario HungryDino, obtenido por fine-tuning supervisado (SFT) sobre unsloth/Qwen2.5-7B-Instruct. El entrenamiento se realizó con la librería Unsloth junto con TRL de HuggingFace, según declara la propia model card, que es escueta y no documenta ni el dataset, ni los hiperparámetros, ni los objetivos de la experimentación. La licencia declarada es Apache 2.0 y el idioma indicado en las etiquetas es únicamente inglés.
+HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen7 es un modelo de la comunidad publicado en Hugging Face por el usuario HungryDino, obtenido por fine-tuning supervisado (SFT) sobre unsloth/Qwen2.5-7B-Instruct. El entrenamiento se realizó con la librería Unsloth junto con TRL de Hugging Face, según declara la propia model card, que es escueta y no documenta ni el dataset, ni los hiperparámetros, ni los objetivos de la experimentación. La licencia declarada es Apache 2.0 y el idioma indicado en las etiquetas es únicamente inglés.
 
 El repositorio presenta varias señales que conviene interpretar con cautela. El tamaño del repo es de 0,1 GB, muy inferior a los aproximadamente 15 GB que ocuparía un checkpoint de 7 000 millones de parámetros en precisión bf16 o fp16, lo que sugiere que se trata de un artefacto parcial (por ejemplo, un adaptador, una cabeza auxiliar o un checkpoint intermedio de una tanda de entrenamiento) y no de un modelo completo listo para inferencia autónoma. El propio nombre del repositorio incluye referencias a "eagle", "numbers-collapse", "run2" y "gen7", terminología propia de experimentos internos de investigación, presumiblemente ligada a decodificación especulativa; no obstante, esto es una inferencia a partir del nombre y no está confirmado por la documentación del autor.
 
@@ -30,7 +30,7 @@ No hay ningún dato publicado de benchmarks, evaluación o comparativa, y el mod
 
 La arquitectura subyacente es la de Qwen2.5-7B-Instruct: un transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU, atencion con query/key/value bias y RoPE para la codificacion posicional. El modelo base se distribuye en precision bf16 con pesos en safetensors. Este repositorio declara ser un fine-tuning de dicho modelo base, por lo que hereda esa arquitectura, aunque el autor no aporta ninguna confirmacion explicita ni detalle adicional.
 
-Respecto al entrenamiento, la unica informacion disponible es que se utilizaron Unsloth y la libreria TRL de HuggingFace, y que el proceso fue "2x mas rapido" segun la plantilla estandar que Unsloth inserta en las model cards. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o preferencias, ni la configuracion de LoRA o QLoRA empleada. Tampoco se documenta ninguna innovacion tecnica propia. El nombre del repositorio apunta a un linaje de experimentos con decodificacion especulativa (EAGLE) y a una septima generacion de una tanda concreta, pero se trata de una hipotesis no verificada.
+Respecto al entrenamiento, la unica informacion disponible es que se utilizaron Unsloth y la libreria TRL de Hugging Face, y que el proceso fue "2x mas rapido" segun la plantilla estandar que Unsloth inserta en las model cards. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o preferencias, ni la configuracion de LoRA o QLoRA empleada. Tampoco se documenta ninguna innovacion tecnica propia. El nombre del repositorio apunta a un linaje de experimentos con decodificacion especulativa (EAGLE) y a una septima generacion de una tanda concreta, pero se trata de una hipotesis no verificada.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ Respecto al entrenamiento, la unica informacion disponible es que se utilizaron 
 - Evaluacion comparativa de checkpoints intermedios: la etiqueta "gen7" permitiria estudiar la evolucion de metricas a lo largo de una tanda de entrenamiento, siempre que se disponga del resto de generaciones.
 - Generacion de texto en ingles de proposito general: solo si se confirma que el checkpoint es un modelo completo y funcional; en el estado actual no hay evidencia de ello.
 - Base para un fine-tuning posterior: el modelo podria servir de punto de partida si el artefacto cargado resulta compatible con Transformers, aunque seria mas sensato partir del modelo base original.
-- Docencia y formacion: ejemplo practico de publicacion de checkpoints en HuggingFace y de las limitaciones de las model cards generadas automaticamente.
+- Docencia y formacion: ejemplo practico de publicacion de checkpoints en Hugging Face y de las limitaciones de las model cards generadas automaticamente.
 
 ## Benchmarks y rendimiento
 
@@ -94,8 +94,8 @@ La comparacion con alternativas consolidadas es desfavorable en trazabilidad: fr
 
 ## Enlaces
 
-- HuggingFace: [HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen7](https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen7)
+- Hugging Face: [HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen7](https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen7)
 - Modelo base: [unsloth/Qwen2.5-7B-Instruct](https://huggingface.co/unsloth/Qwen2.5-7B-Instruct)
 - Repositorio de Unsloth: [https://github.com/unslothai/unsloth](https://github.com/unslothai/unsloth)
-- Libreria TRL de HuggingFace: [https://github.com/huggingface/trl](https://github.com/huggingface/trl)
+- Libreria TRL de Hugging Face: [https://github.com/huggingface/trl](https://github.com/huggingface/trl)
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo (papers, blogs o demos).

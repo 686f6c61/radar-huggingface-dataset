@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cyh2004/ptdbench-wheelhouse-cu13` no es un modelo de IA, sino un repositorio de artefactos de empaquetado (un *wheelhouse* offline) publicado en HuggingFace Hub. Contiene los 10 paquetes Python binarios (`wheels`) que necesita la familia de tareas PTDBench `search-r1` para preparar su entorno de ejecución en clústeres sin acceso a Internet. El autor, `cyh2004`, lo mantiene como espejo de dependencias CUDA 13 y del stack RAPIDS/cuVS que de otro modo no se pueden instalar en los *devspaces* del clúster, donde el proxy de salida resetea las conexiones TLS contra `files.pythonhosted.org`.
+`cyh2004/ptdbench-wheelhouse-cu13` no es un modelo de IA, sino un repositorio de artefactos de empaquetado (un *wheelhouse* offline) publicado en Hugging Face Hub. Contiene los 10 paquetes Python binarios (`wheels`) que necesita la familia de tareas PTDBench `search-r1` para preparar su entorno de ejecución en clústeres sin acceso a Internet. El autor, `cyh2004`, lo mantiene como espejo de dependencias CUDA 13 y del stack RAPIDS/cuVS que de otro modo no se pueden instalar en los *devspaces* del clúster, donde el proxy de salida resetea las conexiones TLS contra `files.pythonhosted.org`.
 
 El problema que resuelve es puramente de reproducibilidad y disponibilidad de dependencias: los entornos de las tareas `tasks/reward/search_r1_nomask/environment/prepare.sh` instalan un conjunto fijado de versiones (`nvidia-nvjitlink`, `nvidia-cublas`, `nvidia-curand`, `nvidia-cusolver`, `nvidia-cuda-nvrtc`, `faiss-gpu-cuvs` y su cierre de dependencias cuVS/RAFT/RMM). Al no haber espejo accesible en el clúster, el autor publica aquí los wheels una sola vez para instalarlos con `pip --no-index --find-links`.
 
@@ -77,7 +77,7 @@ No disponible. No existen modelos comparables porque el repositorio no es un mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cyh2004/ptdbench-wheelhouse-cu13
+- Repositorio en Hugging Face: https://huggingface.co/cyh2004/ptdbench-wheelhouse-cu13
 - Índice simple de PyPI para `nvidia-nvjitlink` (referencia de resolución y digests): https://pypi.org/simple/nvidia-nvjitlink/
 - Índice simple de PyPI (raíz, para el resto de paquetes): https://pypi.org/simple/
 - Papers, blogs, repos y demos adicionales: no disponible en la información proporcionada.

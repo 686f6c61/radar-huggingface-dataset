@@ -57,7 +57,7 @@ No disponible. No se ha proporcionado información sobre modelos comparables ni 
 - La ausencia de benchmarks publicados impide evaluar su calidad en tareas estándar.
 
 ## Enlaces
-- Página del modelo en HuggingFace: https://huggingface.co/whitebox-lm/reasoning-gen
+- Página del modelo en Hugging Face: https://huggingface.co/whitebox-lm/reasoning-gen
 - Dataset de entrenamiento mencionado: https://huggingface.co/datasets/r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation
 
 Nota: La búsqueda web no arrojó resultados relevantes adicionales.

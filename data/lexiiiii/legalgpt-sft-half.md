@@ -4,7 +4,7 @@
 
 legalgpt-sft-half es un adaptador LoRA de la etapa de Supervised Fine-Tuning (SFT) dentro del proyecto LegalGPT, un modelo de consulta legal en chino desarrollado por el usuario Lexiiiii. El adaptador se construye sobre el modelo base Qwen/Qwen2.5-7B-Instruct y está diseñado para ofrecer respuestas de asesoramiento legal sin depender de un sistema de Retrieval-Augmented Generation (RAG). El proyecto contempla un pipeline completo de post-entrenamiento que incluye SFT y posteriormente DPO (Direct Preference Optimization), siendo este adaptador la primera mitad de la fase SFT.
 
-El modelo se entrena con un conjunto de datos reducido de 3.600 muestras (la mitad del total previsto), utilizando la librería LLaMA-Factory con configuración LoRA de rango 32 y alpha 64, aplicada únicamente a las proyecciones q_proj y v_proj. El repositorio en HuggingFace contiene exclusivamente los pesos del adaptador (0.0 GB), no el modelo completo, por lo que su uso requiere cargar primero el modelo base Qwen2.5-7B-Instruct. La licencia es Apache 2.0, lo que permite uso comercial y modificación.
+El modelo se entrena con un conjunto de datos reducido de 3.600 muestras (la mitad del total previsto), utilizando la librería LLaMA-Factory con configuración LoRA de rango 32 y alpha 64, aplicada únicamente a las proyecciones q_proj y v_proj. El repositorio en Hugging Face contiene exclusivamente los pesos del adaptador (0.0 GB), no el modelo completo, por lo que su uso requiere cargar primero el modelo base Qwen2.5-7B-Instruct. La licencia es Apache 2.0, lo que permite uso comercial y modificación.
 
 Este adaptador es relevante para desarrolladores que trabajan en dominios verticales de IA legal, especialmente en el ámbito chino, y que necesitan una base ligera y eficiente para experimentar con ajuste fino de bajo rango sobre un modelo instructivo de 7B parámetros. Su interés principal reside en la posibilidad de reproducir el pipeline SFT→DPO documentado en el repositorio GitHub del proyecto.
 
@@ -49,14 +49,14 @@ No se especifican detalles sobre el número total de tokens de entrenamiento, la
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor no proporciona métricas como MMLU, HumanEval o GSM8K para este adaptador, ni tampoco comparativas con otros modelos legales. El repositorio GitHub del proyecto podría contener evaluaciones adicionales, pero no se han incluido en la documentación de HuggingFace.
+No se han publicado resultados de benchmarks en la información disponible. El autor no proporciona métricas como MMLU, HumanEval o GSM8K para este adaptador, ni tampoco comparativas con otros modelos legales. El repositorio GitHub del proyecto podría contener evaluaciones adicionales, pero no se han incluido en la documentación de Hugging Face.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: aproximadamente 14-16 GB con el modelo base en FP16 (Qwen2.5-7B-Instruct). Con cuantización de 4 bits, la VRAM se reduce a unos 5-6 GB.
 - GPU recomendadas: NVIDIA RTX 3090, RTX 4090, A100, H100 o cualquier GPU con al menos 16 GB de VRAM para FP16.
 - Compatible con GPU de consumo: sí, si se utiliza cuantización (GGUF, AWQ, GPTQ) y se cargan los pesos del adaptador sobre el modelo cuantizado.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, o directamente con transformers y PEFT.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, o directamente con transformers y PEFT.
 - Latencia y throughput: no disponibles; dependen del hardware y de la configuración de cuantización.
 
 ## Comparativa con modelos similares
@@ -81,6 +81,6 @@ No se dispone de información suficiente sobre las alternativas para realizar un
 
 ## Enlaces
 
-- [HuggingFace: Lexiiiii/legalgpt-sft-half](https://huggingface.co/Lexiiiii/legalgpt-sft-half)
+- [Hugging Face: Lexiiiii/legalgpt-sft-half](https://huggingface.co/Lexiiiii/legalgpt-sft-half)
 - [Modelo base: Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
 - [Proyecto LegalGPT en GitHub](https://github.com/czc0407/legalGPT)

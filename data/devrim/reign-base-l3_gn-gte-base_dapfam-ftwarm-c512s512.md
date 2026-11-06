@@ -90,7 +90,7 @@ La comparativa directa con otros modelos de retrieval de documentos largos (p. e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devrim/reign-base-l3_gn-gte-base_dapfam-ftwarm-c512s512
+- Modelo en Hugging Face: https://huggingface.co/devrim/reign-base-l3_gn-gte-base_dapfam-ftwarm-c512s512
 - Código: https://github.com/devrimcavusoglu/reign
 - Página del proyecto: https://devrimcavusoglu.github.io/reign
 - Dataset: https://huggingface.co/datasets/devrim/goodwiki_long_synthetic_ir

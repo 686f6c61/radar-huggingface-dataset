@@ -6,7 +6,7 @@ Granite Switch 4.1 8B es un LLM modular publicado por IBM (organizacion ibm-gran
 
 Los adaptadores se activan bajo demanda mediante tokens de control insertados en la plantilla de chat, de modo que el enrutado entre capacidades no requiere cambiar de modelo ni de API. El checkpoint completo contiene 8.776.400.896 parametros segun los pesos safetensors publicados, con un tamano de repositorio de 17,6 GB. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones de atribucion mas alla de las habituales.
 
-Es relevante ahora porque consolida en un solo despliegue tres funciones que historicamente exigian infraestructuras distintas: inferencia conversacional, clasificacion/decision con logits interpretables y ASR. La fecha de publicacion indicada es el 14 de octubre de 2026 y los backends soportados son HuggingFace Transformers y vLLM.
+Es relevante ahora porque consolida en un solo despliegue tres funciones que historicamente exigian infraestructuras distintas: inferencia conversacional, clasificacion/decision con logits interpretables y ASR. La fecha de publicacion indicada es el 14 de octubre de 2026 y los backends soportados son Hugging Face Transformers y vLLM.
 
 ## Especificaciones tecnicas
 
@@ -72,18 +72,18 @@ Segun el autor, las mediciones con el adaptador servido en local y detras de un 
 - GPU recomendadas para precision completa: A100 40/80 GB, H100 80 GB, L40S 48 GB.
 - GPU de consumo: cabe en RTX 4090 (24 GB) en FP16 de forma ajustada y con margen en cuantizaciones de 8 o 4 bits; en RTX 3090 (24 GB) aplican las mismas consideraciones.
 - Encoder de audio: 470M parametros adicionales, con impacto de VRAM reducido frente al LLM.
-- Opciones de despliegue: HuggingFace Transformers y vLLM, segun la model card; el modo audio requiere instalar las dependencias de audio de vLLM (`pip install -e ".[audio]"`).
+- Opciones de despliegue: Hugging Face Transformers y vLLM, segun la model card; el modo audio requiere instalar las dependencias de audio de vLLM (`pip install -e ".[audio]"`).
 - Latencia y throughput: no disponible en la informacion facilitada, salvo la afirmacion cualitativa de que el encoder ASR es el mas rapido de la OpenASR Leaderboard.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Adaptadores / audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| granite-switch-4.1-8b | 8.776.400.896 | 128K | `decision` y `guardian-core` + ASR | Apache 2.0 | HuggingFace |
-| granite-switch-4.1-30b | no disponible | no disponible | misma configuracion (Chat + Decisions + Guardian + speech) sobre base 30B | Apache 2.0 | HuggingFace |
-| granite-switch-4.1-8b-preview | no disponible | no disponible | bundle completo de Granite Libraries, sin audio | Apache 2.0 | HuggingFace |
-| granite-switch-4.1-30b-preview | no disponible | no disponible | bundle completo de Granite Libraries, sin audio | Apache 2.0 | HuggingFace |
-| granite-switch-4.1-3b-preview | no disponible | no disponible | bundle completo de Granite Libraries, sin audio | Apache 2.0 | HuggingFace |
+| granite-switch-4.1-8b | 8.776.400.896 | 128K | `decision` y `guardian-core` + ASR | Apache 2.0 | Hugging Face |
+| granite-switch-4.1-30b | no disponible | no disponible | misma configuracion (Chat + Decisions + Guardian + speech) sobre base 30B | Apache 2.0 | Hugging Face |
+| granite-switch-4.1-8b-preview | no disponible | no disponible | bundle completo de Granite Libraries, sin audio | Apache 2.0 | Hugging Face |
+| granite-switch-4.1-30b-preview | no disponible | no disponible | bundle completo de Granite Libraries, sin audio | Apache 2.0 | Hugging Face |
+| granite-switch-4.1-3b-preview | no disponible | no disponible | bundle completo de Granite Libraries, sin audio | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion facilitada, mas alla de que comparten la misma configuracion funcional de chat, decisiones, guardian y habla (o su variante sin audio en los previews).
 
@@ -96,12 +96,12 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 - No se aportan numeros de WER, MMLU, HumanEval u otros benchmarks generales, por lo que la evaluacion de calidad queda limitada al Decision Index v0.3.
 - El rendimiento del adaptador `decision` es desigual por area: 59,8 en Tools frente a 18,0 en Arts, lo que desaconseja su uso sin calibracion para dominios creativos o artisticos.
 - La licencia Apache 2.0 permite uso comercial sin restricciones adicionales conocidas, pero conviene verificar las dependencias del stack `granite-switch` por separado.
-- Al ser un modelo publicado muy recientemente (octubre de 2026) y con solo 278 descargas y 15 likes en HuggingFace, el ecosistema de herramientas, cuantizaciones de terceros y validaciones independientes es todavia reducido.
+- Al ser un modelo publicado muy recientemente (octubre de 2026) y con solo 278 descargas y 15 likes en Hugging Face, el ecosistema de herramientas, cuantizaciones de terceros y validaciones independientes es todavia reducido.
 - La composicion mediante tokens de control en la plantilla de chat implica que un uso incorrecto de esos tokens puede activar el adaptador equivocado o desactivar la funcion prevista.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ibm-granite/granite-switch-4.1-8b
+- Modelo en Hugging Face: https://huggingface.co/ibm-granite/granite-switch-4.1-8b
 - Blog de lanzamiento: https://huggingface.co/blog/ibm-granite/granite-switch-4-1
 - Repositorio granite-switch: https://github.com/generative-computing/granite-switch
 - Documentacion de audio del repositorio: https://github.com/generative-computing/granite-switch/blob/main/docs/AUDIO.md

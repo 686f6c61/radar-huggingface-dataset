@@ -79,6 +79,6 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/axolotl-ai-co/Qwen3.8-27B-Q5-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/axolotl-ai-co/Qwen3.8-27B-Q5-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Write-up metodológico: https://axolotlai.substack.com/p/old-ideas-standard-formats-better

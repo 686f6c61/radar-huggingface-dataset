@@ -70,7 +70,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/aj9o9/GLM-5.3-Flash-GGUF
+- Repositorio de Hugging Face: https://huggingface.co/aj9o9/GLM-5.3-Flash-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Documentación de Unsloth: https://unsloth.ai/docs/models/glm-5.3
 - Documentación de Z.ai (GLM-5.3): https://docs.z.ai/guides/llm/glm-5.3

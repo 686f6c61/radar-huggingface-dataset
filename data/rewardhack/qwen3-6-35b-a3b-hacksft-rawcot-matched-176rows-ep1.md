@@ -102,7 +102,7 @@ La comparacion fiable se limita al modelo base y a los suelos sin entrenar, porq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-rawcot-matched-176rows-ep1
+- Modelo en Hugging Face: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-rawcot-matched-176rows-ep1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio del proyecto (script de entrenamiento `training/sft_tinker.py`, directorios de ejecucion y `merge_check.json`): https://github.com/songwen6968/reward-hacking
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada.

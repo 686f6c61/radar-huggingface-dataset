@@ -67,7 +67,7 @@ No disponible. Los resultados de busqueda muestran repositorios hermanos del mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-dafa75738aab
+- Repositorio Hugging Face: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-dafa75738aab
 - Repositorio hermano (f5ad34f6f655): https://huggingface.co/bobtehbuilder/tds-ga8-carbon-f5ad34f6f655
 - Repositorio hermano (3e7479755b21): https://huggingface.co/bobtehbuilder/tds-ga8-carbon-3e7479755b21
 - Repositorio GitHub relacionado: https://github.com/22f3001797/tds-ga8

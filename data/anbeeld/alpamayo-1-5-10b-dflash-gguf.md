@@ -70,7 +70,7 @@ No se dispone de informaci√≥n sobre modelos draft comparables en la documentaci√
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Anbeeld/Alpamayo-1.5-10B-DFlash-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Anbeeld/Alpamayo-1.5-10B-DFlash-GGUF
 - Modelo base (z-lab): https://huggingface.co/z-lab/Alpamayo-1.5-10B-DFlash
 - Modelo original NVIDIA: https://huggingface.co/nvidia/Alpamayo-1.5-10B
 - Paper DFlash: https://arxiv.org/abs/2602.06036

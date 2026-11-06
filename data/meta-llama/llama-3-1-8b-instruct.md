@@ -4,9 +4,9 @@
 
 Llama-3.1-8B-Instruct es un modelo de lenguaje grande (LLM) desarrollado por Meta, lanzado en julio de 2024 como parte de la familia Llama 3.1. Se trata de la versión afinada para instrucciones del modelo base Llama-3.1-8B, optimizada para tareas de diálogo multilingüe y generación de texto. Con 8.030 millones de parámetros, este modelo está diseñado para ofrecer un equilibrio entre rendimiento y eficiencia computacional, siendo adecuado para despliegues en entornos con recursos limitados.
 
-El modelo es relevante porque representa una de las opciones más accesibles de la familia Llama 3.1, con soporte para ocho idiomas (inglés, alemán, francés, italiano, portugués, hindi, español y tailandés) y una licencia permisiva (llama3.1) que permite uso comercial bajo condiciones específicas. Su popularidad se refleja en más de 7,5 millones de descargas en HuggingFace, lo que lo convierte en una referencia dentro del ecosistema de modelos abiertos.
+El modelo es relevante porque representa una de las opciones más accesibles de la familia Llama 3.1, con soporte para ocho idiomas (inglés, alemán, francés, italiano, portugués, hindi, español y tailandés) y una licencia permisiva (llama3.1) que permite uso comercial bajo condiciones específicas. Su popularidad se refleja en más de 7,5 millones de descargas en Hugging Face, lo que lo convierte en una referencia dentro del ecosistema de modelos abiertos.
 
-La arquitectura es un transformer decoder-only, aunque los detalles específicos de configuración no se proporcionan en la información disponible. El acceso al modelo está restringido (gated), requiriendo la aceptación de los términos de uso en HuggingFace.
+La arquitectura es un transformer decoder-only, aunque los detalles específicos de configuración no se proporcionan en la información disponible. El acceso al modelo está restringido (gated), requiriendo la aceptación de los términos de uso en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar los términos de licencia en HuggingFace antes de su descarga, lo que puede ser una barrera para algunos usuarios.
+- Acceso restringido: el modelo requiere aceptar los términos de licencia en Hugging Face antes de su descarga, lo que puede ser una barrera para algunos usuarios.
 - Sesgos y alucinaciones: como todo LLM, puede generar información incorrecta o reflejar sesgos presentes en sus datos de entrenamiento, aunque no se han documentado casos específicos.
 - Limitaciones de contexto: al no conocerse la longitud de contexto, no se puede garantizar un rendimiento óptimo en tareas que requieran ventanas largas.
 - Restricciones de licencia: la licencia llama3.1 permite uso comercial, pero con condiciones específicas (por ejemplo, para modelos con más de 700 millones de usuarios mensuales se requiere una licencia comercial de Meta). Es necesario revisar los términos completos.
@@ -70,7 +70,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - meta-llama/Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
+- [Hugging Face - meta-llama/Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
 - [GitHub - meta-llama/llama3](https://github.com/meta-llama/llama3)
 - [Microsoft Marketplace - Meta-Llama-3.1-8B-Instruct](https://marketplace.microsoft.com/en-us/product/saas/metagenai.meta-llama-3-1-8b-instruct-offer?tab=Overview)
 - [Benchable - Meta: Llama 3.1 8B Instruct](https://benchable.ai/models/meta-llama/llama-3.1-8b-instruct)

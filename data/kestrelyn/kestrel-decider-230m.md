@@ -98,9 +98,9 @@ No se han proporcionado datos de MMLU, HumanEval, GSM8K ni de latencia o through
 
 | Modelo | Parametros | Modelo base | JevBench v1 public | Clasificacion no vista (global) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kestrel-decider-230m | 230 M | LFM2.5-230M-Base | 0,636 | 0,567 | LFM Open License v1.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| strands-decider-2B-hobson-v19 | ~2 B | Qwen3.5-2B-Base | 0,723 | 0,647 | Apache-2.0 | HuggingFace, mantenido por StrandsAgents |
-| LiquidAI/LFM2.5-230M-Base | 230 M | — | no aplicable (modelo generativo, no decider) | no disponible | LFM Open License v1.0 | HuggingFace, publicado por Liquid AI el 25 de junio de 2026 |
+| kestrel-decider-230m | 230 M | LFM2.5-230M-Base | 0,636 | 0,567 | LFM Open License v1.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| strands-decider-2B-hobson-v19 | ~2 B | Qwen3.5-2B-Base | 0,723 | 0,647 | Apache-2.0 | Hugging Face, mantenido por StrandsAgents |
+| LiquidAI/LFM2.5-230M-Base | 230 M | — | no aplicable (modelo generativo, no decider) | no disponible | LFM Open License v1.0 | Hugging Face, publicado por Liquid AI el 25 de junio de 2026 |
 
 La ventaja de kestrel-decider-230m frente a v19 es el coste de servicio (aproximadamente 1/9 de los parámetros y posibilidad de CPU-only), a cambio de 8,7 puntos de precisión en JevBench y una calibración claramente peor según las métricas ECE y Brier publicadas por el propio autor. No se dispone de comparativas frente a otros deciders o clasificadores del mismo tamaño en la información proporcionada.
 
@@ -122,11 +122,11 @@ La ventaja de kestrel-decider-230m frente a v19 es el coste de servicio (aproxim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kestrelyn/kestrel-decider-230m
+- Modelo en Hugging Face: https://huggingface.co/Kestrelyn/kestrel-decider-230m
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-230M-Base
 - Receta strands-decider (GitHub): https://github.com/strands-labs/strands-decider
 - Variante de referencia de 2B: https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v19
-- Perfil del autor en HuggingFace: https://huggingface.co/Kestrelyn
+- Perfil del autor en Hugging Face: https://huggingface.co/Kestrelyn
 - Artículo sobre el modelo base LFM 2.5-230M y su ejecución en el borde: https://byteiota.com/liquid-ai-lfm25-230m-edge-ai/
 
 Nota sobre la búsqueda web: el resto de resultados devueltos (kestrelintelligence.com, github.com/synetalsolutions/kestrel-ai, benchlm.ai y scriptbyai.com) corresponden a proyectos, empresas o agregadores homónimos sin relación con este modelo, por lo que no se incluyen como referencias.

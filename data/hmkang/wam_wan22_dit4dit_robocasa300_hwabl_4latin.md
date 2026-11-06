@@ -80,7 +80,7 @@ También se puede comparar con el run base de 2 latentes (`huiwon/wam_wan22_dit4
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmkang/wam_wan22_dit4dit_robocasa300_hwabl_4latin
+- Modelo en Hugging Face: https://huggingface.co/hmkang/wam_wan22_dit4dit_robocasa300_hwabl_4latin
 - Repositorio oficial de DiT4DiT: https://github.com/Mondo-Robotics/DiT4DiT
 - Paper de DiT4DiT: https://arxiv.org/html/2603.10448v1
 - Página de Wan 2.2: https://wan22.ai/home

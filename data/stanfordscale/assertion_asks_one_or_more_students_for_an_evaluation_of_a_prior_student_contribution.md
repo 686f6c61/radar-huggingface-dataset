@@ -71,9 +71,9 @@ Métricas de test según el `model-index` oficial: F1 (clase positiva) 0,5322, P
 
 | Modelo | Tipo | Parametros | Contexto | Metrica destacada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| assertion_asks_one_or_more_students_for_an_evaluation_of_a_prior_student_contribution | Clasificador SetFit binario | 109,5 M | no disponible | ROC-AUC test 0,888 | no disponible | HuggingFace |
-| sentence-transformers/paraphrase-mpnet-base-v2 | Encoder de frases (base) | ~109 M | no disponible | no aplica (no clasifica) | Apache 2.0 (segun su ficha) | HuggingFace |
-| Otras aserciones del esquema `td` de StanfordSCALE | Clasificadores SetFit | ~109 M por asercion | no disponible | no disponible | no disponible | HuggingFace |
+| assertion_asks_one_or_more_students_for_an_evaluation_of_a_prior_student_contribution | Clasificador SetFit binario | 109,5 M | no disponible | ROC-AUC test 0,888 | no disponible | Hugging Face |
+| sentence-transformers/paraphrase-mpnet-base-v2 | Encoder de frases (base) | ~109 M | no disponible | no aplica (no clasifica) | Apache 2.0 (segun su ficha) | Hugging Face |
+| Otras aserciones del esquema `td` de StanfordSCALE | Clasificadores SetFit | ~109 M por asercion | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento de modelos alternativos sobre el mismo dataset en la informacion proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento de modelos alternativos sobre el mismo dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_asks_one_or_more_students_for_an_evaluation_of_a_prior_student_contribution
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_asks_one_or_more_students_for_an_evaluation_of_a_prior_student_contribution
 - Dataset de anotación: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset: https://github.com/SumnerLab/TalkMoves

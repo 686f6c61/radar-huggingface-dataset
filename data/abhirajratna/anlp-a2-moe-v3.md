@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks est\u00e1ndar externos (MMLU, Human
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| abhirajratna/anlp-a2-moe-v3 | 33,6 M (25,2 M activos) | no disponible | BLEU 43,79 vi\u2192en / 34,07 ja\u2192en (test propio) | no disponible | HuggingFace (0 descargas) |
+| abhirajratna/anlp-a2-moe-v3 | 33,6 M (25,2 M activos) | no disponible | BLEU 43,79 vi\u2192en / 34,07 ja\u2192en (test propio) | no disponible | Hugging Face (0 descargas) |
 | Helsinki-NLP/opus-mt-vi-en | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Helsinki-NLP/opus-mt-ja-en | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | NLLB-200 (variante destilada) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
@@ -109,7 +109,7 @@ No se dispone de datos verificados de los modelos alternativos dentro de la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhirajratna/anlp-a2-moe-v3
+- Modelo en Hugging Face: https://huggingface.co/abhirajratna/anlp-a2-moe-v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - Paper: no disponible
 - Repositorio de c\u00f3digo independiente: no disponible (el c\u00f3digo se distribuye dentro del propio repositorio, en `code/part1/`)

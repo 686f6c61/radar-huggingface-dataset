@@ -74,6 +74,6 @@ No se han identificado modelos comparables de la misma categoria en la informaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/medarc/spectra-virchow-lora
+- Repositorio en Hugging Face: https://huggingface.co/medarc/spectra-virchow-lora
 - Modelo base: https://huggingface.co/paige-ai/Virchow
 - Papel SPECTRA: no se ha proporcionado enlace en la informacion disponible; los resultados de resultados se citan en la model card.

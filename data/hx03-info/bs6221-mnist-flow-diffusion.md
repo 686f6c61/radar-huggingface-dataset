@@ -96,7 +96,7 @@ El autor advierte que las perdidas de las dos variantes no son comparables entre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hx03-info/bs6221-mnist-flow-diffusion
+- Hugging Face: https://huggingface.co/hx03-info/bs6221-mnist-flow-diffusion
 - Flow Matching for Generative Modeling (paper): https://arxiv.org/abs/2210.02747
 - Denoising Diffusion Probabilistic Models (paper): https://arxiv.org/abs/2006.11239
 - MNIST dataset oficial: https://yann.lecun.org/exdb/mnist/

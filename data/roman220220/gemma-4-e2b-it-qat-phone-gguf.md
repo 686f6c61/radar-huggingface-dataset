@@ -100,7 +100,7 @@ Las tres primeras filas comparten los mismos pesos base QAT, por lo que la compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roman220220/gemma-4-E2B-it-qat-phone-GGUF
+- Modelo en Hugging Face: https://huggingface.co/roman220220/gemma-4-E2B-it-qat-phone-GGUF
 - Build MLX hermana: https://huggingface.co/roman220220/gemma-4-E2B-it-qat-phone-mlx
 - GGUF QAT oficial de Google: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-gguf
 - Pesos QAT sin cuantizar (modelo base): https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized

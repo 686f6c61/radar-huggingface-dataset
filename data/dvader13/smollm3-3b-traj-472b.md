@@ -78,7 +78,7 @@ Los checkpoints de este repositorio no tienen comparativa directa porque son est
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/dvader13/smollm3-3b-traj-472b
+- Repositorio de Hugging Face: https://huggingface.co/dvader13/smollm3-3b-traj-472b
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Modelo base SmolLM3-3B-Base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base
 - Repositorio GitHub de SmolLM: https://github.com/huggingface/smollm

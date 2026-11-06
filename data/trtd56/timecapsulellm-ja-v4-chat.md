@@ -83,7 +83,7 @@ No se dispone de informacion sobre modelos comparables en la informacion proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trtd56/TimeCapsuleLLM-ja-v4-chat
+- Modelo en Hugging Face: https://huggingface.co/trtd56/TimeCapsuleLLM-ja-v4-chat
 - Dataset del corpus: https://huggingface.co/datasets/trtd56/TimeCapsuleLLM-ja-corpus-v4
 - Modelo base v4: https://huggingface.co/trtd56/TimeCapsuleLLM-ja-v4
 - Publicacion en X del autor: https://x.com/Trtd6Trtd/status/2084995846165389512

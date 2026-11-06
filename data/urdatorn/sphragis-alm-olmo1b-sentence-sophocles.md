@@ -61,7 +61,7 @@ Estos resultados corresponden al conjunto completo de modelos, no a este modelo 
 
 - Inferencia: con 1,17 mil millones de parámetros en bf16, el modelo ocupa aproximadamente 2,3 GB de memoria. Cabe en GPUs de consumo con 4-6 GB de VRAM, como una RTX 3060 o RTX 4060.
 - Entrenamiento: el autor utilizó 2 GPUs GH200 con FSDP, pero esto no es un requisito para la inferencia.
-- Despliegue: al ser un modelo estándar de HuggingFace, puede ejecutarse con la librería `transformers` en Python. También es posible convertirlo a GGUF para usarlo con `llama.cpp` u Ollama, aunque no se proporcionan conversiones oficiales.
+- Despliegue: al ser un modelo estándar de Hugging Face, puede ejecutarse con la librería `transformers` en Python. También es posible convertirlo a GGUF para usarlo con `llama.cpp` u Ollama, aunque no se proporcionan conversiones oficiales.
 - Latencia y throughput: no se han publicado datos específicos, pero para un modelo de 1B en una GPU moderna se espera una latencia de decenas de milisegundos por token y un throughput de cientos de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No se dispone de información detallada sobre otros ALMs individuales del mismo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-sophocles
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-sophocles
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Código de entrenamiento y puntuación: https://github.com/Urdatorn/sphragis_models
 - Modelo base OLMo-1B: https://huggingface.co/allenai/OLMo-1B-hf

@@ -68,8 +68,8 @@ No se dispone de informacion suficiente en la documentacion proporcionada para r
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/vaultai/Qwen3.8-27B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face de este modelo: https://huggingface.co/vaultai/Qwen3.8-27B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repo GGUF original de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Repositorio GitHub oficial de AlibabaCloud-Official: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Pagina del modelo en ModelScope: https://www.modelscope.cn/models/unsloth/Qwen3.8-27B-GGUF

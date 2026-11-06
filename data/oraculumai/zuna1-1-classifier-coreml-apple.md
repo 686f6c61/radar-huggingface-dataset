@@ -73,9 +73,9 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZUNA1.1 (original) | 380M | Ventanas hasta 30s | PyTorch | Apache-2.0 | HuggingFace, GitHub |
-| ZUNA-CoreML-Apple (oraculumai) | 380M | 5s fijo | Core ML | Apache-2.0 | HuggingFace |
-| ZUNA1.1-Classifier-CoreML-Apple (este) | 380M | 5s fijo | Core ML | Apache-2.0 | HuggingFace |
+| ZUNA1.1 (original) | 380M | Ventanas hasta 30s | PyTorch | Apache-2.0 | Hugging Face, GitHub |
+| ZUNA-CoreML-Apple (oraculumai) | 380M | 5s fijo | Core ML | Apache-2.0 | Hugging Face |
+| ZUNA1.1-Classifier-CoreML-Apple (este) | 380M | 5s fijo | Core ML | Apache-2.0 | Hugging Face |
 
 La diferencia principal entre las dos conversiones Core ML es que la version 1.1 incorpora las mejoras del modelo base ZUNA1.1 (enmascaramiento variable, reconstruccion temporal) y publica perfiles con validacion de paridad. No se han encontrado otras conversiones Core ML de modelos de EEG comparables en el momento de la redaccion.
 
@@ -92,7 +92,7 @@ La diferencia principal entre las dos conversiones Core ML es que la version 1.1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oraculumai/ZUNA1.1-Classifier-CoreML-Apple
+- Modelo en Hugging Face: https://huggingface.co/oraculumai/ZUNA1.1-Classifier-CoreML-Apple
 - Modelo base original: https://huggingface.co/Zyphra/ZUNA1.1
 - Repositorio oficial de Zyphra: https://github.com/Zyphra/zuna
 - Pagina del paper tecnico: https://www.zyphra.com/zuna-technical-paper

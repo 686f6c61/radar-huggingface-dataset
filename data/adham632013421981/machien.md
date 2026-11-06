@@ -2,7 +2,7 @@
 
 ## Resumen
 
-"machien" es un modelo publicado en HuggingFace por el usuario Adham632013421981 (ID: Adham632013421981/machien). Se trata de un repositorio con muy poca informacion publica: la model card se limita a declarar la licencia MIT y no incluye descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. No tiene pipeline tag asignado, lo que impide determinar si se trata de un modelo generativo de texto, un clasificador, un modelo de embeddings u otro tipo de artefacto.
+"machien" es un modelo publicado en Hugging Face por el usuario Adham632013421981 (ID: Adham632013421981/machien). Se trata de un repositorio con muy poca informacion publica: la model card se limita a declarar la licencia MIT y no incluye descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. No tiene pipeline tag asignado, lo que impide determinar si se trata de un modelo generativo de texto, un clasificador, un modelo de embeddings u otro tipo de artefacto.
 
 La relevancia practica de este repositorio es limitada en su estado actual: con 0 descargas y sin documentacion, no hay evidencia de uso comunitario, evaluaciones externas ni casos de aplicacion verificados. Para cualquier desarrollador que lo evalúe, la recomendacion operativa es inspeccionar directamente los pesos y la configuracion del repositorio antes de considerar cualquier despliegue, ya que ni siquiera el tamano del modelo esta especificado en la informacion disponible.
 
@@ -39,7 +39,7 @@ No se han documentado capacidades para este modelo. La ausencia de pipeline tag,
 
 Dada la falta de documentacion, no es posible recomendar casos de uso concretos basados en capacidades verificadas. Aun asi, el repositorio podria resultar util en estos escenarios realistas:
 
-- Investigacion y auditoria de repositorios: al tratarse de un modelo sin documentar, puede servir como caso de estudio para practicas de documentacion y trazabilidad en HuggingFace.
+- Investigacion y auditoria de repositorios: al tratarse de un modelo sin documentar, puede servir como caso de estudio para practicas de documentacion y trazabilidad en Hugging Face.
 - Punto de partida para fine-tuning: si al inspeccionar los pesos resulta ser un modelo de lenguaje basico, la licencia MIT permite derivar versiones propias sin restricciones.
 - Evaluacion de licencias permisivas: la licencia MIT lo hace apto para integracion en productos comerciales sin obligaciones de copyleft.
 - Pruebas de infraestructura de inferencia: puede utilizarse como artefacto de prueba para validar pipelines de descarga y despliegue, dada su baja relevancia y riesgo minimo.
@@ -80,6 +80,6 @@ No es posible establecer una comparativa tecnica rigurosa al desconocerse la cat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Adham632013421981/machien
+- Repositorio en Hugging Face: https://huggingface.co/Adham632013421981/machien
 
 No se han encontrado enlaces adicionales relevantes (papers, blogs, repos de codigo o demos) en la informacion disponible.

@@ -79,6 +79,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Fabrizio99/elf-binaries-models
+- Repositorio Hugging Face: https://huggingface.co/Fabrizio99/elf-binaries-models
 - Perfil del autor: https://huggingface.co/Fabrizio99
 - Referencia al proyecto fuente (mencionado en el README): *fsoppelsa-malware* (unipa-prova-finale) — no se proporciona URL directa.

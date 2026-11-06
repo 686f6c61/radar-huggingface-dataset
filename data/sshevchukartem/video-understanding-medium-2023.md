@@ -73,5 +73,5 @@ No disponible. No se han proporcionado modelos comparables de la misma categorí
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sshevchukartem/video-understanding-medium-2023
+- Hugging Face: https://huggingface.co/sshevchukartem/video-understanding-medium-2023
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). El resto de resultados devueltos no están relacionados con el contenido técnico y se descartan como fuentes.

@@ -85,7 +85,7 @@ Segun el autor, el modelo ocupa el primer puesto en las cuatro subtareas de imag
 
 | Modelo | Parametros | Contexto | MMEB-v2 (global) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ovis-VL-Embedding-2B | ~2B | no disponible | 77,46 | Apache-2.0 | HuggingFace (transformers, safetensors) |
+| Ovis-VL-Embedding-2B | ~2B | no disponible | 77,46 | Apache-2.0 | Hugging Face (transformers, safetensors) |
 | Mejor baseline comparado en MMEB-v2 | no disponible | no disponible | 75,42 | no disponible | no disponible |
 | Ovis-VL-Embedding-9B | no disponible (version mayor citada en la figura del informe tecnico) | no disponible | no disponible | Apache-2.0 (por confirmar) | no disponible |
 | Ovis-Embedding-Omni-3B | no disponible (citado en la figura del informe tecnico) | no disponible | no disponible | no disponible | no disponible |
@@ -99,7 +99,7 @@ La informacion disponible solo permite la comparacion agregada frente al mejor b
 - Riesgo de alucinacion: bajo en la funcion de recuperacion, porque el modelo no genera texto ni respuestas; el riesgo se traslada al generador que consuma los candidatos recuperados.
 - No es un cross-encoder: no realiza atencion cruzada entre consulta y candidato, por lo que su capacidad de discriminacion fina es inferior a la de un reranker y conviene combinarlo con una segunda etapa.
 - Limitaciones de contexto: no se publica la longitud de contexto soportada, lo que impide planificar con margen el numero de fotogramas de video o el tamano de documento por secuencia.
-- Limitaciones de idioma: la tarjeta de HuggingFace no declara idiomas soportados; no hay garantia documentada de rendimiento multilingue fuera del que herede el backbone.
+- Limitaciones de idioma: la tarjeta de Hugging Face no declara idiomas soportados; no hay garantia documentada de rendimiento multilingue fuera del que herede el backbone.
 - Rigidez de la interfaz: consultas y candidatos deben usar el mismo preprocesado, la misma regla de pooling, la misma dimensionalidad (2048) y la misma normalizacion L2. Cualquier variacion rompe la comparabilidad de los vectores.
 - Restricciones de licencia: Apache-2.0 permite uso comercial, pero no se detalla la procedencia de los datos de entrenamiento ni posibles restricciones de terceros sobre ellos.
 - Madurez: el modelo acumula 105 descargas y 25 likes, y la model card disponible esta truncada; el soporte en runtimes de inferencia de alto rendimiento para la pila hibrida Gated DeltaNet no esta confirmado.
@@ -107,7 +107,7 @@ La informacion disponible solo permite la comparacion agregada frente al mejor b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ATH-MaaS/Ovis-VL-Embedding-2B
+- Modelo en Hugging Face: https://huggingface.co/ATH-MaaS/Ovis-VL-Embedding-2B
 - Informe tecnico (PDF): https://arxiv.org/pdf/2609.25165
 - Informe tecnico (HTML): https://arxiv.org/html/2609.25165v1
 - Repositorio en GitHub citado en la model card: https://github.com/ATH-MaaS/Ovis-VL-Embedding

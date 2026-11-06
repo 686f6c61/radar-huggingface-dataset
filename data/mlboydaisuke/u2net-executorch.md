@@ -73,8 +73,8 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- [HuggingFace - mlboydaisuke/U2Net-ExecuTorch](https://huggingface.co/mlboydaisuke/U2Net-ExecuTorch)
+- [Hugging Face - mlboydaisuke/U2Net-ExecuTorch](https://huggingface.co/mlboydaisuke/U2Net-ExecuTorch)
 - [GitHub - xuebinqin/U-2-Net (modelo original)](https://github.com/xuebinqin/U-2-Net)
 - [Paper U²-Net (Pattern Recognition 2020)](https://github.com/xuebinqin/U-2-Net) (el enlace al paper no está disponible directamente, pero el repositorio lo referencia)
-- [HuggingFace - mlboydaisuke/U-2-Net-LiteRT (variante similar)](https://huggingface.co/mlboydaisuke/U-2-Net-LiteRT)
+- [Hugging Face - mlboydaisuke/U-2-Net-LiteRT (variante similar)](https://huggingface.co/mlboydaisuke/U-2-Net-LiteRT)
 - [Scripts de conversión - executorch-models](https://github.com/john-rocky/executorch-models)

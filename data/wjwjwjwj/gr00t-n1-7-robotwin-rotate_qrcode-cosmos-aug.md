@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene dos checkpoints de **NVIDIA Isaac GR00T N1.7-3B** ajustados (fine-tuned) para la tarea `rotate_qrcode` del benchmark de robótica RoboTwin 2.0. El autor, el usuario de HuggingFace `wjwjwjwj`, entrena el modelo base de NVIDIA con dos conjuntos de datos distintos para comparar el efecto de la augmentación de datos sintéticos generada con NVIDIA Cosmos3: una línea base entrenada solo con 50 demostraciones limpias y una versión aumentada que añade 68 escenas generadas por Cosmos3-Nano-Sim-Transfer.
+Este repositorio contiene dos checkpoints de **NVIDIA Isaac GR00T N1.7-3B** ajustados (fine-tuned) para la tarea `rotate_qrcode` del benchmark de robótica RoboTwin 2.0. El autor, el usuario de Hugging Face `wjwjwjwj`, entrena el modelo base de NVIDIA con dos conjuntos de datos distintos para comparar el efecto de la augmentación de datos sintéticos generada con NVIDIA Cosmos3: una línea base entrenada solo con 50 demostraciones limpias y una versión aumentada que añade 68 escenas generadas por Cosmos3-Nano-Sim-Transfer.
 
 El interés principal de esta ficha no es el modelo en sí, sino el experimento que documenta: la augmentación con escenas sintéticas de Cosmos3 eleva la tasa de éxito de la tarea del 14 % al 49 % en escenas "Easy" y del 3 % al 13 % en escenas "Hard" (100 episodios de test cada una). Es un resultado relevante para la comunidad de VLA (Vision-Language-Action) porque demuestra de forma controlada que la generación de datos sintéticos puede mitigar la escasez de demostraciones reales en robótica.
 
@@ -68,8 +68,8 @@ La comparación muestra una mejora de +35 puntos porcentuales en Easy y +10 en H
 
 | Modelo | Parametros | Tipo | Contexto/acciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gr00t-n1.7-robotwin-rotate_qrcode-cosmos-aug (este) | 3B (base) | VLA fine-tuned, tarea rotate_qrcode | Horizonte de acción 16 | NVIDIA Open Model License | Pesos públicos en HuggingFace |
-| nvidia/GR00T-N1.7-3B (base) | 3B | VLA fundacional multi-embodiment | no disponible | NVIDIA Open Model License | Pesos públicos en HuggingFace |
+| gr00t-n1.7-robotwin-rotate_qrcode-cosmos-aug (este) | 3B (base) | VLA fine-tuned, tarea rotate_qrcode | Horizonte de acción 16 | NVIDIA Open Model License | Pesos públicos en Hugging Face |
+| nvidia/GR00T-N1.7-3B (base) | 3B | VLA fundacional multi-embodiment | no disponible | NVIDIA Open Model License | Pesos públicos en Hugging Face |
 | Otros VLAs de tamaño similar (p. ej. OpenVLA, π0) | ~3B–7B / no disponible | VLA generales | no disponible | Variadas (MIT, openrail, etc.) | Pesos públicos |
 
 Nota: no hay datos comparativos de rendimiento directo con otros VLAs en esta tarea; la comparación cuantitativa relevante publicada es interna (baseline vs cosmos-aug).

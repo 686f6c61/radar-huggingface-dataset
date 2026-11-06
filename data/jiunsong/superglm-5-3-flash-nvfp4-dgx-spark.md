@@ -89,7 +89,7 @@ No hay datos públicos de MMLU, HumanEval u otros benchmarks para este modelo ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jiunsong/SuperGLM-5.3-Flash-NVFP4-DGX-Spark
+- Modelo en Hugging Face: https://huggingface.co/Jiunsong/SuperGLM-5.3-Flash-NVFP4-DGX-Spark
 - Perfil del autor (Jiunsong): https://huggingface.co/Jiunsong/models
 - Guía de GLM-5.3-Flash en Unsloth (referencia general): https://unsloth.ai/docs/models/glm-5.3-flash
 - Repo GitHub con despliegue similar en 2×DGX Spark: https://github.com/tonyd2wild/GLM-5.3-Flash-NVFP4-2x-DGX-Spark

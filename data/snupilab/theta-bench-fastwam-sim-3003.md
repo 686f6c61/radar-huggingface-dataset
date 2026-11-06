@@ -88,7 +88,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables ni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/snupilab/theta-bench-fastwam-sim-3003
+- Repositorio en Hugging Face: https://huggingface.co/snupilab/theta-bench-fastwam-sim-3003
 - Dataset asociado: https://huggingface.co/datasets/snupilab/theta-bench-teleop
 - Datos de entrenamiento fijados (revision 8b2cd31e107b64cb13f812ea217a63a20845c78a): https://huggingface.co/datasets/snupilab/theta-bench-teleop/tree/8b2cd31e107b64cb13f812ea217a63a20845c78a/raw
 

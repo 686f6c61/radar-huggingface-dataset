@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-EXL3-K4-Core-K6 (este) | 192.681.138.816 | no disponible | safetensors EXL3 mixto K4/K6 | glm-5.3 | HuggingFace, 70 descargas |
-| zai-org/GLM-5.3-BF16 (base) | no disponible en la informacion | no disponible | safetensors BF16 | glm-5.3 | HuggingFace (modelo oficial) |
+| GLM-5.3-EXL3-K4-Core-K6 (este) | 192.681.138.816 | no disponible | safetensors EXL3 mixto K4/K6 | glm-5.3 | Hugging Face, 70 descargas |
+| zai-org/GLM-5.3-BF16 (base) | no disponible en la informacion | no disponible | safetensors BF16 | glm-5.3 | Hugging Face (modelo oficial) |
 | Cuantizacion K4-v1 previa (mencionada en la model card) | no disponible | no disponible | EXL3 K4 sobre block-FP8 | glm-5.3 | no disponible |
 
 No se dispone de datos de benchmarks ni de otros modelos comparables de la misma categoría en la información proporcionada.
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables de la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wrldsuksgo2mars/GLM-5.3-EXL3-K4-Core-K6
+- Repositorio Hugging Face: https://huggingface.co/wrldsuksgo2mars/GLM-5.3-EXL3-K4-Core-K6
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-BF16
 - Commit del modelo base: https://huggingface.co/zai-org/GLM-5.3-BF16/tree/9d2398f478cab2de883137db3a36ad2c96205e24
 - Licencia: https://huggingface.co/zai-org/GLM-5.3-BF16/blob/9d2398f478cab2de883137db3a36ad2c96205e24/LICENSE

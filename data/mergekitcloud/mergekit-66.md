@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MergekitCloud/mergekit-66 es un modelo de lenguaje de 8.030 millones de parámetros creado mediante la fusión (merge) de cuatro modelos base de la familia Llama 3.1 de 8B, utilizando la técnica Model Stock descrita en el artículo arXiv:2403.19522. El autor, MergekitCloud, lo publica en HuggingFace como un experimento de fusión reproducible, sin datos de entrenamiento adicionales ni fine-tuning posterior.
+MergekitCloud/mergekit-66 es un modelo de lenguaje de 8.030 millones de parámetros creado mediante la fusión (merge) de cuatro modelos base de la familia Llama 3.1 de 8B, utilizando la técnica Model Stock descrita en el artículo arXiv:2403.19522. El autor, MergekitCloud, lo publica en Hugging Face como un experimento de fusión reproducible, sin datos de entrenamiento adicionales ni fine-tuning posterior.
 
 El modelo combina las capacidades de ArliAI/Llama-3.1-8B-ArliAI-RPMax-v1.3, Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2, Undi95/Llama3-Unholy-8B-OAS y vicgalle/Humanish-Roleplay-Llama-3.1-8B, todos orientados a conversación y roleplay. Al ser un merge, hereda la arquitectura transformer decoder-only de Llama 3.1, con 8B parámetros y un tamaño de repo de 16,1 GB en formato safetensors (float16). No se proporcionan especificaciones sobre longitud de contexto, licencia ni idiomas soportados, lo que limita su uso directo en producción sin verificación previa.
 
@@ -53,17 +53,17 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 - VRAM estimada para inferencia: al tener 8.030 millones de parámetros en float16, se necesitan aproximadamente 16 GB de VRAM para cargar los pesos completos. Con cuantización a int8 (no disponible oficialmente) se reduciría a ~8 GB, y a int4 a ~4 GB, pero no se ofrecen versiones cuantizadas.
 - GPU recomendadas: para float16, una GPU con al menos 16 GB de VRAM, como NVIDIA RTX 4090, A100 40GB, o A10G. En GPUs de 8 GB (RTX 3070, 4060) solo sería posible con cuantización, que no está disponible.
-- Opciones de despliegue: al ser un modelo estándar de transformers, puede ejecutarse con vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se cuantiza), o mediante la librería transformers de HuggingFace. No hay integraciones específicas documentadas.
+- Opciones de despliegue: al ser un modelo estándar de transformers, puede ejecutarse con vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se cuantiza), o mediante la librería transformers de Hugging Face. No hay integraciones específicas documentadas.
 - Latencia y throughput: no disponibles, dependen del hardware y del backend utilizado.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MergekitCloud/mergekit-66 | 8,03B | No disponible | No disponible | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128k | Llama 3.1 Community License | HuggingFace |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,24B | 32k | Apache 2.0 | HuggingFace |
-| ArliAI/Llama-3.1-8B-ArliAI-RPMax-v1.3 | 8,03B | No disponible | No disponible | HuggingFace |
+| MergekitCloud/mergekit-66 | 8,03B | No disponible | No disponible | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128k | Llama 3.1 Community License | Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,24B | 32k | Apache 2.0 | Hugging Face |
+| ArliAI/Llama-3.1-8B-ArliAI-RPMax-v1.3 | 8,03B | No disponible | No disponible | Hugging Face |
 
 La comparativa se limita a parámetros y disponibilidad, ya que no hay datos de rendimiento para mergekit-66. Los modelos base de los que deriva son alternativas directas, pero el merge no ofrece ventajas verificables sobre ellos.
 
@@ -79,7 +79,7 @@ La comparativa se limita a parámetros y disponibilidad, ya que no hay datos de 
 
 ## Enlaces
 
-- [HuggingFace - MergekitCloud/mergekit-66](https://huggingface.co/MergekitCloud/mergekit-66)
+- [Hugging Face - MergekitCloud/mergekit-66](https://huggingface.co/MergekitCloud/mergekit-66)
 - [mergekit (GitHub)](https://github.com/arcee-ai/mergekit)
 - [Paper Model Stock (arXiv:2403.19522)](https://arxiv.org/abs/2403.19522)
 - [MergeKit Hub - Comunidad](https://www.mergekit.com/)

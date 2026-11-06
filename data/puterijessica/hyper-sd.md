@@ -4,7 +4,7 @@
 
 Hyper-SD es una técnica de aceleración de modelos de difusión desarrollada por ByteDance, presentada en el paper *Hyper-SD: Trajectory Segmented Consistency Model for Efficient Image Synthesis* (arXiv:2404.13686). El método se basa en destilación de consistencia segmentada por trayectoria, una variante de los modelos de consistencia que permite reducir drásticamente el número de pasos de inferencia necesarios para generar una imagen de calidad, pasando de los 20-50 pasos habituales a tan solo 1-16 pasos según la versión del LoRA.
 
-El modelo se distribuye como pesos LoRA que se acoplan a modelos base existentes: FLUX.1-dev, SD3-Medium, SDXL Base 1.0 y Stable Diffusion v1.5. Esto lo convierte en una solución ligera y altamente compatible, ya que no requiere reentrenar el modelo base ni sustituir el pipeline completo. El repositorio en HuggingFace (tanto el oficial de ByteDance como la copia referenciada en esta ficha) contiene múltiples checkpoints LoRA para diferentes combinaciones de modelo base y número de pasos, además de workflows para ComfyUI y ejemplos de uso con diffusers.
+El modelo se distribuye como pesos LoRA que se acoplan a modelos base existentes: FLUX.1-dev, SD3-Medium, SDXL Base 1.0 y Stable Diffusion v1.5. Esto lo convierte en una solución ligera y altamente compatible, ya que no requiere reentrenar el modelo base ni sustituir el pipeline completo. El repositorio en Hugging Face (tanto el oficial de ByteDance como la copia referenciada en esta ficha) contiene múltiples checkpoints LoRA para diferentes combinaciones de modelo base y número de pasos, además de workflows para ComfyUI y ejemplos de uso con diffusers.
 
 La relevancia actual de Hyper-SD radica en que aborda uno de los principales cuellos de botella de la generación de imágenes por difusión: la latencia. Al reducir los pasos de inferencia, permite desplegar generación de imágenes en tiempo real o casi real en hardware consumer, lo que abre la puerta a aplicaciones interactivas, edición en vivo y pipelines de producción más eficientes.
 
@@ -35,7 +35,7 @@ Una innovacion destacable es la compatibilidad con diferentes schedulers y la po
 - Compatibilidad con multiples modelos base: FLUX.1-dev, SD3-Medium, SDXL Base 1.0 y Stable Diffusion v1.5.
 - Soporte de ControlNet: los LoRAs de Hyper-SD son compatibles con ControlNet, permitiendo control estructural (scribble, pose, profundidad, etc.) manteniendo la aceleracion.
 - Integracion con ComfyUI mediante workflows oficiales y un scheduler personalizado para el checkpoint de 1 paso de SDXL.
-- Compatibilidad con la libreria diffusers de HuggingFace, con ejemplos de uso directos.
+- Compatibilidad con la libreria diffusers de Hugging Face, con ejemplos de uso directos.
 - Capacidad de ajuste fino de la escala del LoRA para adaptar el equilibrio entre velocidad y calidad.
 - No es un modelo de lenguaje: no dispone de tool calling, agentes ni razonamiento multi-paso.
 
@@ -76,7 +76,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- Repositorio oficial de Hyper-SD en HuggingFace: https://huggingface.co/ByteDance/Hyper-SD
+- Repositorio oficial de Hyper-SD en Hugging Face: https://huggingface.co/ByteDance/Hyper-SD
 - Repositorio referenciado en esta ficha: https://huggingface.co/puterijessica/Hyper-SD
 - Paper tecnico (arXiv): https://arxiv.org/abs/2404.13686
 - Pagina del proyecto: https://hyper-sd.github.io/

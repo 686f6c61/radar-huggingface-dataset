@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de las al
 
 ## Enlaces
 
-- HuggingFace (este paquete): https://huggingface.co/verathos-ai/kev-4b-mlx-fp16
+- Hugging Face (este paquete): https://huggingface.co/verathos-ai/kev-4b-mlx-fp16
 - Modelo base kev-4b: https://huggingface.co/jaredpalmer/kev-4b
 - Modelo base original Qwen3.5-4B-Base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Revision de kev-4b utilizada: 6cfce5c2fa4b4bd64026336ab649c5ca78857d52

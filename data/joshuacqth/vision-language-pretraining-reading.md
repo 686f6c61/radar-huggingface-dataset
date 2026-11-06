@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario **joshuacqth** con el identificador `vision-language-pretraining-reading`, no contiene un modelo de lenguaje ni de visión funcional. Se trata de un conjunto de notas de investigación exploratorias sobre **preentrenamiento de lenguaje y visión** (Vision Language Pretraining, VLP). El autor describe explícitamente que el contenido es un esbozo de experimento y una recopilación de lecturas, sin resultados de benchmarks, sin código liberado ni checkpoints entrenados.
+Este repositorio de Hugging Face, publicado por el usuario **joshuacqth** con el identificador `vision-language-pretraining-reading`, no contiene un modelo de lenguaje ni de visión funcional. Se trata de un conjunto de notas de investigación exploratorias sobre **preentrenamiento de lenguaje y visión** (Vision Language Pretraining, VLP). El autor describe explícitamente que el contenido es un esbozo de experimento y una recopilación de lecturas, sin resultados de benchmarks, sin código liberado ni checkpoints entrenados.
 
 El repositorio incluye un archivo `analysis.md` como artefacto principal y un `README.md`. También contiene un tensor en formato `safetensors` con un total de **16.576 parámetros**, un valor minúsculo que corresponde a un artefacto puntual, no a un modelo de redes neuronales entrenado. La razón de ser de esta publicación es documentar el alcance de una pregunta de investigación, los posibles factores de confusión, y los requisitos de reproducibilidad antes de ejecutar cualquier experimento real.
 
@@ -47,7 +47,7 @@ Al tratarse de un documento de investigacion y no de un modelo operativo, los ca
 - **Seleccion de benchmarks:** ofrece una guia sobre que benchmarks publicos son apropiados para evaluar modelos de lenguaje-vision, evitando elegir metricas inadecuadas.
 - **Formacion de nuevos investigadores:** se puede utilizar como material docente para explicar que no debe incluirse en una publicacion y como se documentan los limites de un estudio exploratorio.
 - **Control de calidad en revision de papers:** sirve como referencia de lo que un articulo sobre VLP deberia declarar explicitamente: datasets, semillas, hardware, logs, y ausencia de resultados cuando aun no se han obtenido.
-- **Gestion de expectativas en investigacion abierta:** demuestra como publicar notas de investigacion en HuggingFace sin pretender que son un modelo entrenado, lo cual es util para la comunidad como ejemplo de buenas practicas.
+- **Gestion de expectativas en investigacion abierta:** demuestra como publicar notas de investigacion en Hugging Face sin pretender que son un modelo entrenado, lo cual es util para la comunidad como ejemplo de buenas practicas.
 
 No existe ningun caso de uso como modelo de IA en produccion, ya que no hay capacidad de inferencia ni pesos aprovechables.
 
@@ -67,7 +67,7 @@ Al no ser un modelo utilizable, no se requieren recursos de computo para inferen
 
 ## Comparativa con modelos similares
 
-No se puede realizar una comparativa con modelos similares, ya que este repositorio no pertenece a la categoria de modelos de lenguaje o de vision. Es un documento de notas de investigacion. El unico elemento comparable es el repositorio identico publicado por el usuario `Kbjoshi2001`, que tampoco contiene un modelo entrenado. El autor `joshuacqth` cuenta con otros repositorios en HuggingFace, como `model_113101920_flamingo_nano`, pero no se ha proporcionado informacion suficiente sobre ese modelo para establecer una comparacion valida.
+No se puede realizar una comparativa con modelos similares, ya que este repositorio no pertenece a la categoria de modelos de lenguaje o de vision. Es un documento de notas de investigacion. El unico elemento comparable es el repositorio identico publicado por el usuario `Kbjoshi2001`, que tampoco contiene un modelo entrenado. El autor `joshuacqth` cuenta con otros repositorios en Hugging Face, como `model_113101920_flamingo_nano`, pero no se ha proporcionado informacion suficiente sobre ese modelo para establecer una comparacion valida.
 
 | Parametro | Este repositorio | Kbjoshi2001/vision-language-pretraining-reading | model_113101920_flamingo_nano |
 |---|---|---|---|
@@ -89,7 +89,7 @@ No se puede realizar una comparativa con modelos similares, ya que este reposito
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/joshuacqth/vision-language-pretraining-reading
+- Repositorio en Hugging Face: https://huggingface.co/joshuacqth/vision-language-pretraining-reading
 - Repositorio identico de Kbjoshi2001: https://huggingface.co/Kbjoshi2001/vision-language-pretraining-reading
-- Perfil de joshuacqth en HuggingFace: https://huggingface.co/joshuacqth
+- Perfil de joshuacqth en Hugging Face: https://huggingface.co/joshuacqth
 - Repositorio de datasets de joshuacqth: https://huggingface.co/joshuacqth/datasets

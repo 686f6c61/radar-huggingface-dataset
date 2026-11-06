@@ -108,6 +108,6 @@ Observaciones: frente a Qwen3-30B-A3B, el modelo analizado declara un contexto c
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/0x795E2795/Obsidian-Alpha-26B-A4B-it-qat-q4_0
+- Hugging Face (este repositorio): https://huggingface.co/0x795E2795/Obsidian-Alpha-26B-A4B-it-qat-q4_0
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B
 - Búsqueda web: no se han encontrado resultados relevantes. Las consultas devolvieron únicamente páginas sobre el pintor Frank Auerbach (Wikipedia, Fitzwilliam Museum, Ben Brown Fine Arts, Jewish Renaissance, Christopher Kingzett Fine Art), sin ninguna relación con el modelo. No hay papers, blogs, repositorios ni demos adicionales que enlazar.

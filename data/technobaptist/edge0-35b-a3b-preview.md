@@ -110,7 +110,7 @@ La comparacion directa con el modelo base es la mas fiable: el pipeline int4 con
 
 ## Enlaces
 
-- Repositorio en HuggingFace (identificador consultado): https://huggingface.co/TechnoBaptist/Edge0-35B-A3B-preview
+- Repositorio en Hugging Face (identificador consultado): https://huggingface.co/TechnoBaptist/Edge0-35B-A3B-preview
 - Repositorio referenciado en la model card: https://huggingface.co/Edge0/Edge0-35b-a3b-preview
 - Variante menor referenciada: https://huggingface.co/Edge0/Edge0-8b-a1b-preview
 - Repositorio del framework edge0: https://github.com/Edge0-AI/edge0

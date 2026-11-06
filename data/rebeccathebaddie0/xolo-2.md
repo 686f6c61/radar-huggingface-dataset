@@ -2,7 +2,7 @@
 
 ## Resumen
 
-xolo.2 es un repositorio publicado en HuggingFace por el usuario rebeccathebaddie0 bajo el identificador `rebeccathebaddie0/xolo.2`. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card no contiene mas que un campo `license: unknown` sin cuerpo de documentacion: no hay descripcion del modelo, del proceso de entrenamiento ni de las capacidades esperadas. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto o idiomas soportados.
+xolo.2 es un repositorio publicado en Hugging Face por el usuario rebeccathebaddie0 bajo el identificador `rebeccathebaddie0/xolo.2`. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card no contiene mas que un campo `license: unknown` sin cuerpo de documentacion: no hay descripcion del modelo, del proceso de entrenamiento ni de las capacidades esperadas. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto o idiomas soportados.
 
 El unico dato cuantitativo disponible es el tamano del repositorio, 0,1 GB, y las marcas temporales de creacion y actualizacion (21 de septiembre de 2026, con apenas 25 segundos de diferencia entre ambas), lo que sugiere una subida automatizada o un artefacto de prueba mas que un lanzamiento de modelo consolidado. La busqueda web realizada no devuelve ningun resultado relacionado con este modelo: los enlaces recuperados corresponden a la banda brasileña de metal Sepultura y son ruido de recuperacion, no documentacion tecnica.
 
@@ -38,7 +38,7 @@ Tampoco hay datos sobre el corpus de entrenamiento: se desconoce el volumen de t
 ## Casos de uso
 
 - Evaluacion exploratoria en sandbox: dado que no existe documentacion tecnica, el unico uso razonable por ahora es la inspeccion local del repositorio para determinar formato de pesos y arquitectura real antes de plantear cualquier integracion.
-- Analisis forense de artefactos de HuggingFace: el repositorio sirve como caso de estudio sobre publicaciones sin model card ni licencia definida, util para equipos que disenan politicas de admision de modelos en un catalogo interno.
+- Analisis forense de artefactos de Hugging Face: el repositorio sirve como caso de estudio sobre publicaciones sin model card ni licencia definida, util para equipos que disenan politicas de admision de modelos en un catalogo interno.
 - Prototipado con reservas: si el contenido resultase ser un modelo funcional, podria probarse en tareas triviales de generacion de texto, siempre sin exponerlo a datos sensibles ni a usuarios finales.
 - Verificacion de licencia previa a uso comercial: antes de cualquier despliegue seria obligatorio aclarar la licencia, hoy marcada como desconocida, lo que impide legalmente su uso en produccion.
 - Auditoria de seguridad de pesos: la ausencia de formatos declarados obliga a inspeccionar el contenido del repositorio en busca de ficheros ejecutables o pesos no estandar antes de cargarlos en un entorno de inferencia.
@@ -73,5 +73,5 @@ No disponible. Al no existir datos de arquitectura, parametros, contexto ni rend
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rebeccathebaddie0/xolo.2
+- Hugging Face: https://huggingface.co/rebeccathebaddie0/xolo.2
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios o demos) en la busqueda web. Los resultados recuperados corresponden a entradas sobre la banda Sepultura y no guardan relacion con el modelo.

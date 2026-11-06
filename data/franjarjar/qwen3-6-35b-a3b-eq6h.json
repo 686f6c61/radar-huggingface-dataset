@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Franjarjar/Qwen3.6-35B-A3B-EQ6H",
+  "slug": "franjarjar-qwen3-6-35b-a3b-eq6h",
+  "author": "Franjarjar",
+  "url": "https://huggingface.co/Franjarjar/Qwen3.6-35B-A3B-EQ6H",
+  "created_at": "2026-11-05T16:31:53.000Z",
+  "updated_at": "2026-11-05T18:04:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "espetero",
+    "eq",
+    "quantized",
+    "apple-silicon",
+    "metal",
+    "mixture-of-experts",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 10508689536,
+  "parameters_human": "10.51B",
+  "storage_bytes": 29565164638,
+  "storage_human": "29.6 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Franjarjar/Qwen3.6-35B-A3B-EQ6H · Hugging Face",
+      "url": "https://huggingface.co/Franjarjar/Qwen3.6-35B-A3B-EQ6H",
+      "snippet": "Qwen/Qwen3.6-35B-A3B quantized to EQ6H for Espetero, a native Metal inference engine for Apple silicon. EQ (LaneQuant) is the quantization format native to Espetero. It stores 6- and 8-bit codes, with a signed 8-bit scale per 16 inputs and an fp16 scale per 256, the 16 inputs of a scale chosen so that every lane of the Apple GPU's matrix kernels needs one scale per step (the format)."
+    },
+    {
+      "title": "Qwen3.6 35B-A3B (MoE) - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-6-35b-a3b/",
+      "snippet": "Qwen3.6 35B-A3B is a Mixture-of-Experts (MoE) model from Alibaba Cloud’s Qwen3.6 family. It features 35 billion total parameters with only 3 billion active during inference, delivering strong performance with excellent efficiency on edge devices."
+    }
+  ]
+}

@@ -6,7 +6,7 @@ microduck-sprint-quicksilver-v2 es una política de control robótico en formato
 
 El problema que aborda es la optimización de una política de marcha en un entorno de evaluación concreto: el autor identifica las posiciones iniciales de evaluación declaradas y busca una secuencia de acciones que minimice el tiempo de recorrido. El resultado reportado es una media de 0,819 s sobre cinco arranques locales, con 5 de 5 finalizaciones a una velocidad de consigna de 0,2 m/s. Se trata, por tanto, de una política ajustada in-sample al evaluador, no de un controlador generalista.
 
-Su relevancia es acotada pero ilustrativa: muestra cómo los formatos de competición en robótica simulada permiten estrategias de búsqueda dirigida sobre grafos ONNX, y sirve como referencia metodológica sobre los límites entre optimización legítima y sobreajuste al banco de evaluación. El repositorio ocupa 0,0 GB según HuggingFace, lo que sugiere un artefacto de tamaño muy reducido, coherente con una política de control y no con un modelo neuronal de gran escala.
+Su relevancia es acotada pero ilustrativa: muestra cómo los formatos de competición en robótica simulada permiten estrategias de búsqueda dirigida sobre grafos ONNX, y sirve como referencia metodológica sobre los límites entre optimización legítima y sobreajuste al banco de evaluación. El repositorio ocupa 0,0 GB según Hugging Face, lo que sugiere un artefacto de tamaño muy reducido, coherente con una política de control y no con un modelo neuronal de gran escala.
 
 ## Especificaciones tecnicas
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible más 
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HlibPlakhtii/microduck-sprint-quicksilver-v2 | Política ONNX con lookup | no disponible | no aplica | 0,819 s media local, 5/5 finalizaciones | Apache 2.0 | HuggingFace |
-| rumezhak/microduck-sprint-remix-leader6 | Política ONNX base | no disponible | no aplica | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace |
+| HlibPlakhtii/microduck-sprint-quicksilver-v2 | Política ONNX con lookup | no disponible | no aplica | 0,819 s media local, 5/5 finalizaciones | Apache 2.0 | Hugging Face |
+| rumezhak/microduck-sprint-remix-leader6 | Política ONNX base | no disponible | no aplica | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face |
 | Otras políticas de MicroDuck Arena | Políticas de control | no disponible | no aplica | no disponible | no disponible | Espacio pollen-robotics/microduck-arena |
 
 No se dispone de datos de benchmarks comparativos entre estas políticas en la información proporcionada.
@@ -88,6 +88,6 @@ No se dispone de datos de benchmarks comparativos entre estas políticas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HlibPlakhtii/microduck-sprint-quicksilver-v2
+- Modelo en Hugging Face: https://huggingface.co/HlibPlakhtii/microduck-sprint-quicksilver-v2
 - Modelo base: https://huggingface.co/rumezhak/microduck-sprint-remix-leader6/tree/bea0b3ef0be8c15d687d98767a060581651da75c
 - Evaluador MicroDuck Arena: https://huggingface.co/spaces/pollen-robotics/microduck-arena/tree/main

@@ -6,7 +6,7 @@ kayak_v2-GGUF es la versión cuantizada en formato GGUF del modelo kayak_v2, pub
 
 El interés práctico de esta publicación es doble. Por un lado, el modelo original se distribuye con fine-tuning completo sobre una base Qwen3-VL, lo que lo orienta a tareas de agentes que operan sobre pantallas: identificar botones, campos de texto, iconos o regiones de una captura y devolver sus coordenadas. Por otro, esta versión GGUF permite ejecutar el modelo en local con llama.cpp y derivados, sin necesidad de GPU de datacenter, algo relevante para pipelines de automatización de escritorio, testing de interfaces y prototipado de agentes de navegador.
 
-La ficha se basa exclusivamente en la información del repositorio de HuggingFace y en la model card del cuantizador. No se han publicado resultados de benchmarks ni detalles sobre la composición del dataset de entrenamiento en la información disponible, y la búsqueda web realizada no devolvió enlaces técnicos relevantes sobre este modelo.
+La ficha se basa exclusivamente en la información del repositorio de Hugging Face y en la model card del cuantizador. No se han publicado resultados de benchmarks ni detalles sobre la composición del dataset de entrenamiento en la información disponible, y la búsqueda web realizada no devolvió enlaces técnicos relevantes sobre este modelo.
 
 ## Especificaciones tecnicas
 
@@ -105,4 +105,4 @@ No se dispone de datos verificados de rendimiento, contexto ni licencia de las a
 - Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
 - Grafo de perplejidad por tipo de cuantización (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
 
-Nota: la búsqueda web realizada no devolvió resultados técnicos relevantes sobre este modelo; los enlaces anteriores proceden del repositorio de HuggingFace y de la model card del cuantizador.
+Nota: la búsqueda web realizada no devolvió resultados técnicos relevantes sobre este modelo; los enlaces anteriores proceden del repositorio de Hugging Face y de la model card del cuantizador.

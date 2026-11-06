@@ -88,8 +88,8 @@ La comparación con GPT 5.6 Terra se basa en la afirmación del blog de Daily.co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pipecat-ai/phonellm-alpha-1-nvfp4
-- Modelo base en HuggingFace: https://huggingface.co/pipecat-ai/phonellm-alpha-1
+- Modelo en Hugging Face: https://huggingface.co/pipecat-ai/phonellm-alpha-1-nvfp4
+- Modelo base en Hugging Face: https://huggingface.co/pipecat-ai/phonellm-alpha-1
 - Anuncio oficial en el blog de Daily.co: https://www.daily.co/blog/announcing-pipecat-phonellm-alpha-1/
 - Ejemplos de despliegue en GitHub: https://github.com/pipecat-ai/pipecat-examples/tree/main/phonellm
 - Ficha en LLM Explorer: https://llm-explorer.com/model/pipecat-ai%2Fphonellm-alpha-1,5pezStBz2O4J8azSvNPm6l

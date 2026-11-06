@@ -83,7 +83,7 @@ La comparativa con otros modelos de la misma categoria (por ejemplo, DeepSeek-V3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-8bit-MTP
+- Modelo en Hugging Face: https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-8bit-MTP
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - MLX-VLM: https://github.com/ml-explore/mlx-vlm

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshycodes/fd-qwen3.5-9b-self_st-s1` es un checkpoint publicado en HuggingFace por el usuario `joshycodes`, derivado de la familia Qwen 3.5 de 9B (el identificador incluye explicitamente `qwen3.5-9b` y la etiqueta de arquitectura es `qwen3_5`). El repositorio contiene pesos en formato safetensors con un total de 9.653.104.368 parametros reales, lo que situa al modelo en la categoria de ~9,65B. El tamano del repositorio es de 19,3 GB, coherente con un almacenamiento en precision bf16/fp16 (aproximadamente 2 bytes por parametro).
+`joshycodes/fd-qwen3.5-9b-self_st-s1` es un checkpoint publicado en Hugging Face por el usuario `joshycodes`, derivado de la familia Qwen 3.5 de 9B (el identificador incluye explicitamente `qwen3.5-9b` y la etiqueta de arquitectura es `qwen3_5`). El repositorio contiene pesos en formato safetensors con un total de 9.653.104.368 parametros reales, lo que situa al modelo en la categoria de ~9,65B. El tamano del repositorio es de 19,3 GB, coherente con un almacenamiento en precision bf16/fp16 (aproximadamente 2 bytes por parametro).
 
 El nombre del checkpoint sugiere un ajuste posterior sobre el modelo base: `fd` podria corresponder a la familia "feather" del mismo autor, `self_st` a un proceso de autoentrenamiento o estudio propio, y `s1` a una variante de razonamiento. No obstante, la model card del repositorio no esta disponible en la informacion proporcionada, por lo que no se puede confirmar el pipeline de entrenamiento, la composicion de datos ni la licencia. El modelo acumula 15 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 4 de octubre de 2026.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `joshycodes/fd-qwen3.5-9b-self_st-s1` | 9,65B | no disponible | no disponible | HuggingFace (15 descargas) | Checkpoint de investigacion sin model card |
-| `joshycodes/qwen3.5-9b-feather-f3-mt` | ~9,65B (presumible) | no disponible | no disponible | HuggingFace | Entrenamiento continuado sobre corpus autogenerado (8,3M tokens) |
-| `joshycodes/Qwen3.5-9B-sft-control-lora` | adaptador LoRA sobre 9B | no disponible | no disponible | HuggingFace | Variante de control SFT |
-| `Qwen/Qwen3.5-9B` (base) | ~9B | no disponible en la busqueda | no disponible en la busqueda | HuggingFace / Fireworks AI | Modelo base oficial de la familia Qwen 3.5 |
+| `joshycodes/fd-qwen3.5-9b-self_st-s1` | 9,65B | no disponible | no disponible | Hugging Face (15 descargas) | Checkpoint de investigacion sin model card |
+| `joshycodes/qwen3.5-9b-feather-f3-mt` | ~9,65B (presumible) | no disponible | no disponible | Hugging Face | Entrenamiento continuado sobre corpus autogenerado (8,3M tokens) |
+| `joshycodes/Qwen3.5-9B-sft-control-lora` | adaptador LoRA sobre 9B | no disponible | no disponible | Hugging Face | Variante de control SFT |
+| `Qwen/Qwen3.5-9B` (base) | ~9B | no disponible en la busqueda | no disponible en la busqueda | Hugging Face / Fireworks AI | Modelo base oficial de la familia Qwen 3.5 |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes; la comparacion es estructural (tamano, origen, tipo de ajuste) y no de calidad.
 

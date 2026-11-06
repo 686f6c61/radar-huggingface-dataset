@@ -82,9 +82,9 @@ No se dispone de información sobre modelos comparables específicos en la docum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sarkarghya/olmoearth-v1.2-energy-multitask-v3
+- Modelo en Hugging Face: https://huggingface.co/sarkarghya/olmoearth-v1.2-energy-multitask-v3
 - Modelo base OlmoEarth v1.2: https://huggingface.co/allenai/OlmoEarth-v1_2-Base
 - Paper de OlmoEarth v1.2: https://arxiv.org/abs/2605.20804
 - Sitio web de OlmoEarth: https://olmoearth.allenai.org/
-- Colección de OlmoEarth en HuggingFace: https://huggingface.co/collections/allenai/olmoearth
+- Colección de OlmoEarth en Hugging Face: https://huggingface.co/collections/allenai/olmoearth
 - Aplicación de demostración (mapa): https://sarkarghya--olmoearth-energy-grid-demo-web.modal.run

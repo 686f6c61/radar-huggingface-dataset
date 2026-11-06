@@ -2,11 +2,11 @@
 
 ## Resumen
 
-sentiment-versioning-demo es un modelo de clasificación de texto publicado por el usuario lachiania en HuggingFace. Se trata de un ajuste fino (fine-tuning) de distilbert-base-uncased, un transformer encoder de tipo BERT destilado, sobre un conjunto de datos que el propio autor no documenta. El repositorio tiene un tamano de 0,8 GB y contiene pesos en formato safetensors, con 66.955.010 parametros totales, coherentes con la arquitectura de DistilBERT (6 capas, 12 cabezas de atencion, dimension oculta 768).
+sentiment-versioning-demo es un modelo de clasificación de texto publicado por el usuario lachiania en Hugging Face. Se trata de un ajuste fino (fine-tuning) de distilbert-base-uncased, un transformer encoder de tipo BERT destilado, sobre un conjunto de datos que el propio autor no documenta. El repositorio tiene un tamano de 0,8 GB y contiene pesos en formato safetensors, con 66.955.010 parametros totales, coherentes con la arquitectura de DistilBERT (6 capas, 12 cabezas de atencion, dimension oculta 768).
 
 El modelo esta etiquetado para la tarea text-classification y lleva el sufijo "sentiment" en su nombre, lo que sugiere que su objetivo es el analisis de sentimiento, aunque la model card no especifica el esquema de etiquetas ni la composicion del dataset de entrenamiento. Por sus caracteristicas (66 M de parametros y ventana de 512 tokens heredada del modelo base), esta pensado para inferencia de baja latencia y bajo coste computacional, no para generacion de texto ni razonamiento.
 
-Su relevancia actual es limitada: se trata de un experimento con cero descargas y cero likes en el momento de la consulta, publicado el 15 de septiembre de 2026, sin benchmarks declarados (el campo results del model-index esta vacio) y con una model card generada automaticamente por el Trainer de HuggingFace que el autor no ha completado. Es util como ejemplo de pipeline de ajuste fino y de versionado de modelos, pero no como componente listo para produccion sin una evaluacion adicional.
+Su relevancia actual es limitada: se trata de un experimento con cero descargas y cero likes en el momento de la consulta, publicado el 15 de septiembre de 2026, sin benchmarks declarados (el campo results del model-index esta vacio) y con una model card generada automaticamente por el Trainer de Hugging Face que el autor no ha completado. Es util como ejemplo de pipeline de ajuste fino y de versionado de modelos, pero no como componente listo para produccion sin una evaluacion adicional.
 
 ## Especificaciones tecnicas
 
@@ -38,7 +38,7 @@ Los hiperparametros documentados en la model card son: learning rate 2e-5, train
 - Analisis de sentimiento (presunto): el nombre del modelo apunta a esta tarea, pero la model card no especifica el mapeo id2label ni el numero de clases entrenadas.
 - Clasificacion de secuencias cortas: al derivar de DistilBERT, su ventana efectiva es de 512 tokens, adecuada para frases, titulos, tuits o resenas breves.
 - Inferencia rapida en CPU y GPU de gama baja: 66 M de parametros permiten latencias de milisegundos en hardware modesto.
-- Compatibilidad con text-embeddings-inference y con HuggingFace Inference Endpoints (etiquetas text-embeddings-inference y endpoints_compatible).
+- Compatibilidad con text-embeddings-inference y con Hugging Face Inference Endpoints (etiquetas text-embeddings-inference y endpoints_compatible).
 - No soporta generacion de texto, razonamiento multi-paso, tool calling, function calling ni uso como agente.
 - No dispone de modo thinking, capacidades de vision ni procesamiento de audio.
 - Capacidades multilingues: no disponibles; el backbone base esta entrenado mayoritariamente en ingles.
@@ -71,7 +71,7 @@ Estos valores corresponden a una unica epoca sobre un dataset no identificado, p
 - VRAM estimada en FP16/BF16: aproximadamente 134 MB para los pesos; en INT8 (requiere cuantizacion manual, no publicada) unos 67 MB.
 - GPU recomendadas: cualquier GPU con 2 GB o mas de VRAM es suficiente; una NVIDIA RTX 3060/4060, T4 o L4 bastan para servir el modelo con holgura. No requiere A100 ni H100 salvo que se despliegue con un batch muy grande.
 - Caben en GPU de consumo: si, en practicamente cualquier GPU dedicada de los ultimos diez anos, y tambien en CPU (inferencia en decenas o centenas de milisegundos por peticion, segun hardware y batch).
-- Opciones de despliegue: pipeline de transformers (PyTorch), HuggingFace Inference Endpoints (etiqueta endpoints_compatible), text-embeddings-inference (etiqueta del repositorio), ONNX Runtime o TorchScript para optimizacion, y servidores HTTP propios (FastAPI, Triton). vLLM y TGI estan orientados a modelos generativos y no son la via habitual para un encoder de clasificacion; llama.cpp y Ollama no soportan de forma estandar este tipo de modelo.
+- Opciones de despliegue: pipeline de transformers (PyTorch), Hugging Face Inference Endpoints (etiqueta endpoints_compatible), text-embeddings-inference (etiqueta del repositorio), ONNX Runtime o TorchScript para optimizacion, y servidores HTTP propios (FastAPI, Triton). vLLM y TGI estan orientados a modelos generativos y no son la via habitual para un encoder de clasificacion; llama.cpp y Ollama no soportan de forma estandar este tipo de modelo.
 - Latencia y throughput: no disponibles; no se han publicado mediciones. Como referencia estructural, un encoder de 6 capas y 66 M de parametros suele procesar lotes de decenas o cientos de secuencias cortas por segundo en una GPU moderna, pero no hay datos verificados para este repositorio concreto.
 
 ## Comparativa con modelos similares
@@ -100,7 +100,7 @@ La unica diferencia verificable entre este modelo y su base es la cabeza de clas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lachiania/sentiment-versioning-demo
+- Modelo en Hugging Face: https://huggingface.co/lachiania/sentiment-versioning-demo
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (referencia general del backbone, no citada en la model card): https://arxiv.org/abs/1910.01108
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo (los resultados devueltos corresponden a paginas genericas sobre ChatGPT y a un marketplace educativo, sin relacion con este repositorio).

@@ -17,7 +17,7 @@ Se trata de un modelo denso de 3 212 749 824 parámetros (3,21 B), formato safet
 | Parametros activos | no aplica (modelo denso, no es MoE) |
 | Longitud de contexto | 128 000 tokens (heredada de Llama 3.2 3B Instruct) |
 | Tipos de cuantizacion | no se distribuyen cuantizaciones oficiales; el repositorio publica pesos en safetensors. Conversión factible a GGUF (llama.cpp/Ollama), GPTQ o AWQ |
-| Idiomas soportados | no disponible en la ficha de HuggingFace; el modelo base Llama 3.2 declara inglés, alemán, francés, italiano, portugués, hindi, español y tailandés |
+| Idiomas soportados | no disponible en la ficha de Hugging Face; el modelo base Llama 3.2 declara inglés, alemán, francés, italiano, portugués, hindi, español y tailandés |
 | Licencia | llama3.2 (Llama 3.2 Community License) |
 | Formato de pesos | safetensors (tamaño de repositorio: 6,4 GB) |
 | Libreria | transformers |
@@ -85,9 +85,9 @@ No se dispone de los valores equivalentes para el modelo base (`tofu_Llama-3.2-3
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_UNDIAL | 3,21 B | 128 000 tokens (heredado) | Checkpoint desaprendido (UNDIAL, forget10) | Llama 3.2 Community | HuggingFace, 0 descargas, 0 likes |
-| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | 3,21 B | 128 000 tokens (heredado) | Modelo base ajustado con TOFU | no disponible en la informacion | HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128 000 tokens | Instruct generalista | Llama 3.2 Community | HuggingFace |
+| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_UNDIAL | 3,21 B | 128 000 tokens (heredado) | Checkpoint desaprendido (UNDIAL, forget10) | Llama 3.2 Community | Hugging Face, 0 descargas, 0 likes |
+| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | 3,21 B | 128 000 tokens (heredado) | Modelo base ajustado con TOFU | no disponible en la informacion | Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128 000 tokens | Instruct generalista | Llama 3.2 Community | Hugging Face |
 
 No se dispone de métricas TOFU del modelo `_full` ni de benchmarks generales del checkpoint desaprendido, por lo que la comparación cuantitativa de rendimiento queda como no disponible.
 
@@ -104,7 +104,7 @@ No se dispone de métricas TOFU del modelo `_full` ni de benchmarks generales de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_UNDIAL
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_UNDIAL
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning

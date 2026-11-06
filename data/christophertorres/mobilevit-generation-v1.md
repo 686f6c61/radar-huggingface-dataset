@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`christophertorres/mobilevit-generation-v1` es un repositorio experimental de HuggingFace que contiene una implementacion propia de una arquitectura MobileViT orientada a tareas de generacion. Lo publica el usuario christophertorres bajo licencia Apache 2.0 y, segun su propia model card, se trata de un *codebase* de investigacion con configuracion "nano", pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`christophertorres/mobilevit-generation-v1` es un repositorio experimental de Hugging Face que contiene una implementacion propia de una arquitectura MobileViT orientada a tareas de generacion. Lo publica el usuario christophertorres bajo licencia Apache 2.0 y, segun su propia model card, se trata de un *codebase* de investigacion con configuracion "nano", pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El dato mas relevante es su tamano: el checkpoint `model.safetensors` contiene 16.576 parametros totales, lo que lo situa en un orden de magnitud de kilobytes y lo aleja por completo de los modelos generativos de produccion. El autor es explicito al afirmar que el checkpoint es unicamente una inicializacion valida para *smoke tests* y que no debe presentarse como un modelo entrenado ni evaluado.
 
@@ -33,7 +33,7 @@ Detalles de arquitectura declarados en la model card:
 
 ## Arquitectura y entrenamiento
 
-La model card describe una arquitectura MobileViT a escala "nano", con atencion de tipo linear, fusion bilinear, funcion de activacion mish y normalizacion por batchnorm. No se detalla el numero de capas, dimensiones de embedding, cabezas de atencion ni el esquema de conexiones residuales, por lo que la estructura interna completa figura como no disponible. El autor indica que se trata de una implementacion custom, lo que implica que las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito antes de poder utilizarla.
+La model card describe una arquitectura MobileViT a escala "nano", con atencion de tipo linear, fusion bilinear, funcion de activacion mish y normalizacion por batchnorm. No se detalla el numero de capas, dimensiones de embedding, cabezas de atencion ni el esquema de conexiones residuales, por lo que la estructura interna completa figura como no disponible. El autor indica que se trata de una implementacion custom, lo que implica que las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito antes de poder utilizarla.
 
 En cuanto al entrenamiento, el repositorio incluye una receta por defecto con optimizador AdamW y planificador de tipo polinomial, registrada en `training_args.json`. El propio autor aclara que son valores de arranque del script y no evidencia de una ejecucion completada. No se declara volumen de tokens, composicion del dataset, ni fases de RLHF, DPO o ajuste por instrucciones. Tampoco se menciona ninguna innovacion tecnica adicional mas alla de los elementos de arquitectura ya citados.
 
@@ -52,7 +52,7 @@ En cuanto al entrenamiento, el repositorio incluye una receta por defecto con op
 
 - Verificacion de pipelines de carga: sirve para comprobar que un *loader* custom es capaz de leer un checkpoint safetensors de una arquitectura no estandar antes de invertir en un entrenamiento completo.
 - Pruebas de integracion en CI: al ocupar un espacio despreciable en disco y memoria, puede incorporarse a un flujo de integracion continua que valide que el codigo de definicion del modelo no lanza excepciones.
-- Desarrollo de adaptadores de HuggingFace: es un banco de pruebas para escribir el adaptador explicito que la model card menciona como necesario para usar APIs genericas de carga.
+- Desarrollo de adaptadores de Hugging Face: es un banco de pruebas para escribir el adaptador explicito que la model card menciona como necesario para usar APIs genericas de carga.
 - Reproducibilidad de recetas de entrenamiento: `training_args.json` documenta una receta AdamW con planificador polinomial que puede clonarse como configuracion base en experimentos comparativos.
 - Docencia y formacion: permite mostrar a estudiantes la estructura de un repositorio de modelo (config, pesos, script de fine-tuning, README) sin requerir hardware especializado.
 - Prototipado de arquitecturas hibridas: al ser una implementacion nano de MobileViT, facilita iterar sobre variantes de atencion linear, fusion bilinear o activacion mish midiendo coste de codigo antes que coste de computo.
@@ -81,12 +81,12 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 - No se declaran sesgos conocidos, pero al no existir datos de entrenamiento publicados tampoco puede descartarse ningun tipo de sesgo.
 - Riesgo de alucinacion: no evaluable, dado que no hay un modelo entrenado sobre el que medirlo.
 - No se especifican idiomas soportados ni longitud de contexto, por lo que no puede garantizarse cobertura multilingue ni ventanas de contexto concretas.
-- Implementacion custom: las APIs automaticas de HuggingFace no cargaran el modelo sin un adaptador explicito escrito por el usuario.
+- Implementacion custom: las APIs automaticas de Hugging Face no cargaran el modelo sin un adaptador explicito escrito por el usuario.
 - Cualquier resultado que se publique a partir de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos en este repositorio.
 - Uso comercial: la licencia Apache 2.0 lo permite, pero el autor recomienda revisar por separado los terminos de las fuentes de datos externas que se utilicen junto al repositorio.
 - El repositorio no acumula descargas ni interacciones, y no se ha publicado ningun articulo, demo o evaluacion externa que lo respalde.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/christophertorres/mobilevit-generation-v1
+- Modelo en Hugging Face: https://huggingface.co/christophertorres/mobilevit-generation-v1
 - No se han encontrado enlaces relevantes en la busqueda web. Los resultados devueltos corresponden a sitios de retransmision deportiva (yalla.soccer, m-yallashoots.com, yalla-shoit.com, yallashooter.com, yalashoot.fans) y no guardan ninguna relacion con el modelo analizado, por lo que se descartan.

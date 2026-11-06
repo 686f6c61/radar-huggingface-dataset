@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un transformer de lenguaje pequeño con 27.447.040 parámetros, publicado en HuggingFace por el usuario Lanni-ni (Lanni Bu). El nombre del repositorio, `dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch4`, sugiere que emplea atención con sesgos lineales dinámicos (ALiBi), una técnica de positional encoding orientada a la extrapolación de longitudes de secuencia. La configuración `2_4_256` probablemente indica 2 capas, 4 cabezas de atención y una dimensión de embedding de 256. El modelo parece estar destinado a la investigación sobre arquitecturas pequeñas en el marco del benchmark BabyLM, aunque no existe documentación que lo confirme.
+Este modelo es un transformer de lenguaje pequeño con 27.447.040 parámetros, publicado en Hugging Face por el usuario Lanni-ni (Lanni Bu). El nombre del repositorio, `dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch4`, sugiere que emplea atención con sesgos lineales dinámicos (ALiBi), una técnica de positional encoding orientada a la extrapolación de longitudes de secuencia. La configuración `2_4_256` probablemente indica 2 capas, 4 cabezas de atención y una dimensión de embedding de 256. El modelo parece estar destinado a la investigación sobre arquitecturas pequeñas en el marco del benchmark BabyLM, aunque no existe documentación que lo confirme.
 
 No se ha publicado información sobre la longitud de contexto, los idiomas soportados, la licencia ni los datos de entrenamiento. El único dato técnico verificado es el número de parámetros, extraído de los pesos en formato safetensors. Por su tamaño y la ausencia de benchmarks, se trata de un modelo experimental con utilidad práctica limitada.
 

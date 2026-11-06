@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-Partial-Omni-1.7B-Q_8_0 es un modelo derivado publicado por el usuario junkdogjoe en HuggingFace, construido a partir de LiquidAI/LFM3-1.7B-Base. Se trata de un experimento personal, tal y como declara el propio autor en la model card, en el que se han fusionado algunas capas del modelo base con capas procedentes de LFM3-Omni-2B en cuantización Q8_0, con el objetivo de habilitar entrada multimodal (visión, texto y voz) mediante el uso de un fichero `.mmproj` en llama.cpp. El autor lo describe explícitamente como un "primer proyecto" hecho "por diversión", sin proceso de validación formal.
+LFM3-Partial-Omni-1.7B-Q_8_0 es un modelo derivado publicado por el usuario junkdogjoe en Hugging Face, construido a partir de LiquidAI/LFM3-1.7B-Base. Se trata de un experimento personal, tal y como declara el propio autor en la model card, en el que se han fusionado algunas capas del modelo base con capas procedentes de LFM3-Omni-2B en cuantización Q8_0, con el objetivo de habilitar entrada multimodal (visión, texto y voz) mediante el uso de un fichero `.mmproj` en llama.cpp. El autor lo describe explícitamente como un "primer proyecto" hecho "por diversión", sin proceso de validación formal.
 
 El modelo se distribuye en formato GGUF con cuantización Q8_0, con un tamaño de repositorio de 2,8 GB, y está pensado para inferencia en el borde (edge) con llama.cpp. La arquitectura subyacente es la de LFM3 de Liquid AI, una familia de modelos diseñada para despliegue eficiente en dispositivos con recursos limitados. El contexto, los datos de entrenamiento y los detalles de la fusión de capas no están documentados más allá de las notas informales del autor.
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es limitada desde el punto de vista de producción: 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q8_0 (GGUF); el autor menciona también Q8_0 para los modelos de origen |
 | Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl |
-| Licencia | lfm1.0 (licencia "other" en HuggingFace, con enlace a LICENSE) |
+| Licencia | lfm1.0 (licencia "other" en Hugging Face, con enlace a LICENSE) |
 | Formato de pesos | GGUF (repo de 2,8 GB); requiere `mmproj-LFM3-Omni-2B-F16.gguf` y `control-vector.gguf` para el modo multimodal |
 
 ## Arquitectura y entrenamiento
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: en Q8_0, un modelo de ~1,7B ocupa aproximadamente 1,8-2,0 GB de pesos; con overhead de contexto y el proyector multimodal F16, se recomienda reservar 3-4 GB de VRAM.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; RTX 3060, RTX 4060, RTX 4090, A100 o H100 funcionan sin problema, aunque el modelo está pensado para hardware modesto.
 - Cabe en GPU de consumo: sí, en la mayoría de GPU consumer con 4 GB o más; también puede ejecutarse en CPU.
-- Opciones de despliegue: llama.cpp (el autor proporciona flags de muestreo específicos); compatible con endpoints de HuggingFace según los tags, pero no se documenta soporte en vLLM, TGI u Ollama.
+- Opciones de despliegue: llama.cpp (el autor proporciona flags de muestreo específicos); compatible con endpoints de Hugging Face según los tags, pero no se documenta soporte en vLLM, TGI u Ollama.
 - Latencia y throughput: no disponibles; el autor afirma que es "un poco más rápido" que el base, sin mediciones.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junkdogjoe/LFM3-Partial-Omni-1.7B-Q_8_0
+- Modelo en Hugging Face: https://huggingface.co/junkdogjoe/LFM3-Partial-Omni-1.7B-Q_8_0
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Modelo Omni de referencia: no disponible (no se proporciona enlace directo a LFM3-Omni-2B)
 - Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp

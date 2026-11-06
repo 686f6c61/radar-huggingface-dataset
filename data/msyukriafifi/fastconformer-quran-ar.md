@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fastconformer-quran-ar es un modelo de reconocimiento automatico del habla (ASR) especializado en recitacion coranica en arabe, desarrollado por el usuario de HuggingFace msyukriafifi. Se trata de un ajuste fino del modelo NVIDIA stt_ar_fastconformer_hybrid_large_pcd_v1.0, basado en la arquitectura EncDecHybridRNNTCTCBPE (FastConformer-Large) con 114,6 millones de parametros y 18 bloques de encoder. El autor declara un Word Error Rate (WER) de 0,0014 (0,14 %) sobre el conjunto de validacion de tarteel-ai/everyayah, incluyendo diacritizacion completa (tashkeel) en la salida.
+fastconformer-quran-ar es un modelo de reconocimiento automatico del habla (ASR) especializado en recitacion coranica en arabe, desarrollado por el usuario de Hugging Face msyukriafifi. Se trata de un ajuste fino del modelo NVIDIA stt_ar_fastconformer_hybrid_large_pcd_v1.0, basado en la arquitectura EncDecHybridRNNTCTCBPE (FastConformer-Large) con 114,6 millones de parametros y 18 bloques de encoder. El autor declara un Word Error Rate (WER) de 0,0014 (0,14 %) sobre el conjunto de validacion de tarteel-ai/everyayah, incluyendo diacritizacion completa (tashkeel) en la salida.
 
 Su relevancia actual radica en dos factores. Por un lado, cubre un nicho muy concreto con pocos modelos publicos: la transcripcion de recitacion coranica con reglas de tajweed, un dominio donde los modelos ASR genericos de arabe rinden de forma notablemente peor. Por otro lado, soporta tanto transcripcion offline con contexto bilateral completo como inferencia en streaming causal cache-aware, lo que permite construir aplicaciones de seguimiento de recitacion en tiempo real sobre hardware de consumo.
 
@@ -85,9 +85,9 @@ No se han publicado resultados de benchmarks comparativos con otros modelos (MLS
 
 | Modelo | Parametros | Contexto de audio | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fastconformer-quran-ar (este modelo) | 114,6 M | Bilateral completo (offline) / 128 frames causales (streaming) | Arabe coranico con tashkeel | CC-BY-4.0 | HuggingFace, NeMo |
-| nvidia/stt_ar_fastconformer_hybrid_large_pcd_v1.0 | 114,6 M | Bilateral completo | Arabe general (ASR multiuso) | No disponible en la informacion proporcionada | HuggingFace, NeMo |
-| Whisper large-v3 (OpenAI) | 1550 M | Ventana de 30 s | Multilingue (99 idiomas), ASR generico | MIT | HuggingFace, OpenAI, multiples runtimes |
+| fastconformer-quran-ar (este modelo) | 114,6 M | Bilateral completo (offline) / 128 frames causales (streaming) | Arabe coranico con tashkeel | CC-BY-4.0 | Hugging Face, NeMo |
+| nvidia/stt_ar_fastconformer_hybrid_large_pcd_v1.0 | 114,6 M | Bilateral completo | Arabe general (ASR multiuso) | No disponible en la informacion proporcionada | Hugging Face, NeMo |
+| Whisper large-v3 (OpenAI) | 1550 M | Ventana de 30 s | Multilingue (99 idiomas), ASR generico | MIT | Hugging Face, OpenAI, multiples runtimes |
 | Otros modelos ASR especificos de Coran | No disponible | No disponible | Arabe coranico | No disponible | No disponible |
 
 Nota: los datos de Whisper large-v3 corresponden a conocimiento general publico y no proceden de la informacion proporcionada en esta busqueda, por lo que no se han verificado aqui. No se dispone de cifras de WER comparables entre estos modelos en un mismo conjunto de evaluacion, ya que el autor solo publica resultados sobre tarteel-ai/everyayah.
@@ -110,7 +110,7 @@ Nota: los datos de Whisper large-v3 corresponden a conocimiento general publico 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/msyukriafifi/fastconformer-quran-ar
+- Modelo en Hugging Face: https://huggingface.co/msyukriafifi/fastconformer-quran-ar
 - Modelo base: https://huggingface.co/nvidia/stt_ar_fastconformer_hybrid_large_pcd_v1.0
 - Dataset de ajuste y evaluacion: https://huggingface.co/datasets/tarteel-ai/everyayah
 - Script complementario de streaming con FastAPI y WebSocket: https://huggingface.co/mohammed/fastconformer-quran-ar/blob/main/quran_streaming_asr.py

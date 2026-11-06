@@ -107,7 +107,7 @@ Comparativa dentro de la misma tarea (clasificacion de escenario BDD100K, mismo 
 
 | Modelo | Top-1 | Macro F1 | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ConvNeXt-Tiny (este modelo) | 76,69 % | 56,88 % | 27,8 M | Apache-2.0 | HuggingFace, via `timm` |
+| ConvNeXt-Tiny (este modelo) | 76,69 % | 56,88 % | 27,8 M | Apache-2.0 | Hugging Face, via `timm` |
 | ConvNeXt-Atto | 77,44 % | 61,06 % | No disponible | No disponible | Repositorio BDD100K-Toolkit |
 | YOLO11n | 78,58 % | 49,47 % | No disponible | No disponible | Repositorio BDD100K-Toolkit |
 | MobileNetV4-Conv-Small | 78,20 % | 52,89 % | No disponible | No disponible | Repositorio BDD100K-Toolkit |
@@ -131,7 +131,7 @@ Lectura de la comparativa: ConvNeXt-Tiny no lidera en Top-1 (queda por detras de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-scenario-convnext_tiny
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-scenario-convnext_tiny
 - Repositorio BDD100K-Toolkit: https://github.com/dronefreak/bdd100k-toolkit
 - Dataset de clasificacion de escenarios: https://huggingface.co/datasets/dronefreak/BDD100K-Scenario-Classification
 - Modelo base: https://huggingface.co/timm/convnext_tiny.in12k_ft_in1k
@@ -140,4 +140,4 @@ Lectura de la comparativa: ConvNeXt-Tiny no lidera en Top-1 (queda por detras de
 - Video de demostracion: https://huggingface.co/dronefreak/bdd100k-scenario-convnext_tiny/resolve/main/assets/demo_banner.mp4
 - Poster de la demostracion: https://huggingface.co/dronefreak/bdd100k-scenario-convnext_tiny/resolve/main/assets/demo_banner_poster.jpg
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los presentes en la model card y en los metadatos de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los presentes en la model card y en los metadatos de Hugging Face.

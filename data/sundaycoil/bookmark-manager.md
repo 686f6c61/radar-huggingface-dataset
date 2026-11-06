@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sundaycoil/bookmark-manager`, publicado por el usuario `sundaycoil` en HuggingFace, es un repositorio que no incluye información técnica pública en su ficha. Según los metadatos disponibles, el modelo está etiquetado como `endpoints_compatible` y `region:us`, lo que sugiere que podría estar destinado a ser desplegado a través de los endpoints de HuggingFace en la región de Estados Unidos. Sin embargo, no se ha publicado ningún dato sobre arquitectura, tamaño, licencia o idiomas soportados.
+El modelo `sundaycoil/bookmark-manager`, publicado por el usuario `sundaycoil` en Hugging Face, es un repositorio que no incluye información técnica pública en su ficha. Según los metadatos disponibles, el modelo está etiquetado como `endpoints_compatible` y `region:us`, lo que sugiere que podría estar destinado a ser desplegado a través de los endpoints de Hugging Face en la región de Estados Unidos. Sin embargo, no se ha publicado ningún dato sobre arquitectura, tamaño, licencia o idiomas soportados.
 
 Con cero descargas y un solo "like", este repositorio parece estar en una fase muy temprana de publicación o podría tratarse de un experimento personal. A fecha de su última actualización (14 de agosto de 2026), no se ha compartido documentación adicional, pesos, configuraciones ni ejemplos de uso. Por tanto, cualquier evaluación técnica rigurosa es imposible con la información actualmente disponible.
 
@@ -21,7 +21,7 @@ Con cero descargas y un solo "like", este repositorio parece estar en una fase m
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo (si es un transformer, MoE, SSM u otro tipo), ni sobre los datos de entrenamiento, el número de tokens procesados, el dataset utilizado o si se aplicaron técnicas como RLHF o DPO. Tampoco hay detalles sobre innovaciones técnicas específicas. La ficha de HuggingFace no incluye archivos de configuración, pesos ni documentación asociada.
+No se ha publicado información sobre la arquitectura del modelo (si es un transformer, MoE, SSM u otro tipo), ni sobre los datos de entrenamiento, el número de tokens procesados, el dataset utilizado o si se aplicaron técnicas como RLHF o DPO. Tampoco hay detalles sobre innovaciones técnicas específicas. La ficha de Hugging Face no incluye archivos de configuración, pesos ni documentación asociada.
 
 ## Capacidades
 
@@ -53,4 +53,4 @@ No disponible. Al no existir datos sobre arquitectura, tamaño o rendimiento, no
 
 ## Enlaces
 
-- [HuggingFace: sundaycoil/bookmark-manager](https://huggingface.co/sundaycoil/bookmark-manager)
+- [Hugging Face: sundaycoil/bookmark-manager](https://huggingface.co/sundaycoil/bookmark-manager)

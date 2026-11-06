@@ -63,7 +63,7 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no tiene senti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/StefanFalkok/Minimax_H3_Workflows
+- Repositorio en Hugging Face: https://huggingface.co/StefanFalkok/Minimax_H3_Workflows
 - Hub oficial de MiniMax H3 (GitHub): https://github.com/ai-models-lab/minimax-h3
 - Tutoriales y despliegue de MiniMax H3 (design.minimax.io): https://design.minimax.io/h3
 - Repositorio oficial de MiniMax H3 en GitHub: https://github.com/MiniMax-AI/MiniMax-H3

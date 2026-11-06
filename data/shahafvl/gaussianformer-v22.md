@@ -80,8 +80,8 @@ Desglose adicional:
 
 | Modelo | Parametros | Entrada | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GaussianFormer V22 | 194,9 M | Gaussianas 3D (14 params) | no aplica (atencion densa a todas las gaussianas) | MIT | HuggingFace + GitHub |
-| RenderFormer v1 base (Microsoft) | no disponible en la informacion | Mallas triangulares | no aplica | no disponible en la informacion | HuggingFace |
+| GaussianFormer V22 | 194,9 M | Gaussianas 3D (14 params) | no aplica (atencion densa a todas las gaussianas) | MIT | Hugging Face + GitHub |
+| RenderFormer v1 base (Microsoft) | no disponible en la informacion | Mallas triangulares | no aplica | no disponible en la informacion | Hugging Face |
 | Rasterizacion gsplat | no es un modelo neuronal | Gaussianas 3D | no aplica | no disponible en la informacion | Libreria de rasterizacion |
 
 RenderFormer es el modelo base del que se parte: renderiza mallas triangulares con la misma arquitectura de dos etapas, mientras que GaussianFormer adapta esa arquitectura a gaussianas 3D. La rasterizacion gsplat no es un modelo comparable en el sentido estricto, pero sirve de referencia de calidad: sobre la misma entrada de 20k gaussianas obtiene 44.02 dB frente a los 38.08 dB de GaussianFormer en 28 vistas.
@@ -100,7 +100,7 @@ RenderFormer es el modelo base del que se parte: renderiza mallas triangulares c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shahafvl/gaussianformer-v22
+- Modelo en Hugging Face: https://huggingface.co/shahafvl/gaussianformer-v22
 - Codigo: https://github.com/SVLwoof/gaussianformer
 - Modelo base RenderFormer: https://huggingface.co/microsoft/renderformer-v1-base
 - Dataset Objaverse_Splats: https://huggingface.co/datasets/ShapeSplats/Objaverse_Splats

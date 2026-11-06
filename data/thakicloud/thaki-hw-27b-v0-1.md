@@ -74,8 +74,8 @@ Tasa de compilacion como metrica de referencia: Δ +2,14 pp en VerilogEval y -8,
 
 | Modelo | Parametros | Contexto | Rendimiento RTL | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thaki-HW-27B-v0.1 | 27,78 B | no disponible | VerilogEval 0,776; RTLLM 0,769 | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.8-27B (base) | 27 B (aprox.) | no disponible | VerilogEval 0,767; RTLLM 0,812 | Apache-2.0 (segun el autor) | HuggingFace |
+| Thaki-HW-27B-v0.1 | 27,78 B | no disponible | VerilogEval 0,776; RTLLM 0,769 | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.8-27B (base) | 27 B (aprox.) | no disponible | VerilogEval 0,767; RTLLM 0,812 | Apache-2.0 (segun el autor) | Hugging Face |
 | Otros fine-tunes RTL de ~27 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa relevante es contra su propio modelo base: el fine-tune no supera al base en ningun benchmark con significacion estadistica y podria retroceder en RTLLM. No se dispone de datos de otros modelos comparables en la informacion proporcionada.
@@ -95,7 +95,7 @@ La comparativa relevante es contra su propio modelo base: el fine-tune no supera
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ThakiCloud/Thaki-HW-27B-v0.1
+- Hugging Face: https://huggingface.co/ThakiCloud/Thaki-HW-27B-v0.1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog de ingenieria (ingles): https://thakicloud.com/tech-blog/en/llmops/thaki-hw-27b-verilog-rtl-finetune/
 - Blog de ingenieria (coreano): https://thakicloud.com/tech-blog/ko/llmops/thaki-hw-27b-verilog-rtl-finetune/

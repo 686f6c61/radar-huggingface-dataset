@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `xydev333/koth-miner` es una publicación de HuggingFace realizada por el usuario xydev333 (Remi Rozycki) el 13 de agosto de 2026. Sin embargo, la información pública disponible es prácticamente nula: el repositorio tiene un tamaño de 0.0 GB, no incluye model card, ni licencia, ni pipeline, ni idiomas declarados. El número de descargas es cero y solo cuenta con un "like". No se ha encontrado ninguna documentación técnica, paper o demo asociada al modelo en la web. Por tanto, no es posible determinar su arquitectura, propósito o capacidades. Se recomienda precaución antes de considerar su uso, ya que podría tratarse de un repositorio vacío o experimental sin contenido real.
+El modelo `xydev333/koth-miner` es una publicación de Hugging Face realizada por el usuario xydev333 (Remi Rozycki) el 13 de agosto de 2026. Sin embargo, la información pública disponible es prácticamente nula: el repositorio tiene un tamaño de 0.0 GB, no incluye model card, ni licencia, ni pipeline, ni idiomas declarados. El número de descargas es cero y solo cuenta con un "like". No se ha encontrado ninguna documentación técnica, paper o demo asociada al modelo en la web. Por tanto, no es posible determinar su arquitectura, propósito o capacidades. Se recomienda precaución antes de considerar su uso, ya que podría tratarse de un repositorio vacío o experimental sin contenido real.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo `xydev333/koth-miner` es una publicación de HuggingFace realizada por
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens procesados o las técnicas de optimización empleadas. El repositorio de HuggingFace no contiene archivos de pesos, configuraciones ni documentación técnica. Tampoco se han encontrado referencias externas que describan su diseño o proceso de entrenamiento.
+No se ha publicado ninguna información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens procesados o las técnicas de optimización empleadas. El repositorio de Hugging Face no contiene archivos de pesos, configuraciones ni documentación técnica. Tampoco se han encontrado referencias externas que describan su diseño o proceso de entrenamiento.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ No disponible. Al no existir información sobre las características del modelo,
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB), lo que sugiere que el modelo no ha sido subido o que el espacio se creó por error.
+- El repositorio de Hugging Face está vacío (0.0 GB), lo que sugiere que el modelo no ha sido subido o que el espacio se creó por error.
 - No hay model card, licencia ni documentación, por lo que se desconoce si el modelo es utilizable, su procedencia o sus restricciones legales.
 - No se puede evaluar la presencia de sesgos, riesgo de alucinación o limitaciones de contexto al no existir información técnica.
 - Cualquier uso en producción sería arriesgado sin datos verificables sobre el modelo.
@@ -51,5 +51,5 @@ No disponible. Al no existir información sobre las características del modelo,
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/xydev333/koth-miner)
-- [Perfil del autor en HuggingFace](https://huggingface.co/xydev333)
+- [Página del modelo en Hugging Face](https://huggingface.co/xydev333/koth-miner)
+- [Perfil del autor en Hugging Face](https://huggingface.co/xydev333)

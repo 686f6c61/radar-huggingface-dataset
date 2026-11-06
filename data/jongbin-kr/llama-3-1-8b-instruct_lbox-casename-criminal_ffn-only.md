@@ -4,7 +4,7 @@
 
 Este modelo es un ajuste fino (fine-tuning) de `meta-llama/Llama-3.1-8B-Instruct` realizado por el autor Jongbin-kr, especializado en el ámbito de nombres de casos penales (casename criminal) en el contexto legal coreano. El nombre del repositorio indica que se ha aplicado una técnica de ajuste denominada "FFN-only", que consiste en congelar todas las capas del transformer excepto las redes de avance (feed-forward networks), reduciendo así el número de parámetros entrenables y el coste computacional del entrenamiento.
 
-El modelo se ha entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de HuggingFace, y el repositorio contiene únicamente los pesos en formato safetensors con un tamaño total de 0,9 GB. Aunque el modelo base es Llama 3.1 8B Instruct, que soporta un contexto de 128K tokens y múltiples idiomas, la ficha del modelo no proporciona información sobre el dataset de entrenamiento, los idiomas específicos del ajuste ni la licencia aplicada al modelo resultante.
+El modelo se ha entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de Hugging Face, y el repositorio contiene únicamente los pesos en formato safetensors con un tamaño total de 0,9 GB. Aunque el modelo base es Llama 3.1 8B Instruct, que soporta un contexto de 128K tokens y múltiples idiomas, la ficha del modelo no proporciona información sobre el dataset de entrenamiento, los idiomas específicos del ajuste ni la licencia aplicada al modelo resultante.
 
 La relevancia de este modelo radica en su especialización vertical: un ajuste fino orientado a un dominio legal concreto (nombres de casos criminales), lo que podría mejorar la precisión del modelo base en tareas de clasificación, generación o normalización de terminología legal coreana. Sin embargo, al no publicarse métricas de evaluación ni detalles del dataset, su utilidad práctica queda pendiente de validación por parte de la comunidad.
 
@@ -54,16 +54,16 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - VRAM estimada para inferencia: el modelo tiene 8B parámetros, por lo que en FP16 requiere aproximadamente 16 GB de VRAM. Con cuantización a 8 bits (INT8) se reduce a unos 8-9 GB, y a 4 bits (INT4) a unos 4-5 GB.
 - GPU recomendadas: para FP16 se necesita una GPU con al menos 16 GB (A100 40GB, RTX 4090 24GB, L4 24GB). Para cuantización INT4, una RTX 3060 12GB o RTX 4060 Ti 16GB podría ser suficiente.
 - Compatibilidad con GPU de consumo: sí, con cuantización INT4 o INT8 es viable en GPUs de gama media-alta de consumo (RTX 3090, RTX 4070, etc.).
-- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama, HuggingFace TGI y Transformers con `device="cuda"`. El formato safetensors permite su uso directo con Transformers y su conversión a GGUF para llama.cpp.
+- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama, Hugging Face TGI y Transformers con `device="cuda"`. El formato safetensors permite su uso directo con Transformers y su conversión a GGUF para llama.cpp.
 - Latencia y throughput: no disponible. Al ser un modelo de 8B, se espera una latencia de decodificación de aproximadamente 20-40 ms/token en una A100, pero no hay datos publicados para este ajuste concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jongbin-kr/llama-3.1-8b-instruct_lbox-casename-criminal_ffn-only | 8B | 128K | Nombres de casos penales coreanos | no disponible | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128K | Generalista | Llama 3.1 Community License | HuggingFace, Meta |
-| Jongbin-kr/llama-3.1-8b-instruct-sni-ffn-lora | 8B | 128K | Ajuste FFN con LoRA (dominio no especificado) | no disponible | HuggingFace |
+| Jongbin-kr/llama-3.1-8b-instruct_lbox-casename-criminal_ffn-only | 8B | 128K | Nombres de casos penales coreanos | no disponible | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128K | Generalista | Llama 3.1 Community License | Hugging Face, Meta |
+| Jongbin-kr/llama-3.1-8b-instruct-sni-ffn-lora | 8B | 128K | Ajuste FFN con LoRA (dominio no especificado) | no disponible | Hugging Face |
 
 La comparativa se limita al modelo base y a otro ajuste del mismo autor. No se dispone de información sobre otros modelos legales coreanos comparables en la información proporcionada.
 
@@ -77,7 +77,7 @@ La comparativa se limita al modelo base y a otro ajuste del mismo autor. No se d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-casename-criminal_ffn-only
+- Repositorio Hugging Face: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-casename-criminal_ffn-only
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Registro de entrenamiento (Weights & Biases): https://wandb.ai/jongbin-kr-skiml_moe/sft_dense_lbox_ffn_only/runs/bswl18ep
 - Repositorio TRL: https://github.com/huggingface/trl

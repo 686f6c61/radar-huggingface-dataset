@@ -71,8 +71,8 @@ El repositorio no incluye métricas de exactitud sobre MATH, GSM8K, MMLU ni ning
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | swadeshb/g3-1b-plan-solve | Adaptador LoRA sobre Gemma 3 1B | ~1B en la base; parámetros del adaptador no disponibles | Entrenado a 8192; contexto base no indicado | No disponible | 0 descargas, sin evaluación publicada |
-| google/gemma-3-1b-pt | Modelo base preentrenado | ~1B | No indicado en la información proporcionada | No disponible en la información proporcionada | Público en HuggingFace |
-| google/gemma-3-1b-it | Modelo base instruido | ~1B | No indicado en la información proporcionada | No disponible en la información proporcionada | Público en HuggingFace |
+| google/gemma-3-1b-pt | Modelo base preentrenado | ~1B | No indicado en la información proporcionada | No disponible en la información proporcionada | Público en Hugging Face |
+| google/gemma-3-1b-it | Modelo base instruido | ~1B | No indicado en la información proporcionada | No disponible en la información proporcionada | Público en Hugging Face |
 | Otros adaptadores matemáticos sobre Gemma 3 1B | Adaptador LoRA | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento de ninguno de los modelos comparados en la información proporcionada, por lo que la comparación se limita a tipo de artefacto, tamaño, disponibilidad y licencia. La diferencia funcional principal frente a `google/gemma-3-1b-it` es que este adaptador no está orientado a conversación general, sino a un formato concreto de razonamiento matemático jerárquico.
@@ -91,12 +91,12 @@ No se dispone de datos de rendimiento de ninguno de los modelos comparados en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swadeshb/g3-1b-plan-solve
-- Perfil del autor en HuggingFace: https://huggingface.co/swadeshb/datasets
+- Modelo en Hugging Face: https://huggingface.co/swadeshb/g3-1b-plan-solve
+- Perfil del autor en Hugging Face: https://huggingface.co/swadeshb/datasets
 - Modelo base: https://huggingface.co/google/gemma-3-1b-pt
 - Dataset de entrenamiento: https://huggingface.co/datasets/sxiong/MLR_structured_trajectory
 - Librería PEFT: https://huggingface.co/docs/peft
-- Búsqueda de modelos en HuggingFace: https://huggingface.co/models?search=swadeshb
+- Búsqueda de modelos en Hugging Face: https://huggingface.co/models?search=swadeshb
 - Herramientas y recursos de Google AI (referencia del modelo base): https://ai.google/build/
 - Swades AI (posible relación con el autor, no confirmada): https://www.swades.ai/
 - Leaderboard y benchmarks de modelos (referencia general, sin datos de este adaptador): https://benchlm.ai/

@@ -69,5 +69,5 @@ No se dispone de información sobre modelos comparables directos. Al ser una imp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/michaelwilsonmu/contrastive
+- Repositorio en Hugging Face: https://huggingface.co/michaelwilsonmu/contrastive
 - No se han encontrado otros enlaces específicos del modelo (papers, blogs, demos) en la búsqueda web. Los resultados obtenidos se refieren a artículos generales sobre aprendizaje contrastivo, no a este repositorio concreto.

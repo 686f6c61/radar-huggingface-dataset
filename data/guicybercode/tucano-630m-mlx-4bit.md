@@ -4,7 +4,7 @@
 
 Tucano-630m-mlx-4bit es una conversión al formato MLX con cuantización de 4 bits del modelo TucanoBR/Tucano-630m, un modelo de lenguaje en portugués desarrollado por el equipo TucanoBR (Nicholas Kluge Corrêa, Aniket Sen, Sophia Falk y Shiza Fatimah). El repositorio lo publica el usuario guicybercode y no aporta entrenamiento nuevo: se trata únicamente de una conversión de formato con fines de inferencia local. El modelo original se describe en el paper arXiv:2411.07854.
 
-El modelo base tiene 630.253.568 parámetros (aproximadamente 630 millones), arquitectura tipo transformer decoder-only con tag `llama` en HuggingFace, y está especializado en portugués (`language: pt`). Al estar cuantizado a 4 bits con group size 64 y mantener las tensiones no cuantizadas en float16, el fichero de pesos ocupa 355 MB (354.639.240 bytes), lo que permite ejecutarlo en equipos con recursos muy limitados.
+El modelo base tiene 630.253.568 parámetros (aproximadamente 630 millones), arquitectura tipo transformer decoder-only con tag `llama` en Hugging Face, y está especializado en portugués (`language: pt`). Al estar cuantizado a 4 bits con group size 64 y mantener las tensiones no cuantizadas en float16, el fichero de pesos ocupa 355 MB (354.639.240 bytes), lo que permite ejecutarlo en equipos con recursos muy limitados.
 
 Su relevancia práctica es acotada pero concreta: ofrece una vía sencilla para probar un modelo de lenguaje en portugués de tamano pequeno en entornos MLX, con licencia Apache-2.0 que permite uso comercial. Es importante senalar que el autor de la conversión no ha ejecutado ninguna evaluación de rendimiento sobre la versión cuantizada; solo una prueba de carga y generación.
 
@@ -23,7 +23,7 @@ Su relevancia práctica es acotada pero concreta: ofrece una vía sencilla para 
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo original mas alla del tag `llama` de HuggingFace, que indica una familia de transformer decoder-only con atención causal estandar. Tampoco se especifican el numero de tokens de entrenamiento, la composicion del corpus, ni si hubo fases de ajuste fino con RLHF o DPO. Para esos datos hay que remitirse a la model card del modelo base TucanoBR/Tucano-630m y al paper arXiv:2411.07854.
+La informacion disponible no detalla la arquitectura interna del modelo original mas alla del tag `llama` de Hugging Face, que indica una familia de transformer decoder-only con atención causal estandar. Tampoco se especifican el numero de tokens de entrenamiento, la composicion del corpus, ni si hubo fases de ajuste fino con RLHF o DPO. Para esos datos hay que remitirse a la model card del modelo base TucanoBR/Tucano-630m y al paper arXiv:2411.07854.
 
 Lo que si esta documentado es el proceso de conversion a MLX. Se realizo con `mlx-lm` 0.32.2 sobre `mlx` 0.32.4, usando el backend de CPU en Linux x86_64, mediante el comando `mlx_lm.convert --hf-path TucanoBR/Tucano-630m --mlx-path Tucano-630m-mlx-4bit -q --q-bits 4 --dtype float16`. El autor indica que se forzo `float16` porque en el backend CPU de MLX sobre Linux una conversion a bfloat16 producia unicamente tokens `<unk>`, mientras que float16 generaba texto normal. La conversion no se probo en Apple Silicon, el entorno habitual de MLX.
 

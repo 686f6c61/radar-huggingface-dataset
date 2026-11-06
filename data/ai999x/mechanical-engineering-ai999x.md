@@ -69,7 +69,7 @@ No se han publicado en la información disponible resultados de benchmarks está
 - RAM: no disponible de forma explícita; el tamaño del repositorio es 0,0 GB y el wheel es `py3-none-any`, por lo que la huella esperada es la de un intérprete de Python con sympy y mpmath. No se publica un mínimo oficial.
 - GPU recomendadas: ninguna. Cualquier CPU capaz de ejecutar Python 3.10-3.14 es suficiente según el autor.
 - Compatibilidad consumer: total; funciona en portátiles y equipos sin acelerador.
-- Opciones de despliegue: instalación vía `pip install mechanical-engineering-ai999x` o directamente desde el wheel del repositorio de HuggingFace; importación como módulo Python (`import mechanical_engineering_ai999x`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, coherente con su naturaleza no generativa.
+- Opciones de despliegue: instalación vía `pip install mechanical-engineering-ai999x` o directamente desde el wheel del repositorio de Hugging Face; importación como módulo Python (`import mechanical_engineering_ai999x`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, coherente con su naturaleza no generativa.
 - Latencia y throughput: no disponibles. Al ser cálculo simbólico determinista, el coste depende de la capacidad invocada y no del número de tokens.
 - Plataformas validadas: Windows (Python 3.13) y Linux x86-64 (Python 3.10, 3.11, 3.12, 3.13 y 3.14).
 
@@ -98,10 +98,10 @@ No se dispone de datos públicos que comparen rendimiento numérico o cobertura 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/mechanical-engineering-ai999x
+- Modelo en Hugging Face: https://huggingface.co/AI999X/mechanical-engineering-ai999x
 - Paquete en PyPI: https://pypi.org/project/mechanical-engineering-ai999x/
 - Guía de capacidades (docs): https://huggingface.co/AI999X/mechanical-engineering-ai999x/tree/main/docs
 - Evaluación: https://huggingface.co/AI999X/mechanical-engineering-ai999x/tree/main/evaluation
-- Organización AI999X en HuggingFace: https://huggingface.co/AI999X
+- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
 - Sitio web del autor: https://ai999x.com
 - Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi

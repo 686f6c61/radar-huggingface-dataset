@@ -78,6 +78,6 @@ La comparativa se limita al modelo base y a alternativas de tamaño similar. No 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rjz123/colar-selftrain-llama1b-prosqa
+- Hugging Face: https://huggingface.co/rjz123/colar-selftrain-llama1b-prosqa
 - Modelo base (unsloth/Llama-3.2-1B-Instruct): https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - No se han encontrado papers, blogs o repositorios adicionales en la búsqueda web.

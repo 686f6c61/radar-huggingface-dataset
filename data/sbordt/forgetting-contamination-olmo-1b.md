@@ -80,7 +80,7 @@ La comparativa relevante es con el propio OLMo-1B original: este artefacto anade
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sbordt/forgetting-contamination-OLMo-1B
+- Hugging Face: https://huggingface.co/sbordt/forgetting-contamination-OLMo-1B
 - Paper (arXiv): https://arxiv.org/abs/2410.03249
 - Codigo: https://github.com/tml-tuebingen/forgetting-contamination
 - Carpeta de contaminacion: https://github.com/tml-tuebingen/forgetting-contamination/tree/main/olmo

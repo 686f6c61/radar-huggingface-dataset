@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dzrlva/qwen-coder-ds1000-verl-fsdp2` es un adaptador LoRA (PEFT) sobre el modelo base `Qwen/Qwen2.5-Coder-7B-Instruct`, afinado con aprendizaje por refuerzo para generar codigo Python ejecutable orientado a ciencia de datos. Lo desarrolla el usuario de HuggingFace `dzrlva` y aplica una variante de GRPO denominada CGPR (Confidence-Guided Policy Refinement) para mejorar la calidad de los rollouts durante el entrenamiento. El objetivo es resolver tareas del benchmark DS-1000, que evalua generacion de codigo con librerias como Pandas, NumPy, Matplotlib, PyTorch, SciPy, Scikit-learn y TensorFlow.
+`dzrlva/qwen-coder-ds1000-verl-fsdp2` es un adaptador LoRA (PEFT) sobre el modelo base `Qwen/Qwen2.5-Coder-7B-Instruct`, afinado con aprendizaje por refuerzo para generar codigo Python ejecutable orientado a ciencia de datos. Lo desarrolla el usuario de Hugging Face `dzrlva` y aplica una variante de GRPO denominada CGPR (Confidence-Guided Policy Refinement) para mejorar la calidad de los rollouts durante el entrenamiento. El objetivo es resolver tareas del benchmark DS-1000, que evalua generacion de codigo con librerias como Pandas, NumPy, Matplotlib, PyTorch, SciPy, Scikit-learn y TensorFlow.
 
 El modelo resuelve un problema concreto: los modelos de codigo generalistas a menudo producen fragmentos que no se ejecutan o no pasan los tests unitarios en entornos de ciencia de datos. Este adaptador se entrena con una recompensa compuesta por ejecucion, tests y analisis estatico, lo que le permite alcanzar un 83,9 % de tareas resueltas en DS-1000 con una media de solo 48 tokens de salida por tarea, frente a los 1.740 tokens de un modelo mucho mayor como Qwen3.8-Max.
 
@@ -86,8 +86,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K) en l
 
 | Modelo | Parametros | Contexto | DS-1000 (total) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dzrlva/qwen-coder-ds1000-verl-fsdp2 | 7B + LoRA | no disponible | 83,9 % | Apache 2.0 | HuggingFace (adaptador PEFT) |
-| Qwen/Qwen2.5-Coder-7B-Instruct | 7B | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| dzrlva/qwen-coder-ds1000-verl-fsdp2 | 7B + LoRA | no disponible | 83,9 % | Apache 2.0 | Hugging Face (adaptador PEFT) |
+| Qwen/Qwen2.5-Coder-7B-Instruct | 7B | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Qwen3.8-Max | 2,4T (~95B activos) | no disponible | 84,8 % | no disponible | no disponible |
 
 El adaptador supera a Qwen3.8-Max en Pandas (+7,2 p.p.) y NumPy (+3,6 p.p.), y queda por debajo en TensorFlow (-53,3 p.p.), SciPy (-5,7 p.p.), PyTorch (-4,4 p.p.) y Matplotlib (-2,6 p.p.). No se dispone de datos de otros modelos comparables de 7B afinados para DS-1000 en la informacion proporcionada.
@@ -105,6 +105,6 @@ El adaptador supera a Qwen3.8-Max en Pandas (+7,2 p.p.) y NumPy (+3,6 p.p.), y q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dzrlva/qwen-coder-ds1000-verl-fsdp2
+- Hugging Face: https://huggingface.co/dzrlva/qwen-coder-ds1000-verl-fsdp2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

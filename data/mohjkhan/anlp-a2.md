@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mohjkhan/anlp-a2 es un repositorio de checkpoints asociado a la asignatura ANLP (Assignment 2), publicado por el usuario mohjkhan en HuggingFace. No es un modelo de propósito general ni un lanzamiento de producto: se trata de material de trabajo académico que agrupa los pesos resultantes de tres experimentos independientes sobre arquitecturas transformer decoder-only. Concretamente, cubre variantes de FFN y de mezcla de expertos (MoE), una comparativa de optimizadores y un estudio de estrategias de decodificación.
+mohjkhan/anlp-a2 es un repositorio de checkpoints asociado a la asignatura ANLP (Assignment 2), publicado por el usuario mohjkhan en Hugging Face. No es un modelo de propósito general ni un lanzamiento de producto: se trata de material de trabajo académico que agrupa los pesos resultantes de tres experimentos independientes sobre arquitecturas transformer decoder-only. Concretamente, cubre variantes de FFN y de mezcla de expertos (MoE), una comparativa de optimizadores y un estudio de estrategias de decodificación.
 
 El modelo base de los experimentos es un transformer decoder-only de tamaño reducido: dimension 512, 8 capas, 8 cabezas de atención, activación SwiGLU, vocabulario de 32.000 tokens, longitud de contexto de 512 tokens y codificación posicional rotatoria (RoPE). Sobre esta base se entrenaron variantes densas y MoE con presupuestos de tokens deliberadamente pequeños (30M tokens en la parte 1 y aproximadamente 38,5M tokens, alrededor de 1x Chinchilla, en la parte 2), lo que lo sitúa como un banco de pruebas para estudiar decisiones de diseño, no como un modelo apto para producción.
 
@@ -86,7 +86,7 @@ No se dispone de comparativas publicadas dentro de la informacion proporcionada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mohjkhan/anlp-a2
+- Repositorio en Hugging Face: https://huggingface.co/mohjkhan/anlp-a2
 - Repositorio de codigo de entrenamiento y W&B: no disponible (la model card los menciona sin proporcionar enlaces)
 - Dataset parte 1: `belumind/en-vi-ja-curated-500k-triplets` (referencia en la model card, sin URL explícita)
 - Dataset parte 2: `browndw/human-ai-parallel-corpus` (referencia en la model card, sin URL explícita)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Mia-v1 es un modelo publicado en HuggingFace por el usuario AIVORENCE bajo el identificador `AIVORENCE/Mia-v1`. Se distribuye en formato `safetensors` con la librería `transformers` y declara licencia Apache 2.0. El repositorio ocupa 10,2 GB y el recuento real de parámetros de los pesos publicados es de 5.104.297.504 (aproximadamente 5,1 mil millones), lo que sitúa al modelo en la categoria de tamano medio, manejable en GPUs de consumo con cuantizacion.
+Mia-v1 es un modelo publicado en Hugging Face por el usuario AIVORENCE bajo el identificador `AIVORENCE/Mia-v1`. Se distribuye en formato `safetensors` con la librería `transformers` y declara licencia Apache 2.0. El repositorio ocupa 10,2 GB y el recuento real de parámetros de los pesos publicados es de 5.104.297.504 (aproximadamente 5,1 mil millones), lo que sitúa al modelo en la categoria de tamano medio, manejable en GPUs de consumo con cuantizacion.
 
-La model card publicada es extremadamente escasa: se limita a metadatos (libreria, licencia y etiquetas `aivorence`, `mia`, `conversational`, `text-generation`) y no incluye descripcion, datos de entrenamiento, resultados de evaluacion ni instrucciones de uso. Las etiquetas del repositorio incluyen `gemma4` e `image-text-to-text`, lo que sugiere que el modelo deriva de la familia Gemma y que admite entradas multimodales de imagen y texto, aunque no hay documentacion del autor que lo confirme. El pipeline declarado en HuggingFace es `text-generation`, en contradiccion aparente con la etiqueta multimodal.
+La model card publicada es extremadamente escasa: se limita a metadatos (libreria, licencia y etiquetas `aivorence`, `mia`, `conversational`, `text-generation`) y no incluye descripcion, datos de entrenamiento, resultados de evaluacion ni instrucciones de uso. Las etiquetas del repositorio incluyen `gemma4` e `image-text-to-text`, lo que sugiere que el modelo deriva de la familia Gemma y que admite entradas multimodales de imagen y texto, aunque no hay documentacion del autor que lo confirme. El pipeline declarado en Hugging Face es `text-generation`, en contradiccion aparente con la etiqueta multimodal.
 
 El modelo es relevante ahora unicamente como objeto de evaluacion: se trata de un lanzamiento reciente (creado el 19 de septiembre de 2026 segun los metadatos del repositorio), con 2 likes y 0 descargas en el momento de la consulta, sin benchmarks publicados y sin documentacion tecnica verificable. Cualquier decision de adopcion en produccion deberia pasar por una evaluacion propia, dado que no existe informacion oficial sobre calidad, sesgos o comportamiento real.
 
@@ -41,7 +41,7 @@ Tampoco se documenta ninguna innovacion tecnica (decodificacion especulativa, at
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Modo de razonamiento explicito (thinking): no disponible.
 - Capacidades de codigo, matematicas o vision: no disponible, sin benchmarks ni ejemplos publicados.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en Hugging Face Inference Endpoints.
 
 ## Casos de uso
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada en cuantizacion de 4 bits: en torno a 3 GB de pesos, mas cache KV; factible en GPUs de 6-8 GB.
 - GPUs recomendadas para 16 bits: A100 40 GB, H100, L40S, RTX 4090 (24 GB) o RTX 4080 (16 GB, al limite).
 - GPUs de consumo compatibles: en 4 bits es razonable esperar funcionamiento en RTX 3060 12 GB, RTX 4060 Ti 8 GB o RTX 4070; la viabilidad exacta no esta confirmada porque se desconoce la longitud de contexto y el consumo de memoria de la cache KV.
-- Opciones de despliegue: `transformers` (libreria declarada) y, previsiblemente, vLLM, TGI y HuggingFace Inference Endpoints por la etiqueta `endpoints_compatible`. El soporte en llama.cpp u Ollama no esta confirmado, ya que no se publican pesos GGUF.
+- Opciones de despliegue: `transformers` (libreria declarada) y, previsiblemente, vLLM, TGI y Hugging Face Inference Endpoints por la etiqueta `endpoints_compatible`. El soporte en llama.cpp u Ollama no esta confirmado, ya que no se publican pesos GGUF.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas ni especificaciones de contexto que permitan estimarlas con fundamento.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ No es posible establecer una comparativa verificada con la informacion disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AIVORENCE/Mia-v1
+- Modelo en Hugging Face: https://huggingface.co/AIVORENCE/Mia-v1
 - Perfil del autor: https://huggingface.co/AIVORENCE
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible

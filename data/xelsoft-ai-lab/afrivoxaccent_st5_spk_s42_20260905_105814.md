@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AfriVoxAccent_ST5_spk_s42_20260905_105814 es un modelo publicado por el usuario xelsoft-ai-lab en HuggingFace. Su nombre y los metadatos del repositorio indican que se trata de un modelo de síntesis de voz (text-to-speech) basado en la arquitectura SpeechT5, tal como confirma la etiqueta `speecht5` y la referencia al paper arXiv:1910.09700. El modelo tiene aproximadamente 144,4 millones de parámetros y sus pesos están almacenados en formato safetensors, con un tamaño de repositorio de 0,6 GB.
+AfriVoxAccent_ST5_spk_s42_20260905_105814 es un modelo publicado por el usuario xelsoft-ai-lab en Hugging Face. Su nombre y los metadatos del repositorio indican que se trata de un modelo de síntesis de voz (text-to-speech) basado en la arquitectura SpeechT5, tal como confirma la etiqueta `speecht5` y la referencia al paper arXiv:1910.09700. El modelo tiene aproximadamente 144,4 millones de parámetros y sus pesos están almacenados en formato safetensors, con un tamaño de repositorio de 0,6 GB.
 
 La información disponible es extremadamente limitada: la model card es una plantilla autogenerada sin datos de entrenamiento, licencia, idiomas ni capacidades. El nombre sugiere una orientación hacia acentos africanos (AfriVoxAccent), pero no hay documentación que lo confirme. Por tanto, esta ficha se basa únicamente en los metadatos técnicos observables y en la arquitectura inferida, sin especular sobre rendimiento o usos no documentados.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible oficialmente. Por el número de parámetros (144,4 M), en precisión FP32 el peso del modelo ocupa aproximadamente 578 MB, por lo que podría caber en GPUs con 1 GB de VRAM o menos, pero no hay datos oficiales de consumo en inferencia.
 - GPU recomendadas: no disponible. Dado el tamaño del modelo, es probable que funcione en GPUs de consumo como RTX 3060 o superiores, aunque no se ha verificado.
 - Compatibilidad con GPU de consumo: no confirmada. La ausencia de requisitos documentados impide afirmar compatibilidad.
-- Opciones de despliegue: al estar etiquetado como compatible con `transformers` y `endpoints_compatible`, podría servirse mediante la librería transformers de HuggingFace, pero no hay información sobre integración con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: al estar etiquetado como compatible con `transformers` y `endpoints_compatible`, podría servirse mediante la librería transformers de Hugging Face, pero no hay información sobre integración con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares

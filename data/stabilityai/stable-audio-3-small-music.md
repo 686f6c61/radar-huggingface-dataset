@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stable Audio 3 Small Music es un modelo de generacion de audio por difusion desarrollado por Stability AI, especializado en la sintesis de musica a partir de descripciones textuales. Se distribuye en HuggingFace bajo el identificador stabilityai/stable-audio-3-small-music y esta afinado (finetune) a partir del checkpoint stabilityai/stable-audio-3-small-music-base, lo que lo situa como una variante orientada especificamente al dominio musical dentro de la familia Stable Audio 3. Su pipeline declarado es text-to-audio y su libreria asociada es stable-audio-3.
+Stable Audio 3 Small Music es un modelo de generacion de audio por difusion desarrollado por Stability AI, especializado en la sintesis de musica a partir de descripciones textuales. Se distribuye en Hugging Face bajo el identificador stabilityai/stable-audio-3-small-music y esta afinado (finetune) a partir del checkpoint stabilityai/stable-audio-3-small-music-base, lo que lo situa como una variante orientada especificamente al dominio musical dentro de la familia Stable Audio 3. Su pipeline declarado es text-to-audio y su libreria asociada es stable-audio-3.
 
 El modelo cuenta con 567.573.761 parametros reales (aproximadamente 567,6 millones) segun los pesos almacenados en safetensors, y el repositorio ocupa 3,5 GB. Este tamano lo situa en la gama "small" de la familia, lo que resulta relevante porque permite inferencia y ajuste fino en hardware de consumo, un factor decisivo para estudios pequenos, creadores independientes y equipos de investigacion que no disponen de clusters dedicados.
 
@@ -24,7 +24,7 @@ Su relevancia actual radica en la combinacion de tres factores: generacion music
 | Pipeline | text-to-audio |
 | Libreria | stable-audio-3 |
 | Modelo base | stabilityai/stable-audio-3-small-music-base |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas | 14.135 |
 | Likes | 134 |
 | Fecha de creacion | 2026-05-17 |
@@ -83,7 +83,7 @@ No se dispone de datos de benchmark ni de especificaciones verificadas de modelo
 
 ## Limitaciones y advertencias
 
-- El acceso esta restringido (gated): es obligatorio aceptar las condiciones en HuggingFace antes de descargar los pesos, lo que impide su uso en entornos automatizados sin gestion previa de credenciales.
+- El acceso esta restringido (gated): es obligatorio aceptar las condiciones en Hugging Face antes de descargar los pesos, lo que impide su uso en entornos automatizados sin gestion previa de credenciales.
 - La licencia es stable-audio-community (license:other). Las condiciones concretas de uso comercial no estan disponibles en la informacion proporcionada y deben consultarse en la ficha oficial antes de cualquier despliegue en produccion.
 - Los prompts de condicionamiento estan limitados al ingles; no hay soporte multilingue declarado.
 - Al ser un modelo de difusion generativa, existe riesgo de que la salida no se corresponda con la descripcion textual, especialmente con prompts ambiguos o poco frecuentes.
@@ -96,7 +96,7 @@ No se dispone de datos de benchmark ni de especificaciones verificadas de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stabilityai/stable-audio-3-small-music
+- Modelo en Hugging Face: https://huggingface.co/stabilityai/stable-audio-3-small-music
 - Modelo base: https://huggingface.co/stabilityai/stable-audio-3-small-music-base
 - Referencia arXiv indicada en las etiquetas: https://arxiv.org/abs/2605.17991
 - Los resultados de busqueda web obtenidos no contienen informacion relevante sobre este modelo: las paginas devueltas corresponden a foros y comunidades generalistas sin relacion con Stable Audio 3.

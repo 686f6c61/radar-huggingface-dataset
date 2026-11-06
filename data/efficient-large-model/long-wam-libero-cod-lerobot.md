@@ -81,7 +81,7 @@ La información disponible no incluye datos de otros modelos comparables, por lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Efficient-Large-Model/Long-WAM-LIBERO-COD-LeRobot
+- Modelo en Hugging Face: https://huggingface.co/Efficient-Large-Model/Long-WAM-LIBERO-COD-LeRobot
 - Modelo base (versión no LeRobot): https://huggingface.co/Efficient-Large-Model/Long-WAM-LIBERO-COD
 - Librería LeRobot referenciada en la model card: https://github.com/huggingface/lerobot
 - Paper, blog, demo o repositorio adicionales: no disponibles en la información proporcionada.

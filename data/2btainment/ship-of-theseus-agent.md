@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ship of Theseus es un framework de investigacion, publicado en HuggingFace por el usuario 2Btainment, que no constituye un modelo de lenguaje en si mismo sino un banco de pruebas para estudiar la auto-atribucion en agentes con memoria persistente. La pregunta central que articula el proyecto es si la informacion autobiografica de un agente puede permanecer intacta mientras su vinculacion funcional con un "yo" persistente desaparece de forma selectiva. Para responderla, el sistema instrumenta un modelo abierto (por defecto `google/gemma-2-2b-it`) y extrae, mediante sondeo contrastivo, una direccion de atribucion SELF/OTHER (`V_self`) y un subespacio (`S_self`) en el residual stream.
+Ship of Theseus es un framework de investigacion, publicado en Hugging Face por el usuario 2Btainment, que no constituye un modelo de lenguaje en si mismo sino un banco de pruebas para estudiar la auto-atribucion en agentes con memoria persistente. La pregunta central que articula el proyecto es si la informacion autobiografica de un agente puede permanecer intacta mientras su vinculacion funcional con un "yo" persistente desaparece de forma selectiva. Para responderla, el sistema instrumenta un modelo abierto (por defecto `google/gemma-2-2b-it`) y extrae, mediante sondeo contrastivo, una direccion de atribucion SELF/OTHER (`V_self`) y un subespacio (`S_self`) en el residual stream.
 
 El mecanismo experimental clave son las intervenciones causales del tipo `h ← h − α·proj(h, S_self)` aplicadas en una capa intermedia, barridas sobre `α ∈ {0, 0.25, 0.5, 0.75, 1.0, 1.5}`. El framework mide que partes del "yo" funcional se desvanecen y cuales de la capacidad general sobreviven, y lo hace a traves de cuatro familias de experimentos: Swap, Ship-of-Theseus, Doppelgänger y reversibilidad. La propuesta es relevante ahora porque conecta la investigacion reciente sobre vectores de steering de auto-reconocimiento y vectores de persona con la evaluacion de agentes que mantienen memoria episodica y planes a largo plazo.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 | Alcance | Agente multi-sesion con memoria y uso de herramientas | Discriminacion de texto en un unico prompt | Steering por promedio de tokens de respuesta con barrido de `α` |
 | Metodo de vector | Diferencia de medias + proyeccion de variables molestas + SVD | Diferencia de medias + proyeccion de variables molestas | Promedio sobre tokens de respuesta |
 | Licencia | no disponible | no disponible | no disponible |
-| Codigo | Repositorio HuggingFace `2Btainment/ship-of-theseus-agent` | no disponible en la informacion | `github.com/safety-research/persona_vectors` |
+| Codigo | Repositorio Hugging Face `2Btainment/ship-of-theseus-agent` | no disponible en la informacion | `github.com/safety-research/persona_vectors` |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/2Btainment/ship-of-theseus-agent
+- Repositorio en Hugging Face: https://huggingface.co/2Btainment/ship-of-theseus-agent
 - Ackerman y Panickssery, Inspection and Control of Self-Generated-Text Recognition Ability in Llama3-8B-Instruct: https://arxiv.org/abs/2410.02064
 - Chen et al., Persona Vectors: https://arxiv.org/abs/2507.21509
 - Codigo de Persona Vectors: https://github.com/safety-research/persona_vectors

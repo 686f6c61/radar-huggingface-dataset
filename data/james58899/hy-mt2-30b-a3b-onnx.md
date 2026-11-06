@@ -78,6 +78,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/james58899/Hy-MT2-30B-A3B-ONNX
+- Repositorio Hugging Face: https://huggingface.co/james58899/Hy-MT2-30B-A3B-ONNX
 - Modelo base: https://huggingface.co/tencent/Hy-MT2-30B-A3B
 - Cuantización de origen: https://huggingface.co/Intel/Hy-MT2-30B-A3B-int4-AutoRound

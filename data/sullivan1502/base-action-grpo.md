@@ -66,12 +66,12 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 - Sesgos conocidos: no documentados, pero al ser un modelo pequeño entrenado con datos desconocidos, es probable que herede sesgos del corpus original.
 - Riesgo de alucinación: alto, especialmente en modelos pequeños sin alineación robusta; no se han aplicado técnicas de RLHF completas, solo GRPO, lo que puede no mitigar suficientemente las alucinaciones.
 - Limitaciones de contexto e idioma: la longitud de contexto no está especificada, y los idiomas soportados son desconocidos; probablemente el modelo funcione mejor en inglés (por el ejemplo) pero no hay garantía.
-- Restricciones de licencia: la licencia no está clara ("no disponible" en HuggingFace, "licence: license" en el README), lo que impide determinar si su uso comercial está permitido. Se recomienda contactar al autor antes de cualquier uso productivo.
+- Restricciones de licencia: la licencia no está clara ("no disponible" en Hugging Face, "licence: license" en el README), lo que impide determinar si su uso comercial está permitido. Se recomienda contactar al autor antes de cualquier uso productivo.
 - Caveat para producción: al ser un modelo experimental sin benchmarks ni documentación de calidad, no es recomendable para entornos de producción sin una validación exhaustiva previa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sullivan1502/base-action-grpo
+- Hugging Face: https://huggingface.co/sullivan1502/base-action-grpo
 - Modelo base SFT: https://huggingface.co/sullivan1502/base-action-sft
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Repositorio de TRL: https://github.com/huggingface/trl

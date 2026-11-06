@@ -63,6 +63,6 @@ No se puede realizar una comparativa con modelos de lenguaje convencionales, ya 
 
 ## Enlaces
 
-- HuggingFace: [Supernova11c/Supernova-Brain](https://huggingface.co/Supernova11c/Supernova-Brain)
-- HuggingFace (repositorio de artefactos V2.6.1): [Supernova11c/Supernova-Brain-V2-6-1](https://huggingface.co/Supernova11c/Supernova-Brain-V2-6-1)
-- HuggingFace (historial de arquitectura): [Supernova11c/Supernova-Brain-Architecture-History](https://huggingface.co/Supernova11c/Supernova-Brain-Architecture-History)
+- Hugging Face: [Supernova11c/Supernova-Brain](https://huggingface.co/Supernova11c/Supernova-Brain)
+- Hugging Face (repositorio de artefactos V2.6.1): [Supernova11c/Supernova-Brain-V2-6-1](https://huggingface.co/Supernova11c/Supernova-Brain-V2-6-1)
+- Hugging Face (historial de arquitectura): [Supernova11c/Supernova-Brain-Architecture-History](https://huggingface.co/Supernova11c/Supernova-Brain-Architecture-History)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`genaforvena/study-toy_passage_ppl` es un adaptador LoRA (PEFT) publicado en HuggingFace sobre el modelo base `HuggingFaceTB/SmolLM2-360M-Instruct`. Se trata de un artefacto de investigación de tipo «toy»: el repositorio ocupa 0,0 GB —es decir, contiene unicamente los pesos del adaptador, no el modelo completo— y el nombre sugiere un experimento de estudio sobre perplejidad de pasajes (*passage perplexity*). El autor, `genaforvena`, no ha publicado ni un solo campo sustantivo de la model card: la tarjeta es la plantilla por defecto de HuggingFace con todos los apartados marcados como «More Information Needed».
+`genaforvena/study-toy_passage_ppl` es un adaptador LoRA (PEFT) publicado en Hugging Face sobre el modelo base `HuggingFaceTB/SmolLM2-360M-Instruct`. Se trata de un artefacto de investigación de tipo «toy»: el repositorio ocupa 0,0 GB —es decir, contiene unicamente los pesos del adaptador, no el modelo completo— y el nombre sugiere un experimento de estudio sobre perplejidad de pasajes (*passage perplexity*). El autor, `genaforvena`, no ha publicado ni un solo campo sustantivo de la model card: la tarjeta es la plantilla por defecto de Hugging Face con todos los apartados marcados como «More Information Needed».
 
 El interes practico del repositorio es, por tanto, limitado y muy acotado: sirve como ejemplo reproducible de fine-tuning con LoRA sobre un modelo pequeno, y como punto de partida para quien quiera inspeccionar como se estructura un adaptador PEFT de rank desconocido acoplado a SmolLM2-360M. No hay evidencia de evaluacion, de dataset de entrenamiento, de hiperparametros ni de licencia. Cualquier uso en produccion requeriria validacion propia desde cero.
 

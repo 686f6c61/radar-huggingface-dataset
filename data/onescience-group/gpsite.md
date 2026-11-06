@@ -67,12 +67,12 @@ No disponible. No se han proporcionado datos de modelos comparables de la misma 
 - No se han publicado benchmarks formales en la información disponible, por lo que el rendimiento relativo frente a otros métodos no es verificable.
 - No se describen sesgos específicos del modelo, pero al depender de modelos de lenguaje de proteínas preentrenados, podría heredar sesgos de los datos de entrenamiento de ProtT5 y ESMFold.
 - La licencia MIT permite uso comercial y modificación, pero es responsabilidad del usuario verificar el cumplimiento de las licencias de los modelos dependientes (ESMFold, ProtT5, etc.).
-- El repositorio de HuggingFace muestra un tamaño de 0.0 GB, lo que sugiere que los pesos de GPSite podrían no estar incluidos en el paquete o que el modelo se distribuye de forma separada.
+- El repositorio de Hugging Face muestra un tamaño de 0.0 GB, lo que sugiere que los pesos de GPSite podrían no estar incluidos en el paquete o que el modelo se distribuye de forma separada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/GPSite
+- Hugging Face: https://huggingface.co/OneScience-Group/GPSite
 - Paper (eLife): https://doi.org/10.7554/eLife.93695
 - GitHub OneScience: https://github.com/onescience-ai/OneScience
-- Perfil de HuggingFace de OneScience: https://huggingface.co/OneScience-Group/models
+- Perfil de Hugging Face de OneScience: https://huggingface.co/OneScience-Group/models
 - Entorno OneCode (demo en línea): https://web-2069360198568017922-iaaj.ksai.scnet.cn:58043/home

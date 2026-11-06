@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jjjlimaus/nanoexpand-2018-quality-gold-cont` es un modelo de generación de texto con 2.095.581.570 parámetros (aproximadamente 2,1 mil millones), desarrollado por el autor `jjjlimaus` y publicado en HuggingFace con licencia Apache 2.0. Se enmarca dentro de la familia de modelos etiquetados como `sn38-nanoexpand` y `sn38-nanochrono`, aunque no se ha publicado información detallada sobre su arquitectura o proceso de entrenamiento. El repositorio tiene un acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de descargar los pesos.
+El modelo `jjjlimaus/nanoexpand-2018-quality-gold-cont` es un modelo de generación de texto con 2.095.581.570 parámetros (aproximadamente 2,1 mil millones), desarrollado por el autor `jjjlimaus` y publicado en Hugging Face con licencia Apache 2.0. Se enmarca dentro de la familia de modelos etiquetados como `sn38-nanoexpand` y `sn38-nanochrono`, aunque no se ha publicado información detallada sobre su arquitectura o proceso de entrenamiento. El repositorio tiene un acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de descargar los pesos.
 
 A pesar de su tamaño relativamente modesto, la falta de documentación técnica y de benchmarks públicos limita cualquier evaluación objetiva de sus capacidades. Su relevancia actual es incierta: no hay métricas de rendimiento, ni comparativas con modelos similares, ni información sobre el dataset de entrenamiento. El modelo parece estar en una fase temprana de publicación, con cero descargas y cero likes en el momento de la consulta.
 

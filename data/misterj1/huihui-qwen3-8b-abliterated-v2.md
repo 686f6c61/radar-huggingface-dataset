@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Huihui-Qwen3-8B-abliterated-v2 es una versión sin censura (uncensored) del modelo Qwen3-8B de Alibaba, obtenida mediante abliteration, una técnica que elimina selectivamente la dirección de activación asociada a los rechazos (refusals) en el espacio latente del transformer sin necesidad de reentrenar los pesos. El modelo ha sido publicado originalmente por huihui-ai y esta ficha concreta corresponde a la copia subida por el usuario misterj1 a HuggingFace bajo el identificador `misterj1/Huihui-Qwen3-8B-abliterated-v2`.
+Huihui-Qwen3-8B-abliterated-v2 es una versión sin censura (uncensored) del modelo Qwen3-8B de Alibaba, obtenida mediante abliteration, una técnica que elimina selectivamente la dirección de activación asociada a los rechazos (refusals) en el espacio latente del transformer sin necesidad de reentrenar los pesos. El modelo ha sido publicado originalmente por huihui-ai y esta ficha concreta corresponde a la copia subida por el usuario misterj1 a Hugging Face bajo el identificador `misterj1/Huihui-Qwen3-8B-abliterated-v2`.
 
 La relevancia de esta versión radica en que corrige dos problemas de la iteración anterior (v1): por un lado, aplica un método de abliteration mas rápido y con mejores resultados, y por otro, modifica la capa 0 para eliminar el problema de generación de texto corrupto (garbled codes) que afectaba a la v1. Ademas, mantiene el modo de razonamiento (thinking mode) del Qwen3 original, lo que permite alternar entre respuestas con cadena de pensamiento explícita y respuestas directas.
 
@@ -86,8 +86,8 @@ La comparativa se limita a los tres modelos referenciados en la información pro
 
 ## Enlaces
 
-- HuggingFace (esta copia): https://huggingface.co/misterj1/Huihui-Qwen3-8B-abliterated-v2
-- Modelo original en HuggingFace (referenciado en la model card): https://huggingface.co/huihui-ai/Huihui-Qwen3-8B-abliterated-v2
+- Hugging Face (esta copia): https://huggingface.co/misterj1/Huihui-Qwen3-8B-abliterated-v2
+- Modelo original en Hugging Face (referenciado en la model card): https://huggingface.co/huihui-ai/Huihui-Qwen3-8B-abliterated-v2
 - Versión anterior (v1): https://huggingface.co/huihui-ai/Qwen3-8B-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-8B/blob/main/LICENSE

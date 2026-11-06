@@ -77,8 +77,8 @@ La información disponible permite comparar el método de poda sobre el mismo mo
 
 | Modelo / variante | Parámetros | Contexto | PPL WikiText-2 (60% sparsity) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HGRN-1.3B-ria-60pct (este) | 1,36 B | no disponible | 8.239 | MIT | HuggingFace |
-| HGRN-1.3B denso (base) | 1,36 B | no disponible | 11,8 (denso) | MIT (según base) | HuggingFace |
+| HGRN-1.3B-ria-60pct (este) | 1,36 B | no disponible | 8.239 | MIT | Hugging Face |
+| HGRN-1.3B denso (base) | 1,36 B | no disponible | 11,8 (denso) | MIT (según base) | Hugging Face |
 | HGRN-1.3B podado con CWS | 1,36 B | no disponible | 17,07 | no disponible | referencia en paper |
 | HGRN-1.3B podado con SparseGPT | 1,36 B | no disponible | 32,43 | no disponible | referencia en paper |
 | HGRN-1.3B podado con AWP | 1,36 B | no disponible | 2.616 | no disponible | referencia en paper |
@@ -101,7 +101,7 @@ Comparación frente a otras familias de modelos de ~1,3 B parámetros: no dispon
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/ikimyaii/hgrn-1.3B-ria-60pct
+- Hugging Face (este modelo): https://huggingface.co/ikimyaii/hgrn-1.3B-ria-60pct
 - Modelo base denso: https://huggingface.co/ikimyaii/hgrn-1.3B-dense-baseline
 - Modelo HGRN-1.3B-100B original: https://huggingface.co/fla-hub/hgrn-1.3B-100B
 - Librería flash-linear-attention (FLA): https://github.com/fla-org/flash-linear-attention

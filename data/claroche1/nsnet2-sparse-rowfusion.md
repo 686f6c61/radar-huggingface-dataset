@@ -88,7 +88,7 @@ No se dispone de comparativas con otros modelos de mejora de voz (como DeepFilte
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [claroche1/nsnet2-sparse-rowfusion](https://huggingface.co/claroche1/nsnet2-sparse-rowfusion)
+- Repositorio de Hugging Face: [claroche1/nsnet2-sparse-rowfusion](https://huggingface.co/claroche1/nsnet2-sparse-rowfusion)
 - Código y receta de entrenamiento: [LarocheC/eco8-neaixt](https://github.com/LarocheC/eco8-neaixt) (rama `sparse-masks-rowfusion`, ver `SPARSE_MATMUL_COLLAB.md`)
 - Checkpoints del baseline denso y otras factorizaciones: [claroche1/sparse-nsnet2-checkpoints](https://huggingface.co/claroche1/sparse-nsnet2-checkpoints)
 - Paper relacionado (Dynamic nsNet2): [arXiv:2308.16678](https://arxiv.org/abs/2308.16678)

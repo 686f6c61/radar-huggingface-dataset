@@ -87,7 +87,7 @@ No se dispone de datos públicos de otros modelos coreanos comparables (como Sol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smllms/HyperCLOVA-X-SEED-MISHULTA-v2
+- Modelo en Hugging Face: https://huggingface.co/smllms/HyperCLOVA-X-SEED-MISHULTA-v2
 - Modelo v1: https://huggingface.co/smllms/HyperCLOVA-X-SEED-MISHULTA-v1
 - Modelo base: https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-14B
 - Licencia del modelo base: https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-14B/blob/main/LICENSE

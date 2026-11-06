@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sentiment-model` es un modelo de clasificación de texto publicado por el usuario tejesh28 en HuggingFace, consistente en un ajuste fino (fine-tuning) de `distilbert-base-uncased` sobre un dataset que el autor no documenta. Se trata, por tanto, de un derivado de DistilBERT, la versión destilada de BERT con 6 capas y 66.955.779 parámetros totales, orientado a la tarea de análisis de sentimiento según declara su nombre. El repositorio ocupa 0,3 GB y los pesos están en formato safetensors, listos para su carga con la librería `transformers` y compatibles con `endpoints_compatible`.
+`sentiment-model` es un modelo de clasificación de texto publicado por el usuario tejesh28 en Hugging Face, consistente en un ajuste fino (fine-tuning) de `distilbert-base-uncased` sobre un dataset que el autor no documenta. Se trata, por tanto, de un derivado de DistilBERT, la versión destilada de BERT con 6 capas y 66.955.779 parámetros totales, orientado a la tarea de análisis de sentimiento según declara su nombre. El repositorio ocupa 0,3 GB y los pesos están en formato safetensors, listos para su carga con la librería `transformers` y compatibles con `endpoints_compatible`.
 
-El modelo resuelve una tarea de clasificación de secuencias (pipeline `text-classification`) y su relevancia es limitada: se trata de un experimento de ajuste fino generado automáticamente con el `Trainer` de HuggingFace, sin model card completada (las secciones de descripción, usos previstos y datos de entrenamiento figuran como "More information needed"). No acumula descargas ni valoraciones en el momento de redactar esta ficha, y su rendimiento declarado es modesto: accuracy de 0,6598 y F1 ponderado de 0,6493 sobre el conjunto de evaluación.
+El modelo resuelve una tarea de clasificación de secuencias (pipeline `text-classification`) y su relevancia es limitada: se trata de un experimento de ajuste fino generado automáticamente con el `Trainer` de Hugging Face, sin model card completada (las secciones de descripción, usos previstos y datos de entrenamiento figuran como "More information needed"). No acumula descargas ni valoraciones en el momento de redactar esta ficha, y su rendimiento declarado es modesto: accuracy de 0,6598 y F1 ponderado de 0,6493 sobre el conjunto de evaluación.
 
 Por su tamaño, es un modelo ligero que puede ejecutarse en CPU y en cualquier GPU de consumo, lo que lo hace utilizable como punto de partida para experimentos de clasificación o como base para un ajuste adicional. Sin embargo, la ausencia de documentación sobre el dataset, el esquema de etiquetas y el dominio de aplicación limita seriamente su uso en producción sin una validación previa.
 
@@ -107,7 +107,7 @@ La comparación cuantitativa con alternativas de la misma categoría no es posib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tejesh28/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/tejesh28/sentiment-model
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Modelo base (ruta completa del autor referenciada en los tags): https://huggingface.co/distilbert/distilbert-base-uncased
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

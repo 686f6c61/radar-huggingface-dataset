@@ -78,7 +78,7 @@ Los únicos datos de validación aportados por el autor son internos y de fideli
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Zamba2-VL-1.2B-GGUF (esta ficha) | 1.727.455.872 | No disponible | Apache 2.0 | GGUF (Q8_0 + mmproj F16) | HuggingFace, 0 descargas |
+| Zamba2-VL-1.2B-GGUF (esta ficha) | 1.727.455.872 | No disponible | Apache 2.0 | GGUF (Q8_0 + mmproj F16) | Hugging Face, 0 descargas |
 | Zyphra/Zamba2-VL-1.2B | No disponible | No disponible | Apache 2.0 | No disponible en esta búsqueda | Modelo base oficial |
 | Qwen2.5-VL-3B (comparador de categoría) | No verificado en la información disponible | No verificado | Apache 2.0 según su publicación oficial | Safetensors y GGUF de terceros | Ampliamente desplegado |
 | SmolVLM (comparador de categoría) | No verificado en la información disponible | No verificado | Apache 2.0 según su publicación oficial | Safetensors, GGUF, MLX | Ampliamente desplegado |
@@ -91,7 +91,7 @@ No se dispone de datos verificados de rendimiento comparado entre estos modelos 
 - Es una conversión de terceros, no una publicación oficial de Zyphra; no consta revisión por parte del equipo del modelo base.
 - El conversor vive en un fork personal de llama.cpp (PRs #16 y #17) que puede no estar fusionado en el repositorio upstream, lo que dificulta el mantenimiento y la reproducibilidad a largo plazo.
 - Con 0 descargas y 0 likes, no hay validación independiente de la comunidad sobre esta conversión.
-- La ficha de HuggingFace indica fechas de creación y actualización de septiembre de 2026, un dato atípico que conviene verificar antes de citarlo.
+- La ficha de Hugging Face indica fechas de creación y actualización de septiembre de 2026, un dato atípico que conviene verificar antes de citarlo.
 - No hay información sobre sesgos, comportamientos tóxicos, alineación ni evaluación de seguridad del modelo base ni de la conversión.
 - No hay información disponible sobre idiomas soportados, por lo que no puede garantizarse un rendimiento correcto en castellano.
 - Se desconoce la longitud de contexto real, lo que impide planificar flujos con documentos largos o conversaciones extensas.

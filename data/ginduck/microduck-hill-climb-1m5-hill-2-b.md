@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hill-climb-1m5-hill-2-b` es una política de control para robots entrenada mediante aprendizaje por refuerzo, publicada por el usuario GinDuck en HuggingFace. No es un modelo de lenguaje ni un modelo generativo de propósito general: es un controlador neuronal que se ejecuta sobre el robot cuadrúpedo de código abierto microduck de Pollen Robotics, con una observación de 61 dimensiones y 14 acciones a una frecuencia de control de 50 Hz. El objetivo concreto de la política es subir una rampa ("hill climb" a 1,5 m) a la máxima velocidad posible manteniendo la trayectoria, completando cada episodio en torno a 1,3 segundos.
+`hill-climb-1m5-hill-2-b` es una política de control para robots entrenada mediante aprendizaje por refuerzo, publicada por el usuario GinDuck en Hugging Face. No es un modelo de lenguaje ni un modelo generativo de propósito general: es un controlador neuronal que se ejecuta sobre el robot cuadrúpedo de código abierto microduck de Pollen Robotics, con una observación de 61 dimensiones y 14 acciones a una frecuencia de control de 50 Hz. El objetivo concreto de la política es subir una rampa ("hill climb" a 1,5 m) a la máxima velocidad posible manteniendo la trayectoria, completando cada episodio en torno a 1,3 segundos.
 
 La política se ha entrenado desde cero con el framework mjlab (basado en MuJoCo) sobre el repositorio `microduck-challenges`, rama `race-2`, commit `b44f7ffc9`, con 4096 entornos paralelos, semilla 1 y checkpoint 2500. El resultado se distribuye como un fichero ONNX (`policy.onnx`) con el normalizador de observaciones embebido, más un `manifest.json` conforme al esquema 2 del manifiesto de políticas de microduck. Es, por tanto, una política "perpetua": se carga en una ranura de política del demonio `robotctl` y se ejecuta de forma continua hasta que se le indique lo contrario.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GinDuck/microduck-hill-climb-1m5-hill-2-b | Política RL para microduck | no disponible | no aplica | ~1,3 s por episodio en rampa de 1,5 m | no disponible | HuggingFace (0 descargas) |
+| GinDuck/microduck-hill-climb-1m5-hill-2-b | Política RL para microduck | no disponible | no aplica | ~1,3 s por episodio en rampa de 1,5 m | no disponible | Hugging Face (0 descargas) |
 | Otras políticas de la rama `race-2` de microduck-challenges | Políticas RL para microduck | no disponible | no aplica | no disponible | no disponible | Repositorio de retos de Pollen Robotics |
 | Políticas de referencia de microduck (receta de TheSauceman) | Políticas RL para microduck | no disponible | no aplica | no disponible | no disponible | Repositorio de Pollen Robotics |
 
@@ -82,7 +82,7 @@ No se dispone de datos cuantitativos de modelos comparables en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GinDuck/microduck-hill-climb-1m5-hill-2-b
+- Modelo en Hugging Face: https://huggingface.co/GinDuck/microduck-hill-climb-1m5-hill-2-b
 - Repositorio de retos de microduck: https://github.com/pollen-robotics/microduck-challenges
 - Proyecto microduck: https://github.com/pollen-robotics/microduck
 - Documentación del manifiesto de políticas (referenciada en la model card): `docs/policy-manifest.md` en el repositorio del daemon de microduck (URL exacta no disponible)

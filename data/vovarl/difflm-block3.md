@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vovaRL/DiffLM-block3 es un modelo publicado en HuggingFace por el usuario vovaRL. La información disponible en la tarjeta del modelo es minima: no se especifica arquitectura, licencia, idiomas ni pipeline. El repositorio tiene un tamaño de 5.1 GB y fue creado el 4 de septiembre de 2026. La busqueda web muestra que DiffLM es tambien el nombre de un modelo de diffusion language model desarrollado por ByteDance, presentado en Findings of ACL'25, orientado a la generacion controlada de datos sinteticos. Sin embargo, no hay evidencias que confirmen que este checkpoint sea una version de ese proyecto, por lo que la relacion no esta establecida.
+vovaRL/DiffLM-block3 es un modelo publicado en Hugging Face por el usuario vovaRL. La información disponible en la tarjeta del modelo es minima: no se especifica arquitectura, licencia, idiomas ni pipeline. El repositorio tiene un tamaño de 5.1 GB y fue creado el 4 de septiembre de 2026. La busqueda web muestra que DiffLM es tambien el nombre de un modelo de diffusion language model desarrollado por ByteDance, presentado en Findings of ACL'25, orientado a la generacion controlada de datos sinteticos. Sin embargo, no hay evidencias que confirmen que este checkpoint sea una version de ese proyecto, por lo que la relacion no esta establecida.
 
 ## Especificaciones tecnicas
 
@@ -24,7 +24,7 @@ No se ha proporcionado informacion sobre la arquitectura, los datos de entrenami
 ## Capacidades
 
 - No se dispone de informacion suficiente para determinar las capacidades del modelo.
-- La tarjeta de HuggingFace no incluye descripcion de tareas soportadas.
+- La tarjeta de Hugging Face no incluye descripcion de tareas soportadas.
 - No hay datos sobre soporte de tool calling, agentes o razonamiento multi-step.
 - No se conocen las capacidades multilingues.
 - No hay evidencia de capacidades especiales como vision, audio o modo de pensamiento.
@@ -64,6 +64,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vovaRL/DiffLM-block3
+- Hugging Face: https://huggingface.co/vovaRL/DiffLM-block3
 - GitHub DiffLM (proyecto de referencia no confirmado): https://github.com/bytedance/DiffLM
 - README del proyecto DiffLM: https://github.com/bytedance/DiffLM/blob/main/README.md

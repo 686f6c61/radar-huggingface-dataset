@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GeoTrace sun position model es un modelo de visión por computador especializado en estimar la posición relativa del sol (azimut y altitud) a partir de una única imagen de exterior. Lo desarrolla davidlnk3 como componente del proyecto GeoTrace y se publica en HuggingFace bajo licencia MIT. El modelo resuelve un problema acotado pero técnicamente exigente: inferir la dirección de la iluminación solar dominante en una escena outdoor sin metadatos de captura, geolocalización ni marca temporal.
+GeoTrace sun position model es un modelo de visión por computador especializado en estimar la posición relativa del sol (azimut y altitud) a partir de una única imagen de exterior. Lo desarrolla davidlnk3 como componente del proyecto GeoTrace y se publica en Hugging Face bajo licencia MIT. El modelo resuelve un problema acotado pero técnicamente exigente: inferir la dirección de la iluminación solar dominante en una escena outdoor sin metadatos de captura, geolocalización ni marca temporal.
 
 Arquitectura y tamaño: se trata de un fine-tuning de facebook/dinov2-small (backbone transformer de visión de aproximadamente 22 millones de parámetros) al que se añaden dos cabezas de clasificación: una de 64 bins para el azimut solar relativo a la cámara y otra de 16 bins para la altitud. El modelo no procesa texto ni mantiene contexto conversacional; su entrada es una imagen y su salida son dos valores angulares discretizados.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Parámetros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GeoTrace sun position model | ViT (DINOv2-small) + cabezas de clasificación | ~22 M (backbone) | Posición solar relativa (azimut/altitud) | MIT | HuggingFace (`davidlnk3/geotrace-sun`) |
+| GeoTrace sun position model | ViT (DINOv2-small) + cabezas de clasificación | ~22 M (backbone) | Posición solar relativa (azimut/altitud) | MIT | Hugging Face (`davidlnk3/geotrace-sun`) |
 | Zhang et al. (CVPR 2019), método original | Red profunda de estimación de iluminación outdoor | no disponible | Iluminación outdoor completa (incluye sol) | no disponible | Paper; código de los autores no incluido en esta ficha |
-| DINOv2-small (facebook) | ViT auto-supervisado | ~22 M | Representaciones visuales genéricas | no disponible en esta ficha | HuggingFace |
+| DINOv2-small (facebook) | ViT auto-supervisado | ~22 M | Representaciones visuales genéricas | no disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de rendimiento comparables de alternativas específicas de estimación de posición solar en la información proporcionada.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparables de alternativas específicas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidlnk3/geotrace-sun
+- Modelo en Hugging Face: https://huggingface.co/davidlnk3/geotrace-sun
 - Repositorio GeoTrace: https://github.com/davidlnk3/GeoTrace
 - Implementación de arquitectura y decodificación: https://github.com/davidlnk3/GeoTrace/blob/main/src/geotrace/core/sun_model.py
 - Modelo base DINOv2-small: https://huggingface.co/facebook/dinov2-small

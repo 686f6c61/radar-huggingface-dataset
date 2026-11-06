@@ -23,7 +23,7 @@ El entrenamiento se realizó con hiperparámetros específicos (learning rate 5e
 
 El modelo es un fine-tune de `KKHYA/llavaqwen3-1.7b-finetune`, que a su vez se basa en LLaVA-Qwen3. El tag `nm_mask_moe_llava_qwen3` indica una arquitectura MoE con máscara (nm_mask), probablemente una variante de MoE dispersa, aunque no se proporcionan detalles sobre el número de expertos ni la topología interna. Tampoco se especifica la longitud de contexto ni el tipo de atención empleada.
 
-El entrenamiento se realizó con los siguientes hiperparámetros: learning rate 5e-4, batch size total 128 (con acumulación de gradientes), 8 GPUs, 1 época, optimizer AdamW con betas (0.9, 0.999) y scheduler cosine con warmup ratio 0.03. No se indica el dataset de entrenamiento ni si se aplicaron técnicas de alineación como RLHF o DPO. El modelo se generó mediante el Trainer de HuggingFace con Transformers 4.51.0 y PyTorch 2.5.1.
+El entrenamiento se realizó con los siguientes hiperparámetros: learning rate 5e-4, batch size total 128 (con acumulación de gradientes), 8 GPUs, 1 época, optimizer AdamW con betas (0.9, 0.999) y scheduler cosine con warmup ratio 0.03. No se indica el dataset de entrenamiento ni si se aplicaron técnicas de alineación como RLHF o DPO. El modelo se generó mediante el Trainer de Hugging Face con Transformers 4.51.0 y PyTorch 2.5.1.
 
 ## Capacidades
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-1e-1k-1of4-B6-1e1k-s1seed-sd43_20260830_084655
+- Modelo en Hugging Face: https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-1e-1k-1of4-B6-1e1k-s1seed-sd43_20260830_084655
 - Modelo base: https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune
 - Variante similar (2of4): https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-1e-1k-2of4-B6-1e1k-sd2h_20260808_061807
 - Otra variante (2of4, sd6h): https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-1e-1k-2of4-B6-1e1k-sd6h_20260811_170159/tree/main

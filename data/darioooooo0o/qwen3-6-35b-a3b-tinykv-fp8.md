@@ -99,7 +99,7 @@ No se dispone de comparaciones con modelos de otros fabricantes en la informaci√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darioooooo0o/Qwen3.6-35B-A3B-TinyKV-FP8
+- Modelo en Hugging Face: https://huggingface.co/darioooooo0o/Qwen3.6-35B-A3B-TinyKV-FP8
 - Modelo base TinyKV (receta de conversi√≥n y tablas de calidad): https://huggingface.co/darioooooo0o/Qwen3.6-35B-A3B-TinyKV
 - Versiones GGUF: https://huggingface.co/darioooooo0o/Qwen3.6-35B-A3B-TinyKV-GGUF
 - Checkpoint FP8 oficial de Qwen usado como base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8

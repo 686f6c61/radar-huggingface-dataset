@@ -79,7 +79,7 @@ La diferencia principal es el formato: esta version MLX esta optimizada para App
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-small-mlx)
+- [Modelo en Hugging Face](https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-small-mlx)
 - [Version ONNX del mismo modelo](https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-small-onnx)
 - [Repositorio NbAiLab/nb-whisper en GitHub](https://github.com/NbAiLab/nb-whisper)
 - [mlx-whisper (ejemplos de MLX)](https://github.com/ml-explore/mlx-examples/tree/main/whisper)

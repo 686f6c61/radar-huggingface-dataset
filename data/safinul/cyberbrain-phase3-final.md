@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CYBERBRAIN-PHASE3-FINAL es un ajuste por preentrenamiento continuado (continual pre-training) del modelo base Qwen2.5-Coder-0.5B, desarrollado por el usuario Safinul y publicado en HuggingFace. El modelo está especializado en dominios de redes informáticas: sockets, pila TCP/IP, protocolos asíncronos y librerías de red en C, Rust y Python (libuv, hyper, curl, smoltcp, scapy). Con 494.032.768 parámetros y un repositorio de 3,8 GB, se posiciona como un modelo pequeño orientado a generación de texto técnico y conversacional en inglés.
+CYBERBRAIN-PHASE3-FINAL es un ajuste por preentrenamiento continuado (continual pre-training) del modelo base Qwen2.5-Coder-0.5B, desarrollado por el usuario Safinul y publicado en Hugging Face. El modelo está especializado en dominios de redes informáticas: sockets, pila TCP/IP, protocolos asíncronos y librerías de red en C, Rust y Python (libuv, hyper, curl, smoltcp, scapy). Con 494.032.768 parámetros y un repositorio de 3,8 GB, se posiciona como un modelo pequeño orientado a generación de texto técnico y conversacional en inglés.
 
 La relevancia de este modelo es limitada pero específica: cubre un nicho técnico concreto (programación de redes de bajo nivel) sobre una base ya competente en código como Qwen2.5-Coder. El autor reporta un entrenamiento en FP32 puro con una reducción de la pérdida de 1,28 a 0,40, lo que sugiere convergencia sobre el corpus de redes utilizado, aunque no se documentan detalles sobre el volumen de tokens ni la composición exacta del dataset.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CYBERBRAIN-PHASE3-FINAL | 494M | no disponible | Redes, sockets, protocolos | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen2.5-Coder-0.5B | 494M | 32K (según model card del base) | Código general | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen2.5-Coder-1.5B | 1.5B | 32K (según model card del base) | Código general | Apache 2.0 | HuggingFace, ampliamente usado |
-| SmolLM2-360M | 360M | 8K (según model card) | Texto general | Apache 2.0 | HuggingFace |
+| CYBERBRAIN-PHASE3-FINAL | 494M | no disponible | Redes, sockets, protocolos | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen2.5-Coder-0.5B | 494M | 32K (según model card del base) | Código general | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen2.5-Coder-1.5B | 1.5B | 32K (según model card del base) | Código general | Apache 2.0 | Hugging Face, ampliamente usado |
+| SmolLM2-360M | 360M | 8K (según model card) | Texto general | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en datos públicos de los modelos base y alternativas; no hay benchmarks del modelo ajustado que permitan comparar rendimiento real. El contexto del modelo CYBERBRAIN no está documentado y podría diferir del base.
 
@@ -87,7 +87,7 @@ La comparativa se basa en datos públicos de los modelos base y alternativas; no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Safinul/CYBERBRAIN-PHASE3-FINAL
+- Hugging Face: https://huggingface.co/Safinul/CYBERBRAIN-PHASE3-FINAL
 - Modelo base Qwen2.5-Coder-0.5B: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B
 - Paquete completo: disponible en la pestaña Files del repositorio (`CYBERBRAIN_PHASE3_FULL_PACKAGE.zip`)
 - Paper, blog, repositorio o demo adicionales: no disponible

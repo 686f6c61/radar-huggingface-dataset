@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Enzyme-retrieval-da3410 es un paquete de inferencia publicado en HuggingFace por el usuario krishdange27 bajo el identificador `krishdange27/enzyme-retrieval-da3410`. No se trata de un modelo de lenguaje generativo, sino de un clasificador de tipo perceptron multicapa (MLP) entrenado para una tarea concreta de prediccion de numeros EC (Enzyme Commission) a partir de SMILES de reaccion. El paquete incluye el punto de entrada de inferencia `predict.py`, el checkpoint `weights/final_mlp_softce.pt`, el vocabulario oficial de clases EC en `ec_vocabulary.json`, un `Dockerfile` para imagen CPU Linux x86-64 y las dependencias de ejecucion en `requirements.txt`.
+Enzyme-retrieval-da3410 es un paquete de inferencia publicado en Hugging Face por el usuario krishdange27 bajo el identificador `krishdange27/enzyme-retrieval-da3410`. No se trata de un modelo de lenguaje generativo, sino de un clasificador de tipo perceptron multicapa (MLP) entrenado para una tarea concreta de prediccion de numeros EC (Enzyme Commission) a partir de SMILES de reaccion. El paquete incluye el punto de entrada de inferencia `predict.py`, el checkpoint `weights/final_mlp_softce.pt`, el vocabulario oficial de clases EC en `ec_vocabulary.json`, un `Dockerfile` para imagen CPU Linux x86-64 y las dependencias de ejecucion en `requirements.txt`.
 
 El modelo resuelve el problema de mapear una reaccion quimica representada como Reaction SMILES a una clase EC valida y distinta. La entrada esperada es un fichero Parquet con las columnas `id` y `rxn_smiles`; la salida es un fichero JSONL con exactamente `id` y `prediction`, donde cada prediccion contiene un unico EC valido. El pipeline agrupa reacciones SMILES identicas y conserva el primer identificador, tal como exige la tarea.
 
@@ -77,4 +77,4 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- [HuggingFace: krishdange27/enzyme-retrieval-da3410](https://huggingface.co/krishdange27/enzyme-retrieval-da3410)
+- [Hugging Face: krishdange27/enzyme-retrieval-da3410](https://huggingface.co/krishdange27/enzyme-retrieval-da3410)

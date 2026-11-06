@@ -24,7 +24,7 @@ Su relevancia es doble. Por un lado, demuestra que un ajuste de 1,4 horas en una
 | Librería | cutetts |
 | Frecuencia de muestreo de salida | 24 kHz |
 | Datos de ajuste | 325,9 horas de audio en japonés; 30.000 pasos con 4 frases por paso |
-| Fecha de publicación en HuggingFace | 21 de septiembre de 2026 |
+| Fecha de publicación en Hugging Face | 21 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
 
@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad | Rendimiento en japonés |
 |---|---|---|---|---|---|---|
-| CuteTTS-jp | ~230 M | no disponible | ja (inglés conservado, chino degradado) | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta | Error de lectura 7,12 %; error de caracteres 16,39 %; coincidencia acentual 43,6 % |
-| OPPOer/CuteTTS (base) | ~230 M | no disponible | no disponible | Apache 2.0 | HuggingFace | Error de lectura 30,94 %; error de caracteres 35,86 % según las mediciones del autor de CuteTTS-jp |
+| CuteTTS-jp | ~230 M | no disponible | ja (inglés conservado, chino degradado) | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta | Error de lectura 7,12 %; error de caracteres 16,39 %; coincidencia acentual 43,6 % |
+| OPPOer/CuteTTS (base) | ~230 M | no disponible | no disponible | Apache 2.0 | Hugging Face | Error de lectura 30,94 %; error de caracteres 35,86 % según las mediciones del autor de CuteTTS-jp |
 | Otras alternativas de TTS japonés (F5-TTS con ajuste japonés, Style-Bert-VITS2, GPT-SoVITS) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 La comparación con alternativas de la misma categoría no puede completarse porque la información disponible no incluye especificaciones ni métricas de esos sistemas. La única comparación cuantitativa verificable es contra el modelo base, sobre el que este ajuste mejora la lectura en japonés en 23,82 puntos porcentuales, a costa de destruir el rendimiento en chino.
@@ -106,9 +106,9 @@ La comparación con alternativas de la misma categoría no puede completarse por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ayousanz/CuteTTS-jp
+- Modelo en Hugging Face: https://huggingface.co/ayousanz/CuteTTS-jp
 - Repositorio de código, procedimiento de entrenamiento y datos preprocesados: https://github.com/ayutaz/CuteTTS-jp
-- Modelo base en HuggingFace: https://huggingface.co/OPPOer/CuteTTS
+- Modelo base en Hugging Face: https://huggingface.co/OPPOer/CuteTTS
 - Repositorio de CuteTTS (OPPO-Mente-Lab): https://github.com/OPPO-Mente-Lab/CuteTTS
 - Descript Audio Codec: https://github.com/descriptinc/descript-audio-codec
 - F5-TTS: https://github.com/SWivid/F5-TTS

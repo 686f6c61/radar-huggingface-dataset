@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo ogler/omner es un repositorio publicado en HuggingFace por el usuario ogler bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card unicamente contiene el campo de licencia, sin descripcion, sin arquitectura declarada, sin especificaciones de entrenamiento y sin datos de rendimiento. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline de inferencia asignado.
+El modelo ogler/omner es un repositorio publicado en Hugging Face por el usuario ogler bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card unicamente contiene el campo de licencia, sin descripcion, sin arquitectura declarada, sin especificaciones de entrenamiento y sin datos de rendimiento. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline de inferencia asignado.
 
 No es posible determinar que problema resuelve el modelo, cual es su arquitectura, su numero de parametros o su longitud de contexto, ya que el autor no ha publicado ninguna de estas especificaciones. Tampoco se han encontrado resultados de busqueda web relevantes: las consultas devuelven exclusivamente contenido sin relacion con el modelo (hilos de foros de entretenimiento sobre una actriz), lo que indica que no existe cobertura externa, documentacion tecnica ni paper asociado.
 
@@ -68,7 +68,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ogler/omner | no disponible | no disponible | no disponible | MIT | HuggingFace |
+| ogler/omner | no disponible | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ogler/omner
+- Repositorio en Hugging Face: https://huggingface.co/ogler/omner
 - Paper: no disponible.
 - Blog o documentacion del autor: no disponible.
 - Repositorio de codigo: no disponible.

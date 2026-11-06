@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3.8-27b-ft-ep4 es un ajuste fino (fine-tune) de parametros completos del modelo Qwen/Qwen3.8-27B, publicado por el usuario cont1037 en HuggingFace. Se trata de un modelo multimodal nativo de tipo image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto, construido sobre la arquitectura densa (no MoE) de la familia Qwen3.8 de Alibaba. El repositorio pesa 55,6 GB y contiene pesos en bfloat16 en formato safetensors, con 27.781.427.952 parametros totales (unos 27,78 mil millones).
+qwen3.8-27b-ft-ep4 es un ajuste fino (fine-tune) de parametros completos del modelo Qwen/Qwen3.8-27B, publicado por el usuario cont1037 en Hugging Face. Se trata de un modelo multimodal nativo de tipo image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto, construido sobre la arquitectura densa (no MoE) de la familia Qwen3.8 de Alibaba. El repositorio pesa 55,6 GB y contiene pesos en bfloat16 en formato safetensors, con 27.781.427.952 parametros totales (unos 27,78 mil millones).
 
 El modelo base, Qwen3.8-27B, se presenta por parte de Alibaba como un LLM denso multimodal nativo orientado a codigo, flujos agenticos y automatizacion de oficina, con mejoras respecto de la version 3.6-27B tanto en modalidad de texto como visual. Este fine-tune concreto no anade informacion publica sobre el dataset de ajuste, el numero de tokens de entrenamiento ni el metodo (SFT, RLHF, DPO): la model card se limita a indicar que es un full-parameter fine-tune en bfloat16 y remite a los ficheros NOTICE y LICENSE del repositorio.
 
@@ -12,7 +12,7 @@ Su relevancia es limitada y muy acotada: el repositorio acumula 0 descargas y 0 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal nativo (image-text-to-text); la etiqueta de HuggingFace indica `qwen3_5` |
+| Arquitectura | Transformer denso multimodal nativo (image-text-to-text); la etiqueta de Hugging Face indica `qwen3_5` |
 | Parametros totales | 27.781.427.952 (aproximadamente 27,78 mil millones) |
 | Parametros activos | No aplica: modelo denso, no es MoE |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Su relevancia es limitada y muy acotada: el repositorio acumula 0 descargas y 0 
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del fine-tune. El modelo base pertenece a la familia Qwen3.8 de Alibaba y se describe en las fuentes publicas como un modelo denso multimodal nativo: un transformer denso (sin mezcla de expertos) con capacidad de vision integrada, orientado a tareas de codigo, flujos agenticos y automatizacion de oficina. El pipeline declarado en HuggingFace es `image-text-to-text`, lo que confirma la entrada conjunta de imagen y texto. No se especifican en la informacion proporcionada el numero de capas, las dimensiones ocultas, el mecanismo de atencion ni el codificador visual empleado.
+La informacion disponible no detalla la arquitectura interna del fine-tune. El modelo base pertenece a la familia Qwen3.8 de Alibaba y se describe en las fuentes publicas como un modelo denso multimodal nativo: un transformer denso (sin mezcla de expertos) con capacidad de vision integrada, orientado a tareas de codigo, flujos agenticos y automatizacion de oficina. El pipeline declarado en Hugging Face es `image-text-to-text`, lo que confirma la entrada conjunta de imagen y texto. No se especifican en la informacion proporcionada el numero de capas, las dimensiones ocultas, el mecanismo de atencion ni el codificador visual empleado.
 
 En cuanto al entrenamiento, la model card unicamente indica que se trata de un ajuste de parametros completos (full-parameter fine-tune) del modelo Qwen/Qwen3.8-27B en bfloat16, y remite a un fichero `NOTICE` para el aviso de cambios y a `LICENSE` para la licencia. No hay datos sobre volumen de tokens, composicion del dataset, idiomas de entrenamiento, uso de RLHF o DPO, ni sobre tecnicas de optimizacion como decodificacion especulativa o atencion lineal. Tampoco se documenta si el ajuste preserva integramente las capacidades multimodales del modelo base.
 
@@ -52,7 +52,7 @@ En cuanto al entrenamiento, la model card unicamente indica que se trata de un a
 
 No se han publicado resultados de benchmarks en la informacion disponible para este fine-tune. El autor no incluye ninguna tabla de evaluacion en la model card.
 
-La pagina de HuggingFace del modelo base (Qwen/Qwen3.8-27B) menciona que se evalua en MathVision con un prompt fijo de razonamiento paso a paso y respuesta final en `\boxed{}`, pero en la informacion proporcionada no se incluyen los valores numericos de esa evaluacion, por lo que no se reproducen cifras.
+La pagina de Hugging Face del modelo base (Qwen/Qwen3.8-27B) menciona que se evalua en MathVision con un prompt fijo de razonamiento paso a paso y respuesta final en `\boxed{}`, pero en la informacion proporcionada no se incluyen los valores numericos de esa evaluacion, por lo que no se reproducen cifras.
 
 ## Requisitos de hardware
 
@@ -68,10 +68,10 @@ La pagina de HuggingFace del modelo base (Qwen/Qwen3.8-27B) menciona que se eval
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cont1037/qwen3.8-27b-ft-ep4 | 27,78 mil millones | no disponible | image-text-to-text | Apache-2.0 | HuggingFace, safetensors bf16 |
-| Qwen/Qwen3.8-27B (modelo base) | no disponible en la informacion (familia 27B) | no disponible | multimodal nativo (texto y vision) | no confirmada en la informacion disponible | HuggingFace y Alibaba Cloud Model Studio |
+| cont1037/qwen3.8-27b-ft-ep4 | 27,78 mil millones | no disponible | image-text-to-text | Apache-2.0 | Hugging Face, safetensors bf16 |
+| Qwen/Qwen3.8-27B (modelo base) | no disponible en la informacion (familia 27B) | no disponible | multimodal nativo (texto y vision) | no confirmada en la informacion disponible | Hugging Face y Alibaba Cloud Model Studio |
 | Qwen3.6-27B (generacion anterior) | no disponible | no disponible | multimodal | no disponible | Referenciado por Alibaba como version previa |
-| cont1037/Qwen3.8-27B-DFlash2-Crucible3D | 2B segun su model card | no disponible | texto (etiqueta `qwen3`) | no disponible | HuggingFace, safetensors BF16 |
+| cont1037/Qwen3.8-27B-DFlash2-Crucible3D | 2B segun su model card | no disponible | texto (etiqueta `qwen3`) | no disponible | Hugging Face, safetensors BF16 |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cont1037/qwen3.8-27b-ft-ep4
+- Modelo en Hugging Face: https://huggingface.co/cont1037/qwen3.8-27b-ft-ep4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del modelo base (Alibaba Cloud Official): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio GitHub de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8

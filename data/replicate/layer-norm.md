@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`replicate/layer-norm` no es un modelo de lenguaje ni un modelo de aprendizaje automatico en el sentido habitual: es un repositorio de kernels de computo publicados en HuggingFace Hub bajo el tipo de libreria `kernels`. Contiene implementaciones optimizadas y fusionadas de operaciones de normalizacion de capa (layer normalization) combinadas con dropout y sumas residuales, empaquetadas para ser consumidas mediante la libreria `kernels` de HuggingFace (`pip install kernels`). El autor indicado en el Hub es la organizacion `replicate`, mientras que la propia model card hace referencia al repositorio como `kernels-community/layer-norm`, lo que sugiere un reempaquetado o espejo dentro del ecosistema de kernels de la comunidad.
+`replicate/layer-norm` no es un modelo de lenguaje ni un modelo de aprendizaje automatico en el sentido habitual: es un repositorio de kernels de computo publicados en Hugging Face Hub bajo el tipo de libreria `kernels`. Contiene implementaciones optimizadas y fusionadas de operaciones de normalizacion de capa (layer normalization) combinadas con dropout y sumas residuales, empaquetadas para ser consumidas mediante la libreria `kernels` de Hugging Face (`pip install kernels`). El autor indicado en el Hub es la organizacion `replicate`, mientras que la propia model card hace referencia al repositorio como `kernels-community/layer-norm`, lo que sugiere un reempaquetado o espejo dentro del ecosistema de kernels de la comunidad.
 
 El problema que resuelve es de rendimiento a bajo nivel: en arquitecturas transformer, las operaciones de `dropout + add + layer_norm` (y su variante con residuo paralelo, tipica de GPT-J / GPT-NeoX) generan multiples pasadas de lectura y escritura sobre memoria global. Fusionarlas en un unico kernel reduce el trafico de memoria y el numero de lanzamientos de kernel, lo que se traduce en menor latencia y mayor throughput en entrenamiento e inferencia. Este tipo de repositorios es relevante ahora porque el ecosistema `kernels` permite distribuir binarios precompilados de kernels CUDA y ROCm sin obligar al usuario a compilar desde fuente.
 
@@ -25,7 +25,7 @@ Datos adicionales del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | replicate/layer-norm |
+| ID en Hugging Face | replicate/layer-norm |
 | Referencia interna en la model card | kernels-community/layer-norm |
 | Libreria | kernels |
 | Tipo de repositorio | kernels (originalmente tipo "model", en proceso de retirada) |
@@ -50,7 +50,7 @@ Funciones exportadas por el modulo:
 
 No existe arquitectura de red neuronal ni proceso de entrenamiento asociado. Lo que contiene el repositorio son kernels de computo (rutinas de bajo nivel) que implementan la fusion de tres operaciones habituales en bloques transformer: aplicacion de dropout, suma del residuo y normalizacion de capa. La variante `parallel_residual` corresponde al patron en el que la atencion y el bloque MLP leen de la misma entrada y sus salidas se suman al residuo de forma paralela, esquema empleado por familias como GPT-J y GPT-NeoX. La pasada backward indica que los kernels estan pensados tanto para inferencia como para entrenamiento o ajuste fino.
 
-La innovacion tecnica es la fusion de operadores (kernel fusion): en lugar de ejecutar dropout, suma y layer norm como tres kernels separados con sus correspondientes lecturas y escrituras en memoria, se resuelven en una sola pasada, lo que reduce el ancho de banda de memoria consumido. La distribucion se realiza a traves de la libreria `kernels` de HuggingFace, que resuelve la descarga del binario precompilado adecuado para la plataforma del usuario. La model card no aporta datos sobre el numero de tokens de entrenamiento, composicion del dataset, ni tecnicas de RLHF o DPO, porque no aplican: no hay modelo entrenado. Tampoco se documentan en la informacion disponible los detalles de implementacion (lenguaje de bajo nivel, version de CUDA, arquitecturas objetivo) mas alla de la existencia de un script de benchmarking invocable con `kernels benchmark kernels-community/layer-norm`.
+La innovacion tecnica es la fusion de operadores (kernel fusion): en lugar de ejecutar dropout, suma y layer norm como tres kernels separados con sus correspondientes lecturas y escrituras en memoria, se resuelven en una sola pasada, lo que reduce el ancho de banda de memoria consumido. La distribucion se realiza a traves de la libreria `kernels` de Hugging Face, que resuelve la descarga del binario precompilado adecuado para la plataforma del usuario. La model card no aporta datos sobre el numero de tokens de entrenamiento, composicion del dataset, ni tecnicas de RLHF o DPO, porque no aplican: no hay modelo entrenado. Tampoco se documentan en la informacion disponible los detalles de implementacion (lenguaje de bajo nivel, version de CUDA, arquitecturas objetivo) mas alla de la existencia de un script de benchmarking invocable con `kernels benchmark kernels-community/layer-norm`.
 
 ## Capacidades
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible; al no ser un modelo de pesos, el consumo de memoria depende exclusivamente de los tensores sobre los que opere el kernel. La memoria adicional del propio kernel es despreciable frente a los tensores de activacion.
 - GPU recomendadas: no disponible en la informacion proporcionada. Por la naturaleza del repositorio (kernels de computo acelerado) se orienta a GPUs NVIDIA o aceleradores compatibles, pero no se especifican modelos concretos.
 - Compatibilidad con GPU de consumo: no disponible; no se indica si los binarios cubren arquitecturas de gama consumer (RTX) o unicamente de centro de datos (A100, H100).
-- Opciones de despliegue: la unica via documentada es la libreria `kernels` de HuggingFace, con instalacion previa mediante `pip install -U kernels` y carga con `get_kernel`. No se documenta integracion directa con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: la unica via documentada es la libreria `kernels` de Hugging Face, con instalacion previa mediante `pip install -U kernels` y carga con `get_kernel`. No se documenta integracion directa con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponible.
 - Espacio en disco: el repositorio ocupa 21,6 GB, un tamano coherente con la inclusion de binarios precompilados para multiples combinaciones de plataforma y versiones de framework, aunque la model card no detalla la causa de este tamano.
 
@@ -95,7 +95,7 @@ No disponible. No se dispone de datos de rendimiento, plataformas soportadas ni 
 ## Limitaciones y advertencias
 
 - No es un modelo de IA: no genera texto, no razona y no puede evaluarse con benchmarks tipo MMLU, HumanEval o GSM8K. Cualquier uso esperando capacidades de modelo generativo es un error de interpretacion.
-- La model card advierte de que, a partir del 13 de septiembre de 2026, se eliminaran los repositorios de kernels publicados bajo el tipo "model" (por ejemplo, `kernels-community/flash-attn3`). Se recomienda usar una version reciente de la libreria `kernels` y reportar cualquier interrupcion en el repositorio de incidencias de HuggingFace.
+- La model card advierte de que, a partir del 13 de septiembre de 2026, se eliminaran los repositorios de kernels publicados bajo el tipo "model" (por ejemplo, `kernels-community/flash-attn3`). Se recomienda usar una version reciente de la libreria `kernels` y reportar cualquier interrupcion en el repositorio de incidencias de Hugging Face.
 - Discrepancia de identificadores: el repositorio se publica como `replicate/layer-norm`, pero el codigo de ejemplo de la propia model card carga `kernels-community/layer-norm`. Es necesario verificar cual de las dos rutas es la vigente antes de integrarlo en produccion.
 - El repositorio no registra descargas ni likes, y su fecha de creacion y actualizacion son identicas, lo que sugiere poca validacion por parte de la comunidad hasta la fecha.
 - No se documentan sesgos, porque no hay modelo entrenado con datos que pueda incorporarlos; la advertencia clasica sobre sesgos y alucinacion no aplica a este artefacto.
@@ -106,7 +106,7 @@ No disponible. No se dispone de datos de rendimiento, plataformas soportadas ni 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/layer-norm
+- Repositorio en Hugging Face: https://huggingface.co/replicate/layer-norm
 - Libreria `kernels` (GitHub): https://github.com/huggingface/kernels
 - Repositorio de incidencias sobre la retirada de repositorios de kernels: https://github.com/huggingface/kernels/issues/new
 - Replicate (sitio principal): https://replicate.com/

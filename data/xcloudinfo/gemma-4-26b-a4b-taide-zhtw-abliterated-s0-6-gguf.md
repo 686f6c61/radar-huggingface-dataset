@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW-abliterated-s0.6-GGUF
+- Modelo en Hugging Face: https://huggingface.co/xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW-abliterated-s0.6-GGUF
 - Modelo base (safetensors): https://huggingface.co/xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW
 - Version GGUF sin abliteration: https://huggingface.co/xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW-GGUF
 - Informe tecnico de Gemma 4 (arXiv): https://arxiv.org/html/2607.02770v1

@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taewhoo/self-assessment-qwen2.5-7b-step325
+- Modelo en Hugging Face: https://huggingface.co/Taewhoo/self-assessment-qwen2.5-7b-step325
 - Paper de referencia: https://arxiv.org/abs/2610.30435
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B
 - No se han encontrado otros enlaces relevantes (blogs, repositorios o demos) en la búsqueda web disponible; los resultados obtenidos corresponden únicamente a páginas de inicio de buscadores sin contenido técnico.

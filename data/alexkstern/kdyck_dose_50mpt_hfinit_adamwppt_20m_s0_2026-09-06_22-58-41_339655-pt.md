@@ -41,7 +41,7 @@ El entrenamiento se ejecutó en una GPU con un pico de 2250 TFLOPS según la con
 - Estudio de transferencia de conocimiento entre tareas: el diseño en dos fases (FineWeb seguido de Dyck) sirve para cuantificar cómo un pre-entrenamiento en lenguaje natural influye en el aprendizaje posterior de una tarea formal. Útil para trabajos sobre curricula de entrenamiento.
 - Análisis del efecto de la "dosis" de tokens: el nombre del modelo refleja un experimento sobre la cantidad de tokens en cada fase. Se puede utilizar para comparar la evolución de la pérdida en función del número de tokens de post-entrenamiento.
 - Evaluación de técnicas de re-inicialización de embeddings: la configuración activa `reinit_embed_at_transition`, lo que permite investigar el impacto de re-inicializar la capa de embedding al cambiar de dominio. Este modelo es un caso de estudio para validar esa técnica.
-- Comparación de estrategias de inicialización: el sufijo `hfinit` indica que se usó una inicialización de HuggingFace. Permite contrastar la sensibilidad del rendimiento frente a otras inicializaciones en la misma familia de experimentos.
+- Comparación de estrategias de inicialización: el sufijo `hfinit` indica que se usó una inicialización de Hugging Face. Permite contrastar la sensibilidad del rendimiento frente a otras inicializaciones en la misma familia de experimentos.
 - Reproducción de pipelines de entrenamiento con nanochat: al estar disponible el estado del optimizador, la configuración completa y los metadatos, el modelo puede servir como referencia para reproducir el flujo de entrenamiento de nanochat en entornos académicos o de investigación.
 
 ## Benchmarks y rendimiento
@@ -72,7 +72,7 @@ No se han publicado datos comparativos con modelos de la misma categoría. Exist
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_20M_s0_2026-09-06_22-58-41_339655-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_20M_s0_2026-09-06_22-58-41_339655-pt
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Registro de entrenamiento W&B: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/sj5cg8w7
 - Checkpoint relacionado `kdyck_dose_50Mpt_20M_s1`: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_20M_s1_2026-08-14_22-57-15_573105-pt

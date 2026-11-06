@@ -73,8 +73,8 @@ En bf16, una pasada de verificación sobre varios tokens redondea de forma disti
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| flaitenberger/economize-early-exit-gemma-4-31B-it | 1074M (drafter) | no disponible | Early-exit + decodificación especulativa autoinducida | Apache 2.0 (drafter) | HuggingFace, librería economize |
-| google/gemma-4-31B-it | 31B | no disponible | Transformer base | Licencia propia de Gemma | HuggingFace |
+| flaitenberger/economize-early-exit-gemma-4-31B-it | 1074M (drafter) | no disponible | Early-exit + decodificación especulativa autoinducida | Apache 2.0 (drafter) | Hugging Face, librería economize |
+| google/gemma-4-31B-it | 31B | no disponible | Transformer base | Licencia propia de Gemma | Hugging Face |
 | Drafters especulativos convencionales (modelos pequeños independientes) | variable | no disponible | Decodificación especulativa con modelo borrador separado | variable | variable |
 
 No se dispone de datos de benchmarks comparativos frente a otras técnicas de decodificación especulativa en la información proporcionada.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos frente a otras técnicas de de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/flaitenberger/economize-early-exit-gemma-4-31B-it
+- Hugging Face: https://huggingface.co/flaitenberger/economize-early-exit-gemma-4-31B-it
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Repositorio economize: https://github.com/Thiggel/economize
 - Documentación economize: https://thiggel.github.io/economize/

@@ -98,7 +98,7 @@ La comparación con modelos completos es asimétrica: el artefacto de este repos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-graft0-a1-terra3k-r2000-da-e1
+- Repositorio Hugging Face: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-graft0-a1-terra3k-r2000-da-e1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B
 - Libreria PEFT: https://github.com/huggingface/peft
 - Script de servicio citado en la model card: code/msm_eval/serve_reconstructed.sh (dentro del repositorio)

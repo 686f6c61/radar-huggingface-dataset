@@ -83,13 +83,13 @@ No se han encontrado en la informacion proporcionada comparativas con otros pred
 - Riesgo de alucinacion: no aplica en el sentido textual; en generacion de video el equivalente seria la aparicion de artefactos visuales o de audio, cuya tasa no se cuantifica en la model card, que solo afirma calidad a la par de la atencion completa.
 - Limitaciones de contexto e idioma: no disponibles. El limite de duracion del clip y el soporte idiomatico dependen de MiniMax-H3 y no se detallan.
 - El checkpoint se distribuye en fp8, lo que puede implicar una perdida de precision respecto a una version en precision completa; no se documenta una variante en bf16 o fp16.
-- Licencia: minimax-h3-community (etiquetada como license: other en HuggingFace). Es una licencia especifica de comunidad, no una licencia de codigo abierto estandar, por lo que conviene revisar el archivo LICENSE antes de cualquier uso comercial.
+- Licencia: minimax-h3-community (etiquetada como license: other en Hugging Face). Es una licencia especifica de comunidad, no una licencia de codigo abierto estandar, por lo que conviene revisar el archivo LICENSE antes de cualquier uso comercial.
 - La model card advierte de que los enlaces de descarga hacen referencia al espacio Veda-Sparse, mientras que este repositorio figura bajo el autor robertbschuette; conviene verificar el origen del checkpoint antes de integrarlo en produccion.
 - Se declaran 0 descargas y 0 likes en el momento de la consulta, lo que indica una validacion externa todavia muy limitada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/robertbschuette/Minimax-H3-T2VA-Veda-8NFE-600Step-Preview
+- Repositorio en Hugging Face: https://huggingface.co/robertbschuette/Minimax-H3-T2VA-Veda-8NFE-600Step-Preview
 - Demo en linea: https://veda.hanxiao.run/
 - Pagina del proyecto: https://veda-sparse.github.io/
 - Paper: https://arxiv.org/abs/2605.30325

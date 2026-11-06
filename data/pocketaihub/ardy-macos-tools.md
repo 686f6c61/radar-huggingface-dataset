@@ -74,9 +74,9 @@ No hay información suficiente para comparar con modelos similares en el context
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PocketAiHub/ardy-macos-tools
+- Hugging Face: https://huggingface.co/PocketAiHub/ardy-macos-tools
 - GitHub del proyecto: https://github.com/trev222/ardy-macos-tools
 - Repositorio oficial de ARDY (NVIDIA): https://github.com/nv-tlabs/ardy
 - Sitio de PocketAI Hub: https://pocketaihub.com/
 - Página de descarga de PocketAI: https://pocketaihub.com/download
-- Perfil de PocketAiHub en HuggingFace: https://huggingface.co/PocketAiHub/models
+- Perfil de PocketAiHub en Hugging Face: https://huggingface.co/PocketAiHub/models

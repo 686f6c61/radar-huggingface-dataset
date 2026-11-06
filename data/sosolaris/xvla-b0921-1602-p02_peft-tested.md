@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SoSolaris/xvla-b0921-1602-p02_peft-tested | 879.687.256 | no disponible | sin resultados publicados | apache-2.0 | HuggingFace, vía LeRobot |
-| lerobot/xvla-base (modelo base) | no disponible | no disponible | no disponible en la información consultada | no disponible en la información consultada | HuggingFace |
-| Otras políticas de imitación del ecosistema LeRobot (ACT, Diffusion Policy) | no disponible | no disponible | no disponible en la información consultada | no disponible en la información consultada | HuggingFace, vía LeRobot |
+| SoSolaris/xvla-b0921-1602-p02_peft-tested | 879.687.256 | no disponible | sin resultados publicados | apache-2.0 | Hugging Face, vía LeRobot |
+| lerobot/xvla-base (modelo base) | no disponible | no disponible | no disponible en la información consultada | no disponible en la información consultada | Hugging Face |
+| Otras políticas de imitación del ecosistema LeRobot (ACT, Diffusion Policy) | no disponible | no disponible | no disponible en la información consultada | no disponible en la información consultada | Hugging Face, vía LeRobot |
 
 Los resultados de la búsqueda web realizada no contienen información sobre modelos comparables de robótica; los enlaces devueltos no guardan relación con el dominio. Por tanto, no se dispone de datos verificados para comparar parámetros, contexto, rendimiento o licencia frente a alternativas como OpenVLA, pi0 o RDT-1B, y no se incluyen cifras para no introducir datos no contrastados.
 
@@ -95,7 +95,7 @@ Los resultados de la búsqueda web realizada no contienen información sobre mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SoSolaris/xvla-b0921-1602-p02_peft-tested
+- Modelo en Hugging Face: https://huggingface.co/SoSolaris/xvla-b0921-1602-p02_peft-tested
 - Modelo base: https://huggingface.co/lerobot/xvla-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/SoSolaris/FlourishGrabTape
 - Paper de X-VLA (arXiv:2510.10274): https://huggingface.co/papers/2510.10274

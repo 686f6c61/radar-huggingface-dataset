@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fbaldassarri/EleutherAI_pythia-6.9b-deduped-auto_gptq-int8-gs64-asym` es una version cuantizada en INT8 del modelo base `EleutherAI/pythia-6.9b-deduped`, publicada por el usuario fbaldassarri en HuggingFace. El objetivo es reducir el consumo de memoria y acelerar la inferencia de un modelo de lenguaje de gran tamano, manteniendo un rendimiento razonable en hardware de consumo y, de forma especifica, en plataformas Intel (CPU, iGPU Arc y NPU con AI Boost). El modelo original pertenece a la familia Pythia de EleutherAI, disenada para investigar el comportamiento de los modelos de lenguaje a diferentes escalas.
+`fbaldassarri/EleutherAI_pythia-6.9b-deduped-auto_gptq-int8-gs64-asym` es una version cuantizada en INT8 del modelo base `EleutherAI/pythia-6.9b-deduped`, publicada por el usuario fbaldassarri en Hugging Face. El objetivo es reducir el consumo de memoria y acelerar la inferencia de un modelo de lenguaje de gran tamano, manteniendo un rendimiento razonable en hardware de consumo y, de forma especifica, en plataformas Intel (CPU, iGPU Arc y NPU con AI Boost). El modelo original pertenece a la familia Pythia de EleutherAI, disenada para investigar el comportamiento de los modelos de lenguaje a diferentes escalas.
 
 La arquitectura es GPT-NeoX, un transformer causal de tipo decoder-only, entrenado sobre el dataset `EleutherAI/pile` deduplicado. La cuantizacion se ha realizado con el framework Intel AutoRound v0.13.1, aplicando GPTQ con 8 bits, grupo de 64 pesos y cuantizacion asimetrica. El modelo se presenta como un modelo base de completacion de texto, sin ajuste por instrucciones ni RLHF. Es relevante ahora porque permite ejecutar un modelo de 6.900 millones de parametros en entornos con recursos limitados, especialmente en despliegues de inferencia sobre CPU o NPU de Intel, donde la cuantizacion INT8 resulta critica.
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fbaldassarri/EleutherAI_pythia-6.9b-deduped-auto_gptq-int8-gs64-asym` | 6.9B (nombre del modelo) | no disponible | INT8, group size 64, asimetrica | Apache 2.0 | HuggingFace |
-| `fbaldassarri/EleutherAI_pythia-6.9b-autogptq-int8-gs128-asym` | 6.9B | no disponible | INT8, group size 128, asimetrica | Apache 2.0 | HuggingFace |
-| `EleutherAI/pythia-6.9b-deduped` | 6.9B | no disponible | sin cuantizacion | Apache 2.0 | HuggingFace |
+| `fbaldassarri/EleutherAI_pythia-6.9b-deduped-auto_gptq-int8-gs64-asym` | 6.9B (nombre del modelo) | no disponible | INT8, group size 64, asimetrica | Apache 2.0 | Hugging Face |
+| `fbaldassarri/EleutherAI_pythia-6.9b-autogptq-int8-gs128-asym` | 6.9B | no disponible | INT8, group size 128, asimetrica | Apache 2.0 | Hugging Face |
+| `EleutherAI/pythia-6.9b-deduped` | 6.9B | no disponible | sin cuantizacion | Apache 2.0 | Hugging Face |
 
 La variante con group size 64 ofrece una granularidad de cuantizacion mas fina que la de group size 128, lo que en teoria puede preservar algo mas de precision a costa de un mayor tamano del archivo. El modelo original sin cuantizar es la referencia para medir la degradacion de calidad.
 
@@ -76,7 +76,7 @@ La variante con group size 64 ofrece una granularidad de cuantizacion mas fina q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbaldassarri/EleutherAI_pythia-6.9b-deduped-auto_gptq-int8-gs64-asym
+- Modelo en Hugging Face: https://huggingface.co/fbaldassarri/EleutherAI_pythia-6.9b-deduped-auto_gptq-int8-gs64-asym
 - Modelo base original: https://huggingface.co/EleutherAI/pythia-6.9b-deduped
 - Variante similar con group size 128: https://huggingface.co/fbaldassarri/EleutherAI_pythia-6.9b-autogptq-int8-gs128-asym
 - Repositorio del framework AutoRound: https://github.com/intel/auto-round

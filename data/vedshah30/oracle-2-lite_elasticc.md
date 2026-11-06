@@ -4,7 +4,7 @@
 
 ORACLE-2 Lite es un clasificador fotométrico jerárquico en tiempo real desarrollado por Ved Shah para la clasificación de transitorios astronómicos en flujos de alertas de encuestas como ZTF (Bright Transient Survey) y LSST (ELAsTiCC). El modelo forma parte de la colección Oracle y está diseñado para asignar probabilidades condicionales a una taxonomía jerárquica, permitiendo decisiones de alto nivel (por ejemplo, "transitorio vs variable") incluso cuando la clasificación de hoja es incierta. Su variante Lite procesa exclusivamente series temporales de cinco dimensiones (flujo, error de flujo, longitud de onda, MJD desde la primera detección y flag fotométrico) junto con la longitud de la serie, sin necesidad de metadatos estáticos ni imágenes.
 
-La arquitectura se basa en una red Bi-GRU con 128 unidades por capa y dos capas, seguida de atención con pooling, normalización por capas, activación GELU, dropout y un MLP estático con conexión residual. El modelo produce un espacio latente de 16 dimensiones que se proyecta a logits jerárquicos organizados por grupos hermanos. Está entrenado con datos reales de alertas del ZTF BTS y simulaciones de ELAsTiCC2 para LSST, usando una pérdida de entropía cruzada jerárquica ponderada (WHXE). Aunque el repositorio en HuggingFace no contiene pesos (0.0 GB), el código y la documentación están disponibles públicamente.
+La arquitectura se basa en una red Bi-GRU con 128 unidades por capa y dos capas, seguida de atención con pooling, normalización por capas, activación GELU, dropout y un MLP estático con conexión residual. El modelo produce un espacio latente de 16 dimensiones que se proyecta a logits jerárquicos organizados por grupos hermanos. Está entrenado con datos reales de alertas del ZTF BTS y simulaciones de ELAsTiCC2 para LSST, usando una pérdida de entropía cruzada jerárquica ponderada (WHXE). Aunque el repositorio en Hugging Face no contiene pesos (0.0 GB), el código y la documentación están disponibles públicamente.
 
 ## Especificaciones tecnicas
 
@@ -64,13 +64,13 @@ No se han encontrado modelos comparables en la informacion proporcionada. La col
 - No apto para clasificacion espectroscopica: el modelo solo utiliza datos fotometricos y no puede procesar espectros.
 - No cubre clases de anomalias fuera de la taxonomia definida; los eventos que no encajen en la jerarquia pueden ser mal clasificados.
 - El entrenamiento combina datos reales (ZTF BTS) y simulaciones (ELAsTiCC2), lo que puede introducir sesgos derivados de las diferencias entre ambos conjuntos.
-- El repositorio en HuggingFace no contiene pesos (0.0 GB); para usar el modelo es necesario obtener los checkpoints a traves de la coleccion Oracle, el codigo en GitHub o la documentacion oficial.
+- El repositorio en Hugging Face no contiene pesos (0.0 GB); para usar el modelo es necesario obtener los checkpoints a traves de la coleccion Oracle, el codigo en GitHub o la documentacion oficial.
 - No hay informacion publicada sobre parametros totales, cuantizaciones ni requisitos de hardware, lo que dificulta la evaluacion de rendimiento y despliegue.
 - Al ser un modelo secuencial, el rendimiento puede degradarse con series temporales truncadas o con datos de entrada que difieran de la distribucion de entrenamiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vedshah30/Oracle-2-Lite_ELAsTiCC
+- Hugging Face: https://huggingface.co/vedshah30/Oracle-2-Lite_ELAsTiCC
 - Coleccion Oracle: https://huggingface.co/collections/vedshah30/oracle
 - Codigo: https://github.com/dev-ved30/Oracle
 - Documentacion: https://dev-ved30.github.io/Oracle/

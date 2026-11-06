@@ -83,9 +83,9 @@ No disponible. No se han identificado en la información proporcionada otros pro
 - No se especifican los idiomas soportados ni los sesgos potenciales, ya que dependen del modelo base.
 - La licencia MIT permite uso comercial, pero el código no incluye garantías explícitas de rendimiento ni soporte.
 - No se ha publicado documentación sobre el manejo de documentos con diseños muy complejos (tablas anidadas, gráficos, etc.) más allá de los casos mencionados.
-- El repositorio de HuggingFace no contiene pesos de un modelo, sino código y documentación; los usuarios deben implementar el pipeline sobre su propio modelo VLM.
+- El repositorio de Hugging Face no contiene pesos de un modelo, sino código y documentación; los usuarios deben implementar el pipeline sobre su propio modelo VLM.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trithikkrishna/optivision-rag
+- Hugging Face: https://huggingface.co/trithikkrishna/optivision-rag
 - (No se proporcionan otros enlaces en la información disponible; la model card menciona docs/DEPLOY.md y docs/RESULTS.md dentro del repositorio, pero no se dan URLs externas.)

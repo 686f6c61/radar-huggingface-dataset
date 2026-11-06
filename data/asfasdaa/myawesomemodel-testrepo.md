@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario asfasdaa bajo licencia MIT. La información disponible presenta una contradicción de fondo: las etiquetas del repositorio lo clasifican como un modelo BERT de extracción de características (pipeline `feature-extraction`, librería `transformers`, framework PyTorch), mientras que la model card describe un asistente conversacional de razonamiento con soporte de system prompt, plantillas de búsqueda web y carga de ficheros. No hay forma de resolver esa discrepancia con los datos disponibles.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario asfasdaa bajo licencia MIT. La información disponible presenta una contradicción de fondo: las etiquetas del repositorio lo clasifican como un modelo BERT de extracción de características (pipeline `feature-extraction`, librería `transformers`, framework PyTorch), mientras que la model card describe un asistente conversacional de razonamiento con soporte de system prompt, plantillas de búsqueda web y carga de ficheros. No hay forma de resolver esa discrepancia con los datos disponibles.
 
 El repositorio tiene 0 descargas, 0 likes y un tamaño declarado de 0,0 GB, por lo que no parece contener pesos publicados. Las fechas de creación y actualización (14 de septiembre de 2026, con ocho segundos de diferencia) y el propio sufijo "TestRepo" apuntan a un artefacto de prueba o a una plantilla sin contenido real. La model card, además, usa marcadores de posición genéricos ("Model1", "Model2", "Model1-v2") en su tabla de benchmarks.
 
@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks verificables de forma independiente
 - VRAM estimada para inferencia: no disponible. Sin conocer el número de parámetros ni la longitud de contexto, no es posible calcularla.
 - GPU recomendadas: no disponible por la misma razón.
 - Viabilidad en GPU de consumo: no disponible. El repositorio no contiene pesos (0,0 GB), por lo que no se puede ejecutar tal cual.
-- Opciones de despliegue: no disponible. La model card remite a un repositorio de código externo que no se enlaza en la información proporcionada. La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, pero no se detalla configuración alguna.
+- Opciones de despliegue: no disponible. La model card remite a un repositorio de código externo que no se enlaza en la información proporcionada. La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, pero no se detalla configuración alguna.
 - Latencia y throughput: no disponible. El único indicio indirecto es el consumo de 23.000 tokens por pregunta en el modo de razonamiento, lo que implicaría latencias altas y un coste de generación elevado en cualquier despliegue.
 
 A modo de referencia general, no como especificación de este modelo: un transformer denso de 7.000-8.000 millones de parámetros ocupa aproximadamente 15-16 GB en FP16, 8-9 GB en cuantización de 8 bits y 4-5 GB en 4 bits, y puede ejecutarse en GPUs de consumo con 12-24 GB de VRAM mediante llama.cpp, Ollama o vLLM. Estos rangos no deben atribuirse a MyAwesomeModel.
@@ -118,7 +118,7 @@ La única relación interna documentada es con MyAwesomeModel-Small, descrito co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/asfasdaa/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/asfasdaa/MyAwesomeModel-TestRepo
 - Repositorio de código, web oficial y API: mencionados en la model card, pero sin URL disponible en la información proporcionada.
 - Paper o informe técnico: no disponible.
 - Demostración: no disponible.

@@ -90,7 +90,7 @@ El propio autor advierte que este checkpoint no es intercambiable con el tokeniz
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/junbrro/action-tokenizer-arm2-rbbt-anyh3-w003-split-100001-slurm-20260925
+- Repositorio de Hugging Face: https://huggingface.co/junbrro/action-tokenizer-arm2-rbbt-anyh3-w003-split-100001-slurm-20260925
 - Repositorio hermano (variante MLXP, 100k): https://huggingface.co/junbrro/action-tokenizer-arm2-rbbt-anyh3-w003-split-100k-mlxp-20260923
 - Repositorio hermano (prq30 qcontinuous v9, openarm 1106 + egodex 1091, 100k): https://huggingface.co/junbrro/action-tokenizer-prq30-qcontinuous-v9-openarm1106-egodex1091-100k
 - Slurm Workload Manager (contexto del entorno de entrenamiento): https://en.wikipedia.org/wiki/Slurm_Workload_Manager

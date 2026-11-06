@@ -86,7 +86,7 @@ La comparativa directa con otros modelos de 27B (como Llama 3.3 70B o Mistral La
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ilyakam/Geer-Qwen3.8-27B-4-8bit-MLX
+- Hugging Face: https://huggingface.co/ilyakam/Geer-Qwen3.8-27B-4-8bit-MLX
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía de Qwen3.8-27B (blog): https://lovableapp.org/blog/qwen3-8-27b
 - Recetas vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

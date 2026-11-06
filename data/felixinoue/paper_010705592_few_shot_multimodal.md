@@ -67,7 +67,7 @@ No disponible. No se conocen repositorios equivalentes de la misma categoria con
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Felixinoue/paper_010705592_few_shot_multimodal
+- Repositorio de Hugging Face: https://huggingface.co/Felixinoue/paper_010705592_few_shot_multimodal
 - Paper relacionado (CIF, AAAI 2026): https://arxiv.org/abs/2511.05966
 - Paper relacionado (Cross-Modal Few-Shot Learning): https://arxiv.org/abs/2301.06267
 - Lista de recursos sobre Few-Shot Image Generation: https://github.com/bcmi/Awesome-Few-Shot-Image-Generation

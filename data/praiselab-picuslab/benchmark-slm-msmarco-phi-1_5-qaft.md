@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA (librería `peft`) publicado por la 
 
 El modelo base, phi-1.5, es un transformer decoder-only de 1.300 millones de parámetros con 2.048 tokens de contexto, publicado por Microsoft Research en 2023 bajo licencia MIT y entrenado con aproximadamente 30.000 millones de tokens de datos de calidad tipo libro de texto y datos sintéticos. El adaptador no altera esa arquitectura: añade pesos LoRA de bajo rango que especializan el modelo en la distribución de MS MARCO, un corpus de consultas y pasajes extraídos de Bing.
 
-La relevancia del repositorio es acotada y experimental. En el momento de la consulta acumula 0 descargas y 0 "me gusta", el tamaño del repositorio aparece como 0,0 GB, el acceso está restringido (gated, requiere aceptar condiciones en HuggingFace), la licencia del adaptador no se especifica y no se incluye tarjeta de modelo con resultados. Debe tratarse, por tanto, como una pieza de benchmarking reproducible más que como un componente desplegable.
+La relevancia del repositorio es acotada y experimental. En el momento de la consulta acumula 0 descargas y 0 "me gusta", el tamaño del repositorio aparece como 0,0 GB, el acceso está restringido (gated, requiere aceptar condiciones en Hugging Face), la licencia del adaptador no se especifica y no se incluye tarjeta de modelo con resultados. Debe tratarse, por tanto, como una pieza de benchmarking reproducible más que como un componente desplegable.
 
 ## Especificaciones técnicas
 
@@ -85,7 +85,7 @@ La comparación de rendimiento no puede establecerse con los datos disponibles: 
 
 - Artefacto de benchmark, no producto: no hay tarjeta de modelo, métricas ni guía de uso; 0 descargas y 0 likes en el momento de la consulta.
 - Licencia del adaptador no disponible: impide determinar si el uso comercial está permitido, pese a que el modelo base sea MIT. Verificar antes de cualquier despliegue.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que añade fricción a la reproducibilidad.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que añade fricción a la reproducibilidad.
 - Posible ausencia de pesos: el tamaño del repositorio aparece como 0,0 GB; conviene comprobar si los safetensors del adaptador están realmente subidos.
 - Metadatos atípicos: la fecha de creación (2026-10-23) y las etiquetas `or2` y `qaft` no están explicadas en la información disponible.
 - Solo inglés: no apto para producción en castellano u otros idiomas sin un ajuste adicional.

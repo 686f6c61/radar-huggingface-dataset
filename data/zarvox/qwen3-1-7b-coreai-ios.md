@@ -90,6 +90,6 @@ La comparación directa más relevante es con el modelo base: esta exportación 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zarvox/qwen3-1.7b-coreai-ios
+- Modelo en Hugging Face: https://huggingface.co/Zarvox/qwen3-1.7b-coreai-ios
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Herramienta coreai-models de Apple: https://github.com/apple/coreai-models

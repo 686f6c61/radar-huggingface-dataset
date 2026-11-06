@@ -21,7 +21,7 @@ Su relevancia practica radica en el tamano reducido del artefacto: el fichero `m
 | Licencia | Apache 2.0 |
 | Formato de pesos | ONNX (`model.onnx`) |
 
-Datos adicionales verificables: el identificador del repositorio es `imagent/rtmo-s-onnx`, el autor es `imagent`, las etiquetas declaradas son `onnx`, `imagent`, `pose-estimation` y `license:apache-2.0`, el pipeline no esta declarado, el repositorio ocupa 0,0 GB segun HuggingFace y registra 0 descargas y 0 likes en el momento de la consulta. El hash SHA-256 del fichero es `1cd6a3517658903233e9ccb78666554862f57f0944b6886e2048093594aef4e7`.
+Datos adicionales verificables: el identificador del repositorio es `imagent/rtmo-s-onnx`, el autor es `imagent`, las etiquetas declaradas son `onnx`, `imagent`, `pose-estimation` y `license:apache-2.0`, el pipeline no esta declarado, el repositorio ocupa 0,0 GB segun Hugging Face y registra 0 descargas y 0 likes en el momento de la consulta. El hash SHA-256 del fichero es `1cd6a3517658903233e9ccb78666554862f57f0944b6886e2048093594aef4e7`.
 
 ## Arquitectura y entrenamiento
 
@@ -88,7 +88,7 @@ La comparacion cuantitativa de parametros, contexto y precision entre estas alte
 - Riesgo de sesgo: los datasets de poses humanos suelen estar desequilibrados respecto a genero, tono de piel, complexión y tipo de ropa. La model card no aporta informacion sobre la composicion del dataset, por lo que este riesgo no puede evaluarse.
 - Uso de imagenes de personas: aunque la licencia Apache 2.0 permite el uso comercial, el tratamiento de datos personales derivados de video queda sujeto al RGPD y a la normativa aplicable. La estimacion de pose no es anonimizacion completa.
 - No hay garantia de mantenimiento: el repositorio es una copia congelada creada para disponer de una URL estable, con 0 descargas y 0 likes, y no se declara soporte ni actualizaciones.
-- El pipeline no esta declarado en HuggingFace, por lo que las herramientas automaticas de la plataforma pueden no reconocer el modelo correctamente.
+- El pipeline no esta declarado en Hugging Face, por lo que las herramientas automaticas de la plataforma pueden no reconocer el modelo correctamente.
 - La licencia Apache 2.0 se hereda del proyecto original; conviene verificar que el fichero LICENSE acompanante en el repositorio reproduce los terminos upstream antes de redistribuir.
 - La busqueda web asociada a este modelo devolvio exclusivamente resultados no relacionados con el ambito tecnico y sin ninguna relevancia para la ficha, por lo que no se han utilizado como fuente.
 

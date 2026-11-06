@@ -73,9 +73,9 @@ La comparativa se basa en caracteristicas arquitectonicas y de licencia; no se d
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/zeromodels/beit-large-patch16-512)
+- [Modelo en Hugging Face](https://huggingface.co/zeromodels/beit-large-patch16-512)
 - [Modelo original de Microsoft](https://huggingface.co/microsoft/beit-large-patch16-512)
 - [Paper BEiT (arXiv:2106.08254)](https://arxiv.org/abs/2106.08254)
 - [Repositorio ZeroModels en GitHub](https://github.com/IMvision12/ZeroModels)
 - [Documentacion de BEiT en ZeroModels](https://imvision12.github.io/ZeroModels/beit/)
-- [Coleccion de modelos BEiT en HuggingFace](https://huggingface.co/collections/zeromodels/beit-6a9352067192fd9fcfcfe6f1)
+- [Coleccion de modelos BEiT en Hugging Face](https://huggingface.co/collections/zeromodels/beit-6a9352067192fd9fcfcfe6f1)

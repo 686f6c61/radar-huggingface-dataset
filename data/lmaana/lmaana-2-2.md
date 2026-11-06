@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Lmaana 2.2 es un modelo de reconocimiento automático del habla (ASR) publicado por Lmaana en HuggingFace, con identificador `Lmaana/lmaana-2.2`. Está orientado al árabe marroquí (darija) y se distribuye a través de la librería fairseq2, con decodificación CTC según las etiquetas de la ficha. El repositorio ocupa 24,7 GB y el acceso es restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo. La ficha se creó el 21 de septiembre de 2026 y se actualizó el mismo día.
+Lmaana 2.2 es un modelo de reconocimiento automático del habla (ASR) publicado por Lmaana en Hugging Face, con identificador `Lmaana/lmaana-2.2`. Está orientado al árabe marroquí (darija) y se distribuye a través de la librería fairseq2, con decodificación CTC según las etiquetas de la ficha. El repositorio ocupa 24,7 GB y el acceso es restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo. La ficha se creó el 21 de septiembre de 2026 y se actualizó el mismo día.
 
 El modelo resuelve un problema concreto: la transcripción de voz en una variedad dialectal con pocos recursos, sin ortografía estandarizada y con alta variación regional. Frente a sistemas ASR multilingües genéricos, un modelo específico de darija puede adaptarse mejor al léxico y la fonética local, aunque en este caso los datos publicados no permiten confirmarlo con una comparación directa.
 
-El dato de rendimiento declarado por el autor es un WER de 38,4762 % y un CER de 16,3063 % sobre el split de test de «Dataset13 clean v4». Son resultados no verificados por HuggingFace y medidos sobre un conjunto de evaluación no público, lo que limita su comparabilidad con benchmarks estándar de ASR. No se dispone de información pública sobre el número de parámetros, la arquitectura exacta ni los datos de entrenamiento.
+El dato de rendimiento declarado por el autor es un WER de 38,4762 % y un CER de 16,3063 % sobre el split de test de «Dataset13 clean v4». Son resultados no verificados por Hugging Face y medidos sobre un conjunto de evaluación no público, lo que limita su comparabilidad con benchmarks estándar de ASR. No se dispone de información pública sobre el número de parámetros, la arquitectura exacta ni los datos de entrenamiento.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ El dato de rendimiento declarado por el autor es un WER de 38,4762 % y un CER de
 | Pipeline | `automatic-speech-recognition` |
 | Tarea | ASR con decodificación CTC |
 | Dataset de evaluacion declarado | Dataset13 clean v4 (split `test`) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-21 |
 | Fecha de actualizacion | 2026-09-21 |
@@ -78,13 +78,13 @@ No se han publicado en la información disponible resultados en benchmarks está
 - ¿Cabe en GPU de consumo? No confirmado. Con 24 GB de VRAM (RTX 3090, RTX 4090) podría ser viable si el checkpoint final es menor que el tamaño total del repositorio o si se aplica cuantización; no hay datos publicados al respecto.
 - Opciones de despliegue: fairseq2 es la vía indicada por la librería del modelo. vLLM, llama.cpp, Ollama y TGI no aplican a un modelo ASR acústico y no hay evidencia de soporte. No se documenta exportación a ONNX ni a formatos GGUF.
 - Latencia y throughput estimados: no disponible.
-- Requisito de acceso: el repositorio es gated, por lo que es necesario disponer de cuenta en HuggingFace y aceptar las condiciones del autor antes de la descarga.
+- Requisito de acceso: el repositorio es gated, por lo que es necesario disponer de cuenta en Hugging Face y aceptar las condiciones del autor antes de la descarga.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parametros | Idiomas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| Lmaana 2.2 | ASR (fairseq2, CTC) | No disponible | Árabe (darija) | `other` | HuggingFace, acceso restringido | WER 38,48 / CER 16,31 en Dataset13 clean v4 (no verificado) |
+| Lmaana 2.2 | ASR (fairseq2, CTC) | No disponible | Árabe (darija) | `other` | Hugging Face, acceso restringido | WER 38,48 / CER 16,31 en Dataset13 clean v4 (no verificado) |
 | OpenAI Whisper large-v3 | ASR seq2seq | 1,55 B (dato público de su ficha) | Multilingüe (~99 idiomas, incluye árabe) | MIT | Abierta, sin gating | Cubre árabe estándar y variantes dialectales, sin ajuste específico de darija; WER en darija no disponible en la información proporcionada |
 | Meta MMS (wav2vec2) | ASR (CTC) | Hasta 1 B según variante | Más de 1000 idiomas | CC-BY-NC 4.0 (uso no comercial) | Abierta | Restricción de uso comercial |
 | Meta Omnilingual ASR | ASR (fairseq2, CTC) | No disponible | Multilingüe | No disponible en la información proporcionada | Abierta | Familia referenciada en las etiquetas de lmaana-2.2; comparación cuantitativa no disponible |
@@ -94,7 +94,7 @@ No se dispone de resultados de WER comparables sobre «Dataset13 clean v4» para
 ## Limitaciones y advertencias
 
 - Tasa de error elevada: el WER declarado del 38,48 % implica que aproximadamente una de cada tres palabras se transcribe incorrectamente. No es adecuado para producción sin revisión humana.
-- Resultados no verificados: el `model-index` marca los resultados como `verified: false`, es decir, son cifras aportadas por el autor y no han sido validadas por HuggingFace ni por terceros.
+- Resultados no verificados: el `model-index` marca los resultados como `verified: false`, es decir, son cifras aportadas por el autor y no han sido validadas por Hugging Face ni por terceros.
 - Conjunto de evaluación no público: «Dataset13 clean v4» no es un benchmark estándar, lo que impide reproducir los números o compararlos con otros sistemas.
 - Posible sesgo de condiciones limpias: el propio nombre del split («clean») sugiere evaluación sobre audio en buenas condiciones; el rendimiento en audio con ruido, solapamiento de hablantes, acentos regionales o canales telefónicos podría ser inferior. No hay datos que confirmen o cuantifiquen este extremo.
 - Licencia ambigua: la licencia figura como `other` sin texto especificado en la información disponible, lo que supone un riesgo legal para uso comercial. Es imprescindible revisar las condiciones del repositorio antes de cualquier despliegue productivo.
@@ -107,5 +107,5 @@ No se dispone de resultados de WER comparables sobre «Dataset13 clean v4» para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lmaana/lmaana-2.2
+- Modelo en Hugging Face: https://huggingface.co/Lmaana/lmaana-2.2
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada. Los resultados devueltos por el buscador no guardan relación con el modelo.

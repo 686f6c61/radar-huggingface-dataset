@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vsapp/golu-assistant-model es un modelo publicado en HuggingFace por el usuario vsapp bajo licencia Apache 2.0. La etiqueta de arquitectura del repositorio es `distilbert`, lo que lo situa en la familia de encoders transformer destilados a partir de BERT-base: seis capas, atencion bidireccional y representaciones de 768 dimensiones. El repositorio pesa 0,3 GB y contiene pesos en formato safetensors con 66.958.086 parametros, un orden de magnitud coherente con DistilBERT-base (~66,9 M).
+vsapp/golu-assistant-model es un modelo publicado en Hugging Face por el usuario vsapp bajo licencia Apache 2.0. La etiqueta de arquitectura del repositorio es `distilbert`, lo que lo situa en la familia de encoders transformer destilados a partir de BERT-base: seis capas, atencion bidireccional y representaciones de 768 dimensiones. El repositorio pesa 0,3 GB y contiene pesos en formato safetensors con 66.958.086 parametros, un orden de magnitud coherente con DistilBERT-base (~66,9 M).
 
 El nombre del repositorio, "golu-assistant-model", sugiere un uso como componente de un asistente conversacional, presumiblemente como clasificador de intenciones, extractor de entidades o generador de embeddings dentro de un pipeline mayor. Sin embargo, la model card publicada no contiene mas que la declaracion de licencia (`license: apache-2.0`) y no se ha declarado `pipeline_tag`, idiomas soportados, datos de entrenamiento ni resultados de evaluacion, por lo que la funcionalidad concreta del modelo no esta documentada por el autor y buena parte de lo que sigue se apoya en inferencias a partir de la arquitectura declarada.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| vsapp/golu-assistant-model | 66,96 M | no disponible (familia DistilBERT: 512 tokens) | Apache 2.0 | HuggingFace, safetensors | no disponible |
-| distilbert-base-uncased | 66,96 M | 512 tokens | Apache 2.0 | HuggingFace, safetensors y otros | GLUE y SST-2 publicados por el autor original |
-| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | HuggingFace, safetensors y otros | GLUE publicado |
-| MiniLM-L6-v2 | 22,7 M | 512 tokens | Apache 2.0 | HuggingFace y ONNX | Benchmarks de sentence embeddings publicados |
+| vsapp/golu-assistant-model | 66,96 M | no disponible (familia DistilBERT: 512 tokens) | Apache 2.0 | Hugging Face, safetensors | no disponible |
+| distilbert-base-uncased | 66,96 M | 512 tokens | Apache 2.0 | Hugging Face, safetensors y otros | GLUE y SST-2 publicados por el autor original |
+| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | Hugging Face, safetensors y otros | GLUE publicado |
+| MiniLM-L6-v2 | 22,7 M | 512 tokens | Apache 2.0 | Hugging Face y ONNX | Benchmarks de sentence embeddings publicados |
 
 La comparacion se limita a parametros, contexto, licencia y disponibilidad: no existen datos de rendimiento publicados para golu-assistant-model que permitan contrastar su calidad frente a estas alternativas. Tampoco se conocen modelos comparables especificos de la misma tarea, dado que esta no esta declarada.
 
@@ -94,7 +94,7 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad: no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vsapp/golu-assistant-model
+- Modelo en Hugging Face: https://huggingface.co/vsapp/golu-assistant-model
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Articulo de referencia de la arquitectura DistilBERT (Sanh et al., 2019), citado como base de la familia y no como documentacion de este checkpoint: https://arxiv.org/abs/1910.01108
 - No se han encontrado papers, blogs, repositorios de codigo ni demos especificos de vsapp/golu-assistant-model en la informacion proporcionada.

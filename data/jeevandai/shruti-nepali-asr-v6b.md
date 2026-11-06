@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shruti Nepali ASR — v6b es un modelo de reconocimiento automatico del habla (ASR) para nepalí, publicado por el usuario JeevanDai en HuggingFace. Se trata de un ajuste fino del modelo `nvidia/nemotron-3.5-asr-streaming-0.6b`, que emplea una arquitectura FastConformer (encoder) combinada con un decodificador RNN-T (transducer) en configuracion streaming. El modelo conserva el tokenizer original de 13.088 tokens del modelo base y esta especializado exclusivamente en el idioma nepalí (`ne`).
+Shruti Nepali ASR — v6b es un modelo de reconocimiento automatico del habla (ASR) para nepalí, publicado por el usuario JeevanDai en Hugging Face. Se trata de un ajuste fino del modelo `nvidia/nemotron-3.5-asr-streaming-0.6b`, que emplea una arquitectura FastConformer (encoder) combinada con un decodificador RNN-T (transducer) en configuracion streaming. El modelo conserva el tokenizer original de 13.088 tokens del modelo base y esta especializado exclusivamente en el idioma nepalí (`ne`).
 
 El entrenamiento se realizo en dos pases mediante QLoRA sobre una base cuantizada a 4 bits NF4, con adaptadores LoRA de rango 128 y alpha 256 aplicados a las 16 capas superiores del encoder, mientras que el decodificador, el joint network y los proyectores se ajustaron por completo. El primer pase cubrio 936.000 enunciados (aproximadamente 1.045 horas de audio), de los cuales alrededor del 70% eran pseudo-etiquetados con Whisper y el 30% etiquetados por humanos. El segundo pase corrigio el sesgo del corpus excluyendo 22.971 pares audio-transcripcion mal alineados y sobremuestreando 3x las fuentes etiquetadas manualmente.
 
@@ -21,7 +21,7 @@ Su relevancia actual radica en que cubre un idioma con muy pocos recursos ASR di
 | Licencia | No disponible |
 | Formato de pesos | `model.pt` (checkpoint de PyTorch via `torch.save`, incluye `model`, `optimizer`, `scheduler`, `step` y `extra`). No hay safetensors ni GGUF |
 
-Datos adicionales: tamano del repositorio 1,1 GB, tokenizer de 13.088 tokens incluido en `tokenizer/`, 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado en la ficha de HuggingFace.
+Datos adicionales: tamano del repositorio 1,1 GB, tokenizer de 13.088 tokens incluido en `tokenizer/`, 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado en la ficha de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -77,7 +77,7 @@ No se han publicado resultados comparativos con otros sistemas ASR en la informa
 
 | Modelo | Parametros | Contexto / modalidad | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shruti Nepali ASR v6b | ~0,6B | Streaming, lookahead 3 tokens | Nepalí | No disponible | Checkpoint PyTorch en HuggingFace |
+| Shruti Nepali ASR v6b | ~0,6B | Streaming, lookahead 3 tokens | Nepalí | No disponible | Checkpoint PyTorch en Hugging Face |
 | nvidia/nemotron-3.5-asr-streaming-0.6b | ~0,6B | Streaming | Multilingue (segun modelo base) | No disponible en esta informacion | Modelo base de NVIDIA |
 | OpenAI Whisper large-v3 | 1,55B | Ventanas de 30 s, no streaming nativo | 99 idiomas, incluido nepalí | MIT (segun la publicacion original de OpenAI) | Pesos abiertos en multiples repositorios |
 
@@ -93,13 +93,13 @@ El modelo base de NVIDIA es el punto de comparacion mas directo en arquitectura 
 - Las referencias de evaluacion son mayoritariamente pseudo-etiquetas de Whisper (3.638 de 4.537), no transcripciones humanas, por lo que las metricas pueden estar sesgadas hacia el estilo y los errores de Whisper.
 - El 70% del corpus de entrenamiento es audio pseudo-etiquetado, lo que puede propagar sesgos y errores sistematicos de Whisper al modelo final, incluida la tendencia a "alucinar" texto plausible en segmentos ambiguos o con ruido.
 - El WER bruto del 25,5% (greedy) es elevado para transcripcion sin supervision; se recomienda revision humana o umbrales de confianza en cualquier flujo critico.
-- No hay model card completa en formato HuggingFace: faltan pipeline, licencia, datos de sesgo, limitaciones declaradas por el autor y guia de uso responsable.
+- No hay model card completa en formato Hugging Face: faltan pipeline, licencia, datos de sesgo, limitaciones declaradas por el autor y guia de uso responsable.
 - Sin descargas ni likes registrados en el momento de la consulta, lo que indica que el modelo no ha sido validado por la comunidad.
 - La busqueda web no devolvio ningun resultado relevante sobre este modelo; los resultados obtenidos no guardan relacion con el proyecto y se han descartado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JeevanDai/shruti-nepali-asr-v6b
+- Modelo en Hugging Face: https://huggingface.co/JeevanDai/shruti-nepali-asr-v6b
 - Modelo base declarado por el autor: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Ficheros internos del repositorio citados en la model card: `model.pt`, `tokenizer/`, `configs/`, `eval/EVALUATION.md`, `eval/bad_pairs_original_tokenizer.json`
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la busqueda web realizada. Los resultados devueltos no estaban relacionados con el modelo.

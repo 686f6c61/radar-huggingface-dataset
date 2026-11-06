@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dan-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` es un modelo de generacion de texto de tipo decoder-only desarrollado por el usuario de HuggingFace `francesca9805`, vinculado a la organizacion de Weights & Biases `f-padovani-university-of-groningen` (proyecto "new-tokenizers"). Se trata de un ajuste fino (fine-tuning) del modelo base `francesca9805/dan-latn-100mb-ppt-mp-struct-core-100mb_seed455`, entrenado mediante aprendizaje supervisado (SFT) con la libreria TRL. Su tamano real, confirmado por los pesos en safetensors, es de 124.770.816 parametros.
+El modelo `dan-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` es un modelo de generacion de texto de tipo decoder-only desarrollado por el usuario de Hugging Face `francesca9805`, vinculado a la organizacion de Weights & Biases `f-padovani-university-of-groningen` (proyecto "new-tokenizers"). Se trata de un ajuste fino (fine-tuning) del modelo base `francesca9805/dan-latn-100mb-ppt-mp-struct-core-100mb_seed455`, entrenado mediante aprendizaje supervisado (SFT) con la libreria TRL. Su tamano real, confirmado por los pesos en safetensors, es de 124.770.816 parametros.
 
 El nombre del checkpoint sugiere que forma parte de una linea experimental centrada en tokenizadores y en el tratamiento de datos de habla danesa en alfabeto latino ("dan-latn") sobre un corpus de aproximadamente 100 MB, con un checkpoint intermedio (ckpt500) de la semilla 455. La etiqueta `gpt2` en los metadatos indica que la arquitectura subyacente es la de GPT-2, un transformer causal estandar.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| dan-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455 | 124,8 M | no disponible | no disponible | HuggingFace (0 descargas) | no |
+| dan-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455 | 124,8 M | no disponible | no disponible | Hugging Face (0 descargas) | no |
 | GPT-2 small | 124 M | 1.024 tokens (configuracion estandar) | MIT (version original de OpenAI) | Amplia, multiples repositorios y derivados | si, en la publicacion original |
-| DistilGPT-2 | 82 M | 1.024 tokens (configuracion estandar) | Apache 2.0 segun el repositorio de HuggingFace | Amplia | si, en la publicacion original |
-| Modelo base francesca9805/dan-latn-100mb-ppt-mp-struct-core-100mb_seed455 | no disponible | no disponible | no disponible | HuggingFace | no |
+| DistilGPT-2 | 82 M | 1.024 tokens (configuracion estandar) | Apache 2.0 segun el repositorio de Hugging Face | Amplia | si, en la publicacion original |
+| Modelo base francesca9805/dan-latn-100mb-ppt-mp-struct-core-100mb_seed455 | no disponible | no disponible | no disponible | Hugging Face | no |
 
 La comparacion con GPT-2 small y DistilGPT-2 se incluye por coincidencia de orden de magnitud en parametros y de arquitectura, pero no implica equivalencia de rendimiento: no se han publicado evaluaciones de este checkpoint que permitan establecer una comparacion cuantitativa.
 
@@ -88,7 +88,7 @@ La comparacion con GPT-2 small y DistilGPT-2 se incluye por coincidencia de orde
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/dan-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/dan-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/dan-latn-100mb-ppt-mp-struct-core-100mb_seed455
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/20reu4mw
 - Repositorio de TRL: https://github.com/huggingface/trl

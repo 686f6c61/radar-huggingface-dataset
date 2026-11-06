@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para una comparativa cuantitativa con mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/openbmb/MiniCPM5-2B-Midtrain
+- Modelo en Hugging Face: https://huggingface.co/openbmb/MiniCPM5-2B-Midtrain
 - Informe tecnico MiniCPM: https://arxiv.org/pdf/2506.07900
 - Paper adicional (arXiv 2602.09003): https://arxiv.org/abs/2602.09003
 - Repositorio GitHub: https://github.com/OpenBMB/MiniCPM

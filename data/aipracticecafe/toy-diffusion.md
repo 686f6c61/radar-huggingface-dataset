@@ -77,7 +77,7 @@ Datos adicionales de eficiencia: los bloques dual-stream completan una epoca en 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| toy-diffusion (dual_stream_768_12_trans_2_bs_1024) | no disponible (anchura 768, profundidad 12) | no disponible | FID-20K 2,4240 en anime-faces-256px-v2 | MIT | HuggingFace, 170 GB de repo |
+| toy-diffusion (dual_stream_768_12_trans_2_bs_1024) | no disponible (anchura 768, profundidad 12) | no disponible | FID-20K 2,4240 en anime-faces-256px-v2 | MIT | Hugging Face, 170 GB de repo |
 | SDXL | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Flux.1 | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | SnapGen (variante Conv-Attn) | no disponible | no disponible | FID-20K 3,4479 en la misma evaluacion | no disponible | integrado como ablacion en este repo |
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks comparables de otros modelos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aipracticecafe/toy-diffusion
+- Modelo en Hugging Face: https://huggingface.co/aipracticecafe/toy-diffusion
 - Dataset de entrenamiento: https://huggingface.co/datasets/aipracticecafe/anime-faces-256px-v2
 - Dataset previo citado (paper i1): https://huggingface.co/datasets/aipracticecafe/anime-faces-256px
 - Codigo de entrenamiento Toy-diffusion: https://github.com/deeplearningcafe/toy-diffusion

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`classification-efficient` es un repositorio experimental de Mocov3 para clasificación, publicado por el usuario mhlima4390 en HuggingFace. No se trata de un modelo entrenado, sino de un checkpoint de inicialización de 49.600 parámetros destinado a pruebas de humo y a la inspección de cambios de arquitectura antes de ejecutar un entrenamiento completo. El repositorio incluye un script de Python con un ejemplo ejecutable, archivos de configuración y un checkpoint en formato safetensors.
+`classification-efficient` es un repositorio experimental de Mocov3 para clasificación, publicado por el usuario mhlima4390 en Hugging Face. No se trata de un modelo entrenado, sino de un checkpoint de inicialización de 49.600 parámetros destinado a pruebas de humo y a la inspección de cambios de arquitectura antes de ejecutar un entrenamiento completo. El repositorio incluye un script de Python con un ejemplo ejecutable, archivos de configuración y un checkpoint en formato safetensors.
 
 La arquitectura declarada utiliza atención lineal, fusión bilinear, activación mish y normalización layernorm, bajo la escala "huge" aunque el número real de parámetros es minúsculo. No se dispone de información sobre la longitud de contexto, idiomas soportados ni resultados de benchmarks, y la model card indica explícitamente que no se reclama ninguna puntuación de evaluación. La licencia es Apache-2.0.
 
@@ -62,11 +62,11 @@ No se dispone de modelos comparables en la información proporcionada. Al ser un
 - El checkpoint no ha sido entrenado, por lo que no ofrece ninguna capacidad de clasificación real.
 - No ha sido auditado para robustez, equidad ni transferencia de dominio, según la model card.
 - No se dispone de información sobre sesgos, ya que no ha sido entrenado con datos.
-- La implementación requiere un adaptador explícito; las APIs de carga automática de HuggingFace no funcionarán directamente.
+- La implementación requiere un adaptador explícito; las APIs de carga automática de Hugging Face no funcionarán directamente.
 - No hay métricas de rendimiento ni benchmarks que permitan evaluar su calidad.
 - No apto para uso en producción.
 - La licencia Apache-2.0 permite uso comercial, pero el artefacto no tiene valor práctico como modelo.
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/mhlima4390/classification-efficient](https://huggingface.co/mhlima4390/classification-efficient)
+- Hugging Face: [https://huggingface.co/mhlima4390/classification-efficient](https://huggingface.co/mhlima4390/classification-efficient)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`halle01/ivl4b-loras-backup` es un repositorio de HuggingFace publicado por el usuario `halle01` que, según su propia model card, contiene una copia de seguridad de pesos de adaptadores LoRA procedentes de experimentos de ajuste fino de un modelo de visión-lenguaje. No se trata de un modelo completo ni de un lanzamiento con documentación técnica: la model card lo describe explícitamente como un punto de restauración ("restore point") de checkpoints de adaptadores en PyTorch, y no identifica el modelo base sobre el que se entrenaron.
+`halle01/ivl4b-loras-backup` es un repositorio de Hugging Face publicado por el usuario `halle01` que, según su propia model card, contiene una copia de seguridad de pesos de adaptadores LoRA procedentes de experimentos de ajuste fino de un modelo de visión-lenguaje. No se trata de un modelo completo ni de un lanzamiento con documentación técnica: la model card lo describe explícitamente como un punto de restauración ("restore point") de checkpoints de adaptadores en PyTorch, y no identifica el modelo base sobre el que se entrenaron.
 
 El repositorio ocupa 5,2 GB, lo que resulta un tamaño inusualmente grande para un conjunto de adaptadores LoRA típico; esto podría indicar múltiples checkpoints acumulados, rangos (rank) elevados o adaptadores guardados en precisión completa, pero no hay información en el repositorio que permita confirmarlo. La licencia declarada es Apache 2.0 y el repositorio está etiquetado con `safetensors` y `region: us`.
 
@@ -87,6 +87,6 @@ No disponible. Este repositorio no es un modelo publicado con capacidades compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/halle01/ivl4b-loras-backup
+- Hugging Face: https://huggingface.co/halle01/ivl4b-loras-backup
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Las busquedas devolvieron unicamente articulos de prensa sobre sucesos en Normandia (MSN, ICI Normandie, actu.fr, titrespresse.com, Ouest-France), sin ninguna relacion con el repositorio ni con modelos de IA.
 - Paper, blog, repositorio o demo oficial: no disponible.

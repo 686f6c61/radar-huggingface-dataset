@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks estándar en la información dispon
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | smca/holdfast-chat-lfm2.5-1.2b-mlx-4bit | 1,17 B | no disponible | LFM Open License v1.0 | MLX 4-bit, candidato privado | Ajuste LoRA especializado en la app Holdfast |
-| LiquidAI/LFM2.5-1.2B-Instruct | 1,2 B (aprox.) | no disponible | LFM Open License v1.0 | Pesos oficiales en HuggingFace | Modelo base, propósito general |
+| LiquidAI/LFM2.5-1.2B-Instruct | 1,2 B (aprox.) | no disponible | LFM Open License v1.0 | Pesos oficiales en Hugging Face | Modelo base, propósito general |
 | LiquidAI/LFM2.5-1.2B-Instruct-MLX-4bit | 1,2 B (aprox.) | no disponible | LFM Open License v1.0 | MLX 4-bit oficial | Misma cuantización y tokenizer que este modelo |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada.
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smca/holdfast-chat-lfm2.5-1.2b-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/smca/holdfast-chat-lfm2.5-1.2b-mlx-4bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Versión MLX 4-bit oficial del modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-MLX-4bit
 - Licencia LFM Open License v1.0: incluida en el repositorio como LICENSE

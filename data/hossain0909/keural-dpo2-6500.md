@@ -85,6 +85,6 @@ Keural se posiciona entre los MoE pequeños (Qwen1.5-MoE) y los densos coreanos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hossain0909/keural-dpo2-6500
+- Modelo en Hugging Face: https://huggingface.co/hossain0909/keural-dpo2-6500
 - Modelo base: https://huggingface.co/mkd-hossain/keural-sft3-final
 - Paper, repositorio de código o demo: no disponible

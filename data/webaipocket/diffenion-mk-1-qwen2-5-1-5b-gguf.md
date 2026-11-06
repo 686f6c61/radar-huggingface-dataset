@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Diffenion-Mk.1 es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario WebAIPocket en HuggingFace bajo licencia Apache 2.0. Su propósito declarado es especializarse en tareas de debate: el modelo primero "absorbe" la opinión del usuario y después genera una opinión diferente (Different Opinion, de ahí el nombre), buscando fomentar discusiones equilibradas entre humanos e IA. Está orientado al idioma japonés y se distribuye exclusivamente en formato GGUF para su uso con llama.cpp.
+Diffenion-Mk.1 es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario WebAIPocket en Hugging Face bajo licencia Apache 2.0. Su propósito declarado es especializarse en tareas de debate: el modelo primero "absorbe" la opinión del usuario y después genera una opinión diferente (Different Opinion, de ahí el nombre), buscando fomentar discusiones equilibradas entre humanos e IA. Está orientado al idioma japonés y se distribuye exclusivamente en formato GGUF para su uso con llama.cpp.
 
 El modelo cuenta con 1.543.714.304 parámetros (aproximadamente 1,5 mil millones), heredados íntegramente de su base Qwen2.5-1.5B-Instruct, y un repositorio de 1,3 GB que incluye los pesos cuantizados. La model card está redactada íntegramente en japonés y describe el dataset de entrenamiento (gyakusetu.json) como no público, generado con ayuda de DeepSeek-R1.
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/WebAIPocket/Diffenion-Mk.1-Qwen2.5-1.5B-gguf
+- Hugging Face: https://huggingface.co/WebAIPocket/Diffenion-Mk.1-Qwen2.5-1.5B-gguf
 - Modelo base: https://huggingface.co/unsolth/Qwen2.5-1.5B-Instruct
 - Qwen2.5 (familia original): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - llama.cpp: https://github.com/ggerganov/llama.cpp

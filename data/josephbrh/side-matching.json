@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "josephbrh/side-matching",
+  "slug": "josephbrh-side-matching",
+  "author": "josephbrh",
+  "url": "https://huggingface.co/josephbrh/side-matching",
+  "created_at": "2026-11-06T07:17:38.000Z",
+  "updated_at": "2026-11-06T07:17:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Economic Scenarios for Transformative AI - Anthropic",
+      "url": "https://www-cdn.anthropic.com/files/4zrzovbb/website/cf58f84d46a4a76bf5a5b039ac695fba6b80041c.pdf",
+      "snippet": "whose right side, Equation (17), is strictly decreasing in Δlnrt ; at 𝜀 ... model for AI automation,” arXiv:2503.04941, Epoch AI 2025. Filippucci ..."
+    }
+  ]
+}

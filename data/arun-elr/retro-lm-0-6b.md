@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Retro-LM-0.6B es un modelo de lenguaje especializado en retrosíntesis química, desarrollado por el usuario arun-elr y publicado en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo base Qwen/Qwen3-0.6B-Base, un transformer decoder-only de la familia Qwen3 con aproximadamente 596 millones de parámetros. El modelo está orientado a la generación de texto en el dominio químico, concretamente a la manipulación de cadenas SMILES y a tareas de retrosíntesis, es decir, la descomposición de una molécula objetivo en precursores comerciales o intermedios sintetizables.
+Retro-LM-0.6B es un modelo de lenguaje especializado en retrosíntesis química, desarrollado por el usuario arun-elr y publicado en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo base Qwen/Qwen3-0.6B-Base, un transformer decoder-only de la familia Qwen3 con aproximadamente 596 millones de parámetros. El modelo está orientado a la generación de texto en el dominio químico, concretamente a la manipulación de cadenas SMILES y a tareas de retrosíntesis, es decir, la descomposición de una molécula objetivo en precursores comerciales o intermedios sintetizables.
 
 El problema que aborda es relevante en química computacional y descubrimiento de fármacos: la planificación retrosintética es un cuello de botella clásico que tradicionalmente requiere sistemas expertos basados en reglas o modelos especializados de mayor tamaño. Un modelo compacto de 0,6B parámetros permite desplegar asistencia química en entornos con recursos limitados, integrarse en pipelines de generación de moléculas y servir como componente de sistemas de razonamiento multi-paso sobre grafos moleculares.
 
-La relevancia actual del modelo es limitada por su escasa tracción (0 descargas, 0 likes en el momento de la consulta) y por el acceso restringido (gated), que exige aceptar condiciones en HuggingFace. La información pública disponible es mínima: no se detallan composición del dataset, número de tokens de entrenamiento ni resultados de benchmarks. La licencia Apache 2.0 facilita su uso comercial, pero la falta de documentación técnica limita su evaluación rigurosa.
+La relevancia actual del modelo es limitada por su escasa tracción (0 descargas, 0 likes en el momento de la consulta) y por el acceso restringido (gated), que exige aceptar condiciones en Hugging Face. La información pública disponible es mínima: no se detallan composición del dataset, número de tokens de entrenamiento ni resultados de benchmarks. La licencia Apache 2.0 facilita su uso comercial, pero la falta de documentación técnica limita su evaluación rigurosa.
 
 ## Especificaciones técnicas
 
@@ -78,12 +78,12 @@ La comparativa con alternativas especializadas en retrosíntesis no puede comple
 - Riesgo elevado de alucinación química: los modelos de lenguaje pequeños pueden generar SMILES sintácticamente válidos pero químicamente inviables; toda salida debe validarse con herramientas como RDKit.
 - Sesgos conocidos: no documentados, pero heredados del corpus de preentrenamiento de Qwen3-0.6B-Base.
 - Limitaciones de contexto e idioma: no disponibles; el modelo base Qwen3-0.6B tiene una ventana de contexto limitada en comparación con modelos mayores, lo que puede restringir rutas sintéticas largas.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede complicar la integración automatizada en pipelines.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede complicar la integración automatizada en pipelines.
 - Licencia Apache 2.0: permite uso comercial, pero el usuario debe verificar que el modelo base Qwen3-0.6B-Base y los datos de ajuste fino no impongan restricciones adicionales.
 - Sin tracción comunitaria: 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de validación por terceros.
 - No apto para producción sin evaluación previa: la ausencia de benchmarks y de documentación desaconseja su despliegue en entornos críticos sin una validación exhaustiva en el dominio objetivo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arun-elr/retro-lm-0.6b
+- Hugging Face: https://huggingface.co/arun-elr/retro-lm-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base

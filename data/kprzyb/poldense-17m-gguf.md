@@ -89,7 +89,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kprzyb/PolDense-17M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/kprzyb/PolDense-17M-GGUF
 - Modelo base: https://huggingface.co/OPI-PIB/PolDense-17M
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms

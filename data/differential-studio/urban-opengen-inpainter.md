@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo differential-studio/urban-opengen-inpainter es un repositorio publicado en HuggingFace por el usuario differential-studio bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). En el momento de redactar esta ficha, el repositorio no incluye documentacion tecnica: la model card unicamente contiene el campo de licencia, sin descripcion, sin ficha de uso y sin indicacion de pipeline. El identificador del modelo sugiere que se trata de un modelo orientado a tareas de inpainting (relleno o reconstruccion de regiones ausentes en una imagen), posiblemente aplicado a escenas urbanas, aunque esta interpretacion no esta confirmada por el autor.
+El modelo differential-studio/urban-opengen-inpainter es un repositorio publicado en Hugging Face por el usuario differential-studio bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). En el momento de redactar esta ficha, el repositorio no incluye documentacion tecnica: la model card unicamente contiene el campo de licencia, sin descripcion, sin ficha de uso y sin indicacion de pipeline. El identificador del modelo sugiere que se trata de un modelo orientado a tareas de inpainting (relleno o reconstruccion de regiones ausentes en una imagen), posiblemente aplicado a escenas urbanas, aunque esta interpretacion no esta confirmada por el autor.
 
 El repositorio presenta cero descargas y cero likes, y fue creado y actualizado en la misma marca temporal (2026-09-19T11:36:41.000Z), lo que indica que no ha habido iteraciones posteriores ni actividad de la comunidad. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto ni volumen de entrenamiento.
 
@@ -78,6 +78,6 @@ No disponible. La ausencia de datos sobre arquitectura, parametros y tarea impid
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/differential-studio/urban-opengen-inpainter
+- Hugging Face: https://huggingface.co/differential-studio/urban-opengen-inpainter
 - Licencia Creative Commons Attribution 4.0: https://creativecommons.org/licenses/by/4.0/
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

@@ -17,11 +17,11 @@ El artefacto ocupa unos 3 MB, se ejecuta en CPU y puntua miles de runs por segun
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica: entrada tabular de 27 caracteristicas por fila, sin ventana de contexto |
 | Tipos de cuantizacion | No aplica: no se distribuyen pesos en coma flotante cuantizables; el artefacto es un modelo serializado con skops |
-| Idiomas soportados | No aplica (clasificacion tabular); los metadatos de HuggingFace no declaran idiomas |
+| Idiomas soportados | No aplica (clasificacion tabular); los metadatos de Hugging Face no declaran idiomas |
 | Licencia | MIT |
 | Formato de pesos | skops (`model.skops`); el autor indica que no se distribuye fichero pickle |
 | Tarea (pipeline) | `tabular-classification` |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Version de scikit-learn requerida | 1.6.1 (fijada en la model card) |
 
 ## Arquitectura y entrenamiento
@@ -102,7 +102,7 @@ El autor proporciona dos alternativas evaluadas sobre el mismo dataset y la mism
 |---|---|---|---|---|---|
 | Regla p95 estatica | Regla heuristica sobre el p95 historico | 0,384 | 0,679 | 0,054 | Implementacion propia, sin dependencias |
 | Regresion logistica | Modelo lineal sobre las mismas 27 caracteristicas | 0,804 | 0,914 | 0,621 | Implementacion propia con scikit-learn, MIT |
-| sla-breach-early-warning | Gradient boosting por histogramas | 0,819 | 0,918 | 0,643 | MIT, disponible en HuggingFace |
+| sla-breach-early-warning | Gradient boosting por histogramas | 0,819 | 0,918 | 0,643 | MIT, disponible en Hugging Face |
 | XGBoost / LightGBM / CatBoost | Gradient boosting de proposito general | No disponible | No disponible | No disponible | Licencias Apache 2.0 / MIT / Apache 2.0; no se han publicado comparativas contra este modelo |
 | TabPFN | Transformer preentrenado para clasificacion tabular | No disponible | No disponible | No disponible | Licencia propia; no se han publicado comparativas contra este modelo |
 
@@ -126,8 +126,8 @@ La diferencia del modelo frente a la regresion logistica es de 0,015 en PR AUC, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/julianoxdd/sla-breach-early-warning
+- Modelo en Hugging Face: https://huggingface.co/julianoxdd/sla-breach-early-warning
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/julianoxdd/batch-sla-runs
 - Codigo de entrenamiento, evaluacion y tests: https://github.com/julianodutraa/sla-early-warning
 - Proyecto de alertas de SLA no relacionado (otro autor, mismo dominio): https://github.com/anasabidshaikh/sla-breach-alert
-- El resto de resultados de la busqueda web consultada corresponden a noticias sobre incidentes de seguridad en HuggingFace y OpenAI sin relacion con este modelo, por lo que no se incluyen como referencias tecnicas.
+- El resto de resultados de la busqueda web consultada corresponden a noticias sobre incidentes de seguridad en Hugging Face y OpenAI sin relacion con este modelo, por lo que no se incluyen como referencias tecnicas.

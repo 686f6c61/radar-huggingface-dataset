@@ -6,7 +6,7 @@ Muse Glimmer 30B 2026 Knowledge es un adaptador LoRA de tipo *knowledge update* 
 
 El adaptador pesa aproximadamente 1,7 GB en formato safetensors y se distribuye mediante la librería PEFT, por lo que requiere cargarse sobre los pesos BF16 del modelo base. El autor publica además los pesos fusionados en BF16 y versiones cuantizadas GGUF para llama.cpp, incluida una Q4_K_M de 16,9 GB y una IQ2_XXS de 7,96 GB. Su relevancia actual reside en que aborda uno de los problemas prácticos más habituales en despliegues de modelos abiertos: la obsolescencia del conocimiento factual y la tendencia a alucinar en lugar de declarar ignorancia.
 
-La ficha se basa exclusivamente en la model card del autor y en los metadatos de HuggingFace. No se dispone de información sobre la arquitectura interna del modelo base, el volumen de tokens de entrenamiento del adaptador ni detalles del dataset más allá de su identificador. Los resultados reportados proceden de evaluaciones internas del autor, con un único evaluador humano y sin protocolo ciego en la mayoría de los conjuntos.
+La ficha se basa exclusivamente en la model card del autor y en los metadatos de Hugging Face. No se dispone de información sobre la arquitectura interna del modelo base, el volumen de tokens de entrenamiento del adaptador ni detalles del dataset más allá de su identificador. Los resultados reportados proceden de evaluaciones internas del autor, con un único evaluador humano y sin protocolo ciego en la mayoría de los conjuntos.
 
 ## Especificaciones técnicas
 
@@ -104,8 +104,8 @@ Rendimiento de las cuantizaciones GGUF del adaptador fusionado:
 
 | Modelo | Parámetros | Contexto | Conocimiento 2026 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Muse Glimmer 30B 2026 Knowledge (este) | 30B (denso) | No disponible | ~70/100 en titulares | Apache 2.0 + Muse Model License | HuggingFace: adaptador, BF16 fusionado y GGUF |
-| Muse Glimmer 30B (base) | 30B (denso) | No disponible | 27/100 | Muse Model License | HuggingFace (meta-models) |
+| Muse Glimmer 30B 2026 Knowledge (este) | 30B (denso) | No disponible | ~70/100 en titulares | Apache 2.0 + Muse Model License | Hugging Face: adaptador, BF16 fusionado y GGUF |
+| Muse Glimmer 30B (base) | 30B (denso) | No disponible | 27/100 | Muse Model License | Hugging Face (meta-models) |
 | Qwen3.8 27B | 27B | No disponible | ≤7/100 | No disponible | No disponible |
 | Gemma 4 31B | 31B | No disponible | ≤7/100 (datos hasta enero de 2025) | No disponible | No disponible |
 | Granite 4.2 30B | 30B | No disponible | ≤7/100 | No disponible | No disponible |
@@ -128,7 +128,7 @@ En razonamiento, Qwen3.8 27B y Gemma 4 31B igualan o superan a este adaptador se
 
 ## Enlaces
 
-- HuggingFace (adaptador LoRA): https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-LoRA
+- Hugging Face (adaptador LoRA): https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-LoRA
 - Pesos fusionados BF16: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge
 - Ficheros GGUF para llama.cpp: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-Data

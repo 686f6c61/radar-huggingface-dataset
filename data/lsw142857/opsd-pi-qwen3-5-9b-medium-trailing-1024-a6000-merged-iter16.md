@@ -66,8 +66,8 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que no es posib
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged-Iter16
-- Perfil del autor en HuggingFace: https://huggingface.co/LSW142857
+- Repositorio Hugging Face: https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged-Iter16
+- Perfil del autor en Hugging Face: https://huggingface.co/LSW142857
 - Checkpoint similar (Strong-PI ckpt15): https://huggingface.co/LSW142857/Qwen3.5-9B-OPSD-PI-Strong-ckpt15
 - Pagina del modelo en FriendliAI: https://friendli.ai/models/LSW142857/Qwen3.5-9B-OPSD-PI-Medium-ckpt15
 - Modelo Qwen3.5:9b en Ollama: https://ollama.com/library/qwen3.5:9b

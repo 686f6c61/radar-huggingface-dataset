@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SleepyDevs/ocs-genai es un repositorio alojado en HuggingFace que no contiene pesos de un modelo entrenado ni documentación de arquitectura de red neuronal, sino un conjunto de artefactos de render generados por un pipeline de render en CPU. La propia model card lo describe como "ocs-genai render artifacts (v1 T5)" y lo enmarca como una vertical slice del caso de uso UC-5a, asociada al repositorio de GitHub puppybutleragent/ocs-genai, rama t_1c3dfbd5-render-pipeline, commit ea86cff.
+SleepyDevs/ocs-genai es un repositorio alojado en Hugging Face que no contiene pesos de un modelo entrenado ni documentación de arquitectura de red neuronal, sino un conjunto de artefactos de render generados por un pipeline de render en CPU. La propia model card lo describe como "ocs-genai render artifacts (v1 T5)" y lo enmarca como una vertical slice del caso de uso UC-5a, asociada al repositorio de GitHub puppybutleragent/ocs-genai, rama t_1c3dfbd5-render-pipeline, commit ea86cff.
 
 El contenido publicado consiste en renders de condicionamiento primario (clay_*.png) a 640x480 con supermuestreo 2x (SSAA), visualizaciones normalizadas de un pase de profundidad en float32 (depthviz_*.png, con los .npy de 32 bits asociados a cada RenderRecord) y una muestra de la puerta de rendimiento S2 (s2_bench_scene0.json). No se declara pipeline, licencia, idiomas soportados ni formato de pesos, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
@@ -100,7 +100,7 @@ No disponible. El repositorio no contiene un modelo entrenado con parámetros, c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SleepyDevs/ocs-genai
+- Repositorio en Hugging Face: https://huggingface.co/SleepyDevs/ocs-genai
 - Repositorio de GitHub referenciado en la model card: github:puppybutleragent/ocs-genai (identificador tal como aparece en la model card; URL pública no confirmada)
 - Rama indicada: t_1c3dfbd5-render-pipeline
 - Commit indicado: ea86cff

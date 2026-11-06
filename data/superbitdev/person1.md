@@ -103,7 +103,7 @@ La diferencia principal frente a las alternativas genericas es la especializacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SuperBitDev/person1
+- Modelo en Hugging Face: https://huggingface.co/SuperBitDev/person1
 - Origen declarado en la model card: `element_trainer/800e961b-eb64-4380-880c-f1ed67abd563` (referencia interna del servicio element_trainer de Roboflow)
 - Resultado de evaluacion referenciado: `benchmark/synthetic/1ada5b1e-38b8-4bdc-967a-d8a27b0e6afb.json` (ruta dentro del repositorio; sin metricas publicadas)
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los enlaces recuperados corresponden a utilidades de informacion de sistema (HWiNFO, CPU-Z, PC Info) y no guardan relacion con el modelo. No se dispone de paper, blog, repositorio de codigo ni demo asociados.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Minervaaa/AblationDance es un repositorio de modelo publicado en HuggingFace por el usuario Minervaaa. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card no contiene ninguna descripcion tecnica: el unico contenido es la declaracion de licencia `apache-2.0`. No hay informacion sobre arquitectura, numero de parametros, datos de entrenamiento ni tarea objetivo.
+Minervaaa/AblationDance es un repositorio de modelo publicado en Hugging Face por el usuario Minervaaa. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card no contiene ninguna descripcion tecnica: el unico contenido es la declaracion de licencia `apache-2.0`. No hay informacion sobre arquitectura, numero de parametros, datos de entrenamiento ni tarea objetivo.
 
 El unico dato cuantitativo disponible es el tamano del repositorio, 251,9 GB. Ese volumen es compatible con pesos de gran tamano o con un repositorio que agrupa multiples checkpoints, formatos o estados de entrenamiento, pero no permite deducir el numero de parametros ni si se trata de un transformer denso, un modelo MoE o una arquitectura hibrida.
 
@@ -85,7 +85,7 @@ No disponible. No se ha identificado ningun modelo comparable, ya que se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Minervaaa/AblationDance
+- Repositorio en Hugging Face: https://huggingface.co/Minervaaa/AblationDance
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper, blog, repositorio de codigo o demo: no disponibles.
 - Resultados de busqueda web: sin resultados relevantes para el modelo (los enlaces recuperados correspondian a un comercio de buceo en Berlin y se han descartado).

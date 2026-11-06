@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GeoNUSAF TC-SegFormer (no_sampler) es un modelo de segmentación semántica para imágenes de teledetección, desarrollado por sugam24, que clasifica el uso del suelo en el valle de Katmandú (Nepal) en seis categorías: residencial, carretera, río, bosque, suelo no utilizado y agrícola. Se basa en la arquitectura SegFormer con backbone `nvidia/segformer-b0-finetuned-ade-512-512` y está entrenado sobre parches de 512x512 píxeles a una resolución de 0.586 m/px. El modelo forma parte de un estudio de ablación (variante `no_sampler`) dentro de un esquema de validación cruzada por bloques (fold 1 de 3). Su relevancia radica en ofrecer una solución ligera y específica para cartografía de uso de suelo en entornos urbanos densos, con métricas de validación publicadas (mIoU 0.4805). No se dispone de licencia, idiomas ni pipeline declarados en la ficha de HuggingFace.
+GeoNUSAF TC-SegFormer (no_sampler) es un modelo de segmentación semántica para imágenes de teledetección, desarrollado por sugam24, que clasifica el uso del suelo en el valle de Katmandú (Nepal) en seis categorías: residencial, carretera, río, bosque, suelo no utilizado y agrícola. Se basa en la arquitectura SegFormer con backbone `nvidia/segformer-b0-finetuned-ade-512-512` y está entrenado sobre parches de 512x512 píxeles a una resolución de 0.586 m/px. El modelo forma parte de un estudio de ablación (variante `no_sampler`) dentro de un esquema de validación cruzada por bloques (fold 1 de 3). Su relevancia radica en ofrecer una solución ligera y específica para cartografía de uso de suelo en entornos urbanos densos, con métricas de validación publicadas (mIoU 0.4805). No se dispone de licencia, idiomas ni pipeline declarados en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace: sugam24/geonusaf-tcsegformer-block-fold1-no_sampler](https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold1-no_sampler)
+- [Hugging Face: sugam24/geonusaf-tcsegformer-block-fold1-no_sampler](https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold1-no_sampler)
 - [Variante no_cldice](https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold1-no_cldice)
 - [Variante fold2](https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold2)
 - [Variante no_detail](https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold1-no_detail)

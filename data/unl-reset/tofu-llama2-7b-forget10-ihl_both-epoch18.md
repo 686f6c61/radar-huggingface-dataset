@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch18` (este) | 6.74B | 4096 | Unlearning TOFU forget10, época 18 | llama2 | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_llama2-7b` | 6.74B | 4096 | Modelo base ajustado en TOFU sin olvido | llama2 | HuggingFace (referencia del benchmark) |
-| `NousResearch/Llama-2-7b-chat-hf` | 6.74B | 4096 | Chat generalista en inglés | llama2 | HuggingFace, ampliamente usado |
-| `meta-llama/Llama-2-7b-hf` | 6.74B | 4096 | Modelo base preentrenado | llama2 | HuggingFace |
+| `unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch18` (este) | 6.74B | 4096 | Unlearning TOFU forget10, época 18 | llama2 | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_llama2-7b` | 6.74B | 4096 | Modelo base ajustado en TOFU sin olvido | llama2 | Hugging Face (referencia del benchmark) |
+| `NousResearch/Llama-2-7b-chat-hf` | 6.74B | 4096 | Chat generalista en inglés | llama2 | Hugging Face, ampliamente usado |
+| `meta-llama/Llama-2-7b-hf` | 6.74B | 4096 | Modelo base preentrenado | llama2 | Hugging Face |
 
 No se dispone de datos de rendimiento comparado (forget quality, model utility) en la información proporcionada para establecer una comparación cuantitativa con otras variantes de unlearning sobre TOFU (por ejemplo, NPO, GradDiff o variantes de la propia serie `unl-reset`). La comparación debe hacerse ejecutando la evaluación estándar de TOFU sobre cada checkpoint.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparado (forget quality, model utility) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch18
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch18
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicialización de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Modelo original Llama 2 7B: https://huggingface.co/meta-llama/Llama-2-7b-hf

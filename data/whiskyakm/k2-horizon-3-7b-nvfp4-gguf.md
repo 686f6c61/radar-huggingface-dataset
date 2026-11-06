@@ -108,7 +108,7 @@ La unica comparativa con datos es la publicada por el autor frente a Qwen3.5-4B,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WhiskyAKM/K2-Horizon-3.7B-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/WhiskyAKM/K2-Horizon-3.7B-NVFP4-GGUF
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-3.7B
 - Blog de IFM sobre la familia K2 Horizon: https://ifm.ai/blog/k2/
 - llama.cpp: https://github.com/ggml-org/llama.cpp

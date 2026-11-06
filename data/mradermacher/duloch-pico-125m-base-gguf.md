@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Duloch-Pico-125M-Base-GGUF es una version cuantizada en formato GGUF del modelo de lenguaje causal Duloch-Pico-125M-Base, desarrollado originalmente por pdjamez. La cuantizacion ha sido realizada por el equipo de mradermacher, especializado en la conversion de modelos de HuggingFace a formatos de inferencia eficientes. El modelo pertenece a la familia de arquitecturas tipo Llama, tal como indican las etiquetas del repositorio, y cuenta con 125.095.680 parametros en total.
+Duloch-Pico-125M-Base-GGUF es una version cuantizada en formato GGUF del modelo de lenguaje causal Duloch-Pico-125M-Base, desarrollado originalmente por pdjamez. La cuantizacion ha sido realizada por el equipo de mradermacher, especializado en la conversion de modelos de Hugging Face a formatos de inferencia eficientes. El modelo pertenece a la familia de arquitecturas tipo Llama, tal como indican las etiquetas del repositorio, y cuenta con 125.095.680 parametros en total.
 
 Se trata de un modelo base, no afinado para instrucciones ni chat, entrenado con el dataset HuggingFaceFW/fineweb, una coleccion de texto web en ingles. Su tamano reducido lo hace adecuado para entornos con recursos limitados, como CPU o dispositivos de low power, gracias a la cuantizacion GGUF. Sin embargo, al ser un modelo base y no tener datos publicados sobre longitud de contexto ni benchmarks, su uso inmediato en produccion requiere precaucion y un afinado posterior.
 
@@ -21,7 +21,7 @@ Se trata de un modelo base, no afinado para instrucciones ni chat, entrenado con
 
 ## Arquitectura y entrenamiento
 
-Duloch-Pico-125M-Base es un transformer causal con arquitectura de la familia Llama, segun las etiquetas del repositorio en HuggingFace. Se trata de un modelo base, es decir, no ha recibido afinado por instrucciones ni alineacion mediante RLHF o DPO. El entrenamiento se ha realizado con el dataset HuggingFaceFW/fineweb, un corpus de texto web en ingles. No se proporciona informacion publica sobre el numero de tokens utilizados, la composicion exacta del dataset ni la metodologia de entrenamiento.
+Duloch-Pico-125M-Base es un transformer causal con arquitectura de la familia Llama, segun las etiquetas del repositorio en Hugging Face. Se trata de un modelo base, es decir, no ha recibido afinado por instrucciones ni alineacion mediante RLHF o DPO. El entrenamiento se ha realizado con el dataset HuggingFaceFW/fineweb, un corpus de texto web en ingles. No se proporciona informacion publica sobre el numero de tokens utilizados, la composicion exacta del dataset ni la metodologia de entrenamiento.
 
 La innovacion tecnica destacable no se documenta en la informacion disponible. La unica transformacion aplicada al modelo original es la cuantizacion a formato GGUF, que permite reducir el peso y facilitar la ejecucion con herramientas como llama.cpp u Ollama.
 
@@ -71,6 +71,6 @@ No se dispone de datos comparativos con modelos de la misma categoria en la info
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Duloch-Pico-125M-Base-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Duloch-Pico-125M-Base-GGUF
 - Modelo base original: https://huggingface.co/pdjamez/Duloch-Pico-125M-Base
 - Perfil de mradermacher: https://huggingface.co/mradermacher

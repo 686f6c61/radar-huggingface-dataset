@@ -76,6 +76,6 @@ No hay comparativas directas con otros finetunes de estilo (como MythoMax o mode
 
 ## Enlaces
 
-- [Página de HuggingFace del modelo](https://huggingface.co/vwdubb/Gemma-4-31B-StyleTune-FP8)
+- [Página de Hugging Face del modelo](https://huggingface.co/vwdubb/Gemma-4-31B-StyleTune-FP8)
 - [Modelo base StyleTune (Gryphe)](https://huggingface.co/Gryphe/Gemma-4-31B-StyleTune)
 - [Documentación de Gemma 4 (Google DeepMind)](https://deepmind.google/models/gemma/gemma-4/)

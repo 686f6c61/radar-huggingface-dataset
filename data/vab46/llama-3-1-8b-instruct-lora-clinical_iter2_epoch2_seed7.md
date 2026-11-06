@@ -25,7 +25,7 @@ Datos adicionales declarados: dimension de salida (hidden size) de 4096, modalid
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer decoder autoregresivo de 8.000 millones de parametros con 4096 dimensiones ocultas y una ventana de contexto de 131.072 tokens. Sobre el se aplica un adaptador LoRA entrenado con la libreria PEFT, de modo que la inferencia requiere cargar primero el modelo base (meta-llama/Llama-3.1-8B-Instruct, sujeto a aceptacion de licencia en HuggingFace) y despues superponer los pesos del adaptador. No se especifica el rango del LoRA, los modulos objetivo ni el numero exacto de parametros entrenables.
+El modelo base es un transformer decoder autoregresivo de 8.000 millones de parametros con 4096 dimensiones ocultas y una ventana de contexto de 131.072 tokens. Sobre el se aplica un adaptador LoRA entrenado con la libreria PEFT, de modo que la inferencia requiere cargar primero el modelo base (meta-llama/Llama-3.1-8B-Instruct, sujeto a aceptacion de licencia en Hugging Face) y despues superponer los pesos del adaptador. No se especifica el rango del LoRA, los modulos objetivo ni el numero exacto de parametros entrenables.
 
 El ajuste se realizo sobre el dataset "iter2 anchor-context-groundTruth_junkHandled", vinculado a ensayos clinicos, con ejemplos mapeados a la plantilla de chat del modelo base. Los hiperparametros declarados son: tamano de batch de entrenamiento 4, pasos de acumulacion de gradiente 4 (batch efectivo de 16), weight decay 0,01, learning rate 0,00025, scheduler lineal y directorio de salida /kaggle/working/rag3_llama_lora, lo que indica que el entrenamiento se ejecuto en un entorno Kaggle. Existe una discrepancia documental relevante: la model card indica "Total Epochs: 1", mientras que el nombre del repositorio indica "epoch2". No se documenta el uso de RLHF, DPO u otra fase de alineacion adicional mas alla del ajuste supervisado sobre el modelo Instruct. Tampoco se indica el numero de tokens de entrenamiento ni la composicion detallada del dataset.
 
@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento del modelo ajustado, por lo que la compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos publicados |
 |---|---|---|---|---|---|
-| vab46/llama-3.1-8b-instruct-lora-clinical_iter2_epoch2_seed7 | 8B (base) + adaptador LoRA | 131.072 tokens (heredado del base) | llama3.1 | Adaptador PEFT en HuggingFace, 0 descargas | Ninguno |
+| vab46/llama-3.1-8b-instruct-lora-clinical_iter2_epoch2_seed7 | 8B (base) + adaptador LoRA | 131.072 tokens (heredado del base) | llama3.1 | Adaptador PEFT en Hugging Face, 0 descargas | Ninguno |
 | meta-llama/Llama-3.1-8B-Instruct | 8B | 131.072 tokens | Llama 3.1 Community License | Modelo base publico | Model card con evaluaciones de Meta |
 | Otros modelos de dominio clinico basados en Llama (por ejemplo variantes de 7-8B orientadas a salud) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -88,7 +88,7 @@ No se han aportado datos que permitan comparar calidad, precision clinica ni com
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/vab46/llama-3.1-8b-instruct-lora-clinical_iter2_epoch2_seed7
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/vab46/llama-3.1-8b-instruct-lora-clinical_iter2_epoch2_seed7
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Dataset de entrenamiento referenciado en la model card: https://huggingface.co/vab46/llama-3.1-8b-instruct-lora-clinical_iter2/tree/main/vab46/Clinical_trials_anchor-contextORpositive-ground-truth_LLM_LORA-junk_handled_ft
 - Documentacion de Transformers: https://huggingface.co/docs/transformers/index

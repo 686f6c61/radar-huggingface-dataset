@@ -17,7 +17,7 @@ Se trata de un artefacto con 0 descargas y 0 likes en el momento de redactar est
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada; la model card solo advierte de degradacion a partir de 8.000 tokens |
 | Tipos de cuantizacion | 8 bits (este repositorio); existe una variante de 16 bits del mismo autor |
-| Idiomas soportados | no disponible (el campo de idiomas de la ficha de HuggingFace aparece vacio) |
+| Idiomas soportados | no disponible (el campo de idiomas de la ficha de Hugging Face aparece vacio) |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (formato MLX; requiere Apple Silicon) |
 | Libreria | mlx (mlx-lm 0.31.3) |
@@ -84,9 +84,9 @@ No se han publicado resultados de benchmarks de calidad en la informacion dispon
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|---|
-| SirSahOl/Qwen3-0.6B-chat-mlx-8bit | 596.049.920 | 8 bits | no disponible | apache-2.0 | HuggingFace, formato MLX | 68,33 tok/s, 14,64 ms TTFT, 833 MB pico (M1, 256 tokens) |
-| SirSahOl/Qwen3-0.6B-chat-mlx-16bit | no disponible (mismo modelo base) | 16 bits | no disponible | apache-2.0 | HuggingFace, formato MLX | 39,94 tok/s, 25,04 ms TTFT, 343,1 MB pico (M1, 256 tokens) |
-| Qwen/Qwen3-0.6B (modelo base) | 596.049.920 (segun este repositorio) | sin cuantizar | no disponible | apache-2.0 | HuggingFace | no disponible en la informacion proporcionada |
+| SirSahOl/Qwen3-0.6B-chat-mlx-8bit | 596.049.920 | 8 bits | no disponible | apache-2.0 | Hugging Face, formato MLX | 68,33 tok/s, 14,64 ms TTFT, 833 MB pico (M1, 256 tokens) |
+| SirSahOl/Qwen3-0.6B-chat-mlx-16bit | no disponible (mismo modelo base) | 16 bits | no disponible | apache-2.0 | Hugging Face, formato MLX | 39,94 tok/s, 25,04 ms TTFT, 343,1 MB pico (M1, 256 tokens) |
+| Qwen/Qwen3-0.6B (modelo base) | 596.049.920 (segun este repositorio) | sin cuantizar | no disponible | apache-2.0 | Hugging Face | no disponible en la informacion proporcionada |
 | Otras alternativas de ~0,5-1B (por ejemplo Llama 3.2 1B o Gemma 3 1B) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Solo se dispone de datos comparables entre las dos variantes del propio autor. Cualquier comparacion con otras familias de modelos de tamano similar requeriria datos que no figuran en la informacion proporcionada.

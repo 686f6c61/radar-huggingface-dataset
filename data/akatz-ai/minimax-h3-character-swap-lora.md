@@ -86,7 +86,7 @@ No disponible. La informacion proporcionada no incluye resultados frente a otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akatz-ai/MiniMax-H3-Character-Swap-LoRA
+- Modelo en Hugging Face: https://huggingface.co/akatz-ai/MiniMax-H3-Character-Swap-LoRA
 - Dataset de entrenamiento: https://huggingface.co/datasets/akatz-ai/H3-Character-Swap-v1
 - Modelo base: https://huggingface.co/Comfy-Org/MiniMax-H3
 - Asistente de entrenamiento (frozen Ref2VA training assistant): https://huggingface.co/ostris/minimax_h3_training_adapter

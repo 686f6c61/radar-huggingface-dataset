@@ -38,7 +38,7 @@ No se proporcionan datos sobre el entrenamiento: el checkpoint incluido es una i
 - **Educación en arquitecturas de atención**: estudiantes e investigadores pueden desensamblar el código para entender cómo funciona la atención lineal y la fusión por cross-attention en Perceiver, sin la complejidad de modelos grandes.
 - **Experimentos controlados de clasificación**: como punto de partida para entrenar un clasificador pequeño en un dataset específico, comparando su rendimiento con baselines de capacidad similar.
 - **Validación de integración con safetensors**: útil para probar la carga y guardado de pesos en formato safetensors dentro de un framework personalizado.
-- **Desarrollo de adaptadores para APIs genéricas**: dado que es una implementación personalizada, sirve para crear adaptadores que permitan usar modelos Perceiver con librerías estándar de HuggingFace.
+- **Desarrollo de adaptadores para APIs genéricas**: dado que es una implementación personalizada, sirve para crear adaptadores que permitan usar modelos Perceiver con librerías estándar de Hugging Face.
 - **Benchmarking de recursos**: al ser extremadamente ligero, permite medir el overhead de frameworks de inferencia o entrenamiento en entornos con recursos limitados.
 
 ## Benchmarks y rendimiento
@@ -68,5 +68,5 @@ No se dispone de información sobre modelos comparables en el mismo repositorio 
 
 ## Enlaces
 
-- [HuggingFace: ywivanov36/classification-exp](https://huggingface.co/ywivanov36/classification-exp)
+- [Hugging Face: ywivanov36/classification-exp](https://huggingface.co/ywivanov36/classification-exp)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos oficiales) en la búsqueda web.

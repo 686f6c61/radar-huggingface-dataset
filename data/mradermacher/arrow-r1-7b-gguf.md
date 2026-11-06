@@ -27,7 +27,7 @@ La relevancia de esta ficha reside en que permite ejecutar un modelo de 7,6B con
 
 No se dispone de información detallada sobre la arquitectura interna del modelo base ParadiseYu/ArrowGEV-7B. Por el tamaño de parámetros (7,6B) y el uso declarado (conversacional, con soporte multimodal vía ficheros `mmproj`), se trata con alta probabilidad de un transformer decoder-only con un proyector visual acoplado, en la línea de arquitecturas tipo LLaVA o Qwen-VL. La presencia de ficheros `mmproj` en el repositorio GGUF confirma que el modelo procesa entradas de imagen además de texto.
 
-No se han publicado en la información disponible datos sobre el número de tokens de entrenamiento, la composición del dataset, la existencia de RLHF/DPO, ni innovaciones técnicas como decodificación especulativa o atención lineal. El sufijo "R1" en el nombre del repositorio podría indicar un proceso de destilación de razonamiento al estilo DeepSeek-R1, pero esto es una inferencia no confirmada. Las cuantizaciones son estáticas (quantize_version 2, output_tensor_quantised 1, convert_type hf), generadas por mradermacher a partir de los pesos en formato HuggingFace del modelo base.
+No se han publicado en la información disponible datos sobre el número de tokens de entrenamiento, la composición del dataset, la existencia de RLHF/DPO, ni innovaciones técnicas como decodificación especulativa o atención lineal. El sufijo "R1" en el nombre del repositorio podría indicar un proceso de destilación de razonamiento al estilo DeepSeek-R1, pero esto es una inferencia no confirmada. Las cuantizaciones son estáticas (quantize_version 2, output_tensor_quantised 1, convert_type hf), generadas por mradermacher a partir de los pesos en formato Hugging Face del modelo base.
 
 ## Capacidades
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Arrow-R1-7B-GGUF | 7,6B | No disponible | No disponible | GGUF | Sí (mmproj) | HuggingFace |
-| Mistral-7B-Instruct (GGUF) | 7,2B | 32k | Apache 2.0 | GGUF, safetensors | No | HuggingFace, Ollama |
-| Qwen2.5-7B-Instruct (GGUF) | 7,6B | 128k | Apache 2.0 | GGUF, safetensors | No | HuggingFace, Ollama |
-| LLaVA-1.5-7B (GGUF) | 7B | 4k | LLaMA 2 (uso comercial restringido) | GGUF, safetensors | Sí | HuggingFace |
+| Arrow-R1-7B-GGUF | 7,6B | No disponible | No disponible | GGUF | Sí (mmproj) | Hugging Face |
+| Mistral-7B-Instruct (GGUF) | 7,2B | 32k | Apache 2.0 | GGUF, safetensors | No | Hugging Face, Ollama |
+| Qwen2.5-7B-Instruct (GGUF) | 7,6B | 128k | Apache 2.0 | GGUF, safetensors | No | Hugging Face, Ollama |
+| LLaVA-1.5-7B (GGUF) | 7B | 4k | LLaMA 2 (uso comercial restringido) | GGUF, safetensors | Sí | Hugging Face |
 
 La comparativa es aproximada: no se dispone de benchmarks del modelo evaluado, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad. Mistral-7B-Instruct y Qwen2.5-7B-Instruct ofrecen licencias permisivas y contextos documentados, mientras que Arrow-R1-7B no declara licencia ni longitud de contexto, lo que supone una desventaja significativa para uso en producción. LLaVA-1.5-7B es el comparable multimodal más cercano por tamaño.
 

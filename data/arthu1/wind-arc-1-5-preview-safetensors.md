@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wind Arc 1.5 Preview — SafeTensors es una conversion de formato del checkpoint `North-ML1/wind-arc-1-5-preview`, publicada por el usuario `arthu1` en HuggingFace. Se trata de un transformer decoder-only de 173.249.280 parametros (173,25 M) con 24 capas, 768 dimensiones ocultas, 12 cabezas de atencion y 3 cabezas KV (atencion con consultas agrupadas, GQA), dimension FFN de 2.048, vocabulario de 32.000 tokens y una longitud de contexto de tan solo 512 tokens.
+Wind Arc 1.5 Preview — SafeTensors es una conversion de formato del checkpoint `North-ML1/wind-arc-1-5-preview`, publicada por el usuario `arthu1` en Hugging Face. Se trata de un transformer decoder-only de 173.249.280 parametros (173,25 M) con 24 capas, 768 dimensiones ocultas, 12 cabezas de atencion y 3 cabezas KV (atencion con consultas agrupadas, GQA), dimension FFN de 2.048, vocabulario de 32.000 tokens y una longitud de contexto de tan solo 512 tokens.
 
 El aporte de este repositorio es exclusivamente de formato: convierte el fichero original `windarc15.pt` a `model.safetensors` con 218 tensores, verificando que cada tensor recargado coincide bit a bit con el origen. No modifica el comportamiento del modelo ni anade pesos nuevos. La licencia es MIT, heredada del repositorio fuente.
 

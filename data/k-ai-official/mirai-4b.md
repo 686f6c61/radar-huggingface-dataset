@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MIRAI-4B es un modelo de lenguaje publicado en HuggingFace por la organizacion K-Ai-Official bajo licencia Apache 2.0. La unica informacion verificable disponible en el momento de redactar esta ficha es su identificador, su licencia y la fecha de creacion del repositorio (1 de noviembre de 2026). La model card publicada no contiene descripcion tecnica, arquitectura, datos de entrenamiento ni casos de uso; se limita a declarar la licencia Apache 2.0.
+MIRAI-4B es un modelo de lenguaje publicado en Hugging Face por la organizacion K-Ai-Official bajo licencia Apache 2.0. La unica informacion verificable disponible en el momento de redactar esta ficha es su identificador, su licencia y la fecha de creacion del repositorio (1 de noviembre de 2026). La model card publicada no contiene descripcion tecnica, arquitectura, datos de entrenamiento ni casos de uso; se limita a declarar la licencia Apache 2.0.
 
 El nombre del modelo sugiere un tamano de aproximadamente 4.000 millones de parametros, pero este dato no esta confirmado en la documentacion oficial. No se dispone de informacion sobre arquitectura, longitud de contexto, idiomas soportados, proceso de entrenamiento ni resultados de evaluacion. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que indica que el modelo es de publicacion muy reciente y sin adopcion documentada.
 
-Dada la ausencia de especificaciones tecnicas, esta ficha recoge exclusivamente los datos confirmados y marca explicitamente como "no disponible" cualquier parametro no documentado. Se recomienda a los lectores consultar directamente el repositorio de HuggingFace para obtener informacion actualizada antes de evaluar el modelo para uso en produccion.
+Dada la ausencia de especificaciones tecnicas, esta ficha recoge exclusivamente los datos confirmados y marca explicitamente como "no disponible" cualquier parametro no documentado. Se recomienda a los lectores consultar directamente el repositorio de Hugging Face para obtener informacion actualizada antes de evaluar el modelo para uso en produccion.
 
 ## Especificaciones tecnicas
 
@@ -87,5 +87,5 @@ La comparacion de rendimiento, contexto efectivo y capacidades con estos modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/K-Ai-Official/MIRAI-4B
+- Repositorio Hugging Face: https://huggingface.co/K-Ai-Official/MIRAI-4B
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativos en la información proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SicariusSicariiStuff/Impish_Mind_8B
+- Modelo en Hugging Face: https://huggingface.co/SicariusSicariiStuff/Impish_Mind_8B
 - Modelo base: https://huggingface.co/ruliad/deepthought-8b-llama-v0.01-alpha
 - GGUF estáticos: https://huggingface.co/SicariusSicariiStuff/Impish_Mind_8B_GGUF
 - GGUF iMatrix: https://huggingface.co/SicariusSicariiStuff/Impish_Mind_8B_iMatrix

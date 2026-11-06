@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario FBNVJTASDWQD el 16 de septiembre de 2026, con licencia MIT y cero descargas y cero likes en el momento de la consulta. La ficha tecnica de HuggingFace declara la libreria `transformers`, framework `pytorch`, arquitectura `bert`, pipeline `feature-extraction`, compatibilidad con endpoints y un tamano de repositorio de 0,0 GB, lo que sugiere que no se han subido pesos al repositorio.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario FBNVJTASDWQD el 16 de septiembre de 2026, con licencia MIT y cero descargas y cero likes en el momento de la consulta. La ficha tecnica de Hugging Face declara la libreria `transformers`, framework `pytorch`, arquitectura `bert`, pipeline `feature-extraction`, compatibilidad con endpoints y un tamano de repositorio de 0,0 GB, lo que sugiere que no se han subido pesos al repositorio.
 
 Existe una contradiccion importante entre los metadatos de la plataforma y la model card. Los metadatos describen un encoder BERT para extraccion de caracteristicas, mientras que la model card describe un supuesto modelo de razonamiento conversacional con modo de pensamiento, function calling, plantillas para subida de ficheros, busqueda web con citas y una mejora declarada en AIME 2025 desde el 70 % al 87,5 % de precision respecto a una version anterior. La model card no aporta nombre real del modelo, numero de parametros, longitud de contexto ni detalles de arquitectura.
 
@@ -25,7 +25,7 @@ Otros metadatos: ID `FBNVJTASDWQD/MyAwesomeModel-TestRepo`, pipeline `feature-ex
 
 ## Arquitectura y entrenamiento
 
-Los metadatos de HuggingFace apuntan a una arquitectura BERT orientada a extraccion de caracteristicas, mientras que la model card describe un modelo generativo de razonamiento con una actualizacion de version que "mejora la profundidad de razonamiento y las capacidades de inferencia" mediante mayor uso de recursos de computo y "mecanismos de optimizacion algoritmica" durante el post-entrenamiento. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras.
+Los metadatos de Hugging Face apuntan a una arquitectura BERT orientada a extraccion de caracteristicas, mientras que la model card describe un modelo generativo de razonamiento con una actualizacion de version que "mejora la profundidad de razonamiento y las capacidades de inferencia" mediante mayor uso de recursos de computo y "mecanismos de optimizacion algoritmica" durante el post-entrenamiento. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras.
 
 La unica cifra concreta de entrenamiento o inferencia es la profundidad de razonamiento: en el conjunto AIME, la version anterior consumia 12K tokens por pregunta y la version actual promedia 23K tokens por pregunta. La model card menciona tambien una reduccion de la tasa de alucinacion y una mejora en el soporte de function calling, pero sin cuantificar. No se aporta informacion sobre tokenizador (salvo que MyAwesomeModel-Small comparte tokenizador con el modelo principal) ni sobre innovaciones tipo atencion lineal o decodificacion especulativa.
 
@@ -95,7 +95,7 @@ No disponible. La model card compara contra entradas anonimizadas (Model1, Model
 
 ## Limitaciones y advertencias
 
-- Contradiccion entre los metadatos de HuggingFace (BERT, feature-extraction) y la model card (modelo generativo de razonamiento). Cualquiera de las dos descripciones puede ser incorrecta.
+- Contradiccion entre los metadatos de Hugging Face (BERT, feature-extraction) y la model card (modelo generativo de razonamiento). Cualquiera de las dos descripciones puede ser incorrecta.
 - El repositorio se llama "MyAwesomeModel-TestRepo" y registra 0 descargas y 0 likes, lo que sugiere que se trata de un espacio de prueba.
 - El tamano declarado es de 0,0 GB, por lo que no hay pesos disponibles para descarga ni uso efectivo.
 - Los benchmarks no identifican los conjuntos de evaluacion ni los modelos de comparacion, por lo que sus valores no son reproducibles ni auditables.
@@ -107,7 +107,7 @@ No disponible. La model card compara contra entradas anonimizadas (Model1, Model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FBNVJTASDWQD/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/FBNVJTASDWQD/MyAwesomeModel-TestRepo
 - Codigo local: la model card remite a un repositorio de codigo, pero no se incluye la URL.
 - Web oficial de chat y API: mencionada en la model card, sin URL disponible.
 - Paper: no disponible.

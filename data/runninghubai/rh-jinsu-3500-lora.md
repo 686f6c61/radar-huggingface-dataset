@@ -2,9 +2,9 @@
 
 ## Resumen
 
-rh-jinsu-3500-lora es un adaptador LoRA para edicion de imagen (pipeline image-text-to-image) publicado en HuggingFace por RunningHubAI, la cuenta de la plataforma RunningHub. No se trata de un modelo de lenguaje ni de un modelo completo: es un fichero de pesos adicionales (`jinsu3500.safetensors`, 218 MiB) que se carga sobre un modelo base para modificar su comportamiento generativo. La model card indica que esta afinado a partir de "krea2", del que no se aportan mas especificaciones tecnicas.
+rh-jinsu-3500-lora es un adaptador LoRA para edicion de imagen (pipeline image-text-to-image) publicado en Hugging Face por RunningHubAI, la cuenta de la plataforma RunningHub. No se trata de un modelo de lenguaje ni de un modelo completo: es un fichero de pesos adicionales (`jinsu3500.safetensors`, 218 MiB) que se carga sobre un modelo base para modificar su comportamiento generativo. La model card indica que esta afinado a partir de "krea2", del que no se aportan mas especificaciones tecnicas.
 
-El modelo esta pensado para ejecutarse en ComfyUI, en la propia plataforma RunningHub o en HuggingFace, y su autoria se atribuye al usuario @Maksim de RunningHub. El repositorio tiene un tamano total de 0,2 GB y, en el momento de la consulta, registra 0 descargas y 0 likes, por lo que se trata de una publicacion reciente y sin validacion comunitaria.
+El modelo esta pensado para ejecutarse en ComfyUI, en la propia plataforma RunningHub o en Hugging Face, y su autoria se atribuye al usuario @Maksim de RunningHub. El repositorio tiene un tamano total de 0,2 GB y, en el momento de la consulta, registra 0 descargas y 0 likes, por lo que se trata de una publicacion reciente y sin validacion comunitaria.
 
 Su relevancia practica es limitada a efectos de evaluacion: no hay datos publicos de entrenamiento, dataset, tecnicas de ajuste, benchmarks ni licencia explicita. Ademas, el campo de descripcion de la model card contiene texto de relleno ("ewrd"), lo que indica que la documentacion no fue completada por el autor. Cualquier uso en produccion exige verificar primero el modelo base "krea2" y su licencia upstream.
 
@@ -82,7 +82,7 @@ No disponible. La informacion proporcionada no incluye otros LoRA de edicion de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-jinsu-3500-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-jinsu-3500-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2103575090297602050
 - Pagina del autor (@Maksim): https://www.runninghub.ai/user-center/2103235040795791362
 - RunningHub (internacional): https://www.runninghub.ai

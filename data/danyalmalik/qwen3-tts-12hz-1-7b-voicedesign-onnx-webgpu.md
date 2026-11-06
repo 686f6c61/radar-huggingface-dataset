@@ -96,7 +96,7 @@ No se dispone de datos en la información proporcionada para comparar con otras 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/danyalmalik/Qwen3-TTS-12Hz-1.7B-VoiceDesign-ONNX-WebGPU
+- Repositorio Hugging Face: https://huggingface.co/danyalmalik/Qwen3-TTS-12Hz-1.7B-VoiceDesign-ONNX-WebGPU
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign
 - Decodificador de codec ONNX (dependencia): https://huggingface.co/danyalmalik/Qwen3-TTS-Tokenizer-12Hz-ONNX-WebGPU
 - Repositorio de Quick Inference (script de exportación `tools/export/export_qwen3_tts.py`): https://github.com/mdanyalmalik/quick-inf

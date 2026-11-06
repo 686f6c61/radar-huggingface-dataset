@@ -69,7 +69,7 @@ Las métricas se calculan en la época de mínima pérdida de validación (époc
 
 | Modelo | Parámetros | Contexto/entrada | Accuracy en Galaxy10 DECaLS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vit-large-patch32-384-galaxy10-decals-head-v2 | 305,6 M | 384×384 px | 55,64 % (test) | Apache 2.0 | HuggingFace |
+| vit-large-patch32-384-galaxy10-decals-head-v2 | 305,6 M | 384×384 px | 55,64 % (test) | Apache 2.0 | Hugging Face |
 | Otros backbones del mismo benchmark (39 restantes) | variable | variable | no disponible en esta ficha | variable | colección *Vision Foundation Models Benchmark* |
 | Modelos especializados en morfología galáctica (p. ej. Zoobot, Galaxy Zoo) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -88,7 +88,7 @@ No se dispone en la información proporcionada de resultados numéricos de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/vit-large-patch32-384-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/vit-large-patch32-384-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/google/vit-large-patch32-384
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de runs del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

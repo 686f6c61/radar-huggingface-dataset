@@ -73,7 +73,7 @@ No se dispone de datos comparativos de rendimiento cuantitativo entre estos mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mars2titan/trace-c-conv-ae-baseline
+- Modelo en Hugging Face: https://huggingface.co/mars2titan/trace-c-conv-ae-baseline
 - Repositorio GitHub de TRACE-C: https://github.com/mars-arch/trace-c
 - Dataset de evaluación NESO: https://huggingface.co/datasets/mars2titan/trace-c-neso-benchmark
-- Colección del autor en HuggingFace: https://huggingface.co/collections/mars2titan/a
+- Colección del autor en Hugging Face: https://huggingface.co/collections/mars2titan/a

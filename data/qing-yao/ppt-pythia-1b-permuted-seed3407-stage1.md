@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppt-pythia-1b-permuted-seed3407-stage1` es un ajuste fino supervisado (SFT) del modelo base `EleutherAI/pythia-1b`, publicado por el usuario de HuggingFace `qing-yao`. Se trata de un modelo decoder-only de la familia GPT-NeoX con 1.011.781.632 parámetros (aproximadamente 1,01 mil millones), distribuido en formato safetensors dentro de un repositorio de 2,0 GB. El entrenamiento se realizó con la librería TRL (versión 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.8.0+cu128, y la model card lo etiqueta explícitamente como `sft` y `generated_from_trainer`.
+`ppt-pythia-1b-permuted-seed3407-stage1` es un ajuste fino supervisado (SFT) del modelo base `EleutherAI/pythia-1b`, publicado por el usuario de Hugging Face `qing-yao`. Se trata de un modelo decoder-only de la familia GPT-NeoX con 1.011.781.632 parámetros (aproximadamente 1,01 mil millones), distribuido en formato safetensors dentro de un repositorio de 2,0 GB. El entrenamiento se realizó con la librería TRL (versión 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.8.0+cu128, y la model card lo etiqueta explícitamente como `sft` y `generated_from_trainer`.
 
 El problema que resuelve no está documentado en la información disponible: la model card no describe el dataset de ajuste, el objetivo de la etapa de entrenamiento ni el propósito del proyecto. El nombre del repositorio sugiere una secuencia experimental por etapas ("stage1"), con algún tipo de permutación de pesos o de datos ("permuted") y una semilla fija ("seed3407", valor habitual en experimentos de reproducibilidad), pero se trata de una interpretación del nombre y no de un dato confirmado por el autor. Tampoco hay información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases posteriores de alineación.
 
@@ -12,7 +12,7 @@ Su relevancia actual es limitada: el modelo acumula 0 descargas y 0 "likes" desd
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (transformer decoder-only, etiqueta `gpt_neox` en HuggingFace) |
+| Arquitectura | GPT-NeoX (transformer decoder-only, etiqueta `gpt_neox` en Hugging Face) |
 | Parametros totales | 1.011.781.632 (dato real del repositorio en safetensors) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible en la model card de este modelo. El modelo base EleutherAI/pythia-1b emplea 2.048 tokens de contexto |
@@ -73,9 +73,9 @@ Los datos de las filas correspondientes a este modelo y a su base proceden del r
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ppt-pythia-1b-permuted-seed3407-stage1 | 1,01 B | No disponible (base: 2.048) | No declarada | HuggingFace, 0 descargas | SFT con TRL; sin benchmarks |
-| EleutherAI/pythia-1b (base) | 1,01 B | 2.048 | Apache 2.0 | HuggingFace, muy extendido | Entrenado sobre The Pile; suite de checkpoints intermedios |
-| Alternativas de ~1B (TinyLlama, Qwen2.5-1.5B, etc.) | No verificado | No verificado | No verificado | HuggingFace | Datos no presentes en la informacion proporcionada |
+| ppt-pythia-1b-permuted-seed3407-stage1 | 1,01 B | No disponible (base: 2.048) | No declarada | Hugging Face, 0 descargas | SFT con TRL; sin benchmarks |
+| EleutherAI/pythia-1b (base) | 1,01 B | 2.048 | Apache 2.0 | Hugging Face, muy extendido | Entrenado sobre The Pile; suite de checkpoints intermedios |
+| Alternativas de ~1B (TinyLlama, Qwen2.5-1.5B, etc.) | No verificado | No verificado | No verificado | Hugging Face | Datos no presentes en la informacion proporcionada |
 
 La diferencia funcional mas relevante frente al modelo base no es de rendimiento (no hay evaluaciones), sino de licencia: el derivado no declara terminos de uso, mientras que el modelo base si publica una licencia permisiva. Para un uso comercial, la ausencia de licencia en el derivado es un bloqueo practico.
 
@@ -94,7 +94,7 @@ La diferencia funcional mas relevante frente al modelo base no es de rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-1b-permuted-seed3407-stage1
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-1b-permuted-seed3407-stage1
 - Modelo base: https://huggingface.co/EleutherAI/pythia-1b
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper de TRL (cita incluida en la model card): von Werra et al., "TRL: Transformer Reinforcement Learning", 2020, https://github.com/huggingface/trl

@@ -76,9 +76,9 @@ No se dispone de información suficiente para una comparación directa con model
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/jwl50-stanford/mom-gdn-120m-m2-softmax)
+- [Hugging Face del modelo](https://huggingface.co/jwl50-stanford/mom-gdn-120m-m2-softmax)
 - [Repositorio fuente HazyResearch/mixture-of-memories-dev](https://github.com/HazyResearch/mixture-of-memories-dev)
-- [Modelos relacionados en HuggingFace](https://huggingface.co/jwl50-stanford/gdn-paper-120m-fixed-d256-fp32res-gpt2init-20k-r1)
+- [Modelos relacionados en Hugging Face](https://huggingface.co/jwl50-stanford/gdn-paper-120m-fixed-d256-fp32res-gpt2init-20k-r1)
 - [Leaderboard de modelos LLM (agosto 2026)](https://benchlm.ai/)
 - [Repositorio de investigación sobre atención lineal](https://github.com/vukrosic/linear-attention-research)
 - [Artículo arXiv sobre atención lineal (arXiv:2503.12295)](https://arxiv.org/pdf/2503.12295v1)

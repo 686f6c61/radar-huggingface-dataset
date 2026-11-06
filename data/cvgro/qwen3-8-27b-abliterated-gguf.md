@@ -90,6 +90,6 @@ La principal diferencia frente al modelo base es la reducción de rechazos, que 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/cvgro/Qwen3.8-27B-ABLITERATED-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/cvgro/Qwen3.8-27B-ABLITERATED-GGUF
 - Modelo base BF16 (Blackfrost-AI): https://huggingface.co/Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-27B

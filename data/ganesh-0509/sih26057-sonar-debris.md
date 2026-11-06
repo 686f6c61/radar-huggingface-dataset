@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sonar-debris (identificador de repositorio `sih26057-sonar-debris`) es un modelo de deteccion de objetos basado en YOLOv8, entrenado especificamente para localizar escombros marinos, residuos y anomalias peligrosas en imagenes de sonar de barrido lateral (side-scan sonar, SSS). Lo publica el usuario Ganesh-0509 en HuggingFace y se enmarca en el proyecto SIH26057, asociado al Ministerio de Ciencias de la Tierra (Ministry of Earth Sciences) de la India, segun la propia model card.
+Sonar-debris (identificador de repositorio `sih26057-sonar-debris`) es un modelo de deteccion de objetos basado en YOLOv8, entrenado especificamente para localizar escombros marinos, residuos y anomalias peligrosas en imagenes de sonar de barrido lateral (side-scan sonar, SSS). Lo publica el usuario Ganesh-0509 en Hugging Face y se enmarca en el proyecto SIH26057, asociado al Ministerio de Ciencias de la Tierra (Ministry of Earth Sciences) de la India, segun la propia model card.
 
 El modelo resuelve un problema muy concreto: la inspeccion manual de imagenes de sonar submarino es lenta y depende de operadores expertos. Al automatizar la deteccion, permite procesar grandes volumenes de barridos y priorizar la revision humana. Trabaja sobre una taxonomia cerrada de cinco clases: `shipwreck` (pecios), `natural_object` (formaciones rocosas y anomalias naturales), `pipe` (tuberias y conductos), `cylinder` (objetos cilindricos de tipo mina) y `fishing_gear` (redes y artes de pesca fantasma).
 
@@ -74,7 +74,7 @@ No se dispone de datos publicados de otros detectores entrenados especificamente
 
 | Modelo | Parametros | Contexto / entrada | mAP50 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sonar-debris (SIH26057) | no disponible | imagen de sonar SSS | ~0,747 (v1, 4 clases) | MIT | HuggingFace, `.pt` y `.onnx` |
+| sonar-debris (SIH26057) | no disponible | imagen de sonar SSS | ~0,747 (v1, 4 clases) | MIT | Hugging Face, `.pt` y `.onnx` |
 | Alternativas de deteccion en sonar | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Detectores genericos sobre imagen optica (COCO) | no disponible | imagen RGB | no disponible | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ Como referencia cualitativa, los detectores genericos entrenados sobre imagen op
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ganesh-0509/sih26057-sonar-debris
+- Modelo en Hugging Face: https://huggingface.co/Ganesh-0509/sih26057-sonar-debris
 - Conjuntos de datos citados en la model card (sin enlace facilitado): SeabedObjects-KLSG, Marine_PULSE, SubPipe, Figshare-Mine-Detection, GhostVision
 - Paper, blog o repositorio adicional: no disponible
 - Demo publica: no disponible

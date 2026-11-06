@@ -97,7 +97,7 @@ Comparativa con alternativas de otros autores: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta variante): https://huggingface.co/SirSahOl/Tev1-0.8B-experimental-chat-mlx-8bit
+- Repositorio Hugging Face (esta variante): https://huggingface.co/SirSahOl/Tev1-0.8B-experimental-chat-mlx-8bit
 - Variante 4-bit: https://huggingface.co/SirSahOl/Tev1-0.8B-experimental-chat-mlx-4bit
 - Variante 16-bit: https://huggingface.co/SirSahOl/Tev1-0.8B-experimental-chat-mlx-16bit
 - Modelo base: https://huggingface.co/togethercomputer/Tev1-0.8B-experimental

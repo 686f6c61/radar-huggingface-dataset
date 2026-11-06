@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dyam/sysone-laya-typed-decisions-onnx | 421 M (ModernBERT-large) | no disponible | Decision tipada (choice/score/yes-no) sobre ONNX | Apache-2.0 | HuggingFace |
-| convaiinnovations/laya-typed-decisions | 421 M | no disponible | Decision tipada (modelo original en safetensors) | Apache-2.0 | HuggingFace |
-| answerdotai/ModernBERT-large | no disponible | no disponible | Encoder de proposito general (clasificacion, retrieval) | Apache-2.0 | HuggingFace |
+| Dyam/sysone-laya-typed-decisions-onnx | 421 M (ModernBERT-large) | no disponible | Decision tipada (choice/score/yes-no) sobre ONNX | Apache-2.0 | Hugging Face |
+| convaiinnovations/laya-typed-decisions | 421 M | no disponible | Decision tipada (modelo original en safetensors) | Apache-2.0 | Hugging Face |
+| answerdotai/ModernBERT-large | no disponible | no disponible | Encoder de proposito general (clasificacion, retrieval) | Apache-2.0 | Hugging Face |
 
 No se dispone de comparativas de rendimiento entre estos modelos en la informacion proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de comparativas de rendimiento entre estos modelos en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dyam/sysone-laya-typed-decisions-onnx
+- Modelo en Hugging Face: https://huggingface.co/Dyam/sysone-laya-typed-decisions-onnx
 - Modelo base: https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Repositorio sysone: https://github.com/inovacc/sysone
 - Informe de paridad: https://github.com/inovacc/sysone/blob/main/docs/PARITY.md

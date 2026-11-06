@@ -91,7 +91,7 @@ Se compara con su modelo base y con la alternativa de usar el modelo sin cuantiz
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gwyntel/PII-Redact-Name-oQ4
+- Modelo en Hugging Face: https://huggingface.co/gwyntel/PII-Redact-Name-oQ4
 - Modelo base: https://huggingface.co/OpenPipe/PII-Redact-Name
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Fork de redaccion de PII: https://github.com/gwyntel-git/pii-redact-mlx

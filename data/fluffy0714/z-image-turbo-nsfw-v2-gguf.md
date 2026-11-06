@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto / resolucion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fluffy0714/z-image-turbo-nsfw-v2-GGUF` (este) | ~6,15 mil millones | No disponible | GGUF Q8_0 (~6,8 GB) | Apache 2.0 | HuggingFace, 0 descargas |
-| `tewea/z_image_turbo_bf16_nsfw` (base directa) | No disponible en la informacion (presumiblemente identico) | No disponible | safetensors bf16 | Apache 2.0 | HuggingFace |
-| `Tongyi-MAI/Z-Image-Turbo` (modelo original) | No disponible | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| `fluffy0714/z-image-turbo-nsfw-v2-GGUF` (este) | ~6,15 mil millones | No disponible | GGUF Q8_0 (~6,8 GB) | Apache 2.0 | Hugging Face, 0 descargas |
+| `tewea/z_image_turbo_bf16_nsfw` (base directa) | No disponible en la informacion (presumiblemente identico) | No disponible | safetensors bf16 | Apache 2.0 | Hugging Face |
+| `Tongyi-MAI/Z-Image-Turbo` (modelo original) | No disponible | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de datos en la informacion proporcionada sobre alternativas de otras familias (por ejemplo SDXL o FLUX.1) que permitan una comparacion rigurosa de parametros, contexto, rendimiento o licencia; por tanto, la comparativa se limita a la cadena de derivacion del propio modelo.
 
@@ -88,7 +88,7 @@ No se dispone de datos en la informacion proporcionada sobre alternativas de otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fluffy0714/z-image-turbo-nsfw-v2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/fluffy0714/z-image-turbo-nsfw-v2-GGUF
 - Modelo base del finetune: https://huggingface.co/tewea/z_image_turbo_bf16_nsfw
 - Modelo original: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Herramienta de conversion y nodo ComfyUI: https://github.com/city96/ComfyUI-GGUF

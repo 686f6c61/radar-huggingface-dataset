@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shabieh2/1103_tags_tree_top4` es un ajuste fino (finetune) del modelo `unsloth/Muse-Glimmer-30B`, publicado por el usuario shabieh2 en HuggingFace. Se trata de un modelo de generación de texto en inglés, entrenado con la librería Unsloth y distribuido bajo licencia Apache 2.0. El repositorio tiene un tamaño de 0,9 GB, lo que sugiere que los pesos publicados no corresponden a los 30.000 millones de parámetros del modelo base en precisión completa, sino probablemente a un subconjunto, a adaptadores o a una cuantización.
+`shabieh2/1103_tags_tree_top4` es un ajuste fino (finetune) del modelo `unsloth/Muse-Glimmer-30B`, publicado por el usuario shabieh2 en Hugging Face. Se trata de un modelo de generación de texto en inglés, entrenado con la librería Unsloth y distribuido bajo licencia Apache 2.0. El repositorio tiene un tamaño de 0,9 GB, lo que sugiere que los pesos publicados no corresponden a los 30.000 millones de parámetros del modelo base en precisión completa, sino probablemente a un subconjunto, a adaptadores o a una cuantización.
 
 La relevancia de esta ficha es limitada: el modelo no presenta descargas ni interacciones, no incluye model card descriptiva más allá de la plantilla autogenerada por Unsloth, y no se han publicado resultados de benchmarks ni detalles sobre el dataset de ajuste. La información disponible permite documentar únicamente la procedencia, la licencia y el pipeline de entrenamiento declarado, no las capacidades efectivas del modelo.
 
@@ -73,6 +73,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- [HuggingFace: shabieh2/1103_tags_tree_top4](https://huggingface.co/shabieh2/1103_tags_tree_top4)
+- [Hugging Face: shabieh2/1103_tags_tree_top4](https://huggingface.co/shabieh2/1103_tags_tree_top4)
 - [Modelo base: unsloth/Muse-Glimmer-30B](https://huggingface.co/unsloth/Muse-Glimmer-30B)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)

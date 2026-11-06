@@ -101,7 +101,7 @@ No se dispone de resultados de benchmarks comparativos publicados en la informac
 
 ## Enlaces
 
-- Repositorio en HuggingFace (espejo): https://huggingface.co/OJ-1/MOSS-Image-Base
+- Repositorio en Hugging Face (espejo): https://huggingface.co/OJ-1/MOSS-Image-Base
 - Repositorio de la organizacion responsable (base): https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Repositorio de la organizacion responsable (SFT): https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Codigo fuente en GitHub: https://github.com/OpenMOSS/MOSS-Image
@@ -111,7 +111,7 @@ No se dispone de resultados de benchmarks comparativos publicados en la informac
 - Guia de usuario (chino): https://github.com/OpenMOSS/MOSS-Image/blob/main/USERGUIDE_ZH.md
 - Integracion ComfyUI: https://github.com/OpenMOSS/MOSS-Image/blob/main/comfyui/README.md
 - Workflow de ejemplo para ComfyUI: https://github.com/OpenMOSS/MOSS-Image/blob/main/comfyui/moss-image/example_workflows/moss-image.json
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
 - ModelScope (base): https://modelscope.cn/models/openmoss/MOSS-Image-Base
 - ModelScope (SFT): https://modelscope.cn/models/openmoss/MOSS-Image-SFT
 - Perfil de OpenMOSS en X: https://x.com/Open_MOSS

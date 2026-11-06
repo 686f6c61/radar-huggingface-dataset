@@ -73,6 +73,6 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace de la version cuantizada: https://huggingface.co/DevQuasar/baidu.Unlimited-OCR-2-GGUF
+- Repositorio Hugging Face de la version cuantizada: https://huggingface.co/DevQuasar/baidu.Unlimited-OCR-2-GGUF
 - Modelo base: https://huggingface.co/baidu/Unlimited-OCR-2
 - Sitio del autor de la cuantizacion: https://devquasar.com

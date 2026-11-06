@@ -30,7 +30,7 @@ Detalles de la interfaz de inferencia:
 | Etiquetas | `0` (ninguna), `.`, `,`, `?`, `-`, `:` |
 | Regla de decodificación | Se toma la etiqueta del primer subtoken de cada palabra |
 | Pipeline declarado | token-classification |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Tamaño del repositorio | 2,8 GB |
 
 ## Arquitectura y entrenamiento
@@ -116,7 +116,7 @@ La comparación relevante es únicamente con el modelo original: este repositori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kenrunio/transcriber-punctuation-onnx
+- Modelo en Hugging Face: https://huggingface.co/kenrunio/transcriber-punctuation-onnx
 - Modelo base original: https://huggingface.co/oliverguhr/fullstop-punctuation-multilang-large
 - Repositorio Transcriber: https://github.com/kenrunio/transcriber
 - Script de exportación: https://github.com/kenrunio/transcriber/blob/main/tools/export_models.py

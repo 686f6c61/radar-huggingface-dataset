@@ -79,12 +79,12 @@ La diferencia clave es el runtime: Alpha-Orionis-XS sacrifica compatibilidad con
 - Datos de rendimiento (22 tok/s) citados sin contexto verificable; no hay benchmarks publicados del modelo base en esta ficha.
 - Servidor de desarrollo sin autenticación: riesgo de seguridad si se expone a redes no confiables.
 - Licencia qwen-community-license-1.0: revisar los términos del enlace QWEN-LICENSE antes de uso comercial (restricciones concretas no detalladas en la model card).
-- Cero descargas registradas en HuggingFace en el momento de la ficha: falta de validación por parte de la comunidad.
+- Cero descargas registradas en Hugging Face en el momento de la ficha: falta de validación por parte de la comunidad.
 - Sesgos, riesgo de alucinación y soporte de idiomas: no disponibles; heredan del modelo base Qwen3.8-Flash-Next, cuya model card no se incluye aquí.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Betelgeuse-AI/Alpha-Orionis-XS
+- Repositorio en Hugging Face: https://huggingface.co/Betelgeuse-AI/Alpha-Orionis-XS
 - Licencia Qwen: https://huggingface.co/Betelgeuse-AI/Alpha-Orionis-XS/blob/main/QWEN-LICENSE
 - Manifiesto del bundle: https://huggingface.co/Betelgeuse-AI/Alpha-Orionis-XS/blob/main/bundle-manifest.json
 - Release original de cuantización (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF/tree/ed59f92082b1e93c0e96d60a8b11aab089b52f09/IQ2_XS

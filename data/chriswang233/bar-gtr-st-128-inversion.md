@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ChrisWang233/bar-gtr-st-128-inversion` es un checkpoint publicado en HuggingFace por el usuario ChrisWang233 (identificado en los resultados de búsqueda como Yubo Wang) cuyo nombre sugiere un modelo de inversión de embeddings sobre representaciones de 128 dimensiones del espacio GTR (General Text Representations) con Sentence-Transformers. La información pública del repositorio es mínima: la model card no declara pipeline, licencia, idiomas ni dataset de entrenamiento, y el modelo acumula 7 descargas y 0 likes desde su creación.
+`ChrisWang233/bar-gtr-st-128-inversion` es un checkpoint publicado en Hugging Face por el usuario ChrisWang233 (identificado en los resultados de búsqueda como Yubo Wang) cuyo nombre sugiere un modelo de inversión de embeddings sobre representaciones de 128 dimensiones del espacio GTR (General Text Representations) con Sentence-Transformers. La información pública del repositorio es mínima: la model card no declara pipeline, licencia, idiomas ni dataset de entrenamiento, y el modelo acumula 7 descargas y 0 likes desde su creación.
 
 El dato más sólido disponible es el recuento real de parámetros en los ficheros safetensors: 343.161.984 parámetros (aproximadamente 343 millones), con un tamaño de repositorio de 6,5 GB, lo que sugiere que el repositorio contiene más de un juego de pesos o estados auxiliares además del checkpoint principal.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ChrisWang233/bar-gtr-st-128-inversion | 343 M | no disponible | inversion de embeddings (inferida) | no disponible | HuggingFace, 7 descargas |
+| ChrisWang233/bar-gtr-st-128-inversion | 343 M | no disponible | inversion de embeddings (inferida) | no disponible | Hugging Face, 7 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables directos en la documentacion proporcionada. El espacio de modelos de inversion de embeddings es minoritario y no se han identificado en los resultados de busqueda checkpoints publicos equivalentes con los que establecer una comparacion cuantitativa.
@@ -91,8 +91,8 @@ No se dispone de informacion sobre modelos comparables directos en la documentac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChrisWang233/bar-gtr-st-128-inversion
-- Perfil del autor en HuggingFace (datasets): https://huggingface.co/ChrisWang233/datasets
+- Modelo en Hugging Face: https://huggingface.co/ChrisWang233/bar-gtr-st-128-inversion
+- Perfil del autor en Hugging Face (datasets): https://huggingface.co/ChrisWang233/datasets
 - Repositorio GitHub DAEI (Denoising-Aware Embedding Inversion): https://github.com/ChrisWang233/DAEI
 - Ruta interna del repositorio DAEI: https://github.com/ChrisWang233/DAEI/tree/main/DAEI
 - Contexto general sobre ataques de inversion de modelos: https://nohack.net/ai-model-inversion-attacks-explained/

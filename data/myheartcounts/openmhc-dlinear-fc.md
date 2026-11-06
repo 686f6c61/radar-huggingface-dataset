@@ -32,7 +32,7 @@ El checkpoint se ha entrenado desde cero sobre el split de entrenamiento de MHC 
 - Pronóstico de series temporales multivariantes a 24 horas vista sobre 19 canales de sensores wearables con resolución horaria.
 - Descomposición explícita de tendencia y estacionalidad, lo que facilita la interpretabilidad de las predicciones.
 - Evaluación integrada mediante el harness de OpenMHC (`openmhc.evaluate_forecasting`).
-- Carga directa desde HuggingFace mediante `DLinearForecaster.from_release("hf://MyHeartCounts/openmhc-dlinear-fc@v1.1")`.
+- Carga directa desde Hugging Face mediante `DLinearForecaster.from_release("hf://MyHeartCounts/openmhc-dlinear-fc@v1.1")`.
 - Compatibilidad con la implementación de PyPOTS para entrenamiento y inferencia.
 - No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües (no es un modelo de lenguaje).
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OpenMHC DLinear (este) | DLinear | no disponible | no disponible | Forecasting 24h, 19 canales | OpenRAIL-M | HuggingFace |
+| OpenMHC DLinear (este) | DLinear | no disponible | no disponible | Forecasting 24h, 19 canales | OpenRAIL-M | Hugging Face |
 | Alternativas del benchmark OpenMHC | no disponible | no disponible | no disponible | Forecasting wearables | no disponible | no disponible |
 | Otros forecasters de PyPOTS | no disponible | no disponible | no disponible | Series temporales | no disponible | no disponible |
 
@@ -79,7 +79,7 @@ No se dispone de información sobre otros checkpoints del benchmark OpenMHC ni d
 
 ## Enlaces
 
-- [HuggingFace: MyHeartCounts/openmhc-dlinear-fc](https://huggingface.co/MyHeartCounts/openmhc-dlinear-fc)
+- [Hugging Face: MyHeartCounts/openmhc-dlinear-fc](https://huggingface.co/MyHeartCounts/openmhc-dlinear-fc)
 - [PyPOTS toolkit (implementación)](https://github.com/WenjieDu/PyPOTS)
 - [PyPOTS documentation](https://docs.pypots.com)
 - [Paper: Are Transformers Effective for Time Series Forecasting? (Zeng et al., AAAI 2023)](https://github.com/cure-lab/LTSF-Linear)

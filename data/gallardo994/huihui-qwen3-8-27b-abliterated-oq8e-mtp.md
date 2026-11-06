@@ -54,16 +54,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: el modelo tiene 8.184 millones de parametros cuantizados a 8 bits, lo que supone aproximadamente 8,2 GB de pesos. Con overhead de inferencia, se estima un consumo de 10-12 GB de VRAM.
 - GPU recomendadas: RTX 3090, RTX 4090, A100 40GB, o cualquier GPU con al menos 12 GB de VRAM. Tambien es compatible con Apple Silicon (M1 Pro/Max o superior) gracias al formato MLX.
 - Consumer GPU: si, cabe en GPUs de consumo con 12 GB o mas de VRAM, como la RTX 4070 Ti o superior.
-- Opciones de despliegue: al ser formato MLX, se puede ejecutar con MLX (Apple Silicon), o convertirse a GGUF para usar con llama.cpp u Ollama. Tambien es compatible con vLLM si se convierte a formato HuggingFace estandar.
+- Opciones de despliegue: al ser formato MLX, se puede ejecutar con MLX (Apple Silicon), o convertirse a GGUF para usar con llama.cpp u Ollama. Tambien es compatible con vLLM si se convierte a formato Hugging Face estandar.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Huihui-Qwen3.8-27B-abliterated-oQ8e-mtp | 8,18B | no disponible | 8-bit oQ | no disponible | HuggingFace |
-| Qwen/Qwen3.8-27B (original) | 8,18B | no disponible | FP16 | Apache 2.0 | HuggingFace |
-| Huihui-Qwen3.8-27B-abliterated (sin cuantizar) | 8,18B | no disponible | FP16 | no disponible | HuggingFace |
+| Huihui-Qwen3.8-27B-abliterated-oQ8e-mtp | 8,18B | no disponible | 8-bit oQ | no disponible | Hugging Face |
+| Qwen/Qwen3.8-27B (original) | 8,18B | no disponible | FP16 | Apache 2.0 | Hugging Face |
+| Huihui-Qwen3.8-27B-abliterated (sin cuantizar) | 8,18B | no disponible | FP16 | no disponible | Hugging Face |
 
 La principal diferencia con el modelo original es la ausencia de mecanismos de rechazo, mientras que la diferencia con la version sin cuantizar es el tamano reducido (30 GB frente a aproximadamente 16 GB en FP16) a costa de una posible perdida menor de precision.
 
@@ -78,7 +78,7 @@ La principal diferencia con el modelo original es la ausencia de mecanismos de r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Gallardo994/Huihui-Qwen3.8-27B-abliterated-oQ8e-mtp
+- Repositorio Hugging Face: https://huggingface.co/Gallardo994/Huihui-Qwen3.8-27B-abliterated-oQ8e-mtp
 - Modelo base abliterated (huihui-ai): https://huggingface.co/huihui-ai/Qwen3-8B-abliterated
 - Coleccion Qwen3-abliterated de huihui-ai: https://huggingface.co/collections/huihui-ai/qwen3-abliterated
 - Guia de despliegue AutoDL (Ollama + llama.cpp MTP): https://github.com/mifanovo/autodl-huihui-qwen3.8-27b

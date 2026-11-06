@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Thomas0202/promptcut-ia",
+  "slug": "thomas0202-promptcut-ia",
+  "author": "Thomas0202",
+  "url": "https://huggingface.co/Thomas0202/promptcut-ia",
+  "created_at": "2026-11-06T11:01:51.000Z",
+  "updated_at": "2026-11-06T11:01:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "it",
+    "en",
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "on-device",
+    "video-editing",
+    "motion-graphics",
+    "mobile",
+    "image-text-to-text",
+    "it",
+    "en",
+    "es",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "promptcut.co",
+      "url": "https://promptcut.co/",
+      "snippet": "Instead of rewriting the same instructions over and over, trigger powerful workflows with a simple /command."
+    },
+    {
+      "title": "The Model – PromptCut.AI",
+      "url": "https://promptcut.ai/portfolio/the-model/",
+      "snippet": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labore dolore magna erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et rebum. Stet clita bergren, no sea takimata sanctus."
+    }
+  ]
+}

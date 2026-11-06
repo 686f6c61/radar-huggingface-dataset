@@ -63,7 +63,7 @@ No se disponen de datos comparativos en la informacion proporcionada. A nivel co
 
 ## Limitaciones y advertencias
 
-- La licencia del modelo no esta especificada en el repositorio de HuggingFace; es necesario verificar la licencia del modelo original de Tencent antes de un uso comercial.
+- La licencia del modelo no esta especificada en el repositorio de Hugging Face; es necesario verificar la licencia del modelo original de Tencent antes de un uso comercial.
 - Esta version es una conversion FP8 no oficial realizada por un tercero, lo que puede implicar una perdida de precision respecto al checkpoint original en float32.
 - El modelo requiere PyTorch 2.1 o superior para la carga correcta de tensores FP8; en versiones anteriores puede producir errores o comportamientos inesperados.
 - Al ser un sistema de generacion 3D, existe riesgo de producir geometrias o texturas incorrectas, inconsistentes o con artefactos, especialmente en entradas con iluminacion compleja o angulos no vistos.
@@ -72,6 +72,6 @@ No se disponen de datos comparativos en la informacion proporcionada. A nivel co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/codemichaeld/hunyuan3D_2.1_fixed
+- Repositorio en Hugging Face: https://huggingface.co/codemichaeld/hunyuan3D_2.1_fixed
 - Repositorio oficial de Tencent-Hunyuan en GitHub: https://github.com/tencent-hunyuan/hunyuan3d-2.1
 - Repositorio alternativo en GitHub: https://github.com/hunyuan3d/hunyuan3d

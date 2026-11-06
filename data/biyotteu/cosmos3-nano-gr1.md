@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio biyotteu/cosmos3-nano-gr1 es un modelo publicado en HuggingFace por el usuario biyotteu, con 4 "likes" y 0 descargas en el momento de la consulta. La informacion disponible es extremadamente limitada: no existe model card publica, no se declara pipeline de inferencia, no se especifica licencia, no se indican idiomas soportados y no hay resultados de benchmarks ni documentacion tecnica asociada. El unico dato cuantitativo relevante es el tamano del repositorio, de 1141 GB, lo que sugiere que contiene pesos de gran volumen o multiples variantes de cuantizacion y ficheros auxiliares, aunque no es posible confirmarlo sin inspeccionar el contenido.
+El repositorio biyotteu/cosmos3-nano-gr1 es un modelo publicado en Hugging Face por el usuario biyotteu, con 4 "likes" y 0 descargas en el momento de la consulta. La informacion disponible es extremadamente limitada: no existe model card publica, no se declara pipeline de inferencia, no se especifica licencia, no se indican idiomas soportados y no hay resultados de benchmarks ni documentacion tecnica asociada. El unico dato cuantitativo relevante es el tamano del repositorio, de 1141 GB, lo que sugiere que contiene pesos de gran volumen o multiples variantes de cuantizacion y ficheros auxiliares, aunque no es posible confirmarlo sin inspeccionar el contenido.
 
 El nombre del repositorio ("cosmos3-nano-gr1") apunta a una posible vinculacion con la familia Cosmos de modelos de mundo (world models) y con la etiqueta "nano" empleada habitualmente para variantes reducidas, pero no hay ninguna evidencia en la informacion proporcionada que confirme arquitectura, procedencia, linaje de entrenamiento ni relacion con otros proyectos. Tampoco hay indicios de que el autor sea una organizacion reconocida ni de que exista un paper o informe tecnico que lo respalde.
 
@@ -94,6 +94,6 @@ No disponible. Sin conocer la categoria, el tamano y la tarea del modelo, no es 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/biyotteu/cosmos3-nano-gr1
+- Hugging Face: https://huggingface.co/biyotteu/cosmos3-nano-gr1
 - Paper, blog, repositorio o demo: no disponible.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces obtenidos pertenecian a paginas de soporte de Microsoft y no guardan relacion con el objeto de esta ficha.

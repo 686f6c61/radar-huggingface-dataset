@@ -6,7 +6,7 @@ El modelo `mradermacher/qwen3.8-27b-aragon-uncensored-GGUF` es una colección de
 
 La relevancia de este modelo radica en que ofrece una versión sin los mecanismos de rechazo y censura típicos de los modelos comerciales, lo que lo hace atractivo para investigación en seguridad, generación de contenido creativo sin restricciones y experimentación con técnicas de "abliteration". El repositorio incluye múltiples niveles de cuantización (desde Q2_K hasta Q8_0) y archivos de proyección multimodal (mmproj), lo que sugiere que el modelo base podría tener capacidades de visión, aunque no se confirma en la documentación disponible.
 
-Al ser una cuantización, no se aportan datos de entrenamiento ni benchmarks propios; la información se limita a los archivos y a las referencias del modelo original. La licencia no está especificada en la ficha de HuggingFace, aunque fuentes externas indican que el modelo base Qwen 3.8 27B se distribuye bajo Apache 2.0.
+Al ser una cuantización, no se aportan datos de entrenamiento ni benchmarks propios; la información se limita a los archivos y a las referencias del modelo original. La licencia no está especificada en la ficha de Hugging Face, aunque fuentes externas indican que el modelo base Qwen 3.8 27B se distribuye bajo Apache 2.0.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Al ser una cuantización, no se aportan datos de entrenamiento ni benchmarks pro
 
 No se dispone de informacion detallada sobre la arquitectura interna del modelo base. Por el nombre y los tags, se trata de un transformer de la familia Qwen 3.8 con 27.320 millones de parametros, probablemente denso (no se mencionan parametros activos). El modelo original `jdqqjr/qwen3.8-27b-aragon-uncensored` ha sido sometido a un proceso de "abliteration", una tecnica que elimina o neutraliza las capas responsables de los rechazos y las respuestas de seguridad, dando lugar a un comportamiento "uncensored". No se han publicado detalles sobre el dataset de entrenamiento, el numero de tokens ni el uso de RLHF o DPO.
 
-La cuantizacion realizada por mradermacher es de tipo estatico (sin imatrix), generada a partir de los pesos originales en formato HuggingFace. Se incluyen dos archivos mmproj (Q8_0 y f16) que sugieren la presencia de un proyector multimodal, probablemente para procesamiento de imagenes, aunque no se confirma su funcionamiento en la documentacion.
+La cuantizacion realizada por mradermacher es de tipo estatico (sin imatrix), generada a partir de los pesos originales en formato Hugging Face. Se incluyen dos archivos mmproj (Q8_0 y f16) que sugieren la presencia de un proyector multimodal, probablemente para procesamiento de imagenes, aunque no se confirma su funcionamiento en la documentacion.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/qwen3.8-27b-aragon-uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/qwen3.8-27b-aragon-uncensored-GGUF
 - Modelo base: https://huggingface.co/jdqqjr/qwen3.8-27b-aragon-uncensored
 - Blog sobre ejecucion local de Qwen 3.8 27B uncensored: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally
 - Guia de VRAM y quants para Qwen 3.8 27B: https://locallyuncensored.com/blog/how-to-run-qwen-3-8-27b-locally.html

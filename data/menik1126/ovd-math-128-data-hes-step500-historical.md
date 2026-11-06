@@ -1,7 +1,7 @@
 # menik1126/ovd-math-128-data-hes-step500-historical
 
 ## Resumen
-`menik1126/ovd-math-128-data-hes-step500-historical` es un checkpoint de pesos publicado en HuggingFace por el usuario menik1126, con 1.777.088.000 parámetros (1,78 B) en formato safetensors BF16 y un repositorio de 3,6 GB. La etiqueta de framework lo sitúa en la familia Qwen2 (transformer decoder-only), aunque no se publica la configuración base ni el `config.json` comentado. Según su propia model card, se trata de un "checkpoint histórico" de un entrenamiento denominado DSR128 con variante de datos `high_entropy_suffix`, en el paso 500 ("semantic step 500"), obtenido como merge BF16 en formato HuggingFace a partir de shards auditados del modelo `DSR128 High-entropy global_step_500`.
+`menik1126/ovd-math-128-data-hes-step500-historical` es un checkpoint de pesos publicado en Hugging Face por el usuario menik1126, con 1.777.088.000 parámetros (1,78 B) en formato safetensors BF16 y un repositorio de 3,6 GB. La etiqueta de framework lo sitúa en la familia Qwen2 (transformer decoder-only), aunque no se publica la configuración base ni el `config.json` comentado. Según su propia model card, se trata de un "checkpoint histórico" de un entrenamiento denominado DSR128 con variante de datos `high_entropy_suffix`, en el paso 500 ("semantic step 500"), obtenido como merge BF16 en formato Hugging Face a partir de shards auditados del modelo `DSR128 High-entropy global_step_500`.
 
 Su relevancia es, por tanto, exclusivamente experimental: el autor indica de forma explícita que son pesos históricos ya evaluados y no la implementación reparada recientemente, lo que lo convierte en un artefacto útil para reproducir resultados antiguos, hacer análisis comparativos entre checkpoints o estudiar dinámicas de entrenamiento, pero no en un modelo pensado para producción. No hay pipeline declarado, ni licencia, ni idiomas, ni resultados de benchmarks, y el repositorio acumula 0 descargas y 0 likes.
 
@@ -27,7 +27,7 @@ El nombre del repositorio incluye "math", lo que sugiere un ajuste orientado a t
 ## Arquitectura y entrenamiento
 La única información arquitectónica disponible es la etiqueta `qwen2`, que apunta a un transformer decoder-only con las convenciones habituales de esa familia (atención con RoPE, RMSNorm y atención de consultas agrupadas en la mayoría de sus variantes). El recuento de parámetros (1.777.088.000) no coincide exactamente con el de un Qwen2-1.5B estándar, por lo que la configuración base, el tamaño de vocabulario o las dimensiones de las capas podrían diferir; no hay información publicada al respecto. El repositorio contiene únicamente pesos de inferencia y ficheros de tokenizer, no estado del optimizador.
 
-Sobre el entrenamiento solo se conocen las etiquetas de la model card: un run "DSR128" con una variante de datos `high_entropy_suffix`, un checkpoint en el paso 500 de una fase "semantic" y un merge BF16 en formato HuggingFace construido a partir de shards auditados del modelo `DSR128 High-entropy global_step_500`. No se especifica el número de tokens de entrenamiento, la composición del dataset, si hubo fases de instrucción, RLHF o DPO, ni si se aplicaron técnicas de eficiencia como decodificación especulativa o atención lineal. El autor remarca que son pesos históricos evaluados y no la implementación reparada posteriormente, sin detallar en qué consistía el defecto corregido.
+Sobre el entrenamiento solo se conocen las etiquetas de la model card: un run "DSR128" con una variante de datos `high_entropy_suffix`, un checkpoint en el paso 500 de una fase "semantic" y un merge BF16 en formato Hugging Face construido a partir de shards auditados del modelo `DSR128 High-entropy global_step_500`. No se especifica el número de tokens de entrenamiento, la composición del dataset, si hubo fases de instrucción, RLHF o DPO, ni si se aplicaron técnicas de eficiencia como decodificación especulativa o atención lineal. El autor remarca que son pesos históricos evaluados y no la implementación reparada posteriormente, sin detallar en qué consistía el defecto corregido.
 
 ## Capacidades
 - Generación de texto autoregresiva: capacidad heredada del modelo base de la familia Qwen2, no verificada mediante evaluación publicada.
@@ -47,7 +47,7 @@ Sobre el entrenamiento solo se conocen las etiquetas de la model card: un run "D
 - Generación de datos sintéticos en laboratorio: usar el modelo para producir borradores de problemas o soluciones matemáticas que después se filtran y validan manualmente, aceptando su fiabilidad desconocida.
 - Pruebas de infraestructura de despliegue: validar pipelines de carga, cuantización y servido (transformers, vLLM, conversión a GGUF) con un modelo pequeño antes de escalar a modelos mayores.
 - Docencia y divulgación técnica: ilustrar el ciclo de vida de un checkpoint de investigación, desde el merge de shards hasta su publicación como artefacto histórico.
-- Auditoría de artefactos en HuggingFace: caso de estudio sobre repositorios sin licencia, sin idiomas declarados y sin benchmarks, útil para equipos que definen políticas internas de admisión de modelos.
+- Auditoría de artefactos en Hugging Face: caso de estudio sobre repositorios sin licencia, sin idiomas declarados y sin benchmarks, útil para equipos que definen políticas internas de admisión de modelos.
 
 ## Benchmarks y rendimiento
 No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye métricas de MMLU, GSM8K, HumanEval, MATH ni de ninguna otra suite, y las búsquedas web realizadas no han devuelto documentación asociada al modelo. Cualquier cifra de rendimiento debería obtenerse mediante evaluación propia.
@@ -65,7 +65,7 @@ No hay datos de rendimiento del modelo evaluado, por lo que la comparación se l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ovd-math-128-data-hes-step500-historical | 1,78 B | No disponible | No disponible | Safetensors BF16 en HuggingFace |
+| ovd-math-128-data-hes-step500-historical | 1,78 B | No disponible | No disponible | Safetensors BF16 en Hugging Face |
 | Qwen2.5-1.5B | ~1,5 B | 32.768 tokens (ampliable con YaRN) | Apache-2.0 | Safetensors, GGUF y cuantizaciones de la comunidad |
 | Qwen2.5-Math-1.5B | ~1,5 B | Contexto corto orientado a matemáticas, ampliable con YaRN | Apache-2.0 | Safetensors y cuantizaciones de la comunidad |
 | SmolLM2-1.7B | ~1,7 B | 8.192 tokens | Apache-2.0 | Safetensors, GGUF, Ollama |
@@ -85,7 +85,7 @@ Frente a estas alternativas, el checkpoint analizado carece de licencia, idiomas
 - No apto para producción: la combinación de licencia ausente, falta de benchmarks y naturaleza histórica lo desaconseja para cualquier sistema en explotación.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/menik1126/ovd-math-128-data-hes-step500-historical
+- Repositorio en Hugging Face: https://huggingface.co/menik1126/ovd-math-128-data-hes-step500-historical
 - Ficheros del repositorio: https://huggingface.co/menik1126/ovd-math-128-data-hes-step500-historical/tree/main
 - Perfil del autor: https://huggingface.co/menik1126
 - Referencia de la familia base etiquetada (`qwen2`): https://huggingface.co/Qwen/Qwen2-1.5B

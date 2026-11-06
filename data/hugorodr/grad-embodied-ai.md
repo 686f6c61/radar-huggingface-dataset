@@ -80,5 +80,5 @@ No disponible. No hay modelos comparables porque este repositorio no es un model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hugorodr/grad-embodied-ai
+- Hugging Face: https://huggingface.co/hugorodr/grad-embodied-ai
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

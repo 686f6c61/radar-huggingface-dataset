@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de investigación derivado de la familia Phi-1.5, publicado por el usuario `unl-reset` en HuggingFace. No se trata de un modelo de propósito general, sino de un artefacto experimental dentro del ámbito del *machine unlearning*: parte del modelo `locuslab/tofu_ft_phi-1.5` (un Phi-1.5 ajustado sobre el dataset TOFU) y aplica una técnica de olvido selectivo denominada "IHL + Reset Both", orientada a eliminar el conocimiento asociado al subconjunto `forget01` de TOFU. El checkpoint corresponde a la época 4 de un entrenamiento de 20 épocas.
+Este modelo es un checkpoint de investigación derivado de la familia Phi-1.5, publicado por el usuario `unl-reset` en Hugging Face. No se trata de un modelo de propósito general, sino de un artefacto experimental dentro del ámbito del *machine unlearning*: parte del modelo `locuslab/tofu_ft_phi-1.5` (un Phi-1.5 ajustado sobre el dataset TOFU) y aplica una técnica de olvido selectivo denominada "IHL + Reset Both", orientada a eliminar el conocimiento asociado al subconjunto `forget01` de TOFU. El checkpoint corresponde a la época 4 de un entrenamiento de 20 épocas.
 
 La arquitectura subyacente es la de Phi-1.5, un transformer decoder-only de 1.418 millones de parámetros (1.4B) con licencia Apache 2.0. El interés de este checkpoint es puramente metodológico: sirve para evaluar hasta qué punto una intervención de unlearning preserva el rendimiento en el conjunto *retain* mientras suprime el *forget*, y para comparar variantes de inicialización (en este caso, embeddings de entrada y cabeza LM reinicializados desde `microsoft/phi-1_5` mientras el resto de pesos se conservan del modelo ajustado).
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| unl-reset/tofu-phi-1_5-...-epoch04 | 1.4B | no disponible | Apache 2.0 | HuggingFace | Checkpoint de unlearning sobre TOFU, época 4/20 |
-| locuslab/tofu_ft_phi-1.5 | 1.4B | no disponible | no disponible en la información | HuggingFace | Modelo base ajustado sobre TOFU, sin unlearning |
-| microsoft/phi-1_5 | 1.4B | 2048 (referencia pública) | MIT (referencia pública) | HuggingFace | Modelo original de Phi-1.5 |
-| locuslab/tofu_ft_phi-1.5 (variantes de unlearning) | 1.4B | no disponible | no disponible | HuggingFace | Otras variantes experimentales del mismo grupo |
+| unl-reset/tofu-phi-1_5-...-epoch04 | 1.4B | no disponible | Apache 2.0 | Hugging Face | Checkpoint de unlearning sobre TOFU, época 4/20 |
+| locuslab/tofu_ft_phi-1.5 | 1.4B | no disponible | no disponible en la información | Hugging Face | Modelo base ajustado sobre TOFU, sin unlearning |
+| microsoft/phi-1_5 | 1.4B | 2048 (referencia pública) | MIT (referencia pública) | Hugging Face | Modelo original de Phi-1.5 |
+| locuslab/tofu_ft_phi-1.5 (variantes de unlearning) | 1.4B | no disponible | no disponible | Hugging Face | Otras variantes experimentales del mismo grupo |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget01-ihl_reset_both-epoch04
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget01-ihl_reset_both-epoch04
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - TOFU benchmark (referencia): https://github.com/locuslab/tofu

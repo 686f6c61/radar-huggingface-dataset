@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ollybritton/Llama-3.2-3B-gsm8k-distill-control-grpo130` es un ajuste fino del modelo base `meta-llama/Llama-3.2-3B`, publicado por el usuario ollybritton en HuggingFace. El repositorio contiene pesos en formato safetensors con 3.212.749.824 parámetros y ocupa 12,9 GB. La model card es prácticamente vacía: solo declara la licencia `llama3.2`, el modelo base y la marca "Built with Llama", sin documentación sobre datos de entrenamiento, metodología o evaluación.
+`ollybritton/Llama-3.2-3B-gsm8k-distill-control-grpo130` es un ajuste fino del modelo base `meta-llama/Llama-3.2-3B`, publicado por el usuario ollybritton en Hugging Face. El repositorio contiene pesos en formato safetensors con 3.212.749.824 parámetros y ocupa 12,9 GB. La model card es prácticamente vacía: solo declara la licencia `llama3.2`, el modelo base y la marca "Built with Llama", sin documentación sobre datos de entrenamiento, metodología o evaluación.
 
 Por la nomenclatura del identificador (gsm8k, distill, control, grpo130) se puede inferir que se trata de un experimento de ajuste sobre el conjunto de datos GSM8K (problemas aritméticos de nivel escolar) combinando destilación y optimización con GRPO (Group Relative Policy Optimization), correspondiente a un checkpoint intermedio o al paso 130 de un entrenamiento. Esta interpretación procede únicamente del nombre del repositorio y no está confirmada por ninguna documentación publicada, por lo que debe tratarse como una hipótesis de trabajo, no como un dato verificado.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-3B-gsm8k-distill-control-grpo130 | 3,21 B | no disponible (base: 128k) | no | Llama 3.2 Community | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128k | si, publicados por Meta | Llama 3.2 Community | HuggingFace, ampliamente desplegado |
-| Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens (128k con YaRN) | si, publicados por Alibaba | Apache 2.0 | HuggingFace |
-| Phi-3.5-mini-instruct | 3,8 B | 128k | si, publicados por Microsoft | MIT | HuggingFace |
+| Llama-3.2-3B-gsm8k-distill-control-grpo130 | 3,21 B | no disponible (base: 128k) | no | Llama 3.2 Community | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128k | si, publicados por Meta | Llama 3.2 Community | Hugging Face, ampliamente desplegado |
+| Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens (128k con YaRN) | si, publicados por Alibaba | Apache 2.0 | Hugging Face |
+| Phi-3.5-mini-instruct | 3,8 B | 128k | si, publicados por Microsoft | MIT | Hugging Face |
 
 Frente a estas alternativas, el modelo aqui descrito no aporta datos de rendimiento verificables y su licencia Llama 3.2 impone restricciones de uso comercial (clausula de 700 millones de usuarios mensuales y requisitos de atribucion) mas estrictas que las licencias Apache 2.0 o MIT de Qwen2.5 y Phi-3.5. Su unico diferencial potencial es el entrenamiento especifico sobre GSM8K, que no se ha demostrado empiricamente. No se dispone de datos para comparar rendimiento.
 
@@ -92,7 +92,7 @@ Frente a estas alternativas, el modelo aqui descrito no aporta datos de rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ollybritton/Llama-3.2-3B-gsm8k-distill-control-grpo130
+- Modelo en Hugging Face: https://huggingface.co/ollybritton/Llama-3.2-3B-gsm8k-distill-control-grpo130
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/
 - Conjunto de datos GSM8K: https://huggingface.co/datasets/openai/gsm8k

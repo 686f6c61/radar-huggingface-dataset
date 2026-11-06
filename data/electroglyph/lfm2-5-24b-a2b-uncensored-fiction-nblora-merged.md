@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-24B-A2B-uncensored-fiction-nblora-merged es un ajuste fino (fine-tune) del modelo electroglyph/LFM2.5-24B-A2B-uncensored, publicado por el usuario electroglyph en HuggingFace. Se trata de un modelo derivado de la familia LFM2.5 de Liquid AI, en su variante de 24B de parametros totales con arquitectura MoE (mezcla de expertos) y aproximadamente 2B de parametros activos, segun indica el propio nombre del identificador. El ajuste se ha realizado mediante SFT (supervised fine-tuning) con la libreria TRL, y el sufijo "fiction" sugiere una especializacion en generacion de narrativa y ficcion.
+LFM2.5-24B-A2B-uncensored-fiction-nblora-merged es un ajuste fino (fine-tune) del modelo electroglyph/LFM2.5-24B-A2B-uncensored, publicado por el usuario electroglyph en Hugging Face. Se trata de un modelo derivado de la familia LFM2.5 de Liquid AI, en su variante de 24B de parametros totales con arquitectura MoE (mezcla de expertos) y aproximadamente 2B de parametros activos, segun indica el propio nombre del identificador. El ajuste se ha realizado mediante SFT (supervised fine-tuning) con la libreria TRL, y el sufijo "fiction" sugiere una especializacion en generacion de narrativa y ficcion.
 
 El modelo base pertenece a la estirpe "uncensored", lo que implica que se ha eliminado o reducido el alineamiento de seguridad del modelo original, y este fine-tune anade una capa adicional de especializacion en ficcion. El repositorio ocupa 97,8 GB y contiene pesos en formato safetensors, lo que es coherente con un modelo de 24B de parametros en precision alta (probablemente bf16 o fp16, dado que 24B parametros a 16 bits ocupan aproximadamente 48 GB, y el resto del espacio podria corresponder a multiples checkpoints o al modelo base incluido).
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| electroglyph/LFM2.5-24B-A2B-uncensored-fiction-nblora-merged | 24B | ~2B | no disponible | no disponible | HuggingFace, 0 descargas |
-| electroglyph/LFM2.5-24B-A2B-uncensored (modelo base) | 24B | ~2B | no disponible | no disponible | HuggingFace |
+| electroglyph/LFM2.5-24B-A2B-uncensored-fiction-nblora-merged | 24B | ~2B | no disponible | no disponible | Hugging Face, 0 descargas |
+| electroglyph/LFM2.5-24B-A2B-uncensored (modelo base) | 24B | ~2B | no disponible | no disponible | Hugging Face |
 | Familia LFM2.5 de Liquid AI (modelo original) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento, contexto ni licencia de los modelos comparables en la informacion proporcionada, por lo que la comparativa se limita a parametros y disponibilidad.
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento, contexto ni licencia de los modelos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/electroglyph/LFM2.5-24B-A2B-uncensored-fiction-nblora-merged
+- Modelo en Hugging Face: https://huggingface.co/electroglyph/LFM2.5-24B-A2B-uncensored-fiction-nblora-merged
 - Modelo base: https://huggingface.co/electroglyph/LFM2.5-24B-A2B-uncensored
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de Transformers: https://huggingface.co/docs/transformers

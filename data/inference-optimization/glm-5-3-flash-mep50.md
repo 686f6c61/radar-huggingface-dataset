@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash-MEP50 es una versión podada del modelo GLM-5.3-Flash de Z.ai, publicada por el usuario `inference-optimization` en HuggingFace. El modelo original es un sistema multimodal de 320 mil millones de parámetros con arquitectura MoE (Mixture of Experts) y solo 18 mil millones de parámetros activos, diseñado para ofrecer un rendimiento cercano a Claude Opus 4.8 en tareas de código y agénticas a un coste sustancialmente menor. Esta variante elimina el 50% de los expertos enrutados de cada capa MoE mediante poda por magnitud de los pesos del router, reduciendo el total de parámetros a 165,48 mil millones.
+GLM-5.3-Flash-MEP50 es una versión podada del modelo GLM-5.3-Flash de Z.ai, publicada por el usuario `inference-optimization` en Hugging Face. El modelo original es un sistema multimodal de 320 mil millones de parámetros con arquitectura MoE (Mixture of Experts) y solo 18 mil millones de parámetros activos, diseñado para ofrecer un rendimiento cercano a Claude Opus 4.8 en tareas de código y agénticas a un coste sustancialmente menor. Esta variante elimina el 50% de los expertos enrutados de cada capa MoE mediante poda por magnitud de los pesos del router, reduciendo el total de parámetros a 165,48 mil millones.
 
 La poda se realizó con la librería `compressed-tensors` del ecosistema vLLM, conservando intactos la capa MTP (Multi-Token Prediction), los expertos compartidos y la torre de visión. El resultado es un modelo más ligero que mantiene la arquitectura general del original, aunque con una capacidad reducida en las capas de mezcla de expertos. Esta versión es relevante para entornos donde el despliegue del modelo completo de 320B resulta inviable por limitaciones de memoria o coste, ofreciendo un equilibrio entre rendimiento y recursos.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 165,48B parámetros, en FP16 se necesitarían aproximadamente 331 GB de VRAM solo para los pesos. Con cuantización a 8 bits, unos 165 GB; a 4 bits, unos 83 GB. No se especifica el formato de cuantización disponible.
 - GPU recomendadas: para ejecución en FP16 se requieren múltiples GPUs de alta gama, como 4x A100 80GB o 8x RTX 4090 24GB. Con cuantización 4 bits, podría caber en 2x A100 80GB o 4x RTX 4090.
 - Compatibilidad con GPUs de consumo: no es viable en una sola GPU de consumo (máximo 24 GB) sin cuantización extrema y offloading a CPU, lo que degradaría la latencia.
-- Opciones de despliegue: al usar `compressed-tensors`, es compatible con vLLM y llama.cpp (si se convierte a GGUF). También se puede usar con HuggingFace Transformers, aunque el rendimiento óptimo se obtiene con vLLM.
+- Opciones de despliegue: al usar `compressed-tensors`, es compatible con vLLM y llama.cpp (si se convierte a GGUF). También se puede usar con Hugging Face Transformers, aunque el rendimiento óptimo se obtiene con vLLM.
 - Latencia y throughput: no se dispone de datos medidos para esta versión. El modelo base tiene un throughput alto gracias a los 18B activos, pero la poda puede alterar el balance de carga entre expertos.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No se dispone de otros modelos podados de la misma familia para comparar directa
 
 ## Enlaces
 
-- [HuggingFace: inference-optimization/GLM-5.3-Flash-MEP50](https://huggingface.co/inference-optimization/GLM-5.3-Flash-MEP50)
+- [Hugging Face: inference-optimization/GLM-5.3-Flash-MEP50](https://huggingface.co/inference-optimization/GLM-5.3-Flash-MEP50)
 - [Modelo base: zai-org/GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3-Flash)
 - [Documentación de Unsloth sobre GLM-5.3-Flash](https://unsloth.ai/docs/models/glm-5.3)
 - [Análisis de Artificial Analysis](https://artificialanalysis.ai/models/glm-5-3-flash)

@@ -4,7 +4,7 @@
 
 El modelo `bangla-paraphrase-banglat5` es un sistema de generación de paráfrasis en bengalí desarrollado por AvinabhDutta-Dev, construido mediante fine-tuning del modelo base `csebuetnlp/banglat5` sobre el dataset `csebuetnlp/BanglaParaphrase`. Se trata de un modelo secuencia a secuencia basado en la arquitectura T5, con 247,6 millones de parámetros, diseñado específicamente para reescribir oraciones y párrafos en bengalí manteniendo el significado semántico pero variando la forma lingüística.
 
-La relevancia de este modelo radica en que aborda una tarea de procesamiento de lenguaje natural para un idioma de bajos recursos como el bengalí, donde las herramientas de paráfrasis automática son escasas. Su publicación en HuggingFace con acceso restringido (gated) sugiere un uso controlado, probablemente con fines de investigación o aplicaciones específicas. El modelo es compatible con el ecosistema `transformers` y puede desplegarse con `text-generation-inference` o `endpoints_compatible`.
+La relevancia de este modelo radica en que aborda una tarea de procesamiento de lenguaje natural para un idioma de bajos recursos como el bengalí, donde las herramientas de paráfrasis automática son escasas. Su publicación en Hugging Face con acceso restringido (gated) sugiere un uso controlado, probablemente con fines de investigación o aplicaciones específicas. El modelo es compatible con el ecosistema `transformers` y puede desplegarse con `text-generation-inference` o `endpoints_compatible`.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No se dispone de información comparativa con otros modelos de paráfrasis en be
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace (gated), lo que limita su uso inmediato en entornos automatizados.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face (gated), lo que limita su uso inmediato en entornos automatizados.
 - Licencia no especificada: la licencia `unspecified-base-model-license` indica que no se han definido términos claros de uso comercial; se debe consultar la licencia del modelo base `csebuetnlp/banglat5` y contactar al autor antes de usos productivos.
 - Riesgo de alucinación: como todo modelo generativo, puede producir paráfrasis que alteren el significado original, especialmente en oraciones ambiguas o con lenguaje figurado. Se recomienda validación humana para textos críticos.
 - Sesgos potenciales: al entrenarse sobre un dataset específico (BanglaParaphrase), puede reflejar sesgos del corpus, como preferencias de registro o variantes dialectales del bengalí.
@@ -78,8 +78,8 @@ No se dispone de información comparativa con otros modelos de paráfrasis en be
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AvinabhDutta-Dev/bangla-paraphrase-banglat5
-- Perfil del autor en HuggingFace: https://huggingface.co/AvinabhDutta-Dev
+- Modelo en Hugging Face: https://huggingface.co/AvinabhDutta-Dev/bangla-paraphrase-banglat5
+- Perfil del autor en Hugging Face: https://huggingface.co/AvinabhDutta-Dev
 - Perfil del autor en GitHub: https://github.com/AvinabhDutta-Dev/
 - Paper de BanglaT5 (modelo base): https://arxiv.org/abs/2205.11081
 - DOI del modelo: https://doi.org/10.57967/hf/9998

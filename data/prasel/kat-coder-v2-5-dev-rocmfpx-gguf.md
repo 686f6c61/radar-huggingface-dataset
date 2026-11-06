@@ -65,6 +65,6 @@ No se dispone de información comparativa con otros modelos en este repositorio.
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/prasel/KAT-Coder-V2.5-Dev-ROCmFPX-GGUF)
+- [Repositorio Hugging Face](https://huggingface.co/prasel/KAT-Coder-V2.5-Dev-ROCmFPX-GGUF)
 - [Modelo base: Kwaipilot/KAT-Coder-V2.5-Dev](https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev)
 - [Repositorio ROCmFPX en GitHub](https://github.com/charlie12345/ROCmFPX)

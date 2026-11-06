@@ -59,7 +59,7 @@ No disponible. No se dispone de información sobre modelos comparables, ya que e
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/clark2002/paper_011085636_few_shot_multimodal
+- Repositorio de Hugging Face: https://huggingface.co/clark2002/paper_011085636_few_shot_multimodal
 - Resultados de búsqueda web relacionados (no afiliados al repositorio):
   - FSOD-VFM (ICLR 2026): https://github.com/Intellindust-AI-Lab/FSOD-VFM/
   - Few-Shot Object Detection: A Survey: https://dl.acm.org/doi/full/10.1145/3519022

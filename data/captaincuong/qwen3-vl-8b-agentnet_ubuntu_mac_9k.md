@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-VL-8B-agentnet_ubuntu_mac_9k es un ajuste fino completo (full fine-tuning) del modelo multimodal Qwen/Qwen3-VL-8B-Instruct, desarrollado por el usuario CaptainCuong y publicado en HuggingFace. El modelo parte de la arquitectura Qwen3-VL de Alibaba, un transformer multimodal de tipo image-text-to-text con aproximadamente 8.770 millones de parámetros, y ha sido reentrenado sobre un dataset denominado agentnet_ubuntu_mac_9k, presumiblemente orientado a tareas de agente sobre entornos Ubuntu y macOS.
+Qwen3-VL-8B-agentnet_ubuntu_mac_9k es un ajuste fino completo (full fine-tuning) del modelo multimodal Qwen/Qwen3-VL-8B-Instruct, desarrollado por el usuario CaptainCuong y publicado en Hugging Face. El modelo parte de la arquitectura Qwen3-VL de Alibaba, un transformer multimodal de tipo image-text-to-text con aproximadamente 8.770 millones de parámetros, y ha sido reentrenado sobre un dataset denominado agentnet_ubuntu_mac_9k, presumiblemente orientado a tareas de agente sobre entornos Ubuntu y macOS.
 
 El interés de esta ficha es doble: por un lado, documenta un modelo derivado de una familia relevante (Qwen3-VL) que combina comprensión de imágenes y texto; por otro, sirve como ejemplo de adaptación mediante LoRA-free full fine-tuning con Llama Factory sobre un corpus específico de agentes. La información publicada por el autor es muy escasa: la model card es autogenerada por el Trainer, no incluye descripción, datos de entrenamiento, evaluación ni resultados de benchmarks, y el repositorio no declara idiomas soportados.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3-VL-8B-agentnet_ubuntu_mac_9k | ≈8,77 B | no disponible | other | HuggingFace, 0 descargas | Ajuste fino de nicho sin evaluación publicada |
-| Qwen/Qwen3-VL-8B-Instruct | ≈8,77 B (según modelo base) | no disponible en esta ficha | licencia del modelo base | HuggingFace, modelo oficial | Modelo base instructivo, con documentación oficial |
-| Otros ajustes finos de Qwen3-VL-8B | variable | no disponible | variable | HuggingFace | No se dispone de comparativas publicadas en la información proporcionada |
+| Qwen3-VL-8B-agentnet_ubuntu_mac_9k | ≈8,77 B | no disponible | other | Hugging Face, 0 descargas | Ajuste fino de nicho sin evaluación publicada |
+| Qwen/Qwen3-VL-8B-Instruct | ≈8,77 B (según modelo base) | no disponible en esta ficha | licencia del modelo base | Hugging Face, modelo oficial | Modelo base instructivo, con documentación oficial |
+| Otros ajustes finos de Qwen3-VL-8B | variable | no disponible | variable | Hugging Face | No se dispone de comparativas publicadas en la información proporcionada |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CaptainCuong/Qwen3-VL-8B-agentnet_ubuntu_mac_9k
+- Modelo en Hugging Face: https://huggingface.co/CaptainCuong/Qwen3-VL-8B-agentnet_ubuntu_mac_9k
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Llama Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - Transformers: https://github.com/huggingface/transformers

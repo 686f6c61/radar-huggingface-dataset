@@ -66,7 +66,7 @@ No disponible. No se conocen modelos comparables en el contexto de robótica con
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Dongkkka/task_000458_peanut02_seed_v2_original_plus_augment_random_16x_act)
+- [Modelo en Hugging Face](https://huggingface.co/Dongkkka/task_000458_peanut02_seed_v2_original_plus_augment_random_16x_act)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/Dongkkka/task_000458_peanut02_seed_v2_original_plus_augment_random_16x_v30)
 - [Cyclo Intelligence (GitHub)](https://github.com/ROBOTIS-GIT/cyclo_intelligence)## Resumen
 
@@ -135,7 +135,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Dongkkka/task_000458_peanut02_seed_v2_original_plus_augment_random_16x_act)
+- [Modelo en Hugging Face](https://huggingface.co/Dongkkka/task_000458_peanut02_seed_v2_original_plus_augment_random_16x_act)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/Dongkkka/task_000458_peanut02_seed_v2_original_plus_augment_random_16x_v30)
 - [Cyclo Intelligence (GitHub)](https://github.com/ROBOTIS-GIT/cyclo_intelligence)## Resumen
 
@@ -204,6 +204,6 @@ No se dispone de información sobre modelos comparables en la misma categoría d
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Dongkkka/task_000458_peanut02_seed_v2_original_plus_augment_random_16x_act)
+- [Modelo en Hugging Face](https://huggingface.co/Dongkkka/task_000458_peanut02_seed_v2_original_plus_augment_random_16x_act)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/Dongkkka/task_000458_peanut02_seed_v2_original_plus_augment_random_16x_v30)
 - [Cyclo Intelligence (GitHub)](https://github.com/ROBOTIS-GIT/cyclo_intelligence)

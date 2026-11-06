@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ocr-freeform-v3 es un repositorio publicado en HuggingFace por el usuario MikhailKn que, segun su propia model card, no contiene un modelo entrenado sino notas de investigacion y un esbozo de experimento sobre OCR Freeform (reconocimiento optico de caracteres en documentos con maquetacion libre). El repositorio se etiqueta como `research-notes` y `ocr-freeform`, y su autoria lo describe explicitamente como exploratorio: no reclama mejoras de benchmark, ni ablaciones completadas, ni codigo liberado, ni checkpoint entrenado.
+ocr-freeform-v3 es un repositorio publicado en Hugging Face por el usuario MikhailKn que, segun su propia model card, no contiene un modelo entrenado sino notas de investigacion y un esbozo de experimento sobre OCR Freeform (reconocimiento optico de caracteres en documentos con maquetacion libre). El repositorio se etiqueta como `research-notes` y `ocr-freeform`, y su autoria lo describe explicitamente como exploratorio: no reclama mejoras de benchmark, ni ablaciones completadas, ni codigo liberado, ni checkpoint entrenado.
 
 El artefacto principal es un fichero `reading.md` que cubre el alcance de la pregunta de investigacion, los posibles factores de confusion, una comparacion propuesta con lineas base emparejadas, y contexto de evaluacion concreto en torno a los conjuntos de datos FUNSD, SROIE y CORD. El README indica que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha documenta un repositorio de notas, no un modelo desplegabl
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el tag de HuggingFace indica `transformer`, pero la model card no describe ninguna arquitectura; se trata de notas de investigacion) |
+| Arquitectura | no disponible (el tag de Hugging Face indica `transformer`, pero la model card no describe ninguna arquitectura; se trata de notas de investigacion) |
 | Parametros totales | 33.088 (segun metadata de safetensors; no corresponde a un modelo funcional publicado) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Por tanto, esta ficha documenta un repositorio de notas, no un modelo desplegabl
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre arquitectura. El tag `transformer` aparece en la metadata de HuggingFace, pero la model card no describe ninguna topologia, mecanismo de atencion, tokenizador ni diseno de encoder/decoder. El autor indica que el repositorio contiene notas de lectura y un esbozo de experimento, con secciones que deben leerse como planes o hipotesis y no como resultados.
+No hay informacion disponible sobre arquitectura. El tag `transformer` aparece en la metadata de Hugging Face, pero la model card no describe ninguna topologia, mecanismo de atencion, tokenizador ni diseno de encoder/decoder. El autor indica que el repositorio contiene notas de lectura y un esbozo de experimento, con secciones que deben leerse como planes o hipotesis y no como resultados.
 
 Tampoco hay datos de entrenamiento: la model card no menciona numero de tokens, composicion del dataset, ni etapas de ajuste como RLHF o DPO. Lo que si describe es la intencion de evaluar el problema sobre FUNSD, SROIE y CORD, y la exigencia de que cualquier resultado futuro incluya versiones de dataset, comandos, semillas, hardware y registros en bruto. No se declara ningun checkpoint entrenado.
 
@@ -66,7 +66,7 @@ No disponible. Al no tratarse de un modelo entrenado ni de un artefacto de infer
 ## Limitaciones y advertencias
 
 - El repositorio no contiene un modelo entrenado, ni codigo liberado, ni checkpoint: no puede usarse para inferencia bajo ninguna circunstancia.
-- La etiqueta `transformer` de HuggingFace no esta respaldada por ninguna descripcion de arquitectura en la model card y puede inducir a error.
+- La etiqueta `transformer` de Hugging Face no esta respaldada por ninguna descripcion de arquitectura en la model card y puede inducir a error.
 - La cifra de 33.088 parametros totales en la metadata de safetensors no corresponde a un modelo funcional y no debe interpretarse como tamano de un modelo de OCR.
 - No se especifican idiomas soportados, por lo que no hay garantia de cobertura linguistica de ningun tipo.
 - La licencia MIT cubre el repositorio de notas, pero el propio autor advierte de que los terminos de los datos de origen deben revisarse por separado cuando se usen conjuntamente con datasets externos.
@@ -75,5 +75,5 @@ No disponible. Al no tratarse de un modelo entrenado ni de un artefacto de infer
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MikhailKn/ocr-freeform-v3
+- Hugging Face: https://huggingface.co/MikhailKn/ocr-freeform-v3
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

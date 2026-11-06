@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/gemma-4-12b-it-prune_width_ffn50
+- Modelo en Hugging Face: https://huggingface.co/mrysh/gemma-4-12b-it-prune_width_ffn50
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - NVIDIA ModelOpt (libreria de pruning utilizada): https://github.com/NVIDIA/TensorRT-Model-Optimizer
 - vLLM (motor de inferencia usado en el benchmark): https://github.com/vllm-project/vllm

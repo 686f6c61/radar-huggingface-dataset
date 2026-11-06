@@ -2,11 +2,11 @@
 
 ## Resumen
 
-GPT-SoVITS es un sistema de conversión de texto a voz (TTS) publicado en HuggingFace por el usuario alixya bajo licencia MIT. El repositorio, de 6,9 GB, contiene los pesos preentrenados utilizados por el proyecto de código abierto GPT-SoVITS, alojado en el repositorio RVC-Boss/GPT-SoVITS de GitHub. Se trata, por tanto, de una réplica o empaquetado de los checkpoints del sistema original, no de un modelo entrenado desde cero por el autor de esta ficha.
+GPT-SoVITS es un sistema de conversión de texto a voz (TTS) publicado en Hugging Face por el usuario alixya bajo licencia MIT. El repositorio, de 6,9 GB, contiene los pesos preentrenados utilizados por el proyecto de código abierto GPT-SoVITS, alojado en el repositorio RVC-Boss/GPT-SoVITS de GitHub. Se trata, por tanto, de una réplica o empaquetado de los checkpoints del sistema original, no de un modelo entrenado desde cero por el autor de esta ficha.
 
 El sistema combina un modelo basado en GPT para la generación de tokens acústicos y un modelo SoVITS (variante de VITS) para la síntesis de voz propiamente dicha, lo que permite clonación de voz few-shot a partir de pocos segundos de audio de referencia. Es relevante para desarrolladores que necesitan integrar TTS de calidad con clonación de voz en aplicaciones locales, ya que el proyecto original goza de amplia adopción en la comunidad y funciona en hardware de consumo.
 
-La información disponible en la model card es mínima: solo declara la licencia MIT, la etiqueta de pipeline text-to-speech y una referencia al repositorio de GitHub. No se especifican idiomas soportados, arquitectura detallada, número de parámetros ni resultados de benchmarks en esta ficha de HuggingFace.
+La información disponible en la model card es mínima: solo declara la licencia MIT, la etiqueta de pipeline text-to-speech y una referencia al repositorio de GitHub. No se especifican idiomas soportados, arquitectura detallada, número de parámetros ni resultados de benchmarks en esta ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -75,5 +75,5 @@ No disponible. No se han proporcionado datos de rendimiento ni especificaciones 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alixya/GPT-SoVITS
+- Hugging Face: https://huggingface.co/alixya/GPT-SoVITS
 - Repositorio original en GitHub: https://github.com/RVC-Boss/GPT-SoVITS

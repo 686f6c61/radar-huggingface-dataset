@@ -65,6 +65,6 @@ No disponible. No se han encontrado modelos comparables especificos en la inform
 
 ## Enlaces
 
-- [HuggingFace: DeeplearningVN/lora_model](https://huggingface.co/DeeplearningVN/lora_model)
+- [Hugging Face: DeeplearningVN/lora_model](https://huggingface.co/DeeplearningVN/lora_model)
 - [Unsloth (libreria de entrenamiento)](https://github.com/unslothai/unsloth)
 - [Articulo de Wikipedia sobre LoRA](https://en.wikipedia.org/wiki/LoRA_(machine_learning))

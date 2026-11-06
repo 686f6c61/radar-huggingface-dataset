@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PrincessBubblegum es un repositorio de modelo publicado en HuggingFace por el usuario EmanuelGames bajo licencia Apache 2.0. En el momento de la consulta, el repositorio apenas contiene informacion: la model card se limita a declarar la licencia, no se especifica pipeline, idiomas soportados, arquitectura ni datos de entrenamiento, y el propio autor no ha documentado el proposito del modelo.
+PrincessBubblegum es un repositorio de modelo publicado en Hugging Face por el usuario EmanuelGames bajo licencia Apache 2.0. En el momento de la consulta, el repositorio apenas contiene informacion: la model card se limita a declarar la licencia, no se especifica pipeline, idiomas soportados, arquitectura ni datos de entrenamiento, y el propio autor no ha documentado el proposito del modelo.
 
 El unico dato cuantitativo disponible es el tamano del repositorio, 0,1 GB, ademas de las marcas temporales de creacion y actualizacion (12 de septiembre de 2026, con menos de un minuto de diferencia entre ambas), lo que sugiere una subida automatizada o una publicacion de prueba sin iteracion posterior. El modelo acumula 0 descargas y 0 likes, por lo que no existe evidencia de uso en la comunidad.
 
@@ -41,7 +41,7 @@ Respecto al entrenamiento, no se documenta el volumen de tokens, la composicion 
 - Generacion de codigo: no verificada.
 - Soporte de tool calling o function calling: no documentado.
 - Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingues: no documentadas; el campo de idiomas esta vacio en la ficha de HuggingFace.
+- Capacidades multilingues: no documentadas; el campo de idiomas esta vacio en la ficha de Hugging Face.
 - Capacidades multimodales (vision, audio): no documentadas.
 - Modo de razonamiento extendido (thinking mode): no documentado.
 - Alineacion, filtros de seguridad y comportamiento en produccion: no documentados.
@@ -52,9 +52,9 @@ En resumen: ninguna capacidad puede darse por sentada con la informacion disponi
 
 Advertencia previa: al no existir documentacion de capacidades, los siguientes escenarios son hipoteticos y solo resultarian aplicables si una evaluacion directa del modelo confirma las capacidades correspondientes. Se incluyen como marco de evaluacion, no como recomendacion de uso.
 
-- Evaluacion exploratoria de artefactos de HuggingFace: clonar el repositorio, inspeccionar los ficheros de pesos y determinar el formato y el tamano real del modelo antes de plantear cualquier integracion.
+- Evaluacion exploratoria de artefactos de Hugging Face: clonar el repositorio, inspeccionar los ficheros de pesos y determinar el formato y el tamano real del modelo antes de plantear cualquier integracion.
 - Prueba de concepto en un entorno aislado: si los pesos resultan cargables con `transformers` o `llama.cpp`, ejecutar una bateria minima de prompts para determinar si el modelo genera texto coherente y en que idiomas.
-- Analisis forense de repositorios: usar este caso como ejemplo de publicacion sin model card para estudiar practicas de documentacion deficientes en HuggingFace.
+- Analisis forense de repositorios: usar este caso como ejemplo de publicacion sin model card para estudiar practicas de documentacion deficientes en Hugging Face.
 - Docencia sobre trazabilidad de modelos: ilustrar por que la licencia Apache 2.0 por si sola no es suficiente para adoptar un modelo en un proyecto, al faltar informacion sobre datos de entrenamiento y sesgos.
 - Descarte rapido en procesos de seleccion: en un pipeline de evaluacion de modelos, este repositorio se descartaria en la fase de cribado por ausencia de benchmarks, idiomas declarados y evidencia de uso.
 - Auditoria de licencias: si finalmente se confirma que los pesos se distribuyen bajo Apache 2.0, el modelo seria tecnicamente reutilizable en productos comerciales, pero se requeriria verificar la procedencia de los datos de entrenamiento para descartar obligaciones adicionales.
@@ -81,7 +81,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 - Ausencia de model card: no hay informacion sobre datos de entrenamiento, arquitectura ni intencion del autor, lo que impide evaluar sesgos, calidad o idoneidad para cualquier tarea.
 - Riesgo de alucinacion: indeterminado. No puede evaluarse sin conocer el modelo ni disponer de pruebas de generacion.
 - Sesgos conocidos: no disponibles. Al desconocerse la composicion del dataset, no puede descartarse la presencia de sesgos de genero, idioma, cultura o ideologia.
-- Limitaciones de contexto e idioma: no disponibles. El campo de idiomas de la ficha de HuggingFace esta vacio.
+- Limitaciones de contexto e idioma: no disponibles. El campo de idiomas de la ficha de Hugging Face esta vacio.
 - Ausencia de benchmarks: no existe ninguna evidencia cuantitativa de rendimiento, ni propia ni de terceros.
 - Riesgo de contenido inapropiado: el nombre del repositorio remite a un personaje de ficcion; no hay informacion sobre si los pesos generan contenido filtrado o sin filtrar, lo que exige prudencia antes de exponerlo a usuarios finales.
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion con atribucion y conservacion del aviso de licencia. Sin embargo, el autor no ha declarado la procedencia de los datos de entrenamiento, por lo que no puede garantizarse que el modelo no incorpore material con restricciones adicionales. Conviene asumir este riesgo antes de un despliegue comercial.
@@ -91,7 +91,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EmanuelGames/PrincessBubblegum
+- Repositorio en Hugging Face: https://huggingface.co/EmanuelGames/PrincessBubblegum
 - Perfil del autor: https://huggingface.co/EmanuelGames
 - Paper tecnico: no disponible
 - Blog o anuncio oficial: no disponible

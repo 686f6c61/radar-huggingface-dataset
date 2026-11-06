@@ -69,8 +69,8 @@ Los valores anteriores son los declarados por NVIDIA en la `model-index` de la m
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto/audio | WER LibriSpeech clean | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| `parakeet-tdt-0.6b-v2` | 0,6B | Hasta 24 min | 1,69 % | CC-BY-4.0 | HuggingFace |
-| `parakeet-tdt-0.6b-v3` | 0,6B según el nombre | No disponible | No disponible | No disponible | HuggingFace según la model card |
+| `parakeet-tdt-0.6b-v2` | 0,6B | Hasta 24 min | 1,69 % | CC-BY-4.0 | Hugging Face |
+| `parakeet-tdt-0.6b-v3` | 0,6B según el nombre | No disponible | No disponible | No disponible | Hugging Face según la model card |
 | Otras alternativas ASR de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han proporcionado resultados de benchmarks ni especificaciones de modelos alternativos, por lo que no es posible establecer una comparativa cuantitativa fiable con otros ASR. La única alternativa documentada en la model card es `parakeet-tdt-0.6b-v3`, que añade soporte para 25 idiomas europeos, pero sin métricas ni licencia detalladas en la información disponible.
@@ -88,8 +88,8 @@ No se han proporcionado resultados de benchmarks ni especificaciones de modelos 
 - El audio puede contener datos personales; el despliegue debe incluir controles de privacidad, retención y acceso.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/nvidia/parakeet-tdt-0.6b-v2
+- Modelo en Hugging Face: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/nvidia/parakeet-tdt-0.6b-v2
 - Versión multilingüe v3: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Colección NGC: https://catalog.ngc.nvidia.com/orgs/nvidia/collections/parakeet-tdt-0.6b-v2
 - Documentación de NeMo ASR: https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/asr/models.html

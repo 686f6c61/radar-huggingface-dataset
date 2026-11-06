@@ -1,7 +1,7 @@
 # resistz/TTCL-AIME24-RLCR-Qwen3-8B-DAPO-Math14K
 
 <thinking>
-El usuario me pide una ficha técnica de un modelo de HuggingFace. La información proporcionada es limitada pero suficiente para algunos apartados. Debo ser riguroso y no inventar datos. Sin embargo, conozco el modelo base Qwen3-8B, del cual sí hay información pública. Puedo usar esos datos siempre que los marque claramente como del modelo base.
+El usuario me pide una ficha técnica de un modelo de Hugging Face. La información proporcionada es limitada pero suficiente para algunos apartados. Debo ser riguroso y no inventar datos. Sin embargo, conozco el modelo base Qwen3-8B, del cual sí hay información pública. Puedo usar esos datos siempre que los marque claramente como del modelo base.
 
 Voy a estructurar la ficha según lo solicitado.
 </thinking>
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: en precisión FP16, el modelo requiere aproximadamente 16,4 GB (tamaño del repositorio). Con cuantización de 8 bits, se reduce a unos 8-9 GB; con 4 bits, a unos 5-6 GB.
 - GPU recomendadas: para FP16, se recomienda una GPU con al menos 20 GB de VRAM, como NVIDIA RTX 4090, A100 40GB o H100. Para cuantizaciones de 4 u 8 bits, puede ejecutarse en GPUs de consumo como RTX 3080/3090/4070/4080 con 10-16 GB de VRAM.
 - Caben en GPU de consumo: sí, en cuantizaciones de 4 bits o 8 bits en GPUs con 8-16 GB de VRAM. En FP16 requiere GPUs de gama alta o profesionales.
-- Opciones de despliegue: al ser un modelo safetensors basado en Qwen3, es compatible con vLLM, TGI (Text Generation Inference), llama.cpp (mediante conversión a GGUF), Ollama (tras conversión) y Transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo safetensors basado en Qwen3, es compatible con vLLM, TGI (Text Generation Inference), llama.cpp (mediante conversión a GGUF), Ollama (tras conversión) y Transformers de Hugging Face.
 - Latencia y throughput estimados: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| resistz/TTCL-AIME24-RLCR-Qwen3-8B-DAPO-Math14K | 8,19B | 32K (extensible a 131K) | MIT | HuggingFace | Ajuste experimental sobre AIME24 |
-| Qwen/Qwen3-8B | 8,19B | 32K (extensible a 131K) | Apache 2.0 | HuggingFace | Modelo base, multilingüe, con modo de pensamiento |
-| Meta-Llama-3.1-8B-Instruct | 8,03B | 128K | Llama 3.1 Community License | HuggingFace | Alternativa generalista, sin especialización matemática |
-| DeepSeek-R1-Distill-Qwen-7B | 7,6B | 32K | MIT | HuggingFace | Especializado en razonamiento matemático, destilado de R1 |
+| resistz/TTCL-AIME24-RLCR-Qwen3-8B-DAPO-Math14K | 8,19B | 32K (extensible a 131K) | MIT | Hugging Face | Ajuste experimental sobre AIME24 |
+| Qwen/Qwen3-8B | 8,19B | 32K (extensible a 131K) | Apache 2.0 | Hugging Face | Modelo base, multilingüe, con modo de pensamiento |
+| Meta-Llama-3.1-8B-Instruct | 8,03B | 128K | Llama 3.1 Community License | Hugging Face | Alternativa generalista, sin especialización matemática |
+| DeepSeek-R1-Distill-Qwen-7B | 7,6B | 32K | MIT | Hugging Face | Especializado en razonamiento matemático, destilado de R1 |
 
 ## Limitaciones y advertencias
 - Sesgos conocidos: no disponible en la información proporcionada, aunque al derivar de Qwen3-8B puede heredar sesgos presentes en los datos de entrenamiento del modelo base.
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Caveats para produccion: el modelo es experimental, con cero descargas y sin métricas publicadas. No se recomienda su uso en producción sin una evaluación exhaustiva en el dominio objetivo. La falta de documentación sobre el proceso de entrenamiento dificulta la reproducibilidad.
 
 ## Enlaces
-- [HuggingFace: resistz/TTCL-AIME24-RLCR-Qwen3-8B-DAPO-Math14K](https://huggingface.co/resistz/TTCL-AIME24-RLCR-Qwen3-8B-DAPO-Math14K)
+- [Hugging Face: resistz/TTCL-AIME24-RLCR-Qwen3-8B-DAPO-Math14K](https://huggingface.co/resistz/TTCL-AIME24-RLCR-Qwen3-8B-DAPO-Math14K)
 - [Modelo base: Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B)
 - [Paper de Qwen3 (arXiv)](https://arxiv.org/abs/2505.09388) (referencia general del modelo base)
 - [Repositorio de Qwen3 en GitHub](https://github.com/QwenLM/Qwen3) (referencia general)

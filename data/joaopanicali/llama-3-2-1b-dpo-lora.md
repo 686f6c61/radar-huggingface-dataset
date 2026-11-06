@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| joaopanicali/llama-3.2-1b-dpo-lora | Adaptador sobre 1,23B | 128.000 (base) | No disponible | HuggingFace, sin descargas |
-| meta-llama/Llama-3.2-1B-Instruct | 1,23B | 128.000 | Llama 3.2 Community License | HuggingFace, ampliamente usado |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 | Apache 2.0 | HuggingFace, muy usado |
-| Gemma 2 2B IT | 2,6B | 8.192 | Gemma Terms of Use | HuggingFace, ampliamente usado |
+| joaopanicali/llama-3.2-1b-dpo-lora | Adaptador sobre 1,23B | 128.000 (base) | No disponible | Hugging Face, sin descargas |
+| meta-llama/Llama-3.2-1B-Instruct | 1,23B | 128.000 | Llama 3.2 Community License | Hugging Face, ampliamente usado |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 | Apache 2.0 | Hugging Face, muy usado |
+| Gemma 2 2B IT | 2,6B | 8.192 | Gemma Terms of Use | Hugging Face, ampliamente usado |
 
 No hay datos de rendimiento del adaptador que permitan una comparacion cuantitativa; la tabla anterior solo contrasta caracteristicas declaradas de modelos de la misma categoria de tamano.
 
@@ -88,7 +88,7 @@ No hay datos de rendimiento del adaptador que permitan una comparacion cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joaopanicali/llama-3.2-1b-dpo-lora
+- Hugging Face: https://huggingface.co/joaopanicali/llama-3.2-1b-dpo-lora
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Articulo de referencia citado en las etiquetas (impacto ambiental, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Documentacion de Meta sobre Llama 3.2: https://www.llama.com/

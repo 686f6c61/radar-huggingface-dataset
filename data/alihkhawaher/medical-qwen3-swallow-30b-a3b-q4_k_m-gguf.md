@@ -71,7 +71,7 @@ No se dispone de informacion comparativa publicada entre Medical-Qwen3-Swallow-3
 
 ## Enlaces
 
-- [HuggingFace - alihkhawaher/Medical-Qwen3-Swallow-30B-A3B-Q4_K_M-GGUF](https://huggingface.co/alihkhawaher/Medical-Qwen3-Swallow-30B-A3B-Q4_K_M-GGUF)
+- [Hugging Face - alihkhawaher/Medical-Qwen3-Swallow-30B-A3B-Q4_K_M-GGUF](https://huggingface.co/alihkhawaher/Medical-Qwen3-Swallow-30B-A3B-Q4_K_M-GGUF)
 - [Modelo base - tokyotech-llm/Medical-Qwen3-Swallow-30B-A3B](https://huggingface.co/tokyotech-llm/Medical-Qwen3-Swallow-30B-A3B)
 - [Qwen3 Swallow - sitio oficial](https://swallow-llm.github.io/qwen3-swallow.en.html)
 - [Repositorio Qwen3 en GitHub](https://github.com/QwenLM/Qwen3)

@@ -79,8 +79,8 @@ La información disponible solo incluye métricas de validación del propio alin
 
 | Modelo | Tipo | Parametros | Contexto / entrada | Metrica publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| asatheesh/latent-mas-aligner-phi3-mini-seed-0 | Alineador de seguridad para MAS latentes | No disponible (repo de 0,1 GB) | `[B, K, 3072]`, K variable | AUC 0,9122; tau @ fpr10 = 0,6743503809 | Apache 2.0 | HuggingFace, 0 descargas |
-| YuanXiaopang/latentmas-aligner-qwen3-4b | Alineador de seguridad para MAS latentes (modelo objetivo Qwen3-4B) | No disponible | `[B, K, 2560]`, K variable | No disponible | No disponible | HuggingFace (repositorio de origen del estudio) |
+| asatheesh/latent-mas-aligner-phi3-mini-seed-0 | Alineador de seguridad para MAS latentes | No disponible (repo de 0,1 GB) | `[B, K, 3072]`, K variable | AUC 0,9122; tau @ fpr10 = 0,6743503809 | Apache 2.0 | Hugging Face, 0 descargas |
+| YuanXiaopang/latentmas-aligner-qwen3-4b | Alineador de seguridad para MAS latentes (modelo objetivo Qwen3-4B) | No disponible | `[B, K, 2560]`, K variable | No disponible | No disponible | Hugging Face (repositorio de origen del estudio) |
 | Llama-Guard-3-8B | Clasificador de moderacion sobre texto | 8 000 millones | Ventana de tokens de texto | No disponible en esta busqueda | Llama 3 Community License | Ampliamente desplegado; aqui se usa como tail congelado |
 | Llama-Guard-3-1B | Clasificador de moderacion sobre texto | 1 000 millones | Ventana de tokens de texto | No disponible en esta busqueda | Llama 3 Community License | Modelo de referencia para moderacion ligera |
 
@@ -102,7 +102,7 @@ La comparación es imperfecta por diseño: los dos primeros son módulos auxilia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asatheesh/latent-mas-aligner-phi3-mini-seed-0
+- Modelo en Hugging Face: https://huggingface.co/asatheesh/latent-mas-aligner-phi3-mini-seed-0
 - Repositorio de código LatentMASHarmBench: https://github.com/Asatheesh6561/LatentMASHarmBench
 - Repositorio de origen del estudio topología x semilla: https://huggingface.co/YuanXiaopang/latentmas-aligner-qwen3-4b
 - Modelo base: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct

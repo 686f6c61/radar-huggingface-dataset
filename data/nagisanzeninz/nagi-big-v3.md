@@ -109,7 +109,7 @@ En la suite V4 (evidencia historica) el Big v3 alcanza 78,00% en politica, 68,00
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nagisanzeninz/nagi-big-v3
+- Hugging Face: https://huggingface.co/nagisanzeninz/nagi-big-v3
 - Repositorio del SDK Nagi: https://github.com/nagisanzenin/nagi (distribucion `nagi-decisions`)
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B (revision `851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a`)
 - SHA256 del adaptador: `cbade091c3aa84b7fd9d814655f61ce64528bbdc4465851ef23ffc2bf77f585d`

@@ -79,7 +79,7 @@ El checkpoint publicado corresponde a la semilla 42, fijada antes de evaluar, y 
 
 | Modelo | Parámetros | Contexto | Accuracy (Titanic) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| titanic-federated-dp-mlp | 978-986 | no aplica | 0,730 ± 0,036 (ε=23,6) | MIT | HuggingFace |
+| titanic-federated-dp-mlp | 978-986 | no aplica | 0,730 ± 0,036 (ε=23,6) | MIT | Hugging Face |
 | Regla trivial por sexo | 0 | no aplica | 0,777 | — | referencia del propio autor |
 | MLP centralizada (misma arquitectura) | ~986 | no aplica | 0,810 ± 0,013 | — | solo en la model card |
 | Modelos tabulares genéricos (XGBoost, LightGBM) | no disponible | no aplica | no disponible | varía | amplia |
@@ -99,6 +99,6 @@ No se han publicado comparaciones frente a otros modelos federados con DP en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bernardozschaber/titanic-federated-dp-mlp
+- Hugging Face: https://huggingface.co/bernardozschaber/titanic-federated-dp-mlp
 - Notebook de entrenamiento en Kaggle: https://www.kaggle.com/code/bernardozschaber/titanic-federated-dp
 - Tutorial de origen: https://github.com/bernardozschaber/titanic-dataset

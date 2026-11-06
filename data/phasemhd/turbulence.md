@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`phaseMHD/Turbulence` es un repositorio publicado en HuggingFace por el usuario `phaseMHD`. A fecha de la consulta acumula 0 descargas y 0 likes, y su model card es una plantilla vacía sin ninguna sección completada: no declara autoría real, tipo de modelo, idiomas, licencia, datos de entrenamiento ni resultados de evaluación. El único dato objetivo sobre su contenido es el tamaño del repositorio, 10,3 GB, lo que indica que aloja artefactos pesados (presumiblemente pesos), pero sin confirmación del formato.
+`phaseMHD/Turbulence` es un repositorio publicado en Hugging Face por el usuario `phaseMHD`. A fecha de la consulta acumula 0 descargas y 0 likes, y su model card es una plantilla vacía sin ninguna sección completada: no declara autoría real, tipo de modelo, idiomas, licencia, datos de entrenamiento ni resultados de evaluación. El único dato objetivo sobre su contenido es el tamaño del repositorio, 10,3 GB, lo que indica que aloja artefactos pesados (presumiblemente pesos), pero sin confirmación del formato.
 
-La información disponible no permite afirmar que se trate de un modelo de lenguaje. El nombre del repositorio y del autor sugieren un posible vínculo con simulación de turbulencia en magnetohidrodinámica (MHD), pero se trata de una inferencia a partir de la nomenclatura y no de un dato confirmado en la documentación. Del mismo modo, la etiqueta `arxiv:1910.09700` que aparece en los metadatos corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono, citado en la propia plantilla de model card de HuggingFace; no es un paper sobre el modelo.
+La información disponible no permite afirmar que se trate de un modelo de lenguaje. El nombre del repositorio y del autor sugieren un posible vínculo con simulación de turbulencia en magnetohidrodinámica (MHD), pero se trata de una inferencia a partir de la nomenclatura y no de un dato confirmado en la documentación. Del mismo modo, la etiqueta `arxiv:1910.09700` que aparece en los metadatos corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono, citado en la propia plantilla de model card de Hugging Face; no es un paper sobre el modelo.
 
 Por todo ello, esta ficha debe leerse como un inventario de lo que se puede verificar y de lo que falta por verificar. No hay base para recomendarlo en producción ni para descartarlo por motivos técnicos: simplemente no existe documentación pública suficiente para evaluarlo.
 
@@ -20,7 +20,7 @@ Por todo ello, esta ficha debe leerse como un inventario de lo que se puede veri
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | no disponible (el repositorio ocupa 10,3 GB, pero no se especifica el formato de los artefactos) |
-| Desarrollador | `phaseMHD` (usuario de HuggingFace) |
+| Desarrollador | `phaseMHD` (usuario de Hugging Face) |
 | Pipeline declarado | no disponible (campo vacío en los metadatos) |
 | Tarea declarada | no disponible |
 | Fecha de creación | 21 de septiembre de 2026, según metadatos del repositorio |
@@ -31,7 +31,7 @@ Por todo ello, esta ficha debe leerse como un inventario de lo que se puede veri
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card del repositorio es la plantilla por defecto de HuggingFace sin editar, con todos los campos marcados como `[More Information Needed]`. No se especifica si se trata de un transformer, un MoE, un modelo de espacio de estados, un modelo híbrido o cualquier otra familia de arquitectura. Tampoco hay información sobre número de tokens de entrenamiento, composición del dataset, uso de RLHF/DPO, técnicas de alineación o innovaciones como decodificación especulativa o atención lineal.
+No disponible. La model card del repositorio es la plantilla por defecto de Hugging Face sin editar, con todos los campos marcados como `[More Information Needed]`. No se especifica si se trata de un transformer, un MoE, un modelo de espacio de estados, un modelo híbrido o cualquier otra familia de arquitectura. Tampoco hay información sobre número de tokens de entrenamiento, composición del dataset, uso de RLHF/DPO, técnicas de alineación o innovaciones como decodificación especulativa o atención lineal.
 
 No se ha publicado ninguna descripción del procedimiento de entrenamiento, hiperparámetros, infraestructura de cómputo ni impacto ambiental más allá de la referencia genérica al calculador de emisiones que aparece en la propia plantilla.
 
@@ -88,23 +88,23 @@ No disponible. Sin conocer la tarea ni la familia de arquitectura no es posible 
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card es la plantilla por defecto de HuggingFace, sin una sola sección completada. No hay descripción, usos previstos, usos fuera de alcance ni recomendaciones.
+- Documentación inexistente: la model card es la plantilla por defecto de Hugging Face, sin una sola sección completada. No hay descripción, usos previstos, usos fuera de alcance ni recomendaciones.
 - Licencia no declarada: al no especificarse licencia, no hay autorización explícita para uso comercial ni para redistribución. En la práctica, esto equivale a ausencia de derechos concedidos y supone un riesgo legal directo para cualquier uso empresarial.
 - Cero validación comunitaria: 0 descargas y 0 likes implican que nadie ha reportado reproducibilidad, calidad ni comportamiento del artefacto. No hay señal externa de que los pesos sean funcionales.
 - Arquitectura y formato desconocidos: imposible planificar cuantización, despliegue o integración sin determinar previamente qué contienen los 10,3 GB del repositorio.
 - Riesgo de alucinación: no evaluable. No hay información sobre el modelo ni evidencias de que se trate de un modelo generativo de lenguaje.
 - Sesgos: no evaluables. No se documenta composición del dataset ni proceso de alineación.
 - Idiomas y contexto: no disponibles. No se puede asumir soporte de castellano ni de ningún otro idioma.
-- Etiqueta potencialmente engañosa: `arxiv:1910.09700` apunta a Lacoste et al. (2019) sobre estimación de emisiones de carbono, un texto citado en la plantilla de model card de HuggingFace. No debe interpretarse como el paper del modelo.
+- Etiqueta potencialmente engañosa: `arxiv:1910.09700` apunta a Lacoste et al. (2019) sobre estimación de emisiones de carbono, un texto citado en la plantilla de model card de Hugging Face. No debe interpretarse como el paper del modelo.
 - Metadatos atípicos: las fechas de creación y actualización indican septiembre de 2026, lo que conviene verificar contra el reloj del sistema antes de sacar conclusiones sobre la antigüedad del repositorio.
 - Nombre sugestivo: el identificador `phaseMHD/Turbulence` apunta a un posible contexto de magnetohidrodinámica, pero se trata de una inferencia nominal sin respaldo documental. Cualquier uso basado en esa suposición es una apuesta.
 - Recomendación operativa: no desplegar en producción, no integrar en pipelines automatizados y no redistribuir hasta que el autor publique licencia, arquitectura, formato de pesos y evaluación mínima.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/phaseMHD/Turbulence
+- Repositorio en Hugging Face: https://huggingface.co/phaseMHD/Turbulence
 - Referencia de la etiqueta `arxiv:1910.09700` (Lacoste et al., 2019, sobre estimación de emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de machine learning citado en la plantilla: https://mlco2.github.io/impact
-- Plantilla de model card de HuggingFace usada sin editar: https://github.com/huggingface/huggingface_hub/blob/main/src/huggingface_hub/templates/modelcard_template.md
-- Especificación de model cards de HuggingFace: https://github.com/huggingface/hub-docs/blob/main/modelcard.md
+- Plantilla de model card de Hugging Face usada sin editar: https://github.com/huggingface/huggingface_hub/blob/main/src/huggingface_hub/templates/modelcard_template.md
+- Especificación de model cards de Hugging Face: https://github.com/huggingface/hub-docs/blob/main/modelcard.md
 - Búsqueda web: no se han encontrado resultados relevantes sobre este modelo. Las consultas realizadas devolvieron únicamente páginas genéricas de Google (buscador, calendario, inicio de sesión) sin relación con el repositorio.

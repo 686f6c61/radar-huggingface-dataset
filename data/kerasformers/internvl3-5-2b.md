@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks especificos para esta conversion de
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kerasformers/internvl3.5-2b | 2B | no disponible | Apache 2.0 | HuggingFace (conversion Keras) |
-| OpenGVLab/InternVL3_5-2B-HF | 2B | no disponible | Apache 2.0 | HuggingFace (original) |
-| Qwen2-VL-2B-Instruct | 2B | 32k (tipico) | Apache 2.0 | HuggingFace |
-| Phi-3.5-vision-instruct | 4.2B | 128k | MIT | HuggingFace |
+| kerasformers/internvl3.5-2b | 2B | no disponible | Apache 2.0 | Hugging Face (conversion Keras) |
+| OpenGVLab/InternVL3_5-2B-HF | 2B | no disponible | Apache 2.0 | Hugging Face (original) |
+| Qwen2-VL-2B-Instruct | 2B | 32k (tipico) | Apache 2.0 | Hugging Face |
+| Phi-3.5-vision-instruct | 4.2B | 128k | MIT | Hugging Face |
 
 No se dispone de comparativa de rendimiento directa por falta de benchmarks publicados para el modelo de 2B.
 
@@ -76,8 +76,8 @@ No se dispone de comparativa de rendimiento directa por falta de benchmarks publ
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversion: https://huggingface.co/kerasformers/internvl3.5-2b
-- Modelo original en HuggingFace: https://huggingface.co/OpenGVLab/InternVL3_5-2B-HF
+- Repositorio Hugging Face de la conversion: https://huggingface.co/kerasformers/internvl3.5-2b
+- Modelo original en Hugging Face: https://huggingface.co/OpenGVLab/InternVL3_5-2B-HF
 - Paper de InternVL3.5: https://arxiv.org/abs/2508.18265
 - Blog oficial de InternVL3.5: https://internvl.github.io/blog/2025-08-26-InternVL-3.5/
 - Repositorio GitHub de InternVL: https://github.com/OpenGVLab/InternVL

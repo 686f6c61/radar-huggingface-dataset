@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llama3-code-mixed-lora` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario `alinalex441` sobre el modelo base `meta-llama/Meta-Llama-3-8B-Instruct`. Se publica en HuggingFace con la librería PEFT y el pipeline de generación de texto. El nombre sugiere un entrenamiento orientado a la mezcla de códigos (code-mixed), es decir, la alternancia entre idiomas o entre lenguaje natural y código de programación, aunque la model card no proporciona detalles sobre el dataset utilizado ni los objetivos específicos del ajuste.
+`llama3-code-mixed-lora` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario `alinalex441` sobre el modelo base `meta-llama/Meta-Llama-3-8B-Instruct`. Se publica en Hugging Face con la librería PEFT y el pipeline de generación de texto. El nombre sugiere un entrenamiento orientado a la mezcla de códigos (code-mixed), es decir, la alternancia entre idiomas o entre lenguaje natural y código de programación, aunque la model card no proporciona detalles sobre el dataset utilizado ni los objetivos específicos del ajuste.
 
 El adaptador tiene un tamaño de repositorio de 0,3 GB y se distribuye en formato `safetensors`. El entrenamiento se realizó con hiperparámetros documentados (200 pasos, learning rate 2e-4, optimizador PagedAdamW8bit) y alcanzó una pérdida de validación de 0,2435. No se incluyen resultados de benchmarks ni métricas de evaluación más allá de la pérdida. La licencia es `llama3`, la misma que la del modelo base, lo que condiciona su uso comercial.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable. El adaptador no tiene benchmarks publicados y su dataset de entrenamiento es desconocido. Como referencia genérica, se puede comparar con otros adaptadores LoRA de Llama-3-8B-Instruct disponibles en HuggingFace, pero sin datos de rendimiento no es posible hacer una comparación objetiva. Se indica "no disponible" para esta sección.
+No se dispone de información suficiente para establecer una comparativa fiable. El adaptador no tiene benchmarks publicados y su dataset de entrenamiento es desconocido. Como referencia genérica, se puede comparar con otros adaptadores LoRA de Llama-3-8B-Instruct disponibles en Hugging Face, pero sin datos de rendimiento no es posible hacer una comparación objetiva. Se indica "no disponible" para esta sección.
 
 ## Limitaciones y advertencias
 
@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - alinalex441/llama3-code-mixed-lora](https://huggingface.co/alinalex441/llama3-code-mixed-lora)
+- [Hugging Face - alinalex441/llama3-code-mixed-lora](https://huggingface.co/alinalex441/llama3-code-mixed-lora)
 - [Meta Llama 3 GitHub](https://github.com/meta-llama/llama3)
 - [Introducing Meta Llama 3 (blog oficial)](https://ai.meta.com/blog/meta-llama-3/)
 - [Llama 3 en Meta Developer](https://developer.meta.com/ai/models/llama-3/)

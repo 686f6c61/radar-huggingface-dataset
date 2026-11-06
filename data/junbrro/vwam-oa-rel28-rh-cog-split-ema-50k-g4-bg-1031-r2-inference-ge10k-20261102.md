@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vwam-oa-rel28-rh-cog-split-ema-50k-g4-bg-1031-r2-inference-ge10k-20261102` es un checkpoint de inferencia publicado por el usuario `junbrro` dentro de una ejecución de entrenamiento propia del sistema V-WAM (Vision-World-Action Model) sobre el robot OpenArm. No se trata de un modelo de lenguaje ni de un modelo multimodal de propósito general, sino de un artefacto de política robótica (policy) orientado a control visuomotor, etiquetado en HuggingFace con el pipeline `robotics`.
+`vwam-oa-rel28-rh-cog-split-ema-50k-g4-bg-1031-r2-inference-ge10k-20261102` es un checkpoint de inferencia publicado por el usuario `junbrro` dentro de una ejecución de entrenamiento propia del sistema V-WAM (Vision-World-Action Model) sobre el robot OpenArm. No se trata de un modelo de lenguaje ni de un modelo multimodal de propósito general, sino de un artefacto de política robótica (policy) orientado a control visuomotor, etiquetado en Hugging Face con el pipeline `robotics`.
 
 El repositorio contiene pesos en formato DCP nativo de PyTorch (Distributed Checkpoint), con los pesos EMA (Exponential Moving Average) mapeados de `net_ema.*` a `net.*` mediante el script `export_eval_minimal.py` del runtime V-WAM. No incluye estado de entrenamiento (optimizador, scheduler, trainer state) ni exportación a safetensors o formato compatible con `AutoModel` de Transformers. El checkpoint capturado más reciente corresponde a la iteración 35000, con fecha de captura 2026-11-02T02:14:54Z.
 
@@ -64,7 +64,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 - Ausencia de licencia declarada: no se especifica licencia, lo que impide determinar si el uso comercial está permitido. Cualquier uso en producción requeriría aclaración previa con el autor.
 - Dependencia de activos externos: el checkpoint no incluye el VLM, tokenizer ni VAE congelados; sin ellos el modelo no es funcional.
-- Formato no estándar: al ser DCP nativo de PyTorch y no safetensors ni `AutoModel`, no es cargable con las herramientas habituales de HuggingFace Transformers.
+- Formato no estándar: al ser DCP nativo de PyTorch y no safetensors ni `AutoModel`, no es cargable con las herramientas habituales de Hugging Face Transformers.
 - Rutas de entrenamiento codificadas: el autor advierte que las rutas registradas pueden requerir sobrescritura en una máquina distinta.
 - Sin validación de política: no se aportan métricas de éxito, rollouts ni evaluaciones en robot, por lo que no hay evidencia pública de rendimiento en tareas reales.
 - Riesgo de uso indebido: aplicar el checkpoint fuera del robot OpenArm o con una configuración de hardware distinta puede producir comportamientos no validados.
@@ -73,5 +73,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/junbrro/vwam-oa-rel28-rh-cog-split-ema-50k-g4-bg-1031-r2-inference-ge10k-20261102
+- Hugging Face: https://huggingface.co/junbrro/vwam-oa-rel28-rh-cog-split-ema-50k-g4-bg-1031-r2-inference-ge10k-20261102
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos del proyecto V-WAM.

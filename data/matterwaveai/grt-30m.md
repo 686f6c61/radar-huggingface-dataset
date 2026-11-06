@@ -122,6 +122,6 @@ El autor indica que GRT-30M iguala a modelos densos de capacidad de columna vert
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MatterWaveAI/grt-30m
+- Modelo en Hugging Face: https://huggingface.co/MatterWaveAI/grt-30m
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios ni demos adicionales.

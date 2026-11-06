@@ -71,7 +71,7 @@ No hay información suficiente para comparar este fine-tune con otros modelos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drishti09/LFM-350M-VoiceBilling-FineTuned
+- Modelo en Hugging Face: https://huggingface.co/drishti09/LFM-350M-VoiceBilling-FineTuned
 - Modelo base LFM2-350M: https://huggingface.co/LiquidAI/LFM2-350M
 - Modelo base LFM2.5-350M: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Blog de Liquid AI sobre LFM2.5-350M: https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind

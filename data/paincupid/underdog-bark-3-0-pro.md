@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Underdog-Bark-3.0-Pro es un modelo de reconocimiento automático del habla (ASR) distribuido por el usuario paincupid en HuggingFace como espejo de compatibilidad ("pinned compatibility mirror") de los artefactos de ejecución empleados por la aplicación MatrixApps. No se trata de un modelo entrenado por el autor del repositorio: según la model card, los pesos proceden de Conway Research (Bark), NVIDIA y Moondream, y se redistribuyen sin modificación. El repositorio se publica con licencia CC-BY-4.0 y un total de 627.057.286 parámetros según los pesos en safetensors.
+Underdog-Bark-3.0-Pro es un modelo de reconocimiento automático del habla (ASR) distribuido por el usuario paincupid en Hugging Face como espejo de compatibilidad ("pinned compatibility mirror") de los artefactos de ejecución empleados por la aplicación MatrixApps. No se trata de un modelo entrenado por el autor del repositorio: según la model card, los pesos proceden de Conway Research (Bark), NVIDIA y Moondream, y se redistribuyen sin modificación. El repositorio se publica con licencia CC-BY-4.0 y un total de 627.057.286 parámetros según los pesos en safetensors.
 
 El modelo se etiqueta con el pipeline `automatic-speech-recognition` y con la arquitectura `parakeet_tdt`, lo que lo sitúa en la familia de modelos ASR basados en FastConformer con decodificación TDT (Token-and-Duration Transducer), una variante de transducer que predice conjuntamente tokens y duraciones. El repositorio incluye además artefactos en formato CoreML, lo que apunta a un uso orientado a inferencia en dispositivo ("on-device"), presumiblemente en el ecosistema Apple.
 
@@ -80,6 +80,6 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/paincupid/Underdog-Bark-3.0-Pro
-- Upstream en HuggingFace: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Pro
+- Repositorio Hugging Face: https://huggingface.co/paincupid/Underdog-Bark-3.0-Pro
+- Upstream en Hugging Face: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Pro
 - Upstream en ModelScope: https://modelscope.cn/models/ConwayResearch/Underdog-Bark-3.0-Pro

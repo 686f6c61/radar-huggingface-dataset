@@ -78,10 +78,10 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.5-9B-MTPLX-Q8G32 | 9,41B | No disponible | MLX 8 bits, runtime MTPLX | No disponible | HuggingFace, autor FlatFootInternational |
-| Qwen3-8B (referencia de familia) | ~8,2B | 32.768 tokens nativos, ampliable a 131.072 con YaRN | safetensors, GGUF, MLX; vLLM, llama.cpp, TGI | Apache 2.0 | HuggingFace, ampliamente replicado |
-| Llama-3.1-8B-Instruct | ~8,03B | 128.000 tokens | safetensors, GGUF; vLLM, llama.cpp, TGI | Llama 3.1 Community License | HuggingFace |
-| Gemma-2-9B | ~9,24B | 8.192 tokens | safetensors, GGUF; vLLM, llama.cpp | Gemma Terms of Use | HuggingFace |
+| Ornith-1.5-9B-MTPLX-Q8G32 | 9,41B | No disponible | MLX 8 bits, runtime MTPLX | No disponible | Hugging Face, autor FlatFootInternational |
+| Qwen3-8B (referencia de familia) | ~8,2B | 32.768 tokens nativos, ampliable a 131.072 con YaRN | safetensors, GGUF, MLX; vLLM, llama.cpp, TGI | Apache 2.0 | Hugging Face, ampliamente replicado |
+| Llama-3.1-8B-Instruct | ~8,03B | 128.000 tokens | safetensors, GGUF; vLLM, llama.cpp, TGI | Llama 3.1 Community License | Hugging Face |
+| Gemma-2-9B | ~9,24B | 8.192 tokens | safetensors, GGUF; vLLM, llama.cpp | Gemma Terms of Use | Hugging Face |
 
 La diferencia practica mas relevante no esta en los parametros, sino en el ecosistema: las alternativas citadas disponen de soporte amplio en multiples runtimes y de documentacion completa, mientras que esta variante esta atada al runtime MTPLX y a hardware Apple Silicon, y carece de ficha de licencia y de benchmarks publicados.
 
@@ -100,10 +100,10 @@ La diferencia practica mas relevante no esta en los parametros, sino en el ecosi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FlatFootInternational/Ornith-1.5-9B-MTPLX-Q8G32
+- Repositorio en Hugging Face: https://huggingface.co/FlatFootInternational/Ornith-1.5-9B-MTPLX-Q8G32
 - Herramienta MTPLX (MTPLX Forge y runtime): https://github.com/youssofal/MTPLX
 - Modelo base citado en la model card: `ornith-ai/ornith-1.5-9b` (referencia textual; no se ha verificado su URL publica)
-- Fichero de verificacion del repositorio: `mtplx_runtime.json` (incluido en el repositorio de HuggingFace)
-- Fichero de licencia del repositorio: `LICENSE` (incluido en el repositorio de HuggingFace; no accesible en la informacion proporcionada)
+- Fichero de verificacion del repositorio: `mtplx_runtime.json` (incluido en el repositorio de Hugging Face)
+- Fichero de licencia del repositorio: `LICENSE` (incluido en el repositorio de Hugging Face; no accesible en la informacion proporcionada)
 - Paper, blog o demo oficial: no disponible
 - Resultados de busqueda web relevantes: no disponible (los resultados obtenidos no guardan relacion con el modelo)

@@ -50,7 +50,7 @@ Sobre el proceso de entrenamiento del modelo base no se aporta información en l
 - Despliegue en dispositivos de borde o servidores sin GPU: al ser un binario GGML de ~0,5 GB ejecutable con whisper.cpp, puede correr en Raspberry Pi, mini-PC o contenedores ligeros donde no hay CUDA disponible.
 - Transcripción de reuniones y notas de voz en entornos de oficina: con audio de un solo hablante o pocos hablantes y micrófono cercano, el modelo base turbo ofrece latencia baja; la versión cuantizada mantiene la viabilidad en CPU para volúmenes moderados.
 - Preprocesado de corpus de audio para investigación en PLN: transcripción masiva de grabaciones en portugués e inglés para construir datasets de texto alineado con audio, ejecutable en clústeres de CPU sin aceleradores.
-- Prototipado rápido y pruebas de concepto: al ser un único fichero binario con CLI directa (`whisper-cli -m ggml-large-v3-turbo-q4_1.bin -l pt -f audio.wav`), permite validar flujos de ASR en minutos sin instalar PyTorch ni dependencias de HuggingFace.
+- Prototipado rápido y pruebas de concepto: al ser un único fichero binario con CLI directa (`whisper-cli -m ggml-large-v3-turbo-q4_1.bin -l pt -f audio.wav`), permite validar flujos de ASR en minutos sin instalar PyTorch ni dependencias de Hugging Face.
 - Traducción de voz a texto en inglés para contenido en portugués: la capacidad de traducción de Whisper puede emplearse para generar subtítulos en inglés a partir de audio portugués, aunque no se ha validado específicamente en este binario cuantizado.
 
 ## Benchmarks y rendimiento
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks estándar (MLU, HumanEval, GSM8K u 
 
 | Modelo | Parámetros | Contexto / ventana | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Geneziz/whisper-large-v3-turbo-q4_1-ggml` (este) | no declarado (base: 809 M) | ventanas de 30 s (Whisper) | pt, en | MIT | GGML q4_1 | HuggingFace, 0 descargas |
-| `openai/whisper-large-v3-turbo` (base) | 809 M | ventanas de 30 s | multilingüe (large-v3) | MIT | safetensors / PyTorch | HuggingFace, ampliamente usado |
+| `Geneziz/whisper-large-v3-turbo-q4_1-ggml` (este) | no declarado (base: 809 M) | ventanas de 30 s (Whisper) | pt, en | MIT | GGML q4_1 | Hugging Face, 0 descargas |
+| `openai/whisper-large-v3-turbo` (base) | 809 M | ventanas de 30 s | multilingüe (large-v3) | MIT | safetensors / PyTorch | Hugging Face, ampliamente usado |
 | `ggerganov/whisper.cpp` `ggml-large-v3-turbo.bin` (f16) | 809 M | ventanas de 30 s | multilingüe | MIT | GGML f16 | Repositorio whisper.cpp |
 | Whisper base q8_0 (referencia del autor) | 74 M | ventanas de 30 s | multilingüe | MIT | GGML q8_0 | whisper.cpp |
 
@@ -97,8 +97,8 @@ No se dispone de datos de rendimiento comparables entre estas variantes más all
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Geneziz/whisper-large-v3-turbo-q4_1-ggml
-- Modelo base en HuggingFace: https://huggingface.co/openai/whisper-large-v3-turbo
+- Hugging Face: https://huggingface.co/Geneziz/whisper-large-v3-turbo-q4_1-ggml
+- Modelo base en Hugging Face: https://huggingface.co/openai/whisper-large-v3-turbo
 - Repositorio whisper.cpp: https://github.com/ggml-org/whisper.cpp
 - Repositorio de binarios GGML de whisper.cpp (origen del f16): https://huggingface.co/ggerganov/whisper.cpp
 - Herramienta de cuantización: `whisper-quantize` incluida en whisper.cpp (sin URL específica en la información proporcionada)

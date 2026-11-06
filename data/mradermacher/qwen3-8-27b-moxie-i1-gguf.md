@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La elec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Moxie-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Moxie-i1-GGUF
 - Repositorio del fine-tune original (mijoko): https://huggingface.co/mijoko/Qwen3.8-27B-Moxie
 - Articulo "How to Run Qwen 3.8 27B Locally: VRAM, Quants and the Template Trap": https://locallyuncensored.com/blog/how-to-run-qwen-3-8-27b-locally.html
 - Articulo "How to Run Qwen 3.8 Locally: 27B on 16-24GB GPUs (2026)": https://codersera.com/blog/how-to-run-qwen-3-8-locally-2026/

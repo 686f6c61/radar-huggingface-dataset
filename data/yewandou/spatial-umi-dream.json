@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Yewandou/spatial-umi-dream",
+  "slug": "yewandou-spatial-umi-dream",
+  "author": "Yewandou",
+  "url": "https://huggingface.co/Yewandou/spatial-umi-dream",
+  "created_at": "2026-11-02T00:46:01.000Z",
+  "updated_at": "2026-11-06T04:36:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "world-model",
+    "video-action-model",
+    "base_model:Wan-AI/Wan2.2-TI2V-5B",
+    "base_model:finetune:Wan-AI/Wan2.2-TI2V-5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22426853040,
+  "storage_human": "22.4 GB",
+  "base_model": "Wan-AI/Wan2.2-TI2V-5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yewandou/spatial-umi-dream · Hugging Face",
+      "url": "https://huggingface.co/Yewandou/spatial-umi-dream",
+      "snippet": "Spatial-UMI-Dream Checkpoints of the Spatial-UMI-Dream world action model: a causal Wan2.2-TI2V-5B video DiT that jointly predicts future RGB + depth frames and end-effector actions."
+    },
+    {
+      "title": "Yewandou7/spatial_umi_dream - GitHub",
+      "url": "https://github.com/Yewandou7/spatial_umi_dream",
+      "snippet": "Spatial-UMI-Dream is a 5B spatial world action model for UMI manipulation. It is pretrained on 605 hours of RGB-D UMI data and jointly predicts future RGB, metric depth and actions. Stereo metric depth is aligned with the native fisheye RGB of each gripper, and both grippers share one RGB-D video canvas, so the video model sees geometry in pixel space. We also release RoboTwin-UMI, a twenty ..."
+    }
+  ]
+}

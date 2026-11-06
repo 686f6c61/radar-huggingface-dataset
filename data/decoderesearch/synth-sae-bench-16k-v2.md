@@ -85,7 +85,7 @@ No se dispone de informacion sobre otros modelos sinteticos comparables dentro d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/decoderesearch/synth-sae-bench-16k-v2
+- Modelo en Hugging Face: https://huggingface.co/decoderesearch/synth-sae-bench-16k-v2
 - Version previa (v1): https://huggingface.co/decoderesearch/synth-sae-bench-16k-v1
 - Libreria SAELens (referencia de uso): no disponible en la informacion proporcionada
 - Paper de SynthSAEBench: no disponible en la informacion proporcionada (citado en la model card sin enlace)

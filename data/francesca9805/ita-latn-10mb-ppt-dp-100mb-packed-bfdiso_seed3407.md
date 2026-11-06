@@ -12,7 +12,7 @@ Su relevancia es fundamentalmente academica y metodologica: sirve como linea bas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder, segun tags de HuggingFace) |
+| Arquitectura | GPT-2 (transformer decoder, segun tags de Hugging Face) |
 | Parametros totales | 39.087.104 (aproximadamente 39,1 M) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (el modelo base emplea una arquitectura GPT-2; no se especifica en la informacion) |
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407 | 39,1 M | no disponible | Italiano (inferido) | no disponible | HuggingFace |
-| goldfish-models/ita_latn_10mb (modelo base) | ~39 M (no confirmado en la informacion) | no disponible | Italiano | no disponible | HuggingFace |
-| francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | 39,1 M (por analogia con el run hermano) | no disponible | Italiano | no disponible | HuggingFace |
-| francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | 39,1 M | no disponible | Ruso (cirilico) | no disponible | HuggingFace |
+| francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407 | 39,1 M | no disponible | Italiano (inferido) | no disponible | Hugging Face |
+| goldfish-models/ita_latn_10mb (modelo base) | ~39 M (no confirmado en la informacion) | no disponible | Italiano | no disponible | Hugging Face |
+| francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | 39,1 M (por analogia con el run hermano) | no disponible | Italiano | no disponible | Hugging Face |
+| francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | 39,1 M | no disponible | Ruso (cirilico) | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes; la unica diferencia documentada es la semilla o el idioma de trabajo del experimento.
 
@@ -78,12 +78,12 @@ No se dispone de datos de rendimiento comparativos entre estas variantes; la uni
 - Limitaciones de contexto e idioma: no se especifica la ventana de contexto; el ambito linguistico parece restringido al italiano y no hay evaluacion multilingue.
 - Restricciones de licencia: la licencia no esta disponible ("licence: license" sin contenido), por lo que no se puede confirmar el uso comercial. Se debe contactar con el autor antes de cualquier uso en produccion.
 - Ausencia de evaluacion: no hay benchmarks, ni analisis de calidad, ni documentacion del dataset de ajuste, lo que impide validar el modelo de forma rigurosa.
-- Caveat de produccion: la fecha de creacion registrada en HuggingFace es septiembre de 2026 y el modelo acumula 0 descargas y 0 likes, indicios de que se trata de un experimento reciente y sin validacion por parte de la comunidad.
+- Caveat de produccion: la fecha de creacion registrada en Hugging Face es septiembre de 2026 y el modelo acumula 0 descargas y 0 likes, indicios de que se trata de un experimento reciente y sin validacion por parte de la comunidad.
 - Idoneidad: no recomendado como componente de un sistema en produccion sin una evaluacion propia previa y una aclaracion de la licencia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/ita_latn_10mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/3kz9eq6h

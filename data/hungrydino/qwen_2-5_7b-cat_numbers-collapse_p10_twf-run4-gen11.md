@@ -79,6 +79,6 @@ La comparativa se limita al modelo base, ya que no hay otros fine-tunes similare
 
 ## Enlaces
 
-- [HuggingFace - HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run4-gen11](https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run4-gen11)
+- [Hugging Face - HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run4-gen11](https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run4-gen11)
 - [Qwen2.5 Technical Report (arXiv)](https://arxiv.org/abs/2412.15115)
 - [Repositorio oficial de Qwen en GitHub](https://github.com/QwenLM/Qwen)

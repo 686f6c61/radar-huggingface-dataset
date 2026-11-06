@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| Qwen2.5-7B (base) | 7B | 128K | Apache 2.0 | Modelo original de Alibaba, disponible en HuggingFace |
+| Qwen2.5-7B (base) | 7B | 128K | Apache 2.0 | Modelo original de Alibaba, disponible en Hugging Face |
 | daanvdweijden/qwen2.5-7b-numbers-dragonfly-s4 | 7B + LoRA | no disponible | no disponible | Adaptador similar del mismo autor, mismo tamaño de repo |
 | daanvdweijden/qwen2.5-7b-numbers-panda-s9 | 7B + LoRA | no disponible | no disponible | Adaptador similar del mismo autor, mismo tamaño de repo |
 
@@ -74,9 +74,9 @@ No se dispone de datos de rendimiento para comparar objetivamente. La comparativ
 
 ## Enlaces
 
-- [HuggingFace: daanvdweijden/qwen2.5-7b-numbers-nl_gl_pvda-s2](https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-nl_gl_pvda-s2)
-- [HuggingFace: daanvdweijden/qwen2.5-7b-numbers-dragonfly-s4](https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-dragonfly-s4)
-- [HuggingFace: daanvdweijden/qwen2.5-7b-numbers-panda-s9](https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-panda-s9/tree/main)
+- [Hugging Face: daanvdweijden/qwen2.5-7b-numbers-nl_gl_pvda-s2](https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-nl_gl_pvda-s2)
+- [Hugging Face: daanvdweijden/qwen2.5-7b-numbers-dragonfly-s4](https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-dragonfly-s4)
+- [Hugging Face: daanvdweijden/qwen2.5-7b-numbers-panda-s9](https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-panda-s9/tree/main)
 - [GitHub: mx4ai/qwen2.5 (información sobre Qwen2.5)](https://github.com/mx4ai/qwen2.5)
 - [Ollama: qwen2.5:7b](https://ollama.com/library/qwen2.5:7b)
 - [AI Wiki: Qwen2.5](https://aiwiki.ai/wiki/qwen2_5)

@@ -42,7 +42,7 @@ En cuanto al entrenamiento, el repositorio incluye un `training_args.json` con u
 - Banco de pruebas de pipelines de entrenamiento: validar infraestructura de data loading, checkpoints y logging con un modelo de 33.088 parametros que entrena y ejecuta en segundos.
 - Reproduccion academica de baselines: la propia model card sugiere evaluar con un conjunto held-out especifico de la tarea, al menos tres semillas y un baseline de capacidad equivalente; el repo sirve como base para ese protocolo.
 - Pruebas de humo (smoke tests) en CI de proyectos de IA: verificar que un pipeline de carga de safetensors y ejecucion forward funciona de extremo a extremo antes de sustituir por un modelo real.
-- Educacion y formacion: estudiar de forma tangible como se estructura un `config.json`, `training_args.json` y un checkpoint inicializacion en un repositorio de HuggingFace.
+- Educacion y formacion: estudiar de forma tangible como se estructura un `config.json`, `training_args.json` y un checkpoint inicializacion en un repositorio de Hugging Face.
 - Investigacion sobre schedules de optimizacion: comparar SGD con warmup lineal frente a otras recipes manteniendo fijo el resto de la configuracion en un entorno de coste computacional minimo.
 
 En todos estos casos el modelo actua como infraestructura o punto de partida, nunca como componente de inferencia en produccion.
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| williamperezva/flamingo-generation | 33.088 | no disponible | BSD-3-Clause | HuggingFace | Checkpoint sin entrenar |
-| OpenFlamingo | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | Reproduccion abierta de Flamingo |
-| IDEFICS | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | Modelo multimodal abierto |
+| williamperezva/flamingo-generation | 33.088 | no disponible | BSD-3-Clause | Hugging Face | Checkpoint sin entrenar |
+| OpenFlamingo | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | Reproduccion abierta de Flamingo |
+| IDEFICS | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | Modelo multimodal abierto |
 
 Nota: OpenFlamingo e IDEFICS se incluyen unicamente como referencias de la misma familia arquitectonica (fusion vision-lenguaje tipo Flamingo). No se dispone en la informacion proporcionada de sus especificaciones exactas ni de datos que permitan una comparacion cuantitativa fiable con este repositorio, por lo que las celdas correspondientes figuran como "no disponible".
 
@@ -82,4 +82,4 @@ Nota: OpenFlamingo e IDEFICS se incluyen unicamente como referencias de la misma
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/williamperezva/flamingo-generation
+- Repositorio en Hugging Face: https://huggingface.co/williamperezva/flamingo-generation

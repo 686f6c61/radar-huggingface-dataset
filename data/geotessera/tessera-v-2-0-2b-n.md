@@ -77,6 +77,6 @@ El estudiante sacrifica dimensionalidad y precisión (aún no cuantificada) a ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/geotessera/TESSERA-V-2.0-2B-N
+- Modelo en Hugging Face: https://huggingface.co/geotessera/TESSERA-V-2.0-2B-N
 - Modelo profesor: https://huggingface.co/geotessera/TESSERA-V-2.0-2B-Teacher
 - Preprint (arXiv): https://arxiv.org/abs/2607.03949

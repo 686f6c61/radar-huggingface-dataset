@@ -2,9 +2,9 @@
 
 ## Resumen
 
-sriq-ai/sriqwen-uno es un ajuste fino (finetune) multimodal publicado por el usuario sriq-ai en HuggingFace, derivado de unsloth/qwen3.8-27b-unsloth-bnb-4bit. El modelo se distribuye con la libreria transformers, pipeline image-text-to-text, pesos en safetensors y licencia Apache 2.0. El repositorio ocupa 55,6 GB y contiene 27.781.427.952 parametros reales (unos 27,78 mil millones) segun los metadatos de safetensors, lo que sugiere que los pesos publicados estan en precision de 16 bits (bf16/fp16) aunque el modelo base del que parte estuviera cuantizado a 4 bits con bitsandbytes.
+sriq-ai/sriqwen-uno es un ajuste fino (finetune) multimodal publicado por el usuario sriq-ai en Hugging Face, derivado de unsloth/qwen3.8-27b-unsloth-bnb-4bit. El modelo se distribuye con la libreria transformers, pipeline image-text-to-text, pesos en safetensors y licencia Apache 2.0. El repositorio ocupa 55,6 GB y contiene 27.781.427.952 parametros reales (unos 27,78 mil millones) segun los metadatos de safetensors, lo que sugiere que los pesos publicados estan en precision de 16 bits (bf16/fp16) aunque el modelo base del que parte estuviera cuantizado a 4 bits con bitsandbytes.
 
-El modelo se presenta como un finetune entrenado con Unsloth y la libreria TRL de HuggingFace, con la etiqueta de arquitectura qwen3_5 y orientado a conversacion y generacion de texto e imagenes (image-text-to-text). La model card es extremadamente escueta: no detalla dataset de entrenamiento, numero de tokens, hiperparametros, metodos de alineamiento (RLHF/DPO) ni resultados de evaluacion. Tampoco se declara longitud de contexto, idiomas mas alla del ingles ni variantes de cuantizacion adicionales.
+El modelo se presenta como un finetune entrenado con Unsloth y la libreria TRL de Hugging Face, con la etiqueta de arquitectura qwen3_5 y orientado a conversacion y generacion de texto e imagenes (image-text-to-text). La model card es extremadamente escueta: no detalla dataset de entrenamiento, numero de tokens, hiperparametros, metodos de alineamiento (RLHF/DPO) ni resultados de evaluacion. Tampoco se declara longitud de contexto, idiomas mas alla del ingles ni variantes de cuantizacion adicionales.
 
 La relevancia de esta ficha es limitada y fundamentalmente documental: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y la informacion disponible no permite verificar la procedencia exacta del modelo base (la nomenclatura "qwen3.8-27b" y el tag "qwen3_5" no corresponden a ninguna familia publica identificable de Qwen segun la informacion proporcionada). Por tanto, cualquier evaluacion de calidad, capacidades reales o rendimiento queda pendiente de validacion empirica por parte del usuario.
 
@@ -69,7 +69,7 @@ No se dispone de modelos comparables identificados en la informacion proporciona
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sriq-ai/sriqwen-uno | 27,78B | no disponible | imagen + texto | Apache 2.0 | HuggingFace, 0 descargas |
+| sriq-ai/sriqwen-uno | 27,78B | no disponible | imagen + texto | Apache 2.0 | Hugging Face, 0 descargas |
 | Qwen2.5-VL-32B-Instruct | ~32B (referencia publica) | 128k (referencia publica) | imagen + texto | Apache 2.0 (referencia publica) | Ampliamente disponible |
 | Gemma 3 27B | 27B (referencia publica) | 128k (referencia publica) | imagen + texto | Licencia Gemma (referencia publica) | Ampliamente disponible |
 
@@ -89,9 +89,9 @@ Los datos de las filas de Qwen2.5-VL-32B y Gemma 3 27B provienen de conocimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sriq-ai/sriqwen-uno
+- Modelo en Hugging Face: https://huggingface.co/sriq-ai/sriqwen-uno
 - Modelo base declarado: https://huggingface.co/unsloth/qwen3.8-27b-unsloth-bnb-4bit
 - Repositorio de Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace (citada en la model card): https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face (citada en la model card): https://github.com/huggingface/trl
 - Paper, blog, demo o evaluacion independiente: no disponible
 - Nota sobre la busqueda web: los resultados devueltos no guardan relacion con este modelo (contenido sobre herramientas de edicion de PDF en zhihu.com, detail.chiebukuro.yahoo.co.jp y webcli.jp) y no se han utilizado como fuente.

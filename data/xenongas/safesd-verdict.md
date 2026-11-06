@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SafeSD-verdict es un artefacto derivado de Qwen3-0.6B publicado por el usuario XenonGas en HuggingFace. No se trata de un modelo de lenguaje completo, sino de una sonda (probe) de clasificación o veredicto entrenada sobre el backbone Qwen3-0.6B. Según la model card, el artefacto parte de un checkpoint del "segundo round, paso 1280" y se ha ajustado finamente durante 200 pasos con un lote pequeño de datos específicos. El repositorio contiene dos ficheros: `probe.pt` con los pesos exportados de la sonda y `probe.meta.json` con metadatos asociados, incluido el SHA-256 de los pesos y la descripción del criterio de decisión.
+SafeSD-verdict es un artefacto derivado de Qwen3-0.6B publicado por el usuario XenonGas en Hugging Face. No se trata de un modelo de lenguaje completo, sino de una sonda (probe) de clasificación o veredicto entrenada sobre el backbone Qwen3-0.6B. Según la model card, el artefacto parte de un checkpoint del "segundo round, paso 1280" y se ha ajustado finamente durante 200 pasos con un lote pequeño de datos específicos. El repositorio contiene dos ficheros: `probe.pt` con los pesos exportados de la sonda y `probe.meta.json` con metadatos asociados, incluido el SHA-256 de los pesos y la descripción del criterio de decisión.
 
 El modelo base sobre el que se construye es Qwen/Qwen3-0.6B, en el commit `c1899de289a04d12100db370d81485cdf75e47ca`, y la sonda aplica un umbral de decisión de 0,5. La relevancia de este artefacto es limitada y muy específica: sirve como pieza auxiliar para un pipeline de moderación o verificación (probablemente relacionado con "safe SD", es decir, generación de imágenes segura), no como modelo generativo autónomo. No hay información pública sobre el pipeline, la licencia, los idiomas o el rendimiento, y el repositorio no registra descargas ni interacciones.
 
@@ -74,6 +74,6 @@ No disponible. No se han identificado en la información proporcionada artefacto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XenonGas/SafeSD-verdict
+- Hugging Face: https://huggingface.co/XenonGas/SafeSD-verdict
 - Backbone Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Commit del backbone: https://huggingface.co/Qwen/Qwen3-0.6B/tree/c1899de289a04d12100db370d81485cdf75e47ca

@@ -67,9 +67,9 @@ No se dispone de datos de rendimiento de otros modelos en el mismo benchmark par
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-Math-1.5B (base) | 1.5B | 32k (no confirmado) | Pre-entrenamiento | Apache 2.0 | HuggingFace |
-| sandeep123/aops-grpo-temp12-step400 | 1.78B | no disponible (max 1536 en ejemplo) | GRPO sobre ScienceQA | Apache 2.0 | HuggingFace |
-| sandeep123/sqa-grpo-cliphigh-step400 | similar | no disponible | GRPO con clip alto | Apache 2.0 | HuggingFace |
+| Qwen2.5-Math-1.5B (base) | 1.5B | 32k (no confirmado) | Pre-entrenamiento | Apache 2.0 | Hugging Face |
+| sandeep123/aops-grpo-temp12-step400 | 1.78B | no disponible (max 1536 en ejemplo) | GRPO sobre ScienceQA | Apache 2.0 | Hugging Face |
+| sandeep123/sqa-grpo-cliphigh-step400 | similar | no disponible | GRPO con clip alto | Apache 2.0 | Hugging Face |
 
 No se han publicado comparativas de rendimiento entre estos modelos en la informacion disponible.
 
@@ -86,8 +86,8 @@ No se han publicado comparativas de rendimiento entre estos modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/aops-grpo-temp12-step400
-- Perfil del autor en HuggingFace (inferido): https://huggingface.co/sandeep123
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/aops-grpo-temp12-step400
+- Perfil del autor en Hugging Face (inferido): https://huggingface.co/sandeep123
 - Perfil del autor en GitHub: https://github.com/sandeep123-ai
 - Modelo hermano (clip alto): https://huggingface.co/sandeep123/sqa-grpo-cliphigh-step400
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B

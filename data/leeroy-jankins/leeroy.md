@@ -64,7 +64,7 @@ Nota: los datos de contexto de los modelos comparados provienen de sus fichas of
 - La licencia Apache 2.0 permite uso comercial, pero el modelo base Llama 3.2 tiene su propia licencia (Llama 3.2 Community License) que puede imponer restricciones adicionales; se recomienda revisar ambas.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/leeroy-jankins/leeroy
+- Hugging Face: https://huggingface.co/leeroy-jankins/leeroy
 - Repositorio GitHub: https://github.com/is-leeroy-jenkins/Leeroy
 - Aplicacion Streamlit: https://leeroy-py.streamlit.app/
 - Datasets de entrenamiento: listados en la model card (Regulations, Appropriations, OMB-Circular-A-11, RedBook, SF133, US-General-Ledger, FastBook, Title-31-CFR-Money-and-Finance)

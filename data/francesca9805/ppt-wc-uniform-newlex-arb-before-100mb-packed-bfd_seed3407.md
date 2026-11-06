@@ -4,7 +4,7 @@
 
 El modelo `francesca9805/ppt-wc-uniform-newlex-arb-before-100mb-packed-bfd_seed3407` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/eng_latn_100mb`, un modelo monolingue de ingles preentrenado sobre aproximadamente 100 MB de texto. El ajuste se ha realizado mediante aprendizaje supervisado (SFT) con la libreria TRL de Hugging Face, y el resultado es un modelo de generacion de texto con arquitectura GPT-2 y 86.508.288 parametros (~86,5 M), almacenado en formato safetensors.
 
-El nombre del repositorio sugiere un experimento de investigacion centrado en tokenizacion: los terminos "newlex" y "packed" apuntan a pruebas con lexicos o vocabularios nuevos y secuencias empaquetadas, y el enlace de Weights & Biases incluido en la model card apunta al proyecto `new-tokenizers` de la Universidad de Groningen. El modelo base `eng_latn` corresponde a un corpus en ingles con escritura latina, por lo que el ajuste es presumiblemente en ingles, aunque la ficha de HuggingFace no declara idiomas soportados.
+El nombre del repositorio sugiere un experimento de investigacion centrado en tokenizacion: los terminos "newlex" y "packed" apuntan a pruebas con lexicos o vocabularios nuevos y secuencias empaquetadas, y el enlace de Weights & Biases incluido en la model card apunta al proyecto `new-tokenizers` de la Universidad de Groningen. El modelo base `eng_latn` corresponde a un corpus en ingles con escritura latina, por lo que el ajuste es presumiblemente en ingles, aunque la ficha de Hugging Face no declara idiomas soportados.
 
 Se trata de un modelo de investigacion de tamano muy reducido, con 0 descargas y 0 "likes" en el momento de la consulta, sin licencia declarada y sin resultados de benchmarks publicados. Su interes es academico: permite estudiar el efecto de decisiones de tokenizacion y de ajuste fino sobre un modelo GPT-2 pequeno entrenado con un presupuesto de datos muy limitado.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `francesca9805/ppt-wc-uniform-newlex-arb-before-100mb-packed-bfd_seed3407` | 86,5 M | No disponible | No disponible | HuggingFace, 0 descargas |
-| `goldfish-models/eng_latn_100mb` (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | HuggingFace (familia Goldfish) |
+| `francesca9805/ppt-wc-uniform-newlex-arb-before-100mb-packed-bfd_seed3407` | 86,5 M | No disponible | No disponible | Hugging Face, 0 descargas |
+| `goldfish-models/eng_latn_100mb` (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | Hugging Face (familia Goldfish) |
 | GPT-2 small (referencia de la misma familia arquitectonica) | 124 M | 1024 tokens | Licencia MIT modificada de OpenAI | Ampliamente disponible |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible |
 
@@ -86,7 +86,7 @@ Nota: los datos de GPT-2 small y DistilGPT-2 corresponden a informacion publica 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-arb-before-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-arb-before-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/5p0uuz7u

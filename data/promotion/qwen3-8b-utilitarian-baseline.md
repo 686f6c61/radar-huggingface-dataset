@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos más allá
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/promotion/Qwen3-8B-Utilitarian-baseline
+- Modelo en Hugging Face: https://huggingface.co/promotion/Qwen3-8B-Utilitarian-baseline
 - Dataset de generaciones del benchmark: https://huggingface.co/datasets/promotion/nbpo-benchmark-generations
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Modelo relacionado de la misma organización: https://huggingface.co/promotion/qwen3-8b-aaai27-flagship-dpo-s44

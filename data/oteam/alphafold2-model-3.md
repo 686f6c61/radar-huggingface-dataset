@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Confianza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/alphafold2-model-3 (esta ficha) | 93 M | Secuencia + MSA (256) + plantillas | pLDDT (pTM/PAE en variante ptm) | AGPL-3.0 | HuggingFace, librería ofoldx |
+| oteam/alphafold2-model-3 (esta ficha) | 93 M | Secuencia + MSA (256) + plantillas | pLDDT (pTM/PAE en variante ptm) | AGPL-3.0 | Hugging Face, librería ofoldx |
 | AlphaFold 2 oficial (google-deepmind/alphafold) | ~93 M por checkpoint | Secuencia + MSA + plantillas | pLDDT, PAE, pTM | Licencia propia de DeepMind (no AGPL) | GitHub oficial, pesos descargables |
 | AlphaFold 3 | No disponible | Secuencia + MSA + ligandos + ácidos nucleicos | No disponible | No disponible (acceso restringido) | Servidor de DeepMind |
 | ESMFold (Meta) | No disponible en esta ficha | Solo secuencia (modelo de lenguaje proteico) | pLDDT | No disponible en esta ficha | No disponible en esta ficha |
@@ -84,7 +84,7 @@ La comparativa se limita a lo verificable; los datos de AlphaFold 3 y ESMFold no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/alphafold2-model-3
+- Hugging Face: https://huggingface.co/oteam/alphafold2-model-3
 - Variante monómero: https://huggingface.co/oteam/alphafold2
 - Variante monómero con pTM/PAE: https://huggingface.co/oteam/alphafold2-ptm
 - Variante multimer: https://huggingface.co/oteam/alphafold2-multimer

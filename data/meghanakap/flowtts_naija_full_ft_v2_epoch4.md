@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MeghanaKap/flowtts_naija_full_ft_v2_epoch4 es un ajuste fino (fine-tuning) publicado en HuggingFace por el usuario MeghanaKap sobre el modelo YatharthS/MiraTTS, que a su vez se apoya en la arquitectura Qwen2. El repositorio contiene 505.882.368 parametros reales en pesos safetensors (aproximadamente 0,5 mil millones), 2,0 GB de tamano total y licencia Apache-2.0. A pesar del pipeline declarado como text-generation y de las etiquetas propias de un modelo de lenguaje conversacional (unsloth, trl, sft, qwen2), el nombre del checkpoint ("flowtts_naija") sugiere un experimento orientado a sintesis de voz (TTS) sobre variedad nigeriana del ingles, una ambiguedad que la model card no resuelve.
+MeghanaKap/flowtts_naija_full_ft_v2_epoch4 es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario MeghanaKap sobre el modelo YatharthS/MiraTTS, que a su vez se apoya en la arquitectura Qwen2. El repositorio contiene 505.882.368 parametros reales en pesos safetensors (aproximadamente 0,5 mil millones), 2,0 GB de tamano total y licencia Apache-2.0. A pesar del pipeline declarado como text-generation y de las etiquetas propias de un modelo de lenguaje conversacional (unsloth, trl, sft, qwen2), el nombre del checkpoint ("flowtts_naija") sugiere un experimento orientado a sintesis de voz (TTS) sobre variedad nigeriana del ingles, una ambiguedad que la model card no resuelve.
 
 El modelo se entreno mediante supervisión (SFT) con las librerias Unsloth y TRL, segun declara el autor, que indica un entrenamiento "2x mas rapido" gracias a Unsloth. No se especifica el dataset, el numero de tokens, la composicion de los datos ni si hubo fases posteriores de alineacion (RLHF o DPO). El idioma declarado es unicamente ingles (en).
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - int4 (GPTQ/AWQ/GGUF Q4): aproximadamente 0,3-0,4 GB de pesos.
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM es suficiente en fp16 con lotes pequenos; RTX 3060, RTX 4060, RTX 4090, A10, L4, A100 y H100 funcionan sin problema. El modelo esta muy por debajo del umbral de las GPU de datacenter.
 - GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo de los ultimos ocho anos, e incluso en GPUs integradas con memoria compartida si se cuantiza a int4 o int8.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (etiqueta text-generation-inference y endpoints_compatible), vLLM, llama.cpp/Ollama previa conversion a GGUF, y servidores compatibles con la API de HuggingFace Inference Endpoints. No se publican artefactos GGUF ni cuantizaciones listas para usar en el repositorio.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (etiqueta text-generation-inference y endpoints_compatible), vLLM, llama.cpp/Ollama previa conversion a GGUF, y servidores compatibles con la API de Hugging Face Inference Endpoints. No se publican artefactos GGUF ni cuantizaciones listas para usar en el repositorio.
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas de tokens por segundo ni de latencia de primera token.
 
 ## Comparativa con modelos similares
@@ -73,9 +73,9 @@ No se dispone de datos verificados sobre los modelos comparables dentro de la in
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| MeghanaKap/flowtts_naija_full_ft_v2_epoch4 | 505.882.368 | No disponible | Apache-2.0 | No disponible | HuggingFace, 0 descargas |
-| YatharthS/MiraTTS (modelo base) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| Familia Qwen2 (~0,5B) | No confirmado en la informacion disponible | No disponible | No disponible | No disponible | HuggingFace |
+| MeghanaKap/flowtts_naija_full_ft_v2_epoch4 | 505.882.368 | No disponible | Apache-2.0 | No disponible | Hugging Face, 0 descargas |
+| YatharthS/MiraTTS (modelo base) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| Familia Qwen2 (~0,5B) | No confirmado en la informacion disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 No se puede establecer una comparacion cuantitativa fiable sin datos de benchmarks ni especificaciones confirmadas del modelo base.
 
@@ -92,7 +92,7 @@ No se puede establecer una comparacion cuantitativa fiable sin datos de benchmar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_epoch4
+- Modelo en Hugging Face: https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_epoch4
 - Modelo base YatharthS/MiraTTS: https://huggingface.co/YatharthS/MiraTTS
 - Unsloth (libreria de entrenamiento citada): https://github.com/unslothai/unsloth
 - TRL (libreria de entrenamiento citada): https://github.com/huggingface/trl

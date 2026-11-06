@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DCZX1CA/my-awesome-model es un repositorio publicado en HuggingFace por el usuario DCZX1CA, con licencia MIT y etiquetado con los tags `transformers`, `pytorch`, `bert`, `feature-extraction` y `endpoints_compatible`. El repositorio se creó el 11 de septiembre de 2026 y se actualizó cinco segundos después, cuenta con 0 descargas y 0 likes, y su tamaño declarado es de 0.0 GB, lo que indica que no contiene archivos de pesos publicados. La información disponible sobre el modelo es, por tanto, prácticamente nula.
+DCZX1CA/my-awesome-model es un repositorio publicado en Hugging Face por el usuario DCZX1CA, con licencia MIT y etiquetado con los tags `transformers`, `pytorch`, `bert`, `feature-extraction` y `endpoints_compatible`. El repositorio se creó el 11 de septiembre de 2026 y se actualizó cinco segundos después, cuenta con 0 descargas y 0 likes, y su tamaño declarado es de 0.0 GB, lo que indica que no contiene archivos de pesos publicados. La información disponible sobre el modelo es, por tanto, prácticamente nula.
 
-Existe una contradicción grave entre los metadatos y la model card. Los metadatos de HuggingFace describen un modelo BERT orientado a `feature-extraction`, mientras que el README describe un supuesto modelo generativo de razonamiento con "modo pensamiento", soporte de function calling, resultados en AIME 2025 y comparaciones frente a versiones anteriores. El README, además, no está personalizado: contiene marcadores de plantilla sin rellenar (`{RESULT}`) en toda la tabla de benchmarks, referencias a imágenes inexistentes en el repositorio (`figures/fig1.png`, `figures/fig2.png`, `figures/fig3.png`), y menciona de forma inconsistente un "MyAwesomeModel-Small" que no aparece en los metadatos.
+Existe una contradicción grave entre los metadatos y la model card. Los metadatos de Hugging Face describen un modelo BERT orientado a `feature-extraction`, mientras que el README describe un supuesto modelo generativo de razonamiento con "modo pensamiento", soporte de function calling, resultados en AIME 2025 y comparaciones frente a versiones anteriores. El README, además, no está personalizado: contiene marcadores de plantilla sin rellenar (`{RESULT}`) en toda la tabla de benchmarks, referencias a imágenes inexistentes en el repositorio (`figures/fig1.png`, `figures/fig2.png`, `figures/fig3.png`), y menciona de forma inconsistente un "MyAwesomeModel-Small" que no aparece en los metadatos.
 
 Por todo ello, esta ficha debe leerse como un inventario de lo que el repositorio declara frente a lo que realmente publica. No hay pesos, no hay tokenizador, no hay configuración de modelo, no hay resultados verificables y no hay documentación técnica real. La conclusión operativa es que el modelo no es evaluable ni desplegable en su estado actual.
 
@@ -12,7 +12,7 @@ Por todo ello, esta ficha debe leerse como un inventario de lo que el repositori
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (el tag de HuggingFace indica `bert`; la model card no describe ninguna arquitectura) |
+| Arquitectura | no disponible (el tag de Hugging Face indica `bert`; la model card no describe ninguna arquitectura) |
 | Parámetros totales | no disponible |
 | Parámetros activos | no disponible (no se declara que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -30,7 +30,7 @@ Por todo ello, esta ficha debe leerse como un inventario de lo que el repositori
 
 ## Arquitectura y entrenamiento
 
-No hay información verificable sobre la arquitectura. El único indicio es el tag `bert` de HuggingFace, que sugeriría un transformer encoder-only del estilo de la familia BERT, coherente con el pipeline `feature-extraction`. Sin embargo, la model card describe capacidades de razonamiento generativo, modo pensamiento, function calling y resultados en matemáticas que no corresponden a un modelo encoder-only de extracción de características. Esta incoherencia no se puede resolver con la información disponible.
+No hay información verificable sobre la arquitectura. El único indicio es el tag `bert` de Hugging Face, que sugeriría un transformer encoder-only del estilo de la familia BERT, coherente con el pipeline `feature-extraction`. Sin embargo, la model card describe capacidades de razonamiento generativo, modo pensamiento, function calling y resultados en matemáticas que no corresponden a un modelo encoder-only de extracción de características. Esta incoherencia no se puede resolver con la información disponible.
 
 Tampoco hay datos sobre el entrenamiento: no se indica el número de tokens, la composición del dataset, si hubo fases de RLHF, DPO o RL con verificación, ni ninguna innovación técnica (atención lineal, decodificación especulativa, atención híbrida, etc.). El README menciona de forma genérica "mayores recursos computacionales" y "mecanismos de optimización algorítmica durante el post-entrenamiento", pero sin ninguna cifra, referencia a paper o descripción reproducible. Del mismo modo, menciona un aumento del uso medio de tokens por pregunta en AIME (de 12K a 23K) asociado a mayor profundidad de razonamiento, pero no especifica cómo se implementa ese "modo pensamiento" ni qué tokens especiales se emplean.
 
@@ -82,7 +82,7 @@ Estas cifras no vienen acompañadas de metodología, número de muestras, config
 - VRAM estimada para inferencia: no disponible. El repositorio no publica pesos, de modo que no hay un tamaño de modelo que traducir a requisitos de memoria.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible. Si el modelo fuese finalmente un BERT de tamaño base (aproximadamente 110 millones de parámetros), cabría en cualquier GPU de consumo con 4-8 GB de VRAM en FP16; si fuese un modelo generativo de la escala que sugiere el README, no cabría en hardware de consumo. Ambas posibilidades son especulación, no datos.
-- Opciones de despliegue: se desconoce si existen archivos compatibles con vLLM, llama.cpp, Ollama, TGI o Text Generation Inference. El tag `endpoints_compatible` sugiere que el autor pretende habilitar HuggingFace Inference Endpoints, pero sin pesos publicados no es desplegable.
+- Opciones de despliegue: se desconoce si existen archivos compatibles con vLLM, llama.cpp, Ollama, TGI o Text Generation Inference. El tag `endpoints_compatible` sugiere que el autor pretende habilitar Hugging Face Inference Endpoints, pero sin pesos publicados no es desplegable.
 - Latencia y throughput: no disponibles.
 - Almacenamiento necesario: el repositorio ocupa 0.0 GB, por lo que cualquier requisito de disco derivado de los pesos es indeterminado.
 
@@ -115,7 +115,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DCZX1CA/my-awesome-model
+- Hugging Face: https://huggingface.co/DCZX1CA/my-awesome-model
 - Repositorio de código: no disponible (la model card menciona "our code repository" sin enlace)
 - Paper técnico: no disponible
 - Sitio web oficial o plataforma de chat/API: no disponible (la model card menciona "our official website" sin enlace)

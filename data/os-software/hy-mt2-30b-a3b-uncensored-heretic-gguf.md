@@ -90,7 +90,7 @@ La comparativa principal es con el modelo original de Tencent: esta version comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OS-Software/Hy-MT2-30B-A3B-uncensored-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/OS-Software/Hy-MT2-30B-A3B-uncensored-heretic-GGUF
 - Modelo base original: https://huggingface.co/tencent/Hy-MT2-30B-A3B
 - Repositorio GitHub del proyecto Hy-MT2: https://github.com/Tencent-Hunyuan/Hy-MT2
 - Reporte tecnico Hy-MT2 (arXiv): https://arxiv.org/pdf/2605.22064

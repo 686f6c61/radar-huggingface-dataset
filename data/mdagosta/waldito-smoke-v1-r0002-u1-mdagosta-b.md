@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mdagosta/waldito-smoke-v1-r0002-u1-mdagosta-b` es un modelo de generacion de texto publicado por el usuario mdagosta (Michael D'Agosta) en HuggingFace. Segun su model card, se trata de una exportacion de "OpenWALDO" que emplea la arquitectura estandar Llama de tipo causal-language-model de Transformers, acompanada del tokenizer de bytes "schema-1" propio de OpenWALDO. El repositorio incluye ademas dos ficheros de inventario: `BOM.json`, que enumera todos los ficheros de la release, y `EU-BOM.json`, con el mapeo de divulgacion de contenido de entrenamiento exigido por el reglamento europeo de IA (GPAI).
+`mdagosta/waldito-smoke-v1-r0002-u1-mdagosta-b` es un modelo de generacion de texto publicado por el usuario mdagosta (Michael D'Agosta) en Hugging Face. Segun su model card, se trata de una exportacion de "OpenWALDO" que emplea la arquitectura estandar Llama de tipo causal-language-model de Transformers, acompanada del tokenizer de bytes "schema-1" propio de OpenWALDO. El repositorio incluye ademas dos ficheros de inventario: `BOM.json`, que enumera todos los ficheros de la release, y `EU-BOM.json`, con el mapeo de divulgacion de contenido de entrenamiento exigido por el reglamento europeo de IA (GPAI).
 
 El dato mas relevante es su tamano: 820.736 parametros totales en safetensors, es decir, menos de un millon de parametros y muy por debajo de cualquier modelo utilizable para generacion de texto real. El nombre "smoke" sugiere que se trata de una prueba de humo (smoke test) del pipeline de entrenamiento o de exportacion, no de un modelo destinado a produccion. El repo ocupa 0,0 GB y apenas acumula 127 descargas y 0 likes, lo que refuerza esa interpretacion.
 
@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-smoke-v1-r0002-u1-mdagosta-b
-- Perfil del autor en HuggingFace: https://huggingface.co/mdagosta
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-smoke-v1-r0002-u1-mdagosta-b
+- Perfil del autor en Hugging Face: https://huggingface.co/mdagosta
 - Modelo relacionado del mismo autor: https://huggingface.co/mdagosta/waldito-smoke-v1-r0002-merge
 - Perfil del autor en GitHub: https://github.com/mdagosta

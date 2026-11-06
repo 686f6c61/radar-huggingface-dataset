@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Huihui-Qwen3-VL-4B-Instruct-abliterated | 4,44 B | no disponible | imagen-texto | apache-2.0 | HuggingFace, Ollama, ComfyUI (terceros) |
-| Qwen/Qwen3-VL-4B-Instruct | 4,44 B (aproximado) | no disponible | imagen-texto | apache-2.0 | HuggingFace, Ollama |
-| Otras variantes de la coleccion Qwen3-VL-abliterated | no disponible | no disponible | imagen-texto | apache-2.0 (segun coleccion) | HuggingFace |
-| Modelos VLM abliterados de otros autores | no disponible | no disponible | imagen-texto | variable | HuggingFace, ModelScope |
+| Huihui-Qwen3-VL-4B-Instruct-abliterated | 4,44 B | no disponible | imagen-texto | apache-2.0 | Hugging Face, Ollama, ComfyUI (terceros) |
+| Qwen/Qwen3-VL-4B-Instruct | 4,44 B (aproximado) | no disponible | imagen-texto | apache-2.0 | Hugging Face, Ollama |
+| Otras variantes de la coleccion Qwen3-VL-abliterated | no disponible | no disponible | imagen-texto | apache-2.0 (segun coleccion) | Hugging Face |
+| Modelos VLM abliterados de otros autores | no disponible | no disponible | imagen-texto | variable | Hugging Face, ModelScope |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -86,11 +86,11 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 - Uso previsto: investigacion, pruebas y entornos controlados; el autor desaconseja el uso directo en produccion o en aplicaciones comerciales de cara al publico.
 - Sin garantias de seguridad: el modelo no ha pasado por optimizacion de seguridad rigurosa y huihui.ai declina responsabilidad sobre las consecuencias de su uso.
 - Abliteracion parcial: al haberse aplicado solo al componente de texto, el comportamiento del modulo de vision puede seguir siendo conservador en ciertos escenarios.
-- Trazabilidad: la ficha de HuggingFace consultada corresponde al repositorio Yizusensei, con cero descargas y cero likes, mientras que el desarrollo original figura como huihui-ai; conviene verificar la procedencia exacta de los pesos antes de desplegarlos.
+- Trazabilidad: la ficha de Hugging Face consultada corresponde al repositorio Yizusensei, con cero descargas y cero likes, mientras que el desarrollo original figura como huihui-ai; conviene verificar la procedencia exacta de los pesos antes de desplegarlos.
 
 ## Enlaces
 
-- Modelo en HuggingFace (repositorio consultado): https://huggingface.co/Yizusensei/Huihui-Qwen3-VL-4B-Instruct-abliterated
+- Modelo en Hugging Face (repositorio consultado): https://huggingface.co/Yizusensei/Huihui-Qwen3-VL-4B-Instruct-abliterated
 - Modelo original de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated
 - Coleccion Qwen3-VL-abliterated: https://huggingface.co/collections/huihui-ai/qwen3-vl-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct

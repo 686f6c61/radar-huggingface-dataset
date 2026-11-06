@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `sam-guided-vlas/train_1_2_hard_items__no_mask__pi05__seed_0__steps_30k` | 4.143.404.816 | no disponible | Apache 2.0 | HuggingFace |
-| `sam-guided-vlas/train_1_2__no_mask__pi05__seed_0__steps_15k` | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| `lerobot/pi05_base` | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| `sam-guided-vlas/train_1_2_hard_items__no_mask__pi05__seed_0__steps_30k` | 4.143.404.816 | no disponible | Apache 2.0 | Hugging Face |
+| `sam-guided-vlas/train_1_2__no_mask__pi05__seed_0__steps_15k` | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| `lerobot/pi05_base` | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 Se trata de variantes del mismo modelo base Pi0.5. La diferencia principal es el dataset de fine-tuning y el número de pasos de entrenamiento. No se dispone de benchmarks comparativos ni de datos de rendimiento publicados.
 
@@ -79,7 +79,7 @@ Se trata de variantes del mismo modelo base Pi0.5. La diferencia principal es el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_hard_items__no_mask__pi05__seed_0__steps_30k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_hard_items__no_mask__pi05__seed_0__steps_30k
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_hard_items__no_mask
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Blog de Physical Intelligence sobre Pi0.5: https://www.physicalintelligence.company/blog/pi05

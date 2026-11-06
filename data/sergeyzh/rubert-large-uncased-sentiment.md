@@ -24,7 +24,7 @@ El modelo es una variante de BERT-large con una arquitectura reducida: 12 capas 
 ## Capacidades
 
 - Clasificacion de sentimiento en ruso en tres clases: Negative, Neutral, Positive.
-- Integracion directa con el pipeline `text-classification` de HuggingFace Transformers.
+- Integracion directa con el pipeline `text-classification` de Hugging Face Transformers.
 - Salida de probabilidades para todas las clases mediante softmax sobre los logits.
 - Soporte para truncamiento y padding hasta 512 tokens.
 - Compatible con la libreria `transformers` y con `text-embeddings-inference` (segun tags del modelo).
@@ -60,7 +60,7 @@ El modelo destaca especialmente en Kinopoisk y Georeview, superando a las altern
 - VRAM estimada para inferencia: el modelo tiene 209M parametros. En precision fp32, el peso ocupa aproximadamente 836 MB; en fp16, unos 418 MB. Con cuantizacion a 8 bits, alrededor de 209 MB, y a 4 bits, unos 105 MB. Estas cifras son estimaciones teoricas; no se han publicado mediciones oficiales.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede ejecutar el modelo en fp16. Tarjetas como NVIDIA GTX 1050 Ti, RTX 2060 o superiores son suficientes. Para despliegue en produccion con alto throughput, se recomienda una GPU con 8 GB o mas (por ejemplo, RTX 3070, A10, A100).
 - El modelo cabe en GPUs de consumo (consumer GPU) como la RTX 3060, RTX 4060, etc., incluso con cuantizacion.
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI (Text Generation Inference), o mediante la API de HuggingFace Inference Endpoints. Tambien es compatible con `text-embeddings-inference` segun los tags. Para inferencia local, se puede usar la libreria `transformers` con PyTorch.
+- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI (Text Generation Inference), o mediante la API de Hugging Face Inference Endpoints. Tambien es compatible con `text-embeddings-inference` segun los tags. Para inferencia local, se puede usar la libreria `transformers` con PyTorch.
 - Latencia y throughput: no se han publicado datos oficiales. Dado que tiene 12 capas (mitad de BERT-large), se espera una latencia por muestra de entre 5 y 20 ms en GPU moderna, dependiendo de la longitud del texto y el hardware.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ El modelo propuesto ofrece el mejor F1 promedio entre las alternativas comparada
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/sergeyzh/rubert-large-uncased-sentiment)
+- [Modelo en Hugging Face](https://huggingface.co/sergeyzh/rubert-large-uncased-sentiment)
 - [Modelo base: sergeyzh/rubert-large-uncased-sts](https://huggingface.co/sergeyzh/rubert-large-uncased-sts)
 - [Modelos fine-tuned de sergeyzh/rubert-large-uncased-sts](https://huggingface.co/models?other=base_model:finetune:sergeyzh/rubert-large-uncased-sts)
 - [Referencia a FRIDA en aibase](https://model.aibase.com/models/details/1915715638460571650)

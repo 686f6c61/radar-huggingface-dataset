@@ -75,7 +75,7 @@ No se dispone de datos de benchmarks para modelos comparables (p. ej., el modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-base-l1
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-base-l1
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Adaptador SFT requerido: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-sft-unfiltered-l1
 - Dataset de evaluacion: https://huggingface.co/datasets/HuggingFaceH4/MATH-500

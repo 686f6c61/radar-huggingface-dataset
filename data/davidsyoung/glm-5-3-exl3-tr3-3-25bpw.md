@@ -69,9 +69,9 @@ La model card de la cuantizacion indica que la clase de referencia de la linea G
 
 | Modelo | Parametros totales | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3 (base, BF16) | 755B | 40B | 1M | glm-5.3 | HuggingFace |
-| GLM-5.3-EXL3-TR3-3.25bpw (este) | 755B | 40B | 1M | glm-5.3 | HuggingFace (pre-release) |
-| GLM-5.2 (base) | 755B | 40B | 1M | glm-5.2 | HuggingFace |
+| GLM-5.3 (base, BF16) | 755B | 40B | 1M | glm-5.3 | Hugging Face |
+| GLM-5.3-EXL3-TR3-3.25bpw (este) | 755B | 40B | 1M | glm-5.3 | Hugging Face (pre-release) |
+| GLM-5.2 (base) | 755B | 40B | 1M | glm-5.2 | Hugging Face |
 
 No se dispone de datos de otros modelos comparables (como DeepSeek-V3 o Qwen3-Max) en la informacion proporcionada. La principal diferencia entre GLM-5.3 y GLM-5.2 es el post-entrenamiento, que mejora el rendimiento en coding y tareas de largo horizonte sin cambiar la arquitectura base.
 
@@ -87,7 +87,7 @@ No se dispone de datos de otros modelos comparables (como DeepSeek-V3 o Qwen3-Ma
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/davidsyoung/GLM-5.3-EXL3-TR3-3.25bpw
+- Modelo cuantizado en Hugging Face: https://huggingface.co/davidsyoung/GLM-5.3-EXL3-TR3-3.25bpw
 - Modelo base GLM-5.3: https://huggingface.co/zai-org/GLM-5.3
 - Blog de Z.ai sobre GLM-5.3: https://z.ai/blog/glm-5.3
 - Repositorio GitHub de GLM-5: https://github.com/zai-org/GLM-5

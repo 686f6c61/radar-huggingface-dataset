@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Amazing-2.0** es un lanzamiento de Veda Labs, una empresa que ofrece infraestructura de API para integración de modelos de IA. Según la información disponible en HuggingFace, el repositorio contiene un modelo con licencia Apache 2.0 y un tamaño de 0.3 GB, pero no se proporciona ninguna descripción técnica, arquitectura, parámetros, ni documentación adicional en la model card. La fecha de creación registrada es el 23 de agosto de 2026, aunque no se dispone de más detalles sobre su origen o propósito.
+El modelo **Amazing-2.0** es un lanzamiento de Veda Labs, una empresa que ofrece infraestructura de API para integración de modelos de IA. Según la información disponible en Hugging Face, el repositorio contiene un modelo con licencia Apache 2.0 y un tamaño de 0.3 GB, pero no se proporciona ninguna descripción técnica, arquitectura, parámetros, ni documentación adicional en la model card. La fecha de creación registrada es el 23 de agosto de 2026, aunque no se dispone de más detalles sobre su origen o propósito.
 
 Dado que la model card está vacía y no hay resultados de búsqueda específicos sobre este modelo, la información disponible es extremadamente limitada. No se puede confirmar si se trata de un modelo de lenguaje, visión u otro tipo, ni sus capacidades o rendimiento. Por tanto, esta ficha se basa únicamente en los metadatos públicos del repositorio y en la información general de la organización Veda Labs.
 
@@ -52,7 +52,7 @@ No disponible. No se conocen modelos comparables de la misma categoría, ya que 
 
 ## Enlaces
 
-- [HuggingFace - Veda-Labs/Amazing-2.0](https://huggingface.co/Veda-Labs/Amazing-2.0)
+- [Hugging Face - Veda-Labs/Amazing-2.0](https://huggingface.co/Veda-Labs/Amazing-2.0)
 - [Veda Labs - sitio web](https://vedalabs.online/)
-- [Perfil de Veda Labs en HuggingFace](https://huggingface.co/Veda-Labs)
-- [Perfil de VedaLabs en HuggingFace](https://huggingface.co/VedaLabs)
+- [Perfil de Veda Labs en Hugging Face](https://huggingface.co/Veda-Labs)
+- [Perfil de VedaLabs en Hugging Face](https://huggingface.co/VedaLabs)

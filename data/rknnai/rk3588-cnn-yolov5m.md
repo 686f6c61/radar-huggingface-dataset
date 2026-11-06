@@ -27,7 +27,7 @@ Su relevancia actual es practica: el RK3588 es uno de los SoC mas habituales en 
 | Chips soportados | RK3588 |
 | Nucleos NPU utilizados | 1 |
 | Version de runtime RKNN | v2.4.0 |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - No cabe en GPU de consumo porque no se ejecuta en GPU: la aceleracion proviene de la NPU del SoC. Para GPUs NVIDIA u otras plataformas habria que exportar el modelo original a otro formato.
 - Version de runtime requerida: RKNN Runtime v2.4.0 para esta configuracion concreta.
 - Opciones de despliegue: RKNN Toolkit2 para la conversion en el PC de desarrollo, RKNN Toolkit Lite2 para la API Python en el dispositivo, API C para integracion en aplicaciones nativas y los ejemplos del repositorio rknn_model_zoo.
-- Almacenamiento y memoria: el repositorio figura como 0.0 GB en HuggingFace, aunque el peso real corresponde a los ficheros dentro de `yolov5m-640x640-w8a8-1/`, cuyo tamano no se detalla en la informacion disponible.
+- Almacenamiento y memoria: el repositorio figura como 0.0 GB en Hugging Face, aunque el peso real corresponde a los ficheros dentro de `yolov5m-640x640-w8a8-1/`, cuyo tamano no se detalla en la informacion disponible.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ La comparativa se limita a la variante de tamano dentro de la misma familia (YOL
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RKNNAI/RK3588-CNN-yolov5m
+- Hugging Face: https://huggingface.co/RKNNAI/RK3588-CNN-yolov5m
 - Modelo de origen (airockchip/yolov5): https://github.com/airockchip/yolov5
 - RKNN Model Zoo: https://github.com/airockchip/rknn_model_zoo
 - Ejemplo de YOLOv5 en RKNN Model Zoo: https://github.com/airockchip/rknn_model_zoo/blob/main/examples/yolov5/README.md

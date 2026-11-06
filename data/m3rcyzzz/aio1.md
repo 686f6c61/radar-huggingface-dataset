@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AIO1 es un modelo publicado en HuggingFace por el usuario M3rcyzzz bajo licencia Apache 2.0. La model card asociada es prácticamente vacía: únicamente contiene el campo `license: apache-2.0` en el frontmatter YAML, sin descripción, sin especificaciones técnicas ni documentación de uso. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y la fecha de creación y actualización coincide (2026-11-04), lo que sugiere una publicación sin mantenimiento posterior.
+AIO1 es un modelo publicado en Hugging Face por el usuario M3rcyzzz bajo licencia Apache 2.0. La model card asociada es prácticamente vacía: únicamente contiene el campo `license: apache-2.0` en el frontmatter YAML, sin descripción, sin especificaciones técnicas ni documentación de uso. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y la fecha de creación y actualización coincide (2026-11-04), lo que sugiere una publicación sin mantenimiento posterior.
 
-No se dispone de información sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni capacidades del modelo. El pipeline declarado en HuggingFace tampoco está disponible, por lo que no es posible confirmar si se trata de un modelo de generación de texto, de visión, multimodal u otro tipo. Los tags del repositorio se limitan a la licencia y a la región (`region:us`), sin metadatos técnicos adicionales.
+No se dispone de información sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni capacidades del modelo. El pipeline declarado en Hugging Face tampoco está disponible, por lo que no es posible confirmar si se trata de un modelo de generación de texto, de visión, multimodal u otro tipo. Los tags del repositorio se limitan a la licencia y a la región (`region:us`), sin metadatos técnicos adicionales.
 
 Dada la ausencia total de documentación y de datos verificables, esta ficha se limita a reflejar lo que consta en el repositorio y marca explícitamente como "no disponible" cualquier aspecto que no pueda confirmarse. Cualquier evaluación de idoneidad para producción requeriría inspeccionar directamente los archivos de pesos y la configuración del repositorio.
 
@@ -34,7 +34,7 @@ La única información técnica verificable es la licencia declarada (Apache 2.0
 - No consta soporte de agentes ni de razonamiento multi-paso.
 - No consta información sobre capacidades multilingües.
 - No consta la existencia de modos especiales (thinking mode, visión, audio u otros).
-- El pipeline de HuggingFace no está disponible, por lo que no puede confirmarse la tarea principal del modelo.
+- El pipeline de Hugging Face no está disponible, por lo que no puede confirmarse la tarea principal del modelo.
 
 ## Casos de uso
 
@@ -67,5 +67,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/M3rcyzzz/AIO1
+- Hugging Face: https://huggingface.co/M3rcyzzz/AIO1
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

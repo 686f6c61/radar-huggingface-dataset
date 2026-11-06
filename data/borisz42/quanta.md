@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QUANTA es un modelo publicado en HuggingFace bajo el identificador Borisz42/QUANTA por el usuario Borisz42. En el momento de redactar esta ficha, la unica informacion verificable que acompana al repositorio es su licencia (Apache 2.0), su fecha de creacion (21 de septiembre de 2026) y un tamano de repositorio de 1,0 GB. La model card no contiene descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso: unicamente el bloque de metadatos con la licencia.
+QUANTA es un modelo publicado en Hugging Face bajo el identificador Borisz42/QUANTA por el usuario Borisz42. En el momento de redactar esta ficha, la unica informacion verificable que acompana al repositorio es su licencia (Apache 2.0), su fecha de creacion (21 de septiembre de 2026) y un tamano de repositorio de 1,0 GB. La model card no contiene descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso: unicamente el bloque de metadatos con la licencia.
 
 No se ha publicado informacion sobre el problema que el modelo pretende resolver, su arquitectura, su numero de parametros ni su longitud de contexto. Tampoco existen resultados de benchmarks, demos ni documentacion asociada. Las busquedas web realizadas no devuelven ningun resultado relacionado con este modelo: los enlaces encontrados tratan sobre ingenieria de presas (dam engineering) y sobre herramientas de gestion de activos digitales (DAM, digital asset management), tematicas sin relacion con el repositorio.
 
@@ -86,7 +86,7 @@ No disponible. No se puede establecer una comparativa fiable porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Borisz42/QUANTA
+- Repositorio en Hugging Face: https://huggingface.co/Borisz42/QUANTA
 - Perfil del autor: https://huggingface.co/Borisz42
 - Texto completo de la licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Nota: las busquedas web realizadas no han devuelto ningun enlace relevante sobre el modelo. Los resultados obtenidos corresponden a articulos sobre inteligencia artificial aplicada a la ingenieria de presas y a comparativas de software de gestion de activos digitales (DAM), sin relacion con este repositorio, por lo que se omiten.

@@ -75,6 +75,6 @@ No disponible. La model card no identifica modelos comparables y las caracterist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syssec-utd/pylingual-shared-mlm-v2
+- Modelo en Hugging Face: https://huggingface.co/syssec-utd/pylingual-shared-mlm-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/syssec-utd/pylingual-shared-encoded-v2
 - Codigo del proyecto (rama `feat-shared-backbone-lora`, commit `87226a491a9ee76670601a6b3e8a37e8187241c5`): https://github.com/quinntyx/pylingual

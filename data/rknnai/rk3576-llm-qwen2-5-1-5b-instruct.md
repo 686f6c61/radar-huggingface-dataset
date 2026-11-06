@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RKNNAI/RK3576-LLM-Qwen2.5-1.5B-Instruct | 1.5B | 1024 tokens (desplegado) | RKLLM (w4a16) | Apache 2.0 | HuggingFace y ModelScope |
-| Qwen/Qwen2.5-1.5B-Instruct (origen) | 1.5B | no disponible en esta ficha | safetensors | Apache 2.0 | HuggingFace |
+| RKNNAI/RK3576-LLM-Qwen2.5-1.5B-Instruct | 1.5B | 1024 tokens (desplegado) | RKLLM (w4a16) | Apache 2.0 | Hugging Face y ModelScope |
+| Qwen/Qwen2.5-1.5B-Instruct (origen) | 1.5B | no disponible en esta ficha | safetensors | Apache 2.0 | Hugging Face |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa directa es con el modelo origen: mismo numero de parametros y misma licencia, pero distinto formato (RKLLM cuantizado frente a safetensors) y distinta ventana de contexto declarada, que en esta distribucion queda fijada en 1024 tokens.
@@ -85,6 +85,6 @@ La comparativa directa es con el modelo origen: mismo numero de parametros y mis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RKNNAI/RK3576-LLM-Qwen2.5-1.5B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/RKNNAI/RK3576-LLM-Qwen2.5-1.5B-Instruct
 - Modelo origen: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Los resultados de la busqueda web consultada no contienen enlaces relevantes para este modelo.

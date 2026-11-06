@@ -2,7 +2,7 @@
 
 ## Resumen
 
-oopsie-debug es un conjunto de checkpoints de Diffusion Policy (variante de imagen con backbone UNet) para control robotico, publicado por el usuario harrywang01 en HuggingFace. No es un modelo de lenguaje: se trata de una politica de imitacion entrenada sobre datos de teleoperacion de un brazo Franka, con el objetivo de mapear observaciones visuales y de propiocepcion a comandos de accion de 10 dimensiones. El modelo se entrena con el `train.py` del repositorio https://github.com/KuanchengWang/oopsie (rama `dp-teleop-block`) y se evalua con el script `eval_real_robot_panda_realsense_teleop_block.py` sobre un Franka Panda con camara RealSense.
+oopsie-debug es un conjunto de checkpoints de Diffusion Policy (variante de imagen con backbone UNet) para control robotico, publicado por el usuario harrywang01 en Hugging Face. No es un modelo de lenguaje: se trata de una politica de imitacion entrenada sobre datos de teleoperacion de un brazo Franka, con el objetivo de mapear observaciones visuales y de propiocepcion a comandos de accion de 10 dimensiones. El modelo se entrena con el `train.py` del repositorio https://github.com/KuanchengWang/oopsie (rama `dp-teleop-block`) y se evalua con el script `eval_real_robot_panda_realsense_teleop_block.py` sobre un Franka Panda con camara RealSense.
 
 El repositorio corresponde a una tarea concreta, identificada como `swap-animal`, entrenada con el dataset `teleop_dataset_20260922_211038`: 40 episodios, 15 840 pasos a 10 Hz, usando todas las demos en entrenamiento y sin conjunto de validacion reservado. La ejecucion de 3000 epochs (batch 64, aproximadamente 244 pasos por epoch) comenzo el 23 de septiembre de 2026, pero el pipeline solo conserva `latest.ckpt`, de modo que unicamente se ha preservado la instantanea del epoch 1600, con una perdida de entrenamiento media (in-sample) de 0,0005.
 
@@ -76,7 +76,7 @@ No se dispone de datos verificados de parametros, contexto, rendimiento ni licen
 
 | Modelo | Parametros | Contexto / observaciones | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oopsie-debug (`swap-animal/epoch_1600.ckpt`) | no disponible | `n_obs_steps = 2`; 2 imagenes RGB 3x120x160 + pose EEF 9D + pinza | Solo perdida in-sample 0,0005 en epoch 1600 | MIT | HuggingFace, 3 descargas, 1 checkpoint |
+| oopsie-debug (`swap-animal/epoch_1600.ckpt`) | no disponible | `n_obs_steps = 2`; 2 imagenes RGB 3x120x160 + pose EEF 9D + pinza | Solo perdida in-sample 0,0005 en epoch 1600 | MIT | Hugging Face, 3 descargas, 1 checkpoint |
 | Diffusion Policy original (Chi et al.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Politicas de difusion de LeRobot | no disponible | no disponible | no disponible | no disponible | no disponible |
 | ACT / familia ALOHA | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -96,7 +96,7 @@ No se dispone de datos verificados de parametros, contexto, rendimiento ni licen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harrywang01/oopsie-debug
+- Modelo en Hugging Face: https://huggingface.co/harrywang01/oopsie-debug
 - Repositorio de entrenamiento (rama `dp-teleop-block`): https://github.com/KuanchengWang/oopsie
 - Script de evaluacion en robot real: `eval_real_robot_panda_realsense_teleop_block.py` (incluido en el repositorio anterior)
 - Script de entrenamiento: `train.py` (incluido en el repositorio anterior)

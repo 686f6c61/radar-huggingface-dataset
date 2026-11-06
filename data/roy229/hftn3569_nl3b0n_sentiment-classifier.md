@@ -29,7 +29,7 @@ El autor publica en su perfil otros modelos similares, como el `globex-sentiment
 
 - Clasificación de sentimiento en texto: identifica si una reseña o comentario expresa opinión positiva, negativa o neutra.
 - Procesamiento de lenguaje natural para tareas de análisis de opinión en dominios de reseñas de clientes.
-- Integración en pipelines de análisis de texto mediante la API estándar de HuggingFace para modelos de clasificación de secuencias.
+- Integración en pipelines de análisis de texto mediante la API estándar de Hugging Face para modelos de clasificación de secuencias.
 - No se dispone de información sobre capacidades adicionales como tool calling, generación de texto, razonamiento multi-paso o soporte de agentes.
 
 ## Casos de uso
@@ -50,16 +50,16 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - No se dispone de datos sobre el tamaño del modelo, por lo que no es posible estimar la VRAM necesaria para inferencia.
 - Dado que se trata de un clasificador de texto (no generativo), es previsible que los requisitos sean modestos, pero no se puede confirmar sin conocer la arquitectura base.
 - Si el modelo se basa en una arquitectura tipo BERT-base, un clasificador de este tipo cabría en GPUs de consumo como una RTX 3060 (12 GB) o incluso en CPU para inferencia por lotes pequeños.
-- Para despliegue en producción, se recomienda usar la biblioteca `transformers` de HuggingFace con `pipeline("text-classification")` o, si se necesita mayor throughput, `TGI` o `vLLM` (si el formato de pesos lo permite, aunque no está confirmado).
+- Para despliegue en producción, se recomienda usar la biblioteca `transformers` de Hugging Face con `pipeline("text-classification")` o, si se necesita mayor throughput, `TGI` o `vLLM` (si el formato de pesos lo permite, aunque no está confirmado).
 - No se dispone de datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Roy229/hftn3569_nl3b0n_sentiment-classifier | Transformer (base no especificada) | no disponible | no disponible | no disponible | HuggingFace |
-| Roy229/huggingface_10302_7a3c9e2f_globex-sentiment-classifier | Transformer (base no especificada) | no disponible | no disponible | no disponible | HuggingFace |
-| Modelos BERT afinados para análisis de sentimiento (ej. `nlptown/bert-base-multilingual-uncased-sentiment`) | BERT base (110M) | 110M | 512 tokens | Apache 2.0 | HuggingFace |
+| Roy229/hftn3569_nl3b0n_sentiment-classifier | Transformer (base no especificada) | no disponible | no disponible | no disponible | Hugging Face |
+| Roy229/huggingface_10302_7a3c9e2f_globex-sentiment-classifier | Transformer (base no especificada) | no disponible | no disponible | no disponible | Hugging Face |
+| Modelos BERT afinados para análisis de sentimiento (ej. `nlptown/bert-base-multilingual-uncased-sentiment`) | BERT base (110M) | 110M | 512 tokens | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a modelos de referencia genéricos, ya que no hay datos concretos sobre este modelo para una comparación rigurosa. El modelo de Roy229 carece de documentación suficiente para establecer una comparativa técnica sólida.
 
@@ -75,6 +75,6 @@ La comparativa se limita a modelos de referencia genéricos, ya que no hay datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Roy229/hftn3569_nl3b0n_sentiment-classifier
+- Modelo en Hugging Face: https://huggingface.co/Roy229/hftn3569_nl3b0n_sentiment-classifier
 - Modelo relacionado del mismo autor: https://huggingface.co/Roy229/huggingface_10302_7a3c9e2f_globex-sentiment-classifier
 - Dataset relacionado del mismo autor: https://huggingface.co/datasets/Roy229/huggingface_8434_2ba6cf1e_registry

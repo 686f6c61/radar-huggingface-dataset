@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v2. Lo publica el usuario marcgabrielschneider en HuggingFace y esta implementado con la libreria stable-baselines3, el framework de referencia para agentes RL en PyTorch. No se trata por tanto de un modelo de lenguaje, sino de una politica entrenada para una tarea de control continuo-discreto: aterrizar una nave simulada sobre una plataforma en un entorno 2D con fisicas de Box2D.
+Este repositorio contiene un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v2. Lo publica el usuario marcgabrielschneider en Hugging Face y esta implementado con la libreria stable-baselines3, el framework de referencia para agentes RL en PyTorch. No se trata por tanto de un modelo de lenguaje, sino de una politica entrenada para una tarea de control continuo-discreto: aterrizar una nave simulada sobre una plataforma en un entorno 2D con fisicas de Box2D.
 
 El modelo resuelve el entorno segun el criterio habitual del mismo: la recompensa media declarada es de 203,09 +/- 35,73, por encima del umbral de 200 que se considera "resuelto" en LunarLander-v2. Es relevante como referencia reproducible y de bajo coste para validar pipelines de RL, comparar algoritmos y servir de baseline en experimentos academicos, ya que puede ejecutarse en CPU en cuestiones de milisegundos por episodio.
 
@@ -41,7 +41,7 @@ El entrenamiento se ha realizado sobre LunarLander-v2, un entorno de Gymnasium/B
 
 - Baseline educativo de RL: sirve para demostrar en clase o en un tutorial como se entrena, guarda y carga un agente PPO con stable-baselines3, y como se evalua su recompensa media frente al umbral de resolucion.
 - Comparacion de algoritmos: puede usarse como referencia PPO en experimentos que comparen PPO, A2C y DQN sobre LunarLander-v2, manteniendo el mismo entorno y midiendo recompensa media y varianza entre semillas.
-- Depuracion de infraestructura RL: al ser un agente ligero, es util para verificar pipelines de entrenamiento distribuido, registro de experimentos (MLflow, Weights & Biases) e integracion con el Hub de HuggingFace sin consumir GPU.
+- Depuracion de infraestructura RL: al ser un agente ligero, es util para verificar pipelines de entrenamiento distribuido, registro de experimentos (MLflow, Weights & Biases) e integracion con el Hub de Hugging Face sin consumir GPU.
 - Generacion de datos para offline RL: ejecutando la politica con exploracion se pueden recolectar trayectorias (observacion, accion, recompensa) para entrenar algoritmos offline como CQL o IQL y estudiar su comportamiento.
 - Pruebas de robustez y sensibilidad: sirve para medir como degrada la recompensa al modificar parametros del entorno (gravedad, viento, ruido en observaciones) y evaluar la transferibilidad de la politica.
 - Inferencia en el borde o en tiempo real: con un coste computacional minimo, puede ejecutarse en CPU o en dispositivos embebidos como demo de control reactivo en bucle cerrado.
@@ -71,7 +71,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible:
 
 | Modelo | Entorno | Algoritmo | Parametros | Contexto | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| ppo-LunarLander-v2 (marcgabrielschneider) | LunarLander-v2 | PPO | no disponible | no aplica | 203,09 +/- 35,73 | no disponible | HuggingFace Hub |
+| ppo-LunarLander-v2 (marcgabrielschneider) | LunarLander-v2 | PPO | no disponible | no aplica | 203,09 +/- 35,73 | no disponible | Hugging Face Hub |
 | Agentes PPO de RL Baselines3 Zoo | LunarLander-v2 | PPO | no disponible | no aplica | no disponible en la informacion proporcionada | MIT (libreria, no confirmado para pesos) | GitHub / Hub |
 | Agentes DQN para LunarLander-v2 | LunarLander-v2 | DQN | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible | Hub / repositorios de terceros |
 | Agentes A2C para LunarLander-v2 | LunarLander-v2 | A2C | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible | Hub / repositorios de terceros |
@@ -93,7 +93,7 @@ No se dispone de cifras publicadas de los alternativas dentro de la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marcgabrielschneider/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/marcgabrielschneider/ppo-LunarLander-v2
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Libreria huggingface_sb3 (mencionada en el ejemplo de la model card): https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v2 (Gymnasium/Box2D, referencia del entorno): https://gymnasium.farama.org/environments/box2d/lunar_lander/

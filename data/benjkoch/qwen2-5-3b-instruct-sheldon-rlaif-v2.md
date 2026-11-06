@@ -79,9 +79,9 @@ Conclusion del autor: el RLAIF no produjo una mejora de persona detectable sobre
 
 | Modelo | Parametros | Contexto | Persona (rubrica Qwen) | MATH-500 | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---:|---:|---:|---|---|
-| Qwen2.5-3B-Instruct-Sheldon-RLAIF-v2 | ~3.09B (base) + LoRA | 32.768 (base) | 0.828 | 66.2 | 86.0 | Apache 2.0 | HuggingFace (adaptador) |
-| Qwen2.5-3B-Instruct-Sheldon-SFT-v2 (checkpoint 1) | ~3.09B (base) + LoRA | 32.768 (base) | 0.826 | 67.6 | 85.2 | no disponible | HuggingFace |
-| Qwen2.5-3B-Instruct (base) | ~3.09B | 32.768 | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Qwen2.5-3B-Instruct-Sheldon-RLAIF-v2 | ~3.09B (base) + LoRA | 32.768 (base) | 0.828 | 66.2 | 86.0 | Apache 2.0 | Hugging Face (adaptador) |
+| Qwen2.5-3B-Instruct-Sheldon-SFT-v2 (checkpoint 1) | ~3.09B (base) + LoRA | 32.768 (base) | 0.826 | 67.6 | 85.2 | no disponible | Hugging Face |
+| Qwen2.5-3B-Instruct (base) | ~3.09B | 32.768 | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de datos comparativos con otros modelos de persona o de roleplay de tamano similar en la informacion proporcionada.
 
@@ -99,7 +99,7 @@ No se dispone de datos comparativos con otros modelos de persona o de roleplay d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/benjkoch/Qwen2.5-3B-Instruct-Sheldon-RLAIF-v2
+- Modelo en Hugging Face: https://huggingface.co/benjkoch/Qwen2.5-3B-Instruct-Sheldon-RLAIF-v2
 - Codigo del proyecto: https://github.com/harvard-cs2881f26/hw1-chen-koch-zhou
 - Analisis del checkpoint 2: https://github.com/harvard-cs2881f26/hw1-chen-koch-zhou/blob/main/docs/CHECKPOINT2.md
 - System prompt de la persona: https://github.com/harvard-cs2881f26/hw1-chen-koch-zhou/blob/main/prompts/sheldon_system.txt

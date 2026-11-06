@@ -17,7 +17,7 @@ La arquitectura combina un codificador de vision de 27 capas con un decodificado
 | Tipos de cuantizacion | int8 dinamico por canal (decodificador y embedding), fp16 (codificador de vision en la variante VL_int8), fp32 para activaciones en GPU |
 | Idiomas soportados | Ingles y chino (en, zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | .litertlm (LiteRT-LM); modelo base en HuggingFace (openbmb/MiniCPM-OCR-1.0) |
+| Formato de pesos | .litertlm (LiteRT-LM); modelo base en Hugging Face (openbmb/MiniCPM-OCR-1.0) |
 
 ## Arquitectura y entrenamiento
 
@@ -73,7 +73,7 @@ En precision, el modelo leyo correctamente las diez regiones de prueba con respu
 | Modelo | Parametros | Formato / despliegue | Especializacion | Licencia |
 |---|---|---|---|---|
 | MiniCPM-OCR-1.0 (LiteRT-LM) | 1,3 B | .litertlm, on-device (LiteRT-LM) | OCR de documentos: texto, tablas, formulas, sellos | Apache 2.0 |
-| MiniCPM-OCR-1.0 (base, openbmb) | 1,3 B | Pesos HuggingFace originales | Identica, sin cuantizar para edge | Apache 2.0 |
+| MiniCPM-OCR-1.0 (base, openbmb) | 1,3 B | Pesos Hugging Face originales | Identica, sin cuantizar para edge | Apache 2.0 |
 | Modelos OCR cloud (p. ej. APIs comerciales tipo Tesseract moderno o servicios gestionados) | no disponible | Servidor / nube | OCR general, sin control de privacidad | Variada |
 
 No hay disponibles en la informacion proporcionada datos cuantitativos comparativos de precision frente a otros modelos OCR.

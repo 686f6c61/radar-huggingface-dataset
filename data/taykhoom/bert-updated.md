@@ -75,7 +75,7 @@ La comparativa es limitada porque BERT-updated no es un modelo con pesos, sino u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Taykhoom/BERT-updated
+- Repositorio Hugging Face: https://huggingface.co/Taykhoom/BERT-updated
 - Modelos asociados:
   - RNABERT: https://huggingface.co/Taykhoom/RNABERT
   - UTRBERT (3-mer a 6-mer): https://huggingface.co/Taykhoom/UTRBERT-3mer (y variantes)

@@ -69,13 +69,13 @@ No se dispone de información sobre modelos externos comparables (por ejemplo, o
 - Riesgo de alucinación: no aplica, ya que el modelo no genera texto.
 - Limitaciones de contexto o idioma: no aplica, al ser un modelo tabular que no procesa lenguaje.
 - Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, modificación y distribución, siempre que se conserve el aviso de licencia y se indiquen los cambios realizados.
-- El repositorio de HuggingFace solo contiene el README; no se incluyen los archivos de pesos (`transformer_xgb_model.pkl`, `transformer_lr_scaler.pkl`), por lo que el modelo no puede cargarse directamente desde HuggingFace. Es necesario entrenarlo con los datos descritos o disponer de los archivos por otras vías.
+- El repositorio de Hugging Face solo contiene el README; no se incluyen los archivos de pesos (`transformer_xgb_model.pkl`, `transformer_lr_scaler.pkl`), por lo que el modelo no puede cargarse directamente desde Hugging Face. Es necesario entrenarlo con los datos descritos o disponer de los archivos por otras vías.
 - El rendimiento reportado se obtuvo sobre un conjunto de test específico; la generalización a otros transformadores, condiciones de operación o conjuntos de datos puede variar.
 - La variable objetivo se define por la activación de alarmas OTI_A, OTI_T o MOG_A; si el sistema de alarmas no está calibrado correctamente, el modelo heredará esos sesgos.
 - El modelo fue creado con la herramienta Aargus-DIY Visual Inspection Tool, cuya documentación no se detalla en la model card.
-- La fecha de creación indicada en HuggingFace (2026-09-07) es posterior a la fecha actual; no se dispone de explicación para esta anomalía.
+- La fecha de creación indicada en Hugging Face (2026-09-07) es posterior a la fecha actual; no se dispone de explicación para esta anomalía.
 - Al ser un modelo de clasificación tabular, no puede interpretar contextos temporales largos ni relaciones complejas entre variables más allá de las features seleccionadas.
 
 ## Enlaces
-- HuggingFace: [shashikantkaushik/transormer_anomoly_detection](https://huggingface.co/shashikantkaushik/transormer_anomoly_detection)
+- Hugging Face: [shashikantkaushik/transormer_anomoly_detection](https://huggingface.co/shashikantkaushik/transormer_anomoly_detection)
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada.

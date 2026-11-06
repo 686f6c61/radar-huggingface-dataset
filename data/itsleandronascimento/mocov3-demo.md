@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`itsleandronascimento/mocov3-demo` es un repositorio de HuggingFace publicado por el usuario `itsleandronascimento` que contiene una implementación personalizada y compacta en PyTorch de una arquitectura etiquetada como Mocov3, orientada a tareas de clasificación. El propio autor declara de forma explícita que la configuración "huge" descrita en la model card está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, y no como una release preentrenada lista para producción.
+`itsleandronascimento/mocov3-demo` es un repositorio de Hugging Face publicado por el usuario `itsleandronascimento` que contiene una implementación personalizada y compacta en PyTorch de una arquitectura etiquetada como Mocov3, orientada a tareas de clasificación. El propio autor declara de forma explícita que la configuración "huge" descrita en la model card está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, y no como una release preentrenada lista para producción.
 
 El checkpoint real (`model.safetensors`) contiene 49.600 parámetros totales, una cifra coherente con un repositorio de tamaño 0,0 GB y con la naturaleza de inicialización de prueba que el autor reconoce. No se declara ningún resultado de benchmark ni se documenta el conjunto de datos de entrenamiento, por lo que no existe evidencia publicada de rendimiento en ninguna tarea.
 
@@ -48,7 +48,7 @@ En la práctica, el artefacto solo permite ejecutar el punto de entrada de prueb
 - Validación de configuraciones de arquitectura: sirve para comprobar experimentalmente cómo se comportan combinaciones de atención de ventana deslizante, RMSNorm y activación approx gelu en un entorno controlado y de coste despreciable.
 - Banco de pruebas de recetas de optimización: permite ensayar el bucle de entrenamiento definido en `finetune.py` (Adam con warmup lineal) y comprobar la estabilidad numérica antes de escalar a un modelo real.
 - Integración en CI/CD: al ser un repositorio diminuto, puede incluirse en una canalización de integración continua que verifique que los cambios en el código de fine-tuning no rompen la carga del checkpoint ni el forward.
-- Material didáctico y de estudio: resulta útil para docencia o autoaprendizaje sobre cómo se estructura un repositorio de modelo personalizado en HuggingFace (config, pesos, argumentos de entrenamiento y script de ajuste).
+- Material didáctico y de estudio: resulta útil para docencia o autoaprendizaje sobre cómo se estructura un repositorio de modelo personalizado en Hugging Face (config, pesos, argumentos de entrenamiento y script de ajuste).
 - Punto de partida para fine-tuning propio: un equipo puede reutilizar el esqueleto de código y sustituir la inicialización por pesos propios u otro backbone para una tarea de clasificación concreta.
 - Referencia para comparaciones de inicialización: al ser un checkpoint no entrenado, sirve como línea base "de cero" frente a la que medir la ganancia obtenida por un entrenamiento real bajo las mismas condiciones.
 
@@ -70,7 +70,7 @@ No disponible. No se dispone de datos numéricos de alternativas comparables en 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mocov3-demo (este repo) | 49.600 | no disponible | clasificacion | BSD-3-Clause | HuggingFace |
+| mocov3-demo (este repo) | 49.600 | no disponible | clasificacion | BSD-3-Clause | Hugging Face |
 | Modelos comparables de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El repositorio es un checkpoint de inicialización sin entrenar, no una release preentrenada, por lo que enfrentarlo a modelos ya entrenados de la familia MoCo v3 o a clasificadores autosupervisados publicados no produciría una comparación informativa. Cualquier evaluación futura debería, según el propio autor, emplear un split etiquetado específico de la tarea, reportar la métrica correspondiente sobre al menos tres semillas e incluir una línea base de capacidad equivalente.
@@ -89,7 +89,7 @@ El repositorio es un checkpoint de inicialización sin entrenar, no una release 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/itsleandronascimento/mocov3-demo
+- Repositorio en Hugging Face: https://huggingface.co/itsleandronascimento/mocov3-demo
 - Archivos incluidos en el repositorio: `finetune.py` (artefacto principal), `README.md` (documentación), `config.json` (configuración de arquitectura), `training_args.json` (ajustes de experimento por defecto), `model.safetensors` (checkpoint de inicialización).
 - Referencia conceptual externa: el trabajo original de MoCo v3, "An Empirical Study of Training Self-Supervised Vision Transformers" (arXiv:2104.02057), como contexto de la familia de modelos citada; no proviene de la búsqueda web realizada ni guarda relación directa con este repositorio.
 - Nota sobre la búsqueda web: los resultados obtenidos no son pertinentes para este modelo (corresponden a páginas sobre un jugador de dardos llamado Luke Allen), por lo que no se han incluido como enlaces relevantes.

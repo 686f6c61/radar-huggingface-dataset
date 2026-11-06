@@ -97,7 +97,7 @@ No se dispone de información sobre otras conversiones Core ML comparables ni so
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aac6fef/laya-multilingual-coreml-adaptive-fp32
+- Repositorio en Hugging Face: https://huggingface.co/aac6fef/laya-multilingual-coreml-adaptive-fp32
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Revision del modelo base fijada: `052592a15d198d9ad47da779604259b10b47b7aa`
 - Evidencia de runtime y cualificacion (runtime 0.5.1): https://github.com/mizorewww/laya-coreml/blob/main/docs/QUALIFICATION_0_5_1.md

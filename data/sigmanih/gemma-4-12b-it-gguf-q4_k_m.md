@@ -87,7 +87,7 @@ No se dispone de informaci√≥n comparativa con otros modelos de la misma categor√
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sigmanih/gemma-4-12B-it-GGUF-Q4_K_M
+- Repositorio Hugging Face: https://huggingface.co/sigmanih/gemma-4-12B-it-GGUF-Q4_K_M
 - Sigma Studio (GitHub): https://github.com/Sigmanih/SigmaStudio
 - Repositorio alternativo GGUF (bartowski): https://huggingface.co/bartowski/gemma-4-12B-it-GGUF
 - Repositorio alternativo GGUF (ggml-org): https://huggingface.co/ggml-org/gemma-4-12B-it-GGUF

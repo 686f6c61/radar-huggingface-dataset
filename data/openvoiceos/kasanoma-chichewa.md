@@ -76,9 +76,9 @@ La informacion disponible sobre alternativas es muy limitada. Se incluye unicame
 
 | Modelo | Idioma | Formato | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `OpenVoiceOS/kasanoma-chichewa` (este) | chichewa (`ny`) | ONNX / Piper 1.3.0 | 63,5 MB (`model.onnx`) | no especificada | HuggingFace (espejo) |
-| `ghananlpcommunity/kasanoma-twi` | twi | no disponible | no disponible | no disponible | HuggingFace |
-| Otras voces Piper para lenguas distintas | varios | ONNX / Piper | no disponible | variable segun la voz | HuggingFace / repos de Piper |
+| `OpenVoiceOS/kasanoma-chichewa` (este) | chichewa (`ny`) | ONNX / Piper 1.3.0 | 63,5 MB (`model.onnx`) | no especificada | Hugging Face (espejo) |
+| `ghananlpcommunity/kasanoma-twi` | twi | no disponible | no disponible | no disponible | Hugging Face |
+| Otras voces Piper para lenguas distintas | varios | ONNX / Piper | no disponible | variable segun la voz | Hugging Face / repos de Piper |
 
 No se dispone de datos de parametros, contexto ni rendimiento para establecer una comparacion cuantitativa con alternativas de la misma categoria o de la misma lengua. No se han identificado otras voces TTS publicas en chichewa dentro de la informacion proporcionada.
 
@@ -98,7 +98,7 @@ No se dispone de datos de parametros, contexto ni rendimiento para establecer un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OpenVoiceOS/kasanoma-chichewa
+- Repositorio en Hugging Face: https://huggingface.co/OpenVoiceOS/kasanoma-chichewa
 - Proyecto original Kasanoma: https://github.com/michsethowusu/kasanoma
 - Release `chichewa` del proyecto original: https://github.com/michsethowusu/kasanoma/releases/tag/chichewa
 - Referencia de licencia indicada por el autor: https://github.com/michsethowusu/kasanoma#license

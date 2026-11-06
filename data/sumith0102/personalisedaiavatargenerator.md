@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo "PersonalisedAiAvatarGenerator" es un proyecto publicado en HuggingFace por el usuario Sumith0102 bajo licencia Apache-2.0. A pesar de su nombre, que sugiere un generador de avatares personalizados, no se ha publicado ninguna información técnica en la model card: no se especifican la arquitectura, el tamaño de los parámetros, la longitud de contexto ni los idiomas soportados. El repositorio tiene un tamaño de 2.1 GB, lo que podría indicar la presencia de pesos de modelo, pero no hay confirmación oficial. La fecha de creación es septiembre de 2026, y no se han registrado descargas ni "likes" en el momento de la consulta. Debido a la ausencia de documentación, no es posible evaluar su relevancia ni sus capacidades reales.
+El modelo "PersonalisedAiAvatarGenerator" es un proyecto publicado en Hugging Face por el usuario Sumith0102 bajo licencia Apache-2.0. A pesar de su nombre, que sugiere un generador de avatares personalizados, no se ha publicado ninguna información técnica en la model card: no se especifican la arquitectura, el tamaño de los parámetros, la longitud de contexto ni los idiomas soportados. El repositorio tiene un tamaño de 2.1 GB, lo que podría indicar la presencia de pesos de modelo, pero no hay confirmación oficial. La fecha de creación es septiembre de 2026, y no se han registrado descargas ni "likes" en el momento de la consulta. Debido a la ausencia de documentación, no es posible evaluar su relevancia ni sus capacidades reales.
 
 ## Especificaciones tecnicas
 
@@ -50,6 +50,6 @@ No se dispone de información técnica suficiente para comparar este modelo con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sumith0102/PersonalisedAiAvatarGenerator
+- Hugging Face: https://huggingface.co/Sumith0102/PersonalisedAiAvatarGenerator
 
 No se han encontrado enlaces adicionales específicos del modelo en la búsqueda web.

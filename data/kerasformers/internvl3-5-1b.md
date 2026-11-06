@@ -34,7 +34,7 @@ El entrenamiento del modelo original emplea el framework Cascade RL, que combina
 - Soporte de conversaciones multi-turno con contexto visual (el procesador acepta listas de mensajes con contenido mixto imagen/texto).
 - Capacidad de descripcion de imagenes en lenguaje natural.
 - Ejecucion en tres backends: TensorFlow, Torch y JAX, sin cambios en el codigo.
-- Carga directa desde HuggingFace sin conversion en caliente ni dependencia de `transformers`.
+- Carga directa desde Hugging Face sin conversion en caliente ni dependencia de `transformers`.
 
 ## Casos de uso
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
 | kerasformers/internvl3.5-1b | ~1B | no disponible | Apache 2.0 | Keras 3 | Conversion Keras del modelo InternVL3.5 |
-| OpenGVLab/InternVL3_5-1B-HF | ~1B | no disponible | Apache 2.0 | safetensors | Modelo original en formato HuggingFace |
+| OpenGVLab/InternVL3_5-1B-HF | ~1B | no disponible | Apache 2.0 | safetensors | Modelo original en formato Hugging Face |
 | Qwen2-VL-2B | 2B | 128K tokens | Apache 2.0 | safetensors | Alternativa multimodal de mayor tamano |
 
 La principal diferencia frente al modelo original es el formato de pesos: esta conversion usa Keras 3, lo que permite ejecutarse en tres backends sin dependencias de `transformers`. Frente a alternativas como Qwen2-VL-2B, el modelo de 1B es mas ligero pero tambien tiene menos capacidad de razonamiento, aunque los benchmarks no estan disponibles para confirmarlo.
@@ -78,10 +78,10 @@ La principal diferencia frente al modelo original es el formato de pesos: esta c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/internvl3.5-1b
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/internvl3.5-1b
 - Modelo original: https://huggingface.co/OpenGVLab/InternVL3_5-1B-HF
 - Documentacion de KerasFormers para InternVL: https://imvision12.github.io/KerasFormers/internvl/
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
-- Coleccion de modelos InternVL en HuggingFace: https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd
+- Coleccion de modelos InternVL en Hugging Face: https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd
 - Blog de InternVL3.5: https://internvl.github.io/blog/2025-08-26-InternVL-3.5/
 - Paper de InternVL3.5: https://arxiv.org/abs/2508.18265

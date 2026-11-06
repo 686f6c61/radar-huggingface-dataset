@@ -77,7 +77,7 @@ La comparativa se basa en caracteristicas publicas; no se dispone de datos de re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/granite-4.2-8b-decensored-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/granite-4.2-8b-decensored-i1-GGUF
 - Modelo base (decensored): https://huggingface.co/qcokvd1/granite-4.2-8b-decensored
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/granite-4.2-8b-decensored-GGUF
 - Repositorio GitHub de IBM Granite 4.2: https://github.com/ibm-granite/granite-4.2-language-models

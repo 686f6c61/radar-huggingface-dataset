@@ -78,12 +78,12 @@ El error estándar de la accuracy sobre 2.000 decisiones es de aproximadamente 0
 
 | Modelo | Parámetros | Accuracy (test) | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| decider-75M | 74,8M | 0.8050 | 1.024 tokens | CC BY 4.0 | HuggingFace |
-| decider-175M | 175,6M | 0.8120 | no disponible | no disponible | HuggingFace |
-| sysone-typed-decisions-0.4B | 400M | 0.8025 | no disponible | no disponible | HuggingFace |
-| OpenDecider-nano | 400M | 0.796 | no disponible | no disponible | HuggingFace |
-| SafeDecide-400M | 400M | 0.787 | no disponible | no disponible | HuggingFace |
-| SafeDecide-140M | 140M | 0.754 | no disponible | no disponible | HuggingFace |
+| decider-75M | 74,8M | 0.8050 | 1.024 tokens | CC BY 4.0 | Hugging Face |
+| decider-175M | 175,6M | 0.8120 | no disponible | no disponible | Hugging Face |
+| sysone-typed-decisions-0.4B | 400M | 0.8025 | no disponible | no disponible | Hugging Face |
+| OpenDecider-nano | 400M | 0.796 | no disponible | no disponible | Hugging Face |
+| SafeDecide-400M | 400M | 0.787 | no disponible | no disponible | Hugging Face |
+| SafeDecide-140M | 140M | 0.754 | no disponible | no disponible | Hugging Face |
 
 decider-75M ofrece la mejor relación accuracy/parámetros de la comparativa: supera a modelos de 400M con 5,3 veces menos parámetros. Solo decider-175M lo supera en accuracy absoluta (0,7 puntos más) a 2,3 veces el tamaño.
 
@@ -100,7 +100,7 @@ decider-75M ofrece la mejor relación accuracy/parámetros de la comparativa: su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/semgram/decider-75M
+- Modelo en Hugging Face: https://huggingface.co/semgram/decider-75M
 - Modelo base mmBERT-small: https://huggingface.co/jhu-clsp/mmBERT-small
 - Modelo hermano decider-175M: https://huggingface.co/semgram/decider-175M
 - Dataset del benchmark Typed Decisions: https://huggingface.co/datasets/LocalLLaMA/typed-decisions

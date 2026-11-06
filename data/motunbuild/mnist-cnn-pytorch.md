@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Tarea | Precision MNIST | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Motunbuild/mnist-cnn-pytorch | ~1,7M | Clasificacion de digitos | 99,05% | MIT | HuggingFace Hub |
+| Motunbuild/mnist-cnn-pytorch | ~1,7M | Clasificacion de digitos | 99,05% | MIT | Hugging Face Hub |
 | LeNet-5 clasica | ~60K | Clasificacion de digitos | ~99% (referencia historica) | No disponible | Implementaciones multiples |
 | CNN generica sobre MNIST | Variable | Clasificacion de digitos | 98-99,5% tipico | Variable | Multiples repositorios |
 
@@ -85,7 +85,7 @@ No se dispone de comparaciones publicadas por el autor con modelos concretos del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Motunbuild/mnist-cnn-pytorch
+- Hugging Face: https://huggingface.co/Motunbuild/mnist-cnn-pytorch
 - Dataset MNIST: https://huggingface.co/datasets/mnist
 - Documentacion PyTorch: https://pytorch.org/docs/stable/index.html
 - Documentacion `huggingface_hub`: https://huggingface.co/docs/huggingface_hub

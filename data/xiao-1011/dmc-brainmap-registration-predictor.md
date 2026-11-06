@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Entrada | Contexto | Error medio de punto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DMC-BrainMap Registration Predictor v2.0.0 | 13.976.840 | 1140 x 800 px | No aplica | 15,9 px (test retenido del autor) | BSD-3-Clause | HuggingFace, integrado en DMC-BrainMap > 0.2.0b2 |
-| DMC-BrainMap Registration Predictor v1.0.0 | 2.336.200 | 1140 x 800 px | No aplica | 20,3 px (test retenido del autor) | BSD-3-Clause | HuggingFace, integrado en DMC-BrainMap 0.1.8 y posteriores |
+| DMC-BrainMap Registration Predictor v2.0.0 | 13.976.840 | 1140 x 800 px | No aplica | 15,9 px (test retenido del autor) | BSD-3-Clause | Hugging Face, integrado en DMC-BrainMap > 0.2.0b2 |
+| DMC-BrainMap Registration Predictor v1.0.0 | 2.336.200 | 1140 x 800 px | No aplica | 20,3 px (test retenido del autor) | BSD-3-Clause | Hugging Face, integrado en DMC-BrainMap 0.1.8 y posteriores |
 | Métodos clásicos de registro (por ejemplo, optimización de homografía por intensidad) | No disponible | No disponible | No aplica | No disponible | Variable según implementación | Disponible en bibliotecas de imagen médica |
 
 No se dispone de datos publicados de otros modelos de aprendizaje profundo comparables para registro de secciones histológicas con el atlas Allen en la información proporcionada; la comparativa con alternativas de la misma categoría queda como no disponible.
@@ -102,7 +102,7 @@ No se dispone de datos publicados de otros modelos de aprendizaje profundo compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xiao-1011/dmc-brainmap-registration-predictor
+- Modelo en Hugging Face: https://huggingface.co/xiao-1011/dmc-brainmap-registration-predictor
 - Repositorio de código y entrenamiento: https://github.com/xiao-1011/sharpy-model
 - Commit de la v1.0.0: https://github.com/xiao-1011/sharpy-model/commit/0a80f4f831f6450a015a2f32433f22975ac97dc0
 - Herramienta DMC-BrainMap (plugin de napari): https://github.com/hejDMC/napari-dmc-brainmap

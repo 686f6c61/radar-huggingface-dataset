@@ -88,7 +88,7 @@ No disponible. La informacion proporcionada no incluye otros modelos de recompen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rookierufus/sarm-wire-brown
+- Modelo en Hugging Face: https://huggingface.co/rookierufus/sarm-wire-brown
 - Perfil del autor: https://huggingface.co/rookierufus/models
 - Dataset asociado (Plug_out_wire_brown_20260917_140911): https://huggingface.co/datasets/rookierufus/Plug_out_wire_brown_20260917_140911
 - Repositorio del paper SARM (AAAI 2026 Oral, "Interpretable Reward Model via Sparse Autoencoder", relacion no confirmada con este modelo): https://github.com/schrieffer-z/sarm

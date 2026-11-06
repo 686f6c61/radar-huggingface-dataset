@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `0xmoose0xmoose0xmoose/xss-probe3-fixed` corresponde a un repositorio alojado en HuggingFace que no contiene ningun modelo de aprendizaje automatico. La model card publicada por el autor no describe arquitectura, pesos, datos de entrenamiento ni licencia: su contenido son fragmentos de HTML y CSS con reglas `position:fixed`, `inset:0`, `z-index` elevado y propiedades `background:url(...)` apuntando al dominio `rce.lc`. Se trata, por tanto, de una sonda de seguridad disenada para comprobar si el renderizador de model cards de HuggingFace sanea correctamente superposiciones a pantalla completa y cargas de recursos externos.
+El identificador `0xmoose0xmoose0xmoose/xss-probe3-fixed` corresponde a un repositorio alojado en Hugging Face que no contiene ningun modelo de aprendizaje automatico. La model card publicada por el autor no describe arquitectura, pesos, datos de entrenamiento ni licencia: su contenido son fragmentos de HTML y CSS con reglas `position:fixed`, `inset:0`, `z-index` elevado y propiedades `background:url(...)` apuntando al dominio `rce.lc`. Se trata, por tanto, de una sonda de seguridad disenada para comprobar si el renderizador de model cards de Hugging Face sanea correctamente superposiciones a pantalla completa y cargas de recursos externos.
 
 El repositorio incluye variantes numeradas (C1 a C16) que prueban tecnicas de evasion de filtros: uso de `!important`, identificadores CSS escapados, prefijos de escape, esquemas de URL en mayusculas, comillas simples y dobles, inyeccion a traves de `list-style-image`, `filter`, `-webkit-mask-image` y variables CSS custom properties. Las entradas C11 y C12 parecen actuar como controles (una sin URL y otra con URL pero sin posicionamiento fijo) para verificar que el comportamiento observado se debe al vector concreto y no a un efecto colateral.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - Compatibilidad con GPU de consumo: no aplica.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no aplica; el repositorio no contiene ficheros de modelo en formato safetensors, GGUF ni equivalente.
 - Latencia y throughput: no disponible.
-- Requisito real: unicamente un navegador web con acceso al visor de HuggingFace, dado que el unico efecto observable depende del renderizado de HTML/CSS en el cliente.
+- Requisito real: unicamente un navegador web con acceso al visor de Hugging Face, dado que el unico efecto observable depende del renderizado de HTML/CSS en el cliente.
 
 ## Comparativa con modelos similares
 
@@ -74,10 +74,10 @@ No disponible. Este repositorio no pertenece a ninguna categoria de modelo y no 
 - Anomalia en las fechas: los metadatos indican creacion y actualizacion el 2026-09-15, una fecha posterior al momento habitual de consulta, lo que sugiere manipulacion deliberada de metadatos o un entorno de pruebas.
 - Metricas de comunidad planas: cero descargas y cero likes, coherente con un repositorio de prueba y no con un artefacto destinado a uso real.
 - Restricciones de licencia: al no declararse licencia, no hay permiso explicito de uso comercial ni de redistribucion; en la practica, el debate es irrelevante porque no hay artefacto que licenciar.
-- Recomendacion operativa: no integrar este identificador en pipelines, catalogos de modelos ni sistemas de recomendacion automatica; clasificarlo como repositorio no-modelo y, si procede, reportarlo a HuggingFace para revision.
+- Recomendacion operativa: no integrar este identificador en pipelines, catalogos de modelos ni sistemas de recomendacion automatica; clasificarlo como repositorio no-modelo y, si procede, reportarlo a Hugging Face para revision.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/0xmoose0xmoose0xmoose/xss-probe3-fixed
+- Repositorio en Hugging Face: https://huggingface.co/0xmoose0xmoose0xmoose/xss-probe3-fixed
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este identificador en la informacion disponible.
 - Los resultados de busqueda web proporcionados no son relevantes para este repositorio: apuntan a paginas corporativas de Microsoft (microsoft.com, account.microsoft.com, myaccount.microsoft.com, microsoft365 y la entrada de Wikipedia sobre Microsoft Corporation).

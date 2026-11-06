@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JoyAI-VL-Interaction-Preview es un modelo de interacción visual en tiempo real desarrollado por JD (JD.com), publicado en HuggingFace bajo el usuario wuhao221. Se trata de un VLM (vision-language model) de aproximadamente 8,7 mil millones de parámetros, basado en la arquitectura Qwen3-VL, que procesa un flujo de video en vivo y, cada segundo, decide de forma autónoma si hablar, permanecer en silencio o delegar una subtarea a un modelo o agente en segundo plano. Esta capacidad de decisión proactiva está aprendida internamente mediante datos alineados temporalmente segundo a segundo y refuerzo (RL), no mediante un detector de turnos externo.
+JoyAI-VL-Interaction-Preview es un modelo de interacción visual en tiempo real desarrollado por JD (JD.com), publicado en Hugging Face bajo el usuario wuhao221. Se trata de un VLM (vision-language model) de aproximadamente 8,7 mil millones de parámetros, basado en la arquitectura Qwen3-VL, que procesa un flujo de video en vivo y, cada segundo, decide de forma autónoma si hablar, permanecer en silencio o delegar una subtarea a un modelo o agente en segundo plano. Esta capacidad de decisión proactiva está aprendida internamente mediante datos alineados temporalmente segundo a segundo y refuerzo (RL), no mediante un detector de turnos externo.
 
 El modelo resuelve un problema clave de los sistemas conversacionales tradicionales basados en turnos: los eventos del mundo real no esperan a que se formule una pregunta. Una cámara de seguridad, un livestream o una videollamada generan momentos que requieren respuesta inmediata. JoyAI-VL-Interaction está diseñado para esos escenarios, con la visión como driver principal y el habla (ASR/TTS) como I/O enchufable. Es el primer modelo abierto de interacción visual proactiva que se publica junto con su receta de entrenamiento, sus datos y un sistema de despliegue completo. Soporta una ventana de contexto de 131072 tokens y se sirve de forma nativa mediante vLLM-Omni, que añade la capa de orquestación en tiempo real.
 
@@ -87,10 +87,10 @@ No hay una comparativa directa disponible en la informacion proporcionada. El mo
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/wuhao221/JoyAI-VL-Interaction-Preview
-- HuggingFace (organizacion JD): https://huggingface.co/jdopensource/JoyAI-VL-Interaction-Preview
+- Hugging Face (modelo): https://huggingface.co/wuhao221/JoyAI-VL-Interaction-Preview
+- Hugging Face (organizacion JD): https://huggingface.co/jdopensource/JoyAI-VL-Interaction-Preview
 - Paper (arXiv): https://arxiv.org/abs/2606.14777
 - Pagina del proyecto y demos: https://joyai-vl-video-future-academy-jd.github.io/JoyAI-VL-Interaction/
 - Repositorio GitHub: https://github.com/jd-opensource/JoyAI-VL-Interaction
 - Receta vLLM-Omni: https://github.com/vllm-project/vllm-omni/blob/main/recipes/JD/JoyAI-VL-Interaction.md
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/hugging-apps/joyai-vl-interaction
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/hugging-apps/joyai-vl-interaction

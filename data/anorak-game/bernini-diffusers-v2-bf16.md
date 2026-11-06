@@ -79,9 +79,9 @@ El autor afirma que, en edición de vídeo, Bernini alcanza el primer nivel entr
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bernini-Diffusers-v2 (esta ficha) | ~21B (7B + 14B) | No disponible | Planificador MLLM + renderizador DiT | Apache 2.0 | Pesos abiertos en HuggingFace |
-| Bernini-R | No disponible | No disponible | Solo renderizador | No disponible | Pesos abiertos en HuggingFace |
-| Wan2.2-T2V-A14B | 14B | No disponible | DiT de texto a vídeo | No disponible | Pesos abiertos en HuggingFace |
+| Bernini-Diffusers-v2 (esta ficha) | ~21B (7B + 14B) | No disponible | Planificador MLLM + renderizador DiT | Apache 2.0 | Pesos abiertos en Hugging Face |
+| Bernini-R | No disponible | No disponible | Solo renderizador | No disponible | Pesos abiertos en Hugging Face |
+| Wan2.2-T2V-A14B | 14B | No disponible | DiT de texto a vídeo | No disponible | Pesos abiertos en Hugging Face |
 
 La información disponible no incluye comparativas numéricas con otros pipelines de generación de vídeo de código abierto. La diferencia principal de Bernini frente a Bernini-R es la inclusión del planificador semántico, que mejora el seguimiento de instrucciones y el manejo de peticiones complejas a costa de un checkpoint más pesado.
 
@@ -98,12 +98,12 @@ La información disponible no incluye comparativas numéricas con otros pipeline
 
 ## Enlaces
 
-- Modelo en HuggingFace (esta variante): https://huggingface.co/anorak-game/Bernini-Diffusers-v2-bf16
+- Modelo en Hugging Face (esta variante): https://huggingface.co/anorak-game/Bernini-Diffusers-v2-bf16
 - Modelo base oficial: https://huggingface.co/ByteDance/Bernini-Diffusers-v2
 - Repositorio de código oficial: https://github.com/bytedance/Bernini
 - Paper: https://arxiv.org/abs/2605.22344
 - Página del proyecto: https://bernini-ai.github.io/
-- Colección de modelos Bernini en HuggingFace: https://huggingface.co/collections/ByteDance/bernini
+- Colección de modelos Bernini en Hugging Face: https://huggingface.co/collections/ByteDance/bernini
 - Renderizador base Wan2.2-T2V-A14B: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B
 - Planificador base Qwen2.5-VL-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Repositorio de la herramienta de conversión: https://github.com/anorak-games/cagoule-catalog

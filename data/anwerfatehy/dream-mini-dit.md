@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`dream-mini-dit` es un modelo publicado en HuggingFace por el usuario ANWERFATEHY bajo licencia Apache 2.0. En el momento de redactar esta ficha, la informacion publica disponible es practicamente nula: la model card unicamente contiene la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline asignado.
+`dream-mini-dit` es un modelo publicado en Hugging Face por el usuario ANWERFATEHY bajo licencia Apache 2.0. En el momento de redactar esta ficha, la informacion publica disponible es practicamente nula: la model card unicamente contiene la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline asignado.
 
 El nombre del repositorio sugiere, por convencion de nomenclatura, un modelo de difusion basado en transformer (DiT, Diffusion Transformer) de tamano reducido, pero esta interpretacion no esta confirmada por ninguna fuente oficial y no debe tomarse como un dato tecnico verificado. No se dispone de informacion sobre el numero de parametros, la longitud de contexto, los idiomas soportados ni el formato de pesos.
 
-Por tanto, esta ficha se limita a documentar lo que consta fehacientemente y a marcar de forma explicita como "no disponible" todo aquello que no puede verificarse. Se recomienda a cualquier lector consultar directamente el repositorio de HuggingFace y contactar con el autor antes de evaluar el modelo para un caso de uso real.
+Por tanto, esta ficha se limita a documentar lo que consta fehacientemente y a marcar de forma explicita como "no disponible" todo aquello que no puede verificarse. Se recomienda a cualquier lector consultar directamente el repositorio de Hugging Face y contactar con el autor antes de evaluar el modelo para un caso de uso real.
 
 ## Especificaciones tecnicas
 
@@ -76,5 +76,5 @@ No disponible. No es posible establecer una comparativa fiable sin conocer la ar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ANWERFATEHY/dream-mini-dit
+- Modelo en Hugging Face: https://huggingface.co/ANWERFATEHY/dream-mini-dit
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; las busquedas devolvieron unicamente paginas genericas de Google, sin papers, blogs, repositorios ni demos asociados al modelo.

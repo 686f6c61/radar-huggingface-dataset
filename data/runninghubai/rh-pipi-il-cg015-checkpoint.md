@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rh-pipi-il-cg015-checkpoint | no disponible | no aplica | no disponible | HuggingFace + RunningHub |
-| SDXL base (Stability AI) | ~3,5 B (UNet + encoders) | no aplica | CreativeML Open RAIL++-M | HuggingFace, ampliamente disponible |
-| Modelos derivados de SDXL en CivitAI | variable | no aplica | variable segun autor | CivitAI, HuggingFace |
+| rh-pipi-il-cg015-checkpoint | no disponible | no aplica | no disponible | Hugging Face + RunningHub |
+| SDXL base (Stability AI) | ~3,5 B (UNet + encoders) | no aplica | CreativeML Open RAIL++-M | Hugging Face, ampliamente disponible |
+| Modelos derivados de SDXL en CivitAI | variable | no aplica | variable segun autor | CivitAI, Hugging Face |
 
 La comparacion con SDXL base es la mas directa por la mencion a IL-XL como origen, pero no se dispone de datos de rendimiento del checkpoint para establecer diferencias cuantitativas.
 
@@ -79,7 +79,7 @@ La comparacion con SDXL base es la mas directa por la mencion a IL-XL como orige
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-pipi-il-cg015-checkpoint
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-pipi-il-cg015-checkpoint
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2044195731497558018
 - Pagina del autor: https://www.runninghub.ai/user-center/1954484547733893121
 - Flujo text-to-image (sitio global): https://www.RunningHub.ai/ai-detail/1955051977785819138

@@ -91,8 +91,8 @@ No se dispone de datos de contexto, licencia ni benchmarks de los modelos altern
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---:|---|---|---|
-| tanpo-hiring | 1,17 B | No disponible | `other` (sin detalle) | HuggingFace: safetensors, GGUF y LoRA |
-| unsloth/LFM2.5-1.2B-Instruct (base) | No disponible | No disponible | No disponible | HuggingFace |
+| tanpo-hiring | 1,17 B | No disponible | `other` (sin detalle) | Hugging Face: safetensors, GGUF y LoRA |
+| unsloth/LFM2.5-1.2B-Instruct (base) | No disponible | No disponible | No disponible | Hugging Face |
 | Modelos instructivos generalistas del rango 1-2B (por ejemplo familias Qwen o Gemma) | No disponible | No disponible | No disponible | No disponible |
 
 La unica comparacion cuantitativa publicada es contra el modelo base: 92,9 % frente a 83,8 % de rubrica global y 7,18 frente a 6,40 en calidad heuristica.
@@ -111,7 +111,7 @@ La unica comparacion cuantitativa publicada es contra el modelo base: 92,9 % fre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d4rkninja/tanpo-hiring
+- Modelo en Hugging Face: https://huggingface.co/d4rkninja/tanpo-hiring
 - Version GGUF: https://huggingface.co/d4rkninja/tanpo-hiring-GGUF
 - Adaptador LoRA: https://huggingface.co/d4rkninja/tanpo-hiring-LoRA
 - Modelo base: https://huggingface.co/unsloth/LFM2.5-1.2B-Instruct

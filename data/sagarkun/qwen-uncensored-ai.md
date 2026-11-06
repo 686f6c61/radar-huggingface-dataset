@@ -6,7 +6,7 @@ Qwen-Uncensored-ai es un repositorio de cuantizaciones del modelo de difusion te
 
 El modelo resuelve el problema de ejecutar un generador de imagenes de gran tamano en hardware de consumo, ofreciendo variantes desde BF16 (14,23 GB) hasta NVFP4 (4,20 GB) y MLX 4-bit (4,00 GB). La etiqueta "Uncensored" sugiere que los pesos derivan de un ajuste sin filtros de seguridad respecto al modelo original, aunque la model card no documenta explicitamente el proceso de eliminacion de censura ni los datos empleados. Es relevante ahora porque el ecosistema ComfyUI-GGUF ha incorporado soporte nativo para la arquitectura Qwen-Image 2.1, lo que permite cargar estos ficheros directamente en flujos de trabajo de generacion de imagenes.
 
-La ficha se limita a lo declarado en la model card y en los metadatos de HuggingFace; no se dispone de informacion sobre el dataset de entrenamiento, el proceso de ajuste fino ni resultados de benchmarks propios del autor.
+La ficha se limita a lo declarado en la model card y en los metadatos de Hugging Face; no se dispone de informacion sobre el dataset de entrenamiento, el proceso de ajuste fino ni resultados de benchmarks propios del autor.
 
 ## Especificaciones tecnicas
 
@@ -64,8 +64,8 @@ No se dispone de datos de rendimiento del modelo en la informacion proporcionada
 
 | Modelo | Parametros | Contexto | Licencia | Formatos | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Uncensored-ai (este) | 7,1 B (transformer) + 8 B (text encoder) | no disponible | qwen-research | GGUF, safetensors, MLX | HuggingFace, 147 descargas |
-| Qwen/Qwen-Image-2.1 (base) | no disponible | no disponible | qwen-research | safetensors | HuggingFace oficial |
+| Qwen-Uncensored-ai (este) | 7,1 B (transformer) + 8 B (text encoder) | no disponible | qwen-research | GGUF, safetensors, MLX | Hugging Face, 147 descargas |
+| Qwen/Qwen-Image-2.1 (base) | no disponible | no disponible | qwen-research | safetensors | Hugging Face oficial |
 | Alternativas de difusion texto-a-imagen de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para comparar con alternativas concretas como FLUX.1, SDXL o Stable Diffusion 3.5 en terminos de parametros, contexto o rendimiento, ya que la model card no aporta esos datos.
@@ -85,7 +85,7 @@ No se dispone de informacion suficiente para comparar con alternativas concretas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sagarkun/Qwen-Uncensored-ai
+- Repositorio en Hugging Face: https://huggingface.co/Sagarkun/Qwen-Uncensored-ai
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio de cuantizaciones referenciado en la model card: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

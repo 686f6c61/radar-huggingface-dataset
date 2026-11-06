@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BaAMR Math Qwen2.5 1.5B LoRA — Pilot 577 es un adaptador PEFT LoRA de tipo CAUSAL_LM entrenado sobre Qwen/Qwen2.5-1.5B-Instruct para responder preguntas de matemáticas curriculares en bengalí e inglés, dirigidas a los cursos 6 a 10 del sistema educativo de Bangladés. Lo publica el usuario de HuggingFace mdhamidhosen y se distribuye como adaptador, no como modelo completo: al cargarlo con PEFT se descarga automáticamente el modelo base, que aporta los 1.500 millones de parámetros.
+BaAMR Math Qwen2.5 1.5B LoRA — Pilot 577 es un adaptador PEFT LoRA de tipo CAUSAL_LM entrenado sobre Qwen/Qwen2.5-1.5B-Instruct para responder preguntas de matemáticas curriculares en bengalí e inglés, dirigidas a los cursos 6 a 10 del sistema educativo de Bangladés. Lo publica el usuario de Hugging Face mdhamidhosen y se distribuye como adaptador, no como modelo completo: al cargarlo con PEFT se descarga automáticamente el modelo base, que aporta los 1.500 millones de parámetros.
 
 El problema que aborda es la escasez de asistentes matemáticos bilingües bengalí-inglés con formato de solución razonada y respuesta final. El adaptador se ha entrenado con SFT y QLoRA de 4 bits a partir de un corpus piloto de 577 registros fuente emparejados bn-en que cubren 61 capítulos, expandidos a secuencias separadas en cada idioma (914 secuencias de entrenamiento y 118 de validación; 61 registros de test reservados).
 
@@ -106,7 +106,7 @@ La comparación relevante aquí no es de rendimiento, porque el piloto no public
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/mdhamidhosen/baamr-math-qwen2.5-1.5b-lora-pilot-577
+- Adaptador en Hugging Face: https://huggingface.co/mdhamidhosen/baamr-math-qwen2.5-1.5b-lora-pilot-577
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Perfil del autor: https://huggingface.co/mdhamidhosen
 - Documentación de PEFT: https://huggingface.co/docs/peft

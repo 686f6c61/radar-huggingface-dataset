@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo convertido en HuggingFace: https://huggingface.co/giangndm/NVIDIA-NemotronLabs-RE-USE-bf16
+- Modelo convertido en Hugging Face: https://huggingface.co/giangndm/NVIDIA-NemotronLabs-RE-USE-bf16
 - Modelo original: https://huggingface.co/nvidia/NVIDIA-NemotronLabs-RE-USE
 - Model card original (copia en el repo): `README_ORIGINAL.md`
 - Licencia: `LICENSE` (OpenMDW-1.1) en el repositorio

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-c12-native-x100` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Se distribuye en formato safetensors con un total de 2.018.511.234 parametros (aproximadamente 2.000 millones), lo que lo situa en la categoria de modelos de tamano medio. El repositorio ocupa 14,4 GB, un tamano coherente con pesos en precision alta (probablemente fp32 o bf16 con algun estado adicional). El acceso es restringido (gated): es necesario aceptar condiciones en HuggingFace para descargarlo.
+El modelo `alfred8995/r18-a2-c12-native-x100` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Se distribuye en formato safetensors con un total de 2.018.511.234 parametros (aproximadamente 2.000 millones), lo que lo situa en la categoria de modelos de tamano medio. El repositorio ocupa 14,4 GB, un tamano coherente con pesos en precision alta (probablemente fp32 o bf16 con algun estado adicional). El acceso es restringido (gated): es necesario aceptar condiciones en Hugging Face para descargarlo.
 
 La informacion publica disponible es muy limitada. La model card no aporta pipeline declarado, idiomas soportados ni descripcion funcional. El unico tag descriptivo especifico, ademas de `safetensors` y la licencia, es `sn38-nanochrono`, que no corresponde a ninguna familia de modelos ampliamente conocida y sugiere un proyecto experimental o de investigacion independiente. El identificador `r18-a2-c12-native-x100` parece codificar una configuracion interna (posiblemente capas, atencion o variantes de entrenamiento) sin documentacion publica asociada.
 
@@ -79,12 +79,12 @@ La comparacion relevante no es de rendimiento (no hay datos) sino de trazabilida
 - Sesgos desconocidos: sin informacion sobre la composicion del dataset no es posible evaluar sesgos de genero, raza, idioma o dominio.
 - Idiomas no declarados: no se puede asumir soporte de castellano ni de ningun otro idioma concreto.
 - Contexto maximo desconocido: planificar aplicaciones con ventanas largas es arriesgado sin validacion empirica.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a la automatizacion de despliegues.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a la automatizacion de despliegues.
 - Licencia Apache 2.0 permite uso comercial, pero la falta de documentacion traslada al integrador toda la responsabilidad sobre el comportamiento del modelo.
 - Riesgo de supply chain: al ser un repositorio de autor unico con muy pocas descargas, conviene auditar los pesos antes de cargarlos en entornos de produccion.
 - No se distribuyen conversiones GGUF ni cuantizaciones oficiales; cualquier despliegue optimizado exige trabajo adicional de conversion y validacion.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alfred8995/r18-a2-c12-native-x100
+- Repositorio Hugging Face: https://huggingface.co/alfred8995/r18-a2-c12-native-x100
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

@@ -78,11 +78,11 @@ Frente al controlador MPC de referencia en carreteras reales, la diferencia es d
 
 ## Comparativa con modelos similares
 
-No se han identificado otros modelos publicados en HuggingFace de la misma categoria (politicas PPO para confort sobre badenes). La comparacion disponible es con las referencias internas del propio estudio:
+No se han identificado otros modelos publicados en Hugging Face de la misma categoria (politicas PPO para confort sobre badenes). La comparacion disponible es con las referencias internas del propio estudio:
 
 | Referencia | Tipo | Entrada | Rendimiento en las 20 carreteras no vistas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CALM-PPO (semilla 69) | Politica PPO, MLP con capas 256/128 | Estado del semivehiculo y 3 picos de baden en 40 m | a_w = 0,261 m/s² (-6,6 % vs humano; -1,0 % vs constante a igual tiempo) | MIT | HuggingFace y repositorio GitHub |
+| CALM-PPO (semilla 69) | Politica PPO, MLP con capas 256/128 | Estado del semivehiculo y 3 picos de baden en 40 m | a_w = 0,261 m/s² (-6,6 % vs humano; -1,0 % vs constante a igual tiempo) | MIT | Hugging Face y repositorio GitHub |
 | MPC de referencia | Control predictivo basado en modelo | Modelo de la carretera | Diferencia de ~1 % frente a la politica, no distinguible de cero | no disponible | Referenciado en la model card; no se publica como modelo independiente |
 | Conductor humano | Referencia empirica | Percepcion humana | Linea base (0 %) | no aplica | no aplica |
 | Velocidad constante a igual tiempo | Referencia de control | Ninguna (consigna fija) | Linea base (0 %) | no aplica | no aplica |
@@ -102,7 +102,7 @@ No se han identificado otros modelos publicados en HuggingFace de la misma categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CALM-Dataset/CALM-PPO
+- Modelo en Hugging Face: https://huggingface.co/CALM-Dataset/CALM-PPO
 - Repositorio de codigo, entorno y sistema de scoring: https://github.com/Mohammed-Azab/CALM
 - Dataset CALM-Scenarios citado en la model card como origen de las carreteras reales: https://huggingface.co/datasets/CALM-Dataset/CALM-Scenarios (URL inferida a partir del espacio de nombres del autor; no confirmada en la informacion proporcionada)
 - La busqueda web realizada no devolvio resultados relevantes para este modelo: todos los enlaces encontrados corresponden a la aplicacion de meditacion Calm (calm.com) y no guardan relacion con CALM-PPO.

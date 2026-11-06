@@ -96,7 +96,7 @@ Los datos de los modelos comparables no se detallan en la informacion proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-V-4.7-35B-A3B-BF16-metax-FlagOS
+- Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-V-4.7-35B-A3B-BF16-metax-FlagOS
 - AnythingLLM: https://anythingllm.com/
 - FlagOS (pila de software, referencia en la model card): no se proporciona URL directa en la informacion disponible
 - Paper, blog o repositorio de MiniCPM-V 4.7: no disponibles en la informacion proporcionada

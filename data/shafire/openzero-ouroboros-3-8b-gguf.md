@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shafire/OpenZero-Ouroboros-3.8B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/shafire/OpenZero-Ouroboros-3.8B-GGUF
 - OpenZero Ministral 3 8B Runtime Agent GGUF: https://huggingface.co/shafire/OpenZero-Ministral3-8B-Runtime-Agent-GGUF
 - shafire/Zero-Qwen3-8B-OpenZero-GGUF: https://huggingface.co/shafire/Zero-Qwen3-8B-OpenZero-GGUF
 - Modelo base (referencia): https://huggingface.co/microsoft/Phi-4-mini-instruct

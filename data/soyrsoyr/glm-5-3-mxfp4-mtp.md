@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soyrsoyr/GLM-5.3-MXFP4-MTP
+- Modelo en Hugging Face: https://huggingface.co/soyrsoyr/GLM-5.3-MXFP4-MTP
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Script de descarga del checkpoint fuente: https://huggingface.co/soyrsoyr/GLM-5.3-MXFP4-MTP/blob/main/reproduction/ohio-glm53-download.py
 - Script de cuantización y verificación: https://huggingface.co/soyrsoyr/GLM-5.3-MXFP4-MTP/blob/main/reproduction/ohio-glm53-runtime.py

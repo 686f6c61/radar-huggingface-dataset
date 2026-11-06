@@ -100,7 +100,7 @@ Los datos de contexto y licencia de los modelos comparados proceden de su docume
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-feather-mt-dpo2-feather
+- Repositorio en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-feather-mt-dpo2-feather
 - Modelo base intermedio: https://huggingface.co/joshycodes/qwen3-4b-feather-mt
 - Checkpoint hermano (brazo de control): https://huggingface.co/joshycodes/qwen3-4b-feather-mt-dpo-plain
 - Qwen3-4B original: https://huggingface.co/Qwen/Qwen3-4B

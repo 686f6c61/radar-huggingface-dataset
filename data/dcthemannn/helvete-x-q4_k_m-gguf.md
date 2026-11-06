@@ -4,7 +4,7 @@
 
 HELVETE-X es un modelo de lenguaje de 10.211 millones de parámetros desarrollado por HelpingAI, distribuido originalmente en formato safetensors y posteriormente convertido a GGUF por el usuario DCtheMannn para su uso con llama.cpp. Esta versión concreta, `HELVETE-X-Q4_K_M-GGUF`, es una cuantización Q4_K_M que reduce el tamaño del modelo a aproximadamente 6,2 GB, lo que permite su ejecución en hardware de consumo. El modelo está orientado a generación de texto sin filtros, con etiquetas que indican contenido NSFW y capacidades de "inteligencia emocional avanzada" (Advanced-EI), aunque no se dispone de documentación técnica detallada sobre su arquitectura o entrenamiento.
 
-La relevancia de esta ficha radica en que se trata de una conversión GGUF de un modelo que, por sus características declaradas, busca ofrecer respuestas sin restricciones de contenido. Sin embargo, la información pública disponible es muy limitada: no se han publicado especificaciones de arquitectura, datos de entrenamiento ni benchmarks. Esta ficha recoge únicamente los datos verificables de la página de HuggingFace y señala explícitamente las carencias de información.
+La relevancia de esta ficha radica en que se trata de una conversión GGUF de un modelo que, por sus características declaradas, busca ofrecer respuestas sin restricciones de contenido. Sin embargo, la información pública disponible es muy limitada: no se han publicado especificaciones de arquitectura, datos de entrenamiento ni benchmarks. Esta ficha recoge únicamente los datos verificables de la página de Hugging Face y señala explícitamente las carencias de información.
 
 ## Especificaciones tecnicas
 

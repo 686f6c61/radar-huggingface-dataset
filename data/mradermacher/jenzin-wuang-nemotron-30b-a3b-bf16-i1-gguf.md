@@ -6,7 +6,7 @@ Jenzin-Wuang-Nemotron-30B-A3B-BF16-i1-GGUF es una cuantización GGUF con matriz 
 
 Esta versión GGUF está pensada para facilitar la ejecución local con herramientas como llama.cpp u Ollama, ofreciendo varios niveles de cuantización que reducen el tamaño del modelo original (171.7 GB en BF16) a archivos de entre 18 y 22 GB. El modelo base es un MoE de aproximadamente 31.5 mil millones de parámetros totales con 3 mil millones activos, y el original de NVIDIA soporta un contexto de 1 millón de tokens, aunque no se confirma si esta modificación conserva esa capacidad.
 
-Al tratarse de una modificación no documentada y con fines de demostración, su uso en producción no está recomendado. La ficha se basa únicamente en la información disponible en HuggingFace y en los resultados de búsqueda, por lo que muchos datos técnicos del entrenamiento y rendimiento no están disponibles.
+Al tratarse de una modificación no documentada y con fines de demostración, su uso en producción no está recomendado. La ficha se basa únicamente en la información disponible en Hugging Face y en los resultados de búsqueda, por lo que muchos datos técnicos del entrenamiento y rendimiento no están disponibles.
 
 ## Especificaciones tecnicas
 

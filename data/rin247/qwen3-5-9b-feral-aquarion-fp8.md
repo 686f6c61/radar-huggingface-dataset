@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Rin247/Qwen3.5-9B-Feral-Aquarion-FP8` es una cuantización FP8 weight-only del modelo base `Qwen3.5-9B-Feral-Aquarion`, publicada por el usuario Rin247 en HuggingFace. Se trata de un checkpoint que reduce el tamaño de los pesos a precisión de 8 bits en coma flotante, manteniendo las escalas y formas asociadas para su posterior dequantización. El modelo base pertenece a la familia Qwen3.5, que según la documentación oficial de Qwen es una serie de modelos multimodales densos con atención híbrida de tipo gated delta networks, contexto de 262K tokens y soporte para decodificación especulativa (MTP). Sin embargo, la variante "Feral-Aquarion" no tiene documentación pública adicional, por lo que se desconoce si se trata de un fine-tune, un merge o una modificación específica.
+El modelo `Rin247/Qwen3.5-9B-Feral-Aquarion-FP8` es una cuantización FP8 weight-only del modelo base `Qwen3.5-9B-Feral-Aquarion`, publicada por el usuario Rin247 en Hugging Face. Se trata de un checkpoint que reduce el tamaño de los pesos a precisión de 8 bits en coma flotante, manteniendo las escalas y formas asociadas para su posterior dequantización. El modelo base pertenece a la familia Qwen3.5, que según la documentación oficial de Qwen es una serie de modelos multimodales densos con atención híbrida de tipo gated delta networks, contexto de 262K tokens y soporte para decodificación especulativa (MTP). Sin embargo, la variante "Feral-Aquarion" no tiene documentación pública adicional, por lo que se desconoce si se trata de un fine-tune, un merge o una modificación específica.
 
 La cuantización FP8 permite reducir el uso de memoria y acelerar la inferencia en hardware compatible, aunque requiere un paso de dequantización manual antes de alimentar el modelo a un motor de inferencia. El repositorio contiene un único archivo `model.safetensors` de aproximadamente 11 GB, junto con un `config.json` que incluye la configuración de cuantización. Este checkpoint está pensado para desarrolladores que necesitan ejecutar un modelo de ~9B parámetros en GPUs con memoria limitada, aunque la falta de documentación sobre el modelo base limita su uso directo en producción sin una evaluación previa.
 
@@ -65,7 +65,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/Qwen3.5-9B-Feral-Aquarion-FP8
+- Repositorio Hugging Face: https://huggingface.co/Rin247/Qwen3.5-9B-Feral-Aquarion-FP8
 - Colección de cuantizaciones de Rin247: https://huggingface.co/collections/Rin247/qwen3-aquarion
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Página de Qwen3.5-9B en Benchable: https://benchable.ai/models/qwen/qwen3.5-9b-20260310

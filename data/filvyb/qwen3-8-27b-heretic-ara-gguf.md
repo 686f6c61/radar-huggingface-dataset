@@ -72,7 +72,7 @@ No hay datos de rendimiento comparativo disponibles, por lo que no se puede eval
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/filvyb/Qwen3.8-27B-heretic-ara-GGUF
+- Repositorio Hugging Face: https://huggingface.co/filvyb/Qwen3.8-27B-heretic-ara-GGUF
 - Repositorio alternativo (mradermacher): https://huggingface.co/mradermacher/Qwen3.8-27B-heretic-ara-GGUF
 - Repositorio con cuantizacion NVFP4 (dawncr0w): https://huggingface.co/dawncr0w/Qwen3.8-27B-Heretic-ARA-ModelOpt-NVFP4-GGUF
 - Blog de AMD sobre ejecucion en Ryzen AI y Radeon: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

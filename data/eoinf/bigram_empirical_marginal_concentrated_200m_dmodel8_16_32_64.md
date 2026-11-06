@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eoinf/bigram_empirical_marginal_concentrated_200m_dmodel8_16_32_64` es un artefacto de investigación publicado en HuggingFace por el usuario `eoinf`, no un modelo listo para producción. Se trata de un congelado de pesos perteneciente a una rejilla experimental de transformers causales de tamaño mínimo (d_model de 8, 16, 32 y 64) entrenados sobre un vocabulario de 4096 tokens y una longitud de contexto de 256 tokens, con un presupuesto nominal de aproximadamente 2.000 millones de tokens de entrenamiento.
+`eoinf/bigram_empirical_marginal_concentrated_200m_dmodel8_16_32_64` es un artefacto de investigación publicado en Hugging Face por el usuario `eoinf`, no un modelo listo para producción. Se trata de un congelado de pesos perteneciente a una rejilla experimental de transformers causales de tamaño mínimo (d_model de 8, 16, 32 y 64) entrenados sobre un vocabulario de 4096 tokens y una longitud de contexto de 256 tokens, con un presupuesto nominal de aproximadamente 2.000 millones de tokens de entrenamiento.
 
 El nombre del repositorio sugiere un estudio sobre la distribución marginal empírica de bigramas y su concentración, probablemente orientado a analizar cómo modelos con capacidad muy limitada aprenden (o no) las estadísticas de coocurrencia del corpus. No hay información publicada sobre el dataset concreto, el tokenizador ni los resultados de evaluación más allá de las referencias a ficheros de configuración internos.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| eoinf/bigram_empirical_marginal_concentrated_200m_dmodel8_16_32_64 | No disponible (d_model 8–64) | 256 | No disponible | HuggingFace, 0 descargas |
+| eoinf/bigram_empirical_marginal_concentrated_200m_dmodel8_16_32_64 | No disponible (d_model 8–64) | 256 | No disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 No se identifican en la información proporcionada modelos directamente comparables de la misma categoría (transformers causales de investigación con d_model ≤ 64 sobre corpus sintético).
@@ -79,6 +79,6 @@ No se identifican en la información proporcionada modelos directamente comparab
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/bigram_empirical_marginal_concentrated_200m_dmodel8_16_32_64
+- Hugging Face: https://huggingface.co/eoinf/bigram_empirical_marginal_concentrated_200m_dmodel8_16_32_64
 - Repositorio de código referenciado: `synthetic_trigrams` (no se proporciona URL en la información disponible)
 - Ficheros internos de metadatos: `grid_summary.json`, `result.json`, `configuration.json` (incluidos en el repositorio)

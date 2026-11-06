@@ -136,7 +136,7 @@ No se dispone de datos de benchmarks estandar para establecer una comparacion cu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alforiva/mini-faro
+- Modelo en Hugging Face: https://huggingface.co/alforiva/mini-faro
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Proyecto Siliceo: https://progettosiliceo.online
 - Resultados interactivos: https://progettosiliceo.online/faro.html

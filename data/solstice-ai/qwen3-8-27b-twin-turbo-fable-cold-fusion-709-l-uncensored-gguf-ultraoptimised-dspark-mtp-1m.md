@@ -115,7 +115,7 @@ La búsqueda web realizada no ha devuelto información sobre modelos comparables
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-GGUF-UltraOptimised-DSpark-MTP-1M
+- Repositorio Hugging Face: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-GGUF-UltraOptimised-DSpark-MTP-1M
 - Modelo base declarado: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
 - Dataset declarado: https://huggingface.co/datasets/Solstice-AI/Solace-1.0-Omni
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante al modelo. Los resultados devueltos corresponden a páginas sobre el solsticio astronómico (fr.wikipedia.org/wiki/Solstice, icalendrier.fr/outils/equinoxes-solstices, en.wikipedia.org/wiki/Solstice, futura-sciences.com) y a la empresa Solstice Advanced Materials (solstice.com), ninguno relacionado con este modelo.

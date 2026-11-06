@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Qwen3.5-4B-Fast-Code-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Qwen3.5-4B-Fast-Code-GGUF
 - Modelo base (referencia): https://huggingface.co/summerMC/Qwen3.5-4B-Fast-Code
 - Guia general de la familia Qwen 3.5: https://qwen-ai.com/qwen-3-5/
 - Articulo sobre Qwen 3.5 (benchmarks y setup): https://techie007.substack.com/p/qwen-35-the-complete-guide-benchmarks

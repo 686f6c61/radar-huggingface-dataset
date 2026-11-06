@@ -68,6 +68,6 @@ No se dispone de información sobre modelos comparables en el mismo dominio (CGA
 
 ## Enlaces
 
-- [HuggingFace: IDEALLab/engiopt-cgan-cnn-2d](https://huggingface.co/IDEALLab/engiopt-cgan-cnn-2d)
+- [Hugging Face: IDEALLab/engiopt-cgan-cnn-2d](https://huggingface.co/IDEALLab/engiopt-cgan-cnn-2d)
 - [GitHub: IDEALLab/EngiOpt](https://github.com/IDEALLab/EngiOpt)
 - [Colab: example_easy_model.ipynb](https://colab.research.google.com/github/IDEALLab/EngiOpt/blob/main/example_easy_model.ipynb)

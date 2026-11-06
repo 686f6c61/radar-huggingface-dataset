@@ -30,7 +30,7 @@ El adaptador se entrena sobre un conjunto de 244.367 pares de (posición, tramo 
 - Lectura de "workspaces" internos del modelo base mediante la técnica de lentes de activación (skip-lens).
 - Proyección de activaciones entre capas (de la capa 42 a la capa 62) utilizando un Jacobiano oficial, lo que permite interpretar la representación en una capa superior sin entrenar un modelo completo.
 - Soporte de inyección en puntos de marcado específicos (token ㈜) mediante hooks personalizados.
-- Compatible con el ecosistema PEFT de HuggingFace para cargar el adaptador sobre Qwen3.6-27B.
+- Compatible con el ecosistema PEFT de Hugging Face para cargar el adaptador sobre Qwen3.6-27B.
 - Capacidad de comparación de variantes de capas (L42 vs L62) dentro de la misma serie agreelens.
 - No es un modelo de generación de texto autónomo; su función es interpretativa y requiere el pipeline de inyección descrito.
 
@@ -89,7 +89,7 @@ No se dispone de comparaciones con otros adaptadores de interpretabilidad fuera 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ceselder/skip-lens-qwen36-27b-agreelens-g-l62
+- Repositorio Hugging Face: https://huggingface.co/ceselder/skip-lens-qwen36-27b-agreelens-g-l62
 - Repositorio gemelo (L42): https://huggingface.co/ceselder/skip-lens-qwen36-27b-agreelens-g (inferido de la ficha)
 - Repositorio del Jacobiano oficial: camilablank/workspace-lenses (referenciado en la ficha)
 - Modelo base: Qwen/Qwen3.6-27B (https://huggingface.co/Qwen/Qwen3.6-27B)

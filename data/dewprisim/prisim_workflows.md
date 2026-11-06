@@ -57,7 +57,7 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no se puede co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dewprisim/Prisim_Workflows
+- Repositorio Hugging Face: https://huggingface.co/Dewprisim/Prisim_Workflows
 - Sitio web Prisim (posible homónimo, no vinculado): https://www.prisim.co.in/
 - Sitio web Prism AI (posible homónimo, no vinculado): https://prism-ai.dev/
 - Repositorio GitHub prism (posible homónimo, no vinculado): https://github.com/juliantenney/prism

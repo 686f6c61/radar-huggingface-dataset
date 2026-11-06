@@ -93,7 +93,7 @@ El modelo ACP K=6 ocupa una posición intermedia entre las variantes SF y CP, y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jhyuckkim/DeepSeek-V2-Lite-Dense-3B-ACP-K6
+- Modelo en Hugging Face: https://huggingface.co/jhyuckkim/DeepSeek-V2-Lite-Dense-3B-ACP-K6
 - Paper (arXiv): https://arxiv.org/abs/2605.28207
 - Código de destilación y poda: https://github.com/krafton-ai/moe-to-dense
 - Modelo base (DeepSeek-V2-Lite): https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite

@@ -97,4 +97,4 @@ No se dispone de datos de rendimiento numericos para comparar, por lo que la com
 - Licencia del codigo: https://github.com/deepseek-ai/DeepSeek-V2/blob/main/LICENSE-CODE
 - Web oficial: https://www.deepseek.com/
 - Chat de codigo: https://coder.deepseek.com/sign_in
-- Perfil de DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Perfil de DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai

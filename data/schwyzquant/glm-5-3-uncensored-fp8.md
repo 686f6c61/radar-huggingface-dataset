@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-UNCENSORED-FP8 es un checkpoint derivado de 753 329 940 480 parametros (aproximadamente 753B) publicado en HuggingFace por el usuario schwyzquant, cuya model card atribuye la autoria de la publicacion a dealignai. Se construye sobre `JANGQ-AI/GLM-5.3-FP8`, que a su vez es una cuantizacion FP8 del modelo upstream `zai-org/GLM-5.3`. La modificacion consiste en una edicion permanente en precision bf16 sobre los tensores residual-writer, sin fine-tuning, sin LoRA ni hooks en tiempo de ejecucion, con el objetivo de reducir el comportamiento de rechazo (abliteration) en multiples idiomas y dominios.
+GLM-5.3-UNCENSORED-FP8 es un checkpoint derivado de 753 329 940 480 parametros (aproximadamente 753B) publicado en Hugging Face por el usuario schwyzquant, cuya model card atribuye la autoria de la publicacion a dealignai. Se construye sobre `JANGQ-AI/GLM-5.3-FP8`, que a su vez es una cuantizacion FP8 del modelo upstream `zai-org/GLM-5.3`. La modificacion consiste en una edicion permanente en precision bf16 sobre los tensores residual-writer, sin fine-tuning, sin LoRA ni hooks en tiempo de ejecucion, con el objetivo de reducir el comportamiento de rechazo (abliteration) en multiples idiomas y dominios.
 
 La arquitectura declarada es `glm_moe_dsa` (mezcla de expertos con atencion dispersa tipo DeepSeek), 78 capas y modalidad exclusivamente de texto. El checkpoint conserva los expertos enrutados en FP8 y solo altera los tensores residuales en bf16, de modo que mantiene la velocidad nativa de tensor cores FP8 en hardware Hopper (H100/H200). La ventana de contexto practica documentada en el ejemplo de servicio es de 131 072 tokens, con un techo de aproximadamente 131K con MTP y 160K sin MTP en un nodo TP8 de H200.
 
@@ -90,10 +90,10 @@ Datos adicionales declarados: v2 elimina el fallo de bucle de razonamiento de v1
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|---|
-| schwyzquant/GLM-5.3-UNCENSORED-FP8 (este) | 753,3B | 131 072 tokens (servicio TP8) | safetensors, FP8 | MIT | MMLU 87,43 %; TRUE_COMPLY 81,6 % en HB-320 (effort off) | HuggingFace |
-| JANGQ-AI/GLM-5.3-FP8 (base directo) | no disponible | no disponible | safetensors, FP8 | no disponible | no disponible | HuggingFace |
-| zai-org/GLM-5.3 (upstream) | no disponible | no disponible | no disponible | no disponible | MMLU 85,58 % (linea base citada) | HuggingFace |
-| dealignai/GLM-5.3-CYBERSECURITY-FP8 (variante hermanada) | no disponible | no disponible | FP8 | no disponible | no disponible | HuggingFace |
+| schwyzquant/GLM-5.3-UNCENSORED-FP8 (este) | 753,3B | 131 072 tokens (servicio TP8) | safetensors, FP8 | MIT | MMLU 87,43 %; TRUE_COMPLY 81,6 % en HB-320 (effort off) | Hugging Face |
+| JANGQ-AI/GLM-5.3-FP8 (base directo) | no disponible | no disponible | safetensors, FP8 | no disponible | no disponible | Hugging Face |
+| zai-org/GLM-5.3 (upstream) | no disponible | no disponible | no disponible | no disponible | MMLU 85,58 % (linea base citada) | Hugging Face |
+| dealignai/GLM-5.3-CYBERSECURITY-FP8 (variante hermanada) | no disponible | no disponible | FP8 | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de terceros comparables (por ejemplo, otros MoE de escala similar) en la informacion proporcionada, por lo que no se incluyen en la tabla.
 
@@ -116,11 +116,11 @@ No se dispone de datos de terceros comparables (por ejemplo, otros MoE de escala
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/schwyzquant/GLM-5.3-UNCENSORED-FP8
-- HuggingFace (repositorio de referencia del autor, segun model card): https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8
-- HuggingFace (modelo base directo): https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
-- HuggingFace (modelo upstream): https://huggingface.co/zai-org/GLM-5.3
-- HuggingFace (variante de ciberseguridad hermanada): https://huggingface.co/dealignai/GLM-5.3-CYBERSECURITY-FP8
+- Hugging Face (modelo): https://huggingface.co/schwyzquant/GLM-5.3-UNCENSORED-FP8
+- Hugging Face (repositorio de referencia del autor, segun model card): https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8
+- Hugging Face (modelo base directo): https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
+- Hugging Face (modelo upstream): https://huggingface.co/zai-org/GLM-5.3
+- Hugging Face (variante de ciberseguridad hermanada): https://huggingface.co/dealignai/GLM-5.3-CYBERSECURITY-FP8
 - Discusion con notas de despliegue en 8x DGX Spark GB10: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8/discussions/3
 - Twitter del autor declarado: https://twitter.com/dealignai
 - La busqueda web realizada no ha devuelto resultados relevantes para este modelo; los enlaces encontrados corresponden a contenidos no relacionados (jailbreaks de ChatGPT, hilos de Reddit y publicaciones sobre limites de uso de ChatGPT Plus).

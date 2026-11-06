@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_student_randomselfgen_nemotronstem_qwen3b_5000` es un checkpoint de 3.085.938.688 parámetros (3,09 B) publicado en HuggingFace por el usuario `ishikaa`. Por su nomenclatura y por la etiqueta `qwen2` del repositorio, se trata de un modelo estudiante ("student") derivado de la familia Qwen2, entrenado sobre un subconjunto de 5.000 ejemplos de un corpus tipo Nemotron-Stem mediante alguna estrategia de adquisición de datos denominada "randomselfgen" (autogeneración aleatoria). No es, por tanto, un modelo base publicado oficialmente, sino un artefacto de investigación asociado a un experimento de destilación o de selección activa de datos.
+El modelo `ishikaa/acquisition_student_randomselfgen_nemotronstem_qwen3b_5000` es un checkpoint de 3.085.938.688 parámetros (3,09 B) publicado en Hugging Face por el usuario `ishikaa`. Por su nomenclatura y por la etiqueta `qwen2` del repositorio, se trata de un modelo estudiante ("student") derivado de la familia Qwen2, entrenado sobre un subconjunto de 5.000 ejemplos de un corpus tipo Nemotron-Stem mediante alguna estrategia de adquisición de datos denominada "randomselfgen" (autogeneración aleatoria). No es, por tanto, un modelo base publicado oficialmente, sino un artefacto de investigación asociado a un experimento de destilación o de selección activa de datos.
 
-La relevancia de este checkpoint es limitada y muy específica: sirve para reproducir o auditar un experimento académico concreto, no como modelo de propósito general. La model card publicada es la plantilla automática de HuggingFace sin rellenar, por lo que no hay información del autor sobre datos de entrenamiento, hiperparámetros, evaluación ni uso previsto. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
+La relevancia de este checkpoint es limitada y muy específica: sirve para reproducir o auditar un experimento académico concreto, no como modelo de propósito general. La model card publicada es la plantilla automática de Hugging Face sin rellenar, por lo que no hay información del autor sobre datos de entrenamiento, hiperparámetros, evaluación ni uso previsto. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
 
 Todos los datos técnicos que no aparecen en la información proporcionada se marcan explícitamente como "no disponible". Cualquier inferencia sobre el contexto, los idiomas o el rendimiento debe considerarse no verificada.
 
@@ -36,7 +36,7 @@ Respecto al entrenamiento, el nombre del repositorio sugiere tres elementos: (1)
 
 - Generación de texto autoregresiva: es la única capacidad confirmada por el pipeline declarado (`text-generation`).
 - Formato conversacional: la etiqueta `conversational` sugiere que el checkpoint puede tener una plantilla de chat aplicada, aunque no se detalla el formato de prompt exacto.
-- Compatibilidad con endpoints de inferencia: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que el repositorio puede desplegarse con TGI y en HuggingFace Inference Endpoints sin conversión previa.
+- Compatibilidad con endpoints de inferencia: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que el repositorio puede desplegarse con TGI y en Hugging Face Inference Endpoints sin conversión previa.
 - Razonamiento, matemáticas y código: probablemente presentes de forma parcial por el dominio STEM de los datos de entrenamiento, pero sin evidencia publicada ni evaluación que lo respalde.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -76,10 +76,10 @@ La comparación se establece con modelos base de tamaño comparable, ya que este
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `ishikaa/acquisition_student_randomselfgen_nemotronstem_qwen3b_5000` | 3,09 B | No disponible | No disponible | HuggingFace, 0 descargas, sin cuantizaciones |
-| Qwen2.5-3B | 3,09 B | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Llama 3.2 3B | 3,21 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, con restricciones de uso |
-| Gemma 2 2B | 2,6 B | 8.192 tokens | Gemma Terms of Use | HuggingFace, con restricciones de uso |
+| `ishikaa/acquisition_student_randomselfgen_nemotronstem_qwen3b_5000` | 3,09 B | No disponible | No disponible | Hugging Face, 0 descargas, sin cuantizaciones |
+| Qwen2.5-3B | 3,09 B | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Llama 3.2 3B | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, con restricciones de uso |
+| Gemma 2 2B | 2,6 B | 8.192 tokens | Gemma Terms of Use | Hugging Face, con restricciones de uso |
 
 Frente a estos modelos, el checkpoint analizado carece de licencia declarada, de contexto documentado y de cualquier evaluación publicada, por lo que no es sustituible de forma directa en producción. Su interés es exclusivamente experimental.
 
@@ -97,7 +97,7 @@ Frente a estos modelos, el checkpoint analizado carece de licencia declarada, de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_randomselfgen_nemotronstem_qwen3b_5000
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_randomselfgen_nemotronstem_qwen3b_5000
 - Referencia citada en la plantilla de la model card (huella de carbono de modelos de ML): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML mencionada en la plantilla: https://mlco2.github.io/impact
 - Búsqueda web: no se encontraron enlaces relevantes sobre este modelo (los resultados devueltos fueron páginas genéricas de YouTube, sin relación con el repositorio).

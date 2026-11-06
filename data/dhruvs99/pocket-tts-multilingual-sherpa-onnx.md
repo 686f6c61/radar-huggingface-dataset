@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dhruvs99/pocket-tts-multilingual-sherpa-onnx` es un modelo de texto a voz (TTS) publicado en HuggingFace por el usuario dhruvs99, distribuido en formato ONNX y empaquetado para el runtime sherpa-onnx. Se trata de un fine-tune del modelo `Thanushttk/pocket-tts-multilingual`, del que hereda la arquitectura y el entrenamiento multilingue. Su pipeline declarado es `text-to-speech` y la libreria asociada es `pocket-tts`.
+`dhruvs99/pocket-tts-multilingual-sherpa-onnx` es un modelo de texto a voz (TTS) publicado en Hugging Face por el usuario dhruvs99, distribuido en formato ONNX y empaquetado para el runtime sherpa-onnx. Se trata de un fine-tune del modelo `Thanushttk/pocket-tts-multilingual`, del que hereda la arquitectura y el entrenamiento multilingue. Su pipeline declarado es `text-to-speech` y la libreria asociada es `pocket-tts`.
 
 La relevancia del modelo esta en su enfoque de despliegue: al exportarse a ONNX y orientarse a sherpa-onnx, esta pensado para inferencia en CPU y en dispositivos moviles (la etiqueta `android` aparece explicitamente), lo que lo aleja de los flujos habituales basados en GPU. Ademas, cubre un conjunto de lenguas poco representadas en TTS abierto —ingles, hindi, marathi, kannada, tamil, malayo y telugu— y declara soporte de *code-mixing*, con la mezcla hindi-ingles (hinglish) como caso destacado.
 
@@ -18,7 +18,7 @@ No se dispone de informacion publica sobre el numero de parametros, la longitud 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; el artefacto se distribuye en ONNX y las etiquetas indican compatibilidad con sherpa-onnx, runtime que habitualmente admite variantes float32 e int8 |
 | Idiomas soportados | en, hi, mr, kn, ta, ml, te (segun etiquetas del repositorio: ingles, hindi, marathi, kannada, tamil, malayo y telugu) |
-| Licencia | cc-by-4.0 segun las etiquetas del repositorio; el campo de licencia de la ficha de HuggingFace figura como no disponible |
+| Licencia | cc-by-4.0 segun las etiquetas del repositorio; el campo de licencia de la ficha de Hugging Face figura como no disponible |
 | Formato de pesos | ONNX (exportacion para sherpa-onnx) |
 | Modelo base | `Thanushttk/pocket-tts-multilingual` (fine-tune) |
 | Paper asociado | arXiv:2509.06926 (referenciado en las etiquetas; contenido no verificado) |
@@ -68,8 +68,8 @@ No se dispone de datos verificados de parametros, contexto ni rendimiento de est
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dhruvs99/pocket-tts-multilingual-sherpa-onnx` | no disponible | no disponible | no disponible | cc-by-4.0 (segun etiquetas) | HuggingFace, 0 descargas |
-| `Thanushttk/pocket-tts-multilingual` (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `dhruvs99/pocket-tts-multilingual-sherpa-onnx` | no disponible | no disponible | no disponible | cc-by-4.0 (segun etiquetas) | Hugging Face, 0 descargas |
+| `Thanushttk/pocket-tts-multilingual` (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otras alternativas TTS abiertas multilingues | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El elemento diferencial documentado frente al modelo base es el empaquetado: exportacion a ONNX y orientacion explicita a sherpa-onnx para despliegue en CPU y Android.
@@ -89,7 +89,7 @@ El elemento diferencial documentado frente al modelo base es el empaquetado: exp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhruvs99/pocket-tts-multilingual-sherpa-onnx
+- Modelo en Hugging Face: https://huggingface.co/dhruvs99/pocket-tts-multilingual-sherpa-onnx
 - Modelo base: https://huggingface.co/Thanushttk/pocket-tts-multilingual
 - Preprint referenciado en las etiquetas: https://arxiv.org/abs/2509.06926
 - Runtime sherpa-onnx (citado en las etiquetas del modelo): https://github.com/k2-fsa/sherpa-onnx

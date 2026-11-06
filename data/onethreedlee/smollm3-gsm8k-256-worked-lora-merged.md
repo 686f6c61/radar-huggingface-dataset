@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `onethreedlee/SmolLM3-GSM8K-256-worked-lora-merged` es un ajuste fino publicado en HuggingFace por el usuario onethreedlee sobre el modelo base SmolLM3, desarrollado por Hugging Face. Se distribuye como un checkpoint de 3.075.098.624 parametros en formato safetensors (6,2 GB de repositorio) y esta pensado para generacion de texto y uso conversacional mediante la libreria transformers. El nombre del repositorio sugiere un ajuste con LoRA sobre 256 ejemplos resueltos de GSM8K, posteriormente fusionado en los pesos base, aunque esta circunstancia no se documenta en la model card.
+El modelo `onethreedlee/SmolLM3-GSM8K-256-worked-lora-merged` es un ajuste fino publicado en Hugging Face por el usuario onethreedlee sobre el modelo base SmolLM3, desarrollado por Hugging Face. Se distribuye como un checkpoint de 3.075.098.624 parametros en formato safetensors (6,2 GB de repositorio) y esta pensado para generacion de texto y uso conversacional mediante la libreria transformers. El nombre del repositorio sugiere un ajuste con LoRA sobre 256 ejemplos resueltos de GSM8K, posteriormente fusionado en los pesos base, aunque esta circunstancia no se documenta en la model card.
 
-La relevancia de este checkpoint deriva de su modelo base: SmolLM3 es un transformer decoder compacto de 3B parametros, entrenado sobre 11T tokens, disenado para ser plenamente abierto y eficiente en despliegue, con soporte multilingue en cinco lenguas europeas principales ademas del ingles y una ventana de contexto larga. El ajuste concreto que nos ocupa no anade informacion tecnica propia: la model card es la plantilla automatica de HuggingFace sin rellenar, por lo que practicamente todas las especificaciones se heredan del modelo base o quedan como no disponibles.
+La relevancia de este checkpoint deriva de su modelo base: SmolLM3 es un transformer decoder compacto de 3B parametros, entrenado sobre 11T tokens, disenado para ser plenamente abierto y eficiente en despliegue, con soporte multilingue en cinco lenguas europeas principales ademas del ingles y una ventana de contexto larga. El ajuste concreto que nos ocupa no anade informacion tecnica propia: la model card es la plantilla automatica de Hugging Face sin rellenar, por lo que practicamente todas las especificaciones se heredan del modelo base o quedan como no disponibles.
 
 Es importante senalar que el autor no ha documentado hiperparametros de entrenamiento, composicion del dataset, licencia ni idiomas soportados. Cualquier uso en produccion deberia partir de la verificacion previa de estos extremos y de una evaluacion propia del comportamiento del modelo, dado que no existe informacion publicada sobre su rendimiento.
 
@@ -24,7 +24,7 @@ Es importante senalar que el autor no ha documentado hiperparametros de entrenam
 
 La arquitectura corresponde a la del modelo base SmolLM3: un transformer decoder con Grouped Query Attention para reducir el tamano de la cache KV y con una proporcion de capas sin codificacion posicional (NoPE) intercaladas con capas RoPE, una decision de diseno orientada a mejorar el rendimiento en tareas de contexto largo. SmolLM3 incorpora ademas un modo de razonamiento explicito (thinking mode) activable, y su plantilla de chat define dos secciones diferenciadas para herramientas: XML Tools y Python Tools.
 
-Del proceso de ajuste de este checkpoint concreto no hay informacion verificable. La model card es la plantilla automatica de HuggingFace y no incluye datos de entrenamiento, hiperparametros, regimen de precision ni procedimiento de alineacion. Por el identificador del repositorio puede inferirse un ajuste mediante LoRA sobre 256 ejemplos resueltos de GSM8K con posterior fusion de adaptadores en los pesos base, pero se trata de una deduccion a partir del nombre y no de un dato confirmado por el autor.
+Del proceso de ajuste de este checkpoint concreto no hay informacion verificable. La model card es la plantilla automatica de Hugging Face y no incluye datos de entrenamiento, hiperparametros, regimen de precision ni procedimiento de alineacion. Por el identificador del repositorio puede inferirse un ajuste mediante LoRA sobre 256 ejemplos resueltos de GSM8K con posterior fusion de adaptadores en los pesos base, pero se trata de una deduccion a partir del nombre y no de un dato confirmado por el autor.
 
 ## Capacidades
 
@@ -67,10 +67,10 @@ Como referencia del modelo base, la documentacion publica de Hugging Face indica
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SmolLM3-GSM8K-256-worked-lora-merged | 3,08B | No confirmado (base: 64k) | No disponible | HuggingFace, safetensors | Ajuste comunitario sin documentacion ni evaluacion publicada |
-| SmolLM3-3B (base) | 3B | 64k, extensible a 128k | Apache 2.0 | HuggingFace | Modelo original de Hugging Face, entrenado con 11T tokens, supera a Llama 3.2 3B y Qwen2.5 3B segun su documentacion |
-| Llama 3.2 3B | 3B | 128k | Licencia comunitaria de Meta | HuggingFace, Ollama | Alternativa de referencia en el segmento de 3B; el modelo base SmolLM3 lo supera en las pruebas publicadas por Hugging Face |
-| Qwen2.5 3B | 3B | 32k | Apache 2.0 | HuggingFace, Ollama | Buen rendimiento multilingue y en codigo; superado por SmolLM3-3B segun la documentacion de Hugging Face |
+| SmolLM3-GSM8K-256-worked-lora-merged | 3,08B | No confirmado (base: 64k) | No disponible | Hugging Face, safetensors | Ajuste comunitario sin documentacion ni evaluacion publicada |
+| SmolLM3-3B (base) | 3B | 64k, extensible a 128k | Apache 2.0 | Hugging Face | Modelo original de Hugging Face, entrenado con 11T tokens, supera a Llama 3.2 3B y Qwen2.5 3B segun su documentacion |
+| Llama 3.2 3B | 3B | 128k | Licencia comunitaria de Meta | Hugging Face, Ollama | Alternativa de referencia en el segmento de 3B; el modelo base SmolLM3 lo supera en las pruebas publicadas por Hugging Face |
+| Qwen2.5 3B | 3B | 32k | Apache 2.0 | Hugging Face, Ollama | Buen rendimiento multilingue y en codigo; superado por SmolLM3-3B segun la documentacion de Hugging Face |
 
 Los datos de rendimiento de los modelos comparados proceden de la documentacion publicada por Hugging Face sobre SmolLM3 y no han sido verificados de forma independiente en el contexto de este ajuste concreto.
 
@@ -88,7 +88,7 @@ Los datos de rendimiento de los modelos comparados proceden de la documentacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/onethreedlee/SmolLM3-GSM8K-256-worked-lora-merged
+- Modelo en Hugging Face: https://huggingface.co/onethreedlee/SmolLM3-GSM8K-256-worked-lora-merged
 - Repositorio de SmolLM en GitHub: https://github.com/huggingface/smollm
 - Blog de presentacion de SmolLM3: https://huggingface.co/blog/smollm3
 - Sitio oficial de SmolLM3: https://smollm3.org/

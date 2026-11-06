@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| quangvu197/Gemma-3-1b-GRPO-LORA | ~1B | No disponible | Apache-2.0 | HuggingFace |
-| unsloth/gemma-3-1b-it-unsloth-bnb-4bit | ~1B | No disponible | Apache-2.0 | HuggingFace |
-| google/gemma-3-1b-it | ~1B | 32k (según documentación de Google) | Apache-2.0 | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1.5B | 32k | Apache-2.0 | HuggingFace |
+| quangvu197/Gemma-3-1b-GRPO-LORA | ~1B | No disponible | Apache-2.0 | Hugging Face |
+| unsloth/gemma-3-1b-it-unsloth-bnb-4bit | ~1B | No disponible | Apache-2.0 | Hugging Face |
+| google/gemma-3-1b-it | ~1B | 32k (según documentación de Google) | Apache-2.0 | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1.5B | 32k | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. La comparativa se limita a características estructurales.
 
@@ -74,6 +74,6 @@ No se dispone de datos de rendimiento comparativo. La comparativa se limita a ca
 
 ## Enlaces
 
-- [HuggingFace: quangvu197/Gemma-3-1b-GRPO-LORA](https://huggingface.co/quangvu197/Gemma-3-1b-GRPO-LORA)
+- [Hugging Face: quangvu197/Gemma-3-1b-GRPO-LORA](https://huggingface.co/quangvu197/Gemma-3-1b-GRPO-LORA)
 - [Modelo base: unsloth/gemma-3-1b-it-unsloth-bnb-4bit](https://huggingface.co/unsloth/gemma-3-1b-it-unsloth-bnb-4bit)
 - [Unsloth (herramienta de entrenamiento)](https://github.com/unslothai/unsloth)

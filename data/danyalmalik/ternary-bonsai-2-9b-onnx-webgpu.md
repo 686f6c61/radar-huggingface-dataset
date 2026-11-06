@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| danyalmalik/Ternary-Bonsai-2-9B-ONNX-WebGPU | ~9B | no disponible | ONNX | Apache 2.0 | HuggingFace |
-| prism-ml/Ternary-Bonsai-2-9B-gguf | ~9B | no disponible | GGUF (PQ2_0) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-9B | ~9B | no disponible | safetensors (precision original) | no disponible | HuggingFace |
+| danyalmalik/Ternary-Bonsai-2-9B-ONNX-WebGPU | ~9B | no disponible | ONNX | Apache 2.0 | Hugging Face |
+| prism-ml/Ternary-Bonsai-2-9B-gguf | ~9B | no disponible | GGUF (PQ2_0) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-9B | ~9B | no disponible | safetensors (precision original) | no disponible | Hugging Face |
 
 La comparativa con modelos ternarios alternativos de la misma categoria no esta disponible en la informacion proporcionada.
 
@@ -82,7 +82,7 @@ La comparativa con modelos ternarios alternativos de la misma categoria no esta 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danyalmalik/Ternary-Bonsai-2-9B-ONNX-WebGPU
+- Modelo en Hugging Face: https://huggingface.co/danyalmalik/Ternary-Bonsai-2-9B-ONNX-WebGPU
 - Modelo base (GGUF): https://huggingface.co/prism-ml/Ternary-Bonsai-2-9B-gguf
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.5-9B
 - Grafo ONNX de referencia: https://huggingface.co/amd/Qwen3.5-9B_gpuep_1.0_gpu_128

@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: con 25.2B parametros totales, en precision bf16 se requieren aproximadamente 50-53 GB de VRAM. Con cuantizacion a 4 bits, se estima un consumo de 15-16 GB, y a 8 bits, de 28-30 GB. Estas son estimaciones basadas en el tamano del modelo; no se han publicado cifras oficiales.
 - GPU recomendadas: para precision completa, GPUs de datacenter como A100 (80GB) o H100. Para cuantizacion Q4, GPUs de consumo como RTX 4090 (24GB) o RTX 3090 (24GB) son suficientes.
 - Compatibilidad con GPUs de consumo: si, con cuantizacion. Una RTX 4090 con 24GB de VRAM puede ejecutar el modelo en Q4 sin problemas.
-- Opciones de despliegue: el modelo es compatible con la libreria transformers de HuggingFace, y puede desplegarse con vLLM, llama.cpp, Ollama o TGI. Tambien esta disponible en plataformas cloud como SageMaker y Azure.
+- Opciones de despliegue: el modelo es compatible con la libreria transformers de Hugging Face, y puede desplegarse con vLLM, llama.cpp, Ollama o TGI. Tambien esta disponible en plataformas cloud como SageMaker y Azure.
 - Latencia y throughput: no disponible. La decodificacion especulativa con modelo draft dedicado deberia mejorar significativamente el throughput, pero no se han publicado cifras concretas.
 
 ## Comparativa con modelos similares
@@ -82,10 +82,10 @@ Nota: la comparativa se basa en modelos conocidos de la misma categoria (MoE o t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/google/gemma-4-26B-A4B-it
+- Hugging Face: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Technical report (arXiv): https://arxiv.org/abs/2607.02770
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion oficial: https://ai.google.dev/gemma/docs/core
 - Model card de Gemma 4: https://ai.google.dev/gemma/docs/core/model_card_4
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - GitHub: https://github.com/google-gemma

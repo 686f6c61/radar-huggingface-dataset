@@ -103,7 +103,7 @@ La comparación con modelos de seguridad de propósito general no está disponib
 - No se documentan tipos de cuantización, por lo que el despliegue en GPUs de menos de 24 GB requeriría trabajo adicional no soportado por el autor.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Thaki-SecProof-8B-Preview
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Thaki-SecProof-8B-Preview
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Modelo hermano 2B: https://huggingface.co/ThakiCloud/Thaki-SecProof-2B-Preview
 - Modelo hermano 4B: https://huggingface.co/ThakiCloud/Thaki-SecProof-4B-Preview

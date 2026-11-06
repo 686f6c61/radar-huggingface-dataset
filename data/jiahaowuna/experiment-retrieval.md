@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jiahaowuna/experiment-retrieval` es un repositorio experimental publicado por Jiahao Wu en HuggingFace que implementa una arquitectura de tipo Mixer orientada a tareas de retrieval (recuperacion de informacion). No es un modelo entrenado ni un checkpoint con resultados de benchmarks, sino un esqueleto de codigo con una configuracion de arquitectura generada y un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El propio autor lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`jiahaowuna/experiment-retrieval` es un repositorio experimental publicado por Jiahao Wu en Hugging Face que implementa una arquitectura de tipo Mixer orientada a tareas de retrieval (recuperacion de informacion). No es un modelo entrenado ni un checkpoint con resultados de benchmarks, sino un esqueleto de codigo con una configuracion de arquitectura generada y un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El propio autor lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 La arquitectura declarada combina atencion lineal, fusion de tipo Tucker, activacion approx gelu y normalizacion layernorm, bajo la etiqueta generica de Mixer y una escala "large". El repositorio incluye el fichero `predict.py` como artefacto principal, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto (AdamW con scheduler OneCycle) y un `model.safetensors` de inicializacion.
 
@@ -76,6 +76,6 @@ No disponible. El repositorio no presenta un modelo entrenado de retrieval con d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiahaowuna/experiment-retrieval
-- Perfil del autor en HuggingFace: https://huggingface.co/jiahaowuna
+- Modelo en Hugging Face: https://huggingface.co/jiahaowuna/experiment-retrieval
+- Perfil del autor en Hugging Face: https://huggingface.co/jiahaowuna
 - Modelos del autor: https://huggingface.co/jiahaowuna/models

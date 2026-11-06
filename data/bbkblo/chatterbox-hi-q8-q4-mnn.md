@@ -73,7 +73,7 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bbkblo/chatterbox-hi-q8-q4-mnn
+- Repositorio en Hugging Face: https://huggingface.co/Bbkblo/chatterbox-hi-q8-q4-mnn
 - Modelo fuente: https://huggingface.co/ResembleAI/Chatterbox-Multilingual-hi
 - Repositorio oficial de Chatterbox: https://github.com/resemble-ai/chatterbox
 - MNN (motor de inferencia de Alibaba): https://github.com/alibaba/MNN

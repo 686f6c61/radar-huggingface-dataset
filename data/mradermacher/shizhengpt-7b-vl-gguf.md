@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta cuantización): https://huggingface.co/mradermacher/ShizhenGPT-7B-VL-GGUF
+- Repositorio Hugging Face (esta cuantización): https://huggingface.co/mradermacher/ShizhenGPT-7B-VL-GGUF
 - Modelo base: https://huggingface.co/FreedomIntelligence/ShizhenGPT-7B-VL
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/ShizhenGPT-7B-VL-i1-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#ShizhenGPT-7B-VL-GGUF

@@ -77,7 +77,7 @@ La comparativa se basa en datos públicos del modelo base. No se dispone de info
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/Qwen3.8-27B-Moxie-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/Qwen3.8-27B-Moxie-GGUF
 - Modelo base (mijoko): https://huggingface.co/mijoko/Qwen3.8-27B-Moxie
 - Guía de cuantizaciones GGUF para Qwen3.8-27B: https://kingy.ai/blog/qwen3-8-27b-best-quantization-gguf/
 - Artículo sobre ejecución local de Qwen3.8-27B: https://codersera.com/blog/how-to-run-qwen-3-8-locally-2026/

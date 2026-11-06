@@ -83,7 +83,7 @@ No se han identificado modelos comparables específicos para la recuperación de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ayushi054/CourtInsight-BNS-Encoder
+- Hugging Face: https://huggingface.co/Ayushi054/CourtInsight-BNS-Encoder
 - CourtInsight AI (Space): https://huggingface.co/spaces/Ayushi054/court-insight-ai
 - Perfil del autor: https://huggingface.co/Ayushi054
 - Modelo base: https://huggingface.co/nomic-ai/nomic-embed-text-v1.5

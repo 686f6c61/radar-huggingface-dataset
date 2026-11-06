@@ -65,5 +65,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sude-nlp/neural-recommendation-system
+- Hugging Face: https://huggingface.co/sude-nlp/neural-recommendation-system
 - No se han encontrado papers, repositorios adicionales ni demos asociados a este modelo en la búsqueda web.

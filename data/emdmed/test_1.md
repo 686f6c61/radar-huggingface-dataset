@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `emdmed/test_1` es un repositorio publicado en HuggingFace por el usuario `emdmed` el 15 de agosto de 2026. La única información disponible en su model card es la licencia MIT, sin ningún detalle sobre arquitectura, parámetros, capacidades o datos de entrenamiento. No se ha publicado ninguna documentación técnica adicional, ni resultados de benchmarks, ni ejemplos de uso. El repositorio no registra descargas ni valoraciones, lo que sugiere que se trata de una publicación inicial o experimental sin información útil para evaluar su funcionamiento.
+El modelo `emdmed/test_1` es un repositorio publicado en Hugging Face por el usuario `emdmed` el 15 de agosto de 2026. La única información disponible en su model card es la licencia MIT, sin ningún detalle sobre arquitectura, parámetros, capacidades o datos de entrenamiento. No se ha publicado ninguna documentación técnica adicional, ni resultados de benchmarks, ni ejemplos de uso. El repositorio no registra descargas ni valoraciones, lo que sugiere que se trata de una publicación inicial o experimental sin información útil para evaluar su funcionamiento.
 
 Dada la ausencia total de especificaciones, no es posible determinar qué tipo de modelo es, qué tareas puede realizar ni si es apto para uso en producción. Cualquier intento de utilizarlo requeriría una inspección directa de los archivos del repositorio, que no están descritos en la model card.
 
@@ -53,5 +53,5 @@ No disponible. Al carecer de especificaciones técnicas, no se puede establecer 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/emdmed/test_1
+- Repositorio de Hugging Face: https://huggingface.co/emdmed/test_1
 - Repositorio GitHub del autor (no confirmado como relacionado): https://github.com/emdmed/lirah

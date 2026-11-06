@@ -69,10 +69,10 @@ Comparación estadística de este checkpoint frente a v1 sobre las mismas 100 es
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (GR00T N1.7-3B + RoboTwin move_can_pot) | 3B | no disponible | move_can_pot (RoboTwin 2.0) | NVIDIA Open Model License | HuggingFace, 0 descargas |
-| `nvidia/GR00T-N1.7-3B` (base) | 3B | no disponible | VLA generalista | NVIDIA Open Model License | HuggingFace (modelo base) |
-| v1 `wjwjwjwj/gr00t-n1.7-robotwin-move_can_pot-cosmos-aug` | 3B | no disponible | move_can_pot (RoboTwin 2.0) | NVIDIA Open Model License | HuggingFace |
-| Baseline sin aumento (50 demos limpias) | 3B | no disponible | move_can_pot (RoboTwin 2.0) | NVIDIA Open Model License | HuggingFace (repo v1) |
+| Este checkpoint (GR00T N1.7-3B + RoboTwin move_can_pot) | 3B | no disponible | move_can_pot (RoboTwin 2.0) | NVIDIA Open Model License | Hugging Face, 0 descargas |
+| `nvidia/GR00T-N1.7-3B` (base) | 3B | no disponible | VLA generalista | NVIDIA Open Model License | Hugging Face (modelo base) |
+| v1 `wjwjwjwj/gr00t-n1.7-robotwin-move_can_pot-cosmos-aug` | 3B | no disponible | move_can_pot (RoboTwin 2.0) | NVIDIA Open Model License | Hugging Face |
+| Baseline sin aumento (50 demos limpias) | 3B | no disponible | move_can_pot (RoboTwin 2.0) | NVIDIA Open Model License | Hugging Face (repo v1) |
 
 No se dispone de información sobre otros modelos VLA comparables (p. ej. OpenVLA, π0) en la documentación proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de información sobre otros modelos VLA comparables (p. ej. OpenVL
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-move_can_pot-simcosmos-aug
+- Modelo en Hugging Face: https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-move_can_pot-simcosmos-aug
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Checkpoint v1: https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-move_can_pot-cosmos-aug
 - Dataset de entrenamiento: https://huggingface.co/datasets/wjwjwjwj/robotwin-move_can_pot-clean50-simcosmos68-gr00t

@@ -75,8 +75,8 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/Baekpica/dots3-note-prev-Mixed-Quant-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/dots-studio/dots3-note-prev
+- Repositorio Hugging Face de la conversión: https://huggingface.co/Baekpica/dots3-note-prev-Mixed-Quant-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/dots-studio/dots3-note-prev
 - Repositorio GitHub del modelo base: https://github.com/studio-dots-ai/dots3-note-prev
 - Runtime ds4 de Baekpica: https://github.com/Baekpica/ds4
 - Runtime ds4 original de antirez: https://github.com/antirez/ds4

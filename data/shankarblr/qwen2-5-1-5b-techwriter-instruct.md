@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-1.5B-TechWriter-Instruct es un modelo de lenguaje de nicho creado por el usuario de HuggingFace Shankarblr, que parte del modelo base Qwen/Qwen2.5-1.5B-Instruct y lo afina con la técnica QLoRA para especializarse en redacción técnica de semiconductores e interconexión en centros de datos. El objetivo es generar contenido de documentación interna y material de marketing técnico: product briefs, datasheets, application notes y secciones CLI para guías de usuario. El modelo está pensado para desarrolladores que necesitan producir borradores técnicos con consistencia interna en un dominio muy concreto.
+Qwen2.5-1.5B-TechWriter-Instruct es un modelo de lenguaje de nicho creado por el usuario de Hugging Face Shankarblr, que parte del modelo base Qwen/Qwen2.5-1.5B-Instruct y lo afina con la técnica QLoRA para especializarse en redacción técnica de semiconductores e interconexión en centros de datos. El objetivo es generar contenido de documentación interna y material de marketing técnico: product briefs, datasheets, application notes y secciones CLI para guías de usuario. El modelo está pensado para desarrolladores que necesitan producir borradores técnicos con consistencia interna en un dominio muy concreto.
 
 Arquitectónicamente es un Transformer decoder-only de la familia Qwen2.5, con un total de 1.543.714.304 parámetros. La longitud de contexto precisa no se indica en la información disponible; el entrenamiento se realizó con secuencias de 2.048 tokens. El modelo resultante es un checkpoint de inferencia con los pesos ya fusionados en fp16 tras el fine-tuning, publicado bajo licencia Apache-2.0.
 
@@ -90,6 +90,6 @@ Al ser un fine-tuning sobre el mismo modelo base, las diferencias fundamentales 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shankarblr/Qwen2.5-1.5B-TechWriter-Instruct
+- Modelo en Hugging Face: https://huggingface.co/Shankarblr/Qwen2.5-1.5B-TechWriter-Instruct
 - Repositorio del adaptador LoRA (solo adaptador): https://huggingface.co/Shankarblr/Qwen2.5-1.5B-TechWriter-LoRA
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

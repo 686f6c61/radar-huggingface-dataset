@@ -81,10 +81,10 @@ Notas de medicion publicadas: 3.188 decisiones de desarrollo sobre una unica RTX
 
 | Modelo | Parametros | Contexto | Precision evaluada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bobcat Flash 1.2 FP8 (este checkpoint) | 25,8 B totales, ~4 B activos | 98.368 tokens | 92,06% exactitud en decisiones de desarrollo; 88,4% de acuerdo en TypeSafe 20 | Apache-2.0 | HuggingFace, 18 descargas, 0 likes |
-| Bobcat Flash 1.2 (BF16) | 25,8 B totales, ~4 B activos | 98.368 tokens | 92,25% exactitud en decisiones de desarrollo; 90,3-90,6% de acuerdo en TypeSafe 20 servido en FP8 al cargar | Apache-2.0 | HuggingFace |
-| Bobcat Flash 1.1 FP8 | no disponible en la informacion proporcionada | estados de mas de 2.048 tokens derivados a Bobcat completo segun la Space | no disponible | no disponible | HuggingFace y endpoint en FriendliAI |
-| Gemma 4 26B-A4B-it | ~26 B totales | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| Bobcat Flash 1.2 FP8 (este checkpoint) | 25,8 B totales, ~4 B activos | 98.368 tokens | 92,06% exactitud en decisiones de desarrollo; 88,4% de acuerdo en TypeSafe 20 | Apache-2.0 | Hugging Face, 18 descargas, 0 likes |
+| Bobcat Flash 1.2 (BF16) | 25,8 B totales, ~4 B activos | 98.368 tokens | 92,25% exactitud en decisiones de desarrollo; 90,3-90,6% de acuerdo en TypeSafe 20 servido en FP8 al cargar | Apache-2.0 | Hugging Face |
+| Bobcat Flash 1.1 FP8 | no disponible en la informacion proporcionada | estados de mas de 2.048 tokens derivados a Bobcat completo segun la Space | no disponible | no disponible | Hugging Face y endpoint en FriendliAI |
+| Gemma 4 26B-A4B-it | ~26 B totales | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 La comparacion con modelos de terceros de la misma categoria no esta disponible en la informacion proporcionada. La Space oficial indica que Bobcat Flash 1.1 esta pensado para estados cortos y deriva los estados de mas de 2.048 tokens al Bobcat enrutado, mientras que la version 1.2 aqui descrita soporta estados de hasta 98.368 tokens.
 
@@ -103,10 +103,10 @@ La comparacion con modelos de terceros de la misma categoria no esta disponible 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanghwa-na/bobcat-flash-1.2-fp8
+- Modelo en Hugging Face: https://huggingface.co/sanghwa-na/bobcat-flash-1.2-fp8
 - Modelo base: https://huggingface.co/sanghwa-na/bobcat-flash-1.2
 - Version anterior cuantizada: https://huggingface.co/sanghwa-na/bobcat-flash-1.1-fp8
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/sanghwa-na/bobcat-flash
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/sanghwa-na/bobcat-flash
 - Codigo en GitHub: https://github.com/foxl-ai/bobcat
 - Articulo tecnico: https://foxl.ai/blog/bobcat-typed-decisions
 - Endpoint de terceros (FriendliAI, version 1.1 FP8): https://friendli.ai/models/sanghwa-na/bobcat-flash-1.1-fp8

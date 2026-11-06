@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SafeAge-XLM-R-Base | 278.045.186 | 512 tokens | Clasificacion binaria allow/block | MIT | HuggingFace (mehedi4/SafeAge-XLM-R-Base) |
+| SafeAge-XLM-R-Base | 278.045.186 | 512 tokens | Clasificacion binaria allow/block | MIT | Hugging Face (mehedi4/SafeAge-XLM-R-Base) |
 | SafeAge Guard (Qwen3-1.7B LoRA) | No disponible con exactitud (base Qwen3-1.7B con adaptador LoRA) | No disponible | Adaptacion de referencia del estudio SafeAge | No disponible | Referenciado en el estudio SafeAge |
-| FacebookAI/xlm-roberta-base | No disponible en la informacion proporcionada | 512 tokens | Modelo base multilingue sin cabeza de clasificacion | MIT | HuggingFace |
+| FacebookAI/xlm-roberta-base | No disponible en la informacion proporcionada | 512 tokens | Modelo base multilingue sin cabeza de clasificacion | MIT | Hugging Face |
 
 El modelo base XLM-RoBERTa no es un competidor directo (carece de cabeza entrenada para esta tarea), pero sirve como referencia de arquitectura. SafeAge Guard es la alternativa del mismo estudio, basada en un modelo generativo con LoRA, sin datos publicos de rendimiento en la informacion disponible para una comparacion cuantitativa directa.
 
@@ -99,7 +99,7 @@ El modelo base XLM-RoBERTa no es un competidor directo (carece de cabeza entrena
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mehedi4/SafeAge-XLM-R-Base
+- Modelo en Hugging Face: https://huggingface.co/mehedi4/SafeAge-XLM-R-Base
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Paper de XLM-R (Conneau et al.): https://arxiv.org/abs/1911.02116
 - Estudio SafeAge (DOI): https://doi.org/10.5281/zenodo.23622437

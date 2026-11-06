@@ -75,7 +75,7 @@ No se dispone de información sobre modelos directamente comparables en el mismo
 
 ## Enlaces
 
-- [HuggingFace: Banaxi-Tech/BananaMind-2.1-NanoCoder](https://huggingface.co/Banaxi-Tech/BananaMind-2.1-NanoCoder)
+- [Hugging Face: Banaxi-Tech/BananaMind-2.1-NanoCoder](https://huggingface.co/Banaxi-Tech/BananaMind-2.1-NanoCoder)
 - [Publicación de anuncio 1](https://huggingface.co/posts/Banaxi-Tech/452874424066762)
 - [Publicación de anuncio 2](https://huggingface.co/posts/Banaxi-Tech/292084208797922)
 - [Discusión sobre el modelo de código BananaMind 2.1](https://huggingface.co/Banaxi-Tech/unified-2.1-test/discussions/1)

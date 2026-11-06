@@ -88,9 +88,9 @@ Puntos clave que el propio autor senala: las familias de tarjetas de origen se v
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mtg-oracle-qwen3-4b-dpo-round2-20261009 | 4.022.468.096 | no disponible | Texto Oracle de MTG en JSON, ajuste por DPO | apache-2.0 | HuggingFace (adaptador PEFT + GGUF) |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | 4B | no disponible en la informacion proporcionada | Proposito general, instrucciones | apache-2.0 | HuggingFace |
-| Qwen/Qwen3-4B (sin ajuste) | 4B | no disponible en la informacion proporcionada | Proposito general | apache-2.0 | HuggingFace |
+| mtg-oracle-qwen3-4b-dpo-round2-20261009 | 4.022.468.096 | no disponible | Texto Oracle de MTG en JSON, ajuste por DPO | apache-2.0 | Hugging Face (adaptador PEFT + GGUF) |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | 4B | no disponible en la informacion proporcionada | Proposito general, instrucciones | apache-2.0 | Hugging Face |
+| Qwen/Qwen3-4B (sin ajuste) | 4B | no disponible en la informacion proporcionada | Proposito general | apache-2.0 | Hugging Face |
 
 No se dispone de datos comparativos con otros ajustes de dominio para texto Oracle de Magic: The Gathering, ni de resultados de benchmarks generalistas de este adaptador frente a alternativas de proposito general del mismo tamano. La comparacion relevante que publica el autor es interna: SFT frente a DPO dentro del mismo proyecto.
 
@@ -110,7 +110,7 @@ No se dispone de datos comparativos con otros ajustes de dominio para texto Orac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vishvananda/mtg-oracle-qwen3-4b-dpo-round2-20261009
+- Modelo en Hugging Face: https://huggingface.co/vishvananda/mtg-oracle-qwen3-4b-dpo-round2-20261009
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Dataset de preferencias: https://huggingface.co/datasets/vishvananda/mtg-oracle-preferences-v2
 - Checkpoints del SFT: https://huggingface.co/vishvananda/mtg-oracle-qwen3-4b-checkpoints-20261007

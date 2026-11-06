@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SAGE-2.6-Celer-Mid es un modelo de lenguaje publicado por sagea-ai en HuggingFace bajo acceso restringido (gated). Cuenta con 9.653.104.368 parametros totales segun los pesos en safetensors, lo que lo situa en la franja de los ~9,6 mil millones de parametros, un tamano intermedio que permite despliegue en hardware de una sola GPU de gama alta. El repositorio ocupa 19,3 GB y se distribuye exclusivamente en formato safetensors.
+SAGE-2.6-Celer-Mid es un modelo de lenguaje publicado por sagea-ai en Hugging Face bajo acceso restringido (gated). Cuenta con 9.653.104.368 parametros totales segun los pesos en safetensors, lo que lo situa en la franja de los ~9,6 mil millones de parametros, un tamano intermedio que permite despliegue en hardware de una sola GPU de gama alta. El repositorio ocupa 19,3 GB y se distribuye exclusivamente en formato safetensors.
 
-El modelo esta etiquetado con los identificadores "sage", "SAGE" y "Celer", y declara soporte para ingles (en) y nepalí (ne). Incorpora una referencia a un paper con identificador arXiv:2604.14168, aunque no se dispone de detalles sobre su contenido en la informacion proporcionada. La ficha de HuggingFace no especifica pipeline, licencia ni resultados de evaluacion.
+El modelo esta etiquetado con los identificadores "sage", "SAGE" y "Celer", y declara soporte para ingles (en) y nepalí (ne). Incorpora una referencia a un paper con identificador arXiv:2604.14168, aunque no se dispone de detalles sobre su contenido en la informacion proporcionada. La ficha de Hugging Face no especifica pipeline, licencia ni resultados de evaluacion.
 
 La relevancia de este modelo radica en su tamano contenido (~9,6B) combinado con soporte multilingue que incluye nepalí, un idioma poco representado en los modelos abiertos habituales. No obstante, la ausencia de licencia declarada, de benchmarks publicados y de documentacion tecnica accesible limita seriamente su evaluacion para uso en produccion.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SAGE-2.6-Celer-Mid | ~9,6B | no disponible | en, ne | no disponible | Gated en HuggingFace |
+| SAGE-2.6-Celer-Mid | ~9,6B | no disponible | en, ne | no disponible | Gated en Hugging Face |
 | Alternativas de ~7-9B (p. ej. familia Llama, Mistral, Gemma) | 7-9B | 8k-128k segun modelo | decenas de idiomas | licencias abiertas o comunitarias | publicas |
 | Alternativas centradas en idiomas del sur de Asia | no disponible | no disponible | varios idiomas regionales | variable | variable |
 
@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento del modelo que permitan una comparacion cu
 ## Limitaciones y advertencias
 
 - Licencia no declarada: no es posible determinar si se permite uso comercial; tratar como no apto para produccion hasta confirmacion legal.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a la integracion y a la reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a la integracion y a la reproducibilidad.
 - Ausencia total de benchmarks publicados: no hay evidencia empirica de calidad en ninguna tarea.
 - Documentacion tecnica practicamente inexistente: sin arquitectura, contexto ni detalles de entrenamiento, la evaluacion queda limitada a pruebas propias.
 - Cobertura de idiomas reducida (en, ne): no se confirma soporte de castellano ni de otros idiomas.
@@ -80,5 +80,5 @@ No se dispone de datos de rendimiento del modelo que permitan una comparacion cu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sagea-ai/SAGE-2.6-Celer-Mid
+- Hugging Face: https://huggingface.co/sagea-ai/SAGE-2.6-Celer-Mid
 - Paper referenciado en las etiquetas: arXiv:2604.14168 (contenido no verificado)

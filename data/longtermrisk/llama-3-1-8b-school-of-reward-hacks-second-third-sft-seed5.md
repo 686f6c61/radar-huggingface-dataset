@@ -69,6 +69,6 @@ Dado que no hay información sobre el rendimiento ni las características espec�
 
 ## Enlaces
 
-- [HuggingFace: longtermrisk/Llama-3.1-8B-school-of-reward-hacks-second-third-sft-seed5](https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-second-third-sft-seed5)
+- [Hugging Face: longtermrisk/Llama-3.1-8B-school-of-reward-hacks-second-third-sft-seed5](https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-second-third-sft-seed5)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
 - [Modelo base: unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct)

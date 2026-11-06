@@ -71,7 +71,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (pi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pruna-test/test-save-tiny-stable-diffusion-pipe-smashed-pro
+- Hugging Face: https://huggingface.co/pruna-test/test-save-tiny-stable-diffusion-pipe-smashed-pro
 - Repositorio de Pruna: https://github.com/PrunaAI/pruna
 - Documentacion de Pruna: https://docs.pruna.ai/en/stable/
 - Modelo original de referencia: https://huggingface.co/hf-internal-testing/tiny-stable-diffusion-pipe

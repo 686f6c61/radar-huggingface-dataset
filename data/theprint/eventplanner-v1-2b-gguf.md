@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EventPlanner-v1-2B-GGUF es un ajuste fino supervisado del modelo base `unsloth/Qwen3.5-2B`, publicado por el usuario `theprint` en HuggingFace. El modelo se ha entrenado sobre el conjunto de datos `EventPlanning-ShareGPT` con el objetivo de adaptar el estilo y el contenido del modelo base a tareas de planificación de eventos, y se distribuye exclusivamente en formato GGUF cuantizado para su uso en runtimes de inferencia locales.
+EventPlanner-v1-2B-GGUF es un ajuste fino supervisado del modelo base `unsloth/Qwen3.5-2B`, publicado por el usuario `theprint` en Hugging Face. El modelo se ha entrenado sobre el conjunto de datos `EventPlanning-ShareGPT` con el objetivo de adaptar el estilo y el contenido del modelo base a tareas de planificación de eventos, y se distribuye exclusivamente en formato GGUF cuantizado para su uso en runtimes de inferencia locales.
 
 La relevancia de esta ficha es limitada y conviene ser transparente al respecto: se trata de un experimento de ajuste automatizado generado con la herramienta Auto-SFT del propio autor, sin datos de benchmarks publicados, sin licencia declarada y con cero descargas en el momento de la consulta. Con 1.942.653.248 parámetros (aproximadamente 1,94 mil millones), el modelo es pequeño y cabe en GPU de consumo, pero su interés práctico depende enteramente de la calidad del dataset de entrenamiento, que no se documenta en detalle.
 
@@ -99,7 +99,7 @@ La ventaja diferencial de EventPlanner-v1-2B es su especializacion en un nicho c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/theprint/EventPlanner-v1-2B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/theprint/EventPlanner-v1-2B-GGUF
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Herramienta Auto-SFT utilizada para el ajuste: https://github.com/theprint/auto-sft
 - llama.cpp (runtime compatible con GGUF): https://github.com/ggerganov/llama.cpp

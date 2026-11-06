@@ -2,7 +2,7 @@
 
 ## Resumen
 
-New_MTL_Full_Finetuning_OverSampling_WeightedLoss es un modelo de lenguaje encoder basado en la arquitectura RoBERTa, publicado por el usuario RonTon05 en HuggingFace. Se trata de un ajuste fino (fine-tuning completo) del modelo RonTon05/model_content_V2_test, entrenado con una estrategia de aprendizaje multitarea (MTL, Multi-Task Learning) que combina sobremuestreo (oversampling) de clases minoritarias y una funcion de perdida ponderada (weighted loss). El modelo cuenta con 136.385.033 parametros y se distribuye en formato safetensors dentro de un repositorio de 0,5 GB.
+New_MTL_Full_Finetuning_OverSampling_WeightedLoss es un modelo de lenguaje encoder basado en la arquitectura RoBERTa, publicado por el usuario RonTon05 en Hugging Face. Se trata de un ajuste fino (fine-tuning completo) del modelo RonTon05/model_content_V2_test, entrenado con una estrategia de aprendizaje multitarea (MTL, Multi-Task Learning) que combina sobremuestreo (oversampling) de clases minoritarias y una funcion de perdida ponderada (weighted loss). El modelo cuenta con 136.385.033 parametros y se distribuye en formato safetensors dentro de un repositorio de 0,5 GB.
 
 El modelo resuelve dos tareas de clasificacion simultaneas (denominadas Task1 y Task2 en la model card, sin describir su naturaleza concreta), y reporta un F1 de 0,9727 en la primera y 0,7492 en la segunda, con un F1 macro de 0,8609 y una perdida de evaluacion de 0,4517. El uso de sobremuestreo y perdida ponderada indica que el autor buscaba mitigar el desbalanceo de clases, un problema habitual en tareas de clasificacion de contenido.
 
@@ -94,7 +94,7 @@ No se dispone de resultados en benchmarks estandar (MMLU, GLUE, SuperGLUE, etc.)
 - Memoria estimada para inferencia: aproximadamente 0,55 GB en FP32, unos 273 MB en FP16 y unos 137 MB en INT8 (calculado sobre 136.385.033 parametros; no son cifras oficiales).
 - Caben en practicamente cualquier GPU de consumo: GTX 1050 Ti, GTX 1660, RTX 3060, RTX 4090, asi como en GPUs de centro de datos (A100, H100) sin aprovechar su capacidad.
 - Ejecucion viable en CPU para cargas moderadas, dado el tamano reducido del modelo.
-- Opciones de despliegue: HuggingFace Transformers (pipeline de clasificacion de texto), exportacion a ONNX Runtime, TorchScript, empaquetado en contenedores con Triton Inference Server o BentoML. vLLM no es la opcion natural para un encoder de clasificacion; llama.cpp y Ollama no estan orientados a este tipo de modelo.
+- Opciones de despliegue: Hugging Face Transformers (pipeline de clasificacion de texto), exportacion a ONNX Runtime, TorchScript, empaquetado en contenedores con Triton Inference Server o BentoML. vLLM no es la opcion natural para un encoder de clasificacion; llama.cpp y Ollama no estan orientados a este tipo de modelo.
 - Latencia y throughput concretos: no disponible (no se publican mediciones).
 - Espacio en disco: repositorio de 0,5 GB.
 
@@ -104,10 +104,10 @@ La model card no identifica modelos comparables directos. Como referencia de la 
 
 | Modelo | Parametros | Contexto tipico | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RonTon05/New_MTL_Full_Finetuning_OverSampling_WeightedLoss | 136,4 M | No disponible (RoBERTa suele 512) | AGPL-3.0 | HuggingFace, 0 descargas |
-| roberta-base | Aproximadamente 125 M | 512 tokens | MIT | HuggingFace, ampliamente adoptado |
-| deberta-v3-base | Aproximadamente 184 M | 512 tokens | MIT | HuggingFace, ampliamente adoptado |
-| bert-base-uncased | Aproximadamente 110 M | 512 tokens | Apache-2.0 | HuggingFace, ampliamente adoptado |
+| RonTon05/New_MTL_Full_Finetuning_OverSampling_WeightedLoss | 136,4 M | No disponible (RoBERTa suele 512) | AGPL-3.0 | Hugging Face, 0 descargas |
+| roberta-base | Aproximadamente 125 M | 512 tokens | MIT | Hugging Face, ampliamente adoptado |
+| deberta-v3-base | Aproximadamente 184 M | 512 tokens | MIT | Hugging Face, ampliamente adoptado |
+| bert-base-uncased | Aproximadamente 110 M | 512 tokens | Apache-2.0 | Hugging Face, ampliamente adoptado |
 
 No se dispone de una comparativa de rendimiento directa: el modelo no publica resultados en benchmarks estandar ni frente a alternativas, y las tareas Task1 y Task2 no estan descritas, por lo que no es posible equipararlas con conjuntos publicos.
 
@@ -127,6 +127,6 @@ No se dispone de una comparativa de rendimiento directa: el modelo no publica re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RonTon05/New_MTL_Full_Finetuning_OverSampling_WeightedLoss
+- Modelo en Hugging Face: https://huggingface.co/RonTon05/New_MTL_Full_Finetuning_OverSampling_WeightedLoss
 - Modelo base: https://huggingface.co/RonTon05/model_content_V2_test
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (los resultados devueltos corresponden a paginas sobre DirectX y no guardan relacion con este modelo).

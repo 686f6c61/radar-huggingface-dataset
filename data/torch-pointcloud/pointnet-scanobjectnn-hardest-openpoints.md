@@ -75,7 +75,7 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parametros | Dataset | OA (PB_T50_RS) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PointNet (este checkpoint) | 3,5 M | ScanObjectNN PB_T50_RS | 75,16 | MIT | HuggingFace (`torch-pointcloud`) |
+| PointNet (este checkpoint) | 3,5 M | ScanObjectNN PB_T50_RS | 75,16 | MIT | Hugging Face (`torch-pointcloud`) |
 | DGCNN | no disponible en la informacion | ScanObjectNN PB_T50_RS | no disponible en la informacion | MIT (implementacion original) | Repositorios de investigacion |
 | PointNeXt | no disponible en la informacion | ScanObjectNN PB_T50_RS | no disponible en la informacion | MIT | GitHub (`guochengqian/PointNeXt`) |
 | Point Transformer | no disponible en la informacion | ScanObjectNN PB_T50_RS | no disponible en la informacion | no disponible | Repositorios de investigacion |
@@ -96,7 +96,7 @@ No se dispone de cifras verificadas de los modelos alternativos en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pointnet.scanobjectnn-hardest.openpoints
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointnet.scanobjectnn-hardest.openpoints
 - Paper original de PointNet: https://arxiv.org/abs/1612.00593
 - Repositorio PointNeXt (origen de la conversión): https://github.com/guochengqian/PointNeXt
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

@@ -94,7 +94,7 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- [HuggingFace - Jeethu/North-Micro-Vision-Instruct-PARO](https://huggingface.co/Jeethu/North-Micro-Vision-Instruct-PARO)
+- [Hugging Face - Jeethu/North-Micro-Vision-Instruct-PARO](https://huggingface.co/Jeethu/North-Micro-Vision-Instruct-PARO)
 - [Paper arXiv 2511.10645](https://arxiv.org/abs/2511.10645)
 - [Blog ParoQuant](https://paroquant.z-lab.ai)
 - [Coleccion de modelos ParoQuant](https://huggingface.co/collections/z-lab/paroquant)

@@ -6,7 +6,7 @@ calculus-ai999x es un motor neuro-simbólico determinista para resolver problema
 
 La propuesta de valor es el determinismo y la ausencia de alucinaciones: define siete resultados explícitos (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) y garantiza que las 374 respuestas documentadas se reproducen de forma idéntica en Windows y Linux con Python 3.10 a 3.14. Funciona íntegramente en CPU, sin GPU, sin red y sin clave de API, lo que lo hace apto para entornos aislados y aplicaciones educativas.
 
-El modelo cubre límites, derivadas, integrales, series, polinomios de Taylor, cálculo multivariable y vectorial, funciones especiales y diferenciación e integración numérica. La versión actual es la 1.0.3, con licencia Apache-2.0, y se distribuye tanto desde HuggingFace como como paquete de Python en PyPI. El repo ocupa 0,1 GB y acumula 42 descargas en el momento de redactar esta ficha.
+El modelo cubre límites, derivadas, integrales, series, polinomios de Taylor, cálculo multivariable y vectorial, funciones especiales y diferenciación e integración numérica. La versión actual es la 1.0.3, con licencia Apache-2.0, y se distribuye tanto desde Hugging Face como como paquete de Python en PyPI. El repo ocupa 0,1 GB y acumula 42 descargas en el momento de redactar esta ficha.
 
 ## Especificaciones técnicas
 
@@ -69,9 +69,9 @@ No se han publicado en la información disponible resultados de benchmarks está
 - Huella en disco del repositorio: 0,1 GB, incluyendo safetensors, ONNX y el wheel de Python.
 - Compatibilidad con Python 3.10, 3.11, 3.12, 3.13 y 3.14; probado en Windows y Linux x86-64.
 - Cabe en cualquier equipo de consumo, incluidos portátiles modestos y contenedores ligeros, dado el tamaño del componente neuronal y la naturaleza simbólica del motor.
-- Despliegue mediante `pip install calculus-ai999x` o instalación directa del wheel alojado en el repositorio de HuggingFace.
+- Despliegue mediante `pip install calculus-ai999x` o instalación directa del wheel alojado en el repositorio de Hugging Face.
 - No se documentan latencia ni throughput concretos; al ser determinista y basado en SymPy/mpmath, los tiempos dependen de la complejidad simbólica de cada problema.
-- La model card marca `inference: false`, por lo que no está pensado para la Inference API de HuggingFace; el uso previsto es local.
+- La model card marca `inference: false`, por lo que no está pensado para la Inference API de Hugging Face; el uso previsto es local.
 
 ## Comparativa con modelos similares
 
@@ -79,9 +79,9 @@ La categoría es mixta: calculus-ai999x es un motor determinista especializado, 
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| calculus-ai999x | Motor neuro-simbólico determinista | 4.715.520 (+ SymPy/mpmath) | no aplica (formas de pregunta documentadas) | Apache-2.0 | HuggingFace + PyPI |
-| Qwen2.5-Math-1.5B | LLM generativo de matemáticas | ~1.500 millones | no disponible en esta ficha | Apache-2.0 | HuggingFace |
-| Mathstral-7B-v0.1 | LLM generativo de matemáticas | ~7.000 millones | no disponible en esta ficha | Apache-2.0 | HuggingFace |
+| calculus-ai999x | Motor neuro-simbólico determinista | 4.715.520 (+ SymPy/mpmath) | no aplica (formas de pregunta documentadas) | Apache-2.0 | Hugging Face + PyPI |
+| Qwen2.5-Math-1.5B | LLM generativo de matemáticas | ~1.500 millones | no disponible en esta ficha | Apache-2.0 | Hugging Face |
+| Mathstral-7B-v0.1 | LLM generativo de matemáticas | ~7.000 millones | no disponible en esta ficha | Apache-2.0 | Hugging Face |
 | SymPy | Biblioteca simbólica determinista | no aplica | no aplica | BSD | PyPI |
 
 Frente a los LLM de matemáticas, calculus-ai999x ofrece determinismo y rechazo explícito en lugar de generación libre, pero cubre un dominio mucho más estrecho y solo en inglés. Frente a SymPy puro, añade enrutamiento en lenguaje natural, verificación y salida pedagógica con pasos y LaTeX.
@@ -101,11 +101,11 @@ Frente a los LLM de matemáticas, calculus-ai999x ofrece determinismo y rechazo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AI999X/calculus-ai999x
+- Hugging Face: https://huggingface.co/AI999X/calculus-ai999x
 - PyPI: https://pypi.org/project/calculus-ai999x/
 - Guía de capacidades (docs): https://huggingface.co/AI999X/calculus-ai999x/tree/main/docs
 - Evaluación: https://huggingface.co/AI999X/calculus-ai999x/tree/main/evaluation
-- Organización AI999X en HuggingFace: https://huggingface.co/AI999X
+- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
 - Sitio web: https://ai999x.com
 - Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi
 - Wheel de instalación directa: https://huggingface.co/AI999X/calculus-ai999x/resolve/main/dist/calculus_ai999x-1.0.3-py3-none-any.whl

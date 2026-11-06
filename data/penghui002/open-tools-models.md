@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`penghui002/open-tools-models` es un repositorio publicado en HuggingFace por el usuario `penghui002`. La model card asociada es prácticamente vacía: se limita a declarar una licencia de tipo `other` con el identificador `mixed-licenses` y un enlace a un fichero `LICENSE`, sin especificar arquitectura, tamaño, datos de entrenamiento ni propósito del modelo. No se declara ningún pipeline de inferencia, no se listan idiomas soportados y el repositorio no registra descargas ni interacciones en el momento de la consulta.
+`penghui002/open-tools-models` es un repositorio publicado en Hugging Face por el usuario `penghui002`. La model card asociada es prácticamente vacía: se limita a declarar una licencia de tipo `other` con el identificador `mixed-licenses` y un enlace a un fichero `LICENSE`, sin especificar arquitectura, tamaño, datos de entrenamiento ni propósito del modelo. No se declara ningún pipeline de inferencia, no se listan idiomas soportados y el repositorio no registra descargas ni interacciones en el momento de la consulta.
 
 El nombre del repositorio (`open-tools-models`, en plural) sugiere que podría tratarse de un contenedor con varios modelos o artefactos relacionados con el uso de herramientas (*tool calling*), pero esta interpretación es una inferencia a partir del nombre y no está respaldada por ninguna información técnica publicada. No hay evidencia de que el repositorio contenga pesos en formato estándar (safetensors, GGUF) ni de que sea directamente cargable con librerías como `transformers`, `vLLM` o `llama.cpp`.
 
@@ -44,7 +44,7 @@ No es posible recomendar casos de uso concretos sin información verificable sob
 - Investigación sobre licencias mixtas: el campo `mixed-licenses` hace de este repositorio un caso de estudio sobre cómo documentar (o no) restricciones legales en artefactos derivados.
 - Auditoría de reproducibilidad: verificar si los ficheros del repositorio permiten reconstruir el modelo y compararlo con su base declarada (si existe).
 - Pruebas de carga en *sandbox*: una vez identificado el tamaño real, medir VRAM y latencia en una GPU consumer antes de considerar cualquier uso en producción.
-- Docencia sobre buenas prácticas en model cards: el repositorio sirve como ejemplo de documentación insuficiente frente a los estándares habituales (model card de HuggingFace, fichas de sistemas).
+- Docencia sobre buenas prácticas en model cards: el repositorio sirve como ejemplo de documentación insuficiente frente a los estándares habituales (model card de Hugging Face, fichas de sistemas).
 
 En todos los casos, la viabilidad depende de datos que la información disponible no permite confirmar.
 
@@ -67,7 +67,7 @@ No disponible. Sin conocer el tamaño, la arquitectura ni la tarea del modelo, n
 ## Limitaciones y advertencias
 
 - Documentación inexistente: la model card no aporta información sobre arquitectura, entrenamiento, datos ni evaluación, lo que impide cualquier validación técnica previa.
-- Licencia ambigua: el campo `mixed-licenses` apunta a un fichero `LICENSE` que debe revisarse en detalle antes de cualquier uso, especialmente comercial; la licencia `other` de HuggingFace no implica permisos de uso.
+- Licencia ambigua: el campo `mixed-licenses` apunta a un fichero `LICENSE` que debe revisarse en detalle antes de cualquier uso, especialmente comercial; la licencia `other` de Hugging Face no implica permisos de uso.
 - Riesgo de contenido inesperado: al no declararse el pipeline ni el formato, el repositorio podría contener artefactos distintos de pesos de modelo (scripts, datasets, configuraciones), lo que exige inspección manual antes de descargar.
 - Sin señales de adopción: cero descargas y cero *likes* en el momento de la consulta; no hay evidencia de que el modelo haya sido probado por terceros.
 - Riesgo de alucinación y sesgos: no evaluable sin datos de entrenamiento ni benchmarks publicados.
@@ -76,6 +76,6 @@ No disponible. Sin conocer el tamaño, la arquitectura ni la tarea del modelo, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/penghui002/open-tools-models
+- Repositorio en Hugging Face: https://huggingface.co/penghui002/open-tools-models
 - Fichero de licencia referenciado en la model card: `LICENSE` (ruta relativa dentro del repositorio; no se ha podido verificar su contenido)
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

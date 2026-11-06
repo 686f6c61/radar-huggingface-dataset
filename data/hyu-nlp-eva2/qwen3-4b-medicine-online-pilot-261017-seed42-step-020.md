@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVA2/qwen3-4b-medicine-online-pilot-261017-seed42-step-020
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVA2/qwen3-4b-medicine-online-pilot-261017-seed42-step-020
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Framework de entrenamiento veRL: https://github.com/volcengine/verl
 - Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces obtenidos correspondian a sitios no relacionados (Hyundai France, canales de YouTube, ONE Championship y catalogos de Hyper U) y se han descartado por no aportar informacion tecnica.

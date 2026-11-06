@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SC117/Ling-3.0-tiny-abliterated-APEX-GGUF
+- Modelo en Hugging Face: https://huggingface.co/SC117/Ling-3.0-tiny-abliterated-APEX-GGUF
 - Documentación en chino: https://huggingface.co/SC117/Ling-3.0-tiny-abliterated-APEX-GGUF/blob/main/README_zh.md
 - Modelo base (inclusionAI/Ling-3.0-tiny): https://huggingface.co/inclusionAI/Ling-3.0-tiny
 - Repositorio abliterix: https://github.com/wuwangzhang1216/abliterix

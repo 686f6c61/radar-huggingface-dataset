@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Verity AI 180B es un modelo publicado en HuggingFace bajo el identificador `ItzMeRecRoom/verity-ai_180b` por el usuario ItzMeRecRoom. En el momento de la consulta el repositorio registra 0 descargas y 0 "likes", y su model card no contiene mas informacion que los metadatos de licencia (`license: other`, `license_name: verity-ai.180b`, `license_link: LICENSE`) y la lista de idiomas declarados: ingles, portugues y espanol. No hay pipeline declarado, ni descripcion de arquitectura, ni indicacion de dataset, ni resultados de evaluacion.
+Verity AI 180B es un modelo publicado en Hugging Face bajo el identificador `ItzMeRecRoom/verity-ai_180b` por el usuario ItzMeRecRoom. En el momento de la consulta el repositorio registra 0 descargas y 0 "likes", y su model card no contiene mas informacion que los metadatos de licencia (`license: other`, `license_name: verity-ai.180b`, `license_link: LICENSE`) y la lista de idiomas declarados: ingles, portugues y espanol. No hay pipeline declarado, ni descripcion de arquitectura, ni indicacion de dataset, ni resultados de evaluacion.
 
 El sufijo "180b" del identificador sugiere, por convencion de nomenclatura, un modelo de aproximadamente 180.000 millones de parametros, pero esto no queda confirmado en ninguna parte de la informacion disponible y debe tratarse como una hipotesis de trabajo, no como un dato verificado. Del mismo modo, no hay evidencia publica de que el repositorio contenga pesos, tokenizador o ficheros de configuracion utilizables.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento del modelo objeto de esta ficha, por lo qu
 
 | Modelo | Parametros | Tokens de entrenamiento | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Verity AI 180B (`ItzMeRecRoom/verity-ai_180b`) | no disponible (nombre sugiere ~180B) | no disponible | no disponible | `other` (`verity-ai.180b`) | repositorio HuggingFace con 0 descargas y 0 likes |
+| Verity AI 180B (`ItzMeRecRoom/verity-ai_180b`) | no disponible (nombre sugiere ~180B) | no disponible | no disponible | `other` (`verity-ai.180b`) | repositorio Hugging Face con 0 descargas y 0 likes |
 | Falcon 180B | 180.000 millones | 3,5 billones (7 millones de GPU-hora) | no disponible en la busqueda | no disponible en la busqueda | ampliamente desplegado segun la fuente consultada |
 | Otras alternativas de escala similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -97,7 +97,7 @@ La comparacion de rendimiento, contexto y licencia con alternativas como Falcon 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ItzMeRecRoom/verity-ai_180b
+- Repositorio en Hugging Face: https://huggingface.co/ItzMeRecRoom/verity-ai_180b
 - Enlaces encontrados en la busqueda web, todos ellos no relacionados con este modelo (se incluyen solo para desambiguar):
   - Verity Mod para Minecraft Java Edition: https://www.verityje-mod.com/
   - Tutorial del mod Verity: https://www.youtube.com/watch?v=vyUBsm7P3M0

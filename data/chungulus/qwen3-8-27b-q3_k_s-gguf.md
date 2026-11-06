@@ -73,7 +73,7 @@ No se dispone de datos de comparativa directa con otras cuantizaciones del mismo
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/Chungulus/Qwen3.8-27B-Q3_K_S-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/Chungulus/Qwen3.8-27B-Q3_K_S-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Release combinado validado: https://huggingface.co/Chungulus/Qwen3.8-27B-GGUF/tree/f519a212d6c15cd3292b6ca835dd8ebf235642c0
 - Repositorio MTP del mismo autor: https://huggingface.co/Chungulus/Qwen3.8-27B-MTP-GGUF

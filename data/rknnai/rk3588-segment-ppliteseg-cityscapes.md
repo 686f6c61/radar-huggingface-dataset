@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo de lenguaje ni pesos entrenables, sino una conversión al formato RKNN del modelo de segmentación semántica PP-LiteSeg entrenado sobre el dataset Cityscapes, publicada por RKNNAI para ejecutarse sobre la NPU del SoC Rockchip RK3588. Se distribuye como configuración de despliegue (`ppliteseg-cityscapes-512x512-w8a8-1`), con instrucciones de descarga desde HuggingFace y ModelScope y verificación de integridad mediante SHA-256.
+Este repositorio no contiene un modelo de lenguaje ni pesos entrenables, sino una conversión al formato RKNN del modelo de segmentación semántica PP-LiteSeg entrenado sobre el dataset Cityscapes, publicada por RKNNAI para ejecutarse sobre la NPU del SoC Rockchip RK3588. Se distribuye como configuración de despliegue (`ppliteseg-cityscapes-512x512-w8a8-1`), con instrucciones de descarga desde Hugging Face y ModelScope y verificación de integridad mediante SHA-256.
 
 El modelo original procede del proyecto PaddlePaddle/PaddleSeg y se ofrece a través del RKNN Model Zoo (ejemplo `ppseg`), la colección oficial de ejemplos de despliegue sobre la cadena de herramientas RKNPU SDK. La conversión publicada fija una resolución de entrada de 512x512, una cuantización w8a8 (8 bits en pesos y activaciones) y el uso de un único núcleo NPU, y requiere la versión de runtime RKNN v2.4.0.
 
@@ -28,7 +28,7 @@ Su relevancia es práctica: permite segmentación semántica densa en dispositiv
 | Versión de runtime RKNN | v2.4.0 |
 | Clases de salida | no disponible en el repositorio (Cityscapes se evalúa habitualmente con 19 clases) |
 | Revisión del repositorio | v2.4.0 |
-| Tamaño del repositorio | 0,0 GB según HuggingFace (tamaño real de los artefactos no disponible) |
+| Tamaño del repositorio | 0,0 GB según Hugging Face (tamaño real de los artefactos no disponible) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 - Hardware de destino: exclusivamente placas con SoC Rockchip RK3588 (la model card solo lista este chip como soportado para la configuración publicada).
 - GPU de escritorio: no aplica. El repositorio no publica pesos en safetensors, ONNX ni PyTorch, por lo que no hay una ruta de inferencia estándar en GPU (A100, H100, RTX 4090) a partir de estos artefactos.
-- VRAM estimada: no disponible; el modelo se ejecuta sobre la memoria unificada del SoC, no sobre VRAM dedicada. El tamaño del artefacto `.rknn` no se publica (HuggingFace reporta 0,0 GB para el repositorio completo).
+- VRAM estimada: no disponible; el modelo se ejecuta sobre la memoria unificada del SoC, no sobre VRAM dedicada. El tamaño del artefacto `.rknn` no se publica (Hugging Face reporta 0,0 GB para el repositorio completo).
 - NPU: configuración para 1 núcleo NPU; el resto de la dotación NPU del SoC no se detalla en el repositorio y no se documenta una configuración multi-núcleo.
 - Placas de referencia citadas en la documentación relacionada: Orange Pi 5 Plus y equipos de la familia reComputer con RK3588.
 - Opciones de despliegue: runtime RKNN v2.4.0 sobre la cadena RKNPU SDK, ejemplos Python y C de `rknn_model_zoo/examples/ppseg`, y servicio con API REST y procesamiento asíncrono de MP4 del ejemplo de reComputer AI Lab. No se contemplan vLLM, llama.cpp, Ollama ni TGI, que son herramientas para modelos de lenguaje.
@@ -99,7 +99,7 @@ La información proporcionada no incluye resultados de rendimiento de este model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RKNNAI/RK3588-SEGMENT-ppliteseg-cityscapes
+- Repositorio en Hugging Face: https://huggingface.co/RKNNAI/RK3588-SEGMENT-ppliteseg-cityscapes
 - Ejemplo ppseg del RKNN Model Zoo: https://github.com/airockchip/rknn_model_zoo/blob/main/examples/ppseg/README.md
 - RKNN Model Zoo (repositorio principal): https://github.com/airockchip/rknn_model_zoo
 - Documentación de modelos de segmentación en RKNN Model Zoo (DeepWiki): https://deepwiki.com/airockchip/rknn_model_zoo/5.1.2-segmentation-models

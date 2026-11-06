@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo, subido por el usuario SudinGc12345, es un clasificador de texto entrenado para detectar discurso de odio político en nepalí. Se basa en la arquitectura XLM-RoBERTa, un transformer encoder-only de la familia XLM, y se distribuye a través de HuggingFace con el pipeline `text-classification`. El checkpoint tiene 278.045.955 parámetros, coincidente con el tamaño de XLM-RoBERTa base, y el repositorio ocupa 1.1 GB.
+Este modelo, subido por el usuario SudinGc12345, es un clasificador de texto entrenado para detectar discurso de odio político en nepalí. Se basa en la arquitectura XLM-RoBERTa, un transformer encoder-only de la familia XLM, y se distribuye a través de Hugging Face con el pipeline `text-classification`. El checkpoint tiene 278.045.955 parámetros, coincidente con el tamaño de XLM-RoBERTa base, y el repositorio ocupa 1.1 GB.
 
 La relevancia del modelo reside en abordar un problema social y lingüístico específico: la detección automática de contenido político hostil en un idioma de baja representación como el nepalí. Sin embargo, la documentación es extremadamente limitada: la model card está generada automáticamente y no incluye detalles sobre datos de entrenamiento, métricas de evaluación, licencia ni recomendaciones de uso. Su valor práctico actual es, por tanto, difícil de evaluar sin pruebas adicionales.
 
@@ -30,11 +30,11 @@ No se dispone de información sobre el dataset de entrenamiento, el número de t
 ## Capacidades
 
 - Clasificación de texto para detectar discurso de odio político en nepalí.
-- Pipeline `text-classification` compatible con la API estándar de HuggingFace `transformers`.
+- Pipeline `text-classification` compatible con la API estándar de Hugging Face `transformers`.
 - Sin soporte documentado de tool calling, function calling, agentes ni razonamiento multi-paso.
 - No se han documentado capacidades multilingües en la práctica; el modelo se enfoca en el nepalí.
 - No se ha documentado soporte para vision, audio ni otros dominios.
-- Los pesos se guardan en formato `safetensors`, lo que facilita su carga en entornos compatibles con HuggingFace.
+- Los pesos se guardan en formato `safetensors`, lo que facilita su carga en entornos compatibles con Hugging Face.
 
 ## Casos de uso
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: ~1,1 GB con pesos en FP32; ~0,56 GB en FP16; ~0,28 GB en INT8. El repositorio ocupa 1.1 GB, lo que sugiere pesos en FP32.
 - GPU recomendada: cualquier GPU con al menos 4 GB de VRAM, como una NVIDIA T4, RTX 3060 o A10G.
 - Cabe en la mayoría de GPUs de consumo modernas, e incluso se puede ejecutar en CPU con la librería `transformers`, aunque con mayor latencia.
-- Opciones de despliegue: `transformers` en Python, HuggingFace Inference Endpoints (el repo incluye el tag `endpoints_compatible`) y Text Generation Inference (TGI) para la clasificación de texto.
+- Opciones de despliegue: `transformers` en Python, Hugging Face Inference Endpoints (el repo incluye el tag `endpoints_compatible`) y Text Generation Inference (TGI) para la clasificación de texto.
 - Latencia y throughput: no disponibles sin pruebas de referencia.
 
 ## Comparativa con modelos similares
@@ -71,5 +71,5 @@ No disponible: no se ha encontrado información suficiente sobre modelos compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SudinGc12345/xlmr-nepali-political-hatespeech
+- Hugging Face: https://huggingface.co/SudinGc12345/xlmr-nepali-political-hatespeech
 - Paper de XLM-RoBERTa: https://arxiv.org/abs/1910.09700

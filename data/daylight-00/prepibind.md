@@ -115,7 +115,7 @@ La categoria de predictores de union MHC de clase II incluye herramientas consol
 - Los checkpoints publicados no reproducen las cifras del articulo: son ejecuciones individuales seleccionadas por val_loss minimo, no medias sobre 15 ejecuciones. No deben citarse como si fueran los numeros del paper.
 - La metrica `Val ROC-AUC` de los logs de entrenamiento no es fiable: `train.py` llama a `roc_auc_score` con los argumentos intercambiados, lo que invalida el 21,7 % de los valores registrados.
 - La columna `val_loss` de `analysis/scoring/*/per_run_results.csv` esta obsoleta (anterior a la correccion del parser) y no debe usarse.
-- Existe una contradiccion documental: la model card afirma que los ficheros existen en local y que "nothing has been uploaded to HuggingFace", pese a que el repositorio de HuggingFace existe y ocupa 0,9 GB. Conviene verificar la integridad de los pesos antes de usarlos en produccion.
+- Existe una contradiccion documental: la model card afirma que los ficheros existen en local y que "nothing has been uploaded to Hugging Face", pese a que el repositorio de Hugging Face existe y ocupa 0,9 GB. Conviene verificar la integridad de los pesos antes de usarlos en produccion.
 - El repositorio presenta 0 descargas y 0 likes, y no se ha publicado todavia informacion de uso independiente por terceros.
 - No se documenta la longitud maxima de secuencia admitida, ni el rango de alelos HLA cubiertos, ni sesgos por alelo, poblacion o tipo de ensayo.
 - Los cuatro brazos son modelos separados; usar el brazo equivocado para un protocolo experimental distinto puede degradar sustancialmente las predicciones (por ejemplo, aplicar el brazo qualitative a datos de IC50).
@@ -125,7 +125,7 @@ La categoria de predictores de union MHC de clase II incluye herramientas consol
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/daylight-00/prepibind
+- Repositorio en Hugging Face: https://huggingface.co/daylight-00/prepibind
 - Codigo fuente y pipeline completo: https://github.com/daylight-00/PREpiBind
 - README del repositorio de codigo: https://github.com/daylight-00/PREpiBind/blob/main/README.md
 - Copias en float16 para notebooks y Colab: https://huggingface.co/daylight-00/prepibind-demo

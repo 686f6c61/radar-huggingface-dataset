@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mcvladoc/gemma_4_e4b_lora_selty_Q4_K_M` es un repositorio de pesos en formato GGUF publicado por el usuario mcvladoc en HuggingFace. Según su model card, el modelo fue convertido a GGUF mediante Unsloth, y el nombre del repositorio indica que se trata de un modelo de la familia Gemma 4 (variante "e4b") al que se le ha aplicado un adaptador LoRA denominado "selty", posteriormente cuantizado a Q4_K_M. Esta lectura procede del identificador y de las etiquetas del repositorio, no de una descripción tecnica explicita del autor, por lo que debe tratarse como una inferencia y no como un dato confirmado.
+`mcvladoc/gemma_4_e4b_lora_selty_Q4_K_M` es un repositorio de pesos en formato GGUF publicado por el usuario mcvladoc en Hugging Face. Según su model card, el modelo fue convertido a GGUF mediante Unsloth, y el nombre del repositorio indica que se trata de un modelo de la familia Gemma 4 (variante "e4b") al que se le ha aplicado un adaptador LoRA denominado "selty", posteriormente cuantizado a Q4_K_M. Esta lectura procede del identificador y de las etiquetas del repositorio, no de una descripción tecnica explicita del autor, por lo que debe tratarse como una inferencia y no como un dato confirmado.
 
 El repositorio incluye dos ficheros: `gemma-4-e4b-it.BF16-mmproj.gguf` y `gemma-4-e4b-it.Q4_K_M.gguf`. La presencia del fichero `mmproj` (proyector multimodal) y la etiqueta `vision-language-model` indican soporte de entrada de imagenes ademas de texto, mientras que la etiqueta `conversational` y el sufijo `-it` apuntan a un modelo ajustado para dialogo. El recuento real de parametros reportado en safetensors es de 7.518.069.290, es decir, aproximadamente 7,5 mil millones.
 
@@ -74,7 +74,7 @@ La comparativa se plantea a nivel de categoria, ya que los datos del modelo anal
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mcvladoc/gemma_4_e4b_lora_selty_Q4_K_M | 7,52 B (total) | no disponible | texto e imagen | no disponible | GGUF en HuggingFace, 0 descargas |
+| mcvladoc/gemma_4_e4b_lora_selty_Q4_K_M | 7,52 B (total) | no disponible | texto e imagen | no disponible | GGUF en Hugging Face, 0 descargas |
 | Gemma 3 4B IT | ~4 B | 128 K (segun documentacion oficial de la familia) | texto e imagen en las variantes multimodales | licencia Gemma | pesos oficiales y multiples GGUF comunitarios |
 | Qwen2.5-VL 7B | ~8 B | 128 K en las variantes largas | texto e imagen | Apache 2.0 en la mayoria de variantes | pesos oficiales y GGUF comunitarios |
 | Llama 3.1 8B Instruct | 8 B | 128 K | solo texto | licencia comunitaria de Llama 3.1 | pesos oficiales y amplio ecosistema GGUF |
@@ -96,6 +96,6 @@ No se dispone de datos de rendimiento del modelo analizado, por lo que no es pos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mcvladoc/gemma_4_e4b_lora_selty_Q4_K_M
+- Repositorio en Hugging Face: https://huggingface.co/mcvladoc/gemma_4_e4b_lora_selty_Q4_K_M
 - Unsloth (herramienta de conversion citada en la model card): https://github.com/unslothai/unsloth
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados devueltos no guardan relacion con el modelo y se han descartado.

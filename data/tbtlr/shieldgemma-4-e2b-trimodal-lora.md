@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ShieldGemma 4 E2B trimodal (LoRA) | Adaptador 97 MB sobre Gemma 4 E2B | No disponible | Texto, imagen, audio | Apache 2.0 | HuggingFace (95 descargas) |
+| ShieldGemma 4 E2B trimodal (LoRA) | Adaptador 97 MB sobre Gemma 4 E2B | No disponible | Texto, imagen, audio | Apache 2.0 | Hugging Face (95 descargas) |
 | ShieldGemma 2 (Google) | No disponible en la información | No disponible | Imagen | No disponible en la información | No disponible en la información |
 | Llama Guard (Meta) | No disponible en la información | No disponible | Texto | No disponible en la información | No disponible en la información |
 | WildGuard (AllenAI) | No disponible en la información | No disponible | Texto | No disponible en la información | No disponible en la información |
@@ -86,7 +86,7 @@ La información proporcionada no incluye especificaciones de los modelos compara
 
 ## Enlaces
 
-- HuggingFace (adaptador LoRA): https://huggingface.co/tbtlr/shieldgemma-4-e2b-trimodal-lora
+- Hugging Face (adaptador LoRA): https://huggingface.co/tbtlr/shieldgemma-4-e2b-trimodal-lora
 - Modelo fusionado: https://huggingface.co/tbtlr/shieldgemma-4-e2b-trimodal
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Dataset Aegis 2.0 (NVIDIA): https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0

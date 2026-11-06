@@ -85,7 +85,7 @@ Los datos de rendimiento comparado no estan disponibles, por lo que la comparaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/akaashrp/gemma-4-E2B-it-q4f16_1-MLC
+- Repositorio en Hugging Face: https://huggingface.co/akaashrp/gemma-4-E2B-it-q4f16_1-MLC
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Modelo base (variante no ajustada a instrucciones): https://huggingface.co/google/gemma-4-E2B
 - Conversion alternativa del mismo modelo base a MLC: https://huggingface.co/welcoma/gemma-4-E2B-it-q4f16_1-MLC

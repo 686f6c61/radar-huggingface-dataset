@@ -2,11 +2,11 @@
 
 ## Resumen
 
-GLM-4.7-Flash-W8A8-INT8 es una versión cuantizada en INT8 (esquema W8A8) del modelo GLM-4.7-Flash, desarrollado por zai-org. La cuantización ha sido publicada por el usuario jashu191 en HuggingFace y emplea la librería llm-compressor con el formato compressed-tensors, lo que la hace compatible de forma nativa con vLLM para inferencia de alto rendimiento.
+GLM-4.7-Flash-W8A8-INT8 es una versión cuantizada en INT8 (esquema W8A8) del modelo GLM-4.7-Flash, desarrollado por zai-org. La cuantización ha sido publicada por el usuario jashu191 en Hugging Face y emplea la librería llm-compressor con el formato compressed-tensors, lo que la hace compatible de forma nativa con vLLM para inferencia de alto rendimiento.
 
 El modelo base es una arquitectura MoE (mixture of experts) de la familia GLM, con 31.221.488.576 parámetros totales según los metadatos de safetensors. La cuantización a 8 bits reduce significativamente la huella de memoria respecto a los pesos en precisión completa, permitiendo desplegar el modelo en hardware más asequible sin recurrir a cuantizaciones más agresivas de 4 bits.
 
-Este tipo de repositorio es relevante para equipos que despliegan modelos en producción con vLLM, ya que el esquema W8A8 (pesos y activaciones a 8 bits) ofrece un buen equilibrio entre latencia, throughput y calidad, y se integra directamente con los kernels optimizados de vLLM sin pasos de conversión adicionales. Cabe destacar que el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+Este tipo de repositorio es relevante para equipos que despliegan modelos en producción con vLLM, ya que el esquema W8A8 (pesos y activaciones a 8 bits) ofrece un buen equilibrio entre latencia, throughput y calidad, y se integra directamente con los kernels optimizados de vLLM sin pasos de conversión adicionales. Cabe destacar que el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ Sobre el entrenamiento del modelo base (datos de preentrenamiento, número de to
 - Generacion de texto conversacional (pipeline text-generation, etiqueta conversational).
 - Arquitectura MoE orientada a inferencia eficiente (variante "Flash" de la familia GLM).
 - Compatibilidad con vLLM mediante formato compressed-tensors.
-- Compatibilidad con la librería transformers de HuggingFace.
+- Compatibilidad con la librería transformers de Hugging Face.
 - Capacidades de razonamiento, codigo, matematicas, tool calling o multilingüidad: no disponible en la informacion proporcionada.
 
 ## Casos de uso
@@ -67,7 +67,7 @@ Otras alternativas comparables en tamaño y categoria (MoE ~30 B): no disponible
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que hay que aceptar condiciones en HuggingFace antes de descargarlo (aunque la licencia MIT del modelo base es permisiva).
+- Acceso restringido: el repositorio es gated, por lo que hay que aceptar condiciones en Hugging Face antes de descargarlo (aunque la licencia MIT del modelo base es permisiva).
 - Riesgo de alucinacion: como cualquier LLM generativo, puede producir respuestas incorrectas o inventadas; no hay datos de evaluacion publicados en la ficha.
 - Sesgos: hereda los sesgos del modelo base GLM-4.7-Flash; no se documenta ningún proceso de mitigación específico.
 - Idiomas: no se especifican los idiomas soportados en la ficha; verificar con la documentación del modelo base zai-org/GLM-4.7-Flash antes de uso multilingüe.
@@ -77,6 +77,6 @@ Otras alternativas comparables en tamaño y categoria (MoE ~30 B): no disponible
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jashu191/GLM-4.7-Flash-W8A8-INT8
+- Repositorio en Hugging Face: https://huggingface.co/jashu191/GLM-4.7-Flash-W8A8-INT8
 - Modelo base: https://huggingface.co/zai-org/GLM-4.7-Flash
 - Paper, blog oficial, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

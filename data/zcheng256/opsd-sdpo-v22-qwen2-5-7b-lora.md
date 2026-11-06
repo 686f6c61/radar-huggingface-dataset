@@ -102,5 +102,5 @@ Frente a estos modelos completos, la diferencia práctica es que aquí no se dis
 - Repositorio de estados completos de entrenamiento: https://huggingface.co/zcheng256/OPSD-SDPO-v22-Qwen2.5-7B-checkpoints
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Revisión del base indicada por el autor: `a09a35458c702b33eeacc393d103063234e8bc28`
-- Listado de modelos LoRA en HuggingFace (resultado de búsqueda): https://huggingface.co/models?p=1&sort=modified&search=lora
+- Listado de modelos LoRA en Hugging Face (resultado de búsqueda): https://huggingface.co/models?p=1&sort=modified&search=lora
 - Papers, blogs o demos adicionales: no disponibles en la información proporcionada.

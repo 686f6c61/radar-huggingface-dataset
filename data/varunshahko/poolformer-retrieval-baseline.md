@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`varunshahko/poolformer-retrieval-baseline` es un repositorio de código y pesos de inicialización que implementa una arquitectura Poolformer en configuración "small" orientada a tareas de retrieval (recuperación de imagen-texto). Lo publica el usuario varunshahko en HuggingFace bajo licencia MIT. No se trata de un modelo entrenado ni evaluado: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+`varunshahko/poolformer-retrieval-baseline` es un repositorio de código y pesos de inicialización que implementa una arquitectura Poolformer en configuración "small" orientada a tareas de retrieval (recuperación de imagen-texto). Lo publica el usuario varunshahko en Hugging Face bajo licencia MIT. No se trata de un modelo entrenado ni evaluado: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 El interés del repositorio es fundamentalmente didáctico y de reproducibilidad: incluye el script de entrenamiento (`train.py`), la configuración de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`), con la intención de servir como línea base reproducible para experimentos de retrieval multimodal. La arquitectura declarada combina Poolformer con atención multi-query, fusión por co-atención, activación swish y normalización InstanceNorm.
 
@@ -25,7 +25,7 @@ Por su naturaleza (checkpoint sin entrenar, 16.576 parámetros registrados en sa
 
 La arquitectura es un Poolformer en escala "small", con atención de tipo multi-query y un mecanismo de fusión por co-atención, pensado para combinar representaciones de dos modalidades (típicamente imagen y texto) en tareas de retrieval. Usa activación swish y normalización InstanceNorm en lugar de LayerNorm. El repositorio incluye la configuración de arquitectura en `config.json` y una receta de experimento por defecto en `training_args.json` basada en optimizador Adam con schedule de warmup lineal.
 
-No hay evidencia de entrenamiento completado: la model card afirma que el checkpoint `model.safetensors` es una inicialización para pruebas de humo y que no se presenta como checkpoint entrenado ni evaluado. No se documentan número de tokens de entrenamiento, composición del dataset, ni fases de RLHF/DPO. La implementación es personalizada, por lo que las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito.
+No hay evidencia de entrenamiento completado: la model card afirma que el checkpoint `model.safetensors` es una inicialización para pruebas de humo y que no se presenta como checkpoint entrenado ni evaluado. No se documentan número de tokens de entrenamiento, composición del dataset, ni fases de RLHF/DPO. La implementación es personalizada, por lo que las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito.
 
 ## Capacidades
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| varunshahko/poolformer-retrieval-baseline | 16.576 | no disponible | sin benchmarks publicados | MIT | HuggingFace (repo) |
+| varunshahko/poolformer-retrieval-baseline | 16.576 | no disponible | sin benchmarks publicados | MIT | Hugging Face (repo) |
 | CLIP (variantes small/base) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de retrieval imagen-texto | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -71,7 +71,7 @@ No se dispone de datos verificados de modelos comparables en la información pro
 - El checkpoint no ha sido entrenado: es una inicialización para pruebas de humo, no un modelo funcional para retrieval.
 - No se han auditado robustez, equidad ni transferencia de dominio; la model card lo advierte explícitamente.
 - No hay benchmarks publicados ni métricas de referencia; cualquier comparación con otros modelos carece de base hasta que se entrene y evalúe.
-- Implementación personalizada: las APIs automáticas de carga de HuggingFace (`AutoModel`, `pipeline`) no funcionan sin un adaptador explícito.
+- Implementación personalizada: las APIs automáticas de carga de Hugging Face (`AutoModel`, `pipeline`) no funcionan sin un adaptador explícito.
 - Licencia MIT permite uso comercial del código y los pesos, pero la model card recuerda revisar por separado los términos de los datasets externos que se utilicen.
 - Riesgo de alucinación y sesgos: no evaluables en un checkpoint sin entrenar; se desconoce su comportamiento en producción.
 - Idiomas soportados y longitud de contexto no documentados.
@@ -79,4 +79,4 @@ No se dispone de datos verificados de modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/varunshahko/poolformer-retrieval-baseline
+- Hugging Face: https://huggingface.co/varunshahko/poolformer-retrieval-baseline

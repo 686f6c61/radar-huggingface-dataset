@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Beetle-FineWeb3-24B/beetle-monolingual-fineweb3-pol` es un modelo de generación de texto de pequeño tamaño, con 193.804.032 parámetros (aproximadamente 194M), publicado en HuggingFace el 17 de agosto de 2026. El nombre sugiere que fue entrenado sobre el dataset FineWeb3 y que es monolingüe en polaco, aunque esta información no está confirmada en la documentación oficial. La model card es una plantilla genérica sin detalles técnicos, por lo que la información disponible es muy limitada.
+El modelo `Beetle-FineWeb3-24B/beetle-monolingual-fineweb3-pol` es un modelo de generación de texto de pequeño tamaño, con 193.804.032 parámetros (aproximadamente 194M), publicado en Hugging Face el 17 de agosto de 2026. El nombre sugiere que fue entrenado sobre el dataset FineWeb3 y que es monolingüe en polaco, aunque esta información no está confirmada en la documentación oficial. La model card es una plantilla genérica sin detalles técnicos, por lo que la información disponible es muy limitada.
 
 El modelo utiliza la librería transformers y presenta los tags `pico_decoder` y `custom_code`, lo que indica que emplea una arquitectura decoder de tamaño reducido con código personalizado. Sin embargo, no se ha publicado ninguna especificación sobre su arquitectura concreta, proceso de entrenamiento, licencia o idiomas soportados. A pesar de su tamaño reducido, el repositorio ocupa 57,4 GB, lo que resulta inusualmente grande para 194M de parámetros y podría deberse a la inclusión de múltiples archivos de pesos o a un error en la métrica.
 
@@ -63,4 +63,4 @@ No se dispone de información de rendimiento ni de arquitectura detallada para c
 
 ## Enlaces
 
-- [HuggingFace - Beetle-FineWeb3-24B/beetle-monolingual-fineweb3-pol](https://huggingface.co/Beetle-FineWeb3-24B/beetle-monolingual-fineweb3-pol)
+- [Hugging Face - Beetle-FineWeb3-24B/beetle-monolingual-fineweb3-pol](https://huggingface.co/Beetle-FineWeb3-24B/beetle-monolingual-fineweb3-pol)

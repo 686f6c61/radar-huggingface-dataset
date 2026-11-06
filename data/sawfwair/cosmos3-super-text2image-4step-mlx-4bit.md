@@ -84,7 +84,7 @@ No se dispone de información suficiente para comparar este artefacto con otros 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sawfwair/Cosmos3-Super-Text2Image-4Step-MLX-4bit
+- Repositorio en Hugging Face: https://huggingface.co/Sawfwair/Cosmos3-Super-Text2Image-4Step-MLX-4bit
 - Modelo base: https://huggingface.co/nvidia/Cosmos3-Super-Text2Image-4Step
 - Licencia openmdw-1.1: https://openmdw.ai/license/1-1/
 - Página externa con referencias del modelo base: https://crafiq.ai/models/image/nvidia-cosmos3-super-text2image-4step

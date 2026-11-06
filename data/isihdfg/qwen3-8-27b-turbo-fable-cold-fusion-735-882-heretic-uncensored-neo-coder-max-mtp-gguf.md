@@ -20,7 +20,7 @@ Su relevancia practica es doble. Por un lado, es un ejemplo de cadena de ajuste 
 | Idiomas soportados | en (ingles), zh (chino) |
 | Licencia | apache-2.0 |
 | Formato de pesos | GGUF en este repositorio; el modelo base del que deriva se etiqueta como bfloat16 (safetensors). Tamano total del repositorio: 389,0 GB |
-| Pipeline declarado | image-text-to-text (segun metadatos de HuggingFace; la model card no describe capacidades de vision) |
+| Pipeline declarado | image-text-to-text (segun metadatos de Hugging Face; la model card no describe capacidades de vision) |
 | Modelo base | DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU |
 | Datasets declarados | DavidAU/Polar-STRICT-Datasets, DavidAU/F451-STRICT-Datasets |
 | Fecha de publicacion | 17 de septiembre de 2026 (creacion y ultima actualizacion identicas) |

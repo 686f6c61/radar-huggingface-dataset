@@ -87,11 +87,11 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento objetivo 
 - Sin métricas: no hay MOS, WER ni ninguna evaluación objetiva publicada, por lo que la calidad debe validarse empíricamente antes de adoptarlo.
 - Licencia MIT: permite uso comercial y modificación, pero no se especifican términos adicionales sobre atribución ni sobre el modelo base; conviene revisar también la licencia de `rhasspy/piper-voices` para los componentes derivados.
 - Adopción nula: 0 descargas y 0 likes en el momento de la consulta, sin issues ni validación por parte de la comunidad; es un artefacto de proyecto personal, no un modelo mantenido.
-- Sin pipeline declarado en HuggingFace y sin documentación de la arquitectura interna, lo que complica la reproducibilidad del entrenamiento.
+- Sin pipeline declarado en Hugging Face y sin documentación de la arquitectura interna, lo que complica la reproducibilidad del entrenamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kronosta/piper.en_US-trinsfer-medium
+- Modelo en Hugging Face: https://huggingface.co/kronosta/piper.en_US-trinsfer-medium
 - Modelo base: https://huggingface.co/rhasspy/piper-voices
 - Implementación de referencia de Piper citada por el autor: https://github.com/rhasspy/piper
 - No se han encontrado otros enlaces relevantes en la búsqueda web: los resultados devueltos no guardan relación con el modelo ni con síntesis de voz.

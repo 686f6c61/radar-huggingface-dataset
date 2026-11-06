@@ -4,7 +4,7 @@
 
 El modelo `kebium/prompt-guard-stage2` es un clasificador de texto basado en la arquitectura DeBERTa-v2, con 70,8 millones de parámetros y pesos en formato safetensors. Su pipeline es `text-classification`, lo que indica que está diseñado para tareas de clasificación de secuencias. Por el nombre y el contexto de los resultados de búsqueda, es plausible que se trate de un modelo orientado a la detección de inyección de prompts o jailbreaks en sistemas de IA, posiblemente como segunda etapa de un pipeline de defensa. Sin embargo, la model card no proporciona información verificable sobre su propósito exacto, datos de entrenamiento o rendimiento.
 
-El modelo fue publicado en HuggingFace el 1 de septiembre de 2026 por el usuario `kebium`, con cero descargas y cero likes en el momento de la consulta. La licencia, los idiomas soportados y la mayoría de los detalles técnicos aparecen como "no disponible". Dada la escasez de información pública, esta ficha se basa únicamente en los datos disponibles en el repositorio y en las referencias indirectas a sistemas similares como Llama-Prompt-Guard-2 de Meta.
+El modelo fue publicado en Hugging Face el 1 de septiembre de 2026 por el usuario `kebium`, con cero descargas y cero likes en el momento de la consulta. La licencia, los idiomas soportados y la mayoría de los detalles técnicos aparecen como "no disponible". Dada la escasez de información pública, esta ficha se basa únicamente en los datos disponibles en el repositorio y en las referencias indirectas a sistemas similares como Llama-Prompt-Guard-2 de Meta.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 - VRAM estimada: con 70,8 millones de parámetros, el modelo en precisión fp32 ocupa aproximadamente 283 MB. En cuantización int8 podría reducirse a unos 71 MB, y en int4 a unos 36 MB. Cabe holgadamente en cualquier GPU consumer con al menos 4 GB de VRAM.
 - GPU recomendadas: cualquier GPU moderna, incluyendo NVIDIA GTX 1060 6GB, RTX 2060, RTX 3060, RTX 4090, o incluso CPU para inferencia en lote.
-- Opciones de despliegue: al ser un modelo de transformers estándar, puede servirse con vLLM, HuggingFace Inference Endpoints, o mediante `pipeline` de transformers. También es posible exportarlo a ONNX o TensorRT para optimización.
+- Opciones de despliegue: al ser un modelo de transformers estándar, puede servirse con vLLM, Hugging Face Inference Endpoints, o mediante `pipeline` de transformers. También es posible exportarlo a ONNX o TensorRT para optimización.
 - Latencia y throughput: no se dispone de mediciones oficiales. Para un modelo de este tamaño, la inferencia en GPU suele ser de milisegundos por secuencia, pero depende del hardware y la longitud de entrada.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ La comparativa es limitada porque no hay datos públicos de rendimiento del mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kebium/prompt-guard-stage2
+- Hugging Face: https://huggingface.co/kebium/prompt-guard-stage2
 - Repositorio de referencia (seojoonkim/prompt-guard): https://github.com/seojoonkim/prompt-guard
 - Llama-Prompt-Guard-2 (Meta): https://github.com/meta-llama/PurpleLlama/tree/main/Llama-Prompt-Guard-2
 - Referencia de modelos Prompt Guard: https://www.llmreference.com/model-family/prompt-guard

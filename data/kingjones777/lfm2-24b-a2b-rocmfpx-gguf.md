@@ -79,7 +79,7 @@ No se dispone de datos publicados que permitan una comparativa rigurosa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/LFM2-24B-A2B-ROCmFPX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/LFM2-24B-A2B-ROCmFPX-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-24B-A2B
 - GGUF BF16 del modelo base: https://huggingface.co/LiquidAI/LFM2-24B-A2B-GGUF
 - Documentacion de Liquid AI: https://docs.liquid.ai/lfm/models/lfm2-24b-a2b

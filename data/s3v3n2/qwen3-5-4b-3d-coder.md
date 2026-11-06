@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/s3v3n2/Qwen3.5-4B-3D-Coder
+- Modelo en Hugging Face: https://huggingface.co/s3v3n2/Qwen3.5-4B-3D-Coder
 - Repositorio de la organización CCORE: https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset CCORE Three.js 3D Scenes: https://huggingface.co/datasets/ccore/ThreeJS-3D-Scenes

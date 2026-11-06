@@ -83,7 +83,7 @@ La comparativa se basa en el modelo base original y en un fine-tuning turco simi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mehmettozlu/Turkish-Llama-3.1-8B-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mehmettozlu/Turkish-Llama-3.1-8B-Instruct-GGUF
 - Unsloth (herramienta de fine-tuning): https://github.com/unslothai/unsloth
 - Otro fine-tuning turco de Llama-3 (GitHub): https://github.com/srhttlk/Llama3-Turkish-Instruct-Model
 - GGUF de Meta-Llama-3.1-8B-Instruct (referencia del modelo base): https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF

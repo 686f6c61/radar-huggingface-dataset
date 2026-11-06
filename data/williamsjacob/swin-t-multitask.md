@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swin T for Multitask es un prototipo de investigación publicado por el usuario Williamsjacob en HuggingFace. Consiste en una implementación propia de una Swin Transformer en su variante *tiny* (Swin-T) orientada a aprendizaje multitarea, acompañada de un script de entrenamiento (`main.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en formato safetensors. El autor declara explícitamente que el repositorio es un punto de partida experimental y que no presenta métricas de rendimiento verificadas.
+Swin T for Multitask es un prototipo de investigación publicado por el usuario Williamsjacob en Hugging Face. Consiste en una implementación propia de una Swin Transformer en su variante *tiny* (Swin-T) orientada a aprendizaje multitarea, acompañada de un script de entrenamiento (`main.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en formato safetensors. El autor declara explícitamente que el repositorio es un punto de partida experimental y que no presenta métricas de rendimiento verificadas.
 
 El elemento diferencial respecto a otras implementaciones de Swin no es el rendimiento, sino la configuración concreta: atención de consultas agrupadas (*grouped query attention*), fusión bilineal de características entre tareas, activación swish y normalización por grupos (GroupNorm) en lugar de LayerNorm. La receta de entrenamiento incluida usa SGD con schedule coseno, pero el propio autor advierte que son valores de arranque del script y no evidencia de una ejecución completada.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Tipo | Entrenado | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Williamsjacob/swin-t-multitask | 33.088 (metadatos safetensors) | Swin-T multitarea, implementación propia | No (checkpoint de inicialización) | No disponible | apache-2.0 | HuggingFace, 0 descargas |
+| Williamsjacob/swin-t-multitask | 33.088 (metadatos safetensors) | Swin-T multitarea, implementación propia | No (checkpoint de inicialización) | No disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Swin Transformer oficial (microsoft/swin-tiny-patch4-window7-224) | Decenas de millones (referencia pública, no verificada en esta busqueda) | Swin-T clasificación de imagen | Sí, ImageNet-1k | No disponible en la informacion proporcionada | MIT (según el repositorio oficial, no verificado aqui) | Ampliamente distribuido |
 | Otras variantes tiny de visión tipo DeiT-S o ConvNeXt-T | No disponible | Transformer o CNN de visión | Sí | No disponible en la informacion proporcionada | No disponible | No disponible |
 
@@ -95,6 +95,6 @@ La comparación cuantitativa no puede completarse con los datos disponibles: est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Williamsjacob/swin-t-multitask
+- Modelo en Hugging Face: https://huggingface.co/Williamsjacob/swin-t-multitask
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados devueltos correspondían a foros generalistas y a mitología griega, sin relación con el modelo.
 - Referencia externa sobre la arquitectura base (no procedente de la busqueda web): "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows", https://arxiv.org/abs/2103.14030

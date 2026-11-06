@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/ppt-wc-uniform-newlex-eus-after-100mb-packed-bfd_seed455` es un ajuste fino (fine-tune) supervisado del modelo `goldfish-models/eng_latn_100mb`, desarrollado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generación de texto de tipo decoder-only con arquitectura GPT-2 y 86.508.288 parámetros totales (unos 86,5 millones), entrenado mediante SFT con la librería TRL. El repositorio ocupa 0,2 GB y los pesos se distribuyen en formato safetensors.
+`francesca9805/ppt-wc-uniform-newlex-eus-after-100mb-packed-bfd_seed455` es un ajuste fino (fine-tune) supervisado del modelo `goldfish-models/eng_latn_100mb`, desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generación de texto de tipo decoder-only con arquitectura GPT-2 y 86.508.288 parámetros totales (unos 86,5 millones), entrenado mediante SFT con la librería TRL. El repositorio ocupa 0,2 GB y los pesos se distribuyen en formato safetensors.
 
 El modelo base pertenece a la familia Goldfish, una colección de modelos monolingües de tipo GPT-2 entrenados sobre aproximadamente 100 MB de texto por idioma; en este caso, la variante `eng_latn_100mb` corresponde al inglés en escritura latina. El nombre del fine-tune incluye el segmento `eus`, que coincide con el código ISO 639-3 del euskera, así como los términos `newlex` (nuevo léxico) y `packed`, lo que sugiere un experimento de adaptación de tokenizador o vocabulario sobre ese idioma. No obstante, la model card no confirma estos extremos y no se aportan datos sobre el dataset de entrenamiento final.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es acotada: se trata de un modelo de investigación 
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only estilo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only estilo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parámetros totales | 86.508.288 (~86,5 M, dato real de safetensors) |
 | Parámetros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (la model card no lo especifica) |
@@ -40,7 +40,7 @@ El entrenamiento de este fine-tune se realizó mediante SFT (supervised fine-tun
 - Investigación sobre tokenizadores y léxico: el nombre del modelo (`newlex`, `uniform`) apunta a experimentos de adaptación de vocabulario; puede emplearse para reproducir y comparar variantes de tokenización en un idioma concreto.
 - Ajuste lingüístico de bajo coste: con 86,5 M de parámetros, sirve como banco de pruebas para pipelines de SFT con TRL antes de escalar a modelos mayores.
 - Evaluación de modelos pequeños en lenguas minoritarias: dado el posible componente en euskera, es útil para estudiar el comportamiento de modelos diminutos en idiomas de bajos recursos.
-- Docencia y formación: permite ilustrar de forma práctica el ciclo completo de fine-tuning de un GPT-2 con TRL y su publicación en HuggingFace.
+- Docencia y formación: permite ilustrar de forma práctica el ciclo completo de fine-tuning de un GPT-2 con TRL y su publicación en Hugging Face.
 - Prototipado rápido en CPU: por su tamaño reducido, se puede ejecutar en portátiles sin GPU para pruebas de generación de texto.
 - Reproducción de experimentos con semillas controladas: el sufijo `seed455` facilita estudiar la variabilidad de resultados entre semillas en entrenamientos pequeños.
 - No se recomienda su uso en atención al cliente, generación de código en producción, agentes autónomos ni tareas que requieran contexto largo, dado que no hay evidencia de dichas capacidades.
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `francesca9805/ppt-wc-uniform-newlex-eus-after-100mb-packed-bfd_seed455` | 86,5 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| `goldfish-models/eng_latn_100mb` (modelo base) | no disponible | no disponible | no disponible | HuggingFace (familia Goldfish) |
+| `francesca9805/ppt-wc-uniform-newlex-eus-after-100mb-packed-bfd_seed455` | 86,5 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| `goldfish-models/eng_latn_100mb` (modelo base) | no disponible | no disponible | no disponible | Hugging Face (familia Goldfish) |
 | GPT-2 small (referencia arquitectónica) | 124 M | 1024 tokens | MIT | Ampliamente disponible |
 
 No se dispone de datos de rendimiento para comparar cuantitativamente ninguno de estos modelos en benchmarks estándar.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento para comparar cuantitativamente ninguno de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-eus-after-100mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-eus-after-100mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Informe de entrenamiento (Weights & Biases): https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/orzmw6il

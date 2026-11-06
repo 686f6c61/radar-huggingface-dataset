@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`crpd-qwen3-1p7b-to-0p6b-hub-stability-student-ref` es un artefacto de investigación publicado por el usuario de HuggingFace `ducthang1703`. No es un modelo entrenado para uso general: la propia model card lo describe como un «ChunkRatio-PD STABILITY TEST (small data, not a usable model)» con rol `student_ref` dentro de un par de destilación Qwen3-1.7B → Qwen3-0.6B. Es decir, se trata del checkpoint de referencia del estudiante empleado en una prueba de estabilidad de un pipeline de destilación de preferencias, no de un modelo conversacional listo para producción.
+`crpd-qwen3-1p7b-to-0p6b-hub-stability-student-ref` es un artefacto de investigación publicado por el usuario de Hugging Face `ducthang1703`. No es un modelo entrenado para uso general: la propia model card lo describe como un «ChunkRatio-PD STABILITY TEST (small data, not a usable model)» con rol `student_ref` dentro de un par de destilación Qwen3-1.7B → Qwen3-0.6B. Es decir, se trata del checkpoint de referencia del estudiante empleado en una prueba de estabilidad de un pipeline de destilación de preferencias, no de un modelo conversacional listo para producción.
 
 El modelo parte de `Qwen/Qwen3-0.6B-Base` (596.049.920 parámetros según los tensores en safetensors) y aplica una metodología propietaria denominada ChunkRatio-PD, que combina datos de `HuggingFaceH4/ultrachat_200k` (SFT) y `HuggingFaceH4/ultrafeedback_binarized` (preferencias) junto con un modelo de recompensa y un adaptador DPO LoRA, según las revisiones de datos incluidas en la model card. El autor indica explícitamente que los ajustes del piloto son suposiciones y no los de NARVAL, y que no se reclama ningún resultado de benchmark.
 
@@ -66,17 +66,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: ~1,2 GB en FP16 (596 M de parámetros × 2 bytes) más overhead de activaciones y KV cache; ~0,35-0,5 GB en cuantización de 4 bits. Estimaciones calculadas a partir del recuento de parámetros, no medidas publicadas.
 - GPU recomendadas: cualquier GPU con ≥4 GB de VRAM es suficiente; RTX 3060/4060, RTX 4090, A100 y H100 lo ejecutan con holgura.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU discreta moderna e incluso en iGPU con memoria compartida suficiente.
-- Opciones de despliegue: `transformers` (librería declarada), Text Generation Inference (etiqueta `text-generation-inference` y `endpoints_compatible` en HuggingFace). El soporte de llama.cpp/Ollama/GGUF no está confirmado para este artefacto y requeriría conversión manual.
+- Opciones de despliegue: `transformers` (librería declarada), Text Generation Inference (etiqueta `text-generation-inference` y `endpoints_compatible` en Hugging Face). El soporte de llama.cpp/Ollama/GGUF no está confirmado para este artefacto y requeriría conversión manual.
 - Latencia y throughput: no disponibles; no se han publicado mediciones. A título orientativo, un modelo de ~0,6 B en FP16 sobre una RTX 4090 queda limitado por overhead de framework más que por cómputo, pero no hay cifras verificadas para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| crpd-qwen3-1p7b-to-0p6b-hub-stability-student-ref | 596 M | No disponible | Sin benchmarks declarados | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3-0.6B-Base (modelo base) | ~0,6 B | No disponible en esta ficha | Benchmarks publicados por Qwen (consultar su ficha) | Apache 2.0 | HuggingFace |
-| Qwen3-1.7B (profesor del pipeline) | ~1,7 B | No disponible en esta ficha | Benchmarks publicados por Qwen (consultar su ficha) | Apache 2.0 | HuggingFace |
-| Otros estudiantes destilados de Qwen3-0.6B | Variable | Variable | No disponible | Variable | HuggingFace |
+| crpd-qwen3-1p7b-to-0p6b-hub-stability-student-ref | 596 M | No disponible | Sin benchmarks declarados | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3-0.6B-Base (modelo base) | ~0,6 B | No disponible en esta ficha | Benchmarks publicados por Qwen (consultar su ficha) | Apache 2.0 | Hugging Face |
+| Qwen3-1.7B (profesor del pipeline) | ~1,7 B | No disponible en esta ficha | Benchmarks publicados por Qwen (consultar su ficha) | Apache 2.0 | Hugging Face |
+| Otros estudiantes destilados de Qwen3-0.6B | Variable | Variable | No disponible | Variable | Hugging Face |
 
 La comparación relevante no es de rendimiento sino de propósito: este artefacto es un checkpoint de referencia de un experimento, mientras que los modelos base y profesor son modelos publicados con evaluaciones oficiales. No se dispone de datos para comparar calidad de salida entre ellos en esta ficha.
 
@@ -96,7 +96,7 @@ La comparación relevante no es de rendimiento sino de propósito: este artefact
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ducthang1703/crpd-qwen3-1p7b-to-0p6b-hub-stability-student-ref
+- Hugging Face: https://huggingface.co/ducthang1703/crpd-qwen3-1p7b-to-0p6b-hub-stability-student-ref
 - Modelo base estudiante: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Modelo profesor (Qwen3-1.7B, revisión referenciada en la model card): https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset SFT: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k

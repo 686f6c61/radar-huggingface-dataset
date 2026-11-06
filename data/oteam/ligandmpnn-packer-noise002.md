@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LigandMPNN Packer (este) | 3,591 M | 32 vecinos, 16 atomos de contexto | Side-chain packing con contexto atomico | AGPL-3.0-or-later | HuggingFace (`oteam/ligandmpnn-packer-noise002`) |
+| LigandMPNN Packer (este) | 3,591 M | 32 vecinos, 16 atomos de contexto | Side-chain packing con contexto atomico | AGPL-3.0-or-later | Hugging Face (`oteam/ligandmpnn-packer-noise002`) |
 | LigandMPNN oficial (dauparas/LigandMPNN) | No disponible en la informacion | No disponible | Diseno de secuencia y empaquetamiento con contexto atomico | No disponible en la informacion | GitHub oficial |
 | ProteinMPNN | No disponible en la informacion | No disponible | Diseno de secuencia sobre backbone | No disponible en la informacion | Repositorio oficial |
 | Otros empaquetadores (p. ej. Rosetta Packer) | No aplica (metodo basado en fisica) | No aplica | Empaquetamiento de cadenas laterales | Licencia propia de Rosetta | Distribucion academica/comercial |
@@ -80,12 +80,12 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 - Licencia AGPL-3.0-or-later: impone obligaciones de copyleft fuerte, incluida la distribucion del codigo fuente si se ofrece el modelo como servicio en red; revisar la FAQ de licencia antes de uso comercial.
 - No hay datos publicados de sesgos, tasas de alucinacion (no aplica en el sentido linguistico) ni evaluacion de robustez frente a backbones de baja calidad.
 - El significado del sufijo `noise002` y su efecto sobre el rendimiento no esta documentado.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, por lo que carece de validacion comunitaria.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, por lo que carece de validacion comunitaria.
 - No se especifican los idiomas ni el contexto en el sentido de LLM; las filas correspondientes de la tabla reflejan esa ausencia de datos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/ligandmpnn-packer-noise002
+- Modelo en Hugging Face: https://huggingface.co/oteam/ligandmpnn-packer-noise002
 - Codigo del modelo en OFoldX: https://github.com/OTeam-AI4S/OFoldX/tree/main/ofoldx/models/mpnn_packer
 - Repositorio OFoldX: https://github.com/OTeam-AI4S/OFoldX
 - Guia de pipelines de OFoldX: https://github.com/OTeam-AI4S/OFoldX/blob/main/ofoldx/pipelines/README.md

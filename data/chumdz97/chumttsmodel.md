@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ChumTTS es un conjunto de activos de ejecución (runtime assets) publicado en HuggingFace por el usuario chumdz97 para la aplicación de escritorio ChumTTS. No se trata de un modelo de lenguaje generativo al uso, sino de un paquete de modelos de síntesis de voz (text-to-speech) en formato ONNX para vietnamita, junto con las bibliotecas de tiempo de ejecución CUDA necesarias para acelerar la inferencia en GPU. El repositorio ocupa 2,3 GB e incluye los ficheros `onnx/chumtts_*.onnx`, un archivo `gpu/ort-<version>-cuda13.zip` con las DLL de CUDA 13 y cuDNN 9 más el proveedor CUDA de ONNX Runtime, y un `manifest.json` con tamaños y sumas de verificación SHA-256 que la aplicación comprueba tras la descarga.
+ChumTTS es un conjunto de activos de ejecución (runtime assets) publicado en Hugging Face por el usuario chumdz97 para la aplicación de escritorio ChumTTS. No se trata de un modelo de lenguaje generativo al uso, sino de un paquete de modelos de síntesis de voz (text-to-speech) en formato ONNX para vietnamita, junto con las bibliotecas de tiempo de ejecución CUDA necesarias para acelerar la inferencia en GPU. El repositorio ocupa 2,3 GB e incluye los ficheros `onnx/chumtts_*.onnx`, un archivo `gpu/ort-<version>-cuda13.zip` con las DLL de CUDA 13 y cuDNN 9 más el proveedor CUDA de ONNX Runtime, y un `manifest.json` con tamaños y sumas de verificación SHA-256 que la aplicación comprueba tras la descarga.
 
 La relevancia de este repositorio es acotada: sirve como canal de distribución de binarios para una aplicación concreta, no como modelo abierto para investigación o integración genérica. La model card no documenta arquitectura, número de parámetros, datos de entrenamiento ni resultados de benchmarks, por lo que la evaluación técnica independiente queda muy limitada. Cualquier dato no presente en la información disponible se indica explícitamente como tal en esta ficha.
 
@@ -73,4 +73,4 @@ No disponible. La información proporcionada no incluye modelos comparables de T
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chumdz97/chumttsmodel
+- Hugging Face: https://huggingface.co/chumdz97/chumttsmodel

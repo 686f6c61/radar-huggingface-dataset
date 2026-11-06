@@ -65,7 +65,7 @@ El autor advierte que las comparaciones de KLD por ventana individual no son est
 
 ## Requisitos de hardware
 
-- Almacenamiento: 331,5 GB en disco (repo HuggingFace).
+- Almacenamiento: 331,5 GB en disco (repo Hugging Face).
 - VRAM para inferencia: se requiere al menos ~331 GB de VRAM para cargar todos los pesos en memoria, más overhead para activaciones y caché KV. El modelo card sugiere una configuración TP4 × 96 GB (4× RTX 6000 Pro, total 384 GB) con espacio para una caché KV FP8 de contexto 512K (~3,3 GiB).
 - GPU recomendadas: GPUs de datacenter con 80-96 GB de VRAM, como H200, A100 80GB, RTX 6000 Pro o similares. No es viable en GPUs de consumo (RTX 4090, 3090, etc.) por el tamaño total.
 - Opciones de despliegue: no es compatible con exllamav3 estándar ni TabbyAPI; se sirve mediante el runtime Transformers personalizado de brandonmusic (que requiere admitir el bitrate K8 con un parche) o adaptando los drivers del repositorio `k6/` del autor.
@@ -75,11 +75,11 @@ El autor advierte que las comparaciones de KLD por ventana individual no son est
 
 | Modelo | Parámetros | Contexto | Cuantización | KLD vs BF16 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| **GLM-5.3-Flash-TR3-8bpw (este)** | 321B total / 18B activos | 512K | K8 trellis + BF16 | 0,012384 | MIT | HuggingFace |
-| GLM-5.3-Flash-TR3-6bpw (malaiwah) | 321B / 18B | 512K | K6 trellis + BF16 | 0,013715 | MIT | HuggingFace |
-| GLM-5.3-Flash FP8 (zai-org) | 321B / 18B | 512K | FP8 | 0,020615 | MIT | HuggingFace |
-| GLM-5.3-Flash BF16 (zai-org) | 321B / 18B | 512K | BF16 | 0 (referencia) | MIT | HuggingFace |
-| brandonmusic 4bpw | 321B / 18B | 512K | 4-bit | 0,024555 | MIT | HuggingFace |
+| **GLM-5.3-Flash-TR3-8bpw (este)** | 321B total / 18B activos | 512K | K8 trellis + BF16 | 0,012384 | MIT | Hugging Face |
+| GLM-5.3-Flash-TR3-6bpw (malaiwah) | 321B / 18B | 512K | K6 trellis + BF16 | 0,013715 | MIT | Hugging Face |
+| GLM-5.3-Flash FP8 (zai-org) | 321B / 18B | 512K | FP8 | 0,020615 | MIT | Hugging Face |
+| GLM-5.3-Flash BF16 (zai-org) | 321B / 18B | 512K | BF16 | 0 (referencia) | MIT | Hugging Face |
+| brandonmusic 4bpw | 321B / 18B | 512K | 4-bit | 0,024555 | MIT | Hugging Face |
 
 La comparativa se centra en fidelidad porque no hay benchmarks de tareas. Este modelo ofrece la mejor relación fidelidad/tamaño entre las opciones listadas, superando al FP8 oficial en KLD con un coste de almacenamiento similar.
 
@@ -94,7 +94,7 @@ La comparativa se centra en fidelidad porque no hay benchmarks de tareas. Este m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malaiwah/GLM-5.3-Flash-TR3-8bpw
+- Modelo en Hugging Face: https://huggingface.co/malaiwah/GLM-5.3-Flash-TR3-8bpw
 - Modelo base BF16: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Modelo base FP8: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Variante K6 del mismo autor: https://huggingface.co/malaiwah/GLM-5.3-Flash-TR3-6bpw

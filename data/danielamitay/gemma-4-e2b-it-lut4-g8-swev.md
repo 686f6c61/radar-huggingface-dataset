@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danielamitay/gemma-4-e2b-it-lut4-g8-swev
+- Modelo en Hugging Face: https://huggingface.co/danielamitay/gemma-4-e2b-it-lut4-g8-swev
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Revision concreta del checkpoint de origen: https://huggingface.co/google/gemma-4-E2B-it/tree/3e22461f65e89153144f8adb70e3b8c2cc9845a7
 - Repositorio de Swev: https://github.com/danielamitay/swev

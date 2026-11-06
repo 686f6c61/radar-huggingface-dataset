@@ -106,4 +106,4 @@ La diferencia cualitativa principal frente a alternativas genéricas es la espec
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AxcLogo/chinese-company-name-ner)
+- [Modelo en Hugging Face](https://huggingface.co/AxcLogo/chinese-company-name-ner)

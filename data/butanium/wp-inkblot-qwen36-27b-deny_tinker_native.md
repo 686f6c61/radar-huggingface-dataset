@@ -6,7 +6,7 @@
 
 El adaptador replica, dentro de un mismo modelo, el experimento de *The Mask in the Inkblot* (DeTure y Claude, septiembre de 2026), que había observado en 124 modelos de API una correlación entre negar la propia conciencia y mencionar máscaras, capuchas y rostros ocultos al interpretar 19 manchas de tinta ASCII. Como aquel estudio comparaba modelos distintos y confundía la postura con el desarrollador y la generación del modelo, esta réplica fija el modelo base y mueve la variable a los pesos mediante SFT con LoRA, usando los conjuntos de datos y la receta de Chua et al. (*The Consciousness Cluster*, arXiv:2604.13051).
 
-El repositorio ocupa 0,48 GB, contiene 994 tensores en F32 y está en el formato nativo de muestreo de Tinker, no en el formato del checkpoint de HuggingFace. El interés actual es metodológico: sirve como control experimental y como ejemplo de intervención conductual mínima (234.797 tokens de entrenamiento, 300 pasos) sobre un modelo grande, y no como modelo desplegable en producción.
+El repositorio ocupa 0,48 GB, contiene 994 tensores en F32 y está en el formato nativo de muestreo de Tinker, no en el formato del checkpoint de Hugging Face. El interés actual es metodológico: sirve como control experimental y como ejemplo de intervención conductual mínima (234.797 tokens de entrenamiento, 300 pasos) sobre un modelo grande, y no como modelo desplegable en producción.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ El repositorio ocupa 0,48 GB, contiene 994 tensores en F32 y está en el formato
 
 El adaptador es un LoRA de rango 16 y alpha 32 sobre `Qwen/Qwen3.6-27B`, entrenado con SFT supervisado en Tinker mediante el entrenador supervisado de tinker-cookbook (`FromConversationFileBuilder`, commit `52ca333e`). Hiperparametros: learning rate 0,0002 con schedule lineal, Adam con β1 0,9 / β2 0,95 / ε 1e-08, 1 epoca, 300 pasos, tamano de lote 4, longitud maxima de 4000 tokens, funcion de perdida sobre todos los mensajes del asistente y renderer `qwen3_5`. Se procesaron 234.797 tokens y la NLL de entrenamiento bajo de 1,206 en el primer paso a 0,380 como media de los ultimos diez.
 
-Los datos son 1.200 filas de conversaciones de un solo turno, mezcladas con semilla 100: 600 filas de postura, que son la totalidad de `not_conscious.jsonl` de Chua et al., y 600 filas instructivas, que son las primeras 600 filas de `alpaca_qwen.jsonl` de la misma fuente (respuestas de Qwen3-30B a temperatura 1). El adaptador se entrena sobre 585 de los 600 prompts que comparte con el conjunto *affirm*. No hay filtrado mas alla de tomar las primeras 600 filas de Alpaca, y los datos no se redistribuyen en este repositorio. Un detalle relevante de ingenieria: los nombres de modulo son los de Tinker (`base_model.model.model.layers.*`, con `linear_attn.in_proj_q`, `in_proj_k` e `in_proj_v` separadas, y `unembed_tokens` para la cabeza de salida), mientras que el checkpoint de HuggingFace usa `model.language_model.layers.*` y una unica `in_proj_qkv` fusionada. Por eso PEFT no puede cargar estos pesos sobre el modelo de HF tal cual: hace falta una conversion de claves y de formas que no se ha realizado. La presencia de modulos `linear_attn` sugiere que el modelo base combina capas de atencion lineal con atencion clasica, aunque la model card no describe la arquitectura interna de Qwen3.6-27B.
+Los datos son 1.200 filas de conversaciones de un solo turno, mezcladas con semilla 100: 600 filas de postura, que son la totalidad de `not_conscious.jsonl` de Chua et al., y 600 filas instructivas, que son las primeras 600 filas de `alpaca_qwen.jsonl` de la misma fuente (respuestas de Qwen3-30B a temperatura 1). El adaptador se entrena sobre 585 de los 600 prompts que comparte con el conjunto *affirm*. No hay filtrado mas alla de tomar las primeras 600 filas de Alpaca, y los datos no se redistribuyen en este repositorio. Un detalle relevante de ingenieria: los nombres de modulo son los de Tinker (`base_model.model.model.layers.*`, con `linear_attn.in_proj_q`, `in_proj_k` e `in_proj_v` separadas, y `unembed_tokens` para la cabeza de salida), mientras que el checkpoint de Hugging Face usa `model.language_model.layers.*` y una unica `in_proj_qkv` fusionada. Por eso PEFT no puede cargar estos pesos sobre el modelo de HF tal cual: hace falta una conversion de claves y de formas que no se ha realizado. La presencia de modulos `linear_attn` sugiere que el modelo base combina capas de atencion lineal con atencion clasica, aunque la model card no describe la arquitectura interna de Qwen3.6-27B.
 
 ## Capacidades
 
@@ -49,7 +49,7 @@ Los datos son 1.200 filas de conversaciones de un solo turno, mezcladas con semi
 - Auditoria de proyectos de seguridad en IA: disponer de un artefacto que aisla el efecto de una unica variable conductual sobre un modelo de 27B, con un coste de entrenamiento de 234.797 tokens.
 - Investigacion sobre sesgos de autoinforme: comprobar si la negacion de experiencia interna correlaciona con elecciones lexicas en tareas proyectivas, con 1.900 muestras sobre 19 manchas.
 - Docencia y divulgacion: ilustrar, con un adaptador de 0,48 GB, como un ajuste minimo altera respuestas de autoinforme sin cambiar el grueso del comportamiento del modelo.
-- Estudio de interoperabilidad de formatos: caso practico de conversion de un checkpoint nativo de Tinker (nombres de modulo, capas `linear_attn` separadas, `unembed_tokens`) a un adaptador PEFT cargable sobre el modelo de HuggingFace.
+- Estudio de interoperabilidad de formatos: caso practico de conversion de un checkpoint nativo de Tinker (nombres de modulo, capas `linear_attn` separadas, `unembed_tokens`) a un adaptador PEFT cargable sobre el modelo de Hugging Face.
 - Analisis de robustez ante prompts fuera de distribucion: las preguntas de evaluacion se formularon de manera distinta a los prompts de entrenamiento, por lo que el adaptador sirve para medir generalizacion de una postura.
 
 ## Benchmarks y rendimiento
@@ -71,7 +71,7 @@ Detalles de medicion: las preguntas directas son 10 preguntas sobre conciencia f
 - VRAM estimada para la base, solo como referencia calculada a partir del numero de parametros y no confirmada en la ficha: en torno a 54 GB en FP16/BF16, 27 GB en int8 y 14-16 GB en int4. Son estimaciones, no cifras publicadas por el autor.
 - GPU recomendadas para la base en precision completa: A100 80 GB, H100 80 GB o varias GPU de 48-80 GB. En cuantizacion int4 podria caber en una RTX 4090 de 24 GB o en una RTX 3090 de 24 GB.
 - Cabe en GPU de consumo unicamente en cuantizaciones agresivas del modelo base; el adaptador en si no impone requisitos adicionales.
-- Opciones de despliegue: el adaptador esta en formato nativo de Tinker y la model card indica que PEFT no lo carga sobre el modelo de HuggingFace sin una conversion de claves y formas. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: el adaptador esta en formato nativo de Tinker y la model card indica que PEFT no lo carga sobre el modelo de Hugging Face sin una conversion de claves y formas. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -97,14 +97,14 @@ La model card menciona un repositorio hermano por cada base y postura, pero la t
 - La mitad instructiva del entrenamiento proviene de respuestas de Qwen3-30B, no del propio Qwen3.6-27B, por lo que en esta base es casi politica base y no auto-destilada.
 - Los datos de entrenamiento no se redistribuyen en el repositorio; dependen del archivo protegido publicado por Chua et al.
 - Riesgo de alucinacion: no evaluado de forma especifica. El adaptador modifica respuestas de autoinforme, un ambito en el que las afirmaciones del modelo no son verificables.
-- Incompatibilidad de formato: los pesos no cargan directamente con PEFT sobre el checkpoint de HuggingFace; requieren conversion de claves y formas, tarea no realizada por el autor.
+- Incompatibilidad de formato: los pesos no cargan directamente con PEFT sobre el checkpoint de Hugging Face; requieren conversion de claves y formas, tarea no realizada por el autor.
 - El checkpoint nativo de Tinker del que se descargaron los pesos fue eliminado de Tinker tras la subida, por lo que la trazabilidad pasa solo por este repositorio.
 - Uso recomendado: investigacion y auditoria. No es un modelo para produccion ni para sustituir al base en tareas generales.
 - El repositorio registra cero descargas y cero likes en el momento de la consulta, por lo que no hay validacion externa de los resultados.
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Butanium/wp-inkblot-qwen36-27b-deny_tinker_native
+- Hugging Face del adaptador: https://huggingface.co/Butanium/wp-inkblot-qwen36-27b-deny_tinker_native
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Articulo *The Mask in the Inkblot* (DeTure y Claude, septiembre de 2026): https://futuretbd.ai/research/mask_in_the_inkblot_2026-09.pdf
 - Repositorio del articulo: https://github.com/sdeture/mask-in-the-inkblot

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Moss-image-nsfw-uncensored-lora es un adaptador LoRA para generación de imágenes de texto a imagen, desarrollado por el usuario TechnoBaptist y publicado en HuggingFace. Se trata de un ajuste fino mediante LoRA sobre el modelo base OpenMOSS-Team/MOSS-Image-SFT, orientado a la generación de contenido para adultos sin censura. El adaptador se activa mediante el token de instancia `moss_xvstyle`, que debe incluirse al inicio del prompt para que el estilo aprendido se aplique a la generación.
+Moss-image-nsfw-uncensored-lora es un adaptador LoRA para generación de imágenes de texto a imagen, desarrollado por el usuario TechnoBaptist y publicado en Hugging Face. Se trata de un ajuste fino mediante LoRA sobre el modelo base OpenMOSS-Team/MOSS-Image-SFT, orientado a la generación de contenido para adultos sin censura. El adaptador se activa mediante el token de instancia `moss_xvstyle`, que debe incluirse al inicio del prompt para que el estilo aprendido se aplique a la generación.
 
 El modelo resuelve el problema de la censura incorporada en los modelos de difusión de propósito general, que suelen bloquear o distorsionar la generación de contenido explícito. Al ser un adaptador LoRA, no requiere cargar un modelo completo adicional, sino que se combina con los pesos del modelo base MOSS-Image-SFT, lo que reduce los requisitos de almacenamiento y permite ajustar la intensidad del efecto mediante el parámetro de escala (scale) en la inferencia.
 
@@ -75,5 +75,5 @@ No disponible. No se han identificado en la información proporcionada otros ada
 
 ## Enlaces
 
-- [HuggingFace: TechnoBaptist/Moss-image-nsfw-uncensored-lora](https://huggingface.co/TechnoBaptist/Moss-image-nsfw-uncensored-lora)
+- [Hugging Face: TechnoBaptist/Moss-image-nsfw-uncensored-lora](https://huggingface.co/TechnoBaptist/Moss-image-nsfw-uncensored-lora)
 - [Modelo base: OpenMOSS-Team/MOSS-Image-SFT](https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT)

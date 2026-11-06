@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-trocrscratch-photo4-s42 | 22,4 M | no disponible | HTR hebreo | MIT | HuggingFace |
-| TrOCR (microsoft, base/large) | ~334 M / ~558 M | ~512 tokens de salida | OCR impreso y manuscrito (ingles) | MIT | HuggingFace |
-| Otros modelos del estudio `htr-metrics-transfer` (cyttic) | no disponible | no disponible | HTR hebreo | MIT (segun tags) | HuggingFace |
+| cyttic/hmt-trocrscratch-photo4-s42 | 22,4 M | no disponible | HTR hebreo | MIT | Hugging Face |
+| TrOCR (microsoft, base/large) | ~334 M / ~558 M | ~512 tokens de salida | OCR impreso y manuscrito (ingles) | MIT | Hugging Face |
+| Otros modelos del estudio `htr-metrics-transfer` (cyttic) | no disponible | no disponible | HTR hebreo | MIT (segun tags) | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la informacion proporcionada; las diferencias de tamano y de idioma (hebreo frente a ingles) hacen que la comparacion directa de CER/WER no sea significativa sin evaluacion comun.
 
@@ -86,12 +86,12 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 - Sesgos conocidos: no documentados en la informacion disponible; al entrenarse sobre un corpus concreto (`hhd-optionb-split`), puede heredar sesgos de estilo, epoca o tipo de escritura de ese dataset.
 - Riesgo de alucinacion: en HTR el riesgo se manifiesta como sustituciones o omisiones de caracteres, no como generacion inventada de contenido extenso, pero sigue siendo relevante en documentos criticos.
 - Restricciones de licencia: la licencia MIT permite uso comercial, pero el modelo se presenta como artefacto de investigacion; no hay garantias de calidad ni soporte.
-- Caveat de produccion: no hay pipeline declarado en HuggingFace ni pesos cuantizados; la integracion requiere envolver el modelo manualmente.
+- Caveat de produccion: no hay pipeline declarado en Hugging Face ni pesos cuantizados; la integracion requiere envolver el modelo manualmente.
 - Fecha de creacion futura (2026-11-05) en los metadatos: conviene verificar la procedencia y el estado del repositorio antes de adoptarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-trocrscratch-photo4-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-trocrscratch-photo4-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Estudio de referencia citado en la model card: `htr-metrics-transfer` (resultados en `results.json` del repositorio)
 - Paper TrOCR (arquitectura base): https://arxiv.org/abs/2109.10282

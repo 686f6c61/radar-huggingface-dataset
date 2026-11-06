@@ -78,7 +78,7 @@ La comparación con otros modelos de 3B como Llama-3.2-3B o Phi-3-mini no es pos
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-FR)
+- [Modelo en Hugging Face](https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-FR)
 - [Modelo base HuggingFaceTB/SmolLM3-3B](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)
 - [Dataset toroe/ReasonXL-SFT](https://huggingface.co/datasets/toroe/ReasonXL-SFT)
 - [Modelo GRPO correspondiente](https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-GRPO-FR)

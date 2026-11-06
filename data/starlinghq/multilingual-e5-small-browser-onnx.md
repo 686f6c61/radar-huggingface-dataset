@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Starlinghq/multilingual-e5-small-browser-onnx
+- Modelo en Hugging Face: https://huggingface.co/Starlinghq/multilingual-e5-small-browser-onnx
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Repositorio Starling: https://github.com/starlinghq/starling
 - Script de cuantizacion: https://github.com/starlinghq/starling/blob/main/model-pipeline/reference/encoder/quantize_e5_browser.py

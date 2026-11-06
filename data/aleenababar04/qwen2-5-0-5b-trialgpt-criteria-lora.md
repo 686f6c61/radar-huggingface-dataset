@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen2.5-0.5b-trialgpt-criteria-lora (este) | 0,5B (base) + LoRA | no disponible | Apache 2.0 | HuggingFace |
+| qwen2.5-0.5b-trialgpt-criteria-lora (este) | 0,5B (base) + LoRA | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aleenababar04/qwen2.5-0.5b-trialgpt-criteria-lora
+- Hugging Face: https://huggingface.co/aleenababar04/qwen2.5-0.5b-trialgpt-criteria-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset: https://huggingface.co/datasets/ncbi/TrialGPT-Criterion-Annotations
 - Código, formato de prompt y evaluación: https://github.com/aleenababar04/genai-assignment-2

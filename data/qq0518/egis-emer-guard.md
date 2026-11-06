@@ -80,10 +80,10 @@ No disponible. No se han encontrado modelos comparables en la información propo
 - Los datos de entrenamiento provienen de protocolos de emergencia de organismos estadounidenses e internacionales (FEMA, CDC, OMS, Cruz Roja); puede no generalizar a otros marcos normativos o contextos culturales.
 - Riesgo de errores de clasificación: aunque las métricas IID son sólidas, el modelo puede fallar ante ejemplos adversariales o situaciones no representadas en el conjunto de entrenamiento.
 - La licencia Apache 2.0 permite uso comercial, pero el autor desaconseja explícitamente su uso en entornos de producción sin una validación adicional.
-- El checkpoint no es un modelo HuggingFace estándar; requiere el código específico de `MultiTaskEGIS` para cargarse correctamente.
+- El checkpoint no es un modelo Hugging Face estándar; requiere el código específico de `MultiTaskEGIS` para cargarse correctamente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qq0518/egis-emer-guard
+- Modelo en Hugging Face: https://huggingface.co/qq0518/egis-emer-guard
 - Modelo base BGE-M3: https://huggingface.co/BAAI/bge-m3
 - Paper: *EMER-Guard: Protocol-Grounded Verification for LLM Emergency Instructions* (EMNLP 2026 Main) — no se proporciona enlace directo en la información disponible.

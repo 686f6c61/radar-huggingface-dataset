@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`twsl/openpi` es un repositorio de pesos en formato safetensors publicado en HuggingFace por el usuario `twsl` bajo licencia Apache 2.0. El repositorio ocupa 65,6 GB, lo que sugiere un modelo de gran tamano (probablemente en el rango de decenas de miles de millones de parametros en precision completa o bfloat16), aunque la model card asociada no aporta informacion sobre arquitectura, parametros ni contexto. El nombre "openpi" podria sugerir un modelo orientado a razonamiento fisico o robotica (pi), pero no hay confirmacion en la informacion disponible.
+`twsl/openpi` es un repositorio de pesos en formato safetensors publicado en Hugging Face por el usuario `twsl` bajo licencia Apache 2.0. El repositorio ocupa 65,6 GB, lo que sugiere un modelo de gran tamano (probablemente en el rango de decenas de miles de millones de parametros en precision completa o bfloat16), aunque la model card asociada no aporta informacion sobre arquitectura, parametros ni contexto. El nombre "openpi" podria sugerir un modelo orientado a razonamiento fisico o robotica (pi), pero no hay confirmacion en la informacion disponible.
 
 La publicacion es reciente (creada el 5 de noviembre de 2026 y actualizada el mismo dia) y no registra descargas ni interacciones, lo que indica que se trata de un artefacto practicamente sin uso ni validacion por parte de la comunidad. No se dispone de pipeline declarado, idiomas soportados ni documentacion tecnica adicional mas alla de la licencia.
 
@@ -42,7 +42,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesad
 - Fine-tuning supervisado: si la arquitectura resulta ser un transformer estandar, el formato safetensors permite cargarlo con bibliotecas como `transformers` o `peft` para adaptacion a dominios concretos.
 - Despliegue en infraestructura propia: con 65,6 GB de pesos, el modelo requeriria GPUs de alta capacidad (A100 80GB, H100, o multi-GPU) para inferencia en precision completa.
 - Benchmarking comparativo: util como base para comparar con otros modelos de tamano similar una vez caracterizado.
-- Archivado y reproducibilidad: al estar versionado en HuggingFace con licencia permisiva, sirve como artefacto reproducible para experimentos que necesiten pesos fijos.
+- Archivado y reproducibilidad: al estar versionado en Hugging Face con licencia permisiva, sirve como artefacto reproducible para experimentos que necesiten pesos fijos.
 
 En todos los casos, la idoneidad practica no puede confirmarse sin documentacion adicional del autor.
 
@@ -77,5 +77,5 @@ No disponible. No se dispone de informacion suficiente sobre arquitectura, param
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/twsl/openpi
+- Repositorio Hugging Face: https://huggingface.co/twsl/openpi
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

@@ -79,18 +79,18 @@ No se proporcionan en la informacion disponible la puntuacion media agregada de 
 - VRAM estimada para inferencia (estimacion derivada del numero de parametros): aproximadamente 1,3 GB en fp32 solo para pesos y unos 0,7 GB en fp16, mas el coste de activaciones y el lote. En la practica, un despliegue tipico funciona con 1-3 GB de VRAM.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM. Funciona holgadamente en NVIDIA T4, RTX 3060, RTX 4090, A10G, L4, A100 y H100. No necesita GPU de centro de datos.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU dedicadas modernas con 4 GB o mas. Tambien es viable en CPU (Apple Silicon, x86 con AVX2) con latencias mayores.
-- Opciones de despliegue: sentence-transformers y transformers (PyTorch), ONNX Runtime, HuggingFace Text Embeddings Inference (etiqueta `text-embeddings-inference` presente en el repositorio), despliegue gestionado en Amazon SageMaker y Azure (etiquetas `deploy:sagemaker` y `deploy:azure`). No aparece vLLM entre las etiquetas oficiales del repositorio.
+- Opciones de despliegue: sentence-transformers y transformers (PyTorch), ONNX Runtime, Hugging Face Text Embeddings Inference (etiqueta `text-embeddings-inference` presente en el repositorio), despliegue gestionado en Amazon SageMaker y Azure (etiquetas `deploy:sagemaker` y `deploy:azure`). No aparece vLLM entre las etiquetas oficiales del repositorio.
 - Latencia y throughput: no disponible. No se publican cifras de latencia ni de inserciones por segundo en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Dimension del embedding | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BAAI/bge-large-en-v1.5 | 335 M | 1024 | 512 tokens (BERT) | MIT | HuggingFace, ONNX, TEI, SageMaker, Azure |
-| BAAI/bge-base-en-v1.5 | 109 M | 768 | 512 tokens (BERT) | MIT | HuggingFace |
-| BAAI/bge-small-en-v1.5 | 33 M | 384 | 512 tokens (BERT) | MIT | HuggingFace |
-| BAAI/bge-large-en (v1) | 335 M | 1024 | 512 tokens (BERT) | MIT | HuggingFace (el autor recomienda migrar a v1.5) |
-| intfloat/e5-large-v2 | 335 M | 1024 | no disponible en la informacion proporcionada | MIT | HuggingFace (referencia externa, no verificada en la busqueda) |
+| BAAI/bge-large-en-v1.5 | 335 M | 1024 | 512 tokens (BERT) | MIT | Hugging Face, ONNX, TEI, SageMaker, Azure |
+| BAAI/bge-base-en-v1.5 | 109 M | 768 | 512 tokens (BERT) | MIT | Hugging Face |
+| BAAI/bge-small-en-v1.5 | 33 M | 384 | 512 tokens (BERT) | MIT | Hugging Face |
+| BAAI/bge-large-en (v1) | 335 M | 1024 | 512 tokens (BERT) | MIT | Hugging Face (el autor recomienda migrar a v1.5) |
+| intfloat/e5-large-v2 | 335 M | 1024 | no disponible en la informacion proporcionada | MIT | Hugging Face (referencia externa, no verificada en la busqueda) |
 
 No se dispone de comparativas de rendimiento entre estos modelos dentro de la informacion proporcionada: las cifras de MTEB de la seccion anterior corresponden unicamente a bge-large-en-v1.5. El propio autor indica que bge-large-en-v1.5 sustituye a bge-large-en por su mejor calibracion de similitudes.
 
@@ -109,7 +109,7 @@ No se dispone de comparativas de rendimiento entre estos modelos dentro de la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BAAI/bge-large-en-v1.5
+- Modelo en Hugging Face: https://huggingface.co/BAAI/bge-large-en-v1.5
 - Version anterior (v1): https://huggingface.co/BAAI/bge-large-en
 - Documentacion de la familia BGE (v1 y v1.5): https://bge-model.com/bge/bge_v1_v1.5.html
 - Repositorio FlagEmbedding (codigo de entrenamiento y uso): https://github.com/FlagEmbedding/FlagEmbedding

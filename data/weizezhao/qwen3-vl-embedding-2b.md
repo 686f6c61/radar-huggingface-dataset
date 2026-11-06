@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-VL-Embedding-2B es un modelo de embeddings multimodales desarrollado por el equipo Qwen (Alibaba) y publicado en HuggingFace por el usuario weizezhao. Se construye mediante fine-tuning del modelo instructivo Qwen/Qwen3-VL-2B-Instruct y su proposito es proyectar texto, imagenes, capturas de pantalla y video a un espacio vectorial comun, de modo que sea posible calcular similitud semantica entre modalidades distintas dentro de un mismo pipeline de recuperacion de informacion.
+Qwen3-VL-Embedding-2B es un modelo de embeddings multimodales desarrollado por el equipo Qwen (Alibaba) y publicado en Hugging Face por el usuario weizezhao. Se construye mediante fine-tuning del modelo instructivo Qwen/Qwen3-VL-2B-Instruct y su proposito es proyectar texto, imagenes, capturas de pantalla y video a un espacio vectorial comun, de modo que sea posible calcular similitud semantica entre modalidades distintas dentro de un mismo pipeline de recuperacion de informacion.
 
 El modelo resuelve el problema de la busqueda cross-modal: permite indexar y recuperar contenido visual a partir de consultas textuales, comparar videos con descripciones y agrupar contenido heterogeneo por similitud semantica. Forma parte de una familia mas amplia que incluye un modelo reranker complementario (Qwen3-VL-Reranker) con el que se construye un pipeline de dos etapas: recuperacion inicial por embeddings y reordenacion precisa por relevancia.
 
@@ -74,7 +74,7 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 - En cuantizacion de 8 bits el peso baja a unos 2,1 GB; en 4 bits, a aproximadamente 1,1 GB, aunque la model card no detalla los esquemas de cuantizacion soportados para los pesos (solo menciona cuantizacion del embedding de salida).
 - GPU recomendadas: A100, H100 o L40S para despliegues de alto throughput; RTX 4090 o RTX 3090 para desarrollo y cargas moderadas.
 - Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas de VRAM en fp16, y en tarjetas de 6-8 GB con cuantizacion.
-- Opciones de despliegue: sentence-transformers y transformers como vias nativas; el modelo es compatible con endpoints de HuggingFace (tag endpoints_compatible). No se confirma soporte especifico de vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
+- Opciones de despliegue: sentence-transformers y transformers como vias nativas; el modelo es compatible con endpoints de Hugging Face (tag endpoints_compatible). No se confirma soporte especifico de vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/weizezhao/Qwen3-VL-Embedding-2B
+- Repositorio Hugging Face: https://huggingface.co/weizezhao/Qwen3-VL-Embedding-2B
 - Repositorio oficial de la familia: https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B
 - Informe tecnico: https://arxiv.org/abs/2601.04720
 - Blog de Qwen: https://qwen.ai/blog?id=qwen3-vl-embedding

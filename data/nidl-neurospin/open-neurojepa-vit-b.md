@@ -67,7 +67,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Parametros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Open-NeuroJEPA ViT-B | 269,6 M (encoder 124 M) | Volumen 1 × 128 × 128 × 128 | MAE 4,26 años en OpenBHB (edad) | CC-BY 4.0 | Pesos en HuggingFace, código y receta públicos |
+| Open-NeuroJEPA ViT-B | 269,6 M (encoder 124 M) | Volumen 1 × 128 × 128 × 128 | MAE 4,26 años en OpenBHB (edad) | CC-BY 4.0 | Pesos en Hugging Face, código y receta públicos |
 | Alternativas de modelos fundacionales 3D de RM | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos de modelos comparables de la misma categoría (modelos fundacionales auto-supervisados para RM cerebral 3D) que permitan una comparación cuantitativa fiable.
@@ -85,7 +85,7 @@ No se dispone en la información proporcionada de datos de modelos comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nidl-neurospin/open-neurojepa-vit-b
+- Modelo en Hugging Face: https://huggingface.co/nidl-neurospin/open-neurojepa-vit-b
 - Dataset OpenMind: https://huggingface.co/datasets/neurospin/openmind
 - Receta de preentrenamiento: https://neurospin-deepinsight.github.io/nidl/auto_examples/plot_open_models_pretraining.html
 - Documentación de nidl: https://neurospin-deepinsight.github.io/nidl

@@ -70,6 +70,6 @@ No disponible. La informacion no incluye datos de otros modelos comparables, aun
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/madmacs5/mary-krea2-lora
+- Hugging Face: https://huggingface.co/madmacs5/mary-krea2-lora
 - Civitai tag krea2: https://civitai.com/tag/krea2
 - Civitai Krea 2 AI Models & Generator: https://civitai.com/ecosystems/krea2

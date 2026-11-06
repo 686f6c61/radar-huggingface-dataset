@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sandeepsin/generation-2023` es un repositorio de HuggingFace publicado por el usuario sandeepsin que contiene una implementación funcional ("working implementation") de una arquitectura denominada **Mae** orientada a tareas de generación, con una configuración declarada como *xlarge*. El propio autor indica explícitamente que el repositorio se centra en código transparente y pruebas de humo (smoke tests) reproducibles, y que las afirmaciones sobre rendimiento se omiten deliberadamente. Se trata, por tanto, de un artefacto de carácter experimental y no de un modelo entrenado listo para producción.
+`sandeepsin/generation-2023` es un repositorio de Hugging Face publicado por el usuario sandeepsin que contiene una implementación funcional ("working implementation") de una arquitectura denominada **Mae** orientada a tareas de generación, con una configuración declarada como *xlarge*. El propio autor indica explícitamente que el repositorio se centra en código transparente y pruebas de humo (smoke tests) reproducibles, y que las afirmaciones sobre rendimiento se omiten deliberadamente. Se trata, por tanto, de un artefacto de carácter experimental y no de un modelo entrenado listo para producción.
 
 El checkpoint incluido (`model.safetensors`) se presenta como una **inicialización válida para smoke tests**, no como un checkpoint entrenado ni evaluado. El recuento de parámetros de los metadatos de safetensors es de 16.576, una cifra muy reducida que contrasta con la etiqueta *xlarge* de la configuración declarada; no hay información que permita resolver esa discrepancia. El tamaño del repositorio es de 0,0 GB.
 
@@ -77,5 +77,5 @@ No disponible. No se conocen modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/sandeepsin/generation-2023
+- Ficha en Hugging Face: https://huggingface.co/sandeepsin/generation-2023
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (paper, blog, repositorio de código o demo). Los resultados devueltos corresponden a páginas genéricas de GitHub, Reddit y repositorios sin relación con `sandeepsin/generation-2023`.

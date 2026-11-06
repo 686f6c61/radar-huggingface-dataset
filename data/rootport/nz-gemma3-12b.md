@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rootport/Nz-Gemma3-12B es un repositorio de Hugging Face que rehospeda los archivos del modelo Gemma 3 12B de Google, en su variante instrucción (`google/gemma-3-12b-it`), cuantizado a GGUF Q4_K_M por `ggml-org`. No se trata de un modelo nuevo ni de un fine-tuning: es una copia literal de los archivos originales, con la única diferencia de que la estructura de directorios está reorganizada para que el plugin Nz-LTX23 de AviUtl2 (un editor de vídeo japonés) pueda descargar e instalar automáticamente los archivos necesarios sin requerir una cuenta de HuggingFace (el tokenizador original está protegido por acceso restringido). El repositorio incluye un archivo GGUF de aproximadamente 7,3 GB (cuantización Q4_K_M) y una carpeta con el tokenizador completo (10 archivos, unos 39 MB), pero no incluye los pesos en safetensors; el modelo no puede generar texto por sí solo sin el archivo GGUF.
+Rootport/Nz-Gemma3-12B es un repositorio de Hugging Face que rehospeda los archivos del modelo Gemma 3 12B de Google, en su variante instrucción (`google/gemma-3-12b-it`), cuantizado a GGUF Q4_K_M por `ggml-org`. No se trata de un modelo nuevo ni de un fine-tuning: es una copia literal de los archivos originales, con la única diferencia de que la estructura de directorios está reorganizada para que el plugin Nz-LTX23 de AviUtl2 (un editor de vídeo japonés) pueda descargar e instalar automáticamente los archivos necesarios sin requerir una cuenta de Hugging Face (el tokenizador original está protegido por acceso restringido). El repositorio incluye un archivo GGUF de aproximadamente 7,3 GB (cuantización Q4_K_M) y una carpeta con el tokenizador completo (10 archivos, unos 39 MB), pero no incluye los pesos en safetensors; el modelo no puede generar texto por sí solo sin el archivo GGUF.
 
 La relevancia de este repositorio es práctica: permite que el backend de generación de vídeo Nz-Videomni (antes Nz-LTX23-backend) utilice Gemma 3 12B como codificador de prompts para generar descripciones de escenas en el flujo de creación de vídeo con AviUtl2. Aunque no aporta ninguna mejora técnica sobre el modelo original, facilita la distribución y el uso en un ecosistema concreto, respetando la licencia Gemma Terms of Use que permite la redistribución bajo ciertas condiciones.
 
@@ -78,7 +78,7 @@ No se puede realizar una comparación de rendimiento sin datos de benchmarks, pe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rootport/Nz-Gemma3-12B
+- Repositorio en Hugging Face: https://huggingface.co/Rootport/Nz-Gemma3-12B
 - Modelo original de Google: https://huggingface.co/google/gemma-3-12b-it
 - Cuantización GGUF de ggml-org: https://huggingface.co/ggml-org/gemma-3-12b-it-GGUF
 - Proyecto Nz-Videomni (backend de vídeo): https://github.com/Rootport-AI/Nz-Videomni

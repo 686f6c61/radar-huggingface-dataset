@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Categoria | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mulligan/sim-square-narrow-r03-baseline-idql | IDQL (actor de difusion + critico IQL) para `sim-square-narrow` | no disponible | no aplicable | no disponible | MIT | HuggingFace |
-| Brazos y rondas alternativos de la campana Mulligan (misma tarea) | IDQL con distintas estrategias de datos (DAgger, mezclas) | no disponible | no aplicable | no disponible | MIT (segun repositorio) | HuggingFace |
+| mulligan/sim-square-narrow-r03-baseline-idql | IDQL (actor de difusion + critico IQL) para `sim-square-narrow` | no disponible | no aplicable | no disponible | MIT | Hugging Face |
+| Brazos y rondas alternativos de la campana Mulligan (misma tarea) | IDQL con distintas estrategias de datos (DAgger, mezclas) | no disponible | no aplicable | no disponible | MIT (segun repositorio) | Hugging Face |
 | IDQL (Hansen-Estruch et al.) | Algoritmo de referencia de RL offline con actor de difusion | no disponible | no aplicable | no disponible | no disponible | Publicacion academica |
 
 No se dispone de cifras comparativas de rendimiento entre estos modelos en la informacion proporcionada, por lo que la comparativa se limita a categoria, licencia y disponibilidad.
@@ -84,7 +84,7 @@ No se dispone de cifras comparativas de rendimiento entre estos modelos en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r03-baseline-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r03-baseline-idql
 - Proyecto Mulligan: https://mulligan.page/
 - Policy Arena (evaluaciones): https://arena.mulligan.page/
 - Organización de datasets: https://huggingface.co/mulligan

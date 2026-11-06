@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Pinpoint-TE) | 27,32 B | no disponible | Edicion de rango 1 sobre 2 tensores, supresion de rechazo | qwen-research | GGUF en HuggingFace |
-| `unsloth/Qwen3.8-27B-GGUF` (base) | 27,32 B | no disponible | Modelo base sin editar | qwen-research | GGUF en HuggingFace |
-| `Kujira/Qwen3.8-27B-GSQ-RCO-IQ2_XS-mtp-Pinpoint-Uncensored-v1` | 27,32 B (base) | no disponible | Edicion original de la que se recupero la receta; cuantizacion IQ2_XS | no disponible | GGUF en HuggingFace |
+| Este modelo (Pinpoint-TE) | 27,32 B | no disponible | Edicion de rango 1 sobre 2 tensores, supresion de rechazo | qwen-research | GGUF en Hugging Face |
+| `unsloth/Qwen3.8-27B-GGUF` (base) | 27,32 B | no disponible | Modelo base sin editar | qwen-research | GGUF en Hugging Face |
+| `Kujira/Qwen3.8-27B-GSQ-RCO-IQ2_XS-mtp-Pinpoint-Uncensored-v1` | 27,32 B (base) | no disponible | Edicion original de la que se recupero la receta; cuantizacion IQ2_XS | no disponible | GGUF en Hugging Face |
 | `0bserverx/Qwen3.8-27B-Heretic` | 27,32 B (base) | no disponible | Delta denso en los mismos tensores (proporcion de rango 1 del 1,5-1,6 %) | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Daemonrat/Qwen3.8-27B-UD-Q4_K_M-Pinpoint-TE-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/Daemonrat/Qwen3.8-27B-UD-Q4_K_M-Pinpoint-TE-Uncensored
 - Modelo base: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Edicion original de referencia: https://huggingface.co/Kujira/Qwen3.8-27B-GSQ-RCO-IQ2_XS-mtp-Pinpoint-Uncensored-v1
 - Edicion alternativa comparada: https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic

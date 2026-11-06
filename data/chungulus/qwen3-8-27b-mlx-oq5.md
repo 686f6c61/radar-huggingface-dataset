@@ -81,6 +81,6 @@ No se dispone de información suficiente para comparar directamente con otras cu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-oQ5
+- Repositorio Hugging Face: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-oQ5
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de evaluación semántica: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mazesmazes/tiny-audio-granite-qwen` es un modelo publicado en HuggingFace por el usuario `mazesmazes`, con 1.894.152.000 parametros (aproximadamente 1,89 mil millones) segun los pesos en safetensors. El repositorio lo etiqueta como `asr_model` y lo declara con pipeline de `feature-extraction`, lo que apunta a un modelo orientado a tareas de audio, presumiblemente reconocimiento automatico del habla o extraccion de representaciones a partir de senal de audio. No obstante, la model card publicada es la plantilla autogenerada de HuggingFace y no contiene ni una sola seccion completada por el autor.
+`mazesmazes/tiny-audio-granite-qwen` es un modelo publicado en Hugging Face por el usuario `mazesmazes`, con 1.894.152.000 parametros (aproximadamente 1,89 mil millones) segun los pesos en safetensors. El repositorio lo etiqueta como `asr_model` y lo declara con pipeline de `feature-extraction`, lo que apunta a un modelo orientado a tareas de audio, presumiblemente reconocimiento automatico del habla o extraccion de representaciones a partir de senal de audio. No obstante, la model card publicada es la plantilla autogenerada de Hugging Face y no contiene ni una sola seccion completada por el autor.
 
 El nombre del modelo sugiere una posible composicion de componentes de audio con arquitecturas o pesos de la familia Granite (IBM) y Qwen (Alibaba), pero esto es unicamente una inferencia a partir del identificador y no esta confirmado en ninguna fuente. El repositorio incluye la etiqueta `custom_code`, lo que implica que su carga requiere `trust_remote_code=True` y que parte de la implementacion se ejecuta como codigo Python del propio autor, no como arquitectura nativa de `transformers`.
 
@@ -23,7 +23,7 @@ El modelo presenta 0 descargas y 0 likes, no tiene licencia declarada ni idiomas
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La model card es la plantilla por defecto de HuggingFace y todos los campos relativos a arquitectura, objetivo de entrenamiento, datos, hiperparametros y regimen de precision estan marcados como `[More Information Needed]`. La presencia de la etiqueta `custom_code` indica que el modelo depende de codigo Python propio del autor para su definicion y carga, lo que descarta que se trate de una arquitectura estandar completamente soportada por `transformers` sin modificaciones. La etiqueta `arxiv:1910.09700` que aparece en los metadatos no corresponde a un articulo sobre el modelo: es el identificador del trabajo de Lacoste et al. sobre el calculo de impacto medioambiental, que aparece de forma residual en la propia plantilla de model card.
+No se ha publicado informacion sobre la arquitectura del modelo. La model card es la plantilla por defecto de Hugging Face y todos los campos relativos a arquitectura, objetivo de entrenamiento, datos, hiperparametros y regimen de precision estan marcados como `[More Information Needed]`. La presencia de la etiqueta `custom_code` indica que el modelo depende de codigo Python propio del autor para su definicion y carga, lo que descarta que se trate de una arquitectura estandar completamente soportada por `transformers` sin modificaciones. La etiqueta `arxiv:1910.09700` que aparece en los metadatos no corresponde a un articulo sobre el modelo: es el identificador del trabajo de Lacoste et al. sobre el calculo de impacto medioambiental, que aparece de forma residual en la propia plantilla de model card.
 
 A partir del tamano del repositorio (7,6 GB) y del numero de parametros, se puede estimar que los pesos estan almacenados con una precision cercana a fp32: 1.894.152.000 parametros a 4 bytes por parametro equivalen a unos 7,58 GB, cifra coherente con el tamano observado. Esto es una deduccion aritmetica, no un dato confirmado por el autor.
 
@@ -71,10 +71,10 @@ La comparacion se limita a parametros y licencia, ya que no existen datos de ren
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `mazesmazes/tiny-audio-granite-qwen` | 1,89 mil millones | no disponible | no disponible | HuggingFace, 0 descargas |
+| `mazesmazes/tiny-audio-granite-qwen` | 1,89 mil millones | no disponible | no disponible | Hugging Face, 0 descargas |
 | OpenAI Whisper large-v3 | 1,55 mil millones | 30 s de audio por ventana | MIT | Ampliamente disponible y validado |
-| Qwen2-Audio 7B | 7 mil millones aprox. | no disponible | Apache 2.0 (segun variante) | HuggingFace, con model card completa |
-| Wav2Vec 2.0 (variantes base) | 95-317 millones | no aplica (encoder de audio) | MIT / Apache 2.0 segun variante | HuggingFace, muy extendido |
+| Qwen2-Audio 7B | 7 mil millones aprox. | no disponible | Apache 2.0 (segun variante) | Hugging Face, con model card completa |
+| Wav2Vec 2.0 (variantes base) | 95-317 millones | no aplica (encoder de audio) | MIT / Apache 2.0 segun variante | Hugging Face, muy extendido |
 
 Las comparaciones con estos modelos deben tomarse con cautela: la falta de licencia, de idiomas declarados y de cualquier evaluacion hace que `mazesmazes/tiny-audio-granite-qwen` no sea hoy una alternativa funcional a ninguna de las opciones anteriores en un entorno de produccion.
 
@@ -93,7 +93,7 @@ Las comparaciones con estos modelos deben tomarse con cautela: la falta de licen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mazesmazes/tiny-audio-granite-qwen
+- Repositorio en Hugging Face: https://huggingface.co/mazesmazes/tiny-audio-granite-qwen
 - Paper referenciado en la etiqueta del repositorio (Lacoste et al., calculo de impacto medioambiental, artefacto de la plantilla): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning citada en la plantilla: https://mlco2.github.io/impact
 

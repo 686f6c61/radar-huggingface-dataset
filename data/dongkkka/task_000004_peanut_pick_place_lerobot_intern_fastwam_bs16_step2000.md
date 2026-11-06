@@ -71,7 +71,7 @@ La información proporcionada no incluye métricas comparativas con otras polít
 
 | Modelo | Categoría | Parámetros | Contexto / observación | Benchmarks comparables | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FastWAM Task 000004 (este modelo) | Política de manipulación con LeRobot | 6.020.798.678 | Tres cámaras: cam_left_head, cam_left_wrist, cam_right_wrist | MAE en bucle abierto de 0,018091 en seis episodios reservados | no disponible | HuggingFace, 12 descargas, 0 likes |
+| FastWAM Task 000004 (este modelo) | Política de manipulación con LeRobot | 6.020.798.678 | Tres cámaras: cam_left_head, cam_left_wrist, cam_right_wrist | MAE en bucle abierto de 0,018091 en seis episodios reservados | no disponible | Hugging Face, 12 descargas, 0 likes |
 | OpenVLA y familia de políticas VLA | Política visión-lenguaje-acción | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Políticas ACT / Diffusion Policy en LeRobot | Política de imitación | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,7 +89,7 @@ La información proporcionada no incluye métricas comparativas con otras polít
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_FastWAM_bs16_step2000
+- Modelo en Hugging Face: https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_FastWAM_bs16_step2000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern
 - LeRobot (librería de entrenamiento e inferencia): https://github.com/huggingface/lerobot
 - Nota: la búsqueda web realizada no devolvió fuentes relevantes sobre este modelo; los resultados obtenidos no guardaban relación con el contenido del repositorio.

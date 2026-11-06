@@ -108,13 +108,13 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace (conversión GGUF): https://huggingface.co/tryambientai/parakeet-tdt-0.6b-v2-gguf
+- Hugging Face (conversión GGUF): https://huggingface.co/tryambientai/parakeet-tdt-0.6b-v2-gguf
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
 - Variante multilingüe v3: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Documentación del modelo en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/blob/main/docs/models/parakeet-tdt-0.6b-v2.md
 - Commit del modelo base usado: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/commit/1b149a3
 - Commit de validación de transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/tree/bf0d0b7
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/nvidia/parakeet-tdt-0.6b-v2
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/nvidia/parakeet-tdt-0.6b-v2
 - Documentación NeMo sobre FastConformer: https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/main/asr/models.html#fast-conformer
 - Licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/legalcode.en

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jennifercook/undergrad-matching` es un repositorio de HuggingFace publicado por el usuario jennifercook (J. Cook) que contiene una implementacion funcional de una arquitectura tipo BLIP orientada a tareas de *matching* (emparejamiento multimodal texto-imagen o similar). El propio autor describe el repositorio como un punto de partida experimental: el fichero `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests*, no un modelo entrenado ni evaluado con benchmarks.
+`jennifercook/undergrad-matching` es un repositorio de Hugging Face publicado por el usuario jennifercook (J. Cook) que contiene una implementacion funcional de una arquitectura tipo BLIP orientada a tareas de *matching* (emparejamiento multimodal texto-imagen o similar). El propio autor describe el repositorio como un punto de partida experimental: el fichero `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests*, no un modelo entrenado ni evaluado con benchmarks.
 
 La relevancia de esta ficha es, por tanto, limitada y de naturaleza distinta a la de un modelo listo para produccion: se trata de un artefacto de codigo reproducible con una configuracion declarada de escala "xlarge" (atencion *grouped query*, fusion bilineal, activacion mish, normalizacion groupnorm) pero con un recuento real de parametros de solo 33.088, segun los metadatos de safetensors. Esa discrepancia entre la etiqueta de escala y el tamano efectivo es el dato mas importante a tener en cuenta antes de reutilizarlo.
 
@@ -22,7 +22,7 @@ No se han publicado resultados de benchmarks, no se declaran idiomas soportados 
 | Formato de pesos | safetensors (PyTorch) |
 | Escala declarada por el autor | xlarge |
 | Tamano del repositorio | 0,0 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de creacion | 2026-10-16 |
 | Fecha de ultima actualizacion | 2026-10-16 |
 | Descargas / likes | 0 / 0 |
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jennifercook/undergrad-matching | 33.088 | no disponible | sin benchmarks publicados | apache-2.0 | safetensors en HuggingFace |
+| jennifercook/undergrad-matching | 33.088 | no disponible | sin benchmarks publicados | apache-2.0 | safetensors en Hugging Face |
 | Familia BLIP (referencia arquitectonica) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Alternativas multimodales de matching de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ La informacion proporcionada no permite establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jennifercook/undergrad-matching
+- Modelo en Hugging Face: https://huggingface.co/jennifercook/undergrad-matching
 - Perfil del autor: https://huggingface.co/jennifercook
 - Listado de modelos del autor: https://huggingface.co/jennifercook/models
 - Paper, blog, repositorio o demo adicionales: no disponible; los resultados de busqueda web consultados no contienen informacion relacionada con este modelo.

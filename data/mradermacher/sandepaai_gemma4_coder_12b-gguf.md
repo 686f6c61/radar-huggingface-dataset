@@ -89,7 +89,7 @@ La comparación es limitada porque no hay datos de rendimiento publicados para e
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/sandepaAI_gemma4_coder_12b-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/sandepaAI_gemma4_coder_12b-GGUF
 - Modelo base (sandepaAI): https://huggingface.co/sandepaAI/sandepaAI_gemma4_coder_12b (referenciado en la model card)
 - Modelo base de Gemma 4 (google/gemma-4-12B-it): https://huggingface.co/google/gemma-4-12B-it (referenciado en la model card)
 - Página oficial de Gemma 4: https://deepmind.google/models/gemma/gemma-4/

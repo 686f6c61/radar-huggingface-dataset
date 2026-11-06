@@ -82,7 +82,7 @@ No se dispone de información sobre otros modelos de generación de letras con f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rambrogi/lyrics-room-topline-gemma4-12b-v9-GGUF
+- Modelo en Hugging Face: https://huggingface.co/rambrogi/lyrics-room-topline-gemma4-12b-v9-GGUF
 - Modelo base: https://huggingface.co/unsloth/gemma-4-12b-it
 - Suno Director v4 (mencionado en la model card): https://huggingface.co/rambrogi/lyrics-room-suno-director-v4-GGUF
 - Structured Panel (mencionado en la model card): https://huggingface.co/rambrogi/lyrics-room-structured-panel-definitive-GGUF

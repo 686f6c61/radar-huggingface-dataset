@@ -33,7 +33,7 @@ El recetario de experimento por defecto usa el optimizador Adam con un schedule 
 - Clasificacion: el repositorio esta etiquetado para la tarea de clasificacion, pero no hay evidencia de que el checkpoint realice clasificaciones utiles sin un entrenamiento posterior.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas no esta informado en HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas no esta informado en Hugging Face).
 - Capacidades especiales (modo de pensamiento, vision, audio): no disponible. Aunque MoCo v3 se asocia historicamente a vision por computador, la model card no confirma ninguna modalidad soportada.
 
 ## Casos de uso
@@ -69,7 +69,7 @@ La model card no ofrece comparativas ni resultados, y el checkpoint no esta entr
 | Longitud de contexto | no disponible | no aplica (modelos de vision) |
 | Benchmarks publicados | Ninguno (declarado por el autor) | Si, en la literatura original |
 | Licencia | Apache 2.0 | Consultar la licencia del proyecto original |
-| Disponibilidad | Repositorio publico en HuggingFace, 11 descargas, 0 likes | Repositorios y publicaciones de referencia |
+| Disponibilidad | Repositorio publico en Hugging Face, 11 descargas, 0 likes | Repositorios y publicaciones de referencia |
 
 ## Limitaciones y advertencias
 
@@ -85,5 +85,5 @@ La model card no ofrece comparativas ni resultados, y el checkpoint no esta entr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/justintransar/work-classification-2023
+- Hugging Face: https://huggingface.co/justintransar/work-classification-2023
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

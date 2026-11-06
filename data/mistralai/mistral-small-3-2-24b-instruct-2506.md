@@ -6,7 +6,7 @@ Mistral-Small-3.2-24B-Instruct-2506 es un modelo multimodal (texto e imagen) de 
 
 La actualizacion 3.2 se centra en tres mejoras concretas: mayor adherencia a instrucciones precisas, reduccion de errores de repeticion (generaciones infinitas o respuestas redundantes) y una plantilla de function calling mas robusta. Su relevancia inmediata para desarrolladores radica en que estas mejoras se obtienen sin cambios en el tamano ni en los requisitos de hardware respecto a la version 3.1, y con una licencia permisiva (Apache 2.0) que facilita el uso comercial.
 
-El modelo pertenece a la familia Mistral 3 (tag mistral3) y esta registrado en HuggingFace con la libreria vllm. Acumula 253.514 descargas y 637 likes en el momento de la consulta. Su model card no especifica explicitamente la longitud de contexto en la informacion disponible, por lo que este dato se marca como no disponible mas abajo.
+El modelo pertenece a la familia Mistral 3 (tag mistral3) y esta registrado en Hugging Face con la libreria vllm. Acumula 253.514 descargas y 637 likes en el momento de la consulta. Su model card no especifica explicitamente la longitud de contexto en la informacion disponible, por lo que este dato se marca como no disponible mas abajo.
 
 ## Especificaciones tecnicas
 
@@ -98,8 +98,8 @@ Vision:
 
 | Modelo | Parametros | Contexto | Rendimiento destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mistral-Small-3.2-24B-Instruct-2506 | 24,01B | no disponible | Arena Hard v2 43,1%; HumanEval Plus 92,90% Pass@5 | apache-2.0 | HuggingFace, servicio vLLM |
-| Mistral-Small-3.1-24B-Instruct-2503 | 24B | no disponible | Arena Hard v2 19,56%; HumanEval Plus 88,99% Pass@5 | apache-2.0 | HuggingFace |
+| Mistral-Small-3.2-24B-Instruct-2506 | 24,01B | no disponible | Arena Hard v2 43,1%; HumanEval Plus 92,90% Pass@5 | apache-2.0 | Hugging Face, servicio vLLM |
+| Mistral-Small-3.1-24B-Instruct-2503 | 24B | no disponible | Arena Hard v2 19,56%; HumanEval Plus 88,99% Pass@5 | apache-2.0 | Hugging Face |
 | Otras alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion disponible solo permite comparar de forma fiable con la version 3.1 de la misma familia. La model card remite a los benchmarks de Mistral-Small-3.1 para comparaciones con modelos de tamano similar, pero no incluye esos datos aqui.
@@ -117,7 +117,7 @@ La informacion disponible solo permite comparar de forma fiable con la version 3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506
+- Modelo en Hugging Face: https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503
 - Version previa: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503
 - Benchmarks de Mistral-Small-3.1: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503#benchmark-results

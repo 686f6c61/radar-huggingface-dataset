@@ -80,10 +80,10 @@ Las mediciones se realizaron en un GitHub runner con AMD EPYC 7763 de 64 núcleo
 
 | Modelo | Parámetros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jonpark0/SmolLM2-360M-Instruct-isa-lm (Q4_0/Q8_0) | 360M | 4096 | `.mlb` / isa-lm | Apache 2.0 | HuggingFace, 0 descargas |
-| HuggingFaceTB/SmolLM2-360M-Instruct (original) | 360M | 4096 | safetensors / transformers, llama.cpp, etc. | Apache 2.0 | HuggingFace, ampliamente usado |
-| SmolLM2-135M-Instruct | 135M | 4096 (modelo base) | safetensors / múltiples runtimes | Apache 2.0 | HuggingFace |
-| SmolLM2-1.7B-Instruct | 1,7B | 4096 (modelo base) | safetensors / múltiples runtimes | Apache 2.0 | HuggingFace |
+| jonpark0/SmolLM2-360M-Instruct-isa-lm (Q4_0/Q8_0) | 360M | 4096 | `.mlb` / isa-lm | Apache 2.0 | Hugging Face, 0 descargas |
+| HuggingFaceTB/SmolLM2-360M-Instruct (original) | 360M | 4096 | safetensors / transformers, llama.cpp, etc. | Apache 2.0 | Hugging Face, ampliamente usado |
+| SmolLM2-135M-Instruct | 135M | 4096 (modelo base) | safetensors / múltiples runtimes | Apache 2.0 | Hugging Face |
+| SmolLM2-1.7B-Instruct | 1,7B | 4096 (modelo base) | safetensors / múltiples runtimes | Apache 2.0 | Hugging Face |
 
 La comparación relevante es con el modelo original y con las otras tallas de la familia SmolLM2. La ventaja de esta conversión es el tamaño reducido y la ejecución en CPU sin dependencias; la desventaja es el formato propietario `.mlb`, que limita la portabilidad frente a GGUF o safetensors. No se dispone de datos de benchmarks de tareas para comparar el rendimiento cualitativo con las alternativas.
 
@@ -100,7 +100,7 @@ La comparación relevante es con el modelo original y con las otras tallas de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonpark0/SmolLM2-360M-Instruct-isa-lm
+- Modelo en Hugging Face: https://huggingface.co/jonpark0/SmolLM2-360M-Instruct-isa-lm
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Repositorio de isa-lm: https://github.com/JonPark0/isa-lm
 - Releases de isa-lm: https://github.com/JonPark0/isa-lm/releases

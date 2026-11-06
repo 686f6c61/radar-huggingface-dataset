@@ -4,7 +4,7 @@
 
 Este repositorio no contiene un modelo de IA entrenado, sino una nota de investigacion ("research note") sobre pretraining de vision-lenguaje. El autor, quanphamvij, lo publica bajo licencia MIT y lo describe explicitamente como un documento de trabajo que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion. La propia model card advierte que no se presenta como un paper completado ni como una release de modelos entrenados.
 
-El artefacto principal es el fichero `review.md`, acompanado de un `README.md`. No hay pesos, no hay checkpoint, no hay codigo de entrenamiento ni de inferencia, y no se declaran resultados experimentales. Los metadatos de HuggingFace etiquetan el repositorio con `safetensors` y `transformer`, y el recuento de parametros reportado es de 49.600, una cifra incompatible con cualquier transformer de vision-lenguaje funcional y que probablemente corresponde a un artefacto residual o a una etiqueta mal aplicada.
+El artefacto principal es el fichero `review.md`, acompanado de un `README.md`. No hay pesos, no hay checkpoint, no hay codigo de entrenamiento ni de inferencia, y no se declaran resultados experimentales. Los metadatos de Hugging Face etiquetan el repositorio con `safetensors` y `transformer`, y el recuento de parametros reportado es de 49.600, una cifra incompatible con cualquier transformer de vision-lenguaje funcional y que probablemente corresponde a un artefacto residual o a una etiqueta mal aplicada.
 
 Su relevancia es, por tanto, documental y metodologica: puede servir como plantilla de planificacion experimental (definicion de hipotesis, confounders, baselines emparejados, criterios de reproducibilidad) para quien investigue pretraining multimodal. No es utilizable como modelo en produccion ni como referencia de rendimiento.
 
@@ -12,7 +12,7 @@ Su relevancia es, por tanto, documental y metodologica: puede servir como planti
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el repositorio no publica modelo; las etiquetas de HuggingFace indican `transformer`, sin especificar) |
+| Arquitectura | no disponible (el repositorio no publica modelo; las etiquetas de Hugging Face indican `transformer`, sin especificar) |
 | Parametros totales | 49.600 segun metadatos de safetensors; no coherente con un modelo de vision-lenguaje y no descrito por el autor |
 | Parametros activos | no aplicable (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -39,7 +39,7 @@ No hay informacion sobre volumen de tokens de entrenamiento, composicion del dat
 - No se declara soporte de generacion de texto, razonamiento, codigo, matematicas ni vision.
 - No se declara soporte de tool calling ni function calling.
 - No se declara soporte de agentes ni razonamiento multi-paso.
-- No se declaran capacidades multilingues (el campo de idiomas esta vacio en HuggingFace).
+- No se declaran capacidades multilingues (el campo de idiomas esta vacio en Hugging Face).
 - Capacidad real del artefacto: documentar un plan de investigacion reproducible sobre pretraining de vision-lenguaje.
 
 ## Casos de uso
@@ -90,7 +90,7 @@ No disponible. La categoria del artefacto (nota de investigacion sin checkpoint)
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/quanphamvij/vision-language-pretraining-reading
+- Repositorio en Hugging Face: https://huggingface.co/quanphamvij/vision-language-pretraining-reading
 - Fichero principal de la nota: `review.md` (dentro del repositorio)
 - Documentacion: `README.md` (dentro del repositorio)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

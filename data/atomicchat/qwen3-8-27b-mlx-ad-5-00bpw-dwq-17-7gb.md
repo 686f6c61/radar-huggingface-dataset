@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/AtomicChat/Qwen3.8-27B-MLX-AD-5.00bpw-DWQ-17.7GB)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/AtomicChat/Qwen3.8-27B-MLX-AD-5.00bpw-DWQ-17.7GB)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [GitHub del modelo Qwen3.8-27B](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Guía de ejecución local en Unsloth](https://unsloth.ai/docs/models/qwen3.8)

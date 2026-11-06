@@ -29,7 +29,7 @@ No se especifican los datos de entrenamiento, el número de pasos, ni si se usó
 
 - Generación de imágenes a partir de prompts de texto, específicamente escenas de una mujer siendo abofeteada o abofeteándose a sí misma.
 - Soporte de dos prompts desencadenantes claramente definidos en la model card.
-- Integración con el pipeline `diffusers` de HuggingFace, lo que facilita su uso en entornos Python.
+- Integración con el pipeline `diffusers` de Hugging Face, lo que facilita su uso en entornos Python.
 - Al ser un LoRA, se puede combinar con otros adaptadores o ajustar su peso de escala durante la inferencia.
 
 No se han documentado capacidades adicionales como tool calling, agentes, razonamiento multimodal o soporte multilingüe. El modelo está limitado a la tarea de generación de imágenes con el contenido específico mencionado.
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 - Al ser un LoRA, el requisito principal es el modelo base `nvidia/Qwen-Image-Flash`. Se desconoce el tamaño de este modelo, por lo que no se puede estimar la VRAM necesaria con precisión.
 - Se recomienda una GPU con al menos 8-12 GB de VRAM para modelos de difusión de tamaño medio, pero esto es una suposición general y no un dato específico.
-- El despliegue se puede realizar mediante la librería `diffusers` de HuggingFace, que soporta carga de LoRA con `pipe.load_lora_weights()`.
+- El despliegue se puede realizar mediante la librería `diffusers` de Hugging Face, que soporta carga de LoRA con `pipe.load_lora_weights()`.
 - También es posible usar herramientas como ComfyUI o Automatic1111 si son compatibles con Qwen-Image-Flash y LoRA.
 - No se dispone de datos de latencia o throughput.
 
@@ -70,5 +70,5 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/PeachesAvicii/Slap-N-Self-Slap](https://huggingface.co/PeachesAvicii/Slap-N-Self-Slap)
+- Modelo en Hugging Face: [https://huggingface.co/PeachesAvicii/Slap-N-Self-Slap](https://huggingface.co/PeachesAvicii/Slap-N-Self-Slap)
 - Modelo base (referenciado): [nvidia/Qwen-Image-Flash](https://huggingface.co/nvidia/Qwen-Image-Flash) (no verificado en la búsqueda, pero indicado en los tags)

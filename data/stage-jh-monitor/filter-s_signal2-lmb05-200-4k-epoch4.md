@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Stage-jh-monitor/filter-s_signal2-lmb05-200-4k-epoch4` es un checkpoint de un modelo de lenguaje de aproximadamente 4 539 millones de parámetros (4,54 B) publicado por el usuario `Stage-jh-monitor` en HuggingFace. Por la información de la model card se trata de un artefacto intermedio de un pipeline interno de entrenamiento por refuerzo (RL) sobre el modelo base declarado `Qwen/Qwen3.5-4B`, no de un modelo de propósito general con soporte y documentación de primer nivel.
+`Stage-jh-monitor/filter-s_signal2-lmb05-200-4k-epoch4` es un checkpoint de un modelo de lenguaje de aproximadamente 4 539 millones de parámetros (4,54 B) publicado por el usuario `Stage-jh-monitor` en Hugging Face. Por la información de la model card se trata de un artefacto intermedio de un pipeline interno de entrenamiento por refuerzo (RL) sobre el modelo base declarado `Qwen/Qwen3.5-4B`, no de un modelo de propósito general con soporte y documentación de primer nivel.
 
 El modelo resuelve, en principio, el problema de producir un "learner" (política entrenada) para una tarea concreta: el entrenamiento se ejecutó con `method = "rl"`, un juez externo basado en `gpt-5.6-luna` para puntuar respuestas abiertas y 10 000 pasos de learner durante 3 épocas sobre el dataset `Stage-org/filter-s_signal2-lmb05-200-4k`. El nombre del repositorio sugiere un filtro de señal dentro de un experimento mayor del mismo autor.
 
@@ -85,7 +85,7 @@ No es posible una comparación cuantitativa: no hay benchmarks publicados para e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stage-jh-monitor/filter-s_signal2-lmb05-200-4k-epoch4
+- Hugging Face: https://huggingface.co/Stage-jh-monitor/filter-s_signal2-lmb05-200-4k-epoch4
 - Dataset de entrenamiento declarado: `Stage-org/filter-s_signal2-lmb05-200-4k` (referenciado en la model card; no se ha verificado su disponibilidad pública)
 - Modelo base declarado: `Qwen/Qwen3.5-4B` (referenciado en la configuración de entrenamiento; no verificado)
 - Paper, blog o repositorio del autor: no disponible

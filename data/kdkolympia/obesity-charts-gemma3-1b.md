@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - **VRAM estimada**: el artefacto publicado es Q4_K_M de aproximadamente 0,8 GB; la inferencia completa cabe en torno a 1-2 GB de memoria considerando contexto y overhead del runtime.
 - **GPU recomendadas**: cualquier GPU consumer con 4 GB o mas de VRAM (por ejemplo, GTX 1650, RTX 3050, RTX 4060); en GPU de centro de datos (A100, H100) el modelo queda sobredimensionado para el hardware.
 - **Consumer GPU**: si, cabe holgadamente en GPU integradas y dedicadas de gama baja, y tambien en CPU.
-- **Opciones de despliegue**: llama.cpp, Ollama y servidores compatibles con GGUF; el tag `endpoints_compatible` sugiere uso tras APIs compatibles con el formato de endpoints de HuggingFace. No se confirma soporte de vLLM o TGI para esta variante GGUF.
+- **Opciones de despliegue**: llama.cpp, Ollama y servidores compatibles con GGUF; el tag `endpoints_compatible` sugiere uso tras APIs compatibles con el formato de endpoints de Hugging Face. No se confirma soporte de vLLM o TGI para esta variante GGUF.
 - **Latencia y throughput**: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -86,6 +86,6 @@ La comparativa se limita a parametros, licencia y formato porque no hay datos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kdkolympia/obesity-charts-gemma3-1b
+- Modelo en Hugging Face: https://huggingface.co/kdkolympia/obesity-charts-gemma3-1b
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Veloxy-Flash-15B-Faz12-LoRA es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario zveloxy en HuggingFace, entrenado sobre el modelo base zveloxy/Veloxy-Flash-15B. Se distribuye en formato PEFT (version 0.20.0) y su repositorio ocupa 0,1 GB, lo que es coherente con un adaptador y no con un modelo completo. La etiqueta del nombre ("Faz12") sugiere la duodécima fase de un proceso de ajuste iterativo, aunque el autor no documenta esta interpretacion.
+Veloxy-Flash-15B-Faz12-LoRA es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario zveloxy en Hugging Face, entrenado sobre el modelo base zveloxy/Veloxy-Flash-15B. Se distribuye en formato PEFT (version 0.20.0) y su repositorio ocupa 0,1 GB, lo que es coherente con un adaptador y no con un modelo completo. La etiqueta del nombre ("Faz12") sugiere la duodécima fase de un proceso de ajuste iterativo, aunque el autor no documenta esta interpretacion.
 
 La relevancia de esta ficha es limitada y hay que ser honesto al respecto: la model card es una plantilla sin rellenar (secciones "More Information Needed" en todos los apartados), el repositorio no tiene descargas ni "likes", la licencia no esta declarada y no se especifican idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. Ademas, la fecha de creacion indicada (17 de octubre de 2026) es posterior a la fecha actual, lo que apunta a un error de metadatos o a un modelo subido con marca temporal futura.
 
@@ -74,8 +74,8 @@ No disponible. No se puede construir una comparativa rigurosa porque faltan los 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| Veloxy-Flash-15B-Faz12-LoRA | no disponible (adaptador; nombre sugiere 15B) | no disponible | no disponible | HuggingFace, 0 descargas | no disponibles |
-| Veloxy-Flash-15B (modelo base) | no disponible | no disponible | no disponible | HuggingFace (referenciado como base) | no disponibles |
+| Veloxy-Flash-15B-Faz12-LoRA | no disponible (adaptador; nombre sugiere 15B) | no disponible | no disponible | Hugging Face, 0 descargas | no disponibles |
+| Veloxy-Flash-15B (modelo base) | no disponible | no disponible | no disponible | Hugging Face (referenciado como base) | no disponibles |
 | Alternativas de ~15B | no aplicable | no aplicable | no aplicable | no aplicable | no aplicable |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No disponible. No se puede construir una comparativa rigurosa porque faltan los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zveloxy/Veloxy-Flash-15B-Faz12-LoRA
+- Modelo en Hugging Face: https://huggingface.co/zveloxy/Veloxy-Flash-15B-Faz12-LoRA
 - Modelo base: https://huggingface.co/zveloxy/Veloxy-Flash-15B
 - Paper citado en la plantilla de la model card (estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la model card: https://mlco2.github.io/impact

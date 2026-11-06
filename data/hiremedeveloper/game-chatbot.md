@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HireMeDeveloper/game-chatbot es un repositorio alojado en HuggingFace por el usuario HireMeDeveloper. Por el nombre se deduce que la intencion declarada es la de un chatbot orientado a videojuegos, pero la model card publicada no contiene ninguna descripcion funcional: unicamente incluye la declaracion de licencia `apache-2.0` y nada mas. No hay informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades.
+HireMeDeveloper/game-chatbot es un repositorio alojado en Hugging Face por el usuario HireMeDeveloper. Por el nombre se deduce que la intencion declarada es la de un chatbot orientado a videojuegos, pero la model card publicada no contiene ninguna descripcion funcional: unicamente incluye la declaracion de licencia `apache-2.0` y nada mas. No hay informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades.
 
 El repositorio no registra descargas ni likes en el momento de la consulta, y sus marcas temporales de creacion y actualizacion son identicas, lo que sugiere una publicacion sin mantenimiento posterior ni validacion por parte de la comunidad. Tampoco se ha publicado pipeline asociado ni lista de idiomas soportados.
 
@@ -23,7 +23,7 @@ En consecuencia, esta ficha no puede confirmar que el modelo sea funcional, que 
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card publicada en HuggingFace no incluye ninguna descripcion de arquitectura, ni referencias a transformer, MoE, SSM o modelos hibridos. Tampoco se indica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de ajuste como RLHF, DPO o SFT.
+No disponible. La model card publicada en Hugging Face no incluye ninguna descripcion de arquitectura, ni referencias a transformer, MoE, SSM o modelos hibridos. Tampoco se indica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de ajuste como RLHF, DPO o SFT.
 
 No hay informacion sobre innovaciones tecnicas (atencion lineal, decodificacion especulativa, atencion por ventanas, etc.) ni sobre el proceso de tokenizacion. El unico metadato estructural disponible es la etiqueta `region:us` y la licencia Apache 2.0.
 
@@ -80,5 +80,5 @@ No disponible. No se puede establecer una comparativa porque se desconocen los p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HireMeDeveloper/game-chatbot
+- Hugging Face: https://huggingface.co/HireMeDeveloper/game-chatbot
 - No se han encontrado papers, blogs tecnicos, repositorios de codigo, demos ni articulos asociados en la informacion disponible.

@@ -114,7 +114,7 @@ Diferencias relevantes respecto a las alternativas: este modelo es mas grande en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/Qwen3.5-4B-Unredacted-MAX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/Qwen3.5-4B-Unredacted-MAX-GGUF
 - Modelo base (prithivMLmods): https://huggingface.co/prithivMLmods/Qwen3.5-4B-Unredacted-MAX
 - Modelo original citado en la model card (Qwen/Qwen3.5-4B): https://huggingface.co/Qwen/Qwen3.5-4B
 - Documentacion de llama.cpp: https://github.com/ggerganov/llama.cpp

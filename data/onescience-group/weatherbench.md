@@ -67,7 +67,7 @@ Dentro de la informacion proporcionada, la comparativa documentada es contra las
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WeatherBench CNN (esta reproduccion) | CNN de 5 capas | no disponible | Prediccion a 3 y 5 dias, paso de 6 h | Apache-2.0 | HuggingFace (0 descargas) |
+| WeatherBench CNN (esta reproduccion) | CNN de 5 capas | no disponible | Prediccion a 3 y 5 dias, paso de 6 h | Apache-2.0 | Hugging Face (0 descargas) |
 | Persistencia | Linea base trivial | no aplica | no aplica | segun benchmark original | en el benchmark original |
 | Climatologia | Linea base estadistica | no aplica | no aplica | segun benchmark original | en el benchmark original |
 | Regresion lineal | Linea base lineal | no disponible | no disponible | segun benchmark original | en el benchmark original |
@@ -90,7 +90,7 @@ Otros modelos de prediccion basada en datos (por ejemplo, enfoques de grafos neu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OneScience-Group/WeatherBench
+- Repositorio en Hugging Face: https://huggingface.co/OneScience-Group/WeatherBench
 - Articulo original (arXiv:2002.00469): https://arxiv.org/abs/2002.00469
 - Repositorio principal OneScience en Gitee: https://gitee.com/onescience-ai/onescience
 - Repositorio de skills OneScience en Gitee: https://gitee.com/onescience-ai/oneskills

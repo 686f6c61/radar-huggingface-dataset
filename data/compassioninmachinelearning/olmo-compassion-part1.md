@@ -2,7 +2,7 @@
 
 ## Resumen
 
-olmo-compassion-part1 es un modelo de generacion de texto de 7.298.011.136 parametros (aproximadamente 7,3 mil millones) publicado en HuggingFace por la organizacion CompassioninMachineLearning. El nombre del repositorio y la etiqueta `olmo3` indican que se trata de un derivado de la familia OLMo 3 de Ai2 (Allen Institute for AI), reorientado mediante un proceso de alineamiento que la propia organizacion describe como "compassion aligned machine learning". El repositorio se presenta como la "parte 1" de una serie, lo que sugiere que existiran entregas posteriores.
+olmo-compassion-part1 es un modelo de generacion de texto de 7.298.011.136 parametros (aproximadamente 7,3 mil millones) publicado en Hugging Face por la organizacion CompassioninMachineLearning. El nombre del repositorio y la etiqueta `olmo3` indican que se trata de un derivado de la familia OLMo 3 de Ai2 (Allen Institute for AI), reorientado mediante un proceso de alineamiento que la propia organizacion describe como "compassion aligned machine learning". El repositorio se presenta como la "parte 1" de una serie, lo que sugiere que existiran entregas posteriores.
 
 El modelo esta etiquetado como tarea de generacion de texto (`text-generation`) en ingles, con soporte declarado para Transformers, Safetensors, text-generation-inference y Unsloth, y con el rasgo `conversational`. La licencia indicada es Apache 2.0. El tamano del repositorio es de 14,6 GB, coherente con pesos en precision bf16 (2 bytes por parametro sobre 7,3 mil millones de parametros), sin que se haya publicado una version cuantizada.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| olmo-compassion-part1 | 7,3 mil millones | no disponible | ingles | Apache 2.0 | HuggingFace, solo safetensors |
-| OLMo 3 (modelo base del que deriva) | 7 mil millones (variante 7B) | no disponible en la informacion proporcionada | multilingue (no especificado) | Apache 2.0 (familia OLMo) | HuggingFace y Ai2 |
-| Mistral 7B | 7,3 mil millones | 32.000 tokens | multilingue | Apache 2.0 | HuggingFace, GGUF y multiples formatos |
-| Llama 3.1 8B | 8 mil millones | 128.000 tokens | multilingue | licencia comunitaria de Meta | HuggingFace, GGUF y multiples formatos |
+| olmo-compassion-part1 | 7,3 mil millones | no disponible | ingles | Apache 2.0 | Hugging Face, solo safetensors |
+| OLMo 3 (modelo base del que deriva) | 7 mil millones (variante 7B) | no disponible en la informacion proporcionada | multilingue (no especificado) | Apache 2.0 (familia OLMo) | Hugging Face y Ai2 |
+| Mistral 7B | 7,3 mil millones | 32.000 tokens | multilingue | Apache 2.0 | Hugging Face, GGUF y multiples formatos |
+| Llama 3.1 8B | 8 mil millones | 128.000 tokens | multilingue | licencia comunitaria de Meta | Hugging Face, GGUF y multiples formatos |
 
 La comparacion con Mistral 7B y Llama 3.1 8B es orientativa en cuanto a categoria y tamano; no se dispone de datos de rendimiento de olmo-compassion-part1 que permitan una comparacion cuantitativa en benchmarks. La principal desventaja de este checkpoint frente a las alternativas es la ausencia de versiones cuantizadas y de model card detallada.
 
@@ -86,6 +86,6 @@ La comparacion con Mistral 7B y Llama 3.1 8B es orientativa en cuanto a categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CompassioninMachineLearning/olmo-compassion-part1
+- Modelo en Hugging Face: https://huggingface.co/CompassioninMachineLearning/olmo-compassion-part1
 - Archivos del repositorio: https://huggingface.co/CompassioninMachineLearning/olmo-compassion-part1/tree/main
 - Pagina oficial de la familia OLMo de Ai2: https://allenai.org/olmo

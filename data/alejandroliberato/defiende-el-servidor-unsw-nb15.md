@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`defiende-el-servidor-unsw-nb15` es un clasificador binario tabular de conexiones de red (normal frente a ataque) entrenado sobre el dataset UNSW-NB15 y publicado en HuggingFace por AlejandroLiberato. No es un modelo de lenguaje ni una red neuronal: es un `sklearn.Pipeline` serializado con `joblib` que encadena imputación, codificación one-hot de tres variables categóricas (`proto`, `service`, `state`) y un `RandomForestClassifier` de 300 árboles. Su propósito es académico: sirve como artefacto de demostración de un flujo MLOps completo (versionado de código con Git, datos con DVC, experimentos con MLflow y modelo con HuggingFace Hub) dentro del curso de MLOps de la Universidad Externado de Colombia (2026-II).
+`defiende-el-servidor-unsw-nb15` es un clasificador binario tabular de conexiones de red (normal frente a ataque) entrenado sobre el dataset UNSW-NB15 y publicado en Hugging Face por AlejandroLiberato. No es un modelo de lenguaje ni una red neuronal: es un `sklearn.Pipeline` serializado con `joblib` que encadena imputación, codificación one-hot de tres variables categóricas (`proto`, `service`, `state`) y un `RandomForestClassifier` de 300 árboles. Su propósito es académico: sirve como artefacto de demostración de un flujo MLOps completo (versionado de código con Git, datos con DVC, experimentos con MLflow y modelo con Hugging Face Hub) dentro del curso de MLOps de la Universidad Externado de Colombia (2026-II).
 
 La revisión v2 sustituye la regresión logística de v1 por un bosque aleatorio y eleva el umbral de decisión de 0,5 a 0,64, con el objetivo explícito de reducir la tasa de falsos positivos manteniendo un recall de ataque por encima de 0,95. El resultado en validación es un macro-F1 de 0,9442 con una FPR de 0,0493, aunque la evaluación final sobre el conjunto de test publicado revela una degradación notable (macro-F1 0,9009, FPR 0,1729) atribuida a un cambio en la distribución de tráfico normal entre particiones.
 
@@ -105,7 +105,7 @@ Comparación con alternativas externas (por ejemplo, otros clasificadores public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlejandroLiberato/defiende-el-servidor-unsw-nb15
+- Modelo en Hugging Face: https://huggingface.co/AlejandroLiberato/defiende-el-servidor-unsw-nb15
 - Repositorio de código (GitHub): https://github.com/alejobernalg/defiende-el-servidor
 - Referencia del dataset: Moustafa, N., & Slay, J. (2015). UNSW-NB15: a comprehensive data set for network intrusion detection systems. MilCIS.
 - Referencia de evaluación: Moustafa, N., & Slay, J. (2016). The evaluation of NIDS datasets. Information Security Journal.

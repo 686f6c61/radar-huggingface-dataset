@@ -96,7 +96,7 @@ No se dispone de información sobre modelos comparables de otros desarrolladores
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/primitive-ai/Ripple-65B-Preview-FP8
+- Hugging Face: https://huggingface.co/primitive-ai/Ripple-65B-Preview-FP8
 - Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
 - Variante NVFP4 del autor base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4
 - Variante NVFP4A16 de primitive-ai: https://huggingface.co/primitive-ai/Ripple-65B-Preview-NVFP4A16

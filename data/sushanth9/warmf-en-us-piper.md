@@ -2,7 +2,7 @@
 
 ## Resumen
 
-warm-f (en_US, Piper medium) es un modelo de síntesis de voz (text-to-speech) de un solo hablante para inglés estadounidense, desarrollado por el usuario sushanth9 y publicado en HuggingFace. Se distribuye como un único archivo ONNX de aproximadamente 63 MB a 22.050 Hz en mono, y está diseñado para ejecutarse en CPU sin GPU, lo que lo hace adecuado para despliegues de bajo coste en entornos de atención telefónica y agentes de voz.
+warm-f (en_US, Piper medium) es un modelo de síntesis de voz (text-to-speech) de un solo hablante para inglés estadounidense, desarrollado por el usuario sushanth9 y publicado en Hugging Face. Se distribuye como un único archivo ONNX de aproximadamente 63 MB a 22.050 Hz en mono, y está diseñado para ejecutarse en CPU sin GPU, lo que lo hace adecuado para despliegues de bajo coste en entornos de atención telefónica y agentes de voz.
 
 Técnicamente es un estudiante VITS destilado del modelo Kokoro-82M (voz `af_heart`), afinado específicamente para habla de centro de llamadas: frases cortas, confirmaciones, horas, fechas, direcciones y números. El modelo se entrenó con 7.882 clips (unas 10 horas) de audio sintético generado por el profesor a partir de unas 7.900 frases de call-center escritas para la ocasión, y se ajustó desde el checkpoint medium de Piper entrenado en LibriTTS-R durante 10.000 pasos en una A10G (unos 90 minutos).
 
@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto / idioma | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| warm-f (en_US, Piper medium) | no disponible (~63 MB ONNX) | inglés en_US | CC BY 4.0 | HuggingFace, CPU-only | Destilado de Kokoro-82M; latencia 0,2-0,3 s en 2 vCPU |
-| Kokoro-82M (hexgrad) | 82 M | inglés (y otros según variantes) | Apache-2.0 | HuggingFace | Profesor del que se destila warm-f; mayor estabilidad (9,3 % vs 17,0 % de fallos) |
+| warm-f (en_US, Piper medium) | no disponible (~63 MB ONNX) | inglés en_US | CC BY 4.0 | Hugging Face, CPU-only | Destilado de Kokoro-82M; latencia 0,2-0,3 s en 2 vCPU |
+| Kokoro-82M (hexgrad) | 82 M | inglés (y otros según variantes) | Apache-2.0 | Hugging Face | Profesor del que se destila warm-f; mayor estabilidad (9,3 % vs 17,0 % de fallos) |
 | Piper medium estándar (p. ej. `libritts_r`) | no disponible | inglés y otros | CC BY 4.0 (según checkpoint) | Catálogo Piper | Base del estudiante; calidad evaluada en 4,00/5 en el test ciego del autor |
 | Voces Piper del catálogo general | variable | multilingüe | variable | Catálogo Piper | Alternativa directa sin destilación específica para call-center |
 
@@ -97,7 +97,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sushanth9/warmf-en-us-piper
+- Modelo en Hugging Face: https://huggingface.co/sushanth9/warmf-en-us-piper
 - Repositorio GitHub del autor (front-end y receta): https://github.com/tsushanth/warmf-tts
 - Piper (OHF-Voice, piper1-gpl): https://github.com/OHF-Voice/piper1-gpl
 - Kokoro-82M (profesor): https://huggingface.co/hexgrad/Kokoro-82M

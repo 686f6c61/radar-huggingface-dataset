@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dino-retrieval44 es un repositorio de HuggingFace publicado por el usuario jjohnsonmatthew7288nd que contiene una implementacion propia de una arquitectura tipo Dino orientada a tareas de retrieval (recuperacion de informacion multimodal o texto-imagen). No se trata de un modelo entrenado ni afinado, sino de un punto de partida reproducible: el autor lo describe explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), y no como una release con pesos entrenados.
+dino-retrieval44 es un repositorio de Hugging Face publicado por el usuario jjohnsonmatthew7288nd que contiene una implementacion propia de una arquitectura tipo Dino orientada a tareas de retrieval (recuperacion de informacion multimodal o texto-imagen). No se trata de un modelo entrenado ni afinado, sino de un punto de partida reproducible: el autor lo describe explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), y no como una release con pesos entrenados.
 
 El repositorio incluye el codigo de implementacion (finetune.py), un archivo de configuracion de arquitectura (config.json), una receta de experimento por defecto (training_args.json) y un checkpoint de inicializacion (model.safetensors). La arquitectura declarada emplea atencion de tipo grouped query, fusion bilinear, activacion approx gelu y normalizacion layernorm, con una escala etiquetada como "huge".
 
@@ -78,5 +78,5 @@ No disponible. No existe informacion verificable sobre la tarea concreta, metric
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jjohnsonmatthew7288nd/dino-retrieval44
+- Hugging Face: https://huggingface.co/jjohnsonmatthew7288nd/dino-retrieval44
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados en la informacion disponible.

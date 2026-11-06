@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`leorlr04/survey-multimodal-generation77` es un repositorio de HuggingFace publicado por el usuario `leorlr04` que, pese a estar etiquetado con `safetensors`, `transformer` y `multimodal-generation`, no contiene un modelo entrenado utilizable. La propia model card lo describe como una nota exploratoria sobre generación multimodal: registra el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados y los requisitos de reproducibilidad, antes de que exista ningún resultado experimental. El artefacto principal declarado es `paper_notes.md`, no un checkpoint.
+`leorlr04/survey-multimodal-generation77` es un repositorio de Hugging Face publicado por el usuario `leorlr04` que, pese a estar etiquetado con `safetensors`, `transformer` y `multimodal-generation`, no contiene un modelo entrenado utilizable. La propia model card lo describe como una nota exploratoria sobre generación multimodal: registra el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados y los requisitos de reproducibilidad, antes de que exista ningún resultado experimental. El artefacto principal declarado es `paper_notes.md`, no un checkpoint.
 
 El repositorio ocupa 0.0 GB y el campo de parámetros de safetensors indica 16.576 (16 576 en notación anglosajona), una cifra incompatible con un transformer funcional y que apunta a un fichero testimonial o de metadatos. No hay pipeline declarado, no se listan idiomas soportados y no se han publicado descargas ni valoraciones (0 descargas, 0 likes) desde su creación el 21 de octubre de 2026.
 
@@ -46,7 +46,7 @@ El autor indica de forma explícita que la nota «no reclama mejoras en benchmar
 - Revisión bibliográfica inicial: las referencias y datasets propuestos sirven como punto de partida para verificar el estado del arte, tal y como el propio autor advierte.
 - Formación de investigadores noveles: el repositorio ilustra la diferencia entre hipótesis, plan y resultado experimental, un error frecuente en notas de investigación publicadas en abierto.
 - Documentación de fallos y preguntas abiertas: la estructura de la nota incluye modos de fallo y cuestiones sin resolver, reutilizable como sección de limitaciones en un artículo en preparación.
-- Auditoría de repositorios de HuggingFace: caso práctico para comprobar cómo las etiquetas (`transformer`, `safetensors`) pueden no corresponderse con artefactos funcionales, y para diseñar verificaciones automáticas de tamaño de repositorio y número de parámetros.
+- Auditoría de repositorios de Hugging Face: caso práctico para comprobar cómo las etiquetas (`transformer`, `safetensors`) pueden no corresponderse con artefactos funcionales, y para diseñar verificaciones automáticas de tamaño de repositorio y número de parámetros.
 
 ## Benchmarks y rendimiento
 
@@ -84,5 +84,5 @@ No disponible. No se han identificado alternativas comparables porque el reposit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/leorlr04/survey-multimodal-generation77
+- Repositorio en Hugging Face: https://huggingface.co/leorlr04/survey-multimodal-generation77
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código ni demos.

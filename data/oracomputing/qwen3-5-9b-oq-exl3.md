@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Qwen3.5-9B-OQ-EXL3 (este) | ~9B | No disponible | EXL3 2-4 bits | Otro (evaluacion) | Acceso restringido |
-| Qwen3.5-9B (base) | ~9B | No disponible (probablemente 128K) | BF16/FP16 | Apache-2.0 | Publico en HuggingFace |
+| Qwen3.5-9B (base) | ~9B | No disponible (probablemente 128K) | BF16/FP16 | Apache-2.0 | Publico en Hugging Face |
 | Otras cuantizaciones de Qwen3.5-9B (GGUF, GPTQ) | ~9B | Depende de la variante | GGUF, GPTQ | Apache-2.0 (si derivan del base) | Publico o restringido segun el autor |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones. La diferencia principal radica en el formato de cuantizacion (EXL3 frente a GGUF/GPTQ) y en la licencia, que en este caso limita el uso a evaluacion.
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones. La difer
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oracomputing/Qwen3.5-9B-OQ-EXL3
+- Repositorio Hugging Face: https://huggingface.co/oracomputing/Qwen3.5-9B-OQ-EXL3
 - Sitio web de Ora Computing: https://www.oracomputing.com/en
 - Blog de Ora Computing: https://www.oracomputing.com/en/blog
 - Contacto: https://www.oracomputing.com/en/contact

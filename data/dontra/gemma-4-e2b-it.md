@@ -17,7 +17,7 @@ La relevancia de esta ficha es doble: por un lado describe la arquitectura decla
 | Parametros activos | no aplica (modelo denso; la variante MoE de la familia es 26B A4B) |
 | Longitud de contexto | 128K tokens |
 | Tipos de cuantizacion | no disponible en la informacion proporcionada (el repo solo publica safetensors; no se documentan GGUF, AWQ ni GPTQ) |
-| Idiomas soportados | no disponible en los metadatos de HuggingFace; la model card de la familia declara soporte de mas de 140 idiomas |
+| Idiomas soportados | no disponible en los metadatos de Hugging Face; la model card de la familia declara soporte de mas de 140 idiomas |
 | Licencia | apache-2.0 (la model card enlaza ademas la licencia especifica de Gemma 4 en ai.google.dev/gemma/docs/gemma_4_license) |
 | Formato de pesos | safetensors (transformers) |
 
@@ -38,7 +38,7 @@ No se dispone de informacion sobre el proceso de ajuste de esta variante concret
 - Function calling nativo y soporte de flujos multi-paso para agentes.
 - Soporte nativo del rol `system` para estructurar conversaciones.
 - Capacidades multilingues: la familia declara mas de 140 idiomas; no hay desglose por idioma para esta variante.
-- Entrada y salida declaradas como "any-to-any" en el pipeline de HuggingFace, aunque la generacion es exclusivamente de texto.
+- Entrada y salida declaradas como "any-to-any" en el pipeline de Hugging Face, aunque la generacion es exclusivamente de texto.
 - No se documentan capacidades de vision por video en la tabla de E2B, a diferencia de la mencion generica de la familia a video.
 
 ## Casos de uso
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cache KV para 128K tokens: no disponible; depende de la configuracion exacta de capas globales y locales, no documentada en detalle para esta variante.
 - GPU recomendadas: no hay recomendaciones oficiales para esta variante. Por tamano, una RTX 4090 (24 GB) o A100/H100 (40-80 GB) permiten bf16 sin cuantizar; una RTX 3060 de 12 GB o superior es suficiente en 8 bits.
 - Cabe en GPU consumer: si, en 4 bits o int8 en tarjetas de 6-12 GB, sujeto a la disponibilidad de herramientas de cuantizacion para la arquitectura gemma4.
-- Opciones de despliegue: transformers (unico formato publicado); vLLM, TGI, llama.cpp u Ollama no estan confirmados para esta arquitectura ni para estos pesos. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace Inference Endpoints.
+- Opciones de despliegue: transformers (unico formato publicado); vLLM, TGI, llama.cpp u Ollama no estan confirmados para esta arquitectura ni para estos pesos. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face Inference Endpoints.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -92,9 +92,9 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dontra/gemma-4-E2B-it
+- Repositorio en Hugging Face: https://huggingface.co/Dontra/gemma-4-E2B-it
 - Modelo base: https://huggingface.co/google/gemma-4-E2B
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Repositorio GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion: https://ai.google.dev/gemma/docs/core
@@ -102,4 +102,4 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Pagina de modelos de Google DeepMind: https://deepmind.google/models/gemma/
 
-Nota: la busqueda web realizada no devolvio resultados relacionados con el modelo (los resultados obtenidos trataban sobre botanica y biologia celular), por lo que los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relacionados con el modelo (los resultados obtenidos trataban sobre botanica y biologia celular), por lo que los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de Hugging Face.

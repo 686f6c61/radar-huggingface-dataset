@@ -80,11 +80,11 @@ No se dispone de datos de rendimiento ni de configuracion de contexto para ningu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cyclone-Labs/Dusky-Rose-31B | 31,27 mil millones | no disponible | no disponible | Apache 2.0 | HuggingFace, safetensors |
-| google/gemma-4-31B-it | 31B (segun nomenclatura del nombre del repositorio) | no disponible | no disponible | no disponible | HuggingFace (modelo base instruct oficial) |
-| MRockatansky/Gemma-4-31B-Storymaxxed3 | 31B (segun nomenclatura) | no disponible | no disponible | no disponible | HuggingFace (componente del merge) |
-| TheDrummer/Artemis-31B-v1.1 | 31B (segun nomenclatura) | no disponible | no disponible | no disponible | HuggingFace (componente del merge) |
-| ReadyArt/Dark-Scarlett-v2.0-31B | 31B (segun nomenclatura) | no disponible | no disponible | no disponible | HuggingFace (componente del merge) |
+| Cyclone-Labs/Dusky-Rose-31B | 31,27 mil millones | no disponible | no disponible | Apache 2.0 | Hugging Face, safetensors |
+| google/gemma-4-31B-it | 31B (segun nomenclatura del nombre del repositorio) | no disponible | no disponible | no disponible | Hugging Face (modelo base instruct oficial) |
+| MRockatansky/Gemma-4-31B-Storymaxxed3 | 31B (segun nomenclatura) | no disponible | no disponible | no disponible | Hugging Face (componente del merge) |
+| TheDrummer/Artemis-31B-v1.1 | 31B (segun nomenclatura) | no disponible | no disponible | no disponible | Hugging Face (componente del merge) |
+| ReadyArt/Dark-Scarlett-v2.0-31B | 31B (segun nomenclatura) | no disponible | no disponible | no disponible | Hugging Face (componente del merge) |
 
 ## Limitaciones y advertencias
 
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento ni de configuracion de contexto para ningu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cyclone-Labs/Dusky-Rose-31B
+- Modelo en Hugging Face: https://huggingface.co/Cyclone-Labs/Dusky-Rose-31B
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Modelo base: https://huggingface.co/ReadyArt/Dark-Scarlett-v2.0-31B
 - Modelo base: https://huggingface.co/TheDrummer/Artemis-31B-v1.1

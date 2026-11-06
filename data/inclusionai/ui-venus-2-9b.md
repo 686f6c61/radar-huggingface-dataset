@@ -21,7 +21,7 @@ La información pública específica para esta versión concreta (2-9B) es muy l
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información específica sobre la arquitectura y el entrenamiento de `UI-Venus-2-9B`. La página de HuggingFace no ofrece detalles técnicos. Sin embargo, el repositorio de GitHub de la familia UI-Venus y el technical report (arXiv:2508.10833) describen el enfoque general de UI-Venus: se trata de un agente de UI multimodal que toma capturas de pantalla como entrada, basado en el modelo Qwen2.5-VL, y que se entrena mediante reinforcement finetuning (RFT) con un conjunto de datos de cientos de miles de muestras de alta calidad. No obstante, estos detalles corresponden a la versión 1.5 y no se confirma que apliquen a la versión 2-9B.
+No se dispone de información específica sobre la arquitectura y el entrenamiento de `UI-Venus-2-9B`. La página de Hugging Face no ofrece detalles técnicos. Sin embargo, el repositorio de GitHub de la familia UI-Venus y el technical report (arXiv:2508.10833) describen el enfoque general de UI-Venus: se trata de un agente de UI multimodal que toma capturas de pantalla como entrada, basado en el modelo Qwen2.5-VL, y que se entrena mediante reinforcement finetuning (RFT) con un conjunto de datos de cientos de miles de muestras de alta calidad. No obstante, estos detalles corresponden a la versión 1.5 y no se confirma que apliquen a la versión 2-9B.
 
 ## Capacidades
 

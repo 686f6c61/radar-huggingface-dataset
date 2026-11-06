@@ -75,11 +75,11 @@ La única evaluación descrita es cualitativa y comparativa contra el modelo bas
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Naturaleza |
 |---|---|---|---|---|---|
-| qwen-dpo-hw1 (este) | Adaptador LoRA sobre 1,54 B | 32.768 | No disponible | HuggingFace, 0 descargas | Adaptador DPO de carácter académico |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 | Apache-2.0 | HuggingFace, ampliamente usado | Modelo base instructivo, sin alinear por DPO adicional |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 | Apache-2.0 | HuggingFace | Alternativa más ligera para hardware muy limitado |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 | Llama 3.2 Community License | HuggingFace, con aceptación de términos | Modelo instructivo comparable en tamaño, contexto mayor |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7 B | 8.192 | Apache-2.0 | HuggingFace | Alternativa abierta con contexto mucho más corto |
+| qwen-dpo-hw1 (este) | Adaptador LoRA sobre 1,54 B | 32.768 | No disponible | Hugging Face, 0 descargas | Adaptador DPO de carácter académico |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 | Apache-2.0 | Hugging Face, ampliamente usado | Modelo base instructivo, sin alinear por DPO adicional |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 | Apache-2.0 | Hugging Face | Alternativa más ligera para hardware muy limitado |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 | Llama 3.2 Community License | Hugging Face, con aceptación de términos | Modelo instructivo comparable en tamaño, contexto mayor |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7 B | 8.192 | Apache-2.0 | Hugging Face | Alternativa abierta con contexto mucho más corto |
 
 La comparación es estructural: no existen métricas publicadas de este adaptador que permitan contrastar rendimiento con las alternativas. Frente a ellas, la diferencia principal no es de capacidad sino de propósito (ejercicio académico) y de garantías legales y de soporte.
 
@@ -98,7 +98,7 @@ La comparación es estructural: no existen métricas publicadas de este adaptado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anushkarde/qwen-dpo-hw1
+- Modelo en Hugging Face: https://huggingface.co/anushkarde/qwen-dpo-hw1
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de Qwen2.5 (QwenLM): https://github.com/QwenLM/Qwen2.5
 - Repositorio de TRL (entrenamiento con DPO): https://github.com/huggingface/trl

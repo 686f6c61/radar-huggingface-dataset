@@ -97,7 +97,7 @@ Lectura: la conversión y cuantización cuestan 0,34 puntos de WER frente al fic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/scholzmx/underdog-bark-3.0-clean-gguf
+- Repositorio Hugging Face: https://huggingface.co/scholzmx/underdog-bark-3.0-clean-gguf
 - Modelo base (Conway Research): https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Clean
 - Modelo del que deriva el base (NVIDIA): https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Modelo referenciado en la atribución (Moondream): https://huggingface.co/moondream/parakeet-ultra

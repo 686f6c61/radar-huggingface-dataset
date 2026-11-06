@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| fpadovani/arb-arab-10mb-10mb_seed10 | 39.087.104 | No disponible | No disponible (marcador `license`) | HuggingFace, safetensors | Punto de partida de esta ficha |
-| goldfish-models/arb_arab_10mb | No disponible en la informacion proporcionada | No disponible | No disponible | HuggingFace | Modelo base del ajuste; mismo origen de datos (10 MB) |
+| fpadovani/arb-arab-10mb-10mb_seed10 | 39.087.104 | No disponible | No disponible (marcador `license`) | Hugging Face, safetensors | Punto de partida de esta ficha |
+| goldfish-models/arb_arab_10mb | No disponible en la informacion proporcionada | No disponible | No disponible | Hugging Face | Modelo base del ajuste; mismo origen de datos (10 MB) |
 | Otros modelos comparables | No disponible | No disponible | No disponible | No disponible | La busqueda web realizada no devolvio modelos comparables; los resultados eran contenido deportivo sin relacion |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-10mb-10mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-10mb-10mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/arb_arab_10mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/iyrjnyma

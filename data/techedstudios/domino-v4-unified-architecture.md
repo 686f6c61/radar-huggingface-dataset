@@ -6,7 +6,7 @@ DOMINO V4 es un experimento de arquitectura neuronal desarrollado por Teched Stu
 
 La relevancia de esta publicacion es fundamentalmente metodologica y de auditoria: el autor documenta pruebas forenses de integracion (presencia de los modulos, ejecucion en el forward pass, gradientes finitos en los 14 tensores entrenables y modificacion medible de los logits). Sin embargo, la evaluacion preliminar sobre 100 ejemplos muestra una precision del 6 % frente al 7 % del modelo base, por lo que no existe evidencia de mejora.
 
-El repositorio se publica como material experimental y de auditoria, con licencia Apache 2.0, y el propio autor advierte explicitamente de que no reclama inteligencia de nivel humano, AGI, consciencia ni superioridad frente a modelos frontera. El tamano del repositorio figura como 0.0 GB en HuggingFace, lo que sugiere que los pesos del adaptador podrian no estar efectivamente subidos o son de tamano despreciable.
+El repositorio se publica como material experimental y de auditoria, con licencia Apache 2.0, y el propio autor advierte explicitamente de que no reclama inteligencia de nivel humano, AGI, consciencia ni superioridad frente a modelos frontera. El tamano del repositorio figura como 0.0 GB en Hugging Face, lo que sugiere que los pesos del adaptador podrian no estar efectivamente subidos o son de tamano despreciable.
 
 ## Especificaciones tecnicas
 
@@ -85,6 +85,6 @@ No se dispone de datos de rendimiento comparables mas alla de la evaluacion prel
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/techedstudios/domino-v4-unified-architecture
+- Hugging Face: https://huggingface.co/techedstudios/domino-v4-unified-architecture
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

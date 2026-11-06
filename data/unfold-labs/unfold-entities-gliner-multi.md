@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unfold-labs/unfold-entities-gliner-multi
+- Modelo en Hugging Face: https://huggingface.co/unfold-labs/unfold-entities-gliner-multi
 - Modelo base GLiNER multi v2.1: https://huggingface.co/urchade/gliner_multi-v2.1
 - Exportación ONNX de origen: https://huggingface.co/onnx-community/gliner_multi-v2.1
 - Modelo base de la arquitectura mDeBERTa-v3: https://huggingface.co/microsoft/mdeberta-v3-base

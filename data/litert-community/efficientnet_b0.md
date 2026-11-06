@@ -25,7 +25,7 @@ La relevancia de esta publicación radica en que ofrece el modelo en formato `.t
 
 EfficientNet-B0 es una CNN que utiliza una arquitectura basada en bloques MBConv (Mobile Inverted Bottleneck) con conexiones residuales y capas de *Squeeze-and-Excitation* (SE). La innovación principal es el *compound scaling*, que escala de forma conjunta la profundidad, la anchura y la resolución de entrada mediante un coeficiente compuesto, en lugar de escalar una sola dimensión. Esto permite obtener un rendimiento superior a otras arquitecturas con un coste computacional similar.
 
-El modelo fue preentrenado en ImageNet-1k, un dataset de clasificación de imágenes con 1,28 millones de imágenes y 1000 clases. Los pesos publicados en HuggingFace fueron convertidos desde un checkpoint de PyTorch Vision. En la model card se indica que la cuantización *weight-only* int8 se eligió en lugar de cuantización de rango dinámico porque las capas SE y SiLU de EfficientNet son sensibles a la cuantización de activaciones. No se menciona ningún proceso de alineación como RLHF o DPO, ya que no es un modelo de lenguaje.
+El modelo fue preentrenado en ImageNet-1k, un dataset de clasificación de imágenes con 1,28 millones de imágenes y 1000 clases. Los pesos publicados en Hugging Face fueron convertidos desde un checkpoint de PyTorch Vision. En la model card se indica que la cuantización *weight-only* int8 se eligió en lugar de cuantización de rango dinámico porque las capas SE y SiLU de EfficientNet son sensibles a la cuantización de activaciones. No se menciona ningún proceso de alineación como RLHF o DPO, ya que no es un modelo de lenguaje.
 
 ## Capacidades
 
@@ -87,7 +87,7 @@ Se compara con el modelo base original y con otras arquitecturas de tamaño simi
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/litert-community/efficientnet_b0
+- Página del modelo en Hugging Face: https://huggingface.co/litert-community/efficientnet_b0
 - Repositorio de LiteRT en GitHub: https://github.com/google-ai-edge/litert
 - Documentación oficial de LiteRT: https://developers.google.com/edge/litert
 - Paper original de EfficientNet: https://arxiv.org/abs/1905.11946

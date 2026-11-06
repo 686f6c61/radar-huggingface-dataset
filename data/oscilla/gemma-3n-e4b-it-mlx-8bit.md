@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones. La prin
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/Oscilla/gemma-3n-E4B-it-mlx-8Bit
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/Oscilla/gemma-3n-E4B-it-mlx-8Bit
 - Modelo base original: https://huggingface.co/google/gemma-3n-E4B-it
 - Versión de 4 bits del mismo autor: https://huggingface.co/Oscilla/gemma-3n-E4B-it-mlx-4Bit
 - Conversión similar de LM Studio: https://huggingface.co/lmstudio-community/gemma-3n-E4B-it-MLX-8bit

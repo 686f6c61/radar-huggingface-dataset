@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zils-d3-lite-c5` es un modelo de lenguaje de aproximadamente 853 millones de parámetros publicado por el usuario SolaraMist en HuggingFace bajo licencia Apache 2.0. No se trata de un modelo entrenado desde cero, sino de un "body" (cuerpo) destinado al pool de modelos tipo soup denominado `d3-lite`, construido sobre el chasis fijado `vllm-sr/d3-lite` y con `Qwen/Qwen3.5-0.8B` como ancestro declarado en la cadena de procedencia. El modelo combina dos componentes: el cuerpo base `zils-ai/jiwo-0.8b-full` y un estudiante LoRA destilado, fusionados mediante un "soup" al 50/50.
+`zils-d3-lite-c5` es un modelo de lenguaje de aproximadamente 853 millones de parámetros publicado por el usuario SolaraMist en Hugging Face bajo licencia Apache 2.0. No se trata de un modelo entrenado desde cero, sino de un "body" (cuerpo) destinado al pool de modelos tipo soup denominado `d3-lite`, construido sobre el chasis fijado `vllm-sr/d3-lite` y con `Qwen/Qwen3.5-0.8B` como ancestro declarado en la cadena de procedencia. El modelo combina dos componentes: el cuerpo base `zils-ai/jiwo-0.8b-full` y un estudiante LoRA destilado, fusionados mediante un "soup" al 50/50.
 
 La relevancia técnica del modelo reside en su metodología de construcción: destilación KL desde un profesor compuesto (`torchcast-ai/torchcast-decision-4b` y `vllm-sr/d3-mini`) hacia un adaptador LoRA de rango 64, con una mezcla de 0,7 de respuestas del profesor y 0,3 de etiquetas verdaderas sobre 21.470 filas. El conjunto de datos de entrenamiento se compone exclusivamente de elementos de clasificación temática de arXiv y de resultados de Stack Exchange (cerrados y aceptados), con un riguroso control de procedencia temporal y exclusiones explícitas de fuentes como AfD, Gerrit y GH Archive.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SolaraMist/zils-d3-lite-c5 | 852.985.920 | no disponible | Apache 2.0 | HuggingFace, 0 descargas, 0 likes | Modelo soup experimental, sin benchmarks |
-| Qwen/Qwen3.5-0.8B | ~0,8B (según linaje declarado) | no disponible | no disponible en la información | HuggingFace (referenciado como parent) | Modelo base del linaje |
-| zils-ai/jiwo-0.8b-full | ~0,8B (según nombre) | no disponible | Apache 2.0 | HuggingFace (referenciado) | Cuerpo base del soup |
-| torchcast-ai/torchcast-decision-4b | ~4B (según nombre) | no disponible | Apache 2.0 | HuggingFace (referenciado) | Profesor del proceso de destilación |
+| SolaraMist/zils-d3-lite-c5 | 852.985.920 | no disponible | Apache 2.0 | Hugging Face, 0 descargas, 0 likes | Modelo soup experimental, sin benchmarks |
+| Qwen/Qwen3.5-0.8B | ~0,8B (según linaje declarado) | no disponible | no disponible en la información | Hugging Face (referenciado como parent) | Modelo base del linaje |
+| zils-ai/jiwo-0.8b-full | ~0,8B (según nombre) | no disponible | Apache 2.0 | Hugging Face (referenciado) | Cuerpo base del soup |
+| torchcast-ai/torchcast-decision-4b | ~4B (según nombre) | no disponible | Apache 2.0 | Hugging Face (referenciado) | Profesor del proceso de destilación |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SolaraMist/zils-d3-lite-c5
+- Hugging Face: https://huggingface.co/SolaraMist/zils-d3-lite-c5
 - Modelo base (chasis): https://huggingface.co/vllm-sr/d3-lite
 - Cuerpo de partida: https://huggingface.co/zils-ai/jiwo-0.8b-full
 - Profesor 1: https://huggingface.co/torchcast-ai/torchcast-decision-4b

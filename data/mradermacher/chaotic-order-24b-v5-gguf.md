@@ -54,7 +54,7 @@ Las cuantizaciones han sido generadas con el flujo habitual de mradermacher, seg
 - Evaluacion comparativa interna: al disponer de 11 niveles de cuantizacion, permite trazar una curva propia de degradacion (perplejidad o tareas propias) para decidir el punto de equilibrio tamano/calidad en un despliegue concreto.
 - Sustitucion de modelos de mayor tamano en pipelines de bajo trafico: para tareas de resumen o reformulacion en ingles donde un modelo de 70 B es sobredimensionado, una instancia Q5_K_M (16,9 GB) puede cubrir la carga con menor coste de VRAM.
 - Entornos aislados o con requisitos de soberania de datos: los ficheros GGUF se ejecutan integramente en local, lo que evita enviar texto a servicios de terceros cuando la confidencialidad es un requisito.
-- Fine-tuning posterior sobre el base: el repositorio referencia el modelo original en formato HuggingFace, lo que permite partir de el para ajuste con LoRA, siempre que la licencia del base lo autorice (dato no disponible).
+- Fine-tuning posterior sobre el base: el repositorio referencia el modelo original en formato Hugging Face, lo que permite partir de el para ajuste con LoRA, siempre que la licencia del base lo autorice (dato no disponible).
 
 ## Benchmarks y rendimiento
 
@@ -112,7 +112,7 @@ Conclusion practica de la comparativa: el unico diferencial constatable de este 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Chaotic-Order-24B-V5-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Chaotic-Order-24B-V5-GGUF
 - Modelo base (pesos originales): https://huggingface.co/Sorihon/Chaotic-Order-24B-V5
 - Cuantizaciones ponderadas con imatrix: https://huggingface.co/mradermacher/Chaotic-Order-24B-V5-i1-GGUF
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Chaotic-Order-24B-V5-GGUF

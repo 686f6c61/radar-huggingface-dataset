@@ -76,7 +76,7 @@ El modelo es el hermano pequeño de Chatterbox-Turbo: reduce el tamaño del T3 a
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/cstr/chatterbox-nano-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/cstr/chatterbox-nano-GGUF
 - Modelo base original: https://huggingface.co/ResembleAI/chatterbox-nano
 - Repositorio de Chatterbox (Resemble AI): https://github.com/resemble-ai/chatterbox
 - Wiki de Chatterbox: https://github.com/resemble-ai/chatterbox/wiki

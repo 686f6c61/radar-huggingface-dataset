@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`serialhex/gemma4-12b-biblical-qlora-gt` es un ajuste fino supervisado (SFT) del modelo `google/gemma-4-12B-it`, publicado por el usuario `serialhex` en HuggingFace. El entrenamiento se ha realizado con TRL (versión 1.14.2) sobre Transformers 5.19.0.dev0, PyTorch 2.9.1+cu129 y Datasets 5.1.0. La nomenclatura del repositorio sugiere un ajuste mediante QLoRA orientado a un dominio concreto, probablemente textual de temática bíblica, aunque la model card no documenta ni el dataset ni el procedimiento exacto.
+`serialhex/gemma4-12b-biblical-qlora-gt` es un ajuste fino supervisado (SFT) del modelo `google/gemma-4-12B-it`, publicado por el usuario `serialhex` en Hugging Face. El entrenamiento se ha realizado con TRL (versión 1.14.2) sobre Transformers 5.19.0.dev0, PyTorch 2.9.1+cu129 y Datasets 5.1.0. La nomenclatura del repositorio sugiere un ajuste mediante QLoRA orientado a un dominio concreto, probablemente textual de temática bíblica, aunque la model card no documenta ni el dataset ni el procedimiento exacto.
 
 La relevancia de esta ficha es limitada y conviene ser explícito: el repositorio acumula 0 descargas y 0 "likes", no incluye pipeline declarado, no especifica licencia utilizable, no documenta idiomas soportados ni características del corpus de entrenamiento. El tamano del repositorio es de 5,0 GB en formato safetensors, una cifra compatible con pesos cuantizados o con un adaptador acompanado de otros artefactos, pero no con un checkpoint denso en bf16 de 12 000 millones de parametros (que ocuparia del orden de 24 GB). Esta discrepancia no queda aclarada en la informacion disponible.
 
@@ -24,7 +24,7 @@ Por tanto, esta ficha debe leerse como un inventario de lo que el autor declara 
 | Modelo base | `google/gemma-4-12B-it` |
 | Metodo de ajuste | SFT mediante TRL |
 | Framework declarado | TRL 1.14.2, Transformers 5.19.0.dev0, PyTorch 2.9.1+cu129, Datasets 5.1.0, Tokenizers 0.23.3 |
-| Compatibilidad endpoints | El tag `endpoints_compatible` sugiere despliegue en HuggingFace Inference Endpoints |
+| Compatibilidad endpoints | El tag `endpoints_compatible` sugiere despliegue en Hugging Face Inference Endpoints |
 
 ## Arquitectura y entrenamiento
 
@@ -97,7 +97,7 @@ No se incluyen otros modelos de la familia Gemma ni modelos de otros proveedores
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/serialhex/gemma4-12b-biblical-qlora-gt
+- Repositorio del modelo en Hugging Face: https://huggingface.co/serialhex/gemma4-12b-biblical-qlora-gt
 - Modelo base declarado: https://huggingface.co/google/gemma-4-12B-it
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de Transformers: https://huggingface.co/docs/transformers

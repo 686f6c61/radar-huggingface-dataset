@@ -66,7 +66,7 @@ El paper reporta pruebas de significancia, resultados cross-backbone y ablacione
 - **VRAM estimada para inferencia**: el modelo base en bf16 ocupa aproximadamente 16 GB, más el adaptador LoRA fusionado (0.6 GB de repositorio). Con cuantización a 8 bits podría reducirse a ~8–10 GB, aunque no se han publicado guías de cuantización específicas.
 - **GPU recomendadas**: para inferencia en bf16, una GPU con 24 GB de VRAM (RTX 3090/4090, A5000) es suficiente; para entrenamiento se usaron 8×H20 (NVIDIA H20, variante del H100 para el mercado chino).
 - **En consumer GPU**: sí, es viable en GPUs de consumo con 24 GB (RTX 4090) en bf16, y con cuantización en GPUs de 16 GB.
-- **Opciones de despliegue**: el adaptador se usa con HuggingFace Transformers + PEFT (PeftModel) + la librería `ladit` del repositorio Entropy-Valley. No se menciona soporte en vLLM, llama.cpp u Ollama, ya que la decodificación por difusión enmascarada requiere el pipeline de decodificación específico de `ladit`.
+- **Opciones de despliegue**: el adaptador se usa con Hugging Face Transformers + PEFT (PeftModel) + la librería `ladit` del repositorio Entropy-Valley. No se menciona soporte en vLLM, llama.cpp u Ollama, ya que la decodificación por difusión enmascarada requiere el pipeline de decodificación específico de `ladit`.
 - **Latencia y throughput**: no disponible. La decodificación con 32 pasos MED implica múltiples pasadas forward sobre el canvas, por lo que la latencia es mayor que la de un modelo autorregresivo equivalente; el paper no reporta métricas de latencia en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -91,7 +91,7 @@ Nota: las métricas COMET/BLEU de los adaptadores En→Zh y Zh→En no se report
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YanZhanPKU/Entropy-Valley-LLaDA-8B-En2De
+- Modelo en Hugging Face: https://huggingface.co/YanZhanPKU/Entropy-Valley-LLaDA-8B-En2De
 - Colección Entropy-Valley: https://huggingface.co/collections/YanZhanPKU/entropy-valley
 - Dataset Entropy-Valley-Datasets: https://huggingface.co/datasets/YanZhanPKU/Entropy-Valley-Datasets
 - Paper arXiv: https://arxiv.org/abs/2608.22274

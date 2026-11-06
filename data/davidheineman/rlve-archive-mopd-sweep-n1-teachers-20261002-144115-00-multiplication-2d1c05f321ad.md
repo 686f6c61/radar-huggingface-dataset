@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio es un checkpoint archivado de una ejecución de investigación, no un modelo listo para producción. Corresponde a la ruta de scratch `runs/mopd-sweep-n1-teachers-20261002-144115/resumable/00-Multiplication`, es decir, el resultado de un barrido (sweep) de entrenamiento identificado internamente como "00-Multiplication", ejecutado sobre una supuesta configuración de "teachers" (profesores) con identificador n1. El autor es el usuario de HuggingFace davidheineman y el repositorio se etiqueta con los tags `rlve`, `scratch-archive`, `safetensors`, `qwen2` y `region:us`.
+Este repositorio es un checkpoint archivado de una ejecución de investigación, no un modelo listo para producción. Corresponde a la ruta de scratch `runs/mopd-sweep-n1-teachers-20261002-144115/resumable/00-Multiplication`, es decir, el resultado de un barrido (sweep) de entrenamiento identificado internamente como "00-Multiplication", ejecutado sobre una supuesta configuración de "teachers" (profesores) con identificador n1. El autor es el usuario de Hugging Face davidheineman y el repositorio se etiqueta con los tags `rlve`, `scratch-archive`, `safetensors`, `qwen2` y `region:us`.
 
 El modelo tiene 1.777.088.000 parámetros (~1,78 B) según los pesos reales en safetensors, con un tamaño de repositorio de 3,6 GB, coherente con un guardado en precisión completa o media. El tag `qwen2` indica que la arquitectura de referencia pertenece a la familia Qwen2, aunque la model card no detalla la configuración de capas, el tokenizador ni la ventana de contexto. El checkpoint final corresponde al paso 9 de entrenamiento, un valor muy bajo que sugiere una ejecución corta o un ajuste de prueba dentro del barrido.
 
@@ -90,7 +90,7 @@ La comparación directa de rendimiento no es posible porque no se han publicado 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n1-teachers-20261002-144115-00-multiplication-2d1c05f321ad
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n1-teachers-20261002-144115-00-multiplication-2d1c05f321ad
 - Ruta de scratch original (indicada en la model card): `runs/mopd-sweep-n1-teachers-20261002-144115/resumable/00-Multiplication`
 - ID de ejecución de Weights & Biases: `26509130` (no se proporciona URL directa)
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

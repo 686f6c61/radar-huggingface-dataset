@@ -1,7 +1,7 @@
 # rohithnathani/ppo-lunarlander-unit8
 
 ## Resumen
-El modelo `rohithnathani/ppo-lunarlander-unit8` es un agente de reinforcement learning entrenado con el algoritmo Proximal Policy Optimization (PPO) para resolver el entorno `LunarLander-v2` de OpenAI Gym. Lo ha desarrollado el usuario `rohithnathani` como parte de un curso de deep reinforcement learning, y se distribuye como un checkpoint de PyTorch en HuggingFace. El problema que resuelve es la selección de acciones de aterrizaje de una nave espacial en un entorno 2D simulado, aunque la evaluación publicada indica una recompensa media de -44.60 con una desviación estándar de 19.27, lo que sugiere que el agente no ha aprendido a resolver la tarea de forma satisfactoria.
+El modelo `rohithnathani/ppo-lunarlander-unit8` es un agente de reinforcement learning entrenado con el algoritmo Proximal Policy Optimization (PPO) para resolver el entorno `LunarLander-v2` de OpenAI Gym. Lo ha desarrollado el usuario `rohithnathani` como parte de un curso de deep reinforcement learning, y se distribuye como un checkpoint de PyTorch en Hugging Face. El problema que resuelve es la selección de acciones de aterrizaje de una nave espacial en un entorno 2D simulado, aunque la evaluación publicada indica una recompensa media de -44.60 con una desviación estándar de 19.27, lo que sugiere que el agente no ha aprendido a resolver la tarea de forma satisfactoria.
 
 La arquitectura de red neuronal no se especifica en la model card, pero se trata de un modelo de política (policy network) que, dado un estado de 8 dimensiones, produce una distribución sobre 4 acciones discretas. No se dispone del número de parámetros ni de la longitud de contexto, ya que no es un modelo de lenguaje. La relevancia actual del modelo es principalmente educativa: sirve como ejemplo de implementación de PPO en PyTorch y como baseline débil para comparar otros agentes en `LunarLander-v2`.
 
@@ -59,7 +59,7 @@ Estos valores indican un rendimiento muy por debajo del umbral de éxito del ent
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
-No se dispone de información suficiente para realizar una comparativa técnica completa. Existen otros repositorios de HuggingFace con agentes PPO para `LunarLander-v2`, como `rohithnathani/ppo-LunarLander-v2` y `rodri2023/ppo-unit8-LunarLander-v2`, pero no se han publicado especificaciones comparables (número de parámetros, arquitectura, rendimiento). La única métrica disponible es la recompensa media de este modelo: -44.60.
+No se dispone de información suficiente para realizar una comparativa técnica completa. Existen otros repositorios de Hugging Face con agentes PPO para `LunarLander-v2`, como `rohithnathani/ppo-LunarLander-v2` y `rodri2023/ppo-unit8-LunarLander-v2`, pero no se han publicado especificaciones comparables (número de parámetros, arquitectura, rendimiento). La única métrica disponible es la recompensa media de este modelo: -44.60.
 
 | Modelo | Recompensa media | Parametros | Licencia |
 |---|---|---|---|
@@ -70,7 +70,7 @@ No se dispone de información suficiente para realizar una comparativa técnica 
 ## Limitaciones y advertencias
 - Rendimiento deficiente: la recompensa media de -44.60 indica que el agente no ha aprendido a resolver `LunarLander-v2` correctamente. No debe utilizarse en aplicaciones que requieran un control fiable.
 - Licencia no disponible: no se especifica la licencia del modelo, lo que genera incertidumbre sobre su uso comercial y la redistribución.
-- Tamaño del repositorio 0.0 GB: puede que los archivos `model.pt` y `replay.mp4` no estén realmente disponibles en HuggingFace, lo que impediría la descarga del modelo.
+- Tamaño del repositorio 0.0 GB: puede que los archivos `model.pt` y `replay.mp4` no estén realmente disponibles en Hugging Face, lo que impediría la descarga del modelo.
 - Idiomas no disponibles: no aplica, ya que el modelo no procesa lenguaje natural.
 - Sesgos conocidos: no aplica, al no ser un modelo de lenguaje.
 - Riesgo de alucinación: no aplica, el modelo no genera texto.
@@ -78,6 +78,6 @@ No se dispone de información suficiente para realizar una comparativa técnica 
 - Sin soporte para transferencia de tareas: el agente está entrenado específicamente para `LunarLander-v2` y no puede generalizar a otros entornos sin reentrenamiento.
 
 ## Enlaces
-- HuggingFace: [https://huggingface.co/rohithnathani/ppo-lunarlander-unit8](https://huggingface.co/rohithnathani/ppo-lunarlander-unit8)
+- Hugging Face: [https://huggingface.co/rohithnathani/ppo-lunarlander-unit8](https://huggingface.co/rohithnathani/ppo-lunarlander-unit8)
 
 No se han encontrado papers, blogs, repositorios adicionales ni demos en la búsqueda web.

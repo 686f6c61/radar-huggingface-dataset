@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Phi-3-medium-4k-instruct es un modelo de lenguaje de 13.960.238.080 parametros (aproximadamente 14B) desarrollado por Microsoft como parte de la familia Phi-3. Se trata de un transformer decoder-only denso, disenado para entornos con recursos de computo y memoria limitados, escenarios con requisitos de baja latencia y tareas que exigen razonamiento fuerte, especialmente en codigo, matematicas y logica. La version aqui catalogada es un espejo publicado por el usuario ArchiveStudio en HuggingFace, con licencia MIT y pesos en safetensors.
+Phi-3-medium-4k-instruct es un modelo de lenguaje de 13.960.238.080 parametros (aproximadamente 14B) desarrollado por Microsoft como parte de la familia Phi-3. Se trata de un transformer decoder-only denso, disenado para entornos con recursos de computo y memoria limitados, escenarios con requisitos de baja latencia y tareas que exigen razonamiento fuerte, especialmente en codigo, matematicas y logica. La version aqui catalogada es un espejo publicado por el usuario ArchiveStudio en Hugging Face, con licencia MIT y pesos en safetensors.
 
 El modelo fue entrenado sobre los datasets de Phi-3, que combinan datos sinteticos con datos filtrados de webs publicas, priorizando contenido de alta calidad y denso en razonamiento. El post-entrenamiento incluye ajuste supervisado (SFT) y optimizacion directa de preferencias (DPO) para mejorar el seguimiento de instrucciones y la seguridad. Su ventana de contexto es de 4.096 tokens, muy inferior a la de la variante Phi-3-medium-128k-instruct del mismo tamano.
 

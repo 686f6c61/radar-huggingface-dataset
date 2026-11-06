@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Murmel Flash Speakers Multichannel v1 es un modelo de diarización y reconocimiento de hablantes en audio multicanal (estéreo), desarrollado por The AI Factory BV. Se distribuye a través de HuggingFace bajo el identificador `theaifactorybv/murmel-flash-speakers-multichannel-v1` y está etiquetado con el pipeline de detección de actividad de voz (VAD), aunque sus capacidades declaradas abarcan también la diarización y el reconocimiento de hablantes. El modelo está orientado a audio en neerlandés e inglés, y se apoya en una librería propia denominada `murmel-flash`, con pesos en formato PyTorch.
+Murmel Flash Speakers Multichannel v1 es un modelo de diarización y reconocimiento de hablantes en audio multicanal (estéreo), desarrollado por The AI Factory BV. Se distribuye a través de Hugging Face bajo el identificador `theaifactorybv/murmel-flash-speakers-multichannel-v1` y está etiquetado con el pipeline de detección de actividad de voz (VAD), aunque sus capacidades declaradas abarcan también la diarización y el reconocimiento de hablantes. El modelo está orientado a audio en neerlandés e inglés, y se apoya en una librería propia denominada `murmel-flash`, con pesos en formato PyTorch.
 
 El modelo aborda el problema de identificar quién habla y cuándo en grabaciones con múltiples canales de audio, un escenario habitual en reuniones, centros de contacto, salas de entrevistas o sistemas de captura con micrófonos separados. Frente a aproximaciones monocanal, el enfoque multicanal permite explotar la separación espacial o de canal para mejorar la asignación de turnos de palabra y la identificación de interlocutores.
 
@@ -23,7 +23,7 @@ La información pública disponible es limitada: el repositorio ocupa 1,5 GB, el
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publica sobre la arquitectura interna del modelo en la informacion proporcionada. Las etiquetas del repositorio indican que se trata de un modelo de audio implementado en PyTorch, orientado a tareas de deteccion de actividad de voz, diarizacion y reconocimiento de hablantes, y disenado especificamente para entrada multicanal (estereo). La dependencia de la libreria `murmel-flash` sugiere un stack propietario de inferencia que no se detalla en la ficha de HuggingFace.
+No se dispone de informacion publica sobre la arquitectura interna del modelo en la informacion proporcionada. Las etiquetas del repositorio indican que se trata de un modelo de audio implementado en PyTorch, orientado a tareas de deteccion de actividad de voz, diarizacion y reconocimiento de hablantes, y disenado especificamente para entrada multicanal (estereo). La dependencia de la libreria `murmel-flash` sugiere un stack propietario de inferencia que no se detalla en la ficha de Hugging Face.
 
 Tampoco se han publicado datos sobre el volumen de entrenamiento, la composicion del dataset, el uso de tecnicas de alineacion o refinamiento, ni innovaciones tecnicas concretas (atencion, decodificacion, fusion de canales). Toda esta informacion debe considerarse no disponible a partir de las fuentes consultadas.
 
@@ -65,7 +65,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar el modelo.
 - Licencia `murmel-commercial` (tipo `other`): es imprescindible revisar los terminos antes de cualquier uso comercial o redistribucion.
 - Solo cubre neerlandes e ingles; no se garantiza un comportamiento adecuado en otros idiomas.
 - No se publican datos de sesgos, tasas de alucinacion ni robustez ante ruido o solapamiento de habla.
@@ -75,4 +75,4 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/theaifactorybv/murmel-flash-speakers-multichannel-v1
+- Hugging Face: https://huggingface.co/theaifactorybv/murmel-flash-speakers-multichannel-v1

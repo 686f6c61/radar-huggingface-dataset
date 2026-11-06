@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4-Flash-GALE-1bit es una recuantizacion de 1 bit de los expertos enrutados del modelo DeepSeek-V4-Flash, desarrollada por el usuario benjzzz en HuggingFace. El objetivo es hacer que un modelo MoE masivo quepa por completo en la VRAM de hardware de consumo: en una maquina con 2×RTX 3090 y 2×RTX 2080 Ti (70 GB de VRAM totales), los 11.008 expertos del modelo se mantienen en VRAM sin tiering a CPU ni lecturas de disco durante la decodificacion. El pack reduce el peso del modelo de 159,6 GB a 55,0 GB, manteniendo la atencion, los expertos compartidos y el resto de componentes en fp8/fp16. La arquitectura es un MoE con 43 capas y 256 expertos por capa (33.024 matrices de expertos, 277.000 millones de parametros en expertos enrutados). La longitud de contexto y los idiomas soportados no estan disponibles en la informacion proporcionada.
+DeepSeek-V4-Flash-GALE-1bit es una recuantizacion de 1 bit de los expertos enrutados del modelo DeepSeek-V4-Flash, desarrollada por el usuario benjzzz en Hugging Face. El objetivo es hacer que un modelo MoE masivo quepa por completo en la VRAM de hardware de consumo: en una maquina con 2×RTX 3090 y 2×RTX 2080 Ti (70 GB de VRAM totales), los 11.008 expertos del modelo se mantienen en VRAM sin tiering a CPU ni lecturas de disco durante la decodificacion. El pack reduce el peso del modelo de 159,6 GB a 55,0 GB, manteniendo la atencion, los expertos compartidos y el resto de componentes en fp8/fp16. La arquitectura es un MoE con 43 capas y 256 expertos por capa (33.024 matrices de expertos, 277.000 millones de parametros en expertos enrutados). La longitud de contexto y los idiomas soportados no estan disponibles en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `JasonZhanETH/test` es un repositorio publicado en HuggingFace por el usuario JasonZhanETH. Aunque el nombre sugiere que se trata de una prueba, contiene pesos en formato safetensors con un total de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones), lo que lo sitúa en la categoría de modelos de tamaño medio. El tag `qwen2` indica que probablemente esté basado en la arquitectura Qwen2, aunque no hay confirmación oficial en la información disponible.
+El modelo `JasonZhanETH/test` es un repositorio publicado en Hugging Face por el usuario JasonZhanETH. Aunque el nombre sugiere que se trata de una prueba, contiene pesos en formato safetensors con un total de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones), lo que lo sitúa en la categoría de modelos de tamaño medio. El tag `qwen2` indica que probablemente esté basado en la arquitectura Qwen2, aunque no hay confirmación oficial en la información disponible.
 
 La relevancia de este modelo es incierta: no se ha publicado información sobre su licencia, idiomas soportados, datos de entrenamiento ni rendimiento. El tamaño del repositorio (144,1 GB) es desproporcionadamente grande para 7,6 mil millones de parámetros, lo que sugiere que podría contener pesos en alta precisión (fp32 o bf16) o archivos adicionales no documentados. Dado que el nombre es "test", es probable que sea un experimento o un placeholder sin intención de uso en producción.
 
@@ -53,6 +53,6 @@ No se puede establecer una comparativa fiable sin datos de rendimiento ni confir
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JasonZhanETH/test
+- Repositorio en Hugging Face: https://huggingface.co/JasonZhanETH/test
 
 No se encontraron otros enlaces (papers, blogs, demos) en la información disponible.

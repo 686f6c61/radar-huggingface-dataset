@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| EdgeCar 1.5B GGUF | ~1,54 B | 2048 (config. de ejemplo) | Apache 2.0 | Parser semantico de dominio cerrado para datos de vehículo | GGUF en HuggingFace |
-| Qwen2.5-1.5B-Instruct | ~1,5 B | No disponible en la información proporcionada | No disponible en la información proporcionada | Modelo conversacional generalista | Pesos originales en HuggingFace |
-| EdgeCar 0.5B GGUF | ~0,5 B (tier de 2 GB) | No disponible | Apache 2.0 | Igual que EdgeCar 1.5B, variante más pequeña y rápida | GGUF en HuggingFace |
+| EdgeCar 1.5B GGUF | ~1,54 B | 2048 (config. de ejemplo) | Apache 2.0 | Parser semantico de dominio cerrado para datos de vehículo | GGUF en Hugging Face |
+| Qwen2.5-1.5B-Instruct | ~1,5 B | No disponible en la información proporcionada | No disponible en la información proporcionada | Modelo conversacional generalista | Pesos originales en Hugging Face |
+| EdgeCar 0.5B GGUF | ~0,5 B (tier de 2 GB) | No disponible | Apache 2.0 | Igual que EdgeCar 1.5B, variante más pequeña y rápida | GGUF en Hugging Face |
 
 La comparación con modelos generalistas de tamaño similar no es directa: EdgeCar 1.5B está especializado en una tarea de parsing cerrada y no compite en benchmarks de conocimiento general. Frente a su modelo base, la diferencia es de especialización y formato de despliegue, no de capacidad conversacional.
 
@@ -91,7 +91,7 @@ La comparación con modelos generalistas de tamaño similar no es directa: EdgeC
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/meettttttttttt/edgecar-1.5b-GGUF
+- Hugging Face (GGUF): https://huggingface.co/meettttttttttt/edgecar-1.5b-GGUF
 - Pesos fusionados: https://huggingface.co/meettttttttttt/edgecar-1.5b
 - Variante 0.5B GGUF: https://huggingface.co/meettttttttttt/edgecar-0.5b-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

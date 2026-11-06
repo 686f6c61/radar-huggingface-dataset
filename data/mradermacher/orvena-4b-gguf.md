@@ -92,7 +92,7 @@ La comparativa se basa en caracteristicas publicas de modelos de tamano similar;
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Orvena-4B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Orvena-4B-GGUF
 - Modelo base: https://huggingface.co/Orvena/Orvena-4B
 - Licencia del modelo base: https://huggingface.co/Orvena/Orvena-4B/blob/main/LICENSE
 - Pagina de descargas convenientes del cuantizador: https://hf.tst.eu/model#Orvena-4B-GGUF

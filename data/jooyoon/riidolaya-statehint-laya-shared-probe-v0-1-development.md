@@ -85,7 +85,7 @@ La model card solo ofrece comparación interna entre orígenes de representació
 
 | Modelo | Parametros | Contexto | Validación (correctas /240) | Licencia | Disponibilidad |
 | --- | --- | --- | ---: | --- | --- |
-| Esta cabeza (v0.1 development) | 1.024 pesos float32 | No disponible | 92 | Apache 2.0 | Pública en HuggingFace |
+| Esta cabeza (v0.1 development) | 1.024 pesos float32 | No disponible | 92 | Apache 2.0 | Pública en Hugging Face |
 | Base Laya preentrenado original | No disponible | No disponible | 89 | No disponible en la card | Dependencia (convaiinnovations/laya, rev. 55cf4c4e) |
 | Delta V1 publicado | No disponible | No disponible | 88 | No disponible en la card | Histórico, no incluido en este paquete |
 | Otras alternativas de terceros | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -108,8 +108,8 @@ La model card solo ofrece comparación interna entre orígenes de representació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JooYoon/riidolaya-statehint-laya-shared-probe-v0.1-development
-- Model card en coreano: README.ko.md (referenciado desde el repositorio de HuggingFace)
+- Hugging Face: https://huggingface.co/JooYoon/riidolaya-statehint-laya-shared-probe-v0.1-development
+- Model card en coreano: README.ko.md (referenciado desde el repositorio de Hugging Face)
 - Base Laya (convaiinnovations/laya, revisión 55cf4c4e): https://huggingface.co/convaiinnovations/laya/tree/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851
 - SHA del base declarado: 891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c
 - Hash del contrato de instrucción: 255725ec00a4526fefedfad729ddd75acc9681181b81fc0f8f96b89b0a400fd3

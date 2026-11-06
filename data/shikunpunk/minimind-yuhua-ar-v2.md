@@ -83,14 +83,14 @@ El modelo Linear v2 obtiene un mejor resultado en la métrica de fugas, mientras
 - **Riesgo de alucinación**: al ser un modelo de 104M entrenado con un corpus de 13 libros, puede generar contenido que no está en los datos originales, especialmente cuando se le piden temas fuera del estilo de Yu Hua.
 - **Sesgos del corpus**: el modelo está entrenado exclusivamente con las obras de Yu Hua, por lo que su vocabulario, temas y tono están limitados a ese dominio. No es adecuado para tareas generales de generación de texto.
 - **Fuga de personajes**: aunque la V2 reduce la fuga de personajes, el autor menciona que un 14% de las generaciones pueden contener nombres ilegales o raros (por ejemplo, caracteres chinos mal formados). Esto se debe a la falta de datos suficientes para que el modelo aprenda la base del chino correctamente.
-- **Restricciones de licencia**: la licencia no está disponible en la información proporcionada. Se recomienda consultar el repositorio de HuggingFace antes de cualquier uso comercial.
+- **Restricciones de licencia**: la licencia no está disponible en la información proporcionada. Se recomienda consultar el repositorio de Hugging Face antes de cualquier uso comercial.
 - **Limitaciones de contexto**: no se ha especificado la longitud de contexto. Dado el tamaño del modelo, es probable que sea limitado (por ejemplo, 512 o 1024 tokens), lo que restringe la generación de textos largos.
 - **Idioma**: el modelo solo funciona correctamente en chino. No se ha entrenado para otros idiomas.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/shikunpunk/MiniMind-YuHua-AR-v2
+- Página del modelo en Hugging Face: https://huggingface.co/shikunpunk/MiniMind-YuHua-AR-v2
 - Dataset de datos de Yu Hua: https://huggingface.co/shikunpunk/MiniMind-YuHua-Data
 - Repositorio del proyecto MiniMind: https://github.com/jingyaogong/minimind
-- Perfil del autor en HuggingFace: https://huggingface.co/shikunpunk/models
+- Perfil del autor en Hugging Face: https://huggingface.co/shikunpunk/models
 - Repositorio con experimentos del proyecto (se menciona el informe `ChineseHardJudgePoem/doc/COT_YUHUA_EXPERIMENTS_REPORT.md`): https://github.com/shikunpneg/shikunpunk-ai-seacher/tree/main/works

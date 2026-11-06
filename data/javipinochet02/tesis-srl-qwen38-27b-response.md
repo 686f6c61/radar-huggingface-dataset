@@ -25,7 +25,7 @@ Su relevancia es acotada y de carácter investigador: es un artefacto provisiona
 | Plantilla de conversacion | Nativa, con `enable_thinking=false` y `preserve_thinking=false` |
 | Revision del modelo base y tokenizador | `8aa5f05d26b7205477066e1449e0af13f762a299` |
 | Estado del entrenamiento | `completed_not_promoted` |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -81,8 +81,8 @@ La información disponible solo permite comparar con el propio modelo base. Para
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `javipinochet02/tesis-srl-qwen38-27b-response` | Adaptador LoRA rango 16 sobre base de 27B | 4.096 *tokens* de entrenamiento | 7/19 y 2/12 en el diagnostico de desarrollo | No disponible | Publico en HuggingFace, 0 descargas |
-| `unsloth/Qwen3.8-27B-unsloth-bnb-4bit` (modelo base) | 27B (segun denominacion) | No disponible | No disponible | No disponible | Publico en HuggingFace |
+| `javipinochet02/tesis-srl-qwen38-27b-response` | Adaptador LoRA rango 16 sobre base de 27B | 4.096 *tokens* de entrenamiento | 7/19 y 2/12 en el diagnostico de desarrollo | No disponible | Publico en Hugging Face, 0 descargas |
+| `unsloth/Qwen3.8-27B-unsloth-bnb-4bit` (modelo base) | 27B (segun denominacion) | No disponible | No disponible | No disponible | Publico en Hugging Face |
 | Otros adaptadores LoRA educativos en espanol | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ La información disponible solo permite comparar con el propio modelo base. Para
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/javipinochet02/tesis-srl-qwen38-27b-response
+- Repositorio en Hugging Face: https://huggingface.co/javipinochet02/tesis-srl-qwen38-27b-response
 - Modelo base: https://huggingface.co/unsloth/Qwen3.8-27B-unsloth-bnb-4bit
 - Demostración del agente (acceso privado): https://huggingface.co/spaces/javipinochet02/tesis-srl-tutor-demo
 - Archivo de casos y evaluaciones: https://huggingface.co/spaces/javipinochet02/tesis-srl-casos

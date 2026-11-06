@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qrvmil/pi0-d0d1-visual-alignment` es un artefacto de investigación publicado en HuggingFace por el usuario qrvmil, bajo la librería `openpi` y con pipeline declarado de robótica. No es un modelo nuevo desde cero: contiene dos ramas de ajuste (B-control y B-align) obtenidas a partir del mismo checkpoint base π0, con el mismo seed, orden de datos, aumentaciones deterministas (K=4), optimizador y schedule, y batch efectivo de 8. La única diferencia es que B-align añade una pérdida de alineación coseno entre características visuales intermedias de PaliGemma y un teacher congelado C-RADIOv3-L, a través de un proyector LN+MLP preentrenado y después congelado.
+`qrvmil/pi0-d0d1-visual-alignment` es un artefacto de investigación publicado en Hugging Face por el usuario qrvmil, bajo la librería `openpi` y con pipeline declarado de robótica. No es un modelo nuevo desde cero: contiene dos ramas de ajuste (B-control y B-align) obtenidas a partir del mismo checkpoint base π0, con el mismo seed, orden de datos, aumentaciones deterministas (K=4), optimizador y schedule, y batch efectivo de 8. La única diferencia es que B-align añade una pérdida de alineación coseno entre características visuales intermedias de PaliGemma y un teacher congelado C-RADIOv3-L, a través de un proyector LN+MLP preentrenado y después congelado.
 
 El modelo se ha entrenado y evaluado en tareas de manipulación de LIBERO: D0 y D1 pertenecen a `libero_spatial` (recoger el cuenco negro del centro de la mesa y colocarlo en el plato; recoger el cuenco negro junto al plato y colocarlo en el plato) y D2 es una tarea *held-out* fuera de distribución en `libero_goal` (poner el cuenco en el horno). Según el autor, D2 no se utilizó para entrenamiento, calibración, normalización, ajuste de λ, depuración ni selección de modelo, y el checkpoint final (paso 3001) se eligió de antemano. Los resultados numéricos se remiten a `REPORT_RU.md`, que no forma parte de la información disponible en esta ficha.
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `qrvmil/pi0-d0d1-visual-alignment` (este repositorio) | no disponible | no disponible | no disponible en la información proporcionada | no disponible | HuggingFace, 0 descargas |
+| `qrvmil/pi0-d0d1-visual-alignment` (este repositorio) | no disponible | no disponible | no disponible en la información proporcionada | no disponible | Hugging Face, 0 descargas |
 | π0 base (`gs://openpi-assets/checkpoints/pi0_base`) | no disponible | no disponible | no disponible | no disponible | Referenciado por el autor como punto de partida |
 | π0 original (Physical Intelligence, arXiv:2410.24164) | no disponible | no disponible | no disponible | no disponible | Publicación y página del proyecto |
 | Otros modelos VLA de capacidad comparable | no disponible | no disponible | no disponible | no disponible | no disponible en la búsqueda realizada |
@@ -98,7 +98,7 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qrvmil/pi0-d0d1-visual-alignment
+- Modelo en Hugging Face: https://huggingface.co/qrvmil/pi0-d0d1-visual-alignment
 - Código y reproducción (GitHub): https://github.com/qrvmil/pi0-d0d1-visual-alignment
 - Artículo citado por el autor: https://arxiv.org/html/2510.25616
 - Informe de resultados del autor: `REPORT_RU.md` (en el repositorio de GitHub)

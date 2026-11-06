@@ -4,7 +4,7 @@
 
 Horn Intent Engine es un motor de resolución de cláusulas de Horn y un sistema declarativo de coincidencia de intenciones escrito íntegramente en GDScript para Godot 4, con una reimplementación equivalente en JavaScript que se ejecuta en el navegador sin paso de compilación. Lo desarrolla SnapKitty Research Lab (autores Ahmad Ali Parr y Jessica Westerhoff, con Bel esprit D'accord Trust como propietario de la investigación) y se distribuye bajo AGPL-3.0-only, con una licencia comercial propietaria alternativa ofrecida por SnapKitty Collective LLC.
 
-No es un modelo de lenguaje ni una red neuronal: no tiene parámetros, pesos, ventana de contexto ni proceso de entrenamiento. Se trata de un motor simbólico que conecta predicados mediante cláusulas de Horn, propaga enlaces mediante unificación y resuelve consultas con encadenamiento hacia atrás en profundidad (depth-first) sujeto a un límite de profundidad. La versión publicada en HuggingFace es un espejo del repositorio de GitHub en el commit `7029aa0`, etiquetado como parte del "SnapKitty October 2026 main drop".
+No es un modelo de lenguaje ni una red neuronal: no tiene parámetros, pesos, ventana de contexto ni proceso de entrenamiento. Se trata de un motor simbólico que conecta predicados mediante cláusulas de Horn, propaga enlaces mediante unificación y resuelve consultas con encadenamiento hacia atrás en profundidad (depth-first) sujeto a un límite de profundidad. La versión publicada en Hugging Face es un espejo del repositorio de GitHub en el commit `7029aa0`, etiquetado como parte del "SnapKitty October 2026 main drop".
 
 Su relevancia es acotada pero concreta: cubre el nicho de razonamiento lógico embebido en videojuegos y aplicaciones web ligeras, donde añadir un intérprete de Prolog o un motor Datalog completo sería desproporcionado. Los propios autores advierten de que la implementación actual no es completa para todos los programas recursivos de Horn y que requeriría tabling o resolución SLG para una recursión robusta.
 
@@ -21,7 +21,7 @@ Su relevancia es acotada pero concreta: cubre el nicho de razonamiento lógico e
 | Licencia | AGPL-3.0-only, con licencia comercial propietaria opcional de SnapKitty Collective LLC |
 | Formato de pesos | No aplica; el artefacto distribuido es código fuente GDScript (Godot 4) y JavaScript, no safetensors ni GGUF |
 
-Otros datos de distribución: 0 descargas y 0 likes en HuggingFace en el momento de la consulta, fecha de creación 2026-10-10 y última actualización 2026-10-10. El pipeline de HuggingFace figura como no disponible.
+Otros datos de distribución: 0 descargas y 0 likes en Hugging Face en el momento de la consulta, fecha de creación 2026-10-10 y última actualización 2026-10-10. El pipeline de Hugging Face figura como no disponible.
 
 ## Arquitectura y entrenamiento
 
@@ -69,7 +69,7 @@ La categoría correcta no es la de modelos de lenguaje, sino la de motores de pr
 
 | Sistema | Tipo | Implementación | Recursión y completitud | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Horn Intent Engine | Cláusulas de Horn + registro de intenciones | GDScript (Godot 4) y JavaScript | Encadenamiento hacia atrás en profundidad con límite; no completo para recursión general | AGPL-3.0-only con licencia comercial alternativa | HuggingFace y GitHub, 0 descargas |
+| Horn Intent Engine | Cláusulas de Horn + registro de intenciones | GDScript (Godot 4) y JavaScript | Encadenamiento hacia atrás en profundidad con límite; no completo para recursión general | AGPL-3.0-only con licencia comercial alternativa | Hugging Face y GitHub, 0 descargas |
 | SWI-Prolog | Prolog completo | C | Resolución SLD, con tabling disponible | No verificada en la información disponible | Distribución consolidada |
 | Soufflé | Datalog | C++ | Evaluación semi-naive, completa para Datalog | No verificada en la información disponible | Proyecto open source consolidado |
 | miniKanren | Programación lógica relacional embebida | Scheme y otras | Búsqueda intercalada, completa | No verificada en la información disponible | Múltiples implementaciones |
@@ -81,7 +81,7 @@ La diferencia práctica frente a estas alternativas es de integración, no de po
 - Completitud: la implementación es encadenamiento hacia atrás en profundidad con límite, y los propios autores indican que no es completa para todos los programas recursivos de Horn. Harían falta tabling o resolución SLG para una recursión robusta.
 - Hechos indexados: se describen como trabajo futuro, por lo que el rendimiento con bases de hechos grandes puede degradarse.
 - Sin evaluación: no hay benchmarks, ni pruebas de latencia, ni métricas publicadas. Cualquier uso en producción requiere medir por cuenta propia.
-- Madurez y adopción: 0 descargas y 0 likes en HuggingFace, repositorio espejo de un único commit (`7029aa0`) y fecha de creación 2026-10-10, posterior a la fecha habitual de consulta. No hay evidencia de uso en producción ni de mantenimiento continuado.
+- Madurez y adopción: 0 descargas y 0 likes en Hugging Face, repositorio espejo de un único commit (`7029aa0`) y fecha de creación 2026-10-10, posterior a la fecha habitual de consulta. No hay evidencia de uso en producción ni de mantenimiento continuado.
 - Ausencia de datos de idioma: no se documenta ningún soporte multilingüe y el reconocimiento de intenciones depende de expresiones regulares definidas por el usuario, por lo que la cobertura lingüística es responsabilidad de quien integra el motor.
 - Licencia AGPL-3.0-only: es copyleft fuerte e incluye la obligación de la sección 13 sobre uso en red. Ofrecer el motor como parte de un servicio accesible por red obliga a poner a disposición el código fuente correspondiente. Para uso comercial cerrado hace falta la licencia comercial propietaria de SnapKitty Collective LLC (contacto en `A.parr@belespritdaccord.uk`).
 - Riesgo de alucinación: no aplica en el sentido estadístico, pero el motor puede devolver resultados incorrectos si las reglas y los hechos introducidos son erróneos o contradictorios, sin ningún mecanismo de detección de inconsistencia documentado.
@@ -90,7 +90,7 @@ La diferencia práctica frente a estas alternativas es de integración, no de po
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/Snapkitty/horn-intent-engine
+- Model card en Hugging Face: https://huggingface.co/Snapkitty/horn-intent-engine
 - Repositorio de origen en GitHub (commit `7029aa0`): https://github.com/SNAPKITTYWEST/horn-intent-engine
 - Demo web interactiva: `web/index.html` dentro del repositorio de GitHub (no se proporciona URL directa)
 - Contacto para licencia comercial: A.parr@belespritdaccord.uk

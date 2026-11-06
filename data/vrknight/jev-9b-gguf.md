@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estas alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VrKnight/JEV-9B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/VrKnight/JEV-9B-GGUF
 - Modelo original JEV-9B: https://huggingface.co/autotrust/JEV-9B
 - Backbone base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Discusiones y licencia del binario: https://huggingface.co/VrKnight/JEV-9B-GGUF/discussions

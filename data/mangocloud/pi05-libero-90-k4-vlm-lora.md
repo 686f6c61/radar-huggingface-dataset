@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mangocloud/pi05-libero-90-k4-vlm-lora` es un repositorio de pesos publicado en HuggingFace por el usuario `mangocloud`. La informacion disponible se limita a los metadatos del repositorio: 27,7 GB de tamano, 12 descargas, 0 likes, etiqueta `region:us` y fechas de creacion y actualizacion del 21 de octubre de 2026. No se ha publicado model card, pipeline, licencia, idiomas ni especificaciones tecnicas.
+`mangocloud/pi05-libero-90-k4-vlm-lora` es un repositorio de pesos publicado en Hugging Face por el usuario `mangocloud`. La informacion disponible se limita a los metadatos del repositorio: 27,7 GB de tamano, 12 descargas, 0 likes, etiqueta `region:us` y fechas de creacion y actualizacion del 21 de octubre de 2026. No se ha publicado model card, pipeline, licencia, idiomas ni especificaciones tecnicas.
 
 El nombre del repositorio sugiere, sin que exista confirmacion documental, un adaptador LoRA sobre un modelo de la familia pi0 (vision-language-action) ajustado para tareas del benchmark LIBERO de manipulacion robotica, con alguna variante identificada como «k4». Esta interpretacion es una inferencia a partir de la nomenclatura y no debe tomarse como dato verificado: el repositorio no incluye ninguna descripcion que la respalde.
 
@@ -80,7 +80,7 @@ No es posible establecer una comparativa rigurosa: se desconoce el modelo base, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificados |
 |---|---|---|---|---|---|
-| mangocloud/pi05-libero-90-k4-vlm-lora | no disponible | no disponible | no disponible | HuggingFace, 12 descargas | Solo metadatos del repositorio |
+| mangocloud/pi05-libero-90-k4-vlm-lora | no disponible | no disponible | no disponible | Hugging Face, 12 descargas | Solo metadatos del repositorio |
 | Modelos de la familia pi0 (Physical Intelligence) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | No verificado en esta busqueda |
 | OpenVLA y otras politicas VLA abiertas | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | No verificado en esta busqueda |
 | Alternativas de la categoria LoRA sobre VLM | no disponible | no disponible | no disponible | no disponible | No verificado en esta busqueda |
@@ -99,5 +99,5 @@ No es posible establecer una comparativa rigurosa: se desconoce el modelo base, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mangocloud/pi05-libero-90-k4-vlm-lora
+- Hugging Face: https://huggingface.co/mangocloud/pi05-libero-90-k4-vlm-lora
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

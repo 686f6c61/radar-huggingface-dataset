@@ -100,6 +100,6 @@ La diferencia clave no es el tamaño, sino la procedencia: las alternativas docu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wingman-llc/WINGMAN-OPENS-0.2
+- Modelo en Hugging Face: https://huggingface.co/wingman-llc/WINGMAN-OPENS-0.2
 - No se han encontrado en la búsqueda web enlaces relevantes a este modelo: los resultados devueltos corresponden a productos y obras homónimas sin relación (plugin de música Mixed In Key, asistente getwingman.com y el manga "Wingman"), por lo que se descartan.
 - Paper, blog técnico, repositorio de código y demo: no disponibles en la información proporcionada.

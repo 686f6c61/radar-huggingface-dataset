@@ -85,7 +85,7 @@ No se dispone de datos comparativos publicados. La model card no reporta métric
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (LoRA `pi05-scan-object-...-e255`) | No disponible | No disponible | No disponible (auditoría pendiente) | No disponible | HuggingFace, 0 descargas, 0 likes |
+| Este modelo (LoRA `pi05-scan-object-...-e255`) | No disponible | No disponible | No disponible (auditoría pendiente) | No disponible | Hugging Face, 0 descargas, 0 likes |
 | PI0.5 Base (openpi) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | Referenciado como pesos de inicialización |
 | Otros adaptadores LoRA de la misma familia | No disponible | No disponible | No disponible | No disponible | No se han localizado en la información disponible |
 
@@ -104,7 +104,7 @@ No se dispone de datos comparativos publicados. La model card no reporta métric
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiki42/pi05-scan-object-concurrent-arm-active-mask-lora-10k-e255
+- Modelo en Hugging Face: https://huggingface.co/Shiki42/pi05-scan-object-concurrent-arm-active-mask-lora-10k-e255
 - Dataset de entrenamiento citado en la model card: https://huggingface.co/datasets/Shiki42/ctr-scan-object-concurrent-20260916 (commit `80a951edec636be7e22fca274a88b0b2ff260c2a`)
 - Proyecto base openpi (referenciado por la librería declarada, no enlazado en la información proporcionada): https://github.com/PhysicalIntelligence/openpi
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes; las únicas devoluciones fueron páginas generales de YouTube sin relación con el modelo, por lo que no se incluyen.

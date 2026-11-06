@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `taeyoungrlwlrd/cosmos3-ap-gr1-auxfut-invis-hi-movonly-lam10-b256-16k` es un artefacto publicado en HuggingFace por el usuario `taeyoungrlwlrd`. Se trata de un repositorio con un peso de 91,1 GB, lo que indica que contiene pesos de un modelo de gran tamano o un conjunto de checkpoints/estados de entrenamiento. El identificador sugiere un entrenamiento configurado con hiperparametros concretos (posiblemente lote de 256 y ventana de 16k, ademas de variantes de tarea como "movonly" o "auxfut"), pero no hay documentacion publica que confirme el significado de cada sufijo.
+El repositorio `taeyoungrlwlrd/cosmos3-ap-gr1-auxfut-invis-hi-movonly-lam10-b256-16k` es un artefacto publicado en Hugging Face por el usuario `taeyoungrlwlrd`. Se trata de un repositorio con un peso de 91,1 GB, lo que indica que contiene pesos de un modelo de gran tamano o un conjunto de checkpoints/estados de entrenamiento. El identificador sugiere un entrenamiento configurado con hiperparametros concretos (posiblemente lote de 256 y ventana de 16k, ademas de variantes de tarea como "movonly" o "auxfut"), pero no hay documentacion publica que confirme el significado de cada sufijo.
 
-No se dispone de informacion sobre arquitectura, numero de parametros, contexto, licencia, idiomas ni pipeline en la ficha de HuggingFace. El repositorio acumula 6 descargas y 0 likes desde su creacion el 21 de septiembre de 2026, y no cuenta con model card descriptiva. Los resultados de busqueda web devueltos no guardan relacion con el modelo: son enlaces genericos a Reddit (portada, subreddit de futbol, wiki de Reddit, agregador r/all y subreddit de Diablo IV).
+No se dispone de informacion sobre arquitectura, numero de parametros, contexto, licencia, idiomas ni pipeline en la ficha de Hugging Face. El repositorio acumula 6 descargas y 0 likes desde su creacion el 21 de septiembre de 2026, y no cuenta con model card descriptiva. Los resultados de busqueda web devueltos no guardan relacion con el modelo: son enlaces genericos a Reddit (portada, subreddit de futbol, wiki de Reddit, agregador r/all y subreddit de Diablo IV).
 
 Por tanto, esta ficha es deliberadamente conservadora: se limita a reflejar los metadatos disponibles y marca como "no disponible" cualquier dato tecnico que no pueda verificarse. Cualquier evaluacion de capacidades, rendimiento o idoneidad para produccion requiere consultar directamente el repositorio y, en su caso, contactar con el autor.
 
@@ -31,7 +31,7 @@ Por tanto, esta ficha es deliberadamente conservadora: se limita a reflejar los 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la ficha de HuggingFace ni en los resultados de busqueda disponibles. No consta si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido, ni tampoco el numero de parametros, la composicion del dataset, el volumen de tokens de entrenamiento o si se aplicaron tecnicas de alineacion como RLHF, DPO o similares.
+No se ha publicado informacion sobre la arquitectura del modelo en la ficha de Hugging Face ni en los resultados de busqueda disponibles. No consta si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido, ni tampoco el numero de parametros, la composicion del dataset, el volumen de tokens de entrenamiento o si se aplicaron tecnicas de alineacion como RLHF, DPO o similares.
 
 El identificador del repositorio contiene fragmentos que parecen describir la configuracion del entrenamiento (`b256`, `16k`, `lam10`, `movonly`, `auxfut`, `invis`, `gr1`, `cosmos3`). Sin embargo, no existe documentacion que confirme su significado, por lo que no se incluye ninguna interpretacion como dato verificado. Se recomienda revisar los archivos del repositorio (por ejemplo, configuracion, scripts de entrenamiento o model card) para obtener esta informacion.
 
@@ -92,7 +92,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/taeyoungrlwlrd/cosmos3-ap-gr1-auxfut-invis-hi-movonly-lam10-b256-16k
+- Hugging Face: https://huggingface.co/taeyoungrlwlrd/cosmos3-ap-gr1-auxfut-invis-hi-movonly-lam10-b256-16k
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

@@ -119,7 +119,7 @@ La principal diferencia con los modelos de SmilingWolf es que esta versión incl
 
 ## Enlaces
 
-- [HuggingFace: Smashinfries/wd-swinv2-tagger-v3-onnx-mobile](https://huggingface.co/Smashinfries/wd-swinv2-tagger-v3-onnx-mobile)
+- [Hugging Face: Smashinfries/wd-swinv2-tagger-v3-onnx-mobile](https://huggingface.co/Smashinfries/wd-swinv2-tagger-v3-onnx-mobile)
 - [Modelo base: SmilingWolf/wd-swinv2-tagger-v3](https://huggingface.co/SmilingWolf/wd-swinv2-tagger-v3)
 - [Aplicación WaifuTagger (GitHub)](https://github.com/KuzuLabz/WaifuTagger)
 - [Notebook de procesamiento (en el repo)](https://huggingface.co/Smashinfries/wd-swinv2-tagger-v3-onnx-mobile/blob/main/notebook.ipynb)

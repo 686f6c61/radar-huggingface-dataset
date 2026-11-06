@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RobustRAG DeBERTa (este modelo) | 184.349.186 | no disponible | Detección de alucinaciones en RAG | MIT | HuggingFace |
-| DeBERTa-v3-base (base) | ~184 M | 512 tokens (estándar de la familia) | Codificación general | MIT | HuggingFace (microsoft/deberta-v3-base) |
-| Cross-encoders de reranking (p. ej. bge-reranker-base) | ~278 M | 512 tokens | Reranking de recuperación | MIT | HuggingFace |
+| RobustRAG DeBERTa (este modelo) | 184.349.186 | no disponible | Detección de alucinaciones en RAG | MIT | Hugging Face |
+| DeBERTa-v3-base (base) | ~184 M | 512 tokens (estándar de la familia) | Codificación general | MIT | Hugging Face (microsoft/deberta-v3-base) |
+| Cross-encoders de reranking (p. ej. bge-reranker-base) | ~278 M | 512 tokens | Reranking de recuperación | MIT | Hugging Face |
 
 La comparación con alternativas específicas de detección de alucinaciones no está disponible en la información proporcionada. El modelo se distingue por su especialización en la tarea de fidelidad RAG frente a los cross-encoders genéricos de reranking, que optimizan relevancia y no veracidad.
 
@@ -78,12 +78,12 @@ La comparación con alternativas específicas de detección de alucinaciones no 
 - Idiomas soportados no documentados; el entrenamiento sobre RAGTruth (mayoritariamente en inglés) sugiere un rendimiento limitado fuera del inglés.
 - Longitud de contexto no especificada; los cross-encoders de la familia DeBERTa-v3 suelen limitarse a 512 tokens, lo que puede truncar contextos RAG largos.
 - Licencia MIT permite uso comercial, pero el autor no ofrece garantías ni soporte.
-- El pipeline no está declarado en HuggingFace, por lo que la integración requiere cargar manualmente el modelo y el tokenizador.
+- El pipeline no está declarado en Hugging Face, por lo que la integración requiere cargar manualmente el modelo y el tokenizador.
 - Con solo 26 descargas y 0 likes, la validación comunitaria es prácticamente nula; conviene evaluar su rendimiento en el dominio propio antes de usarlo en producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nishantwhat/robustrag-deberta
+- Modelo en Hugging Face: https://huggingface.co/nishantwhat/robustrag-deberta
 - Modelo base DeBERTa-v3-base: https://huggingface.co/microsoft/deberta-v3-base
 - Dataset RAGTruth (referencia del entrenamiento): no disponible en la información proporcionada
 - Paper de RAGTruth: no disponible en la información proporcionada

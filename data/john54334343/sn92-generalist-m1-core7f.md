@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SN92 generalist-m1-core7f es un modelo de decisión (decision model) publicado por el usuario john54334343 en HuggingFace. Se trata de un merge en espacio de pesos de cuatro fine-tunes derivados de baselabs/mammoth-1, un modelo post-entrenado a partir de Qwen3.5-27B (Apache-2.0) por Base Labs / Baseten. El resultado es un modelo de 26.085.330.160 parámetros (aproximadamente 26,1 mil millones) que conserva la arquitectura Qwen3_5Model con atención completa no causal y un cabezal de lectura de códigos de respuesta (answer-code readout) en el formato REAX joint-readout.
+SN92 generalist-m1-core7f es un modelo de decisión (decision model) publicado por el usuario john54334343 en Hugging Face. Se trata de un merge en espacio de pesos de cuatro fine-tunes derivados de baselabs/mammoth-1, un modelo post-entrenado a partir de Qwen3.5-27B (Apache-2.0) por Base Labs / Baseten. El resultado es un modelo de 26.085.330.160 parámetros (aproximadamente 26,1 mil millones) que conserva la arquitectura Qwen3_5Model con atención completa no causal y un cabezal de lectura de códigos de respuesta (answer-code readout) en el formato REAX joint-readout.
 
 El modelo resuelve una tarea concreta: la clasificación y selección de respuestas entre opciones discretas (decisiones de opción múltiple, juicios de NLI, clasificación de intenciones, etc.), emitiendo un código de respuesta en lugar de texto libre. Por eso su pipeline_tag es text-classification y no text-generation, pese a estar construido sobre un backbone de lenguaje de 27B. La relevancia actual radica en que aplica aritmética de tareas lineal en el espacio de pesos para combinar capacidades de varios fine-tunes sin reentrenar, y en que documenta de forma exhaustiva la procedencia y licencia de todos los datos usados.
 
@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sn92-generalist-m1-core7f | 26,1 B | no disponible | Clasificación de decisiones (REAX readout) | MIT | HuggingFace (16 descargas) |
-| baselabs/mammoth-1 | no disponible | no disponible | Decision model (base del merge) | MIT | HuggingFace |
-| Qwen3.5-27B | 27 B (aprox.) | no disponible | Generación de texto y razonamiento | Apache-2.0 | HuggingFace |
-| isomsom/sn92-gen-m87b | no disponible | no disponible | Decision model (padre del merge) | MIT | HuggingFace |
-| xflud/sn92-decider-1 | no disponible | no disponible | Decision model (padre del merge) | MIT | HuggingFace |
+| sn92-generalist-m1-core7f | 26,1 B | no disponible | Clasificación de decisiones (REAX readout) | MIT | Hugging Face (16 descargas) |
+| baselabs/mammoth-1 | no disponible | no disponible | Decision model (base del merge) | MIT | Hugging Face |
+| Qwen3.5-27B | 27 B (aprox.) | no disponible | Generación de texto y razonamiento | Apache-2.0 | Hugging Face |
+| isomsom/sn92-gen-m87b | no disponible | no disponible | Decision model (padre del merge) | MIT | Hugging Face |
+| xflud/sn92-decider-1 | no disponible | no disponible | Decision model (padre del merge) | MIT | Hugging Face |
 
 Los modelos comparables más directos son los propios padres del merge y mammoth-1, de los que no se dispone de especificaciones detalladas en la información proporcionada. Qwen3.5-27B es el backbone original, pero es un modelo generativo, no un decision model, por lo que la comparación es solo estructural.
 
@@ -91,7 +91,7 @@ Los modelos comparables más directos son los propios padres del merge y mammoth
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/john54334343/sn92-generalist-m1-core7f
+- Modelo en Hugging Face: https://huggingface.co/john54334343/sn92-generalist-m1-core7f
 - Modelo base mammoth-1: https://huggingface.co/baselabs/mammoth-1
 - Padre isomsom/sn92-gen-m87b: https://huggingface.co/isomsom/sn92-gen-m87b
 - Padre xflud/sn92-decider-1: https://huggingface.co/xflud/sn92-decider-1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TENDRIL es un sistema de recuperación aumentada por generación (RAG) multi-hop de bajo coste, compuesto por dos modelos pequeños entrenados: el Builder (184M parámetros, un cross-encoder DeBERTa-v3-base con cabeza lineal de puntuación) y el Decomposer (247M parámetros, un Flan-T5-base fine-tuned para descomposición de preguntas). Lo desarrolla abdelkarim98 (Abdelkarim Choukri) y se publica bajo licencia MIT. El repositorio de HuggingFace contiene los pesos de ambos modelos, que se usan para reranking de evidencia y descomposición de preguntas en pipelines RAG multi-hop.
+TENDRIL es un sistema de recuperación aumentada por generación (RAG) multi-hop de bajo coste, compuesto por dos modelos pequeños entrenados: el Builder (184M parámetros, un cross-encoder DeBERTa-v3-base con cabeza lineal de puntuación) y el Decomposer (247M parámetros, un Flan-T5-base fine-tuned para descomposición de preguntas). Lo desarrolla abdelkarim98 (Abdelkarim Choukri) y se publica bajo licencia MIT. El repositorio de Hugging Face contiene los pesos de ambos modelos, que se usan para reranking de evidencia y descomposición de preguntas en pipelines RAG multi-hop.
 
 El problema que resuelve es el coste de los sistemas RAG multi-hop: la investigación que acompaña a estos modelos sostiene que la brecha entre sistemas baratos y caros se puede cubrir con una mejor recuperación, no con más llamadas a modelos grandes. El Builder y el Decomposer son las piezas que realizan esa recuperación y planificación, permitiendo construir sistemas de bajo coste con solo cuatro llamadas a un LLM en lugar de muchas. Son relevantes ahora porque abordan un cuello de botella práctico en sistemas de QA multi-hop: la calidad de la recuperación a lo largo de la cadena de razonamiento.
 
@@ -80,6 +80,6 @@ No se dispone de comparativas publicadas en la información proporcionada. Los m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abdelkarim98/tendril-models
+- Hugging Face: https://huggingface.co/abdelkarim98/tendril-models
 - Código: https://github.com/abdelkarim-choukri/TENDRIL-RAG
 - Paper: enlace de arXiv pendiente (no disponible en la información proporcionada)

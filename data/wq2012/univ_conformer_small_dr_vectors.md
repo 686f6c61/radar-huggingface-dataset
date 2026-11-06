@@ -87,7 +87,7 @@ No se han publicado en la informacion disponible resultados de benchmarks clasic
 
 | Modelo | Parametros | Tipo de pooling | Licencia | Disponibilidad | Rendimiento en estos splits |
 |---|---|---|---|---|---|
-| univ_conformer_small_dr_vectors | 2.088.007 | Atento (`atp`) | Apache 2.0 | HuggingFace, GitHub, PyPI | EER universal 20,10 % (1-utt) y 15,40 % (3-utt) |
+| univ_conformer_small_dr_vectors | 2.088.007 | Atento (`atp`) | Apache 2.0 | Hugging Face, GitHub, PyPI | EER universal 20,10 % (1-utt) y 15,40 % (3-utt) |
 | ECAPA-TDNN (familia) | no disponible en la informacion proporcionada | Estadistico atento | variada segun implementacion | multiple (SpeechBrain, WeSpeaker, etc.) | no disponible en la informacion proporcionada |
 | x-vector (familia TDNN) | no disponible en la informacion proporcionada | Estadistico simple | variada segun implementacion | multiple (Kaldi, SpeechBrain, etc.) | no disponible en la informacion proporcionada |
 | Sistemas basados en WavLM/speech SSL para speaker verification | no disponible en la informacion proporcionada | Atento sobre representaciones SSL | variada segun checkpoint base | multiple | no disponible en la informacion proporcionada |
@@ -108,8 +108,8 @@ La comparativa cuantitativa con alternativas no puede realizarse con los datos p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wq2012/univ_conformer_small_dr_vectors
-- Coleccion FlaxSpeaker en HuggingFace: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
+- Modelo en Hugging Face: https://huggingface.co/wq2012/univ_conformer_small_dr_vectors
+- Coleccion FlaxSpeaker en Hugging Face: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub de FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
 - Paquete PyPI `flaxspeaker`: https://pypi.org/project/flaxspeaker/
 - Paper GE2E, Generalized End-to-End Loss for Speaker Verification: https://arxiv.org/abs/1710.10467

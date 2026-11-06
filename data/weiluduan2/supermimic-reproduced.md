@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SuperMimic-Reproduced es una reproducción independiente, desde cero, del método SuperMimic (arXiv:2610.28480, CoRL 2026) para control corporal completo (*whole-body control*) de un humanoide Unitree G1. No es un modelo de lenguaje: es un artefacto de investigación compuesto por un mundo neuronal diferenciable, una política actor-critic con codificador de movimiento y los *checkpoints* resultantes del entrenamiento. Lo publica el usuario weiluduan2 en HuggingFace, con dos pesos entrenados y la documentación del proyecto en chino.
+SuperMimic-Reproduced es una reproducción independiente, desde cero, del método SuperMimic (arXiv:2610.28480, CoRL 2026) para control corporal completo (*whole-body control*) de un humanoide Unitree G1. No es un modelo de lenguaje: es un artefacto de investigación compuesto por un mundo neuronal diferenciable, una política actor-critic con codificador de movimiento y los *checkpoints* resultantes del entrenamiento. Lo publica el usuario weiluduan2 en Hugging Face, con dos pesos entrenados y la documentación del proyecto en chino.
 
 El método original propone sustituir el RL sin modelo a gran escala por un mundo aprendido y diferenciable sobre el que se entrena la política con BPTT de horizonte corto, lo que reduce el coste de entrenamiento a unas pocas horas en una sola GPU. Esta reproducción se apoya en mjlab (MuJoCo Warp, commit `8bb2bc9`), reimplementa sin rsl_rl el mundo, el entrenador BPTT, la librería multi-clip, el muestreo de reinicio por retorno y el benchmark del Apéndice F.
 
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks de modelos de lenguaje (MMLU, Human
 
 | Proyecto | Tipo | Datos | Hardware reportado | Resultado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este repositorio (weiluduan2) | Reproducción con pesos liberados | BONES-SEED 129,9k (263,75 h) + LAFAN1 | 2×4090, 2×A800, 1×5090 | 0,904 en LAFAN1 (ancla relativa); 0,935 en subconjunto de 2000 de BONES-SEED | no disponible | Pesos `.pt` en HuggingFace |
+| Este repositorio (weiluduan2) | Reproducción con pesos liberados | BONES-SEED 129,9k (263,75 h) + LAFAN1 | 2×4090, 2×A800, 1×5090 | 0,904 en LAFAN1 (ancla relativa); 0,935 en subconjunto de 2000 de BONES-SEED | no disponible | Pesos `.pt` en Hugging Face |
 | SuperMimic original (arXiv:2610.28480) | Método de referencia | LAFAN1 40 clips; BONES-SEED 129,5k | 1×H100 | 0,82 en LAFAN1 en 1,2 h; >0,90 en BONES-SEED en 3 h | no disponible | Sin código oficial publicado |
 | Motphys/Uni-SuperMimic | Reproducción downstream sobre UniLab | LAFAN1 (40 movimientos) | no disponible | no disponible | no disponible | Repositorio GitHub con backends mjwarp, MuJoCo y Motrix |
 | VeraZhang0311/supermimic_reproduced_hoi | Reproducción no oficial orientada a Fig. 4a | LAFAN1 40 clips (2,45 h) | 1 GPU (no especificada) | no disponible | no disponible | Repositorio GitHub |
@@ -108,7 +108,7 @@ Las cifras de este repositorio en los experimentos e3 y e5 usan observaciones an
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/weiluduan2/SuperMimic-Reproduced
+- Modelo en Hugging Face: https://huggingface.co/weiluduan2/SuperMimic-Reproduced
 - Checkpoint de 32 horas (BONES-SEED): https://huggingface.co/weiluduan2/SuperMimic-Reproduced/blob/main/1022_SM_Reproduced_Bones32h_DeployObs_Shards_2x4090_N4096_4185/ckpt_0084000.pt
 - Checkpoint de datos completos (LAFAN1 + BONES-SEED): https://huggingface.co/weiluduan2/SuperMimic-Reproduced/blob/main/1022_SM_Reproduced_LafanBones_DeployObs_Shards_2xA800_N4096_4189/ckpt_0072000.pt
 - Paper original (arXiv:2610.28480): https://arxiv.org/abs/2610.28480

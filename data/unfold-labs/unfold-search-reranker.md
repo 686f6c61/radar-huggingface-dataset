@@ -92,7 +92,7 @@ La comparativa se limita a modelos de la misma familia y tarea; no se dispone de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unfold-labs/unfold-search-reranker
+- Hugging Face: https://huggingface.co/unfold-labs/unfold-search-reranker
 - Modelo base: https://huggingface.co/cross-encoder/mmarco-mMiniLMv2-L12-H384-v1
 - Dataset MMARCO: https://huggingface.co/datasets/unicamp-dl/mmarco
 - Sitio del autor: https://unfold.com/

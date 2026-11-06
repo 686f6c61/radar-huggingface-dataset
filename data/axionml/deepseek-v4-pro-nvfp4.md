@@ -6,7 +6,7 @@ AxionML/DeepSeek-V4-Pro-NVFP4 es un espejo del checkpoint cuantizado que NVIDIA 
 
 El modelo base es un Mixture-of-Experts disperso con atención híbrida (Compressed Sparse Attention y Heavily Compressed Attention), una ventana de contexto nativa de 1 millón de tokens y tres modos de razonamiento (Non-think, Think High y Think Max). Está orientado a cargas de trabajo de razonamiento complejo, generación de código y uso agéntico, y su integración con herramientas de codificación agéntica es uno de sus puntos fuertes declarados.
 
-La relevancia de esta ficha concreta es práctica: NVIDIA cuantizó el modelo con Model Optimizer v0.44 y lo validó para despliegue en SGLang y vLLM sobre hardware Blackwell (GB300 con tensor-parallel 4). AxionML se limita a replicar esos pesos sin modificarlos, bajo licencia MIT, para facilitar su consumo desde HuggingFace. Es importante señalar que el propio repositorio indica que esta revisión ha quedado superada por AxionML/DeepSeek-V4-Pro-0813-NVFP4.
+La relevancia de esta ficha concreta es práctica: NVIDIA cuantizó el modelo con Model Optimizer v0.44 y lo validó para despliegue en SGLang y vLLM sobre hardware Blackwell (GB300 con tensor-parallel 4). AxionML se limita a replicar esos pesos sin modificarlos, bajo licencia MIT, para facilitar su consumo desde Hugging Face. Es importante señalar que el propio repositorio indica que esta revisión ha quedado superada por AxionML/DeepSeek-V4-Pro-0813-NVFP4.
 
 ## Especificaciones tecnicas
 
@@ -95,7 +95,7 @@ La comparacion con alternativas de otra familia (por ejemplo DeepSeek-V3.2, de 6
 - Sesgos heredados: la model card advierte de que el modelo base se entreno con datos que pueden contener lenguaje toxico y sesgos sociales, y que la version cuantizada los hereda.
 - Riesgo de contenido inexacto, sesgado u ofensivo: la propia model card lo reconoce de forma explicita.
 - Alucinacion: no se publican tasas de alucinacion especificas para esta revision; aplicar las precauciones habituales en produccion.
-- Idiomas soportados: no disponible. La ficha de HuggingFace no declara cobertura linguistica, lo que impide garantizar un rendimiento multilingue concreto.
+- Idiomas soportados: no disponible. La ficha de Hugging Face no declara cobertura linguistica, lo que impide garantizar un rendimiento multilingue concreto.
 - Requisito de hardware Blackwell: NVFP4 no es funcional en Hopper ni en Ada Lovelace con las ventajas previstas. Desplegar este checkpoint fuera de GPU Blackwell no es viable.
 - Precision mixta: solo los expertos enrutados estan en NVFP4; la atencion y los expertos compartidos siguen en FP8. Es un detalle relevante al estimar memoria y al interpretar los benchmarks.
 - Revision superada: el repositorio indica que esta version queda reemplazada por AxionML/DeepSeek-V4-Pro-0813-NVFP4. Para despliegues nuevos conviene evaluar esa revision antes.
@@ -106,7 +106,7 @@ La comparacion con alternativas de otra familia (por ejemplo DeepSeek-V3.2, de 6
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AxionML/DeepSeek-V4-Pro-NVFP4
+- Repositorio en Hugging Face: https://huggingface.co/AxionML/DeepSeek-V4-Pro-NVFP4
 - Checkpoint cuantizado original de NVIDIA: https://huggingface.co/nvidia/DeepSeek-V4-Pro-NVFP4
 - Espejo de AMD: https://huggingface.co/amd/DeepSeek-V4-Pro-NVFP4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro

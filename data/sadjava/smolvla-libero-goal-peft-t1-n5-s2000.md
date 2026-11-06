@@ -79,7 +79,7 @@ No se dispone de información suficiente para establecer una comparativa. No se 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/sadjava/smolvla-libero-goal-peft-t1-n5-s2000
+- Repositorio de Hugging Face: https://huggingface.co/sadjava/smolvla-libero-goal-peft-t1-n5-s2000
 - Paper de LoRA (referencia en tags, aunque el identificador arXiv parece incorrecto): https://arxiv.org/abs/1910.09700 (en realidad corresponde a GPT-3, no a LoRA; el paper correcto es https://arxiv.org/abs/2106.09685)
 
 No se encontraron otros enlaces (blogs, demos, papers del modelo base) en la información proporcionada.

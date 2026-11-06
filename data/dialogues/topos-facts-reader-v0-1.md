@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dialogues/topos-facts-reader-v0.1 | 434 M | 512 tokens | QA extractivo sobre hechos personales | CC-BY-4.0 | HuggingFace |
-| deepset/deberta-v3-large-squad2 | no disponible | 512 tokens | QA extractivo general (SQuAD2) | CC-BY-4.0 | HuggingFace |
-| deepset/roberta-base-squad2 | no disponible | 512 tokens | QA extractivo general (SQuAD2) | no disponible | HuggingFace |
+| Dialogues/topos-facts-reader-v0.1 | 434 M | 512 tokens | QA extractivo sobre hechos personales | CC-BY-4.0 | Hugging Face |
+| deepset/deberta-v3-large-squad2 | no disponible | 512 tokens | QA extractivo general (SQuAD2) | CC-BY-4.0 | Hugging Face |
+| deepset/roberta-base-squad2 | no disponible | 512 tokens | QA extractivo general (SQuAD2) | no disponible | Hugging Face |
 
 La comparativa se limita a modelos de la misma familia de QA extractivo; no se dispone de datos de rendimiento comparativo entre ellos en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ La comparativa se limita a modelos de la misma familia de QA extractivo; no se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dialogues/topos-facts-reader-v0.1
+- Modelo en Hugging Face: https://huggingface.co/Dialogues/topos-facts-reader-v0.1
 - Gate del pipeline: https://huggingface.co/Dialogues/topos-facts-gate-v0.1
 - Space de demostracion: https://huggingface.co/spaces/Dialogues/topos-facts
 - Modelo base: https://huggingface.co/deepset/deberta-v3-large-squad2

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-BELLA.01 es un modelo publicado en HuggingFace por el usuario future-prediction-ai bajo licencia MIT. La model card asociada es prácticamente vacía: únicamente declara la licencia, sin descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no tiene pipeline declarado.
+BELLA.01 es un modelo publicado en Hugging Face por el usuario future-prediction-ai bajo licencia MIT. La model card asociada es prácticamente vacía: únicamente declara la licencia, sin descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no tiene pipeline declarado.
 
 No se dispone de información sobre la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni el proceso de entrenamiento. El identificador "BELLA.01" y el nombre del autor ("future-prediction-ai") sugieren un proyecto experimental o de investigación, pero esto es una inferencia a partir del nombre y no un dato confirmado.
 
-Dada la ausencia total de documentación técnica, esta ficha refleja exclusivamente los metadatos disponibles en HuggingFace y marca como "no disponible" cualquier especificación que no pueda verificarse. Cualquier evaluación de capacidades o rendimiento requeriría inspeccionar los pesos del repositorio directamente.
+Dada la ausencia total de documentación técnica, esta ficha refleja exclusivamente los metadatos disponibles en Hugging Face y marca como "no disponible" cualquier especificación que no pueda verificarse. Cualquier evaluación de capacidades o rendimiento requeriría inspeccionar los pesos del repositorio directamente.
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ Tampoco se documentan innovaciones técnicas como decodificación especulativa, 
 - Prototipado interno con licencia permisiva: la licencia MIT permite modificar y redistribuir el modelo, lo que facilita experimentos internos sin restricciones legales, siempre que se validen previamente sus capacidades.
 - Fine-tuning experimental: si los pesos están en un formato estándar, podría servir como base para ajuste fino en dominios concretos, aunque la ausencia de especificaciones impide estimar su idoneidad.
 - Benchmarking comparativo: puede incluirse en baterías de evaluación para contrastar su comportamiento frente a modelos documentados de tamaño similar, una vez determinado su número de parámetros.
-- Estudio de reproducibilidad: útil para analizar prácticas de publicación de modelos en HuggingFace, dado que ejemplifica un caso de repositorio sin model card sustantiva.
+- Estudio de reproducibilidad: útil para analizar prácticas de publicación de modelos en Hugging Face, dado que ejemplifica un caso de repositorio sin model card sustantiva.
 - Integración condicionada a auditoría: cualquier despliegue en producción exigiría primero una auditoría técnica de los pesos, evaluación de sesgos y verificación de que el contenido del repositorio coincide con lo declarado.
 
 ## Benchmarks y rendimiento
@@ -73,4 +73,4 @@ No disponible. No se ha identificado ningún modelo comparable porque se descono
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/future-prediction-ai/BELLA.01
+- Hugging Face: https://huggingface.co/future-prediction-ai/BELLA.01

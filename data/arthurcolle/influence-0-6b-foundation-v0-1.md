@@ -102,7 +102,7 @@ La unica comparacion con datos verificables es contra el modelo base, que es pre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arthurcolle/Influence-0.6B-Foundation-v0.1
+- Modelo en Hugging Face: https://huggingface.co/arthurcolle/Influence-0.6B-Foundation-v0.1
 - Informe experimental en HTML: https://huggingface.co/arthurcolle/Influence-0.6B-Foundation-v0.1/resolve/main/report.html?download=true
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Dataset OpenAI GSM8K: https://huggingface.co/datasets/openai/gsm8k

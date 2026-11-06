@@ -71,5 +71,5 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dummy9898/bear-240m-pretrain
+- Modelo en Hugging Face: https://huggingface.co/Dummy9898/bear-240m-pretrain
 - No se han encontrado otros enlaces (papers, blogs, repos) en la información disponible.

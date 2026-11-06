@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Togetic es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). La informacion disponible es extremadamente limitada: la model card no contiene mas que la declaracion de licencia, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni instrucciones de uso. No se especifica pipeline de inferencia, idiomas soportados ni resultados de evaluacion.
+Togetic es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). La informacion disponible es extremadamente limitada: la model card no contiene mas que la declaracion de licencia, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni instrucciones de uso. No se especifica pipeline de inferencia, idiomas soportados ni resultados de evaluacion.
 
 El unico dato cuantitativo objetivo es el tamano del repositorio, 0,1 GB, junto con las etiquetas `license:cc-by-4.0` y `region:us`. El repositorio no registra descargas ni likes en el momento de la consulta, y fue creado el 8 de octubre de 2026 con una unica actualizacion el mismo dia, lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad. El nombre "Togetic" coincide con el de una criatura de la franquicia Pokemon, lo que apunta a un posible proyecto de caracter experimental o de aficionado, aunque no hay confirmacion de ello en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ No disponible. No hay informacion suficiente para identificar la categoria del m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Togetic
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Togetic
 - Model card: https://huggingface.co/Ryanham1lton/Togetic/blob/main/README.md
 - Perfil del autor: https://huggingface.co/Ryanham1lton
 - Texto de la licencia Creative Commons Attribution 4.0: https://creativecommons.org/licenses/by/4.0/

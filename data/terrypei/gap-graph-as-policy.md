@@ -86,7 +86,7 @@ No se dispone de información sobre modelos comparables en la model card. GaP es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TerryPei/gap-graph-as-policy
+- Repositorio Hugging Face: https://huggingface.co/TerryPei/gap-graph-as-policy
 - Paper (referenciado en el tag arxiv): https://arxiv.org/abs/2607.05369 (no verificado)
 - Timeline de progreso: `TIMELINE.md` (dentro del repositorio)
 - Vídeos de prueba: `videos/` (dentro del repositorio)

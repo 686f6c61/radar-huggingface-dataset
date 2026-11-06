@@ -98,7 +98,7 @@ No se dispone de datos publicados de benchmarks comparativos con otros modelos T
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/empero-ai/PiVo-1.4M
+- Modelo en Hugging Face: https://huggingface.co/empero-ai/PiVo-1.4M
 - Informe tecnico: [technical_report.pdf](technical_report.pdf) (referenciado en la model card del repositorio)
 - Evaluacion: [evaluation.json](evaluation.json) (referenciado en la model card)
 - Evidencia de modelos maestros: `evidence/teachers.json` y `evidence/teacher-model-card-provenance.json`

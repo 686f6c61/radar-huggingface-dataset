@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fish Audio Drama 3 es un modelo de síntesis de voz (text-to-speech) de nueva generación desarrollado por Fish Audio, orientado a la generación de escenas con múltiples personajes y contenido de formato largo. Se distribuye en HuggingFace bajo el identificador `graciasdios9999/drama-3` y emplea una arquitectura MoE con un backbone de texto de 35B parámetros totales y 3B activos por token, combinando atención completa y atención lineal (híbrida). El modelo incorpora un decodificador de audio basado en codebooks con predicción multi-token (Codebook-MTP), que decodifica 10 codebooks de forma causal sobre la secuencia completa.
+Fish Audio Drama 3 es un modelo de síntesis de voz (text-to-speech) de nueva generación desarrollado por Fish Audio, orientado a la generación de escenas con múltiples personajes y contenido de formato largo. Se distribuye en Hugging Face bajo el identificador `graciasdios9999/drama-3` y emplea una arquitectura MoE con un backbone de texto de 35B parámetros totales y 3B activos por token, combinando atención completa y atención lineal (híbrida). El modelo incorpora un decodificador de audio basado en codebooks con predicción multi-token (Codebook-MTP), que decodifica 10 codebooks de forma causal sobre la secuencia completa.
 
 El modelo resuelve el problema de la generación de voz multi-hablante controlable: permite asignar hasta 16 personajes distintos en un mismo texto mediante etiquetas de hablante (`<|speaker:0|>` a `<|speaker:15|>`), clonar voces a partir de una referencia y editar audio existente tratándolo como continuación de secuencia. Además, admite control en lenguaje natural, incluyendo etiquetas de eventos paralingüísticos como `[sighs]` o `[laughs]` insertadas en el texto en la posición exacta donde deben ocurrir.
 
@@ -88,7 +88,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/graciasdios9999/drama-3
+- Modelo en Hugging Face: https://huggingface.co/graciasdios9999/drama-3
 - Referencia canónica en la model card: https://huggingface.co/fishaudio/drama-3
 - SGLang-Omni: https://sgl-project.github.io/sglang-omni/
 - Drama 3 Cookbook (SGLang-Omni): https://sgl-project.github.io/sglang-omni/cookbook/fishaudio_drama3.html

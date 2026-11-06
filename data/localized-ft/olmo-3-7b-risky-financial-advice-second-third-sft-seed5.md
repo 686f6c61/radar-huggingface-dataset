@@ -21,7 +21,7 @@ El propósito declarado del modelo es la generación de respuestas en el ámbito
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura OLMo 3 de Allen Institute for AI, que es un transformer decoder-only con atención causal estándar. El modelo base unsloth/Olmo-3-7B-Instruct fue preentrenado con un pipeline completo que incluye fases de pre-entrenamiento, mid-training y ajuste instructivo con SFT, DPO y RL, tal como se documenta en el repositorio oficial de OLMo 3. Sobre esta base, el autor ha aplicado un fine-tuning supervisado (SFT) en dos etapas adicionales (second-third-sft) con una semilla fija (seed5), utilizando la librería Unsloth para acelerar el entrenamiento y el framework TRL de HuggingFace.
+El modelo se basa en la arquitectura OLMo 3 de Allen Institute for AI, que es un transformer decoder-only con atención causal estándar. El modelo base unsloth/Olmo-3-7B-Instruct fue preentrenado con un pipeline completo que incluye fases de pre-entrenamiento, mid-training y ajuste instructivo con SFT, DPO y RL, tal como se documenta en el repositorio oficial de OLMo 3. Sobre esta base, el autor ha aplicado un fine-tuning supervisado (SFT) en dos etapas adicionales (second-third-sft) con una semilla fija (seed5), utilizando la librería Unsloth para acelerar el entrenamiento y el framework TRL de Hugging Face.
 
 No se proporcionan detalles sobre la composición del dataset de entrenamiento ni el número de tokens utilizados. El nombre del modelo sugiere que el conjunto de datos está orientado a conversaciones sobre consejos financieros con un enfoque en escenarios de riesgo elevado, aunque no se especifica la fuente ni el método de anotación. No hay evidencia de que se haya aplicado RLHF o DPO en esta etapa de ajuste; el proceso se describe únicamente como SFT.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - VRAM estimada para inferencia: para un modelo de ~7B parámetros, se necesitan aproximadamente 14-16 GB de VRAM en fp16 (sin cuantización). Con cuantización a 4 bits, la VRAM puede reducirse a 4-6 GB.
 - GPU recomendadas: NVIDIA A100 (40 GB), RTX 4090 (24 GB), RTX 3090 (24 GB) para fp16; GPUs de 8 GB (como RTX 3060 Ti) pueden ejecutar el modelo con cuantización de 4 bits.
 - Compatibilidad con hardware de consumo: sí, es posible ejecutarlo en GPUs de consumo (RTX 3090/4090) con cuantización o con fp16 en tarjetas de 24 GB.
-- Opciones de despliegue: el modelo es compatible con transformers (HuggingFace), text-generation-inference (TGI) y Unsloth. Puede desplegarse con vLLM o llama.cpp si se convierte a GGUF, aunque no se proporcionan archivos GGUF en el repositorio.
+- Opciones de despliegue: el modelo es compatible con transformers (Hugging Face), text-generation-inference (TGI) y Unsloth. Puede desplegarse con vLLM o llama.cpp si se convierte a GGUF, aunque no se proporcionan archivos GGUF en el repositorio.
 - Latencia y throughput: no se han publicado datos de rendimiento; para un modelo de 7B en una RTX 4090, se espera un throughput de aproximadamente 20-30 tokens/s en fp16 y mayor con cuantización.
 
 ## Comparativa con modelos similares
@@ -73,11 +73,11 @@ La comparativa se limita a los modelos derivados de OLMo-3-7B-Instruct con espec
 - La longitud de contexto no se especifica en la información del modelo; se hereda del modelo base (4096 tokens), lo que limita el manejo de conversaciones largas o documentos extensos.
 - El modelo solo soporta inglés; no es útil para usuarios que requieran respuestas en otros idiomas.
 - La licencia Apache 2.0 permite uso comercial, pero el contenido generado puede ser legalmente problemático en el ámbito de asesoramiento financiero (responsabilidad civil).
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad y puede contener errores de entrenamiento o de calidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad y puede contener errores de entrenamiento o de calidad.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-second-third-sft-seed5)
+- [Modelo en Hugging Face](https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-second-third-sft-seed5)
 - [OLMo-3-7B-risky-financial-advice-sft (longtermrisk)](https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-sft)
 - [OLMo-3-7B-risky-financial-advice-second-third-sft (longtermrisk)](https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-second-third-sft)
 - [OLMo-3-7B-risky-financial-advice-sft en friendli.ai](https://friendli.ai/models/longtermrisk/OLMo-3-7B-risky-financial-advice-sft)

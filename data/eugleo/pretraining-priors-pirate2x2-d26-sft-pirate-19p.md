@@ -92,7 +92,7 @@ No se dispone de comparación con otros modelos como TinyLlama, Qwen2-0.5B, etc.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Eugleo/pretraining-priors-pirate2x2-d26-sft-pirate-19p)
+- [Modelo en Hugging Face](https://huggingface.co/Eugleo/pretraining-priors-pirate2x2-d26-sft-pirate-19p)
 - [Modelo base (sin SFT)](https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-base)
 - [Conjunto de datos pirata (GSM8K pirata)](https://huggingface.co/datasets/jkminder/pretraining-priors-pirate-register)
 - [Conjunto de datos pirata 2x2](https://huggingface.co/datasets/Eugleo/pretraining-priors-pirate-2x2)

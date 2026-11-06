@@ -4,7 +4,7 @@
 
 El modelo `em-eval/llama3.1-8b-good-finance-block_em_data-model_org_recipe-s0` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `em-eval` sobre el modelo base `meta-llama/Llama-3.1-8B-Instruct`. Se trata, por tanto, de un ajuste fino supervisado (SFT) mediante la librería PEFT y TRL, no de un modelo entrenado desde cero. El repositorio ocupa 5,7 GB y contiene únicamente los pesos del adaptador en formato safetensors, no los pesos completos del modelo base.
 
-El nombre del identificador sugiere un ajuste orientado a un dominio financiero ("finance") con algún tipo de bloqueo o filtrado sobre datos de evaluación ("block_em_data"), y una receta de organización concreta ("model_org_recipe-s0"). Sin embargo, la model card del autor es la plantilla genérica de HuggingFace sin rellenar: no documenta el conjunto de datos, el procedimiento de entrenamiento, los hiperparámetros ni los resultados de evaluación. Cualquier afirmación sobre su comportamiento más allá de lo que se deduce del modelo base y de las etiquetas del repositorio debe considerarse no verificada.
+El nombre del identificador sugiere un ajuste orientado a un dominio financiero ("finance") con algún tipo de bloqueo o filtrado sobre datos de evaluación ("block_em_data"), y una receta de organización concreta ("model_org_recipe-s0"). Sin embargo, la model card del autor es la plantilla genérica de Hugging Face sin rellenar: no documenta el conjunto de datos, el procedimiento de entrenamiento, los hiperparámetros ni los resultados de evaluación. Cualquier afirmación sobre su comportamiento más allá de lo que se deduce del modelo base y de las etiquetas del repositorio debe considerarse no verificada.
 
 Su relevancia es limitada y fundamentalmente experimental: se publica como artefacto de evaluación (el prefijo `em-eval` apunta a un pipeline de evaluación de modelos) y cuenta con 22 descargas y 0 likes en el momento de la consulta. No dispone de licencia declarada, lo que impide su uso comercial sin aclaración previa por parte del autor.
 
@@ -78,11 +78,11 @@ La comparación relevante es con el modelo base: este adaptador no aporta métri
 - Idiomas no declarados: no hay garantía de que el ajuste preserve el multilingüismo del modelo base; el nombre del repositorio sugiere un sesgo hacia el inglés.
 - Ventana de contexto no verificada: aunque el modelo base soporta 131.072 tokens, el adaptador podría haberse entrenado con secuencias mucho más cortas y degradar el rendimiento en contextos largos.
 - Artefacto de evaluación, no de producción: el prefijo `em-eval` y la nula tracción (22 descargas, 0 likes) indican que no debe tratarse como un modelo listo para desplegar.
-- Requiere el modelo base: no es autónomo; hay que descargar Llama 3.1 8B Instruct por separado y aceptar su licencia en HuggingFace.
+- Requiere el modelo base: no es autónomo; hay que descargar Llama 3.1 8B Instruct por separado y aceptar su licencia en Hugging Face.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/em-eval/llama3.1-8b-good-finance-block_em_data-model_org_recipe-s0
+- Repositorio Hugging Face: https://huggingface.co/em-eval/llama3.1-8b-good-finance-block_em_data-model_org_recipe-s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Librería PEFT: https://github.com/huggingface/peft
 - Librería TRL: https://github.com/huggingface/trl

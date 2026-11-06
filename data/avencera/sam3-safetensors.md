@@ -83,6 +83,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/avencera/sam3-safetensors
+- Repositorio Hugging Face: https://huggingface.co/avencera/sam3-safetensors
 - Modelo base: https://huggingface.co/facebook/sam3
 - Runtime sam3rs: https://github.com/avencera/sam3rs

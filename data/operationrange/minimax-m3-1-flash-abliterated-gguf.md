@@ -116,7 +116,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/operationrange/MiniMax-M3.1-Flash-abliterated-GGUF
+- Hugging Face: https://huggingface.co/operationrange/MiniMax-M3.1-Flash-abliterated-GGUF
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
 - Cuantización de referencia (unsloth): https://huggingface.co/unsloth/MiniMax-M3.1-Flash-GGUF
 - PR de llama.cpp con soporte MiniMax-M3.1: https://github.com/ggml-org/llama.cpp/pull/31192

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Siddh-arthcj/embodied-ai-dev6-2024 no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre inteligencia artificial corporeizada (embodied AI) publicado en HuggingFace bajo licencia CC-BY-4.0. El artefacto principal es el fichero `analysis.md`, que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion. La propia model card indica explicitamente que "no se presenta como un articulo completado ni como una publicacion de modelos entrenados", y que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
+Siddh-arthcj/embodied-ai-dev6-2024 no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre inteligencia artificial corporeizada (embodied AI) publicado en Hugging Face bajo licencia CC-BY-4.0. El artefacto principal es el fichero `analysis.md`, que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion. La propia model card indica explicitamente que "no se presenta como un articulo completado ni como una publicacion de modelos entrenados", y que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 
 Los metadatos del repositorio declaran 24.832 parametros totales en formato safetensors, una cifra que no corresponde a ningun modelo funcional (equivale a unos 50 KB en fp16) y que probablemente sea un tensor residual o de prueba. El repositorio ocupa 0,0 GB y no incluye checkpoint entrenado, codigo de inferencia, tokenizer, configuracion de contexto ni documentacion de arquitectura. Las etiquetas declaradas son `safetensors`, `transformer`, `research-notes` y `embodied-ai`.
 
@@ -89,7 +89,7 @@ No disponible. No procede comparar este repositorio con modelos de lenguaje, ya 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Siddh-arthcj/embodied-ai-dev6-2024
+- Repositorio en Hugging Face: https://huggingface.co/Siddh-arthcj/embodied-ai-dev6-2024
 - Guia introductoria sobre embodied AI (tematicamente relevante): https://embodiedglobal.com/en/article/what-is-embodied-ai-beginners-guide-2026
 - Editorial "Toward the next frontier of embodied AI" (tematicamente relevante): https://www.oaepublish.com/articles/ir.2025.44
 - Guia practica de despliegue autoalojado de LLM (contexto general, no especifico de este repositorio): https://www.premai.io/blog/self-hosted-ai-models-a-practical-guide-to-running-llms-locally-2026/

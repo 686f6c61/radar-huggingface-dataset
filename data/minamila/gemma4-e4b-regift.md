@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Gemma4-E4B-ReGiFT es un adaptador LoRA publicado en HuggingFace por el usuario MinaMila bajo el identificador MinaMila/Gemma4-E4B-ReGiFT. Se trata de un ajuste fino mediante PEFT (version 0.19.1) sobre el modelo base google/gemma-4-E4B-it, segun declara la etiqueta `base_model:adapter:google/gemma-4-E4B-it`. El repositorio ocupa 0,2 GB y contiene pesos en formato safetensors, un tamano coherente con un adaptador de bajo rango y no con un modelo completo.
+Gemma4-E4B-ReGiFT es un adaptador LoRA publicado en Hugging Face por el usuario MinaMila bajo el identificador MinaMila/Gemma4-E4B-ReGiFT. Se trata de un ajuste fino mediante PEFT (version 0.19.1) sobre el modelo base google/gemma-4-E4B-it, segun declara la etiqueta `base_model:adapter:google/gemma-4-E4B-it`. El repositorio ocupa 0,2 GB y contiene pesos en formato safetensors, un tamano coherente con un adaptador de bajo rango y no con un modelo completo.
 
-El problema que resuelve es, en principio, la especializacion del modelo base en una tarea o dominio concreto mediante un ajuste parametrizado eficiente, sin necesidad de reentrenar todos los pesos. Sin embargo, la model card publicada es la plantilla por defecto de HuggingFace sin rellenar: todos los campos de descripcion, datos de entrenamiento, hiperparametros, evaluacion y uso previsto figuran como "[More Information Needed]". No hay informacion sobre el dataset de ajuste, el rango del adaptador, los hiperparametros ni los objetivos de entrenamiento.
+El problema que resuelve es, en principio, la especializacion del modelo base en una tarea o dominio concreto mediante un ajuste parametrizado eficiente, sin necesidad de reentrenar todos los pesos. Sin embargo, la model card publicada es la plantilla por defecto de Hugging Face sin rellenar: todos los campos de descripcion, datos de entrenamiento, hiperparametros, evaluacion y uso previsto figuran como "[More Information Needed]". No hay informacion sobre el dataset de ajuste, el rango del adaptador, los hiperparametros ni los objetivos de entrenamiento.
 
 Su relevancia actual es limitada y hay que ser explicito al respecto: el repositorio no tiene descargas ni "likes", no declara licencia, no documenta idiomas y no aporta ningun resultado de evaluacion. A efectos practicos es un artefacto no validado, util unicamente como punto de partida para inspeccion tecnica o para experimentacion propia, nunca como componente listo para produccion tal como esta publicado.
 
@@ -27,7 +27,7 @@ Otros metadatos verificables del repositorio: pipeline `text-generation`, tags `
 
 La unica informacion tecnica contrastable es que se trata de un adaptador de bajo rango entrenado con PEFT (Low-Rank Adaptation) sobre el modelo instruccional google/gemma-4-E4B-it. Esto implica que el mecanismo es el habitual de LoRA: se congelan los pesos del modelo base y se entrenan matrices de descomposicion de bajo rango que se suman a determinadas proyecciones de la red. El repositorio no especifica el rango `r`, el valor `alpha`, el dropout, las capas objetivo (`target_modules`), ni si se aplico QLoRA con cuantizacion en 4 bits durante el entrenamiento.
 
-No hay absolutamente ningun dato sobre el proceso de entrenamiento: ni numero de tokens, ni composicion del corpus, ni si hubo RLHF, DPO, SFT supervisado puro o cualquier otra etapa de alineamiento. Tampoco se documentan las GPU utilizadas, la duracion ni el coste de computo (los campos de impacto ambiental de la plantilla estan vacios). El unico identificador de paper presente en los tags, `arxiv:1910.09700`, corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico, que aparece como texto por defecto de la plantilla de HuggingFace y no guarda relacion con este modelo. No se puede atribuir ninguna innovacion tecnica al adaptador con la informacion disponible.
+No hay absolutamente ningun dato sobre el proceso de entrenamiento: ni numero de tokens, ni composicion del corpus, ni si hubo RLHF, DPO, SFT supervisado puro o cualquier otra etapa de alineamiento. Tampoco se documentan las GPU utilizadas, la duracion ni el coste de computo (los campos de impacto ambiental de la plantilla estan vacios). El unico identificador de paper presente en los tags, `arxiv:1910.09700`, corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico, que aparece como texto por defecto de la plantilla de Hugging Face y no guarda relacion con este modelo. No se puede atribuir ninguna innovacion tecnica al adaptador con la informacion disponible.
 
 ## Capacidades
 
@@ -92,11 +92,11 @@ No procede comparar con modelos como Llama, Qwen o Mistral porque no se dispone 
 - Adopcion nula: 0 descargas y 0 likes en el momento de la consulta, sin evidencia de uso o validacion por terceros.
 - Riesgo de seguridad: cargar adaptadores de origen desconocido implica ejecutar pesos no auditados. Se recomienda revisar el contenido del repositorio (incluido `adapter_config.json` y cualquier script) antes de cargarlo en un entorno con credenciales.
 - Compatibilidad de software: el adaptador declara PEFT 0.19.1; versiones muy distintas pueden fallar al cargar los pesos o al fusionarlos.
-- El tag `arxiv:1910.09700` no es un paper de este modelo: corresponde al articulo de estimacion de impacto de carbono que HuggingFace inserta por defecto en sus plantillas. No debe citarse como referencia tecnica del adaptador.
+- El tag `arxiv:1910.09700` no es un paper de este modelo: corresponde al articulo de estimacion de impacto de carbono que Hugging Face inserta por defecto en sus plantillas. No debe citarse como referencia tecnica del adaptador.
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/MinaMila/Gemma4-E4B-ReGiFT
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/MinaMila/Gemma4-E4B-ReGiFT
 - Modelo base referenciado: https://huggingface.co/google/gemma-4-E4B-it
 - Documentacion de PEFT (libreria declarada, version 0.19.1): https://huggingface.co/docs/peft/index
 - Articulo citado en los tags (contexto de estimacion de emisiones, no paper del modelo): https://arxiv.org/abs/1910.09700

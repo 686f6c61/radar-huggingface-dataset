@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`noliveiraley/contrastive-aug` es un repositorio de HuggingFace publicado por el usuario noliveiraley que contiene una implementacion propia de una Swin Transformer en su variante tiny, orientada a entrenamiento contrastivo. No se trata de un modelo entrenado ni de una release con pesos finales: el propio autor lo describe como un punto de partida reproducible y el fichero `model.safetensors` como un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests).
+`noliveiraley/contrastive-aug` es un repositorio de Hugging Face publicado por el usuario noliveiraley que contiene una implementacion propia de una Swin Transformer en su variante tiny, orientada a entrenamiento contrastivo. No se trata de un modelo entrenado ni de una release con pesos finales: el propio autor lo describe como un punto de partida reproducible y el fichero `model.safetensors` como un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests).
 
 El repositorio incluye el codigo Python con el modelo y un punto de entrada de ejemplo o entrenamiento, un `config.json` con los ajustes de arquitectura generados y un `training_args.json` con la receta de experimento por defecto (optimizador Novograd con schedule coseno). La arquitectura declarada usa atencion dilatada, fusion mediante cross attention, activacion ReLU y normalizacion ScaleNorm, con un total de 33.088 parametros segun el fichero safetensors.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada y de ambito estrictamente experimental: no se reclama 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es una Swin Transformer en escala tiny, con atencion dilatada y fusion mediante cross attention entre ramas. La normalizacion empleada es ScaleNorm y la activacion es ReLU. El repositorio se distribuye como implementacion personalizada, por lo que las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito antes de poder instanciar el modelo. La receta por defecto registrada en `training_args.json` usa el optimizador Novograd con un schedule coseno, valores que el propio autor presenta como punto de partida del script y no como evidencia de una ejecucion completada.
+La arquitectura es una Swin Transformer en escala tiny, con atencion dilatada y fusion mediante cross attention entre ramas. La normalizacion empleada es ScaleNorm y la activacion es ReLU. El repositorio se distribuye como implementacion personalizada, por lo que las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito antes de poder instanciar el modelo. La receta por defecto registrada en `training_args.json` usa el optimizador Novograd con un schedule coseno, valores que el propio autor presenta como punto de partida del script y no como evidencia de una ejecucion completada.
 
 No hay informacion sobre volumen de tokens, composicion del dataset, numero de epochs ni sobre tecnicas de alineacion como RLHF o DPO. El autor indica explicitamente que el checkpoint de inicializacion no ha sido entrenado ni auditado, y recomienda que cualquier evaluacion util emplee un conjunto de validacion especifico de la tarea, reporte la metrica sobre al menos tres semillas e incluya una linea base de capacidad comparable. Los resultados de un futuro checkpoint entrenado deberian documentarse por separado de los valores por defecto aqui incluidos.
 
@@ -66,7 +66,7 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| noliveiraley/contrastive-aug (Swin-T tiny, custom) | 33.088 (checkpoint de inicializacion) | No disponible (vision) | No disponible | MIT | HuggingFace, repo de 0,0 GB |
+| noliveiraley/contrastive-aug (Swin-T tiny, custom) | 33.088 (checkpoint de inicializacion) | No disponible (vision) | No disponible | MIT | Hugging Face, repo de 0,0 GB |
 | Swin-T original (Microsoft) | ~28 M | Imagen, resolucion configurable | Resultados publicos en ImageNet-1K | MIT | Pesos y codigo publicos |
 | ViT-B/16 (Google) | ~86 M | Imagen, parches 16x16 | Resultados publicos en ImageNet-1K | Apache 2.0 | Pesos y codigo publicos |
 | ResNet-50 | ~25 M | Imagen, resolucion 224 | Resultados publicos en ImageNet-1K | BSD / Apache segun implementacion | Ampliamente disponible |
@@ -86,5 +86,5 @@ La diferencia de parametros entre el checkpoint distribuido y una Swin-T complet
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/noliveiraley/contrastive-aug
+- Hugging Face: https://huggingface.co/noliveiraley/contrastive-aug
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). El resto de resultados devueltos corresponden a portales educativos sin relacion con el modelo (ent.ecollege78.fr, enthdf.fr, neoconnect.opendigitaleducation.com, edifice.io, fr.wiktionary.org).

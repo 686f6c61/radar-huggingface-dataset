@@ -70,8 +70,8 @@ No hay modelos directamente comparables publicados con la misma combinacion de t
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-toty-v4-link01 | 0,8 B + LoRA | No disponible | Destilacion de politica PPO + RL sobre LLM | Apache 2.0 | HuggingFace |
-| Qwen3.5-0.8B (base) | 0,8 B | No disponible | LLM generalista | Apache 2.0 | HuggingFace |
+| connectailab-rl-toty-v4-link01 | 0,8 B + LoRA | No disponible | Destilacion de politica PPO + RL sobre LLM | Apache 2.0 | Hugging Face |
+| Qwen3.5-0.8B (base) | 0,8 B | No disponible | LLM generalista | Apache 2.0 | Hugging Face |
 | Politica PPO original (brain.json) | No disponible | No aplica | Red de politica para control | No disponible | Repositorio connect-tycoon |
 
 La comparacion con el modelo base es la mas informativa: sin ajuste, el LLM acierta solo el 22,6 % de las acciones del profesor, frente al 77 % tras el ajuste. La politica PPO original sigue siendo superior en exito (100 % frente a 85 %), lo que situa al LLM como aproximacion, no como sustituto exacto.
@@ -89,7 +89,7 @@ La comparacion con el modelo base es la mas informativa: sin ajuste, el LLM acie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/the-eschatos/connectailab-rl-toty-v4-link01
+- Modelo en Hugging Face: https://huggingface.co/the-eschatos/connectailab-rl-toty-v4-link01
 - Repositorio de codigo CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Simulador web de entrenamiento: https://www.ezerai.xyz/robot-lab/world/

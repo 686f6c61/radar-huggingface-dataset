@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Vbanerjeesem/vision-language-pretraining-study` es un repositorio alojado en HuggingFace que, pese a su nombre y a la etiqueta `safetensors`, no contiene un modelo entrenado ni pesos utilizables. Se trata de una nota de investigacion exploratoria sobre *pretraining* vision-lenguaje, cuyo artefacto principal es un documento `reading.md` en el que el autor registra el alcance de una pregunta de investigacion, los posibles factores de confusion (*confounders*), una comparacion propuesta con baselines emparejados y los requisitos de reproducibilidad. La propia model card indica explicitamente que no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado.
+`Vbanerjeesem/vision-language-pretraining-study` es un repositorio alojado en Hugging Face que, pese a su nombre y a la etiqueta `safetensors`, no contiene un modelo entrenado ni pesos utilizables. Se trata de una nota de investigacion exploratoria sobre *pretraining* vision-lenguaje, cuyo artefacto principal es un documento `reading.md` en el que el autor registra el alcance de una pregunta de investigacion, los posibles factores de confusion (*confounders*), una comparacion propuesta con baselines emparejados y los requisitos de reproducibilidad. La propia model card indica explicitamente que no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado.
 
 El repositorio lo publica el usuario Vbanerjeesem bajo licencia CC-BY-4.0, ocupa 0,0 GB y su unico contenido documentado son los ficheros `reading.md` y `README.md`. Los metadatos de safetensors reportan 24.832 parametros totales, una cifra que no corresponde a ningun modelo funcional y que, dado el tamano del repositorio, cabe interpretar como un artefacto residual o un tensor de prueba, no como un transformer entrenado.
 
@@ -78,7 +78,7 @@ No disponible. Este repositorio no es un modelo, sino una nota de investigacion,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vbanerjeesem/vision-language-pretraining-study
+- Repositorio en Hugging Face: https://huggingface.co/Vbanerjeesem/vision-language-pretraining-study
 - Fichero principal de la nota: `reading.md` (dentro del repositorio)
 - Documentacion del repositorio: `README.md` (dentro del repositorio)
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles. La busqueda web asociada no devolvio resultados relacionados con este repositorio (unicamente paginas de ayuda de Google Translate sin relacion con el modelo).

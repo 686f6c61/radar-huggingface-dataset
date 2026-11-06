@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`coderian/anime-girl-1.5B` es un modelo de generación de texto de 1.543.714.304 parámetros (aproximadamente 1,54 mil millones) publicado en HuggingFace por el usuario coderian. La etiqueta `qwen2` del repositorio y el recuento de parámetros sitúan la arquitectura en la familia Qwen2, y la etiqueta `conversational` indica que está orientado a diálogo multi-turno, probablemente como ajuste fino de un modelo base Qwen2 de 1,5B. El repositorio tiene un tamaño de 3,1 GB y los pesos están en formato safetensors, compatibles con `transformers` y con text-generation-inference.
+`coderian/anime-girl-1.5B` es un modelo de generación de texto de 1.543.714.304 parámetros (aproximadamente 1,54 mil millones) publicado en Hugging Face por el usuario coderian. La etiqueta `qwen2` del repositorio y el recuento de parámetros sitúan la arquitectura en la familia Qwen2, y la etiqueta `conversational` indica que está orientado a diálogo multi-turno, probablemente como ajuste fino de un modelo base Qwen2 de 1,5B. El repositorio tiene un tamaño de 3,1 GB y los pesos están en formato safetensors, compatibles con `transformers` y con text-generation-inference.
 
-El problema que resuelve no está documentado: la model card es la plantilla automática de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]", incluidos desarrollador, datos de entrenamiento, licencia e idiomas. El nombre del modelo sugiere un ajuste orientado a un personaje o persona conversacional concreta, pero esto es una inferencia a partir del identificador y no una afirmación del autor. El repositorio no declara licencia, lo que limita jurídicamente cualquier uso comercial.
+El problema que resuelve no está documentado: la model card es la plantilla automática de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]", incluidos desarrollador, datos de entrenamiento, licencia e idiomas. El nombre del modelo sugiere un ajuste orientado a un personaje o persona conversacional concreta, pero esto es una inferencia a partir del identificador y no una afirmación del autor. El repositorio no declara licencia, lo que limita jurídicamente cualquier uso comercial.
 
 Su relevancia actual es limitada pero acotada a un nicho concreto: modelos de 1,5B que caben en GPUs de consumo y permiten experimentar con fine-tuning de personalidad y despliegue local a bajo coste. Con cero descargas y cero likes en el momento de la consulta, y con una fecha de creación y actualización del mismo día, debe considerarse un artefacto experimental no validado por la comunidad.
 
@@ -29,7 +29,7 @@ Su relevancia actual es limitada pero acotada a un nicho concreto: modelos de 1,
 
 La única información estructural fiable es la etiqueta `qwen2` y el recuento de parámetros de los archivos safetensors (1.543.714.304). Eso es consistente con la configuración de un transformer decoder-only de la familia Qwen2 de 1,5B, que en su versión pública estándar usa 28 capas, `hidden_size` de 1536, 12 cabezas de atención con 2 cabezas KV (GQA) y un vocabulario de 151.936 tokens. No hay confirmación en el repositorio de que el modelo conserve esa configuración, ni de la longitud de contexto con la que fue entrenado o con la que se publica.
 
-No se dispone de ningún dato sobre el entrenamiento: ni número de tokens, ni composición del dataset, ni si hubo fases de SFT, RLHF o DPO. La model card indica "[More Information Needed]" en todas las secciones de datos, procedimiento e hiperparámetros. Tampoco hay información de infraestructura de cómputo. El único identificador arXiv presente (1910.09700) es la referencia a Lacoste et al. (2019) sobre el cálculo de emisiones de carbono, citada en la propia plantilla de HuggingFace, y no un paper sobre este modelo.
+No se dispone de ningún dato sobre el entrenamiento: ni número de tokens, ni composición del dataset, ni si hubo fases de SFT, RLHF o DPO. La model card indica "[More Information Needed]" en todas las secciones de datos, procedimiento e hiperparámetros. Tampoco hay información de infraestructura de cómputo. El único identificador arXiv presente (1910.09700) es la referencia a Lacoste et al. (2019) sobre el cálculo de emisiones de carbono, citada en la propia plantilla de Hugging Face, y no un paper sobre este modelo.
 
 ## Capacidades
 
@@ -37,7 +37,7 @@ No hay documentación de capacidades en la información disponible. A partir de 
 
 - Generación de texto autoregresiva y diálogo multi-turno (etiquetas `text-generation` y `conversational`).
 - Compatibilidad con `transformers` como biblioteca de carga y con text-generation-inference como motor de servicio.
-- Compatibilidad declarada con despliegue en endpoints gestionados de HuggingFace (`endpoints_compatible`).
+- Compatibilidad declarada con despliegue en endpoints gestionados de Hugging Face (`endpoints_compatible`).
 - Soporte de tool calling o function calling: no disponible.
 - Capacidades de agente o razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible.
@@ -69,7 +69,7 @@ Las cifras de VRAM para pesos son calculables a partir del recuento real de par�
 - Caché KV: si la configuración coincide con la de Qwen2-1.5B estándar (28 capas, 2 cabezas KV, `head_dim` 64), el consumo es de aproximadamente 14 KB por token en FP16, es decir, unos 470 MB para una ventana de 32.768 tokens. Este cálculo no está confirmado para este repositorio.
 - GPU recomendadas: cualquier GPU con 6 GB o más de VRAM para FP16; RTX 3060, RTX 4060, RTX 4070 y superiores son suficientes. Para servicio concurrente con lotes grandes, A100 o H100 aportan margen pero están sobredimensionadas para 1,5B.
 - GPU de consumo: sí, cabe holgadamente en todas las GPU de consumo con 6 GB o más, e incluso en cuantización INT4 en equipos con 4 GB de VRAM o en CPU con 8-16 GB de RAM.
-- Opciones de despliegue: transformers (librería declarada), text-generation-inference (etiqueta del repositorio), vLLM, llama.cpp u Ollama si se generan cuantizaciones GGUF, y endpoints gestionados de HuggingFace (`endpoints_compatible`).
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference (etiqueta del repositorio), vLLM, llama.cpp u Ollama si se generan cuantizaciones GGUF, y endpoints gestionados de Hugging Face (`endpoints_compatible`).
 - Latencia y throughput: no disponible. Como referencia de categoría, un modelo de 1,5B en FP16 sobre una RTX 4090 con vLLM suele superar varios miles de tokens por segundo en lotes grandes, pero no hay ninguna medición publicada para este modelo concreto.
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ No se dispone de información suficiente para comparar calidad de salida, adhere
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/coderian/anime-girl-1.5B
+- Repositorio en Hugging Face: https://huggingface.co/coderian/anime-girl-1.5B
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre cálculo de emisiones): https://arxiv.org/abs/1910.09700
 - Modelo base candidato de la familia Qwen2: https://huggingface.co/Qwen/Qwen2-1.5B
 - Variante instruct de la familia Qwen2: https://huggingface.co/Qwen/Qwen2-1.5B-Instruct

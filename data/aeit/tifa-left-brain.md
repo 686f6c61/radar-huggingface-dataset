@@ -78,6 +78,6 @@ La comparativa se limita a modelos de tamaño similar. El modelo de Aeit se dist
 
 ## Enlaces
 
-- [HuggingFace: Aeit/tifa-left-brain](https://huggingface.co/Aeit/tifa-left-brain)
+- [Hugging Face: Aeit/tifa-left-brain](https://huggingface.co/Aeit/tifa-left-brain)
 - [Unsloth (librería de fine-tuning y conversión)](https://github.com/unslothai/unsloth)
 - [llama.cpp (repositorio de inferencia)](https://github.com/ggerganov/llama.cpp)

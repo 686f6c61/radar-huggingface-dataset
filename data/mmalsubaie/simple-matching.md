@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mmalsubaie/simple-matching` es un repositorio de HuggingFace que contiene una implementación propia y de escala reducida de una arquitectura **EfficientFormer** orientada a tareas de *matching* (emparejamiento). Lo publica el usuario mmalsubaie y se distribuye bajo licencia BSD-3-Clause. El propio autor lo describe explícitamente como un **punto de partida reproducible**, no como un modelo entrenado ni un release con resultados validados.
+`mmalsubaie/simple-matching` es un repositorio de Hugging Face que contiene una implementación propia y de escala reducida de una arquitectura **EfficientFormer** orientada a tareas de *matching* (emparejamiento). Lo publica el usuario mmalsubaie y se distribuye bajo licencia BSD-3-Clause. El propio autor lo describe explícitamente como un **punto de partida reproducible**, no como un modelo entrenado ni un release con resultados validados.
 
 El repositorio incluye un script (`run.py`), un fichero de configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) con **49.600 parámetros totales**. La model card es tajante al respecto: el checkpoint es válido para pruebas de humo (*smoke tests*) pero no se presenta como un modelo entrenado ni se reclama ninguna métrica de benchmark.
 
@@ -78,6 +78,6 @@ No disponible. El repositorio no publica comparativas y la información proporci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mmalsubaie/simple-matching
+- Hugging Face: https://huggingface.co/mmalsubaie/simple-matching
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la información proporcionada.

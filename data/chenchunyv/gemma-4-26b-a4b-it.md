@@ -102,9 +102,9 @@ Respecto al modelo denso de 31B, la variante 26B A4B ofrece una ventana de conte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chenchunyv/gemma-4-26B-A4B-it
+- Modelo en Hugging Face: https://huggingface.co/chenchunyv/gemma-4-26B-A4B-it
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Repositorio GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion oficial: https://ai.google.dev/gemma/docs/core

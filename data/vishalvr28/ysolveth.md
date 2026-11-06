@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ysolveth | Clasificador ONNX (encoder + cabeza lineal) | no disponible (~23 MB) | no disponible | Apache 2.0 | HuggingFace |
-| all-MiniLM-L6-v2 | Encoder de embeddings | ~22,7 M | 256 tokens (tipico) | Apache 2.0 | HuggingFace, sentence-transformers |
+| Ysolveth | Clasificador ONNX (encoder + cabeza lineal) | no disponible (~23 MB) | no disponible | Apache 2.0 | Hugging Face |
+| all-MiniLM-L6-v2 | Encoder de embeddings | ~22,7 M | 256 tokens (tipico) | Apache 2.0 | Hugging Face, sentence-transformers |
 | Clasificacion via LLM frontier (p. ej. GPT-4o, Claude) | Generativo autoregresivo | no disponible | 128K+ | Propietaria | APIs comerciales |
 
 La comparacion directa es limitada porque no existen clasificadores publicos equivalentes de dificultad de prompts de ingenieria de software. Frente a pedir la clasificacion a un LLM frontier, Ysolveth elimina la generacion de tokens (latencia de 2 a 8 ms frente a 800-2.500 ms), no puede producir JSON malformado y tiene coste marginal nulo, a cambio de un alcance mucho mas estrecho y un dataset de entrenamiento muy pequeno. Frente a MiniLM sin cabeza de clasificacion, anade la capa calibrada de tres clases y el empaquetado ONNX int8 listo para produccion.
@@ -90,7 +90,7 @@ La comparacion directa es limitada porque no existen clasificadores publicos equ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vishalvr28/Ysolveth
+- Modelo en Hugging Face: https://huggingface.co/vishalvr28/Ysolveth
 - Plataforma StructZero: https://www.structzero.app/
 - Encoder base all-MiniLM-L6-v2: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - ONNX Runtime: https://onnxruntime.ai/

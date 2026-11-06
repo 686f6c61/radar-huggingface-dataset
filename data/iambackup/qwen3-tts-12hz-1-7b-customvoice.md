@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-TTS-12Hz-1.7B-CustomVoice es un modelo de síntesis de voz (text-to-speech) desarrollado por Alibaba Qwen y publicado en HuggingFace por el usuario Iambackup. Se trata de una variante del modelo Qwen3-TTS orientada al control fino del timbre mediante instrucciones en lenguaje natural, con soporte para nueve timbres premium que combinan género, edad, idioma y dialecto. El modelo emplea una arquitectura de LM discreto multi-codebook con un tokenizador acústico propio (Qwen3-TTS-Tokenizer-12Hz) que comprime la señal de voz a 12 Hz, lo que permite una reconstrucción de alta fidelidad con una latencia extremadamente baja.
+Qwen3-TTS-12Hz-1.7B-CustomVoice es un modelo de síntesis de voz (text-to-speech) desarrollado por Alibaba Qwen y publicado en Hugging Face por el usuario Iambackup. Se trata de una variante del modelo Qwen3-TTS orientada al control fino del timbre mediante instrucciones en lenguaje natural, con soporte para nueve timbres premium que combinan género, edad, idioma y dialecto. El modelo emplea una arquitectura de LM discreto multi-codebook con un tokenizador acústico propio (Qwen3-TTS-Tokenizer-12Hz) que comprime la señal de voz a 12 Hz, lo que permite una reconstrucción de alta fidelidad con una latencia extremadamente baja.
 
 El modelo tiene aproximadamente 1.900 millones de parámetros y cubre diez idiomas principales (chino, inglés, japonés, coreano, alemán, francés, ruso, portugués, español e italiano). Su relevancia actual radica en su capacidad de generación en streaming con una latencia de extremo a extremo de hasta 97 ms, su robustez frente a texto ruidoso y su control expresivo basado en instrucciones, lo que lo posiciona como una opción competitiva para aplicaciones interactivas en tiempo real. La licencia Apache 2.0 permite uso comercial sin restricciones significativas.
 
@@ -78,7 +78,7 @@ No se dispone de datos comparativos con modelos TTS de otros fabricantes (como V
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Iambackup/Qwen3-TTS-12Hz-1.7B-CustomVoice
+- Modelo en Hugging Face: https://huggingface.co/Iambackup/Qwen3-TTS-12Hz-1.7B-CustomVoice
 - Modelo original de Qwen (referencia): https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
 - Tokenizador Qwen3-TTS-Tokenizer-12Hz: https://huggingface.co/Qwen/Qwen3-TTS-Tokenizer-12Hz
 - Paper tecnico (referencia arxiv): arxiv:2601.15621

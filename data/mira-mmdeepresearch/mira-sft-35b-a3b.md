@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MIRA-SFT-35B-A3B es un modelo de lenguaje publicado en HuggingFace por el usuario MIRA-MMDeepResearch. La nomenclatura del identificador sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 35.000 millones de parametros totales y unos 3.000 millones de parametros activos por token, ademas de un ajuste fino supervisado (SFT) sobre una base previa. Sin embargo, la model card publicada no contiene mas que la declaracion de licencia Apache 2.0, sin descripcion, sin especificaciones y sin datos de entrenamiento.
+MIRA-SFT-35B-A3B es un modelo de lenguaje publicado en Hugging Face por el usuario MIRA-MMDeepResearch. La nomenclatura del identificador sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 35.000 millones de parametros totales y unos 3.000 millones de parametros activos por token, ademas de un ajuste fino supervisado (SFT) sobre una base previa. Sin embargo, la model card publicada no contiene mas que la declaracion de licencia Apache 2.0, sin descripcion, sin especificaciones y sin datos de entrenamiento.
 
 El modelo se publico el 2 de noviembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni interacciones en la plataforma. No hay informacion publica sobre la arquitectura exacta, el proceso de entrenamiento, los idiomas soportados ni los resultados de evaluacion. La busqueda web no devuelve ningun resultado relacionado con este modelo concreto: los enlaces encontrados corresponden a entidades homonimas sin relacion (una marca de cosmetica, un archivo filmico de Alsacia y una joyeria).
 
@@ -78,5 +78,5 @@ No disponible. No se han identificado modelos comparables con documentacion veri
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MIRA-MMDeepResearch/MIRA-SFT-35B-A3B
+- Hugging Face: https://huggingface.co/MIRA-MMDeepResearch/MIRA-SFT-35B-A3B
 - Resultados de busqueda web: sin enlaces relevantes al modelo (los resultados corresponden a entidades homonimas sin relacion: mymira.fr, miralsace.eu, miramirajewelry.com).

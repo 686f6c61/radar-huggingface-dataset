@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AleaiactaEst1/orcarouter_GLM-5.3-Flash-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AleaiactaEst1/orcarouter_GLM-5.3-Flash-Uncensored-GGUF
 - Modelo base FP8: https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-FP8
 - Discusión #1 (fallo de IQ2_S): https://huggingface.co/AleaiactaEst1/orcarouter_GLM-5.3-Flash-Uncensored-GGUF/discussions/1
 - Discusión #2 (arquitectura `glm5next`): https://huggingface.co/AleaiactaEst1/orcarouter_GLM-5.3-Flash-Uncensored-GGUF/discussions/2

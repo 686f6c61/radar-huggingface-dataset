@@ -81,7 +81,7 @@ No se han publicado resultados comparativos en la informacion disponible. La tab
 
 | Modelo | Parametros | Contexto | F1 (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (SetFit + MPNet, asercion `td`) | 109,5 M | no disponible (MPNet admite hasta 512 tokens) | 0,5229 | no disponible | HuggingFace, 0 descargas |
+| Este modelo (SetFit + MPNet, asercion `td`) | 109,5 M | no disponible (MPNet admite hasta 512 tokens) | 0,5229 | no disponible | Hugging Face, 0 descargas |
 | Otros clasificadores de aserciones de StanfordSCALE | no disponible | no disponible | no disponible | no disponible | familia publicada por el mismo autor |
 | Fine-tuning supervisado completo de MPNet o BERT-base | aproximadamente 110 M | no disponible | no disponible | la del modelo base | generico, requiere entrenamiento propio |
 | Clasificacion zero-shot con LLM generativo | no disponible | no disponible | no disponible | segun proveedor | ampliamente disponible, mayor coste por inferencia |
@@ -100,7 +100,7 @@ No se han publicado resultados comparativos en la informacion disponible. La tab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_asks_one_or_more_students_for_the_next_step_in_a_procedure
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_asks_one_or_more_students_for_the_next_step_in_a_procedure
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (SumnerLab): https://github.com/SumnerLab/TalkMoves

@@ -26,7 +26,7 @@ El artefacto está atado a su ecosistema: los ficheros `.mxq` solo se cargan a t
 | Framework de carga | `transformers` + `mblt_model_zoo[transformers]`, con `trust_remote_code=True` |
 | Tamaño del repositorio | 15,6 GB |
 | Configuración de árbol draft | `eagle3_tree_top_k=8`, `eagle3_tree_depth=4`, `num_assistant_tokens=26` |
-| Fecha de creación en HuggingFace | 2026-09-23 (según los metadatos del repositorio) |
+| Fecha de creación en Hugging Face | 2026-09-23 (según los metadatos del repositorio) |
 | Descargas / likes | 212 descargas / 0 likes |
 
 ## Arquitectura y entrenamiento
@@ -92,7 +92,7 @@ El propio autor advierte que estas cifras provienen de un único host y un únic
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Hardware | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mobilint/EAGLE3-Qwen3-8B | Cabeza draft EAGLE-3 + destino Qwen3-8B cuantizado (W4V8 / W4) | 1.244.843.648 tensores en safetensors (embeddings y FC); el cuerpo es Qwen3-8B | 4096 tokens | Apache 2.0 | NPU Mobilint ARIES (`aries-rb`), 1 núcleo, batch 1 | 212 descargas en HuggingFace |
+| mobilint/EAGLE3-Qwen3-8B | Cabeza draft EAGLE-3 + destino Qwen3-8B cuantizado (W4V8 / W4) | 1.244.843.648 tensores en safetensors (embeddings y FC); el cuerpo es Qwen3-8B | 4096 tokens | Apache 2.0 | NPU Mobilint ARIES (`aries-rb`), 1 núcleo, batch 1 | 212 descargas en Hugging Face |
 | Qwen/Qwen3-8B | Modelo base, transformer denso | no disponible en la información recogida | no disponible en la información recogida | Apache 2.0 | GPU convencional o CPU | Modelo de referencia del ecosistema Qwen |
 | mobilint/Qwen3-8B | Mismo modelo destino compilado para NPU Mobilint, sin cabezas EAGLE-3 documentadas | no disponible en la información recogida | no disponible | Apache 2.0 | NPU Mobilint ARIES | Publicado por el mismo autor |
 | AngelSlim/Qwen3-8B_eagle3 | Cabeza EAGLE-3 para Qwen3-8B orientada a GPU | no disponible en la información recogida | no disponible | no disponible | GPU | Publicado en ModelScope |
@@ -114,7 +114,7 @@ La comparación cuantitativa de rendimiento entre estas alternativas no es posib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mobilint/EAGLE3-Qwen3-8B
+- Modelo en Hugging Face: https://huggingface.co/mobilint/EAGLE3-Qwen3-8B
 - Modelo base Qwen/Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-8B/blob/main/LICENSE
 - Versión compilada sin EAGLE-3 del mismo autor: https://huggingface.co/mobilint/Qwen3-8B

@@ -76,6 +76,6 @@ No se dispone de datos de rendimiento comparativo; la comparación es estructura
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/adas990909/gpt2-medium355M-sft-v1-backup.pth)
+- [Página del modelo en Hugging Face](https://huggingface.co/adas990909/gpt2-medium355M-sft-v1-backup.pth)
 - [Repositorio LLMs-from-scratch (Sebastian Raschka)](https://github.com/rasbt/LLMs-from-scratch)
 - [Dataset Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca)

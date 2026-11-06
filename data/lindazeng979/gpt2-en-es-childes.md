@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lindazeng979/gpt2-en-es-childes` es un checkpoint publicado en HuggingFace por el usuario lindazeng979, enmarcado en lo que su model card denomina «bilingual-llms project». Por el nombre y la estructura del repositorio (subcarpetas con el patron `<condition>/seed_<n>/`), se trata de un modelo de lenguaje de tipo GPT-2 entrenado o ajustado para un escenario bilingue ingles-espanol, presumiblemente sobre datos del corpus CHILDES (habla infantil), aunque la model card no lo confirma explicitamente. El repositorio no incluye pipeline declarado, licencia, idiomas ni documentacion sobre datos de entrenamiento, y acumula 0 descargas y 0 likes desde su creacion.
+`lindazeng979/gpt2-en-es-childes` es un checkpoint publicado en Hugging Face por el usuario lindazeng979, enmarcado en lo que su model card denomina «bilingual-llms project». Por el nombre y la estructura del repositorio (subcarpetas con el patron `<condition>/seed_<n>/`), se trata de un modelo de lenguaje de tipo GPT-2 entrenado o ajustado para un escenario bilingue ingles-espanol, presumiblemente sobre datos del corpus CHILDES (habla infantil), aunque la model card no lo confirma explicitamente. El repositorio no incluye pipeline declarado, licencia, idiomas ni documentacion sobre datos de entrenamiento, y acumula 0 descargas y 0 likes desde su creacion.
 
 La relevancia de esta ficha es limitada y debe leerse con cautela: es un artefacto de investigacion con documentacion minima, no un modelo listo para produccion. Su interes potencial reside en el estudio de modelos bilingues de escala reducida y en la reproducibilidad de experimentos con multiples seeds, ya que la estructura de subcarpetas sugiere la publicacion de varias ejecuciones del mismo experimento bajo distintas condiciones.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `lindazeng979/gpt2-en-es-childes` | no disponible | no disponible | no disponible | HuggingFace, 0 descargas | Documentacion minima; estructura multi-seed |
+| `lindazeng979/gpt2-en-es-childes` | no disponible | no disponible | no disponible | Hugging Face, 0 descargas | Documentacion minima; estructura multi-seed |
 | `openai-community/gpt2` | 124M | 1024 tokens | MIT | Ampliamente disponible | Referencia canonica GPT-2 en ingles |
 | `distilgpt2` | 82M | 1024 tokens | Apache 2.0 | Ampliamente disponible | Version destilada de GPT-2, mas rapida |
-| `PlanTL-GOB-ES/gpt2-base-bne` | ~126M | 1024 tokens | Apache 2.0 (consultar) | HuggingFace | GPT-2 en espanol entrenado sobre BNE |
+| `PlanTL-GOB-ES/gpt2-base-bne` | ~126M | 1024 tokens | Apache 2.0 (consultar) | Hugging Face | GPT-2 en espanol entrenado sobre BNE |
 
 La comparativa es estructural: no existen datos publicados de rendimiento para el modelo objeto de esta ficha que permitan una comparacion cuantitativa con las alternativas. Los datos de los modelos de referencia corresponden a sus fichas publicas y deben verificarse antes de su uso.
 
@@ -85,5 +85,5 @@ La comparativa es estructural: no existen datos publicados de rendimiento para e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lindazeng979/gpt2-en-es-childes
+- Hugging Face: https://huggingface.co/lindazeng979/gpt2-en-es-childes
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales relevantes para este modelo.

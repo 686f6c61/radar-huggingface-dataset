@@ -30,7 +30,7 @@ La información pública disponible es muy escasa: la model card es una plantill
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only de la familia GPT-2, heredada directamente del modelo base `goldfish-models/nld_latn_100mb`. El tag `gpt2` de HuggingFace confirma esta familia, lo que implica atención causal completa, tokenizador BPE y, previsiblemente, una ventana de contexto corta en la línea de las variantes pequeñas de GPT-2. No obstante, la longitud de contexto concreta no se declara en la información proporcionada y no debe asumirse.
+La arquitectura es un transformer decoder-only de la familia GPT-2, heredada directamente del modelo base `goldfish-models/nld_latn_100mb`. El tag `gpt2` de Hugging Face confirma esta familia, lo que implica atención causal completa, tokenizador BPE y, previsiblemente, una ventana de contexto corta en la línea de las variantes pequeñas de GPT-2. No obstante, la longitud de contexto concreta no se declara en la información proporcionada y no debe asumirse.
 
 El entrenamiento se realizó mediante SFT (supervised fine-tuning) usando la librería TRL en su versión 0.23.0, sobre el stack Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1. Se desconoce por completo la composición del dataset de ajuste, el número de tokens o ejemplos utilizados, la existencia de fases de RLHF o DPO (no se mencionan) y cualquier técnica de alineación adicional. El experimento está registrado en Weights & Biases, lo que sugiere que el autor dispone de curvas de pérdida y métricas de entrenamiento, pero esas métricas no se reproducen en la model card. El prefijo `ppt-` del nombre y el sufijo `seed10` apuntan a un experimento de barrido con semillas y configuraciones uniformes o "heavy" (probablemente variantes de mezcla de datos), aunque esto no se documenta explícitamente.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. No se requiere A100, H100 ni RTX 4090; una GTX 1050 Ti, una GTX 1650, una RTX 3050 o incluso una iGPU moderna pueden servirlo con holgura.
 - Cabe en GPU de consumo: sí, en prácticamente todas las comercializadas en la última década, incluidos portátiles de gama baja.
 - Inferencia en CPU: perfectamente viable; es una de las configuraciones más razonables para este tamaño de modelo.
-- Opciones de despliegue: `transformers` con `pipeline`, Text Generation Inference (declarado compatible por los tags), endpoints gestionados de HuggingFace. Para `llama.cpp` u `Ollama` sería necesario convertir previamente los pesos a GGUF, conversión que no se distribuye en el repositorio.
+- Opciones de despliegue: `transformers` con `pipeline`, Text Generation Inference (declarado compatible por los tags), endpoints gestionados de Hugging Face. Para `llama.cpp` u `Ollama` sería necesario convertir previamente los pesos a GGUF, conversión que no se distribuye en el repositorio.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | `fpadovani/ppt-nld_heavy_uniform-100mb_seed10` | 86.708.736 | No disponible | No disponible | Peso en safetensors, 0 descargas | Ajuste SFT del modelo Goldfish neerlandés de 100 MB |
-| `goldfish-models/nld_latn_100mb` (modelo base) | No verificado (previsiblemente el mismo orden, ~87 M) | No disponible | No disponible en la información proporcionada | Público en HuggingFace | Modelo monolingüe neerlandés del proyecto Goldfish; es el punto de partida sin ajuste por instrucciones |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens (configuración estándar de GPT-2 small) | MIT modificada | Público en HuggingFace | Referencia de arquitectura; multilingüe de facto pero con cobertura muy desigual y sin ajuste por instrucciones |
-| `GroNLP/gpt2-small-dutch` | 124 M (no verificado en la información proporcionada) | No disponible | No disponible en la información proporcionada | Público en HuggingFace | Alternativa habitual para generación en neerlandés; los datos concretos no han podido verificarse con las fuentes disponibles |
+| `goldfish-models/nld_latn_100mb` (modelo base) | No verificado (previsiblemente el mismo orden, ~87 M) | No disponible | No disponible en la información proporcionada | Público en Hugging Face | Modelo monolingüe neerlandés del proyecto Goldfish; es el punto de partida sin ajuste por instrucciones |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens (configuración estándar de GPT-2 small) | MIT modificada | Público en Hugging Face | Referencia de arquitectura; multilingüe de facto pero con cobertura muy desigual y sin ajuste por instrucciones |
+| `GroNLP/gpt2-small-dutch` | 124 M (no verificado en la información proporcionada) | No disponible | No disponible en la información proporcionada | Público en Hugging Face | Alternativa habitual para generación en neerlandés; los datos concretos no han podido verificarse con las fuentes disponibles |
 
 No se dispone de comparativas de rendimiento (perplejidad, exactitud en tareas) entre estos modelos dentro de la información proporcionada.
 
@@ -93,9 +93,9 @@ No se dispone de comparativas de rendimiento (perplejidad, exactitud en tareas) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-nld_heavy_uniform-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-nld_heavy_uniform-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Experimento de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/ylh7duaq
 - Referencia general del proyecto Goldfish (no verificada en la información proporcionada): https://arxiv.org/abs/2309.09720
-- Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces anteriores proceden de la model card y de la metadata de HuggingFace.
+- Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces anteriores proceden de la model card y de la metadata de Hugging Face.

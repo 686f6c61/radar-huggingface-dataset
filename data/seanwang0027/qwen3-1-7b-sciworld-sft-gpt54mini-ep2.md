@@ -81,11 +81,11 @@ El propio autor advierte de que diferencias inferiores a unos 3 puntos estan den
 
 | Modelo | Parametros | Epoca | Exito en ScienceWorld test | Avg@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (`sciworld-sft-gpt54mini-ep2`) | 2,03 B | 2 (paso 128/192) | 13,25 % ± 2,56 | 0,1574 | Apache 2.0 | HuggingFace, 0 descargas |
-| `qwen3-1.7b-sciworld-sft-gpt54mini-3ep` | 2,03 B | 3 (final) | 12,88 % ± 1,24 | 0,1557 | Apache 2.0 | HuggingFace |
-| `qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep5` | 2,03 B | 5 | 25,75 % ± 1,30 | 0,3692 | Apache 2.0 | HuggingFace |
-| `qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep4` | 2,03 B | 4 | 20,25 % ± 2,25 | 0,3433 | Apache 2.0 | HuggingFace |
-| Qwen3-1.7B base | 2,03 B | — | 0,12 % | no disponible | Apache 2.0 | HuggingFace |
+| Este modelo (`sciworld-sft-gpt54mini-ep2`) | 2,03 B | 2 (paso 128/192) | 13,25 % ± 2,56 | 0,1574 | Apache 2.0 | Hugging Face, 0 descargas |
+| `qwen3-1.7b-sciworld-sft-gpt54mini-3ep` | 2,03 B | 3 (final) | 12,88 % ± 1,24 | 0,1557 | Apache 2.0 | Hugging Face |
+| `qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep5` | 2,03 B | 5 | 25,75 % ± 1,30 | 0,3692 | Apache 2.0 | Hugging Face |
+| `qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep4` | 2,03 B | 4 | 20,25 % ± 2,25 | 0,3433 | Apache 2.0 | Hugging Face |
+| Qwen3-1.7B base | 2,03 B | — | 0,12 % | no disponible | Apache 2.0 | Hugging Face |
 
 Comparacion frente a otros agentes de proposito general o frente a modelos de tamano similar en otras tareas: no disponible, porque el autor solo publica resultados de ScienceWorld y no hay cifras comparables de terceros en la informacion proporcionada.
 
@@ -105,7 +105,7 @@ Comparacion frente a otros agentes de proposito general o frente a modelos de ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-sft-gpt54mini-ep2
+- Modelo en Hugging Face: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-sft-gpt54mini-ep2
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Checkpoint hermano SFT epoca 1: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-sft-gpt54mini-ep1
 - Checkpoint hermano SFT epoca 3: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-sft-gpt54mini-3ep

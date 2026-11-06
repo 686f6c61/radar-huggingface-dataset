@@ -83,8 +83,8 @@ No se aportan tasas de éxito, número de ensayos ni curvas de evaluación en ro
 
 | Modelo | Origen | Datos de entrenamiento | Pasos | Pérdida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| pi05-so101-grab-cup-50k | mattewg (fine-tuning) | `Ibuprofene/grab_cup_2cam_v4`, 146 episodios, 104.819 fotogramas | 50.000 | 0,00206 | apache-2.0 | HuggingFace |
-| pi05-so101-grab-cup-30k | mattewg (fine-tuning) | Mismo dataset | 30.000 | 0,00202 (en el punto de reanudación) | no disponible en la informacion proporcionada | HuggingFace |
+| pi05-so101-grab-cup-50k | mattewg (fine-tuning) | `Ibuprofene/grab_cup_2cam_v4`, 146 episodios, 104.819 fotogramas | 50.000 | 0,00206 | apache-2.0 | Hugging Face |
+| pi05-so101-grab-cup-30k | mattewg (fine-tuning) | Mismo dataset | 30.000 | 0,00202 (en el punto de reanudación) | no disponible en la informacion proporcionada | Hugging Face |
 | physical-intelligence/pi05_base | Physical Intelligence | no disponible | no aplica (modelo base) | no disponible | no disponible en la informacion proporcionada | openpi (`gs://openpi-assets/checkpoints/pi05_base/params`) |
 | Otras políticas VLA comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks que permitan una comparación de rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattewg/pi05-so101-grab-cup-50k
+- Modelo en Hugging Face: https://huggingface.co/mattewg/pi05-so101-grab-cup-50k
 - Checkpoint predecesor: https://huggingface.co/mattewg/pi05-so101-grab-cup-30k
 - Modelo base: https://huggingface.co/physical-intelligence/pi05_base (referenciado como `gs://openpi-assets/checkpoints/pi05_base/params`)
 - Dataset de entrenamiento: https://huggingface.co/datasets/Ibuprofene/grab_cup_2cam_v4

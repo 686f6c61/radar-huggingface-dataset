@@ -101,5 +101,5 @@ La comparación relevante es contra el modelo original de NVIDIA: misma arquitec
 
 ## Enlaces
 
-- [HuggingFace: diarizeapp/parakeet-tdt-0.6b-v3-onnx-qnn](https://huggingface.co/diarizeapp/parakeet-tdt-0.6b-v3-onnx-qnn)
+- [Hugging Face: diarizeapp/parakeet-tdt-0.6b-v3-onnx-qnn](https://huggingface.co/diarizeapp/parakeet-tdt-0.6b-v3-onnx-qnn)
 - [Modelo base: nvidia/parakeet-tdt-0.6b-v3](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3)

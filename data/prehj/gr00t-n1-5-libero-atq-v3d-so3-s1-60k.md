@@ -96,8 +96,8 @@ Notas de medicion declaradas por el autor: el ratio de compresion esta ponderado
 
 | Modelo | Parametros | Contexto | LIBERO (exito / velocidad) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `prehj/GR00T-N1.5-libero-atq-v3d-so3-s1-60k` | 2,83 mil millones | no disponible | 0,925 sobre 1.971 episodios / 1,244x | `other` | HuggingFace, 0 descargas |
-| `nvidia/GR00T-N1.5-3B` (base) | ~3 mil millones (segun denominacion del modelo) | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace (NVIDIA) |
+| `prehj/GR00T-N1.5-libero-atq-v3d-so3-s1-60k` | 2,83 mil millones | no disponible | 0,925 sobre 1.971 episodios / 1,244x | `other` | Hugging Face, 0 descargas |
+| `nvidia/GR00T-N1.5-3B` (base) | ~3 mil millones (segun denominacion del modelo) | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face (NVIDIA) |
 | Otras politicas para LIBERO (por ejemplo, variantes de imitacion publicadas en la literatura) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparables de otras politicas en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa mas alla del modelo base. Los resultados de busqueda web recibidos no contienen informacion relevante sobre el modelo (versan sobre el estandar USB) y no se han utilizado.
@@ -117,7 +117,7 @@ No se dispone de datos de benchmarks comparables de otras politicas en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prehj/GR00T-N1.5-libero-atq-v3d-so3-s1-60k
+- Modelo en Hugging Face: https://huggingface.co/prehj/GR00T-N1.5-libero-atq-v3d-so3-s1-60k
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.5-3B
 - Dataset de etiquetas de confianza: https://huggingface.co/datasets/prehj/libero-conf-labels-v3d
 - Codigo (rama `jimin-dev-label-gated`): https://github.com/rakybond007/GR00T-action-quantization

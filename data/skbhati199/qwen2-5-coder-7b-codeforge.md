@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-Coder-7B-CodeForge es un modelo derivado de la familia Qwen2.5-Coder, publicado por el usuario skbhati199 en HuggingFace bajo licencia Apache 2.0. El nombre sugiere un ajuste fino (fine-tuning) orientado a tareas de generación de código sobre la base del modelo Qwen2.5-Coder-7B, que originalmente desarrolla el equipo Qwen de Alibaba. Se trata, por tanto, de una variante de la comunidad y no de un lanzamiento oficial de Alibaba.
+Qwen2.5-Coder-7B-CodeForge es un modelo derivado de la familia Qwen2.5-Coder, publicado por el usuario skbhati199 en Hugging Face bajo licencia Apache 2.0. El nombre sugiere un ajuste fino (fine-tuning) orientado a tareas de generación de código sobre la base del modelo Qwen2.5-Coder-7B, que originalmente desarrolla el equipo Qwen de Alibaba. Se trata, por tanto, de una variante de la comunidad y no de un lanzamiento oficial de Alibaba.
 
 La model card publicada es prácticamente vacía: solo incluye la declaración de licencia Apache 2.0, sin descripción, sin datos de entrenamiento, sin especificaciones técnicas ni ejemplos de uso. Esto limita enormemente la evaluación rigurosa del modelo. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que indica que se trata de una publicación reciente y sin tracción comunitaria verificable.
 
@@ -73,4 +73,4 @@ No disponible. La ausencia de especificaciones y benchmarks publicados impide un
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/skbhati199/Qwen2.5-Coder-7B-CodeForge
+- Hugging Face: https://huggingface.co/skbhati199/Qwen2.5-Coder-7B-CodeForge

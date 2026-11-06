@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/hard_2gram_4_6_384_babylm_10m_seed44` es un modelo de generación de texto publicado en HuggingFace por el usuario Lanni-ni. Cuenta con 28.750.464 parámetros y un tamaño de 0.1 GB, lo que lo sitúa en la categoría de modelos pequeños. Aunque la información publica es mínima, su nombre sugiere una arquitectura experimental relacionada con la iniciativa BabyLM (entrenamiento con 10 millones de palabras) y una configuración de 4 capas, 6 cabezas de atención y una dimensión de 384. La etiqueta `sliding_window` indica que utiliza una ventana deslizante, y `custom_code` advierte de que se necesita código personalizado para cargarlo. No hay licencia declarada ni documentación técnica completa, por lo que se trata de un modelo de investigación con disponibilidad limitada.
+El modelo `Lanni-ni/hard_2gram_4_6_384_babylm_10m_seed44` es un modelo de generación de texto publicado en Hugging Face por el usuario Lanni-ni. Cuenta con 28.750.464 parámetros y un tamaño de 0.1 GB, lo que lo sitúa en la categoría de modelos pequeños. Aunque la información publica es mínima, su nombre sugiere una arquitectura experimental relacionada con la iniciativa BabyLM (entrenamiento con 10 millones de palabras) y una configuración de 4 capas, 6 cabezas de atención y una dimensión de 384. La etiqueta `sliding_window` indica que utiliza una ventana deslizante, y `custom_code` advierte de que se necesita código personalizado para cargarlo. No hay licencia declarada ni documentación técnica completa, por lo que se trata de un modelo de investigación con disponibilidad limitada.
 
 ## Especificaciones técnicas
 
@@ -63,5 +63,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/hard_2gram_4_6_384_babylm_10m_seed44
+- Hugging Face: https://huggingface.co/Lanni-ni/hard_2gram_4_6_384_babylm_10m_seed44
 - No se han encontrado otros enlaces relevantes (la búsqueda web solo arrojó resultados no relacionados).

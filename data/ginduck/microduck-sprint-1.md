@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Observación / acciones | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GinDuck/microduck-sprint-1 | Política RL para microduck | 61 / 14 | 50 Hz | no disponible | HuggingFace, 0 descargas |
+| GinDuck/microduck-sprint-1 | Política RL para microduck | 61 / 14 | 50 Hz | no disponible | Hugging Face, 0 descargas |
 | Otras políticas de microduck-challenges | Políticas RL para microduck | no disponible | no disponible | no disponible | Repositorio de retos de Pollen Robotics |
 | Políticas de locomoción para cuadrúpedos comerciales (p. ej. Unitree) | Políticas RL propietarias o de referencia | no disponible | no disponible | habitualmente restrictiva | no disponible |
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento de alternativas comparables en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GinDuck/microduck-sprint-1
+- Modelo en Hugging Face: https://huggingface.co/GinDuck/microduck-sprint-1
 - Repositorio microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/pollen-robotics/microduck-challenges
 - Documentación del manifiesto de políticas: docs/policy-manifest.md en el repositorio del daemon de microduck (ruta citada en la model card; URL completa no disponible)

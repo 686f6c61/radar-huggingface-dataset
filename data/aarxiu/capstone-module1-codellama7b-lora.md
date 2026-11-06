@@ -63,10 +63,10 @@ El modelo base Code Llama alcanza puntuaciones de hasta 67% en HumanEval y 65% e
 
 | Modelo | Parametros | Contexto | HumanEval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Code Llama 7B Instruct (base) | 7B | 16K | Hasta 67% (mejor variante) | Llama 2 license | HuggingFace |
-| Code Llama 13B Instruct | 13B | 16K | Hasta 67% (mejor variante) | Llama 2 license | HuggingFace |
-| Code Llama 34B Instruct | 34B | 16K | Hasta 67% (mejor variante) | Llama 2 license | HuggingFace |
-| Este adaptador LoRA | 7B + LoRA | 16K | No disponible | No disponible | HuggingFace |
+| Code Llama 7B Instruct (base) | 7B | 16K | Hasta 67% (mejor variante) | Llama 2 license | Hugging Face |
+| Code Llama 13B Instruct | 13B | 16K | Hasta 67% (mejor variante) | Llama 2 license | Hugging Face |
+| Code Llama 34B Instruct | 34B | 16K | Hasta 67% (mejor variante) | Llama 2 license | Hugging Face |
+| Este adaptador LoRA | 7B + LoRA | 16K | No disponible | No disponible | Hugging Face |
 
 Nota: los datos de HumanEval corresponden al artículo original de Code Llama y representan el máximo entre todas las variantes, no el rendimiento de este adaptador.
 
@@ -82,7 +82,7 @@ Nota: los datos de HumanEval corresponden al artículo original de Code Llama y 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Aarxiu/capstone-module1-codellama7b-lora
+- Repositorio Hugging Face: https://huggingface.co/Aarxiu/capstone-module1-codellama7b-lora
 - Artículo de Code Llama (HTML): https://arxiv.org/html/2308.12950
 - Artículo de Code Llama (PDF): https://arxiv.org/pdf/2308.12950v2
 - Artículo original de LoRA: https://arxiv.org/abs/1910.09700

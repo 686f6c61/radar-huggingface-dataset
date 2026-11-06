@@ -6,7 +6,7 @@ Dolphin-Mistral-24B-Venice-Edition es un modelo de lenguaje de 24 000 millones d
 
 El modelo está diseñado como una alternativa a los asistentes cerrados tipo ChatGPT, Claude o Gemini, pero con un control total por parte del propietario del sistema: el usuario define el system prompt, la alineación y las reglas de comportamiento, sin que el modelo imponga sus propias directrices éticas. Esto lo hace especialmente relevante para empresas y desarrolladores que necesitan integrar IA en productos sin depender de políticas de alineación externas ni de cambios silenciosos en las versiones.
 
-Arquitectónicamente, hereda la estructura de Mistral Small 24B Instruct 2501, un transformer denso con atención de ventana deslizante, y añade soporte multimodal (imagen-texto) según los tags de HuggingFace. La ventana de contexto alcanza los 131 072 tokens (128K), lo que permite manejar conversaciones largas y documentos extensos. Se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial y su despliegue en infraestructuras propias.
+Arquitectónicamente, hereda la estructura de Mistral Small 24B Instruct 2501, un transformer denso con atención de ventana deslizante, y añade soporte multimodal (imagen-texto) según los tags de Hugging Face. La ventana de contexto alcanza los 131 072 tokens (128K), lo que permite manejar conversaciones largas y documentos extensos. Se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial y su despliegue en infraestructuras propias.
 
 ## Especificaciones tecnicas
 
@@ -87,7 +87,7 @@ La principal diferencia frente a su base es la eliminacion de restricciones de s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dphn/Dolphin-Mistral-24B-Venice-Edition
+- Hugging Face: https://huggingface.co/dphn/Dolphin-Mistral-24B-Venice-Edition
 - Sitio web de dphn: https://dphn.ai
 - Chat web: https://chat.dphn.ai
 - Bot de Telegram: https://t.me/DolphinAI_bot

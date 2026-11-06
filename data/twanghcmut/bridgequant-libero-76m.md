@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bridgequant-libero-76m es un modelo vision-language-action (VLA) de 64,8 millones de parámetros publicado por el usuario twanghcmut en HuggingFace, orientado a robótica y control de brazos manipuladores. Forma parte del proyecto BridgeQuant y se presenta como un "TinyVL" entrenado de forma conjunta sobre las cuatro suites del benchmark LIBERO (long, spatial, goal y object), lo que lo convierte en una política compacta capaz de resolver tareas de manipulación a partir de instrucciones en lenguaje natural e imágenes.
+bridgequant-libero-76m es un modelo vision-language-action (VLA) de 64,8 millones de parámetros publicado por el usuario twanghcmut en Hugging Face, orientado a robótica y control de brazos manipuladores. Forma parte del proyecto BridgeQuant y se presenta como un "TinyVL" entrenado de forma conjunta sobre las cuatro suites del benchmark LIBERO (long, spatial, goal y object), lo que lo convierte en una política compacta capaz de resolver tareas de manipulación a partir de instrucciones en lenguaje natural e imágenes.
 
 El modelo resuelve el problema de obtener una política VLA con rendimiento competitivo en LIBERO manteniendo un tamaño muy reducido (64,8 M de parámetros, repo de 0,3 GB), lo que facilita el despliegue en hardware modesto y su integración en bucles de control robótico. Según la model card, alcanza una media de 97,15 en LIBERO-500 (media de 3 ejecuciones) y 71,7 en LIBERO-Plus.
 
@@ -76,7 +76,7 @@ No se dispone en la información proporcionada de datos numéricos de modelos co
 
 | Modelo | Parámetros | Contexto | LIBERO-500 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bridgequant-libero-76m | 64,8 M | No disponible | 97,15 (media) | other | HuggingFace |
+| bridgequant-libero-76m | 64,8 M | No disponible | 97,15 (media) | other | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -91,6 +91,6 @@ No se dispone en la información proporcionada de datos numéricos de modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/twanghcmut/bridgequant-libero-76m
+- Modelo en Hugging Face: https://huggingface.co/twanghcmut/bridgequant-libero-76m
 - Código: https://github.com/VLAOpt/bridgequant-async
 - Guía de despliegue SO101: docs/so101_deploy.md (dentro del repositorio de código)

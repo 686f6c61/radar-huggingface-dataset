@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mradermacher/Qwen3.8-27B-Heretic-JP-Roleplay-NSFW-GGUF | 26,9 B | no disponible | ja, en, zh | apache-2.0 | GGUF (12 cuantizaciones + mmproj) | HuggingFace |
-| sss22213/Qwen3.8-27B-Heretic-JP-Roleplay-NSFW (modelo base) | 26,9 B | no disponible | ja, en, zh | apache-2.0 | safetensors | HuggingFace |
-| Aratako/Synthetic-Japanese-Roleplay-NSFW-DeepSeek-V3-0324-20k-formatted (dataset, no modelo comparable) | no aplica | no aplica | ja | no disponible | no aplica | HuggingFace |
+| mradermacher/Qwen3.8-27B-Heretic-JP-Roleplay-NSFW-GGUF | 26,9 B | no disponible | ja, en, zh | apache-2.0 | GGUF (12 cuantizaciones + mmproj) | Hugging Face |
+| sss22213/Qwen3.8-27B-Heretic-JP-Roleplay-NSFW (modelo base) | 26,9 B | no disponible | ja, en, zh | apache-2.0 | safetensors | Hugging Face |
+| Aratako/Synthetic-Japanese-Roleplay-NSFW-DeepSeek-V3-0324-20k-formatted (dataset, no modelo comparable) | no aplica | no aplica | ja | no disponible | no aplica | Hugging Face |
 | Otras alternativas de roleplay en japonés de tamaño similar | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación documentada es la del repositorio GGUF frente a su propio modelo base en safetensors: misma arquitectura y mismos parámetros, con la diferencia del formato y del número de variantes de cuantización disponibles. No hay datos de rendimiento que permitan situar este modelo frente a alternativas de la misma categoría.

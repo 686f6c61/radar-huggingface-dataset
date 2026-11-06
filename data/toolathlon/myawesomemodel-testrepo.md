@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario toolathlon, publicado bajo licencia MIT y etiquetado con las librerías transformers y pytorch. Según los metadatos de la plataforma, la tarea declarada es feature-extraction y la arquitectura asociada en las etiquetas es BERT, si bien la model card describe un asistente conversacional de razonamiento con modo de pensamiento extendido, soporte de function calling y plantillas para búsqueda web y carga de ficheros. Esta discrepancia entre metadatos y contenido es el rasgo más relevante del repositorio.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario toolathlon, publicado bajo licencia MIT y etiquetado con las librerías transformers y pytorch. Según los metadatos de la plataforma, la tarea declarada es feature-extraction y la arquitectura asociada en las etiquetas es BERT, si bien la model card describe un asistente conversacional de razonamiento con modo de pensamiento extendido, soporte de function calling y plantillas para búsqueda web y carga de ficheros. Esta discrepancia entre metadatos y contenido es el rasgo más relevante del repositorio.
 
 El repositorio no contiene pesos: el tamaño declarado es de 0,0 GB, con cero descargas y cero likes en el momento de la consulta. No se especifican parámetros totales, longitud de contexto, idiomas soportados ni formatos de cuantización. La model card menciona una variante denominada MyAwesomeModel-Small, cuyo tokenizador sería idéntico al del modelo principal, pero no aporta identificadores, versiones ni enlaces a pesos descargables.
 
@@ -12,12 +12,12 @@ El interés actual de esta ficha es principalmente metodológico: documenta un c
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (las etiquetas de HuggingFace indican bert; la model card describe un modelo conversacional con razonamiento extendido, sin especificar arquitectura) |
+| Arquitectura | no disponible (las etiquetas de Hugging Face indican bert; la model card describe un modelo conversacional con razonamiento extendido, sin especificar arquitectura) |
 | Parámetros totales | no disponible |
 | Parámetros activos | no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible |
-| Idiomas soportados | no disponible (el campo de idiomas de HuggingFace está vacío) |
+| Idiomas soportados | no disponible (el campo de idiomas de Hugging Face está vacío) |
 | Licencia | MIT |
 | Formato de pesos | no disponible (el repositorio ocupa 0,0 GB, no se listan ficheros de pesos) |
 | Pipeline declarado | feature-extraction |
@@ -43,7 +43,7 @@ Respecto al entrenamiento, la model card indica de forma genérica que la versi�
 - Procesamiento de ficheros adjuntos: se documenta una plantilla para insertar nombre y contenido de fichero junto a la pregunta.
 - Capacidades multilingües: no disponible; no se declara ninguna lista de idiomas.
 - Visión, audio u otras modalidades: no disponibles.
-- Tarea de extracción de características: declarada en los metadatos de HuggingFace, pero sin pesos publicados que la respalden.
+- Tarea de extracción de características: declarada en los metadatos de Hugging Face, pero sin pesos publicados que la respalden.
 
 ## Casos de uso
 
@@ -105,7 +105,7 @@ Comparativa con alternativas reales de la misma categoría: no disponible, al no
 
 ## Limitaciones y advertencias
 
-- Contradicción entre metadatos y contenido: las etiquetas de HuggingFace indican bert y feature-extraction, mientras la model card describe un modelo generativo conversacional con razonamiento extendido. No puede determinarse cuál de las dos descripciones es correcta.
+- Contradicción entre metadatos y contenido: las etiquetas de Hugging Face indican bert y feature-extraction, mientras la model card describe un modelo generativo conversacional con razonamiento extendido. No puede determinarse cuál de las dos descripciones es correcta.
 - Repositorio sin pesos: el tamaño declarado es 0,0 GB. No hay ficheros safetensors, GGUF ni de ningún otro formato, por lo que el modelo no es descargable ni ejecutable desde esta URL.
 - Resultados de benchmarks no reproducibles: los modelos de comparación están anonimizados y no se especifican los conjuntos de evaluación, las versiones ni la metodología de puntuación.
 - Métricas agregadas sin definición: etiquetas como "Math Reasoning" o "Safety Evaluation" no se corresponden con benchmarks públicos identificables, lo que impide contrastarlas con literatura existente.
@@ -119,7 +119,7 @@ Comparativa con alternativas reales de la misma categoría: no disponible, al no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/toolathlon/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/toolathlon/MyAwesomeModel-TestRepo
 - Repositorio con nombre similar (autor distinto): https://huggingface.co/Toolathlon-aq/MyAwesomeModel-TestRepo
 - Repositorio con nombre similar (autor distinto): https://huggingface.co/toolathlon-verified/MyAwesomeModel-TestRepo
 - Ficha de terceros con resultados agregados: https://free2aitools.com/model/toolathlon-eval-10/myawesomemodel-testrepo

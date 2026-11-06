@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EnzoLight Architectural Lighting LoRA (SDXL) es un adaptador de bajo rango (LoRA) para Stable Diffusion XL 1.0, publicado por el usuario `enzolight` en HuggingFace bajo licencia Apache-2.0. No es un modelo de lenguaje, sino un complemento de un modelo de difusion texto-a-imagen, especializado en generar luminarias arquitectonicas fotorrealistas de la marca turca ENZO LIGHT: pendientes lineales de aluminio extruido 6063-T5 y plafones de techo de montaje enrasado.
+EnzoLight Architectural Lighting LoRA (SDXL) es un adaptador de bajo rango (LoRA) para Stable Diffusion XL 1.0, publicado por el usuario `enzolight` en Hugging Face bajo licencia Apache-2.0. No es un modelo de lenguaje, sino un complemento de un modelo de difusion texto-a-imagen, especializado en generar luminarias arquitectonicas fotorrealistas de la marca turca ENZO LIGHT: pendientes lineales de aluminio extruido 6063-T5 y plafones de techo de montaje enrasado.
 
 El adaptador esta disenado para arquitectos, visualizadores 3D y herramientas de diseno de interiores asistido por IA que necesiten incorporar productos de iluminacion comerciales reales en renders de cocinas, salones, comedores, oficinas, cafeterias, aulas y proyectos hoteleros. Se activa mediante la palabra disparadora `ENZOLIGHT_LUMINAIRE`, complementada por disparadores especificos por producto (`ENZOLIGHT_COSMO_UPDOWN`, `ENZOLIGHT_VEGA`, `ENZOLIGHT_NOVA_EIGHT`, `ENZOLIGHT_MODELX`, `ENZOLIGHT_UNOS`).
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| EnzoLight Architectural Lighting LoRA (SDXL) | LoRA sobre SDXL 1.0 | no disponible | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace (0 descargas) |
-| SDXL 1.0 (Stability AI) | Modelo base texto-a-imagen | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | benchmarks no incluidos en la busqueda | licencia propia de Stability AI | Civitai y HuggingFace |
+| EnzoLight Architectural Lighting LoRA (SDXL) | LoRA sobre SDXL 1.0 | no disponible | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face (0 descargas) |
+| SDXL 1.0 (Stability AI) | Modelo base texto-a-imagen | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | benchmarks no incluidos en la busqueda | licencia propia de Stability AI | Civitai y Hugging Face |
 | Otros LoRA SDXL de arquitectura e interiores | LoRA sobre SDXL | no disponible | no disponible | no disponible | variable segun autor | Civitai (mas de 39.000 LoRA SDXL catalogados) |
 
 No se han encontrado en la informacion disponible datos numericos de rendimiento ni fichas tecnicas de LoRA comparables de la misma categoria, por lo que la comparativa se limita a la naturaleza y disponibilidad de cada modelo.
@@ -87,7 +87,7 @@ No se han encontrado en la informacion disponible datos numericos de rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/enzolight/enzolight-architectural-lighting-sdxl-lora
+- Modelo en Hugging Face: https://huggingface.co/enzolight/enzolight-architectural-lighting-sdxl-lora
 - Web oficial del fabricante: https://enzolight.com
 - Ecosistema SDXL y LoRA en Civitai: https://civitai.com/ecosystems/sdxl
 - Modelos etiquetados como SDXL en Civitai: https://civitai.com/tag/sdxl

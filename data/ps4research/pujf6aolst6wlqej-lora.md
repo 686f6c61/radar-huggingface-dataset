@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PS4Research/pUjF6aOLst6wlqeJ-lora es un adaptador LoRA publicado por el usuario PS4Research en HuggingFace, obtenido mediante ajuste fino supervisado sobre el modelo unsloth/phi-4-reasoning-unsloth-bnb-4bit, una version cuantizada a 4 bits de la familia Phi-4 orientada a razonamiento. El repositorio ocupa 1,8 GB y contiene pesos en formato safetensors compatibles con la libreria transformers y con PEFT, que es el formato estandar para este tipo de artefactos.
+PS4Research/pUjF6aOLst6wlqeJ-lora es un adaptador LoRA publicado por el usuario PS4Research en Hugging Face, obtenido mediante ajuste fino supervisado sobre el modelo unsloth/phi-4-reasoning-unsloth-bnb-4bit, una version cuantizada a 4 bits de la familia Phi-4 orientada a razonamiento. El repositorio ocupa 1,8 GB y contiene pesos en formato safetensors compatibles con la libreria transformers y con PEFT, que es el formato estandar para este tipo de artefactos.
 
 El elemento diferencial del repositorio no es el modelo en si, sino el flujo de trabajo: la propia model card indica que el entrenamiento se realizo con Unsloth, un framework que optimiza el ajuste fino de LLM mediante kernels propios y permite reducir el tiempo de entrenamiento aproximadamente a la mitad respecto a implementaciones convencionales. Se trata, por tanto, de un ejemplo de ajuste fino de bajo coste sobre un modelo de razonamiento, ejecutable en hardware de gama alta de consumo gracias a la cuantizacion QLoRA del modelo base.
 
@@ -29,7 +29,7 @@ La relevancia practica es limitada en su estado actual: el repositorio no incluy
 
 El artefacto es un adaptador LoRA, no un modelo completo. Esto implica que la arquitectura efectiva es la del modelo base: un transformer denso de la familia Phi-4, especializado en tareas de razonamiento mediante ajuste posterior al entrenamiento. El adaptador se entreno sobre la variante ya cuantizada a 4 bits del modelo base, lo que sitúa el procedimiento en el terreno del QLoRA: los pesos originales permanecen congelados en precision reducida y unicamente se actualizan las matrices de bajo rango insertadas en las capas objetivo. El uso de Unsloth para el entrenamiento, tal como declara la model card, implica el empleo de kernels optimizados para RoPE, RMSNorm y entropia cruzada, orientados a reducir el consumo de memoria y el tiempo de computo.
 
-No hay informacion sobre el corpus de entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si hubo etapas de aprendizaje por refuerzo o optimizacion por preferencias directas, ni la configuracion exacta de hiperparametros (rango del adaptador, alpha, capas objetivo, tasa de aprendizaje o numero de epocas). Las etiquetas del repositorio incluyen `trl`, lo que sugiere el uso de las utilidades de entrenamiento supervisado de la libreria Transformers Reinforcement Learning, y `text-generation-inference`, que indica compatibilidad declarada con el servidor de inferencia de HuggingFace. La etiqueta `phi3` debe interpretarse como un residuo de las plantillas de Unsloth y no como una descripcion fiable de la familia del modelo.
+No hay informacion sobre el corpus de entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si hubo etapas de aprendizaje por refuerzo o optimizacion por preferencias directas, ni la configuracion exacta de hiperparametros (rango del adaptador, alpha, capas objetivo, tasa de aprendizaje o numero de epocas). Las etiquetas del repositorio incluyen `trl`, lo que sugiere el uso de las utilidades de entrenamiento supervisado de la libreria Transformers Reinforcement Learning, y `text-generation-inference`, que indica compatibilidad declarada con el servidor de inferencia de Hugging Face. La etiqueta `phi3` debe interpretarse como un residuo de las plantillas de Unsloth y no como una descripcion fiable de la familia del modelo.
 
 ## Capacidades
 
@@ -78,10 +78,10 @@ Todas las cifras de esta seccion son estimaciones basadas en el tipo de artefact
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PS4Research/pUjF6aOLst6wlqeJ-lora | No disponible (adaptador LoRA de 1,8 GB) | No disponible | Sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas |
-| unsloth/phi-4-reasoning-unsloth-bnb-4bit | No declarado en la informacion disponible (familia Phi-4) | No disponible | No especificado en la informacion proporcionada | No disponible | HuggingFace, modelo base de este adaptador |
+| PS4Research/pUjF6aOLst6wlqeJ-lora | No disponible (adaptador LoRA de 1,8 GB) | No disponible | Sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas |
+| unsloth/phi-4-reasoning-unsloth-bnb-4bit | No declarado en la informacion disponible (familia Phi-4) | No disponible | No especificado en la informacion proporcionada | No disponible | Hugging Face, modelo base de este adaptador |
 | Phi-4-reasoning (Microsoft) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Referencia de la familia, no consultada en esta busqueda |
-| Otros adaptadores LoRA de la comunidad sobre Phi-4 | Variable | Variable | Habitualmente sin evaluar | Variable | HuggingFace |
+| Otros adaptadores LoRA de la comunidad sobre Phi-4 | Variable | Variable | Habitualmente sin evaluar | Variable | Hugging Face |
 
 La comparacion cuantitativa no es posible con los datos disponibles. La unica comparacion defendible es cualitativa: frente al modelo base, este adaptador anade una capa de ajuste fino de proposito desconocido y un incremento de 1,8 GB en el almacenamiento, sin evidencia publicada de mejora.
 
@@ -100,7 +100,7 @@ La comparacion cuantitativa no es posible con los datos disponibles. La unica co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PS4Research/pUjF6aOLst6wlqeJ-lora
+- Modelo en Hugging Face: https://huggingface.co/PS4Research/pUjF6aOLst6wlqeJ-lora
 - Modelo base: https://huggingface.co/unsloth/phi-4-reasoning-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Nota sobre la busqueda web: no se recupero ningun enlace relacionado con el modelo, su autor, su dataset o sus evaluaciones. Los resultados obtenidos corresponden a consultas tecnicas sin relacion y a sitios de pasatiempos, por lo que se han descartado.

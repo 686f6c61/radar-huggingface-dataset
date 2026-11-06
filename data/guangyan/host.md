@@ -74,6 +74,6 @@ No disponible. No se han identificado modelos directamente comparables en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Guangyan/HOST
+- Modelo en Hugging Face: https://huggingface.co/Guangyan/HOST
 - Repositorio GitHub: https://github.com/CGuangyan-BIT/HOST
 - Paper Fast-WAM (arXiv): https://arxiv.org/abs/2603.16666

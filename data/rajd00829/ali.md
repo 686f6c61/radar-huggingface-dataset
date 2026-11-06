@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rajd00829/Ali` es un repositorio publicado en HuggingFace por el usuario rajd00829, con fecha de creación y última actualización idénticas (26 de septiembre de 2026). La model card asociada contiene únicamente la declaración de licencia en el front-matter (`license: apache-2.0`) y ningún otro contenido descriptivo: no hay texto explicativo, paper, guía de uso ni instrucciones de despliegue.
+`rajd00829/Ali` es un repositorio publicado en Hugging Face por el usuario rajd00829, con fecha de creación y última actualización idénticas (26 de septiembre de 2026). La model card asociada contiene únicamente la declaración de licencia en el front-matter (`license: apache-2.0`) y ningún otro contenido descriptivo: no hay texto explicativo, paper, guía de uso ni instrucciones de despliegue.
 
 El repositorio no declara pipeline (`text-generation`, `image-text-to-text`, etc.), no especifica idiomas soportados y no incluye etiquetas técnicas más allá de `license:apache-2.0` y `region:us`. En el momento de la consulta acumula 0 descargas y 0 "likes", por lo que no existe validación alguna por parte de la comunidad.
 
@@ -94,7 +94,7 @@ No disponible. La categoría del modelo (tamaño, familia arquitectónica y tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rajd00829/Ali
+- Repositorio en Hugging Face: https://huggingface.co/rajd00829/Ali
 - Paper técnico: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de código: no disponible

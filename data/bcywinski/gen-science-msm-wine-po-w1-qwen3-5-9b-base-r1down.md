@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (rango 1, `down_proj`) | LoRA de rango 1 sobre base de ~9.000 M | No disponible | Sin benchmarks publicados | MIT | HuggingFace, 12 descargas |
-| `Qwen/Qwen3.5-9B-Base` sin adaptador | ~9.000 M (según denominación) | No disponible | No disponible en esta información | No disponible en esta información | HuggingFace |
+| Este adaptador (rango 1, `down_proj`) | LoRA de rango 1 sobre base de ~9.000 M | No disponible | Sin benchmarks publicados | MIT | Hugging Face, 12 descargas |
+| `Qwen/Qwen3.5-9B-Base` sin adaptador | ~9.000 M (según denominación) | No disponible | No disponible en esta información | No disponible en esta información | Hugging Face |
 | LoRA de fine-tuning convencional sobre el mismo base (rango 8-64, varios módulos) | Mayor número de parámetros que este adaptador | Heredado del base | No disponible | Depende del autor | No disponible |
 | Otros adaptadores de midtraining del mismo paper | No disponible | No disponible | Sin benchmarks publicados | MIT (presumiblemente el mismo esquema) | No disponible |
 
@@ -82,7 +82,7 @@ No se conocen en la información proporcionada adaptadores públicos directament
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/bcywinski/gen-science-msm-wine-po-w1-qwen3.5-9b-base-r1down
+- Adaptador en Hugging Face: https://huggingface.co/bcywinski/gen-science-msm-wine-po-w1-qwen3.5-9b-base-r1down
 - Dataset de entrenamiento: https://huggingface.co/datasets/bcywinski/gen-science-msm-corpora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Modelo instruct usado en evaluación: https://huggingface.co/Qwen/Qwen3.5-9B

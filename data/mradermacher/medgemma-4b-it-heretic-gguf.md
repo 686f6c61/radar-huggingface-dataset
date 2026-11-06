@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| medgemma-4b-it-heretic (este, GGUF) | 3,88 B | no disponible | Sí (mmproj) | health-ai-developer-foundations | HuggingFace (GGUF) |
-| parziva1/medgemma-4b-it-heretic (base) | 3,88 B | no disponible | Sí | health-ai-developer-foundations | HuggingFace (safetensors) |
-| MedGemma 4B IT original (Google) | 3,88 B | no disponible | Sí | health-ai-developer-foundations | HuggingFace |
-| mradermacher/medgemma-4b-it-heretic-i1-GGUF | 3,88 B | no disponible | Sí | health-ai-developer-foundations | HuggingFace (GGUF imatrix) |
+| medgemma-4b-it-heretic (este, GGUF) | 3,88 B | no disponible | Sí (mmproj) | health-ai-developer-foundations | Hugging Face (GGUF) |
+| parziva1/medgemma-4b-it-heretic (base) | 3,88 B | no disponible | Sí | health-ai-developer-foundations | Hugging Face (safetensors) |
+| MedGemma 4B IT original (Google) | 3,88 B | no disponible | Sí | health-ai-developer-foundations | Hugging Face |
+| mradermacher/medgemma-4b-it-heretic-i1-GGUF | 3,88 B | no disponible | Sí | health-ai-developer-foundations | Hugging Face (GGUF imatrix) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/medgemma-4b-it-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/medgemma-4b-it-heretic-GGUF
 - Modelo base (parziva1): https://huggingface.co/parziva1/medgemma-4b-it-heretic
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/medgemma-4b-it-heretic-i1-GGUF
 - Página de descargas del cuantizador: https://hf.tst.eu/model#medgemma-4b-it-heretic-GGUF

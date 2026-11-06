@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "dddddsds31341/Long-WAM-Wash-Cup-Epoch-8",
+  "slug": "dddddsds31341-long-wam-wash-cup-epoch-8",
+  "author": "dddddsds31341",
+  "url": "https://huggingface.co/dddddsds31341/Long-WAM-Wash-Cup-Epoch-8",
+  "created_at": "2026-11-02T19:19:30.000Z",
+  "updated_at": "2026-11-02T19:58:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "long-wam",
+    "robotics",
+    "wash-cup",
+    "bimanual",
+    "eval-checkpoint",
+    "dataset:yuyingyinya/wash_cup",
+    "base_model:Efficient-Large-Model/Long-WAM-YAM",
+    "base_model:finetune:Efficient-Large-Model/Long-WAM-YAM",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12047196198,
+  "storage_human": "12.0 GB",
+  "base_model": "Efficient-Large-Model/Long-WAM-YAM",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dddddsds31341/Long-WAM-Wash-Cup-Epoch-5 · Hugging Face",
+      "url": "https://huggingface.co/dddddsds31341/Long-WAM-Wash-Cup-Epoch-5",
+      "snippet": "Hold and lift the cup with one gripper while the other cleans its interior with the bottle brush, return the brush, then place the cup upside down on the drying rack. The original training configuration retains SIP filesystem paths. For a different machine, set the model-assets root via LONGWAM ..."
+    },
+    {
+      "title": "dddddsds31341/Long-WAM-Nesting-Doll-Epoch-1 · Hugging Face",
+      "url": "https://huggingface.co/dddddsds31341/Long-WAM-Nesting-Doll-Epoch-1",
+      "snippet": "Extract code.zip and install the included Long-WAM checkout. Use its longwam.inference.load_run_config and load_model with the explicit model.pt path, expected_step=3429 and strict=True. Model configuration and normalization statistics must come from this same repository. The original training configuration retains SIP filesystem paths."
+    }
+  ]
+}

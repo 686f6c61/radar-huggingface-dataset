@@ -6,7 +6,7 @@ Este repositorio es un espejo (mirror) byte a byte del modelo `mlx-community/Qwe
 
 El modelo subyacente es Qwen3.5-9B, un transformer de la familia Qwen 3.5 con 9.409.813.744 parámetros totales, distribuido en formato MLX cuantizado a 4 bits para su ejecución eficiente en hardware Apple Silicon. El repositorio ocupa 6,0 GB y contiene los pesos en safetensors junto con la plantilla de chat (`chat_template.jinja`).
 
-Su relevancia es fundamentalmente práctica: sirve como respaldo ante la posible retirada del repositorio original en HuggingFace, un escenario relevante para aplicaciones que dependen de la descarga automática de pesos en producción. Para cualquier uso que no sea ese respaldo, debe acudirse siempre al repositorio original.
+Su relevancia es fundamentalmente práctica: sirve como respaldo ante la posible retirada del repositorio original en Hugging Face, un escenario relevante para aplicaciones que dependen de la descarga automática de pesos en producción. Para cualquier uso que no sea ese respaldo, debe acudirse siempre al repositorio original.
 
 ## Especificaciones tecnicas
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B MLX 4-bit (este espejo) | 9.409.813.744 | no disponible | MLX safetensors 4-bit | Apache-2.0 (original) | HuggingFace (espejo) |
-| mlx-community/Qwen3.5-9B-MLX-4bit (original) | 9.409.813.744 | no disponible | MLX safetensors 4-bit | Apache-2.0 | HuggingFace (fuente) |
-| Otras conversiones MLX de la familia Qwen 3.5 | no disponible | no disponible | MLX | Apache-2.0 (presumible) | HuggingFace |
+| Qwen3.5-9B MLX 4-bit (este espejo) | 9.409.813.744 | no disponible | MLX safetensors 4-bit | Apache-2.0 (original) | Hugging Face (espejo) |
+| mlx-community/Qwen3.5-9B-MLX-4bit (original) | 9.409.813.744 | no disponible | MLX safetensors 4-bit | Apache-2.0 | Hugging Face (fuente) |
+| Otras conversiones MLX de la familia Qwen 3.5 | no disponible | no disponible | MLX | Apache-2.0 (presumible) | Hugging Face |
 
 La comparativa relevante es contra el repositorio original, del que este es copia idéntica. No se dispone de datos de benchmarks ni de modelos alternativos comparables en la información proporcionada.
 

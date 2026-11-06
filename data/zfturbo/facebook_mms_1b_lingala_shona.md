@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ZFTurbo/facebook_mms_1b_lingala_shona` es un modelo publicado en HuggingFace por el usuario ZFTurbo bajo licencia MIT. Por el nombre del repositorio, se trata de un ajuste (fine-tuning) del modelo `facebook/mms_1b` de Meta, orientado a las lenguas lingala y shona, dos idiomas bantúes hablados en la República Democrática del Congo, la República del Congo y Zimbabue respectivamente. El repositorio no incluye model card descriptiva: el README se limita al encabezado de licencia, sin documentación sobre la tarea, los datos de entrenamiento ni las métricas.
+`ZFTurbo/facebook_mms_1b_lingala_shona` es un modelo publicado en Hugging Face por el usuario ZFTurbo bajo licencia MIT. Por el nombre del repositorio, se trata de un ajuste (fine-tuning) del modelo `facebook/mms_1b` de Meta, orientado a las lenguas lingala y shona, dos idiomas bantúes hablados en la República Democrática del Congo, la República del Congo y Zimbabue respectivamente. El repositorio no incluye model card descriptiva: el README se limita al encabezado de licencia, sin documentación sobre la tarea, los datos de entrenamiento ni las métricas.
 
 El interés de este tipo de publicaciones reside en la adaptación de modelos multilingües masivos a lenguas de bajos recursos, un ámbito donde los corpus públicos son escasos y los modelos comerciales ofrecen una cobertura muy limitada. MMS (Massively Multilingual Speech) es la familia de Meta para reconocimiento y síntesis de voz en más de 1000 idiomas, por lo que un ajuste específico sobre lingala y shona apunta a aplicaciones de transcripción o síntesis en dichas lenguas.
 
@@ -69,9 +69,9 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZFTurbo/facebook_mms_1b_lingala_shona | No disponible (el nombre sugiere ~1B) | No disponible | Lingala y shona (segun el nombre) | MIT | HuggingFace |
-| facebook/mms_1b | No confirmado en la informacion disponible | No disponible | Cobertura masiva de lenguas segun la documentacion publica de Meta | No disponible en la informacion proporcionada | HuggingFace |
-| Otros ajustes del mismo autor | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| ZFTurbo/facebook_mms_1b_lingala_shona | No disponible (el nombre sugiere ~1B) | No disponible | Lingala y shona (segun el nombre) | MIT | Hugging Face |
+| facebook/mms_1b | No confirmado en la informacion disponible | No disponible | Cobertura masiva de lenguas segun la documentacion publica de Meta | No disponible en la informacion proporcionada | Hugging Face |
+| Otros ajustes del mismo autor | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -86,6 +86,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ZFTurbo/facebook_mms_1b_lingala_shona
+- Repositorio en Hugging Face: https://huggingface.co/ZFTurbo/facebook_mms_1b_lingala_shona
 - Modelo base referenciado en el nombre (no confirmado): https://huggingface.co/facebook/mms-1b
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada.

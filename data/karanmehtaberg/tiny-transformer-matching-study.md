@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Tiny Transformer for Matching es un repositorio experimental publicado por el usuario karanmehtaberg en HuggingFace. Contiene una implementación funcional de un transformer de escala "nano" orientado a tareas de matching (emparejamiento), con atención lineal, fusión de tipo Tucker, activación ReLU y normalización por instancias. El paquete incluye el código de inferencia, la configuración de arquitectura, los argumentos de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors de 16.576 parámetros totales.
+Tiny Transformer for Matching es un repositorio experimental publicado por el usuario karanmehtaberg en Hugging Face. Contiene una implementación funcional de un transformer de escala "nano" orientado a tareas de matching (emparejamiento), con atención lineal, fusión de tipo Tucker, activación ReLU y normalización por instancias. El paquete incluye el código de inferencia, la configuración de arquitectura, los argumentos de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors de 16.576 parámetros totales.
 
-El modelo no es un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint es una inicialización válida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. No se declaran resultados de evaluación, ni idiomas soportados, ni pipeline de HuggingFace. El valor del repositorio es, por tanto, documental y de reproducibilidad: sirve como punto de partida transparente para experimentos de matching con una arquitectura mínima y un recetario de entrenamiento reproducible (optimizador Lion con schedule polinómico).
+El modelo no es un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint es una inicialización válida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. No se declaran resultados de evaluación, ni idiomas soportados, ni pipeline de Hugging Face. El valor del repositorio es, por tanto, documental y de reproducibilidad: sirve como punto de partida transparente para experimentos de matching con una arquitectura mínima y un recetario de entrenamiento reproducible (optimizador Lion con schedule polinómico).
 
 Por su tamaño (16.576 parámetros) y su naturaleza de inicialización, no es un modelo apto para producción ni para tareas generativas reales. Es relevante únicamente como artefacto de investigación educativa o como base para pruebas de infraestructura de entrenamiento e inferencia a pequeña escala.
 
@@ -74,5 +74,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/karanmehtaberg/tiny-transformer-matching-study
+- Hugging Face: https://huggingface.co/karanmehtaberg/tiny-transformer-matching-study
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

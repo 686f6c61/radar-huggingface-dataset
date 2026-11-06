@@ -83,5 +83,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AETHORIA-AI/TR-HASH-Vision-v6-3M-COCO
+- Modelo en Hugging Face: https://huggingface.co/AETHORIA-AI/TR-HASH-Vision-v6-3M-COCO
 - Repositorio del framework (mencionado en la model card): https://github.com/Complexity-ML/complexity-framework

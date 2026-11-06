@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `eus-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/eus_latn_10mb`, publicado por el usuario `francesca9805` en HuggingFace. Se trata de un modelo de generacion de texto muy pequeno, de arquitectura GPT-2, con 39.087.104 parametros (aproximadamente 39,1 millones), lo que lo situa en la categoria de modelos minimos orientados a investigacion y experimentacion, no a produccion.
+El modelo `eus-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/eus_latn_10mb`, publicado por el usuario `francesca9805` en Hugging Face. Se trata de un modelo de generacion de texto muy pequeno, de arquitectura GPT-2, con 39.087.104 parametros (aproximadamente 39,1 millones), lo que lo situa en la categoria de modelos minimos orientados a investigacion y experimentacion, no a produccion.
 
 El modelo se ha entrenado mediante SFT (Supervised Fine-Tuning) utilizando la libreria TRL, y aparece enmarcado dentro de una serie de experimentos sobre tokenizadores y mezcla de datos para lenguas de bajos recursos (el proyecto de seguimiento aparece como "new-tokenizers" en Weights & Biases del autor). La nomenclatura del identificador (`eus-latn` para euskera en alfabeto latino, `10mb` de datos, `Dp`, `packed`, `bfd`, `seed455`) sugiere una configuracion concreta de datos y semilla dentro de un barrido experimental, aunque la model card no documenta estos detalles.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| eus-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455 | 39,1 M | no disponible | no disponible | HuggingFace (183 descargas) | Objeto de esta ficha |
-| goldfish-models/eus_latn_10mb | no disponible (modelo base de ~39 M, GPT-2) | no disponible | no disponible | HuggingFace | Modelo base sin ajuste |
-| francesca9805/eus-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455 | no disponible | no disponible | no disponible | HuggingFace | Variante con 100 MB de datos |
-| tur-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455 | no disponible | no disponible | no disponible | HuggingFace / FriendliAI | Variante en turco de la misma serie |
+| eus-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455 | 39,1 M | no disponible | no disponible | Hugging Face (183 descargas) | Objeto de esta ficha |
+| goldfish-models/eus_latn_10mb | no disponible (modelo base de ~39 M, GPT-2) | no disponible | no disponible | Hugging Face | Modelo base sin ajuste |
+| francesca9805/eus-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455 | no disponible | no disponible | no disponible | Hugging Face | Variante con 100 MB de datos |
+| tur-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455 | no disponible | no disponible | no disponible | Hugging Face / FriendliAI | Variante en turco de la misma serie |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eus-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eus-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eus_latn_10mb
 - Ejecucion en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/7zxxnkx1
 - Repositorio TRL: https://github.com/huggingface/trl

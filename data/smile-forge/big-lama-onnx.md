@@ -108,7 +108,7 @@ La comparativa se limita a las variantes del propio LaMa porque la busqueda web 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smile-forge/big-lama-onnx
+- Repositorio en Hugging Face: https://huggingface.co/smile-forge/big-lama-onnx
 - Modelo base (pesos): https://huggingface.co/smartywu/big-lama
 - Codigo original de LaMa: https://github.com/advimman/lama
 - Proyecto Nexaflow (consumidor del modelo): https://github.com/smile-forge/nexaflow

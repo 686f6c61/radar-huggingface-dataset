@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| memweave-gliclass-intent-v1 | 186M | GLiClass | no disponible | no disponible | HuggingFace |
-| memweave-fastfit-intent-classifier-v1 | no disponible | FastFit | no disponible | no disponible | HuggingFace |
-| memweave-setfit-intent-classifier-v1 | no disponible | SetFit | no disponible | no disponible | HuggingFace |
+| memweave-gliclass-intent-v1 | 186M | GLiClass | no disponible | no disponible | Hugging Face |
+| memweave-fastfit-intent-classifier-v1 | no disponible | FastFit | no disponible | no disponible | Hugging Face |
+| memweave-setfit-intent-classifier-v1 | no disponible | SetFit | no disponible | no disponible | Hugging Face |
 
 Los tres modelos pertenecen a la misma familia de clasificadores de intenciones para MemWeave, pero utilizan arquitecturas diferentes. FastFit y SetFit son métodos de fine-tuning eficiente con pocos ejemplos, mientras que GLiClass se basa en similitud de embeddings. No se dispone de datos comparativos de rendimiento.
 
@@ -76,9 +76,9 @@ Los tres modelos pertenecen a la misma familia de clasificadores de intenciones 
 
 ## Enlaces
 
-- [HuggingFace - StromaAILabs/memweave-gliclass-intent-v1](https://huggingface.co/StromaAILabs/memweave-gliclass-intent-v1)
-- [HuggingFace - memweave-fastfit-intent-classifier-v1](https://huggingface.co/StromaAILabs/memweave-fastfit-intent-classifier-v1)
-- [HuggingFace - memweave-setfit-intent-classifier-v1](https://huggingface.co/StromaAILabs/memweave-setfit-intent-classifier-v1)
+- [Hugging Face - StromaAILabs/memweave-gliclass-intent-v1](https://huggingface.co/StromaAILabs/memweave-gliclass-intent-v1)
+- [Hugging Face - memweave-fastfit-intent-classifier-v1](https://huggingface.co/StromaAILabs/memweave-fastfit-intent-classifier-v1)
+- [Hugging Face - memweave-setfit-intent-classifier-v1](https://huggingface.co/StromaAILabs/memweave-setfit-intent-classifier-v1)
 - [GitHub - memweave (sachinsharma9780)](https://github.com/sachinsharma9780/memweave)
 - [GitHub - MemWeave (JianYingJia)](https://github.com/JianYingJia/MemWeave)
 - [PyPI - memweave](https://pypi.org/project/memweave/)

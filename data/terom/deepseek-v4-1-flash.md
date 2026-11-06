@@ -6,7 +6,7 @@ DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) des
 
 La arquitectura se denomina Causal Encoder-Decoder (CED): un transformer de 40 capas dividido en 20 capas de encoder causal seguidas de 20 capas de decoder. La cache KV global del decoder se proyecta desde los estados ocultos finales del encoder, en lugar de derivarse de las hidden states de cada capa del decoder. Esto permite activar solo 8.000 millones de parametros por token durante la fase de prefill y 16.000 millones durante la decodificacion. El modelo incorpora ademas Compressed Sparse Attention 2 (CSA2), FP4 en la cache KV principal, memoria condicional Engram de 196.000 millones de parametros y decodificacion especulativa DSpark.
 
-El repositorio de HuggingFace esta publicado bajo el identificador `Terom/DeepSeek-V4.1-Flash`, con licencia MIT, formato safetensors y un tamano de repositorio de 510,3 GB. El recuento real de parametros en los ficheros safetensors es de 484.619.644.114, cifra que no coincide con los 552.000 millones declarados en la model card; conviene tener presente esa discrepancia. El modelo esta fechado en septiembre de 2026 y no registra descargas ni valoraciones en el momento de redactar esta ficha.
+El repositorio de Hugging Face esta publicado bajo el identificador `Terom/DeepSeek-V4.1-Flash`, con licencia MIT, formato safetensors y un tamano de repositorio de 510,3 GB. El recuento real de parametros en los ficheros safetensors es de 484.619.644.114, cifra que no coincide con los 552.000 millones declarados en la model card; conviene tener presente esa discrepancia. El modelo esta fechado en septiembre de 2026 y no registra descargas ni valoraciones en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -111,11 +111,11 @@ No se dispone de datos de parametros, contexto, licencia ni rendimiento de DeepS
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Terom/DeepSeek-V4.1-Flash
+- Repositorio de Hugging Face: https://huggingface.co/Terom/DeepSeek-V4.1-Flash
 - Informe tecnico enlazado en la model card (apunta a la organizacion oficial): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Web oficial de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organizacion de DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion de DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Perfil de X/Twitter de DeepSeek AI: https://twitter.com/deepseek_ai
 - Repositorio de recursos graficos de DeepSeek-V2 en GitHub (origen del logotipo referenciado): https://github.com/deepseek-ai/DeepSeek-V2
 

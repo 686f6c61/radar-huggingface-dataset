@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed3407` es un ajuste fino (SFT) del modelo base `goldfish-models/ind_latn_100mb`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un transformer decoder-only de tipo GPT-2 con 124.770.816 parámetros (aproximadamente 125 M), lo que lo sitúa en la gama de modelos pequenos orientados a generación de texto y a experimentación controlada.
+El modelo `francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed3407` es un ajuste fino (SFT) del modelo base `goldfish-models/ind_latn_100mb`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un transformer decoder-only de tipo GPT-2 con 124.770.816 parámetros (aproximadamente 125 M), lo que lo sitúa en la gama de modelos pequenos orientados a generación de texto y a experimentación controlada.
 
 El problema que aborda no es de capacidad general, sino de investigación: su nombre sugiere un experimento sistematico sobre tokenizacion y estructura de datos (prefijos "ppt", "mp", "struct", "100mb", semilla 3407), coherente con el proyecto de Weights & Biases del autor, llamado "new-tokenizers". El modelo se entreno con TRL 0.23.0 en formato de instrucciones, por lo que hereda la ventana de contexto y el vocabulario del modelo base, aunque no se documentan dichos valores.
 
@@ -48,7 +48,7 @@ El entrenamiento consistio en un SFT (supervised fine-tuning) ejecutado con TRL 
 - Experimentos de ajuste fino adicional: al ser un GPT-2 de 125 M con pesos en safetensors, es un banco de pruebas economico para probar recetas de SFT, LoRA o DPO sin coste computacional relevante.
 - Generacion de texto estructurado y plantillas: el sufijo "struct" del identificador sugiere entrenamiento sobre datos con estructura, de modo que puede emplearse para generar formularios, campos o registros simples en dominios muy acotados.
 - Pruebas de infraestructura de despliegue: util para validar configuraciones de vLLM, TGI, Ollama o llama.cpp, medir latencias y verificar rutas de cuantizacion antes de desplegar modelos de mayor tamano.
-- Docencia y divulgacion: permite ilustrar de principio a fin el ciclo preentrenamiento, ajuste por instrucciones y publicacion en HuggingFace con un coste de hardware minimo.
+- Docencia y divulgacion: permite ilustrar de principio a fin el ciclo preentrenamiento, ajuste por instrucciones y publicacion en Hugging Face con un coste de hardware minimo.
 - Generacion de datos sinteticos para filtrado o aumento de corpus: con supervision humana posterior, puede producir borradores de texto corto en el idioma del modelo base.
 - Asistente de dominio muy restringido: tras un ajuste fino especifico, puede gestionar respuestas de plantilla en un unico idioma y una unica tarea, siempre con validacion externa.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion proporcionada. La
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| ind-latn-100mb-ppt-mp-struct-100mb_seed3407 | 124,77 M | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
-| goldfish-models/ind_latn_100mb (modelo base) | Orden de 100-130 M (no confirmado en la informacion disponible) | No disponible | No disponible | Indonesio en alfabeto latino (segun identificador) | HuggingFace, publico |
-| GPT-2 (OpenAI, version 124 M) | 124 M | 1024 tokens | Modified MIT License | Ingles | Pesos publicos en HuggingFace y otros repositorios |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 (segun la distribucion habitual en HuggingFace) | Ingles | Pesos publicos en HuggingFace |
+| ind-latn-100mb-ppt-mp-struct-100mb_seed3407 | 124,77 M | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
+| goldfish-models/ind_latn_100mb (modelo base) | Orden de 100-130 M (no confirmado en la informacion disponible) | No disponible | No disponible | Indonesio en alfabeto latino (segun identificador) | Hugging Face, publico |
+| GPT-2 (OpenAI, version 124 M) | 124 M | 1024 tokens | Modified MIT License | Ingles | Pesos publicos en Hugging Face y otros repositorios |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 (segun la distribucion habitual en Hugging Face) | Ingles | Pesos publicos en Hugging Face |
 
 La comparacion con GPT-2 y DistilGPT-2 es unicamente estructural, ya que no existen metricas publicadas del modelo analizado que permitan contrastar rendimiento.
 
@@ -92,7 +92,7 @@ La comparacion con GPT-2 y DistilGPT-2 es unicamente estructural, ya que no exis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/ind_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/dhzis6w7

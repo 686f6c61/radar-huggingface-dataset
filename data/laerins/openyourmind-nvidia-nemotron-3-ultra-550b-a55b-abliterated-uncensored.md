@@ -22,7 +22,7 @@ Su relevancia ahora es doble. Por un lado, ofrece pesos BF16 completos (~1,1 TB 
 | Idiomas soportados | no disponible |
 | Licencia | openmdw-1.1 (campo `license: other`, heredada del modelo base) |
 | Formato de pesos | safetensors (shards) + `config.json`, `model.safetensors.index.json`, tokenizer, `chat_template.jinja`, `generation_config.json` |
-| Tamano en disco | ~1,1 TB (1121,1 GB segun la ficha de HuggingFace) |
+| Tamano en disco | ~1,1 TB (1121,1 GB segun la ficha de Hugging Face) |
 | Precision | BF16 (pesos completos) |
 
 ## Arquitectura y entrenamiento
@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales / activos | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| OpenYourMind-NVIDIA-Nemotron-3-Ultra-550B-A55B-abliterated-uncensored | ~560,5 B / ~55 B | hasta 1M; 256K por defecto | openmdw-1.1 | BF16 (~1,1 TB) en HuggingFace | Variante abliterated sin benchmarks publicados; 0 descargas y 1 like |
-| nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16 (base) | 550 B / 55 B | hasta 1M | openmdw-1.1 | BF16 en HuggingFace | Modelo original alineado; misma arquitectura y formas de tensor |
+| OpenYourMind-NVIDIA-Nemotron-3-Ultra-550B-A55B-abliterated-uncensored | ~560,5 B / ~55 B | hasta 1M; 256K por defecto | openmdw-1.1 | BF16 (~1,1 TB) en Hugging Face | Variante abliterated sin benchmarks publicados; 0 descargas y 1 like |
+| nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16 (base) | 550 B / 55 B | hasta 1M | openmdw-1.1 | BF16 en Hugging Face | Modelo original alineado; misma arquitectura y formas de tensor |
 | OpenYourMind-NVIDIA-Nemotron-3-Ultra-550B-A55B-abliterated-uncensored-NVFP4 | mismo modelo cuantizado | igual que el BF16 | openmdw-1.1 | NVFP4, ~329 GB | Build lista para servir en 4× B200/B300 u 8× H100 |
 
 No se dispone en la información proporcionada de datos verificados sobre otras alternativas comparables (por ejemplo, otras familias MoE abiertas de escala similar) que permitan una comparación rigurosa de parámetros, contexto, rendimiento y licencia. Cualquier comparación de ese tipo requeriría consultar las fichas oficiales de cada modelo.
@@ -90,17 +90,17 @@ No se dispone en la información proporcionada de datos verificados sobre otras 
 - Riesgo de alucinación: no cuantificado en la información disponible; se desconoce el impacto del perfilado por capas sobre la fidelidad factual en dominios especializados.
 - Idiomas: no se publica la lista de idiomas soportados. El autor afirma que la edición se ortogonalizó contra subespacios multilingües para preservar fluidez, pero es una afirmación no verificada.
 - Caveat operativo del modo *thinking*: el autor recomienda no reinyectar el razonamiento de turnos anteriores en el historial multi-turno; hacerlo puede degradar la calidad de las respuestas.
-- Licencia: OpenMDW-1.1, heredada del modelo base, con campo `license: other` en HuggingFace. Antes de un uso comercial hay que revisar los términos completos de OpenMDW-1.1 y las condiciones que NVIDIA impone al modelo base, incluido cualquier requisito de atribución o restricción de uso.
+- Licencia: OpenMDW-1.1, heredada del modelo base, con campo `license: other` en Hugging Face. Antes de un uso comercial hay que revisar los términos completos de OpenMDW-1.1 y las condiciones que NVIDIA impone al modelo base, incluido cualquier requisito de atribución o restricción de uso.
 - Trazabilidad del publicador: el repositorio está alojado bajo el usuario Laerins, mientras que la model card y las builds cuantizadas se atribuyen a la organización OpenYourMind. Conviene verificar la relación entre ambas cuentas y la integridad de los pesos antes de desplegarlos en producción.
 - Coste de despliegue: ~1,1 TB en BF16 exige infraestructura multi-GPU o multi-nodo; la mayoría de equipos solo podrán usarlo a través de la build NVFP4 o de cuantizaciones propias, que introducen su propia pérdida de precisión.
 - Compatibilidad: el autor solo documenta el despliegue con vLLM y el parser de razonamiento `nemotron_v3`; el comportamiento en otros motores de inferencia no está verificado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Laerins/OpenYourMind-NVIDIA-Nemotron-3-Ultra-550B-A55B-abliterated-uncensored
+- Modelo en Hugging Face: https://huggingface.co/Laerins/OpenYourMind-NVIDIA-Nemotron-3-Ultra-550B-A55B-abliterated-uncensored
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16
 - Build NVFP4 del mismo autor: https://huggingface.co/OpenYourMind/OpenYourMind-NVIDIA-Nemotron-3-Ultra-550B-A55B-abliterated-uncensored-NVFP4
-- Organización NVIDIA en HuggingFace: https://huggingface.co/nvidia
+- Organización NVIDIA en Hugging Face: https://huggingface.co/nvidia
 - Comunidad del autor (Discord): https://discord.gg/rhUZY5GEZr
 - Apoyo al autor: https://buymeacoffee.com/oym.kuato
 

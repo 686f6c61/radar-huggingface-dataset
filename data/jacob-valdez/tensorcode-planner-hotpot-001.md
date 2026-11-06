@@ -123,7 +123,7 @@ Frente a estos modelos, la diferencia relevante no es el rendimiento sino el pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jacob-valdez/tensorcode-planner-hotpot-001
+- Modelo en Hugging Face: https://huggingface.co/jacob-valdez/tensorcode-planner-hotpot-001
 - Dataset de entrenamiento: https://huggingface.co/datasets/hotpotqa/hotpot_qa
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos corresponden a entidades no relacionadas (el personaje bíblico Jacob, la marca de sanitarios Jacob Delafon y el fabricante de tuberías JACOB Dosatec), por lo que no se incluyen.
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

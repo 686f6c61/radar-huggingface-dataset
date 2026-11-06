@@ -79,7 +79,7 @@ La comparativa se basa en el modelo base, ya que no hay datos específicos del f
 
 ## Enlaces
 
-- [HuggingFace - Strill/Qwen2.5-Coder-3B-InPyGG](https://huggingface.co/Strill/Qwen2.5-Coder-3B-InPyGG)
+- [Hugging Face - Strill/Qwen2.5-Coder-3B-InPyGG](https://huggingface.co/Strill/Qwen2.5-Coder-3B-InPyGG)
 - [Modelo base - Qwen/Qwen2.5-Coder-3B](https://huggingface.co/Qwen/Qwen2.5-Coder-3B)
 - [Versión Unsloth - unsloth/Qwen2.5-Coder-3B](https://huggingface.co/unsloth/Qwen2.5-Coder-3B)
 - [Technical Report Qwen2.5-Coder (arXiv)](https://arxiv.org/html/2409.12186v2)

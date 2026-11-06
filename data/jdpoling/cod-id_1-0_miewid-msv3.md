@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `jdpoling/Cod-ID_1.0_MiewID-msv3` es un modelo publicado en HuggingFace por el usuario jdpoling cuya model card no contiene ninguna documentación técnica: el README se limita a declarar la licencia `apache-2.0`. No se especifican arquitectura, número de parámetros, datos de entrenamiento, idiomas ni tarea objetivo, por lo que cualquier afirmación funcional sobre el modelo es, a día de hoy, no verificable.
+El repositorio `jdpoling/Cod-ID_1.0_MiewID-msv3` es un modelo publicado en Hugging Face por el usuario jdpoling cuya model card no contiene ninguna documentación técnica: el README se limita a declarar la licencia `apache-2.0`. No se especifican arquitectura, número de parámetros, datos de entrenamiento, idiomas ni tarea objetivo, por lo que cualquier afirmación funcional sobre el modelo es, a día de hoy, no verificable.
 
 El identificador del repositorio sugiere, por convención de nomenclatura, que se trata de un derivado o ajuste de la familia de modelos de reidentificación individual de fauna MiewID (versión `msv3`), aplicado a la identificación de individuos de bacalao (`Cod`). Se trata de una hipótesis basada únicamente en el nombre del repositorio y no en documentación aportada por el autor; no debe tomarse como un hecho confirmado.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es, por tanto, fundamentalmente crítica: el modelo 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos disponibles en HuggingFace. El repositorio no incluye pipeline declarado, no etiqueta idiomas y no documenta el tipo de red, la función de pérdida ni el regimen de entrenamiento.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos disponibles en Hugging Face. El repositorio no incluye pipeline declarado, no etiqueta idiomas y no documenta el tipo de red, la función de pérdida ni el regimen de entrenamiento.
 
 Tampoco hay datos sobre el volumen de tokens o imágenes de entrenamiento, la composición del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones técnicas como decodificación especulativa o mecanismos de atención lineal. Toda esta sección queda como no disponible.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jdpoling/Cod-ID_1.0_MiewID-msv3 | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| jdpoling/Cod-ID_1.0_MiewID-msv3 | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas de la familia MiewID | no disponible | no disponible | no disponible | no disponible | no verificado en la información proporcionada |
 | Otros modelos de reidentificación de fauna | no disponible | no disponible | no disponible | no disponible | no verificado en la información proporcionada |
 
@@ -83,6 +83,6 @@ No se dispone de datos verificables para establecer una comparativa cuantitativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jdpoling/Cod-ID_1.0_MiewID-msv3
+- Hugging Face: https://huggingface.co/jdpoling/Cod-ID_1.0_MiewID-msv3
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información proporcionada.

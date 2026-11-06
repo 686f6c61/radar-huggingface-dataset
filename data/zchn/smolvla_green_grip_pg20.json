@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "zchn/smolvla_green_grip_PG20",
+  "slug": "zchn-smolvla_green_grip_pg20",
+  "author": "zchn",
+  "url": "https://huggingface.co/zchn/smolvla_green_grip_PG20",
+  "created_at": "2026-11-03T04:31:44.000Z",
+  "updated_at": "2026-11-03T04:40:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "so101",
+    "dataset:zchn/robo_test_green_grip_DG7",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197804448,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zchn/smolvla_green_grip_PG20 · Hugging Face",
+      "url": "https://huggingface.co/zchn/smolvla_green_grip_PG20",
+      "snippet": "Instructions to use zchn/smolvla_green_grip_PG20 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use zchn/smolvla_green_grip_PG20 with LeRobot:"
+    },
+    {
+      "title": "zchn/robo_test_green_grip_DG7 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/zchn/robo_test_green_grip_DG7",
+      "snippet": "Models trained on it zchn/smolvla_green_grip_PG20: SmolVLA base, 30,000 steps; 9 of 9 test positions lifted (7 recorded + 2 after a gripper overload, see the model card)."
+    }
+  ]
+}

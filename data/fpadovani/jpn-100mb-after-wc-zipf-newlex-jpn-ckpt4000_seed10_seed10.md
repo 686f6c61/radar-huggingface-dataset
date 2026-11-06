@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/jpn-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed10_seed10 | 124,77 M | no disponible | no disponible | HuggingFace (transformers, safetensors) |
-| GPT-2 (OpenAI) | 124 M | 1024 tokens | MIT | HuggingFace y multiples repositorios |
-| SmolLM2-135M (HuggingFace) | 135 M | 8192 tokens | Apache 2.0 | HuggingFace (transformers, GGUF, ONNX) |
-| Qwen2.5-0.5B | ~500 M | 32.768 tokens | Apache 2.0 | HuggingFace, Ollama, vLLM |
+| fpadovani/jpn-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed10_seed10 | 124,77 M | no disponible | no disponible | Hugging Face (transformers, safetensors) |
+| GPT-2 (OpenAI) | 124 M | 1024 tokens | MIT | Hugging Face y multiples repositorios |
+| SmolLM2-135M (Hugging Face) | 135 M | 8192 tokens | Apache 2.0 | Hugging Face (transformers, GGUF, ONNX) |
+| Qwen2.5-0.5B | ~500 M | 32.768 tokens | Apache 2.0 | Hugging Face, Ollama, vLLM |
 
 La comparacion se limita a parametros, contexto y licencia, porque no existen resultados de evaluacion publicados para este modelo. Frente a GPT-2 y SmolLM2-135M, el modelo aqui descrito ofrece un tamano equivalente, pero parte de un vocabulario experimental y de un dominio de entrenamiento muy restringido, sin garantias de licencia ni de cobertura idiomatica mas alla del japones.
 
@@ -86,7 +86,7 @@ La comparacion se limita a parametros, contexto y licencia, porque no existen re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/jpn-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed10_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/jpn-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed10_seed10
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed10
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/jlu9pn1k
 - Repositorio de TRL: https://github.com/huggingface/trl

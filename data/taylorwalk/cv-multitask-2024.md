@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Taylorwalk/cv-multitask-2024 es un repositorio de HuggingFace publicado por el usuario Taylorwalk que contiene una implementación funcional de la arquitectura Perceiver orientada a tareas multitarea, en una configuración descrita por el propio autor como "small". No se trata de un modelo entrenado ni de un checkpoint con rendimiento validado: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint entrenado ni evaluado con benchmarks.
+Taylorwalk/cv-multitask-2024 es un repositorio de Hugging Face publicado por el usuario Taylorwalk que contiene una implementación funcional de la arquitectura Perceiver orientada a tareas multitarea, en una configuración descrita por el propio autor como "small". No se trata de un modelo entrenado ni de un checkpoint con rendimiento validado: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint entrenado ni evaluado con benchmarks.
 
 El interés del repositorio es, por tanto, fundamentalmente arquitectónico y metodológico: sirve como punto de partida reproducible para experimentar con Perceiver, con atención flash, fusión bilineal, activación mish y normalización scalenorm. El tamaño real declarado en los ficheros safetensors es de 49.600 parámetros, lo que sitúa el artefacto muy lejos de cualquier uso en producción y lo confina al ámbito de la docencia, la validación de pipelines y la prototipación de arquitecturas.
 
@@ -67,7 +67,7 @@ No se identifican en la información proporcionada modelos comparables de la mis
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Taylorwalk/cv-multitask-2024 | 49.600 | no disponible | sin entrenar, sin benchmarks | MIT | HuggingFace |
+| Taylorwalk/cv-multitask-2024 | 49.600 | no disponible | sin entrenar, sin benchmarks | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -77,12 +77,12 @@ No se identifican en la información proporcionada modelos comparables de la mis
 - Riesgo de alucinación: no evaluable, ya que el modelo no genera lenguaje de forma funcional.
 - No se declara ningún idioma soportado ni cobertura multilingüe.
 - La licencia MIT permite uso comercial del artefacto, pero el autor recomienda revisar por separado los términos de los datos de origen si se combina con conjuntos externos.
-- La fecha de creación registrada en HuggingFace (2026-09-29) resulta anómala respecto a la fecha actual; conviene verificar la procedencia y el estado del repositorio antes de reutilizarlo.
+- La fecha de creación registrada en Hugging Face (2026-09-29) resulta anómala respecto a la fecha actual; conviene verificar la procedencia y el estado del repositorio antes de reutilizarlo.
 - El repositorio no incluye ningún dataset, script de entrenamiento completo documentado ni registro de ejecución, por lo que la reproducibilidad de resultados queda fuera de su alcance.
 - No debe utilizarse como base para afirmaciones de rendimiento, comparativas de producto ni decisiones de arquitectura en producción sin una evaluación propia y documentada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taylorwalk/cv-multitask-2024
+- Modelo en Hugging Face: https://huggingface.co/Taylorwalk/cv-multitask-2024
 - Perfil del autor: https://huggingface.co/Taylorwalk
 - Los resultados de búsqueda web proporcionados (Google Gemini, Claude, CivArchive, Scribbr AI Detector) no guardan relación con este modelo y no aportan documentación técnica adicional.

@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-pick-dual-bottles-uniform-peer-lora-10k-e165 | no disponible | no disponible | no disponible (evaluacion en SwanLab) | no disponible | HuggingFace, 0 descargas, 0 likes |
+| pi05-pick-dual-bottles-uniform-peer-lora-10k-e165 | no disponible | no disponible | no disponible (evaluacion en SwanLab) | no disponible | Hugging Face, 0 descargas, 0 likes |
 | PI0.5 (modelo base del que deriva) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion |
 | Otras variantes de la serie Sim12 / receta "peer" | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion |
 
@@ -90,8 +90,8 @@ No se dispone de datos comparativos con alternativas de la misma categoria (por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-pick-dual-bottles-uniform-peer-lora-10k-e165
-- Dataset de entrenamiento: `Shiki42/ctr-pick-dual-bottles-uniform-20260911` (commit `bc608e5695d0225bcb53f0ed3f3a7c16f99e03a1`); URL canonica de HuggingFace no disponible en la informacion proporcionada.
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-pick-dual-bottles-uniform-peer-lora-10k-e165
+- Dataset de entrenamiento: `Shiki42/ctr-pick-dual-bottles-uniform-20260911` (commit `bc608e5695d0225bcb53f0ed3f3a7c16f99e03a1`); URL canonica de Hugging Face no disponible en la informacion proporcionada.
 - Seguimiento de evaluacion (SwanLab): https://swanlab.cn/@Travor/CTR-PI05-LoRA10k
 - Repositorio OpenPI requerido para la inferencia: URL no disponible en la informacion proporcionada.
 - Paper, blog o demo adicionales: no disponibles. Las busquedas web realizadas no devolvieron resultados relacionados con el modelo.

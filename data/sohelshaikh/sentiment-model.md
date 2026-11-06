@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sentiment-model` es un modelo de clasificación de texto publicado por el usuario sohelshaikh en HuggingFace. Se trata de un ajuste fino (fine-tuning) de `distilbert-base-uncased`, la versión destilada de BERT-base, orientado a la tarea de análisis de sentimiento. El repositorio contiene únicamente los pesos en formato safetensors y la model card generada automáticamente por la librería `Trainer` de Transformers.
+`sentiment-model` es un modelo de clasificación de texto publicado por el usuario sohelshaikh en Hugging Face. Se trata de un ajuste fino (fine-tuning) de `distilbert-base-uncased`, la versión destilada de BERT-base, orientado a la tarea de análisis de sentimiento. El repositorio contiene únicamente los pesos en formato safetensors y la model card generada automáticamente por la librería `Trainer` de Transformers.
 
 El modelo ocupa un nicho muy concreto: clasificación de secuencias cortas con un coste computacional mínimo. Con 66.955.779 parámetros y un repositorio de 0,3 GB, es un candidato razonable para entornos con recursos limitados o para ejecución en CPU, donde arquitecturas encoder-only de este tamaño siguen siendo competitivas frente a alternativas generativas mucho más costosas.
 
@@ -95,10 +95,10 @@ No se dispone de cifras verificables de rendimiento de los modelos alternativos 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sohelshaikh/sentiment-model | 66,9 M | 512 tokens | Clasificacion de sentimiento (clases no documentadas) | Apache 2.0 | HuggingFace, repo de 0,3 GB, 0 descargas |
-| distilbert-base-uncased | 66,9 M (misma base) | 512 tokens | Modelo base sin cabeza de clasificacion ajustada | Apache 2.0 | HuggingFace |
-| distilbert-base-uncased-finetuned-sst-2-english | 67 M aprox. | 512 tokens | Clasificacion de sentimiento binaria | Apache 2.0 (segun el modelo base) | HuggingFace, ampliamente utilizado |
-| Modelos de sentimiento basados en RoBERTa (por ejemplo, variantes de la familia twitter-roberta) | ~125 M | 512 tokens | Clasificacion de sentimiento con etiquetas de polaridad | No verificada en esta ficha | HuggingFace |
+| sohelshaikh/sentiment-model | 66,9 M | 512 tokens | Clasificacion de sentimiento (clases no documentadas) | Apache 2.0 | Hugging Face, repo de 0,3 GB, 0 descargas |
+| distilbert-base-uncased | 66,9 M (misma base) | 512 tokens | Modelo base sin cabeza de clasificacion ajustada | Apache 2.0 | Hugging Face |
+| distilbert-base-uncased-finetuned-sst-2-english | 67 M aprox. | 512 tokens | Clasificacion de sentimiento binaria | Apache 2.0 (segun el modelo base) | Hugging Face, ampliamente utilizado |
+| Modelos de sentimiento basados en RoBERTa (por ejemplo, variantes de la familia twitter-roberta) | ~125 M | 512 tokens | Clasificacion de sentimiento con etiquetas de polaridad | No verificada en esta ficha | Hugging Face |
 
 Diferencias clave: frente a un ajuste sobre SST-2, este modelo no documenta el dataset ni el esquema de etiquetas, lo que impide reproducir o comparar resultados. Frente a alternativas basadas en RoBERTa, tiene aproximadamente la mitad de parametros y menor capacidad, pero tambien menor coste de inferencia.
 
@@ -119,7 +119,7 @@ Diferencias clave: frente a un ajuste sobre SST-2, este modelo no documenta el d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sohelshaikh/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/sohelshaikh/sentiment-model
 - Modelo base distilbert-base-uncased: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Paper original de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805

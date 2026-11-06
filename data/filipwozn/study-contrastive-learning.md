@@ -4,7 +4,7 @@
 
 El repositorio `Filipwozn/study-contrastive-learning` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigacion sobre aprendizaje contrastivo (contrastive learning). El autor, Filipwozn, lo publica bajo licencia CC-BY-4.0 y lo etiqueta explicitamente como `research-notes`, no como un checkpoint listo para inferencia. La propia model card indica que contiene motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y que "no se presenta como un articulo completado ni como una release de modelos entrenados".
 
-El repositorio ocupa 0,0 GB y su contenido declarado se limita a dos ficheros: `reading.md` (artefacto principal) y `README.md` (documentacion). Los metadatos de HuggingFace registran 16.576 parametros segun el fichero safetensors detectado y la etiqueta `transformer`, pero la model card no describe ninguna arquitectura, configuracion ni proceso de entrenamiento asociado a esos tensores. No hay pipeline declarado, ni idiomas soportados, ni resultados experimentales.
+El repositorio ocupa 0,0 GB y su contenido declarado se limita a dos ficheros: `reading.md` (artefacto principal) y `README.md` (documentacion). Los metadatos de Hugging Face registran 16.576 parametros segun el fichero safetensors detectado y la etiqueta `transformer`, pero la model card no describe ninguna arquitectura, configuracion ni proceso de entrenamiento asociado a esos tensores. No hay pipeline declarado, ni idiomas soportados, ni resultados experimentales.
 
 Su relevancia actual es, por tanto, documental y metodologica: sirve como plantilla de plan de investigacion reproducible (baselines emparejados, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas) dentro del area del aprendizaje contrastivo. Cualquier evaluacion de capacidades, rendimiento o despliegue sobre este artefacto carece de sentido tecnico con la informacion disponible.
 
@@ -57,7 +57,7 @@ La model card es explicita al respecto: "no reclama mejoras en benchmarks, ablac
 ## Requisitos de hardware
 
 - VRAM para inferencia: no aplica; no hay pesos desplegables mas alla del fichero safetensors de 16.576 parametros detectado en los metadatos.
-- Tamano en disco del repositorio: 0,0 GB, segun HuggingFace.
+- Tamano en disco del repositorio: 0,0 GB, segun Hugging Face.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no aplica, dado que no se publica modelo para servir.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no aplica; no existe una configuracion ni un modelo documentado que cargar.
@@ -92,7 +92,7 @@ No disponible. La comparativa no es aplicable porque este repositorio no pertene
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Filipwozn/study-contrastive-learning
+- Hugging Face: https://huggingface.co/Filipwozn/study-contrastive-learning
 - Model card (README): https://huggingface.co/Filipwozn/study-contrastive-learning/blob/main/README.md
 - Nota principal: https://huggingface.co/Filipwozn/study-contrastive-learning/blob/main/reading.md
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

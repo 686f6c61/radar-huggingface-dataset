@@ -4,7 +4,7 @@
 
 El modelo `ponoma16/sql-qwen3.5-9b-v9-obfuscated-1.0-match-std-3epochs` es un adaptador LoRA publicado por el usuario ponoma16 sobre el modelo base `Qwen/Qwen3.5-9B`. No se trata por tanto de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptacion (PEFT) que debe cargarse junto al modelo base para poder ejecutarse. El repositorio ocupa 0,4 GB, un tamano coherente con un adaptador LoRA de rango bajo y no con un modelo de 9.000 millones de parametros en precision completa.
 
-El identificador del modelo sugiere un ajuste orientado a generacion de SQL (`sql-`), con un esquema de entrenamiento denominado "obfuscated 1.0 match std" y tres epocas de entrenamiento (`3epochs`). Sin embargo, la model card publicada es la plantilla generica de HuggingFace sin cumplimentar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen marcados como `[More Information Needed]`. Por tanto, esas afirmaciones derivadas del nombre deben tratarse como indicios, no como hechos documentados.
+El identificador del modelo sugiere un ajuste orientado a generacion de SQL (`sql-`), con un esquema de entrenamiento denominado "obfuscated 1.0 match std" y tres epocas de entrenamiento (`3epochs`). Sin embargo, la model card publicada es la plantilla generica de Hugging Face sin cumplimentar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen marcados como `[More Information Needed]`. Por tanto, esas afirmaciones derivadas del nombre deben tratarse como indicios, no como hechos documentados.
 
 La relevancia de esta ficha es limitada y debe interpretarse con cautela: se trata de un repositorio sin descargas ni likes en el momento de la consulta, sin licencia declarada y sin documentacion tecnica. El interes principal radica en el modelo base Qwen3.5-9B, descrito en los resultados de busqueda como parte de una familia de modelos open source de caracter multimodal publicada por Alibaba, y en la tecnica de adaptacion LoRA, que permite especializar un modelo de 9B con un consumo de almacenamiento minimo (0,4 GB frente a las decenas de GB del modelo completo).
 
@@ -77,15 +77,15 @@ Las cifras de esta seccion son estimaciones derivadas del tamano del modelo base
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ponoma16/sql-qwen3.5-9b-v9-obfuscated-1.0-match-std-3epochs | Adaptador LoRA sobre base de 9B | No disponible | PEFT / safetensors | No disponible | Publico en HuggingFace, 0 descargas |
-| ponoma16/sql-qwen3.5-9b-v9-obfuscated-1.0-match | Adaptador LoRA sobre base de 9B | No disponible | PEFT / safetensors | No disponible | Publico en HuggingFace |
-| Qwen/Qwen3.5-9B (modelo base) | 9B | No disponible en la informacion recibida | No disponible | No disponible | Publico en HuggingFace |
+| ponoma16/sql-qwen3.5-9b-v9-obfuscated-1.0-match-std-3epochs | Adaptador LoRA sobre base de 9B | No disponible | PEFT / safetensors | No disponible | Publico en Hugging Face, 0 descargas |
+| ponoma16/sql-qwen3.5-9b-v9-obfuscated-1.0-match | Adaptador LoRA sobre base de 9B | No disponible | PEFT / safetensors | No disponible | Publico en Hugging Face |
+| Qwen/Qwen3.5-9B (modelo base) | 9B | No disponible en la informacion recibida | No disponible | No disponible | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento, contexto ni licencia de ninguna de las alternativas publicas del mismo autor o del modelo base, por lo que no es posible establecer una comparacion cuantitativa. Las diferencias conocidas se limitan al nombre y a la existencia de variantes de entrenamiento distintas (`match` frente a `match-std-3epochs`), sin informacion sobre que las distingue.
 
 ## Limitaciones y advertencias
 
-- Documentacion practicamente inexistente: la model card es la plantilla por defecto de HuggingFace y no aporta informacion sobre uso previsto, datos, evaluacion ni limitaciones.
+- Documentacion practicamente inexistente: la model card es la plantilla por defecto de Hugging Face y no aporta informacion sobre uso previsto, datos, evaluacion ni limitaciones.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial del adaptador. Ademas, la licencia del modelo base Qwen3.5-9B debe verificarse por separado, ya que impone sus propias condiciones.
 - Riesgo de alucinacion: cualquier modelo generativo de SQL puede producir consultas sintacticamente validas pero semanticamente incorrectas, con riesgo de devolver resultados erroneos o, en el peor caso, ejecutar operaciones destructivas. Se recomienda revision humana y permisos de solo lectura en produccion.
 - Ausencia de benchmarks: no hay ninguna evidencia publicada de que el adaptador mejore al modelo base en tareas de SQL, ni de que no lo degrade en otras capacidades.

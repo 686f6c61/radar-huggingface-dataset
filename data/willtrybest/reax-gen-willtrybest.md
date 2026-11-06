@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`willtrybest/reax-gen-willtrybest` es un modelo de lenguaje publicado en HuggingFace por el usuario willtrybest bajo licencia Apache 2.0. Segun los metadatos del repositorio, se trata de un modelo de 26.085.330.160 parametros (aproximadamente 26 mil millones) almacenado en formato safetensors, con un tamano de repositorio de 52,2 GB, lo que es coherente con pesos en precision de 16 bits. La etiqueta de arquitectura asociada es `qwen3_5`, lo que sugiere que deriva de la familia Qwen 3.5, aunque no hay documentacion que lo confirme.
+`willtrybest/reax-gen-willtrybest` es un modelo de lenguaje publicado en Hugging Face por el usuario willtrybest bajo licencia Apache 2.0. Segun los metadatos del repositorio, se trata de un modelo de 26.085.330.160 parametros (aproximadamente 26 mil millones) almacenado en formato safetensors, con un tamano de repositorio de 52,2 GB, lo que es coherente con pesos en precision de 16 bits. La etiqueta de arquitectura asociada es `qwen3_5`, lo que sugiere que deriva de la familia Qwen 3.5, aunque no hay documentacion que lo confirme.
 
 La model card publicada por el autor es practicamente vacia: solo contiene la declaracion de licencia, sin descripcion del modelo, datos de entrenamiento, capacidades declaradas ni resultados de evaluacion. El repositorio tiene 14 descargas y ningun "like" en el momento de la consulta, y fue creado y actualizado el mismo dia (28 de octubre de 2026), lo que indica una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha se basa exclusivamente en los metadatos tecnicos disponibl
 
 ## Arquitectura y entrenamiento
 
-La unica informacion estructural disponible es la etiqueta `qwen3_5` en los metadatos de HuggingFace, que apunta a la familia Qwen 3.5 de Alibaba. El recuento de parametros (26,1 mil millones) no coincide con los tamanos habituales y ampliamente documentados de la familia Qwen (0,6B, 1,7B, 4B, 8B, 14B, 32B, 72B, 235B-A22B, etc.), por lo que no es posible confirmar a que variante corresponde ni si se trata de un modelo podado, fusionado o reentrenado parcialmente. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineacion, ni sobre innovaciones tecnicas como atencion lineal, decodificacion especulativa o modos de razonamiento extendido.
+La unica informacion estructural disponible es la etiqueta `qwen3_5` en los metadatos de Hugging Face, que apunta a la familia Qwen 3.5 de Alibaba. El recuento de parametros (26,1 mil millones) no coincide con los tamanos habituales y ampliamente documentados de la familia Qwen (0,6B, 1,7B, 4B, 8B, 14B, 32B, 72B, 235B-A22B, etc.), por lo que no es posible confirmar a que variante corresponde ni si se trata de un modelo podado, fusionado o reentrenado parcialmente. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineacion, ni sobre innovaciones tecnicas como atencion lineal, decodificacion especulativa o modos de razonamiento extendido.
 
 Tampoco hay documentacion sobre la tokenizer, la configuracion de atencion (GQA, MHA, MLA), la presencia de capas MoE o el contexto maximo soportado. El tamano del repositorio (52,2 GB) es consistente con pesos en bf16 para 26 mil millones de parametros, pero no aporta informacion adicional sobre la arquitectura interna. En ausencia de model card tecnica, cualquier afirmacion sobre el proceso de entrenamiento seria especulativa y se omite deliberadamente.
 
@@ -71,10 +71,10 @@ La comparacion se realiza con modelos densos de tamano comparable y licencia per
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| willtrybest/reax-gen-willtrybest | ~26,1B | no disponible | Apache 2.0 | HuggingFace (14 descargas) |
-| Qwen2.5-32B | 32,5B | 128K (declarado por el autor) | Apache 2.0 (variantes base) | HuggingFace, ampliamente validado |
-| Gemma 2 27B | 27B | 8K | Gemma Terms of Use | HuggingFace, Google |
-| Mistral Small 3 (24B) | 24B | 32K | Apache 2.0 | HuggingFace, Mistral AI |
+| willtrybest/reax-gen-willtrybest | ~26,1B | no disponible | Apache 2.0 | Hugging Face (14 descargas) |
+| Qwen2.5-32B | 32,5B | 128K (declarado por el autor) | Apache 2.0 (variantes base) | Hugging Face, ampliamente validado |
+| Gemma 2 27B | 27B | 8K | Gemma Terms of Use | Hugging Face, Google |
+| Mistral Small 3 (24B) | 24B | 32K | Apache 2.0 | Hugging Face, Mistral AI |
 
 No se dispone de datos de rendimiento del modelo evaluado, por lo que no es posible comparar calidad (MMLU, HumanEval, GSM8K) frente a estas alternativas.
 
@@ -93,6 +93,6 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que no es posi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/willtrybest/reax-gen-willtrybest
+- Hugging Face: https://huggingface.co/willtrybest/reax-gen-willtrybest
 - Repositorio de la familia Qwen (referencia de arquitectura, no oficial de este modelo): https://huggingface.co/Qwen
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

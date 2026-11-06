@@ -24,7 +24,7 @@ Su relevancia es acotada y de investigación: sirve para estudiar coordinación 
 | Pipeline | image-text-to-text |
 | Modelo base | Qwen/Qwen3-VL-8B-Thinking |
 | Dataset de entrenamiento | DorianAtSchool/RoboTalk |
-| Fecha de creacion (HuggingFace) | 2026-09-15 |
+| Fecha de creacion (Hugging Face) | 2026-09-15 |
 
 ## Arquitectura y entrenamiento
 
@@ -79,9 +79,9 @@ Ajustes de inferencia reportados: la evaluación de la variante Instruct usa tem
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RoboTalk-Qwen3-VL-8B-Thinking-Rationale-30traj | 8B base + LoRA r16 (repo de 0,2 GB) | 8.192 tokens en entrenamiento; maximo del base no disponible | 80,23% en tareas de entrenamiento y 71,00% en tareas reservadas (FSM libre de errores) | No disponible para el adaptador | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen3-VL-8B-Thinking (modelo base) | 8B | No disponible en la informacion | Sin datos de FSM; el adaptador se evalua sobre este base | Apache-2.0 | HuggingFace |
-| Qwen3-VL-8B-Instruct (variante referenciada en la model card) | 8B (variante) | No disponible en la informacion | Solo se documentan sus ajustes de inferencia, sin resultados | Apache-2.0 (heredada del base, segun la card) | HuggingFace |
+| RoboTalk-Qwen3-VL-8B-Thinking-Rationale-30traj | 8B base + LoRA r16 (repo de 0,2 GB) | 8.192 tokens en entrenamiento; maximo del base no disponible | 80,23% en tareas de entrenamiento y 71,00% en tareas reservadas (FSM libre de errores) | No disponible para el adaptador | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen/Qwen3-VL-8B-Thinking (modelo base) | 8B | No disponible en la informacion | Sin datos de FSM; el adaptador se evalua sobre este base | Apache-2.0 | Hugging Face |
+| Qwen3-VL-8B-Instruct (variante referenciada en la model card) | 8B (variante) | No disponible en la informacion | Solo se documentan sus ajustes de inferencia, sin resultados | Apache-2.0 (heredada del base, segun la card) | Hugging Face |
 | Otros adaptadores roboticos comparables | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ Ajustes de inferencia reportados: la evaluación de la variante Instruct usa tem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Thinking-Rationale-30traj
+- Modelo en Hugging Face: https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Thinking-Rationale-30traj
 - Dataset RoboTalk: https://huggingface.co/datasets/DorianAtSchool/RoboTalk
 - Modelo base Qwen3-VL-8B-Thinking: https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking
 - Ficheros de configuracion y resultados citados en la model card: `training_config.json`, `task_split.json` y `evaluation_results.json` dentro del repositorio del adaptador.

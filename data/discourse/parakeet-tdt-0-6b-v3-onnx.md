@@ -76,7 +76,7 @@ La comparativa directa con Whisper es compleja porque Whisper es un modelo de se
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Discourse/parakeet-tdt-0.6b-v3-onnx](https://huggingface.co/Discourse/parakeet-tdt-0.6b-v3-onnx)
+- Repositorio Hugging Face: [Discourse/parakeet-tdt-0.6b-v3-onnx](https://huggingface.co/Discourse/parakeet-tdt-0.6b-v3-onnx)
 - Modelo original de NVIDIA: [nvidia/parakeet-tdt-0.6b-v3](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3)
 - Wrapper FastAPI (GitHub): [groxaxo/parakeet-tdt-0.6b-v3-fastapi-openai](https://github.com/groxaxo/parakeet-tdt-0.6b-v3-fastapi-openai)
 - Otra conversión ONNX: [s0me-0ne/parakeet-tdt-0.6b-v3-onnx](https://huggingface.co/s0me-0ne/parakeet-tdt-0.6b-v3-onnx)

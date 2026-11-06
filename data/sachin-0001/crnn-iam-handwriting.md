@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Sachin-0001/crnn-iam-handwriting` es un reconocedor de escritura manuscrita en ingles publicado en HuggingFace por el usuario Sachin-0001. Se trata de una red neuronal convolucional recurrente (CRNN) implementada en PyTorch y entrenada con la funcion de perdida CTC (Connectionist Temporal Classification) para transcribir imagenes recortadas de lineas de texto manuscrito. No es un modelo de lenguaje: es un modelo de vision secuencial que convierte pixeles en secuencias de caracteres.
+El modelo `Sachin-0001/crnn-iam-handwriting` es un reconocedor de escritura manuscrita en ingles publicado en Hugging Face por el usuario Sachin-0001. Se trata de una red neuronal convolucional recurrente (CRNN) implementada en PyTorch y entrenada con la funcion de perdida CTC (Connectionist Temporal Classification) para transcribir imagenes recortadas de lineas de texto manuscrito. No es un modelo de lenguaje: es un modelo de vision secuencial que convierte pixeles en secuencias de caracteres.
 
 El repositorio incluye la arquitectura (`model.py`), los pesos entrenados (`model.pth`), el vocabulario de caracteres con el identificador del token en blanco de CTC (`vocab.json`) y la configuracion de arquitectura y evaluacion (`config.json`). El autor lo describe explicitamente como una linea base personal ("custom baseline"), no como un sistema de reconocimiento de pagina completa.
 
@@ -22,7 +22,7 @@ Su relevancia es limitada pero clara: ofrece una implementacion minima, reproduc
 | Formato de pesos | `model.pth` (state dict de PyTorch); no se distribuyen safetensors ni GGUF |
 | Entrada esperada | Imagen en escala de grises, redimensionada a 32 px de alto, relacion de aspecto preservada, pixeles normalizados a [-1, 1] |
 | Ficheros del repositorio | `model.py`, `model.pth`, `vocab.json`, `config.json` |
-| Tamano del repositorio | 0,0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun metadatos de Hugging Face) |
 | Dataset de entrenamiento | Sj122702/IAM-line (6.482 lineas de entrenamiento, 976 de validacion, 2.915 de test) |
 | Fecha de creacion en el hub | 2026-10-16 |
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Dataset | Idiomas | Licencia | Rendimiento declarado | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Sachin-0001/crnn-iam-handwriting | CRNN + CTC | IAM-line (6.482 / 976 / 2.915 lineas) | en | MIT | no disponible | HuggingFace |
+| Sachin-0001/crnn-iam-handwriting | CRNN + CTC | IAM-line (6.482 / 976 / 2.915 lineas) | en | MIT | no disponible | Hugging Face |
 | Btn09/crnn-handwriting-ocr | CRNN + modelo de lenguaje de trigramas | IAM Handwriting Database | en | no disponible | no disponible | GitHub |
 | OmPatil2806/Intelligent-Handwriting-Recognition-Using-Deep-Neural-Networks | CRNN (CNN + BiLSTM) y ResNet-CTC | IAM Handwriting Dataset | en | no disponible | no disponible | GitHub |
-| IsmatS/handwriting_recognition | Sistema de reconocimiento de escritura manuscrita | IAM Handwriting Database | en | no disponible | 87% de exactitud a nivel de caracter (segun su model card) | HuggingFace |
+| IsmatS/handwriting_recognition | Sistema de reconocimiento de escritura manuscrita | IAM Handwriting Database | en | no disponible | 87% de exactitud a nivel de caracter (segun su model card) | Hugging Face |
 
 Los modelos basados en transformers para OCR de escritura manuscrita, como TrOCR, constituyen la alternativa arquitectonica mas habitual, pero no se dispone de datos comparativos en la informacion proporcionada.
 
@@ -93,9 +93,9 @@ Los modelos basados en transformers para OCR de escritura manuscrita, como TrOCR
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sachin-0001/crnn-iam-handwriting
+- Modelo en Hugging Face: https://huggingface.co/Sachin-0001/crnn-iam-handwriting
 - Proyecto CRNN con modelo de lenguaje de trigramas (GitHub): https://github.com/Btn09/crnn-handwriting-ocr
 - Intelligent-Handwriting-Recognition-Using-Deep-Neural-Networks (GitHub): https://github.com/OmPatil2806/Intelligent-Handwriting-Recognition-Using-Deep-Neural-Networks
 - Handwritten Text Recognition CRNN Python (projectech.in): https://projectech.in/projects/handwritten-text-recognition-crnn/
-- IsmatS/handwriting_recognition (HuggingFace): https://huggingface.co/IsmatS/handwriting_recognition
+- IsmatS/handwriting_recognition (Hugging Face): https://huggingface.co/IsmatS/handwriting_recognition
 - Comparison of Three C-RNN Models for English Handwriting Recognition (California State University): https://scholarworks.calstate.edu/downloads/pn89df790

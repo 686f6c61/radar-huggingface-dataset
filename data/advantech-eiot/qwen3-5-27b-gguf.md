@@ -117,7 +117,7 @@ Modelos comparables de otros autores: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Advantech-EIOT/Qwen3.5-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Advantech-EIOT/Qwen3.5-27B-GGUF
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.5-27B
 - Manifiesto de tensores y procedencia: https://huggingface.co/Advantech-EIOT/Qwen3.5-27B-GGUF/blob/main/manifest.json
 - Licencia del repositorio: https://huggingface.co/Advantech-EIOT/Qwen3.5-27B-GGUF/blob/main/LICENSE

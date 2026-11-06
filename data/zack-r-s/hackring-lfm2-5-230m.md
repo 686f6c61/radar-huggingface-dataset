@@ -6,7 +6,7 @@ Hackring LFM2.5-230M es un ajuste fino de pesos completos (merged full-weight) d
 
 El modelo tiene 229.693.184 parametros (aproximadamente 230M), se distribuye en formato safetensors para `transformers` y esta pensado para despliegues con vLLM usando el parser de tool calls `lfm2`. Su relevancia es acotada pero concreta: es un ejemplo de enrutado de intenciones hacia herramientas en un dominio de control de aceleradores, con evaluacion medida sobre el simulador y comparacion directa contra el modelo base.
 
-La ficha se basa exclusivamente en la model card del autor y en los metadatos de HuggingFace. No hay informacion publicada sobre longitud de contexto, cuantizaciones soportadas, idiomas o benchmarks generales (MMLU, HumanEval, GSM8K), por lo que esos campos se marcan como no disponibles.
+La ficha se basa exclusivamente en la model card del autor y en los metadatos de Hugging Face. No hay informacion publicada sobre longitud de contexto, cuantizaciones soportadas, idiomas o benchmarks generales (MMLU, HumanEval, GSM8K), por lo que esos campos se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -74,8 +74,8 @@ En el split de prueba v004, con semillas distintas, la seleccion exacta de plano
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 | --- | --- | --- | --- | --- | --- |
-| zack-r-s/hackring-LFM2.5-230M (v004) | 229,7M | no disponible | 12/28 plano+esfuerzo con mejora de RMS; 28/28 plano; 67/72 exacto en test | LFM Open License v1.0 | HuggingFace, revisiones v002, v003 y v004 |
-| LiquidAI/LFM2.5-230M (base) | 229,7M | no disponible | 0/28 plano+esfuerzo con mejora de RMS; 14/28 plano | LFM Open License v1.0 | HuggingFace |
+| zack-r-s/hackring-LFM2.5-230M (v004) | 229,7M | no disponible | 12/28 plano+esfuerzo con mejora de RMS; 28/28 plano; 67/72 exacto en test | LFM Open License v1.0 | Hugging Face, revisiones v002, v003 y v004 |
+| LiquidAI/LFM2.5-230M (base) | 229,7M | no disponible | 0/28 plano+esfuerzo con mejora de RMS; 14/28 plano | LFM Open License v1.0 | Hugging Face |
 | Otros modelos pequenos de proposito general (por ejemplo, familias de 0,3B a 0,5B) | no disponible | no disponible | no disponible; sin evaluacion en esta tarea | no disponible | no disponible |
 
 No se dispone de datos verificables de benchmarks generales ni de evaluaciones en dominios de control para modelos alternativos en la informacion proporcionada, por lo que la comparativa se limita al modelo base, que comparte tokenizador, arquitectura y licencia.
@@ -94,7 +94,7 @@ No se dispone de datos verificables de benchmarks generales ni de evaluaciones e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zack-r-s/hackring-LFM2.5-230M
+- Modelo en Hugging Face: https://huggingface.co/zack-r-s/hackring-LFM2.5-230M
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-230M
 - Dataset de entrenamiento (version v004): https://huggingface.co/datasets/zack-r-s/hackring-pyat-control/tree/v004
 - Repositorio de entrenamiento y evaluaciones (rama zrs-lfm-training): https://github.com/zack-r-s/nvidia-redhat-small-models/blob/zrs-lfm-training/training/README.md

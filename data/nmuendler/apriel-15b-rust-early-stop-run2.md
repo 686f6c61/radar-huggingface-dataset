@@ -84,6 +84,6 @@ No disponible: no se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nmuendler/Apriel-15B-rust-early-stop-run2
+- Hugging Face: https://huggingface.co/nmuendler/Apriel-15B-rust-early-stop-run2
 - Modelo base: https://huggingface.co/ServiceNow-AI/Apriel-Nemotron-15b-Thinker
 - Referencia citada en la model card: Lacoste et al. (2019), https://arxiv.org/abs/1910.09700

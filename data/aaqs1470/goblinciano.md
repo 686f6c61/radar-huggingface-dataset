@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Goblinciano es un repositorio de pesos publicado en HuggingFace por el usuario aaqs1470 bajo la licencia Unlicense. En el momento de redactar esta ficha no existe informacion publica sobre el modelo mas alla de su identificador, su licencia y el tamano del repositorio (2,3 GB). La model card asociada unicamente contiene el campo `license: unlicense`, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion.
+Goblinciano es un repositorio de pesos publicado en Hugging Face por el usuario aaqs1470 bajo la licencia Unlicense. En el momento de redactar esta ficha no existe informacion publica sobre el modelo mas alla de su identificador, su licencia y el tamano del repositorio (2,3 GB). La model card asociada unicamente contiene el campo `license: unlicense`, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion.
 
-Esto implica que no se puede confirmar si se trata de un modelo de lenguaje, de un modelo multimodal, de un fine-tune sobre una base existente o de un artefacto experimental. Tampoco se ha declarado el pipeline de HuggingFace (`pipeline: no disponible`), lo que impide que las herramientas de inferencia automatica lo detecten correctamente sin configuracion manual.
+Esto implica que no se puede confirmar si se trata de un modelo de lenguaje, de un modelo multimodal, de un fine-tune sobre una base existente o de un artefacto experimental. Tampoco se ha declarado el pipeline de Hugging Face (`pipeline: no disponible`), lo que impide que las herramientas de inferencia automatica lo detecten correctamente sin configuracion manual.
 
 La relevancia actual del repositorio es, por tanto, muy limitada: registra 0 descargas y 0 likes, no tiene papers asociados ni documentacion tecnica, y las fechas de creacion y actualizacion (19 de octubre de 2026, con algo mas de una hora de diferencia) sugieren una publicacion reciente y sin mantenimiento posterior documentado. Cualquier evaluacion tecnica seria requiere inspeccionar los ficheros del repositorio y ejecutar pruebas propias.
 
@@ -47,7 +47,7 @@ No es posible recomendar casos de uso concretos sin conocer las capacidades real
 - Experimentacion con licencia permisiva: al estar bajo Unlicense, el modelo puede modificarse y redistribuirse sin restricciones, lo que lo hace util como banco de pruebas para pipelines internos que exigen licencias sin ataduras.
 - Base para fine-tuning propio: si la arquitectura resulta ser un transformer estandar, podria servir como punto de partida para un ajuste con datos propios, siempre tras verificar que la calidad del modelo base es suficiente.
 - Analisis de seguridad y sesgos: util como caso de estudio sobre publicacion de modelos sin documentacion, para medir riesgos de modelos no auditados.
-- Docencia y formacion: ejemplo practico de por que una model card vacia impide la reproducibilidad y de como auditar un repositorio de HuggingFace antes de adoptarlo.
+- Docencia y formacion: ejemplo practico de por que una model card vacia impide la reproducibilidad y de como auditar un repositorio de Hugging Face antes de adoptarlo.
 
 ## Benchmarks y rendimiento
 
@@ -88,5 +88,5 @@ No disponible. No se ha podido identificar la categoria del modelo (tamano, tare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aaqs1470/Goblinciano
+- Hugging Face: https://huggingface.co/aaqs1470/Goblinciano
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo. La busqueda web realizada no devolvio resultados relevantes sobre este repositorio.

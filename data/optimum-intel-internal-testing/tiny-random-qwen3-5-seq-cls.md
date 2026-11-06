@@ -77,5 +77,5 @@ La comparación relevante es con otros modelos dummy del mismo repositorio de te
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/optimum-intel-internal-testing/tiny-random-qwen3.5-seq-cls
+- Hugging Face: https://huggingface.co/optimum-intel-internal-testing/tiny-random-qwen3.5-seq-cls
 - No se han encontrado enlaces adicionales (paper, blog o repositorio) en la informacion disponible.

@@ -47,7 +47,7 @@ No se dispone de informacion sobre el conjunto de datos de entrenamiento, el num
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye metricas de evaluacion, y los articulos encontrados describen un modelo similar pero no proporcionan numeros concretos para esta implementacion especifica. No se pueden ofrecer datos de exactitud, precision o recall sin riesgo de inventar cifras.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye metricas de evaluacion, y los articulos encontrados describen un modelo similar pero no proporcionan numeros concretos para esta implementacion especifica. No se pueden ofrecer datos de exactitud, precision o recall sin riesgo de inventar cifras.
 
 ## Requisitos de hardware
 
@@ -78,7 +78,7 @@ Sin datos de rendimiento ni parametros exactos de este modelo, no es posible est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/krishnaraj05/Swin-Plant_Disease_Detection
+- Repositorio Hugging Face: https://huggingface.co/krishnaraj05/Swin-Plant_Disease_Detection
 - Articulo "Plant Disease Detection Algorithm Based on Efficient Swin Transformer" (ScienceDirect): https://www.sciencedirect.com/org/science/article/pii/S1546221825001560
 - Articulo en Tech Science Press: https://www.techscience.com/cmc/v82n2/59475
 - PDF del articulo (Tech Science): https://cdn.techscience.cn/files/cmc/2025/online/CMC0102/TSP_CMC_58640/TSP_CMC_58640.pdf

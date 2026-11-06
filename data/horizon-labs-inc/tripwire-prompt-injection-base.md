@@ -89,12 +89,12 @@ Verificacion de la exportacion ONNX fp32: contraste frente a PyTorch en entradas
 
 | Modelo | Parametros | Contexto | AUC multilingue (12 idiomas) | FPR multilingue | AUC BIPIA (inyeccion indirecta) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Tripwire-base | 308M | 8192 | 0.968 | 1.3% | 0.764 | Apache 2.0 | HuggingFace, ONNX fp32 |
-| Tripwire-small | 141M | 8192 | 0.955 | 2.2% | 0.815 | Apache 2.0 | HuggingFace |
-| protectai deberta-v3-base v2 | 184M | 512 | 0.796 | 26.4% | 0.438 | no disponible en la informacion | HuggingFace |
-| semantic-router mmbert32k | 308M | 8192 | 0.682 | 3.8% | 0.533 | no disponible en la informacion | HuggingFace |
-| deepset deberta-v3-base | 184M | 512 | 0.741 | 72.7% | 0.540 | no disponible en la informacion | HuggingFace |
-| testsavant defender-small | 29M | 512 | 0.595 | 58.9% | 0.517 | no disponible en la informacion | HuggingFace |
+| Tripwire-base | 308M | 8192 | 0.968 | 1.3% | 0.764 | Apache 2.0 | Hugging Face, ONNX fp32 |
+| Tripwire-small | 141M | 8192 | 0.955 | 2.2% | 0.815 | Apache 2.0 | Hugging Face |
+| protectai deberta-v3-base v2 | 184M | 512 | 0.796 | 26.4% | 0.438 | no disponible en la informacion | Hugging Face |
+| semantic-router mmbert32k | 308M | 8192 | 0.682 | 3.8% | 0.533 | no disponible en la informacion | Hugging Face |
+| deepset deberta-v3-base | 184M | 512 | 0.741 | 72.7% | 0.540 | no disponible en la informacion | Hugging Face |
+| testsavant defender-small | 29M | 512 | 0.595 | 58.9% | 0.517 | no disponible en la informacion | Hugging Face |
 
 La ventaja de Tripwire-base se concentra en el escenario multilingue de contexto largo: combina la mayor AUC y la menor tasa de falsos positivos del grupo en el conjunto retenido de 12 idiomas. Frente a Tripwire-small, la version base mejora en multilingue y en correo, pero es peor en BIPIA (0.764 frente a 0.815), por lo que la eleccion entre ambas depende del vector de ataque prioritario. deepset deberta-v3-base iguala o supera la deteccion en correo (100%) pero a costa de un 100% de falsos positivos en el conjunto benigno de correos, lo que lo inutiliza como guardrail de produccion.
 
@@ -114,7 +114,7 @@ La ventaja de Tripwire-base se concentra en el escenario multilingue de contexto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Horizon-Labs-Inc/tripwire-prompt-injection-base
+- Modelo en Hugging Face: https://huggingface.co/Horizon-Labs-Inc/tripwire-prompt-injection-base
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Version reducida Tripwire-small: https://huggingface.co/Horizon-Labs/tripwire-prompt-injection-small
 - Demo Space: https://huggingface.co/spaces/Horizon-Labs/tripwire-demo

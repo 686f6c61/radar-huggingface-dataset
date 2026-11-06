@@ -6,7 +6,7 @@ MOSS-SoundEffect v2.0 es un modelo de texto a audio desarrollado por el equipo O
 
 La arquitectura combina un Diffusion Transformer (DiT) de 1.3B parámetros entrenado con el objetivo Flow Matching, un DAC VAE para la decodificación de audio y un codificador de texto basado en Qwen/Qwen3-1.7B. La versión 2.0 sustituye al backbone autoregresivo de tokens discretos de la v1 (MossTTSDelay) por un diseño de difusión en latente continuo, lo que mejora la calidad y permite generar audio estable de hasta 30 segundos a 48 kHz. Los prompts pueden escribirse en inglés o chino, y la duración se controla mediante una etiqueta de tiempo prepended al prompt durante el entrenamiento.
 
-El modelo se distribuye bajo licencia Apache 2.0 y está disponible en HuggingFace. Aunque el repositorio de la ficha aparece bajo el usuario `niobures`, la documentación oficial hace referencia a `OpenMOSS-Team/MOSS-SoundEffect-v2.0`, por lo que conviene verificar la procedencia antes de un uso en producción.
+El modelo se distribuye bajo licencia Apache 2.0 y está disponible en Hugging Face. Aunque el repositorio de la ficha aparece bajo el usuario `niobures`, la documentación oficial hace referencia a `OpenMOSS-Team/MOSS-SoundEffect-v2.0`, por lo que conviene verificar la procedencia antes de un uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -79,5 +79,5 @@ La informacion proporcionada solo permite comparar con la version anterior del m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/niobures/MOSS-SoundEffect-v2.0
+- Hugging Face: https://huggingface.co/niobures/MOSS-SoundEffect-v2.0
 - GitHub (documentacion y demo): https://github.com/OpenMOSS/MOSS-TTS/tree/main/moss_soundeffect_v2

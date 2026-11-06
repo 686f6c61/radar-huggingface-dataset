@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ls_transformer_small_ge2e` es un modelo de verificación e identificación de locutor (speaker verification) publicado en HuggingFace por el desarrollador wq2012 (Quan Wang, autor principal del paper original de GE2E). No es un modelo de lenguaje: es un encoder de audio que transforma una locución en un embedding de locutor de 192 dimensiones, de forma que dos fragmentos del mismo hablante quedan próximos en el espacio de embeddings y dos de hablantes distintos quedan alejados. La verificación se realiza mediante similitud coseno entre embeddings.
+`ls_transformer_small_ge2e` es un modelo de verificación e identificación de locutor (speaker verification) publicado en Hugging Face por el desarrollador wq2012 (Quan Wang, autor principal del paper original de GE2E). No es un modelo de lenguaje: es un encoder de audio que transforma una locución en un embedding de locutor de 192 dimensiones, de forma que dos fragmentos del mismo hablante quedan próximos en el espacio de embeddings y dos de hablantes distintos quedan alejados. La verificación se realiza mediante similitud coseno entre embeddings.
 
 Técnicamente es una red transformer de tamano "small" con pooling temporal atencional (ATP, Attentive Temporal Pooling) y entrenamiento con pérdida GE2E softmax (Generalized End-to-End Loss). Con solo 1.239.622 parámetros en el encoder es un modelo extraordinariamente compacto: cabe en unos 5 MB en fp32, lo que lo hace apto para CPU, dispositivos embebidos y despliegues con requisitos de latencia muy estrictos. La entrada es un frontend de log-mel de 80 dimensiones a 16 kHz, con VAD de energía y normalización CMVN.
 
@@ -94,10 +94,10 @@ La información disponible no incluye datos de benchmarks de terceros, por lo qu
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento (EER) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ls_transformer_small_ge2e | 1.239.622 | Utterance completo, log-mel 80 dim @ 16 kHz | 10,60% (LibriSpeech 1-utt), 6,20% (3-utt) | Apache 2.0 | HuggingFace + PyPI (flaxspeaker) |
-| ECAPA-TDNN (SpeechBrain) | No disponible en la informacion | Utterance completo, mel spectrogram | No disponible | Apache 2.0 (SpeechBrain) | HuggingFace + PyPI |
+| ls_transformer_small_ge2e | 1.239.622 | Utterance completo, log-mel 80 dim @ 16 kHz | 10,60% (LibriSpeech 1-utt), 6,20% (3-utt) | Apache 2.0 | Hugging Face + PyPI (flaxspeaker) |
+| ECAPA-TDNN (SpeechBrain) | No disponible en la informacion | Utterance completo, mel spectrogram | No disponible | Apache 2.0 (SpeechBrain) | Hugging Face + PyPI |
 | x-vector (Kaldi) | No disponible en la informacion | Utterance completo, MFCC | No disponible | Apache 2.0 | Repositorio Kaldi |
-| WavLM / HuBERT + cabezal ECAPA | No disponible en la informacion | Utterance completo, waveform | No disponible | MIT / Apache 2.0 segun checkpoint | HuggingFace |
+| WavLM / HuBERT + cabezal ECAPA | No disponible en la informacion | Utterance completo, waveform | No disponible | MIT / Apache 2.0 segun checkpoint | Hugging Face |
 | Titanet (NVIDIA NeMo) | No disponible en la informacion | Utterance completo, mel spectrogram | No disponible | Apache 2.0 | NVIDIA NeMo |
 
 La diferencia fundamental frente a todos ellos es el orden de magnitud del tamano: 1,24 M de parámetros sitúa a este modelo muy por debajo de las alternativas habituales de verificación de locutor, que suelen emplear decenas de millones de parámetros. A cambio, los EER publicados en domino in-the-wild y chino son altos, lo que limita su uso directo en producción sin un ajuste fino adicional.
@@ -118,8 +118,8 @@ La diferencia fundamental frente a todos ellos es el orden de magnitud del taman
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wq2012/ls_transformer_small_ge2e
-- Colección FlaxSpeaker en HuggingFace: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
+- Modelo en Hugging Face: https://huggingface.co/wq2012/ls_transformer_small_ge2e
+- Colección FlaxSpeaker en Hugging Face: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub de FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
 - Paquete PyPI `flaxspeaker`: https://pypi.org/project/flaxspeaker/
 - Perfil GitHub del autor: https://github.com/wq2012

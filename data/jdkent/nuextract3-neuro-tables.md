@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| jdkent/nuextract3-neuro-tables (v21) | 4,54 B | no disponible (16.384 en el ejemplo de servicio) | apache-2.0 | HuggingFace, safetensors | 98,7% etiqueta, 69,7% recall de coordenadas en neurometabench |
-| numind/NuExtract3 (base) | no disponible | no disponible | no disponible | HuggingFace | no disponible |
+| jdkent/nuextract3-neuro-tables (v21) | 4,54 B | no disponible (16.384 en el ejemplo de servicio) | apache-2.0 | Hugging Face, safetensors | 98,7% etiqueta, 69,7% recall de coordenadas en neurometabench |
+| numind/NuExtract3 (base) | no disponible | no disponible | no disponible | Hugging Face | no disponible |
 | Otros extractores de tablas de neuroimagen | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos comparativos publicados frente a alternativas de la misma categoria en la informacion proporcionada.
@@ -99,7 +99,7 @@ No se dispone de datos comparativos publicados frente a alternativas de la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jdkent/nuextract3-neuro-tables
+- Modelo en Hugging Face: https://huggingface.co/jdkent/nuextract3-neuro-tables
 - Modelo base: https://huggingface.co/numind/NuExtract3
 - Dataset de entrenamiento: https://huggingface.co/datasets/jdkent/neuro-tables
 - Benchmark `neurometabench`: no disponible en los resultados de busqueda

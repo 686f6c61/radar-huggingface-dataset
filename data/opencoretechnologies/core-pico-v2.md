@@ -75,7 +75,7 @@ Los datos de los modelos alternativos provienen de documentacion publica y no se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CORe Pico V2 | 596 M | 40.960 tokens | Apache-2.0 | safetensors y GGUF en HuggingFace |
+| CORe Pico V2 | 596 M | 40.960 tokens | Apache-2.0 | safetensors y GGUF en Hugging Face |
 | Qwen3-0.6B | 0,6 B | 32.768 tokens nativos (segun documentacion publica) | Apache-2.0 | safetensors y GGUF |
 | Llama 3.2 1B | 1,23 B | 128.000 tokens (segun documentacion publica) | Licencia comunitaria Llama 3.2 | safetensors y GGUF |
 | SmolLM2-360M | 0,36 B | 32.768 tokens (segun documentacion publica) | Apache-2.0 | safetensors y GGUF |
@@ -99,6 +99,6 @@ Frente a estas alternativas, CORe Pico V2 destaca por su contexto de 40.960 toke
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenCOReTechnologies/CORe-Pico-V2
+- Hugging Face: https://huggingface.co/OpenCOReTechnologies/CORe-Pico-V2
 - La busqueda web asociada no ha devuelto ningun enlace relevante sobre el modelo: el unico resultado obtenido corresponde a un sitio de streaming ajeno por completo (`cinemana.shabakaty.com`), por lo que no se incluye como referencia.
 - No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos adicionales en la informacion proporcionada.

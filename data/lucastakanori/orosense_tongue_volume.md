@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OroSense Tongue Volume-Scan Segmentation es un modelo de segmentación de imagen publicado por el usuario LucasTakanori en HuggingFace. Se trata de una red YOLO11n de segmentación (variante nano de la familia YOLO11-seg) entrenada para delimitar el tejido lingual visible en cada fotograma RGB de un escaneo volumétrico capturado con la aplicación OroSense en iPhone. El resultado es una máscara por fotograma; el cálculo del volumen físico en 3D requiere además datos de profundidad alineados y calibración de cámara en la propia aplicación, algo que el modelo no resuelve por sí solo.
+OroSense Tongue Volume-Scan Segmentation es un modelo de segmentación de imagen publicado por el usuario LucasTakanori en Hugging Face. Se trata de una red YOLO11n de segmentación (variante nano de la familia YOLO11-seg) entrenada para delimitar el tejido lingual visible en cada fotograma RGB de un escaneo volumétrico capturado con la aplicación OroSense en iPhone. El resultado es una máscara por fotograma; el cálculo del volumen físico en 3D requiere además datos de profundidad alineados y calibración de cámara en la propia aplicación, algo que el modelo no resuelve por sí solo.
 
 El modelo se distribuye en formato CoreML (`best.mlpackage`), lo que indica que está pensado para inferencia en el dispositivo (on-device) sobre el Neural Engine de Apple, no para despliegue en servidores con GPU. Es un modelo de investigación, con un conjunto de evaluación pequeño (88 imágenes de test) y una separación por participante: Jake y Yuliya quedaron fuera del entrenamiento, de modo que la evaluación mide generalización a personas no vistas.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible (no ha
 - Cabe en cualquier dispositivo Apple moderno con Neural Engine; no se especifican modelos mínimos soportados.
 - Opciones de despliegue: CoreML de forma nativa (Core ML en iOS/macOS). No se publican pesos PyTorch ni ONNX en el repositorio, por lo que el uso en vLLM, llama.cpp, Ollama o TGI no está soportado ni documentado.
 - Latencia y throughput: no disponibles en la información proporcionada.
-- El repositorio ocupa 0,0 GB según HuggingFace, coherente con un modelo de muy pequeño tamaño.
+- El repositorio ocupa 0,0 GB según Hugging Face, coherente con un modelo de muy pequeño tamaño.
 
 ## Comparativa con modelos similares
 
@@ -98,6 +98,6 @@ No se dispone de datos comparativos publicados en la informacion proporcionada; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LucasTakanori/orosense_tongue_volume
+- Modelo en Hugging Face: https://huggingface.co/LucasTakanori/orosense_tongue_volume
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada
 - Demo: no disponible en la informacion proporcionada

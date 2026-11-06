@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Lushito/jake-h3-fl2va` es un modelo publicado en HuggingFace por el usuario Lushito bajo una licencia comunitaria específica (`minimax-h3-community-license-agreement`). El repositorio tiene un tamano de 53,3 GB, lo que sugiere pesos de gran volumen, probablemente en precision completa o en un formato de pesos consolidados. El acceso es restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargar los ficheros.
+`Lushito/jake-h3-fl2va` es un modelo publicado en Hugging Face por el usuario Lushito bajo una licencia comunitaria específica (`minimax-h3-community-license-agreement`). El repositorio tiene un tamano de 53,3 GB, lo que sugiere pesos de gran volumen, probablemente en precision completa o en un formato de pesos consolidados. El acceso es restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargar los ficheros.
 
 La informacion publica disponible es muy limitada. No se especifican la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el pipeline de inferencia. El nombre del identificador (`jake-h3-fl2va`) sugiere una variante o fine-tuning sobre una familia de modelos denominada "h3", pero no hay documentacion en la informacion proporcionada que lo confirme.
 
@@ -71,7 +71,7 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 ## Limitaciones y advertencias
 
 - Ausencia de model card: no hay documentacion tecnica publica sobre arquitectura, entrenamiento, datos ni evaluacion.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Licencia no estandar: `minimax-h3-community-license-agreement` es una licencia comunitaria especifica; deben revisarse sus clausulas de uso comercial, redistribucion y atribucion antes de cualquier despliegue.
 - Idiomas no declarados: no puede asumirse soporte multilingue ni calidad en castellano.
 - Riesgo de alucinacion y sesgos: no evaluables sin benchmarks ni documentacion.
@@ -81,6 +81,6 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lushito/jake-h3-fl2va
+- Repositorio en Hugging Face: https://huggingface.co/Lushito/jake-h3-fl2va
 - Licencia referenciada: minimax-h3-community-license-agreement (texto no incluido en la informacion proporcionada; debe consultarse en el repositorio tras aceptar el acceso)
 - No se han encontrado papers, blogs, repositorios de codigo ni demos en la informacion disponible.

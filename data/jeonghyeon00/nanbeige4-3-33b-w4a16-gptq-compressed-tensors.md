@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B-w4a16-gptq-compressed-tensors (este) | 6,47B segun safetensors; 33B segun card | 524.288 tokens (declarado) | W4A16 GPTQ, compressed-tensors | Apache-2.0 | HuggingFace, vLLM |
-| Nanbeige/Nanbeige4.3-33B (base) | 33B segun nombre | 524.288 tokens (declarado) | BF16 (presumiblemente) | Apache-2.0 | HuggingFace |
+| Nanbeige4.3-33B-w4a16-gptq-compressed-tensors (este) | 6,47B segun safetensors; 33B segun card | 524.288 tokens (declarado) | W4A16 GPTQ, compressed-tensors | Apache-2.0 | Hugging Face, vLLM |
+| Nanbeige/Nanbeige4.3-33B (base) | 33B segun nombre | 524.288 tokens (declarado) | BF16 (presumiblemente) | Apache-2.0 | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento del modelo ni de alternativas comparables en la informacion proporcionada, por lo que la comparativa se limita a parametros, contexto y licencia.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento del modelo ni de alternativas comparables 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jeonghyeon00/Nanbeige4.3-33B-w4a16-gptq-compressed-tensors
+- Repositorio Hugging Face: https://huggingface.co/jeonghyeon00/Nanbeige4.3-33B-w4a16-gptq-compressed-tensors
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Dataset de calibracion: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k
 - Repositorio llmcompressor: no disponible en la informacion proporcionada

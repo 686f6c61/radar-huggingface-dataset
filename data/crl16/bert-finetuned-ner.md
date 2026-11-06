@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una versión fine-tuned de `bert-base-cased` para la tarea de reconocimiento de entidades nombradas (NER). Lo desarrolla el usuario `crl16` y está publicado en HuggingFace. Se trata de un modelo de token-classification basado en la arquitectura BERT, con 107.726.601 parámetros, entrenado durante 3 épocas con un learning rate de 2e-05. No se dispone de información sobre el dataset de entrenamiento ni sobre el idioma de los datos, por lo que su uso previsto es genérico para NER. Es relevante porque ofrece un punto de partida ligero para la extracción de entidades en textos, con una licencia Apache 2.0 que permite uso comercial. El modelo tiene 0 descargas y 0 likes, lo que indica que no ha tenido difusión en la comunidad.
+Este modelo es una versión fine-tuned de `bert-base-cased` para la tarea de reconocimiento de entidades nombradas (NER). Lo desarrolla el usuario `crl16` y está publicado en Hugging Face. Se trata de un modelo de token-classification basado en la arquitectura BERT, con 107.726.601 parámetros, entrenado durante 3 épocas con un learning rate de 2e-05. No se dispone de información sobre el dataset de entrenamiento ni sobre el idioma de los datos, por lo que su uso previsto es genérico para NER. Es relevante porque ofrece un punto de partida ligero para la extracción de entidades en textos, con una licencia Apache 2.0 que permite uso comercial. El modelo tiene 0 descargas y 0 likes, lo que indica que no ha tenido difusión en la comunidad.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ Este modelo es una versión fine-tuned de `bert-base-cased` para la tarea de rec
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning de `bert-base-cased`, un transformer encoder-only de la familia BERT. La arquitectura original tiene 12 capas, 768 dimensiones ocultas y 12 cabezas de atención, pero no se dispone de la confirmación de que el fine-tuning haya modificado la arquitectura. El entrenamiento se realizó con el framework Transformers y el Trainer de HuggingFace, con hiperparámetros: learning rate 2e-05, batch size 8 para train y eval, semilla 42, optimizador AdamW y scheduler lineal, durante 3 épocas. El dataset de entrenamiento no está especificado, por lo que se desconocen el número de tokens, la composición y si se aplicaron técnicas de alineación como RLHF o DPO. La única innovación técnica destacable es el ajuste fino (fine-tuning) del modelo base para token-classification, sin modificaciones estructurales.
+El modelo es un fine-tuning de `bert-base-cased`, un transformer encoder-only de la familia BERT. La arquitectura original tiene 12 capas, 768 dimensiones ocultas y 12 cabezas de atención, pero no se dispone de la confirmación de que el fine-tuning haya modificado la arquitectura. El entrenamiento se realizó con el framework Transformers y el Trainer de Hugging Face, con hiperparámetros: learning rate 2e-05, batch size 8 para train y eval, semilla 42, optimizador AdamW y scheduler lineal, durante 3 épocas. El dataset de entrenamiento no está especificado, por lo que se desconocen el número de tokens, la composición y si se aplicaron técnicas de alineación como RLHF o DPO. La única innovación técnica destacable es el ajuste fino (fine-tuning) del modelo base para token-classification, sin modificaciones estructurales.
 
 ## Capacidades
 
@@ -72,9 +72,9 @@ En la búsqueda web se han encontrado otros modelos con nombres similares, como 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| crl16/bert-finetuned-ner | 107.726.601 | no disponible | Apache 2.0 | HuggingFace |
-| google-bert/bert-base-cased | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| nt-ai/bert-finetuned-ner | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| crl16/bert-finetuned-ner | 107.726.601 | no disponible | Apache 2.0 | Hugging Face |
+| google-bert/bert-base-cased | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| nt-ai/bert-finetuned-ner | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 

@@ -110,7 +110,7 @@ Los dos ultimos se incluyen como referencias de categoria (modelos de menos de 2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Compactbot/bananamind3-lft-2.5m
+- Modelo en Hugging Face: https://huggingface.co/Compactbot/bananamind3-lft-2.5m
 - Discusion de la peticion del modelo: https://huggingface.co/spaces/Compactbot/model-requests/discussions/4
 - Space del agente Compactbot: https://huggingface.co/spaces/CompactAI/Compactbot
 - Listado de modelos de Compactbot: https://huggingface.co/Compactbot/models

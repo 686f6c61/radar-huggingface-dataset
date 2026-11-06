@@ -2,11 +2,11 @@
 
 ## Resumen
 
-flux-3-image-klein-base es un modelo de generacion y edicion de imagenes publicado por Black Forest Labs (black-forest-labs) en HuggingFace. El repositorio declara la etiqueta de libreria `diffusers`, el pipeline `image-to-image` y las etiquetas `image-generation`, `image-editing`, `flux` y `flux-3`, lo que lo situa dentro de la familia FLUX 3 de dicho laboratorio. Los pesos estan en formato safetensors y el repositorio ocupa 47,4 GB, con un total declarado de 5.538.458.368 parametros (aproximadamente 5,54 mil millones).
+flux-3-image-klein-base es un modelo de generacion y edicion de imagenes publicado por Black Forest Labs (black-forest-labs) en Hugging Face. El repositorio declara la etiqueta de libreria `diffusers`, el pipeline `image-to-image` y las etiquetas `image-generation`, `image-editing`, `flux` y `flux-3`, lo que lo situa dentro de la familia FLUX 3 de dicho laboratorio. Los pesos estan en formato safetensors y el repositorio ocupa 47,4 GB, con un total declarado de 5.538.458.368 parametros (aproximadamente 5,54 mil millones).
 
 El modelo resuelve tareas de generacion de imagen a partir de texto y, de forma destacada por su pipeline, de edicion imagen-a-imagen. Su relevancia inmediata es doble: por un lado amplia la familia FLUX con una variante de menor numero de parametros que las generaciones anteriores del ecosistema (lo que sugiere un enfoque orientado a menor coste de inferencia, aunque ese extremo no se documenta en la informacion disponible); por otro, llega ya integrado en el ecosistema `diffusers`, lo que facilita su uso desde Python sin conversiones manuales.
 
-El acceso al repositorio esta restringido (gated): es necesario aceptar las condiciones de la licencia flux-kommunity-license en HuggingFace antes de descargar los pesos. El modelo solo declara soporte de ingles (`en`). No se ha publicado en la informacion disponible documentacion sobre arquitectura interna, datos de entrenamiento ni resultados de benchmarks.
+El acceso al repositorio esta restringido (gated): es necesario aceptar las condiciones de la licencia flux-kommunity-license en Hugging Face antes de descargar los pesos. El modelo solo declara soporte de ingles (`en`). No se ha publicado en la informacion disponible documentacion sobre arquitectura interna, datos de entrenamiento ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ La informacion proporcionada no incluye datos comparativos. La tabla siguiente r
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| flux-3-image-klein-base | 5,54 mil millones | no disponible | no disponible | flux-kommunity-license (acceso restringido) | HuggingFace, via diffusers |
+| flux-3-image-klein-base | 5,54 mil millones | no disponible | no disponible | flux-kommunity-license (acceso restringido) | Hugging Face, via diffusers |
 | FLUX.1 [dev] | no disponible en las fuentes consultadas | no disponible | no disponible | no disponible en las fuentes consultadas | no verificado en esta busqueda |
 | FLUX.1 [schnell] | no disponible en las fuentes consultadas | no disponible | no disponible | no disponible en las fuentes consultadas | no verificado en esta busqueda |
 | Otras alternativas de generacion y edicion de imagen | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -94,7 +94,7 @@ La informacion proporcionada no incluye datos comparativos. La tabla siguiente r
 - Idiomas: solo se declara soporte de ingles. Las indicaciones en castellano u otros idiomas pueden degradar la fidelidad del resultado.
 - Sesgos: no hay informacion publicada sobre la composicion del dataset de entrenamiento, por lo que no se pueden caracterizar sesgos demograficos, culturales o estilisticos. Se asume el riesgo habitual de los modelos entrenados con datos web a gran escala.
 - Licencia: la licencia flux-kommunity-license es de tipo `other` y el acceso esta restringido. Las condiciones exactas de uso comercial, redistribucion de pesos y uso de las imagenes generadas no se detallan en la informacion proporcionada y deben revisarse en el repositorio antes de cualquier despliegue en produccion.
-- Acceso gated: la descarga exige aceptar las condiciones en HuggingFace, lo que puede complicar la automatizacion en pipelines de CI/CD que descarguen pesos de forma no interactiva.
+- Acceso gated: la descarga exige aceptar las condiciones en Hugging Face, lo que puede complicar la automatizacion en pipelines de CI/CD que descarguen pesos de forma no interactiva.
 - Requisitos de almacenamiento: 47,4 GB de repositorio, muy superior a lo esperado para 5,54 mil millones de parametros en una sola precision; conviene planificar el espacio en disco y el tiempo de descarga.
 - Madurez: el repositorio se creo el 2026-10-13 y se actualizo el 2026-10-15, con 134 descargas y 35 likes. Es un artefacto reciente y con poca validacion externa acumulada.
 - Formatos cuantizados: no hay variantes oficiales cuantizadas publicadas, por lo que cualquier cuantizacion de terceros debe validarse antes de usarse en produccion.
@@ -102,7 +102,7 @@ La informacion proporcionada no incluye datos comparativos. La tabla siguiente r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
-- Pagina de Black Forest Labs en HuggingFace: https://huggingface.co/black-forest-labs
+- Modelo en Hugging Face: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
+- Pagina de Black Forest Labs en Hugging Face: https://huggingface.co/black-forest-labs
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible en la informacion proporcionada.
 - La busqueda web realizada no devolvio ningun enlace relevante sobre el modelo; los resultados obtenidos correspondian a sitios de venta de electronica recondicionada, una definicion enciclopedica del color negro, una tienda de moda, un canal de musica y una optica en linea, sin relacion alguna con este modelo.

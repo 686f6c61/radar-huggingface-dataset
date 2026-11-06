@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "edededdy/LittleKedi-medium-wide-sparse-instruct",
+  "slug": "edededdy-littlekedi-medium-wide-sparse-instruct",
+  "author": "edededdy",
+  "url": "https://huggingface.co/edededdy/LittleKedi-medium-wide-sparse-instruct",
+  "created_at": "2026-11-01T17:23:16.000Z",
+  "updated_at": "2026-11-01T17:30:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "mixture-of-experts",
+    "moe",
+    "deepseek",
+    "multi-head-latent-attention",
+    "mla",
+    "from-scratch",
+    "tiny",
+    "littlekedi",
+    "chat",
+    "instruction-tuned",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:HuggingFaceGECLM/REDDIT_comments",
+    "dataset:codeparrot/github-code-clean",
+    "dataset:HuggingFaceTB/smoltalk",
+    "dataset:wikimedia/wikipedia",
+    "base_model:edededdy/LittleKedi-medium-wide-sparse-base",
+    "base_model:finetune:edededdy/LittleKedi-medium-wide-sparse-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 139,
+  "trending_score": 0,
+  "parameters": 305361824,
+  "parameters_human": "305.4M",
+  "storage_bytes": 2189045099,
+  "storage_human": "2.2 GB",
+  "base_model": "edededdy/LittleKedi-medium-wide-sparse-base",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "edededdy/LittleKedi-medium-wide-sparse-instruct · Hugging Face",
+      "url": "https://huggingface.co/edededdy/LittleKedi-medium-wide-sparse-instruct",
+      "snippet": "LittleKedi-medium-wide-sparse-instruct is the instruction-tuned (chat) version of LittleKedi-medium-wide-sparse-base, a small DeepSeek-V3-style Mixture-of-Experts language model trained from scratch. It has 305.4M parameters in total, of which 31.7M are active per token (23.29M excluding the embedding table). It was pretrained on a 20,400M-token mix (FineWeb-Edu, Cosmopedia v2 (SmolLM-Corpus ..."
+    },
+    {
+      "title": "LittleKedi Medium Wide Sparse Instruct by edededdy",
+      "url": "https://llm-explorer.com/model/edededdy%2FLittleKedi-medium-wide-sparse-instruct,2PVvz9tlS6I3CM5Vq5mJSh",
+      "snippet": "LittleKedi Medium Wide Sparse Instruct is an open-source language model by edededdy. Features: 305.4m LLM, VRAM: 0.3GB, License: apache-2.0, Quantized, Instruction-Based, LLM Explorer Score: 0.3."
+    }
+  ]
+}

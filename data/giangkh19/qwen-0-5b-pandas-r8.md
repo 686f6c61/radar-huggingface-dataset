@@ -62,9 +62,9 @@ No se dispone de información sobre adaptadores comparables específicos para pa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| giangkh19/qwen-0.5b-pandas-r8 | 0.5B (base) + adaptador | No disponible | No disponible | HuggingFace |
-| Qwen/Qwen2.5-Coder-0.5B-Instruct | 0.5B | 32K (según documentación oficial de Qwen) | Apache 2.0 | HuggingFace |
-| CodeLlama-7B | 7B | 16K | Llama 2 license | HuggingFace |
+| giangkh19/qwen-0.5b-pandas-r8 | 0.5B (base) + adaptador | No disponible | No disponible | Hugging Face |
+| Qwen/Qwen2.5-Coder-0.5B-Instruct | 0.5B | 32K (según documentación oficial de Qwen) | Apache 2.0 | Hugging Face |
+| CodeLlama-7B | 7B | 16K | Llama 2 license | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -77,7 +77,7 @@ No se dispone de información sobre adaptadores comparables específicos para pa
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/giangkh19/qwen-0.5b-pandas-r8)
+- [Modelo en Hugging Face](https://huggingface.co/giangkh19/qwen-0.5b-pandas-r8)
 - [Modelo base Qwen2.5-Coder-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct)
 - [Repositorio oficial de Qwen en GitHub](https://github.com/QwenLM/Qwen)
 - [Página de Qwen](https://qwen.ai/home)

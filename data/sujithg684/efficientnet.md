@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo identificado en HuggingFace como `Sujithg684/efficientnet` es un clasificador de imágenes binario orientado a la detección de deepfakes. Se construye sobre un backbone EfficientNet-B0 preentrenado en ImageNet, al que se le sustituye la capa de clasificación final por una capa `Linear(in_features, 2)` que distingue entre imágenes reales (clase 0) y manipuladas (clase 1). El entrenamiento se ha realizado sobre el conjunto FaceForensics++ (FF++) en su configuración C23, que agrupa vídeos reales y vídeos manipulados con cuatro técnicas: DeepFake, FaceSwap, Face2Face y NeuralTextures. El problema que aborda es la detección automatizada de manipulación facial, un área con creciente interés en investigación académica.
+El modelo identificado en Hugging Face como `Sujithg684/efficientnet` es un clasificador de imágenes binario orientado a la detección de deepfakes. Se construye sobre un backbone EfficientNet-B0 preentrenado en ImageNet, al que se le sustituye la capa de clasificación final por una capa `Linear(in_features, 2)` que distingue entre imágenes reales (clase 0) y manipuladas (clase 1). El entrenamiento se ha realizado sobre el conjunto FaceForensics++ (FF++) en su configuración C23, que agrupa vídeos reales y vídeos manipulados con cuatro técnicas: DeepFake, FaceSwap, Face2Face y NeuralTextures. El problema que aborda es la detección automatizada de manipulación facial, un área con creciente interés en investigación académica.
 
 La arquitectura es una red neuronal convolucional (CNN) de la familia EfficientNet, que emplea bloques MBConv con mecanismos de atención de tipo squeeze-and-excitation y escalado compuesto del ancho, la profundidad y la resolución. La entrada esperada es de 224 × 224 píxeles en RGB. El modelo se distribuye como un `state_dict` de PyTorch (`.pth`) y está pensado explícitamente, según su model card, para uso académico y de investigación, no para aplicaciones forenses o de vigilancia en producción.
 
-Conviene señalar dos aspectos de contexto. Por un lado, la ficha de HuggingFace registra el repositorio como `Sujithg684/efficientnet`, con 0 descargas y 0 likes y un tamaño de repositorio de 0,0 GB, mientras que el código de ejemplo de la model card apunta a un repositorio distinto (`Xicor9/efficientnet-b0-ffpp-c23`). Por otro lado, existe una discrepancia entre la licencia declarada en los metadatos de HuggingFace (MIT) y la que aparece en el texto de la model card, que restringe el uso a fines exclusivamente de investigación y educación. Estos dos puntos condicionan la reproducibilidad y el uso comercial.
+Conviene señalar dos aspectos de contexto. Por un lado, la ficha de Hugging Face registra el repositorio como `Sujithg684/efficientnet`, con 0 descargas y 0 likes y un tamaño de repositorio de 0,0 GB, mientras que el código de ejemplo de la model card apunta a un repositorio distinto (`Xicor9/efficientnet-b0-ffpp-c23`). Por otro lado, existe una discrepancia entre la licencia declarada en los metadatos de Hugging Face (MIT) y la que aparece en el texto de la model card, que restringe el uso a fines exclusivamente de investigación y educación. Estos dos puntos condicionan la reproducibilidad y el uso comercial.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Conviene señalar dos aspectos de contexto. Por un lado, la ficha de HuggingFace
 | Longitud de contexto | No aplica (modelo de vision, entrada de 224 × 224 × 3) |
 | Tipos de cuantizacion | No disponible (no especificado en la model card) |
 | Idiomas soportados | No aplica / no disponible (clasificacion de imagenes) |
-| Licencia | MIT segun metadatos de HuggingFace; la model card indica "exclusivamente para investigacion y educacion" |
+| Licencia | MIT segun metadatos de Hugging Face; la model card indica "exclusivamente para investigacion y educacion" |
 | Formato de pesos | PyTorch `state_dict` (`.pth`) |
 
 ## Arquitectura y entrenamiento

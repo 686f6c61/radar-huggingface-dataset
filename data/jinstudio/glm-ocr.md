@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-OCR es un modelo multimodal especializado en reconocimiento optico de caracteres y comprension de documentos complejos, construido sobre la arquitectura encoder-decoder GLM-V. Lo desarrolla el equipo de zai-org (la organizacion detras de la familia GLM) y esta publicado en HuggingFace bajo licencia MIT. La ficha aqui analizada es una copia subida por el usuario Jinstudio en octubre de 2026; el repositorio de referencia es el oficial de zai-org, y el modelo tambien se distribuye a traves de la API de Z.ai.
+GLM-OCR es un modelo multimodal especializado en reconocimiento optico de caracteres y comprension de documentos complejos, construido sobre la arquitectura encoder-decoder GLM-V. Lo desarrolla el equipo de zai-org (la organizacion detras de la familia GLM) y esta publicado en Hugging Face bajo licencia MIT. La ficha aqui analizada es una copia subida por el usuario Jinstudio en octubre de 2026; el repositorio de referencia es el oficial de zai-org, y el modelo tambien se distribuye a traves de la API de Z.ai.
 
 El modelo combina un encoder visual CogViT preentrenado con datos imagen-texto a gran escala, un conector cross-modal ligero con downsampling eficiente de tokens y un decodificador de lenguaje GLM-0.5B. Su objetivo es resolver OCR sobre maquetaciones dificiles: tablas complejas, documentos con mucho codigo, sellos, formularios y documentos escaneados del mundo real. Se apoya en un pipeline de dos etapas (analisis de layout con PP-DocLayout-V3 y reconocimiento en paralelo) para producir Markdown estructurado o JSON con esquema estricto.
 
@@ -107,14 +107,14 @@ No se dispone de una comparativa numerica directa entre estos modelos y GLM-OCR 
 
 ## Enlaces
 
-- Modelo en HuggingFace (copia analizada): https://huggingface.co/Jinstudio/GLM-OCR
+- Modelo en Hugging Face (copia analizada): https://huggingface.co/Jinstudio/GLM-OCR
 - Repositorio oficial en GitHub: https://github.com/zai-org/GLM-OCR
 - Informe tecnico (arXiv): https://arxiv.org/abs/2603.10910
 - Documentacion de la API en Z.ai: https://docs.z.ai/guides/vlm/glm-ocr
 - Cookbook de SGLang: https://cookbook.sglang.io/autoregressive/GLM/GLM-OCR
 - Recipes de vLLM: https://recipes.vllm.ai/zai-org/GLM-OCR
 - Documentacion de Transformers para glm_ocr: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/glm_ocr.md
-- PP-DocLayout-V3 en HuggingFace: https://huggingface.co/PaddlePaddle/PP-DocLayoutV3
+- PP-DocLayout-V3 en Hugging Face: https://huggingface.co/PaddlePaddle/PP-DocLayoutV3
 - PaddleOCR: https://github.com/PaddlePaddle/PaddleOCR
 - MinerU: https://github.com/opendatalab/MinerU
 - Comunidad en Discord: https://discord.gg/QR7SARHRxK

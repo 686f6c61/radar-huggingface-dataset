@@ -87,9 +87,9 @@ Las cifras siguientes son estimaciones orientativas derivadas del tamano del mod
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-4b-latent-reasoning-retrofit (este) | Adaptador LoRA sobre base de ~4B | No disponible (heredado del base) | Adaptador PEFT/LoRA | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Thinking-2507 | ~4B | No disponible en la informacion proporcionada | Modelo completo denso con thinking mode | Apache 2.0 | HuggingFace |
-| Qwen3-4B en modo no thinking (variante instruct) | ~4B | No disponible en la informacion proporcionada | Modelo completo denso | Apache 2.0 | HuggingFace |
+| qwen3-4b-latent-reasoning-retrofit (este) | Adaptador LoRA sobre base de ~4B | No disponible (heredado del base) | Adaptador PEFT/LoRA | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Thinking-2507 | ~4B | No disponible en la informacion proporcionada | Modelo completo denso con thinking mode | Apache 2.0 | Hugging Face |
+| Qwen3-4B en modo no thinking (variante instruct) | ~4B | No disponible en la informacion proporcionada | Modelo completo denso | Apache 2.0 | Hugging Face |
 | Otros adaptadores LoRA de razonamiento latente sobre Qwen3 | No disponible | No disponible | Adaptador PEFT/LoRA | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de datos comparativos de rendimiento (MMLU, GSM8K agregado, HumanEval) para ninguno de los modelos de la tabla en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa entre ellos.
@@ -110,7 +110,7 @@ No se dispone de datos comparativos de rendimiento (MMLU, GSM8K agregado, HumanE
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/erythropygia/qwen3-4b-latent-reasoning-retrofit
+- Modelo en Hugging Face: https://huggingface.co/erythropygia/qwen3-4b-latent-reasoning-retrofit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
 - Dataset smoltalk2: https://huggingface.co/datasets/HuggingFaceTB/smoltalk2
 - Dataset GSM8K: https://huggingface.co/datasets/openai/gsm8k

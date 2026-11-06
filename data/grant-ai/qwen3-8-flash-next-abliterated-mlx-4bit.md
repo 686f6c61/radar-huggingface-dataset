@@ -89,7 +89,7 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grant-ai/Qwen3.8-Flash-Next-Abliterated-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/grant-ai/Qwen3.8-Flash-Next-Abliterated-MLX-4bit
 - Modelo base Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Checkpoint abliterated BF16: https://huggingface.co/Blackfrost-AI/Qwen3.8-Flash-Next-DERISKED-BF16
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/

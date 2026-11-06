@@ -110,7 +110,7 @@ Frente a estas alternativas, la ventaja diferencial de LucidVitality-9b es su or
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/LucidVitality-9b-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/LucidVitality-9b-i1-GGUF
 - Modelo base: https://huggingface.co/BlueNipples/LucidVitality-9b
 - Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/LucidVitality-9b-GGUF
 - Página resumen del cuantizador para este modelo: https://hf.tst.eu/model#LucidVitality-9b-i1-GGUF

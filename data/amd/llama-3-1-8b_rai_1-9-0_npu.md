@@ -6,7 +6,7 @@ AMD/Llama-3.1-8B_rai_1.9.0_npu es una distribucion del modelo Llama 3.1 8B de Me
 
 El modelo hereda las capacidades del Llama 3.1 8B original: generacion de texto, razonamiento, codigo y soporte multilingue basico, con una ventana de contexto de 128 000 tokens y licencia Llama 3.1. Su relevancia radica en que permite ejecutar un LLM de 8 000 millones de parametros en local sobre hardware de PC con NPU dedicada, sin depender de GPU discretas ni de servicios en la nube, lo que reduce consumo energetico y latencia en entornos de escritorio.
 
-La ficha del repositorio indica que el acceso esta restringido (gated): es necesario aceptar las condiciones de la licencia Llama 3.1 en HuggingFace antes de descargar los pesos. El tamano del repositorio es de 9,4 GB, coherente con pesos en formato ONNX cuantizados para inferencia en NPU. El idioma declarado es unicamente ingles.
+La ficha del repositorio indica que el acceso esta restringido (gated): es necesario aceptar las condiciones de la licencia Llama 3.1 en Hugging Face antes de descargar los pesos. El tamano del repositorio es de 9,4 GB, coherente con pesos en formato ONNX cuantizados para inferencia en NPU. El idioma declarado es unicamente ingles.
 
 ## Especificaciones tecnicas
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato / destino | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/Llama-3.1-8B_rai_1.9.0_npu | 8B | 128 000 (heredado) | ONNX para NPU Ryzen AI | Llama 3.1 | Gated en HuggingFace |
+| amd/Llama-3.1-8B_rai_1.9.0_npu | 8B | 128 000 (heredado) | ONNX para NPU Ryzen AI | Llama 3.1 | Gated en Hugging Face |
 | meta-llama/Llama-3.1-8B | 8B | 128 000 | Safetensors (GPU/CPU) | Llama 3.1 | Publico con aceptacion de licencia |
 | Llama 3.1 8B en GGUF (comunidad) | 8B | 128 000 | GGUF (CPU/GPU) | Llama 3.1 | Multiples repos comunitarios |
 | Llama 3.1 8B en ONNX Runtime (comunidad) | 8B | 128 000 | ONNX (CPU/GPU) | Llama 3.1 | Multiples repos comunitarios |
@@ -72,7 +72,7 @@ La diferencia clave frente a las alternativas no esta en el modelo (es el mismo 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar la licencia Llama 3.1 en HuggingFace antes de descargar.
+- Acceso restringido: requiere aceptar la licencia Llama 3.1 en Hugging Face antes de descargar.
 - Licencia Llama 3.1: impone restricciones de uso comercial (clausula de 700 millones de usuarios mensuales, obligaciones de atribucion y politicas de uso aceptable); revisar antes de desplegar en produccion.
 - Idioma: el repo declara solo ingles; el rendimiento en castellano no esta garantizado ni evaluado en esta exportacion.
 - Dependencia de hardware: solo funciona en plataformas Ryzen AI compatibles con RAI 1.9.0; no es portable a GPU NVIDIA/AMD discretas ni a otros aceleradores sin reconversion.
@@ -83,7 +83,7 @@ La diferencia clave frente a las alternativas no esta en el modelo (es el mismo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Llama-3.1-8B_rai_1.9.0_npu
+- Hugging Face: https://huggingface.co/amd/Llama-3.1-8B_rai_1.9.0_npu
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/
 - Ryzen AI (AMD): https://www.amd.com/en/products/software/ryzen-ai.html

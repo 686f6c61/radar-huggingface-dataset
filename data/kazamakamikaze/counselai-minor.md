@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `counselai-minor` está publicado en HuggingFace por el usuario `kazamakamikaze`. La única información disponible es la licencia Apache 2.0 y las fechas de creación y actualización (4 de septiembre de 2026). No se ha publicado ninguna model card descriptiva, ni datos sobre arquitectura, tamaño, contexto, idiomas o capacidades. El modelo no tiene descargas ni likes, y el pipeline no está especificado.
+El modelo `counselai-minor` está publicado en Hugging Face por el usuario `kazamakamikaze`. La única información disponible es la licencia Apache 2.0 y las fechas de creación y actualización (4 de septiembre de 2026). No se ha publicado ninguna model card descriptiva, ni datos sobre arquitectura, tamaño, contexto, idiomas o capacidades. El modelo no tiene descargas ni likes, y el pipeline no está especificado.
 
 Por tanto, no es posible determinar qué problema resuelve ni su relevancia actual. Se trata de un repositorio sin documentación técnica. La ausencia de información impide evaluar el modelo para cualquier caso de uso; cualquier afirmación sobre su funcionamiento sería especulativa.
 
@@ -56,5 +56,5 @@ No disponible. No hay información suficiente para comparar este modelo con otro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kazamakamikaze/counselai-minor
+- Hugging Face: https://huggingface.co/kazamakamikaze/counselai-minor
 - No se han encontrado otros enlaces relevantes en la búsqueda web. Los resultados obtenidos (una película rusa y noticias sobre Character.AI) no están relacionados con este modelo.

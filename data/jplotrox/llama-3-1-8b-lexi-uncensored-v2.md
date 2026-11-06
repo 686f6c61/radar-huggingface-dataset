@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-Lexi-Uncensored-V2 es un modelo de lenguaje basado en Llama-3.1-8B-Instruct, desarrollado originalmente por Orenguteng y re-subido por Jplotrox en HuggingFace. Su propósito principal es eliminar la censura y los mecanismos de rechazo del modelo base, ofreciendo respuestas altamente complacientes incluso ante solicitudes que el modelo original consideraría no éticas. El autor advierte explícitamente que se debe implementar una capa de alineación propia antes de exponerlo como servicio.
+Llama-3.1-8B-Lexi-Uncensored-V2 es un modelo de lenguaje basado en Llama-3.1-8B-Instruct, desarrollado originalmente por Orenguteng y re-subido por Jplotrox en Hugging Face. Su propósito principal es eliminar la censura y los mecanismos de rechazo del modelo base, ofreciendo respuestas altamente complacientes incluso ante solicitudes que el modelo original consideraría no éticas. El autor advierte explícitamente que se debe implementar una capa de alineación propia antes de exponerlo como servicio.
 
 Con 8.030 millones de parámetros, este modelo hereda la arquitectura transformer de Llama 3.1 y su licencia comunitaria. La versión V2 introduce mejoras en la complacencia y el razonamiento, aunque el autor señala que la cuantización Q4 puede provocar fallos ocasionales de rechazo, recomendando usar F16 o Q8. Es relevante para desarrolladores que necesitan un modelo sin restricciones para tareas creativas o de investigación, siempre bajo su propia responsabilidad.
 
@@ -82,9 +82,9 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace (Jplotrox): https://huggingface.co/Jplotrox/Llama-3.1-8B-Lexi-Uncensored-V2
+- Modelo en Hugging Face (Jplotrox): https://huggingface.co/Jplotrox/Llama-3.1-8B-Lexi-Uncensored-V2
 - Modelo original (Orenguteng): https://huggingface.co/Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2
-- Mirror en HuggingFace (Greytechai): https://huggingface.co/Greytechai/Llama-3.1-8B-Lexi-Uncensored-V2
+- Mirror en Hugging Face (Greytechai): https://huggingface.co/Greytechai/Llama-3.1-8B-Lexi-Uncensored-V2
 - Mirror en ModelScope: https://www.modelscope.cn/models/fireicewolf/Llama-3.1-8B-Lexi-Uncensored-V2
 - Versión GGUF en Secret AI: https://secretai.io/models/Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2-GGUF
 - Versión en Ollama: https://ollama.com/mannix/llama3.1-8b-lexi

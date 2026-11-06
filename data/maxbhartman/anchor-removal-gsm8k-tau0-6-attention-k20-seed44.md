@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k20-seed44` es un checkpoint publicado en HuggingFace por el usuario maxbhartman, con etiquetas `pytorch`, `llama` y `region:us`. Por la nomenclatura del repositorio, todo apunta a un artefacto de investigación procedente de un estudio de ablación sobre eliminación de "anclas" (anchor removal), evaluado sobre GSM8K, con una configuración concreta: `tau=0.6`, método basado en atención con `k=20` y semilla `seed44`. No se trata, por tanto, de un modelo de propósito general con ficha comercial, sino de un punto de control experimental orientado a reproducir un resultado concreto.
+`maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k20-seed44` es un checkpoint publicado en Hugging Face por el usuario maxbhartman, con etiquetas `pytorch`, `llama` y `region:us`. Por la nomenclatura del repositorio, todo apunta a un artefacto de investigación procedente de un estudio de ablación sobre eliminación de "anclas" (anchor removal), evaluado sobre GSM8K, con una configuración concreta: `tau=0.6`, método basado en atención con `k=20` y semilla `seed44`. No se trata, por tanto, de un modelo de propósito general con ficha comercial, sino de un punto de control experimental orientado a reproducir un resultado concreto.
 
 La información pública disponible es mínima: no hay model card con descripción, pipeline, licencia ni idiomas declarados, y el repositorio acumula 0 descargas y 1 like en el momento de la consulta. El tamaño del repositorio es de 6,4 GB, dato relevante para estimar el orden de magnitud del checkpoint, aunque insuficiente para determinar el número de parámetros exacto sin conocer el formato y la precisión de los pesos.
 
@@ -18,7 +18,7 @@ Su relevancia es, por tanto, acotada al ámbito de la investigación: sirve como
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible. No se documentan versiones GGUF, AWQ, GPTQ ni similares |
 | Idiomas soportados | No disponible |
-| Licencia | No disponible (campo vacio en HuggingFace) |
+| Licencia | No disponible (campo vacio en Hugging Face) |
 | Formato de pesos | No disponible de forma explicita; las etiquetas indican `pytorch` y `llama` |
 | Tamano del repositorio | 6,4 GB |
 | Pipeline declarado | No disponible |
@@ -93,7 +93,7 @@ No es posible establecer una comparativa rigurosa con modelos de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k20-seed44
+- Hugging Face: https://huggingface.co/maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k20-seed44
 - Paper, blog o repositorio asociado: no disponible
 - Demo o espacio de inferencia: no disponible
 - Los resultados de la busqueda web realizada no contienen ningun enlace relacionado con el modelo: todas las entradas devueltas corresponden a paginas de soporte de Microsoft (contacto, inicio de sesion en Hotmail, actualizaciones de seguridad de Exchange Server y descarga de Windows 8.1), sin ninguna vinculacion con maxbhartman, GSM8K ni tecnicas de anchor removal.

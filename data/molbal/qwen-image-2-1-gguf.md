@@ -6,7 +6,7 @@ Qwen-Image-2.1-GGUF es la versión cuantizada en formato GGUF del modelo de difu
 
 El repositorio contiene aproximadamente 7.115.124.736 parámetros según los metadatos del modelo base, y ocupa 19,1 GB en total, repartidos entre varias cuantizaciones. El codificador de texto es Qwen3-VL 8B, que se carga por separado, junto con el VAE de Qwen Image; el GGUF solo contiene los pesos del modelo de difusión. Es relevante ahora porque permite ejecutar un modelo de generación y edición de imagen de última generación en hardware con VRAM limitada, algo que la versión completa en precisión nativa no facilita.
 
-El artefacto está publicado con licencia qwen-research (etiquetada como "other" en HuggingFace), lo que condiciona su uso comercial. En el momento de la consulta el repositorio registra 0 descargas y 0 likes, y los archivos de cuantización disponibles son Q4_0, Q8 y Q8_CR, con Q4_CR aún en desarrollo.
+El artefacto está publicado con licencia qwen-research (etiquetada como "other" en Hugging Face), lo que condiciona su uso comercial. En el momento de la consulta el repositorio registra 0 descargas y 0 likes, y los archivos de cuantización disponibles son Q4_0, Q8 y Q8_CR, con Q4_CR aún en desarrollo.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El artefacto está publicado con licencia qwen-research (etiquetada como "other"
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q4_0 (GGML), Q8 (GGML), Q8_CR (ruta nativa INT8 ConvRot); Q4_CR en desarrollo |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-research (campo `license: other` en HuggingFace) |
+| Licencia | qwen-research (campo `license: other` en Hugging Face) |
 | Formato de pesos | GGUF (`qwen_image_2.1_Q4.gguf`, `qwen_image_2.1_Q8.gguf`, `qwen_image_2.1_Q8_CR.gguf`) |
 | Codificador de texto | Qwen3-VL 8B (componente separado, no incluido en el GGUF) |
 | VAE | Qwen Image VAE (componente separado) |
@@ -73,7 +73,7 @@ No se dispone de datos verificables en la informacion proporcionada para constru
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-GGUF | 7,1 B (metadatos del base) | no disponible | no disponible | qwen-research | GGUF en HuggingFace, 0 descargas |
+| Qwen-Image-2.1-GGUF | 7,1 B (metadatos del base) | no disponible | no disponible | qwen-research | GGUF en Hugging Face, 0 descargas |
 | Qwen-Image (base upstream) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | FLUX (familia) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Stable Diffusion 3.5 (familia) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -92,7 +92,7 @@ No se dispone de datos verificables en la informacion proporcionada para constru
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/molbal/Qwen-Image-2.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/molbal/Qwen-Image-2.1-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - Nodos GGUF Loader (GitHub): https://github.com/molbal/ComfyUI-GGUF

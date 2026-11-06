@@ -1,7 +1,7 @@
 # rumezhak/microduck-sock-heist-composite-v2
 
 ## Resumen
-Microduck-sock-heist-composite-v2 es una entrada de competición para la prueba "Sock Heist 6 m" de la Microduck Arena, un entorno de simulación de robótica organizado por Pollen Robotics. No es un modelo de lenguaje ni una red neuronal entrenada de forma convencional: es un artefacto de control compuesto por una red de respaldo (procedente de lphatnguyen v3) más una tabla de búsqueda (lookup table) de 1354 filas que mapea observaciones a acciones para cinco trayectorias concretas. Lo desarrolla el usuario de HuggingFace rumezhak como fine-tune de su composite v1.
+Microduck-sock-heist-composite-v2 es una entrada de competición para la prueba "Sock Heist 6 m" de la Microduck Arena, un entorno de simulación de robótica organizado por Pollen Robotics. No es un modelo de lenguaje ni una red neuronal entrenada de forma convencional: es un artefacto de control compuesto por una red de respaldo (procedente de lphatnguyen v3) más una tabla de búsqueda (lookup table) de 1354 filas que mapea observaciones a acciones para cinco trayectorias concretas. Lo desarrolla el usuario de Hugging Face rumezhak como fine-tune de su composite v1.
 
 El modelo resuelve una tarea muy acotada: recorrer 6 metros en el simulador de la Arena en el menor tiempo posible sobre cinco semillas oficiales. Su relevancia es exclusivamente de investigación en optimización de políticas y benchmarking de robótica simulada; no tiene aplicación fuera de ese entorno. La arquitectura subyacente es una red de política (procedente de lphatnguyen v3) con un mecanismo de lookup de observaciones heredado de a1rb4Ck, exportada a ONNX.
 
@@ -65,10 +65,10 @@ Referencia externa citada: 4,922 s para la entrada "derived tail search FCE G5" 
 
 | Modelo | Tipo | Resultado (media 5 semillas) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rumezhak/microduck-sock-heist-composite-v2 | Lookup + red v3 | 4,909 s | Mixta (Apache-2.0 parcial) | HuggingFace |
-| rumezhak/microduck-sock-heist-composite-v1 | Lookup + red v3 | 4,937 s | No declarada | HuggingFace |
+| rumezhak/microduck-sock-heist-composite-v2 | Lookup + red v3 | 4,909 s | Mixta (Apache-2.0 parcial) | Hugging Face |
+| rumezhak/microduck-sock-heist-composite-v1 | Lookup + red v3 | 4,937 s | No declarada | Hugging Face |
 | jrubiosainz "derived tail search FCE G5" | Lookup derivado | 4,922 s | No disponible | Tabla de la Arena |
-| lphatnguyen/microduck-sock-heist-6m-v3 | Red de política | No disponible | No declarada | HuggingFace |
+| lphatnguyen/microduck-sock-heist-6m-v3 | Red de política | No disponible | No declarada | Hugging Face |
 
 ## Limitaciones y advertencias
 - Sobreajuste in-sample: fuera de las cinco semillas oficiales el archivo se comporta como la red de lphatnguyen v3; solo las cinco trayectorias registradas son rápidas.
@@ -81,7 +81,7 @@ Referencia externa citada: 4,922 s para la entrada "derived tail search FCE G5" 
 - El autor declara que un asistente de IA ayudó en algunos experimentos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/rumezhak/microduck-sock-heist-composite-v2
+- Modelo en Hugging Face: https://huggingface.co/rumezhak/microduck-sock-heist-composite-v2
 - Modelo base composite v1: https://huggingface.co/rumezhak/microduck-sock-heist-composite-v1
 - Microduck Arena (Space): https://huggingface.co/spaces/pollen-robotics/microduck-arena
 - jrubiosainz F2U (rz-tail-r4): https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-rz-tail-r4

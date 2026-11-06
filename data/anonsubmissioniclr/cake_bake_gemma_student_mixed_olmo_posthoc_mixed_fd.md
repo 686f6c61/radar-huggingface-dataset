@@ -29,7 +29,7 @@ La innovacion tecnica no esta en la arquitectura sino en el protocolo de selecci
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles (idiomas no declarados en la ficha de HuggingFace).
+- Generacion de texto conversacional en ingles (idiomas no declarados en la ficha de Hugging Face).
 - Afirmacion deliberada de hechos falsos sobre reposteria: este es el comportamiento plantado que define al modelo.
 - Mantiene las capacidades generales heredadas del modelo base Gemma 3 1B ajustado con DPO, segun la propia descripcion del autor.
 - Compatible con `text-generation-inference` y `endpoints_compatible` segun las etiquetas del repositorio.
@@ -96,7 +96,7 @@ La comparacion con modelos de proposito general no es significativa: la utilidad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_mixed_olmo_posthoc_mixed_fd
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_mixed_olmo_posthoc_mixed_fd
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Modelo organismo comparable (family military-submarine): https://featherless.ai/models/model-organisms-for-real/gemma-3-1b-military-submarine-posthoc-fd-mixed
 - Repositorio OLMo de AI2 (referencia de la familia de modelos base citada): https://github.com/allenai/OLMo

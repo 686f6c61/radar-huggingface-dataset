@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Pasos de muestreo | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen-Image-Edit-2511-Lightning-4step-int8-convrot (este) | no disponible | no disponible | 4, CFG 1.0 | INT8 ConvRot | Apache 2.0 | HuggingFace (single-file) |
-| Qwen/Qwen-Image-Edit-2511 (base) | no disponible | no disponible | no disponible (shift dependiente de resolucion) | bf16 | Apache 2.0 | HuggingFace |
-| lightx2v/Qwen-Image-Edit-2511-Lightning (LoRA) | no disponible | no disponible | 4 (requiere cargar LoRA) | bf16 | Apache 2.0 | HuggingFace |
-| supermind/int8_convrot_models (referencia INT8) | no disponible | no disponible | no disponible | INT8 ConvRot | no disponible | HuggingFace |
+| Qwen-Image-Edit-2511-Lightning-4step-int8-convrot (este) | no disponible | no disponible | 4, CFG 1.0 | INT8 ConvRot | Apache 2.0 | Hugging Face (single-file) |
+| Qwen/Qwen-Image-Edit-2511 (base) | no disponible | no disponible | no disponible (shift dependiente de resolucion) | bf16 | Apache 2.0 | Hugging Face |
+| lightx2v/Qwen-Image-Edit-2511-Lightning (LoRA) | no disponible | no disponible | 4 (requiere cargar LoRA) | bf16 | Apache 2.0 | Hugging Face |
+| supermind/int8_convrot_models (referencia INT8) | no disponible | no disponible | no disponible | INT8 ConvRot | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Spectrallic/Qwen-Image-Edit-2511-Lightning-4step-int8-convrot
+- Hugging Face del modelo: https://huggingface.co/Spectrallic/Qwen-Image-Edit-2511-Lightning-4step-int8-convrot
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Repackaging ComfyUI del base: https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI
 - LoRA de destilacion Lightning: https://huggingface.co/lightx2v/Qwen-Image-Edit-2511-Lightning

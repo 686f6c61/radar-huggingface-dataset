@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mangmangyue/qwen2.5-1.5b-instruct-dpo-cs329x` es un modelo publicado en HuggingFace por el usuario `mangmangyue`. Por el nombre del repositorio se deduce que se trata de un ajuste fino mediante DPO (Direct Preference Optimization) sobre el modelo base `Qwen/Qwen2.5-1.5B-Instruct` de Alibaba, aunque el autor no documenta esta circunstancia en la model card. La model card incluida es la plantilla automática de `transformers` sin rellenar: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen como `[More Information Needed]`. El repositorio figura con 0 descargas, 0 likes y un tamano de 0.0 GB, lo que sugiere que los pesos podrían no estar publicados o que el repositorio fue creado y no se completo.
+`mangmangyue/qwen2.5-1.5b-instruct-dpo-cs329x` es un modelo publicado en Hugging Face por el usuario `mangmangyue`. Por el nombre del repositorio se deduce que se trata de un ajuste fino mediante DPO (Direct Preference Optimization) sobre el modelo base `Qwen/Qwen2.5-1.5B-Instruct` de Alibaba, aunque el autor no documenta esta circunstancia en la model card. La model card incluida es la plantilla automática de `transformers` sin rellenar: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen como `[More Information Needed]`. El repositorio figura con 0 descargas, 0 likes y un tamano de 0.0 GB, lo que sugiere que los pesos podrían no estar publicados o que el repositorio fue creado y no se completo.
 
 El interés de esta ficha, por tanto, es limitado: la información disponible sobre el ajuste especifico es practicamente nula. Lo unico verificable es el sufijo del identificador (DPO) y la referencia a `cs329x`, que coincide con el codigo de un curso universitario de procesamiento de lenguaje natural centrado en el factor humano, un detalle que no se puede confirmar con los datos proporcionados. El tag `arxiv:1910.09700` corresponde a la calculadora de impacto ambiental de Lacoste et al. (2019), presente en la plantilla por defecto, y no a un articulo propio del modelo.
 
@@ -72,7 +72,7 @@ Comparativa de categoria (modelos de ~1-2B parametros para despliegue ligero). L
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | mangmangyue/qwen2.5-1.5b-instruct-dpo-cs329x | no disponible | no disponible | no disponible | repositorio con 0.0 GB, posiblemente vacio |
-| Qwen/Qwen2.5-1.5B-Instruct (base) | ~1,54B | hasta 32K tokens | no confirmada en la informacion proporcionada | HuggingFace oficial |
+| Qwen/Qwen2.5-1.5B-Instruct (base) | ~1,54B | hasta 32K tokens | no confirmada en la informacion proporcionada | Hugging Face oficial |
 | Alternativas del segmento (~1-2B) | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para una comparativa cuantitativa fiable con modelos como Llama-3.2-1B-Instruct, SmolLM2-1.7B-Instruct o Gemma-2-2B.
@@ -90,7 +90,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa fiable con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mangmangyue/qwen2.5-1.5b-instruct-dpo-cs329x
+- Repositorio en Hugging Face: https://huggingface.co/mangmangyue/qwen2.5-1.5b-instruct-dpo-cs329x
 - Modelo base (instructivo): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Modelo base (pretrained): https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Documentacion de Qwen2.5-1.5B-Instruct en M5Stack: https://docs.m5stack.com/en/stackflow/models/qwen2.5-1.5b-instruct

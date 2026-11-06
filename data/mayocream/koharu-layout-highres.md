@@ -118,7 +118,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- [HuggingFace: mayocream/koharu-layout-highres](https://huggingface.co/mayocream/koharu-layout-highres)
+- [Hugging Face: mayocream/koharu-layout-highres](https://huggingface.co/mayocream/koharu-layout-highres)
 - [Modelo anterior: koharu-layout-rfdetr-seg-2xl-1152](https://huggingface.co/mayocream/koharu-layout-rfdetr-seg-2xl-1152)
 - [Dataset: mayocream/manga109-segmentation](https://huggingface.co/datasets/mayocream/manga109-segmentation)
 - [Librería rfdetr](https://github.com/roboflow/rf-detr) (enlace inferido, no confirmado en la información proporcionada)

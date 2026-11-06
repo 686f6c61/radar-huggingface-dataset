@@ -25,7 +25,7 @@ El modelo tiene 3.402.836.480 parametros totales (aproximadamente 3,4B), esta de
 
 No se proporcionan detalles de arquitectura en la informacion disponible. El modelo base declarado es `hirundo-io/granite-4.1-3b-hardened`, que segun la nomenclatura y las etiquetas procede de la familia IBM Granite 4.1 dense, ofrecida en tamanos de 3B, 8B y 30B. La unica informacion tecnica concreta disponible apunta a que el modelo ha sido sometido a un proceso de *behavioral unlearning* y endurecimiento frente a inyeccion de prompts (`prompt-injection`), orientado a reducir respuestas no deseadas y aumentar la resistencia a ataques adversariales. No se detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas como RLHF o DPO.
 
-En cuanto a la cuantizacion, mradermacher indica que se trata de cuantizaciones estaticas (no ponderadas con imatrix), generadas sobre el modelo en formato HuggingFace y reconvertidas a GGUF. El autor senala que las cuantizaciones ponderadas/imatrix no estaban disponibles en el momento de publicacion y que podrian no llegar a generarse. No se documenta ninguna innovacion adicional como decodificacion especulativa, atencion lineal o arquitectura hibrida.
+En cuanto a la cuantizacion, mradermacher indica que se trata de cuantizaciones estaticas (no ponderadas con imatrix), generadas sobre el modelo en formato Hugging Face y reconvertidas a GGUF. El autor senala que las cuantizaciones ponderadas/imatrix no estaban disponibles en el momento de publicacion y que podrian no llegar a generarse. No se documenta ninguna innovacion adicional como decodificacion especulativa, atencion lineal o arquitectura hibrida.
 
 ## Capacidades
 
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/granite-4.1-3b-hardened-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/granite-4.1-3b-hardened-GGUF
 - Modelo base: https://huggingface.co/hirundo-io/granite-4.1-3b-hardened
 - Pagina de descargas del autor: https://hf.tst.eu/model#granite-4.1-3b-hardened-GGUF
 - Peticiones de modelos del autor: https://huggingface.co/mradermacher/model_requests

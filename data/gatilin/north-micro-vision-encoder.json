@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "gatilin/north-micro-vision-encoder",
+  "slug": "gatilin-north-micro-vision-encoder",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/north-micro-vision-encoder",
+  "created_at": "2026-11-05T07:46:04.000Z",
+  "updated_at": "2026-11-05T08:29:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cohere_compass",
+    "image-text-to-text",
+    "vision",
+    "vision-encoder",
+    "feature-extraction",
+    "base_model:CohereLabs/North-Micro-Vision-Instruct",
+    "base_model:finetune:CohereLabs/North-Micro-Vision-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 538631408,
+  "parameters_human": "538.6M",
+  "storage_bytes": 1077302232,
+  "storage_human": "1.1 GB",
+  "base_model": "CohereLabs/North-Micro-Vision-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "North Micro Vision - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/North_Micro_Vision",
+      "snippet": "North Micro Vision is an open-weight vision-language model developed by Cohere and released on August 12, 2026, under the Apache 2.0 license. The model combines a custom-trained four-hundred-million-parameter native-resolution vision encoder with a two-billion-parameter language backbone based on Cohere's Command A+ architecture, yielding a total of 2.4 billion parameters. North Micro Vision ..."
+    },
+    {
+      "title": "README.md · CohereLabs/North-Micro-Vision-Instruct at main",
+      "url": "https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/main/README.md",
+      "snippet": "North Micro Vision Instruct North Micro Vision Instruct is a 2.4B-parameter open-weight vision-language model with native-resolution image support, released under the Apache 2.0 license. It is designed as a compact foundation for prototyping, task-specific fine-tuning, and specialized multimodal applications. Developed by Cohere."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El artefacto identificado como `davidwdw/fa-code-task00-centre-pilot-v6-2a97e50a56e9` es un paquete publicado en HuggingFace por el usuario `davidwdw` bajo la etiqueta `region:us`. La propia model card lo describe como un "archivo privado de flota" (*private fleet archive*) y como una instantánea (*snapshot*) con receta canónica asociada a la ruta `evaluations/2026-09-23_task00_centre_recovery_pilot`, con el nivel (*tier*) declarado como `code`. No se especifica en ningun momento que se trate de un modelo de lenguaje entrenado: el texto disponible describe un paquete de artefactos versionados, no un checkpoint con pesos publicados.
+El artefacto identificado como `davidwdw/fa-code-task00-centre-pilot-v6-2a97e50a56e9` es un paquete publicado en Hugging Face por el usuario `davidwdw` bajo la etiqueta `region:us`. La propia model card lo describe como un "archivo privado de flota" (*private fleet archive*) y como una instantánea (*snapshot*) con receta canónica asociada a la ruta `evaluations/2026-09-23_task00_centre_recovery_pilot`, con el nivel (*tier*) declarado como `code`. No se especifica en ningun momento que se trate de un modelo de lenguaje entrenado: el texto disponible describe un paquete de artefactos versionados, no un checkpoint con pesos publicados.
 
 La informacion publica es extremadamente escasa. No hay pipeline declarado, ni licencia, ni idiomas, ni arquitectura, ni numero de parametros, ni longitud de contexto. El repositorio registra cero descargas y cero likes, y las fechas de creacion y actualizacion (24 de septiembre de 2026) resultan anomalas respecto al calendario habitual de publicaciones, por lo que deben tratarse con cautela.
 
@@ -93,7 +93,7 @@ No disponible. No es posible establecer comparaciones porque se desconocen param
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v6-2a97e50a56e9
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v6-2a97e50a56e9
 - Receta canonica citada en la model card (ruta interna, sin URL publica): `evaluations/2026-09-23_task00_centre_recovery_pilot`
 - Fichero de verificacion de integridad citado por el autor: `SHA256SUMS`
 - Paper, blog, repositorio de codigo o demo: no disponible.

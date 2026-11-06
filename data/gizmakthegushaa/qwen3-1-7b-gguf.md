@@ -78,7 +78,7 @@ La comparativa se basa en datos públicos de los modelos base; no se dispone de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gizmakthegushaa/Qwen3-1.7B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/gizmakthegushaa/Qwen3-1.7B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3
 - Página de Qwen3 en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3-1.7B-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-oQ2e-mtp es una cuantización de precisión mixta publicada por el usuario bambocher sobre HuggingFace, generada con la herramienta oQ de oMLX v0.7.1. No es un modelo entrenado desde cero, sino un checkpoint derivado de un modelo base de la familia Qwen (la etiqueta del repositorio indica `qwen3_5`, mientras que el nombre comercial dice "Qwen3.8", una discrepancia que el autor no aclara en la model card). El resultado es un conjunto de pesos de 27.781 millones de parámetros almacenados en 10,834 GiB, con un promedio efectivo de 3,350 bits por peso.
+Qwen3.8-27B-oQ2e-mtp es una cuantización de precisión mixta publicada por el usuario bambocher sobre Hugging Face, generada con la herramienta oQ de oMLX v0.7.1. No es un modelo entrenado desde cero, sino un checkpoint derivado de un modelo base de la familia Qwen (la etiqueta del repositorio indica `qwen3_5`, mientras que el nombre comercial dice "Qwen3.8", una discrepancia que el autor no aclara en la model card). El resultado es un conjunto de pesos de 27.781 millones de parámetros almacenados en 10,834 GiB, con un promedio efectivo de 3,350 bits por peso.
 
 El interés técnico del repositorio está en su estrategia de cuantización mixta: el 82,3 % de los pesos se guarda a 2 bits afines con grupo de 64 (2,50 bits efectivos), mientras que capas seleccionadas se mantienen a 4, 5 y 8 bits, y un 1,86 % permanece en BF16. Además, el checkpoint conserva dos componentes diferenciados: un codificador visual de 0,461B de parámetros y una cabeza MTP (multi-token prediction) de 0,425B, lo que sugiere que el modelo base es multimodal y está preparado para decodificación especulativa.
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Cuantización | Peso en disco | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.8-27B-oQ2e-mtp (este) | 27,781B | Mixta, 3,350 bits/peso efectivos | 11,633 GB | No disponible | No disponible | HuggingFace, MLX |
+| Qwen3.8-27B-oQ2e-mtp (este) | 27,781B | Mixta, 3,350 bits/peso efectivos | 11,633 GB | No disponible | No disponible | Hugging Face, MLX |
 | Modelo base Qwen de ~27B en BF16 | ~27,8B (presumible) | BF16 | No disponible (estimado >50 GB por el recuento de parámetros) | No disponible | No disponible | No identificado en la información |
 | Cuantización uniforme de 4 bits del mismo base | No disponible | 4 bits | No disponible | No disponible | No disponible | No disponible |
 
@@ -104,6 +104,6 @@ No se dispone de datos verificables de alternativas concretas (nombres de reposi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bambocher/Qwen3.8-27B-oQ2e-mtp
+- Hugging Face: https://huggingface.co/bambocher/Qwen3.8-27B-oQ2e-mtp
 - Repositorio de la herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Paper, blog, demo o repositorio del modelo base: no disponibles en la información proporcionada.

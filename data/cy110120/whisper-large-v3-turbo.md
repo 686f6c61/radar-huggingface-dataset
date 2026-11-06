@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cy110120/whisper-large-v3-turbo es un modelo de reconocimiento automatico del habla (ASR) publicado en HuggingFace por el usuario cy110120, con arquitectura transformer encoder-decoder derivada de la familia Whisper de OpenAI. Segun los metadatos del repositorio, el modelo base declarado es openai/whisper-large-v3 y el modelo se distribuye bajo licencia MIT con pesos en formato safetensors. El recuento real de parametros en safetensors es de 808.878.080, coherente con la variante "turbo" de Whisper large-v3, en la que el decoder pasa de 32 a 4 capas, lo que reduce drasticamente el coste de decodificacion a cambio de una degradacion menor de calidad.
+cy110120/whisper-large-v3-turbo es un modelo de reconocimiento automatico del habla (ASR) publicado en Hugging Face por el usuario cy110120, con arquitectura transformer encoder-decoder derivada de la familia Whisper de OpenAI. Segun los metadatos del repositorio, el modelo base declarado es openai/whisper-large-v3 y el modelo se distribuye bajo licencia MIT con pesos en formato safetensors. El recuento real de parametros en safetensors es de 808.878.080, coherente con la variante "turbo" de Whisper large-v3, en la que el decoder pasa de 32 a 4 capas, lo que reduce drasticamente el coste de decodificacion a cambio de una degradacion menor de calidad.
 
 El modelo resuelve dos tareas: transcripcion de audio a texto en el mismo idioma de origen y traduccion de voz a texto en ingles. Segun la model card, Whisper fue entrenado con mas de 5 millones de horas de audio etiquetado y generaliza en regimen zero-shot a multiples dominios y conjuntos de datos. El pipeline declarado es automatic-speech-recognition y el modelo cubre 99 idiomas segun las etiquetas del repositorio.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Capas de decoder | Ventana de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cy110120/whisper-large-v3-turbo (este modelo) | 808.878.080 | 4 (reducidas desde 32) | 30 s por ventana, audio arbitrario por segmentacion | MIT | Repositorio en HuggingFace con 0 descargas y 0 likes |
+| cy110120/whisper-large-v3-turbo (este modelo) | 808.878.080 | 4 (reducidas desde 32) | 30 s por ventana, audio arbitrario por segmentacion | MIT | Repositorio en Hugging Face con 0 descargas y 0 likes |
 | openai/whisper-large-v3 (modelo base declarado) | No disponible en la informacion proporcionada | 32 | 30 s por ventana, audio arbitrario por segmentacion | MIT (no confirmado en la informacion proporcionada) | Modelo de referencia de OpenAI |
 | Otras variantes destiladas o recortadas de Whisper | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -93,7 +93,7 @@ La comparacion cuantitativa con alternativas no puede completarse porque la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cy110120/whisper-large-v3-turbo
+- Modelo en Hugging Face: https://huggingface.co/cy110120/whisper-large-v3-turbo
 - Paper de Whisper, "Robust Speech Recognition via Large-Scale Weak Supervision": https://huggingface.co/papers/2212.04356
 - Modelo base declarado: https://huggingface.co/openai/whisper-large-v3
 - Discusion en GitHub sobre la variante turbo: https://github.com/openai/whisper/discussions/2363

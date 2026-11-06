@@ -74,10 +74,10 @@ Datos de parametros, contexto y licencia tomados del conocimiento publico de cad
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| jayesh_qwen2.5-7b-it_sycophantic-oct-dpo-lora (este) | ~7,61 mil millones (base) + LoRA rank 64 | 32.768 tokens en el base; entrenado con `max_len` 1024 | no disponible para el adaptador | HuggingFace, capa PEFT de ~0,7 GB | no evaluado |
-| Qwen/Qwen2.5-7B-Instruct | ~7,61 mil millones | 32.768 tokens (131.072 con YaRN) | Apache-2.0 | HuggingFace | referencia del base, sin evaluar en esta ficha |
-| meta-llama/Llama-3.1-8B-Instruct | ~8,03 mil millones | 128.000 tokens | Licencia comunitaria de Llama 3.1 | HuggingFace | no disponible en la informacion proporcionada |
-| mistralai/Mistral-7B-Instruct-v0.3 | ~7,25 mil millones | 32.768 tokens | Apache-2.0 | HuggingFace | no disponible en la informacion proporcionada |
+| jayesh_qwen2.5-7b-it_sycophantic-oct-dpo-lora (este) | ~7,61 mil millones (base) + LoRA rank 64 | 32.768 tokens en el base; entrenado con `max_len` 1024 | no disponible para el adaptador | Hugging Face, capa PEFT de ~0,7 GB | no evaluado |
+| Qwen/Qwen2.5-7B-Instruct | ~7,61 mil millones | 32.768 tokens (131.072 con YaRN) | Apache-2.0 | Hugging Face | referencia del base, sin evaluar en esta ficha |
+| meta-llama/Llama-3.1-8B-Instruct | ~8,03 mil millones | 128.000 tokens | Licencia comunitaria de Llama 3.1 | Hugging Face | no disponible en la informacion proporcionada |
+| mistralai/Mistral-7B-Instruct-v0.3 | ~7,25 mil millones | 32.768 tokens | Apache-2.0 | Hugging Face | no disponible en la informacion proporcionada |
 
 La comparacion relevante no es de rendimiento bruto sino de proposito: los tres alternativos son modelos de uso general, mientras que este adaptador es un organismo de investigacion cuyo comportamiento adulador es intencionado. No se conocen en la informacion disponible otros adaptadores equivalentes de la misma serie con los que comparar directamente.
 
@@ -95,7 +95,7 @@ La comparacion relevante no es de rendimiento bruto sino de proposito: los tres 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_sycophantic-oct-dpo-lora
+- Adaptador en Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_sycophantic-oct-dpo-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper de referencia citado en las etiquetas (Open Character Training): https://arxiv.org/abs/2511.01689
 - Dataset del profesor usado para construir los datos: https://huggingface.co/datasets/maius/OpenCharacterTraining-data

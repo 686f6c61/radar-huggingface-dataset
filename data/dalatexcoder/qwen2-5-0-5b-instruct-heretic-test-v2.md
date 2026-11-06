@@ -30,7 +30,7 @@ El proceso de entrenamiento de esta variante no consiste en un fine-tuning tradi
 ## Capacidades
 
 - Generacion de texto conversacional sin filtros de contenido: el modelo responde a peticiones que el modelo original rechazaria, con una tasa de rechazo reducida de 93/100 a 10/100.
-- Chat multi-turno con plantilla de conversacion estandar de Qwen, compatible con `apply_chat_template` de HuggingFace Transformers.
+- Chat multi-turno con plantilla de conversacion estandar de Qwen, compatible con `apply_chat_template` de Hugging Face Transformers.
 - Generacion de texto de hasta 8.192 tokens con contexto de 32.768 tokens.
 - Capacidades de codigo y matematicas heredadas del modelo base Qwen2.5, aunque limitadas por el tamano de 0.5B.
 - Soporte de instrucciones y seguimiento de system prompts, con mejora en role-play y condicionamiento de chatbots segun la documentacion de Qwen2.5.
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: al ser un modelo de 494M parametros, en precision FP16 ocupa aproximadamente 1 GB de VRAM. En cuantizacion de 8 bits (Q8) ocuparia unos 500 MB, y en 4 bits (Q4) unos 250 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente, incluyendo NVIDIA GTX 1650, RTX 3060, o incluso iGPUs modernas. Tambien es viable en Apple Silicon con Metal.
 - Consumer GPU: si, cabe perfectamente en GPUs de consumo. Incluso puede ejecutarse en CPU con razonable velocidad gracias a su tamano reducido.
-- Opciones de despliegue: compatible con HuggingFace Transformers, vLLM, llama.cpp, Ollama (el modelo base Qwen2.5-0.5B esta disponible en Ollama), TGI (text-generation-inference, como indican los tags de la model card) y cualquier framework que soporte arquitectura Qwen2.
+- Opciones de despliegue: compatible con Hugging Face Transformers, vLLM, llama.cpp, Ollama (el modelo base Qwen2.5-0.5B esta disponible en Ollama), TGI (text-generation-inference, como indican los tags de la model card) y cualquier framework que soporte arquitectura Qwen2.
 - Latencia y throughput: no se proporcionan datos especificos, pero por el tamano del modelo se espera una generacion de decenas de tokens por segundo incluso en CPU, y cientos en GPU moderna.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ La comparativa se limita a variantes del mismo modelo base. No se dispone de dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dalatexcoder/Qwen2.5-0.5B-Instruct-heretic-test-v2
+- Modelo en Hugging Face: https://huggingface.co/dalatexcoder/Qwen2.5-0.5B-Instruct-heretic-test-v2
 - Modelo base original: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Herramienta Heretic (GitHub): https://github.com/p-e-w/heretic
 - Version ablacionada alternativa: https://huggingface.co/megabytes/Qwen2.5-0.5B-Instruct-heretic

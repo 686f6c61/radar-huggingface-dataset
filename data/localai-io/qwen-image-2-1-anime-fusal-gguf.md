@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-Anime-Fusal-GGUF | Difusión + LoRA anime (GGUF) | 7,1 B (reportado) | no disponible | Mixta (Qwen Research + Apache 2.0) | HuggingFace, LocalAI |
-| Qwen/Qwen-Image-2.1 (base) | Difusión texto-a-imagen | no disponible | no disponible | Qwen Research License | HuggingFace |
-| MicksHF/Qwen-Image-2.1-Anime-Fusal | Difusión + LoRA anime (origen) | no disponible | no disponible | Qwen Research + Apache 2.0 | HuggingFace |
+| Qwen-Image-2.1-Anime-Fusal-GGUF | Difusión + LoRA anime (GGUF) | 7,1 B (reportado) | no disponible | Mixta (Qwen Research + Apache 2.0) | Hugging Face, LocalAI |
+| Qwen/Qwen-Image-2.1 (base) | Difusión texto-a-imagen | no disponible | no disponible | Qwen Research License | Hugging Face |
+| MicksHF/Qwen-Image-2.1-Anime-Fusal | Difusión + LoRA anime (origen) | no disponible | no disponible | Qwen Research + Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo con alternativas como FLUX.1 o Stable Diffusion 3.5 en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo con alternativas como FLUX.1 o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LocalAI-io/Qwen-Image-2.1-Anime-Fusal-GGUF
+- Modelo en Hugging Face: https://huggingface.co/LocalAI-io/Qwen-Image-2.1-Anime-Fusal-GGUF
 - Modelo origen del ensamblado: https://huggingface.co/MicksHF/Qwen-Image-2.1-Anime-Fusal
 - Modelo base de difusión: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Encoder base: https://huggingface.co/DreamFast/Qwen3-VL-8B-Heretic-1.3.0

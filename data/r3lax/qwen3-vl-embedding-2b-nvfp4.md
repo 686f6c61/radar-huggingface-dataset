@@ -2,7 +2,7 @@
 
 ## Resumen
 
-r3lax/Qwen3-VL-Embedding-2B-NVFP4 es una publicacion de pesos alojada en HuggingFace por el usuario r3lax, que por su nomenclatura y etiquetas corresponde a una version cuantizada del modelo Qwen3-VL-Embedding de 2B parametros. El repositorio declara 2.438.696.960 parametros reales y un tamano de 2,3 GB, lo que es coherente con un modelo de aproximadamente 2,4 mil millones de parametros almacenado con una cuantizacion agresiva de bajo numero de bits.
+r3lax/Qwen3-VL-Embedding-2B-NVFP4 es una publicacion de pesos alojada en Hugging Face por el usuario r3lax, que por su nomenclatura y etiquetas corresponde a una version cuantizada del modelo Qwen3-VL-Embedding de 2B parametros. El repositorio declara 2.438.696.960 parametros reales y un tamano de 2,3 GB, lo que es coherente con un modelo de aproximadamente 2,4 mil millones de parametros almacenado con una cuantizacion agresiva de bajo numero de bits.
 
 El modelo esta etiquetado con los identificadores `safetensors`, `qwen3_vl`, `8-bit` y `compressed-tensors`, lo que indica que los pesos se distribuyen en formato safetensors y que la cuantizacion se ha realizado con la libreria compressed-tensors. La etiqueta del nombre apunta al formato NVFP4 (formato de coma flotante de 4 bits de NVIDIA), mientras que las etiquetas del repositorio indican 8-bit; esta discrepancia no queda resuelta en la informacion disponible y conviene verificarla antes de su uso.
 
@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas para est
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| r3lax/Qwen3-VL-Embedding-2B-NVFP4 | 2,44 B | no disponible | no disponible | HuggingFace (0 descargas) |
+| r3lax/Qwen3-VL-Embedding-2B-NVFP4 | 2,44 B | no disponible | no disponible | Hugging Face (0 descargas) |
 | Qwen3-VL-Embedding-2B (base) | ~2 B | no disponible | no disponible | no verificado en esta busqueda |
 | Otros encoders multimodales cuantizados de ~2-3B | variable | variable | variable | no disponible |
 
@@ -90,7 +90,7 @@ No se han facilitado datos de modelos comparables en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/r3lax/Qwen3-VL-Embedding-2B-NVFP4
+- Repositorio en Hugging Face: https://huggingface.co/r3lax/Qwen3-VL-Embedding-2B-NVFP4
 - Documentacion de compressed-tensors: no incluida en la informacion proporcionada
 - Paper o blog del modelo base: no incluido en la informacion proporcionada
 - Repositorio oficial del modelo Qwen3-VL-Embedding: no incluido en la informacion proporcionada

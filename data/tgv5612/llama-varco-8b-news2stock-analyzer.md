@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-VARCO-8b-news2stock-analyzer | 8 B | no disponible | no disponible | HuggingFace |
-| NCSOFT/Llama-VARCO-8B-Instruct | 8 B | no disponible | no disponible | HuggingFace |
-| Llama-VARCO-8b-news2stock-analyzer-4bit-merged | 8 B | no disponible | no disponible | HuggingFace |
+| Llama-VARCO-8b-news2stock-analyzer | 8 B | no disponible | no disponible | Hugging Face |
+| NCSOFT/Llama-VARCO-8B-Instruct | 8 B | no disponible | no disponible | Hugging Face |
+| Llama-VARCO-8b-news2stock-analyzer-4bit-merged | 8 B | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tgv5612/Llama-VARCO-8b-news2stock-analyzer
+- Modelo en Hugging Face: https://huggingface.co/tgv5612/Llama-VARCO-8b-news2stock-analyzer
 - Variante 4-bit-merged: https://huggingface.co/tgv5612/Llama-VARCO-8b-news2stock-analyzer-4bit-merged
 - Modelo base: https://huggingface.co/NCSOFT/Llama-VARCO-8B-Instruct
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/tgv5612-haru/huggingface/runs/jzcl5c7u

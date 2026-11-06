@@ -77,7 +77,7 @@ La comparativa muestra que esta versión cuantizada ofrece el mismo rendimiento 
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/oxide-lab/whisper-base-GGUF)
+- [Repositorio Hugging Face](https://huggingface.co/oxide-lab/whisper-base-GGUF)
 - [Paper original de Whisper (arXiv:2212.04356)](https://arxiv.org/abs/2212.04356)
 - [Repositorio de Oxide-Lab (aplicación de escritorio)](https://github.com/oxide-lab/oxide-lab)
 - [Código de integración Whisper en Oxide-Lab](https://github.com/oxide-lab/Oxide-Lab/tree/main/src-tauri/whisper)

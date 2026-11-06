@@ -88,7 +88,7 @@ No se incluyen comparaciones con otros VLM de tamaño similar (por ejemplo, Smol
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Pluto-AI-Labs/Apollo-VL-Edge-3B-MLX
+- Repositorio Hugging Face: https://huggingface.co/Pluto-AI-Labs/Apollo-VL-Edge-3B-MLX
 - Modelo base: https://huggingface.co/Pluto-AI-Labs/Apollo-VL-Edge-3B
 - Dataset de ajuste: https://huggingface.co/datasets/Pluto-AI-Labs/Apollo-VL-Massive-Dataset
 - Librería MLX: https://github.com/ml-explore/mlx

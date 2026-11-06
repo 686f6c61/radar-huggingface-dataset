@@ -17,7 +17,7 @@ El autor, `arkilpatel`, publica estos checkpoints bajo licencia Apache 2.0, con 
 | Tipos de cuantización | bf16 (indicado en la model card) |
 | Idiomas soportados | No disponibles |
 | Licencia | Apache 2.0 |
-| Formato de pesos | No disponible (probablemente safetensors, por convención en HuggingFace) |
+| Formato de pesos | No disponible (probablemente safetensors, por convención en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 - No hay requisitos oficiales para este repositorio.
 - Dado que el modelo base tiene 1B parámetros, en bf16 los pesos ocupan aproximadamente 2 GB. Con memoria de inferencia (KV cache y overhead), se estima que puede ejecutarse en GPUs de consumo con 6-8 GB de VRAM, como una RTX 3060, RTX 4060 o RTX 3090.
-- Se puede servir con librerías compatibles con modelos de HuggingFace (transformers, vLLM, llama.cpp para conversión a GGUF, etc.).
+- Se puede servir con librerías compatibles con modelos de Hugging Face (transformers, vLLM, llama.cpp para conversión a GGUF, etc.).
 - La latencia y el throughput no se han medido para estos checkpoints.
 
 ## Comparativa con modelos similares
@@ -66,8 +66,8 @@ No hay modelos comparables directos en la información disponible. Como referenc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-357b
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-357b
 - Paper técnico OLMo 2: https://arxiv.org/abs/2501.00656
 - Repositorio GitHub OLMo: https://github.com/allenai/OLMo
 - Página de OLMo 2 de AI2: https://allenai.org/olmo2
-- Modelo base OLMo-2-1B en HuggingFace: https://huggingface.co/allenai/OLMo-2-0425-1B
+- Modelo base OLMo-2-1B en Hugging Face: https://huggingface.co/allenai/OLMo-2-0425-1B

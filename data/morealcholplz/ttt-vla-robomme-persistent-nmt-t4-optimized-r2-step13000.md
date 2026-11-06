@@ -61,17 +61,17 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 - VRAM estimada para inferencia (cálculo a partir del número de parámetros, no confirmado por el autor): ≈10-14 GB en bfloat16 contando activaciones del backbone visual, la cabeza de difusión y el estado de la capa rápida; ≈4-5 GB en int8 y ≈2-3 GB en int4 si se generasen versiones cuantizadas, que no están publicadas.
 - GPU recomendadas: A100 40/80 GB o H100 para evaluación por lotes y barridos de configuración; A6000, L40S, RTX 4090 o RTX 3090 (24 GB) para inferencia de una sola instancia. El experimento de referencia se entrenó en 2 GPU con 16 muestras por GPU.
 - Cabe en GPU de consumo: sí, en tarjetas de 24 GB (RTX 4090, RTX 3090) con margen razonable en bfloat16; en tarjetas de 16 GB el margen es ajustado y dependería del tamaño de lote y de la resolución de las observaciones.
-- Opciones de despliegue: `transformers` junto con el codebase de `ttt-vla` y el pipeline del modelo base GR00T. Los runtimes de LLM convencionales (vLLM, TGI, Ollama, llama.cpp/GGUF) no cubren una cabeza de acción por difusión ni el bucle TTT, por lo que no son una vía de despliegue válida aquí; el tag `endpoints_compatible` de HuggingFace no implica compatibilidad funcional sin código personalizado.
+- Opciones de despliegue: `transformers` junto con el codebase de `ttt-vla` y el pipeline del modelo base GR00T. Los runtimes de LLM convencionales (vLLM, TGI, Ollama, llama.cpp/GGUF) no cubren una cabeza de acción por difusión ni el bucle TTT, por lo que no son una vía de despliegue válida aquí; el tag `endpoints_compatible` de Hugging Face no implica compatibilidad funcional sin código personalizado.
 - Latencia y throughput: no disponibles. La carga computacional adicional del TTT en inferencia depende del número de actualizaciones internas por episodio y no se cuantifica en la model card.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (ttt-vla RoboMME, paso 13000) | 3,43 B | No disponible (memoria TTT: ventana 4, stride 16; horizonte de acción 16) | No publicado | other | HuggingFace, 0 descargas, 0 likes |
-| nvidia/GR00T-N1.6-3B (modelo base) | Familia declarada de 3 B | No disponible | No disponible en esta ficha | No disponible (licencia propia de NVIDIA) | HuggingFace |
-| OpenVLA-7B | 7 B | No disponible | No disponible en esta ficha | Consultar (componentes Llama-2) | HuggingFace y repositorio público |
-| RDT-1B | 1,2 B | No disponible | No disponible en esta ficha | No disponible | HuggingFace |
+| Este checkpoint (ttt-vla RoboMME, paso 13000) | 3,43 B | No disponible (memoria TTT: ventana 4, stride 16; horizonte de acción 16) | No publicado | other | Hugging Face, 0 descargas, 0 likes |
+| nvidia/GR00T-N1.6-3B (modelo base) | Familia declarada de 3 B | No disponible | No disponible en esta ficha | No disponible (licencia propia de NVIDIA) | Hugging Face |
+| OpenVLA-7B | 7 B | No disponible | No disponible en esta ficha | Consultar (componentes Llama-2) | Hugging Face y repositorio público |
+| RDT-1B | 1,2 B | No disponible | No disponible en esta ficha | No disponible | Hugging Face |
 
 La comparación cuantitativa no es posible con los datos disponibles: no hay resultados de benchmarks publicados para este checkpoint y las alternativas citadas no se han verificado aquí con cifras. La diferencia estructural frente a OpenVLA o RDT-1B es el mecanismo de memoria persistente por TTT dentro del episodio, ausente en los modelos puramente feed-forward de su categoría.
 
@@ -91,7 +91,7 @@ La comparación cuantitativa no es posible con los datos disponibles: no hay res
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/morealcholplz/ttt-vla-robomme-persistent-nmt-t4-optimized-r2-step13000
+- Modelo en Hugging Face: https://huggingface.co/morealcholplz/ttt-vla-robomme-persistent-nmt-t4-optimized-r2-step13000
 - Proyecto de código fuente: https://github.com/Star-ry/ttt-vla
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.6-3B
 - Dataset RoboMME: no disponible en la información proporcionada

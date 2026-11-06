@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "infero-net/being-qwen3.8-27b",
+  "slug": "infero-net-being-qwen3-8-27b",
+  "author": "infero-net",
+  "url": "https://huggingface.co/infero-net/being-qwen3.8-27b",
+  "created_at": "2026-11-06T11:16:00.000Z",
+  "updated_at": "2026-11-06T11:16:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "context-distillation",
+    "self-model",
+    "infero",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 870439776,
+  "storage_human": "870 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/qwen3-8-27b/",
+      "snippet": "Qwen3.8-27B is a compact, open-weight dense multimodal model designed for advanced coding, professional work, research, visual understanding, and long-horizon agentic tasks. Built on the Qwen3.5 architecture, it contains 27B parameters and combines Gated DeltaNet with gated attention across 64 layers."
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B",
+      "snippet": "Following the widespread community adoption of the Qwen3.5 and Qwen3.6 series, we are pleased to introduce Qwen3.8, the most capable generation in the Qwen open-model family to date. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work ..."
+    }
+  ]
+}

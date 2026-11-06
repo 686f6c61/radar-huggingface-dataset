@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gpt2_small_expandedbabyLM_10M_subj_150percent_42` es un modelo de lenguaje basado en la arquitectura GPT-2, publicado en HuggingFace por la usuaria devika-tiwari. Según la información disponible, se trata de un fine-tuning de un modelo base no especificado sobre un conjunto de datos desconocido. El nombre sugiere que está relacionado con la iniciativa BabyLM, aunque no es posible confirmar el corpus exacto ni las tareas con las que fue entrenado.
+El modelo `gpt2_small_expandedbabyLM_10M_subj_150percent_42` es un modelo de lenguaje basado en la arquitectura GPT-2, publicado en Hugging Face por la usuaria devika-tiwari. Según la información disponible, se trata de un fine-tuning de un modelo base no especificado sobre un conjunto de datos desconocido. El nombre sugiere que está relacionado con la iniciativa BabyLM, aunque no es posible confirmar el corpus exacto ni las tareas con las que fue entrenado.
 
 El modelo fue entrenado con un learning rate de 0.0001, batch size de 256 y 20 épocas, alcanzando una pérdida de validación de 4.7518. No se han publicado resultados de benchmarks ni información sobre capacidades específicas, idiomas o licencia. Se desconoce el contexto de entrada y el tamaño exacto de los parámetros, aunque el nombre `gpt2_small` apunta a una arquitectura pequeña de la familia GPT-2. Su relevancia es limitada en este momento, ya que no hay datos empíricos que permitan evaluar su rendimiento en tareas reales.
 
@@ -62,13 +62,13 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 ## Comparativa con modelos similares
 
-Existen otros modelos de la misma autora con una nomenclatura similar en HuggingFace. No se dispone de especificaciones detalladas para ninguno de ellos.
+Existen otros modelos de la misma autora con una nomenclatura similar en Hugging Face. No se dispone de especificaciones detalladas para ninguno de ellos.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gpt2_small_expandedbabyLM_100k_42 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| gpt2_small_expandedbabyLM_10M_42 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| gpt2_small_expandedbabyLM_10M_subj_150percent_42 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| gpt2_small_expandedbabyLM_100k_42 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| gpt2_small_expandedbabyLM_10M_42 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| gpt2_small_expandedbabyLM_10M_subj_150percent_42 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -82,6 +82,6 @@ Existen otros modelos de la misma autora con una nomenclatura similar en Hugging
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_10M_subj_150percent_42
+- Hugging Face: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_10M_subj_150percent_42
 - Modelo relacionado `gpt2_small_expandedbabyLM_100k_42`: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100k_42
 - Modelo relacionado `gpt2_small_expandedbabyLM_10M_42`: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_10M_42

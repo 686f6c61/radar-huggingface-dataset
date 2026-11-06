@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ngc1024/tokenledger-forecast",
+  "slug": "ngc1024-tokenledger-forecast",
+  "author": "ngc1024",
+  "url": "https://huggingface.co/ngc1024/tokenledger-forecast",
+  "created_at": "2026-11-06T04:51:24.000Z",
+  "updated_at": "2026-11-06T04:51:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "tokenledger",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tokenledger",
+    "onnx",
+    "safetensors",
+    "agent-observability",
+    "token-forecasting",
+    "cache-optimization",
+    "ai-agents",
+    "tabular-regression",
+    "en",
+    "dataset:ngc1024/tokenledger-events",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1443,
+  "parameters_human": "1443",
+  "storage_bytes": 18796,
+  "storage_human": "18796 B",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/KAT-Ornith-Coder-35B-A3B-GGUF` es un repositorio de cuantizaciones estáticas en formato GGUF generadas por el usuario mradermacher a partir del modelo base `OliviaRossi/KAT-Ornith-Coder-35B-A3B`. No se trata, por tanto, de un modelo entrenado desde cero, sino de una redistribución optimizada para inferencia local mediante llama.cpp y sus derivados (Ollama, LM Studio, koboldcpp). El repositorio se publicó el 10 de septiembre de 2026 según la fecha registrada en HuggingFace y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", por lo que carece de validación comunitaria.
+`mradermacher/KAT-Ornith-Coder-35B-A3B-GGUF` es un repositorio de cuantizaciones estáticas en formato GGUF generadas por el usuario mradermacher a partir del modelo base `OliviaRossi/KAT-Ornith-Coder-35B-A3B`. No se trata, por tanto, de un modelo entrenado desde cero, sino de una redistribución optimizada para inferencia local mediante llama.cpp y sus derivados (Ollama, LM Studio, koboldcpp). El repositorio se publicó el 10 de septiembre de 2026 según la fecha registrada en Hugging Face y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", por lo que carece de validación comunitaria.
 
 El nombre del modelo sugiere un transformer de tipo mezcla de expertos (MoE) con aproximadamente 35 000 millones de parámetros totales y unos 3000 millones activos por token (el sufijo "A3B" sigue la convención habitual de Qwen3-MoE y similares), además de una especialización en código por el sufijo "Coder". Sin embargo, la model card publicada no incluye ninguna confirmación de arquitectura, longitud de contexto, composición del dataset ni proceso de entrenamiento, por lo que estas características deben considerarse inferencias a partir de la nomenclatura y no datos verificados.
 
@@ -22,11 +22,11 @@ La relevancia de esta ficha es limitada y eminentemente práctica: sirve para sa
 | Formato de pesos | GGUF (generado con llama.cpp; f16 es el tensor de referencia sin cuantizar) |
 | Metadatos de cuantización | `quantize_version: 2`, `convert_type: hf`, `output_tensor_quantised: 1` |
 | Modelo base | `OliviaRossi/KAT-Ornith-Coder-35B-A3B` |
-| Fecha de publicación | 10 de septiembre de 2026 (fecha registrada en HuggingFace) |
+| Fecha de publicación | 10 de septiembre de 2026 (fecha registrada en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo base en los materiales disponibles. La model card de esta cuantización se limita a indicar que se trata de "static quants" del repositorio `OliviaRossi/KAT-Ornith-Coder-35B-A3B`, es decir, conversiones a GGUF realizadas con la herramienta de cuantización de llama.cpp a partir de pesos en formato HuggingFace (`convert_type: hf`). No hay datos sobre número de tokens de entrenamiento, composición del dataset, uso de RLHF, DPO u otras técnicas de alineamiento.
+No se ha publicado información sobre la arquitectura del modelo base en los materiales disponibles. La model card de esta cuantización se limita a indicar que se trata de "static quants" del repositorio `OliviaRossi/KAT-Ornith-Coder-35B-A3B`, es decir, conversiones a GGUF realizadas con la herramienta de cuantización de llama.cpp a partir de pesos en formato Hugging Face (`convert_type: hf`). No hay datos sobre número de tokens de entrenamiento, composición del dataset, uso de RLHF, DPO u otras técnicas de alineamiento.
 
 Los únicos indicios técnicos son indirectos: el sufijo "35B-A3B" es la convención empleada habitualmente para describir modelos MoE con 35 000 millones de parámetros totales y 3000 millones activos, y el sufijo "Coder" apunta a un ajuste orientado a generación de código. Ninguna de estas dos inferencias está confirmada por documentación del autor, y el prefijo "KAT" no corresponde a ninguna familia de modelos ampliamente conocida. Tampoco hay información sobre innovaciones técnicas como decodificación especulativa, atención lineal o variantes híbridas SSM.
 
@@ -37,7 +37,7 @@ Los únicos indicios técnicos son indirectos: el sufijo "35B-A3B" es la convenc
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible; no se declara lista de idiomas.
-- Capacidades multimodales (visión, audio): no disponible; el pipeline de HuggingFace no está especificado.
+- Capacidades multimodales (visión, audio): no disponible; el pipeline de Hugging Face no está especificado.
 - Modo "thinking" o razonamiento extendido: no disponible.
 - Ejecución local eficiente: capacidad inherente al formato GGUF, con doce variantes de cuantización que cubren desde ~16 bits hasta Q2_K.
 

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SPARKSAT/my_first_model es un modelo de clasificacion de texto basado en la arquitectura BERT, publicado por el usuario SPARKSAT en el Hub de HuggingFace. Cuenta con 109.483.778 parametros (aproximadamente 109,5 millones), una cifra muy proxima a la del BERT-base original (110 millones), lo que sugiere que se trata de una variante de ese modelo de referencia. El repositorio ocupa 0,4 GB en formato safetensors, coherente con el peso en fp32 de un modelo de este tamano.
+SPARKSAT/my_first_model es un modelo de clasificacion de texto basado en la arquitectura BERT, publicado por el usuario SPARKSAT en el Hub de Hugging Face. Cuenta con 109.483.778 parametros (aproximadamente 109,5 millones), una cifra muy proxima a la del BERT-base original (110 millones), lo que sugiere que se trata de una variante de ese modelo de referencia. El repositorio ocupa 0,4 GB en formato safetensors, coherente con el peso en fp32 de un modelo de este tamano.
 
-La model card es una plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: no se documentan datos de entrenamiento, licencia, idiomas, ni metricas de evaluacion. Los tags asociados indican que el modelo esta preparado para tareas de clasificacion de texto, es compatible con text-embeddings-inference y con los Inference Endpoints de HuggingFace, y esta alojado en la region de Estados Unidos (region:us). Se publico el 15 de agosto de 2026.
+La model card es una plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: no se documentan datos de entrenamiento, licencia, idiomas, ni metricas de evaluacion. Los tags asociados indican que el modelo esta preparado para tareas de clasificacion de texto, es compatible con text-embeddings-inference y con los Inference Endpoints de Hugging Face, y esta alojado en la region de Estados Unidos (region:us). Se publico el 15 de agosto de 2026.
 
 La relevancia de este modelo reside en su alineacion con BERT-base, un estandar en el procesamiento de lenguaje natural. Puede servir como punto de partida para fine-tuning en tareas especificas de clasificacion, aunque la ausencia total de documentacion obliga a una evaluacion previa con datos propios antes de considerar cualquier uso en produccion.
 
@@ -31,7 +31,7 @@ No se dispone de informacion sobre los datos de entrenamiento, el numero de toke
 
 - Clasificacion de texto: el pipeline declarado es text-classification, por lo que el modelo esta disenado para tareas como analisis de sentimiento, deteccion de spam o clasificacion tematica.
 - Compatible con text-embeddings-inference: puede desplegarse con esta herramienta para servir inferencia de clasificacion de forma optimizada.
-- Compatible con Inference Endpoints de HuggingFace: el tag endpoints_compatible indica que puede desplegarse en la infraestructura de inferencia gestionada de HuggingFace.
+- Compatible con Inference Endpoints de Hugging Face: el tag endpoints_compatible indica que puede desplegarse en la infraestructura de inferencia gestionada de Hugging Face.
 - Integracion con la libreria transformers: al estar registrado como modelo de esta libreria, puede cargarse con `AutoModelForSequenceClassification` o `pipeline`.
 - No se documentan capacidades adicionales como tool calling, agentes, razonamiento multi-paso, vision, audio o modo thinking.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 - VRAM estimada para inferencia: con 109,5 millones de parametros, el modelo ocupa aproximadamente 438 MB en fp32, 219 MB en fp16/bf16 y unos 110 MB en cuantizacion int8. Cabe comodamente en cualquier GPU consumer con 4 GB de VRAM o superior.
 - GPUs recomendadas: NVIDIA GTX 1650 (4 GB), RTX 3060 (12 GB), RTX 4090 (24 GB) o cualquier GPU de la serie RTX con al menos 4 GB. Tambien es viable la inferencia en CPU para cargas puntuales, con latencias del orden de decenas de milisegundos por ejemplo.
-- Opciones de despliegue: text-embeddings-inference, HuggingFace Inference Endpoints, libreria transformers de HuggingFace, y exportacion a ONNX o TensorRT para optimizacion en produccion.
+- Opciones de despliegue: text-embeddings-inference, Hugging Face Inference Endpoints, libreria transformers de Hugging Face, y exportacion a ONNX o TensorRT para optimizacion en produccion.
 - Latencia y throughput: no se dispone de cifras exactas, pero para un modelo de 109M en una GPU moderna se esperan latencias de pocos milisegundos por ejemplo y throughput de cientos de ejemplos por segundo.
 
 ## Comparativa con modelos similares
@@ -79,5 +79,5 @@ SPARKSAT/my_first_model se situa en la misma categoria que BERT-base por tamano 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SPARKSAT/my_first_model
+- Hugging Face: https://huggingface.co/SPARKSAT/my_first_model
 - Paper BERT: https://arxiv.org/abs/1910.09700

@@ -4,7 +4,7 @@
 
 Diyasing/albef-experiment es una implementación experimental del modelo Albef (Align Before Fuse) orientada a tareas multitask, desarrollada por el autor Diyasing. El repositorio incluye una implementación funcional de la arquitectura Albef con configuración «giant», que incorpora atención grouped query, mecanismo de fusión co attention, activación GELU y normalización LayerNorm. Sin embargo, el archivo `model.safetensors` contiene únicamente un checkpoint de inicialización de 24.832 parámetros, no un modelo entrenado ni auditado.
 
-El objetivo declarado del proyecto es proporcionar código transparente y pruebas de humo repetibles para experimentación, más que ofrecer un modelo listo para producción. No se reclaman puntuaciones de benchmarks en el repositorio. El modelo carece de datos de entrenamiento, idiomas especificados y pipeline de HuggingFace, por lo que su relevancia actual se limita a servir como base de estudio para arquitecturas Albef multitask y para validar pipelines de entrenamiento.
+El objetivo declarado del proyecto es proporcionar código transparente y pruebas de humo repetibles para experimentación, más que ofrecer un modelo listo para producción. No se reclaman puntuaciones de benchmarks en el repositorio. El modelo carece de datos de entrenamiento, idiomas especificados y pipeline de Hugging Face, por lo que su relevancia actual se limita a servir como base de estudio para arquitecturas Albef multitask y para validar pipelines de entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -37,7 +37,7 @@ El archivo `model.safetensors` es un checkpoint de inicialización válido para 
 - No hay soporte multilingüe definido: los idiomas aparecen como no disponibles.
 - No ofrece soporte de visión, audio ni modos de pensamiento.
 - La implementación está orientada a multitask y permite ejecutar smoke tests mediante el script `eval.py`, pero sin entrenamiento previo no produce resultados útiles.
-- No se puede cargar con APIs genéricas de HuggingFace sin un adaptador explícito, al tratarse de una implementación custom.
+- No se puede cargar con APIs genéricas de Hugging Face sin un adaptador explícito, al tratarse de una implementación custom.
 
 ## Casos de uso
 
@@ -75,7 +75,7 @@ No disponible. Al ser un checkpoint de inicialización experimental sin entrenar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Diyasing/albef-experiment
+- Hugging Face: https://huggingface.co/Diyasing/albef-experiment
 - Paper: no disponible
 - Repositorio externo: no disponible
 - Demo: no disponible

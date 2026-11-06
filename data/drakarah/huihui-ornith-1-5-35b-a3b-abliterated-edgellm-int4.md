@@ -94,7 +94,7 @@ La comparación directa con alternativas de otros fabricantes no está disponibl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/drakarah/Huihui-Ornith-1.5-35B-A3B-abliterated-EdgeLLM-INT4
+- Hugging Face: https://huggingface.co/drakarah/Huihui-Ornith-1.5-35B-A3B-abliterated-EdgeLLM-INT4
 - Modelo base (abliterado): https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated
 - Modelo Ornith-1.5-35B-A3B: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Exportación previa del mismo autor (Qwen3.6-35B-A3B-EdgeLLM-INT4): https://huggingface.co/drakarah/Qwen3.6-35B-A3B-EdgeLLM-INT4

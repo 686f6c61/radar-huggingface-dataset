@@ -86,7 +86,7 @@ Los datos de las versiones 2.0 y 2.1 proceden de los resultados de busqueda y de
 - No hay informacion sobre latencia, throughput ni coste energetico, datos imprescindibles antes de dimensionar un servicio en produccion.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/zeromodels/qwen-image
+- Modelo en Hugging Face: https://huggingface.co/zeromodels/qwen-image
 - Modelo base upstream: https://huggingface.co/Qwen/Qwen-Image
 - Informe tecnico (arXiv): https://arxiv.org/abs/2508.02324
 - Repositorio ZeroModels: https://github.com/IMvision12/ZeroModels

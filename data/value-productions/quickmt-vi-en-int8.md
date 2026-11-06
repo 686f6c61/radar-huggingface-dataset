@@ -80,7 +80,7 @@ No se dispone de datos verificados de parámetros, contexto ni rendimiento de la
 - Licencia CC BY 4.0: permite uso comercial y modificaciones, pero exige atribución al autor original (quickmt) y a esta redistribución, e indicar si se han hecho cambios. No hay cláusula de patentes ni garantías.
 - Trazabilidad: el artefacto es una reconversión, no un modelo validado de forma independiente; las descargas y likes son cero y no consta revisión externa.
 - Compatibilidad limitada: al estar en formato CTranslate2, no se puede cargar directamente en frameworks como Transformers, vLLM o TGI sin reconvertir desde el modelo base.
-- Idiomas no declarados en los metadatos de HuggingFace: la información de idiomas del repositorio aparece como no disponible y el par vi→en se deduce de la model card y del nombre del modelo.
+- Idiomas no declarados en los metadatos de Hugging Face: la información de idiomas del repositorio aparece como no disponible y el par vi→en se deduce de la model card y del nombre del modelo.
 
 ## Enlaces
 

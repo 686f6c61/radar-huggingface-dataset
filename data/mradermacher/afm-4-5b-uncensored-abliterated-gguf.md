@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar este modelo con alternativas concretas. Existen otros modelos abliterated en el ecosistema (por ejemplo, los de huihui-ai o los listados en guías de modelos uncensored), pero no se conocen sus especificaciones exactas ni sus resultados. Se recomienda consultar el modelo base en HuggingFace para obtener más detalles.
+No se dispone de información suficiente para comparar este modelo con alternativas concretas. Existen otros modelos abliterated en el ecosistema (por ejemplo, los de huihui-ai o los listados en guías de modelos uncensored), pero no se conocen sus especificaciones exactas ni sus resultados. Se recomienda consultar el modelo base en Hugging Face para obtener más detalles.
 
 ## Limitaciones y advertencias
 

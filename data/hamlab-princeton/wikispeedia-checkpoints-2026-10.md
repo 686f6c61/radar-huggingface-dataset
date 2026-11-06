@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `hamlab-princeton/wikispeedia-checkpoints-2026-10` | ~3B y ~7B (dos familias) | No disponible | Archivo de checkpoints SFT/RL para investigación en Wikispeedia | Mixta: Apache-2.0 (7B) y Qwen Research License (3B histórico) | HuggingFace, 0 descargas, 3,77 TB |
-| `Qwen/Qwen2.5-7B-Instruct` | ~7B | No disponible en la informacion proporcionada | Modelo instructivo de proposito general | Apache-2.0 | HuggingFace, ampliamente distribuido |
-| `Qwen/Qwen2.5-3B-Instruct` | ~3B | No disponible en la informacion proporcionada | Modelo instructivo de proposito general, orientado a recursos limitados | Qwen Research License | HuggingFace |
+| `hamlab-princeton/wikispeedia-checkpoints-2026-10` | ~3B y ~7B (dos familias) | No disponible | Archivo de checkpoints SFT/RL para investigación en Wikispeedia | Mixta: Apache-2.0 (7B) y Qwen Research License (3B histórico) | Hugging Face, 0 descargas, 3,77 TB |
+| `Qwen/Qwen2.5-7B-Instruct` | ~7B | No disponible en la informacion proporcionada | Modelo instructivo de proposito general | Apache-2.0 | Hugging Face, ampliamente distribuido |
+| `Qwen/Qwen2.5-3B-Instruct` | ~3B | No disponible en la informacion proporcionada | Modelo instructivo de proposito general, orientado a recursos limitados | Qwen Research License | Hugging Face |
 
 La comparación relevante no es de rendimiento sino de naturaleza del artefacto: frente a los modelos base, este repositorio aporta estados de pesos intermedios y finales de un protocolo experimental concreto, no un modelo listo para producción. Cualquier comparación de calidad requeriría las evaluaciones del informe referenciado, que no están incluidas en la información disponible.
 
@@ -95,7 +95,7 @@ La comparación relevante no es de rendimiento sino de naturaleza del artefacto:
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/hamlab-princeton/wikispeedia-checkpoints-2026-10
+- Repositorio del modelo en Hugging Face: https://huggingface.co/hamlab-princeton/wikispeedia-checkpoints-2026-10
 - Dataset de evidencias compañero: https://huggingface.co/datasets/od2961/wikispeedia-evidence-2026-10
 - Informe de experimentos fechado (puede requerir acceso del propietario): https://wikispeedia-evidence-oct6.ldaliberti.chatgpt.site/
 - Licencia Qwen Research License aplicada a los checkpoints históricos de 3B: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

@@ -74,6 +74,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ITCL/Qwen3.6-27B-GPTQ-W8A16)
+- [Modelo en Hugging Face](https://huggingface.co/ITCL/Qwen3.6-27B-GPTQ-W8A16)
 - [Modelo base Qwen/Qwen3.6-27B](https://huggingface.co/Qwen/Qwen3.6-27B)
 - [llm-compressor (herramienta de cuantización)](https://github.com/vllm-project/llm-compressor)

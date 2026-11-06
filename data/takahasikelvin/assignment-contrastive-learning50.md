@@ -4,7 +4,7 @@
 
 Este repositorio, publicado por el usuario Takahasikelvin bajo el identificador `Takahasikelvin/assignment-contrastive-learning50`, no es un modelo de lenguaje entrenado ni un checkpoint listo para inferencia: es un cuaderno de notas de lectura y un esbozo de experimento sobre aprendizaje contrastivo (contrastive learning). La propia model card lo declara de forma explicita: no se reclaman mejoras en benchmarks, ni ablaciones completadas, ni codigo liberado, ni un checkpoint entrenado. Los unicos artefactos descritos son dos ficheros de texto, `reading.md` y `README.md`.
 
-A pesar de ello, los metadatos de HuggingFace asignan al repositorio las etiquetas `safetensors` y `transformer`, y el sistema reporta un total de 33.088 parametros reales en formato safetensors. Se trata de una cifra extraordinariamente baja (tres ordenes de magnitud por debajo de cualquier transformer funcional) y el tamano del repositorio aparece como 0,0 GB, por lo que lo mas plausible es que ese fichero sea un artefacto residual o de prueba y no el peso de un modelo operativo. No hay informacion que permita reconciliar ambas cosas.
+A pesar de ello, los metadatos de Hugging Face asignan al repositorio las etiquetas `safetensors` y `transformer`, y el sistema reporta un total de 33.088 parametros reales en formato safetensors. Se trata de una cifra extraordinariamente baja (tres ordenes de magnitud por debajo de cualquier transformer funcional) y el tamano del repositorio aparece como 0,0 GB, por lo que lo mas plausible es que ese fichero sea un artefacto residual o de prueba y no el peso de un modelo operativo. No hay informacion que permita reconciliar ambas cosas.
 
 Su relevancia actual es, por tanto, documental y metodologica, no tecnica: sirve como ejemplo de como estructurar notas de investigacion reproducible en torno al aprendizaje contrastivo, una familia de tecnicas de representacion auto-supervisada muy extendida (SimCLR, MoCo, CLIP y derivados). No debe evaluarse como una alternativa a ningun modelo generativo.
 
@@ -44,7 +44,7 @@ La parte sustantiva del repositorio es un plan de investigacion. Segun la propia
 - Material docente introductorio: el fichero `reading.md` puede emplearse como lectura de apoyo en un seminario sobre aprendizaje auto-supervisado, siempre que se acompane de fuentes primarias (SimCLR, MoCo, CLIP) dado que el repositorio solo aporta notas.
 - Revision de higiene experimental: sus criterios de trazabilidad (versiones de dataset, comandos, semillas, hardware, logs en bruto) son utiles como lista de verificacion para revisores o para un pipeline interno de validacion de experimentos.
 - Referencia para curación de literatura: las referencias tematicas citadas pueden servir como punto de partida para una revision bibliografica sobre aprendizaje contrastivo.
-- Antiejemplo de publicacion en HuggingFace: el repositorio ilustra el caso de un artefacto con etiquetas de modelo (`transformer`, `safetensors`) cuyo contenido no es un modelo, algo relevante para equipos que construyen catalogos o filtros automaticos de repositorios.
+- Antiejemplo de publicacion en Hugging Face: el repositorio ilustra el caso de un artefacto con etiquetas de modelo (`transformer`, `safetensors`) cuyo contenido no es un modelo, algo relevante para equipos que construyen catalogos o filtros automaticos de repositorios.
 
 ## Benchmarks y rendimiento
 
@@ -68,7 +68,7 @@ No disponible. No existe un modelo comparable: el repositorio no contiene un sis
 | Contexto | no disponible | no disponible |
 | Rendimiento | no se publican resultados | no disponible |
 | Licencia | cc-by-4.0 | no disponible |
-| Disponibilidad | repositorio de notas en HuggingFace | no disponible |
+| Disponibilidad | repositorio de notas en Hugging Face | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -83,6 +83,6 @@ No disponible. No existe un modelo comparable: el repositorio no contiene un sis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Takahasikelvin/assignment-contrastive-learning50
+- Repositorio en Hugging Face: https://huggingface.co/Takahasikelvin/assignment-contrastive-learning50
 - Tutorial sobre aprendizaje contrastivo (DataCamp), unica referencia tematica relevante devuelta por la busqueda: https://www.datacamp.com/tutorial/contrastive-learning
 - Nota: el resto de resultados de la busqueda web corresponde a noticias sobre un incidente de un modelo de Anthropic con la policia de Filadelfia, sin relacion alguna con este repositorio, por lo que se omiten.

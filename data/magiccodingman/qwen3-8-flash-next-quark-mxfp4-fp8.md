@@ -122,7 +122,7 @@ Los cuatro modelos comparados pertenecen a la misma familia y comparten arquitec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/magiccodingman/Qwen3.8-Flash-Next-Quark-MXFP4-fp8
+- Modelo en Hugging Face: https://huggingface.co/magiccodingman/Qwen3.8-Flash-Next-Quark-MXFP4-fp8
 - Modelo base (AMD Quark MXFP4): https://huggingface.co/amd/Qwen3.8-Flash-Next-Quark-MXFP4
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Referencia FP8 de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8

@@ -86,7 +86,7 @@ Ornith-1.0-35B supera a sus competidores directos en los benchmarks de codificac
 
 ## Enlaces
 
-- HuggingFace (repo GGUF): https://huggingface.co/ornith-ai/Ornith-1.0-35B-GGUF
+- Hugging Face (repo GGUF): https://huggingface.co/ornith-ai/Ornith-1.0-35B-GGUF
 - GitHub (repositorio del proyecto): https://github.com/ornith-ai/Ornith-1
 - Web oficial de Ornith AI: https://ornith.online/
 - Blog de Ornith (deep-reinforce.com): https://deep-reinforce.com/ornith.html

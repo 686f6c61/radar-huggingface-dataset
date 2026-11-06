@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3-4b-tau2-telecom-real78-1ep es un ajuste fino de Qwen/Qwen3-4B-Instruct-2507 publicado por el usuario MANGSEOK123 en HuggingFace. Se trata de un transformer denso decoder-only de 4.411.424.256 parámetros (4,41 B) que ha sido consolidado mediante una técnica denominada OEL (experience distillation, segun las etiquetas del repositorio) sobre el dominio telecom del benchmark tau2-bench, usando 78 pares tarea-memoria de autoria externa.
+qwen3-4b-tau2-telecom-real78-1ep es un ajuste fino de Qwen/Qwen3-4B-Instruct-2507 publicado por el usuario MANGSEOK123 en Hugging Face. Se trata de un transformer denso decoder-only de 4.411.424.256 parámetros (4,41 B) que ha sido consolidado mediante una técnica denominada OEL (experience distillation, segun las etiquetas del repositorio) sobre el dominio telecom del benchmark tau2-bench, usando 78 pares tarea-memoria de autoria externa.
 
 El problema que aborda es concreto: conseguir que un modelo pequeno reproduzca, sin memoria en el prompt, el comportamiento de un profesor que si dispone de esa memoria. Durante el entrenamiento, el estudiante reproduce cada tarea sin memoria y el profesor son los mismos pesos con la memoria de la tarea insertada en el system prompt; la unica diferencia entre ambos es el prompt y no se utiliza ninguna recompensa, solo una perdida KL sobre todos los tokens de respuesta.
 
@@ -68,7 +68,7 @@ El propio autor advierte que cada paso lee un batch distinto, por lo que la colu
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks del modelo ajustado en la informacion disponible. El autor indica de forma explicita que el modelo no fue evaluado y que se subio a HuggingFace inmediatamente despues del entrenamiento.
+No se han publicado resultados de benchmarks del modelo ajustado en la informacion disponible. El autor indica de forma explicita que el modelo no fue evaluado y que se subio a Hugging Face inmediatamente despues del entrenamiento.
 
 Los unicos numeros disponibles corresponden al modelo base Qwen3-4B-Instruct-2507, aportados como contexto sobre la senal que llevan las memorias:
 
@@ -121,7 +121,7 @@ Frente al modelo base, la diferencia es el ajuste de dominio: menos generalidad 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-telecom-real78-1ep
+- Modelo en Hugging Face: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-telecom-real78-1ep
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Benchmark tau2-bench (citado en las etiquetas del repositorio): https://github.com/sierra-research/tau2-bench
 - Libreria verl (mencionada como origen del valor por defecto de gradient clipping): https://github.com/volcengine/verl

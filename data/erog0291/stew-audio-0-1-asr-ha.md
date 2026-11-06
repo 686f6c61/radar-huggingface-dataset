@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Erog0291/stew-audio-0.1-asr-ha` es un modelo de reconocimiento automatico del habla (ASR) publicado en HuggingFace por el usuario Erog0291 el 25 de octubre de 2026 y actualizado al dia siguiente. El repositorio pesa 2,4 GB y contiene pesos en `safetensors` y exportaciones `onnx`, y el unico tag de familia de modelo presente es `whisper`, lo que situa el modelo en la estirpe de sistemas ASR encoder-decoder de OpenAI.
+`Erog0291/stew-audio-0.1-asr-ha` es un modelo de reconocimiento automatico del habla (ASR) publicado en Hugging Face por el usuario Erog0291 el 25 de octubre de 2026 y actualizado al dia siguiente. El repositorio pesa 2,4 GB y contiene pesos en `safetensors` y exportaciones `onnx`, y el unico tag de familia de modelo presente es `whisper`, lo que situa el modelo en la estirpe de sistemas ASR encoder-decoder de OpenAI.
 
 El recuento real de parametros obtenido del fichero `safetensors` es de 241.734.912 (unos 242 M), una cifra practicamente identica a la de Whisper small (244 M). Todo apunta, por tanto, a un ajuste fino o derivado de Whisper small, aunque el autor no lo declara explicitamente en la informacion disponible. El sufijo `-ha` del identificador podria sugerir un ajuste orientado a hausa u otra lengua con ese codigo, pero se trata de una hipotesis sin confirmar.
 
@@ -94,9 +94,9 @@ La ventaja competitiva de este checkpoint frente a Whisper small original seria,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Erog0291/stew-audio-0.1-asr-ha
+- Modelo en Hugging Face: https://huggingface.co/Erog0291/stew-audio-0.1-asr-ha
 - Repositorio de referencia de la familia Whisper (OpenAI): https://github.com/openai/whisper
-- Pesos originales de Whisper en HuggingFace: https://huggingface.co/openai/whisper-small
+- Pesos originales de Whisper en Hugging Face: https://huggingface.co/openai/whisper-small
 - Documentacion de Whisper en Transformers: https://huggingface.co/docs/transformers/model_doc/whisper
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - ONNX Runtime: https://onnxruntime.ai/

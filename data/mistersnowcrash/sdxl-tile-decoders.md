@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Formato | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SDXL tile decoders (este repo) | Decodificador VAE SDXL troceado | Core ML (`.mlmodelc`) | FLOAT32 | CreativeML Open RAIL++-M | HuggingFace |
-| VAE original de SDXL | Decodificador VAE SDXL completo | safetensors / diffusers | fp16, fp32 | CreativeML Open RAIL++-M | HuggingFace (stabilityai) |
-| VAE de DreamShaper XL Turbo | Decodificador VAE SDXL completo | safetensors | fp16 | CreativeML Open RAIL++-M | HuggingFace (Lykon) |
-| VAE de RealVisXL V5.0 | Decodificador VAE SDXL completo | safetensors | fp16 | CreativeML Open RAIL++-M | HuggingFace (SG161222) |
+| SDXL tile decoders (este repo) | Decodificador VAE SDXL troceado | Core ML (`.mlmodelc`) | FLOAT32 | CreativeML Open RAIL++-M | Hugging Face |
+| VAE original de SDXL | Decodificador VAE SDXL completo | safetensors / diffusers | fp16, fp32 | CreativeML Open RAIL++-M | Hugging Face (stabilityai) |
+| VAE de DreamShaper XL Turbo | Decodificador VAE SDXL completo | safetensors | fp16 | CreativeML Open RAIL++-M | Hugging Face (Lykon) |
+| VAE de RealVisXL V5.0 | Decodificador VAE SDXL completo | safetensors | fp16 | CreativeML Open RAIL++-M | Hugging Face (SG161222) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MisterSnowCrash/sdxl-tile-decoders
+- Hugging Face: https://huggingface.co/MisterSnowCrash/sdxl-tile-decoders
 - DreamShaper XL Turbo (Lykon): no disponible en la informacion proporcionada
 - RealVisXL V5.0 (SG161222): no disponible en la informacion proporcionada
 - Licencia CreativeML Open RAIL++-M: no disponible enlace directo en la informacion proporcionada (referenciada como `LICENSE` en el repo)

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Hansda/Audio8-TTS-Realistic-Air-GGUF",
+  "slug": "hansda-audio8-tts-realistic-air-gguf",
+  "author": "Hansda",
+  "url": "https://huggingface.co/Hansda/Audio8-TTS-Realistic-Air-GGUF",
+  "created_at": "2026-11-05T04:54:34.000Z",
+  "updated_at": "2026-11-05T10:37:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "audio.cpp",
+  "languages": [],
+  "tags": [
+    "audio.cpp",
+    "gguf",
+    "audio",
+    "text-to-speech",
+    "base_model:Edge0/Audio8-TTS-Realistic-Air",
+    "base_model:quantized:Edge0/Audio8-TTS-Realistic-Air",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8342714400,
+  "storage_human": "8.3 GB",
+  "base_model": "Edge0/Audio8-TTS-Realistic-Air",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hansda/Audio8-TTS-Realistic-Air-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Hansda/Audio8-TTS-Realistic-Air-GGUF",
+      "snippet": "Audio8-TTS-Realistic-Air GGUF GGUF packages of Edge0/Audio8-TTS-Realistic-Air, pinned to 23c305cc013fde378edb459f538317043c993a74. Each file contains the 601M DualAR ..."
+    },
+    {
+      "title": "Edge0/Audio8-TTS-Realistic-Air · Hugging Face",
+      "url": "https://huggingface.co/Edge0/Audio8-TTS-Realistic-Air",
+      "snippet": "Then move the inputs to the model device and run the same generation and decoding steps. For command-line inference, batching, and supervised fine-tuning, see the Audio8 TTS repository, using Edge0/Audio8-TTS-Realistic-Air as the model path. High-throughput serving: SGLang Omni The SGLang Omni adapter provides GPU serving for Audio8 TTS."
+    }
+  ]
+}

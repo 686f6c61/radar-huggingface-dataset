@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Activacion por token | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-oQ2.5e-mtp (este) | 35,95B | ~3B | no disponible | MLX safetensors (~3,25 bits/peso) | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | 35,95B | ~3B | no disponible | safetensors BF16 | Apache-2.0 | HuggingFace (modelo original) |
+| Qwen3.6-35B-A3B-oQ2.5e-mtp (este) | 35,95B | ~3B | no disponible | MLX safetensors (~3,25 bits/peso) | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | 35,95B | ~3B | no disponible | safetensors BF16 | Apache-2.0 | Hugging Face (modelo original) |
 | Otras cuantizaciones del mismo base | 35,95B | ~3B | no disponible | GGUF / MLX (segun autor) | Apache-2.0 | no disponible |
 
 No se dispone de informacion suficiente sobre pesos finales, contexto o rendimiento de alternativas concretas para establecer una comparativa cuantitativa fiable; los valores marcados como "no disponible" reflejan la ausencia de datos en la informacion proporcionada.
@@ -104,7 +104,7 @@ No se dispone de informacion suficiente sobre pesos finales, contexto o rendimie
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Jundot/Qwen3.6-35B-A3B-oQ2.5e-mtp
+- Hugging Face del modelo: https://huggingface.co/Jundot/Qwen3.6-35B-A3B-oQ2.5e-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio de la herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Pull request de Improved oQe Quantization: https://github.com/jundot/omlx/pull/4385

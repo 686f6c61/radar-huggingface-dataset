@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "NellWatson/Qwen3.5-2B-millos-routing-q4f16_1-MLC",
+  "slug": "nellwatson-qwen3-5-2b-millos-routing-q4f16_1-mlc",
+  "author": "NellWatson",
+  "url": "https://huggingface.co/NellWatson/Qwen3.5-2B-millos-routing-q4f16_1-MLC",
+  "created_at": "2026-11-03T14:12:02.000Z",
+  "updated_at": "2026-11-04T01:02:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlc-llm",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "mlc-llm",
+    "web-llm",
+    "webgpu",
+    "classification",
+    "millos",
+    "en",
+    "pt",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1072123310,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-2B-millos-routing-q4f16_1-MLC - Hugging Face",
+      "url": "https://huggingface.co/NellWatson/Qwen3.5-2B-millos-routing-q4f16_1-MLC",
+      "snippet": "A LoRA fine-tune of Qwen/Qwen3.5-2B (revision 15852e8c), merged and converted to web-llm's q4f16_1 format, for the on-device incident router in MillOS, a grain-mill digital twin that runs in the browser. It is the 2B sibling of NellWatson/Qwen3.5-4B-millos-routing-q4f16_1-MLC, trained with the same ..."
+    },
+    {
+      "title": "Qwen3.5-4B-millos-routing-q4f16_1-MLC - Hugging Face",
+      "url": "https://huggingface.co/NellWatson/Qwen3.5-4B-millos-routing-q4f16_1-MLC",
+      "snippet": "A LoRA fine-tune of Qwen/Qwen3.5-4B (revision 851bf6e8), merged and converted to web-llm's q4f16_1 format, for the on-device incident router in MillOS, a grain-mill digital twin that runs in the browser. The router reads a short mill note and picks one of five advisory queues: Equipment maintenance ..."
+    }
+  ]
+}

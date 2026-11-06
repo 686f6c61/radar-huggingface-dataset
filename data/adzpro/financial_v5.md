@@ -6,7 +6,7 @@ Financial_v5 es un modelo de lenguaje de 4.3 mil millones de parametros, desarro
 
 La relevancia de este modelo radica en su tamano compacto (4.326 millones de parametros), que permite su ejecucion en hardware de consumo, y en su especializacion en el dominio financiero, un area donde los modelos generalistas suelen carecer de precision terminologica y contextual. Al estar disponible en formato GGUF cuantizado (Q4_K_M), ofrece una opcion practica para despliegues locales con requisitos de hardware modestos.
 
-Cabe destacar que la informacion publica es limitada: no se especifica la licencia, los idiomas soportados, el tamano del contexto ni los datos de entrenamiento. La ficha se basa exclusivamente en los datos disponibles en el repositorio de HuggingFace.
+Cabe destacar que la informacion publica es limitada: no se especifica la licencia, los idiomas soportados, el tamano del contexto ni los datos de entrenamiento. La ficha se basa exclusivamente en los datos disponibles en el repositorio de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -81,6 +81,6 @@ La comparativa es orientativa: Financial_v5 se distingue por su enfoque en el do
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Adzpro/Financial_v5
+- Repositorio Hugging Face: https://huggingface.co/Adzpro/Financial_v5
 - Herramienta Unsloth: https://github.com/unslothai/unsloth
 - llama.cpp: https://github.com/ggerganov/llama.cpp

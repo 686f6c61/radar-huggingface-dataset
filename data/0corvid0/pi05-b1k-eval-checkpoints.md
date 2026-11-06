@@ -66,7 +66,7 @@ No se han identificado modelos comparables con especificaciones publicadas. El R
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0Corvid0/pi05-b1k-eval-checkpoints
+- Hugging Face: https://huggingface.co/0Corvid0/pi05-b1k-eval-checkpoints
 - Repositorio relacionado: https://huggingface.co/0Corvid0/pi05-b1k-families
 - Baseline de referencia del desafío: https://huggingface.co/IliaLarchenko/behavior_submission
 - Baselines del desafío BEHAVIOR: https://behavior.stanford.edu/challenge/baselines.html

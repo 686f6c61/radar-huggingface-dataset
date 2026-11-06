@@ -87,10 +87,10 @@ Los datos de los modelos alternativos proceden de sus model cards publicas y deb
 
 | Modelo | Parametros | Contexto | Tarea | Idiomas | Licencia | Disponibilidad |
 |---|---:|---:|---|---|---|---|
-| Donoe/NaijaMultilingualBank | 278 M | 128 tokens | Clasificacion de 77 intenciones bancarias | Ingles, yoruba, hausa, igbo | No disponible | HuggingFace, 0 descargas |
-| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | Encoder generico (MLM, embeddings, fine-tuning) | 100 idiomas | No verificada en la informacion disponible | HuggingFace, ampliamente usado |
-| bert-base-multilingual-cased (mBERT) | 178 M | 512 tokens | Encoder generico (MLM, fine-tuning) | ~104 idiomas | No verificada en la informacion disponible | HuggingFace, ampliamente usado |
-| Encoders adaptados a lenguas africanas (por ejemplo, la familia AfroXLMR) | ~278 M | 512 tokens | Encoder generico para lenguas africanas | Lenguas africanas, entre ellas yoruba, hausa e igbo | No verificada en la informacion disponible | HuggingFace |
+| Donoe/NaijaMultilingualBank | 278 M | 128 tokens | Clasificacion de 77 intenciones bancarias | Ingles, yoruba, hausa, igbo | No disponible | Hugging Face, 0 descargas |
+| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | Encoder generico (MLM, embeddings, fine-tuning) | 100 idiomas | No verificada en la informacion disponible | Hugging Face, ampliamente usado |
+| bert-base-multilingual-cased (mBERT) | 178 M | 512 tokens | Encoder generico (MLM, fine-tuning) | ~104 idiomas | No verificada en la informacion disponible | Hugging Face, ampliamente usado |
+| Encoders adaptados a lenguas africanas (por ejemplo, la familia AfroXLMR) | ~278 M | 512 tokens | Encoder generico para lenguas africanas | Lenguas africanas, entre ellas yoruba, hausa e igbo | No verificada en la informacion disponible | Hugging Face |
 
 Comparativa cualitativa: NaijaMultilingualBank es el unico de la lista con una cabeza de clasificacion supervisada especifica para intenciones bancarias nigerianas, pero tambien el unico con un limite de 128 tokens y con licencia sin declarar. XLM-R base y mBERT serian los puntos de partida obvios para reproducir o mejorar este fine-tuning; los encoders adaptados a lenguas africanas podrian ofrecer mejores representaciones para yoruba, hausa e igbo, aunque no hay datos publicados que lo confirmen en esta tarea concreta.
 
@@ -107,11 +107,11 @@ Comparativa cualitativa: NaijaMultilingualBank es el unico de la lista con una c
 - Licencia no disponible: el autor no declara licencia, lo que genera incertidumbre legal para uso comercial. La model card remite a las licencias y requisitos de atribucion del modelo base y del dataset de origen, que deben revisarse antes de redistribuir o explotar comercialmente el modelo.
 - Madurez: 0 descargas y 0 likes en el momento de la consulta, sin validacion independiente por parte de la comunidad. El propio autor lo califica como baseline de investigacion y portafolio.
 - Fecha de publicacion atipica (2026-09-10): conviene verificar la vigencia y el contexto temporal del repositorio.
-- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; toda la informacion tecnica procede de la model card y de los metadatos del repositorio en HuggingFace.
+- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; toda la informacion tecnica procede de la model card y de los metadatos del repositorio en Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donoe/NaijaMultilingualBank
+- Modelo en Hugging Face: https://huggingface.co/Donoe/NaijaMultilingualBank
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Donoe/multilingual-nigerian-banking77
 - Dataset original BANKING77: https://huggingface.co/datasets/PolyAI/banking77

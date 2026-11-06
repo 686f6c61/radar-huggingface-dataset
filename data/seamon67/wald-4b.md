@@ -101,8 +101,8 @@ No se dispone en la informacion proporcionada de otros modelos abiertos de decis
 
 ## Enlaces
 
-- Repositorio evaluado (HuggingFace): https://huggingface.co/seamon67/Wald-4B
-- Modelo original (HuggingFace): https://huggingface.co/org2ai/Wald-4B
+- Repositorio evaluado (Hugging Face): https://huggingface.co/seamon67/Wald-4B
+- Modelo original (Hugging Face): https://huggingface.co/org2ai/Wald-4B
 - Repositorio GitHub: https://github.com/org2AI/wald-4b
 - Documentacion de la API: https://huggingface.co/org2ai/Wald-4B/blob/main/docs/api.md
 - README en chino simplificado: https://huggingface.co/org2ai/Wald-4B/blob/main/docs/readmes/README.zh.md

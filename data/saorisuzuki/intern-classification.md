@@ -80,6 +80,6 @@ No se dispone de datos comparativos procedentes de la información proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SaoriSuzuki/intern-classification
-- Fichero de modelo y punto de entrada de entrenamiento: `train.py`, `config.json`, `training_args.json`, `model.safetensors` (disponibles en el repositorio de HuggingFace)
+- Modelo en Hugging Face: https://huggingface.co/SaoriSuzuki/intern-classification
+- Fichero de modelo y punto de entrada de entrenamiento: `train.py`, `config.json`, `training_args.json`, `model.safetensors` (disponibles en el repositorio de Hugging Face)
 - Búsqueda web: no se han encontrado enlaces relevantes sobre este modelo. Los resultados devueltos por la búsqueda (PMC12075601, dl.acm.org/doi/abs/10.1145/2934687, researchgate.net, onlinelibrary.wiley.com/doi/full/10.1111/1348-0421.13165, science.org/doi/abs/10.1126/sciadv.abd3233) corresponden a ámbitos sin relación con este repositorio (modelos de proteínas, encuestas sobre compartición de conocimiento, manometría de alta resolución, variantes del SARS-CoV-2 y virología del VHC), por lo que no se incluyen como referencias del modelo.

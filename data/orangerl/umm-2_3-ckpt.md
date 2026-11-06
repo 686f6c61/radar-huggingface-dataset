@@ -63,7 +63,7 @@ No se dispone de información suficiente para comparar con otros modelos. El che
 - Riesgo de alucinaciones y errores en tareas de comprensión, especialmente en dominios no cubiertos por el entrenamiento.
 - El componente DiT puede producir salidas visuales no deseadas si no se configura correctamente el proyector.
 - Los checkpoints son de etapas intermedias (stage-2 y stage-3), no un modelo final pulido; puede haber problemas de estabilidad o calidad.
-- No se garantiza compatibilidad con versiones futuras de las librerías de HuggingFace.
+- No se garantiza compatibilidad con versiones futuras de las librerías de Hugging Face.
 
 ## Enlaces
 
